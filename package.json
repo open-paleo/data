@@ -1,0 +1,31 @@
+{
+  "name": "open-paleo-data",
+  "version": "1.0.0",
+  "description": "Community-maintained phylogenetic dataset for paleontology",
+  "type": "module",
+  "scripts": {
+    "validate": "node --experimental-strip-types scripts/validate.ts",
+    "build": "node --experimental-strip-types scripts/build.ts",
+    "sync-forms": "node --experimental-strip-types scripts/sync-forms.ts",
+    "generate-dictionary": "node --experimental-strip-types scripts/generate-dictionary.ts",
+    "lint": "eslint scripts/",
+    "lint:fix": "eslint scripts/ --fix",
+    "typecheck": "tsc --noEmit"
+  },
+  "license": "CC-BY-4.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "dependencies": {
+    "js-yaml": "4.1.0"
+  },
+  "devDependencies": {
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "@types/js-yaml": "4.0.9",
+    "@types/node": "^22.19.15",
+    "cspell": "8.17.5",
+    "eslint": "9.18.0",
+    "typescript": "5.7.3",
+    "typescript-eslint": "8.22.0"
+  }
+}

@@ -1,0 +1,75 @@
+name: Add Image
+description: Contribute an image to the dataset
+title: "Image: "
+labels: ["add-image"]
+body:
+  - type: input
+    id: taxon-name
+    attributes:
+      label: Genus or clade name
+      placeholder: e.g., Tyrannosaurus
+    validations:
+      required: true
+
+  - type: dropdown
+    id: image-type
+    attributes:
+      label: Image type
+      options:  # sync:schema.yml:image_types
+        - field
+        - other
+        - reconstruction
+        - skeletal
+        - specimen
+    validations:
+      required: true
+
+  - type: textarea
+    id: image
+    attributes:
+      label: Image
+      description: Paste or drag an image here
+    validations:
+      required: true
+
+  - type: input
+    id: description
+    attributes:
+      label: Description
+      description: What does the image show?
+      placeholder: e.g., Lateral view of skull
+    validations:
+      required: true
+
+  - type: input
+    id: credit
+    attributes:
+      label: Credit
+      description: Photographer, artist, or institution
+    validations:
+      required: true
+
+  - type: input
+    id: specimen-id
+    attributes:
+      label: Specimen ID
+      description: Museum specimen number (for specimen photos)
+
+  - type: input
+    id: source-url
+    attributes:
+      label: Source URL
+      description: Required if not your original work
+
+  - type: checkboxes
+    id: licensing
+    attributes:
+      label: Licensing attestation
+      description: All three boxes must be checked
+      options:
+        - label: I am the copyright holder of this image, OR this image is already in the public domain / licensed CC0
+          required: true
+        - label: I grant this image to the Open Paleo project under the CC BY 4.0 license
+          required: true
+        - label: I understand this license is irrevocable and allows anyone to use, share, and adapt this image with attribution
+          required: true

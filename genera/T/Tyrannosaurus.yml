@@ -1,0 +1,95 @@
+genus: Tyrannosaurus
+parent: Tyrannosauridae
+etymology: "tyrant lizard"
+description: >
+  A genus of large theropod dinosaur that lived in western North America
+  during the Late Cretaceous. One of the largest known land predators,
+  measuring up to 12.3 metres in length and weighing up to 8.4 tonnes.
+  Tyrannosaurus possessed a massive skull with powerful jaw muscles capable
+  of generating enormous bite force.
+diet: carnivore
+locomotion: bipedal
+paleoenvironment:
+  - fluvial
+  - forested
+
+appearance:
+  integument: scaled
+  evidence: inferred
+  features:
+    - "Massive skull with robust jaw musculature"
+    - "Tiny, two-fingered forelimbs"
+
+diagnostic_features:
+  - Premaxillary teeth D-shaped in cross-section
+  - Fused nasals
+  - Reduced forelimb with two functional digits
+
+identifiers:
+  - source: wikidata
+    id: Q14384
+
+species:
+  - name: Tyrannosaurus rex
+    status: valid
+    type_species: true
+    completeness: complete
+    etymology: "tyrant lizard king"
+    holotype:
+      specimen_id: CM 9380
+      institution: Carnegie Museum of Natural History
+      material: partial skeleton including skull
+    period:
+      name: Late Cretaceous
+      stage: Maastrichtian
+      from_ma: 68.5
+      to_ma: 66.0
+    location:
+      country: United States
+      region: Montana
+      locality: Fort Peck
+      formation: Hell Creek Formation
+      coordinates: [47.5, -106.9]
+    size:
+      length_m: 12.3
+      weight_kg: 8400
+      hip_height_m: 3.7
+      estimate: true
+    described: 1905
+    authors: Osborn
+    description: >
+      The only widely accepted species of Tyrannosaurus. Among the last
+      non-avian dinosaurs to exist before the Cretaceous-Paleogene
+      extinction event.
+
+  - name: Tyrannosaurus imperator
+    status: synonym
+    synonym_of: Tyrannosaurus rex
+    period:
+      name: Late Cretaceous
+      stage: Maastrichtian
+    location:
+      country: United States
+      region: Montana
+      formation: Hell Creek Formation
+    described: 2022
+    authors: Paul, Persons, Van Raalte
+
+references:
+  - id: osborn1905
+    authors: Osborn, H.F.
+    year: 1905
+    title: "Tyrannosaurus and other Cretaceous carnivorous dinosaurs"
+    journal: Bulletin of the American Museum of Natural History
+    volume: "21"
+    pages: "259-265"
+
+  - id: brusatte2010
+    authors: Brusatte, S.L.; Norell, M.A.; Carr, T.D.; Erickson, G.M.; Hutchinson, J.R.; Balanoff, A.M.; Bever, G.S.; Choiniere, J.N.; Makovicky, P.J.; Xu, X.
+    year: 2010
+    title: "Tyrannosaur paleobiology: new research on ancient exemplar organisms"
+    journal: Science
+    volume: "329"
+    issue: "5998"
+    pages: "1481-1485"
+    doi: "10.1126/science.1193304"

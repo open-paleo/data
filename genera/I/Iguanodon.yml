@@ -1,0 +1,81 @@
+genus: Iguanodon
+parent: Styracosterna
+etymology: "iguana tooth"
+description: >
+  A genus of ornithopod dinosaur from the Early Cretaceous of Europe.
+  Iguanodon was one of the first dinosaurs ever scientifically described
+  and is one of the founding members of the group Dinosauria. It is
+  notable for its large thumb spike, which was originally mistakenly
+  placed on its nose in early reconstructions.
+diet: herbivore
+locomotion: facultative
+paleoenvironment:
+  - fluvial
+  - coastal
+
+appearance:
+  integument: scaled
+  evidence: inferred
+  features:
+    - "Large conical thumb spike"
+    - "Robust build with ability to walk bipedally or quadrupedally"
+    - "Broad, blunt snout with a horny beak"
+
+diagnostic_features:
+  - Large conical thumb spike (manual digit I ungual)
+  - Laterally compressed, leaf-shaped teeth with denticulate margins
+  - Robust fifth finger that could oppose the others
+
+identifiers:
+  - source: wikidata
+    id: Q15927
+
+species:
+  - name: Iguanodon bernissartensis
+    status: valid
+    type_species: true
+    completeness: complete
+    etymology: "iguana tooth from Bernissart"
+    holotype:
+      specimen_id: IRSNB 1534
+      institution: Royal Belgian Institute of Natural Sciences
+      material: complete skeleton
+    period:
+      name: Early Cretaceous
+      stage: Barremian
+      from_ma: 126.0
+      to_ma: 125.0
+    location:
+      country: Belgium
+      region: Hainaut
+      locality: Bernissart
+      formation: Sainte-Barbe Formation
+      coordinates: [50.5, 3.6]
+    size:
+      length_m: 10.0
+      weight_kg: 3400
+      hip_height_m: 2.7
+      estimate: true
+    described: 1881
+    authors: Boulenger
+    description: >
+      Known from over 30 complete skeletons discovered in a coal mine
+      at Bernissart, Belgium. One of the best-known ornithopod dinosaurs.
+
+references:
+  - id: mantell1825
+    authors: Mantell, G.A.
+    year: 1825
+    title: "Notice on the Iguanodon, a newly discovered fossil reptile"
+    journal: Philosophical Transactions of the Royal Society of London
+    volume: "115"
+    pages: "179-186"
+    doi: "10.1098/rstl.1825.0010"
+
+  - id: norman2004
+    authors: Norman, D.B.
+    year: 2004
+    title: "Basal Iguanodontia"
+    book: "The Dinosauria (Second Edition)"
+    publisher: University of California Press
+    pages: "413-437"

@@ -1,0 +1,102 @@
+name: Correct Taxonomy
+description: Propose a taxonomic reclassification for an existing genus
+title: "Reclassify: "
+labels: ["correct-taxonomy"]
+body:
+  - type: input
+    id: genus-name
+    attributes:
+      label: Genus name
+      placeholder: e.g., Iguanodon
+    validations:
+      required: true
+
+  - type: input
+    id: current-parent
+    attributes:
+      label: Current parent clade
+      description: Helps verify the correct genus (optional)
+
+  - type: dropdown
+    id: proposed-parent
+    attributes:
+      label: Proposed parent clade
+      options:  # sync:tree.yml:clades
+        - Abelisauridae
+        - Actinopterygii
+        - Allosauridae
+        - Ammonoidea
+        - Animalia
+        - Ankylopollexia
+        - Ankylosauria
+        - Archosauria
+        - Arthropoda
+        - Avetheropoda
+        - Brachiosauridae
+        - Carcharodontosauridae
+        - Carnosauria
+        - Cephalopoda
+        - Cerapoda
+        - Ceratopsia
+        - Ceratopsidae
+        - Ceratosauria
+        - Chordata
+        - Coelurosauria
+        - Crocodylomorpha
+        - Dinosauria
+        - Diplodocidae
+        - Dromaeosauridae
+        - Hadrosauridae
+        - Hadrosauriformes
+        - Ichthyosauria
+        - Lepidosauria
+        - Life
+        - Macronaria
+        - Maniraptora
+        - Marginocephalia
+        - Megalosauridae
+        - Megalosauroidea
+        - Mollusca
+        - Noasauridae
+        - Ornithischia
+        - Ornithomimosauria
+        - Ornithopoda
+        - Pachycephalosauria
+        - Plantae
+        - Plesiosauria
+        - Pterosauria
+        - Reptilia
+        - Sarcopterygii
+        - Saurischia
+        - Sauropoda
+        - Sauropodomorpha
+        - Sauropterygia
+        - Spinosauridae
+        - Stegosauria
+        - Styracosterna
+        - Synapsida
+        - Tetanurae
+        - Tetrapoda
+        - Therizinosauridae
+        - Theropoda
+        - Thyreophora
+        - Titanosauria
+        - Trilobita
+        - Troodontidae
+        - Tyrannosauridae
+        - Vertebrata
+    validations:
+      required: true
+
+  - type: textarea
+    id: reference
+    attributes:
+      label: Reference / source
+      description: Published scientific literature supporting this reclassification
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes

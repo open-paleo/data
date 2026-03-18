@@ -1,0 +1,102 @@
+genus: Diplodocus
+parent: Diplodocidae
+etymology: "double beam"
+description: >
+  A genus of diplodocid sauropod dinosaur from the Late Jurassic of
+  western North America. Diplodocus is among the most easily identifiable
+  dinosaurs, with its classic sauropod shape of a long neck and tail,
+  with four sturdy legs. It was one of the longer dinosaurs, with some
+  species reaching over 25 metres in length.
+diet: herbivore
+locomotion: quadrupedal
+paleoenvironment:
+  - fluvial
+  - forested
+
+appearance:
+  integument: scaled
+  evidence: inferred
+  features:
+    - "Extremely long, whip-like tail"
+    - "Long neck with a relatively small, elongated skull"
+    - "Peg-like teeth restricted to the front of the jaws"
+
+diagnostic_features:
+  - Peg-like teeth restricted to anterior portion of jaws
+  - Extremely elongated caudal vertebrae with double-beam chevrons
+  - Anteriorly positioned nares
+
+identifiers:
+  - source: wikidata
+    id: Q7560
+
+species:
+  - name: Diplodocus longus
+    status: valid
+    type_species: true
+    completeness: partial
+    etymology: "long double beam"
+    holotype:
+      specimen_id: YPM 1920
+      institution: Yale Peabody Museum
+      material: caudal vertebrae and chevrons
+    period:
+      name: Late Jurassic
+      stage: Kimmeridgian
+    location:
+      country: United States
+      region: Colorado
+      locality: Canon City
+      formation: Morrison Formation
+      coordinates: [38.4, -105.2]
+    size:
+      length_m: 25.0
+      weight_kg: 14800
+      hip_height_m: 4.0
+      estimate: true
+    described: 1878
+    authors: Marsh
+    description: >
+      The type species of Diplodocus, originally described from caudal
+      vertebrae. The distinctive double-beam chevron bones give the
+      genus its name.
+
+  - name: Diplodocus carnegii
+    status: valid
+    completeness: complete
+    etymology: "Carnegie's double beam"
+    period:
+      name: Late Jurassic
+      stage: Kimmeridgian
+    location:
+      country: United States
+      region: Wyoming
+      locality: Sheep Creek
+      formation: Morrison Formation
+    size:
+      length_m: 25.0
+      weight_kg: 11500
+      estimate: true
+    described: 1901
+    authors: Hatcher
+    description: >
+      Known from one of the most complete sauropod skeletons ever found.
+      Casts of the skeleton were distributed to museums worldwide,
+      making it one of the most mounted dinosaur skeletons in the world.
+
+references:
+  - id: marsh1878
+    authors: Marsh, O.C.
+    year: 1878
+    title: "Principal characters of American Jurassic dinosaurs, Part I"
+    journal: American Journal of Science
+    volume: "16"
+    pages: "411-416"
+
+  - id: hatcher1901
+    authors: Hatcher, J.B.
+    year: 1901
+    title: "Diplodocus (Marsh): Its osteology, taxonomy, and probable habits, with a restoration of the skeleton"
+    journal: Memoirs of the Carnegie Museum
+    volume: "1"
+    pages: "1-63"

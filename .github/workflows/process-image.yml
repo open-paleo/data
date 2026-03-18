@@ -1,0 +1,147 @@
+name: Process Image
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    if: contains(github.event.issue.labels.*.name, 'add-image')
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Process image submission
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+            const yaml = require('js-yaml');
+            const https = require('https');
+            const http = require('http');
+
+            const body = context.payload.issue.body;
+            const issueNumber = context.payload.issue.number;
+            const issueAuthor = context.payload.issue.user.login;
+
+            // Parse issue form fields
+            function parseIssueForm(body) {
+              const fields = {};
+              const sections = body.split(/^### /m).filter(Boolean);
+              for (const section of sections) {
+                const [header, ...rest] = section.split('\n');
+                const value = rest.join('\n').trim();
+                if (value && value !== '_No response_') {
+                  fields[header.trim()] = value;
+                }
+              }
+              return fields;
+            }
+
+            const fields = parseIssueForm(body);
+
+            // Verify licensing attestation
+            const attestation = body.includes('[X]') || body.includes('[x]');
+            const checkboxes = (body.match(/\[[ xX]\]/g) || []);
+            const checkedBoxes = (body.match(/\[[xX]\]/g) || []);
+            if (checkedBoxes.length < 3) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber,
+                body: '❌ All three licensing attestation checkboxes must be checked. Please update the issue.'
+              });
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber,
+                labels: ['needs-licensing']
+              });
+              return;
+            }
+
+            // Extract image URL from markdown
+            const imageField = fields['Image'] || '';
+            const imageMatch = imageField.match(/!\[.*?\]\((https:\/\/[^\s)]+)\)/);
+            if (!imageMatch) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber,
+                body: '❌ Could not find an image in the submission. Please paste or drag an image into the Image field.'
+              });
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber,
+                labels: ['needs-info']
+              });
+              return;
+            }
+
+            const imageUrl = imageMatch[1];
+            const taxonName = fields['Genus or clade name'];
+            const imageType = (fields['Image type'] || 'other').toLowerCase();
+            const description = fields['Description'] || '';
+            const credit = fields['Credit'] || '';
+
+            if (!taxonName || !description || !credit) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber,
+                body: '❌ Missing required fields (taxon name, description, or credit).'
+              });
+              return;
+            }
+
+            // Determine file extension from URL
+            const urlPath = new URL(imageUrl).pathname;
+            const ext = path.extname(urlPath) || '.jpg';
+            const safeName = taxonName.replace(/\s+/g, '_');
+            const safeDesc = description.replace(/[^a-zA-Z0-9]/g, '_').substring(0, 40);
+            const fileName = `${safeName}_${safeDesc}${ext}`;
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              body: `🔄 Processing image submission for ${taxonName}...`
+            });
+
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              labels: ['in-progress']
+            });
+
+      - name: Label issue on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.issue.number,
+              body: '❌ There was an error processing this image submission. A maintainer will take a look.'
+            });

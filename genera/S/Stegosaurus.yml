@@ -1,0 +1,79 @@
+genus: Stegosaurus
+parent: Stegosauria
+etymology: "roofed lizard"
+description: >
+  A genus of armored dinosaur from the Late Jurassic of North America
+  and Europe. Stegosaurus is immediately recognizable by the distinctive
+  double row of kite-shaped plates along its back and the two pairs of
+  long spikes on its tail, known as the thagomizer.
+diet: herbivore
+locomotion: quadrupedal
+paleoenvironment:
+  - fluvial
+  - forested
+
+appearance:
+  integument: scaled
+  evidence: inferred
+  features:
+    - "Double row of large, kite-shaped dorsal plates"
+    - "Two pairs of tail spikes (thagomizer)"
+    - "Small, narrow head relative to body size"
+
+diagnostic_features:
+  - Alternating dorsal plates arranged in two rows
+  - Four tail spikes (thagomizer)
+  - Extremely small braincase relative to body size
+
+identifiers:
+  - source: wikidata
+    id: Q15894
+
+species:
+  - name: Stegosaurus stenops
+    status: valid
+    type_species: true
+    completeness: complete
+    etymology: "narrow-faced roofed lizard"
+    holotype:
+      specimen_id: USNM 4934
+      institution: Smithsonian National Museum of Natural History
+      material: nearly complete skeleton
+    period:
+      name: Late Jurassic
+      stage: Kimmeridgian
+    location:
+      country: United States
+      region: Colorado
+      locality: Garden Park
+      formation: Morrison Formation
+      coordinates: [38.5, -105.2]
+    size:
+      length_m: 9.0
+      weight_kg: 3100
+      hip_height_m: 2.8
+      estimate: true
+    described: 1887
+    authors: Marsh
+    description: >
+      The best-known species of Stegosaurus, known from several nearly
+      complete skeletons from the Morrison Formation.
+
+references:
+  - id: marsh1877
+    authors: Marsh, O.C.
+    year: 1877
+    title: "New order of extinct Reptilia (Stegosauria) from the Jurassic of the Rocky Mountains"
+    journal: American Journal of Science
+    volume: "14"
+    pages: "513-514"
+
+  - id: maidment2008
+    authors: Maidment, S.C.R.; Norman, D.B.; Barrett, P.M.; Upchurch, P.
+    year: 2008
+    title: "Systematics and phylogeny of Stegosauria (Dinosauria: Ornithischia)"
+    journal: Journal of Systematic Palaeontology
+    volume: "6"
+    issue: "4"
+    pages: "367-407"
+    doi: "10.1017/S1477201908002459"

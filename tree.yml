@@ -1,0 +1,68 @@
+# Open Paleo — Clade Hierarchy
+# Single source of truth for phylogenetic structure.
+# Nested YAML where each key is a clade and its value is its children.
+# Placeholder clades ({}) have no children yet.
+
+Life:
+  Animalia:
+    Arthropoda:
+      Trilobita: {}
+    Mollusca:
+      Cephalopoda:
+        Ammonoidea: {}
+    Chordata:
+      Vertebrata:
+        Actinopterygii: {}
+        Sarcopterygii:
+          Tetrapoda:
+            Synapsida: {}
+            Reptilia:
+              Lepidosauria: {}
+              Ichthyosauria: {}
+              Sauropterygia:
+                Plesiosauria: {}
+              Archosauria:
+                Pterosauria: {}
+                Crocodylomorpha: {}
+                Dinosauria:
+                  Saurischia:
+                    Theropoda:
+                      Ceratosauria:
+                        Abelisauridae: {}
+                        Noasauridae: {}
+                      Tetanurae:
+                        Megalosauroidea:
+                          Megalosauridae: {}
+                          Spinosauridae: {}
+                        Avetheropoda:
+                          Carnosauria:
+                            Allosauridae: {}
+                            Carcharodontosauridae: {}
+                          Coelurosauria:
+                            Tyrannosauridae: {}
+                            Ornithomimosauria: {}
+                            Maniraptora:
+                              Therizinosauridae: {}
+                              Dromaeosauridae: {}
+                              Troodontidae: {}
+                    Sauropodomorpha:
+                      Sauropoda:
+                        Diplodocidae: {}
+                        Macronaria:
+                          Brachiosauridae: {}
+                          Titanosauria: {}
+                  Ornithischia:
+                    Thyreophora:
+                      Stegosauria: {}
+                      Ankylosauria: {}
+                    Cerapoda:
+                      Ornithopoda:
+                        Ankylopollexia:
+                          Styracosterna:
+                            Hadrosauriformes:
+                              Hadrosauridae: {}
+                      Marginocephalia:
+                        Pachycephalosauria: {}
+                        Ceratopsia:
+                          Ceratopsidae: {}
+  Plantae: {}

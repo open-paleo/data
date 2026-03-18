@@ -1,0 +1,82 @@
+genus: Ankylosaurus
+parent: Ankylosauria
+etymology: "fused lizard"
+description: >
+  A genus of ankylosaurid dinosaur from the Late Cretaceous of western
+  North America. Ankylosaurus was the largest known ankylosaurid, covered
+  in massive bony armor plates (osteoderms) and possessing a large
+  club at the end of its tail. It was among the last non-avian
+  dinosaurs, living alongside Tyrannosaurus and Triceratops.
+diet: herbivore
+locomotion: quadrupedal
+paleoenvironment:
+  - fluvial
+  - forested
+
+appearance:
+  integument: armored
+  evidence: direct
+  features:
+    - "Body covered in large, bony osteoderms"
+    - "Massive tail club formed from fused osteoderms"
+    - "Low, wide skull with triangular horns"
+
+diagnostic_features:
+  - Large tail club formed by fused caudal osteoderms
+  - Triangular horns projecting from rear of skull
+  - Extensive dorsal armor of keeled osteoderms
+
+identifiers:
+  - source: wikidata
+    id: Q15890
+
+species:
+  - name: Ankylosaurus magniventris
+    status: valid
+    type_species: true
+    completeness: partial
+    etymology: "great-bellied fused lizard"
+    holotype:
+      specimen_id: AMNH 5895
+      institution: American Museum of Natural History
+      material: top of skull, vertebrae, ribs, shoulder girdle, armor
+    period:
+      name: Late Cretaceous
+      stage: Maastrichtian
+      from_ma: 68.0
+      to_ma: 66.0
+    location:
+      country: United States
+      region: Montana
+      formation: Hell Creek Formation
+      coordinates: [47.5, -106.5]
+    size:
+      length_m: 8.0
+      weight_kg: 4800
+      hip_height_m: 1.7
+      estimate: true
+    described: 1908
+    authors: Brown
+    description: >
+      The only species of Ankylosaurus. Known from several partial
+      specimens from the latest Cretaceous formations of western
+      North America.
+
+references:
+  - id: brown1908
+    authors: Brown, B.
+    year: 1908
+    title: "The Ankylosauridae, a new family of armored dinosaurs from the Upper Cretaceous"
+    journal: Bulletin of the American Museum of Natural History
+    volume: "24"
+    pages: "187-201"
+
+  - id: arbour2017
+    authors: Arbour, V.M.; Currie, P.J.
+    year: 2017
+    title: "Systematics, phylogeny and palaeobiogeography of the ankylosaurid dinosaurs"
+    journal: Journal of Systematic Palaeontology
+    volume: "14"
+    issue: "5"
+    pages: "385-444"
+    doi: "10.1080/14772019.2015.1059985"

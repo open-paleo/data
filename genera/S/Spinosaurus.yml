@@ -1,0 +1,86 @@
+genus: Spinosaurus
+parent: Spinosauridae
+etymology: "spine lizard"
+description: >
+  A genus of spinosaurid dinosaur from the Late Cretaceous of North
+  Africa. Spinosaurus may have been the largest of all known carnivorous
+  dinosaurs, even larger than Tyrannosaurus. It is distinguished by
+  the tall neural spines on its vertebrae, which formed a prominent
+  sail or hump along its back. Recent discoveries suggest it was
+  semi-aquatic, adapted for hunting fish.
+diet: piscivore
+locomotion: bipedal
+paleoenvironment:
+  - fluvial
+  - coastal
+
+appearance:
+  integument: scaled
+  evidence: inferred
+  features:
+    - "Tall neural spine sail along the back"
+    - "Elongated, crocodile-like snout"
+    - "Conical teeth adapted for catching fish"
+    - "Paddle-like tail for swimming"
+
+diagnostic_features:
+  - Extremely elongated neural spines forming a dorsal sail
+  - Elongated rostrum with conical, unserrated teeth
+  - Retracted nares positioned far back on the skull
+
+identifiers:
+  - source: wikidata
+    id: Q40609
+
+species:
+  - name: Spinosaurus aegyptiacus
+    status: valid
+    type_species: true
+    completeness: fragmentary
+    etymology: "Egyptian spine lizard"
+    holotype:
+      specimen_id: BSP 1912 VIII 19
+      institution: Bayerische Staatssammlung fur Palaontologie und Geologie
+      material: partial skeleton (destroyed in WWII)
+    period:
+      name: Late Cretaceous
+      stage: Cenomanian
+      from_ma: 99.0
+      to_ma: 93.9
+    location:
+      country: Egypt
+      region: Western Desert
+      locality: Bahariya Oasis
+      formation: Bahariya Formation
+      coordinates: [28.5, 28.9]
+    size:
+      length_m: 15.0
+      weight_kg: 7400
+      hip_height_m: 3.5
+      estimate: true
+    described: 1915
+    authors: Stromer
+    description: >
+      The type species of Spinosaurus. The original holotype was destroyed
+      during a British bombing raid on Munich in 1944. Recent discoveries
+      in Morocco have provided new material revealing its semi-aquatic
+      adaptations.
+
+references:
+  - id: stromer1915
+    authors: Stromer, E.
+    year: 1915
+    title: "Ergebnisse der Forschungsreisen Prof. E. Stromers in den Wusten Agyptens. II. Wirbeltier-Reste der Baharije-Stufe"
+    journal: Abhandlungen der Koniglichen Bayerischen Akademie der Wissenschaften
+    volume: "28"
+    pages: "1-32"
+
+  - id: ibrahim2014
+    authors: Ibrahim, N.; Sereno, P.C.; Dal Sasso, C.; Maganuco, S.; Fabbri, M.; Martill, D.M.; Zouhri, S.; Myhrvold, N.; Iurino, D.A.
+    year: 2014
+    title: "Semiaquatic adaptations in a giant predatory dinosaur"
+    journal: Science
+    volume: "345"
+    issue: "6204"
+    pages: "1613-1616"
+    doi: "10.1126/science.1258750"

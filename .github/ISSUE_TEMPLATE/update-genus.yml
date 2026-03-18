@@ -1,0 +1,42 @@
+name: Update Genus
+description: Update metadata for an existing genus
+title: "Update: "
+labels: ["update-genus"]
+body:
+  - type: input
+    id: genus-name
+    attributes:
+      label: Genus name
+      placeholder: e.g., Tyrannosaurus
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: what-to-update
+    attributes:
+      label: What to update
+      options:
+        - label: Description
+        - label: Diet
+        - label: Add species
+        - label: Update species status
+        - label: References
+        - label: Size estimates
+        - label: Location data
+        - label: Other
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Describe the changes you are proposing
+    validations:
+      required: true
+
+  - type: textarea
+    id: reference
+    attributes:
+      label: Reference / source
+      description: Published scientific literature supporting this update
+    validations:
+      required: true
