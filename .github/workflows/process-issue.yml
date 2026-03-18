@@ -1,0 +1,308 @@
+name: Process Issue
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    if: >
+      contains(github.event.issue.labels.*.name, 'add-genus') ||
+      contains(github.event.issue.labels.*.name, 'correct-taxonomy')
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Parse and process issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const yaml = require('js-yaml');
+            const body = context.payload.issue.body;
+            const labels = context.payload.issue.labels.map(l => l.name);
+            const issueNumber = context.payload.issue.number;
+            const issueAuthor = context.payload.issue.user.login;
+
+            // Parse issue form fields (### Header\n\nValue format)
+            function parseIssueForm(body) {
+              const fields = {};
+              const sections = body.split(/^### /m).filter(Boolean);
+              for (const section of sections) {
+                const [header, ...rest] = section.split('\n');
+                const value = rest.join('\n').trim();
+                if (value && value !== '_No response_') {
+                  fields[header.trim()] = value;
+                }
+              }
+              return fields;
+            }
+
+            const fields = parseIssueForm(body);
+
+            if (labels.includes('add-genus')) {
+              const genusName = fields['Genus name'];
+              if (!genusName) {
+                await github.rest.issues.createComment({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: issueNumber,
+                  body: '❌ Could not parse genus name from the issue. Please check the form and resubmit.'
+                });
+                await github.rest.issues.addLabels({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: issueNumber,
+                  labels: ['needs-info']
+                });
+                return;
+              }
+
+              const letter = genusName.charAt(0).toUpperCase();
+              const filePath = `genera/${letter}/${genusName}.yml`;
+
+              // Build genus YAML
+              const genusData = {
+                genus: genusName,
+                parent: fields['Parent clade'] || '',
+                description: fields['Genus description'] || '',
+                diet: (fields['Diet'] || '').toLowerCase(),
+              };
+
+              if (fields['Genus etymology']) {
+                genusData.etymology = fields['Genus etymology'];
+              }
+
+              if (fields['Locomotion']) {
+                genusData.locomotion = fields['Locomotion'].toLowerCase();
+              }
+
+              // Build species
+              const species = {
+                name: fields['Type species name'] || `${genusName} sp.`,
+                status: 'valid',
+                type_species: true,
+              };
+
+              if (fields['Species etymology']) {
+                species.etymology = fields['Species etymology'];
+              }
+
+              // Period
+              const period = {};
+              if (fields['Period']) period.name = fields['Period'];
+              if (fields['Stage']) period.stage = fields['Stage'];
+              if (Object.keys(period).length > 0) species.period = period;
+
+              // Location
+              const location = {};
+              if (fields['Country']) location.country = fields['Country'];
+              if (fields['Region']) location.region = fields['Region'];
+              if (fields['Locality']) location.locality = fields['Locality'];
+              if (fields['Formation']) location.formation = fields['Formation'];
+              if (fields['Coordinates']) {
+                const coords = fields['Coordinates'].split(',').map(Number);
+                if (coords.length === 2) location.coordinates = coords;
+              }
+              if (Object.keys(location).length > 0) species.location = location;
+
+              // Size
+              const size = {};
+              if (fields['Estimated length (m)']) size.length_m = parseFloat(fields['Estimated length (m)']);
+              if (fields['Estimated weight (kg)']) size.weight_kg = parseFloat(fields['Estimated weight (kg)']);
+              if (fields['Estimated hip height (m)']) size.hip_height_m = parseFloat(fields['Estimated hip height (m)']);
+              if (Object.keys(size).length > 0) {
+                size.estimate = true;
+                species.size = size;
+              }
+
+              if (fields['Completeness']) species.completeness = fields['Completeness'].toLowerCase();
+              if (fields['Year described']) species.described = parseInt(fields['Year described']);
+              if (fields['Authors']) species.authors = fields['Authors'];
+              if (fields['Species description']) species.description = fields['Species description'];
+
+              // Holotype
+              const holotype = {};
+              if (fields['Holotype specimen ID']) holotype.specimen_id = fields['Holotype specimen ID'];
+              if (fields['Holotype institution']) holotype.institution = fields['Holotype institution'];
+              if (fields['Holotype material']) holotype.material = fields['Holotype material'];
+              if (Object.keys(holotype).length > 0) species.holotype = holotype;
+
+              genusData.species = [species];
+
+              // Create branch and PR
+              const branchName = `genus/${genusName.toLowerCase()}`;
+              const mainRef = await github.rest.git.getRef({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                ref: 'heads/main'
+              });
+
+              await github.rest.git.createRef({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                ref: `refs/heads/${branchName}`,
+                sha: mainRef.data.object.sha
+              });
+
+              const yamlContent = yaml.dump(genusData, { lineWidth: -1, quotingType: '"' });
+
+              // Ensure directory exists by creating the file
+              const contentEncoded = Buffer.from(yamlContent).toString('base64');
+              await github.rest.repos.createOrUpdateFileContents({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                path: filePath,
+                message: `Add ${genusName}\n\nCloses #${issueNumber}`,
+                content: contentEncoded,
+                branch: branchName,
+                committer: {
+                  name: issueAuthor,
+                  email: `${issueAuthor}@users.noreply.github.com`
+                }
+              });
+
+              const pr = await github.rest.pulls.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: `Add genus: ${genusName}`,
+                body: `Adds ${genusName} to the dataset.\n\nCloses #${issueNumber}\n\nSubmitted by @${issueAuthor}`,
+                head: branchName,
+                base: 'main'
+              });
+
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber,
+                labels: ['in-progress']
+              });
+
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber,
+                body: `✅ PR created: ${pr.data.html_url}`
+              });
+            }
+
+            if (labels.includes('correct-taxonomy')) {
+              const genusName = fields['Genus name'];
+              const newParent = fields['Proposed parent clade'];
+              if (!genusName || !newParent) {
+                await github.rest.issues.createComment({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: issueNumber,
+                  body: '❌ Missing required fields. Please check the form and resubmit.'
+                });
+                return;
+              }
+
+              // Find the genus file
+              const letter = genusName.charAt(0).toUpperCase();
+              const filePath = `genera/${letter}/${genusName}.yml`;
+
+              let fileData;
+              try {
+                fileData = await github.rest.repos.getContent({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  path: filePath,
+                  ref: 'main'
+                });
+              } catch (e) {
+                await github.rest.issues.createComment({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: issueNumber,
+                  body: `❌ Genus file not found: ${filePath}`
+                });
+                return;
+              }
+
+              const content = Buffer.from(fileData.data.content, 'base64').toString();
+              const genusData = yaml.load(content);
+              genusData.parent = newParent;
+              const updatedYaml = yaml.dump(genusData, { lineWidth: -1, quotingType: '"' });
+
+              const branchName = `fix/${genusName.toLowerCase()}-taxonomy`;
+              const mainRef = await github.rest.git.getRef({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                ref: 'heads/main'
+              });
+
+              await github.rest.git.createRef({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                ref: `refs/heads/${branchName}`,
+                sha: mainRef.data.object.sha
+              });
+
+              await github.rest.repos.createOrUpdateFileContents({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                path: filePath,
+                message: `Reclassify ${genusName} under ${newParent}\n\nCloses #${issueNumber}`,
+                content: Buffer.from(updatedYaml).toString('base64'),
+                sha: fileData.data.sha,
+                branch: branchName
+              });
+
+              const pr = await github.rest.pulls.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: `Reclassify ${genusName} → ${newParent}`,
+                body: `Reclassifies ${genusName} from its current parent to ${newParent}.\n\nCloses #${issueNumber}\n\nSubmitted by @${issueAuthor}`,
+                head: branchName,
+                base: 'main'
+              });
+
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber,
+                labels: ['in-progress']
+              });
+
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber,
+                body: `✅ PR created: ${pr.data.html_url}`
+              });
+            }
+
+      - name: Label issue on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.issue.number,
+              labels: ['needs-info']
+            });
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.issue.number,
+              body: '❌ There was an error processing this issue. A maintainer will take a look.'
+            });

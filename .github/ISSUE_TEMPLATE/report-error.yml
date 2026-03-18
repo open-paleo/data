@@ -1,0 +1,30 @@
+name: Report Error
+description: Report any error in the dataset
+title: "Error: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What is the error?
+      description: Describe the error as specifically as possible
+    validations:
+      required: true
+
+  - type: input
+    id: affected-taxon
+    attributes:
+      label: Affected genus or clade
+      description: Which taxon contains the error?
+
+  - type: textarea
+    id: correct-information
+    attributes:
+      label: Correct information
+      description: What should the data say instead?
+
+  - type: textarea
+    id: reference
+    attributes:
+      label: Reference / source
+      description: Published source supporting the correction

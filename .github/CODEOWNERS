@@ -1,0 +1,8 @@
+# Default: maintainers review everything
+*                       @open-paleo/maintainers
+
+# Critical files: require explicit review, never auto-merged
+tree.yml                @open-paleo/maintainers
+schema.yml              @open-paleo/maintainers
+.github/                @open-paleo/maintainers
+scripts/                @open-paleo/maintainers

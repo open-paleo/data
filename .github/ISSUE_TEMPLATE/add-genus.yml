@@ -1,0 +1,359 @@
+name: Add New Genus
+description: Submit a new dinosaur genus to the dataset
+title: "Add genus: "
+labels: ["add-genus"]
+body:
+  - type: input
+    id: genus-name
+    attributes:
+      label: Genus name
+      placeholder: e.g., Tyrannosaurus
+    validations:
+      required: true
+
+  - type: input
+    id: genus-etymology
+    attributes:
+      label: Genus etymology
+      description: Meaning of the genus name
+      placeholder: e.g., "tyrant lizard"
+
+  - type: dropdown
+    id: parent-clade
+    attributes:
+      label: Parent clade
+      options:  # sync:tree.yml:clades
+        - Abelisauridae
+        - Actinopterygii
+        - Allosauridae
+        - Ammonoidea
+        - Animalia
+        - Ankylopollexia
+        - Ankylosauria
+        - Archosauria
+        - Arthropoda
+        - Avetheropoda
+        - Brachiosauridae
+        - Carcharodontosauridae
+        - Carnosauria
+        - Cephalopoda
+        - Cerapoda
+        - Ceratopsia
+        - Ceratopsidae
+        - Ceratosauria
+        - Chordata
+        - Coelurosauria
+        - Crocodylomorpha
+        - Dinosauria
+        - Diplodocidae
+        - Dromaeosauridae
+        - Hadrosauridae
+        - Hadrosauriformes
+        - Ichthyosauria
+        - Lepidosauria
+        - Life
+        - Macronaria
+        - Maniraptora
+        - Marginocephalia
+        - Megalosauridae
+        - Megalosauroidea
+        - Mollusca
+        - Noasauridae
+        - Ornithischia
+        - Ornithomimosauria
+        - Ornithopoda
+        - Pachycephalosauria
+        - Plantae
+        - Plesiosauria
+        - Pterosauria
+        - Reptilia
+        - Sarcopterygii
+        - Saurischia
+        - Sauropoda
+        - Sauropodomorpha
+        - Sauropterygia
+        - Spinosauridae
+        - Stegosauria
+        - Styracosterna
+        - Synapsida
+        - Tetanurae
+        - Tetrapoda
+        - Therizinosauridae
+        - Theropoda
+        - Thyreophora
+        - Titanosauria
+        - Trilobita
+        - Troodontidae
+        - Tyrannosauridae
+        - Vertebrata
+        # ... (auto-generated, do not edit manually)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: diet
+    attributes:
+      label: Diet
+      options:  # sync:schema.yml:diet
+        - carnivore
+        - herbivore
+        - insectivore
+        - omnivore
+        - piscivore
+    validations:
+      required: true
+
+  - type: input
+    id: type-species-name
+    attributes:
+      label: Type species name
+      placeholder: e.g., Tyrannosaurus rex
+    validations:
+      required: true
+
+  - type: input
+    id: species-etymology
+    attributes:
+      label: Species etymology
+      description: Meaning of the species name
+      placeholder: e.g., "tyrant lizard king"
+
+  - type: dropdown
+    id: period
+    attributes:
+      label: Period
+      options:  # sync:schema.yml:periods
+        - Early Cretaceous
+        - Early Jurassic
+        - Early Triassic
+        - Late Cretaceous
+        - Late Jurassic
+        - Late Triassic
+        - Middle Jurassic
+        - Middle Triassic
+    validations:
+      required: true
+
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Stage
+      description: Geological stage (optional but helpful)
+      options:  # sync:schema.yml:stages
+        - Aalenian
+        - Albian
+        - Anisian
+        - Aptian
+        - Bajocian
+        - Barremian
+        - Bathonian
+        - Berriasian
+        - Callovian
+        - Campanian
+        - Carnian
+        - Cenomanian
+        - Coniacian
+        - Hauterivian
+        - Hettangian
+        - Induan
+        - Kimmeridgian
+        - Ladinian
+        - Maastrichtian
+        - Norian
+        - Olenekian
+        - Oxfordian
+        - Pliensbachian
+        - Rhaetian
+        - Santonian
+        - Sinemurian
+        - Tithonian
+        - Toarcian
+        - Turonian
+        - Valanginian
+
+  - type: input
+    id: country
+    attributes:
+      label: Country
+      description: Country where the type specimen was found
+      placeholder: e.g., United States
+    validations:
+      required: true
+
+  - type: input
+    id: region
+    attributes:
+      label: Region
+      description: State, province, or geographic region
+      placeholder: e.g., Montana
+
+  - type: input
+    id: locality
+    attributes:
+      label: Locality
+      description: Nearest city, town, or named site
+      placeholder: e.g., Fort Peck
+
+  - type: input
+    id: formation
+    attributes:
+      label: Formation
+      description: Geological formation
+      placeholder: e.g., Hell Creek Formation
+
+  - type: input
+    id: coordinates
+    attributes:
+      label: Coordinates
+      description: "Latitude, longitude (decimal degrees)"
+      placeholder: "e.g., 47.5, -106.9"
+
+  - type: dropdown
+    id: locomotion
+    attributes:
+      label: Locomotion
+      options:  # sync:schema.yml:locomotion
+        - bipedal
+        - facultative
+        - quadrupedal
+
+  - type: dropdown
+    id: integument
+    attributes:
+      label: Integument
+      options:  # sync:schema.yml:integument
+        - armored
+        - feathered
+        - scaled
+        - unknown
+
+  - type: dropdown
+    id: integument-evidence
+    attributes:
+      label: Integument evidence
+      options:  # sync:schema.yml:integument_evidence
+        - direct
+        - inferred
+
+  - type: textarea
+    id: appearance-features
+    attributes:
+      label: Appearance features
+      description: Notable visual traits (one per line)
+      placeholder: |
+        e.g.,
+        Massive skull with robust jaw musculature
+        Tiny, two-fingered forelimbs
+
+  - type: checkboxes
+    id: paleoenvironment
+    attributes:
+      label: Paleoenvironment
+      options:
+        - label: fluvial
+        - label: lacustrine
+        - label: coastal
+        - label: deltaic
+        - label: arid
+        - label: forested
+        - label: volcanic
+        - label: polar
+
+  - type: textarea
+    id: diagnostic-features
+    attributes:
+      label: Diagnostic features
+      description: Anatomical traits distinguishing this genus (one per line)
+
+  - type: dropdown
+    id: completeness
+    attributes:
+      label: Completeness
+      options:  # sync:schema.yml:completeness
+        - complete
+        - fragmentary
+        - partial
+
+  - type: input
+    id: holotype-specimen-id
+    attributes:
+      label: Holotype specimen ID
+      placeholder: e.g., CM 9380
+
+  - type: input
+    id: holotype-institution
+    attributes:
+      label: Holotype institution
+      placeholder: e.g., Carnegie Museum of Natural History
+
+  - type: input
+    id: holotype-material
+    attributes:
+      label: Holotype material
+      placeholder: e.g., partial skeleton including skull
+
+  - type: textarea
+    id: external-identifiers
+    attributes:
+      label: External identifiers
+      description: "One per line, format: source: id"
+      placeholder: |
+        wikidata: Q131087
+        pbdb: 54833
+
+  - type: input
+    id: length
+    attributes:
+      label: Estimated length (m)
+      placeholder: e.g., 12.3
+
+  - type: input
+    id: weight
+    attributes:
+      label: Estimated weight (kg)
+      placeholder: e.g., 8400
+
+  - type: input
+    id: hip-height
+    attributes:
+      label: Estimated hip height (m)
+      placeholder: e.g., 3.7
+
+  - type: input
+    id: year-described
+    attributes:
+      label: Year described
+      placeholder: e.g., 1905
+
+  - type: input
+    id: authors
+    attributes:
+      label: Authors
+      placeholder: e.g., Osborn
+
+  - type: textarea
+    id: genus-description
+    attributes:
+      label: Genus description
+      description: A description accessible to a general audience
+    validations:
+      required: true
+
+  - type: textarea
+    id: species-description
+    attributes:
+      label: Species description
+
+  - type: textarea
+    id: reference
+    attributes:
+      label: Reference / source
+      description: Published scientific literature supporting this addition
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-species
+    attributes:
+      label: Additional species
+      description: Add any additional species (freeform)

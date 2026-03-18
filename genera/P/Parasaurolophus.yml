@@ -1,0 +1,83 @@
+genus: Parasaurolophus
+parent: Hadrosauridae
+etymology: "near crested lizard"
+description: >
+  A genus of hadrosaurid dinosaur from the Late Cretaceous of North
+  America. Parasaurolophus is best known for its large, elaborate
+  cranial crest that extends back from the skull in a long, curved
+  tube. The hollow crest likely functioned as a resonating chamber
+  for producing sounds and for visual display.
+diet: herbivore
+locomotion: facultative
+paleoenvironment:
+  - fluvial
+  - forested
+
+appearance:
+  integument: scaled
+  evidence: inferred
+  features:
+    - "Long, curved tubular cranial crest extending behind the skull"
+    - "Broad, duck-like bill"
+    - "Deep tail for possible display"
+
+diagnostic_features:
+  - Long, posteriorly directed tubular cranial crest
+  - Crest contains convoluted nasal passages
+  - Elongate, backward-curving premaxillary-nasal crest
+
+identifiers:
+  - source: wikidata
+    id: Q191805
+
+species:
+  - name: Parasaurolophus walkeri
+    status: valid
+    type_species: true
+    completeness: partial
+    etymology: "Walker's near crested lizard"
+    holotype:
+      specimen_id: ROM 768
+      institution: Royal Ontario Museum
+      material: partial skeleton with nearly complete skull
+    period:
+      name: Late Cretaceous
+      stage: Campanian
+      from_ma: 76.5
+      to_ma: 73.0
+    location:
+      country: Canada
+      region: Alberta
+      locality: Sand Creek
+      formation: Dinosaur Park Formation
+      coordinates: [51.5, -111.5]
+    size:
+      length_m: 9.5
+      weight_kg: 2500
+      hip_height_m: 2.8
+      estimate: true
+    described: 1922
+    authors: Parks
+    description: >
+      The type species of Parasaurolophus, known from a partial skeleton
+      with a nearly complete skull preserving the distinctive tubular
+      crest.
+
+references:
+  - id: parks1922
+    authors: Parks, W.A.
+    year: 1922
+    title: "Parasaurolophus walkeri, a new genus and species of crested trachodont dinosaur"
+    journal: University of Toronto Studies, Geological Series
+    volume: "13"
+    pages: "1-32"
+
+  - id: evans2009
+    authors: Evans, D.C.; Bavington, R.; Campione, N.E.
+    year: 2009
+    title: "An unusual hadrosaurid braincase from the Dinosaur Park Formation and the biostratigraphy of Parasaurolophus (Ornithischia: Lambeosaurinae) from southern Alberta"
+    journal: Canadian Journal of Earth Sciences
+    volume: "46"
+    issue: "11"
+    pages: "791-800"
+    doi: "10.1139/E09-050"

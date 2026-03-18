@@ -1,0 +1,104 @@
+genus: Triceratops
+parent: Ceratopsidae
+etymology: "three-horned face"
+description: >
+  A genus of chasmosaurine ceratopsian dinosaur from the Late Cretaceous
+  of North America. One of the last and largest ceratopsians, Triceratops
+  is distinguished by its large bony frill and three facial horns. It is
+  one of the most recognizable of all dinosaurs and among the most
+  commonly found in the fossil record.
+diet: herbivore
+locomotion: quadrupedal
+paleoenvironment:
+  - fluvial
+  - forested
+
+appearance:
+  integument: scaled
+  evidence: inferred
+  features:
+    - "Large bony frill extending from the back of the skull"
+    - "Two long brow horns above the eyes"
+    - "Short nasal horn on the snout"
+
+diagnostic_features:
+  - Three facial horns with elongate brow horns
+  - Solid parietal frill lacking fenestrae
+  - Elongate squamosal bones forming frill margin
+
+identifiers:
+  - source: wikidata
+    id: Q14397
+
+species:
+  - name: Triceratops horridus
+    status: valid
+    type_species: true
+    completeness: complete
+    etymology: "rough three-horned face"
+    holotype:
+      specimen_id: YPM 1820
+      institution: Yale Peabody Museum
+      material: skull roof with horn cores
+    period:
+      name: Late Cretaceous
+      stage: Maastrichtian
+      from_ma: 68.0
+      to_ma: 66.0
+    location:
+      country: United States
+      region: Colorado
+      formation: Denver Formation
+      coordinates: [39.7, -104.9]
+    size:
+      length_m: 8.0
+      weight_kg: 6500
+      hip_height_m: 2.9
+      estimate: true
+    described: 1889
+    authors: Marsh
+    description: >
+      The type species of Triceratops, originally described from a skull
+      roof with horn cores found in Colorado.
+
+  - name: Triceratops prorsus
+    status: valid
+    completeness: complete
+    period:
+      name: Late Cretaceous
+      stage: Maastrichtian
+      from_ma: 68.0
+      to_ma: 66.0
+    location:
+      country: United States
+      region: Montana
+      formation: Hell Creek Formation
+    size:
+      length_m: 9.0
+      weight_kg: 7200
+      estimate: true
+    described: 1890
+    authors: Marsh
+    description: >
+      A second valid species of Triceratops, distinguished from T. horridus
+      by differences in horn and frill morphology.
+
+references:
+  - id: marsh1889
+    authors: Marsh, O.C.
+    year: 1889
+    title: "Notice of gigantic horned Dinosauria from the Cretaceous"
+    journal: American Journal of Science
+    volume: "38"
+    pages: "173-175"
+    doi: "10.2475/ajs.s3-38.224.173"
+
+  - id: scannella2014
+    authors: Scannella, J.B.; Fowler, D.W.; Goodwin, M.B.; Horner, J.R.
+    year: 2014
+    title: "Evolutionary trends in Triceratops from the Hell Creek Formation, Montana"
+    journal: Proceedings of the National Academy of Sciences
+    volume: "111"
+    issue: "28"
+    pages: "10245-10250"
+    doi: "10.1073/pnas.1313334111"

@@ -1,0 +1,80 @@
+genus: Brachiosaurus
+parent: Brachiosauridae
+etymology: "arm lizard"
+description: >
+  A genus of sauropod dinosaur from the Late Jurassic of North America.
+  Brachiosaurus is unusual among sauropods for its proportionally long
+  forelimbs, giving it a giraffe-like posture with the body sloping
+  upward toward the head. It was one of the tallest and largest
+  dinosaurs known from relatively complete remains.
+diet: herbivore
+locomotion: quadrupedal
+paleoenvironment:
+  - fluvial
+  - forested
+
+appearance:
+  integument: scaled
+  evidence: inferred
+  features:
+    - "Long forelimbs giving a distinctive upward-sloping body profile"
+    - "Tall, arched nasal crest on the skull"
+    - "Extremely long neck held at a steep angle"
+
+diagnostic_features:
+  - Forelimbs longer than hindlimbs
+  - Elongate metacarpals
+  - Arched nasal bones forming a crest above the skull
+
+identifiers:
+  - source: wikidata
+    id: Q19711
+
+species:
+  - name: Brachiosaurus altithorax
+    status: valid
+    type_species: true
+    completeness: partial
+    etymology: "deep-chested arm lizard"
+    holotype:
+      specimen_id: FMNH P 25107
+      institution: Field Museum of Natural History
+      material: partial postcranial skeleton
+    period:
+      name: Late Jurassic
+      stage: Kimmeridgian
+    location:
+      country: United States
+      region: Colorado
+      locality: Grand Junction
+      formation: Morrison Formation
+      coordinates: [39.1, -108.6]
+    size:
+      length_m: 22.0
+      weight_kg: 35000
+      hip_height_m: 6.4
+      estimate: true
+    described: 1903
+    authors: Riggs
+    description: >
+      The only valid species of Brachiosaurus. Known from a partial
+      skeleton discovered in the Morrison Formation of Colorado.
+
+references:
+  - id: riggs1903
+    authors: Riggs, E.S.
+    year: 1903
+    title: "Brachiosaurus altithorax, the largest known dinosaur"
+    journal: American Journal of Science
+    volume: "15"
+    pages: "299-306"
+
+  - id: taylor2009
+    authors: Taylor, M.P.
+    year: 2009
+    title: "A re-evaluation of Brachiosaurus altithorax Riggs 1903 (Dinosauria, Sauropoda) and its generic separation from Giraffatitan brancai (Janensch 1914)"
+    journal: Journal of Vertebrate Paleontology
+    volume: "29"
+    issue: "3"
+    pages: "787-806"
+    doi: "10.1671/039.029.0309"

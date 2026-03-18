@@ -1,0 +1,79 @@
+genus: Velociraptor
+parent: Dromaeosauridae
+etymology: "swift thief"
+description: >
+  A genus of small dromaeosaurid dinosaur from the Late Cretaceous of
+  Mongolia. Despite its popular depiction as a large predator, Velociraptor
+  was roughly the size of a turkey, about 2 metres long and 15 kilograms.
+  It possessed a large, sickle-shaped claw on the second toe of each
+  foot, characteristic of dromaeosaurids.
+diet: carnivore
+locomotion: bipedal
+paleoenvironment:
+  - arid
+
+appearance:
+  integument: feathered
+  evidence: inferred
+  features:
+    - "Large, sickle-shaped retractable claw on second toe"
+    - "Long, stiffened tail for balance"
+    - "Elongated snout with serrated teeth"
+
+diagnostic_features:
+  - Depressed and elongated skull with upturned snout
+  - Enlarged sickle claw on pedal digit II
+  - Long, low skull with over 26 teeth in each maxilla
+
+identifiers:
+  - source: wikidata
+    id: Q14332
+
+species:
+  - name: Velociraptor mongoliensis
+    status: valid
+    type_species: true
+    completeness: complete
+    etymology: "swift thief from Mongolia"
+    holotype:
+      specimen_id: AMNH 6515
+      institution: American Museum of Natural History
+      material: crushed skull and sickle claw
+    period:
+      name: Late Cretaceous
+      stage: Campanian
+    location:
+      country: Mongolia
+      region: Omnogovi Province
+      locality: Bayn Dzak
+      formation: Djadochta Formation
+      coordinates: [44.1, 100.0]
+    size:
+      length_m: 2.0
+      weight_kg: 15
+      hip_height_m: 0.5
+      estimate: true
+    described: 1924
+    authors: Osborn
+    description: >
+      The type species of Velociraptor. Known from numerous specimens
+      discovered in the Gobi Desert, including the famous "Fighting
+      Dinosaurs" specimen locked in combat with a Protoceratops.
+
+references:
+  - id: osborn1924
+    authors: Osborn, H.F.
+    year: 1924
+    title: "Three new Theropoda, Protoceratops zone, central Mongolia"
+    journal: American Museum Novitates
+    volume: "144"
+    pages: "1-12"
+
+  - id: turner2012
+    authors: Turner, A.H.; Makovicky, P.J.; Norell, M.A.
+    year: 2012
+    title: "A review of dromaeosaurid systematics and paravian phylogeny"
+    journal: Bulletin of the American Museum of Natural History
+    volume: "371"
+    pages: "1-206"
+    doi: "10.1206/748.1"
