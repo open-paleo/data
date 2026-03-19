@@ -1,0 +1,196 @@
+name: Add Species
+description: Add a new species to an existing genus
+title: "Add species: "
+labels: ["add-species"]
+body:
+  - type: input
+    id: genus-name
+    attributes:
+      label: Genus name
+      placeholder: e.g., Tyrannosaurus
+    validations:
+      required: true
+
+  - type: input
+    id: species-name
+    attributes:
+      label: Species name
+      placeholder: e.g., Tyrannosaurus rex
+    validations:
+      required: true
+
+  - type: input
+    id: species-etymology
+    attributes:
+      label: Species etymology
+      description: Meaning of the species name
+      placeholder: e.g., "tyrant lizard king"
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      options:  # sync:schema.yml:status
+        - disputed
+        - nomen dubium
+        - nomen nudum
+        - synonym
+        - valid
+    validations:
+      required: true
+
+  - type: input
+    id: synonym-of
+    attributes:
+      label: If synonym, synonym of
+      description: Full species name this is a synonym of
+      placeholder: e.g., Tyrannosaurus rex
+
+  - type: dropdown
+    id: period
+    attributes:
+      label: Period
+      options:  # sync:schema.yml:periods
+        - Early Cretaceous
+        - Early Jurassic
+        - Early Triassic
+        - Late Cretaceous
+        - Late Jurassic
+        - Late Triassic
+        - Middle Jurassic
+        - Middle Triassic
+
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Stage
+      description: Geological stage
+      options:  # sync:schema.yml:stages
+        - Aalenian
+        - Albian
+        - Anisian
+        - Aptian
+        - Bajocian
+        - Barremian
+        - Bathonian
+        - Berriasian
+        - Callovian
+        - Campanian
+        - Carnian
+        - Cenomanian
+        - Coniacian
+        - Hauterivian
+        - Hettangian
+        - Induan
+        - Kimmeridgian
+        - Ladinian
+        - Maastrichtian
+        - Norian
+        - Olenekian
+        - Oxfordian
+        - Pliensbachian
+        - Rhaetian
+        - Santonian
+        - Sinemurian
+        - Tithonian
+        - Toarcian
+        - Turonian
+        - Valanginian
+
+  - type: input
+    id: country
+    attributes:
+      label: Country
+      description: Country where the type specimen was found
+      placeholder: e.g., United States
+
+  - type: input
+    id: region
+    attributes:
+      label: Region
+      description: State, province, or geographic region
+      placeholder: e.g., Montana
+
+  - type: input
+    id: formation
+    attributes:
+      label: Formation
+      description: Geological formation
+      placeholder: e.g., Hell Creek Formation
+
+  - type: input
+    id: coordinates
+    attributes:
+      label: Coordinates
+      description: "Latitude, longitude (decimal degrees)"
+      placeholder: "e.g., 47.5, -106.9"
+
+  - type: dropdown
+    id: completeness
+    attributes:
+      label: Completeness
+      options:  # sync:schema.yml:completeness
+        - complete
+        - fragmentary
+        - partial
+
+  - type: input
+    id: holotype-specimen-id
+    attributes:
+      label: Holotype specimen ID
+      placeholder: e.g., CM 9380
+
+  - type: input
+    id: holotype-institution
+    attributes:
+      label: Holotype institution
+      placeholder: e.g., Carnegie Museum of Natural History
+
+  - type: input
+    id: holotype-material
+    attributes:
+      label: Holotype material
+      placeholder: e.g., partial skeleton including skull
+
+  - type: input
+    id: length
+    attributes:
+      label: Estimated length (m)
+      placeholder: e.g., 12.3
+
+  - type: input
+    id: weight
+    attributes:
+      label: Estimated weight (kg)
+      placeholder: e.g., 8400
+
+  - type: input
+    id: hip-height
+    attributes:
+      label: Estimated hip height (m)
+      placeholder: e.g., 3.7
+
+  - type: input
+    id: year-described
+    attributes:
+      label: Year described
+      placeholder: e.g., 1905
+
+  - type: input
+    id: authors
+    attributes:
+      label: Authors
+      placeholder: e.g., Osborn
+
+  - type: textarea
+    id: species-description
+    attributes:
+      label: Species description
+
+  - type: textarea
+    id: reference
+    attributes:
+      label: Reference / source
+      description: Published scientific literature supporting this addition
+    validations:
+      required: true

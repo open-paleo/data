@@ -1,0 +1,28 @@
+name: Propose Update
+description: Propose a change to an existing genus for maintainer discussion
+title: "Propose: "
+labels: ["propose-update"]
+body:
+  - type: input
+    id: genus-name
+    attributes:
+      label: Genus name
+      placeholder: e.g., Tyrannosaurus
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Describe the changes you are proposing and why
+    validations:
+      required: true
+
+  - type: textarea
+    id: reference
+    attributes:
+      label: Reference / source
+      description: Published scientific literature supporting this update
+    validations:
+      required: true

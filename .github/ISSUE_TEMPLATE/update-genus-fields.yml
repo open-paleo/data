@@ -1,0 +1,104 @@
+name: Update Genus Fields
+description: Update metadata for an existing genus (only filled fields are changed)
+title: "Update: "
+labels: ["update-genus"]
+body:
+  - type: input
+    id: genus-name
+    attributes:
+      label: Genus name
+      placeholder: e.g., Tyrannosaurus
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Replaces the existing genus description
+
+  - type: dropdown
+    id: diet
+    attributes:
+      label: Diet
+      options:  # sync:schema.yml:diet
+        - carnivore
+        - herbivore
+        - insectivore
+        - omnivore
+        - piscivore
+
+  - type: dropdown
+    id: locomotion
+    attributes:
+      label: Locomotion
+      options:  # sync:schema.yml:locomotion
+        - bipedal
+        - facultative
+        - quadrupedal
+
+  - type: checkboxes
+    id: paleoenvironment
+    attributes:
+      label: Paleoenvironment
+      description: Additive — checked values are merged with existing
+      options:
+        - label: fluvial
+        - label: lacustrine
+        - label: coastal
+        - label: deltaic
+        - label: arid
+        - label: forested
+        - label: volcanic
+        - label: polar
+
+  - type: dropdown
+    id: integument
+    attributes:
+      label: Integument
+      options:  # sync:schema.yml:integument
+        - armored
+        - feathered
+        - scaled
+        - unknown
+
+  - type: dropdown
+    id: integument-evidence
+    attributes:
+      label: Integument evidence
+      options:  # sync:schema.yml:integument_evidence
+        - direct
+        - inferred
+
+  - type: textarea
+    id: appearance-features
+    attributes:
+      label: Appearance features
+      description: Additive — one per line, merged with existing
+      placeholder: |
+        e.g.,
+        Massive skull with robust jaw musculature
+        Tiny, two-fingered forelimbs
+
+  - type: textarea
+    id: diagnostic-features
+    attributes:
+      label: Diagnostic features
+      description: Additive — one per line, merged with existing
+
+  - type: textarea
+    id: external-identifiers
+    attributes:
+      label: External identifiers
+      description: "Additive — one per line, format: source: id"
+      placeholder: |
+        wikidata: Q131087
+        pbdb: 54833
+
+  - type: textarea
+    id: reference
+    attributes:
+      label: Reference / source
+      description: Published scientific literature supporting this update
+    validations:
+      required: true
