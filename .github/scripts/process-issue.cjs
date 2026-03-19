@@ -22,7 +22,7 @@ const {
 module.exports = async function ({ github, context })
 {
     const body = context.payload.issue.body;
-    const labels = context.payload.issue.labels.map((l) => l.name);
+    const labels = context.payload.issue.labels.map((label) => label.name);
     const issueNumber = context.payload.issue.number;
     const issueAuthor = context.payload.issue.user.login;
     const repo = context.repo;
@@ -102,6 +102,59 @@ async function handleAddGenus({ github, repo, issueNumber, issueAuthor, fields }
         genusData.locomotion = fields["Locomotion"].toLowerCase();
     }
 
+    // Integument
+    if (fields["Integument"] || fields["Integument evidence"])
+    {
+        genusData.appearance = {};
+
+        if (fields["Integument"])
+        {
+            genusData.appearance.integument = fields["Integument"].toLowerCase();
+        }
+
+        if (fields["Integument evidence"])
+        {
+            genusData.appearance.evidence = fields["Integument evidence"].toLowerCase();
+        }
+    }
+
+    // Appearance features
+    const appearanceFeatures = parseLines(fields["Appearance features"]);
+
+    if (appearanceFeatures.length > 0)
+    {
+        if (!genusData.appearance)
+        {
+            genusData.appearance = {};
+        }
+
+        genusData.appearance.features = appearanceFeatures;
+    }
+
+    // Diagnostic features
+    const diagnosticFeatures = parseLines(fields["Diagnostic features"]);
+
+    if (diagnosticFeatures.length > 0)
+    {
+        genusData.diagnostic_features = diagnosticFeatures;
+    }
+
+    // Paleoenvironment
+    const paleoenvironments = parseCheckboxes(fields["Paleoenvironment"]);
+
+    if (paleoenvironments.length > 0)
+    {
+        genusData.paleoenvironment = paleoenvironments;
+    }
+
+    // External identifiers
+    const identifiers = parseLines(fields["External identifiers"]);
+
+    if (identifiers.length > 0)
+    {
+        genusData.identifiers = identifiers;
+    }
+
     const species = buildSpeciesFromFields(fields, {
         nameField: "Type species name",
         fallbackName: `${genusName} sp.`,
@@ -178,6 +231,36 @@ async function handleAddGenus({ github, repo, issueNumber, issueAuthor, fields }
  * @param {string} options.issueAuthor - GitHub login of the issue author.
  * @param {Record<string, string>} options.fields - Parsed issue form fields.
  */
+/**
+ * Builds the PR body for a correct-taxonomy PR, including reference and notes
+ * if provided.
+ *
+ * @param {string} genusName - The genus being reclassified.
+ * @param {string} newParent - The proposed new parent clade.
+ * @param {number} issueNumber - Originating issue number.
+ * @param {string} issueAuthor - GitHub login of the issue author.
+ * @param {Record<string, string>} fields - Parsed issue form fields.
+ * @returns {string} The formatted PR body.
+ */
+function buildTaxonomyPrBody(genusName, newParent, issueNumber, issueAuthor, fields)
+{
+    const lines = [`Reclassifies ${genusName} to ${newParent}.`];
+
+    if (fields["Reference / source"])
+    {
+        lines.push("", `**Reference:** ${fields["Reference / source"]}`);
+    }
+
+    if (fields["Notes"])
+    {
+        lines.push("", `**Notes:** ${fields["Notes"]}`);
+    }
+
+    lines.push("", `Closes #${issueNumber}`, "", `Submitted by @${issueAuthor}`);
+
+    return lines.join("\n");
+}
+
 async function handleCorrectTaxonomy({ github, repo, issueNumber, issueAuthor, fields })
 {
     const genusName = fields["Genus name"];
@@ -240,7 +323,7 @@ async function handleCorrectTaxonomy({ github, repo, issueNumber, issueAuthor, f
         owner: repo.owner,
         repo: repo.repo,
         title: `Reclassify ${genusName} → ${newParent}`,
-        body: `Reclassifies ${genusName} from its current parent to ${newParent}.\n\nCloses #${issueNumber}\n\nSubmitted by @${issueAuthor}`,
+        body: buildTaxonomyPrBody(genusName, newParent, issueNumber, issueAuthor, fields),
         head: branchName,
         base: "main",
     });
@@ -562,12 +645,12 @@ async function handleUpdateSpecies({ github, repo, issueNumber, issueAuthor, fie
     const { filePath, sha, data: genusData } = genusFile;
 
     const speciesEntry = (genusData.species ?? []).find(
-        (s) => s.name.toLowerCase() === speciesName.toLowerCase(),
+        (species) => species.name.toLowerCase() === speciesName.toLowerCase(),
     );
 
     if (!speciesEntry)
     {
-        const available = (genusData.species ?? []).map((s) => s.name).join(", ") || "none";
+        const available = (genusData.species ?? []).map((species) => species.name).join(", ") || "none";
 
         await commentError(
             github,
@@ -634,7 +717,7 @@ async function handleUpdateSpecies({ github, repo, issueNumber, issueAuthor, fie
     }
 
     // Location — merge at the property level
-    if (fields["Country"] || fields["Region"] || fields["Formation"] || fields["Coordinates"])
+    if (fields["Country"] || fields["Region"] || fields["Locality"] || fields["Formation"] || fields["Coordinates"])
     {
         if (!speciesEntry.location)
         {
@@ -651,6 +734,11 @@ async function handleUpdateSpecies({ github, repo, issueNumber, issueAuthor, fie
             speciesEntry.location.region = fields["Region"];
         }
 
+        if (fields["Locality"])
+        {
+            speciesEntry.location.locality = fields["Locality"];
+        }
+
         if (fields["Formation"])
         {
             speciesEntry.location.formation = fields["Formation"];
@@ -658,9 +746,9 @@ async function handleUpdateSpecies({ github, repo, issueNumber, issueAuthor, fie
 
         if (fields["Coordinates"])
         {
-            const coords = fields["Coordinates"].split(",").map(Number);
+            const coords = fields["Coordinates"].split(",").map((value) => Number(value.trim()));
 
-            if (coords.length === 2)
+            if (coords.length === 2 && coords.every((value) => !isNaN(value)))
             {
                 speciesEntry.location.coordinates = coords;
             }
@@ -812,9 +900,9 @@ function buildSpeciesFromFields(fields, { nameField, fallbackName, forceStatus, 
 
     if (fields["Coordinates"])
     {
-        const coords = fields["Coordinates"].split(",").map(Number);
+        const coords = fields["Coordinates"].split(",").map((value) => Number(value.trim()));
 
-        if (coords.length === 2)
+        if (coords.length === 2 && coords.every((value) => !isNaN(value)))
         {
             location.coordinates = coords;
         }

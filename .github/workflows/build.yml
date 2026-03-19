@@ -35,8 +35,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add dist/ dictionaries/
-          if [ -n "$(git status --porcelain dist/ dictionaries/)" ]; then
+          git add dist/ dictionaries/ docs/schema.json docs/open-paleo.json
+          if [ -n "$(git status --porcelain dist/ dictionaries/ docs/)" ]; then
             git commit -m "build: update output files"
             git push
           fi

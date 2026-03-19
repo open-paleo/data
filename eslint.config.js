@@ -2,63 +2,73 @@ import eslint from "@eslint/js";
 import tseslint from "typescript-eslint";
 import stylistic from "@stylistic/eslint-plugin";
 
+// Formatting rules shared by both TypeScript and plain JavaScript files.
+const sharedStylisticRules = {
+    // Allman brace style
+    "@stylistic/brace-style": ["error", "allman", { allowSingleLine: false }],
+
+    // 4-space indentation, no tabs
+    "@stylistic/indent": ["error", 4],
+    "@stylistic/no-tabs": "error",
+
+    // Double quotes
+    "@stylistic/quotes": ["error", "double", { avoidEscape: true }],
+
+    // Semicolons required
+    "@stylistic/semi": ["error", "always"],
+
+    // Trailing commas
+    "@stylistic/comma-dangle": ["error", "always-multiline"],
+
+    // Spacing
+    "@stylistic/comma-spacing": "error",
+    "@stylistic/key-spacing": "error",
+    "@stylistic/keyword-spacing": "error",
+    "@stylistic/space-before-blocks": "error",
+    "@stylistic/space-infix-ops": "error",
+    "@stylistic/object-curly-spacing": ["error", "always"],
+    "@stylistic/arrow-spacing": "error",
+    "@stylistic/block-spacing": "error",
+    "@stylistic/semi-spacing": "error",
+    "@stylistic/space-before-function-paren": ["error", {
+        anonymous: "always",
+        named: "never",
+        asyncArrow: "always",
+    }],
+
+    // No trailing spaces, require final newline
+    "@stylistic/no-trailing-spaces": "error",
+    "@stylistic/eol-last": ["error", "always"],
+
+    // No multiple empty lines
+    "@stylistic/no-multiple-empty-lines": ["error", { max: 1, maxEOF: 0, maxBOF: 0 }],
+
+    // Blank line after block-like statements (if, for, while, etc.)
+    "@stylistic/padding-line-between-statements": [
+        "error",
+        { blankLine: "always", prev: "block-like", next: "*" },
+    ],
+
+    // Prefer const
+    "prefer-const": "error",
+    "no-var": "error",
+};
+
 export default tseslint.config(
     eslint.configs.recommended,
-    ...tseslint.configs.recommended,
     {
+        // Apply tseslint recommended only to TypeScript files
+        files: ["scripts/**/*.ts"],
+        extends: [...tseslint.configs.recommended],
+    },
+    {
+        // Shared formatting rules for TypeScript files
         files: ["scripts/**/*.ts"],
         plugins: {
             "@stylistic": stylistic,
         },
         rules: {
-            // --- Formatting (replaces Prettier) ---
-
-            // Allman brace style
-            "@stylistic/brace-style": ["error", "allman", { allowSingleLine: false }],
-
-            // 4-space indentation, no tabs
-            "@stylistic/indent": ["error", 4],
-            "@stylistic/no-tabs": "error",
-
-            // Double quotes
-            "@stylistic/quotes": ["error", "double", { avoidEscape: true }],
-
-            // Semicolons required
-            "@stylistic/semi": ["error", "always"],
-
-            // Trailing commas
-            "@stylistic/comma-dangle": ["error", "always-multiline"],
-
-            // Spacing
-            "@stylistic/comma-spacing": "error",
-            "@stylistic/key-spacing": "error",
-            "@stylistic/keyword-spacing": "error",
-            "@stylistic/space-before-blocks": "error",
-            "@stylistic/space-infix-ops": "error",
-            "@stylistic/object-curly-spacing": ["error", "always"],
-            "@stylistic/arrow-spacing": "error",
-            "@stylistic/block-spacing": "error",
-            "@stylistic/semi-spacing": "error",
-            "@stylistic/space-before-function-paren": ["error", {
-                anonymous: "always",
-                named: "never",
-                asyncArrow: "always",
-            }],
-
-            // No trailing spaces, require final newline
-            "@stylistic/no-trailing-spaces": "error",
-            "@stylistic/eol-last": ["error", "always"],
-
-            // No multiple empty lines
-            "@stylistic/no-multiple-empty-lines": ["error", { max: 1, maxEOF: 0, maxBOF: 0 }],
-
-            // Blank line after block-like statements (if, for, while, etc.)
-            "@stylistic/padding-line-between-statements": [
-                "error",
-                { blankLine: "always", prev: "block-like", next: "*" },
-            ],
-
-            // --- Imports ---
+            ...sharedStylisticRules,
 
             // Require node: protocol for Node.js built-in modules
             "no-restricted-imports": ["error", {
@@ -82,9 +92,7 @@ export default tseslint.config(
                 ],
             }],
 
-            // --- Naming ---
-
-            // Enforce camelCase for variables/functions, PascalCase for types
+            // Naming conventions (TypeScript-specific selectors)
             camelcase: "off",
             "no-underscore-dangle": "off",
             "@typescript-eslint/naming-convention": ["error",
@@ -115,12 +123,6 @@ export default tseslint.config(
                 },
             ],
 
-            // Prefer const
-            "prefer-const": "error",
-            "no-var": "error",
-
-            // --- TypeScript ---
-
             // No unused variables
             "@typescript-eslint/no-unused-vars": ["error", {
                 argsIgnorePattern: "^_$",
@@ -134,6 +136,47 @@ export default tseslint.config(
 
             // Use Array<T> generic syntax, not T[]
             "@typescript-eslint/array-type": ["error", { default: "generic" }],
+        },
+    },
+    {
+        // Shared formatting rules for browser JavaScript files
+        files: ["docs/**/*.js"],
+        languageOptions: {
+            globals: {
+                window: "readonly",
+                document: "readonly",
+                console: "readonly",
+                fetch: "readonly",
+                setTimeout: "readonly",
+                Event: "readonly",
+                history: "readonly",
+            },
+        },
+        plugins: {
+            "@stylistic": stylistic,
+        },
+        rules: {
+            ...sharedStylisticRules,
+        },
+    },
+    {
+        // Shared formatting rules for GitHub Actions workflow scripts
+        files: [".github/scripts/**/*.cjs"],
+        languageOptions: {
+            sourceType: "commonjs",
+            globals: {
+                require: "readonly",
+                module: "readonly",
+                exports: "readonly",
+                Buffer: "readonly",
+                console: "readonly",
+            },
+        },
+        plugins: {
+            "@stylistic": stylistic,
+        },
+        rules: {
+            ...sharedStylisticRules,
         },
     },
     {

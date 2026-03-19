@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Paleo — Contribution Wizard</title>
+    <link rel="stylesheet" href="wizard.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+</head>
+<body>
+
+<header class="site-header">
+    <h1>Open Paleo</h1>
+    <p>Contribution Wizard</p>
+</header>
+
+<main id="app">
+    <!-- Landing: flow selection cards -->
+    <section id="landing" class="landing">
+        <h2>What would you like to do?</h2>
+        <div class="card-grid">
+            <button class="card" data-flow="add-genus">
+                <span class="card-icon material-symbols-outlined">add</span>
+                <span class="card-title">Add New Genus</span>
+                <span class="card-desc">Submit a new dinosaur genus to the dataset</span>
+            </button>
+            <button class="card" data-flow="add-species">
+                <span class="card-icon material-symbols-outlined">add</span>
+                <span class="card-title">Add Species</span>
+                <span class="card-desc">Add a new species to an existing genus</span>
+            </button>
+            <button class="card" data-flow="update-genus">
+                <span class="card-icon material-symbols-outlined">edit</span>
+                <span class="card-title">Update Genus</span>
+                <span class="card-desc">Update metadata for an existing genus</span>
+            </button>
+            <button class="card" data-flow="update-species">
+                <span class="card-icon material-symbols-outlined">edit</span>
+                <span class="card-title">Update Species</span>
+                <span class="card-desc">Update metadata for an existing species</span>
+            </button>
+            <button class="card" data-flow="correct-taxonomy">
+                <span class="card-icon material-symbols-outlined">account_tree</span>
+                <span class="card-title">Correct Taxonomy</span>
+                <span class="card-desc">Propose a taxonomic reclassification</span>
+            </button>
+            <button class="card" data-flow="propose-update">
+                <span class="card-icon material-symbols-outlined">add_comment</span>
+                <span class="card-title">Propose Update</span>
+                <span class="card-desc">Propose a change for maintainer discussion</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Wizard container (hidden until a flow is selected) -->
+    <section id="wizard" class="wizard" hidden>
+        <nav class="wizard-nav">
+            <button id="btn-back" class="nav-btn" type="button">&larr; Back</button>
+            <span id="step-indicator" class="step-indicator"></span>
+            <button id="btn-next" class="nav-btn nav-btn-primary" type="button">Next &rarr;</button>
+        </nav>
+
+        <div id="wizard-step" class="wizard-step"></div>
+    </section>
+</main>
+
+<!-- Templates for wizard DOM construction -->
+
+<template id="tmpl-field">
+    <div class="field">
+        <label></label>
+        <span class="field-error">This field is required</span>
+    </div>
+</template>
+
+<template id="tmpl-search-dropdown">
+    <div class="search-dropdown">
+        <input type="text" autocomplete="off">
+        <ul class="search-dropdown-list"></ul>
+    </div>
+</template>
+
+<template id="tmpl-review-row">
+    <tr><th></th><td></td></tr>
+</template>
+
+<script src="data.js"></script>
+<script src="flows.js"></script>
+<script src="wizard.js"></script>
+<script src="issue.js"></script>
+
+</body>
+</html>

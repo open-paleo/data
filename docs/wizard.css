@@ -1,0 +1,382 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    color: #1a1a1a;
+    background: #f5f5f5;
+    min-height: 100vh;
+}
+
+/* Header */
+
+.site-header {
+    background: #2d5016;
+    color: #fff;
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+.site-header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.site-header p {
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+/* Landing */
+
+.landing {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.landing h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.5rem 1rem;
+    background: #fff;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: border-color 0.15s, box-shadow 0.15s;
+    font: inherit;
+}
+
+.card:hover,
+.card:focus-visible {
+    border-color: #2d5016;
+    box-shadow: 0 2px 8px rgba(45, 80, 22, 0.15);
+    outline: none;
+}
+
+.card-icon {
+    font-size: 2rem;
+    color: #2d5016;
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.card-desc {
+    font-size: 0.85rem;
+    color: #555;
+}
+
+/* Wizard */
+
+.wizard {
+    max-width: 700px;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+}
+
+.wizard-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.step-indicator {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.nav-btn {
+    padding: 0.5rem 1.25rem;
+    font: inherit;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    background: #f0f0f0;
+}
+
+.nav-btn:disabled {
+    opacity: 0.4;
+    cursor: default;
+}
+
+.nav-btn-primary {
+    background: #2d5016;
+    color: #fff;
+    border-color: #2d5016;
+}
+
+.nav-btn-primary:hover:not(:disabled) {
+    background: #3a6b1e;
+}
+
+.nav-btn-submit {
+    background: #1a6b2a;
+    color: #fff;
+    border-color: #1a6b2a;
+}
+
+.nav-btn-submit:hover:not(:disabled) {
+    background: #228b37;
+}
+
+/* Wizard step */
+
+.wizard-step {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.wizard-step h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+/* Form fields */
+
+.field {
+    margin-bottom: 1.25rem;
+}
+
+.field label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+}
+
+.field .field-hint {
+    display: block;
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 0.25rem;
+}
+
+.field .current-value {
+    display: block;
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 0.25rem;
+    font-style: italic;
+}
+
+.field input[type="text"],
+.field input[type="number"],
+.field textarea,
+.field select {
+    width: 100%;
+    padding: 0.5rem;
+    font: inherit;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.field input:focus,
+.field textarea:focus,
+.field select:focus {
+    outline: 2px solid #2d5016;
+    outline-offset: -1px;
+    border-color: #2d5016;
+}
+
+.field textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.field.field-required label::after {
+    content: " *";
+    color: #c00;
+}
+
+.field .field-error {
+    display: none;
+    font-size: 0.8rem;
+    color: #c00;
+    margin-top: 0.25rem;
+}
+
+.field.has-error input,
+.field.has-error textarea,
+.field.has-error select {
+    border-color: #c00;
+}
+
+.field.has-error .field-error {
+    display: block;
+}
+
+/* Searchable dropdown */
+
+.search-dropdown {
+    position: relative;
+}
+
+.search-dropdown-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    list-style: none;
+    z-index: 10;
+    display: none;
+}
+
+.search-dropdown-list.open {
+    display: block;
+}
+
+.search-dropdown-list li {
+    padding: 0.4rem 0.5rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.search-dropdown-list li:hover,
+.search-dropdown-list li.active {
+    background: #e8f0e0;
+}
+
+/* Checkboxes */
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.25rem;
+}
+
+.checkbox-group label {
+    font-weight: 400;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    cursor: pointer;
+}
+
+/* Read-only display (current parent in taxonomy flow) */
+
+.readonly-value {
+    padding: 0.5rem;
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Review step */
+
+.review-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.review-table th,
+.review-table td {
+    text-align: left;
+    padding: 0.5rem;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+}
+
+.review-table th {
+    font-weight: 600;
+    width: 35%;
+    color: #333;
+}
+
+.review-table td {
+    color: #555;
+    word-break: break-word;
+}
+
+.review-table tr.changed td {
+    color: #1a1a1a;
+    font-weight: 500;
+}
+
+.url-warning {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background: #fff3cd;
+    border: 1px solid #ffc107;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    color: #856404;
+}
+
+.submit-row {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.submit-btn {
+    padding: 0.75rem 2rem;
+    font: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    background: #2d5016;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #3a6b1e;
+}
+
+/* Responsive */
+
+@media (max-width: 500px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .wizard-step {
+        padding: 1rem;
+    }
+}
