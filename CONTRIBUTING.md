@@ -9,7 +9,7 @@ All contributions are submitted through **GitHub issue forms**. These structured
 - **[Add New Genus](../../issues/new?template=add-genus.yml)** — Submit structured data for a genus not yet in the dataset.
 - **[Add Species](../../issues/new?template=add-species.yml)** — Add a new species to an existing genus.
 - **[Update Genus Fields](../../issues/new?template=update-genus-fields.yml)** — Update description, diet, locomotion, or other genus-level metadata.
-- **[Update Species Status](../../issues/new?template=update-species-status.yml)** — Change the status of an existing species (e.g., valid → synonym).
+- **[Update Species](../../issues/new?template=update-species.yml)** — Update metadata for an existing species (status, location, size, holotype, etc.).
 - **[Correct Taxonomy](../../issues/new?template=correct-taxonomy.yml)** — Propose a reclassification of an existing genus with supporting references.
 - **[Propose Update](../../issues/new?template=propose-update.yml)** — Propose a change for maintainer discussion when you don't have structured data ready.
 - **[Add Image](../../issues/new?template=add-image.yml)** — Contribute specimen photos, life reconstructions, or skeletal diagrams.

@@ -48,9 +48,9 @@ module.exports = async function ({ github, context })
         await handleAddSpecies({ github, repo, issueNumber, issueAuthor, fields });
     }
 
-    if (labels.includes("update-species-status"))
+    if (labels.includes("update-species"))
     {
-        await handleUpdateSpeciesStatus({ github, repo, issueNumber, issueAuthor, fields });
+        await handleUpdateSpecies({ github, repo, issueNumber, issueAuthor, fields });
     }
 };
 
@@ -514,10 +514,14 @@ async function handleAddSpecies({ github, repo, issueNumber, issueAuthor, fields
     });
 }
 
-// Handler: update-species-status
+// Handler: update-species
 
 /**
- * Change the taxonomic status of an existing species and open a PR.
+ * Update metadata for an existing species and open a PR.  Only fields the
+ * submitter fills in are overwritten; empty fields are left untouched.
+ * Nested objects (period, location, size, holotype) are merged at the
+ * property level so that filling in e.g. just "Country" does not erase
+ * an existing "Region".
  *
  * @param {object} options
  * @param {object} options.github - Octokit instance.
@@ -526,19 +530,18 @@ async function handleAddSpecies({ github, repo, issueNumber, issueAuthor, fields
  * @param {string} options.issueAuthor - GitHub login of the issue author.
  * @param {Record<string, string>} options.fields - Parsed issue form fields.
  */
-async function handleUpdateSpeciesStatus({ github, repo, issueNumber, issueAuthor, fields })
+async function handleUpdateSpecies({ github, repo, issueNumber, issueAuthor, fields })
 {
     const genusName = fields["Genus name"];
     const speciesName = fields["Species name"];
-    const newStatus = fields["New status"];
 
-    if (!genusName || !speciesName || !newStatus)
+    if (!genusName || !speciesName)
     {
         await commentError(
             github,
             repo,
             issueNumber,
-            "Missing required fields. Please check the form and resubmit.",
+            "Missing required fields (genus name or species name). Please check the form and resubmit.",
         );
         return;
     }
@@ -575,11 +578,143 @@ async function handleUpdateSpeciesStatus({ github, repo, issueNumber, issueAutho
         return;
     }
 
-    speciesEntry.status = newStatus.toLowerCase();
+    // Scalar replace fields
+    if (fields["Species etymology"])
+    {
+        speciesEntry.etymology = fields["Species etymology"];
+    }
+
+    if (fields["Status"])
+    {
+        speciesEntry.status = fields["Status"].toLowerCase();
+    }
 
     if (fields["If synonym, synonym of"])
     {
         speciesEntry.synonym_of = fields["If synonym, synonym of"];
+    }
+
+    if (fields["Completeness"])
+    {
+        speciesEntry.completeness = fields["Completeness"].toLowerCase();
+    }
+
+    if (fields["Year described"])
+    {
+        speciesEntry.described = parseInt(fields["Year described"]);
+    }
+
+    if (fields["Authors"])
+    {
+        speciesEntry.authors = fields["Authors"];
+    }
+
+    if (fields["Species description"])
+    {
+        speciesEntry.description = fields["Species description"];
+    }
+
+    // Period — merge at the property level
+    if (fields["Period"] || fields["Stage"])
+    {
+        if (!speciesEntry.period)
+        {
+            speciesEntry.period = {};
+        }
+
+        if (fields["Period"])
+        {
+            speciesEntry.period.name = fields["Period"];
+        }
+
+        if (fields["Stage"])
+        {
+            speciesEntry.period.stage = fields["Stage"];
+        }
+    }
+
+    // Location — merge at the property level
+    if (fields["Country"] || fields["Region"] || fields["Formation"] || fields["Coordinates"])
+    {
+        if (!speciesEntry.location)
+        {
+            speciesEntry.location = {};
+        }
+
+        if (fields["Country"])
+        {
+            speciesEntry.location.country = fields["Country"];
+        }
+
+        if (fields["Region"])
+        {
+            speciesEntry.location.region = fields["Region"];
+        }
+
+        if (fields["Formation"])
+        {
+            speciesEntry.location.formation = fields["Formation"];
+        }
+
+        if (fields["Coordinates"])
+        {
+            const coords = fields["Coordinates"].split(",").map(Number);
+
+            if (coords.length === 2)
+            {
+                speciesEntry.location.coordinates = coords;
+            }
+        }
+    }
+
+    // Size — merge at the property level
+    if (fields["Estimated length (m)"] || fields["Estimated weight (kg)"] || fields["Estimated hip height (m)"])
+    {
+        if (!speciesEntry.size)
+        {
+            speciesEntry.size = {};
+        }
+
+        if (fields["Estimated length (m)"])
+        {
+            speciesEntry.size.length_m = parseFloat(fields["Estimated length (m)"]);
+        }
+
+        if (fields["Estimated weight (kg)"])
+        {
+            speciesEntry.size.weight_kg = parseFloat(fields["Estimated weight (kg)"]);
+        }
+
+        if (fields["Estimated hip height (m)"])
+        {
+            speciesEntry.size.hip_height_m = parseFloat(fields["Estimated hip height (m)"]);
+        }
+
+        speciesEntry.size.estimate = true;
+    }
+
+    // Holotype — merge at the property level
+    if (fields["Holotype specimen ID"] || fields["Holotype institution"] || fields["Holotype material"])
+    {
+        if (!speciesEntry.holotype)
+        {
+            speciesEntry.holotype = {};
+        }
+
+        if (fields["Holotype specimen ID"])
+        {
+            speciesEntry.holotype.specimen_id = fields["Holotype specimen ID"];
+        }
+
+        if (fields["Holotype institution"])
+        {
+            speciesEntry.holotype.institution = fields["Holotype institution"];
+        }
+
+        if (fields["Holotype material"])
+        {
+            speciesEntry.holotype.material = fields["Holotype material"];
+        }
     }
 
     await createUpdatePR({
@@ -591,9 +726,9 @@ async function handleUpdateSpeciesStatus({ github, repo, issueNumber, issueAutho
         filePath,
         fileSha: sha,
         genusData,
-        branchPrefix: "status",
-        prTitle: `Update status: ${speciesName} → ${newStatus.toLowerCase()}`,
-        prBody: `Updates ${speciesName} status to ${newStatus.toLowerCase()}.`,
+        branchPrefix: "species-update",
+        prTitle: `Update species: ${speciesName}`,
+        prBody: `Updates metadata for ${speciesName} in ${genusName}.`,
     });
 }
 

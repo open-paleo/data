@@ -17,7 +17,7 @@ jobs:
       contains(github.event.issue.labels.*.name, 'correct-taxonomy') ||
       contains(github.event.issue.labels.*.name, 'update-genus') ||
       contains(github.event.issue.labels.*.name, 'add-species') ||
-      contains(github.event.issue.labels.*.name, 'update-species-status')
+      contains(github.event.issue.labels.*.name, 'update-species')
     steps:
       - name: Checkout
         uses: actions/checkout@v4
