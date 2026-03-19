@@ -68,7 +68,7 @@ function parseLines(value)
 
     return value
         .split("\n")
-        .map((l) => l.trim())
+        .map((line) => line.trim())
         .filter(Boolean);
 }
 
@@ -99,7 +99,7 @@ async function readGenusFile(github, repo, genusName)
             ref: "main",
         });
     }
-    catch (e)
+    catch
     {
         return null;
     }

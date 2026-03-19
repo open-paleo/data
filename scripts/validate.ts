@@ -69,11 +69,11 @@ const warnings = new Array<ValidationMessage>();
  *
  * @param check - The name of the validation check.
  * @param file - The file path that triggered the error, or null for global errors.
- * @param msg - Human-readable error description.
+ * @param message - Human-readable error description.
  */
-function addError(check: string, file: string | null, msg: string): void
+function addError(check: string, file: string | null, message: string): void
 {
-    errors.push({ check, file: file ? relPath(file) : "(global)", message: msg });
+    errors.push({ check, file: file ? relPath(file) : "(global)", message });
 }
 
 /**
@@ -81,11 +81,11 @@ function addError(check: string, file: string | null, msg: string): void
  *
  * @param check - The name of the validation check.
  * @param file - The file path that triggered the warning, or null for global warnings.
- * @param msg - Human-readable warning description.
+ * @param message - Human-readable warning description.
  */
-function addWarning(check: string, file: string | null, msg: string): void
+function addWarning(check: string, file: string | null, message: string): void
 {
-    warnings.push({ check, file: file ? relPath(file) : "(global)", message: msg });
+    warnings.push({ check, file: file ? relPath(file) : "(global)", message });
 }
 
 // Track per-check results
@@ -109,12 +109,12 @@ function startCheck(name: string): void
  *
  * @param name - The check name (must have been initialized with startCheck).
  * @param file - The file path, or null for global errors.
- * @param msg - Human-readable error description.
+ * @param message - Human-readable error description.
  */
-function checkError(name: string, file: string | null, msg: string): void
+function checkError(name: string, file: string | null, message: string): void
 {
     checkResults[name].errors++;
-    addError(name, file, msg);
+    addError(name, file, message);
 }
 
 /**
@@ -122,12 +122,12 @@ function checkError(name: string, file: string | null, msg: string): void
  *
  * @param name - The check name (must have been initialized with startCheck).
  * @param file - The file path, or null for global warnings.
- * @param msg - Human-readable warning description.
+ * @param message - Human-readable warning description.
  */
-function checkWarning(name: string, file: string | null, msg: string): void
+function checkWarning(name: string, file: string | null, message: string): void
 {
     checkResults[name].warnings++;
-    addWarning(name, file, msg);
+    addWarning(name, file, message);
 }
 
 /**
@@ -143,9 +143,9 @@ function loadYamlFatal<T>(filePath: string, label: string): T
     {
         return yaml.load(fs.readFileSync(filePath, "utf8")) as T;
     }
-    catch (err: unknown)
+    catch (error: unknown)
     {
-        const message = err instanceof Error ? err.message : String(err);
+        const message = error instanceof Error ? error.message : String(error);
 
         console.error(`Fatal: cannot load ${label} — ${message}`);
 
@@ -190,31 +190,31 @@ const allSpeciesNames = new Set<string>();
 // 1. YAML syntax
 startCheck("YAML syntax");
 
-for (const f of genusFiles)
+for (const filePath of genusFiles)
 {
     try
     {
-        const doc = yaml.load(fs.readFileSync(f, "utf8")) as GenusData;
-        genusParsed.set(f, doc);
+        const doc = yaml.load(fs.readFileSync(filePath, "utf8")) as GenusData;
+        genusParsed.set(filePath, doc);
     }
-    catch (err: unknown)
+    catch (error: unknown)
     {
-        const message = err instanceof Error ? err.message : String(err);
-        checkError("YAML syntax", f, `YAML parse error: ${message}`);
+        const message = error instanceof Error ? error.message : String(error);
+        checkError("YAML syntax", filePath, `YAML parse error: ${message}`);
     }
 }
 
-for (const f of cladeFiles)
+for (const filePath of cladeFiles)
 {
     try
     {
-        const doc = yaml.load(fs.readFileSync(f, "utf8")) as CladeData;
-        cladeParsed.set(f, doc);
+        const doc = yaml.load(fs.readFileSync(filePath, "utf8")) as CladeData;
+        cladeParsed.set(filePath, doc);
     }
-    catch (err: unknown)
+    catch (error: unknown)
     {
-        const message = err instanceof Error ? err.message : String(err);
-        checkError("YAML syntax", f, `YAML parse error: ${message}`);
+        const message = error instanceof Error ? error.message : String(error);
+        checkError("YAML syntax", filePath, `YAML parse error: ${message}`);
     }
 }
 
@@ -228,11 +228,11 @@ for (const [, doc] of genusParsed)
         continue;
     }
 
-    for (const sp of doc.species)
+    for (const species of doc.species)
     {
-        if (sp && sp.name)
+        if (species && species.name)
         {
-            allSpeciesNames.add(sp.name);
+            allSpeciesNames.add(species.name);
         }
     }
 }
@@ -240,7 +240,7 @@ for (const [, doc] of genusParsed)
 // 2. Schema compliance (status, diet)
 startCheck("Schema compliance");
 
-for (const [f, doc] of genusParsed)
+for (const [filePath, doc] of genusParsed)
 {
     if (!doc)
     {
@@ -251,20 +251,20 @@ for (const [f, doc] of genusParsed)
     {
         checkError(
             "Schema compliance",
-            f,
+            filePath,
             `invalid diet value '${doc.diet}' (must be one of: ${[...allowedDiet].join(", ")})`);
     }
 
     if (Array.isArray(doc.species))
     {
-        for (const sp of doc.species)
+        for (const species of doc.species)
         {
-            if (sp && sp.status && !allowedStatus.has(sp.status))
+            if (species && species.status && !allowedStatus.has(species.status))
             {
                 checkError(
                     "Schema compliance",
-                    f,
-                    `species '${sp.name ?? "?"}': invalid status '${sp.status}' (must be one of: ${[...allowedStatus].join(", ")})`);
+                    filePath,
+                    `species '${species.name ?? "?"}': invalid status '${species.status}' (must be one of: ${[...allowedStatus].join(", ")})`);
             }
         }
     }
@@ -273,13 +273,13 @@ for (const [f, doc] of genusParsed)
 // 3. Tree consistency — genus parent exists in tree
 startCheck("Tree consistency");
 
-for (const [f, doc] of genusParsed)
+for (const [filePath, doc] of genusParsed)
 {
     if (doc && doc.parent && !treeClades.has(doc.parent))
     {
         checkError(
             "Tree consistency",
-            f,
+            filePath,
             `parent clade '${doc.parent}' not found in tree.yml`);
     }
 }
@@ -289,7 +289,7 @@ startCheck("Clade coverage");
 
 const cladeFileNames = new Set<string>(
     cladeFiles.map(
-        (f) => path.basename(f).replace(/\.(yml|yaml)$/, "")),
+        (filePath) => path.basename(filePath).replace(/\.(yml|yaml)$/, "")),
 );
 
 for (const clade of treeClades)
@@ -306,15 +306,15 @@ for (const clade of treeClades)
 // 5. No orphans — no clade files for clades not in tree
 startCheck("No orphan clades");
 
-for (const f of cladeFiles)
+for (const filePath of cladeFiles)
 {
-    const name = path.basename(f).replace(/\.(yml|yaml)$/, "");
+    const name = path.basename(filePath).replace(/\.(yml|yaml)$/, "");
 
     if (!treeClades.has(name))
     {
         checkError(
             "No orphan clades",
-            f,
+            filePath,
             `clade file exists but '${name}' is not in tree.yml`);
     }
 }
@@ -322,20 +322,20 @@ for (const f of cladeFiles)
 // 6. Naming conventions
 startCheck("Naming conventions");
 
-for (const [f, doc] of genusParsed)
+for (const [filePath, doc] of genusParsed)
 {
     if (!doc)
     {
         continue;
     }
 
-    const fileName = path.basename(f).replace(/\.(yml|yaml)$/, "");
+    const fileName = path.basename(filePath).replace(/\.(yml|yaml)$/, "");
 
     if (doc.genus && doc.genus !== fileName)
     {
         checkError(
             "Naming conventions",
-            f,
+            filePath,
             `filename '${fileName}' does not match genus field '${doc.genus}'`);
     }
 
@@ -343,13 +343,13 @@ for (const [f, doc] of genusParsed)
     if (doc.genus)
     {
         const expectedDir = doc.genus.charAt(0).toUpperCase();
-        const actualDir = path.basename(path.dirname(f));
+        const actualDir = path.basename(path.dirname(filePath));
 
         if (actualDir !== expectedDir)
         {
             checkError(
                 "Naming conventions",
-                f,
+                filePath,
                 `file is in directory '${actualDir}' but genus '${doc.genus}' should be in '${expectedDir}'`);
         }
     }
@@ -361,7 +361,7 @@ startCheck("Required fields");
 const requiredGenusFields: Array<keyof GenusData> = ["genus", "parent", "description"];
 const requiredSpeciesFields: Array<keyof Species> = ["name", "status", "period"];
 
-for (const [f, doc] of genusParsed)
+for (const [filePath, doc] of genusParsed)
 {
     if (!doc)
     {
@@ -372,31 +372,31 @@ for (const [f, doc] of genusParsed)
     {
         if (!doc[field])
         {
-            checkError("Required fields", f, `missing required field '${field}'`);
+            checkError("Required fields", filePath, `missing required field '${field}'`);
         }
     }
 
     if (!Array.isArray(doc.species) || doc.species.length === 0)
     {
-        checkError("Required fields", f, "must have at least one species");
+        checkError("Required fields", filePath, "must have at least one species");
     }
     else
     {
-        for (const sp of doc.species)
+        for (const species of doc.species)
         {
-            if (!sp)
+            if (!species)
             {
                 continue;
             }
 
             for (const field of requiredSpeciesFields)
             {
-                if (!sp[field])
+                if (!species[field])
                 {
                     checkError(
                         "Required fields",
-                        f,
-                        `species '${sp.name ?? "?"}': missing required field '${field}'`);
+                        filePath,
+                        `species '${species.name ?? "?"}': missing required field '${field}'`);
                 }
             }
         }
@@ -406,46 +406,46 @@ for (const [f, doc] of genusParsed)
 // 8. Type species — exactly one per genus
 startCheck("Type species");
 
-for (const [f, doc] of genusParsed)
+for (const [filePath, doc] of genusParsed)
 {
     if (!doc || !Array.isArray(doc.species))
     {
         continue;
     }
 
-    const species = doc.species.filter(sp => sp && sp.type_species === true);
+    const typeSpecies = doc.species.filter(species => species && species.type_species === true);
 
-    if (species.length === 0)
+    if (typeSpecies.length === 0)
     {
-        checkError("Type species", f, "no species marked as type_species");
+        checkError("Type species", filePath, "no species marked as type_species");
     }
-    else if (species.length > 1)
+    else if (typeSpecies.length > 1)
     {
         checkError(
             "Type species",
-            f,
-            `multiple species marked as type_species: ${species.map(s => s.name).join(", ")}`);
+            filePath,
+            `multiple species marked as type_species: ${typeSpecies.map(species => species.name).join(", ")}`);
     }
 }
 
 // 9. Stage-period agreement
 startCheck("Stage-period agreement");
 
-for (const [f, doc] of genusParsed)
+for (const [filePath, doc] of genusParsed)
 {
     if (!doc || !Array.isArray(doc.species))
     {
         continue;
     }
 
-    for (const sp of doc.species)
+    for (const species of doc.species)
     {
-        if (!sp || !sp.period)
+        if (!species || !species.period)
         {
             continue;
         }
 
-        const period = sp.period;
+        const period = species.period;
 
         if (period.stage && period.name)
         {
@@ -455,15 +455,15 @@ for (const [f, doc] of genusParsed)
             {
                 checkError(
                     "Stage-period agreement",
-                    f,
-                    `species '${sp.name ?? "?"}': unknown stage '${period.stage}'`);
+                    filePath,
+                    `species '${species.name ?? "?"}': unknown stage '${period.stage}'`);
             }
             else if (stageInfo.period !== period.name)
             {
                 checkError(
                     "Stage-period agreement",
-                    f,
-                    `species '${sp.name ?? "?"}': stage '${period.stage}' belongs to '${stageInfo.period}', not '${period.name}'`);
+                    filePath,
+                    `species '${species.name ?? "?"}': stage '${period.stage}' belongs to '${stageInfo.period}', not '${period.name}'`);
             }
         }
     }
@@ -472,7 +472,7 @@ for (const [f, doc] of genusParsed)
 // 10. Reference integrity — described_in matches a reference id
 startCheck("Reference integrity");
 
-for (const [f, doc] of genusParsed)
+for (const [filePath, doc] of genusParsed)
 {
     if (!doc)
     {
@@ -483,11 +483,11 @@ for (const [f, doc] of genusParsed)
 
     if (Array.isArray(doc.references))
     {
-        for (const ref of doc.references)
+        for (const reference of doc.references)
         {
-            if (ref && ref.id)
+            if (reference && reference.id)
             {
-                ids.add(ref.id);
+                ids.add(reference.id);
             }
         }
     }
@@ -497,21 +497,21 @@ for (const [f, doc] of genusParsed)
     {
         checkError(
             "Reference integrity",
-            f,
+            filePath,
             `described_in '${doc.described_in}' does not match any reference id`);
     }
 
     // Check species-level described_in
     if (Array.isArray(doc.species))
     {
-        for (const sp of doc.species)
+        for (const species of doc.species)
         {
-            if (sp && sp.described_in && !ids.has(sp.described_in))
+            if (species && species.described_in && !ids.has(species.described_in))
             {
                 checkError(
                     "Reference integrity",
-                    f,
-                    `species '${sp.name ?? "?"}': described_in '${sp.described_in}' does not match any reference id`);
+                    filePath,
+                    `species '${species.name ?? "?"}': described_in '${species.described_in}' does not match any reference id`);
             }
         }
     }
@@ -535,42 +535,42 @@ function validateReferences(filePath: string, doc: GenusData | CladeData): void
         return;
     }
 
-    for (const ref of doc.references)
+    for (const reference of doc.references)
     {
-        if (!ref)
+        if (!reference)
         {
             continue;
         }
 
         for (const field of requiredRefFields)
         {
-            if (!ref[field])
+            if (!reference[field])
             {
                 checkError(
                     "Reference completeness",
                     filePath,
-                    `reference '${ref.id ?? "?"}': missing required field '${field}'`);
+                    `reference '${reference.id ?? "?"}': missing required field '${field}'`);
             }
         }
 
-        if (!ref.journal && !ref.book)
+        if (!reference.journal && !reference.book)
         {
             checkError(
                 "Reference completeness",
                 filePath,
-                `reference '${ref.id ?? "?"}': must have at least one of 'journal' or 'book'`);
+                `reference '${reference.id ?? "?"}': must have at least one of 'journal' or 'book'`);
         }
     }
 }
 
-for (const [f, doc] of genusParsed)
+for (const [filePath, doc] of genusParsed)
 {
-    validateReferences(f, doc);
+    validateReferences(filePath, doc);
 }
 
-for (const [f, doc] of cladeParsed)
+for (const [filePath, doc] of cladeParsed)
 {
-    validateReferences(f, doc);
+    validateReferences(filePath, doc);
 }
 
 // 12. Unique reference IDs
@@ -581,7 +581,7 @@ const allParsed: Array<[string, GenusData | CladeData]> = [
     ...cladeParsed.entries(),
 ];
 
-for (const [f, doc] of allParsed)
+for (const [filePath, doc] of allParsed)
 {
     if (!doc || !Array.isArray(doc.references))
     {
@@ -590,40 +590,40 @@ for (const [f, doc] of allParsed)
 
     const seen = new Set<string>();
 
-    for (const ref of doc.references)
+    for (const reference of doc.references)
     {
-        if (!ref || !ref.id)
+        if (!reference || !reference.id)
         {
             continue;
         }
 
-        if (seen.has(ref.id))
+        if (seen.has(reference.id))
         {
-            checkError("Unique reference IDs", f, `duplicate reference id '${ref.id}'`);
+            checkError("Unique reference IDs", filePath, `duplicate reference id '${reference.id}'`);
         }
 
-        seen.add(ref.id);
+        seen.add(reference.id);
     }
 }
 
 // 13. Location completeness — country required if location present
 startCheck("Location completeness");
 
-for (const [f, doc] of genusParsed)
+for (const [filePath, doc] of genusParsed)
 {
     if (!doc || !Array.isArray(doc.species))
     {
         continue;
     }
 
-    for (const sp of doc.species)
+    for (const species of doc.species)
     {
-        if (sp && sp.location && !sp.location.country)
+        if (species && species.location && !species.location.country)
         {
             checkError(
                 "Location completeness",
-                f,
-                `species '${sp.name ?? "?"}': location present but missing 'country'`);
+                filePath,
+                `species '${species.name ?? "?"}': location present but missing 'country'`);
         }
     }
 }
@@ -631,21 +631,21 @@ for (const [f, doc] of genusParsed)
 // 14. Country typo detection (warning)
 startCheck("Country validation");
 
-for (const [f, doc] of genusParsed)
+for (const [filePath, doc] of genusParsed)
 {
     if (!doc || !Array.isArray(doc.species))
     {
         continue;
     }
 
-    for (const sp of doc.species)
+    for (const species of doc.species)
     {
-        if (sp && sp.location && sp.location.country && !allowedCountries.has(sp.location.country))
+        if (species && species.location && species.location.country && !allowedCountries.has(species.location.country))
         {
             checkWarning(
                 "Country validation",
-                f,
-                `species '${sp.name ?? "?"}': country '${sp.location.country}' not in schema countries list`);
+                filePath,
+                `species '${species.name ?? "?"}': country '${species.location.country}' not in schema countries list`);
         }
     }
 }
@@ -653,27 +653,27 @@ for (const [f, doc] of genusParsed)
 // 15. Coordinate validity
 startCheck("Coordinate validity");
 
-for (const [f, doc] of genusParsed)
+for (const [filePath, doc] of genusParsed)
 {
     if (!doc || !Array.isArray(doc.species))
     {
         continue;
     }
 
-    for (const sp of doc.species)
+    for (const species of doc.species)
     {
-        if (!sp || !sp.location || !sp.location.coordinates)
+        if (!species || !species.location || !species.location.coordinates)
         {
             continue;
         }
 
-        const coords = sp.location.coordinates;
+        const coords = species.location.coordinates;
         if (!Array.isArray(coords) || coords.length < 2)
         {
             checkError(
                 "Coordinate validity",
-                f,
-                `species '${sp.name ?? "?"}': coordinates must be [lat, lon]`);
+                filePath,
+                `species '${species.name ?? "?"}': coordinates must be [lat, lon]`);
             continue;
         }
 
@@ -682,16 +682,16 @@ for (const [f, doc] of genusParsed)
         {
             checkError(
                 "Coordinate validity",
-                f,
-                `species '${sp.name ?? "?"}': latitude ${lat} out of range (-90 to 90)`);
+                filePath,
+                `species '${species.name ?? "?"}': latitude ${lat} out of range (-90 to 90)`);
         }
 
         if (typeof lon !== "number" || lon < -180 || lon > 180)
         {
             checkError(
                 "Coordinate validity",
-                f,
-                `species '${sp.name ?? "?"}': longitude ${lon} out of range (-180 to 180)`);
+                filePath,
+                `species '${species.name ?? "?"}': longitude ${lon} out of range (-180 to 180)`);
         }
     }
 }
@@ -699,59 +699,59 @@ for (const [f, doc] of genusParsed)
 // 16. Period consistency — stage belongs to period; Ma range within stage
 startCheck("Period consistency");
 
-for (const [f, doc] of genusParsed)
+for (const [filePath, doc] of genusParsed)
 {
     if (!doc || !Array.isArray(doc.species))
     {
         continue;
     }
 
-    for (const sp of doc.species)
+    for (const species of doc.species)
     {
-        if (!sp || !sp.period)
+        if (!species || !species.period)
         {
             continue;
         }
 
-        const per = sp.period;
+        const speciesPeriod = species.period;
 
         // Stage belongs to period (already checked in #9, but here check Ma range)
-        if (per.stage)
+        if (speciesPeriod.stage)
         {
-            const stageInfo: StageInfo | undefined = stages[per.stage];
+            const stageInfo: StageInfo | undefined = stages[speciesPeriod.stage];
             if (stageInfo)
             {
                 // Check from_ma
-                if (per.from_ma !== undefined && per.from_ma !== null)
+                if (speciesPeriod.from_ma !== undefined && speciesPeriod.from_ma !== null)
                 {
-                    if (typeof per.from_ma !== "number" || per.from_ma > stageInfo.from_ma || per.from_ma < stageInfo.to_ma)
+                    if (typeof speciesPeriod.from_ma !== "number" || speciesPeriod.from_ma > stageInfo.from_ma || speciesPeriod.from_ma < stageInfo.to_ma)
                     {
                         checkError(
                             "Period consistency",
-                            f,
-                            `species '${sp.name ?? "?"}': from_ma ${per.from_ma} outside stage '${per.stage}' range (${stageInfo.from_ma}\u2013${stageInfo.to_ma} Ma)`);
+                            filePath,
+                            `species '${species.name ?? "?"}': from_ma ${speciesPeriod.from_ma} outside stage '${speciesPeriod.stage}' range (${stageInfo.from_ma}\u2013${stageInfo.to_ma} Ma)`);
                     }
                 }
 
                 // Check to_ma
-                if (per.to_ma !== undefined && per.to_ma !== null)
+                if (speciesPeriod.to_ma !== undefined && speciesPeriod.to_ma !== null)
                 {
-                    if (typeof per.to_ma !== "number" || per.to_ma > stageInfo.from_ma || per.to_ma < stageInfo.to_ma)
+                    if (typeof speciesPeriod.to_ma !== "number" || speciesPeriod.to_ma > stageInfo.from_ma || speciesPeriod.to_ma < stageInfo.to_ma)
                     {
                         checkError(
                             "Period consistency",
-                            f,
-                            `species '${sp.name ?? "?"}': to_ma ${per.to_ma} outside stage '${per.stage}' range (${stageInfo.from_ma}\u2013${stageInfo.to_ma} Ma)`);
+                            filePath,
+                            `species '${species.name ?? "?"}': to_ma ${speciesPeriod.to_ma} outside stage '${speciesPeriod.stage}' range (${stageInfo.from_ma}\u2013${stageInfo.to_ma} Ma)`);
                     }
                 }
 
                 // from_ma should be >= to_ma
-                if (typeof per.from_ma === "number" && typeof per.to_ma === "number" && per.from_ma < per.to_ma)
+                if (typeof speciesPeriod.from_ma === "number" && typeof speciesPeriod.to_ma === "number" && speciesPeriod.from_ma < speciesPeriod.to_ma)
                 {
                     checkError(
                         "Period consistency",
-                        f,
-                        `species '${sp.name ?? "?"}': from_ma (${per.from_ma}) must be >= to_ma (${per.to_ma})`);
+                        filePath,
+                        `species '${species.name ?? "?"}': from_ma (${speciesPeriod.from_ma}) must be >= to_ma (${speciesPeriod.to_ma})`);
                 }
             }
         }
@@ -761,38 +761,38 @@ for (const [f, doc] of genusParsed)
 // 17. Synonym integrity
 startCheck("Synonym integrity");
 
-for (const [f, doc] of genusParsed)
+for (const [filePath, doc] of genusParsed)
 {
     if (!doc || !Array.isArray(doc.species))
     {
         continue;
     }
 
-    for (const sp of doc.species)
+    for (const species of doc.species)
     {
-        if (sp && sp.status === "synonym")
+        if (species && species.status === "synonym")
         {
-            if (!sp.synonym_of)
+            if (!species.synonym_of)
             {
                 checkError(
                     "Synonym integrity",
-                    f,
-                    `species '${sp.name ?? "?"}': status is 'synonym' but missing 'synonym_of'`);
+                    filePath,
+                    `species '${species.name ?? "?"}': status is 'synonym' but missing 'synonym_of'`);
             }
-            else if (!allSpeciesNames.has(sp.synonym_of))
+            else if (!allSpeciesNames.has(species.synonym_of))
             {
                 checkError(
                     "Synonym integrity",
-                    f,
-                    `species '${sp.name ?? "?"}': synonym_of '${sp.synonym_of}' not found in any genus file`);
+                    filePath,
+                    `species '${species.name ?? "?"}': synonym_of '${species.synonym_of}' not found in any genus file`);
             }
         }
-        else if (sp && sp.synonym_of)
+        else if (species && species.synonym_of)
         {
             checkError(
                 "Synonym integrity",
-                f,
-                `species '${sp.name ?? "?"}': has 'synonym_of' but status is '${sp.status}', not 'synonym'`);
+                filePath,
+                `species '${species.name ?? "?"}': has 'synonym_of' but status is '${species.status}', not 'synonym'`);
         }
     }
 }
@@ -802,21 +802,21 @@ startCheck("Size validity");
 
 const sizeNumericFields: Array<keyof Size> = ["length_m", "weight_kg", "hip_height_m", "skull_length_m"];
 
-for (const [f, doc] of genusParsed)
+for (const [filePath, doc] of genusParsed)
 {
     if (!doc || !Array.isArray(doc.species))
     {
         continue;
     }
 
-    for (const sp of doc.species)
+    for (const species of doc.species)
     {
-        if (!sp || !sp.size)
+        if (!species || !species.size)
         {
             continue;
         }
 
-        const size = sp.size;
+        const size = species.size;
         for (const field of sizeNumericFields)
         {
             const value = size[field];
@@ -826,8 +826,8 @@ for (const [f, doc] of genusParsed)
                 {
                     checkError(
                         "Size validity",
-                        f,
-                        `species '${sp.name ?? "?"}': size.${field} must be a positive number (got ${value})`);
+                        filePath,
+                        `species '${species.name ?? "?"}': size.${field} must be a positive number (got ${value})`);
                 }
             }
         }
@@ -838,8 +838,8 @@ for (const [f, doc] of genusParsed)
             {
                 checkError(
                     "Size validity",
-                    f,
-                    `species '${sp.name ?? "?"}': size.estimate must be a boolean (got ${typeof size.estimate})`);
+                    filePath,
+                    `species '${species.name ?? "?"}': size.estimate must be a boolean (got ${typeof size.estimate})`);
             }
         }
     }
@@ -848,7 +848,7 @@ for (const [f, doc] of genusParsed)
 // 19. Locomotion / completeness compliance
 startCheck("Locomotion/completeness compliance");
 
-for (const [f, doc] of genusParsed)
+for (const [filePath, doc] of genusParsed)
 {
     if (!doc)
     {
@@ -859,20 +859,20 @@ for (const [f, doc] of genusParsed)
     {
         checkError(
             "Locomotion/completeness compliance",
-            f,
+            filePath,
             `invalid locomotion value '${doc.locomotion}' (must be one of: ${[...allowedLocomotion].join(", ")})`);
     }
 
     if (Array.isArray(doc.species))
     {
-        for (const sp of doc.species)
+        for (const species of doc.species)
         {
-            if (sp && sp.completeness && !allowedCompleteness.has(sp.completeness))
+            if (species && species.completeness && !allowedCompleteness.has(species.completeness))
             {
                 checkError(
                     "Locomotion/completeness compliance",
-                    f,
-                    `species '${sp.name ?? "?"}': invalid completeness '${sp.completeness}' (must be one of: ${[...allowedCompleteness].join(", ")})`);
+                    filePath,
+                    `species '${species.name ?? "?"}': invalid completeness '${species.completeness}' (must be one of: ${[...allowedCompleteness].join(", ")})`);
             }
         }
     }
@@ -881,35 +881,35 @@ for (const [f, doc] of genusParsed)
 // 20. Holotype consistency
 startCheck("Holotype consistency");
 
-for (const [f, doc] of genusParsed)
+for (const [filePath, doc] of genusParsed)
 {
     if (!doc || !Array.isArray(doc.species))
     {
         continue;
     }
 
-    for (const sp of doc.species)
+    for (const species of doc.species)
     {
-        if (!sp || !sp.holotype)
+        if (!species || !species.holotype)
         {
             continue;
         }
 
-        const ht = sp.holotype;
-        if (!ht.specimen_id)
+        const holotype = species.holotype;
+        if (!holotype.specimen_id)
         {
             checkError(
                 "Holotype consistency",
-                f,
-                `species '${sp.name ?? "?"}': holotype present but missing 'specimen_id'`);
+                filePath,
+                `species '${species.name ?? "?"}': holotype present but missing 'specimen_id'`);
         }
 
-        if (!ht.institution)
+        if (!holotype.institution)
         {
             checkError(
                 "Holotype consistency",
-                f,
-                `species '${sp.name ?? "?"}': holotype present but missing 'institution'`);
+                filePath,
+                `species '${species.name ?? "?"}': holotype present but missing 'institution'`);
         }
     }
 }
@@ -917,35 +917,35 @@ for (const [f, doc] of genusParsed)
 // 21. Appearance compliance
 startCheck("Appearance compliance");
 
-for (const [f, doc] of genusParsed)
+for (const [filePath, doc] of genusParsed)
 {
     if (!doc || !doc.appearance)
     {
         continue;
     }
 
-    const app = doc.appearance;
-    if (app.integument && !allowedIntegument.has(app.integument))
+    const appearance = doc.appearance;
+    if (appearance.integument && !allowedIntegument.has(appearance.integument))
     {
         checkError(
             "Appearance compliance",
-            f,
-            `invalid integument '${app.integument}' (must be one of: ${[...allowedIntegument].join(", ")})`);
+            filePath,
+            `invalid integument '${appearance.integument}' (must be one of: ${[...allowedIntegument].join(", ")})`);
     }
 
-    if (app.evidence && !allowedIntegumentEvidence.has(app.evidence))
+    if (appearance.evidence && !allowedIntegumentEvidence.has(appearance.evidence))
     {
         checkError(
             "Appearance compliance",
-            f,
-            `invalid integument evidence '${app.evidence}' (must be one of: ${[...allowedIntegumentEvidence].join(", ")})`);
+            filePath,
+            `invalid integument evidence '${appearance.evidence}' (must be one of: ${[...allowedIntegumentEvidence].join(", ")})`);
     }
 }
 
 // 22. Paleoenvironment compliance
 startCheck("Paleoenvironment compliance");
 
-for (const [f, doc] of genusParsed)
+for (const [filePath, doc] of genusParsed)
 {
     if (!doc)
     {
@@ -954,14 +954,14 @@ for (const [f, doc] of genusParsed)
 
     if (Array.isArray(doc.paleoenvironment))
     {
-        for (const env of doc.paleoenvironment)
+        for (const environment of doc.paleoenvironment)
         {
-            if (!allowedPaleoenvironments.has(env))
+            if (!allowedPaleoenvironments.has(environment))
             {
                 checkError(
                     "Paleoenvironment compliance",
-                    f,
-                    `invalid paleoenvironment '${env}' (must be one of: ${[...allowedPaleoenvironments].join(", ")})`);
+                    filePath,
+                    `invalid paleoenvironment '${environment}' (must be one of: ${[...allowedPaleoenvironments].join(", ")})`);
             }
         }
     }
@@ -971,7 +971,7 @@ for (const [f, doc] of genusParsed)
         {
             checkError(
                 "Paleoenvironment compliance",
-                f,
+                filePath,
                 `invalid paleoenvironment '${doc.paleoenvironment}' (must be one of: ${[...allowedPaleoenvironments].join(", ")})`);
         }
     }
@@ -980,7 +980,7 @@ for (const [f, doc] of genusParsed)
 // 23. Identifier compliance
 startCheck("Identifier compliance");
 
-for (const [f, doc] of genusParsed)
+for (const [filePath, doc] of genusParsed)
 {
     if (!doc || !Array.isArray(doc.identifiers))
     {
@@ -988,35 +988,35 @@ for (const [f, doc] of genusParsed)
     }
 
     const seenPairs = new Set<string>();
-    for (const ident of doc.identifiers)
+    for (const identifier of doc.identifiers)
     {
-        if (!ident)
+        if (!identifier)
         {
             continue;
         }
 
-        if (ident.source && !allowedIdentifierSources.has(ident.source))
+        if (identifier.source && !allowedIdentifierSources.has(identifier.source))
         {
             checkError(
                 "Identifier compliance",
-                f,
-                `invalid identifier source '${ident.source}' (must be one of: ${[...allowedIdentifierSources].join(", ")})`);
+                filePath,
+                `invalid identifier source '${identifier.source}' (must be one of: ${[...allowedIdentifierSources].join(", ")})`);
         }
 
-        if (!ident.id || (typeof ident.id === "string" && ident.id.trim() === ""))
+        if (!identifier.id || (typeof identifier.id === "string" && identifier.id.trim() === ""))
         {
             checkError(
                 "Identifier compliance",
-                f,
-                `identifier with source '${ident.source ?? "?"}' has empty or missing 'id'`);
+                filePath,
+                `identifier with source '${identifier.source ?? "?"}' has empty or missing 'id'`);
         }
 
-        const pair = `${ident.source}:${ident.id}`;
+        const pair = `${identifier.source}:${identifier.id}`;
         if (seenPairs.has(pair))
         {
             checkError(
                 "Identifier compliance",
-                f,
+                filePath,
                 `duplicate identifier source/id pair: ${pair}`);
         }
 
@@ -1030,25 +1030,25 @@ console.log("Validating Open Paleo data...\n");
 
 for (const name of Object.keys(checkResults))
 {
-    const r = checkResults[name];
-    if (r.errors === 0 && r.warnings === 0)
+    const result = checkResults[name];
+    if (result.errors === 0 && result.warnings === 0)
     {
         console.log(`\u2713 ${name} check passed`);
     }
-    else if (r.errors > 0)
+    else if (result.errors > 0)
     {
-        console.log(`\u2717 ${name}: ${r.errors} error${r.errors !== 1 ? "s" : ""}`);
-        for (const e of errors.filter(e => e.check === name))
+        console.log(`\u2717 ${name}: ${result.errors} error${result.errors !== 1 ? "s" : ""}`);
+        for (const entry of errors.filter(entry => entry.check === name))
         {
-            console.log(`  ${e.file}: ${e.message}`);
+            console.log(`  ${entry.file}: ${entry.message}`);
         }
     }
     else
     {
-        console.log(`\u26A0 ${name}: ${r.warnings} warning${r.warnings !== 1 ? "s" : ""}`);
-        for (const w of warnings.filter(w => w.check === name))
+        console.log(`\u26A0 ${name}: ${result.warnings} warning${result.warnings !== 1 ? "s" : ""}`);
+        for (const entry of warnings.filter(entry => entry.check === name))
         {
-            console.log(`  ${w.file}: ${w.message}`);
+            console.log(`  ${entry.file}: ${entry.message}`);
         }
     }
 }

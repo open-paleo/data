@@ -96,34 +96,34 @@ for (const file of findYamlFiles(path.join(root, "genera")))
 
     if (data.species)
     {
-        for (const sp of data.species)
+        for (const species of data.species)
         {
-            if (sp.name)
+            if (species.name)
             {
-                for (const part of sp.name.split(/\s+/))
+                for (const part of species.name.split(/\s+/))
                 {
                     words.add(part);
                 }
             }
 
-            if (sp.authors)
+            if (species.authors)
             {
-                if (Array.isArray(sp.authors))
+                if (Array.isArray(species.authors))
                 {
-                    for (const author of sp.authors)
+                    for (const author of species.authors)
                     {
                         extractAuthorSurnames(author);
                     }
                 }
                 else
                 {
-                    extractAuthorSurnames(sp.authors);
+                    extractAuthorSurnames(species.authors);
                 }
             }
 
-            if (sp.location && sp.location.formation)
+            if (species.location && species.location.formation)
             {
-                for (const word of sp.location.formation.split(/\s+/))
+                for (const word of species.location.formation.split(/\s+/))
                 {
                     words.add(word);
                 }
@@ -138,11 +138,11 @@ for (const file of findYamlFiles(path.join(root, "genera")))
 
     if (data.references)
     {
-        for (const ref of data.references)
+        for (const reference of data.references)
         {
-            if (ref.authors)
+            if (reference.authors)
             {
-                extractAuthorSurnames(ref.authors);
+                extractAuthorSurnames(reference.authors);
             }
         }
     }
@@ -167,11 +167,11 @@ for (const file of findYamlFiles(path.join(root, "clades")))
 
     if (data.references)
     {
-        for (const ref of data.references)
+        for (const reference of data.references)
         {
-            if (ref.authors)
+            if (reference.authors)
             {
-                extractAuthorSurnames(ref.authors);
+                extractAuthorSurnames(reference.authors);
             }
         }
     }
@@ -185,7 +185,7 @@ if (!fs.existsSync(dictDir))
 }
 
 const sorted = [...words]
-    .filter((w: string) => w && w.length > 0)
+    .filter((word: string) => word && word.length > 0)
     .sort((a: string, b: string) => a.localeCompare(b));
 
 const header = `# Auto-generated taxonomy dictionary — do not edit manually

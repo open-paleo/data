@@ -1,15 +1,20 @@
 # Contributing to Open Paleo Scripts
 
 This guide is for developers contributing to the scripts that power
-Open Paleo's validation, build, and automation tooling. If you are
+Open Paleo's validation, build, and automation tooling — including
+TypeScript scripts (`scripts/`), browser JavaScript (`docs/`), and
+GitHub Actions workflow scripts (`.github/scripts/`). If you are
 contributing **data** (genera, clades, corrections, images), see the
 main [CONTRIBUTING.md](../CONTRIBUTING.md) instead.
 
 ## Technology
 
-- **TypeScript** — all scripts are written in TypeScript
+- **TypeScript** — build and validation scripts in `scripts/` are written
+  in TypeScript
 - **Node.js 24** — scripts run directly via `node --experimental-strip-types`
   with no build step required
+- **Plain JavaScript** — browser code in `docs/` (ES modules) and GitHub
+  Actions workflow scripts in `.github/scripts/` (CommonJS)
 - **js-yaml** — the only runtime dependency, used to parse and serialize YAML
 
 ## Setup
@@ -29,12 +34,30 @@ npm install
 | `sync-forms.ts`          | `npm run sync-forms`          | Sync issue form dropdowns with schema/tree     |
 | `generate-dictionary.ts` | `npm run generate-dictionary` | Generate spell check dictionary                |
 | `utilities.ts`           | —                             | Shared helper functions imported by scripts    |
+| —                        | `npm run preview`             | Build and serve the contribution wizard locally |
+
+## Previewing the Contribution Wizard
+
+The `docs/` directory contains a static contribution wizard served via
+GitHub Pages. To preview it locally:
+
+```bash
+npm run preview
+```
+
+This runs the build (to generate `docs/schema.json` and
+`docs/open-paleo.json`) then starts a local server at
+`http://localhost:8080`. Requires **Python 3** (for `python3 -m
+http.server`), which is pre-installed on macOS and most Linux
+distributions.
 
 ## Code Style
 
-All TypeScript code must follow these rules, enforced by ESLint with
-[@stylistic/eslint-plugin](https://eslint.style/) and
-[@typescript-eslint](https://typescript-eslint.io/):
+All code — TypeScript (`scripts/`), browser JavaScript (`docs/`), and
+CommonJS workflow scripts (`.github/scripts/`) — must follow these rules.
+Formatting is enforced by ESLint with
+[@stylistic/eslint-plugin](https://eslint.style/); TypeScript-specific
+rules use [@typescript-eslint](https://typescript-eslint.io/):
 
 ### Formatting
 
@@ -47,8 +70,20 @@ All TypeScript code must follow these rules, enforced by ESLint with
 - Blank lines between type members
 - **All arguments on new lines when any are split** — if a function call
   doesn't fit on one line, put every argument on its own line
+- **Collapse sequential guards into if/else** — when multiple adjacent
+  `if` blocks each `return`, `continue`, or `break`, chain them as
+  `if`/`else if` instead of separate blocks
 - **No section separators** — do not use `// ------` dividers between
   sections; use plain comments instead
+
+### Functions & callbacks
+
+- **Arrow functions for callbacks** — use `() => { }` for event handlers,
+  `.map()`, `.filter()`, `.find()`, `.then()`, and any other callback.
+  Only use `function` when you need the callback's own `this` binding
+  (rare), for named function declarations, or for IIFEs/module patterns.
+- **Omit braces for single-expression arrows** — write
+  `(option) => option.name` not `(option) => { return option.name; }`
 
 ### Naming
 
@@ -58,24 +93,49 @@ All TypeScript code must follow these rules, enforced by ESLint with
 - **No leading or trailing underscores** — use descriptive names instead
   (e.g., `scriptDir` not `__dirname`)
 - Single `_` is allowed only for unused callback parameters
+- **No abbreviated variable names** — write out full words. Use
+  `button` not `btn`, `element` not `el`, `option` not `opt`,
+  `value` not `val`, `error` not `err`, `reference` not `ref`,
+  `index` not `idx`, `message` not `msg`, `event` not `evt`,
+  `response` not `res`, `checkbox` not `cb`, `condition` not `cond`,
+  `initialize` not `init`.
+  This applies to all variables, parameters, and loop iterators —
+  including short callbacks (e.g., `.map((option) => ...)` not
+  `.map((o) => ...)`)
 
-### Imports
+### Imports (TypeScript only)
 
 - **Namespace imports** for Node.js built-ins — `import * as fs from "node:fs"`,
   never `import { readFileSync } from "fs"`
 - **`node:` protocol required** — always use `node:fs`, `node:path`, `node:url`, etc.
 - **`import type`** for type-only imports
 
-### TypeScript
+### General style
+
+These rules apply to all code — TypeScript, browser JavaScript, and
+CommonJS workflow scripts alike:
+
+- **`??` over `||` for fallback values** — use nullish coalescing for
+  default values (e.g., `schema.status ?? []`); reserve `||` for boolean logic
+- **`const` by default** — only use `let` when reassignment is necessary
+- **No unnecessary wrappers** — do not call `String()` on values already
+  known to be strings, or wrap in other identity conversions
+- **Inline single-use variables** — do not create intermediate variables
+  that are only used once on the next line (e.g., prefer
+  `for (const file of findYamlFiles(dir))` over
+  `const files = findYamlFiles(dir); for (const file of files)`)
+- **Collapse guard clauses** — prefer `if (x && x.y)` over
+  `if (!x) { continue; } if (x.y)` when only a single check follows
+
+### TypeScript (scripts/ only)
+
+These rules apply only to TypeScript features (types, imports, generics):
 
 - **`type` over `interface`** — always use `type` aliases, never `interface`
 - **`Array<T>` over `T[]`** — always use the generic syntax
 - **`new Array<T>()`** to initialize empty arrays — not `[] as Array<T>` or
   `const x: Array<T> = []`
-- **`??` over `||` for fallback values** — use nullish coalescing for
-  default values (e.g., `schema.status ?? []`); reserve `||` for boolean logic
 - **No `any`** — use proper types or `unknown` with type guards
-- **`const` by default** — only use `let` when reassignment is necessary
 - **Omit inferable type annotations on variables** — if the type is obvious
   from the right-hand side (a constructor, `as` cast, literal, or function
   return), do not annotate the variable. Keep explicit annotations on
@@ -84,14 +144,6 @@ All TypeScript code must follow these rules, enforced by ESLint with
 - **Shared utilities** live in `scripts/utilities.ts` — reusable functions
   like `findYamlFiles`, `collectAllKeys`, and `parseYaml` belong here;
   do not duplicate them in individual scripts
-- **No unnecessary wrappers** — do not call `String()` on values already
-  typed as `string`, or wrap in other identity conversions
-- **Inline single-use variables** — do not create intermediate variables
-  that are only used once on the next line (e.g., prefer
-  `for (const f of findYamlFiles(dir))` over
-  `const files = findYamlFiles(dir); for (const f of files)`)
-- **Collapse guard clauses** — prefer `if (x && x.y)` over
-  `if (!x) { continue; } if (x.y)` when only a single check follows
 
 ### Documentation
 
@@ -127,7 +179,7 @@ for (const file of findYamlFiles(path.join(root, "genera")))
 ## Linting
 
 ```bash
-# Check for lint and style errors
+# Check for lint and style errors (scripts/, docs/, .github/scripts/)
 npm run lint
 
 # Auto-fix lint and style errors
@@ -137,7 +189,7 @@ npm run lint:fix
 npm run typecheck
 ```
 
-Both checks (`lint`, `typecheck`) run in CI on every pull request.
+All three checks (`lint`, `typecheck`) run in CI on every pull request.
 Fix any failures before requesting review.
 
 ## Adding a New Validation Check

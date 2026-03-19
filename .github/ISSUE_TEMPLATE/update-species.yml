@@ -110,6 +110,13 @@ body:
       placeholder: e.g., Montana
 
   - type: input
+    id: locality
+    attributes:
+      label: Locality
+      description: Specific site or locality name
+      placeholder: e.g., Fort Peck
+
+  - type: input
     id: formation
     attributes:
       label: Formation

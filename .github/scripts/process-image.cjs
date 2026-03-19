@@ -2,7 +2,6 @@
 // Called by .github/workflows/process-image.yml via actions/github-script.
 // Receives { github, context } from the workflow.
 
-const path = require("path");
 const { parseIssueForm, commentError } = require("./helpers.cjs");
 
 /**
@@ -50,7 +49,6 @@ module.exports = async function ({ github, context })
         return;
     }
 
-    const imageUrl = imageMatch[1];
     const taxonName = fields["Genus or clade name"];
     const description = fields["Description"] ?? "";
     const credit = fields["Credit"] ?? "";
@@ -65,13 +63,6 @@ module.exports = async function ({ github, context })
         );
         return;
     }
-
-    // Determine file extension from URL
-    const urlPath = new URL(imageUrl).pathname;
-    const ext = path.extname(urlPath) || ".jpg";
-    const safeName = taxonName.replace(/\s+/g, "_");
-    const safeDesc = description.replace(/[^a-zA-Z0-9]/g, "_").substring(0, 40);
-    const fileName = `${safeName}_${safeDesc}${ext}`;
 
     await github.rest.issues.createComment({
         owner: repo.owner,

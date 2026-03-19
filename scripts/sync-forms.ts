@@ -58,7 +58,7 @@ if (!fs.existsSync(templatesDir))
 
 const templateFiles = fs
     .readdirSync(templatesDir)
-    .filter((f) => f.endsWith(".yml") || f.endsWith(".yaml"));
+    .filter((file) => file.endsWith(".yml") || file.endsWith(".yaml"));
 
 if (templateFiles.length === 0)
 {
@@ -92,7 +92,7 @@ for (const file of templateFiles)
             const indentItem = indentHeader + "  ";
 
             const options = values
-                .map((v) => `${indentItem}- ${v}`)
+                .map((value) => `${indentItem}- ${value}`)
                 .join("\n") + "\n";
 
             return `${header}\n${options}`;
@@ -119,9 +119,9 @@ if (checkMode)
     {
         console.error("The following issue templates are out of sync:");
 
-        for (const f of outOfSync)
+        for (const file of outOfSync)
         {
-            console.error(`  - ${f}`);
+            console.error(`  - ${file}`);
         }
 
         process.exit(1);

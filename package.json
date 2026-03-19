@@ -8,9 +8,10 @@
     "build": "node --experimental-strip-types scripts/build.ts",
     "sync-forms": "node --experimental-strip-types scripts/sync-forms.ts",
     "generate-dictionary": "node --experimental-strip-types scripts/generate-dictionary.ts",
-    "lint": "eslint scripts/",
-    "lint:fix": "eslint scripts/ --fix",
-    "typecheck": "tsc --noEmit"
+    "lint": "eslint scripts/ docs/ .github/scripts/",
+    "lint:fix": "eslint scripts/ docs/ .github/scripts/ --fix",
+    "typecheck": "tsc --noEmit",
+    "preview": "node --experimental-strip-types scripts/build.ts && python3 -m http.server 8080 -d docs"
   },
   "license": "CC-BY-4.0",
   "engines": {

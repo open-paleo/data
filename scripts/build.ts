@@ -4,7 +4,7 @@ import * as url from "node:url";
 
 import yaml from "js-yaml";
 
-import { findYamlFiles, parseYaml } from "./utilities.ts";
+import { collectAllKeys, findYamlFiles, parseYaml } from "./utilities.ts";
 
 import type { GenusData, CladeData, TreeNode, Reference } from "./types.ts";
 
@@ -313,18 +313,18 @@ function collectReferences(records: Record<string, ProcessedClade | ProcessedGen
     {
         if (record.references)
         {
-            for (const ref of record.references)
+            for (const reference of record.references)
             {
-                if (ref.id && !refs.has(ref.id))
+                if (reference.id && !referenceMap.has(reference.id))
                 {
-                    refs.set(ref.id, ref);
+                    referenceMap.set(reference.id, reference);
                 }
             }
         }
     }
 }
 
-const refs = new Map<string, Reference>();
+const referenceMap = new Map<string, Reference>();
 
 collectReferences(genera);
 collectReferences(clades);
@@ -335,59 +335,106 @@ let bib = `% Open Paleo — CC BY 4.0
 
 `;
 
-for (const ref of refs.values())
+for (const reference of referenceMap.values())
 {
-    const entryType = ref.book ? "incollection" : "article";
+    const entryType = reference.book ? "incollection" : "article";
     const fields = new Array<string>();
 
-    if (ref.authors)
+    if (reference.authors)
     {
-        fields.push(`  author = {${ref.authors}}`);
+        fields.push(`  author = {${reference.authors}}`);
     }
 
-    if (ref.year)
+    if (reference.year)
     {
-        fields.push(`  year = {${ref.year}}`);
+        fields.push(`  year = {${reference.year}}`);
     }
 
-    if (ref.title)
+    if (reference.title)
     {
-        fields.push(`  title = {${ref.title}}`);
+        fields.push(`  title = {${reference.title}}`);
     }
 
-    if (ref.journal)
+    if (reference.journal)
     {
-        fields.push(`  journal = {${ref.journal}}`);
+        fields.push(`  journal = {${reference.journal}}`);
     }
 
-    if (ref.book)
+    if (reference.book)
     {
-        fields.push(`  booktitle = {${ref.book}}`);
+        fields.push(`  booktitle = {${reference.book}}`);
     }
 
-    if (ref.volume)
+    if (reference.volume)
     {
-        fields.push(`  volume = {${ref.volume}}`);
+        fields.push(`  volume = {${reference.volume}}`);
     }
 
-    if (ref.issue)
+    if (reference.issue)
     {
-        fields.push(`  number = {${ref.issue}}`);
+        fields.push(`  number = {${reference.issue}}`);
     }
 
-    if (ref.pages)
+    if (reference.pages)
     {
-        fields.push(`  pages = {${ref.pages}}`);
+        fields.push(`  pages = {${reference.pages}}`);
     }
 
-    if (ref.doi)
+    if (reference.doi)
     {
-        fields.push(`  doi = {${ref.doi}}`);
+        fields.push(`  doi = {${reference.doi}}`);
     }
 
-    bib += `@${entryType}{${ref.id},\n${fields.join(",\n")}\n}\n\n`;
+    bib += `@${entryType}{${reference.id},\n${fields.join(",\n")}\n}\n\n`;
 }
 
 fs.writeFileSync(path.join(dist, "references.bib"), bib);
 
+// --- Generate docs/ outputs for the contribution wizard ---
+
+const docs = path.join(root, "docs");
+
+if (!fs.existsSync(docs))
+{
+    fs.mkdirSync(docs, { recursive: true });
+}
+
+// Build docs/schema.json from schema.yml
+type SchemaData = Record<string, unknown>;
+const schema = parseYaml<SchemaData>(path.join(root, "schema.yml"));
+
+const schemaOutput: Record<string, unknown> = {};
+
+// Array-type vocabularies (sorted)
+const arrayKeys = [
+    "status", "diet", "locomotion", "completeness",
+    "integument", "integument_evidence", "paleoenvironments",
+    "periods", "countries", "identifier_sources",
+];
+
+for (const key of arrayKeys)
+{
+    const value = schema[key];
+    if (Array.isArray(value))
+    {
+        schemaOutput[key] = [...value].sort();
+    }
+}
+
+// Stages as full object (needed for period→stage filtering)
+schemaOutput.stages = schema.stages;
+
+// Clades from tree
+schemaOutput.clades = collectAllKeys(tree).sort();
+
+fs.writeFileSync(
+    path.join(docs, "schema.json"),
+    JSON.stringify(schemaOutput, null, 2) + "\n");
+
+// Copy open-paleo.json to docs/
+fs.copyFileSync(
+    path.join(dist, "open-paleo.json"),
+    path.join(docs, "open-paleo.json"));
+
 console.log("Built: open-paleo.json, open-paleo.yml, tree.newick, tree.nexus, references.bib");
+console.log("Built: docs/schema.json, docs/open-paleo.json");
