@@ -120,7 +120,7 @@ Defines all controlled vocabularies used across the dataset: taxonomic status va
 
 ## Output Formats
 
-The build script (`scripts/build.mjs`) produces the following output files in `dist/`:
+The build script (`scripts/build.ts`) produces the following output files in `dist/`:
 
 | Format   | Description |
 |----------|-------------|
@@ -221,6 +221,31 @@ Requires **Node.js 24** or later. Scripts are written in TypeScript
 and run directly via Node's native type stripping — no build step
 needed. See [scripts/CONTRIBUTING.md](scripts/CONTRIBUTING.md) for
 code style guidelines.
+
+## AI and LLM Use
+
+Open Paleo used AI/LLM tools (specifically Claude by Anthropic) to build
+the initial project scaffolding — the validation and build scripts,
+GitHub workflows, issue templates, and documentation structure. We
+believe in transparency about this.
+
+**AI is not used to populate the dataset.** Every genus, species, clade
+definition, and reference in Open Paleo is entered and reviewed by
+humans, backed by published scientific literature. Automated tooling
+validates data quality, but no AI generates or suggests taxonomic
+content. The integrity of the dataset depends on human expertise, and
+that is not something we are willing to delegate.
+
+**AI-generated art is not accepted.** Open Paleo values the skill,
+scientific knowledge, and interpretive judgment that paleo-artists bring
+to life reconstructions. We do not accept AI-generated, AI-assisted, or
+AI-upscaled images. See [Image Requirements](CONTRIBUTING.md#image-requirements)
+for details.
+
+**Environmental impact.** We recognize that AI and LLM usage carries an
+environmental cost. We are actively exploring options to offset the
+environmental impact of our AI tooling use, and we will update this
+section as we identify and adopt concrete measures.
 
 ## License
 
