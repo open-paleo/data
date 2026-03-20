@@ -4,7 +4,9 @@ Thank you for your interest in contributing to Open Paleo. This is a community-m
 
 ## How to Contribute
 
-All contributions are submitted through **GitHub issue forms**. These structured forms ensure that data is consistent, automatable, and easy to review. The available forms are:
+The easiest way to contribute is through the **[contribution wizard](https://open-paleo.github.io/data/)**, a guided web form that walks you through each field with searchable dropdowns, validation, and pre-populated current values for update flows. The wizard builds a pre-filled GitHub issue — no special tools required.
+
+You can also submit contributions directly through the **GitHub issue forms** below. These structured forms ensure that data is consistent, automatable, and easy to review. The available forms are:
 
 - **[Add New Genus](../../issues/new?template=add-genus.yml)** — Submit structured data for a genus not yet in the dataset.
 - **[Add Species](../../issues/new?template=add-species.yml)** — Add a new species to an existing genus.
@@ -94,7 +96,7 @@ original proposal.
 
 ## Process
 
-- **Use the issue forms.** They exist to make contributions structured and automatable. Do not open blank issues for things the forms cover.
+- **Use the [contribution wizard](https://open-paleo.github.io/data/) or the issue forms.** They exist to make contributions structured and automatable. Do not open blank issues for things the forms cover.
 - **Do not modify `tree.yml` without discussion.** Changes to the clade hierarchy affect every genus in the affected subtree. Open an issue first to discuss the change and its justification.
 - **Respect the review process.** Auto-merged PRs (new genera, new images) go through automated validation. PRs that affect the tree structure require manual review from maintainers. Do not pressure maintainers to merge faster.
 
