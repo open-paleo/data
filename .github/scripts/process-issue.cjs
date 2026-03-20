@@ -28,27 +28,27 @@ module.exports = async function ({ github, context })
     const repo = context.repo;
     const fields = parseIssueForm(body);
 
-    if (labels.includes("add-genus"))
+    if (labels.includes("Add Genus"))
     {
         await handleAddGenus({ github, repo, issueNumber, issueAuthor, fields });
     }
 
-    if (labels.includes("correct-taxonomy"))
+    if (labels.includes("Taxonomy"))
     {
         await handleCorrectTaxonomy({ github, repo, issueNumber, issueAuthor, fields });
     }
 
-    if (labels.includes("update-genus"))
+    if (labels.includes("Update Genus"))
     {
         await handleUpdateGenus({ github, repo, issueNumber, issueAuthor, fields });
     }
 
-    if (labels.includes("add-species"))
+    if (labels.includes("Add Species"))
     {
         await handleAddSpecies({ github, repo, issueNumber, issueAuthor, fields });
     }
 
-    if (labels.includes("update-species"))
+    if (labels.includes("Update Species"))
     {
         await handleUpdateSpecies({ github, repo, issueNumber, issueAuthor, fields });
     }
