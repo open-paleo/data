@@ -23,7 +23,7 @@ window.Flows = (function ()
     "use strict";
 
     const addGenus = {
-        label: "add-genus",
+        label: "Add Genus",
         titlePrefix: "Add genus: ",
         titleField: "Genus name",
         steps: [
@@ -93,7 +93,7 @@ window.Flows = (function ()
     };
 
     const addSpecies = {
-        label: "add-species",
+        label: "Add Species",
         titlePrefix: "Add species: ",
         titleField: "Species name",
         steps: [
@@ -144,7 +144,7 @@ window.Flows = (function ()
     };
 
     const updateGenus = {
-        label: "update-genus",
+        label: "Update Genus",
         titlePrefix: "Update: ",
         titleField: "Genus name",
         isUpdate: true,
@@ -179,7 +179,7 @@ window.Flows = (function ()
     };
 
     const updateSpecies = {
-        label: "update-species",
+        label: "Update Species",
         titlePrefix: "Update species: ",
         titleField: "Species name",
         isUpdate: true,
@@ -226,7 +226,7 @@ window.Flows = (function ()
     };
 
     const correctTaxonomy = {
-        label: "correct-taxonomy",
+        label: "Taxonomy",
         titlePrefix: "Reclassify: ",
         titleField: "Genus name",
         steps: [
@@ -254,7 +254,7 @@ window.Flows = (function ()
     };
 
     const proposeUpdate = {
-        label: "propose-update",
+        label: "Proposal",
         titlePrefix: "Propose: ",
         titleField: "Genus name",
         steps: [

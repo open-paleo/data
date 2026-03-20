@@ -13,11 +13,11 @@ jobs:
   process:
     runs-on: ubuntu-latest
     if: >
-      contains(github.event.issue.labels.*.name, 'add-genus') ||
-      contains(github.event.issue.labels.*.name, 'correct-taxonomy') ||
-      contains(github.event.issue.labels.*.name, 'update-genus') ||
-      contains(github.event.issue.labels.*.name, 'add-species') ||
-      contains(github.event.issue.labels.*.name, 'update-species')
+      contains(github.event.issue.labels.*.name, 'Add Genus') ||
+      contains(github.event.issue.labels.*.name, 'Taxonomy') ||
+      contains(github.event.issue.labels.*.name, 'Update Genus') ||
+      contains(github.event.issue.labels.*.name, 'Add Species') ||
+      contains(github.event.issue.labels.*.name, 'Update Species')
     steps:
       - name: Checkout
         uses: actions/checkout@v4
