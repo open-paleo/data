@@ -44,7 +44,7 @@ module.exports = async function ({ github, context })
             repo,
             issueNumber,
             "Could not find an image in the submission. Please paste or drag an image into the Image field.",
-            "needs-info",
+            "Needs More Information",
         );
         return;
     }
@@ -75,6 +75,6 @@ module.exports = async function ({ github, context })
         owner: repo.owner,
         repo: repo.repo,
         issue_number: issueNumber,
-        labels: ["in-progress"],
+        labels: ["In Progress"],
     });
 };

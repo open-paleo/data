@@ -12,7 +12,7 @@ permissions:
 jobs:
   process:
     runs-on: ubuntu-latest
-    if: contains(github.event.issue.labels.*.name, 'add-image')
+    if: contains(github.event.issue.labels.*.name, 'Add Image')
     steps:
       - name: Checkout
         uses: actions/checkout@v4

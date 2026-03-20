@@ -181,7 +181,7 @@ async function createUpdatePR({
         owner: repo.owner,
         repo: repo.repo,
         issue_number: issueNumber,
-        labels: ["in-progress"],
+        labels: ["In Progress"],
     });
 
     await github.rest.issues.createComment({

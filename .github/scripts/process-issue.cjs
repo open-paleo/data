@@ -77,7 +77,7 @@ async function handleAddGenus({ github, repo, issueNumber, issueAuthor, fields }
             repo,
             issueNumber,
             "Could not parse genus name from the issue. Please check the form and resubmit.",
-            "needs-info",
+            "Needs More Information",
         );
         return;
     }
@@ -208,7 +208,7 @@ async function handleAddGenus({ github, repo, issueNumber, issueAuthor, fields }
         owner: repo.owner,
         repo: repo.repo,
         issue_number: issueNumber,
-        labels: ["in-progress"],
+        labels: ["In Progress"],
     });
 
     await github.rest.issues.createComment({
@@ -332,7 +332,7 @@ async function handleCorrectTaxonomy({ github, repo, issueNumber, issueAuthor, f
         owner: repo.owner,
         repo: repo.repo,
         issue_number: issueNumber,
-        labels: ["in-progress"],
+        labels: ["In Progress"],
     });
 
     await github.rest.issues.createComment({
