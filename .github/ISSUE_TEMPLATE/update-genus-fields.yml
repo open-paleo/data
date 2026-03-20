@@ -11,6 +11,20 @@ body:
     validations:
       required: true
 
+  - type: input
+    id: pronunciation-ipa
+    attributes:
+      label: Pronunciation (IPA)
+      description: International Phonetic Alphabet transcription
+      placeholder: e.g., /taɪˌrænəˈsɔːrəs/
+
+  - type: input
+    id: pronunciation-phonetic
+    attributes:
+      label: Pronunciation (phonetic)
+      description: Informal phonetic spelling with stressed syllables in capitals
+      placeholder: e.g., tie-RAN-oh-SOR-us
+
   - type: textarea
     id: description
     attributes:

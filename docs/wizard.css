@@ -369,6 +369,231 @@ body {
     background: #3a6b1e;
 }
 
+/* Import from Wikipedia */
+
+.import-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1.25rem;
+    font: inherit;
+    font-size: 0.85rem;
+    font-weight: 500;
+    background: #f8f9fa;
+    color: #1a1a1a;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+.import-btn:hover {
+    background: #e8f0e0;
+    border-color: #2d5016;
+}
+
+.import-btn:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+
+.import-btn .material-symbols-outlined {
+    font-size: 1.1rem;
+}
+
+.import-btn.loading {
+    color: #888;
+}
+
+.import-btn.loading .material-symbols-outlined {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Import modal */
+
+.import-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    padding: 1rem;
+}
+
+.import-dialog {
+    position: relative;
+    background: #fff;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.import-close {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #555;
+    line-height: 1;
+    padding: 0.25rem;
+}
+
+.import-close:hover {
+    color: #1a1a1a;
+}
+
+.import-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    padding-right: 2rem;
+}
+
+.import-subtitle {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.import-subtitle a {
+    color: #2d5016;
+    text-decoration: underline;
+}
+
+.import-actions-top {
+    margin-bottom: 1rem;
+}
+
+.import-add-all {
+    padding: 0.4rem 1rem;
+    font: inherit;
+    font-size: 0.85rem;
+    font-weight: 600;
+    background: #2d5016;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.import-add-all:hover:not(:disabled) {
+    background: #3a6b1e;
+}
+
+.import-add-all:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.import-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid #eee;
+}
+
+.import-row:last-child {
+    border-bottom: none;
+}
+
+.import-row-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    flex: 1;
+    min-width: 0;
+}
+
+.import-row-field {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.import-row-value {
+    font-size: 0.85rem;
+    color: #333;
+    word-break: break-word;
+}
+
+.import-row-value.truncated {
+    cursor: pointer;
+}
+
+.import-row-value.truncated:hover {
+    color: #2d5016;
+}
+
+.import-row-source {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.1rem 0.4rem;
+    border-radius: 3px;
+    width: fit-content;
+}
+
+.import-row-source.source-pbdb {
+    background: #fef3e0;
+    color: #8a5d1e;
+}
+
+.import-row-source.source-wikipedia {
+    background: #e8f0e0;
+    color: #2d5016;
+}
+
+.import-row-source.source-wikidata {
+    background: #e0eaf5;
+    color: #1a4a7a;
+}
+
+.import-row-add {
+    padding: 0.3rem 0.75rem;
+    font: inherit;
+    font-size: 0.8rem;
+    background: #fff;
+    border: 1px solid #2d5016;
+    color: #2d5016;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+    align-self: center;
+}
+
+.import-row-add:hover:not(:disabled) {
+    background: #e8f0e0;
+}
+
+.import-row-add.accepted {
+    background: #e8f0e0;
+    border-color: #2d5016;
+    color: #2d5016;
+    cursor: default;
+}
+
+.import-row.accepted {
+    background: #f5faf0;
+    border-radius: 4px;
+}
+
 /* Responsive */
 
 @media (max-width: 500px) {

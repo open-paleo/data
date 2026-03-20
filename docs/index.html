@@ -84,8 +84,33 @@
     <tr><th></th><td></td></tr>
 </template>
 
+<template id="tmpl-import-modal">
+    <div class="import-overlay">
+        <div class="import-dialog">
+            <button class="import-close" type="button">&times;</button>
+            <h2 class="import-title"></h2>
+            <p class="import-subtitle"></p>
+            <div class="import-actions-top"></div>
+            <div class="import-results"></div>
+        </div>
+    </div>
+</template>
+
+<template id="tmpl-import-row">
+    <div class="import-row">
+        <div class="import-row-info">
+            <span class="import-row-field"></span>
+            <span class="import-row-value"></span>
+            <span class="import-row-source"></span>
+        </div>
+        <button class="import-row-add" type="button">Add</button>
+    </div>
+</template>
+
 <script src="data.js"></script>
 <script src="flows.js"></script>
+<script src="wikipedia.js"></script>
+<script src="import-modal.js"></script>
 <script src="wizard.js"></script>
 <script src="issue.js"></script>
 

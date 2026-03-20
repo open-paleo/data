@@ -26,12 +26,15 @@ window.Flows = (function ()
         label: "Add Genus",
         titlePrefix: "Add genus: ",
         titleField: "Genus name",
+        importable: true,
         steps: [
             {
                 name: "Genus basics",
                 fields: [
                     { header: "Genus name", type: "text", required: true, placeholder: "e.g., Tyrannosaurus", validate: "newGenus" },
                     { header: "Genus etymology", type: "text", placeholder: "e.g., \"tyrant lizard\"" },
+                    { header: "Pronunciation (IPA)", type: "text", placeholder: "e.g., /taɪˌrænəˈsɔːrəs/" },
+                    { header: "Pronunciation (phonetic)", type: "text", placeholder: "e.g., tie-RAN-oh-SOR-us" },
                     { header: "Parent clade", type: "search", required: true, optionsKey: "clades" },
                     { header: "Diet", type: "select", required: true, optionsKey: "diet" },
                     { header: "Locomotion", type: "select", optionsKey: "locomotion" },
@@ -158,6 +161,8 @@ window.Flows = (function ()
             {
                 name: "Edit fields",
                 fields: [
+                    { header: "Pronunciation (IPA)", type: "text", currentKey: "pronunciation.ipa", placeholder: "e.g., /taɪˌrænəˈsɔːrəs/" },
+                    { header: "Pronunciation (phonetic)", type: "text", currentKey: "pronunciation.phonetic", placeholder: "e.g., tie-RAN-oh-SOR-us" },
                     { header: "Description", type: "textarea", currentKey: "description" },
                     { header: "Diet", type: "select", optionsKey: "diet", currentKey: "diet" },
                     { header: "Locomotion", type: "select", optionsKey: "locomotion", currentKey: "locomotion" },

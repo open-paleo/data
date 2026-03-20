@@ -292,6 +292,22 @@ export type Reference = {
 };
 
 /**
+ * Pronunciation guide for a genus name, providing both IPA
+ * (International Phonetic Alphabet) and informal phonetic notation.
+ */
+export type Pronunciation = {
+    /**
+     * IPA transcription (e.g. "/taɪˌrænəˈsɔːrəs/").
+     */
+    ipa?: string;
+
+    /**
+     * Informal phonetic spelling (e.g. "tie-RAN-oh-SOR-us").
+     */
+    phonetic?: string;
+};
+
+/**
  * Top-level data structure for a genus YAML file.
  */
 export type GenusData = {
@@ -309,6 +325,11 @@ export type GenusData = {
      * Origin and meaning of the genus name.
      */
     etymology?: string;
+
+    /**
+     * Pronunciation guide for the genus name.
+     */
+    pronunciation?: Pronunciation;
 
     /**
      * Prose description of the genus for a general audience.

@@ -97,6 +97,21 @@ async function handleAddGenus({ github, repo, issueNumber, issueAuthor, fields }
         genusData.etymology = fields["Genus etymology"];
     }
 
+    if (fields["Pronunciation (IPA)"] || fields["Pronunciation (phonetic)"])
+    {
+        genusData.pronunciation = {};
+
+        if (fields["Pronunciation (IPA)"])
+        {
+            genusData.pronunciation.ipa = fields["Pronunciation (IPA)"];
+        }
+
+        if (fields["Pronunciation (phonetic)"])
+        {
+            genusData.pronunciation.phonetic = fields["Pronunciation (phonetic)"];
+        }
+    }
+
     if (fields["Locomotion"])
     {
         genusData.locomotion = fields["Locomotion"].toLowerCase();
@@ -386,6 +401,25 @@ async function handleUpdateGenus({ github, repo, issueNumber, issueAuthor, field
     }
 
     const { filePath, sha, data: genusData } = genusFile;
+
+    // Pronunciation (replace within pronunciation object)
+    if (fields["Pronunciation (IPA)"] || fields["Pronunciation (phonetic)"])
+    {
+        if (!genusData.pronunciation)
+        {
+            genusData.pronunciation = {};
+        }
+
+        if (fields["Pronunciation (IPA)"])
+        {
+            genusData.pronunciation.ipa = fields["Pronunciation (IPA)"];
+        }
+
+        if (fields["Pronunciation (phonetic)"])
+        {
+            genusData.pronunciation.phonetic = fields["Pronunciation (phonetic)"];
+        }
+    }
 
     // Replace fields
     if (fields["Description"])
