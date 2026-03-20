@@ -150,6 +150,8 @@ export default tseslint.config(
                 setTimeout: "readonly",
                 Event: "readonly",
                 history: "readonly",
+                URLSearchParams: "readonly",
+                encodeURIComponent: "readonly",
             },
         },
         plugins: {

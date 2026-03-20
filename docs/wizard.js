@@ -473,6 +473,11 @@
             for (const field of step.fields)
             {
                 fragment.appendChild(renderField(field));
+
+                if (flow.importable && stepIndex === 0 && field.header === flow.titleField)
+                {
+                    fragment.appendChild(createImportButton());
+                }
             }
 
             stepContainer.replaceChildren(fragment);
@@ -1195,6 +1200,16 @@
             case "locomotion":
                 return currentValues[key] ?? null;
 
+            case "pronunciation.ipa":
+                return currentValues.pronunciation && currentValues.pronunciation.ipa
+                    ? currentValues.pronunciation.ipa
+                    : null;
+
+            case "pronunciation.phonetic":
+                return currentValues.pronunciation && currentValues.pronunciation.phonetic
+                    ? currentValues.pronunciation.phonetic
+                    : null;
+
             case "appearance.integument":
                 return currentValues.appearance && currentValues.appearance.integument
                     ? currentValues.appearance.integument
@@ -1379,6 +1394,96 @@
         getSelectedSpecies: () => selectedSpecies,
         getFilledFields: getFilledFields,
     };
+
+    /**
+     * Creates the "Import from Wikipedia" button element with its click handler.
+     * Shows a loading spinner during fetch, then opens the import modal.
+     *
+     * @returns The button DOM element.
+     */
+    function createImportButton()
+    {
+        const button = document.createElement("button");
+
+        button.type = "button";
+        button.className = "import-btn";
+
+        const icon = document.createElement("span");
+
+        icon.className = "material-symbols-outlined";
+        icon.textContent = "download";
+
+        button.appendChild(icon);
+        button.append(" Import");
+
+        button.addEventListener(
+            "click",
+            async () =>
+            {
+                const nameInput = stepContainer.querySelector("[data-header=\"Genus name\"]");
+                const genusName = nameInput ? nameInput.value.trim() : "";
+
+                if (!genusName)
+                {
+                    const wrapper = nameInput ? nameInput.closest(".field") : null;
+                    const error = wrapper ? wrapper.querySelector(".field-error") : null;
+
+                    setFieldError(wrapper, error, "Enter a genus name before importing");
+                    return;
+                }
+
+                button.classList.add("loading");
+                button.disabled = true;
+
+                try
+                {
+                    const results = await window.Wikipedia.fetchGenus(genusName);
+
+                    window.ImportModal.show(
+                        results,
+                        (header, value) =>
+                        {
+                            setFieldValue(header, value);
+                        },
+                        genusName,
+                    );
+                }
+                catch (fetchError)
+                {
+                    console.error("Wikipedia import failed:", fetchError);
+
+                    window.ImportModal.show({}, null, genusName);
+                }
+                finally
+                {
+                    button.classList.remove("loading");
+                    button.disabled = false;
+                }
+            },
+        );
+
+        return button;
+    }
+
+    /**
+     * Sets a field value in the wizard state and updates the DOM input
+     * if the field is on the currently displayed step.
+     *
+     * @param header - The field header identifying which field to set.
+     * @param value - The value to assign.
+     */
+    function setFieldValue(header, value)
+    {
+        values[header] = value;
+
+        const input = stepContainer.querySelector(`[data-header="${header}"]`);
+
+        if (input)
+        {
+            input.value = value;
+            input.dispatchEvent(new Event("change", { bubbles: true }));
+        }
+    }
 
     /**
      * Searches all flow steps for a field definition matching the given header.
