@@ -134,13 +134,9 @@ The build script (`scripts/build.ts`) produces the following output files in `di
 
 We welcome contributions from paleontologists, enthusiasts, and anyone interested in open science. All contributions must be backed by published scientific literature.
 
-The easiest way to contribute is through our **issue forms**:
+The easiest way to contribute is through the **[contribution wizard](https://open-paleo.github.io/data/)** — a guided web form with searchable dropdowns, field validation, and pre-populated current values for update flows. The wizard builds a pre-filled GitHub issue for you; no special tools required.
 
-- **Add a new genus** — submit structured data for a genus not yet in the dataset
-- **Correct taxonomy** — propose a reclassification with supporting references
-- **Update a genus** — improve descriptions, add species, or update references
-- **Add an image** — contribute specimen photos or life reconstructions (CC BY 4.0)
-- **Report an error** — flag any factual or structural issue
+You can also use the **[issue forms](https://github.com/open-paleo/data/issues/new/choose)** directly if you prefer.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines, scientific rigor requirements, and quality standards.
 
