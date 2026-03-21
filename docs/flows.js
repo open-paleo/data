@@ -104,7 +104,7 @@ window.Flows = (function ()
                 name: "Species basics",
                 fields: [
                     { header: "Genus name", type: "search", required: true, optionsKey: "genera" },
-                    { header: "Species name", type: "text", required: true, placeholder: "e.g., Tyrannosaurus rex" },
+                    { header: "Species name", type: "text", required: true, placeholder: "e.g., Tyrannosaurus rex", validate: "newSpecies" },
                     { header: "Species etymology", type: "text", placeholder: "e.g., \"tyrant lizard king\"" },
                     { header: "Status", type: "select", required: true, optionsKey: "status" },
                     { header: "If synonym, synonym of", type: "text", required: true, placeholder: "e.g., Tyrannosaurus rex", showWhen: { field: "Status", value: "synonym" } },
