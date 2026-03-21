@@ -720,7 +720,7 @@ window.Wikipedia = (function ()
      */
     async function parseWikitext(title)
     {
-        const params = new URLSearchParams({
+        const parseParams = new URLSearchParams({
             action: "parse",
             page: title,
             prop: "wikitext|sections|text",
@@ -728,14 +728,27 @@ window.Wikipedia = (function ()
             origin: "*",
         });
 
-        const response = await fetch(`${wikipediaApiBase}?${params}`);
+        const extractParams = new URLSearchParams({
+            action: "query",
+            titles: title,
+            prop: "extracts",
+            exintro: "true",
+            explaintext: "true",
+            format: "json",
+            origin: "*",
+        });
 
-        if (!response.ok)
+        const [parseResponse, extractResponse] = await Promise.all([
+            fetch(`${wikipediaApiBase}?${parseParams}`),
+            fetch(`${wikipediaApiBase}?${extractParams}`),
+        ]);
+
+        if (!parseResponse.ok)
         {
             return null;
         }
 
-        const data = await response.json();
+        const data = await parseResponse.json();
 
         if (data.error)
         {
@@ -766,7 +779,26 @@ window.Wikipedia = (function ()
             );
         }
 
-        result.summary = extractSummary(wikitext);
+        if (extractResponse.ok)
+        {
+            const extractData = await extractResponse.json();
+            const pages = extractData.query?.pages ?? {};
+            const pageId = Object.keys(pages)[0];
+
+            const extract = pages[pageId]?.extract ?? "";
+            const firstParagraph = extract.split("\n")[0] ?? "";
+
+            result.summary = firstParagraph
+                .replace(/\s*\(\s*\)\s*/g, " ")
+                .replace(/\s{2,}/g, " ")
+                .trim();
+        }
+
+        if (!result.summary)
+        {
+            result.summary = extractSummary(wikitext);
+        }
+
         result.etymology = extractEtymology(wikitext, data.parse?.sections ?? []);
         result.ipa = extractIpa(data.parse?.text?.["*"] ?? "");
 
