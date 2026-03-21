@@ -166,7 +166,7 @@ const allowedIntegument = new Set(schema.integument ?? []);
 const allowedIntegumentEvidence = new Set(schema.integument_evidence ?? []);
 const allowedPaleoenvironments = new Set(schema.paleoenvironments ?? []);
 const allowedIdentifierSources = new Set(schema.identifier_sources ?? []);
-const allowedCountries = new Set(schema.countries ?? []);
+const allowedCountries = new Set(Object.keys(schema.countries ?? {}));
 const stages: Record<string, StageInfo> = schema.stages ?? {};
 
 const genusFiles = findYamlFiles(path.join(root, "genera"));

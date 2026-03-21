@@ -78,15 +78,16 @@ window.ImportModal = (function ()
             row.querySelector(".import-row-field").textContent = header;
 
             const valueSpan = row.querySelector(".import-row-value");
-            const displayValue = entry.value.length > maxPreviewLength
-                ? entry.value.slice(0, maxPreviewLength) + "\u2026"
-                : entry.value;
+            const fullDisplay = entry.displayValue ?? entry.value;
+            const displayValue = fullDisplay.length > maxPreviewLength
+                ? fullDisplay.slice(0, maxPreviewLength) + "\u2026"
+                : fullDisplay;
 
             valueSpan.textContent = displayValue;
 
-            if (entry.value.length > maxPreviewLength)
+            if (fullDisplay.length > maxPreviewLength)
             {
-                valueSpan.title = entry.value;
+                valueSpan.title = fullDisplay;
                 valueSpan.classList.add("truncated");
 
                 valueSpan.addEventListener(
@@ -100,7 +101,7 @@ window.ImportModal = (function ()
                         }
                         else
                         {
-                            valueSpan.textContent = entry.value;
+                            valueSpan.textContent = fullDisplay;
                             valueSpan.classList.add("expanded");
                         }
                     },

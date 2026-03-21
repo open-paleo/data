@@ -409,7 +409,7 @@ const schemaOutput: Record<string, unknown> = {};
 const arrayKeys = [
     "status", "diet", "locomotion", "completeness",
     "integument", "integument_evidence", "paleoenvironments",
-    "periods", "countries", "identifier_sources",
+    "periods", "identifier_sources",
 ];
 
 for (const key of arrayKeys)
@@ -420,6 +420,17 @@ for (const key of arrayKeys)
         schemaOutput[key] = [...value].sort();
     }
 }
+
+// Countries as code→name map (sorted by code)
+const countriesMap = (schema.countries ?? {}) as Record<string, string>;
+const sortedCountries: Record<string, string> = {};
+
+for (const code of Object.keys(countriesMap).sort())
+{
+    sortedCountries[code] = countriesMap[code];
+}
+
+schemaOutput.countries = sortedCountries;
 
 // Stages as full object (needed for period→stage filtering)
 schemaOutput.stages = schema.stages;
