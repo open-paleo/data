@@ -366,9 +366,30 @@
 
             case "newGenus":
             {
-                if (window.OpenPaleo.getGenus(String(value).trim()))
+                const genusName = String(value).trim().toLowerCase();
+                const match = Object.keys(window.OpenPaleo.getGenera())
+                    .find((key) => key.toLowerCase() === genusName);
+
+                if (match)
                 {
-                    return `"${value}" already exists in the dataset — use the Update Genus flow instead`;
+                    return `"${match}" already exists in the dataset — use the Update Genus flow instead`;
+                }
+
+                return null;
+            }
+
+            case "newSpecies":
+            {
+                const speciesName = String(value).trim().toLowerCase();
+                const genusName = String(values["Genus name"] ?? "").trim();
+                const existing = window.OpenPaleo.getSpecies(genusName);
+                const match = existing.find(
+                    (entry) => entry.name.toLowerCase() === speciesName,
+                );
+
+                if (match)
+                {
+                    return `"${match.name}" already exists under ${genusName} — use the Update Species flow instead`;
                 }
 
                 return null;
