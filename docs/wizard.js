@@ -262,11 +262,11 @@
 
             if (!isEmpty && field.validate)
             {
-                const error = validateFieldValue(field.validate, fieldValue);
+                const validationError = validateFieldValue(field.validate, fieldValue);
 
-                if (error)
+                if (validationError)
                 {
-                    setFieldError(wrapper, error, error);
+                    setFieldError(wrapper, error, validationError);
                     valid = false;
                     continue;
                 }
@@ -1492,6 +1492,7 @@
                     return;
                 }
 
+                icon.textContent = "progress_activity";
                 button.classList.add("loading");
                 button.disabled = true;
 
@@ -1516,6 +1517,7 @@
                 }
                 finally
                 {
+                    icon.textContent = "download";
                     button.classList.remove("loading");
                     button.disabled = false;
                 }
