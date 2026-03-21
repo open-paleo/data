@@ -189,8 +189,8 @@ body:
     id: country
     attributes:
       label: Country
-      description: Country where the type specimen was found
-      placeholder: e.g., United States
+      description: ISO 3166-1 alpha-2 country code where the type specimen was found
+      placeholder: e.g., US
     validations:
       required: true
 

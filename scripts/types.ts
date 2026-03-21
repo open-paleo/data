@@ -512,9 +512,9 @@ export type Schema = {
     stages?: Record<string, StageInfo>;
 
     /**
-     * Allowed country names for location validation.
+     * Allowed country codes (ISO 3166-1 alpha-2) mapped to display names.
      */
-    countries?: Array<string>;
+    countries?: Record<string, string>;
 };
 
 /**

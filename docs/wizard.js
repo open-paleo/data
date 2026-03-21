@@ -525,7 +525,10 @@
                 const hint = document.createElement("span");
 
                 hint.className = "current-value";
-                hint.textContent = `Current: ${currentValue}`;
+                const displayHint = field.optionsKey === "countries"
+                    ? countryDisplayName(currentValue)
+                    : currentValue;
+                hint.textContent = `Current: ${displayHint}`;
 
                 wrapper.querySelector("label").after(hint);
             }
@@ -692,6 +695,12 @@
             case "_species":
                 return [];
 
+            case "countries":
+            {
+                const map = window.OpenPaleo.getSchemaValues("countries") ?? {};
+                return Object.values(map).sort();
+            }
+
             case "stages":
             {
                 if (field.filteredByPeriod)
@@ -711,6 +720,45 @@
         }
 
         return window.OpenPaleo.getSchemaValues(field.optionsKey);
+    }
+
+    /**
+     * Returns a display-name-to-stored-value mapping for fields where
+     * the displayed option differs from the persisted value (e.g. countries
+     * show full names but store ISO codes). Returns null for fields where
+     * display and stored values are identical.
+     *
+     * @param field - The field definition.
+     * @returns A map of display name to stored value, or null.
+     */
+    function getFieldValueMap(field)
+    {
+        if (field.optionsKey === "countries")
+        {
+            const map = window.OpenPaleo.getSchemaValues("countries") ?? {};
+            const result = {};
+
+            for (const [code, name] of Object.entries(map))
+            {
+                result[name] = code;
+            }
+
+            return result;
+        }
+
+        return null;
+    }
+
+    /**
+     * Resolves an ISO country code to its display name using the schema.
+     *
+     * @param code - The ISO 3166-1 alpha-2 country code.
+     * @returns The country display name, or the code itself if not found.
+     */
+    function countryDisplayName(code)
+    {
+        const map = window.OpenPaleo.getSchemaValues("countries") ?? {};
+        return map[code] ?? code;
     }
 
     /**
@@ -754,7 +802,9 @@
 
                 if (fieldInput)
                 {
-                    fieldInput.value = saved;
+                    fieldInput.value = field.optionsKey === "countries"
+                        ? countryDisplayName(saved)
+                        : saved;
                 }
             }
         }
@@ -780,6 +830,7 @@
             }
 
             const allOptions = getFieldOptions(field);
+            const valueMap = getFieldValueMap(field);
             let activeIndex = -1;
 
             /**
@@ -820,14 +871,16 @@
 
             /**
              * Selects a value from the dropdown, updating the input and
-             * closing the list.
+             * closing the list. When a valueMap exists (e.g. countries),
+             * the input shows the display name but the stored value is
+             * the mapped code.
              *
-             * @param value - The selected option string.
+             * @param displayValue - The displayed option string.
              */
-            function selectOption(value)
+            function selectOption(displayValue)
             {
-                input.value = value;
-                values[header] = value;
+                input.value = displayValue;
+                values[header] = valueMap ? (valueMap[displayValue] ?? displayValue) : displayValue;
                 list.classList.remove("open");
                 input.setAttribute("aria-expanded", "false");
                 input.dispatchEvent(new Event("change", { bubbles: true }));
@@ -1360,13 +1413,20 @@
                     continue;
                 }
 
-                const display = Array.isArray(fieldValue) ? fieldValue.join(", ") : fieldValue;
+                let display = Array.isArray(fieldValue) ? fieldValue.join(", ") : fieldValue;
+
+                if (field.optionsKey === "countries")
+                {
+                    display = countryDisplayName(fieldValue);
+                }
+
                 let changed = false;
 
                 if (isUpdate && field.currentKey)
                 {
                     const currentValueText = getCurrentValue(field.currentKey) ?? "";
-                    changed = display !== currentValueText;
+                    const compareValue = Array.isArray(fieldValue) ? fieldValue.join(", ") : String(fieldValue);
+                    changed = compareValue !== currentValueText;
 
                     if (!changed)
                     {
@@ -1480,7 +1540,10 @@
 
         if (input)
         {
-            input.value = value;
+            const field = findFieldDefinition(header);
+            input.value = field && field.optionsKey === "countries"
+                ? countryDisplayName(value)
+                : value;
             input.dispatchEvent(new Event("change", { bubbles: true }));
         }
     }

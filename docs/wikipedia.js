@@ -14,22 +14,6 @@ window.Wikipedia = (function ()
     const wikipediaApiBase = "https://en.wikipedia.org/w/api.php";
 
     /**
-     * ISO 3166-1 alpha-2 country codes mapped to full country names used
-     * in the schema. Only countries present in the schema are included.
-     */
-    const countryCodes = {
-        AR: "Argentina", AU: "Australia", BE: "Belgium", BR: "Brazil",
-        CA: "Canada", CN: "China", EG: "Egypt", FR: "France",
-        DE: "Germany", IN: "India", JP: "Japan", MG: "Madagascar",
-        MA: "Morocco", MN: "Mongolia", NZ: "New Zealand", NE: "Niger",
-        PL: "Poland", PT: "Portugal", RO: "Romania", RU: "Russia",
-        ZA: "South Africa", KR: "South Korea", ES: "Spain",
-        TZ: "Tanzania", TH: "Thailand", GB: "United Kingdom",
-        US: "United States", UY: "Uruguay", UZ: "Uzbekistan",
-        ZW: "Zimbabwe",
-    };
-
-    /**
      * Orchestrates PBDB, Wikipedia, and Wikidata API calls in parallel to
      * extract genus data, returning a results object keyed by wizard field
      * header. PBDB results are mapped first; Wikipedia and Wikidata fill gaps.
@@ -317,13 +301,13 @@ window.Wikipedia = (function ()
 
         if (pbdb.country)
         {
-            const country = countryCodes[pbdb.country];
-            const matched = country ? matchCountry(country) : null;
+            const countries = window.OpenPaleo.getSchemaValues("countries") ?? {};
 
-            if (matched)
+            if (countries[pbdb.country])
             {
                 results["Country"] = {
-                    value: matched,
+                    value: pbdb.country,
+                    displayValue: countries[pbdb.country],
                     source: "PBDB",
                     fieldType: "search",
                 };
@@ -430,8 +414,11 @@ window.Wikipedia = (function ()
 
             if (country)
             {
+                const countries = window.OpenPaleo.getSchemaValues("countries") ?? {};
+
                 results["Country"] = {
                     value: country,
+                    displayValue: countries[country] ?? country,
                     source: "Wikipedia",
                     fieldType: "search",
                 };
@@ -1191,21 +1178,22 @@ window.Wikipedia = (function ()
     }
 
     /**
-     * Matches a country name to a known country in the schema.
+     * Matches a country name to a known country in the schema and returns
+     * its ISO 3166-1 alpha-2 code.
      *
      * @param country - The country text to match.
-     * @returns The matching schema country, or null.
+     * @returns The matching ISO country code, or null.
      */
     function matchCountry(country)
     {
-        const countries = window.OpenPaleo.getSchemaValues("countries");
+        const countries = window.OpenPaleo.getSchemaValues("countries") ?? {};
         const lowerCountry = country.toLowerCase();
 
-        for (const known of countries)
+        for (const [code, name] of Object.entries(countries))
         {
-            if (lowerCountry.includes(known.toLowerCase()))
+            if (lowerCountry.includes(name.toLowerCase()))
             {
-                return known;
+                return code;
             }
         }
 
