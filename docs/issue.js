@@ -203,19 +203,20 @@ window.IssueBuilder = (function ()
     }
 
     /**
-     * Removes internal keys (prefixed with underscore) from a data object
-     * so it can be serialized cleanly.
+     * Removes internal keys (prefixed with underscore) and build-computed
+     * keys from a data object so it can be serialized cleanly.
      *
      * @param data - The data object to clean.
-     * @returns A new object without internal keys.
+     * @returns A new object without internal or computed keys.
      */
     function stripInternalKeys(data)
     {
+        const computedKeys = new Set(["taxonomy"]);
         const result = {};
 
         for (const key of Object.keys(data))
         {
-            if (!key.startsWith("_"))
+            if (!key.startsWith("_") && !computedKeys.has(key))
             {
                 result[key] = data[key];
             }
