@@ -36,16 +36,5 @@ jobs:
       - name: Validate data
         run: npm run validate
 
-      - name: Sync issue form dropdowns
-        run: |
-          npm run sync-forms
-          if [ -n "$(git status --porcelain .github/ISSUE_TEMPLATE/)" ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add .github/ISSUE_TEMPLATE/
-            git commit -m "chore: sync issue form dropdowns"
-            git push
-          fi
-
       - name: Spell check
         run: npx cspell "genera/**/*.yml" "clades/**/*.yml" --no-progress

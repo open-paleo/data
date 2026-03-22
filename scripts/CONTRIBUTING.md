@@ -31,7 +31,6 @@ npm install
 | ------------------------ | ----------------------------- | ---------------------------------------------- |
 | `validate.ts`            | `npm run validate`            | Validate all YAML data against schema and tree |
 | `build.ts`               | `npm run build`               | Produce output files in `dist/`                |
-| `sync-forms.ts`          | `npm run sync-forms`          | Sync issue form dropdowns with schema/tree     |
 | `generate-dictionary.ts` | `npm run generate-dictionary` | Generate spell check dictionary                |
 | `utilities.ts`           | —                             | Shared helper functions imported by scripts    |
 | —                        | `npm run preview`             | Build and serve the contribution wizard locally |
