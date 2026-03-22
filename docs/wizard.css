@@ -369,6 +369,303 @@ body {
     background: #3a6b1e;
 }
 
+/* YAML preview */
+
+.yaml-preview {
+    margin-top: 1rem;
+}
+
+.yaml-preview summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: #2d5016;
+    font-size: 0.9rem;
+}
+
+.yaml-preview pre {
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+    background: #f6f8fa;
+    border: 1px solid #d0d7de;
+    border-radius: 4px;
+    overflow-x: auto;
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+.yaml-preview code {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+.diff-add {
+    color: #1a7f37;
+    background: #dafbe1;
+    display: inline-block;
+    width: 100%;
+}
+
+.diff-remove {
+    color: #cf222e;
+    background: #ffebe9;
+    display: inline-block;
+    width: 100%;
+}
+
+/* Reference editor */
+
+.reference-editor {
+    width: 100%;
+}
+
+.reference-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.reference-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 0.6rem 0.75rem;
+    background: #f6f8fa;
+    border: 1px solid #d0d7de;
+    border-radius: 4px;
+}
+
+.reference-card-info {
+    flex: 1;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    min-width: 0;
+}
+
+.reference-card-authors {
+    font-weight: 600;
+}
+
+.reference-card-title {
+    color: #555;
+    font-style: italic;
+}
+
+.reference-card-actions {
+    display: flex;
+    gap: 0.25rem;
+    flex-shrink: 0;
+}
+
+.reference-card-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.15rem;
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1;
+    border-radius: 4px;
+}
+
+.reference-card-actions button:hover {
+    color: #1a1a1a;
+    background: #e0e0e0;
+}
+
+.reference-form {
+    border: 1px solid #d0d7de;
+    border-radius: 4px;
+    padding: 1rem;
+    background: #fafbfc;
+    margin-bottom: 0.75rem;
+}
+
+.reference-form .reference-doi-row {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.reference-form .reference-doi-row input {
+    flex: 1;
+    padding: 0.4rem 0.5rem;
+    font: inherit;
+    font-size: 0.85rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.reference-form .reference-doi-row input:focus {
+    outline: 2px solid #2d5016;
+    outline-offset: -1px;
+    border-color: #2d5016;
+}
+
+.reference-doi-import {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.4rem 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    background: #2d5016;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.reference-doi-import:hover {
+    background: #3d6b1e;
+}
+
+.reference-doi-import:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.reference-doi-import .material-symbols-outlined {
+    font-size: 1rem;
+}
+
+.reference-doi-error {
+    font-size: 0.8rem;
+    color: #c00;
+    margin-top: 0.35rem;
+}
+
+.reference-form .reference-field {
+    margin-bottom: 0.6rem;
+}
+
+.reference-form .reference-field label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+    color: #333;
+}
+
+.reference-form .reference-field label .required-mark {
+    color: #c00;
+}
+
+.reference-form .reference-field input,
+.reference-form .reference-field textarea {
+    width: 100%;
+    padding: 0.4rem 0.5rem;
+    font: inherit;
+    font-size: 0.85rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.reference-form .reference-field input:focus,
+.reference-form .reference-field textarea:focus {
+    outline: 2px solid #2d5016;
+    outline-offset: -1px;
+    border-color: #2d5016;
+}
+
+.reference-form .reference-field textarea {
+    min-height: 50px;
+    resize: vertical;
+}
+
+.reference-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.reference-optional-toggle {
+    display: inline-block;
+    font-size: 0.8rem;
+    color: #2d5016;
+    cursor: pointer;
+    margin: 0.25rem 0 0.5rem;
+    background: none;
+    border: none;
+    font: inherit;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0;
+}
+
+.reference-optional-toggle:hover {
+    text-decoration: underline;
+}
+
+.reference-optional-fields {
+    display: none;
+}
+
+.reference-optional-fields.visible {
+    display: block;
+}
+
+.reference-form-actions {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+    margin-top: 0.75rem;
+}
+
+.reference-form-actions button {
+    padding: 0.4rem 1rem;
+    font: inherit;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.reference-save {
+    background: #2d5016;
+    color: #fff;
+    border: none;
+}
+
+.reference-save:hover {
+    background: #3d6b1e;
+}
+
+.reference-cancel {
+    background: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.reference-cancel:hover {
+    background: #f0f0f0;
+}
+
+.reference-add-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.4rem 0.75rem;
+    font: inherit;
+    font-size: 0.8rem;
+    font-weight: 500;
+    background: #fff;
+    color: #2d5016;
+    border: 1px solid #2d5016;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.reference-add-button:hover {
+    background: #f0f5ec;
+}
+
+.reference-add-button .material-symbols-outlined {
+    font-size: 1rem;
+}
+
 /* Import from Wikipedia */
 
 .import-btn {

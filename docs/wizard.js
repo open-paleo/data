@@ -102,7 +102,9 @@
             selectedSpecies = null;
             landing.hidden = true;
             wizardSection.hidden = false;
+
             renderStep();
+
             pushState();
         }
     }
@@ -136,8 +138,7 @@
                     pushState();
                 }
             }
-        },
-    );
+        });
 
     // History management
 
@@ -203,7 +204,11 @@
 
             for (const field of step.fields)
             {
-                if (field.type === "checkboxes")
+                if (field.type === "references" || field.type === "readonly")
+                {
+                    continue;
+                }
+                else if (field.type === "checkboxes")
                 {
                     const checked = Array
                         .from(stepContainer.querySelectorAll(`input[data-header="${field.header}"]`))
@@ -212,7 +217,7 @@
 
                     values[field.header] = checked.length > 0 ? checked : "";
                 }
-                else if (field.type !== "readonly")
+                else
                 {
                     const input = stepContainer.querySelector(`[data-header="${field.header}"]`);
 
@@ -546,9 +551,11 @@
                 const hint = document.createElement("span");
 
                 hint.className = "current-value";
+
                 const displayHint = field.optionsKey === "countries"
                     ? countryDisplayName(currentValue)
                     : currentValue;
+
                 hint.textContent = `Current: ${displayHint}`;
 
                 wrapper.querySelector("label").after(hint);
@@ -589,7 +596,8 @@
 
     /**
      * Creates the input element for a form field based on its type
-     * (text, number, textarea, select, search, checkboxes, or readonly).
+     * (text, number, textarea, select, search, checkboxes, references,
+     * or readonly).
      *
      * @param field - The field definition from the flow.
      * @returns The created DOM element.
@@ -681,6 +689,45 @@
                 return group;
             }
 
+            case "references":
+            {
+                const editor = document.createElement("div");
+                editor.className = "reference-editor";
+                editor.dataset.header = field.header;
+
+                const list = document.createElement("div");
+                list.className = "reference-list";
+                editor.appendChild(list);
+
+                if (!Array.isArray(values[field.header]))
+                {
+                    values[field.header] = [];
+                }
+
+                const addButton = document.createElement("button");
+                addButton.type = "button";
+                addButton.className = "reference-add-button";
+
+                const addIcon = document.createElement("span");
+                addIcon.className = "material-symbols-outlined";
+                addIcon.textContent = "add";
+
+                addButton.appendChild(addIcon);
+                addButton.append("Add Reference");
+
+                addButton.addEventListener(
+                    "click",
+                    () =>
+                    {
+                        addButton.style.display = "none";
+                        renderReferenceForm(editor, field, null, null, addButton);
+                    });
+
+                editor.appendChild(addButton);
+
+                return editor;
+            }
+
             case "readonly":
             {
                 const div = document.createElement("div");
@@ -696,6 +743,651 @@
         }
 
         return document.createElement("div");
+    }
+
+    /**
+     * Generates a citation ID from the first author's surname and the year.
+     * Deduplicates by appending letter suffixes (b, c, d, ...) if the ID
+     * already exists in the references array.
+     *
+     * @param authors - The authors string (e.g., "Osborn, H.F.").
+     * @param year - The publication year.
+     * @param existingReferences - The current references array.
+     * @param editIndex - Index being edited (excluded from dedup check), or null.
+     * @returns A unique citation ID string (e.g., "osborn1905").
+     */
+    function generateReferenceId(authors, year, existingReferences, editIndex)
+    {
+        const surname = (authors ?? "").split(",")[0].split(";")[0].trim().toLowerCase().replace(/\s+/g, "");
+        const base = `${surname}${year ?? ""}`;
+
+        if (!base)
+        {
+            return "";
+        }
+
+        const existingIds = existingReferences
+            .filter((_, index) => index !== editIndex)
+            .map((reference) => reference.id);
+
+        if (!existingIds.includes(base))
+        {
+            return base;
+        }
+
+        const suffixes = "bcdefghijklmnopqrstuvwxyz";
+
+        for (const suffix of suffixes)
+        {
+            const candidate = `${base}${suffix}`;
+
+            if (!existingIds.includes(candidate))
+            {
+                return candidate;
+            }
+        }
+
+        return base;
+    }
+
+    /**
+     * Formats a CSL-JSON author array into the Open Paleo author string
+     * format: "Surname, I.; Surname, I.".
+     *
+     * @param authors - Array of CSL author objects with family/given fields.
+     * @returns Formatted author string.
+     */
+    function formatCslAuthors(authors)
+    {
+        if (!Array.isArray(authors))
+        {
+            return "";
+        }
+
+        return authors.map(
+            (author) =>
+            {
+                const family = author.family ?? "";
+                const given = author.given ?? "";
+
+                const initials = given
+                    .split(/[\s.-]+/)
+                    .filter((part) => part.length > 0)
+                    .map((part) => `${part.charAt(0)}.`)
+                    .join("");
+
+                return initials ? `${family}, ${initials}` : family;
+            },
+        ).join("; ");
+    }
+
+    /**
+     * Fetches reference metadata from the doi.org content negotiation API.
+     *
+     * @param doi - The DOI string (e.g., "10.1126/science.1193304").
+     * @returns A reference object with populated fields, or null on failure.
+     */
+    async function fetchDoiMetadata(doi)
+    {
+        const cleanDoi = doi.trim().replace(/^https?:\/\/doi\.org\//i, "");
+
+        const response = await fetch(
+            `https://doi.org/${encodeURIComponent(cleanDoi)}`,
+            {
+                headers: { "Accept": "application/citeproc+json" },
+                redirect: "follow",
+            });
+
+        if (!response.ok)
+        {
+            return null;
+        }
+
+        const data = await response.json();
+        const reference = {};
+
+        if (data.author)
+        {
+            reference.authors = formatCslAuthors(data.author);
+        }
+
+        if (data.issued && data.issued["date-parts"] && data.issued["date-parts"][0])
+        {
+            reference.year = String(data.issued["date-parts"][0][0]);
+        }
+
+        if (data.title)
+        {
+            reference.title = Array.isArray(data.title) ? data.title[0] : data.title;
+        }
+
+        if (data["container-title"])
+        {
+            reference.journal = Array.isArray(data["container-title"])
+                ? data["container-title"][0]
+                : data["container-title"];
+        }
+
+        if (data.volume)
+        {
+            reference.volume = String(data.volume);
+        }
+
+        if (data.issue)
+        {
+            reference.issue = String(data.issue);
+        }
+
+        if (data.page)
+        {
+            reference.pages = data.page;
+        }
+
+        if (data.DOI)
+        {
+            reference.doi = data.DOI;
+        }
+
+        if (data.publisher)
+        {
+            reference.publisher = data.publisher;
+        }
+
+        if (data.ISBN)
+        {
+            reference.isbn = Array.isArray(data.ISBN) ? data.ISBN[0] : data.ISBN;
+        }
+
+        if (data.URL)
+        {
+            reference.url = data.URL;
+        }
+
+        return reference;
+    }
+
+    /**
+     * Renders a single reference card showing author, year, and title
+     * with edit and remove action buttons.
+     *
+     * @param reference - The reference object to display.
+     * @param index - The index of this reference in the values array.
+     * @param editor - The .reference-editor container element.
+     * @param field - The field definition.
+     * @param addButton - The "Add Reference" button element.
+     * @returns The card DOM element.
+     */
+    function renderReferenceCard(reference, index, editor, field, addButton)
+    {
+        const card = document.createElement("div");
+        card.className = "reference-card";
+
+        const info = document.createElement("div");
+        info.className = "reference-card-info";
+
+        const authors = document.createElement("span");
+        authors.className = "reference-card-authors";
+        authors.textContent = `${reference.authors ?? "Unknown"} (${reference.year ?? "?"})`;
+
+        info.appendChild(authors);
+        info.appendChild(document.createTextNode(" \u2014 "));
+
+        const title = document.createElement("span");
+        title.className = "reference-card-title";
+        title.textContent = reference.title ?? "";
+
+        info.appendChild(title);
+
+        card.appendChild(info);
+
+        const actions = document.createElement("div");
+        actions.className = "reference-card-actions";
+
+        const editButton = document.createElement("button");
+        editButton.type = "button";
+        editButton.title = "Edit";
+
+        const editIcon = document.createElement("span");
+        editIcon.className = "material-symbols-outlined";
+        editIcon.textContent = "edit";
+
+        editButton.appendChild(editIcon);
+        editButton.addEventListener(
+            "click",
+            () =>
+            {
+                addButton.style.display = "none";
+                card.style.display = "none";
+                renderReferenceForm(editor, field, reference, index, addButton);
+            });
+
+        const removeButton = document.createElement("button");
+        removeButton.type = "button";
+        removeButton.title = "Remove";
+
+        const removeIcon = document.createElement("span");
+        removeIcon.className = "material-symbols-outlined";
+        removeIcon.textContent = "close";
+        removeButton.appendChild(removeIcon);
+
+        removeButton.addEventListener(
+            "click",
+            () =>
+            {
+                values[field.header].splice(index, 1);
+                renderReferenceCards(editor, field, addButton);
+            });
+
+        actions.appendChild(editButton);
+        actions.appendChild(removeButton);
+
+        card.appendChild(actions);
+
+        return card;
+    }
+
+    /**
+     * Re-renders all reference cards in the editor from the current
+     * values array.
+     *
+     * @param editor - The .reference-editor container element.
+     * @param field - The field definition.
+     * @param addButton - The "Add Reference" button element.
+     */
+    function renderReferenceCards(editor, field, addButton)
+    {
+        const list = editor.querySelector(".reference-list");
+        list.replaceChildren();
+
+        const references = values[field.header] ?? [];
+
+        for (let index = 0; index < references.length; index++)
+        {
+            list.appendChild(renderReferenceCard(references[index], index, editor, field, addButton));
+        }
+
+        addButton.style.display = "";
+    }
+
+    /**
+     * Creates a labeled input field for the reference form.
+     *
+     * @param labelText - The label text.
+     * @param placeholder - Placeholder text for the input.
+     * @param inputValue - The initial value.
+     * @param required - Whether to show a required mark.
+     * @param inputType - The input element type ("input" or "textarea").
+     * @returns An object with { container, input } DOM elements.
+     */
+    function createReferenceField(labelText, placeholder, inputValue, required, inputType)
+    {
+        const container = document.createElement("div");
+        container.className = "reference-field";
+
+        const label = document.createElement("label");
+        label.textContent = labelText;
+
+        if (required)
+        {
+            const mark = document.createElement("span");
+            mark.className = "required-mark";
+            mark.textContent = " *";
+            label.appendChild(mark);
+        }
+
+        container.appendChild(label);
+
+        const input = document.createElement(inputType ?? "input");
+
+        if (input.tagName === "INPUT")
+        {
+            input.type = "text";
+        }
+
+        if (placeholder)
+        {
+            input.placeholder = placeholder;
+        }
+
+        if (inputValue)
+        {
+            input.value = inputValue;
+        }
+
+        container.appendChild(input);
+
+        return { container: container, input: input };
+    }
+
+    /**
+     * Renders the inline reference form for adding or editing a reference.
+     * Includes DOI import, required fields, and a toggleable section for
+     * optional fields.
+     *
+     * @param editor - The .reference-editor container element.
+     * @param field - The field definition.
+     * @param existing - The existing reference object when editing, or null.
+     * @param editIndex - The index of the reference being edited, or null.
+     * @param addButton - The "Add Reference" button element.
+     */
+    function renderReferenceForm(editor, field, existing, editIndex, addButton)
+    {
+        const form = document.createElement("div");
+        form.className = "reference-form";
+
+        // DOI import row
+        const doiRow = document.createElement("div");
+        doiRow.className = "reference-doi-row";
+
+        const doiInput = document.createElement("input");
+        doiInput.type = "text";
+        doiInput.placeholder = "Paste a DOI to auto-fill (e.g., 10.1126/science.1193304)";
+
+        if (existing && existing.doi)
+        {
+            doiInput.value = existing.doi;
+        }
+
+        doiRow.appendChild(doiInput);
+
+        const doiButton = document.createElement("button");
+        doiButton.type = "button";
+        doiButton.className = "reference-doi-import";
+
+        const doiIcon = document.createElement("span");
+        doiIcon.className = "material-symbols-outlined";
+        doiIcon.textContent = "download";
+        doiButton.appendChild(doiIcon);
+        doiButton.append("Import");
+
+        doiRow.appendChild(doiButton);
+        form.appendChild(doiRow);
+
+        const doiError = document.createElement("div");
+        doiError.className = "reference-doi-error";
+        doiError.style.display = "none";
+        form.insertBefore(doiError, doiRow.nextSibling);
+
+        // Required fields
+        const authorsField = createReferenceField("Authors", "e.g., Osborn, H.F.", existing?.authors, true);
+        const yearField = createReferenceField("Year", "e.g., 1905", existing?.year, true);
+        const titleField = createReferenceField("Title", "e.g., Tyrannosaurus and other Cretaceous carnivorous dinosaurs", existing?.title, true);
+
+        form.appendChild(authorsField.container);
+
+        const yearTitleRow = document.createElement("div");
+        yearTitleRow.className = "reference-form-row";
+        yearTitleRow.appendChild(yearField.container);
+
+        form.appendChild(yearTitleRow);
+        form.appendChild(titleField.container);
+
+        // Optional fields toggle
+        const toggle = document.createElement("button");
+        toggle.type = "button";
+        toggle.className = "reference-optional-toggle";
+        toggle.textContent = "\u25B6 Show more fields";
+        form.appendChild(toggle);
+
+        const optionalSection = document.createElement("div");
+        optionalSection.className = "reference-optional-fields";
+
+        const journalField = createReferenceField("Journal", "e.g., Bulletin of the AMNH", existing?.journal);
+        const bookField = createReferenceField("Book", "", existing?.book);
+        const publisherField = createReferenceField("Publisher", "", existing?.publisher);
+        const volumeField = createReferenceField("Volume", "", existing?.volume);
+        const issueField = createReferenceField("Issue", "", existing?.issue);
+        const pagesField = createReferenceField("Pages", "e.g., 259-265", existing?.pages);
+        const doiFieldInput = createReferenceField("DOI", "e.g., 10.1126/science.1193304", existing?.doi);
+        const isbnField = createReferenceField("ISBN", "", existing?.isbn);
+        const urlField = createReferenceField("URL", "", existing?.url);
+        const notesField = createReferenceField("Notes", "", existing?.notes, false, "textarea");
+
+        optionalSection.appendChild(journalField.container);
+
+        const volumeIssueRow = document.createElement("div");
+        volumeIssueRow.className = "reference-form-row";
+        volumeIssueRow.appendChild(volumeField.container);
+        volumeIssueRow.appendChild(issueField.container);
+        optionalSection.appendChild(volumeIssueRow);
+
+        optionalSection.appendChild(pagesField.container);
+        optionalSection.appendChild(bookField.container);
+        optionalSection.appendChild(publisherField.container);
+        optionalSection.appendChild(doiFieldInput.container);
+        optionalSection.appendChild(isbnField.container);
+        optionalSection.appendChild(urlField.container);
+        optionalSection.appendChild(notesField.container);
+
+        form.appendChild(optionalSection);
+
+        // Show optional fields if any are populated
+        const hasOptionalValues = existing && (
+            existing.journal || existing.book || existing.publisher ||
+            existing.volume || existing.issue || existing.pages ||
+            existing.doi || existing.isbn || existing.url || existing.notes
+        );
+
+        if (hasOptionalValues)
+        {
+            optionalSection.classList.add("visible");
+            toggle.textContent = "\u25BC Hide extra fields";
+        }
+
+        toggle.addEventListener(
+            "click",
+            () =>
+            {
+                const visible = optionalSection.classList.toggle("visible");
+                toggle.textContent = visible ? "\u25BC Hide extra fields" : "\u25B6 Show more fields";
+            },
+        );
+
+        // DOI import handler
+        doiButton.addEventListener(
+            "click",
+            async () =>
+            {
+                const doi = doiInput.value.trim();
+
+                if (!doi)
+                {
+                    return;
+                }
+
+                doiError.style.display = "none";
+                doiIcon.textContent = "progress_activity";
+                doiButton.disabled = true;
+
+                try
+                {
+                    const metadata = await fetchDoiMetadata(doi);
+
+                    if (!metadata)
+                    {
+                        doiError.textContent = "Could not fetch metadata for this DOI.";
+                        doiError.style.display = "";
+                        return;
+                    }
+
+                    if (metadata.authors)
+                    {
+                        authorsField.input.value = metadata.authors;
+                    }
+
+                    if (metadata.year)
+                    {
+                        yearField.input.value = metadata.year;
+                    }
+
+                    if (metadata.title)
+                    {
+                        titleField.input.value = metadata.title;
+                    }
+
+                    if (metadata.journal)
+                    {
+                        journalField.input.value = metadata.journal;
+                    }
+
+                    if (metadata.volume)
+                    {
+                        volumeField.input.value = metadata.volume;
+                    }
+
+                    if (metadata.issue)
+                    {
+                        issueField.input.value = metadata.issue;
+                    }
+
+                    if (metadata.pages)
+                    {
+                        pagesField.input.value = metadata.pages;
+                    }
+
+                    if (metadata.doi)
+                    {
+                        doiFieldInput.input.value = metadata.doi;
+                    }
+
+                    if (metadata.publisher)
+                    {
+                        publisherField.input.value = metadata.publisher;
+                    }
+
+                    if (metadata.isbn)
+                    {
+                        isbnField.input.value = metadata.isbn;
+                    }
+
+                    if (metadata.url)
+                    {
+                        urlField.input.value = metadata.url;
+                    }
+
+                    // Show optional fields if DOI populated them
+                    if (!optionalSection.classList.contains("visible"))
+                    {
+                        if (metadata.journal || metadata.volume || metadata.issue ||
+                            metadata.pages || metadata.doi || metadata.publisher)
+                        {
+                            optionalSection.classList.add("visible");
+                            toggle.textContent = "\u25BC Hide extra fields";
+                        }
+                    }
+                }
+                catch
+                {
+                    doiError.textContent = "Failed to fetch DOI metadata. Check the DOI and try again.";
+                    doiError.style.display = "";
+                }
+                finally
+                {
+                    doiIcon.textContent = "download";
+                    doiButton.disabled = false;
+                }
+            });
+
+        // Actions
+        const actions = document.createElement("div");
+        actions.className = "reference-form-actions";
+
+        const cancelButton = document.createElement("button");
+        cancelButton.type = "button";
+        cancelButton.className = "reference-cancel";
+        cancelButton.textContent = "Cancel";
+
+        cancelButton.addEventListener(
+            "click",
+            () =>
+            {
+                form.remove();
+
+                if (editIndex !== null)
+                {
+                    const cards = editor.querySelector(".reference-list").children;
+
+                    if (cards[editIndex])
+                    {
+                        cards[editIndex].style.display = "";
+                    }
+                }
+
+                addButton.style.display = "";
+            });
+
+        const saveButton = document.createElement("button");
+        saveButton.type = "button";
+        saveButton.className = "reference-save";
+        saveButton.textContent = "Save Reference";
+
+        saveButton.addEventListener(
+            "click",
+            () =>
+            {
+                const authors = authorsField.input.value.trim();
+                const year = yearField.input.value.trim();
+                const title = titleField.input.value.trim();
+
+                if (!authors || !year || !title)
+                {
+                    doiError.textContent = "Authors, year, and title are required.";
+                    doiError.style.display = "";
+                    return;
+                }
+
+                const reference = {
+                    id: generateReferenceId(authors, year, values[field.header], editIndex),
+                    authors: authors,
+                    year: year,
+                    title: title,
+                };
+
+                const optionals = [
+                    ["journal", journalField],
+                    ["book", bookField],
+                    ["publisher", publisherField],
+                    ["volume", volumeField],
+                    ["issue", issueField],
+                    ["pages", pagesField],
+                    ["doi", doiFieldInput],
+                    ["isbn", isbnField],
+                    ["url", urlField],
+                    ["notes", notesField],
+                ];
+
+                for (const [key, fieldEntry] of optionals)
+                {
+                    const value = fieldEntry.input.value.trim();
+
+                    if (value)
+                    {
+                        reference[key] = value;
+                    }
+                }
+
+                if (editIndex !== null)
+                {
+                    values[field.header][editIndex] = reference;
+                }
+                else
+                {
+                    values[field.header].push(reference);
+                }
+
+                form.remove();
+                renderReferenceCards(editor, field, addButton);
+            },
+        );
+
+        actions.appendChild(cancelButton);
+        actions.appendChild(saveButton);
+        form.appendChild(actions);
+
+        // Insert form before the add button
+        editor.insertBefore(form, addButton);
+
+        authorsField.input.focus();
     }
 
     /**
@@ -803,7 +1495,17 @@
                 continue;
             }
 
-            if (field.type === "checkboxes" && Array.isArray(saved))
+            if (field.type === "references")
+            {
+                const editor = stepContainer.querySelector(`[data-header="${field.header}"]`);
+
+                if (editor && Array.isArray(saved))
+                {
+                    const addButton = editor.querySelector(".reference-add-button");
+                    renderReferenceCards(editor, field, addButton);
+                }
+            }
+            else if (field.type === "checkboxes" && Array.isArray(saved))
             {
                 for (const checkedValue of saved)
                 {
@@ -1184,6 +1886,20 @@
                     continue;
                 }
 
+                if (field.type === "references")
+                {
+                    const references = currentValues.references;
+
+                    if (Array.isArray(references) && references.length > 0)
+                    {
+                        values[field.header] = references.map(
+                            (reference) => Object.assign({}, reference),
+                        );
+                    }
+
+                    continue;
+                }
+
                 const current = getCurrentValue(field.currentKey);
 
                 if (current == null || current === "")
@@ -1323,6 +2039,12 @@
 
                 return identifiers.map((identifier) => `${identifier.source}: ${identifier.id}`).join("\n");
             }
+
+            case "references":
+            {
+                const references = currentValues.references;
+                return Array.isArray(references) ? references : null;
+            }
         }
 
         return null;
@@ -1373,6 +2095,11 @@
         table.appendChild(tbody);
         fragment.appendChild(table);
 
+        if (flow.label !== "Proposal")
+        {
+            fragment.appendChild(buildYamlPreview());
+        }
+
         const url = window.IssueBuilder.buildUrl(
             flow,
             values,
@@ -1396,7 +2123,7 @@
         const submitButton = document.createElement("button");
         submitButton.className = "submit-btn";
         submitButton.type = "button";
-        submitButton.textContent = "Open GitHub Issue";
+        submitButton.textContent = "Submit Contribution";
         submitButton.addEventListener("click", () => window.IssueBuilder.submit());
 
         submitRow.appendChild(submitButton);
@@ -1404,6 +2131,137 @@
         fragment.appendChild(submitRow);
 
         stepContainer.replaceChildren(fragment);
+    }
+
+    /**
+     * Builds an expandable YAML preview element showing the diff of
+     * proposed changes for the review step.
+     *
+     * @returns A details/summary DOM element with the diff content.
+     */
+    function buildYamlPreview()
+    {
+        const wrapper = document.createElement("div");
+        wrapper.className = "yaml-preview";
+
+        const details = document.createElement("details");
+        const summary = document.createElement("summary");
+        summary.textContent = "Preview YAML";
+        details.appendChild(summary);
+
+        const pre = document.createElement("pre");
+        const code = document.createElement("code");
+
+        const targetData = buildTargetDataForPreview();
+        const afterYaml = window.YamlBuilder.serializeYaml(targetData);
+
+        let beforeYaml = "";
+
+        if (flow.isUpdate && currentValues && currentValues._loaded)
+        {
+            const cleanData = {};
+
+            for (const key of Object.keys(currentValues))
+            {
+                if (!key.startsWith("_"))
+                {
+                    cleanData[key] = currentValues[key];
+                }
+            }
+
+            beforeYaml = window.YamlBuilder.serializeYaml(cleanData);
+        }
+
+        const diffText = window.YamlBuilder.computeDiff(beforeYaml, afterYaml);
+
+        for (const line of diffText.split("\n"))
+        {
+            const span = document.createElement("span");
+            span.textContent = line;
+
+            if (line.startsWith("+ "))
+            {
+                span.className = "diff-add";
+            }
+            else if (line.startsWith("- "))
+            {
+                span.className = "diff-remove";
+            }
+
+            code.appendChild(span);
+            code.appendChild(document.createTextNode("\n"));
+        }
+
+        pre.appendChild(code);
+        details.appendChild(pre);
+        wrapper.appendChild(details);
+
+        return wrapper;
+    }
+
+    /**
+     * Builds the target YAML data object for the preview, based on
+     * the current flow and wizard values.
+     *
+     * @returns The target data object.
+     */
+    function buildTargetDataForPreview()
+    {
+        const currentData = currentValues && currentValues._loaded
+            ? stripInternalKeys(currentValues)
+            : null;
+
+        switch (flow.label)
+        {
+            case "Add Genus":
+                return window.YamlBuilder.buildNewGenus(values);
+
+            case "Add Species":
+                return window.YamlBuilder.addSpeciesToGenus(currentData ?? {}, values);
+
+            case "Update Genus":
+                return window.YamlBuilder.applyGenusUpdate(currentData ?? {}, values);
+
+            case "Update Species":
+            {
+                const speciesName = selectedSpecies
+                    ? selectedSpecies.name
+                    : (values["Species name"] ?? "");
+
+                return window.YamlBuilder.applySpeciesUpdate(currentData ?? {}, speciesName, values);
+            }
+
+            case "Taxonomy":
+                return window.YamlBuilder.applyTaxonomyUpdate(
+                    currentData ?? {},
+                    values["Proposed parent clade"] ?? "",
+                    values,
+                );
+
+            default:
+                return {};
+        }
+    }
+
+    /**
+     * Removes internal keys (prefixed with underscore) from a data object.
+     *
+     * @param data - The data object to clean.
+     * @returns A new object without internal keys.
+     */
+    function stripInternalKeys(data)
+    {
+        const result = {};
+
+        for (const key of Object.keys(data))
+        {
+            if (!key.startsWith("_"))
+            {
+                result[key] = data[key];
+            }
+        }
+
+        return result;
     }
 
     /**
@@ -1431,6 +2289,36 @@
 
                 if (!fieldValue || (Array.isArray(fieldValue) && fieldValue.length === 0))
                 {
+                    continue;
+                }
+
+                if (field.type === "references")
+                {
+                    const references = fieldValue;
+                    const display = references.map(
+                        (reference) => `${reference.authors ?? "?"} (${reference.year ?? "?"})`,
+                    ).join("; ");
+
+                    let changed = false;
+
+                    if (isUpdate && field.currentKey)
+                    {
+                        const currentRefs = getCurrentValue(field.currentKey);
+                        changed = JSON.stringify(references) !== JSON.stringify(currentRefs);
+
+                        if (!changed)
+                        {
+                            continue;
+                        }
+                    }
+
+                    result.push({
+                        header: field.header,
+                        value: fieldValue,
+                        display: `${references.length} reference${references.length === 1 ? "" : "s"}: ${display}`,
+                        changed: changed,
+                    });
+
                     continue;
                 }
 
