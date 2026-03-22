@@ -14,6 +14,7 @@
  *   search     — searchable dropdown (options resolved at render time)
  *   checkboxes — checkbox group
  *   readonly   — non-editable display value
+ *   references — structured reference editor with DOI import
  *
  * The `header` property must EXACTLY match the label in the issue template.
  * Fields with `required: true` are validated before advancing.
@@ -89,7 +90,7 @@ window.Flows = (function ()
                     { header: "Genus description", type: "textarea", required: true },
                     { header: "Species description", type: "textarea" },
                     { header: "External identifiers", type: "textarea", placeholder: "One per line, format: source: id", validate: "identifiers" },
-                    { header: "Reference / source", type: "textarea", required: true },
+                    { header: "References", type: "references", required: true },
                 ],
             },
         ],
@@ -140,7 +141,7 @@ window.Flows = (function ()
                 name: "Description & references",
                 fields: [
                     { header: "Species description", type: "textarea" },
-                    { header: "Reference / source", type: "textarea", required: true },
+                    { header: "References", type: "references", required: true },
                 ],
             },
         ],
@@ -177,7 +178,7 @@ window.Flows = (function ()
             {
                 name: "Reference",
                 fields: [
-                    { header: "Reference / source", type: "textarea", required: true },
+                    { header: "References", type: "references", required: true, currentKey: "references" },
                 ],
             },
         ],
@@ -224,7 +225,7 @@ window.Flows = (function ()
             {
                 name: "Reference",
                 fields: [
-                    { header: "Reference / source", type: "textarea", required: true },
+                    { header: "References", type: "references", required: true, currentKey: "references" },
                 ],
             },
         ],
@@ -251,7 +252,7 @@ window.Flows = (function ()
             {
                 name: "Justification",
                 fields: [
-                    { header: "Reference / source", type: "textarea", required: true },
+                    { header: "References", type: "references", required: true, currentKey: "references" },
                     { header: "Notes", type: "textarea" },
                 ],
             },
