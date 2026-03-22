@@ -25,6 +25,11 @@ Key rules that are easy to miss:
 ESLint enforces formatting for `scripts/`, `docs/`, and `.github/scripts/`.
 Always run `npm run lint` before considering code complete.
 
+## Git Workflow
+
+**Do not commit or push unless explicitly told to.** Always show changes
+and wait for the user to say to commit/push.
+
 ## Build & Verify
 
 ```
