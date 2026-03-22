@@ -117,6 +117,19 @@ async function createPR({
         ref: "heads/main",
     });
 
+    try
+    {
+        await github.rest.git.deleteRef({
+            owner: repo.owner,
+            repo: repo.repo,
+            ref: `heads/${branchName}`,
+        });
+    }
+    catch
+    {
+        // Branch does not exist yet — nothing to delete
+    }
+
     await github.rest.git.createRef({
         owner: repo.owner,
         repo: repo.repo,
