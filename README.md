@@ -43,8 +43,8 @@ Open Paleo exists because it solves a different problem:
   vocabularies before it can be merged.
 
 - **Low barrier to contribution.** Anyone with a GitHub account can
-  contribute through structured issue forms. No institutional
-  affiliation or registration required.
+  contribute through the contribution wizard or a pull request. No
+  institutional affiliation or registration required.
 
 - **Taxonomy-focused.** PBDB's core data model is the fossil
   *occurrence* — a specific find at a specific place and time. Open
@@ -97,7 +97,7 @@ open-paleo/
   dist/                     # Built output files (JSON, YAML, Newick, NEXUS, BibTeX)
   scripts/                  # Validation, build, and automation scripts
   dictionaries/             # Auto-generated custom dictionary for spell checking
-  .github/                  # Issue templates, workflows, and CODEOWNERS
+  .github/                  # Workflows and CODEOWNERS
 ```
 
 ## Data Format
@@ -134,9 +134,9 @@ The build script (`scripts/build.ts`) produces the following output files in `di
 
 We welcome contributions from paleontologists, enthusiasts, and anyone interested in open science. All contributions must be backed by published scientific literature.
 
-The easiest way to contribute is through the **[contribution wizard](https://open-paleo.github.io/data/)** — a guided web form with searchable dropdowns, field validation, and pre-populated current values for update flows. The wizard builds a pre-filled GitHub issue for you; no special tools required.
+The easiest way to contribute is through the **[contribution wizard](https://open-paleo.github.io/data/)** — a guided web form with searchable dropdowns, field validation, and a YAML preview. The wizard files a GitHub issue with the proposed changes; automation then opens a pull request for review. No special tools required.
 
-You can also use the **[issue forms](https://github.com/open-paleo/data/issues/new/choose)** directly if you prefer.
+You can also open a pull request directly if you prefer to edit YAML files yourself.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines, scientific rigor requirements, and quality standards.
 
@@ -222,7 +222,7 @@ code style guidelines.
 
 Open Paleo used AI/LLM tools (specifically Claude by Anthropic) to build
 the initial project scaffolding — the validation and build scripts,
-GitHub workflows, issue templates, and documentation structure. We
+GitHub workflows and documentation structure. We
 believe in transparency about this.
 
 **AI is not used to populate the dataset.** Every genus, species, clade

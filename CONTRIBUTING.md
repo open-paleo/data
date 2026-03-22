@@ -4,20 +4,9 @@ Thank you for your interest in contributing to Open Paleo. This is a community-m
 
 ## How to Contribute
 
-The easiest way to contribute is through the **[contribution wizard](https://open-paleo.github.io/data/)**, a guided web form that walks you through each field with searchable dropdowns, validation, and pre-populated current values for update flows. The wizard builds a pre-filled GitHub issue — no special tools required.
+The easiest way to contribute is through the **[contribution wizard](https://open-paleo.github.io/data/)**, a guided web form that walks you through each field with searchable dropdowns, validation, and pre-populated current values for update flows. The wizard generates the YAML for your contribution and files a GitHub issue — no special tools required. Automation then opens a pull request with your changes for review.
 
-You can also submit contributions directly through the **GitHub issue forms** below. These structured forms ensure that data is consistent, automatable, and easy to review. The available forms are:
-
-- **[Add New Genus](../../issues/new?template=add-genus.yml)** — Submit structured data for a genus not yet in the dataset.
-- **[Add Species](../../issues/new?template=add-species.yml)** — Add a new species to an existing genus.
-- **[Update Genus Fields](../../issues/new?template=update-genus-fields.yml)** — Update description, diet, locomotion, or other genus-level metadata.
-- **[Update Species](../../issues/new?template=update-species.yml)** — Update metadata for an existing species (status, location, size, holotype, etc.).
-- **[Correct Taxonomy](../../issues/new?template=correct-taxonomy.yml)** — Propose a reclassification of an existing genus with supporting references.
-- **[Propose Update](../../issues/new?template=propose-update.yml)** — Propose a change for maintainer discussion when you don't have structured data ready.
-- **[Add Image](../../issues/new?template=add-image.yml)** — Contribute specimen photos, life reconstructions, or skeletal diagrams.
-- **[Report Error](../../issues/new?template=report-error.yml)** — Flag any factual, structural, or formatting issue.
-
-When you submit a form, automation validates your data against the schema and tree structure. If validation passes, a pull request is created automatically. Simple additions (new genera, new images) can be auto-merged after CI passes; changes affecting the tree structure require manual review.
+You can also open a pull request directly if you prefer to edit YAML files yourself.
 
 ## Scientific Rigor
 
@@ -96,7 +85,7 @@ original proposal.
 
 ## Process
 
-- **Use the [contribution wizard](https://open-paleo.github.io/data/) or the issue forms.** They exist to make contributions structured and automatable. Do not open blank issues for things the forms cover.
+- **Use the [contribution wizard](https://open-paleo.github.io/data/) or open a pull request.** The wizard ensures contributions are structured and automatable.
 - **Do not modify `tree.yml` without discussion.** Changes to the clade hierarchy affect every genus in the affected subtree. Open an issue first to discuss the change and its justification.
 - **Respect the review process.** Auto-merged PRs (new genera, new images) go through automated validation. PRs that affect the tree structure require manual review from maintainers. Do not pressure maintainers to merge faster.
 
