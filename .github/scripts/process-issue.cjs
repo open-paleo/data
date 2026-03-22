@@ -6,7 +6,7 @@
 // Create issues contain full YAML in a ```yaml code block.
 // Update issues contain a unified diff in a ```diff code block.
 
-const yaml = require("js-yaml");
+const YAML = require("yaml");
 const {
     extractPatchMeta,
     extractYamlBlock,
@@ -15,6 +15,7 @@ const {
     createPR,
     applyPatch,
     commentError,
+    serializeYaml,
 } = require("./helpers.cjs");
 
 /**
@@ -140,7 +141,7 @@ async function handleCreateFromYaml({ github, repo, issueNumber, issueAuthor, me
 
     try
     {
-        parsed = yaml.load(yamlContent);
+        parsed = YAML.parse(yamlContent);
     }
     catch (parseError)
     {
@@ -177,7 +178,7 @@ async function handleCreateFromYaml({ github, repo, issueNumber, issueAuthor, me
         return;
     }
 
-    const serializedYaml = yaml.dump(parsed, { lineWidth: -1, quotingType: "\"" });
+    const serializedYaml = serializeYaml(parsed);
 
     await createPR({
         github,
@@ -237,9 +238,9 @@ async function handleDiffUpdate({ github, repo, issueNumber, issueAuthor, meta, 
         return;
     }
 
-    // Normalize the existing content through yaml.dump() so its formatting
+    // Normalize the existing content through serializeYaml() so its formatting
     // matches the wizard's serialization (which produced the diff).
-    const normalizedContent = yaml.dump(existing.data, { lineWidth: -1, quotingType: "\"" });
+    const normalizedContent = serializeYaml(existing.data);
 
     let patchedContent;
 
@@ -264,7 +265,7 @@ async function handleDiffUpdate({ github, repo, issueNumber, issueAuthor, meta, 
 
     try
     {
-        parsed = yaml.load(patchedContent);
+        parsed = YAML.parse(patchedContent);
     }
     catch (parseError)
     {
@@ -287,7 +288,7 @@ async function handleDiffUpdate({ github, repo, issueNumber, issueAuthor, meta, 
         return;
     }
 
-    const serializedYaml = yaml.dump(parsed, { lineWidth: -1, quotingType: "\"" });
+    const serializedYaml = serializeYaml(parsed);
 
     await createPR({
         github,
@@ -336,7 +337,7 @@ async function handleYamlUpdate({ github, repo, issueNumber, issueAuthor, meta, 
 
     try
     {
-        parsed = yaml.load(yamlContent);
+        parsed = YAML.parse(yamlContent);
     }
     catch (parseError)
     {
@@ -374,7 +375,7 @@ async function handleYamlUpdate({ github, repo, issueNumber, issueAuthor, meta, 
         return;
     }
 
-    const serializedYaml = yaml.dump(parsed, { lineWidth: -1, quotingType: "\"" });
+    const serializedYaml = serializeYaml(parsed);
 
     await createPR({
         github,

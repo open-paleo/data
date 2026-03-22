@@ -1,6 +1,6 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
-import yaml from "js-yaml";
+import { parse as parseYamlContent } from "yaml";
 import type { TreeNode } from "./types.ts";
 
 /**
@@ -11,7 +11,7 @@ import type { TreeNode } from "./types.ts";
  */
 export function parseYaml<T>(filePath: string): T
 {
-    return yaml.load(fs.readFileSync(filePath, "utf8")) as T;
+    return parseYamlContent(fs.readFileSync(filePath, "utf8")) as T;
 }
 
 /**

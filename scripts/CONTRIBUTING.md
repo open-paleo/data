@@ -15,7 +15,7 @@ main [CONTRIBUTING.md](../CONTRIBUTING.md) instead.
   with no build step required
 - **Plain JavaScript** — browser code in `docs/` (ES modules) and GitHub
   Actions workflow scripts in `.github/scripts/` (CommonJS)
-- **js-yaml** — the only runtime dependency, used to parse and serialize YAML
+- **yaml** — the runtime YAML dependency, used to parse and serialize YAML
 
 ## Setup
 

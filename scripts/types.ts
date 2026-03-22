@@ -1,5 +1,5 @@
 // Open Paleo — Shared Type Definitions
-// Property names use snake_case to match the YAML file keys as parsed by js-yaml.
+// Property names use snake_case to match the YAML file keys.
 
 /**
  * Holotype specimen information for a species.

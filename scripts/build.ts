@@ -2,7 +2,7 @@ import * as fs from "node:fs";
 import * as path from "node:path";
 import * as url from "node:url";
 
-import yaml from "js-yaml";
+import { stringify as stringifyYaml } from "yaml";
 
 import { collectAllKeys, findYamlFiles, parseYaml } from "./utilities.ts";
 
@@ -271,12 +271,7 @@ fs.writeFileSync(
 
 fs.writeFileSync(
     path.join(dist, "open-paleo.yml"),
-    yaml.dump(
-        dataset,
-        {
-            lineWidth: -1,
-            noRefs: true,
-        }));
+    stringifyYaml(dataset, { lineWidth: 0 }));
 
 const topKey = Object.keys(tree)[0];
 const newick = `(${toNewick(tree[topKey] as TreeNode)})${topKey};`;

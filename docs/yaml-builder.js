@@ -1,7 +1,7 @@
 /**
  * Builds YAML data objects from wizard form values and serializes them.
  * Mirrors the field-to-YAML mapping from process-issue.cjs but runs
- * client-side using the vendored js-yaml library.
+ * client-side using the vendored yaml library.
  */
 window.YamlBuilder = (function ()
 {
@@ -20,16 +20,53 @@ window.YamlBuilder = (function ()
         return `genera/${letter}/${genusName}.yml`;
     }
 
+    /** Fields whose integer values should retain a trailing .0 suffix. */
+    const floatFields = new Set(["from_ma", "to_ma", "length_m", "hip_height_m", "skull_length_m"]);
+
+    /** Fields whose string values should always be double-quoted. */
+    const quotedFields = new Set(["pages", "doi", "isbn"]);
+
     /**
-     * Serializes a data object to YAML using the same options as the
-     * workflow scripts (no line wrapping, double-quoted strings).
+     * Serializes a data object to YAML with formatting conventions
+     * matching the normalization pass: lineWidth 72, flow-style
+     * coordinates, quoted pages/doi/isbn, and .0 on float fields.
      *
      * @param data - The object to serialize.
      * @returns The YAML string.
      */
     function serializeYaml(data)
     {
-        return window.jsyaml.dump(data, { lineWidth: -1, quotingType: "\"" });
+        const yamlLib = window.YAML;
+        const document = new yamlLib.Document(data);
+
+        yamlLib.visit(document, {
+            Pair(key, pair)
+            {
+                const name = pair.key?.value;
+
+                if (name === "coordinates" && yamlLib.isSeq(pair.value))
+                {
+                    pair.value.flow = true;
+                }
+
+                if (quotedFields.has(name) && yamlLib.isScalar(pair.value) && typeof pair.value.value === "string")
+                {
+                    pair.value.type = "QUOTE_DOUBLE";
+                }
+            },
+        });
+
+        let result = document.toString({ lineWidth: 72 });
+
+        for (const field of floatFields)
+        {
+            result = result.replace(
+                new RegExp("(" + field + ": )(\\d+)$", "gm"),
+                (match, prefix, digits) => prefix + digits + ".0",
+            );
+        }
+
+        return result;
     }
 
     /**
