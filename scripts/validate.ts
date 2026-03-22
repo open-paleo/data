@@ -7,7 +7,7 @@ import * as fs from "node:fs";
 import * as path from "node:path";
 import * as url from "node:url";
 
-import yaml from "js-yaml";
+import { parse as parseYamlContent } from "yaml";
 
 import { findYamlFiles } from "./utilities.ts";
 
@@ -141,7 +141,7 @@ function loadYamlFatal<T>(filePath: string, label: string): T
 {
     try
     {
-        return yaml.load(fs.readFileSync(filePath, "utf8")) as T;
+        return parseYamlContent(fs.readFileSync(filePath, "utf8")) as T;
     }
     catch (error: unknown)
     {
@@ -194,7 +194,7 @@ for (const filePath of genusFiles)
 {
     try
     {
-        const doc = yaml.load(fs.readFileSync(filePath, "utf8")) as GenusData;
+        const doc = parseYamlContent(fs.readFileSync(filePath, "utf8")) as GenusData;
         genusParsed.set(filePath, doc);
     }
     catch (error: unknown)
@@ -208,7 +208,7 @@ for (const filePath of cladeFiles)
 {
     try
     {
-        const doc = yaml.load(fs.readFileSync(filePath, "utf8")) as CladeData;
+        const doc = parseYamlContent(fs.readFileSync(filePath, "utf8")) as CladeData;
         cladeParsed.set(filePath, doc);
     }
     catch (error: unknown)

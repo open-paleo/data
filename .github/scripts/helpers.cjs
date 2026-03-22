@@ -1,6 +1,6 @@
 // Shared helpers for GitHub Actions workflow scripts.
 
-const yaml = require("js-yaml");
+const YAML = require("yaml");
 
 /**
  * Extract patch metadata from HTML comment markers in the issue body.
@@ -77,7 +77,7 @@ async function readGenusFile(github, repo, genusName)
     }
 
     const content = Buffer.from(fileData.data.content, "base64").toString();
-    const data = yaml.load(content);
+    const data = YAML.parse(content);
 
     return { filePath, sha: fileData.data.sha, content, data };
 }
@@ -335,6 +335,54 @@ function applyPatch(originalContent, diffContent)
     return lines.join("\n");
 }
 
+/** Fields whose integer values should retain a trailing .0 suffix. */
+const floatFields = new Set(["from_ma", "to_ma", "length_m", "hip_height_m", "skull_length_m"]);
+
+/** Fields whose string values should always be double-quoted. */
+const quotedFields = new Set(["pages", "doi", "isbn"]);
+
+/**
+ * Serializes a data object to YAML with formatting conventions matching
+ * the contribution wizard: lineWidth 72, flow-style coordinates,
+ * quoted pages/doi/isbn, and .0 on float fields.
+ *
+ * @param {object} data - The object to serialize.
+ * @returns {string} The YAML string.
+ */
+function serializeYaml(data)
+{
+    const document = new YAML.Document(data);
+
+    YAML.visit(document, {
+        Pair(key, pair)
+        {
+            const name = pair.key?.value;
+
+            if (name === "coordinates" && YAML.isSeq(pair.value))
+            {
+                pair.value.flow = true;
+            }
+
+            if (quotedFields.has(name) && YAML.isScalar(pair.value) && typeof pair.value.value === "string")
+            {
+                pair.value.type = "QUOTE_DOUBLE";
+            }
+        },
+    });
+
+    let result = document.toString({ lineWidth: 72 });
+
+    for (const field of floatFields)
+    {
+        result = result.replace(
+            new RegExp("(" + field + ": )(\\d+)$", "gm"),
+            (match, prefix, digits) => prefix + digits + ".0",
+        );
+    }
+
+    return result;
+}
+
 module.exports = {
     extractPatchMeta,
     extractYamlBlock,
@@ -343,4 +391,5 @@ module.exports = {
     createPR,
     applyPatch,
     commentError,
+    serializeYaml,
 };
