@@ -1,75 +1,47 @@
 // Shared helpers for GitHub Actions workflow scripts.
-// Used by process-issue.cjs and process-image.cjs.
 
 const yaml = require("js-yaml");
 
 /**
- * Parse a GitHub issue form body into a { header: value } map.
- * Issue forms render as "### Header\n\nValue" sections.  Fields that are
- * empty or contain the default "_No response_" placeholder are omitted.
+ * Extract patch metadata from HTML comment markers in the issue body.
+ * Returns null if the issue is not in patch format.
  *
  * @param {string} body - The raw markdown body of the issue.
- *
- * @returns {Record<string, string>} Parsed field map keyed by header text.
+ * @returns {{ path: string, action: string } | null} The extracted metadata, or null.
  */
-function parseIssueForm(body)
+function extractPatchMeta(body)
 {
-    const fields = {};
-    const sections = body.split(/^### /m).filter(Boolean);
+    const pathMatch = body.match(/<!--\s*yaml-path:\s*(.+?)\s*-->/);
+    const actionMatch = body.match(/<!--\s*yaml-action:\s*(.+?)\s*-->/);
 
-    for (const section of sections)
+    if (!pathMatch || !actionMatch)
     {
-        const [header, ...rest] = section.split("\n");
-        const value = rest.join("\n").trim();
-
-        if (value && value !== "_No response_")
-        {
-            fields[header.trim()] = value;
-        }
+        return null;
     }
 
-    return fields;
+    return {
+        path: pathMatch[1].trim(),
+        action: actionMatch[1].trim(),
+    };
 }
 
 /**
- * Parse checked checkbox values from an issue form checkboxes field.
+ * Extract the full YAML content from a fenced ```yaml code block
+ * in the issue body.
  *
- * @param {string | undefined} value - Raw checkbox markdown from the form.
- *
- * @returns {Array<string>} Label text for each checked box.
+ * @param {string} body - The raw markdown body of the issue.
+ * @returns {string | null} The extracted YAML string, or null if not found.
  */
-function parseCheckboxes(value)
+function extractYamlBlock(body)
 {
-    if (!value)
+    const match = body.match(/```yaml\n([\s\S]*?)```/);
+
+    if (!match)
     {
-        return [];
+        return null;
     }
 
-    return value
-        .split("\n")
-        .filter((line) => line.startsWith("- [X]") || line.startsWith("- [x]"))
-        .map((line) => line.replace(/^- \[[xX]\]\s*/, "").trim())
-        .filter(Boolean);
-}
-
-/**
- * Parse non-empty trimmed lines from a textarea field.
- *
- * @param {string | undefined} value - Raw textarea content.
- *
- * @returns {Array<string>} Non-empty lines.
- */
-function parseLines(value)
-{
-    if (!value)
-    {
-        return [];
-    }
-
-    return value
-        .split("\n")
-        .map((line) => line.trim())
-        .filter(Boolean);
+    return match[1].trim();
 }
 
 /**
@@ -107,11 +79,11 @@ async function readGenusFile(github, repo, genusName)
     const content = Buffer.from(fileData.data.content, "base64").toString();
     const data = yaml.load(content);
 
-    return { filePath, sha: fileData.data.sha, data };
+    return { filePath, sha: fileData.data.sha, content, data };
 }
 
 /**
- * Create a branch, commit updated genus YAML, open a PR, label the issue,
+ * Create a branch, commit YAML content, open a PR, label the issue,
  * and post a comment linking to the new PR.
  *
  * @param {object} options
@@ -119,30 +91,26 @@ async function readGenusFile(github, repo, genusName)
  * @param {{ owner: string, repo: string }} options.repo - Repository coordinates.
  * @param {number} options.issueNumber - Originating issue number.
  * @param {string} options.issueAuthor - GitHub login of the issue author.
- * @param {string} options.genusName - Genus name (used in the branch name).
  * @param {string} options.filePath - Path to the genus YAML file.
- * @param {string} options.fileSha - Blob SHA of the existing file.
- * @param {object} options.genusData - Updated genus data to serialize.
- * @param {string} options.branchPrefix - Prefix for the new branch name.
+ * @param {string | undefined} options.fileSha - Blob SHA of the existing file (for updates).
+ * @param {string} options.yamlContent - The YAML string to commit.
+ * @param {string} options.branchName - Branch name for the PR.
  * @param {string} options.prTitle - Pull request title (also used in the commit).
  * @param {string} options.prBody - Pull request body text.
  */
-async function createUpdatePR({
+async function createPR({
     github,
     repo,
     issueNumber,
     issueAuthor,
-    genusName,
     filePath,
     fileSha,
-    genusData,
-    branchPrefix,
+    yamlContent,
+    branchName,
     prTitle,
     prBody,
 })
 {
-    const branchName = `${branchPrefix}/${genusName.toLowerCase()}-${issueNumber}`;
-
     const mainRef = await github.rest.git.getRef({
         owner: repo.owner,
         repo: repo.repo,
@@ -156,17 +124,25 @@ async function createUpdatePR({
         sha: mainRef.data.object.sha,
     });
 
-    const updatedYaml = yaml.dump(genusData, { lineWidth: -1, quotingType: '"' });
-
-    await github.rest.repos.createOrUpdateFileContents({
+    const commitOptions = {
         owner: repo.owner,
         repo: repo.repo,
         path: filePath,
         message: `${prTitle}\n\nCloses #${issueNumber}`,
-        content: Buffer.from(updatedYaml).toString("base64"),
-        sha: fileSha,
+        content: Buffer.from(yamlContent).toString("base64"),
         branch: branchName,
-    });
+        committer: {
+            name: issueAuthor,
+            email: `${issueAuthor}@users.noreply.github.com`,
+        },
+    };
+
+    if (fileSha)
+    {
+        commitOptions.sha = fileSha;
+    }
+
+    await github.rest.repos.createOrUpdateFileContents(commitOptions);
 
     const pr = await github.rest.pulls.create({
         owner: repo.owner,
@@ -188,7 +164,7 @@ async function createUpdatePR({
         owner: repo.owner,
         repo: repo.repo,
         issue_number: issueNumber,
-        body: `✅ PR created: ${pr.data.html_url}`,
+        body: `\u2705 PR created: ${pr.data.html_url}`,
     });
 }
 
@@ -198,7 +174,7 @@ async function createUpdatePR({
  * @param {object} github - Octokit instance.
  * @param {{ owner: string, repo: string }} repo - Repository coordinates.
  * @param {number} issueNumber - Issue to comment on.
- * @param {string} message - Error message (a ❌ prefix is added automatically).
+ * @param {string} message - Error message (a cross mark prefix is added automatically).
  * @param {string} [label] - Optional label to add to the issue.
  */
 async function commentError(github, repo, issueNumber, message, label)
@@ -207,7 +183,7 @@ async function commentError(github, repo, issueNumber, message, label)
         owner: repo.owner,
         repo: repo.repo,
         issue_number: issueNumber,
-        body: `❌ ${message}`,
+        body: `\u274C ${message}`,
     });
 
     if (label)
@@ -221,11 +197,137 @@ async function commentError(github, repo, issueNumber, message, label)
     }
 }
 
+/**
+ * Extract the unified diff content from a fenced ```diff code block
+ * in the issue body.
+ *
+ * @param {string} body - The raw markdown body of the issue.
+ * @returns {string | null} The extracted diff string, or null if not found.
+ */
+function extractDiffBlock(body)
+{
+    const match = body.match(/```diff\n([\s\S]*?)```/);
+
+    if (!match)
+    {
+        return null;
+    }
+
+    return match[1].trim();
+}
+
+/**
+ * Apply a unified diff patch to the original file content. Parses hunk
+ * headers and applies changes in reverse order to preserve line numbers.
+ * Throws if context lines do not match the original (conflict detection).
+ *
+ * @param {string} originalContent - The original file content.
+ * @param {string} diffContent - The unified diff string.
+ * @returns {string} The patched file content.
+ */
+function applyPatch(originalContent, diffContent)
+{
+    const lines = originalContent.split("\n");
+    const diffLines = diffContent.split("\n");
+
+    // Parse hunks from the diff
+    const hunks = [];
+    let currentHunk = null;
+
+    for (const diffLine of diffLines)
+    {
+        const hunkMatch = diffLine.match(/^@@ -(\d+),(\d+) \+(\d+),(\d+) @@/);
+
+        if (hunkMatch)
+        {
+            currentHunk = {
+                originalStart: parseInt(hunkMatch[1], 10),
+                originalCount: parseInt(hunkMatch[2], 10),
+                newStart: parseInt(hunkMatch[3], 10),
+                newCount: parseInt(hunkMatch[4], 10),
+                lines: [],
+            };
+
+            hunks.push(currentHunk);
+            continue;
+        }
+
+        // Skip file headers
+        if (diffLine.startsWith("--- ") || diffLine.startsWith("+++ "))
+        {
+            continue;
+        }
+
+        if (currentHunk && (diffLine.startsWith(" ") || diffLine.startsWith("-") || diffLine.startsWith("+")))
+        {
+            currentHunk.lines.push(diffLine);
+        }
+    }
+
+    // Apply hunks in reverse order to preserve line numbers
+    for (let index = hunks.length - 1; index >= 0; index--)
+    {
+        const hunk = hunks[index];
+        const startIndex = hunk.originalStart - 1;
+
+        // Verify context lines and build replacement
+        const replacement = [];
+        let originalOffset = 0;
+
+        for (const hunkLine of hunk.lines)
+        {
+            const prefix = hunkLine.charAt(0);
+            const content = hunkLine.slice(1);
+
+            if (prefix === " ")
+            {
+                const originalLine = lines[startIndex + originalOffset];
+
+                if (originalLine !== content)
+                {
+                    throw new Error(
+                        `Context mismatch at line ${startIndex + originalOffset + 1}: ` +
+                        `expected "${content}" but found "${originalLine}". ` +
+                        "The file may have been modified since this issue was created.",
+                    );
+                }
+
+                replacement.push(content);
+                originalOffset++;
+            }
+            else if (prefix === "-")
+            {
+                const originalLine = lines[startIndex + originalOffset];
+
+                if (originalLine !== content)
+                {
+                    throw new Error(
+                        `Remove mismatch at line ${startIndex + originalOffset + 1}: ` +
+                        `expected "${content}" but found "${originalLine}". ` +
+                        "The file may have been modified since this issue was created.",
+                    );
+                }
+
+                originalOffset++;
+            }
+            else if (prefix === "+")
+            {
+                replacement.push(content);
+            }
+        }
+
+        lines.splice(startIndex, hunk.originalCount, ...replacement);
+    }
+
+    return lines.join("\n");
+}
+
 module.exports = {
-    parseIssueForm,
-    parseCheckboxes,
-    parseLines,
+    extractPatchMeta,
+    extractYamlBlock,
+    extractDiffBlock,
     readGenusFile,
-    createUpdatePR,
+    createPR,
+    applyPatch,
     commentError,
 };
