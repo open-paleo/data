@@ -237,11 +237,15 @@ async function handleDiffUpdate({ github, repo, issueNumber, issueAuthor, meta, 
         return;
     }
 
+    // Normalize the existing content through yaml.dump() so its formatting
+    // matches the wizard's serialization (which produced the diff).
+    const normalizedContent = yaml.dump(existing.data, { lineWidth: -1, quotingType: "\"" });
+
     let patchedContent;
 
     try
     {
-        patchedContent = applyPatch(existing.content, diffContent);
+        patchedContent = applyPatch(normalizedContent, diffContent);
     }
     catch (patchError)
     {
