@@ -130,35 +130,7 @@ window.IssueBuilder = (function ()
             sections.push("", "### Notes", "", values["Notes"]);
         }
 
-        const body = sections.join("\n");
-        const maxBodyLength = 7500;
-
-        if (body.length > maxBodyLength)
-        {
-            const trimmedSections = [
-                `<!-- yaml-path: ${yamlPath} -->`,
-                "<!-- yaml-action: create -->",
-                "",
-                "## Proposed Changes",
-                "",
-                "*Diff preview omitted due to size constraints.*",
-                "",
-                "### Full YAML",
-                "",
-                "```yaml",
-                afterYaml.trimEnd(),
-                "```",
-            ];
-
-            if (values["Notes"])
-            {
-                trimmedSections.push("", "### Notes", "", values["Notes"]);
-            }
-
-            return trimmedSections.join("\n");
-        }
-
-        return body;
+        return sections.join("\n");
     }
 
     /**
@@ -262,21 +234,112 @@ window.IssueBuilder = (function ()
     }
 
     /**
-     * Builds the issue URL from the current wizard state and opens it
-     * in a new browser tab.
+     * Builds a short issue URL with only the title and label, omitting
+     * the body so the URL stays well under GitHub's size limit.
+     *
+     * @param flow - The active flow definition.
+     * @param values - The current field values keyed by header.
+     * @returns The encoded GitHub issue URL string without a body parameter.
      */
-    function submit()
+    function buildShortUrl(flow, values)
+    {
+        const title = `${flow.titlePrefix}${values[flow.titleField] ?? ""}`;
+
+        return `${repoUrl}/issues/new?labels=${encodeURIComponent(flow.label)}&title=${encodeURIComponent(title)}`;
+    }
+
+    /**
+     * Builds the issue body string from the current wizard state.
+     *
+     * @param flow - The active flow definition.
+     * @param values - The current field values keyed by header.
+     * @param currentValues - The loaded genus/species data for update flows, or null.
+     * @param selectedSpecies - The selected species object for update-species, or null.
+     * @returns The issue body string.
+     */
+    function buildBody(flow, values, currentValues, selectedSpecies)
+    {
+        if (flow.label === "Proposal")
+        {
+            return buildProposalBody(flow, values);
+        }
+
+        return buildPatchBody(flow, values, currentValues, selectedSpecies);
+    }
+
+    /**
+     * Builds the issue URL from the current wizard state and opens it
+     * in a new browser tab. When the full URL exceeds GitHub's size
+     * limit, copies the body to the clipboard and opens a short URL
+     * without the body parameter.
+     *
+     * @returns A promise that resolves when the issue tab is opened.
+     */
+    async function submit()
     {
         const wizard = window._wizard;
+        const flow = wizard.getFlow();
+        const values = wizard.getValues();
+        const currentValues = wizard.getCurrentValues();
+        const selectedSpecies = wizard.getSelectedSpecies();
 
-        const url = buildUrl(
-            wizard.getFlow(),
-            wizard.getValues(),
-            wizard.getCurrentValues(),
-            wizard.getSelectedSpecies(),
-        );
+        const url = buildUrl(flow, values, currentValues, selectedSpecies);
+        const maxUrlLength = 7500;
 
-        window.open(url, "_blank");
+        if (url.length <= maxUrlLength)
+        {
+            window.open(url, "_blank");
+
+            return;
+        }
+
+        const body = buildBody(flow, values, currentValues, selectedSpecies);
+
+        try
+        {
+            await navigator.clipboard.writeText(body);
+        }
+        catch
+        {
+            window.open(url, "_blank");
+
+            return;
+        }
+
+        window.open(buildShortUrl(flow, values), "_blank");
+        showClipboardNotice();
+    }
+
+    /**
+     * Displays a temporary notice telling the user to paste the issue
+     * body from the clipboard.
+     */
+    function showClipboardNotice()
+    {
+        const existing = document.getElementById("clipboard-notice");
+
+        if (existing)
+        {
+            existing.remove();
+        }
+
+        const notice = document.createElement("div");
+
+        notice.id = "clipboard-notice";
+        notice.className = "clipboard-notice";
+        notice.textContent = "Issue body copied to clipboard \u2014 paste it into the GitHub issue body field.";
+
+        const dismiss = document.createElement("button");
+
+        dismiss.type = "button";
+        dismiss.className = "clipboard-notice-dismiss";
+        dismiss.textContent = "\u2715";
+        dismiss.addEventListener("click", () => notice.remove());
+
+        notice.appendChild(dismiss);
+        document.body.appendChild(notice);
+
+        setTimeout(() => notice.remove(), 15000);
     }
 
     return {
