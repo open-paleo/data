@@ -66,6 +66,32 @@ window.Wikipedia = (function ()
             mapWikidataResults(wikidata, results);
         }
 
+        if (pbdb && pbdb.doi)
+        {
+            try
+            {
+                const reference = await fetchDoiReference(pbdb.doi);
+
+                if (reference && reference.authors && reference.year && reference.title)
+                {
+                    const surname = (reference.authors ?? "").split(",")[0].trim().toLowerCase().replace(/\s+/g, "");
+
+                    reference.id = `${surname}${reference.year}`;
+
+                    results["References"] = {
+                        value: [reference],
+                        displayValue: `${reference.authors} (${reference.year}) \u2014 ${reference.title}`,
+                        source: "PBDB",
+                        fieldType: "references",
+                    };
+                }
+            }
+            catch
+            {
+                // DOI resolution failed — skip reference import
+            }
+        }
+
         if (results["Stage"] && !results["Period"])
         {
             const period = window.OpenPaleo.getPeriodForStage(results["Stage"].value);
@@ -136,14 +162,22 @@ window.Wikipedia = (function ()
             order: taxon.order ?? "",
         };
 
-        const [childResult, occurrenceResult] = await Promise.allSettled([
+        const referenceNo = taxon.reference_no ?? "";
+
+        const [childResult, occurrenceResult, referenceResult] = await Promise.allSettled([
             fetchPbdbTypeSpecies(name),
             fetchPbdbOccurrence(name),
+            referenceNo ? fetchPbdbReferenceDoi(referenceNo) : Promise.resolve(null),
         ]);
 
         if (childResult.status === "fulfilled" && childResult.value)
         {
             result.typeSpecies = childResult.value;
+        }
+
+        if (referenceResult.status === "fulfilled" && referenceResult.value)
+        {
+            result.doi = referenceResult.value;
         }
 
         if (occurrenceResult.status === "fulfilled" && occurrenceResult.value)
@@ -216,6 +250,108 @@ window.Wikipedia = (function ()
         const data = await response.json();
 
         return data.records?.[0] ?? null;
+    }
+
+    /**
+     * Fetches the DOI for a PBDB reference by its reference number.
+     *
+     * @param referenceNo - The PBDB reference number.
+     * @returns A promise resolving to the DOI string, or null.
+     */
+    async function fetchPbdbReferenceDoi(referenceNo)
+    {
+        const params = new URLSearchParams({
+            id: `ref:${referenceNo}`,
+            vocab: "pbdb",
+        });
+
+        const response = await fetch(`${pbdbApiBase}/refs/single.json?${params}`);
+
+        if (!response.ok)
+        {
+            return null;
+        }
+
+        const data = await response.json();
+        const record = data.records?.[0];
+
+        return record?.doi ?? null;
+    }
+
+    /**
+     * Fetches reference metadata from the doi.org content negotiation API.
+     *
+     * @param doi - The DOI string (e.g., "10.1098/rsos.161086").
+     * @returns A promise resolving to a reference object, or null.
+     */
+    async function fetchDoiReference(doi)
+    {
+        const response = await fetch(
+            `https://doi.org/${encodeURIComponent(doi)}`,
+            {
+                headers: { "Accept": "application/citeproc+json" },
+                redirect: "follow",
+            },
+        );
+
+        if (!response.ok)
+        {
+            return null;
+        }
+
+        const data = await response.json();
+        const reference = {};
+
+        if (data.author)
+        {
+            reference.authors = data.author
+                .map((author) => [author.family, author.given].filter(Boolean).join(", "))
+                .join("; ");
+        }
+
+        if (data.issued?.["date-parts"]?.[0])
+        {
+            reference.year = String(data.issued["date-parts"][0][0]);
+        }
+
+        if (data.title)
+        {
+            reference.title = Array.isArray(data.title) ? data.title[0] : data.title;
+        }
+
+        if (data["container-title"])
+        {
+            reference.journal = Array.isArray(data["container-title"])
+                ? data["container-title"][0]
+                : data["container-title"];
+        }
+
+        if (data.volume)
+        {
+            reference.volume = String(data.volume);
+        }
+
+        if (data.issue)
+        {
+            reference.issue = String(data.issue);
+        }
+
+        if (data.page && !(data.DOI && data.DOI.includes(data.page)))
+        {
+            reference.pages = data.page;
+        }
+
+        if (data.DOI)
+        {
+            reference.doi = data.DOI;
+        }
+
+        if (data.publisher)
+        {
+            reference.publisher = data.publisher;
+        }
+
+        return reference;
     }
 
     /**
