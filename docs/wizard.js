@@ -2113,7 +2113,18 @@
         submitButton.textContent = "Submit Contribution";
         submitButton.addEventListener("click", () => window.IssueBuilder.submit());
 
+        const doneButton = document.createElement("button");
+        doneButton.className = "done-btn";
+        doneButton.type = "button";
+        doneButton.textContent = "Done";
+        doneButton.addEventListener("click", () =>
+        {
+            returnToLanding();
+            history.pushState(null, "");
+        });
+
         submitRow.appendChild(submitButton);
+        submitRow.appendChild(doneButton);
 
         fragment.appendChild(submitRow);
 
