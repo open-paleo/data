@@ -17,6 +17,7 @@
     const next = document.getElementById("btn-next");
 
     let flow = null;
+    let flowId = null;
     let stepIndex = 0;
     let values = {};
     let currentValues = {};
@@ -88,14 +89,15 @@
      * Starts a new wizard flow, resetting all state and rendering
      * the first step.
      *
-     * @param flowId - The flow identifier (e.g., "add-genus").
+     * @param id - The flow identifier (e.g., "add-genus").
      */
-    function startFlow(flowId)
+    function startFlow(id)
     {
-        flow = window.Flows.get(flowId);
+        flow = window.Flows.get(id);
 
         if (flow)
         {
+            flowId = id;
             stepIndex = 0;
             values = {};
             currentValues = {};
@@ -117,6 +119,7 @@
         wizardSection.hidden = true;
         landing.hidden = false;
         flow = null;
+        flowId = null;
     }
 
     // Navigation
@@ -148,7 +151,7 @@
      */
     function pushState()
     {
-        history.pushState({ flowId: flow.label, stepIndex: stepIndex }, "");
+        history.pushState({ flowId: flowId, stepIndex: stepIndex }, "");
     }
 
     /**
@@ -183,6 +186,7 @@
             if (flow !== restoredFlow)
             {
                 flow = restoredFlow;
+                flowId = event.state.flowId;
                 landing.hidden = true;
                 wizardSection.hidden = false;
             }
@@ -878,7 +882,7 @@
             reference.issue = String(data.issue);
         }
 
-        if (data.page)
+        if (data.page && !(data.DOI && data.DOI.includes(data.page)))
         {
             reference.pages = data.page;
         }
@@ -2098,23 +2102,6 @@
         if (flow.label !== "Proposal")
         {
             fragment.appendChild(buildYamlPreview());
-        }
-
-        const url = window.IssueBuilder.buildUrl(
-            flow,
-            values,
-            isUpdate ? currentValues : null,
-            selectedSpecies,
-        );
-
-        if (url.length > 7500)
-        {
-            const warning = document.createElement("div");
-
-            warning.className = "url-warning";
-            warning.textContent = `Warning: The issue URL is approaching GitHub\u2019s ~8KB limit (${url.length} characters). Consider shortening some text fields.`;
-
-            fragment.appendChild(warning);
         }
 
         const submitRow = document.createElement("div");
