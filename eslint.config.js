@@ -152,6 +152,7 @@ export default tseslint.config(
                 history: "readonly",
                 URLSearchParams: "readonly",
                 encodeURIComponent: "readonly",
+                navigator: "readonly",
             },
         },
         plugins: {
