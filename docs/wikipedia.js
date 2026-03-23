@@ -164,10 +164,11 @@ window.Wikipedia = (function ()
 
         const referenceNo = taxon.reference_no ?? "";
 
-        const [childResult, occurrenceResult, referenceResult] = await Promise.allSettled([
+        const [childResult, occurrenceResult, referenceResult, holotypeResult] = await Promise.allSettled([
             fetchPbdbTypeSpecies(name),
             fetchPbdbOccurrence(name),
             referenceNo ? fetchPbdbReferenceDoi(referenceNo) : Promise.resolve(null),
+            fetchPbdbHolotype(name),
         ]);
 
         if (childResult.status === "fulfilled" && childResult.value)
@@ -189,6 +190,11 @@ window.Wikipedia = (function ()
             result.region = occurrence.state ?? "";
             result.latitude = occurrence.lat ?? "";
             result.longitude = occurrence.lng ?? "";
+        }
+
+        if (holotypeResult.status === "fulfilled" && holotypeResult.value)
+        {
+            result.holotype = holotypeResult.value;
         }
 
         return result;
@@ -250,6 +256,92 @@ window.Wikipedia = (function ()
         const data = await response.json();
 
         return data.records?.[0] ?? null;
+    }
+
+    const museumNames = {
+        "AMNH": "American Museum of Natural History",
+        "ANSP": "Academy of Natural Sciences of Drexel University",
+        "BHI": "Black Hills Institute of Geological Research",
+        "BMNH": "Natural History Museum, London",
+        "BSP": "Bayerische Staatssammlung für Paläontologie und Geologie",
+        "CM": "Carnegie Museum of Natural History",
+        "CMN": "Canadian Museum of Nature",
+        "DMNH": "Denver Museum of Nature and Science",
+        "FMNH": "Field Museum of Natural History",
+        "GIN": "Geological Institute, Mongolian Academy of Sciences",
+        "GSC": "Geological Survey of Canada",
+        "HMN": "Museum für Naturkunde, Berlin",
+        "ICZM": "Institute of Comparative Zoology Museum",
+        "IVPP": "Institute of Vertebrate Paleontology and Paleoanthropology",
+        "LACM": "Natural History Museum of Los Angeles County",
+        "MCZ": "Museum of Comparative Zoology, Harvard",
+        "MLP": "Museo de La Plata",
+        "MNHN": "Muséum national d'histoire naturelle, Paris",
+        "MOR": "Museum of the Rockies",
+        "NHMUK": "Natural History Museum, London",
+        "NMC": "Canadian Museum of Nature",
+        "OMNH": "Sam Noble Oklahoma Museum of Natural History",
+        "PIN": "Paleontological Institute, Russian Academy of Sciences",
+        "ROM": "Royal Ontario Museum",
+        "SAM": "South African Museum",
+        "SMA": "Sauriermuseum Aathal",
+        "SMNS": "Staatliches Museum für Naturkunde Stuttgart",
+        "TMP": "Royal Tyrrell Museum of Palaeontology",
+        "UCMP": "University of California Museum of Paleontology",
+        "UMNH": "Utah Museum of Natural History",
+        "UNSM": "University of Nebraska State Museum",
+        "USNM": "Smithsonian National Museum of Natural History",
+        "YPM": "Yale Peabody Museum of Natural History",
+        "ZPAL": "Institute of Paleobiology, Polish Academy of Sciences",
+    };
+
+    /**
+     * Fetches holotype specimen data from PBDB for a genus, returning
+     * the specimen ID and institution name.
+     *
+     * @param name - The genus name.
+     * @returns A promise resolving to { specimenId, institution }, or null.
+     */
+    async function fetchPbdbHolotype(name)
+    {
+        const params = new URLSearchParams({
+            base_name: name,
+            spectype: "holo",
+            show: "methods",
+            vocab: "pbdb",
+            limit: "1",
+        });
+
+        const response = await fetch(`${pbdbApiBase}/specs/list.json?${params}`);
+
+        if (!response.ok)
+        {
+            return null;
+        }
+
+        const data = await response.json();
+        const record = data.records?.[0];
+
+        if (!record)
+        {
+            return null;
+        }
+
+        const result = {};
+
+        if (record.specimen_id)
+        {
+            result.specimenId = record.specimen_id;
+        }
+
+        if (record.museum)
+        {
+            const abbreviation = record.museum.split(",")[0].trim();
+
+            result.institution = museumNames[abbreviation] ?? abbreviation;
+        }
+
+        return result.specimenId || result.institution ? result : null;
     }
 
     /**
@@ -498,6 +590,27 @@ window.Wikipedia = (function ()
         {
             results["_id_pbdb"] = String(pbdb.taxonNumber);
         }
+
+        if (pbdb.holotype)
+        {
+            if (pbdb.holotype.specimenId)
+            {
+                results["Holotype specimen ID"] = {
+                    value: pbdb.holotype.specimenId,
+                    source: "PBDB",
+                    fieldType: "text",
+                };
+            }
+
+            if (pbdb.holotype.institution)
+            {
+                results["Holotype institution"] = {
+                    value: pbdb.holotype.institution,
+                    source: "PBDB",
+                    fieldType: "text",
+                };
+            }
+        }
     }
 
     /**
@@ -638,6 +751,20 @@ window.Wikipedia = (function ()
             }
         }
 
+        if (!results["Integument"] && wikitext.summary)
+        {
+            const integument = inferIntegument(wikitext.summary);
+
+            if (integument)
+            {
+                results["Integument"] = {
+                    value: integument,
+                    source: "Wikipedia",
+                    fieldType: "select",
+                };
+            }
+        }
+
         if (wikitext.ipa && !results["Pronunciation (IPA)"])
         {
             results["Pronunciation (IPA)"] = {
@@ -684,6 +811,24 @@ window.Wikipedia = (function ()
         {
             results["Estimated weight (kg)"] = {
                 value: wikidata.mass,
+                source: "Wikidata",
+                fieldType: "text",
+            };
+        }
+
+        if (wikidata.length && !results["Estimated length (m)"])
+        {
+            results["Estimated length (m)"] = {
+                value: wikidata.length,
+                source: "Wikidata",
+                fieldType: "text",
+            };
+        }
+
+        if (wikidata.hipHeight && !results["Estimated hip height (m)"])
+        {
+            results["Estimated hip height (m)"] = {
+                value: wikidata.hipHeight,
                 source: "Wikidata",
                 fieldType: "text",
             };
@@ -791,6 +936,8 @@ window.Wikipedia = (function ()
         result.typeSpecies = await resolveClaimLabel(claims, "P427");
         result.diet = await resolveClaimLabel(claims, "P186");
         result.mass = extractMass(claims);
+        result.length = extractLength(claims, "P2043");
+        result.hipHeight = extractLength(claims, "P2048");
         result.gbifId = extractStringClaim(claims, "P846");
         result.eolId = extractStringClaim(claims, "P830");
         result.zoobankId = extractStringClaim(claims, "P1746");
@@ -890,6 +1037,54 @@ window.Wikipedia = (function ()
         }
 
         return String(Math.round(kilograms));
+    }
+
+    /**
+     * Extracts a length or height in metres from a Wikidata quantity claim.
+     * Handles metre (Q11573), centimetre (Q174728), and foot (Q3710) units.
+     *
+     * @param claims - The entity claims object.
+     * @param property - The Wikidata property ID (e.g., "P2043").
+     * @returns The length in metres as a string, or null if not found.
+     */
+    function extractLength(claims, property)
+    {
+        const claimList = claims[property];
+
+        if (!claimList || claimList.length === 0)
+        {
+            return null;
+        }
+
+        const mainsnak = claimList[0].mainsnak;
+
+        if (!mainsnak || mainsnak.snaktype !== "value" || !mainsnak.datavalue)
+        {
+            return null;
+        }
+
+        const amount = mainsnak.datavalue.value?.amount;
+        const unit = mainsnak.datavalue.value?.unit ?? "";
+
+        if (!amount)
+        {
+            return null;
+        }
+
+        let metres = parseFloat(amount.replace("+", ""));
+
+        if (unit.includes("Q174728"))
+        {
+            metres = metres / 100;
+        }
+        else if (unit.includes("Q3710"))
+        {
+            metres = metres * 0.3048;
+        }
+
+        const rounded = Math.round(metres * 10) / 10;
+
+        return String(rounded);
     }
 
     /**
@@ -1329,6 +1524,37 @@ window.Wikipedia = (function ()
         else if (lowerText.includes("quadrupedal") || lowerText.includes("four-legged"))
         {
             return "quadrupedal";
+        }
+
+        return null;
+    }
+
+    /**
+     * Infers an integument type from article summary text by looking for
+     * keywords like "feathered", "scaled", "armored", etc.
+     *
+     * @param text - The summary or description text to scan.
+     * @returns A matching schema integument value, or null.
+     */
+    function inferIntegument(text)
+    {
+        const lowerText = text.toLowerCase();
+
+        const patterns = [
+            { keywords: ["feathered", "feathers", "plumage", "pennaceous", "downy"], integument: "feathered" },
+            { keywords: ["armored", "armoured", "osteoderms", "scutes", "bony plates", "body armor", "body armour"], integument: "armored" },
+            { keywords: ["scaled", "scales"], integument: "scaled" },
+        ];
+
+        for (const pattern of patterns)
+        {
+            for (const keyword of pattern.keywords)
+            {
+                if (lowerText.includes(keyword))
+                {
+                    return pattern.integument;
+                }
+            }
         }
 
         return null;
