@@ -142,6 +142,24 @@ window.OpenPaleo = (function ()
     }
 
     /**
+     * Returns the period that a given stage belongs to.
+     *
+     * @param stageName - The stage name (e.g., "Maastrichtian").
+     * @returns The period name (e.g., "Late Cretaceous"), or null.
+     */
+    function getPeriodForStage(stageName)
+    {
+        if (!schema || !schema.stages)
+        {
+            return null;
+        }
+
+        const info = schema.stages[stageName];
+
+        return info ? info.period : null;
+    }
+
+    /**
      * Returns the list of known identifier sources from the schema.
      *
      * @returns A sorted array of identifier source strings.
@@ -164,6 +182,7 @@ window.OpenPaleo = (function ()
         getSpecies: getSpecies,
         getClades: getClades,
         getStagesForPeriod: getStagesForPeriod,
+        getPeriodForStage: getPeriodForStage,
         getIdentifierSources: getIdentifierSources,
     };
 })();
