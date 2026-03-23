@@ -5,7 +5,7 @@
  * and ecological data; Wikipedia/Wikidata fill in descriptions, etymology,
  * and identifiers.
  */
-window.Wikipedia = (function ()
+window.DataImport = (function ()
 {
     "use strict";
 
