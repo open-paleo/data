@@ -80,6 +80,17 @@ window.Wikipedia = (function ()
             }
         }
 
+        const identifierLines = collectIdentifiers(results);
+
+        if (identifierLines.length > 0)
+        {
+            results["External identifiers"] = {
+                value: identifierLines.join("\n"),
+                source: "PBDB / Wikidata",
+                fieldType: "textarea",
+            };
+        }
+
         return results;
     }
 
@@ -115,6 +126,7 @@ window.Wikipedia = (function ()
 
         const result = {
             taxonName: taxon.taxon_name ?? "",
+            taxonNumber: taxon.taxon_no ?? "",
             authority: taxon.taxon_attr ?? "",
             diet: taxon.diet ?? "",
             locomotion: taxon.motility ?? "",
@@ -345,6 +357,11 @@ window.Wikipedia = (function ()
                 fieldType: "text",
             };
         }
+
+        if (pbdb.taxonNumber)
+        {
+            results["_id_pbdb"] = String(pbdb.taxonNumber);
+        }
     }
 
     /**
@@ -552,11 +569,22 @@ window.Wikipedia = (function ()
 
         if (wikidata.qid)
         {
-            results["External identifiers"] = {
-                value: `wikidata: ${wikidata.qid}`,
-                source: "Wikidata",
-                fieldType: "textarea",
-            };
+            results["_id_wikidata"] = wikidata.qid;
+        }
+
+        if (wikidata.gbifId)
+        {
+            results["_id_gbif"] = wikidata.gbifId;
+        }
+
+        if (wikidata.eolId)
+        {
+            results["_id_eol"] = wikidata.eolId;
+        }
+
+        if (wikidata.zoobankId)
+        {
+            results["_id_zoobank"] = wikidata.zoobankId;
         }
     }
 
@@ -627,6 +655,9 @@ window.Wikipedia = (function ()
         result.typeSpecies = await resolveClaimLabel(claims, "P427");
         result.diet = await resolveClaimLabel(claims, "P186");
         result.mass = extractMass(claims);
+        result.gbifId = extractStringClaim(claims, "P846");
+        result.eolId = extractStringClaim(claims, "P830");
+        result.zoobankId = extractStringClaim(claims, "P1746");
 
         return result;
     }
@@ -723,6 +754,32 @@ window.Wikipedia = (function ()
         }
 
         return String(Math.round(kilograms));
+    }
+
+    /**
+     * Extracts a plain string value from a Wikidata claim property.
+     *
+     * @param claims - The entity claims object.
+     * @param property - The Wikidata property ID (e.g., "P846").
+     * @returns The string value, or null if not found.
+     */
+    function extractStringClaim(claims, property)
+    {
+        const claimList = claims[property];
+
+        if (!claimList || claimList.length === 0)
+        {
+            return null;
+        }
+
+        const mainsnak = claimList[0].mainsnak;
+
+        if (!mainsnak || mainsnak.snaktype !== "value")
+        {
+            return null;
+        }
+
+        return mainsnak.datavalue?.value ?? null;
     }
 
     /**
@@ -1139,6 +1196,33 @@ window.Wikipedia = (function ()
         }
 
         return null;
+    }
+
+    /**
+     * Collects external identifiers from internal result keys (prefixed
+     * with "_id_") and returns them as "source: id" lines. Deletes the
+     * internal keys from the results object.
+     *
+     * @param results - The results object with _id_ prefixed keys.
+     * @returns An array of "source: id" strings.
+     */
+    function collectIdentifiers(results)
+    {
+        const sourceOrder = ["wikidata", "pbdb", "gbif", "eol", "zoobank"];
+        const lines = [];
+
+        for (const source of sourceOrder)
+        {
+            const key = `_id_${source}`;
+
+            if (results[key])
+            {
+                lines.push(`${source}: ${results[key]}`);
+                delete results[key];
+            }
+        }
+
+        return lines;
     }
 
     /**
