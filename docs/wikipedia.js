@@ -66,6 +66,20 @@ window.Wikipedia = (function ()
             mapWikidataResults(wikidata, results);
         }
 
+        if (results["Stage"] && !results["Period"])
+        {
+            const period = window.OpenPaleo.getPeriodForStage(results["Stage"].value);
+
+            if (period)
+            {
+                results["Period"] = {
+                    value: period,
+                    source: results["Stage"].source,
+                    fieldType: "select",
+                };
+            }
+        }
+
         return results;
     }
 
