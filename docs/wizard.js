@@ -2363,7 +2363,7 @@
     };
 
     /**
-     * Creates the "Import from Wikipedia" button element with its click handler.
+     * Creates the "Import Data" button element with its click handler.
      * Shows a loading spinner during fetch, then opens the import modal.
      *
      * @returns The button DOM element.
@@ -2405,7 +2405,7 @@
 
                 try
                 {
-                    const results = await window.Wikipedia.fetchGenus(genusName);
+                    const results = await window.DataImport.fetchGenus(genusName);
 
                     window.ImportModal.show(
                         results,
@@ -2418,7 +2418,7 @@
                 }
                 catch (fetchError)
                 {
-                    console.error("Wikipedia import failed:", fetchError);
+                    console.error("Data import failed:", fetchError);
 
                     window.ImportModal.show({}, null, genusName);
                 }
