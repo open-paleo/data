@@ -1174,9 +1174,63 @@ window.YamlBuilder = (function ()
         return result.join("\n");
     }
 
+    /**
+     * Returns the file path for a clade YAML file.
+     *
+     * @param cladeName - The clade name.
+     * @returns The path string, e.g. "clades/Tyrannosauridae.yml".
+     */
+    function cladeFilePath(cladeName)
+    {
+        return `clades/${cladeName}.yml`;
+    }
+
+    /**
+     * Builds a complete clade data object from wizard form values
+     * for the Add Clade flow.
+     *
+     * @param values - The wizard values keyed by field header.
+     * @returns A clade data object ready for YAML serialization.
+     */
+    function buildNewClade(values)
+    {
+        const cladeData = {
+            clade: values["Clade name"] ?? "",
+            description: values["Description"] ?? "",
+        };
+
+        if (values["Year described"])
+        {
+            cladeData.described = parseInt(values["Year described"]);
+        }
+
+        if (values["Authors"])
+        {
+            cladeData.authors = values["Authors"];
+        }
+
+        const diagnosticFeatures = parseLines(values["Diagnostic features"]);
+
+        if (diagnosticFeatures.length > 0)
+        {
+            cladeData.diagnostic_features = diagnosticFeatures;
+        }
+
+        const references = cleanReferences(values["References"]);
+
+        if (references.length > 0)
+        {
+            cladeData.references = references;
+        }
+
+        return cladeData;
+    }
+
     return {
         filePath: filePath,
+        cladeFilePath: cladeFilePath,
         serializeYaml: serializeYaml,
+        buildNewClade: buildNewClade,
         buildNewGenus: buildNewGenus,
         buildSpeciesEntry: buildSpeciesEntry,
         applyGenusUpdate: applyGenusUpdate,

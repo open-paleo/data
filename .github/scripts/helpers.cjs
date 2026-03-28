@@ -383,12 +383,187 @@ function serializeYaml(data)
     return result;
 }
 
+/**
+ * Extract the tree-parent metadata from an HTML comment in the issue body.
+ *
+ * @param {string} body - The raw markdown body of the issue.
+ * @returns {string | null} The parent clade name, or null if not found.
+ */
+function extractTreeParent(body)
+{
+    const match = body.match(/<!--\s*tree-parent:\s*(.+?)\s*-->/);
+
+    return match ? match[1].trim() : null;
+}
+
+/**
+ * Read a file from the repository via the GitHub API.
+ *
+ * @param {object} github - Octokit instance.
+ * @param {{ owner: string, repo: string }} repo - Repository coordinates.
+ * @param {string} filePath - Path to the file in the repo.
+ * @returns {Promise<{ content: string, sha: string } | null>} The file content and SHA, or null.
+ */
+async function readFileContent(github, repo, filePath)
+{
+    let fileData;
+
+    try
+    {
+        fileData = await github.rest.repos.getContent({
+            owner: repo.owner,
+            repo: repo.repo,
+            path: filePath,
+            ref: "main",
+        });
+    }
+    catch
+    {
+        return null;
+    }
+
+    const content = Buffer.from(fileData.data.content, "base64").toString();
+
+    return { content, sha: fileData.data.sha };
+}
+
+/**
+ * Create a branch, commit multiple files, open a PR, label the issue,
+ * and post a comment linking to the new PR.
+ *
+ * @param {object} options
+ * @param {object} options.github - Octokit instance.
+ * @param {{ owner: string, repo: string }} options.repo - Repository coordinates.
+ * @param {number} options.issueNumber - Originating issue number.
+ * @param {string} options.issueAuthor - GitHub login of the issue author.
+ * @param {Array<{ path: string, content: string }>} options.files - Files to commit.
+ * @param {string} options.branchName - Branch name for the PR.
+ * @param {string} options.commitMessage - Commit message.
+ * @param {string} options.prTitle - Pull request title.
+ * @param {string} options.prBody - Pull request body text.
+ */
+async function createMultiFilePR({
+    github,
+    repo,
+    issueNumber,
+    issueAuthor,
+    files,
+    branchName,
+    commitMessage,
+    prTitle,
+    prBody,
+})
+{
+    const mainRef = await github.rest.git.getRef({
+        owner: repo.owner,
+        repo: repo.repo,
+        ref: "heads/main",
+    });
+
+    const baseSha = mainRef.data.object.sha;
+
+    try
+    {
+        await github.rest.git.deleteRef({
+            owner: repo.owner,
+            repo: repo.repo,
+            ref: `heads/${branchName}`,
+        });
+    }
+    catch
+    {
+        // Branch does not exist yet — nothing to delete
+    }
+
+    await github.rest.git.createRef({
+        owner: repo.owner,
+        repo: repo.repo,
+        ref: `refs/heads/${branchName}`,
+        sha: baseSha,
+    });
+
+    // Create blobs for each file
+    const blobs = [];
+
+    for (const file of files)
+    {
+        const blob = await github.rest.git.createBlob({
+            owner: repo.owner,
+            repo: repo.repo,
+            content: Buffer.from(file.content).toString("base64"),
+            encoding: "base64",
+        });
+
+        blobs.push({ path: file.path, sha: blob.data.sha });
+    }
+
+    // Create tree with all file entries
+    const tree = await github.rest.git.createTree({
+        owner: repo.owner,
+        repo: repo.repo,
+        base_tree: baseSha,
+        tree: blobs.map((blob) => ({
+            path: blob.path,
+            mode: "100644",
+            type: "blob",
+            sha: blob.sha,
+        })),
+    });
+
+    // Create commit
+    const commit = await github.rest.git.createCommit({
+        owner: repo.owner,
+        repo: repo.repo,
+        message: `${commitMessage}\n\nCloses #${issueNumber}`,
+        tree: tree.data.sha,
+        parents: [baseSha],
+        committer: {
+            name: issueAuthor,
+            email: `${issueAuthor}@users.noreply.github.com`,
+        },
+    });
+
+    // Update branch to point to new commit
+    await github.rest.git.updateRef({
+        owner: repo.owner,
+        repo: repo.repo,
+        ref: `heads/${branchName}`,
+        sha: commit.data.sha,
+    });
+
+    const pr = await github.rest.pulls.create({
+        owner: repo.owner,
+        repo: repo.repo,
+        title: prTitle,
+        body: `${prBody}\n\nCloses #${issueNumber}\n\nSubmitted by @${issueAuthor}`,
+        head: branchName,
+        base: "main",
+    });
+
+    await github.rest.issues.addLabels({
+        owner: repo.owner,
+        repo: repo.repo,
+        issue_number: issueNumber,
+        labels: ["In Progress"],
+    });
+
+    await github.rest.issues.createComment({
+        owner: repo.owner,
+        repo: repo.repo,
+        issue_number: issueNumber,
+        body: `\u2705 PR created: ${pr.data.html_url}`,
+    });
+}
+
 module.exports = {
     extractPatchMeta,
     extractYamlBlock,
     extractDiffBlock,
+    extractTreeParent,
     readGenusFile,
+    readFileContent,
     createPR,
+    createMultiFilePR,
     applyPatch,
     commentError,
     serializeYaml,

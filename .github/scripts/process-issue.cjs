@@ -11,8 +11,11 @@ const {
     extractPatchMeta,
     extractYamlBlock,
     extractDiffBlock,
+    extractTreeParent,
     readGenusFile,
+    readFileContent,
     createPR,
+    createMultiFilePR,
     applyPatch,
     commentError,
     serializeYaml,
@@ -66,13 +69,17 @@ module.exports = async function ({ github, context })
             await handleYamlUpdate({ github, repo, issueNumber, issueAuthor, meta, body });
         }
     }
+    else if (meta.action === "create-clade")
+    {
+        await handleCreateClade({ github, repo, issueNumber, issueAuthor, meta, body });
+    }
     else
     {
         await commentError(
             github,
             repo,
             issueNumber,
-            `Unknown action: "${meta.action}". Expected "create" or "update".`,
+            `Unknown action: "${meta.action}". Expected "create", "update", or "create-clade".`,
             "Needs More Information",
         );
     }
@@ -388,5 +395,220 @@ async function handleYamlUpdate({ github, repo, issueNumber, issueAuthor, meta, 
         branchName: `update/${genusName.toLowerCase()}-${issueNumber}`,
         prTitle: `Update ${genusName}`,
         prBody: `Updates ${genusName} in the dataset.`,
+    });
+}
+
+/**
+ * Recursively searches for a key in a nested tree object and adds
+ * a new child key under it with an empty object value.
+ *
+ * @param {object} node - The current tree node.
+ * @param {string} parentKey - The key to find.
+ * @param {string} childKey - The key to insert as a child.
+ * @returns {boolean} True if the parent was found and the child inserted.
+ */
+function insertIntoTree(node, parentKey, childKey)
+{
+    for (const [key, children] of Object.entries(node))
+    {
+        if (key === parentKey)
+        {
+            if (!children || typeof children !== "object")
+            {
+                node[key] = {};
+            }
+
+            node[key][childKey] = {};
+
+            return true;
+        }
+
+        if (children && typeof children === "object")
+        {
+            if (insertIntoTree(children, parentKey, childKey))
+            {
+                return true;
+            }
+        }
+    }
+
+    return false;
+}
+
+/**
+ * Handles a "create-clade" action — extracts clade YAML from the
+ * issue body, inserts the new clade into tree.yml, and creates a
+ * clade definition file.
+ *
+ * @param {object} options
+ * @param {object} options.github - Octokit instance.
+ * @param {{ owner: string, repo: string }} options.repo - Repository coordinates.
+ * @param {number} options.issueNumber - Originating issue number.
+ * @param {string} options.issueAuthor - GitHub login of the issue author.
+ * @param {{ path: string, action: string }} options.meta - Extracted patch metadata.
+ * @param {string} options.body - The raw issue body.
+ */
+async function handleCreateClade({ github, repo, issueNumber, issueAuthor, meta, body })
+{
+    const treeParent = extractTreeParent(body);
+
+    if (!treeParent)
+    {
+        await commentError(
+            github,
+            repo,
+            issueNumber,
+            "Could not find tree-parent metadata in the issue body.",
+            "Needs More Information",
+        );
+
+        return;
+    }
+
+    const yamlContent = extractYamlBlock(body);
+
+    if (!yamlContent)
+    {
+        await commentError(
+            github,
+            repo,
+            issueNumber,
+            "Could not find a YAML code block in the issue body.",
+            "Needs More Information",
+        );
+
+        return;
+    }
+
+    let parsed;
+
+    try
+    {
+        parsed = YAML.parse(yamlContent);
+    }
+    catch (parseError)
+    {
+        await commentError(
+            github,
+            repo,
+            issueNumber,
+            `Failed to parse YAML: ${parseError.message}`,
+            "Needs More Information",
+        );
+
+        return;
+    }
+
+    if (!parsed || !parsed.clade)
+    {
+        await commentError(
+            github,
+            repo,
+            issueNumber,
+            "The YAML content is missing a required 'clade' field.",
+            "Needs More Information",
+        );
+
+        return;
+    }
+
+    const cladeName = parsed.clade;
+    const expectedPath = `clades/${cladeName}.yml`;
+
+    if (meta.path !== expectedPath)
+    {
+        await commentError(
+            github,
+            repo,
+            issueNumber,
+            `File path mismatch: expected "${expectedPath}" but got "${meta.path}".`,
+            "Needs More Information",
+        );
+
+        return;
+    }
+
+    // Check that the clade file doesn't already exist
+    const existingClade = await readFileContent(github, repo, expectedPath);
+
+    if (existingClade)
+    {
+        await commentError(
+            github,
+            repo,
+            issueNumber,
+            `Clade file "${expectedPath}" already exists.`,
+        );
+
+        return;
+    }
+
+    // Read and modify tree.yml
+    const treeFile = await readFileContent(github, repo, "tree.yml");
+
+    if (!treeFile)
+    {
+        await commentError(
+            github,
+            repo,
+            issueNumber,
+            "Could not read tree.yml from the repository.",
+            "Needs More Information",
+        );
+
+        return;
+    }
+
+    let tree;
+
+    try
+    {
+        tree = YAML.parse(treeFile.content);
+    }
+    catch (parseError)
+    {
+        await commentError(
+            github,
+            repo,
+            issueNumber,
+            `Failed to parse tree.yml: ${parseError.message}`,
+            "Needs More Information",
+        );
+
+        return;
+    }
+
+    if (!insertIntoTree(tree, treeParent, cladeName))
+    {
+        await commentError(
+            github,
+            repo,
+            issueNumber,
+            `Parent clade "${treeParent}" not found in tree.yml.`,
+            "Needs More Information",
+        );
+
+        return;
+    }
+
+    // Serialize tree — use lineWidth: 0 to prevent wrapping of the nested structure
+    const treeDocument = new YAML.Document(tree);
+    const treeYaml = treeDocument.toString({ lineWidth: 0 });
+
+    const cladeYaml = serializeYaml(parsed);
+
+    await createMultiFilePR({
+        github,
+        repo,
+        issueNumber,
+        issueAuthor,
+        files: [
+            { path: "tree.yml", content: treeYaml },
+            { path: expectedPath, content: cladeYaml },
+        ],
+        branchName: `clade/${cladeName.toLowerCase()}`,
+        commitMessage: `Add clade: ${cladeName}`,
+        prTitle: `Add clade: ${cladeName}`,
+        prBody: `Adds ${cladeName} to the taxonomy tree under ${treeParent}.`,
     });
 }
