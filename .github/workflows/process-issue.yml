@@ -14,6 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     if: >
       contains(github.event.issue.labels.*.name, 'Add Genus') ||
+      contains(github.event.issue.labels.*.name, 'Add Clade') ||
       contains(github.event.issue.labels.*.name, 'Taxonomy') ||
       contains(github.event.issue.labels.*.name, 'Update Genus') ||
       contains(github.event.issue.labels.*.name, 'Add Species') ||

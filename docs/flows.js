@@ -231,6 +231,31 @@ window.Flows = (function ()
         ],
     };
 
+    const addClade = {
+        label: "Add Clade",
+        titlePrefix: "Add clade: ",
+        titleField: "Clade name",
+        steps: [
+            {
+                name: "Clade basics",
+                fields: [
+                    { header: "Clade name", type: "text", required: true, placeholder: "e.g., Megaraptoridae", validate: "newClade" },
+                    { header: "Parent clade", type: "search", required: true, optionsKey: "clades" },
+                    { header: "Description", type: "textarea", required: true },
+                    { header: "Year described", type: "text", placeholder: "e.g., 2010", validate: "year" },
+                    { header: "Authors", type: "text", placeholder: "e.g., Benson et al." },
+                ],
+            },
+            {
+                name: "Details & references",
+                fields: [
+                    { header: "Diagnostic features", type: "textarea", placeholder: "One per line" },
+                    { header: "References", type: "references", required: true },
+                ],
+            },
+        ],
+    };
+
     const correctTaxonomy = {
         label: "Taxonomy",
         titlePrefix: "Reclassify: ",
@@ -283,6 +308,7 @@ window.Flows = (function ()
     const all = {
         "add-genus": addGenus,
         "add-species": addSpecies,
+        "add-clade": addClade,
         "update-genus": updateGenus,
         "update-species": updateSpecies,
         "correct-taxonomy": correctTaxonomy,

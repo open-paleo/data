@@ -387,6 +387,20 @@
                 return null;
             }
 
+            case "newClade":
+            {
+                const cladeName = String(value).trim().toLowerCase();
+                const cladeMatch = window.OpenPaleo.getClades()
+                    .find((key) => key.toLowerCase() === cladeName);
+
+                if (cladeMatch)
+                {
+                    return `"${cladeMatch}" already exists in the taxonomy tree`;
+                }
+
+                return null;
+            }
+
             case "newSpecies":
             {
                 const speciesName = String(value).trim().toLowerCase();
@@ -1591,9 +1605,32 @@
                     list.appendChild(listItem);
                 }
 
-                const isOpen = filtered.length > 0;
-                list.classList.toggle("open", isOpen);
-                input.setAttribute("aria-expanded", String(isOpen));
+                if (filter && filtered.length === 0)
+                {
+                    const emptyItem = document.createElement("li");
+
+                    emptyItem.className = "search-dropdown-empty";
+
+                    if (field.optionsKey === "clades")
+                    {
+                        emptyItem.innerHTML =
+                            "No matching clades. <a href=\"?flow=add-clade\" class=\"search-dropdown-link\">Add a new clade</a>";
+                    }
+                    else
+                    {
+                        emptyItem.textContent = "No results found";
+                    }
+
+                    list.appendChild(emptyItem);
+                    list.classList.add("open");
+                    input.setAttribute("aria-expanded", "true");
+                }
+                else
+                {
+                    const isOpen = filtered.length > 0;
+                    list.classList.toggle("open", isOpen);
+                    input.setAttribute("aria-expanded", String(isOpen));
+                }
             }
 
             /**

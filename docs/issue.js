@@ -42,6 +42,16 @@ window.IssueBuilder = (function ()
      */
     function buildPatchBody(flow, values, currentValues, selectedSpecies)
     {
+        if (flow.label === "Add Clade")
+        {
+            const cladeName = values["Clade name"] ?? "";
+            const cladePath = window.YamlBuilder.cladeFilePath(cladeName);
+            const cladeData = buildTargetData(flow, values, currentValues, selectedSpecies);
+            const cladeYaml = window.YamlBuilder.serializeYaml(cladeData);
+
+            return buildCladeCreateBody(cladePath, cladeYaml, values);
+        }
+
         const genusName = values["Genus name"] ?? "";
         const yamlPath = window.YamlBuilder.filePath(genusName);
         const targetData = buildTargetData(flow, values, currentValues, selectedSpecies);
@@ -134,6 +144,50 @@ window.IssueBuilder = (function ()
     }
 
     /**
+     * Builds the issue body for a create-clade action with full YAML
+     * content and tree-parent metadata.
+     *
+     * @param yamlPath - The target clade file path.
+     * @param afterYaml - The serialized clade YAML content.
+     * @param values - The wizard values for optional notes.
+     * @returns The formatted issue body string.
+     */
+    function buildCladeCreateBody(yamlPath, afterYaml, values)
+    {
+        const diffText = window.YamlBuilder.computeDiff("", afterYaml);
+        const treeParent = values["Parent clade"] ?? "";
+
+        const sections = [
+            `<!-- yaml-path: ${yamlPath} -->`,
+            "<!-- yaml-action: create-clade -->",
+            `<!-- tree-parent: ${treeParent} -->`,
+            "",
+            "## Proposed Changes",
+            "",
+            "<details><summary>View diff</summary>",
+            "",
+            "```diff",
+            diffText,
+            "```",
+            "",
+            "</details>",
+            "",
+            "### Full YAML",
+            "",
+            "```yaml",
+            afterYaml.trimEnd(),
+            "```",
+        ];
+
+        if (values["Notes"])
+        {
+            sections.push("", "### Notes", "", values["Notes"]);
+        }
+
+        return sections.join("\n");
+    }
+
+    /**
      * Builds the target YAML data object based on the flow type.
      *
      * @param flow - The active flow definition.
@@ -150,6 +204,9 @@ window.IssueBuilder = (function ()
 
         switch (flow.label)
         {
+            case "Add Clade":
+                return window.YamlBuilder.buildNewClade(values);
+
             case "Add Genus":
                 return window.YamlBuilder.buildNewGenus(values);
 
