@@ -5,6 +5,10 @@ on:
     branches: [main]
     paths:
       - "docs/**"
+  workflow_run:
+    workflows: [Build]
+    types: [completed]
+    branches: [main]
 
 permissions:
   pages: write
@@ -17,6 +21,7 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    if: github.event_name == 'push' || github.event.workflow_run.conclusion == 'success'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
