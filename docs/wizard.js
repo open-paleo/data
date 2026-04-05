@@ -2400,6 +2400,22 @@
     };
 
     /**
+     * Returns the appropriate DataImport fetch function for the current flow.
+     *
+     * @returns The fetch function, or null if the flow is not importable.
+     */
+    function getImportFetcher()
+    {
+        const fetchersByFlow = {
+            "add-genus": window.DataImport.fetchGenus,
+            "add-species": window.DataImport.fetchSpecies,
+            "add-clade": window.DataImport.fetchClade,
+        };
+
+        return fetchersByFlow[flowId] ?? null;
+    }
+
+    /**
      * Creates the "Import Data" button element with its click handler.
      * Shows a loading spinner during fetch, then opens the import modal.
      *
@@ -2424,15 +2440,23 @@
             "click",
             async () =>
             {
-                const nameInput = stepContainer.querySelector("[data-header=\"Genus name\"]");
-                const genusName = nameInput ? nameInput.value.trim() : "";
+                const titleHeader = flow.titleField;
+                const nameInput = stepContainer.querySelector(`[data-header="${titleHeader}"]`);
+                const name = nameInput ? nameInput.value.trim() : "";
 
-                if (!genusName)
+                if (!name)
                 {
                     const wrapper = nameInput ? nameInput.closest(".field") : null;
                     const error = wrapper ? wrapper.querySelector(".field-error") : null;
 
-                    setFieldError(wrapper, error, "Enter a genus name before importing");
+                    setFieldError(wrapper, error, `Enter a ${titleHeader.toLowerCase()} before importing`);
+                    return;
+                }
+
+                const fetcher = getImportFetcher();
+
+                if (!fetcher)
+                {
                     return;
                 }
 
@@ -2442,7 +2466,7 @@
 
                 try
                 {
-                    const results = await window.DataImport.fetchGenus(genusName);
+                    const results = await fetcher(name);
 
                     window.ImportModal.show(
                         results,
@@ -2450,14 +2474,14 @@
                         {
                             setFieldValue(header, value);
                         },
-                        genusName,
+                        name,
                     );
                 }
                 catch (fetchError)
                 {
                     console.error("Data import failed:", fetchError);
 
-                    window.ImportModal.show({}, null, genusName);
+                    window.ImportModal.show({}, null, name);
                 }
                 finally
                 {

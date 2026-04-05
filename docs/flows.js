@@ -100,6 +100,7 @@ window.Flows = (function ()
         label: "Add Species",
         titlePrefix: "Add species: ",
         titleField: "Species name",
+        importable: true,
         steps: [
             {
                 name: "Species basics",
@@ -235,6 +236,7 @@ window.Flows = (function ()
         label: "Add Clade",
         titlePrefix: "Add clade: ",
         titleField: "Clade name",
+        importable: true,
         steps: [
             {
                 name: "Clade basics",

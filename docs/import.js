@@ -1713,5 +1713,688 @@ window.DataImport = (function ()
         return null;
     }
 
-    return { fetchGenus: fetchGenus };
+    /**
+     * Fetches species-rank taxon data from PBDB, returning authority,
+     * stratigraphic, locality, and holotype data.
+     *
+     * @param name - The full species name (e.g., "Tyrannosaurus rex").
+     * @returns A promise resolving to a PBDB data object, or null.
+     */
+    async function fetchPbdbSpecies(name)
+    {
+        const taxonParams = new URLSearchParams({
+            name: name,
+            show: "attr,app,class",
+            vocab: "pbdb",
+        });
+
+        const taxonResponse = await fetch(`${pbdbApiBase}/taxa/single.json?${taxonParams}`);
+
+        if (!taxonResponse.ok)
+        {
+            return null;
+        }
+
+        const taxonData = await taxonResponse.json();
+        const taxon = taxonData.records?.[0];
+
+        if (!taxon)
+        {
+            return null;
+        }
+
+        const result = {
+            taxonName: taxon.taxon_name ?? "",
+            taxonNumber: taxon.taxon_no ?? "",
+            authority: taxon.taxon_attr ?? "",
+            earlyInterval: taxon.early_interval ?? "",
+            lateInterval: taxon.late_interval ?? "",
+        };
+
+        const referenceNo = taxon.reference_no ?? "";
+
+        const [occurrenceResult, referenceResult, holotypeResult] = await Promise.allSettled([
+            fetchPbdbOccurrence(name),
+            referenceNo ? fetchPbdbReferenceDoi(referenceNo) : Promise.resolve(null),
+            fetchPbdbHolotype(name),
+        ]);
+
+        if (referenceResult.status === "fulfilled" && referenceResult.value)
+        {
+            result.doi = referenceResult.value;
+        }
+
+        if (occurrenceResult.status === "fulfilled" && occurrenceResult.value)
+        {
+            const occurrence = occurrenceResult.value;
+
+            result.formation = occurrence.formation ?? "";
+            result.country = occurrence.cc ?? "";
+            result.region = occurrence.state ?? "";
+            result.latitude = occurrence.lat ?? "";
+            result.longitude = occurrence.lng ?? "";
+        }
+
+        if (holotypeResult.status === "fulfilled" && holotypeResult.value)
+        {
+            result.holotype = holotypeResult.value;
+        }
+
+        return result;
+    }
+
+    /**
+     * Maps PBDB species data to wizard field results.
+     *
+     * @param pbdb - The parsed PBDB species data object.
+     * @param results - The results object to populate.
+     */
+    function mapPbdbSpeciesResults(pbdb, results)
+    {
+        if (pbdb.authority)
+        {
+            const parsed = parseAuthority(pbdb.authority);
+
+            if (parsed.authors)
+            {
+                results["Authors"] = {
+                    value: parsed.authors,
+                    source: "PBDB",
+                    fieldType: "text",
+                };
+            }
+
+            if (parsed.year)
+            {
+                results["Year described"] = {
+                    value: parsed.year,
+                    source: "PBDB",
+                    fieldType: "text",
+                };
+            }
+        }
+
+        if (pbdb.earlyInterval)
+        {
+            const intervalText = pbdb.lateInterval
+                ? pbdb.earlyInterval + " " + pbdb.lateInterval
+                : pbdb.earlyInterval;
+
+            const period = matchPeriod(intervalText);
+
+            if (period)
+            {
+                results["Period"] = {
+                    value: period,
+                    source: "PBDB",
+                    fieldType: "select",
+                };
+            }
+
+            const stage = matchStage(intervalText);
+
+            if (stage)
+            {
+                results["Stage"] = {
+                    value: stage,
+                    source: "PBDB",
+                    fieldType: "select",
+                };
+            }
+        }
+
+        if (pbdb.formation)
+        {
+            results["Formation"] = {
+                value: pbdb.formation,
+                source: "PBDB",
+                fieldType: "text",
+            };
+        }
+
+        if (pbdb.country)
+        {
+            const countries = window.OpenPaleo.getSchemaValues("countries") ?? {};
+
+            if (countries[pbdb.country])
+            {
+                results["Country"] = {
+                    value: pbdb.country,
+                    displayValue: countries[pbdb.country],
+                    source: "PBDB",
+                    fieldType: "search",
+                };
+            }
+        }
+
+        if (pbdb.region)
+        {
+            results["Region"] = {
+                value: pbdb.region,
+                source: "PBDB",
+                fieldType: "text",
+            };
+        }
+
+        if (pbdb.latitude && pbdb.longitude)
+        {
+            results["Coordinates"] = {
+                value: `${pbdb.latitude}, ${pbdb.longitude}`,
+                source: "PBDB",
+                fieldType: "text",
+            };
+        }
+
+        if (pbdb.holotype)
+        {
+            if (pbdb.holotype.specimenId)
+            {
+                results["Holotype specimen ID"] = {
+                    value: pbdb.holotype.specimenId,
+                    source: "PBDB",
+                    fieldType: "text",
+                };
+            }
+
+            if (pbdb.holotype.institution)
+            {
+                results["Holotype institution"] = {
+                    value: pbdb.holotype.institution,
+                    source: "PBDB",
+                    fieldType: "text",
+                };
+            }
+        }
+    }
+
+    /**
+     * Maps Wikipedia wikitext data to species wizard field results.
+     * Only sets fields not already populated by a higher-priority source.
+     *
+     * @param wikitext - The parsed wikitext data object.
+     * @param results - The results object to populate.
+     */
+    function mapWikitextSpeciesResults(wikitext, results)
+    {
+        if (wikitext.temporalRange)
+        {
+            const period = matchPeriod(wikitext.temporalRange);
+
+            if (period && !results["Period"])
+            {
+                results["Period"] = {
+                    value: period,
+                    source: "Wikipedia",
+                    fieldType: "select",
+                };
+            }
+
+            const stage = matchStage(wikitext.temporalRange);
+
+            if (stage && !results["Stage"])
+            {
+                results["Stage"] = {
+                    value: stage,
+                    source: "Wikipedia",
+                    fieldType: "select",
+                };
+            }
+        }
+
+        if (wikitext.authority)
+        {
+            const parsed = parseAuthority(wikitext.authority);
+
+            if (parsed.authors && !results["Authors"])
+            {
+                results["Authors"] = {
+                    value: parsed.authors,
+                    source: "Wikipedia",
+                    fieldType: "text",
+                };
+            }
+
+            if (parsed.year && !results["Year described"])
+            {
+                results["Year described"] = {
+                    value: parsed.year,
+                    source: "Wikipedia",
+                    fieldType: "text",
+                };
+            }
+        }
+
+        if (wikitext.formation && !results["Formation"])
+        {
+            results["Formation"] = {
+                value: wikitext.formation,
+                source: "Wikipedia",
+                fieldType: "text",
+            };
+        }
+
+        if (wikitext.country && !results["Country"])
+        {
+            const country = matchCountry(wikitext.country);
+
+            if (country)
+            {
+                const countries = window.OpenPaleo.getSchemaValues("countries") ?? {};
+
+                results["Country"] = {
+                    value: country,
+                    displayValue: countries[country] ?? country,
+                    source: "Wikipedia",
+                    fieldType: "search",
+                };
+            }
+        }
+
+        if (wikitext.summary && !results["Species description"])
+        {
+            results["Species description"] = {
+                value: wikitext.summary,
+                source: "Wikipedia",
+                fieldType: "textarea",
+            };
+        }
+    }
+
+    /**
+     * Maps Wikidata entity data to species wizard field results.
+     * Only sets fields not already populated by a higher-priority source.
+     *
+     * @param wikidata - The parsed Wikidata entity object.
+     * @param results - The results object to populate.
+     */
+    function mapWikidataSpeciesResults(wikidata, results)
+    {
+        if (wikidata.mass && !results["Estimated weight (kg)"])
+        {
+            results["Estimated weight (kg)"] = {
+                value: wikidata.mass,
+                source: "Wikidata",
+                fieldType: "text",
+            };
+        }
+
+        if (wikidata.length && !results["Estimated length (m)"])
+        {
+            results["Estimated length (m)"] = {
+                value: wikidata.length,
+                source: "Wikidata",
+                fieldType: "text",
+            };
+        }
+
+        if (wikidata.hipHeight && !results["Estimated hip height (m)"])
+        {
+            results["Estimated hip height (m)"] = {
+                value: wikidata.hipHeight,
+                source: "Wikidata",
+                fieldType: "text",
+            };
+        }
+    }
+
+    /**
+     * Orchestrates PBDB, Wikipedia, and Wikidata API calls in parallel to
+     * extract species data, returning a results object keyed by wizard field
+     * header. PBDB results are mapped first; Wikipedia and Wikidata fill gaps.
+     *
+     * @param name - The species name to search for (e.g., "Tyrannosaurus rex").
+     * @returns A promise resolving to a results object with field mappings.
+     */
+    async function fetchSpecies(name)
+    {
+        const results = {};
+        const cleanName = name.trim();
+
+        const [pbdbResult, wikitextData, wikidataResult] = await Promise.allSettled([
+            fetchPbdbSpecies(cleanName),
+            parseWikitext(cleanName),
+            searchWikidata(cleanName).then(
+                (qid) =>
+                {
+                    if (qid)
+                    {
+                        return fetchWikidataEntity(qid);
+                    }
+
+                    return null;
+                },
+            ),
+        ]);
+
+        const pbdb = pbdbResult.status === "fulfilled" ? pbdbResult.value : null;
+        const wikitext = wikitextData.status === "fulfilled" ? wikitextData.value : null;
+        const wikidata = wikidataResult.status === "fulfilled" ? wikidataResult.value : null;
+
+        if (!pbdb && !wikitext && !wikidata)
+        {
+            return results;
+        }
+
+        if (pbdb)
+        {
+            mapPbdbSpeciesResults(pbdb, results);
+        }
+
+        if (wikitext)
+        {
+            mapWikitextSpeciesResults(wikitext, results);
+        }
+
+        if (wikidata)
+        {
+            mapWikidataSpeciesResults(wikidata, results);
+        }
+
+        if (pbdb && pbdb.doi)
+        {
+            try
+            {
+                const reference = await fetchDoiReference(pbdb.doi);
+
+                if (reference && reference.authors && reference.year && reference.title)
+                {
+                    const surname = (reference.authors ?? "").split(",")[0].trim().toLowerCase().replace(/\s+/g, "");
+
+                    reference.id = `${surname}${reference.year}`;
+
+                    results["References"] = {
+                        value: [reference],
+                        displayValue: `${reference.authors} (${reference.year}) \u2014 ${reference.title}`,
+                        source: "PBDB",
+                        fieldType: "references",
+                    };
+                }
+            }
+            catch
+            {
+                // DOI resolution failed — skip reference import
+            }
+        }
+
+        if (results["Stage"] && !results["Period"])
+        {
+            const period = window.OpenPaleo.getPeriodForStage(results["Stage"].value);
+
+            if (period)
+            {
+                results["Period"] = {
+                    value: period,
+                    source: results["Stage"].source,
+                    fieldType: "select",
+                };
+            }
+        }
+
+        return results;
+    }
+
+    /**
+     * Fetches higher-taxon data from PBDB, returning authority and
+     * classification data for a clade.
+     *
+     * @param name - The clade name to search for.
+     * @returns A promise resolving to a PBDB data object, or null.
+     */
+    async function fetchPbdbClade(name)
+    {
+        const taxonParams = new URLSearchParams({
+            name: name,
+            show: "attr,app,class",
+            vocab: "pbdb",
+        });
+
+        const taxonResponse = await fetch(`${pbdbApiBase}/taxa/single.json?${taxonParams}`);
+
+        if (!taxonResponse.ok)
+        {
+            return null;
+        }
+
+        const taxonData = await taxonResponse.json();
+        const taxon = taxonData.records?.[0];
+
+        if (!taxon)
+        {
+            return null;
+        }
+
+        const result = {
+            taxonName: taxon.taxon_name ?? "",
+            taxonNumber: taxon.taxon_no ?? "",
+            authority: taxon.taxon_attr ?? "",
+            family: taxon.family ?? "",
+            order: taxon.order ?? "",
+        };
+
+        const referenceNo = taxon.reference_no ?? "";
+
+        if (referenceNo)
+        {
+            try
+            {
+                result.doi = await fetchPbdbReferenceDoi(referenceNo);
+            }
+            catch
+            {
+                // Reference DOI fetch failed — skip
+            }
+        }
+
+        return result;
+    }
+
+    /**
+     * Maps PBDB clade data to wizard field results.
+     *
+     * @param pbdb - The parsed PBDB clade data object.
+     * @param results - The results object to populate.
+     */
+    function mapPbdbCladeResults(pbdb, results)
+    {
+        if (pbdb.authority)
+        {
+            const parsed = parseAuthority(pbdb.authority);
+
+            if (parsed.authors)
+            {
+                results["Authors"] = {
+                    value: parsed.authors,
+                    source: "PBDB",
+                    fieldType: "text",
+                };
+            }
+
+            if (parsed.year)
+            {
+                results["Year described"] = {
+                    value: parsed.year,
+                    source: "PBDB",
+                    fieldType: "text",
+                };
+            }
+        }
+
+        if (pbdb.order && pbdb.order !== "NO_ORDER_SPECIFIED")
+        {
+            const clade = matchClade(pbdb.order);
+
+            if (clade)
+            {
+                results["Parent clade"] = {
+                    value: clade,
+                    source: "PBDB",
+                    fieldType: "search",
+                };
+            }
+        }
+
+        if (!results["Parent clade"] && pbdb.family && pbdb.family !== "NO_FAMILY_SPECIFIED")
+        {
+            const clade = matchClade(pbdb.family);
+
+            if (clade)
+            {
+                results["Parent clade"] = {
+                    value: clade,
+                    source: "PBDB",
+                    fieldType: "search",
+                };
+            }
+        }
+    }
+
+    /**
+     * Maps Wikipedia wikitext data to clade wizard field results.
+     * Only sets fields not already populated by a higher-priority source.
+     *
+     * @param wikitext - The parsed wikitext data object.
+     * @param results - The results object to populate.
+     */
+    function mapWikitextCladeResults(wikitext, results)
+    {
+        if (wikitext.authority)
+        {
+            const parsed = parseAuthority(wikitext.authority);
+
+            if (parsed.authors && !results["Authors"])
+            {
+                results["Authors"] = {
+                    value: parsed.authors,
+                    source: "Wikipedia",
+                    fieldType: "text",
+                };
+            }
+
+            if (parsed.year && !results["Year described"])
+            {
+                results["Year described"] = {
+                    value: parsed.year,
+                    source: "Wikipedia",
+                    fieldType: "text",
+                };
+            }
+        }
+
+        if (wikitext.summary && !results["Description"])
+        {
+            results["Description"] = {
+                value: wikitext.summary,
+                source: "Wikipedia",
+                fieldType: "textarea",
+            };
+        }
+    }
+
+    /**
+     * Maps Wikidata entity data to clade wizard field results.
+     * Only sets fields not already populated by a higher-priority source.
+     *
+     * @param wikidata - The parsed Wikidata entity object.
+     * @param results - The results object to populate.
+     */
+    function mapWikidataCladeResults(wikidata, results)
+    {
+        if (wikidata.parentTaxon && !results["Parent clade"])
+        {
+            const clade = matchClade(wikidata.parentTaxon);
+
+            if (clade)
+            {
+                results["Parent clade"] = {
+                    value: clade,
+                    source: "Wikidata",
+                    fieldType: "search",
+                };
+            }
+        }
+    }
+
+    /**
+     * Orchestrates PBDB, Wikipedia, and Wikidata API calls in parallel to
+     * extract clade data, returning a results object keyed by wizard field
+     * header. PBDB results are mapped first; Wikipedia and Wikidata fill gaps.
+     *
+     * @param name - The clade name to search for (e.g., "Megaraptoridae").
+     * @returns A promise resolving to a results object with field mappings.
+     */
+    async function fetchClade(name)
+    {
+        const results = {};
+        const cleanName = name.trim();
+
+        const [pbdbResult, wikitextData, wikidataResult] = await Promise.allSettled([
+            fetchPbdbClade(cleanName),
+            parseWikitext(cleanName),
+            searchWikidata(cleanName).then(
+                (qid) =>
+                {
+                    if (qid)
+                    {
+                        return fetchWikidataEntity(qid);
+                    }
+
+                    return null;
+                },
+            ),
+        ]);
+
+        const pbdb = pbdbResult.status === "fulfilled" ? pbdbResult.value : null;
+        const wikitext = wikitextData.status === "fulfilled" ? wikitextData.value : null;
+        const wikidata = wikidataResult.status === "fulfilled" ? wikidataResult.value : null;
+
+        if (!pbdb && !wikitext && !wikidata)
+        {
+            return results;
+        }
+
+        if (pbdb)
+        {
+            mapPbdbCladeResults(pbdb, results);
+        }
+
+        if (wikitext)
+        {
+            mapWikitextCladeResults(wikitext, results);
+        }
+
+        if (wikidata)
+        {
+            mapWikidataCladeResults(wikidata, results);
+        }
+
+        if (pbdb && pbdb.doi)
+        {
+            try
+            {
+                const reference = await fetchDoiReference(pbdb.doi);
+
+                if (reference && reference.authors && reference.year && reference.title)
+                {
+                    const surname = (reference.authors ?? "").split(",")[0].trim().toLowerCase().replace(/\s+/g, "");
+
+                    reference.id = `${surname}${reference.year}`;
+
+                    results["References"] = {
+                        value: [reference],
+                        displayValue: `${reference.authors} (${reference.year}) \u2014 ${reference.title}`,
+                        source: "PBDB",
+                        fieldType: "references",
+                    };
+                }
+            }
+            catch
+            {
+                // DOI resolution failed — skip reference import
+            }
+        }
+
+        return results;
+    }
+
+    return { fetchGenus: fetchGenus, fetchSpecies: fetchSpecies, fetchClade: fetchClade };
 })();
