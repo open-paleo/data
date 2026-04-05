@@ -1,0 +1,38 @@
+genus: Yandusaurus
+parent: Neornithischia
+description: Yandusaurus is a genus of basal neornithischian dinosaur from the
+  middle Jurassic (Bathonian age, approximately 168 to 162 Ma) of eastern Asia.
+  The type species is Y. hongheensis, described in 1979 from the Lower Shaximiao
+  Formation of Sichuan Province, China.
+diet: herbivore
+identifiers:
+  - source: pbdb
+    id: "52891"
+  - source: wikidata
+    id: Q980959
+  - source: gbif
+    id: "4823168"
+  - source: eol
+    id: "52571968"
+species:
+  - name: Yandusaurus hongheensis
+    status: valid
+    type_species: true
+    period:
+      name: Middle Jurassic
+      stage: Bajocian
+    location:
+      country: CN
+      region: Sichuan
+      formation: Shaximiao
+      coordinates:
+        - 29.4
+        - 104.783302
+    holotype:
+      specimen_id: GCC V20501
+      institution: Museum of the Chengdu University of Technology
+    size:
+      length_m: 3
+      estimate: true
+    described: 1979
+    authors: He
