@@ -71,6 +71,9 @@ check for the following problems:
   (latitude: -90 to 90, longitude: -180 to 180)
 - Period name or stage that is empty while `from_ma`/`to_ma` are present
 - `described` year that is in the future or before 1800
+- `country` field using a full country name instead of an ISO code
+  (e.g. `United States` instead of `US`, `People's Republic of China`
+  instead of `CN`) — check against the keys in `schema.countries`
 
 Collect all issues into a list. For each issue, note:
 - The genus name
@@ -96,6 +99,10 @@ table or grouped list. Then ask:
   - Remove description fields that are disambiguation text or describe
     non-dinosaur topics (set to empty string so the field is omitted)
   - Remove `[0, 0]` coordinates
+  - **Country names instead of ISO codes** — read `schema.countries`, find
+    the key whose value matches the full name (case-insensitively), and
+    replace `country:` with that ISO code. If no match is found, flag it
+    as needing manual entry.
   - For other issues, note them as unfixable and tell the user
 - If the user wants to fix them manually, wait for the user to tell you
   they are done, then re-read the affected files to verify the fixes
@@ -127,8 +134,8 @@ Parse the output and report:
 
 1. **Errors** (grouped by check name) — list every error with the file,
    field, and what went wrong
-2. **Warnings** (summarized) — note the count and general category; list
-   individual warnings only if there are fewer than 10
+2. **Warnings** (grouped by check name) — list every warning with the
+   file and what went wrong
 
 If there are **errors**, present them and ask:
 
@@ -152,7 +159,24 @@ Common auto-fixable errors and their fixes:
 - **Schema error in a genus file** — read the file and fix the field
 
 After fixing (or the user fixing manually), re-run `npm run validate`
-until it passes with 0 errors. Warnings are acceptable.
+until it passes with 0 errors.
+
+If there are **warnings**, present each one and propose a specific fix.
+Ask the user:
+
+> "Validation also found N warnings. Here are my proposed fixes — shall
+> I apply them?"
+
+**Wait for the user to respond before continuing.** Common warnings and
+their fixes:
+- **Country not in schema countries list** — the `country` field contains
+  a full name instead of an ISO code; look up the matching key in
+  `schema.countries` and replace it
+- **Any other warning** — read the affected file, diagnose the cause, and
+  propose the most conservative fix
+
+After applying warning fixes (or if there are none), re-run
+`npm run validate` to confirm 0 errors and 0 warnings before building.
 
 Once validation passes, run:
 
@@ -198,7 +222,7 @@ Use the commit message: `build: update output files`
 **Important:** Do NOT push or create a PR. Show the user a summary of
 what was committed and wait for further instructions.
 
-## Step 8 — Close intake issues
+## Step 8 — Close intake issues and clean up
 
 Run the issue-closing helper script:
 
@@ -207,4 +231,5 @@ bash .claude/skills/batch-import/close-issues.sh
 ```
 
 This reads `staging/report.json`, closes every intake issue via `gh`,
-and spot-checks a sample. Report the total to the user.
+spot-checks a sample, and then deletes the `staging/` directory.
+Report the total closed issues to the user.

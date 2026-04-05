@@ -2247,13 +2247,13 @@ function toGenusYaml(enriched: EnrichedGenus, reference: Record<string, string> 
         species.period = period;
     }
 
-    if (enriched.country ?? enriched.region ?? enriched.formation ?? enriched.latitude)
+    if (enriched.countryCode ?? enriched.region ?? enriched.formation ?? enriched.latitude)
     {
         const location: Record<string, unknown> = {};
 
-        if (enriched.country)
+        if (enriched.countryCode)
         {
-            location.country = enriched.country;
+            location.country = enriched.countryCode;
         }
 
         if (enriched.region)

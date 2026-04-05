@@ -37,3 +37,9 @@ for number in $sample; do
     state=$(gh issue view "$number" --repo open-paleo/data --json state --jq '.state')
     echo "  #$number: $state"
 done
+
+# Clean up staging directory
+echo ""
+echo "Cleaning up staging/..."
+rm -rf staging/
+echo "staging/ deleted."
