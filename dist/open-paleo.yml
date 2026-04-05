@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-04-05T19:14:52.744Z
-  clade_count: 44
-  genus_count: 11
+  built_at: 2026-04-05T20:54:40.749Z
+  clade_count: 86
+  genus_count: 36
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.04"
@@ -49,12 +49,49 @@ tree:
                                 Therizinosauridae: {}
                                 Dromaeosauridae: {}
                                 Troodontidae: {}
+                        Neotheropoda:
+                          Averostra:
+                            Tetanurae:
+                              Coelurosauria:
+                                Tyrannosauroidea:
+                                  Tyrannosauridae:
+                                    Tyrannosaurinae:
+                                      Tyrannosaurini: {}
+                                Maniraptora:
+                                  Paraves:
+                                    Deinonychosauria:
+                                      Dromaeosauridae:
+                                        Microraptorinae: {}
+                                        Eudromaeosauria:
+                                          Dromaeosaurinae: {}
+                                      Troodontidae:
+                                        Troodontinae:
+                                          Saurornithoidini: {}
                       Sauropodomorpha:
                         Sauropoda:
                           Diplodocidae: {}
                           Macronaria:
                             Brachiosauridae: {}
                             Titanosauria: {}
+                        Massopoda:
+                          Sauropodiformes:
+                            Sauropoda:
+                              Gravisauria:
+                                Eusauropoda:
+                                  Mamenchisauridae: {}
+                                  Neosauropoda:
+                                    Macronaria:
+                                      Titanosauriformes:
+                                        Somphospondyli:
+                                          Titanosauria:
+                                            Lithostrotia:
+                                              Saltasauroidea:
+                                                Lohuecosauria:
+                                                  Saltasauridae: {}
+                                    Diplodocoidea:
+                                      Diplodocimorpha:
+                                        Rebbachisauridae: {}
+                                  Turiasauria: {}
                     Ornithischia:
                       Thyreophora:
                         Stegosauria: {}
@@ -72,6 +109,32 @@ tree:
                           Pachycephalosauria: {}
                           Ceratopsia:
                             Ceratopsidae: {}
+                      Genasauria:
+                        Cerapoda:
+                          Ornithopoda:
+                            Clypeodonta:
+                              Iguanodontia:
+                                Dryomorpha:
+                                  Styracosterna:
+                                    Hadrosauriformes:
+                                      Hadrosauroidea: {}
+                                Rhabdodontomorpha:
+                                  Rhabdodontoidea: {}
+                          Marginocephalia:
+                            Ceratopsia:
+                              Neoceratopsia:
+                                Coronosauria:
+                                  Ceratopsoidea: {}
+                                Leptoceratopsidae: {}
+                            Pachycephalosauria: {}
+                        Thyreophora:
+                          Ankylosauria:
+                            Ankylosauridae:
+                              Ankylosaurinae:
+                                Ankylosaurini: {}
+                      Neornithischia:
+                        Thescelosauridae:
+                          Orodrominae: {}
     Plantae: {}
 clades:
   Abelisauridae:
@@ -320,6 +383,21 @@ clades:
         publisher: Informa UK Limited
         pages: 385-444
         doi: 10.1080/14772019.2015.1059985
+  Averostra:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
   Avetheropoda:
     description: |
       Avetheropoda is a clade of advanced theropod dinosaurs that unites Carnosauria and Coelurosauria. Avetheropods represent the more derived tetanurans, distinguished from megalosauroids by features of the skull, vertebral column, and limbs. The clade encompasses the majority of Late Jurassic and Cretaceous theropod diversity, including all living birds.
@@ -557,6 +635,25 @@ clades:
         journal: American Journal of Science
         volume: "39"
         pages: 418-426
+  Ceratopsoidea:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Marginocephalia
+      - Ceratopsia
+      - Neoceratopsia
+      - Coronosauria
+      - Ceratopsoidea
   Ceratosauria:
     description: |
       Ceratosauria is a clade of early-diverging theropod dinosaurs that radiated primarily during the Jurassic and Cretaceous periods. Many ceratosaurs possessed prominent cranial ornamentation, including horns and crests. The group was particularly diverse in Gondwanan landmasses and includes the abelisaurids, noasaurids, and the Jurassic ceratosaurids. Ceratosaurs generally retained four digits on the hand, unlike the three-fingered condition of more derived theropods.
@@ -589,6 +686,22 @@ clades:
         journal: American Journal of Science
         volume: "27"
         pages: 329-340
+  Clypeodonta:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
   Coelurosauria:
     description: |
       Coelurosauria is a large and diverse clade of theropod dinosaurs that includes tyrannosaurs, ornithomimosaurs, maniraptorans, and all living birds. Coelurosaurs are the most speciose theropod clade and exhibit an extraordinary range of body sizes, diets, and ecologies. Many coelurosaurs possessed filamentous integumentary structures or true feathers. The clade originated in the Middle Jurassic and includes the only dinosaur lineage to survive the end-Cretaceous extinction.
@@ -624,6 +737,44 @@ clades:
         journal: Centralblatt fur Mineralogie, Geologie und Palaontologie B
         volume: "1914"
         pages: 154-168
+  Coronosauria:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Marginocephalia
+      - Ceratopsia
+      - Neoceratopsia
+      - Coronosauria
+  Deinonychosauria:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Paraves
+      - Deinonychosauria
   Dinosauria:
     description: |
       Dinosauria is a clade of archosaurian reptiles that first appeared during the Triassic period, approximately 233 million years ago. Dinosaurs are united by a suite of anatomical features including a fully upright (parasagittal) stance, a fully open (perforated) acetabulum in the pelvis, and three or more sacral vertebrae. The clade encompasses two major lineages, Saurischia and Ornithischia, and includes all descendants of their most recent common ancestor, extending to modern birds (Aves).
@@ -688,6 +839,47 @@ clades:
         journal: American Journal of Science
         volume: "27"
         pages: 329-340
+  Diplodocimorpha:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Diplodocoidea
+      - Diplodocimorpha
+  Diplodocoidea:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Diplodocoidea
   Dromaeosauridae:
     description: |
       Dromaeosauridae is a family of small to medium-sized maniraptoran theropod dinosaurs commonly known as "raptors." Dromaeosaurids were agile, feathered predators characterized by their signature enlarged, sickle-shaped retractable claw on the second toe (pedal digit II), stiffened tails used for balance during rapid pursuit, and well-developed pennaceous feathers. The family includes well-known genera such as Velociraptor, Deinonychus, and Microraptor. Dromaeosaurids are among the closest non-avian relatives of birds.
@@ -725,6 +917,117 @@ clades:
         journal: Bulletin of the American Museum of Natural History
         volume: "46"
         pages: 367-385
+  Dromaeosaurinae:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Paraves
+      - Deinonychosauria
+      - Dromaeosauridae
+      - Eudromaeosauria
+      - Dromaeosaurinae
+  Dryomorpha:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Dryomorpha
+  Eudromaeosauria:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Paraves
+      - Deinonychosauria
+      - Dromaeosauridae
+      - Eudromaeosauria
+  Eusauropoda:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+  Genasauria:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+  Gravisauria:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
   Hadrosauridae:
     description: |
       Hadrosauridae is a family of large ornithopod dinosaurs commonly known as duck-billed dinosaurs. Hadrosaurs were the most diverse and abundant large herbivorous dinosaurs of the Late Cretaceous, with a global distribution. They are characterized by highly specialized dental batteries consisting of hundreds of closely packed teeth forming a continuous grinding surface, broad and flat edentulous premaxillary bills, and in the subfamily Lambeosaurinae, elaborate hollow cranial crests likely used for vocalization and display. Hadrosaurs include the two major subgroups Hadrosaurinae (flat-headed forms) and Lambeosaurinae (crested forms).
@@ -797,6 +1100,112 @@ clades:
         journal: Annual Review of Earth and Planetary Sciences
         volume: "25"
         pages: 435-489
+  Hadrosauroidea:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Dryomorpha
+      - Styracosterna
+      - Hadrosauriformes
+      - Hadrosauroidea
+  Iguanodontia:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+  Leptoceratopsidae:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Marginocephalia
+      - Ceratopsia
+      - Neoceratopsia
+      - Leptoceratopsidae
+  Lithostrotia:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
+      - Titanosauria
+      - Lithostrotia
+  Lohuecosauria:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
+      - Titanosauria
+      - Lithostrotia
+      - Saltasauroidea
+      - Lohuecosauria
   Macronaria:
     description: |
       Macronaria, meaning "large nostrils," is a clade of neosauropod dinosaurs characterized by large nasal openings (external nares) that are typically larger than the orbits. The clade includes brachiosaurids, titanosaurs, and their relatives, and was particularly diverse and dominant during the Cretaceous period. Macronarians tended to have more robust, box-like skulls with spatulate teeth, in contrast to the elongate skulls and peg-like teeth of diplodocoids.
@@ -830,6 +1239,25 @@ clades:
         journal: Society of Vertebrate Paleontology Memoir
         volume: "5"
         pages: 1-68
+  Mamenchisauridae:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Mamenchisauridae
   Maniraptora:
     description: |
       Maniraptora, meaning "hand snatchers," is a clade of coelurosaurian theropod dinosaurs that includes dromaeosaurids, troodontids, oviraptorosaurs, therizinosaurs, and birds (Aves). Maniraptorans are characterized by elongated arms relative to body size, a semilunate carpal bone enabling a folding mechanism in the wrist, and the widespread presence of pennaceous feathers. The clade represents the closest relatives of and includes modern birds, making it one of the most significant groups in understanding avian origins.
@@ -898,6 +1326,20 @@ clades:
         journal: National Geographic Research
         volume: "2"
         pages: 234-256
+  Massopoda:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
   Megalosauridae:
     description: |
       Megalosauridae is a family of large basal tetanuran theropod dinosaurs known primarily from the Middle to Late Jurassic of Europe, Africa, and South America. The family includes Megalosaurus bucklandii, the first dinosaur to be scientifically described and named (1824). Megalosaurids were robust, large- bodied predators with powerful forelimbs and laterally compressed, serrated teeth.
@@ -965,6 +1407,91 @@ clades:
         journal: The Dinosauria (2nd edition)
         volume: ""
         pages: 71-110
+  Microraptorinae:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Paraves
+      - Deinonychosauria
+      - Dromaeosauridae
+      - Microraptorinae
+  Neoceratopsia:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Marginocephalia
+      - Ceratopsia
+      - Neoceratopsia
+  Neornithischia:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Neornithischia
+  Neosauropoda:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+  Neotheropoda:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
   Noasauridae:
     description: |
       Noasauridae is a family of small to medium-sized ceratosaurian theropod dinosaurs known primarily from Gondwanan continents during the Cretaceous period. Noasaurids were lightly built, gracile predators or omnivores, and represent the smaller-bodied counterpart to their sister group Abelisauridae within Abelisauria. Notable members include Noasaurus, Masiakasaurus, and Elaphrosaurus.
@@ -1098,6 +1625,21 @@ clades:
         journal: American Journal of Science
         volume: "21"
         pages: 417-423
+  Orodrominae:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Neornithischia
+      - Thescelosauridae
+      - Orodrominae
   Pachycephalosauria:
     description: |
       Pachycephalosauria, meaning "thick-headed lizards," is a clade of marginocephalian ornithischian dinosaurs characterized by a dramatically thickened skull roof (frontoparietal dome). These bipedal herbivores or omnivores were most diverse during the Late Cretaceous of North America and Asia. The thickened dome has been hypothesized to have served in intraspecific head-butting or flank-butting contests, though this remains debated. Notable genera include Pachycephalosaurus, Stegoceras, and Dracorex.
@@ -1132,6 +1674,136 @@ clades:
         journal: Palaeontologia Polonica
         volume: "30"
         pages: 45-102
+  Paraves:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Paraves
+  Rebbachisauridae:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Diplodocoidea
+      - Diplodocimorpha
+      - Rebbachisauridae
+  Rhabdodontoidea:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Rhabdodontomorpha
+      - Rhabdodontoidea
+  Rhabdodontomorpha:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Rhabdodontomorpha
+  Saltasauridae:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
+      - Titanosauria
+      - Lithostrotia
+      - Saltasauroidea
+      - Lohuecosauria
+      - Saltasauridae
+  Saltasauroidea:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
+      - Titanosauria
+      - Lithostrotia
+      - Saltasauroidea
   Saurischia:
     description: |
       Saurischia, meaning "lizard-hipped," is one of the two major clades of dinosaurs. Saurischians retain an ancestral pelvic configuration in which the pubis points forward and downward, in contrast to the retroverted pubis of ornithischians. The clade includes the bipedal, mostly carnivorous theropods and the long-necked, herbivorous sauropodomorphs. Saurischia is defined as all dinosaurs more closely related to birds than to Triceratops.
@@ -1194,6 +1866,21 @@ clades:
         journal: American Journal of Science
         volume: "16"
         pages: 411-416
+  Sauropodiformes:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
   Sauropodomorpha:
     description: |
       Sauropodomorpha is a major clade of saurischian dinosaurs comprising the long-necked herbivorous dinosaurs and their ancestors. The clade ranges from small, facultatively bipedal early forms of the Late Triassic to the giant quadrupedal sauropods that dominated terrestrial herbivore niches throughout the Jurassic and Cretaceous. Sauropodomorphs include the largest land animals ever to have lived and are characterized by their elongated necks, small heads relative to body size, and herbivorous or omnivorous diets.
@@ -1226,6 +1913,51 @@ clades:
         journal: Monographien zur Geologie und Palaeontologie
         volume: "4"
         pages: 1-361
+  Saurornithoidini:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Paraves
+      - Deinonychosauria
+      - Troodontidae
+      - Troodontinae
+      - Saurornithoidini
+  Somphospondyli:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
   Spinosauridae:
     description: |
       Spinosauridae is a family of large megalosauroid theropod dinosaurs characterized by elongated, crocodile-like snouts and conical, unserrated teeth adapted for piscivory (fish-eating). Many spinosaurids possessed enlarged dorsal neural spines forming a sail or ridge along the back. The family includes Spinosaurus, one of the largest known theropods, which shows evidence of semi-aquatic habits. Spinosaurids are known from the Cretaceous of Africa, Europe, and South America.
@@ -1429,6 +2161,20 @@ clades:
         journal: American Journal of Science
         volume: "21"
         pages: 417-423
+  Thescelosauridae:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Neornithischia
+      - Thescelosauridae
   Thyreophora:
     description: |
       Thyreophora, meaning "shield bearers," is a clade of armored ornithischian dinosaurs that includes Stegosauria and Ankylosauria. Thyreophorans are characterized by the presence of dermal armor in the form of osteoderms (bony scutes, plates, or spines) embedded in the skin along the body. The clade appeared in the Early Jurassic and persisted until the end of the Cretaceous, with a global distribution. Thyreophorans were obligate quadrupeds and herbivores.
@@ -1495,6 +2241,27 @@ clades:
         journal: Records of the Geological Survey of India
         volume: "10"
         pages: 30-43
+  Titanosauriformes:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Macronaria
+      - Titanosauriformes
   Troodontidae:
     description: |
       Troodontidae is a family of small, bird-like maniraptoran theropod dinosaurs known from the Cretaceous of North America, Asia, and Europe. Troodontids are notable for possessing the largest brain-to-body-size ratio among non-avian dinosaurs, suggesting relatively high intelligence. They had large, forward- facing eyes indicating good binocular vision, long and slender legs adapted for speed, and a retractable sickle claw on the second toe (smaller than in dromaeosaurids). Troodontids are among the closest known relatives of Aves.
@@ -1532,6 +2299,47 @@ clades:
         journal: Bulletin of the Canadian Department of Mines, Geological Survey
         volume: "38"
         pages: 1-12
+  Troodontinae:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Paraves
+      - Deinonychosauria
+      - Troodontidae
+      - Troodontinae
+  Turiasauria:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Turiasauria
   Tyrannosauridae:
     description: |
       Tyrannosauridae is a family of large coelurosaurian theropod dinosaurs that were apex predators during the Late Cretaceous of North America and Asia. The family includes Tyrannosaurus rex, one of the largest and most powerful terrestrial predators known. Tyrannosaurids are characterized by their proportionally enormous skulls, massive bite force, robust heterodont dentition, extremely reduced two-fingered forelimbs, and powerful hindlimbs adapted for cursorial locomotion.
@@ -1568,6 +2376,65 @@ clades:
         journal: Bulletin of the American Museum of Natural History
         volume: "22"
         pages: 281-296
+  Tyrannosaurinae:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Tyrannosauroidea
+      - Tyrannosauridae
+      - Tyrannosaurinae
+  Tyrannosaurini:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Tyrannosauroidea
+      - Tyrannosauridae
+      - Tyrannosaurinae
+      - Tyrannosaurini
+  Tyrannosauroidea:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Tyrannosauroidea
 genera:
   Ankylosaurus:
     genus: Ankylosaurus
@@ -2499,6 +3366,1396 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Dromaeosauridae
+  Yuxisaurus:
+    genus: Yuxisaurus
+    parent: Thyreophora
+    description: Yuxisaurus is an extinct genus of early thyreophoran dinosaur from the Early Jurassic (Sinemurian-Toarcian) Fengjiahe Formation of southwestern China. The genus contains a single species, Yuxisaurus kopchicki, known from a partial skeleton and many osteoderms.
+    diet: herbivore
+    appearance:
+      integument: armored
+    identifiers:
+      - source: pbdb
+        id: "457656"
+      - source: wikidata
+        id: Q109997024
+    species:
+      - name: Yuxisaurus kopchicki
+        status: valid
+        type_species: true
+        period:
+          name: Early Jurassic
+          stage: Pliensbachian
+        location:
+          country: People's Republic of China
+          region: Yunnan
+          formation: Fengjiahe
+          coordinates:
+            - 24.648998
+            - 102.237389
+        holotype:
+          specimen_id: CVEB 21701
+          institution: Yunnan University
+        described: 2022
+        authors: Yao et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Thyreophora
+  Yuzhoulong:
+    genus: Yuzhoulong
+    parent: Macronaria
+    etymology: Chongqing dragon
+    description: Yuzhoulong is a genus of macronarian sauropod dinosaur from the Middle Jurassic Shaximiao Formation of Chongqing, China. The type and only species is Yuzhoulong qurenensis.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "463192"
+      - source: wikidata
+        id: Q115011290
+    species:
+      - name: Yuzhoulong qurenensis
+        status: valid
+        type_species: true
+        period:
+          name: Middle Jurassic
+          stage: Callovian
+        location:
+          country: People's Republic of China
+          region: Chongqing
+          formation: Shaximiao
+          coordinates:
+            - 30.941999
+            - 108.750999
+        holotype:
+          specimen_id: CLGRP V00013
+          institution: Chongqing Laboratory of Geoheritage Research and Protection
+        described: 2022
+        authors: Dai et al.
+        described_in: dai2022
+    references:
+      - id: dai2022
+        authors: Dai, Hui; Tan, Chao; Xiong, Can; Ma, Qingyu; Li, Ning; Yu, Haidong; Wei, Zhaoying; Wang, Ping; Yi, Jian; Wei, Guangbiao; You, Hailu; Ren, Xinxin
+        year: 2022
+        title: "New macronarian from the Middle Jurassic of Chongqing, China: phylogenetic and biogeographic implications for neosauropod dinosaur evolution"
+        journal: Royal Society Open Science
+        volume: "9"
+        issue: "11"
+        publisher: The Royal Society
+        doi: 10.1098/rsos.220794
+        url: http://dx.doi.org/10.1098/rsos.220794
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Sauropoda
+      - Macronaria
+  Zalmoxes:
+    genus: Zalmoxes
+    parent: Rhabdodontoidea
+    description: Zalmoxes is a genus of probable rhabdodontid ornithopod dinosaur from the Maastrichtian age of the Late Cretaceous in what is now Romania. The genus is known from specimens first named as the species Mochlodon robustum in 1899 by Franz Nopcsa before being reclassified as Rhabdodon robustum by him in 1915. In 1990, this name was corrected to Rhabdodon robustus by George Olshevsky and, in 2003, the species was once more reclassified as the type species Zalmoxes robustus. Zalmoxes represents one of the most common vertebrates of Transylvania during the latest Cretaceous period. The generic name refers to the Dacian deity Zalmoxis and the specific name robustus refers to the robustness of the remains. Another species, Zalmoxes shqiperorum, was named in 2003, but this species has since been reassigned to a separate genus of ceratopsian, Ferenceratops.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "66740"
+      - source: wikidata
+        id: Q132538
+      - source: gbif
+        id: "4577165"
+    species:
+      - name: Zalmoxes robustus
+        status: valid
+        type_species: true
+        period:
+          name: Late Cretaceous
+          stage: Maastrichtian
+        location:
+          country: Austria
+          region: Niederosterreich
+          formation: Grünbach
+          coordinates:
+            - 47.82
+            - 16.24
+        size:
+          length_m: 2.5
+          estimate: true
+        described: 2003
+        authors: Weishampel et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Rhabdodontomorpha
+      - Rhabdodontoidea
+  Zanabazar:
+    genus: Zanabazar
+    parent: Saurornithoidini
+    description: Zanabazar is an extinct genus of troodontid theropod dinosaur from the Maastrichtian Nemegt Formation of Mongolia. The type species is Zanabazar junior, known from a single skull.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "168437"
+      - source: wikidata
+        id: Q593763
+      - source: eol
+        id: "10680037"
+    species:
+      - name: Zanabazar junior
+        status: valid
+        type_species: true
+        period:
+          name: Late Cretaceous
+          stage: Maastrichtian
+        location:
+          country: Mongolia
+          region: Omnogov
+          formation: Nemegt
+          coordinates:
+            - 43.540001
+            - 99.599998
+        holotype:
+          specimen_id: IGM 100/1
+          institution: Institute of Geology, Mongolian Academy of Sciences
+        described: 2009
+        authors: Norell et al.
+        described_in: norell2009
+    references:
+      - id: norell2009
+        authors: Norell, Mark A.; Makovicky, Peter J.; Bever, Gabe S.; Balanoff, Amy M.; Clark, James M.; Barsbold, Rinchen; Rowe, Timothy
+        year: 2009
+        title: "A Review of the Mongolian Cretaceous Dinosaur Saurornithoides (Troodontidae: Theropoda)"
+        journal: American Museum Novitates
+        volume: "3654"
+        pages: 1-63
+        publisher: American Museum of Natural History (BioOne sponsored)
+        doi: 10.1206/648.1
+        url: http://dx.doi.org/10.1206/648.1
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Paraves
+      - Deinonychosauria
+      - Troodontidae
+      - Troodontinae
+      - Saurornithoidini
+  Zapalasaurus:
+    genus: Zapalasaurus
+    parent: Rebbachisauridae
+    description: Zapalasaurus is an extinct genus of sauropod dinosaur from the Early Cretaceous-aged La Amarga Formation of what is today Patagonia. The type and only species is Z. bonapartei.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "89456"
+      - source: wikidata
+        id: Q134713
+      - source: gbif
+        id: "4967470"
+    species:
+      - name: Zapalasaurus bonapartei
+        status: valid
+        type_species: true
+        period:
+          name: Early Cretaceous
+          stage: Aptian
+        location:
+          country: Argentina
+          region: Neuquén
+          formation: La Amarga
+          coordinates:
+            - -39.555279
+            - -70.153053
+        described: 2006
+        authors: Salgado et al.
+        described_in: salgado2006
+    references:
+      - id: salgado2006
+        authors: Salgado, Leonardo; Carvalho, Ismar de Souza; Garrido, Alberto C.
+        year: 2006
+        title: Zapalasaurus bonapartei, un nuevo dinosaurio saurópodo de La Formación La Amarga (Cretácico Inferior), noroeste de Patagonia, Provincia de Neuquén, Argentina
+        journal: Geobios
+        volume: "39"
+        issue: "5"
+        pages: 695-707
+        publisher: Elsevier BV
+        doi: 10.1016/j.geobios.2005.06.001
+        url: http://dx.doi.org/10.1016/j.geobios.2005.06.001
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Diplodocoidea
+      - Diplodocimorpha
+      - Rebbachisauridae
+  Zapsalis:
+    genus: Zapsalis
+    parent: Dromaeosaurinae
+    etymology: The generic name is derived from Greek za~, "thorough", and psalis, "pair of scissors". The specific name means "abrading" in Latin.
+    description: Zapsalis is a genus of dromaeosaurine theropod dinosaurs. It is a tooth taxon, often considered dubious because of the fragmentary nature of the fossils, which include teeth but no other remains.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "52959"
+      - source: wikidata
+        id: Q2306005
+      - source: gbif
+        id: "4575044"
+    species:
+      - name: Zapsalis abradens
+        status: valid
+        type_species: true
+        period:
+          name: Late Cretaceous
+          stage: Maastrichtian
+        location:
+          country: United States
+          region: Wyoming
+          formation: Lance
+          coordinates:
+            - 43.116329
+            - -104.637001
+        described: 1876
+        authors: Cope
+        described_in: marsh1877
+    references:
+      - id: marsh1877
+        authors: Marsh, O. C.
+        year: 1877
+        title: Notice of new dinosaurian reptiles from the Jurassic formation
+        journal: American Journal of Science
+        volume: s3-14
+        issue: "84"
+        pages: 514-516
+        publisher: American Journal of Science (AJS)
+        doi: 10.2475/ajs.s3-14.84.514
+        url: http://dx.doi.org/10.2475/ajs.s3-14.84.514
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Paraves
+      - Deinonychosauria
+      - Dromaeosauridae
+      - Eudromaeosauria
+      - Dromaeosaurinae
+  Zaraapelta:
+    genus: Zaraapelta
+    parent: Ankylosaurinae
+    description: Zaraapelta is an extinct genus of herbivorous ankylosaurid thyreophoran dinosaur from the Late Cretaceous of Mongolia. The type species is Zaraapelta nomadis, named and described by Arbour et al in 2014. Zaraapelta is known from a single skull from the Barun Goyot Formation. It was found to be closest to Tarchia in the phylogenetic analysis within its description.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "372001"
+      - source: wikidata
+        id: Q18435455
+    species:
+      - name: Zaraapelta nomadis
+        status: valid
+        type_species: true
+        period:
+          name: Late Cretaceous
+          stage: Santonian
+        location:
+          country: Mongolia
+          region: Omnogov
+          formation: Baynshire
+          coordinates:
+            - 43.474724
+            - 99.833054
+        holotype:
+          specimen_id: MPC D-100
+          institution: Mongolian Paleontological Center
+        described: 2014
+        authors: Arbour et al.
+        described_in: arbour2014
+    references:
+      - id: arbour2014
+        authors: Arbour, Victoria M.; Currie, Philip J.; Badamgarav, Demchig
+        year: 2014
+        title: The ankylosaurid dinosaurs of the Upper Cretaceous Baruungoyot and Nemegt formations of Mongolia
+        journal: Zoological Journal of the Linnean Society
+        volume: "172"
+        issue: "3"
+        pages: 631-652
+        publisher: Oxford University Press (OUP)
+        doi: 10.1111/zoj.12185
+        url: http://dx.doi.org/10.1111/zoj.12185
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Thyreophora
+      - Ankylosauria
+      - Ankylosauridae
+      - Ankylosaurinae
+  Zavacephale:
+    genus: Zavacephale
+    parent: Pachycephalosauria
+    etymology: origin head
+    description: Zavacephale is an extinct genus of pachycephalosaurian dinosaurs known from the Early Cretaceous Khuren Dukh Formation of Mongolia. The genus contains a single species, Zavacephale rinpoche, known from a partial articulated skeleton including a nearly complete skull. It is both the oldest definitive pachycephalosaur known, as well as the most complete. Its skull bears a well-developed dome structure, as seen in most members of the clade.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "516669"
+      - source: wikidata
+        id: Q136311161
+    species:
+      - name: Zavacephale rinpoche
+        status: valid
+        type_species: true
+        period:
+          name: Early Cretaceous
+          stage: Albian
+        location:
+          country: Mongolia
+          region: Dornogov
+          formation: Khuren Dukh
+          coordinates:
+            - 45.849998
+            - 108.446671
+        described: 2025
+        authors: Chinzorig et al.
+        described_in: chinzorig2025
+    references:
+      - id: chinzorig2025
+        authors: Chinzorig, Tsogtbaatar; Takasaki, Ryuji; Yoshida, Junki; Tucker, Ryan T.; Buyantegsh, Batsaikhan; Mainbayar, Buuvei; Tsogtbaatar, Khishigjav; Zanno, Lindsay E.
+        year: 2025
+        title: A domed pachycephalosaur from the early Cretaceous of Mongolia
+        journal: Nature
+        volume: "646"
+        issue: "8087"
+        pages: 1138-1145
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/s41586-025-09213-6
+        url: http://dx.doi.org/10.1038/s41586-025-09213-6
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Cerapoda
+      - Marginocephalia
+      - Pachycephalosauria
+  Zby:
+    genus: Zby
+    parent: Turiasauria
+    description: Zby is an extinct genus of turiasaurian sauropod dinosaur known from the Late Jurassic, particularly late Kimmeridgian stage of the Lourinhã Formation, in central west Portugal. It contains a single species, Zby atlanticus. It is named after Georges Zbyszewski, who studied the geology and paleontology of Portugal.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "294727"
+      - source: wikidata
+        id: Q17125998
+    species:
+      - name: Zby atlanticus
+        status: valid
+        type_species: true
+        period:
+          name: Late Jurassic
+          stage: Kimmeridgian
+        location:
+          country: Portugal
+          region: Centro
+          formation: Praia da Amoreira-Porto Novo
+          coordinates:
+            - 39.169998
+            - -9.2
+        described: 2014
+        authors: Mateus et al.
+        described_in: mateus2014
+    references:
+      - id: mateus2014
+        authors: Mateus, Octávio; Mannion, Philip D.; Upchurch, Paul
+        year: 2014
+        title: Zby atlanticus, a new turiasaurian sauropod (Dinosauria, Eusauropoda) from the Late Jurassic of Portugal
+        journal: Journal of Vertebrate Paleontology
+        volume: "34"
+        issue: "3"
+        pages: 618-634
+        publisher: Informa UK Limited
+        doi: 10.1080/02724634.2013.822875
+        url: http://dx.doi.org/10.1080/02724634.2013.822875
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Turiasauria
+  Zephyrosaurus:
+    genus: Zephyrosaurus
+    parent: Orodrominae
+    etymology: westward wind lizard
+    description: Zephyrosaurus is a genus of orodromine ornithischian dinosaur based on a partial skull and postcranial fragments discovered in the Early Cretaceous (Aptian-Albian) Cloverly Formation of Carbon County, Montana, USA. New remains are under description, and tracks from Maryland and Virginia, also in the US, have been attributed to animals similar to Zephyrosaurus.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "38743"
+      - source: wikidata
+        id: Q18604596
+      - source: gbif
+        id: "3238854"
+    species:
+      - name: Zephyrosaurus schaffi
+        status: valid
+        type_species: true
+        period:
+          name: Early Cretaceous
+          stage: Albian
+        location:
+          country: United States
+          region: Montana
+          formation: Cloverly
+          coordinates:
+            - 45.487
+            - -108.729599
+        size:
+          length_m: 1.8
+          estimate: true
+        described: 1980
+        authors: Sues
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Neornithischia
+      - Thescelosauridae
+      - Orodrominae
+  Zhanghenglong:
+    genus: Zhanghenglong
+    parent: Hadrosauroidea
+    description: Zhanghenglong is an extinct genus of herbivorous hadrosauroid iguanodont dinosaur known from the Late Cretaceous (middle Santonian stage) Majiacun Formation in Xixia County of Henan Province, China. It contains a single species, Zhanghenglong yangchengensis, represented by a disarticulated and partial cranium and postcranial skeleton.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "296574"
+      - source: wikidata
+        id: Q18596446
+      - source: eol
+        id: "47460232"
+    species:
+      - name: Zhanghenglong yangchengensis
+        status: valid
+        type_species: true
+        period:
+          name: Late Cretaceous
+          stage: Santonian
+          from_ma: 85.7
+          to_ma: 83.6
+        location:
+          country: People's Republic of China
+          region: Henan
+          formation: Majiacun
+          coordinates:
+            - 33.289169
+            - 111.474403
+        holotype:
+          specimen_id: XMDFEC V0013
+          institution: Xixia Museum of Dinosaur Fossils, Eggs and Culture
+        described: 2014
+        authors: Xing et al.
+        described_in: xing2014
+    references:
+      - id: xing2014
+        authors: Xing, Hai; Wang, Deyou; Han, Fenglu; Sullivan, Corwin; Ma, Qingyu; He, Yiming; Hone, David W. E.; Yan, Ronghao; Du, Fuming; Xu, Xing
+        year: 2014
+        title: "A New Basal Hadrosauroid Dinosaur (Dinosauria: Ornithopoda) with Transitional Features from the Late Cretaceous of Henan Province, China"
+        journal: PLoS ONE
+        volume: "9"
+        issue: "6"
+        pages: e98821
+        publisher: Public Library of Science (PLoS)
+        doi: 10.1371/journal.pone.0098821
+        url: http://dx.doi.org/10.1371/journal.pone.0098821
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Dryomorpha
+      - Styracosterna
+      - Hadrosauriformes
+      - Hadrosauroidea
+  Zhejiangosaurus:
+    genus: Zhejiangosaurus
+    parent: Ankylosauria
+    etymology: Zhejiang lizard
+    description: Zhejiangosaurus is an extinct genus of ankylosaurian dinosaur from the Upper Cretaceous (Cenomanian stage) of Zhejiang, eastern China. It was first named by a group of Chinese authors Lü Junchang, Jin Xingsheng, Sheng Yiming and Li Yihong in 2007 and the type species is Zhejiangosaurus lishuiensis ("from Lishui", where the fossil was found). It has no diagnostic features, and thus is a nomen dubium.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "154024"
+      - source: wikidata
+        id: Q135078
+      - source: eol
+        id: "10618597"
+    species:
+      - name: Zhejiangosaurus lishuiensis
+        status: valid
+        type_species: true
+        period:
+          name: Late Cretaceous
+          stage: Cenomanian
+          from_ma: 100.5
+          to_ma: 93.9
+        location:
+          country: People's Republic of China
+          region: Zhejiang
+          formation: Chaochuan
+          coordinates:
+            - 28.476667
+            - 119.864998
+        holotype:
+          specimen_id: ZMNH M8718
+          institution: Zhejiang Museum of Natural History
+        described: 2007
+        authors: Lü et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Thyreophora
+      - Ankylosauria
+  Zhenyuanlong:
+    genus: Zhenyuanlong
+    parent: Dromaeosauridae
+    description: "Zhenyuanlong is a genus of dromaeosaurid dinosaur from the Yixian Formation of Liaoning, China. It lived during the Aptian age of the early Cretaceous period, approximately 125 million years ago. It is known from a single specimen belonging to the species Zhenyuanlong suni (Chinese: 孫氏振元龍). This type specimen preserved a nearly complete skeleton that contains traces of feathers, including long tail feathers and large wings. In addition to further complicating diversity of Liaoning dromaeosaurids, this specimen provides the first direct evidence of well-developed pennaceous feathers in a large, non-flying dromaeosaur, raising the question of what function such wings would serve."
+    diet: carnivore
+    appearance:
+      integument: feathered
+    identifiers:
+      - source: pbdb
+        id: "372130"
+      - source: wikidata
+        id: Q20670696
+      - source: gbif
+        id: "11186274"
+      - source: eol
+        id: "60973951"
+    species:
+      - name: Zhenyuanlong suni
+        status: valid
+        type_species: true
+        period:
+          name: Early Cretaceous
+          stage: Aptian
+        location:
+          country: People's Republic of China
+          region: Liaoning
+          formation: Yixian
+          coordinates:
+            - 40.650002
+            - 119.683296
+        holotype:
+          specimen_id: JPM-0008
+          institution: Jinzhou Paleontological Museum
+        described: 2015
+        authors: Lü and Brusatte
+        described_in: lü2015
+    references:
+      - id: lü2015
+        authors: Lü, Junchang; Brusatte, Stephen L.
+        year: 2015
+        title: "A large, short-armed, winged dromaeosaurid (Dinosauria: Theropoda) from the Early Cretaceous of China and its implications for feather evolution"
+        journal: Scientific Reports
+        volume: "5"
+        issue: "1"
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/srep11775
+        url: http://dx.doi.org/10.1038/srep11775
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Tetanurae
+      - Avetheropoda
+      - Coelurosauria
+      - Maniraptora
+      - Dromaeosauridae
+  Zhongjianosaurus:
+    genus: Zhongjianosaurus
+    parent: Microraptorinae
+    description: Zhongjianosaurus is a genus of dromaeosaurid belonging to the Microraptoria. Believed to hail from the Yixian Formation, specifically the middle of the Jehol Biota, it is the smallest known microraptorine thus far discovered and one of the smallest non-avian theropod dinosaurs.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "391290"
+      - source: wikidata
+        id: Q29366656
+    species:
+      - name: Zhongjianosaurus yangi
+        status: valid
+        type_species: true
+        period:
+          name: Early Cretaceous
+          stage: Aptian
+          from_ma: 121.4
+          to_ma: 113.2
+        location:
+          country: People's Republic of China
+          region: Liaoning
+          formation: Jiufotang
+          coordinates:
+            - 40.912777
+            - 119.495834
+        described: 2017
+        authors: Xu and Qin
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Paraves
+      - Deinonychosauria
+      - Dromaeosauridae
+      - Microraptorinae
+  Zhongornis:
+    genus: Zhongornis
+    parent: Paraves
+    etymology: intermediate bird
+    description: Zhongornis is a genus of primitive maniraptoran dinosaurs that lived during the Early Cretaceous. It was found in rocks of the Yixian Formation in Lingyuan City (China), and described by Gao et al. in 2008.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "130179"
+      - source: wikidata
+        id: Q20672447
+      - source: gbif
+        id: "4966897"
+      - source: eol
+        id: "52571823"
+    species:
+      - name: Zhongornis haoae
+        status: valid
+        type_species: true
+        period:
+          name: Early Cretaceous
+          stage: Aptian
+        location:
+          country: People's Republic of China
+          region: Liaoning
+          formation: Yixian
+          coordinates:
+            - 41.239658
+            - 119.3983
+        described: 2008
+        authors: Gao et al.
+        described_in: gao2008
+    references:
+      - id: gao2008
+        authors: GAO, CHUNLING; CHIAPPE, LUIS M.; MENG, QINJING; O’CONNOR, JINGMAI K.; WANG, XURI; CHENG, XIAODONG; LIU, JINYUAN
+        year: 2008
+        title: A NEW BASAL LINEAGE OF EARLY CRETACEOUS BIRDS FROM CHINA AND ITS IMPLICATIONS ON THE EVOLUTION OF THE AVIAN TAIL
+        journal: Palaeontology
+        volume: "51"
+        issue: "4"
+        pages: 775-791
+        publisher: Wiley
+        doi: 10.1111/j.1475-4983.2008.00793.x
+        url: http://dx.doi.org/10.1111/j.1475-4983.2008.00793.x
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Paraves
+  Zhuchengceratops:
+    genus: Zhuchengceratops
+    parent: Leptoceratopsidae
+    description: Zhuchengceratops is a genus of extinct leptoceratopsid ceratopsian that lived during the Upper Cretaceous of modern-day China. It was first described in 2010, by Xu et al., who created the binomial Zhuchengceratops inexpectus. The name is derived from the location of Zhucheng, the Latinized-Greek ceratops, or "horned face", and the unexpected articulated nature of the holotype. The skeleton was found in the Wangshi Group, which is of Late Cretaceous age, and most fossils are only disarticulated bones of Shantungosaurus.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "172379"
+      - source: wikidata
+        id: Q170121
+      - source: gbif
+        id: "8463228"
+      - source: eol
+        id: "47459989"
+    species:
+      - name: Zhuchengceratops inexpectus
+        status: valid
+        type_species: true
+        period:
+          name: Late Cretaceous
+          stage: Campanian
+          from_ma: 83.6
+          to_ma: 72.2
+        location:
+          country: People's Republic of China
+          region: Shandong
+          formation: Hongtuya
+          coordinates:
+            - 35.995598
+            - 119.409943
+        described: 2010
+        authors: Xu et al.
+        described_in: xu2010
+    references:
+      - id: xu2010
+        authors: Xu, Xing; Wang, Kebai; Zhao, Xijin; Sullivan, Corwin; Chen, Shuqing
+        year: 2010
+        title: "A New Leptoceratopsid (Ornithischia: Ceratopsia) from the Upper Cretaceous of Shandong, China and Its Implications for Neoceratopsian Evolution"
+        journal: PLoS ONE
+        volume: "5"
+        issue: "11"
+        pages: e13835
+        publisher: Public Library of Science (PLoS)
+        doi: 10.1371/journal.pone.0013835
+        url: http://dx.doi.org/10.1371/journal.pone.0013835
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Marginocephalia
+      - Ceratopsia
+      - Neoceratopsia
+      - Leptoceratopsidae
+  Zhuchengtitan:
+    genus: Zhuchengtitan
+    parent: Saltasauridae
+    etymology: Zhucheng titan
+    description: Zhuchengtitan is a genus of titanosaurian sauropod dinosaur from the Late Cretaceous of Shandong, China. It contains a single species, Z. zangjiazhuangensis, named by Mo Jinyou and colleagues in 2017 from a single humerus. Zhuchengtitan can be identified by the extreme width of the top end of its humerus, as well as the expansion of the deltopectoral crest on its humerus; both of these characteristics indicate that it was likely closely related to Opisthocoelicaudia. However, it differs from the latter by the flatter bottom articulating surface of its humerus. Zhuchengtitan lived in a floodplain environment alongside Shantungosaurus, Zhuchengtyrannus, and Sinoceratops.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "371019"
+      - source: wikidata
+        id: Q42864717
+    species:
+      - name: Zhuchengtitan zangjiazhuangensis
+        status: valid
+        type_species: true
+        period:
+          name: Late Cretaceous
+          stage: Campanian
+          from_ma: 83.6
+          to_ma: 72.2
+        location:
+          country: People's Republic of China
+          region: Shandong
+          formation: Hongtuya
+          coordinates:
+            - 37.465832
+            - 120.984718
+        described: 2017
+        authors: Mo et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
+      - Titanosauria
+      - Lithostrotia
+      - Saltasauroidea
+      - Lohuecosauria
+      - Saltasauridae
+  Zhuchengtyrannus:
+    genus: Zhuchengtyrannus
+    parent: Tyrannosaurini
+    etymology: Zhucheng tyrant
+    description: Zhuchengtyrannus is a genus of tyrannosaurid theropod dinosaur from Asia, known from the Campanian stage of the Late Cretaceous of Shandong Province, China. It belongs to the subfamily Tyrannosaurinae, and contains a single species, Zhuchengtyrannus magnus.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "182140"
+      - source: wikidata
+        id: Q1705935
+      - source: gbif
+        id: "8559529"
+      - source: eol
+        id: "20384012"
+    species:
+      - name: Zhuchengtyrannus magnus
+        status: valid
+        type_species: true
+        period:
+          name: Late Cretaceous
+          stage: Campanian
+          from_ma: 83.6
+          to_ma: 72.2
+        location:
+          country: People's Republic of China
+          region: Shandong
+          formation: Hongtuya
+          coordinates:
+            - 37.465832
+            - 120.984718
+        holotype:
+          specimen_id: ZCDM V0031
+          institution: Zhucheng Dinosaur Museum
+        described: 2011
+        authors: Hone et al.
+        described_in: hone2011
+    references:
+      - id: hone2011
+        authors: Hone, David W.E.; Wang, Kebai; Sullivan, Corwin; Zhao, Xijin; Chen, Shuqing; Li, Dunjin; Ji, Shuan; Ji, Qiang; Xu, Xing
+        year: 2011
+        title: A new, large tyrannosaurine theropod from the Upper Cretaceous of China
+        journal: Cretaceous Research
+        volume: "32"
+        issue: "4"
+        pages: 495-503
+        publisher: Elsevier BV
+        doi: 10.1016/j.cretres.2011.03.005
+        url: http://dx.doi.org/10.1016/j.cretres.2011.03.005
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Tyrannosauroidea
+      - Tyrannosauridae
+      - Tyrannosaurinae
+      - Tyrannosaurini
+  Ziapelta:
+    genus: Ziapelta
+    parent: Ankylosaurini
+    description: Ziapelta is an extinct genus of ankylosaurid. Its fossils have been found in the Hunter Wash and De-na-zin members of the Kirtland Formation of Upper Cretaceous (Campanian) New Mexico. It was named in 2014, in a research paper led by ankylosaur researcher Victoria Arbour. There is a single species in the genus, Ziapelta sanjuanensis. The genus is named after the Zia sun symbol, a stylized sun with four groups of rays, having religious significance to the Zia people of New Mexico, and the iconic symbol on the state flag of New Mexico, and pelta (Latin), a small shield, in reference to the osteoderms found on all ankylosaurids. The specific name is in reference to San Juan County and the San Juan basin, where the fossils were found. Multiple specimens have been described to date, though the fossils are mostly from the front part of the animal. Its closest relative appears to be either Scolosaurus or Nodocephalosaurus, depending on what cladistic model is used.
+    diet: herbivore
+    appearance:
+      integument: armored
+    identifiers:
+      - source: pbdb
+        id: "320257"
+      - source: wikidata
+        id: Q18123387
+      - source: gbif
+        id: "8686391"
+    species:
+      - name: Ziapelta sanjuanensis
+        status: valid
+        type_species: true
+        period:
+          name: Late Cretaceous
+          stage: Campanian
+          from_ma: 83.6
+          to_ma: 72.2
+        location:
+          country: United States
+          region: New Mexico
+          formation: Kirtland
+          coordinates:
+            - 36.343899
+            - -108.209099
+        described: 2014
+        authors: Arbour et al.
+        described_in: arbour2014
+    references:
+      - id: arbour2014
+        authors: Arbour, Victoria M.; Burns, Michael E.; Sullivan, Robert M.; Lucas, Spencer G.; Cantrell, Amanda K.; Fry, Joshua; Suazo, Thomas L.
+        year: 2014
+        title: A New Ankylosaurid Dinosaur from the Upper Cretaceous (Kirtlandian) of New Mexico with Implications for Ankylosaurid Diversity in the Upper Cretaceous of Western North America
+        journal: PLoS ONE
+        volume: "9"
+        issue: "9"
+        pages: e108804
+        publisher: Public Library of Science (PLoS)
+        doi: 10.1371/journal.pone.0108804
+        url: http://dx.doi.org/10.1371/journal.pone.0108804
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Thyreophora
+      - Ankylosauria
+      - Ankylosauridae
+      - Ankylosaurinae
+      - Ankylosaurini
+  Zigongosaurus:
+    genus: Zigongosaurus
+    parent: Mamenchisauridae
+    etymology: Zigong lizard
+    description: Zigongosaurus is a genus of sauropod dinosaur from the Middle-Late Jurassic-aged Shaximiao Formation of Zigong, Sichuan, China. Because of incomplete knowledge of Jurassic Chinese sauropods, it has been hard to interpret, with some sources assigning it to Omeisaurus, some to Mamenchisaurus, and some to its own genus.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "66512"
+      - source: wikidata
+        id: Q135036
+      - source: gbif
+        id: "4925046"
+    species:
+      - name: Zigongosaurus fuxiensis
+        status: valid
+        type_species: true
+        period:
+          name: Late Jurassic
+        described: 1976
+        authors: Hou et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Mamenchisauridae
+  Zizhongosaurus:
+    genus: Zizhongosaurus
+    parent: Sauropoda
+    etymology: Zizhong lizard
+    description: Zizhongosaurus is a genus of basal herbivorous sauropod dinosaur which lived in the Early Jurassic (Toarcian) Period of China. It was a large-bodied herbivore characterized by a long neck.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "38663"
+      - source: wikidata
+        id: Q133148
+      - source: gbif
+        id: "4822743"
+    species:
+      - name: Zizhongosaurus sp.
+        status: valid
+        type_species: true
+        period:
+          name: Middle Jurassic
+          stage: Bajocian
+        location:
+          country: People's Republic of China
+          region: Sichuan
+          formation: Ziliujing
+          coordinates:
+            - 29.799999
+            - 104.849998
+        described: 1983
+        authors: Dong et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Sauropoda
+  Zuniceratops:
+    genus: Zuniceratops
+    parent: Ceratopsoidea
+    description: Zuniceratops is a genus of ceratopsian dinosaurs that lived during the Turonian stage of the Late Cretaceous in what is now New Mexico, United States. Only a single species is known, Zuniceratops christopheri.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "66590"
+      - source: wikidata
+        id: Q131773
+      - source: gbif
+        id: "4823035"
+    species:
+      - name: Zuniceratops christopheri
+        status: valid
+        type_species: true
+        period:
+          name: Late Cretaceous
+          stage: Turonian
+          from_ma: 93.9
+          to_ma: 89.8
+        location:
+          country: United States
+          region: New Mexico
+          formation: Moreno Hill
+          coordinates:
+            - 35.066666
+            - -108.849998
+        holotype:
+          specimen_id: MSM P2101
+          institution: Mesa Southwest Museum
+        described: 1998
+        authors: Wolfe and Kirkland
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Marginocephalia
+      - Ceratopsia
+      - Neoceratopsia
+      - Coronosauria
+      - Ceratopsoidea
+  Zuolong:
+    genus: Zuolong
+    parent: Coelurosauria
+    pronunciation:
+      ipa: /ˌtzwoːlʊŋ/
+    description: Zuolong is an extinct genus of tetanuran theropod from the Late Jurassic period of China. The type and only species is Z. salleei. The generic name of Zuolong is in honor of General Zuo Zōngtáng (also known as "General Tso") with the Chinese word "long" which means dragon. The specific epithet "salleei" is in honor of Hilmar Sallee, who funded the expedition which led to the specimen's discovery.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "179004"
+      - source: wikidata
+        id: Q150218
+    species:
+      - name: Zuolong salleei
+        status: valid
+        type_species: true
+        period:
+          name: Late Jurassic
+          stage: Oxfordian
+        location:
+          country: People's Republic of China
+          region: Xinjiang
+          formation: Shishugou
+          coordinates:
+            - 45.191288
+            - 88.919884
+        holotype:
+          specimen_id: IVPP V15912
+          institution: Institute of Vertebrate Paleontology and Paleoanthropology
+        described: 2010
+        authors: Choiniere et al.
+        described_in: choiniere2010
+    references:
+      - id: choiniere2010
+        authors: Choiniere, Jonah N.; Clark, James M.; Forster, Catherine A.; Xu, Xing
+        year: 2010
+        title: "A basal coelurosaur (Dinosauria: Theropoda) from the Late Jurassic (Oxfordian) of the Shishugou Formation in Wucaiwan, People's Republic of China"
+        journal: Journal of Vertebrate Paleontology
+        volume: "30"
+        issue: "6"
+        pages: 1773-1796
+        publisher: Informa UK Limited
+        doi: 10.1080/02724634.2010.520779
+        url: http://dx.doi.org/10.1080/02724634.2010.520779
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Tetanurae
+      - Avetheropoda
+      - Coelurosauria
+  Zuoyunlong:
+    genus: Zuoyunlong
+    parent: Hadrosauroidea
+    etymology: Zuoyun County dragon
+    description: Zuoyunlong is an extinct genus of herbivorous ornithopod dinosaur belonging to the Hadrosauroidea that lived during the Late Cretaceous in the area of present China.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "372420"
+      - source: wikidata
+        id: Q21721433
+    species:
+      - name: Zuoyunlong huangi
+        status: valid
+        type_species: true
+        period:
+          name: Late Cretaceous
+          stage: Santonian
+        location:
+          country: People's Republic of China
+          region: Shanxi
+          formation: Zhumapu
+          coordinates:
+            - 40.013611
+            - 112.703056
+        holotype:
+          specimen_id: SXMG V 00 004
+          institution: Shanxi Geological Museum
+        described: 2017
+        authors: Wang et al.
+        described_in: wang2015
+    references:
+      - id: wang2015
+        authors: Wang, Run-Fu; You, Hai-Lu; Wang, Suo-Zhu; Xu, Shi-Chao; Yi, Jian; Xie, Li-Juan; Jia, Lei; Xing, Hai
+        year: 2015
+        title: A second hadrosauroid dinosaur from the early Late Cretaceous of Zuoyun, Shanxi Province, China
+        journal: Historical Biology
+        volume: "29"
+        issue: "1"
+        pages: 17-24
+        publisher: Informa UK Limited
+        doi: 10.1080/08912963.2015.1118688
+        url: http://dx.doi.org/10.1080/08912963.2015.1118688
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Dryomorpha
+      - Styracosterna
+      - Hadrosauriformes
+      - Hadrosauroidea
+  Zupaysaurus:
+    genus: Zupaysaurus
+    parent: Neotheropoda
+    pronunciation:
+      ipa: /ˌzuːpeɪˈsɔːrəs/
+      phonetic: ZOO-pay-SAWR-us
+    description: Zupaysaurus is an extinct genus of early theropod dinosaur living during the Norian stage of the Late Triassic in what is now Argentina. Fossils of the dinosaur were found in the Los Colorados Formation of the Ischigualasto-Villa Unión Basin in northwestern Argentina. Although a full skeleton has not yet been discovered, Zupaysaurus can be considered a bipedal predator, up to 4 metres (13 ft) long. It may have had two parallel crests running the length of its snout.
+    diet: carnivore
+    locomotion: bipedal
+    identifiers:
+      - source: pbdb
+        id: "54098"
+      - source: wikidata
+        id: Q131786
+      - source: gbif
+        id: "4818383"
+    species:
+      - name: Zupaysaurus rougieri
+        status: valid
+        type_species: true
+        period:
+          name: Late Triassic
+          stage: Norian
+        location:
+          country: Argentina
+          region: La Rioja
+          formation: Los Colorados
+          coordinates:
+            - -29.85
+            - -68.066666
+        holotype:
+          specimen_id: PULR 076
+          institution: Universidad Nacional de La Rioja
+        described: 2003
+        authors: Arcucci and Coria
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
   Zuul:
     genus: Zuul
     parent: Ankylosaurini
