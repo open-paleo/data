@@ -75,6 +75,19 @@ check for the following problems:
   (e.g. `United States` instead of `US`, `People's Republic of China`
   instead of `CN`) — check against the keys in `schema.countries`
 
+**Holotype institution / country incongruence:**
+- When a species has both a `holotype.institution` (or a resolvable
+  specimen ID prefix) and a `location.country`, check whether the
+  institution's location is consistent with the discovery country.
+  Resolve the specimen ID prefix using `institutions.yaml` to get the
+  full institution name, then compare the city/country in that name
+  against the species' `location.country`. Flag cases where the
+  institution is in a clearly different country from where the specimen
+  was found (e.g. specimen ID prefix "GCC" resolves to an institution
+  in Germany, but the species was found in China). This is a warning,
+  not an error — some holotypes are legitimately housed abroad — but it
+  often indicates the specimen ID was resolved to the wrong institution.
+
 Collect all issues into a list. For each issue, note:
 - The genus name
 - The field with the problem

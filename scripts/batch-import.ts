@@ -33,53 +33,10 @@ const wikipediaApiBase = "https://en.wikipedia.org/w/api.php";
 const batchSize = 5;
 const batchDelayMs = 1000;
 
-const museumNames: Record<string, string> = {
-    "AMNH": "American Museum of Natural History",
-    "ANSP": "Academy of Natural Sciences of Drexel University",
-    "BHI": "Black Hills Institute of Geological Research",
-    "BMNH": "Natural History Museum, London",
-    "BSP": "Bayerische Staatssammlung für Paläontologie und Geologie",
-    "CLGRP": "Chongqing Laboratory of Geoheritage Research and Protection",
-    "CM": "Carnegie Museum of Natural History",
-    "CMN": "Canadian Museum of Nature",
-    "CVEB": "Centre for Vertebrate Evolutionary Biology, Yunnan University",
-    "DMNH": "Denver Museum of Nature and Science",
-    "FMNH": "Field Museum of Natural History",
-    "GIN": "Geological Institute, Mongolian Academy of Sciences",
-    "GSC": "Geological Survey of Canada",
-    "HMN": "Museum für Naturkunde, Berlin",
-    "ICZM": "Institute of Comparative Zoology Museum",
-    "IGM": "Institute of Geology, Mongolian Academy of Sciences",
-    "IVPP": "Institute of Vertebrate Paleontology and Paleoanthropology",
-    "JPM": "Jinzhou Paleontological Museum",
-    "LACM": "Natural History Museum of Los Angeles County",
-    "MCZ": "Museum of Comparative Zoology, Harvard",
-    "MLP": "Museo de La Plata",
-    "MNHN": "Muséum national d'histoire naturelle, Paris",
-    "MOR": "Museum of the Rockies",
-    "MPC": "Mongolian Paleontological Center",
-    "MSM": "Mesa Southwest Museum",
-    "NHMUK": "Natural History Museum, London",
-    "NMC": "Canadian Museum of Nature",
-    "OMNH": "Sam Noble Oklahoma Museum of Natural History",
-    "PIN": "Paleontological Institute, Russian Academy of Sciences",
-    "PULR": "Universidad Nacional de La Rioja",
-    "ROM": "Royal Ontario Museum",
-    "SAM": "South African Museum",
-    "SMA": "Sauriermuseum Aathal",
-    "SMNS": "Staatliches Museum für Naturkunde Stuttgart",
-    "SXMG": "Shanxi Geological Museum",
-    "TMP": "Royal Tyrrell Museum of Palaeontology",
-    "UCMP": "University of California Museum of Paleontology",
-    "UMNH": "Utah Museum of Natural History",
-    "UNSM": "University of Nebraska State Museum",
-    "USNM": "Smithsonian National Museum of Natural History",
-    "XMDFEC": "Xixia Museum of Dinosaur Fossils, Eggs and Culture",
-    "ZCDM": "Zhucheng Dinosaur Museum",
-    "ZMNH": "Zhejiang Museum of Natural History",
-    "YPM": "Yale Peabody Museum of Natural History",
-    "ZPAL": "Institute of Paleobiology, Polish Academy of Sciences",
-};
+const institutionsList = parseYaml<Array<Record<string, string>>>(
+    path.join(root, "institutions.yaml"),
+);
+const museumNames: Record<string, string> = Object.assign({}, ...institutionsList);
 
 type IntakeIssue = {
     number: number;
@@ -1302,7 +1259,7 @@ function extractHolotype(wikitext: string): { specimenId?: string; institution?:
         .replace(/\{\{[^}]*\}\}/g, "")
         .replace(/\[\[(?:[^|\]]*\|)?([^\]]*)\]\]/g, "$1");
 
-    const specimenPattern = /\b([A-Z]{2,}(?:[-\s][A-Z]{1,4})*[-\s]?[A-Z]?\d[\w.-]*)\b/g;
+    const specimenPattern = /\b([A-Z]{2,}(?:[-\s][A-Za-z]{1,4})*[-\s]?[A-Z]?\d[\w./\u2013-]*)/g;
 
     const holotypeRegion = cleaned.match(/holotype[^.]{0,200}/i);
     const reverseRegion = cleaned.match(/.{0,200}holotype/i);
@@ -1357,7 +1314,7 @@ function extractHolotype(wikitext: string): { specimenId?: string; institution?:
  */
 function resolveMuseumAbbreviation(specimenId: string): string | undefined
 {
-    const prefix = specimenId.match(/^([A-Z]{2,}(?:[-\s][A-Z]{1,4})?)/);
+    const prefix = specimenId.match(/^([A-Z]{2,}(?:[-\s][A-Za-z]{1,4})?)/);
 
     if (!prefix)
     {

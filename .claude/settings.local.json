@@ -1,6 +1,8 @@
 {
   "permissions": {
     "allow": [
+      "Bash(bash .claude/skills/batch-import/promote.sh)",
+      "Bash(bash .claude/skills/batch-import/close-issues.sh)",
       "Bash(gh api:*)",
       "Bash(gh issue:*)",
       "Bash(gh label:*)",
@@ -14,9 +16,8 @@
       "Bash(npm info:*)",
       "Bash(npm pack:*)",
       "Bash(npm run:*)",
-      "Bash(bash .claude/skills/batch-import/promote.sh)",
-      "Bash(bash .claude/skills/batch-import/close-issues.sh)",
       "Bash(npm uninstall:*)",
+      "Skill(batch-import)",
       "WebFetch(domain:en.wikipedia.org)",
       "WebFetch(domain:paleobiodb.org)",
       "WebFetch(domain:www.wikidata.org)"
