@@ -704,6 +704,55 @@ async function fetchDoiReference(doi: string): Promise<Record<string, string> | 
 }
 
 /**
+ * Checks whether a Wikipedia page is a disambiguation page and, if so,
+ * attempts to find the dinosaur-related target article by searching
+ * the wikitext for links containing dinosaur-related keywords.
+ *
+ * @param wikitext - The raw wikitext of the page.
+ * @param extract - The plain-text extract from the Wikipedia API.
+ * @returns The target page title if a dinosaur link is found, or null.
+ */
+function findDisambiguationTarget(wikitext: string, extract: string): string | null
+{
+    const isDisambiguation = /\{\{disambig/i.test(wikitext)
+        || /\{\{disambiguation/i.test(wikitext)
+        || /may refer to:/i.test(extract);
+
+    if (!isDisambiguation)
+    {
+        return null;
+    }
+
+    const linkPattern = /\[\[([^\]|]+)(?:\|[^\]]+)?\]\].*?(?:dinosaur|genus|theropod|sauropod|ornithopod|ceratops|ankylosaur|hadrosaur|pterosaur)/gi;
+    const match = wikitext.match(linkPattern);
+
+    if (match)
+    {
+        const targetMatch = match[0].match(/\[\[([^\]|]+)/);
+
+        if (targetMatch)
+        {
+            return targetMatch[1].trim();
+        }
+    }
+
+    const reverseLinkPattern = /(?:dinosaur|genus|theropod|sauropod|ornithopod|ceratops|ankylosaur|hadrosaur|pterosaur).*?\[\[([^\]|]+)(?:\|[^\]]+)?\]\]/gi;
+    const reverseMatch = wikitext.match(reverseLinkPattern);
+
+    if (reverseMatch)
+    {
+        const targetMatch = reverseMatch[0].match(/\[\[([^\]|]+)/);
+
+        if (targetMatch)
+        {
+            return targetMatch[1].trim();
+        }
+    }
+
+    return null;
+}
+
+/**
  * Fetches and parses the Wikipedia page for a genus, extracting the
  * taxobox, page summary, and etymology section.
  *
@@ -749,10 +798,32 @@ async function parseWikitext(title: string): Promise<WikitextData | null>
         return null;
     }
 
-    const wikitext = parseData.parse?.wikitext?.["*"] ?? "";
-    const result: WikitextData = {};
+    const rawWikitext = parseData.parse?.wikitext?.["*"] ?? "";
+    const rawExtract = extractData?.query?.pages
+        ? Object.values(extractData.query.pages)[0]?.extract ?? ""
+        : "";
 
+    const disambiguationTarget = findDisambiguationTarget(rawWikitext, rawExtract);
+
+    if (disambiguationTarget)
+    {
+        return parseWikitext(disambiguationTarget);
+    }
+
+    const wikitext = rawWikitext;
     const taxobox = extractTaxobox(wikitext);
+
+    if (!taxobox && !title.includes("("))
+    {
+        const dinosaurPage = await parseWikitext(title + " (dinosaur)");
+
+        if (dinosaurPage)
+        {
+            return dinosaurPage;
+        }
+    }
+
+    const result: WikitextData = {};
 
     if (taxobox)
     {
@@ -780,10 +851,7 @@ async function parseWikitext(title: string): Promise<WikitextData | null>
         const extract = pages[pageId]?.extract ?? "";
         const firstParagraph = extract.split("\n")[0] ?? "";
 
-        result.summary = firstParagraph
-            .replace(/\s*\(\s*\)\s*/g, " ")
-            .replace(/\s{2,}/g, " ")
-            .trim();
+        result.summary = firstParagraph.replace(/\s{2,}/g, " ").trim();
     }
 
     if (!result.summary)
@@ -1108,6 +1176,59 @@ function getFirstBodyLine(wikitext: string): string
 }
 
 /**
+ * Extracts an informal phonetic respelling (e.g. "yoo-NAN-oh-SOR-əs")
+ * from the first parenthetical after the genus name in a plain-text
+ * summary.
+ *
+ * @param summary - The plain-text summary from the Wikipedia extract API.
+ * @param name - The genus name.
+ * @returns The respelling string, or an empty string.
+ */
+function extractRespelling(summary: string, name: string): string
+{
+    const pattern = new RegExp(
+        "^" + escapeRegex(name) + "\\s*\\(\\s*([^)]+)\\)",
+    );
+    const match = summary.match(pattern);
+
+    if (!match)
+    {
+        return "";
+    }
+
+    let parenthetical = match[1].trim();
+
+    if (parenthetical.includes(";"))
+    {
+        parenthetical = parenthetical.split(";").pop()?.trim() ?? "";
+    }
+
+    parenthetical = parenthetical.replace(/^[""]|[""]$/g, "").trim();
+
+    const looksLikeRespelling = /[a-z]+-[A-Z]+/.test(parenthetical)
+        || /[ə]/.test(parenthetical);
+
+    return looksLikeRespelling ? parenthetical : "";
+}
+
+/**
+ * Strips any parenthetical that immediately follows the genus name at
+ * the start of a description string.
+ *
+ * @param description - The raw description text.
+ * @param name - The genus name.
+ * @returns The description with the leading parenthetical removed.
+ */
+function stripLeadingParenthetical(description: string, name: string): string
+{
+    const pattern = new RegExp(
+        "^(" + escapeRegex(name) + ")\\s*\\([^)]*\\)\\s*",
+    );
+
+    return description.replace(pattern, "$1 ").replace(/\s{2,}/g, " ").trim();
+}
+
+/**
  * Extracts an IPA transcription from a {{IPAc-en|...}} template in
  * wikitext. Used as a fallback when HTML-based extraction fails.
  *
@@ -1142,6 +1263,13 @@ function extractWikitextIpa(wikitext: string): string
     if (ipaMatch)
     {
         return ipaMatch[1].trim();
+    }
+
+    const genericIpaMatch = firstLine.match(/\{\{IPA\|([^|}]+)/i);
+
+    if (genericIpaMatch)
+    {
+        return genericIpaMatch[1].trim();
     }
 
     return "";
@@ -1245,19 +1373,31 @@ function resolveMuseumAbbreviation(specimenId: string): string | undefined
  */
 function extractIpa(html: string): string
 {
-    const ipaSpanMatch = html.match(
+    const englishIpaMatch = html.match(
         /class="IPA[^"]*"[^>]*lang="en-fonipa"[^>]*>([^]*?)<\/a>/i,
     );
 
-    if (!ipaSpanMatch)
+    if (englishIpaMatch)
     {
-        return "";
+        return englishIpaMatch[1]
+            .replace(/<[^>]+>/g, "")
+            .replace(/&[^;]+;/g, "")
+            .trim();
     }
 
-    return ipaSpanMatch[1]
-        .replace(/<[^>]+>/g, "")
-        .replace(/&[^;]+;/g, "")
-        .trim();
+    const genericIpaMatch = html.match(
+        /class="IPA[^"]*"[^>]*>([^]*?)<\/(?:a|span)>/i,
+    );
+
+    if (genericIpaMatch)
+    {
+        return genericIpaMatch[1]
+            .replace(/<[^>]+>/g, "")
+            .replace(/&[^;]+;/g, "")
+            .trim();
+    }
+
+    return "";
 }
 
 /**
@@ -1990,14 +2130,28 @@ function toGenusYaml(enriched: EnrichedGenus, reference: Record<string, string> 
         genus.etymology = enriched.etymology;
     }
 
-    if (enriched.ipa)
+    const respelling = enriched.description
+        ? extractRespelling(enriched.description, enriched.name)
+        : "";
+
+    if (enriched.ipa || respelling)
     {
-        genus.pronunciation = { ipa: enriched.ipa };
+        genus.pronunciation = {};
+
+        if (enriched.ipa)
+        {
+            genus.pronunciation.ipa = enriched.ipa;
+        }
+
+        if (respelling)
+        {
+            genus.pronunciation.phonetic = respelling;
+        }
     }
 
     if (enriched.description)
     {
-        genus.description = enriched.description;
+        genus.description = stripLeadingParenthetical(enriched.description, enriched.name);
     }
 
     if (enriched.diet)
