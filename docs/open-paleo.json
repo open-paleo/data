@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-04-05T21:19:11.403Z",
-    "clade_count": 86,
-    "genus_count": 36,
+    "built_at": "2026-04-05T22:07:19.388Z",
+    "clade_count": 101,
+    "genus_count": 59,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
     "version": "2026.04"
@@ -71,7 +71,8 @@
                                       "Tyrannosaurinae": {
                                         "Tyrannosaurini": {}
                                       }
-                                    }
+                                    },
+                                    "Proceratosauridae": {}
                                   },
                                   "Maniraptora": {
                                     "Paraves": {
@@ -80,7 +81,8 @@
                                           "Microraptorinae": {},
                                           "Eudromaeosauria": {
                                             "Dromaeosaurinae": {}
-                                          }
+                                          },
+                                          "Unenlagiinae": {}
                                         },
                                         "Troodontidae": {
                                           "Troodontinae": {
@@ -88,8 +90,14 @@
                                           }
                                         }
                                       }
+                                    },
+                                    "Oviraptorosauria": {
+                                      "Oviraptoridae": {}
                                     }
                                   }
+                                },
+                                "Allosauroidea": {
+                                  "Metriacanthosauridae": {}
                                 }
                               }
                             }
@@ -121,7 +129,8 @@
                                                   }
                                                 }
                                               }
-                                            }
+                                            },
+                                            "Euhelopodidae": {}
                                           }
                                         }
                                       },
@@ -134,6 +143,13 @@
                                     "Turiasauria": {}
                                   }
                                 }
+                              }
+                            }
+                          },
+                          "Bagualosauria": {
+                            "Plateosauria": {
+                              "Anchisauria": {
+                                "Prosauropoda": {}
                               }
                             }
                           }
@@ -175,7 +191,9 @@
                                   "Dryomorpha": {
                                     "Styracosterna": {
                                       "Hadrosauriformes": {
-                                        "Hadrosauroidea": {}
+                                        "Hadrosauroidea": {
+                                          "Hadrosauridae": {}
+                                        }
                                       }
                                     }
                                   },
@@ -191,7 +209,13 @@
                                   "Coronosauria": {
                                     "Ceratopsoidea": {}
                                   },
-                                  "Leptoceratopsidae": {}
+                                  "Leptoceratopsidae": {},
+                                  "Chaoyangsauridae": {}
+                                },
+                                "Ceratopsidae": {
+                                  "Centrosaurinae": {
+                                    "Nasutoceratopsini": {}
+                                  }
                                 }
                               },
                               "Pachycephalosauria": {}
@@ -204,6 +228,9 @@
                                   "Ankylosaurini": {}
                                 }
                               }
+                            },
+                            "Stegosauria": {
+                              "Stegosauridae": {}
                             }
                           }
                         },
@@ -301,6 +328,43 @@
           "volume": "15",
           "pages": "241-244"
         }
+      ]
+    },
+    "Allosauroidea": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Allosauroidea"
+      ]
+    },
+    "Anchisauria": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Bagualosauria",
+        "Plateosauria",
+        "Anchisauria"
       ]
     },
     "Ankylopollexia": {
@@ -565,6 +629,22 @@
         }
       ]
     },
+    "Bagualosauria": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Bagualosauria"
+      ]
+    },
     "Brachiosauridae": {
       "description": "Brachiosauridae is a family of macronarian sauropod dinosaurs known from the Late Jurassic to Early Cretaceous of North America, Africa, Europe, and possibly South America. Brachiosaurids are distinguished by their unusual body proportions, with forelimbs longer than or subequal to hindlimbs, giving them a distinctive giraffe-like elevated posture. This configuration allowed them to browse at greater heights than most other sauropods. Notable members include Brachiosaurus and Giraffatitan.\n",
       "taxonomy": [
@@ -682,6 +762,26 @@
           "volume": "22",
           "pages": "209-212"
         }
+      ]
+    },
+    "Centrosaurinae": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Marginocephalia",
+        "Ceratopsia",
+        "Ceratopsidae",
+        "Centrosaurinae"
       ]
     },
     "Cerapoda": {
@@ -855,6 +955,26 @@
           "volume": "27",
           "pages": "329-340"
         }
+      ]
+    },
+    "Chaoyangsauridae": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Marginocephalia",
+        "Ceratopsia",
+        "Neoceratopsia",
+        "Chaoyangsauridae"
       ]
     },
     "Clypeodonta": {
@@ -1185,6 +1305,31 @@
         "Deinonychosauria",
         "Dromaeosauridae",
         "Eudromaeosauria"
+      ]
+    },
+    "Euhelopodidae": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda",
+        "Neosauropoda",
+        "Macronaria",
+        "Titanosauriformes",
+        "Somphospondyli",
+        "Euhelopodidae"
       ]
     },
     "Eusauropoda": {
@@ -1669,6 +1814,26 @@
         }
       ]
     },
+    "Metriacanthosauridae": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Allosauroidea",
+        "Metriacanthosauridae"
+      ]
+    },
     "Microraptorinae": {
       "taxonomy": [
         "Life",
@@ -1691,6 +1856,27 @@
         "Deinonychosauria",
         "Dromaeosauridae",
         "Microraptorinae"
+      ]
+    },
+    "Nasutoceratopsini": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Marginocephalia",
+        "Ceratopsia",
+        "Ceratopsidae",
+        "Centrosaurinae",
+        "Nasutoceratopsini"
       ]
     },
     "Neoceratopsia": {
@@ -1934,6 +2120,49 @@
         "Orodrominae"
       ]
     },
+    "Oviraptoridae": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Coelurosauria",
+        "Maniraptora",
+        "Oviraptorosauria",
+        "Oviraptoridae"
+      ]
+    },
+    "Oviraptorosauria": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Coelurosauria",
+        "Maniraptora",
+        "Oviraptorosauria"
+      ]
+    },
     "Pachycephalosauria": {
       "description": "Pachycephalosauria, meaning \"thick-headed lizards,\" is a clade of marginocephalian ornithischian dinosaurs characterized by a dramatically thickened skull roof (frontoparietal dome). These bipedal herbivores or omnivores were most diverse during the Late Cretaceous of North America and Asia. The thickened dome has been hypothesized to have served in intraspecific head-butting or flank-butting contests, though this remains debated. Notable genera include Pachycephalosaurus, Stegoceras, and Dracorex.\n",
       "taxonomy": [
@@ -1992,6 +2221,63 @@
         "Coelurosauria",
         "Maniraptora",
         "Paraves"
+      ]
+    },
+    "Plateosauria": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Bagualosauria",
+        "Plateosauria"
+      ]
+    },
+    "Proceratosauridae": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Coelurosauria",
+        "Tyrannosauroidea",
+        "Proceratosauridae"
+      ]
+    },
+    "Prosauropoda": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Bagualosauria",
+        "Plateosauria",
+        "Anchisauria",
+        "Prosauropoda"
       ]
     },
     "Rebbachisauridae": {
@@ -2366,6 +2652,24 @@
           "volume": "14",
           "pages": "34-35"
         }
+      ]
+    },
+    "Stegosauridae": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Thyreophora",
+        "Stegosauria",
+        "Stegosauridae"
       ]
     },
     "Styracosterna": {
@@ -2829,6 +3133,30 @@
         "Tetanurae",
         "Coelurosauria",
         "Tyrannosauroidea"
+      ]
+    },
+    "Unenlagiinae": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Coelurosauria",
+        "Maniraptora",
+        "Paraves",
+        "Deinonychosauria",
+        "Dromaeosauridae",
+        "Unenlagiinae"
       ]
     }
   },
@@ -3975,6 +4303,1715 @@
         "Coelurosauria",
         "Maniraptora",
         "Dromaeosauridae"
+      ]
+    },
+    "Yamatosaurus": {
+      "genus": "Yamatosaurus",
+      "parent": "Hadrosauridae",
+      "etymology": "The generic name, Yamatosaurus, refers to Yamatai, also known as Yamato, an ancient region in Japan ruled by the Yamato Kingdom, while the specific name, Y. izanagii, refers to the deity Izanagi, who created eight islands in Yamato: Awaji Island (where the holotype was discovered) Shikoku, Oki, Kyushu, Iki, Tsushima, Sado and Honshu.",
+      "description": "Yamatosaurus is a genus of basal hadrosaurid from the Late Cretaceous (Maastrichtian)-aged Kita-Ama Formation of Awaji Island, Japan. The genus contains a single species, Yamatosaurus izanagii.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "436555"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q106632486"
+        },
+        {
+          "source": "gbif",
+          "id": "11198653"
+        },
+        {
+          "source": "zoobank",
+          "id": "1C728683-C3EA-4688-9420-096D13EB6227"
+        }
+      ],
+      "species": [
+        {
+          "name": "Yamatosaurus izanagii",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": "Late Cretaceous",
+            "stage": "Maastrichtian"
+          },
+          "location": {
+            "country": "JP",
+            "region": "Hyogo",
+            "formation": "Kita-ama",
+            "coordinates": [
+              34.313,
+              134.910004
+            ]
+          },
+          "described": 2021,
+          "authors": "Kobayashi et al.",
+          "described_in": "kobayashi2021"
+        }
+      ],
+      "references": [
+        {
+          "id": "kobayashi2021",
+          "authors": "Kobayashi, Yoshitsugu; Takasaki, Ryuji; Kubota, Katsuhiro; Fiorillo, Anthony R.",
+          "year": 2021,
+          "title": "A new basal hadrosaurid (Dinosauria: Ornithischia) from the latest Cretaceous Kita-ama Formation in Japan implies the origin of hadrosaurids",
+          "journal": "Scientific Reports",
+          "volume": "11",
+          "issue": "1",
+          "publisher": "Springer Science and Business Media LLC",
+          "doi": "10.1038/s41598-021-87719-5",
+          "url": "http://dx.doi.org/10.1038/s41598-021-87719-5"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Cerapoda",
+        "Ornithopoda",
+        "Ankylopollexia",
+        "Styracosterna",
+        "Hadrosauriformes",
+        "Hadrosauridae"
+      ]
+    },
+    "Yanbeilong": {
+      "genus": "Yanbeilong",
+      "parent": "Stegosauria",
+      "etymology": "north of Yanmen Pass dragon",
+      "description": "Yanbeilong is an extinct genus of stegosaurian dinosaurs from the Early Cretaceous (Albian age) Zuoyun Formation of Shanxi, China. The genus contains a single species, Yanbeilong ultimus, known from a single partial skeleton including several vertebrae and the pelvic girdle. It is one of the youngest known stegosaurs, alongside Mongolostegus from Mongolia and unnamed stegosaurine remains from the Hekou Group of China, both of which date to the Aptian–Albian ages.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "494752"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q124395047"
+        },
+        {
+          "source": "zoobank",
+          "id": "D4F73265-AF74-4724-B311-15E9E9F7F046"
+        }
+      ],
+      "species": [
+        {
+          "name": "Yanbeilong ultimus",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": "Early Cretaceous",
+            "stage": "Albian"
+          },
+          "location": {
+            "country": "CN",
+            "region": "Shanxi",
+            "formation": "Zuoyun",
+            "coordinates": [
+              39.886944,
+              112.762497
+            ]
+          },
+          "holotype": {
+            "specimen_id": "SXMG V 00006",
+            "institution": "Shanxi Geological Museum"
+          },
+          "described": 2024,
+          "authors": "Jia et al.",
+          "described_in": "jia2024"
+        }
+      ],
+      "references": [
+        {
+          "id": "jia2024",
+          "authors": "Jia, Lei; Li, Ning; Dong, Liyang; Shi, Jianru; Kang, Zhishuai; Wang, Suozhu; Xu, Shichao; You, Hailu",
+          "year": 2024,
+          "title": "A new stegosaur from the late Early Cretaceous of Zuoyun, Shanxi Province, China",
+          "journal": "Historical Biology",
+          "volume": "37",
+          "issue": "2",
+          "pages": "420-429",
+          "publisher": "Informa UK Limited",
+          "doi": "10.1080/08912963.2024.2308214",
+          "url": "http://dx.doi.org/10.1080/08912963.2024.2308214"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Thyreophora",
+        "Stegosauria"
+      ]
+    },
+    "Yandusaurus": {
+      "genus": "Yandusaurus",
+      "parent": "Neornithischia",
+      "description": "Yandusaurus is a genus of basal neornithischian dinosaur from the middle Jurassic (Bathonian age, approximately 168 to 162 Ma) of eastern Asia. The type species is Y. hongheensis, described in 1979 from the Lower Shaximiao Formation of Sichuan Province, China.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "52891"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q980959"
+        },
+        {
+          "source": "gbif",
+          "id": "4823168"
+        },
+        {
+          "source": "eol",
+          "id": "52571968"
+        }
+      ],
+      "species": [
+        {
+          "name": "Yandusaurus hongheensis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": "Middle Jurassic",
+            "stage": "Bajocian"
+          },
+          "location": {
+            "country": "CN",
+            "region": "Sichuan",
+            "formation": "Shaximiao",
+            "coordinates": [
+              29.4,
+              104.783302
+            ]
+          },
+          "holotype": {
+            "specimen_id": "GCC V20501",
+            "institution": "Museum of the Chengdu University of Technology"
+          },
+          "size": {
+            "length_m": 3,
+            "estimate": true
+          },
+          "described": 1979,
+          "authors": "He"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Neornithischia"
+      ]
+    },
+    "Yangchuanosaurus": {
+      "genus": "Yangchuanosaurus",
+      "parent": "Metriacanthosauridae",
+      "description": "Yangchuanosaurus is an extinct genus of metriacanthosaurid theropod dinosaur that lived in China from the Middle Jurassic to Late Jurassic periods (Bathonian to Tithonian stages), and was similar (although slightly larger) in size and appearance to its North American and European relative, Allosaurus. Yangchuanosaurus hails from the Upper Shaximiao Formation and was the largest predator in a landscape that included the sauropods Mamenchisaurus and Omeisaurus and the stegosaurs Chialingosaurus, Tuojiangosaurus and Chungkingosaurus. This theropod was named after the area in which was discovered, Yongchuan, in China.",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "38594"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q131131"
+        },
+        {
+          "source": "gbif",
+          "id": "4822609"
+        },
+        {
+          "source": "eol",
+          "id": "4433967"
+        }
+      ],
+      "species": [
+        {
+          "name": "Yangchuanosaurus shangyouensis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": "Late Jurassic",
+            "stage": "Tithonian"
+          },
+          "location": {
+            "country": "CN",
+            "region": "Sichuan",
+            "formation": "Shaximiao",
+            "coordinates": [
+              29.411388,
+              104.852501
+            ]
+          },
+          "holotype": {
+            "specimen_id": "CV00216",
+            "institution": "Chongqing Natural History Museum"
+          },
+          "size": {
+            "length_m": 10,
+            "estimate": true
+          },
+          "described": 1978,
+          "authors": "Dong et al."
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Allosauroidea",
+        "Metriacanthosauridae"
+      ]
+    },
+    "Yehuecauhceratops": {
+      "genus": "Yehuecauhceratops",
+      "parent": "Nasutoceratopsini",
+      "etymology": "ancient horned face",
+      "description": "Yehuecauhceratops is a genus of horned centrosaurine ceratopsid dinosaur from the Late Cretaceous of Coahuila, Mexico. It contains a single species, Y. mudei, described from two partial specimens by Rivera-Sylva et al. in 2016 and formally named by Rivera-Sylva et al. in 2017. It was a small centrosaurine with a body length of 3 metres (9.8 ft), making it smaller than Agujaceratops and Coahuilaceratops, the other two ceratopsids in its environment; the three may have been ecologically segregated. A ridge bearing a single roughened projection near the bottom of the squamosal bone, which probably supported a small horn, allows Yehuecauhceratops to be distinguished from other centrosaurines. Its affinities to nasutoceratopsin centrosaurines, such as Avaceratops and Nasutoceratops, are supported by various morphological similarities to the former.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "378712"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q28610332"
+        }
+      ],
+      "species": [
+        {
+          "name": "Yehuecauhceratops mudei",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": "Late Cretaceous",
+            "stage": "Campanian",
+            "from_ma": 83.6,
+            "to_ma": 72.2
+          },
+          "location": {
+            "country": "MX",
+            "region": "Coahuila",
+            "formation": "Aguja",
+            "coordinates": [
+              28.83,
+              -103.300003
+            ]
+          },
+          "holotype": {
+            "specimen_id": "CPC 274",
+            "institution": "Colección Paleontológica de Coahuila, Museo del Desierto (MUDE), Saltillo"
+          },
+          "described": 2017,
+          "authors": "Rivera-Sylva et al.",
+          "described_in": "rivera-sylva2017"
+        }
+      ],
+      "references": [
+        {
+          "id": "rivera-sylva2017",
+          "authors": "Rivera-Sylva, Héctor E.; Frey, Eberhard; Stinnesbeck, Wolfgang; Guzmán-Gutiérrez, José Rubén; González-González, Arturo H.",
+          "year": 2017,
+          "title": "Mexican ceratopsids: Considerations on their diversity and biogeography",
+          "journal": "Journal of South American Earth Sciences",
+          "volume": "75",
+          "pages": "66-73",
+          "publisher": "Elsevier BV",
+          "doi": "10.1016/j.jsames.2017.01.008",
+          "url": "http://dx.doi.org/10.1016/j.jsames.2017.01.008"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Marginocephalia",
+        "Ceratopsia",
+        "Ceratopsidae",
+        "Centrosaurinae",
+        "Nasutoceratopsini"
+      ]
+    },
+    "Yeneen": {
+      "genus": "Yeneen",
+      "parent": "Titanosauria",
+      "description": "Yeneen is an extinct genus of titanosaurian sauropod dinosaurs known from the Late Cretaceous (Santonian age) Bajo de la Carpa Formation of Argentina. The genus contains a single species, Yeneen houssayi, known from at least one partial skeleton. Its discovery highlights the diversity of titanosaurs in this formation, which also includes Bonitasaura, Inawentu, Overosaurus, Rinconsaurus, and Traukutitan.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "517595"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q137773014"
+        }
+      ],
+      "species": [
+        {
+          "name": "Yeneen houssayi",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": "Late Cretaceous",
+            "stage": "Santonian",
+            "from_ma": 85.7,
+            "to_ma": 83.6
+          },
+          "location": {
+            "country": "AR",
+            "region": "Neuquén",
+            "formation": "Bajo de la Carpa",
+            "coordinates": [
+              -37.593056,
+              -69.315559
+            ]
+          },
+          "holotype": {
+            "specimen_id": "MAU-Pv-LI-538/1–30",
+            "institution": "Museo Argentino Urquiza, Rincón de los Sauces, Neuquén"
+          },
+          "described": 2026,
+          "authors": "Filippi et al.",
+          "described_in": "filippi2026"
+        }
+      ],
+      "references": [
+        {
+          "id": "filippi2026",
+          "authors": "Filippi, L. S.; Bellardini, F.; Carballido, J. l.; Méndez, A. H.; Garrido, A. C.",
+          "year": 2026,
+          "title": "Yeneen houssayi gen. et sp. nov. and an overview of the sauropod titanosaurian diversity from Cerro Overo – La Invernada area (Bajo de la Carpa Formation, Santonian), North Patagonia, Argentina",
+          "journal": "Historical Biology",
+          "pages": "1-37",
+          "publisher": "Informa UK Limited",
+          "doi": "10.1080/08912963.2025.2584707",
+          "url": "http://dx.doi.org/10.1080/08912963.2025.2584707"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Sauropoda",
+        "Macronaria",
+        "Titanosauria"
+      ]
+    },
+    "Yimenosaurus": {
+      "genus": "Yimenosaurus",
+      "parent": "Prosauropoda",
+      "etymology": "Yiman reptile",
+      "description": "Yimenosaurus is an extinct genus of plateosaurid sauropodomorph dinosaur that lived in China in the Early Jurassic. The genus was first named in 1990 by Ziqi Bai, Jie Yang and Guohui Wang, along with its type and only species, Yimenosaurus youngi. The species name honours renowned Chinese paleontologist Yang Zhongjian, the father of Chinese paleontology, known as C.C. Young in English. Known material includes the holotype, an almost complete skull and mandible, as well as incomplete cervical and dorsal vertebrae, a mostly complete sacrum, an ilium, ischia, partial ribs and complete femur, and a paratype, a well-preserved postcrania with a fragmentary skull. In 2010 Paul estimated its length at 9 metres (30 ft) and its weight at 2 tonnes (2.2 short tons).",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "68585"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q3083026"
+        },
+        {
+          "source": "gbif",
+          "id": "4967537"
+        }
+      ],
+      "species": [
+        {
+          "name": "Yimenosaurus youngi",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": "Early Jurassic",
+            "stage": "Hettangian"
+          },
+          "location": {
+            "country": "CN",
+            "region": "Yunnan",
+            "formation": "Fengjiahe",
+            "coordinates": [
+              24.355,
+              102.542198
+            ]
+          },
+          "size": {
+            "length_m": 9,
+            "estimate": true
+          },
+          "described": 1990,
+          "authors": "Bai et al."
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Bagualosauria",
+        "Plateosauria",
+        "Anchisauria",
+        "Prosauropoda"
+      ]
+    },
+    "Yingshanosaurus": {
+      "genus": "Yingshanosaurus",
+      "parent": "Stegosauridae",
+      "etymology": "Yingshan lizard",
+      "description": "Yingshanosaurus is an extinct genus of stegosaurian dinosaurs from the Middle Jurassic of what is now Southwestern China. It is known from a partial skeleton discovered in 1983, including back, sacrum, and tail vertebrae, forelimb and hindlimb bones, shoulder and hip bones, and several osteoderms, including plates and a shoulder spine. The genus contains a single species, Yingshanosaurus jichuanensis, named and described in 1994. For some time after its discovery and scientific description, many paleontologists were unaware of the Chinese research published on it and questioned its validity.",
+      "diet": "herbivore",
+      "appearance": {
+        "integument": "armored"
+      },
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "153286"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q2870799"
+        },
+        {
+          "source": "gbif",
+          "id": "4823128"
+        }
+      ],
+      "species": [
+        {
+          "name": "Yingshanosaurus jichuanensis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": "Middle Jurassic",
+            "stage": "Callovian"
+          },
+          "location": {
+            "country": "CN",
+            "region": "Sichuan",
+            "formation": "Shaximiao",
+            "coordinates": [
+              31.07843,
+              106.619347
+            ]
+          },
+          "holotype": {
+            "specimen_id": "CV00722",
+            "institution": "Chongqing Natural History Museum"
+          },
+          "described": 1986,
+          "authors": "Zhou"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Thyreophora",
+        "Stegosauria",
+        "Stegosauridae"
+      ]
+    },
+    "Yinlong": {
+      "genus": "Yinlong",
+      "parent": "Chaoyangsauridae",
+      "etymology": "hidden dragon",
+      "description": "Yinlong is a genus of basal ceratopsian dinosaur from the Late Jurassic Period of China. By far the earliest known ceratopsian, it was a small, primarily bipedal herbivore.",
+      "diet": "herbivore",
+      "locomotion": "bipedal",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "90117"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q132877"
+        },
+        {
+          "source": "gbif",
+          "id": "6141933"
+        },
+        {
+          "source": "eol",
+          "id": "52570616"
+        }
+      ],
+      "species": [
+        {
+          "name": "Yinlong downsi",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": "Late Jurassic",
+            "stage": "Oxfordian"
+          },
+          "location": {
+            "country": "CN",
+            "region": "Xinjiang",
+            "formation": "Shishugou",
+            "coordinates": [
+              45.191288,
+              88.919884
+            ]
+          },
+          "holotype": {
+            "specimen_id": "IVPP V14530",
+            "institution": "Institute of Vertebrate Paleontology and Paleoanthropology"
+          },
+          "size": {
+            "length_m": 1.2,
+            "estimate": true
+          },
+          "described": 2006,
+          "authors": "Xu et al.",
+          "described_in": "xu2006"
+        }
+      ],
+      "references": [
+        {
+          "id": "xu2006",
+          "authors": "Xu, Xing; Forster, Catherine A; Clark, James M; Mo, Jinyou",
+          "year": 2006,
+          "title": "A basal ceratopsian with transitional features from the Late Jurassic of northwestern China",
+          "journal": "Proceedings of the Royal Society B: Biological Sciences",
+          "volume": "273",
+          "issue": "1598",
+          "pages": "2135-2140",
+          "publisher": "The Royal Society",
+          "doi": "10.1098/rspb.2006.3566",
+          "url": "http://dx.doi.org/10.1098/rspb.2006.3566"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Marginocephalia",
+        "Ceratopsia",
+        "Neoceratopsia",
+        "Chaoyangsauridae"
+      ]
+    },
+    "Yixianosaurus": {
+      "genus": "Yixianosaurus",
+      "parent": "Maniraptora",
+      "etymology": "Yixian lizard",
+      "description": "Yixianosaurus is a maniraptoran theropod dinosaur genus from the Early Cretaceous of China.",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "68234"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q18915232"
+        },
+        {
+          "source": "gbif",
+          "id": "4823511"
+        },
+        {
+          "source": "eol",
+          "id": "52571638"
+        }
+      ],
+      "species": [
+        {
+          "name": "Yixianosaurus longimanus",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": "Early Cretaceous",
+            "stage": "Aptian"
+          },
+          "location": {
+            "country": "CN",
+            "region": "Liaoning",
+            "formation": "Yixian",
+            "coordinates": [
+              39.878601,
+              123.438904
+            ]
+          },
+          "holotype": {
+            "specimen_id": "IVPP V12638",
+            "institution": "Institute of Vertebrate Paleontology and Paleoanthropology"
+          },
+          "described": 2003,
+          "authors": "Xu and Wang"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Tetanurae",
+        "Avetheropoda",
+        "Coelurosauria",
+        "Maniraptora"
+      ]
+    },
+    "Yizhousaurus": {
+      "genus": "Yizhousaurus",
+      "parent": "Sauropodiformes",
+      "etymology": "Yizhou lizard",
+      "description": "Yizhousaurus is a genus of basal sauropodiform dinosaurs which existed in what is now Lufeng Formation, Yunnan Province of southern China during the lower Jurassic period. Identified from a nearly complete and exquisitely preserved skeleton, it is the most complete basal sauropod currently known with intact skull. Although its name was revealed in a 2010 Geological Society of America abstract by Sankar Chatterjee, T. Wang, S.G. Pan, Z. Dong, X.C. Wu, and Paul Upchurch, it wasn't validly named and described until 2018. The type species is Yizhousaurus sunae.",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "385703"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q2471020"
+        },
+        {
+          "source": "gbif",
+          "id": "11150937"
+        }
+      ],
+      "species": [
+        {
+          "name": "Yizhousaurus sunae",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": "Early Jurassic",
+            "stage": "Sinemurian"
+          },
+          "location": {
+            "country": "CN",
+            "region": "Yunnan",
+            "formation": "Lufeng",
+            "coordinates": [
+              25,
+              102.033333
+            ]
+          },
+          "described": 2018,
+          "authors": "Zhang et al.",
+          "described_in": "zhang2018"
+        }
+      ],
+      "references": [
+        {
+          "id": "zhang2018",
+          "authors": "Zhang, Qian-Nan; You, Hai-Lu; Wang, Tao; Chatterjee, Sankar",
+          "year": 2018,
+          "title": "A new sauropodiform dinosaur with a ‘sauropodan’ skull from the Lower Jurassic Lufeng Formation of Yunnan Province, China",
+          "journal": "Scientific Reports",
+          "volume": "8",
+          "issue": "1",
+          "publisher": "Springer Science and Business Media LLC",
+          "doi": "10.1038/s41598-018-31874-9",
+          "url": "http://dx.doi.org/10.1038/s41598-018-31874-9"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes"
+      ]
+    },
+    "Yongjinglong": {
+      "genus": "Yongjinglong",
+      "parent": "Euhelopodidae",
+      "description": "Yongjinglong is an extinct genus of titanosauriform sauropod dinosaur known from the Early Cretaceous of Lanzhou-Minhe Basin of Gansu Province, China. It contains a single species, Yongjinglong datangi.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "288219"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q15690935"
+        },
+        {
+          "source": "gbif",
+          "id": "8464547"
+        },
+        {
+          "source": "eol",
+          "id": "47459414"
+        }
+      ],
+      "species": [
+        {
+          "name": "Yongjinglong datangi",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": "Early Cretaceous",
+            "stage": "Aptian"
+          },
+          "location": {
+            "country": "CN",
+            "region": "Gansu",
+            "coordinates": [
+              35.809723,
+              103.771942
+            ]
+          },
+          "described": 2014,
+          "authors": "Li et al.",
+          "described_in": "li2014"
+        }
+      ],
+      "references": [
+        {
+          "id": "li2014",
+          "authors": "Li, Li-Guo; Li, Da-Qing; You, Hai-Lu; Dodson, Peter",
+          "year": 2014,
+          "title": "A New Titanosaurian Sauropod from the Hekou Group (Lower Cretaceous) of the Lanzhou-Minhe Basin, Gansu Province, China",
+          "journal": "PLoS ONE",
+          "volume": "9",
+          "issue": "1",
+          "pages": "e85979",
+          "publisher": "Public Library of Science (PLoS)",
+          "doi": "10.1371/journal.pone.0085979",
+          "url": "http://dx.doi.org/10.1371/journal.pone.0085979"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda",
+        "Neosauropoda",
+        "Macronaria",
+        "Titanosauriformes",
+        "Somphospondyli",
+        "Euhelopodidae"
+      ]
+    },
+    "Ypupiara": {
+      "genus": "Ypupiara",
+      "parent": "Unenlagiinae",
+      "etymology": "the one who lives in the water",
+      "description": "Ypupiara is an extinct genus of unenlagiine theropod from the Late Cretaceous Serra da Galga Formation of Brazil. It was the first member of the Dromaeosauridae to be discovered in South America and the first member of the Unenlagiinae to be discovered, but not the first to be identified as such. The type and only species, Y. lopai, is known solely from a specimen that was destroyed in a fire in 2018.",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "444041"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q107969684"
+        },
+        {
+          "source": "gbif",
+          "id": "11376718"
+        }
+      ],
+      "species": [
+        {
+          "name": "Ypupiara lopai",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": "Late Cretaceous",
+            "stage": "Maastrichtian"
+          },
+          "location": {
+            "country": "BR",
+            "region": "Minas Gerais",
+            "formation": "Serra da Galga",
+            "coordinates": [
+              -19.720278,
+              -47.738335
+            ]
+          },
+          "holotype": {
+            "specimen_id": "DGM 921-R",
+            "institution": "Museu da Divisão de Geologia e Mineralogia, Rio de Janeiro"
+          },
+          "described": 2021,
+          "authors": "Brum et al.",
+          "described_in": "brum2021"
+        }
+      ],
+      "references": [
+        {
+          "id": "brum2021",
+          "authors": "Brum, Arthur S.; Pêgas, Rodrigo V.; Bandeira, Kamila L. N.; Souza, Lucy G.; Campos, Diogenes A.; Kellner, Alexander W. A.",
+          "year": 2021,
+          "title": "A new unenlagiine (Theropoda, Dromaeosauridae) from the Upper Cretaceous of Brazil",
+          "journal": "Papers in Palaeontology",
+          "volume": "7",
+          "issue": "4",
+          "pages": "2075-2099",
+          "publisher": "Wiley",
+          "doi": "10.1002/spp2.1375",
+          "url": "http://dx.doi.org/10.1002/spp2.1375"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Coelurosauria",
+        "Maniraptora",
+        "Paraves",
+        "Deinonychosauria",
+        "Dromaeosauridae",
+        "Unenlagiinae"
+      ]
+    },
+    "Yuanmousaurus": {
+      "genus": "Yuanmousaurus",
+      "parent": "Mamenchisauridae",
+      "etymology": "Yuanmou lizard",
+      "description": "Yuanmousaurus was a sauropod dinosaur from the Middle Jurassic period of China. It is known from incomplete remains, recovered in 2000 from the Zhanghe Formation in Yuanmou County in Yunnan Province. Yuanmousaurus was a relatively large sauropod and may have reached about 17 meters (56 ft) in length. It was a basal member of the Sauropoda, but its exact systematic position is unclear. A recent study placed Yuanmousaurus within the family Mamenchisauridae. It may be a dubious genus. The only and type species was Yuanmousaurus jiangyiensis.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "84655"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q139201"
+        },
+        {
+          "source": "gbif",
+          "id": "4967523"
+        },
+        {
+          "source": "eol",
+          "id": "4658069"
+        }
+      ],
+      "species": [
+        {
+          "name": "Yuanmousaurus jiangyiensis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": "Middle Jurassic",
+            "stage": "Callovian"
+          },
+          "location": {
+            "country": "CN",
+            "region": "Yunnan",
+            "formation": "Zhanghe",
+            "coordinates": [
+              25.947222,
+              101.90889
+            ]
+          },
+          "size": {
+            "length_m": 17,
+            "estimate": true
+          },
+          "described": 2006,
+          "authors": "Lü et al."
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda",
+        "Mamenchisauridae"
+      ]
+    },
+    "Yuanyanglong": {
+      "genus": "Yuanyanglong",
+      "parent": "Oviraptorosauria",
+      "etymology": "lovebird dragon",
+      "description": "Yuanyanglong is an extinct genus of oviraptorosaurian theropod dinosaurs from the Early Cretaceous Miaogou Formation of China. The genus contains a single species, Yuanyanglong bainian, known from two partial skeletons.",
+      "diet": "omnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "502773"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q130638027"
+        }
+      ],
+      "species": [
+        {
+          "name": "Yuanyanglong bainian",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": "Early Cretaceous",
+            "stage": "Albian"
+          },
+          "location": {
+            "country": "CN",
+            "region": "Nei Monggol",
+            "formation": "Miaogou",
+            "coordinates": [
+              40.271702,
+              105.75
+            ]
+          },
+          "described": 2025,
+          "authors": "Hao et al."
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Coelurosauria",
+        "Maniraptora",
+        "Oviraptorosauria"
+      ]
+    },
+    "Yueosaurus": {
+      "genus": "Yueosaurus",
+      "parent": "Iguanodontia",
+      "etymology": "Yueosaurus was first named by Wenjie Zheng, Xingsheng Jin, Masateru Shibata, Yoichi Azuma and Fangming Yu in 2012 and the type species is Yueosaurus tiantaiensis. The generic name is derived from \"Yue\", the ancient name for Zhejiang, and the specific name refers to the Tiantai, where the holotype was discovered.",
+      "description": "Yueosaurus is an extinct genus of basal neornithischian dinosaur known from Zhejiang Province, China.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "267714"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q18915213"
+        },
+        {
+          "source": "gbif",
+          "id": "8603963"
+        }
+      ],
+      "species": [
+        {
+          "name": "Yueosaurus tiantaiensis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": "Late Cretaceous",
+            "stage": "Cenomanian"
+          },
+          "location": {
+            "country": "CN",
+            "region": "Zhejiang",
+            "formation": "Liangtoutang",
+            "coordinates": [
+              29.152113,
+              121.027649
+            ]
+          },
+          "described": 2012,
+          "authors": "Zheng et al.",
+          "described_in": "zheng2012"
+        }
+      ],
+      "references": [
+        {
+          "id": "zheng2012",
+          "authors": "Zheng, Wenjie; Jin, Xingsheng; Shibata, Masateru; Azuma, Yoichi; Yu, Fangming",
+          "year": 2012,
+          "title": "A new ornithischian dinosaur from the Cretaceous Liangtoutang Formation of Tiantai, Zhejiang Province, China",
+          "journal": "Cretaceous Research",
+          "volume": "34",
+          "pages": "208-219",
+          "publisher": "Elsevier BV",
+          "doi": "10.1016/j.cretres.2011.11.001",
+          "url": "http://dx.doi.org/10.1016/j.cretres.2011.11.001"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Ornithopoda",
+        "Clypeodonta",
+        "Iguanodontia"
+      ]
+    },
+    "Yulong": {
+      "genus": "Yulong",
+      "parent": "Oviraptoridae",
+      "description": "Yulong is an extinct genus of derived oviraptorid theropod dinosaur known from the Late Cretaceous Qiupa Formation of Henan Province, central China. It contains a single species, Yulong mini. It is known from many juvenile specimens that represent some of the smallest known oviraptorids and also a single subadult specimen.",
+      "diet": "omnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "255219"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q96676155"
+        }
+      ],
+      "species": [
+        {
+          "name": "Yulong mini",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": "Late Cretaceous",
+            "stage": "Maastrichtian"
+          },
+          "location": {
+            "country": "CN",
+            "region": "Henan",
+            "formation": "Qiupa",
+            "coordinates": [
+              34.016666,
+              111.650002
+            ]
+          },
+          "described": 2013,
+          "authors": "Lü et al.",
+          "described_in": "lü2013"
+        }
+      ],
+      "references": [
+        {
+          "id": "lü2013",
+          "authors": "Lü, Junchang; Currie, Philip J.; Xu, Li; Zhang, Xingliao; Pu, Hanyong; Jia, Songhai",
+          "year": 2013,
+          "title": "Chicken-sized oviraptorid dinosaurs from central China and their ontogenetic implications",
+          "journal": "Naturwissenschaften",
+          "volume": "100",
+          "issue": "2",
+          "pages": "165-175",
+          "publisher": "Springer Science and Business Media LLC",
+          "doi": "10.1007/s00114-012-1007-0",
+          "url": "http://dx.doi.org/10.1007/s00114-012-1007-0"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Coelurosauria",
+        "Maniraptora",
+        "Oviraptorosauria",
+        "Oviraptoridae"
+      ]
+    },
+    "Yunganglong": {
+      "genus": "Yunganglong",
+      "parent": "Hadrosauroidea",
+      "description": "Yunganglong is an extinct genus of basal hadrosauroid dinosaur known from the early Late Cretaceous lower Zhumapu Formation of Zuoyun County, Shanxi Province of northeastern China. It contains a single species, Yunganglong datongensis.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "280675"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q15079382"
+        }
+      ],
+      "species": [
+        {
+          "name": "Yunganglong datongensis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": "Late Cretaceous",
+            "stage": "Santonian"
+          },
+          "location": {
+            "country": "CN",
+            "region": "Shanxi",
+            "formation": "Zhumapu",
+            "coordinates": [
+              40.013611,
+              112.703056
+            ]
+          },
+          "described": 2013,
+          "authors": "Wang et al.",
+          "described_in": "wang2013"
+        }
+      ],
+      "references": [
+        {
+          "id": "wang2013",
+          "authors": "Wang, Run-Fu; You, Hai-Lu; Xu, Shi-Chao; Wang, Suo-Zhu; Yi, Jian; Xie, Li-Juan; Jia, Lei; Li, Ya-Xian",
+          "year": 2013,
+          "title": "A New Hadrosauroid Dinosaur from the Early Late Cretaceous of Shanxi Province, China",
+          "journal": "PLoS ONE",
+          "volume": "8",
+          "issue": "10",
+          "pages": "e77058",
+          "publisher": "Public Library of Science (PLoS)",
+          "doi": "10.1371/journal.pone.0077058",
+          "url": "http://dx.doi.org/10.1371/journal.pone.0077058"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Ornithopoda",
+        "Clypeodonta",
+        "Iguanodontia",
+        "Dryomorpha",
+        "Styracosterna",
+        "Hadrosauriformes",
+        "Hadrosauroidea"
+      ]
+    },
+    "Yunmenglong": {
+      "genus": "Yunmenglong",
+      "parent": "Somphospondyli",
+      "etymology": "Yunmeng dragon",
+      "description": "Yunmenglong is an extinct genus of somphospondylan sauropod known from the late Early Cretaceous of Henan Province, central China. Its remains were discovered in the Haoling Formation of the Ruyang Basin. The type species is Yunmenglong ruyangensis, described in 2013 by Junchang Lü et al. on the basis of an incomplete postcranial skeleton. Yunmenglong shares some characters with Euhelopus, Qiaowanlong, and Erketu; a phylogenetic analysis places it as a sister taxon of Qiaowanlong, both grouped with Erketu in a position more derived than Euhelopus but basal to Titanosauria.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "268506"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q13400839"
+        }
+      ],
+      "species": [
+        {
+          "name": "Yunmenglong ruyangensis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": "Early Cretaceous",
+            "stage": "Albian"
+          },
+          "location": {
+            "country": "CN",
+            "region": "Henan",
+            "formation": "Haoling",
+            "coordinates": [
+              34.112,
+              112.589302
+            ]
+          },
+          "described": 2013,
+          "authors": "Lü et al.",
+          "described_in": "lü2013"
+        }
+      ],
+      "references": [
+        {
+          "id": "lü2013",
+          "authors": "Lü, Junchang; Xu, Li; Pu, Hanyong; Zhang, Xingliao; Zhang, Yiyang; Jia, Songhai; Chang, Huali; Zhang, Jiming; Wei, Xuefang",
+          "year": 2013,
+          "title": "A new sauropod dinosaur (Dinosauria, Sauropoda) from the late Early Cretaceous of the Ruyang Basin (central China)",
+          "journal": "Cretaceous Research",
+          "volume": "44",
+          "pages": "202-213",
+          "publisher": "Elsevier BV",
+          "doi": "10.1016/j.cretres.2013.04.009",
+          "url": "http://dx.doi.org/10.1016/j.cretres.2013.04.009"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda",
+        "Neosauropoda",
+        "Macronaria",
+        "Titanosauriformes",
+        "Somphospondyli"
+      ]
+    },
+    "Yunnanosaurus": {
+      "genus": "Yunnanosaurus",
+      "parent": "Sauropodiformes",
+      "pronunciation": {
+        "ipa": "/juːˌnænoʊˈsɔːrəs/",
+        "phonetic": "yoo-NAN-oh-SOR-əs"
+      },
+      "description": "Yunnanosaurus is an extinct genus of sauropodomorph dinosaur that lived approximately 199 to 183 million years ago in what is now the Yunnan Province, in China, for which it was named. Yunnanosaurus was a large sized, moderately-built, ground-dwelling, quadrupedal herbivore, that could also walk bipedally, and ranged in size from 7 meters (23 feet) long and 2 m (6.5 ft) high to 4 m (13 ft) high in the largest species.",
+      "diet": "herbivore",
+      "locomotion": "bipedal",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "56630"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q427650"
+        },
+        {
+          "source": "gbif",
+          "id": "4817967"
+        }
+      ],
+      "species": [
+        {
+          "name": "Yunnanosaurus youngi",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": "Early Jurassic",
+            "stage": "Pliensbachian"
+          },
+          "location": {
+            "country": "CN",
+            "region": "Yunnan",
+            "formation": "Lufeng",
+            "coordinates": [
+              24.671667,
+              102.591942
+            ]
+          },
+          "holotype": {
+            "specimen_id": "CXMVZA 185",
+            "institution": "Chuxiong Prefectural Museum, Chuxiong"
+          },
+          "size": {
+            "length_m": 7,
+            "estimate": true
+          },
+          "described": 1940,
+          "authors": "Young"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes"
+      ]
+    },
+    "Yunyangosaurus": {
+      "genus": "Yunyangosaurus",
+      "parent": "Tetanurae",
+      "etymology": "Yunyang County lizard",
+      "description": "Yunyangosaurus is a genus of possible megalosauroid dinosaur from the Xintiangou Formation in Chongqing, China. The type and only species is Yunyangosaurus puanensis. The name was first published in the 2019 SVP abstract book by Dai (2019) before it was formally described by Dai et al. (2020).",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "425462"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q81729765"
+        }
+      ],
+      "species": [
+        {
+          "name": "Yunyangosaurus puanensis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": "Middle Jurassic",
+            "stage": "Aalenian"
+          },
+          "location": {
+            "country": "CN",
+            "region": "Chongqing",
+            "formation": "Xintiangou",
+            "coordinates": [
+              30.861668,
+              108.917221
+            ]
+          },
+          "described": 2020,
+          "authors": "Dai et al.",
+          "described_in": "dai2020"
+        }
+      ],
+      "references": [
+        {
+          "id": "dai2020",
+          "authors": "Dai, Hui; Benson, Roger; Hu, Xufeng; Ma, Qingyu; Tan, Chao; Li, Ning; Xiao, Ming; Hu, Haiqian; Zhou, Yuxuan; Wei, Zhaoying; Zhang, Feng; Jiang, Shan; Li, Deliang; Peng, Guangzhao; Yu, Yilun; Xu, Xing",
+          "year": 2020,
+          "title": "A new possible megalosauroid theropod from the Middle Jurassic Xintiangou Formation of Chongqing, People’s Republic of China and its implication for early tetanuran evolution",
+          "journal": "Scientific Reports",
+          "volume": "10",
+          "issue": "1",
+          "publisher": "Springer Science and Business Media LLC",
+          "doi": "10.1038/s41598-019-56959-x",
+          "url": "http://dx.doi.org/10.1038/s41598-019-56959-x"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Tetanurae"
+      ]
+    },
+    "Yurgovuchia": {
+      "genus": "Yurgovuchia",
+      "parent": "Dromaeosaurinae",
+      "etymology": "coyote",
+      "description": "Yurgovuchia is a genus of dromaeosaurid theropod dinosaurs that lived in North America during the Early Cretaceous period in what is now the Cedar Mountain Formation. It contains a single species, Yurgovuchia doellingi. The remains were discovered in Utah, United States.",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "235251"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q19297401"
+        },
+        {
+          "source": "eol",
+          "id": "42332744"
+        }
+      ],
+      "species": [
+        {
+          "name": "Yurgovuchia doellingi",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": "Early Cretaceous",
+            "stage": "Valanginian",
+            "from_ma": 139.1,
+            "to_ma": 132.6
+          },
+          "location": {
+            "country": "US",
+            "region": "Utah",
+            "formation": "Cedar Mountain",
+            "coordinates": [
+              38.731945,
+              -109.592781
+            ]
+          },
+          "holotype": {
+            "specimen_id": "UMNH VP 20211",
+            "institution": "Utah Museum of Natural History"
+          },
+          "described": 2012,
+          "authors": "Senter et al.",
+          "described_in": "senter2012"
+        }
+      ],
+      "references": [
+        {
+          "id": "senter2012",
+          "authors": "Senter, Phil; Kirkland, James I.; DeBlieux, Donald D.; Madsen, Scott; Toth, Natalie",
+          "year": 2012,
+          "title": "New Dromaeosaurids (Dinosauria: Theropoda) from the Lower Cretaceous of Utah, and the Evolution of the Dromaeosaurid Tail",
+          "journal": "PLoS ONE",
+          "volume": "7",
+          "issue": "5",
+          "pages": "e36790",
+          "publisher": "Public Library of Science (PLoS)",
+          "doi": "10.1371/journal.pone.0036790",
+          "url": "http://dx.doi.org/10.1371/journal.pone.0036790"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Coelurosauria",
+        "Maniraptora",
+        "Paraves",
+        "Deinonychosauria",
+        "Dromaeosauridae",
+        "Eudromaeosauria",
+        "Dromaeosaurinae"
+      ]
+    },
+    "Yutyrannus": {
+      "genus": "Yutyrannus",
+      "parent": "Proceratosauridae",
+      "etymology": "feathered tyrant",
+      "description": "Yutyrannus is a genus of proceratosaurid tyrannosauroid dinosaur which contains a single known species, Yutyrannus huali. This species lived during the early Cretaceous period in what is now northeastern China. Three fossils of Yutyrannus huali — all found in the rock beds of Liaoning Province — are the largest-known dinosaur specimens that preserve direct evidence of feathers.",
+      "diet": "carnivore",
+      "appearance": {
+        "integument": "feathered"
+      },
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "230946"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q131710"
+        },
+        {
+          "source": "gbif",
+          "id": "8648057"
+        },
+        {
+          "source": "eol",
+          "id": "52570686"
+        }
+      ],
+      "species": [
+        {
+          "name": "Yutyrannus huali",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": "Early Cretaceous",
+            "stage": "Aptian"
+          },
+          "location": {
+            "country": "CN",
+            "region": "Liaoning",
+            "formation": "Yixian",
+            "coordinates": [
+              41.469719,
+              120.756104
+            ]
+          },
+          "holotype": {
+            "specimen_id": "ZCDM V5000",
+            "institution": "Zhucheng Dinosaur Museum"
+          },
+          "size": {
+            "length_m": 7.5,
+            "estimate": true
+          },
+          "described": 2012,
+          "authors": "Xu et al."
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Coelurosauria",
+        "Tyrannosauroidea",
+        "Proceratosauridae"
       ]
     },
     "Yuxisaurus": {
