@@ -773,6 +773,24 @@ window.DataImport = (function ()
                 fieldType: "text",
             };
         }
+
+        if (wikitext.holotypeSpecimenId && !results["Holotype specimen ID"])
+        {
+            results["Holotype specimen ID"] = {
+                value: wikitext.holotypeSpecimenId,
+                source: "Wikipedia",
+                fieldType: "text",
+            };
+        }
+
+        if (wikitext.holotypeInstitution && !results["Holotype institution"])
+        {
+            results["Holotype institution"] = {
+                value: wikitext.holotypeInstitution,
+                source: "Wikipedia",
+                fieldType: "text",
+            };
+        }
     }
 
     /**
@@ -1201,8 +1219,26 @@ window.DataImport = (function ()
             result.summary = extractSummary(wikitext);
         }
 
-        result.etymology = extractEtymology(wikitext, data.parse?.sections ?? []);
+        result.etymology = extractEtymology(wikitext, data.parse?.sections ?? [], result.summary ?? "");
+
         result.ipa = extractIpa(data.parse?.text?.["*"] ?? "");
+
+        if (!result.ipa)
+        {
+            result.ipa = extractWikitextIpa(wikitext);
+        }
+
+        const holotype = extractHolotype(wikitext);
+
+        if (holotype.specimenId)
+        {
+            result.holotypeSpecimenId = holotype.specimenId;
+        }
+
+        if (holotype.institution)
+        {
+            result.holotypeInstitution = holotype.institution;
+        }
 
         return result;
     }
@@ -1340,38 +1376,286 @@ window.DataImport = (function ()
     }
 
     /**
-     * Extracts the etymology section content from wikitext if present.
+     * Extracts the etymology section content from wikitext. Falls back to
+     * parsing the intro parenthetical or a "means" sentence if no dedicated
+     * Etymology section exists.
      *
      * @param wikitext - The raw wikitext string.
      * @param sections - The parsed sections array from the API response.
+     * @param summary - The cleaned plaintext summary for sentence-level fallback.
      * @returns The cleaned etymology text, or an empty string.
      */
-    function extractEtymology(wikitext, sections)
+    function extractEtymology(wikitext, sections, summary)
     {
         const etymologySection = sections.find(
             (section) => section.line && section.line.toLowerCase().includes("etymolog"),
         );
 
-        if (!etymologySection)
+        if (etymologySection)
+        {
+            const level = etymologySection.level;
+            const headerPattern = new RegExp(`={${level}}\\s*${escapeRegex(etymologySection.line)}\\s*={${level}}`);
+            const headerMatch = wikitext.match(headerPattern);
+
+            if (headerMatch)
+            {
+                const startPosition = headerMatch.index + headerMatch[0].length;
+                const nextHeader = wikitext.slice(startPosition).match(/\n={1,4}[^=]/);
+                const endPosition = nextHeader ? startPosition + nextHeader.index : wikitext.length;
+                const sectionText = wikitext.slice(startPosition, endPosition).trim();
+                const cleaned = cleanWikitext(sectionText).slice(0, 500);
+
+                if (cleaned)
+                {
+                    return cleaned;
+                }
+            }
+        }
+
+        const introEtymology = extractIntroEtymology(wikitext, summary);
+
+        if (introEtymology)
+        {
+            return introEtymology;
+        }
+
+        return "";
+    }
+
+    /**
+     * Extracts etymology from the intro parenthetical in wikitext or from
+     * a "means" sentence in the plaintext summary. Handles patterns like:
+     *   (meaning "Lake Nyasa lizard")
+     *   ("dawn lizard", {{IPAc-en|...}})
+     *   ({{IPAc-en|...}}; meaning "thick-headed lizard", from Greek ...)
+     *   The name "X" means "different lizard"
+     *
+     * @param wikitext - The raw wikitext string.
+     * @param summary - The cleaned plaintext summary.
+     * @returns The extracted etymology, or an empty string.
+     */
+    function extractIntroEtymology(wikitext, summary)
+    {
+        const firstLine = getFirstBodyLine(wikitext);
+
+        if (firstLine)
+        {
+            const parenMatch = firstLine.match(/'{2,5}[^']+'{2,5}\s*\(([^)]*(?:\{\{[^}]*\}\}[^)]*)*)\)/);
+
+            if (parenMatch)
+            {
+                const parenContent = parenMatch[1];
+
+                const meaningMatch = parenContent.match(/meaning\s+[""\u201c]([^""\u201d]+)[""\u201d]/i);
+
+                if (meaningMatch)
+                {
+                    return cleanWikitext(meaningMatch[1]);
+                }
+
+                const quotedMatch = parenContent.match(/^[""\u201c]([^""\u201d]+)[""\u201d]/);
+
+                if (quotedMatch)
+                {
+                    return cleanWikitext(quotedMatch[1]);
+                }
+
+                const afterSemicolon = parenContent.replace(/\{\{[^}]*\}\}/g, "").replace(/<[^>]*>/g, "");
+                const semiMeaningMatch = afterSemicolon.match(/;\s*meaning\s+[""\u201c]([^""\u201d]+)[""\u201d]/i);
+
+                if (semiMeaningMatch)
+                {
+                    return cleanWikitext(semiMeaningMatch[1]);
+                }
+            }
+        }
+
+        const meansMatch = (summary ?? "").match(
+            /(?:the (?:generic )?name|the genus name)[^.]*?means?\s+[""\u201c]([^""\u201d]+)[""\u201d]/i,
+        );
+
+        if (meansMatch)
+        {
+            return meansMatch[1];
+        }
+
+        return "";
+    }
+
+    /**
+     * Finds the first body-text line of wikitext, skipping templates,
+     * tables, and other non-paragraph content.
+     *
+     * @param wikitext - The raw wikitext string.
+     * @returns The first body line, or an empty string.
+     */
+    function getFirstBodyLine(wikitext)
+    {
+        const lines = wikitext.split("\n");
+        let inTemplate = 0;
+
+        for (const line of lines)
+        {
+            const trimmed = line.trim();
+
+            if (trimmed.startsWith("{{"))
+            {
+                inTemplate++;
+            }
+
+            if (inTemplate > 0)
+            {
+                if (trimmed.includes("}}"))
+                {
+                    inTemplate--;
+                }
+
+                continue;
+            }
+
+            if (trimmed.startsWith("|") || trimmed.startsWith("{") || trimmed.startsWith("}") ||
+                trimmed.startsWith("=") || trimmed.startsWith("[[File:") ||
+                trimmed.startsWith("[[Image:") || trimmed === "")
+            {
+                continue;
+            }
+
+            if (trimmed.startsWith("'") || /^[A-Z]/.test(trimmed))
+            {
+                return trimmed;
+            }
+        }
+
+        return "";
+    }
+
+    /**
+     * Extracts an IPA transcription from a {{IPAc-en|...}} template in
+     * wikitext. Used as a fallback when HTML-based extraction fails.
+     *
+     * @param wikitext - The raw wikitext string.
+     * @returns The IPA string with slashes, or an empty string.
+     */
+    function extractWikitextIpa(wikitext)
+    {
+        const firstLine = getFirstBodyLine(wikitext);
+
+        if (!firstLine)
         {
             return "";
         }
 
-        const level = etymologySection.level;
-        const headerPattern = new RegExp(`={${level}}\\s*${escapeRegex(etymologySection.line)}\\s*={${level}}`);
-        const headerMatch = wikitext.match(headerPattern);
+        const ipacMatch = firstLine.match(/\{\{IPAc-en\|([^}]+)\}\}/i);
 
-        if (!headerMatch)
+        if (ipacMatch)
         {
-            return "";
+            const parts = ipacMatch[1].split("|").filter(
+                (part) => !part.includes("=") && part.trim() !== "",
+            );
+
+            if (parts.length > 0)
+            {
+                return "/" + parts.join("") + "/";
+            }
         }
 
-        const startPosition = headerMatch.index + headerMatch[0].length;
-        const nextHeader = wikitext.slice(startPosition).match(/\n={1,4}[^=]/);
-        const endPosition = nextHeader ? startPosition + nextHeader.index : wikitext.length;
-        const sectionText = wikitext.slice(startPosition, endPosition).trim();
+        const ipaMatch = firstLine.match(/\{\{IPA-en\|([^|}]+)/i);
 
-        return cleanWikitext(sectionText).slice(0, 500);
+        if (ipaMatch)
+        {
+            return ipaMatch[1].trim();
+        }
+
+        return "";
+    }
+
+    /**
+     * Extracts holotype specimen ID and institution from the full wikitext
+     * body. Searches for the word "holotype" and extracts a nearby specimen
+     * code matching common museum catalogue patterns.
+     *
+     * @param wikitext - The full raw wikitext string.
+     * @returns An object with specimenId and institution, both optional.
+     */
+    function extractHolotype(wikitext)
+    {
+        const cleaned = wikitext
+            .replace(/<ref[^>]*\/>/gi, "")
+            .replace(/<ref[^>]*>[\s\S]*?<\/ref>/gi, "")
+            .replace(/\{\{[^}]*\}\}/g, "")
+            .replace(/\[\[(?:[^|\]]*\|)?([^\]]*)\]\]/g, "$1");
+
+        const specimenPattern = /\b([A-Z]{2,}(?:[-\s][A-Z]{1,4})*[-\s]?[A-Z]?\d[\w.-]*)\b/g;
+
+        const holotypeRegion = cleaned.match(/holotype[^.]{0,200}/i);
+        const reverseRegion = cleaned.match(/.{0,200}holotype/i);
+
+        for (const region of [holotypeRegion?.[0], reverseRegion?.[0]])
+        {
+            if (!region)
+            {
+                continue;
+            }
+
+            let specimenMatch;
+
+            while ((specimenMatch = specimenPattern.exec(region)) !== null)
+            {
+                const candidate = specimenMatch[1].trim();
+
+                if (candidate.length < 4)
+                {
+                    continue;
+                }
+
+                if (/^\d/.test(candidate))
+                {
+                    continue;
+                }
+
+                if (/^[A-Z][a-z]/.test(candidate))
+                {
+                    continue;
+                }
+
+                return {
+                    specimenId: candidate,
+                    institution: resolveMuseumAbbreviation(candidate),
+                };
+            }
+
+            specimenPattern.lastIndex = 0;
+        }
+
+        return {};
+    }
+
+    /**
+     * Attempts to resolve a museum institution name from a specimen ID
+     * prefix.
+     *
+     * @param specimenId - The specimen catalogue number.
+     * @returns The full institution name, or undefined if not recognized.
+     */
+    function resolveMuseumAbbreviation(specimenId)
+    {
+        const prefix = specimenId.match(/^([A-Z]{2,}(?:[-\s][A-Z]{1,4})?)/);
+
+        if (!prefix)
+        {
+            return undefined;
+        }
+
+        const abbreviation = prefix[1].replace(/[-\s]+/g, "").toUpperCase();
+
+        if (museumNames[abbreviation])
+        {
+            return museumNames[abbreviation];
+        }
+
+        const withHyphen = prefix[1].split(/[-\s]+/)[0];
+
+        return museumNames[withHyphen] ?? undefined;
     }
 
     /**
