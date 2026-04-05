@@ -1,0 +1,210 @@
+---
+name: batch-import
+description: Run the batch import pipeline to fetch genera from PBDB/Wikipedia/Wikidata, review staged data for quality issues, promote into the repository, commit, and close intake issues.
+user-invocable: true
+argument-hint: "[--limit N] [--offset N] [--dry-run]"
+allowed-tools: Bash Read Write Edit Glob Grep Agent AskUserQuestion
+---
+
+# Batch Import
+
+Run the batch import pipeline: fetch genera from PBDB/Wikipedia/Wikidata,
+review the staged data for quality issues, promote files into the
+repository, then commit and close the associated intake issues.
+
+Arguments are forwarded to the import script (e.g. `/batch-import --limit 20 --offset 100`).
+
+---
+
+## Step 1 — Run the import script
+
+Run the batch import script, forwarding any arguments the user provided:
+
+```
+npm run batch-import -- $ARGUMENTS
+```
+
+This writes YAML files into `staging/genera/`, `staging/clades/`, and
+`staging/tree.yml`. It also produces `staging/report.json` and
+`staging/pr-body.md`.
+
+The script can take several minutes. Wait for it to finish completely
+before continuing.
+
+## Step 2 — Read the report
+
+Read `staging/report.json`. Print a short summary to the user:
+
+- Number of genera processed
+- Number of new clades added
+- Number skipped (already existing or no parent)
+- Average field completion
+
+Then list every genus with gaps (the `gaps` array in the report), grouped
+by gap type, so the user can see at a glance what data is missing.
+
+## Step 3 — Review staged data for quality issues
+
+Read **every** staged genus YAML file in `staging/genera/`. For each file
+check for the following problems:
+
+**Description problems:**
+- Starts with `"{Name} may refer to"` (disambiguation page leak)
+- Contains stray wiki markup: `[[`, `]]`, `{{`, `}}`, `<ref`, `'''`
+- Contains stray characters at the start of fields: leading semicolons,
+  leading colons, leading pipes
+- Is suspiciously short (under 40 characters) or empty
+- Describes something clearly not a dinosaur (check for keywords like
+  "person", "village", "river", "mountain", "film" that appear without
+  "dinosaur", "genus", or "extinct" nearby)
+
+**Pronunciation problems:**
+- IPA field contains non-IPA text (e.g. `"Mongolian pronunciation:"`)
+- IPA field is missing the enclosing slashes (`/`)
+- Phonetic field starts with semicolons, quotes, or other stray characters
+- Phonetic field is empty while IPA is also empty
+
+**General field problems:**
+- Any string field that is literally `"undefined"` or `"null"`
+- Author names that look like wiki markup or HTML
+- Coordinates that are `[0, 0]` or outside valid ranges
+  (latitude: -90 to 90, longitude: -180 to 180)
+- Period name or stage that is empty while `from_ma`/`to_ma` are present
+- `described` year that is in the future or before 1800
+
+Collect all issues into a list. For each issue, note:
+- The genus name
+- The field with the problem
+- What the current value is
+- What the problem is
+
+## Step 4 — Present issues and prompt for fixes
+
+If any quality issues were found, present them to the user in a clear
+table or grouped list. Then ask:
+
+> "I found N data quality issues. Would you like me to fix these, or
+> would you prefer to review and fix them manually?"
+
+**Wait for the user to respond before continuing.**
+
+- If the user says to fix them, apply sensible fixes:
+  - Strip stray leading characters (semicolons, colons, pipes, quotes)
+    from field values
+  - Remove non-IPA text from the `ipa` field (set it to empty/remove the
+    field if the value is clearly not IPA)
+  - Remove description fields that are disambiguation text or describe
+    non-dinosaur topics (set to empty string so the field is omitted)
+  - Remove `[0, 0]` coordinates
+  - For other issues, note them as unfixable and tell the user
+- If the user wants to fix them manually, wait for the user to tell you
+  they are done, then re-read the affected files to verify the fixes
+  before continuing
+- If there are no issues, say so and continue immediately
+
+## Step 5 — Promote staged files into the repository
+
+Run the promotion helper script:
+
+```
+bash .claude/skills/batch-import/promote.sh
+```
+
+This copies genus files, new clade files (without overwriting existing
+ones), and the updated `tree.yml` into the repository.
+
+## Step 6 — Validate and build
+
+Run validation:
+
+```
+npm run validate
+```
+
+### Report validation results to the user
+
+Parse the output and report:
+
+1. **Errors** (grouped by check name) — list every error with the file,
+   field, and what went wrong
+2. **Warnings** (summarized) — note the count and general category; list
+   individual warnings only if there are fewer than 10
+
+If there are **errors**, present them and ask:
+
+> "Validation found N errors. Would you like me to auto-fix what I can,
+> or would you prefer to fix them manually?"
+
+**Wait for the user to respond before continuing.**
+
+Common auto-fixable errors and their fixes:
+- **`from_ma`/`to_ma` outside stage range** — remove the `from_ma` and
+  `to_ma` fields (keep the stage name, which is more authoritative than
+  PBDB's formation-level age ranges)
+- **Missing required field `description`** — write a short factual
+  description derived from the genus's parent clade, diet, period, and
+  formation
+- **Holotype missing `institution`** — look up the specimen ID prefix in
+  the `museumNames` dictionary in `batch-import.ts`; if not found, flag
+  it as needing manual entry
+- **Missing parent clade** — check if the clade file was missed during
+  promotion
+- **Schema error in a genus file** — read the file and fix the field
+
+After fixing (or the user fixing manually), re-run `npm run validate`
+until it passes with 0 errors. Warnings are acceptable.
+
+Once validation passes, run:
+
+```
+npm run build
+```
+
+This regenerates the `dist/` and `docs/` output files. It must succeed
+before committing.
+
+## Step 7 — Commit the changes
+
+Stage and commit all changes. Use separate commits for clarity:
+
+**Commit 1 — New genera and clades:**
+
+Stage the new genus files, new clade files, and the updated `tree.yml`:
+
+```
+git add genera/ clades/ tree.yml
+```
+
+Use the following commit message format:
+
+```
+Add {N} genera via batch import
+
+Batch import of {N} genera from PBDB, Wikipedia, and Wikidata.
+New clades added: {M}
+```
+
+Where `{N}` is `generaProcessed` and `{M}` is the count of new clades
+from the report.
+
+**Commit 2 — Build outputs:**
+
+```
+git add dist/ docs/
+```
+
+Use the commit message: `build: update output files`
+
+**Important:** Do NOT push or create a PR. Show the user a summary of
+what was committed and wait for further instructions.
+
+## Step 8 — Close intake issues
+
+Run the issue-closing helper script:
+
+```
+bash .claude/skills/batch-import/close-issues.sh
+```
+
+This reads `staging/report.json`, closes every intake issue via `gh`,
+and spot-checks a sample. Report the total to the user.
