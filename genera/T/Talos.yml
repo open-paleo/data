@@ -1,0 +1,43 @@
+genus: Talos
+parent: Saurornithoidini
+description: Talos is a genus of troodontid theropod dinosaur from the Late
+  Cretaceous Kaiparowits Formation of Utah, United States. It contains a single
+  species, Talos sampsoni, described from a partial skeleton in 2011. Talos was
+  a small bipedal carnivore approximately 2 m long.
+diet: carnivore
+identifiers:
+  - source: pbdb
+    id: "243378"
+  - source: wikidata
+    id: Q133246
+  - source: gbif
+    id: "8655595"
+  - source: eol
+    id: "42332920"
+species:
+  - name: Talos sampsoni
+    status: valid
+    type_species: true
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Campanian
+      from_ma: 83.6
+      to_ma: 72.2
+    location:
+      country: US
+      region: Utah
+      formation: Kaiparowits
+      coordinates:
+        - 37.647072
+        - -111.862358
+    holotype:
+      specimen_id: UMNH VP 19479
+      institution: Utah Museum of Natural History, Salt Lake City
+    size:
+      length_m: 2
+      weight_kg: 38
+      estimate: true
+    described: 2011
+    authors: Zanno et al.
