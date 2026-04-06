@@ -18,7 +18,10 @@ Arguments are forwarded to the import script (e.g. `/batch-import --limit 20 --o
 
 ## Step 1 — Run the import script
 
-Run the batch import script, forwarding any arguments the user provided:
+If the user did not supply a `--limit` argument, default to `--limit 25`.
+
+Run the batch import script, forwarding any arguments the user provided
+(with the default limit applied if needed):
 
 ```
 npm run batch-import -- $ARGUMENTS
@@ -128,6 +131,15 @@ during review. When this happens:
 1. Delete those genera from `staging/genera/` so they are not promoted
 2. Keep track of the omitted genus names — you will need them in Step 5
    (to avoid promoting them) and Step 8 (to avoid closing their issues)
+
+**Disputed genera:** The user may indicate that a genus should be marked
+as disputed (e.g. when a genus maps to a different genus due to disputed
+classification). When this happens:
+
+1. Delete those genera from `staging/genera/` so they are not promoted
+2. Keep track of the disputed genus names separately from regular
+   omissions — you will pass them to the close-issues script in Step 8
+   so it can add the "Intake: Disputed" label to their issues
 
 ## Step 5 — Promote staged files into the repository
 
@@ -240,18 +252,21 @@ what was committed and wait for further instructions.
 ## Step 8 — Close intake issues and clean up
 
 Run the issue-closing helper script. If any genera were omitted during
-review, pass them via `--skip` so their issues stay open:
+review, pass them via `--skip` so their issues stay open. If any genera
+were marked as disputed, pass them via `--disputed` so the script adds
+the "Intake: Disputed" label to their issues (and keeps them open):
 
 ```
-bash .claude/skills/batch-import/close-issues.sh --skip Genus1,Genus2
+bash .claude/skills/batch-import/close-issues.sh --skip Genus1,Genus2 --disputed Genus3,Genus4
 ```
 
-If no genera were omitted, run it without the flag:
+If no genera were omitted or disputed, run it without flags:
 
 ```
 bash .claude/skills/batch-import/close-issues.sh
 ```
 
 This reads `staging/report.json`, closes every non-skipped intake issue
-via `gh`, spot-checks a sample, and then deletes the `staging/`
-directory. Report the total closed issues to the user.
+via `gh`, labels disputed issues, spot-checks a sample, and then deletes
+the `staging/` directory. Report the total closed issues and disputed
+issues to the user.
