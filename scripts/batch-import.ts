@@ -224,18 +224,12 @@ async function fetchJson(fetchUrl: string, options?: RequestInit): Promise<unkno
 }
 
 /**
- * Labels on Intake issues that indicate the genus needs manual review
- * and should be skipped during batch import.
+ * Prefix for labels on Intake issues that indicate the genus needs
+ * manual review and should be skipped during batch import. Any label
+ * starting with this prefix (e.g. "Intake: Nomen Nudum",
+ * "Intake: Disputed") will cause the issue to be skipped.
  */
-const skipLabels = new Set([
-    "Intake: Nomen Nudum",
-    "Intake: Junior Synonym",
-    "Intake: Synonym",
-    "Intake: Preoccupied Name",
-    "Intake: Nomen Manuscriptum",
-    "Intake: Nomen Oblitum",
-    "Intake: Potential Non-Dinosaur",
-]);
+const skipLabelPrefix = "Intake: ";
 
 /**
  * Fetches all open Intake issues from GitHub, excluding those with
@@ -288,7 +282,7 @@ function fetchIntakeIssues(): Array<IntakeIssue>
         for (const issue of batch)
         {
             const hasSkipLabel = issue.labels.some(
-                (label) => skipLabels.has(label),
+                (label) => label.startsWith(skipLabelPrefix),
             );
 
             if (!hasSkipLabel)

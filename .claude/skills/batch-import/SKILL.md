@@ -122,6 +122,13 @@ table or grouped list. Then ask:
   before continuing
 - If there are no issues, say so and continue immediately
 
+**Omitting genera:** The user may ask to omit or skip specific genera
+during review. When this happens:
+
+1. Delete those genera from `staging/genera/` so they are not promoted
+2. Keep track of the omitted genus names — you will need them in Step 5
+   (to avoid promoting them) and Step 8 (to avoid closing their issues)
+
 ## Step 5 — Promote staged files into the repository
 
 Run the promotion helper script:
@@ -232,12 +239,19 @@ what was committed and wait for further instructions.
 
 ## Step 8 — Close intake issues and clean up
 
-Run the issue-closing helper script:
+Run the issue-closing helper script. If any genera were omitted during
+review, pass them via `--skip` so their issues stay open:
+
+```
+bash .claude/skills/batch-import/close-issues.sh --skip Genus1,Genus2
+```
+
+If no genera were omitted, run it without the flag:
 
 ```
 bash .claude/skills/batch-import/close-issues.sh
 ```
 
-This reads `staging/report.json`, closes every intake issue via `gh`,
-spot-checks a sample, and then deletes the `staging/` directory.
-Report the total closed issues to the user.
+This reads `staging/report.json`, closes every non-skipped intake issue
+via `gh`, spot-checks a sample, and then deletes the `staging/`
+directory. Report the total closed issues to the user.
