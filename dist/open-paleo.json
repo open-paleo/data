@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-04-06T22:26:34.212Z",
-    "clade_count": 178,
-    "genus_count": 286,
+    "built_at": "2026-04-06T23:54:35.442Z",
+    "clade_count": 196,
+    "genus_count": 354,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
     "version": "2026.04"
@@ -95,7 +95,8 @@
                                           "Microraptorinae": {},
                                           "Eudromaeosauria": {
                                             "Dromaeosaurinae": {},
-                                            "Velociraptorinae": {}
+                                            "Velociraptorinae": {},
+                                            "Saurornitholestinae": {}
                                           },
                                           "Unenlagiinae": {}
                                         },
@@ -116,7 +117,8 @@
                                       },
                                       "Caudipterygidae": {}
                                     },
-                                    "Avialae": {}
+                                    "Avialae": {},
+                                    "Scansoriopterygidae": {}
                                   },
                                   "Compsognathidae": {},
                                   "Alvarezsauria": {
@@ -152,7 +154,11 @@
                                       "Giganotosaurini": {}
                                     }
                                   },
-                                  "Carcharodontosauria": {}
+                                  "Carcharodontosauria": {},
+                                  "Allosauria": {
+                                    "Allosauridae": {}
+                                  },
+                                  "Neovenatoridae": {}
                                 },
                                 "Megalosauroidea": {
                                   "Piatnitzkysauridae": {},
@@ -172,11 +178,19 @@
                                 "Abelisauridae": {
                                   "Brachyrostra": {
                                     "Furileusauria": {}
+                                  },
+                                  "Carnotaurinae": {
+                                    "Majungasaurini": {}
                                   }
                                 },
                                 "Noasauridae": {
                                   "Noasaurinae": {}
                                 }
+                              }
+                            },
+                            "Coelophysoidea": {
+                              "Coelophysidae": {
+                                "Coelophysinae": {}
                               }
                             }
                           }
@@ -204,11 +218,14 @@
                                                 "Saltasauroidea": {
                                                   "Lohuecosauria": {
                                                     "Saltasauridae": {
-                                                      "Saltasaurinae": {}
+                                                      "Saltasaurinae": {
+                                                        "Saltasaurini": {}
+                                                      }
                                                     }
                                                   }
                                                 },
-                                                "Aeolosaurini": {}
+                                                "Aeolosaurini": {},
+                                                "Nemegtosauridae": {}
                                               },
                                               "Colossosauria": {
                                                 "Rinconsauria": {},
@@ -243,7 +260,9 @@
                                   }
                                 }
                               }
-                            }
+                            },
+                            "Massospondylidae": {},
+                            "Riojasauridae": {}
                           },
                           "Bagualosauria": {
                             "Plateosauria": {
@@ -252,7 +271,8 @@
                               }
                             }
                           },
-                          "Plateosauridae": {}
+                          "Plateosauridae": {},
+                          "Saturnaliidae": {}
                         },
                         "Herrerasauridae": {}
                       },
@@ -296,7 +316,9 @@
                                           "Hadrosauridae": {
                                             "Hadrosaurinae": {
                                               "Brachylophosaurini": {},
-                                              "Edmontosaurini": {}
+                                              "Edmontosaurini": {},
+                                              "Kritosaurini": {},
+                                              "Saurolophini": {}
                                             },
                                             "Lambeosaurinae": {
                                               "Corythosaurini": {},
@@ -310,7 +332,9 @@
                                     "Ankylopollexia": {}
                                   },
                                   "Rhabdodontomorpha": {
-                                    "Rhabdodontoidea": {},
+                                    "Rhabdodontoidea": {
+                                      "Rhabdodontidae": {}
+                                    },
                                     "Tenontosauridae": {}
                                   },
                                   "Elasmaria": {}
@@ -349,7 +373,8 @@
                             "Ankylosauria": {
                               "Ankylosauridae": {
                                 "Ankylosaurinae": {
-                                  "Ankylosaurini": {}
+                                  "Ankylosaurini": {},
+                                  "Euoplocephalini": {}
                                 }
                               },
                               "Nodosauridae": {},
@@ -444,6 +469,26 @@
         "Titanosauria",
         "Lithostrotia",
         "Aeolosaurini"
+      ]
+    },
+    "Allosauria": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Allosauroidea",
+        "Allosauria"
       ]
     },
     "Allosauridae": {
@@ -1211,6 +1256,26 @@
         }
       ]
     },
+    "Carnotaurinae": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Ceratosauria",
+        "Abelisauridae",
+        "Carnotaurinae"
+      ]
+    },
     "Caudipterygidae": {
       "taxonomy": [
         "Life",
@@ -1548,6 +1613,60 @@
         "Cerapoda",
         "Ornithopoda",
         "Clypeodonta"
+      ]
+    },
+    "Coelophysidae": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Coelophysoidea",
+        "Coelophysidae"
+      ]
+    },
+    "Coelophysinae": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Coelophysoidea",
+        "Coelophysidae",
+        "Coelophysinae"
+      ]
+    },
+    "Coelophysoidea": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Coelophysoidea"
       ]
     },
     "Coelurosauria": {
@@ -2181,6 +2300,26 @@
         "Euhelopodidae"
       ]
     },
+    "Euoplocephalini": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Thyreophora",
+        "Ankylosauria",
+        "Ankylosauridae",
+        "Ankylosaurinae",
+        "Euoplocephalini"
+      ]
+    },
     "Eupachycephalosauria": {
       "taxonomy": [
         "Life",
@@ -2591,6 +2730,32 @@
         "Khebbashia"
       ]
     },
+    "Kritosaurini": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Ornithopoda",
+        "Clypeodonta",
+        "Iguanodontia",
+        "Dryomorpha",
+        "Styracosterna",
+        "Hadrosauriformes",
+        "Hadrosauroidea",
+        "Hadrosauridae",
+        "Hadrosaurinae",
+        "Kritosaurini"
+      ]
+    },
     "Lambeosaurinae": {
       "taxonomy": [
         "Life",
@@ -2755,6 +2920,27 @@
         }
       ]
     },
+    "Majungasaurini": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Ceratosauria",
+        "Abelisauridae",
+        "Carnotaurinae",
+        "Majungasaurini"
+      ]
+    },
     "Mamenchisauridae": {
       "taxonomy": [
         "Life",
@@ -2888,6 +3074,23 @@
         "Saurischia",
         "Sauropodomorpha",
         "Massopoda"
+      ]
+    },
+    "Massospondylidae": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Massospondylidae"
       ]
     },
     "Megalosauria": {
@@ -3135,6 +3338,33 @@
         "Nasutoceratopsini"
       ]
     },
+    "Nemegtosauridae": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda",
+        "Neosauropoda",
+        "Macronaria",
+        "Titanosauriformes",
+        "Somphospondyli",
+        "Titanosauria",
+        "Lithostrotia",
+        "Nemegtosauridae"
+      ]
+    },
     "Neoceratopsia": {
       "taxonomy": [
         "Life",
@@ -3204,6 +3434,26 @@
         "Saurischia",
         "Theropoda",
         "Neotheropoda"
+      ]
+    },
+    "Neovenatoridae": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Allosauroidea",
+        "Neovenatoridae"
       ]
     },
     "Noasauridae": {
@@ -3789,6 +4039,28 @@
         "Rebbachisaurinae"
       ]
     },
+    "Rhabdodontidae": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Ornithopoda",
+        "Clypeodonta",
+        "Iguanodontia",
+        "Rhabdodontomorpha",
+        "Rhabdodontoidea",
+        "Rhabdodontidae"
+      ]
+    },
     "Rhabdodontoidea": {
       "taxonomy": [
         "Life",
@@ -3857,6 +4129,23 @@
         "Rinconsauria"
       ]
     },
+    "Riojasauridae": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Riojasauridae"
+      ]
+    },
     "Saltasauridae": {
       "taxonomy": [
         "Life",
@@ -3916,6 +4205,37 @@
         "Saltasaurinae"
       ]
     },
+    "Saltasaurini": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda",
+        "Neosauropoda",
+        "Macronaria",
+        "Titanosauriformes",
+        "Somphospondyli",
+        "Titanosauria",
+        "Lithostrotia",
+        "Saltasauroidea",
+        "Lohuecosauria",
+        "Saltasauridae",
+        "Saltasaurinae",
+        "Saltasaurini"
+      ]
+    },
     "Saltasauroidea": {
       "taxonomy": [
         "Life",
@@ -3941,6 +4261,22 @@
         "Titanosauria",
         "Lithostrotia",
         "Saltasauroidea"
+      ]
+    },
+    "Saturnaliidae": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Saturnaliidae"
       ]
     },
     "Saurischia": {
@@ -3975,6 +4311,32 @@
           "volume": "43",
           "pages": "165-171"
         }
+      ]
+    },
+    "Saurolophini": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Ornithopoda",
+        "Clypeodonta",
+        "Iguanodontia",
+        "Dryomorpha",
+        "Styracosterna",
+        "Hadrosauriformes",
+        "Hadrosauroidea",
+        "Hadrosauridae",
+        "Hadrosaurinae",
+        "Saurolophini"
       ]
     },
     "Sauropoda": {
@@ -4092,6 +4454,52 @@
         "Troodontidae",
         "Troodontinae",
         "Saurornithoidini"
+      ]
+    },
+    "Saurornitholestinae": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Coelurosauria",
+        "Maniraptora",
+        "Paraves",
+        "Deinonychosauria",
+        "Dromaeosauridae",
+        "Eudromaeosauria",
+        "Saurornitholestinae"
+      ]
+    },
+    "Scansoriopterygidae": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Coelurosauria",
+        "Maniraptora",
+        "Scansoriopterygidae"
       ]
     },
     "Sinovenatorinae": {
@@ -5529,6 +5937,5408 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauridae"
+      ]
+    },
+    "Qiupalong": {
+      "genus": "Qiupalong",
+      "parent": "Ornithomimidae",
+      "pronunciation": {
+        "ipa": "/ˌtɕʰuˈpaːloŋ/"
+      },
+      "description": "Qiupalong is an extinct genus of ornithomimosaurian theropod that was discovered in the Late Cretaceous Qiupa Formation of Henan, China. The genus contains a single species, Q. henanensis, the specific epithet for which was named for the province of Henan. Uniquely, Qiupalong is one of the few Late Cretaceous non-avian dinosaurs known from both Asia and Laramidia. A specimen from Alberta has been referred to the genus without being assigned to the type species or suggested to be similar to it. A fossil of an ornithomimid similar to Qiupalong has also been described from Russian Far East.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "176037"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q1909495"
+        },
+        {
+          "source": "gbif",
+          "id": "8498694"
+        }
+      ],
+      "species": [
+        {
+          "name": "Qiupalong henanensis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Maastrichtian"
+            ]
+          },
+          "location": {
+            "country": "CN",
+            "region": "Henan",
+            "formation": "Qiupa",
+            "coordinates": [
+              34.016666,
+              111.650002
+            ]
+          },
+          "holotype": {
+            "specimen_id": "HGM 41HIII-0106",
+            "institution": "Henan Geological Museum, Zhengzhou, Henan"
+          },
+          "described": 2011,
+          "authors": "Xu et al.",
+          "described_in": "xu2011"
+        }
+      ],
+      "references": [
+        {
+          "id": "xu2011",
+          "authors": "Xu, Li; Kobayashi, Yoshitsugu; Lü, Junchang; Lee, Yuong-Nam; Liu, Yongqing; Tanaka, Kohei; Zhang, Xingliao; Jia, Songhai; Zhang, Jiming",
+          "year": 2011,
+          "title": "A new ornithomimid dinosaur with North American affinities from the Late Cretaceous Qiupa Formation in Henan Province of China",
+          "journal": "Cretaceous Research",
+          "volume": "32",
+          "issue": "2",
+          "pages": "213-222",
+          "publisher": "Elsevier BV",
+          "doi": "10.1016/j.cretres.2010.12.004",
+          "url": "http://dx.doi.org/10.1016/j.cretres.2010.12.004"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Coelurosauria",
+        "Maniraptoriformes",
+        "Arctometatarsalia",
+        "Ornithomimosauria",
+        "Ornithomimidae"
+      ]
+    },
+    "Qiupanykus": {
+      "genus": "Qiupanykus",
+      "parent": "Alvarezsauroidea",
+      "etymology": "claw from the Qiupa Formation",
+      "pronunciation": {
+        "ipa": "/ˌtɕʰuˈpaːˈnɑ͡ikəs/"
+      },
+      "description": "Qiupanykus is an extinct genus of alvarezsaurid theropod from the Late Cretaceous Qiupa Formation of Henan Province, China. The type and only species is Q. zhangi, named for Shuancheng Zhang, who assisted in finding the fossils of Qiupanykus.",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "391295"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q56603904"
+        }
+      ],
+      "species": [
+        {
+          "name": "Qiupanykus zhangi",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Maastrichtian"
+            ]
+          },
+          "location": {
+            "country": "CN",
+            "region": "Henan",
+            "formation": "Qiupa",
+            "coordinates": [
+              33.819,
+              111.629997
+            ]
+          },
+          "described": 2018,
+          "authors": "Lü et al.",
+          "described_in": "lü2018"
+        }
+      ],
+      "references": [
+        {
+          "id": "lü2018",
+          "authors": "Lü, JC; Xu, L; Chang, HL; Jia, SH; Zhang, JM; Gao, DS; Zhang, YY; Zhang, CJ; Ding, F",
+          "year": 2018,
+          "title": "A new alvarezsaurid dinosaur from the Late Cretaceous Qiupa Formation of Luanchuan, Henan Province, central China",
+          "journal": "China Geology",
+          "volume": "1",
+          "issue": "1",
+          "pages": "28-35",
+          "publisher": "China Geology",
+          "doi": "10.31035/cg2018005",
+          "url": "http://dx.doi.org/10.31035/cg2018005"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Coelurosauria",
+        "Alvarezsauria",
+        "Alvarezsauroidea"
+      ]
+    },
+    "Quaesitosaurus": {
+      "genus": "Quaesitosaurus",
+      "parent": "Nemegtosauridae",
+      "description": "Quaesitosaurus is a genus of nemegtosaurid sauropod containing only the type species, Q. orientalis, described in 1983. It lived from 72 to 71 million years ago during the Late Cretaceous epoch in the Barun Goyot Formation. With long, low and horse-like with frontally located peg-teeth, the skull of Quaesitosaurus is similar enough to the skull of Diplodocus and its kin to have prompted informed speculation that the missing body was built like those of diplodocids.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "38672"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q132546"
+        },
+        {
+          "source": "gbif",
+          "id": "4822565"
+        }
+      ],
+      "species": [
+        {
+          "name": "Quaesitosaurus orientalis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Campanian"
+            ],
+            "from_ma": 83.6,
+            "to_ma": 72.2
+          },
+          "location": {
+            "country": "MN",
+            "region": "Omnogov",
+            "formation": "Baruungoyot",
+            "coordinates": [
+              43.566002,
+              103.524399
+            ]
+          },
+          "size": {
+            "length_m": 23,
+            "estimate": true
+          },
+          "described": 1983,
+          "authors": "Kurzanov and Bannikov"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda",
+        "Neosauropoda",
+        "Macronaria",
+        "Titanosauriformes",
+        "Somphospondyli",
+        "Titanosauria",
+        "Lithostrotia",
+        "Nemegtosauridae"
+      ]
+    },
+    "Quetecsaurus": {
+      "genus": "Quetecsaurus",
+      "parent": "Lognkosauria",
+      "etymology": "fire lizard",
+      "description": "Quetecsaurus is a genus of titanosaurian sauropod dinosaur known from the Late Cretaceous of the southern Mendoza Province, western Argentina. It contains a single species, Quetecsaurus rusconii.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "287942"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q15632851"
+        },
+        {
+          "source": "eol",
+          "id": "47458362"
+        }
+      ],
+      "species": [
+        {
+          "name": "Quetecsaurus rusconii",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Turonian"
+            ],
+            "from_ma": 93.9,
+            "to_ma": 89.8
+          },
+          "location": {
+            "country": "AR",
+            "region": "Mendoza",
+            "formation": "Cerro Lisandro",
+            "coordinates": [
+              -34.066666,
+              -68.916664
+            ]
+          },
+          "described": 2014,
+          "authors": "González Riga and Ortiz David"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda",
+        "Neosauropoda",
+        "Macronaria",
+        "Titanosauriformes",
+        "Somphospondyli",
+        "Titanosauria",
+        "Colossosauria",
+        "Lognkosauria"
+      ]
+    },
+    "Quilmesaurus": {
+      "genus": "Quilmesaurus",
+      "parent": "Furileusauria",
+      "description": "Quilmesaurus is a genus of carnivorous theropod dinosaur from the Upper Cretaceous (Campanian to Maastrichtian stages) Allen Formation of Argentina. It was a member of Abelisauridae, closely related to genera such as Carnotaurus. The only known remains of this genus are leg bones which share certain similarities to a variety of abelisaurids. However, these bones lack unique features, which may render Quilmesaurus a nomen vanum (more commonly known as a nomen dubium, or \"dubious name\").",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "54538"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q141626"
+        },
+        {
+          "source": "gbif",
+          "id": "4818592"
+        }
+      ],
+      "species": [
+        {
+          "name": "Quilmesaurus curriei",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Maastrichtian"
+            ]
+          },
+          "location": {
+            "country": "AR",
+            "region": "Río Negro",
+            "formation": "Allen",
+            "coordinates": [
+              -39.433887,
+              -67.294998
+            ]
+          },
+          "holotype": {
+            "specimen_id": "MPCA-PV-100",
+            "institution": "Museo provincial de Cipolletti \"Carlos Ameghino\", Cipolletti"
+          },
+          "described": 2001,
+          "authors": "Coria"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Ceratosauria",
+        "Abelisauridae",
+        "Brachyrostra",
+        "Furileusauria"
+      ]
+    },
+    "Qunkasaura": {
+      "genus": "Qunkasaura",
+      "parent": "Saltasauridae",
+      "description": "Qunkasaura is a genus of saltasauroid titanosaur dinosaur from the Late Cretaceous (Campanian–Maastrichtian) Lo Hueco site of the Villalba de la Sierra Formation of Spain. The type species is Qunkasaura pintiquiniestra.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "498067"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q130234520"
+        }
+      ],
+      "species": [
+        {
+          "name": "Qunkasaura pintiquiniestra",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Maastrichtian"
+            ]
+          },
+          "location": {
+            "country": "ES",
+            "region": "Castilla-La Mancha",
+            "formation": "Villalba de la Sierra",
+            "coordinates": [
+              39.950359,
+              -2.021356
+            ]
+          },
+          "described": 2024,
+          "authors": "Mocho et al.",
+          "described_in": "mocho2024"
+        }
+      ],
+      "references": [
+        {
+          "id": "mocho2024",
+          "authors": "Mocho, Pedro; Escaso, Fernando; Marcos-Fernández, Fátima; Páramo, Adrián; Sanz, José Luis; Vidal, Daniel; Ortega, Francisco",
+          "year": 2024,
+          "title": "A Spanish saltasauroid titanosaur reveals Europe as a melting pot of endemic and immigrant sauropods in the Late Cretaceous",
+          "journal": "Communications Biology",
+          "volume": "7",
+          "issue": "1",
+          "publisher": "Springer Science and Business Media LLC",
+          "doi": "10.1038/s42003-024-06653-0",
+          "url": "http://dx.doi.org/10.1038/s42003-024-06653-0"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda",
+        "Neosauropoda",
+        "Macronaria",
+        "Titanosauriformes",
+        "Somphospondyli",
+        "Titanosauria",
+        "Lithostrotia",
+        "Saltasauroidea",
+        "Lohuecosauria",
+        "Saltasauridae"
+      ]
+    },
+    "Rahiolisaurus": {
+      "genus": "Rahiolisaurus",
+      "parent": "Brachyrostra",
+      "description": "Rahiolisaurus is a genus of abelisaurid theropod dinosaur which existed in India during the Late Cretaceous period. It was described in 2010, based on fossils recovered from the Lameta Formation in the Indian state of Gujarat. These fossils include elements from at least seven different individuals and are believed to have been from the Maastrichtian stage, sometime between 70 and 66 million years ago, making it one of the last non-avian dinosaurs known in the fossil record. Despite representing a variety of different growth stages, all recovered fossils from the locality indicate a single species, the type species Rahiolisaurus gujaratensis.",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "172843"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q134070"
+        },
+        {
+          "source": "gbif",
+          "id": "8589047"
+        },
+        {
+          "source": "eol",
+          "id": "18772309"
+        }
+      ],
+      "species": [
+        {
+          "name": "Rahiolisaurus gujaratensis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Maastrichtian"
+            ]
+          },
+          "location": {
+            "country": "IN",
+            "region": "Gujarat",
+            "formation": "Lameta",
+            "coordinates": [
+              23.057222,
+              73.341942
+            ]
+          },
+          "holotype": {
+            "specimen_id": "ISIR 557",
+            "institution": "Geology Museum, Indian Statistical Institute, Calcutta"
+          },
+          "described": 2010,
+          "authors": "Novas et al.",
+          "described_in": "novas2010"
+        }
+      ],
+      "references": [
+        {
+          "id": "novas2010",
+          "authors": "Novas, Fernando E.; Chatterjee, Sankar; Rudra, Dhiraj K.; Datta, P.M.",
+          "year": 2010,
+          "title": "Rahiolisaurus gujaratensis, n. gen. n. sp., A New Abelisaurid Theropod from the Late Cretaceous of India",
+          "journal": "Lecture Notes in Earth Sciences",
+          "pages": "45-62",
+          "publisher": "Springer Berlin Heidelberg",
+          "doi": "10.1007/978-3-642-10311-7_3",
+          "url": "http://dx.doi.org/10.1007/978-3-642-10311-7_3"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Ceratosauria",
+        "Abelisauridae",
+        "Brachyrostra"
+      ]
+    },
+    "Rahonavis": {
+      "genus": "Rahonavis",
+      "parent": "Unenlagiinae",
+      "description": "Rahonavis is a genus of bird-like theropod from the Late Cretaceous (Maastrichtian, from about 70 to 66 mya) of what is now northwestern Madagascar. It is known from a partial skeleton (UA 8656) found by Catherine Forster and colleagues in Maevarano Formation rocks at a quarry near Berivotra, Mahajanga Province. Rahonavis was a small predator, at about 70 centimetres (2.3 ft) long and 0.45-2.27 kg (1-5 lbs), with the typical dromaesaurid-like raised sickle claw on the second toe. It was the first coelurosaur discovered in Africa, with Nqwebasaurus being the second.",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "64132"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q131167"
+        },
+        {
+          "source": "gbif",
+          "id": "3238980"
+        },
+        {
+          "source": "eol",
+          "id": "47446345"
+        }
+      ],
+      "species": [
+        {
+          "name": "Rahonavis ostromi",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Maastrichtian"
+            ]
+          },
+          "location": {
+            "country": "MG",
+            "region": "Mahajanga",
+            "formation": "Maevarano",
+            "coordinates": [
+              -15.9,
+              46.583332
+            ]
+          },
+          "holotype": {
+            "specimen_id": "UA 8656",
+            "institution": "Field Museum of Natural History, Chicago"
+          },
+          "described": 1998,
+          "authors": "Forster et al.",
+          "described_in": "forster1998"
+        }
+      ],
+      "references": [
+        {
+          "id": "forster1998",
+          "authors": "Forster, Catherine A.; Sampson, Scott D.; Chiappe, Luis M.; Krause, David W.",
+          "year": 1998,
+          "title": "Genus Correction",
+          "journal": "Science",
+          "volume": "280",
+          "issue": "5361",
+          "pages": "179-179",
+          "publisher": "American Association for the Advancement of Science (AAAS)",
+          "doi": "10.1126/science.280.5361.179g",
+          "url": "http://dx.doi.org/10.1126/science.280.5361.179g"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Coelurosauria",
+        "Maniraptora",
+        "Paraves",
+        "Deinonychosauria",
+        "Dromaeosauridae",
+        "Unenlagiinae"
+      ]
+    },
+    "Rajasaurus": {
+      "genus": "Rajasaurus",
+      "parent": "Majungasaurini",
+      "pronunciation": {
+        "ipa": "/ˌrɑːdʒəˈsɔːrəs/"
+      },
+      "description": "Rajasaurus is a genus of carnivorous abelisaurid theropod dinosaur from the Late Cretaceous of India, containing one species: Rajasaurus narmadensis. The bones were excavated from the Lameta Formation in the Gujarat state of Western India, probably inhabiting what is now the Narmada River Valley. It was formally described by palaeontologist Jeffrey A. Wilson and colleagues in 2003 based on a partial skeleton comprising the braincase, spine, hip bone, legs, and tail–a first for an Indian theropod. The dinosaur likely measured 6.6 metres (22 ft), and had a single horn on the forehead which was probably used for display and head-butting. Like other abelisaurids, Rajasaurus was probably an ambush predator.",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "54432"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q31881"
+        },
+        {
+          "source": "gbif",
+          "id": "4822829"
+        },
+        {
+          "source": "eol",
+          "id": "4532797"
+        }
+      ],
+      "species": [
+        {
+          "name": "Rajasaurus narmadensis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Maastrichtian"
+            ]
+          },
+          "location": {
+            "country": "IN",
+            "region": "Gujarat",
+            "formation": "Lameta",
+            "coordinates": [
+              23.057222,
+              73.341942
+            ]
+          },
+          "size": {
+            "length_m": 10.5,
+            "weight_kg": 4000,
+            "estimate": true
+          },
+          "described": 2003,
+          "authors": "Wilson et al."
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Ceratosauria",
+        "Abelisauridae",
+        "Carnotaurinae",
+        "Majungasaurini"
+      ]
+    },
+    "Rapator": {
+      "genus": "Rapator",
+      "parent": "Neovenatoridae",
+      "description": "Rapator is a genus of theropod dinosaur from the Griman Creek Formation of New South Wales, Australia, dating to the Cenomanian age of the Cretaceous period. It contains only the type species, Rapator ornitholestoides, which was originally named by Friedrich von Huene in 1932.",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "38631"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q1577331"
+        }
+      ],
+      "species": [
+        {
+          "name": "Rapator ornitholestoides",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Cenomanian"
+            ],
+            "from_ma": 100.5,
+            "to_ma": 93.9
+          },
+          "location": {
+            "country": "AU",
+            "region": "New South Wales",
+            "formation": "Griman Creek",
+            "coordinates": [
+              -29.4333,
+              147.983307
+            ]
+          },
+          "described": 1932,
+          "authors": "Huene"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Allosauroidea",
+        "Neovenatoridae"
+      ]
+    },
+    "Rapetosaurus": {
+      "genus": "Rapetosaurus",
+      "parent": "Saltasauroidea",
+      "pronunciation": {
+        "ipa": "/rəˌpeɪtuːˈsɔːrəs/",
+        "phonetic": "rə-PAY-too-SOR-əs"
+      },
+      "description": "Rapetosaurus is a genus of titanosaurian sauropod dinosaur that lived in Madagascar from 70 to 66 million years ago, at the end of the Cretaceous Period. Only one species, Rapetosaurus krausei, has been identified. Like other sauropods, Rapetosaurus was a quadrupedal herbivore. It is calculated to have reached lengths of 15 m (49 ft) in adulthood.",
+      "diet": "herbivore",
+      "locomotion": "quadrupedal",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "57532"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q135300"
+        },
+        {
+          "source": "gbif",
+          "id": "4822776"
+        },
+        {
+          "source": "eol",
+          "id": "4657961"
+        }
+      ],
+      "species": [
+        {
+          "name": "Rapetosaurus krausei",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Maastrichtian"
+            ]
+          },
+          "location": {
+            "country": "MG",
+            "region": "Mahajanga",
+            "formation": "Maevarano",
+            "coordinates": [
+              -15.9,
+              46.583328
+            ]
+          },
+          "holotype": {
+            "specimen_id": "UA 8698",
+            "institution": "Universite d’Antananarivo, Antananarivo"
+          },
+          "described": 2001,
+          "authors": "Curry Rogers and Forster"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda",
+        "Neosauropoda",
+        "Macronaria",
+        "Titanosauriformes",
+        "Somphospondyli",
+        "Titanosauria",
+        "Lithostrotia",
+        "Saltasauroidea"
+      ]
+    },
+    "Ratchasimasaurus": {
+      "genus": "Ratchasimasaurus",
+      "parent": "Hadrosauroidea",
+      "etymology": "Nakhon Ratchasima lizard",
+      "description": "Ratchasimasaurus is a genus of iguanodontian ornithopod dinosaur from Early Cretaceous (Aptian stage) Khok Kruat Formation of Nakhon Ratchasima province in northeastern Thailand. The type and only species is R. suranareae, named after Thao Suranari, a 19th-century war heroine. It was considered by one study to be a nomen dubium, diagnosed with characters widespread in Styracosterna.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "243348"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q18641809"
+        },
+        {
+          "source": "gbif",
+          "id": "8572222"
+        },
+        {
+          "source": "eol",
+          "id": "47460193"
+        }
+      ],
+      "species": [
+        {
+          "name": "Ratchasimasaurus suranareae",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Aptian"
+            ],
+            "from_ma": 121.4,
+            "to_ma": 113.2
+          },
+          "location": {
+            "country": "TH",
+            "region": "Nakhon Ratchasima",
+            "formation": "Khok Kruat",
+            "coordinates": [
+              14.8873,
+              101.973801
+            ]
+          },
+          "holotype": {
+            "specimen_id": "NRRU-A2064",
+            "institution": "Nakhon Ratchasima Rajabhat University"
+          },
+          "size": {
+            "length_m": 10,
+            "estimate": true
+          },
+          "described": 2011,
+          "authors": "Shibata et al.",
+          "described_in": "shibata2011"
+        }
+      ],
+      "references": [
+        {
+          "id": "shibata2011",
+          "authors": "SHIBATA, Masateru; JINTASAKUL, Pratueng; AZUMA, Yoichi",
+          "year": 2011,
+          "title": "A New Iguanodontian Dinosaur from the Lower Cretaceous Khok Kruat Formation, Nakhon Ratchasima in Northeastern Thailand",
+          "journal": "Acta Geologica Sinica - English Edition",
+          "volume": "85",
+          "issue": "5",
+          "pages": "969-976",
+          "publisher": "Wiley",
+          "doi": "10.1111/j.1755-6724.2011.00530.x",
+          "url": "http://dx.doi.org/10.1111/j.1755-6724.2011.00530.x"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Ornithopoda",
+        "Clypeodonta",
+        "Iguanodontia",
+        "Dryomorpha",
+        "Styracosterna",
+        "Hadrosauriformes",
+        "Hadrosauroidea"
+      ]
+    },
+    "Rativates": {
+      "genus": "Rativates",
+      "parent": "Ornithomimidae",
+      "description": "Rativates is a genus of ornithomimid theropod dinosaur from the Campanian-aged (Late Cretaceous) Dinosaur Park Formation of Alberta, Canada. The type species is Rativates evadens.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "378714"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q26970933"
+        },
+        {
+          "source": "gbif",
+          "id": "9021663"
+        }
+      ],
+      "species": [
+        {
+          "name": "Rativates evadens",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Campanian"
+            ],
+            "from_ma": 83.6,
+            "to_ma": 72.2
+          },
+          "location": {
+            "country": "CA",
+            "region": "Alberta",
+            "formation": "Oldman",
+            "coordinates": [
+              50.8064,
+              -111.626389
+            ]
+          },
+          "holotype": {
+            "specimen_id": "ROM 1790",
+            "institution": "Royal Ontario Museum, Toronto"
+          },
+          "described": 2016,
+          "authors": "McFeeters et al.",
+          "described_in": "mcfeeters2016"
+        }
+      ],
+      "references": [
+        {
+          "id": "mcfeeters2016",
+          "authors": "McFeeters, Bradley; Ryan, Michael J.; Schröder-Adams, Claudia; Cullen, Thomas M.",
+          "year": 2016,
+          "title": "A new ornithomimid theropod from the Dinosaur Park Formation of Alberta, Canada",
+          "journal": "Journal of Vertebrate Paleontology",
+          "volume": "36",
+          "issue": "6",
+          "pages": "e1221415",
+          "publisher": "Informa UK Limited",
+          "doi": "10.1080/02724634.2016.1221415",
+          "url": "http://dx.doi.org/10.1080/02724634.2016.1221415"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Coelurosauria",
+        "Maniraptoriformes",
+        "Arctometatarsalia",
+        "Ornithomimosauria",
+        "Ornithomimidae"
+      ]
+    },
+    "Rayososaurus": {
+      "genus": "Rayososaurus",
+      "parent": "Rebbachisauridae",
+      "description": "Rayososaurus is an extinct genus of sauropod dinosaur in the family Rebbachisauridae. Rayososaurus was named by Argentinian paleontologist José Bonaparte in 1996. Its type and only accepted species is Rayososaurus agrioensis. The species Limaysaurus tessonei was at one point included in Rayososaurus as Rayososaurus tessonei.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "57368"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q145260"
+        },
+        {
+          "source": "gbif",
+          "id": "4822791"
+        }
+      ],
+      "species": [
+        {
+          "name": "Rayososaurus agrioensis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Cenomanian"
+            ],
+            "from_ma": 100.5,
+            "to_ma": 93.9
+          },
+          "location": {
+            "country": "AR",
+            "region": "Neuquén",
+            "formation": "Candeleros",
+            "coordinates": [
+              -38.352779,
+              -69.915833
+            ]
+          },
+          "holotype": {
+            "specimen_id": "MACN-N 41",
+            "institution": "Museo Argentino de Ciencias Naturales ‘Bernardino Rivadavia’, Buenos Aires"
+          },
+          "described": 1996,
+          "authors": "Bonaparte"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda",
+        "Neosauropoda",
+        "Diplodocoidea",
+        "Diplodocimorpha",
+        "Rebbachisauridae"
+      ]
+    },
+    "Rebbachisaurus": {
+      "genus": "Rebbachisaurus",
+      "parent": "Rebbachisaurinae",
+      "etymology": "Aït Rebbach lizard",
+      "description": "Rebbachisaurus is a genus of sauropod dinosaur that lived in what is now Africa during the Late Cretaceous period, between 99 and 97 million years ago. The only valid species is R. garasbae. However, two other species have been assigned to the genus; R. tessonei, now Limaysaurus tessonei, and the nomen dubium R. tamesnensis. Known from a single, incomplete skeleton, much of R. garasbae's anatomy is unknown. The skeleton, discovered in 1948, was unearthed in the Errachidia Province of Morocco from strata of the Kem Kem Beds.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "38679"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q133675"
+        },
+        {
+          "source": "gbif",
+          "id": "4822849"
+        }
+      ],
+      "species": [
+        {
+          "name": "Rebbachisaurus garasbae",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Cenomanian"
+            ]
+          },
+          "location": {
+            "country": "MA",
+            "region": "Drâa-Tafilalet",
+            "formation": "Gara Sbaa",
+            "coordinates": [
+              30.505667,
+              -4.836939
+            ]
+          },
+          "size": {
+            "length_m": 20,
+            "estimate": true
+          },
+          "described": 1954,
+          "authors": "Lavocat"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda",
+        "Neosauropoda",
+        "Diplodocoidea",
+        "Diplodocimorpha",
+        "Rebbachisauridae",
+        "Khebbashia",
+        "Rebbachisaurinae"
+      ]
+    },
+    "Regaliceratops": {
+      "genus": "Regaliceratops",
+      "parent": "Triceratopsini",
+      "etymology": "Royal horned face",
+      "description": "Regaliceratops is a monospecific genus of chasmosaurine ceratopsid dinosaur from Alberta, Canada that lived during the Late Cretaceous (middle Maastrichtian stage, 68.5 to 67.5 Ma) in what is now the St. Mary River Formation. The type and only species, Regaliceratops peterhewsi, is known only from an adult individual with a nearly complete skull lacking the lower jaw, which was nicknamed \"Hellboy\". Regaliceratops was named in 2015 by Caleb M. Brown and Donald M. Henderson. Regaliceratops has an estimated length of 5 metres (16 ft) and body mass of 2 metric tons (2.2 short tons). The skull of Regaliceratops displays features more similar to centrosaurines, which suggests convergent evolution in display morphology in ceratopsids.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "365325"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q20035817"
+        },
+        {
+          "source": "gbif",
+          "id": "9630671"
+        },
+        {
+          "source": "eol",
+          "id": "60970957"
+        },
+        {
+          "source": "zoobank",
+          "id": "18A9C69F-5E3E-47CB-8045-E8DE8A46F904"
+        }
+      ],
+      "species": [
+        {
+          "name": "Regaliceratops peterhewsi",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Maastrichtian"
+            ]
+          },
+          "location": {
+            "country": "CA",
+            "region": "Alberta",
+            "formation": "St. Mary River",
+            "coordinates": [
+              49.616112,
+              -114.106667
+            ]
+          },
+          "holotype": {
+            "specimen_id": "TMP 2005",
+            "institution": "Royal Tyrrell Museum of Paleontology, Drumheller"
+          },
+          "size": {
+            "length_m": 5,
+            "weight_kg": 2,
+            "estimate": true
+          },
+          "described": 2015,
+          "authors": "Brown and Henderson",
+          "described_in": "brown2015"
+        }
+      ],
+      "references": [
+        {
+          "id": "brown2015",
+          "authors": "Brown, Caleb M.; Henderson, Donald M.",
+          "year": 2015,
+          "title": "A New Horned Dinosaur Reveals Convergent Evolution in Cranial Ornamentation in Ceratopsidae",
+          "journal": "Current Biology",
+          "volume": "25",
+          "issue": "12",
+          "pages": "1641-1648",
+          "publisher": "Elsevier BV",
+          "doi": "10.1016/j.cub.2015.04.041",
+          "url": "http://dx.doi.org/10.1016/j.cub.2015.04.041"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Marginocephalia",
+        "Ceratopsia",
+        "Ceratopsidae",
+        "Chasmosaurinae",
+        "Triceratopsini"
+      ]
+    },
+    "Regnosaurus": {
+      "genus": "Regnosaurus",
+      "parent": "Stegosauria",
+      "etymology": "Sussex lizard",
+      "description": "Regnosaurus is an extinct genus of herbivorous presumably armored dinosaur known from the early Cretaceous Wealden Formation of England. The genus contains a single species, Regnosaurus northamptoni, known from a single partial jaw bone. Regnosaurus has traditionally been regarded as a stegosaur, possibly related to the Jurassic Huayangosaurus of China. Later research considers it to be a dubious, indeterminate thyreophoran.",
+      "diet": "herbivore",
+      "appearance": {
+        "integument": "armored"
+      },
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "66561"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q140766"
+        },
+        {
+          "source": "gbif",
+          "id": "4818324"
+        }
+      ],
+      "species": [
+        {
+          "name": "Regnosaurus northamptoni",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Valanginian"
+            ],
+            "from_ma": 137.05,
+            "to_ma": 132.6
+          },
+          "location": {
+            "country": "GB",
+            "region": "England",
+            "formation": "Tunbridge Wells Sand",
+            "coordinates": [
+              51.086388,
+              -0.172222
+            ]
+          },
+          "described": 1848,
+          "authors": "Mantell"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Thyreophora",
+        "Stegosauria"
+      ]
+    },
+    "Rhabdodon": {
+      "genus": "Rhabdodon",
+      "parent": "Rhabdodontidae",
+      "etymology": "fluted tooth",
+      "description": "Rhabdodon is a genus of ornithopod dinosaur that lived in Europe approximately 72-69 million years ago in the Late Cretaceous. The genus contains a single species, R. priscus. It is similar in build to a very robust \"hypsilophodont\" (non-iguanodont ornithopod), though all modern phylogenetic analyses find this to be an unnatural grouping, and Rhabdodon to be a basal member of Iguanodontia. It was large amongst its relatives, measuring 4 m (13 ft) long and weighing 250 kg (550 lb), with some specimens possibly reaching up to 6 m (20 ft) long.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "38753"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q428508"
+        },
+        {
+          "source": "gbif",
+          "id": "7236935"
+        },
+        {
+          "source": "eol",
+          "id": "47460199"
+        }
+      ],
+      "species": [
+        {
+          "name": "Rhabdodon priscus",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Maastrichtian"
+            ]
+          },
+          "location": {
+            "country": "FR",
+            "region": "Provence-Alpes-Côte d'Azur",
+            "coordinates": [
+              43.606697,
+              6.106141
+            ]
+          },
+          "size": {
+            "length_m": 4,
+            "estimate": true
+          },
+          "described": 1869,
+          "authors": "Matheron"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Ornithopoda",
+        "Clypeodonta",
+        "Iguanodontia",
+        "Rhabdodontomorpha",
+        "Rhabdodontoidea",
+        "Rhabdodontidae"
+      ]
+    },
+    "Rhoetosaurus": {
+      "genus": "Rhoetosaurus",
+      "parent": "Eusauropoda",
+      "etymology": "Rhoetus lizard",
+      "description": "Rhoetosaurus is a genus of sauropod dinosaur from the Late Jurassic (Oxfordian) Walloon Coal Measures of what is now eastern Australia. Rhoetosaurus is estimated to have been about 15 metres (49 ft) long, weighing about 9 tonnes (8.9 long tons; 9.9 short tons). Subsequent authors have sometimes misspelled the name: Rhaetosaurus (de Lapparent & Laverat, 1955); Rheteosaurus (Yadagiri, Prasad & Satsangi, 1979).",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "38659"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q333524"
+        },
+        {
+          "source": "gbif",
+          "id": "4822741"
+        }
+      ],
+      "species": [
+        {
+          "name": "Rhoetosaurus brownei",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Jurassic"
+            ],
+            "stage": [
+              "Oxfordian"
+            ]
+          },
+          "location": {
+            "country": "AU",
+            "region": "Queensland",
+            "formation": "Walloon Coal Measures",
+            "coordinates": [
+              -26.083332,
+              149.050003
+            ]
+          },
+          "size": {
+            "length_m": 15,
+            "estimate": true
+          },
+          "described": 1926,
+          "authors": "Longman"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda"
+      ]
+    },
+    "Rhomaleopakhus": {
+      "genus": "Rhomaleopakhus",
+      "parent": "Mamenchisauridae",
+      "etymology": "strong forearm",
+      "description": "Rhomaleopakhus is a genus of mamenchisaurid sauropod dinosaur from the Late Jurassic Kalaza Formation of China. The type and only species is Rhomaleopakhus turpanensis.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "446268"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q110089006"
+        }
+      ],
+      "species": [
+        {
+          "name": "Rhomaleopakhus turpanensis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Jurassic"
+            ],
+            "stage": [
+              "Tithonian"
+            ]
+          },
+          "location": {
+            "country": "CN",
+            "region": "Xinjiang",
+            "formation": "Kalazha",
+            "coordinates": [
+              42.866669,
+              90.166672
+            ]
+          },
+          "holotype": {
+            "specimen_id": "IVPP-V11121-1",
+            "institution": "Institute of Vertebrate Paleontology and Paleoanthropology, Beijing"
+          },
+          "described": 2021,
+          "authors": "Upchurch et al.",
+          "described_in": "upchurch2021"
+        }
+      ],
+      "references": [
+        {
+          "id": "upchurch2021",
+          "authors": "Upchurch, Paul; Mannion, Philip D.; Xu, Xing; Barrett, Paul M.",
+          "year": 2021,
+          "title": "Re-assessment of the Late Jurassic eusauropod dinosaur\n                    <i>Hudiesaurus sinojapanorum</i>\n                    Dong, 1997, from the Turpan Basin, China, and the evolution of hyper-robust antebrachia in sauropods",
+          "journal": "Journal of Vertebrate Paleontology",
+          "volume": "41",
+          "issue": "4",
+          "publisher": "Informa UK Limited",
+          "doi": "10.1080/02724634.2021.1994414",
+          "url": "http://dx.doi.org/10.1080/02724634.2021.1994414"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda",
+        "Mamenchisauridae"
+      ]
+    },
+    "Riabininohadros": {
+      "genus": "Riabininohadros",
+      "parent": "Styracosterna",
+      "etymology": "Riabinin's hadrosaur",
+      "description": "Riabininohadros is an extinct genus of ankylopollexian dinosaur from the Maastrichtian of Crimea. Its type species is Riabininohadros weberi, emended to Riabininohadros weberae. It was originally classified as a species of Orthomerus, until 2015.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "374117"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q19605699"
+        },
+        {
+          "source": "gbif",
+          "id": "8720304"
+        },
+        {
+          "source": "eol",
+          "id": "53424317"
+        }
+      ],
+      "species": [
+        {
+          "name": "Riabininohadros weberae",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Maastrichtian"
+            ]
+          },
+          "location": {
+            "country": "UA",
+            "region": "Crimea",
+            "coordinates": [
+              44.74609,
+              33.861565
+            ]
+          },
+          "holotype": {
+            "specimen_id": "ZGTM 5751",
+            "institution": "Chernyshev Central Museum of Geological Exploration, St. Petersburg"
+          },
+          "described": 2015,
+          "authors": "Ulansky"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Cerapoda",
+        "Ornithopoda",
+        "Ankylopollexia",
+        "Styracosterna"
+      ]
+    },
+    "Richardoestesia": {
+      "genus": "Richardoestesia",
+      "parent": "Dromaeosauridae",
+      "description": "Richardoestesia is a morphogenus of theropod dinosaur teeth, originally described from the Late Cretaceous of what is now Canada, the United States, and possibly also Uzbekistan. It currently contains two species, R. gilmorei and R. isosceles, and a possible third, R. asiatica, although it has been classified in its own genus Asiamericana. It has been used as a morphotaxon to describe other theropod teeth widely displaced in time and space from the type species. If all teeth assigned to the genus are truly reflective of the animals biology and taxonomic state (as some teeth go as far back as the Late Jurassic), it would have been one of the longest lasting dinosaur genera, perhaps also being the most widely distributed.",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "58873"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q2029022"
+        },
+        {
+          "source": "gbif",
+          "id": "4822949"
+        },
+        {
+          "source": "eol",
+          "id": "4531529"
+        }
+      ],
+      "species": [
+        {
+          "name": "Asiamericana asiatica",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Maastrichtian"
+            ]
+          },
+          "location": {
+            "country": "US",
+            "region": "Montana",
+            "formation": "Judith River",
+            "coordinates": [
+              46.465099,
+              -109.297203
+            ]
+          },
+          "holotype": {
+            "specimen_id": "NMC 343",
+            "institution": "Canadian Museum of Nature, Ottawa"
+          },
+          "described": 1990,
+          "authors": "Currie et al.",
+          "described_in": "currie1990"
+        }
+      ],
+      "references": [
+        {
+          "id": "currie1990",
+          "authors": "Currie, Philip J.; Rigby, J. Keith; Sloan, Robert E.",
+          "year": 1990,
+          "title": "Theropod teeth from the Judith River Formation of southern Alberta, Canada",
+          "journal": "Dinosaur Systematics",
+          "pages": "107-126",
+          "publisher": "Cambridge University Press",
+          "doi": "10.1017/cbo9780511608377.011",
+          "url": "http://dx.doi.org/10.1017/cbo9780511608377.011"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Tetanurae",
+        "Avetheropoda",
+        "Coelurosauria",
+        "Maniraptora",
+        "Dromaeosauridae"
+      ]
+    },
+    "Rinchenia": {
+      "genus": "Rinchenia",
+      "parent": "Citipatinae",
+      "description": "Rinchenia is a genus of oviraptorid dinosaur that lived in Asia during the Late Cretaceous epoch in what is now Mongolia, Nemegt Formation. The type and only known species, Rinchenia mongoliensis, was originally classified as a species within the genus Oviraptor (named Oviraptor mongoliensis), but a subsequent reexamination found differences significant enough to warrant a separate genus. The name Rinchenia was coined for this new genus, though not formally described in detail.",
+      "diet": "omnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "68396"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q133177"
+        },
+        {
+          "source": "gbif",
+          "id": "4966298"
+        },
+        {
+          "source": "eol",
+          "id": "47458607"
+        }
+      ],
+      "species": [
+        {
+          "name": "Rinchenia mongoliensis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Maastrichtian"
+            ]
+          },
+          "location": {
+            "country": "MN",
+            "region": "Omnogov",
+            "formation": "Nemegt",
+            "coordinates": [
+              43.572224,
+              100.477776
+            ]
+          },
+          "holotype": {
+            "specimen_id": "GI 100/32A",
+            "institution": "Geological Institute, Mongolian Academy of Sciences, Ulaanbaatar"
+          },
+          "size": {
+            "length_m": 2.5,
+            "estimate": true
+          },
+          "described": 1997,
+          "authors": "Barsbold"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Coelurosauria",
+        "Maniraptora",
+        "Oviraptorosauria",
+        "Oviraptoridae",
+        "Citipatinae"
+      ]
+    },
+    "Rinconsaurus": {
+      "genus": "Rinconsaurus",
+      "parent": "Rinconsauria",
+      "description": "Rinconsaurus is a genus of titanosaur sauropod dinosaur from the Late Cretaceous in what is now Argentina. The type species, Rinconsaurus caudamirus, was described by Calvo and Riga in 2003, and is based on three partial skeletons.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "68591"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q135538"
+        },
+        {
+          "source": "gbif",
+          "id": "4822766"
+        },
+        {
+          "source": "eol",
+          "id": "4531336"
+        }
+      ],
+      "species": [
+        {
+          "name": "Rinconsaurus caudamirus",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Santonian"
+            ],
+            "from_ma": 85.7,
+            "to_ma": 83.6
+          },
+          "location": {
+            "country": "AR",
+            "region": "Neuquén",
+            "formation": "Bajo de la Carpa",
+            "coordinates": [
+              -37.383331,
+              -68.900002
+            ]
+          },
+          "described": 2003,
+          "authors": "Calvo and González Riga",
+          "described_in": "calvo2003"
+        }
+      ],
+      "references": [
+        {
+          "id": "calvo2003",
+          "authors": "Calvo, Jorge O.; González Riga, Bernardo J.",
+          "year": 2003,
+          "title": "Rinconsaurus caudamirus gen. et sp. nov., a new titanosaurid (Dinosauria, Sauropoda) from the Late Cretaceous of Patagonia, Argentina",
+          "journal": "Revista geológica de Chile",
+          "volume": "30",
+          "issue": "2",
+          "publisher": "SciELO Agencia Nacional de Investigacion y Desarrollo (ANID)",
+          "doi": "10.4067/s0716-02082003000200011",
+          "url": "http://dx.doi.org/10.4067/s0716-02082003000200011"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda",
+        "Neosauropoda",
+        "Macronaria",
+        "Titanosauriformes",
+        "Somphospondyli",
+        "Titanosauria",
+        "Colossosauria",
+        "Rinconsauria"
+      ]
+    },
+    "Riojasaurus": {
+      "genus": "Riojasaurus",
+      "parent": "Riojasauridae",
+      "etymology": "lizard from La Rioja",
+      "description": "Riojasaurus was a herbivorous sauropodomorph dinosaur named after La Rioja Province in Argentina where it was found in the Los Colorados Formation in the Ischigualasto-Villa Unión Basin by José Bonaparte. It lived during the Late Triassic (Norian stage) and grew to about 6.6 metres (22 ft) long. Riojasaurus is the only known riojasaurid to live in South America.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "38649"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q131780"
+        },
+        {
+          "source": "gbif",
+          "id": "4822877"
+        }
+      ],
+      "species": [
+        {
+          "name": "Riojasaurus incertus",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Triassic"
+            ],
+            "stage": [
+              "Norian"
+            ]
+          },
+          "location": {
+            "country": "AR",
+            "region": "La Rioja",
+            "formation": "Los Colorados",
+            "coordinates": [
+              -29.783501,
+              -67.933327
+            ]
+          },
+          "holotype": {
+            "specimen_id": "PVL 3808",
+            "institution": "Colección de Paleontologia de Vertebrados de la Fundación Instituto Miguel Lillo, Tucumán"
+          },
+          "size": {
+            "length_m": 5.2,
+            "estimate": true
+          },
+          "described": 1969,
+          "authors": "Bonaparte"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Riojasauridae"
+      ]
+    },
+    "Riojavenatrix": {
+      "genus": "Riojavenatrix",
+      "parent": "Baryonychinae",
+      "etymology": "La Rioja huntress",
+      "description": "Riojavenatrix is a genus of spinosaurid theropod dinosaurs from the Early Cretaceous Enciso Group of La Rioja, Spain. The type species is Riojavenatrix lacustris.",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "502838"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q124613493"
+        },
+        {
+          "source": "zoobank",
+          "id": "C657EC04-18D2-45F0-8E4E-CB9D6C964626"
+        }
+      ],
+      "species": [
+        {
+          "name": "Riojavenatrix lacustris",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Aptian"
+            ],
+            "from_ma": 121.4,
+            "to_ma": 119.57
+          },
+          "location": {
+            "country": "ES",
+            "region": "La Rioja",
+            "coordinates": [
+              42.048691,
+              -2.02641
+            ]
+          },
+          "described": 2024,
+          "authors": "Isasmendi et al.",
+          "described_in": "isasmendi2024"
+        }
+      ],
+      "references": [
+        {
+          "id": "isasmendi2024",
+          "authors": "Isasmendi, Erik; Cuesta, Elena; Díaz-Martínez, Ignacio; Company, Julio; Sáez-Benito, Patxi; Viera, Luis I; Torices, Angelica; Pereda-Suberbiola, Xabier",
+          "year": 2024,
+          "title": "Increasing the theropod record of Europe: a new basal spinosaurid from the Enciso Group of the Cameros Basin (La Rioja, Spain). Evolutionary implications and palaeobiodiversity",
+          "journal": "Zoological Journal of the Linnean Society",
+          "volume": "202",
+          "issue": "3",
+          "publisher": "Oxford University Press (OUP)",
+          "doi": "10.1093/zoolinnean/zlad193",
+          "url": "http://dx.doi.org/10.1093/zoolinnean/zlad193"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Megalosauroidea",
+        "Spinosauridae",
+        "Baryonychinae"
+      ]
+    },
+    "Riparovenator": {
+      "genus": "Riparovenator",
+      "parent": "Ceratosuchopsini",
+      "etymology": "riverbank hunter",
+      "description": "Riparovenator is a genus of baryonychine spinosaurid dinosaur from the Early Cretaceous (Barremian) period of Britain. The genus contains a single species, Riparovenator milnerae.",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "443998"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q108742236"
+        },
+        {
+          "source": "gbif",
+          "id": "11370920"
+        },
+        {
+          "source": "eol",
+          "id": "61196325"
+        },
+        {
+          "source": "zoobank",
+          "id": "9F4B6370-138E-443E-9650-DE6134FD9CC0"
+        }
+      ],
+      "species": [
+        {
+          "name": "Riparovenator milnerae",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Barremian"
+            ]
+          },
+          "location": {
+            "country": "GB",
+            "region": "England",
+            "formation": "Wessex",
+            "coordinates": [
+              50.640491,
+              -1.433957
+            ]
+          },
+          "described": 2021,
+          "authors": "Barker et al.",
+          "described_in": "barker2021"
+        }
+      ],
+      "references": [
+        {
+          "id": "barker2021",
+          "authors": "Barker, Chris T.; Hone, David W. E.; Naish, Darren; Cau, Andrea; Lockwood, Jeremy A. F.; Foster, Brian; Clarkin, Claire E.; Schneider, Philipp; Gostling, Neil J.",
+          "year": 2021,
+          "title": "New spinosaurids from the Wessex Formation (Early Cretaceous, UK) and the European origins of Spinosauridae",
+          "journal": "Scientific Reports",
+          "volume": "11",
+          "issue": "1",
+          "publisher": "Springer Science and Business Media LLC",
+          "doi": "10.1038/s41598-021-97870-8",
+          "url": "http://dx.doi.org/10.1038/s41598-021-97870-8"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Megalosauroidea",
+        "Spinosauridae",
+        "Baryonychinae",
+        "Ceratosuchopsini"
+      ]
+    },
+    "Rocasaurus": {
+      "genus": "Rocasaurus",
+      "parent": "Saltasaurinae",
+      "etymology": "General Roca lizard",
+      "description": "Rocasaurus is a genus of titanosaurian sauropod that lived in South America. Rocasaurus was discovered in Argentina in 2000, within the Allen Formation which is dated to be middle Campanian to early Maastrichtian in age (75 to 70 million years ago in the Late Cretaceous). This genus grew up to 8 metres (26 ft) long, making it one of the smaller sauropods. It seems to be closely related to saltasaurid dinosaurs, like Saltasaurus and Neuquensaurus. The type species, Rocasaurus muniozi, was formally described by Leonardo Salgado and Azpilicueta in 2000.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "66612"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q18601044"
+        },
+        {
+          "source": "gbif",
+          "id": "4822755"
+        },
+        {
+          "source": "eol",
+          "id": "4658661"
+        }
+      ],
+      "species": [
+        {
+          "name": "Rocasaurus muniozi",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Maastrichtian"
+            ]
+          },
+          "location": {
+            "country": "AR",
+            "region": "Río Negro",
+            "formation": "Allen",
+            "coordinates": [
+              -39.296665,
+              -67.534164
+            ]
+          },
+          "holotype": {
+            "specimen_id": "MPCA-Pv 46",
+            "institution": "Museo provincial de Cipolletti \"Carlos Ameghino\", Cipolletti"
+          },
+          "described": 2000,
+          "authors": "Salgado and Azpilicueta"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda",
+        "Neosauropoda",
+        "Macronaria",
+        "Titanosauriformes",
+        "Somphospondyli",
+        "Titanosauria",
+        "Lithostrotia",
+        "Saltasauroidea",
+        "Lohuecosauria",
+        "Saltasauridae",
+        "Saltasaurinae"
+      ]
+    },
+    "Ruehleia": {
+      "genus": "Ruehleia",
+      "parent": "Plateosauridae",
+      "description": "Ruehleia is a genus of sauropodomorph dinosaur from the Late Triassic period of Germany. The type species is R. bedheimensis, described by Galton in 2001, and is named for the German paleontologist Hugo Rühle von Lilienstern. Discovered in 1952, the holotype consists of one nearly complete skeleton, including cervical (neck), dorsal (back), and caudal (tail) vertebrae; a partial sacrum; a scapulocoracoid; pelvic bones; most limb bones; and a partially complete manus (hands). The fossils were found in the Trossingen Formation of central Germany and date to the Norian stage, around 216 to 208 million years ago.",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "65099"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q1007433"
+        },
+        {
+          "source": "gbif",
+          "id": "4967210"
+        },
+        {
+          "source": "eol",
+          "id": "4658663"
+        }
+      ],
+      "species": [
+        {
+          "name": "Ruehleia bedheimensis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Triassic"
+            ],
+            "stage": [
+              "Norian"
+            ]
+          },
+          "location": {
+            "country": "DE",
+            "region": "Thuringia",
+            "formation": "Trossingen",
+            "coordinates": [
+              50.383301,
+              10.55
+            ]
+          },
+          "described": 2001,
+          "authors": "Galton"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Plateosauridae"
+      ]
+    },
+    "Rugocaudia": {
+      "genus": "Rugocaudia",
+      "parent": "Titanosauriformes",
+      "description": "Rugocaudia is a potentially dubious genus of early titanosauriform sauropod dinosaurs known from the Early Cretaceous of Montana, United States.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "234033"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q2070595"
+        }
+      ],
+      "species": [
+        {
+          "name": "Rugocaudia cooneyi",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Albian"
+            ]
+          },
+          "location": {
+            "country": "US",
+            "region": "Montana",
+            "formation": "Cloverly",
+            "coordinates": [
+              46.298439,
+              -109.712097
+            ]
+          },
+          "described": 2012,
+          "authors": "Woodruff",
+          "described_in": "woodruff2012"
+        }
+      ],
+      "references": [
+        {
+          "id": "woodruff2012",
+          "authors": "Woodruff, D. Cary",
+          "year": 2012,
+          "title": "A new titanosauriform from the Early Cretaceous Cloverly Formation of Montana",
+          "journal": "Cretaceous Research",
+          "volume": "36",
+          "pages": "58-66",
+          "publisher": "Elsevier BV",
+          "doi": "10.1016/j.cretres.2012.02.003",
+          "url": "http://dx.doi.org/10.1016/j.cretres.2012.02.003"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda",
+        "Neosauropoda",
+        "Macronaria",
+        "Titanosauriformes"
+      ]
+    },
+    "Rugops": {
+      "genus": "Rugops",
+      "parent": "Abelisauridae",
+      "description": "Rugops is a monospecific genus of basal abelisaurid theropod dinosaur that lived during the Late Cretaceous period (Cenomanian stage, approximately 95 million years ago) in what is now the Echkar Formation in Niger. The type and only species, Rugops primus, is known only from a partial skull. It was named and described in 2004 by Paul Sereno, Jeffery Wilson and Jack Conrad. Rugops has an estimated length of 4.4–5.3 metres (14–17 ft) and weight of 410 kilograms (900 lb). The top of its skull bears several pits which correlates with overlaying scale and the front of the snout would have had an armour-like dermis.",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "71394"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q133025"
+        },
+        {
+          "source": "gbif",
+          "id": "4822826"
+        },
+        {
+          "source": "eol",
+          "id": "4532799"
+        }
+      ],
+      "species": [
+        {
+          "name": "Rugops primus",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Cenomanian"
+            ],
+            "from_ma": 100.5,
+            "to_ma": 93.9
+          },
+          "location": {
+            "country": "NE",
+            "region": "Agadez",
+            "formation": "Echkar",
+            "coordinates": [
+              17.933332,
+              5.616667
+            ]
+          },
+          "holotype": {
+            "specimen_id": "MNN IGU1",
+            "institution": "Musee National du Niger, Niamey, Republic of Niger"
+          },
+          "size": {
+            "length_m": 7,
+            "estimate": true
+          },
+          "described": 2004,
+          "authors": "Sereno et al.",
+          "described_in": "sereno2004"
+        }
+      ],
+      "references": [
+        {
+          "id": "sereno2004",
+          "authors": "Sereno, Paul C.; Wilson, Jeffrey A.; Conrad, Jack L.",
+          "year": 2004,
+          "title": "New dinosaurs link southern landmasses in the Mid–Cretaceous",
+          "journal": "Proceedings of the Royal Society of London. Series B: Biological Sciences",
+          "volume": "271",
+          "issue": "1546",
+          "pages": "1325-1330",
+          "publisher": "The Royal Society",
+          "doi": "10.1098/rspb.2004.2692",
+          "url": "http://dx.doi.org/10.1098/rspb.2004.2692"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Ceratosauria",
+        "Abelisauridae"
+      ]
+    },
+    "Ruixinia": {
+      "genus": "Ruixinia",
+      "parent": "Euhelopodidae",
+      "description": "Ruixinia is an extinct genus of somphospondylan sauropod dinosaur from the Early Cretaceous (Barremian) Yixian Formation of China. The genus contains a single species, Ruixinia zhangi, known from a partial articulated skeleton. This specimen preserves the most complete series of caudal vertebrae known from any Asian titanosauriform.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "465375"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q115642122"
+        }
+      ],
+      "species": [
+        {
+          "name": "Ruixinia zhangi",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Aptian"
+            ]
+          },
+          "location": {
+            "country": "CN",
+            "region": "Liaoning",
+            "formation": "Yixian",
+            "coordinates": [
+              41.469719,
+              120.756104
+            ]
+          },
+          "holotype": {
+            "specimen_id": "ELDM EL-J009",
+            "institution": "Erlianhaote Dinosaur Museum, Erenhot"
+          },
+          "described": 2023,
+          "authors": "Mo et al.",
+          "described_in": "mo2023"
+        }
+      ],
+      "references": [
+        {
+          "id": "mo2023",
+          "authors": "Mo, Jinyou; Ma, Feimin; Yu, Yilun; Xu, Xing",
+          "year": 2023,
+          "title": "A new titanosauriform sauropod with an unusual tail from the Lower Cretaceous of northeastern China",
+          "journal": "Cretaceous Research",
+          "volume": "144",
+          "publisher": "Elsevier BV",
+          "doi": "10.1016/j.cretres.2022.105449",
+          "url": "http://dx.doi.org/10.1016/j.cretres.2022.105449"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda",
+        "Neosauropoda",
+        "Macronaria",
+        "Titanosauriformes",
+        "Somphospondyli",
+        "Euhelopodidae"
+      ]
+    },
+    "Rukwatitan": {
+      "genus": "Rukwatitan",
+      "parent": "Rinconsauria",
+      "description": "Rukwatitan is a genus of titanosaur sauropod dinosaur from the Galula Formation in Tanzania. It lived around 100 million years ago, during the middle Cretaceous. The species, which shared features with another southern African species, Malawisaurus dixeyi, measured 30 feet (9.1 m) from the head to the tip of the tail, and had forelimbs that were estimated around 6.5 feet (2.0 m) long. Its fossils were found embedded in a cliff face near Lake Rukwa in the Rukwa Valley, from which it gets its name.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "320810"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q18010327"
+        }
+      ],
+      "species": [
+        {
+          "name": "Rukwatitan bisepultus",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Campanian"
+            ]
+          },
+          "location": {
+            "country": "TZ",
+            "region": "Mbeya",
+            "formation": "Galula",
+            "coordinates": [
+              -8.7,
+              32.700001
+            ]
+          },
+          "described": 2014,
+          "authors": "Gorscak et al.",
+          "described_in": "gorscak2014"
+        }
+      ],
+      "references": [
+        {
+          "id": "gorscak2014",
+          "authors": "Gorscak, Eric; O'Connor, Patrick M.; Stevens, Nancy J.; Roberts, Eric M.",
+          "year": 2014,
+          "title": "The basal titanosaurian Rukwatitan bisepultus (Dinosauria, Sauropoda) from the middle Cretaceous Galula Formation, Rukwa Rift Basin, southwestern Tanzania",
+          "journal": "Journal of Vertebrate Paleontology",
+          "volume": "34",
+          "issue": "5",
+          "pages": "1133-1154",
+          "publisher": "Informa UK Limited",
+          "doi": "10.1080/02724634.2014.845568",
+          "url": "http://dx.doi.org/10.1080/02724634.2014.845568"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda",
+        "Neosauropoda",
+        "Macronaria",
+        "Titanosauriformes",
+        "Somphospondyli",
+        "Titanosauria",
+        "Colossosauria",
+        "Rinconsauria"
+      ]
+    },
+    "Ruyangosaurus": {
+      "genus": "Ruyangosaurus",
+      "parent": "Euhelopodidae",
+      "description": "Ruyangosaurus is a genus of titanosauriform sauropod dinosaur recovered from the Early Cretaceous Haoling Formation of China. The type species is R. giganteus, described in 2009 by Lü Junchang et al.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "166380"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q2575047"
+        },
+        {
+          "source": "gbif",
+          "id": "8460514"
+        }
+      ],
+      "species": [
+        {
+          "name": "Ruyangosaurus giganteus",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Albian"
+            ]
+          },
+          "location": {
+            "country": "CN",
+            "region": "Henan",
+            "formation": "Haoling",
+            "coordinates": [
+              34.112,
+              112.589302
+            ]
+          },
+          "holotype": {
+            "specimen_id": "41 HII I-0002",
+            "institution": "Henan Geological Museum, Zhengzhou"
+          },
+          "described": 2009,
+          "authors": "Lü et al."
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda",
+        "Neosauropoda",
+        "Macronaria",
+        "Titanosauriformes",
+        "Somphospondyli",
+        "Euhelopodidae"
+      ]
+    },
+    "Saichania": {
+      "genus": "Saichania",
+      "parent": "Ankylosaurinae",
+      "etymology": "beautiful one",
+      "description": "Saichania is a genus of herbivorous ankylosaurid dinosaur from the Late Cretaceous period of Mongolia and China. The first fossils of Saichania were found in the early 1970s in the Baruungoyot Formation. In 1977, the type species Saichania chulsanensis was named.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "38834"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q131544"
+        },
+        {
+          "source": "gbif",
+          "id": "4823324"
+        },
+        {
+          "source": "eol",
+          "id": "4530857"
+        }
+      ],
+      "species": [
+        {
+          "name": "Saichania chulsanensis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Campanian"
+            ]
+          },
+          "location": {
+            "country": "MN",
+            "region": "Omnogov",
+            "formation": "Baruungoyot",
+            "coordinates": [
+              43.316387,
+              99.82917
+            ]
+          },
+          "holotype": {
+            "specimen_id": "GI SPS 100/151",
+            "institution": "Geological Institute, Section of Paleontology and Stratigraphy, Mongolian Academy of Sciences, Ulan Bator"
+          },
+          "size": {
+            "length_m": 6.6,
+            "estimate": true
+          },
+          "described": 1977,
+          "authors": "Maryanska"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Thyreophora",
+        "Ankylosauria",
+        "Ankylosauridae",
+        "Ankylosaurinae"
+      ]
+    },
+    "Saltasaurus": {
+      "genus": "Saltasaurus",
+      "parent": "Saltasaurini",
+      "description": "Saltasaurus is a genus of saltasaurid dinosaur of the Late Cretaceous period of Argentina. Small among sauropods, though still heavy by the standards of modern creatures, Saltasaurus was characterized by a short neck and stubby limbs. It was the first genus of sauropod known to possess armour of bony plates embedded in its skin. Such small bony plates, called osteoderms, have since been found on other titanosaurians.",
+      "diet": "herbivore",
+      "appearance": {
+        "integument": "armored"
+      },
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "38693"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q131111"
+        },
+        {
+          "source": "gbif",
+          "id": "4822761"
+        },
+        {
+          "source": "eol",
+          "id": "4657972"
+        }
+      ],
+      "species": [
+        {
+          "name": "Saltasaurus loricatus",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Maastrichtian"
+            ]
+          },
+          "location": {
+            "country": "AR",
+            "region": "Salta",
+            "formation": "Lecho",
+            "coordinates": [
+              -26.066668,
+              -65.366669
+            ]
+          },
+          "holotype": {
+            "specimen_id": "PVL 4017-92",
+            "institution": "Colección de Paleontologia de Vertebrados de la Fundación Instituto Miguel Lillo, Tucumán"
+          },
+          "size": {
+            "length_m": 12,
+            "estimate": true
+          },
+          "described": 1980,
+          "authors": "Bonaparte and Powell"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda",
+        "Neosauropoda",
+        "Macronaria",
+        "Titanosauriformes",
+        "Somphospondyli",
+        "Titanosauria",
+        "Lithostrotia",
+        "Saltasauroidea",
+        "Lohuecosauria",
+        "Saltasauridae",
+        "Saltasaurinae",
+        "Saltasaurini"
+      ]
+    },
+    "Saltriovenator": {
+      "genus": "Saltriovenator",
+      "parent": "Ceratosauria",
+      "etymology": "Saltrio hunter",
+      "description": "Saltriovenator is a genus of ceratosaurian dinosaur that lived during the Sinemurian stage of the Early Jurassic in what is now Italy. The type and only species is Saltriovenator zanellai; in the past, the species had been known under the informal name \"saltriosaur\". Although a full skeleton has not yet been discovered, Saltriovenator is thought to have been a large, bipedal carnivore similar to Ceratosaurus.",
+      "diet": "carnivore",
+      "locomotion": "bipedal",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "390562"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q60146997"
+        },
+        {
+          "source": "eol",
+          "id": "55758479"
+        }
+      ],
+      "species": [
+        {
+          "name": "Saltriovenator zanellai",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Jurassic"
+            ],
+            "stage": [
+              "Sinemurian"
+            ]
+          },
+          "location": {
+            "country": "IT",
+            "region": "Lombardy",
+            "formation": "Saltrio",
+            "coordinates": [
+              45.882748,
+              8.928022
+            ]
+          },
+          "described": 2018,
+          "authors": "Dal Sasso et al.",
+          "described_in": "dalsasso2018"
+        }
+      ],
+      "references": [
+        {
+          "id": "dalsasso2018",
+          "authors": "Dal Sasso, Cristiano; Maganuco, Simone; Cau, Andrea",
+          "year": 2018,
+          "title": "The oldest ceratosaurian (Dinosauria: Theropoda), from the Lower Jurassic of Italy, sheds light on the evolution of the three-fingered hand of birds",
+          "journal": "PeerJ",
+          "volume": "6",
+          "pages": "e5976",
+          "publisher": "PeerJ",
+          "doi": "10.7717/peerj.5976",
+          "url": "http://dx.doi.org/10.7717/peerj.5976"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Ceratosauria"
+      ]
+    },
+    "Sanjuansaurus": {
+      "genus": "Sanjuansaurus",
+      "parent": "Herrerasauridae",
+      "etymology": "San Juan Province lizard",
+      "description": "Sanjuansaurus is a genus of herrerasaurid dinosaur from the Late Triassic (Carnian) Ischigualasto Formation of the Ischigualasto-Villa Unión Basin in northwestern Argentina.",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "172072"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q18915930"
+        },
+        {
+          "source": "gbif",
+          "id": "8666706"
+        },
+        {
+          "source": "eol",
+          "id": "18649494"
+        },
+        {
+          "source": "zoobank",
+          "id": "DC75ADA0-0C6B-41D5-8E29-CD76725FD704"
+        }
+      ],
+      "species": [
+        {
+          "name": "Sanjuansaurus gordilloi",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Triassic"
+            ],
+            "stage": [
+              "Carnian"
+            ],
+            "from_ma": 237,
+            "to_ma": 227.3
+          },
+          "location": {
+            "country": "AR",
+            "region": "San Juan",
+            "formation": "Ischigualasto",
+            "coordinates": [
+              -30.119198,
+              -67.897858
+            ]
+          },
+          "holotype": {
+            "specimen_id": "PVSJ 605",
+            "institution": "División de Paleontología de Vertebrados del Museo de Ciencias Naturales y Universidad Nacional de San Juan, San Juan"
+          },
+          "described": 2010,
+          "authors": "Alcober and Martínez"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Herrerasauridae"
+      ]
+    },
+    "Sanpasaurus": {
+      "genus": "Sanpasaurus",
+      "parent": "Sauropoda",
+      "etymology": "Sanpa lizard",
+      "description": "Sanpasaurus is a poorly known sauropod dinosaur from the Early Jurassic of Sichuan, China. The type species, S. yaoi, was described by Chung Chien Young, in 1944. The type remains, IVPP V.156, consists of 20 vertebrae, scapulae, forelimbs, and some hindlimb bones.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "65643"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q519430"
+        }
+      ],
+      "species": [
+        {
+          "name": "Sanpasaurus yaoi",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Jurassic"
+            ],
+            "stage": [
+              "Toarcian"
+            ]
+          },
+          "location": {
+            "country": "CN",
+            "region": "Sichuan",
+            "formation": "Ziliujing",
+            "coordinates": [
+              29.549822,
+              104.61821
+            ]
+          },
+          "described": 1944,
+          "authors": "Young",
+          "described_in": "young1944"
+        }
+      ],
+      "references": [
+        {
+          "id": "young1944",
+          "authors": "Young, C. C.",
+          "year": 1944,
+          "title": "On the Reptilian Remains from Weiyuan, Szechuan, China",
+          "journal": "Bulletin of the Geological Society of China",
+          "volume": "24",
+          "issue": "3-4",
+          "pages": "187-209",
+          "publisher": "Wiley",
+          "doi": "10.1111/j.1755-6724.1944.mp243-4005.x",
+          "url": "http://dx.doi.org/10.1111/j.1755-6724.1944.mp243-4005.x"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Sauropoda"
+      ]
+    },
+    "Santanaraptor": {
+      "genus": "Santanaraptor",
+      "parent": "Coelurosauria",
+      "etymology": "Santana Formation thief",
+      "description": "Santanaraptor is a genus of coelurosaurian theropod dinosaur that lived in South America during the Early Cretaceous (late Aptian-early Albian), about 112 million years ago.",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "53939"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q134305"
+        },
+        {
+          "source": "gbif",
+          "id": "4821972"
+        },
+        {
+          "source": "eol",
+          "id": "52570695"
+        }
+      ],
+      "species": [
+        {
+          "name": "Santanaraptor placidus",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Aptian"
+            ],
+            "from_ma": 119.57,
+            "to_ma": 113.2
+          },
+          "location": {
+            "country": "BR",
+            "region": "Ceará",
+            "formation": "Romualdo",
+            "coordinates": [
+              -7.183333,
+              -39.733334
+            ]
+          },
+          "holotype": {
+            "specimen_id": "MN 4802-V",
+            "institution": "Museu Nacional, Rio de Janeiro"
+          },
+          "described": 1999,
+          "authors": "Kellner"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Tetanurae",
+        "Avetheropoda",
+        "Coelurosauria"
+      ]
+    },
+    "Sanxiasaurus": {
+      "genus": "Sanxiasaurus",
+      "parent": "Neornithischia",
+      "etymology": "Sanxia lizard",
+      "description": "Sanxiasaurus is a genus of neornithischian dinosaur from the Middle Jurassic Xintiangou Formation in the Chongqing Municipality of China. The type and only species is S. modaoxiensis. The holotype is a partial postcranial skeleton consisting of 55 bones including two cervical vertebrae, 11 dorsal vertebrae, 4 sacral vertebrae, 18 caudal vertebrae, both humeri, radii, and ulnas, partial right ilium, partial right ischium, both femora and tibiae, left fibula, 3 metatarsi and 4 phalanges. In a phylogenetic analysis, it was found to be a basal neornithischian, more derived than Lesothosaurus and less derived than Hexinlusaurus.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "424322"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q73091032"
+        }
+      ],
+      "species": [
+        {
+          "name": "Sanxiasaurus modaoxiensis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Middle Jurassic"
+            ],
+            "stage": [
+              "Aalenian"
+            ]
+          },
+          "location": {
+            "country": "CN",
+            "region": "Chongqing",
+            "formation": "Xintiangou",
+            "coordinates": [
+              30.931389,
+              108.730553
+            ]
+          },
+          "described": 2019,
+          "authors": "Hu Dai et al.",
+          "described_in": "li2019"
+        }
+      ],
+      "references": [
+        {
+          "id": "li2019",
+          "authors": "Li, Ning; Dai, Hui; Tan, Chao; Hu, Xufeng; Wei, Zhaoying; Lin, Yu; Wei, Guangbiao; Li, Deliang; Meng, Li; Hao, Baoqiao; You, Hailu; Peng, Guangzhao",
+          "year": 2019,
+          "title": "A neornithischian dinosaur from the Middle Jurassic Xintiangou Formation of Yunyang, Chongqing, China: the earliest record in Asia",
+          "journal": "Historical Biology",
+          "volume": "33",
+          "issue": "7",
+          "pages": "1089-1102",
+          "publisher": "Informa UK Limited",
+          "doi": "10.1080/08912963.2019.1679129",
+          "url": "http://dx.doi.org/10.1080/08912963.2019.1679129"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Neornithischia"
+      ]
+    },
+    "Sarahsaurus": {
+      "genus": "Sarahsaurus",
+      "parent": "Massospondylidae",
+      "description": "Sarahsaurus is a genus of basal sauropodomorph dinosaur which lived during the Early Jurassic period in what is now northeastern Arizona, United States.",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "171910"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q135107"
+        },
+        {
+          "source": "gbif",
+          "id": "8632677"
+        },
+        {
+          "source": "eol",
+          "id": "47459254"
+        }
+      ],
+      "species": [
+        {
+          "name": "Sarahsaurus aurifontanalis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Jurassic"
+            ],
+            "stage": [
+              "Pliensbachian"
+            ]
+          },
+          "location": {
+            "country": "US",
+            "region": "Arizona",
+            "formation": "Kayenta",
+            "coordinates": [
+              35.689445,
+              -111.289444
+            ]
+          },
+          "described": 2011,
+          "authors": "Rowe et al.",
+          "described_in": "rowe2010"
+        }
+      ],
+      "references": [
+        {
+          "id": "rowe2010",
+          "authors": "Rowe, Timothy B.; Sues, Hans-Dieter; Reisz, Robert R.",
+          "year": 2010,
+          "title": "Dispersal and diversity in the earliest North American sauropodomorph dinosaurs, with a description of a new taxon",
+          "journal": "Proceedings of the Royal Society B: Biological Sciences",
+          "volume": "278",
+          "issue": "1708",
+          "pages": "1044-1053",
+          "publisher": "The Royal Society",
+          "doi": "10.1098/rspb.2010.1867",
+          "url": "http://dx.doi.org/10.1098/rspb.2010.1867"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Massospondylidae"
+      ]
+    },
+    "Sarcolestes": {
+      "genus": "Sarcolestes",
+      "parent": "Ankylosauria",
+      "etymology": "flesh robber",
+      "description": "Sarcolestes is an extinct genus of ankylosaurian ornithischian dinosaur from the Oxford Clay of England. The current type and only species is S. leedsi, and the holotype is a single partial left mandible. The genus and species were named in 1893 by Richard Lydekker, who thought they belonged to a theropod.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "38829"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q138520"
+        },
+        {
+          "source": "gbif",
+          "id": "4823200"
+        },
+        {
+          "source": "eol",
+          "id": "4530918"
+        }
+      ],
+      "species": [
+        {
+          "name": "Sarcolestes leedsi",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Middle Jurassic"
+            ],
+            "stage": [
+              "Callovian"
+            ]
+          },
+          "location": {
+            "country": "GB",
+            "region": "England",
+            "formation": "Oxford Clay",
+            "coordinates": [
+              52.552071,
+              -0.241701
+            ]
+          },
+          "described": 1893,
+          "authors": "Lydekker",
+          "described_in": "lydekker1893"
+        }
+      ],
+      "references": [
+        {
+          "id": "lydekker1893",
+          "authors": "Lydekker, R.",
+          "year": 1893,
+          "title": "On the Jaw of a New Carnivorous Dinosaur from the Oxford Clay of Peterborough",
+          "journal": "Quarterly Journal of the Geological Society of London",
+          "volume": "49",
+          "issue": "1-4",
+          "pages": "284-287",
+          "publisher": "Geological Society of London",
+          "doi": "10.1144/gsl.jgs.1893.049.01-04.46",
+          "url": "http://dx.doi.org/10.1144/gsl.jgs.1893.049.01-04.46"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Thyreophora",
+        "Ankylosauria"
+      ]
+    },
+    "Sarcosaurus": {
+      "genus": "Sarcosaurus",
+      "parent": "Coelophysoidea",
+      "description": "Sarcosaurus is a genus of basal neotheropod dinosaur, roughly 3.5 metres (11 ft) long. It lived in what is now England and maybe Ireland and Scotland during the Hettangian-Sinemurian stages of the Early Jurassic, about 199-196 million years ago. Sarcosaurus is one of the earliest known Jurassic theropods, and one of only a handful of theropod genera from this time period. Along with Dracoraptor hanigani it is one of the two described neotheropods from the lowermost Jurassic of the United Kingdom.",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "55544"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q134634"
+        },
+        {
+          "source": "gbif",
+          "id": "4822607"
+        },
+        {
+          "source": "eol",
+          "id": "4533732"
+        }
+      ],
+      "species": [
+        {
+          "name": "Sarcosaurus woodi",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Jurassic"
+            ],
+            "stage": [
+              "Sinemurian"
+            ]
+          },
+          "location": {
+            "country": "GB",
+            "region": "Scotland",
+            "formation": "Broadford Beds",
+            "coordinates": [
+              57.186199,
+              -5.8971
+            ]
+          },
+          "holotype": {
+            "specimen_id": "BMNH R4840/1",
+            "institution": "Natural History Museum, London"
+          },
+          "size": {
+            "length_m": 3,
+            "estimate": true
+          },
+          "described": 1921,
+          "authors": "Andrews",
+          "described_in": "andrews1921"
+        }
+      ],
+      "references": [
+        {
+          "id": "andrews1921",
+          "authors": "Andrews, Charles W.",
+          "year": 1921,
+          "title": "LVI.—On some ramins of a Theropodous dinosaur from the Lower Lias of Barrow-on-Soa",
+          "journal": "Annals and Magazine of Natural History",
+          "volume": "8",
+          "issue": "47",
+          "pages": "570-576",
+          "publisher": "Informa UK Limited",
+          "doi": "10.1080/00222932108632620",
+          "url": "http://dx.doi.org/10.1080/00222932108632620"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Coelophysoidea"
+      ]
+    },
+    "Sarmientosaurus": {
+      "genus": "Sarmientosaurus",
+      "parent": "Diamantinasauria",
+      "description": "Sarmientosaurus is a genus of titanosaurian sauropod dinosaur belonging to the Titanosauria. It lived in what is now South America, specifically Argentina, during the Upper Cretaceous Period about 95 million years ago. The type species is Sarmientosaurus musacchioi.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "340068"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q23927079"
+        }
+      ],
+      "species": [
+        {
+          "name": "Sarmientosaurus musacchioi",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Turonian"
+            ]
+          },
+          "location": {
+            "country": "AR",
+            "region": "Chubut",
+            "formation": "Bajo Barreal",
+            "coordinates": [
+              -44.76667,
+              -69.183334
+            ]
+          },
+          "holotype": {
+            "specimen_id": "MDT-PV 2",
+            "institution": "Museo Desiderio Torres, Sarmiento, Chubut"
+          },
+          "described": 2016,
+          "authors": "Martínez et al.",
+          "described_in": "martínez2016"
+        }
+      ],
+      "references": [
+        {
+          "id": "martínez2016",
+          "authors": "Martínez, Rubén D. F.; Lamanna, Matthew C.; Novas, Fernando E.; Ridgely, Ryan C.; Casal, Gabriel A.; Martínez, Javier E.; Vita, Javier R.; Witmer, Lawrence M.",
+          "year": 2016,
+          "title": "A Basal Lithostrotian Titanosaur (Dinosauria: Sauropoda) with a Complete Skull: Implications for the Evolution and Paleobiology of Titanosauria",
+          "journal": "PLOS ONE",
+          "volume": "11",
+          "issue": "4",
+          "pages": "e0151661",
+          "publisher": "Public Library of Science (PLoS)",
+          "doi": "10.1371/journal.pone.0151661",
+          "url": "http://dx.doi.org/10.1371/journal.pone.0151661"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda",
+        "Neosauropoda",
+        "Macronaria",
+        "Titanosauriformes",
+        "Somphospondyli",
+        "Diamantinasauria"
+      ]
+    },
+    "Sasayamagnomus": {
+      "genus": "Sasayamagnomus",
+      "parent": "Neoceratopsia",
+      "etymology": "gnome from Sasayama",
+      "description": "Sasayamagnomus is an extinct genus of neoceratopsian dinosaur from the Early Cretaceous (Albian age) Ohyamashimo Formation of Hyōgo Prefecture, Japan. The genus contains a single species, Sasayamagnomus saegusai. The holotype individual is estimated to reach 80 centimetres (2.6 ft) long, although this specimen is not fully grown.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "498078"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q130222784"
+        }
+      ],
+      "species": [
+        {
+          "name": "Sasayamagnomus saegusai",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Albian"
+            ]
+          },
+          "location": {
+            "country": "JP",
+            "region": "Hyogo",
+            "formation": "Ohyamashimo",
+            "coordinates": [
+              35.092777,
+              135.17778
+            ]
+          },
+          "described": 2024,
+          "authors": "Tanaka et al.",
+          "described_in": "tanaka2024"
+        }
+      ],
+      "references": [
+        {
+          "id": "tanaka2024",
+          "authors": "Tanaka, Tomonori; Chiba, Kentaro; Ikeda, Tadahiro; Ryan, Michael J.",
+          "year": 2024,
+          "title": "A new neoceratopsian (Ornithischia, Ceratopsia) from the Lower Cretaceous Ohyamashimo Formation (Albian), southwestern Japan",
+          "journal": "Papers in Palaeontology",
+          "volume": "10",
+          "issue": "5",
+          "publisher": "Wiley",
+          "doi": "10.1002/spp2.1587",
+          "url": "http://dx.doi.org/10.1002/spp2.1587"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Marginocephalia",
+        "Ceratopsia",
+        "Neoceratopsia"
+      ]
+    },
+    "Saturnalia": {
+      "genus": "Saturnalia",
+      "parent": "Saturnaliidae",
+      "description": "Saturnalia is an extinct genus of basal sauropodomorph dinosaur known from the Late Triassic Santa Maria Formation of Rio Grande do Sul, southern Brazil. It contains one species, Saturnalia tupiniquim. It is one of the earliest known dinosaurs.",
+      "diet": "omnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "68123"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q878443"
+        },
+        {
+          "source": "gbif",
+          "id": "4822516"
+        },
+        {
+          "source": "eol",
+          "id": "52571945"
+        }
+      ],
+      "species": [
+        {
+          "name": "Saturnalia tupiniquim",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Triassic"
+            ],
+            "stage": [
+              "Carnian"
+            ],
+            "from_ma": 237,
+            "to_ma": 227.3
+          },
+          "location": {
+            "country": "BR",
+            "region": "Rio Grande do Sul",
+            "formation": "Santa Maria",
+            "coordinates": [
+              -29.666668,
+              -53.75
+            ]
+          },
+          "described": 1999,
+          "authors": "Langer et al.",
+          "described_in": "langer1999"
+        }
+      ],
+      "references": [
+        {
+          "id": "langer1999",
+          "authors": "Langer, Max C.; Abdala, Fernando; Richter, Martha; Benton, Michael J.",
+          "year": 1999,
+          "title": "A sauropodomorph dinosaur from the Upper Triassic (Carman) of southern Brazil",
+          "journal": "Comptes Rendus de l'Académie des Sciences - Series IIA - Earth and Planetary Science",
+          "volume": "329",
+          "issue": "7",
+          "pages": "511-517",
+          "publisher": "Elsevier BV",
+          "doi": "10.1016/s1251-8050(00)80025-7",
+          "url": "http://dx.doi.org/10.1016/s1251-8050(00)80025-7"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Saturnaliidae"
+      ]
+    },
+    "Saurolophus": {
+      "genus": "Saurolophus",
+      "parent": "Saurolophini",
+      "etymology": "lizard crest",
+      "pronunciation": {
+        "ipa": "/sɔːˈrɒləfəs/"
+      },
+      "description": "Saurolophus is a genus of large hadrosaurid dinosaur that lived during the Late Cretaceous period of North America and Asia, in what is now the Horseshoe Canyon and Nemegt formations respectively (about 70 to 66 million years ago). It is one of the few dinosaur genera known from multiple continents. The type species, S. osborni, was described by Barnum Brown in 1912 from Canadian fossils. A second valid species, S. angustirostris, is represented by numerous specimens from Mongolia, and was described by Anatoly Konstantinovich Rozhdestvensky. Saurolophus is distinguished by a spike-like crest which projects up and back from the skull. It was a herbivorous dinosaur which could move either bipedally or quadrupedally.",
+      "diet": "herbivore",
+      "locomotion": "bipedal",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "38768"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q131096"
+        },
+        {
+          "source": "gbif",
+          "id": "4823304"
+        },
+        {
+          "source": "eol",
+          "id": "4531758"
+        }
+      ],
+      "species": [
+        {
+          "name": "Saurolophus osborni",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Maastrichtian"
+            ]
+          },
+          "location": {
+            "country": "CA",
+            "region": "Alberta",
+            "formation": "Horseshoe Canyon",
+            "coordinates": [
+              51.5,
+              -112.1
+            ]
+          },
+          "holotype": {
+            "specimen_id": "Amer. Mus. No. 5220",
+            "institution": "American Museum of Natural History, New York City"
+          },
+          "size": {
+            "length_m": 9,
+            "estimate": true
+          },
+          "described": 1912,
+          "authors": "Brown"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Ornithopoda",
+        "Clypeodonta",
+        "Iguanodontia",
+        "Dryomorpha",
+        "Styracosterna",
+        "Hadrosauriformes",
+        "Hadrosauroidea",
+        "Hadrosauridae",
+        "Hadrosaurinae",
+        "Saurolophini"
+      ]
+    },
+    "Sauropelta": {
+      "genus": "Sauropelta",
+      "parent": "Nodosauridae",
+      "pronunciation": {
+        "ipa": "/ˌsɔːroʊˈpɛltə/"
+      },
+      "description": "Sauropelta is a genus of nodosaurid dinosaur that existed in the Early Cretaceous Period of North America. One species (S. edwardsorum) has been named. Anatomically, Sauropelta is one of the most well-understood nodosaurids, with fossilized remains recovered in the U.S. states of Wyoming, Montana, and possibly Utah. It is also the earliest known genus of nodosaurine; most of its remains are found in a section of the Cloverly Formation dated to 108.5 million years ago.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "38827"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q131073"
+        },
+        {
+          "source": "gbif",
+          "id": "4823198"
+        },
+        {
+          "source": "eol",
+          "id": "4530920"
+        }
+      ],
+      "species": [
+        {
+          "name": "Sauropelta edwardsorum",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Aptian"
+            ]
+          },
+          "location": {
+            "country": "US",
+            "region": "Utah",
+            "formation": "Cedar Mountain",
+            "coordinates": [
+              38.759998,
+              -109.736702
+            ]
+          },
+          "holotype": {
+            "specimen_id": "AMNH 3032",
+            "institution": "American Museum of Natural History, New York City"
+          },
+          "size": {
+            "length_m": 6.5,
+            "estimate": true
+          },
+          "described": 1970,
+          "authors": "Ostrom"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Thyreophora",
+        "Ankylosauria",
+        "Nodosauridae"
+      ]
+    },
+    "Saurophaganax": {
+      "genus": "Saurophaganax",
+      "parent": "Allosauridae",
+      "etymology": "lord of lizard-eaters",
+      "description": "Saurophaganax is a dubious, chimeric genus of large saurischian dinosaur, possibly a sauropod, from the Late Jurassic (Kimmeridgian) Morrison Formation of Oklahoma, United States. This taxon was historically considered to represent a species of Allosaurus or very large allosaurid. However, re-examinations of the attributed specimens suggested that it is a chimera of multiple dinosaur genera, since some specimens most likely belong to a diplodocid sauropod, while the other referred specimens could be reassigned to a novel species of Allosaurus.",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "65370"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q131216"
+        },
+        {
+          "source": "gbif",
+          "id": "4822583"
+        },
+        {
+          "source": "eol",
+          "id": "4433687"
+        }
+      ],
+      "species": [
+        {
+          "name": "Saurophaganax maximus",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Jurassic"
+            ],
+            "stage": [
+              "Tithonian"
+            ]
+          },
+          "location": {
+            "country": "US",
+            "region": "Oklahoma",
+            "formation": "Morrison",
+            "coordinates": [
+              36.931801,
+              -102.978203
+            ]
+          },
+          "holotype": {
+            "specimen_id": "OMNH 112",
+            "institution": "Oklahoma Museum of Natural History, Norman"
+          },
+          "size": {
+            "length_m": 12,
+            "estimate": true
+          },
+          "described": 1995,
+          "authors": "Chure"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Tetanurae",
+        "Avetheropoda",
+        "Carnosauria",
+        "Allosauridae"
+      ]
+    },
+    "Sauroplites": {
+      "genus": "Sauroplites",
+      "parent": "Nodosauridae",
+      "etymology": "saurian hoplite",
+      "description": "Sauroplites is a genus of herbivorous ankylosaurian dinosaur from the Early Cretaceous of China.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "38840"
+        }
+      ],
+      "species": [
+        {
+          "name": "Sauroplites scutiger",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Aptian"
+            ],
+            "from_ma": 121.4,
+            "to_ma": 113.2
+          },
+          "location": {
+            "country": "CN",
+            "region": "Nei Mongol",
+            "coordinates": [
+              41.5,
+              106.98333
+            ]
+          },
+          "described": 1953,
+          "authors": "Bohlin"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Thyreophora",
+        "Ankylosauria",
+        "Nodosauridae"
+      ]
+    },
+    "Sauroposeidon": {
+      "genus": "Sauroposeidon",
+      "parent": "Somphospondyli",
+      "etymology": "lizard earthquake god",
+      "pronunciation": {
+        "ipa": "/ˌsɔːroʊpoʊˈsaɪdən/"
+      },
+      "description": "Sauroposeidon is a genus of sauropod dinosaur known from several incomplete specimens including a bone bed and fossilized trackways that have been found in the U.S. states of Oklahoma, Wyoming, and Texas.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "66616"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q131693"
+        },
+        {
+          "source": "gbif",
+          "id": "4822845"
+        },
+        {
+          "source": "eol",
+          "id": "4531389"
+        }
+      ],
+      "species": [
+        {
+          "name": "Sauroposeidon proteles",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Albian"
+            ]
+          },
+          "location": {
+            "country": "US",
+            "region": "Oklahoma",
+            "formation": "Antlers",
+            "coordinates": [
+              34.164001,
+              -95.82
+            ]
+          },
+          "described": 2000,
+          "authors": "Wedel et al.",
+          "described_in": "wedel2000"
+        }
+      ],
+      "references": [
+        {
+          "id": "wedel2000",
+          "authors": "Wedel, Mathew J.; Cifelli, Richard L.; Sanders, R. Kent",
+          "year": 2000,
+          "title": "Sauroposeidon proteles, a new sauropod from the early Cretaceous of Oklahoma",
+          "journal": "Journal of Vertebrate Paleontology",
+          "volume": "20",
+          "issue": "1",
+          "pages": "109-114",
+          "publisher": "Informa UK Limited",
+          "doi": "10.1671/0272-4634(2000)020[0109:spansf]2.0.co;2",
+          "url": "http://dx.doi.org/10.1671/0272-4634(2000)020[0109:spansf]2.0.co;2"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda",
+        "Neosauropoda",
+        "Macronaria",
+        "Titanosauriformes",
+        "Somphospondyli"
+      ]
+    },
+    "Saurornithoides": {
+      "genus": "Saurornithoides",
+      "parent": "Saurornithoidini",
+      "pronunciation": {
+        "ipa": "/sɔːˌrɔːrnɪˈθɔɪdiːz/",
+        "phonetic": "saw-ROR-ni-THOY-deez"
+      },
+      "description": "Saurornithoides is a genus of troodontid maniraptoran dinosaur, which lived during the Late Cretaceous period. These creatures were predators, which could run fast on their hind legs and had excellent sight and hearing. The name is derived from the Greek stems saur~ (lizard), ornith~ (bird) and eides (form), referring to its bird-like skull.",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "38573"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q131703"
+        },
+        {
+          "source": "gbif",
+          "id": "5428859"
+        },
+        {
+          "source": "eol",
+          "id": "4433792"
+        }
+      ],
+      "species": [
+        {
+          "name": "Saurornithoides mongoliensis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Maastrichtian"
+            ]
+          },
+          "location": {
+            "country": "MN",
+            "region": "Omnogov Aimak",
+            "formation": "Djadokhta",
+            "coordinates": [
+              43.664444,
+              100.901947
+            ]
+          },
+          "holotype": {
+            "specimen_id": "AMNH 6516",
+            "institution": "American Museum of Natural History, New York City"
+          },
+          "size": {
+            "length_m": 3,
+            "estimate": true
+          },
+          "described": 1924,
+          "authors": "Osborn"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Coelurosauria",
+        "Maniraptora",
+        "Paraves",
+        "Deinonychosauria",
+        "Troodontidae",
+        "Troodontinae",
+        "Saurornithoidini"
+      ]
+    },
+    "Saurornitholestes": {
+      "genus": "Saurornitholestes",
+      "parent": "Saurornitholestinae",
+      "etymology": "lizard-bird thief",
+      "description": "Saurornitholestes is a genus of carnivorous dromaeosaurid theropod dinosaur from the late Cretaceous of Canada (Alberta and Saskatchewan) and the United States (Montana, New Mexico, Alabama, and South Carolina). Two species have been named that are regarded as valid: Saurornitholestes langstoni in 1978 and Saurornitholestes sullivani in 2015. Saurornitholestes was a small, bipedal, meat-eating dinosaur, equipped with a sickle-like claw on each foot.",
+      "diet": "carnivore",
+      "locomotion": "bipedal",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "38567"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q132174"
+        },
+        {
+          "source": "gbif",
+          "id": "4822943"
+        },
+        {
+          "source": "eol",
+          "id": "4433559"
+        }
+      ],
+      "species": [
+        {
+          "name": "Saurornitholestes langstoni",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Maastrichtian"
+            ]
+          },
+          "location": {
+            "country": "CA",
+            "region": "Alberta",
+            "formation": "Dinosaur Park",
+            "coordinates": [
+              50.748589,
+              -111.406532
+            ]
+          },
+          "holotype": {
+            "specimen_id": "TMP 1974.10.5",
+            "institution": "Royal Tyrrell Museum of Paleontology, Drumheller"
+          },
+          "size": {
+            "length_m": 1.8,
+            "weight_kg": 10,
+            "hip_height_m": 0.6,
+            "estimate": true
+          },
+          "described": 1978,
+          "authors": "Sues"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Coelurosauria",
+        "Maniraptora",
+        "Paraves",
+        "Deinonychosauria",
+        "Dromaeosauridae",
+        "Eudromaeosauria",
+        "Saurornitholestinae"
+      ]
+    },
+    "Savannasaurus": {
+      "genus": "Savannasaurus",
+      "parent": "Diamantinasauria",
+      "description": "Savannasaurus is a genus of titanosaurian sauropod dinosaur from the Late Cretaceous Winton Formation of Queensland, Australia. It contains one species, Savannasaurus elliottorum, named in 2016 by Stephen Poropat and colleagues. The holotype and only known specimen, originally nicknamed \"Wade\", is the most complete specimen of an Australian sauropod, and is held at the Australian Age of Dinosaurs museum. Dinosaurs known from contemporary rocks include its close relative Diamantinasaurus and the theropod Australovenator; associated teeth suggest that Australovenator may have fed on the holotype specimen.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "347241"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q27494215"
+        },
+        {
+          "source": "gbif",
+          "id": "9355152"
+        },
+        {
+          "source": "eol",
+          "id": "47459445"
+        }
+      ],
+      "species": [
+        {
+          "name": "Savannasaurus elliottorum",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Turonian"
+            ]
+          },
+          "location": {
+            "country": "AU",
+            "region": "Queensland",
+            "formation": "Winton",
+            "coordinates": [
+              -22.348333,
+              143.089172
+            ]
+          },
+          "described": 2016,
+          "authors": "Poropat et al.",
+          "described_in": "poropat2016"
+        }
+      ],
+      "references": [
+        {
+          "id": "poropat2016",
+          "authors": "Poropat, Stephen F.; Mannion, Philip D.; Upchurch, Paul; Hocknull, Scott A.; Kear, Benjamin P.; Kundrát, Martin; Tischler, Travis R.; Sloan, Trish; Sinapius, George H. K.; Elliott, Judy A.; Elliott, David A.",
+          "year": 2016,
+          "title": "New Australian sauropods shed light on Cretaceous dinosaur palaeobiogeography",
+          "journal": "Scientific Reports",
+          "volume": "6",
+          "issue": "1",
+          "publisher": "Springer Science and Business Media LLC",
+          "doi": "10.1038/srep34467",
+          "url": "http://dx.doi.org/10.1038/srep34467"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda",
+        "Neosauropoda",
+        "Macronaria",
+        "Titanosauriformes",
+        "Somphospondyli",
+        "Diamantinasauria"
+      ]
+    },
+    "Scansoriopteryx": {
+      "genus": "Scansoriopteryx",
+      "parent": "Scansoriopterygidae",
+      "etymology": "climbing wing",
+      "description": "Scansoriopteryx is a genus of maniraptoran dinosaur. Described from only a single juvenile fossil specimen found in Liaoning, China, Scansoriopteryx is a sparrow-sized animal that shows adaptations in the foot indicating an arboreal (tree-dwelling) lifestyle. It possessed an unusual, elongated third finger which may have supported a membranous wing, much like the related Yi qi. The type specimen of Scansoriopteryx also contains the fossilized impression of feathers.",
+      "diet": "carnivore",
+      "appearance": {
+        "integument": "feathered"
+      },
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "162571"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q1192657"
+        },
+        {
+          "source": "gbif",
+          "id": "4818612"
+        },
+        {
+          "source": "eol",
+          "id": "47458490"
+        }
+      ],
+      "species": [
+        {
+          "name": "Scansoriopteryx heilmanni",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Aptian"
+            ]
+          },
+          "location": {
+            "country": "CN",
+            "region": "Liaoning",
+            "formation": "Yixian",
+            "coordinates": [
+              41.366669,
+              121.416664
+            ]
+          },
+          "holotype": {
+            "specimen_id": "IVPP V12653",
+            "institution": "Institute of Vertebrate Paleontology and Paleoanthropology, Beijing"
+          },
+          "described": 2002,
+          "authors": "Czerkas and Yuan"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Coelurosauria",
+        "Maniraptora",
+        "Scansoriopterygidae"
+      ]
+    },
+    "Scelidosaurus": {
+      "genus": "Scelidosaurus",
+      "parent": "Thyreophora",
+      "pronunciation": {
+        "ipa": "/ˌsɛlɪdoʊˈsɔːrəs/"
+      },
+      "description": "Scelidosaurus is a genus of herbivorous armoured ornithischian dinosaur from the Jurassic of England.",
+      "diet": "herbivore",
+      "appearance": {
+        "integument": "armored"
+      },
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "38801"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q18862"
+        },
+        {
+          "source": "gbif",
+          "id": "4823038"
+        },
+        {
+          "source": "eol",
+          "id": "52571895"
+        }
+      ],
+      "species": [
+        {
+          "name": "Scelidosaurus harrisonii",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Jurassic"
+            ],
+            "stage": [
+              "Toarcian"
+            ]
+          },
+          "location": {
+            "country": "GB",
+            "region": "England",
+            "coordinates": [
+              50.75,
+              -2.916667
+            ]
+          },
+          "size": {
+            "length_m": 4,
+            "estimate": true
+          },
+          "described": 1859,
+          "authors": "Owen"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Thyreophora"
+      ]
+    },
+    "Schleitheimia": {
+      "genus": "Schleitheimia",
+      "parent": "Sauropodiformes",
+      "description": "Schleitheimia is an extinct genus of sauropodiform sauropodomorph dinosaur, from the Gruhalde Member of Klettgau Formation of Switzerland. The type species, Schleitheimia schutzi was formally described in 2020.",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "423027"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q96777241"
+        },
+        {
+          "source": "gbif",
+          "id": "11186028"
+        }
+      ],
+      "species": [
+        {
+          "name": "Schleitheimia schutzi",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Triassic"
+            ],
+            "stage": [
+              "Norian"
+            ]
+          },
+          "location": {
+            "country": "CH",
+            "region": "Schaffhausen",
+            "formation": "Klettgau",
+            "coordinates": [
+              47.741669,
+              8.486944
+            ]
+          },
+          "holotype": {
+            "specimen_id": "PIMUZ A/III 550",
+            "institution": "Paleontological Institute and Museum of the University of Zurich"
+          },
+          "described": 2020,
+          "authors": "Rauhut et al.",
+          "described_in": "rauhut2020"
+        }
+      ],
+      "references": [
+        {
+          "id": "rauhut2020",
+          "authors": "Rauhut, Oliver W. M.; Holwerda, Femke M.; Furrer, Heinz",
+          "year": 2020,
+          "title": "A derived sauropodiform dinosaur and other sauropodomorph material from the Late Triassic of Canton Schaffhausen, Switzerland",
+          "journal": "Swiss Journal of Geosciences",
+          "volume": "113",
+          "issue": "1",
+          "publisher": "Pensoft Publishers",
+          "doi": "10.1186/s00015-020-00360-8",
+          "url": "http://dx.doi.org/10.1186/s00015-020-00360-8"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes"
+      ]
+    },
+    "Scipionyx": {
+      "genus": "Scipionyx",
+      "parent": "Compsognathidae",
+      "pronunciation": {
+        "ipa": "/ˈʃɪˌpiːoʊnɪks, ˌʃɪpiːˈoʊ-/",
+        "phonetic": "SHIH-pee-oh-nicks"
+      },
+      "description": "Scipionyx was a genus of theropod dinosaur from the Early Cretaceous Pietraroja Formation of Italy, around 113 million years ago.",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "57427"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q134119"
+        },
+        {
+          "source": "gbif",
+          "id": "4822639"
+        }
+      ],
+      "species": [
+        {
+          "name": "Scipionyx samniticus",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Albian"
+            ]
+          },
+          "location": {
+            "country": "IT",
+            "region": "Campania",
+            "coordinates": [
+              41.347778,
+              14.548056
+            ]
+          },
+          "holotype": {
+            "specimen_id": "SBA-SA 163760",
+            "institution": "Soprintendenza per i Beni Archeologici di Salerno, Avellino, Benevento e Caserta, Salerno"
+          },
+          "described": 1996,
+          "authors": "Dal Sasso and Signore"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Coelurosauria",
+        "Compsognathidae"
+      ]
+    },
+    "Sciurumimus": {
+      "genus": "Sciurumimus",
+      "parent": "Megalosauroidea",
+      "etymology": "squirrel mimic",
+      "description": "Sciurumimus is an extinct genus of tetanuran theropod from the Late Jurassic Torleite Formation of Germany. It is known from a single juvenile specimen representing the type species, Sciurumimus albersdoerferi, which was found in a limestone quarry close to Painten in Lower Bavaria. The specimen was preserved with traces of feather-like filaments.",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "240620"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q133894"
+        },
+        {
+          "source": "gbif",
+          "id": "8654844"
+        }
+      ],
+      "species": [
+        {
+          "name": "Sciurumimus albersdoerferi",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Jurassic"
+            ],
+            "stage": [
+              "Kimmeridgian"
+            ]
+          },
+          "location": {
+            "country": "DE",
+            "region": "Bayern",
+            "formation": "Torleite",
+            "coordinates": [
+              49.007839,
+              11.826369
+            ]
+          },
+          "holotype": {
+            "specimen_id": "BMMS BK 11",
+            "institution": "Bürgermeister Müller Museum, Solnhofen"
+          },
+          "described": 2012,
+          "authors": "Rauhut et al.",
+          "described_in": "rauhut2012"
+        }
+      ],
+      "references": [
+        {
+          "id": "rauhut2012",
+          "authors": "Rauhut, Oliver W. M.; Foth, Christian; Tischlinger, Helmut; Norell, Mark A.",
+          "year": 2012,
+          "title": "Exceptionally preserved juvenile megalosauroid theropod dinosaur with filamentous integument from the Late Jurassic of Germany",
+          "journal": "Proceedings of the National Academy of Sciences",
+          "volume": "109",
+          "issue": "29",
+          "pages": "11746-11751",
+          "publisher": "Proceedings of the National Academy of Sciences",
+          "doi": "10.1073/pnas.1203238109",
+          "url": "http://dx.doi.org/10.1073/pnas.1203238109"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Tetanurae",
+        "Megalosauroidea"
+      ]
+    },
+    "Scolosaurus": {
+      "genus": "Scolosaurus",
+      "parent": "Euoplocephalini",
+      "description": "Scolosaurus is an extinct genus of ankylosaurid dinosaurs within the subfamily Ankylosaurinae. It is known from the lower levels of the Dinosaur Park Formation and upper levels of the Oldman Formation in the Late Cretaceous (latest middle Campanian stage, about 76.5 Ma ago) of Alberta, Canada. The genus contains two species, S. cutleri and S. thronus. The type species, S. cutleri, measured up to 5.6 metres (18 ft) in length and 2.2 metric tons (2.4 short tons) in body mass.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "66258"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q7434319"
+        },
+        {
+          "source": "gbif",
+          "id": "4817880"
+        },
+        {
+          "source": "eol",
+          "id": "24177353"
+        }
+      ],
+      "species": [
+        {
+          "name": "Scolosaurus thronus",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Campanian"
+            ]
+          },
+          "location": {
+            "country": "CA",
+            "region": "Alberta",
+            "formation": "Dinosaur Park",
+            "coordinates": [
+              50.748589,
+              -111.406532
+            ]
+          },
+          "size": {
+            "length_m": 6,
+            "weight_kg": 2200,
+            "estimate": true
+          },
+          "described": 1928,
+          "authors": "Nopcsa"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Thyreophora",
+        "Ankylosauria",
+        "Ankylosauridae",
+        "Ankylosaurinae",
+        "Euoplocephalini"
+      ]
+    },
+    "Scutellosaurus": {
+      "genus": "Scutellosaurus",
+      "parent": "Thyreophora",
+      "pronunciation": {
+        "ipa": "/skuːˌtɛloʊˈsɔːrəs/",
+        "phonetic": "skoo-TEL-oh-SOR-əs"
+      },
+      "description": "Scutellosaurus is a genus of basal thyreophoran dinosaur that lived approximately 196 million years ago during the early part of the Jurassic Period in what is now Arizona, USA. It is classified in Thyreophora, the armoured dinosaurs; its closest relatives may have been Emausaurus and Scelidosaurus, another armored dinosaur which was mainly a quadrupedal dinosaur, unlike bipedal Scutellosaurus. It is one of the earliest representatives of the armored dinosaurs and the basalmost form discovered to date. Scutellosaurus was a small, lightly-built, ground-dwelling herbivore, that could grow up to an estimated 1.3 metres (4.3 ft) long.",
+      "diet": "herbivore",
+      "locomotion": "bipedal",
+      "appearance": {
+        "integument": "armored"
+      },
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "38802"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q131646"
+        },
+        {
+          "source": "gbif",
+          "id": "4823154"
+        },
+        {
+          "source": "eol",
+          "id": "47460286"
+        }
+      ],
+      "species": [
+        {
+          "name": "Scutellosaurus lawleri",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Jurassic"
+            ],
+            "stage": [
+              "Pliensbachian"
+            ]
+          },
+          "location": {
+            "country": "US",
+            "region": "Arizona",
+            "formation": "Kayenta",
+            "coordinates": [
+              35.679169,
+              -111.027779
+            ]
+          },
+          "size": {
+            "length_m": 1.2,
+            "estimate": true
+          },
+          "described": 1981,
+          "authors": "Colbert"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Thyreophora"
+      ]
+    },
+    "Secernosaurus": {
+      "genus": "Secernosaurus",
+      "parent": "Kritosaurini",
+      "etymology": "severed lizard",
+      "description": "Secernosaurus is a genus of herbivorous hadrosaurid dinosaur that lived during the Late Cretaceous of what is now Argentina. This genus and its close relatives lived in South America, unlike most hadrosaurids, which lived in the Laurasian continents of Eurasia and North America. It has been suggested that the ancestors of Secernosaurus crossed into South America when a land bridge temporarily formed between North and South America during the Late Cretaceous and allowed biotic interchange between the two continents.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "38781"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q134692"
+        },
+        {
+          "source": "gbif",
+          "id": "4823297"
+        },
+        {
+          "source": "eol",
+          "id": "4531762"
+        }
+      ],
+      "species": [
+        {
+          "name": "Secernosaurus koerneri",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Maastrichtian"
+            ]
+          },
+          "location": {
+            "country": "AR",
+            "region": "Chubut",
+            "formation": "Lago Colhué Huapi",
+            "coordinates": [
+              -45.61972,
+              -68.50972
+            ]
+          },
+          "size": {
+            "length_m": 3,
+            "estimate": true
+          },
+          "described": 1979,
+          "authors": "Brett-Surman",
+          "described_in": "brett-surman1979"
+        }
+      ],
+      "references": [
+        {
+          "id": "brett-surman1979",
+          "authors": "BRETT-SURMAN, M. K.",
+          "year": 1979,
+          "title": "Phylogeny and palaeobiogeography of hadrosaurian dinosaurs",
+          "journal": "Nature",
+          "volume": "277",
+          "issue": "5697",
+          "pages": "560-562",
+          "publisher": "Springer Science and Business Media LLC",
+          "doi": "10.1038/277560a0",
+          "url": "http://dx.doi.org/10.1038/277560a0"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Ornithopoda",
+        "Clypeodonta",
+        "Iguanodontia",
+        "Dryomorpha",
+        "Styracosterna",
+        "Hadrosauriformes",
+        "Hadrosauroidea",
+        "Hadrosauridae",
+        "Hadrosaurinae",
+        "Kritosaurini"
+      ]
+    },
+    "Sefapanosaurus": {
+      "genus": "Sefapanosaurus",
+      "parent": "Sauropodiformes",
+      "description": "Sefapanosaurus was an early, herbivorous sauropodomorph dinosaur occurring in the southern regions of Gondwana some 200 million years ago in the Late Triassic or Early Jurassic. The sauropodomorphs were the dominant terrestrial herbivores throughout much of the Mesozoic Era, from their origins in the mid-Triassic (approximately 230 Ma) until their decline and fall at the end of the Cretaceous (approximately 66 Ma). A distinctive feature of this dinosaur is the cross-shaped astragalus or talus bone in its ankle. The generic name is derived from the Sesotho word sefapano, meaning ‘cross’ and the Greek word saurus, meaning 'lizard'. The specific name refers to Zastron, the type locality, where the specimen was discovered.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "322707"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q21369143"
+        }
+      ],
+      "species": [
+        {
+          "name": "Sefapanosaurus zastronensis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Jurassic"
+            ],
+            "stage": [
+              "Hettangian"
+            ]
+          },
+          "location": {
+            "country": "ZA",
+            "region": "Free State",
+            "formation": "Elliot",
+            "coordinates": [
+              -30.299999,
+              27.083332
+            ]
+          },
+          "described": 2015,
+          "authors": "Otero et al.",
+          "described_in": "otero2015"
+        }
+      ],
+      "references": [
+        {
+          "id": "otero2015",
+          "authors": "Otero, Alejandro; Krupandan, Emil; Pol, Diego; Chinsamy, Anusuya; Choiniere, Jonah",
+          "year": 2015,
+          "title": "A new basal sauropodiform from South Africa and the phylogenetic relationships of basal sauropodomorphs",
+          "journal": "Zoological Journal of the Linnean Society",
+          "volume": "174",
+          "issue": "3",
+          "pages": "589-634",
+          "publisher": "Oxford University Press (OUP)",
+          "doi": "10.1111/zoj.12247",
+          "url": "http://dx.doi.org/10.1111/zoj.12247"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes"
+      ]
+    },
+    "Segisaurus": {
+      "genus": "Segisaurus",
+      "parent": "Coelophysinae",
+      "etymology": "Tsegi Canyon lizard",
+      "description": "Segisaurus is a genus of small coelophysid theropod dinosaur, that measured approximately 1 metre (3.3 feet) in length. The only known specimen was discovered in early Jurassic strata in Tsegi Canyon, Arizona, for which it was named. Segisaurus is the only dinosaur to have ever been excavated from the area.",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "38524"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q130738"
+        },
+        {
+          "source": "gbif",
+          "id": "4822864"
+        }
+      ],
+      "species": [
+        {
+          "name": "Segisaurus halli",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Jurassic"
+            ],
+            "stage": [
+              "Toarcian"
+            ]
+          },
+          "location": {
+            "country": "US",
+            "region": "Arizona",
+            "formation": "Navajo Sandstone",
+            "coordinates": [
+              36.780556,
+              -110.525002
+            ]
+          },
+          "holotype": {
+            "specimen_id": "UCMP 32101",
+            "institution": "University of California Museum of Paleontology, Berkeley"
+          },
+          "size": {
+            "length_m": 1.5,
+            "estimate": true
+          },
+          "described": 1936,
+          "authors": "Camp"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Coelophysoidea",
+        "Coelophysidae",
+        "Coelophysinae"
+      ]
+    },
+    "Segnosaurus": {
+      "genus": "Segnosaurus",
+      "parent": "Therizinosauridae",
+      "etymology": "slow lizard",
+      "description": "Segnosaurus is a genus of therizinosaurid dinosaur that lived in what is now southeastern Mongolia during the Late Cretaceous, about 102–86 million years ago. Multiple incomplete but well-preserved specimens were discovered in the Gobi Desert in the 1970s, and in 1979 the genus and species Segnosaurus galbinensis were named. The generic name Segnosaurus means \"slow lizard\" and the specific name galbinensis refers to the Galbin region. The known material of this dinosaur includes the lower jaw, neck and tail vertebrae, the pelvis, shoulder girdle, and limb bones. Parts of the specimens have gone missing or become damaged since they were collected. Remains from Japan originally assigned to Allosaurus were reassigned to Segnosaurus sp. (of unspecified species) in 2025.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "38711"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q131102"
+        },
+        {
+          "source": "gbif",
+          "id": "4822732"
+        },
+        {
+          "source": "eol",
+          "id": "47458463"
+        }
+      ],
+      "species": [
+        {
+          "name": "Segnosaurus galbinensis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Santonian"
+            ]
+          },
+          "location": {
+            "country": "MN",
+            "region": "Omnogov",
+            "formation": "Bayan Shireh",
+            "coordinates": [
+              44.1,
+              110.3
+            ]
+          },
+          "holotype": {
+            "specimen_id": "IGM 100/80",
+            "institution": "Institute of Geology, Mongolian Academy of Sciences, Ulaanbaatar"
+          },
+          "size": {
+            "length_m": 7,
+            "weight_kg": 1300,
+            "estimate": true
+          },
+          "described": 1979,
+          "authors": "Perle"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Tetanurae",
+        "Avetheropoda",
+        "Coelurosauria",
+        "Maniraptora",
+        "Therizinosauridae"
+      ]
+    },
+    "Seitaad": {
+      "genus": "Seitaad",
+      "parent": "Sauropodiformes",
+      "description": "Seitaad is a genus of sauropodomorph dinosaur which lived during the Early Jurassic period in what is now southern Utah, United States.",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "165044"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q2451962"
+        },
+        {
+          "source": "eol",
+          "id": "47459231"
+        }
+      ],
+      "species": [
+        {
+          "name": "Seitaad ruessi",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Jurassic"
+            ],
+            "stage": [
+              "Toarcian"
+            ]
+          },
+          "location": {
+            "country": "US",
+            "region": "Utah",
+            "formation": "Navajo Sandstone",
+            "coordinates": [
+              37.366669,
+              -109.633331
+            ]
+          },
+          "holotype": {
+            "specimen_id": "UMNH VP 18040",
+            "institution": "Utah Museum of Natural History, Salt Lake City"
+          },
+          "described": 2010,
+          "authors": "Sertich and Loewen",
+          "described_in": "sertich2010"
+        }
+      ],
+      "references": [
+        {
+          "id": "sertich2010",
+          "authors": "Sertich, Joseph J. W.; Loewen, Mark A.",
+          "year": 2010,
+          "title": "A New Basal Sauropodomorph Dinosaur from the Lower Jurassic Navajo Sandstone of Southern Utah",
+          "journal": "PLoS ONE",
+          "volume": "5",
+          "issue": "3",
+          "pages": "e9789",
+          "publisher": "Public Library of Science (PLoS)",
+          "doi": "10.1371/journal.pone.0009789",
+          "url": "http://dx.doi.org/10.1371/journal.pone.0009789"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes"
+      ]
+    },
+    "Sektensaurus": {
+      "genus": "Sektensaurus",
+      "parent": "Elasmaria",
+      "etymology": "island lizard",
+      "description": "Sektensaurus is a genus of ornithopod dinosaur, possibly an elasmarian, from the Late Cretaceous (Maastrichtian) of Patagonia, Argentina. Its remains were uncovered in the fluvial tuffs of the Lago Colhué Huapí Formation in the Golfo San Jorge Basin. The type and only species is S. sanjuanboscoi. Sektensaurus is the first non-hadrosauroid ornithopod of central Patagonia. The discovery of the genus increases the anatomical knowledge of ornithopods and adds new data on the compositions of dinosaur faunas that lived in Patagonia close to Antarctica at the end of the Cretaceous.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "424526"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q61735613"
+        }
+      ],
+      "species": [
+        {
+          "name": "Sektensaurus sanjuanboscoi",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Maastrichtian"
+            ]
+          },
+          "location": {
+            "country": "AR",
+            "region": "Chubut",
+            "formation": "Lago Colhué Huapi",
+            "coordinates": [
+              -45.597778,
+              -68.622223
+            ]
+          },
+          "holotype": {
+            "specimen_id": "UNPSJB-PV 1054",
+            "institution": "Universidad Nacional de la Patagonia San Juan Bosco, Comodoro Rivadavia"
+          },
+          "described": 2019,
+          "authors": "Ibiricu et al.",
+          "described_in": "ibiricu2019"
+        }
+      ],
+      "references": [
+        {
+          "id": "ibiricu2019",
+          "authors": "Ibiricu, Lucio M.; Casal, Gabriel A.; Martínez, Rubén D.; Luna, Marcelo; Canale, Juan I.; Álvarez, Bruno N.; González Riga, Bernardo",
+          "year": 2019,
+          "title": "A new ornithopod dinosaur (Dinosauria: Ornithischia) from the Late Cretaceous of central Patagonia",
+          "journal": "Cretaceous Research",
+          "volume": "98",
+          "pages": "276-291",
+          "publisher": "Elsevier BV",
+          "doi": "10.1016/j.cretres.2019.02.001",
+          "url": "http://dx.doi.org/10.1016/j.cretres.2019.02.001"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Ornithopoda",
+        "Clypeodonta",
+        "Iguanodontia",
+        "Elasmaria"
       ]
     },
     "Serendipaceratops": {
