@@ -202,11 +202,14 @@ before committing.
 
 ## Step 7 — Commit the changes
 
-Stage and commit all changes. Use separate commits for clarity:
+First, discard any local changes to generated output files — the GitHub
+Action will rebuild these automatically:
 
-**Commit 1 — New genera and clades:**
+```
+git restore dist/ docs/open-paleo.json
+```
 
-Stage the new genus files, new clade files, and the updated `tree.yml`:
+Then stage and commit the new data:
 
 ```
 git add genera/ clades/ tree.yml
@@ -223,14 +226,6 @@ New clades added: {M}
 
 Where `{N}` is `generaProcessed` and `{M}` is the count of new clades
 from the report.
-
-**Commit 2 — Build outputs:**
-
-```
-git add dist/ docs/
-```
-
-Use the commit message: `build: update output files`
 
 **Important:** Do NOT push or create a PR. Show the user a summary of
 what was committed and wait for further instructions.
