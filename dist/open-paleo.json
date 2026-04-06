@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-04-06T00:58:49.114Z",
-    "clade_count": 122,
-    "genus_count": 103,
+    "built_at": "2026-04-06T01:33:30.653Z",
+    "clade_count": 129,
+    "genus_count": 122,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
     "version": "2026.04"
@@ -108,7 +108,8 @@
                                         "Parvicursorinae": {}
                                       }
                                     }
-                                  }
+                                  },
+                                  "Megaraptora": {}
                                 },
                                 "Allosauroidea": {
                                   "Metriacanthosauridae": {},
@@ -118,6 +119,9 @@
                                   "Piatnitzkysauridae": {},
                                   "Megalosauridae": {
                                     "Megalosaurinae": {}
+                                  },
+                                  "Spinosauridae": {
+                                    "Baryonychinae": {}
                                   }
                                 }
                               },
@@ -231,16 +235,22 @@
                                           "Hadrosauridae": {
                                             "Hadrosaurinae": {
                                               "Brachylophosaurini": {}
+                                            },
+                                            "Lambeosaurinae": {
+                                              "Corythosaurini": {}
                                             }
                                           }
                                         }
                                       }
-                                    }
+                                    },
+                                    "Dryosauridae": {},
+                                    "Ankylopollexia": {}
                                   },
                                   "Rhabdodontomorpha": {
                                     "Rhabdodontoidea": {}
                                   }
-                                }
+                                },
+                                "Hypsilophodontidae": {}
                               }
                             },
                             "Marginocephalia": {
@@ -255,7 +265,8 @@
                                 "Ceratopsidae": {
                                   "Centrosaurinae": {
                                     "Nasutoceratopsini": {}
-                                  }
+                                  },
+                                  "Chasmosaurinae": {}
                                 }
                               },
                               "Pachycephalosauria": {}
@@ -770,6 +781,27 @@
         "Bagualosauria"
       ]
     },
+    "Baryonychinae": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Megalosauroidea",
+        "Spinosauridae",
+        "Baryonychinae"
+      ]
+    },
     "Brachiosauridae": {
       "description": "Brachiosauridae is a family of macronarian sauropod dinosaurs known from the Late Jurassic to Early Cretaceous of North America, Africa, Europe, and possibly South America. Brachiosaurids are distinguished by their unusual body proportions, with forelimbs longer than or subequal to hindlimbs, giving them a distinctive giraffe-like elevated posture. This configuration allowed them to browse at greater heights than most other sauropods. Notable members include Brachiosaurus and Giraffatitan.\n",
       "taxonomy": [
@@ -1170,6 +1202,26 @@
         "Chaoyangsauridae"
       ]
     },
+    "Chasmosaurinae": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Marginocephalia",
+        "Ceratopsia",
+        "Ceratopsidae",
+        "Chasmosaurinae"
+      ]
+    },
     "Citipatinae": {
       "taxonomy": [
         "Life",
@@ -1289,6 +1341,32 @@
         "Ceratopsia",
         "Neoceratopsia",
         "Coronosauria"
+      ]
+    },
+    "Corythosaurini": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Ornithopoda",
+        "Clypeodonta",
+        "Iguanodontia",
+        "Dryomorpha",
+        "Styracosterna",
+        "Hadrosauriformes",
+        "Hadrosauroidea",
+        "Hadrosauridae",
+        "Lambeosaurinae",
+        "Corythosaurini"
       ]
     },
     "Deinonychosauria": {
@@ -1542,6 +1620,27 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha"
+      ]
+    },
+    "Dryosauridae": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Ornithopoda",
+        "Clypeodonta",
+        "Iguanodontia",
+        "Dryomorpha",
+        "Dryosauridae"
       ]
     },
     "Eudromaeosauria": {
@@ -1813,6 +1912,25 @@
         "Hadrosauroidea"
       ]
     },
+    "Hypsilophodontidae": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Ornithopoda",
+        "Clypeodonta",
+        "Hypsilophodontidae"
+      ]
+    },
     "Iguanodontia": {
       "taxonomy": [
         "Life",
@@ -1830,6 +1948,31 @@
         "Ornithopoda",
         "Clypeodonta",
         "Iguanodontia"
+      ]
+    },
+    "Lambeosaurinae": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Ornithopoda",
+        "Clypeodonta",
+        "Iguanodontia",
+        "Dryomorpha",
+        "Styracosterna",
+        "Hadrosauriformes",
+        "Hadrosauroidea",
+        "Hadrosauridae",
+        "Lambeosaurinae"
       ]
     },
     "Leptoceratopsidae": {
@@ -2155,6 +2298,26 @@
           "volume": "",
           "pages": "71-110"
         }
+      ]
+    },
+    "Megaraptora": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Coelurosauria",
+        "Megaraptora"
       ]
     },
     "Metriacanthosauridae": {
@@ -4745,6 +4908,1542 @@
         "Avetheropoda",
         "Coelurosauria",
         "Tyrannosauridae"
+      ]
+    },
+    "Unenlagia": {
+      "genus": "Unenlagia",
+      "parent": "Unenlagiinae",
+      "etymology": "half-bird",
+      "description": "Unenlagia is a genus of unenlagiine theropod dinosaur that lived in South America during the Late Cretaceous period. The genus Unenlagia has been assigned two species: U. comahuensis, the type species described by Novas and Puerta in 1997, and U. paynemili, described by Calvo et al. in 2004.",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "65421"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q134159"
+        },
+        {
+          "source": "gbif",
+          "id": "4822938"
+        },
+        {
+          "source": "eol",
+          "id": "4433567"
+        }
+      ],
+      "species": [
+        {
+          "name": "Unenlagia comahuensis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Coniacian"
+            ]
+          },
+          "location": {
+            "country": "AR",
+            "region": "Neuquén",
+            "formation": "Portezuelo",
+            "coordinates": [
+              -38.453194,
+              -68.724556
+            ]
+          },
+          "holotype": {
+            "specimen_id": "MUCPv-349",
+            "institution": "Museo Carmen Funes, Paleontologia de Vertebrados"
+          },
+          "size": {
+            "length_m": 2.4,
+            "estimate": true
+          },
+          "described": 1997,
+          "authors": "Novas and Puerta",
+          "described_in": "novas1997"
+        }
+      ],
+      "references": [
+        {
+          "id": "novas1997",
+          "authors": "Novas, Fernando E.; Puertat, Pablo F.",
+          "year": 1997,
+          "title": "New evidence concerning avian origins from the Late Cretaceous of Patagonia",
+          "journal": "Nature",
+          "volume": "387",
+          "issue": "6631",
+          "pages": "390-392",
+          "publisher": "Springer Science and Business Media LLC",
+          "doi": "10.1038/387390a0",
+          "url": "http://dx.doi.org/10.1038/387390a0"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Coelurosauria",
+        "Maniraptora",
+        "Paraves",
+        "Deinonychosauria",
+        "Dromaeosauridae",
+        "Unenlagiinae"
+      ]
+    },
+    "Unescoceratops": {
+      "genus": "Unescoceratops",
+      "parent": "Leptoceratopsidae",
+      "etymology": "UNESCO horned face",
+      "description": "Unescoceratops is a genus of leptoceratopsid ceratopsian dinosaurs known from the Late Cretaceous of Alberta, southern Canada. It contains a single species, Unescoceratops koppelhusae.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "228689"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q18915216"
+        },
+        {
+          "source": "gbif",
+          "id": "8531467"
+        },
+        {
+          "source": "eol",
+          "id": "47459991"
+        }
+      ],
+      "species": [
+        {
+          "name": "Unescoceratops koppelhusae",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Campanian"
+            ],
+            "from_ma": 83.6,
+            "to_ma": 72.2
+          },
+          "location": {
+            "country": "CA",
+            "region": "Alberta",
+            "formation": "Dinosaur Park",
+            "coordinates": [
+              50.814602,
+              -111.574997
+            ]
+          },
+          "described": 2012,
+          "authors": "Ryan et al.",
+          "described_in": "ryan2012"
+        }
+      ],
+      "references": [
+        {
+          "id": "ryan2012",
+          "authors": "Ryan, Michael J.; Evans, David C.; Currie, Philip J.; Brown, Caleb M.; Brinkman, Don",
+          "year": 2012,
+          "title": "New leptoceratopsids from the Upper Cretaceous of Alberta, Canada",
+          "journal": "Cretaceous Research",
+          "volume": "35",
+          "pages": "69-80",
+          "publisher": "Elsevier BV",
+          "doi": "10.1016/j.cretres.2011.11.018",
+          "url": "http://dx.doi.org/10.1016/j.cretres.2011.11.018"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Marginocephalia",
+        "Ceratopsia",
+        "Neoceratopsia",
+        "Leptoceratopsidae"
+      ]
+    },
+    "Unquillosaurus": {
+      "genus": "Unquillosaurus",
+      "parent": "Carcharodontosauridae",
+      "etymology": "Unquillo river lizard",
+      "description": "Unquillosaurus is a genus of large theropod dinosaur from the Late Cretaceous Los Blanquitos Formation of Salta Province, Argentina. Its precise classification is uncertain, but most researchers consider it as a maniraptoran. The genus contains a single species, U. ceibalii, known only from a single fossilized pubis (a pelvic bone).",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "58907"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q135633"
+        },
+        {
+          "source": "gbif",
+          "id": "4966203"
+        },
+        {
+          "source": "eol",
+          "id": "4433570"
+        }
+      ],
+      "species": [
+        {
+          "name": "Unquillosaurus ceibalii",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Campanian"
+            ],
+            "from_ma": 83.6,
+            "to_ma": 72.2
+          },
+          "location": {
+            "country": "AR",
+            "region": "Salta",
+            "formation": "Los Blanquitos",
+            "coordinates": [
+              -24.299999,
+              -65.26667
+            ]
+          },
+          "holotype": {
+            "specimen_id": "PVL 3670-11",
+            "institution": "Colección de Paleontologia de Vertebrados de la Fundación Instituto Miguel Lillo, Tucumán"
+          },
+          "described": 1979,
+          "authors": "Powell"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Tetanurae",
+        "Avetheropoda",
+        "Carnosauria",
+        "Carcharodontosauridae"
+      ]
+    },
+    "Urbacodon": {
+      "genus": "Urbacodon",
+      "parent": "Troodontinae",
+      "etymology": "URBAC tooth",
+      "description": "Urbacodon is a genus of troodontid theropod dinosaur. Two species have been described, both of which are known from a partial dentary: U. itemirensis from the Dzharakuduk Formation (Cenomanian) of Uzbekistan and U. norelli from the Iren Dabasu Formation of China. Possible remains are also known from the Bissekty Formation (Turonian) of Uzbekistan.",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "96667"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q1950821"
+        },
+        {
+          "source": "gbif",
+          "id": "4966271"
+        },
+        {
+          "source": "eol",
+          "id": "4433806"
+        }
+      ],
+      "species": [
+        {
+          "name": "Urbacodon itemirensis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Campanian"
+            ]
+          },
+          "location": {
+            "country": "UZ",
+            "region": "Navoi",
+            "formation": "Dzharakuduk",
+            "coordinates": [
+              42.105,
+              62.580276
+            ]
+          },
+          "holotype": {
+            "specimen_id": "ZIN PH 944/16",
+            "institution": "Zoological Institute, Russian Academy of Sciences, Saint Petersburg"
+          },
+          "size": {
+            "length_m": 1,
+            "estimate": true
+          },
+          "described": 2007,
+          "authors": "Averianov and Sues",
+          "described_in": "averianov2007"
+        }
+      ],
+      "references": [
+        {
+          "id": "averianov2007",
+          "authors": "Averianov, Alexander O.; Sues, Hans-Dieter",
+          "year": 2007,
+          "title": "A new troodontid (Dinosauria: Theropoda) from the Cenomanian of Uzbekistan, with a review of troodontid records from the territories of the former Soviet Union",
+          "journal": "Journal of Vertebrate Paleontology",
+          "volume": "27",
+          "issue": "1",
+          "pages": "87-98",
+          "publisher": "Informa UK Limited",
+          "doi": "10.1671/0272-4634(2007)27[87:antdtf]2.0.co;2",
+          "url": "http://dx.doi.org/10.1671/0272-4634(2007)27[87:antdtf]2.0.co;2"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Coelurosauria",
+        "Maniraptora",
+        "Paraves",
+        "Deinonychosauria",
+        "Troodontidae",
+        "Troodontinae"
+      ]
+    },
+    "Uriash": {
+      "genus": "Uriash",
+      "parent": "Lithostrotia",
+      "description": "Uriash is a genus of titanosaurian sauropod dinosaur from the Late Cretaceous (Maastrichtian) of Romania. The holotype of this genus was originally referred to Magyarosaurus hungaricus, which is now classified in a separate genus, Petrustitan.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "505037"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q132638672"
+        }
+      ],
+      "species": [
+        {
+          "name": "Uriash kadici",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Maastrichtian"
+            ]
+          },
+          "location": {
+            "country": "RO",
+            "region": "Hunedoara",
+            "formation": "Densuş-Ciula",
+            "coordinates": [
+              45.616669,
+              22.783331
+            ]
+          },
+          "described": 2025,
+          "authors": "Díez Díaz et al.",
+          "described_in": "díaz2025"
+        }
+      ],
+      "references": [
+        {
+          "id": "díaz2025",
+          "authors": "Díaz, Verónica Díez; Mannion, Philip D.; Csiki-Sava, Zoltán; Upchurch, Paul",
+          "year": 2025,
+          "title": "Revision of Romanian sauropod dinosaurs reveals high titanosaur diversity and body-size disparity on the latest Cretaceous Haţeg Island, with implications for titanosaurian biogeography",
+          "journal": "Journal of Systematic Palaeontology",
+          "volume": "23",
+          "issue": "1",
+          "publisher": "Informa UK Limited",
+          "doi": "10.1080/14772019.2024.2441516",
+          "url": "http://dx.doi.org/10.1080/14772019.2024.2441516"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda",
+        "Neosauropoda",
+        "Macronaria",
+        "Titanosauriformes",
+        "Somphospondyli",
+        "Titanosauria",
+        "Lithostrotia"
+      ]
+    },
+    "Utahceratops": {
+      "genus": "Utahceratops",
+      "parent": "Chasmosaurinae",
+      "description": "Utahceratops is an extinct genus of ceratopsian dinosaur that lived approximately 76.4~75.5 million years ago during the Late Cretaceous period in what is now Utah. Utahceratops was a large-sized, robustly-built, ground-dwelling, quadrupedal herbivore, that could grow up to an estimated 4.5–5 m (15–16 ft) long.",
+      "diet": "herbivore",
+      "locomotion": "quadrupedal",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "243363"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q134308"
+        },
+        {
+          "source": "gbif",
+          "id": "8527035"
+        },
+        {
+          "source": "eol",
+          "id": "17924513"
+        }
+      ],
+      "species": [
+        {
+          "name": "Utahceratops gettyi",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Campanian"
+            ],
+            "from_ma": 83.6,
+            "to_ma": 72.2
+          },
+          "location": {
+            "country": "US",
+            "region": "Utah",
+            "formation": "Kaiparowits",
+            "coordinates": [
+              37.629166,
+              -111.860275
+            ]
+          },
+          "described": 2010,
+          "authors": "Sampson et al.",
+          "described_in": "sampson2010"
+        }
+      ],
+      "references": [
+        {
+          "id": "sampson2010",
+          "authors": "Sampson, Scott D.; Loewen, Mark A.; Farke, Andrew A.; Roberts, Eric M.; Forster, Catherine A.; Smith, Joshua A.; Titus, Alan L.",
+          "year": 2010,
+          "title": "New Horned Dinosaurs from Utah Provide Evidence for Intracontinental Dinosaur Endemism",
+          "journal": "PLoS ONE",
+          "volume": "5",
+          "issue": "9",
+          "pages": "e12292",
+          "publisher": "Public Library of Science (PLoS)",
+          "doi": "10.1371/journal.pone.0012292",
+          "url": "http://dx.doi.org/10.1371/journal.pone.0012292"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Marginocephalia",
+        "Ceratopsia",
+        "Ceratopsidae",
+        "Chasmosaurinae"
+      ]
+    },
+    "Utahraptor": {
+      "genus": "Utahraptor",
+      "parent": "Eudromaeosauria",
+      "etymology": "Utah's predator",
+      "description": "Utahraptor is a genus of large dromaeosaurid (a group of feathered carnivorous theropods) dinosaur that lived during the Early Cretaceous period from around 139 to 135 million years ago in what is now the United States. The genus was described in 1993 by American paleontologist James Kirkland and colleagues with the type species Utahraptor ostrommaysi, based on fossils that had been unearthed earlier from the Cedar Mountain Formation of Utah. Later, many additional specimens were described including those from the skull and postcranium in addition to those of younger individuals.",
+      "diet": "carnivore",
+      "appearance": {
+        "integument": "feathered"
+      },
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "54557"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q131193"
+        },
+        {
+          "source": "gbif",
+          "id": "4966350"
+        },
+        {
+          "source": "eol",
+          "id": "4433572"
+        }
+      ],
+      "species": [
+        {
+          "name": "Utahraptor ostrommaysi",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Valanginian"
+            ],
+            "from_ma": 137.05,
+            "to_ma": 132.6
+          },
+          "location": {
+            "country": "US",
+            "region": "Utah",
+            "formation": "Cedar Mountain",
+            "coordinates": [
+              38.826099,
+              -109.567902
+            ]
+          },
+          "holotype": {
+            "specimen_id": "CEUM 184v",
+            "institution": "College of Eastern Utah Prehistoric Museum, Price"
+          },
+          "size": {
+            "length_m": 5.5,
+            "estimate": true
+          },
+          "described": 1993,
+          "authors": "Kirkland et al."
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Coelurosauria",
+        "Maniraptora",
+        "Paraves",
+        "Deinonychosauria",
+        "Dromaeosauridae",
+        "Eudromaeosauria"
+      ]
+    },
+    "Vagaceratops": {
+      "genus": "Vagaceratops",
+      "parent": "Chasmosaurinae",
+      "description": "Vagaceratops is a genus of chasmosaurine ceratopsid dinosaur which lived during the Late Cretaceous period (late Campanian) in what is now Alberta. Its fossils have been recovered from the Upper Dinosaur Park Formation. It is sometimes included in the genus Chasmosaurus as Chasmosaurus irvinensis instead of being recognized as its own genus.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "215082"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q388417"
+        },
+        {
+          "source": "gbif",
+          "id": "8575431"
+        },
+        {
+          "source": "eol",
+          "id": "47459973"
+        }
+      ],
+      "species": [
+        {
+          "name": "Vagaceratops irvinensis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Campanian"
+            ],
+            "from_ma": 83.6,
+            "to_ma": 72.2
+          },
+          "location": {
+            "country": "CA",
+            "region": "Alberta",
+            "formation": "Dinosaur Park",
+            "coordinates": [
+              49.950001,
+              -110.26667
+            ]
+          },
+          "described": 2010,
+          "authors": "Sampson",
+          "described_in": "farke2011"
+        }
+      ],
+      "references": [
+        {
+          "id": "farke2011",
+          "authors": "Farke, Andrew A.; Ryan, Michael J.; Barrett, Paul M.; Tanke, Darren H.; Braman, Dennis R.; Loewen, Mark A.; Graham, Mark R.",
+          "year": 2011,
+          "title": "A New Centrosaurine from the Late Cretaceous of Alberta, Canada, and the Evolution of Parietal Ornamentation in Horned Dinosaurs",
+          "journal": "Acta Palaeontologica Polonica",
+          "volume": "56",
+          "issue": "4",
+          "pages": "691-702",
+          "publisher": "Polska Akademia Nauk Instytut Paleobiologii (Institute of Paleobiology, Polish Academy of Sciences)",
+          "doi": "10.4202/app.2010.0121",
+          "url": "http://dx.doi.org/10.4202/app.2010.0121"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Marginocephalia",
+        "Ceratopsia",
+        "Ceratopsidae",
+        "Chasmosaurinae"
+      ]
+    },
+    "Vahiny": {
+      "genus": "Vahiny",
+      "parent": "Lithostrotia",
+      "etymology": "traveller",
+      "description": "Vahiny is an extinct genus of titanosaur sauropod dinosaur known from the Late Cretaceous of the Maevarano Formation, northwestern Madagascar. It contains a single species, Vahiny depereti.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "294729"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q18592184"
+        }
+      ],
+      "species": [
+        {
+          "name": "Vahiny depereti",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Maastrichtian"
+            ]
+          },
+          "location": {
+            "country": "MG",
+            "region": "Mahajanga",
+            "formation": "Maevarano",
+            "coordinates": [
+              -15.9,
+              46.583332
+            ]
+          },
+          "described": 2014,
+          "authors": "Curry Rogers and Wilson"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda",
+        "Neosauropoda",
+        "Macronaria",
+        "Titanosauriformes",
+        "Somphospondyli",
+        "Titanosauria",
+        "Lithostrotia"
+      ]
+    },
+    "Valdosaurus": {
+      "genus": "Valdosaurus",
+      "parent": "Dryosauridae",
+      "etymology": "Weald lizard",
+      "description": "Valdosaurus is a genus of bipedal herbivorous dryosaurid dinosaur known from the Early Cretaceous of the Isle of Wight and elsewhere in England. Originally its remains were believed to belong to Hypsilophodon. In 1889, Richard Lydekker assigned them to Camptosaurus, alongside a partial lower jaw, and applied the name Camptosaurus valdensis. In the 1970s, Peter Galton reassigned these remains to a new species of Dryosaurus, then to an entirely new genus and species, that being Valdosaurus proper. The type and only species of Valdosaurus, named by Galton, is V. canaliculatus.",
+      "diet": "herbivore",
+      "locomotion": "bipedal",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "38733"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q1617586"
+        },
+        {
+          "source": "gbif",
+          "id": "4823068"
+        },
+        {
+          "source": "eol",
+          "id": "47460132"
+        }
+      ],
+      "species": [
+        {
+          "name": "Valdosaurus canaliculatus",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Aptian"
+            ]
+          },
+          "location": {
+            "country": "GB",
+            "region": "England",
+            "formation": "Wessex",
+            "coordinates": [
+              50.630554,
+              -1.404167
+            ]
+          },
+          "holotype": {
+            "specimen_id": "BM R185",
+            "institution": "Natural History Museum, London"
+          },
+          "size": {
+            "length_m": 3,
+            "estimate": true
+          },
+          "described": 1977,
+          "authors": "Galton"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Ornithopoda",
+        "Clypeodonta",
+        "Iguanodontia",
+        "Dryomorpha",
+        "Dryosauridae"
+      ]
+    },
+    "Vallibonavenatrix": {
+      "genus": "Vallibonavenatrix",
+      "parent": "Baryonychinae",
+      "etymology": "Vallibona huntress",
+      "description": "Vallibonavenatrix is a genus of spinosaurid dinosaur from the Early Cretaceous (Barremian) Arcillas de Morella Formation of Castellón, Spain. The type and only species is Vallibonavenatrix cani, known from a partial skeleton.",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "397944"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q66614821"
+        },
+        {
+          "source": "gbif",
+          "id": "11116174"
+        }
+      ],
+      "species": [
+        {
+          "name": "Vallibonavenatrix cani",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Barremian"
+            ]
+          },
+          "location": {
+            "country": "ES",
+            "region": "Valenciana",
+            "formation": "Arcillas de Morella",
+            "coordinates": [
+              40.583359,
+              0.033417
+            ]
+          },
+          "described": 2019,
+          "authors": "Malafaia et al.",
+          "described_in": "malafaia2020"
+        }
+      ],
+      "references": [
+        {
+          "id": "malafaia2020",
+          "authors": "Malafaia, Elisabete; Gasulla, José Miguel; Escaso, Fernando; Narváez, Iván; Sanz, José Luis; Ortega, Francisco",
+          "year": 2020,
+          "title": "A new spinosaurid theropod (Dinosauria: Megalosauroidea) from the upper Barremian of Vallibona, Spain: Implications for spinosaurid diversity in the Early Cretaceous of the Iberian Peninsula",
+          "journal": "Cretaceous Research",
+          "volume": "106",
+          "publisher": "Elsevier BV",
+          "doi": "10.1016/j.cretres.2019.104221",
+          "url": "http://dx.doi.org/10.1016/j.cretres.2019.104221"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Megalosauroidea",
+        "Spinosauridae",
+        "Baryonychinae"
+      ]
+    },
+    "Variraptor": {
+      "genus": "Variraptor",
+      "parent": "Dromaeosauridae",
+      "pronunciation": {
+        "ipa": "/ˈværɪræptər/"
+      },
+      "description": "Variraptor is a possibly dubious and potentially chimaeric genus of dromaeosaurid theropod dinosaur from the Late Cretaceous of France.",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "65135"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q1193954"
+        },
+        {
+          "source": "gbif",
+          "id": "4822954"
+        },
+        {
+          "source": "eol",
+          "id": "4433574"
+        }
+      ],
+      "species": [
+        {
+          "name": "Variraptor mechinorum",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Maastrichtian"
+            ]
+          },
+          "location": {
+            "country": "FR",
+            "region": "Provence-Alpes-Côte d'Azur",
+            "coordinates": [
+              43.606697,
+              6.106141
+            ]
+          },
+          "described": 1998,
+          "authors": "Le Loeuff and Buffetaut"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Tetanurae",
+        "Avetheropoda",
+        "Coelurosauria",
+        "Maniraptora",
+        "Dromaeosauridae"
+      ]
+    },
+    "Vayuraptor": {
+      "genus": "Vayuraptor",
+      "parent": "Megaraptora",
+      "etymology": "wind thief",
+      "description": "Vayuraptor is a genus of basal coelurosaurian (possibly megaraptoran) theropod dinosaur that lived in the Early Cretaceous (Barremian) Sao Khua Formation of Thailand. The genus contains a single species, V. nongbualamphuensis, known from a partial skeleton.",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "387581"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q63981557"
+        },
+        {
+          "source": "gbif",
+          "id": "9967888"
+        }
+      ],
+      "species": [
+        {
+          "name": "Vayuraptor nongbualamphuensis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Barremian"
+            ]
+          },
+          "location": {
+            "country": "TH",
+            "region": "Nong Bua Lam Phu",
+            "formation": "Sao Khua",
+            "coordinates": [
+              16.9,
+              102.541115
+            ]
+          },
+          "described": 2019,
+          "authors": "Samathi et al.",
+          "described_in": "samathi2019"
+        }
+      ],
+      "references": [
+        {
+          "id": "samathi2019",
+          "authors": "Samathi, Adun; Chanthasit, Phornphen; Sander, Paul",
+          "year": 2019,
+          "title": "Two new basal coelurosaurian theropod dinosaurs from the Early Cretaceous Sao Khua Formation of Thailand",
+          "journal": "Acta Palaeontologica Polonica",
+          "volume": "64",
+          "publisher": "Polska Akademia Nauk Instytut Paleobiologii (Institute of Paleobiology, Polish Academy of Sciences)",
+          "doi": "10.4202/app.00540.2018",
+          "url": "http://dx.doi.org/10.4202/app.00540.2018"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Coelurosauria",
+        "Megaraptora"
+      ]
+    },
+    "Vectaerovenator": {
+      "genus": "Vectaerovenator",
+      "parent": "Tetanurae",
+      "etymology": "Isle of Wight air-filled hunter",
+      "description": "Vectaerovenator is a genus of tetanuran theropod from the Early Cretaceous period of what is now England (Lower Greensand Group; Ferruginous Sands). It contains one species, Vectaerovenator inopinatus; its holotype, consisting of the specimens IWCMS 2020.400, 2020.407, and 2019.84, comprises two anterior dorsal vertebrae, a cervical vertebra and a mid‐caudal vertebra from the late Aptian Ferruginous Sands of the Isle of Wight in southern England, discovered in 2019. Comparative anatomical analysis shows that this taxon shares homoplastic features with megalosauroids, carcharodontosaurs, and some coelurosaurs, and cannot be reliably placed beyond Tetanurae incertae sedis, but has enough autapomorphies that it can be considered a valid genus.",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "426826"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q24048659"
+        }
+      ],
+      "species": [
+        {
+          "name": "Vectaerovenator inopinatus",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Aptian"
+            ],
+            "from_ma": 119.57,
+            "to_ma": 113.2
+          },
+          "location": {
+            "country": "GB",
+            "region": "England",
+            "formation": "Ferruginous Sands",
+            "coordinates": [
+              50.622398,
+              -1.175
+            ]
+          },
+          "holotype": {
+            "specimen_id": "IWCMS 2020",
+            "institution": "Isle of Wight County Museum Service at Dinosaur Isle, Sandown, Isle of Wight"
+          },
+          "described": 2020,
+          "authors": "Barker et al.",
+          "described_in": "barker2020"
+        }
+      ],
+      "references": [
+        {
+          "id": "barker2020",
+          "authors": "Barker, Chris T.; Naish, Darren; Clarkin, Claire E.; Farrell, Paul; Hullmann, Gabriel; Lockyer, James; Schneider, Philipp; Ward, Robin K. C.; Gostling, Neil J.",
+          "year": 2020,
+          "title": "A highly pneumatic middle Cretaceous theropod from the British Lower Greensand",
+          "journal": "Papers in Palaeontology",
+          "volume": "6",
+          "issue": "4",
+          "pages": "661-679",
+          "publisher": "Wiley",
+          "doi": "10.1002/spp2.1338",
+          "url": "http://dx.doi.org/10.1002/spp2.1338"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Tetanurae"
+      ]
+    },
+    "Vectidromeus": {
+      "genus": "Vectidromeus",
+      "parent": "Hypsilophodontidae",
+      "etymology": "Isle of Wight runner",
+      "description": "Vectidromeus is an extinct genus of hypsilophodontid ornithopod dinosaur from the Early Cretaceous Wessex Formation of England. The genus contains a single species, V. insularis, known from a partial skeleton belonging to a juvenile individual.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "479383"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q122485311"
+        }
+      ],
+      "species": [
+        {
+          "name": "Vectidromeus insularis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Albian"
+            ]
+          },
+          "location": {
+            "country": "GB",
+            "coordinates": [
+              50.666668,
+              -1.333333
+            ]
+          },
+          "holotype": {
+            "specimen_id": "IWCMS 2023",
+            "institution": "Isle of Wight County Museum Service at Dinosaur Isle, Sandown, Isle of Wight"
+          },
+          "described": 2024,
+          "authors": "Longrich et al.",
+          "described_in": "longrich2024"
+        }
+      ],
+      "references": [
+        {
+          "id": "longrich2024",
+          "authors": "Longrich, Nicholas R.; Martill, David M.; Munt, Martin; Green, Mick; Penn, Mark; Smith, Shaun",
+          "year": 2024,
+          "title": "Vectidromeus insularis, a new hypsilophodontid dinosaur from the Lower Cretaceous Wessex Formation of the Isle of Wight, England",
+          "journal": "Cretaceous Research",
+          "volume": "154",
+          "publisher": "Elsevier BV",
+          "doi": "10.1016/j.cretres.2023.105707",
+          "url": "http://dx.doi.org/10.1016/j.cretres.2023.105707"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Ornithopoda",
+        "Clypeodonta",
+        "Hypsilophodontidae"
+      ]
+    },
+    "Vectipelta": {
+      "genus": "Vectipelta",
+      "parent": "Ankylosauria",
+      "etymology": "Isle of Wight shield",
+      "description": "Vectipelta is an extinct genus of ankylosaurian dinosaur recovered from the Early Cretaceous Wessex Formation of England. The genus contains a single species, V. barretti, known from a partial skeleton including several osteoderms. It was historically known as the \"Spearpoint ankylosaur\" prior to its description.",
+      "diet": "herbivore",
+      "appearance": {
+        "integument": "armored"
+      },
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "473894"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q119535184"
+        }
+      ],
+      "species": [
+        {
+          "name": "Vectipelta barretti",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Berriasian"
+            ]
+          },
+          "location": {
+            "country": "GB",
+            "region": "England",
+            "formation": "Wessex",
+            "coordinates": [
+              50.633999,
+              -1.418
+            ]
+          },
+          "described": 2023,
+          "authors": "Pond et al.",
+          "described_in": "pond2023"
+        }
+      ],
+      "references": [
+        {
+          "id": "pond2023",
+          "authors": "Pond, Stuart; Strachan, Sarah-Jane; Raven, Thomas J.; Simpson, Martin I.; Morgan, Kirsty; Maidment, Susannah C. R.",
+          "year": 2023,
+          "title": "<i>Vectipelta barretti</i>\n            , a new ankylosaurian dinosaur from the Lower Cretaceous Wessex Formation of the Isle of Wight, UK",
+          "journal": "Journal of Systematic Palaeontology",
+          "volume": "21",
+          "issue": "1",
+          "publisher": "Informa UK Limited",
+          "doi": "10.1080/14772019.2023.2210577",
+          "url": "http://dx.doi.org/10.1080/14772019.2023.2210577"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Thyreophora",
+        "Ankylosauria"
+      ]
+    },
+    "Vectiraptor": {
+      "genus": "Vectiraptor",
+      "parent": "Eudromaeosauria",
+      "etymology": "Isle of Wight thief",
+      "description": "Vectiraptor is a genus of dromaeosaurid dinosaur from the Barremian aged Wessex Formation of the United Kingdom. The type and only species is Vectiraptor greeni, known from associated dorsal vertebrae and a partial sacrum.",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "454784"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q110181348"
+        }
+      ],
+      "species": [
+        {
+          "name": "Vectiraptor greeni",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Barremian"
+            ]
+          },
+          "location": {
+            "country": "GB",
+            "region": "England",
+            "formation": "Wessex",
+            "coordinates": [
+              50.66,
+              -1.473889
+            ]
+          },
+          "described": 2022,
+          "authors": "Longrich et al.",
+          "described_in": "longrich2022"
+        }
+      ],
+      "references": [
+        {
+          "id": "longrich2022",
+          "authors": "Longrich, Nicholas R.; Martill, David M.; Jacobs, Megan L.",
+          "year": 2022,
+          "title": "A new dromaeosaurid dinosaur from the Wessex Formation (Lower Cretaceous, Barremian) of the Isle of Wight, and implications for European palaeobiogeography",
+          "journal": "Cretaceous Research",
+          "volume": "134",
+          "publisher": "Elsevier BV",
+          "doi": "10.1016/j.cretres.2021.105123",
+          "url": "http://dx.doi.org/10.1016/j.cretres.2021.105123"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Coelurosauria",
+        "Maniraptora",
+        "Paraves",
+        "Deinonychosauria",
+        "Dromaeosauridae",
+        "Eudromaeosauria"
+      ]
+    },
+    "Velafrons": {
+      "genus": "Velafrons",
+      "parent": "Corythosaurini",
+      "etymology": "sailed forehead",
+      "description": "Velafrons is a genus of lambeosaurine hadrosaurid dinosaur from the Late Cretaceous of Mexico. It is known from a mostly complete skull and partial skeleton of a juvenile individual, with a bony crest on the forehead. Its fossils were found in the late Campanian-aged Cerro del Pueblo Formation (about 73.5 million years ago), near Rincon Colorado, Coahuila. The type specimen is CPC-59, and the type species is V. coahuilensis.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "113861"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q134733"
+        },
+        {
+          "source": "gbif",
+          "id": "4965935"
+        },
+        {
+          "source": "eol",
+          "id": "4531812"
+        }
+      ],
+      "species": [
+        {
+          "name": "Velafrons coahuilensis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Campanian"
+            ],
+            "from_ma": 83.6,
+            "to_ma": 72.2
+          },
+          "location": {
+            "country": "MX",
+            "region": "Coahuila",
+            "formation": "Cerro del Pueblo",
+            "coordinates": [
+              25.5,
+              -101.400276
+            ]
+          },
+          "holotype": {
+            "specimen_id": "CPC-59",
+            "institution": "Colección Paleontológica de Coahuila, Museo del Desierto (MUDE), Saltillo"
+          },
+          "described": 2007,
+          "authors": "Gates et al.",
+          "described_in": "gates2007"
+        }
+      ],
+      "references": [
+        {
+          "id": "gates2007",
+          "authors": "Gates, Terry A.; Sampson, Scott D.; De Jesús, Carlos R. Delgado; Zanno, Lindsay E.; Eberth, David; Hernandez-Rivera, René; Martínez, Martha C. Aguillón; Kirkland, James I.",
+          "year": 2007,
+          "title": "<i>Velafrons coahuilensis</i>, a new lambeosaurine hadrosaurid (Dinosauria: Ornithopoda) from the late Campanian Cerro del Pueblo Formation, Coahuila, Mexico",
+          "journal": "Journal of Vertebrate Paleontology",
+          "volume": "27",
+          "issue": "4",
+          "pages": "917-930",
+          "publisher": "Informa UK Limited",
+          "doi": "10.1671/0272-4634(2007)27[917:vcanlh]2.0.co;2",
+          "url": "http://dx.doi.org/10.1671/0272-4634(2007)27[917:vcanlh]2.0.co;2"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Ornithopoda",
+        "Clypeodonta",
+        "Iguanodontia",
+        "Dryomorpha",
+        "Styracosterna",
+        "Hadrosauriformes",
+        "Hadrosauroidea",
+        "Hadrosauridae",
+        "Lambeosaurinae",
+        "Corythosaurini"
+      ]
+    },
+    "Velocipes": {
+      "genus": "Velocipes",
+      "parent": "Neotheropoda",
+      "etymology": "quick foot",
+      "description": "Velocipes is a genus of saurischian dinosaur from the Late Triassic that may have been a theropod. Its fossils were found in the Norian-aged Lissauer Breccia of southern Poland. Upon discovery, Velocipes was thought to have been a coelurosaur, but more recent studies have shown that Velocipes was probably a basal theropod or dinosauriform.",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "38519"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q2648713"
+        },
+        {
+          "source": "gbif",
+          "id": "4822870"
+        }
+      ],
+      "species": [
+        {
+          "name": "Velocipes guerichi",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Triassic"
+            ],
+            "stage": [
+              "Norian"
+            ]
+          },
+          "location": {
+            "country": "PL",
+            "region": "Opole",
+            "formation": "Lissauer Breccia",
+            "coordinates": [
+              50.775135,
+              18.420881
+            ]
+          },
+          "described": 1932,
+          "authors": "Huene"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda"
       ]
     },
     "Velociraptor": {
