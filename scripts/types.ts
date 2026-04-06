@@ -26,14 +26,16 @@ export type Holotype = {
  */
 export type Period = {
     /**
-     * Broad geological period name (e.g. "Cretaceous", "Jurassic").
+     * Broad geological period name(s) (e.g. ["Late Cretaceous"]).
+     * Multiple values indicate the taxon spans more than one period.
      */
-    name?: string;
+    name?: Array<string>;
 
     /**
-     * Geological stage within the period (e.g. "Maastrichtian").
+     * Geological stage(s) within the period (e.g. ["Maastrichtian"]).
+     * Multiple values indicate the taxon spans more than one stage.
      */
-    stage?: string;
+    stage?: Array<string>;
 
     /**
      * Start of the date range in millions of years ago. Must be >= to_ma.

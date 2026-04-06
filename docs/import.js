@@ -94,14 +94,17 @@ window.DataImport = (function ()
 
         if (results["Stage"] && !results["Period"])
         {
-            const period = window.OpenPaleo.getPeriodForStage(results["Stage"].value);
+            const stageValue = Array.isArray(results["Stage"].value)
+                ? results["Stage"].value[0]
+                : results["Stage"].value;
+            const period = window.OpenPaleo.getPeriodForStage(stageValue);
 
             if (period)
             {
                 results["Period"] = {
-                    value: period,
+                    value: [period],
                     source: results["Stage"].source,
-                    fieldType: "select",
+                    fieldType: "checkboxes",
                 };
             }
         }
@@ -2044,9 +2047,9 @@ window.DataImport = (function ()
             if (period)
             {
                 results["Period"] = {
-                    value: period,
+                    value: [period],
                     source: "PBDB",
-                    fieldType: "select",
+                    fieldType: "checkboxes",
                 };
             }
 
@@ -2055,9 +2058,9 @@ window.DataImport = (function ()
             if (stage)
             {
                 results["Stage"] = {
-                    value: stage,
+                    value: [stage],
                     source: "PBDB",
-                    fieldType: "select",
+                    fieldType: "checkboxes",
                 };
             }
         }
@@ -2170,9 +2173,9 @@ window.DataImport = (function ()
             if (period && !results["Period"])
             {
                 results["Period"] = {
-                    value: period,
+                    value: [period],
                     source: "Wikipedia",
-                    fieldType: "select",
+                    fieldType: "checkboxes",
                 };
             }
 
@@ -2181,9 +2184,9 @@ window.DataImport = (function ()
             if (stage && !results["Stage"])
             {
                 results["Stage"] = {
-                    value: stage,
+                    value: [stage],
                     source: "Wikipedia",
-                    fieldType: "select",
+                    fieldType: "checkboxes",
                 };
             }
         }
@@ -3641,9 +3644,9 @@ window.DataImport = (function ()
             if (period)
             {
                 results["Period"] = {
-                    value: period,
+                    value: [period],
                     source: "PBDB",
-                    fieldType: "select",
+                    fieldType: "checkboxes",
                 };
             }
 
@@ -3652,9 +3655,9 @@ window.DataImport = (function ()
             if (stage)
             {
                 results["Stage"] = {
-                    value: stage,
+                    value: [stage],
                     source: "PBDB",
-                    fieldType: "select",
+                    fieldType: "checkboxes",
                 };
             }
         }
@@ -3739,9 +3742,9 @@ window.DataImport = (function ()
             if (period && !results["Period"])
             {
                 results["Period"] = {
-                    value: period,
+                    value: [period],
                     source: "Wikipedia",
-                    fieldType: "select",
+                    fieldType: "checkboxes",
                 };
             }
 
@@ -3750,9 +3753,9 @@ window.DataImport = (function ()
             if (stage && !results["Stage"])
             {
                 results["Stage"] = {
-                    value: stage,
+                    value: [stage],
                     source: "Wikipedia",
-                    fieldType: "select",
+                    fieldType: "checkboxes",
                 };
             }
         }
@@ -3934,14 +3937,17 @@ window.DataImport = (function ()
 
         if (results["Stage"] && !results["Period"])
         {
-            const period = window.OpenPaleo.getPeriodForStage(results["Stage"].value);
+            const stageValue = Array.isArray(results["Stage"].value)
+                ? results["Stage"].value[0]
+                : results["Stage"].value;
+            const period = window.OpenPaleo.getPeriodForStage(stageValue);
 
             if (period)
             {
                 results["Period"] = {
-                    value: period,
+                    value: [period],
                     source: results["Stage"].source,
-                    fieldType: "select",
+                    fieldType: "checkboxes",
                 };
             }
         }

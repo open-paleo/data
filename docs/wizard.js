@@ -1436,11 +1436,18 @@
             {
                 if (field.filteredByPeriod)
                 {
-                    const period = values["Period"] ?? "";
+                    const selectedPeriods = values["Period"] ?? [];
 
-                    if (period)
+                    if (Array.isArray(selectedPeriods) && selectedPeriods.length > 0)
                     {
-                        return window.OpenPaleo.getStagesForPeriod(period);
+                        const allStages = [];
+
+                        for (const period of selectedPeriods)
+                        {
+                            allStages.push(...window.OpenPaleo.getStagesForPeriod(period));
+                        }
+
+                        return [...new Set(allStages)].sort();
                     }
 
                     return Object.keys(window.OpenPaleo.getSchemaValues("stages") ?? {}).sort();
@@ -1760,8 +1767,9 @@
     }
 
     /**
-     * Sets up period-to-stage filtering: when the Period dropdown changes,
-     * the Stage dropdown is repopulated with only matching stages.
+     * Sets up period-to-stage filtering: when any Period checkbox changes,
+     * the Stage checkbox group is rebuilt with stages matching the
+     * selected period(s).
      *
      * @param step - The step definition to search for a filteredByPeriod field.
      */
@@ -1769,44 +1777,78 @@
     {
         const stageField = step.fields.find((field) => field.filteredByPeriod);
 
-        if (stageField)
+        if (!stageField)
         {
-            const selectPeriod = stepContainer.querySelector("[data-header=\"Period\"]");
-            const selectStage = stepContainer.querySelector(`[data-header="${stageField.header}"]`);
+            return;
+        }
 
-            if (selectPeriod && selectStage)
+        const periodCheckboxes = stepContainer.querySelectorAll("input[data-header=\"Period\"]");
+        const stageGroup = stepContainer.querySelector(`[data-header="${stageField.header}"]`)?.closest(".checkbox-group");
+
+        if (periodCheckboxes.length === 0 || !stageGroup)
+        {
+            return;
+        }
+
+        /**
+         * Rebuilds the stage checkbox group for the currently selected period(s).
+         * Preserves any already-checked stages that remain valid.
+         */
+        function updateStages()
+        {
+            const selectedPeriods = Array
+                .from(periodCheckboxes)
+                .filter((checkbox) => checkbox.checked)
+                .map((checkbox) => checkbox.value);
+
+            const allStages = [];
+
+            for (const period of selectedPeriods)
             {
-                /**
-                 * Rebuilds the stage dropdown options for the currently selected period.
-                 */
-                function updateStages()
-                {
-                    const period = selectPeriod.value;
-                    const stages = period ? window.OpenPaleo.getStagesForPeriod(period) : [];
-                    const current = selectStage.value;
-
-                    selectStage.replaceChildren(createOption("", "-- Select --"));
-
-                    for (const stage of stages)
-                    {
-                        const option = createOption(stage, stage);
-
-                        if (stage === current)
-                        {
-                            option.selected = true;
-                        }
-
-                        selectStage.appendChild(option);
-                    }
-                }
-
-                selectPeriod.addEventListener("change", updateStages);
-
-                if (values["Period"])
-                {
-                    updateStages();
-                }
+                allStages.push(...window.OpenPaleo.getStagesForPeriod(period));
             }
+
+            const validStages = new Set(
+                selectedPeriods.length > 0
+                    ? allStages
+                    : Object.keys(window.OpenPaleo.getSchemaValues("stages") ?? {}),
+            );
+
+            const currentChecked = new Set(
+                Array.from(stageGroup.querySelectorAll("input[type=\"checkbox\"]"))
+                    .filter((checkbox) => checkbox.checked)
+                    .map((checkbox) => checkbox.value),
+            );
+
+            stageGroup.replaceChildren();
+
+            for (const stage of [...validStages].sort())
+            {
+                const label = document.createElement("label");
+                const checkbox = document.createElement("input");
+                checkbox.type = "checkbox";
+                checkbox.dataset.header = stageField.header;
+                checkbox.value = stage;
+
+                if (currentChecked.has(stage))
+                {
+                    checkbox.checked = true;
+                }
+
+                label.appendChild(checkbox);
+                label.append(` ${stage}`);
+                stageGroup.appendChild(label);
+            }
+        }
+
+        for (const checkbox of periodCheckboxes)
+        {
+            checkbox.addEventListener("change", updateStages);
+        }
+
+        if (Array.isArray(values["Period"]) && values["Period"].length > 0)
+        {
+            updateStages();
         }
     }
 
@@ -1949,7 +1991,7 @@
                 }
                 else if (field.type === "checkboxes")
                 {
-                    values[field.header] = current.split(", ");
+                    values[field.header] = Array.isArray(current) ? current : current.split(", ");
                 }
                 else
                 {

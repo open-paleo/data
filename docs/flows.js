@@ -53,8 +53,8 @@ window.Flows = (function ()
             {
                 name: "Time & place",
                 fields: [
-                    { header: "Period", type: "select", required: true, optionsKey: "periods" },
-                    { header: "Stage", type: "select", optionsKey: "stages", filteredByPeriod: true },
+                    { header: "Period", type: "checkboxes", required: true, optionsKey: "periods" },
+                    { header: "Stage", type: "checkboxes", optionsKey: "stages", filteredByPeriod: true },
                     { header: "Country", type: "search", required: true, optionsKey: "countries" },
                     { header: "Region", type: "text", placeholder: "e.g., Montana" },
                     { header: "Locality", type: "text", placeholder: "e.g., Fort Peck" },
@@ -115,8 +115,8 @@ window.Flows = (function ()
             {
                 name: "Time & place",
                 fields: [
-                    { header: "Period", type: "select", optionsKey: "periods" },
-                    { header: "Stage", type: "select", optionsKey: "stages", filteredByPeriod: true },
+                    { header: "Period", type: "checkboxes", optionsKey: "periods" },
+                    { header: "Stage", type: "checkboxes", optionsKey: "stages", filteredByPeriod: true },
                     { header: "Country", type: "search", optionsKey: "countries" },
                     { header: "Region", type: "text", placeholder: "e.g., Montana" },
                     { header: "Locality", type: "text", placeholder: "e.g., Fort Peck" },
@@ -204,8 +204,8 @@ window.Flows = (function ()
                     { header: "Species etymology", type: "text", currentKey: "species.etymology" },
                     { header: "Status", type: "select", optionsKey: "status", currentKey: "species.status" },
                     { header: "If synonym, synonym of", type: "text", required: true, currentKey: "species.synonym_of", showWhen: { field: "Status", value: "synonym" } },
-                    { header: "Period", type: "select", optionsKey: "periods", currentKey: "species.period.name" },
-                    { header: "Stage", type: "select", optionsKey: "stages", filteredByPeriod: true, currentKey: "species.period.stage" },
+                    { header: "Period", type: "checkboxes", optionsKey: "periods", currentKey: "species.period.name" },
+                    { header: "Stage", type: "checkboxes", optionsKey: "stages", filteredByPeriod: true, currentKey: "species.period.stage" },
                     { header: "Country", type: "search", optionsKey: "countries", currentKey: "species.location.country" },
                     { header: "Region", type: "text", currentKey: "species.location.region" },
                     { header: "Locality", type: "text", currentKey: "species.location.locality" },

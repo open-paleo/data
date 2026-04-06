@@ -167,6 +167,7 @@ const allowedIntegumentEvidence = new Set(schema.integument_evidence ?? []);
 const allowedPaleoenvironments = new Set(schema.paleoenvironments ?? []);
 const allowedIdentifierSources = new Set(schema.identifier_sources ?? []);
 const allowedCountries = new Set(Object.keys(schema.countries ?? {}));
+const allowedPeriods = new Set(schema.periods ?? []);
 const stages: Record<string, StageInfo> = schema.stages ?? {};
 
 const genusFiles = findYamlFiles(path.join(root, "genera"));
@@ -446,24 +447,42 @@ for (const [filePath, doc] of genusParsed)
         }
 
         const period = species.period;
+        const speciesLabel = species.name ?? "?";
 
-        if (period.stage && period.name)
+        if (Array.isArray(period.name))
         {
-            const stageInfo = stages[period.stage];
-
-            if (!stageInfo)
+            for (const periodName of period.name)
             {
-                checkError(
-                    "Stage-period agreement",
-                    filePath,
-                    `species '${species.name ?? "?"}': unknown stage '${period.stage}'`);
+                if (!allowedPeriods.has(periodName))
+                {
+                    checkError(
+                        "Stage-period agreement",
+                        filePath,
+                        `species '${speciesLabel}': unknown period '${periodName}'`);
+                }
             }
-            else if (stageInfo.period !== period.name)
+        }
+
+        if (Array.isArray(period.stage))
+        {
+            for (const stageName of period.stage)
             {
-                checkError(
-                    "Stage-period agreement",
-                    filePath,
-                    `species '${species.name ?? "?"}': stage '${period.stage}' belongs to '${stageInfo.period}', not '${period.name}'`);
+                const stageInfo = stages[stageName];
+
+                if (!stageInfo)
+                {
+                    checkError(
+                        "Stage-period agreement",
+                        filePath,
+                        `species '${speciesLabel}': unknown stage '${stageName}'`);
+                }
+                else if (Array.isArray(period.name) && !period.name.includes(stageInfo.period))
+                {
+                    checkError(
+                        "Stage-period agreement",
+                        filePath,
+                        `species '${speciesLabel}': stage '${stageName}' belongs to '${stageInfo.period}', not listed in period names`);
+                }
             }
         }
     }
@@ -714,45 +733,52 @@ for (const [filePath, doc] of genusParsed)
         }
 
         const speciesPeriod = species.period;
+        const speciesLabel = species.name ?? "?";
 
-        // Stage belongs to period (already checked in #9, but here check Ma range)
-        if (speciesPeriod.stage)
+        // Compute the union Ma range across all listed stages
+        if (Array.isArray(speciesPeriod.stage) && speciesPeriod.stage.length > 0)
         {
-            const stageInfo: StageInfo | undefined = stages[speciesPeriod.stage];
-            if (stageInfo)
+            const resolvedStages = speciesPeriod.stage
+                .map((stageName) => stages[stageName])
+                .filter((info): info is StageInfo => info !== undefined);
+
+            if (resolvedStages.length > 0)
             {
+                const unionFromMa = Math.max(...resolvedStages.map((info) => info.from_ma));
+                const unionToMa = Math.min(...resolvedStages.map((info) => info.to_ma));
+
                 // Check from_ma
                 if (speciesPeriod.from_ma !== undefined && speciesPeriod.from_ma !== null)
                 {
-                    if (typeof speciesPeriod.from_ma !== "number" || speciesPeriod.from_ma > stageInfo.from_ma || speciesPeriod.from_ma < stageInfo.to_ma)
+                    if (typeof speciesPeriod.from_ma !== "number" || speciesPeriod.from_ma > unionFromMa || speciesPeriod.from_ma < unionToMa)
                     {
                         checkError(
                             "Period consistency",
                             filePath,
-                            `species '${species.name ?? "?"}': from_ma ${speciesPeriod.from_ma} outside stage '${speciesPeriod.stage}' range (${stageInfo.from_ma}\u2013${stageInfo.to_ma} Ma)`);
+                            `species '${speciesLabel}': from_ma ${speciesPeriod.from_ma} outside combined stage range (${unionFromMa}\u2013${unionToMa} Ma)`);
                     }
                 }
 
                 // Check to_ma
                 if (speciesPeriod.to_ma !== undefined && speciesPeriod.to_ma !== null)
                 {
-                    if (typeof speciesPeriod.to_ma !== "number" || speciesPeriod.to_ma > stageInfo.from_ma || speciesPeriod.to_ma < stageInfo.to_ma)
+                    if (typeof speciesPeriod.to_ma !== "number" || speciesPeriod.to_ma > unionFromMa || speciesPeriod.to_ma < unionToMa)
                     {
                         checkError(
                             "Period consistency",
                             filePath,
-                            `species '${species.name ?? "?"}': to_ma ${speciesPeriod.to_ma} outside stage '${speciesPeriod.stage}' range (${stageInfo.from_ma}\u2013${stageInfo.to_ma} Ma)`);
+                            `species '${speciesLabel}': to_ma ${speciesPeriod.to_ma} outside combined stage range (${unionFromMa}\u2013${unionToMa} Ma)`);
                     }
                 }
+            }
 
-                // from_ma should be >= to_ma
-                if (typeof speciesPeriod.from_ma === "number" && typeof speciesPeriod.to_ma === "number" && speciesPeriod.from_ma < speciesPeriod.to_ma)
-                {
-                    checkError(
-                        "Period consistency",
-                        filePath,
-                        `species '${species.name ?? "?"}': from_ma (${speciesPeriod.from_ma}) must be >= to_ma (${speciesPeriod.to_ma})`);
-                }
+            // from_ma should be >= to_ma
+            if (typeof speciesPeriod.from_ma === "number" && typeof speciesPeriod.to_ma === "number" && speciesPeriod.from_ma < speciesPeriod.to_ma)
+            {
+                checkError(
+                    "Period consistency",
+                    filePath,
+                    `species '${speciesLabel}': from_ma (${speciesPeriod.from_ma}) must be >= to_ma (${speciesPeriod.to_ma})`);
             }
         }
     }

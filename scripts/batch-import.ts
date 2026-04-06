@@ -2183,12 +2183,12 @@ function toGenusYaml(enriched: EnrichedGenus, reference: Record<string, string> 
 
         if (enriched.period)
         {
-            period.name = enriched.period;
+            period.name = [enriched.period];
         }
 
         if (enriched.stage)
         {
-            period.stage = enriched.stage;
+            period.stage = [enriched.stage];
         }
 
         if (enriched.fromMa)
