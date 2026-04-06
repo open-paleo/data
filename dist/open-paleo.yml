@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-04-06T21:15:33.846Z
-  clade_count: 176
-  genus_count: 250
+  built_at: 2026-04-06T22:26:34.212Z
+  clade_count: 178
+  genus_count: 286
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.04"
@@ -85,6 +85,7 @@ tree:
                                   Oviraptorosauria:
                                     Oviraptoridae:
                                       Citipatinae: {}
+                                      Heyuanninae: {}
                                     Caudipterygidae: {}
                                   Avialae: {}
                                 Compsognathidae: {}
@@ -117,6 +118,7 @@ tree:
                                   Baryonychinae:
                                     Ceratosuchopsini: {}
                                 Megalosauria: {}
+                              Avetheropoda: {}
                             Ceratosauria:
                               Abelisauridae:
                                 Brachyrostra:
@@ -199,6 +201,7 @@ tree:
                                         Hadrosauridae:
                                           Hadrosaurinae:
                                             Brachylophosaurini: {}
+                                            Edmontosaurini: {}
                                           Lambeosaurinae:
                                             Corythosaurini: {}
                                             Parasaurolophini: {}
@@ -1761,6 +1764,30 @@ clades:
       - Iguanodontia
       - Dryomorpha
       - Dryosauridae
+  Edmontosaurini:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Dryomorpha
+      - Styracosterna
+      - Hadrosauriformes
+      - Hadrosauroidea
+      - Hadrosauridae
+      - Hadrosaurinae
+      - Edmontosaurini
   Elasmaria:
     taxonomy:
       - Life
@@ -2092,6 +2119,27 @@ clades:
       - Dinosauria
       - Saurischia
       - Herrerasauridae
+  Heyuanninae:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Oviraptorosauria
+      - Oviraptoridae
+      - Heyuanninae
   Hypsilophodontidae:
     taxonomy:
       - Life
@@ -4743,6 +4791,2178 @@ genera:
       - Styracosterna
       - Hadrosauriformes
       - Hadrosauridae
+  Serendipaceratops:
+    genus: Serendipaceratops
+    parent: Ceratopsia
+    etymology: serendipitous horned face
+    description: Serendipaceratops is a genus of herbivorous ornithischian dinosaur, possibly an ankylosaur, from the early Cretaceous Period of Australia. The type species, S. arthurcclarkei, was named in 2003.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "57097"
+      - source: wikidata
+        id: Q135287
+      - source: gbif
+        id: "4823258"
+      - source: eol
+        id: "4532069"
+    species:
+      - name: Serendipaceratops arthurcclarkei
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+          from_ma: 121.4
+          to_ma: 119.57
+        location:
+          country: AU
+          region: Victoria
+          formation: '"Wonthaggi"'
+          coordinates:
+            - -38.548332
+            - 145.457779
+        holotype:
+          specimen_id: NMV P186385
+          institution: Museums Victoria, Melbourne
+        described: 2003
+        authors: Rich and Vickers-Rich
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Cerapoda
+      - Marginocephalia
+      - Ceratopsia
+  Serikornis:
+    genus: Serikornis
+    parent: Paraves
+    description: Serikornis is a genus of small, feathered anchiornithid dinosaur from the Upper Jurassic Tiaojishan Formation of Liaoning, China. It is represented by the type species Serikornis sungei. Some researchers believe it is a junior synonym of Anchiornis.
+    diet: carnivore
+    appearance:
+      integument: feathered
+    identifiers:
+      - source: pbdb
+        id: "372484"
+      - source: wikidata
+        id: Q37789878
+      - source: eol
+        id: "52571640"
+    species:
+      - name: Serikornis sungei
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Oxfordian
+        location:
+          country: CN
+          region: Liaoning
+          formation: Tiaojishan
+          coordinates:
+            - 40.916668
+            - 119.650002
+        described: 2017
+        authors: Lefèvre et al.
+        described_in: lefèvre2017
+    references:
+      - id: lefèvre2017
+        authors: Lefèvre, Ulysse; Cau, Andrea; Cincotta, Aude; Hu, Dongyu; Chinsamy, Anusuya; Escuillié, François; Godefroit, Pascal
+        year: 2017
+        title: A new Jurassic theropod from China documents a transitional step in the macrostructure of feathers
+        journal: The Science of Nature
+        volume: "104"
+        issue: 9-10
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1007/s00114-017-1496-y
+        url: http://dx.doi.org/10.1007/s00114-017-1496-y
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Paraves
+  Shamosaurus:
+    genus: Shamosaurus
+    parent: Ankylosauridae
+    description: Shamosaurus is an extinct genus of herbivorous basal ankylosaurid ankylosaur from Early Cretaceous (Aptian to Albian stage) deposits of Höövör, Mongolia.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "52794"
+      - source: wikidata
+        id: Q139221
+      - source: gbif
+        id: "4823329"
+      - source: eol
+        id: "4530875"
+    species:
+      - name: Shamosaurus scutatus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Albian
+        location:
+          country: MN
+          region: Dornogov
+          formation: Dzunbain
+          coordinates:
+            - 43.883999
+            - 111.431
+        described: 1983
+        authors: Tumanova
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Thyreophora
+      - Ankylosauria
+      - Ankylosauridae
+  Shanag:
+    genus: Shanag
+    parent: Microraptorinae
+    description: Shanag is a genus of paravian theropod dinosaur from the Early Cretaceous Period of Mongolia. It may be a dromaeosaurid, but some researchers are skeptical of this classification. The type species is S. ashile.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "96499"
+      - source: wikidata
+        id: Q136254
+      - source: gbif
+        id: "4966329"
+      - source: eol
+        id: "4433594"
+    species:
+      - name: Shanag ashile
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Albian
+        location:
+          country: MN
+          region: Ovorkhangai
+          formation: Öösh
+          coordinates:
+            - 44.241501
+            - 102.733299
+        holotype:
+          specimen_id: IGM 100/1119
+          institution: Institute of Geology and Mineralogy, Mongolian Academy of Sciences, Ulaanbaatar
+        size:
+          length_m: 0.5
+          estimate: true
+        described: 2007
+        authors: Turner et al.
+        described_in: turner2007
+    references:
+      - id: turner2007
+        authors: TURNER, ALAN H.; HWANG, SUNNY H.; NORELL, MARK A.
+        year: 2007
+        title: A Small Derived Theropod from Öösh, Early Cretaceous, Baykhangor Mongolia
+        journal: American Museum Novitates
+        volume: "3557"
+        issue: "1"
+        publisher: American Museum of Natural History (BioOne sponsored)
+        doi: 10.1206/0003-0082(2007)3557[1:asdtfs]2.0.co;2
+        url: http://dx.doi.org/10.1206/0003-0082(2007)3557[1:asdtfs]2.0.co;2
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Paraves
+      - Deinonychosauria
+      - Dromaeosauridae
+      - Microraptorinae
+  Shantungosaurus:
+    genus: Shantungosaurus
+    parent: Edmontosaurini
+    description: Shantungosaurus is an extinct genus of very large herbivorous saurolophine hadrosaurid dinosaur found in the Late Cretaceous Wangshi Group of the Shandong Peninsula in China, containing a single species, Shantungosaurus giganteus. The stratigraphic interval of Shantungosaurus ranges from the top of the Xingezhuang Formation to the middle of the Hongtuya Formation, middle to late Campanian in age. Shantungosaurus is so far the largest hadrosauroid taxon in the world, with size estimates around 15–17 metres (49–56 ft) in length and 13–16 metric tons (14–18 short tons) in body mass.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "38776"
+      - source: wikidata
+        id: Q131158
+      - source: gbif
+        id: "4823307"
+      - source: eol
+        id: "4531765"
+    species:
+      - name: Shantungosaurus giganteus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: CN
+          region: Shanxi
+          formation: Huiquanpu
+          coordinates:
+            - 40.189999
+            - 114.0439
+        size:
+          length_m: 15
+          estimate: true
+        described: 1973
+        authors: Hu
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Dryomorpha
+      - Styracosterna
+      - Hadrosauriformes
+      - Hadrosauroidea
+      - Hadrosauridae
+      - Hadrosaurinae
+      - Edmontosaurini
+  Shanyangosaurus:
+    genus: Shanyangosaurus
+    parent: Avetheropoda
+    etymology: Shanyang lizard
+    description: Shanyangosaurus is a genus of theropod dinosaur found in Shaanxi, China, and known only from a partial sacrum, partial scapula, humeri, femur, tibia, metatarsals, and phalanges found in the Maastrichtian aged Shanyang Formation. The bones are reportedly hollow; this, along with other features of the femur and known foot bones, suggest it is a member of the coelurosauria, but a specific family cannot be determined without more material. Holtz et al. assigned Shanyangosaurus to Avetheropoda.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "68139"
+      - source: wikidata
+        id: Q994230
+      - source: gbif
+        id: "4967067"
+    species:
+      - name: Shanyangosaurus niupanggouensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: CN
+          region: Shaanxi
+          formation: Shanyang
+          coordinates:
+            - 33.65221
+            - 109.901367
+        holotype:
+          specimen_id: NWUV 1111
+          institution: Department of Geology, Northwest University, Xi'an, Shaanxi Province, China
+        described: 1996
+        authors: Xue et al.
+        described_in: xue1996
+    references:
+      - id: xue1996
+        authors: Xue, Tianhan; Zhang, Yunxiang; Bi, Xiangmei; Yue, Leping; Chen, Wanyu
+        year: 1996
+        title: The development and environmental changes of the intermontane basins in the Eastern part of Qinling Mountains
+        book: The development and environmental changes of the intermontane basins in the Eastern part of Qinling Mountains
+        publisher: Geological Publishing House, Beijing
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Tetanurae
+      - Avetheropoda
+  Shaochilong:
+    genus: Shaochilong
+    parent: Carcharodontosauridae
+    etymology: shark toothed dragon
+    description: Shaochilong is an extinct genus of tetanuran theropod dinosaurs from the Early Cretaceous (Barremian to Albian stages) Miaogou Formation of China, though a more restrictive suggestion from the Aptian to the Albian has been suggested based on faunal composition. It was usually described as a carcharodontosaurid, but other phylogenies have suggested a different position as a tyrannosauroid or as a member of polytomic allosauroid. The genus contains a single species, Shaochilong maortuensis, which was originally placed in the genus Chilantaisaurus as C. maortuensis, but was re-described and reclassified in 2009.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "161116"
+      - source: wikidata
+        id: Q18511107
+      - source: gbif
+        id: "8574806"
+    species:
+      - name: Shaochilong maortuensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Albian
+        location:
+          country: CN
+          region: Nei Mongol
+          formation: Miaogou
+          coordinates:
+            - 40.301338
+            - 105.943283
+        described: 2009
+        authors: Brusatte et al.
+        described_in: brusatte2009
+    references:
+      - id: brusatte2009
+        authors: Brusatte, Stephen L.; Benson, Roger B. J.; Chure, Daniel J.; Xu, Xing; Sullivan, Corwin; Hone, David W. E.
+        year: 2009
+        title: "The first definitive carcharodontosaurid (Dinosauria: Theropoda) from Asia and the delayed ascent of tyrannosaurids"
+        journal: Naturwissenschaften
+        volume: "96"
+        issue: "9"
+        pages: 1051-1058
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1007/s00114-009-0565-2
+        url: http://dx.doi.org/10.1007/s00114-009-0565-2
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Tetanurae
+      - Avetheropoda
+      - Carnosauria
+      - Carcharodontosauridae
+  Shenzhousaurus:
+    genus: Shenzhousaurus
+    parent: Ornithomimosauria
+    etymology: Shenzhou lizard
+    description: Shenzhousaurus is a genus of basal ornithomimosaurian theropod dinosaur from the Lower Cretaceous of China.The holotype (NGMC 97–4–002, National Geological Museum of China) was collected from near the bottom (fluvial beds) of the Yixian Formation (Aptian) at the Sihetun fossil site, Beipiao, western Liaoning Province. This specimen consists of a partial skeleton preserved on a sandstone slab in a "death pose," its head above the torso. The distal parts of the hindlimbs, distal portion of the tail, and the forelimbs (except for part of the right hand) and the pectoral girdle are missing. The head is crushed, exposing the left side obliquely.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "68333"
+      - source: wikidata
+        id: Q134103
+      - source: gbif
+        id: "4821517"
+      - source: eol
+        id: "52571975"
+    species:
+      - name: Shenzhousaurus orientalis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+        location:
+          country: CN
+          region: Liaoning
+          formation: Yixian
+          coordinates:
+            - 41.601398
+            - 120.8722
+        holotype:
+          specimen_id: NGMC 97-4-002
+          institution: National Geological Museum of China, Beijing
+        described: 2003
+        authors: Ji et al.
+        described_in: ji2003
+    references:
+      - id: ji2003
+        authors: JI, QIANG; NORELL, MARK A.; MAKOVICKY, PETER J.; GAO, KE-QIN; JI, SHU'AN; YUAN, CHONGXI
+        year: 2003
+        title: An Early Ostrich Dinosaur and Implications for Ornithomimosaur Phylogeny
+        journal: American Museum Novitates
+        volume: "3420"
+        issue: "1"
+        publisher: American Museum of Natural History (BioOne sponsored)
+        doi: 10.1206/0003-0082(2003)420<0001:aeodai>2.0.co;2
+        url: http://dx.doi.org/10.1206/0003-0082(2003)420<0001:aeodai>2.0.co;2
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Tetanurae
+      - Avetheropoda
+      - Coelurosauria
+      - Ornithomimosauria
+  Shidaisaurus:
+    genus: Shidaisaurus
+    parent: Metriacanthosauridae
+    description: Shidaisaurus is a genus of metriacanthosaurid dinosaur. Its fossil was found in early Middle Jurassic-age rocks of the Chuanjie Formation in Yunnan, China. It is known from a partial skeleton, holotype DML-LCA 9701-IV, found at the bottom of an assemblage of nine dinosaur individuals, lacking most of the tail vertebrae, ribs, pectoral girdle, and limb bones. Shidaisaurus was described in 2009 by Wu and colleagues. The type species is Shidaisaurus jinae. Generic name and specific name in combination refer to the Jin-Shidai ("Golden Age") Company that oversaw excavation and inspection of the Jurassic World Park near the site.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "143653"
+      - source: wikidata
+        id: Q1655352
+      - source: gbif
+        id: "4967085"
+      - source: eol
+        id: "39591194"
+    species:
+      - name: Shidaisaurus jinae
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Middle Jurassic
+          stage:
+            - Bajocian
+        location:
+          country: CN
+          region: Yunnan
+          formation: Chuanjie
+          coordinates:
+            - 24.9725
+            - 102.076111
+        holotype:
+          specimen_id: DML-LCA 9701-IV
+          institution: Lufeng Dinosaur Museum, Yunnan Province, China
+        described: 2009
+        authors: Wu et al.
+        described_in: wu2009
+    references:
+      - id: wu2009
+        authors: WU, Xiao‐chun; CURRIE, Philip J.; DONG, Zhiming; PAN, Shigang; WANG, Tao
+        year: 2009
+        title: A New Theropod Dinosaur from the Middle Jurassic of Lufeng, Yunnan, China
+        journal: Acta Geologica Sinica - English Edition
+        volume: "83"
+        issue: "1"
+        pages: 9-24
+        publisher: Wiley
+        doi: 10.1111/j.1755-6724.2009.00002.x
+        url: http://dx.doi.org/10.1111/j.1755-6724.2009.00002.x
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Allosauroidea
+      - Metriacanthosauridae
+  Shingopana:
+    genus: Shingopana
+    parent: Lithostrotia
+    etymology: wide neck
+    description: Shingopana is a genus of titanosaurian sauropod from the Upper Cretaceous (late Campanian-early Maastrichtian age) Galula Formation of Tanzania. It is known from only the type species, S. songwensis. Gorscak & O'Connor's phylogenetic testing suggest Shingopana is more closely related to the South American titanosaur family of Aeolosaurini than any of the titanosaurs found so far in North & South Africa.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "359110"
+      - source: wikidata
+        id: Q37979474
+    species:
+      - name: Shingopana songwensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+        location:
+          country: TZ
+          region: Mbeya
+          formation: Galula
+          coordinates:
+            - -8.933333
+            - 33.200001
+        holotype:
+          specimen_id: TZ-07
+          institution: Tanzanian National Museum, Dar es Salaam
+        described: 2017
+        authors: Gorscak et al.
+        described_in: gorscak2017
+    references:
+      - id: gorscak2017
+        authors: Gorscak, Eric; O'Connor, Patrick M.; Roberts, Eric M.; Stevens, Nancy J.
+        year: 2017
+        title: "The second titanosaurian (Dinosauria: Sauropoda) from the middle Cretaceous Galula Formation, southwestern Tanzania, with remarks on African titanosaurian diversity"
+        journal: Journal of Vertebrate Paleontology
+        volume: "37"
+        issue: "4"
+        pages: e1343250
+        publisher: Informa UK Limited
+        doi: 10.1080/02724634.2017.1343250
+        url: http://dx.doi.org/10.1080/02724634.2017.1343250
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
+      - Titanosauria
+      - Lithostrotia
+  Shishugounykus:
+    genus: Shishugounykus
+    parent: Alvarezsauria
+    etymology: Shishugou claw
+    description: Shishugounykus is a genus of basal alvarezsaurian dinosaur from the Shishugou Formation of Xinjiang, China. The type and only species is Shishugounykus inexpectus. The specific name refers to the unexpected discovery of another species of alvarezsaur from the Shishugou Formation (other alvarezsaurs from this formation include Haplocheirus and possibly Aorun). Its affinities to alvarezsaurs have subsequently been questioned.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "424325"
+      - source: wikidata
+        id: Q66438387
+      - source: eol
+        id: "57357595"
+    species:
+      - name: Shishugounykus inexpectus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Oxfordian
+        location:
+          country: CN
+          region: Xinjiang
+          formation: Shishugou
+          coordinates:
+            - 45.171223
+            - 88.9217
+        described: 2019
+        authors: Qin et al.
+        described_in: qin2019
+    references:
+      - id: qin2019
+        authors: Qin, Zichuan; Clark, James; Choiniere, Jonah; Xu, Xing
+        year: 2019
+        title: A new alvarezsaurian theropod from the Upper Jurassic Shishugou Formation of western China
+        journal: Scientific Reports
+        volume: "9"
+        issue: "1"
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/s41598-019-48148-7
+        url: http://dx.doi.org/10.1038/s41598-019-48148-7
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Alvarezsauria
+  Shixinggia:
+    genus: Shixinggia
+    parent: Heyuanninae
+    description: Shixinggia is a genus of oviraptorosaurian dinosaur from the Late Cretaceous period of Shixing County, Guangdong, China, for which it was named. While no skull was recovered, the specimen (BVP-112) is known from a fair amount of post-cranial material that shows it was a fairly derived oviraptorosaur (slightly more advanced than Nomingia), of superfamily Caenagnathoidea. Lü et al. (2003, 2005) describe it as an oviraptorid, but it could be a caenagnathid.
+    diet: omnivore
+    identifiers:
+      - source: pbdb
+        id: "87637"
+      - source: wikidata
+        id: Q136996
+      - source: gbif
+        id: "4966295"
+      - source: eol
+        id: "52570718"
+    species:
+      - name: Shixinggia oblita
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: CN
+          region: Guangdong
+          formation: Pingling
+          coordinates:
+            - 24.950001
+            - 114.066704
+        described: 2005
+        authors: Lü and Zhang
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Oviraptorosauria
+      - Oviraptoridae
+      - Heyuanninae
+  Shri:
+    genus: Shri
+    parent: Dromaeosauridae
+    etymology: Named after Palden Lhamo, a Buddhist deity
+    description: Shri is an extinct genus of small dromaeosaurid dinosaurs that lived in what is now Mongolia during the Late Cretaceous.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "431993"
+      - source: wikidata
+        id: Q2281983
+    species:
+      - name: Shri rapax
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+          from_ma: 83.6
+          to_ma: 72.2
+        location:
+          country: MN
+          region: Omnogov
+          formation: Baruungoyot
+          coordinates:
+            - 43.488609
+            - 101.145554
+        described: 2021
+        authors: Turner et al.
+        described_in: turner2021
+    references:
+      - id: turner2021
+        authors: Turner, Alan H.; Montanari, Shaena; Norell, Mark A.
+        year: 2021
+        title: A New Dromaeosaurid from the Late Cretaceous Khulsan Locality of Mongolia
+        journal: American Museum Novitates
+        volume: "2020"
+        issue: "3965"
+        publisher: American Museum of Natural History (BioOne sponsored)
+        doi: 10.1206/3965.1
+        url: http://dx.doi.org/10.1206/3965.1
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Tetanurae
+      - Avetheropoda
+      - Coelurosauria
+      - Maniraptora
+      - Dromaeosauridae
+  Shuangmiaosaurus:
+    genus: Shuangmiaosaurus
+    parent: Hadrosauroidea
+    description: Shuangmiaosaurus is a genus of herbivorous iguanodontian ornithopod dinosaur which lived in China during the Late Cretaceous Period, about 100 million years ago.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "84661"
+      - source: wikidata
+        id: Q28554416
+      - source: eol
+        id: "52570645"
+    species:
+      - name: Shuangmiaosaurus gilmorei
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Albian
+          from_ma: 106.3
+          to_ma: 100.5
+        location:
+          country: CN
+          region: Liaoning
+          formation: Sunjiawan
+          coordinates:
+            - 41.772778
+            - 120.792221
+        holotype:
+          specimen_id: LPM 0165
+          institution: Liaoning Paleontological Museum, Beipiao
+        described: 2003
+        authors: You et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Dryomorpha
+      - Styracosterna
+      - Hadrosauriformes
+      - Hadrosauroidea
+  Shunosaurus:
+    genus: Shunosaurus
+    parent: Eusauropoda
+    description: Shunosaurus is a genus of sauropod dinosaur from Late Jurassic (Oxfordian) beds in Sichuan Province in China, from 161 to 157 Million years ago. The name derives from "Shu", an ancient name for the Sichuan province.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "38660"
+      - source: wikidata
+        id: Q131404
+      - source: gbif
+        id: "4822736"
+      - source: eol
+        id: "52571979"
+    species:
+      - name: Shunosaurus lii
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Oxfordian
+        location:
+          country: CN
+          region: Sichuan
+          formation: Shaximiao
+          coordinates:
+            - 29.411388
+            - 104.852501
+        holotype:
+          specimen_id: V9065
+          institution: Institute of Vertebrate Paleontology and Paleoanthropology, Beijing
+        size:
+          length_m: 9.5
+          weight_kg: 3300
+          estimate: true
+        described: 1983
+        authors: Dong et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+  Shuvuuia:
+    genus: Shuvuuia
+    parent: Parvicursorinae
+    description: Shuvuuia is a genus of bird-like theropod dinosaur from the late Cretaceous period of Mongolia. It is a member of the family Alvarezsauridae, small coelurosaurian dinosaurs which are characterized by short but powerful forelimbs specialized for digging. The type (and only known) species is Shuvuuia deserti, or "desert bird". The name Shuvuuia is derived from the Mongolian word shuvuu (шувуу) meaning "bird".
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "66043"
+      - source: wikidata
+        id: Q134230
+      - source: gbif
+        id: "4822807"
+      - source: eol
+        id: "4433707"
+    species:
+      - name: Shuvuuia deserti
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+          from_ma: 83.6
+          to_ma: 72.2
+        location:
+          country: MN
+          region: Omnogov
+          formation: Djadokhta
+          coordinates:
+            - 43.664444
+            - 100.901947
+        holotype:
+          specimen_id: IGM 100/975
+          institution: Institute of Geology and Mineralogy, Mongolian Academy of Sciences, Ulaanbaatar
+        size:
+          length_m: 0.6
+          estimate: true
+        described: 1998
+        authors: Chiappe et al.
+        described_in: chiappe1998
+    references:
+      - id: chiappe1998
+        authors: Chiappe, Luis M.; Norell, Mark A.; Clark, James M.
+        year: 1998
+        title: The skull of a relative of the stem-group bird Mononykus
+        journal: Nature
+        volume: "392"
+        issue: "6673"
+        pages: 275-278
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/32642
+        url: http://dx.doi.org/10.1038/32642
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Alvarezsauria
+      - Alvarezsauroidea
+      - Alvarezsauridae
+      - Parvicursorinae
+  Siamodon:
+    genus: Siamodon
+    parent: Hadrosauriformes
+    etymology: Siam (Thailand) + odous (Greek, "tooth")
+    description: Siamodon is an extinct genus of iguanodontian ornithopod dinosaur from Early Cretaceous deposits of northeastern Thailand.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "295549"
+      - source: wikidata
+        id: Q20672152
+      - source: gbif
+        id: "162880136"
+      - source: eol
+        id: "47460230"
+    species:
+      - name: Siamodon nimngami
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+          from_ma: 121.4
+          to_ma: 113.2
+        location:
+          country: TH
+          region: Nakhon Ratchasima
+          formation: Khok Kruat
+          coordinates:
+            - 14.866667
+            - 102.733299
+        holotype:
+          specimen_id: PRC-4
+          institution: Paleontological Research and Education Centre, Maha Sarakham University, Kantarawichai
+        described: 2011
+        authors: Buffetaut and Suteethorn
+        described_in: buffetaut2011
+    references:
+      - id: buffetaut2011
+        authors: Buffetaut, Eric; Suteethorn, Varavudh
+        year: 2011
+        title: A new iguanodontian dinosaur from the Khok Kruat Formation (Early Cretaceous, Aptian) of northeastern Thailand
+        journal: Annales de Paléontologie
+        volume: "97"
+        issue: 1-2
+        pages: 51-62
+        publisher: Elsevier BV
+        doi: 10.1016/j.annpal.2011.08.001
+        url: http://dx.doi.org/10.1016/j.annpal.2011.08.001
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Cerapoda
+      - Ornithopoda
+      - Ankylopollexia
+      - Styracosterna
+      - Hadrosauriformes
+  Siamosaurus:
+    genus: Siamosaurus
+    parent: Spinosauridae
+    etymology: Siam lizard
+    description: Siamosaurus is a potentially dubious genus of spinosaurid dinosaur that lived in what is now Thailand and possibly China during the Early Cretaceous period (Barremian to Aptian) and is the first reported spinosaurid from Asia. It is confidently known only from tooth fossils; the first were found in the Sao Khua Formation, with more teeth later recovered from the younger Khok Kruat Formation. The only species Siamosaurus suteethorni, whose name honours Thai palaeontologist Varavudh Suteethorn, was formally described in 1986. In 2009, four teeth from China previously attributed to a pliosaur—under the species "Sinopliosaurus" fusuiensis—were identified as those of a spinosaurid, possibly Siamosaurus. It is yet to be determined if two partial spinosaurid skeletons from Thailand and an isolated tooth from Japan also belong to Siamosaurus.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "56418"
+      - source: wikidata
+        id: Q134636
+      - source: gbif
+        id: "4822932"
+    species:
+      - name: Siamosaurus suteethorni
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+        location:
+          country: TH
+          region: Khon Kaen
+          formation: Sao Khua
+          coordinates:
+            - 16.683332
+            - 102.25
+        described: 1986
+        authors: Buffetaut and Ingavat
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Tetanurae
+      - Megalosauroidea
+      - Spinosauridae
+  Siamotyrannus:
+    genus: Siamotyrannus
+    parent: Metriacanthosaurinae
+    etymology: Siamese tyrant
+    description: Siamotyrannus is a genus of possibly allosauroid theropod dinosaur from the Early Cretaceous Sao Khua Formation of Thailand.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "56420"
+      - source: wikidata
+        id: Q579201
+      - source: gbif
+        id: "4818252"
+      - source: eol
+        id: "4434355"
+    species:
+      - name: Siamotyrannus isanensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Barremian
+        location:
+          country: TH
+          region: Khon Kaen
+          formation: Sao Khua
+          coordinates:
+            - 16.700001
+            - 102.25
+        holotype:
+          specimen_id: PW9-1
+          institution: Bureau of Fossils Research and Geological Museum, Department of Mineral Resources, Ministry of Natural Resources and Environment, Ratchatewi, Bangkok
+        described: 1996
+        authors: Buffetaut et al.
+        described_in: buffetaut1996
+    references:
+      - id: buffetaut1996
+        authors: Buffetaut, Eric; Suteethorn, Varavudh; Tong, Haiyan
+        year: 1996
+        title: The earliest known tyrannosaur from the Lower Cretaceous of Thailand
+        journal: Nature
+        volume: "381"
+        issue: "6584"
+        pages: 689-691
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/381689a0
+        url: http://dx.doi.org/10.1038/381689a0
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Allosauroidea
+      - Metriacanthosauridae
+      - Metriacanthosaurinae
+  Siamraptor:
+    genus: Siamraptor
+    parent: Carcharodontosauria
+    description: Siamraptor is an extinct genus of carcharodontosaurian dinosaur, containing the single species S. suwati, known from the Khok Kruat Formation of Thailand. It is the first definitive named carcharodontosaurian species known from Southeast Asia.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "399171"
+      - source: wikidata
+        id: Q70326252
+      - source: eol
+        id: "60776602"
+    species:
+      - name: Siamraptor suwati
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+          from_ma: 121.4
+          to_ma: 113.2
+        location:
+          country: TH
+          region: Nakhon Ratchasima
+          formation: Khok Kruat
+          coordinates:
+            - 14.8873
+            - 101.973801
+        holotype:
+          specimen_id: NRRU-F01020008
+          institution: Nakhon Ratchasima Rajabhat University
+        described: 2019
+        authors: Chokchaloemwong et al.
+        described_in: chokchaloemwong2019
+    references:
+      - id: chokchaloemwong2019
+        authors: Chokchaloemwong, Duangsuda; Hattori, Soki; Cuesta, Elena; Jintasakul, Pratueng; Shibata, Masateru; Azuma, Yoichi
+        year: 2019
+        title: "A new carcharodontosaurian theropod (Dinosauria: Saurischia) from the Lower Cretaceous of Thailand"
+        journal: PLOS ONE
+        volume: "14"
+        issue: "10"
+        pages: e0222489
+        publisher: Public Library of Science (PLoS)
+        doi: 10.1371/journal.pone.0222489
+        url: http://dx.doi.org/10.1371/journal.pone.0222489
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Allosauroidea
+      - Carcharodontosauria
+  Siats:
+    genus: Siats
+    parent: Megaraptora
+    description: Siats is an extinct genus of large theropod dinosaurs known from the Late Cretaceous Cedar Mountain Formation (Mussentuchit Member) of Utah, United States. The genus contains a single species, Siats meekerorum. It was initially classified as a megaraptoran, a clade of large theropods with controversial relationships. Alternative positions within the Neovenatoridae, Allosauroidea, and Tyrannosauroidea have also been proposed.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "283700"
+      - source: wikidata
+        id: Q15221367
+      - source: gbif
+        id: "8618951"
+      - source: eol
+        id: "42333113"
+    species:
+      - name: Siats meekerorum
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Cenomanian
+          from_ma: 100.5
+          to_ma: 93.9
+        location:
+          country: US
+          region: Utah
+          formation: Cedar Mountain
+          coordinates:
+            - 38.900002
+            - -111.690002
+        holotype:
+          specimen_id: FMNH PR 2716
+          institution: Field Museum of Natural History, Chicago
+        described: 2013
+        authors: Zanno and Makovicky
+        described_in: zanno2013
+    references:
+      - id: zanno2013
+        authors: Zanno, Lindsay E.; Makovicky, Peter J.
+        year: 2013
+        title: Neovenatorid theropods are apex predators in the Late Cretaceous of North America
+        journal: Nature Communications
+        volume: "4"
+        issue: "1"
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/ncomms3827
+        url: http://dx.doi.org/10.1038/ncomms3827
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Megaraptora
+  Sibirotitan:
+    genus: Sibirotitan
+    parent: Somphospondyli
+    description: Sibirotitan is a genus of somphospondyl sauropod from the Early Cretaceous (Barremian age) Ilek Formation of Russia. The type and only species is S. astrosacralis.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "371005"
+      - source: wikidata
+        id: Q46995838
+      - source: gbif
+        id: "371005"
+      - source: eol
+        id: "60974181"
+    species:
+      - name: Sibirotitan astrosacralis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+        location:
+          country: RU
+          region: Kemerovo
+          formation: Ilek
+          coordinates:
+            - 55.903332
+            - 87.957779
+        holotype:
+          specimen_id: PM TGU 120/10-Sh1-22
+          institution: Paleontological Museum, Tomsk State University, Tomsk
+        described: 2018
+        authors: Averianov et al.
+        described_in: averianov2018
+    references:
+      - id: averianov2018
+        authors: Averianov, Alexander; Ivantsov, Stepan; Skutschas, Pavel; Faingertz, Alexey; Leshchinskiy, Sergey
+        year: 2018
+        title: A new sauropod dinosaur from the Lower Cretaceous Ilek Formation, Western Siberia, Russia
+        journal: Geobios
+        volume: "51"
+        issue: "1"
+        pages: 1-14
+        publisher: Elsevier BV
+        doi: 10.1016/j.geobios.2017.12.004
+        url: http://dx.doi.org/10.1016/j.geobios.2017.12.004
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
+  Sidersaura:
+    genus: Sidersaura
+    parent: Rebbachisauridae
+    etymology: star lizard
+    description: Sidersaura is an extinct monotypic genus of rebbachisaurid sauropod dinosaur from the Late Cretaceous Huincul Formation of Argentina. The genus contains a single species, S. marae, known from the remains of four individuals. Sidersaura represents one of the largest known rebbachisaurids.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "481295"
+      - source: wikidata
+        id: Q124099993
+    species:
+      - name: Sidersaura marae
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Turonian
+        location:
+          country: AR
+          region: Neuquén
+          formation: Huincul
+          coordinates:
+            - -39.319721
+            - -68.948059
+        described: 2024
+        authors: Lerzo et al.
+        described_in: lerzo2024
+    references:
+      - id: lerzo2024
+        authors: Lerzo, Lucas Nicolás; Gallina, Pablo Ariel; Canale, Juan Ignacio; Otero, Alejandro; Carballido, José Luis; Apesteguía, Sebastián; Makovicky, Peter Juraj
+        year: 2024
+        title: "The last of the oldies: a basal rebbachisaurid (Sauropoda, Diplodocoidea) from the early Late Cretaceous (Cenomanian–Turonian) of Patagonia, Argentina"
+        journal: Historical Biology
+        volume: "37"
+        issue: "2"
+        pages: 208-233
+        publisher: Informa UK Limited
+        doi: 10.1080/08912963.2023.2297914
+        url: http://dx.doi.org/10.1080/08912963.2023.2297914
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Diplodocoidea
+      - Diplodocimorpha
+      - Rebbachisauridae
+  Sierraceratops:
+    genus: Sierraceratops
+    parent: Chasmosaurinae
+    etymology: Sierra horned face
+    description: Sierraceratops is a genus of chasmosaurine ceratopsian from the Late Cretaceous Hall Lake Formation of New Mexico, United States. The genus contains a single species, Sierraceratops turneri, known from a partial skeleton discovered in 1997.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "444002"
+      - source: wikidata
+        id: Q108751474
+    species:
+      - name: Sierraceratops turneri
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: US
+          region: New Mexico
+          formation: Hall Lake
+          coordinates:
+            - 33.154167
+            - -107.192223
+        holotype:
+          specimen_id: NMMNH P-76870
+          institution: New Mexico Museum of Natural History and Science, Albuquerque
+        described: 2022
+        authors: Dalman et al.
+        described_in: dalman2022
+    references:
+      - id: dalman2022
+        authors: Dalman, Sebastian G.; Lucas, Spencer G.; Jasinski, Steven E.; Longrich, Nicholas R.
+        year: 2022
+        title: Sierraceratops turneri, a new chasmosaurine ceratopsid from the Hall Lake Formation (Upper Cretaceous) of south-central New Mexico
+        journal: Cretaceous Research
+        volume: "130"
+        publisher: Elsevier BV
+        doi: 10.1016/j.cretres.2021.105034
+        url: http://dx.doi.org/10.1016/j.cretres.2021.105034
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Marginocephalia
+      - Ceratopsia
+      - Ceratopsidae
+      - Chasmosaurinae
+  Siluosaurus:
+    genus: Siluosaurus
+    parent: Ornithopoda
+    description: Siluosaurus is a genus of ornithischian dinosaur from the Early Cretaceous (Barremian-Albian) Xinminbao Group of Gansu, China. It is based on the specimen IVPP V.11117 (1-2), which consists of two teeth. It is an obscure genus, with no papers doing more than mentioning it since it was described in 1997. The type species is S. zhanggiani.
+    etymology: Silu lizard
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "58881"
+      - source: wikidata
+        id: Q614519
+      - source: gbif
+        id: "4578174"
+    species:
+      - name: Siluosaurus sp.
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Albian
+        location:
+          country: CN
+          region: Gansu
+          formation: Zhonggou
+          coordinates:
+            - 41.575001
+            - 97.583336
+        described: 1997
+        authors: Dong
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Cerapoda
+      - Ornithopoda
+  Silutitan:
+    genus: Silutitan
+    parent: Euhelopodidae
+    etymology: Silk Road giant
+    description: Silutitan is a genus of euhelopodid sauropod dinosaur from the Early Cretaceous Shengjinkou Formation of Xinjiang, China. It contains only the type species, Silutitan sinensis.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "440880"
+      - source: wikidata
+        id: Q108068361
+      - source: gbif
+        id: "11148092"
+    species:
+      - name: Silutitan sinensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Valanginian
+          from_ma: 137.05
+          to_ma: 132.6
+        location:
+          country: CN
+          region: Xinjiang
+          formation: Shengjinkou
+          coordinates:
+            - 42.75
+            - 92.5
+        holotype:
+          specimen_id: IVPP V27874
+          institution: Institute of Vertebrate Paleontology and Paleoanthropology, Beijing
+        described: 2021
+        authors: Wang et al.
+        described_in: wang2021
+    references:
+      - id: wang2021
+        authors: Wang, Xiaolin; Bandeira, Kamila L. N.; Qiu, Rui; Jiang, Shunxing; Cheng, Xin; Ma, Yingxia; Kellner, Alexander W. A.
+        year: 2021
+        title: The first dinosaurs from the Early Cretaceous Hami Pterosaur Fauna, China
+        journal: Scientific Reports
+        volume: "11"
+        issue: "1"
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/s41598-021-94273-7
+        url: http://dx.doi.org/10.1038/s41598-021-94273-7
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
+      - Euhelopodidae
+  Silvisaurus:
+    genus: Silvisaurus
+    parent: Nodosauridae
+    description: Silvisaurus, from the Latin silva "woodland" and Greek sauros "lizard", is a nodosaurid ankylosaur from the Early to Late Cretaceous period. It is the only known dinosaur species named from terrestrial deposits in Kansas and was designated the official state land fossil in 2023.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "38828"
+      - source: wikidata
+        id: Q133169
+      - source: gbif
+        id: "4577468"
+      - source: eol
+        id: "4530924"
+    species:
+      - name: Silvisaurus condrayi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Albian
+          from_ma: 106.3
+          to_ma: 100.5
+        location:
+          country: US
+          region: Kansas
+          formation: Dakota
+          coordinates:
+            - 39.198002
+            - -97.454498
+        holotype:
+          specimen_id: UKMNH 10296
+          institution: University of Kansas Biodiversity Institute, Lawrence
+        size:
+          length_m: 4
+          estimate: true
+        described: 1960
+        authors: Eaton
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Thyreophora
+      - Ankylosauria
+      - Nodosauridae
+  Similicaudipteryx:
+    genus: Similicaudipteryx
+    parent: Caudipterygidae
+    description: Similicaudipteryx, meaning "similar to Caudipteryx" (which itself means "tail feather"), is a genus of theropod dinosaur of the family Caudipteridae.
+    diet: omnivore
+    identifiers:
+      - source: pbdb
+        id: "146461"
+      - source: wikidata
+        id: Q132745
+      - source: gbif
+        id: "4576843"
+      - source: eol
+        id: "47458537"
+    species:
+      - name: Similicaudipteryx yixianensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+          from_ma: 121.4
+          to_ma: 113.2
+        location:
+          country: CN
+          region: Liaoning
+          formation: Jiufotang
+          coordinates:
+            - 41.533611
+            - 121.2481
+        holotype:
+          specimen_id: IVPP V12556
+          institution: Institute of Vertebrate Paleontology and Paleoanthropology, Beijing
+        described: 2008
+        authors: He et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Oviraptorosauria
+      - Caudipterygidae
+  Sinankylosaurus:
+    genus: Sinankylosaurus
+    parent: Ankylosauria
+    etymology: Chinese fused lizard
+    description: Sinankylosaurus is a dubious dinosaur genus known from the Late Cretaceous Hongtuya Formation of China. The genus contains a single species, Sinankylosaurus zhuchengensis, known from a partial right ilium (a pelvic bone). This specimen was originally described as belonging to an ankylosaur, although later research has disputed this identification, noting the lack of anatomical characters uniting Sinankylosaurus with this group.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "424513"
+      - source: wikidata
+        id: Q98380891
+      - source: eol
+        id: "60971097"
+    species:
+      - name: Sinankylosaurus zhuchengensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+          from_ma: 83.6
+          to_ma: 72.2
+        location:
+          country: CN
+          region: Shandong
+          formation: Hongtuya
+          coordinates:
+            - 37.465832
+            - 120.984718
+        holotype:
+          specimen_id: ZJZ-183
+          institution: Zucheng Dinosaur Culture Research Center
+        described: 2020
+        authors: Wang et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Thyreophora
+      - Ankylosauria
+  Sinocalliopteryx:
+    genus: Sinocalliopteryx
+    parent: Compsognathidae
+    description: Sinocalliopteryx is a genus of carnivorous coelurosaurian theropod dinosaurs from the Lower Cretaceous Yixian Formation of China (Jianshangou Beds, dating to 124.6 Ma). While similar to the related Huaxiagnathus, Sinocalliopteryx were larger. In 2007, the type specimen was the largest known compsognathid exemplar, at 2.37 metres (7.8 ft) in length. In 2012, an even larger specimen was reported.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "98810"
+      - source: wikidata
+        id: Q133117
+      - source: gbif
+        id: "4966955"
+      - source: eol
+        id: "4433891"
+    species:
+      - name: Sinocalliopteryx gigas
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+        location:
+          country: CN
+          region: Liaoning
+          formation: Yixian
+          coordinates:
+            - 41.599007
+            - 120.840065
+        size:
+          length_m: 2.4
+          estimate: true
+        described: 2007
+        authors: Ji et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Compsognathidae
+  Sinocephale:
+    genus: Sinocephale
+    parent: Pachycephalosauridae
+    description: Sinocephale is a genus of pachycephalosaurid dinosaur that lived in what is now Inner Mongolia, China, during the Cretaceous period. The genus contains a single species, Sinocephale bexelli, which was originally named as a species of the genus Troodon in 1953, and later transferred to the genus Stegoceras in 1964. After decades of being considered dubious, it was re-evaluated in 2021 and recognised as a valid taxon, being given its own genus, Sinocephale. The original holotype was lost, with modern research conducted using rediscovered plaster casts.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "444047"
+      - source: wikidata
+        id: Q108686046
+    species:
+      - name: Sinocephale bexelli
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: CN
+          region: Nei Mongol
+          formation: Ulansuhai
+          coordinates:
+            - 41.433701
+            - 103.538498
+        described: 2021
+        authors: Evans et al.
+        described_in: evans2021
+    references:
+      - id: evans2021
+        authors: Evans, David C.; Brown, Caleb M.; You, Hailu; Campione, Nicolás E.
+        year: 2021
+        title: Description and revised diagnosis of Asia’s first recorded pachycephalosaurid, <i>Sinocephale bexelli</i> gen. nov., from the Upper Cretaceous of Inner Mongolia, China
+        journal: Canadian Journal of Earth Sciences
+        volume: "58"
+        issue: "10"
+        pages: 981-992
+        publisher: Canadian Science Publishing
+        doi: 10.1139/cjes-2020-0190
+        url: http://dx.doi.org/10.1139/cjes-2020-0190
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Marginocephalia
+      - Pachycephalosauria
+      - Pachycephalosauridae
+  Sinoceratops:
+    genus: Sinoceratops
+    parent: Centrosaurinae
+    etymology: Chinese horned face from Zhucheng
+    pronunciation:
+      ipa: /ˌsaɪnoʊˈsɛrətɒps/
+    description: Sinoceratops is an extinct genus of ceratopsian dinosaur that lived from 77.3 to 73.5 million years ago during the latter part of the Cretaceous Period in what is now Shandong province in China. It was named in 2010 by Xu Xing et al. for three skulls from Zhucheng, China. The name of the type species Sinoceratops zhuchengensis means "Chinese horned face from Zhucheng", after the location of its discovery. Sinoceratops was a medium-sized, averagely-built, ground-dwelling, quadrupedal herbivore. It could grow up to an estimated 5 metres (16 ft) in length and weigh up to 2 tonnes (2.0 long tons; 2.2 short tons).
+    diet: herbivore
+    locomotion: quadrupedal
+    identifiers:
+      - source: pbdb
+        id: "168664"
+      - source: wikidata
+        id: Q18915244
+      - source: gbif
+        id: "8601537"
+      - source: eol
+        id: "17924539"
+    species:
+      - name: Sinoceratops zhuchengensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+          from_ma: 83.6
+          to_ma: 72.2
+        location:
+          country: CN
+          region: Shandong
+          formation: Hongtuya
+          coordinates:
+            - 37.465832
+            - 120.984718
+        holotype:
+          specimen_id: ZCDM V0010
+          institution: Zhucheng Dinosaur Museum, Zhucheng, Shandong
+        described: 2010
+        authors: Xu et al.
+        described_in: xu2010
+    references:
+      - id: xu2010
+        authors: Xu, Xing; Wang, KeBai; Zhao, XiJin; Li, DunJing
+        year: 2010
+        title: First ceratopsid dinosaur from China and its biogeographical implications
+        journal: Chinese Science Bulletin
+        volume: "55"
+        issue: "16"
+        pages: 1631-1635
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1007/s11434-009-3614-5
+        url: http://dx.doi.org/10.1007/s11434-009-3614-5
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Marginocephalia
+      - Ceratopsia
+      - Ceratopsidae
+      - Centrosaurinae
+  Sinocoelurus:
+    genus: Sinocoelurus
+    parent: Tetanurae
+    etymology: Chinese hollow tail
+    description: Sinocoelurus is a genus of theropod dinosaur from the Oxfordian-?Tithonian-age Upper Jurassic Kyangyan Series of Sichuan, China. It is an obscure tooth taxon.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "38533"
+      - source: wikidata
+        id: Q871971
+      - source: gbif
+        id: "4822578"
+    species:
+      - name: Sinocoelurus fragilis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Tithonian
+        location:
+          country: CN
+          region: Sichuan
+          coordinates:
+            - 32.403481
+            - 105.805908
+        described: 1942
+        authors: Young
+        described_in: young1942
+    references:
+      - id: young1942
+        authors: Young, C. C.
+        year: 1942
+        title: Fossil Vertebrates from Kuangyuan, N. Szechuan, China<sup>*</sup>
+        journal: Bulletin of the Geological Society of China
+        volume: "22"
+        issue: 3-4
+        pages: 293-309
+        publisher: Wiley
+        doi: 10.1111/j.1755-6724.1942.mp223-4016.x
+        url: http://dx.doi.org/10.1111/j.1755-6724.1942.mp223-4016.x
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Tetanurae
+  Sinornithoides:
+    genus: Sinornithoides
+    parent: Troodontinae
+    etymology: Chinese bird form
+    description: Sinornithoides is a genus of troodontid theropod dinosaurs that lived during the Early Cretaceous (Aptian or Albian stage, around 113 million years ago) of Inner Mongolia, China. It contains only a single species, S. youngi. Sinornithoides measured approximately 1 metre (3.3 ft) long, and probably ate invertebrates and other small prey.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "58888"
+      - source: wikidata
+        id: Q134725
+      - source: gbif
+        id: "4822823"
+      - source: eol
+        id: "4433797"
+    species:
+      - name: Sinornithoides youngi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Albian
+        location:
+          country: CN
+          region: Gansu
+          formation: Zhonggou
+          coordinates:
+            - 41.575001
+            - 97.583336
+        holotype:
+          specimen_id: IVPP V9612
+          institution: Institute of Vertebrate Paleontology and Paleoanthropology, Beijing
+        described: 1994
+        authors: Russell and Dong
+        described_in: russell1993
+    references:
+      - id: russell1993
+        authors: Russell, Dale A.; Dong, Zhi-Ming
+        year: 1993
+        title: A nearly complete skeleton of a new troodontid dinosaur from the Early Cretaceous of the Ordos Basin, Inner Mongolia, People's Republic of China
+        journal: Canadian Journal of Earth Sciences
+        volume: "30"
+        issue: "10"
+        pages: 2163-2173
+        publisher: Canadian Science Publishing
+        doi: 10.1139/e93-187
+        url: http://dx.doi.org/10.1139/e93-187
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Paraves
+      - Deinonychosauria
+      - Troodontidae
+      - Troodontinae
+  Sinornithomimus:
+    genus: Sinornithomimus
+    parent: Ornithomimidae
+    description: Sinornithomimus is a genus of ornithomimid dinosaur that lived in the Late Cretaceous Ulansuhai Formation of Alshanzuo Banner, Inner Mongolia, northern China. The first remains were found in 1997 and described six years later in 2003 as the new genus and species Sinornithomimus dongi.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "68341"
+      - source: wikidata
+        id: Q132996
+      - source: gbif
+        id: "4822889"
+      - source: eol
+        id: "4433753"
+    species:
+      - name: Sinornithomimus dongi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Turonian
+          from_ma: 93.9
+          to_ma: 89.8
+        location:
+          country: CN
+          region: Nei Mongol
+          formation: Ulansuhai
+          coordinates:
+            - 41.28611
+            - 103.87722
+        holotype:
+          specimen_id: IVPP-V11797-10
+          institution: Institute of Vertebrate Paleontology and Paleoanthropology, Beijing
+        described: 2003
+        authors: Kobayashi and Lü
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptoriformes
+      - Arctometatarsalia
+      - Ornithomimosauria
+      - Ornithomimidae
+  Sinornithosaurus:
+    genus: Sinornithosaurus
+    parent: Microraptorinae
+    description: Sinornithosaurus is a genus of feathered dromaeosaurid dinosaur from the early Cretaceous Period (late Barremian) of the Yixian Formation in what is now China. It was the fifth non–avian feathered dinosaur genus discovered by 1999. The original specimen was collected from the Sihetun locality of western Liaoning. It was found in the Jianshangou beds of the Yixian Formation, dated to 124.5 million years ago. Additional specimens have been found in the younger Dawangzhangzi bed, dating to around 122 million years ago.
+    diet: carnivore
+    appearance:
+      integument: feathered
+    identifiers:
+      - source: pbdb
+        id: "68204"
+      - source: wikidata
+        id: Q131267
+      - source: gbif
+        id: "4822942"
+      - source: eol
+        id: "4433563"
+    species:
+      - name: Sinornithosaurus millenii
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+        location:
+          country: CN
+          region: Liaoning
+          formation: Yixian
+          coordinates:
+            - 41.601398
+            - 120.8722
+        holotype:
+          specimen_id: IVPP V12811
+          institution: Institute of Vertebrate Paleontology and Paleoanthropology, Beijing
+        size:
+          length_m: 2
+          estimate: true
+        described: 1999
+        authors: Xu et al.
+        described_in: xu1999
+    references:
+      - id: xu1999
+        authors: Xu, Xing; Wang, Xiao-Lin; Wu, Xiao-Chun
+        year: 1999
+        title: A dromaeosaurid dinosaur with a filamentous integument from the Yixian Formation of China
+        journal: Nature
+        volume: "401"
+        issue: "6750"
+        pages: 262-266
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/45769
+        url: http://dx.doi.org/10.1038/45769
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Paraves
+      - Deinonychosauria
+      - Dromaeosauridae
+      - Microraptorinae
   Sinosauropteryx:
     genus: Sinosauropteryx
     parent: Coelurosauria
