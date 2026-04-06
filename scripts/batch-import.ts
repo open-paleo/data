@@ -152,7 +152,9 @@ type Report = {
     timestamp: string;
     totalIntakeIssues: number;
     skippedAlreadyExists: number;
+    skippedAlreadyExistsNames: Array<string>;
     skippedNoParent: number;
+    skippedNoParentNames: Array<string>;
     generaProcessed: number;
     newCladesAdded: Array<string>;
     genera: Array<{
@@ -2400,11 +2402,15 @@ async function main(): Promise<void>
 
     const intakeIssues = fetchIntakeIssues();
 
+    const skippedAlreadyExistsNames = intakeIssues
+        .filter((issue) => existingGenera.has(issue.title.toLowerCase()))
+        .map((issue) => issue.title);
+
     const filtered = intakeIssues.filter(
         (issue) => !existingGenera.has(issue.title.toLowerCase()),
     );
 
-    const skippedAlreadyExists = intakeIssues.length - filtered.length;
+    const skippedAlreadyExists = skippedAlreadyExistsNames.length;
 
     console.log(`  After excluding existing: ${filtered.length}`);
 
@@ -2416,7 +2422,9 @@ async function main(): Promise<void>
         timestamp: new Date().toISOString(),
         totalIntakeIssues: intakeIssues.length,
         skippedAlreadyExists,
+        skippedAlreadyExistsNames,
         skippedNoParent: 0,
+        skippedNoParentNames: new Array<string>(),
         generaProcessed: 0,
         newCladesAdded: new Array<string>(),
         genera: new Array<Report["genera"][0]>(),
@@ -2485,6 +2493,7 @@ async function main(): Promise<void>
     console.log("\nEnriching genera...");
 
     let skippedNoParent = 0;
+    const skippedNoParentNames = new Array<string>();
 
     for (let index = 0; index < toProcess.length; index += batchSize)
     {
@@ -2508,6 +2517,7 @@ async function main(): Promise<void>
             if (!enriched.parentClade)
             {
                 skippedNoParent++;
+                skippedNoParentNames.push(enriched.name);
                 continue;
             }
 
@@ -2572,6 +2582,7 @@ async function main(): Promise<void>
     }
 
     report.skippedNoParent = skippedNoParent;
+    report.skippedNoParentNames = skippedNoParentNames;
 
     if (!dryRun)
     {
@@ -2600,7 +2611,19 @@ async function main(): Promise<void>
     console.log("\n=== Import Summary ===");
     console.log(`Total Intake issues: ${report.totalIntakeIssues}`);
     console.log(`Skipped (already exists): ${report.skippedAlreadyExists}`);
+
+    if (report.skippedAlreadyExistsNames.length > 0)
+    {
+        console.log(`  → ${report.skippedAlreadyExistsNames.join(", ")}`);
+    }
+
     console.log(`Skipped (no parent clade): ${report.skippedNoParent}`);
+
+    if (report.skippedNoParentNames.length > 0)
+    {
+        console.log(`  → ${report.skippedNoParentNames.join(", ")}`);
+    }
+
     console.log(`Genera processed: ${report.generaProcessed}`);
     console.log(`New clades added: ${report.newCladesAdded.length}`);
 

@@ -43,6 +43,12 @@ Read `staging/report.json`. Print a short summary to the user:
 - Number skipped (already existing or no parent)
 - Average field completion
 
+If any genera were skipped, list them by category so the user can process
+them manually or add labels to their intake issues:
+
+- **Already exists:** list the names from `skippedAlreadyExistsNames`
+- **No parent clade:** list the names from `skippedNoParentNames`
+
 Then list every genus with gaps (the `gaps` array in the report), grouped
 by gap type, so the user can see at a glance what data is missing.
 
