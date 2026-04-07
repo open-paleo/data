@@ -2206,7 +2206,7 @@ function toGenusYaml(enriched: EnrichedGenus, reference: Record<string, string> 
 
         if (enriched.countryCode)
         {
-            location.country = enriched.countryCode;
+            location.country = enriched.countryCode === "UK" ? "GB" : enriched.countryCode;
         }
 
         if (enriched.region)
