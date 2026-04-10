@@ -1,0 +1,53 @@
+genus: Coloradisaurus
+parent: Massospondylidae
+etymology: Los Colorados lizard
+description: Coloradisaurus is a genus of massospondylid sauropodomorph
+  dinosaur. It lived during the Late Triassic period (Norian stage) in what is
+  now La Rioja Province, Argentina. It is known from two specimens collected
+  from the Los Colorados Formation of the Ischigualasto-Villa Unión Basin.
+identifiers:
+  - source: pbdb
+    id: "68583"
+  - source: wikidata
+    id: Q2300979
+  - source: gbif
+    id: "4822655"
+  - source: eol
+    id: "4531209"
+species:
+  - name: Coloradisaurus brevis
+    status: valid
+    type_species: true
+    period:
+      name:
+        - Late Triassic
+      stage:
+        - Norian
+    location:
+      country: AR
+      region: La Rioja
+      formation: Los Colorados
+      coordinates:
+        - -29.733334
+        - -68.216667
+    holotype:
+      specimen_id: PVL 3967
+      institution: Colección de Paleontologia de Vertebrados de la Fundación Instituto
+        Miguel Lillo, Tucumán
+    size:
+      length_m: 4
+      estimate: true
+    described: 1978
+    authors: Bonaparte
+    described_in: bonaparte1978
+references:
+  - id: bonaparte1978
+    authors: Bonaparte, José F.
+    year: 1978
+    title: "Coloradisaurus brevis n.g. et n.sp. (Saurischia Prosauropoda), dinosaurio
+      Plateosauridae de la Formación Los Colorados, Triásico Superior de La Rioja,
+      Argentina"
+    journal: Ameghiniana
+    volume: "15"
+    issue: 3-4
+    pages: 327-332
