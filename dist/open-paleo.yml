@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-04-10T05:33:41.358Z
-  clade_count: 242
-  genus_count: 969
+  built_at: 2026-04-10T05:58:13.750Z
+  clade_count: 243
+  genus_count: 988
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.04"
@@ -199,7 +199,8 @@ tree:
                                           Diplodocidae:
                                             Diplodocinae: {}
                                             Apatosaurinae: {}
-                                          Dicraeosauridae: {}
+                                          Dicraeosauridae:
+                                            Dicraeosaurinae: {}
                                   Turiasauria: {}
                                   Cetiosauridae: {}
                               Lessemsauridae: {}
@@ -1950,6 +1951,30 @@ clades:
       - Diplodocimorpha
       - Flagellicaudata
       - Dicraeosauridae
+  Dicraeosaurinae:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Diplodocoidea
+      - Diplodocimorpha
+      - Flagellicaudata
+      - Dicraeosauridae
+      - Dicraeosaurinae
   Dinocephalia:
     description: |
       Dinocephalia is an extinct group of large therapsids from the Middle Permian. They were among the first large terrestrial vertebrates, with some members exceeding 3 meters in length. Dinocephalians included both herbivorous and carnivorous forms and are characterized by thickened skull bones, often interpreted as adaptations for head-butting behavior. The group went extinct at the end of the Capitanian stage.
@@ -5809,6 +5834,964 @@ genera:
       - Sauropoda
       - Macronaria
       - Brachiosauridae
+  Datonglong:
+    genus: Datonglong
+    parent: Hadrosauroidea
+    description: Datonglong is an extinct genus of herbivorous ornithopod dinosaur, belonging to the Hadrosauroidea, which lived in the Late Cretaceous period in present-day China. Its type species is Datonglong tianzhenensis.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "338860"
+      - source: wikidata
+        id: Q22580486
+      - source: eol
+        id: "47460262"
+    species:
+      - name: Datonglong tianzhenensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Cenomanian
+            - Campanian
+        location:
+          country: CN
+          region: Shanxi
+          formation: Huiquanpu
+          coordinates:
+            - 40.189999
+            - 114.0439
+        holotype:
+          specimen_id: SXMG V 00005
+          institution: Shanxi Museum of Geology, Taiyuan
+        described: 2016
+        authors: Xu et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Dryomorpha
+      - Styracosterna
+      - Hadrosauriformes
+      - Hadrosauroidea
+  Datousaurus:
+    genus: Datousaurus
+    parent: Eusauropoda
+    etymology: chieftain lizard
+    description: Datousaurus is a sauropod dinosaur from the Middle Jurassic Lower Shaximiao Formation in Sichuan province, China. It shared the local Middle Jurassic landscape with other sauropods such as Shunosaurus, Omeisaurus, and Protognathosaurus, the neornithischian Xiaosaurus, and the early stegosaur Huayangosaurus as well as the carnivorous Gasosaurus.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "52769"
+      - source: wikidata
+        id: Q139919
+      - source: gbif
+        id: "4822735"
+    species:
+      - name: Datousaurus bashanensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Middle Jurassic
+          stage:
+            - Bajocian
+            - Callovian
+        location:
+          country: CN
+          region: Sichuan
+          formation: Shaximiao
+          coordinates:
+            - 29.411388
+            - 104.852501
+        size:
+          length_m: 15
+          estimate: true
+        described: 1984
+        authors: Dong and Tang
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+  Daurlong:
+    genus: Daurlong
+    parent: Dromaeosauridae
+    etymology: Daur dragon
+    description: Daurlong is an extinct genus of dromaeosaurid dinosaur from the Early Cretaceous (Aptian) Longjiang Formation of China. The genus contains a single species, D. wangi, known from a nearly complete skeleton. Daurlong represents the first described occurrence of a preserved intestinal region in a theropod closely related to birds.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "470203"
+      - source: wikidata
+        id: Q115287977
+    species:
+      - name: Daurlong wangi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+        location:
+          country: CN
+          region: Inner Mongolia
+          formation: Longjiang
+          coordinates:
+            - 48.601112
+            - 123.980835
+        holotype:
+          specimen_id: IMMNH-PV00731
+          institution: Inner Mongolia Museum, Hohhot, Inner Mongolia, China
+        described: 2022
+        authors: Wang et al.
+        described_in: wang2022
+    references:
+      - id: wang2022
+        authors: Wang, Xuri; Cau, Andrea; Guo, Bin; Ma, Feimin; Qing, Gele; Liu, Yichuan
+        year: 2022
+        title: Intestinal preservation in a birdlike dinosaur supports conservatism in digestive canal evolution among theropods
+        journal: Scientific Reports
+        volume: "12"
+        issue: "1"
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/s41598-022-24602-x
+        url: http://dx.doi.org/10.1038/s41598-022-24602-x
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Tetanurae
+      - Avetheropoda
+      - Coelurosauria
+      - Maniraptora
+      - Dromaeosauridae
+  Daxiatitan:
+    genus: Daxiatitan
+    parent: Euhelopodidae
+    description: Daxiatitan is a genus of sauropod dinosaur known from the Lower Cretaceous of Gansu, China. Its type and only species is Daxiatitan binglingi. It is known from a single partial skeleton consisting of most of the neck and back vertebrae, two tail vertebrae, a shoulder blade, and a thigh bone. At the time of its discovery in 2008, Daxiatitan was regarded as potentially the largest known dinosaur from China.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "154995"
+      - source: wikidata
+        id: Q1654983
+    species:
+      - name: Daxiatitan binglingi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+        location:
+          country: CN
+          region: Gansu
+          formation: Hekou Group
+          coordinates:
+            - 35.728329
+            - 103.218102
+        described: 2008
+        authors: You et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
+      - Euhelopodidae
+  Deinocheirus:
+    genus: Deinocheirus
+    parent: Deinocheiridae
+    pronunciation:
+      ipa: /ˌdaɪnoʊˈkaɪrəs/
+      phonetic: DY-no-KY-rəs
+    description: Deinocheirus is a genus of large ornithomimosaur that lived during the Late Cretaceous around 70 million years ago. In 1965, a pair of large arms, shoulder girdles, and a few other bones of a new dinosaur were first discovered in the Nemegt Formation of Mongolia. In 1970, this specimen became the holotype of the only species within the genus, Deinocheirus mirificus; the genus name is Greek for "horrible hand". No further remains were discovered for almost fifty years, and its nature remained a mystery. Two more complete specimens were described in 2014, which shed light on many aspects of the animal. Parts of these new specimens had been looted from Mongolia some years before, but were repatriated in 2014.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "38551"
+      - source: wikidata
+        id: Q131142
+      - source: gbif
+        id: "4822646"
+      - source: eol
+        id: "47458683"
+    species:
+      - name: Deinocheirus mirificus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Cenomanian
+            - Maastrichtian
+        location:
+          country: MN
+          region: Omnogov
+          formation: Nemegt
+          coordinates:
+            - 43.566387
+            - 100.48278
+        holotype:
+          specimen_id: MPC-D 100/18
+          institution: Paleontological Center, Mongolian Academy of Sciences, Ulaanbaatar
+        size:
+          length_m: 11
+          weight_kg: 6400
+          hip_height_m: 4.4
+          estimate: true
+        described: 1969
+        authors: Kielan-Jaworowska
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptoriformes
+      - Arctometatarsalia
+      - Ornithomimosauria
+      - Deinocheiridae
+  Deinonychus:
+    genus: Deinonychus
+    parent: Eudromaeosauria
+    pronunciation:
+      ipa: /daɪˈnɒnɪkəs/
+    etymology: terrible claw
+    description: Deinonychus is a genus of dromaeosaurid theropod dinosaur with one described species, Deinonychus antirrhopus. This species could grow up to 3.4 meters (11 ft) long and lived during the Early and Late Cretaceous Period, about 115–93.9 million years ago. Fossils have been recovered from the U.S. states of Montana, Utah, Wyoming, and Oklahoma, in rocks of the Cloverly Formation and Antlers Formation.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "38562"
+      - source: wikidata
+        id: Q14405
+      - source: gbif
+        id: "4822953"
+      - source: eol
+        id: "4433581"
+    species:
+      - name: Deinonychus antirrhopus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+            - Late Cretaceous
+          stage:
+            - Berriasian
+            - Cenomanian
+        location:
+          country: US
+          region: Montana
+          formation: Cloverly
+          coordinates:
+            - 45.438999
+            - -108.162003
+        holotype:
+          specimen_id: YPM 5205
+          institution: Yale Peabody Museum of Natural History, New Haven
+        size:
+          length_m: 3.4
+          estimate: true
+        described: 1969
+        authors: Ostrom
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Paraves
+      - Deinonychosauria
+      - Dromaeosauridae
+      - Eudromaeosauria
+  Deltadromeus:
+    genus: Deltadromeus
+    parent: Noasauridae
+    etymology: river delta or change runner
+    description: Deltadromeus is an extinct genus of controversial theropod dinosaur that lived in present-day Morocco during the mid-Cretaceous period. It was described by American paleontologist Paul Sereno and colleagues in 1996. The genus contains a single species, D. agilis, named based on an incomplete postcranial skeleton, the holotype specimen. However, some fossils from the Bahariya Formation of Egypt that were formerly referred to the theropod Bahariasaurus have been suggested to belong to Deltadromeus. The holotype specimen of Deltadromeus was unearthed by a joint expedition by the University of Chicago and the Service Géologique du Maroc in Errachidia Province, eastern Morocco in rock layers coming from the Gara Sbaa Formation of the Kem Kem Beds. This indicates that these fossils date to the Cenomanian stage of the Cretaceous period, 100-95 million years ago.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "65366"
+      - source: wikidata
+        id: Q131629
+      - source: gbif
+        id: "4822964"
+    species:
+      - name: Deltadromeus agilis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Cenomanian
+        location:
+          country: MA
+          region: Drâa-Tafilalet
+          formation: Gara Sbaa
+          coordinates:
+            - 30.505667
+            - -4.836939
+        size:
+          length_m: 8.1
+          estimate: true
+        described: 1996
+        authors: Sereno et al.
+        described_in: sereno1996
+    references:
+      - id: sereno1996
+        authors: Sereno, Paul C.; Dutheil, Didier B.; Iarochene, M.; Larsson, Hans C. E.; Lyon, Gabrielle H.; Magwene, Paul M.; Sidor, Christian A.; Varricchio, David J.; Wilson, Jeffrey A.
+        year: 1996
+        title: Predatory Dinosaurs from the Sahara and Late Cretaceous Faunal Differentiation
+        journal: Science
+        volume: "272"
+        issue: "5264"
+        pages: 986-991
+        publisher: American Association for the Advancement of Science (AAAS)
+        doi: 10.1126/science.272.5264.986
+        url: http://dx.doi.org/10.1126/science.272.5264.986
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Ceratosauria
+      - Noasauridae
+  Demandasaurus:
+    genus: Demandasaurus
+    parent: Rebbachisaurinae
+    etymology: Demanda lizard
+    description: Demandasaurus is a genus of rebbachisaurid sauropod dinosaur from early Cretaceous (late Barremian — early Aptian stage) deposits of Spain. Demandasaurus is known from an incomplete but associated skeleton that includes cranial and postcranial remains. It was collected from the Castrillo de la Reina Formation in Burgos Province. It was first named by Fidel Torcida Fernández-Baldor, José Ignacio Canudo, Pedro Huerta, Diego Montero, Xabier Pereda Suberbiola, and Leonardo Salgado in 2011, and the type species is Demandasaurus darwini.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "202269"
+      - source: wikidata
+        id: Q1932503
+      - source: gbif
+        id: "8641972"
+    species:
+      - name: Demandasaurus darwini
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+        location:
+          country: ES
+          region: Castilla y Leon
+          formation: Castrillo de la Reina
+          coordinates:
+            - 42.018799
+            - -3.3976
+        holotype:
+          specimen_id: MDS-RVII,16
+          institution: Museo de Dinosaurios de Sallas de los Infantes, Salas de los Infantes, Burgos
+        described: 2011
+        authors: Torcida Fernández-Baldor et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Diplodocoidea
+      - Diplodocimorpha
+      - Rebbachisauridae
+      - Khebbashia
+      - Rebbachisaurinae
+  Diabloceratops:
+    genus: Diabloceratops
+    parent: Centrosaurinae
+    etymology: devil-horned face
+    pronunciation:
+      ipa: /daɪˌæbloʊˈsɛrətɒps/
+      phonetic: dy-AB-loh-SERR-ə-tops
+    description: Diabloceratops is an extinct genus of centrosaurine ceratopsian dinosaur that lived approximately 81.4-81 million years ago during the latter part of the Cretaceous Period in what is now Utah, in the United States. Diabloceratops was a medium-sized, moderately built, ground-dwelling, quadrupedal herbivore, that could grow up to an estimated 4.5 metres (15 ft) in length and 1.3 metric tons (1.4 short tons) in body mass. At the time of its discovery, it was the oldest-known ceratopsid, and first centrosaurine known from latitudes south of the U.S. state of Montana. The generic name Diabloceratops means "devil-horned face", coming from Diablo, Spanish for "devil", and ceratops, Latinized Greek for "horned face". The specific name honors Jeffrey Eaton, a paleontologist at Weber State University and long time friend of the lead author Jim Kirkland. Eaton had a big role in establishing the Grand Staircase-Escalante National Monument where the specimen was found. The type species, Diabloceratops eatoni, was named and described in 2010 by James Ian Kirkland and Donald DeBlieux.
+    diet: herbivore
+    locomotion: quadrupedal
+    identifiers:
+      - source: pbdb
+        id: "170568"
+      - source: wikidata
+        id: Q132291
+      - source: gbif
+        id: "8639502"
+      - source: eol
+        id: "17924298"
+    species:
+      - name: Diabloceratops eatoni
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+        location:
+          country: US
+          region: Utah
+          formation: Wahweap
+          coordinates:
+            - 37.178055
+            - -111.349167
+        holotype:
+          specimen_id: UMNH VP 16699
+          institution: Utah Museum of Natural History, Salt Lake City
+        described: 2010
+        authors: Kirkland and Deblieux
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Marginocephalia
+      - Ceratopsia
+      - Ceratopsidae
+      - Centrosaurinae
+  Diamantinasaurus:
+    genus: Diamantinasaurus
+    parent: Diamantinasauria
+    description: Diamantinasaurus is a genus of titanosaurian sauropod from Australia that lived during the early Late Cretaceous, about 94 million years ago. The type species of the genus is D. matildae, first described and named in 2009 by Scott Hocknull and colleagues based on fossil finds in the Winton Formation. Meaning "Diamantina lizard", the name is derived from the location of the nearby Diamantina River and the Greek word sauros, "lizard". The specific epithet is from the Australian song Waltzing Matilda, also the locality of the holotype and paratype. The known skeleton includes most of the forelimb, shoulder girdle, pelvis, hindlimb and ribs of the holotype, and one shoulder bone, a radius and some vertebrae of the paratype.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "148968"
+      - source: wikidata
+        id: Q132881
+      - source: gbif
+        id: "4822539"
+      - source: eol
+        id: "24179943"
+    species:
+      - name: Diamantinasaurus matildae
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Turonian
+        location:
+          country: AU
+          region: Queensland
+          formation: Winton
+          coordinates:
+            - -22.199722
+            - 142.52861
+        described: 2009
+        authors: Hocknull et al.
+        described_in: hocknull2009
+    references:
+      - id: hocknull2009
+        authors: Hocknull, Scott A.; White, Matt A.; Tischler, Travis R.; Cook, Alex G.; Calleja, Naomi D.; Sloan, Trish; Elliott, David A.
+        year: 2009
+        title: New Mid-Cretaceous (Latest Albian) Dinosaurs from Winton, Queensland, Australia
+        journal: PLoS ONE
+        volume: "4"
+        issue: "7"
+        pages: e6190
+        publisher: Public Library of Science (PLoS)
+        doi: 10.1371/journal.pone.0006190
+        url: http://dx.doi.org/10.1371/journal.pone.0006190
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
+      - Diamantinasauria
+  Diclonius:
+    genus: Diclonius
+    parent: Hadrosauridae
+    etymology: double sprout
+    description: Diclonius is a genus of dinosaur from the Late Cretaceous. It was a hadrosaur based solely on teeth. Its fossils were found in the Judith River Formation of Montana, northern US. The name is in reference to the method of tooth replacement, in which newly erupting replacement teeth could be in functional use at the same time as older, more worn teeth.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "53044"
+      - source: wikidata
+        id: Q3706988
+      - source: gbif
+        id: "4823299"
+      - source: eol
+        id: "10579397"
+    species:
+      - name: Diclonius pentagonus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+        location:
+          country: US
+          region: South Dakota
+          formation: Hell Creek
+          coordinates:
+            - 45.135834
+            - -102.497498
+        holotype:
+          specimen_id: AMNH 3972
+          institution: American Museum of Natural History, New York City
+        described: 1876
+        authors: Cope
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Cerapoda
+      - Ornithopoda
+      - Ankylopollexia
+      - Styracosterna
+      - Hadrosauriformes
+      - Hadrosauridae
+  Dicraeosaurus:
+    genus: Dicraeosaurus
+    parent: Dicraeosaurinae
+    description: Dicraeosaurus is a genus of diplodocoid sauropod dinosaur that lived in what is now Lindi Region, Tanzania during the late Jurassic period. The genus was named for the neural spines on the back of its neck. The first fossil was described by paleontologist Werner Janensch in 1914.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "38668"
+      - source: wikidata
+        id: Q131410
+      - source: gbif
+        id: "4822567"
+      - source: eol
+        id: "47459160"
+    species:
+      - name: Dicraeosaurus hansemanni
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Oxfordian
+            - Tithonian
+        location:
+          country: TZ
+          region: Lindi
+          formation: Tendaguru
+          coordinates:
+            - -9.696665
+            - 39.228008
+        holotype:
+          specimen_id: MB.R.4886
+          institution: Museum für Naturkunde Berlin, Berlin
+        size:
+          length_m: 20
+          estimate: true
+        described: 1914
+        authors: Janensch
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Diplodocoidea
+      - Diplodocimorpha
+      - Flagellicaudata
+      - Dicraeosauridae
+      - Dicraeosaurinae
+  Dilong:
+    genus: Dilong
+    parent: Tyrannosauroidea
+    etymology: emperor dragon
+    description: Dilong is a genus of small basal tyrannosauroid dinosaurs. The only species in the genus is Dilong paradoxus, known from the Lower Cretaceous Yixian Formation of East Asia (in what is now China). The discovery of Dilong was significant as it provided the first evidence of feathers in tyrannosaurs, something which had previously been suspected for the group.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "58835"
+      - source: wikidata
+        id: Q27439
+      - source: gbif
+        id: "4822625"
+      - source: eol
+        id: "4434389"
+    species:
+      - name: Dilong paradoxus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+        location:
+          country: CN
+          region: Liaoning
+          formation: Yixian
+          coordinates:
+            - 41.603352
+            - 120.913269
+        holotype:
+          specimen_id: IVPP V14243
+          institution: Institute of Vertebrate Paleontology and Paleoanthropology, Beijing
+        described: 2004
+        authors: Xu et al.
+        described_in: xu2004
+    references:
+      - id: xu2004
+        authors: Xu, Xing; Norell, Mark A.; Kuang, Xuewen; Wang, Xiaolin; Zhao, Qi; Jia, Chengkai
+        year: 2004
+        title: Basal tyrannosauroids from China and evidence for protofeathers in tyrannosauroids
+        journal: Nature
+        volume: "431"
+        issue: "7009"
+        pages: 680-684
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/nature02855
+        url: http://dx.doi.org/10.1038/nature02855
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Tyrannosauroidea
+  Dilophosaurus:
+    genus: Dilophosaurus
+    parent: Neotheropoda
+    etymology: two-crested lizard
+    pronunciation:
+      ipa: /daɪˌloʊfəˈsɔːrəs, -foʊ-/
+      phonetic: dy-LOH-fə-SOR-əs, -⁠foh-
+    description: Dilophosaurus is a genus of theropod dinosaurs that lived in what is now North America during the Early Jurassic, about 186 million years ago. Three skeletons were discovered in northern Arizona in 1940, and the two best preserved were collected in 1942. The most complete specimen became the holotype of a new species in the genus Megalosaurus, named M. wetherilli by Samuel P. Welles in 1954. Welles found a larger skeleton in the same region belonging to the same species in 1964. Realizing it bore crests on its skull, he assigned the species to the new genus Dilophosaurus in 1970, as Dilophosaurus wetherilli. The genus name means "two-crested lizard", and the species name honors John Wetherill, an explorer and amateur archeologist. Further specimens have since been found, including an infant. Fossil footprints have also been attributed to the animal, including resting traces. Another species, Dilophosaurus sinensis from China, was named in 1993, but was later found to belong to the genus Sinosaurus.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "38522"
+      - source: wikidata
+        id: Q271710
+      - source: gbif
+        id: "4822817"
+      - source: eol
+        id: "4531466"
+    species:
+      - name: Dilophosaurus wetherilli
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Jurassic
+          stage:
+            - Pliensbachian
+        location:
+          country: US
+          region: Arizona
+          formation: Kayenta
+          coordinates:
+            - 36.145279
+            - -110.32
+        holotype:
+          specimen_id: UCMP 37302
+          institution: University of California Museum of Paleontology, Berkeley
+        size:
+          length_m: 7
+          weight_kg: 400
+          estimate: true
+        described: 1970
+        authors: Welles
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+  Diluvicursor:
+    genus: Diluvicursor
+    parent: Elasmaria
+    etymology: flood runner
+    description: Diluvicursor is a genus of small ornithischian from the Lower Albian (Early Cretaceous) of Australia. It is known from one species, the type species D. pickeringi. The two known specimens, a vertebra and a partial juvenile postcranium discovered in 2005 from the Eumeralla Formation, are known, and they were named in early 2018.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "372639"
+      - source: wikidata
+        id: Q47233945
+      - source: eol
+        id: "53424233"
+    species:
+      - name: Diluvicursor pickeringi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Albian
+        location:
+          country: AU
+          region: Victoria
+          formation: Eumeralla
+          coordinates:
+            - -38.853889
+            - 143.546112
+        holotype:
+          specimen_id: NMV P221080
+          institution: Museums Victoria, Melbourne
+        described: 2018
+        authors: Herne et al.
+        described_in: herne2018
+    references:
+      - id: herne2018
+        authors: Herne, Matthew C.; Tait, Alan M.; Weisbecker, Vera; Hall, Michael; Nair, Jay P.; Cleeland, Michael; Salisbury, Steven W.
+        year: 2018
+        title: A new small-bodied ornithopod (Dinosauria, Ornithischia) from a deep, high-energy Early Cretaceous river of the Australian–Antarctic rift system
+        journal: PeerJ
+        volume: "5"
+        pages: e4113
+        publisher: PeerJ
+        doi: 10.7717/peerj.4113
+        url: http://dx.doi.org/10.7717/peerj.4113
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Elasmaria
+  Dineobellator:
+    genus: Dineobellator
+    parent: Velociraptorinae
+    pronunciation:
+      ipa: /dɪˌneɪoʊbəˈleɪtər/
+    description: Dineobellator is a genus of dromaeosaurid theropod dinosaur from the Late Cretaceous (Maastrichtian age) Ojo Alamo Formation (Naashoibito Member) of New Mexico, United States. The genus contains a single species, Dineobellator notohesperus, known from a partial skeleton.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "413090"
+      - source: wikidata
+        id: Q88688924
+      - source: gbif
+        id: "11185894"
+      - source: eol
+        id: "60973943"
+    species:
+      - name: Dineobellator notohesperus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: US
+          region: New Mexico
+          formation: Ojo Alamo
+          coordinates:
+            - 36.343899
+            - -108.066399
+        holotype:
+          specimen_id: SMP VP-2430
+          institution: State Museum of Pennsylvania, Harrisburg
+        described: 2020
+        authors: Jasinski et al.
+        described_in: jasinski2020
+    references:
+      - id: jasinski2020
+        authors: Jasinski, Steven E.; Sullivan, Robert M.; Dodson, Peter
+        year: 2020
+        title: New Dromaeosaurid Dinosaur (Theropoda, Dromaeosauridae) from New Mexico and Biodiversity of Dromaeosaurids at the end of the Cretaceous
+        journal: Scientific Reports
+        volume: "10"
+        issue: "1"
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/s41598-020-61480-7
+        url: http://dx.doi.org/10.1038/s41598-020-61480-7
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Paraves
+      - Deinonychosauria
+      - Dromaeosauridae
+      - Eudromaeosauria
+      - Velociraptorinae
   Diplodocus:
     genus: Diplodocus
     parent: Diplodocidae
@@ -5917,6 +6900,154 @@ genera:
       - Sauropodomorpha
       - Sauropoda
       - Diplodocidae
+  Diplotomodon:
+    genus: Diplotomodon
+    parent: Tyrannosauroidea
+    etymology: double cutting tooth
+    description: Diplotomodon is a dubious genus of theropod dinosaur, from New Jersey. It was possibly a member of the Tyrannosauroidea, the clade that also contains Tyrannosaurus.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "68321"
+      - source: wikidata
+        id: Q514344
+      - source: gbif
+        id: "4822967"
+    species:
+      - name: Diplotomodon sp.
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+        holotype:
+          specimen_id: ANSP 9680
+          institution: Academy of Natural Sciences, Philadelphia
+        described: 1868
+        authors: Leidy
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Tyrannosauroidea
+  Diuqin:
+    genus: Diuqin
+    parent: Unenlagiinae
+    etymology: bird of prey
+    description: Diuqin is an extinct genus of unenlagiine theropod dinosaurs from the Late Cretaceous (Santonian) Bajo de la Carpa Formation of Argentina. The genus contains a single species, Diuqin lechiguanae, known from a humerus and fragmentary vertebrae.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "492469"
+      - source: wikidata
+        id: Q126640833
+    species:
+      - name: Diuqin lechiguanae
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Santonian
+        location:
+          country: AR
+          region: Neuquén
+          formation: Bajo de la Carpa
+          coordinates:
+            - -38.556667
+            - -68.686386
+        described: 2024
+        authors: Porfiri et al.
+        described_in: porfiri2024
+    references:
+      - id: porfiri2024
+        authors: Porfiri, Juan D.; Baiano, Mattia A.; dos Santos, Domenica D.; Gianechini, Federico A.; Pittman, Michael; Lamanna, Matthew C.
+        year: 2024
+        title: "Diuqin lechiguanae gen. et sp. nov., a new unenlagiine (Theropoda: Paraves) from the Bajo de la Carpa Formation (Neuquén Group, Upper Cretaceous) of Neuquén Province, Patagonia, Argentina"
+        journal: BMC Ecology and Evolution
+        volume: "24"
+        issue: "1"
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1186/s12862-024-02247-w
+        url: http://dx.doi.org/10.1186/s12862-024-02247-w
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Paraves
+      - Deinonychosauria
+      - Dromaeosauridae
+      - Unenlagiinae
+  Dolichosuchus:
+    genus: Dolichosuchus
+    parent: Ceratosauria
+    etymology: long crocodile
+    description: Dolichosuchus is the name given to a genus of dinosaur from the Triassic. It was originally classified in the disused family Hallopodidae, but has since been reclassified as a coelophysoid. A single fossil (consisting of a single lower leg bone, or tibia) was found in Germany (specimen NHMUK PV OR 38058). Since only one bone was discovered, the genus is considered a nomen dubium. Some scientists have noted that the tibia closely resembles those of Liliensternus and Dilophosaurus.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "56375"
+      - source: wikidata
+        id: Q1235583
+      - source: gbif
+        id: "4818418"
+    species:
+      - name: Dolichosuchus sp.
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Triassic
+          stage:
+            - Norian
+        location:
+          country: DE
+          region: Baden-Württenburg
+          formation: Löwenstein
+          coordinates:
+            - 48.744446
+            - 9.131944
+        described: 1932
+        authors: Huene
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Ceratosauria
   Dongbeititan:
     genus: Dongbeititan
     parent: Somphospondyli
