@@ -1,0 +1,53 @@
+genus: Gobisaurus
+parent: Ankylosauridae
+description: Gobisaurus is an extinct genus of herbivorous basal ankylosaurid
+  ankylosaur from the Lower Cretaceous of China (Nei Mongol Zizhiqu). The genus
+  is monotypic, containing only the species Gobisaurus domoculus.
+diet: herbivore
+identifiers:
+  - source: pbdb
+    id: "84234"
+  - source: wikidata
+    id: Q134952
+  - source: gbif
+    id: "4576061"
+  - source: eol
+    id: "4530843"
+species:
+  - name: Gobisaurus domoculus
+    status: valid
+    type_species: true
+    period:
+      name:
+        - Early Cretaceous
+      stage:
+        - Albian
+    location:
+      country: CN
+      region: Nei Mongol
+      formation: Miaogou
+      coordinates:
+        - 40.301338
+        - 105.943283
+    holotype:
+      specimen_id: IVPP V12563
+      institution: Institute of Vertebrate Paleontology and Paleoanthropology, Beijing
+    size:
+      length_m: 5
+      estimate: true
+    described: 2001
+    authors: Vickaryous et al.
+    described_in: vickaryous2001
+references:
+  - id: vickaryous2001
+    authors: Vickaryous, Matthew K; Russell, Anthony P; Currie, Philip J; Zhao, Xi-Jin
+    year: 2001
+    title: "A new ankylosaurid (Dinosauria: Ankylosauria) from the Lower Cretaceous
+      of China, with comments on ankylosaurian relationships"
+    journal: Canadian Journal of Earth Sciences
+    volume: "38"
+    issue: "12"
+    pages: 1767-1780
+    publisher: Canadian Science Publishing
+    doi: 10.1139/e01-051
+    url: http://dx.doi.org/10.1139/e01-051
