@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-04-09T21:47:40.691Z
-  clade_count: 234
-  genus_count: 786
+  built_at: 2026-04-10T04:17:58.019Z
+  clade_count: 239
+  genus_count: 882
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.04"
@@ -67,6 +67,7 @@ tree:
                                       Daspletosaurini: {}
                                       Teratophoneini: {}
                                       Alioramini: {}
+                                    Albertosaurinae: {}
                                   Proceratosauridae: {}
                                 Maniraptora:
                                   Paraves:
@@ -90,7 +91,8 @@ tree:
                                       Citipatinae: {}
                                       Heyuanninae: {}
                                     Caudipterygidae: {}
-                                    Caenagnathidae: {}
+                                    Caenagnathidae:
+                                      Caenagnathinae: {}
                                   Avialae:
                                     Ornithothoraces:
                                       Ornithuromorpha:
@@ -209,6 +211,7 @@ tree:
                         Plateosauridae: {}
                         Saturnaliidae: {}
                         Unaysauridae: {}
+                        Guaibasauridae: {}
                       Herrerasauridae: {}
                     Ornithischia:
                       Thyreophora:
@@ -259,7 +262,8 @@ tree:
                                   Tenontosauridae: {}
                                 Elasmaria: {}
                                 Iguanodontoidea: {}
-                              Hypsilophodontidae: {}
+                              Hypsilophodontidae:
+                                Parksosauridae: {}
                           Marginocephalia:
                             Ceratopsia:
                               Neoceratopsia:
@@ -292,6 +296,7 @@ tree:
                           Stegosauria:
                             Stegosauridae:
                               Dacentrurinae: {}
+                              Huayangosaurinae: {}
                       Neornithischia:
                         Thescelosauridae:
                           Orodrominae: {}
@@ -435,6 +440,26 @@ clades:
       - Ceratopsidae
       - Centrasaurinae
       - Albertaceratopsini
+  Albertosaurinae:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Tyrannosauroidea
+      - Tyrannosauridae
+      - Albertosaurinae
   Alioramini:
     taxonomy:
       - Life
@@ -1087,6 +1112,27 @@ clades:
       - Maniraptora
       - Oviraptorosauria
       - Caenagnathidae
+  Caenagnathinae:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Oviraptorosauria
+      - Caenagnathidae
+      - Caenagnathinae
   Camarasauridae:
     taxonomy:
       - Life
@@ -2428,6 +2474,20 @@ clades:
       - Sauropodiformes
       - Sauropoda
       - Gravisauria
+  Guaibasauridae:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Guaibasauridae
   Hadrosauridae:
     description: |
       Hadrosauridae is a family of large ornithopod dinosaurs commonly known as duck-billed dinosaurs. Hadrosaurs were the most diverse and abundant large herbivorous dinosaurs of the Late Cretaceous, with a global distribution. They are characterized by highly specialized dental batteries consisting of hundreds of closely packed teeth forming a continuous grinding surface, broad and flat edentulous premaxillary bills, and in the subfamily Lambeosaurinae, elaborate hollow cranial crests likely used for vocalization and display. Hadrosaurs include the two major subgroups Hadrosaurinae (flat-headed forms) and Lambeosaurinae (crested forms).
@@ -2648,6 +2708,23 @@ clades:
       - Oviraptorosauria
       - Oviraptoridae
       - Heyuanninae
+  Huayangosaurinae:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Thyreophora
+      - Stegosauria
+      - Stegosauridae
+      - Huayangosaurinae
   Hypsilophodontidae:
     taxonomy:
       - Life
@@ -4039,6 +4116,24 @@ clades:
       - Coelurosauria
       - Maniraptora
       - Paraves
+  Parksosauridae:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Hypsilophodontidae
+      - Parksosauridae
   Parvicursorinae:
     taxonomy:
       - Life
@@ -5766,6 +5861,5591 @@ genera:
       - Sauropodomorpha
       - Sauropoda
       - Diplodocidae
+  Fukuivenator:
+    genus: Fukuivenator
+    parent: Therizinosauria
+    etymology: hunter of Fukui Prefecture
+    description: Fukuivenator is an extinct genus of maniraptoran theropod dinosaur from the Early Cretaceous Kitadani Formation of Japan.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "372482"
+      - source: wikidata
+        id: Q22927446
+      - source: gbif
+        id: "11135828"
+      - source: eol
+        id: "51618822"
+    species:
+      - name: Fukuivenator paradoxus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+          from_ma: 121.4
+          to_ma: 113.2
+        location:
+          country: JP
+          region: Fukui
+          formation: Kitadani
+          coordinates:
+            - 36.121666
+            - 136.544724
+        holotype:
+          specimen_id: FPDM-V8461
+          institution: Fukui Prefectural Dinosaur Museum, Fukui
+        described: 2016
+        authors: Azuma et al.
+        described_in: azuma2016
+    references:
+      - id: azuma2016
+        authors: Azuma, Yoichi; Xu, Xing; Shibata, Masateru; Kawabe, Soichiro; Miyata, Kazunori; Imai, Takuya
+        year: 2016
+        title: A bizarre theropod from the Early Cretaceous of Japan highlighting mosaic evolution among coelurosaurians
+        journal: Scientific Reports
+        volume: "6"
+        issue: "1"
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/srep20478
+        url: http://dx.doi.org/10.1038/srep20478
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptoriformes
+      - Therizinosauria
+  Fulengia:
+    genus: Fulengia
+    parent: Prosauropoda
+    description: Fulengia is a dubious genus of basal sauropodomorph dinosaur from the Early Jurassic Lufeng Formation of China. The type species, F. youngi, was described by Carroll and Galton in 1977. It is a nomen dubium and may be the same animal as Lufengosaurus (from which it is anagramized). It was originally thought to be a lizard.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "37846"
+      - source: wikidata
+        id: Q18607618
+      - source: gbif
+        id: "4819803"
+    species:
+      - name: Fulengia sp.
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Jurassic
+          stage:
+            - Sinemurian
+        holotype:
+          specimen_id: CUP 2037
+          institution: Field Museum of Natural History (Catholic University of Peking collection), Chicago
+        described: 1977
+        authors: Carroll and Galton
+        described_in: carroll1977
+    references:
+      - id: carroll1977
+        authors: CARROLL, ROBERT L.; GALTON, PETER M.
+        year: 1977
+        title: ‘Modern’ lizard from the Upper Triassic of China
+        journal: Nature
+        volume: "266"
+        issue: "5599"
+        pages: 252-255
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/266252a0
+        url: http://dx.doi.org/10.1038/266252a0
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Anchisauria
+      - Prosauropoda
+  Fulgurotherium:
+    genus: Fulgurotherium
+    parent: Iguanodontia
+    etymology: Lightning beast
+    description: Fulgurotherium is a dubious genus of ornithischian dinosaur from the Late Cretaceous (Cenomanian) Griman Creek Formation. It lived in what is now Australia.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "38735"
+      - source: wikidata
+        id: Q18602041
+      - source: gbif
+        id: "4823175"
+    species:
+      - name: Fulgurotherium australe
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Cenomanian
+          from_ma: 100.5
+          to_ma: 93.9
+        location:
+          country: AU
+          region: Victoria
+          formation: Eumeralla
+          coordinates:
+            - -38.781387
+            - 143.403885
+        described: 1932
+        authors: Huene
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+  Furcatoceratops:
+    genus: Furcatoceratops
+    parent: Nasutoceratopsini
+    etymology: forked horned face
+    description: Furcatoceratops is a genus of centrosaurine ceratopsid dinosaur from the Late Cretaceous Judith River Formation of Montana. The type species is Furcatoceratops elucidans.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "475401"
+      - source: wikidata
+        id: Q120763258
+    species:
+      - name: Furcatoceratops elucidans
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+          from_ma: 83.6
+          to_ma: 72.2
+        location:
+          country: US
+          region: Montana
+          formation: Judith River
+          coordinates:
+            - 47.576111
+            - -109.406944
+        holotype:
+          specimen_id: NSM PV 24660
+          institution: National Museum of Nature and Science, Tsukuba
+        described: 2023
+        authors: Ishikawa et al.
+        described_in: ishikawa2023
+    references:
+      - id: ishikawa2023
+        authors: Ishikawa, Hiroki; Tsuihiji, Takanobu; Manabe, Makoto
+        year: 2023
+        title: "Furcatoceratops elucidans, a new centrosaurine (Ornithischia: Ceratopsidae) from the upper Campanian Judith River Formation, Montana, USA"
+        journal: Cretaceous Research
+        volume: "151"
+        publisher: Elsevier BV
+        doi: 10.1016/j.cretres.2023.105660
+        url: http://dx.doi.org/10.1016/j.cretres.2023.105660
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Marginocephalia
+      - Ceratopsia
+      - Ceratopsidae
+      - Centrosaurinae
+      - Nasutoceratopsini
+  Fushanosaurus:
+    genus: Fushanosaurus
+    parent: Titanosauriformes
+    etymology: Fushan lizard
+    description: "Fushanosaurus is a genus of sauropod dinosaur from the Shishugou Formation from Xinjiang Province in China. The type and only species is Fushanosaurus qitaiensis (Chinese: 奇台傅山龙; pinyin: Qítái Fùshānlóng). It is solely known from the holotype specimen FH000101, a complete right femur."
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "398065"
+      - source: wikidata
+        id: Q72671571
+      - source: eol
+        id: "60776517"
+    species:
+      - name: Fushanosaurus qitaiensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Oxfordian
+        location:
+          country: CN
+          region: Xinjiang
+          formation: Shishugou
+          coordinates:
+            - 44.5
+            - 90.166664
+        holotype:
+          specimen_id: FH000101
+          institution: Fushan Museum, Xinjiang, China
+        described: 2019
+        authors: Wang et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Macronaria
+      - Titanosauriformes
+  Fusuisaurus:
+    genus: Fusuisaurus
+    parent: Titanosauriformes
+    description: Fusuisaurus is a genus of sauropod dinosaur from the Early Cretaceous of China. Fragmentary postcranial remains of this animal have been discovered in 2001 in the Xinlong Formation of Guangxi, and consist of the left ilium, left pubis, anterior caudals, most of the dorsal ribs, and distal end of the left femur. This sauropod has been described as a basal titanosauriform. The type species is F. zhaoi, named in honour of Chinese paleontologist Zhao Xijin.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "153809"
+      - source: wikidata
+        id: Q2099623
+    species:
+      - name: Fusuisaurus zhaoi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+          from_ma: 121.4
+          to_ma: 113.2
+        location:
+          country: CN
+          region: Guangxi
+          formation: Xinlong
+          coordinates:
+            - 22.639444
+            - 107.907501
+        described: 2006
+        authors: Mo et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Macronaria
+      - Titanosauriformes
+  Futalognkosaurus:
+    genus: Futalognkosaurus
+    parent: Lognkosauria
+    etymology: giant chief lizard
+    pronunciation:
+      ipa: /ˌfuːtəˌlɒŋkoʊˈsɔːrəs/
+    description: Futalognkosaurus is a genus of titanosaurian dinosaur. The herbivorous Futalognkosaurus lived approximately 93.5 to 85.8 million years ago in the Portezuelo Formation, in what is now Argentina, of the Coniacian stage of the late Cretaceous Period. The fish and fossilized leaf debris on the site, together with other dinosaur remains, suggest a warm tropical climate in Patagonia during this period.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "109004"
+    species:
+      - name: Futalognkosaurus dukei
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Coniacian
+        location:
+          country: AR
+          region: Neuquén
+          formation: Portezuelo
+          coordinates:
+            - -38.453194
+            - -68.724556
+        holotype:
+          specimen_id: MUCPv 323
+          institution: Universidad Nacional del Comahue, Neuquén
+        described: 2007
+        authors: Calvo et al.
+        described_in: calvo2007
+    references:
+      - id: calvo2007
+        authors: Calvo, Jorge O.; Porfiri, Juan D.; González-Riga, Bernardo J.; Kellner, Alexander W.A.
+        year: 2007
+        title: A new Cretaceous terrestrial ecosystem from Gondwana with the description of a new sauropod dinosaur
+        journal: Anais da Academia Brasileira de Ciências
+        volume: "79"
+        issue: "3"
+        pages: 529-541
+        publisher: FapUNIFESP (SciELO)
+        doi: 10.1590/s0001-37652007000300013
+        url: http://dx.doi.org/10.1590/s0001-37652007000300013
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
+      - Titanosauria
+      - Colossosauria
+      - Lognkosauria
+  Fylax:
+    genus: Fylax
+    parent: Hadrosauroidea
+    etymology: keeper
+    description: Fylax is a genus of hadrosauroid ornithopod from the Late Cretaceous Figuerola Formation of Spain. The genus contains a single species, Fylax thyrakolasus, known from a nearly complete left dentary.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "438296"
+    species:
+      - name: Fylax thyrakolasus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: ES
+          region: Cataluña
+          formation: Figuerola
+          coordinates:
+            - 41.866669
+            - 0.883333
+        described: 2021
+        authors: Prieto-Márquez and Carrera Farias
+        described_in: prieto-marquez2021
+    references:
+      - id: prieto-marquez2021
+        authors: Prieto-Marquez, Albert; Carrera Farias, Miguel
+        year: 2021
+        title: The late-surviving early diverging Ibero-Armorican ‘duck-billed’ dinosaur Fylax and the role of the Late Cretaceous European Archipelago in hadrosauroid biogeography
+        journal: Acta Palaeontologica Polonica
+        volume: "66"
+        publisher: Polska Akademia Nauk Instytut Paleobiologii (Institute of Paleobiology, Polish Academy of Sciences)
+        doi: 10.4202/app.00821.2020
+        url: http://dx.doi.org/10.4202/app.00821.2020
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Dryomorpha
+      - Styracosterna
+      - Hadrosauriformes
+      - Hadrosauroidea
+  Galeamopus:
+    genus: Galeamopus
+    parent: Diplodocinae
+    description: Galeamopus is a genus of herbivorous diplodocid sauropod dinosaurs. It contains two known species — Galeamopus hayi, known from the Late Jurassic lower Morrison Formation (Kimmeridgian age, about 155 million years ago) of Wyoming, United States, and Galeamopus pabsti, known from Wyoming and Colorado. The type species is known from one of the well-preserved diplodocid fossils, a nearly complete skeleton with an associated skull.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "319102"
+    species:
+      - name: Galeamopus hayi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Tithonian
+        location:
+          country: US
+          region: Wyoming
+          formation: Morrison
+          coordinates:
+            - 43.649166
+            - -106.780556
+        described: 2015
+        authors: Tschopp et al.
+        described_in: tschopp2015
+    references:
+      - id: tschopp2015
+        authors: Tschopp, Emanuel; Mateus, Octávio; Benson, Roger B.J.
+        year: 2015
+        title: A specimen-level phylogenetic analysis and taxonomic revision of Diplodocidae (Dinosauria, Sauropoda)
+        journal: PeerJ
+        volume: "3"
+        pages: e857
+        publisher: PeerJ
+        doi: 10.7717/peerj.857
+        url: http://dx.doi.org/10.7717/peerj.857
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Diplodocoidea
+      - Diplodocimorpha
+      - Flagellicaudata
+      - Diplodocidae
+      - Diplodocinae
+  Galleonosaurus:
+    genus: Galleonosaurus
+    parent: Elasmaria
+    etymology: galleon lizard
+    description: Galleonosaurus is a genus of basal ornithopod dinosaur from the Wonthaggi Formation of the Gippsland region of Victoria, Australia. The type and only species is Galleonosaurus dorisae.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "434090"
+      - source: wikidata
+        id: Q62029371
+      - source: zoobank
+        id: 5169AD92-35A9-41D1-A5E8-6AFBB40BA0C1
+    species:
+      - name: Galleonosaurus dorisae
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Albian
+        location:
+          country: AU
+          region: Victoria
+          formation: '"Wonthaggi"'
+          coordinates:
+            - -38.66111
+            - 145.681107
+        described: 2019
+        authors: Herne et al.
+        described_in: herne2019
+    references:
+      - id: herne2019
+        authors: Herne, Matthew C.; Nair, Jay P.; Evans, Alistair R.; Tait, Alan M.
+        year: 2019
+        title: New small-bodied ornithopods (Dinosauria, Neornithischia) from the Early Cretaceous Wonthaggi Formation (Strzelecki Group) of the Australian-Antarctic rift system, with revision of<i>Qantassaurus intrepidus</i>Rich and Vickers-Rich, 1999
+        journal: Journal of Paleontology
+        volume: "93"
+        issue: "3"
+        pages: 543-584
+        publisher: Cambridge University Press (CUP)
+        doi: 10.1017/jpa.2018.95
+        url: http://dx.doi.org/10.1017/jpa.2018.95
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Elasmaria
+  Gallimimus:
+    genus: Gallimimus
+    parent: Ornithomimidae
+    etymology: chicken mimic
+    pronunciation:
+      ipa: /ˌɡælɪˈmaɪməs/
+      phonetic: GAL-im-EYE-məs
+    description: Gallimimus is a genus of theropod dinosaur that lived in what is now Mongolia during the Late Cretaceous period. Several fossils in various stages of growth were discovered by Polish-Mongolian expeditions in the Gobi Desert of Mongolia during the 1960s; a large skeleton discovered in this region was made the holotype specimen of the new genus and species Gallimimus bullatus in 1972. The generic name means "chicken mimic", referring to the similarities between its neck vertebrae and those of the Galliformes. The specific name is derived from bulla, a golden capsule worn by Roman youth, in reference to a bulbous structure at the base of the skull of Gallimimus. At the time it was named, the fossils of Gallimimus represented the most complete and best preserved ornithomimid ("ostrich dinosaur") material yet discovered, and the genus remains one of the best known members of the group.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "38547"
+      - source: wikidata
+        id: Q309467
+      - source: gbif
+        id: "4822903"
+      - source: eol
+        id: "4433732"
+    species:
+      - name: Gallimimus bullatus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: MN
+          region: Omnogov
+          formation: Nemegt
+          coordinates:
+            - 43.601665
+            - 100.456665
+        holotype:
+          specimen_id: G.I.No.DPS 100/10
+          institution: Geological Institute, Mongolian Academy of Sciences, Ulaanbaatar
+        size:
+          length_m: 6
+          weight_kg: 440
+          hip_height_m: 1.9
+          estimate: true
+        described: 1972
+        authors: Osmólska et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptoriformes
+      - Arctometatarsalia
+      - Ornithomimosauria
+      - Ornithomimidae
+  Galvesaurus:
+    genus: Galvesaurus
+    parent: Brachiosauridae
+    etymology: Galve lizard
+    description: Galvesaurus, or Galveosaurus (meaning "Galve lizard"), is a genus of brachiosaurid sauropod dinosaur from the Late Jurassic period. Fossils of the only known species, G. herreroi, were found in Galve, Spain, hence its generic name. The specific name herreroi honours the discoverer, José María Herrero. Some researchers suggest that the taxon might represent a junior synonym of the Portuguese genus Lusotitan.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "81693"
+      - source: wikidata
+        id: Q2154760
+      - source: gbif
+        id: "4967305"
+    species:
+      - name: Galvesaurus herreroi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Tithonian
+        location:
+          country: ES
+          region: Aragón
+          formation: Villar del Arzobispo
+          coordinates:
+            - 40.66296
+            - -0.884602
+        described: 2005
+        authors: Barco et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Sauropoda
+      - Macronaria
+      - Brachiosauridae
+  Gandititan:
+    genus: Gandititan
+    parent: Titanosauria
+    description: Gandititan is an extinct genus of titanosaurian sauropod dinosaur from the Late Cretaceous Zhoutian Formation of China. The genus contains a single species, G. cavocaudatus, known from a partial skeleton.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "482171"
+      - source: wikidata
+        id: Q124309835
+    species:
+      - name: Gandititan cavocaudatus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Turonian
+        location:
+          country: CN
+          region: Jiangxi
+          formation: Zhoutian
+          coordinates:
+            - 25.797501
+            - 114.897781
+        holotype:
+          specimen_id: JXGM-F-V1
+          institution: Jiangxi Geological Museum, Jiangxi
+        described: 2024
+        authors: Han et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Sauropoda
+      - Macronaria
+      - Titanosauria
+  Gannansaurus:
+    genus: Gannansaurus
+    parent: Somphospondyli
+    etymology: Gannan lizard
+    description: Gannansaurus is an extinct genus of somphospondylan sauropod dinosaur known from the latest Cretaceous Nanxiong Formation of Ganzhou Basin, Jiangxi Province of southern China. It is known from specimen GMNH F10001 which consists of a single, nearly complete dorsal vertebra and a mid-caudal vertebra. Gannansaurus was first named by Lü Junchang, Yi Laiping, Zhong Hui and Wei Xuefang in 2013 and the type species is Gannansaurus sinensis. Gannansaurus shares some characters with Euhelopus, indicating that it is more closely related to it rather than to other titanosauriforms.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "273049"
+      - source: wikidata
+        id: Q13600078
+    species:
+      - name: Gannansaurus sinensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: CN
+          region: Jiangxi
+          coordinates:
+            - 25.729168
+            - 114.806389
+        described: 2013
+        authors: Lü et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
+  Ganzhousaurus:
+    genus: Ganzhousaurus
+    parent: Heyuanninae
+    etymology: Ganzhou lizard
+    description: Ganzhousaurus is an extinct genus of oviraptorid dinosaur known from the Late Cretaceous Nanxiong Formation of Nankang County, Ganzhou City of Jiangxi Province, southern China. It was found in a Maastrichtian deposit and contains a single species, Ganzhousaurus nankangensis. It is distinguished by a combination of primitive and derived features.
+    diet: omnivore
+    identifiers:
+      - source: pbdb
+        id: "265586"
+      - source: wikidata
+        id: Q18755856
+      - source: gbif
+        id: "8515793"
+      - source: eol
+        id: "47458575"
+    species:
+      - name: Ganzhousaurus nankangensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: CN
+          region: Jiangxi
+          coordinates:
+            - 25.816668
+            - 114.933334
+        described: 2013
+        authors: Wang et al.
+        described_in: wang2013
+    references:
+      - id: wang2013
+        authors: WANG, SHUO; SUN, CHENGKAI; SULLIVAN, CORWIN; XU, XING
+        year: 2013
+        title: "A new oviraptorid (Dinosauria: Theropoda) from the Upper Cretaceous of southern China"
+        journal: Zootaxa
+        volume: "3640"
+        issue: "2"
+        publisher: Magnolia Press
+        doi: 10.11646/zootaxa.3640.2.7
+        url: http://dx.doi.org/10.11646/zootaxa.3640.2.7
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Oviraptorosauria
+      - Oviraptoridae
+      - Heyuanninae
+  Gargoyleosaurus:
+    genus: Gargoyleosaurus
+    parent: Nodosauridae
+    etymology: gargoyle lizard
+    description: Gargoyleosaurus is one of the earliest ankylosaurs known from reasonably complete fossil remains. The holotype was discovered in 1995 at the Bone Cabin Quarry West locality, in Albany County, Wyoming in exposures of the Upper Jurassic (Kimmeridgian to Tithonian stages) Morrison Formation.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "63703"
+      - source: wikidata
+        id: Q134736
+      - source: gbif
+        id: "4823339"
+      - source: eol
+        id: "4530841"
+    species:
+      - name: Gargoyleosaurus parkpinorum
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Tithonian
+        location:
+          country: US
+          region: Wyoming
+          formation: Morrison
+          coordinates:
+            - 41.967098
+            - -106.291
+        size:
+          length_m: 4
+          estimate: true
+        described: 1998
+        authors: Carpenter et al.
+        described_in: carpenter1998
+    references:
+      - id: carpenter1998
+        authors: Carpenter, Kenneth; Miles, Clifford; Cloward, Karen
+        year: 1998
+        title: Skull of a Jurassic ankylosaur (Dinosauria)
+        journal: Nature
+        volume: "393"
+        issue: "6687"
+        pages: 782-783
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/31684
+        url: http://dx.doi.org/10.1038/31684
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Thyreophora
+      - Ankylosauria
+      - Nodosauridae
+  Garrigatitan:
+    genus: Garrigatitan
+    parent: Lirainosaurinae
+    etymology: garrigue giant
+    description: Garrigatitan is a genus of titanosaurian dinosaur from the late Cretaceous Period of the Grès à Reptiles Formation in France. The genus contains a single species, Garrigatitan meridionalis.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "430752"
+      - source: wikidata
+        id: Q104434231
+      - source: gbif
+        id: "195517051"
+    species:
+      - name: Garrigatitan meridionalis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+          from_ma: 83.6
+          to_ma: 72.2
+        location:
+          country: FR
+          region: Provence-Alpes-Côte d'Azur
+          coordinates:
+            - 43.606697
+            - 6.106141
+        described: 2021
+        authors: Díez Díaz et al.
+        described_in: díezdíaz2020
+    references:
+      - id: díezdíaz2020
+        authors: Díez Díaz, Verónica; Garcia, Géraldine; Pereda Suberbiola, Xabier; Jentgen-Ceschino, Benjamin; Stein, Koen; Godefroit, Pascal; Valentin, Xavier
+        year: 2020
+        title: "A new titanosaur (Dinosauria: Sauropoda) from the Upper Cretaceous of Velaux-La-Bastide Neuve (southern France)"
+        journal: Historical Biology
+        volume: "33"
+        issue: "11"
+        pages: 2998-3017
+        publisher: Informa UK Limited
+        doi: 10.1080/08912963.2020.1841184
+        url: http://dx.doi.org/10.1080/08912963.2020.1841184
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
+      - Titanosauria
+      - Eutitanosauria
+      - Lirainosaurinae
+  Garudimimus:
+    genus: Garudimimus
+    parent: Deinocheiridae
+    etymology: Garuda mimic
+    description: Garudimimus is a genus of ornithomimosaur that lived in Asia during the Late Cretaceous. The genus is known from a single specimen found in 1981 by a Soviet-Mongolian paleontological expedition in the Bayanshiree Formation and formally described in the same year by Rinchen Barsbold; the only species is Garudimimus brevipes. Several interpretations about the anatomical traits of Garudimimus were made in posterior examinations of the specimen, but most of them were criticized during its comprehensive redescription in 2005. Extensive undescribed ornithomimosaur remains at the type locality of Garudimimus may represent additional specimens of the genus.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "38548"
+      - source: wikidata
+        id: Q131762
+      - source: gbif
+        id: "4822912"
+      - source: eol
+        id: "47458681"
+    species:
+      - name: Garudimimus brevipes
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Santonian
+        location:
+          country: MN
+          region: Omnogov
+          formation: Baynshire
+          coordinates:
+            - 43.144169
+            - 107.518059
+        holotype:
+          specimen_id: GIN 100/13
+          institution: Geological Institute, Mongolian Academy of Sciences, Ulaanbaatar
+        size:
+          length_m: 4.7
+          estimate: true
+        described: 1981
+        authors: Barsbold
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptoriformes
+      - Arctometatarsalia
+      - Ornithomimosauria
+      - Deinocheiridae
+  Garumbatitan:
+    genus: Garumbatitan
+    parent: Somphospondyli
+    etymology: Garumba giant
+    description: Garumbatitan is an extinct genus of somphospondylan sauropod dinosaur from the Early Cretaceous Arcillas de Morella Formation of Spain. The genus contains a single species, G. morellensis, known from multiple partial skeletons.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "477180"
+      - source: wikidata
+        id: Q122849073
+    species:
+      - name: Garumbatitan morellensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Barremian
+        location:
+          country: ES
+          region: Castellón
+          formation: Arcillas de Morella
+          coordinates:
+            - 40.596615
+            - -0.179591
+        described: 2024
+        authors: Mocho et al.
+        described_in: mocho2023
+    references:
+      - id: mocho2023
+        authors: Mocho, Pedro; Escaso, Fernando; Gasulla, José M; Galobart, Àngel; Poza, Begoña; Santos-Cubedo, Andrés; Sanz, José L; Ortega, Francisco
+        year: 2023
+        title: New sauropod dinosaur from the Lower Cretaceous of Morella (Spain) provides new insights on the evolutionary history of Iberian somphospondylan titanosauriforms
+        journal: Zoological Journal of the Linnean Society
+        volume: "201"
+        issue: "1"
+        pages: 214-268
+        publisher: Oxford University Press (OUP)
+        doi: 10.1093/zoolinnean/zlad124
+        url: http://dx.doi.org/10.1093/zoolinnean/zlad124
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
+  Gasosaurus:
+    genus: Gasosaurus
+    parent: Tetanurae
+    pronunciation:
+      ipa: /ɡˈæsəˈsɔːrəs/
+    description: Gasosaurus is a genus of tetanuran theropod that lived approximately 171.6 to 161.2 million years ago during the middle of the Jurassic Period. The name "Gasosaurus" is derived from the English "gasoline" and the Greek σαῦρος (sauros) ("lizard / generic reptile"). Only one species is currently recognised, G. constructus, from which the specific name honours the gasoline company that found the Dashanpu fossil quarry in Sichuan Province, China, now named as the Lower Shaximiao Formation.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "52766"
+      - source: wikidata
+        id: Q131771
+      - source: gbif
+        id: "4822670"
+      - source: eol
+        id: "4434269"
+    species:
+      - name: Gasosaurus constructus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Oxfordian
+        location:
+          country: CN
+          region: Sichuan
+          formation: Shaximiao
+          coordinates:
+            - 29.411388
+            - 104.852501
+        holotype:
+          specimen_id: IVPP V7264
+          institution: Institute of Vertebrate Paleontology and Paleoanthropology, Beijing
+        size:
+          length_m: 4
+          estimate: true
+        described: 1985
+        authors: Dong and Tang
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Tetanurae
+  Gasparinisaura:
+    genus: Gasparinisaura
+    parent: Parksosauridae
+    etymology: Gasparini's lizard
+    description: Gasparinisaura is a genus of herbivorous ornithopod dinosaur from the Late Cretaceous. The first fossils of Gasparinisaura were found in 1992 near Cinco Saltos in Río Negro Province, Argentina. The type species, Gasparinisaura cincosaltensis, was named and described in 1996 by Rodolfo Coria and Leonardo Salgado. The generic name honors Argentine palaeontologist Zulma Brandoni de Gasparini. The specific name refers to Cinco Saltos.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "65253"
+      - source: wikidata
+        id: Q2704268
+      - source: gbif
+        id: "4823109"
+      - source: eol
+        id: "47460387"
+    species:
+      - name: Gasparinisaura cincosaltensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+          from_ma: 83.6
+          to_ma: 72.2
+        location:
+          country: AR
+          region: Río Negro
+          formation: Anacleto
+          coordinates:
+            - -38.844536
+            - -68.030663
+        size:
+          length_m: 0.8
+          estimate: true
+        described: 1996
+        authors: Coria and Salgado
+        described_in: coria1996
+    references:
+      - id: coria1996
+        authors: Coria, Rodolfo A.; Salgado, Leonardo
+        year: 1996
+        title: "A basal iguanodontian (Ornithischia: Ornithopoda) from the Late Cretaceous of South America"
+        journal: Journal of Vertebrate Paleontology
+        volume: "16"
+        issue: "3"
+        pages: 445-457
+        publisher: Informa UK Limited
+        doi: 10.1080/02724634.1996.10011333
+        url: http://dx.doi.org/10.1080/02724634.1996.10011333
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Hypsilophodontidae
+      - Parksosauridae
+  Gastonia:
+    genus: Gastonia
+    parent: Nodosauridae
+    description: Gastonia is a genus of herbivorous ankylosaurian dinosaur from the Early Cretaceous of North America, around 139 to 125.77 million years ago. It is often considered a nodosaurid closely related to Polacanthus. Gastonia has a sacral shield and large shoulder spikes.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "63700"
+      - source: wikidata
+        id: Q943775
+    species:
+      - name: Gastonia lorriemcwhinneyae
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Albian
+        location:
+          country: US
+          region: Utah
+          formation: Cedar Mountain
+          coordinates:
+            - 38.826099
+            - -109.567902
+        holotype:
+          specimen_id: CEUM 1307
+          institution: College of Eastern Utah Prehistoric Museum, Price
+        described: 1998
+        authors: Kirkland
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Thyreophora
+      - Ankylosauria
+      - Nodosauridae
+  Geminiraptor:
+    genus: Geminiraptor
+    parent: Troodontidae
+    etymology: twin seizer
+    description: Geminiraptor is a genus of troodontid theropod dinosaur that lived in North America during the Early Cretaceous period. Geminiraptor was a small, ground-dwelling bipedal carnivorous paravian. The type species of Geminiraptor is G. suarezarum.
+    diet: carnivore
+    locomotion: bipedal
+    identifiers:
+      - source: pbdb
+        id: "235253"
+      - source: wikidata
+        id: Q1936000
+      - source: eol
+        id: "42332914"
+    species:
+      - name: Geminiraptor suarezarum
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Valanginian
+          from_ma: 137.05
+          to_ma: 132.6
+        location:
+          country: US
+          region: Utah
+          formation: Cedar Mountain
+          coordinates:
+            - 38.90987
+            - -110.110764
+        described: 2010
+        authors: Senter et al.
+        described_in: senter2010
+    references:
+      - id: senter2010
+        authors: Senter, Phil; Kirkland, James I.; Bird, John; Bartlett, Jeff A.
+        year: 2010
+        title: A New Troodontid Theropod Dinosaur from the Lower Cretaceous of Utah
+        journal: PLoS ONE
+        volume: "5"
+        issue: "12"
+        pages: e14329
+        publisher: Public Library of Science (PLoS)
+        doi: 10.1371/journal.pone.0014329
+        url: http://dx.doi.org/10.1371/journal.pone.0014329
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Tetanurae
+      - Avetheropoda
+      - Coelurosauria
+      - Maniraptora
+      - Troodontidae
+  Genusaurus:
+    genus: Genusaurus
+    parent: Majungasaurini
+    etymology: knee lizard
+    pronunciation:
+      ipa: /ˌdʒɛnjʊˈsɔːrəs/
+    description: Genusaurus is a genus of abelisaurid theropod from the Early Cretaceous. Its fossils were found in France. Genusaurus is believed to have lived during the Albian stage, around 112-100 million years ago.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "56391"
+      - source: wikidata
+        id: Q18915968
+      - source: gbif
+        id: "4821856"
+      - source: eol
+        id: "4533730"
+    species:
+      - name: Genusaurus sisteronis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Albian
+        location:
+          country: FR
+          region: Provence-Alpes-Côte-d'Azur
+          formation: Marnes bleues
+          coordinates:
+            - 44.183331
+            - 5.9
+        holotype:
+          specimen_id: MNHN, Bev.1
+          institution: Muséum National d'Histoire Naturelle, Paris
+        described: 1995
+        authors: Accarie et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Ceratosauria
+      - Abelisauridae
+      - Carnotaurinae
+      - Majungasaurini
+  Genyodectes:
+    genus: Genyodectes
+    parent: Ceratosauria
+    etymology: jaw bite
+    description: Genyodectes and dektes ("bite")) is a genus of ceratosaurian theropod dinosaur from the Lower Cretaceous (Aptian) of South America. The holotype material (MLP 26–39, Museo de La Plata, La Plata, Argentina) was collected from the Cerro Barcino Formation, Cañadón Grande, Departamento Paso de Indios in the Chubut Province of Argentina and consists of an incomplete snout, including the premaxillae, portions of both maxillas, the right and left dentary, many teeth, a fragment of the left splenial, and parts of the supradentaries. These elements are generally poorly preserved and some are in articulation. The premaxilla of Genyodectes possesses relatively large and protruding teeth, similar to those of Ceratosaurus. The specific name, serus, means "late". In 2016 it was estimated to be 6.25 meters (20.5 ft) in length and 790 kg (1,740 lb) in weight.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "38611"
+      - source: wikidata
+        id: Q134643
+      - source: gbif
+        id: "4822608"
+      - source: eol
+        id: "4531437"
+    species:
+      - name: Genyodectes serus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Albian
+        location:
+          country: AR
+          region: Chubut
+          formation: Cerro Barcino
+          coordinates:
+            - -44.48333
+            - -70.0093
+        described: 1901
+        authors: Woodward
+        described_in: woodward1901
+    references:
+      - id: woodward1901
+        authors: Woodward, A. Smith
+        year: 1901
+        title: On some Extinct Reptiles from Patagonia, of the Genera <i>Miolania, Dinilysia</i>, and <i>Genyodectes</i>
+        journal: Proceedings of the Zoological Society of London
+        volume: "70"
+        issue: "2"
+        pages: 169-184
+        publisher: Wiley
+        doi: 10.1111/j.1469-7998.1901.tb08537.x
+        url: http://dx.doi.org/10.1111/j.1469-7998.1901.tb08537.x
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Ceratosauria
+  Geranosaurus:
+    genus: Geranosaurus
+    parent: Heterodontosauridae
+    etymology: ancestor
+    description: Geranosaurus is a genus of heterodontosaurid ornithischian dinosaur that lived during the Early Jurassic, between 191.1 and 187.5 million years ago. It is known from a single species, G. atavus, that was named in 1911 by Robert Broom for partial jaws found during road-cutting in South Africa. The genus name is likely derived from the word for "crane" in reference to the bird-like limb bones, while the species name means "ancestor" likely in reference to its position as an early ornithischian. The limited material and poor preservation of Geranosaurus have rendered it difficult to diagnose, with authors accepting it as a dubious name though differentiable from its relative Heterodontosaurus, the only other heterodontosaurid known from the Clarens Formation.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "38724"
+      - source: wikidata
+        id: Q1930184
+      - source: gbif
+        id: "4823097"
+    species:
+      - name: Geranosaurus atavus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Triassic
+            - Early Cretaceous
+          stage:
+            - Norian
+            - Barremian
+        location:
+          country: ZA
+          region: Eastern Cape
+          formation: Clarens
+          coordinates:
+            - -31.450001
+            - 27.85
+        described: 1911
+        authors: Broom
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Heterodontosauridae
+  Gideonmantellia:
+    genus: Gideonmantellia
+    parent: Ornithopoda
+    description: Gideonmantellia is an extinct genus of basal ornithopod dinosaur known from the Early Cretaceous (Barremian stage) Camarillas Formation of Galve, Province of Teruel, Spain. It contains a single species, Gideonmantellia amosanjuanae.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "242781"
+      - source: wikidata
+        id: Q2457727
+    species:
+      - name: Gideonmantellia amosanjuanae
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Barremian
+        location:
+          country: ES
+          region: Aragón
+          formation: Camarillas
+          coordinates:
+            - 40.647625
+            - -0.883291
+        described: 2012
+        authors: Ruiz-Omeñaca et al.
+        described_in: ruiz-omeñaca2012
+    references:
+      - id: ruiz-omeñaca2012
+        authors: Ruiz-Omeñaca, José Ignacio; Canudo, José Ignacio; Cuenca-Bescós, Gloria; Cruzado-Caballero, Penélope; Gasca, José Manuel; Moreno-Azanza, Miguel
+        year: 2012
+        title: A new basal ornithopod dinosaur from the Barremian of Galve, Spain
+        journal: Comptes Rendus Palevol
+        volume: "11"
+        issue: "6"
+        pages: 435-444
+        publisher: Museum National D'Histoire Naturelle
+        doi: 10.1016/j.crpv.2012.06.001
+        url: http://dx.doi.org/10.1016/j.crpv.2012.06.001
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Cerapoda
+      - Ornithopoda
+  Giganotosaurus:
+    genus: Giganotosaurus
+    parent: Carcharodontosauridae
+    pronunciation:
+      ipa: /ˌɡɪɡəˌnoʊtəˈsɔːrəs/
+      phonetic: GIG-ə-NOH-tə-SOR-əs
+    description: Giganotosaurus is a genus of large theropod dinosaur that lived in what is now Argentina, during the early Cenomanian age of the Late Cretaceous period, approximately 99.6 to 95 million years ago. The holotype specimen was discovered in the Candeleros Formation of Patagonia in 1993 and is almost 70% complete. The animal was named Giganotosaurus carolinii in 1995; the genus name translates to "giant southern lizard", and the specific name honors the discoverer, Ruben Carolini. A dentary bone, a tooth, and some tracks, discovered before the holotype, were later assigned to this animal. The genus attracted much interest and became part of a scientific debate about the maximum sizes of theropod dinosaurs.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "54540"
+      - source: wikidata
+        id: Q14438
+      - source: gbif
+        id: "4822969"
+      - source: eol
+        id: "4433606"
+    species:
+      - name: Giganotosaurus carolinii
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Turonian
+        location:
+          country: AR
+          region: Neuquén
+          formation: Candeleros
+          coordinates:
+            - -39.516388
+            - -68.75
+        holotype:
+          specimen_id: MUCPv-CH-1
+          institution: Universidad Nacional del Comahue, Neuquén
+        size:
+          length_m: 13
+          weight_kg: 14
+          hip_height_m: 5.5
+          estimate: true
+        described: 1995
+        authors: Coria and Salgado
+        described_in: coria1995
+    references:
+      - id: coria1995
+        authors: Coria, Rodolfo A.; Salgado, Leonardo
+        year: 1995
+        title: A new giant carnivorous dinosaur from the Cretaceous of Patagonia
+        journal: Nature
+        volume: "377"
+        issue: "6546"
+        pages: 224-226
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/377224a0
+        url: http://dx.doi.org/10.1038/377224a0
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Tetanurae
+      - Avetheropoda
+      - Carnosauria
+      - Carcharodontosauridae
+  Gigantoraptor:
+    genus: Gigantoraptor
+    parent: Caenagnathidae
+    description: Gigantoraptor is a genus of large oviraptorosaurian dinosaur that lived in Asia during the Late Cretaceous period. It is known from the Iren Dabasu Formation of Inner Mongolia, where the first remains were found in 2005.
+    diet: omnivore
+    identifiers:
+      - source: pbdb
+        id: "103707"
+      - source: wikidata
+        id: Q310496
+      - source: gbif
+        id: "4966283"
+      - source: eol
+        id: "52570725"
+    species:
+      - name: Gigantoraptor erlianensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+          from_ma: 83.6
+          to_ma: 72.2
+        location:
+          country: CN
+          region: Nei Mongol
+          formation: Iren Dabasu
+          coordinates:
+            - 43.548889
+            - 111.870834
+        holotype:
+          specimen_id: LH V0011
+          institution: Long Hao Institute of Geology and Palaeontology, Hohhot, Inner Mongolia, China
+        size:
+          length_m: 8
+          estimate: true
+        described: 2007
+        authors: Xu et al.
+        described_in: xu2007
+    references:
+      - id: xu2007
+        authors: Xu, Xing; Tan, Qingwei; Wang, Jianmin; Zhao, Xijin; Tan, Lin
+        year: 2007
+        title: A gigantic bird-like dinosaur from the Late Cretaceous of China
+        journal: Nature
+        volume: "447"
+        issue: "7146"
+        pages: 844-847
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/nature05849
+        url: http://dx.doi.org/10.1038/nature05849
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Oviraptorosauria
+      - Caenagnathidae
+  Gigantspinosaurus:
+    genus: Gigantspinosaurus
+    parent: Huayangosaurinae
+    description: Gigantspinosaurus is a genus of stegosaurian dinosaur from the Late Jurassic (Oxfordian) Upper Shaximiao Formation of China. The type species is Gigantspinosaurus sichuanensis. It was a moderately sized member of the group, measuring up to 4.2 metres (14 ft) in length.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "89460"
+      - source: wikidata
+        id: Q134984
+      - source: gbif
+        id: "6141929"
+      - source: eol
+        id: "52570668"
+    species:
+      - name: Gigantspinosaurus sichuanensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Middle Jurassic
+          stage:
+            - Bathonian
+            - Callovian
+        location:
+          country: CN
+          region: Sichuan
+          formation: Shaximiao
+          coordinates:
+            - 29.218168
+            - 104.707771
+        described: 1992
+        authors: Ouyang
+        described_in: maidment2006
+    references:
+      - id: maidment2006
+        authors: MAIDMENT, SUSANNAH C. R.; WEI, GUANGBIAO
+        year: 2006
+        title: A review of the Late Jurassic stegosaurs (Dinosauria, Stegosauria) from the People's Republic of China
+        journal: Geological Magazine
+        volume: "143"
+        issue: "5"
+        pages: 621-634
+        publisher: Cambridge University Press (CUP)
+        doi: 10.1017/s0016756806002500
+        url: http://dx.doi.org/10.1017/s0016756806002500
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Thyreophora
+      - Stegosauria
+      - Stegosauridae
+      - Huayangosaurinae
+  Gilmoreosaurus:
+    genus: Gilmoreosaurus
+    parent: Hadrosauroidea
+    etymology: Charles Whitney Gilmore's lizard
+    description: Gilmoreosaurus is a genus of hadrosauromorphan dinosaur from the Late Cretaceous of Asia. The type species is Gilmoreosaurus mongoliensis, known from the Iren Dabasu Formation of Inner Mongolia, dating to 96 million years ago. Additional specimens have been described as distinct species, including G. atavus from the Khodzhakul Formation of Uzbekistan, and G. arkhangelskyi from the Bissekty Formation, also of Uzbekistan. However, these are based on very fragmentary remains, and their classification is dubious. An additional species, G. kysylkumense, also from the Bissekty Formation, is sometimes included, though it has also been referred to the related genus Bactrosaurus.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "38772"
+      - source: wikidata
+        id: Q134637
+      - source: gbif
+        id: "4823298"
+      - source: eol
+        id: "4531702"
+    species:
+      - name: Gilmoreosaurus mongoliensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+          from_ma: 83.6
+          to_ma: 72.2
+        location:
+          country: CN
+          region: Nei Mongol
+          formation: Iren Dabasu
+          coordinates:
+            - 43.772221
+            - 111.929169
+        size:
+          length_m: 6
+          estimate: true
+        described: 1979
+        authors: Brett-Surman
+        described_in: brett-surman1979
+    references:
+      - id: brett-surman1979
+        authors: BRETT-SURMAN, M. K.
+        year: 1979
+        title: Phylogeny and palaeobiogeography of hadrosaurian dinosaurs
+        journal: Nature
+        volume: "277"
+        issue: "5697"
+        pages: 560-562
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/277560a0
+        url: http://dx.doi.org/10.1038/277560a0
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Dryomorpha
+      - Styracosterna
+      - Hadrosauriformes
+      - Hadrosauroidea
+  Giraffatitan:
+    genus: Giraffatitan
+    parent: Brachiosauridae
+    etymology: titanic giraffe
+    description: Giraffatitan is a genus of sauropod dinosaur that lived during the late Jurassic Period (Kimmeridgian–Tithonian stages) in what is now Lindi Region, Tanzania. Only one species is known, G. brancai, named in honor of German paleontologist Wilhelm von Branca, who was a driving force behind the expedition that discovered it in the Tendaguru Formation. Giraffatitan brancai was originally described by German paleontologist Werner Janensch as a species of the North American sauropod Brachiosaurus from the Morrison Formation, as Brachiosaurus brancai. Recent research shows that the differences between the type species of Brachiosaurus and the Tendaguru material are so large that the African material should be placed in a separate genus.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "92307"
+      - source: wikidata
+        id: Q14410
+      - source: gbif
+        id: "4822852"
+      - source: eol
+        id: "60974113"
+    species:
+      - name: Giraffatitan brancai
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Tithonian
+        location:
+          country: TZ
+          region: Lindi
+          formation: Tendaguru
+          coordinates:
+            - -9.695653
+            - 39.231327
+        holotype:
+          specimen_id: HMN SII
+          institution: Museum für Naturkunde Berlin, Berlin
+        size:
+          length_m: 23
+          estimate: true
+        described: 1988
+        authors: Paul
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Sauropoda
+      - Macronaria
+      - Brachiosauridae
+  Glacialisaurus:
+    genus: Glacialisaurus
+    parent: Massospondylidae
+    description: Glacialisaurus is a genus of sauropodomorph dinosaur from the Early Jurassic period of Antarctica. It is known from two specimens; the holotype (name-bearing specimen), a partial tarsus (ankle) and metatarsus, and a partial left femur (thigh bone). The fossils were collected by a team led by paleontologist William R. Hammer during a 1990–91 field expedition to the central region of the Transantarctic Mountains. They come from sedimentary rocks of the Hanson Formation and date to the Pliensbachian stage of the Early Jurassic, around 186 to 182 million years ago.
+    identifiers:
+      - source: pbdb
+        id: "117149"
+      - source: wikidata
+        id: Q431390
+      - source: gbif
+        id: "4967194"
+      - source: eol
+        id: "4532845"
+    species:
+      - name: Glacialisaurus hammeri
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Jurassic
+          stage:
+            - Pliensbachian
+        location:
+          country: AQ
+          formation: Hanson
+          coordinates:
+            - -84.333336
+            - 166.449997
+        holotype:
+          specimen_id: FMNH PR 1823
+          institution: Field Museum of Natural History, Chicago
+        described: 2007
+        authors: Smith and Pol
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Massospondylidae
+  Glishades:
+    genus: Glishades
+    parent: Saurolophinae
+    etymology: mud
+    description: Glishades is a genus of hadrosauroid dinosaur that lived in the Late Cretaceous in North America. It is based on AMNH 27414, two partial premaxillae discovered in the Upper Cretaceous rocks of the upper Two Medicine Formation in Montana, dated to about 74.5 million years ago. Cladistic analysis conducted by Prieto-Márquez suggests that Glishades is a non-hadrosaurid hadrosauroid, probably a sister taxon to Bactrosaurus johnsoni. The type species is Glishades ericksoni. In 2012, Campione et al. suggest the holotype specimen of Glishades might actually be an indeterminate juvenile saurolophine hadrosaurid and consider it to be a nomen dubium.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "167451"
+      - source: wikidata
+        id: Q1932493
+      - source: gbif
+        id: "9441828"
+    species:
+      - name: Glishades ericksoni
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+          from_ma: 83.6
+          to_ma: 72.2
+        location:
+          country: US
+          region: Montana
+          formation: Two Medicine
+          coordinates:
+            - 48.937965
+            - -112.650658
+        described: 2010
+        authors: Prieto-Márquez
+        described_in: prieto-márquez2010
+    references:
+      - id: prieto-márquez2010
+        authors: PRIETO-MÁRQUEZ, ALBERT
+        year: 2010
+        title: "Glishades ericksoni, a new hadrosauroid (Dinosauria: Ornithopoda) from the Late Cretaceous of North America"
+        journal: Zootaxa
+        volume: "2452"
+        issue: "1"
+        publisher: Magnolia Press
+        doi: 10.11646/zootaxa.2452.1.1
+        url: http://dx.doi.org/10.11646/zootaxa.2452.1.1
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Dryomorpha
+      - Styracosterna
+      - Hadrosauriformes
+      - Hadrosauroidea
+      - Hadrosauridae
+      - Saurolophinae
+  Glyptodontopelta:
+    genus: Glyptodontopelta
+    parent: Nodosauridae
+    etymology: Glyptodon shield
+    description: Glyptodontopelta is a monospecific genus of nodosaurid dinosaur from New Mexico that lived during the Late Cretaceous (lower to upper Maastrichtian, 69 to 66 Ma) in what is now the Naashoibito member of the Ojo Alamo Formation. The type and only species, Glyptodontopelta mimus, is known from numerous specimens that consist of osteoderms, a dentary, supraorbital and bone fragments. It was named in 2000 by Tracy Ford. Edmontonia australis is a junior synonym of Glyptodontopelta.
+    diet: herbivore
+    appearance:
+      integument: armored
+    identifiers:
+      - source: pbdb
+        id: "82623"
+      - source: wikidata
+        id: Q522942
+      - source: gbif
+        id: "4823191"
+      - source: eol
+        id: "10578079"
+    species:
+      - name: Glyptodontopelta mimus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: US
+          region: New Mexico
+          formation: Ojo Alamo
+          coordinates:
+            - 36.236942
+            - -108.892502
+        holotype:
+          specimen_id: USNM 8610
+          institution: National Museum of Natural History, Smithsonian Institution
+        described: 2000
+        authors: Ford
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Thyreophora
+      - Ankylosauria
+      - Nodosauridae
+  Gnathovorax:
+    genus: Gnathovorax
+    parent: Herrerasauridae
+    description: Gnathovorax is a genus of herrerasaurid saurischian dinosaur from the Santa Maria Formation in Rio Grande do Sul, Brazil. The type and only species is Gnathovorax cabreirai, described by Pacheco et al. in 2019. The type specimen comprises a mostly complete and well-preserved articulated skeleton (considered one of the best herrerasaurid skeletons ever discovered), which fossilized in close association with rhynchosaur and cynodont remains. The discovery of this superb specimen has shed light onto poorly understood aspects of herrerasaurid anatomy such as endocranial soft tissues.
+    identifiers:
+      - source: pbdb
+        id: "399807"
+      - source: wikidata
+        id: Q74029713
+      - source: gbif
+        id: "10685965"
+    species:
+      - name: Gnathovorax cabreirai
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Triassic
+          stage:
+            - Carnian
+          from_ma: 233.6
+          to_ma: 227.3
+        location:
+          country: BR
+          region: Rio Grande do Sul
+          formation: Santa Maria
+          coordinates:
+            - -29.631111
+            - -53.450558
+        holotype:
+          specimen_id: UFSM 0009
+          institution: Laboratório de Estratigrafia e Paleobiologia, Universidade Federal de Santa Maria
+        described: 2019
+        authors: Pacheco et al.
+        described_in: pacheco2019
+    references:
+      - id: pacheco2019
+        authors: Pacheco, Cristian; Müller, Rodrigo T.; Langer, Max; Pretto, Flávio A.; Kerber, Leonardo; Dias da Silva, Sérgio
+        year: 2019
+        title: "<i>Gnathovorax cabreirai</i>: a new early dinosaur and the origin and initial radiation of predatory dinosaurs"
+        journal: PeerJ
+        volume: "7"
+        pages: e7963
+        publisher: PeerJ
+        doi: 10.7717/peerj.7963
+        url: http://dx.doi.org/10.7717/peerj.7963
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Herrerasauridae
+  Gobihadros:
+    genus: Gobihadros
+    parent: Hadrosauroidea
+    description: Gobihadros is a genus of basal hadrosauroid dinosaur that lived during the Late Cretaceous period in what is now the Bayanshiree Formation (dated to the Cenomanian-Santonian) of Mongolia. It contains only the type species Gobihadros mongoliensis, which has an estimated length of 7.5 m (25 ft).
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "385121"
+      - source: wikidata
+        id: Q63203492
+      - source: gbif
+        id: "9323341"
+      - source: zoobank
+        id: 38EE8AD7-AD50-44BF-B31D-B2675456556A
+    species:
+      - name: Gobihadros mongoliensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Santonian
+        location:
+          country: MN
+          region: Omnogov
+          formation: Baynshire
+          coordinates:
+            - 43.504166
+            - 107.762497
+        holotype:
+          specimen_id: MPC-D100/746
+          institution: Paleontological Center, Mongolian Academy of Sciences, Ulaanbaatar
+        described: 2019
+        authors: Tsogtbaatar et al.
+        described_in: tsogtbaatar2019
+    references:
+      - id: tsogtbaatar2019
+        authors: Tsogtbaatar, Khishigjav; Weishampel, David B.; Evans, David C.; Watabe, Mahito
+        year: 2019
+        title: "A new hadrosauroid (Dinosauria: Ornithopoda) from the Late Cretaceous Baynshire Formation of the Gobi Desert (Mongolia)"
+        journal: PLOS ONE
+        volume: "14"
+        issue: "4"
+        pages: e0208480
+        publisher: Public Library of Science (PLoS)
+        doi: 10.1371/journal.pone.0208480
+        url: http://dx.doi.org/10.1371/journal.pone.0208480
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Dryomorpha
+      - Styracosterna
+      - Hadrosauriformes
+      - Hadrosauroidea
+  Gobiraptor:
+    genus: Gobiraptor
+    parent: Oviraptoridae
+    description: Gobiraptor is a genus of oviraptorid maniraptoran dinosaur from the Maastrichtian-aged Nemegt Formation of Mongolia. The type and only species is Gobiraptor minutus, known from a single incomplete specimen—the holotype MPC-D 102/111. It has been found not to be closely related to the other oviraptorids it shared its environment with.
+    diet: omnivore
+    identifiers:
+      - source: pbdb
+        id: "381603"
+      - source: wikidata
+        id: Q61607177
+      - source: eol
+        id: "55807055"
+    species:
+      - name: Gobiraptor minutus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: MN
+          region: Omnogov
+          formation: Nemegt
+          coordinates:
+            - 43.5
+            - 100.333336
+        described: 2019
+        authors: Lee et al.
+        described_in: lee2019
+    references:
+      - id: lee2019
+        authors: Lee, Sungjin; Lee, Yuong-Nam; Chinsamy, Anusuya; Lü, Junchang; Barsbold, Rinchen; Tsogtbaatar, Khishigjav
+        year: 2019
+        title: "A new baby oviraptorid dinosaur (Dinosauria: Theropoda) from the Upper Cretaceous Nemegt Formation of Mongolia"
+        journal: PLOS ONE
+        volume: "14"
+        issue: "2"
+        pages: e0210867
+        publisher: Public Library of Science (PLoS)
+        doi: 10.1371/journal.pone.0210867
+        url: http://dx.doi.org/10.1371/journal.pone.0210867
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Oviraptorosauria
+      - Oviraptoridae
+  Gobisaurus:
+    genus: Gobisaurus
+    parent: Ankylosauridae
+    description: Gobisaurus is an extinct genus of herbivorous basal ankylosaurid ankylosaur from the Lower Cretaceous of China (Nei Mongol Zizhiqu). The genus is monotypic, containing only the species Gobisaurus domoculus.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "84234"
+      - source: wikidata
+        id: Q134952
+      - source: gbif
+        id: "4576061"
+      - source: eol
+        id: "4530843"
+    species:
+      - name: Gobisaurus domoculus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Albian
+        location:
+          country: CN
+          region: Nei Mongol
+          formation: Miaogou
+          coordinates:
+            - 40.301338
+            - 105.943283
+        holotype:
+          specimen_id: IVPP V12563
+          institution: Institute of Vertebrate Paleontology and Paleoanthropology, Beijing
+        size:
+          length_m: 5
+          estimate: true
+        described: 2001
+        authors: Vickaryous et al.
+        described_in: vickaryous2001
+    references:
+      - id: vickaryous2001
+        authors: Vickaryous, Matthew K; Russell, Anthony P; Currie, Philip J; Zhao, Xi-Jin
+        year: 2001
+        title: "A new ankylosaurid (Dinosauria: Ankylosauria) from the Lower Cretaceous of China, with comments on ankylosaurian relationships"
+        journal: Canadian Journal of Earth Sciences
+        volume: "38"
+        issue: "12"
+        pages: 1767-1780
+        publisher: Canadian Science Publishing
+        doi: 10.1139/e01-051
+        url: http://dx.doi.org/10.1139/e01-051
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Thyreophora
+      - Ankylosauria
+      - Ankylosauridae
+  Gobititan:
+    genus: Gobititan
+    parent: Euhelopodidae
+    description: Gobititan is a genus of herbivorous sauropod dinosaur from the Aptian faunal stage of the Early Cretaceous. The name of this genus is derived from the Gobi Desert region and the Titans of Greek mythology, which is a reference to its large body size. The specific name shenzhouensis, is derived from "Shenzhou", an ancient name for China.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "84665"
+      - source: wikidata
+        id: Q135319
+      - source: gbif
+        id: "4967398"
+    species:
+      - name: Gobititan shenzhouensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Albian
+        location:
+          country: CN
+          region: Gansu
+          formation: Zhonggou
+          coordinates:
+            - 41.509445
+            - 97.616669
+        holotype:
+          specimen_id: IVPP 12579
+          institution: Institute of Vertebrate Paleontology and Paleoanthropology, Beijing
+        described: 2003
+        authors: You et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
+      - Euhelopodidae
+  Gobivenator:
+    genus: Gobivenator
+    parent: Troodontidae
+    description: Gobivenator is an extinct genus of troodontid theropod dinosaur known from the late Campanian Djadokhta Formation of central Gobi Desert, Mongolia. It contains a single species, Gobivenator mongoliensis. G. mongoliensis is known from a single individual, which represents the most complete specimen of a Late Cretaceous troodontid currently known.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "287652"
+      - source: wikidata
+        id: Q15632468
+      - source: eol
+        id: "42332922"
+    species:
+      - name: Gobivenator mongoliensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+          from_ma: 83.6
+          to_ma: 72.2
+        location:
+          country: MN
+          region: Ömnögovi Aimag
+          formation: Djadokhta
+          coordinates:
+            - 44.051388
+            - 102.82222
+        described: 2014
+        authors: Tsuihiji et al.
+        described_in: tsuihiji2014
+    references:
+      - id: tsuihiji2014
+        authors: Tsuihiji, Takanobu; Barsbold, Rinchen; Watabe, Mahito; Tsogtbaatar, Khishigjav; Chinzorig, Tsogtbaatar; Fujiyama, Yoshito; Suzuki, Shigeru
+        year: 2014
+        title: An exquisitely preserved troodontid theropod with new information on the palatal structure from the Upper Cretaceous of Mongolia
+        journal: Naturwissenschaften
+        volume: "101"
+        issue: "2"
+        pages: 131-142
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1007/s00114-014-1143-9
+        url: http://dx.doi.org/10.1007/s00114-014-1143-9
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Tetanurae
+      - Avetheropoda
+      - Coelurosauria
+      - Maniraptora
+      - Troodontidae
+  Gojirasaurus:
+    genus: Gojirasaurus
+    parent: Coelophysoidea
+    etymology: The generic name Gojirasaurus is derived from the name of the giant Japanese movie monster "Gojira" (Godzilla) and the Greek word "" () meaning "lizard"; thus, "Godzilla lizard". Carpenter (1997) selected "Gojira" in reference to the relatively large size of this theropod, which exceeded that of its Triassic counterparts. The specific name quayi is a reference to Quay County.
+    description: Gojirasaurus is a genus of coelophysoid theropod dinosaur named after the giant monster movie character Godzilla. It lived in the Late Triassic Period, containing a single known species, Gojirasaurus quayi.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "65489"
+      - source: wikidata
+        id: Q134199
+      - source: gbif
+        id: "4574775"
+      - source: eol
+        id: "47459635"
+    species:
+      - name: Gojirasaurus quayi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Triassic
+          stage:
+            - Norian
+        location:
+          country: US
+          region: New Mexico
+          formation: Bull Canyon
+          coordinates:
+            - 35.365276
+            - -103.379997
+        holotype:
+          specimen_id: UCM 47221
+          institution: University of Colorado Museum, Boulder, Colorado, USA. Formerly CU VP
+        described: 1997
+        authors: Carpenter
+        described_in: carpenter1997
+    references:
+      - id: carpenter1997
+        authors: Carpenter, Kenneth
+        year: 1997
+        title: A Giant Coelophysoid (Ceratosauria) Theropod from the Upper Triassic of New Mexico, USA
+        journal: Neues Jahrbuch für Geologie und Paläontologie - Abhandlungen
+        volume: "205"
+        issue: "2"
+        pages: 189-208
+        publisher: Schweizerbart
+        doi: 10.1127/njgpa/205/1997/189
+        url: http://dx.doi.org/10.1127/njgpa/205/1997/189
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Coelophysoidea
+  Gondwanatitan:
+    genus: Gondwanatitan
+    parent: Aeolosaurini
+    etymology: Gondwanatitan means "Gondwana Titan", and is named after Gondwana, the supercontinent that the genus' South American range was once part of, and the Titans of classical Greek mythology. The type and only named species, G. faustoi, is a patronym honoring Dr. Fausto L. de Souza Cunha, a former curator at the Museu Nacional/UFRJ who led the excavation of the type specimen.
+    description: Gondwanatitan was a titanosaurian sauropod dinosaur. Gondwanatitan was found in Brazil, at the time part of the southern supercontinent Gondwana, in the late Cretaceous Period (70 mya). Like some other sauropods, Gondwanatitan was tall and ate tough shoots and leaves from the tops of trees. Its closest relative was Aeolosaurus. The type species is Gondwanatitan faustoi, formally described by Kellner and de Azevedo in 1999.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "66573"
+      - source: wikidata
+        id: Q134063
+      - source: gbif
+        id: "4572020"
+      - source: eol
+        id: "52571705"
+    species:
+      - name: Gondwanatitan faustoi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: BR
+          region: São Paulo
+          formation: Adamantina
+          coordinates:
+            - -21.944166
+            - -51.373055
+        holotype:
+          specimen_id: MN 4111-V
+          institution: Museu Nacional, Rio de Janeiro
+        described: 1999
+        authors: Kellner and Azevedo
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
+      - Titanosauria
+      - Lithostrotia
+      - Aeolosaurini
+  Gongbusaurus:
+    genus: Gongbusaurus
+    parent: Fabrosauridae
+    description: Gongbusaurus is a genus of ornithischian, perhaps ornithopod, dinosaur that lived between about 160 and 157 million years ago, in the Late Jurassic period. A small herbivore, it is very poorly known. Two species have been assigned to it, but as the original name is based on teeth, there is no concrete evidence to connect the two species. Its fossils have been found in China.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "38719"
+      - source: wikidata
+        id: Q1656761
+      - source: gbif
+        id: "4571692"
+    species:
+      - name: Gongbusaurus shiyii
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Oxfordian
+        location:
+          country: CN
+          region: Sichuan
+          formation: Shaximiao
+          coordinates:
+            - 29.483299
+            - 104.366699
+        holotype:
+          specimen_id: IVPP V9069
+          institution: Institute of Vertebrate Paleontology and Paleoanthropology, Beijing
+        described: 1983
+        authors: Dong et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Fabrosauridae
+  Gongpoquansaurus:
+    genus: Gongpoquansaurus
+    parent: Hadrosauroidea
+    etymology: Gongpoquan reptile
+    description: Gongpoquansaurus is an extinct genus of basal hadrosauroid dinosaur that was not formally named until 2014, while the name was a nomen nudum for many years previously. It is known from IVPP V.11333, a partial skull and postcranial skeleton. It was collected in 1992 at locality IVPP 9208–21, from the Albian Zhonggou Formation (Xinminpu Group), in Mazongshan, Gansu Province, China. The specimen was first described and named by Lü Junchang in 1997 as the third species of Probactrosaurus, Probactrosaurus mazongshanensis. Following its description, several studies found it to be less derived than the type species of Probactrosaurus in relation to Hadrosauridae. In 2014, the species was formally redescribed, and the describers erected Gongpoquansaurus.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "325973"
+      - source: wikidata
+        id: Q15221671
+      - source: eol
+        id: "47460248"
+    species:
+      - name: Gongpoquansaurus mazongshanensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Albian
+        location:
+          country: CN
+          region: Gansu
+          formation: Zhonggou
+          coordinates:
+            - 41.575001
+            - 97.583336
+        described: 2014
+        authors: You et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Dryomorpha
+      - Styracosterna
+      - Hadrosauriformes
+      - Hadrosauroidea
+  Gongxianosaurus:
+    genus: Gongxianosaurus
+    parent: Sauropodiformes
+    description: "Gongxianosaurus is a genus of basal sauropod dinosaur from the early Jurassic Period (Sinemurian-Pliensbachian stage). The only species is Gongxianosaurus shibeiensis. Based on four fragmentary to complete specimens found in the Ziliujing Formation, China (Sichuan Province), it is one of the most completely known early sauropods. The skeleton is known in large part, missing both the hand and the majority of the skull. Gongxianosaurus was firstly named and described in a short note published in 1998; however, a comprehensive description has yet to be published. Gongxianosaurus shibeiensis was named for the place it was found, near the village Shibei in Gong County (珙县; Pinyin: Gǒng Xiàn)."
+    identifiers:
+      - source: pbdb
+        id: "66643"
+      - source: wikidata
+        id: Q1710249
+      - source: gbif
+        id: "4818291"
+    species:
+      - name: Gongxianosaurus shibeiensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Jurassic
+          stage:
+            - Toarcian
+        location:
+          country: CN
+          region: Sichuan
+          formation: Ziliujing
+          coordinates:
+            - 28.35
+            - 104.783302
+        described: 1998
+        authors: He et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+  Gonkoken:
+    genus: Gonkoken
+    parent: Hadrosauroidea
+    etymology: similar to a wild duck or swan
+    description: Gonkoken is an extinct genus of hadrosauroid ornithopod dinosaur from the Late Cretaceous Dorotea Formation of Chilean Patagonia. The genus contains a single species, Gonkoken nanoi, known from disarticulated bones of multiple individuals.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "475291"
+      - source: wikidata
+        id: Q119585708
+    species:
+      - name: Gonkoken nanoi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: CL
+          region: Última Esperanza
+          formation: Dorotea
+          coordinates:
+            - -50.711666
+            - -72.541389
+        holotype:
+          specimen_id: CPAP 3054
+          institution: Paleontological Collection of Antarctica and Patagonia, Chilean Antarctic Institute (INACH), Punta Arenas
+        described: 2023
+        authors: Alarcón-Muñoz et al.
+        described_in: alarcón-muñoz2023
+    references:
+      - id: alarcón-muñoz2023
+        authors: Alarcón-Muñoz, Jhonatan; Vargas, Alexander O.; Püschel, Hans P.; Soto-Acuña, Sergio; Manríquez, Leslie; Leppe, Marcelo; Kaluza, Jonatan; Milla, Verónica; Gutstein, Carolina S.; Palma-Liberona, José; Stinnesbeck, Wolfgang; Frey, Eberhard; Pino, Juan Pablo; Bajor, Dániel; Núñez, Elaine; Ortiz, Héctor; Rubilar-Rogers, David; Cruzado-Caballero, Penélope
+        year: 2023
+        title: Relict duck-billed dinosaurs survived into the last age of the dinosaurs in subantarctic Chile
+        journal: Science Advances
+        volume: "9"
+        issue: "24"
+        publisher: American Association for the Advancement of Science (AAAS)
+        doi: 10.1126/sciadv.adg2456
+        url: http://dx.doi.org/10.1126/sciadv.adg2456
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Dryomorpha
+      - Styracosterna
+      - Hadrosauriformes
+      - Hadrosauroidea
+  Gorgosaurus:
+    genus: Gorgosaurus
+    parent: Albertosaurinae
+    pronunciation:
+      ipa: /ˌɡɔːrɡəˈsɔːrəs/
+    description: Gorgosaurus is a genus of tyrannosaurid theropod dinosaur that lived in western North America during the Late Cretaceous Period (Campanian), between about 76.5 and 75 million years ago. Fossil remains have been found in the Canadian province of Alberta and the U.S. state of Montana. Paleontologists recognize only the type species, G. libratus, although other species have been erroneously referred to the genus.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "53193"
+      - source: wikidata
+        id: Q40752
+      - source: gbif
+        id: "4966240"
+      - source: eol
+        id: "4433629"
+    species:
+      - name: Gorgosaurus libratus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+            - Maastrichtian
+          from_ma: 83.6
+          to_ma: 66
+        location:
+          country: CA
+          region: Alberta
+          formation: Dinosaur Park
+          coordinates:
+            - 50.740726
+            - -111.528732
+        holotype:
+          specimen_id: NMC 2120
+          institution: Canadian Museum of Nature, Ottawa
+        size:
+          length_m: 5
+          weight_kg: 2
+          hip_height_m: 3
+          estimate: true
+        described: 1914
+        authors: Lambe
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Tyrannosauroidea
+      - Tyrannosauridae
+      - Albertosaurinae
+  Goyocephale:
+    genus: Goyocephale
+    parent: Pachycephalosauria
+    description: Goyocephale is an extinct genus of pachycephalosaurian ornithischian that lived in Mongolia during the Late Cretaceous about 76 million years ago. It was first described in 1982 by Altangerel Perle, Teresa Maryańska and Halszka Osmólska for a disarticulated skeleton with most of a skull, part of the forelimb and hindlimb, some of the pelvic girdle, and some vertebrae. Perle et al. named the remains Goyocephale lattimorei, from the Mongolian гоё (goyo), meaning "decorated", and the Ancient Greek κεφαλή (kephale), for head. The species name honours Owen Lattimore.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "38794"
+      - source: wikidata
+        id: Q133079
+      - source: gbif
+        id: "4823183"
+      - source: eol
+        id: "4532020"
+    species:
+      - name: Goyocephale lattimorei
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: MN
+          region: Omnogov
+          coordinates:
+            - 48.583332
+            - 102.066666
+        holotype:
+          specimen_id: GI (SPS) 100/1501
+          institution: Geological Institute, Mongolian Academy of Sciences, Ulaanbaatar
+        size:
+          length_m: 2
+          estimate: true
+        described: 1982
+        authors: Perle et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Cerapoda
+      - Marginocephalia
+      - Pachycephalosauria
+  Graciliceratops:
+    genus: Graciliceratops
+    parent: Neoceratopsia
+    etymology: slender horned face
+    description: Graciliceratops is a genus of neoceratopsian dinosaurs that lived in Asia during the Late Cretaceous period.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "67673"
+      - source: wikidata
+        id: Q133140
+      - source: gbif
+        id: "4823257"
+      - source: eol
+        id: "4531827"
+    species:
+      - name: Graciliceratops mongoliensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Santonian
+        location:
+          country: MN
+          region: Omnogov
+          formation: Baynshire
+          coordinates:
+            - 43.938889
+            - 101.331947
+        described: 2000
+        authors: Sereno
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Marginocephalia
+      - Ceratopsia
+      - Neoceratopsia
+  Graciliraptor:
+    genus: Graciliraptor
+    parent: Microraptorinae
+    etymology: graceful thief
+    description: Graciliraptor is a genus of microraptorian dromaeosaurid dinosaur from the early Cretaceous Period. Its fossil, holotype IVPP V 13474, was found in Beipiao, Liaoning Province, China. The type species is Graciliraptor lujiatunensis, named and described in 2004 by Xu Xing and Wang Xiaoling. The generic name is derived from Latin gracilis (meaning "graceful") and raptor (meaning "thief"). The specific name refers to the village of Lujiatun where the fossil site is located.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "146456"
+      - source: wikidata
+        id: Q134623
+      - source: gbif
+        id: "4822948"
+      - source: eol
+        id: "10578237"
+    species:
+      - name: Graciliraptor lujiatunensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+        location:
+          country: CN
+          region: Liaoning
+          formation: Yixian
+          coordinates:
+            - 41.603352
+            - 120.913269
+        holotype:
+          specimen_id: IVPP V13474
+          institution: Institute of Vertebrate Paleontology and Paleoanthropology, Beijing
+        described: 2004
+        authors: Xu and Wang
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Paraves
+      - Deinonychosauria
+      - Dromaeosauridae
+      - Microraptorinae
+  Gravitholus:
+    genus: Gravitholus
+    parent: Eupachycephalosauria
+    description: Gravitholus was a genus of pachycephalosaurid dinosaur from the late Cretaceous period (Campanian stage, around 75 million years ago). It was a pachycephalosaur, and like other pachycephalosaurids the skull roof formed a thick dome made of dense bone, which may have been used in head-butting contests over mates or territory. It lived in what is now Alberta, Canada, and was described in 1979 by W. P. Wall and Peter Galton. The type species is Gravitholus albertae.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "38784"
+      - source: wikidata
+        id: Q134642
+      - source: gbif
+        id: "4823084"
+    species:
+      - name: Stegoceras novomexicanum
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: CA
+          region: Alberta
+          formation: Oldman
+          coordinates:
+            - 50.450001
+            - -111.120003
+        described: 1979
+        authors: Wall and Galton
+        described_in: wall1979
+    references:
+      - id: wall1979
+        authors: Wall, William P.; Galton, Peter M.
+        year: 1979
+        title: "Notes on pachycephalosaurid dinosaurs (Reptilia: Ornithischia) from North America, with comments on their status as ornithopods"
+        journal: Canadian Journal of Earth Sciences
+        volume: "16"
+        issue: "6"
+        pages: 1176-1186
+        publisher: Canadian Science Publishing
+        doi: 10.1139/e79-104
+        url: http://dx.doi.org/10.1139/e79-104
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Marginocephalia
+      - Pachycephalosauria
+      - Eupachycephalosauria
+  Gremlin:
+    genus: Gremlin
+    parent: Leptoceratopsidae
+    description: Gremlin is a genus of leptoceratopsid ceratopsian dinosaurs from the Campanian stage of the Cretaceous period, 77 million years ago. It contains one species, Gremlin slobodorum, named in 2023 by Michael J. Ryan and colleagues from a frontal bone found in the Oldman Formation of Alberta. It can be distinguished from other leptoceratopsids by a ridge on the frontal that runs transversely from the midline of the skull outwards to the top end of the orbit.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "496386"
+      - source: wikidata
+        id: Q2274654
+    species:
+      - name: Gremlin slobodorum
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+          from_ma: 83.6
+          to_ma: 72.2
+        location:
+          country: US
+          region: Montana
+          formation: Two Medicine
+          coordinates:
+            - 48.496719
+            - -112.524338
+        described: 2023
+        authors: Ryan et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Marginocephalia
+      - Ceratopsia
+      - Neoceratopsia
+      - Leptoceratopsidae
+  Gryphoceratops:
+    genus: Gryphoceratops
+    parent: Leptoceratopsidae
+    description: Gryphoceratops is an extinct genus of leptoceratopsid ceratopsian dinosaur known from the Late Cretaceous of Alberta, southern Canada.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "228691"
+      - source: wikidata
+        id: Q966828
+      - source: gbif
+        id: "8484752"
+      - source: eol
+        id: "47459993"
+    species:
+      - name: Gryphoceratops morrisoni
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Santonian
+          from_ma: 85.7
+          to_ma: 83.6
+        location:
+          country: CA
+          region: Alberta
+          formation: Milk River
+          coordinates:
+            - 49.083698
+            - -111.436096
+        described: 2012
+        authors: Ryan et al.
+        described_in: ryan2012
+    references:
+      - id: ryan2012
+        authors: Ryan, Michael J.; Evans, David C.; Currie, Philip J.; Brown, Caleb M.; Brinkman, Don
+        year: 2012
+        title: New leptoceratopsids from the Upper Cretaceous of Alberta, Canada
+        journal: Cretaceous Research
+        volume: "35"
+        pages: 69-80
+        publisher: Elsevier BV
+        doi: 10.1016/j.cretres.2011.11.018
+        url: http://dx.doi.org/10.1016/j.cretres.2011.11.018
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Marginocephalia
+      - Ceratopsia
+      - Neoceratopsia
+      - Leptoceratopsidae
+  Gryponyx:
+    genus: Gryponyx
+    parent: Prosauropoda
+    etymology: Gryponyx was first named by Robert Broom in 1911 and the type species is Gryponyx africanus. The generic name is derived from grypos, Greek for "hooked" and onyx, Greek for "claw". The specific name refers to Africa, where the holotype was discovered.
+    description: Gryponyx is an extinct genus of massopod sauropodomorph known from southern Free State, central South Africa.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "56620"
+      - source: wikidata
+        id: Q18584967
+      - source: gbif
+        id: "4822546"
+    species:
+      - name: Gryponyx africanus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Jurassic
+          stage:
+            - Sinemurian
+        location:
+          country: ZW
+          region: Matabeleland North
+          formation: Forest Sandstone
+          coordinates:
+            - -19.893801
+            - 28.917299
+        described: 1911
+        authors: Broom
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Anchisauria
+      - Prosauropoda
+  Gryposaurus:
+    genus: Gryposaurus
+    parent: Kritosaurini
+    description: 'Gryposaurus (meaning "hook-nosed lizard"; sometimes incorrectly translated as "griffin (Latin gryphus) lizard") was a genus of duckbilled dinosaur that lived about 80 to 75 million years ago, in the Late Cretaceous (late Santonian to late Campanian stages) of North America. Named species of Gryposaurus are known from the Dinosaur Park Formation in Alberta, Canada, and two formations in the United States: the Lower Two Medicine Formation in Montana and the Kaiparowits Formation of Utah. A possible additional species from the Javelina Formation in Texas may extend the temporal range of the genus to 66 million years ago.'
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "53014"
+      - source: wikidata
+        id: Q385949
+      - source: gbif
+        id: "4823293"
+      - source: eol
+        id: "4531707"
+    species:
+      - name: Gryposaurus monumentensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: CA
+          region: Alberta
+          formation: Oldman
+          coordinates:
+            - 50.77
+            - -111.529999
+        holotype:
+          specimen_id: NMC 2278
+          institution: Canadian Museum of Nature, Ottawa
+        size:
+          length_m: 10
+          estimate: true
+        described: 1914
+        authors: Lambe
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Dryomorpha
+      - Styracosterna
+      - Hadrosauriformes
+      - Hadrosauroidea
+      - Hadrosauridae
+      - Hadrosaurinae
+      - Kritosaurini
+  Guaibasaurus:
+    genus: Guaibasaurus
+    parent: Guaibasauridae
+    description: Guaibasaurus is an extinct genus of basal saurischian dinosaur known from the Late Triassic Caturrita Formation of Rio Grande do Sul, southern Brazil. Most analyses recover it as a sauropodomorph, although there are some suggestions that it was a theropod instead. In 2016 Gregory S. Paul estimated it at around 2 meters long (6.6 ft) and 10 kg (22 lbs), whereas in 2020 Molina-Pérez and Larramendi listed it at 3 meters (10 ft) and 35 kg (77 lbs).
+    identifiers:
+      - source: pbdb
+        id: "66570"
+      - source: wikidata
+        id: Q133115
+      - source: gbif
+        id: "4819473"
+      - source: eol
+        id: "4658506"
+    species:
+      - name: Guaibasaurus candelariensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Triassic
+          stage:
+            - Norian
+        location:
+          country: BR
+          region: Rio Grande do Sul
+          formation: Caturrita
+          coordinates:
+            - -29.5625
+            - -53.446667
+        holotype:
+          specimen_id: PV2355
+          institution: Museu de Ciências Naturais, Fundação Zoobotânica do Rio Grande do Sul, Porto Alegre
+        size:
+          length_m: 1.8
+          estimate: true
+        described: 1999
+        authors: Bonaparte et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Guaibasauridae
+  Gualicho:
+    genus: Gualicho
+    parent: Tyrannosauroidea
+    description: Gualicho is an enigmatic genus of theropod dinosaurs. The type species is Gualicho shinyae. It lived in what is now northern Patagonia, on what was then a South American island continent split off from the supercontinent Gondwana. The fossils were found in the Huincul Formation, dating to the late Cenomanian-early Turonian age of the upper Cretaceous Period, around 91 million years ago.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "372448"
+      - source: wikidata
+        id: Q25861337
+    species:
+      - name: Gualicho shinyae
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Turonian
+        location:
+          country: AR
+          region: Río Negro
+          formation: Huincul
+          coordinates:
+            - -39.397778
+            - -68.617775
+        holotype:
+          specimen_id: MPCN PV 0001
+          institution: Museo Patagónico de Ciencias Naturales "Juan Carlos Salgado", General Roca, Río Negro, Argentina
+        described: 2016
+        authors: Apesteguia et al.
+        described_in: apesteguía2016
+    references:
+      - id: apesteguía2016
+        authors: Apesteguía, Sebastián; Smith, Nathan D.; Juárez Valieri, Rubén; Makovicky, Peter J.
+        year: 2016
+        title: An Unusual New Theropod with a Didactyl Manus from the Upper Cretaceous of Patagonia, Argentina
+        journal: PLOS ONE
+        volume: "11"
+        issue: "7"
+        pages: e0157793
+        publisher: Public Library of Science (PLoS)
+        doi: 10.1371/journal.pone.0157793
+        url: http://dx.doi.org/10.1371/journal.pone.0157793
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Tyrannosauroidea
+  Guanlong:
+    genus: Guanlong
+    parent: Proceratosauridae
+    description: Guanlong is an extinct genus of proceratosaurid tyrannosauroid dinosaur from the Late Jurassic (Oxfordian) Shishugou Formation of China. It was first described in 2006 by Xu Xing and colleagues, who found it to represent a new taxon related to Tyrannosaurus. Two individuals are currently known, consisting of a partially complete adult and a nearly complete juvenile.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "71190"
+      - source: wikidata
+        id: Q131121
+      - source: gbif
+        id: "4822626"
+      - source: eol
+        id: "4434277"
+    species:
+      - name: Guanlong wucaii
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Oxfordian
+        location:
+          country: CN
+          region: Xinjiang
+          formation: Shishugou
+          coordinates:
+            - 45.171223
+            - 88.9217
+        holotype:
+          specimen_id: IVPP V14531
+          institution: Institute of Vertebrate Paleontology and Paleoanthropology, Beijing
+        size:
+          length_m: 3
+          estimate: true
+        described: 2006
+        authors: Xu et al.
+        described_in: xu2006
+    references:
+      - id: xu2006
+        authors: Xu, Xing; Clark, James M.; Forster, Catherine A.; Norell, Mark A.; Erickson, Gregory M.; Eberth, David A.; Jia, Chengkai; Zhao, Qi
+        year: 2006
+        title: A basal tyrannosauroid dinosaur from the Late Jurassic of China
+        journal: Nature
+        volume: "439"
+        issue: "7077"
+        pages: 715-718
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/nature04511
+        url: http://dx.doi.org/10.1038/nature04511
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Tyrannosauroidea
+      - Proceratosauridae
+  Guemesia:
+    genus: Guemesia
+    parent: Brachyrostra
+    description: Guemesia is a genus of abelisaurid dinosaur from the Late Cretaceous Los Blanquitos Formation of Salta Province, Argentina. The type and only species is Guemesia ochoai, known from a nearly complete braincase. It is one of the smallest abelisaurids currently known.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "460113"
+      - source: wikidata
+        id: Q110886909
+    species:
+      - name: Guemesia ochoai
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: AR
+          region: Salta
+          formation: Los Blanquitos
+          coordinates:
+            - -24.838888
+            - -65.386665
+        holotype:
+          specimen_id: IBIGEO-P 103
+          institution: Instituto de Bio y Geociencias del NOA, Rosario de Lerma
+        described: 2021
+        authors: Agnolín et al.
+        described_in: agnolín2021
+    references:
+      - id: agnolín2021
+        authors: Agnolín, Federico L.; Cerroni, Mauricio A.; Scanferla, Agustín; Goswami, Anjali; Paulina-Carabajal, Ariana; Halliday, Thomas; Cuff, Andrew R.; Reuil, Santiago
+        year: 2021
+        title: First definitive abelisaurid theropod from the Late Cretaceous of Northwestern Argentina
+        journal: Journal of Vertebrate Paleontology
+        volume: "41"
+        issue: "4"
+        publisher: Informa UK Limited
+        doi: 10.1080/02724634.2021.2002348
+        url: http://dx.doi.org/10.1080/02724634.2021.2002348
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Ceratosauria
+      - Abelisauridae
+      - Brachyrostra
+  Gwyneddosaurus:
+    genus: Gwyneddosaurus
+    parent: Archosauromorpha
+    description: Gwyneddosaurus is a possibly invalid genus of extinct aquatic tanystropheid reptile. The type species, G. erici was described in 1945 by Wilhelm Bock, who identified it as a coelurosaurian dinosaur related to Podokesaurus (at the time, "podokesaurids" were thought to be coelurosaurians). Its remains were found in the Upper Triassic Lockatong Formation of Montgomery County, eastern Pennsylvania, and the holotype includes skull fragments, several vertebra, ribs, gastralia, partial shoulder and hip bones, and several forelimb and hindlimb elements found in soft shale, while the paratype includes a femur and a tibia. The type specimen is ANSP 15072 and it was discovered by Bock's four-year-old son while the paratype is only listed as ?(ASNP coll.). It was not a large animal; the type skeleton was estimated by Bock as 18 centimetres (7.1 in) long, and its thigh bone was only 23 millimeters long (0.91 in).
+    identifiers:
+      - source: pbdb
+        id: "80906"
+      - source: wikidata
+        id: Q5623838
+      - source: gbif
+        id: "4818318"
+    species:
+      - name: Gwyneddosaurus erici
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Triassic
+          stage:
+            - Norian
+        location:
+          country: US
+          region: Pennsylvania
+          formation: Lockatong
+          coordinates:
+            - 40.198696
+            - -75.26889
+        described: 1945
+        authors: Bock
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauromorpha
+  Hadrosaurus:
+    genus: Hadrosaurus
+    parent: Brachylophosaurini
+    pronunciation:
+      ipa: /ˌhædrəˈsɔːrəs/
+    description: Hadrosaurus is a genus of hadrosaurid ornithopod dinosaurs that lived in North America during the Late Cretaceous Period in what is now the Woodbury Formation in New Jersey about 83.6 to 77.9 million years ago. The holotype specimen was found in fluvial marine sedimentation, meaning that the corpse of the animal was transported by a river and washed out to sea. Some fossils are found in the Tar Heel/Coachman Formation.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "38762"
+      - source: wikidata
+        id: Q14511
+      - source: gbif
+        id: "4823271"
+      - source: eol
+        id: "4531717"
+      - source: zoobank
+        id: 9E7BC335-6E94-4C3F-B5A9-B55A86F9A6EE
+    species:
+      - name: Hadrosaurus foulkii
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: US
+          region: New Jersey
+          formation: Marshalltown
+          coordinates:
+            - 40.299999
+            - -74.300003
+        holotype:
+          specimen_id: A.N.S.P. 10005
+          institution: Academy of Natural Sciences, Philadelphia
+        size:
+          length_m: 9
+          estimate: true
+        described: 1858
+        authors: Leidy
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Dryomorpha
+      - Styracosterna
+      - Hadrosauriformes
+      - Hadrosauroidea
+      - Hadrosauridae
+      - Hadrosaurinae
+      - Brachylophosaurini
+  Haestasaurus:
+    genus: Haestasaurus
+    parent: Eusauropoda
+    description: Haestasaurus is a genus of herbivorous sauropod dinosaur, belonging to the Macronaria, that during the Early Cretaceous lived in the area of present-day England. The only species is Haestasaurus becklesii.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "321574"
+      - source: wikidata
+        id: Q20054871
+    species:
+      - name: Haestasaurus becklesii
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Valanginian
+          from_ma: 139.1
+          to_ma: 132.6
+        location:
+          country: GB
+          region: England
+          formation: Hastings Beds
+          coordinates:
+            - 50.849998
+            - 0.6
+        holotype:
+          specimen_id: NHMUK R1870
+          institution: Natural History Museum, London
+        described: 2015
+        authors: Upchurch et al.
+        described_in: upchurch2015
+    references:
+      - id: upchurch2015
+        authors: Upchurch, Paul; Mannion, Philip D.; Taylor, Michael P.
+        year: 2015
+        title: The Anatomy and Phylogenetic Relationships of “Pelorosaurus“ becklesii (Neosauropoda, Macronaria) from the Early Cretaceous of England
+        journal: PLOS ONE
+        volume: "10"
+        issue: "6"
+        pages: e0125819
+        publisher: Public Library of Science (PLoS)
+        doi: 10.1371/journal.pone.0125819
+        url: http://dx.doi.org/10.1371/journal.pone.0125819
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+  Hagryphus:
+    genus: Hagryphus
+    parent: Caenagnathinae
+    description: Hagryphus is a monospecific genus of caenagnathid dinosaur from southern Utah that lived during the Late Cretaceous (upper Campanian stage, 75.95 Ma) in what is now the Kaiparowits Formation of the Grand Staircase–Escalante National Monument. The type and only species, Hagryphus giganteus, is known only from an incomplete but articulated left manus and the distal portion of the left radius. It was named in 2005 by Lindsay E. Zanno and Scott D. Sampson. Hagryphus has an estimated length of 2.4–3 metres (8–10 feet) and weight of 50 kilograms (110 lbs).
+    diet: omnivore
+    identifiers:
+      - source: pbdb
+        id: "71334"
+      - source: wikidata
+        id: Q137257
+      - source: gbif
+        id: "4966285"
+      - source: eol
+        id: "47458449"
+    species:
+      - name: Hagryphus giganteus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+          from_ma: 83.6
+          to_ma: 72.2
+        location:
+          country: US
+          region: Utah
+          formation: Kaiparowits
+          coordinates:
+            - 37.647072
+            - -111.862358
+        size:
+          length_m: 3
+          estimate: true
+        described: 2005
+        authors: Zanno and Sampson
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Oviraptorosauria
+      - Caenagnathidae
+      - Caenagnathinae
+  Halszkaraptor:
+    genus: Halszkaraptor
+    parent: Halszkaraptorinae
+    etymology: Halszka's seizer
+    pronunciation:
+      ipa: /ˈhɑːlʃkəræptər/
+    description: Halszkaraptor is a genus of waterfowl-like dromaeosaurid dinosaurs from Mongolia that lived during the Late Cretaceous period. It contains only one known species, Halszkaraptor escuilliei.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "364103"
+      - source: wikidata
+        id: Q44884994
+      - source: gbif
+        id: "9437082"
+      - source: eol
+        id: "60974107"
+      - source: zoobank
+        id: B14CF603-F0E9-4DC6-9BB1-D215549B6D4F
+    species:
+      - name: Halszkaraptor escuilliei
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+          from_ma: 83.6
+          to_ma: 72.2
+        location:
+          country: MN
+          region: Omnogov
+          formation: Djadokhta
+          coordinates:
+            - 43.664444
+            - 100.901947
+        described: 2017
+        authors: Cau et al.
+        described_in: cau2017
+    references:
+      - id: cau2017
+        authors: Cau, Andrea; Beyrand, Vincent; Voeten, Dennis F. A. E.; Fernandez, Vincent; Tafforeau, Paul; Stein, Koen; Barsbold, Rinchen; Tsogtbaatar, Khishigjav; Currie, Philip J.; Godefroit, Pascal
+        year: 2017
+        title: Synchrotron scanning reveals amphibious ecomorphology in a new clade of bird-like dinosaurs
+        journal: Nature
+        volume: "552"
+        issue: "7685"
+        pages: 395-399
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/nature24679
+        url: http://dx.doi.org/10.1038/nature24679
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Paraves
+      - Deinonychosauria
+      - Dromaeosauridae
+      - Halszkaraptorinae
+  Halticosaurus:
+    genus: Halticosaurus
+    parent: Theropoda
+    etymology: The name Halticosaurus comes from the Greek words ' () meaning "good at jumping"/"nimble" and ' () meaning "lizard"; thus "nimble lizard". Halticosaurus was described and named by Friedrich von Huene in 1908 and the type species is Halticosaurus longotarsus.
+    pronunciation:
+      phonetic: HAL-tick-oh-SORE-us
+    description: Halticosaurus is a dubious genus of theropod dinosaur from the late Triassic period (middle Norian stage, around 215.6–208 million years ago). It is known from a single fragmentary fossil specimen of the species H. longotarsus, found in the Middle Stubensandstein formation of what is present-day Germany The only known specimen was poorly preserved and may have been put together from bones of unrelated animals. Further research would be required to determine which of the bones belonged together, and what kind of theropod Halticosaurus was. However, most of the bones have been lost. For these reasons, Halticosaurus is considered to be a nomen dubium.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "38516"
+      - source: wikidata
+        id: Q28554799
+    species:
+      - name: Halticosaurus longotarsus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Triassic
+          stage:
+            - Rhaetian
+        location:
+          country: DE
+          region: Sachsen-Anhalt
+          formation: Trossingen
+          coordinates:
+            - 51.897499
+            - 11.073611
+        holotype:
+          specimen_id: SMNS 12353
+          institution: Staatliches Museum für Naturkunde, Stuttgart
+        described: 1908
+        authors: Huene
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+  Hamititan:
+    genus: Hamititan
+    parent: Titanosauria
+    etymology: Hami giant
+    description: Hamititan is a genus of titanosaur sauropod dinosaur from the Shengjinkou Formation of Xinjiang, China. It contains one species, the type species, Hamititan xinjiangensis.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "440882"
+      - source: wikidata
+        id: Q108068415
+    species:
+      - name: Hamititan xinjiangensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Valanginian
+          from_ma: 137.05
+          to_ma: 132.6
+        location:
+          country: CN
+          region: Xinjiang
+          formation: Shengjinkou
+          coordinates:
+            - 42.749168
+            - 92.498886
+        holotype:
+          specimen_id: HM V22
+          institution: Museum für Naturkunde Berlin, Berlin
+        described: 2021
+        authors: Wang et al.
+        described_in: wang2021
+    references:
+      - id: wang2021
+        authors: Wang, Xiaolin; Bandeira, Kamila L. N.; Qiu, Rui; Jiang, Shunxing; Cheng, Xin; Ma, Yingxia; Kellner, Alexander W. A.
+        year: 2021
+        title: The first dinosaurs from the Early Cretaceous Hami Pterosaur Fauna, China
+        journal: Scientific Reports
+        volume: "11"
+        issue: "1"
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/s41598-021-94273-7
+        url: http://dx.doi.org/10.1038/s41598-021-94273-7
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Sauropoda
+      - Macronaria
+      - Titanosauria
+  Hanssuesia:
+    genus: Hanssuesia
+    parent: Pachycephalosauridae
+    description: Hanssuesia is a genus of pachycephalosaurid dinosaurs from the late Cretaceous period. It lived in what is now Alberta and Montana, and contains the single species Hanssuesia sternbergi.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "67704"
+      - source: wikidata
+        id: Q812762
+      - source: gbif
+        id: "4823074"
+      - source: eol
+        id: "47460084"
+    species:
+      - name: Troodon sternbergi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+        holotype:
+          specimen_id: NMC 8817
+          institution: Canadian Museum of Nature, Ottawa
+        described: 2003
+        authors: Sullivan
+        described_in: sullivan2003
+    references:
+      - id: sullivan2003
+        authors: Sullivan, Robert M.
+        year: 2003
+        title: Hanssuesia, the correct generic name for ‘Hanssuessia’ Sullivan, 2003
+        journal: Journal of Vertebrate Paleontology
+        volume: "23"
+        issue: "3"
+        pages: 714-714
+        publisher: Informa UK Limited
+        doi: 10.1671/03010
+        url: http://dx.doi.org/10.1671/03010
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Marginocephalia
+      - Pachycephalosauria
+      - Pachycephalosauridae
+  Haolong:
+    genus: Haolong
+    parent: Hadrosauroidea
+    description: Haolong is an extinct genus of hadrosauroid ornithopod dinosaur known from the Early Cretaceous (Barremian age) Yixian Formation of Liaoning, China. The genus contains a single species, Haolong dongi, known from a nearly complete, articulated skeleton with preserved integumentary structures.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "519175"
+      - source: wikidata
+        id: Q18652094
+    species:
+      - name: Haolong dongi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Barremian
+        location:
+          country: CN
+          region: Liaoning
+          formation: Yixian
+          coordinates:
+            - 40.682804
+            - 119.67215
+        holotype:
+          specimen_id: AGM 16793
+          institution: Anhui Geological Museum, Hefei, China
+        described: 2026
+        authors: Huang et al.
+        described_in: huang2026
+    references:
+      - id: huang2026
+        authors: Huang, Jiandong; Wu, Wenhao; Mao, Lei; Bertozzo, Filippo; Dhouailly, Danielle; Robin, Ninon; Pittman, Michael; Kaye, Thomas G.; Manucci, Fabio; He, Xuezhi; Wang, Xuri; Godefroit, Pascal
+        year: 2026
+        title: Cellular-level preservation of cutaneous spikes in an Early Cretaceous iguanodontian dinosaur
+        journal: Nature Ecology &amp; Evolution
+        volume: "10"
+        issue: "2"
+        pages: 203-210
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/s41559-025-02960-9
+        url: http://dx.doi.org/10.1038/s41559-025-02960-9
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Dryomorpha
+      - Styracosterna
+      - Hadrosauriformes
+      - Hadrosauroidea
+  Haplocanthosaurus:
+    genus: Haplocanthosaurus
+    parent: Diplodocoidea
+    etymology: simple spined lizard
+    description: Haplocanthosaurus is a genus of diplodocoid sauropod dinosaur. Two species, H. delfsi and H. priscus, are known from incomplete fossil skeletons. They lived during the Late Jurassic (Kimmeridgian stage), 155 to 152 million years ago in North America. The type species is H. priscus, named in 1903 John Bell Hatcher , and the referred species H. delfsi was discovered by a young college student named Edwin Delfs in Colorado, United States and described by Jack McIntosh and Michael Williams in 1988. Haplocanthosaurus specimens have been found in the lowermost layer of the Morrison Formation, along with Hesperosaurus mjosi, Brontosaurus yahnahpin, and Allosaurus jimmadseni.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "38658"
+      - source: wikidata
+        id: Q133453
+      - source: gbif
+        id: "4822746"
+    species:
+      - name: Haplocanthosaurus delfsi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Tithonian
+        location:
+          country: US
+          region: Colorado
+          formation: Morrison
+          coordinates:
+            - 38.539501
+            - -105.224701
+        holotype:
+          specimen_id: CM 572
+          institution: Carnegie Museum of Natural History, Pittsburgh
+        size:
+          length_m: 21.5
+          estimate: true
+        described: 1903
+        authors: Hatcher
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Diplodocoidea
+  Haplocheirus:
+    genus: Haplocheirus
+    parent: Alvarezsauroidea
+    etymology: From Greek ἁπλός (haplós), meaning "simple", and χείρ (kheír), meaning "hand"; thus "simple hand".
+    pronunciation:
+      ipa: /ˌhæplʊuˈkəirəs/
+    description: Haplocheirus is an extinct genus of theropod dinosaur from the Middle Jurassic Shishugou Formation of Xinjiang in China. It is generally considered to be an alvarezsauroid, although some researchers have questioned this assignment. The genus contains a single species, H. sollers, which is known from a mostly complete skeleton including the skull.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "162352"
+      - source: wikidata
+        id: Q81482
+    species:
+      - name: Haplocheirus sollers
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Oxfordian
+        location:
+          country: CN
+          region: Xinjiang
+          formation: Shishugou
+          coordinates:
+            - 45.191288
+            - 88.919884
+        holotype:
+          specimen_id: IVPP V15988
+          institution: Institute of Vertebrate Paleontology and Paleoanthropology, Beijing
+        described: 2010
+        authors: Choiniere et al.
+        described_in: choiniere2010
+    references:
+      - id: choiniere2010
+        authors: Choiniere, Jonah N.; Xu, Xing; Clark, James M.; Forster, Catherine A.; Guo, Yu; Han, Fenglu
+        year: 2010
+        title: A Basal Alvarezsauroid Theropod from the Early Late Jurassic of Xinjiang, China
+        journal: Science
+        volume: "327"
+        issue: "5965"
+        pages: 571-574
+        publisher: American Association for the Advancement of Science (AAAS)
+        doi: 10.1126/science.1182143
+        url: http://dx.doi.org/10.1126/science.1182143
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Alvarezsauria
+      - Alvarezsauroidea
+  Harenadraco:
+    genus: Harenadraco
+    parent: Troodontidae
+    etymology: sand dragon
+    description: Harenadraco is an extinct genus of troodontid theropod dinosaurs from the Late Cretaceous Baruungoyot Formation of Mongolia. The genus contains a single species, H. prima, known from a fragmentary skeleton. Harenadraco represents the first troodontid known from the Baruungoyot Formation. Since members of this family are also known from the Nemegt and Djadochta Formations, the discovery of Harendraco indicates that troodontids were important faunal components of every formation within the Nemegt Basin.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "494700"
+      - source: wikidata
+        id: Q127456847
+      - source: zoobank
+        id: E290FCB1-13FF-410D-A8EA-BEB6A707F561
+    species:
+      - name: Harenadraco prima
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+          from_ma: 83.6
+          to_ma: 72.2
+        location:
+          country: MN
+          region: Omnogov
+          formation: Baruungoyot
+          coordinates:
+            - 43.540001
+            - 99.599998
+        holotype:
+          specimen_id: MPC-D 110/119
+          institution: Paleontological Center, Mongolian Academy of Sciences, Ulaanbaatar
+        described: 2024
+        authors: Lee et al.
+        described_in: lee2023
+    references:
+      - id: lee2023
+        authors: Lee, Sungjin; Lee, Yuong-Nam; Park, Jin-Young; Kim, Su-Hwan; Badamkhatan, Zorigt; Idersaikhan, Damdinsuren; Tsogtbaatar, Khishigjav
+        year: 2023
+        title: "The first troodontid (Dinosauria: Theropoda) from the Upper Cretaceous Baruungoyot Formation of Mongolia"
+        journal: Journal of Vertebrate Paleontology
+        volume: "43"
+        issue: "6"
+        publisher: Informa UK Limited
+        doi: 10.1080/02724634.2024.2364746
+        url: http://dx.doi.org/10.1080/02724634.2024.2364746
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Tetanurae
+      - Avetheropoda
+      - Coelurosauria
+      - Maniraptora
+      - Troodontidae
+  Harpymimus:
+    genus: Harpymimus
+    parent: Deinocheiridae
+    description: Harpymimus is a genus of basal ornithomimosaurian theropod dinosaur from the Early Cretaceous Period of what is now Mongolia. Unlike later, more derived ornithomimosaurs, Harpymimus still possessed teeth, although they appear to have been restricted to the dentary of the lower jaw.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "66669"
+      - source: wikidata
+        id: Q133152
+      - source: gbif
+        id: "4822911"
+      - source: eol
+        id: "47458752"
+    species:
+      - name: Harpymimus okladnikovi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Albian
+          from_ma: 110.1
+          to_ma: 100.5
+        location:
+          country: MN
+          region: Dornogov
+          formation: Khuren Dukh
+          coordinates:
+            - 45.845833
+            - 108.398613
+        holotype:
+          specimen_id: IGM 100/29
+          institution: Geological Institute, Mongolian Academy of Sciences, Ulaanbaatar
+        size:
+          length_m: 2
+          estimate: true
+        described: 1984
+        authors: Barsbold and Perle
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptoriformes
+      - Arctometatarsalia
+      - Ornithomimosauria
+      - Deinocheiridae
+  Haya:
+    genus: Haya
+    parent: Thescelosauridae
+    etymology: Sanskrit for the "Hayagriva" avatar of the Hindu god Vishnu
+    description: Haya is an extinct genus of basal neornithischian dinosaur known from the Late Cretaceous of Mongolia.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "186989"
+      - source: wikidata
+        id: Q1655422
+      - source: gbif
+        id: "8667556"
+      - source: eol
+        id: "6360399"
+    species:
+      - name: Haya griva
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+        location:
+          country: MN
+          region: Dornogov
+          formation: Javkhlant
+          coordinates:
+            - 44.393677
+            - 109.35318
+        holotype:
+          specimen_id: IGM 100/2017
+          institution: Institute of Geology, Mongolian Academy of Sciences, Ulaanbaatar
+        described: 2011
+        authors: Makovicky et al.
+        described_in: makovicky2011
+    references:
+      - id: makovicky2011
+        authors: Makovicky, Peter J.; Kilbourne, Brandon M.; Sadleir, Rudyard W.; Norell, Mark A.
+        year: 2011
+        title: A new basal ornithopod (Dinosauria, Ornithischia) from the Late Cretaceous of Mongolia
+        journal: Journal of Vertebrate Paleontology
+        volume: "31"
+        issue: "3"
+        pages: 626-640
+        publisher: Informa UK Limited
+        doi: 10.1080/02724634.2011.557114
+        url: http://dx.doi.org/10.1080/02724634.2011.557114
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Neornithischia
+      - Thescelosauridae
+  Heishansaurus:
+    genus: Heishansaurus
+    parent: Ankylosauria
+    description: Heishansaurus, meaning "Heishan lizard" after the area in China where it was discovered, is the name given to a dubious genus of herbivorous ornithischian dinosaur, probably belonging to the Ankylosauridae.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "65700"
+      - source: wikidata
+        id: Q871874
+      - source: gbif
+        id: "4823322"
+    species:
+      - name: Heishansaurus sp.
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: CN
+          region: Gansu
+          formation: Minhe
+          coordinates:
+            - 39.8167
+            - 98.300003
+        described: 1953
+        authors: Bohlin
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Thyreophora
+      - Ankylosauria
+  Helioceratops:
+    genus: Helioceratops
+    parent: Leptoceratopsidae
+    description: Helioceratops is a genus of herbivorous neoceratopsian dinosaur from the Middle Cretaceous of China.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "153895"
+      - source: wikidata
+        id: Q2087008
+    species:
+      - name: Helioceratops brachygnathus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Albian
+        location:
+          country: CN
+          region: Jilin
+          formation: Quantou
+          coordinates:
+            - 43.585079
+            - 124.894295
+        holotype:
+          specimen_id: JLUM L0204-Y-3
+          institution: Jilin University Museum, Changchun
+        described: 2009
+        authors: Jin et al.
+        described_in: jin2009
+    references:
+      - id: jin2009
+        authors: JIN, Liyong; CHEN, Jun; ZAN, Shuqin; GODEFROIT, Pascal
+        year: 2009
+        title: A New Basal Neoceratopsian Dinosaur from the Middle Cretaceous of Jilin Province, China
+        journal: Acta Geologica Sinica - English Edition
+        volume: "83"
+        issue: "2"
+        pages: 200-206
+        publisher: Wiley
+        doi: 10.1111/j.1755-6724.2009.00023.x
+        url: http://dx.doi.org/10.1111/j.1755-6724.2009.00023.x
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Marginocephalia
+      - Ceratopsia
+      - Neoceratopsia
+      - Leptoceratopsidae
+  Heptasteornis:
+    genus: Heptasteornis
+    parent: Troodontidae
+    description: Heptasteornis is a dubious genus of alvarezsaurid dinosaur from the Late Cretaceous. The type (and only known) species is Heptasteornis andrewsi, described as a presumed gigantic prehistoric owl in 1975. It was previously included in Elopteryx nopcsai and indeed the holotypes of both species were believed to be from the same individual as they were discovered, and initially were assigned the same specimen number. This appears to be in error however.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "38618"
+      - source: wikidata
+        id: Q19297446
+      - source: gbif
+        id: "4822805"
+    species:
+      - name: Heptasteornis andrewsi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        described: 1975
+        authors: Harrison and Walker
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Tetanurae
+      - Avetheropoda
+      - Coelurosauria
+      - Maniraptora
+      - Troodontidae
+  Herrerasaurus:
+    genus: Herrerasaurus
+    parent: Herrerasauridae
+    description: Herrerasaurus is likely a genus of saurischian dinosaur from the Late Triassic period. Measuring 6 m (20 ft) long and weighing around 350 kg (770 lb), this genus was one of the earliest dinosaurs from the fossil record. Its name means "Herrera's lizard", after the rancher who discovered the first specimen in 1958 in South America. All known fossils of this carnivore have been discovered in the Ischigualasto Formation of Carnian age (late Triassic according to the ICS, dated to 231.4 million years ago) in northwestern Argentina. The type species, Herrerasaurus ischigualastensis, was described by Osvaldo Reig in 1963 and is the only species assigned to the genus. Ischisaurus and Frenguellisaurus are synonyms.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "38511"
+      - source: wikidata
+        id: Q131014
+      - source: gbif
+        id: "4822914"
+      - source: eol
+        id: "4531444"
+    species:
+      - name: Herrerasaurus ischigualastensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Triassic
+          stage:
+            - Carnian
+          from_ma: 237
+          to_ma: 227.3
+        location:
+          country: AR
+          region: San Juan
+          formation: Ischigualasto
+          coordinates:
+            - -31.10111
+            - -68.904999
+        size:
+          length_m: 3
+          estimate: true
+        described: 1963
+        authors: Reig
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Herrerasauridae
+  Hesperonychus:
+    genus: Hesperonychus
+    parent: Microraptorinae
+    etymology: western claw
+    description: Hesperonychus is a genus of small dromaeosaurid dinosaur. There is one described species, Hesperonychus elizabethae. The type species was named in honor of Dr. Elizabeth Nicholls of the Royal Tyrrell Museum of Palaeontology who collected it as a student in 1982. It is known from fossils recovered from the Dinosaur Park Formation and possibly from the uppermost strata of the Oldman Formation of Alberta, dating to the Campanian stage of the Late Cretaceous around 75 million years ago.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "143266"
+      - source: wikidata
+        id: Q751087
+      - source: gbif
+        id: "4966327"
+      - source: eol
+        id: "10657116"
+    species:
+      - name: Hesperonychus elizabethae
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+          from_ma: 83.6
+          to_ma: 72.2
+        location:
+          country: CA
+          region: Alberta
+          formation: Dinosaur Park
+          coordinates:
+            - 49.956699
+            - -110.266197
+        holotype:
+          specimen_id: UALVP 48778
+          institution: University of Alberta Laboratory for Vertebrate Paleontology, Edmonton
+        size:
+          length_m: 1
+          weight_kg: 2
+          estimate: true
+        described: 2009
+        authors: Longrich and Currie
+        described_in: longrich2009
+    references:
+      - id: longrich2009
+        authors: Longrich, Nicholas R.; Currie, Philip J.
+        year: 2009
+        title: A microraptorine (Dinosauria–Dromaeosauridae) from the Late Cretaceous of North America
+        journal: Proceedings of the National Academy of Sciences
+        volume: "106"
+        issue: "13"
+        pages: 5002-5007
+        publisher: Proceedings of the National Academy of Sciences
+        doi: 10.1073/pnas.0811664106
+        url: http://dx.doi.org/10.1073/pnas.0811664106
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Paraves
+      - Deinonychosauria
+      - Dromaeosauridae
+      - Microraptorinae
+  Hesperonyx:
+    genus: Hesperonyx
+    parent: Dryomorpha
+    etymology: western claw
+    description: Hesperonyx is an extinct genus of dryomorphan ornithopod dinosaur from the Late Jurassic Lourinhã Formation of Portugal. The genus contains a single species, Hesperonyx martinhotomasorum, known from bones of the fore- and hindlimbs.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "492472"
+      - source: wikidata
+        id: Q124975016
+    species:
+      - name: Hesperonyx martinhotomasorum
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Kimmeridgian
+        location:
+          country: PT
+          region: Centro
+          formation: Lourinhã
+          coordinates:
+            - 39.216
+            - -9.344
+        holotype:
+          specimen_id: ML 2700
+          institution: Museu da Lourinhã
+        described: 2024
+        authors: Rotatori et al.
+        described_in: rotatori2023
+    references:
+      - id: rotatori2023
+        authors: Rotatori, Filippo Maria; Ferrari, Lucrezia; Sequero, Cristina; Camilo, Bruno; Mateus, Octávio; Moreno-Azanza, Miguel
+        year: 2023
+        title: An unexpected early-diverging iguanodontian dinosaur (Ornithischia, Ornithopoda) from the Upper Jurassic of Portugal
+        journal: Journal of Vertebrate Paleontology
+        volume: "43"
+        issue: "4"
+        publisher: Informa UK Limited
+        doi: 10.1080/02724634.2024.2310066
+        url: http://dx.doi.org/10.1080/02724634.2024.2310066
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Dryomorpha
+  Hesperornithoides:
+    genus: Hesperornithoides
+    parent: Troodontidae
+    etymology: western bird form
+    description: Hesperornithoides is a genus of troodontid theropod dinosaur that lived in North America during the Late Jurassic period.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "391793"
+      - source: wikidata
+        id: Q3301304
+      - source: eol
+        id: "55807046"
+    species:
+      - name: Hesperornithoides miessleri
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Tithonian
+        location:
+          country: US
+          region: Wyoming
+          formation: Morrison
+          coordinates:
+            - 42.629375
+            - -105.439041
+        holotype:
+          specimen_id: WYDICE-DML-001
+          institution: Wyoming Dinosaur Center, Thermopolis
+        described: 2019
+        authors: Hartman et al.
+        described_in: hartman2019
+    references:
+      - id: hartman2019
+        authors: Hartman, Scott; Mortimer, Mickey; Wahl, William R.; Lomax, Dean R.; Lippincott, Jessica; Lovelace, David M.
+        year: 2019
+        title: A new paravian dinosaur from the Late Jurassic of North America supports a late acquisition of avian flight
+        journal: PeerJ
+        volume: "7"
+        pages: e7247
+        publisher: PeerJ
+        doi: 10.7717/peerj.7247
+        url: http://dx.doi.org/10.7717/peerj.7247
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Tetanurae
+      - Avetheropoda
+      - Coelurosauria
+      - Maniraptora
+      - Troodontidae
+  Hesperosaurus:
+    genus: Hesperosaurus
+    parent: Stegosauridae
+    etymology: western lizard
+    description: Hesperosaurus is a herbivorous stegosaurian dinosaur from the Kimmeridgian age of the Jurassic period, approximately 156 million years ago.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "68158"
+      - source: wikidata
+        id: Q134389
+      - source: gbif
+        id: "4823188"
+    species:
+      - name: Hesperosaurus mjosi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          from_ma: 157.9
+          to_ma: 143.1
+        location:
+          country: US
+          region: Wyoming
+          formation: Morrison
+          coordinates:
+            - 44.650002
+            - -107.816666
+        size:
+          length_m: 6
+          estimate: true
+        described: 2001
+        authors: Carpenter et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Thyreophora
+      - Stegosauria
+      - Stegosauridae
+  Heterodontosaurus:
+    genus: Heterodontosaurus
+    parent: Heterodontosaurinae
+    etymology: different toothed lizard
+    description: Heterodontosaurus is a genus of heterodontosaurid dinosaur that lived during the Early Jurassic, 200–190 million years ago. Its only known member species, Heterodontosaurus tucki, was named in 1962 based on a skull discovered in South Africa. The genus name means "different toothed lizard", in reference to its unusual, heterodont dentition; the specific name honours G. C. Tuck, who supported the discoverers. Further specimens have since been found, including an almost complete skeleton in 1966.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "38725"
+      - source: wikidata
+        id: Q131188
+      - source: gbif
+        id: "4823099"
+      - source: eol
+        id: "4531893"
+    species:
+      - name: Heterodontosaurus tucki
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Jurassic
+          stage:
+            - Pliensbachian
+        location:
+          country: ZA
+          region: Eastern Cape
+          formation: Clarens
+          coordinates:
+            - -30.533333
+            - 27.533333
+        holotype:
+          specimen_id: SAM-PK-K337
+          institution: Iziko South African Museum, Cape Town
+        size:
+          length_m: 1.2
+          estimate: true
+        described: 1962
+        authors: Crompton and Charig
+        described_in: crompton1962
+    references:
+      - id: crompton1962
+        authors: CROMPTON, A. W.; CHARIG, A. J.
+        year: 1962
+        title: A new Ornithischian from the Upper Triassic of South Africa
+        journal: Nature
+        volume: "196"
+        issue: "4859"
+        pages: 1074-1077
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/1961074a0
+        url: http://dx.doi.org/10.1038/1961074a0
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Heterodontosauridae
+      - Heterodontosaurinae
+  Hexing:
+    genus: Hexing
+    parent: Ornithomimosauria
+    description: Hexing is an extinct genus of basal ornithomimosaurian dinosaur known from the Early Cretaceous of northeastern China. It contains a single species, Hexing qingyi.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "245415"
+      - source: wikidata
+        id: Q2158838
+    species:
+      - name: Hexing qingyi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+        location:
+          country: CN
+          region: Liaoning
+          formation: Yixian
+          coordinates:
+            - 41.584
+            - 120.950996
+        holotype:
+          specimen_id: JLUM-JZ07b1
+          institution: Jilin University Museum, Changchun
+        described: 2012
+        authors: Jin et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Tetanurae
+      - Avetheropoda
+      - Coelurosauria
+      - Ornithomimosauria
+  Hexinlusaurus:
+    genus: Hexinlusaurus
+    parent: Genasauria
+    description: Hexinlusaurus is a genus of basal ornithischian dinosaur from the Middle Jurassic (Bajocian stage) Lower Shaximiao Formation of what is now China. The type and only species is Hexinlusaurus multidens.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "71336"
+      - source: wikidata
+        id: Q2027034
+      - source: gbif
+        id: "4965752"
+      - source: eol
+        id: "47460447"
+    species:
+      - name: Hexinlusaurus multidens
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Middle Jurassic
+            - Late Jurassic
+          stage:
+            - Bajocian
+            - Oxfordian
+        location:
+          country: CN
+          region: Sichuan
+          formation: Shaximiao
+          coordinates:
+            - 29.411388
+            - 104.852501
+        holotype:
+          specimen_id: ZDM T6001
+          institution: Zigong Dinosaur Museum, Zigong
+        described: 2005
+        authors: Barrett et al.
+        described_in: barrett2005
+    references:
+      - id: barrett2005
+        authors: Barrett, Paul M.; Butler, Richard J.; Knoll, Fabien
+        year: 2005
+        title: Small-bodied ornithischian dinosaurs from the Middle Jurassic of Sichuan, China
+        journal: Journal of Vertebrate Paleontology
+        volume: "25"
+        issue: "4"
+        pages: 823-834
+        publisher: Informa UK Limited
+        doi: 10.1671/0272-4634(2005)025[0823:sodftm]2.0.co;2
+        url: http://dx.doi.org/10.1671/0272-4634(2005)025[0823:sodftm]2.0.co;2
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+  Heyuannia:
+    genus: Heyuannia
+    parent: Heyuanninae
+    etymology: from Heyuan
+    description: "Heyuannia is a genus of oviraptorid dinosaur that lived in Asia during the Late Cretaceous epoch, in what is now China and Mongolia. It was the first oviraptorid found in China; most others were found in neighbouring Mongolia. Two species are known: H. huangi, named by Lü Junchang in 2002 from the Dalangshan Formation; and H. yanshini, originally named as a separate genus Ingenia from the Barun Goyot Formation by Rinchen Barsbold in 1981, and later renamed to Ajancingenia in 2013 due to the preoccupation of Ingenia. The latter name was eventually discarded due to various ethical issues surrounding the author."
+    diet: omnivore
+    identifiers:
+      - source: pbdb
+        id: "68047"
+      - source: wikidata
+        id: Q134594
+      - source: gbif
+        id: "4822788"
+      - source: eol
+        id: "52570720"
+    species:
+      - name: Heyuannia huangi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: CN
+          region: Guangdong
+          formation: Dongyuan
+          coordinates:
+            - 23.768999
+            - 114.732002
+        holotype:
+          specimen_id: HYMV1-1
+          institution: Heyuan Dinosaur Museum, Heyuan, Guangdong
+        size:
+          length_m: 2
+          estimate: true
+        described: 2003
+        authors: Lü
+        described_in: lü2003
+    references:
+      - id: lü2003
+        authors: Lü, Junchang
+        year: 2003
+        title: "A new oviraptorosaurid (Theropoda: Oviraptorosauria) from the Late Cretaceous of southern China"
+        journal: Journal of Vertebrate Paleontology
+        volume: "22"
+        issue: "4"
+        pages: 871-875
+        publisher: Informa UK Limited
+        doi: 10.1671/0272-4634(2002)022[0871:anotof]2.0.co;2
+        url: http://dx.doi.org/10.1671/0272-4634(2002)022[0871:anotof]2.0.co;2
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Oviraptorosauria
+      - Oviraptoridae
+      - Heyuanninae
+  Hierosaurus:
+    genus: Hierosaurus
+    parent: Ankylosauria
+    etymology: sacred lizard
+    description: Hierosaurus is an extinct genus of nodosaurid ankylosaur which lived during the Late Cretaceous 87 to 82 million years ago. Its fossils were found in the Smoky Hill Chalk Member of the Niobrara Formation, in western Kansas, which would have been near the middle of the Western Interior Sea during the Late Cretaceous. It was a nodosaurid, an ankylosaur without a clubbed tail.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "54410"
+      - source: wikidata
+        id: Q3785503
+      - source: gbif
+        id: "4823197"
+    species:
+      - name: Hierosaurus sternbergii
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Coniacian
+        location:
+          country: US
+          region: Kansas
+          formation: Niobrara
+          coordinates:
+            - 38.788891
+            - -100.169441
+        holotype:
+          specimen_id: FHSM VP-14855
+          institution: Sternberg Museum of Natural History, Fort Hays State University, Hays
+        described: 1909
+        authors: Wieland
+        described_in: wieland1909
+    references:
+      - id: wieland1909
+        authors: Wieland, G. R.
+        year: 1909
+        title: A new armored saurian from the Niobrara
+        journal: American Journal of Science
+        volume: s4-27
+        issue: "159"
+        pages: 250-252
+        publisher: American Journal of Science (AJS)
+        doi: 10.2475/ajs.s4-27.159.250
+        url: http://dx.doi.org/10.2475/ajs.s4-27.159.250
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Thyreophora
+      - Ankylosauria
+  Hippodraco:
+    genus: Hippodraco
+    parent: Styracosterna
+    description: Hippodraco is a genus of iguanodontian ornithopod dinosaur from the Early Cretaceous Cedar Mountain Formation of Utah, United States. The genus contains a single species, H. scutodens, known from a partial skeleton belonging to an immature individual.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "178208"
+      - source: wikidata
+        id: Q1705946
+      - source: eol
+        id: "47460187"
+    species:
+      - name: Hippodraco scutodens
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Valanginian
+        location:
+          country: US
+          region: Utah
+          formation: Cedar Mountain
+          coordinates:
+            - 38.8293
+            - -109.470901
+        holotype:
+          specimen_id: UMNH VP 20208
+          institution: Utah Museum of Natural History, Salt Lake City
+        described: 2010
+        authors: McDonald et al.
+        described_in: mcdonald2010
+    references:
+      - id: mcdonald2010
+        authors: McDonald, Andrew T.; Kirkland, James I.; DeBlieux, Donald D.; Madsen, Scott K.; Cavin, Jennifer; Milner, Andrew R. C.; Panzarin, Lukas
+        year: 2010
+        title: New Basal Iguanodonts from the Cedar Mountain Formation of Utah and the Evolution of Thumb-Spiked Dinosaurs
+        journal: PLoS ONE
+        volume: "5"
+        issue: "11"
+        pages: e14075
+        publisher: Public Library of Science (PLoS)
+        doi: 10.1371/journal.pone.0014075
+        url: http://dx.doi.org/10.1371/journal.pone.0014075
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Cerapoda
+      - Ornithopoda
+      - Ankylopollexia
+      - Styracosterna
+  Histriasaurus:
+    genus: Histriasaurus
+    parent: Rebbachisauridae
+    pronunciation:
+      phonetic: HIS-tree-ah-SAWR-us
+    description: Histriasaurus (meaning "Istria lizard") is a genus of sauropod dinosaur from the Early Cretaceous (Hauterivian to Barremian stages, around 135-125 million years ago) of Croatia. It has been suggested to be a rebbachisaurid, and if so one of the oldest known members of the group.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "68179"
+      - source: wikidata
+        id: Q2154447
+      - source: gbif
+        id: "4967477"
+    species:
+      - name: Histriasaurus boscarollii
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Barremian
+        location:
+          country: HR
+          region: Istarska
+          coordinates:
+            - 45.040558
+            - 13.783611
+        described: 1998
+        authors: Dalla Vecchia
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Diplodocoidea
+      - Diplodocimorpha
+      - Rebbachisauridae
+  Homalocephale:
+    genus: Homalocephale
+    parent: Eupachycephalosauria
+    description: Homalocephale is a genus of pachycephalosaurid dinosaur that lived during the Late Cretaceous period of what is now the Nemegt Formation, Mongolia. The genus was described in 1974 by Halszka Osmólska and Teresa Maryańska, and consists of a single species, H. calathocercos. Though Homalocephale has been regarded as a synonym (and juvenile form) of Prenocephale, juvenile specimens of the latter indicate that they were distinct. Homalocephale was 1.8 m (5.9 ft) long and possibly an omnivore.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "38795"
+      - source: wikidata
+        id: Q134134
+      - source: gbif
+        id: "4823180"
+      - source: eol
+        id: "4530957"
+    species:
+      - name: Homalocephale calathocercos
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: MN
+          region: Omnogov
+          formation: Nemegt
+          coordinates:
+            - 43.491669
+            - 101.275002
+        size:
+          length_m: 1.5
+          estimate: true
+        described: 1974
+        authors: Maryańska and Osmólska
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Marginocephalia
+      - Pachycephalosauria
+      - Eupachycephalosauria
+  Hoplitosaurus:
+    genus: Hoplitosaurus
+    parent: Nodosauridae
+    etymology: Hoplite lizard
+    description: Hoplitosaurus was a genus of armored dinosaur related to Polacanthus. It was named from a partial skeleton found in the Barremian (Early Cretaceous) Lakota Formation of Custer County, South Dakota. It is an obscure genus which has been subject to some misinterpretation of its damaged remains. Although there was a push to synonymize it with Polacanthus in the late 1980s-early 1990s, Hoplitosaurus has been accepted as a valid albeit poorly known genus in more recent reviews.
+    diet: herbivore
+    appearance:
+      integument: armored
+    identifiers:
+      - source: pbdb
+        id: "38252"
+      - source: wikidata
+        id: Q139951
+      - source: eol
+        id: "4530845"
+    species:
+      - name: Hoplitosaurus marshi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+        location:
+          country: US
+          region: South Dakota
+          formation: Lakota
+          coordinates:
+            - 43.508888
+            - -103.336945
+        holotype:
+          specimen_id: USNM 4752
+          institution: National Museum of Natural History, Smithsonian Institution
+        described: 1902
+        authors: Lucas
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Thyreophora
+      - Ankylosauria
+      - Nodosauridae
+  Huabeisaurus:
+    genus: Huabeisaurus
+    parent: Euhelopodidae
+    etymology: North China lizard
+    pronunciation:
+      ipa: /ˌhwɑːbeɪˈsɔːrəs/
+    description: Huabeisaurus was a genus of sauropod dinosaur from the Late Cretaceous (Cenomanian to Maastrichtian stages, around 99.7–70.6 million years ago) of what is present-day northern China. The type species, Huabeisaurus allocotus, was first described by Pang Qiqing and Cheng Zhengwu in 2000. It is known from numerous remains found in the 1990s, which include teeth, partial limbs and vertebrae. Due to its relative completeness, Huabeisaurus represents a significant taxon for understanding sauropod evolution in Asia. Huabeisaurus comes from Kangdailiang and Houyu, Zhaojiagou Town, Tianzhen County, Shanxi province, China. The holotype was found in the unnamed upper member of the Huiquanpu Formation, which is Late Cretaceous (?Cenomanian–?Campanian) in age based on ostracods, charophytes, and fission-track dating.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "71976"
+      - source: wikidata
+        id: Q311494
+      - source: gbif
+        id: "4822514"
+    species:
+      - name: Huabeisaurus allocotus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+        location:
+          country: CN
+          region: Shanxi
+          formation: Huiquanpu
+          coordinates:
+            - 40.189999
+            - 114.0439
+        described: 2000
+        authors: Pang and Cheng
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
+      - Euhelopodidae
+  Hualianceratops:
+    genus: Hualianceratops
+    parent: Chaoyangsauridae
+    description: Hualianceratops is a genus of herbivorous ceratopsian dinosaur that lived about 160 million years ago in the Late Jurassic epoch in what is now western China. The single species, H. wucaiwanensis was described in 2015. Its size has been compared to that of a spaniel.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "333388"
+      - source: wikidata
+        id: Q21696836
+    species:
+      - name: Hualianceratops wucaiwanensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Oxfordian
+        location:
+          country: CN
+          region: Xinjiang
+          formation: Shishugou
+          coordinates:
+            - 45.191288
+            - 88.919884
+        holotype:
+          specimen_id: IVPP V18641
+          institution: Institute of Vertebrate Paleontology and Paleoanthropology, Beijing
+        described: 2015
+        authors: Han et al.
+        described_in: han2015
+    references:
+      - id: han2015
+        authors: Han, Fenglu; Forster, Catherine A.; Clark, James M.; Xu, Xing
+        year: 2015
+        title: A New Taxon of Basal Ceratopsian from China and the Early Evolution of Ceratopsia
+        journal: PLOS ONE
+        volume: "10"
+        issue: "12"
+        pages: e0143369
+        publisher: Public Library of Science (PLoS)
+        doi: 10.1371/journal.pone.0143369
+        url: http://dx.doi.org/10.1371/journal.pone.0143369
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Marginocephalia
+      - Ceratopsia
+      - Neoceratopsia
+      - Chaoyangsauridae
+  Huallasaurus:
+    genus: Huallasaurus
+    parent: Kritosaurini
+    etymology: duck lizard
+    description: Huallasaurus is an extinct genus of saurolophine hadrosaur from the Late Cretaceous Los Alamitos Formation of Patagonia in Argentina. The type and only species is H. australis. Originally named as a species of Kritosaurus in 1984, it was long considered a synonym of Secernosaurus before being recognized as its own distinct genus in a 2022 study, different from other members of Kritosaurini.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "461658"
+      - source: wikidata
+        id: Q111015270
+    species:
+      - name: Huallasaurus australis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: AR
+          region: Río Negro
+          formation: Los Alamitos
+          coordinates:
+            - -41.954723
+            - -66.326668
+        described: 2021
+        authors: Rozadilla et al.
+        described_in: rozadilla2021
+    references:
+      - id: rozadilla2021
+        authors: Rozadilla, Sebastián; Brissón-Egli, Federico; Agnolín, Federico Lisandro; Aranciaga-Rolando, Alexis Mauro; Novas, Fernando Emilio
+        year: 2021
+        title: "A new hadrosaurid (Dinosauria: Ornithischia) from the Late Cretaceous of northern Patagonia and the radiation of South American hadrosaurids"
+        journal: Journal of Systematic Palaeontology
+        volume: "19"
+        issue: "17"
+        pages: 1207-1235
+        publisher: Informa UK Limited
+        doi: 10.1080/14772019.2021.2020917
+        url: http://dx.doi.org/10.1080/14772019.2021.2020917
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Dryomorpha
+      - Styracosterna
+      - Hadrosauriformes
+      - Hadrosauroidea
+      - Hadrosauridae
+      - Hadrosaurinae
+      - Kritosaurini
+  Huanansaurus:
+    genus: Huanansaurus
+    parent: Citipatinae
+    description: Huanansaurus is an extinct genus of oviraptorid dinosaur that lived approximately 72 million years ago, between the Campanian and Maastrichtian, during the latter part of the Cretaceous period in what is now China, in the Nanxiong Formation.
+    diet: omnivore
+    identifiers:
+      - source: pbdb
+        id: "324065"
+      - source: wikidata
+        id: Q20640526
+      - source: eol
+        id: "47458584"
+    species:
+      - name: Huanansaurus ganzhouensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: CN
+          region: Jiangxi
+          formation: Hekou
+          coordinates:
+            - 25.816668
+            - 114.933334
+        holotype:
+          specimen_id: HGM41HIII-0443
+          institution: Henan Geological Museum, Zhengzhou, Henan
+        described: 2015
+        authors: Lü et al.
+        described_in: lü2015
+    references:
+      - id: lü2015
+        authors: Lü, Junchang; Pu, Hanyong; Kobayashi, Yoshitsugu; Xu, Li; Chang, Huali; Shang, Yuhua; Liu, Di; Lee, Yuong-Nam; Kundrát, Martin; Shen, Caizhi
+        year: 2015
+        title: "A New Oviraptorid Dinosaur (Dinosauria: Oviraptorosauria) from the Late Cretaceous of Southern China and Its Paleobiogeographical Implications"
+        journal: Scientific Reports
+        volume: "5"
+        issue: "1"
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/srep11490
+        url: http://dx.doi.org/10.1038/srep11490
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Oviraptorosauria
+      - Oviraptoridae
+      - Citipatinae
+  Huanghetitan:
+    genus: Huanghetitan
+    parent: Somphospondyli
+    etymology: Yellow River titan
+    description: Huanghetitan is a genus of sauropod dinosaur from the early Cretaceous Period. It was a basal titanosauriform which lived in what is now Gansu, China.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "133726"
+      - source: wikidata
+        id: Q2532460
+      - source: gbif
+        id: "4967322"
+    species:
+      - name: Huanghetitan liujiaxiaensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+        location:
+          country: CN
+          region: Gansu
+          formation: Upper
+          coordinates:
+            - 35.94083
+            - 103.312798
+        holotype:
+          specimen_id: GSLTZP02-001
+          institution: Fossil Research and Development Center, Third Geology and Mineral Resources Exploration Academy of Gansu Province, Lanzhou
+        described: 2006
+        authors: You et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
   Huangshanlong:
     genus: Huangshanlong
     parent: Mamenchisauridae
