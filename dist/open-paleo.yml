@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-04-10T06:42:35.806Z
-  clade_count: 243
-  genus_count: 1023
+  built_at: 2026-04-10T19:55:37.049Z
+  clade_count: 245
+  genus_count: 1068
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.04"
@@ -149,6 +149,8 @@ tree:
                                 Elaphrosaurinae: {}
                               Abelisauroidea: {}
                               Ceratosauridae: {}
+                              Ceratosauroidea:
+                                Etrigansauria: {}
                           Coelophysoidea:
                             Coelophysidae:
                               Coelophysinae: {}
@@ -1547,6 +1549,23 @@ clades:
       - Averostra
       - Ceratosauria
       - Ceratosauridae
+  Ceratosauroidea:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Ceratosauria
+      - Ceratosauroidea
   Ceratosuchopsini:
     taxonomy:
       - Life
@@ -2274,6 +2293,24 @@ clades:
       - Clypeodonta
       - Iguanodontia
       - Elasmaria
+  Etrigansauria:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Ceratosauria
+      - Ceratosauroidea
+      - Etrigansauria
   Eudromaeosauria:
     taxonomy:
       - Life
@@ -5834,6 +5871,2588 @@ genera:
       - Sauropoda
       - Macronaria
       - Brachiosauridae
+  Cariocecus:
+    genus: Cariocecus
+    parent: Hadrosauroidea
+    description: Cariocecus bocagei is an extinct species of hadrosauroid ornithopod dinosaurs known from the Early Cretaceous of what is now Portugal. C. bocagei is the only species in the genus Cariocecus. It is known from a partial skull that was discovered in 2016 and subsequently given a scientific name and description in 2025. This specimen represents the first iguanodontian skull to be found in the country.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "519173"
+    species:
+      - name: Cariocecus bocagei
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Barremian
+        location:
+          country: PT
+          region: Lisboa
+          formation: Papo Seco
+          coordinates:
+            - 38.414165
+            - -9.222222
+        described: 2025
+        authors: Bertozzo et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Dryomorpha
+      - Styracosterna
+      - Hadrosauriformes
+      - Hadrosauroidea
+  Carnotaurus:
+    genus: Carnotaurus
+    parent: Furileusauria
+    pronunciation:
+      ipa: /ˌkɑːrnoʊˈtɔːrəs/
+    description: Carnotaurus is a genus of theropod dinosaur that lived in South America during the Late Cretaceous period, between 69 and 66 million years ago. The only species is Carnotaurus sastrei. Known from a single well-preserved skeleton, it is one of the best-understood theropods from the Southern Hemisphere. The skeleton, found in 1984, was uncovered in the Chubut Province of Argentina from rocks of the La Colonia Formation. Carnotaurus is a derived member of the Abelisauridae, a group of large theropods that occupied the large predatorial niche in the southern landmasses of Gondwana during the late Cretaceous. Within the Abelisauridae, the genus is often considered a member of the Brachyrostra, a clade of short-snouted forms restricted to South America.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "54533"
+      - source: wikidata
+        id: Q18510948
+      - source: gbif
+        id: "4822830"
+      - source: eol
+        id: "4532780"
+    species:
+      - name: Carnotaurus sastrei
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: AR
+          region: Chubut
+          formation: La Colonia
+          coordinates:
+            - -43
+            - -67.547501
+        holotype:
+          specimen_id: MACN-CH 894
+          institution: Museo Argentino de Ciencias Naturales ‘Bernardino Rivadavia’, Buenos Aires
+        size:
+          length_m: 8
+          weight_kg: 1700
+          hip_height_m: 3
+          estimate: true
+        described: 1985
+        authors: Bonaparte
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Ceratosauria
+      - Abelisauridae
+      - Brachyrostra
+      - Furileusauria
+  Caseosaurus:
+    genus: Caseosaurus
+    parent: Herrerasauridae
+    pronunciation:
+      ipa: /ˌkeɪzioʊˈsɔːrəs/
+      phonetic: KAY-zee-oh-SOR-əs
+    description: Caseosaurus is a genus of saurischian dinosaur that lived approximately 221.5 to 212 million years ago during the latter part of the Triassic Period in what is now Texas, North America. It was a small, lightly-built, bipedal, ground-dwelling carnivore, and could grow up to 2 m (6.6 ft) long.
+    diet: carnivore
+    locomotion: bipedal
+    identifiers:
+      - source: pbdb
+        id: "66660"
+    species:
+      - name: Caseosaurus crosbyensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Triassic
+          stage:
+            - Norian
+        location:
+          country: US
+          region: Texas
+          formation: Chinle
+          coordinates:
+            - 33.6
+            - -101.3
+        described: 1998
+        authors: Hunt et al.
+        described_in: hunt1998
+    references:
+      - id: hunt1998
+        authors: Hunt, Adrian P.; Lucas, Spencer G.; Heckert, Andrew B.; Sullivan, Robert M.; Lockley, Martin G.
+        year: 1998
+        title: Late Triassic dinosaursfrom the western United States
+        journal: Geobios
+        volume: "31"
+        issue: "4"
+        pages: 511-531
+        publisher: Elsevier BV
+        doi: 10.1016/s0016-6995(98)80123-x
+        url: http://dx.doi.org/10.1016/s0016-6995(98)80123-x
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Herrerasauridae
+  Cathartesaura:
+    genus: Cathartesaura
+    parent: Limaysaurinae
+    etymology: The generic name is composed of Cathartes, the New World vulture genus and -saura, feminine declination of the Greek term sauros, "lizard". It also implies the juxtaposition of the components of the scientific name of the turkey vulture, Cathartes aura, whose Spanish name, "buitre", named the locality where the fossil was found due to the abundance of such birds there.
+    description: Cathartesaura is a genus of rebbachisaurid sauropod dinosaur from Late Cretaceous strata of the Huincul Formation, at the "La Buitrera" locality, in the Neuquén Basin of Río Negro Province, Argentina. The fossil remains, described by Gallina and Apesteguía in 2005, consist of a partial skeleton including vertebrae and limb bones. These were found at the base of the formation, which dates back to the Cenomanian and Turonian epochs, in mudstone and sandstone levels.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "89494"
+      - source: wikidata
+        id: Q135219
+      - source: gbif
+        id: "4822792"
+    species:
+      - name: Cathartesaura anaerobica
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Turonian
+        location:
+          country: AR
+          region: Río Negro
+          formation: Huincul
+          coordinates:
+            - -39.628613
+            - -69.184166
+        holotype:
+          specimen_id: MPCA-232
+          institution: Museo provincial de Cipolletti "Carlos Ameghino", Cipolletti
+        described: 2005
+        authors: Gallina and Apesteguía
+        described_in: gallina2005
+    references:
+      - id: gallina2005
+        authors: Gallina, Pablo; Apesteguía, Sebastián
+        year: 2005
+        title: Cathartesaura anaerobica gen. et sp. nov., a new rebbachisaurid (Dinosauria, Sauropoda) from the Huincul Formation (Upper Cretaceous), Río Negro, Argentina
+        journal: Revista del Museo Argentino de Ciencias Naturales
+        volume: "7"
+        pages: 153-166
+        publisher: Museo Argentino de Ciencia Naturales
+        doi: 10.22179/revmacn.7.332
+        url: http://dx.doi.org/10.22179/revmacn.7.332
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Diplodocoidea
+      - Diplodocimorpha
+      - Rebbachisauridae
+      - Khebbashia
+      - Limaysaurinae
+  Caudipteryx:
+    genus: Caudipteryx
+    parent: Oviraptorosauria
+    etymology: tail feather
+    description: "Caudipteryx is a genus of small oviraptorosaurian dinosaurs that lived in China during the Early Cretaceous, around 124.6 million years ago. They were feathered and extremely bird-like in their overall appearance, to the point that some paleontologists suggested it was a bird. Two species have been described: C. zoui (the type species), in 1998, and C. dongi, in 2000. Caudipteryx had a stout trunk, long legs, and was probably a swift runner. Its discovery has led to many intensive studies and debate over the relationship between birds and dinosaurs."
+    diet: omnivore
+    appearance:
+      integument: feathered
+    identifiers:
+      - source: pbdb
+        id: "66065"
+    species:
+      - name: Caudipteryx zoui
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+        location:
+          country: CN
+          region: Liaoning
+          formation: Yixian
+          coordinates:
+            - 41.799999
+            - 120.73333
+        holotype:
+          specimen_id: NGMC 97-4-A
+          institution: National Geological Museum of China, Beijing
+        described: 1998
+        authors: Ji et al.
+        described_in: qiang1998
+    references:
+      - id: qiang1998
+        authors: Qiang, Ji; Currie, Philip J.; Norell, Mark A.; Shu-An, Ji
+        year: 1998
+        title: Two feathered dinosaurs from northeastern China
+        journal: Nature
+        volume: "393"
+        issue: "6687"
+        pages: 753-761
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/31635
+        url: http://dx.doi.org/10.1038/31635
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Oviraptorosauria
+  Cedarosaurus:
+    genus: Cedarosaurus
+    parent: Brachiosauridae
+    etymology: Cedar lizard
+    description: Cedarosaurus is a genus of nasal-crested macronarian sauropod dinosaur from the Early Cretaceous Period (Valanginian). The fossils were discovered in 1996 in eastern Utah within the rocks of the Yellow Cat Member of the Cedar Mountain Formation. It was officially named and described by Tidwell, Carpenter and Brooks in 1999. It shows similarities to the brachiosaurid Eucamerotus from the Wessex Formation of southern England, as well as to Brachiosaurus from the Morrison Formation.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "64905"
+      - source: wikidata
+        id: Q134639
+      - source: gbif
+        id: "4819312"
+      - source: eol
+        id: "4531371"
+    species:
+      - name: Cedarosaurus weiskopfae
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Valanginian
+            - Albian
+        location:
+          country: US
+          region: Utah
+          formation: Cedar Mountain
+          coordinates:
+            - 38.845818
+            - -109.555984
+        described: 1999
+        authors: Tidwell et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Sauropoda
+      - Macronaria
+      - Brachiosauridae
+  Cedarpelta:
+    genus: Cedarpelta
+    parent: Ankylosauridae
+    description: Cedarpelta is an extinct genus of basal ankylosaurid dinosaur from Utah that lived during the Early Cretaceous period in what is now the Mussentuchit Member of the Cedar Mountain Formation. The type and only species, Cedarpelta bilbeyhallorum, is known from multiple specimens including partial skulls and postcranial material. It was named in 2001 by Kenneth Carpenter, James Kirkland, Don Burge, and John Bird. Cedarpelta has an estimated length of 7 metres (23 feet) and weight of 5 tonnes (11,023 lbs). The skull of Cedarpelta lacks extensive cranial ornamentation and is one of the only known ankylosaurs with individual skull bones that are not completely fused together.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "81293"
+      - source: wikidata
+        id: Q135487
+      - source: gbif
+        id: "4823330"
+      - source: eol
+        id: "4530880"
+    species:
+      - name: Cedarpelta bilbeyhallorum
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+            - Albian
+        location:
+          country: US
+          region: Utah
+          formation: Cedar Mountain
+          coordinates:
+            - 39.179001
+            - -110.106003
+        holotype:
+          specimen_id: CEUM 12360
+          institution: College of Eastern Utah Prehistoric Museum, Price
+        size:
+          length_m: 10
+          estimate: true
+        described: 2001
+        authors: Carpenter et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Thyreophora
+      - Ankylosauria
+      - Ankylosauridae
+  Cedrorestes:
+    genus: Cedrorestes
+    parent: Hadrosauroidea
+    description: Cedrorestes is a genus of iguanodontian dinosaur from the Early Cretaceous of Utah. It is based on an incomplete skeleton which was found in the Valanginian-age Yellow Cat Member of the Cedar Mountain Formation.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "104637"
+      - source: wikidata
+        id: Q545013
+      - source: gbif
+        id: "4965887"
+      - source: eol
+        id: "47459894"
+    species:
+      - name: Cedrorestes crichtoni
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Valanginian
+        location:
+          country: US
+          region: Utah
+          formation: Cedar Mountain
+          coordinates:
+            - 38.895531
+            - -109.545151
+        described: 2007
+        authors: Gilpin et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Dryomorpha
+      - Styracosterna
+      - Hadrosauriformes
+      - Hadrosauroidea
+  Centrosaurus:
+    genus: Centrosaurus
+    parent: Centrosaurini
+    pronunciation:
+      ipa: /ˌsɛntroʊˈsɔːrəs/
+    description: Centrosaurus is a genus of centrosaurine ceratopsid dinosaur from the Campanian age of the Late Cretaceous of Canada. Its remains have been found in the Dinosaur Park Formation, dating from 76.5 to 75.5 million years ago. The type and only species seen as valid today is Centrosaurus apertus.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "38854"
+      - source: wikidata
+        id: Q131589
+      - source: gbif
+        id: "7236956"
+      - source: eol
+        id: "4531582"
+    species:
+      - name: Centrosaurus apertus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+        location:
+          country: CA
+          region: Alberta
+          formation: Dinosaur Park
+          coordinates:
+            - 50.737297
+            - -111.528931
+        holotype:
+          specimen_id: Amer. Mus. No. 5427
+          institution: American Museum of Natural History, New York City
+        size:
+          length_m: 6
+          estimate: true
+        described: 1905
+        authors: Lambe
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Marginocephalia
+      - Ceratopsia
+      - Ceratopsidae
+      - Centrosaurinae
+      - Centrosaurini
+  Cerasinops:
+    genus: Cerasinops
+    parent: Leptoceratopsidae
+    description: Cerasinops was a small ceratopsian dinosaur. It lived during the Campanian of the late Cretaceous Period. Its fossils have been found in Two Medicine Formation, in Montana. The type species of the genus Cerasinops is C. hodgskissi.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "110946"
+      - source: wikidata
+        id: Q134334
+      - source: gbif
+        id: "4965783"
+      - source: eol
+        id: "47459987"
+    species:
+      - name: Cerasinops hodgskissi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+        location:
+          country: US
+          region: Montana
+          formation: Two Medicine
+          coordinates:
+            - 48.463612
+            - -112.470001
+        holotype:
+          specimen_id: MOR 300
+          institution: Museum of the Rockies, Bozeman
+        described: 2007
+        authors: Chinnery and Horner
+        described_in: chinnery2007
+    references:
+      - id: chinnery2007
+        authors: Chinnery, Brenda J.; Horner, John R.
+        year: 2007
+        title: A new neoceratopsian dinosaur linking North American and Asian taxa
+        journal: Journal of Vertebrate Paleontology
+        volume: "27"
+        issue: "3"
+        pages: 625-641
+        publisher: Informa UK Limited
+        doi: 10.1671/0272-4634(2007)27[625:anndln]2.0.co;2
+        url: http://dx.doi.org/10.1671/0272-4634(2007)27[625:anndln]2.0.co;2
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Marginocephalia
+      - Ceratopsia
+      - Neoceratopsia
+      - Leptoceratopsidae
+  Ceratonykus:
+    genus: Ceratonykus
+    parent: Parvicursorinae
+    etymology: horned claw
+    description: Ceratonykus is a monospecific genus of alvarezsaurid dinosaur from Mongolia that lived during the Late Cretaceous (Maastrichtian) in what is now the Barun Goyot Formation. The type and only species, Ceratonykus oculatus, is known from a fragmentary skeleton, including an incomplete skull, of an adult individual. It was named and described in 2009 by Vladimir Alifanov and Rinchen Barsbold. Its describers questioned the traditional placement of alvarezsaurs in Theropoda, instead suggesting they were ornithischians, but this has not been accepted since. Ceratonykus has an estimated length of 75 centimetres (2.46 feet) and weight of 760 grams (1.68 pounds). It has been considered as a possible junior synonym of Parvicursor.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "145604"
+      - source: wikidata
+        id: Q675014
+      - source: gbif
+        id: "4966198"
+    species:
+      - name: Ceratonykus oculatus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+        location:
+          country: MN
+          region: Omnogov
+          formation: Baruungoyot
+          coordinates:
+            - 43.150002
+            - 99.449997
+        holotype:
+          specimen_id: MPC 100/24
+          institution: Paleontological Center, Mongolian Academy of Sciences, Ulaanbaatar
+        described: 2009
+        authors: Alifanov and Barsbold
+        described_in: alifanov2009
+    references:
+      - id: alifanov2009
+        authors: Alifanov, V. R.; Barsbold, R.
+        year: 2009
+        title: Ceratonykus oculatus gen. et sp. nov., a new dinosaur (?Theropoda, Alvarezsauria) from the Late Cretaceous of Mongolia
+        journal: Paleontological Journal
+        volume: "43"
+        issue: "1"
+        pages: 94-106
+        publisher: Pleiades Publishing Ltd
+        doi: 10.1134/s0031030109010109
+        url: http://dx.doi.org/10.1134/s0031030109010109
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Alvarezsauria
+      - Alvarezsauroidea
+      - Alvarezsauridae
+      - Parvicursorinae
+  Ceratosuchops:
+    genus: Ceratosuchops
+    parent: Ceratosuchopsini
+    etymology: horned crocodile face
+    description: Ceratosuchops is a genus of spinosaurid from the Early Cretaceous (Barremian) Wessex Formation of Britain. The type species is C. inferodios, known from skull fragments (a snout tip and a partial braincase) recovered between 2013–2017 from Chilton Chine on the Isle of Wight, and housed at the Dinosaur Isle Museum in Sandown. It was named in 2021 by a team consisting of Chris Tijani Barker, Darren Naish, David W. E. Hone, and colleagues, alongside Riparovenator milnerae.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "443996"
+      - source: wikidata
+        id: Q108742018
+      - source: gbif
+        id: "11373778"
+      - source: eol
+        id: "61196319"
+      - source: zoobank
+        id: 5EB49885-7AF9-45DF-854A-C75A1AED16A1
+    species:
+      - name: Ceratosuchops inferodios
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Barremian
+        location:
+          country: GB
+          region: England
+          formation: Wessex
+          coordinates:
+            - 50.640491
+            - -1.433957
+        described: 2021
+        authors: Barker et al.
+        described_in: barker2021
+    references:
+      - id: barker2021
+        authors: Barker, Chris T.; Hone, David W. E.; Naish, Darren; Cau, Andrea; Lockwood, Jeremy A. F.; Foster, Brian; Clarkin, Claire E.; Schneider, Philipp; Gostling, Neil J.
+        year: 2021
+        title: New spinosaurids from the Wessex Formation (Early Cretaceous, UK) and the European origins of Spinosauridae
+        journal: Scientific Reports
+        volume: "11"
+        issue: "1"
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/s41598-021-97870-8
+        url: http://dx.doi.org/10.1038/s41598-021-97870-8
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Megalosauroidea
+      - Spinosauridae
+      - Baryonychinae
+      - Ceratosuchopsini
+  Cetiosauriscus:
+    genus: Cetiosauriscus
+    parent: Flagellicaudata
+    pronunciation:
+      ipa: /ˌsiːtioʊˈsɔːrɪskəs/
+      phonetic: SEE-tee-oh-SOR-iss-kəs
+    description: Cetiosauriscus is a genus of sauropod dinosaur that lived between 166 and 164 million years ago during the Callovian (Middle Jurassic Period) in what is now England. A herbivore, Cetiosauriscus had – by sauropod standards – a moderately long tail, and longer forelimbs, making them as long as its hindlimbs. It has been estimated as about 15 m (49 ft) long and between 4 and 10 t (3.9 and 9.8 long tons; 4.4 and 11.0 short tons) in weight.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "38667"
+      - source: wikidata
+        id: Q1957696
+      - source: gbif
+        id: "4822568"
+    species:
+      - name: Cetiosauriscus stewarti
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Middle Jurassic
+          stage:
+            - Callovian
+        location:
+          country: GB
+          region: England
+          formation: Oxford Clay
+          coordinates:
+            - 52.54253
+            - -0.240363
+        size:
+          length_m: 15
+          estimate: true
+        described: 1927
+        authors: Huene
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Diplodocoidea
+      - Diplodocimorpha
+      - Flagellicaudata
+  Cetiosaurus:
+    genus: Cetiosaurus
+    parent: Gravisauria
+    etymology: whale lizard
+    pronunciation:
+      ipa: /ˌsiːtioʊˈsɔːrəs, ˌsiːʃi-/
+    description: Cetiosaurus is a genus of herbivorous sauropod dinosaur from the Middle Jurassic Period, living about 171 to 165 million years ago during the Bajocian and Bathonian ages in what is now Britain and probably France.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "38657"
+      - source: wikidata
+        id: Q14427
+      - source: gbif
+        id: "4822733"
+    species:
+      - name: Cetiosaurus philippsii
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Middle Jurassic
+            - Early Cretaceous
+          stage:
+            - Bajocian
+            - Barremian
+        location:
+          country: GB
+          region: England
+          formation: Rutland
+          coordinates:
+            - 52.633331
+            - -0.666667
+        holotype:
+          specimen_id: OUMNH J13605
+          institution: Oxford University Museum of Natural History, Oxford
+        size:
+          length_m: 18
+          estimate: true
+        described: 1841
+        authors: Owen
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+  Chadititan:
+    genus: Chadititan
+    parent: Rinconsauria
+    etymology: titan of the salt
+    description: Chadititan is an extinct genus of titanosaurian dinosaurs from the Late Cretaceous (Campanian) Anacleto Formation of Argentina. The genus contains a single species, C. calvoi, known from several fragmentary skeletons. Chadititan is characterized by its small size compared to related taxa and its particularly gracile limbs.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "505092"
+      - source: wikidata
+        id: Q133061987
+    species:
+      - name: Chadititan calvoi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+        location:
+          country: AR
+          region: Río Negro
+          formation: Anacleto
+          coordinates:
+            - -39.378613
+            - -67.690002
+        described: 2025
+        authors: Agnolin et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
+      - Titanosauria
+      - Colossosauria
+      - Rinconsauria
+  Chakisaurus:
+    genus: Chakisaurus
+    parent: Elasmaria
+    etymology: elder guanaco lizard
+    description: Chakisaurus is an extinct genus of elasmarian ornithopod dinosaur from the Late Cretaceous Huincul Formation of Argentina. The genus contains a single species, C. nekul, known from multiple partial skeletons belonging to individuals of different ages. Chakisaurus represents the first ornithischian species to be named from the Huincul Formation.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "493365"
+      - source: wikidata
+        id: Q124813502
+      - source: zoobank
+        id: FED0EAEA-8400-4864-AA42-A849BE2C1611
+    species:
+      - name: Chakisaurus nekul
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Turonian
+        location:
+          country: AR
+          region: Río Negro
+          formation: Huincul
+          coordinates:
+            - -39.397778
+            - -68.617775
+        holotype:
+          specimen_id: MPCA Pv 816
+          institution: Museo provincial de Cipolletti "Carlos Ameghino", Cipolletti
+        described: 2024
+        authors: Nogueira et al.
+        described_in: nogueira2024
+    references:
+      - id: nogueira2024
+        authors: Nogueira, Rodrigo Alvarez; Rozadilla, Sebastián; Agnolín, Federico L.; Garcia Marsà, Jordi A.; Motta, Matias J.; Novas, Fernando E.
+        year: 2024
+        title: "A new ornithopod from the Upper Cretaceous (Huincul Formation) of northwestern Patagonia, Argentina: Implications on elasmarian postcranial anatomy"
+        journal: Cretaceous Research
+        volume: "159"
+        publisher: Elsevier BV
+        doi: 10.1016/j.cretres.2024.105874
+        url: http://dx.doi.org/10.1016/j.cretres.2024.105874
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Elasmaria
+  Changchunsaurus:
+    genus: Changchunsaurus
+    parent: Ornithopoda
+    etymology: Changchun lizard
+    description: Changchunsaurus is an extinct genus of small herbivorous neornithischian dinosaur from Early or Late Cretaceous deposits of Gongzhuling, Jilin, China. It is the first named dinosaur genus from that region.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "131332"
+      - source: wikidata
+        id: Q1656788
+      - source: gbif
+        id: "6141954"
+      - source: eol
+        id: "42418173"
+    species:
+      - name: Changchunsaurus parvus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Albian
+        location:
+          country: CN
+          region: Jilin
+          formation: Quantou
+          coordinates:
+            - 43.585079
+            - 124.894295
+        holotype:
+          specimen_id: JLUM L0403-j-Zn2
+          institution: Jilin University Museum, Changchun
+        described: 2005
+        authors: Zan et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Cerapoda
+      - Ornithopoda
+  Changmiania:
+    genus: Changmiania
+    parent: Ornithopoda
+    etymology: eternal sleep
+    description: Changmiania is a genus of basal ornithopod dinosaur that lived in what is now China during the Early Cretaceous. It contains a single species, Changmiania liaoningensis.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "426829"
+      - source: wikidata
+        id: Q98968277
+    species:
+      - name: Changmiania liaoningensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+        location:
+          country: CN
+          region: Liaoning
+          formation: Yixian
+          coordinates:
+            - 41.783817
+            - 120.764221
+        holotype:
+          specimen_id: PMOL AD00114
+          institution: Paleontological Museum of Liaoning, Shenyang
+        described: 2020
+        authors: Yang et al.
+        described_in: yang2020
+    references:
+      - id: yang2020
+        authors: Yang, Yuqing; Wu, Wenhao; Dieudonné, Paul-Emile; Godefroit, Pascal
+        year: 2020
+        title: A new basal ornithopod dinosaur from the Lower Cretaceous of China
+        journal: PeerJ
+        volume: "8"
+        pages: e9832
+        publisher: PeerJ
+        doi: 10.7717/peerj.9832
+        url: http://dx.doi.org/10.7717/peerj.9832
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Cerapoda
+      - Ornithopoda
+  Changyuraptor:
+    genus: Changyuraptor
+    parent: Microraptorinae
+    description: Changyuraptor is a genus of "four-winged", predatory dinosaurs. It is known from a single fossil specimen representing the species Changyuraptor yangi, which was discovered from Early Cretaceous (125 million year old) deposits in Liaoning Province, China. C. yangi belongs to the group of dromaeosaurid theropod dinosaurs called the Microraptoria.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "299732"
+      - source: wikidata
+        id: Q17363721
+      - source: eol
+        id: "47043812"
+    species:
+      - name: Changyuraptor yangi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+        location:
+          country: CN
+          region: Liaoning
+          formation: Yixian
+          coordinates:
+            - 40.643055
+            - 119.641113
+        holotype:
+          specimen_id: HG B016
+          institution: Paleontological Center of Bohai University, Jinzhou, Liaoning
+        described: 2014
+        authors: Han et al.
+        described_in: han2014
+    references:
+      - id: han2014
+        authors: Han, Gang; Chiappe, Luis M.; Ji, Shu-An; Habib, Michael; Turner, Alan H.; Chinsamy, Anusuya; Liu, Xueling; Han, Lizhuo
+        year: 2014
+        title: A new raptorial dinosaur with exceptionally long feathering provides insights into dromaeosaurid flight performance
+        journal: Nature Communications
+        volume: "5"
+        issue: "1"
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/ncomms5382
+        url: http://dx.doi.org/10.1038/ncomms5382
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Paraves
+      - Deinonychosauria
+      - Dromaeosauridae
+      - Microraptorinae
+  Chaoyangsaurus:
+    genus: Chaoyangsaurus
+    parent: Chaoyangsauridae
+    etymology: Chaoyang lizard
+    description: Chaoyangsaurus is a genus of marginocephalian dinosaur from the Late Jurassic (about between 150.8 and 145.5 million years ago) of China. Chaoyangsaurus belonged to the Ceratopsia (Greek for "horned faces"). Chaoyangsaurus, like all ceratopsians, was primarily a herbivore.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "55579"
+      - source: wikidata
+        id: Q133276
+      - source: gbif
+        id: "4823108"
+    species:
+      - name: Chaoyangsaurus youngi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+            - Early Cretaceous
+          stage:
+            - Kimmeridgian
+            - Valanginian
+        location:
+          country: CN
+          region: Liaoning
+          formation: Tuchengzi
+          coordinates:
+            - 42.9333
+            - 123.966698
+        holotype:
+          specimen_id: IGCAGS V371
+          institution: Institute of Geology, Chinese Academy of Geological Sciences, Beijing
+        size:
+          length_m: 1.1
+          estimate: true
+        described: 1999
+        authors: Zhao et al.
+        described_in: xijin1999
+    references:
+      - id: xijin1999
+        authors: Xijin, Zhao; Zhengwu, Cheng; Xing, Xu
+        year: 1999
+        title: The earliest ceratopsian from the Tuchengzi Formation of Liaoning, China
+        journal: Journal of Vertebrate Paleontology
+        volume: "19"
+        issue: "4"
+        pages: 681-691
+        publisher: Informa UK Limited
+        doi: 10.1080/02724634.1999.10011181
+        url: http://dx.doi.org/10.1080/02724634.1999.10011181
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Marginocephalia
+      - Ceratopsia
+      - Neoceratopsia
+      - Chaoyangsauridae
+  Charonosaurus:
+    genus: Charonosaurus
+    parent: Parasaurolophini
+    pronunciation:
+      ipa: /kəˌroʊnəˈsɔːrəs/
+    description: Charonosaurus is a genus of lambeosaurine hadrosaurid dinosaur similar to Parasaurolophus that lived in the latest Cretaceous Yuliangze Formation of China. Its fossils were described by Godefroit, Zan, and Jin in 2000, on the south bank of the Amur River, dividing China from Russia. It is monotypic, consisting of the species, C. jiayinensis.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "64258"
+      - source: wikidata
+        id: Q133031
+      - source: gbif
+        id: "4823286"
+      - source: eol
+        id: "4531673"
+    species:
+      - name: Charonosaurus jiayinensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: CN
+          region: Heilongjiang
+          formation: Yuliangzi
+          coordinates:
+            - 48.857498
+            - 130.243607
+        holotype:
+          specimen_id: CUST J-V1251-57
+          institution: Jilin University Museum, Changchun
+        described: 2000
+        authors: Godefroit et al.
+        described_in: godefroit2000
+    references:
+      - id: godefroit2000
+        authors: Godefroit, Pascal; Zan, Shuqin; Jin, Liyong
+        year: 2000
+        title: Charonosaurus jiayinensis n.g., n.sp.,a lambeosaurine dinosaur from the Late Maastrichtian of northeastern China
+        journal: Comptes Rendus de l'Académie des Sciences - Series IIA - Earth and Planetary Science
+        volume: "330"
+        issue: "12"
+        pages: 875-882
+        publisher: Elsevier BV
+        doi: 10.1016/s1251-8050(00)00214-7
+        url: http://dx.doi.org/10.1016/s1251-8050(00)00214-7
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Dryomorpha
+      - Styracosterna
+      - Hadrosauriformes
+      - Hadrosauroidea
+      - Hadrosauridae
+      - Lambeosaurinae
+      - Parasaurolophini
+  Chasmosaurus:
+    genus: Chasmosaurus
+    parent: Chasmosaurinae
+    pronunciation:
+      ipa: /ˌkæzmoʊˈsɔːrəs/
+      phonetic: KAZ-moh-SOR-əs
+    description: Chasmosaurus is a genus of ceratopsid dinosaur from the Late Cretaceous Period in North America. Its given name means 'opening lizard', referring to the large openings (fenestrae) in its frill (Greek chasma, meaning 'opening', 'hollow', or 'gulf'; and sauros, meaning 'lizard'). With a length of 4.3–4.8 metres (14.1–15.7 ft) and a weight of 1.5–2 tonnes (1.7–2.2 short tons)—or anywhere from 2,200 to nearly 5,000 lbs—Chasmosaurus was of a slightly smaller to "average" size, especially when compared to larger ceratopsids (such as Triceratops, which were about the size of an African bush elephant).
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "38855"
+      - source: wikidata
+        id: Q131586
+      - source: gbif
+        id: "3238859"
+      - source: eol
+        id: "4531609"
+      - source: zoobank
+        id: 70F0A2A8-DDB7-4133-93D5-ED30B93A7513
+    species:
+      - name: Chasmosaurus russelli
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+        location:
+          country: CA
+          region: Alberta
+          formation: Dinosaur Park
+          coordinates:
+            - 50.734207
+            - -111.513893
+        holotype:
+          specimen_id: NMC 491
+          institution: Canadian Museum of Nature, Ottawa
+        size:
+          length_m: 4.8
+          weight_kg: 2000
+          estimate: true
+        described: 1914
+        authors: Lambe
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Marginocephalia
+      - Ceratopsia
+      - Ceratopsidae
+      - Chasmosaurinae
+  Chebsaurus:
+    genus: Chebsaurus
+    parent: Cetiosauridae
+    description: Chebsaurus is a genus of sauropod dinosaur, specifically a eusauropod. It lived in present-day Algeria, in the Callovian aged Aïssa Formation. The type species, C. algeriensis, was named in 2005 by Mahammed et al. and is the most complete Algerian sauropod known. It was around 8 to 9 metres (26 to 30 ft) long.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "81009"
+      - source: wikidata
+        id: Q2709342
+      - source: gbif
+        id: "4967529"
+    species:
+      - name: Chebsaurus algeriensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Middle Jurassic
+          stage:
+            - Callovian
+        location:
+          country: DZ
+          region: Naama
+          formation: Aïssa
+          coordinates:
+            - 32.739723
+            - -1.072222
+        described: 2005
+        authors: Mahammed et al.
+        described_in: mahammed2005
+    references:
+      - id: mahammed2005
+        authors: Mahammed, Farida; Läng, Émilie; Mami, Leïla; Mekahli, Larbi; Benhamou, Miloud; Bouterfa, Boumediène; Kacemi, Ali; Chérief, Sid-Ali; Chaouati, Hayate; Taquet, Philippe
+        year: 2005
+        title: The ‘Giant of Ksour’, a Middle Jurassic sauropod dinosaur from Algeria
+        journal: Comptes Rendus Palevol
+        volume: "4"
+        issue: "8"
+        pages: 707-714
+        publisher: Museum National D'Histoire Naturelle
+        doi: 10.1016/j.crpv.2005.07.001
+        url: http://dx.doi.org/10.1016/j.crpv.2005.07.001
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Cetiosauridae
+  Chenanisaurus:
+    genus: Chenanisaurus
+    parent: Etrigansauria
+    etymology: Sidi Chennane lizard
+    description: Chenanisaurus is a genus of theropod dinosaur that lived during the Late Cretaceous in what is now Morocco. The genus belongs to the family Abelisauridae. It is known from a partial dentary (lower jawbone) and several teeth that were found in the phosphate mines of Khouribga, in rocks of the Maastrichtian-aged Ouled Abdoun Basin. Chenanisaurus was described in 2017 by British paleontologist Nicholas Longrich and colleagues. The genus contains a single species, Chenanisaurus barbaricus.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "378708"
+      - source: wikidata
+        id: Q29052716
+    species:
+      - name: Chenanisaurus barbaricus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: MA
+          region: Khouribga
+          formation: Couche III
+          coordinates:
+            - 32.866699
+            - -6.5667
+        described: 2017
+        authors: Longrich et al.
+        described_in: longrich2017
+    references:
+      - id: longrich2017
+        authors: Longrich, Nicholas R.; Pereda-Suberbiola, Xabier; Jalil, Nour-Eddine; Khaldoune, Fatima; Jourani, Essaid
+        year: 2017
+        title: An abelisaurid from the latest Cretaceous (late Maastrichtian) of Morocco, North Africa
+        journal: Cretaceous Research
+        volume: "76"
+        pages: 40-52
+        publisher: Elsevier BV
+        doi: 10.1016/j.cretres.2017.03.021
+        url: http://dx.doi.org/10.1016/j.cretres.2017.03.021
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Ceratosauria
+      - Ceratosauroidea
+      - Etrigansauria
+  Chialingosaurus:
+    genus: Chialingosaurus
+    parent: Stegosauria
+    etymology: Chialing Lizard
+    description: Chialingosaurus is a genus of herbivorous stegosaurian dinosaur similar to Kentrosaurus from the Upper Shaximiao Formation, Late Jurassic beds in Sichuan Province in China. Its age makes it one of the oldest species of stegosaurs, living about 160 million years ago. Since it was an herbivore, scientists think that Chialingosaurus probably ate ferns and cycads, which were plentiful during the period when Chialingosaurus was alive.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "38804"
+      - source: wikidata
+        id: Q132494
+      - source: gbif
+        id: "4823129"
+    species:
+      - name: Chialingosaurus kuani
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+        location:
+          country: CN
+          region: Sichuan
+          formation: Shaximiao
+          coordinates:
+            - 29.4333
+            - 103.599998
+        holotype:
+          specimen_id: IVPP 2300
+          institution: Institute of Vertebrate Paleontology and Paleoanthropology, Beijing
+        described: 1959
+        authors: Young
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Thyreophora
+      - Stegosauria
+  Chilantaisaurus:
+    genus: Chilantaisaurus
+    parent: Neovenatoridae
+    etymology: Jilantai Salt Lake lizard
+    description: Chilantaisaurus is an extinct genus of large theropod dinosaur that lived in present-day China during the Late Cretaceous period. It was described by Chinese paleontologist Hu Show-Yung in 1964. The genus contains a single valid species, C. tashuikouensis, though several other species have been assigned to the genus. C. tashuikouensis is known from a single, incomplete postcranial skeleton, the holotype specimen. This specimen was found by a joint Sino-Soviet expedition to Inner Mongolia in rock layers coming from the Ulansuhai Formation. This indicates these fossils date to the Santonian or Campanian stages of the Cretaceous period, around 85.7 to 72.2 million years ago. However, the age of the Ulansuhai Formation is debated.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "38619"
+      - source: wikidata
+        id: Q134633
+      - source: gbif
+        id: "4822592"
+      - source: eol
+        id: "4658378"
+    species:
+      - name: Chilantaisaurus tashuikouensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Santonian
+        location:
+          country: CN
+          region: Inner Mongolia
+          formation: Ulansuhai
+          coordinates:
+            - 39.7
+            - 105.6
+        holotype:
+          specimen_id: IVPP V4
+          institution: Institute of Vertebrate Paleontology and Paleoanthropology, Beijing
+        described: 1964
+        authors: Hu
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Allosauroidea
+      - Neovenatoridae
+  Chilesaurus:
+    genus: Chilesaurus
+    parent: Ornithischia
+    description: Chilesaurus is an extinct genus of herbivorous dinosaur. While its exact classification is uncertain, many researchers believe it is a theropod, with a minority of academics suggesting that it may be an ornithischian. The type and only known species so far is Chilesaurus diegosuarezi. Chilesaurus lived between 148-147 million years ago (Mya) in the Late Jurassic period of Chile. Showing a combination of traits from theropods, ornithischians, and sauropodomorphs, this genus has far-reaching implications for the evolution of dinosaurs, such as whether the traditional saurischian-ornithischian split is superior or inferior to the proposed group Ornithoscelida. This however, has been contested by several other authors, who believe that the weight of evidence supports its membership within Theropoda, and possibly as a member of Tetanurae.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "319906"
+      - source: wikidata
+        id: Q19836626
+      - source: eol
+        id: "47459431"
+    species:
+      - name: Chilesaurus diegosuarezi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Tithonian
+        location:
+          country: CL
+          region: Aisén
+          formation: Toqui
+          coordinates:
+            - -46.650002
+            - -72.383331
+        described: 2015
+        authors: Novas et al.
+        described_in: novas2015
+    references:
+      - id: novas2015
+        authors: Novas, Fernando E.; Salgado, Leonardo; Suárez, Manuel; Agnolín, Federico L.; Ezcurra, Martín D.; Chimento, Nicolás R.; de la Cruz, Rita; Isasi, Marcelo P.; Vargas, Alexander O.; Rubilar-Rogers, David
+        year: 2015
+        title: An enigmatic plant-eating theropod from the Late Jurassic period of Chile
+        journal: Nature
+        volume: "522"
+        issue: "7556"
+        pages: 331-334
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/nature14307
+        url: http://dx.doi.org/10.1038/nature14307
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+  Chindesaurus:
+    genus: Chindesaurus
+    parent: Saurischia
+    pronunciation:
+      ipa: /ˌtʃɪndɪˈsɔːrəs/
+      phonetic: CHIN-diss-OR-əs
+    description: Chindesaurus is an extinct genus of basal saurischian dinosaur from the Late Triassic (213-210 million years ago) of the southwestern United States. It is known from a single species, C. bryansmalli, based on a partial skeleton recovered from Petrified Forest National Park in Arizona. The original specimen was nicknamed "Gertie", and generated much publicity for the park upon its discovery in 1984 and airlift out of the park in 1985. Other fragmentary referred specimens have been found in Late Triassic sediments throughout Arizona, New Mexico, and Texas, but these may not belong to the genus. Chindesaurus was a bipedal carnivore, approximately as large as a wolf.
+    diet: carnivore
+    locomotion: bipedal
+    identifiers:
+      - source: pbdb
+        id: "66908"
+      - source: wikidata
+        id: Q132579
+      - source: gbif
+        id: "4823521"
+    species:
+      - name: Chindesaurus bryansmalli
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Triassic
+          stage:
+            - Norian
+        location:
+          country: US
+          region: Arizona
+          formation: Chinle
+          coordinates:
+            - 35.087502
+            - -109.794441
+        size:
+          length_m: 4
+          estimate: true
+        described: 1995
+        authors: Long and Murry
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+  Chingkankousaurus:
+    genus: Chingkankousaurus
+    parent: Tyrannosauroidea
+    description: Chingkankousaurus is a genus of theropod dinosaur containing the single species Chingkankousaurus fragilis. C. fragilis is known only from a single fossilized bone fragment (specimen number IVPP V836) from the late Cretaceous Period Wangshi Series of Shandong province in eastern China.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "38577"
+      - source: wikidata
+        id: Q1656664
+      - source: gbif
+        id: "4822624"
+    species:
+      - name: Chingkankousaurus fragilis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+        location:
+          country: CN
+          region: Shandong
+          formation: Jingangkou
+          coordinates:
+            - 36.886539
+            - 120.658951
+        described: 1958
+        authors: Young
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Tyrannosauroidea
+  Chinshakiangosaurus:
+    genus: Chinshakiangosaurus
+    parent: Sauropoda
+    etymology: Chinshakiang lizard
+    pronunciation:
+      phonetic: JIN-shah-jiahng-uh-SOR-us
+    description: Chinshakiangosaurus is a genus of basal sauropod dinosaur. The only species, Chinshakiangosaurus chunghoensis, is known from a fragmentary skeleton found in Early Jurassic rocks in China. It is one of the few basal sauropods with preserved skull bones and therefore important for the understanding of the early evolution of this group, and also shows that early sauropods may have possessed fleshy cheeks.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "68151"
+      - source: wikidata
+        id: Q145213
+      - source: gbif
+        id: "4822882"
+    species:
+      - name: Chinshakiangosaurus chunghoensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Jurassic
+          stage:
+            - Hettangian
+        location:
+          country: CN
+          region: Yunnan
+          formation: Fengjiahe
+          coordinates:
+            - 26.1667
+            - 101.416702
+        holotype:
+          specimen_id: IVPP V14474
+          institution: Institute of Vertebrate Paleontology and Paleoanthropology, Beijing
+        size:
+          length_m: 11
+          estimate: true
+        described: 1975
+        authors: Yeh
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Sauropoda
+  Chirostenotes:
+    genus: Chirostenotes
+    parent: Caenagnathidae
+    pronunciation:
+      ipa: /ˌkaɪroʊstɪˈnoʊtiːz/
+    description: Chirostenotes is a genus of oviraptorosaurian dinosaur from the late Cretaceous (about 76.5–75 million years ago) of Alberta, Canada. The type species is Chirostenotes pergracilis.
+    diet: omnivore
+    identifiers:
+      - source: pbdb
+        id: "38555"
+      - source: wikidata
+        id: Q131400
+      - source: gbif
+        id: "4822718"
+    species:
+      - name: Chirostenotes pergracilis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+            - Maastrichtian
+        location:
+          country: CA
+          region: Alberta
+          formation: Dinosaur Park
+          coordinates:
+            - 50.786098
+            - -111.477402
+        holotype:
+          specimen_id: CMN 2367
+          institution: Canadian Museum of Nature, Ottawa
+        size:
+          length_m: 1.7
+          estimate: true
+        described: 1924
+        authors: Gilmore
+        described_in: gilmore1924
+    references:
+      - id: gilmore1924
+        authors: Gilmore, C W
+        year: 1924
+        title: A new Coelurid dinosaur from the Belly River Cretaceous of Alberta
+        book: Geological Survey of Canada
+        publisher: Natural Resources Canada/CMSS/Information Management
+        doi: 10.4095/105003
+        url: http://dx.doi.org/10.4095/105003
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Oviraptorosauria
+      - Caenagnathidae
+  Choconsaurus:
+    genus: Choconsaurus
+    parent: Titanosauria
+    etymology: El Chocón lizard
+    description: Choconsaurus is an extinct genus of herbivorous sauropod dinosaur belonging to the group Titanosauriformes, which lived in the area of present-day Argentina at the end of the Cretaceous.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "360505"
+      - source: wikidata
+        id: Q41508018
+      - source: gbif
+        id: "9414655"
+    species:
+      - name: Choconsaurus baileywillisi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Cenomanian
+        location:
+          country: AR
+          region: Neuquén
+          formation: Huincul
+          coordinates:
+            - -39.256668
+            - -68.780281
+        holotype:
+          specimen_id: MMCh-PV 44/10
+          institution: Museo Municipal 'Ernesto Bachman', Villa El Chocón, Neuquén
+        described: 2018
+        authors: Simón et al.
+        described_in: simón2018
+    references:
+      - id: simón2018
+        authors: Simón, Edith; Salgado, Leonardo; Calvo, Jorge O.
+        year: 2018
+        title: A New Titanosaur Sauropod from the Upper Cretaceous of Patagonia, Neuquén Province, Argentina
+        journal: Ameghiniana
+        volume: "55"
+        issue: "1"
+        pages: 1-29
+        publisher: Asociacion Paleontologica Argentina
+        doi: 10.5710/amgh.01.08.2017.3051
+        url: http://dx.doi.org/10.5710/amgh.01.08.2017.3051
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Sauropoda
+      - Macronaria
+      - Titanosauria
+  Chondrosteosaurus:
+    genus: Chondrosteosaurus
+    parent: Sauropoda
+    etymology: cartilage and bone lizard
+    description: "Chondrosteosaurus is a dubious genus of sauropod dinosaur from the Early Cretaceous Wessex Formation of England. Two species have been named: C. gigas and C. magnus, both of which are now considered invalid."
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "52987"
+      - source: wikidata
+        id: Q627974
+      - source: gbif
+        id: "4822774"
+    species:
+      - name: Chondrosteosaurus gigas
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Barremian
+        location:
+          country: GB
+          region: England
+          formation: Wessex
+          coordinates:
+            - 50.639
+            - -1.428
+        described: 1876
+        authors: Owen
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Sauropoda
+  Choyrodon:
+    genus: Choyrodon
+    parent: Iguanodontia
+    description: Choyrodon is a genus of hadrosauroid dinosaur from the Early Cretaceous (Albian) Khuren Dukh Formation of Mongolia. The type and only species is Choyrodon barsboldi. The generic name is derived from the city of Choyr, and -odon, from Latin for tooth; the specific name barsboldi honours paleontologist Rinchen Barsbold. The material consists of a holotype partial skull and cervical ribs, with two other partial skulls both with associated postcranial material. It was found to be the sister taxon of Eolambia.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "467088"
+      - source: wikidata
+        id: Q55949103
+      - source: gbif
+        id: "9826131"
+    species:
+      - name: Choyrodon barsboldi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Albian
+        location:
+          country: MN
+          region: Dornogov
+          formation: Khuren Dukh
+          coordinates:
+            - 45.849724
+            - 108.397499
+        described: 2018
+        authors: Gates et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+  Chromogisaurus:
+    genus: Chromogisaurus
+    parent: Saturnaliidae
+    description: Chromogisaurus is an extinct genus of saturnaliid sauropodomorph which existed in Argentina during the Late Triassic (Carnian) period. It is from the Cancha de Bochas, Valle Pintado member of the Ischigualasto Formation. It was a small, bipedal herbivore, about 2 metres (6 ft 7 in) in length.
+    diet: herbivore
+    locomotion: bipedal
+    identifiers:
+      - source: pbdb
+        id: "242719"
+      - source: wikidata
+        id: Q878448
+      - source: gbif
+        id: "8467628"
+    species:
+      - name: Chromogisaurus novasi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Triassic
+          stage:
+            - Carnian
+        location:
+          country: AR
+          region: San Juan
+          formation: Ischigualasto
+          coordinates:
+            - -30.116928
+            - -67.90126
+        holotype:
+          specimen_id: PVSJ 845
+          institution: División de Paleontología de Vertebrados del Museo de Ciencias Naturales y Universidad Nacional de San Juan, San Juan
+        described: 2010
+        authors: Ezcurra
+        described_in: ezcurra2010
+    references:
+      - id: ezcurra2010
+        authors: Ezcurra, Martin D.
+        year: 2010
+        title: "A new early dinosaur (Saurischia: Sauropodomorpha) from the Late Triassic of Argentina: a reassessment of dinosaur origin and phylogeny"
+        journal: Journal of Systematic Palaeontology
+        volume: "8"
+        issue: "3"
+        pages: 371-425
+        publisher: Informa UK Limited
+        doi: 10.1080/14772019.2010.484650
+        url: http://dx.doi.org/10.1080/14772019.2010.484650
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Saturnaliidae
+  Chuandongocoelurus:
+    genus: Chuandongocoelurus
+    parent: Tetanurae
+    pronunciation:
+      ipa: /tʃwɑːnˌdɒŋəsɪˈljʊərəs/
+      phonetic: chwahn-DONG-ə-si-LURE-əs
+    description: Chuandongocoelurus is a genus of carnivorous tetanuran theropod dinosaur from the Jurassic of China.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "65680"
+      - source: wikidata
+        id: Q311486
+      - source: gbif
+        id: "4822579"
+      - source: eol
+        id: "47459641"
+    species:
+      - name: Chuandongocoelurus primitivus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Oxfordian
+        location:
+          country: CN
+          region: Sichuan
+          formation: Shaximiao
+          coordinates:
+            - 29.411388
+            - 104.852501
+        holotype:
+          specimen_id: CCG 20010
+          institution: Chengdu College of Geology, Chengdu
+        described: 1984
+        authors: He
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Tetanurae
+  Chuanjiesaurus:
+    genus: Chuanjiesaurus
+    parent: Mamenchisauridae
+    description: Chuanjiesaurus is a genus of sauropod dinosaurs from the middle Jurassic Period. They lived in what is now China. The type species, Chuanjiesaurus anaensis, was first described by Fang, Pang, Lü, Zhang, Pan, Wang, Li and Cheng in 2000. Fossils of the species were found in the village of Chuanjie, Lufeng County, Yunnan Province, (in Chuanjie Formation deposits) and are named after the location where the fossils were discovered. Holtz gave a length of 25 meters (82 ft).
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "71525"
+      - source: wikidata
+        id: Q136239
+      - source: gbif
+        id: "4967534"
+    species:
+      - name: Chuanjiesaurus anaensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Middle Jurassic
+          stage:
+            - Bajocian
+        location:
+          country: CN
+          region: Yunnan
+          formation: Chuanjie
+          coordinates:
+            - 24.9725
+            - 102.076111
+        described: 2000
+        authors: Fang et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Mamenchisauridae
+  Chuanqilong:
+    genus: Chuanqilong
+    parent: Ankylosauridae
+    etymology: legendary dragon
+    description: Chuanqilong is a monospecific genus of basal ankylosaurid dinosaur from the Liaoning Province, China that lived during the Early Cretaceous (late Barremian to Aptian stage, 122.0 to 118.9 Ma) in what is now the Jiufotang Formation. The type and only species, Chuanqilong chaoyangensis, is known from a nearly complete skeleton with a skull of a juvenile individual. It was described in 2014 by Fenglu Han, Wenjie Zheng, Dongyu Hu, Xing Xu, and Paul M. Barrett. Chuanqilong shows many similarities with Liaoningosaurus and may represent a later ontogenetic stage of the taxon.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "302920"
+      - source: wikidata
+        id: Q17516418
+      - source: gbif
+        id: "8553409"
+    species:
+      - name: Chuanqilong chaoyangensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+        location:
+          country: CN
+          region: Liaoning
+          formation: Jiufotang
+          coordinates:
+            - 40.884399
+            - 119.47155
+        described: 2014
+        authors: Han et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Thyreophora
+      - Ankylosauria
+      - Ankylosauridae
+  Chubutisaurus:
+    genus: Chubutisaurus
+    parent: Somphospondyli
+    etymology: Chubut lizard
+    description: Chubutisaurus is a genus of somphospondylan sauropod dinosaur from the Early Cretaceous (Aptian to Albian) Cerro Barcino Formation of Argentina. The type species, Chubutisaurus insignis, was described by del Corro in 1975. Chubutisaurus had a more robust radius than Venenosaurus. In 2010 Gregory S. Paul gave a length of 18 metres (59 ft) and a weight of 12 tonnes (13 short tons). Thomas Holtz estimated its length at 23 metres (75 ft) in 2012.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "38688"
+      - source: wikidata
+        id: Q144415
+      - source: gbif
+        id: "4817914"
+      - source: eol
+        id: "47459497"
+    species:
+      - name: Chubutisaurus insignis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+            - Albian
+        location:
+          country: AR
+          region: Chubut
+          formation: Cerro Barcino
+          coordinates:
+            - -43.403889
+            - -68.291664
+        holotype:
+          specimen_id: MACN 18222/30
+          institution: Museo Argentino de Ciencias Naturales ‘Bernardino Rivadavia’, Buenos Aires
+        size:
+          length_m: 23
+          estimate: true
+        described: 1975
+        authors: del Corro
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
+  Chucarosaurus:
+    genus: Chucarosaurus
+    parent: Colossosauria
+    etymology: indomitable reptile
+    description: Chucarosaurus is an extinct genus of titanosaurian dinosaur from the Late Cretaceous (middle Cenomanian–lower Turonian) Huincul Formation of Argentina. The genus contains a single species, C. diripienda, known from various limb and pelvic bones.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "467411"
+      - source: wikidata
+        id: Q116621259
+    species:
+      - name: Chucarosaurus diripienda
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Turonian
+        location:
+          country: AR
+          region: Río Negro
+          formation: Huincul
+          coordinates:
+            - -39.397778
+            - -68.617775
+        holotype:
+          specimen_id: MPCA PV 820
+          institution: Museo provincial de Cipolletti "Carlos Ameghino", Cipolletti
+        described: 2023
+        authors: Agnolin et al.
+        described_in: agnolin2023
+    references:
+      - id: agnolin2023
+        authors: Agnolin, Federico L.; Gonzalez Riga, Bernardo J.; Aranciaga Rolando, Alexis M.; Rozadilla, Sebastián; Motta, Matías J.; Chimento, Nicolás R.; Novas, Fernando E.
+        year: 2023
+        title: A new giant titanosaur (Dinosauria, Sauropoda) from the Upper Cretaceous of Northwestern Patagonia, Argentina
+        journal: Cretaceous Research
+        volume: "146"
+        publisher: Elsevier BV
+        doi: 10.1016/j.cretres.2023.105487
+        url: http://dx.doi.org/10.1016/j.cretres.2023.105487
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
+      - Titanosauria
+      - Colossosauria
+  Chungkingosaurus:
+    genus: Chungkingosaurus
+    parent: Huayangosaurinae
+    etymology: Chongqing Lizard
+    description: Chungkingosaurus is a genus of stegosaurian dinosaur from the Late Jurassic Upper Shaximiao Formation in what is now China. The type species is Chungkingosaurus jiangbeiensis.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "38805"
+      - source: wikidata
+        id: Q138023
+      - source: gbif
+        id: "4823126"
+      - source: eol
+        id: "52570664"
+    species:
+      - name: Chungkingosaurus jiangbeiensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Middle Jurassic
+          stage:
+            - Bathonian
+            - Callovian
+        location:
+          country: CN
+          region: Sichuan
+          formation: Shaximiao
+          coordinates:
+            - 27.793056
+            - 105.294167
+        holotype:
+          specimen_id: CV00206
+          institution: Chongqing Natural History Museum
+        size:
+          length_m: 4
+          estimate: true
+        described: 1983
+        authors: Dong et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Thyreophora
+      - Stegosauria
+      - Stegosauridae
+      - Huayangosaurinae
+  Cienciargentina:
+    genus: Cienciargentina
+    parent: Rebbachisauridae
+    description: Cienciargentina is a genus of rebbachisaurid sauropod from the Late Cretaceous (Cenomanian–Turonian) Huincul Formation of Argentina. The genus contains a single species, Cienciargentina sanchezi, known from three partial skeletons of different sizes. Cienciargentina is the fourth definitive rebbachisaurid to be named from the Huincul Formation.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "507183"
+      - source: wikidata
+        id: Q133844001
+    species:
+      - name: Cienciargentina sanchezi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Cenomanian
+        location:
+          country: AR
+          region: Neuquén
+          formation: Huincul
+          coordinates:
+            - -39.256668
+            - -68.780281
+        holotype:
+          specimen_id: MMCH-Pv 45
+          institution: Museo Municipal ‘Ernesto Bachman’, Villa El Chocón, Neuquén
+        described: 2025
+        authors: Simón and Salgado
+        described_in: simón2025
+    references:
+      - id: simón2025
+        authors: Simón, María Edith; Salgado, Leonardo
+        year: 2025
+        title: New rebbachisaurid (Dinosauria, Sauropoda) from the Huincul Formation (upper Cenomanian-Turonian) of Villa El Chocón (Neuquén Province, Argentina)
+        journal: Cretaceous Research
+        volume: "173"
+        publisher: Elsevier BV
+        doi: 10.1016/j.cretres.2025.106137
+        url: http://dx.doi.org/10.1016/j.cretres.2025.106137
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Diplodocoidea
+      - Diplodocimorpha
+      - Rebbachisauridae
+  Cionodon:
+    genus: Cionodon
+    parent: Hadrosauridae
+    description: "Cionodon is a dubious genus of hadrosaurid dinosaur from the Late Cretaceous. The type species, C. arctatus, was found in the Denver Formation of Lodge Pole Creek, Colorado and was formally described by Edward Drinker Cope in 1874 based on the holotype AMNH 3951, collected in 1873. It is a nomen dubium because it is based on very fragmentary remains. Two other species have since been described: Cionodon kysylkumensis (Riabinin, 1931), based on the holotype CCMGE 1/3760 (a set of vertebrae) from Uzbekistan, and Cionodon stenopsis (Cope, 1875), discovered in rocks from the Judith River Formation of Alberta, Canada in 1874. Although both are probably hadrosaurs, they are known only from fragmentary remains and Cionodon kysylkumensis has since been reclassified as Bactrosaurus kysylkumensis."
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "53035"
+      - source: wikidata
+        id: Q2973290
+      - source: gbif
+        id: "4823289"
+    species:
+      - name: Cionodon arctatus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: US
+          region: Colorado
+          formation: Laramie
+          coordinates:
+            - 40.285278
+            - -106.860558
+        holotype:
+          specimen_id: AMNH 3951
+          institution: American Museum of Natural History, New York City
+        described: 1874
+        authors: Cope
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Cerapoda
+      - Ornithopoda
+      - Ankylopollexia
+      - Styracosterna
+      - Hadrosauriformes
+      - Hadrosauridae
+  Citipati:
+    genus: Citipati
+    parent: Citipatinae
+    etymology: funeral pyre lord
+    pronunciation:
+      ipa: /t͡ɕit̪ipɜt̪i/
+    description: Citipati is a genus of oviraptorid dinosaur that lived in Asia during the Late Cretaceous period, about 75 million to 71 million years ago. It is mainly known from the Ukhaa Tolgod locality at the Djadochta Formation, where the first remains were collected during the 1990s. The genus and type species Citipati osmolskae were named and described in 2001. A second species from the adjacent Zamyn Khondt locality may also exist. Citipati is one of the best-known oviraptorids thanks to a number of well-preserved specimens, including individuals found in brooding positions atop nests of eggs, though most of them were initially referred to the related Oviraptor. These nesting specimens have helped to solidify the link between non-avian dinosaurs and birds.
+    diet: omnivore
+    identifiers:
+      - source: pbdb
+        id: "57023"
+      - source: wikidata
+        id: Q131735
+      - source: gbif
+        id: "4822787"
+      - source: eol
+        id: "47458594"
+    species:
+      - name: Citipati osmolskae
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+        location:
+          country: MN
+          region: Omnogov
+          formation: Djadokhta
+          coordinates:
+            - 43.664444
+            - 100.901947
+        holotype:
+          specimen_id: IGM 100/978
+          institution: Mongolian Institute for Geology, Ulaanbaatar
+        size:
+          length_m: 2.1
+          estimate: true
+        described: 2001
+        authors: Clark et al.
+        described_in: clark2001
+    references:
+      - id: clark2001
+        authors: Clark, James M.; Norell, Mark A.; Barsbold, Rinchen
+        year: 2001
+        title: "Two new oviraptorids (Theropoda: Oviraptorosauria), Upper Cretaceous Djadokhta Formation, Ukhaa Tolgod, Mongolia"
+        journal: Journal of Vertebrate Paleontology
+        volume: "21"
+        issue: "2"
+        pages: 209-213
+        publisher: Informa UK Limited
+        doi: 10.1671/0272-4634(2001)021[0209:tnotou]2.0.co;2
+        url: http://dx.doi.org/10.1671/0272-4634(2001)021[0209:tnotou]2.0.co;2
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Oviraptorosauria
+      - Oviraptoridae
+      - Citipatinae
+  Citipes:
+    genus: Citipes
+    parent: Caenagnathinae
+    pronunciation:
+      ipa: /ˈsɪtipɛz/
+    description: Citipes is an extinct genus of caenagnathid theropod from the Late Cretaceous Dinosaur Park Formation in Alberta, Canada. The genus contains only one species, the type species, C. elegans. The generic name of Citipes is Latin for "fleet-footed", and the specific epithet "elegans" is Latin for "elegant". The type specimen of Citipes has a convoluted taxonomic history, and has been previously assigned to the genera Ornithomimus, Macrophalangia, Elmisaurus, Chirostenotes, and Leptorhynchos before being given its own genus in 2020.
+    diet: omnivore
+    identifiers:
+      - source: pbdb
+        id: "427201"
+      - source: wikidata
+        id: Q134528582
+    species:
+      - name: Citipes elegans
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+            - Maastrichtian
+        location:
+          country: CA
+          region: Alberta
+          formation: Dinosaur Park
+          coordinates:
+            - 50.734207
+            - -111.513893
+        described: 2020
+        authors: Funston
+        described_in: funston2020
+    references:
+      - id: funston2020
+        authors: Funston, Gregory
+        year: 2020
+        title: "Caenagnathids of the Dinosaur Park Formation (Campanian) of Alberta, Canada: anatomy, osteohistology, taxonomy, and evolution"
+        journal: Vertebrate Anatomy Morphology Palaeontology
+        volume: "8"
+        pages: 105-153
+        publisher: University of Alberta Libraries
+        doi: 10.18435/vamp29362
+        url: http://dx.doi.org/10.18435/vamp29362
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Oviraptorosauria
+      - Caenagnathidae
+      - Caenagnathinae
   Claosaurus:
     genus: Claosaurus
     parent: Hadrosauroidea
