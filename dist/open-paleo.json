@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-04-10T04:17:58.019Z",
-    "clade_count": 239,
-    "genus_count": 882,
+    "built_at": "2026-04-10T04:55:26.674Z",
+    "clade_count": 242,
+    "genus_count": 925,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
     "version": "2026.04"
@@ -206,7 +206,8 @@
                                   "Noasaurinae": {},
                                   "Elaphrosaurinae": {}
                                 },
-                                "Abelisauroidea": {}
+                                "Abelisauroidea": {},
+                                "Ceratosauridae": {}
                               }
                             },
                             "Coelophysoidea": {
@@ -376,7 +377,8 @@
                                     "Rhabdodontoidea": {
                                       "Rhabdodontidae": {}
                                     },
-                                    "Tenontosauridae": {}
+                                    "Tenontosauridae": {},
+                                    "Rhabdodontia": {}
                                   },
                                   "Elasmaria": {},
                                   "Iguanodontoidea": {}
@@ -426,7 +428,9 @@
                                   "Euoplocephalini": {}
                                 }
                               },
-                              "Nodosauridae": {},
+                              "Nodosauridae": {
+                                "Struthiosaurinae": {}
+                              },
                               "Parankylosauria": {}
                             },
                             "Stegosauria": {
@@ -1829,6 +1833,25 @@
           "volume": "27",
           "pages": "329-340"
         }
+      ]
+    },
+    "Ceratosauridae": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Ceratosauria",
+        "Ceratosauridae"
       ]
     },
     "Ceratosuchopsini": {
@@ -4919,6 +4942,27 @@
         "Rebbachisaurinae"
       ]
     },
+    "Rhabdodontia": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Ornithopoda",
+        "Clypeodonta",
+        "Iguanodontia",
+        "Rhabdodontomorpha",
+        "Rhabdodontia"
+      ]
+    },
     "Rhabdodontidae": {
       "taxonomy": [
         "Life",
@@ -5570,6 +5614,25 @@
         "Thyreophora",
         "Stegosauria",
         "Stegosauridae"
+      ]
+    },
+    "Struthiosaurinae": {
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Thyreophora",
+        "Ankylosauria",
+        "Nodosauridae",
+        "Struthiosaurinae"
       ]
     },
     "Styracosterna": {
@@ -6695,6 +6758,3383 @@
         "Sauropodomorpha",
         "Sauropoda",
         "Diplodocidae"
+      ]
+    },
+    "Eocarcharia": {
+      "genus": "Eocarcharia",
+      "parent": "Carcharodontosauridae",
+      "description": "Eocarcharia is an extinct genus of theropod dinosaurs found in what is now the western Ténéré Desert of Niger. It is known from several skull bones collected in 2000 by an expedition to the Early Cretaceous (Aptian–Albian ages) Elrhaz Formation (Gadoufaoua locality) led by American paleontologist Paul Sereno. The fossil material was then described in 2008 by Sereno and Steve Brusatte. The genus contains a single species, Eocarcharia dinops. While Sereno and Brusatte identified all of the remains as belonging to a new carcharodontosaurid, later studies suggested that the species is chimaeric, comprising bones of at least two unrelated taxa. Some of the Eocarcharia material, including the holotype (name-bearing) specimen, likely belongs to a baryonychine spinosaurid. This would render Eocarcharia a member of this group, closely related to the coeval Suchomimus. Meanwhile, the definitively carcharodontosaurid bones, a maxilla and teeth, belong to a distinct unnamed taxon.",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "123317"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q29574600"
+        }
+      ],
+      "species": [
+        {
+          "name": "Eocarcharia dinops",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Albian"
+            ]
+          },
+          "location": {
+            "country": "NE",
+            "region": "Agadez",
+            "formation": "Elrhaz",
+            "coordinates": [
+              16.299999,
+              9.133333
+            ]
+          },
+          "described": 2008,
+          "authors": "Sereno and Brusatte",
+          "described_in": "sereno2008"
+        }
+      ],
+      "references": [
+        {
+          "id": "sereno2008",
+          "authors": "Sereno, Paul C.; Brusatte, Stephen L.",
+          "year": 2008,
+          "title": "Basal Abelisaurid and Carcharodontosaurid Theropods from the Lower Cretaceous Elrhaz Formation of Niger",
+          "journal": "Acta Palaeontologica Polonica",
+          "volume": "53",
+          "issue": "1",
+          "pages": "15-46",
+          "publisher": "Polska Akademia Nauk Instytut Paleobiologii (Institute of Paleobiology, Polish Academy of Sciences)",
+          "doi": "10.4202/app.2008.0102",
+          "url": "http://dx.doi.org/10.4202/app.2008.0102"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Tetanurae",
+        "Avetheropoda",
+        "Carnosauria",
+        "Carcharodontosauridae"
+      ]
+    },
+    "Eocursor": {
+      "genus": "Eocursor",
+      "parent": "Genasauria",
+      "etymology": "dawn runner",
+      "description": "Eocursor is genus of basal ornithischian dinosaur that lived in what is now South Africa during the Early Jurassic. Remains of this animal have been found in the Upper Elliot Formation and it is among the most completely known early ornithischians, shedding new light on the origin of the group.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "104623"
+        }
+      ],
+      "species": [
+        {
+          "name": "Eocursor parvus",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Jurassic"
+            ],
+            "stage": [
+              "Sinemurian"
+            ]
+          },
+          "location": {
+            "country": "ZA",
+            "region": "Free State",
+            "formation": "Elliot",
+            "coordinates": [
+              -29.219999,
+              27.341667
+            ]
+          },
+          "holotype": {
+            "specimen_id": "SAM-PK-K8025",
+            "institution": "Iziko South African Museum, Cape Town"
+          },
+          "described": 2007,
+          "authors": "Butler et al.",
+          "described_in": "butler2007"
+        }
+      ],
+      "references": [
+        {
+          "id": "butler2007",
+          "authors": "Butler, Richard J; Smith, Roger M.H; Norman, David B",
+          "year": 2007,
+          "title": "A primitive ornithischian dinosaur from the Late Triassic of South Africa, and the early evolution and diversification of Ornithischia",
+          "journal": "Proceedings of the Royal Society B: Biological Sciences",
+          "volume": "274",
+          "issue": "1621",
+          "pages": "2041-2046",
+          "publisher": "The Royal Society",
+          "doi": "10.1098/rspb.2007.0367",
+          "url": "http://dx.doi.org/10.1098/rspb.2007.0367"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria"
+      ]
+    },
+    "Eodromaeus": {
+      "genus": "Eodromaeus",
+      "parent": "Saurischia",
+      "etymology": "dawn runner",
+      "description": "Eodromaeus is an extinct genus of probable basal theropod dinosaurs from the Late Triassic of Argentina. Like many other of the earliest-known dinosaurs, it hails from the Carnian-age (~230 Ma) Ischigualasto Formation, within the Ischigualasto-Villa Unión Basin of northwestern Argentina. Upon its discovery, it was argued to be one of the oldest true theropods, supplanting its contemporary Eoraptor, which was reinterpreted as a basal sauropodomorph.",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "174878"
+        }
+      ],
+      "species": [
+        {
+          "name": "Eodromaeus murphi",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Triassic"
+            ],
+            "stage": [
+              "Carnian"
+            ],
+            "from_ma": 237,
+            "to_ma": 227.3
+          },
+          "location": {
+            "country": "AR",
+            "region": "San Juan",
+            "formation": "Ischigualasto",
+            "coordinates": [
+              -30.067778,
+              -67.936386
+            ]
+          },
+          "holotype": {
+            "specimen_id": "PVSJ 560",
+            "institution": "División de Paleontología de Vertebrados del Museo de Ciencias Naturales y Universidad Nacional de San Juan, San Juan"
+          },
+          "described": 2011,
+          "authors": "Martinez et al.",
+          "described_in": "martinez2011"
+        }
+      ],
+      "references": [
+        {
+          "id": "martinez2011",
+          "authors": "Martinez, Ricardo N.; Sereno, Paul C.; Alcober, Oscar A.; Colombi, Carina E.; Renne, Paul R.; Montañez, Isabel P.; Currie, Brian S.",
+          "year": 2011,
+          "title": "A Basal Dinosaur from the Dawn of the Dinosaur Era in Southwestern Pangaea",
+          "journal": "Science",
+          "volume": "331",
+          "issue": "6014",
+          "pages": "206-210",
+          "publisher": "American Association for the Advancement of Science (AAAS)",
+          "doi": "10.1126/science.1198467",
+          "url": "http://dx.doi.org/10.1126/science.1198467"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia"
+      ]
+    },
+    "Eolambia": {
+      "genus": "Eolambia",
+      "parent": "Hadrosauroidea",
+      "etymology": "dawn lambeosaurine",
+      "description": "Eolambia is a genus of herbivorous hadrosauroid dinosaur from the early Late Cretaceous of the United States. It contains a single species, E. caroljonesa, named by paleontologist James Kirkland in 1998. The type specimen of Eolambia was discovered by Carole and Ramal Jones in 1993; the species name honors Carole. Since then, hundreds of bones have been discovered from both adults and juveniles, representing nearly every element of the skeleton. All of the specimens have thus far been found in Emery County, Utah, in a layer of rock known as the Mussentuchit Member of the Cedar Mountain Formation.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "66499"
+        }
+      ],
+      "species": [
+        {
+          "name": "Eolambia caroljonesa",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Cenomanian"
+            ]
+          },
+          "location": {
+            "country": "US",
+            "region": "Utah",
+            "formation": "Cedar Mountain",
+            "coordinates": [
+              38.799999,
+              -111.169998
+            ]
+          },
+          "holotype": {
+            "specimen_id": "CEUM 9758",
+            "institution": "College of Eastern Utah Prehistoric Museum, Price"
+          },
+          "described": 1998,
+          "authors": "Kirkland"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Ornithopoda",
+        "Clypeodonta",
+        "Iguanodontia",
+        "Dryomorpha",
+        "Styracosterna",
+        "Hadrosauriformes",
+        "Hadrosauroidea"
+      ]
+    },
+    "Eomamenchisaurus": {
+      "genus": "Eomamenchisaurus",
+      "parent": "Mamenchisauridae",
+      "etymology": "dawn Mamenchisaurus",
+      "description": "Eomamenchisaurus is a genus of mamenchisaurid sauropod dinosaur from the Middle Jurassic Zhanghe Formation of Yuanmou, Yunnan, China. The type species is E. yuanmouensis, described by Lü Junchang and colleagues in 2008.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "153855"
+        }
+      ],
+      "species": [
+        {
+          "name": "Eomamenchisaurus yuanmouensis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Middle Jurassic"
+            ],
+            "stage": [
+              "Callovian"
+            ]
+          },
+          "location": {
+            "country": "CN",
+            "region": "Yunnan",
+            "formation": "Zhanghe",
+            "coordinates": [
+              25.947222,
+              101.90889
+            ]
+          },
+          "described": 2008,
+          "authors": "Lü et al."
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda",
+        "Mamenchisauridae"
+      ]
+    },
+    "Eoneophron": {
+      "genus": "Eoneophron",
+      "parent": "Caenagnathidae",
+      "description": "Eoneophron is an extinct genus of caenagnathid theropod dinosaur from the Late Cretaceous Hell Creek Formation of South Dakota, US. The genus contains a single species, E. infernalis, known from a partial hindlimb.",
+      "diet": "omnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "482524"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q124350835"
+        }
+      ],
+      "species": [
+        {
+          "name": "Eoneophron infernalis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Maastrichtian"
+            ]
+          },
+          "location": {
+            "country": "US",
+            "region": "South Dakota",
+            "formation": "Hell Creek",
+            "coordinates": [
+              44.713001,
+              -103.056
+            ]
+          },
+          "described": 2024,
+          "authors": "Atkins-Weltman et al.",
+          "described_in": "atkins-weltman2024"
+        }
+      ],
+      "references": [
+        {
+          "id": "atkins-weltman2024",
+          "authors": "Atkins-Weltman, Kyle L.; Simon, D. Jade; Woodward, Holly N.; Funston, Gregory F.; Snively, Eric",
+          "year": 2024,
+          "title": "A new oviraptorosaur (Dinosauria: Theropoda) from the end-Maastrichtian Hell Creek Formation of North America",
+          "journal": "PLOS ONE",
+          "volume": "19",
+          "issue": "1",
+          "pages": "e0294901",
+          "publisher": "Public Library of Science (PLoS)",
+          "doi": "10.1371/journal.pone.0294901",
+          "url": "http://dx.doi.org/10.1371/journal.pone.0294901"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Coelurosauria",
+        "Maniraptora",
+        "Oviraptorosauria",
+        "Caenagnathidae"
+      ]
+    },
+    "Eoraptor": {
+      "genus": "Eoraptor",
+      "parent": "Sauropodomorpha",
+      "pronunciation": {
+        "ipa": "/ˈiːoʊˌræptər/"
+      },
+      "description": "Eoraptor is a genus of small, lightly built, basal sauropodomorph dinosaur. One of the earliest-known dinosaurs and one of the earliest sauropodomorphs, it lived approximately 231 to 228 million years ago, during the Late Triassic in Western Gondwana, in the region that is now northwestern Argentina. The type and only species, Eoraptor lunensis, was first described in 1993, and is known from an almost complete and well-preserved skeleton and several fragmentary ones. Eoraptor had multiple tooth shapes, which suggests that it was omnivorous.",
+      "diet": "omnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "57453"
+        }
+      ],
+      "species": [
+        {
+          "name": "Eoraptor lunensis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Triassic"
+            ],
+            "stage": [
+              "Carnian"
+            ],
+            "from_ma": 233.6,
+            "to_ma": 227.3
+          },
+          "location": {
+            "country": "AR",
+            "region": "San Juan",
+            "formation": "Ischigualasto",
+            "coordinates": [
+              -31.10111,
+              -68.904999
+            ]
+          },
+          "holotype": {
+            "specimen_id": "PVSJ 512",
+            "institution": "División de Paleontología de Vertebrados del Museo de Ciencias Naturales y Universidad Nacional de San Juan, San Juan"
+          },
+          "described": 1993,
+          "authors": "Sereno et al.",
+          "described_in": "sereno1993"
+        }
+      ],
+      "references": [
+        {
+          "id": "sereno1993",
+          "authors": "Sereno, Paul C.; Forster, Catherine A.; Rogers, Raymond R.; Monetta, Alfredo M.",
+          "year": 1993,
+          "title": "Primitive dinosaur skeleton from Argentina and the early evolution of Dinosauria",
+          "journal": "Nature",
+          "volume": "361",
+          "issue": "6407",
+          "pages": "64-66",
+          "publisher": "Springer Science and Business Media LLC",
+          "doi": "10.1038/361064a0",
+          "url": "http://dx.doi.org/10.1038/361064a0"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha"
+      ]
+    },
+    "Eosinopteryx": {
+      "genus": "Eosinopteryx",
+      "parent": "Paraves",
+      "description": "Eosinopteryx is an extinct genus of theropod dinosaurs known to the Late Jurassic epoch of China. It contains a single species, Eosinopteryx brevipenna. Some researchers consider it a junior synonym of Anchiornis.",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "255864"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q3561744"
+        },
+        {
+          "source": "eol",
+          "id": "47458657"
+        }
+      ],
+      "species": [
+        {
+          "name": "Eosinopteryx brevipenna",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Jurassic"
+            ],
+            "stage": [
+              "Kimmeridgian"
+            ]
+          },
+          "location": {
+            "country": "CN",
+            "region": "Liaoning",
+            "formation": "Tiaojishan",
+            "coordinates": [
+              40.586391,
+              119.434402
+            ]
+          },
+          "described": 2013,
+          "authors": "Godefroit et al.",
+          "described_in": "godefroit2013"
+        }
+      ],
+      "references": [
+        {
+          "id": "godefroit2013",
+          "authors": "Godefroit, Pascal; Demuynck, Helena; Dyke, Gareth; Hu, Dongyu; Escuillié, François; Claeys, Philippe",
+          "year": 2013,
+          "title": "Reduced plumage and flight ability of a new Jurassic paravian theropod from China",
+          "journal": "Nature Communications",
+          "volume": "4",
+          "issue": "1",
+          "publisher": "Springer Science and Business Media LLC",
+          "doi": "10.1038/ncomms2389",
+          "url": "http://dx.doi.org/10.1038/ncomms2389"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Coelurosauria",
+        "Maniraptora",
+        "Paraves"
+      ]
+    },
+    "Eotrachodon": {
+      "genus": "Eotrachodon",
+      "parent": "Hadrosauridae",
+      "etymology": "dawn Trachodon",
+      "description": "Eotrachodon is a genus of hadrosaurid dinosaur that lived in the Late Cretaceous of eastern North America. The holotype was found in the Mooreville Chalk Formation (Upper Santonian) of Alabama in 2007 and includes a well-preserved skull and partial skeleton, making it a rare find among dinosaurs of Appalachia.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "346306"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q22067785"
+        },
+        {
+          "source": "eol",
+          "id": "47459907"
+        }
+      ],
+      "species": [
+        {
+          "name": "Eotrachodon orientalis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Santonian"
+            ],
+            "from_ma": 85.7,
+            "to_ma": 83.6
+          },
+          "location": {
+            "country": "US",
+            "region": "Alabama",
+            "formation": "Mooreville Chalk",
+            "coordinates": [
+              32.344601,
+              -86.400299
+            ]
+          },
+          "described": 2016,
+          "authors": "Prieto-Márquez et al.",
+          "described_in": "prieto-marquez2016"
+        }
+      ],
+      "references": [
+        {
+          "id": "prieto-marquez2016",
+          "authors": "Prieto-Marquez, Albert; Erickson, Gregory M.; Ebersole, Jun A.",
+          "year": 2016,
+          "title": "A primitive hadrosaurid from southeastern North America and the origin and early evolution of ‘duck-billed’ dinosaurs",
+          "journal": "Journal of Vertebrate Paleontology",
+          "volume": "36",
+          "issue": "2",
+          "publisher": "Informa UK Limited",
+          "doi": "10.1080/02724634.2015.1054495",
+          "url": "http://dx.doi.org/10.1080/02724634.2015.1054495"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Cerapoda",
+        "Ornithopoda",
+        "Ankylopollexia",
+        "Styracosterna",
+        "Hadrosauriformes",
+        "Hadrosauridae"
+      ]
+    },
+    "Eotriceratops": {
+      "genus": "Eotriceratops",
+      "parent": "Triceratopsini",
+      "etymology": "dawn three-horned face",
+      "description": "Eotriceratops is a genus of herbivorous ceratopsian dinosaurs which lived in the area of North America during the late Cretaceous period. The only named species is Eotriceratops xerinsularis.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "109480"
+        }
+      ],
+      "species": [
+        {
+          "name": "Eotriceratops xerinsularis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Maastrichtian"
+            ]
+          },
+          "location": {
+            "country": "CA",
+            "region": "Alberta",
+            "formation": "Horseshoe Canyon",
+            "coordinates": [
+              51.953251,
+              -112.935257
+            ]
+          },
+          "holotype": {
+            "specimen_id": "RTMP 2002",
+            "institution": "Royal Tyrrell Museum of Paleontology, Drumheller"
+          },
+          "described": 2007,
+          "authors": "Wu et al.",
+          "described_in": "wu2007"
+        }
+      ],
+      "references": [
+        {
+          "id": "wu2007",
+          "authors": "Wu, Xiao-chun; Brinkman, Donald B; Eberth, David A; Braman, Dennis R",
+          "year": 2007,
+          "title": "A new ceratopsid dinosaur (Ornithischia) from the uppermost Horseshoe Canyon Formation (upper Maastrichtian), Alberta, Canada",
+          "journal": "Canadian Journal of Earth Sciences",
+          "volume": "44",
+          "issue": "9",
+          "pages": "1243-1265",
+          "publisher": "Canadian Science Publishing",
+          "doi": "10.1139/e07-011",
+          "url": "http://dx.doi.org/10.1139/e07-011"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Marginocephalia",
+        "Ceratopsia",
+        "Ceratopsidae",
+        "Chasmosaurinae",
+        "Triceratopsini"
+      ]
+    },
+    "Eotyrannus": {
+      "genus": "Eotyrannus",
+      "parent": "Tyrannosauroidea",
+      "etymology": "dawn tyrant",
+      "description": "Eotyrannus is a genus of tyrannosauroid theropod dinosaur hailing from the Early Cretaceous Wessex Formation beds, included in Wealden Group, located in the southwest coast of the Isle of Wight, United Kingdom. The remains (MIWG1997.550), consisting of assorted skull, axial skeleton and appendicular skeleton elements, from a juvenile or subadult, found in a plant debris clay bed, were described by Stephen Hutt and colleagues in early 2001. The etymology of the generic name refers to the animal's classification as an early tyrannosaur or \"tyrant lizard\", while the specific name honors the discoverer of the fossil.",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "68315"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q131194"
+        },
+        {
+          "source": "gbif",
+          "id": "4822453"
+        },
+        {
+          "source": "eol",
+          "id": "52570684"
+        }
+      ],
+      "species": [
+        {
+          "name": "Eotyrannus lengi",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Barremian"
+            ]
+          },
+          "location": {
+            "country": "GB",
+            "region": "England",
+            "formation": "Wessex",
+            "coordinates": [
+              50.630554,
+              -1.404167
+            ]
+          },
+          "holotype": {
+            "specimen_id": "MIWG 1997.550",
+            "institution": "Geology, Dinosaur Isle, Sandown, Isle of Wight"
+          },
+          "size": {
+            "length_m": 5,
+            "estimate": true
+          },
+          "described": 2001,
+          "authors": "Hutt et al.",
+          "described_in": "hutt2001"
+        }
+      ],
+      "references": [
+        {
+          "id": "hutt2001",
+          "authors": "Hutt, Stephen; Naish, Darren; Martill, David M.; Barker, Michael J.; Newbery, Penny",
+          "year": 2001,
+          "title": "A preliminary account of a new tyrannosauroid theropod from the Wessex Formation (Early Cretaceous) of southern England",
+          "journal": "Cretaceous Research",
+          "volume": "22",
+          "issue": "2",
+          "pages": "227-242",
+          "publisher": "Elsevier BV",
+          "doi": "10.1006/cres.2001.0252",
+          "url": "http://dx.doi.org/10.1006/cres.2001.0252"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Coelurosauria",
+        "Tyrannosauroidea"
+      ]
+    },
+    "Eousdryosaurus": {
+      "genus": "Eousdryosaurus",
+      "parent": "Dryomorpha",
+      "etymology": "eastern Dryosaurus",
+      "description": "Eousdryosaurus is a genus of basal iguanodontian dinosaur known from a partial skeleton discovered in Upper Jurassic rocks in western Portugal. The type, and only species, is Eousdryosaurus nanohallucis, named and described in 2014.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "321465"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q18061165"
+        },
+        {
+          "source": "eol",
+          "id": "47460127"
+        }
+      ],
+      "species": [
+        {
+          "name": "Eousdryosaurus nanohallucis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Jurassic"
+            ],
+            "stage": [
+              "Tithonian"
+            ]
+          },
+          "location": {
+            "country": "PT",
+            "region": "Centro",
+            "formation": "Lourinhã",
+            "coordinates": [
+              39.231667,
+              -9.338611
+            ]
+          },
+          "described": 2014,
+          "authors": "Escaso et al.",
+          "described_in": "escaso2014"
+        }
+      ],
+      "references": [
+        {
+          "id": "escaso2014",
+          "authors": "Escaso, Fernando; Ortega, Francisco; Dantas, Pedro; Malafaia, Elisabete; Silva, Bruno; Gasulla, José M.; Mocho, Pedro; Narváez, Iván; Sanz, JosÉ L.",
+          "year": 2014,
+          "title": "A new dryosaurid ornithopod (Dinosauria, Ornithischia) from the Late Jurassic of Portugal",
+          "journal": "Journal of Vertebrate Paleontology",
+          "volume": "34",
+          "issue": "5",
+          "pages": "1102-1112",
+          "publisher": "Informa UK Limited",
+          "doi": "10.1080/02724634.2014.849715",
+          "url": "http://dx.doi.org/10.1080/02724634.2014.849715"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Ornithopoda",
+        "Clypeodonta",
+        "Iguanodontia",
+        "Dryomorpha"
+      ]
+    },
+    "Epachthosaurus": {
+      "genus": "Epachthosaurus",
+      "parent": "Lithostrotia",
+      "etymology": "heavy lizard",
+      "description": "Epachthosaurus was a genus of titanosaurian sauropod dinosaur, belonging to Lithostrotia, from the Late Cretaceous of Central and Northern Patagonia in South America.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "57466"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q134607"
+        },
+        {
+          "source": "gbif",
+          "id": "4822769"
+        },
+        {
+          "source": "eol",
+          "id": "4533722"
+        }
+      ],
+      "species": [
+        {
+          "name": "Epachthosaurus sciuttoi",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Turonian"
+            ]
+          },
+          "location": {
+            "country": "AR",
+            "region": "Chubut",
+            "formation": "Bajo Barreal",
+            "coordinates": [
+              -45.316669,
+              -69.616669
+            ]
+          },
+          "holotype": {
+            "specimen_id": "MACN-CH 1317",
+            "institution": "Museo Argentino de Ciencias Naturales ‘Bernardino Rivadavia’, Buenos Aires"
+          },
+          "described": 1990,
+          "authors": "Powell"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda",
+        "Neosauropoda",
+        "Macronaria",
+        "Titanosauriformes",
+        "Somphospondyli",
+        "Titanosauria",
+        "Lithostrotia"
+      ]
+    },
+    "Epichirostenotes": {
+      "genus": "Epichirostenotes",
+      "parent": "Caenagnathinae",
+      "etymology": "above Chirostenotes",
+      "description": "Epichirostenotes is a genus of oviraptorosaurian dinosaur from the Late Cretaceous. Epichirostenotes is known from an incomplete skeleton found in 1923 at the Horseshoe Canyon Formation, in strata dated to about 72 million years ago. It was first named by Robert M. Sullivan, Steven E. Jasinski and Mark P.A. van Tomme in 2011 and the type species is Epichirostenotes curriei. Its holotype, ROM 43250, had been assigned to Chirostenotes pergracilis by Hans-Dieter Sues in 1997.",
+      "diet": "omnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "256492"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q936315"
+        },
+        {
+          "source": "gbif",
+          "id": "8642409"
+        },
+        {
+          "source": "eol",
+          "id": "47458425"
+        }
+      ],
+      "species": [
+        {
+          "name": "Epichirostenotes curriei",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Campanian"
+            ],
+            "from_ma": 83.6,
+            "to_ma": 72.2
+          },
+          "location": {
+            "country": "CA",
+            "region": "Alberta",
+            "formation": "Horseshoe Canyon",
+            "coordinates": [
+              51.5863,
+              -112.818901
+            ]
+          },
+          "holotype": {
+            "specimen_id": "ROM 43250",
+            "institution": "Royal Ontario Museum, Toronto"
+          },
+          "described": 2011,
+          "authors": "Sullivan et al."
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Coelurosauria",
+        "Maniraptora",
+        "Oviraptorosauria",
+        "Caenagnathidae",
+        "Caenagnathinae"
+      ]
+    },
+    "Epidexipteryx": {
+      "genus": "Epidexipteryx",
+      "parent": "Paraves",
+      "description": "Epidexipteryx is a genus of small maniraptoran dinosaurs, known from one fossil specimen in the collection of the Institute of Vertebrate Paleontology and Paleoanthropology in Beijing. Epidexipteryx represents the earliest known example of ornamental feathers in the fossil record.",
+      "diet": "carnivore",
+      "appearance": {
+        "integument": "feathered"
+      },
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "137496"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q132600"
+        },
+        {
+          "source": "gbif",
+          "id": "4966937"
+        },
+        {
+          "source": "eol",
+          "id": "52571659"
+        }
+      ],
+      "species": [
+        {
+          "name": "Epidexipteryx hui",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Middle Jurassic"
+            ],
+            "stage": [
+              "Callovian"
+            ]
+          },
+          "location": {
+            "country": "CN",
+            "region": "Nei Mongol",
+            "formation": "Tiaojishan",
+            "coordinates": [
+              41.316387,
+              119.238609
+            ]
+          },
+          "described": 2008,
+          "authors": "Zhang et al.",
+          "described_in": "zhang2008"
+        }
+      ],
+      "references": [
+        {
+          "id": "zhang2008",
+          "authors": "Zhang, Fucheng; Zhou, Zhonghe; Xu, Xing; Wang, Xiaolin; Sullivan, Corwin",
+          "year": 2008,
+          "title": "A bizarre Jurassic maniraptoran from China with elongate ribbon-like feathers",
+          "journal": "Nature",
+          "volume": "455",
+          "issue": "7216",
+          "pages": "1105-1108",
+          "publisher": "Springer Science and Business Media LLC",
+          "doi": "10.1038/nature07447",
+          "url": "http://dx.doi.org/10.1038/nature07447"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Coelurosauria",
+        "Maniraptora",
+        "Paraves"
+      ]
+    },
+    "Equijubus": {
+      "genus": "Equijubus",
+      "parent": "Hadrosauroidea",
+      "etymology": "horse mane",
+      "description": "Equijubus is a genus of herbivorous hadrosauroid dinosaur from the Early Cretaceous (Albian stage) of northwestern China.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "58926"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q941092"
+        },
+        {
+          "source": "gbif",
+          "id": "4823113"
+        },
+        {
+          "source": "eol",
+          "id": "52570649"
+        }
+      ],
+      "species": [
+        {
+          "name": "Equijubus normani",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Albian"
+            ]
+          },
+          "location": {
+            "country": "CN",
+            "region": "Gansu",
+            "formation": "Zhonggou",
+            "coordinates": [
+              41.583332,
+              97.583336
+            ]
+          },
+          "holotype": {
+            "specimen_id": "IVPP V12534",
+            "institution": "Institute of Vertebrate Paleontology and Paleoanthropology, Beijing"
+          },
+          "described": 2003,
+          "authors": "You et al.",
+          "described_in": "you2003"
+        }
+      ],
+      "references": [
+        {
+          "id": "you2003",
+          "authors": "You, Hai-lu; Luo, Zhe-xi; Shubin, Neil H.; Witmer, Lawrence M.; Tang, Zhi-lu; Tang, Feng",
+          "year": 2003,
+          "title": "The earliest-known duck-billed dinosaur from deposits of late Early Cretaceous age in northwest China and hadrosaur evolution",
+          "journal": "Cretaceous Research",
+          "volume": "24",
+          "issue": "3",
+          "pages": "347-355",
+          "publisher": "Elsevier BV",
+          "doi": "10.1016/s0195-6671(03)00048-x",
+          "url": "http://dx.doi.org/10.1016/s0195-6671(03)00048-x"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Ornithopoda",
+        "Clypeodonta",
+        "Iguanodontia",
+        "Dryomorpha",
+        "Styracosterna",
+        "Hadrosauriformes",
+        "Hadrosauroidea"
+      ]
+    },
+    "Erketu": {
+      "genus": "Erketu",
+      "parent": "Euhelopodidae",
+      "etymology": "Erketü tengri",
+      "description": "Erketu is a genus of somphospondylan dinosaur that lived in Asia during the Late Cretaceous, roughly between 96 million and 89 million years ago. It is known from the Bayanshiree Formation of Mongolia, and its fossils were found between 2002 and 2003 during field expeditions. Erketu was first described in 2006 and later on in 2010 due to some cervicals that were left behind in the expedition. This genus represents the first sauropod described from the Bayanshiree Formation. The elongated cervical vertebrae indicate that it probably had the longest neck relative to its body size of any sauropod.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "72376"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q138872"
+        },
+        {
+          "source": "gbif",
+          "id": "4967451"
+        }
+      ],
+      "species": [
+        {
+          "name": "Erketu ellisoni",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Campanian"
+            ]
+          },
+          "location": {
+            "country": "MN",
+            "region": "Dornogov",
+            "formation": "Baynshire",
+            "coordinates": [
+              44.579723,
+              109.444443
+            ]
+          },
+          "holotype": {
+            "specimen_id": "IGM 100/1803",
+            "institution": "Institute of Geology, Mongolian Academy of Sciences, Ulaanbaatar"
+          },
+          "size": {
+            "length_m": 15,
+            "estimate": true
+          },
+          "described": 2006,
+          "authors": "Ksepka and Norell",
+          "described_in": "ksepka2006"
+        }
+      ],
+      "references": [
+        {
+          "id": "ksepka2006",
+          "authors": "Ksepka, Daniel T.; Norell, Mark A.",
+          "year": 2006,
+          "title": "Erketu Ellisoni, a Long-necked Sauropod from Bor Guvé (Dornogov Aimag, Mongolia)",
+          "journal": "American Museum Novitates",
+          "volume": "3508",
+          "issue": "1",
+          "publisher": "American Museum of Natural History (BioOne sponsored)",
+          "doi": "10.1206/0003-0082(2006)3508[1:eealsf]2.0.co;2",
+          "url": "http://dx.doi.org/10.1206/0003-0082(2006)3508[1:eealsf]2.0.co;2"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda",
+        "Neosauropoda",
+        "Macronaria",
+        "Titanosauriformes",
+        "Somphospondyli",
+        "Euhelopodidae"
+      ]
+    },
+    "Erliansaurus": {
+      "genus": "Erliansaurus",
+      "parent": "Therizinosauridae",
+      "etymology": "Erlian lizard",
+      "description": "Erliansaurus is a genus of therizinosaurian theropod dinosaur that lived in Asia during the Campanian stage of the Late Cretaceous period in what is now Nei Mongol, Iren Dabasu Formation.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "68373"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q1525258"
+        },
+        {
+          "source": "gbif",
+          "id": "4822613"
+        },
+        {
+          "source": "eol",
+          "id": "10577576"
+        }
+      ],
+      "species": [
+        {
+          "name": "Erliansaurus bellamanus",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Campanian"
+            ]
+          },
+          "location": {
+            "country": "CN",
+            "region": "Nei Mongol",
+            "formation": "Iren Dabasu",
+            "coordinates": [
+              43.840302,
+              113.715599
+            ]
+          },
+          "holotype": {
+            "specimen_id": "LH V0002",
+            "institution": "Longhao Institute of Geology and Paleontology, Inner Mongolia, China"
+          },
+          "described": 2002,
+          "authors": "Xu et al."
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Tetanurae",
+        "Avetheropoda",
+        "Coelurosauria",
+        "Maniraptora",
+        "Therizinosauridae"
+      ]
+    },
+    "Erlikosaurus": {
+      "genus": "Erlikosaurus",
+      "parent": "Therizinosauria",
+      "etymology": "Erlik's lizard",
+      "description": "Erlikosaurus is a genus of therizinosaurid that lived in Asia during the Late Cretaceous period. The fossils, a skull and some post-cranial fragments, were found in the Bayan Shireh Formation of Mongolia in 1972, dating to around 96 and 89 million years ago. These remains were later described by Altangerel Perle and Rinchen Barsbold in 1980, naming the new genus and species Erlikosaurus andrewsi. It represents the second therizinosaur taxon from this formation (after Segnosaurus), with the most complete skull among members of this peculiar family of dinosaurs.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "66666"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q132549"
+        },
+        {
+          "source": "gbif",
+          "id": "4822731"
+        },
+        {
+          "source": "eol",
+          "id": "47458748"
+        }
+      ],
+      "species": [
+        {
+          "name": "Erlikosaurus andrewsi",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Santonian"
+            ]
+          },
+          "location": {
+            "country": "MN",
+            "region": "Omnogov",
+            "formation": "Baynshire",
+            "coordinates": [
+              43.144169,
+              107.518059
+            ]
+          },
+          "holotype": {
+            "specimen_id": "IGM 100/111",
+            "institution": "Institute of Geology, Mongolian Academy of Sciences, Ulaanbaatar"
+          },
+          "size": {
+            "length_m": 3.4,
+            "weight_kg": 250,
+            "estimate": true
+          },
+          "described": 1980,
+          "authors": "Barsbold and Perle"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Coelurosauria",
+        "Maniraptoriformes",
+        "Therizinosauria"
+      ]
+    },
+    "Erythrovenator": {
+      "genus": "Erythrovenator",
+      "parent": "Theropoda",
+      "description": "Erythrovenator is a genus of basal theropod dinosaurs from the Late Triassic of Rio Grande do Sul, Brazil. The genus contains a single species, Erythrovenator jacuiensis.",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "430203"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q102381502"
+        }
+      ],
+      "species": [
+        {
+          "name": "Erythrovenator jacuiensis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Triassic"
+            ],
+            "stage": [
+              "Carnian"
+            ],
+            "from_ma": 237,
+            "to_ma": 227.3
+          },
+          "location": {
+            "country": "BR",
+            "region": "Rio Grande do Sul",
+            "formation": "Candelária",
+            "coordinates": [
+              -29.673611,
+              -53.234444
+            ]
+          },
+          "holotype": {
+            "specimen_id": "UFSM 0157",
+            "institution": "Laboratório de Estratigrafia e Paleobiologia, Universidade Federal de Santa Maria"
+          },
+          "described": 2020,
+          "authors": "Müller"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda"
+      ]
+    },
+    "Eshanosaurus": {
+      "genus": "Eshanosaurus",
+      "parent": "Therizinosauridae",
+      "description": "Eshanosaurus is a genus of a dinosaur from the early Jurassic Period. It is known only from a fossil partial lower jawbone, found in China. It may be a therizinosaurian, and if so the earliest known coelurosaur.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "66509"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q778183"
+        },
+        {
+          "source": "gbif",
+          "id": "4822612"
+        },
+        {
+          "source": "eol",
+          "id": "4433985"
+        }
+      ],
+      "species": [
+        {
+          "name": "Eshanosaurus deguchiianus",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Jurassic"
+            ],
+            "stage": [
+              "Hettangian"
+            ]
+          },
+          "location": {
+            "country": "CN",
+            "region": "Yunnan",
+            "formation": "Lufeng",
+            "coordinates": [
+              24.173901,
+              102.401901
+            ]
+          },
+          "described": 2001,
+          "authors": "Xu et al.",
+          "described_in": "xu2001"
+        }
+      ],
+      "references": [
+        {
+          "id": "xu2001",
+          "authors": "Xu, Xing; Zhao, Xijin; Clark, James M.",
+          "year": 2001,
+          "title": "A new therizinosaur from the Lower Jurassic lower Lufeng Formation of Yunnan, China",
+          "journal": "Journal of Vertebrate Paleontology",
+          "volume": "21",
+          "issue": "3",
+          "pages": "477-483",
+          "publisher": "Informa UK Limited",
+          "doi": "10.1671/0272-4634(2001)021[0477:antftl]2.0.co;2",
+          "url": "http://dx.doi.org/10.1671/0272-4634(2001)021[0477:antftl]2.0.co;2"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Tetanurae",
+        "Avetheropoda",
+        "Coelurosauria",
+        "Maniraptora",
+        "Therizinosauridae"
+      ]
+    },
+    "Eucamerotus": {
+      "genus": "Eucamerotus",
+      "parent": "Titanosauriformes",
+      "etymology": "well-chambered",
+      "description": "Eucamerotus is an extinct genus of sauropod dinosaur from the Early Cretaceous (Barremian) Wessex Formation (Wealden) of the Isle of Wight, England. The type specimen, part of a vertebra (one of the bones of the spine), was discovered in the autumn of 1869 by John Hulke. After confirming its point of origin with the Rev. William Fox, Hulke presented his find to the Geological Society of London in 1870. Two years later, he assigned to it the name Eucamerotus, though did not provide a species name. Eucamerotus was subsequently treated as a junior synonym of two existing sauropods, Pelorosaurus and Ornithopsis. In 1995, William T. Blows gave a species name, creating the combination Eucamerotus foxi. While the validity of the genus has continued to be questioned, a 2011 publication found it to be a valid genus of titanosauriform. Comparisons with the fossils of other macronarians suggests it may have reached up to 15 m (49 ft) in length.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "53018"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q1872101"
+        },
+        {
+          "source": "gbif",
+          "id": "4823447"
+        }
+      ],
+      "species": [
+        {
+          "name": "Eucamerotus foxi",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Barremian"
+            ]
+          },
+          "described": 1871,
+          "authors": "Hulke",
+          "described_in": "marsh1882"
+        }
+      ],
+      "references": [
+        {
+          "id": "marsh1882",
+          "authors": "Marsh, O. C.",
+          "year": 1882,
+          "title": "Classification of the Dinosauria",
+          "journal": "American Journal of Science",
+          "volume": "s3-23",
+          "issue": "133",
+          "pages": "81-86",
+          "publisher": "American Journal of Science (AJS)",
+          "doi": "10.2475/ajs.s3-23.133.81",
+          "url": "http://dx.doi.org/10.2475/ajs.s3-23.133.81"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda",
+        "Neosauropoda",
+        "Macronaria",
+        "Titanosauriformes"
+      ]
+    },
+    "Eucnemesaurus": {
+      "genus": "Eucnemesaurus",
+      "parent": "Riojasauridae",
+      "etymology": "good tibia lizard",
+      "pronunciation": {
+        "ipa": "/juːkˌniːmɪˈsɔːrəs/"
+      },
+      "description": "Eucnemesaurus is a basal sauropodomorph dinosaur genus usually considered to be a synonym of Euskelosaurus. Recent study by Yates (2006), however, indicates that it is valid and the same animal as putative \"giant herrerasaurid\" Aliwalia.",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "56613"
+        }
+      ],
+      "species": [
+        {
+          "name": "Eucnemesaurus entaxonis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Triassic"
+            ],
+            "stage": [
+              "Rhaetian"
+            ]
+          },
+          "location": {
+            "country": "ZA",
+            "region": "Free State",
+            "formation": "Elliot",
+            "coordinates": [
+              -28.5,
+              28.233334
+            ]
+          },
+          "described": 1920,
+          "authors": "Van Hoepen"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Riojasauridae"
+      ]
+    },
+    "Euhelopus": {
+      "genus": "Euhelopus",
+      "parent": "Euhelopodidae",
+      "description": "Euhelopus is a genus of sauropod dinosaur that lived between 143 and 133 million years ago during the Berriasian and Valanginian ages of the Early Cretaceous in what is now Shandong Province in China. It was a large quadrupedal herbivore. Like sauropods such as brachiosaurids and titanosaurs, Euhelopus had longer forelimbs than hindlimbs. This discovery was paleontologically significant because it represented the first dinosaur scientifically investigated from China — seen in 1913, rediscovered in 1922, excavated in 1923, and studied by T'an during the same year.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "38701"
+        }
+      ],
+      "species": [
+        {
+          "name": "Euhelopus zdanskyi",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Berriasian",
+              "Valanginian"
+            ]
+          },
+          "location": {
+            "country": "CN",
+            "region": "Shandong"
+          },
+          "holotype": {
+            "specimen_id": "PMU 233",
+            "institution": "Paleontological Museum Uppsala, Uppsala"
+          },
+          "described": 1956,
+          "authors": "Romer"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda",
+        "Neosauropoda",
+        "Macronaria",
+        "Titanosauriformes",
+        "Somphospondyli",
+        "Euhelopodidae"
+      ]
+    },
+    "Euoplocephalus": {
+      "genus": "Euoplocephalus",
+      "parent": "Euoplocephalini",
+      "pronunciation": {
+        "ipa": "/juːˌɒploʊˈsɛfələs/",
+        "phonetic": "yoo-OP-loh-SEF-ə-ləs"
+      },
+      "description": "Euoplocephalus is a genus of large herbivorous ankylosaurid dinosaurs, living during the Late Cretaceous of Canada. It has only one named species, Euoplocephalus tutus.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "38838"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q130885"
+        },
+        {
+          "source": "gbif",
+          "id": "4823340"
+        },
+        {
+          "source": "eol",
+          "id": "4530833"
+        }
+      ],
+      "species": [
+        {
+          "name": "Euoplocephalus tutus",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Maastrichtian"
+            ]
+          },
+          "location": {
+            "country": "US",
+            "region": "Montana",
+            "formation": "Two Medicine",
+            "coordinates": [
+              48.966599,
+              -112.650002
+            ]
+          },
+          "holotype": {
+            "specimen_id": "NHMUK R5161",
+            "institution": "Natural History Museum, London"
+          },
+          "size": {
+            "length_m": 5.5,
+            "weight_kg": 2000,
+            "estimate": true
+          },
+          "described": 1910,
+          "authors": "Lambe"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Thyreophora",
+        "Ankylosauria",
+        "Ankylosauridae",
+        "Ankylosaurinae",
+        "Euoplocephalini"
+      ]
+    },
+    "Europasaurus": {
+      "genus": "Europasaurus",
+      "parent": "Camarasauromorpha",
+      "description": "Europasaurus is a genus of dwarf sauropod dinosaur from the Late Jurassic Süntel Formation of Lower Saxony, Germany. The type and only species, Europasaurus holgeri, is notable for being among the smallest known adult sauropods, likely the result of insular dwarfism on the Late Jurassic European archipelago.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "81696"
+        }
+      ],
+      "species": [
+        {
+          "name": "Europasaurus holgeri",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Jurassic"
+            ],
+            "stage": [
+              "Kimmeridgian"
+            ]
+          },
+          "location": {
+            "country": "DE",
+            "region": "Niedersachsen",
+            "formation": "Süntel",
+            "coordinates": [
+              51.900002,
+              10.4833
+            ]
+          },
+          "described": 2006,
+          "authors": "Sander et al."
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda",
+        "Neosauropoda",
+        "Macronaria",
+        "Camarasauromorpha"
+      ]
+    },
+    "Europatitan": {
+      "genus": "Europatitan",
+      "parent": "Somphospondyli",
+      "description": "Europatitan is an extinct genus of somphospondylan sauropod from the Early Cretaceous Castrillo de la Reina Formation of Iberia, known from a relatively complete specimen discovered in the early 2000s. It contains a single species: the type species, Europatitan eastwoodi.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "356194"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q32859091"
+        }
+      ],
+      "species": [
+        {
+          "name": "Europatitan eastwoodi",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Aptian"
+            ]
+          },
+          "location": {
+            "country": "ES",
+            "region": "Castilla y Leon",
+            "formation": "Castrillo de la Reina",
+            "coordinates": [
+              42.037514,
+              -3.306101
+            ]
+          },
+          "described": 2017,
+          "authors": "Torcida Fernández-Baldor et al.",
+          "described_in": "torcidafernández-baldor2017"
+        }
+      ],
+      "references": [
+        {
+          "id": "torcidafernández-baldor2017",
+          "authors": "Torcida Fernández-Baldor, Fidel; Canudo, José Ignacio; Huerta, Pedro; Moreno-Azanza, Miguel; Montero, Diego",
+          "year": 2017,
+          "title": "<i>Europatitan eastwoodi</i>, a new sauropod from the lower Cretaceous of Iberia in the initial radiation of somphospondylans in Laurasia",
+          "journal": "PeerJ",
+          "volume": "5",
+          "pages": "e3409",
+          "publisher": "PeerJ",
+          "doi": "10.7717/peerj.3409",
+          "url": "http://dx.doi.org/10.7717/peerj.3409"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda",
+        "Neosauropoda",
+        "Macronaria",
+        "Titanosauriformes",
+        "Somphospondyli"
+      ]
+    },
+    "Europelta": {
+      "genus": "Europelta",
+      "parent": "Struthiosaurinae",
+      "etymology": "Europe's shield",
+      "description": "Europelta is a monospecific genus of nodosaurid dinosaur from Spain that lived during the Early Cretaceous (early Albian stage, ~113.0 Ma) in what is now the lower Escucha Formation of the Teruel Province. The type and only species, Europelta carbonensis, is known from two associated partial skeletons, and represents the most complete ankylosaur known from Europe. Europelta was named in 2013 by James I. Kirkland and colleagues. Europelta has an estimated length of 5 metres (16 feet) and weight of 1.3 tonnes (2,866 lbs), making it the largest member of the clade Struthiosaurini.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "284794"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q15272780"
+        },
+        {
+          "source": "eol",
+          "id": "42418535"
+        }
+      ],
+      "species": [
+        {
+          "name": "Europelta carbonensis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Albian"
+            ]
+          },
+          "location": {
+            "country": "ES",
+            "region": "Aragón",
+            "formation": "Escucha",
+            "coordinates": [
+              41.022659,
+              -0.566268
+            ]
+          },
+          "holotype": {
+            "specimen_id": "AR-1/10",
+            "institution": "Fundación Conjunto Paleontológico de Teruel-Dinópolis, Teruel"
+          },
+          "described": 2013,
+          "authors": "Kirkland et al.",
+          "described_in": "kirkland2013"
+        }
+      ],
+      "references": [
+        {
+          "id": "kirkland2013",
+          "authors": "Kirkland, James I.; Alcalá, Luis; Loewen, Mark A.; Espílez, Eduardo; Mampel, Luis; Wiersma, Jelle P.",
+          "year": 2013,
+          "title": "The Basal Nodosaurid Ankylosaur Europelta carbonensis n. gen., n. sp. from the Lower Cretaceous (Lower Albian) Escucha Formation of Northeastern Spain",
+          "journal": "PLoS ONE",
+          "volume": "8",
+          "issue": "12",
+          "pages": "e80405",
+          "publisher": "Public Library of Science (PLoS)",
+          "doi": "10.1371/journal.pone.0080405",
+          "url": "http://dx.doi.org/10.1371/journal.pone.0080405"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Thyreophora",
+        "Ankylosauria",
+        "Nodosauridae",
+        "Struthiosaurinae"
+      ]
+    },
+    "Eustreptospondylus": {
+      "genus": "Eustreptospondylus",
+      "parent": "Eustreptospondylinae",
+      "etymology": "well-twisted vertebra",
+      "pronunciation": {
+        "ipa": "/juːˌstrɛptoʊspɒnˈdaɪləs/"
+      },
+      "description": "Eustreptospondylus is an extinct genus of megalosaurid theropod dinosaur from the Callovian and Oxfordian stages of the Jurassic period (some time between 166 and 154 million years ago) in southern England, at a time when Europe was a series of scattered islands due to tectonic movement that raised the sea-bed and flooded the lowland.",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "38580"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q131213"
+        },
+        {
+          "source": "gbif",
+          "id": "4822661"
+        },
+        {
+          "source": "eol",
+          "id": "4531459"
+        }
+      ],
+      "species": [
+        {
+          "name": "Eustreptospondylus oxoniensis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Middle Jurassic",
+              "Late Jurassic"
+            ],
+            "stage": [
+              "Callovian",
+              "Oxfordian"
+            ]
+          },
+          "location": {
+            "country": "GB",
+            "region": "England",
+            "formation": "Oxford Clay",
+            "coordinates": [
+              51.782223,
+              -1.287778
+            ]
+          },
+          "holotype": {
+            "specimen_id": "OUM J13558",
+            "institution": "Oxford University Museum of Natural History, Oxford"
+          },
+          "size": {
+            "length_m": 7,
+            "estimate": true
+          },
+          "described": 1964,
+          "authors": "Walker"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Megalosauroidea",
+        "Megalosauridae",
+        "Eustreptospondylinae"
+      ]
+    },
+    "Falcarius": {
+      "genus": "Falcarius",
+      "parent": "Therizinosauria",
+      "etymology": "sickle cutter",
+      "description": "Falcarius is a genus of primitive therizinosaur dinosaur that lived during the Early Cretaceous period in what is now North America. Its remains were first collected in the Cedar Mountain Formation in 1999, with subsequent findings made during the 2000s. The genus is known from multiple specimens ranging from immature to fully-grown individuals.",
+      "diet": "omnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "65779"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q18604594"
+        },
+        {
+          "source": "gbif",
+          "id": "4822617"
+        },
+        {
+          "source": "eol",
+          "id": "4434263"
+        }
+      ],
+      "species": [
+        {
+          "name": "Falcarius utahensis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Valanginian"
+            ]
+          },
+          "location": {
+            "country": "US",
+            "region": "Utah",
+            "formation": "Cedar Mountain",
+            "coordinates": [
+              38.909088,
+              -110.100243
+            ]
+          },
+          "holotype": {
+            "specimen_id": "UMNH VP 15000",
+            "institution": "Utah Museum of Natural History, Salt Lake City"
+          },
+          "described": 2005,
+          "authors": "Kirkland et al.",
+          "described_in": "kirkland2005"
+        }
+      ],
+      "references": [
+        {
+          "id": "kirkland2005",
+          "authors": "Kirkland, James I.; Zanno, Lindsay E.; Sampson, Scott D.; Clark, James M.; DeBlieux, Donald D.",
+          "year": 2005,
+          "title": "A primitive therizinosauroid dinosaur from the Early Cretaceous of Utah",
+          "journal": "Nature",
+          "volume": "435",
+          "issue": "7038",
+          "pages": "84-87",
+          "publisher": "Springer Science and Business Media LLC",
+          "doi": "10.1038/nature03468",
+          "url": "http://dx.doi.org/10.1038/nature03468"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Coelurosauria",
+        "Maniraptoriformes",
+        "Therizinosauria"
+      ]
+    },
+    "Ferganasaurus": {
+      "genus": "Ferganasaurus",
+      "parent": "Eusauropoda",
+      "etymology": "Fergana Valley lizard",
+      "description": "Ferganasaurus is a genus of sauropod dinosaur that lived in the Balabansai Formation of Kyrgyzstan, which dates to the Callovian stage of the Middle Jurassic. It was formally described in 2003 by Alifanov and Averianov as the type species Ferganasaurus verzilini. It is believed to be similar to Rhoetosaurus.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "67549"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q280651"
+        },
+        {
+          "source": "gbif",
+          "id": "4822812"
+        }
+      ],
+      "species": [
+        {
+          "name": "Ferganasaurus verzilini",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Middle Jurassic"
+            ],
+            "stage": [
+              "Callovian"
+            ]
+          },
+          "location": {
+            "country": "KG",
+            "region": "Jalal-Abad",
+            "formation": "Balabansai",
+            "coordinates": [
+              41.333057,
+              72.125
+            ]
+          },
+          "holotype": {
+            "specimen_id": "PIN N 3042/1",
+            "institution": "Paleontological Institute, Russian Academy of Sciences, Moscow"
+          },
+          "described": 2003,
+          "authors": "Alifanov and Averianov",
+          "described_in": "alifanov2003"
+        }
+      ],
+      "references": [
+        {
+          "id": "alifanov2003",
+          "authors": "Alifanov, Vladimir R.; Averianov, Alexander O.",
+          "year": 2003,
+          "title": "<i>Ferganasaurus verzilini</i>, gen. et sp. nov., a new neosauropod (Dinosauria, Saurischia, Sauropoda) from the Middle Jurassic of Fergana Valley, Kirghizia",
+          "journal": "Journal of Vertebrate Paleontology",
+          "volume": "23",
+          "issue": "2",
+          "pages": "358-372",
+          "publisher": "Informa UK Limited",
+          "doi": "10.1671/0272-4634(2003)023[0358:fvgesn]2.0.co;2",
+          "url": "http://dx.doi.org/10.1671/0272-4634(2003)023[0358:fvgesn]2.0.co;2"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda"
+      ]
+    },
+    "Ferganocephale": {
+      "genus": "Ferganocephale",
+      "parent": "Ornithischia",
+      "description": "Ferganocephale is a dubious genus of neornithischian dinosaur. It was from the Middle Jurassic Balabansai Svita of Kyrgyzstan. The type and only species is F. adenticulatum.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "64059"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q136999"
+        },
+        {
+          "source": "gbif",
+          "id": "4966026"
+        },
+        {
+          "source": "eol",
+          "id": "47460376"
+        }
+      ],
+      "species": [
+        {
+          "name": "Ferganocephale adenticulatum",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Middle Jurassic"
+            ],
+            "stage": [
+              "Callovian"
+            ]
+          },
+          "location": {
+            "country": "KG",
+            "region": "Jalal-Abad",
+            "formation": "Balabansai",
+            "coordinates": [
+              41.334442,
+              72.245834
+            ]
+          },
+          "holotype": {
+            "specimen_id": "ZIN PH 34/42",
+            "institution": "Zoological Institute, Russian Academy of Sciences, Saint Petersburg"
+          },
+          "described": 2005,
+          "authors": "Averianov et al.",
+          "described_in": "averianov2005"
+        }
+      ],
+      "references": [
+        {
+          "id": "averianov2005",
+          "authors": "AVERIANOV, ALEXANDER O.; MARTIN, THOMAS; BAKIROV, AIZEK A.",
+          "year": 2005,
+          "title": "Pterosaur and dinosaur remains from the Middle Jurassic Balabansai Svita in the northern Fergana Depression, Kyrgyzstan (Central Asia)",
+          "journal": "Palaeontology",
+          "volume": "48",
+          "issue": "1",
+          "pages": "135-155",
+          "publisher": "Wiley",
+          "doi": "10.1111/j.1475-4983.2004.00437.x",
+          "url": "http://dx.doi.org/10.1111/j.1475-4983.2004.00437.x"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia"
+      ]
+    },
+    "Ferrisaurus": {
+      "genus": "Ferrisaurus",
+      "parent": "Leptoceratopsidae",
+      "description": "Ferrisaurus is a genus of leptoceratopsid ceratopsian dinosaur from the Sustut Basin (Tango Creek Formation) in British Columbia, Canada. The type and only species is Ferrisaurus sustutensis. It is the first non-avian dinosaur described from British Columbia.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "399801"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q73979036"
+        },
+        {
+          "source": "gbif",
+          "id": "10694209"
+        }
+      ],
+      "species": [
+        {
+          "name": "Ferrisaurus sustutensis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Maastrichtian"
+            ]
+          },
+          "location": {
+            "country": "CA",
+            "region": "British Columbia",
+            "formation": "Tango Creek",
+            "coordinates": [
+              56.324856,
+              -127.09259
+            ]
+          },
+          "described": 2019,
+          "authors": "Arbour and Evans",
+          "described_in": "arbour2019"
+        }
+      ],
+      "references": [
+        {
+          "id": "arbour2019",
+          "authors": "Arbour, Victoria M.; Evans, David C.",
+          "year": 2019,
+          "title": "A new leptoceratopsid dinosaur from Maastrichtian-aged deposits of the Sustut Basin, northern British Columbia, Canada",
+          "journal": "PeerJ",
+          "volume": "7",
+          "pages": "e7926",
+          "publisher": "PeerJ",
+          "doi": "10.7717/peerj.7926",
+          "url": "http://dx.doi.org/10.7717/peerj.7926"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Marginocephalia",
+        "Ceratopsia",
+        "Neoceratopsia",
+        "Leptoceratopsidae"
+      ]
+    },
+    "Fona": {
+      "genus": "Fona",
+      "parent": "Thescelosaurinae",
+      "pronunciation": {
+        "ipa": "/ˈfoʊtnɑː/"
+      },
+      "description": "Fona is an extinct genus of thescelosaurine thescelosaurid ornithischian dinosaurs from the 'mid'-Cretaceous Cedar Mountain Formation (Mussentuchit Member) of Utah, United States. The genus contains a single species, F. herzogae, known from several partial skeletons and skulls. Based on anatomical similarities to the closely related and similarly aged Oryctodromeus, Fona was likely a semi-fossorial animal, likely spending a significant amount of time in underground burrows. It also represents the oldest known definitive thescelosaurine.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "494305"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q10497676"
+        }
+      ],
+      "species": [
+        {
+          "name": "Fona herzogae",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Cenomanian"
+            ],
+            "from_ma": 100.5,
+            "to_ma": 93.9
+          },
+          "location": {
+            "country": "US",
+            "region": "Utah",
+            "formation": "Cedar Mountain",
+            "coordinates": [
+              38.706299,
+              -111.1978
+            ]
+          },
+          "described": 2024,
+          "authors": "Avrahami et al.",
+          "described_in": "avrahami2024"
+        }
+      ],
+      "references": [
+        {
+          "id": "avrahami2024",
+          "authors": "Avrahami, Haviv M.; Makovicky, Peter J.; Tucker, Ryan T.; Zanno, Lindsay E.",
+          "year": 2024,
+          "title": "A new semi‐fossorial thescelosaurine dinosaur from the Cenomanian‐age Mussentuchit Member of the Cedar Mountain Formation, Utah",
+          "journal": "The Anatomical Record",
+          "volume": "307",
+          "issue": "12",
+          "pages": "3717-3781",
+          "publisher": "Wiley",
+          "doi": "10.1002/ar.25505",
+          "url": "http://dx.doi.org/10.1002/ar.25505"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Neornithischia",
+        "Thescelosauridae",
+        "Thescelosaurinae"
+      ]
+    },
+    "Foraminacephale": {
+      "genus": "Foraminacephale",
+      "parent": "Pachycephalosaurinae",
+      "etymology": "foramina head",
+      "description": "Foraminacephale is a genus of pachycephalosaurid dinosaur from Late Cretaceous (Campanian stage) deposits of Canada.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "448078"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q5863739"
+        },
+        {
+          "source": "eol",
+          "id": "60970977"
+        }
+      ],
+      "species": [
+        {
+          "name": "Foraminacephale brevis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Campanian"
+            ],
+            "from_ma": 83.6,
+            "to_ma": 72.2
+          },
+          "location": {
+            "country": "CA",
+            "region": "Alberta",
+            "formation": "Dinosaur Park",
+            "coordinates": [
+              50.823334,
+              -111.603889
+            ]
+          },
+          "holotype": {
+            "specimen_id": "CMN 1423",
+            "institution": "Canadian Museum of Nature, Ottawa"
+          },
+          "size": {
+            "length_m": 1.5,
+            "weight_kg": 10,
+            "estimate": true
+          },
+          "described": 2017,
+          "authors": "Schott and Evans",
+          "described_in": "schott2016"
+        }
+      ],
+      "references": [
+        {
+          "id": "schott2016",
+          "authors": "Schott, Ryan K.; Evans, David C.",
+          "year": 2016,
+          "title": "Cranial variation and systematics of<i>Foraminacephale brevis</i>gen. nov. and the diversity of pachycephalosaurid dinosaurs (Ornithischia: Cerapoda) in the Belly River Group of Alberta, Canada",
+          "journal": "Zoological Journal of the Linnean Society",
+          "publisher": "Oxford University Press (OUP)",
+          "doi": "10.1111/zoj.12465",
+          "url": "http://dx.doi.org/10.1111/zoj.12465"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Marginocephalia",
+        "Pachycephalosauria",
+        "Pachycephalosauridae",
+        "Pachycephalosaurinae"
+      ]
+    },
+    "Foskeia": {
+      "genus": "Foskeia",
+      "parent": "Rhabdodontia",
+      "description": "Foskeia is an extinct genus of rhabdodontomorph ornithopod dinosaurs known from the Early Cretaceous (Barremian to Aptian ages) Castrillo de la Reina Formation of Spain. The genus contains a single species, Foskeia pelendonum, known from fossils of multiple individuals of different ontogenetic stages. Before its formal description, it had been nicknamed the \"Vegagete ornithopod.\"",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "518611"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q137994796"
+        }
+      ],
+      "species": [
+        {
+          "name": "Foskeia pelendonum",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Aptian"
+            ]
+          },
+          "location": {
+            "country": "ES",
+            "region": "Castilla y Leon",
+            "formation": "Castrillo de la Reina",
+            "coordinates": [
+              41.991943,
+              -3.306944
+            ]
+          },
+          "described": 2026,
+          "authors": "Dieudonné et al.",
+          "described_in": "dieudonné2026"
+        }
+      ],
+      "references": [
+        {
+          "id": "dieudonné2026",
+          "authors": "Dieudonné, Paul‐Emile; Becerra, Marcos Gabriel; Zanesco, Tábata; Tortosa, Thierry; Cruzado‐Caballero, Penélope; Stein, Koen; Torcida Fernández‐Baldor, Fidel",
+          "year": 2026,
+          "title": "<i>Foskeia pelendonum</i>\n                    , a new rhabdodontomorph from the Lower Cretaceous of Salas de los Infantes (Burgos Province, Spain), and a new phylogeny of ornithischian dinosaurs",
+          "journal": "Papers in Palaeontology",
+          "volume": "12",
+          "issue": "1",
+          "publisher": "Wiley",
+          "doi": "10.1002/spp2.70057",
+          "url": "http://dx.doi.org/10.1002/spp2.70057"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Ornithopoda",
+        "Clypeodonta",
+        "Iguanodontia",
+        "Rhabdodontomorpha",
+        "Rhabdodontia"
+      ]
+    },
+    "Fosterovenator": {
+      "genus": "Fosterovenator",
+      "parent": "Ceratosauridae",
+      "description": "Fosterovenator is a genus of ceratosaur dinosaur known from the Late Jurassic Morrison Formation of Wyoming. The holotype is YPM VP 058267A, B, and C, a tibia with an articulated astragalus. An additional specimen is known, the paratype YPM VP 058267D, a fibula of a larger individual.",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "311426"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q18642358"
+        },
+        {
+          "source": "gbif",
+          "id": "8444458"
+        },
+        {
+          "source": "eol",
+          "id": "47043838"
+        }
+      ],
+      "species": [
+        {
+          "name": "Fosterovenator churei",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Jurassic"
+            ],
+            "stage": [
+              "Tithonian"
+            ]
+          },
+          "location": {
+            "country": "US",
+            "region": "Wyoming",
+            "formation": "Morrison",
+            "coordinates": [
+              41.8825,
+              -106.1073
+            ]
+          },
+          "holotype": {
+            "specimen_id": "YPM VP 058267A",
+            "institution": "Yale Peabody Museum of Natural History, New Haven"
+          },
+          "described": 2014,
+          "authors": "Dalman"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Ceratosauria",
+        "Ceratosauridae"
+      ]
+    },
+    "Fostoria": {
+      "genus": "Fostoria",
+      "parent": "Rhabdodontomorpha",
+      "description": "Fostoria is a genus of iguanodontian ornithopod dinosaur from the Griman Creek Formation of New South Wales, Australia. The type and only species, Fostoria dhimbangunmal was described in 2019.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "398669"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q64392298"
+        }
+      ],
+      "species": [
+        {
+          "name": "Fostoria dhimbangunmal",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Cenomanian"
+            ],
+            "from_ma": 100.5,
+            "to_ma": 93.9
+          },
+          "location": {
+            "country": "AU",
+            "region": "New South Wales",
+            "formation": "Griman Creek",
+            "coordinates": [
+              -29.46118,
+              147.961273
+            ]
+          },
+          "described": 2019,
+          "authors": "Bell et al.",
+          "described_in": "bell2019"
+        }
+      ],
+      "references": [
+        {
+          "id": "bell2019",
+          "authors": "Bell, Phil R.; Brougham, Tom; Herne, Matthew C.; Frauenfelder, Timothy; Smith, Elizabeth T.",
+          "year": 2019,
+          "title": "<i>Fostoria dhimbangunmal</i>, gen. et sp. nov<i>.</i>, a new iguanodontian (Dinosauria, Ornithopoda) from the mid-Cretaceous of Lightning Ridge, New South Wales, Australia",
+          "journal": "Journal of Vertebrate Paleontology",
+          "volume": "39",
+          "issue": "1",
+          "pages": "e1564757",
+          "publisher": "Informa UK Limited",
+          "doi": "10.1080/02724634.2019.1564757",
+          "url": "http://dx.doi.org/10.1080/02724634.2019.1564757"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Ornithopoda",
+        "Clypeodonta",
+        "Iguanodontia",
+        "Rhabdodontomorpha"
+      ]
+    },
+    "Fruitadens": {
+      "genus": "Fruitadens",
+      "parent": "Heterodontosaurinae",
+      "etymology": "Fruita teeth",
+      "description": "Fruitadens is a genus of heterodontosaurid dinosaur. The name means \"Fruita teeth\", in reference to Fruita, Colorado (USA), where its fossils were first found. It is known from partial skulls and skeletons from at least four individuals of differing biological ages, found in Tithonian (Late Jurassic) rocks of the Morrison Formation in Colorado. Fruitadens is one of the smallest known ornithischian dinosaur, with young adults estimated at 65 to 75 cm (26 to 30 in) in length and 0.5 to 0.75 kg (1.1 to 1.7 lb) in weight. It is interpreted as an omnivore and represents one of the latest-surviving heterodontosaurids.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "157200"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q133058"
+        },
+        {
+          "source": "eol",
+          "id": "11599472"
+        }
+      ],
+      "species": [
+        {
+          "name": "Fruitadens haagarorum",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Jurassic"
+            ],
+            "stage": [
+              "Tithonian"
+            ]
+          },
+          "location": {
+            "country": "US",
+            "region": "Colorado",
+            "formation": "Morrison",
+            "coordinates": [
+              39.146,
+              -108.769997
+            ]
+          },
+          "holotype": {
+            "specimen_id": "LACM 115747",
+            "institution": "Natural History Museum of Los Angeles County, Los Angeles"
+          },
+          "described": 2010,
+          "authors": "Butler et al.",
+          "described_in": "butler2009"
+        }
+      ],
+      "references": [
+        {
+          "id": "butler2009",
+          "authors": "Butler, Richard J.; Galton, Peter M.; Porro, Laura B.; Chiappe, Luis M.; Henderson, Donald M.; Erickson, Gregory M.",
+          "year": 2009,
+          "title": "Lower limits of ornithischian dinosaur body size inferred from a new Upper Jurassic heterodontosaurid from North America",
+          "journal": "Proceedings of the Royal Society B: Biological Sciences",
+          "volume": "277",
+          "issue": "1680",
+          "pages": "375-381",
+          "publisher": "The Royal Society",
+          "doi": "10.1098/rspb.2009.1494",
+          "url": "http://dx.doi.org/10.1098/rspb.2009.1494"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Heterodontosauridae",
+        "Heterodontosaurinae"
+      ]
+    },
+    "Fujianvenator": {
+      "genus": "Fujianvenator",
+      "parent": "Avialae",
+      "etymology": "Fujian hunter",
+      "description": "Fujianvenator is an extinct genus of anchiornithid theropod dinosaur from the Late Jurassic Nanyuan Formation of Fujian Province, China. The genus contains a single species, F. prodigiosus, known from a partial articulated skeleton. It is suggested to possibly have had a terrestrial or wading lifestyle.",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "476927"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q122278164"
+        }
+      ],
+      "species": [
+        {
+          "name": "Fujianvenator prodigiosus",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Jurassic"
+            ],
+            "stage": [
+              "Tithonian"
+            ]
+          },
+          "location": {
+            "country": "CN",
+            "region": "Fujian",
+            "formation": "Nanyuan",
+            "coordinates": [
+              27.148056,
+              119.00444
+            ]
+          },
+          "holotype": {
+            "specimen_id": "IVPP V31985",
+            "institution": "Institute of Vertebrate Paleontology and Paleoanthropology, Beijing"
+          },
+          "described": 2023,
+          "authors": "Xu et al.",
+          "described_in": "xu2023"
+        }
+      ],
+      "references": [
+        {
+          "id": "xu2023",
+          "authors": "Xu, Liming; Wang, Min; Chen, Runsheng; Dong, Liping; Lin, Min; Xu, Xing; Tang, Jianrong; You, Hailu; Zhou, Guowu; Wang, Linchang; He, Wenxing; Li, Yujuan; Zhang, Chi; Zhou, Zhonghe",
+          "year": 2023,
+          "title": "A new avialan theropod from an emerging Jurassic terrestrial fauna",
+          "journal": "Nature",
+          "volume": "621",
+          "issue": "7978",
+          "pages": "336-343",
+          "publisher": "Springer Science and Business Media LLC",
+          "doi": "10.1038/s41586-023-06513-7",
+          "url": "http://dx.doi.org/10.1038/s41586-023-06513-7"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Coelurosauria",
+        "Maniraptora",
+        "Avialae"
+      ]
+    },
+    "Fukuiraptor": {
+      "genus": "Fukuiraptor",
+      "parent": "Neovenatoridae",
+      "etymology": "thief of Fukui",
+      "description": "Fukuiraptor is a genus of medium-sized megaraptoran theropod dinosaur of the Early Cretaceous epoch (either Barremian or Aptian) that lived in what is now Japan. Fukuiraptor is known from the Kitadani Formation and possibly also the Sebayashi Formation. Fukuiraptor may have been one of the basalmost members of Megaraptora, or a sister taxon to Australovenator.",
+      "diet": "carnivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "66356"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q132536"
+        },
+        {
+          "source": "gbif",
+          "id": "4819280"
+        },
+        {
+          "source": "eol",
+          "id": "4434265"
+        }
+      ],
+      "species": [
+        {
+          "name": "Fukuiraptor kitadaniensis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Aptian"
+            ]
+          },
+          "location": {
+            "country": "JP",
+            "region": "Fukui",
+            "formation": "Kitadani",
+            "coordinates": [
+              36.121387,
+              136.544724
+            ]
+          },
+          "holotype": {
+            "specimen_id": "FPDM-V9712203",
+            "institution": "Fukui Prefectural Dinosaur Museum, Fukui"
+          },
+          "size": {
+            "length_m": 4.2,
+            "estimate": true
+          },
+          "described": 2000,
+          "authors": "Azuma and Currie",
+          "described_in": "azuma2000"
+        }
+      ],
+      "references": [
+        {
+          "id": "azuma2000",
+          "authors": "Azuma, Yoichi; Currie, Philip J",
+          "year": 2000,
+          "title": "A new carnosaur (Dinosauria: Theropoda) from the Lower Cretaceous of Japan",
+          "journal": "Canadian Journal of Earth Sciences",
+          "volume": "37",
+          "issue": "12",
+          "pages": "1735-1753",
+          "publisher": "Canadian Science Publishing",
+          "doi": "10.1139/e00-064",
+          "url": "http://dx.doi.org/10.1139/e00-064"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Allosauroidea",
+        "Neovenatoridae"
+      ]
+    },
+    "Fukuisaurus": {
+      "genus": "Fukuisaurus",
+      "parent": "Hadrosauroidea",
+      "description": "Fukuisaurus is a genus of herbivorous ornithopod dinosaur that lived during the Early Cretaceous in what is now Japan. The type species is Fukuisaurus tetoriensis, which was named and described in 2003.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "68188"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q18560048"
+        },
+        {
+          "source": "gbif",
+          "id": "4823225"
+        },
+        {
+          "source": "eol",
+          "id": "52570647"
+        }
+      ],
+      "species": [
+        {
+          "name": "Fukuisaurus tetoriensis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Aptian"
+            ]
+          },
+          "location": {
+            "country": "JP",
+            "region": "Fukui",
+            "formation": "Kitadani",
+            "coordinates": [
+              36.121387,
+              136.544724
+            ]
+          },
+          "size": {
+            "length_m": 4.7,
+            "estimate": true
+          },
+          "described": 2003,
+          "authors": "Kobayashi and Azuma",
+          "described_in": "kobayashi2003"
+        }
+      ],
+      "references": [
+        {
+          "id": "kobayashi2003",
+          "authors": "Kobayashi, Yoshitsugu; Azuma, Yoichi",
+          "year": 2003,
+          "title": "A new iguanodontian (Dinosauria: Ornithopoda) from the Lower Cretaceous Kitadani Formation of Fukui Prefecture, Japan",
+          "journal": "Journal of Vertebrate Paleontology",
+          "volume": "23",
+          "issue": "1",
+          "pages": "166-175",
+          "publisher": "Informa UK Limited",
+          "doi": "10.1671/0272-4634(2003)23[166:anidof]2.0.co;2",
+          "url": "http://dx.doi.org/10.1671/0272-4634(2003)23[166:anidof]2.0.co;2"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Ornithopoda",
+        "Clypeodonta",
+        "Iguanodontia",
+        "Dryomorpha",
+        "Styracosterna",
+        "Hadrosauriformes",
+        "Hadrosauroidea"
+      ]
+    },
+    "Fukuititan": {
+      "genus": "Fukuititan",
+      "parent": "Titanosauriformes",
+      "etymology": "giant from Fukui prefecture",
+      "description": "Fukuititan is a genus of sauropod dinosaur that lived during the Early Cretaceous (either Barremian or Aptian age) in the Kitadani Formation in what is now Japan. The genus contains a single species, Fukuititan nipponensis. The discovery of Fukuititan shed light on Japanese titanosauriforms, which are generally very poorly-known.",
+      "diet": "herbivore",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "202263"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q2096199"
+        },
+        {
+          "source": "gbif",
+          "id": "8607635"
+        }
+      ],
+      "species": [
+        {
+          "name": "Fukuititan nipponensis",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Aptian"
+            ]
+          },
+          "location": {
+            "country": "JP",
+            "region": "Fukui",
+            "formation": "Kitadani",
+            "coordinates": [
+              36.116669,
+              136.550003
+            ]
+          },
+          "holotype": {
+            "specimen_id": "FPDM-V8468",
+            "institution": "Fukui Prefectural Dinosaur Museum, Fukui"
+          },
+          "described": 2010,
+          "authors": "Azuma and Shibata",
+          "described_in": "azuma2010"
+        }
+      ],
+      "references": [
+        {
+          "id": "azuma2010",
+          "authors": "AZUMA, Yoichi; SHIBATA, Masateru",
+          "year": 2010,
+          "title": "<i>Fukuititan nipponensis</i>, A New Titanosauriform Sauropod from the Early Cretaceous Tetori Group of Fukui Prefecture, Japan",
+          "journal": "Acta Geologica Sinica - English Edition",
+          "volume": "84",
+          "issue": "3",
+          "pages": "454-462",
+          "publisher": "Wiley",
+          "doi": "10.1111/j.1755-6724.2010.00268.x",
+          "url": "http://dx.doi.org/10.1111/j.1755-6724.2010.00268.x"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda",
+        "Neosauropoda",
+        "Macronaria",
+        "Titanosauriformes"
       ]
     },
     "Fukuivenator": {
