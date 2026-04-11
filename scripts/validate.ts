@@ -926,16 +926,28 @@ for (const [filePath, doc] of genusParsed)
         const holotype = species.holotype;
         const speciesLabel = species.name ?? "?";
 
-        if (!Array.isArray(holotype.specimen_id) || holotype.specimen_id.length === 0)
+        // When holotype.status is set to a valid enum value, the block represents
+        // a lost/destroyed/unknown-state specimen where specimen_id, institution,
+        // and specimen_type may be unavailable. See #1850.
+        const hasValidStatus = typeof holotype.status === "string"
+            && allowedHolotypeStatus.has(holotype.status);
+
+        const hasSpecimenIdArray = Array.isArray(holotype.specimen_id)
+            && holotype.specimen_id.length > 0;
+
+        if (!hasSpecimenIdArray)
         {
-            checkError(
-                "Holotype consistency",
-                filePath,
-                `species '${speciesLabel}': holotype present but missing 'specimen_id' (must be a non-empty array of catalogue numbers)`);
+            if (!hasValidStatus)
+            {
+                checkError(
+                    "Holotype consistency",
+                    filePath,
+                    `species '${speciesLabel}': holotype present but missing 'specimen_id' (must be a non-empty array of catalogue numbers, or set 'status' to lost/destroyed/unknown)`);
+            }
         }
         else
         {
-            for (const [index, value] of holotype.specimen_id.entries())
+            for (const [index, value] of holotype.specimen_id!.entries())
             {
                 if (typeof value !== "string" || value.trim().length === 0)
                 {
@@ -947,7 +959,7 @@ for (const [filePath, doc] of genusParsed)
             }
         }
 
-        if (!holotype.institution)
+        if (!holotype.institution && !hasValidStatus)
         {
             checkError(
                 "Holotype consistency",
@@ -957,10 +969,13 @@ for (const [filePath, doc] of genusParsed)
 
         if (holotype.specimen_type === undefined)
         {
-            checkError(
-                "Holotype consistency",
-                filePath,
-                `species '${speciesLabel}': holotype present but missing 'specimen_type' (must be one of: ${[...allowedSpecimenTypes].join(", ")})`);
+            if (!hasValidStatus)
+            {
+                checkError(
+                    "Holotype consistency",
+                    filePath,
+                    `species '${speciesLabel}': holotype present but missing 'specimen_type' (must be one of: ${[...allowedSpecimenTypes].join(", ")})`);
+            }
         }
         else if (!allowedSpecimenTypes.has(holotype.specimen_type))
         {
@@ -969,9 +984,9 @@ for (const [filePath, doc] of genusParsed)
                 filePath,
                 `species '${speciesLabel}': invalid specimen_type '${holotype.specimen_type}' (must be one of: ${[...allowedSpecimenTypes].join(", ")})`);
         }
-        else if (Array.isArray(holotype.specimen_id) && holotype.specimen_id.length > 0)
+        else if (hasSpecimenIdArray)
         {
-            const idCount = holotype.specimen_id.length;
+            const idCount = holotype.specimen_id!.length;
             const singleTypes = new Set(["holotype", "lectotype", "neotype"]);
 
             if (singleTypes.has(holotype.specimen_type) && idCount !== 1)
