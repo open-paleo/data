@@ -1,7 +1,7 @@
 /**
- * One-off: backfill species.holotype.specimen_id and .institution for
- * sauropodomorph genera using the Wikipedia article
- * `List_of_sauropodomorph_type_specimens` as the source.
+ * Backfill species.holotype.specimen_id and .institution for a major
+ * clade using the corresponding Wikipedia "List of ... type specimens"
+ * article as the source.
  *
  * Cross-references Wikipedia's table against our genera YAML files and:
  *   - applies clean backfills (both our fields empty)
@@ -17,13 +17,16 @@
  * string when the prefix is not in the registry.
  *
  * Usage:
- *   node --experimental-strip-types scripts/backfill-sauropodomorph-specimens.ts [--apply]
+ *   node --experimental-strip-types scripts/backfill-clade-specimens.ts --clade <name> [--apply]
+ *
+ * Known clades are defined in CLADE_CONFIGS below. Add a new entry per
+ * clade once a Wikipedia type-specimens list article exists.
  *
  * Without `--apply` the script runs in dry-run mode and prints a
  * per-file summary of proposed changes without touching YAML files.
  *
  * Written for issues #1837 and #1838. See
- * `reports/sauropodomorph-specimen-backfill.md` for the plan.
+ * `reports/sauropodomorph-specimen-backfill.md` for the original plan.
  */
 
 import * as fs from "node:fs";
@@ -33,15 +36,63 @@ import { parse as parseYamlContent } from "yaml";
 
 import type { GenusData, Species } from "./types.ts";
 
+type CladeConfig = {
+    /** Wikipedia page name (path segment after /wiki/). */
+    pageName: string;
+    /** Cache filename under node_modules/.cache/. */
+    cacheFile: string;
+    /** Zero-based index of the wikitable in the article that holds the type-specimen list. */
+    tableIndex: number;
+    /** Column indices for the three fields we care about. */
+    cellIndices: {
+        binomial: number;
+        specimenId: number;
+        institution: number;
+    };
+};
+
+const CLADE_CONFIGS: Record<string, CladeConfig> = {
+    sauropodomorph: {
+        pageName: "List_of_sauropodomorph_type_specimens",
+        cacheFile: "sauropodomorph-wikitext.txt",
+        tableIndex: 1,
+        cellIndices: { binomial: 0, specimenId: 1, institution: 2 },
+    },
+    theropod: {
+        pageName: "List_of_non-avian_theropod_type_specimens",
+        cacheFile: "theropod-wikitext.txt",
+        tableIndex: 0,
+        cellIndices: { binomial: 0, specimenId: 3, institution: 4 },
+    },
+};
+
+const cladeArgIndex = process.argv.indexOf("--clade");
+const cladeName = cladeArgIndex >= 0 ? process.argv[cladeArgIndex + 1] : undefined;
+
+if (typeof cladeName !== "string" || cladeName.length === 0)
+{
+    console.error("Usage: backfill-clade-specimens.ts --clade <name> [--apply]");
+    console.error(`Known clades: ${Object.keys(CLADE_CONFIGS).join(", ")}`);
+    process.exit(1);
+}
+
+const config = CLADE_CONFIGS[cladeName];
+
+if (!config)
+{
+    console.error(`Unknown clade '${cladeName}'. Known clades: ${Object.keys(CLADE_CONFIGS).join(", ")}`);
+    process.exit(1);
+}
+
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
 const root = path.join(scriptDir, "..");
 const generaDir = path.join(root, "genera");
 const institutionsPath = path.join(root, "institutions.yaml");
-const cachePath = path.join(root, "node_modules", ".cache", "sauropodomorph-wikitext.txt");
+const cachePath = path.join(root, "node_modules", ".cache", config.cacheFile);
 const wikipediaApi = "https://en.wikipedia.org/w/api.php"
     + "?action=parse"
-    + "&page=List_of_sauropodomorph_type_specimens"
+    + `&page=${config.pageName}`
     + "&format=json"
     + "&prop=wikitext";
 
@@ -139,7 +190,8 @@ function cleanCell(text: string): string
 }
 
 /**
- * Parses the sauropodomorph wikitable into structured rows.
+ * Parses the clade-specific type-specimen wikitable into structured rows.
+ * The target table index and column positions come from the clade config.
  *
  * @param wikitext - The full article wikitext.
  * @returns Array of parsed row entries.
@@ -147,30 +199,35 @@ function cleanCell(text: string): string
 function parseTable(wikitext: string): Array<WikiEntry>
 {
     const tables = wikitext.split(/\n\{\|/).slice(1);
-    const mainTable = tables[1];
+    const mainTable = tables[config.tableIndex];
 
     if (typeof mainTable !== "string")
     {
-        throw new Error("Could not locate main wikitable in article");
+        throw new Error(`Could not locate wikitable at index ${config.tableIndex} in article`);
     }
 
     const tableEnd = mainTable.indexOf("\n|}");
     const tableContent = mainTable.slice(0, tableEnd);
     const rawRows = tableContent.split(/\n\|-\s*\n/).slice(1);
     const entries = new Array<WikiEntry>();
+    const maxCellIndex = Math.max(
+        config.cellIndices.binomial,
+        config.cellIndices.specimenId,
+        config.cellIndices.institution,
+    );
 
     for (const rawRow of rawRows)
     {
         const cells = ("\n" + rawRow).split(/\n\|\s*/).slice(1);
 
-        if (cells.length < 3)
+        if (cells.length <= maxCellIndex)
         {
             continue;
         }
 
-        const binomial = cleanCell(cells[0]);
-        const specimenId = cleanCell(cells[1]);
-        const institution = cleanCell(cells[2]);
+        const binomial = cleanCell(cells[config.cellIndices.binomial]);
+        const specimenId = cleanCell(cells[config.cellIndices.specimenId]);
+        const institution = cleanCell(cells[config.cellIndices.institution]);
 
         if (binomial.length === 0)
         {
@@ -845,9 +902,9 @@ console.log(`Unchanged (already set):         ${unchangedInstitutionCount}`);
 if (changes.length > 0)
 {
     console.log("");
-    console.log("=== First 10 planned changes ===");
+    console.log(`=== Planned changes (${changes.length}) ===`);
 
-    for (const change of changes.slice(0, 10))
+    for (const change of changes)
     {
         console.log(`  ${change.binomial}`);
         console.log(`    specimen:    "${change.oldSpecimen}" -> "${change.newSpecimen}"`);
