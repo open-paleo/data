@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-04-11T02:31:18.820Z
-  clade_count: 247
-  genus_count: 1219
+  built_at: 2026-04-11T03:24:20.509Z
+  clade_count: 248
+  genus_count: 1289
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.04"
@@ -291,6 +291,7 @@ tree:
                             Pachycephalosauria:
                               Pachycephalosauridae:
                                 Pachycephalosaurinae: {}
+                                Pachycephalosaurini: {}
                               Eupachycephalosauria: {}
                         Thyreophora:
                           Ankylosauria:
@@ -4165,6 +4166,24 @@ clades:
       - Pachycephalosauria
       - Pachycephalosauridae
       - Pachycephalosaurinae
+  Pachycephalosaurini:
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Marginocephalia
+      - Pachycephalosauria
+      - Pachycephalosauridae
+      - Pachycephalosaurini
   Pachyrhinosaurini:
     taxonomy:
       - Life
@@ -5737,6 +5756,4194 @@ clades:
       - Eudromaeosauria
       - Velociraptorinae
 genera:
+  Aardonyx:
+    genus: Aardonyx
+    parent: Sauropodiformes
+    description: Aardonyx is a genus of basal sauropodomorph dinosaur. It is known from the type species Aardonyx celestae found from the Early Jurassic Elliot Formation of South Africa. A. celestae was named after Celeste Yates, who prepared much of the first known fossil material of the species. It has arm features that are intermediate between basal sauropodomorphs and more derived sauropods.
+    identifiers:
+      - source: pbdb
+        id: "157362"
+      - source: wikidata
+        id: Q131298
+      - source: eol
+        id: "47459155"
+    species:
+      - name: Aardonyx celestae
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Jurassic
+          stage:
+            - Sinemurian
+        location:
+          country: ZA
+          region: Free State
+          formation: Elliot
+          coordinates:
+            - -28.466389
+            - 27.824444
+        size:
+          length_m: 8
+          estimate: true
+        described: 2010
+        authors: Yates et al.
+        described_in: yates2009
+    references:
+      - id: yates2009
+        authors: Yates, Adam M.; Bonnan, Matthew F.; Neveling, Johann; Chinsamy, Anusuya; Blackbeard, Marc G.
+        year: 2009
+        title: A new transitional sauropodomorph dinosaur from the Early Jurassic of South Africa and the evolution of sauropod feeding and quadrupedalism
+        journal: "Proceedings of the Royal Society B: Biological Sciences"
+        volume: "277"
+        issue: "1682"
+        pages: 787-794
+        publisher: The Royal Society
+        doi: 10.1098/rspb.2009.1440
+        url: http://dx.doi.org/10.1098/rspb.2009.1440
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+  Abdarainurus:
+    genus: Abdarainurus
+    parent: Titanosauria
+    etymology: Abdrant Nuru tail
+    description: Abdarainurus is a genus of titanosaur dinosaur from the Alagteeg Formation in Mongolia. The type and only species is A. barsboldi. Currently seen as an indeterminate titanosaur, it may represent a previously unknown lineage of Asian macronarians. Abdarainurus is not known from many remains; it is only known from eight front tail vertebrae and a middle tail vertebra and several chevrons.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "407882"
+      - source: wikidata
+        id: Q84847744
+      - source: eol
+        id: "60974139"
+    species:
+      - name: Abdarainurus barsboldi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+        location:
+          country: MN
+          region: Omnogov
+          formation: Alagteeg
+          coordinates:
+            - 44.523335
+            - 103.154999
+        described: 2020
+        authors: Averianov and Lopatin
+        described_in: averianov2020
+    references:
+      - id: averianov2020
+        authors: Averianov, Alexander O.; Lopatin, Alexey V.
+        year: 2020
+        title: An unusual new sauropod dinosaur from the Late Cretaceous of Mongolia
+        journal: Journal of Systematic Palaeontology
+        volume: "18"
+        issue: "12"
+        pages: 1009-1032
+        publisher: Informa UK Limited
+        doi: 10.1080/14772019.2020.1716402
+        url: http://dx.doi.org/10.1080/14772019.2020.1716402
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Sauropoda
+      - Macronaria
+      - Titanosauria
+  Abditosaurus:
+    genus: Abditosaurus
+    parent: Saltasauridae
+    etymology: forgotten reptile
+    description: Abditosaurus is an extinct genus of titanosaurian sauropod dinosaur from the Late Cretaceous (Maastrichtian) Conques Formation (Tremp Group) of Catalonia, Spain. The genus contains a single species, Abditosaurus kuehnei, known from a partial specimen representing the most complete titanosaur skeleton found in Europe. Phylogenetic analyses recover it within a clade of South American and African saltasaurines, distinct from other insular dwarf sauropods from the European archipelago. Abditosaurus inhabited the Ibero-Armorican Island, a prehistoric island made up of what is now Spain, Portugal, and southern France, and would have been the largest titanosaur species in its environment.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "450821"
+      - source: wikidata
+        id: Q110852461
+    species:
+      - name: Abditosaurus kuehnei
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: ES
+          region: Cataluña
+          formation: Conques
+          coordinates:
+            - 42.159443
+            - 0.973056
+        described: 2022
+        authors: Vila et al.
+        described_in: vila2022
+    references:
+      - id: vila2022
+        authors: Vila, Bernat; Sellés, Albert; Moreno-Azanza, Miguel; Razzolini, Novella L.; Gil-Delgado, Alejandro; Canudo, José Ignacio; Galobart, Àngel
+        year: 2022
+        title: A titanosaurian sauropod with Gondwanan affinities in the latest Cretaceous of Europe
+        journal: Nature Ecology & Evolution
+        volume: "6"
+        issue: "3"
+        pages: 288-296
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/s41559-021-01651-5
+        url: http://dx.doi.org/10.1038/s41559-021-01651-5
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
+      - Titanosauria
+      - Lithostrotia
+      - Saltasauroidea
+      - Lohuecosauria
+      - Saltasauridae
+  Abelisaurus:
+    genus: Abelisaurus
+    parent: Abelisaurinae
+    pronunciation:
+      ipa: /əˌbɛlɪˈsɔːrəs/
+    description: Abelisaurus is a genus of predatory abelisaurid theropod dinosaur which lived during the Late Cretaceous Period (Campanian) of what is now South America. It was a bipedal carnivore that probably reached about 7.4 metres (24 ft 3 in) in length, although this is uncertain as it is known from only one partial skull.
+    diet: carnivore
+    locomotion: bipedal
+    identifiers:
+      - source: pbdb
+        id: "53946"
+      - source: wikidata
+        id: Q130921
+      - source: gbif
+        id: "4822836"
+      - source: eol
+        id: "4532776"
+      - source: zoobank
+        id: 3E222D42-DB71-4BD4-B365-CBC84CE61716
+    species:
+      - name: Abelisaurus comahuensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: AR
+          region: Río Negro
+          formation: Allen
+          coordinates:
+            - -38.76173
+            - -67.982765
+        holotype:
+          specimen_id: MPCA 11098
+          institution: Museo provincial de Cipolletti "Carlos Ameghino", Cipolletti
+        size:
+          length_m: 9
+          estimate: true
+        described: 1984
+        authors: Bonaparte
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Ceratosauria
+      - Abelisauridae
+      - Brachyrostra
+      - Furileusauria
+      - Abelisaurinae
+  Abrictosaurus:
+    genus: Abrictosaurus
+    parent: Heterodontosaurinae
+    pronunciation:
+      ipa: /əˌbrɪktəˈsɔːrəs/
+    description: Abrictosaurus is a genus of heterodontosaurid dinosaur that lived during the Early Jurassic in what is now in parts of southern Africa such as Lesotho and South Africa. It was a bipedal herbivore or omnivore and was one of the most basal heterodontosaurids. It was approximately 1.2 metres (3.9 ft) long and weighed less than 45 kilograms (99 lb).
+    diet: herbivore
+    locomotion: bipedal
+    identifiers:
+      - source: pbdb
+        id: "38723"
+    species:
+      - name: Abrictosaurus consors
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Jurassic
+          stage:
+            - Sinemurian
+        location:
+          country: LS
+          region: Qacha's Nek
+          formation: Elliot
+          coordinates:
+            - -30.049999
+            - 28.533333
+        holotype:
+          specimen_id: UCL B54
+          institution: University College London, London
+        described: 1975
+        authors: Hopson
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Heterodontosauridae
+      - Heterodontosaurinae
+  Abrosaurus:
+    genus: Abrosaurus
+    parent: Mamenchisauridae
+    pronunciation:
+      ipa: /ˌæbroʊˈsɔːrəs/
+    description: Abrosaurus is a genus of macronarian sauropod dinosaur from the Middle Jurassic Period of what is now Asia. It is one of many dinosaurs found at the Dashanpu Quarry in the Sichuan Province of China. Like most sauropods, Abrosaurus was a quadrupedal herbivore. It was rather small for a sauropod, measuring no more than 9.1 metres (30 ft) long. Its head was boxy and topped with a tall, bony arch containing the nostrils. The generic name refers to the nature of the skull, with large openings separated by thin, bony struts. The only named species is A. dongpoi, named after eleventh-century Chinese poet Su Shi, also known as Su Dongpo, who was born in Sichuan.
+    diet: herbivore
+    locomotion: quadrupedal
+    identifiers:
+      - source: pbdb
+        id: "56458"
+    species:
+      - name: Abrosaurus dongpoensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Middle Jurassic
+            - Late Jurassic
+          stage:
+            - Bajocian
+            - Oxfordian
+        location:
+          country: CN
+          region: Sichuan
+          formation: Shaximiao
+          coordinates:
+            - 29.411388
+            - 104.852501
+        holotype:
+          specimen_id: ZDM5038
+          institution: Zigong Dinosaur Museum, Zigong
+        described: 1989
+        authors: Ouyang
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Mamenchisauridae
+  Abydosaurus:
+    genus: Abydosaurus
+    parent: Brachiosauridae
+    etymology: Abydos lizard
+    description: Abydosaurus is a genus of brachiosaurid sauropod dinosaur known from skull and postcranial material found in upper Lower Cretaceous rocks of northeastern Utah, United States.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "163941"
+    species:
+      - name: Abydosaurus mcintoshi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Cenomanian
+        location:
+          country: US
+          region: Utah
+          formation: Cedar Mountain
+          coordinates:
+            - 40.440887
+            - -109.305244
+        described: 2010
+        authors: Chure et al.
+        described_in: chure2010
+    references:
+      - id: chure2010
+        authors: Chure, Daniel; Britt, Brooks B.; Whitlock, John A.; Wilson, Jeffrey A.
+        year: 2010
+        title: First complete sauropod dinosaur skull from the Cretaceous of the Americas and the evolution of sauropod dentition
+        journal: Naturwissenschaften
+        volume: "97"
+        issue: "4"
+        pages: 379-391
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1007/s00114-010-0650-6
+        url: http://dx.doi.org/10.1007/s00114-010-0650-6
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Sauropoda
+      - Macronaria
+      - Brachiosauridae
+  Acantholipan:
+    genus: Acantholipan
+    parent: Nodosauridae
+    description: Acantholipan is a genus of herbivorous nodosaurid dinosaur from Mexico from the early Santonian age of the Late Cretaceous. It includes one species, Acantholipan gonzalezi.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "377303"
+      - source: wikidata
+        id: Q54851240
+    species:
+      - name: Acantholipan gonzalezi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+        location:
+          country: MX
+          region: Coahuila
+          formation: Pen
+          coordinates:
+            - 28.637777
+            - -102.948608
+        holotype:
+          specimen_id: CPC 272
+          institution: Colección Paleontológica de Coahuila, Museo del Desierto (MUDE), Saltillo
+        described: 2018
+        authors: Rivera-Sylva et al.
+        described_in: rivera-sylva2018
+    references:
+      - id: rivera-sylva2018
+        authors: Rivera-Sylva, Héctor E.; Frey, Eberhard; Stinnesbeck, Wolfgang; Carbot-Chanona, Gerardo; Sanchez-Uribe, Iván E.; Guzmán-Gutiérrez, José Rubén
+        year: 2018
+        title: Paleodiversity of Late Cretaceous Ankylosauria from Mexico and their phylogenetic significance
+        journal: Swiss Journal of Palaeontology
+        volume: "137"
+        issue: "1"
+        pages: 83-93
+        publisher: Pensoft Publishers
+        doi: 10.1007/s13358-018-0153-1
+        url: http://dx.doi.org/10.1007/s13358-018-0153-1
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Thyreophora
+      - Ankylosauria
+      - Nodosauridae
+  Acanthopholis:
+    genus: Acanthopholis
+    parent: Ankylosauria
+    etymology: spiny scales
+    pronunciation:
+      ipa: /ˌækənˈθɒfoʊlɪs/
+    description: Acanthopholis is a genus of ankylosaurian dinosaur in the family Nodosauridae that lived during the Late Cretaceous Period of England. A single species, A. horrida, exists.
+    diet: herbivore
+    appearance:
+      integument: scaled
+    identifiers:
+      - source: pbdb
+        id: "38818"
+      - source: wikidata
+        id: Q133200
+      - source: gbif
+        id: "4823211"
+      - source: eol
+        id: "4533736"
+    species:
+      - name: Acanthopholis horrida
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Cenomanian
+        location:
+          country: GB
+          region: England
+          formation: West Melbury Marly Chalk
+          coordinates:
+            - 51.083302
+            - 1.1833
+        described: 1867
+        authors: Huxley
+        described_in: huxley1867
+    references:
+      - id: huxley1867
+        authors: Huxley, Thomas H.
+        year: 1867
+        title: IV.—On Acanthopholis Horridus, a New Reptile from the Chalk-marl
+        journal: Geological Magazine
+        volume: "4"
+        issue: "32"
+        pages: 65-67
+        publisher: Cambridge University Press (CUP)
+        doi: 10.1017/s001675680017102x
+        url: http://dx.doi.org/10.1017/s001675680017102x
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Thyreophora
+      - Ankylosauria
+  Achelousaurus:
+    genus: Achelousaurus
+    parent: Pachyrhinosaurini
+    etymology: Achelous lizard
+    pronunciation:
+      ipa: /əˌkiːloʊˈsɔːrəs, ˌækɪˌloʊəˈsɔːrəs/
+    description: Achelousaurus is a genus of centrosaurine ceratopsid dinosaur that lived during the Late Cretaceous Period of what is now North America, about 77 to 74.8 million years ago. The first fossils of Achelousaurus were collected in Montana in 1987, by a team led by Jack Horner, with more finds made in 1989. In 1994, Achelousaurus horneri was described and named by Scott D. Sampson; the generic name means "Achelous lizard", in reference to the Greek deity Achelous, and the specific name refers to Horner. The genus is known from a few specimens consisting mainly of skull material from individuals, ranging from juveniles to adults.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "53956"
+      - source: wikidata
+        id: Q131592
+      - source: gbif
+        id: "4823147"
+      - source: eol
+        id: "4531563"
+    species:
+      - name: Achelousaurus horneri
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+        location:
+          country: US
+          region: Montana
+          formation: Two Medicine
+          coordinates:
+            - 48.630001
+            - -113.75
+        size:
+          length_m: 6
+          estimate: true
+        described: 1994
+        authors: Sampson
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Marginocephalia
+      - Ceratopsia
+      - Ceratopsidae
+      - Centrosaurinae
+      - Pachyrhinosaurini
+  Acheroraptor:
+    genus: Acheroraptor
+    parent: Velociraptorinae
+    etymology: underworld thief
+    description: Acheroraptor is an extinct genus of dromaeosaurid theropod dinosaur that lived in present-day Montana in the United States during the Maastrichtian stage of the Late Cretaceous period. It was described by Canadian paleontologists David Evans, Derek Larson, and Philip J. Currie in 2013. The genus contains a single species, A. temertyorum, named on an isolated maxilla with teeth. An incomplete dentary found nearby was also assigned to the species. These fossils were initially discovered by fossil poachers, though they were later sold to the Royal Ontario Museum, in layers belonging to the Hell Creek Formation. This indicates that these fossils date to the upper Maastrichtian stage, 67.2-66 million years ago.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "283585"
+      - source: wikidata
+        id: Q17126069
+      - source: eol
+        id: "42332718"
+    species:
+      - name: Acheroraptor temertyorum
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: US
+          region: Montana
+          formation: Hell Creek
+          coordinates:
+            - 43.489639
+            - -104.456505
+        holotype:
+          specimen_id: ROM 63777
+          institution: Royal Ontario Museum, Toronto
+        described: 2013
+        authors: Evans et al.
+        described_in: evans2013
+    references:
+      - id: evans2013
+        authors: Evans, David C.; Larson, Derek W.; Currie, Philip J.
+        year: 2013
+        title: "A new dromaeosaurid (Dinosauria: Theropoda) with Asian affinities from the latest Cretaceous of North America"
+        journal: Naturwissenschaften
+        volume: "100"
+        issue: "11"
+        pages: 1041-1049
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1007/s00114-013-1107-5
+        url: http://dx.doi.org/10.1007/s00114-013-1107-5
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Paraves
+      - Deinonychosauria
+      - Dromaeosauridae
+      - Eudromaeosauria
+      - Velociraptorinae
+  Achillesaurus:
+    genus: Achillesaurus
+    parent: Alvarezsauridae
+    description: Achillesaurus is a genus of alvarezsaurid theropod dinosaur from the Santonian-aged (Late Cretaceous) Bajo de la Carpa Formation of Rio Negro, Argentina. It contains one species, Achillesaurus manazzonei.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "133925"
+      - source: wikidata
+        id: Q132569
+      - source: gbif
+        id: "4966310"
+      - source: eol
+        id: "4433709"
+    species:
+      - name: Achillesaurus manazzonei
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Santonian
+        location:
+          country: AR
+          region: Río Negro
+          formation: Bajo de la Carpa
+          coordinates:
+            - -39.117699
+            - -67.632301
+        holotype:
+          specimen_id: MACN-PV-RN 1116
+          institution: Museo Argentino de Ciencias Naturales ‘Bernardino Rivadavia’, Buenos Aires
+        described: 2007
+        authors: Martinelli and Vera
+        described_in: martinelli2007
+    references:
+      - id: martinelli2007
+        authors: Martinelli, Agustín G.; Vera, Ezequiel I.
+        year: 2007
+        title: Achillesaurus manazzonei, a new alvarezsaurid theropod (Dinosauria) from the Late Cretaceous Bajo de la Carpa Formation, Río Negro Province, Argentina
+        journal: Zootaxa
+        volume: "1582"
+        issue: "1"
+        publisher: Magnolia Press
+        doi: 10.11646/zootaxa.1582.1.1
+        url: http://dx.doi.org/10.11646/zootaxa.1582.1.1
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Alvarezsauria
+      - Alvarezsauroidea
+      - Alvarezsauridae
+  Achillobator:
+    genus: Achillobator
+    parent: Eudromaeosauria
+    etymology: Achilles hero
+    pronunciation:
+      ipa: /əˌkɪləˈbeɪtɔːr/
+    description: Achillobator is a genus of large dromaeosaurid theropod dinosaur that lived during the Late Cretaceous period about 96 million to 89 million years ago in what is now the Bayan Shireh Formation of Mongolia. The genus is currently monotypic, only including the type species A. giganticus. The first remains were found in 1989 during a Mongolian-Russian field expedition and later described in 1999. Remains at the type locality of Achillobator may represent additional specimens. It represents the first and largest dromaeosaurid known from the Bayan Shireh Formation.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "68417"
+      - source: wikidata
+        id: Q132445
+      - source: gbif
+        id: "4966353"
+      - source: eol
+        id: "4433541"
+    species:
+      - name: Achillobator giganticus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Santonian
+        location:
+          country: MN
+          region: Dornogov
+          formation: Baynshire
+          coordinates:
+            - 44.34
+            - 109.858887
+        holotype:
+          specimen_id: FR.MNUFR-15
+          institution: Museum of the Institute of Geology, Mongolian Academy of Sciences, Ulaanbaatar
+        size:
+          length_m: 5
+          estimate: true
+        described: 1999
+        authors: Perle et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Paraves
+      - Deinonychosauria
+      - Dromaeosauridae
+      - Eudromaeosauria
+  Acristavus:
+    genus: Acristavus
+    parent: Brachylophosaurini
+    etymology: non-crested grandfather
+    description: Acristavus is a genus of saurolophine dinosaur. Fossils have been found from the Campanian Two Medicine Formation in Montana and Wahweap Formation in Utah, United States. The type species A. gagslarsoni was named in 2011. Unlike nearly all hadrosaurids except Edmontosaurus, Acristavus lacked ornamentation on its skull. The discovery of Acristavus is paleontologically significant because it supports the position that the ancestor of all hadrosaurids did not possess cranial ornamentation, and that ornamentation was an adaptation that later arose interdependently in the subfamilies Saurolophinae and Lambeosaurinae. It is closely related to Brachylophosaurus and Maiasaura, and was assigned to a new clade called Brachylophosaurini.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "205433"
+      - source: wikidata
+        id: Q1932513
+      - source: gbif
+        id: "8453806"
+      - source: eol
+        id: "20841608"
+    species:
+      - name: Acristavus gagslarsoni
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+        location:
+          country: US
+          region: Montana
+          formation: Two Medicine
+          coordinates:
+            - 47.720959
+            - -112.329094
+        holotype:
+          specimen_id: MOR 1155
+          institution: Museum of the Rockies, Bozeman
+        described: 2011
+        authors: Gates et al.
+        described_in: gates2011
+    references:
+      - id: gates2011
+        authors: Gates, Terry A.; Horner, John R.; Hanna, Rebecca R.; Nelson, C. Riley
+        year: 2011
+        title: New unadorned hadrosaurine hadrosaurid (Dinosauria, Ornithopoda) from the Campanian of North America
+        journal: Journal of Vertebrate Paleontology
+        volume: "31"
+        issue: "4"
+        pages: 798-811
+        publisher: Informa UK Limited
+        doi: 10.1080/02724634.2011.577854
+        url: http://dx.doi.org/10.1080/02724634.2011.577854
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Dryomorpha
+      - Styracosterna
+      - Hadrosauriformes
+      - Hadrosauroidea
+      - Hadrosauridae
+      - Hadrosaurinae
+      - Brachylophosaurini
+  Acrocanthosaurus:
+    genus: Acrocanthosaurus
+    parent: Carcharodontosauridae
+    pronunciation:
+      ipa: /ˌækroʊˌkænθəˈsɔːrəs/
+    description: Acrocanthosaurus is a genus of carcharodontosaurid dinosaurs that existed in what is now North America during the Barremian and early Cenomanian stages of the Early Cretaceous and Late Cretaceous, from 125 to 99.6 million years ago. Like most dinosaur genera, Acrocanthosaurus contains only a single species, A. atokensis. It had a continent-wide range, with fossil remains known from the U.S. states of Oklahoma, Texas, and Wyoming in the west and Maryland in the east. However, most of these remains are assigned to the species based on the assumption that Acrocanthosaurus is the only large carcharodontosaurid from North America during this time, and the possibility exists that some referred specimens could represent distinct taxa.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "38597"
+      - source: wikidata
+        id: Q131021
+      - source: gbif
+        id: "4822586"
+      - source: eol
+        id: "4433599"
+      - source: zoobank
+        id: 844AD682-58EB-40B0-AC0E-EAFC2A3E9791
+    species:
+      - name: Acrocanthosaurus atokensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+            - Albian
+        location:
+          country: US
+          region: Oklahoma
+          formation: Antlers
+          coordinates:
+            - 33.895557
+            - -94.826385
+        holotype:
+          specimen_id: M.U.O. 8-9-S9
+          institution: Oklahoma Museum of Natural History, Norman
+        size:
+          length_m: 11.5
+          estimate: true
+        described: 1950
+        authors: Stovall and Langston
+        described_in: stovall1950
+    references:
+      - id: stovall1950
+        authors: Stovall, J. Willis; Langston, Wann
+        year: 1950
+        title: Acrocanthosaurus atokensis, a New Genus and Species of Lower Cretaceous Theropoda from Oklahoma
+        journal: American Midland Naturalist
+        volume: "43"
+        issue: "3"
+        pages: "696"
+        publisher: JSTOR
+        doi: 10.2307/2421859
+        url: http://dx.doi.org/10.2307/2421859
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Tetanurae
+      - Avetheropoda
+      - Carnosauria
+      - Carcharodontosauridae
+  Acrotholus:
+    genus: Acrotholus
+    parent: Pachycephalosaurinae
+    description: Acrotholus is an extinct genus of pachycephalosaurian dinosaur that lived during the Santonian of the late Cretaceous, in the Milk River Formation of Canada. The type species, A. audeti, was named after Roy Audet allowing access to his ranch leading to the discovery of the species. The discovery of this specimen lead to several new revelations in the fossil records questioning the preservation of small-bodied organisms along with the evolution of early pachycephalosaurs. The iconic cranial dome found on Acrotholus makes it one of the earliest indisputable known members of the pachycephalosaur family. Like others of its clade, Acrotholus was a bipedal herbivore characterized by a dome-shaped head. The dome had often been associated with intra-species combat, although the exact methods of contact have been debated.
+    diet: herbivore
+    locomotion: bipedal
+    identifiers:
+      - source: pbdb
+        id: "267728"
+      - source: wikidata
+        id: Q12973012
+      - source: eol
+        id: "47460064"
+    species:
+      - name: Acrotholus audeti
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Santonian
+        location:
+          country: CA
+          region: Alberta
+          formation: Milk River
+          coordinates:
+            - 49.083698
+            - -111.436096
+        described: 2013
+        authors: Evans et al.
+        described_in: evans2013
+    references:
+      - id: evans2013
+        authors: Evans, David C.; Schott, Ryan K.; Larson, Derek W.; Brown, Caleb M.; Ryan, Michael J.
+        year: 2013
+        title: The oldest North American pachycephalosaurid and the hidden diversity of small-bodied ornithischian dinosaurs
+        journal: Nature Communications
+        volume: "4"
+        issue: "1"
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/ncomms2749
+        url: http://dx.doi.org/10.1038/ncomms2749
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Marginocephalia
+      - Pachycephalosauria
+      - Pachycephalosauridae
+      - Pachycephalosaurinae
+  Adamantisaurus:
+    genus: Adamantisaurus
+    parent: Rinconsauria
+    pronunciation:
+      ipa: /ˌædəˌmæntɪˈsɔːrəs/
+      phonetic: AD-ə-MAN-tiss-OR-əs
+    description: Adamantisaurus is a poorly-known genus of titanosaurian sauropod dinosaur from the Late Cretaceous Period of what is now South America. It is only known from six tail vertebrae but, as a sauropod, it can be assumed that this dinosaur was a very large animal with a long neck and tail.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "70544"
+      - source: wikidata
+        id: Q285364
+      - source: gbif
+        id: "4967392"
+      - source: eol
+        id: "52571874"
+    species:
+      - name: Adamantisaurus mezzalirai
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: BR
+          region: São Paulo
+          formation: Adamantina
+          coordinates:
+            - -21.5667
+            - -51.283298
+        holotype:
+          specimen_id: MUGEO 1282
+          institution: Museu Geológico Valdemar Lefèvre, São Paulo
+        described: 2006
+        authors: Santucci and Bertini
+        described_in: santucci2006
+    references:
+      - id: santucci2006
+        authors: Santucci, Rodrigo Miloni; Bertini, Reinaldo J.
+        year: 2006
+        title: A new titanosaur from western São Paulo State, Upper Cretaceous Bauru Group, south-east Brazil
+        journal: Palaeontology
+        volume: "49"
+        issue: "1"
+        pages: 59-66
+        publisher: Wiley
+        doi: 10.1111/j.1475-4983.2005.00527.x
+        url: http://dx.doi.org/10.1111/j.1475-4983.2005.00527.x
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
+      - Titanosauria
+      - Colossosauria
+      - Rinconsauria
+  Adasaurus:
+    genus: Adasaurus
+    parent: Eudromaeosauria
+    etymology: evil lizard
+    pronunciation:
+      ipa: /ˌɑːdəˈsɔːrəs/
+    description: Adasaurus is a genus of dromaeosaurid dinosaur that lived in Asia during the Late Cretaceous period. The genus is known from two partial specimens found in the Nemegt Formation of Mongolia that were partially described in 1983 by the paleontologist Rinchen Barsbold.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "53027"
+      - source: wikidata
+        id: Q131769
+      - source: gbif
+        id: "4822957"
+      - source: eol
+        id: "8848554"
+    species:
+      - name: Adasaurus mongoliensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: MN
+          region: Omnogov
+          formation: Nemegt
+          coordinates:
+            - 43.540001
+            - 99.599998
+        holotype:
+          specimen_id: IGM 100/20
+          institution: Geological Institute, Mongolian Academy of Sciences, Ulaanbaatar
+        described: 1977
+        authors: Barsbold
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Paraves
+      - Deinonychosauria
+      - Dromaeosauridae
+      - Eudromaeosauria
+  Adelolophus:
+    genus: Adelolophus
+    parent: Lambeosaurinae
+    etymology: unknown crest
+    description: Adelolophus is a genus of lambeosaurine dinosaur (a crested "duck-bill") from Upper Cretaceous rocks in the U.S. state of Utah. The type and only known species is A. hutchisoni; the type specimen consists only of a broken maxilla. It constitutes the oldest known lambeosaur remains from North America, as well as the only known lambeosaur species from the Wahweap Formation, of which it pertains to the Upper Member. Among its relatives, it seems to be particularly similar to Parasaurolophus, rather than animals like Lambeosaurus; phylogenetic analysis confirms this, finding it in Parasaurolophini (tube-headed lambeosaurs). It would have lived in a wet environment, bordering on the sea but with a more arid season during some times of the year. This environment would have been shared with a diverse variety of fish and turtles, as well as other dinosaurs like ceratopsids and tyrannosaurids.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "318656"
+      - source: wikidata
+        id: Q18600343
+      - source: eol
+        id: "47043895"
+    species:
+      - name: Adelolophus hutchisoni
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+        location:
+          country: US
+          region: Utah
+          formation: Wahweap
+          coordinates:
+            - 37.599998
+            - -111.900002
+        described: 2014
+        authors: Gates et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Dryomorpha
+      - Styracosterna
+      - Hadrosauriformes
+      - Hadrosauroidea
+      - Hadrosauridae
+      - Lambeosaurinae
+  Adeopapposaurus:
+    genus: Adeopapposaurus
+    parent: Massospondylidae
+    etymology: far eating lizard
+    description: Adeopapposaurus is a genus of plateosaurian dinosaur from the Early Jurassic Cañón del Colorado Formation of San Juan, Argentina. It was similar to Massospondylus. Four partial skeletons with two partial skulls are known.
+    identifiers:
+      - source: pbdb
+        id: "146361"
+      - source: wikidata
+        id: Q24039152
+      - source: gbif
+        id: "4822549"
+    species:
+      - name: Adeopapposaurus mognai
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Jurassic
+          stage:
+            - Toarcian
+        location:
+          country: AR
+          region: San Juan
+          formation: Cañon del Colorado
+          coordinates:
+            - -30.5
+            - -68.5
+        described: 2009
+        authors: Martínez
+        described_in: martínez2009
+    references:
+      - id: martínez2009
+        authors: Martínez, Ricardo N.
+        year: 2009
+        title: "Adeopapposaurus mognai, gen. et sp. nov. (Dinosauria: Sauropodomorpha), with comments on adaptations of basal Sauropodomorpha"
+        journal: Journal of Vertebrate Paleontology
+        volume: "29"
+        issue: "1"
+        pages: 142-164
+        publisher: Informa UK Limited
+        doi: 10.1671/039.029.0102
+        url: http://dx.doi.org/10.1671/039.029.0102
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Massospondylidae
+  Adratiklit:
+    genus: Adratiklit
+    parent: Stegosauria
+    etymology: mountain lizard
+    description: Adratiklit is an extinct genus of stegosaurian dinosaur that lived on the supercontinent Gondwana during the Middle Jurassic (Bathonian age). The genus contains a single species, Adratiklit boulahfa. Its remains were found in the El Mers III Formation, near Boulemane in north Morocco.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "422686"
+      - source: wikidata
+        id: Q66553039
+      - source: gbif
+        id: "10567334"
+      - source: eol
+        id: "57357742"
+      - source: zoobank
+        id: FFBD8118-FE4B-4AFA-B1E9-5FADB7E6C17A
+    species:
+      - name: Adratiklit boulahfa
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Middle Jurassic
+          stage:
+            - Callovian
+        location:
+          country: MA
+          region: Fès-Meknes
+          formation: El Mers III
+          coordinates:
+            - 33.150002
+            - -5.11667
+        described: 2020
+        authors: Maidment et al.
+        described_in: maidment2020
+    references:
+      - id: maidment2020
+        authors: Maidment, Susannah C.R.; Raven, Thomas J.; Ouarhache, Driss; Barrett, Paul M.
+        year: 2020
+        title: "North Africa's first stegosaur: Implications for Gondwanan thyreophoran dinosaur diversity"
+        journal: Gondwana Research
+        volume: "77"
+        pages: 82-97
+        publisher: Elsevier BV
+        doi: 10.1016/j.gr.2019.07.007
+        url: http://dx.doi.org/10.1016/j.gr.2019.07.007
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Thyreophora
+      - Stegosauria
+  Adynomosaurus:
+    genus: Adynomosaurus
+    parent: Arenysaurini
+    description: Adynomosaurus is a genus of lambeosaurine dinosaur from the Late Cretaceous of what is now Catalonia, Spain. First discovered in 2012, it was named in 2019 with the type and only species being Adynomosaurus arcanus. It is only known from scant material, but is distinguished from other hadrosaurs by its weakly developed shoulder blade which would have had underdeveloped musculature, which lends it its scientific name, partially from the Greek word for "weak". Its exact relationships with other hadrosaurs remain unresolved, with it not consistently being recovered as a relative of any other specific genera, though some studies have allied it with Tsintaosaurini or even found it outside of Hadrosauridae. It would have lived as part of a diverse coastal estuary ecosystem, made up of meandering rivers and mud flats. The discovery of Adynomosaurus adds to the very incomplete fossil record of hadrosaurid dinosaurs in the Late Cretaceous of Europe, and it fits into a picture of major ecological turnover that was occurring during the Maastrichtian stage in the region.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "401259"
+      - source: wikidata
+        id: Q59490984
+    species:
+      - name: Adynomosaurus arcanus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: ES
+          region: Cataluña
+          formation: Conques
+          coordinates:
+            - 42.157223
+            - 1.034722
+        holotype:
+          specimen_id: MCD 7125
+          institution: Museu de la Conca Dellà, Isona
+        described: 2019
+        authors: Prieto-Márquez et al.
+        described_in: prieto-márquez2019
+    references:
+      - id: prieto-márquez2019
+        authors: Prieto-Márquez, Albert; Fondevilla, Víctor; Sellés, Albert G.; Wagner, Jonathan R.; Galobart, Àngel
+        year: 2019
+        title: Adynomosaurus arcanus, a new lambeosaurine dinosaur from the Late Cretaceous Ibero-Armorican Island of the European archipelago
+        journal: Cretaceous Research
+        volume: "96"
+        pages: 19-37
+        publisher: Elsevier BV
+        doi: 10.1016/j.cretres.2018.12.002
+        url: http://dx.doi.org/10.1016/j.cretres.2018.12.002
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Dryomorpha
+      - Styracosterna
+      - Hadrosauriformes
+      - Hadrosauroidea
+      - Hadrosauridae
+      - Lambeosaurinae
+      - Arenysaurini
+  Aegyptosaurus:
+    genus: Aegyptosaurus
+    parent: Titanosauria
+    pronunciation:
+      ipa: /iːˌdʒɪptoʊˈsɔːrəs/
+    description: Aegyptosaurus is a genus of sauropod dinosaur discovered in Egypt, that lived in what is now Africa, around 95 million years ago, during the Late Cretaceous Period (Cenomanian faunal stage).
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "38681"
+      - source: wikidata
+        id: Q131577
+      - source: gbif
+        id: "4822768"
+      - source: eol
+        id: "4658363"
+    species:
+      - name: Aegyptosaurus baharijensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Cenomanian
+        location:
+          country: EG
+          formation: Bahariya
+          coordinates:
+            - 16.79096
+            - 5.852992
+        size:
+          length_m: 15
+          estimate: true
+        described: 1932
+        authors: Stromer
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Sauropoda
+      - Macronaria
+      - Titanosauria
+  Aeolosaurus:
+    genus: Aeolosaurus
+    parent: Aeolosaurini
+    etymology: This dinosaur is named after the Greek mythological figure Aeolus, Keeper of the Winds in Homer's Odyssey, because of the frequent winds that blow across Patagonia, where the remains were found. The generic name also includes the Greek sauros ('lizard'), the traditional suffix used in dinosaur names. The specific name (A. rionegrinus), refers to its location, in the Rio Negro Province of Argentina. Both genus and species were named and described by Argentine paleontologist Jaime Powell in 1987.
+    pronunciation:
+      ipa: /ˌiːoʊloʊˈsɔːrəs/
+    description: Aeolosaurus is a genus of titanosaurian sauropod dinosaur from the Late Cretaceous Period of what is now South America. Like most sauropods, it would have been a quadrupedal herbivore with a long neck and tail. Aeolosaurus is well known for a titanosaur, as it is represented by the remains of several individuals belonging to at least two species. However, like most titanosaurs, no remains of the skull are known.
+    diet: herbivore
+    locomotion: quadrupedal
+    identifiers:
+      - source: pbdb
+        id: "53964"
+      - source: wikidata
+        id: Q131766
+      - source: gbif
+        id: "4822762"
+      - source: eol
+        id: "4658365"
+    species:
+      - name: Aeolosaurus rionegrinus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: AR
+          region: Río Negro
+          formation: Allen
+          coordinates:
+            - -39.296665
+            - -67.534164
+        described: 1987
+        authors: Powell
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
+      - Titanosauria
+      - Lithostrotia
+      - Aeolosaurini
+  Aepisaurus:
+    genus: Aepisaurus
+    parent: Sauropoda
+    pronunciation:
+      ipa: /ˌiːpɪˈsɔːrəs/
+    description: Aepisaurus was a genus of sauropod dinosaur from the Albian-age Lower Cretaceous Grès vert of Département du Vaucluse, France, around 100.5 million years ago. It is an obscure genus from an unknown family, represented by a single humerus, now partly lost. Despite its lack of popularity, or perhaps because of it, it has been misspelled several ways in the scientific literature, with multiple dates given to the year of description as well.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "38682"
+      - source: wikidata
+        id: Q133074
+      - source: gbif
+        id: "4822765"
+    species:
+      - name: Aepisaurus elephantinus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Albian
+        location:
+          country: FR
+          region: Provence-Alpes-Côte-d'Azur
+          formation: Mont Ventoux
+          coordinates:
+            - 44.116699
+            - 5.1667
+        described: 1852
+        authors: Gervais
+        described_in: gervais1852
+    references:
+      - id: gervais1852
+        authors: Gervais, Paul
+        year: 1852
+        title: Zoologie et paléontologie française (animaux vertébrés)
+        book: Zoologie et paléontologie française (animaux vertébrés)
+        publisher: A. Bertrand, Paris
+        doi: 10.5962/bhl.title.153499
+        url: http://dx.doi.org/10.5962/bhl.title.153499
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Sauropoda
+  Aepyornithomimus:
+    genus: Aepyornithomimus
+    parent: Ornithomimidae
+    etymology: Aepyornis mimic
+    description: Aepyornithomimus is a genus of ornithomimid theropod dinosaur from the Late Cretaceous Djadochta Formation of Mongolia. It lived in the Campanian, around 75 million years ago, when the area is thought to have been a desert. The type and only species is A. tugrikinensis.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "370065"
+      - source: wikidata
+        id: Q34308030
+    species:
+      - name: Aepyornithomimus tugrikinensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+        location:
+          country: MN
+          region: Omnogov
+          formation: Djadokhta
+          coordinates:
+            - 44.228333
+            - 103.30278
+        holotype:
+          specimen_id: MPC-D 100/130
+          institution: Paleontological Center, Mongolian Academy of Sciences, Ulaanbaatar
+        described: 2017
+        authors: Chinzorig et al.
+        described_in: chinzorig2017
+    references:
+      - id: chinzorig2017
+        authors: Chinzorig, Tsogtbaatar; Kobayashi, Yoshitsugu; Tsogtbaatar, Khishigjav; Currie, Philip J.; Watabe, Mahito; Barsbold, Rinchen
+        year: 2017
+        title: First Ornithomimid (Theropoda, Ornithomimosauria) from the Upper Cretaceous Djadokhta Formation of Tögrögiin Shiree, Mongolia
+        journal: Scientific Reports
+        volume: "7"
+        issue: "1"
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/s41598-017-05272-6
+        url: http://dx.doi.org/10.1038/s41598-017-05272-6
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptoriformes
+      - Arctometatarsalia
+      - Ornithomimosauria
+      - Ornithomimidae
+  Aerosteon:
+    genus: Aerosteon
+    parent: Megaraptoridae
+    description: Aerosteon is a genus of megaraptoran dinosaur from the Late Cretaceous period of Argentina. Its remains were discovered in 1996 in the Anacleto Formation, which is from the late Campanian. The type and only known species is A. riocoloradensis. Its generic name can be translated as "air bone" and derives from Greek ἀήρ (aer, "air") and ὀστέον (osteon, "bone"), whereas its specific name indicates that its remains were found 1 km (0.6 miles) north of the Río Colorado, in Mendoza Province, Argentina. The genus shows evidence of a bird-like respiratory system.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "148965"
+      - source: wikidata
+        id: Q132873
+      - source: gbif
+        id: "4967044"
+      - source: eol
+        id: "10519159"
+    species:
+      - name: Aerosteon riocoloradensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+        location:
+          country: AR
+          region: Mendoza
+          formation: Anacleto
+          coordinates:
+            - -37.134998
+            - -69.330498
+        holotype:
+          specimen_id: MCNA-PV-3137
+          institution: Museo de Ciencias Naturales y Antropológicas "Cornelio Moyano", Mendoza
+        described: 2008
+        authors: Sereno et al.
+        described_in: sereno2008
+    references:
+      - id: sereno2008
+        authors: Sereno, Paul C.; Martinez, Ricardo N.; Wilson, Jeffrey A.; Varricchio, David J.; Alcober, Oscar A.; Larsson, Hans C. E.
+        year: 2008
+        title: Evidence for Avian Intrathoracic Air Sacs in a New Predatory Dinosaur from Argentina
+        journal: PLoS ONE
+        volume: "3"
+        issue: "9"
+        pages: e3303
+        publisher: Public Library of Science (PLoS)
+        doi: 10.1371/journal.pone.0003303
+        url: http://dx.doi.org/10.1371/journal.pone.0003303
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Megaraptora
+      - Megaraptoridae
+  Afromimus:
+    genus: Afromimus
+    parent: Ornithomimosauria
+    etymology: Africa mimic
+    description: Afromimus is a genus of ceratosaurian theropod dinosaur from the Early Cretaceous Elrhaz Formation of Niger. It contains a single species, A. tenerensis, named in 2017 by Paul Sereno from parts of the right leg, vertebrae, and ribs found in the Ténéré Desert. It was originally described as a genus of ornithomimosaurian, but subsequent arguments have placed it as a taxon within or close to the superfamily Abelisauroidea.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "391225"
+      - source: wikidata
+        id: Q43188357
+    species:
+      - name: Afromimus tenerensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Albian
+        location:
+          country: NE
+          region: Agadez
+          formation: Elrhaz
+          coordinates:
+            - 16.366667
+            - 9.016667
+        holotype:
+          specimen_id: MNBH GAD112
+          institution: Musée National Boubou Hama, Niamey, Republic of Niger
+        described: 2017
+        authors: Sereno
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Tetanurae
+      - Avetheropoda
+      - Coelurosauria
+      - Ornithomimosauria
+  Afrovenator:
+    genus: Afrovenator
+    parent: Eustreptospondylinae
+    pronunciation:
+      ipa: /ˌæfroʊvɪˈneɪtər/
+    description: Afrovenator is an extinct genus of megalosaurid theropod dinosaur from the Middle or Late Jurassic Tiourarén Formation and maybe the Irhazer II Formation of the Sahara region of Niger in western Africa. Afrovenator represents the only named definitive Gondwanan megalosaur, with proposed material of the group present in the Tacuarembó Formation of Uruguay and the Tendaguru Formation of Tanzania, both dated to the Late Jurassic.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "56398"
+      - source: wikidata
+        id: Q18511003
+      - source: gbif
+        id: "4572456"
+    species:
+      - name: Afrovenator abakensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Middle Jurassic
+            - Late Jurassic
+          stage:
+            - Bajocian
+            - Tithonian
+        location:
+          country: NE
+          region: Agadez
+          formation: Tiourarén
+          coordinates:
+            - 16.83333
+            - 6.53333
+        holotype:
+          specimen_id: UC OBA 1
+          institution: University of Chicago, Chicago
+        size:
+          length_m: 9
+          estimate: true
+        described: 1994
+        authors: Sereno et al.
+        described_in: sereno1994
+    references:
+      - id: sereno1994
+        authors: Sereno, Paul C.; Wilson, Jeffrey A.; Larsson, Hans C. E.; Dutheil, Didier B.; Sues, Hans-Dieter
+        year: 1994
+        title: Early Cretaceous Dinosaurs from the Sahara
+        journal: Science
+        volume: "266"
+        issue: "5183"
+        pages: 267-271
+        publisher: American Association for the Advancement of Science (AAAS)
+        doi: 10.1126/science.266.5183.267
+        url: http://dx.doi.org/10.1126/science.266.5183.267
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Megalosauroidea
+      - Megalosauridae
+      - Eustreptospondylinae
+  Agilisaurus:
+    genus: Agilisaurus
+    parent: Genasauria
+    pronunciation:
+      ipa: /ˌædʒɪlɪˈsɔːrəs/
+    description: Agilisaurus is a genus of ornithischian dinosaur from the Middle Jurassic Period of what is now eastern Asia. The only named species is A. louderbacki, recovered from the Lower Shaximiao Formation of Sichuan, China. It was about 1.2–1.7 m (3.9–5.6 ft) in length, 60 cm (2.0 ft) in hip height, and 40 kg (88 lb) in weight. It has leaf-shaped teeth that were well-adapted to its abrasive, plant-based diet. Most surprisingly, the wavy enamel of the teeth of this genus (and all other ornithopods), presumed to make them more resistant to wear, was previously thought to be exclusive to hadrosaurs. This is also the case for Changchunsaurus from the Cretaceous Period.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "57222"
+      - source: wikidata
+        id: Q131319
+      - source: gbif
+        id: "4965754"
+      - source: eol
+        id: "52572013"
+    species:
+      - name: Agilisaurus louderbacki
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Middle Jurassic
+            - Late Jurassic
+          stage:
+            - Bajocian
+            - Oxfordian
+        location:
+          country: CN
+          region: Sichuan
+          formation: Shaximiao
+          coordinates:
+            - 29.411388
+            - 104.852501
+        size:
+          length_m: 1.5
+          estimate: true
+        described: 1990
+        authors: Peng
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+  Agujaceratops:
+    genus: Agujaceratops
+    parent: Chasmosaurinae
+    etymology: horned face from Aguja
+    description: "Agujaceratops is a genus of chasmosaurine ceratopsid dinosaur from the Late Cretaceous (Campanian) of western Texas. Two species are known: A. mariscalensis and A. mavericus, both recovered from the Aguja Formation."
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "112568"
+      - source: wikidata
+        id: Q132534
+      - source: gbif
+        id: "4965823"
+      - source: eol
+        id: "4531644"
+    species:
+      - name: Agujaceratops mavericus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+        location:
+          country: US
+          region: Texas
+          formation: Aguja
+          coordinates:
+            - 29.138056
+            - -103.196945
+        described: 2006
+        authors: Lucas et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Marginocephalia
+      - Ceratopsia
+      - Ceratopsidae
+      - Chasmosaurinae
+  Agustinia:
+    genus: Agustinia
+    parent: Rebbachisauridae
+    pronunciation:
+      ipa: /ɑːɡəˈstɪniə/
+    description: Agustinia is a genus of sauropod dinosaur from the Early Cretaceous of South America. The genus contains a single species, A. ligabuei, known from a single specimen that was recovered from the Lohan Cura Formation of Neuquén Province in Argentina. It lived about 116–108 million years ago, in the Aptian–Albian stages of the Early Cretaceous Period.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "66565"
+      - source: wikidata
+        id: Q131756
+      - source: gbif
+        id: "4821450"
+    species:
+      - name: Agustinia ligabuei
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Albian
+        location:
+          country: AR
+          region: Neuquén
+          formation: Lohan Cura
+          coordinates:
+            - -39.59222
+            - -69.396942
+        holotype:
+          specimen_id: MCF-PVPH-110
+          institution: Museo ‘Carmen Funes’, Plaza Huincul, Neuquén
+        described: 1999
+        authors: Bonaparte
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Diplodocoidea
+      - Diplodocimorpha
+      - Rebbachisauridae
+  Ahshislepelta:
+    genus: Ahshislepelta
+    parent: Ankylosauridae
+    etymology: Ah-shi-sle-pah Wash shield
+    description: Ahshislepelta is a monospecific genus of ankylosaur dinosaur from New Mexico that lived during the Late Cretaceous (late Campanian stage, 74.5 Ma) in what is now the Hunter Wash Member of the Kirtland Formation. The type and only species, Ahshislepelta minor, is known only from an incomplete postcranial skeleton of a small subadult or adult individual. It was named in 2011 by Michael Burns and Robert M. Sullivan. Based on the size of the humerus, Ahshislepelta is larger than Pinacosaurus mephistocephalus but smaller than Talarurus and Pinacosaurus grangeri.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "295547"
+      - source: wikidata
+        id: Q1705974
+      - source: gbif
+        id: "8698972"
+      - source: eol
+        id: "42418600"
+    species:
+      - name: Ahshislepelta minor
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+        location:
+          country: US
+          region: New Mexico
+          formation: Kirtland
+          coordinates:
+            - 36.1507
+            - -107.925201
+        holotype:
+          specimen_id: SMP VP-1930
+          institution: State Museum of Pennsylvania, Harrisburg
+        described: 2011
+        authors: Burns and Sullivan
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Thyreophora
+      - Ankylosauria
+      - Ankylosauridae
+  Ahshislesaurus:
+    genus: Ahshislesaurus
+    parent: Saurolophinae
+    description: Ahshislesaurus is an extinct genus of saurolophine hadrosaurid dinosaurs known from the Late Cretaceous of what is now New Mexico, United States. It is known from a partial skull and three neck vertebrae discovered in 1916 and first described in 1935. Prior to its scientific naming, researchers debated whether the specimen belonged to Kritosaurus navajovius, a related species from the same layers of rocks, or a distinct animal. The genus contains a single species, Ahshislesaurus wimani, named in 2025. A partial skeleton and isolated limb and girdle bones found in the same rock layers may also belong to Ahshislesaurus.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "516650"
+      - source: wikidata
+        id: Q136410994
+    species:
+      - name: Ahshislesaurus wimani
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+        location:
+          country: US
+          region: New Mexico
+          formation: Kirtland
+          coordinates:
+            - 36.183899
+            - -107.887901
+        holotype:
+          specimen_id: USNM VP-8629
+          institution: National Museum of Natural History, Smithsonian Institution
+        described: 2025
+        authors: Dalman et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Dryomorpha
+      - Styracosterna
+      - Hadrosauriformes
+      - Hadrosauroidea
+      - Hadrosauridae
+      - Saurolophinae
+  Ajkaceratops:
+    genus: Ajkaceratops
+    parent: Ceratopsia
+    description: Ajkaceratops is a genus of ceratopsian dinosaur described in 2010. It lived during the Late Cretaceous in the western Tethyan archipelago, in what is now Europe. The type species, A. kozmai, was originally described as a ceratopsian most closely related to forms in east Asia, from where its ancestors may have migrated by island-hopping. Later research, however, questioned this assignment and treated Ajkaceratops as an ornithischian of unresolved affinity. In 2026, more complete cranial remains referable to the species were described, supporting its placement as a ceratopsian.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "167126"
+      - source: wikidata
+        id: Q3607281
+    species:
+      - name: Ajkaceratops kozmai
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Santonian
+        location:
+          country: HU
+          region: Veszprém
+          formation: Csehbánya
+          coordinates:
+            - 47.216702
+            - 17.6
+        described: 2010
+        authors: Osi et al.
+        described_in: ősi2010
+    references:
+      - id: ősi2010
+        authors: Ősi, Attila; Butler, Richard J.; Weishampel, David B.
+        year: 2010
+        title: A Late Cretaceous ceratopsian dinosaur from Europe with Asian affinities
+        journal: Nature
+        volume: "465"
+        issue: "7297"
+        pages: 466-468
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/nature09019
+        url: http://dx.doi.org/10.1038/nature09019
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Cerapoda
+      - Marginocephalia
+      - Ceratopsia
+  Ajnabia:
+    genus: Ajnabia
+    parent: Arenysaurini
+    etymology: stranger
+    description: Ajnabia is a genus of lambeosaurine hadrosaur from the Late Cretaceous (Maastrichtian) of Morocco. It is the first definitive hadrosaur from Africa and is thought to be related to European hadrosaurs like Adynomosaurus and Pararhabdodon. The discovery of Ajnabia came as a surprise to the paleontologists who found it because Africa was isolated by water from the rest of the world during the Cretaceous, such that hadrosaurs were assumed to have been unable to reach the continent.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "428182"
+      - source: wikidata
+        id: Q101096375
+    species:
+      - name: Ajnabia odysseus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: MA
+          region: Khouribga
+          formation: Couche III
+          coordinates:
+            - 32.832222
+            - -6.23
+        described: 2021
+        authors: Longrich et al.
+        described_in: longrich2021
+    references:
+      - id: longrich2021
+        authors: Longrich, Nicholas R.; Suberbiola, Xabier Pereda; Pyron, R. Alexander; Jalil, Nour-Eddine
+        year: 2021
+        title: "The first duckbill dinosaur (Hadrosauridae: Lambeosaurinae) from Africa and the role of oceanic dispersal in dinosaur biogeography"
+        journal: Cretaceous Research
+        volume: "120"
+        publisher: Elsevier BV
+        doi: 10.1016/j.cretres.2020.104678
+        url: http://dx.doi.org/10.1016/j.cretres.2020.104678
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Dryomorpha
+      - Styracosterna
+      - Hadrosauriformes
+      - Hadrosauroidea
+      - Hadrosauridae
+      - Lambeosaurinae
+      - Arenysaurini
+  Akainacephalus:
+    genus: Akainacephalus
+    parent: Ankylosaurini
+    etymology: thorn head
+    description: Akainacephalus is a monospecific genus of ankylosaurid dinosaur from southern Utah that lived during the Late Cretaceous (late Campanian, 76.26 Ma) in what is now the Horse Mountain Gryposaur Quarry of the Kaiparowits Formation. The type and only species, Akainacephalus johnsoni, is known from the most complete ankylosaur specimen ever discovered from southern Laramidia, including a complete skull, tail club, a number of osteoderms, limb elements and part of its pelvis, among other remains. It was described in 2018 by Jelle P. Wiersma and Randall B. Irmis. It is closely related and shares similar cranial anatomy to Nodocephalosaurus.
+    diet: herbivore
+    appearance:
+      integument: armored
+    identifiers:
+      - source: pbdb
+        id: "377176"
+      - source: wikidata
+        id: Q55656519
+      - source: eol
+        id: "55770783"
+    species:
+      - name: Akainacephalus johnsoni
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+        location:
+          country: US
+          region: Utah
+          formation: Kaiparowits
+          coordinates:
+            - 37.6875
+            - -111.446114
+        described: 2018
+        authors: Wiersma and Irmis
+        described_in: wiersma2018
+    references:
+      - id: wiersma2018
+        authors: Wiersma, Jelle P.; Irmis, Randall B.
+        year: 2018
+        title: A new southern Laramidian ankylosaurid, Akainacephalus johnsoni gen. et sp. nov., from the upper Campanian Kaiparowits Formation of southern Utah, USA
+        journal: PeerJ
+        volume: "6"
+        pages: e5016
+        publisher: PeerJ
+        doi: 10.7717/peerj.5016
+        url: http://dx.doi.org/10.7717/peerj.5016
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Thyreophora
+      - Ankylosauria
+      - Ankylosauridae
+      - Ankylosaurinae
+      - Ankylosaurini
+  Alamosaurus:
+    genus: Alamosaurus
+    parent: Saltasaurinae
+    etymology: Ojo Alamo lizard
+    pronunciation:
+      ipa: /ˌæləmoʊˈsɔːrəs/
+    description: Alamosaurus is a genus of titanosaurian sauropod dinosaurs containing a single known species, Alamosaurus sanjuanensis, from the Maastrichtian age of the Late Cretaceous period in what is now southwestern North America. It is one of the few known titanosaurs to have inhabited North America after the nearly 30-million-year absence of sauropods from the North American fossil record ("sauropod hiatus") and probably represents an immigrant from South America.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "38683"
+      - source: wikidata
+        id: Q131583
+      - source: gbif
+        id: "4822781"
+      - source: eol
+        id: "4658371"
+    species:
+      - name: Alamosaurus sanjuanensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: US
+          region: Utah
+          formation: North Horn
+          coordinates:
+            - 39.1991
+            - -111.235497
+        holotype:
+          specimen_id: U.S.N.M. Cat. No. 10,486
+          institution: National Museum of Natural History, Smithsonian Institution
+        size:
+          length_m: 21
+          estimate: true
+        described: 1922
+        authors: Gilmore
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
+      - Titanosauria
+      - Lithostrotia
+      - Saltasauroidea
+      - Lohuecosauria
+      - Saltasauridae
+      - Saltasaurinae
+  Alaskacephale:
+    genus: Alaskacephale
+    parent: Pachycephalosaurini
+    description: Alaskacephale is an extinct genus of pachycephalosaurid, a group of dome-headed, herbivorous ornithischian dinosaurs, that lived during the Maastrichtian stage of the Late Cretaceous period in what is now northern Alaska. The genus is one of the few known Arctic dinosaurs and was found in the Prince Creek Formation, which preserves a menagerie of fossils. The only known specimen, a squamosal bone, was found in 1999 and later described in 2005. However, Alaskacephale was not formally named until the next year.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "137133"
+      - source: wikidata
+        id: Q132965
+      - source: gbif
+        id: "4965828"
+      - source: eol
+        id: "47460057"
+    species:
+      - name: Alaskacephale gangloffi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: US
+          region: Alaska
+          formation: Prince Creek
+          coordinates:
+            - 69.91745
+            - -151.194565
+        described: 2006
+        authors: Sullivan
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Marginocephalia
+      - Pachycephalosauria
+      - Pachycephalosauridae
+      - Pachycephalosaurini
+  Albalophosaurus:
+    genus: Albalophosaurus
+    parent: Ceratopsia
+    description: Albalophosaurus is a genus of marginocephalian ornithischian dinosaur that lived in Japan during the Early Cretaceous. The type species is Albalophosaurus yamaguchiorum.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "161139"
+      - source: wikidata
+        id: Q192389
+      - source: eol
+        id: "47460122"
+    species:
+      - name: Albalophosaurus yamaguchiorum
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Barremian
+        location:
+          country: JP
+          region: Ishikawa
+          formation: Kuwajima
+          coordinates:
+            - 36.166668
+            - 136.633331
+        holotype:
+          specimen_id: SBEI 176
+          institution: Museum of the Shiramine Board of Education, Hakusan City
+        described: 2009
+        authors: Ohashi and Barrett
+        described_in: ohashi2009
+    references:
+      - id: ohashi2009
+        authors: Ohashi, Tomoyuki; Barrett, Paul M.
+        year: 2009
+        title: A new ornithischian dinosaur from the Lower Cretaceous Kuwajima Formation of Japan
+        journal: Journal of Vertebrate Paleontology
+        volume: "29"
+        issue: "3"
+        pages: 748-757
+        publisher: Informa UK Limited
+        doi: 10.1671/039.029.0306
+        url: http://dx.doi.org/10.1671/039.029.0306
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Cerapoda
+      - Marginocephalia
+      - Ceratopsia
+  Albertaceratops:
+    genus: Albertaceratops
+    parent: Albertaceratopsini
+    etymology: Alberta horned face
+    description: Albertaceratops is a genus of centrosaurine horned dinosaur from the middle Campanian-age Upper Cretaceous Oldman Formation of Alberta, Canada.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "94775"
+      - source: wikidata
+        id: Q131573
+      - source: gbif
+        id: "4965805"
+      - source: eol
+        id: "4531565"
+    species:
+      - name: Albertaceratops nesmoi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+        location:
+          country: CA
+          region: Alberta
+          formation: Oldman
+          coordinates:
+            - 49.120899
+            - -110.862686
+        holotype:
+          specimen_id: TMP 2001
+          institution: Royal Tyrrell Museum of Paleontology, Drumheller
+        size:
+          length_m: 5
+          estimate: true
+        described: 2007
+        authors: Ryan
+        described_in: ryan2007
+    references:
+      - id: ryan2007
+        authors: Ryan, Michael J.
+        year: 2007
+        title: A new basal centrosaurine ceratopsid from the Oldman Formation, southeastern Alberta
+        journal: Journal of Paleontology
+        volume: "81"
+        issue: "2"
+        pages: 376-396
+        publisher: Cambridge University Press (CUP)
+        doi: 10.1666/0022-3360(2007)81[376:anbccf]2.0.co;2
+        url: http://dx.doi.org/10.1666/0022-3360(2007)81[376:anbccf]2.0.co;2
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Marginocephalia
+      - Ceratopsia
+      - Ceratopsidae
+      - Centrasaurinae
+      - Albertaceratopsini
+  Albertadromeus:
+    genus: Albertadromeus
+    parent: Orodrominae
+    etymology: runner from Alberta
+    description: Albertadromeus is an extinct genus of orodromine thescelosaurid dinosaur known from the upper part of the Late Cretaceous Oldman Formation (middle Campanian stage) of Alberta, Canada. It contains a single species, Albertadromeus syntarsus.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "267486"
+      - source: wikidata
+        id: Q12973101
+      - source: gbif
+        id: "8441787"
+      - source: eol
+        id: "42418184"
+    species:
+      - name: Albertadromeus syntarsus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+        location:
+          country: CA
+          region: Alberta
+          formation: Oldman
+          coordinates:
+            - 49.179443
+            - -110.682777
+        holotype:
+          specimen_id: TMP 2009
+          institution: Royal Tyrrell Museum of Paleontology, Drumheller
+        described: 2013
+        authors: Brown et al.
+        described_in: brown2013
+    references:
+      - id: brown2013
+        authors: Brown, Caleb Marshall; Evans, David C.; Ryan, Michael J.; Russell, Anthony P.
+        year: 2013
+        title: New data on the diversity and abundance of small-bodied ornithopods (Dinosauria, Ornithischia) from the Belly River Group (Campanian) of Alberta
+        journal: Journal of Vertebrate Paleontology
+        volume: "33"
+        issue: "3"
+        pages: 495-520
+        publisher: Informa UK Limited
+        doi: 10.1080/02724634.2013.746229
+        url: http://dx.doi.org/10.1080/02724634.2013.746229
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Neornithischia
+      - Thescelosauridae
+      - Orodrominae
+  Albertavenator:
+    genus: Albertavenator
+    parent: Troodontini
+    etymology: Alberta hunter
+    description: Albertavenator is a genus of small-bodied troodontid theropod dinosaur that lived during the early Maastrichtian stage of the Late Cretaceous period, approximately 71 million years ago. It is known from the Horseshoe Canyon Formation in Alberta, Canada, and is currently represented by a single species, Albertavenator curriei. The species name honors Canadian paleontologist Philip J. Currie for his extensive contributions to theropod research. The animal is known from parts of the skull.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "470379"
+      - source: wikidata
+        id: Q33106161
+      - source: gbif
+        id: "9565943"
+    species:
+      - name: Albertavenator curriei
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: CA
+          region: Alberta
+          formation: Horseshoe Canyon
+          coordinates:
+            - 51.538891
+            - -112.878609
+        described: 2017
+        authors: Evans et al.
+        described_in: evans2017
+    references:
+      - id: evans2017
+        authors: Evans, David C.; Cullen, Thomas M.; Larson, Derek W.; Rego, Adam
+        year: 2017
+        title: "A new species of troodontid theropod (Dinosauria: Maniraptora) from the Horseshoe Canyon Formation (Maastrichtian) of Alberta, Canada"
+        journal: Canadian Journal of Earth Sciences
+        volume: "54"
+        issue: "8"
+        pages: 813-826
+        publisher: Canadian Science Publishing
+        doi: 10.1139/cjes-2017-0034
+        url: http://dx.doi.org/10.1139/cjes-2017-0034
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Paraves
+      - Deinonychosauria
+      - Troodontidae
+      - Troodontinae
+      - Troodontini
+  Albertonykus:
+    genus: Albertonykus
+    parent: Alvarezsauridae
+    etymology: Alberta claw
+    description: Albertonykus is an extinct genus of alvarezsaurid dinosaur from the Maastrichtian-age (Upper Cretaceous) rocks of the Horseshoe Canyon Formation of Alberta, Canada. It is known from forelimb and hindlimb remains from multiple individuals. All but two of the specimens come from a bonebed dominated by Albertosaurus, located at the top of Unit 4 of the Horseshoe Canyon Formation, dating to ~68.5 million years ago.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "140785"
+      - source: wikidata
+        id: Q131750
+      - source: gbif
+        id: "4966308"
+      - source: eol
+        id: "52570729"
+    species:
+      - name: Albertonykus borealis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: CA
+          region: Alberta
+          formation: Horseshoe Canyon
+          coordinates:
+            - 51.995834
+            - -112.883331
+        holotype:
+          specimen_id: RTMP 2001.45.91
+          institution: Royal Tyrrell Museum of Paleontology, Drumheller
+        described: 2009
+        authors: Longrich and Currie
+        described_in: longrich2009
+    references:
+      - id: longrich2009
+        authors: Longrich, Nicholas R.; Currie, Philip J.
+        year: 2009
+        title: "Albertonykus borealis, a new alvarezsaur (Dinosauria: Theropoda) from the Early Maastrichtian of Alberta, Canada: implications for the systematics and ecology of the Alvarezsauridae"
+        journal: Cretaceous Research
+        volume: "30"
+        issue: "1"
+        pages: 239-252
+        publisher: Elsevier BV
+        doi: 10.1016/j.cretres.2008.07.005
+        url: http://dx.doi.org/10.1016/j.cretres.2008.07.005
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Alvarezsauria
+      - Alvarezsauroidea
+      - Alvarezsauridae
+  Albertosaurus:
+    genus: Albertosaurus
+    parent: Albertosaurinae
+    etymology: Alberta lizard
+    pronunciation:
+      ipa: /ælˌbɜːrtəˈsɔːrəs/
+    description: Albertosaurus is a genus of large tyrannosaurid theropod dinosaur that lived in northwestern North America during the early to middle Maastrichtian age of the Late Cretaceous period, about 71 million years ago. The type species, A. sarcophagus, was apparently restricted in range to the modern-day Canadian province of Alberta, after which the genus is named, although an indeterminate species ("cf. Albertosaurus sp.") has been discovered in the Corral de Enmedio and Packard Formations of Mexico. Scientists disagree on the content of the genus and some recognize Gorgosaurus libratus as a second species.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "38607"
+      - source: wikidata
+        id: Q40751
+      - source: gbif
+        id: "4822622"
+      - source: eol
+        id: "4433625"
+      - source: zoobank
+        id: 6EA24060-9BF2-4D3F-91B9-59CE4107CD98
+    species:
+      - name: Albertosaurus sarcophagus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: CA
+          region: Alberta
+          formation: Scollard
+          coordinates:
+            - 51.8046
+            - -112.981903
+        holotype:
+          specimen_id: ROM 807
+          institution: Royal Ontario Museum, Toronto
+        size:
+          length_m: 10
+          weight_kg: 3000
+          hip_height_m: 2.7
+          estimate: true
+        described: 1905
+        authors: Osborn
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Tyrannosauroidea
+      - Tyrannosauridae
+      - Albertosaurinae
+  Albinykus:
+    genus: Albinykus
+    parent: Parvicursorinae
+    description: Albinykus is a genus of alvarezsaurid dinosaur whose fossils have been found in the Late Cretaceous-aged (Santonian) Javkhlant Formation in the Gobi Desert of Mongolia. The type species, A. baatar, was named by Sterling J. Nesbitt, Julia A. Clarke, Alan H. Turner and Mark A. Norell in 2011.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "177464"
+      - source: wikidata
+        id: Q237288
+      - source: gbif
+        id: "8456752"
+    species:
+      - name: Albinykus baatar
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+        location:
+          country: MN
+          region: Dornogov
+          formation: Javkhlant
+          coordinates:
+            - 44.393677
+            - 109.35318
+        holotype:
+          specimen_id: IGM 100/3004
+          institution: Geological Institute, Mongolian Academy of Sciences, Ulaanbaatar
+        described: 2011
+        authors: Nesbitt et al.
+        described_in: nesbitt2011
+    references:
+      - id: nesbitt2011
+        authors: Nesbitt, Sterling J.; Clarke, Julia A.; Turner, Alan H.; Norell, Mark A.
+        year: 2011
+        title: A small alvarezsaurid from the eastern Gobi Desert offers insight into evolutionary patterns in the Alvarezsauroidea
+        journal: Journal of Vertebrate Paleontology
+        volume: "31"
+        issue: "1"
+        pages: 144-153
+        publisher: Informa UK Limited
+        doi: 10.1080/02724634.2011.540053
+        url: http://dx.doi.org/10.1080/02724634.2011.540053
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Alvarezsauria
+      - Alvarezsauroidea
+      - Alvarezsauridae
+      - Parvicursorinae
+  Alectrosaurus:
+    genus: Alectrosaurus
+    parent: Tyrannosauroidea
+    etymology: alone lizard
+    pronunciation:
+      ipa: /əˌlɛktroʊˈsɔːrəs/
+    description: Alectrosaurus is a genus of tyrannosauroid theropod dinosaur that lived in Asia during the Late Cretaceous period, about some 96 million years ago in what is now the Iren Dabasu Formation.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "38610"
+      - source: wikidata
+        id: Q131625
+      - source: gbif
+        id: "4822635"
+      - source: eol
+        id: "4434232"
+    species:
+      - name: Alectrosaurus olseni
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+        location:
+          country: CN
+          region: Nei Mongol
+          formation: Iren Dabasu
+          coordinates:
+            - 43.733334
+            - 112.01667
+        size:
+          length_m: 5
+          estimate: true
+        described: 1933
+        authors: Gilmore
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Tyrannosauroidea
+  Aletopelta:
+    genus: Aletopelta
+    parent: Ankylosauridae
+    pronunciation:
+      ipa: /əˌliːtoʊˈpɛltə/
+    description: Aletopelta is a monospecific genus of basal ankylosaurid dinosaur from Southern California that lived during the Late Cretaceous (upper Campanian stage, 75.5 Ma) in what is now the Point Loma Formation. The type and only species, Aletopelta coombsi, is known from a partial skeleton preserving osteoderms. It was originally described in 1996 by W. P. Coombs, Jr. and T.A. Deméré before being named in 2001 by Tracy Ford and James Kirkland. Aletopelta has an estimated size of 5 metres (16 feet) and weight of 2 tonnes (4,409 lbs). The holotype formed a miniature reef and was scavenged upon by invertebrates and sharks.
+    diet: herbivore
+    appearance:
+      integument: armored
+    identifiers:
+      - source: pbdb
+        id: "81277"
+      - source: wikidata
+        id: Q134299
+      - source: gbif
+        id: "4823220"
+      - source: eol
+        id: "52571830"
+    species:
+      - name: Aletopelta coombsi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+        location:
+          country: US
+          region: California
+          formation: Point Loma
+          coordinates:
+            - 33.130001
+            - -117.29528
+        described: 2001
+        authors: Ford and Kirkland
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Thyreophora
+      - Ankylosauria
+      - Ankylosauridae
+  Algoasaurus:
+    genus: Algoasaurus
+    parent: Eusauropoda
+    pronunciation:
+      ipa: /ælˌɡoʊ.əˈsɔːrəs/
+    description: Algoasaurus is a genus of sauropod dinosaur from the Early Cretaceous (Berriasian to early Valanginian ages) Upper Kirkwood Formation of Cape Province, South Africa, specifically near a town called Despatch. Only one species, A. bauri, is known.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "38684"
+      - source: wikidata
+        id: Q2361699
+      - source: gbif
+        id: "4822798"
+    species:
+      - name: Algoasaurus bauri
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+        location:
+          country: ZA
+          region: Eastern Cape
+          formation: Kirkwood
+          coordinates:
+            - -33.799999
+            - 25.466667
+        holotype:
+          specimen_id: AMNH FR 5631
+          institution: American Museum of Natural History, New York
+        described: 1904
+        authors: Broom
+        described_in: broom1904
+    references:
+      - id: broom1904
+        authors: Broom, R.
+        year: 1904
+        title: V. — On the Occurrence of an Opisthocœlian Dinosaur (Algoasaurus Bauri) in the Cretaceous Beds of South Africa
+        journal: Geological Magazine
+        volume: "1"
+        issue: "9"
+        pages: 445-447
+        publisher: Cambridge University Press (CUP)
+        doi: 10.1017/s0016756800123891
+        url: http://dx.doi.org/10.1017/s0016756800123891
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+  Alioramus:
+    genus: Alioramus
+    parent: Alioramini
+    pronunciation:
+      ipa: /ˌælioʊˈreɪməs/
+    description: Alioramus is a genus of tyrannosaurid theropod dinosaurs from the Late Cretaceous period of Asia. It currently contains two species. The type species, A. remotus is known from a partial skull and three foot bones recovered from the Mongolian Nemegt Formation, which was deposited in a humid floodplain. These remains were named and described by Soviet paleontologist Sergei Kurzanov in 1976. A second species, A. altai, known from a much more complete skeleton also from the Nemegt Formation, was named and described by Stephen L. Brusatte and colleagues in 2009. Its relationships to other tyrannosaurid genera were at first unclear, with some evidence supporting a hypothesis that Alioramus was closely related to the contemporary species Tarbosaurus bataar. However, the discovery of Qianzhousaurus indicates that it belongs to a distinct branch of tyrannosaurs, namely the tribe Alioramini.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "38609"
+      - source: wikidata
+        id: Q131174
+      - source: gbif
+        id: "4822623"
+      - source: eol
+        id: "8836444"
+    species:
+      - name: Alioramus remotus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: MN
+          region: Omnogov
+          formation: Nemegt
+          coordinates:
+            - 43
+            - 99
+        holotype:
+          specimen_id: PIN 3141/1
+          institution: Paleontological Institute, Russian Academy of Sciences, Moscow
+        size:
+          length_m: 6
+          estimate: true
+        described: 1976
+        authors: Kurzanov
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Tyrannosauroidea
+      - Tyrannosauridae
+      - Tyrannosaurinae
+      - Alioramini
+  Allosaurus:
+    genus: Allosaurus
+    parent: Allosauroidea
+    etymology: different lizard
+    pronunciation:
+      ipa: /ˌæləˈsɔːrəs/
+      phonetic: AL-o-SAWR-us
+    description: Allosaurus is a genus of theropod dinosaur that lived 155 to 145 million years ago during the Late Jurassic period (Kimmeridgian to late Tithonian ages). The first fossil remains that could definitively be ascribed to this genus were described in 1877 by Othniel C. Marsh. The name "Allosaurus" means "different lizard", alluding to its lightweight vertebrae, which Marsh believed were unique. The genus has a very complicated taxonomy and includes at least three valid species, the best known of which is A. fragilis. The bulk of Allosaurus remains come from North America's Morrison Formation, with material also known from the Alcobaça, Bombarral, and Lourinhã formations in Portugal. It was known for over half of the 20th century as Antrodemus, but a study of the abundant remains from the Cleveland-Lloyd Dinosaur Quarry returned the name "Allosaurus" to prominence. As one of the first well-known theropod dinosaurs, it has long attracted attention outside of paleontological circles.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "38590"
+      - source: wikidata
+        id: Q14400
+      - source: gbif
+        id: "4822587"
+      - source: eol
+        id: "4433671"
+      - source: zoobank
+        id: 3DCFDE6A-EDB6-4436-B2DD-A65C44D22112
+    species:
+      - name: Allosaurus fragilis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+            - Early Cretaceous
+          stage:
+            - Kimmeridgian
+            - Berriasian
+        location:
+          country: US
+          region: Wyoming
+          formation: Morrison
+          coordinates:
+            - 41.893101
+            - -106.041
+        holotype:
+          specimen_id: USNM 4734
+          institution: National Museum of Natural History, Smithsonian Institution
+        size:
+          length_m: 8.5
+          weight_kg: 6000
+          estimate: true
+        described: 1877
+        authors: Marsh
+        described_in: marsh1877
+    references:
+      - id: marsh1877
+        authors: Marsh, O. C.
+        year: 1877
+        title: Notice of new dinosaurian reptiles from the Jurassic formation
+        journal: American Journal of Science
+        volume: s3-14
+        issue: "84"
+        pages: 514-516
+        publisher: American Journal of Science (AJS)
+        doi: 10.2475/ajs.s3-14.84.514
+        url: http://dx.doi.org/10.2475/ajs.s3-14.84.514
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Allosauroidea
+  Almas:
+    genus: Almas
+    parent: Troodontidae
+    description: Almas is a genus of troodontid theropod dinosaur from the Late Cretaceous of Mongolia. It contains a single species, Almas ukhaa, named in 2017 by Pei Rui and colleagues, based on a partial articulated skeleton. The only known specimen was found in the Djadochta Formation, which is late Campanian in age.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "391227"
+    species:
+      - name: Almas ukhaa
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+        location:
+          country: MN
+          region: Omnogov
+          formation: Djadokhta
+          coordinates:
+            - 43.664444
+            - 100.901947
+        holotype:
+          specimen_id: IGM 100/1323
+          institution: Geological Institute, Mongolian Academy of Sciences, Ulaanbaatar
+        described: 2017
+        authors: Pei et al.
+        described_in: pei2017
+    references:
+      - id: pei2017
+        authors: Pei, Rui; Norell, Mark A.; Barta, Daniel E.; Bever, G.S.; Pittman, Michael; Xu, Xing
+        year: 2017
+        title: Osteology of a New Late Cretaceous Troodontid Specimen from Ukhaa Tolgod, Ömnögovi Aimag, Mongolia
+        journal: American Museum Novitates
+        volume: "3889"
+        issue: "3889"
+        pages: 1-47
+        publisher: American Museum of Natural History (BioOne sponsored)
+        doi: 10.1206/3889.1
+        url: http://dx.doi.org/10.1206/3889.1
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Tetanurae
+      - Avetheropoda
+      - Coelurosauria
+      - Maniraptora
+      - Troodontidae
+  Alnashetri:
+    genus: Alnashetri
+    parent: Alvarezsauridae
+    description: Alnashetri is a genus of alvarezsaurid theropod dinosaur from the Late Cretaceous (Cenomanian) Candeleros Formation of Río Negro Province, Argentina. The type and only species, Alnashetri cerropoliciensis, is known from partial hindlimb remains.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "249147"
+      - source: wikidata
+        id: Q128050
+      - source: eol
+        id: "42332703"
+    species:
+      - name: Alnashetri cerropoliciensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Cenomanian
+        location:
+          country: AR
+          region: Río Negro
+          formation: Candeleros
+          coordinates:
+            - -39.628613
+            - -68.700836
+        described: 2012
+        authors: Makovicky et al.
+        described_in: makovicky2012
+    references:
+      - id: makovicky2012
+        authors: Makovicky, Peter J.; Apesteguía, Sebastián; Gianechini, Federico A.
+        year: 2012
+        title: A New Coelurosaurian Theropod from the La Buitrera Fossil Locality of Río Negro, Argentina
+        journal: Fieldiana Life and Earth Sciences
+        volume: "5"
+        pages: 90-98
+        publisher: Field Museum of Natural History
+        doi: 10.3158/2158-5520-5.1.90
+        url: http://dx.doi.org/10.3158/2158-5520-5.1.90
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Alvarezsauria
+      - Alvarezsauroidea
+      - Alvarezsauridae
+  Alpkarakush:
+    genus: Alpkarakush
+    parent: Metriacanthosauridae
+    description: Alpkarakush is an extinct genus of metriacanthosaurid theropod dinosaurs from the Jurassic Balabansai Formation of Kyrgyzstan. The genus contains a single species, A. kyrgyzicus, known from a partial skeleton.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "496614"
+    species:
+      - name: Alpkarakush kyrgyzicus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Middle Jurassic
+          stage:
+            - Callovian
+        location:
+          country: KG
+          region: Jalal-Abad
+          formation: Balabansai
+          coordinates:
+            - 41.340557
+            - 72.191391
+        described: 2024
+        authors: Rauhut et al.
+        described_in: rauhut2024
+    references:
+      - id: rauhut2024
+        authors: Rauhut, Oliver W M; Bakirov, Aizek A; Wings, Oliver; Fernandes, Alexandra E; Hübner, Tom R
+        year: 2024
+        title: A new theropod dinosaur from the Callovian Balabansai Formation of Kyrgyzstan
+        journal: Zoological Journal of the Linnean Society
+        volume: "201"
+        issue: "4"
+        publisher: Oxford University Press (OUP)
+        doi: 10.1093/zoolinnean/zlae090
+        url: http://dx.doi.org/10.1093/zoolinnean/zlae090
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Allosauroidea
+      - Metriacanthosauridae
+  Altirhinus:
+    genus: Altirhinus
+    parent: Neoiguanodontia
+    description: Altirhinus is a genus of ornithopod dinosaur from the Early Cretaceous (Albian) Khuren Dukh Formation of Dornogov, Mongolia. The only known species, Altirhinus kurzanovi, is characterized by its distinctive highly arched nasal region.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "58902"
+    species:
+      - name: Altirhinus kurzanovi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Albian
+        location:
+          country: MN
+          region: Dornogov
+          formation: Khuren Dukh
+          coordinates:
+            - 45.845833
+            - 108.398613
+        described: 1998
+        authors: Norman
+        described_in: norman1998
+    references:
+      - id: norman1998
+        authors: NORMAN, DAVID B.
+        year: 1998
+        title: "On Asian ornithopods (Dinosauria: Ornithischia). 3. A new species of iguanodontid dinosaur"
+        journal: Zoological Journal of the Linnean Society
+        volume: "122"
+        issue: 1-2
+        pages: 291-348
+        publisher: Oxford University Press (OUP)
+        doi: 10.1111/j.1096-3642.1998.tb02533.x
+        url: http://dx.doi.org/10.1111/j.1096-3642.1998.tb02533.x
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Dryomorpha
+      - Ankylopollexia
+      - Neoiguanodontia
+  Altispinax:
+    genus: Altispinax
+    parent: Theropoda
+    pronunciation:
+      ipa: /ˌæltɪˈspaɪnæks/
+    description: Altispinax is a genus of large predatory theropod dinosaur from the Early Cretaceous period (Valanginian, 140 to 133 million years ago) of what is now the Wadhurst Clay Formation of East Sussex, England.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "38596"
+      - source: wikidata
+        id: Q134618
+      - source: gbif
+        id: "4822668"
+    species:
+      - name: Altispinax dunkeri
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Valanginian
+        holotype:
+          specimen_id: NHMUK R1828
+          institution: Natural History Museum, London
+        described: 1923
+        authors: Huene
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+  Alvarezsaurus:
+    genus: Alvarezsaurus
+    parent: Alvarezsauridae
+    pronunciation:
+      ipa: /ˌælvərɛzˈsɔːrəs/
+    description: Alvarezsaurus is a genus of alvarezsaurid dinosaur from the Late Cretaceous, living in Argentina approximately 86 - 83 million years ago. It was a small dinosaur, measuring 1–1.4 m (3.3–4.6 ft) long and weighing approximately 3 kg (6.6 lb). It was found in the Bajo de la Carpa Formation and was named by paleontologist José Bonaparte in 1991 after the historian Don Gregorio Alvarez. The type species is A. calvoi.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "64774"
+      - source: wikidata
+        id: Q134182
+      - source: gbif
+        id: "4822806"
+      - source: eol
+        id: "4433697"
+    species:
+      - name: Alvarezsaurus calvoi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Santonian
+        location:
+          country: AR
+          region: Neuquén
+          formation: Bajo de la Carpa
+          coordinates:
+            - -38.953888
+            - -68.234169
+        holotype:
+          specimen_id: MUCPv 54
+          institution: Museo de Geologia y Paleontologia de la Universidad Nacional del Comahue, Neuquén
+        size:
+          length_m: 2
+          estimate: true
+        described: 1991
+        authors: Bonaparte
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Alvarezsauria
+      - Alvarezsauroidea
+      - Alvarezsauridae
+  Alxasaurus:
+    genus: Alxasaurus
+    parent: Therizinosauroidea
+    etymology: Alxa lizard
+    pronunciation:
+      ipa: /ˌɑːlʃəˈsɔːrəs/
+    description: Alxasaurus is a genus of therizinosauroid theropod dinosaurs from the Early Cretaceous (Albian age) Bayin-Gobi Formation of Inner Mongolia. It is known from five specimens, recovered from the Bayin-Gobi in 1988, as part of the China-Canada Dinosaur Project. During their preparation, palaeontologists Dong Zhiming and Dale Russell noted strong similarities to Segnosaurus. In 1993, they described Alxasaurus and named its type species, A. elesitaiensis. While therizinosaurs had previously been tentatively seen as late-surviving basal sauropodomorphs, the description of Alxasaurus lent credence to the idea that they were instead highly derived coelurosaurs.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "64123"
+      - source: wikidata
+        id: Q311286
+      - source: gbif
+        id: "4822887"
+    species:
+      - name: Alxasaurus elesitaiensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+        location:
+          country: CN
+          region: Nei Mongol
+          formation: Bayangobi
+          coordinates:
+            - 41.166668
+            - 106.083336
+        holotype:
+          specimen_id: IVPP 88402 (larger individual)
+          institution: Institute of Vertebrate Paleontology and Paleoanthropology, Beijing
+        described: 1994
+        authors: Russell and Dong
+        described_in: russell1993
+    references:
+      - id: russell1993
+        authors: Russell, Dale A.; Dong, Zhi-Ming
+        year: 1993
+        title: The affinities of a new theropod from the Alxa Desert, Inner Mongolia, People's Republic of China
+        journal: Canadian Journal of Earth Sciences
+        volume: "30"
+        issue: "10"
+        pages: 2107-2127
+        publisher: Canadian Science Publishing
+        doi: 10.1139/e93-183
+        url: http://dx.doi.org/10.1139/e93-183
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptoriformes
+      - Therizinosauria
+      - Therizinosauroidea
+  Amanzia:
+    genus: Amanzia
+    parent: Turiasauria
+    description: Amanzia is a genus of turiasaurian sauropod dinosaur from the Late Jurassic Reuchenette Formation in Moutier, Switzerland. The type and only species is Amanzia greppini, originally named as a species of Ornithopsis and Cetiosauriscus.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "409504"
+      - source: wikidata
+        id: Q86426410
+      - source: gbif
+        id: "11169731"
+    species:
+      - name: Amanzia greppini
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Kimmeridgian
+        location:
+          country: CH
+          region: Bern
+          formation: Reuchenette
+          coordinates:
+            - 47.288612
+            - 7.377222
+        described: 2020
+        authors: Schwarz et al.
+        described_in: schwarz2020
+    references:
+      - id: schwarz2020
+        authors: Schwarz, Daniela; Mannion, Philip D.; Wings, Oliver; Meyer, Christian A.
+        year: 2020
+        title: Re-description of the sauropod dinosaur Amanzia (“Ornithopsis/Cetiosauriscus”) greppini n. gen. and other vertebrate remains from the Kimmeridgian (Late Jurassic) Reuchenette Formation of Moutier, Switzerland
+        journal: Swiss Journal of Geosciences
+        volume: "113"
+        issue: "1"
+        publisher: Pensoft Publishers
+        doi: 10.1186/s00015-020-00355-5
+        url: http://dx.doi.org/10.1186/s00015-020-00355-5
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Turiasauria
+  Amargasaurus:
+    genus: Amargasaurus
+    parent: Dicraeosaurinae
+    pronunciation:
+      ipa: /əˌmɑːrɡəˈsɔːrəs/
+    description: Amargasaurus is a genus of sauropod dinosaur from the Early Cretaceous epoch (129.4–122.46 mya) of what is now Argentina. The only known skeleton was discovered in 1984 and is virtually complete, including a fragmentary skull, making Amargasaurus one of the best-known sauropods of its epoch. Amargasaurus was first described in 1991 and contains a single known species, Amargasaurus cazaui. It was a large animal, but small for a sauropod, reaching 9 to 13 meters (30 to 43 feet) in length. Most distinctively, it sported two parallel rows of tall spines down its neck and back, taller than in any other known sauropod. In life, these spines could have stuck out of the body as solitary structures that supported a keratinous sheath. An alternate hypothesis, now more favored, postulates that they could have formed a scaffold supporting a skin sail. They might have been used for display, combat, or defense.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "53960"
+      - source: wikidata
+        id: Q18510922
+      - source: gbif
+        id: "4822553"
+    species:
+      - name: Amargasaurus cazaui
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Barremian
+        location:
+          country: AR
+          region: Neuquén
+          formation: La Amarga
+          coordinates:
+            - -39.481979
+            - -70.194786
+        holotype:
+          specimen_id: MACN-N 15
+          institution: Museo Argentino de Ciencias Naturales 'Bernardino Rivadavia', Buenos Aires
+        size:
+          length_m: 10
+          weight_kg: 3000
+          hip_height_m: 2.7
+          estimate: true
+        described: 1984
+        authors: Bonaparte
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Diplodocoidea
+      - Diplodocimorpha
+      - Flagellicaudata
+      - Dicraeosauridae
+      - Dicraeosaurinae
+  Amargatitanis:
+    genus: Amargatitanis
+    parent: Dicraeosauridae
+    etymology: Amarga giant
+    description: Amargatitanis is a genus of dicraeosaurid sauropod dinosaur (a type of large, long-necked quadrupedal herbivorous dinosaur) from the Barremian-aged (Lower Cretaceous) La Amarga Formation of Neuquén, Argentina. It is known from a single, incomplete postcranial skeleton consisting of a partial hindlimb, ischium, and two vertebrae. These remains were unearthed by Argentine paleontologist José Bonaparte in 1983 during an expedition by the Museo Argentino de Ciencias Naturales and later described as a new genus and species, Amargatitanis macni by Sebastián Apesteguía. The genus name comes from the words Amarga, where the fossils were collected, and titanis meaning "titan". Its species name is in reference to the MACN (Museo Argentino de Ciencias Naturales), where the remains are stored.
+    diet: herbivore
+    locomotion: quadrupedal
+    identifiers:
+      - source: pbdb
+        id: "140517"
+      - source: wikidata
+        id: Q133512
+      - source: gbif
+        id: "4967449"
+    species:
+      - name: Amargatitanis macni
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Barremian
+        location:
+          country: AR
+          region: Neuquén
+          formation: La Amarga
+          coordinates:
+            - -39.481079
+            - -70.192703
+        holotype:
+          specimen_id: MACN PV N53
+          institution: Museo Argentino de Ciencias Naturales 'Bernardino Rivadavia', Buenos Aires
+        described: 2007
+        authors: Apesteguía
+        described_in: apesteguía2007
+    references:
+      - id: apesteguía2007
+        authors: Apesteguía, Sebastián
+        year: 2007
+        title: The sauropod diversity of the La Amarga Formation (Barremian), Neuquén (Argentina)
+        journal: Gondwana Research
+        volume: "12"
+        issue: "4"
+        pages: 533-546
+        publisher: Elsevier BV
+        doi: 10.1016/j.gr.2007.04.007
+        url: http://dx.doi.org/10.1016/j.gr.2007.04.007
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Diplodocoidea
+      - Diplodocimorpha
+      - Flagellicaudata
+      - Dicraeosauridae
+  Amazonsaurus:
+    genus: Amazonsaurus
+    parent: Rebbachisauridae
+    etymology: Amazon lizard
+    pronunciation:
+      ipa: /ˌæməzənˈsɔːrəs/
+      phonetic: AM-ə-zən-SOR-əs
+    description: Amazonsaurus is a genus of diplodocoid sauropod dinosaur from the Early Cretaceous Period of what is now South America. It would have been a large-bodied quadrupedal herbivore with a long neck and whiplash tail. Although more derived diplodocoids were some of the longest animals ever to exist, Amazonsaurus was probably not more than 12 meters (40 ft) long. Gregory S. Paul estimated in 2010 its weight at 5000 kg.
+    diet: herbivore
+    locomotion: quadrupedal
+    identifiers:
+      - source: pbdb
+        id: "89458"
+      - source: wikidata
+        id: Q18604580
+      - source: gbif
+        id: "4822906"
+    species:
+      - name: Amazonsaurus maranhensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Albian
+        location:
+          country: BR
+          region: Maranhão
+          formation: Itapecuru
+          coordinates:
+            - -3.402652
+            - -44.360516
+        described: 2003
+        authors: Carvalho et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Diplodocoidea
+      - Diplodocimorpha
+      - Rebbachisauridae
+  Ambopteryx:
+    genus: Ambopteryx
+    parent: Scansoriopterygidae
+    etymology: both wing
+    description: Ambopteryx is a genus of scansoriopterygid dinosaur from the Oxfordian stage of the Late Jurassic of China. It is the second dinosaur to be found with both feathers and bat-like membranous wings. Yi, the first such dinosaur, was described in 2015 and is the sister taxon to Ambopteryx. The holotype specimen is thought to be a sub-adult or adult. The specimen is estimated to have had a body length of 32 centimetres (13 in) and a weight of 306 grams (10.8 oz). The genus includes one species, Ambopteryx longibrachium.
+    diet: carnivore
+    appearance:
+      integument: feathered
+    identifiers:
+      - source: pbdb
+        id: "424315"
+      - source: wikidata
+        id: Q63637265
+      - source: eol
+        id: "57242399"
+    species:
+      - name: Ambopteryx longibrachium
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Oxfordian
+        location:
+          country: CN
+          region: Liaoning
+          coordinates:
+            - 41.233334
+            - 119.400002
+        described: 2019
+        authors: Wang et al.
+        described_in: wang2019
+    references:
+      - id: wang2019
+        authors: Wang, Min; O’Connor, Jingmai K.; Xu, Xing; Zhou, Zhonghe
+        year: 2019
+        title: A new Jurassic scansoriopterygid and the loss of membranous wings in theropod dinosaurs
+        journal: Nature
+        volume: "569"
+        issue: "7755"
+        pages: 256-259
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/s41586-019-1137-z
+        url: http://dx.doi.org/10.1038/s41586-019-1137-z
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Scansoriopterygidae
+  Ampelognathus:
+    genus: Ampelognathus
+    parent: Rhabdodontomorpha
+    etymology: grapevine jaw
+    description: Ampelognathus is an extinct genus of possibly rhabdodontomorph ornithopod dinosaurs from the Late Cretaceous (Cenomanian) Lewisville Formation of Texas. The type species is Ampelognathus coheni.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "477670"
+      - source: wikidata
+        id: Q123035115
+    species:
+      - name: Ampelognathus coheni
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Cenomanian
+        location:
+          country: US
+          region: Texas
+          formation: Lewisville
+          coordinates:
+            - 32.980507
+            - -97.057213
+        described: 2023
+        authors: Tykoski et al.
+        described_in: tykoski2023
+    references:
+      - id: tykoski2023
+        authors: Tykoski, Ronald S.; Contreras, Dori L.; Noto, Christopher
+        year: 2023
+        title: The first small-bodied ornithopod dinosaur from the Lewisville Formation (middle Cenomanian) of Texas
+        journal: Journal of Vertebrate Paleontology
+        volume: "43"
+        issue: "2"
+        publisher: Informa UK Limited
+        doi: 10.1080/02724634.2023.2257238
+        url: http://dx.doi.org/10.1080/02724634.2023.2257238
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Rhabdodontomorpha
+  Ampelosaurus:
+    genus: Ampelosaurus
+    parent: Lirainosaurinae
+    etymology: vine lizard
+    pronunciation:
+      ipa: /ˌæmpɪloʊˈsɔːrəs/
+    description: Ampelosaurus is a titanosaurian sauropod dinosaur from the Late Cretaceous Period of what is now France. Its type species is A. atacis, named by Le Loeuff in 1995. Its remains were found in a level dating from 71.5 million years ago, representing the early Maastrichtian.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "65139"
+      - source: wikidata
+        id: Q132588
+      - source: gbif
+        id: "4822528"
+    species:
+      - name: Ampelosaurus atacis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: FR
+          region: Languedoc-Roussillon
+          formation: Marnes Rouges Inférieures
+          coordinates:
+            - 42.9137
+            - 2.2
+        holotype:
+          specimen_id: MDE-C3-247
+          institution: Le Musée des Dinosaures Espéraza-Aude (Dinosaur Museum Espéraza), Espéraza, Department  Aude, Region  Languedoc-Roussillon-Midi-Pyrénées
+        size:
+          length_m: 15
+          estimate: true
+        described: 1995
+        authors: Le Loeuff
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
+      - Titanosauria
+      - Eutitanosauria
+      - Lirainosaurinae
+  Amphicoelias:
+    genus: Amphicoelias
+    parent: Diplodocoidea
+    etymology: biconcave
+    pronunciation:
+      ipa: /ˌæmfɪˈsiːliəs/
+    description: Amphicoelias is a genus of herbivorous sauropod dinosaur that lived approximately 150 million years ago during the Tithonian (Late Jurassic Period) of what is now Colorado, United States. Amphicoelias was moderately sized at about 18 metres (59 ft) in length and 15 metric tons (17 short tons) in body mass, shorter than its close relative Diplodocus. Its hindlimbs were very long and thin, and its forelimbs were proportionally longer than in relatives.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "53180"
+      - source: wikidata
+        id: Q131091
+      - source: gbif
+        id: "4822552"
+      - source: eol
+        id: "47459358"
+    species:
+      - name: Amphicoelias altus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+        location:
+          country: US
+          region: Colorado
+          formation: Morrison
+          coordinates:
+            - 38.5527
+            - -105.2397
+        described: 1877
+        authors: Cope
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Diplodocoidea
+  Amtocephale:
+    genus: Amtocephale
+    parent: Pachycephalosauridae
+    description: Amtocephale is a genus of pachycephalosaurid dinosaur from early Late Cretaceous (Cenomanian-Coniacian stages) deposits of southern Gobi Desert, Mongolia.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "267679"
+      - source: wikidata
+        id: Q377190
+      - source: gbif
+        id: "8642239"
+    species:
+      - name: Amtocephale gobiensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Santonian
+        location:
+          country: MN
+          region: Omnogov
+          formation: Baynshire
+          coordinates:
+            - 43.564167
+            - 107.911667
+        described: 2011
+        authors: Watabe et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Marginocephalia
+      - Pachycephalosauria
+      - Pachycephalosauridae
+  Amurosaurus:
+    genus: Amurosaurus
+    parent: Lambeosaurinae
+    pronunciation:
+      ipa: /əˌmʊərəˈsɔːrəs/
+    description: Amurosaurus is a genus of lambeosaurine hadrosaurid dinosaur found in Late Cretaceous (70 to 66 million years ago) deposits of what is now eastern Asia.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "64250"
+      - source: wikidata
+        id: Q133179
+      - source: gbif
+        id: "4965920"
+      - source: eol
+        id: "4531647"
+    species:
+      - name: Amurosaurus riabinini
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: RU
+          region: Amur
+          formation: Udurchukan
+          coordinates:
+            - 50.27
+            - 127.47583
+        described: 1991
+        authors: Bolotsky and Kurzanov
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Dryomorpha
+      - Styracosterna
+      - Hadrosauriformes
+      - Hadrosauroidea
+      - Hadrosauridae
+      - Lambeosaurinae
+  Amygdalodon:
+    genus: Amygdalodon
+    parent: Gravisauria
+    pronunciation:
+      ipa: /əmɪɡˈdælədɒn/
+    description: Amygdalodon is an extinct genus of basal sauropod from the Early Jurassic of Argentina. The type species is Amygdalodon patagonicus. Fossils of Amygdalodon have been found in the Toarcian-aged Cerro Carnerero Formation (about 180-172 million years ago). Very little is known about it, but it is one of the few Jurassic dinosaurs from South America found thus far.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "38655"
+      - source: wikidata
+        id: Q133524
+      - source: gbif
+        id: "4822750"
+    species:
+      - name: Amygdalodon patagonicus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Jurassic
+          stage:
+            - Toarcian
+        location:
+          country: AR
+          region: Chubut
+          formation: Cerro Carnerero
+          coordinates:
+            - -43.966667
+            - -69.51667
+        size:
+          length_m: 15
+          estimate: true
+        described: 1947
+        authors: Cabrera
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+  Anabisetia:
+    genus: Anabisetia
+    parent: Elasmaria
+    pronunciation:
+      ipa: /ˌɑːnəbiːˈsɛtiə/
+      phonetic: AH-nə-bee-SET-ee-ə
+    description: Anabisetia is a genus of ornithopod dinosaur from the Late Cretaceous Period of Patagonia, South America. It was a small bipedal herbivore, around 2 metres (6 ft 7 in) long.
+    diet: herbivore
+    locomotion: bipedal
+    identifiers:
+      - source: pbdb
+        id: "67278"
+      - source: wikidata
+        id: Q73556
+      - source: gbif
+        id: "4823235"
+      - source: eol
+        id: "47460422"
+    species:
+      - name: Anabisetia saldiviai
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Turonian
+        location:
+          country: AR
+          region: Neuquén
+          formation: Cerro Lisandro
+          coordinates:
+            - -39.07045
+            - -69.15123
+        holotype:
+          specimen_id: MCF-PVPH 74
+          institution: Museo ‘Carmen Funes’, Plaza Huincul, Neuquén
+        described: 2002
+        authors: Coria and Calvo
+        described_in: coria2002
+    references:
+      - id: coria2002
+        authors: Coria, Rodolfo A.; Calvo, Jorge O.
+        year: 2002
+        title: A new iguanodontian ornithopod from Neuquen Basin, Patagonia, Argentina
+        journal: Journal of Vertebrate Paleontology
+        volume: "22"
+        issue: "3"
+        pages: 503-509
+        publisher: Informa UK Limited
+        doi: 10.1671/0272-4634(2002)022[0503:aniofn]2.0.co;2
+        url: http://dx.doi.org/10.1671/0272-4634(2002)022[0503:aniofn]2.0.co;2
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Elasmaria
   Analong:
     genus: Analong
     parent: Mamenchisauridae
