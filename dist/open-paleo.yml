@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-04-11T21:08:11.897Z
+  built_at: 2026-04-11T22:29:52.197Z
   clade_count: 248
   genus_count: 1289
   license: CC-BY-4.0
@@ -8073,7 +8073,7 @@ genera:
             - -111.235497
         holotype:
           specimen_id:
-            - U.S.N.M. Cat. No. 10,486
+            - USNM 10486
           specimen_type: holotype
           institution: National Museum of Natural History, Smithsonian Institution
         size:
@@ -11643,7 +11643,7 @@ genera:
       - source: zoobank
         id: 7A3AC822-0C85-46F3-9CD0-108FE93C0AB7
     species:
-      - name: Apatosaurus louisae
+      - name: Apatosaurus ajax
         status: valid
         type_species: true
         period:
@@ -11653,11 +11653,12 @@ genera:
             - Kimmeridgian
         location:
           country: US
-          region: Colorado
+          region: Wyoming
+          locality: Como Bluff
           formation: Morrison
           coordinates:
-            - 39.653423
-            - -105.187332
+            - 41.906111
+            - -106.248889
         holotype:
           specimen_id:
             - YPM 1860
@@ -11670,6 +11671,29 @@ genera:
         described: 1877
         authors: Marsh
         described_in: marsh1877
+      - name: Apatosaurus louisae
+        status: valid
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Kimmeridgian
+        location:
+          country: US
+          region: Utah
+          locality: Carnegie Quarry, Dinosaur National Monument
+          formation: Morrison
+          coordinates:
+            - 40.439722
+            - -109.302778
+        holotype:
+          specimen_id:
+            - CM 3018
+          specimen_type: holotype
+          institution: Carnegie Museum of Natural History, Pittsburgh
+        described: 1915
+        authors: Holland
+        described_in: holland1915
     references:
       - id: marsh1877
         authors: Marsh, O. C.
@@ -11682,6 +11706,14 @@ genera:
         publisher: American Journal of Science (AJS)
         doi: 10.2475/ajs.s3-14.84.514
         url: http://dx.doi.org/10.2475/ajs.s3-14.84.514
+      - id: holland1915
+        authors: Holland, W. J.
+        year: 1915
+        title: A new species of Apatosaurus
+        journal: Annals of the Carnegie Museum
+        volume: "9"
+        issue: 3-4
+        pages: 381-383
     taxonomy:
       - Life
       - Animalia
@@ -13467,6 +13499,7 @@ genera:
             - SMU 203/73655
           specimen_type: holotype
           institution: Schuler Museum of Paleontology, Southern Methodist University, Dallas
+          material: Single tooth (SMU 203/73655) and partial postcranial skeleton (SMU 61732) together comprising the holotype
         described: 2013
         authors: D'Emic
         described_in: d’emic2013
@@ -25402,7 +25435,7 @@ genera:
         etymology: long double beam
         holotype:
           specimen_id:
-            - YPM 1920
+            - YPM VP 1920
           specimen_type: holotype
           institution: Yale Peabody Museum
           material: caudal vertebrae and chevrons
@@ -26381,9 +26414,10 @@ genera:
             - -69.665276
         holotype:
           specimen_id:
-            - MPM-PV 2097/14
+            - MPM-PV 2097/1
           specimen_type: holotype
           institution: Museo Padre Molina, Rio Gallegos, Santa Cruz
+          material: Partial skeleton cataloged as MPM-PV 2097/1 through 2097/19
         described: 2011
         authors: Navarrete et al.
         described_in: navarrete2011
@@ -27465,7 +27499,7 @@ genera:
             - 8.978333
         holotype:
           specimen_id:
-            - SMNS 12667
+            - SMNS 11838
           specimen_type: holotype
           institution: Staatliches Museum für Naturkunde, Stuttgart
         described: 1973
@@ -29666,7 +29700,7 @@ genera:
           region: Shandong
         holotype:
           specimen_id:
-            - PMU 233
+            - PMU 24705
           specimen_type: holotype
           institution: Paleontological Museum Uppsala, Uppsala
         described: 1956
@@ -32789,9 +32823,10 @@ genera:
             - 39.231327
         holotype:
           specimen_id:
-            - HMN SII
-          specimen_type: holotype
+            - MB.R.2180
+          specimen_type: lectotype
           institution: Museum für Naturkunde Berlin, Berlin
+          material: "Lectotype designated by Taylor (2009); originally catalogued as HMN SII. Paralectotype: MB.R.2181"
         size:
           length_m: 23
           estimate: true
@@ -35004,7 +35039,7 @@ genera:
       - source: gbif
         id: "4822746"
     species:
-      - name: Haplocanthosaurus delfsi
+      - name: Haplocanthosaurus priscus
         status: valid
         type_species: true
         period:
@@ -35015,6 +35050,7 @@ genera:
         location:
           country: US
           region: Colorado
+          locality: Garden Park
           formation: Morrison
           coordinates:
             - 38.539501
@@ -35029,6 +35065,37 @@ genera:
           estimate: true
         described: 1903
         authors: Hatcher
+      - name: Haplocanthosaurus delfsi
+        status: valid
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Tithonian
+        location:
+          country: US
+          region: Colorado
+          locality: Garden Park
+          formation: Morrison
+          coordinates:
+            - 38.539501
+            - -105.224701
+        holotype:
+          specimen_id:
+            - CMNH 10380
+          specimen_type: holotype
+          institution: Cleveland Museum of Natural History, Cleveland
+        described: 1988
+        authors: McIntosh & Williams
+        described_in: mcintosh1988
+    references:
+      - id: mcintosh1988
+        authors: McIntosh, J. S.; Williams, M. E.
+        year: 1988
+        title: A new species of sauropod dinosaur, Haplocanthosaurus delfsi sp. nov., from the Upper Jurassic Morrison Formation of Colorado
+        journal: Kirtlandia
+        volume: "43"
+        pages: 3-26
     taxonomy:
       - Life
       - Animalia
@@ -39227,9 +39294,10 @@ genera:
             - 80.366669
         holotype:
           specimen_id:
-            - ISIR335/57
+            - ISI R 335/1
           specimen_type: holotype
           institution: Geology Museum, Indian Statistical Institute, Calcutta
+          material: Partial skeleton cataloged as ISI R 335/1 through 335/65
         described: 2003
         authors: Wilson and Upchurch
         described_in: wilson2003
@@ -48701,9 +48769,9 @@ genera:
             - 104.516701
         holotype:
           specimen_id:
-            - ZDM 0083
+            - CCG V 20401
           specimen_type: holotype
-          institution: Zigong Dinosaur Museum, Zigong
+          institution: Sichuan Provincial Museum, Chengdu
         size:
           length_m: 22
           estimate: true
@@ -49872,7 +49940,8 @@ genera:
         holotype:
           specimen_id:
             - SAM-PK-3449
-          specimen_type: holotype
+            - SAM-PK-3450
+          specimen_type: syntype
           institution: Iziko South African Museum, Cape Town
         size:
           length_m: 12
@@ -55665,9 +55734,10 @@ genera:
             - 100.455276
         holotype:
           specimen_id:
-            - ZPAL MgD-I/48
+            - MPC-D100/404
           specimen_type: holotype
-          institution: Institute of Paleobiology, Polish Academy of Sciences, Warsaw
+          institution: Institute of Geology, Mongolian Academy of Sciences, Ulaanbaatar
+          material: Originally catalogued as ZPAL MgD-I/48 at the Institute of Paleobiology, Warsaw; later repatriated to Mongolia
         size:
           length_m: 12
           estimate: true
@@ -56112,9 +56182,10 @@ genera:
             - -1.423251
         holotype:
           specimen_id:
-            - NHMUK PV R 3078
-          specimen_type: holotype
+            - NHMUK R28632
+          specimen_type: lectotype
           institution: Natural History Museum, London
+          material: Lectotype designated by Naish & Martill (2001)
         described: 1870
         authors: Seeley
         described_in: seeley1870
@@ -71524,9 +71595,10 @@ genera:
             - -108.397202
         holotype:
           specimen_id:
-            - BYU 5500
+            - BYU 9025
           specimen_type: holotype
           institution: Earth Sciences Museum, Brigham Young University, Provo
+          material: Scapulocoracoid; originally labelled BYU 5500
         size:
           length_m: 34
           weight_kg: 35000
@@ -75369,7 +75441,11 @@ genera:
         holotype:
           specimen_id:
             - SMNS 12140
-          specimen_type: holotype
+            - SMNS 12141a
+            - SMNS 12142
+            - SMNS 12143
+            - SMNS 12145a
+          specimen_type: syntype
           institution: Staatliches Museum für Naturkunde, Stuttgart
         described: 1911
         authors: Sternfeld
@@ -78675,7 +78751,7 @@ genera:
             - -109.470901
         holotype:
           specimen_id:
-            - DMNH 40932
+            - DMNS 40932
           specimen_type: holotype
           institution: Denver Museum of Nature and Science, Denver
         described: 2001
