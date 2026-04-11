@@ -19,7 +19,7 @@ identifiers:
   - source: gbif
     id: "4822746"
 species:
-  - name: Haplocanthosaurus delfsi
+  - name: Haplocanthosaurus priscus
     status: valid
     type_species: true
     period:
@@ -30,6 +30,7 @@ species:
     location:
       country: US
       region: Colorado
+      locality: Garden Park
       formation: Morrison
       coordinates:
         - 38.539501
@@ -43,3 +44,34 @@ species:
       estimate: true
     described: 1903
     authors: Hatcher
+  - name: Haplocanthosaurus delfsi
+    status: valid
+    period:
+      name:
+        - Late Jurassic
+      stage:
+        - Tithonian
+    location:
+      country: US
+      region: Colorado
+      locality: Garden Park
+      formation: Morrison
+      coordinates:
+        - 38.539501
+        - -105.224701
+    holotype:
+      specimen_id: [CMNH 10380]
+      specimen_type: holotype
+      institution: Cleveland Museum of Natural History, Cleveland
+    described: 1988
+    authors: McIntosh & Williams
+    described_in: mcintosh1988
+references:
+  - id: mcintosh1988
+    authors: McIntosh, J. S.; Williams, M. E.
+    year: 1988
+    title: A new species of sauropod dinosaur, Haplocanthosaurus delfsi sp. nov.,
+      from the Upper Jurassic Morrison Formation of Colorado
+    journal: Kirtlandia
+    volume: "43"
+    pages: 3-26

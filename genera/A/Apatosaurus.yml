@@ -28,7 +28,7 @@ identifiers:
   - source: zoobank
     id: 7A3AC822-0C85-46F3-9CD0-108FE93C0AB7
 species:
-  - name: Apatosaurus louisae
+  - name: Apatosaurus ajax
     status: valid
     type_species: true
     period:
@@ -38,11 +38,12 @@ species:
         - Kimmeridgian
     location:
       country: US
-      region: Colorado
+      region: Wyoming
+      locality: Como Bluff
       formation: Morrison
       coordinates:
-        - 39.653423
-        - -105.187332
+        - 41.906111
+        - -106.248889
     holotype:
       specimen_id: [YPM 1860]
       specimen_type: holotype
@@ -54,6 +55,28 @@ species:
     described: 1877
     authors: Marsh
     described_in: marsh1877
+  - name: Apatosaurus louisae
+    status: valid
+    period:
+      name:
+        - Late Jurassic
+      stage:
+        - Kimmeridgian
+    location:
+      country: US
+      region: Utah
+      locality: Carnegie Quarry, Dinosaur National Monument
+      formation: Morrison
+      coordinates:
+        - 40.439722
+        - -109.302778
+    holotype:
+      specimen_id: [CM 3018]
+      specimen_type: holotype
+      institution: Carnegie Museum of Natural History, Pittsburgh
+    described: 1915
+    authors: Holland
+    described_in: holland1915
 references:
   - id: marsh1877
     authors: Marsh, O. C.
@@ -66,3 +89,11 @@ references:
     publisher: American Journal of Science (AJS)
     doi: 10.2475/ajs.s3-14.84.514
     url: http://dx.doi.org/10.2475/ajs.s3-14.84.514
+  - id: holland1915
+    authors: Holland, W. J.
+    year: 1915
+    title: A new species of Apatosaurus
+    journal: Annals of the Carnegie Museum
+    volume: "9"
+    issue: 3-4
+    pages: 381-383
