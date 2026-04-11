@@ -11,7 +11,8 @@
     "lint:fix": "eslint scripts/ docs/ .github/scripts/ --fix",
     "typecheck": "tsc --noEmit",
     "preview": "node --experimental-strip-types scripts/build.ts && python3 -m http.server 8080 -d docs",
-    "batch-import": "node --experimental-strip-types scripts/batch-import.ts"
+    "batch-import": "node --experimental-strip-types scripts/batch-import.ts",
+    "report-missing-fields": "node --experimental-strip-types scripts/report-missing-fields.ts"
   },
   "license": "CC-BY-4.0",
   "engines": {
