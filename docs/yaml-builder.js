@@ -114,6 +114,26 @@ window.YamlBuilder = (function ()
     }
 
     /**
+     * Parses a comma-separated specimen ID string into an array. Whitespace
+     * is trimmed from each entry; empty entries are dropped.
+     *
+     * @param value - The raw specimen ID input, e.g. "CM 84, CM 94".
+     * @returns An array of trimmed specimen IDs, or an empty array.
+     */
+    function parseSpecimenIds(value)
+    {
+        if (!value)
+        {
+            return [];
+        }
+
+        return String(value)
+            .split(",")
+            .map((part) => part.trim())
+            .filter((part) => part.length > 0);
+    }
+
+    /**
      * Parses a coordinates string into a [lat, lng] array.
      *
      * @param value - The raw coordinates string, e.g. "47.5, -106.9".
@@ -252,7 +272,8 @@ window.YamlBuilder = (function ()
 
         if (values["Holotype specimen ID"])
         {
-            holotype.specimen_id = values["Holotype specimen ID"];
+            holotype.specimen_id = parseSpecimenIds(values["Holotype specimen ID"]);
+            holotype.specimen_type = values["Holotype type"] || "holotype";
         }
 
         if (values["Holotype institution"])
@@ -762,7 +783,7 @@ window.YamlBuilder = (function ()
             speciesEntry.size.estimate = true;
         }
 
-        if (values["Holotype specimen ID"] || values["Holotype institution"] || values["Holotype material"] || values["Holotype status"])
+        if (values["Holotype specimen ID"] || values["Holotype institution"] || values["Holotype material"] || values["Holotype status"] || values["Holotype type"])
         {
             if (!speciesEntry.holotype)
             {
@@ -771,7 +792,12 @@ window.YamlBuilder = (function ()
 
             if (values["Holotype specimen ID"])
             {
-                speciesEntry.holotype.specimen_id = values["Holotype specimen ID"];
+                speciesEntry.holotype.specimen_id = parseSpecimenIds(values["Holotype specimen ID"]);
+                speciesEntry.holotype.specimen_type = values["Holotype type"] || "holotype";
+            }
+            else if (values["Holotype type"])
+            {
+                speciesEntry.holotype.specimen_type = values["Holotype type"];
             }
 
             if (values["Holotype institution"])

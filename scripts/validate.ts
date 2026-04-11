@@ -163,6 +163,7 @@ const allowedDiet = new Set(schema.diet ?? []);
 const allowedLocomotion = new Set(schema.locomotion ?? []);
 const allowedCompleteness = new Set(schema.completeness ?? []);
 const allowedHolotypeStatus = new Set(schema.holotype_status ?? []);
+const allowedSpecimenTypes = new Set(schema.specimen_types ?? []);
 const allowedIntegument = new Set(schema.integument ?? []);
 const allowedIntegumentEvidence = new Set(schema.integument_evidence ?? []);
 const allowedPaleoenvironments = new Set(schema.paleoenvironments ?? []);
@@ -923,12 +924,27 @@ for (const [filePath, doc] of genusParsed)
         }
 
         const holotype = species.holotype;
-        if (!holotype.specimen_id)
+        const speciesLabel = species.name ?? "?";
+
+        if (!Array.isArray(holotype.specimen_id) || holotype.specimen_id.length === 0)
         {
             checkError(
                 "Holotype consistency",
                 filePath,
-                `species '${species.name ?? "?"}': holotype present but missing 'specimen_id'`);
+                `species '${speciesLabel}': holotype present but missing 'specimen_id' (must be a non-empty array of catalogue numbers)`);
+        }
+        else
+        {
+            for (const [index, value] of holotype.specimen_id.entries())
+            {
+                if (typeof value !== "string" || value.trim().length === 0)
+                {
+                    checkError(
+                        "Holotype consistency",
+                        filePath,
+                        `species '${speciesLabel}': specimen_id[${index}] must be a non-empty string`);
+                }
+            }
         }
 
         if (!holotype.institution)
@@ -936,7 +952,42 @@ for (const [filePath, doc] of genusParsed)
             checkError(
                 "Holotype consistency",
                 filePath,
-                `species '${species.name ?? "?"}': holotype present but missing 'institution'`);
+                `species '${speciesLabel}': holotype present but missing 'institution'`);
+        }
+
+        if (holotype.specimen_type === undefined)
+        {
+            checkError(
+                "Holotype consistency",
+                filePath,
+                `species '${speciesLabel}': holotype present but missing 'specimen_type' (must be one of: ${[...allowedSpecimenTypes].join(", ")})`);
+        }
+        else if (!allowedSpecimenTypes.has(holotype.specimen_type))
+        {
+            checkError(
+                "Holotype consistency",
+                filePath,
+                `species '${speciesLabel}': invalid specimen_type '${holotype.specimen_type}' (must be one of: ${[...allowedSpecimenTypes].join(", ")})`);
+        }
+        else if (Array.isArray(holotype.specimen_id) && holotype.specimen_id.length > 0)
+        {
+            const idCount = holotype.specimen_id.length;
+            const singleTypes = new Set(["holotype", "lectotype", "neotype"]);
+
+            if (singleTypes.has(holotype.specimen_type) && idCount !== 1)
+            {
+                checkError(
+                    "Holotype consistency",
+                    filePath,
+                    `species '${speciesLabel}': specimen_type '${holotype.specimen_type}' requires exactly 1 specimen_id (got ${idCount})`);
+            }
+            else if (holotype.specimen_type === "syntype" && idCount < 2)
+            {
+                checkError(
+                    "Holotype consistency",
+                    filePath,
+                    `species '${speciesLabel}': specimen_type 'syntype' requires at least 2 specimen_ids (got ${idCount})`);
+            }
         }
 
         if (holotype.status !== undefined && !allowedHolotypeStatus.has(holotype.status))
@@ -944,7 +995,7 @@ for (const [filePath, doc] of genusParsed)
             checkError(
                 "Holotype consistency",
                 filePath,
-                `species '${species.name ?? "?"}': invalid holotype status '${holotype.status}' (must be one of: ${[...allowedHolotypeStatus].join(", ")})`);
+                `species '${speciesLabel}': invalid holotype status '${holotype.status}' (must be one of: ${[...allowedHolotypeStatus].join(", ")})`);
         }
     }
 }

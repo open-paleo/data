@@ -2232,11 +2232,12 @@ function toGenusYaml(enriched: EnrichedGenus, reference: Record<string, string> 
 
     if (enriched.holotype)
     {
-        const holotypeData: Record<string, string> = {};
+        const holotypeData: Record<string, string | Array<string>> = {};
 
         if (enriched.holotype.specimenId)
         {
-            holotypeData.specimen_id = enriched.holotype.specimenId;
+            holotypeData.specimen_id = [enriched.holotype.specimenId];
+            holotypeData.specimen_type = "holotype";
         }
 
         if (enriched.holotype.institution)

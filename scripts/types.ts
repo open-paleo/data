@@ -2,13 +2,25 @@
 // Property names use snake_case to match the YAML file keys.
 
 /**
- * Holotype specimen information for a species.
+ * Type-specimen information for a species. The block is named `holotype`
+ * for historical reasons but also holds syntype, lectotype, and neotype
+ * series — see `specimen_type`.
  */
 export type Holotype = {
     /**
-     * Catalogue number of the holotype specimen (e.g. "FMNH PR 2081").
+     * Catalogue numbers comprising the type material (e.g. ["FMNH PR 2081"]).
+     * Always an array with at least one element; consumers never branch on
+     * string-vs-array. For holotype/lectotype/neotype this is usually a single
+     * entry; for syntype series it holds all members.
      */
-    specimen_id?: string;
+    specimen_id?: Array<string>;
+
+    /**
+     * Primary nomenclatural type category. Required whenever this block is
+     * present. Allowed values come from `schema.yml` under `specimen_types`
+     * ("holotype", "syntype", "lectotype", "neotype", "unknown").
+     */
+    specimen_type?: string;
 
     /**
      * Institution or collection housing the specimen (e.g. "Field Museum").
@@ -16,7 +28,7 @@ export type Holotype = {
     institution?: string;
 
     /**
-     * Anatomical material preserved in the holotype (e.g. "Nearly complete skeleton").
+     * Anatomical material preserved in the type specimen(s) (e.g. "Nearly complete skeleton").
      */
     material?: string;
 
@@ -491,6 +503,13 @@ export type Schema = {
      * "unknown"). Applied to `species.holotype.status`.
      */
     holotype_status?: Array<string>;
+
+    /**
+     * Allowed type-specimen categories (e.g. "holotype", "syntype",
+     * "lectotype", "neotype", "unknown"). Applied to
+     * `species.holotype.specimen_type`.
+     */
+    specimen_types?: Array<string>;
 
     /**
      * Allowed integument types.

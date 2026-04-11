@@ -2135,6 +2135,11 @@ window.DataImport = (function ()
                     source: "PBDB",
                     fieldType: "text",
                 };
+                results["Holotype type"] = {
+                    value: "holotype",
+                    source: "PBDB",
+                    fieldType: "select",
+                };
             }
 
             if (pbdb.holotype.institution)
@@ -2316,6 +2321,15 @@ window.DataImport = (function ()
                 source: "Wikipedia",
                 fieldType: "text",
             };
+
+            if (!results["Holotype type"])
+            {
+                results["Holotype type"] = {
+                    value: "holotype",
+                    source: "Wikipedia",
+                    fieldType: "select",
+                };
+            }
         }
 
         if (wikitext.holotypeInstitution && !results["Holotype institution"])
@@ -3712,6 +3726,11 @@ window.DataImport = (function ()
                     value: pbdb.holotype.specimenId,
                     source: "PBDB",
                     fieldType: "text",
+                };
+                results["Holotype type"] = {
+                    value: "holotype",
+                    source: "PBDB",
+                    fieldType: "select",
                 };
             }
 

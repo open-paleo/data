@@ -438,6 +438,33 @@ function renderScalar(text: string): string
 }
 
 /**
+ * Renders a scalar for use inside a flow array `[...]`. Adds `,`, `]`,
+ * `[`, `{`, `}` to the list of characters that force quoting.
+ *
+ * @param text - The raw string.
+ * @returns A YAML scalar literal safe to embed inside `[...]`.
+ */
+function renderFlowScalar(text: string): string
+{
+    if (/^[\s#&*!|>%@`'"\-?]/.test(text))
+    {
+        return toDoubleQuotedScalar(text);
+    }
+
+    if (/[,\]{}[]/.test(text))
+    {
+        return toDoubleQuotedScalar(text);
+    }
+
+    if (text.includes(": ") || text.includes(" #") || text.includes("\n") || text.includes("\"") || text.includes("'"))
+    {
+        return toDoubleQuotedScalar(text);
+    }
+
+    return text;
+}
+
+/**
  * Finds the end-of-entry line index for a species entry starting at the
  * given `- name: ...` line. The entry ends at the first subsequent line
  * whose indentation is at or below the entry's list-item indent.
@@ -548,7 +575,8 @@ function writeBackfill(change: BackfillChange): void
 
         if (change.newSpecimen.length > 0)
         {
-            insertedLines.push(nestedIndent + "specimen_id: " + renderScalar(change.newSpecimen));
+            insertedLines.push(nestedIndent + "specimen_id: [" + renderFlowScalar(change.newSpecimen) + "]");
+            insertedLines.push(nestedIndent + "specimen_type: holotype");
         }
 
         if (change.newInstitution.length > 0 && change.institutionSource !== "unchanged")
@@ -589,7 +617,8 @@ function writeBackfill(change: BackfillChange): void
 
         if (change.newSpecimen.length > 0 && change.oldSpecimen.length === 0)
         {
-            additions.push(nestedIndent + "specimen_id: " + renderScalar(change.newSpecimen));
+            additions.push(nestedIndent + "specimen_id: [" + renderFlowScalar(change.newSpecimen) + "]");
+            additions.push(nestedIndent + "specimen_type: holotype");
         }
 
         if (
@@ -671,7 +700,10 @@ for (const entry of entries)
         continue;
     }
 
-    const ourSpecimen = target.holotype?.specimen_id ?? "";
+    // Join existing specimen_id array to a single string for loose comparison.
+    // Single-ID cases (the overwhelming majority) join to themselves.
+    const ourSpecimenArray = target.holotype?.specimen_id ?? [];
+    const ourSpecimen = ourSpecimenArray.join(", ");
     const ourInstitution = target.holotype?.institution ?? "";
     const wikiHasSpecimen = entry.specimenId.length > 0;
     const wikiHasInstitution = entry.institution.length > 0;

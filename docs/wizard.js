@@ -450,6 +450,33 @@
 
                 return problems.length > 0 ? problems.join("\n") : null;
             }
+
+            case "specimenIds":
+            {
+                const ids = String(value)
+                    .split(",")
+                    .map((part) => part.trim())
+                    .filter((part) => part.length > 0);
+
+                if (ids.length === 0)
+                {
+                    return null;
+                }
+
+                const specimenType = String(values["Holotype type"] ?? "holotype").trim();
+                const singleTypes = new Set(["holotype", "lectotype", "neotype"]);
+
+                if (singleTypes.has(specimenType) && ids.length !== 1)
+                {
+                    return `A ${specimenType} must reference exactly one specimen ID (got ${ids.length})`;
+                }
+                else if (specimenType === "syntype" && ids.length < 2)
+                {
+                    return "A syntype series requires at least 2 specimen IDs separated by commas";
+                }
+
+                return null;
+            }
         }
 
         return null;
