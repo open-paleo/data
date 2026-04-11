@@ -64,6 +64,24 @@ const CLADE_CONFIGS: Record<string, CladeConfig> = {
         tableIndex: 0,
         cellIndices: { binomial: 0, specimenId: 3, institution: 4 },
     },
+    ornithopod: {
+        pageName: "List_of_ornithopod_type_specimens",
+        cacheFile: "ornithopod-wikitext.txt",
+        tableIndex: 0,
+        cellIndices: { binomial: 0, specimenId: 3, institution: 4 },
+    },
+    marginocephalian: {
+        pageName: "List_of_marginocephalian_type_specimens",
+        cacheFile: "marginocephalian-wikitext.txt",
+        tableIndex: 1,
+        cellIndices: { binomial: 0, specimenId: 1, institution: 2 },
+    },
+    thyreophoran: {
+        pageName: "List_of_thyreophoran_type_specimens",
+        cacheFile: "thyreophoran-wikitext.txt",
+        tableIndex: 1,
+        cellIndices: { binomial: 0, specimenId: 1, institution: 2 },
+    },
 };
 
 const cladeArgIndex = process.argv.indexOf("--clade");
