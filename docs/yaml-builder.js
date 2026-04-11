@@ -265,6 +265,11 @@ window.YamlBuilder = (function ()
             holotype.material = values["Holotype material"];
         }
 
+        if (values["Holotype status"])
+        {
+            holotype.status = values["Holotype status"];
+        }
+
         if (Object.keys(holotype).length > 0)
         {
             species.holotype = holotype;
@@ -757,7 +762,7 @@ window.YamlBuilder = (function ()
             speciesEntry.size.estimate = true;
         }
 
-        if (values["Holotype specimen ID"] || values["Holotype institution"] || values["Holotype material"])
+        if (values["Holotype specimen ID"] || values["Holotype institution"] || values["Holotype material"] || values["Holotype status"])
         {
             if (!speciesEntry.holotype)
             {
@@ -777,6 +782,11 @@ window.YamlBuilder = (function ()
             if (values["Holotype material"])
             {
                 speciesEntry.holotype.material = values["Holotype material"];
+            }
+
+            if (values["Holotype status"])
+            {
+                speciesEntry.holotype.status = values["Holotype status"];
             }
         }
 

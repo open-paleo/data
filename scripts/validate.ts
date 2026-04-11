@@ -162,6 +162,7 @@ const allowedStatus = new Set(schema.status ?? []);
 const allowedDiet = new Set(schema.diet ?? []);
 const allowedLocomotion = new Set(schema.locomotion ?? []);
 const allowedCompleteness = new Set(schema.completeness ?? []);
+const allowedHolotypeStatus = new Set(schema.holotype_status ?? []);
 const allowedIntegument = new Set(schema.integument ?? []);
 const allowedIntegumentEvidence = new Set(schema.integument_evidence ?? []);
 const allowedPaleoenvironments = new Set(schema.paleoenvironments ?? []);
@@ -936,6 +937,14 @@ for (const [filePath, doc] of genusParsed)
                 "Holotype consistency",
                 filePath,
                 `species '${species.name ?? "?"}': holotype present but missing 'institution'`);
+        }
+
+        if (holotype.status !== undefined && !allowedHolotypeStatus.has(holotype.status))
+        {
+            checkError(
+                "Holotype consistency",
+                filePath,
+                `species '${species.name ?? "?"}': invalid holotype status '${holotype.status}' (must be one of: ${[...allowedHolotypeStatus].join(", ")})`);
         }
     }
 }

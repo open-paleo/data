@@ -19,6 +19,14 @@ export type Holotype = {
      * Anatomical material preserved in the holotype (e.g. "Nearly complete skeleton").
      */
     material?: string;
+
+    /**
+     * Physical state of the specimen when it is no longer intact at the recorded
+     * institution. Absence implies the specimen is presumed intact. Allowed values
+     * come from `schema.yml` under `holotype_status` (e.g. "destroyed", "lost",
+     * "unknown"). When set, `institution` should record the last-known repository.
+     */
+    status?: string;
 };
 
 /**
@@ -477,6 +485,12 @@ export type Schema = {
      * Allowed fossil completeness levels.
      */
     completeness?: Array<string>;
+
+    /**
+     * Allowed holotype physical-status values (e.g. "destroyed", "lost",
+     * "unknown"). Applied to `species.holotype.status`.
+     */
+    holotype_status?: Array<string>;
 
     /**
      * Allowed integument types.

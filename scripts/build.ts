@@ -402,7 +402,7 @@ const schemaOutput: Record<string, unknown> = {};
 
 // Array-type vocabularies (sorted)
 const arrayKeys = [
-    "status", "diet", "locomotion", "completeness",
+    "status", "diet", "locomotion", "completeness", "holotype_status",
     "integument", "integument_evidence", "paleoenvironments",
     "periods", "identifier_sources",
 ];
