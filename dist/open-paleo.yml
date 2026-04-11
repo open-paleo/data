@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-04-11T00:29:04.981Z
+  built_at: 2026-04-11T00:52:17.674Z
   clade_count: 245
-  genus_count: 1111
+  genus_count: 1132
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.04"
@@ -5782,6 +5782,1224 @@ genera:
       - Ornithischia
       - Thyreophora
       - Ankylosauria
+  Barrosasaurus:
+    genus: Barrosasaurus
+    parent: Titanosauria
+    description: Barrosasaurus is a genus of titanosaurian sauropod dinosaur, first described by paleontologists Leonardo Salgado and Rodolfo Coria in 2009. The fossils, consisting of three fossil dorsal (back) vertebrae, are well-preserved but incomplete. They were discovered in the Anacleto Formation of the Neuquén province of western Argentina. The type species is Barrosasaurus casamiquelai. The genus name is named after the Sierra Barrosa in Neuquén. The specific epithet honours the Argentinian paleontologist Rodolfo Magín Casamiquela. It has been estimated to be 18 meters (60 ft) in length and 13.5 tonnes (14.9 short tons) in weight.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "153725"
+      - source: wikidata
+        id: Q2098630
+      - source: gbif
+        id: "8492586"
+    species:
+      - name: Barrosasaurus casamiquelai
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+        location:
+          country: AR
+          region: Neuquén
+          formation: Anacleto
+          coordinates:
+            - -38.840832
+            - -68.84111
+        described: 2009
+        authors: Salgado and Coria
+        described_in: salgado2009
+    references:
+      - id: salgado2009
+        authors: SALGADO, LEONARDO; CORIA, RODOLFO A.
+        year: 2009
+        title: "Barrosasaurus casamiquelai gen. et sp. nov., a new titanosaur (Dinosauria, Sauropoda) from the Anacleto Formation (Late Cretaceous: early Campanian) of Sierra Barrosa (Neuquén, Argentina)"
+        journal: Zootaxa
+        volume: "2222"
+        issue: "1"
+        publisher: Magnolia Press
+        doi: 10.11646/zootaxa.2222.1.1
+        url: http://dx.doi.org/10.11646/zootaxa.2222.1.1
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Sauropoda
+      - Macronaria
+      - Titanosauria
+  Barsboldia:
+    genus: Barsboldia
+    parent: Saurolophinae
+    etymology: of Barsbold
+    description: Barsboldia is a genus of large hadrosaurid dinosaur from the Maastrichtian Nemegt Formation of Ömnogöv, Mongolia. It is known from a partial vertebral column, partial pelvis, and some ribs.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "38771"
+      - source: wikidata
+        id: Q18606529
+      - source: gbif
+        id: "4823229"
+    species:
+      - name: Barsboldia sicinskii
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: MN
+          region: Omnogov
+          formation: Nemegt
+          coordinates:
+            - 43.529999
+            - 101.040001
+        holotype:
+          specimen_id: ZPAL MgD-1/110
+          institution: Zakład Paleozoologii Polskiej Akademii Nauk, Warsaw
+        described: 1981
+        authors: Maryanska and Osmólska
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Dryomorpha
+      - Styracosterna
+      - Hadrosauriformes
+      - Hadrosauroidea
+      - Hadrosauridae
+      - Saurolophinae
+  Baryonyx:
+    genus: Baryonyx
+    parent: Baryonychinae
+    pronunciation:
+      ipa: /ˌbæriˈɒnɪks/
+    description: Baryonyx is a genus of theropod dinosaur which lived in the Barremian stage of the Early Cretaceous period, about 130–125 million years ago. The first skeleton was discovered in 1983 in the Smokejack Clay Pit, of Surrey, England, in sediments of the Weald Clay Formation, and became the holotype specimen of Baryonyx walkeri, named by palaeontologists Alan J. Charig and Angela C. Milner in 1986. The genus name Baryonyx comes from Ancient Greek βαρύς (barús), meaning "heavy" or "strong", and ὄνυξ (ónux), meaning "claw", alluding to the animal's very large claw on the first finger; the specific name, walkeri, refers to its discoverer, amateur fossil collector William J. Walker. The holotype specimen is one of the most complete theropod skeletons from the UK (and remains the most complete spinosaurid), and its discovery attracted media attention. Specimens later discovered in other parts of the United Kingdom and Iberia have also been assigned to the genus, though many have since been moved to new genera.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "58891"
+      - source: wikidata
+        id: Q131006
+      - source: gbif
+        id: "4822930"
+      - source: eol
+        id: "4531245"
+    species:
+      - name: Baryonyx walkeri
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Valanginian
+            - Aptian
+        location:
+          country: GB
+          region: England
+          formation: Weald Clay
+          coordinates:
+            - 51.133331
+            - -0.35
+        holotype:
+          specimen_id: BMNH R9951
+          institution: Natural History Museum, London
+        size:
+          length_m: 10
+          weight_kg: 2000
+          hip_height_m: 2.5
+          estimate: true
+        described: 1986
+        authors: Charig and Milner
+        described_in: charig1986
+    references:
+      - id: charig1986
+        authors: Charig, Alan J.; Milner, Angela C.
+        year: 1986
+        title: Baryonyx, a remarkable new theropod dinosaur
+        journal: Nature
+        volume: "324"
+        issue: "6095"
+        pages: 359-361
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/324359a0
+        url: http://dx.doi.org/10.1038/324359a0
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Megalosauroidea
+      - Spinosauridae
+      - Baryonychinae
+  Bashanosaurus:
+    genus: Bashanosaurus
+    parent: Stegosauria
+    etymology: Bashan lizard
+    description: Bashanosaurus is an extinct genus of stegosaurian dinosaur from the Middle Jurassic (Bathonian age) Shaximiao Formation of Yunyang County, China. The genus contains a single species, Bashanosaurus primitivus, known from incomplete skeletons belonging to three individuals. It is one of the basalmost stegosaurs, as well as one of the oldest known stegosaurs, along with Adratiklit, Isaberrysaura, and Thyreosaurus.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "455658"
+      - source: wikidata
+        id: Q111086072
+      - source: gbif
+        id: "11684289"
+    species:
+      - name: Bashanosaurus primitivus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Middle Jurassic
+          stage:
+            - Bathonian
+            - Callovian
+        location:
+          country: CN
+          region: Chongqing
+          formation: Shaximiao
+          coordinates:
+            - 30.941999
+            - 108.750999
+        holotype:
+          specimen_id: CLGPR V00006-1
+          institution: Chongqing Laboratory of Geoheritage Protection and Research, Chongqing Municipality, China
+        described: 2022
+        authors: Hui et al.
+        described_in: hui2021
+    references:
+      - id: hui2021
+        authors: Hui, Dai; Ning, Li; Maidment, Susannah C. R.; Guangbiao, Wei; Yuxuan, Zhou; Xufeng, Hu; Qingyu, Ma; Xunqian, Wang; Haiqian, Hu; Guangzhao, Peng
+        year: 2021
+        title: New stegosaurs from the Middle Jurassic Lower Member of the Shaximiao Formation of Chongqing, China
+        journal: Journal of Vertebrate Paleontology
+        volume: "41"
+        issue: "5"
+        publisher: Informa UK Limited
+        doi: 10.1080/02724634.2021.1995737
+        url: http://dx.doi.org/10.1080/02724634.2021.1995737
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Thyreophora
+      - Stegosauria
+  Batyrosaurus:
+    genus: Batyrosaurus
+    parent: Hadrosauroidea
+    description: Batyrosaurus is an extinct genus of herbivorous basal hadrosauroid dinosaur known from the Late Cretaceous Bostobe Formation (Santonian to Campanian stage) of central Kazakhstan. It contains a single species, Batyrosaurus rozhdestvenskyi. It is possible that Batyrosaurus represents the same taxon as the doubtful Arstanosaurus akkurganensis as both were found from the same formation.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "245643"
+      - source: wikidata
+        id: Q3278364
+      - source: gbif
+        id: "8633101"
+      - source: eol
+        id: "47460195"
+    species:
+      - name: Batyrosaurus rozhdestvenskyi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+        location:
+          country: KZ
+          region: Qyzylorda
+          formation: Bostobe
+          coordinates:
+            - 46.762547
+            - 64.328972
+        holotype:
+          specimen_id: AEHM 4/1
+          institution: Amur Natural History Museum of the Institute of Geology and Nature Management, Russian Academy of Sciences, Blagoveshchensk
+        described: 2012
+        authors: Godefroit et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Dryomorpha
+      - Styracosterna
+      - Hadrosauriformes
+      - Hadrosauroidea
+  Baurutitan:
+    genus: Baurutitan
+    parent: Aeolosaurini
+    etymology: The name Baurutitan comes from the junction of the word "bauru", which alludes to the geographical region of the finding, within the Bauru Group, and the word "titan" of Greek myths. The specific name "britoi" is given in honor of Ignácio Aureliano Machado Brito, a Brazilian paleontologist who advised the study and description of this dinosaur, whose fossils have remained stored for many years.
+    description: Baurutitan is a genus of sauropod dinosaur that lived during the Late Cretaceous in what is now Brazil. The type species, Baurutitan britoi, was described in 2005 by Kellner and colleagues, although the fossil remains had already been discovered in 1957. Baurutitan is classified as a lithostrotian titanosaur, and is distinguished from related genera based on its distinctive caudal vertebrae. This South American dinosaur was found in the Serra da Galga Formation near Uberaba, in the Brazilian state of Minas Gerais.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "85462"
+      - source: wikidata
+        id: Q134648
+      - source: gbif
+        id: "4967341"
+      - source: eol
+        id: "4531321"
+    species:
+      - name: Baurutitan britoi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: BR
+          region: Minas Gerais
+          formation: Serra da Galga
+          coordinates:
+            - -19.720278
+            - -47.738335
+        holotype:
+          specimen_id: MCT 1490-R
+          institution: Collection of the Earth Science Museum of the National Department of Mineral Production, Rio de Janeiro
+        described: 2005
+        authors: Kellner et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
+      - Titanosauria
+      - Lithostrotia
+      - Aeolosaurini
+  Bayannurosaurus:
+    genus: Bayannurosaurus
+    parent: Ankylopollexia
+    description: Bayannurosaurus is a non-hadrosauriform ankylopollexian ornithopod described in 2018 by Xu Xing. It lived during the early Aptian period, being found in the Bayin-Gobi Formation of China. The genus includes the type species Bayannurosaurus perfectus. A phylogenetic analysis of Bayannurosaurus indicates that it is more derived than Hypselospinus, yet less derived than Ouranosaurus and just outside of the Hadrosauriformes. It was a large iguanodontian, measuring up to 9 metres (30 ft) in total body length. The genus name Bayannurosaurus comes from Bayannur, the area where it was found, while the species name perfectus comes from the "perfect" preservation of the holotype specimen (IMMNH PV00001).
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "378706"
+      - source: wikidata
+        id: Q51879459
+      - source: gbif
+        id: "11171194"
+    species:
+      - name: Bayannurosaurus perfectus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+        location:
+          country: CN
+          region: Nei Monggol
+          formation: Bayingebi
+          coordinates:
+            - 41.168751
+            - 107.235397
+        holotype:
+          specimen_id: IMMNH PV00001
+          institution: Inner Mongolia Museum, Hohhot, Inner Mongolia, China
+        described: 2018
+        authors: Xu et al.
+        described_in: xu2018
+    references:
+      - id: xu2018
+        authors: Xu, Xing; Tan, Qingwei; Gao, Yilong; Bao, Zhiqiang; Yin, Zhigang; Guo, Bin; Wang, Junyou; Tan, Lin; Zhang, Yuguang; Xing, Hai
+        year: 2018
+        title: A large-sized basal ankylopollexian from East Asia, shedding light on early biogeographic history of Iguanodontia
+        journal: Science Bulletin
+        volume: "63"
+        issue: "9"
+        pages: 556-563
+        publisher: Elsevier BV
+        doi: 10.1016/j.scib.2018.03.016
+        url: http://dx.doi.org/10.1016/j.scib.2018.03.016
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Cerapoda
+      - Ornithopoda
+      - Ankylopollexia
+  Beg:
+    genus: Beg
+    parent: Neoceratopsia
+    description: Beg is a genus of neoceratopsian dinosaur from the Late Cretaceous Ulaanoosh Formation of Mongolia. The type and only species is Beg tse, described in 2020.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "426795"
+      - source: wikidata
+        id: Q158617
+      - source: gbif
+        id: "2874710"
+    species:
+      - name: Beg tse
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Cenomanian
+        location:
+          country: MN
+          region: Omnogov
+          formation: Ulaanoosh
+          coordinates:
+            - 44.441666
+            - 105.108612
+        described: 2020
+        authors: Yu et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Marginocephalia
+      - Ceratopsia
+      - Neoceratopsia
+  Beibeilong:
+    genus: Beibeilong
+    parent: Caenagnathidae
+    description: Beibeilong is a genus of large caenagnathid dinosaurs that lived in China during the Late Cretaceous epoch, about 96 million to 88 million years ago. The genus contains a single species, Beibeilong sinensis. The species was named and described in 2017 through analysis of an embryonic skeleton (nicknamed Baby Louie) and partial nest with large eggs that were discovered in the Gaogou Formation of China (Henan Province) between 1992 and 1993.
+    diet: omnivore
+    identifiers:
+      - source: pbdb
+        id: "372793"
+      - source: wikidata
+        id: Q29877274
+    species:
+      - name: Beibeilong sinensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Turonian
+        location:
+          country: CN
+          region: Henan
+          formation: Gaogou
+          coordinates:
+            - 33.258331
+            - 111.728058
+        holotype:
+          specimen_id: HGM 41HIII1219
+          institution: Henan Geological Museum, Zhengzhou, Henan
+        described: 2017
+        authors: Pu et al.
+        described_in: pu2017
+    references:
+      - id: pu2017
+        authors: Pu, Hanyong; Zelenitsky, Darla K.; Lü, Junchang; Currie, Philip J.; Carpenter, Kenneth; Xu, Li; Koppelhus, Eva B.; Jia, Songhai; Xiao, Le; Chuang, Huali; Li, Tianran; Kundrát, Martin; Shen, Caizhi
+        year: 2017
+        title: Perinate and eggs of a giant caenagnathid dinosaur from the Late Cretaceous of central China
+        journal: Nature Communications
+        volume: "8"
+        issue: "1"
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/ncomms14952
+        url: http://dx.doi.org/10.1038/ncomms14952
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Oviraptorosauria
+      - Caenagnathidae
+  Beipiaognathus:
+    genus: Beipiaognathus
+    parent: Compsognathidae
+    description: Beipiaognathus is a dubious genus of coelurosaurian theropod from the Early Cretaceous Yixian Formation of Liaoning, China. The type species is Beipiaognathus jii and it was named and described by Hu et al. in 2016.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "446220"
+      - source: wikidata
+        id: Q26722479
+    species:
+      - name: Beipiaognathus jii
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+        location:
+          country: CN
+          region: Liaoning
+          formation: Yixian
+          coordinates:
+            - 41.711109
+            - 120.713608
+        described: 2016
+        authors: Hu et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Compsognathidae
+  Beipiaosaurus:
+    genus: Beipiaosaurus
+    parent: Therizinosauroidea
+    pronunciation:
+      ipa: /ˌbeɪpjaʊˈsɔːrəs/
+    description: Beipiaosaurus is a genus of therizinosauroid theropod dinosaurs that lived in China during the Early Cretaceous in the Yixian Formation. The first remains were found in 1996 and formally described in 1999. Before the discovery of Yutyrannus, Beipiaosaurus were among the heaviest dinosaurs known from direct evidence to be feathered. Beipiaosaurus is known from three reported specimens. Numerous impressions of feather structures were preserved that allowed researchers to determine the feathering color which turned out to be brownish.
+    diet: herbivore
+    appearance:
+      integument: feathered
+    identifiers:
+      - source: pbdb
+        id: "68240"
+      - source: wikidata
+        id: Q131225
+      - source: gbif
+        id: "4819236"
+      - source: eol
+        id: "47458783"
+    species:
+      - name: Beipiaosaurus inexpectus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+        location:
+          country: CN
+          region: Liaoning
+          formation: Yixian
+          coordinates:
+            - 40.807522
+            - 119.7957
+        holotype:
+          specimen_id: IVPP 11559
+          institution: Institute of Vertebrate Paleontology and Paleoanthropology, Beijing
+        size:
+          length_m: 2
+          estimate: true
+        described: 1999
+        authors: Xu et al.
+        described_in: xu1999
+    references:
+      - id: xu1999
+        authors: Xu, Xing; Tang, Zhi-lu; Wang, Xiao-lin
+        year: 1999
+        title: A therizinosauroid dinosaur with integumentary structures from China
+        journal: Nature
+        volume: "399"
+        issue: "6734"
+        pages: 350-354
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/20670
+        url: http://dx.doi.org/10.1038/20670
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptoriformes
+      - Therizinosauria
+      - Therizinosauroidea
+  Beishanlong:
+    genus: Beishanlong
+    parent: Ornithomimosauria
+    description: Beishanlong is a genus of giant ornithomimosaurian theropod dinosaur from the Early Cretaceous of China. It is the second-largest ornithomimosaur discovered, only surpassed by the related Deinocheirus.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "146117"
+      - source: wikidata
+        id: Q18578494
+      - source: gbif
+        id: "4966256"
+    species:
+      - name: Beishanlong grandis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+        location:
+          country: CN
+          region: Gansu
+          formation: Xiagou
+          coordinates:
+            - 40.478401
+            - 98.111702
+        holotype:
+          specimen_id: FRDC-GS GJ (06) 01-18
+          institution: Fossil Research and Development Center, Third Geology and Mineral Resources Exploration Academy, Gansu Provincial Bureau of Geo-Exploration and Mineral Development, Lanzhou, China
+        described: 2010
+        authors: Makovicky et al.
+        described_in: makovicky2009
+    references:
+      - id: makovicky2009
+        authors: Makovicky, Peter J.; Li, Daqing; Gao, Ke-Qin; Lewin, Matthew; Erickson, Gregory M.; Norell, Mark A.
+        year: 2009
+        title: A giant ornithomimosaur from the Early Cretaceous of China
+        journal: "Proceedings of the Royal Society B: Biological Sciences"
+        volume: "277"
+        issue: "1679"
+        pages: 191-198
+        publisher: The Royal Society
+        doi: 10.1098/rspb.2009.0236
+        url: http://dx.doi.org/10.1098/rspb.2009.0236
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Tetanurae
+      - Avetheropoda
+      - Coelurosauria
+      - Ornithomimosauria
+  Bellusaurus:
+    genus: Bellusaurus
+    parent: Mamenchisauridae
+    etymology: Beautiful lizard
+    description: Bellusaurus was a sauropod dinosaur from the Late Jurassic (Oxfordian) known from juvenile specimens that would have measured about 4.8 metres (16 ft) long. Its fossils were found in Shishugou Formation rocks in the northeastern Junggar Basin in China.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "54863"
+      - source: wikidata
+        id: Q29057471
+      - source: eol
+        id: "52571702"
+    species:
+      - name: Bellusaurus sui
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Oxfordian
+        location:
+          country: CN
+          region: Xinjiang
+          formation: Shishugou
+          coordinates:
+            - 44.876457
+            - 89.183075
+        holotype:
+          specimen_id: IVPP V8299
+          institution: Institute of Vertebrate Paleontology and Paleoanthropology, Beijing
+        size:
+          length_m: 5
+          estimate: true
+        described: 1990
+        authors: Dong
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Mamenchisauridae
+  Berberosaurus:
+    genus: Berberosaurus
+    parent: Ceratosauridae
+    etymology: Berber lizard
+    description: Berberosaurus is a genus of neotheropod dinosaur, possibly a ceratosaur, from the Toarcian-age (Lower Jurassic) "Toundoute Continental Series" (Azilal Formation) found in the Central High Atlas of Toundoute, Ouarzazate, Morocco. The type species of the genus Berberosaurus is B. liassicus, in reference to the Lias epoch. Berberosaurus might be the oldest known ceratosaur, and is based on partial postcranial remains. This genus represents the oldest formally identified theropod from the North of Africa, as well one of the few from the region in the Early Jurassic.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "109007"
+      - source: wikidata
+        id: Q135653
+      - source: gbif
+        id: "4966186"
+    species:
+      - name: Berberosaurus liassicus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Jurassic
+          stage:
+            - Toarcian
+        location:
+          country: MA
+          region: Ouarzazate
+          coordinates:
+            - 31.2647
+            - -6.5908
+        holotype:
+          specimen_id: MHNM-Pt19
+          institution: Muséum d'Histoire Naturelle de Marrakech
+        described: 2007
+        authors: Allain et al.
+        described_in: allain2007
+    references:
+      - id: allain2007
+        authors: Allain, Ronan; Tykoski, Ronald; Aquesbi, Najat; Jalil, Nour-Eddine; Monbaron, Michel; Russell, Dale; Taquet, Philippe
+        year: 2007
+        title: "An abelisauroid (Dinosauria: Theropoda) from the Early Jurassic of the High Atlas Mountains, Morocco, and the radiation of ceratosaurs"
+        journal: Journal of Vertebrate Paleontology
+        volume: "27"
+        issue: "3"
+        pages: 610-624
+        publisher: Informa UK Limited
+        doi: 10.1671/0272-4634(2007)27[610:aadtft]2.0.co;2
+        url: http://dx.doi.org/10.1671/0272-4634(2007)27[610:aadtft]2.0.co;2
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Ceratosauria
+      - Ceratosauridae
+  Berthasaura:
+    genus: Berthasaura
+    parent: Noasauridae
+    etymology: Bertha's lizard
+    description: Berthasaura is an extinct genus of ceratosaurian theropod dinosaurs from the Early Cretaceous Goio-Erê Formation of Paraná, Brazil. The genus contains a single species, Berthasaura leopoldinae, known from a nearly complete skeleton.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "444933"
+      - source: wikidata
+        id: Q109626219
+      - source: gbif
+        id: "11871360"
+      - source: eol
+        id: "61172111"
+      - source: zoobank
+        id: BEEE1CD5-4F70-481C-AEE3-5C28A01FC5E5
+    species:
+      - name: Berthasaura leopoldinae
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+            - Late Cretaceous
+          stage:
+            - Aptian
+            - Campanian
+        location:
+          country: BR
+          region: Paraná
+          formation: Goio-Erê
+          coordinates:
+            - -26.776112
+            - -53.06472
+        described: 2021
+        authors: de Souza et al.
+        described_in: desouza2021
+    references:
+      - id: desouza2021
+        authors: de Souza, Geovane Alves; Soares, Marina Bento; Weinschütz, Luiz Carlos; Wilner, Everton; Lopes, Ricardo Tadeu; de Araújo, Olga Maria Oliveira; Kellner, Alexander Wilhelm Armin
+        year: 2021
+        title: The first edentulous ceratosaur from South America
+        journal: Scientific Reports
+        volume: "11"
+        issue: "1"
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/s41598-021-01312-4
+        url: http://dx.doi.org/10.1038/s41598-021-01312-4
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Ceratosauria
+      - Noasauridae
+  Betasuchus:
+    genus: Betasuchus
+    parent: Ceratosauria
+    description: Betasuchus is a genus of probable abelisaurid theropod dinosaur which lived during the Late Cretaceous Period. Betasuchus is, besides Orthomerus and birds such as Enantiornithines, the only dinosaur genus named from remains found in the Netherlands and the only non-avian theropod found in the Maastrichtian Beds.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "38541"
+      - source: wikidata
+        id: Q311481
+      - source: gbif
+        id: "4822898"
+    species:
+      - name: Betasuchus bredai
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        holotype:
+          specimen_id: BMNH 42997
+          institution: Natural History Museum, London
+        described: 1932
+        authors: Huene
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Ceratosauria
+  Bicentenaria:
+    genus: Bicentenaria
+    parent: Coelurosauria
+    description: Bicentenaria is an extinct genus of carnivorous coelurosaurian theropods which lived during the early Late Cretaceous (Cenomanian) Candeleros Formation of Argentina. It contains the type species, B. argentina.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "244993"
+      - source: wikidata
+        id: Q747009
+      - source: gbif
+        id: "8667985"
+    species:
+      - name: Bicentenaria argentina
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Cenomanian
+        location:
+          country: AR
+          region: Río Negro
+          formation: Candeleros
+          coordinates:
+            - -39.469444
+            - -68.906944
+        described: 2012
+        authors: Novas et al.
+        described_in: novas2012
+    references:
+      - id: novas2012
+        authors: Novas, Fernando; Ezcurra, Martín; Agnolin, Federico; Pol, Diego; Ortiz, Raúl
+        year: 2012
+        title: New Patagonian Cretaceous theropod sheds light about the early radiation of Coelurosauria
+        journal: Revista del Museo Argentino de Ciencias Naturales
+        volume: "14"
+        pages: 57-81
+        publisher: Museo Argentino de Ciencia Naturales
+        doi: 10.22179/revmacn.14.372
+        url: http://dx.doi.org/10.22179/revmacn.14.372
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Tetanurae
+      - Avetheropoda
+      - Coelurosauria
+  Bissektipelta:
+    genus: Bissektipelta
+    parent: Ankylosauridae
+    etymology: Bissekty shield
+    description: Bissektipelta is a genus of ankylosaurine thyreophoran dinosaurs that lived in Asia during the Late Cretaceous in what is now the Bissekty Formation of Uzbekistan. Bissektipelta is a monospecific genus, containing only the type species B. archibaldi.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "57228"
+      - source: wikidata
+        id: Q138923
+      - source: gbif
+        id: "4823059"
+    species:
+      - name: Bissektipelta archibaldi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Turonian
+        location:
+          country: UZ
+          region: Navoi
+          formation: Bissekty
+          coordinates:
+            - 42.117294
+            - 62.655315
+        holotype:
+          specimen_id: ZIN PH 1/6
+          institution: Zoological Institute, Russian Academy of Sciences, Saint Petersburg
+        described: 2004
+        authors: Parish and Barrett
+        described_in: parish2004
+    references:
+      - id: parish2004
+        authors: Parish, Jolyon C; Barrett, Paul M
+        year: 2004
+        title: A reappraisal of the ornithischian dinosaur <i>Amtosaurus magnus</i> Kurzanov and Tumanova 1978, with comments on the status of <i>A. archibaldi</i> Averianov 2002
+        journal: Canadian Journal of Earth Sciences
+        volume: "41"
+        issue: "3"
+        pages: 299-306
+        publisher: Canadian Science Publishing
+        doi: 10.1139/e03-101
+        url: http://dx.doi.org/10.1139/e03-101
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Thyreophora
+      - Ankylosauria
+      - Ankylosauridae
+  Bistahieversor:
+    genus: Bistahieversor
+    parent: Teratophoneini
+    etymology: Bistahi destroyer
+    description: Bistahieversor, also known as the "Bisti Beast", is a genus of basal eutyrannosaurian theropod dinosaur. The genus contains only a single known species, B. sealeyi, described in 2010, from the Late Cretaceous of New Mexico. The holotype and a juvenile were found in the Hunter Wash Member of the Kirtland Formation, while other specimens came from the underlying Fossil Forest member of the Fruitland Formation. This dates Bistahieversor approximately 75.5 to 74.5 million years ago during the Campanian age, found in sediments spanning a million years.
+    diet: carnivore
+    identifiers:
+      - source: pbdb
+        id: "163807"
+      - source: wikidata
+        id: Q132622
+    species:
+      - name: Bistahieversor sealeyi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+        location:
+          country: US
+          region: New Mexico
+          formation: Fruitland
+          coordinates:
+            - 36.06028
+            - -107.966393
+        holotype:
+          specimen_id: NMMNH P-27469
+          institution: New Mexico Museum of Natural History and Science, Albuquerque
+        described: 2010
+        authors: Carr and Williamson
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Tyrannosauroidea
+      - Tyrannosauridae
+      - Tyrannosaurinae
+      - Teratophoneini
+  Bisticeratops:
+    genus: Bisticeratops
+    parent: Chasmosaurinae
+    etymology: Bisti/De-Na-Zin Wilderness horned face
+    description: Bisticeratops is a genus of chasmosaurine ceratopsian from outcrops of the Campanian age Kirtland Formation found in the Bisti/De-Na-Zin Wilderness in northwestern New Mexico, United States. The type and only species is B. froeseorum, known from a nearly complete skull.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "461645"
+      - source: wikidata
+        id: Q113534609
+    species:
+      - name: Bisticeratops froeseorum
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+        location:
+          country: US
+          region: New Mexico
+          formation: Kirtland
+          coordinates:
+            - 36.3148
+            - -108.084198
+        holotype:
+          specimen_id: NMMNH P-50000
+          institution: New Mexico Museum of Natural History and Science, Albuquerque
+        described: 2022
+        authors: Dalman et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Marginocephalia
+      - Ceratopsia
+      - Ceratopsidae
+      - Chasmosaurinae
+  Blasisaurus:
+    genus: Blasisaurus
+    parent: Arenysaurini
+    description: Blasisaurus is a genus of lambeosaurine hadrosaurid dinosaur from the Late Cretaceous. It is known from a partial skull and skeleton found in late Maastrichtian-age rocks of Spain. The type species is Blasisaurus canudoi, described in 2010 by Penélope Cruzado-Caballero, Xabier Pereda-Suberbiola and José Ignacio Ruiz-Omeñaca, a group of researchers from Spain.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "243257"
+      - source: wikidata
+        id: Q1705531
+      - source: eol
+        id: "19691645"
+    species:
+      - name: Blasisaurus canudoi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: ES
+          region: Aragón
+          formation: Arén
+          coordinates:
+            - 42.26667
+            - 0.73333
+        holotype:
+          specimen_id: MPZ99/667
+          institution: Museo de Ciencias Naturales de la Universidad de Zaragoza, Zaragoza
+        described: 2010
+        authors: Cruzado-Caballero et al.
+        described_in: cruzado-caballero2010
+    references:
+      - id: cruzado-caballero2010
+        authors: Cruzado-Caballero, Penelope; Pereda-Suberbiola, Xabier; Ruiz-Omeñaca, J. Ignacio
+        year: 2010
+        title: <i>Blasisaurus canudoi</i>gen. et sp. nov., a new lambeosaurine dinosaur (Hadrosauridae) from the Latest Cretaceous of Arén (Huesca, Spain)
+        journal: Canadian Journal of Earth Sciences
+        volume: "47"
+        issue: "12"
+        pages: 1507-1517
+        publisher: Canadian Science Publishing
+        doi: 10.1139/e10-081
+        url: http://dx.doi.org/10.1139/e10-081
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Dryomorpha
+      - Styracosterna
+      - Hadrosauriformes
+      - Hadrosauroidea
+      - Hadrosauridae
+      - Lambeosaurinae
+      - Arenysaurini
   Blikanasaurus:
     genus: Blikanasaurus
     parent: Sauropodiformes
