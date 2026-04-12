@@ -599,7 +599,9 @@
 
                 const displayHint = field.optionsKey === "countries"
                     ? countryDisplayName(currentValue)
-                    : currentValue;
+                    : field.optionsKey === "institutions"
+                        ? institutionDisplayName(currentValue)
+                        : currentValue;
 
                 hint.textContent = `Current: ${displayHint}`;
 
@@ -1459,6 +1461,12 @@
                 return Object.values(map).sort();
             }
 
+            case "institutions":
+            {
+                const map = window.OpenPaleo.getSchemaValues("institutions") ?? {};
+                return Object.values(map).sort();
+            }
+
             case "stages":
             {
                 if (field.filteredByPeriod)
@@ -1511,6 +1519,19 @@
             return result;
         }
 
+        if (field.optionsKey === "institutions")
+        {
+            const map = window.OpenPaleo.getSchemaValues("institutions") ?? {};
+            const result = {};
+
+            for (const [abbreviation, name] of Object.entries(map))
+            {
+                result[name] = abbreviation;
+            }
+
+            return result;
+        }
+
         return null;
     }
 
@@ -1524,6 +1545,18 @@
     {
         const map = window.OpenPaleo.getSchemaValues("countries") ?? {};
         return map[code] ?? code;
+    }
+
+    /**
+     * Resolves an institution abbreviation key to its display name.
+     *
+     * @param key - The institution registry key (e.g., "AMNH").
+     * @returns The full institution name, or the key itself if not found.
+     */
+    function institutionDisplayName(key)
+    {
+        const map = window.OpenPaleo.getSchemaValues("institutions") ?? {};
+        return map[key] ?? key;
     }
 
     /**
@@ -1579,7 +1612,9 @@
                 {
                     fieldInput.value = field.optionsKey === "countries"
                         ? countryDisplayName(saved)
-                        : saved;
+                        : field.optionsKey === "institutions"
+                            ? institutionDisplayName(saved)
+                            : saved;
                 }
             }
         }
@@ -2432,6 +2467,10 @@
                 {
                     display = countryDisplayName(fieldValue);
                 }
+                else if (field.optionsKey === "institutions")
+                {
+                    display = institutionDisplayName(fieldValue);
+                }
 
                 let changed = false;
 
@@ -2582,7 +2621,9 @@
             const field = findFieldDefinition(header);
             input.value = field && field.optionsKey === "countries"
                 ? countryDisplayName(value)
-                : value;
+                : field && field.optionsKey === "institutions"
+                    ? institutionDisplayName(value)
+                    : value;
             input.dispatchEvent(new Event("change", { bubbles: true }));
         }
     }

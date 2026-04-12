@@ -4,9 +4,9 @@ import * as url from "node:url";
 
 import { stringify as stringifyYaml } from "yaml";
 
-import { collectAllKeys, findYamlFiles, parseYaml } from "./utilities.ts";
+import { collectAllKeys, findYamlFiles, parseYaml, loadInstitutionRegistry } from "./utilities.ts";
 
-import type { GenusData, CladeData, TreeNode, Reference } from "./types.ts";
+import type { GenusData, CladeData, TreeNode, Reference, InstitutionEntry } from "./types.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
@@ -223,6 +223,45 @@ for (const file of findYamlFiles(path.join(root, "genera")))
     }
 }
 
+// Resolve institution abbreviation keys to display names.
+const institutionRegistry = loadInstitutionRegistry(path.join(root, "institutions.yaml"));
+
+/**
+ * Resolves institution abbreviation keys to display names across all
+ * species holotype blocks. Mutates the genera records in place.
+ *
+ * @param generaMap - The processed genera map.
+ * @param registry - The institution registry keyed by abbreviation.
+ */
+function resolveInstitutionKeys(
+    generaMap: Record<string, ProcessedGenus>,
+    registry: Record<string, InstitutionEntry>,
+): void
+{
+    for (const genus of Object.values(generaMap))
+    {
+        if (!genus.species)
+        {
+            continue;
+        }
+
+        for (const species of genus.species)
+        {
+            if (species.holotype?.institution)
+            {
+                const entry = registry[species.holotype.institution];
+
+                if (entry)
+                {
+                    species.holotype.institution = entry.name;
+                }
+            }
+        }
+    }
+}
+
+resolveInstitutionKeys(genera, institutionRegistry);
+
 const clades: Record<string, ProcessedClade> = {};
 
 for (const file of findYamlFiles(path.join(root, "clades")))
@@ -430,6 +469,16 @@ schemaOutput.countries = sortedCountries;
 
 // Stages as full object (needed for period→stage filtering)
 schemaOutput.stages = schema.stages;
+
+// Institutions as abbreviation→name map (sorted by key)
+const sortedInstitutions: Record<string, string> = {};
+
+for (const key of Object.keys(institutionRegistry).sort())
+{
+    sortedInstitutions[key] = institutionRegistry[key].name;
+}
+
+schemaOutput.institutions = sortedInstitutions;
 
 // Clades from tree
 schemaOutput.clades = collectAllKeys(tree).sort();

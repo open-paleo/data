@@ -2,6 +2,41 @@
 // Property names use snake_case to match the YAML file keys.
 
 /**
+ * An institution entry in the registry, keyed by canonical abbreviation.
+ */
+export type InstitutionEntry = {
+    /**
+     * Full English name of the institution.
+     */
+    name: string;
+
+    /**
+     * Geographic location of the institution.
+     */
+    location?: {
+        /**
+         * ISO 3166-1 alpha-2 country code.
+         */
+        country?: string;
+
+        /**
+         * City where the institution is located.
+         */
+        city?: string;
+
+        /**
+         * Campus or building, when disambiguation is needed.
+         */
+        campus?: string;
+    };
+
+    /**
+     * Alternative abbreviation codes that resolve to this canonical key.
+     */
+    aliases?: Array<string>;
+};
+
+/**
  * Type-specimen information for a species. The block is named `holotype`
  * for historical reasons but also holds syntype, lectotype, and neotype
  * series — see `specimen_type`.

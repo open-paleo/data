@@ -34,6 +34,7 @@ import * as path from "node:path";
 import * as url from "node:url";
 import { parse as parseYamlContent } from "yaml";
 
+import { loadInstitutionRegistry, flattenInstitutionMap } from "./utilities.ts";
 import type { GenusData, Species } from "./types.ts";
 
 type CladeConfig = {
@@ -267,10 +268,10 @@ function parseTable(wikitext: string): Array<WikiEntry>
  *
  * @returns Map of acronym to canonical institution name.
  */
-function loadInstitutionRegistry(): Record<string, string>
+function loadInstitutionMap(): Record<string, string>
 {
-    const raw = parseYamlContent(fs.readFileSync(institutionsPath, "utf8")) as Array<Record<string, string>>;
-    return Object.assign({}, ...raw);
+    const registry = loadInstitutionRegistry(institutionsPath);
+    return flattenInstitutionMap(registry);
 }
 
 /**
@@ -718,7 +719,7 @@ const wikitext = await loadWikitext();
 const entries = parseTable(wikitext);
 console.log(`Parsed ${entries.length} wikitable entries`);
 
-const registry = loadInstitutionRegistry();
+const registry = loadInstitutionMap();
 console.log(`Loaded ${Object.keys(registry).length} institution abbreviations`);
 
 const generaFiles = listYamlFiles(generaDir);

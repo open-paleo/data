@@ -19,7 +19,7 @@ import * as path from "node:path";
 import * as url from "node:url";
 import { stringify as stringifyYaml } from "yaml";
 import type { GenusData, CladeData, Schema, TreeNode, StageInfo } from "./types.ts";
-import { parseYaml, findYamlFiles, collectAllKeys } from "./utilities.ts";
+import { parseYaml, findYamlFiles, collectAllKeys, loadInstitutionRegistry, flattenInstitutionMap } from "./utilities.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
@@ -33,10 +33,8 @@ const wikipediaApiBase = "https://en.wikipedia.org/w/api.php";
 const batchSize = 5;
 const batchDelayMs = 1000;
 
-const institutionsList = parseYaml<Array<Record<string, string>>>(
-    path.join(root, "institutions.yaml"),
-);
-const museumNames: Record<string, string> = Object.assign({}, ...institutionsList);
+const institutionRegistry = loadInstitutionRegistry(path.join(root, "institutions.yaml"));
+const museumNames: Record<string, string> = flattenInstitutionMap(institutionRegistry);
 
 type IntakeIssue = {
     number: number;

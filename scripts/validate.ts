@@ -172,6 +172,11 @@ const allowedCountries = new Set(Object.keys(schema.countries ?? {}));
 const allowedPeriods = new Set(schema.periods ?? []);
 const stages: Record<string, StageInfo> = schema.stages ?? {};
 
+const institutionRegistry = parseYamlContent(
+    fs.readFileSync(path.join(root, "institutions.yaml"), "utf8"),
+) as Record<string, unknown>;
+const allowedInstitutionKeys = new Set(Object.keys(institutionRegistry));
+
 const genusFiles = findYamlFiles(path.join(root, "genera"));
 const genusParsed = new Map<string, GenusData>();
 
@@ -965,6 +970,13 @@ for (const [filePath, doc] of genusParsed)
                 "Holotype consistency",
                 filePath,
                 `species '${speciesLabel}': holotype present but missing 'institution'`);
+        }
+        else if (holotype.institution && !allowedInstitutionKeys.has(holotype.institution))
+        {
+            checkError(
+                "Holotype consistency",
+                filePath,
+                `species '${speciesLabel}': institution '${holotype.institution}' is not a valid key in institutions.yaml`);
         }
 
         if (holotype.specimen_type === undefined)
