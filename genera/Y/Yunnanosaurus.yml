@@ -19,29 +19,27 @@ identifiers:
   - source: gbif
     id: "4817967"
 species:
-  - name: Yunnanosaurus youngi
+  - name: Yunnanosaurus huangi
     status: valid
     type_species: true
     period:
       name:
         - Early Jurassic
       stage:
-        - Pliensbachian
-      from_ma: 190.8
-      to_ma: 184.2
+        - Hettangian
+        - Sinemurian
+      from_ma: 201.3
+      to_ma: 192.9
     location:
       country: CN
       region: Yunnan
       formation: Lufeng
       coordinates:
-        - 25.947222
-        - 101.90889
-    holotype:
-      specimen_id: [CXMVZA 185]
-      specimen_type: holotype
-      institution: CPM
-    size:
-      length_m: 7
-      estimate: true
+        - 25.178595
+        - 102.076118
     described: 1940
     authors: Young
+    holotype:
+      specimen_id: [IVPP V20]
+      specimen_type: holotype
+      institution: IVPP

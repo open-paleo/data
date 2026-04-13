@@ -21,41 +21,27 @@ identifiers:
   - source: zoobank
     id: D064BEDB-8F00-4600-85D3-D5F653629500
 species:
-  - name: Pachyrhinosaurus perotorum
+  - name: Pachyrhinosaurus canadensis
     status: valid
     type_species: true
     period:
       name:
         - Late Cretaceous
       stage:
+        - Campanian
         - Maastrichtian
       from_ma: 72.1
       to_ma: 66
     location:
       country: CA
       region: Alberta
-      formation: Wapiti
+      formation: St. Mary River
       coordinates:
-        - 69.832222
-        - -151.51944
-    holotype:
-      specimen_id: [DMNH 21200]
-      specimen_type: holotype
-      institution: PMNS
-    size:
-      length_m: 8
-      weight_kg: 3500
-      estimate: true
+        - 49.916836
+        - -112.991043
     described: 1950
     authors: Sternberg
-    described_in: sternberg1950
-references:
-  - id: sternberg1950
-    authors: Sternberg, C M
-    year: 1950
-    title: Pachyrhinosaurus canadensis, representing a new family of the Ceratopsia,
-      from southern Alberta
-    book: Geological Survey of Canada Paper
-    publisher: Natural Resources Canada/CMSS/Information Management
-    doi: 10.4095/105057
-    url: http://dx.doi.org/10.4095/105057
+    holotype:
+      specimen_id: [NMC 8867]
+      specimen_type: holotype
+      institution: CMN
