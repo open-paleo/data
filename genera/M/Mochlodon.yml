@@ -14,14 +14,17 @@ identifiers:
   - source: gbif
     id: "4821989"
 species:
-  - name: Mochlodon priscus
+  - name: Mochlodon suessi
     status: valid
     type_species: true
     period:
       name:
         - Late Cretaceous
       stage:
+        - Campanian
         - Maastrichtian
+      from_ma: 83.6
+      to_ma: 66
     location:
       country: AT
       region: Niederosterreich
@@ -29,24 +32,9 @@ species:
       coordinates:
         - 47.82
         - 16.24
-    described: 1881
-    authors: Seeley
-    described_in: seeley1881
+    described: 1871
+    authors: Bunzel
     holotype:
       specimen_id: [PIUW 2349]
       specimen_type: lectotype
       institution: PIUW
-      material: Dentary; the full type specimen PIUW 2349 also includes vertebrae (presently lost), parietal, scapula, ulna, manual ungual, femur, and tibia
-references:
-  - id: seeley1881
-    authors: Seeley, H. G.
-    year: 1881
-    title: The Reptile Fauna of the Gosau Formation preserved in the Geological
-      Museum of the University of Vienna
-    journal: Quarterly Journal of the Geological Society of London
-    volume: "37"
-    issue: 1-4
-    pages: 620-706
-    publisher: Geological Society of London
-    doi: 10.1144/gsl.jgs.1881.037.01-04.49
-    url: http://dx.doi.org/10.1144/gsl.jgs.1881.037.01-04.49

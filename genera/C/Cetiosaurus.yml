@@ -16,16 +16,17 @@ identifiers:
   - source: gbif
     id: "4822733"
 species:
-  - name: Cetiosaurus philippsii
+  - name: Cetiosaurus oxoniensis
     status: valid
     type_species: true
     period:
       name:
         - Middle Jurassic
-        - Early Cretaceous
       stage:
         - Bajocian
-        - Barremian
+        - Bathonian
+      from_ma: 170.3
+      to_ma: 166.1
     location:
       country: GB
       region: England
@@ -33,12 +34,9 @@ species:
       coordinates:
         - 52.633331
         - -0.666667
+    described: 1871
+    authors: Phillips
     holotype:
       specimen_id: [OUMNH J13605]
-      specimen_type: holotype
+      specimen_type: lectotype
       institution: OUM
-    size:
-      length_m: 18
-      estimate: true
-    described: 1841
-    authors: Owen

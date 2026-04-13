@@ -4,37 +4,9 @@ Verified 1286 genera against PBDB `rid` (describing reference) heuristic.
 A species sharing the genus's `rid` was described in the same paper as the
 genus — the standard indicator of a type species.
 
-- **Confirmed correct: 1141**
-- **Mismatches: 18** (our type species differs from PBDB)
 - **Ambiguous: 17** (multiple or no rid matches — need manual check)
 - **No valid species in PBDB: 6**
 - **Genus not in PBDB: 104** (cannot verify automatically)
-
----
-
-## Mismatches (18)
-
-| Genus | Ours | PBDB suggests | Notes |
-|-------|------|---------------|-------|
-| Archaeopteryx | *A. albersdoerferi* | *A. lithographica* | Change to A. lithographica; In 2011, BMNH 37001 was designated the **neotype** for A. lithographica |
-| Camptosaurus | *C. aphanoecetes* | *C. dispar* | Change to C. dispar; **Existing data for C. aphanoecetes should be used for C. dispar instead** |
-| Eucnemesaurus | *E. entaxonis* | *E. fortis* | Change to E. fortis; Holotype is TrM 119; However, we should flag this genus as disputed because it is "usually" regarded a synonym for Euskelosaurus. |
-| Gastonia | *G. lorriemcwhinneyae* | *G. burgei* | Change to G. burgei (Kirkland 1998, holotype CEUM 1307) |
-| Gryposaurus | *G. monumentensis* | *G. notabilis* | Change to G. notabilis; Holotype NMC 2278 |
-| Lufengosaurus | *L. magnus* | *L. huenei* | Change to L. huenei; Holotype IVPP V15 |
-| Mamenchisaurus | *M. hochuanensis* | *M. constructus* | Change to M constructus; Holotype IVPP V. 790; |
-| Microraptor | *M. gui* | *M. zhaoianus* | Change to M. zhaoianus; Holotype IVPP V 12330; |
-| Miragaia | *M. longispinus* | *M. longicollum* | Change to M. longicollum; Holotype ML 433; |
-| Nothronychus | *N. graffami* | *N. mckinleyi* | Change to N. mckinleyi; Holotype MSM P2106; |
-| Omeisaurus | *O. luoquanensis* | *O. junghsiensis* | Change to O. junghsiensis; The holotype was never assigned a specimen ID and was lost during WW2 |
-| Pachyrhinosaurus | *P. perotorum* | *P. canadensis* | Change to P. canadensis; Holotype NMC 8867; |
-| Panoplosaurus | *P. rugosidens* | *P. mirus* | Change to P. mirus; Holotype CMN 2759; |
-| Richardoestesia | *Asiamericana asiatica* | *R. gilmorei* | Change to R. gilmorei; Holotype NMC 343; |
-| Scolosaurus | *S. thronus* | *S. cutleri* | Change to S. cutleri; Holotype NHMUK PV R.5161 |
-| Shri | *S. rapax* | *S. devi* | Change to S. devi; Holotype IGM 100/980; |
-| Sinraptor | *S. hepingensis* | *S. dongi* | Change to S. dongi; Holotype IVPP 10600; |
-| Stegosaurus | *S. stenops* | *S. armatus* | Keep |
-| Yunnanosaurus | *Y. youngi* | *Y. huangi* | Change to Y. huangi; Holotype IVPP V20; |
 
 ---
 
@@ -45,39 +17,23 @@ matched the rid at all. The rid heuristic is inconclusive here.
 
 | Genus | Ours | Valid species in PBDB | Reason | Notes |
 |-------|------|---------------------|--------|-------|
-| Agujaceratops | *A. mavericus* | *A. mavericus*, *A. mariscalensis* | no rid match | |
-| Archaeornithomimus | *A. bissektensis* | *A. asiaticus*, *A. bissektensis* | no rid match | |
-| Camptosaurus | *C. aphanoecetes* | *C. dispar*, *C. aphanoecetes* | no rid match | Also in mismatches above via #1853 |
-| Carcharodontosaurus | *C. saharicus* | *C. saharicus*, *C. iguidensis* | no rid match | |
-| Cetiosaurus | *C. philippsii* | *C. philippsii*, *C. oxoniensis* | no rid match | |
-| Chasmosaurus | *C. belli* | *C. russelli*, *C. belli* | no rid match | |
-| Dicraeosaurus | *D. hansemanni* | *D. hansemanni*, *D. sattleri* | ambiguous rid | Both species share genus rid |
-| Dryosaurus | *D. altus* | *D. elderae*, *D. altus* | no rid match | |
-| Galeamopus | *G. hayi* | *G. hayi*, *G. pabsti* | no rid match | |
-| Haplocanthosaurus | *H. priscus* | *H. priscus*, *H. delfsi* | no rid match | |
-| Iguanodon | *I. bernissartensis* | *I. bernissartensis*, *I. major*, *I. galvensis* | no rid match | |
-| Megalosaurus | *M. bucklandii* | *M. tibetensis*, *M. bucklandii*, *M. dapukaensis* | no rid match | |
-| Mochlodon | *M. priscus* | *M. priscus*, *M. vorosi* | no rid match | |
-| Ornithomimus | *O. minutus* | *O. minutus*, *O. velox*, *O. tenuis*, *O. edmontonicus* | ambiguous rid | *O. velox* and *O. tenuis* share genus rid |
-| Polacanthus | *P. rudgwickensis* | *P. rudgwickensis*, *P. foxii* | no rid match | |
-| Sphaerotholus | *S. buchholtzae* | *S. edmontonensis*, *S. triregnum*, *S. buchholtzae*, *S. lyonsi*, *S. goodwini* | ambiguous rid | *S. buchholtzae* and *S. goodwini* share genus rid; previously flagged in #1853 |
-| Struthiosaurus | *S. austriacus* | *S. languedocensis*, *S. austriacus*, *S. transylvanicus* | no rid match | |
-
----
-
-## No Valid Species in PBDB (6)
-
-These genera exist in PBDB but have no valid species entries (all may be
-nomen dubium or not yet entered).
-
-| Genus | Ours | PBDB notes |
-|-------|------|------------|
-| Altispinax | *A. dunkeri* | Huene 1923; no species entered |
-| Hanssuesia | *Troodon sternbergi* | Sullivan 2003; species name uses wrong genus |
-| Minotaurasaurus | *M. ramachandrani* | Miles and Miles 2009; no species entered |
-| Qianzhousaurus | *Q. sinensis* | Lü et al. 2014; no species entered |
-| Tienshanosaurus | *T. chitaiensis* | Young 1937; species listed as nomen dubium |
-| Zigongosaurus | *Z. fuxiensis* | Hou et al. 1976; no species entered |
+| Agujaceratops | *A. mavericus* | *A. mavericus*, *A. mariscalensis* | no rid match | Initially ascribed to Chasmosaurus, but assigned A. mariscalensis as the type species for Agujaceratops, with holotype specimen UTEP P.37.7.086. |
+| Archaeornithomimus | *A. bissektensis* | *A. asiaticus*, *A. bissektensis* | no rid match | A. asiaticus has been assigned the type species with holotype specimen AMNH 6565, assigned as a lectotype after the initial description by Russel, 1972. The existing A. bissektensis has since been moved to its own genus. |
+| Camptosaurus | *C. aphanoecetes* | *C. dispar*, *C. aphanoecetes* | no rid match | The species C. dispar is widely considered the type speices for Camptosaurus, with holotype YPM 1877. The genus has received many other species, but most have since been moved to different genera. |
+| Carcharodontosaurus | *C. saharicus* | *C. saharicus*, *C. iguidensis* | no rid match | C. saharicus is generally considered the type species; However, the initial material it was based on was lost during WW2. In 2016, a neotype (SGM-Din 1) was officially proposed. However, it is unclear if SGM-Din 1 has officially been ruled a neotype by ICZN. Ruling: Keep C. saharicus, but update holotype specimen to SGM-Din 1, and flag its status as unknown |
+| Cetiosaurus | *C. philippsii* | *C. philippsii*, *C. oxoniensis* | no rid match | In 2014, C. oxoniensis was recognized by ICZN to be the type species for Cetiosaurus. No form holotype specimen was ever assigned, and as such as part of the petition the lectotype OUMMNH J13605–13613, J13615–16, J13619-J13688, J13899 was chosen to represent C. oxoniensis. |
+| Chasmosaurus | *C. belli* | *C. russelli*, *C. belli* | no rid match | Has a somewhat convulated naming history for the genus, but C. belli, based on specimen NMC 491, is the correct type species. |
+| Dicraeosaurus | *D. hansemanni* | *D. hansemanni*, *D. sattleri* | ambiguous rid | Specimen "M" vs. specimen "m"; Ruling: Keep D. hansemanni. |
+| Dryosaurus | *D. altus* | *D. elderae*, *D. altus* | no rid match | D. altus is the correct combonatio novus (previously Laosaurus altus), based on holotype YPM 1876. |
+| Galeamopus | *G. hayi* | *G. hayi*, *G. pabsti* | no rid match | Keep; Our entry is correct. |
+| Haplocanthosaurus | *H. priscus* | *H. priscus*, *H. delfsi* | no rid match | H. priscus is the correct type species; It is a conserved name. |
+| Iguanodon | *I. bernissartensis* | *I. bernissartensis*, *I. major*, *I. galvensis* | no rid match | Keep; Our entry is correct. |
+| Megalosaurus | *M. bucklandii* | *M. tibetensis*, *M. bucklandii*, *M. dapukaensis* | no rid match | Keep; Our entry is correct. |
+| Mochlodon | *M. priscus* | *M. priscus*, *M. vorosi* | no rid match | Problematic genus; Initially considered an Iguanadon, recently I. suessi (PIUW 2349) is now generally been considered the type speices for Mochlodon (with M. suessi being the combinatio novem). |
+| Ornithomimus | *O. minutus* | *O. minutus*, *O. velox*, *O. tenuis*, *O. edmontonicus* | ambiguous rid | O. velox is generally considered the be the only valid species for Ornithomimus, based on syntype YPM 542 and YPM 548. |
+| Polacanthus | *P. rudgwickensis* | *P. rudgwickensis*, *P. foxii* | no rid match | The only remaining species, P. foxii, is considered the type species for Polacanthus. |
+| Sphaerotholus | *S. buchholtzae* | *S. edmontonensis*, *S. triregnum*, *S. buchholtzae*, *S. lyonsi*, *S. goodwini* | ambiguous rid | S. goodwini is the correc type species, with holotype specimen NMMNH P-27403. |
+| Struthiosaurus | *S. austriacus* | *S. languedocensis*, *S. austriacus*, *S. transylvanicus* | no rid match | Ours is correct. |
 
 ---
 

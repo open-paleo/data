@@ -24,7 +24,7 @@ identifiers:
   - source: zoobank
     id: 2095931F-DD54-480D-9B77-70F785F52DB6
 species:
-  - name: Ornithomimus minutus
+  - name: Ornithomimus velox
     status: valid
     type_species: true
     period:
@@ -36,30 +36,14 @@ species:
       to_ma: 66
     location:
       country: US
-      region: Wyoming
-      formation: Lance
+      region: Colorado
+      formation: Denver
       coordinates:
-        - 43.139767
-        - -104.577103
-    holotype:
-      specimen_id: [G.S.C. Cat. No. 8632]
-      specimen_type: holotype
-      institution: CMN
-    size:
-      length_m: 4
-      estimate: true
+        - 39.675598
+        - -105.098801
     described: 1890
     authors: Marsh
-    described_in: marsh1890
-references:
-  - id: marsh1890
-    authors: Marsh, O. C.
-    year: 1890
-    title: Description of new dinosaurian reptiles
-    journal: American Journal of Science
-    volume: s3-39
-    issue: "229"
-    pages: 81-86
-    publisher: American Journal of Science (AJS)
-    doi: 10.2475/ajs.s3-39.229.81
-    url: http://dx.doi.org/10.2475/ajs.s3-39.229.81
+    holotype:
+      specimen_id: [YPM 542, YPM 548]
+      specimen_type: syntype
+      institution: YPM
