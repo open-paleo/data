@@ -38,9 +38,12 @@ species:
         - 49.120899
         - -110.862686
     size:
-      length_m: 6
-      weight_kg: 1
-      estimate: true
+      length_m:
+        min: 6.0
+        max: 6.0
+      weight_kg:
+        min: 1500
+        max: 1500
     described: 2015
     authors: Evans and Ryan
     described_in: evans2015

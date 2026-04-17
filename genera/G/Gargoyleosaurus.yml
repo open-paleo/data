@@ -41,8 +41,12 @@ species:
         - 41.967098
         - -106.291
     size:
-      length_m: 4
-      estimate: true
+      length_m:
+        min: 3.0
+        max: 3.5
+      weight_kg:
+        min: 300
+        max: 754
     described: 1998
     authors: Carpenter et al.
     described_in: carpenter1998

@@ -46,9 +46,15 @@ species:
         - -7.216667
         - -39.266666
     size:
-      length_m: 8
-      hip_height_m: 2
-      estimate: true
+      length_m:
+        min: 8.0
+        max: 8.0
+      weight_kg:
+        min: 900
+        max: 3600
+      hip_height_m:
+        min: 2.0
+        max: 2.0
     described: 1996
     authors: Martill et al.
     described_in: martill1996

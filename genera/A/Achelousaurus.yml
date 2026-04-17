@@ -46,8 +46,15 @@ species:
         - 48.970821
         - -112.642014
     size:
-      length_m: 6
-      estimate: true
+      length_m:
+        min: 6.0
+        max: 6.0
+      weight_kg:
+        min: 3000
+        max: 3000
+      skull_length_m:
+        min: 1.62
+        max: 1.62
     described: 1994
     authors: Sampson
 

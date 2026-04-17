@@ -57,10 +57,15 @@ species:
       formation: Bahariya
       coordinates: [ 28.5, 28.9 ]
     size:
-      length_m: 15.0
-      weight_kg: 7400
-      hip_height_m: 3.5
-      estimate: true
+      length_m:
+        min: 15.0
+        max: 15.0
+      weight_kg:
+        min: 7400.0
+        max: 7400.0
+      hip_height_m:
+        min: 3.5
+        max: 3.5
     described: 1915
     authors: Stromer
     description: >

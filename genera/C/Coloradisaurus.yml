@@ -44,8 +44,12 @@ species:
       specimen_type: holotype
       institution: PVL
     size:
-      length_m: 4
-      estimate: true
+      length_m:
+        min: 3.0
+        max: 3.0
+      weight_kg:
+        min: 70
+        max: 70
     described: 1978
     authors: Bonaparte
     described_in: bonaparte1978

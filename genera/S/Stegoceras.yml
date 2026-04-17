@@ -48,7 +48,11 @@ species:
       specimen_type: holotype
       institution: CMN
     size:
-      length_m: 2.4
-      estimate: true
+      length_m:
+        min: 2.0
+        max: 2.5
+      weight_kg:
+        min: 10
+        max: 40
     described: 1902
     authors: Lambe

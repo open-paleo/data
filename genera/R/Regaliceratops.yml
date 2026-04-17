@@ -51,9 +51,12 @@ species:
       specimen_type: holotype
       institution: TMP
     size:
-      length_m: 5
-      weight_kg: 2
-      estimate: true
+      length_m:
+        min: 5.0
+        max: 5.0
+      weight_kg:
+        min: 2000
+        max: 2000
     described: 2015
     authors: Brown and Henderson
     described_in: brown2015

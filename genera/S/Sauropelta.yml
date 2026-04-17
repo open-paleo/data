@@ -50,7 +50,11 @@ species:
       specimen_type: holotype
       institution: AMNH
     size:
-      length_m: 6.5
-      estimate: true
+      length_m:
+        min: 5.2
+        max: 6.0
+      weight_kg:
+        min: 1500
+        max: 2000
     described: 1970
     authors: Ostrom

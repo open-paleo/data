@@ -59,7 +59,11 @@ species:
       specimen_type: holotype
       institution: CMN
     size:
-      length_m: 9
-      estimate: true
+      length_m:
+        min: 7.0
+        max: 7.7
+      weight_kg:
+        min: 2600
+        max: 3400
     described: 1923
     authors: Parks

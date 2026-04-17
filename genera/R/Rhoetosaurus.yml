@@ -40,8 +40,12 @@ species:
         - -26.083332
         - 149.050003
     size:
-      length_m: 15
-      estimate: true
+      length_m:
+        min: 15.0
+        max: 15.0
+      weight_kg:
+        min: 9000
+        max: 9000
     described: 1926
     authors: Longman
 

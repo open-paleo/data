@@ -49,7 +49,11 @@ species:
       specimen_type: holotype
       institution: MACN
     size:
-      length_m: 18
-      estimate: true
+      length_m:
+        min: 18.0
+        max: 18.0
+      weight_kg:
+        min: 33000
+        max: 65000
     described: 1927
     authors: Huene

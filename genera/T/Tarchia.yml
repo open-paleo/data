@@ -41,7 +41,11 @@ species:
       specimen_type: holotype
       institution: ZPAL
     size:
-      length_m: 5.5
-      estimate: true
+      length_m:
+        min: 5.5
+        max: 5.5
+      weight_kg:
+        min: 2500
+        max: 3000
     described: 1977
     authors: Maryanska

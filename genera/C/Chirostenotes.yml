@@ -43,8 +43,12 @@ species:
       specimen_type: holotype
       institution: CMN
     size:
-      length_m: 1.7
-      estimate: true
+      length_m:
+        min: 2.5
+        max: 2.5
+      weight_kg:
+        min: 100
+        max: 100
     described: 1924
     authors: Gilmore
     described_in: gilmore1924

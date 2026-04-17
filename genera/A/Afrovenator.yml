@@ -48,8 +48,15 @@ species:
       specimen_type: holotype
       institution: UC
     size:
-      length_m: 9
-      estimate: true
+      length_m:
+        min: 9.0
+        max: 9.0
+      weight_kg:
+        min: 453
+        max: 1000
+      hip_height_m:
+        min: 1.9
+        max: 1.9
     described: 1994
     authors: Sereno et al.
     described_in: sereno1994

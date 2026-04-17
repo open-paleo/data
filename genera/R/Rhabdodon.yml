@@ -50,7 +50,11 @@ species:
       institution: MMNH
       material: Lectotype designated from a larger syntype series; paralectotypes MPLM 31, 32, 34, 36, 51, 59, 60, and 61
     size:
-      length_m: 4
-      estimate: true
+      length_m:
+        min: 4.0
+        max: 6.0
+      weight_kg:
+        min: 250
+        max: 250
     described: 1869
     authors: Matheron

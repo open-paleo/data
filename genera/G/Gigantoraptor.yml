@@ -43,8 +43,15 @@ species:
       specimen_type: holotype
       institution: LH
     size:
-      length_m: 8
-      estimate: true
+      length_m:
+        min: 8.0
+        max: 8.6
+      weight_kg:
+        min: 1400
+        max: 2000
+      hip_height_m:
+        min: 3.5
+        max: 3.5
     described: 2007
     authors: Xu et al.
     described_in: xu2007

@@ -40,8 +40,12 @@ species:
         - -37.883331
         - -68.51667
     size:
-      length_m: 5
-      estimate: true
+      length_m:
+        min: 5.5
+        max: 6.2
+      weight_kg:
+        min: 700
+        max: 700
     described: 2002
     authors: Coria et al.
     described_in: coria2002

@@ -56,7 +56,11 @@ species:
       institution: "GIN(Mongolia)"
       material: Originally catalogued as ZPAL MgD-I/48 at the Institute of Paleobiology, Warsaw; later repatriated to Mongolia
     size:
-      length_m: 12
-      estimate: true
+      length_m:
+        min: 11.4
+        max: 13.0
+      weight_kg:
+        min: 8400
+        max: 25400
     described: 1977
     authors: Borsuk-Bialynicka

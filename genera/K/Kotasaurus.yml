@@ -46,8 +46,12 @@ species:
         - 19.106924
         - 79.845581
     size:
-      length_m: 9
-      estimate: true
+      length_m:
+        min: 9.0
+        max: 9.0
+      weight_kg:
+        min: 2500
+        max: 2500
     described: 1988
     authors: Yadagiri
     holotype:

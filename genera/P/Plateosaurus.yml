@@ -51,8 +51,12 @@ species:
       specimen_type: holotype
       institution: MNS
     size:
-      length_m: 7
-      estimate: true
+      length_m:
+        min: 4.8
+        max: 10.0
+      weight_kg:
+        min: 600
+        max: 4000
     described: 1837
     authors: Meyer
     described_in: sander1992

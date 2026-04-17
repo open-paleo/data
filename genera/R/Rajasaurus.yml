@@ -47,9 +47,12 @@ species:
         - 23.057222
         - 73.341942
     size:
-      length_m: 10.5
-      weight_kg: 4000
-      estimate: true
+      length_m:
+        min: 6.6
+        max: 11.0
+      weight_kg:
+        min: 4000
+        max: 4000
     described: 2003
     authors: Wilson et al.
 

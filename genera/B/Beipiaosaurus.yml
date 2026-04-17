@@ -53,8 +53,12 @@ species:
       specimen_type: holotype
       institution: IVPP
     size:
-      length_m: 2
-      estimate: true
+      length_m:
+        min: 1.8
+        max: 2.2
+      weight_kg:
+        min: 27
+        max: 50
     described: 1999
     authors: Xu et al.
     described_in: xu1999

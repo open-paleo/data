@@ -43,8 +43,9 @@ species:
         - -45.61972
         - -68.50972
     size:
-      length_m: 3
-      estimate: true
+      length_m:
+        min: 3.0
+        max: 3.0
     described: 1979
     authors: Brett-Surman
     described_in: brett-surman1979

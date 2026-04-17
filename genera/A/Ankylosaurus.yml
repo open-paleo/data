@@ -50,10 +50,18 @@ species:
       formation: Hell Creek
       coordinates: [ 47.5, -106.5 ]
     size:
-      length_m: 8.0
-      weight_kg: 4800
-      hip_height_m: 1.7
-      estimate: true
+      length_m:
+        min: 6.0
+        max: 9.99
+      weight_kg:
+        min: 4800.0
+        max: 8000.0
+      hip_height_m:
+        min: 1.4
+        max: 1.7
+      skull_length_m:
+        min: 0.555
+        max: 0.645
     described: 1908
     authors: Brown
     description: >

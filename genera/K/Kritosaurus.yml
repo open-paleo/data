@@ -42,8 +42,12 @@ species:
         - 36.269444
         - -108.166946
     size:
-      length_m: 8
-      estimate: true
+      length_m:
+        min: 9.0
+        max: 11.0
+      weight_kg:
+        min: 4000
+        max: 4000
     described: 1910
     authors: Brown
 

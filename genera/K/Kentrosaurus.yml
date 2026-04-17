@@ -46,8 +46,12 @@ species:
         - -9.713026
         - 39.231956
     size:
-      length_m: 4.5
-      estimate: true
+      length_m:
+        min: 4.0
+        max: 4.5
+      weight_kg:
+        min: 700
+        max: 1600
     described: 1915
     authors: Hennig
 

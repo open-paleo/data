@@ -51,7 +51,11 @@ species:
       specimen_type: holotype
       institution: MNHN
     size:
-      length_m: 7
-      estimate: true
+      length_m:
+        min: 7
+        max: 8.3
+      weight_kg:
+        min: 2200
+        max: 2200
     described: 1972
     authors: Taquet

@@ -52,9 +52,18 @@ species:
       specimen_type: holotype
       institution: CMN
     size:
-      length_m: 9
-      weight_kg: 2500
-      estimate: true
+      length_m:
+        min: 8.5
+        max: 11.0
+      weight_kg:
+        min: 2000.0
+        max: 3000.0
+      hip_height_m:
+        min: 2.2
+        max: 2.2
+      skull_length_m:
+        min: 1.0
+        max: 1.0
     described: 1970
     authors: Russell
     described_in: russell1970

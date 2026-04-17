@@ -51,7 +51,11 @@ species:
       institution: ANS
       material: Partial skeleton cataloged as ANSP 9201-9204 and ANSP 10005
     size:
-      length_m: 9
-      estimate: true
+      length_m:
+        min: 7.0
+        max: 8.0
+      weight_kg:
+        min: 2000
+        max: 4000
     described: 1858
     authors: Leidy

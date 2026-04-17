@@ -53,8 +53,15 @@ species:
       specimen_type: holotype
       institution: MNHN
     size:
-      hip_height_m: 1.7
-      estimate: true
+      length_m:
+        min: 4.0
+        max: 6.2
+      weight_kg:
+        min: 200
+        max: 200
+      hip_height_m:
+        min: 1.7
+        max: 1.7
     described: 2004
     authors: Sereno et al.
     described_in: sereno2004

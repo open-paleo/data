@@ -45,8 +45,12 @@ species:
         - 24.355
         - 102.542198
     size:
-      length_m: 9
-      estimate: true
+      length_m:
+        min: 9.0
+        max: 9.0
+      weight_kg:
+        min: 2000
+        max: 2000
     described: 1990
     authors: Bai et al.
 

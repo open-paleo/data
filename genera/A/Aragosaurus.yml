@@ -45,7 +45,11 @@ species:
       specimen_type: holotype
       institution: CL
     size:
-      length_m: 18
-      estimate: true
+      length_m:
+        min: 18.0
+        max: 18.0
+      weight_kg:
+        min: 25000
+        max: 25000
     described: 1987
     authors: Sanz et al.

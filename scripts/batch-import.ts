@@ -2252,20 +2252,22 @@ function toGenusYaml(enriched: EnrichedGenus, reference: Record<string, string> 
 
         if (enriched.bodyLength)
         {
-            size.length_m = parseFloat(enriched.bodyLength);
+            const value = parseFloat(enriched.bodyLength);
+            size.length_m = { min: value, max: value };
         }
 
         if (enriched.mass)
         {
-            size.weight_kg = parseInt(enriched.mass, 10);
+            const value = parseInt(enriched.mass, 10);
+            size.weight_kg = { min: value, max: value };
         }
 
         if (enriched.hipHeight)
         {
-            size.hip_height_m = parseFloat(enriched.hipHeight);
+            const value = parseFloat(enriched.hipHeight);
+            size.hip_height_m = { min: value, max: value };
         }
 
-        size.estimate = true;
         species.size = size;
     }
 

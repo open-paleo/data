@@ -44,8 +44,12 @@ species:
         - 37.647072
         - -111.862358
     size:
-      length_m: 3
-      estimate: true
+      length_m:
+        min: 2.4
+        max: 3.0
+      weight_kg:
+        min: 50
+        max: 50
     described: 2005
     authors: Zanno and Sampson
 

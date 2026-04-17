@@ -38,8 +38,15 @@ species:
         - 50.97139
         - -2.521111
     size:
-      hip_height_m: 1.4
-      estimate: true
+      length_m:
+        min: 4.0
+        max: 4.0
+      weight_kg:
+        min: 175
+        max: 175
+      hip_height_m:
+        min: 1.4
+        max: 1.4
     described: 1932
     authors: Huene
 

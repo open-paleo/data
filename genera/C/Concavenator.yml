@@ -44,8 +44,12 @@ species:
       specimen_type: holotype
       institution: HUE
     size:
-      length_m: 5.8
-      estimate: true
+      length_m:
+        min: 5.0
+        max: 6.0
+      weight_kg:
+        min: 320
+        max: 400
     described: 2010
     authors: Ortega et al.
     described_in: ortega2010

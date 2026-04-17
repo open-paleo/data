@@ -52,8 +52,11 @@ species:
       specimen_type: holotype
       institution: NMNH
     size:
-      length_m: 5
-      weight_kg: 450
-      estimate: true
+      length_m:
+        min: 4.5
+        max: 4.5
+      weight_kg:
+        min: 370
+        max: 450
     described: 1943
     authors: Brown and Schlaikjer

@@ -55,8 +55,12 @@ species:
       specimen_type: holotype
       institution: ANS
     size:
-      length_m: 6.4
-      estimate: true
+      length_m:
+        min: 7.5
+        max: 7.5
+      weight_kg:
+        min: 756
+        max: 1500
     described: 1877
     authors: Marsh
     described_in: marsh1877

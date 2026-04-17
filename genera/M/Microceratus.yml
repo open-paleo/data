@@ -31,8 +31,9 @@ species:
       from_ma: 83.6
       to_ma: 66
     size:
-      length_m: 0.5
-      estimate: true
+      length_m:
+        min: 0.6
+        max: 0.6
     described: 2008
     authors: Mateus
     described_in: mateus2008

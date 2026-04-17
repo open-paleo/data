@@ -44,8 +44,9 @@ species:
       specimen_type: holotype
       institution: IVPP
     size:
-      length_m: 5
-      estimate: true
+      length_m:
+        min: 5
+        max: 5
     described: 2001
     authors: Vickaryous et al.
     described_in: vickaryous2001

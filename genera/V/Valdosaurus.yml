@@ -50,7 +50,11 @@ species:
       specimen_type: syntype
       institution: BMNH
     size:
-      length_m: 3
-      estimate: true
+      length_m:
+        min: 3.0
+        max: 3.0
+      weight_kg:
+        min: 10
+        max: 400
     described: 1977
     authors: Galton

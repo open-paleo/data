@@ -49,7 +49,11 @@ species:
       specimen_type: holotype
       institution: NMNH
     size:
-      length_m: 21
-      estimate: true
+      length_m:
+        min: 21.0
+        max: 21.0
+      weight_kg:
+        min: 30000
+        max: 80000
     described: 1922
     authors: Gilmore

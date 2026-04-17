@@ -45,8 +45,15 @@ species:
         - -29.216669
         - -68.699997
     size:
-      length_m: 3
-      estimate: true
+      length_m:
+        min: 4.5
+        max: 6.0
+      weight_kg:
+        min: 200
+        max: 350
+      skull_length_m:
+        min: 0.56
+        max: 0.56
     described: 1963
     authors: Reig
 

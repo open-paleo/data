@@ -44,8 +44,12 @@ species:
         - -84.333336
         - 166.449997
     size:
-      length_m: 8
-      estimate: true
+      length_m:
+        min: 6.0
+        max: 7.7
+      weight_kg:
+        min: 350
+        max: 780
     described: 1994
     authors: Hammer and Hickerson
     described_in: hammer1994

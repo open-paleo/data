@@ -46,7 +46,11 @@ species:
       specimen_type: holotype
       institution: MACN
     size:
-      length_m: 23
-      estimate: true
+      length_m:
+        min: 23.0
+        max: 23.0
+      weight_kg:
+        min: 12000
+        max: 12000
     described: 1975
     authors: del Corro

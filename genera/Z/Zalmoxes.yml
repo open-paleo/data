@@ -46,8 +46,12 @@ species:
         - 45.549999
         - 22.916668
     size:
-      length_m: 2.5
-      estimate: true
+      length_m:
+        min: 2.0
+        max: 2.9
+      weight_kg:
+        min: 45
+        max: 45
     described: 2003
     authors: Weishampel et al.
 

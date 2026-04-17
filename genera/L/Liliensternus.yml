@@ -42,8 +42,12 @@ species:
         - 50.383301
         - 10.55
     size:
-      length_m: 5
-      estimate: true
+      length_m:
+        min: 5.0
+        max: 5.0
+      weight_kg:
+        min: 127
+        max: 200
     described: 1984
     authors: Welles
 

@@ -51,7 +51,11 @@ species:
       specimen_type: holotype
       institution: GMC
     size:
-      length_m: 2
-      estimate: true
+      length_m:
+        min: 0.7
+        max: 1.0
+      weight_kg:
+        min: 2
+        max: 2
     described: 1997
     authors: Ji and Ji

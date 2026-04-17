@@ -47,8 +47,12 @@ species:
       specimen_type: holotype
       institution: MPM
     size:
-      length_m: 26
-      estimate: true
+      length_m:
+        min: 26.0
+        max: 26.0
+      weight_kg:
+        min: 22100
+        max: 74000
     described: 2014
     authors: Lacovara et al.
     described_in: lacovara2014

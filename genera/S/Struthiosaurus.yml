@@ -45,8 +45,12 @@ species:
       specimen_type: holotype
       institution: PIWU
     size:
-      length_m: 2.5
-      estimate: true
+      length_m:
+        min: 2.0
+        max: 3.0
+      weight_kg:
+        min: 300
+        max: 400
     described: 1870
     authors: Bunzel
     described_in: bunzel1870

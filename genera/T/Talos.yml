@@ -44,8 +44,11 @@ species:
       specimen_type: holotype
       institution: UMNH
     size:
-      length_m: 2
-      weight_kg: 38
-      estimate: true
+      length_m:
+        min: 2
+        max: 2
+      weight_kg:
+        min: 38
+        max: 38
     described: 2011
     authors: Zanno et al.

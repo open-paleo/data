@@ -48,8 +48,12 @@ species:
       specimen_type: holotype
       institution: CMN
     size:
-      length_m: 2.5
-      estimate: true
+      length_m:
+        min: 2.5
+        max: 2.5
+      weight_kg:
+        min: 35
+        max: 35
     described: 1932
     authors: Sternberg
     described_in: sternberg1932

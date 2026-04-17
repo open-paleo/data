@@ -44,8 +44,9 @@ species:
       specimen_type: holotype
       institution: JM
     size:
-      length_m: 0.8
-      estimate: true
+      length_m:
+        min: 0.8
+        max: 0.8
     described: 2006
     authors: Göhlich and Chiappe
     described_in: göhlich2006

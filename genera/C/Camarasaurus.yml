@@ -58,7 +58,11 @@ species:
       specimen_type: holotype
       institution: AMNH
     size:
-      length_m: 23
-      estimate: true
+      length_m:
+        min: 12.6
+        max: 23
+      weight_kg:
+        min: 8300
+        max: 42300
     described: 1877
     authors: Cope

@@ -51,9 +51,14 @@ species:
       specimen_type: holotype
       institution: CMN
     size:
-      length_m: 4.3
-      weight_kg: 150
-      hip_height_m: 1.4
-      estimate: true
+      length_m:
+        min: 4.3
+        max: 4.8
+      weight_kg:
+        min: 150
+        max: 350
+      hip_height_m:
+        min: 1.4
+        max: 1.4
     described: 1916
     authors: Osborn

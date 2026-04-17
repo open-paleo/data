@@ -46,7 +46,14 @@ species:
       specimen_type: holotype
       institution: ROM
     size:
-      length_m: 3
-      estimate: true
+      length_m:
+        min: 3.0
+        max: 3.0
+      weight_kg:
+        min: 45
+        max: 45
+      hip_height_m:
+        min: 1
+        max: 1
     described: 1937
     authors: Sternberg

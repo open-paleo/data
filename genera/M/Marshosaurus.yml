@@ -42,8 +42,12 @@ species:
       specimen_type: holotype
       institution: UMNH
     size:
-      length_m: 6
-      estimate: true
+      length_m:
+        min: 4.5
+        max: 4.5
+      weight_kg:
+        min: 200
+        max: 200
     described: 1976
     authors: Madsen
     described_in: madsen1976

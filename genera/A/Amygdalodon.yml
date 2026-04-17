@@ -41,8 +41,12 @@ species:
         - -43.966667
         - -69.51667
     size:
-      length_m: 15
-      estimate: true
+      length_m:
+        min: 15.0
+        max: 15.0
+      weight_kg:
+        min: 5000
+        max: 5000
     described: 1947
     authors: Cabrera
 

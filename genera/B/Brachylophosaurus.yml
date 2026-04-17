@@ -54,8 +54,11 @@ species:
       specimen_type: holotype
       institution: CMN
     size:
-      length_m: 11
-      weight_kg: 7000
-      estimate: true
+      length_m:
+        min: 9.0
+        max: 11.0
+      weight_kg:
+        min: 7000
+        max: 7000
     described: 1953
     authors: Sternberg

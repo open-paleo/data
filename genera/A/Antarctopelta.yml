@@ -43,8 +43,12 @@ species:
         - -63.926666
         - -57.814167
     size:
-      length_m: 4
-      estimate: true
+      length_m:
+        min: 4.0
+        max: 4.0
+      weight_kg:
+        min: 350
+        max: 350
     described: 2006
     authors: Salgado and Gasparini
 

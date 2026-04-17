@@ -43,7 +43,11 @@ species:
       specimen_type: holotype
       institution: MVP
     size:
-      length_m: 1.5
-      estimate: true
+      length_m:
+        min: 1.0
+        max: 1.0
+      weight_kg:
+        min: 4
+        max: 7
     described: 1936
     authors: Camp

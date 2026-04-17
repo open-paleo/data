@@ -42,9 +42,11 @@ species:
       specimen_type: holotype
       institution: CV
     size:
-      length_m: 6.5
-      weight_kg: 3
-      hip_height_m: 2
-      estimate: true
+      length_m:
+        min: 6.5
+        max: 6.5
+      weight_kg:
+        min: 2800
+        max: 2800
     described: 1977
     authors: Dong et al.

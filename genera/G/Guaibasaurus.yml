@@ -46,7 +46,11 @@ species:
       specimen_type: holotype
       institution: MCN
     size:
-      length_m: 1.8
-      estimate: true
+      length_m:
+        min: 1.8
+        max: 1.8
+      weight_kg:
+        min: 10
+        max: 35
     described: 1999
     authors: Bonaparte et al.

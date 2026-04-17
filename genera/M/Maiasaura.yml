@@ -40,8 +40,12 @@ species:
         - 47.768101
         - -112.287567
     size:
-      length_m: 9
-      estimate: true
+      length_m:
+        min: 9.0
+        max: 9.0
+      weight_kg:
+        min: 4000
+        max: 4000
     described: 1979
     authors: Horner and Makela
     described_in: horner1979

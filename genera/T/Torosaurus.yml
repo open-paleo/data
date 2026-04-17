@@ -45,8 +45,15 @@ species:
       specimen_type: holotype
       institution: YPM
     size:
-      length_m: 7.5
-      estimate: true
+      length_m:
+        min: 7.5
+        max: 9.0
+      weight_kg:
+        min: 6000
+        max: 11000
+      skull_length_m:
+        min: 2.8
+        max: 3.0
     described: 1891
     authors: Marsh
     described_in: marsh1891

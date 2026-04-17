@@ -51,7 +51,11 @@ species:
       specimen_type: holotype
       institution: BSP
     size:
-      length_m: 0.7
-      estimate: true
+      length_m:
+        min: 0.7
+        max: 1.4
+      weight_kg:
+        min: 1
+        max: 4
     described: 1861
     authors: Wagner

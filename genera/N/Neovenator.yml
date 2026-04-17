@@ -48,8 +48,15 @@ species:
       specimen_type: holotype
       institution: BMNH
     size:
-      length_m: 7.4
-      estimate: true
+      length_m:
+        min: 7.4
+        max: 7.4
+      weight_kg:
+        min: 1000
+        max: 1000
+      hip_height_m:
+        min: 2
+        max: 2.5
     described: 1996
     authors: Hutt et al.
     described_in: hutt1996

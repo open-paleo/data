@@ -41,8 +41,12 @@ species:
         - 43.83139
         - 112.427498
     size:
-      length_m: 6
-      estimate: true
+      length_m:
+        min: 6.0
+        max: 6.5
+      weight_kg:
+        min: 1200
+        max: 1200
     described: 1933
     authors: Gilmore
 

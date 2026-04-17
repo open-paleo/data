@@ -43,8 +43,18 @@ species:
       specimen_type: holotype
       institution: MNHN
     size:
-      length_m: 9
-      estimate: true
+      length_m:
+        min: 7.0
+        max: 9.0
+      weight_kg:
+        min: 5500
+        max: 5500
+      hip_height_m:
+        min: 2.0
+        max: 2.0
+      skull_length_m:
+        min: 0.8
+        max: 0.8
     described: 1999
     authors: Taquet and Russell
     described_in: taquet1999

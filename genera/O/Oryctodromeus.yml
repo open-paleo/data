@@ -46,8 +46,12 @@ species:
       specimen_type: holotype
       institution: MOR
     size:
-      length_m: 2.1
-      estimate: true
+      length_m:
+        min: 2.1
+        max: 2.1
+      weight_kg:
+        min: 22
+        max: 32
     described: 2007
     authors: Varricchio et al.
     described_in: varricchio2007

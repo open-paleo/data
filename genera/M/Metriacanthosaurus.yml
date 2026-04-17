@@ -39,7 +39,11 @@ species:
       specimen_type: holotype
       institution: OUM
     size:
-      length_m: 8
-      estimate: true
+      length_m:
+        min: 8.0
+        max: 8.0
+      weight_kg:
+        min: 1000
+        max: 1000
     described: 1964
     authors: Walker

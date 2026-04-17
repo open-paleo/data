@@ -46,8 +46,12 @@ species:
       specimen_type: holotype
       institution: SMPSMU
     size:
-      length_m: 6
-      estimate: true
+      length_m:
+        min: 6.0
+        max: 6.0
+      skull_length_m:
+        min: 0.7
+        max: 0.7
     described: 1998
     authors: Head
     described_in: head1998

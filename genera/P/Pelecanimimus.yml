@@ -43,9 +43,12 @@ species:
       specimen_type: holotype
       institution: HUE
     size:
-      length_m: 2.5
-      weight_kg: 25000
-      estimate: true
+      length_m:
+        min: 1.9
+        max: 2.5
+      weight_kg:
+        min: 17
+        max: 30
     described: 1994
     authors: Pérez-Moreno et al.
     described_in: pérez-moreno1994

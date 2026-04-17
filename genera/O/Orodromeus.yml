@@ -43,8 +43,9 @@ species:
       specimen_type: holotype
       institution: MOR
     size:
-      length_m: 2
-      estimate: true
+      length_m:
+        min: 2.5
+        max: 2.5
     described: 1988
     authors: Horner and Weishampel
     described_in: horner1988

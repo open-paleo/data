@@ -45,7 +45,11 @@ species:
       specimen_type: holotype
       institution: GZG
     size:
-      length_m: 1.5
-      estimate: true
+      length_m:
+        min: 1.4
+        max: 1.4
+      weight_kg:
+        min: 10
+        max: 10
     described: 1857
     authors: Meyer

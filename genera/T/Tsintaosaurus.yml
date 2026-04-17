@@ -46,8 +46,12 @@ species:
         - 36.886501
         - 120.658997
     size:
-      length_m: 12
-      estimate: true
+      length_m:
+        min: 8.3
+        max: 8.3
+      weight_kg:
+        min: 2500
+        max: 2500
     described: 1958
     authors: Young
 

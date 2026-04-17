@@ -45,9 +45,12 @@ species:
         - 11.164167
         - 78.979721
     size:
-      length_m: 40
-      weight_kg: 110000
-      estimate: true
+      length_m:
+        min: 40.0
+        max: 40.0
+      weight_kg:
+        min: 110000.0
+        max: 110000.0
     described: 1987
     authors: Yadagiri and Ayyasami
 

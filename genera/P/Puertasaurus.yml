@@ -45,8 +45,12 @@ species:
         - -49.854168
         - -72.106667
     size:
-      length_m: 30
-      estimate: true
+      length_m:
+        min: 27.0
+        max: 40.0
+      weight_kg:
+        min: 45000
+        max: 100000
     described: 2005
     authors: Novas et al.
     described_in: novas2005

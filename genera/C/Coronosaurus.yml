@@ -43,9 +43,12 @@ species:
         - 50.747601
         - -111.524002
     size:
-      length_m: 5
-      weight_kg: 2000
-      estimate: true
+      length_m:
+        min: 5.0
+        max: 5.0
+      weight_kg:
+        min: 2000
+        max: 2000
     described: 2012
     authors: Ryan et al.
     described_in: ryan2012

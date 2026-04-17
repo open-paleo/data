@@ -52,7 +52,11 @@ species:
       institution: HM
       material: "Lectotype designated by Taylor (2009); originally catalogued as HMN SII. Paralectotype: MB.R.2181"
     size:
-      length_m: 23
-      estimate: true
+      length_m:
+        min: 21.8
+        max: 26.0
+      weight_kg:
+        min: 14800
+        max: 78258
     described: 1988
     authors: Paul

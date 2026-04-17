@@ -43,8 +43,12 @@ species:
         - 49.216667
         - 1.083333
     size:
-      length_m: 6.2
-      estimate: true
+      length_m:
+        min: 6.2
+        max: 6.2
+      weight_kg:
+        min: 100
+        max: 136
     holotype:
       specimen_type: holotype
       institution: MHNC

@@ -45,8 +45,14 @@ species:
       specimen_type: holotype
       institution: MOR
     size:
-      length_m: 4.5
-      weight_kg: 1300
-      estimate: true
+      length_m:
+        min: 4.5
+        max: 4.5
+      weight_kg:
+        min: 1300
+        max: 1300
+      skull_length_m:
+        min: 1.56
+        max: 1.56
     described: 1994
     authors: Sampson

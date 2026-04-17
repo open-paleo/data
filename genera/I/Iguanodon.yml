@@ -57,10 +57,12 @@ species:
       formation: Sainte-Barbe
       coordinates: [ 50.5, 3.6 ]
     size:
-      length_m: 10.0
-      weight_kg: 3400
-      hip_height_m: 2.7
-      estimate: true
+      length_m:
+        min: 9.0
+        max: 11.0
+      weight_kg:
+        min: 4500
+        max: 4500
     described: 1881
     authors: Boulenger
     description: >

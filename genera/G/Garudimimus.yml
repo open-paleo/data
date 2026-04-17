@@ -50,7 +50,11 @@ species:
       specimen_type: holotype
       institution: GI
     size:
-      length_m: 4.7
-      estimate: true
+      length_m:
+        min: 3.5
+        max: 3.5
+      weight_kg:
+        min: 77
+        max: 98
     described: 1981
     authors: Barsbold

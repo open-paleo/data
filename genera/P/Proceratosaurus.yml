@@ -51,7 +51,14 @@ species:
       specimen_type: holotype
       institution: BMNH
     size:
-      length_m: 3
-      estimate: true
+      length_m:
+        min: 2.98
+        max: 4.0
+      weight_kg:
+        min: 28
+        max: 100
+      skull_length_m:
+        min: 0.269
+        max: 0.269
     described: 1926
     authors: Huene

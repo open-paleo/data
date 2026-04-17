@@ -134,33 +134,38 @@ export type Location = {
 };
 
 /**
+ * A numeric range with minimum and maximum bounds.
+ * When the value is a single known estimate, min and max are equal.
+ */
+export type SizeRange = {
+    min: number;
+    max: number;
+};
+
+/**
  * Physical size measurements for a species.
+ * Each measurement is a range with min/max bounds.
  */
 export type Size = {
     /**
      * Total body length in meters.
      */
-    length_m?: number;
+    length_m?: SizeRange;
 
     /**
-     * Estimated body mass in kilograms.
+     * Body mass in kilograms.
      */
-    weight_kg?: number;
+    weight_kg?: SizeRange;
 
     /**
      * Height at the hip in meters.
      */
-    hip_height_m?: number;
+    hip_height_m?: SizeRange;
 
     /**
      * Skull length in meters.
      */
-    skull_length_m?: number;
-
-    /**
-     * Whether the measurements are estimates rather than direct measurements.
-     */
-    estimate?: boolean;
+    skull_length_m?: SizeRange;
 };
 
 /**

@@ -52,10 +52,12 @@ species:
       formation: Morrison
       coordinates: [ 39.1, -108.6 ]
     size:
-      length_m: 22.0
-      weight_kg: 35000
-      hip_height_m: 6.4
-      estimate: true
+      length_m:
+        min: 18
+        max: 22
+      weight_kg:
+        min: 28300
+        max: 46900
     described: 1903
     authors: Riggs
     description: >

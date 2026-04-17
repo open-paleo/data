@@ -43,7 +43,11 @@ species:
       specimen_type: holotype
       institution: PIN
     size:
-      length_m: 6
-      estimate: true
+      length_m:
+        min: 5.5
+        max: 5.5
+      weight_kg:
+        min: 1000
+        max: 1000
     described: 1966
     authors: Rozhdestvensky

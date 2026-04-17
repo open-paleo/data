@@ -52,10 +52,9 @@ species:
       formation: Morrison
       coordinates: [ 38.4, -105.2 ]
     size:
-      length_m: 25.0
-      weight_kg: 14800
-      hip_height_m: 4.0
-      estimate: true
+      length_m:
+        min: 24.0
+        max: 26.0
     described: 1878
     authors: Marsh
     description: >
@@ -77,9 +76,9 @@ species:
       locality: Sheep Creek
       formation: Morrison
     size:
-      length_m: 25.0
-      weight_kg: 11500
-      estimate: true
+      length_m:
+        min: 24.0
+        max: 26.0
     described: 1901
     authors: Hatcher
     description: >

@@ -45,8 +45,12 @@ species:
         - 43.772221
         - 111.929169
     size:
-      length_m: 6
-      estimate: true
+      length_m:
+        min: 6.2
+        max: 6.2
+      weight_kg:
+        min: 1200
+        max: 3600
     described: 1979
     authors: Brett-Surman
     described_in: brett-surman1979

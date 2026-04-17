@@ -21,7 +21,7 @@ window.YamlBuilder = (function ()
     }
 
     /** Fields whose integer values should retain a trailing .0 suffix. */
-    const floatFields = new Set(["from_ma", "to_ma", "length_m", "hip_height_m", "skull_length_m"]);
+    const floatFields = new Set(["from_ma", "to_ma"]);
 
     /** Fields whose string values should always be double-quoted. */
     const quotedFields = new Set(["pages", "doi", "isbn"]);
@@ -247,24 +247,29 @@ window.YamlBuilder = (function ()
 
         const size = {};
 
-        if (values["Estimated length (m)"])
+        if (values["Length min (m)"] || values["Length max (m)"])
         {
-            size.length_m = parseFloat(values["Estimated length (m)"]);
+            const min = parseFloat(values["Length min (m)"] ?? values["Length max (m)"]);
+            const max = parseFloat(values["Length max (m)"] ?? values["Length min (m)"]);
+            size.length_m = { min, max };
         }
 
-        if (values["Estimated weight (kg)"])
+        if (values["Weight min (kg)"] || values["Weight max (kg)"])
         {
-            size.weight_kg = parseFloat(values["Estimated weight (kg)"]);
+            const min = parseFloat(values["Weight min (kg)"] ?? values["Weight max (kg)"]);
+            const max = parseFloat(values["Weight max (kg)"] ?? values["Weight min (kg)"]);
+            size.weight_kg = { min, max };
         }
 
-        if (values["Estimated hip height (m)"])
+        if (values["Hip height min (m)"] || values["Hip height max (m)"])
         {
-            size.hip_height_m = parseFloat(values["Estimated hip height (m)"]);
+            const min = parseFloat(values["Hip height min (m)"] ?? values["Hip height max (m)"]);
+            const max = parseFloat(values["Hip height max (m)"] ?? values["Hip height min (m)"]);
+            size.hip_height_m = { min, max };
         }
 
         if (Object.keys(size).length > 0)
         {
-            size.estimate = true;
             species.size = size;
         }
 
@@ -758,29 +763,33 @@ window.YamlBuilder = (function ()
             }
         }
 
-        if (values["Estimated length (m)"] || values["Estimated weight (kg)"] || values["Estimated hip height (m)"])
+        if (values["Length min (m)"] || values["Length max (m)"] || values["Weight min (kg)"] || values["Weight max (kg)"] || values["Hip height min (m)"] || values["Hip height max (m)"])
         {
             if (!speciesEntry.size)
             {
                 speciesEntry.size = {};
             }
 
-            if (values["Estimated length (m)"])
+            if (values["Length min (m)"] || values["Length max (m)"])
             {
-                speciesEntry.size.length_m = parseFloat(values["Estimated length (m)"]);
+                const min = parseFloat(values["Length min (m)"] ?? values["Length max (m)"]);
+                const max = parseFloat(values["Length max (m)"] ?? values["Length min (m)"]);
+                speciesEntry.size.length_m = { min, max };
             }
 
-            if (values["Estimated weight (kg)"])
+            if (values["Weight min (kg)"] || values["Weight max (kg)"])
             {
-                speciesEntry.size.weight_kg = parseFloat(values["Estimated weight (kg)"]);
+                const min = parseFloat(values["Weight min (kg)"] ?? values["Weight max (kg)"]);
+                const max = parseFloat(values["Weight max (kg)"] ?? values["Weight min (kg)"]);
+                speciesEntry.size.weight_kg = { min, max };
             }
 
-            if (values["Estimated hip height (m)"])
+            if (values["Hip height min (m)"] || values["Hip height max (m)"])
             {
-                speciesEntry.size.hip_height_m = parseFloat(values["Estimated hip height (m)"]);
+                const min = parseFloat(values["Hip height min (m)"] ?? values["Hip height max (m)"]);
+                const max = parseFloat(values["Hip height max (m)"] ?? values["Hip height min (m)"]);
+                speciesEntry.size.hip_height_m = { min, max };
             }
-
-            speciesEntry.size.estimate = true;
         }
 
         if (values["Holotype specimen ID"] || values["Holotype institution"] || values["Holotype material"] || values["Holotype status"] || values["Holotype type"])

@@ -59,8 +59,12 @@ species:
         - -28.509443
         - 28.623056
     size:
-      length_m: 4
-      estimate: true
+      length_m:
+        min: 4.0
+        max: 6.0
+      weight_kg:
+        min: 137
+        max: 195
     described: 1854
     authors: Owen
 

@@ -56,9 +56,12 @@ species:
         - 51.985001
         - -1.8
     size:
-      length_m: 6
-      weight_kg: 700
-      estimate: true
+      length_m:
+        min: 6.0
+        max: 6.0
+      weight_kg:
+        min: 700
+        max: 700
     described: 1822
     authors: Parkinson
 

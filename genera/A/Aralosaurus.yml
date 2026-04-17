@@ -47,8 +47,12 @@ species:
         - 45.950001
         - 64.650002
     size:
-      length_m: 8
-      estimate: true
+      length_m:
+        min: 8.0
+        max: 8.0
+      skull_length_m:
+        min: 0.65
+        max: 0.65
     described: 1968
     authors: Rozhdestvensky
 

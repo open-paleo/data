@@ -53,7 +53,14 @@ species:
       specimen_type: holotype
       institution: AMNH
     size:
-      length_m: 9
-      estimate: true
+      length_m:
+        min: 8.2
+        max: 13.0
+      weight_kg:
+        min: 3000
+        max: 11000
+      skull_length_m:
+        min: 1.0
+        max: 1.22
     described: 1912
     authors: Brown

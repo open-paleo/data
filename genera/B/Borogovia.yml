@@ -42,7 +42,11 @@ species:
       specimen_type: holotype
       institution: ZPAL
     size:
-      length_m: 1.5
-      estimate: true
+      length_m:
+        min: 2
+        max: 2
+      weight_kg:
+        min: 20
+        max: 20
     described: 1987
     authors: Osmolska

@@ -40,8 +40,12 @@ species:
         - 45.603615
         - 22.845142
     size:
-      length_m: 5
-      estimate: true
+      length_m:
+        min: 5.0
+        max: 5.0
+      weight_kg:
+        min: 600
+        max: 600
     described: 1903
     authors: Nopcsa
 

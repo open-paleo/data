@@ -50,8 +50,12 @@ species:
       specimen_type: holotype
       institution: CGM
     size:
-      length_m: 28
-      estimate: true
+      length_m:
+        min: 28.0
+        max: 28.0
+      weight_kg:
+        min: 20000
+        max: 55000
     described: 2001
     authors: Smith et al.
     described_in: smith2001

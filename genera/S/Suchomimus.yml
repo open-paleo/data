@@ -46,9 +46,12 @@ species:
         - 16.416668
         - 9.1
     size:
-      length_m: 11
-      weight_kg: 2500
-      estimate: true
+      length_m:
+        min: 9.5
+        max: 11.0
+      weight_kg:
+        min: 2500
+        max: 3800
     described: 1998
     authors: Sereno et al.
     described_in: sereno1998

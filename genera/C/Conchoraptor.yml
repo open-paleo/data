@@ -42,7 +42,8 @@ species:
       specimen_type: holotype
       institution: "GIN(Mongolia)"
     size:
-      length_m: 1.5
-      estimate: true
+      length_m:
+        min: 1.0
+        max: 2.0
     described: 1986
     authors: Barsbold

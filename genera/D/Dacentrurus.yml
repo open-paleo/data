@@ -45,7 +45,14 @@ species:
       specimen_type: holotype
       institution: BMNH
     size:
-      length_m: 6
-      estimate: true
+      length_m:
+        min: 8.0
+        max: 9.0
+      weight_kg:
+        min: 5000
+        max: 7400
+      hip_height_m:
+        min: 1.8
+        max: 1.8
     described: 1902
     authors: Lucas

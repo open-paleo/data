@@ -45,8 +45,9 @@ species:
       specimen_type: holotype
       institution: NRRU
     size:
-      length_m: 10
-      estimate: true
+      length_m:
+        min: 10
+        max: 10
     described: 2011
     authors: Shibata et al.
     described_in: shibata2011

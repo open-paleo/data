@@ -54,7 +54,11 @@ species:
       specimen_type: holotype
       institution: IVPP
     size:
-      length_m: 4.5
-      estimate: true
+      length_m:
+        min: 4.0
+        max: 4.0
+      weight_kg:
+        min: 500
+        max: 500
     described: 1982
     authors: Dong et al.

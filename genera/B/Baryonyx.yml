@@ -56,10 +56,15 @@ species:
       specimen_type: holotype
       institution: BMNH
     size:
-      length_m: 10
-      weight_kg: 2000
-      hip_height_m: 2.5
-      estimate: true
+      length_m:
+        min: 7.5
+        max: 10
+      weight_kg:
+        min: 1200
+        max: 2000
+      hip_height_m:
+        min: 2.5
+        max: 2.5
     described: 1986
     authors: Charig and Milner
     described_in: charig1986

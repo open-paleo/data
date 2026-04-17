@@ -43,8 +43,12 @@ species:
       specimen_type: holotype
       institution: MACN
     size:
-      length_m: 18
-      estimate: true
+      length_m:
+        min: 15.0
+        max: 16.5
+      weight_kg:
+        min: 7880
+        max: 9440
     described: 1979
     authors: Bonaparte
     described_in: bonaparte1979

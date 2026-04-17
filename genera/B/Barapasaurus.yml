@@ -45,8 +45,12 @@ species:
         - 18.85
         - 79.966667
     size:
-      length_m: 14
-      estimate: true
+      length_m:
+        min: 14.0
+        max: 14.0
+      weight_kg:
+        min: 7000
+        max: 7000
     described: 1975
     authors: Jain et al.
 

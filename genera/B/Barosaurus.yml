@@ -49,8 +49,12 @@ species:
         - 44.23307
         - -103.377998
     size:
-      length_m: 24
-      estimate: true
+      length_m:
+        min: 25
+        max: 27
+      weight_kg:
+        min: 12000
+        max: 20000
     described: 1890
     authors: Marsh
     described_in: marsh1890

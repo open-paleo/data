@@ -48,7 +48,11 @@ species:
       specimen_type: holotype
       institution: PVL
     size:
-      length_m: 12
-      estimate: true
+      length_m:
+        min: 8.5
+        max: 12.8
+      weight_kg:
+        min: 2500
+        max: 6870
     described: 1980
     authors: Bonaparte and Powell

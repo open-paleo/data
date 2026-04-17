@@ -57,9 +57,12 @@ species:
       specimen_type: holotype
       institution: YPM
     size:
-      length_m: 22.8
-      weight_kg: 22000
-      estimate: true
+      length_m:
+        min: 21.0
+        max: 23.0
+      weight_kg:
+        min: 16400
+        max: 22400
     described: 1877
     authors: Marsh
     described_in: marsh1877

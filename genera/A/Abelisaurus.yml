@@ -48,7 +48,11 @@ species:
       specimen_type: holotype
       institution: MPCA
     size:
-      length_m: 9
-      estimate: true
+      length_m:
+        min: 9.0
+        max: 9.0
+      weight_kg:
+        min: 1650
+        max: 3000
     described: 1984
     authors: Bonaparte

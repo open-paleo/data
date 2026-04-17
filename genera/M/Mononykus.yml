@@ -48,7 +48,11 @@ species:
       specimen_type: holotype
       institution: "GIN(Mongolia)"
     size:
-      length_m: 1
-      estimate: true
+      length_m:
+        min: 1.0
+        max: 1.2
+      weight_kg:
+        min: 4
+        max: 4
     described: 1993
     authors: Perle et al.

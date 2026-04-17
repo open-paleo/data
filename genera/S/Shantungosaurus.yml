@@ -46,8 +46,15 @@ species:
         - 35.956108
         - 119.326942
     size:
-      length_m: 15
-      estimate: true
+      length_m:
+        min: 15.0
+        max: 17.0
+      weight_kg:
+        min: 13000
+        max: 16000
+      skull_length_m:
+        min: 1.63
+        max: 1.63
     described: 1973
     authors: Hu
 

@@ -45,7 +45,11 @@ species:
       specimen_type: syntype
       institution: SAM
     size:
-      length_m: 12
-      estimate: true
+      length_m:
+        min: 8.0
+        max: 8.0
+      weight_kg:
+        min: 1300
+        max: 1300
     described: 1924
     authors: Haughton

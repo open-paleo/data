@@ -42,8 +42,12 @@ species:
       specimen_type: holotype
       institution: TMP
     size:
-      length_m: 5
-      estimate: true
+      length_m:
+        min: 5.8
+        max: 5.8
+      weight_kg:
+        min: 3500
+        max: 3500
     described: 2007
     authors: Ryan
     described_in: ryan2007

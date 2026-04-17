@@ -45,8 +45,12 @@ species:
       specimen_type: holotype
       institution: IGCAGS
     size:
-      length_m: 1.1
-      estimate: true
+      length_m:
+        min: 1.0
+        max: 1.0
+      weight_kg:
+        min: 6
+        max: 6
     described: 1999
     authors: Zhao et al.
     described_in: xijin1999

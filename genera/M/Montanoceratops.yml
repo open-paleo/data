@@ -48,8 +48,12 @@ species:
       specimen_type: holotype
       institution: AMNH
     size:
-      length_m: 3
-      estimate: true
+      length_m:
+        min: 2.5
+        max: 2.5
+      weight_kg:
+        min: 170
+        max: 170
     described: 1951
     authors: Sternberg
     described_in: sternberg1951

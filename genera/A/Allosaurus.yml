@@ -61,9 +61,12 @@ species:
       institution: NMNH
       material: Neotype designated by the ICZN in 2024, replacing the fragmentary YPM 1930 original type material
     size:
-      length_m: 8.5
-      weight_kg: 6000
-      estimate: true
+      length_m:
+        min: 8.5
+        max: 8.5
+      weight_kg:
+        min: 6000.0
+        max: 6000.0
     described: 1877
     authors: Marsh
     described_in: marsh1877

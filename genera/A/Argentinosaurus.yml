@@ -46,9 +46,14 @@ species:
       specimen_type: holotype
       institution: MCF
     size:
-      length_m: 35
-      weight_kg: 100000
-      hip_height_m: 21.3
-      estimate: true
+      length_m:
+        min: 35.0
+        max: 35.0
+      weight_kg:
+        min: 100000.0
+        max: 100000.0
+      hip_height_m:
+        min: 21.3
+        max: 21.3
     described: 1993
     authors: Bonaparte and Coria

@@ -43,8 +43,9 @@ species:
         - 49.187283
         - -0.404763
     size:
-      length_m: 9
-      estimate: true
+      length_m:
+        min: 9
+        max: 9
     holotype:
       specimen_type: holotype
       institution: MHNC

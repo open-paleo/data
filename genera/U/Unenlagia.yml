@@ -44,8 +44,12 @@ species:
       specimen_type: holotype
       institution: MCF
     size:
-      length_m: 2.4
-      estimate: true
+      length_m:
+        min: 2.4
+        max: 2.4
+      weight_kg:
+        min: 9
+        max: 95
     described: 1997
     authors: Novas and Puerta
     described_in: novas1997

@@ -41,8 +41,12 @@ species:
         - -48.080399
         - -68.306702
     size:
-      length_m: 3
-      estimate: true
+      length_m:
+        min: 8.0
+        max: 8.0
+      weight_kg:
+        min: 1200
+        max: 1600
     described: 1979
     authors: Bonaparte and Vince
 

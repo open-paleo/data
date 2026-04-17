@@ -48,8 +48,12 @@ species:
       specimen_type: holotype
       institution: CM
     size:
-      length_m: 21.5
-      estimate: true
+      length_m:
+        min: 14.8
+        max: 14.8
+      weight_kg:
+        min: 12800
+        max: 12800
     described: 1903
     authors: Hatcher
   - name: Haplocanthosaurus delfsi

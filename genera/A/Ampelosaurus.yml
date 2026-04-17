@@ -45,7 +45,11 @@ species:
       specimen_type: holotype
       institution: MDE
     size:
-      length_m: 15
-      estimate: true
+      length_m:
+        min: 15.0
+        max: 15.0
+      weight_kg:
+        min: 8000
+        max: 9980
     described: 1995
     authors: Le Loeuff

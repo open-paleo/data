@@ -45,9 +45,12 @@ species:
         - -15.907778
         - 46.582222
     size:
-      length_m: 7
-      weight_kg: 1100000
-      estimate: true
+      length_m:
+        min: 5.6
+        max: 8.0
+      weight_kg:
+        min: 750
+        max: 1100
     described: 1955
     authors: Lavocat
 

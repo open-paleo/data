@@ -48,7 +48,11 @@ species:
       specimen_type: holotype
       institution: MCF
     size:
-      length_m: 13
-      estimate: true
+      length_m:
+        min: 5.5
+        max: 12.6
+      weight_kg:
+        min: 3000
+        max: 6000
     described: 2006
     authors: Coria and Currie

@@ -43,8 +43,12 @@ species:
       institution: FPDM
       material: Partial skull cataloged as FPDM-V-40-1 and FPDM-V-40-2
     size:
-      length_m: 4.7
-      estimate: true
+      length_m:
+        min: 4.5
+        max: 4.5
+      weight_kg:
+        min: 400
+        max: 400
     described: 2003
     authors: Kobayashi and Azuma
     described_in: kobayashi2003

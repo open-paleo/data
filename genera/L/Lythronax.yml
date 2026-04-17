@@ -44,9 +44,12 @@ species:
         - 37.191113
         - -111.646667
     size:
-      length_m: 8
-      weight_kg: 3
-      estimate: true
+      length_m:
+        min: 5.0
+        max: 8.0
+      weight_kg:
+        min: 500
+        max: 2500
     described: 2013
     authors: Loewen et al.
     described_in: loewen2013

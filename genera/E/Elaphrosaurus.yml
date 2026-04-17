@@ -54,7 +54,14 @@ species:
       specimen_type: holotype
       institution: HM
     size:
-      length_m: 6.2
-      estimate: true
+      length_m:
+        min: 6.0
+        max: 6.2
+      weight_kg:
+        min: 200
+        max: 210
+      hip_height_m:
+        min: 1.46
+        max: 1.46
     described: 1920
     authors: Janensch

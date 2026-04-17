@@ -44,7 +44,11 @@ species:
       specimen_type: holotype
       institution: GI
     size:
-      length_m: 2
-      estimate: true
+      length_m:
+        min: 2.0
+        max: 2.0
+      weight_kg:
+        min: 147
+        max: 147
     described: 1984
     authors: Barsbold and Perle

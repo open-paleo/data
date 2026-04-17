@@ -51,7 +51,11 @@ species:
       specimen_type: holotype
       institution: QM
     size:
-      length_m: 7
-      estimate: true
+      length_m:
+        min: 8.0
+        max: 8.0
+      weight_kg:
+        min: 2800
+        max: 8854
     described: 1981
     authors: Bartholomai and Molnar

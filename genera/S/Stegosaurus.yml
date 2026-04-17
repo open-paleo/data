@@ -51,10 +51,12 @@ species:
       formation: Morrison
       coordinates: [ 38.5, -105.2 ]
     size:
-      length_m: 9.0
-      weight_kg: 3100
-      hip_height_m: 2.8
-      estimate: true
+      length_m:
+        min: 6.5
+        max: 7.5
+      weight_kg:
+        min: 3500
+        max: 5300
     described: 1887
     authors: Marsh
     description: >

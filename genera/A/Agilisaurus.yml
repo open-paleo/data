@@ -51,8 +51,15 @@ species:
         - 29.411388
         - 104.852501
     size:
-      length_m: 1.5
-      estimate: true
+      length_m:
+        min: 1.2
+        max: 1.7
+      weight_kg:
+        min: 40
+        max: 40
+      hip_height_m:
+        min: 0.6
+        max: 0.6
     described: 1990
     authors: Peng
 

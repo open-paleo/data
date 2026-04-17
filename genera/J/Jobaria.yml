@@ -45,8 +45,12 @@ species:
       specimen_type: holotype
       institution: MNN
     size:
-      length_m: 21
-      estimate: true
+      length_m:
+        min: 16.0
+        max: 18.2
+      weight_kg:
+        min: 16000
+        max: 22400
     described: 1999
     authors: Sereno et al.
     described_in: sereno1999

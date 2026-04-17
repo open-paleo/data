@@ -46,9 +46,12 @@ species:
         - 43.491669
         - 101.275002
     size:
-      length_m: 9
-      weight_kg: 9
-      estimate: true
+      length_m:
+        min: 9.0
+        max: 10.0
+      weight_kg:
+        min: 3000
+        max: 5000
     described: 1954
     authors: Maleev
 

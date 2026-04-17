@@ -46,8 +46,12 @@ species:
         - 35.087502
         - -109.794441
     size:
-      length_m: 4
-      estimate: true
+      length_m:
+        min: 4.0
+        max: 4.0
+      weight_kg:
+        min: 23
+        max: 45
     described: 1995
     authors: Long and Murry
 

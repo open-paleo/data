@@ -41,8 +41,12 @@ species:
         - -38.844536
         - -68.030663
     size:
-      length_m: 0.8
-      estimate: true
+      length_m:
+        min: 1.7
+        max: 1.7
+      weight_kg:
+        min: 13
+        max: 13
     described: 1996
     authors: Coria and Salgado
     described_in: coria1996

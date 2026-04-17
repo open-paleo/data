@@ -47,8 +47,12 @@ species:
       specimen_type: holotype
       institution: BMNH
     size:
-      length_m: 3
-      estimate: true
+      length_m:
+        min: 3.5
+        max: 5.0
+      weight_kg:
+        min: 50
+        max: 140
     described: 1921
     authors: Andrews
     described_in: andrews1921

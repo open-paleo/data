@@ -40,8 +40,12 @@ species:
         - 23.168694
         - 79.972282
     size:
-      length_m: 7
-      estimate: true
+      length_m:
+        min: 7.0
+        max: 7.0
+      weight_kg:
+        min: 1200
+        max: 1200
     described: 1933
     authors: Huene
 

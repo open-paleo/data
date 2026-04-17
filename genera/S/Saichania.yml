@@ -47,7 +47,11 @@ species:
       specimen_type: holotype
       institution: "GIN(Mongolia)"
     size:
-      length_m: 6.6
-      estimate: true
+      length_m:
+        min: 5.0
+        max: 7.0
+      weight_kg:
+        min: 1400
+        max: 2000
     described: 1977
     authors: Maryanska

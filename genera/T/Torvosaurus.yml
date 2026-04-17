@@ -49,7 +49,11 @@ species:
       specimen_type: holotype
       institution: BYU
     size:
-      length_m: 10
-      estimate: true
+      length_m:
+        min: 9.0
+        max: 10.0
+      weight_kg:
+        min: 2000
+        max: 5000
     described: 1979
     authors: Galton and Jensen

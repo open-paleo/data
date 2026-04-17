@@ -54,9 +54,17 @@ species:
       specimen_type: holotype
       institution: GI
     size:
-      length_m: 6
-      weight_kg: 440
-      hip_height_m: 1.9
-      estimate: true
+      length_m:
+        min: 6.0
+        max: 6.0
+      weight_kg:
+        min: 400
+        max: 490
+      hip_height_m:
+        min: 1.9
+        max: 1.9
+      skull_length_m:
+        min: 0.33
+        max: 0.33
     described: 1972
     authors: Osmólska et al.

@@ -48,7 +48,11 @@ species:
       specimen_type: holotype
       institution: MUCPv
     size:
-      length_m: 2
-      estimate: true
+      length_m:
+        min: 1.0
+        max: 1.4
+      weight_kg:
+        min: 3
+        max: 3
     described: 1991
     authors: Bonaparte

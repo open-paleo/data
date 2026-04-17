@@ -43,8 +43,12 @@ species:
       specimen_type: holotype
       institution: MCF
     size:
-      length_m: 24
-      estimate: true
+      length_m:
+        min: 24.0
+        max: 24.0
+      weight_kg:
+        min: 14500
+        max: 29000
     described: 2006
     authors: Bonaparte et al.
     described_in: bonaparte2006

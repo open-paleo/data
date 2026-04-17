@@ -57,8 +57,18 @@ species:
       institution: OMNH
       material: Originally catalogued as M.U.O. 8-9-S9 before the University of Oklahoma's reorganization to OMNH
     size:
-      length_m: 11.5
-      estimate: true
+      length_m:
+        min: 11.0
+        max: 12.2
+      weight_kg:
+        min: 7500
+        max: 8400
+      hip_height_m:
+        min: 3.96
+        max: 3.96
+      skull_length_m:
+        min: 1.23
+        max: 1.29
     described: 1950
     authors: Stovall and Langston
     described_in: stovall1950

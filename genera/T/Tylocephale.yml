@@ -40,8 +40,12 @@ species:
         - 43.50032
         - 101.130188
     size:
-      length_m: 1.4
-      estimate: true
+      length_m:
+        min: 2.0
+        max: 2.0
+      weight_kg:
+        min: 40
+        max: 40
     described: 1974
     authors: Maryańska and Osmólska
 

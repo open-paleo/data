@@ -41,8 +41,12 @@ species:
         - 54.133331
         - 13.05
     size:
-      length_m: 2
-      estimate: true
+      length_m:
+        min: 2.0
+        max: 2.0
+      weight_kg:
+        min: 50
+        max: 240
     described: 1990
     authors: Haubold
 

@@ -40,8 +40,12 @@ species:
         - 43.491669
         - 101.275002
     size:
-      length_m: 13
-      estimate: true
+      length_m:
+        min: 12
+        max: 13
+      weight_kg:
+        min: 20000
+        max: 20000
     described: 1971
     authors: Nowinski
 

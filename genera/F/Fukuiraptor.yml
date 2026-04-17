@@ -46,8 +46,12 @@ species:
       specimen_type: holotype
       institution: FPDM
     size:
-      length_m: 4.2
-      estimate: true
+      length_m:
+        min: 4.2
+        max: 4.2
+      weight_kg:
+        min: 175
+        max: 590
     described: 2000
     authors: Azuma and Currie
     described_in: azuma2000

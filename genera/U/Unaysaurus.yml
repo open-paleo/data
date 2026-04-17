@@ -50,10 +50,12 @@ species:
       specimen_type: holotype
       institution: UFSM
     size:
-      length_m: 2.5
-      weight_kg: 70
-      hip_height_m: 0.8
-      estimate: true
+      length_m:
+        min: 2.5
+        max: 2.5
+      weight_kg:
+        min: 70
+        max: 70
     described: 2004
     authors: Leal et al.
     described_in: leal2004

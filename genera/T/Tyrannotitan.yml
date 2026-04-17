@@ -48,9 +48,12 @@ species:
       specimen_type: holotype
       institution: MPEF
     size:
-      length_m: 13
-      weight_kg: 7
-      estimate: true
+      length_m:
+        min: 11.6
+        max: 11.6
+      weight_kg:
+        min: 6000
+        max: 7400
     described: 2005
     authors: Novas et al.
     described_in: novas2005

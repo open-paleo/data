@@ -48,8 +48,15 @@ species:
         - 36.285702
         - -108.226997
     size:
-      length_m: 6.8
-      estimate: true
+      length_m:
+        min: 5.5
+        max: 6.0
+      weight_kg:
+        min: 2500
+        max: 2500
+      skull_length_m:
+        min: 2.16
+        max: 2.3
     described: 1923
     authors: Osborn
 

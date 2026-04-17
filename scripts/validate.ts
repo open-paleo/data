@@ -833,7 +833,7 @@ for (const [filePath, doc] of genusParsed)
 // 18. Size validity
 startCheck("Size validity");
 
-const sizeNumericFields: Array<keyof Size> = ["length_m", "weight_kg", "hip_height_m", "skull_length_m"];
+const sizeRangeFields: Array<keyof Size> = ["length_m", "weight_kg", "hip_height_m", "skull_length_m"];
 
 for (const [filePath, doc] of genusParsed)
 {
@@ -850,29 +850,39 @@ for (const [filePath, doc] of genusParsed)
         }
 
         const size = species.size;
-        for (const field of sizeNumericFields)
+        for (const field of sizeRangeFields)
         {
             const value = size[field];
             if (value !== undefined && value !== null)
             {
-                if (typeof value !== "number" || value <= 0)
+                if (typeof value !== "object" || value.min === undefined || value.max === undefined)
                 {
                     checkError(
                         "Size validity",
                         filePath,
-                        `species '${species.name ?? "?"}': size.${field} must be a positive number (got ${value})`);
+                        `species '${species.name ?? "?"}': size.${field} must be an object with min and max`);
                 }
-            }
-        }
-
-        if (size.estimate !== undefined && size.estimate !== null)
-        {
-            if (typeof size.estimate !== "boolean")
-            {
-                checkError(
-                    "Size validity",
-                    filePath,
-                    `species '${species.name ?? "?"}': size.estimate must be a boolean (got ${typeof size.estimate})`);
+                else if (typeof value.min !== "number" || value.min <= 0)
+                {
+                    checkError(
+                        "Size validity",
+                        filePath,
+                        `species '${species.name ?? "?"}': size.${field}.min must be a positive number (got ${value.min})`);
+                }
+                else if (typeof value.max !== "number" || value.max <= 0)
+                {
+                    checkError(
+                        "Size validity",
+                        filePath,
+                        `species '${species.name ?? "?"}': size.${field}.max must be a positive number (got ${value.max})`);
+                }
+                else if (value.min > value.max)
+                {
+                    checkError(
+                        "Size validity",
+                        filePath,
+                        `species '${species.name ?? "?"}': size.${field}.min (${value.min}) must not exceed max (${value.max})`);
+                }
             }
         }
     }
