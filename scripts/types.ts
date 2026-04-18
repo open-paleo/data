@@ -169,6 +169,26 @@ export type Size = {
 };
 
 /**
+ * A taxonomic synonym — a name that refers to the same taxon under a different designation.
+ */
+export type Synonym = {
+    /**
+     * The synonymized name (genus or binomial).
+     */
+    name: string;
+
+    /**
+     * The type of synonymy from the controlled vocabulary in schema.yml.
+     */
+    type: string;
+
+    /**
+     * A concise explanation of why this name is a synonym.
+     */
+    reason?: string;
+};
+
+/**
  * A species within a genus, including taxonomy, discovery, and physical data.
  */
 export type Species = {
@@ -233,9 +253,9 @@ export type Species = {
     description?: string;
 
     /**
-     * If status is "synonym", the valid species name this is a synonym of.
+     * Names that are synonyms of this species.
      */
-    synonym_of?: string;
+    synonyms?: Array<Synonym>;
 
     /**
      * Reference ID (from the genus references list) of the describing paper.
@@ -429,6 +449,11 @@ export type GenusData = {
     identifiers?: Array<Identifier>;
 
     /**
+     * Names that are synonyms of this genus.
+     */
+    synonyms?: Array<Synonym>;
+
+    /**
      * Species belonging to this genus.
      */
     species?: Array<Species>;
@@ -519,9 +544,14 @@ export type StageInfo = {
  */
 export type Schema = {
     /**
-     * Allowed taxonomic status values (e.g. "valid", "synonym", "disputed").
+     * Allowed taxonomic status values (e.g. "valid", "nomen dubium", "disputed").
      */
     status?: Array<string>;
+
+    /**
+     * Allowed synonym type values (e.g. "junior", "preoccupied", "reassigned").
+     */
+    synonym_types?: Array<string>;
 
     /**
      * Allowed diet categories.

@@ -184,11 +184,6 @@ window.YamlBuilder = (function ()
             species.etymology = values["Species etymology"];
         }
 
-        if (values["If synonym, synonym of"])
-        {
-            species.synonym_of = values["If synonym, synonym of"];
-        }
-
         if (values["Completeness"])
         {
             species.completeness = values["Completeness"].toLowerCase();
@@ -683,11 +678,6 @@ window.YamlBuilder = (function ()
         if (values["Status"])
         {
             speciesEntry.status = values["Status"].toLowerCase();
-        }
-
-        if (values["If synonym, synonym of"])
-        {
-            speciesEntry.synonym_of = values["If synonym, synonym of"];
         }
 
         if (values["Completeness"])

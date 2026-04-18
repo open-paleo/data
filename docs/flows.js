@@ -114,7 +114,6 @@ window.Flows = (function ()
                     { header: "Species name", type: "text", required: true, placeholder: "e.g., Tyrannosaurus rex", validate: "newSpecies" },
                     { header: "Species etymology", type: "text", placeholder: "e.g., \"tyrant lizard king\"" },
                     { header: "Status", type: "select", required: true, optionsKey: "status" },
-                    { header: "If synonym, synonym of", type: "text", required: true, placeholder: "e.g., Tyrannosaurus rex", showWhen: { field: "Status", value: "synonym" } },
                 ],
             },
             {
@@ -213,7 +212,6 @@ window.Flows = (function ()
                 fields: [
                     { header: "Species etymology", type: "text", currentKey: "species.etymology" },
                     { header: "Status", type: "select", optionsKey: "status", currentKey: "species.status" },
-                    { header: "If synonym, synonym of", type: "text", required: true, currentKey: "species.synonym_of", showWhen: { field: "Status", value: "synonym" } },
                     { header: "Period", type: "checkboxes", optionsKey: "periods", currentKey: "species.period.name" },
                     { header: "Stage", type: "checkboxes", optionsKey: "stages", filteredByPeriod: true, currentKey: "species.period.stage" },
                     { header: "Country", type: "search", optionsKey: "countries", currentKey: "species.location.country" },

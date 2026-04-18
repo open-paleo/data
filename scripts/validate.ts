@@ -167,6 +167,7 @@ const allowedSpecimenTypes = new Set(schema.specimen_types ?? []);
 const allowedIntegument = new Set(schema.integument ?? []);
 const allowedIntegumentEvidence = new Set(schema.integument_evidence ?? []);
 const allowedPaleoenvironments = new Set(schema.paleoenvironments ?? []);
+const allowedSynonymTypes = new Set(schema.synonym_types ?? []);
 const allowedIdentifierSources = new Set(schema.identifier_sources ?? []);
 const allowedCountries = new Set(Object.keys(schema.countries ?? {}));
 const allowedPeriods = new Set(schema.periods ?? []);
@@ -191,9 +192,6 @@ const scaffoldingClades = new Set([
     "Sauropterygia", "Plesiosauria", "Archosauria", "Pterosauria",
     "Crocodylomorpha", "Plantae",
 ]);
-
-// Collect all species names across all genus files (for synonym_of validation)
-const allSpeciesNames = new Set<string>();
 
 // 1. YAML syntax
 startCheck("YAML syntax");
@@ -228,22 +226,6 @@ for (const filePath of cladeFiles)
 
 // Also verify schema.yml and tree.yml parse (already loaded, but record success)
 // They were loaded above with fatal exit, so if we're here they parsed fine.
-
-for (const [, doc] of genusParsed)
-{
-    if (!doc || !Array.isArray(doc.species))
-    {
-        continue;
-    }
-
-    for (const species of doc.species)
-    {
-        if (species && species.name)
-        {
-            allSpeciesNames.add(species.name);
-        }
-    }
-}
 
 // 2. Schema compliance (status, diet)
 startCheck("Schema compliance");
@@ -794,38 +776,67 @@ for (const [filePath, doc] of genusParsed)
 // 17. Synonym integrity
 startCheck("Synonym integrity");
 
-for (const [filePath, doc] of genusParsed)
+/**
+ * Validates an array of synonym entries against the controlled vocabulary.
+ * @param synonyms - The synonym entries to validate.
+ * @param filePath - The file path for error reporting.
+ * @param context - A label like "genus" or "species 'T. rex'" for error messages.
+ */
+function validateSynonyms(synonyms: Array<Record<string, unknown>>, filePath: string, context: string): void
 {
-    if (!doc || !Array.isArray(doc.species))
+    for (const synonym of synonyms)
     {
-        continue;
-    }
-
-    for (const species of doc.species)
-    {
-        if (species && species.status === "synonym")
-        {
-            if (!species.synonym_of)
-            {
-                checkError(
-                    "Synonym integrity",
-                    filePath,
-                    `species '${species.name ?? "?"}': status is 'synonym' but missing 'synonym_of'`);
-            }
-            else if (!allSpeciesNames.has(species.synonym_of))
-            {
-                checkError(
-                    "Synonym integrity",
-                    filePath,
-                    `species '${species.name ?? "?"}': synonym_of '${species.synonym_of}' not found in any genus file`);
-            }
-        }
-        else if (species && species.synonym_of)
+        if (!synonym.name || typeof synonym.name !== "string")
         {
             checkError(
                 "Synonym integrity",
                 filePath,
-                `species '${species.name ?? "?"}': has 'synonym_of' but status is '${species.status}', not 'synonym'`);
+                `${context}: synonym entry missing required 'name' field`);
+        }
+
+        if (!synonym.type || typeof synonym.type !== "string")
+        {
+            checkError(
+                "Synonym integrity",
+                filePath,
+                `${context}: synonym '${synonym.name ?? "?"}' missing required 'type' field`);
+        }
+        else if (!allowedSynonymTypes.has(synonym.type as string))
+        {
+            checkError(
+                "Synonym integrity",
+                filePath,
+                `${context}: synonym '${synonym.name ?? "?"}' has invalid type '${synonym.type}' (must be one of: ${[...allowedSynonymTypes].join(", ")})`);
+        }
+    }
+}
+
+for (const [filePath, doc] of genusParsed)
+{
+    if (!doc)
+    {
+        continue;
+    }
+
+    if (Array.isArray(doc.synonyms))
+    {
+        validateSynonyms(
+            doc.synonyms as Array<Record<string, unknown>>,
+            filePath,
+            "genus");
+    }
+
+    if (Array.isArray(doc.species))
+    {
+        for (const species of doc.species)
+        {
+            if (species && Array.isArray(species.synonyms))
+            {
+                validateSynonyms(
+                    species.synonyms as Array<Record<string, unknown>>,
+                    filePath,
+                    `species '${species.name ?? "?"}'`);
+            }
         }
     }
 }
