@@ -28,6 +28,9 @@ synonyms:
   - name: Ingenia
     type: preoccupied
     reason: Name preoccupied by Ingenia (Nematoda)
+  - name: Ajancingenia
+    type: boycotted
+    reason: Replacement name for Ingenia, rejected by most authors due to ethical concerns over the description (including alleged plagiarism)
 species:
   - name: Heyuannia huangi
     etymology: "Named for Huang Dong, the director of the Heyuan Museum."
@@ -62,6 +65,30 @@ species:
     described: 2003
     authors: Lü
     described_in: lü2003
+  - name: Heyuannia yanshini
+    etymology: "Named in honour of academician Aleksandr Leonidovich Yanshin."
+    status: valid
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Campanian
+    location:
+      country: MN
+      formation: Barun Goyot
+    holotype:
+      specimen_id: [MPC-D 100/30]
+      specimen_type: holotype
+      institution: MPC
+    described: 1981
+    authors: Barsbold
+    synonyms:
+      - name: Ingenia yanshini
+        type: reassigned
+        reason: Originally described under Ingenia (1981); genus name was preoccupied
+      - name: Ajancingenia yanshini
+        type: reassigned
+        reason: Reclassified by Funston et al. (2018) as Heyuannia yanshini to avoid ethical concerns over Easter's redescription of Ajancingenia (which included plagiarized text)
 references:
   - id: lü2003
     authors: Lü, Junchang
