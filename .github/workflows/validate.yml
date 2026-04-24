@@ -34,7 +34,19 @@ jobs:
         run: npm run lint
 
       - name: Validate data
-        run: npm run validate
+        run: npm run validate | tee /tmp/validate-output.txt
+
+      - name: Post flagged-references PR comment
+        if: always() && github.event_name == 'pull_request'
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const run = require('./.github/scripts/flagged-references.cjs');
+            await run({
+                github,
+                context,
+                validatorOutputPath: '/tmp/validate-output.txt',
+            });
 
       - name: Spell check
         run: npx cspell "genera/**/*.yml" "clades/**/*.yml" --no-progress

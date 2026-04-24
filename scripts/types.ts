@@ -665,3 +665,47 @@ export type CheckResult = {
      */
     warnings: number;
 };
+
+/**
+ * A community-added flagged publication source that is not currently on
+ * Beall's list but has raised concerns in the paleontology community.
+ */
+export type FlaggedAddition = {
+    /**
+     * The publisher or journal name as it appears in reference fields.
+     */
+    name: string;
+
+    /**
+     * Human-readable justification for including this source.
+     */
+    reason?: string;
+
+    /**
+     * For journals: the publisher that owns this title, if applicable.
+     */
+    publisher?: string;
+};
+
+/**
+ * Top-level structure for flagged-sources.yml. Names in `beall` are
+ * mirrored from https://beallslist.net/ (filtered to paleontology-
+ * adjacent domains); names in `open_paleo_additions` are curated locally.
+ */
+export type FlaggedSources = {
+    /**
+     * Publishers flagged for reviewer verification.
+     */
+    publishers?: {
+        beall?: Array<string>;
+        open_paleo_additions?: Array<FlaggedAddition>;
+    };
+
+    /**
+     * Journals flagged for reviewer verification.
+     */
+    journals?: {
+        beall?: Array<string>;
+        open_paleo_additions?: Array<FlaggedAddition>;
+    };
+};

@@ -1,7 +1,7 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
 import { parse as parseYamlContent } from "yaml";
-import type { InstitutionEntry, TreeNode } from "./types.ts";
+import type { FlaggedSources, InstitutionEntry, TreeNode } from "./types.ts";
 
 /**
  * Parses a YAML file and returns the result cast to the specified type.
@@ -87,6 +87,48 @@ export function flattenInstitutionMap(registry: Record<string, InstitutionEntry>
                 result[alias] = displayName;
             }
         }
+    }
+
+    return result;
+}
+
+/**
+ * Loads the flagged-sources registry from flagged-sources.yml.
+ *
+ * @param sourcesPath - Absolute path to flagged-sources.yml.
+ * @returns The parsed structure, or an empty object if the file is absent.
+ */
+export function loadFlaggedSources(sourcesPath: string): FlaggedSources
+{
+    if (!fs.existsSync(sourcesPath))
+    {
+        return {};
+    }
+
+    return parseYamlContent(fs.readFileSync(sourcesPath, "utf8")) as FlaggedSources;
+}
+
+/**
+ * Builds a case-insensitive lookup set of flagged publisher (or journal)
+ * names from a FlaggedSources document. Every `beall` entry and every
+ * `open_paleo_additions` name is included; matching should be done against
+ * the trimmed, lowercased input.
+ *
+ * @param group - Either `flagged.publishers` or `flagged.journals`.
+ * @returns A Set of normalized names for O(1) membership checks.
+ */
+export function buildFlaggedSet(group: FlaggedSources["publishers"] | FlaggedSources["journals"]): Set<string>
+{
+    const result = new Set<string>();
+
+    for (const entry of group?.beall ?? [])
+    {
+        result.add(entry.trim().toLowerCase());
+    }
+
+    for (const addition of group?.open_paleo_additions ?? [])
+    {
+        result.add(addition.name.trim().toLowerCase());
     }
 
     return result;

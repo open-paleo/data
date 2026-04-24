@@ -9,7 +9,7 @@ import * as url from "node:url";
 
 import { parse as parseYamlContent } from "yaml";
 
-import { findYamlFiles } from "./utilities.ts";
+import { buildFlaggedSet, findYamlFiles, loadFlaggedSources } from "./utilities.ts";
 
 import type {
     GenusData,
@@ -177,6 +177,10 @@ const institutionRegistry = parseYamlContent(
     fs.readFileSync(path.join(root, "institutions.yaml"), "utf8"),
 ) as Record<string, unknown>;
 const allowedInstitutionKeys = new Set(Object.keys(institutionRegistry));
+
+const flaggedSources = loadFlaggedSources(path.join(root, "flagged-sources.yml"));
+const flaggedPublishers = buildFlaggedSet(flaggedSources.publishers);
+const flaggedJournals = buildFlaggedSet(flaggedSources.journals);
 
 const genusFiles = findYamlFiles(path.join(root, "genera"));
 const genusParsed = new Map<string, GenusData>();
@@ -611,6 +615,46 @@ for (const [filePath, doc] of allParsed)
         }
 
         seen.add(reference.id);
+    }
+}
+
+// 12b. Flagged publication sources — references citing publishers or
+// journals on flagged-sources.yml emit a warning for reviewer sign-off.
+startCheck("Flagged publication sources");
+
+for (const [filePath, doc] of allParsed)
+{
+    if (!doc || !Array.isArray(doc.references))
+    {
+        continue;
+    }
+
+    for (const reference of doc.references)
+    {
+        if (!reference)
+        {
+            continue;
+        }
+
+        const publisher = reference.publisher?.trim().toLowerCase();
+        const journal = reference.journal?.trim().toLowerCase();
+        const referenceLabel = reference.id ?? reference.title ?? "?";
+
+        if (publisher && flaggedPublishers.has(publisher))
+        {
+            checkWarning(
+                "Flagged publication sources",
+                filePath,
+                `reference '${referenceLabel}': publisher '${reference.publisher}' is flagged for reviewer verification`);
+        }
+
+        if (journal && flaggedJournals.has(journal))
+        {
+            checkWarning(
+                "Flagged publication sources",
+                filePath,
+                `reference '${referenceLabel}': journal '${reference.journal}' is flagged for reviewer verification`);
+        }
     }
 }
 

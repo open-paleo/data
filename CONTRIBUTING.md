@@ -16,6 +16,14 @@ This is a scientific dataset. All taxonomic data must meet the following standar
 - **Use the most recent consensus where one exists.** When multiple competing phylogenies have been published, prefer the most recent comprehensive analysis. Note the alternatives in the genus or clade file if the placement is actively debated.
 - **Mark disputed taxa honestly.** If a species or placement is controversial, use `status: disputed` and document the competing views in the description and references. Do not present one side of an active debate as settled fact.
 
+## Flagged Publication Sources
+
+Open Paleo maintains a list of publishers and journals that warrant additional scrutiny before being cited, stored in [`flagged-sources.yml`](./flagged-sources.yml). The list mirrors the Standalone Publishers and Standalone Journals from [Beall's List](https://beallslist.net/) — filtered to paleontology's scientific neighborhood — plus a small number of community-added sources (e.g. MDPI) that are no longer on Beall's active list but remain contested.
+
+Flagged sources are **not banned**. When a reference cites a flagged publisher or journal, the validator emits a warning and the PR automation posts a comment asking the reviewer to confirm that the specific citation is acceptable (widely cited, peer-reviewed in practice, no red flags in the paper itself). Many individual papers from flagged publishers are perfectly sound — the flag signals "look more carefully," not "reject."
+
+**Proposing additions or removals.** Open a PR that edits `flagged-sources.yml` with a brief justification — link to the relevant Beall's update, community discussion, or retraction notice. Additions to the `open_paleo_additions:` blocks should carry a `reason:` field. Periodic re-syncs with the upstream Beall's List are done manually by maintainers.
+
 ## Taxonomic Disputes and Consensus
 
 Open Paleo maintains a single phylogenetic tree. We do not maintain
