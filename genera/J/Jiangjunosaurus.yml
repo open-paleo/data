@@ -1,6 +1,9 @@
 genus: Jiangjunosaurus
 parent: Stegosauridae
-etymology: Named after Jiangjunmiao ('temple of the general'), an abandoned town near the discovery site in Xinjiang, China, with Chinese jiangjun meaning 'general', combined with Greek sauros (lizard); meaning 'general's temple lizard'
+etymology: Named after Jiangjunmiao ('temple of the general'), an abandoned town
+  near the discovery site in Xinjiang, China, with Chinese jiangjun meaning
+  'general', combined with Greek sauros (lizard); meaning 'general's temple
+  lizard'
 description: Jiangjunosaurus is an extinct genus of herbivorous stegosaurian
   dinosaurs from the Oxfordian-age (Upper Jurassic) Shishugou Formation of the
   Junggar Basin, Xinjiang, China.
@@ -15,7 +18,8 @@ identifiers:
     id: Q135221
 species:
   - name: Jiangjunosaurus junggarensis
-    etymology: "Named for the Junggar Basin of Xinjiang, China, where the holotype was discovered."
+    etymology: "Named for the Junggar Basin of Xinjiang, China, where the holotype
+      was discovered."
     status: valid
     type_species: true
     period:
@@ -34,7 +38,7 @@ species:
         - 44.837215
         - 90.064598
     holotype:
-      specimen_id: [IVPP V 14724]
+      specimen_id: [ IVPP V 14724 ]
       specimen_type: holotype
       institution: IVPP
     size:
@@ -46,3 +50,14 @@ species:
         max: 2500
     described: 2007
     authors: Jia et al.
+    described_in: jia2007
+references:
+  - id: jia2007
+    authors: Jia, C.; Forster, C. A.; X. Xu, J. M. Clark
+    year: 2007
+    title: The first stegosaur (Dinosauria, Ornithischia) from the Upper Jurassic
+      Shishugou Formation of Xinjiang, China
+    journal: Acta Geologica Sinica
+    volume: "81"
+    issue: "3"
+    pages: 351-356

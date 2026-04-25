@@ -1,6 +1,8 @@
 genus: Gobititan
 parent: Euhelopodidae
-etymology: Named for the Gobi Desert region where the fossils were found, combined with the Titans of Greek mythology, in reference to the animal's large body size.
+etymology: Named for the Gobi Desert region where the fossils were found,
+  combined with the Titans of Greek mythology, in reference to the animal's
+  large body size.
 description: Gobititan is a genus of herbivorous sauropod dinosaur from the
   Aptian faunal stage of the Early Cretaceous. The name of this genus is derived
   from the Gobi Desert region and the Titans of Greek mythology, which is a
@@ -46,8 +48,19 @@ species:
         min: 20000
         max: 20000
     holotype:
-      specimen_id: [IVPP 12579]
+      specimen_id: [ IVPP 12579 ]
       specimen_type: holotype
       institution: IVPP
     described: 2003
     authors: You et al.
+    described_in: you2003
+references:
+  - id: you2003
+    authors: You, H.; Tang, F.; Z. Luo
+    year: 2003
+    title: "A new basal titanosaur (Dinosauria: Sauropoda) from the Early Cretaceous
+      of China"
+    journal: Acta Geologica Sinica
+    volume: "77"
+    issue: "4"
+    pages: 424-429

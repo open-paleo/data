@@ -1,6 +1,7 @@
 genus: Yingshanosaurus
 parent: Stegosauridae
-etymology: Named after Yingshan (a locality in Sichuan Province, China), combined with Greek sauros meaning 'lizard'; translates as 'Yingshan lizard'
+etymology: Named after Yingshan (a locality in Sichuan Province, China),
+  combined with Greek sauros meaning 'lizard'; translates as 'Yingshan lizard'
 description: Yingshanosaurus is an extinct genus of stegosaurian dinosaurs from
   the Middle Jurassic of what is now Southwestern China. It is known from a
   partial skeleton discovered in 1983, including back, sacrum, and tail
@@ -25,7 +26,8 @@ identifiers:
     id: "4823128"
 species:
   - name: Yingshanosaurus jichuanensis
-    etymology: "Named for Jichuan Township, the type locality in Sichuan Province, China, where the holotype skeleton was discovered."
+    etymology: "Named for Jichuan Township, the type locality in Sichuan Province,
+      China, where the holotype skeleton was discovered."
     status: valid
     type_species: true
     period:
@@ -45,7 +47,7 @@ species:
         - 31.07843
         - 106.619347
     holotype:
-      specimen_id: [CV00722]
+      specimen_id: [ CV00722 ]
       specimen_type: holotype
       institution: CV
     size:
@@ -54,3 +56,15 @@ species:
         max: 5.0
     described: 1986
     authors: Zhou
+    described_in: zhou1986
+references:
+  - id: zhou1986
+    authors: Zhou, S.
+    year: 1986
+    title: De l'origine et de l'évolution systématique des Stegosauria à la lumière
+      des fossiles connus [On the origin and systematic evolution of the
+      Stegosauria in light of the known fossils]
+    journal: Les Dinosaures de La Chine à La France, Colloque International de
+      Paléontologie, Toulouse, France, 2-6 Septembre 1985; Muséum d'Histoire
+      Naturelle de Toulouse, Toulouse
+    pages: 31-38

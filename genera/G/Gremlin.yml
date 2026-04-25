@@ -1,12 +1,13 @@
 genus: Gremlin
 parent: Leptoceratopsidae
 etymology: "Named for the gremlin, a small troublesome mythical creature."
-description: Gremlin is a genus of leptoceratopsid ceratopsian dinosaurs from the
-  Campanian stage of the Cretaceous period, 77 million years ago. It contains one
-  species, Gremlin slobodorum, named in 2023 by Michael J. Ryan and colleagues from
-  a frontal bone found in the Oldman Formation of Alberta. It can be distinguished
-  from other leptoceratopsids by a ridge on the frontal that runs transversely from
-  the midline of the skull outwards to the top end of the orbit.
+description: Gremlin is a genus of leptoceratopsid ceratopsian dinosaurs from
+  the Campanian stage of the Cretaceous period, 77 million years ago. It
+  contains one species, Gremlin slobodorum, named in 2023 by Michael J. Ryan and
+  colleagues from a frontal bone found in the Oldman Formation of Alberta. It
+  can be distinguished from other leptoceratopsids by a ridge on the frontal
+  that runs transversely from the midline of the skull outwards to the top end
+  of the orbit.
 diet: herbivore
 locomotion: quadrupedal
 paleoenvironment:
@@ -19,7 +20,9 @@ identifiers:
     id: Q2274654
 species:
   - name: Gremlin slobodorum
-    etymology: "Named in honor of Ed and Wendy Sloboda, who have contributed to paleontology in Canada and were involved in the discovery of the holotype."
+    etymology: "Named in honor of Ed and Wendy Sloboda, who have contributed to
+      paleontology in Canada and were involved in the discovery of the
+      holotype."
     status: valid
     type_species: true
     period:
@@ -41,6 +44,17 @@ species:
     authors: Ryan et al.
 
     holotype:
-      specimen_id: [TMP 2011.053.0027]
+      specimen_id: [ TMP 2011.053.0027 ]
       specimen_type: holotype
       institution: TMP
+    described_in: ryan2023
+references:
+  - id: ryan2023
+    authors: Ryan, M. J.; Micucci, L.; H. Rizo, C. Sullivan, Y.-N. Lee, D. C. Evans
+    year: 2023
+    title: "A new Late Cretaceous leptoceratopsid (Dinosauria: Ceratopsia) from the
+      Oldman Formation (Campanian) of Alberta, Canada"
+    journal: "Windows into Sauropsid and Synapsid Evolution: Essays in Honor of
+      Prof. Louis L. Jacobs"
+    pages: 151–165
+    publisher: Dinosaur Science Center Press

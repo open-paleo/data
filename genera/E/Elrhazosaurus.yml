@@ -1,6 +1,7 @@
 genus: Elrhazosaurus
 parent: Dryosauridae
-etymology: "From Elrhaz (the Elrhaz Formation of Niger, where it was found) + Greek sauros (lizard): 'Elrhaz lizard'."
+etymology: "From Elrhaz (the Elrhaz Formation of Niger, where it was found) +
+  Greek sauros (lizard): 'Elrhaz lizard'."
 description: Elrhazosaurus is a genus of basal iguanodontian dinosaur, known
   from isolated bones found in Early Cretaceous rocks of Niger. These bones were
   initially thought to belong to a species of the related dryosaurid
@@ -20,7 +21,8 @@ identifiers:
     id: "47460125"
 species:
   - name: Elrhazosaurus nigeriensis
-    etymology: "Named for Niger, the country where the holotype was collected from the Elrhaz Formation."
+    etymology: "Named for Niger, the country where the holotype was collected from
+      the Elrhaz Formation."
     status: valid
     type_species: true
     period:
@@ -39,8 +41,20 @@ species:
         - 16.466667
         - 9.166667
     holotype:
-      specimen_id: [MNHN GDF 332]
+      specimen_id: [ MNHN GDF 332 ]
       specimen_type: holotype
       institution: MNHN
     described: 2009
     authors: Galton
+    described_in: galton2009
+references:
+  - id: galton2009
+    authors: Galton, P. M.
+    year: 2009
+    title: Notes on Neocomian (Lower Cretaceous) ornithopod dinosaurs from England -
+      Hypsilophodon, Valdosaurus, "Camptosaurus", "Iguanodon" - and referred
+      specimens from Romania and elsewhere
+    journal: Revue de Paléobiologie, Genève
+    volume: "28"
+    issue: "1"
+    pages: 211-273

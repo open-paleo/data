@@ -1,6 +1,7 @@
 genus: Alamosaurus
 parent: Saltasaurinae
-etymology: Named after the Ojo Alamo rock formation combined with Greek 'sauros' meaning 'lizard'; meaning 'Ojo Alamo lizard'
+etymology: Named after the Ojo Alamo rock formation combined with Greek 'sauros'
+  meaning 'lizard'; meaning 'Ojo Alamo lizard'
 pronunciation:
   phonetic: AL-a-mo-SAWR-us
   ipa: /ˌæləmoʊˈsɔːrəs/
@@ -26,7 +27,8 @@ identifiers:
     id: "4658371"
 species:
   - name: Alamosaurus sanjuanensis
-    etymology: "Named for San Juan County, New Mexico, where the first remains were found."
+    etymology: "Named for San Juan County, New Mexico, where the first remains were
+      found."
     status: valid
     type_species: true
     period:
@@ -46,7 +48,7 @@ species:
         - 36.3148
         - -108.030701
     holotype:
-      specimen_id: [USNM 10486]
+      specimen_id: [ USNM 10486 ]
       specimen_type: holotype
       institution: NMNH
     size:
@@ -58,3 +60,13 @@ species:
         max: 80000
     described: 1922
     authors: Gilmore
+    described_in: gilmore1922
+references:
+  - id: gilmore1922
+    authors: Gilmore, C. W.
+    year: 1922
+    title: A new sauropod dinosaur from the Ojo Alamo Formation of New Mexico
+    journal: Smithsonian Miscellaneous Collections
+    volume: "72"
+    issue: "34"
+    pages: 1-9

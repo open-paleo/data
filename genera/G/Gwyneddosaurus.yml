@@ -1,6 +1,8 @@
 genus: Gwyneddosaurus
 parent: Archosauromorpha
-etymology: Named for Gwynedd (the historical Welsh region name applied to Montgomery County, Pennsylvania, where the fossils were found), combined with Greek 'sauros' meaning 'lizard'.
+etymology: Named for Gwynedd (the historical Welsh region name applied to
+  Montgomery County, Pennsylvania, where the fossils were found), combined with
+  Greek 'sauros' meaning 'lizard'.
 locomotion: bipedal
 paleoenvironment:
   - lacustrine
@@ -27,7 +29,8 @@ identifiers:
     id: "4818318"
 species:
   - name: Gwyneddosaurus erici
-    etymology: "Derived from the name 'Eric', possibly the discoverer of the specimen, though the precise honoree is unclear."
+    etymology: "Derived from the name 'Eric', possibly the discoverer of the
+      specimen, though the precise honoree is unclear."
     status: valid
     type_species: true
     period:
@@ -48,7 +51,17 @@ species:
     authors: Bock
 
     holotype:
-      specimen_id: [ANSP 15072]
+      specimen_id: [ ANSP 15072 ]
       specimen_type: holotype
       institution: ANSP
-      material: Skull fragments, vertebrae, ribs, gastralia, partial shoulder and hip bones, forelimb and hindlimb elements
+      material: Skull fragments, vertebrae, ribs, gastralia, partial shoulder and hip
+        bones, forelimb and hindlimb elements
+    described_in: bock1945
+references:
+  - id: bock1945
+    authors: Bock, W.
+    year: 1945
+    title: A new small reptile from the Triassic of Pennsylvania
+    journal: Notulae Naturae
+    volume: "154"
+    pages: 1-8

@@ -1,6 +1,8 @@
 genus: Diclonius
 parent: Hadrosauridae
-etymology: From Greek diklos ('double') + klonos ('sprout' or 'shoot'), meaning 'double sprout', referring to the tooth-replacement method in which newly erupting teeth could be in use simultaneously with older worn teeth.
+etymology: From Greek diklos ('double') + klonos ('sprout' or 'shoot'), meaning
+  'double sprout', referring to the tooth-replacement method in which newly
+  erupting teeth could be in use simultaneously with older worn teeth.
 description: Diclonius is a genus of dinosaur from the Late Cretaceous. It was a
   hadrosaur based solely on teeth. Its fossils were found in the Judith River
   Formation of Montana, northern US. The name is in reference to the method of
@@ -21,7 +23,9 @@ identifiers:
     id: "10579397"
 species:
   - name: Diclonius pentagonus
-    etymology: "From Greek 'pentagonus' meaning 'five-angled' or 'pentagonal', likely referring to the cross-sectional shape of the teeth on which the taxon was based."
+    etymology: "From Greek 'pentagonus' meaning 'five-angled' or 'pentagonal',
+      likely referring to the cross-sectional shape of the teeth on which the
+      taxon was based."
     status: valid
     type_species: true
     period:
@@ -37,8 +41,17 @@ species:
         - 45.135834
         - -102.497498
     holotype:
-      specimen_id: [AMNH 3972]
+      specimen_id: [ AMNH 3972 ]
       specimen_type: holotype
       institution: AMNH
     described: 1876
     authors: Cope
+    described_in: cope1876
+references:
+  - id: cope1876
+    authors: Cope, E. D.
+    year: 1876
+    title: Descriptions of some vertebrate remains from the Fort Union Beds of Montana
+    journal: Proceedings of the Academy of Natural Sciences of Philadelphia
+    volume: "28"
+    pages: 248-261

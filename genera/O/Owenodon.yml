@@ -1,6 +1,7 @@
 genus: Owenodon
 parent: Dryomorpha
-etymology: Named for Richard Owen, the British paleontologist who first described the specimen, combined with Greek 'odon' meaning 'tooth'.
+etymology: Named for Richard Owen, the British paleontologist who first
+  described the specimen, combined with Greek 'odon' meaning 'tooth'.
 description: Owenodon is a genus of iguanodontian dinosaur known from a partial
   lower jaw discovered in Early Cretaceous-aged rocks of Dorset, United Kingdom,
   and possibly also Romania and Spain. The first and only definitive specimen
@@ -18,7 +19,8 @@ identifiers:
     id: Q2028410
 species:
   - name: Owenodon hoggii
-    etymology: "Named for naturalist A. J. Hogg, who originally collected the fossil mandible."
+    etymology: "Named for naturalist A. J. Hogg, who originally collected the fossil
+      mandible."
     status: valid
     type_species: true
     period:
@@ -39,8 +41,20 @@ species:
         - 50.602222
         - -1.949167
     holotype:
-      specimen_id: [NHMUK PV R 2998]
+      specimen_id: [ NHMUK PV R 2998 ]
       specimen_type: holotype
       institution: BMNH
     described: 2009
     authors: Galton
+    described_in: galton2009
+references:
+  - id: galton2009
+    authors: Galton, P. M.
+    year: 2009
+    title: Notes on Neocomian (Lower Cretaceous) ornithopod dinosaurs from England -
+      Hypsilophodon, Valdosaurus, "Camptosaurus", "Iguanodon" - and referred
+      specimens from Romania and elsewhere
+    journal: Revue de Paléobiologie, Genève
+    volume: "28"
+    issue: "1"
+    pages: 211-273

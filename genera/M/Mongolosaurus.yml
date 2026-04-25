@@ -1,6 +1,7 @@
 genus: Mongolosaurus
 parent: Titanosauria
-etymology: Named after Mongolia, where the fossil was discovered, combined with Greek 'sauros' (lizard); meaning 'Mongolia lizard'
+etymology: Named after Mongolia, where the fossil was discovered, combined with
+  Greek 'sauros' (lizard); meaning 'Mongolia lizard'
 description: Mongolosaurus is a genus of titanosauriform sauropod dinosaur which
   lived during the Early Cretaceous of China.
 diet: herbivore
@@ -18,7 +19,9 @@ identifiers:
     id: "52571930"
 species:
   - name: Mongolosaurus haplodon
-    etymology: "From Ancient Greek 'haploos' meaning 'single' and 'odon' meaning 'tooth', referring to the single tooth that served as the basis for the original description."
+    etymology: "From Ancient Greek 'haploos' meaning 'single' and 'odon' meaning
+      'tooth', referring to the single tooth that served as the basis for the
+      original description."
     status: valid
     type_species: true
     period:
@@ -38,8 +41,18 @@ species:
         - 41.416698
         - 102.066704
     holotype:
-      specimen_id: [AMNH 6710]
+      specimen_id: [ AMNH 6710 ]
       specimen_type: holotype
       institution: AMNH
     described: 1933
     authors: Gilmore
+    described_in: gilmore1933
+references:
+  - id: gilmore1933
+    authors: Gilmore, C. W.
+    year: 1933
+    title: Two new dinosaurian reptiles from Mongolia with notes on some fragmentary
+      specimens
+    journal: American Museum Novitates
+    volume: "679"
+    pages: 1-20

@@ -2,7 +2,9 @@ genus: Stokesosaurus
 parent: Tyrannosauroidea
 pronunciation:
   phonetic: STOHK-so-SAWR-us
-etymology: "Named for Utah geologist William Lee Stokes, who excavated at the Cleveland-Lloyd Dinosaur Quarry where the fossils were found, combined with Greek 'sauros' meaning 'lizard'; meaning 'Stokes' lizard.'"
+etymology: "Named for Utah geologist William Lee Stokes, who excavated at the
+  Cleveland-Lloyd Dinosaur Quarry where the fossils were found, combined with
+  Greek 'sauros' meaning 'lizard'; meaning 'Stokes' lizard.'"
 description: Stokesosaurus is a genus of early tyrannosauroid theropod dinosaurs
   from the late Jurassic period of Utah, United States. They were small, bipedal
   predators measuring around 3 to 4 meters (9.8 to 13.1 ft) in length.
@@ -22,7 +24,8 @@ identifiers:
     id: "4434362"
 species:
   - name: Stokesosaurus clevelandi
-    etymology: "Named for Cleveland, the town in Utah near the Cleveland-Lloyd Dinosaur Quarry where the holotype was excavated."
+    etymology: "Named for Cleveland, the town in Utah near the Cleveland-Lloyd
+      Dinosaur Quarry where the holotype was excavated."
     status: valid
     type_species: true
     period:
@@ -49,8 +52,18 @@ species:
         min: 60
         max: 60
     holotype:
-      specimen_id: [UMNH VP 7473]
+      specimen_id: [ UMNH VP 7473 ]
       specimen_type: holotype
       institution: UMNH
     described: 1974
     authors: Madsen
+    described_in: madsen1974
+references:
+  - id: madsen1974
+    authors: Madsen, J. H.
+    year: 1974
+    title: A new theropod dinosaur from the Upper Jurassic of Utah
+    journal: Journal of Paleontology
+    volume: "48"
+    issue: "1"
+    pages: 27-31

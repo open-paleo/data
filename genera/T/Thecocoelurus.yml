@@ -1,6 +1,8 @@
 genus: Thecocoelurus
 parent: Ornithomimosauria
-etymology: "A contraction of the genus names Thecospondylus and Coelurus, translating to 'sheathed hollow form', reflecting the specimen's dual taxonomic history under those two genera"
+etymology: "A contraction of the genus names Thecospondylus and Coelurus,
+  translating to 'sheathed hollow form', reflecting the specimen's dual
+  taxonomic history under those two genera"
 description: Thecocoelurus is a genus of theropod dinosaur from the early
   Cretaceous period of England. Its type specimen was discovered in strata from
   the Wessex Formation on the Isle of Wight by the Reverend William Fox, and
@@ -25,7 +27,8 @@ identifiers:
     id: "4578250"
 species:
   - name: Thecocoelurus daviesi
-    etymology: "Named in honor of William Davies (1814–1891), a paleontologist at the British Museum (Natural History)."
+    etymology: "Named in honor of William Davies (1814–1891), a paleontologist at
+      the British Museum (Natural History)."
     status: valid
     type_species: true
     period:
@@ -44,7 +47,16 @@ species:
       region: England
       formation: Wessex
     holotype:
-      specimen_id: [NHMUK PV R181]
+      specimen_id: [ NHMUK PV R181 ]
       specimen_type: holotype
       institution: BMNH
       material: Partial cervical vertebra from the Wessex Formation
+    described_in: huene1923
+references:
+  - id: huene1923
+    authors: Huene, F. v.
+    year: 1923
+    title: Carnivorous Saurischia in Europe since the Triassic
+    journal: Bulletin of the Geological Society of America
+    volume: "34"
+    pages: 449-458

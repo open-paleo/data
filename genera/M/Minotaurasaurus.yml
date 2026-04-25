@@ -1,6 +1,7 @@
 genus: Minotaurasaurus
 parent: Ankylosaurinae
-etymology: Named after the Minotaur of Greek mythology (the bull of Minos) combined with Greek 'sauros' (lizard); meaning 'Minos's bull reptile'.
+etymology: Named after the Minotaur of Greek mythology (the bull of Minos)
+  combined with Greek 'sauros' (lizard); meaning 'Minos's bull reptile'.
 description: Minotaurasaurus is a monospecific genus of ankylosaurid dinosaur
   that lived in Mongolia during the Late Cretaceous (late Campanian stage,
   ~75-71 Ma) in what is now the Djadochta Formation. The type and only species,
@@ -22,7 +23,8 @@ identifiers:
     id: "4965730"
 species:
   - name: Minotaurasaurus ramachandrani
-    etymology: "Named for Vilayanur S. Ramachandran, the neuroscientist who purchased the type skull at a fossil show in Tucson, Arizona in 2003."
+    etymology: "Named for Vilayanur S. Ramachandran, the neuroscientist who
+      purchased the type skull at a fossil show in Tucson, Arizona in 2003."
     status: disputed
     type_species: true
     period:
@@ -44,6 +46,17 @@ species:
       region: Omnogov
       formation: Djadochta
     holotype:
-      specimen_id: [INBR21004]
+      specimen_id: [ INBR21004 ]
       specimen_type: holotype
       institution: INBR
+    described_in: miles2009
+references:
+  - id: miles2009
+    authors: Miles, C. A.; Miles, C. J.
+    year: 2009
+    title: Skull of Minotaurasaurus ramachandrani, a new Cretaceous ankylosaur from
+      the Gobi Desert
+    journal: Current Science
+    volume: "96"
+    issue: "1"
+    pages: 65-70

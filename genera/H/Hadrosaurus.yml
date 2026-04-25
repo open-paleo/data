@@ -29,10 +29,13 @@ identifiers:
 synonyms:
   - name: Ornithotarsus
     type: possible subjective
-    reason: Possible junior subjective synonym of Hadrosaurus; identification is tentative. Per Olshevsky's Dinosaur Genera List.
+    reason: Possible junior subjective synonym of Hadrosaurus; identification is
+      tentative. Per Olshevsky's Dinosaur Genera List.
 species:
   - name: Hadrosaurus foulkii
-    etymology: "Named for William Parker Foulke, the amateur naturalist who excavated and brought the holotype specimen to the attention of paleontologist Joseph Leidy in 1858."
+    etymology: "Named for William Parker Foulke, the amateur naturalist who
+      excavated and brought the holotype specimen to the attention of
+      paleontologist Joseph Leidy in 1858."
     status: valid
     type_species: true
     period:
@@ -51,7 +54,7 @@ species:
         - 40.299999
         - -74.300003
     holotype:
-      specimen_id: [ANSP 10005]
+      specimen_id: [ ANSP 10005 ]
       specimen_type: holotype
       institution: ANS
       material: Partial skeleton cataloged as ANSP 9201-9204 and ANSP 10005
@@ -64,3 +67,12 @@ species:
         max: 4000
     described: 1858
     authors: Leidy
+    described_in: leidy1858
+references:
+  - id: leidy1858
+    authors: Leidy, J.
+    year: 1858
+    title: "[On the bones of a huge herbivorous saurian near Haddonfield]"
+    journal: Proceedings of the Academy of Natural Sciences of Philadelphia
+    volume: "10"
+    pages: 215-218

@@ -3,7 +3,9 @@ parent: Camarasauromorpha
 pronunciation:
   phonetic: tay-WAYL-chay-SAWR-us
   ipa: /teɪhwɛltʃeɪsɔːrəs/
-etymology: "Named in honor of the Tehuelche people, the indigenous inhabitants of the Argentinian province of Chubut where the fossil was first found, combined with Greek 'sauros' meaning 'lizard'."
+etymology: "Named in honor of the Tehuelche people, the indigenous inhabitants
+  of the Argentinian province of Chubut where the fossil was first found,
+  combined with Greek 'sauros' meaning 'lizard'."
 description: Tehuelchesaurus is a genus of macronarian sauropod dinosaur from
   the Late Jurassic (Oxfordian to Tithonian) of Argentina. It is named in honor
   of the Tehuelche people, native to the Argentinian province of Chubut, where
@@ -22,7 +24,8 @@ identifiers:
     id: "4823524"
 species:
   - name: Tehuelchesaurus benitezii
-    etymology: "Named for Aldo Benitez, who discovered the holotype in Chubut Province, Argentina."
+    etymology: "Named for Aldo Benitez, who discovered the holotype in Chubut
+      Province, Argentina."
     status: valid
     type_species: true
     period:
@@ -49,8 +52,18 @@ species:
         min: 15.0
         max: 15.0
     holotype:
-      specimen_id: [MPEF-PV 1125]
+      specimen_id: [ MPEF-PV 1125 ]
       specimen_type: holotype
       institution: MPEF
     described: 1999
     authors: Rich et al.
+    described_in: rich1999
+references:
+  - id: rich1999
+    authors: Rich, T. H.; Vickers-Rich, P.; O. Gimenez, R. Cúneo, P. Puerta, R. Vacca
+    year: 1999
+    title: A new sauropod dinosaur from Chubut province, Argentina
+    journal: Proceedings of the Second Gondwanan Dinosaur Symposium, National
+      Science Museum Monographs
+    volume: "15"
+    pages: 61-84

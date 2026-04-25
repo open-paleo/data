@@ -2,7 +2,9 @@ genus: Ohmdenosaurus
 parent: Sauropoda
 pronunciation:
   phonetic: OHM-den-o-SAWR-us
-etymology: Named after the village of Ohmden in Baden-Württemberg, Germany, near where the specimen was found, combined with Greek sauros meaning 'lizard'; meaning 'Ohmden lizard'
+etymology: Named after the village of Ohmden in Baden-Württemberg, Germany, near
+  where the specimen was found, combined with Greek sauros meaning 'lizard';
+  meaning 'Ohmden lizard'
 description: Ohmdenosaurus is a genus of sauropod dinosaur that lived during the
   Early Jurassic epoch in what is now Germany. The only specimen – a tibia
   (shinbone) and ankle – was discovered in rocks of the Posidonia Shale near the
@@ -24,7 +26,9 @@ identifiers:
     id: "4822751"
 species:
   - name: Ohmdenosaurus liasicus
-    etymology: "From Latin 'liasicus' meaning 'of the Lias', referring to the Lias, an old name for the Lower Jurassic of Europe, in which the holotype was found."
+    etymology: "From Latin 'liasicus' meaning 'of the Lias', referring to the Lias,
+      an old name for the Lower Jurassic of Europe, in which the holotype was
+      found."
     status: valid
     type_species: true
     period:
@@ -46,10 +50,23 @@ species:
       specimen_type: holotype
       institution: MHH
       status: uncatalogued
-      material: Tibia, astragalus, and calcaneus; originally identified as a plesiosaur, later recognised as a sauropod by Wild (1978). No formal catalogue number known in the published literature
+      material: Tibia, astragalus, and calcaneus; originally identified as a
+        plesiosaur, later recognised as a sauropod by Wild (1978). No formal
+        catalogue number known in the published literature
     size:
       length_m:
         min: 3
         max: 4
     described: 1978
     authors: Wild
+    described_in: wild1978
+references:
+  - id: wild1978
+    authors: Wild, R.
+    year: 1978
+    title: Ein Sauropoden-Rest (Reptilia, Saurischia) aus dem Posidonienschiefer
+      (Lias, Toarcium) von Holzmaden [A new sauropod (Reptilia, Saurischia) from
+      the Posidonienschiefer (Lias, Toarcian) of Holzmaden]
+    journal: Stuttgarter Beiträge zur Naturkunde, Serie B (Geologie und Paläontologie)
+    volume: "41"
+    pages: 1-15

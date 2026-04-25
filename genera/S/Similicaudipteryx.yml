@@ -1,6 +1,8 @@
 genus: Similicaudipteryx
 parent: Caudipterygidae
-etymology: From Latin 'similis' (similar, resembling) + the genus name Caudipteryx (itself from Latin 'cauda', tail, + Greek 'pteryx', feather/wing), meaning 'similar to Caudipteryx'.
+etymology: From Latin 'similis' (similar, resembling) + the genus name
+  Caudipteryx (itself from Latin 'cauda', tail, + Greek 'pteryx', feather/wing),
+  meaning 'similar to Caudipteryx'.
 description: Similicaudipteryx, meaning "similar to Caudipteryx" (which itself
   means "tail feather"), is a genus of theropod dinosaur of the family
   Caudipteridae.
@@ -19,7 +21,8 @@ identifiers:
     id: "47458537"
 species:
   - name: Similicaudipteryx yixianensis
-    etymology: "Named for Yixian County in Liaoning Province, China, the area from which the holotype specimen was recovered."
+    etymology: "Named for Yixian County in Liaoning Province, China, the area from
+      which the holotype specimen was recovered."
     status: valid
     type_species: true
     period:
@@ -38,8 +41,19 @@ species:
         - 41.533611
         - 121.2481
     holotype:
-      specimen_id: [IVPP V12556]
+      specimen_id: [ IVPP V12556 ]
       specimen_type: holotype
       institution: IVPP
     described: 2008
     authors: He et al.
+    described_in: he2008
+references:
+  - id: he2008
+    authors: He, T.; Wang, X.-L.; Z.-H. Zhou
+    year: 2008
+    title: A new genus and species of caudipterid dinosaur from the Lower Cretaceous
+      Jiufotang Formation of western Liaoning, China
+    journal: Vertebrata PalAsiatica
+    volume: "46"
+    issue: "3"
+    pages: 178-189

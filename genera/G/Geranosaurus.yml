@@ -1,6 +1,9 @@
 genus: Geranosaurus
 parent: Heterodontosauridae
-etymology: "From Ancient Greek 'geranos' meaning 'crane' and Greek 'sauros' meaning 'lizard', giving 'crane lizard'; the name refers to the bird-like limb bones, while the specific name atavus is Latin for 'ancestor', referencing its position as an early ornithischian."
+etymology: "From Ancient Greek 'geranos' meaning 'crane' and Greek 'sauros'
+  meaning 'lizard', giving 'crane lizard'; the name refers to the bird-like limb
+  bones, while the specific name atavus is Latin for 'ancestor', referencing its
+  position as an early ornithischian."
 description: Geranosaurus is a genus of heterodontosaurid ornithischian dinosaur
   that lived during the Early Jurassic, between 191.1 and 187.5 million years
   ago. It is known from a single species, G. atavus, that was named in 1911 by
@@ -25,7 +28,8 @@ identifiers:
     id: "4823097"
 species:
   - name: Geranosaurus atavus
-    etymology: "From Latin 'atavus' meaning 'ancestor', likely referencing its position as one of the earliest known ornithischian dinosaurs."
+    etymology: "From Latin 'atavus' meaning 'ancestor', likely referencing its
+      position as one of the earliest known ornithischian dinosaurs."
     status: valid
     type_species: true
     period:
@@ -50,7 +54,17 @@ species:
     authors: Broom
 
     holotype:
-      specimen_id: [SAM-PK-1871]
+      specimen_id: [ SAM-PK-1871 ]
       specimen_type: holotype
       institution: SAM
       material: Partial lower jaws with teeth
+    described_in: broom1911
+references:
+  - id: broom1911
+    authors: Broom, R.
+    year: 1911
+    title: On the dinosaurs of the Stormberg, South Africa
+    journal: Annals of the South African Museum
+    volume: "7"
+    issue: "4"
+    pages: 291-308

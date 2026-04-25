@@ -1,6 +1,7 @@
 genus: Phaedrolosaurus
 parent: Tetanurae
-etymology: "From Greek phaedros (elated, bright, gleaming) and sauros (lizard); meaning \"elated lizard\"."
+etymology: "From Greek phaedros (elated, bright, gleaming) and sauros (lizard);
+  meaning \"elated lizard\"."
 description: Phaedrolosaurus is a dubious genus of coelurosaurian (perhaps
   dromaeosaurid) theropod dinosaur, based on an isolated and non-diagnostic
   tooth from the Early Cretaceous Lianmuqin Formation of Wuerho, in the
@@ -18,7 +19,8 @@ identifiers:
     id: "4822950"
 species:
   - name: Phaedrolosaurus ilikensis
-    etymology: "Named for the Ilike Formation of China, where the type tooth was recovered."
+    etymology: "Named for the Ilike Formation of China, where the type tooth was
+      recovered."
     status: valid
     type_species: true
     period:
@@ -44,8 +46,19 @@ species:
         min: 3.0
         max: 4.0
     holotype:
-      specimen_id: [IVPP V 4024-2]
+      specimen_id: [ IVPP V 4024-2 ]
       specimen_type: holotype
       institution: IVPP
     described: 1973
     authors: Dong
+    described_in: dong1973
+references:
+  - id: dong1973
+    authors: Dong, Z.
+    year: 1973
+    title: "[Dinosaurs from Wuerho]"
+    journal: "Reports of Paleontological Expedition to Sinkiang (II): Pterosaurian
+      Fauna from Wuerho, Sinkiang.  Memoirs of the Institute of Vertebrate
+      Paleontology and Paleoanthropology, Academia Sinica"
+    volume: "11"
+    pages: 45-52

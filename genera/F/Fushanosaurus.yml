@@ -1,6 +1,7 @@
 genus: Fushanosaurus
 parent: Titanosauriformes
-etymology: Fushan lizard; named after the Fushan Museum in China where its remains are stored, combined with Greek sauros (lizard)
+etymology: Fushan lizard; named after the Fushan Museum in China where its
+  remains are stored, combined with Greek sauros (lizard)
 description: "Fushanosaurus is a genus of sauropod dinosaur from the Shishugou
   Formation from Xinjiang Province in China. The type and only species is
   Fushanosaurus qitaiensis (Chinese: 奇台傅山龙; pinyin: Qítái Fùshānlóng). It is
@@ -18,7 +19,8 @@ identifiers:
     id: "60776517"
 species:
   - name: Fushanosaurus qitaiensis
-    etymology: "Named for Qitai, the city in Xinjiang Province, China, near where the holotype was discovered."
+    etymology: "Named for Qitai, the city in Xinjiang Province, China, near where
+      the holotype was discovered."
     status: valid
     type_species: true
     period:
@@ -41,8 +43,19 @@ species:
         min: 30.0
         max: 30.0
     holotype:
-      specimen_id: [FH000101]
+      specimen_id: [ FH000101 ]
       specimen_type: holotype
       institution: FH
     described: 2019
     authors: Wang et al.
+    described_in: wang2019
+references:
+  - id: wang2019
+    authors: Wang, X.-R.; Wu, W.-H.; T. Li, Q. Ji, Y.-X. Li, J.-F. Guo
+    year: 2019
+    title: "A new titanosauriform dinosaur (Dinosauria: Sauropoda) from Late
+      Jurassic of Junggar Basin, Xinjiang"
+    journal: Global Geology
+    volume: "38"
+    issue: "3"
+    pages: 581-588

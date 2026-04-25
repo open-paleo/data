@@ -1,6 +1,7 @@
 genus: Afromimus
 parent: Ornithomimosauria
-etymology: From 'Africa' combined with Greek 'mimos' meaning 'mimic'; meaning 'Africa mimic'
+etymology: From 'Africa' combined with Greek 'mimos' meaning 'mimic'; meaning
+  'Africa mimic'
 description: Afromimus is a genus of ceratosaurian theropod dinosaur from the
   Early Cretaceous Elrhaz Formation of Niger. It contains a single species, A.
   tenerensis, named in 2017 by Paul Sereno from parts of the right leg,
@@ -18,7 +19,8 @@ identifiers:
     id: Q43188357
 species:
   - name: Afromimus tenerensis
-    etymology: "Combines the name of the Ténéré Desert of Niger, where the holotype was recovered."
+    etymology: "Combines the name of the Ténéré Desert of Niger, where the holotype
+      was recovered."
     status: valid
     type_species: true
     period:
@@ -41,8 +43,21 @@ species:
         min: 4.14
         max: 4.14
     holotype:
-      specimen_id: [MNBH GAD112]
+      specimen_id: [ MNBH GAD112 ]
       specimen_type: holotype
       institution: MNBH
     described: 2017
     authors: Sereno
+    described_in: sereno2017
+references:
+  - id: sereno2017
+    authors: Sereno, Paul C.
+    year: 2017
+    title: "Early Cretaceous Ornithomimosaurs (Dinosauria: Coelurosauria) from Africa"
+    journal: Ameghiniana
+    volume: "54"
+    issue: "5"
+    pages: 576-616
+    publisher: Asociacion Paleontologica Argentina
+    doi: 10.5710/amgh.23.10.2017.3155
+    url: http://dx.doi.org/10.5710/amgh.23.10.2017.3155

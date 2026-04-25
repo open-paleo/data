@@ -1,6 +1,8 @@
 genus: Ekrixinatosaurus
 parent: Brachyrostra
-etymology: From Greek ekrixis, 'explosion', + Greek -natos, 'born', + Greek sauros, 'lizard/reptile'; means 'explosion-born reptile', referring to the dynamiting that uncovered the holotype specimen
+etymology: From Greek ekrixis, 'explosion', + Greek -natos, 'born', + Greek
+  sauros, 'lizard/reptile'; means 'explosion-born reptile', referring to the
+  dynamiting that uncovered the holotype specimen
 description: Ekrixinatosaurus is a genus of abelisaurid theropod which lived
   approximately 99 to 97 million years ago during the Late Cretaceous period.
   Its fossils have been found in Argentina. Only one species is currently
@@ -25,7 +27,8 @@ identifiers:
     id: "4532801"
 species:
   - name: Ekrixinatosaurus novasi
-    etymology: "Named for Dr. Fernando Novas, in honor of his contributions to the study of abelisaurid theropods."
+    etymology: "Named for Dr. Fernando Novas, in honor of his contributions to the
+      study of abelisaurid theropods."
     status: valid
     type_species: true
     period:
@@ -51,8 +54,18 @@ species:
         min: 800
         max: 800
     holotype:
-      specimen_id: [MUCPv-294]
+      specimen_id: [ MUCPv-294 ]
       specimen_type: holotype
       institution: MUCPv
     described: 2004
     authors: Calvo et al.
+    described_in: calvo2004
+references:
+  - id: calvo2004
+    authors: Calvo, J. O.; Rubilar-Rogers, D.; K. Moreno
+    year: 2004
+    title: "A new Abelisauridae (Dinosauria: Theropoda) from northwest Patagonia"
+    journal: Ameghiniana
+    volume: "41"
+    issue: "4"
+    pages: 555-563

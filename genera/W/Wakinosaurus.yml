@@ -1,6 +1,8 @@
 genus: Wakinosaurus
 parent: Theropoda
-etymology: Named after the Wakino Subgroup of the Kwanmon Group (a geological unit in Kyushu, Japan), combined with Greek sauros meaning 'lizard'; translates as 'Wakino lizard'
+etymology: Named after the Wakino Subgroup of the Kwanmon Group (a geological
+  unit in Kyushu, Japan), combined with Greek sauros meaning 'lizard';
+  translates as 'Wakino lizard'
 description: Wakinosaurus is a genus of possible carcharodontosaurid theropod
   dinosaur from the Early Cretaceous (Valanginian-Barremian) Sengoku Formation
   of Kyushu, Japan. The genus is a tooth taxon, based solely on the middle
@@ -18,7 +20,8 @@ identifiers:
     id: "4821804"
 species:
   - name: Wakinosaurus satoi
-    etymology: "Named for Masahiro Sato, the ice hockey player who discovered the holotype tooth in Fukuoka, Japan, in 1990."
+    etymology: "Named for Masahiro Sato, the ice hockey player who discovered the
+      holotype tooth in Fukuoka, Japan, in 1990."
     status: valid
     type_species: true
     period:
@@ -36,7 +39,17 @@ species:
       region: Fukuoka
       formation: Sengoku
     holotype:
-      specimen_id: ["KMNH VP 000,016"]
+      specimen_id: [ "KMNH VP 000,016" ]
       specimen_type: holotype
       institution: KMNH
       material: Single damaged tooth
+    described_in: okazaki1992
+references:
+  - id: okazaki1992
+    authors: Okazaki, Y.
+    year: 1992
+    title: A new genus and species of carnivorous dinosaur from the Lower Cretaceous
+      Kwanmon Group, northern Kyushu
+    journal: Bulletin of the Kitakyushu Museum of Natural History
+    volume: "11"
+    pages: 87-90

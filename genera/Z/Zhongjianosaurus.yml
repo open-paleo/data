@@ -1,6 +1,7 @@
 genus: Zhongjianosaurus
 parent: Microraptorinae
-etymology: Named for Zhongjian Young (Yang Zhongjian), the father of Chinese vertebrate paleontology, combined with Greek 'sauros' meaning 'lizard'.
+etymology: Named for Zhongjian Young (Yang Zhongjian), the father of Chinese
+  vertebrate paleontology, combined with Greek 'sauros' meaning 'lizard'.
 description: Zhongjianosaurus is a genus of dromaeosaurid belonging to the
   Microraptoria. Believed to hail from the Yixian Formation, specifically the
   middle of the Jehol Biota, it is the smallest known microraptorine thus far
@@ -16,7 +17,9 @@ identifiers:
     id: Q29366656
 species:
   - name: Zhongjianosaurus yangi
-    etymology: "Named for Yang Zhongjian (C.C. Young), the founder of vertebrate paleontology in China, with 'yangi' being the Latin genitive of his family name."
+    etymology: "Named for Yang Zhongjian (C.C. Young), the founder of vertebrate
+      paleontology in China, with 'yangi' being the Latin genitive of his family
+      name."
     status: valid
     type_species: true
     period:
@@ -42,7 +45,19 @@ species:
     authors: Xu and Qin
 
     holotype:
-      specimen_id: [IVPP V 22775]
+      specimen_id: [ IVPP V 22775 ]
       specimen_type: holotype
       institution: IVPP
       material: Partial postcranial articulated skeleton
+    described_in: xu2017
+references:
+  - id: xu2017
+    authors: Xu, X.; Qin, Z.-C.
+    year: 2017
+    title: A new tiny dromaeosaurid dinosaur from the Lower Cretaceous Jehol Group
+      of western Liaoning and niche differentiation among the Jehol
+      dromaeosaurids
+    journal: Vertebrata PalAsiatica
+    volume: "55"
+    issue: "2"
+    pages: 129-144

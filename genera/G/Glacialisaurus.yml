@@ -1,6 +1,8 @@
 genus: Glacialisaurus
 parent: Massospondylidae
-etymology: From Latin glacialis, 'icy' or 'frozen', + Greek sauros, 'lizard'; means 'icy lizard' or 'frozen lizard', referring to its discovery in Antarctica
+etymology: From Latin glacialis, 'icy' or 'frozen', + Greek sauros, 'lizard';
+  means 'icy lizard' or 'frozen lizard', referring to its discovery in
+  Antarctica
 description: Glacialisaurus is a genus of sauropodomorph dinosaur from the Early
   Jurassic period of Antarctica. It is known from two specimens; the holotype
   (name-bearing specimen), a partial tarsus (ankle) and metatarsus, and a
@@ -25,7 +27,9 @@ identifiers:
     id: "4532845"
 species:
   - name: Glacialisaurus hammeri
-    etymology: "Named for William R. Hammer, the paleontologist who led the 1990–91 Antarctic field expedition that recovered the holotype, in recognition of his contributions to Antarctic paleontology."
+    etymology: "Named for William R. Hammer, the paleontologist who led the 1990–91
+      Antarctic field expedition that recovered the holotype, in recognition of
+      his contributions to Antarctic paleontology."
     status: valid
     type_species: true
     period:
@@ -48,8 +52,19 @@ species:
         min: 6.2
         max: 6.2
     holotype:
-      specimen_id: [FMNH PR 1823]
+      specimen_id: [ FMNH PR 1823 ]
       specimen_type: holotype
       institution: FMNH
     described: 2007
     authors: Smith and Pol
+    described_in: smith2007
+references:
+  - id: smith2007
+    authors: Smith, N. D.; Pol, D.
+    year: 2007
+    title: Anatomy of a basal sauropodomorph dinosaur from the Early Jurassic Hanson
+      Formation of Antarctica
+    journal: Acta Palaeontologica Polonica
+    volume: "52"
+    issue: "4"
+    pages: 657-674

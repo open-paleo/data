@@ -2,7 +2,9 @@ genus: Chilantaisaurus
 parent: Neovenatoridae
 pronunciation:
   phonetic: jee-LAHN-tie-SAWR-us
-etymology: Named after Jilantai (also romanized as Chilantai) Salt Lake in Inner Mongolia, China, where the fossils were found, + Greek sauros ('lizard'), meaning 'Jilantai Salt Lake lizard'.
+etymology: Named after Jilantai (also romanized as Chilantai) Salt Lake in Inner
+  Mongolia, China, where the fossils were found, + Greek sauros ('lizard'),
+  meaning 'Jilantai Salt Lake lizard'.
 description: Chilantaisaurus is an extinct genus of large theropod dinosaur that
   lived in present-day China during the Late Cretaceous period. It was described
   by Chinese paleontologist Hu Show-Yung in 1964. The genus contains a single
@@ -28,7 +30,8 @@ identifiers:
     id: "4658378"
 species:
   - name: Chilantaisaurus tashuikouensis
-    etymology: "Named for the Tashuikou site in Inner Mongolia, China, where the holotype fossils were discovered."
+    etymology: "Named for the Tashuikou site in Inner Mongolia, China, where the
+      holotype fossils were discovered."
     status: valid
     type_species: true
     period:
@@ -47,10 +50,11 @@ species:
         - 39.7
         - 105.6
     holotype:
-      specimen_id: [IVPP V2884.1]
+      specimen_id: [ IVPP V2884.1 ]
       specimen_type: lectotype
       institution: IVPP
-      material: Lectotype designated by Benson & Xing (2008) with additional paralectotypes from the same series
+      material: Lectotype designated by Benson & Xing (2008) with additional
+        paralectotypes from the same series
     size:
       length_m:
         min: 11.0
@@ -60,3 +64,13 @@ species:
         max: 4000
     described: 1964
     authors: Hu
+    described_in: hu1964
+references:
+  - id: hu1964
+    authors: Hu, S.-Y.
+    year: 1964
+    title: "[Carnosaurian remains from Alashan, Inner Mongolia]"
+    journal: Vertebrata PalAsiatica
+    volume: "8"
+    issue: "1"
+    pages: 42-63

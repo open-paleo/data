@@ -25,10 +25,13 @@ identifiers:
 synonyms:
   - name: Tanystrosuchus
     type: possible subjective
-    reason: Possible junior subjective synonym of Halticosaurus; identification is tentative. Per Olshevsky's Dinosaur Genera List.
+    reason: Possible junior subjective synonym of Halticosaurus; identification is
+      tentative. Per Olshevsky's Dinosaur Genera List.
 species:
   - name: Halticosaurus longotarsus
-    etymology: "From Latin 'longus' meaning 'long' and Greek 'tarsos' meaning 'ankle' or 'tarsus', together meaning 'long ankle', in reference to features of the hindlimb."
+    etymology: "From Latin 'longus' meaning 'long' and Greek 'tarsos' meaning
+      'ankle' or 'tarsus', together meaning 'long ankle', in reference to
+      features of the hindlimb."
     status: valid
     type_species: true
     period:
@@ -51,8 +54,20 @@ species:
         min: 5.5
         max: 5.5
     holotype:
-      specimen_id: [SMNS 12353]
+      specimen_id: [ SMNS 12353 ]
       specimen_type: holotype
       institution: MNS
     described: 1908
     authors: Huene
+    described_in: huene1908
+references:
+  - id: huene1908
+    authors: Huene, F. v.
+    year: 1908
+    title: Die Dinosaurier der Europäischen Triasformation mit berücksichtigung der
+      Ausseuropäischen vorkommnisse [The dinosaurs of the European Triassic
+      formations with consideration of occurrences outside Europe]
+    journal: Geologische und Palaeontologische Abhandlungen
+    volume: Suppl. 1
+    issue: "1"
+    pages: 1-419

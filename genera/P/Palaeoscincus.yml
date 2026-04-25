@@ -1,6 +1,7 @@
 genus: Palaeoscincus
 parent: Ankylosauria
-etymology: "From Greek 'palaios' meaning 'ancient' and 'skinkos' meaning 'lizard' (related to skink); translates as 'ancient lizard'."
+etymology: "From Greek 'palaios' meaning 'ancient' and 'skinkos' meaning
+  'lizard' (related to skink); translates as 'ancient lizard'."
 description: Palaeoscincus is a dubious genus of ankylosaurian dinosaur based on
   teeth from the mid-late Campanian-age Upper Cretaceous Judith River Formation
   of Montana. Like several other dinosaur genera named by Joseph Leidy
@@ -20,7 +21,9 @@ identifiers:
     id: Q38789678
 species:
   - name: Palaeoscincus magoder
-    etymology: "A nomen nudum arising from a misreading of the German words 'mag oder' in a faunal list by Karl ('Charles') L. Henning, which were mistakenly treated as a specific name rather than ordinary German text."
+    etymology: "A nomen nudum arising from a misreading of the German words 'mag
+      oder' in a faunal list by Karl ('Charles') L. Henning, which were
+      mistakenly treated as a specific name rather than ordinary German text."
     status: valid
     type_species: true
     period:
@@ -39,6 +42,16 @@ species:
     authors: Leidy
 
     holotype:
-      specimen_id: [ANSP 9263]
+      specimen_id: [ ANSP 9263 ]
       specimen_type: holotype
       institution: ANS
+    described_in: leidy1856
+references:
+  - id: leidy1856
+    authors: Leidy, J.
+    year: 1856
+    title: Notices of remains of extinct reptiles and fishes, discovered by Dr. F.
+      V. Hayden in the bad lands of the Judith River, Nebraska Territory
+    journal: Proceedings of the Academy of Natural Sciences of Philadelphia
+    volume: "8"
+    pages: 72-73

@@ -1,6 +1,7 @@
 genus: Datonglong
 parent: Hadrosauroidea
-etymology: From Datong (the city in Shanxi, China near the discovery site) + Chinese long (龍), 'dragon'; means 'Datong dragon'
+etymology: From Datong (the city in Shanxi, China near the discovery site) +
+  Chinese long (龍), 'dragon'; means 'Datong dragon'
 description: Datonglong is an extinct genus of herbivorous ornithopod dinosaur,
   belonging to the Hadrosauroidea, which lived in the Late Cretaceous period in
   present-day China. Its type species is Datonglong tianzhenensis.
@@ -18,7 +19,8 @@ identifiers:
     id: "47460262"
 species:
   - name: Datonglong tianzhenensis
-    etymology: "Named for Tianzhen County in Shanxi Province, China, where the holotype jaw was found."
+    etymology: "Named for Tianzhen County in Shanxi Province, China, where the
+      holotype jaw was found."
     status: valid
     type_species: true
     period:
@@ -41,8 +43,19 @@ species:
         - 40.189999
         - 114.0439
     holotype:
-      specimen_id: [SXMG V 00005]
+      specimen_id: [ SXMG V 00005 ]
       specimen_type: holotype
       institution: SXGM
     described: 2016
     authors: Xu et al.
+    described_in: xu2016
+references:
+  - id: xu2016
+    authors: Xu, S.-C.; You, H.-L.; J.-W. Wang, S.-Z. Wang, J. Yi, L. Jia
+    year: 2016
+    title: A new hadrosauroid dinosaur from the Late Cretaceous of Tianzhen, Shanxi
+      Province, China
+    journal: Vertebrata PalAsiatica
+    volume: "54"
+    issue: "1"
+    pages: 67-78

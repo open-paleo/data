@@ -1,6 +1,7 @@
 genus: Mantellisaurus
 parent: Iguanodontia
-etymology: Named for Gideon Mantell, the English geologist and paleontologist who first described Iguanodon, combined with Greek '-saurus' meaning 'lizard'.
+etymology: Named for Gideon Mantell, the English geologist and paleontologist
+  who first described Iguanodon, combined with Greek '-saurus' meaning 'lizard'.
 description: Mantellisaurus is a genus of iguanodontian dinosaur that lived in
   the Barremian and early Aptian ages of the Early Cretaceous Period of Europe.
   Its remains are known from Belgium (Bernissart), England, Spain and Germany.
@@ -30,19 +31,24 @@ identifiers:
 synonyms:
   - name: Heterosaurus
     type: junior subjective
-    reason: Initially described as its own genus in 1850 and later reassigned to Iguanodon; subsequent study placed the material in Mantellisaurus.
+    reason: Initially described as its own genus in 1850 and later reassigned to
+      Iguanodon; subsequent study placed the material in Mantellisaurus.
   - name: Vectisaurus
     type: junior subjective
     reason: Now generally interpreted as a juvenile individual of Mantellisaurus.
   - name: Proplanicoxa
     type: junior subjective
-    reason: Originally referred to Vectisaurus valdensis and later re-erected as Proplanicoxa; with Vectisaurus now considered a juvenile of Mantellisaurus, Proplanicoxa is also treated as a junior synonym.
+    reason: Originally referred to Vectisaurus valdensis and later re-erected as
+      Proplanicoxa; with Vectisaurus now considered a juvenile of
+      Mantellisaurus, Proplanicoxa is also treated as a junior synonym.
   - name: Dollodon
     type: possible subjective
-    reason: Possible junior subjective synonym of Mantellisaurus; identification is tentative. Per Olshevsky's Dinosaur Genera List.
+    reason: Possible junior subjective synonym of Mantellisaurus; identification is
+      tentative. Per Olshevsky's Dinosaur Genera List.
 species:
   - name: Mantellisaurus atherfieldensis
-    etymology: "Named for Atherfield, a village on the southwest shore of the Isle of Wight, England, where the holotype fossil was discovered."
+    etymology: "Named for Atherfield, a village on the southwest shore of the Isle
+      of Wight, England, where the holotype fossil was discovered."
     status: valid
     type_species: true
     period:
@@ -65,7 +71,7 @@ species:
         - 50.618999
         - -1.352
     holotype:
-      specimen_id: [NHMUK R5764]
+      specimen_id: [ NHMUK R5764 ]
       specimen_type: holotype
       institution: BMNH
     size:
@@ -77,4 +83,15 @@ species:
     synonyms:
       - name: Mantellodon
         type: junior subjective
-        reason: M. carpenteri is now considered referable to Mantellisaurus atherfieldensis.
+        reason: M. carpenteri is now considered referable to Mantellisaurus
+          atherfieldensis.
+    described_in: paul2007
+references:
+  - id: paul2007
+    authors: Paul, G. S.
+    year: 2007
+    title: "Turning the old into the new: a separate genus for the gracile
+      iguanodont from the Wealden of England"
+    journal: "Horns and Beaks: Ceratopsian and Ornithopod Dinosaurs"
+    pages: 69-77
+    publisher: Indiana University Press

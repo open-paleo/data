@@ -1,6 +1,9 @@
 genus: Gongbusaurus
 parent: Fabrosauridae
-etymology: "Named for the imperial Chinese ministry of public works (gong bu), honouring the Tang dynasty poet Du Fu who served in that ministry after 760 AD as a 'junior consultant' (shi yi), combined with Greek 'sauros' meaning 'lizard'."
+etymology: "Named for the imperial Chinese ministry of public works (gong bu),
+  honouring the Tang dynasty poet Du Fu who served in that ministry after 760 AD
+  as a 'junior consultant' (shi yi), combined with Greek 'sauros' meaning
+  'lizard'."
 description: Gongbusaurus is a genus of ornithischian, perhaps ornithopod,
   dinosaur that lived between about 160 and 157 million years ago, in the Late
   Jurassic period. A small herbivore, it is very poorly known. Two species have
@@ -21,7 +24,11 @@ identifiers:
     id: "4571692"
 species:
   - name: Gongbusaurus shiyii
-    etymology: "Named for the rank of shi yi ('junior consultant') held by the Tang dynasty poet Du Fu while working in Sichuan for the imperial ministry of public works; the epithet also puns on a secondary meaning of 'register of lost objects', alluding to the teeth being found separately among the collected bones."
+    etymology: "Named for the rank of shi yi ('junior consultant') held by the Tang
+      dynasty poet Du Fu while working in Sichuan for the imperial ministry of
+      public works; the epithet also puns on a secondary meaning of 'register of
+      lost objects', alluding to the teeth being found separately among the
+      collected bones."
     status: valid
     type_species: true
     period:
@@ -45,8 +52,18 @@ species:
         min: 1.3
         max: 1.5
     holotype:
-      specimen_id: [IVPP V9069]
+      specimen_id: [ IVPP V9069 ]
       specimen_type: holotype
       institution: IVPP
     described: 1983
     authors: Dong et al.
+    described_in: dong1983
+references:
+  - id: dong1983
+    authors: Dong, Z.; Zhou, S.; H. Zhang
+    year: 1983
+    title: "[Dinosaurs from the Jurassic of Sichuan]"
+    journal: Palaeontologica Sinica, New Series C, Whole Number
+    volume: "162"
+    issue: "23"
+    pages: 1-136

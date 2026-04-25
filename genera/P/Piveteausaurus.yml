@@ -2,7 +2,9 @@ genus: Piveteausaurus
 parent: Eustreptospondylinae
 pronunciation:
   phonetic: peev-toh-SAWR-us
-etymology: Named after French paleontologist Jean Piveteau, who first described the type specimen, combined with Greek sauros (lizard); meaning "Jean Piveteau's lizard".
+etymology: Named after French paleontologist Jean Piveteau, who first described
+  the type specimen, combined with Greek sauros (lizard); meaning "Jean
+  Piveteau's lizard".
 description: Piveteausaurus is a genus of theropod dinosaur known from a partial
   skull discovered in the Middle Jurassic (164.7 to 161.2 million years ago)
   Marnes de Dives of Calvados, northern France. In 2012, Thomas Holtz gave a
@@ -22,7 +24,8 @@ identifiers:
     id: "4658478"
 species:
   - name: Piveteausaurus divesensis
-    etymology: "Named for Dives, the town in Normandy, France, near which the holotype braincase was found."
+    etymology: "Named for Dives, the town in Normandy, France, near which the
+      holotype braincase was found."
     status: valid
     type_species: true
     period:
@@ -48,7 +51,18 @@ species:
     authors: Taquet and Welles
 
     holotype:
-      specimen_id: [MNHN 1920-7]
+      specimen_id: [ MNHN 1920-7 ]
       specimen_type: holotype
       institution: MHNP
       material: Partial braincase
+    described_in: taquet1977
+references:
+  - id: taquet1977
+    authors: Taquet, P.; Welles, S. P.
+    year: 1977
+    title: Redescription du crâne de dinosaure théropode de Dives (Normandie)
+      [Redescription of a theropod dinosaur skull from Dives (Normandy)]
+    journal: Annales de Paléontologie (Vertébrés)
+    volume: "63"
+    issue: "2"
+    pages: 191-206

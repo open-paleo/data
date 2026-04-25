@@ -1,6 +1,8 @@
 genus: Xixiposaurus
 parent: Plateosauridae
-etymology: "Named for the village of Xixipo in Lufeng County, Yunnan, China, where the holotype was discovered, combined with Greek 'sauros' meaning 'lizard'."
+etymology: "Named for the village of Xixipo in Lufeng County, Yunnan, China,
+  where the holotype was discovered, combined with Greek 'sauros' meaning
+  'lizard'."
 description: Xixiposaurus is a genus of "prosauropod" dinosaur which existed in
   what is now Lower Lufeng Formation, China during the lower Jurassic period. It
   was first named by Sekiya Toru in 2010 and the type species is X. suni.
@@ -36,8 +38,18 @@ species:
         - 25.592993
         - 102.320404
     holotype:
-      specimen_id: [ZLJ01018]
+      specimen_id: [ ZLJ01018 ]
       specimen_type: holotype
       institution: ZLJ
     described: 2010
     authors: Sekiya
+    described_in: sekiya2010
+references:
+  - id: sekiya2010
+    authors: Sekiya, T.
+    year: 2010
+    title: "[A new prosauropod dinosaur from Lower Jurassic in Lufeng of Yunnan]"
+    journal: Global Geology
+    volume: "29"
+    issue: "1"
+    pages: 6-15

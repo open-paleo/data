@@ -2,7 +2,8 @@ genus: Indosaurus
 parent: Majungasaurini
 pronunciation:
   phonetic: IN-do-SAWR-us
-etymology: From India (where it was found) and Greek sauros (lizard); meaning 'Indian lizard'
+etymology: From India (where it was found) and Greek sauros (lizard); meaning
+  'Indian lizard'
 description: Indosaurus is a genus of carnivorous theropod dinosaur that lived
   in what is now India, about 69 to 66 million years ago during the
   Maastrichtian division of the Late Cretaceous.
@@ -21,7 +22,8 @@ identifiers:
     id: "4532786"
 species:
   - name: Indosaurus matleyi
-    etymology: "Named for Charles Alfred Matley, the geologist who discovered the holotype in India."
+    etymology: "Named for Charles Alfred Matley, the geologist who discovered the
+      holotype in India."
     status: valid
     type_species: true
     period:
@@ -44,10 +46,22 @@ species:
         min: 700
         max: 700
     holotype:
-      specimen_id: [GSI K27/685]
+      specimen_id: [ GSI K27/685 ]
       specimen_type: holotype
       institution: GSI
       status: lost
       material: Originally catalogued as GSI K27/685; specimen is lost
     described: 1933
     authors: Huene
+    described_in: huene1933
+references:
+  - id: huene1933
+    authors: Huene, F. v.; Matley, C. A.
+    year: 1933
+    title: The Cretaceous Saurischia and Ornithischia of the Central Provinces of
+      India
+    journal: Palaeontologica Indica (New Series), Memoirs of the Geological Survey
+      of India
+    volume: "21"
+    issue: "1"
+    pages: 1-74

@@ -1,6 +1,7 @@
 genus: Adelolophus
 parent: Lambeosaurinae
-etymology: From Greek 'adelos' meaning 'unknown' or 'obscure' and 'lophos' meaning 'crest'; meaning 'unknown crest'
+etymology: From Greek 'adelos' meaning 'unknown' or 'obscure' and 'lophos'
+  meaning 'crest'; meaning 'unknown crest'
 description: Adelolophus is a genus of lambeosaurine dinosaur (a crested
   "duck-bill") from Upper Cretaceous rocks in the U.S. state of Utah. The type
   and only known species is A. hutchisoni; the type specimen consists only of a
@@ -27,7 +28,8 @@ identifiers:
     id: "47043895"
 species:
   - name: Adelolophus hutchisoni
-    etymology: "Named for John Howard Hutchison, who collected the type specimen from the Wahweap Formation of Utah in 1999."
+    etymology: "Named for John Howard Hutchison, who collected the type specimen
+      from the Wahweap Formation of Utah in 1999."
     status: valid
     type_species: true
     period:
@@ -48,6 +50,16 @@ species:
     authors: Gates et al.
 
     holotype:
-      specimen_id: [UCMP 152028]
+      specimen_id: [ UCMP 152028 ]
       specimen_type: holotype
       institution: MVP
+    described_in: gates2014
+references:
+  - id: gates2014
+    authors: Gates, T. A.; Jinnah, Z.; C. Levitt, M. A. Getty
+    year: 2014
+    title: New hadrosaurid (Dinosauria, Ornithopoda) specimens from the lower-middle
+      Campanian Wahweap Formation of southern Utah
+    journal: Hadrosaurs
+    pages: 156-173
+    publisher: Indiana University Press

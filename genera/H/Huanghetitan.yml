@@ -1,6 +1,7 @@
 genus: Huanghetitan
 parent: Somphospondyli
-etymology: "Named for the Yellow River (Huanghe in Chinese) combined with 'titan' (giant), hence 'Yellow River titan'."
+etymology: "Named for the Yellow River (Huanghe in Chinese) combined with
+  'titan' (giant), hence 'Yellow River titan'."
 description: Huanghetitan is a genus of sauropod dinosaur from the early
   Cretaceous Period. It was a basal titanosauriform which lived in what is now
   Gansu, China.
@@ -15,7 +16,8 @@ identifiers:
     id: "4967322"
 species:
   - name: Huanghetitan liujiaxiaensis
-    etymology: "Named for the Liujiaxia area of the Lanzhou Basin in Gansu Province, China, where the holotype was discovered."
+    etymology: "Named for the Liujiaxia area of the Lanzhou Basin in Gansu Province,
+      China, where the holotype was discovered."
     status: valid
     type_species: true
     period:
@@ -42,8 +44,19 @@ species:
         min: 3000
         max: 3000
     holotype:
-      specimen_id: [GSLTZP02-001]
+      specimen_id: [ GSLTZP02-001 ]
       specimen_type: holotype
       institution: GSLTZP
     described: 2006
     authors: You et al.
+    described_in: you2006
+references:
+  - id: you2006
+    authors: You, H.; Li, D.; L. Zhou, Q. Ji
+    year: 2006
+    title: Huanghetitan liujiaxiaensis, a new sauropod dinosaur from the Lower
+      Cretaceous Hekou Group of Lanzhou Basin, Gansu Province, China
+    journal: Geological Review
+    volume: "52"
+    issue: "5"
+    pages: 668-674

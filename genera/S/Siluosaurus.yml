@@ -7,7 +7,9 @@ description: Siluosaurus is a genus of ornithischian dinosaur from the Early
   the specimen IVPP V.11117 (1-2), which consists of two teeth. It is an obscure
   genus, with no papers doing more than mentioning it since it was described in
   1997. The type species is S. zhanggiani.
-etymology: "Named for the Silk Road (Chinese 'Silu'), referencing the discovery location in Gansu, China, along the historic Silk Road corridor, combined with Greek 'sauros' meaning 'lizard'; meaning 'Silk Road lizard.'"
+etymology: "Named for the Silk Road (Chinese 'Silu'), referencing the discovery
+  location in Gansu, China, along the historic Silk Road corridor, combined with
+  Greek 'sauros' meaning 'lizard'; meaning 'Silk Road lizard.'"
 diet: herbivore
 locomotion: bipedal
 paleoenvironment:
@@ -22,7 +24,8 @@ identifiers:
     id: "4578174"
 species:
   - name: Siluosaurus zhanggiani
-    etymology: "Named in honor of Zhang Qian, a Chinese diplomat of the second century B.C. who pioneered the opening of the Silk Road trade route."
+    etymology: "Named in honor of Zhang Qian, a Chinese diplomat of the second
+      century B.C. who pioneered the opening of the Silk Road trade route."
     status: valid
     type_species: true
     period:
@@ -43,7 +46,15 @@ species:
     authors: Dong
 
     holotype:
-      specimen_id: [IVPP V.11117.1]
+      specimen_id: [ IVPP V.11117.1 ]
       specimen_type: holotype
       institution: IVPP
       material: Teeth; companion catalog IVPP V.11117.2
+    described_in: dong1997
+references:
+  - id: dong1997
+    authors: Dong, Z.
+    year: 1997
+    title: A small ornithopod from Mazongshan area, Gansu Province, China
+    journal: Sino-Japanese Silk Road Dinosaur Expedition. China Ocean Press, Beijing
+    pages: 24-26

@@ -1,6 +1,7 @@
 genus: Jiutaisaurus
 parent: Titanosauriformes
-etymology: "Named for Jiutai, the discovery site in Jilin, China, combined with Greek 'sauros' meaning 'lizard', hence 'Jiutai lizard'."
+etymology: "Named for Jiutai, the discovery site in Jilin, China, combined with
+  Greek 'sauros' meaning 'lizard', hence 'Jiutai lizard'."
 description: Jiutaisaurus is a genus of sauropod dinosaur from the Quantou
   Formation of Jilin, China. The formation dates from the Early - Late
   Cretaceous boundary. The type species, Jiutaisaurus xidiensis, was described
@@ -18,7 +19,8 @@ identifiers:
     id: Q2154435
 species:
   - name: Jiutaisaurus xidiensis
-    etymology: "Named for Xidi Village in Jiutai, Jilin, China, where the holotype was recovered."
+    etymology: "Named for Xidi Village in Jiutai, Jilin, China, where the holotype
+      was recovered."
     status: valid
     type_species: true
     period:
@@ -37,8 +39,18 @@ species:
         - 44.151764
         - 125.839638
     holotype:
-      specimen_id: [CAD-02]
+      specimen_id: [ CAD-02 ]
       specimen_type: holotype
       institution: CAD
     described: 2006
     authors: Wu et al.
+    described_in: wu2006
+references:
+  - id: wu2006
+    authors: Wu, W.-h.; Dong, Z.-m.; Y.-w. Sun, C.-t. Li, T. Li
+    year: 2006
+    title: "[A new sauropod dinosaur from the Cretaceous of Jiutai, Jilin, China]"
+    journal: Global Geology
+    volume: "25"
+    issue: "1"
+    pages: 6-9

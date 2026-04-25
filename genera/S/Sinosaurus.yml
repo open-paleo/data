@@ -1,6 +1,7 @@
 genus: Sinosaurus
 parent: Theropoda
-etymology: From Latin Sinae, "Chinese", combined with Greek sauros, "lizard" — means "Chinese lizard"
+etymology: From Latin Sinae, "Chinese", combined with Greek sauros, "lizard" —
+  means "Chinese lizard"
 description: Sinosaurus is an extinct genus of basal theropod dinosaur which
   lived during the Early Jurassic (Hettangian-Sinemurian). Fossils of the animal
   have been found in the Lufeng Formation, in the Yunnan Province of China. The
@@ -26,7 +27,8 @@ identifiers:
     id: "4658112"
 species:
   - name: Sinosaurus triassicus
-    etymology: "From 'Triassic', the geological period from which the fossils were originally thought to date, with the Latin adjectival suffix '-icus'."
+    etymology: "From 'Triassic', the geological period from which the fossils were
+      originally thought to date, with the Latin adjectival suffix '-icus'."
     status: valid
     type_species: true
     period:
@@ -46,7 +48,7 @@ species:
         - 24.671667
         - 102.591942
     holotype:
-      specimen_id: [KMV 8701]
+      specimen_id: [ KMV 8701 ]
       specimen_type: holotype
       institution: KMV
     size:
@@ -58,3 +60,13 @@ species:
         max: 895
     described: 1940
     authors: Young
+    described_in: young1940
+references:
+  - id: young1940
+    authors: Young, C.-C.
+    year: 1940
+    title: Preliminary notes on the Lufeng vertebrate fossils
+    journal: Bulletin of the Geological Society of China
+    volume: "20"
+    issue: 3-4
+    pages: 235-239

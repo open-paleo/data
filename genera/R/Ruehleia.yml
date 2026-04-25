@@ -1,6 +1,7 @@
 genus: Ruehleia
 parent: Plateosauridae
-etymology: Named for German paleontologist Hugo Rühle von Lilienstern, who collected paleontological material from the region.
+etymology: Named for German paleontologist Hugo Rühle von Lilienstern, who
+  collected paleontological material from the region.
 description: Ruehleia is a genus of sauropodomorph dinosaur from the Late
   Triassic period of Germany. The type species is R. bedheimensis, described by
   Galton in 2001, and is named for the German paleontologist Hugo Rühle von
@@ -26,7 +27,8 @@ identifiers:
     id: "4658663"
 species:
   - name: Ruehleia bedheimensis
-    etymology: "Named after the German town of Bedheim, from where von Lilienstern hailed and near where he worked."
+    etymology: "Named after the German town of Bedheim, from where von Lilienstern
+      hailed and near where he worked."
     status: valid
     type_species: true
     period:
@@ -48,6 +50,17 @@ species:
     authors: Galton
 
     holotype:
-      specimen_id: [HMN MB RvL 1]
+      specimen_id: [ HMN MB RvL 1 ]
       specimen_type: holotype
       institution: HM
+    described_in: galton2001
+references:
+  - id: galton2001
+    authors: Galton, P. M.
+    year: 2001
+    title: "The prosauropod dinosaur Plateosaurus Meyer, 1837 (Saurischia:
+      Sauropodomorpha; Upper Triassic). II. Notes on the referred species"
+    journal: Revue Paléobiologie, Genève
+    volume: "20"
+    issue: "2"
+    pages: 435-502

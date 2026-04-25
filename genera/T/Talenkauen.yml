@@ -1,6 +1,8 @@
 genus: Talenkauen
 parent: Elasmaria
-etymology: "From the Aonikenk (Tehuelche) language: 'talenk' meaning 'small' and 'kauen' meaning 'skull', referring to the relatively small skull of the specimen"
+etymology: "From the Aonikenk (Tehuelche) language: 'talenk' meaning 'small' and
+  'kauen' meaning 'skull', referring to the relatively small skull of the
+  specimen"
 description: Talenkauen is a genus of basal iguanodont dinosaur from the
   Campanian or Maastrichtian age of the Late Cretaceous Cerro Fortaleza
   Formation, formerly known as the Pari Aike Formation of Patagonian Lake
@@ -23,7 +25,8 @@ identifiers:
     id: "4532080"
 species:
   - name: Talenkauen santacrucensis
-    etymology: "Named for Santa Cruz Province of Argentina, where the holotype was discovered."
+    etymology: "Named for Santa Cruz Province of Argentina, where the holotype was
+      discovered."
     status: valid
     type_species: true
     period:
@@ -49,8 +52,19 @@ species:
         min: 300
         max: 300
     holotype:
-      specimen_id: [MPM-10001]
+      specimen_id: [ MPM-10001 ]
       specimen_type: holotype
       institution: MPM
     described: 2004
     authors: Novas et al.
+    described_in: novas2004
+references:
+  - id: novas2004
+    authors: Novas, F. E.; Cambiaso, A. V.; A. Ambrosio
+    year: 2004
+    title: A new basal iguanodontian (Dinosauria, Ornithischia) from the Upper
+      Cretaceous of Patagonia
+    journal: Ameghiniana
+    volume: "41"
+    issue: "1"
+    pages: 75-82

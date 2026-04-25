@@ -1,6 +1,8 @@
 genus: Regnosaurus
 parent: Stegosauria
-etymology: "Named for the Regni, the ancient Roman name for the people of Sussex, England, where the fossils were found, combined with Greek 'sauros' meaning 'lizard'; meaning 'Sussex lizard.'"
+etymology: "Named for the Regni, the ancient Roman name for the people of
+  Sussex, England, where the fossils were found, combined with Greek 'sauros'
+  meaning 'lizard'; meaning 'Sussex lizard.'"
 description: Regnosaurus is an extinct genus of herbivorous presumably armored
   dinosaur known from the early Cretaceous Wealden Formation of England. The
   genus contains a single species, Regnosaurus northamptoni, known from a single
@@ -22,7 +24,8 @@ identifiers:
     id: "4818324"
 species:
   - name: Regnosaurus northamptoni
-    etymology: "Named for Spencer Compton, 2nd Marquess of Northampton, who was president of the Royal Society at the time the species was described."
+    etymology: "Named for Spencer Compton, 2nd Marquess of Northampton, who was
+      president of the Royal Society at the time the species was described."
     status: valid
     type_species: true
     period:
@@ -47,6 +50,15 @@ species:
     authors: Mantell
 
     holotype:
-      specimen_id: [BMNH 2422]
+      specimen_id: [ BMNH 2422 ]
       specimen_type: holotype
       institution: BMNH
+    described_in: mantell1848
+references:
+  - id: mantell1848
+    authors: Mantell, G. A.
+    year: 1848
+    title: On the structure of the jaws and teeth of the Iguanodon
+    journal: Philosophical Transactions of the Royal Society of London
+    volume: "138"
+    pages: 183-202

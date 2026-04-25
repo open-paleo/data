@@ -1,6 +1,7 @@
 genus: Tianchisaurus
 parent: Ankylosauria
-etymology: "From Chinese meaning 'heavenly pool lizard', referring to Tianchi (Heavenly Lake) near the discovery locality in Xinjiang, China."
+etymology: "From Chinese meaning 'heavenly pool lizard', referring to Tianchi
+  (Heavenly Lake) near the discovery locality in Xinjiang, China."
 description: Tianchisaurus, also invalidly called Tianchiasaurus and
   "Jurassosaurus", is a genus of ankylosaurian dinosaur from the Late Jurassic
   (Oxfordian-Kimmeridgian) Toutunhe Formation of China. While many
@@ -22,16 +23,24 @@ identifiers:
 synonyms:
   - name: Tenchisaurus
     type: informal
-    reason: Unpublished museum name for the specimen later formally described as Tianchisaurus.
+    reason: Unpublished museum name for the specimen later formally described as
+      Tianchisaurus.
   - name: Jurassosaurus
     type: nomen nudum
-    reason: Proposed by Don Lessem with a specific name honoring the Jurassic Park cast; Dong Zhiming ultimately discarded the name in favor of Tianchisaurus.
+    reason: Proposed by Don Lessem with a specific name honoring the Jurassic Park
+      cast; Dong Zhiming ultimately discarded the name in favor of
+      Tianchisaurus.
   - name: Sangonghesaurus
     type: junior subjective
-    reason: Informal name used for the same fossils later formally described as Tianchisaurus.
+    reason: Informal name used for the same fossils later formally described as
+      Tianchisaurus.
 species:
   - name: Tianchisaurus nedegoapeferima
-    etymology: "Formed from syllables of the surnames of the principal cast of the 1993 film Jurassic Park: Sam Neill, Laura Dern, Jeff Goldblum, Richard Attenborough, Bob Peck, Martin Ferrero, Ariana Richards, and Joseph Mazzello, as a gift from director Steven Spielberg honoring the cast at the completion of filming."
+    etymology: "Formed from syllables of the surnames of the principal cast of the
+      1993 film Jurassic Park: Sam Neill, Laura Dern, Jeff Goldblum, Richard
+      Attenborough, Bob Peck, Martin Ferrero, Ariana Richards, and Joseph
+      Mazzello, as a gift from director Steven Spielberg honoring the cast at
+      the completion of filming."
     status: valid
     type_species: true
     period:
@@ -49,6 +58,17 @@ species:
       region: Xinjiang
       formation: Toutunhe
     holotype:
-      specimen_id: [IVPP V. 10614]
+      specimen_id: [ IVPP V. 10614 ]
       specimen_type: holotype
       institution: IVPP
+    described_in: dong1993
+references:
+  - id: dong1993
+    authors: Dong, Z.
+    year: 1993
+    title: An ankylosaur (ornithischian dinosaur) from the Middle Jurassic of the
+      Junggar Basin, China
+    journal: Vertebrata PalAsiatica
+    volume: "31"
+    issue: "4"
+    pages: 257-266

@@ -1,6 +1,8 @@
 genus: Dystrophaeus
 parent: Eusauropoda
-etymology: "From Greek 'dys' meaning 'bad' and 'stropheus' meaning 'joint', giving 'coarse joint'; refers to the pitted joint surfaces that served as attachments for cartilage."
+etymology: "From Greek 'dys' meaning 'bad' and 'stropheus' meaning 'joint',
+  giving 'coarse joint'; refers to the pitted joint surfaces that served as
+  attachments for cartilage."
 description: Dystrophaeus is an extinct genus of sauropod dinosaur. Its type and
   only species is Dystrophaeus viaemalae, named by Edward Drinker Cope in 1877.
   Its fossils were found in the Tidwell Member of the Morrison Formation of
@@ -18,7 +20,9 @@ identifiers:
     id: "38706"
 species:
   - name: Dystrophaeus viaemalae
-    etymology: "From Latin 'viae malae' meaning 'of the bad road', a reference to the various arduous routes taken to find, reach, and salvage the fossil remains."
+    etymology: "From Latin 'viae malae' meaning 'of the bad road', a reference to
+      the various arduous routes taken to find, reach, and salvage the fossil
+      remains."
     status: valid
     type_species: true
     period:
@@ -45,8 +49,17 @@ species:
         min: 7000
         max: 12000
     holotype:
-      specimen_id: [USNM 2364]
+      specimen_id: [ USNM 2364 ]
       specimen_type: holotype
       institution: NMNH
     described: 1877
     authors: Cope
+    described_in: cope1877
+references:
+  - id: cope1877
+    authors: Cope, E. D.
+    year: 1877
+    title: On a dinosaurian from the Trias of Utah
+    journal: Proceedings of the American Philosophical Society
+    volume: "16"
+    pages: 579-584

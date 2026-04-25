@@ -1,6 +1,7 @@
 genus: Yuxisaurus
 parent: Thyreophora
-etymology: Named after Yuxi, a city in Yunnan Province, China (the type locality), combined with Greek sauros ('lizard'), meaning 'Yuxi lizard'
+etymology: Named after Yuxi, a city in Yunnan Province, China (the type
+  locality), combined with Greek sauros ('lizard'), meaning 'Yuxi lizard'
 description: Yuxisaurus is an extinct genus of early thyreophoran dinosaur from
   the Early Jurassic (Sinemurian-Toarcian) Fengjiahe Formation of southwestern
   China. The genus contains a single species, Yuxisaurus kopchicki, known from a
@@ -19,7 +20,8 @@ identifiers:
     id: Q109997024
 species:
   - name: Yuxisaurus kopchicki
-    etymology: "Named for John J. Kopchick, a biologist honored by the describers of the genus."
+    etymology: "Named for John J. Kopchick, a biologist honored by the describers of
+      the genus."
     status: valid
     type_species: true
     period:
@@ -38,8 +40,20 @@ species:
         - 24.648998
         - 102.237389
     holotype:
-      specimen_id: [CVEB 21701]
+      specimen_id: [ CVEB 21701 ]
       specimen_type: holotype
       institution: YNU
     described: 2022
     authors: Yao et al.
+    described_in: yao2022
+references:
+  - id: yao2022
+    authors: Yao, X.; Barrett, P. M.; L. Yang, X. Xu, S. D. Bi
+    year: 2022
+    title: A new early branching armored dinosaur from the Lower Jurassic of
+      southwestern China
+    journal: eLife
+    volume: "11"
+    pages: e75248:1-37
+    doi: 10.7554/eLife.75248
+    url: http://dx.doi.org/10.7554/eLife.75248

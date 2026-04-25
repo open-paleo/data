@@ -1,6 +1,7 @@
 genus: Jiangshanosaurus
 parent: Somphospondyli
-etymology: Named for Jiangshan County in Zhejiang Province, China, where the fossils were found, combined with Greek 'sauros' meaning 'lizard'.
+etymology: Named for Jiangshan County in Zhejiang Province, China, where the
+  fossils were found, combined with Greek 'sauros' meaning 'lizard'.
 description: Jiangshanosaurus is a genus of herbivorous titanosauriform sauropod
   dinosaur that lived in China approximately 92-88 million years ago, during the
   Turonian and Coniacian stages of the Late Cretaceous.
@@ -17,7 +18,8 @@ identifiers:
     id: "4822387"
 species:
   - name: Jiangshanosaurus lixianensis
-    etymology: "Named for Lixian Village, the locality in Jiangshan County, Zhejiang, China, where the holotype was excavated."
+    etymology: "Named for Lixian Village, the locality in Jiangshan County,
+      Zhejiang, China, where the holotype was excavated."
     status: valid
     type_species: true
     period:
@@ -44,8 +46,18 @@ species:
         min: 2500
         max: 2500
     holotype:
-      specimen_id: [ZNM M1322]
+      specimen_id: [ ZNM M1322 ]
       specimen_type: holotype
       institution: ZH
     described: 2001
     authors: Tang et al.
+    described_in: tang2001
+references:
+  - id: tang2001
+    authors: Tang, F.; Kang, X.-M.; Z.-S. Jin, F. Wei, W.-T. Wu
+    year: 2001
+    title: A new sauropod dinosaur of Cretaceous from Jingshan, Zhejiang province
+    journal: Vertebrata PalAsiatica
+    volume: "39"
+    issue: "4"
+    pages: 272-281

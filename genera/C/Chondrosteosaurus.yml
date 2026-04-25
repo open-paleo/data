@@ -2,7 +2,9 @@ genus: Chondrosteosaurus
 parent: Sauropoda
 pronunciation:
   phonetic: kon-DROS-tee-o-SAWR-us
-etymology: From Greek chondros ('cartilage') + osteon ('bone') + sauros ('lizard'), meaning 'cartilage and bone lizard', referring to the mix of cartilaginous and bony structures in its vertebrae.
+etymology: From Greek chondros ('cartilage') + osteon ('bone') + sauros
+  ('lizard'), meaning 'cartilage and bone lizard', referring to the mix of
+  cartilaginous and bony structures in its vertebrae.
 description: "Chondrosteosaurus is a dubious genus of sauropod dinosaur from the
   Early Cretaceous Wessex Formation of England. Two species have been named: C.
   gigas and C. magnus, both of which are now considered invalid."
@@ -19,7 +21,8 @@ identifiers:
     id: "4822774"
 species:
   - name: Chondrosteosaurus gigas
-    etymology: "From Latin 'gigas' meaning 'giant', referring to the large size of the sauropod vertebrae on which the species was based."
+    etymology: "From Latin 'gigas' meaning 'giant', referring to the large size of
+      the sauropod vertebrae on which the species was based."
     status: valid
     type_species: true
     period:
@@ -41,6 +44,17 @@ species:
     authors: Owen
 
     holotype:
-      specimen_id: [BMNH 46869]
+      specimen_id: [ BMNH 46869 ]
       specimen_type: holotype
       institution: BMNH
+    described_in: owen1876
+references:
+  - id: owen1876
+    authors: Owen, R.
+    year: 1876
+    title: Monograph on the fossil Reptilia of the Wealden and Purbeck formations.
+      Supplement no. VII. Crocodilia (Poikilopleuron) and Dinosauria?
+      (Chondrosteosaurus). [Wealden.]
+    journal: The Palaeontographical Society, London
+    volume: "1876"
+    pages: 1-7

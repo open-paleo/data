@@ -1,6 +1,9 @@
 genus: Lingyuanosaurus
 parent: Therizinosauria
-etymology: "Named for the county-level city of Lingyuan in Liaoning Province, China, where it was discovered, combined with Ancient Greek 'sauros' meaning 'lizard'; the specific name sihedangensis also references the discovery locality, the town of Sihedang."
+etymology: "Named for the county-level city of Lingyuan in Liaoning Province,
+  China, where it was discovered, combined with Ancient Greek 'sauros' meaning
+  'lizard'; the specific name sihedangensis also references the discovery
+  locality, the town of Sihedang."
 description: Lingyuanosaurus is a genus of therizinosaurian theropod from the
   Early Cretaceous of Liaoning Province, China. The type and only species is L.
   sihedangensis. It was uncovered within one of the formations that make up the
@@ -17,7 +20,8 @@ identifiers:
     id: Q62317240
 species:
   - name: Lingyuanosaurus sihedangensis
-    etymology: "Named for Sihedang, the town near the type locality in Liaoning Province, China."
+    etymology: "Named for Sihedang, the town near the type locality in Liaoning
+      Province, China."
     status: valid
     type_species: true
     period:
@@ -46,7 +50,20 @@ species:
     authors: Yao et al.
 
     holotype:
-      specimen_id: [IVPP V 23589]
+      specimen_id: [ IVPP V 23589 ]
       specimen_type: holotype
       institution: IVPP
       material: Partial skeleton
+    described_in: yao2019
+references:
+  - id: yao2019
+    authors: Yao, X.; Liao, C.-C.; C. Sullivan, X. Xu
+    year: 2019
+    title: A new transitional therizinosaurian theropod from the Early Cretaceous
+      Jehol Biota of China
+    journal: Scientific Reports
+    volume: "9"
+    issue: "5026"
+    pages: 5026:1-12
+    doi: 10.1038/s41598-019-41560-z
+    url: http://dx.doi.org/10.1038/s41598-019-41560-z

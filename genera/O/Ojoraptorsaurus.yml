@@ -1,6 +1,8 @@
 genus: Ojoraptorsaurus
 parent: Caenagnathidae
-etymology: Combines a reference to the Ojo Alamo Formation (where it was found) with Latin raptor ('plunderer') and Latinised Greek sauros ('lizard'); meaning 'Ojo Alamo plunderer lizard'
+etymology: Combines a reference to the Ojo Alamo Formation (where it was found)
+  with Latin raptor ('plunderer') and Latinised Greek sauros ('lizard'); meaning
+  'Ojo Alamo plunderer lizard'
 description: Ojoraptorsaurus is a dubious genus of oviraptorosaurian dinosaur
   from the late Cretaceous. Ojoraptorsaurus is only known from pubic bones found
   at the Naashoibito Member of the Ojo Alamo Formation dating to the late
@@ -47,8 +49,19 @@ species:
         min: 1.8
         max: 2.1
     holotype:
-      specimen_id: [SMP VP-1458]
+      specimen_id: [ SMP VP-1458 ]
       specimen_type: holotype
       institution: SMP
     described: 2011
     authors: Sullivan et al.
+    described_in: sullivan2011
+references:
+  - id: sullivan2011
+    authors: Sullivan, R. M.; Jasinski, S. E.; M. P. A. Van Tomme
+    year: 2011
+    title: A new caenagnathid Ojoraptorsaurus boerei, n. gen., n. sp. (Dinosauria,
+      Oviraptorosauria), from the Upper Cretaceous Ojo Alamo Formation
+      (Naashoibito Member), San Juan Basin, New Mexico
+    journal: Fossil Record 3. New Mexico Museum of Natural History and Science Bulletin
+    pages: 418-428
+    publisher: New Mexico Museum of Natural History and Science

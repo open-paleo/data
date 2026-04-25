@@ -3,7 +3,8 @@ parent: Oviraptoridae
 pronunciation:
   phonetic: OH-vi-RAP-tor
   ipa: /ˈoʊvɪræptər/
-etymology: "From Latin ovum ('egg') and raptor ('thief'), meaning 'egg thief', based on the initial (later revised) interpretation that it was stealing eggs"
+etymology: "From Latin ovum ('egg') and raptor ('thief'), meaning 'egg thief',
+  based on the initial (later revised) interpretation that it was stealing eggs"
 description: Oviraptor is a genus of oviraptorid dinosaur that lived in Asia
   during the Late Cretaceous period. The first remains were collected from the
   Djadokhta Formation of Mongolia in 1923 during a paleontological expedition
@@ -31,10 +32,15 @@ identifiers:
 synonyms:
   - name: Fenestrosaurus
     type: junior subjective
-    reason: Osborn previously reported the taxon as 'Fenestrosaurus philoceratops'; the designation was later discredited and the specimen is referable to Oviraptor.
+    reason: Osborn previously reported the taxon as 'Fenestrosaurus philoceratops';
+      the designation was later discredited and the specimen is referable to
+      Oviraptor.
 species:
   - name: Oviraptor philoceratops
-    etymology: "From Ancient Greek 'philos' meaning 'lover of' and 'keratops' meaning 'horned face', intended to convey a fondness for ceratopsian eggs, based on the initial mistaken interpretation that the holotype was stealing eggs from a Protoceratops nest."
+    etymology: "From Ancient Greek 'philos' meaning 'lover of' and 'keratops'
+      meaning 'horned face', intended to convey a fondness for ceratopsian eggs,
+      based on the initial mistaken interpretation that the holotype was
+      stealing eggs from a Protoceratops nest."
     status: valid
     type_species: true
     period:
@@ -63,7 +69,16 @@ species:
     authors: Osborn
 
     holotype:
-      specimen_id: [AMNH 6517]
+      specimen_id: [ AMNH 6517 ]
       specimen_type: holotype
       institution: AMNH
       material: Partial skull and skeleton
+    described_in: osborn1924
+references:
+  - id: osborn1924
+    authors: Osborn, H. F.
+    year: 1924
+    title: Three new Theropoda, Protoceratops zone, central Mongolia
+    journal: American Museum Novitates
+    volume: "144"
+    pages: 1-12

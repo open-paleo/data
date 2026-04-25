@@ -1,6 +1,7 @@
 genus: Pycnonemosaurus
 parent: Furileusauria
-etymology: From Greek 'pyknos' (dense, thick) + 'nemos' (woodland, forest) + 'sauros' (lizard), meaning 'dense forest lizard'.
+etymology: From Greek 'pyknos' (dense, thick) + 'nemos' (woodland, forest) +
+  'sauros' (lizard), meaning 'dense forest lizard'.
 description: Pycnonemosaurus is a genus of carnivorous theropod dinosaur that
   belonged to the family Abelisauridae. It was found in the Upper Cretaceous red
   conglomerate sandstones of the Cachoeira do Bom Jardim Formation, Mato Grosso,
@@ -19,7 +20,9 @@ identifiers:
     id: "4822832"
 species:
   - name: Pycnonemosaurus nevesi
-    etymology: "Named for Dr. Iedo Batista Neves, who died in 2000 and who encouraged the pursuit of palaeontological studies, particularly those of describer Alexander Kellner."
+    etymology: "Named for Dr. Iedo Batista Neves, who died in 2000 and who
+      encouraged the pursuit of palaeontological studies, particularly those of
+      describer Alexander Kellner."
     status: valid
     type_species: true
     period:
@@ -53,7 +56,18 @@ species:
     authors: Kellner and Campos
 
     holotype:
-      specimen_id: [DGM 859-R]
+      specimen_id: [ DGM 859-R ]
       specimen_type: holotype
       institution: MCT
       material: Teeth and postcranial fragments
+    described_in: kellner2002
+references:
+  - id: kellner2002
+    authors: Kellner, A. W. A.; Campos, D. d. A.
+    year: 2002
+    title: On a theropod dinosaur (Abelisauria) from the continental Cretaceous of
+      Brazil
+    journal: Arquivos do Museu Nacional, Rio de Janeiro
+    volume: "60"
+    issue: "3"
+    pages: 163-170

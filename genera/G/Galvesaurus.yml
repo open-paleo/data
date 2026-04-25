@@ -1,6 +1,7 @@
 genus: Galvesaurus
 parent: Brachiosauridae
-etymology: Galve lizard; named after Galve, the town in Spain where fossils were found, combined with Greek sauros (lizard)
+etymology: Galve lizard; named after Galve, the town in Spain where fossils were
+  found, combined with Greek sauros (lizard)
 description: Galvesaurus, or Galveosaurus (meaning "Galve lizard"), is a genus
   of brachiosaurid sauropod dinosaur from the Late Jurassic period. Fossils of
   the only known species, G. herreroi, were found in Galve, Spain, hence its
@@ -21,10 +22,14 @@ identifiers:
 synonyms:
   - name: Galveosaurus
     type: junior subjective
-    reason: Controversial near-simultaneous publication; Galvesaurus (Barco et al., July 2005) generally accepted as senior over Galveosaurus (Sánchez Hernández, August 2005), though publication-date disputes and ethical concerns remain.
+    reason: Controversial near-simultaneous publication; Galvesaurus (Barco et al.,
+      July 2005) generally accepted as senior over Galveosaurus (Sánchez
+      Hernández, August 2005), though publication-date disputes and ethical
+      concerns remain.
 species:
   - name: Galvesaurus herreroi
-    etymology: "Named for José María Herrero, the local amateur fossil hunter who discovered the specimen near Galve, Spain."
+    etymology: "Named for José María Herrero, the local amateur fossil hunter who
+      discovered the specimen near Galve, Spain."
     status: valid
     type_species: true
     period:
@@ -47,7 +52,19 @@ species:
     authors: Barco et al.
 
     holotype:
-      specimen_id: [CLH-16]
+      specimen_id: [ CLH-16 ]
       specimen_type: holotype
       institution: CL
       material: Dorsal vertebra
+    described_in: barco2005
+references:
+  - id: barco2005
+    authors: Barco, J. L.; Canudo, J. I.; G. Cuenca-Bescós, J. I. Ruiz-Omeñaca
+    year: 2005
+    title: Un nuevo dinosaurio saurópodo, Galvesaurus herreroi gen. nov., sp. nov.,
+      del tránsito Jurásico-Cretácico en Galve (Teruel, NE de España) [A new
+      sauropod dinosaur, Galvesaurus herreroi gen. nov., sp. nov., from the
+      Jurassic-Cretaceous transition in Galve (Teruel, NE Spain)]
+    journal: Naturaleza Aragonesa
+    volume: "15"
+    pages: 4-17

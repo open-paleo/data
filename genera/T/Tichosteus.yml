@@ -1,6 +1,8 @@
 genus: Tichosteus
 parent: Iguanodontia
-etymology: From Greek teichos, "wall", combined with Greek osteon, "bone" — means "walled bone", referring to vertebrae that lacked lateral pneumatic foramina in their side walls
+etymology: From Greek teichos, "wall", combined with Greek osteon, "bone" —
+  means "walled bone", referring to vertebrae that lacked lateral pneumatic
+  foramina in their side walls
 description: Tichosteus is a genus of herbivorous dinosaur from the Late
   Jurassic. It is known only from vertebrae recovered from Kimmeridgian rocks in
   the Morrison Formation, Colorado.
@@ -18,7 +20,9 @@ identifiers:
     id: "4821468"
 species:
   - name: Tichosteus lucasanus
-    etymology: "Named for Oramel W. Lucas, superintendent of public schools, who collected the holotype vertebrae for Edward Drinker Cope near the Arkansas River in Colorado."
+    etymology: "Named for Oramel W. Lucas, superintendent of public schools, who
+      collected the holotype vertebrae for Edward Drinker Cope near the Arkansas
+      River in Colorado."
     status: valid
     type_species: true
     period:
@@ -32,7 +36,17 @@ species:
       region: Colorado
       formation: Morrison
     holotype:
-      specimen_id: [AMNH 5770]
+      specimen_id: [ AMNH 5770 ]
       specimen_type: holotype
       institution: AMNH
       material: Vertebra
+    described_in: cope1877
+references:
+  - id: cope1877
+    authors: Cope, E. D.
+    year: 1877
+    title: On reptilian remains from the Dakota Beds of Colorado
+    journal: Proceedings of the American Philosophical Society
+    volume: "17"
+    issue: "100"
+    pages: 193-196

@@ -1,6 +1,7 @@
 genus: Duriatitan
 parent: Titanosauriformes
-etymology: From Latin Duria, the Roman name for Dorset (England), + Greek Titan, a giant of mythology; means 'giant from Dorset'
+etymology: From Latin Duria, the Roman name for Dorset (England), + Greek Titan,
+  a giant of mythology; means 'giant from Dorset'
 description: Duriatitan is a genus of titanosauriform sauropod dinosaur that
   lived in the Late Jurassic in what is now England. The holotype specimen of
   Duriatitan, BMNH 44635, is a partial left upper arm bone which was found by
@@ -27,7 +28,9 @@ identifiers:
     id: "47459334"
 species:
   - name: Duriatitan humerocristatus
-    etymology: "From Latin 'humerus' (upper arm bone) and 'cristatus' (crested), referring to the distinctive deltopectoral crest on the humerus that is the basis of the holotype."
+    etymology: "From Latin 'humerus' (upper arm bone) and 'cristatus' (crested),
+      referring to the distinctive deltopectoral crest on the humerus that is
+      the basis of the holotype."
     status: valid
     type_species: true
     period:
@@ -56,6 +59,16 @@ species:
     authors: Barrett et al.
 
     holotype:
-      specimen_id: [BMNH 44635]
+      specimen_id: [ BMNH 44635 ]
       specimen_type: holotype
       institution: BMNH
+    described_in: barrett2010
+references:
+  - id: barrett2010
+    authors: Barrett, P. M.; Benson, R. B. J.; P. Upchurch
+    year: 2010
+    title: "Dinosaurs of Dorset: Part II, the sauropod dinosaurs (Saurischia,
+      Sauropoda) with additional comments of the theropods"
+    journal: Proceedings of the Dorset Natural History and Archaeological Society
+    volume: "131"
+    pages: 113-126

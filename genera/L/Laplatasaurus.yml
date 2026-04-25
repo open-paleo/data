@@ -2,7 +2,9 @@ genus: Laplatasaurus
 parent: Titanosauria
 pronunciation:
   phonetic: lah-PLAHT-a-SAWR-us
-etymology: "Named for La Plata, Argentina, combined with Greek 'sauros' meaning 'lizard', hence 'La Plata lizard'. The species name refers to the Araucanos (Mapuche) people."
+etymology: "Named for La Plata, Argentina, combined with Greek 'sauros' meaning
+  'lizard', hence 'La Plata lizard'. The species name refers to the Araucanos
+  (Mapuche) people."
 description: Laplatasaurus is a genus of titanosaurian sauropod dinosaur that
   lived during the Late Cretaceous in South America, with the holotype and only
   known specimen found in the Anacleto Formation.
@@ -21,7 +23,9 @@ identifiers:
     id: "4531328"
 species:
   - name: Laplatasaurus araukanicus
-    etymology: "Named for the Araucanos (Mapuche), the indigenous people of Patagonia and central Chile, in whose traditional territory the type material was found."
+    etymology: "Named for the Araucanos (Mapuche), the indigenous people of
+      Patagonia and central Chile, in whose traditional territory the type
+      material was found."
     status: valid
     type_species: true
     period:
@@ -46,11 +50,22 @@ species:
     synonyms:
       - name: Titanosaurus araukanicus
         type: reassigned
-        reason: Originally described as Titanosaurus araukanicus; the genus name was preoccupied, and the species was reassigned to Laplatasaurus.
+        reason: Originally described as Titanosaurus araukanicus; the genus name was
+          preoccupied, and the species was reassigned to Laplatasaurus.
     described: 1927
     authors: Huene
 
     holotype:
-      specimen_id: [MLP 26-306]
+      specimen_id: [ MLP 26-306 ]
       specimen_type: lectotype
       institution: MLP
+    described_in: huene1927
+references:
+  - id: huene1927
+    authors: Huene, F. v.
+    year: 1927
+    title: Short review of the present knowledge of the Sauropoda
+    journal: Memoirs of the Queensland Museum
+    volume: "9"
+    issue: "1"
+    pages: 121-126

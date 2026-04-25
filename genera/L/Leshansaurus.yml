@@ -1,13 +1,15 @@
 genus: Leshansaurus
 parent: Afrovenatorinae
-etymology: Named after Leshan, the city in Sichuan Province, China, near where fossils were found, combined with Greek 'sauros' (lizard); meaning 'Leshan lizard'
-description: Leshansaurus is a genus of theropod dinosaur from the Middle Jurassic
-  Shaximiao Formation of what is now China. It was described in 2009 by a team
-  of Chinese paleontologists. The type species is Leshansaurus qianweiensis.
-  Fossils of Leshansaurus were discovered in strata from the Shangshaximiao
-  Formation, a formation rich in dinosaur fossils. Li et al. referred this taxon
-  to Sinraptoridae – a group of carnosaurian theropods, but it may belong to
-  Megalosauridae instead.
+etymology: Named after Leshan, the city in Sichuan Province, China, near where
+  fossils were found, combined with Greek 'sauros' (lizard); meaning 'Leshan
+  lizard'
+description: Leshansaurus is a genus of theropod dinosaur from the Middle
+  Jurassic Shaximiao Formation of what is now China. It was described in 2009 by
+  a team of Chinese paleontologists. The type species is Leshansaurus
+  qianweiensis. Fossils of Leshansaurus were discovered in strata from the
+  Shangshaximiao Formation, a formation rich in dinosaur fossils. Li et al.
+  referred this taxon to Sinraptoridae – a group of carnosaurian theropods, but
+  it may belong to Megalosauridae instead.
 diet: carnivore
 locomotion: bipedal
 paleoenvironment:
@@ -18,7 +20,8 @@ identifiers:
     id: "159791"
 species:
   - name: Leshansaurus qianweiensis
-    etymology: "Named for Qianwei County in Sichuan, China, where the holotype fossils were found."
+    etymology: "Named for Qianwei County in Sichuan, China, where the holotype
+      fossils were found."
     status: valid
     type_species: true
     period:
@@ -38,8 +41,18 @@ species:
         - 29.093945
         - 104.052391
     holotype:
-      specimen_id: [QW200701]
+      specimen_id: [ QW200701 ]
       specimen_type: holotype
       institution: ZG
     described: 2009
     authors: Li et al.
+    described_in: li2009
+references:
+  - id: li2009
+    authors: Li, F.; Peng, G.; Y. Yong, S. Jiang, D. Huang
+    year: 2009
+    title: A new carnosaur from the Late Jurassic of Qianwei, Sichuan, China
+    journal: Acta Geologica Sinica
+    volume: "83"
+    issue: "9"
+    pages: 1203-1210

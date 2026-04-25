@@ -1,6 +1,8 @@
 genus: Pectinodon
 parent: Troodontidae
-etymology: From Latin pecten ('comb') and Greek odon (ὀδών, 'tooth'), meaning 'comb tooth', referring to the comb-like serrations on the rear edge of its teeth
+etymology: From Latin pecten ('comb') and Greek odon (ὀδών, 'tooth'), meaning
+  'comb tooth', referring to the comb-like serrations on the rear edge of its
+  teeth
 description: Pectinodon is a genus of troodontid theropod dinosaurs from the end
   of the Maastrichtian age of the Late Cretaceous period (66 mya). It currently
   contains a single valid species, Pectinodon bakkeri (sometimes classified as
@@ -18,7 +20,8 @@ identifiers:
     id: "4822036"
 species:
   - name: Pectinodon bakkeri
-    etymology: "Named for Robert Thomas Bakker, the paleontologist honored by Kenneth Carpenter when the species was named in 1982."
+    etymology: "Named for Robert Thomas Bakker, the paleontologist honored by
+      Kenneth Carpenter when the species was named in 1982."
     status: valid
     type_species: true
     period:
@@ -37,8 +40,19 @@ species:
         - 43.128948
         - -104.494713
     holotype:
-      specimen_id: [UCM 38445]
+      specimen_id: [ UCM 38445 ]
       specimen_type: holotype
       institution: UCM
     described: 1982
     authors: Carpenter
+    described_in: carpenter1982
+references:
+  - id: carpenter1982
+    authors: Carpenter, K.
+    year: 1982
+    title: Baby dinosaurs from the Late Cretaceous Lance and Hell Creek formations
+      and a description of a new species of theropod
+    journal: Contributions to Geology, University of Wyoming
+    volume: "20"
+    issue: "2"
+    pages: 123-134

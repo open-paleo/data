@@ -1,6 +1,7 @@
 genus: Wyleyia
 parent: Avialae
-etymology: Named in honor of J. F. Wyley, who discovered the specimen in Weald Clay deposits of Henfield, Sussex, England.
+etymology: Named in honor of J. F. Wyley, who discovered the specimen in Weald
+  Clay deposits of Henfield, Sussex, England.
 description: Wyleyia is an extinct genus of indeterminate maniraptoran dinosaurs
   containing a single species, Wyleyia valdensis, known from the early
   Cretaceous period of Sussex, England. The genus is known from a single
@@ -19,7 +20,9 @@ identifiers:
     id: Q8039910
 species:
   - name: Wyleyia valdensis
-    etymology: "From Latin 'valdensis' meaning 'from the Weald', referring to the Weald Clay deposits of Sussex, England, where the holotype humerus was found."
+    etymology: "From Latin 'valdensis' meaning 'from the Weald', referring to the
+      Weald Clay deposits of Sussex, England, where the holotype humerus was
+      found."
     status: valid
     type_species: true
     period:
@@ -38,8 +41,18 @@ species:
         - 50.929722
         - -0.269444
     holotype:
-      specimen_id: [BMNH A3658]
+      specimen_id: [ BMNH A3658 ]
       specimen_type: holotype
       institution: BMNH
     described: 1973
     authors: Harrison and Walker
+    described_in: harrison1973
+references:
+  - id: harrison1973
+    authors: Harrison, C. J. O.; Walker, C. A.
+    year: 1973
+    title: "Wyleyia: a new bird humerus from the Lower Cretaceous of England"
+    journal: Palaeontology
+    volume: "16"
+    issue: "4"
+    pages: 721-728

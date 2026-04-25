@@ -1,6 +1,7 @@
 genus: Pitekunsaurus
 parent: Rinconsauria
-etymology: From Mapudungun pitekun, meaning 'to discover', combined with Greek sauros meaning 'lizard'; meaning 'discovery lizard'
+etymology: From Mapudungun pitekun, meaning 'to discover', combined with Greek
+  sauros meaning 'lizard'; meaning 'discovery lizard'
 description: Pitekunsaurus is a genus of titanosaurian sauropod dinosaur from
   the Late Cretaceous Anacleto Formation of Neuquén, Argentina. It was described
   by L. Filippi and A. Garrido in 2008. The type species is P. macayai. The
@@ -22,7 +23,8 @@ identifiers:
     id: "47458342"
 species:
   - name: Pitekunsaurus macayai
-    etymology: "Named for Luis Macaya, an oil company explorer who discovered the fossil in April 2004."
+    etymology: "Named for Luis Macaya, an oil company explorer who discovered the
+      fossil in April 2004."
     status: valid
     type_species: true
     period:
@@ -41,8 +43,21 @@ species:
         - -37.452221
         - -68.943336
     holotype:
-      specimen_id: [MAU-Pv-AG-446/27]
+      specimen_id: [ MAU-Pv-AG-446/27 ]
       specimen_type: holotype
       institution: MAU
     described: 2008
     authors: Filippi and Garrido
+    described_in: filippi2008
+references:
+  - id: filippi2008
+    authors: Filippi, L. S.; Garrido, A. C.
+    year: 2008
+    title: Pitekunsaurus macayai gen. et sp. nov., nuevo titanosaurio (Saurischia,
+      Sauropoda) del Cretácico Superior de la Cuenca Neuquina, Argentina
+      [Pitekunsaurus macayai gen. et sp. nov., new titanosaur (Saurischia,
+      Sauropoda) from the Upper Cretaceous of the Neuquén Basin, Argentina]
+    journal: Ameghiniana
+    volume: "45"
+    issue: "3"
+    pages: 575-590

@@ -1,6 +1,7 @@
 genus: Polyodontosaurus
 parent: Troodontini
-etymology: From Greek polys (many), odon (tooth), and sauros (lizard); meaning "many-toothed lizard".
+etymology: From Greek polys (many), odon (tooth), and sauros (lizard); meaning
+  "many-toothed lizard".
 description: Polyodontosaurus is a potentially dubious genus of troodontid
   dinosaur named in 1932 by Charles W. Gilmore for a left dentary from the
   Dinosaur Park Formation. It had been considered a synonym of Stenonychosaurus
@@ -19,7 +20,8 @@ identifiers:
 synonyms:
   - name: Latenivenatrix
     type: possible subjective
-    reason: Possible junior subjective synonym of Polyodontosaurus; identification is tentative. Per Olshevsky's Dinosaur Genera List.
+    reason: Possible junior subjective synonym of Polyodontosaurus; identification
+      is tentative. Per Olshevsky's Dinosaur Genera List.
 species:
   - name: Troodon formosus
     etymology: "From Latin 'formosus' meaning 'beautiful' or 'well-formed'."
@@ -45,7 +47,16 @@ species:
     authors: Gilmore
 
     holotype:
-      specimen_id: [CMN 8540]
+      specimen_id: [ CMN 8540 ]
       specimen_type: holotype
       institution: CMN
       material: Single left dentary, lacking teeth
+    described_in: gilmore1932
+references:
+  - id: gilmore1932
+    authors: Gilmore, C. W.
+    year: 1932
+    title: A new fossil lizard from the Belly River Formation of Alberta
+    journal: Transactions of the Royal Society of Canada, section 4, series 3
+    volume: "16"
+    pages: 117-119

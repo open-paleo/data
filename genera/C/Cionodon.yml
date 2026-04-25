@@ -1,6 +1,8 @@
 genus: Cionodon
 parent: Hadrosauridae
-etymology: "From Greek kion meaning 'column/pillar' and Greek odon meaning 'tooth'. Full meaning: 'column tooth', referring to the pillar-like shape of its teeth."
+etymology: "From Greek kion meaning 'column/pillar' and Greek odon meaning
+  'tooth'. Full meaning: 'column tooth', referring to the pillar-like shape of
+  its teeth."
 description: "Cionodon is a dubious genus of hadrosaurid dinosaur from the Late
   Cretaceous. The type species, C. arctatus, was found in the Denver Formation
   of Lodge Pole Creek, Colorado and was formally described by Edward Drinker
@@ -26,7 +28,8 @@ identifiers:
     id: "4823289"
 species:
   - name: Cionodon arctatus
-    etymology: "From Latin 'arctatus' meaning 'compressed', likely referring to the compressed form of the teeth."
+    etymology: "From Latin 'arctatus' meaning 'compressed', likely referring to the
+      compressed form of the teeth."
     status: valid
     type_species: true
     period:
@@ -44,8 +47,20 @@ species:
         - 40.285278
         - -106.860558
     holotype:
-      specimen_id: [AMNH 3951]
+      specimen_id: [ AMNH 3951 ]
       specimen_type: holotype
       institution: AMNH
     described: 1874
     authors: Cope
+    described_in: cope1874
+references:
+  - id: cope1874
+    authors: Cope, E. D.
+    year: 1874
+    title: Report on the stratigraphy and Pliocene vertebrate paleontology of
+      northern Colorado
+    journal: Bulletin of the United States Geological and Geographical Survey of the
+      Territories
+    volume: "1"
+    issue: "1"
+    pages: 9-22

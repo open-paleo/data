@@ -1,6 +1,8 @@
 genus: Macrogryphosaurus
 parent: Elasmaria
-etymology: "From Greek 'makros' meaning 'large', 'gryphos' meaning 'enigmatic', and 'sauros' meaning 'lizard', hence 'big enigmatic lizard'. The species name 'gondwanicus' refers to the ancient continent of Gondwana."
+etymology: "From Greek 'makros' meaning 'large', 'gryphos' meaning 'enigmatic',
+  and 'sauros' meaning 'lizard', hence 'big enigmatic lizard'. The species name
+  'gondwanicus' refers to the ancient continent of Gondwana."
 description: Macrogryphosaurus is a genus of elasmarian dinosaur from the
   Coniacian age Upper Cretaceous Sierra Barrosa Formation (Neuquén Group) of
   Argentina in Patagonia. It was described by Jorge Calvo and colleagues in
@@ -20,7 +22,8 @@ identifiers:
     id: "47460013"
 species:
   - name: Macrogryphosaurus gondwanicus
-    etymology: "Named for Gondwana, the ancient southern supercontinent, reflecting the South American provenance of this ornithopod."
+    etymology: "Named for Gondwana, the ancient southern supercontinent, reflecting
+      the South American provenance of this ornithopod."
     status: valid
     type_species: true
     period:
@@ -49,6 +52,17 @@ species:
     authors: Calvo et al.
 
     holotype:
-      specimen_id: [MUCPv-321]
+      specimen_id: [ MUCPv-321 ]
       specimen_type: holotype
       institution: MUC
+    described_in: calvo2007
+references:
+  - id: calvo2007
+    authors: Calvo, J. O.; Porfiri, J. D.; F. E. Novas
+    year: 2007
+    title: Discovery of a new ornithopod dinosaur from the Portezuelo Formation
+      (Upper Cretaceous), Neuquén, Patagonia, Argentina
+    journal: Arquivos do Museu Nacional, Rio de Janeiro
+    volume: "65"
+    issue: "4"
+    pages: 471-483

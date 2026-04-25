@@ -1,6 +1,7 @@
 genus: Aoniraptor
 parent: Megaraptora
-etymology: From Tehuelche 'aoni' meaning 'south' and Latin 'raptor' meaning 'thief', meaning 'southern thief'.
+etymology: From Tehuelche 'aoni' meaning 'south' and Latin 'raptor' meaning
+  'thief', meaning 'southern thief'.
 description: Aoniraptor is an extinct genus of megaraptoran theropod dinosaurs
   from the Late Cretaceous Huincul Formation of Argentina. The genus contains a
   single species, Aoniraptor libertatem, known from a partial skeleton.
@@ -15,7 +16,8 @@ identifiers:
     id: Q24705122
 species:
   - name: Aoniraptor libertatem
-    etymology: "From Latin word for freedom, as the specimen was discovered in the bicentennial year of Argentina's independence from Spain in 1810."
+    etymology: "From Latin word for freedom, as the specimen was discovered in the
+      bicentennial year of Argentina's independence from Spain in 1810."
     status: valid
     type_species: true
     period:
@@ -39,8 +41,21 @@ species:
         min: 6.0
         max: 6.0
     holotype:
-      specimen_id: [MPCA-Pv 804/1]
+      specimen_id: [ MPCA-Pv 804/1 ]
       specimen_type: holotype
       institution: MPCA
     described: 2016
     authors: Motta et al.
+    described_in: motta2016
+references:
+  - id: motta2016
+    authors: Motta, M. J.; Aranciaga Rolando, A. M.; S. Rozadilla, F. L. Agnolin, N.
+      R. Chimento, F. Brissón Egli, F. E. Novas
+    year: 2016
+    title: New theropod fauna from the Upper Cretaceous (Huincul Formation) of
+      northwestern Patagonia, Argentina
+    journal: "Cretaceous Period: Biotic Diversity and Biogeography. New Mexico
+      Museum of Natural History and Science Bulletin"
+    volume: "71"
+    pages: 231-253
+    publisher: New Mexico Museum of Natural History and Science

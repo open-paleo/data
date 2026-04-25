@@ -1,6 +1,7 @@
 genus: Velocipes
 parent: Neotheropoda
-etymology: "From Latin 'velox' meaning 'swift' and 'pes' meaning 'foot', translating as 'quick foot'."
+etymology: "From Latin 'velox' meaning 'swift' and 'pes' meaning 'foot',
+  translating as 'quick foot'."
 description: Velocipes is a genus of saurischian dinosaur from the Late Triassic
   that may have been a theropod. Its fossils were found in the Norian-aged
   Lissauer Breccia of southern Poland. Upon discovery, Velocipes was thought to
@@ -19,7 +20,8 @@ identifiers:
     id: "4822870"
 species:
   - name: Velocipes guerichi
-    etymology: "Named for Georg Gürich, who discovered the fossil material in the Lissauer Breccia of southern Poland around 1884."
+    etymology: "Named for Georg Gürich, who discovered the fossil material in the
+      Lissauer Breccia of southern Poland around 1884."
     status: valid
     type_species: true
     period:
@@ -48,7 +50,18 @@ species:
     authors: Huene
 
     holotype:
-      specimen_id: [GPIM UH no. 252]
+      specimen_id: [ GPIM UH no. 252 ]
       specimen_type: holotype
       institution: GPIH
       material: Tibia fragment
+    described_in: huene1932
+references:
+  - id: huene1932
+    authors: Huene, F. v.
+    year: 1932
+    title: Die fossile Reptil-Ordnung Saurischia, ihre Entwicklung und Geschichte
+      [The fossil reptile order Saurischia, their development and history]
+    journal: Monographien zur Geologie und Palaeontologie, serie 1
+    volume: "4"
+    issue: 1-2
+    pages: 1-361

@@ -1,6 +1,7 @@
 genus: Astrodon
 parent: Macronaria
-etymology: From Greek 'astron' meaning 'star' and 'odon' meaning 'tooth', referring to the star-like cross-sectional pattern seen in its tooth enamel.
+etymology: From Greek 'astron' meaning 'star' and 'odon' meaning 'tooth',
+  referring to the star-like cross-sectional pattern seen in its tooth enamel.
 description: Astrodon is a genus of large herbivorous sauropod dinosaur,
   measuring 20 m (66 ft) in length, 9 m (30 ft) in height and 20 metric tons (22
   short tons) in body mass. It lived in what is now the eastern United States
@@ -21,13 +22,16 @@ identifiers:
 synonyms:
   - name: Astrodontaurus
     type: junior objective
-    reason: Original genus name proposed by Johnston, who shortened it to Astrodon for the published 1859 description.
+    reason: Original genus name proposed by Johnston, who shortened it to Astrodon
+      for the published 1859 description.
   - name: Astrodonius
     type: junior objective
-    reason: Material is indistinguishable from Astrodon and is treated as a junior synonym.
+    reason: Material is indistinguishable from Astrodon and is treated as a junior
+      synonym.
 species:
   - name: Astrodon johnstoni
-    etymology: "Named for Christopher Johnston, the dentist and professor at Baltimore Dental College who first studied and named the genus in 1859."
+    etymology: "Named for Christopher Johnston, the dentist and professor at
+      Baltimore Dental College who first studied and named the genus in 1859."
     status: valid
     type_species: true
     period:
@@ -56,6 +60,15 @@ species:
     authors: Johnston
 
     holotype:
-      specimen_id: [YPM 798]
+      specimen_id: [ YPM 798 ]
       specimen_type: holotype
       institution: YPM
+    described_in: johnston1859
+references:
+  - id: johnston1859
+    authors: Johnston, C.
+    year: 1859
+    title: Note upon odontology
+    journal: The American Journal of Dental Science, new series
+    volume: "9"
+    pages: 337-343

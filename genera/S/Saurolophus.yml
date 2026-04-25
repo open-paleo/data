@@ -30,7 +30,9 @@ identifiers:
     id: "4531758"
 species:
   - name: Saurolophus osborni
-    etymology: "Named in honor of Henry Fairfield Osborn, American paleontologist and president of the American Museum of Natural History, who was a mentor to Barnum Brown."
+    etymology: "Named in honor of Henry Fairfield Osborn, American paleontologist
+      and president of the American Museum of Natural History, who was a mentor
+      to Barnum Brown."
     status: valid
     type_species: true
     period:
@@ -50,7 +52,7 @@ species:
         - 51.5
         - -112.1
     holotype:
-      specimen_id: [AMNH 5220]
+      specimen_id: [ AMNH 5220 ]
       specimen_type: holotype
       institution: AMNH
     size:
@@ -65,3 +67,13 @@ species:
         max: 1.22
     described: 1912
     authors: Brown
+    described_in: brown1912
+references:
+  - id: brown1912
+    authors: Brown, B.
+    year: 1912
+    title: A crested dinosaur from the Edmonton Cretaceous
+    journal: Bulletin of the American Museum of Natural History
+    volume: "31"
+    issue: "14"
+    pages: 131-136

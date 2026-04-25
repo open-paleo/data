@@ -1,6 +1,7 @@
 genus: Compsosuchus
 parent: Abelisauridae
-etymology: From Greek kompsos ('elegant', 'refined') + Latin suchus ('crocodile', from Greek soukhos), meaning 'elegant crocodile'.
+etymology: From Greek kompsos ('elegant', 'refined') + Latin suchus
+  ('crocodile', from Greek soukhos), meaning 'elegant crocodile'.
 description: Compsosuchus is a dubious genus of abelisauroid theropod dinosaur
   from the Late Cretaceous Lameta Formation of India.
 diet: carnivore
@@ -16,7 +17,9 @@ identifiers:
     id: "4822589"
 species:
   - name: Compsosuchus solus
-    etymology: "From Latin 'solus' meaning 'alone' or 'sole'; the reason for the choice is unclear, though it may refer to the fact that the genus is based on a single specimen."
+    etymology: "From Latin 'solus' meaning 'alone' or 'sole'; the reason for the
+      choice is unclear, though it may refer to the fact that the genus is based
+      on a single specimen."
     status: valid
     type_species: true
     period:
@@ -37,6 +40,18 @@ species:
     authors: Huene
 
     holotype:
-      specimen_id: [GSI K27/578]
+      specimen_id: [ GSI K27/578 ]
       specimen_type: holotype
       institution: GSI
+    described_in: huene1933
+references:
+  - id: huene1933
+    authors: Huene, F. v.; Matley, C. A.
+    year: 1933
+    title: The Cretaceous Saurischia and Ornithischia of the Central Provinces of
+      India
+    journal: Palaeontologica Indica (New Series), Memoirs of the Geological Survey
+      of India
+    volume: "21"
+    issue: "1"
+    pages: 1-74

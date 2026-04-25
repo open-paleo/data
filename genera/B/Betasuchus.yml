@@ -1,6 +1,8 @@
 genus: Betasuchus
 parent: Ceratosauria
-etymology: "From Greek 'beta' (the second letter) and 'suchos' meaning 'crocodile'; von Huene coined the name when renaming 'Megalosaurus bredai' in 1932, giving 'B crocodile'."
+etymology: "From Greek 'beta' (the second letter) and 'suchos' meaning
+  'crocodile'; von Huene coined the name when renaming 'Megalosaurus bredai' in
+  1932, giving 'B crocodile'."
 description: Betasuchus is a genus of probable abelisaurid theropod dinosaur
   which lived during the Late Cretaceous Period. Betasuchus is, besides
   Orthomerus and birds such as Enantiornithines, the only dinosaur genus named
@@ -17,7 +19,9 @@ identifiers:
     id: "4822898"
 species:
   - name: Betasuchus bredai
-    etymology: "Named for the late Dutch biologist and geologist Jacob Gijsbertus Samuël van Breda, a director of the Teylers Museum who collected the fossil sometime between 1820 and 1860."
+    etymology: "Named for the late Dutch biologist and geologist Jacob Gijsbertus
+      Samuël van Breda, a director of the Teylers Museum who collected the
+      fossil sometime between 1820 and 1860."
     status: valid
     type_species: true
     period:
@@ -35,8 +39,19 @@ species:
       country: NL
       region: Limburg
     holotype:
-      specimen_id: [NHMUK R 42997]
+      specimen_id: [ NHMUK R 42997 ]
       specimen_type: holotype
       institution: BMNH
     described: 1932
     authors: Huene
+    described_in: huene1932
+references:
+  - id: huene1932
+    authors: Huene, F. v.
+    year: 1932
+    title: Die fossile Reptil-Ordnung Saurischia, ihre Entwicklung und Geschichte
+      [The fossil reptile order Saurischia, their development and history]
+    journal: Monographien zur Geologie und Palaeontologie, serie 1
+    volume: "4"
+    issue: 1-2
+    pages: 1-361

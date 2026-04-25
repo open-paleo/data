@@ -1,6 +1,8 @@
 genus: Paronychodon
 parent: Paraves
-etymology: "From Greek 'para' meaning 'beside', 'onyx' meaning 'claw', and 'odon' meaning 'tooth'; translates as 'beside claw tooth', referring to the claw-like nature of the tooth."
+etymology: "From Greek 'para' meaning 'beside', 'onyx' meaning 'claw', and
+  'odon' meaning 'tooth'; translates as 'beside claw tooth', referring to the
+  claw-like nature of the tooth."
 description: Paronychodon is an extinct theropod dinosaur genus. It is a tooth
   taxon, often considered dubious because of the fragmentary nature of the
   fossils, which include "buckets" of teeth from many disparate times and places
@@ -18,7 +20,9 @@ identifiers:
     id: "4822821"
 species:
   - name: Paronychodon lacustris
-    etymology: "From Latin 'lacustris' meaning 'belonging to a lake' or 'lake-dwelling', referencing the marshy, lacustrine environment of the Judith River Formation where the holotype was found."
+    etymology: "From Latin 'lacustris' meaning 'belonging to a lake' or
+      'lake-dwelling', referencing the marshy, lacustrine environment of the
+      Judith River Formation where the holotype was found."
     status: valid
     type_species: true
     period:
@@ -37,8 +41,17 @@ species:
         - 40.099998
         - 65.800003
     holotype:
-      specimen_id: [AMNH 3018]
+      specimen_id: [ AMNH 3018 ]
       specimen_type: holotype
       institution: AMNH
     described: 1876
     authors: Cope
+    described_in: cope1876
+references:
+  - id: cope1876
+    authors: Cope, E. D.
+    year: 1876
+    title: Descriptions of some vertebrate remains from the Fort Union Beds of Montana
+    journal: Proceedings of the Academy of Natural Sciences of Philadelphia
+    volume: "28"
+    pages: 248-261

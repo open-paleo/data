@@ -1,6 +1,7 @@
 genus: Liaoningvenator
 parent: Jinfengopteryginae
-etymology: Named after Liaoning Province, China combined with Latin venator (hunter); meaning "Liaoning hunter"
+etymology: Named after Liaoning Province, China combined with Latin venator
+  (hunter); meaning "Liaoning hunter"
 description: Liaoningvenator is a genus of troodontid theropod dinosaur from the
   Early Cretaceous of China. It contains a single species, L. curriei, named
   after paleontologist Phillip J. Currie in 2017 by Shen Cai-Zhi and colleagues
@@ -24,7 +25,8 @@ identifiers:
     id: "11166123"
 species:
   - name: Liaoningvenator curriei
-    etymology: "Named for paleontologist Phillip J. Currie, honored in the genitive Latin '-i' suffix."
+    etymology: "Named for paleontologist Phillip J. Currie, honored in the genitive
+      Latin '-i' suffix."
     status: valid
     type_species: true
     period:
@@ -47,7 +49,18 @@ species:
     authors: Shen et al.
 
     holotype:
-      specimen_id: [DNHM D3012]
+      specimen_id: [ DNHM D3012 ]
       specimen_type: holotype
       institution: DNHM
       material: Nearly complete, well-preserved articulated skeleton
+    described_in: shen2017
+references:
+  - id: shen2017
+    authors: Shen, C.-z.; Zhao, B.; C.-l. Gao, J.-c. Lü, M. Kundrát
+    year: 2017
+    title: A new troodontid dinosaur (Liaoningvenator curriei gen. et sp. nov.) from
+      the Early Cretaceous Yixian Formation in western Liaoning Province
+    journal: Acta Geoscientica Sinica
+    volume: "38"
+    issue: "3"
+    pages: 359-371

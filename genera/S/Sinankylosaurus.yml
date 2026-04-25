@@ -1,6 +1,8 @@
 genus: Sinankylosaurus
 parent: Ankylosauria
-etymology: "From Latin/Greek 'Sina' meaning 'China' or 'Chinese', Greek 'ankylos' meaning 'fused' or 'bent', and 'sauros' meaning 'lizard'; meaning 'Chinese fused lizard.'"
+etymology: "From Latin/Greek 'Sina' meaning 'China' or 'Chinese', Greek
+  'ankylos' meaning 'fused' or 'bent', and 'sauros' meaning 'lizard'; meaning
+  'Chinese fused lizard.'"
 description: Sinankylosaurus is a dubious dinosaur genus known from the Late
   Cretaceous Hongtuya Formation of China. The genus contains a single species,
   Sinankylosaurus zhuchengensis, known from a partial right ilium (a pelvic
@@ -21,7 +23,8 @@ identifiers:
     id: "60971097"
 species:
   - name: Sinankylosaurus zhuchengensis
-    etymology: "Named for Zhucheng, the city in Shandong Province, China, where the holotype ilium was discovered."
+    etymology: "Named for Zhucheng, the city in Shandong Province, China, where the
+      holotype ilium was discovered."
     status: valid
     type_species: true
     period:
@@ -40,8 +43,19 @@ species:
         - 37.465832
         - 120.984718
     holotype:
-      specimen_id: [ZJZ-183]
+      specimen_id: [ ZJZ-183 ]
       specimen_type: holotype
       institution: ZJZ
     described: 2020
     authors: Wang et al.
+    described_in: wang2020
+references:
+  - id: wang2020
+    authors: Wang, K. B.; Zhang, Y. X.; J. Chen, S. Q. Chen, P. Y. Wang
+    year: 2020
+    title: A new ankylosaurian from the Late Cretaceous strata of Zhucheng, Shandong
+      Province
+    journal: Geological Bulletin of China
+    volume: "39"
+    issue: "7"
+    pages: 958-962
