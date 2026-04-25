@@ -121,7 +121,7 @@ for (const file of findYamlFiles(path.join(root, "genera")))
                 }
             }
 
-            if (species.location && species.location.formation)
+            if (species.location && typeof species.location.formation === "string")
             {
                 for (const word of species.location.formation.split(/\s+/))
                 {

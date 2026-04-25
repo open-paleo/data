@@ -677,6 +677,16 @@ for (const [filePath, doc] of genusParsed)
                 filePath,
                 `species '${species.name ?? "?"}': location present but missing 'country'`);
         }
+
+        const formation = species?.location?.formation;
+
+        if (formation !== undefined && typeof formation !== "string")
+        {
+            checkError(
+                "Location completeness",
+                filePath,
+                `species '${species.name ?? "?"}': 'formation' must be a string, got ${typeof formation} (${JSON.stringify(formation)})`);
+        }
     }
 }
 
