@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-04-25T00:07:10.250Z
+  built_at: 2026-04-25T00:49:50.213Z
   clade_count: 248
-  genus_count: 1286
+  genus_count: 1305
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.04"
@@ -7988,6 +7988,55 @@ genera:
       - Megalosauroidea
       - Megalosauridae
       - Eustreptospondylinae
+  Agathaumas:
+    genus: Agathaumas
+    parent: Ceratopsidae
+    pronunciation:
+      ipa: /æɡəˈθɔːməs/
+    description: "Agathaumas is a dubious genus of a large ceratopsid dinosaur that lived in Wyoming during the Late Cretaceous (late Maastrichtian stage, 66 million years ago). The name comes from Ancient Greek: αγαν - 'much' and θαυμα - 'wonder'. It was seen as the largest land animal known at the time of its discovery."
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "53038"
+      - source: wikidata
+        id: Q131751
+      - source: gbif
+        id: "4823148"
+    species:
+      - name: Agathaumas sylvestris
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+          from_ma: 72.1
+          to_ma: 66
+        location:
+          country: US
+          region: Wyoming
+          formation: Lance
+          coordinates:
+            - 41.553501
+            - -108.686996
+        described: 1872
+        authors: Cope
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Cerapoda
+      - Marginocephalia
+      - Ceratopsia
+      - Ceratopsidae
   Agilisaurus:
     genus: Agilisaurus
     parent: Genasauria
@@ -8063,6 +8112,80 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+  Agrosaurus:
+    genus: Agrosaurus
+    parent: Prosauropoda
+    pronunciation:
+      ipa: /ˌæɡroʊˈsɔːrəs/
+    etymology: From Greek agros ('field') and sauros ('lizard'), meaning 'field lizard'
+    description: Agrosaurus is a potentially dubious genus of thecodontosaurid sauropodomorph probably originating from the Magnesian Conglomerate of England that was originally believed to be a Triassic prosauropod from Australia. Agrosaurus would thus be the oldest dinosaur from that country. However, this appears to have been an error, and the material actually appears to come from Thecodontosaurus or a Thecodontosaurus-like animal from Bristol, England (Avon Fissure Fill). The type species is Agrosaurus macgillivrayi.
+    diet: herbivore
+    locomotion: bipedal
+    identifiers:
+      - source: pbdb
+        id: "64395"
+      - source: wikidata
+        id: Q18607487
+      - source: gbif
+        id: "4822701"
+    species:
+      - name: Agrosaurus macgillivrayi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Triassic
+          stage:
+            - Rhaetian
+          from_ma: 205.5
+          to_ma: 201.4
+        location:
+          country: GB
+          region: England
+          formation: Magnesian Conglomerate
+          coordinates:
+            - 51.469166
+            - -2.616667
+        holotype:
+          specimen_id:
+            - BMNH 49984
+          specimen_type: holotype
+          institution: Natural History Museum
+        size:
+          length_m:
+            min: 3
+            max: 3
+        described: 1891
+        authors: Seeley
+        described_in: seeley1891
+    references:
+      - id: seeley1891
+        authors: Seeley, H. G.
+        year: 1891
+        title: On Agrosaurus Macgillivrayi (Seeley), a Saurischian Reptile from the N.E. Coast of Australia
+        journal: Quarterly Journal of the Geological Society of London
+        volume: "47"
+        issue: 1-4
+        pages: 164-165
+        publisher: Geological Society of London
+        doi: 10.1144/gsl.jgs.1891.047.01-04.14
+        url: http://dx.doi.org/10.1144/gsl.jgs.1891.047.01-04.14
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Anchisauria
+      - Prosauropoda
   Agujaceratops:
     genus: Agujaceratops
     parent: Chasmosaurinae
@@ -9273,6 +9396,80 @@ genera:
       - Alvarezsauroidea
       - Alvarezsauridae
       - Parvicursorinae
+  Alcovasaurus:
+    genus: Alcovasaurus
+    parent: Dacentrurinae
+    etymology: Named after Alcova, Wyoming, where the holotype was discovered
+    description: Alcovasaurus is an extinct genus of herbivorous stegosaurian dinosaurs that lived in the Late Jurassic. It was found in the Morrison Formation of Wyoming, United States. The genus contains a single species, Alcovasaurus longispinus, originally assigned to the genus Stegosaurus. It is likely a member of the Dacentrurinae, and has been referred to the genus Miragaia by some authors.
+    diet: herbivore
+    locomotion: quadrupedal
+    identifiers:
+      - source: pbdb
+        id: "376422"
+      - source: wikidata
+        id: Q18684887
+      - source: gbif
+        id: "11322311"
+    species:
+      - name: Alcovasaurus longispinus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Tithonian
+        location:
+          country: US
+          region: Wyoming
+          locality: Alcova Quarry, Natrona County
+          formation: Morrison
+          coordinates:
+            - 41.967098
+            - -106.291
+        holotype:
+          specimen_id:
+            - UW 20503
+          specimen_type: holotype
+          institution: University of Wyoming Geological Museum
+        size:
+          length_m:
+            min: 6.5
+            max: 6.5
+          mass_kg:
+            min: 3500
+            max: 5000
+        described: 2016
+        authors: Galton and Carpenter
+        described_in: galton2016
+    references:
+      - id: galton2016
+        authors: Galton, Peter M.; Carpenter, Kenneth
+        year: 2016
+        title: "The plated dinosaur Stegosaurus longispinus Gilmore, 1914 (Dinosauria: Ornithischia; Upper Jurassic, western USA), type species of Alcovasaurus n. gen."
+        journal: Neues Jahrbuch für Geologie und Paläontologie - Abhandlungen
+        volume: "279"
+        issue: "2"
+        pages: 185-208
+        publisher: Schweizerbart
+        doi: 10.1127/njgpa/2016/0551
+        url: http://dx.doi.org/10.1127/njgpa/2016/0551
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Thyreophora
+      - Stegosauria
+      - Stegosauridae
+      - Dacentrurinae
   Alectrosaurus:
     genus: Alectrosaurus
     parent: Tyrannosauroidea
@@ -10953,6 +11150,62 @@ genera:
       - Marginocephalia
       - Pachycephalosauria
       - Pachycephalosauridae
+  Amtosaurus:
+    genus: Amtosaurus
+    parent: Ornithischia
+    pronunciation:
+      ipa: /ˌɑːmtoʊˈsɔːrəs/
+    etymology: Named after Amtgai, the Mongolian type locality, plus Greek sauros ('lizard')
+    description: Amtosaurus is a genus of ornithischian dinosaur based on a fragmentary skull collected from the Late Cretaceous (Cenomanian to Turonian) Bayanshiree Formation of Mongolia and originally believed to represent an ankylosaurid. Hadrosaurid affinities have also been suggested. However, according to Parish and Barrett, this specimen is too fragmentary to be reliably classified beyond an indeterminate ornithischian. A second species assigned to the genus, A. archibaldi, has become the basis of a valid ankylosaurid taxon, Bissektipelta.
+    diet: herbivore
+    locomotion: quadrupedal
+    identifiers:
+      - source: pbdb
+        id: "38832"
+      - source: wikidata
+        id: Q18606614
+      - source: gbif
+        id: "4823338"
+      - source: eol
+        id: "4533836"
+    species:
+      - name: Amtosaurus magnus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Cenomanian
+            - Turonian
+          from_ma: 100.5
+          to_ma: 89.8
+        location:
+          country: MN
+          region: Omnogov
+          locality: Amtgai
+          formation: Bayanshiree
+          coordinates:
+            - 43.144169
+            - 107.518059
+        holotype:
+          specimen_id:
+            - PIN 3780/2
+          specimen_type: holotype
+          institution: Paleontological Institute, Russian Academy of Sciences
+        described: 1978
+        authors: Kurzanov and Tumanova
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
   Amurosaurus:
     genus: Amurosaurus
     parent: Lambeosaurinae
@@ -17455,6 +17708,83 @@ genera:
       - Flagellicaudata
       - Dicraeosauridae
       - Dicraeosaurinae
+  Balaur:
+    genus: Balaur
+    parent: Dromaeosauridae
+    pronunciation:
+      ipa: /ˈbæl.aʊr/
+    etymology: From Romanian balaur ('dragon' of Romanian folklore)
+    description: Balaur is a genus of paravian theropod dinosaur from the Late Cretaceous (Maastrichtian) of what is now Romania. It contains a single species, Balaur bondoc, known from two partial skeletons. Its short, stocky build and double sickle claws on each foot are interpreted as an example of island syndrome on the Late Cretaceous Hațeg Island archipelago.
+    diet: carnivore
+    locomotion: bipedal
+    identifiers:
+      - source: pbdb
+        id: "170642"
+      - source: wikidata
+        id: Q18511081
+    species:
+      - name: Balaur bondoc
+        etymology: bondoc means 'stocky' in Romanian, referring to the species' robust build
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+          from_ma: 72.1
+          to_ma: 66
+        location:
+          country: RO
+          region: Hunedoara
+          formation: Sebeș
+          coordinates:
+            - 45.603615
+            - 22.845142
+        holotype:
+          specimen_id:
+            - EME VP.313
+          specimen_type: holotype
+          institution: Erdélyi Múzeum-Egyesület (Transylvanian Museum Society)
+        size:
+          length_m:
+            min: 1.8
+            max: 2.5
+          mass_kg:
+            min: 15
+            max: 15
+        described: 2010
+        authors: Csiki et al.
+        described_in: csiki2010
+    references:
+      - id: csiki2010
+        authors: Csiki, Zoltán; Vremir, Mátyás; Brusatte, Stephen L.; Norell, Mark A.
+        year: 2010
+        title: An aberrant island-dwelling theropod dinosaur from the Late Cretaceous of Romania
+        journal: Proceedings of the National Academy of Sciences
+        volume: "107"
+        issue: "35"
+        pages: 15357-15361
+        publisher: Proceedings of the National Academy of Sciences
+        doi: 10.1073/pnas.1006970107
+        url: http://dx.doi.org/10.1073/pnas.1006970107
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Tetanurae
+      - Avetheropoda
+      - Coelurosauria
+      - Maniraptora
+      - Dromaeosauridae
   Bambiraptor:
     genus: Bambiraptor
     parent: Dromaeosauridae
@@ -24828,6 +25158,68 @@ genera:
       - Ornithischia
       - Thyreophora
       - Stegosauria
+  Chienkosaurus:
+    genus: Chienkosaurus
+    parent: Tetanurae
+    etymology: lizard of Jiange County
+    description: Chienkosaurus is a dubious genus of carnivorous theropod dinosaur from the Late Jurassic Kuangyuan Series of China. It was probably related to Szechuanosaurus.
+    diet: carnivore
+    locomotion: bipedal
+    identifiers:
+      - source: pbdb
+        id: "38601"
+      - source: wikidata
+        id: Q3667794
+    species:
+      - name: Chienkosaurus ceratosauroides
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Tithonian
+          from_ma: 152.1
+          to_ma: 145
+        location:
+          country: CN
+          region: Sichuan
+          coordinates:
+            - 32.403481
+            - 105.805908
+        holotype:
+          specimen_id:
+            - IVPP V.237
+          specimen_type: holotype
+          institution: Institute of Vertebrate Paleontology and Paleoanthropology
+        described: 1942
+        authors: Young
+        described_in: young1942
+    references:
+      - id: young1942
+        authors: Young, C. C.
+        year: 1942
+        title: Fossil Vertebrates from Kuangyuan, N. Szechuan, China
+        journal: Bulletin of the Geological Society of China
+        volume: "22"
+        issue: 3-4
+        pages: 293-309
+        publisher: Wiley
+        doi: 10.1111/j.1755-6724.1942.mp223-4016.x
+        url: http://dx.doi.org/10.1111/j.1755-6724.1942.mp223-4016.x
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Tetanurae
   Chilantaisaurus:
     genus: Chilantaisaurus
     parent: Neovenatoridae
@@ -30108,6 +30500,75 @@ genera:
       - Dromaeosauridae
       - Eudromaeosauria
       - Velociraptorinae
+  Dinheirosaurus:
+    genus: Dinheirosaurus
+    parent: Diplodocinae
+    etymology: Named for Porto Dinheiro, near where the holotype was found, plus Greek sauros ('lizard') — 'Porto Dinheiro lizard'
+    description: Dinheirosaurus is a genus of diplodocid sauropod dinosaur that is known from fossils uncovered in modern-day Portugal. It may represent a species of Supersaurus. The only species is Dinheirosaurus lourinhanensis, first described by José Bonaparte and Octávio Mateus in 1999 for vertebrae and some other material from the Lourinhã Formation. Although the precise age of the formation is not known, it can be dated around the early Tithonian of the Late Jurassic.
+    diet: herbivore
+    locomotion: quadrupedal
+    identifiers:
+      - source: pbdb
+        id: "65361"
+      - source: wikidata
+        id: Q19898683
+      - source: gbif
+        id: "4967488"
+    species:
+      - name: Dinheirosaurus lourinhanensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Tithonian
+          from_ma: 152.1
+          to_ma: 149.2
+        location:
+          country: PT
+          region: Centro
+          formation: Lourinhã
+          coordinates:
+            - 39.2164
+            - -9.3435
+        holotype:
+          specimen_id:
+            - ML 414
+          specimen_type: holotype
+          institution: Museu da Lourinhã
+        size:
+          length_m:
+            min: 20
+            max: 25
+          mass_kg:
+            min: 8800
+            max: 8800
+        described: 1999
+        authors: Bonaparte and Mateus
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Diplodocoidea
+      - Diplodocimorpha
+      - Flagellicaudata
+      - Diplodocidae
+      - Diplodocinae
   Diplodocus:
     genus: Diplodocus
     parent: Diplodocidae
@@ -39135,6 +39596,61 @@ genera:
       - Maniraptora
       - Oviraptorosauria
       - Caenagnathidae
+  Gigantoscelus:
+    genus: Gigantoscelus
+    parent: Prosauropoda
+    etymology: giant shin
+    description: Gigantoscelus is a dubious genus of basal sauropodomorph dinosaur from the Early Jurassic of South Africa.
+    diet: herbivore
+    identifiers:
+      - source: pbdb
+        id: "56616"
+      - source: wikidata
+        id: Q5879472
+      - source: gbif
+        id: "4821876"
+    species:
+      - name: Gigantoscelus molengraaffi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Jurassic
+          stage:
+            - Hettangian
+            - Sinemurian
+          from_ma: 201.3
+          to_ma: 192.9
+        location:
+          country: ZA
+          region: Limpopo
+          formation: Bushveld Sandstone
+          coordinates:
+            - -23.833332
+            - 28.25
+        holotype:
+          specimen_id:
+            - TrM 65
+          specimen_type: holotype
+          institution: Ditsong National Museum of Natural History
+        described: 1916
+        authors: Van Hoepen
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Anchisauria
+      - Prosauropoda
   Gigantspinosaurus:
     genus: Gigantspinosaurus
     parent: Huayangosaurinae
@@ -60437,6 +60953,68 @@ genera:
       - Megalosauroidea
       - Megalosauridae
       - Megalosaurinae
+  Megapnosaurus:
+    genus: Megapnosaurus
+    parent: Coelophysidae
+    etymology: big dead lizard
+    description: Megapnosaurus is an extinct genus of coelophysid theropod dinosaur that lived approximately 188 million years ago during the early part of the Jurassic Period in what is now Africa. The species was a small to medium-sized, lightly built, ground-dwelling, bipedal carnivore, that could grow up to 2.2 m (7.2 ft) long and weigh up to 13 kg (29 lb).
+    diet: carnivore
+    locomotion: bipedal
+    identifiers:
+      - source: pbdb
+        id: "101006"
+      - source: wikidata
+        id: Q277277
+      - source: gbif
+        id: "4822872"
+    species:
+      - name: Megapnosaurus rhodesiensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Jurassic
+          stage:
+            - Hettangian
+            - Sinemurian
+          from_ma: 201.3
+          to_ma: 199.5
+        location:
+          country: ZW
+          region: Matabeleland North
+          formation: Forest Sandstone
+          coordinates:
+            - -16.216667
+            - 30.1
+        holotype:
+          specimen_id:
+            - QG 1
+          specimen_type: holotype
+          institution: Natural History Museum of Zimbabwe
+        size:
+          length_m:
+            min: 2.2
+            max: 2.2
+          mass_kg:
+            min: 13
+            max: 13
+        described: 2001
+        authors: Ivie et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Coelophysoidea
+      - Coelophysidae
   Megaraptor:
     genus: Megaraptor
     parent: Megaraptoridae
@@ -66188,6 +66766,73 @@ genera:
       - Thyreophora
       - Ankylosauria
       - Nodosauridae
+  Nomingia:
+    genus: Nomingia
+    parent: Caenagnathinae
+    etymology: Named after the Nomingiin Gobi (one of the 'Thirty-Three Gobis' of the Gobi Desert) where the holotype was found
+    description: Nomingia is a genus of oviraptorosaurian theropod dinosaur known from the Late Cretaceous Bugin Tsav Beds of Mongolia.
+    diet: omnivore
+    locomotion: bipedal
+    identifiers:
+      - source: pbdb
+        id: "67256"
+      - source: wikidata
+        id: Q134647
+      - source: gbif
+        id: "4822724"
+      - source: eol
+        id: "47458598"
+    species:
+      - name: Nomingia gobiensis
+        etymology: gobiensis refers to the Gobi Desert
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+        location:
+          country: MN
+          region: Omnogov
+          formation: Nemegt
+          coordinates:
+            - 43.86639
+            - 100.011108
+        holotype:
+          specimen_id:
+            - GIN 100/119
+          specimen_type: holotype
+          institution: Geological Institute, Mongolian Academy of Sciences
+        size:
+          length_m:
+            min: 1.7
+            max: 1.7
+          mass_kg:
+            min: 20
+            max: 20
+        described: 2000
+        authors: Barsbold et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Oviraptorosauria
+      - Caenagnathidae
+      - Caenagnathinae
   Nopcsaspondylus:
     genus: Nopcsaspondylus
     parent: Khebbashia
@@ -67182,6 +67827,56 @@ genera:
       - Saurischia
       - Sauropodomorpha
       - Sauropoda
+  Ojoceratops:
+    genus: Ojoceratops
+    parent: Triceratopsini
+    etymology: Ojo Alamo horned face
+    description: Ojoceratops is a genus of ceratopsian dinosaur which lived in what is now New Mexico, United States. Ojoceratops fossils have been recovered from strata of the Ojo Alamo Formation (Naashoibito Member), dating to the late Cretaceous period (late Maastrichtian age, 66 million years ago). The type species is Ojoceratops fowleri.
+    diet: herbivore
+    locomotion: quadrupedal
+    identifiers:
+      - source: pbdb
+        id: "170629"
+      - source: wikidata
+        id: Q21445795
+    species:
+      - name: Ojoceratops fowleri
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+          from_ma: 72.1
+          to_ma: 66
+        location:
+          country: US
+          region: New Mexico
+          formation: Ojo Alamo
+          coordinates:
+            - 36.343899
+            - -108.066399
+        described: 2010
+        authors: Sullivan and Lucas
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Marginocephalia
+      - Ceratopsia
+      - Ceratopsidae
+      - Chasmosaurinae
+      - Triceratopsini
   Ojoraptorsaurus:
     genus: Ojoraptorsaurus
     parent: Caenagnathidae
@@ -70140,6 +70835,80 @@ genera:
       - Saurischia
       - Sauropodomorpha
       - Saturnaliidae
+  Pantydraco:
+    genus: Pantydraco
+    parent: Sauropodomorpha
+    etymology: From the Pant-y-ffynnon quarry in South Wales (Welsh for 'hollow of the spring/well') and Latin draco ('dragon')
+    description: "Pantydraco is a genus of basal sauropodomorph dinosaur from the Late Triassic of the United Kingdom (Wales). It is based on a partial juvenile skeleton once thought to belong to Thecodontosaurus. Only one valid species of Pantydraco is recognised: P. caducus."
+    diet: omnivore
+    locomotion: bipedal
+    paleoenvironment:
+      - wetland
+    identifiers:
+      - source: pbdb
+        id: "117152"
+      - source: wikidata
+        id: Q749100
+      - source: gbif
+        id: "4819240"
+      - source: eol
+        id: "47458820"
+    species:
+      - name: Pantydraco caducus
+        etymology: caducus is Latin for 'fallen', referring to the assumption that the animal fell into a fissure fill (quarry) and died there
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Triassic
+          stage:
+            - Rhaetian
+        location:
+          country: GB
+          region: Wales
+          locality: Pant-y-ffynnon Quarry, Bonvilston
+          coordinates:
+            - 51.459
+            - -3.3755
+        holotype:
+          specimen_id:
+            - NHMUK PV RUP 24
+          specimen_type: holotype
+          institution: Natural History Museum
+        size:
+          length_m:
+            min: 3
+            max: 3
+          mass_kg:
+            min: 50
+            max: 50
+        described: 2007
+        authors: Galton et al.
+        described_in: galton2007
+    references:
+      - id: galton2007
+        authors: Galton, Peter M.; Yates, Adam M.; Kermack, Diane
+        year: 2007
+        title: Pantydraco n. gen. for Thecodontosaurus caducus Yates, 2003, a basal sauropodomorph dinosaur from the Upper Triassic or Lower Jurassic of South Wales, UK
+        journal: Neues Jahrbuch für Geologie und Paläontologie - Abhandlungen
+        volume: "243"
+        issue: "1"
+        pages: 119-125
+        publisher: Schweizerbart
+        doi: 10.1127/0077-7749/2007/0243-0119
+        url: http://dx.doi.org/10.1127/0077-7749/2007/0243-0119
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
   Papiliovenator:
     genus: Papiliovenator
     parent: Troodontidae
@@ -73425,6 +74194,74 @@ genera:
       - Styracosterna
       - Hadrosauriformes
       - Hadrosauroidea
+  Pleurocoelus:
+    genus: Pleurocoelus
+    parent: Titanosauriformes
+    etymology: From Greek pleurá ('side, rib') and koilos ('hollow'), referring to the deep pleurocoels (lateral hollows) on the vertebrae
+    description: Pleurocoelus is a genus of sauropod dinosaur named by O. C. Marsh in 1888 from juvenile remains found in the Arundel Formation of Maryland. Several authors have considered the type species, P. nanus, to be a junior synonym of Astrodon johnstoni, while others regard both as nomina dubia.
+    diet: herbivore
+    locomotion: quadrupedal
+    identifiers:
+      - source: pbdb
+        id: "54170"
+      - source: wikidata
+        id: Q1376526
+      - source: gbif
+        id: "4822843"
+      - source: eol
+        id: "4531385"
+    species:
+      - name: Pleurocoelus nanus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Albian
+        location:
+          country: US
+          region: Maryland
+          locality: Muirkirk, Prince George's County
+          formation: Arundel
+          coordinates:
+            - 39.04
+            - -76.823
+        described: 1888
+        authors: Marsh
+        described_in: marsh1888
+    references:
+      - id: marsh1888
+        authors: Marsh, O. C.
+        year: 1888
+        title: Notice of a new genus of Sauropoda and other new dinosaurs from the Potomac Formation
+        journal: American Journal of Science
+        volume: s3-35
+        issue: "205"
+        pages: 89-94
+        publisher: American Journal of Science (AJS)
+        doi: 10.2475/ajs.s3-35.205.89
+        url: http://dx.doi.org/10.2475/ajs.s3-35.205.89
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Macronaria
+      - Titanosauriformes
   Pneumatoraptor:
     genus: Pneumatoraptor
     parent: Paraves
@@ -77338,6 +78175,84 @@ genera:
       - Titanosauria
       - Lithostrotia
       - Saltasauroidea
+  Raptorex:
+    genus: Raptorex
+    parent: Tyrannosauroidea
+    etymology: From Latin raptor ('robber') and rex ('king')
+    description: Raptorex is a controversial genus of tyrannosaurid dinosaur. Its fossil remains consist of a single juvenile specimen probably uncovered in Mongolia, or possibly northeastern China. The type species is R. kriegsteini, described in 2009 by Sereno and colleagues. The genus name is derived from Latin raptor, "robber", and rex, "king". The specific name honours Roman Kriegstein, a survivor of the Holocaust, whose son Henry Kriegstein donated the specimen to the University of Chicago for scientific study.
+    diet: carnivore
+    locomotion: bipedal
+    identifiers:
+      - source: pbdb
+        id: "154174"
+      - source: wikidata
+        id: Q131717
+      - source: gbif
+        id: "8647078"
+      - source: eol
+        id: "47458543"
+    species:
+      - name: Raptorex kriegsteini
+        etymology: Honours Roman Kriegstein, a Holocaust survivor, whose son Henry Kriegstein donated the specimen to the University of Chicago for study
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+          from_ma: 72.1
+          to_ma: 66
+        location:
+          country: CN
+          region: Nei Mongol
+          coordinates:
+            - 41.333332
+            - 119.666664
+        holotype:
+          specimen_id:
+            - LH PV18
+          specimen_type: holotype
+          institution: Long Hao Institute of Geology and Palaeontology
+        size:
+          length_m:
+            min: 2.5
+            max: 3
+          mass_kg:
+            min: 65
+            max: 65
+        described: 2009
+        authors: Sereno et al.
+        described_in: sereno2009
+    references:
+      - id: sereno2009
+        authors: Sereno, Paul C.; Tan, Lin; Brusatte, Stephen L.; Kriegstein, Henry J.; Zhao, Xijin; Cloward, Karen
+        year: 2009
+        title: Tyrannosaurid Skeletal Design First Evolved at Small Body Size
+        journal: Science
+        volume: "326"
+        issue: "5951"
+        pages: 418-422
+        publisher: American Association for the Advancement of Science (AAAS)
+        doi: 10.1126/science.1177428
+        url: http://dx.doi.org/10.1126/science.1177428
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Tyrannosauroidea
   Ratchasimasaurus:
     genus: Ratchasimasaurus
     parent: Hadrosauroidea
@@ -77879,6 +78794,81 @@ genera:
       - Rhabdodontomorpha
       - Rhabdodontoidea
       - Rhabdodontidae
+  Rhinorex:
+    genus: Rhinorex
+    parent: Saurolophinae
+    etymology: From Greek rhinos ('nose') and Latin rex ('king')
+    description: Rhinorex is a genus of kritosaurin hadrosaur from the Late Cretaceous Neslen Formation, in central Utah. Its exact placement in time is uncertain, though it probably dates to 75 million years ago and was discovered in estuarine sediments.
+    diet: herbivore
+    locomotion: bipedal
+    identifiers:
+      - source: pbdb
+        id: "305972"
+      - source: wikidata
+        id: Q18091433
+      - source: eol
+        id: "43524850"
+    species:
+      - name: Rhinorex condrupus
+        etymology: From Latin condo ('bury') and rupes ('cliffs'), referring to discovery in the Book Cliffs of Utah
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+          from_ma: 83.6
+          to_ma: 72.1
+        location:
+          country: US
+          region: Utah
+          formation: Neslen
+          coordinates:
+            - 38.963001
+            - -109.926003
+        holotype:
+          specimen_id:
+            - BYU 13258
+          specimen_type: holotype
+          institution: Earth Sciences Museum, Brigham Young University
+        described: 2014
+        authors: Gates and Scheetz
+        described_in: gates2014
+    references:
+      - id: gates2014
+        authors: Gates, Terry A.; Scheetz, Rodney
+        year: 2014
+        title: "A new saurolophine hadrosaurid (Dinosauria: Ornithopoda) from the Campanian of Utah, North America"
+        journal: Journal of Systematic Palaeontology
+        volume: "13"
+        issue: "8"
+        pages: 711-725
+        publisher: Informa UK Limited
+        doi: 10.1080/14772019.2014.950614
+        url: http://dx.doi.org/10.1080/14772019.2014.950614
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Dryomorpha
+      - Styracosterna
+      - Hadrosauriformes
+      - Hadrosauroidea
+      - Hadrosauridae
+      - Saurolophinae
   Rhoetosaurus:
     genus: Rhoetosaurus
     parent: Eusauropoda
@@ -94055,6 +95045,67 @@ genera:
       - Titanosauria
       - Lithostrotia
       - Saltasauroidea
+  Ultrasaurus:
+    genus: Ultrasaurus
+    parent: Diplodocinae
+    etymology: ultra lizard
+    description: Ultrasaurus is a genus of sauropod dinosaur discovered by Haang Mook Kim in South Korea. However, the name was first used unofficially (as a nomen nudum) in 1979 by Jim Jensen to describe a set of giant dinosaur bones he discovered in the United States. Because Kim published the name for his specimen before Jensen could do so officially, George Olshevsky renamed the specimen as Ultrasauros. Jensen's giant sauropod was later found to be a chimera, and the type remains are now assigned to Supersaurus.
+    diet: herbivore
+    locomotion: quadrupedal
+    identifiers:
+      - source: pbdb
+        id: "56450"
+      - source: wikidata
+        id: Q277682
+      - source: gbif
+        id: "4822851"
+    species:
+      - name: Ultrasaurus tabriensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+            - Albian
+        location:
+          country: KR
+          region: North Gyeongsang
+          formation: Gugyedong
+          coordinates:
+            - 37.066
+            - 129.347
+        holotype:
+          specimen_id:
+            - DGBU-1973
+          specimen_type: holotype
+          institution: Department of Geology, Busan National University
+        described: 1983
+        authors: Kim
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Diplodocoidea
+      - Diplodocimorpha
+      - Flagellicaudata
+      - Diplodocidae
+      - Diplodocinae
   Ulughbegsaurus:
     genus: Ulughbegsaurus
     parent: Carcharodontosauria
@@ -96539,6 +97590,59 @@ genera:
       - Dinosauria
       - Saurischia
       - Theropoda
+  Walgettosuchus:
+    genus: Walgettosuchus
+    parent: Theropoda
+    etymology: From the town of Walgett, New South Wales, plus Greek Soukhos (the Egyptian crocodile god Sobek)
+    description: Walgettosuchus is a dubious or possibly invalid genus of extinct tetanuran theropod dinosaur that lived in Australia during the Late Cretaceous (Cenomanian). It is known from a single caudal vertebra.
+    diet: carnivore
+    locomotion: bipedal
+    identifiers:
+      - source: pbdb
+        id: "38632"
+      - source: wikidata
+        id: Q2706855
+      - source: gbif
+        id: "4819205"
+    species:
+      - name: Walgettosuchus woodwardi
+        etymology: Honours British paleontologist Arthur Smith Woodward, who first reported the specimen in 1909
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Cenomanian
+          from_ma: 100.5
+          to_ma: 93.9
+        location:
+          country: AU
+          region: New South Wales
+          locality: Lightning Ridge, near Walgett
+          formation: Griman Creek
+          coordinates:
+            - -29.4333
+            - 147.983307
+        holotype:
+          specimen_id:
+            - BMNH R3717
+          specimen_type: holotype
+          institution: Natural History Museum
+        described: 1932
+        authors: Huene
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
   Wamweracaudia:
     genus: Wamweracaudia
     parent: Mamenchisauridae
@@ -96729,6 +97833,62 @@ genera:
       - Ornithischia
       - Cerapoda
       - Ornithopoda
+  Wellnhoferia:
+    genus: Wellnhoferia
+    parent: Avialae
+    etymology: Named after German paleontologist Peter Wellnhofer, who described the Solnhofen specimen of Archaeopteryx in 1988
+    description: Wellnhoferia is a genus of early prehistoric bird-like theropod dinosaur closely related to Archaeopteryx. It is known from a single species, W. grandis, that lived in what is now Germany, during the Late Jurassic. While Wellnhoferia was similar to Archaeopteryx, it had a shorter tail and its fourth toe was shorter than that of Archaeopteryx. Andrzej Elżanowski (2001) of the Institute of Zoology of the University of Wrocław, Poland, determined the differences resulted from a "phylogenetic reduction rather than individual variation."
+    diet: carnivore
+    locomotion: bipedal
+    identifiers:
+      - source: pbdb
+        id: "68521"
+      - source: wikidata
+        id: Q138070
+      - source: gbif
+        id: "4847901"
+    species:
+      - name: Wellnhoferia grandis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Tithonian
+        location:
+          country: DE
+          region: Bavaria
+          locality: Eichstätt
+          formation: Solnhofen Limestone
+          coordinates:
+            - 48.892
+            - 11.184
+        holotype:
+          specimen_id:
+            - BSP 1999
+          specimen_type: holotype
+          institution: Bürgermeister-Müller-Museum
+        described: 2001
+        authors: Elzanowski
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptora
+      - Avialae
   Wendiceratops:
     genus: Wendiceratops
     parent: Centrosaurinae
@@ -101751,6 +102911,57 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+  Zhongyuansaurus:
+    genus: Zhongyuansaurus
+    parent: Ankylosauridae
+    etymology: Zhongyuan lizard
+    description: Zhongyuansaurus is an extinct genus of ankylosaurid dinosaurs known from the Early Cretaceous Haoling Formation of what is now Henan Province, China. The genus contains two species, Z. luoyangensis, named in 2007, and Z. junchangi, named in 2025, both known from a single partial skeleton. Zhongyuansaurus is similar to Gobisaurus, prompting some researchers to regard the genera as synonymous.
+    diet: herbivore
+    locomotion: quadrupedal
+    identifiers:
+      - source: pbdb
+        id: "169933"
+      - source: wikidata
+        id: Q135722
+    species:
+      - name: Zhongyuansaurus luoyangensis
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+            - Albian
+        location:
+          country: CN
+          region: Henan
+          locality: Ruyang County
+          formation: Haoling
+          coordinates:
+            - 34.087219
+            - 112.560799
+        holotype:
+          specimen_id:
+            - HGM 41HIII-0002
+          specimen_type: holotype
+          institution: Henan Geological Museum
+        described: 2007
+        authors: Xu et al.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Thyreophora
+      - Ankylosauria
+      - Ankylosauridae
   Zhuchengceratops:
     genus: Zhuchengceratops
     parent: Leptoceratopsidae
