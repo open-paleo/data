@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-04-25T00:49:50.213Z
+  built_at: 2026-04-25T01:07:58.499Z
   clade_count: 248
   genus_count: 1305
   license: CC-BY-4.0
@@ -7993,8 +7993,11 @@ genera:
     parent: Ceratopsidae
     pronunciation:
       ipa: /æɡəˈθɔːməs/
+      phonetic: ag-uh-THAW-mus
     description: "Agathaumas is a dubious genus of a large ceratopsid dinosaur that lived in Wyoming during the Late Cretaceous (late Maastrichtian stage, 66 million years ago). The name comes from Ancient Greek: αγαν - 'much' and θαυμα - 'wonder'. It was seen as the largest land animal known at the time of its discovery."
     diet: herbivore
+    paleoenvironment:
+      - forested
     identifiers:
       - source: pbdb
         id: "53038"
@@ -8117,6 +8120,7 @@ genera:
     parent: Prosauropoda
     pronunciation:
       ipa: /ˌæɡroʊˈsɔːrəs/
+      phonetic: AG-roh-SOR-us
     etymology: From Greek agros ('field') and sauros ('lizard'), meaning 'field lizard'
     description: Agrosaurus is a potentially dubious genus of thecodontosaurid sauropodomorph probably originating from the Magnesian Conglomerate of England that was originally believed to be a Triassic prosauropod from Australia. Agrosaurus would thus be the oldest dinosaur from that country. However, this appears to have been an error, and the material actually appears to come from Thecodontosaurus or a Thecodontosaurus-like animal from Bristol, England (Avon Fissure Fill). The type species is Agrosaurus macgillivrayi.
     diet: herbivore
@@ -9403,6 +9407,8 @@ genera:
     description: Alcovasaurus is an extinct genus of herbivorous stegosaurian dinosaurs that lived in the Late Jurassic. It was found in the Morrison Formation of Wyoming, United States. The genus contains a single species, Alcovasaurus longispinus, originally assigned to the genus Stegosaurus. It is likely a member of the Dacentrurinae, and has been referred to the genus Miragaia by some authors.
     diet: herbivore
     locomotion: quadrupedal
+    paleoenvironment:
+      - fluvial
     identifiers:
       - source: pbdb
         id: "376422"
@@ -9436,7 +9442,7 @@ genera:
           length_m:
             min: 6.5
             max: 6.5
-          mass_kg:
+          weight_kg:
             min: 3500
             max: 5000
         described: 2016
@@ -11155,10 +11161,13 @@ genera:
     parent: Ornithischia
     pronunciation:
       ipa: /ˌɑːmtoʊˈsɔːrəs/
+      phonetic: AHM-to-SAWR-us
     etymology: Named after Amtgai, the Mongolian type locality, plus Greek sauros ('lizard')
     description: Amtosaurus is a genus of ornithischian dinosaur based on a fragmentary skull collected from the Late Cretaceous (Cenomanian to Turonian) Bayanshiree Formation of Mongolia and originally believed to represent an ankylosaurid. Hadrosaurid affinities have also been suggested. However, according to Parish and Barrett, this specimen is too fragmentary to be reliably classified beyond an indeterminate ornithischian. A second species assigned to the genus, A. archibaldi, has become the basis of a valid ankylosaurid taxon, Bissektipelta.
     diet: herbivore
     locomotion: quadrupedal
+    paleoenvironment:
+      - fluvial
     identifiers:
       - source: pbdb
         id: "38832"
@@ -17713,10 +17722,13 @@ genera:
     parent: Dromaeosauridae
     pronunciation:
       ipa: /ˈbæl.aʊr/
+      phonetic: BAL-our
     etymology: From Romanian balaur ('dragon' of Romanian folklore)
     description: Balaur is a genus of paravian theropod dinosaur from the Late Cretaceous (Maastrichtian) of what is now Romania. It contains a single species, Balaur bondoc, known from two partial skeletons. Its short, stocky build and double sickle claws on each foot are interpreted as an example of island syndrome on the Late Cretaceous Hațeg Island archipelago.
     diet: carnivore
     locomotion: bipedal
+    paleoenvironment:
+      - fluvial
     identifiers:
       - source: pbdb
         id: "170642"
@@ -17750,7 +17762,7 @@ genera:
           length_m:
             min: 1.8
             max: 2.5
-          mass_kg:
+          weight_kg:
             min: 15
             max: 15
         described: 2010
@@ -30503,10 +30515,15 @@ genera:
   Dinheirosaurus:
     genus: Dinheirosaurus
     parent: Diplodocinae
+    pronunciation:
+      ipa: /diːnˌjeɪroʊˈsɔːrəs/
+      phonetic: deen-YAYR-o-SAWR-us
     etymology: Named for Porto Dinheiro, near where the holotype was found, plus Greek sauros ('lizard') — 'Porto Dinheiro lizard'
     description: Dinheirosaurus is a genus of diplodocid sauropod dinosaur that is known from fossils uncovered in modern-day Portugal. It may represent a species of Supersaurus. The only species is Dinheirosaurus lourinhanensis, first described by José Bonaparte and Octávio Mateus in 1999 for vertebrae and some other material from the Lourinhã Formation. Although the precise age of the formation is not known, it can be dated around the early Tithonian of the Late Jurassic.
     diet: herbivore
     locomotion: quadrupedal
+    paleoenvironment:
+      - fluvial
     identifiers:
       - source: pbdb
         id: "65361"
@@ -30541,7 +30558,7 @@ genera:
           length_m:
             min: 20
             max: 25
-          mass_kg:
+          weight_kg:
             min: 8800
             max: 8800
         described: 1999
@@ -60960,6 +60977,9 @@ genera:
     description: Megapnosaurus is an extinct genus of coelophysid theropod dinosaur that lived approximately 188 million years ago during the early part of the Jurassic Period in what is now Africa. The species was a small to medium-sized, lightly built, ground-dwelling, bipedal carnivore, that could grow up to 2.2 m (7.2 ft) long and weigh up to 13 kg (29 lb).
     diet: carnivore
     locomotion: bipedal
+    paleoenvironment:
+      - fluvial
+      - arid
     identifiers:
       - source: pbdb
         id: "101006"
@@ -60995,7 +61015,7 @@ genera:
           length_m:
             min: 2.2
             max: 2.2
-          mass_kg:
+          weight_kg:
             min: 13
             max: 13
         described: 2001
@@ -66769,10 +66789,15 @@ genera:
   Nomingia:
     genus: Nomingia
     parent: Caenagnathinae
+    pronunciation:
+      ipa: /noʊˈmɪŋɡiə/
+      phonetic: no-MING-gee-uh
     etymology: Named after the Nomingiin Gobi (one of the 'Thirty-Three Gobis' of the Gobi Desert) where the holotype was found
     description: Nomingia is a genus of oviraptorosaurian theropod dinosaur known from the Late Cretaceous Bugin Tsav Beds of Mongolia.
     diet: omnivore
     locomotion: bipedal
+    paleoenvironment:
+      - fluvial
     identifiers:
       - source: pbdb
         id: "67256"
@@ -66808,7 +66833,7 @@ genera:
           length_m:
             min: 1.7
             max: 1.7
-          mass_kg:
+          weight_kg:
             min: 20
             max: 20
         described: 2000
@@ -67834,6 +67859,8 @@ genera:
     description: Ojoceratops is a genus of ceratopsian dinosaur which lived in what is now New Mexico, United States. Ojoceratops fossils have been recovered from strata of the Ojo Alamo Formation (Naashoibito Member), dating to the late Cretaceous period (late Maastrichtian age, 66 million years ago). The type species is Ojoceratops fowleri.
     diet: herbivore
     locomotion: quadrupedal
+    paleoenvironment:
+      - fluvial
     identifiers:
       - source: pbdb
         id: "170629"
@@ -70838,6 +70865,9 @@ genera:
   Pantydraco:
     genus: Pantydraco
     parent: Sauropodomorpha
+    pronunciation:
+      ipa: /ˌpæntɪˈdreɪkoʊ/
+      phonetic: pant-ee-DRAY-koh
     etymology: From the Pant-y-ffynnon quarry in South Wales (Welsh for 'hollow of the spring/well') and Latin draco ('dragon')
     description: "Pantydraco is a genus of basal sauropodomorph dinosaur from the Late Triassic of the United Kingdom (Wales). It is based on a partial juvenile skeleton once thought to belong to Thecodontosaurus. Only one valid species of Pantydraco is recognised: P. caducus."
     diet: omnivore
@@ -70879,7 +70909,7 @@ genera:
           length_m:
             min: 3
             max: 3
-          mass_kg:
+          weight_kg:
             min: 50
             max: 50
         described: 2007
@@ -74197,10 +74227,15 @@ genera:
   Pleurocoelus:
     genus: Pleurocoelus
     parent: Titanosauriformes
+    pronunciation:
+      ipa: /ˌplʊəroʊˈsiːləs/
+      phonetic: PLOOR-o-SEEL-us
     etymology: From Greek pleurá ('side, rib') and koilos ('hollow'), referring to the deep pleurocoels (lateral hollows) on the vertebrae
     description: Pleurocoelus is a genus of sauropod dinosaur named by O. C. Marsh in 1888 from juvenile remains found in the Arundel Formation of Maryland. Several authors have considered the type species, P. nanus, to be a junior synonym of Astrodon johnstoni, while others regard both as nomina dubia.
     diet: herbivore
     locomotion: quadrupedal
+    paleoenvironment:
+      - coastal
     identifiers:
       - source: pbdb
         id: "54170"
@@ -78182,6 +78217,8 @@ genera:
     description: Raptorex is a controversial genus of tyrannosaurid dinosaur. Its fossil remains consist of a single juvenile specimen probably uncovered in Mongolia, or possibly northeastern China. The type species is R. kriegsteini, described in 2009 by Sereno and colleagues. The genus name is derived from Latin raptor, "robber", and rex, "king". The specific name honours Roman Kriegstein, a survivor of the Holocaust, whose son Henry Kriegstein donated the specimen to the University of Chicago for scientific study.
     diet: carnivore
     locomotion: bipedal
+    paleoenvironment:
+      - fluvial
     identifiers:
       - source: pbdb
         id: "154174"
@@ -78218,7 +78255,7 @@ genera:
           length_m:
             min: 2.5
             max: 3
-          mass_kg:
+          weight_kg:
             min: 65
             max: 65
         described: 2009
@@ -78801,6 +78838,9 @@ genera:
     description: Rhinorex is a genus of kritosaurin hadrosaur from the Late Cretaceous Neslen Formation, in central Utah. Its exact placement in time is uncertain, though it probably dates to 75 million years ago and was discovered in estuarine sediments.
     diet: herbivore
     locomotion: bipedal
+    paleoenvironment:
+      - coastal
+      - deltaic
     identifiers:
       - source: pbdb
         id: "305972"
@@ -97597,6 +97637,8 @@ genera:
     description: Walgettosuchus is a dubious or possibly invalid genus of extinct tetanuran theropod dinosaur that lived in Australia during the Late Cretaceous (Cenomanian). It is known from a single caudal vertebra.
     diet: carnivore
     locomotion: bipedal
+    paleoenvironment:
+      - lacustrine
     identifiers:
       - source: pbdb
         id: "38632"
@@ -97840,6 +97882,8 @@ genera:
     description: Wellnhoferia is a genus of early prehistoric bird-like theropod dinosaur closely related to Archaeopteryx. It is known from a single species, W. grandis, that lived in what is now Germany, during the Late Jurassic. While Wellnhoferia was similar to Archaeopteryx, it had a shorter tail and its fourth toe was shorter than that of Archaeopteryx. Andrzej Elżanowski (2001) of the Institute of Zoology of the University of Wrocław, Poland, determined the differences resulted from a "phylogenetic reduction rather than individual variation."
     diet: carnivore
     locomotion: bipedal
+    paleoenvironment:
+      - marine
     identifiers:
       - source: pbdb
         id: "68521"
@@ -102918,6 +102962,8 @@ genera:
     description: Zhongyuansaurus is an extinct genus of ankylosaurid dinosaurs known from the Early Cretaceous Haoling Formation of what is now Henan Province, China. The genus contains two species, Z. luoyangensis, named in 2007, and Z. junchangi, named in 2025, both known from a single partial skeleton. Zhongyuansaurus is similar to Gobisaurus, prompting some researchers to regard the genera as synonymous.
     diet: herbivore
     locomotion: quadrupedal
+    paleoenvironment:
+      - fluvial
     identifiers:
       - source: pbdb
         id: "169933"
