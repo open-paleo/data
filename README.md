@@ -91,6 +91,8 @@ open-paleo/
   CHANGELOG.md              # Release history
   schema.yml                # Controlled vocabularies and allowed values
   tree.yml                  # Clade hierarchy — single source of truth for phylogenetic structure
+  institutions.yaml         # Registry of museums and institutions housing type specimens
+  flagged-sources.yml       # Publishers and journals requiring reviewer verification
   clades/                   # One YAML file per clade (e.g., Dinosauria.yml)
   genera/                   # One YAML file per genus, organized alphabetically (e.g., genera/T/Tyrannosaurus.yml)
   media/                    # Images (specimen photos, reconstructions, skeletal diagrams)
@@ -116,7 +118,15 @@ The single source of truth for phylogenetic structure. Defines the parent-child 
 
 ### `schema.yml`
 
-Defines all controlled vocabularies used across the dataset: taxonomic status values, diet categories, locomotion types, geological periods and stages, image types, completeness levels, and more. The validation script enforces these constraints.
+Defines all controlled vocabularies used across the dataset: taxonomic status values, synonym types, diet categories, locomotion types, geological periods and stages, image types, completeness levels, and more. The validation script enforces these constraints.
+
+### `institutions.yaml`
+
+A structured registry of museums, universities, and other institutions that hold type specimens. Each entry is keyed by a canonical abbreviation (e.g. `AMNH` for the American Museum of Natural History) and carries the institution's full name, location, and any alternate abbreviations seen in the literature. Genus files reference institutions by key in their `holotype.institution` field; the build resolves keys to display names, and the validator rejects references to unknown keys. This eliminates the ambiguity that arises when the same museum appears under half a dozen different spellings across papers.
+
+### `flagged-sources.yml`
+
+A list of publishers and journals whose citations warrant additional reviewer scrutiny — predatory or borderline-predatory sources where individual papers may still be sound but a second look is warranted. The list mirrors [Beall's List](https://beallslist.net/) (filtered to paleontology-adjacent domains) with a small number of community-added sources. When a contribution cites a flagged publisher or journal, the validator emits a warning and the CI workflow posts a sticky pull-request comment asking the reviewer to sign off on the citation before merge. Citations are **never auto-rejected** — the goal is informed review, not blanket blocking. See [CONTRIBUTING.md](CONTRIBUTING.md#flagged-publication-sources) for the policy and the process for proposing additions or removals.
 
 ## Output Formats
 
