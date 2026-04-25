@@ -13,7 +13,9 @@
     "preview": "node --experimental-strip-types scripts/build.ts && python3 -m http.server 8080 -d docs",
     "batch-import": "node --experimental-strip-types scripts/batch-import.ts",
     "report-missing-fields": "node --experimental-strip-types scripts/report-missing-fields.ts",
-    "backfill-references": "node --experimental-strip-types scripts/backfill-references.ts"
+    "backfill-references": "node --experimental-strip-types scripts/backfill-references.ts",
+    "backfill-pronunciation-ipa": "node --experimental-strip-types scripts/backfill-pronunciation-ipa.ts",
+    "backfill-pronunciation-nhm": "node --experimental-strip-types scripts/backfill-pronunciation-nhm.ts"
   },
   "license": "CC-BY-4.0",
   "engines": {
