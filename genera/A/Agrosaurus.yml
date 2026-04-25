@@ -1,0 +1,63 @@
+genus: Agrosaurus
+parent: Prosauropoda
+pronunciation:
+  ipa: /ˌæɡroʊˈsɔːrəs/
+etymology: From Greek agros ('field') and sauros ('lizard'), meaning 'field lizard'
+description: Agrosaurus is a potentially dubious genus of thecodontosaurid
+  sauropodomorph probably originating from the Magnesian Conglomerate of England
+  that was originally believed to be a Triassic prosauropod from Australia.
+  Agrosaurus would thus be the oldest dinosaur from that country. However, this
+  appears to have been an error, and the material actually appears to come from
+  Thecodontosaurus or a Thecodontosaurus-like animal from Bristol, England (Avon
+  Fissure Fill). The type species is Agrosaurus macgillivrayi.
+diet: herbivore
+locomotion: bipedal
+identifiers:
+  - source: pbdb
+    id: "64395"
+  - source: wikidata
+    id: Q18607487
+  - source: gbif
+    id: "4822701"
+species:
+  - name: Agrosaurus macgillivrayi
+    status: valid
+    type_species: true
+    period:
+      name:
+        - Late Triassic
+      stage:
+        - Rhaetian
+      from_ma: 205.5
+      to_ma: 201.4
+    location:
+      country: GB
+      region: England
+      formation: Magnesian Conglomerate
+      coordinates:
+        - 51.469166
+        - -2.616667
+    holotype:
+      specimen_id: [BMNH 49984]
+      specimen_type: holotype
+      institution: BMNH
+    size:
+      length_m:
+        min: 3.0
+        max: 3.0
+    described: 1891
+    authors: Seeley
+    described_in: seeley1891
+references:
+  - id: seeley1891
+    authors: Seeley, H. G.
+    year: 1891
+    title: On Agrosaurus Macgillivrayi (Seeley), a Saurischian Reptile from the N.E.
+      Coast of Australia
+    journal: Quarterly Journal of the Geological Society of London
+    volume: "47"
+    issue: 1-4
+    pages: 164-165
+    publisher: Geological Society of London
+    doi: 10.1144/gsl.jgs.1891.047.01-04.14
+    url: http://dx.doi.org/10.1144/gsl.jgs.1891.047.01-04.14

@@ -1,0 +1,51 @@
+genus: Dinheirosaurus
+parent: Diplodocinae
+etymology: Named for Porto Dinheiro, near where the holotype was found, plus
+  Greek sauros ('lizard') — 'Porto Dinheiro lizard'
+description: Dinheirosaurus is a genus of diplodocid sauropod dinosaur that is
+  known from fossils uncovered in modern-day Portugal. It may represent a
+  species of Supersaurus. The only species is Dinheirosaurus lourinhanensis,
+  first described by José Bonaparte and Octávio Mateus in 1999 for vertebrae and
+  some other material from the Lourinhã Formation. Although the precise age of
+  the formation is not known, it can be dated around the early Tithonian of the
+  Late Jurassic.
+diet: herbivore
+locomotion: quadrupedal
+identifiers:
+  - source: pbdb
+    id: "65361"
+  - source: wikidata
+    id: Q19898683
+  - source: gbif
+    id: "4967488"
+species:
+  - name: Dinheirosaurus lourinhanensis
+    status: valid
+    type_species: true
+    period:
+      name:
+        - Late Jurassic
+      stage:
+        - Tithonian
+      from_ma: 152.1
+      to_ma: 149.2
+    location:
+      country: PT
+      region: Centro
+      formation: Lourinhã
+      coordinates:
+        - 39.2164
+        - -9.3435
+    holotype:
+      specimen_id: [ML 414]
+      specimen_type: holotype
+      institution: ML
+    size:
+      length_m:
+        min: 20
+        max: 25
+      mass_kg:
+        min: 8800
+        max: 8800
+    described: 1999
+    authors: Bonaparte and Mateus

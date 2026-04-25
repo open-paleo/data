@@ -1,0 +1,50 @@
+genus: Megapnosaurus
+parent: Coelophysidae
+etymology: big dead lizard
+description: Megapnosaurus is an extinct genus of coelophysid theropod dinosaur
+  that lived approximately 188 million years ago during the early part of the
+  Jurassic Period in what is now Africa. The species was a small to
+  medium-sized, lightly built, ground-dwelling, bipedal carnivore, that could
+  grow up to 2.2 m (7.2 ft) long and weigh up to 13 kg (29 lb).
+diet: carnivore
+locomotion: bipedal
+identifiers:
+  - source: pbdb
+    id: "101006"
+  - source: wikidata
+    id: Q277277
+  - source: gbif
+    id: "4822872"
+species:
+  - name: Megapnosaurus rhodesiensis
+    status: valid
+    type_species: true
+    period:
+      name:
+        - Early Jurassic
+      stage:
+        - Hettangian
+        - Sinemurian
+      from_ma: 201.3
+      to_ma: 199.5
+    location:
+      country: ZW
+      region: Matabeleland North
+      formation: Forest Sandstone
+      coordinates:
+        - -16.216667
+        - 30.1
+    holotype:
+      specimen_id:
+        - QG 1
+      specimen_type: holotype
+      institution: NMZ
+    size:
+      length_m:
+        min: 2.2
+        max: 2.2
+      mass_kg:
+        min: 13
+        max: 13
+    described: 2001
+    authors: Ivie et al.

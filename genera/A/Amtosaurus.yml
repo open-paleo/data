@@ -1,0 +1,50 @@
+genus: Amtosaurus
+parent: Ornithischia
+pronunciation:
+  ipa: /ˌɑːmtoʊˈsɔːrəs/
+etymology: Named after Amtgai, the Mongolian type locality, plus Greek sauros ('lizard')
+description: Amtosaurus is a genus of ornithischian dinosaur based on a
+  fragmentary skull collected from the Late Cretaceous (Cenomanian to Turonian)
+  Bayanshiree Formation of Mongolia and originally believed to represent an
+  ankylosaurid. Hadrosaurid affinities have also been suggested. However,
+  according to Parish and Barrett, this specimen is too fragmentary to be
+  reliably classified beyond an indeterminate ornithischian. A second species
+  assigned to the genus, A. archibaldi, has become the basis of a valid
+  ankylosaurid taxon, Bissektipelta.
+diet: herbivore
+locomotion: quadrupedal
+identifiers:
+  - source: pbdb
+    id: "38832"
+  - source: wikidata
+    id: Q18606614
+  - source: gbif
+    id: "4823338"
+  - source: eol
+    id: "4533836"
+species:
+  - name: Amtosaurus magnus
+    status: valid
+    type_species: true
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Cenomanian
+        - Turonian
+      from_ma: 100.5
+      to_ma: 89.8
+    location:
+      country: MN
+      region: Omnogov
+      locality: Amtgai
+      formation: Bayanshiree
+      coordinates:
+        - 43.144169
+        - 107.518059
+    holotype:
+      specimen_id: [PIN 3780/2]
+      specimen_type: holotype
+      institution: PIN
+    described: 1978
+    authors: Kurzanov and Tumanova
