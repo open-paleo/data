@@ -658,6 +658,37 @@ for (const [filePath, doc] of allParsed)
     }
 }
 
+// 12c. Reference notes length — keep concise and factual
+startCheck("Reference notes length");
+
+const referenceNotesLimit = 200;
+
+for (const [filePath, doc] of allParsed)
+{
+    if (!doc || !Array.isArray(doc.references))
+    {
+        continue;
+    }
+
+    for (const reference of doc.references)
+    {
+        if (!reference || typeof reference.notes !== "string")
+        {
+            continue;
+        }
+
+        if (reference.notes.length > referenceNotesLimit)
+        {
+            const referenceLabel = reference.id ?? reference.title ?? "?";
+
+            checkWarning(
+                "Reference notes length",
+                filePath,
+                `reference '${referenceLabel}': notes is ${reference.notes.length} chars (keep under ${referenceNotesLimit}, prose belongs in description)`);
+        }
+    }
+}
+
 // 13. Location completeness — country required if location present
 startCheck("Location completeness");
 
