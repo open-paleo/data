@@ -1,0 +1,2663 @@
+audit_summary:
+  clean: 661
+  clean-no-paper: 204
+  clean-multi-taxon: 33
+  collision-divergent-refs: 84
+  collision-paper-mismatch: 13
+  misfile-suspected: 47
+  inconsistent-refs-no-paper: 15
+  no-paper-multi: 19
+blocks:
+  - old_key: arbour2014
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: arbour2014a
+        suffix: a
+        citing_genera:
+          - Ziapelta
+        paper_in_corpus: false
+        year: 2014
+        journal: PLoS ONE
+        doi: 10.1371/journal.pone.0108804
+        title: A New Ankylosaurid Dinosaur from the Upper Cretaceous (Kirtlandian) of New Mexico with Implications for Ankylosaurid Diversity in the Upper Cretaceous of Western North America
+      - new_key: arbour2014b
+        suffix: b
+        citing_genera:
+          - Zaraapelta
+        paper_in_corpus: true
+        year: 2014
+        journal: Zoological Journal of the Linnean Society
+        doi: 10.1111/zoj.12185
+        title: The ankylosaurid dinosaurs of the Upper Cretaceous Baruungoyot and Nemegt formations of Mongolia
+        corpus_markdown_basename: arbour2014
+  - old_key: arbour2017
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: arbour2017a
+        suffix: a
+        citing_genera:
+          - Zuul
+        paper_in_corpus: false
+        year: 2017
+        journal: Royal Society Open Science
+        doi: 10.1098/rsos.161086
+        title: A new ankylosaurine dinosaur from the Judith River Formation of Montana, USA, based on an exceptional skeleton with soft tissue preservation
+      - new_key: arbour2017b
+        suffix: b
+        citing_genera:
+          - Ankylosaurus
+        paper_in_corpus: true
+        year: 2017
+        journal: Journal of Systematic Palaeontology
+        doi: 10.1080/14772019.2015.1059985
+        title: Systematics, phylogeny and palaeobiogeography of the ankylosaurid dinosaurs
+        corpus_markdown_basename: arbour2017
+  - old_key: averianov2018
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: averianov2018a
+        suffix: a
+        citing_genera:
+          - Sibirotitan
+        paper_in_corpus: true
+        year: 2018
+        journal: Geobios
+        doi: 10.1016/j.geobios.2017.12.004
+        title: A new sauropod dinosaur from the Lower Cretaceous Ilek Formation, Western Siberia, Russia
+        corpus_markdown_basename: averianov2018
+      - new_key: averianov2018b
+        suffix: b
+        citing_genera:
+          - Volgatitan
+        paper_in_corpus: false
+        year: 2018
+        journal: Biological Communications
+        doi: 10.21638/spbu03.2018.301
+        title: The oldest titanosaurian sauropod of the Northern Hemisphere
+  - old_key: averianov2021
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: averianov2021a
+        suffix: a
+        citing_genera:
+          - Kansaignathus
+        paper_in_corpus: false
+        year: 2021
+        journal: Doklady Earth Sciences
+        doi: 10.1134/s1028334x21070047
+        title: A New Theropod Dinosaur (Theropoda, Dromaeosauridae) from the Late Cretaceous of Tajikistan
+      - new_key: averianov2021b
+        suffix: b
+        citing_genera:
+          - Dzharatitanis
+        paper_in_corpus: true
+        year: 2021
+        journal: PLOS ONE
+        doi: 10.1371/journal.pone.0246620
+        title: First rebbachisaurid sauropod dinosaur from Asia
+        corpus_markdown_basename: averianov2021
+      - new_key: averianov2021c
+        suffix: c
+        citing_genera:
+          - Khulsanurus
+        paper_in_corpus: false
+        year: 2021
+        journal: Historical Biology
+        doi: 10.1080/08912963.2021.2000976
+        title: The second taxon of alvarezsaurid theropod dinosaurs from the Late Cretaceous Khulsan locality in Gobi Desert, Mongolia
+  - old_key: averianov2022
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: averianov2022a
+        suffix: a
+        citing_genera:
+          - Ondogurvel
+        paper_in_corpus: false
+        year: 2022
+        journal: Cretaceous Research
+        doi: 10.1016/j.cretres.2022.105168
+        title: A new alvarezsaurid theropod dinosaur from the Upper Cretaceous of Gobi Desert, Mongolia
+      - new_key: averianov2022b
+        suffix: b
+        citing_genera:
+          - Dzharaonyx
+        paper_in_corpus: true
+        year: 2022
+        journal: Journal of Vertebrate Paleontology
+        doi: 10.1080/02724634.2021.2036174
+        title: New material and diagnosis of a new taxon of alvarezsaurid (Dinosauria, Theropoda) from the Upper Cretaceous Bissekty Formation of Uzbekistan
+        corpus_markdown_basename: averianov2022
+  - old_key: bonaparte1979
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: bonaparte1979a
+        suffix: a
+        citing_genera:
+          - Patagosaurus
+          - Piatnitzkysaurus
+          - Volkheimeria
+        paper_in_corpus: false
+        year: 1979
+        journal: Science
+        doi: 10.1126/science.205.4413.1377
+        title: "Dinosaurs: A Jurassic Assemblage from Patagonia"
+      - new_key: bonaparte1979b
+        suffix: b
+        citing_genera:
+          - Mussaurus
+        paper_in_corpus: true
+        year: 1979
+        journal: Ameghiniana
+        title: El hallazgo del primer nido de dinosaurios triasicos, (Saurischia, Prosauropoda), Triasico Superior de Patagonia, Argentina [The discovery of the first nest of Triassic dinosaurs (Saurischia, Prosauropoda,) from the Upper Triassic of Patagonia, Argentina]
+        corpus_markdown_basename: bonaparte1979
+  - old_key: bonaparte1999
+    audit_bucket: inconsistent-refs-no-paper
+    paper_present: false
+    assignments:
+      - new_key: bonaparte1999a
+        suffix: a
+        citing_genera:
+          - Dinheirosaurus
+        paper_in_corpus: false
+        year: 1999
+        journal: Revista del Museo Argentino de Ciencias Naturales "Bernardino Rivadavia" e Instituto Nacional de Investigación de las Ciencias Naturales, Paleontología
+        title: A new diplodocid, Dinheirosaurus lourinhanensis gen. et sp. nov., from the Late Jurassic beds of Portugal
+      - new_key: bonaparte1999b
+        suffix: b
+        citing_genera:
+          - Guaibasaurus
+        paper_in_corpus: false
+        year: 1999
+        journal: Proceedings of the Second Gondwanan Dinosaur Symposium, National Science Museum Monographs
+        title: A new early Late Triassic saurischian dinosaur from Rio Grande do Sol state, Brazil
+      - new_key: bonaparte1999c
+        suffix: c
+        citing_genera:
+          - Agustinia
+        paper_in_corpus: false
+        year: 1999
+        journal: Y. Tomida, T. H. Rich, and P. Vickers-Rich (eds.), Proceedings of the Second Gondwanan Dinosaur Symposium, National Science Museum Monographs
+        title: An armoured sauropod from the Aptian of northern Patagonia, Argentina
+      - new_key: bonaparte1999d
+        suffix: d
+        citing_genera:
+          - Lessemsaurus
+        paper_in_corpus: false
+        year: 1999
+        journal: Ameghiniana
+        title: Evolución de las vértebras presacras en Sauropodomorpha [Evolution of the presacral vertebrae in Sauropodomorpha]
+  - old_key: brown1914
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: brown1914a
+        suffix: a
+        citing_genera:
+          - Anchiceratops
+        paper_in_corpus: true
+        year: 1914
+        journal: Bulletin of the American Museum of Natural History
+        title: Anchiceratops, a new genus of horned dinosaurs from the Edmonton Cretaceous of Alberta. With discussion of the origin of the ceratopsian crest and the brain casts of Anchiceratops and Trachodon
+        corpus_markdown_basename: brown1914
+      - new_key: brown1914b
+        suffix: b
+        citing_genera:
+          - Corythosaurus
+        paper_in_corpus: true
+        year: 1914
+        journal: Bulletin of the American Museum of Natural History
+        title: Corythosaurus casuarius, a new crested dinosaur from the Belly River Cretaceous, with provisional classification of the family Trachodontidae
+        corpus_markdown_basename: brown1914
+      - new_key: brown1914c
+        suffix: c
+        citing_genera:
+          - Leptoceratops
+        paper_in_corpus: true
+        year: 1914
+        journal: Bulletin of the American Museum of Natural History
+        title: Leptoceratops, a new genus of Ceratopsia from the Edmonton Cretaceous of Alberta
+        corpus_markdown_basename: brown1914
+  - old_key: calvo2007
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: calvo2007a
+        suffix: a
+        citing_genera:
+          - Futalognkosaurus
+        paper_in_corpus: true
+        year: 2007
+        journal: Anais da Academia Brasileira de Ciências
+        doi: 10.1590/s0001-37652007000300013
+        title: A new Cretaceous terrestrial ecosystem from Gondwana with the description of a new sauropod dinosaur
+        corpus_markdown_basename: calvo2007
+      - new_key: calvo2007b
+        suffix: b
+        citing_genera:
+          - Muyelensaurus
+        paper_in_corpus: false
+        year: 2007
+        journal: Arquivos do Museu Nacional, Rio de Janeiro
+        title: A new titanosaur sauropod from the Late Cretaceous of Neuquén, Patagonia, Argentina
+      - new_key: calvo2007c
+        suffix: c
+        citing_genera:
+          - Macrogryphosaurus
+        paper_in_corpus: false
+        year: 2007
+        journal: Arquivos do Museu Nacional, Rio de Janeiro
+        doi: 10.5281/zenodo.13461915
+        title: Discovery of a new ornithopod dinosaur from the Portezuelo Formation (Upper Cretaceous), Neuquén, Patagonia, Argentina
+  - old_key: carpenter2001
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: carpenter2001a
+        suffix: a
+        citing_genera:
+          - Cedarpelta
+        paper_in_corpus: true
+        year: 2001
+        journal: The Armored Dinosaurs. Indiana University Press, Bloomington
+        title: Disarticulated skull of a new primitive ankylosaurid from the Lower Cretaceous of eastern Utah
+        corpus_markdown_basename: carpenter2001
+      - new_key: carpenter2001b
+        suffix: b
+        citing_genera:
+          - Hesperosaurus
+        paper_in_corpus: false
+        year: 2001
+        journal: The Armored Dinosaurs. Indiana University Press, Bloomington
+        title: New primitive stegosaur from the Morrison Formation, Wyoming
+  - old_key: choiniere2010
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: choiniere2010a
+        suffix: a
+        citing_genera:
+          - Haplocheirus
+        paper_in_corpus: true
+        year: 2010
+        journal: Science
+        doi: 10.1126/science.1182143
+        title: A Basal Alvarezsauroid Theropod from the Early Late Jurassic of Xinjiang, China
+        corpus_markdown_basename: choiniere2010
+      - new_key: choiniere2010b
+        suffix: b
+        citing_genera:
+          - Zuolong
+        paper_in_corpus: false
+        year: 2010
+        journal: Journal of Vertebrate Paleontology
+        doi: 10.1080/02724634.2010.520779
+        title: "A basal coelurosaur (Dinosauria: Theropoda) from the Late Jurassic (Oxfordian) of the Shishugou Formation in Wucaiwan, People's Republic of China"
+  - old_key: cope1877
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: cope1877a
+        suffix: a
+        citing_genera:
+          - Dystrophaeus
+        paper_in_corpus: false
+        year: 1877
+        journal: Proceedings of the American Philosophical Society
+        title: On a dinosaurian from the Trias of Utah
+      - new_key: cope1877b
+        suffix: b
+        citing_genera:
+          - Camarasaurus
+        paper_in_corpus: true
+        year: 1877
+        journal: Paleontological Bulletin
+        title: On a gigantic saurian from the Dakota epoch of Colorado
+        corpus_markdown_basename: cope1877
+      - new_key: cope1877c
+        suffix: c
+        citing_genera:
+          - Amphicoelias
+        paper_in_corpus: true
+        year: 1877
+        journal: Proceedings of the American Philosophical Society
+        title: On Amphicoelias, a genus of Saurians from the Dakota epoch of Colorado
+        corpus_markdown_basename: cope1877
+      - new_key: cope1877d
+        suffix: d
+        citing_genera:
+          - Tichosteus
+        paper_in_corpus: true
+        year: 1877
+        journal: Proceedings of the American Philosophical Society
+        title: On reptilian remains from the Dakota Beds of Colorado
+        corpus_markdown_basename: cope1877
+  - old_key: coria2002
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: coria2002a
+        suffix: a
+        citing_genera:
+          - Aucasaurus
+        paper_in_corpus: false
+        year: 2002
+        journal: Journal of Vertebrate Paleontology
+        doi: 10.1671/0272-4634(2002)022[0460:ancroc]2.0.co;2
+        title: "A new close relative of<i>Carnotaurus sastrei</i>Bonaparte 1985 (Theropoda: Abelisauridae) from the Late Cretaceous of Patagonia"
+      - new_key: coria2002b
+        suffix: b
+        citing_genera:
+          - Anabisetia
+        paper_in_corpus: true
+        year: 2002
+        journal: Journal of Vertebrate Paleontology
+        doi: 10.1671/0272-4634(2002)022[0503:aniofn]2.0.co;2
+        title: A new iguanodontian ornithopod from Neuquen Basin, Patagonia, Argentina
+        corpus_markdown_basename: coria2002
+  - old_key: coria2013
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: coria2013a
+        suffix: a
+        citing_genera:
+          - Overosaurus
+        paper_in_corpus: true
+        year: 2013
+        journal: Zootaxa
+        doi: 10.11646/zootaxa.3683.4.2
+        title: "&lt;i&gt;Overosaurus paradasorum&lt;/i&gt; gen. et sp. nov. , a new sauropod dinosaur (Titanosauria: Lithostrotia) from the Late Cretaceous of Neuquén, Patagonia, Argentina"
+        corpus_markdown_basename: coria2013
+      - new_key: coria2013b
+        suffix: b
+        citing_genera:
+          - Trinisaura
+        paper_in_corpus: false
+        year: 2013
+        journal: Cretaceous Research
+        doi: 10.1016/j.cretres.2012.12.004
+        title: A new ornithopod (Dinosauria; Ornithischia) from Antarctica
+  - old_key: csiki2010
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: csiki2010a
+        suffix: a
+        citing_genera:
+          - Paludititan
+        paper_in_corpus: false
+        year: 2010
+        journal: Neues Jahrbuch für Geologie und Paläontologie - Abhandlungen
+        doi: 10.1127/0077-7749/2010/0098
+        title: A partial titanosaur (Sauropoda, Dinosauria) skeleton from the Maastrichtian of Nalat-Vad, Hateg Basin, Romania
+      - new_key: csiki2010b
+        suffix: b
+        citing_genera:
+          - Balaur
+        paper_in_corpus: true
+        year: 2010
+        journal: Proceedings of the National Academy of Sciences
+        doi: 10.1073/pnas.1006970107
+        title: An aberrant island-dwelling theropod dinosaur from the Late Cretaceous of Romania
+        corpus_markdown_basename: csiki2010
+  - old_key: dalman2022
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: dalman2022a
+        suffix: a
+        citing_genera:
+          - Bisticeratops
+        paper_in_corpus: true
+        year: 2022
+        journal: New Mexico Museum of Natural History and Science Bulletin
+        title: A new chasmosaurine ceratopsid from the Upper Cretaceous (Campanian) Farmington Member of the Kirtland Formation, New Mexico
+        corpus_markdown_basename: dalman2022
+      - new_key: dalman2022b
+        suffix: b
+        citing_genera:
+          - Sierraceratops
+        paper_in_corpus: true
+        year: 2022
+        journal: Cretaceous Research
+        doi: 10.1016/j.cretres.2021.105034
+        title: Sierraceratops turneri, a new chasmosaurine ceratopsid from the Hall Lake Formation (Upper Cretaceous) of south-central New Mexico
+        corpus_markdown_basename: dalman2022
+  - old_key: dong1978
+    audit_bucket: inconsistent-refs-no-paper
+    paper_present: false
+    assignments:
+      - new_key: dong1978a
+        suffix: a
+        citing_genera:
+          - Yangchuanosaurus
+        paper_in_corpus: false
+        year: 1978
+        journal: Ke Xue Tong Bao [Science Newsletter]
+        title: "[A new carnosaur from Yongchuan County, Sichuan Province]"
+      - new_key: dong1978b
+        suffix: b
+        citing_genera:
+          - Micropachycephalosaurus
+        paper_in_corpus: false
+        year: 1978
+        journal: Vertebrata PalAsiatica
+        title: "[A new genus of Pachycephalosauria from Laiyang, Shantung]"
+  - old_key: dong1983
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: dong1983a
+        suffix: a
+        citing_genera:
+          - Chungkingosaurus
+          - Gongbusaurus
+          - Shunosaurus
+          - Zizhongosaurus
+        paper_in_corpus: true
+        year: 1983
+        journal: Palaeontologica Sinica, New Series C, Whole Number
+        title: "[Dinosaurs from the Jurassic of Sichuan]"
+        corpus_markdown_basename: dong1983
+      - new_key: dong1983b
+        suffix: b
+        citing_genera:
+          - Xiaosaurus
+        paper_in_corpus: false
+        year: 1983
+        journal: Vertebrata PalAsiatica
+        title: New ornithopod genus from the Middle Jurassic of Sichuan Basin, China
+  - old_key: dong1984
+    audit_bucket: inconsistent-refs-no-paper
+    paper_present: false
+    assignments:
+      - new_key: dong1984a
+        suffix: a
+        citing_genera:
+          - Xuanhanosaurus
+        paper_in_corpus: false
+        year: 1984
+        journal: Vertebrata PalAsiatica
+        title: "[A new theropod dinosaur from the Middle Jurassic of Sichuan Basin]"
+      - new_key: dong1984b
+        suffix: b
+        citing_genera:
+          - Datousaurus
+        paper_in_corpus: false
+        year: 1984
+        journal: Vertebrata PalAsiatica
+        title: "[Note on a new Mid-Jurassic sauropod (Datousaurus bashanensis gen. et sp. nov.) from Sichuan Basin, China]"
+  - old_key: dong1997
+    audit_bucket: inconsistent-refs-no-paper
+    paper_present: false
+    assignments:
+      - new_key: dong1997a
+        suffix: a
+        citing_genera:
+          - Hudiesaurus
+        paper_in_corpus: false
+        year: 1997
+        journal: Sino-Japanese Silk Road Dinosaur Expedition. China Ocean Press, Beijing
+        title: A gigantic sauropod (Hudiesaurus sinojapanorum gen. et sp. nov.) from the Turpan Basin, China
+      - new_key: dong1997b
+        suffix: b
+        citing_genera:
+          - Siluosaurus
+        paper_in_corpus: false
+        year: 1997
+        journal: Sino-Japanese Silk Road Dinosaur Expedition. China Ocean Press, Beijing
+        title: A small ornithopod from Mazongshan area, Gansu Province, China
+      - new_key: dong1997c
+        suffix: c
+        citing_genera:
+          - Archaeoceratops
+        paper_in_corpus: false
+        year: 1997
+        journal: Sino-Japanese Silk Road Dinosaur Expedition. China Ocean Press, Beijing
+        title: On a primitive neoceratopsian from the Early Cretaceous of China
+  - old_key: evans2013
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: evans2013a
+        suffix: a
+        citing_genera:
+          - Acheroraptor
+        paper_in_corpus: true
+        year: 2013
+        journal: Naturwissenschaften
+        doi: 10.1007/s00114-013-1107-5
+        title: "A new dromaeosaurid (Dinosauria: Theropoda) with Asian affinities from the latest Cretaceous of North America"
+        corpus_markdown_basename: evans2013
+      - new_key: evans2013b
+        suffix: b
+        citing_genera:
+          - Acrotholus
+        paper_in_corpus: false
+        year: 2013
+        journal: Nature Communications
+        doi: 10.1038/ncomms2749
+        title: The oldest North American pachycephalosaurid and the hidden diversity of small-bodied ornithischian dinosaurs
+  - old_key: ezcurra2010
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: ezcurra2010a
+        suffix: a
+        citing_genera:
+          - Chromogisaurus
+        paper_in_corpus: false
+        year: 2010
+        journal: Journal of Systematic Palaeontology
+        doi: 10.1080/14772019.2010.484650
+        title: "A new early dinosaur (Saurischia: Sauropodomorpha) from the Late Triassic of Argentina: a reassessment of dinosaur origin and phylogeny"
+      - new_key: ezcurra2010b
+        suffix: b
+        citing_genera:
+          - Austrocheirus
+        paper_in_corpus: true
+        year: 2010
+        journal: Zootaxa
+        doi: 10.11646/zootaxa.2450.1.1
+        title: An abelisauroid dinosaur with a non-atrophied manus from the Late Cretaceous Pari Aike Formation of southern Patagonia
+        corpus_markdown_basename: ezcurra2010
+  - old_key: fowler2020
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: fowler2020a
+        suffix: a
+        citing_genera:
+          - Navajoceratops
+          - Terminocavus
+        paper_in_corpus: true
+        year: 2020
+        journal: PeerJ
+        doi: 10.7717/peerj.9251
+        title: "Transitional evolutionary forms in chasmosaurine ceratopsid dinosaurs: evidence from the Campanian of New Mexico"
+        corpus_markdown_basename: fowler2020
+      - new_key: fowler2020b
+        suffix: b
+        citing_genera:
+          - Trierarchuncus
+        paper_in_corpus: true
+        year: 2020
+        journal: Cretaceous Research
+        doi: 10.1016/j.cretres.2020.104560
+        title: "Trierarchuncus prairiensis gen. et sp. nov., the last alvarezsaurid: Hell Creek Formation (uppermost Maastrichtian), Montana"
+        corpus_markdown_basename: fowler2020
+  - old_key: funston2020
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: funston2020a
+        suffix: a
+        citing_genera:
+          - Oksoko
+        paper_in_corpus: false
+        year: 2020
+        journal: Royal Society Open Science
+        doi: 10.1098/rsos.201184
+        title: A new two-fingered dinosaur sheds light on the radiation of Oviraptorosauria
+      - new_key: funston2020b
+        suffix: b
+        citing_genera:
+          - Citipes
+        paper_in_corpus: true
+        year: 2020
+        journal: Vertebrate Anatomy Morphology Palaeontology
+        doi: 10.18435/vamp29362
+        title: "Caenagnathids of the Dinosaur Park Formation (Campanian) of Alberta, Canada: anatomy, osteohistology, taxonomy, and evolution"
+        corpus_markdown_basename: funston2020
+  - old_key: galton1980
+    audit_bucket: inconsistent-refs-no-paper
+    paper_present: false
+    assignments:
+      - new_key: galton1980a
+        suffix: a
+        citing_genera:
+          - Callovosaurus
+        paper_in_corpus: false
+        year: 1980
+        journal: Neues Jahrbuch für Geologie und Paläontologie - Abhandlungen
+        doi: 10.1127/njgpa/160/1980/73
+        title: European Jurassic ornithopod dinosaurs of the families Hypsilophodontidae and Camptosauridae
+      - new_key: galton1980b
+        suffix: b
+        citing_genera:
+          - Dracopelta
+        paper_in_corpus: false
+        year: 1980
+        journal: Geobios
+        doi: 10.1016/s0016-6995(80)80081-7
+        title: Partial skeleton of Dracopelta zbyszewskii N. Gen. And N. SP., an ankylosaurian dinosaur from the Upper Jurassic of Portugal
+  - old_key: galton1985
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: galton1985a
+        suffix: a
+        citing_genera:
+          - Camelotia
+        paper_in_corpus: false
+        year: 1985
+        journal: Geobios
+        doi: 10.1016/s0016-6995(85)80065-6
+        title: "Notes on the Melanorosauridae, a family of large Prosauropod Dinosaurs (Saurischia: Sauropodomorpha)"
+      - new_key: galton1985b
+        suffix: b
+        citing_genera:
+          - Blikanasaurus
+        paper_in_corpus: true
+        year: 1985
+        journal: Geobios
+        doi: 10.1016/s0016-6995(85)80003-6
+        title: Partial hindlimb of Blikanasaurus cromptoni n. gen. and n. sp.,representing a new family of prosauropod dinosaurs from the upper triassic of South Africa
+        corpus_markdown_basename: galton1985
+  - old_key: galton2007
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: galton2007a
+        suffix: a
+        citing_genera:
+          - Asylosaurus
+        paper_in_corpus: true
+        year: 2007
+        journal: Revue de Paléobiologie
+        title: Notes on the remains of archosaurian reptiles, mostly basal sauropodomorph dinosaurs, from the 1834 fissure fill (Rhaetian, Upper Triassic) at Clifton in Bristol, southwest England
+        corpus_markdown_basename: galton2007
+      - new_key: galton2007b
+        suffix: b
+        citing_genera:
+          - Pantydraco
+        paper_in_corpus: true
+        year: 2007
+        journal: Neues Jahrbuch für Geologie und Paläontologie - Abhandlungen
+        doi: 10.1127/0077-7749/2007/0243-0119
+        title: Pantydraco n. gen. for Thecodontosaurus caducus Yates, 2003, a basal sauropodomorph dinosaur from the Upper Triassic or Lower Jurassic of South Wales, UK
+        corpus_markdown_basename: galton2007
+  - old_key: gates2014
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: gates2014a
+        suffix: a
+        citing_genera:
+          - Rhinorex
+        paper_in_corpus: false
+        year: 2014
+        journal: Journal of Systematic Palaeontology
+        doi: 10.1080/14772019.2014.950614
+        title: "A new saurolophine hadrosaurid (Dinosauria: Ornithopoda) from the Campanian of Utah, North America"
+      - new_key: gates2014b
+        suffix: b
+        citing_genera:
+          - Adelolophus
+        paper_in_corpus: true
+        year: 2014
+        journal: Hadrosaurs
+        title: New hadrosaurid (Dinosauria, Ornithopoda) specimens from the lower-middle Campanian Wahweap Formation of southern Utah
+        corpus_markdown_basename: gates2014
+  - old_key: gervais1852
+    audit_bucket: inconsistent-refs-no-paper
+    paper_present: false
+    assignments:
+      - new_key: gervais1852a
+        suffix: a
+        citing_genera:
+          - Oplosaurus
+        paper_in_corpus: false
+        year: 1852
+        journal: Liste des ouvrages et mémoires de zoologie et d'anatomie comparée
+        doi: 10.5962/bhl.title.153499
+        title: Liste des ouvrages et mémoires de zoologie et d'anatomie comparée
+      - new_key: gervais1852b
+        suffix: b
+        citing_genera:
+          - Aepisaurus
+        paper_in_corpus: false
+        year: 1852
+        journal: Zoologie et paléontologie française (animaux vertébrés)
+        doi: 10.5962/bhl.title.153499
+        title: Zoologie et paléontologie française (animaux vertébrés)
+  - old_key: gilmore1933
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: gilmore1933a
+        suffix: a
+        citing_genera:
+          - Alectrosaurus
+          - Bactrosaurus
+        paper_in_corpus: true
+        year: 1933
+        journal: Bulletin of the American Museum of Natural History
+        title: On the dinosaurian fauna of the Iren Dabasu Formation
+        corpus_markdown_basename: gilmore1933
+      - new_key: gilmore1933b
+        suffix: b
+        citing_genera:
+          - Mongolosaurus
+          - Pinacosaurus
+        paper_in_corpus: false
+        year: 1933
+        journal: American Museum Novitates
+        title: Two new dinosaurian reptiles from Mongolia with notes on some fragmentary specimens
+  - old_key: godefroit2012
+    audit_bucket: inconsistent-refs-no-paper
+    paper_present: false
+    assignments:
+      - new_key: godefroit2012a
+        suffix: a
+        citing_genera:
+          - Batyrosaurus
+        paper_in_corpus: false
+        year: 2012
+        journal: Bernissart Dinosaurs and Early Cretaceous Terrestrial Ecosystems
+        title: A new basal hadrosauroid dinosaur from the Upper Cretaceus of Kazakhstan
+      - new_key: godefroit2012b
+        suffix: b
+        citing_genera:
+          - Kundurosaurus
+        paper_in_corpus: false
+        year: 2012
+        journal: PLoS ONE
+        doi: 10.1371/journal.pone.0036849
+        title: A New Saurolophine Dinosaur from the Latest Cretaceous of Far Eastern Russia
+  - old_key: han2014
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: han2014a
+        suffix: a
+        citing_genera:
+          - Chuanqilong
+        paper_in_corpus: false
+        year: 2014
+        journal: PLoS ONE
+        doi: 10.1371/journal.pone.0104551
+        title: "A New Basal Ankylosaurid (Dinosauria: Ornithischia) from the Lower Cretaceous Jiufotang Formation of Liaoning Province, China"
+      - new_key: han2014b
+        suffix: b
+        citing_genera:
+          - Changyuraptor
+        paper_in_corpus: true
+        year: 2014
+        journal: Nature Communications
+        doi: 10.1038/ncomms5382
+        title: A new raptorial dinosaur with exceptionally long feathering provides insights into dromaeosaurid flight performance
+        corpus_markdown_basename: han2014
+  - old_key: huene1927
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: huene1927a
+        suffix: a
+        citing_genera:
+          - Loricosaurus
+        paper_in_corpus: false
+        year: 1927
+        journal: Boletín de la Academia Nacional de Ciencias de la República Argentina
+        title: Contribución a la paleogeografía de Sud América [Contribution to the paleogeography of South America]
+      - new_key: huene1927b
+        suffix: b
+        citing_genera:
+          - Antarctosaurus
+          - Laplatasaurus
+        paper_in_corpus: false
+        year: 1927
+        journal: Memoirs of the Queensland Museum
+        title: Short review of the present knowledge of the Sauropoda
+      - new_key: huene1927c
+        suffix: c
+        citing_genera:
+          - Cetiosauriscus
+        paper_in_corpus: false
+        year: 1927
+        journal: Eclogae Geologica Helveticae
+        title: Sichtung der Grundlagen der jetzigen Kenntnis der Sauropoden [Sorting through the basis of the current knowledge of sauropods]
+  - old_key: huxley1867
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: huxley1867a
+        suffix: a
+        citing_genera:
+          - Acanthopholis
+        paper_in_corpus: true
+        year: 1867
+        journal: Geological Magazine
+        doi: 10.1017/s001675680017102x
+        title: IV.—On Acanthopholis Horridus, a New Reptile from the Chalk-marl
+        corpus_markdown_basename: huxley1867
+      - new_key: huxley1867b
+        suffix: b
+        citing_genera:
+          - Orosaurus
+        paper_in_corpus: false
+        year: 1867
+        journal: Quarterly Journal of the Geological Society of London
+        doi: 10.1144/gsl.jgs.1867.023.01-02.07
+        title: On some Remains of large Dinosaurian Reptiles from the Stormberg Mountains, South Africa
+  - old_key: kellner1999
+    audit_bucket: inconsistent-refs-no-paper
+    paper_present: false
+    assignments:
+      - new_key: kellner1999a
+        suffix: a
+        citing_genera:
+          - Gondwanatitan
+        paper_in_corpus: false
+        year: 1999
+        journal: Proceedings of the Second Gondwanan Dinosaur Symposium, National Science Museum Monographs
+        title: A new sauropod dinosaur (Titanosauria) from the Late Cretaceous of Brazil
+      - new_key: kellner1999b
+        suffix: b
+        citing_genera:
+          - Santanaraptor
+        paper_in_corpus: false
+        year: 1999
+        journal: Boletim do Museu Nacional, Nova Série
+        title: Short note on a new dinosaur (Theropoda, Coelurosauria) from the Santana Formation (Romualdo Member, Albian), northeastern Brazil
+  - old_key: kirkland1998
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: kirkland1998a
+        suffix: a
+        citing_genera:
+          - Eolambia
+        paper_in_corpus: false
+        year: 1998
+        journal: Lower and Middle Cretaceous Terrestrial Ecosystems, S. G. Lucas, J. I. Kirkland & J. W. Estep (eds.). New Mexico Museum of Natural History and Science Bulletin
+        title: "A new hadrosaurid from the upper Cedar Mountain Formation (Albian-Cenomanian: Cretaceous) of eastern Utah - the oldest known hadrosaurid (lambeosaurine?)"
+      - new_key: kirkland1998b
+        suffix: b
+        citing_genera:
+          - Gastonia
+        paper_in_corpus: false
+        year: 1998
+        journal: Lower and Middle Cretaceous Terrestrial Ecosystems (S. G. Lucas, J. I. Kirkland, & J. W. Estep, eds.), New Mexico Museum of Natural History and Science Bulletin
+        title: "A polacanthine ankylosaur (Ornithischia: Dinosauria) from the Early Cretaceous (Barremian) of eastern Utah"
+      - new_key: kirkland1998c
+        suffix: c
+        citing_genera:
+          - Nedcolbertia
+        paper_in_corpus: false
+        year: 1998
+        journal: Lower and Middle Cretaceous Terrestrial Ecosystems, New Mexico Museum of Natural History and Science Bulletin
+        title: A small coelurosaurian theropod from the Yellow Cat Member of the Cedar Mountain Formation (Lower Cretaceous, Barremian) of eastern Utah
+  - old_key: kobayashi2003
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: kobayashi2003a
+        suffix: a
+        citing_genera:
+          - Fukuisaurus
+        paper_in_corpus: true
+        year: 2003
+        journal: Journal of Vertebrate Paleontology
+        doi: 10.1671/0272-4634(2003)23[166:anidof]2.0.co;2
+        title: "A new iguanodontian (Dinosauria: Ornithopoda) from the Lower Cretaceous Kitadani Formation of Fukui Prefecture, Japan"
+        corpus_markdown_basename: kobayashi2003
+      - new_key: kobayashi2003b
+        suffix: b
+        citing_genera:
+          - Sinornithomimus
+        paper_in_corpus: false
+        year: 2003
+        journal: Acta Palaeontologica Polonica
+        doi: 10.5281/zenodo.13315375
+        title: A new ornithomimid dinosaur with gregarious habits from the Late Cretaceous of China
+  - old_key: kurzanov1976
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: kurzanov1976a
+        suffix: a
+        citing_genera:
+          - Itemirus
+        paper_in_corpus: true
+        year: 1976
+        journal: Paleontological Journal
+        title: Brain-case structure in the carnosaur Itemirus n. gen. and some aspects of the cranial anatomy of dinosaurs
+        corpus_markdown_basename: kurzanov1976
+      - new_key: kurzanov1976b
+        suffix: b
+        citing_genera:
+          - Alioramus
+        paper_in_corpus: true
+        year: 1976
+        journal: Paleontology and Biostratigraphy of Mongolia. The Joint Soviet-Mongolian Paleontological Expedition, Transactions
+        title: Noviy pozdnemelovoy karnozavr is Nogon-Tsava, Mongoliya [A new late Mesozoic carnosaur from Nogon-Tsav, Mongolia]
+        corpus_markdown_basename: kurzanov1976
+  - old_key: l2005
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: l2005a
+        suffix: a
+        citing_genera:
+          - Shixinggia
+        paper_in_corpus: false
+        year: 2005
+        journal: Acta Palaeontologica Sinica
+        title: "A new oviraptorid (theropod: Oviraptorosauria) from the Upper Cretaceous of the Nanxiong Basin, Guangdong province of southern China"
+      - new_key: l2005b
+        suffix: b
+        citing_genera:
+          - Nemegtomaia
+        paper_in_corpus: true
+        year: 2005
+        journal: Bulletin of the National Science Museum, Tokyo, Series C
+        title: Nemegtomaia gen. nov., a replacement name for the oviraptorosaurian dinosaur Nemegtia Lü et al., 2004, a preoccupied name
+        corpus_markdown_basename: l2005
+  - old_key: l2008
+    audit_bucket: inconsistent-refs-no-paper
+    paper_present: false
+    assignments:
+      - new_key: l2008a
+        suffix: a
+        citing_genera:
+          - Eomamenchisaurus
+        paper_in_corpus: false
+        year: 2008
+        journal: Acta Geologica Sinica
+        title: A new mamenchisaurid dinosaur from the Middle Jurassic of Yuanmou, Yunnan Province, China
+      - new_key: l2008b
+        suffix: b
+        citing_genera:
+          - Dongyangosaurus
+        paper_in_corpus: false
+        year: 2008
+        journal: Acta Geologica Sinica (English Edition)
+        doi: 10.1111/j.1755-6724.2008.tb00572.x
+        title: A new titanosauriform sauropod from the Early Late Cretaceous of Dongyang, Zhejiang Province
+      - new_key: l2008c
+        suffix: c
+        citing_genera:
+          - Luanchuanraptor
+        paper_in_corpus: false
+        year: 2008
+        journal: "International Dinosaur Symposium in Fukui 2008: Recent Progress of the Study on Asian Dinosaurs and Paleoenvironments. Fukui Prefectural Dinosaur Museum, Fukui"
+        title: Vertebrate assemblages from the Late Cretaceous of Luanchuan, Henan Province, China
+  - old_key: l2009
+    audit_bucket: inconsistent-refs-no-paper
+    paper_present: false
+    assignments:
+      - new_key: l2009a
+        suffix: a
+        citing_genera:
+          - Ruyangosaurus
+        paper_in_corpus: false
+        year: 2009
+        journal: Geological Bulletin of China
+        title: A new gigantic sauropod dinosaur from the Cretaceous of Ruyang, Henan, China
+      - new_key: l2009b
+        suffix: b
+        citing_genera:
+          - Luoyanggia
+          - Xianshanosaurus
+        paper_in_corpus: false
+        year: 2009
+        journal: Journal of the Paleontological Society of Korea
+        title: A preliminary report on the new dinosaurian fauna from the Cretaceous of the Ruyang Basin, Henan Province of central China
+  - old_key: lambe1914
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: lambe1914a
+        suffix: a
+        citing_genera:
+          - Gorgosaurus
+        paper_in_corpus: false
+        year: 1914
+        journal: The Ottawa Naturalist
+        title: On a new genus and species of carnivorous dinosaur from the Belly River Formation of Alberta, with a description of the skull of Stephanosaurus marginatus from the same horizon
+      - new_key: lambe1914b
+        suffix: b
+        citing_genera:
+          - Chasmosaurus
+          - Gryposaurus
+        paper_in_corpus: true
+        year: 1914
+        journal: The Ottawa Naturalist
+        title: On Gryposaurus notabilis, a new genus and species of trachodont dinosaur from the Belly River Formation of Alberta, with a description of the skull of Chasmosaurus belli
+        corpus_markdown_basename: lambe1914
+  - old_key: lee2019
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: lee2019a
+        suffix: a
+        citing_genera:
+          - Nemegtonykus
+        paper_in_corpus: false
+        year: 2019
+        journal: Scientific Reports
+        doi: 10.1038/s41598-019-52021-y
+        title: A new alvarezsaurid dinosaur from the Nemegt Formation of Mongolia
+      - new_key: lee2019b
+        suffix: b
+        citing_genera:
+          - Gobiraptor
+        paper_in_corpus: true
+        year: 2019
+        journal: PLOS ONE
+        doi: 10.1371/journal.pone.0210867
+        title: "A new baby oviraptorid dinosaur (Dinosauria: Theropoda) from the Upper Cretaceous Nemegt Formation of Mongolia"
+        corpus_markdown_basename: lee2019
+  - old_key: leidy1856
+    audit_bucket: inconsistent-refs-no-paper
+    paper_present: false
+    assignments:
+      - new_key: leidy1856a
+        suffix: a
+        citing_genera:
+          - Thespesius
+        paper_in_corpus: false
+        year: 1856
+        journal: Proceedings of the Academy of Natural Sciences of Philadelphia
+        title: Notices of Extinct Vertebrata Discovered by Dr. F. V. Hayden, during the Expedition to the Sioux Country under the Command of Lieut. G. K. Warren
+      - new_key: leidy1856b
+        suffix: b
+        citing_genera:
+          - Palaeoscincus
+          - Troodon
+        paper_in_corpus: false
+        year: 1856
+        journal: Proceedings of the Academy of Natural Sciences of Philadelphia
+        title: Notices of remains of extinct reptiles and fishes, discovered by Dr. F. V. Hayden in the bad lands of the Judith River, Nebraska Territory
+  - old_key: lerzo2024
+    audit_bucket: inconsistent-refs-no-paper
+    paper_present: false
+    assignments:
+      - new_key: lerzo2024a
+        suffix: a
+        citing_genera:
+          - Sidersaura
+        paper_in_corpus: false
+        year: 2024
+        journal: Historical Biology
+        doi: 10.1080/08912963.2023.2297914
+        title: "The last of the oldies: a basal rebbachisaurid (Sauropoda, Diplodocoidea) from the early Late Cretaceous (Cenomanian–Turonian) of Patagonia, Argentina"
+      - new_key: lerzo2024b
+        suffix: b
+        citing_genera:
+          - Campananeyen
+        paper_in_corpus: false
+        year: 2024
+        journal: Historical Biology
+        doi: 10.1080/08912963.2024.2383708
+        title: "They all floated in the cretaceous: new rebbachisaurid (Sauropoda, Diplodocoidea) with a highly pneumatized skeleton from the Upper Cretaceous (lower Cenomanian) of Patagonia, Argentina"
+  - old_key: li2009
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: li2009a
+        suffix: a
+        citing_genera:
+          - Xiongguanlong
+        paper_in_corpus: false
+        year: 2009
+        journal: "Proceedings of the Royal Society B: Biological Sciences"
+        doi: 10.1098/rspb.2009.0249
+        title: A longirostrine tyrannosauroid from the Early Cretaceous of China
+      - new_key: li2009b
+        suffix: b
+        citing_genera:
+          - Leshansaurus
+        paper_in_corpus: true
+        year: 2009
+        journal: Acta Geologica Sinica
+        title: A new carnosaur from the Late Jurassic of Qianwei, Sichuan, China
+        corpus_markdown_basename: li2009
+  - old_key: longrich2009
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: longrich2009a
+        suffix: a
+        citing_genera:
+          - Hesperonychus
+        paper_in_corpus: false
+        year: 2009
+        journal: Proceedings of the National Academy of Sciences
+        doi: 10.1073/pnas.0811664106
+        title: A microraptorine (Dinosauria–Dromaeosauridae) from the Late Cretaceous of North America
+      - new_key: longrich2009b
+        suffix: b
+        citing_genera:
+          - Albertonykus
+        paper_in_corpus: true
+        year: 2009
+        journal: Cretaceous Research
+        doi: 10.1016/j.cretres.2008.07.005
+        title: "Albertonykus borealis, a new alvarezsaur (Dinosauria: Theropoda) from the Early Maastrichtian of Alberta, Canada: implications for the systematics and ecology of the Alvarezsauridae"
+        corpus_markdown_basename: longrich2009
+  - old_key: longrich2010
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: longrich2010a
+        suffix: a
+        citing_genera:
+          - Machairasaurus
+        paper_in_corpus: true
+        year: 2010
+        journal: Palaeontology
+        doi: 10.1111/j.1475-4983.2010.00968.x
+        title: "A new oviraptorid (Dinosauria: Theropoda) from the Upper Cretaceous of Bayan Mandahu, Inner Mongolia"
+        corpus_markdown_basename: longrich2010
+      - new_key: longrich2010b
+        suffix: b
+        citing_genera:
+          - Texacephale
+        paper_in_corpus: true
+        year: 2010
+        journal: Cretaceous Research
+        doi: 10.1016/j.cretres.2009.12.002
+        title: "Texacephale langstoni, a new genus of pachycephalosaurid (Dinosauria: Ornithischia) from the upper Campanian Aguja Formation, southern Texas, USA"
+        corpus_markdown_basename: longrich2010
+  - old_key: longrich2013
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: longrich2013a
+        suffix: a
+        citing_genera:
+          - Leptorhynchos
+        paper_in_corpus: false
+        year: 2013
+        journal: Bulletin of the Peabody Museum of Natural History
+        doi: 10.3374/014.054.0102
+        title: Caenagnathidae from the Upper Campanian Aguja Formation of West Texas, and a Revision of the Caenagnathinae
+      - new_key: longrich2013b
+        suffix: b
+        citing_genera:
+          - Judiceratops
+        paper_in_corpus: true
+        year: 2013
+        journal: Bulletin of the Peabody Museum of Natural History
+        doi: 10.3374/014.054.0103
+        title: Judiceratops tigris, a New Horned Dinosaur from the Middle Campanian Judith River Formation of Montana
+        corpus_markdown_basename: longrich2013
+  - old_key: longrich2024
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: longrich2024a
+        suffix: a
+        citing_genera:
+          - Minqaria
+        paper_in_corpus: false
+        year: 2024
+        journal: Scientific Reports
+        doi: 10.1038/s41598-024-53447-9
+        title: "A new small duckbilled dinosaur (Hadrosauridae: Lambeosaurinae) from Morocco and dinosaur diversity in the late Maastrichtian of North Africa"
+      - new_key: longrich2024b
+        suffix: b
+        citing_genera:
+          - Coahuilasaurus
+        paper_in_corpus: true
+        year: 2024
+        journal: Diversity
+        doi: 10.3390/d16090531
+        title: Coahuilasaurus lipani, a New Kritosaurin Hadrosaurid from the Upper Campanian Cerro Del Pueblo Formation, Northern Mexico
+        corpus_markdown_basename: longrich2024
+      - new_key: longrich2024c
+        suffix: c
+        citing_genera:
+          - Vectidromeus
+        paper_in_corpus: true
+        year: 2024
+        journal: Cretaceous Research
+        doi: 10.1016/j.cretres.2023.105707
+        title: Vectidromeus insularis, a new hypsilophodontid dinosaur from the Lower Cretaceous Wessex Formation of the Isle of Wight, England
+        corpus_markdown_basename: longrich2024
+  - old_key: lü2013
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: lü2013a
+        suffix: a
+        citing_genera:
+          - Nankangia
+        paper_in_corpus: true
+        year: 2013
+        journal: PLoS ONE
+        doi: 10.1371/journal.pone.0080557
+        title: "A New Oviraptorosaur (Dinosauria: Oviraptorosauria) from the Late Cretaceous of Southern China and Its Paleoecological Implications"
+        corpus_markdown_basename: lü2013
+      - new_key: lü2013b
+        suffix: b
+        citing_genera:
+          - Yunmenglong
+        paper_in_corpus: false
+        year: 2013
+        journal: Cretaceous Research
+        doi: 10.1016/j.cretres.2013.04.009
+        title: A new sauropod dinosaur (Dinosauria, Sauropoda) from the late Early Cretaceous of the Ruyang Basin (central China)
+      - new_key: lü2013c
+        suffix: c
+        citing_genera:
+          - Yulong
+        paper_in_corpus: true
+        year: 2013
+        journal: Naturwissenschaften
+        doi: 10.1007/s00114-012-1007-0
+        title: Chicken-sized oviraptorid dinosaurs from central China and their ontogenetic implications
+        corpus_markdown_basename: lü2013
+  - old_key: lü2015
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: lü2015a
+        suffix: a
+        citing_genera:
+          - Zhenyuanlong
+        paper_in_corpus: false
+        year: 2015
+        journal: Scientific Reports
+        doi: 10.1038/srep11775
+        title: "A large, short-armed, winged dromaeosaurid (Dinosauria: Theropoda) from the Early Cretaceous of China and its implications for feather evolution"
+      - new_key: lü2015b
+        suffix: b
+        citing_genera:
+          - Huanansaurus
+        paper_in_corpus: true
+        year: 2015
+        journal: Scientific Reports
+        doi: 10.1038/srep11490
+        title: "A New Oviraptorid Dinosaur (Dinosauria: Oviraptorosauria) from the Late Cretaceous of Southern China and Its Paleobiogeographical Implications"
+        corpus_markdown_basename: lü2015
+  - old_key: lydekker1893
+    audit_bucket: inconsistent-refs-no-paper
+    paper_present: false
+    assignments:
+      - new_key: lydekker1893a
+        suffix: a
+        citing_genera:
+          - Argyrosaurus
+        paper_in_corpus: false
+        year: 1893
+        journal: Anales del Museo de La Plata. Paleontología Argentina
+        title: Contributions to a knowledge of the fossil vertebrates of Argentina. I. — The dinosaurs of Patagonia
+      - new_key: lydekker1893b
+        suffix: b
+        citing_genera:
+          - Sarcolestes
+        paper_in_corpus: false
+        year: 1893
+        journal: Quarterly Journal of the Geological Society of London
+        doi: 10.1144/gsl.jgs.1893.049.01-04.46
+        title: On the Jaw of a New Carnivorous Dinosaur from the Oxford Clay of Peterborough
+  - old_key: malafaia2020
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: malafaia2020a
+        suffix: a
+        citing_genera:
+          - Lusovenator
+        paper_in_corpus: true
+        year: 2020
+        journal: Journal of Vertebrate Paleontology
+        doi: 10.1080/02724634.2020.1768106
+        title: "A new carcharodontosaurian theropod from the Lusitanian Basin: evidence of allosauroid sympatry in the European Late Jurassic"
+        corpus_markdown_basename: malafaia2020
+      - new_key: malafaia2020b
+        suffix: b
+        citing_genera:
+          - Vallibonavenatrix
+        paper_in_corpus: false
+        year: 2020
+        journal: Cretaceous Research
+        doi: 10.1016/j.cretres.2019.104221
+        title: "A new spinosaurid theropod (Dinosauria: Megalosauroidea) from the upper Barremian of Vallibona, Spain: Implications for spinosaurid diversity in the Early Cretaceous of the Iberian Peninsula"
+  - old_key: marsh1877
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: marsh1877a
+        suffix: a
+        citing_genera:
+          - Stegosaurus
+        paper_in_corpus: false
+        year: 1877
+        journal: American Journal of Science
+        doi: 10.2475/ajs.s3-14.84.513
+        title: New order of extinct Reptilia (Stegosauria) from the Jurassic of the Rocky Mountains
+      - new_key: marsh1877b
+        suffix: b
+        citing_genera:
+          - Dryptosaurus
+        paper_in_corpus: false
+        year: 1877
+        journal: American Journal of Science
+        doi: 10.2475/ajs.s3-14.79.87
+        title: Notice of a new and gigantic dinosaur, Titanosaurus
+      - new_key: marsh1877c
+        suffix: c
+        citing_genera:
+          - Allosaurus
+          - Apatosaurus
+          - Zapsalis
+        paper_in_corpus: true
+        year: 1877
+        journal: American Journal of Science
+        doi: 10.2475/ajs.s3-14.84.514
+        title: Notice of new dinosaurian reptiles from the Jurassic formation
+        corpus_markdown_basename: marsh1877
+      - new_key: marsh1877d
+        suffix: d
+        citing_genera:
+          - Nanosaurus
+        paper_in_corpus: true
+        year: 1877
+        journal: American Journal of Science
+        doi: 10.2475/ajs.s3-14.81.249
+        title: Notice of some new vertebrate fossils
+        corpus_markdown_basename: marsh1877
+  - old_key: marsh1878
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: marsh1878a
+        suffix: a
+        citing_genera:
+          - Laosaurus
+        paper_in_corpus: false
+        year: 1878
+        journal: American Journal of Science
+        doi: 10.2475/ajs.s3-15.87.241
+        title: Notice of new dinosaurian reptiles
+      - new_key: marsh1878b
+        suffix: b
+        citing_genera:
+          - Diplodocus
+        paper_in_corpus: true
+        year: 1878
+        journal: American Journal of Science
+        title: Principal characters of American Jurassic dinosaurs, Part I
+        corpus_markdown_basename: marsh1878
+  - old_key: marsh1890
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: marsh1890a
+        suffix: a
+        citing_genera:
+          - Claosaurus
+        paper_in_corpus: false
+        year: 1890
+        journal: American Journal of Science
+        doi: 10.2475/ajs.s3-39.233.418
+        title: Additional characters of the Ceratopsidae, with notice of new Cretaceous dinosaurs
+      - new_key: marsh1890b
+        suffix: b
+        citing_genera:
+          - Barosaurus
+          - Ornithomimus
+        paper_in_corpus: false
+        year: 1890
+        journal: American Journal of Science
+        doi: 10.2475/ajs.s3-39.229.81
+        title: Description of new dinosaurian reptiles
+  - old_key: mo2023
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: mo2023a
+        suffix: a
+        citing_genera:
+          - Jiangxititan
+        paper_in_corpus: true
+        year: 2023
+        journal: Historical Biology
+        doi: 10.1080/08912963.2023.2259413
+        title: A New Titanosaurian Sauropod from the Upper Cretaceous of Jiangxi Province, Southern China
+        corpus_markdown_basename: mo2023
+      - new_key: mo2023b
+        suffix: b
+        citing_genera:
+          - Ruixinia
+        paper_in_corpus: false
+        year: 2023
+        journal: Cretaceous Research
+        doi: 10.1016/j.cretres.2022.105449
+        title: A new titanosauriform sauropod with an unusual tail from the Lower Cretaceous of northeastern China
+  - old_key: molnar1980
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: molnar1980a
+        suffix: a
+        citing_genera:
+          - Kakuru
+        paper_in_corpus: true
+        year: 1980
+        journal: "Alcheringa: An Australasian Journal of Palaeontology"
+        doi: 10.1080/03115518008558972
+        title: A new theropod dinosaur from South Australia
+        corpus_markdown_basename: molnar1980
+      - new_key: molnar1980b
+        suffix: b
+        citing_genera:
+          - Minmi
+        paper_in_corpus: false
+        year: 1980
+        journal: Memoirs of the Queensland Museum
+        doi: 10.5281/zenodo.16477092
+        title: An ankylosaur (Ornithischia, Reptilia) from the Lower Cretaceous of southern Queensland
+  - old_key: nopcsa1928
+    audit_bucket: inconsistent-refs-no-paper
+    paper_present: false
+    assignments:
+      - new_key: nopcsa1928a
+        suffix: a
+        citing_genera:
+          - Polacanthoides
+        paper_in_corpus: false
+        year: 1928
+        journal: Geologica Hungarica, Series Palaeontologica
+        title: Palaeontological notes on reptiles. V. On the skull of the Upper Cretaceous dinosaur Euoplocephalus
+      - new_key: nopcsa1928b
+        suffix: b
+        citing_genera:
+          - Scolosaurus
+        paper_in_corpus: false
+        year: 1928
+        journal: Geologica Hungarica, Series Palaeontologica
+        title: Palaeontological notes on reptiles. VI. Scolosaurus cutleri, a new dinosaur
+      - new_key: nopcsa1928c
+        suffix: c
+        citing_genera:
+          - Teinurosaurus
+        paper_in_corpus: false
+        year: 1928
+        journal: Palaeobiologica
+        title: The genera of reptiles
+  - old_key: novas2005
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: novas2005a
+        suffix: a
+        citing_genera:
+          - Tyrannotitan
+        paper_in_corpus: false
+        year: 2005
+        journal: Naturwissenschaften
+        doi: 10.1007/s00114-005-0623-3
+        title: A large Cretaceous theropod from Patagonia, Argentina, and the evolution of carcharodontosaurids
+      - new_key: novas2005b
+        suffix: b
+        citing_genera:
+          - Puertasaurus
+        paper_in_corpus: false
+        year: 2005
+        journal: Revista del Museo Argentino de Ciencias Naturales
+        doi: 10.22179/revmacn.7.340
+        title: Giant titanosaur (Dinosauria, Sauropoda) from the Late Cretaceous of Patagonia
+      - new_key: novas2005c
+        suffix: c
+        citing_genera:
+          - Neuquenraptor
+        paper_in_corpus: true
+        year: 2005
+        journal: Nature
+        doi: 10.1038/nature03285
+        title: New evidence on deinonychosaurian dinosaurs from the Late Cretaceous of Patagonia
+        corpus_markdown_basename: novas2005
+  - old_key: novas2008
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: novas2008a
+        suffix: a
+        citing_genera:
+          - Austroraptor
+        paper_in_corpus: true
+        year: 2008
+        journal: "Proceedings of the Royal Society B: Biological Sciences"
+        doi: 10.1098/rspb.2008.1554
+        title: A bizarre Cretaceous theropod dinosaur from Patagonia and the evolution of Gondwanan dromaeosaurids
+        corpus_markdown_basename: novas2008
+      - new_key: novas2008b
+        suffix: b
+        citing_genera:
+          - Orkoraptor
+        paper_in_corpus: true
+        year: 2008
+        journal: Cretaceous Research
+        doi: 10.1016/j.cretres.2008.01.001
+        title: Orkoraptor burkei nov. gen. et sp., a large theropod from the Maastrichtian Pari Aike Formation, Southern Patagonia, Argentina
+        corpus_markdown_basename: novas2008
+  - old_key: novas2010
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: novas2010a
+        suffix: a
+        citing_genera:
+          - Jaklapallisaurus
+          - Nambalia
+        paper_in_corpus: true
+        year: 2010
+        journal: Earth and Environmental Science Transactions of the Royal Society of Edinburgh
+        doi: 10.1017/s1755691011020093
+        title: New dinosaur species from the Upper Triassic Upper Maleri and Lower Dharmaram formations of Central India
+        corpus_markdown_basename: novas2010
+      - new_key: novas2010b
+        suffix: b
+        citing_genera:
+          - Rahiolisaurus
+        paper_in_corpus: true
+        year: 2010
+        journal: Lecture Notes in Earth Sciences
+        doi: 10.1007/978-3-642-10311-7_3
+        title: Rahiolisaurus gujaratensis, n. gen. n. sp., A New Abelisaurid Theropod from the Late Cretaceous of India
+        corpus_markdown_basename: novas2010
+  - old_key: osborn1924
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: osborn1924a
+        suffix: a
+        citing_genera:
+          - Prodeinodon
+        paper_in_corpus: false
+        year: 1924
+        journal: American Museum Novitates
+        title: Sauropoda and Theropoda from the Lower Cretaceous of Mongolia
+      - new_key: osborn1924b
+        suffix: b
+        citing_genera:
+          - Oviraptor
+          - Saurornithoides
+          - Velociraptor
+        paper_in_corpus: true
+        year: 1924
+        journal: American Museum Novitates
+        title: Three new Theropoda, Protoceratops zone, central Mongolia
+        corpus_markdown_basename: osborn1924
+  - old_key: ősi2010
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: ősi2010a
+        suffix: a
+        citing_genera:
+          - Ajkaceratops
+        paper_in_corpus: true
+        year: 2010
+        journal: Nature
+        doi: 10.1038/nature09019
+        title: A Late Cretaceous ceratopsian dinosaur from Europe with Asian affinities
+        corpus_markdown_basename: ősi2010
+      - new_key: ősi2010b
+        suffix: b
+        citing_genera:
+          - Pneumatoraptor
+        paper_in_corpus: false
+        year: 2010
+        journal: Cretaceous Research
+        doi: 10.1016/j.cretres.2010.01.001
+        title: Non-avian theropod dinosaurs from the early Late Cretaceous of central Europe
+  - old_key: pol2011
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: pol2011a
+        suffix: a
+        citing_genera:
+          - Manidens
+        paper_in_corpus: false
+        year: 2011
+        journal: Naturwissenschaften
+        doi: 10.1007/s00114-011-0780-5
+        title: A Middle Jurassic heterodontosaurid dinosaur from Patagonia and the evolution of heterodontosaurids
+      - new_key: pol2011b
+        suffix: b
+        citing_genera:
+          - Leonerasaurus
+        paper_in_corpus: true
+        year: 2011
+        journal: PLoS ONE
+        doi: 10.1371/journal.pone.0014572
+        title: A New Sauropodomorph Dinosaur from the Early Jurassic of Patagonia and the Origin and Evolution of the Sauropod-type Sacrum
+        corpus_markdown_basename: pol2011
+  - old_key: prieto-márquez2019
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: prieto-márquez2019a
+        suffix: a
+        citing_genera:
+          - Adynomosaurus
+        paper_in_corpus: true
+        year: 2019
+        journal: Cretaceous Research
+        doi: 10.1016/j.cretres.2018.12.002
+        title: Adynomosaurus arcanus, a new lambeosaurine dinosaur from the Late Cretaceous Ibero-Armorican Island of the European archipelago
+        corpus_markdown_basename: prieto-márquez2019
+      - new_key: prieto-márquez2019b
+        suffix: b
+        citing_genera:
+          - Aquilarhinus
+        paper_in_corpus: false
+        year: 2019
+        journal: Journal of Systematic Palaeontology
+        doi: 10.1080/14772019.2019.1625078
+        title: An unusual ‘shovel-billed’ dinosaur with trophic specializations from the early Campanian of Trans-Pecos Texas, and the ancestral hadrosaurian crest
+  - old_key: rauhut2005
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: rauhut2005a
+        suffix: a
+        citing_genera:
+          - Brachytrachelopan
+        paper_in_corpus: true
+        year: 2005
+        journal: Nature
+        doi: 10.1038/nature03623
+        title: Discovery of a short-necked sauropod dinosaur from the Late Jurassic period of Patagonia
+        corpus_markdown_basename: rauhut2005
+      - new_key: rauhut2005b
+        suffix: b
+        citing_genera:
+          - Condorraptor
+        paper_in_corpus: false
+        year: 2005
+        journal: Palaeontology
+        doi: 10.1111/j.1475-4983.2004.00436.x
+        title: Osteology and relationships of a new theropod dinosaur from the Middle Jurassic of Patagonia
+      - new_key: rauhut2005c
+        suffix: c
+        citing_genera:
+          - Xinjiangovenator
+        paper_in_corpus: false
+        year: 2005
+        journal: Journal of Vertebrate Paleontology
+        doi: 10.1671/0272-4634(2005)025[0107:tstdta]2.0.co;2
+        title: The small theropod dinosaurs Tugulusaurus and Phaedrolosaurus from the early Cretaceous of Xinjiang, China
+  - old_key: rich1999
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: rich1999a
+        suffix: a
+        citing_genera:
+          - Tehuelchesaurus
+        paper_in_corpus: false
+        year: 1999
+        journal: Proceedings of the Second Gondwanan Dinosaur Symposium, National Science Museum Monographs
+        title: A new sauropod dinosaur from Chubut province, Argentina
+      - new_key: rich1999b
+        suffix: b
+        citing_genera:
+          - Qantassaurus
+        paper_in_corpus: true
+        year: 1999
+        journal: Proceedings of the Second Gondwanan Dinosaur Symposium, National Science Museum Monographs
+        title: The Hypsilophodontidae from southeastern Australia
+        corpus_markdown_basename: rich1999
+  - old_key: riguetti2022
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: riguetti2022a
+        suffix: a
+        citing_genera:
+          - Jakapil
+        paper_in_corpus: true
+        year: 2022
+        journal: Scientific Reports
+        doi: 10.1038/s41598-022-15535-6
+        title: A new Cretaceous thyreophoran from Patagonia supports a South American lineage of armoured dinosaurs
+        corpus_markdown_basename: riguetti2022
+      - new_key: riguetti2022b
+        suffix: b
+        citing_genera:
+          - Patagopelta
+        paper_in_corpus: false
+        year: 2022
+        journal: Journal of Systematic Palaeontology
+        doi: 10.1080/14772019.2022.2137441
+        title: A new small-bodied ankylosaurian dinosaur from the Upper Cretaceous of North Patagonia (Río Negro Province, Argentina)
+  - old_key: royo-torres2017
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: royo-torres2017a
+        suffix: a
+        citing_genera:
+          - Soriatitan
+        paper_in_corpus: false
+        year: 2017
+        journal: Cretaceous Research
+        doi: 10.1016/j.cretres.2017.08.012
+        title: A new Brachiosauridae Sauropod dinosaur from the lower Cretaceous of Europe (Soria Province, Spain)
+      - new_key: royo-torres2017b
+        suffix: b
+        citing_genera:
+          - Mierasaurus
+        paper_in_corpus: true
+        year: 2017
+        journal: Scientific Reports
+        doi: 10.1038/s41598-017-14677-2
+        title: Descendants of the Jurassic turiasaurs from Iberia found refuge in the Early Cretaceous of western USA
+        corpus_markdown_basename: royo-torres2017
+  - old_key: russell1993
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: russell1993a
+        suffix: a
+        citing_genera:
+          - Sinornithoides
+        paper_in_corpus: false
+        year: 1993
+        journal: Canadian Journal of Earth Sciences
+        doi: 10.1139/e93-187
+        title: A nearly complete skeleton of a new troodontid dinosaur from the Early Cretaceous of the Ordos Basin, Inner Mongolia, People's Republic of China
+      - new_key: russell1993b
+        suffix: b
+        citing_genera:
+          - Alxasaurus
+        paper_in_corpus: true
+        year: 1993
+        journal: Canadian Journal of Earth Sciences
+        doi: 10.1139/e93-183
+        title: The affinities of a new theropod from the Alxa Desert, Inner Mongolia, People's Republic of China
+        corpus_markdown_basename: russell1993
+  - old_key: ryan2012
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: ryan2012a
+        suffix: a
+        citing_genera:
+          - Coronosaurus
+          - Xenoceratops
+        paper_in_corpus: true
+        year: 2012
+        journal: Canadian Journal of Earth Sciences
+        doi: 10.1139/e2012-056
+        title: A new ceratopsid from the Foremost Formation (middle Campanian) of Alberta
+        corpus_markdown_basename: ryan2012
+      - new_key: ryan2012b
+        suffix: b
+        citing_genera:
+          - Gryphoceratops
+          - Unescoceratops
+        paper_in_corpus: false
+        year: 2012
+        journal: Cretaceous Research
+        doi: 10.1016/j.cretres.2011.11.018
+        title: New leptoceratopsids from the Upper Cretaceous of Alberta, Canada
+  - old_key: salgado2006
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: salgado2006a
+        suffix: a
+        citing_genera:
+          - Antarctopelta
+        paper_in_corpus: true
+        year: 2006
+        journal: Geodiversitas
+        doi: 10.5281/zenodo.5376155
+        title: Reappraisal of an ankylosaurian dinosaur from the Upper Cretaceous of James Ross Island (Antarctica)
+        corpus_markdown_basename: salgado2006
+      - new_key: salgado2006b
+        suffix: b
+        citing_genera:
+          - Zapalasaurus
+        paper_in_corpus: true
+        year: 2006
+        journal: Geobios
+        doi: 10.1016/j.geobios.2005.06.001
+        title: Zapalasaurus bonapartei, un nuevo dinosaurio saurópodo de La Formación La Amarga (Cretácico Inferior), noroeste de Patagonia, Provincia de Neuquén, Argentina
+        corpus_markdown_basename: salgado2006
+  - old_key: senter2012
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: senter2012a
+        suffix: a
+        citing_genera:
+          - Martharaptor
+        paper_in_corpus: true
+        year: 2012
+        journal: PLoS ONE
+        doi: 10.1371/journal.pone.0043911
+        title: Martharaptor greenriverensis, a New Theropod Dinosaur from the Lower Cretaceous of Utah
+        corpus_markdown_basename: senter2012
+      - new_key: senter2012b
+        suffix: b
+        citing_genera:
+          - Yurgovuchia
+        paper_in_corpus: false
+        year: 2012
+        journal: PLoS ONE
+        doi: 10.1371/journal.pone.0036790
+        title: "New Dromaeosaurids (Dinosauria: Theropoda) from the Lower Cretaceous of Utah, and the Evolution of the Dromaeosaurid Tail"
+  - old_key: sereno2008
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: sereno2008a
+        suffix: a
+        citing_genera:
+          - Eocarcharia
+          - Kryptops
+        paper_in_corpus: false
+        year: 2008
+        journal: Acta Palaeontologica Polonica
+        doi: 10.4202/app.2008.0102
+        title: Basal Abelisaurid and Carcharodontosaurid Theropods from the Lower Cretaceous Elrhaz Formation of Niger
+      - new_key: sereno2008b
+        suffix: b
+        citing_genera:
+          - Aerosteon
+        paper_in_corpus: true
+        year: 2008
+        journal: PLoS ONE
+        doi: 10.1371/journal.pone.0003303
+        title: Evidence for Avian Intrathoracic Air Sacs in a New Predatory Dinosaur from Argentina
+        corpus_markdown_basename: sereno2008
+  - old_key: shibata2015
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: shibata2015a
+        suffix: a
+        citing_genera:
+          - Sirindhorna
+        paper_in_corpus: false
+        year: 2015
+        journal: PLOS ONE
+        doi: 10.1371/journal.pone.0145904
+        title: A New Basal Hadrosauroid Dinosaur from the Lower Cretaceous Khok Kruat Formation in Nakhon Ratchasima Province, Northeastern Thailand
+      - new_key: shibata2015b
+        suffix: b
+        citing_genera:
+          - Koshisaurus
+        paper_in_corpus: true
+        year: 2015
+        journal: Zootaxa
+        doi: 10.11646/zootaxa.3914.4.3
+        title: "New basal hadrosauroid (Dinosauria: Ornithopoda) from the Lower Cretaceous Kitadani Formation, Fukui, central Japan"
+        corpus_markdown_basename: shibata2015
+  - old_key: sullivan2003
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: sullivan2003a
+        suffix: a
+        citing_genera:
+          - Hanssuesia
+        paper_in_corpus: true
+        year: 2003
+        journal: Journal of Vertebrate Paleontology
+        doi: 10.1671/03010
+        title: Hanssuesia, the correct generic name for ‘Hanssuessia’ Sullivan, 2003
+        corpus_markdown_basename: sullivan2003
+      - new_key: sullivan2003b
+        suffix: b
+        citing_genera:
+          - Colepiocephale
+        paper_in_corpus: true
+        year: 2003
+        journal: Journal of Vertebrate Paleontology
+        doi: 10.1671/0272-4634(2003)23[181:rotdsl]2.0.co;2
+        title: Revision of the dinosaur Stegoceras Lambe (Ornithischia, Pachycephalosauridae)
+        corpus_markdown_basename: sullivan2003
+  - old_key: turner2007
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: turner2007a
+        suffix: a
+        citing_genera:
+          - Mahakala
+        paper_in_corpus: true
+        year: 2007
+        journal: Science
+        doi: 10.1126/science.1144066
+        title: A Basal Dromaeosaurid and Size Evolution Preceding Avian Flight
+        corpus_markdown_basename: turner2007
+      - new_key: turner2007b
+        suffix: b
+        citing_genera:
+          - Shanag
+        paper_in_corpus: false
+        year: 2007
+        journal: American Museum Novitates
+        doi: 10.1206/0003-0082(2007)3557[1:asdtfs]2.0.co;2
+        title: A Small Derived Theropod from Öösh, Early Cretaceous, Baykhangor Mongolia
+  - old_key: wang2013
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: wang2013a
+        suffix: a
+        citing_genera:
+          - Yunganglong
+        paper_in_corpus: false
+        year: 2013
+        journal: PLoS ONE
+        doi: 10.1371/journal.pone.0077058
+        title: A New Hadrosauroid Dinosaur from the Early Late Cretaceous of Shanxi Province, China
+      - new_key: wang2013b
+        suffix: b
+        citing_genera:
+          - Ganzhousaurus
+        paper_in_corpus: true
+        year: 2013
+        journal: Zootaxa
+        doi: 10.11646/zootaxa.3640.2.7
+        title: "A new oviraptorid (Dinosauria: Theropoda) from the Upper Cretaceous of southern China"
+        corpus_markdown_basename: wang2013
+  - old_key: wang2019
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: wang2019a
+        suffix: a
+        citing_genera:
+          - Ambopteryx
+        paper_in_corpus: true
+        year: 2019
+        journal: Nature
+        doi: 10.1038/s41586-019-1137-z
+        title: A new Jurassic scansoriopterygid and the loss of membranous wings in theropod dinosaurs
+        corpus_markdown_basename: wang2019
+      - new_key: wang2019b
+        suffix: b
+        citing_genera:
+          - Fushanosaurus
+        paper_in_corpus: false
+        year: 2019
+        journal: Global Geology
+        title: "A new titanosauriform dinosaur (Dinosauria: Sauropoda) from Late Jurassic of Junggar Basin, Xinjiang"
+  - old_key: wilson2003
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: wilson2003a
+        suffix: a
+        citing_genera:
+          - Rajasaurus
+        paper_in_corpus: false
+        year: 2003
+        journal: Contributions from the Museum of Paleontology, University of Michigan
+        title: A new abelisaurid (Dinosauria, Theropoda) from the Lameta Formation (Cretaceous, Maastrichtian) of India
+      - new_key: wilson2003b
+        suffix: b
+        citing_genera:
+          - Isisaurus
+        paper_in_corpus: true
+        year: 2003
+        journal: Journal of Systematic Palaeontology
+        doi: 10.1017/s1477201903001044
+        title: A revision of<i>Titanosaurus</i>Lydekker (dinosauria ‐ sauropoda), the first dinosaur genus with a ‘Gondwanan’ distribution
+        corpus_markdown_basename: wilson2003
+  - old_key: xu1999
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: xu1999a
+        suffix: a
+        citing_genera:
+          - Sinornithosaurus
+        paper_in_corpus: false
+        year: 1999
+        journal: Nature
+        doi: 10.1038/45769
+        title: A dromaeosaurid dinosaur with a filamentous integument from the Yixian Formation of China
+      - new_key: xu1999b
+        suffix: b
+        citing_genera:
+          - Beipiaosaurus
+        paper_in_corpus: true
+        year: 1999
+        journal: Nature
+        doi: 10.1038/20670
+        title: A therizinosauroid dinosaur with integumentary structures from China
+        corpus_markdown_basename: xu1999
+  - old_key: xu2000
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: xu2000a
+        suffix: a
+        citing_genera:
+          - Nanyangosaurus
+        paper_in_corpus: false
+        year: 2000
+        journal: Vertebrata PalAsiatica
+        title: A new iguanodontian from Sangping Formation of Neixiang, Henan and its stratigraphical implication
+      - new_key: xu2000b
+        suffix: b
+        citing_genera:
+          - Jeholosaurus
+        paper_in_corpus: true
+        year: 2000
+        journal: Vertebrata PalAsiatica
+        title: A primitive ornithopod from the Early Cretaceous Yixian Formation of Liaoning
+        corpus_markdown_basename: xu2000
+      - new_key: xu2000c
+        suffix: c
+        citing_genera:
+          - Microraptor
+        paper_in_corpus: false
+        year: 2000
+        journal: Nature
+        doi: 10.1038/35047056
+        title: The smallest known non-avian theropod dinosaur
+  - old_key: xu2001
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: xu2001a
+        suffix: a
+        citing_genera:
+          - Liaoningosaurus
+        paper_in_corpus: false
+        year: 2001
+        journal: Naturwissenschaften
+        doi: 10.1007/s001140100233
+        title: A juvenile ankylosaur from China
+      - new_key: xu2001b
+        suffix: b
+        citing_genera:
+          - Eshanosaurus
+        paper_in_corpus: true
+        year: 2001
+        journal: Journal of Vertebrate Paleontology
+        doi: 10.1671/0272-4634(2001)021[0477:antftl]2.0.co;2
+        title: A new therizinosaur from the Lower Jurassic lower Lufeng Formation of Yunnan, China
+        corpus_markdown_basename: xu2001
+  - old_key: xu2002
+    audit_bucket: inconsistent-refs-no-paper
+    paper_present: false
+    assignments:
+      - new_key: xu2002a
+        suffix: a
+        citing_genera:
+          - Sinovenator
+        paper_in_corpus: false
+        year: 2002
+        journal: Nature
+        doi: 10.1038/415780a
+        title: A basal troodontid from the Early Cretaceous of China
+      - new_key: xu2002b
+        suffix: b
+        citing_genera:
+          - Liaoceratops
+        paper_in_corpus: false
+        year: 2002
+        journal: Nature
+        doi: 10.1038/416314a
+        title: A ceratopsian dinosaur from China and the early evolution of Ceratopsia
+      - new_key: xu2002c
+        suffix: c
+        citing_genera:
+          - Erliansaurus
+        paper_in_corpus: false
+        year: 2002
+        journal: Vertebrata PalAsiatica
+        title: A new therizinosauroid (Dinosauria, Theropoda) from the Upper Cretaceous Iren Dabasu Formation of Nei Mongol
+      - new_key: xu2002d
+        suffix: d
+        citing_genera:
+          - Incisivosaurus
+        paper_in_corpus: false
+        year: 2002
+        journal: Nature
+        doi: 10.1038/nature00966
+        title: An unusual oviraptorosaurian dinosaur from China
+  - old_key: xu2004
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: xu2004a
+        suffix: a
+        citing_genera:
+          - Graciliraptor
+        paper_in_corpus: false
+        year: 2004
+        journal: Vertebrata PalAsiatica
+        title: "A new dromaeosaur (Dinosauria: Theropoda) from the Early Cretaceous Yixian Formation of western Liaoning"
+      - new_key: xu2004b
+        suffix: b
+        citing_genera:
+          - Sinusonasus
+        paper_in_corpus: false
+        year: 2004
+        journal: Acta Geologica Sinica
+        title: "A new troodontid (Theropoda: Troodontidae) from the Lower Cretaceous Yixian Formation of western Liaoning, China"
+      - new_key: xu2004c
+        suffix: c
+        citing_genera:
+          - Mei
+        paper_in_corpus: false
+        year: 2004
+        journal: Nature
+        doi: 10.1038/nature02898
+        title: A new troodontid dinosaur from China with avian-like sleeping posture
+      - new_key: xu2004d
+        suffix: d
+        citing_genera:
+          - Dilong
+        paper_in_corpus: true
+        year: 2004
+        journal: Nature
+        doi: 10.1038/nature02855
+        title: Basal tyrannosauroids from China and evidence for protofeathers in tyrannosauroids
+        corpus_markdown_basename: xu2004
+  - old_key: xu2006
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: xu2006a
+        suffix: a
+        citing_genera:
+          - Yinlong
+        paper_in_corpus: false
+        year: 2006
+        journal: "Proceedings of the Royal Society B: Biological Sciences"
+        doi: 10.1098/rspb.2006.3566
+        title: A basal ceratopsian with transitional features from the Late Jurassic of northwestern China
+      - new_key: xu2006b
+        suffix: b
+        citing_genera:
+          - Guanlong
+        paper_in_corpus: true
+        year: 2006
+        journal: Nature
+        doi: 10.1038/nature04511
+        title: A basal tyrannosauroid dinosaur from the Late Jurassic of China
+        corpus_markdown_basename: xu2006
+      - new_key: xu2006c
+        suffix: c
+        citing_genera:
+          - Sonidosaurus
+        paper_in_corpus: false
+        year: 2006
+        journal: Acta Geologica Sinica
+        title: A new titanosaurian sauropod from Late Cretaceous of Nei Mongol, China
+  - old_key: xu2007
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: xu2007a
+        suffix: a
+        citing_genera:
+          - Zhongyuansaurus
+        paper_in_corpus: false
+        year: 2007
+        journal: Acta Geologica Sinica
+        title: "[A new nodosaurid ankylosaur from the Cretaceous of Ruyang, Henan Province]"
+      - new_key: xu2007b
+        suffix: b
+        citing_genera:
+          - Gigantoraptor
+        paper_in_corpus: true
+        year: 2007
+        journal: Nature
+        doi: 10.1038/nature05849
+        title: A gigantic bird-like dinosaur from the Late Cretaceous of China
+        corpus_markdown_basename: xu2007
+  - old_key: xu2010
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: xu2010a
+        suffix: a
+        citing_genera:
+          - Xixianykus
+        paper_in_corpus: false
+        year: 2010
+        journal: Zootaxa
+        doi: 10.11646/zootaxa.2413.1.1
+        title: "A basal parvicursorine (Theropoda: Alvarezsauridae) from the Upper Cretaceous of China"
+      - new_key: xu2010b
+        suffix: b
+        citing_genera:
+          - Linheraptor
+        paper_in_corpus: false
+        year: 2010
+        journal: Zootaxa
+        doi: 10.11646/zootaxa.2403.1.1
+        title: "A new dromaeosaurid (Dinosauria: Theropoda) from the Upper Cretaceous Wulansuhai Formation of Inner Mongolia, China"
+      - new_key: xu2010c
+        suffix: c
+        citing_genera:
+          - Zhuchengceratops
+        paper_in_corpus: false
+        year: 2010
+        journal: PLoS ONE
+        doi: 10.1371/journal.pone.0013835
+        title: "A New Leptoceratopsid (Ornithischia: Ceratopsia) from the Upper Cretaceous of Shandong, China and Its Implications for Neoceratopsian Evolution"
+      - new_key: xu2010d
+        suffix: d
+        citing_genera:
+          - Banji
+        paper_in_corpus: true
+        year: 2010
+        journal: Vertebrata PalAsiatica
+        title: "A new oviraptorid dinosaur (Theropoda: Oviraptorosauria) from the Upper Cretaceous of China"
+        corpus_markdown_basename: xu2010
+      - new_key: xu2010e
+        suffix: e
+        citing_genera:
+          - Sinoceratops
+        paper_in_corpus: false
+        year: 2010
+        journal: Chinese Science Bulletin
+        doi: 10.1007/s11434-009-3614-5
+        title: First ceratopsid dinosaur from China and its biogeographical implications
+  - old_key: xu2011
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: xu2011a
+        suffix: a
+        citing_genera:
+          - Linhenykus
+        paper_in_corpus: true
+        year: 2011
+        journal: Proceedings of the National Academy of Sciences
+        doi: 10.1073/pnas.1011052108
+        title: A monodactyl nonavian dinosaur and the complex evolution of the alvarezsauroid hand
+        corpus_markdown_basename: xu2011
+      - new_key: xu2011b
+        suffix: b
+        citing_genera:
+          - Qiupalong
+        paper_in_corpus: false
+        year: 2011
+        journal: Cretaceous Research
+        doi: 10.1016/j.cretres.2010.12.004
+        title: A new ornithomimid dinosaur with North American affinities from the Late Cretaceous Qiupa Formation in Henan Province of China
+      - new_key: xu2011c
+        suffix: c
+        citing_genera:
+          - Linhevenator
+        paper_in_corpus: false
+        year: 2011
+        journal: PLoS ONE
+        doi: 10.1371/journal.pone.0022916
+        title: A Short-Armed Troodontid Dinosaur from the Upper Cretaceous of Inner Mongolia and Its Implications for Troodontid Evolution
+      - new_key: xu2011d
+        suffix: d
+        citing_genera:
+          - Xiaotingia
+        paper_in_corpus: false
+        year: 2011
+        journal: Nature
+        doi: 10.1038/nature10288
+        title: An Archaeopteryx-like theropod from China and the origin of Avialae
+  - old_key: xu2012
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: xu2012a
+        suffix: a
+        citing_genera:
+          - Yutyrannus
+        paper_in_corpus: false
+        year: 2012
+        journal: Nature
+        doi: 10.1038/nature10906
+        title: A gigantic feathered dinosaur from the Lower Cretaceous of China
+      - new_key: xu2012b
+        suffix: b
+        citing_genera:
+          - Philovenator
+        paper_in_corpus: false
+        year: 2012
+        journal: Vertebrata PalAsiatica
+        title: The taxonomy of the troodontid IVPP V 10597 reconsidered
+  - old_key: xu2017
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: xu2017a
+        suffix: a
+        citing_genera:
+          - Zhongjianosaurus
+        paper_in_corpus: false
+        year: 2017
+        journal: Vertebrata PalAsiatica
+        title: A new tiny dromaeosaurid dinosaur from the Lower Cretaceous Jehol Group of western Liaoning and niche differentiation among the Jehol dromaeosaurids
+      - new_key: xu2017b
+        suffix: b
+        citing_genera:
+          - Jianianhualong
+        paper_in_corpus: true
+        year: 2017
+        journal: Nature Communications
+        doi: 10.1038/ncomms14972
+        title: Mosaic evolution in an asymmetrically feathered troodontid dinosaur with transitional features
+        corpus_markdown_basename: xu2017
+  - old_key: xu2018
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: xu2018a
+        suffix: a
+        citing_genera:
+          - Bayannurosaurus
+        paper_in_corpus: false
+        year: 2018
+        journal: Science Bulletin
+        doi: 10.1016/j.scib.2018.03.016
+        title: A large-sized basal ankylopollexian from East Asia, shedding light on early biogeographic history of Iguanodontia
+      - new_key: xu2018b
+        suffix: b
+        citing_genera:
+          - Lingwulong
+        paper_in_corpus: false
+        year: 2018
+        journal: Nature Communications
+        doi: 10.1038/s41467-018-05128-1
+        title: A new Middle Jurassic diplodocoid suggests an earlier dispersal and diversification of sauropod dinosaurs
+      - new_key: xu2018c
+        suffix: c
+        citing_genera:
+          - Bannykus
+          - Xiyunykus
+        paper_in_corpus: true
+        year: 2018
+        journal: Current Biology
+        doi: 10.1016/j.cub.2018.07.057
+        title: Two Early Cretaceous Fossils Document Transitional Stages in Alvarezsaurian Dinosaur Evolution
+        corpus_markdown_basename: xu2018
+  - old_key: you2003
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: you2003a
+        suffix: a
+        citing_genera:
+          - Gobititan
+        paper_in_corpus: false
+        year: 2003
+        journal: Acta Geologica Sinica (English Edition)
+        doi: 10.1111/j.1755-6724.2003.tb00123.x
+        title: "A new basal titanosaur (Dinosauria: Sauropoda) from the Early Cretaceous of China"
+      - new_key: you2003b
+        suffix: b
+        citing_genera:
+          - Shuangmiaosaurus
+        paper_in_corpus: false
+        year: 2003
+        journal: Acta Geologica Sinica
+        title: A new hadrosauroid dinosaur from the mid-Cretaceous of Liaoning, China
+      - new_key: you2003c
+        suffix: c
+        citing_genera:
+          - Equijubus
+        paper_in_corpus: true
+        year: 2003
+        journal: Cretaceous Research
+        doi: 10.1016/s0195-6671(03)00048-x
+        title: The earliest-known duck-billed dinosaur from deposits of late Early Cretaceous age in northwest China and hadrosaur evolution
+        corpus_markdown_basename: you2003
+  - old_key: you2005
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: you2005a
+        suffix: a
+        citing_genera:
+          - Lanzhousaurus
+        paper_in_corpus: true
+        year: 2005
+        journal: Geological Bulletin of China
+        title: "Lanzhousaurus magnidens gen. et sp. nov. from Gansu Province, China: the largest-toothed herbivorous dinosaur in the world"
+        corpus_markdown_basename: you2005
+      - new_key: you2005b
+        suffix: b
+        citing_genera:
+          - Auroraceratops
+        paper_in_corpus: true
+        year: 2005
+        journal: Acta Geologica Sinica
+        title: On a new genus of basal neoceratopsian dinosaur from the Early Cretaceous of Gansu Province, China
+        corpus_markdown_basename: you2005
+  - old_key: you2009
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: you2009a
+        suffix: a
+        citing_genera:
+          - Jintasaurus
+        paper_in_corpus: true
+        year: 2009
+        journal: Canadian Journal of Earth Sciences
+        doi: 10.1139/e09-067
+        title: "A new basal hadrosauriform dinosaur (Ornithischia: Iguanodontia) from the Early Cretaceous of northwestern China"
+        corpus_markdown_basename: you2009
+      - new_key: you2009b
+        suffix: b
+        citing_genera:
+          - Qiaowanlong
+        paper_in_corpus: false
+        year: 2009
+        journal: "Proceedings of the Royal Society B: Biological Sciences"
+        doi: 10.1098/rspb.2009.1278
+        title: The first well-preserved Early Cretaceous brachiosaurid dinosaur in Asia
+  - old_key: you2014
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: you2014a
+        suffix: a
+        citing_genera:
+          - Gongpoquansaurus
+        paper_in_corpus: true
+        year: 2014
+        journal: Hadrosaurs
+        title: "Gongpoquansaurus mazongshanensis (Lü, 1997) comb. nov. (Ornithischia: Hadrosauroidea) from the Early Cretaceous of Gansu Province, northwestern China"
+        corpus_markdown_basename: you2014
+      - new_key: you2014b
+        suffix: b
+        citing_genera:
+          - Panguraptor
+        paper_in_corpus: false
+        year: 2014
+        journal: Zootaxa
+        doi: 10.11646/zootaxa.3873.3.3
+        title: The first well-preserved coelophysoid theropod dinosaur from Asia
+  - old_key: zhao1993
+    audit_bucket: collision-divergent-refs
+    paper_present: true
+    assignments:
+      - new_key: zhao1993a
+        suffix: a
+        citing_genera:
+          - Monolophosaurus
+        paper_in_corpus: false
+        year: 1993
+        journal: Canadian Journal of Earth Sciences
+        doi: 10.1139/e93-178
+        title: A large crested theropod from the Jurassic of Xinjiang, People's Republic of China
+      - new_key: zhao1993b
+        suffix: b
+        citing_genera:
+          - Klamelisaurus
+        paper_in_corpus: true
+        year: 1993
+        journal: Vertebrata PalAsiatica
+        title: A new mid-Jurassic sauropod (Klamelisaurus gobiensis gen. et sp. nov.) from Xinjiang, China
+        corpus_markdown_basename: zhao1993
+skipped:
+  misfile_suspected:
+    - key: andrews1921
+      genus: Sarcosaurus
+    - key: barsbold1977
+      genus: Adasaurus
+    - key: bunzel1870
+      genus: Struthiosaurus
+    - key: carpenter1995
+      genus: Niobrarasaurus
+    - key: carroll1977
+      genus: Fulengia
+    - key: cope1872
+      genus: Agathaumas
+    - key: dallavecchia1998
+      genus: Histriasaurus
+    - key: deklerk2000
+      genus: Nqwebasaurus
+    - key: forster1998
+      genus: Rahonavis
+    - key: galton1979
+      genus: Torvosaurus
+    - key: galton2001
+      genus: Ruehleia
+    - key: haubold1990
+      genus: Emausaurus
+    - key: head1998
+      genus: Protohadros
+    - key: horner1979
+      genus: Maiasaura
+    - key: hu1964
+      genus: Chilantaisaurus
+    - key: iori2021
+      genus: Kurupi
+    - key: jaekel1914
+      genus: Pterospondylus
+    - key: ji2005
+      genus: Jinfengopteryx
+    - key: ji2012
+      genus: Ningyuansaurus
+    - key: jin2012
+      genus: Hexing
+    - key: kellner2006
+      genus: Maxakalisaurus
+    - key: lee1996
+      genus: Pawpawsaurus
+    - key: leloeuff1993
+      genus: Iuticosaurus
+    - key: loewen2010
+      genus: Coahuilaceratops
+    - key: longman1926
+      genus: Rhoetosaurus
+    - key: lydekker1891
+      genus: Calamosaurus
+    - key: mantell1833
+      genus: Hylaeosaurus
+    - key: mantell1848
+      genus: Regnosaurus
+    - key: marsh1882
+      genus: Eucamerotus
+    - key: marsh1891
+      genus: Torosaurus
+    - key: mateus2008
+      genus: Microceratus
+    - key: matthew1922
+      genus: Dromaeosaurus
+    - key: meyer1861
+      genus: Archaeopteryx
+    - key: nesbitt2015
+      genus: Lepidus
+    - key: perle1993
+      genus: Mononykus
+    - key: seeley1869
+      genus: Macrurosaurus
+    - key: seeley1874
+      genus: Craterosaurus
+    - key: sereno2012
+      genus: Pegomastax
+    - key: sternberg1928
+      genus: Edmontonia
+    - key: sternfeld1911
+      genus: Tornieria
+    - key: sues1980
+      genus: Zephyrosaurus
+    - key: tidwell1999
+      genus: Cedarosaurus
+    - key: wall1979
+      genus: Gravitholus
+    - key: wieland1909
+      genus: Hierosaurus
+    - key: xijin1999
+      genus: Chaoyangsaurus
+    - key: young1959
+      genus: Chialingosaurus
+    - key: zhao1986
+      genus: Monkonosaurus
+  collision_paper_mismatch:
+    - key: bohlin1953
+      genera:
+        - Heishansaurus
+        - Peishansaurus
+        - Sauroplites
+        - Stegosaurides
+    - key: bonaparte1984
+      genera:
+        - Abelisaurus
+        - Amargasaurus
+    - key: brett-surman1979
+      genera:
+        - Gilmoreosaurus
+        - Secernosaurus
+    - key: cope1876
+      genera:
+        - Diclonius
+        - Dysganus
+        - Monoclonius
+        - Paronychodon
+    - key: farke2011
+      genera:
+        - Spinops
+        - Vagaceratops
+    - key: filippi2011
+      genera:
+        - Narambuenatitan
+        - Petrobrasaurus
+    - key: harrison1975
+      genera:
+        - Bradycneme
+        - Heptasteornis
+    - key: huene1923
+      genera:
+        - Altispinax
+        - Thecocoelurus
+    - key: lucas1902
+      genera:
+        - Dacentrurus
+        - Hoplitosaurus
+    - key: marsh1888
+      genera:
+        - Pleurocoelus
+        - Priconodon
+    - key: marsh1889
+      genera:
+        - Nodosaurus
+        - Triceratops
+    - key: mcdonald2018
+      genera:
+        - Dynamoterror
+        - Invictarx
+    - key: young1942
+      genera:
+        - Chienkosaurus
+        - Sinocoelurus
+        - Szechuanosaurus
