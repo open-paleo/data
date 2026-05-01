@@ -12,6 +12,20 @@ diet: omnivore
 locomotion: bipedal
 paleoenvironment:
   - fluvial
+diagnostic_features:
+  - Minimum 11 cervical vertebrae, exceeding the maximum of 10 found in
+    ornithomimids and other theropods
+  - Hypapophyses present on the last two cervical and first three dorsal
+    vertebrae, absent in all other theropods
+  - Frontal and parietal bones fully fused into a single fronto-parietal, unique
+    among theropods
+  - Ischia directed anteriorly and ventrally (parallel to pubis) rather than
+    posteriorly, rotated ~50° forward relative to the typical theropod condition
+  - Pubis excluded from the acetabular cavity, which is formed solely by the
+    ilium and ischium - unique among all dinosaurs
+  - Additional supracondyle on the external condyle of the femur forming a
+    dedicated articulation surface for the highly reduced fibula - first
+    occurrence among dinosaurs
 identifiers:
   - source: pbdb
     id: "38615"
@@ -47,6 +61,9 @@ species:
       specimen_id: [ PIN 3907/1 ]
       specimen_type: holotype
       institution: PIN
+      material: Incomplete skeleton including skull fragment, vertebrae, pectoral
+        girdle, forelimb elements, pelvis, and hind limbs; Udan-Sayr, MNR, Upper
+        Cretaceous, Nemegetinsk suite
     size:
       length_m:
         min: 1.5
