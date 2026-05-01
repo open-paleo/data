@@ -202,6 +202,36 @@ genus YAML, mirroring the technique used by `fix-reference-titles.ts`:
 > (missing diagnosis sections, bibliographies that aren't really
 > describing papers, etc.).
 
+### Letter B — 2026-05-01
+
+Second letter through the pipeline. 65 genera total; 56 queued (1
+no `described_in`, 8 no corpus markdown).
+
+Dispatched 56 Sonnet agents in two parallel batches (28 + 28).
+Apply results:
+
+- **Applied**: 55 genera
+- Sentinel: 1 (Baryonyx — charig1986 markdown is empty/boilerplate)
+- Non-primary: 0
+- No-data: 0
+- Insertion failures: 0
+
+Spellcheck unknowns: 97 → 0 after appending to `paleo-vocab.txt`
+(95 new terms; 2 already covered by letter-A additions). Total
+paleo-vocab dictionary now 408 entries; cspell taxonomy.txt 5,718
+words.
+
+Repository-wide impact (cumulative across A + B):
+- `diagnostic_features` missing: 1,295 → 1,121 (−174, −13.4%)
+- `species.holotype.material` missing: 1,062 → 904 (−158, −14.9%)
+
+No data-quality issues surfaced this batch — no review/popular
+miscitations, no binomial discrepancies, no insertion edge cases
+beyond the empty-markdown sentinel. The mechanical-prompt approach
+introduced via `build-extraction-prompts` worked exactly as
+intended: prompt construction was the same for letter B as letter
+A, but with no transcription errors this time.
+
 ### Letter A — _in progress_
 
 #### Dry-run, 2026-05-01: 3 papers spanning eras
