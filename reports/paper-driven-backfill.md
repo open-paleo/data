@@ -548,3 +548,29 @@ Repository-wide impact:
 Letter-A specifically:
 - Material: 135 missing → 29 missing
 - Diagnostic features: 146 missing → 27 missing
+
+#### Existing-corpus text normalisation applied
+
+`scripts/normalize-genera-text.ts --apply` swept the existing
+`genera/*/*.yml` files: 238 files updated, 362 character
+replacements (207 en-dashes, 89 em-dashes, 56 curly singles, 10
+curly doubles).
+
+**Gotcha worth carrying forward.** Three files broke YAML parsing
+after apply because the replaced curly quotes were acting as
+"scare quotes" inside otherwise-unquoted scalars. Once the curly
+glyphs became ASCII delimiters, the YAML parser tried to read the
+result as a quoted string and choked:
+
+- `Bustingorrytitan.yml`: `locality: "Bustingorry II" Site` —
+  re-quoted with single quotes around the whole value
+- `Fulengia.yml`: `title: 'Modern' lizard from the Upper Triassic
+  of China` — re-quoted with double quotes
+- `Lophostropheus.yml`: a multi-line double-quoted reference title
+  containing curly doubles `"Liliensternus"` — switched the outer
+  scalar to single quotes so the inner doubles became content
+
+These three needed a hand fix; `npm run validate` after `--apply`
+caught all of them. For future similar sweeps, plan on running
+validate as the final step and budgeting time to re-quote the
+handful of scare-quote patterns it surfaces.
