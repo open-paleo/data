@@ -5,5 +5,13 @@ node_modules/
 dist/
 staging/
 
+# Paper-driven backfill — regenerable intermediates.
+# The aggregate `reports/extracted-paper-fields-<Letter>.json` and
+# the findings markdown are the durable records.
+reports/extractions/
+reports/extraction-queue-*.json
+reports/extraction-prompts-*.jsonl
+reports/extracted-paper-fields-*-dryrun.json
+
 # MacOS
 .DS_Store

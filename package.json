@@ -17,7 +17,13 @@
     "audit-citation-keys": "node --experimental-strip-types scripts/audit-citation-keys.ts",
     "build-rename-plan": "node --experimental-strip-types scripts/build-rename-plan.ts",
     "apply-rename-plan": "node --experimental-strip-types scripts/apply-rename-plan.ts",
-    "lowercase-citation-keys": "node --experimental-strip-types scripts/lowercase-citation-keys.ts"
+    "lowercase-citation-keys": "node --experimental-strip-types scripts/lowercase-citation-keys.ts",
+    "build-extraction-prompts": "node --experimental-strip-types scripts/build-extraction-prompts.ts",
+    "normalize-extractions": "node --experimental-strip-types scripts/normalize-extractions.ts",
+    "spellcheck-extractions": "node --experimental-strip-types scripts/spellcheck-extractions.ts",
+    "normalize-genera-text": "node --experimental-strip-types scripts/normalize-genera-text.ts",
+    "strip-specimen-ids": "node --experimental-strip-types scripts/strip-specimen-ids-from-material.ts",
+    "apply-paper-fields": "node --experimental-strip-types scripts/apply-paper-field-extractions.ts"
   },
   "license": "CC-BY-4.0",
   "engines": {

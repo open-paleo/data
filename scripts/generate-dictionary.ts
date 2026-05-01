@@ -1,7 +1,7 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
 import * as url from "node:url";
-import type { GenusData, CladeData, TreeNode, Schema } from "./types.ts";
+import type { CladeData, GenusData, InstitutionEntry, Schema, TreeNode } from "./types.ts";
 import { collectAllKeys, findYamlFiles, parseYaml } from "./utilities.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
@@ -51,6 +51,41 @@ if (schema.stages)
     for (const stage of Object.keys(schema.stages))
     {
         words.add(stage);
+    }
+}
+
+const institutions = parseYaml<Record<string, InstitutionEntry>>(path.join(root, "institutions.yaml"));
+
+for (const [abbreviation, entry] of Object.entries(institutions))
+{
+    words.add(abbreviation);
+
+    if (Array.isArray(entry.aliases))
+    {
+        for (const alias of entry.aliases)
+        {
+            if (typeof alias === "string")
+            {
+                words.add(alias);
+            }
+        }
+    }
+}
+
+const paleoVocabPath = path.join(root, "dictionaries", "paleo-vocab.txt");
+
+if (fs.existsSync(paleoVocabPath))
+{
+    const lines = fs.readFileSync(paleoVocabPath, "utf8").split("\n");
+
+    for (const line of lines)
+    {
+        const trimmed = line.trim();
+
+        if (trimmed.length > 0 && !trimmed.startsWith("#"))
+        {
+            words.add(trimmed);
+        }
     }
 }
 
