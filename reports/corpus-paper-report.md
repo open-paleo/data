@@ -27,6 +27,9 @@ up automatically once the markdown is restored.
 | Anchisaurus | `marsh1885` | A | BHL OCR missed the actual page (Marsh 1885 sits on p. 169 of a long journal volume); only a garbled "Anchisauridae" fragment remains. |
 | Camptosaurus | `marsh1885` | C | Same BHL OCR issue as Anchisaurus — Marsh 1885 page not captured. |
 | Campylodoniscus | `carroll1988` | C | Textbook reference, not the original description. |
+| Heishansaurus | `bohlin1953` | H | Markdown is missing the article body (Part I, pages 9–59 of the original); only a summary mention survives. |
+| Hoplitosaurus | `lucas1902` | H | Empty / boilerplate-only markdown. |
+| Hypsibema | `cope1869a` | H | Empty / boilerplate-only markdown. |
 
 Resolved (corpus paper updated and re-extracted on 2026-05-01):
 Achelousaurus (`sampson1995`), Baryonyx (`charig1986`), Camarillasaurus
@@ -111,18 +114,10 @@ cross-check against ICZN / current literature.
 
 | Genus | YAML | In paper | Letter | Note |
 |---|---|---|---|---|
-| Acanthopholis | *horrida* | *horridus* | A | Latin gender emendation; modern accepted form is *horrida*. Informational only. |
 | Amargasaurus | *cazaui* | *groeberi* | A | Artifact of the wrong-citation issue (#1863) — the corpus paper lists *A.* as nomen nudum *groeberi*. Will resolve once the citation is corrected. |
-| Baurutitan | *britoi* | *brítoi* | B | Diacritic difference (Latin *í*). Verify whether the original 2005 paper uses the accent and what the modern accepted form is. |
-| Chuanjiesaurus | *anaensis* | *a'naensis* | C | Apostrophe-separated transliteration of the Chinese place name (Ana/A'na). Either form may be the canonical Latinised epithet — verify against ICZN and current literature. |
-| Cumnoria | *prestwichii* | *Iguanodon Prestwichi* | C | Originally described as *Iguanodon prestwichi* (Hulke 1880); the genus *Cumnoria* was erected by Seeley 1888a (the cited paper) and the species spelling has subsequently been emended to *prestwichii*. The current YAML form looks correct; this is taxonomic history, not a discrepancy to fix. |
-| Dacentrurus | *armatus* | *Omosaurus armatus* | D | Historical genus rename — original 1875 *Omosaurus* (Owen) was preoccupied; replaced by *Dacentrurus* (Lucas 1902, the cited paper). Current YAML form is correct. |
 | Efraasia | *minor* | *Efraasia diagnostica* | E | Galton 1973 used species epithet *diagnostica*; current accepted form is *minor*. Verify nomenclatural history — possibly subsumed into the older *Sellosaurus minor* via species reassignment. |
-| Euoplocephalus | *tutus* | *Stereocephalus tutus* | E | Historical genus rename — *Stereocephalus* (Lambe 1902) was preoccupied (a beetle), replaced by *Euoplocephalus* (Lambe 1910, the cited paper). Current YAML form is correct. |
 | **Gravitholus** | *Stegoceras novomexicanum* | *Gravitholus albertae* | G | **Real data bug** — *Gravitholus*'s type species is *albertae* (Wall & Galton 1979), not *Stegoceras novomexicanum*. The current YAML entry appears mis-keyed; needs hand correction. |
-| Gargoyleosaurus | *parkpinorum* | *parkpini* | G | Original 1998 Carpenter paper used *parkpini*; the form *parkpinorum* is a later emendation (Latinisation correction for plural patronym). Current YAML form is correct. |
 | Gilmoreosaurus | *mongoliensis* | *Gilmoreosaurs mongoliensis* | G | Single-letter OCR misread of genus name (missing *u*); paper body uses *Gilmoreosaurus*. |
-| Giraffatitan | *brancai* | *Brachiosaurus (Giraffatitan) brancai* | G | Paper used both forms; *Giraffatitan brancai* is the modern accepted name when treated as a separate genus. Current YAML is correct. |
 
 ## Resolved false positives (kept as a checklist)
 

@@ -202,6 +202,61 @@ genus YAML, mirroring the technique used by `fix-reference-titles.ts`:
 > (missing diagnosis sections, bibliographies that aren't really
 > describing papers, etc.).
 
+### Letter H — 2026-05-01
+
+Eighth letter, **first run on Haiku 4.5** (instead of Sonnet 4.6) to
+cut extraction cost. 53 genera total; 42 queued (10 no corpus
+markdown; 1 no described_in: Hagieophis-equivalent slot).
+
+Spot-checked 8 of the harder cases (multi-taxon papers, historical
+1858/1870 OCR, Mongolian/Chinese names) before scaling to the full
+batch. Quality was acceptable: bullet counts occasionally drifted
+above the soft 6-bullet cap (Heterodontosaurus 8, Hypselospinus 9),
+catalog tokens sometimes survived in `holotype_material` (handled by
+`strip-specimen-ids`), and three paper/OCR-level typos were caught
+by spellcheck and fixed manually:
+
+- Hypsilophodon: `proemaxilla(ry)` → `premaxilla(ry)` (Huxley 1870
+  OCR has `pr~emaxilla`/`proemaxillary` artifacts).
+- Huehuecanauhtlus: `posterovental` → `posteroventral` (Haiku
+  transcription error; source paper uses the correct form).
+- Hungarosaurus: `amphycoelous` → `amphicoelous` (paper-level
+  Greek-transliteration typo, corrected to standard form).
+
+Token usage per call averaged ~36 k for Haiku vs. ~27 k for Sonnet
+on prior letters. Even at the higher per-call token count, Haiku's
+~3–4× lower per-token rate yields ~50% net cost savings.
+
+Apply results:
+- **Applied**: 39
+- Sentinels (3): Heishansaurus (bohlin1953 — Part I pages 9–59
+  missing from markdown), Hoplitosaurus (lucas1902 — boilerplate),
+  Hypsibema (cope1869a — boilerplate)
+- Non-primary: 0
+- No-data: 0
+- Insertion failures: 0
+
+Spellcheck added 30 new vocab entries (mostly anatomical:
+amphicoelous, craniolateral, distoventral, entepicondylar,
+homodont, hornshield(s), ilial, internasal, Interphalangeal,
+interpterygoid, ischiac, metacarpophalangeal, paraquadrate,
+Platyrostral, postsacrals, pseudoacromial, sagittally, spiculae,
+supraorbitals, suprapostzygapophysial; plus place names Bayn,
+Dzak, Ulaanbaatar from the Halszkaraptor/Mongolia reference, and
+the historical ligature `vertebræ` from the 1858 Hadrosaurus
+paper). Total 797, taxonomy 6,107 words.
+
+Cumulative impact (A–H):
+- `diagnostic_features` missing: 1,295 → 867 (−428, −33.0%)
+- `species.holotype.material` missing: 1,062 → 701 (−361, −34.0%)
+
+Notable corpus findings:
+- 1 historical OCR / typography note: `vertebræ` ligature in
+  Leidy 1858 (kept verbatim).
+- Heishansaurus's bohlin1953 markdown is missing the article body
+  (Part I, pp. 9–59); only a summary mention survives. Section 1
+  candidate (corpus re-fetch).
+
 ### Re-run pass (corpus-updated papers) — 2026-05-01
 
 Targeted re-extraction of the 10 genera listed as "Corpus paper
