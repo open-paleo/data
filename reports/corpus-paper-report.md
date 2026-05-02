@@ -42,7 +42,6 @@ up automatically once the markdown is restored.
 | Nodocephalosaurus | `sullivan1999` | N | Markdown is abstract-only (26 lines); main paper body absent. |
 | Nigersaurus | `sereno1999` | N | The `sereno1999.md` markdown contains text from unrelated papers on laser physics, x-ray sources, and neuroscience — not the Nigersaurus description. Wrong-paper-content pattern (Sereno 1999 *Science*-issue page mismatch from publisher PDF/OCR). |
 | Neuquensaurus | `powell1992` | N | Same paper but wrong target taxon — `powell1992.md` is a 655-line monograph describing *Saltasaurus loricatus*; *Neuquensaurus australis* is referenced only in comparison. Powell 1992 erects *Neuquensaurus* in this paper as a new genus for "Titanosaurus" australis, but the bulk of the systematic content is on *Saltasaurus*. Edge case similar to Crichtonpelta — re-running with non-primary filter relaxed should populate. |
-| Nemegtomaia | `lü2005b` | N | Replacement-name paper only (18 lines): *Nemegtomaia* is erected as a replacement for *Nemegtia* Lü et al. 2004 (preoccupied homonym). The original description with diagnosis lives in Lü et al. 2004; this paper carries only the nomenclatural act. |
 
 ### Pending Resolution Papers
 
@@ -51,8 +50,11 @@ The following have been fixed/updated by the user, but have not yet been process
 | Genus | Citation key | User Notes |
 |---|---|---|---|
 | Hypsibema | `cope1869a` | Not empty, just a short description |
-| Mononykus | `perle1993` | M | Technically correct paper, but only contains a small section to correct a nomenclature issue; Use perle1993a for the actual description extraction. |
-| Musankwa | `barrett2024` | M | Corpus paper has been fixed |
+| Mononykus | `perle1993` | A new paper, perle1993a, has been added with the actual description (perle1993a is the nomenclature correction) |
+| Musankwa | `barrett2024` | Corpus paper has been fixed |
+| Nemegtomaia | `lü2005b` | A new paper, lu2004 has been added with the actual description (lu2005b is the nomenclature correction) |
+
+### Resolved Papers
 
 Resolved (corpus paper updated and re-extracted on 2026-05-01):
 Achelousaurus (`sampson1995`), Baryonyx (`charig1986`), Camarillasaurus
