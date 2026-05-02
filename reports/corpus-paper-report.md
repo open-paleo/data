@@ -29,15 +29,12 @@ up automatically once the markdown is restored.
 | Campylodoniscus | `carroll1988` | C | Textbook reference, not the original description. |
 | Heishansaurus | `bohlin1953` | H | Markdown is missing the article body (Part I, pages 9–59 of the original); only a summary mention survives. |
 | Hoplitosaurus | `lucas1902` | H | Empty / boilerplate-only markdown. |
-| Hypsibema | `cope1869a` | H | Empty / boilerplate-only markdown. | Not empty, just a short description |
 | Itemirus | `kurzanov1976a` | I | The `kurzanov1976a.md` markdown describes *Alioramus remotus*, not Itemirus medullaris. Wrong-paper-content pattern. Kurzanov did publish on Itemirus (also 1976), so the citation key likely needs disambiguation. |
 | Lanzhousaurus | `you2005a` | L | The `you2005a.md` markdown describes *Auroraceratops rugosus*, not Lanzhousaurus magnidens. Wrong-paper-content pattern — the citation key should point to You et al. 2005 on Lanzhousaurus (different paper). |
 | Liaoningvenator | `shen2017` | L | The `shen2017.md` markdown describes *Daliansaurus liaoningensis*, not Liaoningvenator curriei. Wrong-paper-content pattern — Liaoningvenator was named by Shen et al. 2017a in *Acta Geologica Sinica* (different Shen 2017 paper). |
 | Lavocatisaurus | `canudo2018` | L | Markdown is abstract-only (12 lines); the systematic palaeontology body is missing from the corpus copy. |
 | Lepidus | `nesbitt2015` | L | Markdown is abstract-only (10 lines); systematic palaeontology body is missing from the corpus copy. |
 | Macrurosaurus | `seeley1869` | M | Abstract / boilerplate-only markdown (26 lines); main paper body absent. |
-| Mononykus | `perle1993` | M | The `perle1993.md` markdown contains content from a totally different (DNA repair / Xeroderma pigmentosum) paper, not the Mononykus description. Wrong-paper-content pattern — possibly a Nature 1993 multi-paper page mismatch from BHL. |
-| Musankwa | `barrett2024` | M | Markdown is abstract-only (20 lines); systematic palaeontology body absent. | Corpus paper has been fixed |
 | Microceratus | `mateus2008` | M | Right paper, but Microceratus was declared *nomen dubium* (Sereno 2000) — the citation is a nomenclatural note acknowledging the holotype lacks diagnostic features. No diagnosis to extract. (Not a corpus issue — flagging here so the genus isn't picked up by future re-runs.) |
 | Narambuenatitan | `filippi2011` | N | Markdown is abstract-only (14 lines); systematic palaeontology body absent. |
 | Nebulasaurus | `xing2013` | N | Markdown is abstract-only (10 lines); systematic palaeontology body absent. |
@@ -46,6 +43,16 @@ up automatically once the markdown is restored.
 | Nigersaurus | `sereno1999` | N | The `sereno1999.md` markdown contains text from unrelated papers on laser physics, x-ray sources, and neuroscience — not the Nigersaurus description. Wrong-paper-content pattern (Sereno 1999 *Science*-issue page mismatch from publisher PDF/OCR). |
 | Neuquensaurus | `powell1992` | N | Same paper but wrong target taxon — `powell1992.md` is a 655-line monograph describing *Saltasaurus loricatus*; *Neuquensaurus australis* is referenced only in comparison. Powell 1992 erects *Neuquensaurus* in this paper as a new genus for "Titanosaurus" australis, but the bulk of the systematic content is on *Saltasaurus*. Edge case similar to Crichtonpelta — re-running with non-primary filter relaxed should populate. |
 | Nemegtomaia | `lü2005b` | N | Replacement-name paper only (18 lines): *Nemegtomaia* is erected as a replacement for *Nemegtia* Lü et al. 2004 (preoccupied homonym). The original description with diagnosis lives in Lü et al. 2004; this paper carries only the nomenclatural act. |
+
+### Pending Resolution Papers
+
+The following have been fixed/updated by the user, but have not yet been processed
+
+| Genus | Citation key | User Notes |
+|---|---|---|---|
+| Hypsibema | `cope1869a` | Not empty, just a short description |
+| Mononykus | `perle1993` | M | Technically correct paper, but only contains a small section to correct a nomenclature issue; Use perle1993a for the actual description extraction. |
+| Musankwa | `barrett2024` | M | Corpus paper has been fixed |
 
 Resolved (corpus paper updated and re-extracted on 2026-05-01):
 Achelousaurus (`sampson1995`), Baryonyx (`charig1986`), Camarillasaurus
