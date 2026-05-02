@@ -30,6 +30,7 @@ up automatically once the markdown is restored.
 | Daxiatitan | `you2008` | D | Heavily OCR-corrupted — genus name garbled as "Maxiaosaurus robustus" throughout. Agent extracted what it could but data is suspect; consider re-OCR. |
 | Einiosaurus | `sampson1995` | E | Same publisher boilerplate-only file as Achelousaurus (A). |
 | Eocarcharia | `sereno2008a` | E | Empty / boilerplate-only markdown. |
+| Galvesaurus | `barco2005` | G | Empty / boilerplate-only markdown. |
 
 ## 2. Wrong `described_in` citations
 
@@ -56,6 +57,7 @@ updated (correct `described_in`, add the right paper to
 | Dromaeosauroides | `christiansen2003` | Review chapter by Bonde (not Christiansen) summarising and defending the taxon. | Christiansen & Bonde 2003 original description. |
 | Dromiceiomimus | `russell1972` | Systematic revision — Russell 1972 erects *Dromiceiomimus* as a new genus by reassigning Parks 1926's *Struthiomimus brevitertius*. Edge case similar to Crichtonpelta: this *is* the formal genus erection. | russell1972 (this one). Auto-skip was conservative; re-run without non-primary filter to populate. |
 | Eucamerotus | `marsh1882` | *Eucamerotus* appears only as a bare name in a list of European sauropod genera. No description, no diagnosis. | The original description is Hulke 1872 (or later — verify). marsh1882 is not a description paper at all. |
+| Gigantspinosaurus | `maidment2006` | Taxonomic review — not the original description. Identifies only one confirmed autapomorphy. | Ouyang 1992 (original description). |
 
 ## 3. Translations of formal descriptions
 
@@ -83,6 +85,10 @@ both the original paper and the translation in the genus YAML's
 | Daanosaurus | `ye2005` | D | Chinese primary description with appended English abstract. Agent flagged as translation but data is from the original. |
 | Enigmosaurus | `barsbold1983` | E | Russian monograph translated into English. *Enigmosaurus* is one of several new taxa described in the work. |
 | Epachthosaurus | `powell1990` | E | English translation (by J. A. Wilson) of Powell 1990 Spanish-language congress abstract (Congreso Argentino de Paleontología). |
+| Garudimimus | `barsbold1981` | G | English translation (by Siskron and Welles) of Barsbold 1981 Russian monograph. |
+| Genusaurus | `accarie1995` | G | English translation by Matthew Carrano (1995) of the French original. |
+| Gongbusaurus | `dong1983a` | G | Chinese monograph; English translation. |
+| Gongxianosaurus | `he1998` | G | English translation by Will Downs (1999) of Chinese paper (Acta Geologica Sichuan vol. 18 no. 1, 1998). |
 
 ## 4. Filename / encoding quirks
 
@@ -109,6 +115,10 @@ cross-check against ICZN / current literature.
 | Dacentrurus | *armatus* | *Omosaurus armatus* | D | Historical genus rename — original 1875 *Omosaurus* (Owen) was preoccupied; replaced by *Dacentrurus* (Lucas 1902, the cited paper). Current YAML form is correct. |
 | Efraasia | *minor* | *Efraasia diagnostica* | E | Galton 1973 used species epithet *diagnostica*; current accepted form is *minor*. Verify nomenclatural history — possibly subsumed into the older *Sellosaurus minor* via species reassignment. |
 | Euoplocephalus | *tutus* | *Stereocephalus tutus* | E | Historical genus rename — *Stereocephalus* (Lambe 1902) was preoccupied (a beetle), replaced by *Euoplocephalus* (Lambe 1910, the cited paper). Current YAML form is correct. |
+| **Gravitholus** | *Stegoceras novomexicanum* | *Gravitholus albertae* | G | **Real data bug** — *Gravitholus*'s type species is *albertae* (Wall & Galton 1979), not *Stegoceras novomexicanum*. The current YAML entry appears mis-keyed; needs hand correction. |
+| Gargoyleosaurus | *parkpinorum* | *parkpini* | G | Original 1998 Carpenter paper used *parkpini*; the form *parkpinorum* is a later emendation (Latinisation correction for plural patronym). Current YAML form is correct. |
+| Gilmoreosaurus | *mongoliensis* | *Gilmoreosaurs mongoliensis* | G | Single-letter OCR misread of genus name (missing *u*); paper body uses *Gilmoreosaurus*. |
+| Giraffatitan | *brancai* | *Brachiosaurus (Giraffatitan) brancai* | G | Paper used both forms; *Giraffatitan brancai* is the modern accepted name when treated as a separate genus. Current YAML is correct. |
 
 ## Resolved false positives (kept as a checklist)
 
