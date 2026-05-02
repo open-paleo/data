@@ -202,6 +202,35 @@ genus YAML, mirroring the technique used by `fix-reference-titles.ts`:
 > (missing diagnosis sections, bibliographies that aren't really
 > describing papers, etc.).
 
+### Letter D — 2026-05-01
+
+Fourth letter through the pipeline. 60 genera total; 49 queued (1
+no `described_in`: Diplodocus; 10 no corpus markdown).
+
+Apply results:
+- **Applied**: 45 genera
+- Sentinels: 0 (notable — every paper had usable content)
+- Non-primary (2): Dromaeosauroides (review), Dromiceiomimus
+  (systematic revision — edge case, see corpus-paper-report.md)
+- No-data (2): Dacentrurus, Dryptosaurus (likely brief older papers)
+- Insertion failures: 0
+
+Spellcheck unknowns: 87 → 0 after appending 84 new terms;
+paleo-vocab.txt now 597 entries; cspell taxonomy 5,907 words.
+
+Cumulative impact (A + B + C + D):
+- `diagnostic_features` missing: 1,295 → 1,016 (−279, −21.5%)
+- `species.holotype.material` missing: 1,062 → 819 (−243, −22.9%)
+
+Notable corpus findings:
+- Daxiatitan (you2008) heavily OCR-corrupted — genus garbled as
+  "Maxiaosaurus robustus"; data is suspect, consider re-OCR
+- 4 binomial flags, all single-glyph OCR misreads (Dandakosaurus
+  inducus, Dongyangopelta yangyananensis, Dongyungosaurus,
+  Dromæzosaurus) — none require action
+- 1 historical genus rename: Dacentrurus (formerly Omosaurus,
+  preoccupied)
+
 ### Letter C — 2026-05-01
 
 Third letter through the pipeline. 85 genera total; 67 queued (0

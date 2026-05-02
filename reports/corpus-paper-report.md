@@ -33,6 +33,7 @@ up automatically once the markdown is restored.
 | Campylodoniscus | `carroll1988` | C | Textbook reference, not the original description. |
 | Chaoyangsaurus | `xijin1999` | C | Empty / boilerplate-only markdown. |
 | Cruxicheiros | `benson2010` | C | Empty / boilerplate-only markdown. |
+| Daxiatitan | `you2008` | D | Heavily OCR-corrupted — genus name garbled as "Maxiaosaurus robustus" throughout. Agent extracted what it could but data is suspect; consider re-OCR. |
 
 ## 2. Wrong `described_in` citations
 
@@ -56,6 +57,8 @@ updated (correct `described_in`, add the right paper to
 | Coahuilaceratops | `loewen2010` | 2007 symposium short paper predating the formal description (compiled by Braman, Royal Tyrrell Museum). | The 2010 formal description (Loewen et al., New Perspectives on Horned Dinosaurs) — likely a different file in the corpus. |
 | Conchoraptor | `maryanska2002` | Phylogenetic analysis of Oviraptorosauria — not the primary description. *Conchoraptor* is used as a terminal taxon. | Barsbold 1986 (original description). |
 | Crichtonpelta | `arbour2015` | Edge case — agent classified as "review" because it's a broad ankylosaurid revision, but the new combination *Crichtonpelta benxiensis* is formally erected here (re-assigned from *Crichtonsaurus benxiensis*). The data the agent extracted is fine; the auto-skip was conservative. Consider re-running this one without the non-primary filter. | arbour2015 (this one) for the *combination*; original species description is Lü et al. 2007 (*Crichtonsaurus*). |
+| Dromaeosauroides | `christiansen2003` | Review chapter by Bonde (not Christiansen) summarising and defending the taxon. | Christiansen & Bonde 2003 original description. |
+| Dromiceiomimus | `russell1972` | Systematic revision — Russell 1972 erects *Dromiceiomimus* as a new genus by reassigning Parks 1926's *Struthiomimus brevitertius*. Edge case similar to Crichtonpelta: this *is* the formal genus erection. | russell1972 (this one). Auto-skip was conservative; re-run without non-primary filter to populate. |
 
 ## 3. Translations of formal descriptions
 
@@ -80,6 +83,7 @@ both the original paper and the translation in the genus YAML's
 | Chuanjiesaurus | `fang2000` | C | Chinese (2000 stratigraphic congress proceedings) — translated by Will Downs (2002) |
 | Chungkingosaurus | `dong1983a` | C | Chinese (Dong, Zhou & Zhang 1983 monograph) — translated by Will Downs (1999) |
 | Coloradisaurus | `bonaparte1978` | C | Original 1978 paper used name *Coloradia brevis* — name replaced by *Coloradisaurus* in Lambert 1983 after *Coloradia* was found preoccupied. Citation is the original description but under the now-superseded genus name. |
+| Daanosaurus | `ye2005` | D | Chinese primary description with appended English abstract. Agent flagged as translation but data is from the original. |
 
 ## 4. Filename / encoding quirks
 
@@ -103,6 +107,7 @@ cross-check against ICZN / current literature.
 | Baurutitan | *britoi* | *brítoi* | B | Diacritic difference (Latin *í*). Verify whether the original 2005 paper uses the accent and what the modern accepted form is. |
 | Chuanjiesaurus | *anaensis* | *a'naensis* | C | Apostrophe-separated transliteration of the Chinese place name (Ana/A'na). Either form may be the canonical Latinised epithet — verify against ICZN and current literature. |
 | Cumnoria | *prestwichii* | *Iguanodon Prestwichi* | C | Originally described as *Iguanodon prestwichi* (Hulke 1880); the genus *Cumnoria* was erected by Seeley 1888a (the cited paper) and the species spelling has subsequently been emended to *prestwichii*. The current YAML form looks correct; this is taxonomic history, not a discrepancy to fix. |
+| Dacentrurus | *armatus* | *Omosaurus armatus* | D | Historical genus rename — original 1875 *Omosaurus* (Owen) was preoccupied; replaced by *Dacentrurus* (Lucas 1902, the cited paper). Current YAML form is correct. |
 
 ## Resolved false positives (kept as a checklist)
 
@@ -119,6 +124,12 @@ know to gut-check similar patterns:
 - **Craterosaurus / Graterosaurus pottonensis** (seeley1874, C):
   same pattern — single OCR misread of capital C → G. The body
   consistently uses *Craterosaurus*.
+- **Dandakosaurus / Dandakosaurus inducus** (yadagiri1982, D),
+  **Dongyangopelta / Dongyangopelta yangyananensis** (chen2013, D),
+  **Dongyangosaurus / Dongyungosaurus sinensis** (lü2008b, D),
+  **Dromaeosaurus / Dromæzosaurus albertensis** (matthew1922, D):
+  all single-glyph OCR misreads (i/u, a/n inserted, n/u, æz for
+  ae). Body of each paper uses the canonical YAML form.
 - **Coloradisaurus / Coloradia brevis** (bonaparte1978, C): not an
   OCR issue but historical taxonomy — the original genus name was
   *Coloradia*, replaced by *Coloradisaurus* (Lambert 1983) when
