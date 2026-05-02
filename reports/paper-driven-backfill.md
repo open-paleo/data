@@ -202,6 +202,52 @@ genus YAML, mirroring the technique used by `fix-reference-titles.ts`:
 > (missing diagnosis sections, bibliographies that aren't really
 > describing papers, etc.).
 
+### Letter M — 2026-05-02
+
+Thirteenth letter, also on Haiku 4.5. 79 genera total; 65 queued
+(1 no described_in: Megalosaurus; 13 no corpus markdown including
+Mamenchisaurus, Massospondylus, Mantellisaurus, Magyarosaurus,
+Magnosaurus, Mandschurosaurus, Marmarospondylus, Microhadrosaurus,
+Micropachycephalosaurus, Mongolosaurus, Monkonosaurus, Montanoceratops,
+Morinosaurus).
+
+Apply results:
+- **Applied**: 61
+- Sentinels (4):
+  - Macrurosaurus (`seeley1869` markdown is abstract-only, 26 lines)
+  - Musankwa (`barrett2024` markdown is abstract-only, 20 lines)
+  - Mononykus (`perle1993` markdown contains a DNA repair / XP
+    paper, not Mononykus — wrong-paper-content)
+  - Microceratus (`mateus2008` is a nomenclatural note declaring
+    the species *nomen dubium* per Sereno 2000; no diagnosis to
+    extract — not a corpus issue)
+- Non-primary: 0
+- No-data: 0
+- Insertion failures: 0
+
+Strip-specimen-ids cleaned 16 catalog tokens that survived in
+holotype_material.
+
+Four typos caught by spellcheck and fixed:
+- Muyelensaurus `Distai` → `Distal` and `basipterigoid` →
+  `basipterygoid` (paper has both forms; standardised to modern
+  spellings). Also stripped a comma-prefixed catalog token
+  (`MRS-PV 207, a braincase…`) that the strip script doesn't match.
+- Minmi `notocordal` → `notochordal` (paper-level typo, multiple
+  occurrences in source).
+- Microvenator `pleurocels` → `pleurocoels` (paper diagnosis
+  literally writes `pleurocels`; standardised).
+
+Spellcheck added 52 new vocab entries (anatomical adjectives,
+clade abbreviations like `tyrannosauroid`/`carcharodontosaurid`,
+institution codes NHMZ/UUVP, Mongolian/Tanzanian/South African
+place names like `Nyama`, `Thaba`, `Thabana`, `Rooi`, `Morena`,
+`Xiasanjiazi`). Total 949, taxonomy 6,259 words.
+
+Cumulative impact (A–M):
+- `diagnostic_features` missing: 1,295 → 683 (−612, −47.3%)
+- `species.holotype.material` missing: 1,062 → 556 (−506, −47.6%)
+
 ### Letter L — 2026-05-02
 
 Twelfth letter, also on Haiku 4.5. 64 genera total; 48 queued

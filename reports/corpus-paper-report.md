@@ -35,6 +35,10 @@ up automatically once the markdown is restored.
 | Liaoningvenator | `shen2017` | L | The `shen2017.md` markdown describes *Daliansaurus liaoningensis*, not Liaoningvenator curriei. Wrong-paper-content pattern — Liaoningvenator was named by Shen et al. 2017a in *Acta Geologica Sinica* (different Shen 2017 paper). |
 | Lavocatisaurus | `canudo2018` | L | Markdown is abstract-only (12 lines); the systematic palaeontology body is missing from the corpus copy. |
 | Lepidus | `nesbitt2015` | L | Markdown is abstract-only (10 lines); systematic palaeontology body is missing from the corpus copy. |
+| Macrurosaurus | `seeley1869` | M | Abstract / boilerplate-only markdown (26 lines); main paper body absent. |
+| Mononykus | `perle1993` | M | The `perle1993.md` markdown contains content from a totally different (DNA repair / Xeroderma pigmentosum) paper, not the Mononykus description. Wrong-paper-content pattern — possibly a Nature 1993 multi-paper page mismatch from BHL. |
+| Musankwa | `barrett2024` | M | Markdown is abstract-only (20 lines); systematic palaeontology body absent. |
+| Microceratus | `mateus2008` | M | Right paper, but Microceratus was declared *nomen dubium* (Sereno 2000) — the citation is a nomenclatural note acknowledging the holotype lacks diagnostic features. No diagnosis to extract. (Not a corpus issue — flagging here so the genus isn't picked up by future re-runs.) |
 
 Resolved (corpus paper updated and re-extracted on 2026-05-01):
 Achelousaurus (`sampson1995`), Baryonyx (`charig1986`), Camarillasaurus
