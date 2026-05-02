@@ -202,6 +202,27 @@ genus YAML, mirroring the technique used by `fix-reference-titles.ts`:
 > (missing diagnosis sections, bibliographies that aren't really
 > describing papers, etc.).
 
+### Letter F — 2026-05-01
+
+Sixth letter through the pipeline. 22 genera total; 19 queued (3
+no corpus markdown: Foskeia, Fulgurotherium, Fushanosaurus).
+
+Apply results:
+- **Applied**: 19 (100% of queued)
+- Sentinels: 0
+- Non-primary: 0
+- No-data: 0
+- Insertion failures: 0
+- Binomial flags: 0
+
+The cleanest letter yet — every queued paper was a primary
+description with usable holotype/diagnosis content. 25 new
+paleo-vocab entries; total 698, taxonomy 6,008 words.
+
+Cumulative impact (A–F):
+- `diagnostic_features` missing: 1,295 → 959 (−336, −25.9%)
+- `species.holotype.material` missing: 1,062 → 774 (−288, −27.1%)
+
 ### Letter E — 2026-05-01
 
 Fifth letter through the pipeline. 46 genera total; 43 queued (1
