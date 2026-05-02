@@ -24,15 +24,9 @@ up automatically once the markdown is restored.
 
 | Genus | Citation key | Letter | Reason |
 |---|---|---|---|
-| Achelousaurus | `sampson1995` | A | Publisher boilerplate only; article body absent. |
-| Altispinax | `huene1923` | A | Publisher boilerplate only. |
 | Anchisaurus | `marsh1885` | A | BHL OCR missed the actual page (Marsh 1885 sits on p. 169 of a long journal volume); only a garbled "Anchisauridae" fragment remains. |
-| Baryonyx | `charig1986` | B | Publisher boilerplate only. |
-| Camarillasaurus | `sánchez-hernández2012` | C | Publisher boilerplate only. |
 | Camptosaurus | `marsh1885` | C | Same BHL OCR issue as Anchisaurus — Marsh 1885 page not captured. |
 | Campylodoniscus | `carroll1988` | C | Textbook reference, not the original description. |
-| Chaoyangsaurus | `xijin1999` | C | Empty / boilerplate-only markdown. |
-| Cruxicheiros | `benson2010` | C | Empty / boilerplate-only markdown. |
 | Daxiatitan | `you2008` | D | Heavily OCR-corrupted — genus name garbled as "Maxiaosaurus robustus" throughout. Agent extracted what it could but data is suspect; consider re-OCR. |
 | Einiosaurus | `sampson1995` | E | Same publisher boilerplate-only file as Achelousaurus (A). |
 | Eocarcharia | `sereno2008a` | E | Empty / boilerplate-only markdown. |

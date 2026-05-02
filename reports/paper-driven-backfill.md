@@ -202,6 +202,34 @@ genus YAML, mirroring the technique used by `fix-reference-titles.ts`:
 > (missing diagnosis sections, bibliographies that aren't really
 > describing papers, etc.).
 
+### Letter G — 2026-05-01
+
+Seventh letter. 54 genera total; 48 queued (6 no corpus markdown).
+
+Apply results:
+- **Applied**: 46
+- Sentinels (1): Galvesaurus
+- Non-primary (1): Gigantspinosaurus (review — not original)
+- No-data: 0
+- Insertion failures: 0
+
+Spellcheck added 57 new vocab entries; total 755, taxonomy 6,065
+words.
+
+Cumulative impact (A–G):
+- `diagnostic_features` missing: 1,295 → 914 (−381, −29.4%)
+- `species.holotype.material` missing: 1,062 → 738 (−324, −30.5%)
+
+Notable corpus findings:
+- 4 translations: Garudimimus (Russian), Genusaurus (French),
+  Gongbusaurus (Chinese), Gongxianosaurus (Chinese)
+- **Real data bug**: `Gravitholus`'s YAML lists type species as
+  *Stegoceras novomexicanum*, but the cited paper (Wall & Galton
+  1979) describes *Gravitholus albertae*. Needs hand correction.
+- Other binomial flags resolved as historical (Gargoyleosaurus
+  emendation), OCR (Gilmoreosaurus single-letter), or paper-form
+  ambiguity (Giraffatitan vs Brachiosaurus subgenus).
+
 ### Letter F — 2026-05-01
 
 Sixth letter through the pipeline. 22 genera total; 19 queued (3
