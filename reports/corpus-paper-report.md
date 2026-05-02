@@ -27,10 +27,13 @@ up automatically once the markdown is restored.
 | Anchisaurus | `marsh1885` | A | BHL OCR missed the actual page (Marsh 1885 sits on p. 169 of a long journal volume); only a garbled "Anchisauridae" fragment remains. |
 | Camptosaurus | `marsh1885` | C | Same BHL OCR issue as Anchisaurus — Marsh 1885 page not captured. |
 | Campylodoniscus | `carroll1988` | C | Textbook reference, not the original description. |
-| Daxiatitan | `you2008` | D | Heavily OCR-corrupted — genus name garbled as "Maxiaosaurus robustus" throughout. Agent extracted what it could but data is suspect; consider re-OCR. |
-| Einiosaurus | `sampson1995` | E | Same publisher boilerplate-only file as Achelousaurus (A). |
-| Eocarcharia | `sereno2008a` | E | Empty / boilerplate-only markdown. |
-| Galvesaurus | `barco2005` | G | Empty / boilerplate-only markdown. |
+
+Resolved (corpus paper updated and re-extracted on 2026-05-01):
+Achelousaurus (`sampson1995`), Baryonyx (`charig1986`), Camarillasaurus
+(`sánchez-hernández2012`), Chaoyangsaurus (`xijin1999`), Cruxicheiros
+(`benson2010`), Daxiatitan (`you2008`), Einiosaurus (`sampson1995`),
+Eocarcharia (`sereno2008a`), Galvesaurus (`barco2005`). Altispinax
+(`huene1923`) re-extracted but moved to section 2 — see below.
 
 ## 2. Wrong `described_in` citations
 
@@ -48,6 +51,7 @@ updated (correct `described_in`, add the right paper to
 |---|---|---|---|
 | Abelisaurus | `bonaparte1984` | Popular Italian review book; cites the formal description as a manuscript in preparation. | Bonaparte & Novas 1985 |
 | Adasaurus | `barsbold1977` | Translated evolutionary survey; *Adasaurus* appears only in a figure caption. | Barsbold 1983 (or wherever the formal description is) |
+| Altispinax | `huene1923` | New genus erected in a single sentence within a broad review of Carnosauria — no holotype subsection, no catalog number, no diagnosis. The 1923 paper is the formal genus erection (renaming *Megalosaurus dunkeri* Dames 1884), so it is taxonomically valid; the agent's review-flag was triggered by the brief, embedded format. Edge case similar to Crichtonpelta and Dromiceiomimus. | huene1923 (this one) for the genus; Dames 1884 for the original *dunkeri* species description. |
 | Amargasaurus | `bonaparte1984` | Same review book as Abelisaurus; lists *Amargasaurus* as nomen nudum *"A. groeberi"*. | Salgado & Bonaparte 1991 (*A. cazaui*) |
 | Amurosaurus | `bolotsky1991` | Corpus has a 2011 book chapter, not the 1991 original. | Bolotsky & Kurzanov 1991 |
 | Antarctosaurus | `huene1927b` | Broader review; *Antarctosaurus* mentioned only in passing. | Huene 1929 (Anales del Museo de La Plata) |

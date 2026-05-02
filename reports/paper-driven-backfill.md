@@ -202,6 +202,45 @@ genus YAML, mirroring the technique used by `fix-reference-titles.ts`:
 > (missing diagnosis sections, bibliographies that aren't really
 > describing papers, etc.).
 
+### Re-run pass (corpus-updated papers) — 2026-05-01
+
+Targeted re-extraction of the 10 genera listed as "Corpus paper
+updated" in `corpus-paper-report.md` section 1. After the user
+refreshed the source markdown for each, the same dispatch flow was
+run for just these genera (one prompt per genus, filtered out of the
+per-letter JSONL).
+
+Applied (9): Achelousaurus, Baryonyx, Camarillasaurus,
+Chaoyangsaurus, Cruxicheiros, Daxiatitan, Einiosaurus, Eocarcharia,
+Galvesaurus.
+
+Skipped (1): Altispinax — agent classified `huene1923` as `review`.
+The 1923 paper is the formal genus erection but the auto-skip was
+triggered by the brief, embedded format. Moved to section 2 of
+`corpus-paper-report.md` (issue #1863) as an edge case similar to
+Crichtonpelta / Dromiceiomimus.
+
+Daxiatitan's prior fields (extracted from the corrupted markdown)
+were cleared in the YAML before re-run so the queue would pick it
+up; the new extraction from the refreshed markdown replaces them.
+
+Spellcheck added 12 new vocab entries (cornual, procurved,
+supracranial, fibularis, megalosauroids, Proximomedially,
+Caudalmost, and the centro-/spino-/intra-pre/post-zygapophysial
+laminae from Galvesaurus); total 767, taxonomy 6,077 words.
+
+Cumulative impact (A–G):
+- `diagnostic_features` missing: 1,295 → 906 (−389, −30.0%)
+- `species.holotype.material` missing: 1,062 → 732 (−330, −31.1%)
+
+Galvesaurus reference fix (commit `216c2d9`): the `barco2005`
+DOI `10.1159/000433440` was wrong (Karger publication). It has
+been removed (Naturaleza Aragonesa does not appear to issue a DOI
+for this paper) and the Sánchez-Hernández 2005 Zootaxa paper
+(10.11646/zootaxa.1034.1.1) added as a secondary reference. The
+ethical priority history (Barco et al. July 2005 vs Sánchez-Hernández
+August 2005) is preserved in the synonym block.
+
 ### Letter G — 2026-05-01
 
 Seventh letter. 54 genera total; 48 queued (6 no corpus markdown).
