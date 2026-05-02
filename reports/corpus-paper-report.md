@@ -30,15 +30,15 @@ up automatically once the markdown is restored.
 | Heishansaurus | `bohlin1953` | H | Markdown is missing the article body (Part I, pages 9–59 of the original); only a summary mention survives. |
 | Hoplitosaurus | `lucas1902` | H | Empty / boilerplate-only markdown. |
 | Hypsibema | `cope1869a` | H | Empty / boilerplate-only markdown. |
-| Invictarx | `mcdonald2018` | I | The `mcdonald2018.md` markdown describes *Dynamoterror dynastes*, not Invictarx zephyri. Either the corpus file is mis-keyed (a different McDonald 2018 paper describes Invictarx) or the YAML's `described_in` is wrong. Needs reconciliation. |
-| Itemirus | `kurzanov1976a` | I | The `kurzanov1976a.md` markdown describes *Alioramus remotus*, not Itemirus medullaris. Same wrong-paper-content pattern as Invictarx. Kurzanov did publish on Itemirus (also 1976), so the citation key likely needs disambiguation. |
+| Itemirus | `kurzanov1976a` | I | The `kurzanov1976a.md` markdown describes *Alioramus remotus*, not Itemirus medullaris. Wrong-paper-content pattern. Kurzanov did publish on Itemirus (also 1976), so the citation key likely needs disambiguation. |
 
 Resolved (corpus paper updated and re-extracted on 2026-05-01):
 Achelousaurus (`sampson1995`), Baryonyx (`charig1986`), Camarillasaurus
 (`sánchez-hernández2012`), Chaoyangsaurus (`xijin1999`), Cruxicheiros
 (`benson2010`), Daxiatitan (`you2008`), Einiosaurus (`sampson1995`),
-Eocarcharia (`sereno2008a`), Galvesaurus (`barco2005`). Altispinax
-(`huene1923`) re-extracted but moved to section 2 — see below.
+Eocarcharia (`sereno2008a`), Galvesaurus (`barco2005`), Invictarx
+(`mcdonald2018`). Altispinax (`huene1923`) re-extracted but moved to
+section 2 — see below.
 
 ## 2. Wrong `described_in` citations
 
