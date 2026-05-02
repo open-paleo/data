@@ -30,6 +30,8 @@ up automatically once the markdown is restored.
 | Heishansaurus | `bohlin1953` | H | Markdown is missing the article body (Part I, pages 9–59 of the original); only a summary mention survives. |
 | Hoplitosaurus | `lucas1902` | H | Empty / boilerplate-only markdown. |
 | Hypsibema | `cope1869a` | H | Empty / boilerplate-only markdown. |
+| Invictarx | `mcdonald2018` | I | The `mcdonald2018.md` markdown describes *Dynamoterror dynastes*, not Invictarx zephyri. Either the corpus file is mis-keyed (a different McDonald 2018 paper describes Invictarx) or the YAML's `described_in` is wrong. Needs reconciliation. |
+| Itemirus | `kurzanov1976a` | I | The `kurzanov1976a.md` markdown describes *Alioramus remotus*, not Itemirus medullaris. Same wrong-paper-content pattern as Invictarx. Kurzanov did publish on Itemirus (also 1976), so the citation key likely needs disambiguation. |
 
 Resolved (corpus paper updated and re-extracted on 2026-05-01):
 Achelousaurus (`sampson1995`), Baryonyx (`charig1986`), Camarillasaurus
@@ -118,6 +120,7 @@ cross-check against ICZN / current literature.
 | Efraasia | *minor* | *Efraasia diagnostica* | E | Galton 1973 used species epithet *diagnostica*; current accepted form is *minor*. Verify nomenclatural history — possibly subsumed into the older *Sellosaurus minor* via species reassignment. |
 | **Gravitholus** | *Stegoceras novomexicanum* | *Gravitholus albertae* | G | **Real data bug** — *Gravitholus*'s type species is *albertae* (Wall & Galton 1979), not *Stegoceras novomexicanum*. The current YAML entry appears mis-keyed; needs hand correction. |
 | Gilmoreosaurus | *mongoliensis* | *Gilmoreosaurs mongoliensis* | G | Single-letter OCR misread of genus name (missing *u*); paper body uses *Gilmoreosaurus*. |
+| **Iuticosaurus** | *lydekkeri* | *valdensis* | I | **Type species mismatch** — the cited paper (Le Loeuff 1993) treats *I. lydekkeri* as a nomen dubium and describes *I. valdensis* as the valid species. The YAML lists *lydekkeri* as the type species; this should be reviewed against current consensus on Iuticosaurus's valid species. |
 
 ## Resolved false positives (kept as a checklist)
 

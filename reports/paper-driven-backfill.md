@@ -202,6 +202,49 @@ genus YAML, mirroring the technique used by `fix-reference-titles.ts`:
 > (missing diagnosis sections, bibliographies that aren't really
 > describing papers, etc.).
 
+### Letter I — 2026-05-01
+
+Ninth letter, also on Haiku 4.5. 31 genera total; 26 queued
+(1 no described_in, 4 no corpus markdown).
+
+Apply results:
+- **Applied**: 23
+- Sentinels (2): Invictarx (mcdonald2018 corpus paper actually
+  describes *Dynamoterror dynastes*, not Invictarx — wrong corpus
+  paper for this key); Itemirus (kurzanov1976a corpus paper
+  describes *Alioramus remotus*, not Itemirus medullaris — same
+  pattern).
+- No-data (1): Iuticosaurus (leloeuff1993 — type species in YAML
+  is `Iuticosaurus lydekkeri`, but the paper treats lydekkeri as a
+  nomen dubium and describes *I. valdensis* instead. Real
+  binomial / nomenclatural issue.)
+- Insertion failures: 0
+
+Two paper-/Haiku-level typos caught by spellcheck and fixed:
+Incisivosaurus `oviraptosaur` → `oviraptorosaur`,
+Iberospinus `pleurocelic` → `pleurocoelic`.
+
+Spellcheck added 30 new vocab entries (mostly anatomical
+directions and compound terms; plus place names Abangarit,
+Tedreft from the Inosaurus/Ténéré paper, Ralekoala from the
+Ignavusaurus paper, and the lamina abbreviations CPRL/PRSL from
+the Ibirania paper). Total 827, taxonomy 6,137 words.
+
+Cumulative impact (A–I):
+- `diagnostic_features` missing: 1,295 → 844 (−451, −34.8%)
+- `species.holotype.material` missing: 1,062 → 685 (−377, −35.5%)
+
+Notable corpus findings:
+- 2 wrong-paper-content cases (Invictarx, Itemirus): the cited
+  markdown for the genus's described_in key actually describes a
+  different taxon. Either the corpus file was assigned the wrong
+  citation key, or the YAML's described_in points at the wrong
+  paper. Logged in section 1 of `corpus-paper-report.md` for
+  manual reconciliation.
+- 1 nomenclatural issue (Iuticosaurus): YAML type species is
+  *I. lydekkeri* (a nomen dubium per the cited paper); valid
+  species per the paper is *I. valdensis*. Logged in section 5.
+
 ### Letter H — 2026-05-01
 
 Eighth letter, **first run on Haiku 4.5** (instead of Sonnet 4.6) to
