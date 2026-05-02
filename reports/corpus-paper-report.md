@@ -119,7 +119,6 @@ cross-check against ICZN / current literature.
 | Amargasaurus | *cazaui* | *groeberi* | A | Artifact of the wrong-citation issue (#1863) — the corpus paper lists *A.* as nomen nudum *groeberi*. Will resolve once the citation is corrected. |
 | Efraasia | *minor* | *Efraasia diagnostica* | E | Galton 1973 used species epithet *diagnostica*; current accepted form is *minor*. Verify nomenclatural history — possibly subsumed into the older *Sellosaurus minor* via species reassignment. |
 | **Gravitholus** | *Stegoceras novomexicanum* | *Gravitholus albertae* | G | **Real data bug** — *Gravitholus*'s type species is *albertae* (Wall & Galton 1979), not *Stegoceras novomexicanum*. The current YAML entry appears mis-keyed; needs hand correction. |
-| Gilmoreosaurus | *mongoliensis* | *Gilmoreosaurs mongoliensis* | G | Single-letter OCR misread of genus name (missing *u*); paper body uses *Gilmoreosaurus*. |
 
 ## Resolved false positives (kept as a checklist)
 

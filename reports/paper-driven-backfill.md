@@ -202,6 +202,40 @@ genus YAML, mirroring the technique used by `fix-reference-titles.ts`:
 > (missing diagnosis sections, bibliographies that aren't really
 > describing papers, etc.).
 
+### Letter K — 2026-05-02
+
+Eleventh letter, also on Haiku 4.5. 40 genera total; 35 queued
+(5 no corpus markdown: Kaijiangosaurus, Kelmayisaurus,
+Khankhuuluu, Kotasaurus, Kurupi).
+
+Apply results:
+- **Applied**: 35 (100% of queued — second clean letter in a row)
+- Sentinels: 0
+- Non-primary: 0
+- No-data: 0
+- Insertion failures: 0
+
+No spellcheck-flagged typos this round (0 suspicious shapes).
+Bullet counts again drifted above the soft 6-bullet cap on
+Haiku (Kaatedocus 9, Kaijutitan 13, Kentrosaurus/Kerberosaurus/
+Khulsanurus/Kileskus/Klamelisaurus/Koreanosaurus/Kosmoceratops/
+Kritosaurus/Kulindadromeus/Kunbarrasaurus 7–13) — content
+remains valid. Strip-specimen-ids cleaned 12 catalog tokens
+that survived in `holotype_material` (e.g. `(MNHN.F.LES381m)`,
+`(UMNH VP 17000)`).
+
+Spellcheck added 29 new vocab entries (anatomical adjectives
+like circumnasal/dorsocaudally/equidimensional/preantorbital,
+plate-name terms epiparietosquamosal/episquamosal, scientific
+terms ankylosaurian/arctometatarsalian/neornithischian, place
+names Kindope/Kulinda, historical taxa Trachodon/trachodontid,
+faithful copy of paper-level `pencillike`). Total 865,
+taxonomy 6,175 words.
+
+Cumulative impact (A–K):
+- `diagnostic_features` missing: 1,295 → 787 (−508, −39.2%)
+- `species.holotype.material` missing: 1,062 → 644 (−418, −39.4%)
+
 ### Letter J — 2026-05-01
 
 Tenth letter, also on Haiku 4.5. 27 genera total; 20 queued
