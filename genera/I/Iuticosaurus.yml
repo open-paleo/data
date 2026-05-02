@@ -12,6 +12,13 @@ diet: herbivore
 locomotion: quadrupedal
 paleoenvironment:
   - marine
+diagnostic_features:
+  - Deeply procoelous caudal vertebrae with posterior ridge on lateral face of
+    centrum
+  - Promontory at base of neural arch formed by rising centrum from posterior
+    ridge
+  - Extremely developed postzygapophyses extending to end of centrum
+  - Neural arch anteriorly placed on caudal centra
 identifiers:
   - source: pbdb
     id: "64328"
@@ -20,11 +27,38 @@ identifiers:
   - source: gbif
     id: "4967345"
 species:
+  - name: Iuticosaurus valdensis
+    etymology: "Latinized form of 'Wealden', referring to the Wealden Group of
+      southern England where the type material was discovered."
+    status: valid
+    type_species: true
+    period:
+      name:
+        - Early Cretaceous
+      stage:
+        - Barremian
+        - Aptian
+      from_ma: 129.4
+      to_ma: 120.0
+    described: 1993
+    authors: Le Loeuff
+    location:
+      country: GB
+      locality: Brook
+      region: Isle of Wight
+      formation: Wessex
+    holotype:
+      specimen_id: [ BMNH 151 ]
+      specimen_type: lectotype
+      institution: BMNH
+      material: Two incomplete middle caudal vertebrae from the Wealden of Brook, Isle
+        of Wight; deeply procoelous with posterior ridge on lateral face and
+        promontory at base of neural arch
+    described_in: leloeuff1993
   - name: Iuticosaurus lydekkeri
     etymology: "Named for Richard Lydekker, the British palaeontologist who first
       described the fossil vertebrae."
     status: valid
-    type_species: true
     period:
       name:
         - Early Jurassic
@@ -47,7 +81,7 @@ species:
       formation: Upper Greensand
     holotype:
       specimen_id: [ BMNH R146a ]
-      specimen_type: lectotype
+      specimen_type: holotype
       institution: BMNH
     described_in: leloeuff1993
 references:

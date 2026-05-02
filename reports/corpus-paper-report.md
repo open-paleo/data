@@ -120,7 +120,6 @@ cross-check against ICZN / current literature.
 | Efraasia | *minor* | *Efraasia diagnostica* | E | Galton 1973 used species epithet *diagnostica*; current accepted form is *minor*. Verify nomenclatural history — possibly subsumed into the older *Sellosaurus minor* via species reassignment. |
 | **Gravitholus** | *Stegoceras novomexicanum* | *Gravitholus albertae* | G | **Real data bug** — *Gravitholus*'s type species is *albertae* (Wall & Galton 1979), not *Stegoceras novomexicanum*. The current YAML entry appears mis-keyed; needs hand correction. |
 | Gilmoreosaurus | *mongoliensis* | *Gilmoreosaurs mongoliensis* | G | Single-letter OCR misread of genus name (missing *u*); paper body uses *Gilmoreosaurus*. |
-| **Iuticosaurus** | *lydekkeri* | *valdensis* | I | **Type species mismatch** — the cited paper (Le Loeuff 1993) treats *I. lydekkeri* as a nomen dubium and describes *I. valdensis* as the valid species. The YAML lists *lydekkeri* as the type species; this should be reviewed against current consensus on Iuticosaurus's valid species. |
 
 ## Resolved false positives (kept as a checklist)
 
