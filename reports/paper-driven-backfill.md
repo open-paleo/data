@@ -202,6 +202,57 @@ genus YAML, mirroring the technique used by `fix-reference-titles.ts`:
 > (missing diagnosis sections, bibliographies that aren't really
 > describing papers, etc.).
 
+### Letter L — 2026-05-02
+
+Twelfth letter, also on Haiku 4.5. 64 genera total; 48 queued
+(16 no corpus markdown — the largest no-paper bucket so far,
+mostly older OCR-stub citations like `marsh1878a` cousins).
+
+Apply results:
+- **Applied**: 43
+- Sentinels (5):
+  - Lanzhousaurus (`you2005a` describes *Auroraceratops rugosus*,
+    not Lanzhousaurus magnidens — wrong-paper-content)
+  - Liaoningvenator (`shen2017` describes *Daliansaurus
+    liaoningensis*, not Liaoningvenator curriei — same pattern)
+  - Lavocatisaurus (`canudo2018` markdown is abstract-only,
+    12 lines)
+  - Lepidus (`nesbitt2015` markdown is abstract-only, 10 lines)
+  - Laplatasaurus (`huene1927b` is a sauropod review paper;
+    formal description is in Huene 1929 monograph — same
+    citation issue as Antarctosaurus)
+- Non-primary: 0 (Laplatasaurus quality flag was `review`,
+  counted under sentinels above)
+- No-data: 0
+- Insertion failures: 0 (one apply round needed to fix a
+  Haiku-introduced typo: `Lurdosaurus` → `Lurdusaurus` in the
+  extracted JSON's `genus` field, which mismatched the YAML
+  filename. Hand-corrected and re-applied.)
+
+Three typos caught by spellcheck and fixed:
+- Liaoceratops `juvenille` → `juvenile` (Haiku transcription
+  error; source uses correct form). Also stripped surviving
+  catalog tokens from the `material:` field by hand (the
+  comma-delimited "IVPP V12738, an almost complete..." pattern
+  isn't matched by `strip-specimen-ids-from-material`).
+- Lythronax `tranverse` → `transverse` (paper-level typo in
+  the Loewen et al. 2013 diagnosis; standardised to modern
+  spelling).
+- Lythronax `suboccular` → `subocular` (paper uses both
+  forms; standardised to `subocular` which appears elsewhere
+  in the same paper).
+
+Spellcheck added 32 new vocab entries (Brachiosaurid family
+abbreviation, anatomical adjectives like craniodorsally/
+rostrodorsally/dorsolateroposteriorly, place names Lingwu/
+Shawan/Wangshi/Paballong, historical synonym Gypsaurus, and
+the typo-corrected `subocular`). Total 897, taxonomy
+6,207 words.
+
+Cumulative impact (A–L):
+- `diagnostic_features` missing: 1,295 → 744 (−551, −42.6%)
+- `species.holotype.material` missing: 1,062 → 610 (−452, −42.6%)
+
 ### Letter K — 2026-05-02
 
 Eleventh letter, also on Haiku 4.5. 40 genera total; 35 queued

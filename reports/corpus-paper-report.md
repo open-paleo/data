@@ -31,6 +31,10 @@ up automatically once the markdown is restored.
 | Hoplitosaurus | `lucas1902` | H | Empty / boilerplate-only markdown. |
 | Hypsibema | `cope1869a` | H | Empty / boilerplate-only markdown. |
 | Itemirus | `kurzanov1976a` | I | The `kurzanov1976a.md` markdown describes *Alioramus remotus*, not Itemirus medullaris. Wrong-paper-content pattern. Kurzanov did publish on Itemirus (also 1976), so the citation key likely needs disambiguation. |
+| Lanzhousaurus | `you2005a` | L | The `you2005a.md` markdown describes *Auroraceratops rugosus*, not Lanzhousaurus magnidens. Wrong-paper-content pattern — the citation key should point to You et al. 2005 on Lanzhousaurus (different paper). |
+| Liaoningvenator | `shen2017` | L | The `shen2017.md` markdown describes *Daliansaurus liaoningensis*, not Liaoningvenator curriei. Wrong-paper-content pattern — Liaoningvenator was named by Shen et al. 2017a in *Acta Geologica Sinica* (different Shen 2017 paper). |
+| Lavocatisaurus | `canudo2018` | L | Markdown is abstract-only (12 lines); the systematic palaeontology body is missing from the corpus copy. |
+| Lepidus | `nesbitt2015` | L | Markdown is abstract-only (10 lines); systematic palaeontology body is missing from the corpus copy. |
 
 Resolved (corpus paper updated and re-extracted on 2026-05-01):
 Achelousaurus (`sampson1995`), Baryonyx (`charig1986`), Camarillasaurus
@@ -60,6 +64,7 @@ updated (correct `described_in`, add the right paper to
 | Amargasaurus | `bonaparte1984` | Same review book as Abelisaurus; lists *Amargasaurus* as nomen nudum *"A. groeberi"*. | Salgado & Bonaparte 1991 (*A. cazaui*) |
 | Amurosaurus | `bolotsky1991` | Corpus has a 2011 book chapter, not the 1991 original. | Bolotsky & Kurzanov 1991 |
 | Antarctosaurus | `huene1927b` | Broader review; *Antarctosaurus* mentioned only in passing. | Huene 1929 (Anales del Museo de La Plata) |
+| Laplatasaurus | `huene1927b` | Same broad sauropod review as Antarctosaurus. *Laplatasaurus* announced as forthcoming; formal description is in Huene 1929 monograph (*Anales del Museo de La Plata*). | Huene 1929 (Anales del Museo de La Plata) |
 | Coahuilaceratops | `loewen2010` | 2007 symposium short paper predating the formal description (compiled by Braman, Royal Tyrrell Museum). | The 2010 formal description (Loewen et al., New Perspectives on Horned Dinosaurs) — likely a different file in the corpus. |
 | Conchoraptor | `maryanska2002` | Phylogenetic analysis of Oviraptorosauria — not the primary description. *Conchoraptor* is used as a terminal taxon. | Barsbold 1986 (original description). |
 | Crichtonpelta | `arbour2015` | Edge case — agent classified as "review" because it's a broad ankylosaurid revision, but the new combination *Crichtonpelta benxiensis* is formally erected here (re-assigned from *Crichtonsaurus benxiensis*). The data the agent extracted is fine; the auto-skip was conservative. Consider re-running this one without the non-primary filter. | arbour2015 (this one) for the *combination*; original species description is Lü et al. 2007 (*Crichtonsaurus*). |
