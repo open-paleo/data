@@ -202,6 +202,32 @@ genus YAML, mirroring the technique used by `fix-reference-titles.ts`:
 > (missing diagnosis sections, bibliographies that aren't really
 > describing papers, etc.).
 
+### Letter J — 2026-05-01
+
+Tenth letter, also on Haiku 4.5. 27 genera total; 20 queued
+(7 no corpus markdown).
+
+Apply results:
+- **Applied**: 20 (100% of queued — cleanest letter yet)
+- Sentinels: 0
+- Non-primary: 0
+- No-data: 0
+- Insertion failures: 0
+
+No spellcheck-flagged typos this round. Bullet counts continue to
+drift above the soft 6-bullet cap on Haiku (Jianchangosaurus 11,
+Jiangshanosaurus 9, Jaculinykus/Jakapil/Jeholosaurus/Jinbeisaurus/
+Jiangxititan/Jinzhousaurus/Jobaria 8) — content remains valid.
+
+Spellcheck added 9 new vocab entries (DLXH, VPPU institution
+codes; iguanodontids, midheight, paranasal, Supracoracoideus,
+supraoccipitals, Tambrat, Titanosaurus). Total 836, taxonomy
+6,146 words.
+
+Cumulative impact (A–J):
+- `diagnostic_features` missing: 1,295 → 824 (−471, −36.4%)
+- `species.holotype.material` missing: 1,062 → 670 (−392, −36.9%)
+
 ### Letter I — 2026-05-01
 
 Ninth letter, also on Haiku 4.5. 31 genera total; 26 queued
