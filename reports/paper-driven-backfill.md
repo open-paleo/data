@@ -202,6 +202,34 @@ genus YAML, mirroring the technique used by `fix-reference-titles.ts`:
 > (missing diagnosis sections, bibliographies that aren't really
 > describing papers, etc.).
 
+### Letter E — 2026-05-01
+
+Fifth letter through the pipeline. 46 genera total; 43 queued (1
+no `described_in`: Euhelopus; 2 no corpus markdown: Edmontonia,
+Emiliasaura).
+
+Apply results:
+- **Applied**: 39 genera
+- Sentinels (2): Einiosaurus (same as Achelousaurus's
+  sampson1995), Eocarcharia (sereno2008a)
+- Non-primary (1): Eucamerotus (review — bare name in a list)
+- No-data (1): Elaphrosaurus
+- Insertion failures: 0
+
+Spellcheck unknowns: 78 → 0 after appending 76 new terms;
+paleo-vocab.txt now 673 entries; cspell taxonomy 5,983 words.
+
+Cumulative impact (A + B + C + D + E):
+- `diagnostic_features` missing: 1,295 → 978 (−317, −24.5%)
+- `species.holotype.material` missing: 1,062 → 790 (−272, −25.6%)
+
+Notable corpus findings:
+- 2 translations: Enigmosaurus (Russian), Epachthosaurus
+  (Spanish)
+- 2 historical genus renames: *Stereocephalus* → *Euoplocephalus*
+  (preoccupied beetle name); *Efraasia diagnostica* → *E. minor*
+  (verify nomenclatural history)
+
 ### Letter D — 2026-05-01
 
 Fourth letter through the pipeline. 60 genera total; 49 queued (1

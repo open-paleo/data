@@ -34,6 +34,8 @@ up automatically once the markdown is restored.
 | Chaoyangsaurus | `xijin1999` | C | Empty / boilerplate-only markdown. |
 | Cruxicheiros | `benson2010` | C | Empty / boilerplate-only markdown. |
 | Daxiatitan | `you2008` | D | Heavily OCR-corrupted — genus name garbled as "Maxiaosaurus robustus" throughout. Agent extracted what it could but data is suspect; consider re-OCR. |
+| Einiosaurus | `sampson1995` | E | Same publisher boilerplate-only file as Achelousaurus (A). |
+| Eocarcharia | `sereno2008a` | E | Empty / boilerplate-only markdown. |
 
 ## 2. Wrong `described_in` citations
 
@@ -59,6 +61,7 @@ updated (correct `described_in`, add the right paper to
 | Crichtonpelta | `arbour2015` | Edge case — agent classified as "review" because it's a broad ankylosaurid revision, but the new combination *Crichtonpelta benxiensis* is formally erected here (re-assigned from *Crichtonsaurus benxiensis*). The data the agent extracted is fine; the auto-skip was conservative. Consider re-running this one without the non-primary filter. | arbour2015 (this one) for the *combination*; original species description is Lü et al. 2007 (*Crichtonsaurus*). |
 | Dromaeosauroides | `christiansen2003` | Review chapter by Bonde (not Christiansen) summarising and defending the taxon. | Christiansen & Bonde 2003 original description. |
 | Dromiceiomimus | `russell1972` | Systematic revision — Russell 1972 erects *Dromiceiomimus* as a new genus by reassigning Parks 1926's *Struthiomimus brevitertius*. Edge case similar to Crichtonpelta: this *is* the formal genus erection. | russell1972 (this one). Auto-skip was conservative; re-run without non-primary filter to populate. |
+| Eucamerotus | `marsh1882` | *Eucamerotus* appears only as a bare name in a list of European sauropod genera. No description, no diagnosis. | The original description is Hulke 1872 (or later — verify). marsh1882 is not a description paper at all. |
 
 ## 3. Translations of formal descriptions
 
@@ -84,6 +87,8 @@ both the original paper and the translation in the genus YAML's
 | Chungkingosaurus | `dong1983a` | C | Chinese (Dong, Zhou & Zhang 1983 monograph) — translated by Will Downs (1999) |
 | Coloradisaurus | `bonaparte1978` | C | Original 1978 paper used name *Coloradia brevis* — name replaced by *Coloradisaurus* in Lambert 1983 after *Coloradia* was found preoccupied. Citation is the original description but under the now-superseded genus name. |
 | Daanosaurus | `ye2005` | D | Chinese primary description with appended English abstract. Agent flagged as translation but data is from the original. |
+| Enigmosaurus | `barsbold1983` | E | Russian monograph translated into English. *Enigmosaurus* is one of several new taxa described in the work. |
+| Epachthosaurus | `powell1990` | E | English translation (by J. A. Wilson) of Powell 1990 Spanish-language congress abstract (Congreso Argentino de Paleontología). |
 
 ## 4. Filename / encoding quirks
 
@@ -108,6 +113,8 @@ cross-check against ICZN / current literature.
 | Chuanjiesaurus | *anaensis* | *a'naensis* | C | Apostrophe-separated transliteration of the Chinese place name (Ana/A'na). Either form may be the canonical Latinised epithet — verify against ICZN and current literature. |
 | Cumnoria | *prestwichii* | *Iguanodon Prestwichi* | C | Originally described as *Iguanodon prestwichi* (Hulke 1880); the genus *Cumnoria* was erected by Seeley 1888a (the cited paper) and the species spelling has subsequently been emended to *prestwichii*. The current YAML form looks correct; this is taxonomic history, not a discrepancy to fix. |
 | Dacentrurus | *armatus* | *Omosaurus armatus* | D | Historical genus rename — original 1875 *Omosaurus* (Owen) was preoccupied; replaced by *Dacentrurus* (Lucas 1902, the cited paper). Current YAML form is correct. |
+| Efraasia | *minor* | *Efraasia diagnostica* | E | Galton 1973 used species epithet *diagnostica*; current accepted form is *minor*. Verify nomenclatural history — possibly subsumed into the older *Sellosaurus minor* via species reassignment. |
+| Euoplocephalus | *tutus* | *Stereocephalus tutus* | E | Historical genus rename — *Stereocephalus* (Lambe 1902) was preoccupied (a beetle), replaced by *Euoplocephalus* (Lambe 1910, the cited paper). Current YAML form is correct. |
 
 ## Resolved false positives (kept as a checklist)
 
