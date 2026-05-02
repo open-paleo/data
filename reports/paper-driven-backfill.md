@@ -202,6 +202,38 @@ genus YAML, mirroring the technique used by `fix-reference-titles.ts`:
 > (missing diagnosis sections, bibliographies that aren't really
 > describing papers, etc.).
 
+### Letter C — 2026-05-01
+
+Third letter through the pipeline. 85 genera total; 67 queued (0
+no `described_in`, 18 no corpus markdown).
+
+Apply results:
+- **Applied**: 60 genera
+- Sentinels (5): Camarillasaurus, Camptosaurus, Campylodoniscus,
+  Chaoyangsaurus, Cruxicheiros
+- Non-primary (2): Conchoraptor (review), Crichtonpelta (review —
+  edge case, see corpus-paper-report.md)
+- Insertion failures: 0
+
+Spellcheck unknowns: 108 → 0 after appending 105 new terms to
+`paleo-vocab.txt` (3 dedupes with prior letters). Total
+paleo-vocab now 513 entries; cspell taxonomy 5,823 words.
+
+Cumulative impact (A + B + C):
+- `diagnostic_features` missing: 1,295 → 1,061 (−234, −18.1%)
+- `species.holotype.material` missing: 1,062 → 855 (−207, −19.5%)
+
+Notable corpus findings (full details in
+`reports/corpus-paper-report.md`):
+- 5 new sentinels, 5 new translations
+- 5 binomial flags — most are taxonomic history (genus rename,
+  emended endings) or OCR (G vs C); none require immediate action
+- Crichtonpelta `paper_quality: review` is borderline; the paper
+  *is* the formal description of the new combination
+- BXGMV (Beipiao Geological Museum) not in `institutions.yaml`,
+  so its catalog token wasn't stripped from Crichtonpelta's
+  material — one-off, easy fix when convenient
+
 ### Letter B — 2026-05-01
 
 Second letter through the pipeline. 65 genera total; 56 queued (1
