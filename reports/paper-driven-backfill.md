@@ -202,6 +202,45 @@ genus YAML, mirroring the technique used by `fix-reference-titles.ts`:
 > (missing diagnosis sections, bibliographies that aren't really
 > describing papers, etc.).
 
+### Letter N — 2026-05-02
+
+Fourteenth letter, also on Haiku 4.5. 46 genera total; 38 queued
+(1 no described_in: Nuthetes; 7 no corpus markdown).
+
+Apply results:
+- **Applied**: 31
+- Sentinels (7):
+  - 4 abstract-only markdown: Narambuenatitan (`filippi2011`,
+    14 lines), Nebulasaurus (`xing2013`, 10 lines), Niobrarasaurus
+    (`carpenter1995`, 30 lines), Nodocephalosaurus (`sullivan1999`,
+    26 lines)
+  - 1 wrong-paper-content: Nigersaurus (`sereno1999.md` has laser
+    physics / neuroscience reports, not the Nigersaurus paper)
+  - 1 wrong-target-taxon: Neuquensaurus (`powell1992.md` is a
+    655-line *Saltasaurus loricatus* monograph; Powell does erect
+    *Neuquensaurus* there, but the systematic content is on
+    Saltasaurus — agent correctly didn't extract referred-only
+    diagnostic content)
+  - 1 nomenclatural-only: Nemegtomaia (`lü2005b` is the
+    replacement-name paper; original diagnosis is in Lü et al.
+    2004)
+- Non-primary: 0
+- No-data: 0
+- Insertion failures: 0
+
+One typo caught by spellcheck and fixed:
+Ningyuansaurus `Confuciornís` → `Confuciusornis` (paper-level
+acute-accent OCR error in institution name; standardised).
+
+Spellcheck added 20 new vocab entries (anatomical adjectives,
+locality `Hermiin` and `Xingcheng`, institution PVPH, plus
+`Confuciusornis` after the typo fix). Total 969, taxonomy
+6,279 words.
+
+Cumulative impact (A–N):
+- `diagnostic_features` missing: 1,295 → 652 (−643, −49.7%)
+- `species.holotype.material` missing: 1,062 → 532 (−530, −49.9%)
+
 ### Letter M — 2026-05-02
 
 Thirteenth letter, also on Haiku 4.5. 79 genera total; 65 queued
