@@ -39,6 +39,11 @@ up automatically once the markdown is restored.
 | Protognathosaurus | `olshevsky1991` | P | Review-flagged — olshevsky1991 is the Dinosaur Genera List, not the primary description. Issue #1863 candidate. Original is Zhang 1988 (or whoever first described *Protognathosaurus*). |
 | Protohadros | `head1998` | P | Markdown only 64 lines; borderline sentinel. Re-investigate. |
 | Ruehleia | `galton2001` | R | 721-line markdown but agent sentinel'd; possibly wrong-target-taxon (Galton 2001 may cover multiple sauropodomorphs). Re-investigate. |
+| Sauroplites | `bohlin1953` | S | Same Bohlin 1953 monograph as Heishansaurus / Peishansaurus. Agent reports "markdown missing dinosaur sections (pages 19–31 with detailed Sauroplites description)" — markdown is 1057 lines but the relevant chapter isn't captured. |
+| Spinops | `farke2011` | S | Markdown only 12 lines — abstract or stub-only; body of Farke et al. 2011 not captured. |
+| Stegosaurides | `bohlin1953` | S | Bohlin 1953 again. Agent: "only summary reference found; descriptive material on p. 66 is very brief". Likely the *Stegosaurides* section is genuinely a one-paragraph mention in the original, not a corpus problem. |
+| Stenopelix | `meyer1857` | S | Markdown 102 lines but agent sentinel'd as boilerplate. Re-investigate — Meyer 1857 is the original *Stenopelix* description so substantive content should exist. |
+| Struthiosaurus | `bunzel1870` | S | Markdown only 26 lines — abstract/header-only; body of Bunzel 1870 not captured. |
 
 ### Pending Resolution Papers
 

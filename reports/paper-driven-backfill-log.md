@@ -14,6 +14,50 @@ in `paper-driven-backfill.md`.
 
 ## Entries
 
+### Letter S — 2026-05-03
+
+- 111 genera scanned, 91 queued, 17 no_corpus_markdown skips,
+  3 no_described_in skips
+- 8 batches of ~12 dispatched (lightweight prompt-file pattern,
+  Haiku 4.5)
+- 86 applied, 5 sentinels (Sauroplites, Spinops, Stegosaurides,
+  Stenopelix, Struthiosaurus — flagged in corpus-paper-report)
+- 20 specimen-ID strips before apply
+- One agent-side typo: Secernosaurus extraction was written to
+  "Secernosaurs.json" with `genus: "Secernosaurs"` — renamed file
+  and edited the JSON before apply.
+- Hand-fixed 6 typos in YAMLs (still required this round because the
+  spellcheck/JSON-fix step came AFTER apply): `prezygopophyses` →
+  `prezygapophyses` (Saurophaganax), `proccoelous` → `procoelous`
+  (Syngonosaurus), `Procoelic` → `Procoelous` (Sidersaura),
+  `tonguelike` → `tongue-like` (Sinornithoides), `latero-medially`
+  → `lateromedially` (Shuvuuia), `centraprezygapophyseal` →
+  `centroprezygapophyseal` (Sonidosaurus).
+- Cleaned up Spinostropheus material — strip-specimen-ids missed the
+  parenthetical institution-name + catalog form
+  "(Musée National d'Histoire Naturelle, 1961–28)"; removed by hand.
+- Vocab additions: 52 anatomical/taxonomic terms (acanthopholid,
+  Anisodactyl, anisotetradactyl, antotic, archaeopterygids,
+  brainstem, buchholtzae, camellate, caudipterids, ceratosaurian,
+  Ceratosaurus, coelurosaurs, ectepicondyle, embayed, epipophyseal,
+  Glyptodon, heterodonty, iguanodont, incisura, internus,
+  isotridactyl, Junghsien, Kuangyuan, Mamillated, mamillated,
+  mammillated, megalosaurian, midsagittal, Nasomaxillary,
+  nasomaxillary, neomorphic, nodosaur, nodosaurs, opisthotics,
+  Parapodiapophyseal, Pietraroia, Plattenkalk, prootica,
+  protoceratopsians, semiarticulated, Sihetun, subhomodont,
+  Supracoracoid, supracoracoid, tibialis, tibiotarsal, tuberalis,
+  unrecurved, Ventrodistal, …). paleo-vocab 1044→1096; taxonomy
+  6357→6407.
+- **Process improvement (carry forward):** Spellcheck reads from
+  extraction JSONs. Running spellcheck → fix-typos-in-JSONs BEFORE
+  `apply-paper-field-extractions.ts` would let the apply step write
+  clean text directly into the YAMLs and skip the per-YAML hand
+  edits that this batch needed. Memory saved as
+  `feedback_spellcheck_before_apply.md`.
+- Validation: 0 errors, 9 warnings (all pre-existing publication-source
+  flags).
+
 ### Letter R — 2026-05-03
 
 Eighteenth letter, on Haiku 4.5. 30 genera total; 24 queued, 6
