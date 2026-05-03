@@ -14,6 +14,21 @@ in `paper-driven-backfill.md`.
 
 ## Entries
 
+### Letter V — 2026-05-03
+
+- 23 genera scanned, 17 queued, 5 no_corpus_markdown skips,
+  1 no_described_in skip.
+- Single batch of 17 dispatched (Haiku 4.5).
+- 15 applied, 2 sentinels (Vagaceratops/farke2011 — same paper as
+  Spinops; Vayuraptor/samathi2019 — same paper as Phuwiangvenator;
+  both stub-markdown). 0 insertion failures, 0 hand edits.
+- 4 specimen-ID strips before apply.
+- Spellcheck-before-apply: 6 unknown words, all legitimate
+  anatomical/clade terms (metotic, neornithischians, pleurocoelous,
+  procoelity, Somphospondylous, troughed). No JSON typo fixes.
+- Vocab additions: 6. paleo-vocab 1132→1138; taxonomy 6443→6449.
+- Validation: 0 errors, 9 pre-existing warnings.
+
 ### Letter U — 2026-05-03
 
 - 13 genera scanned, 12 queued, 1 no_corpus_markdown skip.

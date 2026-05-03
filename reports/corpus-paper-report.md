@@ -47,6 +47,8 @@ up automatically once the markdown is restored.
 | Telmatosaurus | `nopcsa1903` | T | Markdown 70 lines but agent sentinel'd. Re-investigate — Nopcsa 1903 is the original *Telmatosaurus transsylvanicus* description so substantive content should exist. |
 | Tochisaurus | `kurzanov1991` | T | Markdown only 10 lines — abstract/stub-only; body of Kurzanov & Osmólska 1991 not captured. |
 | Tornieria | `sternfeld1911` | T | Markdown only 31 lines — abstract/header-only; body of Sternfeld 1911 not captured. |
+| Vagaceratops | `farke2011` | V | Same Farke et al. 2011 markdown as Spinops — only 12 lines, abstract/stub-only. |
+| Vayuraptor | `samathi2019` | V | Same Samathi et al. 2019 markdown as Phuwiangvenator — abstract-only (14 lines). |
 
 ### Pending Resolution Papers
 
