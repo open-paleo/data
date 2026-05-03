@@ -14,6 +14,77 @@ in `paper-driven-backfill.md`.
 
 ## Entries
 
+### Letter O — 2026-05-03
+
+Fifteenth letter, on Haiku 4.5. 31 genera total; 26 queued, 5 skipped
+(no_corpus_markdown: Ohmdenosaurus, Oplosaurus, Ornithomimoides,
+Orthogoniosaurus, Ouranosaurus).
+
+Dispatch: 5 batches of 5-6 agents to stay under usage. All 26 returned
+valid JSON.
+
+Apply results: 25 applied, 1 sentinel (Oohkotokia,
+penkalski2013 — likely insufficient prose), 2 insertion failures
+(Ojoceratops/holotype.material and Omeisaurus/holotype.material —
+neither YAML had a `holotype:` block; added them by hand). 13 of the
+25 applied genera had pre-existing `material:` content, so apply only
+inserted `diagnostic_features:` for those.
+
+Process improvement applied: ran `strip-specimen-ids` BEFORE `apply`
+this round (lesson from the pending-resolution batch). Strip caught
+4 substantive cleanups (Ojoraptorsaurus, Oryctodromeus, Owenodon,
+Ozraptor) plus 1 capitalization fix (Overosaurus). 6 YAMLs still
+needed hand-cleanup for patterns the strip script doesn't handle:
+
+- Obelignathus: comma-prefix specimen ID + dimensions + locality tail
+- Olorotitan: embedded specimen ID with parenthetical institution-
+  location wrapper
+- Orodromeus: comma-prefix specimen ID
+- Osmakasaurus: comma-prefix specimen ID
+- Overoraptor: colon-prefix specimen ID at start of material
+- Owenodon: embedded `(NHM R2998)` parenthetical + locality tail
+
+Modernized 4 historical-spelling tokens in YAML diagnostic features
+(per the project's spelling-normalization policy):
+
+- Ornithopsis: `Pterodactyle` → `pterodactyl` (1870 spelling)
+- Ornithopsis: `Ophisthoccelous` → `Opisthocoelous` (OCR artifact;
+  Seeley 1870 markdown was OCR-corrupted, agent's note flagged it)
+- Ornitholestes: `Celurus` → `Coelurus` (1903 spelling of related
+  genus)
+- Ornitholestes: `united postorbito-frontal` → `fused postorbital
+  and frontal` (clarified hyphenated combining form)
+
+Vocab additions (17): Faciocranial, fenestrations, ginglymoidal,
+iliocaudalis, inrolling, intermedium, lateroposteriorly,
+lithostrotians, medioventral, megalosaurs, Nasofrontal, osteologic,
+Processus, pseudospinosus, rhabdodontomorphs, subequally, Unforked.
+paleo-vocab.txt 976→993; taxonomy.txt 6286→6303.
+
+Remaining spellcheck flags (10, all JSON-only or pre-existing
+content): `Blagoveschensk`, `Celurus`, `Durlston`, `Jachenhausen`,
+`Montouliers`, `Ophisthoccelous`, `postorbito`, `Pterodactyle`,
+`Swanage`, `Teylers` — locality/etymology pre-existing terms or
+agent-extraction text superseded in YAML.
+
+Real binomial flag (cosmetic — Wade-Giles vs. older transliteration
+variant): Omeisaurus YAML uses `junghsiensis` (matches original
+Young 1939); paper markdown OCR rendered `yunghsiensis`. Both forms
+appear in the literature; YAML's spelling matches the original
+publication, so no change.
+
+Holotype additions (Omeisaurus had no `holotype:` block at all):
+specimen_id `IVPP V930`, institution `IVPP` (modern catalog
+reference; Young 1939's original specimen designation predated the
+IVPP cataloging system).
+
+Validation: 0 errors, 9 warnings (all pre-existing flagged
+publication sources).
+
+Cumulative impact: 25 of 26 queued genera populated this round.
+Oohkotokia stays in the no-data bucket; Macrurosaurus still pending
+corpus addition of `seeley1876.md` from the prior batch.
+
 ### Pending-resolution batch — 2026-05-02
 
 Re-extraction sweep over the 14 entries the user had flagged as "fixed
