@@ -14,6 +14,50 @@ in `paper-driven-backfill.md`.
 
 ## Entries
 
+### Letter R — 2026-05-03
+
+Eighteenth letter, on Haiku 4.5. 30 genera total; 24 queued, 6
+skipped (no_corpus_markdown: Rapator, Rayososaurus, Rhabdodon,
+Rinchenia, Riojasaurus, Ruyangosaurus).
+
+Dispatch: 4 batches of 6 agents using lightweight prompt-file
+stub (`Read this prompt file: /tmp/r-prompts/<Genus>.txt`). All
+24 returned valid JSON.
+
+Apply results: 23 applied, 1 sentinel (Ruehleia — galton2001 is
+721 lines but agent sentinel'd; flagged in corpus-paper-report
+section 1 for investigation). 0 non-primary, 0 insertion failures.
+
+Strip-specimen-ids ran before apply: caught 7 cleanups
+(Ratchasimasaurus, Regnosaurus, Rhomaleopakhus, Richardoestesia,
+Rugocaudia, Ruixinia, plus capitalization-only). 3 YAMLs needed
+hand-cleanup for patterns the strip script doesn't handle:
+
+- Rahonavis: trailing `, UA 8656; Upper Cretaceous Maevarano
+  Formation, Madagascar`
+- Regnosaurus: trailing `from the Wealden, generically distinct
+  from Iguanodon Mantelli`
+- Riojavenatrix: trailing `cataloged as CPI 1637-1648, 1675-1677`
+
+Post-apply spelling normalization (4 tokens):
+- Rhoetosaurus: `amphiccelous` → `amphicoelous` (typo)
+- Rajasaurus: `transversed` → `transverse` (typo)
+- Regnosaurus: `Iguanodon Mantelli` → `Iguanodon mantelli` (modern
+  species-name lowercase)
+- Rebbachisaurus: `Apatosaurus comparables` → `corresponding
+  Apatosaurus elements` (Spanish/translation artifact)
+
+Vocab additions (11): capituloparapophysial, epiossifications,
+eusauropod, hypantra, hyperextendible, hypopubic, Judithian,
+orthozygous, sellae, somphospondylan, subgenerically. paleo-vocab
+1032→1043; taxonomy 6344→6355.
+
+Validation: 0 errors, 9 warnings (all pre-existing flagged
+publication sources).
+
+Cumulative impact: 23 of 24 queued R genera populated. Ruehleia
+deferred for corpus investigation.
+
 ### Letter Q — 2026-05-03
 
 Seventeenth letter, on Haiku 4.5. 14 genera total; 11 queued, 3

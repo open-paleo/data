@@ -38,6 +38,7 @@ up automatically once the markdown is restored.
 | Prosaurolophus | `brown1916` | P | 175-line markdown but agent sentinel'd; investigate. Brown 1916 is the original description so content should be there. |
 | Protognathosaurus | `olshevsky1991` | P | Review-flagged — olshevsky1991 is the Dinosaur Genera List, not the primary description. Issue #1863 candidate. Original is Zhang 1988 (or whoever first described *Protognathosaurus*). |
 | Protohadros | `head1998` | P | Markdown only 64 lines; borderline sentinel. Re-investigate. |
+| Ruehleia | `galton2001` | R | 721-line markdown but agent sentinel'd; possibly wrong-target-taxon (Galton 2001 may cover multiple sauropodomorphs). Re-investigate. |
 
 ### Pending Resolution Papers
 
