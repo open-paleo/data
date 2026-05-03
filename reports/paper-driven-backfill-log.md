@@ -14,6 +14,57 @@ in `paper-driven-backfill.md`.
 
 ## Entries
 
+### Letter Q — 2026-05-03
+
+Seventeenth letter, on Haiku 4.5. 14 genera total; 11 queued, 3
+skipped (no_corpus_markdown: Qinlingosaurus, Qiupalong,
+Quilmesaurus). Smallest letter run by count yet.
+
+Dispatch: 2 batches of 6 + 5 agents. All 11 returned valid JSON.
+
+Apply results: 11/11 applied. 0 sentinels, 0 non-primary, 0
+insertion failures. Cleanest run yet.
+
+Process improvement applied: dispatched the second batch using
+"Read this prompt file: /tmp/q-prompts/<Genus>.txt" stub instead
+of inlining the full prompt body. The agent reads the prompt from
+disk, which dramatically reduces dispatcher token cost (the
+verbose prompt body was repeated in every Agent invocation).
+Tested first on a few batch-1 agents and worked equivalently;
+extending to all future batches.
+
+Strip-specimen-ids ran before apply: caught 2 cleanups (Qingxiusaurus
+trailing paren, Quetecsaurus capitalization). 4 YAMLs needed
+hand-cleanup for patterns the strip script doesn't handle:
+
+- Qantassaurus: comma-prefix `NMV P199075, ` (not in
+  institutions.yaml as a paren prefix)
+- Qianlong: colon-prefix `GZPMVN001: ` (not recognized as
+  institution by strip script)
+- Qiaowanlong: colon-prefix `FRDC GJ 07-14: ` (similar)
+- Quaesitosaurus: colon-prefix `PIN No. 3906/2: ` plus locality/
+  formation tail — collapsed to "Incomplete skull"
+
+Post-apply spelling normalization (1 token):
+- Qantassaurus: `cheekteeth` → `cheek teeth` (modern two-word form)
+
+Vocab additions (1): `Shara` (Mongolian locality "Shara-Tsav",
+appears in pre-existing Quaesitosaurus location.locality).
+paleo-vocab.txt 1031→1032; taxonomy.txt 6342→6344 (regenerated).
+
+Remaining spellcheck flags (3, JSON-only): `Barungoyot` (formation),
+`GZPMVN` (institution code), `cheekteeth` (legacy form, JSON not
+yet re-stripped).
+
+Validation: 0 errors, 9 warnings (all pre-existing flagged
+publication sources).
+
+Cumulative impact: 11 of 11 queued Q genera populated. Letter Q
+was unusually clean — no sentinels, no non-primary, no insertion
+failures, and minimal hand-cleanup. Likely because most Q genera
+are recent named-after-Chinese-localities sauropod descriptions
+with high-quality modern primary publications.
+
 ### Letter P — 2026-05-03
 
 Sixteenth letter, on Haiku 4.5. 94 genera total; 70 queued, 24 skipped
