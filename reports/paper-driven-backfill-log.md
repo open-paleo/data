@@ -14,6 +14,22 @@ in `paper-driven-backfill.md`.
 
 ## Entries
 
+### Letter X — 2026-05-03
+
+- 20 genera scanned, 16 queued, 4 no_corpus_markdown skips.
+- Single batch of 16 dispatched (Haiku 4.5).
+- 15 applied, 1 sentinel (Xixiasaurus/lü2010 — 10-line stub
+  markdown, flagged in corpus-paper-report).
+- 0 insertion failures, 0 hand edits.
+- 5 specimen-ID strips before apply.
+- Spellcheck-before-apply: 2 JSON normalizations
+  (`latero-medially` → `lateromedially` in Xenotarsosaurus;
+  `Three-digited` → `Tridactyl` in Xuanhanosaurus). 5 unknown words
+  were legitimate terms (allometric, ectocondylar,
+  infraparapophyseal, interdigitating, sacrocostal).
+- Vocab additions: 5. paleo-vocab 1144→1149; taxonomy 6455→6460.
+- Validation: 0 errors, 9 pre-existing warnings.
+
 ### Letter W — 2026-05-03
 
 - 14 genera scanned, 13 queued, 1 no_corpus_markdown skip.
