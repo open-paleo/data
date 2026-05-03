@@ -14,6 +14,23 @@ in `paper-driven-backfill.md`.
 
 ## Entries
 
+### Letter Y — 2026-05-03
+
+- 27 genera scanned, 24 queued, 3 no_corpus_markdown skips.
+- 2 batches of 12 dispatched (Haiku 4.5).
+- 23 applied, 1 wrong-`described_in` skip (Yandusaurus — sereno1986
+  is a phylogenetic review, not the original He 1979 description;
+  logged in section 2 of corpus-paper-report).
+- 0 insertion failures, 0 hand edits.
+- 3 specimen-ID strips before apply.
+- Spellcheck-before-apply: 1 JSON normalization
+  (`ilio-sacral` → `iliosacral` in Yanbeilong). 8 unknown words were
+  legitimate (hemimandible, maniraptorans, postquadratic,
+  Subelliptical, Subtemporal, supraglenoidal, ventroscapular,
+  iliosacral).
+- Vocab additions: 8. paleo-vocab 1149→1157; taxonomy 6460→6468.
+- Validation: 0 errors, 9 pre-existing warnings.
+
 ### Letter X — 2026-05-03
 
 - 20 genera scanned, 16 queued, 4 no_corpus_markdown skips.

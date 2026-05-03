@@ -86,6 +86,7 @@ updated (correct `described_in`, add the right paper to
 | Dromiceiomimus | `russell1972` | Systematic revision — Russell 1972 erects *Dromiceiomimus* as a new genus by reassigning Parks 1926's *Struthiomimus brevitertius*. Edge case similar to Crichtonpelta: this *is* the formal genus erection. | russell1972 (this one). Auto-skip was conservative; re-run without non-primary filter to populate. |
 | Eucamerotus | `marsh1882` | *Eucamerotus* appears only as a bare name in a list of European sauropod genera. No description, no diagnosis. | The original description is Hulke 1872 (or later — verify). marsh1882 is not a description paper at all. |
 | Gigantspinosaurus | `maidment2006` | Taxonomic review — not the original description. Identifies only one confirmed autapomorphy. | Ouyang 1992 (original description). |
+| Yandusaurus | `sereno1986` | Phylogenetic review — Sereno 1986 mentions *Yandusaurus* as a terminal taxon, not the original description. | He 1979 (original description, *Yandusaurus hongheensis*). |
 
 ## 3. Real binomial / spelling discrepancies
 
