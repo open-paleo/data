@@ -49,6 +49,7 @@ up automatically once the markdown is restored.
 | Tornieria | `sternfeld1911` | T | Markdown only 31 lines — abstract/header-only; body of Sternfeld 1911 not captured. |
 | Vagaceratops | `farke2011` | V | Same Farke et al. 2011 markdown as Spinops — only 12 lines, abstract/stub-only. |
 | Vayuraptor | `samathi2019` | V | Same Samathi et al. 2019 markdown as Phuwiangvenator — abstract-only (14 lines). |
+| Wulagasaurus | `godefroit2008` | W | Markdown only 14 lines — abstract/stub-only. |
 
 ### Pending Resolution Papers
 

@@ -14,6 +14,21 @@ in `paper-driven-backfill.md`.
 
 ## Entries
 
+### Letter W — 2026-05-03
+
+- 14 genera scanned, 13 queued, 1 no_corpus_markdown skip.
+- Single batch of 13 dispatched (Haiku 4.5).
+- 12 applied, 1 sentinel (Wulagasaurus/godefroit2008 — 14-line stub
+  markdown, flagged in corpus-paper-report).
+- 0 insertion failures, 0 hand edits.
+- 6 specimen-ID strips before apply.
+- Spellcheck-before-apply: 1 typo fixed in JSON
+  (`spinoprezygopophyseal` → `spinoprezygapophyseal` in Wintonotitan).
+  6 unknown words were legitimate terms (anconal, anticus, brachialis,
+  Bürgermeister, Henfield, rostrolateral).
+- Vocab additions: 6. paleo-vocab 1138→1144; taxonomy 6449→6455.
+- Validation: 0 errors, 9 pre-existing warnings.
+
 ### Letter V — 2026-05-03
 
 - 23 genera scanned, 17 queued, 5 no_corpus_markdown skips,
