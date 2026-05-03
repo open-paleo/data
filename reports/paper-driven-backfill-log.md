@@ -14,6 +14,19 @@ in `paper-driven-backfill.md`.
 
 ## Entries
 
+### Letter U — 2026-05-03
+
+- 13 genera scanned, 12 queued, 1 no_corpus_markdown skip.
+- Single batch of 12 dispatched (Haiku 4.5).
+- 12 applied, 0 sentinels, 0 insertion failures, 0 hand edits.
+- 4 specimen-ID strips before apply.
+- Spellcheck-before-apply: only 4 unknown words surfaced and all
+  were legitimate anatomical/clade terms — no JSON typo fixes
+  needed. Smallest letter so far; cleanest run on record.
+- Vocab additions: 4 (cotyles, dromaeosaurs, laterodorsally,
+  midcervical). paleo-vocab 1128→1132; taxonomy 6439→6443.
+- Validation: 0 errors, 9 pre-existing warnings.
+
 ### Letter T — 2026-05-03
 
 - 84 genera scanned, 66 queued, 16 no_corpus_markdown skips,
