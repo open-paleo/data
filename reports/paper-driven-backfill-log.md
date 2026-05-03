@@ -14,6 +14,30 @@ in `paper-driven-backfill.md`.
 
 ## Entries
 
+### Letter Z — 2026-05-03 — _final letter_
+
+- 25 genera scanned, 20 queued, 4 no_corpus_markdown skips,
+  1 no_described_in skip.
+- 2 batches dispatched (Haiku 4.5).
+- 19 applied, 1 sentinel (Zapsalis/marsh1877c — agent reports
+  "target taxon not found in paper", wrong-paper-content pattern;
+  flagged in corpus-paper-report).
+- 0 insertion failures, 0 hand edits.
+- 5 specimen-ID strips before apply.
+- Spellcheck-before-apply: 0 typos, 11 unknown words all
+  legitimate (ankylosaurine, capitis, medioposteriorly,
+  postfibular, posttemporal, protoceratopsids, Sanpetru,
+  troodontid, Zhucheng, zygapophysial).
+- Vocab additions: 10. paleo-vocab 1157→1167; taxonomy 6468→6478.
+- Validation: 0 errors, 9 pre-existing warnings.
+
+### A–Z paper-driven backfill complete
+
+This entry closes out the alphabetical pass. The
+spellcheck-before-apply workflow change introduced at letter T
+held up across U–Z: zero per-YAML hand edits across 7 letters of
+extractions, with all typo cleanup happening at the JSON layer.
+
 ### Letter Y — 2026-05-03
 
 - 27 genera scanned, 24 queued, 3 no_corpus_markdown skips.

@@ -51,6 +51,7 @@ up automatically once the markdown is restored.
 | Vayuraptor | `samathi2019` | V | Same Samathi et al. 2019 markdown as Phuwiangvenator — abstract-only (14 lines). |
 | Wulagasaurus | `godefroit2008` | W | Markdown only 14 lines — abstract/stub-only. |
 | Xixiasaurus | `lü2010` | X | Markdown only 10 lines — abstract/stub-only; body of Lü et al. 2010 not captured. |
+| Zapsalis | `marsh1877c` | Z | Markdown 78 lines but agent reports "target taxon not found in paper". Wrong-paper-content pattern — `marsh1877c` may describe different taxa, or the *Zapsalis* portion didn't render. Re-investigate: Marsh 1877 has multiple papers and one of them is the *Zapsalis abradens* description. |
 
 ### Pending Resolution Papers
 
