@@ -24,22 +24,16 @@ up automatically once the markdown is restored.
 
 | Genus | Citation key | Letter | Reason |
 |---|---|---|---|
-| Anchisaurus | `marsh1885` | A | BHL OCR missed the actual page (Marsh 1885 sits on p. 169 of a long journal volume); only a garbled "Anchisauridae" fragment remains. |
-| Camptosaurus | `marsh1885` | C | Same BHL OCR issue as Anchisaurus — Marsh 1885 page not captured. |
 | Campylodoniscus | `carroll1988` | C | Textbook reference, not the original description. |
 | Heishansaurus | `bohlin1953` | H | Markdown is missing the article body (Part I, pages 9–59 of the original); only a summary mention survives. |
 | Itemirus | `kurzanov1976a` | I | The `kurzanov1976a.md` markdown describes *Alioramus remotus*, not Itemirus medullaris. Wrong-paper-content pattern. Kurzanov did publish on Itemirus (also 1976), so the citation key likely needs disambiguation. |
 | Neuquensaurus | `powell1992` | N | Same paper but wrong target taxon — `powell1992.md` is a 655-line monograph describing *Saltasaurus loricatus*; *Neuquensaurus australis* is referenced only in comparison. Powell 1992 erects *Neuquensaurus* in this paper as a new genus for "Titanosaurus" australis, but the bulk of the systematic content is on *Saltasaurus*. Edge case similar to Crichtonpelta — re-running with non-primary filter relaxed should populate. |
-| Oohkotokia | `penkalski2013` | O | Markdown contains only the abstract (12 lines); body of the paper not captured. Re-fetch from *Acta Palaeontologica Polonica* 59(3): 617-634. |
 
 ### Pending Resolution Papers
 
 The following have been fixed/updated by the user, but have not yet been processed
 
-| Genus | Citation key | User Notes |
-|---|---|---|
-| Liaoningvenator | `shen2017` | New paper, shen2017a, added to corpus |
-| Macrurosaurus | `seeley1876` | Paper has been added to corpus |
+_None at this time._
 
 ## 2. Wrong `described_in` citations
 

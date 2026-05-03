@@ -14,6 +14,60 @@ in `paper-driven-backfill.md`.
 
 ## Entries
 
+### Pending-resolution batch 2 — 2026-05-03
+
+Five-genus sweep over the Pending Resolution Papers list updated by
+the user after the letter-O run. All 5 markdown files now present
+in corpus.
+
+Setup:
+- 5 genera: Anchisaurus, Camptosaurus, Liaoningvenator,
+  Macrurosaurus, Oohkotokia.
+- 2 markdown-target overrides:
+  - Anchisaurus → `hitchcock1865.md` (23 lines — relaxed-threshold
+    note added; the original *Megadactylus* description, since
+    `marsh1885` is only the rename to *Anchisaurus*).
+  - Camptosaurus → `marsh1879.md` (the original *Camptonotus*
+    description; same paper as Brontosaurus's `marsh1879`, covers
+    multiple Jurassic reptiles).
+
+Dispatch: 5 Haiku-4.5 agents in a single batch. All returned valid
+JSON; 0 sentinels.
+
+Apply results: 5/5 applied. Liaoningvenator already had `material`
+populated, so only `diagnostic_features` was added there. Strip-
+specimen-ids ran before apply but caught 0 patterns (all residuals
+were comma-prefix or locality-tail patterns the script doesn't
+handle).
+
+Pre-extraction agent typo fix: Camptosaurus's diagnostic_features
+contained `opisthocoolous` (typo for `opisthocoelous`); fixed in
+the JSON before apply.
+
+Hand-cleanup applied (2 YAMLs):
+- Macrurosaurus: trimmed locality+institution tail
+  ("from phosphatite washings at Coldham Common and Barton,
+  Cambridge Upper Greensand, Woodwardian Museum") → kept just
+  "Series of approximately 40 associated caudal vertebrae".
+- Oohkotokia: stripped comma-prefix `MOR 433, ` and locality tail
+  ("from Upper Two Medicine Formation, Montana") → kept "Skull and
+  fragmentary skeleton".
+
+Post-apply spelling normalization (1 token):
+- Camptosaurus: `uncoossified` → `unfused` (1879 Marsh archaic
+  spelling; modern equivalent in the same context).
+
+Vocab additions (1): `unkeeled` (Oohkotokia diagnostic feature).
+paleo-vocab.txt 993→994; taxonomy.txt 6303→6305 (regenerated; the
++2 includes a derived form).
+
+Validation: 0 errors, 9 warnings (all pre-existing flagged
+publication sources).
+
+Cumulative impact: section-1 entries for Anchisaurus, Camptosaurus,
+and Oohkotokia removed; Pending Resolution Papers section now
+empty.
+
 ### Letter O — 2026-05-03
 
 Fifteenth letter, on Haiku 4.5. 31 genera total; 26 queued, 5 skipped
