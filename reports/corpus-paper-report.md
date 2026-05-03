@@ -44,6 +44,9 @@ up automatically once the markdown is restored.
 | Stegosaurides | `bohlin1953` | S | Bohlin 1953 again. Agent: "only summary reference found; descriptive material on p. 66 is very brief". Likely the *Stegosaurides* section is genuinely a one-paragraph mention in the original, not a corpus problem. |
 | Stenopelix | `meyer1857` | S | Markdown 102 lines but agent sentinel'd as boilerplate. Re-investigate — Meyer 1857 is the original *Stenopelix* description so substantive content should exist. |
 | Struthiosaurus | `bunzel1870` | S | Markdown only 26 lines — abstract/header-only; body of Bunzel 1870 not captured. |
+| Telmatosaurus | `nopcsa1903` | T | Markdown 70 lines but agent sentinel'd. Re-investigate — Nopcsa 1903 is the original *Telmatosaurus transsylvanicus* description so substantive content should exist. |
+| Tochisaurus | `kurzanov1991` | T | Markdown only 10 lines — abstract/stub-only; body of Kurzanov & Osmólska 1991 not captured. |
+| Tornieria | `sternfeld1911` | T | Markdown only 31 lines — abstract/header-only; body of Sternfeld 1911 not captured. |
 
 ### Pending Resolution Papers
 
@@ -101,6 +104,7 @@ The following papers are correct, but are not actionable. These do not need to b
 | Genus | Citation key | Letter | Reason |
 |---|---|---|---|
 | Microceratus | `mateus2008` | M | Right paper, but Microceratus was declared *nomen dubium* (Sereno 2000) — the citation is a nomenclatural note acknowledging the holotype lacks diagnostic features. No diagnosis to extract. (Not a corpus issue — flagging here so the genus isn't picked up by future re-runs.) |
+| Thecocoelurus | `huene1923` | T | Genus erected by Huene 1923 for material previously described by Seeley as *Thecospondylus daviesi*; review-quality paper with no novel diagnosis. Apply skipped (paper_quality=review). Real diagnostic content lives with Seeley's original *Thecospondylus* description. |
 
 ## 5. Holotype additions needing specimen_id
 
@@ -110,6 +114,7 @@ During paper-driven backfill, when a YAML lacks a `holotype:` block entirely but
 |---|---|---|---|
 | Pleurocoelus | P | letter P run | `specimen_type: syntype`, `status: unknown`. Marsh 1888 syntype series; modern literature places material at YPM. |
 | Pterospondylus | P | letter P run | `specimen_type: holotype`, `status: unknown`. Jaekel 1914 single dorsal vertebra; original German specimen, modern depository likely GPIT or Berlin MfN. |
+| Troodon | T | letter T run | `status: unknown`. Leidy 1856 described from a single tooth without a formal catalog number; tooth has historically been considered lost or destroyed and the original specimen has no surviving museum identifier. |
 
 ## Resolved false positives (kept as a checklist)
 

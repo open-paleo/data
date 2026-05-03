@@ -14,6 +14,49 @@ in `paper-driven-backfill.md`.
 
 ## Entries
 
+### Letter T — 2026-05-03
+
+- 84 genera scanned, 66 queued, 16 no_corpus_markdown skips,
+  2 no_described_in skips
+- 6 batches of ~12 dispatched (Haiku 4.5)
+- 62 applied, 3 sentinels (Telmatosaurus, Tochisaurus, Tornieria —
+  flagged in corpus-paper-report), 1 review-only skip (Thecocoelurus,
+  logged in section 4 of corpus-paper-report).
+- 19 specimen-ID strips before apply.
+- **Workflow improvement landed.** This batch ran spellcheck on the
+  extraction JSONs *before* `apply-paper-field-extractions.ts` and
+  fixed 12 typos at the JSON layer
+  (`Crescentric-shaped`→`Crescent-shaped`, `tarsometarsal`→
+  `tarsometatarsal`, `slitlike`→`slit-like`, `proötic`→`prootic`,
+  `pleuroceol`→`pleurocoel`, `spenial`→`splenial`,
+  `Doegie Creek`→`Dogie Creek`, `liplike`→`lip-like`,
+  `inversed-comma`→`inverted-comma`,
+  `semiarticulatedtail`→`semiarticulated tail`,
+  `spinopost-zygapophyseal`→`spinopostzygapophyseal`,
+  `foraminae`→`foramina`). The apply step then wrote clean text
+  directly into the YAMLs — no per-YAML hand edits needed for
+  vocabulary/typo cleanup this round (vs. 6 hand edits in letter S).
+- 1 insertion failure (Troodon — no `holotype:` block in YAML).
+  Added a new block by hand with `status: unknown` (Leidy 1856
+  single-tooth holotype has no surviving catalog number); logged in
+  corpus-paper-report section 5.
+- 2 hand-cleaned material strings: Transylvanosaurus
+  ("(LPB (FGGUB) R.2070)" parenthetical) and Thyreosaurus
+  ("HIIUC BN00" inline ID). `strip-specimen-ids` does not yet handle
+  these patterns.
+- 1 abbreviation expansion: "deep narrow SPRF" →
+  "deep narrow spinoprezygapophyseal fossa" (Tambatitanis).
+- Vocab additions: 32 anatomical/locality terms (dorsocaudal,
+  dorsosacrals, frontoparietals, hypapophysis, hyperconstricted,
+  interprezygapophyseal, malleoli, orthopodous, parabasisphenoid,
+  parasphenoidal, Peñarroya, Pisolitic, postocular, postpubic,
+  postzygocentrodiapophyseal, prespinous, prezygocentrodiapophyseal,
+  Puboischial, quadrately, reniform, Romà, rostroventrally, Sant,
+  Savannakhet, subangular, subrounded, supracondylar, tarsometatarsal,
+  Tastavins, tomial, ventrocaudal, Dogie). paleo-vocab 1096→1128;
+  taxonomy 6407→6439.
+- Validation: 0 errors, 9 warnings (all pre-existing).
+
 ### Letter S — 2026-05-03
 
 - 111 genera scanned, 91 queued, 17 no_corpus_markdown skips,
