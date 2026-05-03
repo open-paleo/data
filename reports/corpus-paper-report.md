@@ -28,6 +28,16 @@ up automatically once the markdown is restored.
 | Heishansaurus | `bohlin1953` | H | Markdown is missing the article body (Part I, pages 9–59 of the original); only a summary mention survives. |
 | Itemirus | `kurzanov1976a` | I | The `kurzanov1976a.md` markdown describes *Alioramus remotus*, not Itemirus medullaris. Wrong-paper-content pattern. Kurzanov did publish on Itemirus (also 1976), so the citation key likely needs disambiguation. |
 | Neuquensaurus | `powell1992` | N | Same paper but wrong target taxon — `powell1992.md` is a 655-line monograph describing *Saltasaurus loricatus*; *Neuquensaurus australis* is referenced only in comparison. Powell 1992 erects *Neuquensaurus* in this paper as a new genus for "Titanosaurus" australis, but the bulk of the systematic content is on *Saltasaurus*. Edge case similar to Crichtonpelta — re-running with non-primary filter relaxed should populate. |
+| Paranthodon | `carroll1988` | P | Textbook reference (same as Campylodoniscus), not the original description. Original is Owen 1876 (or later — Galton & Coombs 1981 redescription). |
+| Pararhabdodon | `casanovascladellas1992` | P | 273-line markdown but agent sentinel'd; possibly translation/non-English issue or wrong-content. Re-investigate corpus markdown. |
+| Pawpawsaurus | `lee1996` | P | Markdown only 28 lines — abstract-only; body of Lee 1996 not captured. |
+| Peishansaurus | `bohlin1953` | P | Same paper as Heishansaurus (and now Pawpawsaurus pattern) — Bohlin 1953 markdown is 1057 lines but the relevant section on *Peishansaurus philemys* may not be captured, or treated as wrong-target-taxon since Bohlin described many taxa. |
+| Phuwiangvenator | `samathi2019` | P | Markdown only 14 lines — abstract-only. |
+| Piatnitzkysaurus | `bonaparte1979a` | P | Same paper as Patagosaurus (which extracted successfully). 96 lines of markdown; agent sentinel'd Piatnitzkysaurus side. Likely the paper's Piatnitzkysaurus content is sparse compared to Patagosaurus. |
+| Plateosaurus | `sander1992` | P | 907-line paleohistology paper, not the original description. The original Plateosaurus description is Meyer 1837. Issue #1863 candidate. |
+| Prosaurolophus | `brown1916` | P | 175-line markdown but agent sentinel'd; investigate. Brown 1916 is the original description so content should be there. |
+| Protognathosaurus | `olshevsky1991` | P | Review-flagged — olshevsky1991 is the Dinosaur Genera List, not the primary description. Issue #1863 candidate. Original is Zhang 1988 (or whoever first described *Protognathosaurus*). |
+| Protohadros | `head1998` | P | Markdown only 64 lines; borderline sentinel. Re-investigate. |
 
 ### Pending Resolution Papers
 
@@ -85,6 +95,15 @@ The following papers are correct, but are not actionable. These do not need to b
 | Genus | Citation key | Letter | Reason |
 |---|---|---|---|
 | Microceratus | `mateus2008` | M | Right paper, but Microceratus was declared *nomen dubium* (Sereno 2000) — the citation is a nomenclatural note acknowledging the holotype lacks diagnostic features. No diagnosis to extract. (Not a corpus issue — flagging here so the genus isn't picked up by future re-runs.) |
+
+## 5. Holotype additions needing specimen_id
+
+During paper-driven backfill, when a YAML lacks a `holotype:` block entirely but the agent's extraction has usable `holotype_material`, a new `holotype:` block is added by hand with `specimen_type` and `material` (and `status: unknown` if no catalog number is determinable from the paper). These entries need a follow-up pass to populate `specimen_id` and `institution` from the literature.
+
+| Genus | Letter | Added during | Notes |
+|---|---|---|---|
+| Pleurocoelus | P | letter P run | `specimen_type: syntype`, `status: unknown`. Marsh 1888 syntype series; modern literature places material at YPM. |
+| Pterospondylus | P | letter P run | `specimen_type: holotype`, `status: unknown`. Jaekel 1914 single dorsal vertebra; original German specimen, modern depository likely GPIT or Berlin MfN. |
 
 ## Resolved false positives (kept as a checklist)
 

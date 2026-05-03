@@ -13,6 +13,17 @@ diet: herbivore
 locomotion: quadrupedal
 paleoenvironment:
   - coastal
+diagnostic_features:
+  - Teeth with compressed or flattened crowns, not spoon-shaped
+  - Dentary bone slender and rounded at symphysis, not massive and deep as in
+    Morosaurus
+  - Dorsal vertebrae elongate and strongly opisthocœlous, with very long deep
+    cavity on each side of centrum
+  - Sacral vertebrae solid with deep pit behind articular surface for rib process
+  - First caudal vertebra with nearly flat articular faces instead of deeply
+    concave
+  - Middle and distal caudals comparatively short with neural arch on front half
+    of centrum
 identifiers:
   - source: pbdb
     id: "54170"
@@ -39,6 +50,11 @@ species:
       coordinates:
         - 39.04
         - -76.823
+    holotype:
+      specimen_type: syntype
+      status: unknown
+      material: Portions of skull, vertebrae, and limb bones of several
+        individuals
     described: 1888
     authors: Marsh
     described_in: marsh1888

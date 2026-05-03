@@ -14,6 +14,91 @@ in `paper-driven-backfill.md`.
 
 ## Entries
 
+### Letter P — 2026-05-03
+
+Sixteenth letter, on Haiku 4.5. 94 genera total; 70 queued, 24 skipped
+(1 no_described_in: Parasaurolophus; 23 no_corpus_markdown).
+Largest letter run yet by count (70 vs. M's 65).
+
+Dispatch: 8 batches of 8-9 agents (size-balanced round-robin
+distribution). All 70 returned valid JSON.
+
+Apply results: 60 applied, 9 sentinels, 1 review-quality
+(Protognathosaurus — olshevsky1991 is the Dinosaur Genera List, not
+the primary description), 2 insertion failures (Pleurocoelus,
+Pterospondylus — neither YAML had a `holotype:` block; added by
+hand).
+
+Sentinel breakdown:
+- Empty/abstract-only: Pawpawsaurus (lee1996, 28 lines),
+  Phuwiangvenator (samathi2019, 14 lines), Paranthodon
+  (carroll1988, 50-line textbook entry).
+- Wrong-target-taxon / borderline: Plateosaurus (sander1992 is
+  paleohistology, not original Meyer 1837), Piatnitzkysaurus
+  (bonaparte1979a — same paper as Patagosaurus which extracted
+  successfully; agent sentinel'd Piatnitzkysaurus side),
+  Peishansaurus (bohlin1953, same paper as Heishansaurus),
+  Pararhabdodon (casanovascladellas1992, 273 lines but agent
+  sentinel'd — possibly translation issue), Prosaurolophus
+  (brown1916, 175 lines — investigate), Protohadros (head1998,
+  64-line borderline).
+
+All 9 sentinels + Protognathosaurus + Plateosaurus added to
+corpus-paper-report section 1 / section 4 entries.
+
+Hand-added holotype blocks (logged in corpus-paper-report section 5
+for follow-up specimen_id population):
+- Pleurocoelus: `specimen_type: syntype, status: unknown`
+- Pterospondylus: `specimen_type: holotype, status: unknown`
+
+Process improvement applied: ran strip-specimen-ids BEFORE apply.
+Strip caught 12 cleanups (substantive + capitalization). 5 YAMLs
+needed hand-cleanup for patterns the strip script doesn't handle:
+
+- Pandoravenator: trailing "cataloged as MPEF PV 1773-3 through
+  1773-28"
+- Pentaceratops: trailing locality "from Fruitland Beds, 9 miles
+  NE of Tsaya, New Mexico"
+- Priconodon: trailing locality "from Potomac formation, Prince
+  George Co., Maryland"
+- Proceratosaurus: trailing locality "from Great Oolite of
+  Minchinhampton, Gloucestershire"
+- Protarchaeopteryx: trailing institution+catalog "Chinese
+  Geological Museum specimen #GMV2125"
+
+Post-apply spelling normalization (3 tokens):
+- Protoavis: `infratetmporal` → `infratemporal`,
+  `posterorbital` → `postorbital`
+- Pedopenna: `postomedial` → `posteromedial`
+
+Vocab additions (37): anteroverted, Astragalo, calcaneal,
+caudoventrally, Cervico, circumorbital, costae,
+dermosupraoccipital, diapsid, dromaeosaur, encephalized,
+Epidendrosaurus, Epipodium, haema, hemapophyses, heterocoelous,
+infradiapophyseal, Megalosaurids, miniaturisation, nodosaurid,
+nonbifurcated, parieto, pectineal, Postcaniniform, Posterodistally,
+prokinetic, proximodorsally, Pseudopleurocoel, sella, semiovate,
+sphenethmoid, streptostylic, syndesmotic, titanosaurid,
+titanosauriforms, transversally, turcica.
+paleo-vocab.txt 994→1031; taxonomy.txt 6305→6342.
+
+Remaining spellcheck flags (15, JSON-only locality/institution/
+typos in JSONs that are no longer in YAMLs): anpetru, Ceratosaurus,
+Cinctorres, Colección, Dashanpu, Hateg, infratetmporal,
+Minchinhampton, Museográfica, posterorbital, postomedial, Sibis,
+Tsaya, plus borderlines.
+
+YAML data issue noted: Podokesaurus YAML uses `species: Coelophysis
+bauri` (synonymy decision); paper talbot1911 describes
+*Podokesaurus holyokensis*. Agent extraction proceeded against
+talbot1911 anyway with binomial_in_paper flagged.
+
+Validation: 0 errors, 9 warnings (all pre-existing flagged
+publication sources).
+
+Cumulative impact: 60 of 70 queued P genera populated. Largest
+single-letter run by both genera count and corpus volume (5973KB).
+
 ### Pending-resolution batch 2 — 2026-05-03
 
 Five-genus sweep over the Pending Resolution Papers list updated by
