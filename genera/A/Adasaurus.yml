@@ -13,6 +13,11 @@ diet: carnivore
 locomotion: bipedal
 paleoenvironment:
   - fluvial
+diagnostic_features:
+  - Ungual phalanges of reversed digit II highly reduced
+  - Metatarsal II considerably thinned
+  - Predatory claw ungual of reversed digit II reduced to size comparable to
+    supporting digits
 identifiers:
   - source: pbdb
     id: "53027"
@@ -46,6 +51,7 @@ species:
       specimen_id: [ IGM 100/20 ]
       specimen_type: holotype
       institution: GI
+      material: Incomplete skull and remains of the postcranial skeleton
     size:
       length_m:
         min: 2.39
@@ -53,9 +59,9 @@ species:
       weight_kg:
         min: 36
         max: 87
-    described: 1977
+    described: 1983
     authors: Barsbold
-    described_in: barsbold1977
+    described_in: barsbold1983
 references:
   - id: barsbold1977
     authors: Barsbold, R.
@@ -65,3 +71,11 @@ references:
     journal: Trudy - Sovmestnaya Sovetsko-Mongol'skaya Paleontologicheskaya Ekspeditsiya
     volume: "4"
     pages: 48-56
+  - id: barsbold1983
+    authors: Barsbold, R.
+    year: 1983
+    title: "Khishchnye dinozavry mela Mongolii [Carnivorous dinosaurs from the
+      Cretaceous of Mongolia]"
+    journal: Trudy - Sovmestnaya Sovetsko-Mongol'skaya Paleontologicheskaya Ekspeditsiya
+    volume: "19"
+    pages: "89"
