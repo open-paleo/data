@@ -618,6 +618,88 @@ for (const [filePath, doc] of allParsed)
     }
 }
 
+// 12c. Reference key disambiguation — when any "{base}{a-z}" suffix
+// variant exists across the dataset, the bare "{base}" key must not
+// also exist. Mixing them silently breaks lookups and makes it
+// ambiguous which paper "{base}" refers to. Co-existing keys must all
+// be disambiguated (e.g., `huene1927a`, `huene1927b`, `huene1927c`
+// with no bare `huene1927`).
+startCheck("Reference key disambiguation");
+
+/**
+ * Index of every reference id seen across all genera and clade files,
+ * keyed by id, with each entry recording every (file, id) occurrence
+ * for diagnostic output.
+ */
+const referenceIdOccurrences = new Map<string, Array<string>>();
+
+for (const [filePath, doc] of allParsed)
+{
+    if (!doc || !Array.isArray(doc.references))
+    {
+        continue;
+    }
+
+    for (const reference of doc.references)
+    {
+        if (!reference || !reference.id)
+        {
+            continue;
+        }
+
+        const occurrences = referenceIdOccurrences.get(reference.id) ?? [];
+
+        occurrences.push(filePath);
+        referenceIdOccurrences.set(reference.id, occurrences);
+    }
+}
+
+const allReferenceIds = new Set(referenceIdOccurrences.keys());
+
+/**
+ * Maps each bare reference id to the set of suffixed variants that
+ * coexist with it. Built up so we can emit one error per bare key
+ * rather than one per (bare, variant) pair.
+ */
+const conflictsByBaseKey = new Map<string, Set<string>>();
+
+for (const referenceId of allReferenceIds)
+{
+    const suffixMatch = /^(.*\d)([a-z])$/.exec(referenceId);
+
+    if (!suffixMatch)
+    {
+        continue;
+    }
+
+    const baseKey = suffixMatch[1];
+
+    if (!allReferenceIds.has(baseKey))
+    {
+        continue;
+    }
+
+    const variants = conflictsByBaseKey.get(baseKey) ?? new Set<string>();
+
+    variants.add(referenceId);
+    conflictsByBaseKey.set(baseKey, variants);
+}
+
+for (const [baseKey, variants] of conflictsByBaseKey)
+{
+    const variantList = Array.from(variants).sort().join(", ");
+    const bareOccurrences = referenceIdOccurrences.get(baseKey) ?? [];
+
+    for (const filePath of bareOccurrences)
+    {
+        checkError(
+            "Reference key disambiguation",
+            filePath,
+            `bare reference id '${baseKey}' coexists with suffixed variant(s) ${variantList}; rename '${baseKey}' to '${baseKey}a' (or another postfix) to disambiguate`,
+        );
+    }
+}
+
 // 12b. Flagged publication sources — references citing publishers or
 // journals on flagged-sources.yml emit a warning for reviewer sign-off.
 startCheck("Flagged publication sources");
