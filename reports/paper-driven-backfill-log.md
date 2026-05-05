@@ -14,6 +14,57 @@ in `paper-driven-backfill.md`.
 
 ## Entries
 
+### Pending-resolution sweep — 2026-05-05
+
+- Cross-letter run targeting the 22 entries in
+  `corpus-paper-report.md`'s "Pending Resolution Papers" subsection.
+  Letters touched: A, C, E, H, L, M, N, O, P, R, S.
+- Workflow change: cleared `material` and `diagnostic_features` on
+  Anoplosaurus, Astrodon, Syngonosaurus before run so they would
+  re-extract against the OCR-improved corpus markdown.
+- Built per-letter prompt JSONLs, then filtered to a 21-genus
+  subset (`*-pending.jsonl`) so non-target genera in those letter
+  queues stayed untouched. Altispinax handled separately with a
+  custom 2-paper prompt (huene1923 + dames1885).
+- Dispatched 21 Haiku 4.5 agents in parallel; 6 came back as
+  sentinels:
+    - Massospondylus, Scelidosaurus, Eucamerotus — too-strict
+      sentinel calls (single-page Owen catalog format, brief Owen
+      genus erection, multi-paper case). Re-dispatched with
+      custom prompts; all three extracted cleanly.
+    - Coahuilaceratops, Marmarospondylus, Oplosaurus — verified
+      genuine corpus problems: the markdown filed under
+      `loewen2010` is the 2007 Ceratopsian Symposium abstract
+      (not the 2010 book chapter); `owen1874` is Part III of
+      Owen's monograph series and covers *Omosaurus hastiger*
+      with no Marmarospondylus content; `gervais1852a` is a
+      bibliographic listing with no Oplosaurus section. Moved
+      all three from the Pending Resolution Papers list back to
+      §1 with new wrong-paper-content notes.
+- Eucamerotus and Altispinax were both genus-erection-papers
+  citing material from earlier papers (hulke1870 / dames1885
+  respectively). Custom prompts pointed the agent at both files
+  and asked it to synthesise.
+- 19 genera applied. 1 typo fix (`proccoelous` → `procoelous`,
+  Syngonosaurus) and 1 word swap (`curvable` → drop, Compsognathus,
+  archaic translation artifact) caught at spellcheck-before-apply
+  stage. 16 vocab additions: Dicraeosaurid, Senguerr, chondrine,
+  unossified, Kelheim, Oberndorfer, cancellated, Sehuen,
+  Macrospondylus, neurapophysial, subcylindric, truncature,
+  Megalosaur, Wimille, Opercular, phalangial.
+  paleo-vocab 1167 → 1183, taxonomy 6478 → 6496.
+- 0 validation errors. Closed out:
+    - 17 of 20 rows in "Pending Resolution Papers" (the entire
+      list emptied save the 3 corpus-problem entries which
+      moved to §1).
+    - Altispinax row in §2 "Wrong described_in citations" (now
+      successfully extracted via 2-paper combo, no longer an
+      open issue).
+    - Amargasaurus row in §3 "Real binomial / spelling
+      discrepancies" (the *cazaui*/*groeberi* artifact was
+      tied to the wrong-citation; salgado1991 extraction
+      confirms `binomial_in_paper: Amargasaurus cazaui`).
+
 ### Letter Z — 2026-05-03 — _final letter_
 
 - 25 genera scanned, 20 queued, 4 no_corpus_markdown skips,
