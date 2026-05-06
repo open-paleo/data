@@ -25,12 +25,9 @@ up automatically once the markdown is restored.
 | Genus | Citation key | Letter | Reason |
 |---|---|---|---|
 | Amurosaurus | `bolotsky1991` | A | The corpus markdown filed under `bolotsky1991` is actually a 2011 book chapter (Bolotsky, Godefroit, Bolotsky & Atuchin in the Hadrosaurs volume), not the 1991 original. The `described_in` citation in the YAML is correct — the corpus file just needs to be replaced with Bolotsky & Kurzanov 1991, Geologiya Tikhookeanskogo obramleniya. |
-| Antarctosaurus | `huene1929` | A | YAML `described_in` corrected from `huene1927b` to `huene1929` (Huene 1929, *Los saurisquios y ornitisquios del Cretáceo Argentino*, Anales del Museo de La Plata, series 3, vol. 3, pp. 1–196). Corpus does not yet contain `huene1929.md`; once added, re-run extraction. |
-| Campylodoniscus | `carroll1988` | C | Textbook reference, not the original description. |
 | Coahuilaceratops | `loewen2010` | C | Wrong-paper-content. The current `loewen2010.md` is the 2007 Ceratopsian Symposium abstract by Lund et al. (titled "Ceratopsian remains from the Late Cretaceous Cerro del Pueblo Formation, Coahuila, Mexico"); it identifies the chasmosaurine material but does not formally erect *Coahuilaceratops* or designate a holotype. The 2010 book chapter (Loewen et al. in *New Perspectives on Horned Dinosaurs*, Indiana University Press) is the formal description and needs to replace the corpus file. |
 | Conchoraptor | `barsbold1986` | C | YAML `described_in` corrected from `maryanska2002` (a 2002 phylogenetic analysis) to `barsbold1986` (Barsbold, *Raubdinosaurier Oviraptoren*, in *Herpetologische Untersuchungen in der Mongolischen Volksrepublik*, Akademia Nauk SSSR, pp. 210–223; in German). Corpus does not yet contain `barsbold1986.md`; once added, re-run extraction. |
 | Dromaeosauroides | `christiansen2003` | D | The corpus markdown filed under `christiansen2003` is a 497-line review chapter by Bonde summarising and defending the taxon, not the 2003 *Neues Jahrbuch für Geologie und Paläontologie* original description by Christiansen & Bonde. The `described_in` citation in the YAML is correct — corpus file just needs replacing with the Neues Jahrbuch paper. |
-| Dromiceiomimus | `russell1972` + `parks1926` | D | `described_in` (`russell1972`) is the genus-erection paper and is correct as-is. Parks 1926 (the original *Struthiomimus brevetertius* description, reassigned to *Dromiceiomimus* by Russell) has been added as a secondary reference. Corpus does not yet contain `parks1926.md`; once added, re-run extraction with **both** the `russell1972` and `parks1926` papers so the species-level material from Parks merges with the genus-level diagnosis from Russell. |
 | Gigantspinosaurus | `ouyang1992` | G | YAML `described_in` corrected from `maidment2006` (a 2006 review identifying only one autapomorphy) to `ouyang1992` (Ouyang, *Discovery of Gigantspinosaurus sichanensis and its scapular spine orientation*, in *Abstracts and Summaries for Youth Academic Symposium on New Discoveries and Ideas in Stratigraphic Paleontology*, pp. 47–49; in Chinese). Corpus does not yet contain `ouyang1992.md`; once added, re-run extraction. |
 | Laplatasaurus | `huene1929` | L | YAML `described_in` corrected from `huene1927b` ("Short review of the present knowledge of the Sauropoda", a different Huene 1927 paper that did not describe *Laplatasaurus*) to `huene1929` (Huene, *Los saurisquios y ornitisquios del Cretáceo Argentino*, Anales del Museo de La Plata, series 3, vol. 3, pp. 1–196; in Spanish — the first formal description). The 1927 naming paper (`huene1927c` — *Sichtung der Grundlagen der jetzigen Kenntnis der Sauropoden*, Eclogae Geologica Helveticae) has been added as a secondary reference; this is the paper in which the *Laplatasaurus* name was first introduced. `described:` year corrected from 1927 to 1929. Corpus does not yet contain `huene1929.md`; once added, re-run extraction. |
 | Heishansaurus | `bohlin1953` | H | Markdown is missing the article body (Part I, pages 9–59 of the original); only a summary mention survives. |
@@ -39,28 +36,20 @@ up automatically once the markdown is restored.
 | Neuquensaurus | `powell1992` | N | Same paper but wrong target taxon — `powell1992.md` is a 655-line monograph describing *Saltasaurus loricatus*; *Neuquensaurus australis* is referenced only in comparison. Powell 1992 erects *Neuquensaurus* in this paper as a new genus for "Titanosaurus" australis, but the bulk of the systematic content is on *Saltasaurus*. Edge case similar to Crichtonpelta — re-running with non-primary filter relaxed should populate. |
 | Oplosaurus | `gervais1852a` | O | Wrong-paper-content. The current `gervais1852a.md` is a 386-line bibliographic listing of Paul Gervais's works and a paper on French fossil reptiles; no *Oplosaurus* (or *Hoplosaurus*) section is present. The original genus description by Gervais 1852 (a tooth from the Wealden of Brixton, Isle of Wight) needs to replace the corpus file. |
 | Paranthodon | `carroll1988` | P | Textbook reference (same as Campylodoniscus), not the original description. Original is Owen 1876 (or later — Galton & Coombs 1981 redescription). |
-| Pararhabdodon | `casanovascladellas1992` | P | 273-line markdown but agent sentinel'd; possibly translation/non-English issue or wrong-content. Re-investigate corpus markdown. |
-| Pawpawsaurus | `lee1996` | P | Markdown only 28 lines — abstract-only; body of Lee 1996 not captured. |
+| Pararhabdodon | `casanovascladellas1993` | P | YAML `described_in` corrected from `casanovascladellas1992` (Casanovas-Cladellas, *Novedades en el registro fósil de dinosaurios del levante español*, Zubía 10:139–151 — a regional review that does not formally erect *Pararhabdodon*) to `casanovascladellas1993` (Casanovas-Cladellas, Santafé-Llopis & Isidro-Llorens, *Pararhabdodon isonensis n. gen. n. sp. (Dinosauria)…*, Paleontologia i Evolució 26-27:121–131; in Spanish — the formal genus and species erection). `described:` year corrected from 1992 to 1993. Corpus does not yet contain `casanovascladellas1993.md`; once added, re-run extraction. |
 | Peishansaurus | `bohlin1953` | P | Same paper as Heishansaurus (and now Pawpawsaurus pattern) — Bohlin 1953 markdown is 1057 lines but the relevant section on *Peishansaurus philemys* may not be captured, or treated as wrong-target-taxon since Bohlin described many taxa. |
-| Phuwiangvenator | `samathi2019` | P | Markdown only 14 lines — abstract-only. |
 | Piatnitzkysaurus | `bonaparte1979a` | P | Same paper as Patagosaurus (which extracted successfully). 96 lines of markdown; agent sentinel'd Piatnitzkysaurus side. Likely the paper's Piatnitzkysaurus content is sparse compared to Patagosaurus. |
-| Plateosaurus | `sander1992` | P | 907-line paleohistology paper, not the original description. The original Plateosaurus description is Meyer 1837. Issue #1863 candidate. |
 | Prosaurolophus | `brown1916` | P | 175-line markdown but agent sentinel'd; investigate. Brown 1916 is the original description so content should be there. |
 | Protognathosaurus | `olshevsky1991` | P | Review-flagged — olshevsky1991 is the Dinosaur Genera List, not the primary description. Issue #1863 candidate. Original is Zhang 1988 (or whoever first described *Protognathosaurus*). |
 | Protohadros | `head1998` | P | Markdown only 64 lines; borderline sentinel. Re-investigate. |
 | Ruehleia | `galton2001` | R | 721-line markdown but agent sentinel'd; possibly wrong-target-taxon (Galton 2001 may cover multiple sauropodomorphs). Re-investigate. |
 | Sauroplites | `bohlin1953` | S | Same Bohlin 1953 monograph as Heishansaurus / Peishansaurus. Agent reports "markdown missing dinosaur sections (pages 19–31 with detailed Sauroplites description)" — markdown is 1057 lines but the relevant chapter isn't captured. |
-| Spinops | `farke2011` | S | Markdown only 12 lines — abstract or stub-only; body of Farke et al. 2011 not captured. |
 | Stegosaurides | `bohlin1953` | S | Bohlin 1953 again. Agent: "only summary reference found; descriptive material on p. 66 is very brief". Likely the *Stegosaurides* section is genuinely a one-paragraph mention in the original, not a corpus problem. |
 | Stenopelix | `meyer1857` | S | Markdown 102 lines but agent sentinel'd as boilerplate. Re-investigate — Meyer 1857 is the original *Stenopelix* description so substantive content should exist. |
 | Struthiosaurus | `bunzel1870` | S | Markdown only 26 lines — abstract/header-only; body of Bunzel 1870 not captured. |
 | Telmatosaurus | `nopcsa1903` | T | Markdown 70 lines but agent sentinel'd. Re-investigate — Nopcsa 1903 is the original *Telmatosaurus transsylvanicus* description so substantive content should exist. |
 | Tochisaurus | `kurzanov1991` | T | Markdown only 10 lines — abstract/stub-only; body of Kurzanov & Osmólska 1991 not captured. |
 | Tornieria | `sternfeld1911` | T | Markdown only 31 lines — abstract/header-only; body of Sternfeld 1911 not captured. |
-| Vagaceratops | `farke2011` | V | Same Farke et al. 2011 markdown as Spinops — only 12 lines, abstract/stub-only. |
-| Vayuraptor | `samathi2019` | V | Same Samathi et al. 2019 markdown as Phuwiangvenator — abstract-only (14 lines). |
-| Wulagasaurus | `godefroit2008` | W | Markdown only 14 lines — abstract/stub-only. |
-| Xixiasaurus | `lü2010` | X | Markdown only 10 lines — abstract/stub-only; body of Lü et al. 2010 not captured. |
 | Yandusaurus | `he1979` | Y | YAML `described_in` corrected from `sereno1986` (a 1986 phylogenetic review using *Yandusaurus* only as a terminal taxon) to `he1979` (He, *A newly discovered ornithopod dinosaur Yandusaurus from Zigong, Sichuan*, in *Contributions to International Exchange of Geology. Part 2. Stratigraphy and paleontology*, Geological Publishing House, Beijing, pp. 116–123). Corpus does not yet contain `he1979.md`; once added, re-run extraction. |
 | Zapsalis | `marsh1877c` | Z | Markdown 78 lines but agent reports "target taxon not found in paper". Wrong-paper-content pattern — `marsh1877c` may describe different taxa, or the *Zapsalis* portion didn't render. Re-investigate: Marsh 1877 has multiple papers and one of them is the *Zapsalis abradens* description. |
 
@@ -70,6 +59,16 @@ The following have been fixed/updated by the user, but have not yet been process
 
 | Genus | Citation key | Resolution |
 |---|---|---|
+| Antarctosaurus | `huene1929` | Paper added to corpus |
+| Campylodoniscus | `huene1929`, `haubold1961` | The `huene1929` describes the genus as Campylodon; `haubold1961` (not in the corpus) only renames |
+| Phuwiangvenator, Vayuraptor | `samathi2019` | Paper updated in corpus |
+| Spinops | `farke2011` | Paper updated in corpus |
+| Vagaceratops | `sampson2010` | Paper updated in corpus |
+| Wulagasaurus | `godefroit2008` | Paper updated in corpus |
+| Xixiasaurus | `lü2010` | Paper updated in corpus |
+| Dromiceiomimus | `russell1972` + `parks1926` | Added `parsk1926` to the corpus |
+| Pawpawsaurus | `lee1996` | Paper updated in corpus |
+| Plateosaurus | `meyer1837` + `fraas1913` | Two species: engelhardti (`meyer1837`) and trollingen (`fraas1913`); Both are now in the corpus |
 
 ## 2. Wrong `described_in` citations
 
