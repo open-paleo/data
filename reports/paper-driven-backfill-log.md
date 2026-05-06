@@ -14,6 +14,29 @@ in `paper-driven-backfill.md`.
 
 ## Entries
 
+### Pending-resolution sweep #3 — 2026-05-06
+
+- Cross-letter run targeting the third batch of 8 entries in
+  `corpus-paper-report.md`'s "Pending Resolution Papers" subsection
+  (covering 9 genera since Patagosaurus and Piatnitzkysaurus share
+  the same paper pair). Letters touched: M, O, P, S, T.
+- Cleared Patagosaurus's pre-existing material and diagnostic_features
+  to enable re-extraction with the richer bonaparte1986b monograph.
+- 4 standard prompts (Prosaurolophus, Stenopelix, Struthiosaurus,
+  Marmarospondylus — the last with a custom note that the binomial
+  in owen1874 is *Bothriospondylus robustus*). 5 custom multi-paper
+  prompts: Oplosaurus (gervais1852a + wright1852), Patagosaurus
+  (bonaparte1979a + bonaparte1986b), Piatnitzkysaurus (same pair),
+  Telmatosaurus (nopcsa1900 + nopcsa1903), Tornieria (fraas1908 +
+  sternfeld1911).
+- 9 of 9 extracted cleanly — no sentinels this round. Apply ran
+  cleanly across all five letters.
+- 16 vocab additions: Bothriospondylus, cancelli, suffossus,
+  Brixton, Cetiosaurid, Megalosaurid, sublaminar, Bückeburg, clivus,
+  Gosau, basioccipitalia, cranii, Dentale, Hilli, Camptosaurs,
+  Makonde. paleo-vocab 1193 → 1209, taxonomy 6509 → 6527.
+- 0 validation errors. Pending Resolution Papers table emptied.
+
 ### Pending-resolution sweep #2 — 2026-05-05
 
 - Cross-letter run targeting the second batch of 11 entries in

@@ -50,14 +50,6 @@ The following have been fixed/updated by the user, but have not yet been process
 
 | Genus | Citation key | Resolution |
 |---|---|---|
-| Marmarospondylus | `owen1874` | Paper has been updated to include additional genera; NOTE: M. robustus was initially described as Bothriospondylus robustus. |
-| Oplosaurus | `gervais1852a` + `wright1852` | Wright 1852 (Annals and Magazine of Natural History 2:87–93) added as a secondary reference — the original tooth-discovery announcement that preceded Gervais's naming. Both papers are needed for re-extraction. |
-| Patagosaurus, Piatnitzkysaurus | `bonaparte1979a` + `bonaparte1986b` | `bonaparte1979a` is a brief 3-page Science note announcing the Cañadón Asfalto fauna; The full descriptive monograph (Bonaparte & Lange-Badré, *Les Dinosaures (Carnosaures, Allosaurides, Sauropodes, Cetiosaurides) du Jurassique moyen de Cerro Cóndor (Chubut, Argentine)*, Annales de paléontologie 72(3):247–289; in French) has been added as a secondary reference to both Piatnitzkysaurus and Patagosaurus (`bonaparte1986b`) |
-| Prosaurolophus | `brown1916` | Paper updated in corpus |
-| Stenopelix | `meyer1857` | Paper updated in corpus |
-| Struthiosaurus | `bunzel1870` | Short, but correct paper in corpus |
-| Telmatosaurus | `nopcsa1903` + `nopcsa1900` | Both papers are in the corpus; `nopcsa1903` is a short note on renaming from Limnosaurus to Telmatosaurus; `nopcsa1900` is the actual description. |
-| Tornieria | `sternfeld1911` + `fraas1908` | `described_in` is correctly `sternfeld1911` (Sternfeld 1911 reassigns the species from the preoccupied *Gigantosaurus* Fraas 1908 to *Tornieria*) — but Sternfeld is a 3-page nomenclature note, so material/diagnosis lives in the original Fraas 1908 description (Fraas, *Dinosaurierfunde in Ostafrika*, Jahreshefte des Vereins für Vaterländische Naturkunde in Württemberg 64:84–86; in German), now added as a secondary reference. |
 
 ## 2. Wrong `described_in` citations
 
