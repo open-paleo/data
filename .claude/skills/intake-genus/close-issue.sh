@@ -68,7 +68,39 @@ sed_inplace() {
 }
 
 if ! grep -q "| $issue_number | $genus |.*\[done" "$triage_path"; then
-    sed_inplace -E "s|^(\| ${issue_number} \| ${genus} \| [^|]+\|)([^|]+)\|\$|\1\2[done ${commit_sha}] \||" "$triage_path"
+    # Use python for portable in-place rewrite — BSD sed's extended-regex
+    # handling of escaped pipes (`\|`) differs from GNU sed and trips
+    # this kind of pipe-delimited table edit.
+    python3 - "$triage_path" "$issue_number" "$genus" "$commit_sha" <<'PY'
+import re, sys
+
+path, issue_number, genus, commit_sha = sys.argv[1:5]
+
+with open(path, encoding="utf-8") as fh:
+    lines = fh.readlines()
+
+prefix = f"| {issue_number} | {genus} | "
+done_marker = f"[done {commit_sha}]"
+changed = False
+
+for index, line in enumerate(lines):
+    if not line.startswith(prefix):
+        continue
+
+    # Append the done marker immediately before the trailing pipe.
+    stripped = line.rstrip("\n")
+    if not stripped.endswith("|"):
+        continue
+
+    body = stripped[:-1].rstrip()
+    lines[index] = f"{body} {done_marker} |\n"
+    changed = True
+    break
+
+if changed:
+    with open(path, "w", encoding="utf-8") as fh:
+        fh.writelines(lines)
+PY
 fi
 
 # 4. Close the issue.

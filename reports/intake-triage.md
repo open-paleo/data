@@ -25,7 +25,7 @@ None. Every Manual-flagged genus had a real reason to be flagged: it is either m
 |---|---|---|---|
 | 39 | Ahvaytum | Manual | 2025 Lovelace et al. early sauropodomorph from Popo Agie Fm, Wyoming. Saturnaliid; oldest Laurasian dinosaur. Single species A. bahndooiveche, Shoshoni-language name. |
 | 187 | Aviatyrannis | Disputed | 2003 Rauhut. Late Jurassic Portuguese coelurosaur from Alcobaça Fm; phylogeny disputed (basal tyrannosauroid vs deinocheirid ornithomimosaur per 2023 Hattori et al.) but taxon valid. Note phylogenetic uncertainty in classification. |
-| 193 | Bagaraatan | Disputed | 1996 Osmólska. Nemegt Fm theropod; 2024 Słowiak et al. reassessment identified the holotype as a juvenile tyrannosaurid (chimera material removed). Disputed flag stale. |
+| 193 | Bagaraatan | Disputed | 1996 Osmólska. Nemegt Fm theropod; 2024 Słowiak et al. reassessment identified the holotype as a juvenile tyrannosaurid (chimera material removed). Disputed flag stale. [done bead720] |
 | 267 | Brontotholus | Manual | 2025 Woodruff et al. pachycephalosaurid from Two Medicine and Oldman fms (Montana, Alberta). B. harmoni; sister of Foraminacephale. |
 | 277 | Caenagnathus | Disputed | Dinosaur Park Fm caenagnathid; 2014–2020 work (Anzu, Funston & Currie 2020) confirmed it as a valid genus distinct from Chirostenotes. Disputed flag stale. |
 | 367 | Coelurus | Manual | 1879 Marsh. Single valid species C. fragilis from Morrison Fm; complex Bone-Wars-era history settled by Ostrom 1980. Phylogenetic position fluctuates (basal coelurosaur / coelurid / tyrannosauroid / ornithomimosaur per Delcourt et al. 2025). Modern but moderately well-known. |
