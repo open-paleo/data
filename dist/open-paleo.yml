@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-05-05T20:20:02.603Z
+  built_at: 2026-05-06T00:20:46.072Z
   clade_count: 248
   genus_count: 1305
   license: CC-BY-4.0
@@ -25376,7 +25376,7 @@ genera:
           from_ma: 100.5
           to_ma: 89.8
         described: 1961
-        authors: Kuhn
+        authors: Haubold & Kuhn
         location:
           country: AR
           region: Chubut
@@ -25386,17 +25386,23 @@ genera:
             - MACN A-IOR63
           specimen_type: holotype
           institution: Museo Argentino de Ciencias Naturales ‘Bernardino Rivadavia’
-        described_in: carroll1988
+        described_in: haubold1961
     references:
-      - id: carroll1988
-        authors: Carroll, R. L.
-        year: 1988
-        title: Vertebrate Paleontology and Evolution
-        book: Vertebrate Paleontology and Evolution
-        pages: 1-698
-        publisher: W. H. Freeman and Company
-        doi: 10.2307/3514548
-        url: http://dx.doi.org/10.2307/3514548
+      - id: huene1929
+        authors: Huene, F. v.
+        year: 1929
+        title: Los saurisquios y ornitisquios del Cretáceo Argentino
+        journal: Anales del Museo de La Plata, series 3
+        volume: "3"
+        pages: 82-83
+        notes: In Spanish. Original description of the material as Campylodon ameghinoi; the genus name Campylodon was later found to be preoccupied and replaced with Campylodoniscus by Haubold & Kuhn 1961.
+      - id: haubold1961
+        authors: Haubold, H. & Kuhn, O.
+        year: 1961
+        title: Lebensbilder und Evolution fossiler Saurier, Amphibien und Reptilien
+        book: Lebensbilder und Evolution fossiler Saurier, Amphibien und Reptilien
+        publisher: A. Ziemsen Verlag, Wittenberg
+        notes: In German. Replacement name Campylodoniscus erected for the preoccupied Campylodon Huene 1929.
     taxonomy:
       - Life
       - Animalia
@@ -80393,17 +80399,18 @@ genera:
             - IPS SRA-1
           specimen_type: holotype
           institution: Institut Català de Paleontologia "Miquel Crusafont", Universitat Autònoma de Barcelona
-        described: 1992
-        authors: Casanovas Cladellas
-        described_in: casanovascladellas1992
+        described: 1993
+        authors: Casanovas-Cladellas, Santafé-Llopis & Isidro-Llorens
+        described_in: casanovascladellas1993
     references:
-      - id: casanovascladellas1992
-        authors: Casanovas Cladellas, M. L.
-        year: 1992
-        title: Novedades en el registro fósil de dinosaurios del levante español [Developments in the fossil record of dinosaurs from the Spanish Levant]
-        journal: Zubía
-        volume: "10"
-        pages: 139-151
+      - id: casanovascladellas1993
+        authors: Casanovas-Cladellas, M. L.; Santafé-Llopis, J. V.; Isidro-Llorens, A.
+        year: 1993
+        title: Pararhabdodon isonensis n. gen. n. sp. (Dinosauria). Estudio mofológico, radio-tomográfico y consideraciones biomecanicas [Pararhabdodon isonense n. gen. n. sp. (Dinosauria). Morphology, radio-tomographic study, and biomechanic considerations]
+        journal: Paleontologia i Evolució
+        volume: 26-27
+        pages: 121-131
+        notes: In Spanish.
     taxonomy:
       - Life
       - Animalia
@@ -83386,10 +83393,40 @@ genera:
         type: possible subjective
         reason: Possible junior subjective synonym of Plateosaurus; identification is tentative. Per Olshevsky's Dinosaur Genera List.
     species:
-      - name: Plateosaurus engelhardti
-        etymology: Named for Johann Friedrich Engelhardt, the physician who discovered the original fossil material near Heroldsberg, Germany in 1834.
+      - name: Plateosaurus trossingensis
+        etymology: Named for Trossingen, the town in Baden-Württemberg, Germany, where Plateosaurus material was recovered between 1910 and 1912.
         status: valid
         type_species: true
+        period:
+          name:
+            - Late Triassic
+          stage:
+            - Norian
+          from_ma: 227
+          to_ma: 205.7
+        location:
+          country: DE
+          locality: Trossingen
+          region: Baden-Württemberg
+          formation: Trossingen
+        size:
+          length_m:
+            min: 4.8
+            max: 10
+          weight_kg:
+            min: 600
+            max: 4000
+        holotype:
+          specimen_id:
+            - SMNS 132000
+          specimen_type: holotype
+          institution: Staatliches Museum für Naturkunde
+        described: 1913
+        authors: Fraas
+        described_in: fraas1913
+      - name: Plateosaurus engelhardti
+        etymology: Named for Johann Friedrich Engelhardt, the physician who discovered the original fossil material near Heroldsberg, Germany in 1834.
+        status: nomen dubium
         period:
           name:
             - Late Triassic
@@ -83407,35 +83444,38 @@ genera:
             - 11.133
         holotype:
           specimen_id:
-            - SMNS 13200
-          specimen_type: holotype
-          institution: Staatliches Museum für Naturkunde
-        size:
-          length_m:
-            min: 4.8
-            max: 10
-          weight_kg:
-            min: 600
-            max: 4000
+            - UEN 552
+          specimen_type: lectotype
+          institution: Geozentrum Nordbayern, Friedrich-Alexander-Universität Erlangen-Nürnberg
+          material: "Lectotype (UEN 552): incomplete three-vertebra sacrum. Paralectotypes (also UEN): three dorsal vertebrae (557a, 557b, 561, 562); two caudal vertebrae (550, 558); a rib fragment (563a-c); a haemapophysis (551); the distal half of a left femur (554, 555); a left femoral head (559); a left tibia (556). Lectotype and paralectotypes designated in Moser 2003. Original syntype series largely destroyed."
         described: 1837
         authors: Meyer
-        described_in: sander1992
+        described_in: meyer1837
         synonyms:
           - name: Dimodosaurus
             type: junior subjective
             reason: D. poligniensis was created for material now considered referable to Plateosaurus engelhardti.
     references:
-      - id: sander1992
-        authors: Sander, P. Martin
-        year: 1992
-        title: The norian Plateosaurus bonebeds of central Europe and their taphonomy
-        journal: Palaeogeography, Palaeoclimatology, Palaeoecology
-        volume: "93"
-        issue: 3-4
-        pages: 255-299
-        publisher: Elsevier BV
-        doi: 10.1016/0031-0182(92)90100-J
-        url: https://doi.org/10.1016/0031-0182(92)90100-J
+      - id: meyer1837
+        authors: Meyer, H. v.
+        year: 1837
+        title: Mitteilung an Prof. Bronn (Plateosaurus engelhardti) [message to Prof. Bronn (Plateosaurus engelhardti)]
+        journal: Neues Jahrbuch für Geologie und Paläontologie
+        volume: "1837"
+        pages: "316"
+        notes: In German. Original description of Plateosaurus engelhardti.
+      - id: fraas1913
+        authors: Fraas, Eberhard
+        year: 1913
+        title: Die neuesten Dinosaurierfunde in der schwäbischen Trias [The latest dinosaur finds in the Swabian Triassic]
+        journal: Naturwissenschaften
+        volume: "1"
+        issue: "45"
+        pages: 1097-1100
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1007/BF01493265
+        url: https://doi.org/10.1007/BF01493265
+        notes: In German. Original description of Plateosaurus trossingensis.
     taxonomy:
       - Life
       - Animalia
@@ -108414,25 +108454,25 @@ genera:
             min: 1200
             max: 1200
         described: 2010
-        authors: Sampson
-        described_in: farke2011
+        authors: Sampson et al.
+        described_in: sampson2010
         holotype:
           specimen_id:
             - CMN 41357
           specimen_type: holotype
           institution: Canadian Museum of Nature
     references:
-      - id: farke2011
-        authors: Farke, Andrew A.; Ryan, Michael J.; Barrett, Paul M.; Tanke, Darren H.; Braman, Dennis R.; Loewen, Mark A.; Graham, Mark R.
-        year: 2011
-        title: A New Centrosaurine from the Late Cretaceous of Alberta, Canada, and the Evolution of Parietal Ornamentation in Horned Dinosaurs
-        journal: Acta Palaeontologica Polonica
-        volume: "56"
-        issue: "4"
-        pages: 691-702
-        publisher: Polska Akademia Nauk Instytut Paleobiologii (Institute of Paleobiology, Polish Academy of Sciences)
-        doi: 10.4202/app.2010.0121
-        url: http://dx.doi.org/10.4202/app.2010.0121
+      - id: sampson2010
+        authors: Sampson, Scott D.; Loewen, Mark A.; Farke, Andrew A.; Roberts, Eric M.; Forster, Catherine A.; Smith, Joshua A.; Titus, Alan L.
+        year: 2010
+        title: New Horned Dinosaurs from Utah Provide Evidence for Intracontinental Dinosaur Endemism
+        journal: PLoS ONE
+        volume: "5"
+        issue: "9"
+        pages: e12292
+        publisher: Public Library of Science (PLoS)
+        doi: 10.1371/journal.pone.0012292
+        url: http://dx.doi.org/10.1371/journal.pone.0012292
     taxonomy:
       - Life
       - Animalia
