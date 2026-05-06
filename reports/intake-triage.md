@@ -6,7 +6,7 @@ Generated: 2026-05-06. 94 open Intake issues across all letters.
 
 | Bucket | Count | Action |
 |---|---|---|
-| A — Importable-now | 0 | Re-run batch-import after stripping sub-label |
+| A — Importable-now | 0 | (Bucket vacated; batch import has been retired) |
 | B — Modern + obscure | 31 | Full-fat extraction (new pipeline) |
 | C — Iconic legacy | 15 | Paper-driven, one PR per genus |
 | D — Disputed-but-keep | 42 | Stub entry with status: nomen dubium / disputed |

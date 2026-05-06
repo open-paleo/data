@@ -1,12 +1,11 @@
-// Per-genus data enrichment helpers shared between `batch-import.ts`
-// (the GitHub-Intake batch driver) and `intake-bootstrap.ts` (the
-// per-genus stub generator). Encapsulates all PBDB, Wikipedia, and
-// Wikidata fetching plus the schema-shape conversion to `GenusData`.
+// Per-genus data enrichment helpers used by `intake-bootstrap.ts`.
+// Encapsulates all PBDB, Wikipedia, and Wikidata fetching plus the
+// schema-shape conversion to `GenusData`.
 //
-// The functions in this module assume single-process use and rely on
-// module-level state for the schema, institution registry, and
-// parent-chain cache. Importing this module triggers reads of
-// `schema.yml` and `institutions.yaml`.
+// The functions in this module rely on module-level state for the
+// schema, institution registry, and parent-chain cache. Importing
+// this module triggers reads of `schema.yml` and
+// `institutions.yaml`.
 //
 // To produce a stub YAML for a single genus from external sources:
 //
@@ -44,8 +43,9 @@ const schema = parseYaml<Schema>(path.join(root, "schema.yml"));
 
 /**
  * Cache of taxon_no → ancestor chain (leaf-first), populated as
- * `walkParentChain` traverses the PBDB classification tree. Module
- * scope so that batch consumers and per-genus consumers share work.
+ * `walkParentChain` traverses the PBDB classification tree. Avoids
+ * redundant fetches when the same intermediate ancestor is reached
+ * from multiple starting taxa within one process lifetime.
  */
 const parentChainCache = new Map<number, Array<string>>();
 
@@ -131,12 +131,10 @@ type WikidataClaim = {
 type WikidataClaims = Record<string, Array<WikidataClaim>>;
 
 /**
- * Result of `enrichGenus()`. The `issueNumber` field is filled in by
- * the batch-import driver after the call when running in batch mode.
+ * Result of `enrichGenus()`.
  */
 export type EnrichedGenus = {
     name: string;
-    issueNumber?: number;
     pbdbId: number;
     parentChain: Array<string>;
     parentClade?: string;
