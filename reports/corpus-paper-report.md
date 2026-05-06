@@ -50,6 +50,7 @@ The following have been fixed/updated by the user, but have not yet been process
 
 | Genus | Citation key | Resolution |
 |---|---|---|
+| Dromiceiomimus | `russell1972` + `parks1926` | Needs a custom prompt; `russel1972` erects the new genus, but `parks1926` is the original description of *Struthiomimus brevitertius* (which `russel1972` reassigns) |
 
 ## 2. Wrong `described_in` citations
 
@@ -66,7 +67,6 @@ updated (correct `described_in`, add the right paper to
 | Genus | Current key | Problem | Likely correct paper |
 |---|---|---|---|
 | Crichtonpelta | `arbour2015` | Keep `arbour2015` as `described_in` — Arbour 2015 is the formal erection of the *Crichtonpelta benxiensis* combination (re-assigned from *Crichtonsaurus benxiensis*). Re-run extraction without the non-primary filter so the existing markdown is processed. Original *species* description is Lü et al. 2007 (*Crichtonsaurus*); not required for the genus YAML. |
-| Dromiceiomimus | `russell1972` | Systematic revision — Russell 1972 erects *Dromiceiomimus* as a new genus by reassigning Parks 1926's *Struthiomimus brevitertius*. Edge case similar to Crichtonpelta: this *is* the formal genus erection. | russell1972 (this one). Auto-skip was conservative; re-run without non-primary filter to populate. |
 
 ## 3. Real binomial / spelling discrepancies
 
@@ -87,7 +87,7 @@ The following papers are correct, but are not actionable. These do not need to b
 
 | Genus | Citation key | Letter | Reason |
 |---|---|---|---|
-| Microceratus | `mateus2008` | M | Right paper, but Microceratus was declared *nomen dubium* (Sereno 2000) — the citation is a nomenclatural note acknowledging the holotype lacks diagnostic features. No diagnosis to extract. (Not a corpus issue — flagging here so the genus isn't picked up by future re-runs.) |
+| Microceratus | `mateus2008` + `bohlin1953` | M | `mateus2008` is a 1-page nomenclatural note renaming *Microceratops* Bohlin 1953 (preoccupied by an ichneumon wasp) to *Microceratus*; carries no diagnosis. The original description is `bohlin1953` (Bohlin, *Fossil reptiles from Mongolia and Kansu*, Reports from the Scientific Expedition to the North-western Provinces of China under Leadership of Dr. Sven Hedin, vol. 37, 113 pp), now added as a secondary reference. Note: much of the original Bohlin material has since been reassigned to *Graciliceratops*; only the type specimen carries the *Microceratus* name. Re-run extraction with `bohlin1953` once the corpus contains the Microceratus-relevant section. |
 | Thecocoelurus | `huene1923` | T | Genus erected by Huene 1923 for material previously described by Seeley as *Thecospondylus daviesi*; review-quality paper with no novel diagnosis. Apply skipped (paper_quality=review). Real diagnostic content lives with Seeley's original *Thecospondylus* description. |
 
 ## 5. Holotype additions needing specimen_id
