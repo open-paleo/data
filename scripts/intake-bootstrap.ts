@@ -139,7 +139,14 @@ function readBibCitationKeys(): Set<string>
 function citationKeyFor(authors: string, year: string | number): string
 {
     const firstAuthor = (authors ?? "").split(";")[0].trim();
-    const surname = firstAuthor.split(",")[0].trim();
+
+    // Take only the first whitespace-delimited token before any
+    // comma — this collapses cases like "Lovelace et al." down to
+    // "Lovelace", and "Smith Jr." down to "Smith". Stops at a comma
+    // so "Osmólska, H." still yields "Osmólska".
+    const surnamePart = firstAuthor.split(",")[0].trim();
+    const surname = surnamePart.split(/\s+/)[0];
+
     const normalised = surname
         .normalize("NFD")
         .replace(/[̀-ͯ]/g, "")
