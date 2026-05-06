@@ -14,6 +14,36 @@ in `paper-driven-backfill.md`.
 
 ## Entries
 
+### Pending-resolution sweep #2 — 2026-05-05
+
+- Cross-letter run targeting the second batch of 11 entries in
+  `corpus-paper-report.md`'s "Pending Resolution Papers" subsection.
+  Letters touched: A, C, D, P, S, V, W, X.
+- Standard prompts dispatched for 10 genera (Antarctosaurus,
+  Pawpawsaurus, Phuwiangvenator, Plateosaurus, Protohadros, Spinops,
+  Vagaceratops, Vayuraptor, Wulagasaurus, Xixiasaurus). Two custom
+  multi-paper prompts: Campylodoniscus (huene1929 — describes the
+  material under the original *Campylodon ameghinoi* binomial; the
+  haubold1961 renaming paper is not in the corpus) and Dromiceiomimus
+  (russell1972 + parks1926 combined). One additional custom prompt
+  for Plateosaurus engelhardti (meyer1837), but the resulting JSON
+  was discarded — the apply script only writes to the type species
+  (now *P. trossingensis*) and the existing engelhardti material
+  (Moser 2003 lectotype) is more authoritative than Meyer's brief
+  1837 note.
+- Two genera came back as sentinels despite "Paper updated in corpus"
+  notes: Pawpawsaurus (`lee1996.md` still 28 lines of Taylor & Francis
+  publisher boilerplate) and Spinops (`farke2011.md` still 12 lines —
+  abstract + affiliations only). Re-fetch needed for both. Moved back
+  into §1 with corpus-still-abstract-only notes.
+- 10 applied (Antarctosaurus, Campylodoniscus, Dromiceiomimus,
+  Phuwiangvenator, Plateosaurus, Protohadros, Vagaceratops, Vayuraptor,
+  Wulagasaurus, Xixiasaurus). 0 hand edits — workflow held the
+  spellcheck-before-apply discipline. 6 vocab additions:
+  knollenmergels, Sellosaurus, Varanid, Lamphu, Nong, Yuliangze.
+  paleo-vocab 1184 → 1190, taxonomy 6497 → 6506.
+- 0 validation errors.
+
 ### Pending-resolution sweep — 2026-05-05
 
 - Cross-letter run targeting the 22 entries in
