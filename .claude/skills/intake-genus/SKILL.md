@@ -73,10 +73,12 @@ If the triage notes explicitly call out a supplementary paper, edit
 **Hard stop.** Tell the user:
 
 > Bootstrap complete. Fetch the listed papers into
-> `~/Desktop/open-paleo-papers/markdown/` (and update
-> `dist/references.bib` for new keys), tick `[x]` next to each in
-> `staging/intake/<Genus>/papers-needed.md`, then say "resume" so I
-> can build the extraction prompts.
+> `~/Desktop/open-paleo-papers/markdown/`, then for each fetched
+> paper, tick `[x]` in `staging/intake/<Genus>/papers-needed.md` and
+> paste a citation string on the same line after a `— ` separator.
+> Updating `dist/references.bib` is not required — the apply step
+> parses the citation directly from `papers-needed.md`. When done,
+> say "resume" so I can build the extraction prompts.
 
 Wait for the user to respond.
 
@@ -118,11 +120,55 @@ npm run intake-apply -- <Genus>
 ```
 
 This merges the extraction JSON files into `bootstrap.yml` and writes
-`staging/intake/<Genus>/final.yml`.
+`staging/intake/<Genus>/final.yml`. The script populates references
+from `dist/references.bib` when the citation key happens to be present
+already; otherwise it leaves a placeholder of the form:
 
-Show the user a diff of `bootstrap.yml` → `final.yml` (or just the
-content of `final.yml` if the diff is too large), and ask whether to
-proceed with promotion.
+```yaml
+- id: <key>
+  notes: 'TODO: fill in from papers-needed.md citation.'
+```
+
+### Step 4b — Fill in reference placeholders
+
+For every reference entry whose `notes` is the `TODO:` placeholder,
+read the corresponding citation string from
+`staging/intake/<Genus>/papers-needed.md` (the line beginning
+`- [x] **<key>** — ...`) and replace the placeholder with the parsed
+fields. Use the project's canonical reference key order:
+
+```yaml
+- id: <key>
+  authors: ...
+  year: ...
+  title: ...
+  journal: ...
+  volume: "..."
+  issue: "..."
+  pages: ...
+  publisher: ...
+  doi: ...
+  url: http://dx.doi.org/<doi>
+  notes: ...   # only when meaningful (e.g. supplementary papers)
+```
+
+For supplementary papers (when the agent's extraction set `is_describing:
+false`), the script will already have copied the agent's `notes` field
+into the reference's `notes`. Leave that text in place if it captures
+the paper's role; trim it under 200 chars (the validator's warning
+threshold) if it does not.
+
+Editorial polish at this stage:
+- Etymology values from the agent are sometimes terse. Polish them to
+  match the project's house style: source language, source word(s) in
+  quotes, gloss in parens, full sentence ending with a period (e.g.
+  "From Greek 'mikros' (small) and 'keras' (horn); meaning
+  'small-horned'.").
+- Species etymology should match the same pattern when applicable.
+- Authority abbreviations such as "Dr." can be dropped.
+
+Show the user the final content of `final.yml` (or a diff if the
+bootstrap is large), and ask whether to proceed with promotion.
 
 **Hard stop.** Wait for the user to respond.
 

@@ -1,7 +1,17 @@
 // Apply step of the per-genus intake pipeline. Merges the per-paper
 // extraction JSON files at `staging/intake/{Genus}/extractions/` into
-// `bootstrap.yml`, pulling reference metadata from `dist/references.bib`,
-// and writes `final.yml`.
+// `bootstrap.yml` and writes `final.yml`.
+//
+// Reference metadata is sourced in this priority order:
+//
+//   1. `dist/references.bib`, when the citation key is already
+//      present (common for keys reused across genera).
+//   2. A `TODO: fill in from papers-needed.md citation.` placeholder.
+//      The skill's apply step is then responsible for replacing the
+//      placeholder by reading the user-pasted citation string in
+//      `papers-needed.md`. Doing the citation parsing in the skill
+//      (rather than in this script) keeps the parsing flexible
+//      across the many idiosyncratic citation formats people paste.
 //
 // Merge rules (describing paper → genus YAML):
 //
@@ -15,7 +25,7 @@
 //   locomotion           → genus.locomotion (overwrites bootstrap)
 //   integument           → genus.appearance.integument
 //   size_*               → genus.species[0].size.{length_m, weight_kg}
-//   citation_key         → genus.references[] (pulled from bib),
+//   citation_key         → genus.references[] (with metadata),
 //                          genus.species[0].described_in
 //
 // Supplementary papers append to `diagnostic_features`, `synonyms`,
@@ -177,10 +187,11 @@ function readBibReferences(): Map<string, ReferenceEntry>
 }
 
 /**
- * Builds a reference entry for a citation key. Looks up bib metadata
- * first; falls back to a minimal stub when the key is not in the bib
- * yet (the user must have added it manually as part of corpus work
- * but skipped the bib regeneration step).
+ * Builds a reference entry for a citation key. Falls back to a
+ * placeholder when the key is not in `dist/references.bib` — the
+ * skill's apply step is responsible for filling those placeholders
+ * in by reading the citation text the user pasted into
+ * `papers-needed.md`.
  *
  * @param key - Citation key.
  * @param bibIndex - Map of citation key → metadata parsed from bib.
@@ -200,8 +211,99 @@ function buildReferenceEntry(
 
     return {
         id: key,
-        notes: "Reference metadata not yet in dist/references.bib — fill in manually.",
+        notes: "TODO: fill in from papers-needed.md citation.",
     };
+}
+
+/**
+ * Returns a new GenusData object with top-level keys arranged in the
+ * project's canonical order. Keys not in the canonical list are
+ * appended afterward. Species blocks are also reordered field-wise.
+ *
+ * @param genus - Source genus data.
+ * @returns Genus data with stable, human-readable key order.
+ */
+function reorderGenus(genus: GenusData): GenusData
+{
+    const topLevelOrder = [
+        "genus",
+        "parent",
+        "etymology",
+        "pronunciation",
+        "description",
+        "diet",
+        "locomotion",
+        "paleoenvironment",
+        "diagnostic_features",
+        "appearance",
+        "identifiers",
+        "synonyms",
+        "species",
+        "references",
+    ];
+
+    const speciesOrder = [
+        "name",
+        "etymology",
+        "status",
+        "type_species",
+        "period",
+        "location",
+        "holotype",
+        "size",
+        "described",
+        "authors",
+        "described_in",
+    ];
+
+    const ordered: Record<string, unknown> = {};
+    const source = genus as Record<string, unknown>;
+
+    for (const key of topLevelOrder)
+    {
+        if (key in source && source[key] !== undefined)
+        {
+            ordered[key] = source[key];
+        }
+    }
+
+    for (const key of Object.keys(source))
+    {
+        if (!(key in ordered))
+        {
+            ordered[key] = source[key];
+        }
+    }
+
+    if (Array.isArray(ordered.species))
+    {
+        ordered.species = (ordered.species as Array<Record<string, unknown>>).map(
+            (species) =>
+            {
+                const orderedSpecies: Record<string, unknown> = {};
+
+                for (const key of speciesOrder)
+                {
+                    if (key in species && species[key] !== undefined)
+                    {
+                        orderedSpecies[key] = species[key];
+                    }
+                }
+
+                for (const key of Object.keys(species))
+                {
+                    if (!(key in orderedSpecies))
+                    {
+                        orderedSpecies[key] = species[key];
+                    }
+                }
+
+                return orderedSpecies;
+            },
+        );
+    }
+
+    return ordered as GenusData;
 }
 
 /**
@@ -377,6 +479,18 @@ function applyExtraction(
     if (!alreadyReferenced)
     {
         const referenceEntry = buildReferenceEntry(extraction.citation_key, bibIndex);
+
+        // For supplementary papers, surface the agent's `notes`
+        // field on the reference entry so the genus YAML records
+        // the paper's role (e.g. "Reassessment that disentangled
+        // the chimeric holotype..."). Describing-paper notes are
+        // typically about the taxon itself rather than the paper's
+        // role, so we leave them off the reference.
+        if (!extraction.is_describing && extraction.notes)
+        {
+            referenceEntry.notes = extraction.notes;
+        }
+
         genus.references = [...referenceList, referenceEntry];
     }
 
@@ -476,7 +590,11 @@ function main(): void
     }
 
     const finalPath = path.join(targetDir, "final.yml");
-    fs.writeFileSync(finalPath, stringifyYaml(bootstrap, { lineWidth: 80 }), "utf8");
+    fs.writeFileSync(
+        finalPath,
+        stringifyYaml(reorderGenus(bootstrap), { lineWidth: 80 }),
+        "utf8",
+    );
 
     process.stdout.write(`\nWrote ${finalPath}\n`);
 

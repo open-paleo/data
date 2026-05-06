@@ -178,8 +178,19 @@ function buildPapersNeededBody(
 
     lines.push(`# ${genus} — Papers Needed`);
     lines.push("");
-    lines.push("Fetch each paper below into `~/Desktop/open-paleo-papers/`,");
-    lines.push("then run `npm run intake-resume -- " + genus + "`.");
+    lines.push("For each paper:");
+    lines.push("");
+    lines.push("1. Fetch the paper markdown into `~/Desktop/open-paleo-papers/markdown/{citation_key}.md`.");
+    lines.push("2. Tick the checkbox `- [x]` and paste a citation string");
+    lines.push("   on the same line, after a `— ` separator. Common formats");
+    lines.push("   work — the parser is permissive but does best with a");
+    lines.push("   parenthesised year, a quoted title, and a DOI when available.");
+    lines.push("   Example:");
+    lines.push("   `- [x] **smith2024** — Smith, J. (2024). \"Title here\". Journal Name 12 (3): 100-110. doi:10.xxxx/yyyy`");
+    lines.push("3. Run `npm run intake-resume -- " + genus + "`.");
+    lines.push("");
+    lines.push("(Updating `dist/references.bib` is NOT required — apply will");
+    lines.push("parse the citation directly from this file.)");
     lines.push("");
     lines.push("## Describing paper (REQUIRED)");
     lines.push("");
