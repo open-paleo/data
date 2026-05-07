@@ -1,0 +1,72 @@
+genus: Ferenceratops
+parent: Ceratopsia
+etymology: From Hungarian 'Ferenc' (Francis), the birth name of palaeontologist
+  Franz Nopcsa von Felső-Szilvás (1877-1933), who first reported dinosaur
+  remains from the Haţeg Basin, and Greek 'keras/keratos' (horn) and 'ops'
+  (face).
+description: Ferenceratops is an extinct genus of basal ceratopsian dinosaur
+  from the Maastrichtian Sînpetru and Densuș-Ciula Formations of the Haţeg
+  Basin, western Romania. The single species, Ferenceratops shqiperorum, was
+  originally described by Weishampel et al. (2003) as a second species of the
+  rhabdodontid ornithopod Zalmoxes; Maidment et al. (2026) reanalysed the
+  holotype postcrania and recovered it as a ceratopsian, erecting a new genus
+  and arguing that 'Zalmoxes' shqiperorum belongs to a previously unrecognised
+  European ceratopsian lineage that also includes Ajkaceratops from Hungary.
+diet: herbivore
+diagnostic_features:
+  - Scapula with a narrow, strap-like scapular blade bearing a distal expansion.
+  - Well-developed, upwardly concave acromial process of the scapula.
+  - Coracoid with an extremely elongate and slender sternal process that
+    projects well below the ventral margin of the glenoid.
+  - Gently curved ischium that lacks an obturator process.
+identifiers:
+  - source: pbdb
+    id: "517609"
+  - source: wikidata
+    id: Q137722535
+species:
+  - name: Ferenceratops shqiperorum
+    status: valid
+    type_species: true
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Maastrichtian
+      from_ma: 72.1
+      to_ma: 66
+    location:
+      country: RO
+      region: Hunedoara
+      formation: Sînpetru
+      locality: Sibișel Valley
+      coordinates:
+        - 45.62
+        - 22.94
+    holotype:
+      specimen_id:
+        - NHMUK PV R 4900
+      specimen_type: holotype
+      institution: BMNH
+      material: Partial right dentary, partial dorsal vertebra, left scapula,
+        partial left coracoid, ilium fragment, right ischium, left distal
+        ischium, and left femur.
+    described: 2026
+    authors: Maidment et al.
+    described_in: maidment2026
+references:
+  - id: maidment2026
+    authors: Maidment, Susannah C. R.; Butler, Richard J.; Brusatte, Stephen L.;
+      Meade, Luke E.; Augustin, Felix J.; Csiki-Sava, Zoltán; Ősi, Attila
+    year: 2026
+    title: A hidden diversity of ceratopsian dinosaurs in Late Cretaceous Europe
+    journal: Nature
+    volume: "651"
+    issue: "8105"
+    pages: 397-403
+    publisher: Springer Science and Business Media LLC
+    doi: 10.1038/s41586-025-09897-w
+    url: http://dx.doi.org/10.1038/s41586-025-09897-w
+    notes: Erects Ferenceratops for Zalmoxes shqiperorum Weishampel et al.
+      2003; reanalyses the holotype postcrania and recovers it as a
+      ceratopsian alongside Ajkaceratops in a new European clade.
