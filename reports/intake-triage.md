@@ -29,7 +29,7 @@ None. Every Manual-flagged genus had a real reason to be flagged: it is either m
 | 267 | Brontotholus | Manual | 2025 Woodruff et al. pachycephalosaurid from Two Medicine and Oldman fms (Montana, Alberta). B. harmoni; sister of Foraminacephale. [done 0fd6aa6] |
 | 277 | Caenagnathus | Disputed | Dinosaur Park Fm caenagnathid; 2014–2020 work (Anzu, Funston & Currie 2020) confirmed it as a valid genus distinct from Chirostenotes. Disputed flag stale. [done 62cb77b] |
 | 367 | Coelurus | Manual | 1879 Marsh. Single valid species C. fragilis from Morrison Fm; complex Bone-Wars-era history settled by Ostrom 1980. Phylogenetic position fluctuates (basal coelurosaur / coelurid / tyrannosauroid / ornithomimosaur per Delcourt et al. 2025). Modern but moderately well-known. [done ba7e1ef] |
-| 413 | Dasosaurus | Manual | 2026 Mayer et al. Itapecuru Fm somphospondylan from Brazil. D. tocantinensis; resembles Garumbatitan. |
+| 413 | Dasosaurus | Manual | 2026 Mayer et al. Itapecuru Fm somphospondylan from Brazil. D. tocantinensis; resembles Garumbatitan. [done c4c1a3f] |
 | 429 | Denversaurus | Disputed | 1988 Bakker. Hell Creek nodosaurid; Burns 2015 and recent phylogenetic work support it as a valid panoplosaurine sister to Panoplosaurus. Disputed flag stale. |
 | 459 | Dornraptor | Manual | 2024 Baron. Charmouth (Dorset) Early Jurassic averostran theropod; reidentification of fragmentary leg material previously attributed to Scelidosaurus. |
 | 490 | Dzharacursor | Manual | 2025 Averianov & Sues. Bissekty Fm ornithomimid (ex-Archaeornithomimus bissektensis); juvenile femur holotype + diverse referred material. |
