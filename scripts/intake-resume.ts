@@ -189,7 +189,7 @@ function buildIntakePromptString(entry: Omit<IntakePromptEntry, "prompt">): stri
         '  "holotype_specimen_type": "holotype|syntype|lectotype|neotype|null",',
         '  "holotype_material": "string|null — concise (≤200 chars) anatomical inventory from the paper, drop catalog numbers from the prose",',
         '  "diagnostic_features": ["3-6 standalone autapomorphy bullets ≤200 chars each, NO comparative-only bullets, NO clade-shared traits"],',
-        '  "paleoenvironment": ["schema enum values: fluvial, lacustrine, lagoonal, marine, deltaic, estuarine, paludal, eolian, arid, etc."],',
+        '  "paleoenvironment": ["zero or more values from this exact enum (others will fail validation): fluvial, lacustrine, coastal, deltaic, arid, forested, wetland, marine, polar. Map paludal/swamp/marsh → wetland; estuarine/lagoonal → coastal; eolian/desert → arid."],',
         '  "synonyms": [{"name": "string", "type": "junior subjective|junior objective|preoccupied|nomen nudum|nomen rejectum|informal", "reason": "string"}],',
         '  "locomotion": "bipedal|quadrupedal|facultative|null",',
         '  "integument": "feathered|armored|scaled|null",',
@@ -344,7 +344,7 @@ function main(): void
     }
 
     process.stdout.write(
-        "\nNext: dispatch one Haiku 4.5 agent per prompt entry, "
+        "\nNext: dispatch one Sonnet agent per prompt entry, "
         + "then run `npm run intake-apply -- " + genus + "`.\n",
     );
 }
