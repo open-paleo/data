@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-05-07T05:25:28.406Z
+  built_at: 2026-05-07T05:39:34.799Z
   clade_count: 248
-  genus_count: 1316
+  genus_count: 1317
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.05"
@@ -50689,6 +50689,86 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Euhelopodidae
+  Huadanosaurus:
+    genus: Huadanosaurus
+    parent: Coelurosauria
+    etymology: From Chinese 'huadan' (the birthday of a great person or institution), commemorating several Chinese scientific anniversaries, and Greek 'sauros' (lizard).
+    description: Huadanosaurus is an extinct genus of compsognathid-like coelurosaur from the Lower Cretaceous (Barremian) Dawangzhangzi bed of the Yixian Formation, Liaoning Province, China. The single species, Huadanosaurus sinensis, is known from an almost complete juvenile skeleton (IVPP V 14202) recovered from lacustrine deposits of the Jehol Biota; specimens of this species had previously been assigned to Sinosauropteryx prima before Qiu et al. (2025) erected the new genus. The holotype preserves stomach contents consisting of a eutriconodont mammal and a eutherian mammal, indicating active predation on small mammals.
+    diet: carnivore
+    locomotion: bipedal
+    paleoenvironment:
+      - lacustrine
+    diagnostic_features:
+      - Large oval concavity between the anterior margin of the antorbital fossa and the maxilla.
+      - Large lacrimal recess on the lacrimal.
+      - U-shaped bifurcation at the posteroventral margin of the dentary.
+      - Fan-shaped neural spine on the axis.
+      - Coracoid strongly elongated lateromedially with an extended posteroventral process.
+      - Obturator process exceeding 70% of the total length of the ischial shaft.
+    identifiers:
+      - source: pbdb
+        id: "519760"
+      - source: wikidata
+        id: Q132734216
+      - source: zoobank
+        id: 9AC095B9-CC01-43C7-8470-B29D14A72E9B
+    species:
+      - name: Huadanosaurus sinensis
+        etymology: From Latin 'sinensis' (Chinese), referring to the country of discovery.
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Barremian
+          from_ma: 125.77
+          to_ma: 125
+        location:
+          country: CN
+          region: Liaoning
+          formation: Yixian
+          member: Dawangzhangzi
+          locality: Dawangzhangzi, Lingyuan
+          coordinates:
+            - 41.160557
+            - 119.285553
+        holotype:
+          specimen_id:
+            - IVPP V 14202
+          specimen_type: holotype
+          institution: Institute of Vertebrate Paleontology and Paleoanthropology
+          material: Almost complete skeleton missing the feet and distal caudal vertebrae; juvenile based on unfused neurocentral sutures and scarred bone surfaces. Preserves mammalian stomach contents.
+        described: 2025
+        authors: Qiu et al.
+        described_in: qiu2025
+    references:
+      - id: qiu2025
+        authors: Qiu, Rui; Wang, Xiaolin; Jiang, Shunxing; Meng, Jin; Zhou, Zhonghe
+        year: 2025
+        title: Two new compsognathid-like theropods show diversified predation strategies in theropod dinosaurs
+        journal: National Science Review
+        volume: "12"
+        issue: "5"
+        publisher: Oxford University Press (OUP)
+        doi: 10.1093/nsr/nwaf068
+        url: http://dx.doi.org/10.1093/nsr/nwaf068
+        notes: Erects Huadanosaurus for a juvenile skeleton from the Dawangzhangzi bed previously assigned to Sinosauropteryx prima. Holotype preserves eutriconodont + eutherian gut contents.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Tetanurae
+      - Avetheropoda
+      - Coelurosauria
   Hualianceratops:
     genus: Hualianceratops
     parent: Chaoyangsauridae
