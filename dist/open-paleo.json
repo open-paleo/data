@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-07T02:53:31.633Z",
+    "built_at": "2026-05-07T03:13:02.656Z",
     "clade_count": 248,
-    "genus_count": 1311,
+    "genus_count": 1312,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
     "version": "2026.05"
@@ -41970,6 +41970,113 @@
         "Sauropodomorpha",
         "Sauropoda",
         "Macronaria"
+      ]
+    },
+    "Dasosaurus": {
+      "genus": "Dasosaurus",
+      "parent": "Somphospondyli",
+      "etymology": "From Greek 'dasos' (forest, copse) and 'sauros' (lizard); meaning 'forest lizard', referring to the densely-vegetated dig site within Brazil's Legal Amazonia.",
+      "description": "Dasosaurus is an extinct genus of somphospondylan sauropod dinosaur known from the Early Cretaceous (Aptian) Itapecuru Formation of Maranhão, Brazil. The single species, Dasosaurus tocantinensis, is recovered as sister to the Spanish Barremian taxon Garumbatitan within a non-titanosaur Somphospondyli clade, and is among the largest known Brazilian sauropods at an estimated 18–22 m in length.",
+      "diet": "herbivore",
+      "locomotion": "quadrupedal",
+      "paleoenvironment": [
+        "fluvial",
+        "deltaic",
+        "wetland"
+      ],
+      "diagnostic_features": [
+        "Anterior caudal neural spines expanded dorsolaterally ('stake-like' shaped), creating a quadrangular dorsal platform.",
+        "Anterior surface of the femur lacks a linea intermuscularis cranialis.",
+        "Pedal ungual phalanges I–II bear a distinct dorsolateral extensor tubercle extending ventrally along the lateroventral surface of the bone.",
+        "Dorsal-most of the three neural arch pedicel ridges on middle-posterior caudal vertebrae positioned at the level of the dorsal margin of the prezygapophysis, dorsally bounding a shallower, ellipsoid costovertebral concavity.",
+        "Femoral shaft more slender and more medially curved, with a lateral bulge corresponding to approximately 40% of the transverse minimal shaft width."
+      ],
+      "identifiers": [
+        {
+          "source": "wikidata",
+          "id": "Q138208958"
+        }
+      ],
+      "species": [
+        {
+          "name": "Dasosaurus tocantinensis",
+          "etymology": "Named for the Tocantins River, on whose eastern banks the holotype was collected in Maranhão state, Brazil.",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Aptian"
+            ],
+            "from_ma": 121.4,
+            "to_ma": 113
+          },
+          "location": {
+            "country": "BR",
+            "region": "Maranhão",
+            "formation": "Itapecuru",
+            "locality": "Davinopolis",
+            "coordinates": [
+              -5.557,
+              -47.431
+            ]
+          },
+          "holotype": {
+            "specimen_id": [
+              "CPHNAM VT 1600"
+            ],
+            "specimen_type": "holotype",
+            "institution": "Centro de Pesquisas de História Natural e Arqueologia do Maranhão",
+            "material": "Partial postcranial skeleton: caudal vertebrae and chevrons, left radius and ulna, partial right manus, distal left pubis, left ischium, right femur, proximal left tibia and fibula, distal right fibula, partial left pes, and trunk rib fragments."
+          },
+          "size": {
+            "length_m": {
+              "min": 18,
+              "max": 22
+            }
+          },
+          "described": 2026,
+          "authors": "Mayer et al.",
+          "described_in": "mayer2026"
+        }
+      ],
+      "references": [
+        {
+          "id": "mayer2026",
+          "authors": "Mayer, E. L.; Silva Junior, J. C. G.; Kerber, L.; Navarro, B. A.; Bandeira, K. L. N.; Cisneros, J. C.; Sousa, E. P.; Pereira, A. A.; Medeiros, M. A.; Lindoso, R. M.; Cavalcanti Neto, F. P.; Ghilardi, A. M.; Aureliano, T.; Godoy, P. L.; Ferreira, G. S.; Langer, M. C.",
+          "year": 2026,
+          "title": "A new titanosauriform with European affinities in the Early Cretaceous of Brazil: insights on Somphospondyli phylogeny, histology and biogeography",
+          "journal": "Journal of Systematic Palaeontology",
+          "volume": "24",
+          "pages": "2601579",
+          "publisher": "Taylor & Francis",
+          "doi": "10.1080/14772019.2025.2601579",
+          "url": "http://dx.doi.org/10.1080/14772019.2025.2601579"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda",
+        "Neosauropoda",
+        "Macronaria",
+        "Titanosauriformes",
+        "Somphospondyli"
       ]
     },
     "Daspletosaurus": {
