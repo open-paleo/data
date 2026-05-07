@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-07T02:12:13.437Z",
+    "built_at": "2026-05-07T02:53:31.633Z",
     "clade_count": 248,
-    "genus_count": 1310,
+    "genus_count": 1311,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
     "version": "2026.05"
@@ -38631,6 +38631,128 @@
         "Hadrosauridae",
         "Hadrosaurinae",
         "Kritosaurini"
+      ]
+    },
+    "Coelurus": {
+      "genus": "Coelurus",
+      "parent": "Coelurosauria",
+      "etymology": "From Greek 'koilos' (hollow) and 'oura' (tail); meaning 'hollow tail', referring to the extensively excavated, thin-walled vertebrae described in the holotype.",
+      "description": "Coelurus is a genus of small coelurosaurian theropod from the Late Jurassic Morrison Formation of Wyoming, United States. The single valid species, Coelurus fragilis, was described by Othniel Charles Marsh in 1879 and is known from a partial skeleton with characteristically hollow, thin-walled vertebrae. It was a lightly built bipedal carnivore with elongate hind limbs.",
+      "diet": "carnivore",
+      "locomotion": "bipedal",
+      "paleoenvironment": [
+        "fluvial"
+      ],
+      "diagnostic_features": [
+        "Dorsal and lumbar vertebrae centra so extensively excavated that walls are reduced to a thin shell (~1 mm thick).",
+        "Vertebral cavities apparently lack internal partitions, with smooth inner wall surfaces.",
+        "Trunk vertebrae elongate and biconcave with high neural arches united to centra by suture.",
+        "Sides of vertebrae somewhat excavated with small openings into the central cavity.",
+        "Cup at each end of centra unusually smooth and regular.",
+        "Zygapophyses positioned close together and oriented nearly vertical."
+      ],
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "38528"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q131228"
+        },
+        {
+          "source": "gbif",
+          "id": "4822575"
+        }
+      ],
+      "species": [
+        {
+          "name": "Coelurus fragilis",
+          "etymology": "From Latin 'fragilis' (fragile, slender), referring to the delicate, thin-walled hollow vertebrae of the holotype.",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Jurassic"
+            ],
+            "stage": [
+              "Kimmeridgian",
+              "Tithonian"
+            ],
+            "from_ma": 157.3,
+            "to_ma": 145
+          },
+          "location": {
+            "country": "US",
+            "region": "Wyoming",
+            "formation": "Morrison",
+            "locality": "Como Bluff",
+            "coordinates": [
+              41.6,
+              -106.2
+            ]
+          },
+          "holotype": {
+            "specimen_id": [
+              "YPM 2010"
+            ],
+            "specimen_type": "holotype",
+            "institution": "Yale Peabody Museum of Natural History",
+            "material": "Vertebrae including dorsal, lumbar, and anterior caudal vertebrae with extensively excavated centra reduced to thin shells."
+          },
+          "size": {
+            "length_m": {
+              "min": 1.8,
+              "max": 1.8
+            }
+          },
+          "described": 1879,
+          "authors": "Marsh",
+          "described_in": "marsh1879"
+        }
+      ],
+      "references": [
+        {
+          "id": "marsh1879",
+          "authors": "Marsh, O. C.",
+          "year": 1879,
+          "title": "Notice of new Jurassic reptiles",
+          "journal": "American Journal of Science",
+          "volume": "s3-18",
+          "issue": "108",
+          "pages": "501-505",
+          "publisher": "American Journal of Science (AJS)",
+          "doi": "10.2475/ajs.s3-18.108.501",
+          "url": "http://dx.doi.org/10.2475/ajs.s3-18.108.501"
+        },
+        {
+          "id": "delcourt2025",
+          "authors": "Delcourt, D.; Grillo, O. N.; Hendrickx, C.; Kellermann, M.; Langer, M. C.",
+          "year": 2025,
+          "title": "The coelurosaur theropods of the Romualdo formation, early Cretaceous (Aptian) of Brazil: Santanaraptor placidus meets Mirischia asymmetrica",
+          "journal": "The Anatomical Record",
+          "pages": "ar.70085",
+          "publisher": "Wiley",
+          "doi": "10.1002/ar.70085",
+          "url": "http://dx.doi.org/10.1002/ar.70085",
+          "notes": "Phylogenetic reanalysis recovering Coelurus fragilis as basal-most ornithomimosaur under equal-weight parsimony; authors note this does not settle the longstanding placement ambiguity."
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Tetanurae",
+        "Avetheropoda",
+        "Coelurosauria"
       ]
     },
     "Colepiocephale": {
