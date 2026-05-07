@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-05-07T00:21:58.607Z
+  built_at: 2026-05-07T00:48:29.449Z
   clade_count: 248
-  genus_count: 1307
+  genus_count: 1308
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.05"
@@ -18606,6 +18606,98 @@ genera:
       - Ceratopsidae
       - Centrosaurinae
       - Nasutoceratopsini
+  Aviatyrannis:
+    genus: Aviatyrannis
+    parent: Ornithomimosauria
+    etymology: From Latin 'avia' (grandmother) and 'tyrannis' (genitive of 'tyrannus', tyrant); meaning 'the tyrant's grandmother'.
+    description: Aviatyrannis is a genus of coelurosaurian theropod dinosaur, either a tyrannosauroid or an ornithomimosaurian, from the Oxfordian-Tithonian stages of the Late Jurassic found in Portugal.
+    diet: carnivore
+    locomotion: bipedal
+    paleoenvironment:
+      - wetland
+    diagnostic_features:
+      - Ilium low and elongate, with a well-developed, vertical, hollow ridge above the acetabulum
+      - Dorsal half of anterior margin of preacetabular blade shallowly concave
+      - Anterodorsally facing concavity set off from the dorsal rim of the preacetabular blade
+      - Narrow, sharply defined, rounded vertical ridge extending over almost the complete height of the ilium above the acetabulum
+      - Pubic peduncle of ilium transversely narrow, more than three times longer anteroposteriorly than wide at its middle
+    identifiers:
+      - source: pbdb
+        id: "68481"
+      - source: wikidata
+        id: Q110602
+      - source: gbif
+        id: "4822003"
+      - source: eol
+        id: "52571960"
+    species:
+      - name: Aviatyrannis jurassica
+        etymology: Refers to the Jurassic age of the holotype.
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Oxfordian
+            - Kimmeridgian
+            - Tithonian
+          from_ma: 161.5
+          to_ma: 145
+        location:
+          country: PT
+          region: Centro
+          formation: Alcobaça
+          coordinates:
+            - 39.700001
+            - -8.8
+        holotype:
+          specimen_id:
+            - IPFUB Gui Th 1
+          specimen_type: holotype
+          institution: Institut für Geologische Wissenschaften, Fachrichtung Paläontologie, Freie Universität Berlin
+          material: Almost complete right ilium
+        described: 2003
+        authors: Rauhut
+        described_in: rauhut2003
+    references:
+      - id: rauhut2003
+        authors: Rauhut, Oliver W. M.
+        year: 2003
+        title: A tyrannosauroid dinosaur from the Upper Jurassic of Portugal
+        journal: Palaeontology
+        volume: "46"
+        issue: "5"
+        pages: 903-910
+        publisher: Wiley
+        doi: 10.1111/1475-4983.00325
+        url: http://dx.doi.org/10.1111/1475-4983.00325
+      - id: hattori2023
+        authors: Hattori, Soki; Shibata, Masateru; Kawabe, Soichiro; Imai, Takuya; Nishi, Hiroshi; Azuma, Yoichi
+        year: 2023
+        title: New theropod dinosaur from the Lower Cretaceous of Japan provides critical implications for the early evolution of ornithomimosaurs
+        journal: Scientific Reports
+        volume: "13"
+        issue: "1"
+        doi: 10.1038/s41598-023-40804-3
+        url: http://dx.doi.org/10.1038/s41598-023-40804-3
+        notes: Phylogenetic re-evaluation arguing the holotypic ilium shares ornithomimosaur features; recovered alternately as earliest deinocheirid or as sister to Shenzhousaurus.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Tetanurae
+      - Avetheropoda
+      - Coelurosauria
+      - Ornithomimosauria
   Avimimus:
     genus: Avimimus
     parent: Oviraptorosauria
