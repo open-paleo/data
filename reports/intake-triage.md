@@ -23,7 +23,7 @@ None. Every Manual-flagged genus had a real reason to be flagged: it is either m
 
 | # | Genus | Label | Notes |
 |---|---|---|---|
-| 39 | Ahvaytum | Manual | 2025 Lovelace et al. early sauropodomorph from Popo Agie Fm, Wyoming. Saturnaliid; oldest Laurasian dinosaur. Single species A. bahndooiveche, Shoshoni-language name. |
+| 39 | Ahvaytum | Manual | 2025 Lovelace et al. early sauropodomorph from Popo Agie Fm, Wyoming. Saturnaliid; oldest Laurasian dinosaur. Single species A. bahndooiveche, Shoshoni-language name. [done 5841aff] |
 | 187 | Aviatyrannis | Disputed | 2003 Rauhut. Late Jurassic Portuguese coelurosaur from Alcobaça Fm; phylogeny disputed (basal tyrannosauroid vs deinocheirid ornithomimosaur per 2023 Hattori et al.) but taxon valid. Note phylogenetic uncertainty in classification. |
 | 193 | Bagaraatan | Disputed | 1996 Osmólska. Nemegt Fm theropod; 2024 Słowiak et al. reassessment identified the holotype as a juvenile tyrannosaurid (chimera material removed). Disputed flag stale. [done bead720] |
 | 267 | Brontotholus | Manual | 2025 Woodruff et al. pachycephalosaurid from Two Medicine and Oldman fms (Montana, Alberta). B. harmoni; sister of Foraminacephale. |
