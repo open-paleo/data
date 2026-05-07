@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-05-07T22:04:19.930Z
+  built_at: 2026-05-07T22:36:06.524Z
   clade_count: 248
-  genus_count: 1322
+  genus_count: 1323
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.05"
@@ -75772,6 +75772,84 @@ genera:
       - Neornithischia
       - Thescelosauridae
       - Thescelosaurinae
+  Newtonsaurus:
+    genus: Newtonsaurus
+    parent: Neotheropoda
+    etymology: From 'Newton' (honoring British paleontologist Edwin Tully Newton, 1840-1930, of the Geological Survey, who first described the holotype) and Greek 'sauros' (lizard).
+    description: Newtonsaurus is an extinct genus of large neotheropod dinosaur from the Rhaetian (Late Triassic) Cotham Member of the Lilstock Formation, Penarth Group, recovered at Stormy Down near Bridgend in South Wales. The single species, Newtonsaurus cambrensis, is known from a natural mould of a left dentary preserved as two blocks of sandstone (basionym 'Zanclodon' cambrensis Newton 1899); Evans, Howells, Wintle and Benton (2025) re-evaluated the holotype and erected the new genus, recovering the taxon tentatively as a coelophysoid with morphological affinity to Dilophosaurus, although a stem-averostran position cannot be excluded. The estimated body length of 5-7 m, derived from a ~28 cm preserved dentary representing roughly half the mandible, makes Newtonsaurus a candidate for the largest known Late Triassic theropod. The genus name had been used as a nomen nudum in private compilations since 1999 and is formally established by this paper.
+    diet: carnivore
+    locomotion: bipedal
+    paleoenvironment:
+      - coastal
+      - marine
+    diagnostic_features:
+      - Anterior tip of dentary modestly expanded but not bulbous, forming a low dorsal convexity with its apex at the third tooth position.
+      - 16-17 dentary alveoli present, with the third (second as preserved) alveolus distinctly enlarged and subcircular in outline.
+      - Lateral foramina along the labial groove anteroposteriorly elongated (elliptical, ~1.5 cm long) rather than circular.
+      - Single Meckelian foramen at the anterior terminus of the Meckelian groove, level with the third alveolus.
+      - Unfused, sub-pentagonal interdental plates separated from the medial dentary wall by a narrow paradental groove open for its entire length.
+      - Relative mandible depth (depth/length ratio ~17.8%) intermediate between that of shallow coelophysoid forms and deeper-jawed forms.
+    identifiers:
+      - source: wikidata
+        id: Q995536
+    species:
+      - name: Newtonsaurus cambrensis
+        etymology: From Latin 'cambrensis' (of Cambria, an old name for Wales), referring to the South Wales provenance of the holotype.
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Triassic
+          stage:
+            - Rhaetian
+          from_ma: 205.5
+          to_ma: 201.4
+        location:
+          country: GB
+          region: Wales
+          formation: Lilstock
+          member: Cotham
+          locality: Stormy Down, near Bridgend
+          coordinates:
+            - 51.51
+            - -3.65
+        size:
+          length_m:
+            min: 5
+            max: 7
+        holotype:
+          specimen_id:
+            - GSM 6532
+          specimen_type: holotype
+          institution: Natural History Museum
+          material: Natural mould of a left dentary preserved on two blocks of sandstone (medial and lateral surfaces), ~28 cm long, retaining 16-17 alveoli, 7 fully erupted teeth, interdental plates, the Meckelian fossa, and neurovascular foramina.
+        described: 2025
+        authors: Evans, Howells, Wintle & Benton
+        described_in: evans2025
+    references:
+      - id: evans2025
+        authors: Evans, Owain; Howells, Cindy; Wintle, Nathan; Benton, Michael J.
+        year: 2025
+        title: Re-assessment of a large archosaur dentary from the Late Triassic of South Wales, United Kingdom
+        journal: Proceedings of the Geologists' Association
+        article_number: "101142"
+        publisher: Elsevier
+        doi: 10.1016/j.pgeola.2025.101142
+        url: http://dx.doi.org/10.1016/j.pgeola.2025.101142
+        notes: Re-evaluates the holotype dentary GSM 6532 (basionym 'Zanclodon' cambrensis Newton 1899); erects Newtonsaurus as a new genus and formalizes a name that had been a nomen nudum since 1999.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
   Ngwevu:
     genus: Ngwevu
     parent: Massospondylidae
