@@ -239,23 +239,52 @@ git commit -m "<message>"
 Append the canonical co-author line per the project's commit-message
 template.
 
-## Step 7 — Push and close
+## Step 7 — Mark triage row, push, then close issue
 
-Per the project's commit-and-push memory rule: pull rebase autostash
-first, then push:
+The triage row update has to land in the SAME push as the genus
+commit. Otherwise the GitHub Actions Build workflow on the genus
+push races with a follow-up triage push and gets `[remote rejected]
+cannot lock ref` when trying to push its `dist/` build outputs (it
+self-corrects on the next push, but produces a noisy red `Build`
+run that looks like real breakage).
 
-```
-git pull --rebase --autostash
-git push origin main
-```
+Sequence:
 
-Capture the commit SHA from `git rev-parse HEAD`.
+1. Capture the genus commit SHA pre-push:
 
-Then close the GitHub issue and mark the triage row as done:
+   ```
+   commit_sha=$(git rev-parse --short HEAD)
+   ```
 
-```
-bash .claude/skills/intake-genus/close-issue.sh <Genus> <commit_sha>
-```
+2. Edit `reports/intake-triage.md` to append `[done <commit_sha>]`
+   to the row's notes column. The row pattern is
+   `| <issue> | <Genus> | <label> | ...notes... |`; add the
+   `[done ...]` marker just before the trailing pipe.
+
+3. Commit the triage update with a one-liner:
+
+   ```
+   git commit -m "Mark <Genus> triage row done in <commit_sha>"
+   ```
+
+   (Plus the canonical co-author line.)
+
+4. Pull rebase autostash, then push both commits in one push:
+
+   ```
+   git pull --rebase --autostash
+   git push origin main
+   ```
+
+5. Now run the GitHub-side close helper:
+
+   ```
+   bash .claude/skills/intake-genus/close-issue.sh <Genus> <commit_sha>
+   ```
+
+   This adds the completion comment, removes the `Intake: ...`
+   sub-label, and closes the issue. It does NOT touch any in-repo
+   files — that work was done in steps 2-3.
 
 ## Step 8 — Clean up staging
 

@@ -1,13 +1,17 @@
 #!/usr/bin/env bash
 # Close the GitHub Intake issue for a promoted genus.
 #
-# Steps:
-#   1. Find the issue number from reports/intake-triage.md
+# This helper does ONLY GitHub-side work:
+#
+#   1. Look up the issue number from reports/intake-triage.md
 #   2. Add a completion comment referencing the commit SHA
 #   3. Remove the "Intake: Disputed" / "Intake: Requires Manual
 #      Intervention" sub-label
-#   4. Mark the triage row as [done] <SHA>
-#   5. Close the issue with reason "completed"
+#   4. Close the issue with reason "completed"
+#
+# Marking the triage row [done <sha>] is NOT done here — that has to
+# happen BEFORE the genus push so it lands in the same push and avoids
+# racing the GitHub Actions Build workflow. See SKILL.md step 7.
 #
 # Usage: bash .claude/skills/intake-genus/close-issue.sh <Genus> <commit_sha>
 set -euo pipefail
@@ -41,11 +45,9 @@ echo "Genus:        $genus"
 echo "Issue:        #$issue_number"
 echo "Commit SHA:   $commit_sha"
 
-# 1. Add completion comment.
 gh issue comment "$issue_number" --body \
 "Closing — \`${genus}\` promoted in ${commit_sha} via the per-genus intake pipeline (bootstrap → paper extraction → apply)."
 
-# 2. Strip the Intake sub-label, if any.
 labels=$(gh issue view "$issue_number" --json labels --jq '.labels[].name')
 
 while IFS= read -r label; do
@@ -57,51 +59,8 @@ while IFS= read -r label; do
     esac
 done <<< "$labels"
 
-# 3. Mark the triage row as [done] <SHA>. Append after the label cell
-#    when not already marked.
-sed_inplace() {
-    if [[ "$(uname)" == "Darwin" ]]; then
-        sed -i "" "$@"
-    else
-        sed -i "$@"
-    fi
-}
-
-if ! grep -q "| $issue_number | $genus |.*\[done" "$triage_path"; then
-    # Use python for portable in-place rewrite — BSD sed's extended-regex
-    # handling of escaped pipes (`\|`) differs from GNU sed and trips
-    # this kind of pipe-delimited table edit.
-    python3 - "$triage_path" "$issue_number" "$genus" "$commit_sha" <<'PY'
-import re, sys
-
-path, issue_number, genus, commit_sha = sys.argv[1:5]
-
-with open(path, encoding="utf-8") as fh:
-    lines = fh.readlines()
-
-prefix = f"| {issue_number} | {genus} | "
-done_marker = f"[done {commit_sha}]"
-changed = False
-
-for index, line in enumerate(lines):
-    if not line.startswith(prefix):
-        continue
-
-    # Append the done marker immediately before the trailing pipe.
-    stripped = line.rstrip("\n")
-    if not stripped.endswith("|"):
-        continue
-
-    body = stripped[:-1].rstrip()
-    lines[index] = f"{body} {done_marker} |\n"
-    changed = True
-    break
-
-if changed:
-    with open(path, "w", encoding="utf-8") as fh:
-        fh.writelines(lines)
-PY
-fi
-
-# 4. Close the issue.
-gh issue close "$issue_number" --reason completed
+# `gh issue close` is a no-op when the issue is already closed; treat
+# that as success rather than an error so we don't trip set -e on the
+# subset of repos that auto-close issues on label removal.
+gh issue close "$issue_number" --reason completed 2>&1 || \
+    gh issue view "$issue_number" --json state --jq '.state' | grep -q CLOSED
