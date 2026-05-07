@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-05-07T03:36:00.363Z
+  built_at: 2026-05-07T03:51:55.339Z
   clade_count: 248
-  genus_count: 1312
+  genus_count: 1313
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.05"
@@ -35232,6 +35232,84 @@ genera:
       - Ornithischia
       - Neornithischia
       - Thescelosauridae
+  Dornraptor:
+    genus: Dornraptor
+    parent: Averostra
+    etymology: From Anglo-Saxon 'Dornwaraceasetr' (the area roughly equivalent to modern Dorset, England) and Latin 'raptor' (one who seizes); meaning 'Dorset robber'.
+    description: Dornraptor is an extinct genus of averostran theropod dinosaur from the Hettangian–Sinemurian of Charmouth, Dorset, England, alongside other Blue Lias theropods such as Sarcosaurus and Dracoraptor. The single species, Dornraptor normani, is known from a fragmentary right knee joint (distal femur and proximal tibia) originally described by Richard Owen as the armoured ornithischian Scelidosaurus and subsequently reclassified by Baron 2024 as an indeterminate averostran theropod.
+    diet: carnivore
+    locomotion: bipedal
+    paleoenvironment:
+      - coastal
+      - marine
+    diagnostic_features:
+      - Large proximodistally oriented scar extending along the medial side of the anterior face of the distal end of the femur.
+      - Anterior surface of the femur pierced by a foramen medial to the anterior intermuscular line (potential autapomorphy).
+      - Pronounced fibular crest on lateral side of tibia extending to the proximal end, terminating distally as a bulbous expansion (potential autapomorphy).
+      - Sharp proximodistally oriented crest on lateral margin of proximal tibia running parallel to the fibular crest but not joining it distally to form a forked crest.
+      - Antero-posteriorly elongate cnemial crest that reaches further proximally than either the medial or lateral condyles.
+      - Lateral condyle of the proximal tibia with a posterolateral margin forming an acute angle in medial view (potential autapomorphy).
+    identifiers:
+      - source: wikidata
+        id: Q988566
+      - source: zoobank
+        id: 3B28DA22-65E6-4D78-B572-299C01B87195
+    species:
+      - name: Dornraptor normani
+        etymology: Honours David B. Norman, the Cambridge palaeontologist whose work on UK Jurassic dinosaurs included extensive study of Scelidosaurus harrisonii — the genus the holotype was originally misattributed to.
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Jurassic
+          stage:
+            - Hettangian
+            - Sinemurian
+          from_ma: 201.3
+          to_ma: 192.9
+        location:
+          country: GB
+          region: Dorset
+          formation: Blue Lias
+          locality: Charmouth
+          coordinates:
+            - 50.73
+            - -2.9
+        holotype:
+          specimen_id:
+            - BMNH 39496
+          specimen_type: holotype
+          institution: Natural History Museum
+          material: Distal end of right femur and proximal third of right tibia, originally found in articulation with an associated right fibula (now lost).
+        described: 2024
+        authors: Baron
+        described_in: baron2024
+    references:
+      - id: baron2024
+        authors: Baron, M. G.
+        year: 2024
+        title: "A new name for old bones: A reassessment of Early Jurassic theropod remains from Dorset, England"
+        journal: Palaeontologia Electronica
+        volume: "27"
+        issue: "1"
+        pages: 1-12
+        publisher: Coquina Press
+        doi: 10.26879/1346
+        url: http://dx.doi.org/10.26879/1346
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
   Draconyx:
     genus: Draconyx
     parent: Styracosterna
