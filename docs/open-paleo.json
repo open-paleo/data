@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-07T20:00:41.116Z",
+    "built_at": "2026-05-07T20:18:12.894Z",
     "clade_count": 248,
-    "genus_count": 1318,
+    "genus_count": 1319,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
     "version": "2026.05"
@@ -88502,6 +88502,101 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauridae"
+      ]
+    },
+    "Maleriraptor": {
+      "genus": "Maleriraptor",
+      "parent": "Saurischia",
+      "etymology": "From the Upper Maleri Formation, where the holotype was collected, and Latin 'raptor' (thief, robber); meaning 'Maleri thief'.",
+      "description": "Maleriraptor is an extinct genus of early-diverging herrerasaurian saurischian dinosaur from the early Norian (Late Triassic) Upper Maleri Formation of the Pranhita-Godavari Valley, Telangana, south-central India. The single species, Maleriraptor kuttyi, is known from a partial pelvis and associated sacral and caudal vertebrae (ISIR 282), originally described by Novas et al. (2010) as indeterminate Dinosauriformes; Ezcurra et al. (2025) re-evaluated the material and recovered it as a herrerasaurian outside the South American Herrerasauridae, filling a stratigraphic gap between Carnian South American herrerasaurids and middle-Norian-to-Rhaetian North American herrerasaurs.",
+      "diet": "carnivore",
+      "locomotion": "bipedal",
+      "paleoenvironment": [
+        "fluvial"
+      ],
+      "diagnostic_features": [
+        "Centrum posterior to the second primordial sacral vertebra longer than each of the primordial sacral centra.",
+        "Ilium with a postacetabular process shorter than 0.6 times the length between the pubic and ischial peduncles.",
+        "Ilium lacking a brevis fossa.",
+        "Lateral rugosity of the iliac postacetabular process restricted to its posteriormost tip (autapomorphy).",
+        "Pubis with a ventrally directed shaft.",
+        "Pubis with a very poorly developed distal anteroposterior expansion."
+      ],
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "509337"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q134384590"
+        }
+      ],
+      "species": [
+        {
+          "name": "Maleriraptor kuttyi",
+          "etymology": "Honors T. S. Kutty, who discovered the holotype and co-authored its preliminary description.",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Triassic"
+            ],
+            "stage": [
+              "Norian"
+            ],
+            "from_ma": 227,
+            "to_ma": 218
+          },
+          "location": {
+            "country": "IN",
+            "region": "Telangana",
+            "formation": "Upper Maleri",
+            "locality": "Annaram, Pranhita-Godavari Valley",
+            "coordinates": [
+              19.183332,
+              79.533333
+            ]
+          },
+          "holotype": {
+            "specimen_id": [
+              "ISIR 282"
+            ],
+            "specimen_type": "holotype",
+            "institution": "Geology Museum, Indian Statistical Institute",
+            "material": "First primordial sacral vertebra with right rib and base of left rib, distalmost portion of right second sacral rib, caudosacral or first caudal vertebra, anterior caudal vertebra, right ilium, proximal and distal ends of right pubis, proximal end of left pubis."
+          },
+          "described": 2025,
+          "authors": "Ezcurra et al.",
+          "described_in": "ezcurra2025"
+        }
+      ],
+      "references": [
+        {
+          "id": "ezcurra2025",
+          "authors": "Ezcurra, Martín D.; Garcia, Maurício Silva; Novas, Fernando E.; Müller, Rodrigo Temp; Agnolín, Federico L.; Chatterjee, Sankar",
+          "year": 2025,
+          "title": "A new herrerasaurian dinosaur from the Upper Triassic Upper Maleri Formation of south-central India",
+          "journal": "Royal Society Open Science",
+          "volume": "12",
+          "issue": "5",
+          "publisher": "The Royal Society",
+          "doi": "10.1098/rsos.250081",
+          "url": "http://dx.doi.org/10.1098/rsos.250081",
+          "notes": "Re-evaluates ISIR 282, originally described by Novas et al. 2010 as indeterminate Dinosauriformes, and recovers it as an early-diverging herrerasaurian outside Herrerasauridae."
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia"
       ]
     },
     "Mamenchisaurus": {
