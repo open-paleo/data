@@ -39,7 +39,7 @@ None. Every Manual-flagged genus had a real reason to be flagged: it is either m
 | 801 | Jinchuanloong | Manual | 2025 Li et al. Xinhe Fm Middle Jurassic eusauropod; nearly complete skull articulated with anterior cervicals and tail. [done 8ca559e] |
 | 860 | Kryptohadros | Manual | 2026 Magyar et al. Densuș-Ciula Fm hadrosauroid; new clade Telmatosauridae alongside Telmatosaurus and Tethyshadros. [deferred magyar2026-unavailable] |
 | 874 | Kyacursor | Manual | 2024 Averianov et al. Ilek Fm noasaurid from Kemerovo Oblast, Russia (also spelled Kiyacursor). First Early Cretaceous Asian ceratosaur. [done — informal synonym added to Kiyacursor.yml] |
-| 988 | Maleriraptor | Manual | 2025 Ezcurra et al. Upper Maleri Fm herrerasaurian from India; partial pelvic and vertebral material. [done 803f25d] |
+| 988 | Maleriraptor | Manual | 2025 Ezcurra et al. Upper Maleri Fm herrerasaurian from India; partial pelvic and vertebral material. [done 96eb58b] |
 | 993 | Manipulonyx | Manual | 2025 Averianov, Lopatin & Atuchin. Nemegt Fm parvicursorine alvarezsaurid; ovivore hypothesis based on most-complete-known parvicursorine forelimb. |
 | 1023 | Mercuriceratops | Disputed | 2014 Ryan et al. Judith River / Dinosaur Park Fm chasmosaurine; rod-shaped squamosal autapomorphy; oldest Canadian chasmosaurine. Disputed flag stale. |
 | 1027 | Mexidracon | Manual | 2025 Serrano-Brañas et al. Cerro del Pueblo Fm ornithomimid with distinctively elongate metacarpals; second ornithomimosaur from formation. |
