@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-05-07T03:51:55.339Z
+  built_at: 2026-05-07T04:35:52.066Z
   clade_count: 248
-  genus_count: 1313
+  genus_count: 1314
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.05"
@@ -37139,6 +37139,88 @@ genera:
       - Sauropoda
       - Gravisauria
       - Eusauropoda
+  Dzharacursor:
+    genus: Dzharacursor
+    parent: Ornithomimidae
+    etymology: From Dzharakuduk (the type locality in Uzbekistan) and Latin 'cursor' (runner); meaning 'Dzharakuduk runner'.
+    description: Dzharacursor is an extinct genus of ornithomimid theropod dinosaur from the Turonian-age Bissekty Formation of the Kyzyl Kum Desert, Uzbekistan. The type and only species, Dzharacursor bissektensis, was originally named by Nesov (1995) as a tentative species of the North American genus Archaeornithomimus, then treated as a nomen dubium until Averianov & Sues (2024) erected the new genus on the basis of a juvenile femur holotype and a large hypodigm of referred postcranial and cranial material recovered from the Bissekty bonebed.
+    diet: herbivore
+    locomotion: bipedal
+    paleoenvironment:
+      - fluvial
+    diagnostic_features:
+      - Frontal exposure on the dorsal orbital rim straight, similar in length to prefrontal facet; frontal domes separated by shallow median depression
+      - Dorsal vertebrae lacking pleurocoels; anterior dorsals with pronounced hypapophyses and ventral keels
+      - Posterior caudals with dorsoventrally flattened centra
+      - Metacarpal I subequal in length to metacarpal II; distal articular end of metacarpal I ginglymoid; distal articular end of metacarpal II non-ginglymoid
+      - Shallow notch between pubic peduncle and obturator process of ischium
+      - Pedal unguals with pronounced flexor fossa and flexor tubercle; distal part of pedal unguals angled relative to proximal part
+    identifiers:
+      - source: pbdb
+        id: "519528"
+      - source: wikidata
+        id: Q48785254
+      - source: gbif
+        id: "4966248"
+    species:
+      - name: Dzharacursor bissektensis
+        etymology: Refers to the Bissekty Formation, the geological unit that yielded the holotype and referred specimens.
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Turonian
+          from_ma: 93.9
+          to_ma: 89.8
+        location:
+          country: UZ
+          region: Navoi
+          formation: Bissekty
+          coordinates:
+            - 42.117294
+            - 62.655315
+        holotype:
+          specimen_id:
+            - CCMGE 479/12457
+          specimen_type: holotype
+          institution: Chernyshev Central Museum of Geological Exploration
+          material: Right femur of a juvenile individual
+        described: 2024
+        authors: Averianov and Sues
+        described_in: averianov2024b
+    references:
+      - id: averianov2024b
+        authors: Averianov, Alexander O.; Sues, Hans-Dieter
+        year: 2024
+        title: A new ornithomimid theropod from the Upper Cretaceous Bissekty Formation of Uzbekistan
+        journal: Journal of Vertebrate Paleontology
+        volume: "44"
+        issue: "3"
+        publisher: Informa UK Limited
+        doi: 10.1080/02724634.2024.2433759
+        url: http://dx.doi.org/10.1080/02724634.2024.2433759
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Maniraptoriformes
+      - Arctometatarsalia
+      - Ornithomimosauria
+      - Ornithomimidae
   Dzharaonyx:
     genus: Dzharaonyx
     parent: Parvicursorinae
@@ -59114,7 +59196,7 @@ genera:
             max: 2.5
         described: 2024
         authors: Averianov et al.
-        described_in: averianov2024
+        described_in: averianov2024a
         holotype:
           specimen_id:
             - KOKM 5542
@@ -59122,7 +59204,7 @@ genera:
           institution: Kuzbass State Museum of Local Lore
           material: Incomplete skeleton including cervical and caudal vertebrae, ribs, left scapulocoracoid, humeri, and articulated hind limbs
     references:
-      - id: averianov2024
+      - id: averianov2024a
         authors: Averianov, Alexander O.; Skutschas, Pavel P.; Atuchin, Andrey A.; Slobodin, Dmitry A.; Feofanova, Olga A.; Vladimirova, Olga N.
         year: 2024
         title: "The last ceratosaur of Asia: a new noasaurid from the Early Cretaceous Great Siberian Refugium"
