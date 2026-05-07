@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-05-07T23:26:20.985Z
+  built_at: 2026-05-07T23:53:05.805Z
   clade_count: 248
-  genus_count: 1324
+  genus_count: 1325
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.05"
@@ -88089,6 +88089,83 @@ genera:
       - Saurischia
       - Sauropodomorpha
       - Sauropoda
+  Pulaosaurus:
+    genus: Pulaosaurus
+    parent: Neornithischia
+    etymology: From Mandarin Chinese 'Pulao' (a dragon of Chinese mythology reputed for its loud cry, alluding to the genus's preserved ossified larynx) and Greek 'sauros' (lizard).
+    description: Pulaosaurus is an extinct genus of early-diverging neornithischian ornithischian dinosaur from the Callovian-Oxfordian Tiaojishan Formation of Qinglong County, Hebei Province, northern China. Yang, King & Xu (2025) erected the genus on an immature articulated skeleton (IVPP V30936; total preserved length ~722 mm) that preserves paired ossified arytenoids and ceratobranchials of the larynx — making Pulaosaurus only the second non-avian dinosaur (after the ankylosaur Pinacosaurus grangeri) known to retain ossified laryngeal elements. Comparison with extant avian larynges led the authors to interpret the structure as a vocal modifier rather than the vocal source, suggesting bird-like acoustic capabilities. Cololites preserved in the abdominal cavity (3-8 mm oval impressions and flat pebbles) provide direct evidence of plant-seed ingestion. Pulaosaurus is the first neornithischian and the first ornithischian confidently recovered from the Yanliao Biota, and the phylogenetic analyses recover it as one of the earliest-diverging Neornithischia, close to Agilisaurus.
+    diet: herbivore
+    locomotion: bipedal
+    paleoenvironment:
+      - lacustrine
+      - fluvial
+    diagnostic_features:
+      - Robust fibular condyle forming a dorsoventrally extending crest on the tibia.
+      - Three unfused distal tarsals present, with distal tarsal 3 being small and drop-shaped.
+      - Distal tarsal 3 pierced by a foramen on its posterior surface.
+      - Small bony boss on the caudoventral corner of the dorsal ramus of the jugal.
+      - Obturator opening in the pubis is notch-shaped rather than a true enclosed foramen.
+      - Paired arytenoid (laryngeal) elements are gracile and leaf-like in form with a L-shaped cross-section.
+    identifiers:
+      - source: pbdb
+        id: "519526"
+      - source: wikidata
+        id: Q135277762
+    species:
+      - name: Pulaosaurus qinglong
+        etymology: From 'Qinglong', the name of Qinglong County (Hebei Province, China), the type locality.
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Middle Jurassic
+            - Late Jurassic
+          stage:
+            - Callovian
+            - Oxfordian
+          from_ma: 165.3
+          to_ma: 157.3
+        location:
+          country: CN
+          region: Hebei
+          formation: Tiaojishan
+          locality: Daxishan, Qinglong County
+          coordinates:
+            - 40.483334
+            - 119.366699
+        holotype:
+          specimen_id:
+            - IVPP V30936
+          specimen_type: holotype
+          institution: Institute of Vertebrate Paleontology and Paleoanthropology
+          material: Nearly complete articulated skeleton of an immature individual on a brownish-red sandstone slab; most of the skull (disarticulated), cervical and dorsal vertebrae, 24 caudal vertebrae, scapula fragments, complete left forelimb, pelvic girdle, hindlimbs, paired ceratobranchials and ossified arytenoids, plus cololites in the abdominal cavity.
+        described: 2025
+        authors: Yang et al.
+        described_in: yang2025
+    references:
+      - id: yang2025
+        authors: Yang, Yunfeng; King, James L.; Xu, Xing
+        year: 2025
+        title: A new neornithischian dinosaur from the Upper Jurassic Tiaojishan Formation of northern China
+        journal: PeerJ
+        volume: "13"
+        pages: e19664
+        publisher: PeerJ
+        doi: 10.7717/peerj.19664
+        url: http://dx.doi.org/10.7717/peerj.19664
+        notes: Erects Pulaosaurus on an immature skeleton preserving paired ossified arytenoids — only the second non-avian dinosaur with a fossilized larynx — and probable plant-seed gut contents.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Neornithischia
   Punatitan:
     genus: Punatitan
     parent: Rinconsauria
