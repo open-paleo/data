@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-05-07T21:24:28.954Z
+  built_at: 2026-05-07T22:04:19.930Z
   clade_count: 248
-  genus_count: 1321
+  genus_count: 1322
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.05"
@@ -74312,6 +74312,88 @@ genera:
       - Styracosterna
       - Hadrosauriformes
       - Hadrosauroidea
+  Napaisaurus:
+    genus: Napaisaurus
+    parent: Styracosterna
+    etymology: From 'Napai' (the Napai Basin in Fusui County, Guangxi, where the holotype was discovered) and Greek 'sauros' (lizard).
+    description: Napaisaurus is an extinct genus of basal iguanodontian ornithopod from the Aptian (Early Cretaceous) second member of the Xinlong Formation, Napai Basin, Fusui County, Guangxi Zhuang Autonomous Region, southern China. The single species, Napaisaurus guangxiensis, is known from a partial right pelvis (right ilium and ischium of a single individual). Ji & Zhang (2022) identify it as the first formally named basal iguanodontian dinosaur from southern China.
+    diet: herbivore
+    locomotion: bipedal
+    paleoenvironment:
+      - lacustrine
+      - fluvial
+    diagnostic_features:
+      - Preacetabular process of the ilium strongly curved ventrally and slightly inclined laterally, with a very long pubic peduncle extending anteroventrally, forming a narrow and deep U-shaped preacetabular notch with nearly parallel lateral margins.
+      - Depth-to-length ratio of the iliac body is approximately 1; postacetabular process length is approximately 0.7 times the iliac body length.
+      - Supraacetabular process expanded and thickened dorsoventrally, with its anteroposterior length occupying approximately the anterior half of the total postacetabular process length.
+      - Posterior portion of the postacetabular process expands significantly medially in the transverse direction, forming a short, wide brevis shelf on the ventral surface.
+      - Articular surface of the ischial peduncle of the ilium is broad and concave.
+      - Iliac peduncle of the ischium shows significant lateral thickening toward the distal end, with a strongly convex distal articular surface.
+    identifiers:
+      - source: pbdb
+        id: "467086"
+      - source: wikidata
+        id: Q108564810
+      - source: gbif
+        id: "12119325"
+    species:
+      - name: Napaisaurus guangxiensis
+        etymology: From 'Guangxi' (the Guangxi Zhuang Autonomous Region) and Latin '-ensis' (from, of); meaning 'of Guangxi'.
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+          from_ma: 121.4
+          to_ma: 113.2
+        location:
+          country: CN
+          region: Guangxi
+          formation: Xinlong
+          member: Second Member
+          locality: Napai Basin, Fusui County
+          coordinates:
+            - 22.369699
+            - 107.993401
+        holotype:
+          specimen_id:
+            - FS-20-007
+          specimen_type: holotype
+          institution: Fusui Specimen Repository
+          material: Right ischium with missing distal end (FS-20-007) and right ilium (FS-20-008) of a single individual.
+        described: 2022
+        authors: Ji & Zhang
+        described_in: ji2022
+    references:
+      - id: ji2022
+        authors: Ji, S.; Zhang, P.
+        year: 2022
+        title: First new genus and species of basal iguanodontian dinosaur (Ornithischia, Ornithopoda) from southern China
+        journal: Acta Geoscientica Sinica
+        volume: "43"
+        issue: "1"
+        pages: 1-10
+        publisher: Geological Publishing House
+        doi: 10.3975/cagsb.2021.090701
+        url: http://dx.doi.org/10.3975/cagsb.2021.090701
+        notes: Erects Napaisaurus guangxiensis as the first formally named basal iguanodontian from southern China; holotype is a partial right pelvis (ilium + ischium) from the Aptian Xinlong Formation.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Cerapoda
+      - Ornithopoda
+      - Ankylopollexia
+      - Styracosterna
   Narambuenatitan:
     genus: Narambuenatitan
     parent: Titanosauria
