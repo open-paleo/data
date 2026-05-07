@@ -49,6 +49,14 @@ type BucketBRow = {
      * Whether the row has been marked `[done]` after a successful intake.
      */
     done: boolean;
+
+    /**
+     * Whether the row has been marked `[deferred]`. Deferred genera
+     * have a known external blocker (e.g. the primary describing
+     * paper is unavailable as a PDF) and should be skipped until
+     * the blocker is resolved.
+     */
+    deferred: boolean;
 };
 
 /**
@@ -109,11 +117,15 @@ function readBucketBRows(): Array<BucketBRow>
         const label = cells[3];
         const notesRaw = cells[4];
 
-        const done = /\[done\]/.test(notesRaw);
+        const done = /\[done[^\]]*\]/.test(notesRaw);
+        const deferred = /\[deferred[^\]]*\]/.test(notesRaw);
 
-        const notes = notesRaw.replace(/\s*\[done[^\]]*\]\s*/g, "").trim();
+        const notes = notesRaw
+            .replace(/\s*\[done[^\]]*\]\s*/g, "")
+            .replace(/\s*\[deferred[^\]]*\]\s*/g, "")
+            .trim();
 
-        rows.push({ issue, genus, label, notes, done });
+        rows.push({ issue, genus, label, notes, done, deferred });
     }
 
     return rows;
@@ -159,6 +171,10 @@ function isEligible(row: BucketBRow): boolean
     {
         return false;
     }
+    else if (row.deferred)
+    {
+        return false;
+    }
     else if (fs.existsSync(generaYamlPath(row.genus)))
     {
         return false;
@@ -185,10 +201,11 @@ function main(): void
     {
         const total = rows.length;
         const done = rows.filter((row) => row.done).length;
+        const deferred = rows.filter((row) => row.deferred).length;
 
         process.stderr.write(
-            `No eligible Bucket B row. ${done}/${total} marked done; `
-            + `${total - done} remaining are blocked by existing files.\n`,
+            `No eligible Bucket B row. ${done}/${total} marked done, `
+            + `${deferred} deferred; the rest are blocked by existing files.\n`,
         );
 
         process.exit(1);
