@@ -1,6 +1,6 @@
 ---
 name: intake-genus
-description: Run the per-genus intake pipeline. Picks the next eligible Bucket B entry from reports/intake-triage.md (or accepts an explicit genus), bootstraps a stub from PBDB/Wikipedia/Wikidata, pauses for the user to fetch describing/supplementary papers into the local corpus, dispatches Haiku 4.5 extraction agents, applies the results, then promotes/commits/closes.
+description: Run the per-genus intake pipeline. Picks the next eligible Bucket B entry from reports/intake-triage.md (or accepts an explicit genus), bootstraps a stub from PBDB/Wikipedia/Wikidata, pauses for the user to fetch describing/supplementary papers into the local corpus, dispatches Sonnet extraction agents, applies the results, then promotes/commits/closes.
 user-invocable: true
 argument-hint: "[Genus]"
 allowed-tools: Bash Read Write Edit Glob Grep Agent AskUserQuestion
@@ -99,12 +99,17 @@ On success the script writes
 `staging/intake/<Genus>/prompts.jsonl` — one JSON object per line,
 each with a fully-formed `prompt` field.
 
-For each line in the JSONL, dispatch a Haiku 4.5 sub-agent via the
-Agent tool with `subagent_type: "general-purpose"`, passing the
-prompt verbatim and an explicit instruction to write its JSON output
-to the `output_path` named in the entry. Run the dispatches in
-parallel (one Agent invocation per paper, all in a single message)
-when there are multiple papers.
+For each line in the JSONL, dispatch a Sonnet sub-agent via the
+Agent tool with `subagent_type: "general-purpose"` and explicit
+`model: "sonnet"`, passing the prompt verbatim and an explicit
+instruction to write its JSON output to the `output_path` named in
+the entry. Run the dispatches in parallel (one Agent invocation per
+paper, all in a single message) when there are multiple papers.
+
+(Sonnet is the right default here even though the task is well-scoped:
+diagnostic-feature filtering and holotype-vs-referred-material
+discipline both reward stronger prompt-following than Haiku tends
+to give.)
 
 After the agents return, verify each
 `staging/intake/<Genus>/extractions/<key>.json` exists. Read each
