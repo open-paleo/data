@@ -36,7 +36,7 @@ None. Every Manual-flagged genus had a real reason to be flagged: it is either m
 | 539 | Erectopus | Disputed | 1923 von Huene. Albian La Penthièvre Beds allosauroid; lectotype maxilla recovered from Parisian fossil dealer in late 20th c., plastotype casts at MNHN. Modern work (Allain 2005) treats as valid. [done 3a1b4a1] |
 | 565 | Ferenceratops | Manual | 2026 Maidment et al. Hațeg Basin ceratopsian (S. anpetru and Densuș-Ciula fms), reassignment of "Zalmoxes shqiperorum"; new lineage of European ceratopsians. [done fe2ffc0] |
 | 711 | Huadanosaurus | Manual | 2025 Qiu et al. Yixian Fm sinosauropterygid theropod with feather-like impressions; previously assigned to Sinosauropteryx. [done 3793413] |
-| 801 | Jinchuanloong | Manual | 2025 Li et al. Xinhe Fm Middle Jurassic eusauropod; nearly complete skull articulated with anterior cervicals and tail. |
+| 801 | Jinchuanloong | Manual | 2025 Li et al. Xinhe Fm Middle Jurassic eusauropod; nearly complete skull articulated with anterior cervicals and tail. [done 8ca559e] |
 | 860 | Kryptohadros | Manual | 2026 Magyar et al. Densuș-Ciula Fm hadrosauroid; new clade Telmatosauridae alongside Telmatosaurus and Tethyshadros. |
 | 874 | Kyacursor | Manual | 2024 Averianov et al. Ilek Fm noasaurid from Kemerovo Oblast, Russia (also spelled Kiyacursor). First Early Cretaceous Asian ceratosaur. |
 | 988 | Maleriraptor | Manual | 2025 Ezcurra et al. Upper Maleri Fm herrerasaurian from India; partial pelvic and vertebral material. |
