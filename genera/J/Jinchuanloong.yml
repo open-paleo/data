@@ -1,0 +1,85 @@
+genus: Jinchuanloong
+parent: Eusauropoda
+etymology: From 'Jinchuan' (the district of Jinchang City, Gansu Province,
+  where the holotype was found) and Mandarin Chinese 'loong' (dragon).
+description: Jinchuanloong is an extinct genus of non-neosauropod eusauropod
+  sauropod from the late Bathonian (Middle Jurassic) lower Xinhe Formation of
+  Jinchuan District, Jinchang City, Gansu Province, north-western China. The
+  single species, Jinchuanloong niedu, is known from a single subadult
+  individual (estimated body length ~10 m) preserving a nearly complete skull
+  with mandible articulated with the atlas-axis complex and the first five
+  cervicals, plus 29 articulated middle and posterior caudal vertebrae. The
+  phylogenetic analysis of Li et al. (2025) recovers Jinchuanloong outside
+  Mamenchisauridae as the sister taxon to a Turiasauria + Neosauropoda clade.
+diet: herbivore
+locomotion: quadrupedal
+paleoenvironment:
+  - fluvial
+  - lacustrine
+diagnostic_features:
+  - Small, dorsoventrally elongated foramen present at the base of the nasal
+    process (ascending process) of the maxilla in lateral view.
+  - Anterodorsal surface of the prefrontal bears a small round aperture near the
+    bifurcation of its anterior and lateral processes.
+  - Postorbital very robust in lateral view; ratio of anteroposterior length to
+    dorsoventral height of the posterior process of the postorbital is 0.9.
+  - Posteroventral process of the jugal contributes only 22% of the ventral
+    margin of the infratemporal fenestra; dorsal process of the jugal contacts
+    the lacrimal and makes a small contribution to the antorbital fenestra.
+identifiers:
+  - source: pbdb
+    id: "519530"
+  - source: wikidata
+    id: Q134552006
+species:
+  - name: Jinchuanloong niedu
+    etymology: From Mandarin Chinese 'nie' (nickel) and 'du' (city), referring
+      to Jinchang's status as China's largest nickel-mining center.
+    status: valid
+    type_species: true
+    period:
+      name:
+        - Middle Jurassic
+      stage:
+        - Bathonian
+      from_ma: 168.2
+      to_ma: 166.1
+    location:
+      country: CN
+      region: Gansu
+      formation: Xinhe
+      locality: Jinchuan District, Jinchang City
+      coordinates:
+        - 38.50
+        - 102.18
+    holotype:
+      specimen_id:
+        - JCMF 0132
+      specimen_type: holotype
+      institution: JCMF
+      material: Nearly complete skull with mandible, five anteriormost cervical
+        vertebrae (atlas–axis complex plus cervicals 3–5), 29 articulated middle
+        and posterior caudal vertebrae, some fragmented caudal ribs and haemal
+        arches.
+    size:
+      length_m:
+        min: 10
+        max: 10
+    described: 2025
+    authors: Li et al.
+    described_in: li2025
+references:
+  - id: li2025
+    authors: Li, Ning; Zhang, Xiaoqin; Ren, Xinxin; Li, Daqing; You, Hailu
+    year: 2025
+    title: A new eusauropod (Dinosauria, Sauropodomorpha) from the Middle Jurassic
+      of Gansu, China
+    journal: Scientific Reports
+    volume: "15"
+    issue: "1"
+    publisher: Springer Science and Business Media LLC
+    doi: 10.1038/s41598-025-03210-5
+    url: http://dx.doi.org/10.1038/s41598-025-03210-5
+    notes: Erects Jinchuanloong as a non-neosauropod eusauropod outside
+      Mamenchisauridae, sister to Turiasauria + Neosauropoda; subadult holotype
+      preserves an articulated nearly complete skull.
