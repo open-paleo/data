@@ -505,6 +505,7 @@ function applyExtraction(
     if (!alreadyReferenced)
     {
         const referenceEntry = buildReferenceEntry(extraction.citation_key, bibIndex);
+        const isPlaceholder = referenceEntry.notes?.startsWith("TODO:") ?? false;
 
         // For supplementary papers, surface the agent's `notes`
         // field on the reference entry so the genus YAML records
@@ -512,9 +513,32 @@ function applyExtraction(
         // the chimeric holotype..."). Describing-paper notes are
         // typically about the taxon itself rather than the paper's
         // role, so we leave them off the reference.
+        //
+        // When the bib lookup returned a TODO placeholder, do NOT
+        // overwrite the notes — the placeholder is the SKILL's cue
+        // to fill in metadata. Stash the agent's notes in a side
+        // file so the SKILL can pick them up after filling metadata.
         if (!extraction.is_describing && extraction.notes)
         {
-            referenceEntry.notes = extraction.notes;
+            if (isPlaceholder)
+            {
+                const pendingDir = path.join(stagingIntakeDir, extraction.genus, "pending-notes");
+                fs.mkdirSync(pendingDir, { recursive: true });
+                fs.writeFileSync(
+                    path.join(pendingDir, `${extraction.citation_key}.txt`),
+                    extraction.notes,
+                    "utf8",
+                );
+                warnings.push(
+                    `Reference ${extraction.citation_key}: bib has no entry; agent notes `
+                    + `stashed at staging/intake/${extraction.genus}/pending-notes/${extraction.citation_key}.txt `
+                    + "for the SKILL to merge after step 4b.",
+                );
+            }
+            else
+            {
+                referenceEntry.notes = extraction.notes;
+            }
         }
 
         genus.references = [...referenceList, referenceEntry];

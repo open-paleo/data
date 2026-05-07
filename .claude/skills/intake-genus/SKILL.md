@@ -158,10 +158,17 @@ fields. Use the project's canonical reference key order:
 ```
 
 For supplementary papers (when the agent's extraction set `is_describing:
-false`), the script will already have copied the agent's `notes` field
-into the reference's `notes`. Leave that text in place if it captures
-the paper's role; trim it under 200 chars (the validator's warning
-threshold) if it does not.
+false`):
+
+- If the citation key was already in the bib, the script will have
+  copied the agent's `notes` field into the reference's `notes`.
+  Leave that text in place if it captures the paper's role; trim it
+  under 200 chars (the validator's warning threshold) if it does not.
+- If the citation key was NOT in the bib (the apply will have left a
+  TODO placeholder), the script will have stashed the agent's notes
+  in `staging/intake/<Genus>/pending-notes/<key>.txt`. After you
+  fill in the reference metadata, also append the pending notes from
+  that file as the reference's `notes:` field (trim under 200 chars).
 
 Editorial polish at this stage:
 - Etymology values from the agent are sometimes terse. Polish them to
