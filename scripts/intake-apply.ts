@@ -15,8 +15,10 @@
 //
 // Merge rules (describing paper → genus YAML):
 //
-//   etymology_genus      → genus.etymology
-//   etymology_species    → genus.species[0].etymology
+//   etymology_genus        → genus.etymology
+//   etymology_species      → genus.species[0].etymology
+//   pronunciation_ipa      → genus.pronunciation.ipa (overwrites bootstrap)
+//   pronunciation_phonetic → genus.pronunciation.phonetic (overwrites)
 //   holotype_*           → genus.species[0].holotype.{specimen_id,
 //                          specimen_type, institution, material}
 //   diagnostic_features  → genus.diagnostic_features
@@ -62,6 +64,8 @@ type IntakeExtraction = {
     type_species?: string | null;
     etymology_genus?: string | null;
     etymology_species?: string | null;
+    pronunciation_ipa?: string | null;
+    pronunciation_phonetic?: string | null;
     holotype_specimen_id?: string | null;
     holotype_institution?: string | null;
     holotype_specimen_type?: string | null;
@@ -355,6 +359,28 @@ function applyExtraction(
         if (extraction.etymology_species && !species.etymology)
         {
             species.etymology = extraction.etymology_species;
+        }
+
+        // Pronunciation: paper is the more authoritative source than
+        // Wikipedia, so paper-derived values overwrite the bootstrap
+        // pronunciation field-by-field. If the paper supplies only IPA
+        // and the bootstrap had only a phonetic respelling (or vice
+        // versa), keep both.
+        if (extraction.pronunciation_ipa || extraction.pronunciation_phonetic)
+        {
+            const pronunciation: Record<string, unknown> = (genus.pronunciation as Record<string, unknown>) ?? {};
+
+            if (extraction.pronunciation_ipa)
+            {
+                pronunciation.ipa = extraction.pronunciation_ipa;
+            }
+
+            if (extraction.pronunciation_phonetic)
+            {
+                pronunciation.phonetic = extraction.pronunciation_phonetic;
+            }
+
+            (genus as Record<string, unknown>).pronunciation = pronunciation;
         }
 
         if (extraction.holotype_specimen_id || extraction.holotype_material)

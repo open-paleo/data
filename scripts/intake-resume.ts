@@ -184,6 +184,8 @@ function buildIntakePromptString(entry: Omit<IntakePromptEntry, "prompt">): stri
         '  "type_species": "binomial as it appears in the paper, or null",',
         '  "etymology_genus": "string|null — concise (~150 chars) etymology of the genus name",',
         '  "etymology_species": "string|null — concise etymology of the specific epithet",',
+        '  "pronunciation_ipa": "string|null — IPA pronunciation including the leading and trailing slashes (e.g. \\"/ˌbrɒntoʊˈθoʊləs/\\"). Only fill in if the paper explicitly gives an IPA transcription.",',
+        '  "pronunciation_phonetic": "string|null — informal phonetic respelling guide (e.g. \\"BRON-toh-THOH-luhs\\"). Only fill in if the paper explicitly gives one.",',
         '  "holotype_specimen_id": "string|null — single catalog number, e.g. \\"ZPAL MgD-I/108\\"",',
         '  "holotype_institution": "string|null — full institution name or known abbreviation",',
         '  "holotype_specimen_type": "holotype|syntype|lectotype|neotype|null",',
