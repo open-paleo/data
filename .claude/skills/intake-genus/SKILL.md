@@ -250,18 +250,29 @@ run that looks like real breakage).
 
 Sequence:
 
-1. Capture the genus commit SHA pre-push:
+1. Pull rebase autostash FIRST so the genus commit's final SHA is
+   stable before we record it anywhere:
+
+   ```
+   git pull --rebase --autostash
+   ```
+
+   This may reassign the genus commit's SHA if origin advanced
+   while we were working (e.g. the previous genus's `build:`
+   commit landed between our commit and our pull).
+
+2. Capture the (now-stable) genus commit SHA:
 
    ```
    commit_sha=$(git rev-parse --short HEAD)
    ```
 
-2. Edit `reports/intake-triage.md` to append `[done <commit_sha>]`
+3. Edit `reports/intake-triage.md` to append `[done <commit_sha>]`
    to the row's notes column. The row pattern is
    `| <issue> | <Genus> | <label> | ...notes... |`; add the
    `[done ...]` marker just before the trailing pipe.
 
-3. Commit the triage update with a one-liner:
+4. Commit the triage update with a one-liner:
 
    ```
    git commit -m "Mark <Genus> triage row done in <commit_sha>"
@@ -269,14 +280,14 @@ Sequence:
 
    (Plus the canonical co-author line.)
 
-4. Pull rebase autostash, then push both commits in one push:
+5. Push both commits in one push:
 
    ```
-   git pull --rebase --autostash
    git push origin main
    ```
 
-5. Now run the GitHub-side close helper:
+6. Now run the GitHub-side close helper, passing the same SHA you
+   recorded in the triage row:
 
    ```
    bash .claude/skills/intake-genus/close-issue.sh <Genus> <commit_sha>
@@ -284,7 +295,7 @@ Sequence:
 
    This adds the completion comment, removes the `Intake: ...`
    sub-label, and closes the issue. It does NOT touch any in-repo
-   files — that work was done in steps 2-3.
+   files — that work was done in steps 3-4.
 
 ## Step 8 — Clean up staging
 
