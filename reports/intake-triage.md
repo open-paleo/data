@@ -33,7 +33,7 @@ None. Every Manual-flagged genus had a real reason to be flagged: it is either m
 | 429 | Denversaurus | Disputed | 1988 Bakker. Hell Creek nodosaurid; Burns 2015 and recent phylogenetic work support it as a valid panoplosaurine sister to Panoplosaurus. Disputed flag stale. [deferred bakker1988-unavailable] |
 | 459 | Dornraptor | Manual | 2024 Baron. Charmouth (Dorset) Early Jurassic averostran theropod; reidentification of fragmentary leg material previously attributed to Scelidosaurus. [done 1c8efce] |
 | 490 | Dzharacursor | Manual | 2025 Averianov & Sues. Bissekty Fm ornithomimid (ex-Archaeornithomimus bissektensis); juvenile femur holotype + diverse referred material. [done a61b620] |
-| 539 | Erectopus | Disputed | 1923 von Huene. Albian La Penthièvre Beds allosauroid; lectotype maxilla recovered from Parisian fossil dealer in late 20th c., plastotype casts at MNHN. Modern work (Allain 2005) treats as valid. |
+| 539 | Erectopus | Disputed | 1923 von Huene. Albian La Penthièvre Beds allosauroid; lectotype maxilla recovered from Parisian fossil dealer in late 20th c., plastotype casts at MNHN. Modern work (Allain 2005) treats as valid. [done 3a1b4a1] |
 | 565 | Ferenceratops | Manual | 2026 Maidment et al. Hațeg Basin ceratopsian (S. anpetru and Densuș-Ciula fms), reassignment of "Zalmoxes shqiperorum"; new lineage of European ceratopsians. |
 | 711 | Huadanosaurus | Manual | 2025 Qiu et al. Yixian Fm sinosauropterygid theropod with feather-like impressions; previously assigned to Sinosauropteryx. |
 | 801 | Jinchuanloong | Manual | 2025 Li et al. Xinhe Fm Middle Jurassic eusauropod; nearly complete skull articulated with anterior cervicals and tail. |
