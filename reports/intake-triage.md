@@ -41,7 +41,7 @@ None. Every Manual-flagged genus had a real reason to be flagged: it is either m
 | 874 | Kyacursor | Manual | 2024 Averianov et al. Ilek Fm noasaurid from Kemerovo Oblast, Russia (also spelled Kiyacursor). First Early Cretaceous Asian ceratosaur. [done — informal synonym added to Kiyacursor.yml] |
 | 988 | Maleriraptor | Manual | 2025 Ezcurra et al. Upper Maleri Fm herrerasaurian from India; partial pelvic and vertebral material. [done 96eb58b] |
 | 993 | Manipulonyx | Manual | 2025 Averianov, Lopatin & Atuchin. Nemegt Fm parvicursorine alvarezsaurid; ovivore hypothesis based on most-complete-known parvicursorine forelimb. [done 9fa35d6] |
-| 1023 | Mercuriceratops | Disputed | 2014 Ryan et al. Judith River / Dinosaur Park Fm chasmosaurine; rod-shaped squamosal autapomorphy; oldest Canadian chasmosaurine. Disputed flag stale. |
+| 1023 | Mercuriceratops | Disputed | 2014 Ryan et al. Judith River / Dinosaur Park Fm chasmosaurine; rod-shaped squamosal autapomorphy; oldest Canadian chasmosaurine. Disputed flag stale. [done 10e3331] |
 | 1027 | Mexidracon | Manual | 2025 Serrano-Brañas et al. Cerro del Pueblo Fm ornithomimid with distinctively elongate metacarpals; second ornithomimosaur from formation. |
 | 1081 | Napaisaurus | Manual | 2022 Ji & Zhang. Xinlong Fm iguanodontian from Guangxi, China; right ilium and ischium. First basal iguanodontian from southern China. |
 | 1103 | Newtonsaurus | Manual | September 2025 Evans et al. formally named as a new genus, reassigning "Zanclodon" cambrensis (Newton 1899). Lilstock Fm Rhaetian coelophysoid theropod from Wales; one of the largest Triassic theropods. |
