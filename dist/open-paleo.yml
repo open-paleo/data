@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-05-07T22:36:06.524Z
+  built_at: 2026-05-07T23:26:20.985Z
   clade_count: 248
-  genus_count: 1323
+  genus_count: 1324
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.05"
@@ -86224,6 +86224,99 @@ genera:
       - Sauropodomorpha
       - Massopoda
       - Massospondylidae
+  Prenocephale:
+    genus: Prenocephale
+    parent: Eupachycephalosauria
+    etymology: From Greek 'prenes' (sloping, inclined) and 'kephalē' (head), referring to the anteriorly inclined profile of the highly domed cranium.
+    description: Prenocephale is an extinct genus of pachycephalosaurid ornithischian dinosaur from the Maastrichtian Nemegt Formation of southern Mongolia. The type and only species, Prenocephale prenes, was erected by Maryańska & Osmólska (1974) on a nearly complete skull with associated postcranial fragments (ZPAL MgD-I/104) recovered from the Nemegt locality of the Gobi Desert; Evans et al. (2018) referred three additional cranial specimens from Bugiin Tsav, Guriliin Tsav, and Tsagaan Khushuu and presented the first cranial bone histology for any Asian pachycephalosaur, demonstrating that the holotype was probably a not-yet-fully-mature individual. Several Late Cretaceous North American species (P. brevis, P. edmontonensis, P. goodwini) formerly attributed to this genus have since been transferred to Sphaerotholus or Foraminacephale; the Asian type species P. prenes is uncontroversially valid, and Evans et al. (2018) explicitly rejected the proposed synonymy of Homalocephale calathocercos with P. prenes on the basis of consistently distinct squamosal-node morphologies.
+    diet: herbivore
+    locomotion: bipedal
+    paleoenvironment:
+      - fluvial
+    diagnostic_features:
+      - Frontoparietal cranial roof highly domed, with highest point situated above the postorbital bar.
+      - Parietosquamosal shelf absent; dome extends back to the posterior margin of the skull.
+      - Three caniniform premaxillary teeth bearing a serrated crest on their posterior faces, separated from 17 straight-rowed maxillary teeth by a long, deep diastema.
+      - Antorbital fenestra present.
+      - Supratemporal fenestra completely closed; infratemporal fenestra short and broad.
+      - Occipital region overhung by strongly swollen squamosals with a deeply depressed central part; row of conspicuous nodes along posterolateral and posterior skull margins.
+    identifiers:
+      - source: pbdb
+        id: "38790"
+      - source: wikidata
+        id: Q134220
+      - source: gbif
+        id: "4823085"
+    species:
+      - name: Prenocephale prenes
+        etymology: From Greek 'prenes' (sloping, inclined); shares the root with the genus name, again referencing the sloping cranial profile.
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+          from_ma: 72.1
+          to_ma: 66
+        location:
+          country: MN
+          region: Ömnögovi
+          formation: Nemegt
+          locality: Nemegt locality, Nemegt Basin
+          coordinates:
+            - 43.55
+            - 101.05
+        size:
+          length_m:
+            min: 2.4
+            max: 2.4
+        holotype:
+          specimen_id:
+            - ZPAL MgD-I/104
+          specimen_type: holotype
+          institution: Institute of Paleobiology, Polish Academy of Sciences
+          material: Nearly complete skull with dentition (without mandibles), several fragmentary dorsal vertebrae, one caudal vertebra, fragmentary dorsal ribs, the badly damaged left femur, and the right femur (lacking greater and lesser trochanters and the lateral condyle), plus ossified caudal tendons.
+        described: 1974
+        authors: Maryańska & Osmólska
+        described_in: maryanska1974
+    references:
+      - id: maryanska1974
+        authors: Maryańska, Teresa; Osmólska, Halszka
+        year: 1974
+        title: Pachycephalosauria, a new suborder of ornithischian dinosaurs
+        journal: Palaeontologia Polonica
+        volume: "30"
+        pages: 45-102
+        publisher: Polish Academy of Sciences
+        notes: Erects Pachycephalosauria as a new suborder and the new genus Prenocephale (type species P. prenes) from the Nemegt Formation.
+      - id: evans2018
+        authors: Evans, David C.; Hayashi, Shoji; Chiba, Kentaro; Watabe, Mahito; Ryan, Michael J.; Lee, Yuong-Nam; Currie, Philip J.; Tsogtbaatar, Khishigjav; Barsbold, Rinchen
+        year: 2018
+        title: Morphology and histology of new cranial specimens of Pachycephalosauridae (Dinosauria, Ornithischia) from the Nemegt Formation, Mongolia
+        journal: Palaeogeography, Palaeoclimatology, Palaeoecology
+        volume: "494"
+        pages: 121-134
+        publisher: Elsevier
+        doi: 10.1016/j.palaeo.2017.11.029
+        url: http://dx.doi.org/10.1016/j.palaeo.2017.11.029
+        notes: Refers three new Nemegt cranial specimens to Prenocephale, presents the first Asian pachycephalosaur histology, and rejects the Homalocephale-Prenocephale synonymy.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Marginocephalia
+      - Pachycephalosauria
+      - Eupachycephalosauria
   Prenoceratops:
     genus: Prenoceratops
     parent: Leptoceratopsidae
