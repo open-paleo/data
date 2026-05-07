@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-07T04:35:52.066Z",
+    "built_at": "2026-05-07T05:03:36.915Z",
     "clade_count": 248,
-    "genus_count": 1314,
+    "genus_count": 1315,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
     "version": "2026.05"
@@ -46783,12 +46783,12 @@
           },
           "described": 2005,
           "authors": "Allain",
-          "described_in": "allain2005"
+          "described_in": "allain2005a"
         }
       ],
       "references": [
         {
-          "id": "allain2005",
+          "id": "allain2005a",
           "authors": "Allain, Ronan",
           "year": 2005,
           "title": "The postcranial anatomy of the megalosaur Dubreuillosaurus valesdunensis(Dinosauria Theropoda) from the Middle Jurassic of Normandy, France",
@@ -51830,6 +51830,136 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea"
+      ]
+    },
+    "Erectopus": {
+      "genus": "Erectopus",
+      "parent": "Allosauroidea",
+      "etymology": "From Latin 'erectus' (upright) and Greek 'pous' (foot); meaning 'upright foot', a reference to the posture of the original syntype foot bones described by Sauvage (1882).",
+      "description": "Erectopus is an extinct genus of basal allosauroid theropod from the Albian phosphate-bearing beds (La Penthièvre Formation) of Louppy-le- Château in the Argonne region of north-eastern France. The type and only species, Erectopus superbus, was originally named Megalosaurus superbus by Sauvage in 1882, transferred to the new genus Erectopus by von Huene in 1923, and subsequently split by Huene into a second species E. sauvagei in 1932. All of Sauvage's original syntypes were destroyed at the Muséum National d'Histoire Naturelle during World War II; Allain (2005) recovered an associated maxilla in a Parisian fossil collection in the late 1990s, designated it the lectotype (MNHN 2001-4), and synonymised E. sauvagei into E. superbus.",
+      "diet": "carnivore",
+      "locomotion": "bipedal",
+      "paleoenvironment": [
+        "coastal"
+      ],
+      "diagnostic_features": [
+        "Rounded anterior ramus of maxilla",
+        "Slender neck of femur",
+        "Posterior curvature of proximal half of femur",
+        "Anterodorsal edge of calcaneum dorsally projected",
+        "Calcaneum anteroposterior length twice its median vertical depth",
+        "Lateral margin of proximal end of second metatarsal regularly concave along entire length"
+      ],
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "38579"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q2342517"
+        },
+        {
+          "source": "gbif",
+          "id": "4822680"
+        }
+      ],
+      "synonyms": [
+        {
+          "name": "Megalosaurus superbus",
+          "type": "junior subjective",
+          "reason": "Original combination by Sauvage (1882); transferred to the new genus Erectopus by von Huene (1923)."
+        },
+        {
+          "name": "Erectopus sauvagei",
+          "type": "junior subjective",
+          "reason": "Erected by Huene (1932) on referred material; Allain (2005) synonymised it into E. superbus and designated MNHN 2001-4 as the lectotype of the senior name."
+        }
+      ],
+      "species": [
+        {
+          "name": "Erectopus superbus",
+          "etymology": "From Latin 'superbus' (proud, magnificent); a name proposed by Sauvage (1882) when the species was originally combined with Megalosaurus.",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Albian"
+            ],
+            "from_ma": 113,
+            "to_ma": 100.5
+          },
+          "location": {
+            "country": "FR",
+            "region": "Grand Est",
+            "formation": "La Penthièvre",
+            "locality": "Louppy-le-Château",
+            "coordinates": [
+              48.85,
+              5.18
+            ]
+          },
+          "size": {
+            "weight_kg": {
+              "min": 200,
+              "max": 200
+            }
+          },
+          "holotype": {
+            "specimen_id": [
+              "MNHN 2001-4"
+            ],
+            "specimen_type": "lectotype",
+            "institution": "Muséum National d’Histoire Naturelle",
+            "material": "Anterior part of the left maxilla. Sauvage's original syntypes (femur, tibia, metatarsal II, manual phalanges, dorsal centra) were destroyed at the MNHN during World War II."
+          },
+          "described": 1923,
+          "authors": "Huene",
+          "described_in": "huene1923"
+        }
+      ],
+      "references": [
+        {
+          "id": "huene1923",
+          "authors": "Huene, F. v.",
+          "year": 1923,
+          "title": "Carnivorous Saurischia in Europe since the Triassic",
+          "journal": "Bulletin of the Geological Society of America",
+          "volume": "34",
+          "pages": "449-458",
+          "doi": "10.1130/gsab-34-449",
+          "url": "http://dx.doi.org/10.1130/gsab-34-449"
+        },
+        {
+          "id": "allain2005b",
+          "authors": "Allain, R.",
+          "year": 2005,
+          "title": "The enigmatic theropod dinosaur Erectopus superbus (Sauvage 1882) from the Lower Albian of Louppy-le-Château (Argonne, France)",
+          "book": "The Carnivorous Dinosaurs",
+          "publisher": "Indiana University Press, Bloomington (K. Carpenter, ed.)",
+          "pages": "72-86",
+          "notes": "Redescription based on a maxilla recovered in a Paris fossil collection (Sauvage's syntypes lost in WWII); designated MNHN 2001-4 lectotype and synonymised Erectopus sauvagei Huene 1932."
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Allosauroidea"
       ]
     },
     "Erketu": {
