@@ -316,6 +316,42 @@ Bucket B genus.
 
 ---
 
+## Citation key disambiguation
+
+The bootstrap and resume scripts auto-disambiguate proposed keys
+against the bib by **key name only** — they do not inspect DOIs.
+That means a bare `<author><year>` already in the bib will be reused
+even if it actually points to a *different* paper by the same author
+in the same year. This collision is invisible to the scripts; the
+user typically catches it by recognising the DOI mismatch.
+
+When the user flags such a collision (e.g. "the existing
+`averianov2024` is the rspb noasaurid, not the JVP ornithomimid"),
+disambiguate inside this repo only:
+
+1. Edit the existing genus YAML(s) under `genera/` that reference the
+   bare key — rename both the `references[].id` and every
+   `species[].described_in` (and any other crossref) from `<key>` to
+   `<key>a`. Use grep to find them all before editing.
+2. Edit `staging/intake/<Genus>/bootstrap.yml` and
+   `staging/intake/<Genus>/papers-needed.md` to use `<key>b` (or the
+   next free letter) for the new paper.
+3. Stage both the renamed pre-existing genus YAML(s) AND the new
+   genus YAML in the same commit so the bib regenerates with both
+   letter-suffixed keys atomically. Mention the rename in the commit
+   body.
+
+**Do NOT rename markdown files in the paper corpus**
+(`~/Desktop/open-paleo-papers/markdown/`). The papers repo has its
+own workflow that the user runs after this repo's `dist/references.bib`
+regenerates; that workflow detects the split and renames the
+markdown files. If you rename them yourself, you'll desync that
+workflow's view of what changed.
+
+It is fine to *create* a new markdown file in the corpus when the
+user fetches a brand-new paper — the no-rename rule only applies to
+files that already exist.
+
 ## Failure handling
 
 - **Bootstrap fails** (network down, PBDB unavailable): retry once,
