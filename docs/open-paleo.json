@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-07T01:15:08.205Z",
+    "built_at": "2026-05-07T01:22:00.870Z",
     "clade_count": 248,
-    "genus_count": 1308,
+    "genus_count": 1309,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
     "version": "2026.05"
@@ -30452,6 +30452,114 @@
         "Flagellicaudata",
         "Diplodocidae",
         "Apatosaurinae"
+      ]
+    },
+    "Brontotholus": {
+      "genus": "Brontotholus",
+      "parent": "Pachycephalosaurinae",
+      "etymology": "From Greek 'brontē' (thunder) and 'tholos' (dome); in homage to the 1985 film Mad Max Beyond Thunderdome and the paratype locality name Beyond Thunder Dome.",
+      "pronunciation": {
+        "phonetic": "BRON-toe-thole-luss"
+      },
+      "description": "Brontotholus is an extinct genus of pachycephalosaurid dinosaur known from the Late Cretaceous (Campanian stage) Two Medicine and Oldman formations of Montana, United States, and Alberta, Canada, respectively. The genus contains a single species, Brontotholus harmoni, known from multiple partial domes.",
+      "diet": "herbivore",
+      "locomotion": "bipedal",
+      "paleoenvironment": [
+        "fluvial"
+      ],
+      "diagnostic_features": [
+        "Frontoparietal dome anteroposteriorly longer than laterally wide throughout ontogeny",
+        "In dorsal view, dome is sub-triangular, laterally wider posteriorly and strongly tapering anteriorly",
+        "In anterior/posterior view, dome has a low dorsal profile, being over 1.5 times laterally wider than dorsoventrally thick in largest specimens",
+        "Peripheral element sutural contacts (posterior supraorbital, postorbital) have vaulted, triangularly peaked dorsal margins",
+        "Posterior supraorbital sutural contacts have a prominent dorsoventral concavity",
+        "Sutural contacts of posterior supraorbital and postorbital bear several projecting dorsoventral ridges and grooves"
+      ],
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "519375"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q136465240"
+        }
+      ],
+      "species": [
+        {
+          "name": "Brontotholus harmoni",
+          "etymology": "Honours the late Robert 'Bob' Harmon, former Chief Preparator at the Museum of the Rockies.",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Campanian"
+            ],
+            "from_ma": 83.6,
+            "to_ma": 72.2
+          },
+          "location": {
+            "country": "US",
+            "region": "Montana",
+            "formation": "Two Medicine",
+            "coordinates": [
+              48.970821,
+              -112.642014
+            ]
+          },
+          "holotype": {
+            "specimen_id": [
+              "MOR 480"
+            ],
+            "specimen_type": "holotype",
+            "institution": "Museum of the Rockies",
+            "material": "Complete frontoparietal dome."
+          },
+          "size": {
+            "length_m": {
+              "min": 3.8,
+              "max": 3.8
+            }
+          },
+          "described": 2025,
+          "authors": "Woodruff et al.",
+          "described_in": "woodruff2025"
+        }
+      ],
+      "references": [
+        {
+          "id": "woodruff2025",
+          "authors": "Woodruff, D Cary; Horner, John R; Goodwin, Mark B; Evans, David C",
+          "year": 2025,
+          "title": "The first pachycephalosaurid from the Late Cretaceous Two Medicine Formation: effects of the Western Interior Seaway on North American pachycephalosaurid evolution",
+          "journal": "Zoological Journal of the Linnean Society",
+          "volume": "205",
+          "issue": "2",
+          "publisher": "Oxford University Press (OUP)",
+          "doi": "10.1093/zoolinnean/zlaf087",
+          "url": "http://dx.doi.org/10.1093/zoolinnean/zlaf087"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Marginocephalia",
+        "Pachycephalosauria",
+        "Pachycephalosauridae",
+        "Pachycephalosaurinae"
       ]
     },
     "Bruhathkayosaurus": {
