@@ -43,7 +43,7 @@ None. Every Manual-flagged genus had a real reason to be flagged: it is either m
 | 993 | Manipulonyx | Manual | 2025 Averianov, Lopatin & Atuchin. Nemegt Fm parvicursorine alvarezsaurid; ovivore hypothesis based on most-complete-known parvicursorine forelimb. [done 9fa35d6] |
 | 1023 | Mercuriceratops | Disputed | 2014 Ryan et al. Judith River / Dinosaur Park Fm chasmosaurine; rod-shaped squamosal autapomorphy; oldest Canadian chasmosaurine. Disputed flag stale. [done 10e3331] |
 | 1027 | Mexidracon | Manual | 2025 Serrano-Brañas et al. Cerro del Pueblo Fm ornithomimid with distinctively elongate metacarpals; second ornithomimosaur from formation. [deferred serrano-brañas2025-unavailable] |
-| 1081 | Napaisaurus | Manual | 2022 Ji & Zhang. Xinlong Fm iguanodontian from Guangxi, China; right ilium and ischium. First basal iguanodontian from southern China. |
+| 1081 | Napaisaurus | Manual | 2022 Ji & Zhang. Xinlong Fm iguanodontian from Guangxi, China; right ilium and ischium. First basal iguanodontian from southern China. [done 8113149] |
 | 1103 | Newtonsaurus | Manual | September 2025 Evans et al. formally named as a new genus, reassigning "Zanclodon" cambrensis (Newton 1899). Lilstock Fm Rhaetian coelophysoid theropod from Wales; one of the largest Triassic theropods. |
 | 1271 | Prenocephale | Disputed | 1974 Maryańska & Osmólska. Nemegt Fm pachycephalosaurid; the Asian type species P. prenes is uncontroversially valid. Dispute concerns N. American "Prenocephale" species split off as Sphaerotholus / Foraminacephale. Disputed flag stale for P. prenes itself. |
 | 1306 | Pulaosaurus | Manual | 2025 Yang, King & Xu. Tiaojishan Fm neornithischian with preserved ossified larynx and gut contents (cololites). First neornithischian from Yanliao Biota. |
