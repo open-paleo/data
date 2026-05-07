@@ -21,11 +21,14 @@ import * as os from "node:os";
 import * as path from "node:path";
 import * as url from "node:url";
 
+import { readBibCitationKeys, resolveCitationKey } from "./utilities.ts";
+
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
 const root = path.join(scriptDir, "..");
 
 const stagingIntakeDir = path.join(root, "staging", "intake");
+const referencesBibPath = path.join(root, "dist", "references.bib");
 const corpusDir = path.join(os.homedir(), "Desktop", "open-paleo-papers");
 const corpusMarkdownDir = path.join(corpusDir, "markdown");
 
@@ -269,6 +272,43 @@ function main(): void
         if (papers.pending.length > 0)
         {
             process.stderr.write(`Pending: ${papers.pending.join(", ")}\n`);
+        }
+
+        process.exit(1);
+    }
+
+    // Validate that none of the user-pasted keys would collide with
+    // existing biblatex-suffix variants. This catches cases like
+    // pasting `- [x] **funston2020**` when the bib already has
+    // `funston2020a` and `funston2020b`.
+    const bibKeys = readBibCitationKeys(referencesBibPath);
+    const collisions = new Array<{ key: string; suggested: string; reason: string }>();
+
+    for (const paper of papers.fetched)
+    {
+        const resolution = resolveCitationKey(paper.key, bibKeys);
+
+        if (resolution.collided)
+        {
+            collisions.push({
+                key: paper.key,
+                suggested: resolution.resolvedKey,
+                reason: resolution.reason ?? "",
+            });
+        }
+    }
+
+    if (collisions.length > 0)
+    {
+        process.stderr.write("Citation key collisions detected:\n");
+
+        for (const collision of collisions)
+        {
+            process.stderr.write(`  - "${collision.key}": ${collision.reason}\n`);
+            process.stderr.write(
+                `    Use "${collision.suggested}" instead. Update papers-needed.md and rename `
+                + `~/Desktop/open-paleo-papers/markdown/${collision.key}.md → ${collision.suggested}.md.\n`,
+            );
         }
 
         process.exit(1);

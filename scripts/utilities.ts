@@ -156,3 +156,100 @@ export function collectAllKeys(node: TreeNode): Array<string>
 
     return keys;
 }
+
+/**
+ * Reads `dist/references.bib` and returns the set of citation keys
+ * present (e.g. `osmolska1996`, `funston2020a`, `funston2020b`).
+ * Returns an empty set when the file is missing.
+ *
+ * @param bibPath - Absolute path to references.bib.
+ * @returns Set of citation keys.
+ */
+export function readBibCitationKeys(bibPath: string): Set<string>
+{
+    const keys = new Set<string>();
+
+    if (!fs.existsSync(bibPath))
+    {
+        return keys;
+    }
+
+    const content = fs.readFileSync(bibPath, "utf8");
+
+    for (const match of content.matchAll(/^@\w+\{([^,]+),/gm))
+    {
+        keys.add(match[1].trim());
+    }
+
+    return keys;
+}
+
+/**
+ * Resolves a proposed citation key against the existing bib so that
+ * a bare key never coexists with biblatex-suffix variants. Mirrors
+ * the disambiguation rule enforced by validate.ts check #12c.
+ *
+ * Cases:
+ *
+ * - Proposed key is already in the bib: no collision (the caller is
+ *   reusing an existing reference). Returns the key unchanged.
+ * - Proposed key ends with a single lowercase letter (e.g.
+ *   `funston2020c`): treated as already disambiguated. Returns the
+ *   key unchanged.
+ * - Proposed key is bare (e.g. `funston2020`) and at least one
+ *   suffix variant (`funston2020a`, ...) exists in the bib: the
+ *   resolved key is `{base}{nextAvailableLetter}`.
+ *
+ * @param proposedKey - The citation key the caller wants to use.
+ * @param existingKeys - Set of citation keys already in the bib.
+ * @returns Resolution result. When `collided` is true, the caller
+ *     should use `resolvedKey` instead of `proposedKey`.
+ */
+export function resolveCitationKey(
+    proposedKey: string,
+    existingKeys: Set<string>,
+): { resolvedKey: string; collided: boolean; reason: string | null }
+{
+    if (existingKeys.has(proposedKey))
+    {
+        return { resolvedKey: proposedKey, collided: false, reason: null };
+    }
+
+    const lastChar = proposedKey.slice(-1);
+
+    if (/[a-z]/.test(lastChar))
+    {
+        return { resolvedKey: proposedKey, collided: false, reason: null };
+    }
+
+    const escaped = proposedKey.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const variantPattern = new RegExp(`^${escaped}[a-z]$`);
+
+    const existingVariants = [...existingKeys]
+        .filter((key) => variantPattern.test(key))
+        .sort();
+
+    if (existingVariants.length === 0)
+    {
+        return { resolvedKey: proposedKey, collided: false, reason: null };
+    }
+
+    const usedLetters = new Set(existingVariants.map((key) => key.slice(-1)));
+
+    for (const letter of "abcdefghijklmnopqrstuvwxyz")
+    {
+        if (!usedLetters.has(letter))
+        {
+            return {
+                resolvedKey: `${proposedKey}${letter}`,
+                collided: true,
+                reason: `bib has ${existingVariants.join(", ")}; bare "${proposedKey}" `
+                    + "would conflict with the disambiguation rule",
+            };
+        }
+    }
+
+    throw new Error(
+        `No available letter suffix for ${proposedKey}; all 26 are taken in the bib.`,
+    );
+}

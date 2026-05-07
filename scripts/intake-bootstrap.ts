@@ -29,6 +29,7 @@ import {
     walkParentChain,
 } from "./genus-enrichment.ts";
 import { toGenusYaml } from "./genus-enrichment.ts";
+import { readBibCitationKeys, resolveCitationKey } from "./utilities.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
@@ -102,32 +103,6 @@ function findTriageRow(genus: string): TriageRow | null
 }
 
 /**
- * Reads `dist/references.bib` once and returns the set of citation
- * keys present. Used to decide whether a paper proposed for fetching
- * is already in the corpus.
- *
- * @returns The set of citation keys, or an empty set if the file is missing.
- */
-function readBibCitationKeys(): Set<string>
-{
-    const keys = new Set<string>();
-
-    if (!fs.existsSync(referencesBibPath))
-    {
-        return keys;
-    }
-
-    const content = fs.readFileSync(referencesBibPath, "utf8");
-
-    for (const match of content.matchAll(/^@\w+\{([^,]+),/gm))
-    {
-        keys.add(match[1].trim());
-    }
-
-    return keys;
-}
-
-/**
  * Synthesises a citation key from author surname + year following the
  * project convention (e.g. "Osmólska, H." 1996 → "osmolska1996"). Strips
  * diacritics and non-alphabetic characters.
@@ -168,6 +143,11 @@ function citationKeyFor(authors: string, year: string | number): string
  * @param describingJournal - Journal of the describing paper, or null.
  * @param alreadyInCorpus - Whether the citation key is present in
  *     `dist/references.bib`.
+ * @param describingNeedsMetadata - Whether the describing paper has
+ *     no DOI/title/journal yet (PBDB had no reference_no).
+ * @param disambiguationReason - Non-null when the proposed key
+ *     collided with existing biblatex-suffix variants in the bib
+ *     and was bumped to the next free letter (e.g. `funston2020c`).
  * @returns The Markdown body, ready to write.
  */
 function buildPapersNeededBody(
@@ -179,6 +159,7 @@ function buildPapersNeededBody(
     describingJournal: string | null,
     alreadyInCorpus: boolean,
     describingNeedsMetadata: boolean,
+    disambiguationReason: string | null,
 ): string
 {
     const lines = new Array<string>();
@@ -209,7 +190,12 @@ function buildPapersNeededBody(
         lines.push("  reference_no, so DOI/title/journal/volume/pages must be");
         lines.push("  supplied manually when adding this paper to the corpus.");
 
-        if (alreadyInCorpus)
+        if (disambiguationReason)
+        {
+            lines.push(`  Note: key disambiguated — ${disambiguationReason}.`);
+            lines.push(`  Save the corpus markdown as ${describingKey}.md.`);
+        }
+        else if (alreadyInCorpus)
         {
             lines.push("  Note: this citation key is already present in");
             lines.push("  `dist/references.bib` — confirm it is the right paper.");
@@ -236,6 +222,12 @@ function buildPapersNeededBody(
         if (describingDoi)
         {
             lines.push(`  DOI: ${describingDoi}`);
+        }
+
+        if (disambiguationReason)
+        {
+            lines.push(`  Note: key disambiguated — ${disambiguationReason}.`);
+            lines.push(`  Save the corpus markdown as ${describingKey}.md.`);
         }
 
         lines.push(`  ${status}`);
@@ -367,6 +359,7 @@ async function main(): Promise<void>
     let describingTitle: string | null = null;
     let describingJournal: string | null = null;
     let describingNeedsMetadata = false;
+    let disambiguationReason: string | null = null;
 
     if (reference?.authors && reference?.year)
     {
@@ -381,7 +374,19 @@ async function main(): Promise<void>
         describingNeedsMetadata = true;
     }
 
-    const bibKeys = readBibCitationKeys();
+    const bibKeys = readBibCitationKeys(referencesBibPath);
+
+    if (describingKey)
+    {
+        const resolution = resolveCitationKey(describingKey, bibKeys);
+
+        if (resolution.collided)
+        {
+            describingKey = resolution.resolvedKey;
+            disambiguationReason = resolution.reason;
+        }
+    }
+
     const alreadyInCorpus = describingKey ? bibKeys.has(describingKey) : false;
 
     const papersNeededBody = buildPapersNeededBody(
@@ -393,6 +398,7 @@ async function main(): Promise<void>
         describingJournal,
         alreadyInCorpus,
         describingNeedsMetadata,
+        disambiguationReason,
     );
 
     const papersNeededPath = path.join(targetDir, "papers-needed.md");
