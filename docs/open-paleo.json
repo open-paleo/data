@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-08T20:10:55.011Z",
+    "built_at": "2026-05-08T23:29:31.134Z",
     "clade_count": 248,
-    "genus_count": 1333,
+    "genus_count": 1334,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
     "version": "2026.05"
@@ -38833,6 +38833,179 @@
         "Hadrosauridae",
         "Hadrosaurinae",
         "Kritosaurini"
+      ]
+    },
+    "Coelophysis": {
+      "genus": "Coelophysis",
+      "parent": "Coelophysidae",
+      "etymology": "From Greek 'koilos' (hollow) and 'physis' (form, nature), referring to the hollow vertebrae.",
+      "pronunciation": {
+        "ipa": "/ˌsiːloʊˈfaɪsɪs/",
+        "phonetic": "SEE-low-FY-sis"
+      },
+      "description": "Coelophysis is the type genus of Coelophysidae and one of the best-known Triassic dinosaurs. The type and only valid species, Coelophysis bauri, was erected by Edward Drinker Cope in 1889 on fragmentary syntypes collected by David Baldwin from Arroyo Seco, Rio Arriba County, New Mexico. Cope's original syntypes were diagnostically inadequate, and the taxon's modern hypodigm overwhelmingly comes from the Whitaker Quarry at Ghost Ranch — a Late Triassic mass-mortality bonebed first opened in 1947 that has yielded hundreds of articulated skeletons across a complete ontogenetic series. Following decades of dispute about whether the Ghost Ranch material truly belonged to Cope's nominal taxon, the ICZN issued Opinion 1842 in 1996, designating the articulated Whitaker Quarry skeleton AMNH 7224 as the neotype of C. bauri and rejecting the rival genus Rioarribasaurus colberti (Hunt and Lucas, 1991) as a junior objective synonym. Rinehart et al. (2009) reanalysed the entire hypodigm and showed that Coelophysis was sexually dimorphic (gracile and robust morphs distinguished by skull/neck length and sacrum fusion), preserved the oldest known furcula in any non-avian dinosaur, had hawk-like vision (sclerotic-ring geometry), and engaged in genuine cannibalism (juvenile bones in adult coprolites and regurgitalites — separate from Colbert's earlier in-ribcage 'cannibalism' claim, which Nesbitt et al. 2006 showed was actually a small crurotarsan).",
+      "diet": "carnivore",
+      "locomotion": "bipedal",
+      "paleoenvironment": [
+        "fluvial"
+      ],
+      "diagnostic_features": [
+        "Skull long and narrow with an elongate preorbital region bearing a prominent preorbital groove anterior to the orbit, promoting binocular overlap of the visual fields.",
+        "Ten cervical vertebrae with elongate, rod-like cervical ribs that overlap up to five consecutive vertebrae posteriorly.",
+        "Thirteen dorsal vertebrae; cervical centra amphicoelous with elliptical pleurocoels on the lateral surfaces; pleurocoels absent in dorsals.",
+        "Sacrum of five vertebrae; variable fusion of s4-s5 centra constitutes a sexually dimorphic character (gracile-morph specimens unfused; robust- morph fused).",
+        "Pubis bears two foramina — an elliptical obturator foramen and a larger accessory 'ceratosaur foramen' medial to it.",
+        "V-shaped furcula present, with epicleidial facets near the distal rami tips — the oldest known furcula in any non-avian dinosaur.",
+        "Femur midshaft diameter shows an allometric growth constant of ~1.5 indicating cursorial adaptation; tibiotarsus longer than femur."
+      ],
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "38520"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q309392"
+        },
+        {
+          "source": "gbif",
+          "id": "4822867"
+        }
+      ],
+      "synonyms": [
+        {
+          "name": "Rioarribasaurus colberti",
+          "type": "junior objective",
+          "reason": "Hunt and Lucas (1991) erected Rioarribasaurus colberti for the Whitaker Quarry skeleton AMNH 7224. ICZN Opinion 1842 (1996) simultaneously designated AMNH 7224 as the neotype of Coelophysis bauri (under plenary powers, setting aside Cope's diagnostically inadequate syntypes), making Rioarribasaurus a junior objective synonym of Coelophysis and colberti a junior objective synonym of bauri. Both were placed on the Official Index of Rejected and Invalid Names."
+        }
+      ],
+      "species": [
+        {
+          "name": "Coelophysis bauri",
+          "etymology": "Honors George Baur, the German-American palaeontologist who had earlier studied the syntype material.",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Triassic"
+            ],
+            "stage": [
+              "Norian",
+              "Rhaetian"
+            ],
+            "from_ma": 210,
+            "to_ma": 201.4
+          },
+          "location": {
+            "country": "US",
+            "region": "New Mexico",
+            "formation": "Rock Point",
+            "locality": "Whitaker Quarry, Ghost Ranch (Rio Arriba County)",
+            "coordinates": [
+              36.34,
+              -106.49
+            ]
+          },
+          "size": {
+            "length_m": {
+              "min": 1.5,
+              "max": 3
+            },
+            "weight_kg": {
+              "min": 15,
+              "max": 24
+            }
+          },
+          "holotype": {
+            "specimen_id": [
+              "AMNH 7224"
+            ],
+            "specimen_type": "neotype",
+            "institution": "American Museum of Natural History",
+            "material": "Articulated complete skeleton of an adult robust-morph individual from the Whitaker Quarry, designated neotype by ICZN Opinion 1842 (1996). Cope's original 1889 syntypes (AMNH 2705, 2706, 2708, 2722, 2725) were diagnostically inadequate and partly multitaxic, and were superseded under the Commission's plenary powers."
+          },
+          "described": 1889,
+          "authors": "Cope",
+          "described_in": "cope1889b"
+        }
+      ],
+      "references": [
+        {
+          "id": "cope1889b",
+          "authors": "Cope, E. D.",
+          "year": 1889,
+          "title": "On a new genus of Triassic Dinosauria",
+          "journal": "The American Naturalist",
+          "volume": "23",
+          "issue": "271",
+          "pages": "626",
+          "publisher": "American Society of Naturalists",
+          "notes": "Brief paragraph (~130 words) erecting Coelophysis to receive three species (C. bauri, C. longicollis, C. willistoni) previously described under Coelurus."
+        },
+        {
+          "id": "colbert1989",
+          "authors": "Colbert, E. H.",
+          "year": 1989,
+          "title": "The Triassic Dinosaur Coelophysis",
+          "journal": "Bulletin of the Museum of Northern Arizona",
+          "volume": "57",
+          "pages": "1-160",
+          "publisher": "Museum of Northern Arizona",
+          "notes": "Pre-Rinehart-2009 canonical monograph on the Whitaker Quarry hypodigm; not extracted directly here but cited as the seminal Ghost Ranch reference."
+        },
+        {
+          "id": "iczn1996",
+          "authors": "International Commission on Zoological Nomenclature",
+          "year": 1996,
+          "title": "Opinion 1842. Coelophysis Cope, 1889 (Reptilia, Saurischia): a neotype designated under the plenary powers",
+          "journal": "Bulletin of Zoological Nomenclature",
+          "volume": "53",
+          "issue": "2",
+          "pages": "142-144",
+          "publisher": "International Trust for Zoological Nomenclature",
+          "notes": "Plenary-powers ruling on Case 2840 (Colbert et al. 1992). Designates AMNH 7224 as neotype of Coelophysis bauri and rejects Rioarribasaurus colberti."
+        },
+        {
+          "id": "nesbitt2007",
+          "authors": "Nesbitt, S. J.; Irmis, R. B.; Parker, W. G.",
+          "year": 2007,
+          "title": "A critical re-evaluation of the Late Triassic dinosaur taxa of North America",
+          "journal": "Journal of Systematic Palaeontology",
+          "volume": "5",
+          "issue": "2",
+          "pages": "209-243",
+          "publisher": "Taylor & Francis",
+          "doi": "10.1017/S1477201907002040",
+          "url": "http://dx.doi.org/10.1017/S1477201907002040",
+          "notes": "Reassesses Cope's syntype material element-by-element, shows it is multitaxic; reassigns Eucoelophysis baldwini to a non- dinosaurian basal ornithodiran."
+        },
+        {
+          "id": "rinehart2009",
+          "authors": "Rinehart, L. F.; Lucas, S. G.; Heckert, A. B.; Spielmann, J. A.; Celeskey, M. D.",
+          "year": 2009,
+          "title": "The paleobiology of Coelophysis bauri (Cope) from the Upper Triassic (Apachean) Whitaker quarry, New Mexico, with detailed analysis of a single quarry block",
+          "journal": "New Mexico Museum of Natural History and Science Bulletin",
+          "volume": "45",
+          "pages": "1-260",
+          "publisher": "New Mexico Museum of Natural History and Science",
+          "notes": "Comprehensive 260-page monograph on the Whitaker Quarry hypodigm; documents sexual dimorphism, hawk-like vision, the oldest non-avian-dinosaur furcula, and genuine juvenile cannibalism."
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Coelophysoidea",
+        "Coelophysidae"
       ]
     },
     "Coelurus": {
@@ -114494,12 +114667,12 @@
             "institution": "American Museum of Natural History",
             "material": "Greater part of skeleton of individual found by J. C. Isaac near Cow Island, Montana; right half of pelvis nearly completely preserved; long bones solid"
           },
-          "described_in": "cope1889"
+          "described_in": "cope1889a"
         }
       ],
       "references": [
         {
-          "id": "cope1889",
+          "id": "cope1889a",
           "authors": "Cope, E. D.",
           "year": 1889,
           "title": "Notes on the Dinosauria of the Laramie",
