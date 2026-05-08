@@ -51,7 +51,7 @@ None. Every Manual-flagged genus had a real reason to be flagged: it is either m
 | 1535 | Taleta | Manual | 2025 Longrich et al. Oulad Abdoun phosphates lambeosaurine; third African arenysaurin after Ajnabia and Minqaria. T. taleta; two maxillae. [done ec13024] |
 | 1595 | Tianyulong | Disputed | 2009 Zheng et al. Tiaojishan Fm (formerly Yixian/Jehol) Middle Jurassic heterodontosaurid with filamentous integument. Valid taxon; "Disputed" flag appears stale. [done d6d1410] |
 | 1667 | Utetitan | Manual | 2025 Paul. North Horn / Black Peaks / Javelina Fm titanosaurian, ex-Alamosaurus. New subfamily Utetitaninae. [done 43a1671] |
-| 1710 | Wudingloong | Manual | 2025 Wang et al. Yubacun Fm massopodan sauropodomorph; oldest sauropodomorph known from East Asia. |
+| 1710 | Wudingloong | Manual | 2025 Wang et al. Yubacun Fm massopodan sauropodomorph; oldest sauropodomorph known from East Asia. [done 1444923] |
 | 1747 | Yantaloong | Manual | 2026 Zhang et al. Zhanghe Fm eusauropod; placed near Jobaria/Lapparentosaurus, possibly in expanded Turiasauria — first Asian if so. |
 | 1760 | Yuanmouraptor | Manual | 2025 Zou et al. Zhanghe Fm metriacanthosaurid with nearly complete skull and articulated cervical column. |
 
