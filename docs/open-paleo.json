@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-08T01:01:17.767Z",
+    "built_at": "2026-05-08T02:10:06.402Z",
     "clade_count": 248,
-    "genus_count": 1328,
+    "genus_count": 1329,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
     "version": "2026.05"
@@ -144231,6 +144231,110 @@
         "Deinonychosauria",
         "Dromaeosauridae",
         "Eudromaeosauria"
+      ]
+    },
+    "Utetitan": {
+      "genus": "Utetitan",
+      "parent": "Titanosauria",
+      "etymology": "From 'Ute', honoring the original Ute peoples of central Utah on whose ancestral lands the holotype was recovered, and Greek 'titan' (giant).",
+      "description": "Utetitan is an extinct genus of titanosaurian sauropod dinosaur from the late Maastrichtian (Late Cretaceous) of southwestern North America. The single species, Utetitan zellaguymondeweyae, is based on USNM 15560 — a partial postcranial skeleton from the lower North Horn Formation at Joe's Valley on the Wasatch Plateau, Emery County, Utah — formerly the primary referred specimen of Alamosaurus sanjuanensis. Paul (2025) split this material away from Alamosaurus on the basis of scapular and ischial autapomorphies, restricted A. sanjuanensis to its New Mexican type horizon, and erected the new subfamily Utetitaninae for the new genus; that clade-name is single-paper-recent and not adopted as a parent here per the project's taxonomy policy.",
+      "diet": "herbivore",
+      "locomotion": "quadrupedal",
+      "paleoenvironment": [
+        "fluvial"
+      ],
+      "diagnostic_features": [
+        "Acromion process of the scapula strongly prominent.",
+        "Posterior profile of the scapula strongly sinuous, producing a prominent triangular glenoid process.",
+        "Paired tubercles dorsal to the scapular glenoid fairly prominent and widely separated.",
+        "Postero-dorsal edge of the scapular blade flares prominently posteriorly.",
+        "Lateral process of the ischium modest in size.",
+        "Postero-lateral profile of the ischium moderately concave-arced."
+      ],
+      "appearance": {
+        "integument": "armored"
+      },
+      "identifiers": [
+        {
+          "source": "wikidata",
+          "id": "Q136460910"
+        }
+      ],
+      "species": [
+        {
+          "name": "Utetitan zellaguymondeweyae",
+          "etymology": "Honors Zella Guymon Dewey (1901-2002), the author's maternal grandmother, born in Huntington, Utah — approximately 30 km from the USNM 15560 quarry.",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Maastrichtian"
+            ],
+            "from_ma": 72.1,
+            "to_ma": 66
+          },
+          "location": {
+            "country": "US",
+            "region": "Utah",
+            "formation": "North Horn",
+            "locality": "Joe's Valley, Wasatch Plateau, Emery County",
+            "coordinates": [
+              39.3,
+              -111.2
+            ]
+          },
+          "size": {
+            "weight_kg": {
+              "min": 16000,
+              "max": 17000
+            }
+          },
+          "holotype": {
+            "specimen_id": [
+              "USNM 15560"
+            ],
+            "specimen_type": "holotype",
+            "institution": "National Museum of Natural History, Smithsonian Institution",
+            "material": "Partial postcranial skeleton including dorsal ribs, caudals 1-30, 25 chevrons, both sternals, the right scapulocoracoid, humerus, radius, ulna, metacarpus, both ischia, and an associated osteoderm."
+          },
+          "described": 2025,
+          "authors": "Paul",
+          "described_in": "paul2025"
+        }
+      ],
+      "references": [
+        {
+          "id": "paul2025",
+          "authors": "Paul, Gregory S.",
+          "year": 2025,
+          "title": "Stratigraphic and anatomical evidence for multiple titanosaurid dinosaur taxa in the Late Cretaceous (Campanian-Maastrichtian) of southwestern North America",
+          "journal": "Geology of the Intermountain West",
+          "volume": "12",
+          "pages": "201-220",
+          "publisher": "Utah Geological Association",
+          "doi": "10.31711/giw.v12.pp201-220",
+          "url": "http://dx.doi.org/10.31711/giw.v12.pp201-220",
+          "notes": "Splits USNM 15560 from Alamosaurus into the new genus Utetitan; restricts Alamosaurus to its New Mexican type horizon and erects the subfamily Utetitaninae."
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Sauropoda",
+        "Macronaria",
+        "Titanosauria"
       ]
     },
     "Vagaceratops": {
