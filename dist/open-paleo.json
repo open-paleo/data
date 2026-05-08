@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-08T17:59:39.304Z",
+    "built_at": "2026-05-08T18:44:14.606Z",
     "clade_count": 248,
     "genus_count": 1332,
     "license": "CC-BY-4.0",
@@ -29123,53 +29123,54 @@
     "Brachiosaurus": {
       "genus": "Brachiosaurus",
       "parent": "Brachiosauridae",
+      "etymology": "From Greek 'brachion' (arm) and 'sauros' (lizard); meaning 'arm lizard', referring to its proportionally long forelimbs (the humerus is longer than the femur).",
       "pronunciation": {
-        "phonetic": "BRAK-ee-o-SAWR-us",
-        "ipa": "/ˌbrækiəˈsɔːrəs/"
+        "ipa": "/ˌbrækiəˈsɔːrəs/",
+        "phonetic": "BRAK-ee-uh-SOR-uhs"
       },
-      "etymology": "From Greek brachion (βραχίων) meaning 'arm' + Greek sauros (σαῦρος) meaning 'lizard'; overall meaning 'arm lizard', referring to its proportionately long forelimbs.",
-      "description": "A genus of sauropod dinosaur from the Late Jurassic of North America. Brachiosaurus is unusual among sauropods for its proportionally long forelimbs, giving it a giraffe-like posture with the body sloping upward toward the head. It was one of the tallest and largest dinosaurs known from relatively complete remains.\n",
+      "description": "Brachiosaurus is the type genus of Brachiosauridae and the iconic giraffe-postured Late Jurassic North American sauropod. The single valid species, Brachiosaurus altithorax, was erected by Elmer S. Riggs in 1903 on a partial postcranial skeleton (FMNH P 25107) from Riggs Quarry No. 13 in the Grand River valley near Grand Junction, Colorado, on the basis of forelimbs longer than hindlimbs and an unusually deep thorax. For nearly a century the African Tendaguru material described by Janensch (1914) as 'Brachiosaurus brancai' was treated as a second species, but Taylor (2009) formally separated it as Giraffatitan brancai on the basis of at least 26 osteological differences across the dorsal vertebrae, caudals, coracoids, humeri, ilia, and femora; the holotype itself is now understood to represent a subadult individual (the coracoid is unfused to the scapula). The Felch Quarry skull (USNM 5730) is tentatively retained in the hypodigm but cannot be confirmed without overlapping material with the holotype. Subsequent splits have separated additional brachiosaurid material into Lusotitan (Portugal) and Vouivria (France), leaving Brachiosaurus monospecific and restricted to the Morrison Formation of the western United States.",
       "diet": "herbivore",
       "locomotion": "quadrupedal",
       "paleoenvironment": [
-        "fluvial",
-        "forested"
+        "fluvial"
       ],
       "appearance": {
-        "integument": "scaled",
-        "evidence": "inferred",
-        "features": [
-          "Long forelimbs giving a distinctive upward-sloping body profile",
-          "Tall, arched nasal crest on the skull",
-          "Extremely long neck held at a steep angle"
-        ]
+        "integument": "scaled"
       },
       "diagnostic_features": [
-        "Forelimbs longer than hindlimbs",
-        "Elongate metacarpals",
-        "Arched nasal bones forming a crest above the skull"
+        "Humerus longer than femur, producing the distinctive giraffe-like upward- sloping body posture.",
+        "Posterior dorsal centra subcircular in cross-section; postspinal lamina absent from the dorsal vertebrae.",
+        "Posterior dorsal neural spines triangular in lateral view and progressively expand mediolaterally to a petal- or paddle-shaped distal end.",
+        "Spinodiapophyseal and spinopostzygapophyseal laminae of middle and posterior dorsal vertebrae contact each other.",
+        "Anterior caudal vertebrae bear hyposphenes, have transversely widened neural spines, and lack lateral fossae.",
+        "Coracoid elongate along the scapular-suture axis with a glenoid surface directed laterally and mediolaterally broad on a thick buttress.",
+        "Tubercle on the dorsal margin of the postacetabular lobe of the ilium.",
+        "Femur with tibial and fibular condyles equal in width, fourth trochanter extending to mid-shaft height, and a straight lateral shaft margin."
       ],
       "identifiers": [
         {
+          "source": "pbdb",
+          "id": "38677"
+        },
+        {
           "source": "wikidata",
-          "id": "Q19711"
+          "id": "Q14397"
+        },
+        {
+          "source": "gbif",
+          "id": "4822846"
+        },
+        {
+          "source": "eol",
+          "id": "4531362"
         }
       ],
       "species": [
         {
           "name": "Brachiosaurus altithorax",
+          "etymology": "From Latin 'altus' (deep) and Greek 'thorax' (chest), referring to the unusually deep thoracic cavity.",
           "status": "valid",
           "type_species": true,
-          "completeness": "partial",
-          "etymology": "Named for the unusually deep and wide chest cavity of the holotype, from Latin 'altus' meaning 'deep' and Greek 'thorax' meaning 'breastplate'.",
-          "holotype": {
-            "specimen_id": [
-              "FMNH P 25107"
-            ],
-            "specimen_type": "holotype",
-            "institution": "Field Museum of Natural History",
-            "material": "partial postcranial skeleton"
-          },
           "period": {
             "name": [
               "Late Jurassic"
@@ -29184,8 +29185,8 @@
           "location": {
             "country": "US",
             "region": "Colorado",
-            "locality": "Grand Junction",
             "formation": "Morrison",
+            "locality": "Riggs Quarry No. 13, Grand River valley near Grand Junction",
             "coordinates": [
               39.1,
               -108.6
@@ -29197,37 +29198,51 @@
               "max": 22
             },
             "weight_kg": {
-              "min": 28300,
-              "max": 46900
+              "min": 28000,
+              "max": 47000
             }
+          },
+          "holotype": {
+            "specimen_id": [
+              "FMNH P 25107"
+            ],
+            "specimen_type": "holotype",
+            "institution": "Field Museum of Natural History",
+            "material": "Partial postcranial skeleton of a subadult individual comprising the last seven dorsal vertebrae, the sacrum, the first two caudal vertebrae, the right humerus, ilium, and femur, the left coracoid, fragments of the left ilium, and dorsal ribs."
           },
           "described": 1903,
           "authors": "Riggs",
-          "description": "The only valid species of Brachiosaurus. Known from a partial skeleton discovered in the Morrison Formation of Colorado.\n"
+          "described_in": "riggs1903"
         }
       ],
       "references": [
         {
           "id": "riggs1903",
-          "authors": "Riggs, E.S.",
+          "authors": "Riggs, E. S.",
           "year": 1903,
           "title": "Brachiosaurus altithorax, the largest known dinosaur",
           "journal": "American Journal of Science",
           "volume": "15",
+          "issue": "88",
           "pages": "299-306",
+          "publisher": "American Journal of Science",
           "doi": "10.2475/ajs.s4-15.88.299",
-          "url": "http://dx.doi.org/10.2475/ajs.s4-15.88.299"
+          "url": "http://dx.doi.org/10.2475/ajs.s4-15.88.299",
+          "notes": "Erects Brachiosaurus altithorax on FMNH P 25107 from the Morrison Formation of western Colorado."
         },
         {
           "id": "taylor2009",
-          "authors": "Taylor, M.P.",
+          "authors": "Taylor, M. P.",
           "year": 2009,
           "title": "A re-evaluation of Brachiosaurus altithorax Riggs 1903 (Dinosauria, Sauropoda) and its generic separation from Giraffatitan brancai (Janensch 1914)",
           "journal": "Journal of Vertebrate Paleontology",
           "volume": "29",
           "issue": "3",
           "pages": "787-806",
-          "doi": "10.1671/039.029.0309"
+          "publisher": "Taylor & Francis",
+          "doi": "10.1671/039.029.0309",
+          "url": "http://dx.doi.org/10.1671/039.029.0309",
+          "notes": "Formally separates Brachiosaurus altithorax from the Tendaguru taxon (recombined as Giraffatitan brancai); provides the current revised diagnosis and shows the holotype is a subadult."
         }
       ],
       "taxonomy": [
