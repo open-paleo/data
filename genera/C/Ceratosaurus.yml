@@ -1,0 +1,146 @@
+genus: Ceratosaurus
+parent: Ceratosauridae
+etymology: From Greek 'keras/keratos' (horn) and 'sauros' (lizard); meaning
+  'horn lizard', referring to the distinctive median nasal horn core.
+pronunciation:
+  ipa: /ˌsɛrətoʊˈsɔːrəs/
+  phonetic: SERR-ah-toe-SOR-uhs
+description: Ceratosaurus is the type genus of Ceratosauridae and one of the
+  most iconic Late Jurassic theropods of the Morrison Formation. The type
+  species, Ceratosaurus nasicornis, was erected by Othniel Charles Marsh in
+  1884 on a near-complete skeleton (USNM 4735) collected by M. P. Felch from
+  Quarry No. 1, Garden Park, near Cañon City, Fremont County, Colorado.
+  Originally housed at the Yale Peabody Museum, the holotype was transferred
+  to the USNM in 1898-1899 and prepared by C. W. Gilmore over 1911-1918.
+  Gilmore (1920) produced the canonical redescription as USNM Bulletin 110,
+  correcting Marsh's restoration errors and supporting Ceratosauridae as
+  distinct from Megalosauridae against Cope's 1892 referral. Madsen and
+  Welles (2000) revised the osteology and named two additional Morrison
+  species (C. dentisulcatus from Cleveland-Lloyd, C. magnicornis from the
+  Fruita Paleontological Area), each based on more complete material from
+  upper or lower Brushy Basin Member horizons. Ceratosaurus is most readily
+  diagnosed by an unpaired nasal horn core, smaller paired protuberances
+  above each orbit, an unusually low premaxillary tooth count, a tightly
+  coossified pelvis, coossified metatarsals II-IV, and a row of small
+  dermal ossicles running along the dorsal midline.
+diet: carnivore
+locomotion: bipedal
+paleoenvironment:
+  - fluvial
+appearance:
+  integument: armored
+diagnostic_features:
+  - Unpaired median horn core formed from the nasals, transversely compressed
+    and positioned above the external nares.
+  - Paired horn-like protuberances on the lacrimal/prefrontal bones above
+    the antorbital fenestra, partially overhanging each orbit.
+  - Cervical vertebral centra plano-concave (flat anteriorly, deeply cupped
+    posteriorly), with strongly shortened posterior cervicals.
+  - Zygosphene-zygapophysis accessory articulation present in cervical and
+    dorsal vertebrae.
+  - Premaxilla bears only three teeth, an unusually low count among
+    contemporaneous Jurassic theropods.
+  - Pelvis tightly coossified — ilium, pubis, and ischium fused — with a
+    closed obturator foramen on a slender pubis.
+  - Metatarsals II-IV coossified to one another.
+  - Row of small osseous dermal ossicles preserved along the dorsal midline
+    from the base of the skull through the proximal tail.
+identifiers:
+  - source: pbdb
+    id: "38600"
+  - source: wikidata
+    id: Q130902
+  - source: gbif
+    id: "4818607"
+  - source: eol
+    id: "4531431"
+synonyms:
+  - name: Megalosaurus nasicornis
+    type: junior subjective
+    reason: Cope (1892) referred Ceratosaurus nasicornis to Megalosaurus;
+      Gilmore (1920) rejected the referral and reaffirmed Ceratosaurus as
+      a valid genus distinct from Megalosaurus.
+species:
+  - name: Ceratosaurus nasicornis
+    etymology: From Latin 'nasus' (nose) and 'cornu' (horn); meaning
+      'nose-horned', referring to the median nasal horn core.
+    status: valid
+    type_species: true
+    period:
+      name:
+        - Late Jurassic
+      stage:
+        - Kimmeridgian
+        - Tithonian
+      from_ma: 154.8
+      to_ma: 145.0
+    location:
+      country: US
+      region: Colorado
+      formation: Morrison
+      member: Brushy Basin
+      locality: Felch Quarry No. 1, Garden Park, near Cañon City
+      coordinates:
+        - 38.42
+        - -105.30
+    size:
+      length_m:
+        min: 5.1
+        max: 5.5
+      weight_kg:
+        min: 500
+        max: 1000
+    holotype:
+      specimen_id:
+        - USNM 4735
+      specimen_type: holotype
+      institution: NMNH
+      material: Near-complete skeleton including the skull and lower jaws,
+        atlas-axis complex, seven cervical and 12 (mostly fragmentary)
+        dorsal vertebrae, sacrum, ~50 caudal vertebrae with chevrons, the
+        coossified pelvis, both femora, the right tibia, fibula, and pes,
+        plus dorsal-midline dermal ossicles.
+    described: 1884
+    authors: Marsh
+    described_in: marsh1884
+references:
+  - id: marsh1884
+    authors: Marsh, O. C.
+    year: 1884
+    title: Principal characters of American Jurassic dinosaurs; Part VIII,
+      The order Theropoda
+    journal: American Journal of Science
+    volume: "27"
+    issue: "160"
+    pages: 329-340
+    publisher: American Journal of Science
+    doi: 10.2475/ajs.s3-27.160.329
+    url: http://dx.doi.org/10.2475/ajs.s3-27.160.329
+    notes: Erects Ceratosaurus nasicornis and the family Ceratosauridae on
+      a near-complete skeleton (now USNM 4735) from the Morrison Formation
+      of Garden Park, Colorado.
+  - id: gilmore1920
+    authors: Gilmore, C. W.
+    year: 1920
+    title: Osteology of the carnivorous Dinosauria in the United States
+      National Museum, with special reference to the genera Antrodemus
+      (Allosaurus) and Ceratosaurus
+    journal: Bulletin of the United States National Museum
+    volume: "110"
+    pages: 1-154
+    publisher: Smithsonian Institution
+    doi: 10.5479/si.03629236.110.i
+    url: http://dx.doi.org/10.5479/si.03629236.110.i
+    notes: Definitive 1920 redescription of the holotype after the 1898-1899
+      USNM transfer; corrects Marsh's restoration errors and rejects Cope's
+      referral to Megalosaurus.
+  - id: madsen2000
+    authors: Madsen, J. H.; Welles, S. P.
+    year: 2000
+    title: "Ceratosaurus (Dinosauria, Theropoda): A revised osteology"
+    journal: Utah Geological Survey Miscellaneous Publication 00-2
+    pages: 1-80
+    publisher: Utah Geological Survey
+    notes: Modern osteological revision; names two additional Morrison
+      species (C. dentisulcatus and C. magnicornis) and reassigns several
+      Labrosaurus species, placing Labrosaurus in synonymy with Allosaurus.
