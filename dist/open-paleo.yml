@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-05-08T00:14:15.336Z
+  built_at: 2026-05-08T00:31:22.524Z
   clade_count: 248
-  genus_count: 1326
+  genus_count: 1327
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.05"
@@ -102217,6 +102217,89 @@ genera:
       - Clypeodonta
       - Iguanodontia
       - Elasmaria
+  Taleta:
+    genus: Taleta
+    parent: Lambeosaurinae
+    etymology: From Arabic 'taleta' (three), in reference to this being the third duck-billed dinosaur recovered from Couche III of the Moroccan phosphates, after Ajnabia odysseus and Minqaria bata.
+    description: Taleta is an extinct genus of arenysaurin lambeosaurine hadrosaurid dinosaur from the late Maastrichtian Couche III of the Oulad Abdoun Basin (Sidi Chennane mines, Central Morocco), a shallow-marine phosphorite depositional setting. The single species, Taleta taleta, is known from associated left and right maxillae of a single individual (MHNM.KH.1557) preserving in-situ dentition; phylogenetic analysis recovers it within Arenysaurini, forming an African clade with Ajnabia odysseus and Minqaria bata. Longrich et al. (2025) interpret the three Moroccan arenysaurins as a dispersal-driven adaptive radiation seeded from southern Europe.
+    diet: herbivore
+    locomotion: facultative
+    paleoenvironment:
+      - marine
+      - coastal
+    diagnostic_features:
+      - Ectopterygoid ridge positioned high (dorsally) on the lateral surface of the maxilla.
+      - Alveolar margin higher laterally than medially, such that alveoli open ventrolaterally.
+      - Single functional tooth per maxillary tooth family.
+      - Maxillary teeth greatly enlarged, with crowns obliquely oriented and raked backwards relative to the alveolar margin.
+      - Primary ridge of maxillary teeth extremely tall and prominent, roughly doubling the mediolateral width of the crown, and interlocking with the alveolar margin.
+      - Toothrow very straight in both lateral and ventral views.
+    identifiers:
+      - source: wikidata
+        id: Q134604041
+    species:
+      - name: Taleta taleta
+        etymology: Tautonymous with the genus name; from Arabic 'taleta' (three), again referring to this being the third Moroccan lambeosaurine.
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+          from_ma: 67
+          to_ma: 66
+        location:
+          country: MA
+          formation: Phosphates of Morocco
+          member: Couche III
+          locality: Sidi Chennane mines, Oulad Abdoun Basin
+          coordinates:
+            - 32.83
+            - -6.43
+        holotype:
+          specimen_id:
+            - MHNM.KH.1557
+          specimen_type: holotype
+          institution: Muséum d'Histoire Naturelle de Marrakech
+          material: Associated left and right maxillae of a single individual, preserving in-situ dentition.
+        described: 2025
+        authors: Longrich, Pereda-Suberbiola, Bardet & Jalil
+        described_in: longrich2025
+    references:
+      - id: longrich2025
+        authors: Longrich, Nicholas R.; Pereda-Suberbiola, Xabier; Bardet, Nathalie; Jalil, Nour-Eddine
+        year: 2025
+        title: A new hadrosaurid dinosaur from the late Maastrichtian Phosphates of Morocco provides evidence for an African radiation of lambeosaurines
+        journal: Gondwana Research
+        volume: "145"
+        pages: 142-151
+        publisher: Elsevier
+        doi: 10.1016/j.gr.2025.05.006
+        url: http://dx.doi.org/10.1016/j.gr.2025.05.006
+        notes: Erects Taleta taleta as the third Moroccan arenysaurin (after Ajnabia and Minqaria); argues for an African dispersal-driven radiation of lambeosaurines from southern Europe.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Dryomorpha
+      - Styracosterna
+      - Hadrosauriformes
+      - Hadrosauroidea
+      - Hadrosauridae
+      - Lambeosaurinae
   Talos:
     genus: Talos
     parent: Saurornithoidini
