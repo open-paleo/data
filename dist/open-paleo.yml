@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-05-08T00:31:22.524Z
+  built_at: 2026-05-08T01:01:17.767Z
   clade_count: 248
-  genus_count: 1327
+  genus_count: 1328
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.05"
@@ -105897,6 +105897,92 @@ genera:
       - Ornithischia
       - Thyreophora
       - Ankylosauria
+  Tianyulong:
+    genus: Tianyulong
+    parent: Heterodontosauridae
+    etymology: From 'Tianyu' (the Shandong Tianyu Museum of Nature in Pingyi, where the holotype is housed) and Mandarin Chinese 'long' (dragon).
+    description: Tianyulong is an extinct genus of heterodontosaurid ornithischian dinosaur from Jianchang County, western Liaoning Province, China. The single species, Tianyulong confuciusi, is known from a small (~70 cm) subadult skeleton (STMN 26-3) preserving partial cranium, postcranial skeleton, and three patches of filamentous integumentary structures along the neck, back, and tail. Zheng, You, Xu and Dong (2009) originally assigned the holotype to the Early Cretaceous Yixian Formation of the Jehol Group, but subsequent reassignment of the source horizon places it in the Middle-Late Jurassic Tiaojishan Formation. The filaments are unbranched, hollow, apparently rigid singular structures up to ~60 mm long; the authors did not claim homology with theropod protofeathers, noting closer morphological similarity to Psittacosaurus bristles and treating convergent acquisition as the default interpretation. Tianyulong is recovered as the basalmost well-known heterodontosaurid in the original phylogenetic analysis.
+    diet: herbivore
+    locomotion: bipedal
+    paleoenvironment:
+      - fluvial
+      - lacustrine
+    diagnostic_features:
+      - Semi-circular diastema demarcated on the lateral surface at the premaxilla-maxilla junction.
+      - Barely developed buccal emargination.
+      - Dorsally placed mandibular jaw joint positioned well above the level of the dentary tooth row.
+      - Only one premaxillary tooth, which is caniniform.
+      - Distinct gap between the dentary teeth and coronoid process.
+      - Adjacent maxillary and dentary tooth crowns distinctly separate, lacking mesial and distal marginal denticles and ridges on the buccal surfaces.
+    identifiers:
+      - source: pbdb
+        id: "143495"
+      - source: wikidata
+        id: Q739132
+      - source: gbif
+        id: "4965667"
+      - source: eol
+        id: "10657572"
+    species:
+      - name: Tianyulong confuciusi
+        etymology: Honors Confucius (Kong Fuzi), the influential Chinese philosopher and founder of Confucianism.
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Middle Jurassic
+            - Late Jurassic
+          stage:
+            - Callovian
+            - Oxfordian
+          from_ma: 165.3
+          to_ma: 157.3
+        location:
+          country: CN
+          region: Liaoning
+          formation: Tiaojishan
+          locality: Jianchang County
+          coordinates:
+            - 40.868057
+            - 119.991112
+        holotype:
+          specimen_id:
+            - STMN 26-3
+          specimen_type: holotype
+          institution: Shandong Tianyu Museum of Nature
+          material: "Incomplete skeleton: partial skull and mandible, partial presacral vertebrae, proximal-middle caudal vertebrae, nearly complete right scapula, both humeri, proximal end of left ulna, partial pubes, both ischia, both femora, right tibia and fibula and pes, and filamentous integumentary structures."
+        size:
+          length_m:
+            min: 0.7
+            max: 0.7
+        described: 2009
+        authors: Zheng et al.
+        described_in: zheng2009b
+    references:
+      - id: zheng2009b
+        authors: Zheng, Xiao-Ting; You, Hai-Lu; Xu, Xing; Dong, Zhi-Ming
+        year: 2009
+        title: An Early Cretaceous heterodontosaurid dinosaur with filamentous integumentary structures
+        journal: Nature
+        volume: "458"
+        issue: "7236"
+        pages: 333-336
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/nature07856
+        url: http://dx.doi.org/10.1038/nature07856
+        notes: Erects Tianyulong confuciusi as a heterodontosaurid with three patches of unbranched, hollow filamentous integument; framed as more similar to Psittacosaurus bristles than to theropod protofeathers.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Heterodontosauridae
   Tianyuraptor:
     genus: Tianyuraptor
     parent: Dromaeosauridae
@@ -105941,7 +106027,7 @@ genera:
             - 121.416664
         described: 2009
         authors: Zheng et al.
-        described_in: zheng2009
+        described_in: zheng2009a
         holotype:
           specimen_id:
             - STM1-3
@@ -105949,7 +106035,7 @@ genera:
           institution: Shandong Tianyu Museum of Nature
           material: Nearly complete and fully articulated skeleton
     references:
-      - id: zheng2009
+      - id: zheng2009a
         authors: Zheng, Xiaoting; Xu, Xing; You, Hailu; Zhao, Qi; Dong, Zhiming
         year: 2009
         title: A short-armed dromaeosaurid from the Jehol Group of China with implications for early dromaeosaurid evolution
