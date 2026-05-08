@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-05-08T05:47:54.835Z
+  built_at: 2026-05-08T06:06:40.659Z
   clade_count: 248
-  genus_count: 1331
+  genus_count: 1332
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.05"
@@ -116771,6 +116771,85 @@ genera:
       - Deinonychosauria
       - Dromaeosauridae
       - Unenlagiinae
+  Yuanmouraptor:
+    genus: Yuanmouraptor
+    parent: Metriacanthosauridae
+    etymology: From 'Yuanmou' (Yuanmou County, Yunnan Province, China, the type locality) and Latin 'raptor' (robber).
+    description: Yuanmouraptor is an extinct genus of basal metriacanthosaurid theropod from the early Middle Jurassic (Aalenian-Bajocian) Zhanghe Formation at Xiabanjing Village, Yuanmou County, Chuxiong Yi Autonomous Prefecture, Yunnan Province, China. The single species, Yuanmouraptor jinshajiangensis, is known from a near-complete skull with mandible (reconstructed length ~60 cm) articulated with 10 cervical vertebrae and the first dorsal (LFGT-ZLJ0115). Zou et al. (2025) recover Yuanmouraptor as the most basal-branching member of Metriacanthosauridae in their equal-weights phylogenetic analysis.
+    diet: carnivore
+    locomotion: bipedal
+    paleoenvironment:
+      - fluvial
+    diagnostic_features:
+      - Anterior process of postorbital sheet-shaped with depth remaining consistent throughout its length.
+      - Ventral ramus of postorbital bearing a laterally twisted trough running along its lateral surface.
+      - Strongly posteriorly elongated epipophyses on anterior cervical vertebrae.
+      - Strongly ventromedially excavated pneumatic foramen on the third cervical vertebra.
+      - Posterior cervical vertebrae with sheet-shaped and subrectangular neural spines.
+    identifiers:
+      - source: pbdb
+        id: "519536"
+      - source: wikidata
+        id: Q15909169
+    species:
+      - name: Yuanmouraptor jinshajiangensis
+        etymology: From 'Jinshajiang' (the Jinsha River, the middle reach of the Yangtze) and Latin '-ensis' (of); the type locality lies on the river's north bank in Yuanmou County.
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Middle Jurassic
+          stage:
+            - Aalenian
+            - Bajocian
+          from_ma: 174.1
+          to_ma: 168.3
+        location:
+          country: CN
+          region: Yunnan
+          formation: Zhanghe
+          locality: Xiabanjing Village, Yuanmou County
+          coordinates:
+            - 26
+            - 101.86
+        holotype:
+          specimen_id:
+            - LFGT-ZLJ0115
+          specimen_type: holotype
+          institution: Center for Dinosaur Research and Protection, Bureau of Natural Resources of Lufeng City
+          material: Nearly complete skull with mandible and 11 articulated anterior vertebrae comprising 10 cervical vertebrae and the first dorsal vertebra.
+        described: 2025
+        authors: Zou et al.
+        described_in: zou2025
+    references:
+      - id: zou2025
+        authors: Zou, Yi; Chen, Li; Wang, Tao; Wang, Guo-Fu; Zhang, Wei-Gang; Zhang, Xiao-Qin; Wang, Zhen-Ji; Wu, Xiao-Chun; You, Hai-Lu
+        year: 2025
+        title: A new metriacanthosaurid theropod dinosaur from the Middle Jurassic of Yunnan Province, China
+        journal: PeerJ
+        volume: "13"
+        pages: e19218
+        publisher: PeerJ
+        doi: 10.7717/peerj.19218
+        url: http://dx.doi.org/10.7717/peerj.19218
+        notes: Erects Yuanmouraptor on a near-complete skull and articulated anterior cervical column; recovered as the most basal-branching metriacanthosaurid in equal-weights phylogenetic analysis.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Allosauroidea
+      - Metriacanthosauridae
   Yuanmousaurus:
     genus: Yuanmousaurus
     parent: Mamenchisauridae
