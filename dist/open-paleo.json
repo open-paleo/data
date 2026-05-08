@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-08T02:31:11.734Z",
+    "built_at": "2026-05-08T05:47:54.835Z",
     "clade_count": 248,
-    "genus_count": 1330,
+    "genus_count": 1331,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
     "version": "2026.05"
@@ -151298,6 +151298,107 @@
         "Tetanurae",
         "Allosauroidea",
         "Metriacanthosauridae"
+      ]
+    },
+    "Yantaloong": {
+      "genus": "Yantaloong",
+      "parent": "Eusauropoda",
+      "etymology": "From Chinese 'Yanta' (wild goose tower, a noted historical site in the Chuxiong Yi Autonomous Prefecture where the holotype was collected) and Mandarin 'loong' (dragon).",
+      "description": "Yantaloong is an extinct genus of basal eusauropod dinosaur from the Middle Jurassic middle Zhanghe Formation at Zhongbanjing Village, Yuanmou County, Chuxiong Yi Autonomous Prefecture, Yunnan Province, China. The single species, Yantaloong lini, is known from six nearly complete presacral vertebrae of an adult individual. Phylogenetic analyses by Zhang et al. (2026) recover Yantaloong as an early-branching member of an expanded Turiasauria, in a clade with Lapparentosaurus, Atlasaurus, and Jobaria, sister to the 'traditional' Iberian / North American turiasaurians. The authors claim Yantaloong is the first turiasaurian sauropod known from East Asia and argue its presence undermines the hypothesized East Asian sauropodomorph isolation. The expanded Turiasauria definition is single-paper-recent; the conservative parent Eusauropoda is used here pending broader adoption.",
+      "diet": "herbivore",
+      "locomotion": "quadrupedal",
+      "paleoenvironment": [
+        "fluvial"
+      ],
+      "diagnostic_features": [
+        "Posterior-most cervical vertebra bears a bifurcated posterior centrodiapophyseal lamina (bif.PCDL) and a bifurcated centropostzygapophyseal lamina (bif.CPOL).",
+        "Anterior-most dorsal vertebra has both an upper and a lower anterior centroparapophyseal lamina (u.ACPL and l.ACPL), with a small fossa at the anteroventral corner of the parapophysis.",
+        "Middle dorsal vertebrae bear a lamina-like anteromedial centropostzygapophyseal lamina (am.CPOL) and a prezygoparapophyseal lamina (PRPL) bifurcated both dorsally and ventrally with a ventral PRPL fossa.",
+        "Middle dorsal vertebrae possess a rhombus-shaped hyposphene supported by a vertical ventral infrahyposphenal lamina and paired ventrolateral infrahyposphenal laminae.",
+        "Posterior dorsal neural arches bear a dorsoventrally elongated oval-shaped hyposphene."
+      ],
+      "identifiers": [
+        {
+          "source": "wikidata",
+          "id": "Q138009332"
+        }
+      ],
+      "species": [
+        {
+          "name": "Yantaloong lini",
+          "etymology": "Honors Professor Wenxun Lin for his contributions to Chinese economic history studies and his support for paleontological research in Yunnan.",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Jurassic",
+              "Middle Jurassic"
+            ],
+            "stage": [
+              "Toarcian",
+              "Aalenian",
+              "Bajocian",
+              "Bathonian"
+            ],
+            "from_ma": 182.7,
+            "to_ma": 166.1
+          },
+          "location": {
+            "country": "CN",
+            "region": "Yunnan",
+            "formation": "Zhanghe",
+            "locality": "Zhongbanjing Village, Yuanmou County",
+            "coordinates": [
+              25.7,
+              101.87
+            ]
+          },
+          "holotype": {
+            "specimen_id": [
+              "LFGT-ZLJ0073"
+            ],
+            "specimen_type": "holotype",
+            "institution": "Center for Dinosaur Research and Protection, Bureau of Natural Resources of Lufeng City",
+            "material": "Six nearly complete presacral vertebrae from a single individual — one possible posterior-most cervical and five dorsals (anterior-most through posterior)."
+          },
+          "described": 2026,
+          "authors": "Zhang et al.",
+          "described_in": "zhang2026"
+        }
+      ],
+      "references": [
+        {
+          "id": "zhang2026",
+          "authors": "Zhang, Xiao-Qin; Wang, Ya-Ming; Wang, Zhen-Ji; Wang, Yan-Chao; Wang, Tao; Wang, Guo-Fu; Zou, Yi; Dong, Qi-Xing; Su, Xing; Jiang, Hua; Wang, Yan-Jun; You, Hai-Lu",
+          "year": 2026,
+          "title": "The first turiasaurian sauropod (Dinosauria: Eusauropoda) from East Asia",
+          "journal": "Zoological Journal of the Linnean Society",
+          "volume": "206",
+          "issue": "2",
+          "article_number": "zlaf201",
+          "publisher": "Oxford University Press",
+          "doi": "10.1093/zoolinnean/zlaf201",
+          "url": "http://dx.doi.org/10.1093/zoolinnean/zlaf201",
+          "notes": "Erects Yantaloong as the first turiasaurian sauropod from East Asia; proposes an expanded Turiasauria including Lapparentosaurus, Atlasaurus, and Jobaria."
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda"
       ]
     },
     "Yehuecauhceratops": {
