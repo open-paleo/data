@@ -49,7 +49,7 @@ None. Every Manual-flagged genus had a real reason to be flagged: it is either m
 | 1306 | Pulaosaurus | Manual | 2025 Yang, King & Xu. Tiaojishan Fm neornithischian with preserved ossified larynx and gut contents (cololites). First neornithischian from Yanliao Biota. [done e8d5af2] |
 | 1469 | Sinotyrannus | Disputed | 2009 Ji et al. Jiufotang Fm proceratosaurid; 2025 Cau & Paterna proposed it as the adult of "compsognathid" Huaxiagnathus, but this is single-paper-recent and not consensus. Treat as valid; note synonymy hypothesis in classification notes. [done 5fbacbf] |
 | 1535 | Taleta | Manual | 2025 Longrich et al. Oulad Abdoun phosphates lambeosaurine; third African arenysaurin after Ajnabia and Minqaria. T. taleta; two maxillae. [done ec13024] |
-| 1595 | Tianyulong | Disputed | 2009 Zheng et al. Tiaojishan Fm (formerly Yixian/Jehol) Middle Jurassic heterodontosaurid with filamentous integument. Valid taxon; "Disputed" flag appears stale. |
+| 1595 | Tianyulong | Disputed | 2009 Zheng et al. Tiaojishan Fm (formerly Yixian/Jehol) Middle Jurassic heterodontosaurid with filamentous integument. Valid taxon; "Disputed" flag appears stale. [done d6d1410] |
 | 1667 | Utetitan | Manual | 2025 Paul. North Horn / Black Peaks / Javelina Fm titanosaurian, ex-Alamosaurus. New subfamily Utetitaninae. |
 | 1710 | Wudingloong | Manual | 2025 Wang et al. Yubacun Fm massopodan sauropodomorph; oldest sauropodomorph known from East Asia. |
 | 1747 | Yantaloong | Manual | 2026 Zhang et al. Zhanghe Fm eusauropod; placed near Jobaria/Lapparentosaurus, possibly in expanded Turiasauria — first Asian if so. |
