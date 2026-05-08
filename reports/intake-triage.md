@@ -61,7 +61,7 @@ None. Every Manual-flagged genus had a real reason to be flagged: it is either m
 |---|---|---|---|
 | 107 | Ankylosaurus | Manual | Type genus of Ankylosauridae; 1908 Brown; only ~5 specimens but extensive published anatomy and 100+ years of armor-arrangement debates. [done 4b3ab32] |
 | 251 | Brachiosaurus | Manual | Type of Brachiosauridae; 1903 Riggs; B. altithorax holotype + Felch Quarry skull, plus Giraffatitan / Lusotitan / Vouivria split-offs over 120 yr history. [done 8c1527c] |
-| 314 | Ceratosaurus | Manual | Type of Ceratosauridae; 1884 Marsh; multi-species (C. nasicornis, C. dentisulcatus, C. magnicornis), occurrences in NA, Portugal, possibly Africa/Uruguay. |
+| 314 | Ceratosaurus | Manual | Type of Ceratosauridae; 1884 Marsh; multi-species (C. nasicornis, C. dentisulcatus, C. magnicornis), occurrences in NA, Portugal, possibly Africa/Uruguay. [done 879d878] |
 | 363 | Coelophysis | Manual | 1889 Cope; Ghost Ranch quarry yielded over 1,000 individuals; ICZN neotype ruling 1996 (Rioarribasaurus rejected); Megapnosaurus / "Syntarsus" split. |
 | 448 | Diplodocus | Manual | 1878 Marsh; "Dippy" cast distributed worldwide; D. carnegii, D. hallorum (ex-Seismosaurus); centerpiece of Bone Wars and Second Dinosaur Rush. |
 | 749 | Iguanodon | Manual | 1825 Mantell; one of the original three dinosaurs; ICZN-changed type species to I. bernissartensis; complex split-offs (Mantellisaurus, Barilium, Hypselospinus, Paulodon). |
