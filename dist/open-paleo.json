@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-07T23:53:05.805Z",
+    "built_at": "2026-05-08T00:14:15.336Z",
     "clade_count": 248,
-    "genus_count": 1325,
+    "genus_count": 1326,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
     "version": "2026.05"
@@ -128266,6 +128266,115 @@
         "Dinosauria",
         "Saurischia",
         "Theropoda"
+      ]
+    },
+    "Sinotyrannus": {
+      "genus": "Sinotyrannus",
+      "parent": "Proceratosauridae",
+      "etymology": "From Latin 'Sinae' (a classical name for the Chinese) and Greek 'tyrannos' (tyrant); meaning 'Chinese tyrant'.",
+      "description": "Sinotyrannus is an extinct genus of large proceratosaurid tyrannosauroid theropod from the Aptian (Early Cretaceous) lower Jiufotang Formation of Kazuo County, western Liaoning Province, China — part of the Jehol Biota. The single species, Sinotyrannus kazuoensis, is known from a disarticulated skeleton (KZV-001) including the anterior skull and mandibles, three articulated dorsal vertebrae, ribs, partial ilia, and manual phalanges. Originally placed within Tyrannosauroidea (and tentatively Tyrannosauridae) by Ji et al. (2009), subsequent phylogenetic analyses (Loewen et al. 2013, and others) recovered Sinotyrannus as a basal proceratosaurid. With an estimated body length of ~9-10 m, it is one of the largest known Early Cretaceous tyrannosauroids. Cau & Paterna (2025) proposed Sinotyrannus as the adult morphotype of the coeval compsognathid Huaxiagnathus, but that hypothesis is single-paper-recent and not yet a community consensus; the genus is treated as valid here.",
+      "diet": "carnivore",
+      "locomotion": "bipedal",
+      "paleoenvironment": [
+        "lacustrine"
+      ],
+      "diagnostic_features": [
+        "Proportionally large external naris, long-oval in shape with a long axis of 212 mm.",
+        "Anterior portion of the dorsal margin of the maxilla slightly concave.",
+        "Maxillary fenestra reaches past the rostral margin of the antorbital fossa but stays separated from its ventral margin.",
+        "Preacetabular blade of the ilium short and lacking a ventrally expanded anterior hook."
+      ],
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "198891"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q1187687"
+        },
+        {
+          "source": "eol",
+          "id": "47458632"
+        }
+      ],
+      "species": [
+        {
+          "name": "Sinotyrannus kazuoensis",
+          "etymology": "From 'Kazuo', referring to Kazuo County in western Liaoning Province, China, where the type specimen was found.",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Aptian"
+            ],
+            "from_ma": 121.4,
+            "to_ma": 113.2
+          },
+          "location": {
+            "country": "CN",
+            "region": "Liaoning",
+            "formation": "Jiufotang",
+            "locality": "Dachengzi, Kazuo County",
+            "coordinates": [
+              41.123329,
+              119.741699
+            ]
+          },
+          "holotype": {
+            "specimen_id": [
+              "KZV-001"
+            ],
+            "specimen_type": "holotype",
+            "institution": "Bureau of Land and Resources of Kazuo County",
+            "material": "Disarticulated skeleton: anterior portions of skull and mandibles, three articulated dorsal vertebrae, several dorsal ribs, incomplete ilia, partial manual phalanges, and fragmentary bones."
+          },
+          "size": {
+            "length_m": {
+              "min": 9,
+              "max": 10
+            }
+          },
+          "described": 2009,
+          "authors": "Ji et al.",
+          "described_in": "ji2009"
+        }
+      ],
+      "references": [
+        {
+          "id": "ji2009",
+          "authors": "Ji, Q.; Ji, S.-A.; Zhang, L.-J.",
+          "year": 2009,
+          "title": "First large tyrannosauroid theropod from the Early Cretaceous Jehol Biota in northeastern China",
+          "journal": "Geological Bulletin of China",
+          "volume": "28",
+          "issue": "10",
+          "pages": "1369-1374",
+          "publisher": "Geological Publishing House",
+          "notes": "Erects Sinotyrannus kazuoensis as a large early-diverging tyrannosauroid; later analyses moved it to Proceratosauridae."
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Coelurosauria",
+        "Tyrannosauroidea",
+        "Proceratosauridae"
       ]
     },
     "Sinovenator": {
