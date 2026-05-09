@@ -97,7 +97,7 @@ defines the appropriate intake discipline per category.
 | 263 | Brohisaurus | Disputed | Sembar Fm Pakistan; titanosaur per Malkani 2003 but no diagnostic synapomorphies; 2025 ankylosaur reinterpretation in predatory publisher. Nomen dubium. [done d91fd68] |
 | 282 | Calamospondylus | Disputed | 1866 Fox; sacrum + iliac fragments now lost; nomen dubium per Naish 2002. Distinct from Calamosaurus (Lydekker 1891). [done 4e888bc] |
 | 313 | Ceratops | Disputed | Type genus of Ceratopsidae but nomen dubium based on horn cores + occipital condyle; possibly close to Avaceratops or Spiclypeus. Historically critical name. |
-| 332 | Chiayusaurus | Disputed | Two species; Barremian Xinminbao Group + Hasandong Fm Korea; both dubious teeth-only taxa per Barrett et al. 2002. |
+| 332 | Chiayusaurus | Disputed | Two species; Barremian Xinminbao Group + Hasandong Fm Korea; both dubious teeth-only taxa per Barrett et al. 2002. [done 7e123b8] |
 | 360 | Clasmodosaurus | Manual | Mata Amarilla / Cerro Fortaleza titanosaur teeth; Powell 1986 + later work treat as dubious sauropod, though "diagnosed by unique combination of characters" per recent revision. |
 | 365 | Coeluroides | Manual | Lameta Fm caudal vertebrae; long considered nomen dubium but 2004 review found probably valid (and possibly senior synonym of Ornithomimoides per SVP 2012 abstract). Stub. |
 | 384 | Craspedodon | Manual | Lonzée Member ornithischian teeth; 2007 Godefroit & Lambert reidentified as European neoceratopsian; Ajkaceratops describers proposed hadrosauroid alternative. Validity uncertain. |
