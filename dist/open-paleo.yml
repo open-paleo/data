@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-05-09T21:08:12.719Z
+  built_at: 2026-05-09T21:56:28.971Z
   clade_count: 248
-  genus_count: 1349
+  genus_count: 1350
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.05"
@@ -53900,6 +53900,92 @@ genera:
       - Ornithopoda
       - Clypeodonta
       - Hypsilophodontidae
+  Hypsirhophus:
+    genus: Hypsirhophus
+    parent: Stegosauridae
+    etymology: From Greek hypsi (high) and rhophos (roof); meaning "high roof", referring to the tall dorsal vertebrae. Cope's original spelling "Hypsirophus" (without the second h) is considered a typesetting variant.
+    description: |
+      Hypsirhophus is a genus of stegosaurian dinosaurs. It contains a single species, Hypsirhophus discurus, which is known only from a fragmentary specimen. The fossil consists of partial vertebrae from the back, three from the tail, and a piece of rib.
+    diet: herbivore
+    locomotion: quadrupedal
+    identifiers:
+      - source: pbdb
+        id: "54208"
+      - source: wikidata
+        id: Q15723432
+    synonyms:
+      - name: Hypsirhophus seeleyanus
+        type: nomen nudum
+        reason: Second species erected by Cope (1879) on dorsal and caudal vertebrae, teeth, and a femur from an unknown locality in Colorado named in honor of Professor Seeley; the original description is generally regarded as inadequate, making the name a nomen nudum.
+    species:
+      - name: Hypsirhophus discurus
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Tithonian
+          from_ma: 149.2
+          to_ma: 145
+        location:
+          country: US
+          region: Colorado
+          formation: Morrison
+          locality: Cope's Quarry 3, Garden Park (near Cañon City)
+          coordinates:
+            - 38.55
+            - -105.13
+        holotype:
+          specimen_id:
+            - AMNH 5731
+          specimen_type: holotype
+          institution: American Museum of Natural History
+          material: Dorsal vertebra with elevated zygapophyses on a stem of neurapophyses, two partial neural spines, two caudal centra, and a rib fragment; transferred to AMNH after Cope's death (1897).
+        described: 1878
+        authors: Cope
+        described_in: cope1878
+    references:
+      - id: cope1878
+        authors: Cope, E.D.
+        year: 1878
+        title: A new genus of Dinosauria from Colorado
+        journal: American Naturalist
+        volume: "12"
+        issue: "3"
+        pages: 188-189
+        notes: Brief General Notes entry erecting Hypsirhophus discurus on vertebral material from the "Dakota Beds" of Colorado (now Morrison Formation); Cope placed the genus near Laelaps and Megalosaurus.
+      - id: cope1879
+        authors: Cope, E.D.
+        year: 1879
+        title: New Jurassic Dinosauria
+        journal: American Naturalist
+        volume: "13"
+        pages: 402-404
+        notes: Reaffirms the affinities of Hypsirhophus and erects H. seeleyanus as a second species (later treated as a nomen nudum); same paper also names Camarasaurus leptodirus.
+      - id: carpenter2001b
+        authors: Carpenter, K.; Miles, C.A.; Cloward, K.
+        year: 2001
+        title: New primitive stegosaur from the Morrison Formation, Wyoming
+        journal: The Armored Dinosaurs (Carpenter, K., ed.)
+        publisher: Indiana University Press, Bloomington
+        pages: 55-75
+        notes: Treats Hypsirhophus discurus as valid, stating it "differs enough from Stegosaurus to warrant recognition"; restricts it to Morrison Dinosaur Zone 4.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Thyreophora
+      - Stegosauria
+      - Stegosauridae
   Iani:
     genus: Iani
     parent: Tenontosauridae
