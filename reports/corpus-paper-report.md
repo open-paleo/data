@@ -43,6 +43,7 @@ up automatically once the markdown is restored.
 | Tochisaurus | `kurzanov1991` | T | Markdown only 10 lines — abstract/stub-only; body of Kurzanov & Osmólska 1991 not captured. |
 | Yandusaurus | `he1979` | Y | YAML `described_in` corrected from `sereno1986` (a 1986 phylogenetic review using *Yandusaurus* only as a terminal taxon) to `he1979` (He, *A newly discovered ornithopod dinosaur Yandusaurus from Zigong, Sichuan*, in *Contributions to International Exchange of Geology. Part 2. Stratigraphy and paleontology*, Geological Publishing House, Beijing, pp. 116–123). Corpus does not yet contain `he1979.md`; once added, re-run extraction. |
 | Zapsalis | `marsh1877c` | Z | Markdown 78 lines but agent reports "target taxon not found in paper". Wrong-paper-content pattern — `marsh1877c` may describe different taxa, or the *Zapsalis* portion didn't render. Re-investigate: Marsh 1877 has multiple papers and one of them is the *Zapsalis abradens* description. |
+| Embasaurus | `riabinin1931` | E | Russian-language describing paper (Riabinin 1931, Trudy GGRU 78:1-8) is not in corpus and was reported as not easily obtainable. Bucket D Cat III intake built as a Wikipedia-paragraph-1 stub; reference metadata cited from secondary literature. Once obtained, re-extract for holotype number, autapomorphies (if any), and verify the Berriasian age assignment against the Neocomian Sands description. |
 
 ### Pending Resolution Papers
 
