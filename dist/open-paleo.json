@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-08T23:54:03.030Z",
+    "built_at": "2026-05-09T00:31:14.791Z",
     "clade_count": 248,
     "genus_count": 1334,
     "license": "CC-BY-4.0",
@@ -5457,7 +5457,7 @@
       ],
       "references": [
         {
-          "id": "marsh1878sauropoda",
+          "id": "marsh1878b",
           "authors": "Marsh, O.C.",
           "year": 1878,
           "title": "Principal characters of American Jurassic dinosaurs, Part I",
@@ -44811,61 +44811,62 @@
     },
     "Diplodocus": {
       "genus": "Diplodocus",
-      "parent": "Diplodocidae",
+      "parent": "Diplodocinae",
+      "etymology": "From Greek 'diplos' (double) and 'dokos' (beam), referring to the double-beamed chevrons of the tail (with both anterior and posterior rami) that distinguished the genus when Marsh erected it in 1878.",
       "pronunciation": {
-        "phonetic": "di-PLOD-o-kus",
-        "ipa": "/dɪˈplɒdəkəs/"
+        "ipa": "/dɪˈplɒdəkəs/",
+        "phonetic": "di-PLOD-o-kus"
       },
-      "etymology": "From Greek diplos (double) + dokos (beam): 'double beam', referring to the double-beamed chevron bones on the underside of the tail.",
-      "description": "A genus of diplodocid sauropod dinosaur from the Late Jurassic of western North America. Diplodocus is among the most easily identifiable dinosaurs, with its classic sauropod shape of a long neck and tail, with four sturdy legs. It was one of the longer dinosaurs, with some species reaching over 25 metres in length.\n",
+      "description": "Diplodocus is the type genus of Diplodocidae and one of the most iconic and best-known sauropod dinosaurs of the Late Jurassic Morrison Formation of western North America. Othniel Charles Marsh erected the genus in 1878 on a partial tail and posterior limb (YPM 1920) collected near Cañon City, Colorado, by S. W. Williston, designating Diplodocus longus as the type species. John Bell Hatcher (1901) produced the first comprehensive osteological monograph of the genus based on the near-complete Carnegie Museum specimens CM 84 and CM 94 from Sheep Creek in Albany County, Wyoming, and named those Carnegie skeletons as a new species, Diplodocus carnegii — the basis of the famous \"Dippy\" cast that Andrew Carnegie distributed to museums worldwide. Tschopp, Mateus and Benson (2015) reassessed all diplodocid material at the specimen level, argued that the fragmentary D. longus holotype was a nomen dubium, and applied to the ICZN to switch the type species to D. carnegii. The Commission ultimately ruled against the proposal in Opinion 2425 (2018), voting 16-4 to maintain D. longus as the type species. The same Tschopp et al. analysis recombined Seismosaurus hallorum (Gillette 1991) as Diplodocus hallorum and reassigned D. hayi (Holland 1924) to the new genus Galeamopus, leaving D. longus, D. carnegii, and D. hallorum as the three currently valid Diplodocus species.",
       "diet": "herbivore",
       "locomotion": "quadrupedal",
       "paleoenvironment": [
-        "fluvial",
-        "forested"
+        "fluvial"
       ],
       "appearance": {
-        "integument": "scaled",
-        "evidence": "inferred",
-        "features": [
-          "Extremely long, whip-like tail",
-          "Long neck with a relatively small, elongated skull",
-          "Peg-like teeth restricted to the front of the jaws"
-        ]
+        "integument": "scaled"
       },
       "diagnostic_features": [
-        "Peg-like teeth restricted to anterior portion of jaws",
-        "Extremely elongated caudal vertebrae with double-beam chevrons",
-        "Anteriorly positioned nares"
+        "Anteriorly inclined base of the posterior dorsal neural spines (unique within Diplodocinae).",
+        "Transition from fan-shaped to normal caudal ribs occurs at or posterior to caudal vertebra 7-8 (unique among Diplodocidae).",
+        "Pneumatopores of anterior caudal centra persist through caudal vertebra 16 or more posteriorly (unique among Diplodocoidea).",
+        "Mid-caudal centra with trapezoidal articular surfaces (unique among Flagellicaudata).",
+        "Last caudal ribs occur on caudal vertebra 18 or more posteriorly.",
+        "Iliac blade height above the pubic peduncle ≥ 0.40 of its anteroposterior length (unique within Diplodocinae).",
+        "Anteromedially directed crest on the proximal fibula extending into a notch behind the cnemial crest of the tibia (unique within Diplodocinae).",
+        "Chevrons of the tail double-beamed (with both anterior and posterior rami) — Marsh's original diagnostic character and the source of the generic name."
       ],
       "identifiers": [
         {
+          "source": "pbdb",
+          "id": "38669"
+        },
+        {
           "source": "wikidata",
-          "id": "Q7560"
+          "id": "Q14330"
+        },
+        {
+          "source": "gbif",
+          "id": "4822550"
+        },
+        {
+          "source": "eol",
+          "id": "47459352"
         }
       ],
       "synonyms": [
         {
-          "name": "Seismosaurus",
+          "name": "Seismosaurus hallorum",
           "type": "junior subjective",
-          "reason": "Originally described as Seismosaurus halli (later emended to S. hallorum); subsequent analysis reassigned the material to Diplodocus hallorum."
+          "reason": "Tschopp, Mateus & Benson (2015) recombined Seismosaurus hallorum Gillette 1991 as Diplodocus hallorum on phylogenetic and pairwise- dissimilarity grounds, treating the differences as species-level rather than generic-level."
         }
       ],
       "species": [
         {
           "name": "Diplodocus longus",
+          "etymology": "From Latin 'longus' (long), referring to the long tail of the holotype.",
           "status": "valid",
           "type_species": true,
-          "completeness": "partial",
-          "etymology": "From Latin 'longus' meaning 'long', in reference to the animal's great length.",
-          "holotype": {
-            "specimen_id": [
-              "YPM VP 1920"
-            ],
-            "specimen_type": "holotype",
-            "institution": "Yale Peabody Museum of Natural History",
-            "material": "caudal vertebrae and chevrons"
-          },
           "period": {
             "name": [
               "Late Jurassic"
@@ -44880,80 +44881,127 @@
           "location": {
             "country": "US",
             "region": "Colorado",
-            "locality": "Canon City",
             "formation": "Morrison",
+            "locality": "near Cañon City (Garden Park area)",
             "coordinates": [
-              38.4,
-              -105.2
+              38.42,
+              -105.3
             ]
           },
-          "size": {
-            "length_m": {
-              "min": 24,
-              "max": 26
-            }
+          "holotype": {
+            "specimen_id": [
+              "YPM 1920"
+            ],
+            "specimen_type": "holotype",
+            "institution": "Yale Peabody Museum of Natural History",
+            "material": "Posterior limb (femur, tibia, fibula) and tail with chevrons of a single individual; the tail is reduced to roughly two near- complete caudal vertebrae as currently preserved."
           },
           "described": 1878,
           "authors": "Marsh",
-          "description": "The type species of Diplodocus, originally described from caudal vertebrae. The distinctive double-beam chevron bones give the genus its name.\n"
+          "described_in": "marsh1878b"
         },
         {
           "name": "Diplodocus carnegii",
+          "etymology": "Honors Andrew Carnegie, the Pittsburgh industrialist and patron of the Carnegie Museum of Natural History whose funding sent collectors to the Sheep Creek quarry.",
           "status": "valid",
-          "completeness": "complete",
-          "etymology": "Named for Scottish-American industrialist and philanthropist Andrew Carnegie, who funded the Carnegie Museum of Natural History's paleontological expeditions that recovered the holotype.",
+          "type_species": false,
           "period": {
             "name": [
               "Late Jurassic"
             ],
             "stage": [
-              "Kimmeridgian"
-            ]
+              "Kimmeridgian",
+              "Tithonian"
+            ],
+            "from_ma": 154.8,
+            "to_ma": 145
           },
           "location": {
             "country": "US",
             "region": "Wyoming",
-            "locality": "Sheep Creek",
-            "formation": "Morrison"
+            "formation": "Morrison",
+            "locality": "Sheep Creek (Camp Carnegie quarry, Quarry D), Albany County",
+            "coordinates": [
+              41.97,
+              -106.55
+            ]
           },
           "size": {
             "length_m": {
               "min": 24,
               "max": 26
+            },
+            "weight_kg": {
+              "min": 11000,
+              "max": 17000
             }
           },
-          "described": 1901,
-          "authors": "Hatcher",
-          "description": "Known from one of the most complete sauropod skeletons ever found. Casts of the skeleton were distributed to museums worldwide, making it one of the most mounted dinosaur skeletons in the world.\n",
           "holotype": {
             "specimen_id": [
               "CM 84"
             ],
             "specimen_type": "holotype",
-            "institution": "Carnegie Museum of Natural History"
-          }
+            "institution": "Carnegie Museum of Natural History",
+            "material": "Articulated partial skeleton — 41 axial vertebrae (axis through caudal 12), pelvis, right femur, right scapulocoracoid, and 18 ribs; CM 94 (a more complete pelvis, hindlimb, and right pes) was designated cotype."
+          },
+          "described": 1901,
+          "authors": "Hatcher",
+          "described_in": "hatcher1901"
         }
       ],
       "references": [
         {
           "id": "marsh1878b",
-          "authors": "Marsh, O.C.",
+          "authors": "Marsh, O. C.",
           "year": 1878,
           "title": "Principal characters of American Jurassic dinosaurs, Part I",
           "journal": "American Journal of Science",
           "volume": "16",
-          "pages": "411-416"
+          "issue": "95",
+          "pages": "411-416",
+          "publisher": "American Journal of Science",
+          "doi": "10.2475/ajs.s3-16.95.411",
+          "url": "http://dx.doi.org/10.2475/ajs.s3-16.95.411",
+          "notes": "Erects Diplodocus longus on YPM 1920 from the Morrison Formation of Cañon City, Colorado, and formally proposes the suborder Sauropoda."
         },
         {
           "id": "hatcher1901",
-          "authors": "Hatcher, J.B.",
+          "authors": "Hatcher, J. B.",
           "year": 1901,
-          "title": "Diplodocus (Marsh): Its osteology, taxonomy, and probable habits, with a restoration of the skeleton",
+          "title": "Diplodocus (Marsh): its osteology, taxonomy, and probable habits, with a restoration of the skeleton",
           "journal": "Memoirs of the Carnegie Museum",
           "volume": "1",
           "pages": "1-63",
-          "doi": "10.5962/p.234818",
-          "url": "http://dx.doi.org/10.5962/p.234818"
+          "publisher": "Carnegie Institute",
+          "doi": "10.5962/p.234815",
+          "url": "http://dx.doi.org/10.5962/p.234815",
+          "notes": "First comprehensive osteology of the genus; names Diplodocus carnegii on CM 84 (cotype CM 94) from Sheep Creek, Wyoming — the Carnegie skeleton famously cast as 'Dippy' for distribution to museums."
+        },
+        {
+          "id": "tschopp2015",
+          "authors": "Tschopp, E.; Mateus, O.; Benson, R. B. J.",
+          "year": 2015,
+          "title": "A specimen-level phylogenetic analysis and taxonomic revision of Diplodocidae (Dinosauria, Sauropoda)",
+          "journal": "PeerJ",
+          "volume": "3",
+          "pages": "e857",
+          "publisher": "PeerJ",
+          "doi": "10.7717/peerj.857",
+          "url": "http://dx.doi.org/10.7717/peerj.857",
+          "notes": "Specimen-level phylogenetic revision; provides the modern revised diagnosis and proposes switching the type species to D. carnegii (subsequently rejected by ICZN Opinion 2425)."
+        },
+        {
+          "id": "iczn2018",
+          "authors": "International Commission on Zoological Nomenclature",
+          "year": 2018,
+          "title": "Opinion 2425. Diplodocus Marsh, 1878 (Dinosauria, Sauropoda): Diplodocus longus Marsh, 1878 maintained as the type species",
+          "journal": "Bulletin of Zoological Nomenclature",
+          "volume": "75",
+          "article_number": "a062",
+          "publisher": "International Trust for Zoological Nomenclature",
+          "doi": "10.21805/bzn.v75.a062",
+          "url": "http://dx.doi.org/10.21805/bzn.v75.a062",
+          "notes": "Resolves Case 3700 (Tschopp & Mateus 2016 application). The Commission voted 16-4-1 against using plenary power to switch the type species; D. longus is maintained as the type of Diplodocus."
         }
       ],
       "taxonomy": [
@@ -44968,8 +45016,17 @@
         "Dinosauria",
         "Saurischia",
         "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
         "Sauropoda",
-        "Diplodocidae"
+        "Gravisauria",
+        "Eusauropoda",
+        "Neosauropoda",
+        "Diplodocoidea",
+        "Diplodocimorpha",
+        "Flagellicaudata",
+        "Diplodocidae",
+        "Diplodocinae"
       ]
     },
     "Diplotomodon": {
