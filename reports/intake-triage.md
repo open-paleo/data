@@ -94,7 +94,7 @@ defines the appropriate intake discipline per category.
 | 232 | Bienosaurus | Disputed | Lower Lufeng Fm thyreophoran; 2019 Raven et al. concluded nomen dubium, possibly identical to Tatisaurus from same formation. [deferred dong2001-iup-book-chapter-not-easily-accessible; needs dong2001/dong2001a/dong2001b disambiguation when picked up] |
 | 250 | Bothriospondylus | Disputed | Mannion 2010 declared B. suffossus a nomen dubium; non-type species split off as Marmarospondylus, Vouivria, Lapparentosaurus, Narindasaurus. |
 | 254 | Brachypodosaurus | Disputed | Lameta Fm; possibly ankylosaurian humerus, but element identification disputed; nomen dubium per Lamanna et al. 2004. [deferred chakravarti1934-not-easily-accessible] |
-| 263 | Brohisaurus | Disputed | Sembar Fm Pakistan; titanosaur per Malkani 2003 but no diagnostic synapomorphies; 2025 ankylosaur reinterpretation in predatory publisher. Nomen dubium. |
+| 263 | Brohisaurus | Disputed | Sembar Fm Pakistan; titanosaur per Malkani 2003 but no diagnostic synapomorphies; 2025 ankylosaur reinterpretation in predatory publisher. Nomen dubium. [done d91fd68] |
 | 282 | Calamospondylus | Disputed | 1866 Fox; sacrum + iliac fragments now lost; nomen dubium per Naish 2002. Distinct from Calamosaurus (Lydekker 1891). |
 | 313 | Ceratops | Disputed | Type genus of Ceratopsidae but nomen dubium based on horn cores + occipital condyle; possibly close to Avaceratops or Spiclypeus. Historically critical name. |
 | 332 | Chiayusaurus | Disputed | Two species; Barremian Xinminbao Group + Hasandong Fm Korea; both dubious teeth-only taxa per Barrett et al. 2002. |
