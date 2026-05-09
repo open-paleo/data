@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-09T05:57:19.336Z",
+    "built_at": "2026-05-09T06:01:26.627Z",
     "clade_count": 248,
-    "genus_count": 1339,
+    "genus_count": 1340,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
     "version": "2026.05"
@@ -21115,6 +21115,98 @@
         "Coelurosauria",
         "Maniraptora",
         "Dromaeosauridae"
+      ]
+    },
+    "Asiatosaurus": {
+      "genus": "Asiatosaurus",
+      "parent": "Sauropoda",
+      "etymology": "From Greek Asia and sauros (lizard); meaning \"Asian lizard\", with the genus name explicitly derived in the original description.",
+      "description": "Asiatosaurus is a dubious sauropod tooth-taxon erected by Osborn (1924) on isolated camarasaur-like teeth from the Öösh Formation of Mongolia. The type species A. mongoliensis is based on a single posterior dentary tooth (AMNH 6264) from the Oshih basin; Osborn himself noted that the holotype and paratype might not belong to the same individual or even the same species. A second nominal species (A. kwangshiensis) was named on a tooth from China and is also generally treated as a nomen dubium. Asiatosaurus has been variably placed in Camarasauridae, Brachiosauridae, and Euhelopodidae over the decades, but the fragmentary nature of the type material precludes confident placement.\n",
+      "diet": "herbivore",
+      "locomotion": "quadrupedal",
+      "diagnostic_features": [
+        "Subspatulate dentary tooth crown with an asymmetric apex; the internal (lingual) surface is spoon-shaped near the crown tip, bearing a small median vertical groove.",
+        "Tooth crown more robust anteroposteriorly than in classic Morrison-Formation camarasaurs, with two lateral grooves on the external surface flanking the apex."
+      ],
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "38704"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q680860"
+        },
+        {
+          "source": "gbif",
+          "id": "4822802"
+        }
+      ],
+      "species": [
+        {
+          "name": "Asiatosaurus mongoliensis",
+          "etymology": "From mongoliensis (\"of Mongolia\"), referring to the country of origin of the holotype.",
+          "status": "nomen dubium",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Aptian",
+              "Albian"
+            ],
+            "from_ma": 113,
+            "to_ma": 105
+          },
+          "location": {
+            "country": "MN",
+            "region": "Ömnögov",
+            "formation": "Öösh",
+            "locality": "Oshih basin",
+            "coordinates": [
+              44.5,
+              100.5
+            ]
+          },
+          "holotype": {
+            "specimen_id": [
+              "AMNH 6264"
+            ],
+            "specimen_type": "holotype",
+            "institution": "American Museum of Natural History",
+            "material": "Single posterior dentary tooth with a subspatulate crown bearing two lateral external grooves and one median internal groove."
+          },
+          "described": 1924,
+          "authors": "Osborn",
+          "described_in": "osborn1924a"
+        }
+      ],
+      "references": [
+        {
+          "id": "osborn1924a",
+          "authors": "Osborn, H.F.",
+          "year": 1924,
+          "title": "Sauropoda and Theropoda of the Lower Cretaceous of Mongolia",
+          "journal": "American Museum Novitates",
+          "volume": "128",
+          "pages": "1-16",
+          "notes": "Erects Asiatosaurus mongoliensis on AMNH 6264, an isolated posterior dentary tooth from the Öösh Formation of Mongolia; same paper also names Prodeinodon mongoliensis."
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Sauropoda"
       ]
     },
     "Asiatyrannus": {
