@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-09T01:16:49.044Z",
+    "built_at": "2026-05-09T02:20:56.196Z",
     "clade_count": 248,
     "genus_count": 1334,
     "license": "CC-BY-4.0",
@@ -130558,113 +130558,110 @@
     },
     "Spinosaurus": {
       "genus": "Spinosaurus",
-      "parent": "Spinosauridae",
+      "parent": "Spinosaurinae",
+      "etymology": "From Latin spina (spine, thorn) and Greek sauros (lizard); meaning \"spine lizard\", named for the conspicuously tall neural spines of the trunk vertebrae that supported a dorsal sail.",
       "pronunciation": {
         "phonetic": "SPIEN-o-SAWR-us",
         "ipa": "/ˌspaɪnəˈsɔːrəs/"
       },
-      "etymology": "From Latin spina, \"spine\" or \"thorn\", combined with Greek sauros, \"lizard\" - means \"spine lizard\", in reference to its elongated neural spines",
-      "description": "A genus of spinosaurid dinosaur from the Late Cretaceous of North Africa. Spinosaurus may have been the largest of all known carnivorous dinosaurs, even larger than Tyrannosaurus. It is distinguished by the tall neural spines on its vertebrae, which formed a prominent sail or hump along its back. Recent discoveries suggest it was semi-aquatic, adapted for hunting fish.\n",
+      "description": "Spinosaurus is the type genus of Spinosauridae and one of the most distinctive Cretaceous theropods, recognised for the enormously tall neural spines of its dorsal vertebrae that supported a dorsal sail or hump. The genus was erected by Ernst Stromer in 1915 on a partial skeleton recovered in 1912 by his collector Richard Markgraf from the Bahariya beds of the Western Desert of Egypt (specimen BSP 1912 VIII 19 in the Bayerische Staatssammlung in Munich). The original type material — including the iconic mandibles and elongate-spined dorsals — was destroyed in the British bombing of Munich in April 1944, leaving only Stromer's plates and descriptions. Stromer (1934) added more material, including a smaller specimen he treated informally as \"Spinosaurus B\" (later partly the basis of Russell's 1996 S. maroccanus). Ibrahim et al. (2014) designated FSAC-KK 11888, a partial skeleton from the Kem Kem beds of southeastern Morocco, as the neotype of S. aegyptiacus, and proposed on the basis of pachyostotic limb bones, retracted nostrils, and reduced hindlimbs that Spinosaurus was a semi-aquatic predator capable of obligate quadrupedal locomotion on land. Subsequent work (notably Ibrahim et al. 2020 on the paddle-tail and Sereno et al. 2022 in response) has continued to debate the degree of aquatic adaptation, but the broad picture of a piscivorous, river-dwelling spinosaurid with reduced hindlimbs and dense limb bones is now widely accepted.",
       "diet": "piscivore",
-      "locomotion": "bipedal",
+      "locomotion": "facultative",
       "paleoenvironment": [
         "fluvial",
+        "deltaic",
         "coastal"
       ],
       "appearance": {
         "integument": "scaled",
-        "evidence": "inferred",
-        "features": [
-          "Tall neural spine sail along the back",
-          "Elongated, crocodile-like snout",
-          "Conical teeth adapted for catching fish",
-          "Paddle-like tail for swimming"
-        ]
+        "evidence": "inferred"
       },
       "diagnostic_features": [
-        "Extremely elongated neural spines forming a dorsal sail",
-        "Elongated rostrum with conical, unserrated teeth",
-        "Retracted nares positioned far back on the skull"
+        "Dentary rami long and low-set in the middle, bearing about 15 awl-shaped teeth per ramus, with strongly heterodont positions (large 2nd-4th, small 5th-10th, larger 11th-14th).",
+        "Teeth straight to gently curved, sub-circular in cross-section, with smooth (non-serrated) anterior and posterior keels.",
+        "Fleshy nostril retracted to a posteriorly placed narial fossa on the skull, far from the snout tip.",
+        "Free dorsal vertebral centra elongate, hourglass-shaped in dorsal view, and strongly opisthocoelous, lacking a ventral keel.",
+        "Neural spines of dorsal vertebrae extraordinarily tall (up to ~8x centrum height), laterally compressed, broadened ventrally and dorsally, supporting a dorsal sail.",
+        "Anterior dorsal centra exceptionally broad and concavoconvex, creating a horizontal cervicodorsal hinge.",
+        "Long bones (femur, tibia, manual phalanges) with solid shafts lacking an open medullary cavity; bone density 30-40% greater than in other large theropods (pachyostosis).",
+        "Femur substantially shorter than tibia and hindlimb length only ~19% of body length; iliac blade reduced to roughly half the surface area of other comparably sized theropods."
       ],
       "identifiers": [
         {
+          "source": "pbdb",
+          "id": "38598"
+        },
+        {
           "source": "wikidata",
-          "id": "Q40609"
+          "id": "Q130966"
+        },
+        {
+          "source": "gbif",
+          "id": "4822933"
+        },
+        {
+          "source": "eol",
+          "id": "4531253"
+        },
+        {
+          "source": "zoobank",
+          "id": "D702D3E3-8A17-450A-AE2A-998C53C58E48"
         }
       ],
       "synonyms": [
         {
-          "name": "Ostafrikasaurus",
-          "type": "possible subjective",
-          "reason": "Possible junior subjective synonym of Spinosaurus; identification is tentative. Per Olshevsky's Dinosaur Genera List."
-        },
-        {
-          "name": "Oxalaia",
-          "type": "possible subjective",
-          "reason": "Possible junior subjective synonym of Spinosaurus; identification is tentative. Per Olshevsky's Dinosaur Genera List."
-        },
-        {
-          "name": "Sigilmassasaurus",
-          "type": "possible subjective",
-          "reason": "Possible junior subjective synonym of Spinosaurus; identification is tentative. Per Olshevsky's Dinosaur Genera List."
+          "name": "Spinosaurus maroccanus",
+          "type": "junior subjective",
+          "reason": "Erected by Russell (1996) on Kem Kem cervical vertebrae; synonymised with S. aegyptiacus by Ibrahim et al. (2014) on the basis of associated material from the FSAC-KK 11888 neotype skeleton."
         }
       ],
       "species": [
         {
           "name": "Spinosaurus aegyptiacus",
+          "etymology": "From Latin aegyptiacus, \"of Egypt\", after the country where Stromer's original type material was found at Bahariya.",
           "status": "valid",
           "type_species": true,
-          "completeness": "fragmentary",
-          "etymology": "From Latin 'aegyptiacus' meaning 'Egyptian', after Egypt, the country where the type specimen was discovered.",
-          "holotype": {
-            "specimen_id": [
-              "BSP 1912 VIII 19"
-            ],
-            "specimen_type": "holotype",
-            "institution": "Bayerische Staatssammlung für Paläontologie und Geologie",
-            "material": "partial skeleton",
-            "status": "destroyed"
-          },
           "period": {
             "name": [
-              "Early Cretaceous",
               "Late Cretaceous"
             ],
             "stage": [
-              "Aptian",
-              "Albian",
               "Cenomanian"
             ],
-            "from_ma": 119.57,
+            "from_ma": 100.5,
             "to_ma": 93.9
           },
           "location": {
             "country": "EG",
             "region": "Matruh",
-            "locality": "Bahariya Oasis",
             "formation": "Bahariya",
+            "locality": "Gebel el Dist",
             "coordinates": [
-              28.5,
-              28.9
+              28.43,
+              28.91
             ]
           },
           "size": {
             "length_m": {
-              "min": 15,
+              "min": 14,
               "max": 15
             },
             "weight_kg": {
-              "min": 7400,
-              "max": 7400
-            },
-            "hip_height_m": {
-              "min": 3.5,
-              "max": 3.5
+              "min": 6500,
+              "max": 9000
             }
+          },
+          "holotype": {
+            "specimen_id": [
+              "FSAC-KK 11888"
+            ],
+            "specimen_type": "neotype",
+            "institution": "Département of Géologie (Paléontologie), Faculté des Sciences Aïn Chock, Université Hassan II",
+            "material": "Partial skeleton including portions of the skull, cervical, dorsal, sacral and caudal vertebrae, ilium, manual phalanges, femur, tibia and pedal elements; subadult. Designated by Ibrahim et al. (2014) after the destruction of Stromer's holotype (BSP 1912 VIII 19, Munich) in 1944."
           },
           "described": 1915,
           "authors": "Stromer",
-          "description": "The type species of Spinosaurus. The original holotype was destroyed during a British bombing raid on Munich in 1944. Recent discoveries in Morocco have provided new material revealing its semi-aquatic adaptations.\n"
+          "described_in": "stromer1915"
         }
       ],
       "references": [
@@ -130672,10 +130669,22 @@
           "id": "stromer1915",
           "authors": "Stromer, E.",
           "year": 1915,
-          "title": "Ergebnisse der Forschungsreisen Prof. E. Stromers in den Wusten Agyptens. II. Wirbeltier-Reste der Baharije-Stufe",
-          "journal": "Abhandlungen der Koniglichen Bayerischen Akademie der Wissenschaften",
+          "title": "Ergebnisse der Forschungsreisen Prof. E. Stromers in den Wüsten Ägyptens. II. Wirbeltier-Reste der Baharije-Stufe (unterstes Cenoman). 3. Das Original des Theropoden Spinosaurus aegyptiacus nov. gen., nov. spec.",
+          "journal": "Abhandlungen der Königlich Bayerischen Akademie der Wissenschaften, Mathematisch-physikalische Klasse",
           "volume": "28",
-          "pages": "1-32"
+          "issue": "3",
+          "pages": "1-32",
+          "notes": "Erects the genus and family Spinosauridae on a partial skeleton recovered in 1912 by Markgraf from Bahariya, Egypt. Holotype later destroyed in the 1944 Munich bombing."
+        },
+        {
+          "id": "stromer1934",
+          "authors": "Stromer, E.",
+          "year": 1934,
+          "title": "Ergebnisse der Forschungsreisen Prof. E. Stromers in den Wüsten Ägyptens. II. Wirbeltierreste der Baharîje-Stufe (unterstes Cenoman). 13. Dinosauria",
+          "journal": "Abhandlungen der Bayerischen Akademie der Wissenschaften Mathematisch-naturwissenschaftliche Abteilung, Neue Folge",
+          "volume": "22",
+          "pages": "1-79",
+          "notes": "Follow-up monograph adding specimen 1922 X 45 and corrections to the 1915 description; informally separates a smaller \"Spinosaurus B\" without erecting a binomial."
         },
         {
           "id": "ibrahim2014",
@@ -130686,7 +130695,9 @@
           "volume": "345",
           "issue": "6204",
           "pages": "1613-1616",
-          "doi": "10.1126/science.1258750"
+          "doi": "10.1126/science.1258750",
+          "url": "http://dx.doi.org/10.1126/science.1258750",
+          "notes": "Designates FSAC-KK 11888 (Kem Kem beds, Morocco) as the neotype of Spinosaurus aegyptiacus and argues for semi-aquatic, facultatively quadrupedal habits and pachyostotic limb bones."
         }
       ],
       "taxonomy": [
@@ -130701,9 +130712,12 @@
         "Dinosauria",
         "Saurischia",
         "Theropoda",
+        "Neotheropoda",
+        "Averostra",
         "Tetanurae",
         "Megalosauroidea",
-        "Spinosauridae"
+        "Spinosauridae",
+        "Spinosaurinae"
       ]
     },
     "Spinostropheus": {
