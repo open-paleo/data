@@ -1,0 +1,87 @@
+genus: Bothriospondylus
+parent: Neosauropoda
+etymology: From Greek bothrion ("trench" or "pit") and
+  spondylos ("vertebra"); meaning "trench vertebra", referring
+  to the deep lateral excavations (pleurocoels) of the
+  vertebral centra.
+description: >
+  Bothriospondylus is a dubious genus of possibly neosauropodan
+  sauropod dinosaur. It lived during the Late Jurassic in
+  England and the type (and only) species is B. suffossus.
+diet: herbivore
+locomotion: quadrupedal
+identifiers:
+  - source: pbdb
+    id: "38676"
+  - source: wikidata
+    id: Q1810717
+  - source: gbif
+    id: "4822844"
+species:
+  - name: Bothriospondylus suffossus
+    etymology: Latin suffossus ("undermined"), referring to
+      the lateral pleurocoels hollowing out the centrum.
+    status: nomen dubium
+    type_species: true
+    period:
+      name:
+        - Late Jurassic
+      stage:
+        - Kimmeridgian
+      from_ma: 157.3
+      to_ma: 152.1
+    location:
+      country: GB
+      region: England
+      formation: Kimmeridge Clay
+      locality: Swindon Brick and Tile Company quarry,
+        Wiltshire
+      coordinates:
+        - 51.55
+        - -1.78
+    holotype:
+      specimen_id:
+        - NHMUK PV R 44592
+        - NHMUK PV R 44593
+        - NHMUK PV R 44594
+        - NHMUK PV R 44595
+      specimen_type: syntype
+      institution: BMNH
+      material: A series of dorsal vertebral centra (the
+        subjects of Owen's Plates III-V) from the Kimmeridge
+        Clay of Swindon, transmitted to the British Museum by
+        J.K. Shopland; three sacrals were also referred. No
+        catalog numbers were assigned in the original 1874
+        description; modern NHMUK numbers from Wikipedia.
+    described: 1875
+    authors: Owen
+    described_in: owen1874
+references:
+  - id: owen1874
+    authors: Owen, R.
+    year: 1874
+    title: A monograph on the British fossil reptilia of the
+      Mesozoic formations
+    book: A monograph on the British fossil reptilia of the
+      Mesozoic formations
+    publisher: Palaeontographical Society
+    doi: 10.5962/bhl.title.100403
+    notes: Erects Bothriospondylus suffossus on dorsal
+      vertebrae from the Kimmeridge Clay of Swindon; same
+      monograph names B. robustus (later Marmarospondylus),
+      B. elongatus, and B. magnus.
+  - id: mannion2010
+    authors: Mannion, P.D.
+    year: 2010
+    title: "A revision of the sauropod dinosaur genus
+      'Bothriospondylus' with a redescription of the type
+      material of the Middle Jurassic form 'B. madagascariensis'"
+    journal: Palaeontology
+    volume: "53"
+    issue: "2"
+    pages: 277-296
+    doi: 10.1111/j.1475-4983.2009.00919.x
+    notes: Treats B. suffossus as a nomen dubium that cannot
+      be identified beyond Neosauropoda, rendering the genus
+      itself invalid; the deep-foramina diagnostic feature is
+      widespread among sauropods.
