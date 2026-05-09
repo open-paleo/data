@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-05-09T16:46:59.141Z
+  built_at: 2026-05-09T18:58:21.286Z
   clade_count: 248
-  genus_count: 1343
+  genus_count: 1344
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.05"
@@ -28821,6 +28821,71 @@ genera:
       - Ornithischia
       - Thyreophora
       - Stegosauria
+  Chiayusaurus:
+    genus: Chiayusaurus
+    parent: Sauropoda
+    etymology: From Chia-yü-kuan (Jiayuguan, in western Gansu/Kansu Province) and Greek sauros (lizard); meaning "Jiayuguan lizard". Originally erected as Chiayüsaurus and subsequently rendered Chiayusaurus to comply with ICZN orthography.
+    description: |
+      Chiayusaurus is a problematic sauropod tooth-taxon erected by Bohlin (1953) on isolated teeth from the Lower Cretaceous of the Hui-hui-p'u area, western Gansu, China. The type species C. lacustris was named alongside other indeterminate Chinese sauropod tooth morphologies in the same monograph. A second species, C. asianensis, was named by Lee et al. (1997) on a tooth from the Hasandong Formation of South Korea. Barrett et al. (2002) reviewed both species and treated them as nomina dubia, citing the absence of unambiguous autapomorphies in the available tooth material.
+    diet: herbivore
+    locomotion: quadrupedal
+    identifiers:
+      - source: pbdb
+        id: "38700"
+      - source: wikidata
+        id: Q719905
+      - source: gbif
+        id: "4823509"
+    species:
+      - name: Chiayusaurus lacustris
+        etymology: Latin lacustris ("of the lake"), reflecting the freshwater lacustrine setting Bohlin inferred for the type horizon.
+        status: nomen dubium
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Barremian
+            - Aptian
+          from_ma: 129.4
+          to_ma: 113
+        location:
+          country: CN
+          region: Gansu
+          formation: Xinminbao
+          locality: Hui-hui-p'u area
+          coordinates:
+            - 40.5
+            - 96
+        holotype:
+          specimen_type: holotype
+          status: unknown
+          material: Isolated sauropod tooth crown from the Lower Cretaceous beds of Hui-hui-p'u; one of two distinct sauropod tooth morphologies Bohlin recognized in the Kansu material.
+        described: 1953
+        authors: Bohlin
+        described_in: bohlin1953
+    references:
+      - id: bohlin1953
+        authors: Bohlin, B.
+        year: 1953
+        title: Fossil reptiles from Mongolia and Kansu
+        journal: Reports from the Scientific Expedition to the North-western Provinces of China under Leadership of Dr. Sven Hedin. The Sino-Swedish Expedition Publication
+        volume: "37"
+        pages: 1-113
+        notes: Erects Chiayüsaurus lacustris on an isolated tooth from the Lower Cretaceous of Hui-hui-p'u, Kansu (Gansu); original genus spelling later corrected to Chiayusaurus under ICZN.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Sauropoda
   Chienkosaurus:
     genus: Chienkosaurus
     parent: Tetanurae
