@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-09T02:52:43.255Z",
+    "built_at": "2026-05-09T03:04:59.333Z",
     "clade_count": 248,
     "genus_count": 1334,
     "license": "CC-BY-4.0",
@@ -141094,13 +141094,13 @@
     },
     "Triceratops": {
       "genus": "Triceratops",
-      "parent": "Ceratopsidae",
+      "parent": "Triceratopsini",
+      "etymology": "From Greek tri (three), keras (horn) and ops (face); meaning \"three-horned face\", referring to the paired supraorbital horn-cores and the median nasal horn-core that ornament the skull.",
       "pronunciation": {
-        "ipa": "/traɪˈsɛrətɒps/",
-        "phonetic": "try-SERR-uh-tops"
+        "phonetic": "try-SERR-uh-tops",
+        "ipa": "/traɪˈsɛrətɒps/"
       },
-      "etymology": "From Ancient Greek 'tri' meaning 'three', 'keras' meaning 'horn', and 'ops' meaning 'face', translating as 'three-horned face'.",
-      "description": "A genus of chasmosaurine ceratopsian dinosaur from the Late Cretaceous of North America. One of the last and largest ceratopsians, Triceratops is distinguished by its large bony frill and three facial horns. It is one of the most recognizable of all dinosaurs and among the most commonly found in the fossil record.\n",
+      "description": "Triceratops is the best-known ceratopsid dinosaur and among the most recognisable of all non-avian dinosaurs, defined by its three large facial horns, prominent toothless beak and solid, unfenestrated parietal-squamosal frill. Marsh erected the genus in 1889 by transferring his earlier Ceratops horridus (Marsh, 1888) to the new combination Triceratops horridus, on a partial skull (later catalogued YPM 1820) recovered from the \"Laramie\" — now Lance — Formation of Wyoming. Through the 1890s and early 1900s Marsh and others named more than a dozen further species, of which only two are currently accepted today (T. horridus, the type, and T. prorsus), both restricted to the latest Maastrichtian of the Western Interior of North America. Forster (1996) sank most nominal species into one of these two through a cladistic and morphometric revision; Scannella et al. (2014) subsequently documented a stratigraphic pattern in the Hell Creek Formation suggesting a primarily anagenetic transition from T. horridus low in the section to T. prorsus near the K-Pg boundary. Several other names (T. galeus, T. sulcatus, T. maximus, T. eurycephalus, T. albertensis) rest on inadequate material and are now treated as nomina dubia. The proposed synonymy of Torosaurus with mature Triceratops (Scannella & Horner 2010) has not been broadly accepted in subsequent literature (Longrich & Field 2012; Maiorino et al. 2013) and is not adopted here.\n",
       "diet": "herbivore",
       "locomotion": "quadrupedal",
       "paleoenvironment": [
@@ -141109,106 +141109,89 @@
       ],
       "appearance": {
         "integument": "scaled",
-        "evidence": "inferred",
-        "features": [
-          "Large bony frill extending from the back of the skull",
-          "Two long brow horns above the eyes",
-          "Short nasal horn on the snout"
-        ]
+        "evidence": "direct"
       },
       "diagnostic_features": [
-        "Three facial horns with elongate brow horns",
-        "Solid parietal frill lacking fenestrae",
-        "Elongate squamosal bones forming frill margin"
+        "Three large facial horns: paired supraorbital horn-cores plus a median nasal horn formed by the epinasal, seated on coossified nasals.",
+        "Edentulous premaxillae fronting an unpaired rostral bone (os rostrale) anterior to the premaxillae, forming a projecting toothless beak.",
+        "Parietal-squamosal frill solid and unfenestrated, extremely thick and heavily vascularised on its dorsal surface.",
+        "Squamosal short and broad with convex, rounded lateral margins; never thinned or fenestrated.",
+        "Frill saddle-shaped in dorsal aspect, with an upturned caudal margin and a strong parietal midline ridge.",
+        "Epoccipital ossifications fused along the parietal-squamosal margin, with one epoccipital spanning the midline of the parietal.",
+        "Frontal fontanelle small and circular, or absent in mature individuals, due to closure of the frontoparietal sutures.",
+        "Huge occipital portion of the frill extending posteriorly and laterally, bent ventrally at the sides to overhang the neck."
       ],
       "identifiers": [
         {
+          "source": "pbdb",
+          "id": "38862"
+        },
+        {
           "source": "wikidata",
-          "id": "Q14397"
+          "id": "Q14384"
+        },
+        {
+          "source": "gbif",
+          "id": "4823146"
+        },
+        {
+          "source": "eol",
+          "id": "4531590"
         }
       ],
       "synonyms": [
         {
+          "name": "Ceratops horridus",
+          "type": "junior subjective",
+          "reason": "Originally named by Marsh (1888) as Ceratops horridus and transferred by Marsh (1889) to the new genus as Triceratops horridus."
+        },
+        {
+          "name": "Triceratops flabellatus",
+          "type": "junior subjective",
+          "reason": "Sunk into T. horridus by Forster (1996); no consistent morphological characters distinguish it from T. horridus."
+        },
+        {
+          "name": "Triceratops serratus",
+          "type": "junior subjective",
+          "reason": "Sunk into T. horridus by Forster (1996)."
+        },
+        {
+          "name": "Triceratops elatus",
+          "type": "junior subjective",
+          "reason": "Sunk into T. horridus by Forster (1996)."
+        },
+        {
+          "name": "Triceratops calicornis",
+          "type": "junior subjective",
+          "reason": "Sunk into T. horridus by Forster (1996)."
+        },
+        {
+          "name": "Triceratops obtusus",
+          "type": "junior subjective",
+          "reason": "Sunk into T. horridus by Forster (1996)."
+        },
+        {
+          "name": "Triceratops brevicornis",
+          "type": "junior subjective",
+          "reason": "Sunk into T. prorsus by Forster (1996); shares the derived characters (closed frontal fontanelle, short supraorbital horns, short rounded rostrum) of that species."
+        },
+        {
           "name": "Ugrosaurus",
           "type": "junior subjective",
-          "reason": "Now generally interpreted as a juvenile specimen of Triceratops."
+          "reason": "Generally interpreted in subsequent literature (Forster 1993; Lehman 1998) as a juvenile or pathological Triceratops horridus."
         },
         {
-          "name": "Tatankaceratops",
-          "type": "junior subjective",
-          "reason": "Now generally interpreted either as a juvenile specimen of Triceratops or as an individual with a growth deficiency."
-        },
-        {
-          "name": "Claorhynchus",
-          "type": "possible subjective",
-          "reason": "Possible junior subjective synonym of Triceratops; identification is tentative. Per Olshevsky's Dinosaur Genera List."
-        },
-        {
-          "name": "Nedoceratops",
-          "type": "possible subjective",
-          "reason": "Possible junior subjective synonym of Triceratops; identification is tentative. Per Olshevsky's Dinosaur Genera List."
+          "name": "Triceratops ingens",
+          "type": "nomen nudum",
+          "reason": "Unpublished Marsh manuscript name, mentioned by Lull (1915) without description or diagnosis (per Forster 1996)."
         }
       ],
       "species": [
         {
           "name": "Triceratops horridus",
+          "etymology": "From Latin horridus (rough, bristly), referring to the heavily ornamented occipital crest that frames the back of the skull in Marsh's holotype.",
           "status": "valid",
           "type_species": true,
-          "completeness": "complete",
-          "etymology": "From Latin 'horridus' meaning 'rough' or 'frightening'.",
-          "holotype": {
-            "specimen_id": [
-              "YPM 1820"
-            ],
-            "specimen_type": "holotype",
-            "institution": "Yale Peabody Museum of Natural History",
-            "material": "skull roof with horn cores"
-          },
-          "period": {
-            "name": [
-              "Late Cretaceous"
-            ],
-            "stage": [
-              "Campanian",
-              "Maastrichtian"
-            ],
-            "from_ma": 83.6,
-            "to_ma": 66
-          },
-          "location": {
-            "country": "US",
-            "locality": "Buck Creek pens, Johnson Brothers Ranch",
-            "region": "Wyoming",
-            "formation": "Lance",
-            "coordinates": [
-              42.195904,
-              -104.457275
-            ],
-            "weight_kg": {
-              "min": 6500,
-              "max": 6500
-            },
-            "hip_height_m": {
-              "min": 2.9,
-              "max": 2.9
-            }
-          },
-          "described": 1889,
-          "authors": "Marsh",
-          "description": "The type species of Triceratops, originally described from a skull roof with horn cores found in Colorado.\n",
-          "synonyms": [
-            {
-              "name": "Sterrholophus",
-              "type": "junior subjective",
-              "reason": "S. flabellatus (Marsh 1889) was successively reassigned to Triceratops flabellatus and ultimately treated as a junior synonym of T. horridus."
-            }
-          ]
-        },
-        {
-          "name": "Triceratops prorsus",
-          "etymology": "From Latin 'prorsus' meaning 'forward' or 'straightforward', referring to the longer, more forward-pointing nasal horn that characterizes this species.",
-          "status": "valid",
-          "completeness": "complete",
           "period": {
             "name": [
               "Late Cretaceous"
@@ -141221,48 +141204,63 @@
           },
           "location": {
             "country": "US",
-            "region": "Montana",
-            "formation": "Hell Creek"
+            "region": "Wyoming",
+            "formation": "Lance",
+            "locality": "Niobrara County",
+            "coordinates": [
+              43.3,
+              -104.6
+            ]
           },
           "size": {
             "length_m": {
-              "min": 6.7,
+              "min": 7.9,
               "max": 9
             },
             "weight_kg": {
               "min": 5400,
-              "max": 10000
-            },
-            "skull_length_m": {
-              "min": 2,
-              "max": 2.5
+              "max": 12000
             }
           },
-          "described": 1890,
-          "authors": "Marsh",
-          "description": "A second valid species of Triceratops, distinguished from T. horridus by differences in horn and frill morphology.\n",
           "holotype": {
             "specimen_id": [
-              "YPM 1822"
+              "YPM 1820"
             ],
             "specimen_type": "holotype",
-            "institution": "Yale Peabody Museum of Natural History"
-          }
+            "institution": "Yale Peabody Museum of Natural History",
+            "material": "Partial skull with paired supraorbital horn-cores, a median nasal horn-core on coossified nasals, edentulous premaxillae, rostral bone, and a posteriorly extended occipital crest; estimated at least two metres long."
+          },
+          "described": 1889,
+          "authors": "Marsh",
+          "described_in": "marsh1889"
         }
       ],
       "references": [
         {
           "id": "marsh1889",
-          "authors": "Marsh, O. C.",
+          "authors": "Marsh, O.C.",
           "year": 1889,
           "title": "Notice of gigantic horned Dinosauria from the Cretaceous",
           "journal": "American Journal of Science",
           "volume": "s3-38",
           "issue": "224",
-          "pages": "173-176",
-          "publisher": "American Journal of Science (AJS)",
+          "pages": "173-175",
           "doi": "10.2475/ajs.s3-38.224.173",
-          "url": "http://dx.doi.org/10.2475/ajs.s3-38.224.173"
+          "url": "http://dx.doi.org/10.2475/ajs.s3-38.224.173",
+          "notes": "Erects the genus Triceratops by reassigning Ceratops horridus (Marsh 1888) to the new combination T. horridus, and additionally names T. flabellatus and T. galeus."
+        },
+        {
+          "id": "forster1996",
+          "authors": "Forster, C.A.",
+          "year": 1996,
+          "title": "Species resolution in Triceratops: cladistic and morphometric approaches",
+          "journal": "Journal of Vertebrate Paleontology",
+          "volume": "16",
+          "issue": "2",
+          "pages": "259-270",
+          "doi": "10.1080/02724634.1996.10011313",
+          "url": "http://dx.doi.org/10.1080/02724634.1996.10011313",
+          "notes": "Reduces the historic 16 nominal Triceratops species to two valid species (T. horridus, T. prorsus) by cladistic and morphometric analysis, and establishes the modern generic diagnosis."
         },
         {
           "id": "scannella2014",
@@ -141273,7 +141271,9 @@
           "volume": "111",
           "issue": "28",
           "pages": "10245-10250",
-          "doi": "10.1073/pnas.1313334111"
+          "doi": "10.1073/pnas.1313334111",
+          "url": "http://dx.doi.org/10.1073/pnas.1313334111",
+          "notes": "Documents a stratigraphic transition through the Hell Creek Formation from T. horridus (lower) through transitional morphologies to T. prorsus (upper), favoured as primarily anagenetic."
         }
       ],
       "taxonomy": [
@@ -141287,10 +141287,13 @@
         "Archosauria",
         "Dinosauria",
         "Ornithischia",
+        "Genasauria",
         "Cerapoda",
         "Marginocephalia",
         "Ceratopsia",
-        "Ceratopsidae"
+        "Ceratopsidae",
+        "Chasmosaurinae",
+        "Triceratopsini"
       ]
     },
     "Trierarchuncus": {
