@@ -9,10 +9,14 @@ allowed-tools: Bash Read Write Edit Glob Grep Agent AskUserQuestion
 # Intake Genus
 
 Run the per-genus intake pipeline end-to-end with hard stops between
-each stage so the user retains review control. The pipeline is for
-**Bucket B** (modern + obscure) entries from `reports/intake-triage.md`
-— Bucket C (iconic legacy) and Bucket D (disputed-but-keep) require
-different flows and are out of scope here.
+each stage so the user retains review control. The pipeline was
+originally written for **Bucket B** (modern + obscure) entries from
+`reports/intake-triage.md`, and `npm run intake-pick-next` only
+returns Bucket B candidates. The same pipeline also works for
+Bucket D Cat III/IV stubs (`status: nomen dubium`, minimal
+diagnostic features) when the user supplies an explicit genus name
+— see `reports/bucket-d-classification.md` for the categories.
+Bucket C (iconic legacy) is more complex and is still out of scope.
 
 If `$ARGUMENTS` is empty, the skill picks the next eligible Bucket B
 genus by alphabetical order. If the user supplied a genus name, use
@@ -70,6 +74,44 @@ If the triage notes explicitly call out a supplementary paper, edit
 "Additional papers (optional)" with the citation key and DOI, marked
 `- [ ]`. The user will mark `[x]` once they have it.
 
+### Verify the bootstrap-proposed key
+
+The bootstrap script auto-derives a citation key from PBDB's reported
+genus authority (e.g. `marsh1888`). PBDB is wrong **often enough that
+this is a routine check, not an exception**. Common failure modes:
+
+- **PBDB tracks a homonym, not the type.** Ex: Titanosaurus Lydekker
+  1877 (Indian, valid) vs. Titanosaurus Marsh 1877 (preoccupied
+  American name → renamed Atlantosaurus). PBDB returned Marsh as
+  authority; the triage and Wikipedia both said Lydekker.
+- **The proposed key already exists in the bib but for a different
+  paper.** Ex: bootstrap proposed `marsh1888` for Ceratops — that
+  key is already in the bib, but it's the Pleurocoelus / Potomac
+  Formation paper, not the Ceratopsidae paper.
+- **The proposed key adds a fresh letter suffix even though the
+  right key exists.** Ex: bootstrap proposed `leidy1856c` /
+  `osborn1924c` / `marsh1877e` when the real describing paper was
+  already filed as `leidy1856b` / `osborn1924a` / `marsh1877a`.
+
+Before reporting the proposed key to the user, **always**:
+
+1. Compare the proposed key against the triage notes' author + year.
+   If they disagree, the bootstrap is wrong; flag it and propose the
+   triage-aligned key.
+2. If the proposed key is already in the bib, run a quick check
+   (read the bib entry's title) to confirm it matches the paper the
+   triage describes. If the title is from a different paper, the
+   bootstrap has a key collision: mark this as a citation-key
+   disambiguation case (see below).
+3. If the bootstrap proposed a fresh letter suffix (`<key>e`,
+   `<key>c`, etc.), grep for sibling keys (`<key>a`, `<key>b`, …) and
+   confirm none of those is actually the right paper before adding a
+   new suffix.
+
+If the bootstrap is wrong, edit `papers-needed.md` to point at the
+correct key and explain the glitch in the line above the checkbox so
+the user understands why the bootstrap-proposed key was overridden.
+
 **Hard stop.** Tell the user:
 
 > Bootstrap complete. Fetch the listed papers into
@@ -81,6 +123,31 @@ If the triage notes explicitly call out a supplementary paper, edit
 > say "resume" so I can build the extraction prompts.
 
 Wait for the user to respond.
+
+### When the describing paper is not obtainable
+
+If the describing paper is in a hard-to-access venue (Soviet-era
+Russian journals, French Comptes Rendus before digitization, Korean
+geological-society papers from the 1970s-80s, predatory venues, lost
+conference abstracts, etc.), surface the problem to the user **before**
+moving on. Do NOT silently apply the Wikipedia-fallback. The user
+decides per paper, every time:
+
+> The describing paper `<key>` is not in the corpus and looks
+> hard to obtain (`<reason>`). Options:
+> 1. Try to fetch it
+> 2. Build a Wikipedia-fallback stub (description = Wikipedia
+>    paragraph 1 verbatim; holotype block omitted; reference cited
+>    with metadata from secondary literature; gap logged in
+>    `corpus-paper-report.md` §1)
+> 3. Defer this genus
+
+If the user picks the Wikipedia-fallback path, follow the recipe in
+`feedback_wikipedia_fallback_pattern` memory. Never invent specimen
+IDs, autapomorphies, or paper-specific claims to paper over the gap.
+
+Do NOT assume an earlier "go with the fallback" answer applies to a
+different paper — every paper is a fresh decision.
 
 ## Step 3 — Resume (build extraction prompts)
 
@@ -171,6 +238,35 @@ false`):
   that file as the reference's `notes:` field (trim under 200 chars).
 
 Editorial polish at this stage:
+
+- **Description = Wikipedia paragraph 1, verbatim.** The bootstrap
+  already pulls this; just confirm. Strip only: numeric reference
+  markers like `[1]`, hyperlink markup, pronunciation IPA blocks,
+  and the etymological gloss in parentheses immediately after the
+  genus name (those go into the structured `etymology:` and
+  `pronunciation:` fields). Do NOT paraphrase, summarise, or stitch
+  in claims from the agent's notes — `feedback_verify_against_corpus`.
+  Read the cached article first at
+  `~/Desktop/open-paleo-wd/wikipedia/<Genus>.json` (parse `text`,
+  paragraph 1 = up to the first `\n\n`); WebFetch is the fallback
+  when the genus isn't cached.
+- **PBDB seed corrections are routine.** The bootstrap copies
+  `species[0].name`, `period`, `location.region/formation/coordinates`
+  straight from PBDB; these are wrong often enough that you must
+  inspect each one against the corpus paper / triage / Wikipedia.
+  Don't promote until you've corrected them. Common patterns:
+  PBDB-seeded species name is often the wrong species of a multi-
+  species genus, or a synonym of the type, or even another genus's
+  type species; PBDB-seeded period/age can span the entire range
+  the family ever existed; PBDB-seeded coordinates can be from a
+  referred-specimen locality, not the holotype's.
+- **Verify every paper-attributed claim.** If the description prose,
+  reference notes, or synonym `reason:` attributes a specific claim
+  to a specific author-year (e.g. "synonymised by Smith 1999"),
+  that claim must trace back to (a) corpus content actually read,
+  (b) Wikipedia paragraph 1 (verbatim), or (c) the triage notes.
+  Never invent citations from general/Wikipedia recall when the
+  paper exists in the corpus — `feedback_verify_against_corpus`.
 - Etymology values from the agent are sometimes terse. Polish them to
   match the project's house style: source language, source word(s) in
   quotes, gloss in parens, full sentence ending with a period (e.g.
@@ -387,3 +483,22 @@ Follow the project's persistent rules at every gate:
   is a structured merge, so no separate spellcheck pass is needed
   — but if you see misspelled tokens in the agent output, fix the
   JSON before running apply.)
+- Verify every paper-attributed claim against the corpus when the
+  paper exists in `~/Desktop/open-paleo-papers/markdown/` — never
+  cite from general/Wikipedia recall —
+  `feedback_verify_against_corpus`.
+- The PBDB-seeded species block, period, and location in
+  `bootstrap.yml` are routinely wrong; replace them during step 4
+  polish — `feedback_pbdb_species_seed`.
+- The bootstrap script may propose a fresh disambiguation suffix
+  when the bib already has the right entry, or an entry under the
+  proposed bare key may be the wrong paper — check sibling keys
+  and bib titles before fetching — `feedback_bootstrap_key_check`.
+- Wikipedia article cache lives at
+  `~/Desktop/open-paleo-wd/wikipedia/<Genus>.json` — read it
+  before falling back to WebFetch — `reference_wikipedia_cache`.
+- Hard stop before applying the Wikipedia-fallback for an
+  unobtainable describing paper; every paper is a fresh decision
+  for the user — `feedback_wikipedia_fallback_pattern`.
+- American English in prose fields (center, not centre); proper-
+  noun institution names stay as-is — `feedback_american_english`.
