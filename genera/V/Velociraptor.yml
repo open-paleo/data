@@ -1,82 +1,113 @@
 genus: Velociraptor
-parent: Dromaeosauridae
+parent: Velociraptorinae
+etymology: From Latin velox (swift) and raptor (thief, plunderer);
+  meaning "swift thief", chosen by Osborn to evoke the rapid,
+  predatory habits inferred from the holotype's slender skull and
+  recurved unguals.
 pronunciation:
   phonetic: vee-LOHS-i-RAP-tor
   ipa: /vəˌlɒsɪˈræptər/
-etymology: From Latin velox meaning 'swift' and raptor meaning 'thief' or 'plunderer'; translates as 'swift thief'
 description: >
-  A genus of small dromaeosaurid dinosaur from the Late Cretaceous of
-  Mongolia. Despite its popular depiction as a large predator,
-  Velociraptor was roughly the size of a turkey, about 2 metres long and
-  15 kilograms. It possessed a large, sickle-shaped claw on the second
-  toe of each foot, characteristic of dromaeosaurids.
+  Velociraptor is a small dromaeosaurid theropod from the late
+  Campanian of central Asia, defined by a long, low skull, recurved
+  serrated teeth, and a hyperextensible sickle-clawed second pedal
+  digit. Osborn erected the genus and the type species V.
+  mongoliensis in 1924 on a partial skull and front-limb claw
+  collected by Peter Kaisen in August 1923 at the Flaming Cliffs
+  (Shabarakh Usu / Bayn Dzak) of the Djadokhta Formation in central
+  Mongolia, during the Central Asiatic Expedition of the American
+  Museum of Natural History. Soviet-Mongolian expeditions during the
+  1960s-70s recovered substantially more material, culminating in the
+  famous "Fighting Dinosaurs" specimen (MPC-D 100/25), a near-complete
+  skeleton of V. mongoliensis preserved in a death struggle with a
+  Protoceratops andrewsi from Tugrugeen Shire. Barsbold (1983)
+  reviewed the new material and erected Velociraptorinae for the
+  genus. Turner et al. (2007) reported quill knobs on the ulna of a
+  V. mongoliensis specimen, providing direct anatomical evidence for
+  pennaceous wing feathering — making Velociraptor one of the
+  better-attested feathered non-avian dinosaurs. Velociraptor's
+  cultural prominence outside palaeontology stems primarily from its
+  oversized depiction in the Jurassic Park franchise, which conflates
+  V. mongoliensis with the much larger Deinonychus antirrhopus.
 diet: carnivore
 locomotion: bipedal
 paleoenvironment:
   - arid
 appearance:
   integument: feathered
-  evidence: inferred
-  features:
-    - Large, sickle-shaped retractable claw on second toe
-    - Long, stiffened tail for balance
-    - Elongated snout with serrated teeth
+  evidence: direct
 diagnostic_features:
-  - Depressed and elongated skull with upturned snout
-  - Enlarged sickle claw on pedal digit II
-  - Long, low skull with over 26 teeth in each maxilla
+  - Long, low skull with elongated face and greatly enlarged orbits;
+    faciocranial index approximately 170%.
+  - Postorbital region of the cranium extremely abbreviated; jaws
+    excessively long and slender.
+  - Teeth recurved and unilaterally or bilaterally serrate, set in
+    relatively wide interdental spaces; about 11 maxillary and 14
+    dentary teeth.
+  - Pronounced lacrimal boss at the dorsal margin of the preorbital
+    bar; lacrimal broadly exposed on the skull roof.
+  - Cervical centra with strongly developed epipophyses overhanging
+    the postzygapophyseal facets; axis centrum pneumatic.
+  - Anterior caudal vertebrae bearing elongate ossified tendons of
+    the prezygapophyses and chevrons that form a stiffening sheath
+    over 8-10 caudals.
+  - Pelvis opisthopubic and dolichoiliac, with the pubis directed
+    posteroventrally and a shortened ischium bearing a distally
+    placed obturator process.
+  - Pedal digit II hyperextensible and bearing an enlarged,
+    sickle-shaped predatory ungual; metatarsal III mediolaterally
+    pinched proximally and slightly shorter than II and IV.
 identifiers:
+  - source: pbdb
+    id: "38564"
   - source: wikidata
-    id: Q14332
-synonyms:
-  - name: Ovoraptor
-    type: nomen nudum
-    reason: Osborn informally mentioned 'Ovoraptor djadochtari' in a popular press article; the formal description used Velociraptor mongoliensis.
+    id: Q14403
+  - source: gbif
+    id: "4822951"
+  - source: eol
+    id: "2866145"
+  - source: zoobank
+    id: 4C66D2F1-0B8F-4816-B9D9-381EC264AFB7
 species:
   - name: Velociraptor mongoliensis
+    etymology: From mongoliensis ("of Mongolia"), referring to the
+      country of origin of the holotype.
     status: valid
     type_species: true
-    completeness: complete
-    etymology: "Named for Mongolia, where the holotype was discovered."
-    holotype:
-      specimen_id: [AMNH 6515]
-      specimen_type: holotype
-      institution: AMNH
-      material: crushed skull and sickle claw
     period:
       name:
         - Late Cretaceous
       stage:
-        - Coniacian
-        - Santonian
         - Campanian
-        - Maastrichtian
-      from_ma: 89.8
-      to_ma: 66
+      from_ma: 75.0
+      to_ma: 72.1
     location:
       country: MN
-      region: Omnogov
-      locality: Bayn Dzak
-      formation: Djadochta
+      region: Ömnögov
+      formation: Djadokhta
+      locality: Shabarakh Usu (Flaming Cliffs)
       coordinates:
-        - 44
-        - 104
+        - 44.13
+        - 103.73
     size:
       length_m:
         min: 1.5
-        max: 2.5
+        max: 2.07
       weight_kg:
         min: 14
-        max: 28
-      hip_height_m:
-        min: 0.5
-        max: 0.5
+        max: 20
+    holotype:
+      specimen_id:
+        - AMNH 6515
+      specimen_type: holotype
+      institution: AMNH
+      material: Skull and lower jaws plus one manual ungual and
+        adjoining phalanges, collected by Peter Kaisen on 11 August
+        1923 from the Djadokhta Formation at Shabarakh Usu (Field No.
+        377).
     described: 1924
     authors: Osborn
-    description: >
-      The type species of Velociraptor. Known from numerous specimens
-      discovered in the Gobi Desert, including the famous "Fighting
-      Dinosaurs" specimen locked in combat with a Protoceratops.
+    described_in: osborn1924b
 references:
   - id: osborn1924b
     authors: Osborn, H.F.
@@ -84,12 +115,34 @@ references:
     title: Three new Theropoda, Protoceratops zone, central Mongolia
     journal: American Museum Novitates
     volume: "144"
-    pages: "1-12"
-  - id: turner2012
-    authors: Turner, A.H.; Makovicky, P.J.; Norell, M.A.
-    year: 2012
-    title: A review of dromaeosaurid systematics and paravian phylogeny
-    journal: Bulletin of the American Museum of Natural History
-    volume: "371"
-    pages: "1-206"
-    doi: "10.1206/748.1"
+    pages: 1-12
+    notes: Erects Velociraptor mongoliensis on AMNH 6515 from the
+      Djadokhta Formation at Shabarakh Usu; same paper also names
+      Saurornithoides and Oviraptor.
+  - id: barsbold1983
+    authors: Barsbold, R.
+    year: 1983
+    title: "Khishchnye dinozavry mela Mongolii [Carnivorous dinosaurs
+      from the Cretaceous of Mongolia]"
+    journal: Trudy - Sovmestnaya Sovetsko-Mongol'skaya
+      Paleontologicheskaya Ekspeditsiya
+    volume: "19"
+    pages: 1-117
+    notes: Reviews substantial new Velociraptor material (including
+      the Fighting Dinosaurs specimen MPC-D 100/25) and erects the
+      subfamily Velociraptorinae.
+  - id: norell2006
+    authors: Norell, M.A.; Clark, J.M.; Turner, A.H.; Makovicky,
+      P.J.; Barsbold, R.; Rowe, T.
+    year: 2006
+    title: A new dromaeosaurid theropod from Ukhaa Tolgod (Ömnögov,
+      Mongolia)
+    journal: American Museum Novitates
+    volume: "3545"
+    pages: 1-51
+    doi: 10.1206/0003-0082(2006)3545[1:andtfu]2.0.co;2
+    url: http://dx.doi.org/10.1206/0003-0082(2006)3545[1:andtfu]2.0.co;2
+    notes: Describes Tsaagan mangas and supplies modern comparative
+      cranial diagnoses for Velociraptor mongoliensis (lacrimal boss,
+      pneumatic axis, prootic tympanic recess, strong cervical
+      epipophyses).
