@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-05-09T20:14:02.243Z
+  built_at: 2026-05-09T20:36:09.317Z
   clade_count: 248
-  genus_count: 1347
+  genus_count: 1348
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.05"
@@ -42509,6 +42509,92 @@ genera:
       - Megalosauroidea
       - Megalosauridae
       - Eustreptospondylinae
+  Fabrosaurus:
+    genus: Fabrosaurus
+    parent: Ornithischia
+    etymology: From Fabre (honoring Jean Fabre, the French geologist who collected the holotype with Ginsburg's expedition) and Greek sauros (lizard); meaning "Fabre's lizard".
+    pronunciation:
+      ipa: /ˌfæbrəˈsɔːrəs/
+      phonetic: FAB-rə-SOR-əs
+    description: |
+      Fabrosaurus is a dubious extinct genus of ornithischian dinosaur that lived during the Early Jurassic during the Hettangian to Sinemurian stages (199 - 189 mya).
+    diet: herbivore
+    locomotion: bipedal
+    identifiers:
+      - source: pbdb
+        id: "38718"
+      - source: wikidata
+        id: Q134652
+      - source: gbif
+        id: "4823091"
+    species:
+      - name: Fabrosaurus australis
+        etymology: From Latin australis ("southern"), referring to the southern hemisphere locality of origin.
+        status: nomen dubium
+        type_species: true
+        period:
+          name:
+            - Early Jurassic
+          stage:
+            - Hettangian
+            - Sinemurian
+          from_ma: 201.3
+          to_ma: 192.9
+        location:
+          country: LS
+          region: Mafeteng
+          formation: Elliot
+          locality: Likhoele, near Mafeteng
+          coordinates:
+            - -29.85
+            - 27.25
+        holotype:
+          specimen_id:
+            - MNHN LES 9
+          specimen_type: holotype
+          institution: Muséum National d’Histoire Naturelle
+          material: Fragment of right mandible bearing three teeth, from the upper Red Beds of the Stormberg Group (now upper Elliot Formation) at Likhoele, Lesotho.
+        described: 1964
+        authors: Ginsburg
+        described_in: ginsburg1964
+    references:
+      - id: ginsburg1964
+        authors: Ginsburg, L.
+        year: 1964
+        title: Découverte d'un Scélidosaurien (Dinosaure Ornithischien) dans le Trias supérieur du Basutoland
+        journal: Comptes Rendus Hebdomadaires des Séances de l'Académie des Sciences
+        volume: "258"
+        pages: 2366-2368
+        notes: Erects Fabrosaurus australis on a partial right mandible with three teeth from the Stormberg Group at Likhoele (Lesotho); originally classified as scelidosaurid and dated Upper Triassic.
+      - id: charig1974
+        authors: Charig, A.J.; Crompton, A.W.
+        year: 1974
+        title: The alleged synonymy of Lycorhinus and Heterodontosaurus
+        journal: Annals of the South African Museum
+        volume: "64"
+        pages: 167-189
+        notes: "Rules Fabrosaurus a nomen dubium: the holotype has no distinguishing features beyond the teeth, which are diagnostic of a family rather than a genus, so the taxon is indeterminate."
+      - id: galton1978
+        authors: Galton, P.M.
+        year: 1978
+        title: "Fabrosauridae, the basal family of ornithischian dinosaurs (Reptilia: Ornithopoda)"
+        journal: Paläontologische Zeitschrift
+        volume: "52"
+        issue: 1-2
+        pages: 138-159
+        doi: 10.1007/bf03006735
+        notes: Disagrees with Charig & Crompton (1974) calling F. australis nomen dubium; considers it probably valid based on holotype MNHN LES 9. Erects Lesothosaurus diagnosticus on Thulborn's referred material.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
   Falcarius:
     genus: Falcarius
     parent: Therizinosauria
