@@ -89,7 +89,7 @@ defines the appropriate intake discipline per category.
 | 149 | Arkharavia | Disputed | Dubious somphospondylan from Udurchukan Fm; holotype caudal vertebra; referred material reassigned to indeterminate hadrosaurid. [done f637f4c] |
 | 152 | Arstanosaurus | Manual | Dubious Bostobe Fm hadrosauroid; chimera history (hadrosaurid maxilla + uninformative femur); "indeterminate hadrosaurid" per modern review. |
 | 155 | Asiamericana | Disputed | Bissekty Fm tooth-taxon; 2013/2019 studies treat as Richardoestesia asiatica but per project policy keep separate stub until consensus broader. status: nomen dubium. [done 4fe4226] |
-| 156 | Asiatosaurus | Disputed | Two species (A. mongoliensis, A. kwangshiensis), both nomina dubia (teeth + scant remains); Brachiosauridae→euhelopodid placements over time. |
+| 156 | Asiatosaurus | Disputed | Two species (A. mongoliensis, A. kwangshiensis), both nomina dubia (teeth + scant remains); Brachiosauridae→euhelopodid placements over time. [done cfb9b19] |
 | 197 | Bainoceratops | Disputed | Dubious Djadokhta ceratopsian; possibly Protoceratops andrewsi per Makovicky & Norell 2006 but no broad consensus; Chinnery & Horner 2007 also treat as dubious. |
 | 232 | Bienosaurus | Disputed | Lower Lufeng Fm thyreophoran; 2019 Raven et al. concluded nomen dubium, possibly identical to Tatisaurus from same formation. |
 | 250 | Bothriospondylus | Disputed | Mannion 2010 declared B. suffossus a nomen dubium; non-type species split off as Marmarospondylus, Vouivria, Lapparentosaurus, Narindasaurus. |
