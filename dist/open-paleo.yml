@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-05-09T04:48:01.327Z
+  built_at: 2026-05-09T05:14:53.756Z
   clade_count: 248
-  genus_count: 1335
+  genus_count: 1336
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.05"
@@ -88161,6 +88161,137 @@ genera:
       - Styracosterna
       - Hadrosauriformes
       - Hadrosauroidea
+  Psittacosaurus:
+    genus: Psittacosaurus
+    parent: Ceratopsia
+    etymology: From Greek psittakos (parrot) and sauros (lizard); meaning "parrot lizard", a name suggested by W.K. Gregory and adopted by Osborn in reference to the deep, edentulous, parrot-like rostrum formed by the premaxillae and the unpaired rostral bone.
+    pronunciation:
+      phonetic: SIT-uh-koh-SAWR-us
+      ipa: /ˌsɪtəkəˈsɔːrəs/
+    description: |
+      Psittacosaurus is the type genus of Psittacosauridae and one of the most species-rich non-avian dinosaur genera, with roughly nine to twelve currently accepted species spread across the late Lower Cretaceous of central and eastern Asia (China, Mongolia, Russia, and Thailand). The genus is defined by a short, deep skull with a prominent parrot-like edentulous rostrum, laterally projecting jugals, and a unique fenestra of the lacrimal canal between the premaxilla and the lacrimal that is found in no other dinosaur. Osborn erected the genus and the type species P. mongoliensis in 1923 on AMNH 6254 from the Ashile Formation of the Artsa Bogdo basin, Mongolia, recovered on the AMNH Central Asiatic Expedition; he simultaneously named Protiguanodon mongoliense on a smaller specimen from the Ondai Sair (now Andai Sair) Formation, but the two were synonymised by Sereno (1990) and the genus has since been the subject of comprehensive revisions by Sereno (1990, 2010). Psittacosaurus is exceptionally well-sampled ontogenetically, with embryos, hatchlings, juveniles in groups, and adults all known. The Senckenberg specimen (SMF R 4970, referred to P. sp.) preserves countershaded scaly integument over the body, prominent quill-like bristles arrayed along the dorsal surface of the tail, and a cloaca, making it one of the most informative non-avian dinosaur body fossils ever recovered.
+    diet: herbivore
+    locomotion: bipedal
+    paleoenvironment:
+      - fluvial
+      - lacustrine
+    appearance:
+      integument: scaled
+      evidence: direct
+    diagnostic_features:
+      - Skull short and deep, with a prominent parrot-like edentulous rostrum; preorbital skull length less than 40% of total skull length, shorter than in nearly all other ornithischians.
+      - Unpaired median rostral bone forming the anterior keel of the snout, with rostral-nasal contact and the nasal contributing to the internarial bar ventral to the external naris.
+      - Jugals projecting laterally well beyond the dorsal margin of the orbit, bearing a prominent dorsoventral crest on their lateral aspect.
+      - Fenestra of the lacrimal canal present between premaxilla and lacrimal — a condition unique to Psittacosaurus among dinosaurs.
+      - Pterygoid with a neomorphic secondary palatal lamina forming an akinetic basal plate that contacts its opposite at the midline, reinforcing the palate against transverse compression.
+      - Laterally divergent palpebral with transverse posterior margin, projecting laterally to a width equal to the posterior skull table.
+      - Predentary ventral process broad, expanding in width toward its proximal end.
+      - Dentary teeth with a bulbous, cone-shaped primary ridge occupying approximately one third of the crown face, with secondary ridging.
+    identifiers:
+      - source: pbdb
+        id: "38844"
+      - source: wikidata
+        id: Q132672
+      - source: gbif
+        id: "4823245"
+      - source: eol
+        id: "4532049"
+    synonyms:
+      - name: Protiguanodon mongoliense
+        type: junior subjective
+        reason: Erected by Osborn (1923) in the same paper as Psittacosaurus mongoliensis on AMNH 6253 from the Ondai Sair Formation; synonymised with P. mongoliensis by Sereno (1990) after reexamination of both type skeletons, and confirmed in Sereno (2010).
+      - name: Hongshanosaurus houi
+        type: junior subjective
+        reason: Erected by You et al. (2003) on an immature, dorsoventrally crushed skull from the Yixian Formation; sunk into Psittacosaurus by Sereno (2010), who attributed the proposed autapomorphies to preservation artefact and tentatively referred the holotype to P. lujiatunensis.
+      - name: Psittacosaurus osborni
+        type: junior subjective
+        reason: Sereno (1990) found the distinguishing characters (small size, tooth-ridge morphology) fall within the growth series of P. mongoliensis. Sereno (2010) reaffirmed the synonymy as tentative pending more material.
+      - name: Psittacosaurus tingi
+        type: junior subjective
+        reason: Treated by Young (1958) as a junior synonym of P. osborni and by Sereno (1990, 2010) as a junior synonym of P. mongoliensis.
+      - name: Psittacosaurus guyangensis
+        type: junior subjective
+        reason: Sereno (1990) found all distinguishing characteristics fall within the growth series of P. mongoliensis; tentatively reaffirmed by Sereno (2010).
+      - name: Psittacosaurus youngi
+        type: junior subjective
+        reason: Sereno (1990) found P. youngi indistinguishable from P. sinensis; specific distinction can no longer be justified.
+    species:
+      - name: Psittacosaurus mongoliensis
+        etymology: From mongoliensis ("of Mongolia"), referring to the country of origin of the holotype.
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+            - Albian
+          from_ma: 113
+          to_ma: 105
+        location:
+          country: MN
+          region: Ömnögov
+          formation: Ashile
+          locality: Artsa Bogdo basin (Önder Sair / Red Mesa)
+          coordinates:
+            - 44.5
+            - 100.5
+        size:
+          length_m:
+            min: 1.5
+            max: 2
+          weight_kg:
+            min: 12
+            max: 25
+        holotype:
+          specimen_id:
+            - AMNH 6254
+          specimen_type: holotype
+          institution: American Museum of Natural History
+          material: Nearly complete adult skull and jaws plus articulated partial postcranial skeleton (vertebrae, most of the limb elements); recovered from the Ashile Formation in the Artsa Bogdo basin, Mongolia, by the AMNH Central Asiatic Expedition.
+        described: 1923
+        authors: Osborn
+        described_in: osborn1923b
+    references:
+      - id: osborn1923b
+        authors: Osborn, H.F.
+        year: 1923
+        title: Two Lower Cretaceous dinosaurs of Mongolia
+        journal: American Museum Novitates
+        volume: "95"
+        pages: 1-10
+        notes: Erects Psittacosaurus mongoliensis on AMNH 6254 from the Ashile Formation; also names Protiguanodon mongoliense on a smaller specimen from the Ondai Sair Formation.
+      - id: sereno1990
+        authors: Sereno, P.C.
+        year: 1990
+        title: New data on parrot-beaked dinosaurs (Psittacosaurus)
+        journal: "Dinosaur Systematics: Perspectives and Approaches (Carpenter, K. and Currie, P.J., eds.)"
+        pages: 203-210
+        publisher: Cambridge University Press
+        doi: 10.1017/CBO9780511608377.018
+        notes: Modern revision establishing the generic diagnosis; formally synonymises Protiguanodon and several Young/Cheng species into P. mongoliensis or P. sinensis.
+      - id: sereno2010
+        authors: Sereno, P.C.
+        year: 2010
+        title: "Taxonomy, cranial morphology, and relationships of parrot-beaked dinosaurs (Ceratopsia: Psittacosaurus)"
+        journal: "New Perspectives on Horned Dinosaurs: The Royal Tyrrell Museum Ceratopsian Symposium (Ryan, M.J., Chinnery-Allgeier, B.J. and Eberth, D.A., eds.)"
+        pages: 21-58
+        publisher: Indiana University Press
+        notes: Comprehensive modern review of the genus; recognises nine valid species and sinks Hongshanosaurus into Psittacosaurus.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Cerapoda
+      - Marginocephalia
+      - Ceratopsia
   Pteropelyx:
     genus: Pteropelyx
     parent: Hadrosauridae
