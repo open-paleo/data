@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-09T00:50:34.649Z",
+    "built_at": "2026-05-09T01:15:34.570Z",
     "clade_count": 248,
     "genus_count": 1334,
     "license": "CC-BY-4.0",
@@ -107176,13 +107176,13 @@
     },
     "Parasaurolophus": {
       "genus": "Parasaurolophus",
-      "parent": "Hadrosauridae",
+      "parent": "Parasaurolophini",
+      "etymology": "From Greek para (beside, near) and the genus name Saurolophus (crested lizard); meaning \"beside crested lizard\", reflecting Parks's view that the new genus's affinities lay with Saurolophus from the Edmonton Formation.",
       "pronunciation": {
         "phonetic": "PAR-a-saw-ROL-o-fus",
         "ipa": "/ˌpærəsɔːˈrɒləfəs/"
       },
-      "etymology": "From Greek para (beside, near) and the genus name Saurolophus (crested lizard); meaning \"beside crested lizard\", referring to its similarity to Saurolophus.",
-      "description": "A genus of hadrosaurid dinosaur from the Late Cretaceous of North America. Parasaurolophus is best known for its large, elaborate cranial crest that extends back from the skull in a long, curved tube. The hollow crest likely functioned as a resonating chamber for producing sounds and for visual display.\n",
+      "description": "Parasaurolophus is one of the most recognisable lambeosaurine hadrosaurs, distinguished by an elongate hollow cranial crest formed of paired tubes of nasal and frontal that project well posterior to the occiput. Parks erected the genus in 1922 on a skull and partial articulated skeleton (ROM 768) collected by a University of Toronto expedition in 1920 from the Belly River beds of the Red Deer River, Alberta — strata now assigned to the lower Dinosaur Park Formation. Parks himself raised the question of whether the hollow tubes carried air, anticipating the long-running interpretation that the crest housed elongated nasal passages and may have functioned as a resonating chamber for vocal display. Three further species are recognised today — P. tubicen and P. cyrtocristatus from the San Juan Basin and Kaiparowits regions of the southwestern United States, and the disputed Asian P. jiayinensis (often referred to its own genus, Charonosaurus). Material remains rare across the entire range, and Evans, Bavington & Campione (2009) documented that even the Alberta type material likely represents a subadult, with the crest not yet at its fully developed adult expression.",
       "diet": "herbivore",
       "locomotion": "facultative",
       "paleoenvironment": [
@@ -107191,39 +107191,41 @@
       ],
       "appearance": {
         "integument": "scaled",
-        "evidence": "inferred",
-        "features": [
-          "Long, curved tubular cranial crest extending behind the skull",
-          "Broad, duck-like bill",
-          "Deep tail for possible display"
-        ]
+        "evidence": "inferred"
       },
       "diagnostic_features": [
-        "Long, posteriorly directed tubular cranial crest",
-        "Crest contains convoluted nasal passages",
-        "Elongate, backward-curving premaxillary-nasal crest"
+        "Elongate, posteriorly directed hollow tubular cranial crest formed of nasal and frontal, length on the order of 875 mm from the postorbital notch in the holotype.",
+        "Crest interior comprises four parallel thin-walled bony tubes continuous with the external nares.",
+        "Lachrymal positioned far anteriorly and excluded from the orbital rim, overlapping the maxillary.",
+        "Frontal sutural surface for the nasal thickened and steeply angled, extending along the base of the crest and overhanging the supratemporal fenestra.",
+        "Frontal contribution to the dorsal skull roof severely reduced or absent posterior to the base of the crest.",
+        "Anteriorly extended pubic peduncle of the ilium strongly decurved distally and forming an externally overlapping joint with the pubis.",
+        "Cervical postzygapophyses on vertebrae 8-13 strongly elongate and curved ventrally, reaching ~110 mm in length."
       ],
       "identifiers": [
         {
+          "source": "pbdb",
+          "id": "38766"
+        },
+        {
           "source": "wikidata",
-          "id": "Q191805"
+          "id": "Q203583"
+        },
+        {
+          "source": "gbif",
+          "id": "4823227"
+        },
+        {
+          "source": "eol",
+          "id": "47459915"
         }
       ],
       "species": [
         {
           "name": "Parasaurolophus walkeri",
+          "etymology": "Honouring Sir Edmund Walker, Chairman of the Board of Trustees of the Royal Ontario Museum, which sponsored the 1920 University of Toronto expedition that recovered the holotype.",
           "status": "valid",
           "type_species": true,
-          "completeness": "partial",
-          "etymology": "Named for Sir Byron Edmund Walker, chairman of the Board of Trustees of the Royal Ontario Museum, which sponsored the expedition that recovered the holotype in Alberta.",
-          "holotype": {
-            "specimen_id": [
-              "ROM 768"
-            ],
-            "specimen_type": "holotype",
-            "institution": "Royal Ontario Museum",
-            "material": "partial skeleton with nearly complete skull"
-          },
           "period": {
             "name": [
               "Late Cretaceous"
@@ -107231,17 +107233,17 @@
             "stage": [
               "Campanian"
             ],
-            "from_ma": 83.6,
-            "to_ma": 72.2
+            "from_ma": 76.5,
+            "to_ma": 75
           },
           "location": {
             "country": "CA",
             "region": "Alberta",
-            "locality": "Sand Creek",
             "formation": "Dinosaur Park",
+            "locality": "Sand Creek",
             "coordinates": [
-              51.5,
-              -111.5
+              50.75,
+              -111.49
             ]
           },
           "size": {
@@ -107251,16 +107253,24 @@
             },
             "weight_kg": {
               "min": 2600,
-              "max": 5000
+              "max": 3500
             },
             "skull_length_m": {
               "min": 1.6,
               "max": 1.6
             }
           },
+          "holotype": {
+            "specimen_id": [
+              "ROM 768"
+            ],
+            "specimen_type": "holotype",
+            "institution": "Royal Ontario Museum",
+            "material": "Articulated skull with complete crest, 13 cervical and 17 dorsal vertebrae, sacrum, six caudal vertebrae, both scapulocoracoids, both fore limbs, partial pelvis (left side only), and left femur, with associated skin impressions; tail and most of the hindlimbs not preserved."
+          },
           "described": 1922,
           "authors": "Parks",
-          "description": "The type species of Parasaurolophus, known from a partial skeleton with a nearly complete skull preserving the distinctive tubular crest.\n"
+          "described_in": "parks1922"
         }
       ],
       "references": [
@@ -107271,7 +107281,8 @@
           "title": "Parasaurolophus walkeri, a new genus and species of crested trachodont dinosaur",
           "journal": "University of Toronto Studies, Geological Series",
           "volume": "13",
-          "pages": "1-32"
+          "pages": "1-32",
+          "notes": "Erects the genus on ROM 768, a partial articulated skeleton from the Belly River beds (now lower Dinosaur Park Formation), Red Deer River, Alberta, collected in 1920."
         },
         {
           "id": "evans2009",
@@ -107282,7 +107293,9 @@
           "volume": "46",
           "issue": "11",
           "pages": "791-800",
-          "doi": "10.1139/E09-050"
+          "doi": "10.1139/E09-050",
+          "url": "http://dx.doi.org/10.1139/E09-050",
+          "notes": "Identifies frontal-platform autapomorphies, argues the holotype is a subadult with the crest not yet at adult expression, and restricts the genus to the lower Dinosaur Park Formation."
         }
       ],
       "taxonomy": [
@@ -107296,12 +107309,18 @@
         "Archosauria",
         "Dinosauria",
         "Ornithischia",
+        "Genasauria",
         "Cerapoda",
         "Ornithopoda",
-        "Ankylopollexia",
+        "Clypeodonta",
+        "Iguanodontia",
+        "Dryomorpha",
         "Styracosterna",
         "Hadrosauriformes",
-        "Hadrosauridae"
+        "Hadrosauroidea",
+        "Hadrosauridae",
+        "Lambeosaurinae",
+        "Parasaurolophini"
       ]
     },
     "Paraxenisaurus": {
