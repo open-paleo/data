@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-09T06:02:15.888Z",
+    "built_at": "2026-05-09T06:06:28.445Z",
     "clade_count": 248,
-    "genus_count": 1340,
+    "genus_count": 1341,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
     "version": "2026.05"
@@ -24807,6 +24807,114 @@
         "Theropoda",
         "Tetanurae",
         "Avetheropoda"
+      ]
+    },
+    "Bainoceratops": {
+      "genus": "Bainoceratops",
+      "parent": "Protoceratopsidae",
+      "etymology": "From the Bain-Dzak locality (Mongolian for \"rich-in-saxaul\", the Mongolian name for the Flaming Cliffs of the Gobi Desert) and Greek keratops (horned face); meaning \"Bain-Dzak horned face\".",
+      "description": "Bainoceratops is a dubious protoceratopsid erected by Tereshchenko and Alifanov (2003) on a postcranial vertebral series (PIN 614-33) from the Djadokhta Formation at Bayn Dzak (Flaming Cliffs) in southern Mongolia — the same locality that produced Protoceratops andrewsi. The diagnosis rests entirely on minor vertebral characters and lacks cranial material, and Makovicky and Norell (2006) and Chinnery and Horner (2007) have treated B. efremovi as potentially conspecific with Protoceratops andrewsi. Per the project's policy of awaiting broad community consensus before adopting synonymies, the genus is retained here as a separate stub with status nomen dubium.\n",
+      "diet": "herbivore",
+      "locomotion": "quadrupedal",
+      "paleoenvironment": [
+        "arid"
+      ],
+      "diagnostic_features": [
+        "Presacral vertebral centra with concave cranial surfaces and flat caudal surfaces.",
+        "Diapophyses of the ninth dorsal vertebra circular in cross section; interprezygapophyseal spaces of dorsals 9 and 10 narrow.",
+        "Synapophyseal facets of the posteriormost dorsal vertebra sculptured with a median crest."
+      ],
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "85991"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q134387"
+        },
+        {
+          "source": "gbif",
+          "id": "4823101"
+        }
+      ],
+      "species": [
+        {
+          "name": "Bainoceratops efremovi",
+          "etymology": "Named after Ivan Antonovich Efremov (1908-1972), the Soviet palaeontologist and writer who led the early Soviet expeditions to the Gobi Desert.",
+          "status": "nomen dubium",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Campanian"
+            ],
+            "from_ma": 75,
+            "to_ma": 72.1
+          },
+          "location": {
+            "country": "MN",
+            "region": "Ömnögov",
+            "formation": "Djadokhta",
+            "locality": "Bayn Dzak (Flaming Cliffs)",
+            "coordinates": [
+              44.13,
+              103.73
+            ]
+          },
+          "size": {
+            "length_m": {
+              "min": 2,
+              "max": 3
+            }
+          },
+          "holotype": {
+            "specimen_id": [
+              "PIN 614-33"
+            ],
+            "specimen_type": "holotype",
+            "institution": "Paleontological Institute, Russian Academy of Sciences",
+            "material": "Postcranial vertebral series including cervicals 6, 7, 9; thoracics ?1, ?5-7, 9-13; sacral 8; and caudals 1-3, ?10-11, ?18-19. No cranial material."
+          },
+          "described": 2003,
+          "authors": "Tereshchenko & Alifanov",
+          "described_in": "tereshchenko2003"
+        }
+      ],
+      "references": [
+        {
+          "id": "tereshchenko2003",
+          "authors": "Tereshchenko, V.S.; Alifanov, V.R.",
+          "year": 2003,
+          "title": "Bainoceratops efremovi, a new protoceratopid dinosaur (Protoceratopidae, Neoceratopsia) from the Bain-Dzak locality (south Mongolia)",
+          "journal": "Paleontological Journal",
+          "volume": "37",
+          "issue": "3",
+          "pages": "293-302",
+          "publisher": "Pleiades Publishing Ltd",
+          "notes": "Erects Bainoceratops efremovi on PIN 614-33, a postcranial vertebral series from the Djadokhta Formation; treated as potentially conspecific with Protoceratops andrewsi by subsequent workers."
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Marginocephalia",
+        "Ceratopsia",
+        "Neoceratopsia",
+        "Coronosauria",
+        "Protoceratopsidae"
       ]
     },
     "Baiyinosaurus": {
