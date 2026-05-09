@@ -88,7 +88,7 @@ defines the appropriate intake discipline per category.
 | 65 | Alocodon | Manual | Nomen dubium per Weishampel & Witmer 1990; Middle/Late Jurassic ornithischian teeth; recent work places it as Parapredentata. |
 | 149 | Arkharavia | Disputed | Dubious somphospondylan from Udurchukan Fm; holotype caudal vertebra; referred material reassigned to indeterminate hadrosaurid. [done f637f4c] |
 | 152 | Arstanosaurus | Manual | Dubious Bostobe Fm hadrosauroid; chimera history (hadrosaurid maxilla + uninformative femur); "indeterminate hadrosaurid" per modern review. |
-| 155 | Asiamericana | Disputed | Bissekty Fm tooth-taxon; 2013/2019 studies treat as Richardoestesia asiatica but per project policy keep separate stub until consensus broader. status: nomen dubium. |
+| 155 | Asiamericana | Disputed | Bissekty Fm tooth-taxon; 2013/2019 studies treat as Richardoestesia asiatica but per project policy keep separate stub until consensus broader. status: nomen dubium. [done 4fe4226] |
 | 156 | Asiatosaurus | Disputed | Two species (A. mongoliensis, A. kwangshiensis), both nomina dubia (teeth + scant remains); Brachiosauridae→euhelopodid placements over time. |
 | 197 | Bainoceratops | Disputed | Dubious Djadokhta ceratopsian; possibly Protoceratops andrewsi per Makovicky & Norell 2006 but no broad consensus; Chinnery & Horner 2007 also treat as dubious. |
 | 232 | Bienosaurus | Disputed | Lower Lufeng Fm thyreophoran; 2019 Raven et al. concluded nomen dubium, possibly identical to Tatisaurus from same formation. |
