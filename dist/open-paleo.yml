@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-05-09T03:05:28.928Z
+  built_at: 2026-05-09T03:32:15.680Z
   clade_count: 248
   genus_count: 1334
   license: CC-BY-4.0
@@ -109511,99 +109511,84 @@ genera:
       - Deinocheiridae
   Tyrannosaurus:
     genus: Tyrannosaurus
-    parent: Tyrannosauridae
+    parent: Tyrannosaurini
+    etymology: From Greek tyrannos (tyrant) and sauros (lizard); meaning "tyrant lizard", a name Osborn coined to convey the genus's exceptional size relative to all then-known carnivorous land vertebrates.
     pronunciation:
       phonetic: ti-RAN-o-SAWR-us
       ipa: /tᵻˌrænəˈsɔːrəs/
-    etymology: From Greek tyrannos meaning 'tyrant' and sauros meaning 'lizard'; translates as 'tyrant lizard'
     description: |
-      A genus of large theropod dinosaur that lived in western North America during the Late Cretaceous. One of the largest known land predators, measuring up to 12.3 metres in length and weighing up to 8.4 tonnes. Tyrannosaurus possessed a massive skull with powerful jaw muscles capable of generating enormous bite force.
+      Tyrannosaurus is the type genus of Tyrannosauridae and one of the most iconic non-avian dinosaurs, defined by a deep, massively built skull, a foreshortened presacral column of about 23 vertebrae, an extremely reduced two-fingered forelimb, and a heavy, columnar hindlimb terminating in a functionally tridactyl pes. Osborn erected the genus and its type species T. rex in 1905 on a partial skeleton (then catalogued AMNH 973, now CM 9380) collected by Barnum Brown in 1902 from the Hell Creek beds of Dawson County, Montana. In the same paper Osborn also named Dynamosaurus imperiosus on a Wyoming skeleton (AMNH 5866), then formally sank it into Tyrannosaurus rex the following year. The mounted AMNH 5027 specimen, monographed by Osborn in 1916, became the public face of the genus for most of the twentieth century. The original AMNH 973 holotype was sold to the Carnegie Museum during World War II and became CM 9380. Cope's earlier name Manospondylus gigas (1892), based on lost dorsal vertebrae from the Hell Creek of South Dakota, was eventually declared a nomen oblitum because Tyrannosaurus has been in continuous use as the senior available name for over fifty years (ICZN Article 23.9). Modern work compiled by Brusatte et al. (2010) established T. rex as the largest Maastrichtian theropod of Laramidia, with a maximum body length around 13 m, growth rates on the order of 0.7 t per year through a fast-growth phase, and bite forces in excess of 13 kN.
     diet: carnivore
     locomotion: bipedal
     paleoenvironment:
       - fluvial
-      - forested
+      - wetland
     appearance:
       integument: scaled
-      evidence: inferred
-      features:
-        - Massive skull with robust jaw musculature
-        - Tiny, two-fingered forelimbs
+      evidence: direct
     diagnostic_features:
-      - Premaxillary teeth D-shaped in cross-section
-      - Fused nasals
-      - Reduced forelimb with two functional digits
+      - Megalocephalic skull with deep, massively built proportions, brought close to the sacrum by a shortened presacral column of approximately 23 vertebrae.
+      - Fused nasals forming an arched midline ridge on the snout that reinforces the skull against bite-induced stress.
+      - Teeth heterodont and broadly oval to D-shaped in cross-section, with transverse diameter exceeding anteroposterior; alveolar reinforcing plates on the inner surface of the maxilla and dentary.
+      - Squamosal bearing a distinctive horizontal anterior bar projecting into the laterotemporal fenestra.
+      - Forelimb extremely reduced; functionally didactyl manus with powerful recurved unguals; humerus little more than half the length of the femur.
+      - Five sacral vertebrae coossified into a single neural plate with three small fenestrations between S2 and S5.
+      - Pubis, ilium and ischium firmly coalesced; pubis terminating distally in a hugely expanded pedicle ("pubic boot").
+      - Caudal series of approximately 53 vertebrae forming a long, flexible balancing tail without the rod-like rigidity of ornithomimids.
     identifiers:
+      - source: pbdb
+        id: "38613"
       - source: wikidata
-        id: Q14384
+        id: Q14332
+      - source: gbif
+        id: "4822631"
+      - source: eol
+        id: "4433634"
+      - source: zoobank
+        id: FBBAFFFB-40AB-4429-AD28-C9DCC0FE6BEC
     synonyms:
-      - name: Dinotyrannus
+      - name: Dynamosaurus imperiosus
         type: junior subjective
-        reason: Originally described as Albertosaurus megagracilis and renamed Dinotyrannus megagracilis (1995); the material is now universally considered juvenile Tyrannosaurus rex.
-      - name: Alamotyrannus
-        type: nomen nudum
-        reason: Informal name; never met ICZN requirements for formal publication and is treated as referable to Tyrannosaurus. Per Olshevsky's Dinosaur Genera List.
-      - name: Stygivenator
-        type: junior subjective
-        reason: Treated as a junior subjective synonym of Tyrannosaurus in Olshevsky's Dinosaur Genera List.
+        reason: Erected by Osborn (1905) in the same paper as T. rex on AMNH 5866 from Wyoming; formally synonymised with T. rex by Osborn (1906) after direct comparison of the two type specimens.
+      - name: Manospondylus gigas
+        type: nomen oblitum
+        reason: Erected by Cope (1892) on two dorsal vertebrae from the Hell Creek Formation of South Dakota; treated as indeterminate by Osborn (1916). The name is technically senior to Tyrannosaurus rex but, having been used in fewer than 25 publications since 1899, is suppressed under ICZN Article 23.9 in favour of Tyrannosaurus rex (nomen protectum).
     species:
       - name: Tyrannosaurus rex
+        etymology: From Latin rex, "king", chosen by Osborn to evoke the animal's standing as the largest carnivorous land vertebrate then known.
         status: valid
         type_species: true
-        completeness: complete
-        etymology: From Latin 'rex' meaning 'king'.
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+          from_ma: 68
+          to_ma: 66
+        location:
+          country: US
+          region: Montana
+          formation: Hell Creek
+          locality: Dawson County
+          coordinates:
+            - 47.5
+            - -106.4
+        size:
+          length_m:
+            min: 11.9
+            max: 13
+          weight_kg:
+            min: 5400
+            max: 9500
         holotype:
           specimen_id:
             - CM 9380
           specimen_type: holotype
           institution: Carnegie Museum of Natural History
-          material: partial skeleton including skull
-        period:
-          name:
-            - Late Cretaceous
-          stage:
-            - Campanian
-            - Maastrichtian
-          from_ma: 83.6
-          to_ma: 66
-        location:
-          country: US
-          region: Montana
-          locality: Fort Peck
-          formation: Hell Creek
-          coordinates:
-            - 47.5
-            - -106.9
-        size:
-          length_m:
-            min: 11
-            max: 13
-          weight_kg:
-            min: 4500
-            max: 9220
-          hip_height_m:
-            min: 3.7
-            max: 4
-          skull_length_m:
-            min: 1.52
-            max: 1.52
+          material: Partial skeleton with both jaws and portions of the skull, vertebrae, ribs, scapula, humerus, ilium, pubis, ischium, and metapodials. Originally catalogued AMNH 973; sold to the Carnegie Museum in 1941 and renumbered CM 9380.
         described: 1905
         authors: Osborn
-        description: |
-          The only widely accepted species of Tyrannosaurus. Among the last non-avian dinosaurs to exist before the Cretaceous-Paleogene extinction event.
-        synonyms:
-          - name: Tyrannosaurus imperator
-            type: junior subjective
-            reason: Paul et al. 2022 split rejected by subsequent studies.
-          - name: Manospondylus gigas
-            type: junior subjective
-            reason: Described before T. rex but Tyrannosaurus was conserved by ICZN; Manospondylus treated as a junior synonym.
-          - name: Manospondylus amplus
-            type: junior subjective
-            reason: Described before T. rex but Tyrannosaurus was conserved by ICZN; Manospondylus treated as a junior synonym.
-          - name: Dynamosaurus
-            type: junior subjective
-            reason: Erected by Osborn (1905) for the first specimen of T. rex found in Wyoming; recognized later that year as the same species as T. rex (which had been named for the second specimen).
+        described_in: osborn1905
     references:
       - id: osborn1905
         authors: Osborn, H.F.
@@ -109611,9 +109596,28 @@ genera:
         title: Tyrannosaurus and other Cretaceous carnivorous dinosaurs
         journal: Bulletin of the American Museum of Natural History
         volume: "21"
+        issue: "14"
         pages: 259-265
         doi: 10.5281/zenodo.814935
         url: http://dx.doi.org/10.5281/zenodo.814935
+        notes: Erects Tyrannosaurus rex on AMNH 973 (now CM 9380) from the Hell Creek Formation of Dawson County, Montana, and in the same paper names Dynamosaurus imperiosus and Albertosaurus sarcophagus.
+      - id: osborn1906
+        authors: Osborn, H.F.
+        year: 1906
+        title: Tyrannosaurus, Upper Cretaceous carnivorous dinosaur (second communication)
+        journal: Bulletin of the American Museum of Natural History
+        volume: "22"
+        pages: 281-296
+        notes: Refines the T. rex skull description and formally synonymises Dynamosaurus imperiosus with Tyrannosaurus.
+      - id: osborn1916
+        authors: Osborn, H.F.
+        year: 1916
+        title: Skeletal adaptations of Ornitholestes, Struthiomimus, Tyrannosaurus
+        journal: Bulletin of the American Museum of Natural History
+        volume: "35"
+        issue: "43"
+        pages: 733-771
+        notes: First detailed monograph on the mounted AMNH 5027 referred skeleton; treats Manospondylus gigas as indeterminate and establishes the classic 20th-century Tyrannosaurus skeletal interpretation.
       - id: brusatte2010
         authors: Brusatte, S.L.; Norell, M.A.; Carr, T.D.; Erickson, G.M.; Hutchinson, J.R.; Balanoff, A.M.; Bever, G.S.; Choiniere, J.N.; Makovicky, P.J.; Xu, X.
         year: 2010
@@ -109623,6 +109627,8 @@ genera:
         issue: "5998"
         pages: 1481-1485
         doi: 10.1126/science.1193304
+        url: http://dx.doi.org/10.1126/science.1193304
+        notes: Modern multi-author review of tyrannosaur paleobiology; summarises growth rate, bite force, ontogenetic skull change and locomotor modelling for T. rex.
     taxonomy:
       - Life
       - Animalia
@@ -109635,10 +109641,14 @@ genera:
       - Dinosauria
       - Saurischia
       - Theropoda
+      - Neotheropoda
+      - Averostra
       - Tetanurae
-      - Avetheropoda
       - Coelurosauria
+      - Tyrannosauroidea
       - Tyrannosauridae
+      - Tyrannosaurinae
+      - Tyrannosaurini
   Tyrannotitan:
     genus: Tyrannotitan
     parent: Giganotosaurini
