@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-05-09T00:31:14.791Z
+  built_at: 2026-05-09T00:50:34.649Z
   clade_count: 248
   genus_count: 1334
   license: CC-BY-4.0
@@ -53622,12 +53622,11 @@ genera:
   Iguanodon:
     genus: Iguanodon
     parent: Styracosterna
+    etymology: From the modern lizard 'Iguana' and Greek 'odous/odontos' (tooth); meaning 'iguana tooth', referring to Mantell's original recognition that the fossil teeth resembled those of living iguanas at much larger scale.
     pronunciation:
       ipa: /ᵻˈɡwɑːnədɒn/
       phonetic: i-GWAH-nuh-don
-    etymology: Iguana tooth; from the iguana (a modern lizard) and Greek odous/odontos (tooth), named for the resemblance of its teeth to those of the iguana
-    description: |
-      A genus of ornithopod dinosaur from the Early Cretaceous of Europe. Iguanodon was one of the first dinosaurs ever scientifically described and is one of the founding members of the group Dinosauria. It is notable for its large thumb spike, which was originally mistakenly placed on its nose in early reconstructions.
+    description: Iguanodon is one of the original three genera that Owen used to found Dinosauria in 1842 (alongside Megalosaurus and Hylaeosaurus) and is among the earliest dinosaurs ever scientifically described. Gideon Mantell erected the genus in 1825 on isolated teeth from the Tilgate Forest beds of Whiteman's Green, near Cuckfield in Sussex, recognising their similarity to the teeth of living iguanas at vastly greater scale; he originally designated I. anglicus as the type species. The discovery in 1878 of more than thirty articulated skeletons in a coal mine at Bernissart in Belgium produced the first reliable picture of the animal's anatomy and underpinned Louis Dollo's classic restorations. Because Mantell's anglicus syntype teeth proved too fragmentary to anchor the genus, ICZN Opinion 1947 (2000) set aside all prior type-species fixations under plenary power, designating Iguanodon bernissartensis Boulenger in Beneden 1881 as the new type species and skeleton Q (RBINS 1534) as its lectotype. Subsequent taxonomic revisions by Paul (2008) and Norman (2010) split many of the species historically referred to Iguanodon into separate genera — including Mantellisaurus (atherfieldensis), Barilium (dawsoni), Hypselospinus (fittoni, hollingtoniensis), and Dakotadon (lakotaensis) — leaving I. bernissartensis as essentially the only currently valid species and the genus as a Barremian-Aptian ankylopollexian of Western Europe.
     diet: herbivore
     locomotion: facultative
     paleoenvironment:
@@ -53635,112 +53634,123 @@ genera:
       - coastal
     appearance:
       integument: scaled
-      evidence: inferred
-      features:
-        - Large conical thumb spike
-        - Robust build with ability to walk bipedally or quadrupedally
-        - Broad, blunt snout with a horny beak
     diagnostic_features:
-      - Large conical thumb spike (manual digit I ungual)
-      - Laterally compressed, leaf-shaped teeth with denticulate margins
-      - Robust fifth finger that could oppose the others
+      - Skull bearing 29 maxillary and 25 dentary tooth positions with an accessory palpebral bone above the orbit.
+      - Scapula broad with a dorsally-placed acromion process.
+      - Manus massive with a large conical thumb (digit I) ungual modified into a defensive 'thumb spike'; phalanx 1 of digit I retained.
+      - Sacrum of eight fused vertebrae with mediolaterally compressed dorsal centra.
+      - Prepubic process shallow with a long posterior acetabular body of the pubis.
+      - Adult body size on the order of 8-10 m and 3-4 metric tons, larger than most contemporaneous Wealden iguanodontians.
     identifiers:
+      - source: pbdb
+        id: "38749"
       - source: wikidata
-        id: Q15927
+        id: Q14323
+      - source: gbif
+        id: "4822879"
+      - source: eol
+        id: "47459287"
     synonyms:
-      - name: Therosaurus
-        type: junior objective
-        reason: Junior objective synonym for the material of Iguanodon anglicus (Fitzinger, 1840).
-      - name: Hikanodon
-        type: junior objective
-        reason: Now widely treated as a junior synonym of Iguanodon.
-      - name: Sphenospondylus
+      - name: Iguanodon anglicus
+        type: nomen rejectum
+        reason: The original 1825 type species, based on isolated and diagnostically inadequate teeth from Tilgate Forest. ICZN Opinion 1947 (2000) set aside all prior type-species fixations under plenary power, replacing it with I. bernissartensis. Not formally placed on the Official Index, but its type-species status is fully superseded.
+      - name: Iguanodon atherfieldensis
         type: junior subjective
-        reason: Sphenospondylus gracilis was reassigned to Iguanodon gracilis by Steel (1969).
-      - name: Dollodon
+        reason: Reassigned to the new genus Mantellisaurus by Paul (2008) and formally synonymised out of Iguanodon by Norman (2010).
+      - name: Iguanodon dawsoni
         type: junior subjective
-        reason: Carpenter and Ishida (2010) synonymized Dollodon bampingi with Iguanodon seelyi based on the Wessex Formation material.
-      - name: Iguanosaurus
-        type: nomen nudum
-        reason: Obsolete historical name for Iguanodon.
-      - name: Iguanoides
-        type: nomen nudum
-        reason: Obsolete historical name for Iguanodon.
-      - name: Proiguanodon
+        reason: Reassigned to the new genus Barilium by Norman (2010).
+      - name: Iguanodon fittoni
         type: junior subjective
-        reason: Treated as a synonym of Iguanodon; remains a nomen nudum.
-      - name: Heterosaurus
+        reason: Reassigned to the new genus Hypselospinus by Norman (2010).
+      - name: Iguanodon hollingtoniensis
         type: junior subjective
-        reason: Treated as a junior subjective synonym of Iguanodon in Olshevsky's Dinosaur Genera List.
-      - name: Vectisaurus
+        reason: Treated as a junior synonym of Hypselospinus fittoni by Norman (2010).
+      - name: Iguanodon lakotaensis
         type: junior subjective
-        reason: Treated as a junior subjective synonym of Iguanodon in Olshevsky's Dinosaur Genera List.
+        reason: Reassigned to the new genus Dakotadon by Paul (2008).
     species:
       - name: Iguanodon bernissartensis
+        etymology: From 'Bernissart', the village in Hainaut Province, Belgium, where the celebrated coal-mine bonebed was discovered in 1878.
         status: valid
         type_species: true
-        completeness: complete
-        etymology: Named for Bernissart, the town in Belgium where numerous skeletons were discovered.
-        holotype:
-          specimen_id:
-            - IRSNB 1534
-          specimen_type: holotype
-          institution: Royal Belgian Institute of Natural Sciences
-          material: complete skeleton
         period:
           name:
-            - Late Jurassic
             - Early Cretaceous
           stage:
-            - Tithonian
-            - Berriasian
-            - Valanginian
-            - Hauterivian
             - Barremian
             - Aptian
-          from_ma: 145.06
-          to_ma: 119.57
+          from_ma: 125.77
+          to_ma: 113
         location:
           country: BE
           region: Hainaut
-          locality: Bernissart
-          formation: Sainte-Barbe
+          formation: Sainte-Barbe Clays
+          locality: Bernissart coal mine
           coordinates:
-            - 50.5
-            - 3.6
+            - 50.484
+            - 3.652
         size:
           length_m:
-            min: 9
-            max: 11
+            min: 8
+            max: 10
           weight_kg:
-            min: 4500
-            max: 4500
+            min: 3000
+            max: 4000
+        holotype:
+          specimen_id:
+            - RBINS 1534
+          specimen_type: lectotype
+          institution: Royal Belgian Institute of Natural Sciences
+          material: Articulated skeleton ('skeleton Q' from the 1878 Bernissart bonebed); designated lectotype by ICZN Opinion 1947 (2000), superseding all prior type fixations.
         described: 1881
-        authors: Boulenger
-        description: |
-          Known from over 30 complete skeletons discovered in a coal mine at Bernissart, Belgium. One of the best-known ornithopod dinosaurs.
-        synonyms:
-          - name: Delapparentia
-            type: junior subjective
-            reason: Re-analysis of individual variation in the Belgian specimens placed the Delapparentia material within the range of Iguanodon bernissartensis.
+        authors: Boulenger in Beneden
+        described_in: iczn2000
     references:
       - id: mantell1825
-        authors: Mantell, G.A.
+        authors: Mantell, G.
         year: 1825
-        title: Notice on the Iguanodon, a newly discovered fossil reptile
+        title: Notice on the Iguanodon, a newly discovered fossil reptile, from the sandstone of Tilgate Forest, in Sussex
         journal: Philosophical Transactions of the Royal Society of London
         volume: "115"
         pages: 179-186
+        publisher: Royal Society of London
         doi: 10.1098/rstl.1825.0010
-      - id: norman2004
-        authors: Norman, D.B.
-        year: 2004
-        title: Basal Iguanodontia
-        book: The Dinosauria (Second Edition)
-        publisher: University of California Press
-        pages: 413-437
-        doi: 10.1525/california/9780520242098.003.0022
-        url: http://dx.doi.org/10.1525/california/9780520242098.003.0022
+        url: http://dx.doi.org/10.1098/rstl.1825.0010
+        notes: Erects Iguanodon on isolated tooth material from Whiteman's Green, Sussex. Mantell's original type species (I. anglicus) was later superseded by I. bernissartensis under ICZN Opinion 1947.
+      - id: paul2008
+        authors: Paul, G. S.
+        year: 2008
+        title: A revised taxonomy of the iguanodont dinosaur genera and species
+        journal: Cretaceous Research
+        volume: "29"
+        issue: "2"
+        pages: 192-216
+        publisher: Elsevier
+        doi: 10.1016/j.cretres.2007.04.009
+        url: http://dx.doi.org/10.1016/j.cretres.2007.04.009
+        notes: Initiates the modern split of Iguanodon by erecting Mantellisaurus and Dakotadon, restricting Iguanodon to I. bernissartensis.
+      - id: norman2010
+        authors: Norman, D. B.
+        year: 2010
+        title: "A taxonomy of iguanodontians (Dinosauria: Ornithopoda) from the lower Wealden Group (Cretaceous: Valanginian) of southern England"
+        journal: Zootaxa
+        volume: "2489"
+        pages: 47-66
+        publisher: Magnolia Press
+        doi: 10.11646/zootaxa.2489.1.3
+        url: http://dx.doi.org/10.11646/zootaxa.2489.1.3
+        notes: Splits the lower Wealden iguanodontians, removing dawsoni to Barilium and fittoni/hollingtoniensis to Hypselospinus.
+      - id: iczn2000
+        authors: International Commission on Zoological Nomenclature
+        year: 2000
+        title: "Opinion 1947. Iguanodon Mantell, 1825 (Reptilia, Ornithischia): Iguanodon bernissartensis Boulenger in Beneden, 1881 designated as the type species"
+        journal: Bulletin of Zoological Nomenclature
+        volume: "57"
+        issue: "1"
+        pages: 61-62
+        publisher: International Trust for Zoological Nomenclature
+        notes: Resolves Case 3037 (Charig & Chapman 1997). Designates I. bernissartensis as the type species and skeleton Q (RBINS 1534) as lectotype under plenary power. Vote 21-0.
     taxonomy:
       - Life
       - Animalia
