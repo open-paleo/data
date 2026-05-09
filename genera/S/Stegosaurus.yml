@@ -1,108 +1,183 @@
 genus: Stegosaurus
-parent: Stegosauria
+parent: Stegosauridae
+etymology: From Greek stegos (roof) and sauros (lizard); meaning
+  "roof lizard", in reference to the parasagittal rows of large dermal
+  plates that Marsh initially interpreted as forming a roof-like
+  carapace over the back of the animal.
 pronunciation:
   phonetic: STEG-o-SAWR-us
   ipa: /ˌstɛɡəˈsɔːrəs/
-etymology: From Greek stegos, "roof", combined with Greek sauros, "lizard" -
-  means "roof lizard", in reference to the distinctive plates along its back
-description: >
-  A genus of armored dinosaur from the Late Jurassic of North America and
-  Europe. Stegosaurus is immediately recognizable by the distinctive double row
-  of kite-shaped plates along its back and the two pairs of long spikes on its
-  tail, known as the thagomizer.
+description: Stegosaurus is the type genus of Stegosauridae and one
+  of the most readily recognised dinosaurs, characterised by two
+  parasagittal rows of large, erect dermal plates running from the
+  cervicodorsal junction to near the tail tip and by four long tail
+  spines (the "thagomizer") at the distal end of the tail. Marsh
+  erected the genus and the order Stegosauria in 1877 on a partial
+  skeleton from the Morrison Formation of Colorado, originally naming
+  S. armatus as the type species. C. W. Gilmore's 1914 monograph on
+  USNM 4934 (Felch Quarry No. 1, Garden Park, Colorado) supplied the
+  first detailed osteology of the genus and resolved decades of
+  argument over the plate arrangement, demonstrating from articulated
+  evidence that the plates of the two rows alternate rather than pair.
+  Because Marsh's S. armatus material is too fragmentary to anchor the
+  genus, ICZN Opinion 2320 (2013) set aside all prior type-species
+  fixations under plenary power and designated S. stenops Marsh, 1887,
+  with USNM 4934 as its holotype, as the new type species — the form
+  on which most of our modern picture of the genus rests. Several
+  previously named species (S. duplex, Diracodon laticeps) are
+  subsumed in Stegosaurus, while the synonymies of Hesperosaurus and
+  Wuerhosaurus proposed by Maidment et al. (2008) remain contested in
+  subsequent literature and are not accepted here.
 diet: herbivore
 locomotion: quadrupedal
 paleoenvironment:
   - fluvial
-  - forested
+  - wetland
 appearance:
-  integument: scaled
-  evidence: inferred
-  features:
-    - Double row of large, kite-shaped dorsal plates
-    - Two pairs of tail spikes (thagomizer)
-    - Small, narrow head relative to body size
+  integument: armored
+  evidence: direct
 diagnostic_features:
-  - Alternating dorsal plates arranged in two rows
-  - Four tail spikes (thagomizer)
-  - Extremely small braincase relative to body size
+  - Skull comparatively very small with a brain cavity proportionally
+    among the smallest of any large terrestrial vertebrate.
+  - Sacrum with an enormously enlarged neural canal forming a chamber
+    many times the cranial capacity, fully roofed over by bone.
+  - Two parasagittal rows of erect, flattened, kite-shaped dermal
+    plates extending from the cervicodorsal junction to near the tail
+    tip; plates of opposite rows alternating rather than paired.
+  - Tail bearing four large dermal spines arranged in two pairs near
+    the distal end (thagomizer); roughly 20-22 dermal plates total.
+  - Pes tetradactyl with digit IV reduced to a vestigial metatarsal;
+    digit V absent.
+  - Tibia distinctive in having the greatest diameter of both ends
+    lying approximately in the same plane.
+  - Postzygapophyses on the posterior cervical vertebrae elongate
+    posteriorly, overhanging the back of the centrum.
+  - Supra-acetabular process of the ilium diverging at approximately
+    90 degrees from the anterior process.
 identifiers:
+  - source: pbdb
+    id: "38814"
   - source: wikidata
-    id: Q15894
+    id: Q14388
+  - source: gbif
+    id: "230581"
+  - source: eol
+    id: "52570674"
+  - source: zoobank
+    id: 1E80BEA4-EB3D-44EB-9F44-87B94BE9394B
 synonyms:
-  - name: Hypsirophus
-    type: possible subjective
-    reason: Possible junior subjective synonym of Stegosaurus; identification is
-      tentative. Per Olshevsky's Dinosaur Genera List.
-  - name: Wuerhosaurus
-    type: possible subjective
-    reason: Possible junior subjective synonym of Stegosaurus; identification is
-      tentative. Per Olshevsky's Dinosaur Genera List.
+  - name: Stegosaurus duplex
+    type: junior subjective
+    reason: Erected by Marsh (1887) on a sacrum and other elements
+      from Como Bluff, Wyoming; treated by Lull and by Gilmore (1914)
+      as conspecific with the cotype of S. ungulatus and therefore
+      invalid.
+  - name: Diracodon laticeps
+    type: junior subjective
+    reason: Erected by Marsh (1881) on jaw fragments from Como Bluff,
+      Wyoming; Gilmore (1914) argued the type was juvenile Stegosaurus
+      material and referred its caudal vertebrae and spines to S.
+      stenops, treating the genus as invalid.
 species:
   - name: Stegosaurus stenops
+    etymology: From Greek stenos (narrow) and ops (face); "narrow
+      face", referring to the relatively narrow rostrum compared with
+      other Stegosaurus material recognised at the time of Marsh's
+      1887 description.
     status: valid
     type_species: true
-    completeness: complete
-    etymology: "From Ancient Greek 'stenos' meaning 'narrow' and 'ops' meaning
-      'face' or 'eye', referring to the relatively narrow skull of this species
-      compared to other Stegosaurus material."
-    holotype:
-      specimen_id: [ USNM 4934 ]
-      specimen_type: holotype
-      institution: NMNH
-      material: nearly complete skeleton
     period:
       name:
         - Late Jurassic
       stage:
         - Kimmeridgian
         - Tithonian
-      from_ma: 154.8
-      to_ma: 145
+      from_ma: 155.0
+      to_ma: 145.0
     location:
       country: US
       region: Colorado
-      locality: Garden Park
       formation: Morrison
-      coordinates: [ 38.5, -105.2 ]
+      locality: Garden Park (Felch Quarry No. 1)
+      coordinates:
+        - 38.66
+        - -105.22
     size:
       length_m:
-        min: 6.5
-        max: 7.5
+        min: 7.0
+        max: 9.0
       weight_kg:
-        min: 3500
-        max: 5300
+        min: 3000
+        max: 5000
+    holotype:
+      specimen_id:
+        - USNM 4934
+      specimen_type: holotype
+      institution: NMNH
+      material: Articulated and largely complete skeleton with skull,
+        lower jaws, full presacral and sacral columns, 22 caudal
+        vertebrae, both pectoral and pelvic girdles, fore- and
+        hindlimbs, 17 dermal plates, one dermal spine, and numerous
+        dermal ossicles. Designated by ICZN Opinion 2320 (2013) as the
+        holotype of the new type species, replacing S. armatus.
     described: 1887
     authors: Marsh
-    description: >
-      The best-known species of Stegosaurus, known from several nearly complete
-      skeletons from the Morrison Formation.
-    synonyms:
-      - name: Diracodon
-        type: junior subjective
-        reason: D. laticeps was described from jawbone fragments by Marsh (1881);
-          Bakker's 1986 attempt to resurrect it as a senior synonym of S.
-          stenops has been rejected.
+    described_in: iczn2013
 references:
   - id: marsh1877a
     authors: Marsh, O.C.
     year: 1877
-    title: New order of extinct Reptilia (Stegosauria) from the Jurassic of the
-      Rocky Mountains
+    title: A new order of extinct Reptilia (Stegosauria) from the
+      Jurassic of the Rocky Mountains
     journal: American Journal of Science
-    volume: "14"
-    pages: "513-514"
+    volume: s3-14
+    issue: "84"
+    pages: 513-514
     doi: 10.2475/ajs.s3-14.84.513
     url: http://dx.doi.org/10.2475/ajs.s3-14.84.513
+    notes: Erects the genus Stegosaurus and the order Stegosauria on
+      a partial Morrison-Formation skeleton; original type species S.
+      armatus, later superseded by S. stenops.
+  - id: gilmore1914b
+    authors: Gilmore, C.W.
+    year: 1914
+    title: Osteology of the armored Dinosauria in the United States
+      National Museum, with special reference to the genus
+      Stegosaurus
+    journal: United States National Museum Bulletin
+    volume: "89"
+    pages: 1-136
+    notes: Foundational monograph on USNM 4934 (the future neotype-
+      equivalent holotype of S. stenops). Establishes the alternating
+      plate arrangement and supplies the first detailed osteology of
+      the genus.
   - id: maidment2008
-    authors: Maidment, Susannah C. R.; Norman, David B.; Barrett, Paul M.; Upchurch,
-      Paul
+    authors: Maidment, S.C.R.; Norman, D.B.; Barrett, P.M.; Upchurch,
+      P.
     year: 2008
-    title: "Systematics and phylogeny of Stegosauria (Dinosauria: Ornithischia)"
+    title: "Systematics and phylogeny of Stegosauria (Dinosauria:
+      Ornithischia)"
     journal: Journal of Systematic Palaeontology
     volume: "6"
     issue: "4"
     pages: 367-407
-    publisher: Informa UK Limited
     doi: 10.1017/S1477201908002459
     url: http://dx.doi.org/10.1017/S1477201908002459
+    notes: Alpha-level revision of Stegosauria; sinks Hesperosaurus
+      and Wuerhosaurus into Stegosaurus (as S. mjosi and S. homheni).
+      Both synonymies are contested in subsequent literature.
+  - id: iczn2013
+    authors: International Commission on Zoological Nomenclature
+    year: 2013
+    title: "Opinion 2320 (Case 3536). Stegosaurus Marsh, 1877
+      (Dinosauria, Ornithischia): type species replaced with
+      Stegosaurus stenops Marsh, 1887"
+    journal: Bulletin of Zoological Nomenclature
+    volume: "70"
+    issue: "2"
+    pages: 129-130
+    publisher: International Trust for Zoological Nomenclature
+    notes: Resolves Case 3536 (Galton 2010). Sets aside all prior
+      type-species fixations under plenary power and designates S.
+      stenops Marsh, 1887 (holotype USNM 4934) as the new type
+      species. Vote 22-3.
