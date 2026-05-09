@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-05-09T06:28:40.810Z
+  built_at: 2026-05-09T16:45:52.473Z
   clade_count: 248
-  genus_count: 1342
+  genus_count: 1343
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.05"
@@ -25445,6 +25445,68 @@ genera:
       - Tetanurae
       - Coelurosauria
       - Tyrannosauroidea
+  Calamospondylus:
+    genus: Calamospondylus
+    parent: Coelurosauria
+    etymology: From Greek kalamos (reed) and spondylos (vertebra), in reference to the hollow, reed-like nature of the vertebrae.
+    description: |
+      Calamospondylus is a problematic small theropod erected by the Rev. William Fox (1866) on a sacrum of five cemented vertebrae with associated sacral ribs and partial ilia, recovered from the Wealden of the Isle of Wight. The original material is now lost, the published description is brief, and no autapomorphies were diagnosed; following Naish's review (2002) the taxon is treated as a nomen dubium. It should not be confused with Calamosaurus Lydekker (1891), a separate Wealden coelurosaur.
+    diet: carnivore
+    locomotion: bipedal
+    identifiers:
+      - source: pbdb
+        id: "67031"
+      - source: wikidata
+        id: Q531085
+      - source: gbif
+        id: "4821948"
+    species:
+      - name: Calamospondylus oweni
+        etymology: Named in honor of Sir Richard Owen, who examined the holotype.
+        status: nomen dubium
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Barremian
+          from_ma: 129.4
+          to_ma: 125
+        location:
+          country: GB
+          region: England
+          formation: Wessex
+          locality: Isle of Wight (Wealden Group)
+          coordinates:
+            - 50.651669
+            - -1.450556
+        described: 1866
+        authors: Fox
+        described_in: fox1866b
+    references:
+      - id: fox1866b
+        authors: Fox, W.
+        year: 1866
+        title: Another new Wealden reptile
+        journal: The Geologist
+        volume: "9"
+        pages: "383"
+        notes: Brief one-paragraph note erecting Calamospondylus oweni on a sacrum and partial ilia from the Wealden of the Isle of Wight; the type material is now lost.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Tetanurae
+      - Avetheropoda
+      - Coelurosauria
   Caletodraco:
     genus: Caletodraco
     parent: Furileusauria
@@ -86542,9 +86604,9 @@ genera:
           specimen_type: holotype
           institution: Natural History Museum
           material: Skeletal remains from Wealden beds of Isle of Wight including torso, tail (5 feet), legs (4 feet), armor plates (0.5-4 inches diameter), and spine-like bones along body and tail (up to 15 inches long, 7 lbs)
-        described_in: fox1866
+        described_in: fox1866a
     references:
-      - id: fox1866
+      - id: fox1866a
         authors: Fox, W.
         year: 1866
         title: On a new Wealden saurian named Polacanthus
