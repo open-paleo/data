@@ -66,7 +66,7 @@ None. Every Manual-flagged genus had a real reason to be flagged: it is either m
 | 448 | Diplodocus | Manual | 1878 Marsh; "Dippy" cast distributed worldwide; D. carnegii, D. hallorum (ex-Seismosaurus); centerpiece of Bone Wars and Second Dinosaur Rush. [done 679d6a4] |
 | 749 | Iguanodon | Manual | 1825 Mantell; one of the original three dinosaurs; ICZN-changed type species to I. bernissartensis; complex split-offs (Mantellisaurus, Barilium, Hypselospinus, Paulodon). [done 5e4b621] |
 | 1077 | Nanotyrannus | Disputed | 1988 Bakker, Williams & Currie. Validity vs juvenile T. rex disputed for decades; 2025 Zanno & Napoli + 2025 Griffin et al. validate it; second species N. lethaeus also named 2025. Multi-paper PR warranted. |
-| 1209 | Parasaurolophus | Manual | 1922 Parks; three valid species (P. walkeri, P. tubicen, P. cyrtocristatus); famous crest-resonator hypothesis; possible 4th species jiayinensis (=Charonosaurus). |
+| 1209 | Parasaurolophus | Manual | 1922 Parks; three valid species (P. walkeri, P. tubicen, P. cyrtocristatus); famous crest-resonator hypothesis; possible 4th species jiayinensis (=Charonosaurus). [done ca1db3f] |
 | 1293 | Protoceratops | Disputed | 1923 Granger & Gregory; multi-species (P. andrewsi, P. hellenikorhinus), Fighting Dinosaurs specimen, complex relationship with Bagaceratops, Bainoceratops. |
 | 1300 | Psittacosaurus | Disputed | Most species-rich non-avian dinosaur genus (up to 13 species); type of Psittacosauridae; integument / colour / cloaca / umbilicus famously preserved. |
 | 1490 | Spinosaurus | Manual | 1915 Stromer; aquatic-lifestyle controversy ongoing; multi-species history (S. aegyptiacus, S. moroccanus, Sigilmassasaurus relationship). |
