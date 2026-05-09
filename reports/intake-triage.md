@@ -63,7 +63,7 @@ None. Every Manual-flagged genus had a real reason to be flagged: it is either m
 | 251 | Brachiosaurus | Manual | Type of Brachiosauridae; 1903 Riggs; B. altithorax holotype + Felch Quarry skull, plus Giraffatitan / Lusotitan / Vouivria split-offs over 120 yr history. [done 8c1527c] |
 | 314 | Ceratosaurus | Manual | Type of Ceratosauridae; 1884 Marsh; multi-species (C. nasicornis, C. dentisulcatus, C. magnicornis), occurrences in NA, Portugal, possibly Africa/Uruguay. [done 879d878] |
 | 363 | Coelophysis | Manual | 1889 Cope; Ghost Ranch quarry yielded over 1,000 individuals; ICZN neotype ruling 1996 (Rioarribasaurus rejected); Megapnosaurus / "Syntarsus" split. [done 62df6ab] |
-| 448 | Diplodocus | Manual | 1878 Marsh; "Dippy" cast distributed worldwide; D. carnegii, D. hallorum (ex-Seismosaurus); centerpiece of Bone Wars and Second Dinosaur Rush. |
+| 448 | Diplodocus | Manual | 1878 Marsh; "Dippy" cast distributed worldwide; D. carnegii, D. hallorum (ex-Seismosaurus); centerpiece of Bone Wars and Second Dinosaur Rush. [done 679d6a4] |
 | 749 | Iguanodon | Manual | 1825 Mantell; one of the original three dinosaurs; ICZN-changed type species to I. bernissartensis; complex split-offs (Mantellisaurus, Barilium, Hypselospinus, Paulodon). |
 | 1077 | Nanotyrannus | Disputed | 1988 Bakker, Williams & Currie. Validity vs juvenile T. rex disputed for decades; 2025 Zanno & Napoli + 2025 Griffin et al. validate it; second species N. lethaeus also named 2025. Multi-paper PR warranted. |
 | 1209 | Parasaurolophus | Manual | 1922 Parks; three valid species (P. walkeri, P. tubicen, P. cyrtocristatus); famous crest-resonator hypothesis; possible 4th species jiayinensis (=Charonosaurus). |
