@@ -70,7 +70,7 @@ None. Every Manual-flagged genus had a real reason to be flagged: it is either m
 | 1293 | Protoceratops | Disputed | 1923 Granger & Gregory; multi-species (P. andrewsi, P. hellenikorhinus), Fighting Dinosaurs specimen, complex relationship with Bagaceratops, Bainoceratops. |
 | 1300 | Psittacosaurus | Disputed | Most species-rich non-avian dinosaur genus (up to 13 species); type of Psittacosauridae; integument / colour / cloaca / umbilicus famously preserved. |
 | 1490 | Spinosaurus | Manual | 1915 Stromer; aquatic-lifestyle controversy ongoing; multi-species history (S. aegyptiacus, S. moroccanus, Sigilmassasaurus relationship). [done 65f2cc8] |
-| 1498 | Stegosaurus | Manual | Type of Stegosauridae; 1877 Marsh; S. armatus replaced by S. stenops as type species (ICZN 2013); multi-species + Hesperosaurus / Wuerhosaurus split-offs. |
+| 1498 | Stegosaurus | Manual | Type of Stegosauridae; 1877 Marsh; S. armatus replaced by S. stenops as type species (ICZN 2013); multi-species + Hesperosaurus / Wuerhosaurus split-offs. [done e451f39] |
 | 1626 | Triceratops | Manual | Best-known ceratopsian; 1889 Marsh; T. horridus + T. prorsus; 17 named species; ongoing Torosaurus / Nedoceratops synonymy debate. |
 | 1644 | Tyrannosaurus | Manual | Type of Tyrannosauridae; 1905 Osborn; T. rex + recently named T. mcraeensis; Nanotyrannus debate; Sue, Stan, etc. |
 | 1684 | Velociraptor | Manual | 1924 Osborn; V. mongoliensis + V. osmolskae + new species under description (MPC-D 100/982); Fighting Dinosaurs specimen; pop-culture status. |
