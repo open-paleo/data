@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-09T22:03:11.409Z",
+    "built_at": "2026-05-09T22:22:08.989Z",
     "clade_count": 248,
     "genus_count": 1351,
     "license": "CC-BY-4.0",
@@ -145438,18 +145438,11 @@
     },
     "Ultrasaurus": {
       "genus": "Ultrasaurus",
-      "parent": "Diplodocinae",
-      "etymology": "ultra lizard",
-      "description": "Ultrasaurus is a genus of sauropod dinosaur discovered by Haang Mook Kim in South Korea. However, the name was first used unofficially (as a nomen nudum) in 1979 by Jim Jensen to describe a set of giant dinosaur bones he discovered in the United States. Because Kim published the name for his specimen before Jensen could do so officially, George Olshevsky renamed the specimen as Ultrasauros. Jensen's giant sauropod was later found to be a chimera, and the type remains are now assigned to Supersaurus.",
+      "parent": "Sauropoda",
+      "etymology": "From Latin ultra (beyond, exceeding) and Greek sauros (lizard); meaning \"ultra lizard\", reflecting Kim's inference that the animal exceeded Supersaurus in size.",
+      "description": "Ultrasaurus is a genus of sauropod dinosaur discovered by Haang Mook Kim in South Korea. However, the name was first used unofficially (as a nomen nudum) in 1979 by Jim Jensen to describe a set of giant dinosaur bones he discovered in the United States. Because Kim published the name for his specimen before Jensen could do so officially, George Olshevsky renamed the specimen as Ultrasauros. Jensen's giant sauropod was later found to be a chimera, and the type remains are now assigned to Supersaurus.\n",
       "diet": "herbivore",
       "locomotion": "quadrupedal",
-      "diagnostic_features": [
-        "scapula with moderately expanded distal end, differing from Brachiosaurus",
-        "dorsal vertebrae with anteroposteriorly narrow neural spines",
-        "midcervical vertebrae lacking pleurocoels, a radical difference from Diplodocidae",
-        "posterior dorsal vertebrae with high neural spines",
-        "anterior caudal vertebrae with high neural spines"
-      ],
       "identifiers": [
         {
           "source": "pbdb",
@@ -145467,7 +145460,8 @@
       "species": [
         {
           "name": "Ultrasaurus tabriensis",
-          "status": "valid",
+          "etymology": "From Tabri (Tabri station, near the type locality at Bongam pass) and Latin -ensis (\"from\"); meaning \"from Tabri\".",
+          "status": "nomen dubium",
           "type_species": true,
           "period": {
             "name": [
@@ -145476,15 +145470,18 @@
             "stage": [
               "Aptian",
               "Albian"
-            ]
+            ],
+            "from_ma": 125,
+            "to_ma": 100.5
           },
           "location": {
             "country": "KR",
             "region": "North Gyeongsang",
             "formation": "Gugyedong",
+            "locality": "Roadside cliff near Bongam pass, ~1.6 km SW of Tabri station, Euiseong-gun (Hayang Group)",
             "coordinates": [
-              37.066,
-              129.347
+              36.4,
+              128.8
             ]
           },
           "holotype": {
@@ -145493,25 +145490,25 @@
             ],
             "specimen_type": "holotype",
             "institution": "Department of Geology, Busan National University",
-            "material": "Posterior dorsal vertebra from Brushy Basin Member, Morrison Formation, Colorado"
+            "material": "Partial bone identified by Kim as a right ulna (preserved length 70 cm, estimated ~118 cm complete); later workers reinterpret the element as a humerus, yielding much smaller body-size estimates and rendering the genus a nomen dubium."
           },
           "described": 1983,
           "authors": "Kim",
-          "described_in": "jensen1985"
+          "described_in": "kim1983"
         }
       ],
       "references": [
         {
-          "id": "jensen1985",
-          "authors": "Jensen, J. A.",
-          "year": 1985,
-          "title": "Three new sauropod dinosaurs from the Upper Jurassic of Colorado",
-          "journal": "The Great Basin Naturalist",
-          "volume": "45",
-          "issue": "4",
-          "pages": "697-709",
-          "doi": "10.5962/bhl.part.4439",
-          "url": "http://dx.doi.org/10.5962/bhl.part.4439"
+          "id": "kim1983",
+          "authors": "Kim, H.M.",
+          "year": 1983,
+          "title": "Cretaceous dinosaurs from South Korea",
+          "journal": "Journal of the Geological Society of Korea",
+          "volume": "19",
+          "issue": "3",
+          "pages": "115-126",
+          "doi": "10.14770/jgsk.1983.19.3.115",
+          "notes": "Erects Ultrasaurus tabriensis on DGBU-1973 from the Gugyedong Formation at Bongam pass; Kim classified the genus in Brachiosauridae and estimated 40 m / 120 t. In Korean with English abstract."
         }
       ],
       "taxonomy": [
@@ -145526,17 +145523,7 @@
         "Dinosauria",
         "Saurischia",
         "Sauropodomorpha",
-        "Massopoda",
-        "Sauropodiformes",
-        "Sauropoda",
-        "Gravisauria",
-        "Eusauropoda",
-        "Neosauropoda",
-        "Diplodocoidea",
-        "Diplodocimorpha",
-        "Flagellicaudata",
-        "Diplodocidae",
-        "Diplodocinae"
+        "Sauropoda"
       ]
     },
     "Ulughbegsaurus": {
