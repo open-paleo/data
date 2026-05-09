@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-09T05:16:16.092Z",
+    "built_at": "2026-05-09T05:37:45.798Z",
     "clade_count": 248,
-    "genus_count": 1336,
+    "genus_count": 1337,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
     "version": "2026.05"
@@ -138134,6 +138134,155 @@
         "Avetheropoda",
         "Coelurosauria",
         "Ornithomimosauria"
+      ]
+    },
+    "Thecodontosaurus": {
+      "genus": "Thecodontosaurus",
+      "parent": "Sauropodomorpha",
+      "etymology": "From Greek theke (case, socket), odous (tooth) and sauros (lizard); meaning \"socket-tooth lizard\", reflecting Riley and Stutchbury's observation that the teeth are set in distinct deep alveoli — a configuration unusual among the reptiles known to them at the time.",
+      "pronunciation": {
+        "phonetic": "THEE-koh-DON-toh-SAWR-us",
+        "ipa": "/ˌθiːkoʊˌdɒntoʊˈsɔːrəs/"
+      },
+      "description": "Thecodontosaurus is a small basal sauropodomorph from the Rhaetian fissure-fill faunas of the Bristol area of southwest England, and one of the first five non-avian dinosaurs ever scientifically described. Riley and Stutchbury erected the genus and the type species T. antiquus in 1836 on a partial dentary recovered in 1834 from the Magnesian Conglomerate at Durdham Down, near Bristol — a Triassic karstic fissure fill in Carboniferous Limestone. The original holotype (a right dentary, BRSMG Ca7465/1) was destroyed in the 1940 Bristol air raids, and Galton (1985) designated a left dentary (BRSMG C4529/2) from the same Clifton fissure-fill assemblage as the neotype. Galton's 2007 monograph on the 1834 Clifton fissure fauna confirms a single valid species (T. antiquus) by sinking T. cylindrodon into it; many other species historically assigned to the genus have since been transferred to separate taxa (Pantydraco for T. caducus, Efraasia for T. diagnosticus, Galtonia for \"T.\" gibbidens, and others). Asylosaurus yalensis was erected from material previously confused with T. antiquus in the same fissure fill.\n",
+      "diet": "herbivore",
+      "locomotion": "bipedal",
+      "paleoenvironment": [
+        "arid"
+      ],
+      "appearance": {
+        "integument": "scaled",
+        "evidence": "inferred"
+      },
+      "diagnostic_features": [
+        "Teeth set in deep, distinct alveoli to nearly half their length — the feature for which Riley and Stutchbury named the genus.",
+        "Hollow-rooted teeth in which a replacement crown forms within the same alveolar cavity as the functional tooth.",
+        "Tooth crowns lancet-shaped, with serrated anterior and posterior edges and serrations directed toward the apex.",
+        "Dentary short and deep, with maximum dorsoventral depth greater than 20% of dentary length.",
+        "All teeth retain a recurved lateral profile; the middle and posterior teeth do not become lanceolate as in other basal sauropodomorphs.",
+        "Posterior dorsal and anterior sacral centra with a keyhole-shaped neural canal in transverse section and an extensively ventrally excavated centrum.",
+        "Mid-caudal vertebrae with the anterior edge of the transverse process continuing as a sharp ridge across the neural arch.",
+        "Proximal caudal centra with the ventral furrowing reduced or lost; ventral surface transversely convex with a median ridge in at least one specimen."
+      ],
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "53022"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q131300"
+        },
+        {
+          "source": "gbif",
+          "id": "4578166"
+        },
+        {
+          "source": "eol",
+          "id": "52571685"
+        }
+      ],
+      "synonyms": [
+        {
+          "name": "Thecodontosaurus cylindrodon",
+          "type": "junior subjective",
+          "reason": "Treated by Huene (1908) as a separate species on tooth morphology; sunk into T. antiquus by Galton (1973) and reaffirmed by Galton (2007), who attributed gracile vs. robust morphs to within-population variation rather than two species."
+        }
+      ],
+      "species": [
+        {
+          "name": "Thecodontosaurus antiquus",
+          "etymology": "From Latin antiquus (\"ancient\"), referring to the great geological age of the Magnesian Conglomerate fauna relative to other reptiles known to Riley and Stutchbury in 1836.",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Triassic"
+            ],
+            "stage": [
+              "Rhaetian"
+            ],
+            "from_ma": 205.5,
+            "to_ma": 201.4
+          },
+          "location": {
+            "country": "GB",
+            "region": "Bristol",
+            "formation": "Magnesian Conglomerate",
+            "locality": "Quarry Steps Quarry, Clifton, Bristol",
+            "coordinates": [
+              51.46,
+              -2.61
+            ]
+          },
+          "size": {
+            "length_m": {
+              "min": 2,
+              "max": 3
+            },
+            "weight_kg": {
+              "min": 11,
+              "max": 30
+            }
+          },
+          "holotype": {
+            "specimen_id": [
+              "BRSMG C4529/2"
+            ],
+            "specimen_type": "neotype",
+            "institution": "Bristol City Museum and Art Gallery",
+            "material": "Left dentary with teeth, designated by Galton (1985) as neotype after the destruction of the original right dentary holotype (BRSMG Ca7465/1) in the 1940 Bristol air raids."
+          },
+          "described": 1836,
+          "authors": "Riley & Stutchbury",
+          "described_in": "riley1836"
+        }
+      ],
+      "references": [
+        {
+          "id": "riley1836",
+          "authors": "Riley, H.; Stutchbury, S.",
+          "year": 1836,
+          "title": "A description of various fossil remains of three distinct saurian animals discovered in the autumn of 1834 in the Magnesian Conglomerate on Durdham-Down, near Bristol",
+          "journal": "Proceedings of the Geological Society of London",
+          "volume": "2",
+          "pages": "397-399",
+          "notes": "Erects Thecodontosaurus and the type species T. antiquus on dentary and tooth material from the Durdham Down fissure fill; one of the first five non-avian dinosaurs ever named."
+        },
+        {
+          "id": "huene1908",
+          "authors": "Huene, F. v.",
+          "year": 1908,
+          "title": "Die Dinosaurier der Europäischen Triasformation mit berücksichtigung der Ausseuropäischen vorkommnisse",
+          "journal": "Geologische und Palaeontologische Abhandlungen",
+          "volume": "Suppl. 1",
+          "pages": "1-419",
+          "notes": "Classic European Triassic monograph; recognises T. antiquus and T. cylindrodon as distinct species (later synonymised by Galton 1973) and places the genus in Thecodontosauridae."
+        },
+        {
+          "id": "galton2007a",
+          "authors": "Galton, P.M.",
+          "year": 2007,
+          "title": "Notes on the remains of archosaurian reptiles, mostly basal sauropodomorph dinosaurs, from the 1834 fissure fill (Rhaetian, Upper Triassic) at Clifton in Bristol, southwest England",
+          "journal": "Revue de Paléobiologie",
+          "volume": "26",
+          "issue": "2",
+          "pages": "505-591",
+          "notes": "Comprehensive modern review of the Clifton fissure-fill sauropodomorphs; reaffirms T. cylindrodon as a junior synonym of T. antiquus and erects Asylosaurus on previously confused material."
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha"
       ]
     },
     "Thecospondylus": {
