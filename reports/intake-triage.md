@@ -77,6 +77,12 @@ None. Every Manual-flagged genus had a real reason to be flagged: it is either m
 
 ## Bucket D — Disputed-but-keep (42)
 
+For the 37 currently-open Disputed entries, see
+[`bucket-d-classification.md`](bucket-d-classification.md), which
+groups them by dispute type (stale-flag, nomen dubium,
+type-genus-retained, wastebasket, identity-reassignment, etc.) and
+defines the appropriate intake discipline per category.
+
 | # | Genus | Label | Notes |
 |---|---|---|---|
 | 65 | Alocodon | Manual | Nomen dubium per Weishampel & Witmer 1990; Middle/Late Jurassic ornithischian teeth; recent work places it as Parapredentata. |
