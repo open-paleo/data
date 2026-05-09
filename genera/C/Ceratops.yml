@@ -1,0 +1,78 @@
+genus: Ceratops
+parent: Ceratopsidae
+etymology: From Greek keras (horn) and ops (face); meaning
+  "horn face".
+description: >
+  Ceratops is a dubious genus of herbivorous ceratopsian dinosaur
+  which lived during the Late Cretaceous. Its fossils have been
+  found in the Judith River Formation in Montana. Although
+  poorly known, Ceratops is important in the history of
+  dinosaurs, since it is the type genus for which both the
+  Ceratopsia and the Ceratopsidae have been named.
+diet: herbivore
+locomotion: quadrupedal
+identifiers:
+  - source: pbdb
+    id: "52823"
+  - source: wikidata
+    id: Q134704
+  - source: gbif
+    id: "4823135"
+  - source: eol
+    id: "4531607"
+synonyms:
+  - name: Proceratops montanus
+    type: junior subjective
+    reason: Replacement name proposed by Lull (1906) on the
+      mistaken belief that Ceratops Marsh 1888 was preoccupied
+      by Ceratops Rafinesque 1815; the Rafinesque name was a
+      nomen nudum, leaving Ceratops Marsh available, so
+      Proceratops is treated as a junior synonym.
+species:
+  - name: Ceratops montanus
+    etymology: From Latin montanus ("of Montana"), referring to
+      the type-locality state.
+    status: nomen dubium
+    type_species: true
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Campanian
+      from_ma: 83.6
+      to_ma: 72.1
+    location:
+      country: US
+      region: Montana
+      formation: Judith River
+      locality: Near Cow Creek, Blaine County (uppermost Judith
+        River Formation; "Laramie deposits" in Marsh's
+        nineteenth-century usage)
+      coordinates:
+        - 48.5
+        - -109.0
+    holotype:
+      specimen_id:
+        - USNM 2411
+      specimen_type: holotype
+      institution: NMNH
+      material: A pair of supraorbital horn-cores (~22 cm long)
+        and an elongated basioccipital forming the occipital
+        condyle, collected by J.B. Hatcher in late summer 1888.
+    described: 1888
+    authors: Marsh
+    described_in: marsh1888b
+references:
+  - id: marsh1888b
+    authors: Marsh, O.C.
+    year: 1888
+    title: "A new family of horned Dinosauria, from the
+      Cretaceous"
+    journal: American Journal of Science
+    volume: s3-36
+    issue: "216"
+    pages: 477-478
+    doi: 10.2475/ajs.s3-36.216.477
+    notes: Erects Ceratops montanus on a horn-pair plus
+      basioccipital from the Judith River Formation of Montana,
+      and erects the family Ceratopsidae in the same paper.
