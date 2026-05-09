@@ -110,7 +110,7 @@ defines the appropriate intake discipline per category.
 | 555 | Euronychodon | Disputed | Tooth-taxon; two species in Portugal + Uzbekistan; possibly synonymous with Paronychodon; nomen dubium per most reviews. [done 27a1d5b] |
 | 559 | Euskelosaurus | Disputed | Elliot Fm sauropodomorph; recently considered nomen dubium and "wastebasket taxon"; Plateosauravus often used for the material instead. |
 | 561 | Fabrosaurus | Disputed | Elliot Fm partial jaw; type species F. australis is nomen dubium per Charig & Crompton 1974; better material was split off as Lesothosaurus by Galton 1978. [done 9de8c8c] |
-| 622 | Gigantosaurus | Disputed | Kimmeridge Clay sauropod fragments; G. megalonyx is nomen dubium per Lydekker 1888; later re-use of the name by Fraas 1908 for African material led to Tornieria/Janenschia tangle. |
+| 622 | Gigantosaurus | Disputed | Kimmeridge Clay sauropod fragments; G. megalonyx is nomen dubium per Lydekker 1888; later re-use of the name by Fraas 1908 for African material led to Tornieria/Janenschia tangle. [done 8d45f14] |
 | 708 | Horshamosaurus | Manual | Weald Clay nodosaurid; 2020 reassessment by Blows determined dubious, not diagnosable beyond Nodosauridae. |
 | 739 | Hypsirhophus | Disputed | Garden Park (Morrison) stegosaurid; Cope 1878; sometimes Stegosaurus synonym, sometimes nomen dubium, sometimes valid (Carpenter & Galton). Stub appropriate. |
 | 913 | Lexovisaurus | Manual | Oxford Clay stegosaur; Maidment et al. 2008 declared L. durobrivensis nomen dubium and split better material as Loricatosaurus; later workers continue using Lexovisaurus as valid. Stub level. |
