@@ -73,7 +73,7 @@ None. Every Manual-flagged genus had a real reason to be flagged: it is either m
 | 1498 | Stegosaurus | Manual | Type of Stegosauridae; 1877 Marsh; S. armatus replaced by S. stenops as type species (ICZN 2013); multi-species + Hesperosaurus / Wuerhosaurus split-offs. [done e451f39] |
 | 1626 | Triceratops | Manual | Best-known ceratopsian; 1889 Marsh; T. horridus + T. prorsus; 17 named species; ongoing Torosaurus / Nedoceratops synonymy debate. [done cf2d9f2] |
 | 1644 | Tyrannosaurus | Manual | Type of Tyrannosauridae; 1905 Osborn; T. rex + recently named T. mcraeensis; Nanotyrannus debate; Sue, Stan, etc. [done 66aa69a] |
-| 1684 | Velociraptor | Manual | 1924 Osborn; V. mongoliensis + V. osmolskae + new species under description (MPC-D 100/982); Fighting Dinosaurs specimen; pop-culture status. |
+| 1684 | Velociraptor | Manual | 1924 Osborn; V. mongoliensis + V. osmolskae + new species under description (MPC-D 100/982); Fighting Dinosaurs specimen; pop-culture status. [done 4baffcf] |
 
 ## Bucket D — Disputed-but-keep (42)
 
