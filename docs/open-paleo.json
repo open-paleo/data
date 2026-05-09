@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-09T19:00:58.472Z",
+    "built_at": "2026-05-09T19:39:14.562Z",
     "clade_count": 248,
-    "genus_count": 1344,
+    "genus_count": 1345,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
     "version": "2026.05"
@@ -47681,6 +47681,115 @@
         "Iguanodontia",
         "Dryomorpha",
         "Dryosauridae"
+      ]
+    },
+    "Dryptosauroides": {
+      "genus": "Dryptosauroides",
+      "parent": "Abelisauridae",
+      "etymology": "From Dryptosaurus (Marsh's North American genus) and Greek -oides (resembling); meaning \"Dryptosaurus-like\", in reference to the perceived similarity in vertebral shape.",
+      "description": "Dryptosauroides is a problematic large theropod from the Maastrichtian Lameta Group of central India, erected by Huene & Matley (1933) on a syntype series of six large vertebrae (GSI K20/334, K20/609, K27/549, K27/601, K27/602, K27/626) from the Carnosaur bed at Bara Simla, Jabalpur. Huene originally interpreted the type vertebrae as dorsals; the formal re-evaluation by Novas, Agnolin & Bandyopadhyay (2004) reinterprets them as anterior caudals, refers all the Carnosaur-bed theropod material to Abelisauroidea, and treats Dryptosauroides as a nomen dubium because the type material lacks unambiguous autapomorphies.\n",
+      "diet": "carnivore",
+      "locomotion": "bipedal",
+      "paleoenvironment": [
+        "fluvial"
+      ],
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "38604"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q135276"
+        },
+        {
+          "source": "gbif",
+          "id": "4818276"
+        }
+      ],
+      "species": [
+        {
+          "name": "Dryptosauroides grandis",
+          "etymology": "Latin grandis (\"large\"), reflecting the size of the type vertebrae compared with other theropods of the type horizon.",
+          "status": "nomen dubium",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Maastrichtian"
+            ],
+            "from_ma": 72.1,
+            "to_ma": 66
+          },
+          "location": {
+            "country": "IN",
+            "region": "Madhya Pradesh",
+            "formation": "Lameta",
+            "locality": "Bara Simla, Jabalpur (Carnosaur bed)",
+            "coordinates": [
+              23.168694,
+              79.972282
+            ]
+          },
+          "holotype": {
+            "specimen_id": [
+              "GSI K20/334",
+              "GSI K20/609",
+              "GSI K27/549",
+              "GSI K27/601",
+              "GSI K27/602",
+              "GSI K27/626"
+            ],
+            "specimen_type": "syntype",
+            "institution": "Geological Survey of India",
+            "material": "Six large vertebral centra (each 13-14 cm long) from the Carnosaur bed at Bara Simla; Huene described them as dorsal vertebrae but later workers reinterpret them as anterior caudals."
+          },
+          "described": 1933,
+          "authors": "Huene & Matley",
+          "described_in": "huene1933"
+        }
+      ],
+      "references": [
+        {
+          "id": "huene1933",
+          "authors": "Huene, F. v.; Matley, C. A.",
+          "year": 1933,
+          "title": "The Cretaceous Saurischia and Ornithischia of the Central Provinces of India",
+          "journal": "Palaeontologica Indica (New Series), Memoirs of the Geological Survey of India",
+          "volume": "21",
+          "issue": "1",
+          "pages": "1-74",
+          "notes": "Erects Dryptosauroides grandis on a syntype series of six large vertebrae from the Carnosaur bed at Bara Simla, Jabalpur (Lameta Group); originally identified as dorsals."
+        },
+        {
+          "id": "novas2004",
+          "authors": "Novas, F.E.; Agnolin, F.L.; Bandyopadhyay, S.",
+          "year": 2004,
+          "title": "Cretaceous theropods from India: A review of specimens described by Huene and Matley (1933)",
+          "journal": "Revista del Museo Argentino de Ciencias Naturales",
+          "volume": "6",
+          "issue": "1",
+          "pages": "67-103",
+          "doi": "10.22179/REVMACN.6.74",
+          "notes": "Formal review of the Huene-Matley 1933 Carnosaur-bed theropods; treats Dryptosauroides as a nomen dubium and reinterprets the syntype vertebrae as anterior caudals referrable to Abelisauroidea."
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Ceratosauria",
+        "Abelisauridae"
       ]
     },
     "Dryptosaurus": {
