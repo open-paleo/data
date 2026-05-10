@@ -1,7 +1,7 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-05-10T21:49:45.432Z
-  clade_count: 248
+  built_at: 2026-05-10T22:00:16.729Z
+  clade_count: 250
   genus_count: 1365
   license: CC-BY-4.0
   schema_version: 1.0.0
@@ -2503,6 +2503,47 @@ clades:
       - Somphospondyli
       - Titanosauria
       - Eutitanosauria
+  Eutyrannosauria:
+    description: |
+      Eutyrannosauria is a clade of derived tyrannosauroid theropod dinosaurs comprising Tyrannosauridae and its closest non- tyrannosaurid relatives, the North American taxa Appalachiosaurus and Dryptosaurus. Members of the clade are characterised by large body size, rugose nasal ornamentation, and a suite of cranial pneumaticity features. Voris et al. (2025) recover Khankhuuluu mongoliensis as the immediate sister taxon of Eutyrannosauria.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Tyrannosauroidea
+      - Eutyrannosauria
+    described: 2018
+    authors: Delcourt & Grillo
+    diagnostic_features:
+      - Rugose nasals with cornual ornamentation.
+      - Lacrimal with an inflated cornual process that expands dorsally during ontogeny.
+      - Anteroposteriorly expanded dorsal process of the quadratojugal.
+      - Pneumatic recess on the anterior surface of the quadrate condyles.
+      - Medial margins of the distal condyle and diaphysis of metatarsal III aligned (not offset).
+    references:
+      - id: voris2025
+        authors: Voris, J. T.; Zelenitsky, D. K.; Kobayashi, Y.; Modesto, S. P.; Therrien, F.; Tsutsumi, H.; Chinzorig, T.; Tsogtbaatar, K.
+        year: 2025
+        title: A new Mongolian tyrannosauroid and the evolution of Eutyrannosauria
+        journal: Nature
+        volume: "642"
+        issue: "8069"
+        pages: 973-979
+        doi: 10.1038/s41586-025-08964-6
+        url: http://dx.doi.org/10.1038/s41586-025-08964-6
+        notes: Uses Eutyrannosauria (Delcourt & Grillo 2018) as an established clade and recovers Khankhuuluu mongoliensis as its immediate sister taxon.
   Fabrosauridae:
     taxonomy:
       - Life
@@ -3624,6 +3665,47 @@ clades:
       - Deinonychosauria
       - Dromaeosauridae
       - Microraptorinae
+  Nanotyrannidae:
+    description: |
+      Nanotyrannidae is a family of eutyrannosaurian theropod dinosaurs erected by Zanno & Napoli (2025) for Nanotyrannus and any taxa more closely related to it than to Tyrannosaurus or Albertosaurus. The family is presently known from the Maastrichtian Hell Creek Formation of western North America; Bayesian biogeographic analysis also recovers Appalachiosaurus and Dryptosaurus within the clade, but the authors caution that this placement requires additional data.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Coelurosauria
+      - Tyrannosauroidea
+      - Eutyrannosauria
+      - Nanotyrannidae
+    described: 2025
+    authors: Zanno & Napoli
+    diagnostic_features:
+      - Absence of a clearly defined embayment for the subnarial foramen at the premaxillary/maxillary suture.
+      - Unserrated premaxillary tooth crowns that are straight and chisel-shaped.
+      - Pneumatic foramen in the quadratojugal.
+      - Extension of the glenoid fossa onto the lateral surface of the scapula.
+      - Apomorphically elongate lower hindlimbs (tibia plus metatarsus) relative to femur length.
+    references:
+      - id: zanno2025
+        authors: Zanno, L. E.; Napoli, J. G.
+        year: 2025
+        title: Nanotyrannus and Tyrannosaurus coexisted at the close of the Cretaceous
+        journal: Nature
+        volume: "648"
+        pages: 357-367
+        doi: 10.1038/s41586-025-09801-6
+        url: http://dx.doi.org/10.1038/s41586-025-09801-6
+        notes: Erects Nanotyrannidae for Nanotyrannus on a branch-based phylogenetic definition; diagnostic characters are drawn from the genus-level Nanotyrannus diagnosis in the same paper.
   Nasutoceratopsini:
     taxonomy:
       - Life
