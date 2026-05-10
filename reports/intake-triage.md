@@ -87,7 +87,7 @@ defines the appropriate intake discipline per category.
 |---|---|---|---|
 | 65 | Alocodon | Manual | Nomen dubium per Weishampel & Witmer 1990; Middle/Late Jurassic ornithischian teeth; recent work places it as Parapredentata. [done f6cba0b9] |
 | 149 | Arkharavia | Disputed | Dubious somphospondylan from Udurchukan Fm; holotype caudal vertebra; referred material reassigned to indeterminate hadrosaurid. [done f637f4c] |
-| 152 | Arstanosaurus | Manual | Dubious Bostobe Fm hadrosauroid; chimera history (hadrosaurid maxilla + uninformative femur); "indeterminate hadrosaurid" per modern review. |
+| 152 | Arstanosaurus | Manual | Dubious Bostobe Fm hadrosauroid; chimera history (hadrosaurid maxilla + uninformative femur); "indeterminate hadrosaurid" per modern review. [done cacfdeac] |
 | 155 | Asiamericana | Disputed | Bissekty Fm tooth-taxon; 2013/2019 studies treat as Richardoestesia asiatica but per project policy keep separate stub until consensus broader. status: nomen dubium. [done 4fe4226] |
 | 156 | Asiatosaurus | Disputed | Two species (A. mongoliensis, A. kwangshiensis), both nomina dubia (teeth + scant remains); Brachiosauridae→euhelopodid placements over time. [done cfb9b19] |
 | 197 | Bainoceratops | Disputed | Dubious Djadokhta ceratopsian; possibly Protoceratops andrewsi per Makovicky & Norell 2006 but no broad consensus; Chinnery & Horner 2007 also treat as dubious. [done d91ca2c] |
@@ -144,7 +144,7 @@ defines the appropriate intake discipline per category.
 | 595 | Galesaurus | Disputed | Cynodont therapsid (synapsid) from Karoo Basin, mistakenly classified as dinosaur by Owen 1859. [done — issue closed 2026-05-06 as out of scope] |
 | 1211 | Pareiasaurus | Manual | Pareiasaurid parareptile from Permian Karoo — not a dinosaur. |
 
-## Manual intervention working list (9 remaining)
+## Manual intervention working list (8 remaining)
 
 Quick-reference index for genera labeled `Intake: Requires Manual
 Intervention`. These cross-cut Buckets D and (occasionally) F: most
@@ -155,7 +155,6 @@ intake / split → close issue.
 
 | # | Genus | Proposed approach | Per-genus notes |
 |---|---|---|---|
-| 152 | Arstanosaurus | Cat-III nomen dubium stub | Indeterminate hadrosaurid per modern review; chimera history (hadrosaurid maxilla + uninformative femur). |
 | 360 | Clasmodosaurus | Decide: full intake vs Cat-III stub | Powell 1986 + later treat as dubious sauropod, though "diagnosed by unique combination of characters" per recent revision. |
 | 365 | Coeluroides | Cat-III stub; flag possible senior synonymy | Lameta caudal vertebrae; 2004 review found probably valid; possibly senior synonym of Ornithomimoides per SVP 2012 abstract. |
 | 384 | Craspedodon | Decide: full intake (neoceratopsian) vs Cat-III stub | Lonzée Member ornithischian teeth; 2007 Godefroit & Lambert reidentified as European neoceratopsian; Ajkaceratops describers proposed hadrosauroid alternative. |
@@ -168,6 +167,7 @@ intake / split → close issue.
 Already resolved this session:
 - #449 Diplotomodon — flipped to `status: nomen dubium` in `edd42852`.
 - #65 Alocodon — Cat-III stub in `f6cba0b9` (also consolidated `thulborn1975` → `thulborn1973` bib key, fixing PBDB-introduced year + journal conflation).
+- #152 Arstanosaurus — Cat-III stub in `cacfdeac` (extracted from user-supplied machine-translated `shilin1982`).
 
 ## Per-letter coverage
 
