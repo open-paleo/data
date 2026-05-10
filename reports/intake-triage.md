@@ -125,7 +125,7 @@ defines the appropriate intake discipline per category.
 | 1597 | Tianzhenosaurus | Disputed | Huiquanpu Fm ankylosaurid; Sullivan 1999 + Arbour & Currie 2015 synonymized with Saichania; 2024 Pang, Li & Guo described second species T. chengi treating Tianzhenosaurus as valid. No broad consensus. [done e0dc65fd] |
 | 1605 | Titanosaurus | Disputed | 1877 Lydekker. Type of Titanosauria but T. indicus and T. blanfordi both nomina dubia per Wilson & Upchurch 2003; type material lost & rediscovered. Historically and nomenclaturally critical, keep stub. [done 5931afa] |
 | 1619 | Trachodon | Disputed | 1856 Leidy. First-named hadrosaurid; T. mirabilis nomen dubium based on a single tooth. Most referred specimens went to Edmontosaurus annectens; the type tooth itself is not synonymized. Stub with status: nomen dubium. [done 58254e4] |
-| 1628 | Trigonosaurus | Disputed | Serra da Galga saltasaurid; 2022 Silva Junior et al. proposed synonymy with Baurutitan and split off paratype as Caieiria; Fronimos 2023 disputed synonymy. Keep stub pending consensus. |
+| 1628 | Trigonosaurus | Disputed | Serra da Galga saltasaurid; 2022 Silva Junior et al. proposed synonymy with Baurutitan and split off paratype as Caieiria; Fronimos 2023 disputed synonymy. Keep stub pending consensus. [done 05d57fa8] |
 | 1655 | Ultrasaurus | Disputed | Korean U. tabriensis (Kim 1983) is nomen dubium; the Jensen "Ultrasaurus"/"Ultrasauros" specimens are different and are now Supersaurus. Stub for the Korean type. [done c9e125c] |
 
 ## Bucket E — Fold-into-existing (1)
