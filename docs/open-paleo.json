@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-10T18:41:08.725Z",
+    "built_at": "2026-05-10T20:28:53.530Z",
     "clade_count": 248,
-    "genus_count": 1362,
+    "genus_count": 1363,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
     "version": "2026.05"
@@ -20909,6 +20909,106 @@
         "Titanosauria",
         "Colossosauria",
         "Rinconsauria"
+      ]
+    },
+    "Arstanosaurus": {
+      "genus": "Arstanosaurus",
+      "parent": "Hadrosauridae",
+      "etymology": "From \"Arstan\" (the name of an old well at the type locality, in the northeastern Aralkum, Kazakhstan) and Greek 'sauros' (lizard); meaning 'Arstan lizard'.",
+      "description": "Arstanosaurus is a genus of hadrosauroid dinosaur from the Late Cretaceous-aged (Santonian-Campanian) Bostobe Formation of Kazakhstan. It has had a confusing history, being considered a hadrosaurid, a ceratopsid, or both at the same time (chimeric).\n",
+      "diet": "herbivore",
+      "locomotion": "bipedal",
+      "paleoenvironment": [
+        "fluvial"
+      ],
+      "diagnostic_features": [
+        "Maxilla massive and low, with a practically straight dorsal edge.",
+        "Supershelf process horizontally elongated and overhanging above the shelf surface, dorso-ventrally flattened and rounded.",
+        "Outer replacement tooth placed directly above the functional tooth rather than lingual and slightly higher, with the crown lying within the branching of the root of the functional tooth."
+      ],
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "67794"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q3623999"
+        },
+        {
+          "source": "gbif",
+          "id": "4823301"
+        }
+      ],
+      "species": [
+        {
+          "name": "Arstanosaurus akkurganensis",
+          "etymology": "From the Akkurgan locality near Qyzylorda, Kazakhstan, where the holotype was collected.",
+          "status": "nomen dubium",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Santonian",
+              "Campanian"
+            ],
+            "from_ma": 86.3,
+            "to_ma": 72.1
+          },
+          "location": {
+            "country": "KZ",
+            "region": "Qyzylorda",
+            "formation": "Bostobe",
+            "coordinates": [
+              46.762547,
+              64.328972
+            ]
+          },
+          "holotype": {
+            "specimen_id": [
+              "AAIZ 1/1"
+            ],
+            "specimen_type": "holotype",
+            "institution": "Institute of Zoology, Academy of Sciences of the Kazakh SSR",
+            "material": "Posterior portion of the left maxilla, collected at Akkurgan-Boltyk in the Bostobe Formation."
+          },
+          "described": 1982,
+          "authors": "Shilin & Suslov",
+          "described_in": "shilin1982"
+        }
+      ],
+      "references": [
+        {
+          "id": "shilin1982",
+          "authors": "Shilin, P. V.; Suslov, Y. V.",
+          "year": 1982,
+          "title": "A hadrosaur from the north-east Aral Sea region",
+          "journal": "Paleontological Journal",
+          "volume": "16",
+          "issue": "1",
+          "pages": "132-136",
+          "notes": "Original description of Arstanosaurus akkurganensis on a partial left maxilla. The genus authority is attributed to Suslov in the paper, while the species authority is Suslov & Shilin."
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Cerapoda",
+        "Ornithopoda",
+        "Ankylopollexia",
+        "Styracosterna",
+        "Hadrosauriformes",
+        "Hadrosauridae"
       ]
     },
     "Asfaltovenator": {
