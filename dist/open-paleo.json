@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-10T04:46:07.701Z",
+    "built_at": "2026-05-10T05:18:36.873Z",
     "clade_count": 248,
-    "genus_count": 1358,
+    "genus_count": 1359,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
     "version": "2026.05"
@@ -124716,6 +124716,155 @@
         "Hadrosauridae",
         "Hadrosaurinae",
         "Saurolophini"
+      ]
+    },
+    "Sauroniops": {
+      "genus": "Sauroniops",
+      "parent": "Carcharodontosauridae",
+      "etymology": "From Sauron, the fictional character created by J.R.R. Tolkien, and Greek 'ops' (eye); meaning 'eye of Sauron'.",
+      "description": "Sauroniops is a controversial genus of carnivorous carcharodontosaurid theropod dinosaurs known from the Late Cretaceous (Cenomanian stage) of Morocco. It is known from the Gara Sbaa Formation of the Kem Kem beds and contains a single species, S. pachytholus.\n",
+      "dispute": "The validity of Sauroniops is actively contested. Ibrahim et al. (2020) argued that S. pachytholus is a junior synonym of Carcharodontosaurus saharicus, interpreting the holotype as an immature C. saharicus frontal and finding the diagnostic characters unconvincing. Paterna & Cau (2022) rebutted this, reaffirming the diagnosis and reporting additional Kem Kem carcharodontosaurid material distinct from C. saharicus. Kellermann, Cuesta & Rauhut (2025) declined the synonymy but treated Sauroniops as a nomen dubium, holding that erecting a taxon on a single frontal is inappropriate pending more material.\n",
+      "diet": "carnivore",
+      "locomotion": "bipedal",
+      "paleoenvironment": [
+        "fluvial"
+      ],
+      "diagnostic_features": [
+        "Dorsoventrally thickened frontal with body depth ranging 28% (medial suture) to 38% (anteromedial margin of supratemporal fossa) of bone length.",
+        "Thick dome-like eminence in the anterolateral corner of the dorsal surface of the frontal at the level of the prefrontal-lacrimal articulations.",
+        "Prefrontal facet of the frontal trapezoidal, mostly restricted to the anterodorsal margin of the lateral surface, not participating in the orbital fossa.",
+        "Frontal with interdigitate suture for prefrontal restricted to the anteroventral corner of the facet, formed by a low shelf and a small finger-like projection.",
+        "Hypertrophied 'D-shaped' lacrimal facet with maximum depth four times the depth of the anterior half of the postorbital facet.",
+        "Dorsal surface of frontal anterior to supratemporal fossa raised and facing anterodorsally, forming a saddle-shaped concavity with the anterolateral dome, confluent with anteromedial rugosities posterior to the nasal facet."
+      ],
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "249375"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q115197"
+        },
+        {
+          "source": "gbif",
+          "id": "8467990"
+        },
+        {
+          "source": "eol",
+          "id": "42333103"
+        }
+      ],
+      "species": [
+        {
+          "name": "Sauroniops pachytholus",
+          "etymology": "From Greek 'pachys' (thick) and 'tholos' (dome); meaning 'thick-domed', referring to the thickened frontal dome above the orbit.",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Cenomanian"
+            ]
+          },
+          "location": {
+            "country": "MA",
+            "region": "Errachidia Province, Drâa-Tafilalet, Morocco",
+            "formation": "Ifezouane Formation",
+            "coordinates": [
+              30.883,
+              -3.967
+            ]
+          },
+          "holotype": {
+            "specimen_id": [
+              "MPM 2594"
+            ],
+            "specimen_type": "holotype",
+            "institution": "Museo Paleontologico di Montevarchi",
+            "material": "Almost complete left frontal."
+          },
+          "size": {
+            "length_m": {
+              "min": 10,
+              "max": 12
+            }
+          },
+          "described": 2013,
+          "authors": "Cau, Dalla Vecchia & Fabbri",
+          "described_in": "cau2013"
+        }
+      ],
+      "references": [
+        {
+          "id": "cau2013",
+          "authors": "Cau, Andrea; Dalla Vecchia, Fabio M.; Fabbri, Matteo",
+          "year": 2013,
+          "title": "A thick-skulled theropod (Dinosauria, Saurischia) from the Upper Cretaceous of Morocco with implications for carcharodontosaurid cranial evolution",
+          "journal": "Cretaceous Research",
+          "volume": "40",
+          "pages": "251-260",
+          "publisher": "Elsevier BV",
+          "doi": "10.1016/j.cretres.2012.09.002",
+          "url": "http://dx.doi.org/10.1016/j.cretres.2012.09.002"
+        },
+        {
+          "id": "ibrahim2020",
+          "authors": "Ibrahim, Nizar; Sereno, Paul C.; Varricchio, David J.; Martill, David M.; Dutheil, Didier B.; Unwin, David M.; Baidder, Lahssen; Larsson, Hans C. E.; Zouhri, Samir; Kaoukaya, Abdelhadi",
+          "year": 2020,
+          "title": "Geology and paleontology of the Upper Cretaceous Kem Kem Group of eastern Morocco",
+          "journal": "ZooKeys",
+          "volume": "928",
+          "pages": "1-216",
+          "doi": "10.3897/zookeys.928.47517",
+          "url": "http://dx.doi.org/10.3897/zookeys.928.47517",
+          "notes": "Synonymizes S. pachytholus with Carcharodontosaurus saharicus, interpreting the holotype as an immature C. saharicus frontal with unconvincing diagnostic characters."
+        },
+        {
+          "id": "paterna2022",
+          "authors": "Paterna, Andrea; Cau, Andrea",
+          "year": 2022,
+          "title": "New giant theropod material from the Kem Kem Compound Assemblage (Morocco) with implications on the diversity of the mid-Cretaceous carcharodontosaurids from North Africa",
+          "journal": "Historical Biology",
+          "volume": "35",
+          "issue": "11",
+          "pages": "1-9",
+          "doi": "10.1080/08912963.2022.2131406",
+          "url": "http://dx.doi.org/10.1080/08912963.2022.2131406",
+          "notes": "Rebuts the Ibrahim et al. (2020) synonymy, reaffirming S. pachytholus and reporting additional Kem Kem carcharodontosaurid cranial material distinct from Carcharodontosaurus saharicus."
+        },
+        {
+          "id": "kellermann2025",
+          "authors": "Kellermann, Maximilian; Cuesta, Elena; Rauhut, Oliver W. M.",
+          "year": 2025,
+          "title": "Re-evaluation of the Bahariya Formation carcharodontosaurid (Dinosauria: Theropoda) and its implications for allosauroid phylogeny",
+          "journal": "PLOS ONE",
+          "volume": "20",
+          "issue": "1",
+          "pages": "e0311096",
+          "doi": "10.1371/journal.pone.0311096",
+          "url": "http://dx.doi.org/10.1371/journal.pone.0311096",
+          "notes": "In discussing Kem Kem carcharodontosaurid diversity, treats Sauroniops as a nomen dubium, holding that erecting a taxon on a single frontal is inappropriate."
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Tetanurae",
+        "Avetheropoda",
+        "Carnosauria",
+        "Carcharodontosauridae"
       ]
     },
     "Sauropelta": {
