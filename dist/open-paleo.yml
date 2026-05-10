@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-05-10T05:18:36.873Z
+  built_at: 2026-05-10T06:02:09.991Z
   clade_count: 248
-  genus_count: 1359
+  genus_count: 1360
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.05"
@@ -108622,6 +108622,126 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Dromaeosauridae
+  Tianzhenosaurus:
+    genus: Tianzhenosaurus
+    parent: Ankylosaurinae
+    etymology: From Tianzhen County (Shanxi Province, China, where the holotype was found) and Greek 'sauros' (lizard); meaning 'Tianzhen lizard'.
+    description: |
+      Tianzhenosaurus is a genus of ankylosaurid dinosaurs known from the Late Cretaceous Huiquanpu Formation of Shanxi Province, China. The genus contains two species, T. youngi (the type species) and T. chengi.
+    dispute: |
+      The validity of Tianzhenosaurus is contested. Sullivan (1999) and Arbour & Currie (2015) treated T. youngi as a junior subjective synonym of the Mongolian ankylosaurid Saichania chulsanensis, finding no taxonomically significant differences between the holotype skulls. In 2024, Pang, Li & Guo described a second species, T. chengi, treating Tianzhenosaurus as a valid genus. No broad consensus has been reached.
+    diet: herbivore
+    locomotion: quadrupedal
+    integument: armored
+    diagnostic_features:
+      - Skull low, flat, medium-sized, isosceles triangle shape; skull roof covered with irregular bony tubercles.
+      - Orbit small, surrounded by bony ring; narial opening horizontally elongate; septomaxilla does not separate narial openings.
+      - Occipital condyle narrow, high; not visible in dorsal view; opisthotic extends lateroventrally as curved process.
+      - Mandible deep with convex ventral border; no mandibular ornamentation; tooth crowns with cingula on labial sides, swollen bases, and middle ridge on lingual sides.
+      - Eight fused vertebrae in sacrum (three dorsosacrals, four sacrals, one caudosacral); cervical centrum short amphicoelous; dorsal centrum long amphiplatyan.
+      - Tail club present; scapula rectangular plate-like; femur thick lacking fourth trochanter.
+    identifiers:
+      - source: pbdb
+        id: "66503"
+      - source: wikidata
+        id: Q326596
+      - source: gbif
+        id: "4823323"
+      - source: eol
+        id: "4530868"
+    synonyms:
+      - name: Shanxia tianzhenensis
+        type: junior subjective
+        reason: Per Arbour & Currie (2015), no features distinguish Shanxia from Tianzhenosaurus; both from the same formation with similar squamosal horn morphology, and Tianzhenosaurus youngi has nomenclatural priority by date of publication (1 June vs 15 June 1998).
+    species:
+      - name: Tianzhenosaurus youngi
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+        location:
+          country: CN
+          region: Tianzhen County, Shanxi Province
+          formation: Huiquanpu Formation
+          coordinates:
+            - 40.42
+            - 114.09
+        holotype:
+          specimen_id:
+            - HBV-10001
+          specimen_type: holotype
+          institution: Geoscience Museum, Shijiazhuang University of Economics
+          material: Nearly complete skull.
+        described: 1998
+        authors: Pang & Cheng
+        described_in: pang1998
+      - name: Tianzhenosaurus chengi
+        status: valid
+        period:
+          name:
+            - Late Cretaceous
+        location:
+          country: CN
+          region: Tianzhen County, Shanxi Province
+          formation: Huiquanpu Formation
+        described: 2024
+        authors: Pang, Li & Guo
+        described_in: pang2024
+    references:
+      - id: pang1998
+        authors: Pang, Qiqing; Cheng, Zhengwu
+        year: 1998
+        title: A new ankylosaur of the late Cretaceous from Tianzhen, Shanxi
+        journal: Progress in Natural Science
+        notes: Original describing paper for Tianzhenosaurus youngi. Citation-only; not yet in corpus.
+      - id: sullivan1999
+        authors: Sullivan, Robert M.
+        year: 1999
+        title: "Nodocephalosaurus kirtlandensis, gen. et sp. nov., a new ankylosaurid dinosaur (Ornithischia: Ankylosauria) from the Upper Cretaceous Kirtland Formation (upper Campanian), San Juan Basin, New Mexico"
+        journal: Journal of Vertebrate Paleontology
+        volume: "19"
+        issue: "1"
+        pages: 126-139
+        doi: 10.1080/02724634.1999.10011128
+        url: http://dx.doi.org/10.1080/02724634.1999.10011128
+        notes: Treats T. youngi as a junior subjective synonym of Saichania chulsanensis on the basis of overall skull similarity, despite differences in cranial osteoderm arrangement.
+      - id: arbour2015
+        authors: Arbour, V. M.; Currie, P. J.
+        year: 2015
+        title: Systematics, phylogeny and palaeobiogeography of the ankylosaurid dinosaurs
+        journal: Journal of Systematic Palaeontology
+        volume: "14"
+        issue: "5"
+        pages: 385-444
+        doi: 10.1080/14772019.2015.1059985
+        url: http://dx.doi.org/10.1080/14772019.2015.1059985
+        notes: Formalizes T. youngi and Shanxia tianzhenensis as junior subjective synonyms of Saichania chulsanensis, finding no taxonomically significant differences between the holotype skulls.
+      - id: pang2024
+        authors: Pang, Qiqing; Li, Zhiguang; Guo, Zhen
+        year: 2024
+        title: A new species of ankylosaurian dinosaur—Tianzhenosaurus chengi sp. nov., from the Late Cretaceous of Tianzhen County, Shanxi Province, China
+        journal: Journal of Hebei GEO University
+        issue: "6"
+        pages: 41-73
+        doi: 10.13937/j.cnki.hbdzdxxb.2024.06.006
+        url: http://dx.doi.org/10.13937/j.cnki.hbdzdxxb.2024.06.006
+        notes: Describes T. chengi as a second species, treating Tianzhenosaurus as a valid genus rather than a junior synonym of Saichania. Citation-only; not yet in corpus.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Thyreophora
+      - Ankylosauria
+      - Ankylosauridae
+      - Ankylosaurinae
   Tichosteus:
     genus: Tichosteus
     parent: Iguanodontia
