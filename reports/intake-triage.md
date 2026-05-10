@@ -99,7 +99,7 @@ defines the appropriate intake discipline per category.
 | 313 | Ceratops | Disputed | Type genus of Ceratopsidae but nomen dubium based on horn cores + occipital condyle; possibly close to Avaceratops or Spiclypeus. Historically critical name. [done 1ac9042] |
 | 332 | Chiayusaurus | Disputed | Two species; Barremian Xinminbao Group + Hasandong Fm Korea; both dubious teeth-only taxa per Barrett et al. 2002. [done 7e123b8] |
 | 360 | Clasmodosaurus | Manual | Mata Amarilla / Cerro Fortaleza titanosaur teeth; Powell 1986 + later work treat as dubious sauropod, though "diagnosed by unique combination of characters" per recent revision. [done 08ef92d4] |
-| 365 | Coeluroides | Manual | Lameta Fm caudal vertebrae; long considered nomen dubium but 2004 review found probably valid (and possibly senior synonym of Ornithomimoides per SVP 2012 abstract). Stub. |
+| 365 | Coeluroides | Manual | Lameta Fm caudal vertebrae; long considered nomen dubium but 2004 review found probably valid (and possibly senior synonym of Ornithomimoides per SVP 2012 abstract). Stub. [done 415ff838 — actual Novas 2004 reading: nomen dubium with hedge, not "probably valid"] |
 | 384 | Craspedodon | Manual | Lonzée Member ornithischian teeth; 2007 Godefroit & Lambert reidentified as European neoceratopsian; Ajkaceratops describers proposed hadrosauroid alternative. Validity uncertain. |
 | 389 | Crichtonsaurus | Manual | Sunjiawan Fm ankylosaurid; C. bohlini holotype non-diagnostic per Arbour 2014 — nomen dubium. C. benxiensis split off as Crichtonpelta in 2015. |
 | 396 | Cryptosaurus | Manual | Ampthill Clay ankylosaurian femur; C. eumerus nomen dubium per Galton; not to be confused with replacement name Cryptodraco. |
@@ -144,7 +144,7 @@ defines the appropriate intake discipline per category.
 | 595 | Galesaurus | Disputed | Cynodont therapsid (synapsid) from Karoo Basin, mistakenly classified as dinosaur by Owen 1859. [done — issue closed 2026-05-06 as out of scope] |
 | 1211 | Pareiasaurus | Manual | Pareiasaurid parareptile from Permian Karoo — not a dinosaur. |
 
-## Manual intervention working list (7 remaining)
+## Manual intervention working list (6 remaining)
 
 Quick-reference index for genera labeled `Intake: Requires Manual
 Intervention`. These cross-cut Buckets D and (occasionally) F: most
@@ -155,7 +155,6 @@ intake / split → close issue.
 
 | # | Genus | Proposed approach | Per-genus notes |
 |---|---|---|---|
-| 365 | Coeluroides | Cat-III stub; flag possible senior synonymy | Lameta caudal vertebrae; 2004 review found probably valid; possibly senior synonym of Ornithomimoides per SVP 2012 abstract. |
 | 384 | Craspedodon | Decide: full intake (neoceratopsian) vs Cat-III stub | Lonzée Member ornithischian teeth; 2007 Godefroit & Lambert reidentified as European neoceratopsian; Ajkaceratops describers proposed hadrosauroid alternative. |
 | 389 | Crichtonsaurus | Cat-III nomen dubium stub for C. bohlini | C. bohlini holotype non-diagnostic per Arbour 2014; C. benxiensis already split as Crichtonpelta in 2015. |
 | 396 | Cryptosaurus | Cat-III nomen dubium stub | Ampthill Clay ankylosaurian femur; C. eumerus nomen dubium per Galton; not to be confused with replacement name Cryptodraco. |
@@ -168,6 +167,7 @@ Already resolved this session:
 - #65 Alocodon — Cat-III stub in `f6cba0b9` (also consolidated `thulborn1975` → `thulborn1973` bib key, fixing PBDB-introduced year + journal conflation).
 - #152 Arstanosaurus — Cat-III stub in `cacfdeac` (extracted from user-supplied machine-translated `shilin1982`).
 - #360 Clasmodosaurus — Cat-III stub in `08ef92d4` (extracted from `huene1929`; Ameghino's 1898 introduction was a nomen nudum).
+- #365 Coeluroides — Cat-III stub in `415ff838` (extracted from `huene1933` + `novas2004b`; consolidated novas2004 citation-key collision affecting Talenkauen and Dryptosauroides).
 
 ## Per-letter coverage
 
