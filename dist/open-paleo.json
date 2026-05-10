@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-09T23:57:41.585Z",
+    "built_at": "2026-05-10T00:20:38.607Z",
     "clade_count": 248,
-    "genus_count": 1354,
+    "genus_count": 1355,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
     "version": "2026.05"
@@ -54924,6 +54924,136 @@
         "Ankylosauria",
         "Nodosauridae",
         "Struthiosaurinae"
+      ]
+    },
+    "Euskelosaurus": {
+      "genus": "Euskelosaurus",
+      "parent": "Sauropodomorpha",
+      "etymology": "From Greek eu (\"good\"), skelos (\"leg\"), and sauros (\"lizard\"); meaning \"good-legged lizard\", chosen by Huxley in reference to the unusually large femur of the type material.",
+      "description": "Euskelosaurus is a sauropodomorph dinosaur from the Late Triassic of South Africa and Lesotho. Fossils have only been recovered from the lower Elliot Formation in South Africa and Lesotho, and in one locality in Zimbabwe.\n",
+      "diet": "herbivore",
+      "locomotion": "quadrupedal",
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "38640"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q29057512"
+        }
+      ],
+      "synonyms": [
+        {
+          "name": "Euskelosaurus africanus",
+          "type": "junior subjective",
+          "reason": "Erected by Haughton (1924) on smaller Kromme Spruit material (S. Af. Mus. Cat. No. 3608, sacrals and ischia); modern usage treats it as a nomen dubium indistinguishable from other Elliot sauropodomorphs."
+        },
+        {
+          "name": "Euskelosaurus capensis",
+          "type": "junior subjective",
+          "reason": "Originally Orosaurus capensis Lydekker (1889); placed by Haughton (1924) within Euskelosaurus on a proximal tibia and femur fragment; modern usage treats it as a nomen dubium."
+        }
+      ],
+      "species": [
+        {
+          "name": "Euskelosaurus browni",
+          "etymology": "Named after Alfred Brown, the discoverer of the holotype.",
+          "status": "nomen dubium",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Triassic"
+            ],
+            "stage": [
+              "Norian",
+              "Rhaetian"
+            ],
+            "from_ma": 227,
+            "to_ma": 201.3
+          },
+          "location": {
+            "country": "ZA",
+            "region": "Eastern Cape",
+            "formation": "Elliot",
+            "locality": "Stormberg range, ~30 miles from Aliwal North",
+            "coordinates": [
+              -30.7,
+              26.7
+            ]
+          },
+          "holotype": {
+            "specimen_id": [
+              "BP/1/4952"
+            ],
+            "specimen_type": "holotype",
+            "institution": "Evolutionary Studies Institute (formerly Bernard Price Institute for Palaeontological Research), University of the Witwatersrand",
+            "material": "A portion of a right femur, ~25.5 in (65 cm) preserved length; the entire femur is inferred to have exceeded 30 in (76 cm). Huxley's 1866 description does not assign a museum number; modern catalog number per the Evolutionary Studies Institute (Wits)."
+          },
+          "described": 1866,
+          "authors": "Huxley",
+          "described_in": "huxley1866"
+        }
+      ],
+      "references": [
+        {
+          "id": "huxley1866",
+          "authors": "Huxley, T.H.",
+          "year": 1866,
+          "title": "On the remains of large dinosaurian reptiles from the Stormberg mountains, South Africa",
+          "journal": "Geological Magazine",
+          "volume": "3",
+          "pages": "563-564",
+          "doi": "10.1017/S0016756800198395",
+          "notes": "Two-page note erecting Euskelosaurus browni on a partial right femur from the Stormberg mountains; Huxley distinguishes the new genus from Megalosaurus by trochanter form."
+        },
+        {
+          "id": "huxley1867b",
+          "authors": "Huxley, T.H.",
+          "year": 1867,
+          "title": "On some Remains of large Dinosaurian Reptiles from the Stormberg Mountains, South Africa",
+          "journal": "Quarterly Journal of the Geological Society of London",
+          "volume": "23",
+          "issue": "1-2",
+          "pages": "1-6",
+          "doi": "10.1144/gsl.jgs.1867.023.01-02.07",
+          "notes": "Fuller follow-up to the 1866 Geological Magazine note (read 7 Nov 1866, published 1867); uses the variant spelling 'Euskelesaurus' (an incorrect subsequent spelling)."
+        },
+        {
+          "id": "haughton1924",
+          "authors": "Haughton, S.H.",
+          "year": 1924,
+          "title": "The fauna and stratigraphy of the Stormberg Series",
+          "journal": "Annals of the South African Museum",
+          "volume": "12",
+          "pages": "323-497",
+          "notes": "Recognises E. browni Huxley as the type, accepts E. capensis (Lyd.), and erects E. africanus on smaller Kromme Spruit material."
+        },
+        {
+          "id": "yates2003",
+          "authors": "Yates, A.M.; Kitching, J.W.",
+          "year": 2003,
+          "title": "The earliest known sauropod dinosaur and the first steps towards sauropod locomotion",
+          "journal": "Proceedings of the Royal Society of London. Series B: Biological Sciences",
+          "volume": "270",
+          "issue": "1525",
+          "pages": "1753-1758",
+          "doi": "10.1098/rspb.2003.2417",
+          "notes": "Treats E. browni as 'almost certainly a nomen dubium' lacking derived characters or unique combination of characters distinguishing it from other early sauropodomorphs."
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha"
       ]
     },
     "Eustreptospondylus": {
