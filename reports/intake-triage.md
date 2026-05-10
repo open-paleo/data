@@ -144,6 +144,31 @@ defines the appropriate intake discipline per category.
 | 595 | Galesaurus | Disputed | Cynodont therapsid (synapsid) from Karoo Basin, mistakenly classified as dinosaur by Owen 1859. [done — issue closed 2026-05-06 as out of scope] |
 | 1211 | Pareiasaurus | Manual | Pareiasaurid parareptile from Permian Karoo — not a dinosaur. |
 
+## Manual intervention working list (10 remaining)
+
+Quick-reference index for genera labeled `Intake: Requires Manual
+Intervention`. These cross-cut Buckets D and (occasionally) F: most
+will land as Cat-III nomen dubium stubs, but a few may warrant
+fuller intake or split into separate genera. Bucket-D-style
+process: source paper(s) → decide synonymy / nomen dubium / full
+intake / split → close issue.
+
+| # | Genus | Proposed approach | Per-genus notes |
+|---|---|---|---|
+| 65 | Alocodon | Cat-III nomen dubium stub | Per Weishampel & Witmer 1990; Middle/Late Jurassic ornithischian teeth; recent work places it as Parapredentata. |
+| 152 | Arstanosaurus | Cat-III nomen dubium stub | Indeterminate hadrosaurid per modern review; chimera history (hadrosaurid maxilla + uninformative femur). |
+| 360 | Clasmodosaurus | Decide: full intake vs Cat-III stub | Powell 1986 + later treat as dubious sauropod, though "diagnosed by unique combination of characters" per recent revision. |
+| 365 | Coeluroides | Cat-III stub; flag possible senior synonymy | Lameta caudal vertebrae; 2004 review found probably valid; possibly senior synonym of Ornithomimoides per SVP 2012 abstract. |
+| 384 | Craspedodon | Decide: full intake (neoceratopsian) vs Cat-III stub | Lonzée Member ornithischian teeth; 2007 Godefroit & Lambert reidentified as European neoceratopsian; Ajkaceratops describers proposed hadrosauroid alternative. |
+| 389 | Crichtonsaurus | Cat-III nomen dubium stub for C. bohlini | C. bohlini holotype non-diagnostic per Arbour 2014; C. benxiensis already split as Crichtonpelta in 2015. |
+| 396 | Cryptosaurus | Cat-III nomen dubium stub | Ampthill Clay ankylosaurian femur; C. eumerus nomen dubium per Galton; not to be confused with replacement name Cryptodraco. |
+| 444 | Dinodocus | Cat-III nomen dubium stub | Lower Greensand Kent sauropod fragments; Owen 1884; Upchurch et al. 2004 declared nomen dubium. |
+| 708 | Horshamosaurus | Cat-III nomen dubium stub | Weald Clay nodosaurid; Blows 2020 reassessment determined dubious, not diagnosable beyond Nodosauridae. |
+| 913 | Lexovisaurus | Decide: stub vs partial intake | Maidment et al. 2008 declared L. durobrivensis nomen dubium and split better material as Loricatosaurus; later workers continue using Lexovisaurus as valid. |
+
+Already resolved this session:
+- #449 Diplotomodon — flipped to `status: nomen dubium` in `edd42852`.
+
 ## Per-letter coverage
 
 - A: 8 (Ahvaytum, Alocodon, Ankylosaurus, Arkharavia, Arstanosaurus, Asiamericana, Asiatosaurus, Aviatyrannis)
