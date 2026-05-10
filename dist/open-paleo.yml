@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-05-10T06:02:09.991Z
+  built_at: 2026-05-10T06:24:28.705Z
   clade_count: 248
-  genus_count: 1360
+  genus_count: 1361
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.05"
@@ -110819,6 +110819,120 @@ genera:
       - Alvarezsauria
       - Alvarezsauroidea
       - Alvarezsauridae
+  Trigonosaurus:
+    genus: Trigonosaurus
+    parent: Aeolosaurini
+    etymology: From Greek 'trigōnon' (triangle), in reference to the Triângulo Mineiro region of Minas Gerais, Brazil where the holotype was found, and 'sauros' (lizard); meaning 'triangle lizard'.
+    description: |
+      Trigonosaurus is a genus of saltasaurid dinosaurs from the Maastrichtian Serra da Galga Formation of Brazil. The type species, Trigonosaurus pricei, was first described by Campos, Kellner, Bertini, and Santucci in 2005. It was based on two specimens, both consisting mainly of vertebrae. The two specimens were originally believed to have come from the same individual. However, one specimen was described as the holotype of Caieiria in 2022, while the holotype may have instead come from Baurutitan. Before its description, it was known as the "Peirópolis titanosaur", after the place it was found.
+    dispute: |
+      The validity of Trigonosaurus is contested. Silva Junior et al. (2022) proposed that T. pricei is a junior subjective synonym of Baurutitan britoi (which has page priority within the same 2005 journal volume) and erected the postcranial paratype (MCT 1719-R) as a separate new genus, Caieiria allocaudata. Fronimos (2023) explicitly rejected the synonymy, citing morphological differences in the first caudal vertebra of the two taxa.
+    diet: herbivore
+    locomotion: quadrupedal
+    paleoenvironment:
+      - fluvial
+    diagnostic_features:
+      - Midcervical vertebrae elongated, with low neural spine and concave ventral margin of centrum.
+      - Middorsal vertebrae elongated, with neural spine strongly inclined posteriorly.
+      - Dorsal vertebrae 9 and 10 bear an incipient postzygodiapophyseal lamina linking diapophysis and postzygapophysis.
+      - Anterior caudal vertebrae (2-5) with two pronounced dorsal depressions on the transverse process; middle caudals with one such depression.
+      - Prezygapophyses on caudal vertebrae extended forward with wide articular faces.
+      - Articular surfaces for haemal arches strongly developed from caudal 3 through the last preserved element (caudal 20); transverse processes well developed throughout the anterior and medial caudal sequence.
+    identifiers:
+      - source: pbdb
+        id: "85460"
+      - source: wikidata
+        id: Q134650
+      - source: gbif
+        id: "4967378"
+      - source: eol
+        id: "4531347"
+    species:
+      - name: Trigonosaurus pricei
+        etymology: Named in honor of Brazilian vertebrate paleontologist Llewellyn Ivor Price (1905-1980), whose birth centenary was celebrated in 2005.
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+          from_ma: 72.1
+          to_ma: 66
+        location:
+          country: BR
+          region: Peirópolis, Uberaba Municipality, Minas Gerais
+          formation: Serra da Galga Formation
+          coordinates:
+            - -19.601944
+            - -47.615833
+        holotype:
+          specimen_id:
+            - MCT 1488-R
+          specimen_type: holotype
+          institution: Collection of the Earth Science Museum of the National Department of Mineral Production
+          material: "Articulated partial vertebral column: five posterior cervical vertebrae (cervicals 9-13), ten dorsal vertebrae, six sacral vertebrae, and the left ilium."
+        size:
+          length_m:
+            min: 9.5
+            max: 9.5
+        described: 2005
+        authors: Campos, Kellner, Bertini & Santucci
+        described_in: campos2005
+    references:
+      - id: campos2005
+        authors: Campos, Diogenes A.; Kellner, Alexander W. A.; Bertini, Reinaldo J.; Santucci, Rodrigo M.
+        year: 2005
+        title: On a titanosaurid (Dinosauria, Sauropoda) vertebral column from the Bauru Group, Late Cretaceous of Brazil
+        journal: Arquivos do Museu Nacional, Rio de Janeiro
+        volume: "63"
+        issue: "3"
+        pages: 565-593
+      - id: silvajunior2022
+        authors: Silva Junior, Julian C. G.; Martinelli, Agustín G.; Marinho, Thiago S.; da Silva, João Ismael; Langer, Max C.
+        year: 2022
+        title: New specimens of Baurutitan britoi and a taxonomic reassessment of the titanosaur dinosaur fauna (Sauropoda) from the Serra da Galga Formation (Late Cretaceous) of Brazil
+        journal: PeerJ
+        volume: "10"
+        pages: e14333
+        doi: 10.7717/peerj.14333
+        url: http://dx.doi.org/10.7717/peerj.14333
+        notes: Synonymizes T. pricei with Baurutitan britoi (page priority within the same 2005 journal volume) and erects the postcranial paratype (MCT 1719-R) as the new genus Caieiria allocaudata.
+      - id: fronimos2023
+        authors: Fronimos, John A.
+        year: 2023
+        title: Patterns and function of pneumaticity in the vertebrae, ribs, and ilium of a titanosaur (Dinosauria, Sauropoda) from the Upper Cretaceous of Texas
+        journal: Journal of Vertebrate Paleontology
+        volume: "43"
+        issue: "2"
+        pages: e2259444
+        doi: 10.1080/02724634.2023.2259444
+        url: http://dx.doi.org/10.1080/02724634.2023.2259444
+        notes: Texas-titanosaur pneumaticity study that explicitly rejects the Silva Junior et al. (2022) synonymy of Trigonosaurus into Baurutitan, citing morphological differences in the first caudal vertebra.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
+      - Titanosauria
+      - Lithostrotia
+      - Aeolosaurini
   Trimucrodon:
     genus: Trimucrodon
     parent: Ornithischia
