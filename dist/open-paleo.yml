@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-05-10T03:43:43.362Z
+  built_at: 2026-05-10T04:43:32.668Z
   clade_count: 248
-  genus_count: 1357
+  genus_count: 1358
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.05"
@@ -84702,6 +84702,118 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Eutitanosauria
+  Paulodon:
+    genus: Paulodon
+    parent: Styracosterna
+    etymology: Named in honor of iguanodont researcher Gregory S. Paul, plus Greek odon ("tooth") in keeping with the Iguanodontia naming convention.
+    description: |
+      Paulodon is a genus of iguanodontian dinosaur from the early Barremian (Early Cretaceous) of Galve in Teruel, Spain. It was erected by Sancarlo, Mandorlo & Ford (2025) for material previously described as Iguanodon galvensis by Verdú et al. (2015).
+    dispute: |
+      Paleontologists have informally disagreed with the methodology behind Sancarlo et al.'s 2025 erection of Paulodon. An independent 2026 study by Rotatori et al. concluded that "I." galvensis requires a new generic name within Iguanodontidae, but did not mention or endorse Paulodon — leaving the taxonomic situation unresolved.
+    diet: herbivore
+    locomotion: facultative
+    diagnostic_features:
+      - Manus with fully separated digits.
+      - Pollex proportionally short and conical with pronounced medial curvature, articulating with a low and broad metacarpal I.
+      - Rugose, inflated ridge on the lateral side of the femur shaft near the lateral condyle.
+      - Lateral trochanter of the femur forms a bony spur.
+      - Prominent tuberosity on the articular surface of the iliac peduncle of the ischium.
+      - Ischiatic peduncle forms a step on the lateral face of the ilium.
+      - Distal end of the ischium D-shaped in cross section, with a rounded expansion 0.45-0.50 the proximal width.
+      - Dentary with a short, abrupt convexity on the dorsal margin near the symphyseal region.
+    identifiers:
+      - source: pbdb
+        id: "519177"
+      - source: wikidata
+        id: Q137442744
+    synonyms:
+      - name: Iguanodon galvensis
+        type: reassigned
+        reason: Originally described as Iguanodon galvensis by Verdú et al. (2015) and revised by Verdú et al. (2017); reassigned to a new genus Paulodon by Sancarlo, Mandorlo & Ford (2025) on autapomorphies of the manus, pollex, femur, ischium, and dentary plus a stratigraphic gap (early Barremian vs. late-Barremian-early-Aptian Iguanodon bernissartensis).
+    species:
+      - name: Paulodon galvensis
+        etymology: From galvensis ("of Galve"), referring to Galve in Teruel Province, Aragón, Spain — the locality of the type material.
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Barremian
+          from_ma: 129.4
+          to_ma: 125
+        location:
+          country: ES
+          region: Aragón
+          formation: Camarillas
+          locality: SC-1 site, SIBELCO EUROPE clay mine, Galve (Teruel Province), Galve sub-basin of the Maestrazgo Basin
+          coordinates:
+            - 40.7
+            - -0.85
+        holotype:
+          specimen_id:
+            - MAP-4787
+          specimen_type: holotype
+          institution: Museo de la Fundación Conjunto Paleontológico de Teruel-Dinópolis
+          material: Adult specimen with disarticulated cranial and postcranial elements — premaxilla, dentary, postorbital, quadrate, maxillary teeth, atlas arch, cervical and sacral vertebrae, ribs, coracoid, scapula, pubes, ischia, and right femur.
+        described: 2025
+        authors: Sancarlo, Mandorlo & Ford
+        described_in: sancarlo2025
+    references:
+      - id: sancarlo2025
+        authors: Sancarlo, F.; Mandorlo, D.; Ford, T.L.
+        year: 2025
+        title: Reassessment of Iguanodon galvensis classification
+        journal: Mesozoic
+        volume: "2"
+        issue: "4"
+        pages: 302-312
+        doi: 10.11646/mesozoic.2.4.3
+        notes: Erects Paulodon for Iguanodon galvensis on autapomorphies of the manus, pollex, femur, ischium and dentary; phylogeny places it closer to Proa and Lanzhousaurus than to Iguanodon.
+      - id: verdu2015
+        authors: Verdú, F.J.; Royo-Torres, R.; Cobos, A.; Alcalá, L.
+        year: 2015
+        title: "Perinates of a new species of Iguanodon (Ornithischia: Ornithopoda) from the lower Barremian of Galve (Teruel, Spain)"
+        journal: Cretaceous Research
+        volume: "56"
+        pages: 250-264
+        doi: 10.1016/j.cretres.2015.05.010
+        notes: Original description of Iguanodon galvensis on the MAP-4787 adult plus 13 perinate (very young juvenile) specimens from the SC-2 nursery site near Galve.
+      - id: verdu2017
+        authors: Verdú, F.J.; Royo-Torres, R.; Cobos, A.; Alcalá, L.
+        year: 2017
+        title: "New systematic and phylogenetic data about the early Barremian Iguanodon galvensis (Ornithopoda: Iguanodontoidea) from Spain"
+        journal: Historical Biology
+        volume: "30"
+        issue: "4"
+        pages: 437-474
+        doi: 10.1080/08912963.2017.1287179
+        notes: Emended diagnosis adds two new autapomorphies (iliac-peduncle tuberosity, lateral femoral ridge); keeps the species within Iguanodon and does not propose a new genus.
+      - id: rotatori2026
+        authors: Rotatori, F.M.; Chiarenza, A.A.; Fanti, F.; Moreno-Azanza, M.
+        year: 2026
+        title: "The early origin of Iguanodontia: new insights into the macroevolution, diversity and biogeography of the clade"
+        journal: Palaeontology
+        volume: "69"
+        issue: "2"
+        pages: e70057
+        doi: 10.1111/pala.70057
+        notes: Independently calls for a new generic name for "I." galvensis within Iguanodontidae but does not mention or endorse Sancarlo et al.'s Paulodon.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Cerapoda
+      - Ornithopoda
+      - Ankylopollexia
+      - Styracosterna
   Pawpawsaurus:
     genus: Pawpawsaurus
     parent: Nodosauridae
