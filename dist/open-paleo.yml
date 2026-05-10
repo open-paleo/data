@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-05-10T22:23:18.565Z
+  built_at: 2026-05-10T23:22:29.333Z
   clade_count: 250
-  genus_count: 1366
+  genus_count: 1367
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.05"
@@ -33009,6 +33009,94 @@ genera:
       - Ankylosauria
       - Ankylosauridae
       - Ankylosaurinae
+  Crichtonsaurus:
+    genus: Crichtonsaurus
+    parent: Ankylosauria
+    etymology: From the surname Crichton (Michael Crichton, author of 'Jurassic Park') and Greek 'sauros' (lizard); meaning "Crichton's lizard".
+    description: |
+      Crichtonsaurus is a dubious genus of herbivorous ankylosaurid dinosaur that lived during the Late Cretaceous in what is now China. It was named after Michael Crichton, the author of the dinosaur novel Jurassic Park. A sister taxon was discovered, C. benxiensis, which is now identified as a separate genus.
+    diet: herbivore
+    locomotion: quadrupedal
+    paleoenvironment:
+      - fluvial
+    appearance:
+      integument: armored
+    identifiers:
+      - source: pbdb
+        id: "84232"
+      - source: wikidata
+        id: Q135561
+      - source: gbif
+        id: "4823036"
+      - source: eol
+        id: "4658464"
+    species:
+      - name: Crichtonsaurus bohlini
+        etymology: In honor of Swedish paleontologist Birger Bohlin, who collected and studied early ankylosaur fossils from China in the 1930s.
+        status: nomen dubium
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Cenomanian
+            - Turonian
+          from_ma: 100.5
+          to_ma: 89.8
+        location:
+          country: CN
+          region: Liaoning
+          formation: Sunjiawan
+          coordinates:
+            - 41.711109
+            - 120.713608
+        holotype:
+          specimen_id:
+            - IVPP V12745
+          specimen_type: holotype
+          institution: Institute of Vertebrate Paleontology and Paleoanthropology
+          material: Fragment of left mandible (~2.2 cm) bearing three teeth (one functional, two replacement crowns exposed).
+        size:
+          length_m:
+            min: 3
+            max: 3
+        described: 2002
+        authors: Dong
+        described_in: dong2002
+    references:
+      - id: dong2002
+        authors: Dong, Z.
+        year: 2002
+        title: A new armored dinosaur (Ankylosauria) from Beipiao Basin, Liaoning Province, northeastern China
+        journal: Vertebrata PalAsiatica
+        volume: "40"
+        issue: "4"
+        pages: 276-285
+        notes: Original description of Crichtonsaurus bohlini on a fragmentary left mandible from the Sunjiawan Formation; family assigned as incertae sedis pending more material.
+      - id: arbour2015
+        authors: Arbour, V. M.; Currie, P. J.
+        year: 2015
+        title: Systematics, phylogeny and palaeobiogeography of the ankylosaurid dinosaurs
+        journal: Journal of Systematic Palaeontology
+        volume: "14"
+        issue: "5"
+        pages: 385-444
+        doi: 10.1080/14772019.2015.1059985
+        url: http://dx.doi.org/10.1080/14772019.2015.1059985
+        notes: Concludes that the C. bohlini holotype lacks any diagnostic characters and treats the species as a nomen dubium; splits C. benxiensis off as the new genus Crichtonpelta.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Thyreophora
+      - Ankylosauria
   Cristatusaurus:
     genus: Cristatusaurus
     parent: Baryonychinae
