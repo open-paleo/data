@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-10T23:22:29.333Z",
+    "built_at": "2026-05-10T23:54:01.126Z",
     "clade_count": 250,
-    "genus_count": 1367,
+    "genus_count": 1368,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
     "version": "2026.05"
@@ -42885,6 +42885,122 @@
         "Saurischia",
         "Theropoda",
         "Tetanurae"
+      ]
+    },
+    "Cryptosaurus": {
+      "genus": "Cryptosaurus",
+      "parent": "Ankylosauria",
+      "etymology": "From Greek 'kryptos' (hidden) and 'sauros' (lizard); meaning 'hidden lizard', in reference to the rarity of the find.",
+      "description": "Cryptosaurus is a dubious genus of dinosaur known from a partial femur from the Late Jurassic of England. The sole species is Cryptosaurus eumerus.\n",
+      "diet": "herbivore",
+      "locomotion": "quadrupedal",
+      "paleoenvironment": [
+        "marine"
+      ],
+      "appearance": {
+        "integument": "armored"
+      },
+      "diagnostic_features": [
+        "Femoral shaft triangular in cross-section at both proximal and distal ends, with flat outer side and compressed inner side proximally.",
+        "Proximal articular surface in two portions — an inner subspherical head and a continuous outer subquadrate facet obliquely concave from within outward.",
+        "Great trochanter a mastiform process partly separated from the anterior shaft by a deep narrow groove on the outer side.",
+        "Inner trochanter placed entirely on the posterior aspect of the shaft, at approximately mid-shaft.",
+        "Distal articular surface lacks an anterior intercondylar groove; inner condyle large, separated from the outer condyle by a narrow interspace."
+      ],
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "56556"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q18578567"
+        },
+        {
+          "source": "gbif",
+          "id": "4575739"
+        }
+      ],
+      "synonyms": [
+        {
+          "name": "Cryptodraco eumerus",
+          "type": "junior objective",
+          "reason": "Lydekker (1889) proposed Cryptodraco as a replacement name for Cryptosaurus, believing the latter to be preoccupied by an earlier reptile name. The perceived senior homonym was actually a misspelling of Cystosaurus (Geoffroy Saint-Hilaire 1831) in the French Bibliothèque universelle, so Cryptosaurus was never preoccupied and Cryptodraco is an unnecessary replacement name."
+        }
+      ],
+      "species": [
+        {
+          "name": "Cryptosaurus eumerus",
+          "etymology": "From Greek 'eu' (well) and 'merus' (thigh); meaning 'well-formed thigh', in reference to the stout build of the holotype femur.",
+          "status": "nomen dubium",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Jurassic"
+            ],
+            "stage": [
+              "Oxfordian"
+            ]
+          },
+          "location": {
+            "country": "GB",
+            "region": "Great Gransden, Cambridgeshire, England",
+            "formation": "Ampthill Clay",
+            "coordinates": [
+              52.1833,
+              -0.1333
+            ]
+          },
+          "holotype": {
+            "specimen_id": [
+              "CAMSM J.46882"
+            ],
+            "specimen_type": "holotype",
+            "institution": "Sedgwick Museum, University of Cambridge",
+            "material": "A single right femur, approximately 31 cm long, with a slight antero-posterior flexure in the lower third of the shaft; articular ends lack epiphyses."
+          },
+          "described": 1875,
+          "authors": "Seeley",
+          "described_in": "seeley1875b"
+        }
+      ],
+      "references": [
+        {
+          "id": "seeley1875b",
+          "authors": "Seeley, H. G.",
+          "year": 1875,
+          "title": "On the femur of Cryptosaurus eumerus, Seeley, a Dinosaur from the Oxford Clay of Great Gransden",
+          "journal": "Quarterly Journal of the Geological Society of London",
+          "volume": "31",
+          "issue": "1-4",
+          "pages": "149-151",
+          "publisher": "Geological Society of London",
+          "doi": "10.1144/gsl.jgs.1875.031.01-04.12",
+          "url": "http://dx.doi.org/10.1144/gsl.jgs.1875.031.01-04.12"
+        },
+        {
+          "id": "seeley1869b",
+          "authors": "Seeley, H. G.",
+          "year": 1869,
+          "title": "Index to the fossil remains of Aves, Ornithosauria, and Reptilia, from the Secondary System of Strata, arranged in the Woodwardian Museum of the University of Cambridge",
+          "journal": "Cambridge, Deighton, Bell, and Co.",
+          "pages": "1-143",
+          "notes": "Coins the name Cryptosaurus eumerus with a brief shelf-location note but no diagnosis or description — a nomen-nudum precursor to seeley1875b."
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Thyreophora",
+        "Ankylosauria"
       ]
     },
     "Cumnoria": {
@@ -116115,12 +116231,12 @@
           },
           "described": 1875,
           "authors": "Seeley",
-          "described_in": "seeley1875"
+          "described_in": "seeley1875a"
         }
       ],
       "references": [
         {
-          "id": "seeley1875",
+          "id": "seeley1875a",
           "authors": "Seeley, Harry Govier",
           "year": 1875,
           "title": "On the Maxillary Bone of a new Dinosaur (Priodontognathus Phillipsii), contained in the Woodwardian Museum of the University of Cambridge",
