@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-10T21:14:09.893Z",
+    "built_at": "2026-05-10T21:49:45.432Z",
     "clade_count": 248,
-    "genus_count": 1364,
+    "genus_count": 1365,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
     "version": "2026.05"
@@ -40194,6 +40194,119 @@
         "Coelophysidae"
       ]
     },
+    "Coeluroides": {
+      "genus": "Coeluroides",
+      "parent": "Abelisauroidea",
+      "etymology": "From Coelurus (a related theropod genus, itself from Greek 'koilos' (hollow) and 'oura' (tail)) and Greek '-oides' (resembling); meaning 'Coelurus-like'.",
+      "description": "Coeluroides is an extinct genus of theropod dinosaur that lived during the Late Cretaceous Period in what is now India. It is based solely on the holotype caudal vertebrae GSI K27/562, K27/574 and K27/595, discovered in a layer of the Lameta Formation. The type species, C. largus, was described by Friedrich von Huene and Charles Alfred Matley in 1933.\n",
+      "diet": "carnivore",
+      "locomotion": "bipedal",
+      "paleoenvironment": [
+        "fluvial"
+      ],
+      "diagnostic_features": [
+        "Mid-caudal vertebrae with wide, almost horizontally oriented and well-separated pre- and postzygapophyses.",
+        "Transverse processes notably expanded and triangular in outline, deeply excavated on their dorsal surface.",
+        "Axially extended neural-spine base on mid-caudals.",
+        "Centra of caudal vertebrae 9-11 cm long; centrum well rounded in transverse section near the articular face and in the middle, fairly narrow at mid-length."
+      ],
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "38620"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q309615"
+        },
+        {
+          "source": "gbif",
+          "id": "4822573"
+        }
+      ],
+      "species": [
+        {
+          "name": "Coeluroides largus",
+          "status": "nomen dubium",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Maastrichtian"
+            ],
+            "from_ma": 72.1,
+            "to_ma": 66
+          },
+          "location": {
+            "country": "IN",
+            "region": "Madhya Pradesh",
+            "formation": "Lameta",
+            "coordinates": [
+              23.168694,
+              79.972282
+            ]
+          },
+          "holotype": {
+            "specimen_id": [
+              "GSI K27/562",
+              "GSI K27/574",
+              "GSI K27/595"
+            ],
+            "specimen_type": "syntype",
+            "institution": "Geological Survey of India",
+            "material": "Three caudal vertebrae from the Carnosaur bed at Bara Simla, Jubbulpore. Huene & Matley (1933) originally identified the elements as dorsal vertebrae; Welles (1984) and Molnar (1990) reinterpreted them as caudals. A fourth possibly conspecific vertebra (K 27/695) and a tentatively referred posterior caudal (K 27/587) were noted by the original authors but not included in the type series."
+          },
+          "described": 1933,
+          "authors": "Huene & Matley",
+          "described_in": "huene1933"
+        }
+      ],
+      "references": [
+        {
+          "id": "huene1933",
+          "authors": "Huene, F. v.; Matley, C. A.",
+          "year": 1933,
+          "title": "The Cretaceous Saurischia and Ornithischia of the Central Provinces of India",
+          "journal": "Palaeontologica Indica (New Series), Memoirs of the Geological Survey of India",
+          "volume": "21",
+          "issue": "1",
+          "pages": "1-74",
+          "notes": "Original description of Coeluroides largus on three vertebrae from the Lameta Formation. The authors identified the elements as dorsal vertebrae; later workers recognised them as caudals."
+        },
+        {
+          "id": "novas2004b",
+          "authors": "Novas, F. E.; Agnolin, F. L.; Bandyopadhyay, S.",
+          "year": 2004,
+          "title": "Cretaceous theropods from India: A review of specimens described by Huene and Matley (1933)",
+          "journal": "Revista del Museo Argentino de Ciencias Naturales",
+          "volume": "6",
+          "issue": "1",
+          "pages": "67-103",
+          "doi": "10.22179/REVMACN.6.74",
+          "url": "http://dx.doi.org/10.22179/REVMACN.6.74",
+          "notes": "Follows Welles (1984) and Molnar (1990) in treating the type vertebrae as caudals. Considers C. largus a nomen dubium, while noting it may represent a valid abelisauroid."
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Ceratosauria",
+        "Abelisauroidea"
+      ]
+    },
     "Coelurus": {
       "genus": "Coelurus",
       "parent": "Coelurosauria",
@@ -48284,7 +48397,7 @@
           "notes": "Erects Dryptosauroides grandis on a syntype series of six large vertebrae from the Carnosaur bed at Bara Simla, Jabalpur (Lameta Group); originally identified as dorsals."
         },
         {
-          "id": "novas2004",
+          "id": "novas2004b",
           "authors": "Novas, F.E.; Agnolin, F.L.; Bandyopadhyay, S.",
           "year": 2004,
           "title": "Cretaceous theropods from India: A review of specimens described by Huene and Matley (1933)",
@@ -136800,12 +136913,12 @@
           },
           "described": 2004,
           "authors": "Novas et al.",
-          "described_in": "novas2004"
+          "described_in": "novas2004a"
         }
       ],
       "references": [
         {
-          "id": "novas2004",
+          "id": "novas2004a",
           "authors": "Novas, F. E.; Cambiaso, A. V.; A. Ambrosio",
           "year": 2004,
           "title": "A new basal iguanodontian (Dinosauria, Ornithischia) from the Upper Cretaceous of Patagonia",
