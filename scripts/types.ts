@@ -419,6 +419,15 @@ export type GenusData = {
     description?: string;
 
     /**
+     * Brief account of any active scientific disagreement over the genus
+     * (validity, synonymy, placement). Distinct from `description`: the
+     * description reads like a Wikipedia intro, while this field captures
+     * the disputed status as a UI-renderable callout. Only set when the
+     * taxon's status is contested in the literature.
+     */
+    dispute?: string;
+
+    /**
      * Dietary category from the controlled vocabulary in schema.yml.
      */
     diet?: string;
