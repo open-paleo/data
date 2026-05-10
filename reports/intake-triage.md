@@ -85,7 +85,7 @@ defines the appropriate intake discipline per category.
 
 | # | Genus | Label | Notes |
 |---|---|---|---|
-| 65 | Alocodon | Manual | Nomen dubium per Weishampel & Witmer 1990; Middle/Late Jurassic ornithischian teeth; recent work places it as Parapredentata. |
+| 65 | Alocodon | Manual | Nomen dubium per Weishampel & Witmer 1990; Middle/Late Jurassic ornithischian teeth; recent work places it as Parapredentata. [done f6cba0b9] |
 | 149 | Arkharavia | Disputed | Dubious somphospondylan from Udurchukan Fm; holotype caudal vertebra; referred material reassigned to indeterminate hadrosaurid. [done f637f4c] |
 | 152 | Arstanosaurus | Manual | Dubious Bostobe Fm hadrosauroid; chimera history (hadrosaurid maxilla + uninformative femur); "indeterminate hadrosaurid" per modern review. |
 | 155 | Asiamericana | Disputed | Bissekty Fm tooth-taxon; 2013/2019 studies treat as Richardoestesia asiatica but per project policy keep separate stub until consensus broader. status: nomen dubium. [done 4fe4226] |
@@ -144,7 +144,7 @@ defines the appropriate intake discipline per category.
 | 595 | Galesaurus | Disputed | Cynodont therapsid (synapsid) from Karoo Basin, mistakenly classified as dinosaur by Owen 1859. [done — issue closed 2026-05-06 as out of scope] |
 | 1211 | Pareiasaurus | Manual | Pareiasaurid parareptile from Permian Karoo — not a dinosaur. |
 
-## Manual intervention working list (10 remaining)
+## Manual intervention working list (9 remaining)
 
 Quick-reference index for genera labeled `Intake: Requires Manual
 Intervention`. These cross-cut Buckets D and (occasionally) F: most
@@ -155,7 +155,6 @@ intake / split → close issue.
 
 | # | Genus | Proposed approach | Per-genus notes |
 |---|---|---|---|
-| 65 | Alocodon | Cat-III nomen dubium stub | Per Weishampel & Witmer 1990; Middle/Late Jurassic ornithischian teeth; recent work places it as Parapredentata. |
 | 152 | Arstanosaurus | Cat-III nomen dubium stub | Indeterminate hadrosaurid per modern review; chimera history (hadrosaurid maxilla + uninformative femur). |
 | 360 | Clasmodosaurus | Decide: full intake vs Cat-III stub | Powell 1986 + later treat as dubious sauropod, though "diagnosed by unique combination of characters" per recent revision. |
 | 365 | Coeluroides | Cat-III stub; flag possible senior synonymy | Lameta caudal vertebrae; 2004 review found probably valid; possibly senior synonym of Ornithomimoides per SVP 2012 abstract. |
@@ -168,6 +167,7 @@ intake / split → close issue.
 
 Already resolved this session:
 - #449 Diplotomodon — flipped to `status: nomen dubium` in `edd42852`.
+- #65 Alocodon — Cat-III stub in `f6cba0b9` (also consolidated `thulborn1975` → `thulborn1973` bib key, fixing PBDB-introduced year + journal conflation).
 
 ## Per-letter coverage
 
