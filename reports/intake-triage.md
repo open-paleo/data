@@ -132,7 +132,7 @@ defines the appropriate intake discipline per category.
 
 | # | Genus | Label | Receiving genus | Notes |
 |---|---|---|---|---|
-| 1592 | Tianchiasaurus | Disputed | Tianchisaurus | "Tianchiasaurus" is a misspelling of Tianchisaurus that appears interchangeably in Dong's 1993 description; Dong published an erratum in 1994 confirming Tianchisaurus is correct. The receiving genus already exists at `genera/T/Tianchisaurus.yml`. Add `Tianchiasaurus` as a synonym entry (alternative spelling, ICZN-invalid) and close the issue. |
+| 1592 | Tianchiasaurus | Disputed | Tianchisaurus | "Tianchiasaurus" is a misspelling of Tianchisaurus that appears interchangeably in Dong's 1993 description; Dong published an erratum in 1994 confirming Tianchisaurus is correct. The receiving genus already exists at `genera/T/Tianchisaurus.yml`. Add `Tianchiasaurus` as a synonym entry (alternative spelling, ICZN-invalid) and close the issue. [done — synonym already in genera/T/Tianchisaurus.yml; issue closed 2026-05-06] |
 
 ## Bucket F — Out of scope (5)
 
@@ -140,8 +140,8 @@ defines the appropriate intake discipline per category.
 |---|---|---|---|
 | 215 | Bathygnathus | Manual | Sphenacodontid synapsid (pelycosaur), not a dinosaur. ICZN suppressed the name in 2019 in favour of Dimetrodon; species is now Dimetrodon borealis. |
 | 366 | Coelurosauravus | Manual | Weigeltisaurid gliding neodiapsid reptile from Late Permian Madagascar — not a dinosaur. |
-| 501 | Elachistosuchus | Disputed | Late Triassic Arnstadt Fm basal archosauromorph (per μCT 2015 Sobral et al.); originally described as pseudosuchian, then rhynchocephalian — never a dinosaur. |
-| 595 | Galesaurus | Disputed | Cynodont therapsid (synapsid) from Karoo Basin, mistakenly classified as dinosaur by Owen 1859. |
+| 501 | Elachistosuchus | Disputed | Late Triassic Arnstadt Fm basal archosauromorph (per μCT 2015 Sobral et al.); originally described as pseudosuchian, then rhynchocephalian — never a dinosaur. [done — issue closed 2026-05-06 as out of scope] |
+| 595 | Galesaurus | Disputed | Cynodont therapsid (synapsid) from Karoo Basin, mistakenly classified as dinosaur by Owen 1859. [done — issue closed 2026-05-06 as out of scope] |
 | 1211 | Pareiasaurus | Manual | Pareiasaurid parareptile from Permian Karoo — not a dinosaur. |
 
 ## Per-letter coverage
