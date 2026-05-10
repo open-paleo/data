@@ -104,7 +104,7 @@ defines the appropriate intake discipline per category.
 | 389 | Crichtonsaurus | Manual | Sunjiawan Fm ankylosaurid; C. bohlini holotype non-diagnostic per Arbour 2014 — nomen dubium. C. benxiensis split off as Crichtonpelta in 2015. |
 | 396 | Cryptosaurus | Manual | Ampthill Clay ankylosaurian femur; C. eumerus nomen dubium per Galton; not to be confused with replacement name Cryptodraco. |
 | 444 | Dinodocus | Manual | Lower Greensand Kent sauropod fragments; Owen 1884; once synonymised with Pelorosaurus; Upchurch et al. 2004 declared nomen dubium. |
-| 449 | Diplotomodon | Manual | Maastrichtian NJ tooth (Navesink/Hornerstown); various interpretations (plesiosaur, fish, mosasaur, theropod incl. Dryptosaurus); nomen dubium. |
+| 449 | Diplotomodon | Manual | Maastrichtian NJ tooth (Navesink/Hornerstown); various interpretations (plesiosaur, fish, mosasaur, theropod incl. Dryptosaurus); nomen dubium. [done edd42852] |
 | 475 | Dryptosauroides | Disputed | Lameta Fm caudal vertebrae; possibly abelisauroid; indistinguishable from other Lameta theropods per modern reviews. [done 93526c2] |
 | 511 | Embasaurus | Disputed | Neocomian Sands Kazakhstan; two vertebrae; speculatively basal tyrannosauroid or megalosaurid; nomen dubium. [done e0c7b93] |
 | 555 | Euronychodon | Disputed | Tooth-taxon; two species in Portugal + Uzbekistan; possibly synonymous with Paronychodon; nomen dubium per most reviews. [done 27a1d5b] |
