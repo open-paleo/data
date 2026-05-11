@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-05-11T02:58:34.177Z
+  built_at: 2026-05-11T03:36:13.372Z
   clade_count: 250
-  genus_count: 1370
+  genus_count: 1371
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.05"
@@ -65683,6 +65683,109 @@ genera:
       - Styracosterna
       - Hadrosauriformes
       - Hadrosauroidea
+  Lexovisaurus:
+    genus: Lexovisaurus
+    parent: Stegosauridae
+    etymology: From the Lexovii (a Gallic people who inhabited the region of present-day Lisieux in Normandy, where Hoffstetter's French stegosaurine specimens were found) and Greek 'sauros' (lizard).
+    description: |
+      Lexovisaurus is a genus of stegosaurian dinosaur known from limb bones and armor fragments from Middle to Late Jurassic-aged strata of Europe.
+    diet: herbivore
+    locomotion: quadrupedal
+    paleoenvironment:
+      - lacustrine
+      - fluvial
+    appearance:
+      integument: armored
+    identifiers:
+      - source: pbdb
+        id: "38812"
+      - source: wikidata
+        id: Q133863
+      - source: gbif
+        id: "4823119"
+    synonyms:
+      - name: Omosaurus durobrivensis
+        type: reassigned
+        reason: Original combination established by Hulke (1887) for BMNH R1989-R1992 from the Lower Oxford Clay of Fletton. Omosaurus Owen 1875 was later found to be preoccupied (by Omosaurus Leidy 1856) and the species was first transferred to the replacement genus Dacentrurus (1915) and then to the new genus Lexovisaurus by Hoffstetter (1957).
+      - name: Stegosaurus priscus
+        type: junior subjective
+        reason: Nopcsa (1911) erected Stegosaurus priscus for BMNH R3167 (a partial skeleton from the Callovian of Cambridgeshire). Hoffstetter (1957) regarded it as a junior synonym of Lexovisaurus durobrivensis. Maidment et al. (2008) later removed BMNH R3167 from Lexovisaurus and made it the holotype of a separate new genus, Loricatosaurus priscus.
+    species:
+      - name: Lexovisaurus durobrivensis
+        etymology: From Durobrivae (the Roman name for the area around Water Newton near Peterborough), referring to the provenance of the type material from the Lower Oxford Clay of nearby Fletton.
+        status: nomen dubium
+        type_species: true
+        period:
+          name:
+            - Middle Jurassic
+          stage:
+            - Callovian
+          from_ma: 166.1
+          to_ma: 163.5
+        location:
+          country: GB
+          region: Fletton, near Peterborough, England
+          formation: Oxford Clay Formation
+        holotype:
+          specimen_id:
+            - BMNH R1989-1992
+          specimen_type: holotype
+          institution: Natural History Museum
+          material: Partial sacrum, partial right ilium, left femur, partial metatarsal, and phalanx from the Lower Oxford Clay (Callovian) of Fletton. Maidment et al. (2008) concluded that this material bears no unique characters and treated the species as a nomen dubium.
+        described: 1957
+        authors: Hoffstetter
+        described_in: hoffstetter1957
+    references:
+      - id: hulke1887
+        authors: Hulke, J. W.
+        year: 1887
+        title: Note on some dinosaurian remains in the collection of A. Leeds, Esq, of Eyebury, Northamptonshire
+        journal: Quarterly Journal of the Geological Society of London
+        volume: "43"
+        pages: 695-702
+        notes: Original description of the type material as Omosaurus durobrivensis, the species that Hoffstetter (1957) later transferred to the new genus Lexovisaurus.
+      - id: hoffstetter1956
+        authors: Hoffstetter, R.; Brun, R.
+        year: 1956
+        title: Un Dinosaurien Stégosauridé dans le Callovien du Calvados
+        journal: Comptes Rendus de l'Académie des Sciences
+        volume: "243"
+        pages: 1651-1653
+        notes: Short note announcing French Callovian stegosaurine material from Calvados, Normandy, used by Hoffstetter the following year to erect Lexovisaurus.
+      - id: hoffstetter1957
+        authors: Hoffstetter, R.
+        year: 1957
+        title: Quelques observations sur les Stégosaurinés
+        journal: Bulletin du Muséum National d'Histoire Naturelle, Paris, 2nde série
+        volume: "29"
+        pages: 537-547
+        notes: Erects Lexovisaurus as a new genus with type species Lexovisaurus durobrivensis (Hulke 1887), bringing together the English Fletton type material and French Normandy referred material.
+      - id: maidment2008
+        authors: Maidment, Susannah C. R.; Norman, David B.; Barrett, Paul M.; Upchurch, Paul
+        year: 2008
+        title: "Systematics and phylogeny of Stegosauria (Dinosauria: Ornithischia)"
+        journal: Journal of Systematic Palaeontology
+        volume: "6"
+        issue: "4"
+        pages: 367-407
+        doi: 10.1017/S1477201908002459
+        url: http://dx.doi.org/10.1017/S1477201908002459
+        notes: Declares L. durobrivensis a nomen dubium after refuting Galton's proposed autapomorphies, and erects the new genus Loricatosaurus priscus for BMNH R3167 (previously referred to Lexovisaurus).
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Thyreophora
+      - Stegosauria
+      - Stegosauridae
   Leyesaurus:
     genus: Leyesaurus
     parent: Massospondylidae
