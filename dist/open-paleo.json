@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-11T03:45:59.750Z",
+    "built_at": "2026-05-11T04:24:57.580Z",
     "clade_count": 250,
-    "genus_count": 1371,
+    "genus_count": 1372,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
     "version": "2026.05"
@@ -95347,6 +95347,124 @@
         "Ceratopsia"
       ]
     },
+    "Microcoelus": {
+      "genus": "Microcoelus",
+      "parent": "Saltasaurinae",
+      "etymology": "From Greek 'mikros' (small) and 'koilos' (hollow); meaning 'small hollow', a reference to the shallow lateral pit on the holotype dorsal vertebra.",
+      "description": "Microcoelus is a dubious genus of small titanosaurian sauropod dinosaur from the Late Cretaceous (Santonian stage) Bajo de la Carpa Formation, Argentina. It is known from only a single dorsal vertebra, although a left humerus was formerly referred to this taxon, but it is now considered to belong to Neuquensaurus. The type (and only known) species is M. patagonicus, described by British paleontologist Richard Lydekker in 1893.\n",
+      "diet": "herbivore",
+      "locomotion": "quadrupedal",
+      "paleoenvironment": [
+        "fluvial"
+      ],
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "38707"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q13851602"
+        },
+        {
+          "source": "gbif",
+          "id": "4822775"
+        }
+      ],
+      "synonyms": [
+        {
+          "name": "Microsaurops",
+          "type": "junior objective",
+          "reason": "Replacement name proposed by Kuhn (1963) under the mistaken belief that the original Microcoelus Lydekker 1893 had been preoccupied. The supposed preoccupier \"Microsaurus\" (cited from Hatcher 1900 and Lull 1910) was itself only a misspelling of Microcoelus, so the replacement was unnecessary. Listed by Olshevsky (1991)."
+        }
+      ],
+      "species": [
+        {
+          "name": "Microcoelus patagonicus",
+          "etymology": "From Patagonia, the region of Argentina where the type material was collected.",
+          "status": "nomen dubium",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Santonian"
+            ],
+            "from_ma": 86.3,
+            "to_ma": 83.6
+          },
+          "location": {
+            "country": "AR",
+            "region": "Neuquén Province",
+            "formation": "Bajo de la Carpa Formation",
+            "coordinates": [
+              -38.950001,
+              -68.23333
+            ]
+          },
+          "holotype": {
+            "specimen_type": "holotype",
+            "status": "unknown",
+            "institution": "Museo de La Plata",
+            "material": "An anterior dorsal vertebra from the right bank of the Río Neuquén near Neuquén. Lydekker provisionally associated a left humerus and the posterior half of a caudal vertebra from the same locality; the humerus is now considered to belong to Neuquensaurus."
+          },
+          "described": 1893,
+          "authors": "Lydekker",
+          "described_in": "lydekker1893a"
+        }
+      ],
+      "references": [
+        {
+          "id": "lydekker1893a",
+          "authors": "Lydekker, R.",
+          "year": 1893,
+          "title": "Contributions to a knowledge of the fossil vertebrates of Argentina. I. — The dinosaurs of Patagonia",
+          "journal": "Anales del Museo de La Plata. Paleontología Argentina",
+          "volume": "2",
+          "pages": "1-16",
+          "notes": "Original description of Microcoelus patagonicus from an anterior dorsal vertebra from Neuquén, alongside Lydekker's other new Patagonian titanosaurs (Argyrosaurus, Titanosaurus australis, T. nanus)."
+        },
+        {
+          "id": "olshevsky1991",
+          "authors": "Olshevsky, G.",
+          "year": 1991,
+          "title": "A revision of the parainfraclass Archosauria Cope, 1869, excluding the advanced Crocodylia",
+          "journal": "Mesozoic Meanderings",
+          "volume": "2",
+          "pages": "1-196",
+          "notes": "Treats Microcoelus as nomen dubium and records Microsaurops Kuhn 1963 as a junior objective synonym based on the spurious \"Microsaurus\" misspelling."
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Sauropodomorpha",
+        "Massopoda",
+        "Sauropodiformes",
+        "Sauropoda",
+        "Gravisauria",
+        "Eusauropoda",
+        "Neosauropoda",
+        "Macronaria",
+        "Titanosauriformes",
+        "Somphospondyli",
+        "Titanosauria",
+        "Lithostrotia",
+        "Saltasauroidea",
+        "Lohuecosauria",
+        "Saltasauridae",
+        "Saltasaurinae"
+      ]
+    },
     "Microhadrosaurus": {
       "genus": "Microhadrosaurus",
       "parent": "Hadrosauridae",
@@ -124547,13 +124665,6 @@
         {
           "source": "eol",
           "id": "4657972"
-        }
-      ],
-      "synonyms": [
-        {
-          "name": "Microcoelus",
-          "type": "possible subjective",
-          "reason": "Possible junior subjective synonym of Saltasaurus; identification is tentative. Per Olshevsky's Dinosaur Genera List."
         }
       ],
       "species": [
