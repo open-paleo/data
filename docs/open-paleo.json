@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-11T02:07:40.308Z",
+    "built_at": "2026-05-11T02:58:34.177Z",
     "clade_count": 250,
-    "genus_count": 1369,
+    "genus_count": 1370,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
     "version": "2026.05"
@@ -68401,6 +68401,117 @@
           "journal": "United States National Museum Bulletin",
           "volume": "89",
           "pages": "1-136"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Thyreophora",
+        "Ankylosauria",
+        "Nodosauridae"
+      ]
+    },
+    "Horshamosaurus": {
+      "genus": "Horshamosaurus",
+      "parent": "Nodosauridae",
+      "etymology": "From Horsham (the West Sussex market town where the Horsham Museum holds the holotype) and Greek 'sauros' (lizard); meaning 'Horsham lizard'.",
+      "description": "Horshamosaurus is a genus of herbivorous ankylosaurian dinosaur from the Barremian stage of the Early Cretaceous of what is now England. The type species is Horshamosaurus rudgwickensis.\n",
+      "diet": "herbivore",
+      "locomotion": "quadrupedal",
+      "paleoenvironment": [
+        "fluvial",
+        "lacustrine"
+      ],
+      "appearance": {
+        "integument": "armored"
+      },
+      "identifiers": [
+        {
+          "source": "wikidata",
+          "id": "Q21011926"
+        }
+      ],
+      "synonyms": [
+        {
+          "name": "Polacanthus rudgwickensis",
+          "type": "reassigned",
+          "reason": "Blows (1996) originally described this material as a second species of Polacanthus. Blows (2015) elevated it to its own genus, Horshamosaurus, with H. rudgwickensis as the type species (combinatio nova)."
+        }
+      ],
+      "species": [
+        {
+          "name": "Horshamosaurus rudgwickensis",
+          "etymology": "Named for the village of Rudgwick in West Sussex, where the holotype was excavated from the Rudgwick Brickworks marl quarry in 1985.",
+          "status": "nomen dubium",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Barremian"
+            ],
+            "from_ma": 129.4,
+            "to_ma": 125
+          },
+          "location": {
+            "country": "GB",
+            "region": "Rudgwick, West Sussex, England",
+            "formation": "Weald Clay Group"
+          },
+          "holotype": {
+            "specimen_id": [
+              "HORSM 1988.1546"
+            ],
+            "specimen_type": "holotype",
+            "institution": "Horsham Museum",
+            "material": "Fragmentary postcranial skeleton including a nearly complete anterior dorsal vertebra, dorsal and caudal centra, proximal left scapula with fused coracoid fragment, distal left humerus, the element originally identified as a tibia (reinterpreted as an ischium by Raven et al. 2020), rib fragments, and osteoderms."
+          },
+          "described": 2015,
+          "authors": "Blows",
+          "described_in": "blows2015"
+        }
+      ],
+      "references": [
+        {
+          "id": "blows1996",
+          "authors": "Blows, W. T.",
+          "year": 1996,
+          "title": "A new species of Polacanthus (Ornithischia; Ankylosauria) from the Lower Cretaceous of Sussex, England",
+          "journal": "Geological Magazine",
+          "volume": "133",
+          "issue": "6",
+          "pages": "671-682",
+          "notes": "Original description of the type material under the name Polacanthus rudgwickensis, prior to the 2015 erection of Horshamosaurus."
+        },
+        {
+          "id": "blows2015",
+          "authors": "Blows, W. T.",
+          "year": 2015,
+          "title": "British Polacanthid Dinosaurs — Observations on the History and Palaeontology of the UK Polacanthid Armoured Dinosaurs and their Relatives",
+          "book": "British Polacanthid Dinosaurs",
+          "publisher": "Siri Scientific Press",
+          "pages": "1-220",
+          "notes": "Erects Horshamosaurus for \"Polacanthus\" rudgwickensis Blows 1996, proposing twelve diagnostic characters and placing the genus in Nodosauridae rather than Polacanthidae."
+        },
+        {
+          "id": "raven2020",
+          "authors": "Raven, T. J.; Barrett, P. M.; Pond, S. B.; Maidment, S. C. R.",
+          "year": 2020,
+          "title": "Osteology and taxonomy of British Wealden Supergroup (Berriasian-Aptian) ankylosaurs (Ornithischia, Ankylosauria)",
+          "journal": "Journal of Vertebrate Paleontology",
+          "doi": "10.1080/02724634.2020.1826956",
+          "url": "http://dx.doi.org/10.1080/02724634.2020.1826956",
+          "notes": "Systematically refutes each of Blows's (2015) twelve diagnostic characters, reinterprets the presumed tibia as an ischium, and treats H. rudgwickensis as a nomen dubium indeterminate nodosaurid."
         }
       ],
       "taxonomy": [
