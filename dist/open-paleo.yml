@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-05-11T04:51:31.928Z
+  built_at: 2026-05-11T05:23:50.521Z
   clade_count: 250
-  genus_count: 1373
+  genus_count: 1374
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.05"
@@ -11152,6 +11152,135 @@ genera:
       - Alvarezsauria
       - Alvarezsauroidea
       - Alvarezsauridae
+  Alwalkeria:
+    genus: Alwalkeria
+    parent: Saurischia
+    etymology: From the prefix 'Al-' added to 'Walkeria', the original (and preoccupied) genus name, which Chatterjee (1987) had coined in honour of British paleontologist Alick D. Walker for his contributions to Mesozoic vertebrate paleontology.
+    pronunciation:
+      ipa: /ˌælwɔːˈkɪəriə/
+    description: |
+      Alwalkeria is a historically problematic extinct genus of avemetatarsalian known from the Late Triassic Lower Maleri Formation of India. The genus contains a single species, Alwalkeria maleriensis. It was initially described in 1987 under the genus name 'Walkeria', based on a partial skull, several vertebrae, and fragmentary hindlimb bones. As this name is preoccupied, the new genus Alwalkeria was proposed to replace it. Early research interpreted the material belonging to a 'podokesaurid' (coelophysoid) theropod, herrerasaur, or Eoraptor-like basal eusaurischian dinosaur. Subsequent work recognized the chimaeric status of the fossils referred to this species, as they belong to multiple unrelated taxa. Some of the bones may belong to a dinosaur, and the skull is likely from a pseudosuchian. A 2025 study suggested lagerpetid affinities for the femora, though this was deemed unlikely by a subsequent review, which regarded A. maleriensis as a member of Pan-Aves (Avemetatarsalia) of uncertain placement.
+    dispute: |
+      The anatomical content and phylogenetic placement of Alwalkeria have been actively contested. Remes & Rauhut (2005, conference abstract) first identified the original ISI R 306 holotype series as a chimera; Lecuona, Ezcurra & Irmis (2016) reinterpreted the skull as a crocodylomorph. Novas et al. (2011) and Ezcurra et al. (2025) treated the genus as a valid basal saurischian based on the retained femur and astragalus. Sen & Ray (2025) erected Alickmeron maleriensis for the femora with proposed lagerpetid affinities. McDavid, Marchant & Reid (2026) refuted the lagerpetid assignment, synonymised Alickmeron with Alwalkeria as an objective junior synonym, and restricted the holotype to ISI R 306b (the distal right femur) with placement as Pan-Aves (Avemetatarsalia) incertae sedis.
+    paleoenvironment:
+      - fluvial
+    identifiers:
+      - source: pbdb
+        id: "66343"
+      - source: wikidata
+        id: Q133238
+      - source: gbif
+        id: "4822917"
+      - source: eol
+        id: "47043859"
+    synonyms:
+      - name: Walkeria Chatterjee, 1987
+        type: preoccupied
+        reason: Original generic combination, preoccupied by Walkeria Fleming, 1823 (Bryozoa). Renamed Alwalkeria by Chatterjee & Creisler (1994).
+      - name: Alickmeron Sen & Ray, 2025
+        type: junior objective
+        reason: Erected by Sen & Ray (2025) for the partial femora of ISI R 306 with proposed lagerpetid affinities, but Alickmeron shares the same type species (Walkeria maleriensis Chatterjee, 1987) and same restricted holotype (ISI R 306b) as Alwalkeria; objective junior synonym under ICZN Art. 68.3, with Alwalkeria having priority (McDavid, Marchant & Reid 2026).
+    species:
+      - name: Alwalkeria maleriensis
+        etymology: From the Maleri Formation of the Pranhita–Godavari Valley, India, from which the type material was recovered.
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Triassic
+          stage:
+            - Carnian
+          from_ma: 237
+          to_ma: 227.3
+        location:
+          country: IN
+          region: Nennal Village, Adilabad District, Andhra Pradesh
+          formation: Lower Maleri Formation
+          coordinates:
+            - 19.0667
+            - 79.633301
+        holotype:
+          specimen_id:
+            - ISI R 306b
+          specimen_type: holotype
+          institution: Geology Museum, Indian Statistical Institute
+          material: Distal right femur. The originally referred holotype series (ISI R 306) included a partial skull, dentary, ~28 vertebrae, a composite femur, and an astragalus, but the skull is now considered crocodylomorph and the other elements ambiguous; Sen & Ray (2025) restricted the holotype to the distal right femur (ISI R 306b) under ICZN Art. 73.1.5, a restriction accepted by McDavid, Marchant & Reid (2026).
+        described: 1987
+        authors: Chatterjee
+        described_in: chatterjee1987
+    references:
+      - id: chatterjee1987
+        authors: Chatterjee, S.
+        year: 1987
+        title: A new theropod dinosaur from India with remarks on the Gondwana–Laurasia connection in the Late Triassic
+        journal: Gondwana Six; Stratigraphy, Sedimentology, and Paleontology
+        series: Geophysical Monograph 41
+        pages: 183-189
+        publisher: American Geophysical Union, Washington D.C.
+        doi: 10.1029/GM041p0183
+        url: http://dx.doi.org/10.1029/GM041p0183
+        notes: Original description, as Walkeria maleriensis on holotype ISI R 306 (partial skull, dentary, ~28 vertebrae, composite femur, astragalus); interpreted as a basal theropod.
+      - id: chatterjee1994
+        authors: Chatterjee, Sankar; Creisler, Benjamin S.
+        year: 1994
+        title: Alwalkeria (Theropoda) and Morturneria (Plesiosauria), new names for preoccupied Walkeria Chatterjee, 1987 and Turneria Chatterjee and Small, 1989
+        journal: Journal of Vertebrate Paleontology
+        volume: "14"
+        issue: "1"
+        pages: 142-142
+        doi: 10.1080/02724634.1994.10011546
+        url: http://dx.doi.org/10.1080/02724634.1994.10011546
+        notes: One-page nomenclatural note proposing Alwalkeria as a replacement name (nomen novum) for the preoccupied Walkeria Chatterjee, 1987 (preoccupied by Walkeria Fleming, 1823, Bryozoa).
+      - id: novas2010a
+        authors: Novas, F. E.; Ezcurra, M. D.; Chatterjee, S.; Kutty, T. S.
+        year: 2010
+        title: New dinosaur species from the Upper Triassic Upper Maleri and Lower Dharmaram formations of Central India
+        journal: Earth and Environmental Science Transactions of the Royal Society of Edinburgh
+        volume: "101"
+        issue: 3-4
+        pages: 333-349
+        doi: 10.1017/S1755691011020093
+        url: http://dx.doi.org/10.1017/S1755691011020093
+        notes: Defends Alwalkeria as a valid basal saurischian on the basis of the holotype femur and astragalus, citing a hypertrophied femoral neck as a distinguishing feature.
+      - id: ezcurra2025
+        authors: Ezcurra, M. D.; Garcia, M. S.; Novas, F. E.; Müller, R. T.; Agnolín, F. L.; Chatterjee, S.
+        year: 2025
+        title: A new herrerasaurian dinosaur from the Upper Triassic Upper Maleri Formation of south-central India
+        journal: Royal Society Open Science
+        volume: "12"
+        issue: "5"
+        pages: "250081"
+        doi: 10.1098/rsos.250081
+        url: http://dx.doi.org/10.1098/rsos.250081
+        notes: Treats Alwalkeria as a valid Lower Maleri taxon distinct from Maleriraptor kuttyi (Upper Maleri); pre-2025 chimera view, with the skull treated as crocodylomorph per Lecuona et al. 2016.
+      - id: sen2025
+        authors: Sen, Sulagna; Ray, Sanghamitra
+        year: 2025
+        title: Taxonomic reassessment of archosaurs with dinosaurian affinities from the lower fauna of the Upper Triassic Maleri Formation of India and their significance
+        journal: Journal of Vertebrate Paleontology
+        pages: e2546434
+        doi: 10.1080/02724634.2025.2546434
+        url: http://dx.doi.org/10.1080/02724634.2025.2546434
+        notes: Reassesses ISI R 306; erects Alickmeron maleriensis for the femora (claiming lagerpetid affinities) and treats the astragalus as Saurischia indet.
+      - id: mcdavid2026
+        authors: McDavid, S. N.; Marchant, C. J.; Reid, I. J.
+        year: 2026
+        title: Alickmeron Sen & Ray, 2025 is an objective junior synonym of Alwalkeria Chatterjee & Creisler, 1994
+        journal: Journal of Vertebrate Paleontology
+        doi: 10.1080/02724634.2025.2604088
+        url: http://dx.doi.org/10.1080/02724634.2025.2604088
+        notes: Demonstrates Alickmeron Sen & Ray, 2025 is an objective junior synonym of Alwalkeria; accepts the ISI R 306b holotype restriction and places the taxon as Pan-Aves incertae sedis.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
   Alxasaurus:
     genus: Alxasaurus
     parent: Therizinosauroidea
