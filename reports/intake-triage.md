@@ -163,7 +163,177 @@ Already resolved this session:
 - #708 Horshamosaurus — full-fat intake in `385aa8d5` (extracted from `blows1996` + `raven2020`; blows2015 unobtainable book; Raven et al. 2020 nomen-dubium ruling). Triage note misattributed the 2020 reassessment to Blows; actual authors are Raven et al.
 - #913 Lexovisaurus — full-fat intake in `4d2ac9f4` (extracted from `hulke1887` + `hoffstetter1956` + `hoffstetter1957` + `maidment2008`; nomen dubium per Maidment 2008 with Loricatosaurus split off; PBDB-seeded "L. phillipsi" was a wrong species attribution).
 
-## Per-letter coverage
+## #1854 synonym-target backfill working list (7 remaining)
+
+The umbrella issue [#1854](https://github.com/open-paleo/data/issues/1854)
+tracks synonyms whose **senior/target genus YAML does not yet
+exist in the dataset**. Adding the senior YAML unblocks the
+corresponding synonym entry (and usually a corresponding
+`Intake: Synonym` issue). Each item below identifies the target
+genus to create, the (preoccupied / replacement-name / junior /
+nomen-nudum / synonymy) relationship, the dependent intake
+issue(s) that get unblocked, and per-genus notes.
+
+The five "synonym types" we see here, with their suggested
+disposition:
+
+- **Preoccupied** — senior genus name itself is preoccupied
+  by another taxon; the dinosaur has a formal replacement
+  name. Create the replacement-genus YAML and add the
+  preoccupied name as a `type: preoccupied` synonym.
+- **Junior subjective/objective** — senior name is valid;
+  another name was applied to the same material and is
+  synonymized.
+- **Nomen nudum** — the alternate name was published without
+  description.
+- **Short-circuit-to-existing** — the target genus is already
+  in our dataset (possibly under a different combination); we
+  can add the dependent synonym to the existing YAML without
+  creating a new file.
+- **Out of scope** — the target genus is not a dinosaur.
+
+| # | Senior target | Dependent (issue) | Type | Approach |
+|---|---|---|---|---|
+| 1 | **Alwalkeria** | Walkeria → Alwalkeria (#1700) | preoccupied (Walkeria Fauvel 1869, a polychaete) | Full intake of Alwalkeria (issue #70 OPEN). Late Triassic basal dinosauromorph from the Maleri Formation, India. Then add Walkeria as `type: preoccupied` synonym. |
+| 2 | **Nedoceratops** (re-evaluate; #1091 CLOSED) | Diceratops → Nedoceratops (#433) | preoccupied (Diceratops Förster 1868, a hymenopteran) → renamed Nedoceratops | **REOPEN #1091 FIRST**. The 2026 closure folded Nedoceratops into Triceratops.yml as a synonym (per Olshevsky 2010), but the genus's validity is genuinely disputed — Farke 2011 argued it is valid and distinct from Triceratops; later workers split. Per the project's "closed target → re-open and re-evaluate" rule, this needs fresh review before deciding whether to (a) keep as Triceratops synonym and add Diceratops alongside, or (b) extract Nedoceratops to its own YAML and add Diceratops there. |
+| 3 | **Sinopeltosaurus** | Sinopelta → Sinopeltosaurus (#1461) | preoccupied (Sinopelta Vaurie 1965, a beetle) | Full intake of Sinopeltosaurus (issue #1462 OPEN). Then add Sinopelta as `type: preoccupied` synonym. |
+| 4 | **Epicampodon** *or* TBD | Epicampodon ↔ Ankistrodon | possible subjective per Olshevsky | Needs literature research. Both are Indian Triassic taxa; senior name not yet resolved in our scope. Lower priority — defer until clear consensus or skip if Wikipedia/PBDB both lack diagnostic content. |
+| 5 | *(Microcoelus → Saltasaurus already in dataset)* | Microcoelus → Microsaurops | junior objective per Olshevsky | **Verify-only**: our existing `Microcoelus` synonym in `genera/S/Saltasaurus.yml` may be the same name Olshevsky lists. Compare authors/years; if same, the line can be checked off as "already represented". If different, treat as a separate non-dinosaur problem. |
+| 6 | *(Ornithosuchus — non-dinosaur)* | Ornithosuchus → Dasygnathoides | possible subjective per Olshevsky | **Out of scope** — Ornithosuchus is a non-dinosaurian pseudosuchian/archosaur. Close the line in #1854 as out-of-scope; no work required in this repo. |
+| 7 | **Orthomerus** | Orthomerus → Protrachodon | nomen nudum per Olshevsky | Full intake of Orthomerus (issue #1163 OPEN). Late Cretaceous hadrosauroid (Maastricht type locality, Belgium/Netherlands). Then add Protrachodon as `type: nomen nudum` synonym. |
+| 8 | **Jeholornis** *or* **Shenzhouraptor** | Shenzhouraptor → Jeholornis | junior subjective per Olshevsky; may actually be the senior name | Active priority question. Both names erected in 2002. Jeholornis (Zhou & Zhang) and Shenzhouraptor (Ji et al.) were published almost simultaneously; usage varies. Decide which is senior, intake the senior under its proper YAML, and synonymize the junior. Affects basal-avialan taxonomy. |
+
+(Yanornis was already checked off in #1854 — Archaeovolans is a
+known forgery combining Yanornis material with Microraptor, so
+no entry needs to exist.)
+
+### Process rules for this bucket
+
+- **Closed-target rule**: If a target intake issue is currently
+  CLOSED, the closure must be re-opened and re-evaluated before
+  any synonym work proceeds. In particular, do not treat a
+  "closed-as-synonym" target as authoritative — disputed genera
+  may have been closed prematurely under prior Olshevsky-list
+  passes and may now warrant their own YAML. Only Nedoceratops
+  (#1091) is currently in this state, but apply the rule
+  uniformly if more closed targets surface as work continues.
+- **No-fabricated-citations / verify-against-corpus** still
+  apply per the standing memory rules. The Olshevsky list is a
+  pointer, not a peer-reviewed source; treat the relationships
+  as hypotheses to verify against primary literature where
+  available.
+- **Bucket-D-like discipline** for status decisions: prefer
+  `nomen dubium` / `disputed` / synonym status only when broad
+  community consensus supports it; per project policy don't
+  adopt first-publication interpretations alone.
+
+### After-compaction handoff context (post-session-2026-05-10)
+
+Session-level state for resuming this bucket cleanly across
+context-compaction:
+
+1. **Order of operations for a typical bucket-row intake**:
+   (a) check if the target intake issue is OPEN or CLOSED — reopen
+       if closed, per the rule above;
+   (b) if a senior-genus YAML is needed, run
+       `npm run intake-pick-next` is **not** the right entry
+       point — these aren't Bucket B; use
+       `Skill intake-genus <Genus>` with explicit genus name
+       (the skill supports Bucket D Cat-III stubs and similar
+       Cat-III-style Olshevsky/preoccupied-replacement intakes);
+   (c) add the dependent synonym entry to the new YAML in the
+       same commit (or to the existing target YAML in the
+       short-circuit case);
+   (d) update the #1854 comment with `gh api -X PATCH
+       /repos/open-paleo/data/issues/comments/<id>` — comment
+       IDs are visible via `gh api repos/open-paleo/data/issues/1854/comments`;
+   (e) close the dependent `Intake: Synonym` issue with a
+       comment referencing the commit SHA.
+
+2. **Memory rules likely to apply during this bucket**:
+   - `feedback_no_fabricated_citations` — many of these target
+     genera have very old (19th-c.) or very obscure describing
+     papers; do not invent titles/journals/DOIs.
+   - `feedback_wikipedia_fallback_pattern` — multiple Wikipedia-
+     fallback paths may be needed (Ankistrodon, Microsaurops,
+     possibly Shenzhouraptor depending on availability).
+   - `feedback_verify_against_corpus` — when extracting from
+     corpus papers, attribute claims correctly.
+   - `feedback_no_process_notes_in_references` — reference notes
+     should describe the paper's scientific role, not workflow
+     state.
+   - `feedback_no_new_warnings_without_signoff` — validation
+     count is currently at 10 warnings; do not let it grow
+     without explicit user approval (e.g. when adding new tree
+     clades, also add the matching clade file).
+   - `feedback_full_validation_output` — when validation fails,
+     look at the full output, not a narrow grep.
+   - `feedback_skill_approval_gates` — hard stop at every "Wait
+     for the user" in `intake-genus` skill.
+   - `feedback_bootstrap_key_check` — PBDB often returns the
+     wrong taxon homonym (Craspedodon was a bivalve, Alocodon
+     was a mammal, etc.); compare every bootstrap-proposed
+     citation key to triage notes before fetching.
+
+3. **Per-row supplementary intel** (beyond what's in the table):
+   - **Alwalkeria** (#70 OPEN): Late Triassic Maleri Formation,
+     India. Originally Walkeria maleriensis Chatterjee 1986;
+     Walkeria preoccupied by polychaete worm (Fauvel 1869);
+     renamed Alwalkeria by Chatterjee & Creisler 1994.
+     Probable Cat-III stub.
+   - **Sinopeltosaurus** (#1462 OPEN): The species was
+     originally Sinopelta minimi (or similar); Sinopelta is
+     preoccupied. Likely Chinese Cretaceous ankylosaurid.
+     Confirm with literature.
+   - **Orthomerus** (#1163 OPEN): Late Cretaceous hadrosauroid
+     from Maastricht type locality (Belgium/Netherlands).
+     Type species Orthomerus dolloi Seeley 1883; another
+     species (O. weberi from Crimea) later moved. Protrachodon
+     is a nomen-nudum predecessor.
+   - **Jeholornis vs Shenzhouraptor**: Both named within weeks
+     of each other in summer 2002. Zhou & Zhang 2002
+     (Jeholornis, Nature, July 2002) vs Ji et al. 2002
+     (Shenzhouraptor, Acta Geologica Sinica, July 2002).
+     Priority depends on actual publication dates. Most modern
+     workers use Jeholornis. **The user has explicitly noted
+     in the new bucket-rule that any CLOSED target should be
+     re-opened**, but neither has a closed intake issue here.
+   - **Ankistrodon/Epicampodon**: Indian Triassic
+     ?ornithischians/?archosaurs from the Maleri/Yerrapalli
+     Formations. Long history of contested affinities; some
+     authors don't consider them dinosaurs at all. **Lowest
+     priority** — defer until clear consensus or skip.
+   - **Microcoelus** (existing in Saltasaurus.yml): The
+     existing entry needs to be checked against the Olshevsky
+     "Microsaurops" relationship. Likely no work needed beyond
+     verification.
+   - **Ornithosuchus**: Out of scope (non-dinosaur). Just close
+     the #1854 line with a note.
+
+4. **Recommended starting order**:
+   - Easiest first: **Ornithosuchus** (close line in #1854, 0
+     work) → **Microcoelus** (verify existing entry, 5 min
+     work) → **Diceratops/Nedoceratops** (reopen #1091, decide
+     between short-circuit and full Nedoceratops intake) →
+     **Alwalkeria** (well-bounded Cat-III) → **Sinopeltosaurus**
+     (well-bounded Cat-III) → **Orthomerus** (well-bounded
+     Cat-III) → **Jeholornis/Shenzhouraptor** (priority
+     research) → **Ankistrodon/Epicampodon** (deferrable).
+
+5. **Validation baseline** at handoff: 0 errors, 10 warnings
+   (all 10 are pre-existing MDPI / Current Science publisher
+   flags — see `feedback_no_new_warnings_without_signoff`).
+
+6. **Recent session-level changes that might affect this work**:
+   - The `dispute:` field exists in the schema (added during
+     Bucket D Cat II work). Use it for active-validity-dispute
+     callouts rather than packing into description prose.
+   - Many bib-key disambiguations happened this session
+     (`thulborn1973/1975`, `novas2004a/b`, `seeley1875a/b`).
+     If any newly-needed key collides with one of those, follow
+     the existing disambiguation pattern.
+
+
 
 - A: 8 (Ahvaytum, Alocodon, Ankylosaurus, Arkharavia, Arstanosaurus, Asiamericana, Asiatosaurus, Aviatyrannis)
 - B: 9 (Bagaraatan, Bainoceratops, Bathygnathus, Bienosaurus, Bothriospondylus, Brachiosaurus, Brachypodosaurus, Brohisaurus, Brontotholus)
