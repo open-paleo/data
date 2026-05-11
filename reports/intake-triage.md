@@ -113,7 +113,7 @@ defines the appropriate intake discipline per category.
 | 622 | Gigantosaurus | Disputed | Kimmeridge Clay sauropod fragments; G. megalonyx is nomen dubium per Lydekker 1888; later re-use of the name by Fraas 1908 for African material led to Tornieria/Janenschia tangle. [done 8d45f14] |
 | 708 | Horshamosaurus | Manual | Weald Clay nodosaurid; 2020 reassessment by Blows determined dubious, not diagnosable beyond Nodosauridae. [done 385aa8d5 — note: 2020 reassessment was actually Raven et al., not Blows] |
 | 739 | Hypsirhophus | Disputed | Garden Park (Morrison) stegosaurid; Cope 1878; sometimes Stegosaurus synonym, sometimes nomen dubium, sometimes valid (Carpenter & Galton). Stub appropriate. [done bcff9ce] |
-| 913 | Lexovisaurus | Manual | Oxford Clay stegosaur; Maidment et al. 2008 declared L. durobrivensis nomen dubium and split better material as Loricatosaurus; later workers continue using Lexovisaurus as valid. Stub level. |
+| 913 | Lexovisaurus | Manual | Oxford Clay stegosaur; Maidment et al. 2008 declared L. durobrivensis nomen dubium and split better material as Loricatosaurus; later workers continue using Lexovisaurus as valid. Stub level. [done 4d2ac9f4] |
 | 1086 | Natronasaurus | Disputed | Self-published Ulansky 2014 e-publication is ICZN-invalid (no ISSN, not archived). Material is now Alcovasaurus (Galton & Carpenter 2016, exists in tree). The bare name "Natronasaurus" remains a nomen nudum that occasionally appears in popular sources. status: nomen nudum, point at Alcovasaurus. [done 38454c2 — listed as junior synonym in genera/A/Alcovasaurus.yml] |
 | 1152 | Ornithodesmus | Disputed | Wessex Fm sacrum; originally named for pterosaur material (now Istiodactylus); now considered a dromaeosaurid/unenlagiid based on the type sacrum (2007/2019). Validity disputed. [needs-info — Cat VI relabeled, intake held] |
 | 1215 | Parrosaurus | Disputed | Chronister Site Missouri; Neosaurus → Parrosaurus → Hypsibema (Baird & Horner 1979); 2018 some authors revived Parrosaurus as valid; others retain Hypsibema missouriensis. Hypsibema exists in tree but the genus revival is recent and not consensus. Stub per project policy. [needs-info — Cat VI relabeled, intake held] |
@@ -144,18 +144,11 @@ defines the appropriate intake discipline per category.
 | 595 | Galesaurus | Disputed | Cynodont therapsid (synapsid) from Karoo Basin, mistakenly classified as dinosaur by Owen 1859. [done — issue closed 2026-05-06 as out of scope] |
 | 1211 | Pareiasaurus | Manual | Pareiasaurid parareptile from Permian Karoo — not a dinosaur. |
 
-## Manual intervention working list (1 remaining)
+## Manual intervention working list — COMPLETED (11/11)
 
 Quick-reference index for genera labeled `Intake: Requires Manual
-Intervention`. These cross-cut Buckets D and (occasionally) F: most
-will land as Cat-III nomen dubium stubs, but a few may warrant
-fuller intake or split into separate genera. Bucket-D-style
-process: source paper(s) → decide synonymy / nomen dubium / full
-intake / split → close issue.
-
-| # | Genus | Proposed approach | Per-genus notes |
-|---|---|---|---|
-| 913 | Lexovisaurus | Decide: stub vs partial intake | Maidment et al. 2008 declared L. durobrivensis nomen dubium and split better material as Loricatosaurus; later workers continue using Lexovisaurus as valid. |
+Intervention`. All 11 are now resolved — see the "Already resolved
+this session" subsection below for the per-genus commit SHAs.
 
 Already resolved this session:
 - #449 Diplotomodon — flipped to `status: nomen dubium` in `edd42852`.
@@ -168,6 +161,7 @@ Already resolved this session:
 - #396 Cryptosaurus — Cat-III stub in `6c1b33bf` (extracted from `seeley1875b` + `seeley1869b`; seeley1875 disambiguated; Cryptodraco added as junior objective synonym, also resolving #394 and the #1854 Cryptodraco line).
 - #444 Dinodocus — full-fat intake in `ecc2a518` (extracted from `owen1851` + `owen1884` + `woodward1908` + `upchurch2004`; Wikipedia para-1 description; long historical taxonomic trail captured in reference notes).
 - #708 Horshamosaurus — full-fat intake in `385aa8d5` (extracted from `blows1996` + `raven2020`; blows2015 unobtainable book; Raven et al. 2020 nomen-dubium ruling). Triage note misattributed the 2020 reassessment to Blows; actual authors are Raven et al.
+- #913 Lexovisaurus — full-fat intake in `4d2ac9f4` (extracted from `hulke1887` + `hoffstetter1956` + `hoffstetter1957` + `maidment2008`; nomen dubium per Maidment 2008 with Loricatosaurus split off; PBDB-seeded "L. phillipsi" was a wrong species attribution).
 
 ## Per-letter coverage
 
