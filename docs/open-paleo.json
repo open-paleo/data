@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-11T05:23:50.521Z",
+    "built_at": "2026-05-11T06:16:17.835Z",
     "clade_count": 250,
-    "genus_count": 1374,
+    "genus_count": 1375,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
     "version": "2026.05"
@@ -13665,12 +13665,12 @@
       ],
       "synonyms": [
         {
-          "name": "Walkeria Chatterjee, 1987",
+          "name": "Walkeria",
           "type": "preoccupied",
           "reason": "Original generic combination, preoccupied by Walkeria Fleming, 1823 (Bryozoa). Renamed Alwalkeria by Chatterjee & Creisler (1994)."
         },
         {
-          "name": "Alickmeron Sen & Ray, 2025",
+          "name": "Alickmeron",
           "type": "junior objective",
           "reason": "Erected by Sen & Ray (2025) for the partial femora of ISI R 306 with proposed lagerpetid affinities, but Alickmeron shares the same type species (Walkeria maleriensis Chatterjee, 1987) and same restricted holotype (ISI R 306b) as Alwalkeria; objective junior synonym under ICZN Art. 68.3, with Alwalkeria having priority (McDavid, Marchant & Reid 2026)."
         }
@@ -101393,12 +101393,12 @@
       ],
       "synonyms": [
         {
-          "name": "Diceratops Lull, 1905",
+          "name": "Diceratops",
           "type": "preoccupied",
           "reason": "Original generic combination, preoccupied by Diceratops Förster, 1869 (a hymenopteran wasp in Ichneumonidae). The dinosaur was renamed Nedoceratops by Ukrainsky (2007)."
         },
         {
-          "name": "Diceratus Mateus, 2008",
+          "name": "Diceratus",
           "type": "junior objective",
           "reason": "Independent replacement name proposed by Mateus (2008) for the preoccupied Diceratops Lull, 1905, but Ukrainsky (2007) had already published Nedoceratops with priority. Diceratus is therefore an unused junior objective synonym of Nedoceratops."
         }
@@ -132447,6 +132447,126 @@
         "Saurischia",
         "Theropoda",
         "Tetanurae"
+      ]
+    },
+    "Sinopeltosaurus": {
+      "genus": "Sinopeltosaurus",
+      "parent": "Thyreophora",
+      "etymology": "From Greek 'sino-' (Chinese, after the Sinae) and 'peltē' (small shield) plus 'sauros' (lizard); meaning approximately 'Chinese small-shielded lizard', a replacement name for the preoccupied Sinopelta Ulansky 2014a.",
+      "description": "Sinopeltosaurus is a dubious genus of extinct thyreophoran ornithischian dinosaur described by Roman Ulansky for the articulated ankle specimen FMNH CUP 2338 from the Lower Jurassic Lufeng Formation of Yunnan, China. The type and only species is S. minimus. The specimen was originally described by Irmis & Knoll (2008) as an indeterminate basal ornithischian and was later identified as a nomen dubium by Galton & Carpenter (2016), who listed it as Ornithischia indet., possibly Thyreophora indet. Ulansky's companion paper used the variant name 'Sinopelta minima' for the same animal; Galton & Carpenter (2016) acted as first revisers under the ICZN and selected Sinopeltosaurus minimus as the official combination.\n",
+      "diet": "herbivore",
+      "locomotion": "bipedal",
+      "paleoenvironment": [
+        "fluvial"
+      ],
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "374231"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q24025946"
+        }
+      ],
+      "synonyms": [
+        {
+          "name": "Sinopelta",
+          "type": "preoccupied",
+          "reason": "Ulansky originally proposed Sinopelta minima for the FMNH CUP 2338 material in his companion DINOLOGIA paper (Ulansky 2014a), but the name Sinopelta was preoccupied by Sinopelta Xue & Zhang, 1996 (Diptera). Ulansky (2014b) coined Sinopeltosaurus as the replacement name in a second DINOLOGIA paper the same year. Both Ulansky 2014 papers are treated as nomena nuda by Galton & Carpenter (2016)."
+        }
+      ],
+      "species": [
+        {
+          "name": "Sinopeltosaurus minimus",
+          "etymology": "From Latin 'minimus' (smallest), in reference to the small overall size of the type specimen.",
+          "status": "nomen nudum",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Jurassic"
+            ],
+            "stage": [
+              "Sinemurian"
+            ],
+            "from_ma": 199.3,
+            "to_ma": 192.9
+          },
+          "location": {
+            "country": "CN",
+            "region": "Hei Koa Peng, Yunnan Province",
+            "formation": "Lower Lufeng Formation (Zhangjiawa Member)"
+          },
+          "holotype": {
+            "specimen_id": [
+              "FMNH CUP 2338"
+            ],
+            "specimen_type": "holotype",
+            "institution": "Field Museum of Natural History (Catholic University of Peking collection)",
+            "material": "Articulated left tarsus comprising the distal tibia, distal fibula, astragalus, calcaneum, distal tarsals III and IV, metatarsals II–IV, and several partial phalanges (Irmis & Knoll 2008)."
+          },
+          "described": 2014,
+          "authors": "Ulansky",
+          "described_in": "ulansky2014b"
+        }
+      ],
+      "references": [
+        {
+          "id": "irmis2008",
+          "authors": "Irmis, R. B.; Knoll, F.",
+          "year": 2008,
+          "title": "New ornithischian dinosaur material from the Lower Jurassic Lufeng Formation of China",
+          "journal": "Neues Jahrbuch für Geologie und Paläontologie - Abhandlungen",
+          "volume": "247",
+          "issue": "1",
+          "pages": "117-128",
+          "doi": "10.1127/0077-7749/2008/0247-0117",
+          "url": "http://dx.doi.org/10.1127/0077-7749/2008/0247-0117",
+          "notes": "Original peer-reviewed description of FMNH CUP 2338 as Ornithischia indet., from the Lower Jurassic Lufeng Formation; predates Ulansky's informal naming."
+        },
+        {
+          "id": "ulansky2014a",
+          "authors": "Ulansky, R. E.",
+          "year": 2014,
+          "title": "Dinosaurs Classification. Basal Thyreophora & Stegosauria",
+          "journal": "Dinologia",
+          "pages": "1-8",
+          "notes": "Informal DINOLOGIA-series classification table in which Ulansky proposed the (later preoccupied) name Sinopelta minima for FMNH CUP 2338. Treated as nomen nudum by Galton & Carpenter (2016)."
+        },
+        {
+          "id": "ulansky2014b",
+          "authors": "Ulansky, R. E.",
+          "year": 2014,
+          "title": "Sinopeltosaurus minimus",
+          "journal": "Dinologia",
+          "notes": "Informal DINOLOGIA-series paper in which Ulansky replaces the preoccupied Sinopelta with Sinopeltosaurus. Treated as nomen nudum by Galton & Carpenter (2016) on ICZN Art. 13 grounds."
+        },
+        {
+          "id": "galton2016",
+          "authors": "Galton, P. M.; Carpenter, K.",
+          "year": 2016,
+          "title": "The plated dinosaur Stegosaurus longispinus Gilmore, 1914 (Dinosauria: Ornithischia; Upper Jurassic, western USA), type species of Alcovasaurus n. gen.",
+          "journal": "Neues Jahrbuch für Geologie und Paläontologie - Abhandlungen",
+          "volume": "279",
+          "issue": "2",
+          "pages": "185-208",
+          "doi": "10.1127/njgpa/2016/0551",
+          "url": "http://dx.doi.org/10.1127/njgpa/2016/0551",
+          "notes": "Declares Ulansky's 2014 Sinopelta and Sinopeltosaurus nomena nuda (ICZN Art. 13 + venue) and nomina dubia (no autapomorphies); acts as first reviser selecting Sinopeltosaurus."
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Thyreophora"
       ]
     },
     "Sinornithoides": {
