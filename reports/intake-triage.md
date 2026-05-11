@@ -103,7 +103,7 @@ defines the appropriate intake discipline per category.
 | 384 | Craspedodon | Manual | Lonzée Member ornithischian teeth; 2007 Godefroit & Lambert reidentified as European neoceratopsian; Ajkaceratops describers proposed hadrosauroid alternative. Validity uncertain. [done e52be53f] |
 | 389 | Crichtonsaurus | Manual | Sunjiawan Fm ankylosaurid; C. bohlini holotype non-diagnostic per Arbour 2014 — nomen dubium. C. benxiensis split off as Crichtonpelta in 2015. [done ad98e6fa] |
 | 396 | Cryptosaurus | Manual | Ampthill Clay ankylosaurian femur; C. eumerus nomen dubium per Galton; not to be confused with replacement name Cryptodraco. [done 6c1b33bf] |
-| 444 | Dinodocus | Manual | Lower Greensand Kent sauropod fragments; Owen 1884; once synonymised with Pelorosaurus; Upchurch et al. 2004 declared nomen dubium. |
+| 444 | Dinodocus | Manual | Lower Greensand Kent sauropod fragments; Owen 1884; once synonymised with Pelorosaurus; Upchurch et al. 2004 declared nomen dubium. [done ecc2a518] |
 | 449 | Diplotomodon | Manual | Maastrichtian NJ tooth (Navesink/Hornerstown); various interpretations (plesiosaur, fish, mosasaur, theropod incl. Dryptosaurus); nomen dubium. [done edd42852] |
 | 475 | Dryptosauroides | Disputed | Lameta Fm caudal vertebrae; possibly abelisauroid; indistinguishable from other Lameta theropods per modern reviews. [done 93526c2] |
 | 511 | Embasaurus | Disputed | Neocomian Sands Kazakhstan; two vertebrae; speculatively basal tyrannosauroid or megalosaurid; nomen dubium. [done e0c7b93] |
@@ -144,7 +144,7 @@ defines the appropriate intake discipline per category.
 | 595 | Galesaurus | Disputed | Cynodont therapsid (synapsid) from Karoo Basin, mistakenly classified as dinosaur by Owen 1859. [done — issue closed 2026-05-06 as out of scope] |
 | 1211 | Pareiasaurus | Manual | Pareiasaurid parareptile from Permian Karoo — not a dinosaur. |
 
-## Manual intervention working list (3 remaining)
+## Manual intervention working list (2 remaining)
 
 Quick-reference index for genera labeled `Intake: Requires Manual
 Intervention`. These cross-cut Buckets D and (occasionally) F: most
@@ -155,7 +155,6 @@ intake / split → close issue.
 
 | # | Genus | Proposed approach | Per-genus notes |
 |---|---|---|---|
-| 444 | Dinodocus | Cat-III nomen dubium stub | Lower Greensand Kent sauropod fragments; Owen 1884; Upchurch et al. 2004 declared nomen dubium. |
 | 708 | Horshamosaurus | Cat-III nomen dubium stub | Weald Clay nodosaurid; Blows 2020 reassessment determined dubious, not diagnosable beyond Nodosauridae. |
 | 913 | Lexovisaurus | Decide: stub vs partial intake | Maidment et al. 2008 declared L. durobrivensis nomen dubium and split better material as Loricatosaurus; later workers continue using Lexovisaurus as valid. |
 
@@ -168,6 +167,7 @@ Already resolved this session:
 - #384 Craspedodon — full-fat intake in `e52be53f` (Belgian tooth taxon; extracted from `dollo1883` + `godefroit2007` + `ősi2010a`; PBDB had returned the Triassic bivalve homonym).
 - #389 Crichtonsaurus — Cat-III stub in `ad98e6fa` (extracted from `dong2002` + `arbour2015`; nomen dubium per Arbour & Currie 2015; C. benxiensis already split off as Crichtonpelta).
 - #396 Cryptosaurus — Cat-III stub in `6c1b33bf` (extracted from `seeley1875b` + `seeley1869b`; seeley1875 disambiguated; Cryptodraco added as junior objective synonym, also resolving #394 and the #1854 Cryptodraco line).
+- #444 Dinodocus — full-fat intake in `ecc2a518` (extracted from `owen1851` + `owen1884` + `woodward1908` + `upchurch2004`; Wikipedia para-1 description; long historical taxonomic trail captured in reference notes).
 
 ## Per-letter coverage
 
