@@ -42,10 +42,6 @@ synonyms:
     type: junior objective
     reason: Coined by Nopcsa (1903) as a replacement when Limnosaurus was found to
       be preoccupied; ultimately superseded by Telmatosaurus.
-  - name: Orthomerus
-    type: possible subjective
-    reason: Possible junior subjective synonym of Telmatosaurus; identification is
-      tentative. Per Olshevsky's Dinosaur Genera List.
 species:
   - name: Telmatosaurus transsylvanicus
     etymology: "Named for Transylvania, the region of Romania where the holotype
@@ -78,7 +74,6 @@ species:
         max: 600
     described: 1903
     authors: Nopcsa
-
     holotype:
       specimen_id: [ BMNH R.3386 ]
       specimen_type: holotype
@@ -86,6 +81,17 @@ species:
       material: Almost complete skull (49 cm length) with mandible, fragments of upper
         and lower jaws from smaller individuals, basis cranii fragment
     described_in: nopcsa1903
+    synonyms:
+      - name: Orthomerus transsylvanicus
+        type: reassigned
+        reason: Nopcsa (1915) transferred Telmatosaurus
+          transsylvanicus into the pre-existing genus Orthomerus
+          Seeley, 1883 as Orthomerus transsylvanicus, an
+          assignment followed by Romer in his reptile reviews
+          but rejected by modern workers. The species-level
+          reassignment applies to T. transsylvanicus only — the
+          genus Orthomerus remains a separate valid (though
+          dubious) name (per Olshevsky 1991, Madzia et al. 2020).
 references:
   - id: nopcsa1900
     authors: Nopcsa, F.
