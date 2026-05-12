@@ -1668,6 +1668,200 @@ for (const [filePath, doc] of allParsed)
     }
 }
 
+// 25. Citation format (paleo-journal hybrid: "Smith (1999)" / "(Smith, 1999)" / "and" not "&")
+//
+// Catches the two most common deviations from project policy:
+//   - "Author & Author" between capitalized names (use "and")
+//   - "(Author Year)" no-comma single-citation parenthetical (use "(Author, Year)")
+// Scoped to the same editorial fields as the American English check.
+startCheck("Citation format");
+
+const ampersandPattern = /\b[A-Z][a-z]+\s*&\s*[A-Z][\p{L}]+/gu;
+const noCommaCitationPattern = /\(([A-Z][a-z]+(?:-[A-Z][a-z]+)?(?:\s+(?:and\s+[A-Z][a-z]+(?:-[A-Z][a-z]+)?|et al\.))?\s+\d{4}[a-z]?)\)/g;
+const bareYearPattern = /\b([A-Z][a-z]+(?:\s+(?:and|et al\.)\s+[A-Z][a-z]+)?) ([12]\d{3}[a-z]?)\b(?![)\d,;])/g;
+
+/**
+ * Capitalized words that frequently precede a four-digit number
+ * without being an author surname. Skipping them keeps the bare-year
+ * citation check usefully signal-heavy.
+ */
+const bareYearDenylist = new Set([
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December",
+    "In", "On", "By", "From", "Since", "After", "Before", "Until",
+    "Opinion", "Case", "Article", "Recommendation",
+    "Note", "Figure", "Table", "Plate", "Volume", "Page", "Section", "Chapter",
+]);
+
+/**
+ * Scans an editorial field for citation-format violations and emits
+ * one warning per distinct issue found.
+ *
+ * @param filePath - Absolute path to the YAML file under inspection.
+ * @param fieldPath - Dotted path describing the field's location.
+ * @param text - The field's string value.
+ */
+function checkCitationFormat(filePath: string, fieldPath: string, text: string): void
+{
+    const ampersandMatches = text.match(ampersandPattern);
+
+    if (ampersandMatches !== null && ampersandMatches.length > 0)
+    {
+        const unique = [...new Set(ampersandMatches)];
+
+        for (const match of unique)
+        {
+            checkWarning(
+                "Citation format",
+                filePath,
+                `${fieldPath}: "${match}" — use "and" between author names, not "&" (project policy)`);
+        }
+    }
+
+    const noCommaMatches = text.match(noCommaCitationPattern);
+
+    if (noCommaMatches !== null && noCommaMatches.length > 0)
+    {
+        const unique = [...new Set(noCommaMatches)];
+
+        for (const match of unique)
+        {
+            checkWarning(
+                "Citation format",
+                filePath,
+                `${fieldPath}: "${match}" — single-citation parenthetical needs a comma before the year (project policy)`);
+        }
+    }
+
+    const bareYearMatches = [...text.matchAll(bareYearPattern)];
+    const reportedBare = new Set<string>();
+
+    for (const match of bareYearMatches)
+    {
+        const head = match[1].split(/\s+/)[0];
+
+        if (bareYearDenylist.has(head))
+        {
+            continue;
+        }
+
+        const full = match[0];
+
+        if (reportedBare.has(full))
+        {
+            continue;
+        }
+
+        reportedBare.add(full);
+        checkWarning(
+            "Citation format",
+            filePath,
+            `${fieldPath}: "${full}" — bare "Author Year" needs parens around the year (narrative: "Author (Year)") or a comma before it (ICZN authority: "Author, Year") (project policy)`);
+    }
+}
+
+for (const [filePath, doc] of allParsed)
+{
+    if (!doc)
+    {
+        continue;
+    }
+
+    if (typeof doc.description === "string")
+    {
+        checkCitationFormat(filePath, "description", doc.description);
+    }
+
+    const genus = doc as GenusData;
+
+    if (typeof genus.etymology === "string")
+    {
+        checkCitationFormat(filePath, "etymology", genus.etymology);
+    }
+
+    if (typeof genus.dispute === "string")
+    {
+        checkCitationFormat(filePath, "dispute", genus.dispute);
+    }
+
+    if (Array.isArray(genus.diagnostic_features))
+    {
+        for (let index = 0; index < genus.diagnostic_features.length; index += 1)
+        {
+            const feature = genus.diagnostic_features[index];
+
+            if (typeof feature === "string")
+            {
+                checkCitationFormat(filePath, `diagnostic_features[${index}]`, feature);
+            }
+        }
+    }
+
+    if (Array.isArray(genus.synonyms))
+    {
+        for (let index = 0; index < genus.synonyms.length; index += 1)
+        {
+            const synonym = genus.synonyms[index];
+
+            if (synonym && typeof synonym.reason === "string")
+            {
+                checkCitationFormat(filePath, `synonyms[${index}].reason`, synonym.reason);
+            }
+        }
+    }
+
+    if (Array.isArray(genus.species))
+    {
+        for (let speciesIndex = 0; speciesIndex < genus.species.length; speciesIndex += 1)
+        {
+            const species = genus.species[speciesIndex];
+
+            if (!species)
+            {
+                continue;
+            }
+
+            const speciesLabel = `species[${speciesIndex}]`;
+
+            if (typeof species.etymology === "string")
+            {
+                checkCitationFormat(filePath, `${speciesLabel}.etymology`, species.etymology);
+            }
+
+            if (species.holotype && typeof species.holotype.material === "string")
+            {
+                checkCitationFormat(filePath, `${speciesLabel}.holotype.material`, species.holotype.material);
+            }
+
+            if (Array.isArray(species.synonyms))
+            {
+                for (let synonymIndex = 0; synonymIndex < species.synonyms.length; synonymIndex += 1)
+                {
+                    const synonym = species.synonyms[synonymIndex];
+
+                    if (synonym && typeof synonym.reason === "string")
+                    {
+                        checkCitationFormat(filePath, `${speciesLabel}.synonyms[${synonymIndex}].reason`, synonym.reason);
+                    }
+                }
+            }
+        }
+    }
+
+    if (Array.isArray(doc.references))
+    {
+        for (let index = 0; index < doc.references.length; index += 1)
+        {
+            const reference = doc.references[index];
+
+            if (reference && typeof reference.notes === "string")
+            {
+                checkCitationFormat(filePath, `references[${index}].notes`, reference.notes);
+            }
+        }
+    }
+}
+
 // Output
 
 console.log("Validating Open Paleo data...\n");

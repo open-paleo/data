@@ -88,6 +88,33 @@ original proposal.
   metadata fields.
 - **English only.** All text content (descriptions, notes, commit messages, issues) should be in English for consistency.
 
+## Inline Reference Format
+
+When citing papers inside editorial prose (`description`, `etymology`,
+`dispute`, `diagnostic_features`, `holotype.material`,
+`synonyms[].reason`, `references[].notes`), use the paleo-journal
+hybrid form:
+
+- **Narrative**, when the author is the grammatical subject:
+  - `Smith (1999)` — single author
+  - `Smith and Jones (1999)` — two authors
+  - `Smith et al. (1999)` — three or more
+- **Parenthetical**, when the citation is an aside:
+  - `(Smith, 1999)` — comma before the year
+  - `(Smith and Jones, 1999)`
+  - `(Smith et al., 1999)`
+- Use `and` (not `&`) between author names in both forms.
+- For lists inside a single set of parentheses, separate with `;` and
+  drop the inner commas: `(Smith 1999; Jones 2000)`.
+- Give authority+year only on first mention of each binomial in a
+  description; subsequent mentions use the name alone.
+- Binomial authority follows ICZN convention: `Genus species Author,
+  Year` for the original combination, `Genus species (Author, Year)`
+  when the species has been moved from its original genus.
+
+The `Citation format` validation check flags `&` between capitalized
+names and `(Author Year)` no-comma single-citation parentheticals.
+
 ## Institution Registry
 
 Every `holotype.institution` value must be a key in
