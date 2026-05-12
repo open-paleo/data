@@ -1325,6 +1325,349 @@ for (const [filePath, doc] of genusParsed)
     }
 }
 
+// 24. American English
+//
+// Surfaces British-English spellings in editorial prose fields so they
+// can be converted to American English (project policy). Skipped:
+// reference titles/journals/publishers/authors (proper-noun metadata
+// preserved verbatim) and species/synonym names (taxon authority).
+startCheck("American English");
+
+/**
+ * Curated map of British spellings to their American equivalents.
+ * Each entry is a word-boundary, case-insensitive regex paired with
+ * the suggested American replacement. Entries are deliberately
+ * conservative: only words that are unambiguously British (no
+ * homographs with valid American words — "analyses" the noun plural
+ * of "analysis" is omitted on purpose).
+ */
+const britishToAmerican: Array<[RegExp, string]> = [
+    [/\bcolour\b/gi, "color"],
+    [/\bcolours\b/gi, "colors"],
+    [/\bcoloured\b/gi, "colored"],
+    [/\bcolouring\b/gi, "coloring"],
+    [/\bcolouration\b/gi, "coloration"],
+    [/\bcolourful\b/gi, "colorful"],
+    [/\barmour\b/gi, "armor"],
+    [/\barmours\b/gi, "armors"],
+    [/\barmoured\b/gi, "armored"],
+    [/\bbehaviour\b/gi, "behavior"],
+    [/\bbehaviours\b/gi, "behaviors"],
+    [/\bbehavioural\b/gi, "behavioral"],
+    [/\bfavour\b/gi, "favor"],
+    [/\bfavours\b/gi, "favors"],
+    [/\bfavoured\b/gi, "favored"],
+    [/\bfavouring\b/gi, "favoring"],
+    [/\bfavourite\b/gi, "favorite"],
+    [/\bhonour\b/gi, "honor"],
+    [/\bhonours\b/gi, "honors"],
+    [/\bhonoured\b/gi, "honored"],
+    [/\bhonouring\b/gi, "honoring"],
+    [/\bhonourable\b/gi, "honorable"],
+    [/\bharbour\b/gi, "harbor"],
+    [/\bharbours\b/gi, "harbors"],
+    [/\bharboured\b/gi, "harbored"],
+    [/\blabour\b/gi, "labor"],
+    [/\blabours\b/gi, "labors"],
+    [/\blaboured\b/gi, "labored"],
+    [/\bneighbour\b/gi, "neighbor"],
+    [/\bneighbours\b/gi, "neighbors"],
+    [/\bneighbouring\b/gi, "neighboring"],
+    [/\bneighbourhood\b/gi, "neighborhood"],
+    [/\brumour\b/gi, "rumor"],
+    [/\bvigour\b/gi, "vigor"],
+    [/\bsavour\b/gi, "savor"],
+    [/\bcentre\b/gi, "center"],
+    [/\bcentres\b/gi, "centers"],
+    [/\bcentred\b/gi, "centered"],
+    [/\bcentring\b/gi, "centering"],
+    [/\btheatre\b/gi, "theater"],
+    [/\bspectre\b/gi, "specter"],
+    [/\bsceptre\b/gi, "scepter"],
+    [/\bmetre\b/gi, "meter"],
+    [/\bmetres\b/gi, "meters"],
+    [/\bkilometre\b/gi, "kilometer"],
+    [/\bkilometres\b/gi, "kilometers"],
+    [/\bmillimetre\b/gi, "millimeter"],
+    [/\bmillimetres\b/gi, "millimeters"],
+    [/\bcentimetre\b/gi, "centimeter"],
+    [/\bcentimetres\b/gi, "centimeters"],
+    [/\bfibre\b/gi, "fiber"],
+    [/\bfibres\b/gi, "fibers"],
+    [/\bmanoeuvre\b/gi, "maneuver"],
+    [/\bmanoeuvres\b/gi, "maneuvers"],
+    [/\bmanoeuvred\b/gi, "maneuvered"],
+    [/\bmanoeuvring\b/gi, "maneuvering"],
+    [/\bdefence\b/gi, "defense"],
+    [/\bdefences\b/gi, "defenses"],
+    [/\boffence\b/gi, "offense"],
+    [/\boffences\b/gi, "offenses"],
+    [/\bpretence\b/gi, "pretense"],
+    [/\blicence\b/gi, "license"],
+    [/\blicences\b/gi, "licenses"],
+    [/\blicenced\b/gi, "licensed"],
+    [/\bcatalogue\b/gi, "catalog"],
+    [/\bcatalogues\b/gi, "catalogs"],
+    [/\bcatalogued\b/gi, "cataloged"],
+    [/\bcataloguing\b/gi, "cataloging"],
+    [/\bdialogue\b/gi, "dialog"],
+    [/\bdialogues\b/gi, "dialogs"],
+    [/\banalyse\b/gi, "analyze"],
+    [/\banalysed\b/gi, "analyzed"],
+    [/\banalysing\b/gi, "analyzing"],
+    [/\borganise\b/gi, "organize"],
+    [/\borganised\b/gi, "organized"],
+    [/\borganises\b/gi, "organizes"],
+    [/\borganising\b/gi, "organizing"],
+    [/\borganisation\b/gi, "organization"],
+    [/\borganisations\b/gi, "organizations"],
+    [/\borganisational\b/gi, "organizational"],
+    [/\bsynthesise\b/gi, "synthesize"],
+    [/\bsynthesised\b/gi, "synthesized"],
+    [/\bsynthesising\b/gi, "synthesizing"],
+    [/\bsynthesises\b/gi, "synthesizes"],
+    [/\brecognise\b/gi, "recognize"],
+    [/\brecognised\b/gi, "recognized"],
+    [/\brecognises\b/gi, "recognizes"],
+    [/\brecognising\b/gi, "recognizing"],
+    [/\brecognisable\b/gi, "recognizable"],
+    [/\bspecialise\b/gi, "specialize"],
+    [/\bspecialised\b/gi, "specialized"],
+    [/\bspecialises\b/gi, "specializes"],
+    [/\bspecialising\b/gi, "specializing"],
+    [/\bspecialisation\b/gi, "specialization"],
+    [/\bcharacterise\b/gi, "characterize"],
+    [/\bcharacterised\b/gi, "characterized"],
+    [/\bcharacterises\b/gi, "characterizes"],
+    [/\bcharacterising\b/gi, "characterizing"],
+    [/\bemphasise\b/gi, "emphasize"],
+    [/\bemphasised\b/gi, "emphasized"],
+    [/\bemphasises\b/gi, "emphasizes"],
+    [/\bemphasising\b/gi, "emphasizing"],
+    [/\brealise\b/gi, "realize"],
+    [/\brealised\b/gi, "realized"],
+    [/\brealises\b/gi, "realizes"],
+    [/\brealising\b/gi, "realizing"],
+    [/\brealisation\b/gi, "realization"],
+    [/\butilise\b/gi, "utilize"],
+    [/\butilised\b/gi, "utilized"],
+    [/\butilises\b/gi, "utilizes"],
+    [/\butilising\b/gi, "utilizing"],
+    [/\butilisation\b/gi, "utilization"],
+    [/\bcivilisation\b/gi, "civilization"],
+    [/\bcivilisations\b/gi, "civilizations"],
+    [/\bcolonisation\b/gi, "colonization"],
+    [/\bhypothesise\b/gi, "hypothesize"],
+    [/\bhypothesised\b/gi, "hypothesized"],
+    [/\bprioritise\b/gi, "prioritize"],
+    [/\bprioritised\b/gi, "prioritized"],
+    [/\bwhilst\b/gi, "while"],
+    [/\bamongst\b/gi, "among"],
+    [/\btravelled\b/gi, "traveled"],
+    [/\btravelling\b/gi, "traveling"],
+    [/\btraveller\b/gi, "traveler"],
+    [/\btravellers\b/gi, "travelers"],
+    [/\bmodelled\b/gi, "modeled"],
+    [/\bmodelling\b/gi, "modeling"],
+    [/\blabelled\b/gi, "labeled"],
+    [/\blabelling\b/gi, "labeling"],
+    [/\bsignalled\b/gi, "signaled"],
+    [/\bsignalling\b/gi, "signaling"],
+    [/\bcancelled\b/gi, "canceled"],
+    [/\bcancelling\b/gi, "canceling"],
+    [/\bfuelled\b/gi, "fueled"],
+    [/\bfuelling\b/gi, "fueling"],
+    [/\bfocussed\b/gi, "focused"],
+    [/\bfocussing\b/gi, "focusing"],
+    [/\bsulphur\b/gi, "sulfur"],
+    [/\bsulphuric\b/gi, "sulfuric"],
+    [/\baluminium\b/gi, "aluminum"],
+    [/\bmoulting\b/gi, "molting"],
+    [/\bmoulted\b/gi, "molted"],
+    [/\bmoult\b/gi, "molt"],
+    [/\bmoults\b/gi, "molts"],
+    [/\bmould\b/gi, "mold"],
+    [/\bmoulds\b/gi, "molds"],
+    [/\bmoulded\b/gi, "molded"],
+    [/\bmoulding\b/gi, "molding"],
+    [/\bpalaeontology\b/gi, "paleontology"],
+    [/\bpalaeontologist\b/gi, "paleontologist"],
+    [/\bpalaeontologists\b/gi, "paleontologists"],
+    [/\bpalaeontological\b/gi, "paleontological"],
+    [/\bpalaeozoic\b/gi, "paleozoic"],
+    [/\bpalaeocene\b/gi, "paleocene"],
+    [/\bhaematology\b/gi, "hematology"],
+    [/\boesophagus\b/gi, "esophagus"],
+    [/\bfoetus\b/gi, "fetus"],
+    [/\bfoetal\b/gi, "fetal"],
+    [/\bmediaeval\b/gi, "medieval"],
+    [/\bencyclopaedia\b/gi, "encyclopedia"],
+    [/\borthopaedic\b/gi, "orthopedic"],
+];
+
+/**
+ * Proper-noun phrases that include a British spelling but are
+ * preserved verbatim because they are the official name of an
+ * institution, collection, or other entity. Matches are removed
+ * from the field text before the British-spelling regexes run,
+ * so the embedded British word does not trigger a warning.
+ */
+const protectedProperNouns: Array<RegExp> = [
+    /Royal Tyrrell Museum of Palaeontology/g,
+    /Australian Opal Centre/g,
+    /Palaeontological collection, Department of Mineral/g,
+];
+
+/**
+ * Scans a single string field for British-English spellings and
+ * emits one warning per distinct word found.
+ *
+ * @param filePath - Absolute path to the YAML file under inspection.
+ * @param fieldPath - Dotted path describing the field's location.
+ * @param text - The field's string value.
+ */
+function checkAmericanEnglish(filePath: string, fieldPath: string, text: string): void
+{
+    let scrubbed = text;
+
+    for (const phrase of protectedProperNouns)
+    {
+        scrubbed = scrubbed.replace(phrase, "");
+    }
+
+    const seen = new Set<string>();
+
+    for (const [pattern, replacement] of britishToAmerican)
+    {
+        pattern.lastIndex = 0;
+        const matches = scrubbed.match(pattern);
+
+        if (matches === null || matches.length === 0)
+        {
+            continue;
+        }
+
+        for (const match of matches)
+        {
+            const lowered = match.toLowerCase();
+            const key = `${lowered}|${replacement}`;
+
+            if (seen.has(key))
+            {
+                continue;
+            }
+
+            seen.add(key);
+            checkWarning(
+                "American English",
+                filePath,
+                `${fieldPath}: "${match}" → use "${replacement}" (American English; project policy)`);
+        }
+    }
+}
+
+for (const [filePath, doc] of allParsed)
+{
+    if (!doc)
+    {
+        continue;
+    }
+
+    if (typeof doc.description === "string")
+    {
+        checkAmericanEnglish(filePath, "description", doc.description);
+    }
+
+    const genus = doc as GenusData;
+
+    if (typeof genus.etymology === "string")
+    {
+        checkAmericanEnglish(filePath, "etymology", genus.etymology);
+    }
+
+    if (typeof genus.dispute === "string")
+    {
+        checkAmericanEnglish(filePath, "dispute", genus.dispute);
+    }
+
+    if (Array.isArray(genus.diagnostic_features))
+    {
+        for (let index = 0; index < genus.diagnostic_features.length; index += 1)
+        {
+            const feature = genus.diagnostic_features[index];
+
+            if (typeof feature === "string")
+            {
+                checkAmericanEnglish(filePath, `diagnostic_features[${index}]`, feature);
+            }
+        }
+    }
+
+    if (Array.isArray(genus.synonyms))
+    {
+        for (let index = 0; index < genus.synonyms.length; index += 1)
+        {
+            const synonym = genus.synonyms[index];
+
+            if (synonym && typeof synonym.reason === "string")
+            {
+                checkAmericanEnglish(filePath, `synonyms[${index}].reason`, synonym.reason);
+            }
+        }
+    }
+
+    if (Array.isArray(genus.species))
+    {
+        for (let speciesIndex = 0; speciesIndex < genus.species.length; speciesIndex += 1)
+        {
+            const species = genus.species[speciesIndex];
+
+            if (!species)
+            {
+                continue;
+            }
+
+            const speciesLabel = `species[${speciesIndex}]`;
+
+            if (typeof species.etymology === "string")
+            {
+                checkAmericanEnglish(filePath, `${speciesLabel}.etymology`, species.etymology);
+            }
+
+            if (species.holotype && typeof species.holotype.material === "string")
+            {
+                checkAmericanEnglish(filePath, `${speciesLabel}.holotype.material`, species.holotype.material);
+            }
+
+            if (Array.isArray(species.synonyms))
+            {
+                for (let synonymIndex = 0; synonymIndex < species.synonyms.length; synonymIndex += 1)
+                {
+                    const synonym = species.synonyms[synonymIndex];
+
+                    if (synonym && typeof synonym.reason === "string")
+                    {
+                        checkAmericanEnglish(filePath, `${speciesLabel}.synonyms[${synonymIndex}].reason`, synonym.reason);
+                    }
+                }
+            }
+        }
+    }
+
+    if (Array.isArray(doc.references))
+    {
+        for (let index = 0; index < doc.references.length; index += 1)
+        {
+            const reference = doc.references[index];
+
+            if (reference && typeof reference.notes === "string")
+            {
+                checkAmericanEnglish(filePath, `references[${index}].notes`, reference.notes);
+            }
+        }
+    }
+}
+
 // Output
 
 console.log("Validating Open Paleo data...\n");

@@ -75,6 +75,17 @@ original proposal.
 - **One change per issue/PR.** Add one genus, correct one taxonomy, upload one image. This keeps review manageable and git history clean. Batch contributions (e.g., "add 50 genera") should be discussed in an issue first.
 - **Fill in as much as you can.** The more complete a contribution (description, location, formation, references), the more useful it is. Partial contributions are accepted — someone else can fill in the gaps later — but do not submit empty shells.
 - **Write for a general audience.** Descriptions should be accessible to an interested non-specialist. Avoid unexplained jargon. Technical diagnostic features belong in the `diagnostic_features` field, not the description.
+- **American English.** All editorial prose — `description`, `etymology`,
+  `dispute`, `diagnostic_features`, `holotype.material`, `synonyms[].reason`,
+  `references[].notes` — uses American spellings (color, center, behavior,
+  meter, fiber, defense, catalog, analyze, paleontology, recognize, etc.).
+  Proper-noun metadata — paper and book titles, journal names, publisher
+  names, author names, institution names, place names — is preserved
+  verbatim from the source, even when that means embedded British
+  spellings (e.g. *Acta Palaeontologica Polonica*, Royal Tyrrell Museum
+  of Palaeontology, Australian Opal Centre). The `American English`
+  validation check enforces this on editorial fields and ignores
+  metadata fields.
 - **English only.** All text content (descriptions, notes, commit messages, issues) should be in English for consistency.
 
 ## Image Requirements
