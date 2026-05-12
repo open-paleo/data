@@ -88,6 +88,24 @@ original proposal.
   metadata fields.
 - **English only.** All text content (descriptions, notes, commit messages, issues) should be in English for consistency.
 
+## Institution Registry
+
+Every `holotype.institution` value must be a key in
+[`institutions.yaml`](./institutions.yaml). When two institutions share
+an abbreviation, both entries are disambiguated with an
+ISO-3166-1 alpha-2 country suffix: `<CODE>-<ISO>` (e.g. `MCNA-AR` for
+the Mendoza museum, `MCNA-ES` for the Vitoria-Gasteiz museum). No bare
+key may remain when a collision exists — adding a new colliding entry
+must also rename the existing one, in the same commit. This mirrors
+the citation-key disambiguation policy used in `dist/references.bib`
+(`<author><year>` becomes `<author><year>a` and `<author><year>b` when
+a second paper arrives).
+
+For within-country collisions, extend the suffix with a city or
+institution-type fragment (e.g. hypothetical `MNCN-ES-MAD` vs
+`MNCN-ES-BCN`). Colocate disambiguated entries in `institutions.yaml`
+so the collision is visible at the source.
+
 ## Image Requirements
 
 > **AI-generated art is not accepted.** Open Paleo values the skill and
