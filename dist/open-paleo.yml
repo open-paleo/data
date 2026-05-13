@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-05-12T04:46:44.198Z
+  built_at: 2026-05-13T01:55:25.249Z
   clade_count: 250
-  genus_count: 1379
+  genus_count: 1380
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.05"
@@ -115577,6 +115577,113 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+  Valdoraptor:
+    genus: Valdoraptor
+    parent: Ornithomimosauria
+    etymology: From Latin 'Valdus' (Wealden, referring to the Wealden Group) and 'raptor' (plunderer); meaning 'Wealden plunderer'.
+    description: |
+      Valdoraptor is a genus of ornithomimosaurian theropod dinosaur from the Early Cretaceous of England. It is known only from bones of the feet. The holotype, BMNH R2559 (incorrectly given by Owen as BMNH R2556), was found near Cuckfield in layers of the Tunbridge Wells Sand Formation dating from the late Valanginian. The specimen is damaged, lacking parts of the upper and lower ends. It has a conserved length of 21.5 centimeters (8.5 in) and an estimated total length of 24 centimeters (9.4 in). This genus is paleontologically significant for being the first ornithomimosaur specimen known from England and represents the earliest record of ornithomimosaurs.
+    diet: herbivore
+    locomotion: bipedal
+    paleoenvironment:
+      - fluvial
+    diagnostic_features:
+      - Metatarsal II mediolaterally compressed.
+      - Prominent dorsolateral ridge on metatarsal II.
+    identifiers:
+      - source: pbdb
+        id: "68141"
+      - source: wikidata
+        id: Q1576716
+      - source: gbif
+        id: "4821748"
+    species:
+      - name: Valdoraptor oweni
+        etymology: Named in honor of Sir Richard Owen, who first described the type metatarsus material (as belonging to Hylaeosaurus sp.).
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Valanginian
+          from_ma: 139.8
+          to_ma: 132.6
+        location:
+          country: GB
+          locality: near Cuckfield
+          region: England
+          formation: Tunbridge Wells Sand
+          coordinates:
+            - 51.086388
+            - -0.172222
+        holotype:
+          specimen_id:
+            - BMNH R2559
+          specimen_type: holotype
+          institution: Natural History Museum
+          material: Three associated metatarsals (II, III, IV) of a single left foot in Wealden matrix; proximal ends broken obliquely, inner bone retains distal articular surface, middle has partial distal surface, outer distal end missing.
+        described: 1991
+        authors: Olshevsky
+        described_in: olshevsky1991
+        synonyms:
+          - name: Megalosaurus oweni
+            type: reassigned
+            reason: Original combination named by Lydekker (1889) for the Cuckfield metatarsus material that Owen (1858) had earlier referred to Hylaeosaurus sp.
+          - name: Altispinax oweni
+            type: reassigned
+            reason: Reassignment by von Huene (1923) of Lydekker's Megalosaurus oweni to Altispinax; subsequently moved to Valdoraptor by Olshevsky (1991).
+    references:
+      - id: owen1858
+        authors: Owen, R.
+        year: 1858
+        title: Monograph on the fossil Reptilia of the Wealden and Purbeck Formations. Part IV. Dinosauria (Hylaeosaurus)
+        journal: The Palaeontological Society Monographs
+        pages: 8-26
+        notes: Refers three Cuckfield metatarsals to Hylaeosaurus sp.; a mirrored lithograph caused over a century of confusion about which foot was preserved, and the catalog number Owen gave (2556) is incorrect.
+      - id: lydekker1889
+        authors: Lydekker, R.
+        year: 1889
+        title: Note on some points in the nomenclature of fossil reptiles and amphibians, with preliminary notices of two new species
+        journal: Geological Magazine
+        volume: "6"
+        pages: 325-326
+        notes: Names Megalosaurus oweni for the Cuckfield metatarsus Owen had referred to Hylaeosaurus, separating it from M. dunkeri on size; later reassigned through Altispinax to Valdoraptor.
+      - id: olshevsky1991
+        authors: Olshevsky, G.
+        year: 1991
+        title: A revision of the parainfraclass Archosauria Cope, 1869, excluding the advanced Crocodylia
+        journal: Mesozoic Meanderings
+        volume: "2"
+        pages: 1-196
+        notes: Erects Valdoraptor as a new genus for Lydekker's Megalosaurus oweni, removing it from both Megalosaurus and von Huene's Altispinax; tentatively places it in Allosauridae pending further study.
+      - id: naish2007
+        authors: Naish, D.; Martill, D. M.
+        year: 2007
+        title: "Dinosaurs of Great Britain and the role of the Geological Society of London in their discovery: basal Dinosauria and Saurischia"
+        journal: Journal of the Geological Society
+        volume: "164"
+        issue: "3"
+        pages: 493-510
+        doi: 10.1144/0016-76492006-032
+        url: http://dx.doi.org/10.1144/0016-76492006-032
+        notes: Identifies two autapomorphies of metatarsal II that establish Valdoraptor oweni as a valid taxon distinct from Neovenator and Eotyrannus, placing it as Tetanurae indet.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Tetanurae
+      - Avetheropoda
+      - Coelurosauria
+      - Ornithomimosauria
   Valdosaurus:
     genus: Valdosaurus
     parent: Dryosauridae
