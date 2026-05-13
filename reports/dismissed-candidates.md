@@ -26,6 +26,24 @@ Per-entry format:
 
 ## A
 
+- Amanasaurus (#72): Late Triassic (Carnian) silesaurid
+  dinosauriform from the Santa Maria Supersequence of Rio Grande
+  do Sul, Brazil, described by Müller & Garcia (2024) for two
+  partial femora (single species A. nesbitti). Placed within
+  Silesauridae in the type description; under the prevailing
+  hypothesis that Silesauridae is sister to Dinosauria, this puts
+  Amanasaurus outside Dinosauria. The same authors' earlier work
+  (Müller & Garcia 2020) argues Silesauridae is a paraphyletic
+  grade ancestral to Ornithischia, which would bring some
+  silesaurids inside Dinosauria, but this view has not reached
+  broad consensus.
+  - A paraphyletic 'Silesauridae' as an alternative hypothesis for
+    the initial radiation of ornithischian dinosaurs (Müller &
+    Garcia, 2020): proposes the paraphyletic-silesaurid hypothesis
+    under which some silesaurids are early ornithischians; the
+    competing sister-group hypothesis remains the more widely-held
+    interpretation.
+
 - Agnosphitys (#33): Late Triassic dinosauriform from the
   Magnesian Conglomerate fissure-fill at Cromhall, Avon, England,
   known from a holotype ilium with a referred partial skeleton
