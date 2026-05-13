@@ -24,6 +24,23 @@ Per-entry format:
 
 ---
 
+## A
+
+- Agnosphitys (#33): Late Triassic dinosauriform from the
+  Magnesian Conglomerate fissure-fill at Cromhall, Avon, England,
+  known from a holotype ilium with a referred partial skeleton
+  (maxilla, humerus, astragalus). Originally placed outside
+  Dinosauria by Fraser, Padian, Walkden & Davis (2002); subsequent
+  phylogenetic analyses give conflicting placements as a basal
+  theropod (Yates 2007), a basal sauropodomorph (Ezcurra 2010), or
+  a silesaurid. No broad consensus that the genus is a dinosaur.
+  - Phylogenetic relationships of *Chromogisaurus novasi* and other
+    basal dinosaurs (Ezcurra, 2010): includes Agnosphitys in a
+    cladistic analysis and recovers it as a basal sauropodomorph
+    in Guaibasauridae, but excludes the referred material after
+    Langer (2004) and Bonaparte et al. (2007) flagged it as a
+    possible chimera.
+
 ## C
 
 - Cryptoraptor (#395): Manuscript name (Cryptoraptor lockleyi) coined
