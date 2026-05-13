@@ -1,0 +1,156 @@
+genus: Pisanosaurus
+parent: Ornithischia
+pronunciation:
+  ipa: /pɪˌsænəˈsɔːrəs/
+  phonetic: piss-AN-ə-SOR-əs
+etymology: Named in honor of Argentine paleontologist Juan Pisano (Museo de
+  La Plata), with Greek 'sauros' (lizard); meaning 'Pisano's lizard'.
+description: Pisanosaurus is an extinct genus of early dinosauriform, likely an
+  ornithischian or silesaurid, from the Late Triassic of Argentina. It was a
+  small, lightly built, ground-dwelling herbivore, that could grow up to an
+  estimated 1 m (3.3 ft) long. Only one species, the type, Pisanosaurus mertii,
+  is known, based on a single partial skeleton discovered in the Ischigualasto
+  Formation of the Ischigualasto-Villa Unión Basin in northwestern Argentina.
+  This part of the formation has been dated to the late Carnian, approximately
+  229 million years ago.
+diet: herbivore
+locomotion: bipedal
+paleoenvironment:
+  - fluvial
+diagnostic_features:
+  - Cheek teeth closely packed with subcylindrical, non-laterally-compressed
+    crowns forming a continuous beveled occlusal wear surface.
+  - Tooth row strongly inset from the lateral border of the dentary.
+  - Mandible with well-developed adductor fossa and articular condyle
+    positioned well below the level of the tooth row.
+  - Tibia with strong cnemial crest and shaft twisted approximately 90 degrees
+    between proximal and distal axes.
+  - Astragalus with prominent dorsal ascending process fitting into a distal
+    cavity of the tibia; bilobate in distal view.
+  - Metatarsal III markedly longer and stronger than metatarsal IV
+    (metatarsal-III-to-tibia ratio ~59%).
+identifiers:
+  - source: pbdb
+    id: "38729"
+  - source: wikidata
+    id: Q44246
+  - source: gbif
+    id: "4823104"
+  - source: eol
+    id: "47460277"
+species:
+  - name: Pisanosaurus mertii
+    etymology: Named in honor of Araucanian naturalist Carlos Merti.
+    status: valid
+    type_species: true
+    period:
+      name:
+        - Late Triassic
+      stage:
+        - Carnian
+      from_ma: 233.6
+      to_ma: 227.3
+    location:
+      country: AR
+      locality: Hoyada del Cerro Las Lajas
+      region: La Rioja
+      formation: Ischigualasto
+      coordinates:
+        - -30
+        - -68
+    holotype:
+      specimen_id:
+        - PVL 2577
+      specimen_type: holotype
+      institution: PVL
+      material: Fragmentary skull with right maxilla and mandible bearing
+        teeth; partial cervical, dorsal, and sacral vertebrae; fragmentary
+        scapula and pelvic impressions; right tibia, fibula, astragalus and
+        calcaneum; metatarsals and phalanges of digits III and IV.
+    size:
+      length_m:
+        min: 0.9
+        max: 1
+    described: 1967
+    authors: Casamiquela
+    described_in: casamiquela1967
+references:
+  - id: casamiquela1967
+    authors: Casamiquela, R. M.
+    year: 1967
+    title: Un nuevo dinosaurio ornitisquio triásico (Pisanosaurus mertii;
+      Ornithopoda) de la Formación Ischigualasto, Argentina
+    journal: Ameghiniana
+    volume: "4"
+    issue: "2"
+    pages: 47-64
+    notes: In Spanish. Original description of Pisanosaurus mertii and the
+      family Pisanosauridae (later synonymized with Heterodontosauridae by
+      Bonaparte 1976).
+  - id: bonaparte1976
+    authors: Bonaparte, J. F.
+    year: 1976
+    title: Pisanosaurus mertii Casamiquela and the origin of the Ornithischia
+    journal: Journal of Paleontology
+    volume: "50"
+    issue: "5"
+    pages: 808-820
+    notes: Foundational redescription of PVL 2577; placed Pisanosaurus as the
+      oldest known ornithischian and synonymized family Pisanosauridae with
+      the older Heterodontosauridae.
+  - id: sereno1991
+    authors: Sereno, P. C.
+    year: 1991
+    title: "Lesothosaurus, 'fabrosaurids,' and the early evolution of
+      Ornithischia"
+    journal: Journal of Vertebrate Paleontology
+    volume: "11"
+    issue: "2"
+    pages: 168-197
+    doi: 10.1080/02724634.1991.10011386
+    url: http://dx.doi.org/10.1080/02724634.1991.10011386
+    notes: Argues PVL 2577 may be a chimera (skull and postcrania possibly
+      not associated); if the association is correct, places Pisanosaurus
+      as sister to all other ornithischians.
+  - id: agnolin2017
+    authors: Agnolín, Federico L.; Rozadilla, Sebastián
+    year: 2017
+    title: Phylogenetic reassessment of Pisanosaurus mertii Casamiquela, 1967,
+      a basal dinosauriform from the Late Triassic of Argentina
+    journal: Journal of Systematic Palaeontology
+    volume: "16"
+    issue: "10"
+    pages: 853-879
+    doi: 10.1080/14772019.2017.1352623
+    url: http://dx.doi.org/10.1080/14772019.2017.1352623
+    notes: Redescribes PVL 2577 and argues, via phylogenetic analysis, that
+      Pisanosaurus is a non-dinosaurian silesaurid dinosauriform rather than
+      a basal ornithischian.
+  - id: baron2017
+    authors: Baron, M. G.; Norman, D. B.; Barrett, P. M.
+    year: 2017
+    title: A new hypothesis of dinosaur relationships and early dinosaur
+      evolution
+    journal: Nature
+    volume: "543"
+    issue: "7646"
+    pages: 501-506
+    doi: 10.1038/nature21700
+    url: http://dx.doi.org/10.1038/nature21700
+    notes: Proposes the Ornithoscelida hypothesis (Theropoda + Ornithischia
+      as sister clades) and independently recovers Pisanosaurus as a
+      silesaurid in their phylogenetic analysis.
+  - id: muller2020
+    authors: Müller, Rodrigo Temp; Garcia, Maurício Silva
+    year: 2020
+    title: "A paraphyletic 'Silesauridae' as an alternative hypothesis for
+      the initial radiation of ornithischian dinosaurs"
+    journal: Biology Letters
+    volume: "16"
+    issue: "8"
+    pages: "20200417"
+    doi: 10.1098/rsbl.2020.0417
+    url: http://dx.doi.org/10.1098/rsbl.2020.0417
+    notes: Recovers Silesauridae as paraphyletic and ancestral to
+      Ornithischia; Pisanosaurus is placed as the basal-most ornithischian,
+      transitional between the silesaurid grade and core Ornithischia.
