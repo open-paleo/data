@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-13T01:55:25.249Z",
+    "built_at": "2026-05-13T02:36:14.777Z",
     "clade_count": 250,
-    "genus_count": 1380,
+    "genus_count": 1381,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
     "version": "2026.05"
@@ -16354,12 +16354,12 @@
           },
           "described": 2011,
           "authors": "Mateus et al.",
-          "described_in": "mateus2011"
+          "described_in": "mateus2011a"
         }
       ],
       "references": [
         {
-          "id": "mateus2011",
+          "id": "mateus2011a",
           "authors": "Mateus, Octávio; Jacobs, Louis L.; Schulp, Anne S.; Polcyn, Michael J.; Tavares, Tatiana S.; Buta Neto, André; Morais, Maria Luísa; Antunes, Miguel T.",
           "year": 2011,
           "title": "Angolatitan adamastor, a new sauropod dinosaur and the first record from Angola",
@@ -137840,6 +137840,120 @@
         "Spinosauridae",
         "Baryonychinae",
         "Ceratosuchopsini"
+      ]
+    },
+    "Suchosaurus": {
+      "genus": "Suchosaurus",
+      "parent": "Baryonychinae",
+      "etymology": "From Greek 'souchos' (crocodile, after the Egyptian crocodile-god Sobek) and 'sauros' (lizard); meaning 'crocodile lizard'.",
+      "description": "Suchosaurus is a dubious genus of large theropod dinosaur that lived during the Early Cretaceous in what is now Europe. The type species, S. cultridens, was first mentioned by Richard Owen at the British Association meeting in 1841 and formally described in his 1842 Report on British Fossil Reptiles, based on a chimeric assemblage of fossil teeth and vertebrae discovered in the Tilgate Forest of Sussex, England, in sediments of the Wealden Supergroup.",
+      "diet": "carnivore",
+      "locomotion": "bipedal",
+      "paleoenvironment": [
+        "fluvial"
+      ],
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "36610"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q3472673"
+        },
+        {
+          "source": "gbif",
+          "id": "4822234"
+        }
+      ],
+      "species": [
+        {
+          "name": "Suchosaurus cultridens",
+          "etymology": "From Latin 'culter' (knife) and 'dens' (tooth); meaning 'knife-toothed'.",
+          "status": "nomen dubium",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Valanginian"
+            ],
+            "from_ma": 139.8,
+            "to_ma": 132.6
+          },
+          "location": {
+            "country": "GB",
+            "locality": "Tilgate Forest, near Cuckfield",
+            "region": "England",
+            "formation": "Tunbridge Wells Sand",
+            "coordinates": [
+              51.086388,
+              -0.172222
+            ]
+          },
+          "holotype": {
+            "specimen_id": [
+              "NHMUK R36536"
+            ],
+            "specimen_type": "holotype",
+            "institution": "Natural History Museum",
+            "material": "A single Wealden tooth from Tilgate Forest, Sussex, designated by Mateus et al. (2011) from among the original Owen (1842) chimeric syntype series; laterally compressed crown with two trenchant edges and longitudinal parallel ridges."
+          },
+          "synonyms": [
+            {
+              "name": "Crocodilus cultridens",
+              "type": "reassigned",
+              "reason": "Prior combination of the species cultridens under Crocodilus; Owen (1842) erected Suchosaurus as a distinct sub-genus to hold it."
+            }
+          ],
+          "described": 1842,
+          "authors": "Owen",
+          "described_in": "owen1842"
+        }
+      ],
+      "references": [
+        {
+          "id": "owen1842",
+          "authors": "Owen, R.",
+          "year": 1842,
+          "title": "Report on British fossil reptiles, Part II",
+          "journal": "Report of the British Association for the Advancement of Science",
+          "volume": "11",
+          "pages": "60-204",
+          "notes": "Original sub-genus erection by Owen, interpreting the material as crocodilian; spinosaurid affinity was not recognized until Milner (2003)."
+        },
+        {
+          "id": "mateus2011b",
+          "authors": "Mateus, Octávio; Araújo, Ricardo; Natário, Carlos; Castanhinha, Rui",
+          "year": 2011,
+          "title": "A new specimen of the theropod dinosaur Baryonyx from the early Cretaceous of Portugal and taxonomic validity of Suchosaurus",
+          "journal": "Zootaxa",
+          "volume": "2827",
+          "pages": "54-68",
+          "doi": "10.11646/zootaxa.2827.1.3",
+          "url": "http://dx.doi.org/10.11646/zootaxa.2827.1.3",
+          "notes": "Declares Suchosaurus cultridens a nomen dubium — NHMUK R36536 lacks autapomorphies distinguishing it from other baryonychines and rejects Milner's (2003) Baryonyx senior-synonymy proposal."
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Megalosauroidea",
+        "Spinosauridae",
+        "Baryonychinae"
       ]
     },
     "Supersaurus": {
