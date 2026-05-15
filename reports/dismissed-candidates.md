@@ -288,6 +288,21 @@ outside any peer-reviewed venue and are similarly treated.
 
 ### C
 
+- Cinizasaurus (#353): Nomen ex dissertationae proposed by Hunt
+  (1997, unpublished thesis) for NMMNH P-18400 (a tibia, vertebrae,
+  and other fragments) from the Late Triassic of New Mexico,
+  initially interpreted as a theropod. Intended type species "*C.
+  hunti*". Nesbitt, Irmis & Parker (2007) reclassified both
+  NMMNH P-18400 and P-18401 as indeterminate archosauriforms.
+
+- Comanchesaurus (#373): Nomen ex dissertationae proposed by
+  Adrian Hunt in his unpublished dissertation for NMMNH P-4569
+  (a partial skeleton with vertebral centra and hindlimb bones)
+  from the Norian Bull Canyon Formation of Guadalupe County, New
+  Mexico. Intended type species "*C. kuesi*". Nesbitt, Irmis &
+  Parker (2007) found the material to belong to a possible
+  indeterminate saurischian.
+
 - Capitalsaurus (#296): Informal large-theropod name coined by
   Peter Kranz in the 1990s for a single caudal vertebra
   discovered in 1898 during sewer construction at First & F
@@ -347,6 +362,20 @@ outside any peer-reviewed venue and are similarly treated.
 
 ### F
 
+- Fendusaurus (#563): Nomen ex dissertatione proposed by Fedak
+  (2006) for FGM 998GF13-II (a skull) plus five referred
+  specimens from the Hettangian McCoy Brook Formation of Wasson
+  Bluff, Nova Scotia. Previously classified as cf. *Ammosaurus*;
+  Fedak placed it in Massospondylidae. First non-avian dinosaur
+  from Nova Scotia.
+
+- Ferropectis (#570): Nomen ex dissertatione for a Cenomanian
+  Eagle Ford Group nodosaurid ankylosaur from Texas, named in
+  Matt Clemens's 2018 dissertation. Intended type species "*F.
+  brysorum*"; the dissertation's phylogenetic analysis recovered
+  it as sister to *Borealopelta* in a clade with *Hungarosaurus*,
+  *Europelta*, and *Pawpawsaurus*.
+
 - Francoposeidon (#576): Informal turiasaurian-sauropod name
   ("French earthquake god"; type species "*F. charantensis*")
   for at least 7 individuals' worth of material — braincase,
@@ -378,6 +407,21 @@ outside any peer-reviewed venue and are similarly treated.
 
 ### H
 
+- Hanwulosaurus (#673): Informal ankylosaur name (~9 m long; "long
+  for an ankylosaur") for material from the Late Cretaceous of
+  Inner Mongolia, China — a nearly complete skeleton including a
+  complete skull, vertebrae, ribs, scapula, ulna, femora, lower-leg
+  bones, and armor. Surfaced in news reports in 2001; Zhao Xijin
+  has suggested it may warrant its own subgroup within Ankylosauria,
+  but no formal description has followed.
+
+- Heilongjiangosaurus (#682): Informal hadrosaurid name (possibly
+  lambeosaurine; intended type species "*H. jiayinensis*") coined
+  in 2001 by Li & Jin in a faunal list from the Maastrichtian of
+  Heilongjiang, China. May be the same animal as *Charonosaurus*,
+  and possibly connected to the nomen nudum "*Mandschurosaurus*"
+  jiainensis (1983).
+
 - Hironosaurus (#700): Informal hadrosaurid name for fragmentary
   teeth and a vertebra from the Late Cretaceous of Hirono,
   Fukushima, Japan. Mentioned by Hisa (1988) and brought to a
@@ -407,6 +451,15 @@ outside any peer-reviewed venue and are similarly treated.
   Cenomanian Zhumapu Formation of China. First announced in the
   2019 SVP abstract book (Lei et al., "in press"); no formal
   description has followed.
+
+- Julieraptor (#815): Informal nickname for a dromaeosaurid
+  fossil from the Judith River Formation of Montana (discovered
+  2002); parts of the same skeleton were illegally excavated in
+  2006 as "Sid Vicious", and the poacher served jail time. Also
+  nicknamed "Kleptoraptor" by Bob Bakker. The specimen consists
+  of an almost complete skeleton with well-preserved braincase
+  but missing most of the skull, most caudal vertebrae, part of
+  the femur, and most of the spinal/cervical vertebrae.
 
 ### K
 
@@ -450,3 +503,187 @@ outside any peer-reviewed venue and are similarly treated.
   Maastrichtian Vitakri Member of the Pab Formation,
   Balochistan, Pakistan. Considered invalid by Wilson, Barrett
   & Carrano (2011).
+
+- Megacervixosaurus (#1011): Informal titanosaurian sauropod
+  name ("big neck lizard"; type species "*M. tibetensis*") coined
+  by Zhao Xijin (1983) for material from the Late Cretaceous
+  Zonggo Formation of Tibet. Never formally described.
+
+- Microcephale (#1028): Informal pachycephalosaurid name (also
+  "*Mycocephale*"; "tiny head") for very small (<5 cm) skull
+  caps from the Campanian Dinosaur Park Formation of Alberta,
+  Canada — the "North American dwarf species". First mentioned
+  by Paul Sereno (1997) in a list of pachycephalosaurids; no
+  species epithet was given.
+
+- Microdontosaurus (#1032): Informal sauropod name (intended
+  type species "*M. dayensis*") coined by Zhao (1985) for
+  Middle Jurassic material from the Dapuka Group of Xinjiang,
+  China. Not used since; the material may have been
+  redescribed under another name.
+
+- Mifunesaurus (#1038): Informal tetanuran-theropod name
+  coined by Hisa (1985, no species epithet) for a tibia,
+  phalanx, metatarsus, and tooth (YNUGI 10003 / MDM 341)
+  discovered in 1979 in the Cenomanian Kabu Formation of
+  Japan. Tooth morphology suggests megalosauroid or carnosaur
+  affinity.
+
+### N
+
+- Ngexisaurus (#1104): Informal avetheropod-grade theropod name
+  (type species "*N. dapukaensis*") coined by Zhao (1983) for
+  material from the Middle Jurassic Dapuka Group of Tibet, China.
+  Zhao (1985) introduced an alternate name "*Megalosaurus*"
+  *dapukaensis* for related material.
+
+- Nurosaurus (#1128): Informal sauropod name (proposed binomial
+  "*N. qaganensis*") presented as soon-to-be-described by
+  Zhiming Dong (1992) for a partial skeleton from the Early
+  Cretaceous Qagannur Formation of Inner Mongolia. Notable as
+  the first specimen on which a stress fracture of the foot
+  phalanx was identified in a sauropod.
+
+### O
+
+- Orcomimus (#1147): Informal ornithomimid name coined by
+  Michael Triebold (1997) for a pelvis and hindlimb from the
+  Late Cretaceous Hell Creek Formation of South Dakota; never
+  formally described. May be referable to one of the
+  ornithomimosaur species currently known from the Hell Creek.
+
+- Oshanosaurus (#1165): Informal sauropod name ("Oshan lizard";
+  intended type species "*O. youngi*") coined by Zhao (1985)
+  for material from the Early Jurassic Lower Lufeng Series of
+  Yunnan, China, discovered by Zhao in 1971 at Dianchung,
+  Eshan County. Molina-Perez & Larramendi (2019) suggested
+  without elaboration that it belongs to the theropod
+  *Eshanosaurus*.
+
+- Otogosaurus (#1171): Informally named sauropod (proposed
+  type species "*O. sarulai*") from Inner Mongolia, China,
+  known from partial postcrania (including a 2.2 m tibia) and
+  several footprints. Despite occasional citation to Zhao (2004)
+  or Zhao & Tan (2004), scholars have not located such a source.
+
+### P
+
+- Pakisaurus (#1188): Informal titanosaurian name ("Pakistan
+  lizard"; proposed species "*P. balochistani*") named by Malkani
+  (2006) for isolated tail vertebrae from the Maastrichtian
+  Vitakri Member of the Pab Formation, Balochistan. A 2023 femur
+  from the Lameta Formation of India was also assigned to it.
+  Considered invalid by Wilson, Barrett & Carrano (2011).
+
+### Q
+
+- Qaikshaheen (#1310): Informal titanosaurian name (intended
+  type species "*Q. masoomniazi*") proposed by Malkani (2023)
+  in Scientific Research Publishing for fragmentary axial,
+  pectoral, and pelvic material from the Maastrichtian Vitakri
+  Formation of Pakistan.
+
+### R
+
+- Ronaldoraptor (#1356): Informal oviraptorid name (also "Mitrata
+  Oviraptorid"; listed as "*Oviraptor* sp.") first used by Luis
+  Rey in his 2003 book *A Field Guide to Dinosaurs* as the
+  caption to an illustration. Material is undescribed; may be
+  closely related to *Citipati osmolskae*.
+
+### S
+
+- Sabinosaurus (#1365): Informal hadrosaur name (also
+  "Sabinosaurio") for PASAC-1, a partial saurolophine skeleton
+  from the Sabinas Basin of Mexico discovered in 2001. Initially
+  described as *Kritosaurus* sp. by Kirkland et al. (2006), and
+  Prieto-Márquez (2014) considered it indeterminate saurolophine
+  — the largest known well-documented North American
+  saurolophine (~11 m).
+
+- Saldamosaurus (#1369): Informal stegosaurid name (type species
+  "*S. tuvensis*") proposed by Ulansky (2014) for a complete
+  braincase from the Early Cretaceous Saldam Formation of
+  Siberia, Russia. Galton & Carpenter (2016) found the name did
+  not meet ICZN requirements, declaring it nomen nudum.
+
+- Saltillomimus (#1371): Nomen ex dissertatione for an
+  ornithomimid theropod from the Campanian Cerro del Pueblo
+  Formation of Mexico, named by Aguillón Martinez in her 2010
+  thesis (intended type species "*S. rapidus*"). Holotype
+  SEPCP 16/237 (partial tail, most of a hindlimb, forelimb
+  bones); a skeletal reconstruction is on display at the Museo
+  del Desierto.
+
+- Sidormimus (#1448): Informal noasaurid name (also "Gadoufaoua
+  noasaurid", "unnamed Niger noasaurid", "digging raptor")
+  for an articulated specimen from the Elrhaz Formation of
+  Niger, discovered in 2000 by Chris Sidor. First named by Lyon
+  on the Project Exploration website (also labelled
+  "Dogosaurus" on the National Geographic site).
+
+- Skaladromeus (#1474): Nomen ex dissertatione (also
+  "Kaiparowits ornithopod"; intended type species "*S.
+  goldenii*") named in Clint Boyd's 2012 thesis for an
+  ornithopod from the Kaiparowits Formation.
+
+- Stegotitanus (#1499): Informal replacement-genus name proposed
+  by Gregory S. Paul in *The Princeton Field Guide to Dinosaurs*
+  (3rd ed., 2024) for *Stegosaurus ungulatus* — yielding the
+  new combination "*Stegotitanus*" *ungulatus*. Material from
+  the Kimmeridgian upper Morrison Formation, Wyoming, USA;
+  ~7 m, ~4.2 t. Field-guide proposal does not constitute a
+  formal generic erection.
+
+- Sugiyamasaurus (#1521): Informal titanosauriform name
+  ("Sugiyama lizard") for spatulate teeth from the Early
+  Cretaceous of Japan (near Katsuyama City); first printed by
+  David Lambert (1990) in the *Dinosaur Data Book*. Possibly
+  referable to *Fukuititan*, with which the teeth co-occur.
+
+- Sulaimanisaurus (#1522): Informal titanosaurian name
+  ("Sulaiman lizard"; also "Sulaimansaurus"; proposed species
+  "*S. gingerichi*") described by Malkani (2006) for seven
+  Maastrichtian tail vertebrae from the Vitakri Member of the
+  Pab Formation, Balochistan. Placed in "Pakisauridae" alongside
+  *Pakisaurus* and *Khetranisaurus*; considered invalid by
+  Wilson, Barrett & Carrano (2011).
+
+### T
+
+- Tonouchisaurus (#1613): Informal coelurosaurian name ("Tonouchi
+  lizard"; suggested type species "*T. mongoliensis*") for limb
+  material (less than 0.91 m long) from the Early Cretaceous of
+  Mongolia; first mentioned in a Japanese news article.
+  Barsbold initially read the manus as didactyl (a tyrannosauroid
+  trait) but later noted it is tridactyl with a sub-arctometatarsalian
+  pes.
+
+### V
+
+- Vectispinus (#1681): Wikipedia redirects this name to "White
+  Rock spinosaurid" — a giant spinosaurid (>10 m, vertebrae
+  comparable to *Spinosaurus*) described in 2022 from the
+  Vectis Formation of the Isle of Wight, England. The describers
+  considered the name "Vectispinus" but refrained from naming
+  the taxon because the remains are too fragmentary.
+
+- Vitakridrinda (#1690): Informal abelisaurid name (intended
+  type species "*V. sulaimani*") first used in a Malkani (2004)
+  abstract for two thigh bones and a tooth from the Maastrichtian
+  Vitakri Member of the Pab Formation, Balochistan. The originally
+  referred snout has since been reclassified as the mesoeucrocodylian
+  *Induszalim*, and the braincase as *Gspsaurus*.
+
+- Vitakrisaurus (#1691): Informal noasaurid name (intended type
+  species "*V. saraiki*"; honoring the Saraiki people of southern
+  Pakistan) for MSM-303-2, a right pes from the Maastrichtian
+  Vitakri Formation of Pakistan. Brief description and lack of
+  comparative material make formal classification difficult.
+
+### X
+
+- Xinghesaurus (#1725): Informal sauropod name (possibly
+  titanosauriform; no species epithet) coined by Hasegawa et al.
+  (2009) in the *Miracle of Deserts* expo guidebook. Mount-based
+  estimates: ~15.4 m, ~6 t.
