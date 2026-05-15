@@ -328,6 +328,12 @@ outside any peer-reviewed venue and are similarly treated.
   Possibly a cetiosaur; the material may since have been
   redescribed under another name.
 
+- Damalasaurus (#407): Informal sauropod name ("Damala lizard")
+  for Early Jurassic material, including a rib, from the Middle
+  Daye Group of Tibet. Attributed species "*D. laticostalis*" and
+  "*D. magnus*" may refer to the same animal. No formal
+  description.
+
 - Duranteceratops (#479): Informal chasmosaurine-ceratopsid name
   proposed for a ceratopsid skull collected in 2012 from the
   Hell Creek Formation of South Dakota by amateur collector John
