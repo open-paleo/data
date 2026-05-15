@@ -43,8 +43,6 @@ up automatically once the markdown is restored.
 | Zapsalis | `marsh1877c` | Z | Markdown 78 lines but agent reports "target taxon not found in paper". Wrong-paper-content pattern — `marsh1877c` may describe different taxa, or the *Zapsalis* portion didn't render. Re-investigate: Marsh 1877 has multiple papers and one of them is the *Zapsalis abradens* description. |
 | Embasaurus | `riabinin1931` | E | Russian-language describing paper (Riabinin 1931, Trudy GGRU 78:1-8) is not in corpus and was reported as not easily obtainable. Bucket D Cat III intake built as a Wikipedia-paragraph-1 stub; reference metadata cited from secondary literature. Once obtained, re-extract for holotype number, autapomorphies (if any), and verify the Berriasian age assignment against the Neocomian Sands description. |
 | Euronychodon | `antunes1991` | E | French-language describing paper (Antunes & Sigogneau-Russell 1991, Comptes Rendus de l'Académie des Sciences Série II 313:113-119) is not in corpus. Bucket D Cat III intake built as a Wikipedia-paragraph-1 stub with structured fields (type species, holotype CEPUNL TV 20, locality Taveiro, Campanian-Maastrichtian) sourced from the Wikipedia article body. Once obtained, verify the holotype tooth measurements (1.8 mm, D-shaped cross-section) and paratype designations (CEPUNL TV 18, TV 19). |
-| Tianzhenosaurus | `pang1998` | T | Chinese-language describing paper (Pang Qiqing & Cheng Zhengwu 1998, *Progress in Natural Science* 8(3):326–334) was not currently obtainable. Bucket D Cat II intake built using `arbour2015` and `sullivan1999` (both in corpus) as the source-of-record for holotype info (HBV-10001 skull) and the Pang & Cheng 1998 diagnosis (preserved verbatim under arbour2015's "Previous diagnoses"). Once obtained, verify the diagnostic features and any character not in arbour2015's quote. |
-| Tianzhenosaurus | `pang2024` | T | T. chengi describing paper (Pang, Li & Guo 2024, *Journal of Hebei GEO University* (6):41–73, doi:10.13937/j.cnki.hbdzdxxb.2024.06.006) is CNKI-only and was not currently obtainable. Second species T. chengi added as a stub-only species block (name + status) without holotype, autapomorphies, or specific locality details. Once obtained, populate the holotype block (HBV-10004 skull, HBV-10005 paratype skeleton per Wikipedia para 1) and any autapomorphies. |
 
 ### Pending Resolution Papers
 
@@ -52,9 +50,6 @@ The following have been fixed/updated by the user, but have not yet been process
 
 | Genus | Citation key | Resolution |
 |---|---|---|
-| Dromiceiomimus | `russell1972` + `parks1926` | Needs a custom prompt; `russel1972` erects the new genus, but `parks1926` is the original description of *Struthiomimus brevitertius* (which `russel1972` reassigns) |
-| Laplatasaurus | `huene1929` | Updated in the corpus |
-| Tochisaurus | `kurzanov1991` | updated in the corpus |
 
 ## 2. Wrong `described_in` citations
 
