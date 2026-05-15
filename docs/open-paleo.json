@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-15T21:48:00.365Z",
+    "built_at": "2026-05-15T22:07:25.974Z",
     "clade_count": 250,
     "genus_count": 1382,
     "license": "CC-BY-4.0",
@@ -9940,6 +9940,7 @@
       "etymology": "From Ancient Greek 'αγαν' (agan, 'much') and 'θαυμα' (thauma, 'wonder'); meaning 'much wonder', given by Cope in reference to the large size of the type material.",
       "description": "Agathaumas is a dubious genus of a large ceratopsid dinosaur that lived in Wyoming during the Late Cretaceous (late Maastrichtian stage, 66 million years ago). It was seen as the largest land animal known at the time of its discovery.",
       "diet": "herbivore",
+      "locomotion": "quadrupedal",
       "paleoenvironment": [
         "forested"
       ],
@@ -10708,6 +10709,7 @@
       },
       "description": "Ahvaytum is an extinct genus of probable basal sauropodomorph saurischian dinosaurs from the Late Triassic Popo Agie Formation of Wyoming, United States. The genus contains a single species, A. bahndooiveche, known from fragmentary hindlimb bones. Ahvaytum represents the oldest known named dinosaur of the ancient Laurasian landmass.",
       "diet": "herbivore",
+      "locomotion": "bipedal",
       "paleoenvironment": [
         "fluvial"
       ],
@@ -13650,6 +13652,7 @@
       "description": "Alwalkeria is a historically problematic extinct genus of avemetatarsalian known from the Late Triassic Lower Maleri Formation of India. The genus contains a single species, Alwalkeria maleriensis. It was initially described in 1987 under the genus name 'Walkeria', based on a partial skull, several vertebrae, and fragmentary hindlimb bones. As this name is preoccupied, the new genus Alwalkeria was proposed to replace it. Early research interpreted the material belonging to a 'podokesaurid' (coelophysoid) theropod, herrerasaur, or Eoraptor-like basal eusaurischian dinosaur. Subsequent work recognized the chimaeric status of the fossils referred to this species, as they belong to multiple unrelated taxa. Some of the bones may belong to a dinosaur, and the skull is likely from a pseudosuchian. A 2025 study suggested lagerpetid affinities for the femora, though this was deemed unlikely by a subsequent review, which regarded A. maleriensis as a member of Pan-Aves (Avemetatarsalia) of uncertain placement.\n",
       "dispute": "The anatomical content and phylogenetic placement of Alwalkeria have been actively contested. Remes and Rauhut (2005, conference abstract) first identified the original ISI R 306 holotype series as a chimera; Lecuona, Ezcurra and Irmis (2016) reinterpreted the skull as a crocodylomorph. Novas et al. (2011) and Ezcurra et al. (2025) treated the genus as a valid basal saurischian based on the retained femur and astragalus. Sen and Ray (2025) erected Alickmeron maleriensis for the femora with proposed lagerpetid affinities. McDavid, Marchant and Reid (2026) refuted the lagerpetid assignment, synonymised Alickmeron with Alwalkeria as an objective junior synonym, and restricted the holotype to ISI R 306b (the distal right femur) with placement as Pan-Aves (Avemetatarsalia) incertae sedis.\n",
       "diet": "omnivore",
+      "locomotion": "bipedal",
       "paleoenvironment": [
         "fluvial"
       ],
@@ -21639,6 +21642,7 @@
       "etymology": "From the ancient continent \"Asiamerica\", reflecting Nessov's interpretation of the genus as evidence of Late Cretaceous faunal links between Asia and North America.",
       "description": "Asiamericana is a dubious genus of coelurosaur known only from isolated teeth found in the Bissekty Formation of Uzbekistan. It was named to recognize the occurrence of similar fossil teeth in Central Asia and North America. These regions once formed a connected land mass, during the Cretaceous period.\n",
       "diet": "carnivore",
+      "locomotion": "bipedal",
       "paleoenvironment": [
         "fluvial",
         "deltaic"
@@ -40209,7 +40213,13 @@
           "period": {
             "name": [
               "Late Cretaceous"
-            ]
+            ],
+            "stage": [
+              "Cenomanian",
+              "Turonian"
+            ],
+            "from_ma": 100.5,
+            "to_ma": 89.8
           },
           "location": {
             "country": "AR",
@@ -47352,7 +47362,12 @@
           "period": {
             "name": [
               "Late Cretaceous"
-            ]
+            ],
+            "stage": [
+              "Maastrichtian"
+            ],
+            "from_ma": 72.1,
+            "to_ma": 66
           },
           "location": {
             "country": "US",
@@ -50387,11 +50402,16 @@
             "name": [
               "Late Cretaceous"
             ],
-            "formation": "Judith River"
+            "stage": [
+              "Campanian"
+            ],
+            "from_ma": 83.6,
+            "to_ma": 72.1
           },
           "location": {
             "country": "US",
-            "region": "Montana"
+            "region": "Montana",
+            "formation": "Judith River"
           },
           "described": 1876,
           "authors": "Cope",
@@ -56878,6 +56898,7 @@
       "etymology": "From Hungarian 'Ferenc' (Francis), the birth name of paleontologist Franz Nopcsa von Felső-Szilvás (1877-1933), who first reported dinosaur remains from the Haţeg Basin, and Greek 'keras/keratos' (horn) and 'ops' (face).",
       "description": "Ferenceratops is an extinct genus of basal ceratopsian dinosaur from the Maastrichtian Sînpetru and Densuș-Ciula Formations of the Haţeg Basin, western Romania. The single species, Ferenceratops shqiperorum, was originally described by Weishampel et al. (2003) as a second species of the rhabdodontid ornithopod Zalmoxes; Maidment et al. (2026) reanalysed the holotype postcrania and recovered it as a ceratopsian, erecting a new genus and arguing that 'Zalmoxes' shqiperorum belongs to a previously unrecognised European ceratopsian lineage that also includes Ajkaceratops from Hungary.",
       "diet": "herbivore",
+      "locomotion": "bipedal",
       "diagnostic_features": [
         "Scapula with a narrow, strap-like scapular blade bearing a distal expansion.",
         "Well-developed, upwardly concave acromial process of the scapula.",
@@ -61801,6 +61822,7 @@
       "etymology": "giant shin",
       "description": "Gigantoscelus is a dubious genus of basal sauropodomorph dinosaur from the Early Jurassic of South Africa.",
       "diet": "herbivore",
+      "locomotion": "bipedal",
       "diagnostic_features": [
         "Femur distal width of 20 cm, substantially larger than Massospondylus but smaller than Euskelosaurus",
         "Inner condyle broad and convex, terminating upward with a high ridge as in Euskelosaurus",
@@ -66476,7 +66498,8 @@
             }
           },
           "described": 1903,
-          "authors": "Hatcher"
+          "authors": "Hatcher",
+          "described_in": "hatcher1903a"
         },
         {
           "name": "Haplocanthosaurus delfsi",
@@ -66513,6 +66536,26 @@
         }
       ],
       "references": [
+        {
+          "id": "hatcher1903a",
+          "authors": "Hatcher, J. B.",
+          "year": 1903,
+          "title": "A new sauropod dinosaur from the Jurassic of Colorado",
+          "journal": "Proceedings of the Biological Society of Washington",
+          "volume": "16",
+          "pages": "1-2",
+          "notes": "Erects Haplocanthus priscus on a partial Morrison skeleton; Haplocanthus was later replaced by Haplocanthosaurus in Hatcher (1903b), later in the same volume."
+        },
+        {
+          "id": "hatcher1903b",
+          "authors": "Hatcher, J. B.",
+          "year": 1903,
+          "title": "A new name for the dinosaur Haplocanthus Hatcher",
+          "journal": "Proceedings of the Biological Society of Washington",
+          "volume": "16",
+          "pages": "100",
+          "notes": "Replaces the preoccupied generic name Haplocanthus with Haplocanthosaurus."
+        },
         {
           "id": "mcintosh1988",
           "authors": "McIntosh, J. S.; Williams, M. E.",
@@ -145082,7 +145125,13 @@
           "period": {
             "name": [
               "Late Cretaceous"
-            ]
+            ],
+            "stage": [
+              "Campanian",
+              "Maastrichtian"
+            ],
+            "from_ma": 83.6,
+            "to_ma": 66
           },
           "location": {
             "country": "CN",
@@ -145111,7 +145160,13 @@
           "period": {
             "name": [
               "Late Cretaceous"
-            ]
+            ],
+            "stage": [
+              "Campanian",
+              "Maastrichtian"
+            ],
+            "from_ma": 83.6,
+            "to_ma": 66
           },
           "location": {
             "country": "CN",
@@ -145238,7 +145293,13 @@
           "period": {
             "name": [
               "Late Jurassic"
-            ]
+            ],
+            "stage": [
+              "Kimmeridgian",
+              "Tithonian"
+            ],
+            "from_ma": 154.8,
+            "to_ma": 145
           },
           "described": 1877,
           "authors": "Cope",
@@ -163895,7 +163956,8 @@
             }
           },
           "described": 2017,
-          "authors": "Arbour and Evans"
+          "authors": "Arbour and Evans",
+          "described_in": "arbour2017"
         }
       ],
       "references": [
