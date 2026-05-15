@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-15T18:43:15.846Z",
+    "built_at": "2026-05-15T21:48:00.365Z",
     "clade_count": 250,
     "genus_count": 1382,
     "license": "CC-BY-4.0",
@@ -9937,7 +9937,8 @@
         "ipa": "/æɡəˈθɔːməs/",
         "phonetic": "ag-uh-THAW-mus"
       },
-      "description": "Agathaumas is a dubious genus of a large ceratopsid dinosaur that lived in Wyoming during the Late Cretaceous (late Maastrichtian stage, 66 million years ago). The name comes from Ancient Greek: αγαν - 'much' and θαυμα - 'wonder'. It was seen as the largest land animal known at the time of its discovery.",
+      "etymology": "From Ancient Greek 'αγαν' (agan, 'much') and 'θαυμα' (thauma, 'wonder'); meaning 'much wonder', given by Cope in reference to the large size of the type material.",
+      "description": "Agathaumas is a dubious genus of a large ceratopsid dinosaur that lived in Wyoming during the Late Cretaceous (late Maastrichtian stage, 66 million years ago). It was seen as the largest land animal known at the time of its discovery.",
       "diet": "herbivore",
       "paleoenvironment": [
         "forested"
@@ -10706,6 +10707,7 @@
         "ipa": "/ɑːˈveɪtəm/"
       },
       "description": "Ahvaytum is an extinct genus of probable basal sauropodomorph saurischian dinosaurs from the Late Triassic Popo Agie Formation of Wyoming, United States. The genus contains a single species, A. bahndooiveche, known from fragmentary hindlimb bones. Ahvaytum represents the oldest known named dinosaur of the ancient Laurasian landmass.",
+      "diet": "herbivore",
       "paleoenvironment": [
         "fluvial"
       ],
@@ -13647,6 +13649,7 @@
       },
       "description": "Alwalkeria is a historically problematic extinct genus of avemetatarsalian known from the Late Triassic Lower Maleri Formation of India. The genus contains a single species, Alwalkeria maleriensis. It was initially described in 1987 under the genus name 'Walkeria', based on a partial skull, several vertebrae, and fragmentary hindlimb bones. As this name is preoccupied, the new genus Alwalkeria was proposed to replace it. Early research interpreted the material belonging to a 'podokesaurid' (coelophysoid) theropod, herrerasaur, or Eoraptor-like basal eusaurischian dinosaur. Subsequent work recognized the chimaeric status of the fossils referred to this species, as they belong to multiple unrelated taxa. Some of the bones may belong to a dinosaur, and the skull is likely from a pseudosuchian. A 2025 study suggested lagerpetid affinities for the femora, though this was deemed unlikely by a subsequent review, which regarded A. maleriensis as a member of Pan-Aves (Avemetatarsalia) of uncertain placement.\n",
       "dispute": "The anatomical content and phylogenetic placement of Alwalkeria have been actively contested. Remes and Rauhut (2005, conference abstract) first identified the original ISI R 306 holotype series as a chimera; Lecuona, Ezcurra and Irmis (2016) reinterpreted the skull as a crocodylomorph. Novas et al. (2011) and Ezcurra et al. (2025) treated the genus as a valid basal saurischian based on the retained femur and astragalus. Sen and Ray (2025) erected Alickmeron maleriensis for the femora with proposed lagerpetid affinities. McDavid, Marchant and Reid (2026) refuted the lagerpetid assignment, synonymised Alickmeron with Alwalkeria as an objective junior synonym, and restricted the holotype to ISI R 306b (the distal right femur) with placement as Pan-Aves (Avemetatarsalia) incertae sedis.\n",
+      "diet": "omnivore",
       "paleoenvironment": [
         "fluvial"
       ],
@@ -55766,7 +55769,31 @@
             "institution": "Paleontological Museum"
           },
           "described": 1956,
-          "authors": "Romer"
+          "authors": "Romer",
+          "described_in": "romer1956"
+        }
+      ],
+      "references": [
+        {
+          "id": "wiman1929",
+          "authors": "Wiman, C.",
+          "year": 1929,
+          "title": "Die Kreide-Dinosaurier aus Shantung [The Cretaceous dinosaurs from Shantung]",
+          "journal": "Palaeontologia Sinica, Series C",
+          "volume": "6",
+          "issue": "1",
+          "pages": "1-67",
+          "notes": "In German. Original description as Helopus zdanskyi; Helopus was preoccupied (Helopus caspius Wagler, 1832, a tern) and the genus was renamed Euhelopus by Romer (1956)."
+        },
+        {
+          "id": "romer1956",
+          "authors": "Romer, A. S.",
+          "year": 1956,
+          "title": "Osteology of the Reptiles",
+          "book": "Osteology of the Reptiles",
+          "publisher": "University of Chicago Press",
+          "pages": "772 pp",
+          "notes": "Renamed Helopus zdanskyi Wiman, 1929 to Euhelopus zdanskyi because Helopus was preoccupied."
         }
       ],
       "taxonomy": [
@@ -94289,12 +94316,12 @@
             "institution": "Evolutionary Studies Institute (formerly Bernard Price Institute for Palaeontological Research), University of the Witwatersrand",
             "material": "Caudal and dorsal vertebrae with preserved neural arches, zygapophyses, and spines; centra showing concavity at articular extremities and median compression; carinate ventral surface with longitudinal ridge"
           },
-          "described_in": "owen1854"
+          "described_in": "owen1854a"
         }
       ],
       "references": [
         {
-          "id": "owen1854",
+          "id": "owen1854a",
           "authors": "Owen, R.",
           "year": 1854,
           "title": "Descriptive catalogue of the Fossil organic remains of Reptilia and Pisces contained in the Museum of the Royal College of Surgeons of England",
@@ -94844,16 +94871,62 @@
               "max": 700
             }
           },
-          "described": 1822,
-          "authors": "Parkinson",
+          "described": 1827,
+          "authors": "Mantell",
+          "described_in": "mantell1827",
           "holotype": {
             "specimen_id": [
               "OUM J13505"
             ],
             "specimen_type": "lectotype",
             "institution": "Oxford University Museum of Natural History",
-            "material": "Partial lower jaw (designated by Molnar, 1990)"
+            "material": "Partial lower jaw; lectotype designated by Molnar, Kurzanov and Dong (1990)."
           }
+        }
+      ],
+      "references": [
+        {
+          "id": "buckland1824",
+          "authors": "Buckland, W.",
+          "year": 1824,
+          "title": "Notice on the Megalosaurus or great Fossil Lizard of Stonesfield",
+          "journal": "Transactions of the Geological Society of London",
+          "volume": "2",
+          "issue": "1 (2)",
+          "pages": "390-396",
+          "doi": "10.1144/transgslb.1.2.390",
+          "url": "http://dx.doi.org/10.1144/transgslb.1.2.390",
+          "notes": "First valid naming of any non-avian dinosaur genus; based on material from Stonesfield, Oxfordshire."
+        },
+        {
+          "id": "mantell1827",
+          "authors": "Mantell, G.",
+          "year": 1827,
+          "title": "Illustrations of the geology of Sussex: a general view of the geological relations of the southeastern part of England, with figures and descriptions of the fossils of Tilgate Forest",
+          "book": "Illustrations of the geology of Sussex: a general view of the geological relations of the southeastern part of England, with figures and descriptions of the fossils of Tilgate Forest",
+          "publisher": "Fellow of the Royal College of Surgeons",
+          "pages": "92",
+          "notes": "First publication of the type-species binomial Megalosaurus bucklandii, honoring Buckland."
+        },
+        {
+          "id": "meyer1832",
+          "authors": "Meyer, C. E. H.",
+          "year": 1832,
+          "title": "Palaeologica zur Geschichte der Erde",
+          "book": "Palaeologica zur Geschichte der Erde",
+          "publisher": "Verlag von Siegmund Schmerber",
+          "pages": "560 pp",
+          "notes": "In German. On p. 110, Meyer introduces the variant spelling Megalosaurus bucklandi (sometimes erroneously ascribed to von Ritgen); the original Mantell (1827) spelling bucklandii has priority."
+        },
+        {
+          "id": "molnar1990",
+          "authors": "Molnar, R. E.; Kurzanov, S. M.; Dong, Z.",
+          "year": 1990,
+          "title": "Carnosauria",
+          "book": "The Dinosauria",
+          "publisher": "University of California Press, Berkeley",
+          "pages": "169-209",
+          "notes": "Chapter in Weishampel, Dodson and Osmolska (eds.), first edition of The Dinosauria; designates OUM J13505 as the lectotype of Megalosaurus bucklandii."
         }
       ],
       "taxonomy": [
@@ -105902,7 +105975,23 @@
             "institution": "The Dorset County Museum"
           },
           "described": 1854,
-          "authors": "Owen"
+          "authors": "Owen",
+          "described_in": "owen1854b"
+        }
+      ],
+      "references": [
+        {
+          "id": "owen1854b",
+          "authors": "Owen, R.",
+          "year": 1854,
+          "title": "On some Fossil Reptilian and Mammalian Remains from the Purbecks",
+          "journal": "Quarterly Journal of the Geological Society",
+          "volume": "10",
+          "issue": "1-2",
+          "pages": "420-433",
+          "doi": "10.1144/GSL.JGS.1854.010.01-02.48",
+          "url": "http://dx.doi.org/10.1144/GSL.JGS.1854.010.01-02.48",
+          "notes": "Original description of Nuthetes destructor on isolated teeth and jaw fragments from the Purbeck beds, Durlston Bay, Dorset."
         }
       ],
       "taxonomy": [
@@ -137913,6 +138002,7 @@
           },
           "described": 1832,
           "authors": "Meyer",
+          "described_in": "meyer1832",
           "holotype": {
             "specimen_id": [
               "MNHN 8605",
@@ -137929,8 +138019,63 @@
             ],
             "specimen_type": "syntype",
             "institution": "Muséum national d'Histoire naturelle",
-            "material": "Vertebrae and other postcranial elements"
+            "material": "Vertebrae and other postcranial elements; postcranial theropod material later designated as the lectotype by Allain (2001)."
           }
+        }
+      ],
+      "references": [
+        {
+          "id": "cuvier1808",
+          "authors": "Cuvier, G.",
+          "year": 1808,
+          "title": "Sur les ossemens fossiles de crocodiles, et particulièrement sur ceux des environs du Havre et de Honfleur, avec des remarques sur les squelettes des sauriens de la Thuringe",
+          "journal": "Annales du Muséum d'Histoire Naturelle",
+          "volume": "12",
+          "pages": "73-110",
+          "notes": "In French. First scientific description of the theropod vertebrae, then interpreted as crocodilian material from the Normandy Jurassic."
+        },
+        {
+          "id": "meyer1832",
+          "authors": "Meyer, C. E. H.",
+          "year": 1832,
+          "title": "Palaeologica zur Geschichte der Erde",
+          "book": "Palaeologica zur Geschichte der Erde",
+          "publisher": "Verlag von Siegmund Schmerber",
+          "pages": "560 pp",
+          "notes": "In German. Erects Streptospondylus altdorfensis from Geoffroy Saint-Hilaire's (1825) Steneosaurus rostromajor; first binomial referring to a theropod."
+        },
+        {
+          "id": "owen1842",
+          "authors": "Owen, R.",
+          "year": 1842,
+          "title": "Report on British fossil reptiles, Part II",
+          "journal": "Report of the British Association for the Advancement of Science",
+          "volume": "11",
+          "pages": "60-204",
+          "notes": "Argues Meyer was incorrect in changing the original specific name and creates the combination Streptospondylus rostromajor for what Meyer had called Streptospondylus altdorfensis."
+        },
+        {
+          "id": "walker1964",
+          "authors": "Walker, A. D.",
+          "year": 1964,
+          "title": "Triassic reptiles from the Elgin area: Ornithosuchus and the origin of carnosaurs",
+          "journal": "Philosophical Transactions of the Royal Society of London, Series B, Biological Sciences",
+          "volume": "248",
+          "pages": "53-134",
+          "doi": "10.1098/rstb.1964.0009",
+          "url": "http://dx.doi.org/10.1098/rstb.1964.0009",
+          "notes": "Refers the entire theropod material from Cuvier's series to the new species Eustreptospondylus divesensis (later moved to Piveteausaurus by Taquet 1977)."
+        },
+        {
+          "id": "allain2001",
+          "authors": "Allain, R.",
+          "year": 2001,
+          "title": "Redescription de Streptospondylus altdorfensis, le dinosaure théropode de Cuvier, du Jurassique de Normandie [Redescription of Streptospondylus altdorfensis, Cuvier's theropod dinosaur from the Jurassic of Normandy]",
+          "journal": "Geodiversitas",
+          "volume": "23",
+          "issue": "3",
+          "pages": "349-367",
+          "notes": "In French. Designates the postcranial theropod material as the lectotype, confirming altdorfensis as the valid epithet and Streptospondylus as a theropod genus."
         }
       ],
       "taxonomy": [
