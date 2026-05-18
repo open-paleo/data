@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-15T22:07:25.974Z",
+    "built_at": "2026-05-18T01:59:36.768Z",
     "clade_count": 250,
     "genus_count": 1382,
     "license": "CC-BY-4.0",
@@ -9989,8 +9989,11 @@
             ]
           },
           "holotype": {
-            "specimen_type": "syntype",
-            "status": "unknown",
+            "specimen_id": [
+              "AMNH FR 4000"
+            ],
+            "specimen_type": "holotype",
+            "institution": "American Museum of Natural History",
             "material": "Sixteen vertebrae (including sacrum with associated dorsals and caudals), both iliac bones (one nearly perfect), limb bones, ribs, and other undetermined parts."
           },
           "described": 1872,
@@ -17532,6 +17535,7 @@
           },
           "location": {
             "country": "AQ",
+            "region": "James Ross Island",
             "locality": "DG6-1, Santa Marta Cove",
             "formation": "Snow Hill Island",
             "coordinates": [
@@ -37780,6 +37784,7 @@
           "holotype": {
             "specimen_type": "holotype",
             "status": "unknown",
+            "institution": "Institute of Vertebrate Paleontology and Paleoanthropology",
             "material": "Isolated sauropod tooth crown from the Lower Cretaceous beds of Hui-hui-p'u; one of two distinct sauropod tooth morphologies Bohlin recognized in the Kansu material."
           },
           "described": 1953,
@@ -40233,6 +40238,7 @@
           "holotype": {
             "specimen_type": "syntype",
             "status": "unknown",
+            "institution": "Museo de La Plata",
             "material": "Three teeth from the \"guaranític\" layers of the Sehuen River (one cylindrical crown fragment with root base, one apical crown fragment, and one small nearly complete posterior crown); originally housed in the private collection of Florentino Ameghino. Huene (1929) figured them as plate 40, figs. 3-5."
           },
           "described": 1898,
@@ -43246,6 +43252,7 @@
           },
           "location": {
             "country": "AQ",
+            "region": "Transantarctic Mountains",
             "locality": "Mt. Kirkpatrick, Beardmore Glacier",
             "formation": "Hanson",
             "coordinates": [
@@ -55999,6 +56006,7 @@
           },
           "location": {
             "country": "PT",
+            "region": "Centro",
             "locality": "Taveiro (near Coimbra)",
             "coordinates": [
               40.18,
@@ -62355,6 +62363,7 @@
           },
           "location": {
             "country": "AQ",
+            "region": "Transantarctic Mountains",
             "locality": "Mt. Kirkpatrick, Beardmore Glacier",
             "formation": "Hanson",
             "coordinates": [
@@ -63829,8 +63838,8 @@
           },
           "holotype": {
             "specimen_type": "holotype",
-            "status": "lost",
-            "material": "Never cataloged; specimens likely lost when exhibition hall collapsed on the in-situ specimen"
+            "status": "destroyed",
+            "material": "Never deposited or cataloged; type material was left in-situ at the discovery site and destroyed there."
           },
           "described": 1998,
           "authors": "He et al.",
@@ -71429,8 +71438,9 @@
           },
           "holotype": {
             "specimen_type": "holotype",
-            "status": "lost",
-            "material": "Partial hindlimb and caudal vertebrae described by Matheron (1869); never formally cataloged"
+            "status": "uncatalogued",
+            "institution": "Muséum National d’Histoire Naturelle",
+            "material": "Partial hindlimb and caudal vertebrae described by Matheron (1869); housed in the Collections of the Laboratory of Comparative Anatomy at MNHN, never assigned a catalog number."
           },
           "size": {
             "length_m": {
@@ -73237,7 +73247,8 @@
           },
           "location": {
             "country": "AQ",
-            "locality": "UCMP Locality RV-9502, The Naze, James Ross Island",
+            "region": "James Ross Island",
+            "locality": "UCMP Locality RV-9502, The Naze",
             "formation": "Snow Hill Island",
             "coordinates": [
               -64.000267,
@@ -99399,6 +99410,7 @@
           },
           "location": {
             "country": "AQ",
+            "region": "James Ross Island",
             "locality": "northwest of Fortress Hill, El Morro",
             "formation": "Snow Hill Island",
             "coordinates": [
@@ -107909,8 +107921,15 @@
             }
           },
           "holotype": {
+            "specimen_id": [
+              "GSI IM K20/610",
+              "GSI IM K20/614B",
+              "GSI IM K27/597",
+              "GSI IM K27/600",
+              "GSI IM K27/610"
+            ],
             "specimen_type": "syntype",
-            "status": "unknown",
+            "institution": "Geological Survey of India",
             "material": "Five dorsal vertebrae; largest centrum 8.5 cm long, 5 cm high posteriorly, 4.5 cm broad."
           },
           "described": 1933,
@@ -113673,8 +113692,8 @@
           },
           "holotype": {
             "specimen_type": "holotype",
-            "status": "lost",
-            "material": "Never given a collection number; reported lost as of 2014"
+            "status": "unknown",
+            "material": "Never given a collection number."
           },
           "described": 1953,
           "authors": "Bohlin",
@@ -116843,9 +116862,15 @@
             ]
           },
           "holotype": {
+            "specimen_id": [
+              "USNM 5678",
+              "USNM 4968",
+              "USNM 4969",
+              "USNM 4970"
+            ],
             "specimen_type": "syntype",
-            "status": "unknown",
-            "material": "Portions of skull, vertebrae, and limb bones of several individuals"
+            "institution": "National Museum of Natural History, Smithsonian Institution",
+            "material": "Four isolated vertebral centra (cervical, dorsal, sacral, and caudal), all unfused to their neural arches and ribs, of the appropriate size to belong to one individual; provenance of each bone is uncertain."
           },
           "described": 1888,
           "authors": "Marsh",
@@ -116865,6 +116890,19 @@
           "publisher": "American Journal of Science (AJS)",
           "doi": "10.2475/ajs.s3-35.205.89",
           "url": "http://dx.doi.org/10.2475/ajs.s3-35.205.89"
+        },
+        {
+          "id": "demic2013",
+          "authors": "D'Emic, M. D.",
+          "year": 2013,
+          "title": "Revision of the sauropod dinosaurs of the Lower Cretaceous Trinity Group, southern USA, with the description of a new genus",
+          "journal": "Journal of Systematic Palaeontology",
+          "volume": "11",
+          "issue": "6",
+          "pages": "707-726",
+          "doi": "10.1080/14772019.2012.667446",
+          "url": "http://dx.doi.org/10.1080/14772019.2012.667446",
+          "notes": "Reviews the type series of Pleurocoelus nanus and identifies the four constituent USNM vertebrae."
         }
       ],
       "taxonomy": [
@@ -120370,9 +120408,12 @@
             ]
           },
           "holotype": {
+            "specimen_id": [
+              "MB.R.4233"
+            ],
             "specimen_type": "holotype",
-            "status": "unknown",
-            "material": "Anterior trunk vertebra of a small dinosaur, found embedded in turtle armor"
+            "institution": "Museum für Naturkunde Berlin",
+            "material": "Incomplete dorsal vertebra."
           },
           "described": 1914,
           "authors": "Jaekel",
@@ -139913,6 +139954,7 @@
           },
           "location": {
             "country": "MA",
+            "region": "Khouribga",
             "formation": "Phosphates of Morocco",
             "member": "Couche III",
             "locality": "Sidi Chennane mines, Oulad Abdoun Basin",
@@ -148275,6 +148317,7 @@
           },
           "location": {
             "country": "AQ",
+            "region": "James Ross Island",
             "locality": "DG6-1, Santa Marta Cove",
             "formation": "Snow Hill Island",
             "coordinates": [
@@ -148507,7 +148550,11 @@
           "authors": "Leidy",
           "described_in": "leidy1856b",
           "holotype": {
-            "status": "unknown",
+            "specimen_id": [
+              "ANSP 9259"
+            ],
+            "specimen_type": "holotype",
+            "institution": "Academy of Natural Sciences of Drexel University",
             "material": "Single tooth specimen with compressed, curved, conical crown with trenchant edges; base hollow (2 lines wide, 1.5 lines transversely); 3 lines long"
           }
         }
