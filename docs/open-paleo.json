@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-19T19:03:53.599Z",
+    "built_at": "2026-05-19T21:33:41.237Z",
     "clade_count": 250,
     "genus_count": 1382,
     "license": "CC-BY-4.0",
@@ -50412,12 +50412,9 @@
         "coastal"
       ],
       "diagnostic_features": [
-        "Cutting face of crown concave/sunken, with lateral borders and basal cement projecting beyond it",
-        "Inferior border of cutting face usually oblique, one side rising diagonally",
-        "Weak keel asymmetrically placed close to one border, dividing cutting face into a wide and a narrow concavity",
-        "Oblique border incurved, with posterior cement column curving round the cutting face of the dentine",
-        "External basal cementum rises highest on the incurved border; surface minutely rugose with punctiform rugosity",
-        "Edge of unworn teeth not serrate; dentinal surface delicately rugose in unworn specimens"
+        "Marginal ridge and raised cingulum base.",
+        "Tall median ridge.",
+        "Worn occlusal surface exposing the layered enamel pattern characteristic of ceratopsian teeth."
       ],
       "identifiers": [
         {
@@ -50454,6 +50451,14 @@
             "region": "Montana",
             "formation": "Judith River"
           },
+          "holotype": {
+            "specimen_id": [
+              "AMNH 5739"
+            ],
+            "specimen_type": "holotype",
+            "institution": "American Museum of Natural History",
+            "material": "Single fragmentary ceratopsian maxillary tooth (base of the crown just above the root) preserving part of one marginal ridge, the raised cingulum base, and part of the tall median ridge; worn occlusal surface present."
+          },
           "described": 1876,
           "authors": "Cope",
           "described_in": "cope1876"
@@ -50468,6 +50473,15 @@
           "journal": "Proceedings of the Academy of Natural Sciences of Philadelphia",
           "volume": "28",
           "pages": "248-261"
+        },
+        {
+          "id": "coombs1988",
+          "authors": "Coombs, W. P. Jr.; Galton, P. M.",
+          "year": 1988,
+          "title": "Dysganus, an indeterminate ceratopsian dinosaur",
+          "journal": "Journal of Paleontology",
+          "pages": "818-821",
+          "notes": "Revises Dysganus and restricts the type series to a single tooth (AMNH 5739); other syntypes removed due to chimeric nature of Cope's original material."
         }
       ],
       "taxonomy": [
@@ -52582,6 +52596,15 @@
               47.116699,
               51.883301
             ]
+          },
+          "holotype": {
+            "specimen_id": [
+              "CNIGR 1/3759",
+              "CNIGR 2/3759"
+            ],
+            "specimen_type": "syntype",
+            "institution": "Chernyshev Central Museum of Geological Exploration",
+            "material": "Two vertebrae. Per a 1985 CNIGR catalog the specimens are recorded as CNIGR No. 1, 2/3759; current depository and catalog status uncertain."
           },
           "described": 1931,
           "authors": "Riabinin",
@@ -84037,6 +84060,11 @@
               "max": 3600
             }
           },
+          "holotype": {
+            "specimen_type": "syntype",
+            "status": "lost",
+            "material": "Type material never cataloged and now lost; originally a chimeric series comprising vertebral, limb, and dermal-armor elements from the Carnosaur Bed at Bara Simla."
+          },
           "described": 1924,
           "authors": "Matley",
           "described_in": "matley1924"
@@ -89260,14 +89288,22 @@
     "Loricosaurus": {
       "genus": "Loricosaurus",
       "parent": "Saltasaurini",
-      "etymology": "From Latin 'lorica' meaning 'armor' or 'cuirass' and Greek 'sauros' meaning 'lizard', hence 'armor lizard', in reference to the bony armor associated with this titanosaur.",
+      "etymology": "From Latin 'lorica' (armor/cuirass) and Greek 'sauros' (lizard); meaning 'armor lizard', in reference to the dermal armor on which the genus is based.",
       "description": "Loricosaurus is a genus of sauropod represented by a single species, L. scutatus. It is a titanosaur that lived near the end of the Late Cretaceous period, approximately 71 million years ago in the early Maastrichtian, being found in the province of Neuquen, Argentina in the Allen Formation. Due to the presence of armor, at first it was believed that it was an ankylosaur, but today it is considered to be that of a titanosaur.",
+      "dispute": "The type material is dermal armor only. Modern literature considers Loricosaurus scutatus a possible junior synonym of Neuquensaurus or Saltasaurus, but no formal synonymization has been published.\n",
       "diet": "herbivore",
       "locomotion": "quadrupedal",
-      "paleoenvironment": [
-        "fluvial",
-        "arid"
+      "diagnostic_features": [
+        "Dermal plates bear a prominent longitudinal dorsal crest (1–1.5 cm thick at top, up to 2 cm high) occupying most of the plate length",
+        "Ventral surface of large plates has a concave oval indentation in the midline",
+        "Larger plates have a double crown of coarse, irregular marginal pearls on the edge with inner crown exceeding the outer",
+        "Dorsal plate surface ornamented with groups of short parallel grooves arranged in differently oriented sets, interpreted as connective-tissue traces",
+        "Large plates exceptionally thick at edges (up to 7 cm) with edge sharpened all around by flat oblique underside slope",
+        "Plate tissue in cross-section shows bony canals crossing in all directions (nodosaurine-type cancellous structure)"
       ],
+      "appearance": {
+        "integument": "armored"
+      },
       "identifiers": [
         {
           "source": "pbdb",
@@ -89284,8 +89320,8 @@
       ],
       "species": [
         {
-          "name": "Neuquensaurus australis",
-          "etymology": "From Latin 'australis' meaning 'southern', referring to the southern location of the Neuquén Province of Argentina where the holotype fossils were discovered.",
+          "name": "Loricosaurus scutatus",
+          "etymology": "No etymology was given by Huene (1929); the epithet is likely from Latin 'scutatus' meaning 'armed with a shield', referring to the dermal plates that form the type material.",
           "status": "valid",
           "type_species": true,
           "period": {
@@ -89293,37 +89329,73 @@
               "Late Cretaceous"
             ],
             "stage": [
-              "Santonian",
-              "Campanian",
               "Maastrichtian"
             ],
-            "from_ma": 85.7,
+            "from_ma": 72.1,
             "to_ma": 66
           },
           "location": {
             "country": "AR",
-            "locality": "Sierra Roca, Río Neuquen",
+            "locality": "Cinco Saltos",
             "region": "Río Negro",
-            "formation": "Bajo de la Carpa",
+            "formation": "Allen Formation",
             "coordinates": [
-              -38.950001,
-              -68.23333
+              -38.837898,
+              -68.035698
             ]
           },
-          "described": 1927,
+          "holotype": {
+            "specimen_id": [
+              "MLP C.S. 1210",
+              "MLP C.S. 1213",
+              "MLP C.S. 1214",
+              "MLP C.S. 1215",
+              "MLP C.S. 1218",
+              "MLP C.S. 1219",
+              "MLP C.S. 1220",
+              "MLP C.S. 1221",
+              "MLP C.S. 1222",
+              "MLP C.S. 1223",
+              "MLP C.S. 1224",
+              "MLP C.S. 1225",
+              "MLP C.S. 1226",
+              "MLP C.S. 1227",
+              "MLP C.S. 1228",
+              "MLP C.S. 1229",
+              "MLP C.S. 1230",
+              "MLP C.S. 1231",
+              "MLP C.S. 1232",
+              "MLP C.S. 1235",
+              "MLP C.S. 1237",
+              "MLP C.S. 1470",
+              "MLP C.S. 1471",
+              "MLP C.S. 1472",
+              "MLP C.S. 1473",
+              "MLP C.S. 1474",
+              "MLP C.S. 1475",
+              "MLP C.S. 1476",
+              "MLP C.S. 1477",
+              "MLP C.S. 2006",
+              "MLP C.S. 2010"
+            ],
+            "specimen_type": "syntype",
+            "institution": "Museo de La Plata",
+            "material": "Twenty-six cutaneous ossifications and dermal plates of varying sizes (1.3-15 cm diameter, 0.5-7 cm thickness); no single holotype specimen designated."
+          },
+          "described": 1929,
           "authors": "Huene",
-          "described_in": "huene1927a"
+          "described_in": "huene1929"
         }
       ],
       "references": [
         {
-          "id": "huene1927a",
+          "id": "huene1929",
           "authors": "Huene, F. v.",
-          "year": 1927,
-          "title": "Contribución a la paleogeografía de Sud América [Contribution to the paleogeography of South America]",
-          "journal": "Boletín de la Academia Nacional de Ciencias de la República Argentina",
-          "volume": "30",
-          "pages": "231-294"
+          "year": 1929,
+          "title": "Los saurisquios y ornitisquios del Cretáceo Argentino [The Saurischians and Ornithischians of the Argentine Cretaceous]",
+          "journal": "Anales del Museo de La Plata, series 3",
+          "volume": "3",
+          "pages": "1-196"
         }
       ],
       "taxonomy": [
