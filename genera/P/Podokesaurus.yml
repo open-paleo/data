@@ -38,38 +38,42 @@ identifiers:
   - source: gbif
     id: "4822869"
 species:
-  - name: Coelophysis bauri
-    etymology: "Named for the American paleontologist George Baur."
+  - name: Podokesaurus holyokensis
+    etymology: "Named for Mount Holyoke, Massachusetts, near where the
+      holotype boulder was found, with the Latin suffix '-ensis' meaning
+      'of'."
     status: valid
     type_species: true
     period:
       name:
-        - Late Triassic
+        - Early Jurassic
       stage:
-        - Norian
-        - Rhaetian
-      from_ma: 227
-      to_ma: 201.4
+        - Hettangian
+        - Sinemurian
+      from_ma: 201.3
+      to_ma: 190.8
     location:
       country: US
-      locality: Ghost Ranch Quarry
+      locality: near Mount Holyoke College, Connecticut Valley
       region: Massachusetts
       formation: Portland
       coordinates:
-        - 36.331699
-        - -106.473099
+        - 42.255
+        - -72.582
     size:
       length_m:
-        min: 1.0
-        max: 1.15
-      weight_kg:
-        min: 1
-        max: 40
+        min: 0.18
+        max: 0.18
     holotype:
       specimen_type: holotype
       institution: YPM
       status: destroyed
-      material: Never given a collection number; destroyed in a fire at Mount Holyoke College in 1917
+      material: Partial skeleton in two halves of a split boulder, including
+        humerus, shoulder elements, both femora and tibiae, left fibula,
+        metatarsals, digits and unguals, pubis, ischium, ilium, 17 presacral
+        and 13 caudal vertebrae, ribs, abdominal ribs, and possible skull
+        bones. Never given a collection number; destroyed in a fire at Mount
+        Holyoke College in 1917.
     described: 1911
     authors: Talbot
     described_in: talbot1911

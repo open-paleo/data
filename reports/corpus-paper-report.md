@@ -77,7 +77,6 @@ cross-check against ICZN / current literature.
 | Genus | YAML | In paper | Letter | Note |
 |---|---|---|---|---|
 | Efraasia | *minor* | *Efraasia diagnostica* | E | Galton 1973 used species epithet *diagnostica*; current accepted form is *minor*. Verify nomenclatural history — possibly subsumed into the older *Sellosaurus minor* via species reassignment. |
-| **Gravitholus** | *Stegoceras novomexicanum* | *Gravitholus albertae* | G | **Real data bug** — *Gravitholus*'s type species is *albertae* (Wall & Galton 1979), not *Stegoceras novomexicanum*. The current YAML entry appears mis-keyed; needs hand correction. |
 
 ## 4. Correct papers, but not actionable
 
