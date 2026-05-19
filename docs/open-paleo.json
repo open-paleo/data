@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-19T21:55:25.393Z",
+    "built_at": "2026-05-19T22:15:55.557Z",
     "clade_count": 250,
     "genus_count": 1382,
     "license": "CC-BY-4.0",
@@ -64616,8 +64616,8 @@
       ],
       "species": [
         {
-          "name": "Stegoceras novomexicanum",
-          "etymology": "Named for New Mexico, the U.S. state where the specimen was found, with the Latin suffix '-anum' meaning 'of' or 'from'.",
+          "name": "Gravitholus albertae",
+          "etymology": "From 'Alberta', the Canadian province where the holotype was recovered, with the Latin suffix '-ae' indicating possession.",
           "status": "valid",
           "type_species": true,
           "period": {
@@ -64632,12 +64632,12 @@
           },
           "location": {
             "country": "CA",
-            "locality": "Sargent Ranch",
+            "locality": "near Jenner Ferry, Ralston",
             "region": "Alberta",
             "formation": "Oldman",
             "coordinates": [
-              36.120834,
-              -107.78083
+              50.45,
+              -111.12
             ]
           },
           "described": 1979,
@@ -64649,7 +64649,7 @@
             ],
             "specimen_type": "holotype",
             "institution": "Royal Tyrrell Museum of Paleontology",
-            "material": "PMA 72.29.1, frontoparietal donated by Mr. Malach, Ralston, Alberta; Oldman Formation, near Jenner Ferry, Alberta (coordinates 50.45N, 111.12W)."
+            "material": "Frontoparietal dome, donated by Mr. Malach of Ralston, Alberta."
           }
         }
       ],
@@ -66377,9 +66377,21 @@
           "id": "47460084"
         }
       ],
-      "species": [
+      "synonyms": [
         {
           "name": "Troodon sternbergi",
+          "type": "reassigned",
+          "reason": "Original combination (Brown and Schlaikjer, 1943) on NMC 8817; later moved to Stegoceras and then to the new genus Hanssuesia by Sullivan (2003)."
+        },
+        {
+          "name": "Stegoceras sternbergi",
+          "type": "reassigned",
+          "reason": "Interim combination after the species was moved out of Troodon and before Sullivan (2003) erected Hanssuesia."
+        }
+      ],
+      "species": [
+        {
+          "name": "Hanssuesia sternbergi",
           "etymology": "Named for Charles Mortram Sternberg, the Canadian paleontologist who found the holotype dome near Steveville, Alberta, in 1928.",
           "status": "valid",
           "type_species": true,
@@ -117373,46 +117385,42 @@
       ],
       "species": [
         {
-          "name": "Coelophysis bauri",
-          "etymology": "Named for the American paleontologist George Baur.",
+          "name": "Podokesaurus holyokensis",
+          "etymology": "Named for Mount Holyoke, Massachusetts, near where the holotype boulder was found, with the Latin suffix '-ensis' meaning 'of'.",
           "status": "valid",
           "type_species": true,
           "period": {
             "name": [
-              "Late Triassic"
+              "Early Jurassic"
             ],
             "stage": [
-              "Norian",
-              "Rhaetian"
+              "Hettangian",
+              "Sinemurian"
             ],
-            "from_ma": 227,
-            "to_ma": 201.4
+            "from_ma": 201.3,
+            "to_ma": 190.8
           },
           "location": {
             "country": "US",
-            "locality": "Ghost Ranch Quarry",
+            "locality": "near Mount Holyoke College, Connecticut Valley",
             "region": "Massachusetts",
             "formation": "Portland",
             "coordinates": [
-              36.331699,
-              -106.473099
+              42.255,
+              -72.582
             ]
           },
           "size": {
             "length_m": {
-              "min": 1,
-              "max": 1.15
-            },
-            "weight_kg": {
-              "min": 1,
-              "max": 40
+              "min": 0.18,
+              "max": 0.18
             }
           },
           "holotype": {
             "specimen_type": "holotype",
             "institution": "Yale Peabody Museum of Natural History",
             "status": "destroyed",
-            "material": "Never given a collection number; destroyed in a fire at Mount Holyoke College in 1917"
+            "material": "Partial skeleton in two halves of a split boulder, including humerus, shoulder elements, both femora and tibiae, left fibula, metatarsals, digits and unguals, pubis, ischium, ilium, 17 presacral and 13 caudal vertebrae, ribs, abdominal ribs, and possible skull bones. Never given a collection number; destroyed in a fire at Mount Holyoke College in 1917."
           },
           "described": 1911,
           "authors": "Talbot",
