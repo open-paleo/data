@@ -16,17 +16,10 @@ paleoenvironment:
   - fluvial
   - coastal
 diagnostic_features:
-  - Cutting face of crown concave/sunken, with lateral borders and basal cement
-    projecting beyond it
-  - Inferior border of cutting face usually oblique, one side rising diagonally
-  - Weak keel asymmetrically placed close to one border, dividing cutting face
-    into a wide and a narrow concavity
-  - Oblique border incurved, with posterior cement column curving round the
-    cutting face of the dentine
-  - External basal cementum rises highest on the incurved border; surface
-    minutely rugose with punctiform rugosity
-  - Edge of unworn teeth not serrate; dentinal surface delicately rugose in
-    unworn specimens
+  - Marginal ridge and raised cingulum base.
+  - Tall median ridge.
+  - Worn occlusal surface exposing the layered enamel pattern characteristic
+    of ceratopsian teeth.
 identifiers:
   - source: pbdb
     id: "54478"
@@ -51,6 +44,13 @@ species:
       country: US
       region: Montana
       formation: Judith River
+    holotype:
+      specimen_id: [ AMNH 5739 ]
+      specimen_type: holotype
+      institution: AMNH
+      material: Single fragmentary ceratopsian maxillary tooth (base of the crown just
+        above the root) preserving part of one marginal ridge, the raised cingulum
+        base, and part of the tall median ridge; worn occlusal surface present.
     described: 1876
     authors: Cope
     described_in: cope1876
@@ -62,3 +62,12 @@ references:
     journal: Proceedings of the Academy of Natural Sciences of Philadelphia
     volume: "28"
     pages: 248-261
+  - id: coombs1988
+    authors: Coombs, W. P. Jr.; Galton, P. M.
+    year: 1988
+    title: Dysganus, an indeterminate ceratopsian dinosaur
+    journal: Journal of Paleontology
+    pages: 818-821
+    notes: Revises Dysganus and restricts the type series to a single tooth
+      (AMNH 5739); other syntypes removed due to chimeric nature of Cope's
+      original material.
