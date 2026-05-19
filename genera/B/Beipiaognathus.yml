@@ -10,6 +10,19 @@ locomotion: bipedal
 paleoenvironment:
   - lacustrine
   - forested
+diagnostic_features:
+  - Teeth are conical-like and un-serrated (lacking serrations on posterior
+    carinae unlike other compsognathids)
+  - Forelimb relatively long with forelimb/hindlimb ratio of 55%, highest among
+    compsognathids, due to relatively long ulna (femur/ulna = 1.09)
+  - Metacarpal I short and rectangular-shaped, about 24% the length of
+    metacarpal II (distinctly shorter than in other Chinese compsognathids)
+  - Phalanx II-1 is the most robust and longest manual phalanx, wider than the
+    radius (unique among reported compsognathids)
+  - Pedal digit III is longest, followed by digit IV then digit II (digit II
+    shorter than digit IV, unlike Huaxiagnathus and Sinocalliopteryx)
+  - Tail relatively short with no more than 40 caudal vertebrae (fewer than
+    Sinosauropteryx with 64 and Sinocalliopteryx with 49)
 identifiers:
   - source: pbdb
     id: "446220"
@@ -36,6 +49,11 @@ species:
       coordinates:
         - 41.711109
         - 120.713608
+    holotype:
+      specimen_id: [ AGB4997 ]
+      specimen_type: holotype
+      institution: AHM
+      material: Nearly complete skeleton preserved in right lateral view.
     described: 2016
     authors: Hu et al.
     described_in: hu2016
