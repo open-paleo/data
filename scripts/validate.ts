@@ -1095,6 +1095,15 @@ for (const [filePath, doc] of genusParsed)
                     filePath,
                     `species '${species.name ?? "?"}': invalid completeness '${species.completeness}' (must be one of: ${[...allowedCompleteness].join(", ")})`);
             }
+
+            const holotypeCompleteness = species?.holotype?.completeness;
+            if (holotypeCompleteness && !allowedCompleteness.has(holotypeCompleteness))
+            {
+                checkError(
+                    "Locomotion/completeness compliance",
+                    filePath,
+                    `species '${species.name ?? "?"}': invalid holotype.completeness '${holotypeCompleteness}' (must be one of: ${[...allowedCompleteness].join(", ")})`);
+            }
         }
     }
 }

@@ -184,11 +184,6 @@ window.YamlBuilder = (function ()
             species.etymology = values["Species etymology"];
         }
 
-        if (values["Completeness"])
-        {
-            species.completeness = values["Completeness"].toLowerCase();
-        }
-
         const period = {};
 
         if (values["Period"])
@@ -289,6 +284,11 @@ window.YamlBuilder = (function ()
         if (values["Holotype status"])
         {
             holotype.status = values["Holotype status"];
+        }
+
+        if (values["Holotype completeness"])
+        {
+            holotype.completeness = values["Holotype completeness"].toLowerCase();
         }
 
         if (Object.keys(holotype).length > 0)
@@ -680,11 +680,6 @@ window.YamlBuilder = (function ()
             speciesEntry.status = values["Status"].toLowerCase();
         }
 
-        if (values["Completeness"])
-        {
-            speciesEntry.completeness = values["Completeness"].toLowerCase();
-        }
-
         if (values["Year described"])
         {
             speciesEntry.described = parseInt(values["Year described"]);
@@ -782,7 +777,7 @@ window.YamlBuilder = (function ()
             }
         }
 
-        if (values["Holotype specimen ID"] || values["Holotype institution"] || values["Holotype material"] || values["Holotype status"] || values["Holotype type"])
+        if (values["Holotype specimen ID"] || values["Holotype institution"] || values["Holotype material"] || values["Holotype status"] || values["Holotype type"] || values["Holotype completeness"])
         {
             if (!speciesEntry.holotype)
             {
@@ -812,6 +807,11 @@ window.YamlBuilder = (function ()
             if (values["Holotype status"])
             {
                 speciesEntry.holotype.status = values["Holotype status"];
+            }
+
+            if (values["Holotype completeness"])
+            {
+                speciesEntry.holotype.completeness = values["Holotype completeness"].toLowerCase();
             }
         }
 

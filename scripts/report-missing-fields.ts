@@ -140,9 +140,9 @@ const genusChecks: Array<FieldCheck> = [
  */
 const speciesChecks: Array<FieldCheck> = [
     {
-        label: "species.completeness",
+        label: "species.holotype.completeness",
         scope: "species",
-        isPresent: (target) => isPopulated((target as Species).completeness),
+        isPresent: (target) => isPopulated((target as Species).holotype?.completeness),
     },
     {
         label: "species.etymology",

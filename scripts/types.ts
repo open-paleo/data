@@ -74,6 +74,14 @@ export type Holotype = {
      * "unknown"). When set, `institution` should record the last-known repository.
      */
     status?: string;
+
+    /**
+     * Completeness level of the type specimen as preserved. Allowed values
+     * come from `schema.yml` under `completeness` ("complete", "partial",
+     * "fragmentary"). Distinct from `Species.completeness`, which aggregates
+     * holotype plus referred material.
+     */
+    completeness?: string;
 };
 
 /**
@@ -208,7 +216,10 @@ export type Species = {
     type_species?: boolean;
 
     /**
-     * Fossil completeness level from the controlled vocabulary in schema.yml.
+     * Fossil completeness level for the species as a whole, aggregating the
+     * holotype and any referred material. Use `Holotype.completeness` for the
+     * type specimen alone. Allowed values come from `schema.yml` under
+     * `completeness` ("complete", "partial", "fragmentary").
      */
     completeness?: string;
 

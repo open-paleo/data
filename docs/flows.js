@@ -67,7 +67,6 @@ window.Flows = (function ()
                 fields: [
                     { header: "Integument", type: "select", optionsKey: "integument" },
                     { header: "Integument evidence", type: "select", optionsKey: "integument_evidence", showWhen: { field: "Integument", notEmpty: true, notValue: "unknown" } },
-                    { header: "Completeness", type: "select", optionsKey: "completeness" },
                     { header: "Paleoenvironment", type: "checkboxes", optionsKey: "paleoenvironments" },
                     { header: "Appearance features", type: "textarea", placeholder: "One per line" },
                     { header: "Diagnostic features", type: "textarea", placeholder: "One per line" },
@@ -87,6 +86,7 @@ window.Flows = (function ()
                     { header: "Holotype institution", type: "select", optionsKey: "institutions" },
                     { header: "Holotype status", type: "select", optionsKey: "holotype_status", placeholder: "Only set if the specimen is no longer intact" },
                     { header: "Holotype material", type: "text", placeholder: "e.g., partial skeleton including skull" },
+                    { header: "Holotype completeness", type: "select", optionsKey: "completeness" },
                 ],
             },
             {
@@ -131,12 +131,12 @@ window.Flows = (function ()
             {
                 name: "Size & holotype",
                 fields: [
-                    { header: "Completeness", type: "select", optionsKey: "completeness" },
                     { header: "Holotype specimen ID", type: "text", placeholder: "e.g., CM 9380 (comma-separate multiple for syntypes)", validate: "specimenIds" },
                     { header: "Holotype type", type: "select", optionsKey: "specimen_types" },
                     { header: "Holotype institution", type: "select", optionsKey: "institutions" },
                     { header: "Holotype status", type: "select", optionsKey: "holotype_status" },
                     { header: "Holotype material", type: "text" },
+                    { header: "Holotype completeness", type: "select", optionsKey: "completeness" },
                     { header: "Length min (m)", type: "text", placeholder: "e.g., 12", validate: "positiveNumber" },
                     { header: "Length max (m)", type: "text", placeholder: "e.g., 13", validate: "positiveNumber" },
                     { header: "Weight min (kg)", type: "text", placeholder: "e.g., 5400", validate: "positiveNumber" },
@@ -219,12 +219,12 @@ window.Flows = (function ()
                     { header: "Locality", type: "text", currentKey: "species.location.locality" },
                     { header: "Formation", type: "text", currentKey: "species.location.formation" },
                     { header: "Coordinates", type: "text", currentKey: "species.location.coordinates", validate: "coordinates" },
-                    { header: "Completeness", type: "select", optionsKey: "completeness", currentKey: "species.completeness" },
                     { header: "Holotype specimen ID", type: "text", currentKey: "species.holotype.specimen_id", placeholder: "Comma-separate multiple for syntypes", validate: "specimenIds" },
                     { header: "Holotype type", type: "select", optionsKey: "specimen_types", currentKey: "species.holotype.specimen_type" },
                     { header: "Holotype institution", type: "select", optionsKey: "institutions", currentKey: "species.holotype.institution" },
                     { header: "Holotype status", type: "select", optionsKey: "holotype_status", currentKey: "species.holotype.status" },
                     { header: "Holotype material", type: "text", currentKey: "species.holotype.material" },
+                    { header: "Holotype completeness", type: "select", optionsKey: "completeness", currentKey: "species.holotype.completeness" },
                     { header: "Length min (m)", type: "text", currentKey: "species.size.length_m.min", validate: "positiveNumber" },
                     { header: "Length max (m)", type: "text", currentKey: "species.size.length_m.max", validate: "positiveNumber" },
                     { header: "Weight min (kg)", type: "text", currentKey: "species.size.weight_kg.min", validate: "positiveNumber" },
