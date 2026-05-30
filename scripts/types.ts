@@ -82,6 +82,14 @@ export type Holotype = {
      * holotype plus referred material.
      */
     completeness?: string;
+
+    /**
+     * Free-text curatorial notes about the type specimen that do not fit the
+     * structured fields above. Use for nuance the `status` enum cannot capture
+     * (e.g. partial destruction, surviving casts, neotype designation history,
+     * field-designation history).
+     */
+    notes?: string;
 };
 
 /**

@@ -291,6 +291,11 @@ window.YamlBuilder = (function ()
             holotype.completeness = values["Holotype completeness"].toLowerCase();
         }
 
+        if (values["Holotype notes"])
+        {
+            holotype.notes = values["Holotype notes"];
+        }
+
         if (Object.keys(holotype).length > 0)
         {
             species.holotype = holotype;
@@ -777,7 +782,7 @@ window.YamlBuilder = (function ()
             }
         }
 
-        if (values["Holotype specimen ID"] || values["Holotype institution"] || values["Holotype material"] || values["Holotype status"] || values["Holotype type"] || values["Holotype completeness"])
+        if (values["Holotype specimen ID"] || values["Holotype institution"] || values["Holotype material"] || values["Holotype status"] || values["Holotype type"] || values["Holotype completeness"] || values["Holotype notes"])
         {
             if (!speciesEntry.holotype)
             {
@@ -812,6 +817,11 @@ window.YamlBuilder = (function ()
             if (values["Holotype completeness"])
             {
                 speciesEntry.holotype.completeness = values["Holotype completeness"].toLowerCase();
+            }
+
+            if (values["Holotype notes"])
+            {
+                speciesEntry.holotype.notes = values["Holotype notes"];
             }
         }
 

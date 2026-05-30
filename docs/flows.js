@@ -87,6 +87,7 @@ window.Flows = (function ()
                     { header: "Holotype status", type: "select", optionsKey: "holotype_status", placeholder: "Only set if the specimen is no longer intact" },
                     { header: "Holotype material", type: "text", placeholder: "e.g., partial skeleton including skull" },
                     { header: "Holotype completeness", type: "select", optionsKey: "completeness" },
+                    { header: "Holotype notes", type: "text", placeholder: "Free-text curatorial notes (e.g., surviving casts, neotype history)" },
                 ],
             },
             {
@@ -137,6 +138,7 @@ window.Flows = (function ()
                     { header: "Holotype status", type: "select", optionsKey: "holotype_status" },
                     { header: "Holotype material", type: "text" },
                     { header: "Holotype completeness", type: "select", optionsKey: "completeness" },
+                    { header: "Holotype notes", type: "text" },
                     { header: "Length min (m)", type: "text", placeholder: "e.g., 12", validate: "positiveNumber" },
                     { header: "Length max (m)", type: "text", placeholder: "e.g., 13", validate: "positiveNumber" },
                     { header: "Weight min (kg)", type: "text", placeholder: "e.g., 5400", validate: "positiveNumber" },
@@ -225,6 +227,7 @@ window.Flows = (function ()
                     { header: "Holotype status", type: "select", optionsKey: "holotype_status", currentKey: "species.holotype.status" },
                     { header: "Holotype material", type: "text", currentKey: "species.holotype.material" },
                     { header: "Holotype completeness", type: "select", optionsKey: "completeness", currentKey: "species.holotype.completeness" },
+                    { header: "Holotype notes", type: "text", currentKey: "species.holotype.notes" },
                     { header: "Length min (m)", type: "text", currentKey: "species.size.length_m.min", validate: "positiveNumber" },
                     { header: "Length max (m)", type: "text", currentKey: "species.size.length_m.max", validate: "positiveNumber" },
                     { header: "Weight min (kg)", type: "text", currentKey: "species.size.weight_kg.min", validate: "positiveNumber" },
