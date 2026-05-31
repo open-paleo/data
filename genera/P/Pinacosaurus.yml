@@ -2,9 +2,9 @@ genus: Pinacosaurus
 parent: Ankylosaurinae
 pronunciation:
   phonetic: PIN-ak-o-SAWR-us
-etymology: "From Greek 'pinax' meaning 'plank' and 'sauros' meaning 'lizard';
+etymology: From Greek 'pinax' meaning 'plank' and 'sauros' meaning 'lizard';
   translates as 'plank lizard', named for the small rectangular plank-like
-  scutes covering its head."
+  scutes covering its head.
 description: Pinacosaurus is a genus of ankylosaurid thyreophoran dinosaur that
   lived in Asia during the Late Cretaceous (Campanian, roughly 75 to 71 million
   years ago), mainly in Mongolia and China.
@@ -28,9 +28,9 @@ synonyms:
       Dinosaur Genera List.
 species:
   - name: Pinacosaurus grangeri
-    etymology: "Named for Walter W. Granger, the paleontologist who accompanied the
+    etymology: Named for Walter W. Granger, the paleontologist who accompanied the
       1923 American Museum of Natural History Central Asiatic Expedition and
-      discovered the original specimens."
+      discovered the original specimens.
     status: valid
     type_species: true
     period:
@@ -52,19 +52,58 @@ species:
         - 103.692329
     size:
       length_m:
-        min: 5.0
-        max: 5.0
+        min: 5
+        max: 5
       weight_kg:
         min: 1900
         max: 1900
     described: 1933
     authors: Gilmore
-
     holotype:
-      specimen_id: [ AMNH 6523 ]
+      specimen_id:
+        - AMNH 6523
       specimen_type: holotype
       institution: AMNH
     described_in: gilmore1933b
+  - name: Pinacosaurus hilwitnorum
+    etymology: Latinization of the truncated surnames of Robert Hill, Larry
+      Witmer, and Mark Norell, who first described the holotype skull
+      (IGM 100/1014) in 2003 as a referred specimen of P. grangeri.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Campanian
+      from_ma: 75.35
+      to_ma: 72.1
+    location:
+      country: MN
+      locality: Ukhaa Tolgod
+      region: Omnogov
+      formation: Djadokhta
+      coordinates:
+        - 43.664444
+        - 100.901947
+    holotype:
+      specimen_id:
+        - IGM 100/1014
+      specimen_type: holotype
+      institution: IGM
+      material: Skull with lower jaws.
+    diagnostic_features:
+      - Three or more 'C' paranasal apertures plus B (P. grangeri has a single
+        'C' plus B).
+      - More prominent nasal ridges; pointed internarials.
+      - Fused parietals (paired in P. grangeri).
+      - Small triangular sagittal nuchal element (possible postparietal).
+      - Posterior palatal foramen present.
+      - Parallel vertical grooves on teeth (divergent in P. grangeri); reduced
+        scapular medial brace.
+    described: 2026
+    authors: Penkalski
+    described_in: penkalski2026
 references:
   - id: gilmore1933b
     authors: Gilmore, C. W.
@@ -74,3 +113,13 @@ references:
     journal: American Museum Novitates
     volume: "679"
     pages: 1-20
+  - id: penkalski2026
+    authors: Penkalski, Paul
+    year: 2026
+    title: The morphology and systematics of Pinacosaurus
+    journal: Historical Biology
+    pages: 1-42
+    doi: 10.1080/08912963.2026.2633178
+    url: http://dx.doi.org/10.1080/08912963.2026.2633178
+    notes: Revises Pinacosaurus, erecting P. hilwitnorum sp. nov. for the
+      Ukhaa Tolgod skull IGM 100/1014 previously referred to P. grangeri.
