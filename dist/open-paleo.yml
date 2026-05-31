@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-05-31T05:44:56.157Z
+  built_at: 2026-05-31T05:54:53.859Z
   clade_count: 250
-  genus_count: 1389
+  genus_count: 1390
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.05"
@@ -121924,6 +121924,125 @@ genera:
       - Troodontidae
       - Troodontinae
       - Troodontini
+  Xiangyunloong:
+    genus: Xiangyunloong
+    parent: Massopoda
+    etymology: From Chinese 'Xiangyun' (auspicious clouds), the name of the county where the specimen was found, and 'loong', the Pinyin for the traditional Chinese dragon symbolizing power and auspiciousness.
+    description: Xiangyunloong is a genus of non-sauropodan massopodan sauropodomorph dinosaur known from the Early Jurassic Fengjiahe Formation at Daaonai, Xiangyun County, Yunnan Province, China. The genus contains a single species, Xiangyunloong fengming, known from a partial postcranial skeleton of a skeletally mature individual estimated at about 9–10 m in length.
+    diet: herbivore
+    locomotion: bipedal
+    paleoenvironment:
+      - lacustrine
+      - fluvial
+    diagnostic_features:
+      - Lateral expansion developed at the middle region of the dorsal end of cervical neural spines.
+      - Hyposphene of dorsal vertebrae equal to or greater than the height of the neural canal.
+      - Highly developed posterodorsal corner present at the neural spine of the last dorsal vertebra.
+      - Presence of a prezygapophyseal centrodiapophyseal fossa (PRCDF) in the first caudal vertebra, framed by ACDL, CPRL, and PRDL laminae.
+      - Ilium with anteroposteriorly reduced but laterally and ventrally flaring supracetabular crest.
+    identifiers:
+      - source: pbdb
+        id: "519549"
+      - source: wikidata
+        id: Q138801488
+    species:
+      - name: Xiangyunloong fengming
+        etymology: From Chinese 'fengming' (phoenix singing), echoing 'Luming' (deer calling), the name of the town where the fossil was discovered; also honors Lin Fengmian, founding president of the China Academy of Art, whose staff participated in the project.
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Jurassic
+          stage:
+            - Hettangian
+            - Sinemurian
+          from_ma: 201.3
+          to_ma: 192.9
+        location:
+          country: CN
+          region: Yunnan
+          formation: Fengjiahe
+          locality: Daaonai, Xiangyun County
+          coordinates:
+            - 25.328779
+            - 100.760818
+        holotype:
+          specimen_id:
+            - YDDY 10001
+            - YDDY 10002
+            - YDDY 10003
+            - YDDY 10004
+            - YDDY 10005
+            - YDDY 10006
+            - YDDY 10007
+            - YDDY 10008
+            - YDDY 10009
+            - YDDY 10010
+            - YDDY 10011
+            - YDDY 10012
+            - YDDY 10013
+            - YDDY 10014
+            - YDDY 10015
+            - YDDY 10016
+            - YDDY 10017
+            - YDDY 10018
+            - YDDY 10019
+            - YDDY 10020
+            - YDDY 10021
+            - YDDY 10022
+            - YDDY 10023
+            - YDDY 10024
+            - YDDY 10025
+            - YDDY 10026
+            - YDDY 10027
+            - YDDY 10028
+            - YDDY 10029
+            - YDDY 10030
+            - YDDY 10031
+            - YDDY 10032
+            - YDDY 10033
+            - YDDY 10034
+            - YDDY 10035
+            - YDDY 10036
+            - YDDY 10037
+            - YDDY 10038
+            - YDDY 10039
+            - YDDY 10040
+            - YDDY 10041
+          specimen_type: holotype
+          institution: Yunnan Institute of Geological Survey
+          material: "Partial skeleton: three cervical, five dorsal, and fifteen caudal vertebrae; several dorsal rib fragments; nearly a dozen chevrons; an incomplete left ilium; and a right ischium."
+        size:
+          length_m:
+            min: 9
+            max: 10
+        described: 2026
+        authors: Hu et al.
+        described_in: hu2026
+    references:
+      - id: hu2026
+        authors: Hu, Shao-Bin; Wang, Yan-Chao; Mo, Xiong; Zhang, Xiao-Qin; Zeng, Wen-Tao; Wang, Tao; Sun, Zai-Bo; Dong, Qi-Xing; Guan, Qi; Liu, Yi-Hong; Zhang, Yu-Shen; Bing, Yin; Wang, Ya-Ming; You, Hai-Lu
+        year: 2026
+        title: A new sauropodomorph dinosaur from the Lower Jurassic Fengjiahe Formation of Dali of Yunnan Province, China
+        journal: Royal Society Open Science
+        volume: "13"
+        issue: "3"
+        publisher: The Royal Society
+        doi: 10.1098/rsos.252219
+        url: http://dx.doi.org/10.1098/rsos.252219
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Massopoda
   Xianshanosaurus:
     genus: Xianshanosaurus
     parent: Euhelopodidae
