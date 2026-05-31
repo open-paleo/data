@@ -1660,6 +1660,19 @@ for (const [filePath, doc] of allParsed)
                     }
                 }
             }
+
+            if (Array.isArray(species.diagnostic_features))
+            {
+                for (let featureIndex = 0; featureIndex < species.diagnostic_features.length; featureIndex += 1)
+                {
+                    const feature = species.diagnostic_features[featureIndex];
+
+                    if (typeof feature === "string")
+                    {
+                        checkAmericanEnglish(filePath, `${speciesLabel}.diagnostic_features[${featureIndex}]`, feature);
+                    }
+                }
+            }
         }
     }
 
@@ -1851,6 +1864,19 @@ for (const [filePath, doc] of allParsed)
                     if (synonym && typeof synonym.reason === "string")
                     {
                         checkCitationFormat(filePath, `${speciesLabel}.synonyms[${synonymIndex}].reason`, synonym.reason);
+                    }
+                }
+            }
+
+            if (Array.isArray(species.diagnostic_features))
+            {
+                for (let featureIndex = 0; featureIndex < species.diagnostic_features.length; featureIndex += 1)
+                {
+                    const feature = species.diagnostic_features[featureIndex];
+
+                    if (typeof feature === "string")
+                    {
+                        checkCitationFormat(filePath, `${speciesLabel}.diagnostic_features[${featureIndex}]`, feature);
                     }
                 }
             }

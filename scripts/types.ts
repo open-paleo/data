@@ -277,6 +277,17 @@ export type Species = {
     synonyms?: Array<Synonym>;
 
     /**
+     * Technical anatomical features that distinguish this species from
+     * other species within the same genus. Reserved for *intra-genus*
+     * differentia — typically presented in the describing paper for a
+     * non-type species as "differs from G. typeSpecies in...". The
+     * type species's autapomorphies (i.e. the diagnosis of the genus
+     * as originally erected) belong on the genus-level
+     * `diagnostic_features` field instead.
+     */
+    diagnostic_features?: Array<string>;
+
+    /**
      * Reference ID (from the genus references list) of the describing paper.
      */
     described_in?: string;
