@@ -45,8 +45,10 @@ export type Holotype = {
     /**
      * Catalogue numbers comprising the type material (e.g. ["FMNH PR 2081"]).
      * Always an array with at least one element; consumers never branch on
-     * string-vs-array. For holotype/lectotype/neotype this is usually a single
-     * entry; for syntype series it holds all members.
+     * string-vs-array. For holotype/lectotype/neotype this is usually a
+     * single entry but may hold multiple when one individual was catalogued
+     * across a numbered range (each element accessioned separately). For
+     * syntype series it holds all members.
      */
     specimen_id?: Array<string>;
 

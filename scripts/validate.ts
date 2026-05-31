@@ -1196,16 +1196,19 @@ for (const [filePath, doc] of genusParsed)
         else if (hasSpecimenIdArray)
         {
             const idCount = holotype.specimen_id!.length;
-            const singleTypes = new Set(["holotype", "lectotype", "neotype"]);
 
-            if (singleTypes.has(holotype.specimen_type) && idCount !== 1)
-            {
-                checkError(
-                    "Holotype consistency",
-                    filePath,
-                    `species '${speciesLabel}': specimen_type '${holotype.specimen_type}' requires exactly 1 specimen_id (got ${idCount})`);
-            }
-            else if (holotype.specimen_type === "syntype" && idCount < 2)
+            // ICZN-strict definitions place a holotype, lectotype, or
+            // neotype on a single specimen, but modern museum cataloguing
+            // routinely assigns separate accession numbers to each
+            // disarticulated element of one individual (e.g. the Nagatitan
+            // partial skeleton catalogued as SM2025-1-546 through -556).
+            // Trust the contributor: allow multiple specimen_ids for these
+            // singular types, since the validator cannot distinguish "one
+            // individual across multiple numbers" from "multiple specimens
+            // mis-labelled as a single type" and the latter is a review
+            // concern, not a schema one. Syntype, by definition, requires
+            // ≥ 2 distinct specimens, so that constraint stays.
+            if (holotype.specimen_type === "syntype" && idCount < 2)
             {
                 checkError(
                     "Holotype consistency",
