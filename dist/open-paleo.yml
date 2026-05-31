@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-05-30T00:28:11.090Z
+  built_at: 2026-05-31T03:09:04.546Z
   clade_count: 250
-  genus_count: 1382
+  genus_count: 1383
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.05"
@@ -22780,6 +22780,80 @@ genera:
       - Tetanurae
       - Avetheropoda
       - Coelurosauria
+  Bicharracosaurus:
+    genus: Bicharracosaurus
+    parent: Macronaria
+    etymology: From Spanish 'bicharraco' (informal term for 'big animal', used by discoverer Dionide Mesa to refer to the large size of the fossils) and Greek 'sauros' meaning 'lizard'.
+    description: Bicharracosaurus is a genus of macronarian sauropod dinosaur, possibly a brachiosaurid, that existed during the Late Jurassic of Cañadón Calcáreo Formation in what is now Argentina. The genus is monotypic with the type species being Bicharracosaurus dionidei.
+    diet: herbivore
+    locomotion: quadrupedal
+    paleoenvironment:
+      - fluvial
+      - lacustrine
+    diagnostic_features:
+      - CDF in middle and posterior cervical vertebrae pierced by a triangular coel (autapomorphy)
+      - Distal portion of PODL with a small dorsally oriented protuberance in posteriormost cervical vertebrae (autapomorphy)
+      - Boat-like articular facets of sacral centra — wider than high, with straight dorsal margin giving a non-oval outline (autapomorphy)
+      - Ventrally bifurcated postzygodiapophyseal lamina (PODL) in posterior cervical vertebrae
+      - Small triangular fossa anteroventral to pleurocoel in middle to posterior dorsal vertebrae
+      - Second sacral rib with dual contribution from Sa1 and Sa2; ilium with semi-horizontal preacetabular process
+    identifiers:
+      - source: pbdb
+        id: "519438"
+      - source: wikidata
+        id: Q139386697
+    species:
+      - name: Bicharracosaurus dionidei
+        etymology: Honors Dionide Mesa, the local farmer who discovered the holotype on his farm.
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Oxfordian
+            - Kimmeridgian
+          from_ma: 161.5
+          to_ma: 152.1
+        location:
+          country: AR
+          region: Chubut
+          formation: Cañadón Calcáreo
+          locality: Dionide 3
+        holotype:
+          specimen_id:
+            - MPEF-PV 1730
+          specimen_type: holotype
+          institution: Museo Paleontológico "Egidio Feruglio"
+          material: Seven middle to posterior cervical vertebrae, four cervical ribs, complete dorsal column of ten vertebrae, ten dorsal ribs, five articulated sacral centra with sacricostal yoke fused to preacetabular process of right ilium, nine caudal vertebrae, one fragmentary chevron
+        described: 2026
+        authors: Reutter et al.
+        described_in: reutter2026
+    references:
+      - id: reutter2026
+        authors: Reutter, Alexandra; Carballido, José Luis; Windholz, Guillermo José; Pol, Diego; Rauhut, Oliver W.M.
+        year: 2026
+        title: Bicharracosaurus dionidei, gen. et sp. nov., a new macronarian (Dinosauria, Sauropoda) from the Late Jurassic Cañadón Calcáreo Formation of Argentina and the problematic early evolution of macronarians
+        journal: PeerJ
+        volume: "14"
+        pages: e20945
+        publisher: PeerJ
+        doi: 10.7717/peerj.20945
+        url: http://dx.doi.org/10.7717/peerj.20945
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Sauropoda
+      - Macronaria
   Bissektipelta:
     genus: Bissektipelta
     parent: Ankylosauridae
