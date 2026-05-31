@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-31T22:50:26.460Z",
+    "built_at": "2026-05-31T22:56:25.339Z",
     "clade_count": 250,
     "genus_count": 1391,
     "license": "CC-BY-4.0",
@@ -67547,6 +67547,14 @@
       "description": "Haplocanthosaurus is a genus of diplodocoid sauropod dinosaur. Two species, H. delfsi and H. priscus, are known from incomplete fossil skeletons. They lived during the Late Jurassic (Kimmeridgian stage), 155 to 152 million years ago in North America. The type species is H. priscus, named in 1903 John Bell Hatcher , and the referred species H. delfsi was discovered by a young college student named Edwin Delfs in Colorado, United States and described by Jack McIntosh and Michael Williams in 1988. Haplocanthosaurus specimens have been found in the lowermost layer of the Morrison Formation, along with Hesperosaurus mjosi, Brontosaurus yahnahpin, and Allosaurus jimmadseni.",
       "diet": "herbivore",
       "locomotion": "quadrupedal",
+      "diagnostic_features": [
+        "Cervical vertebrae of only moderate length with prominent but simple pleurocoels; neural spines of posterior cervicals and anterior dorsals undivided.",
+        "Dorsal centra relatively small with prominent pleurocoels; dorsal arches high with diapophyses directed upward at 45 degrees as well as outward; spines short and broad.",
+        "Sacrum of five vertebrae (dorso-sacral, three primary sacrals, caudo- sacral) with coossified centra and sacral ribs forming a yoke; spines with tendency toward coalescence particularly in sacrals one through three.",
+        "Caudal centra amphicoelous, short, without pleurocentral cavities; chevron facets very prominent giving the underside of each centrum a sculptured appearance; anterior caudal spines slender and curved backward.",
+        "Distal end of scapula thin and broadly splayed; proximal plate relatively small; sternal plates large and subquadrangular.",
+        "Ischium shaft straight with distal end slightly broadened but not thickened; femur with latero-medial shaft diameter significantly exceeding the antero-posterior diameter."
+      ],
       "paleoenvironment": [
         "fluvial",
         "lacustrine"
@@ -67604,8 +67612,16 @@
               "CM 572"
             ],
             "specimen_type": "holotype",
-            "institution": "Carnegie Museum of Natural History"
+            "institution": "Carnegie Museum of Natural History",
+            "material": "Two posterior cervicals, ten dorsals, five sacrals with ilia, ischia and pubes, nineteen anterior caudals, two chevrons, a nearly complete series of ribs, and a femur."
           },
+          "synonyms": [
+            {
+              "name": "Haplocanthus priscus",
+              "type": "preoccupied",
+              "reason": "Original combination (Hatcher, 1903a). The genus name Haplocanthus is preoccupied by a fish and was replaced in the same volume by Haplocanthosaurus (Hatcher, 1903b)."
+            }
+          ],
           "size": {
             "length_m": {
               "min": 14.8,
@@ -67647,7 +67663,18 @@
               "CMNH 10380"
             ],
             "specimen_type": "holotype",
-            "institution": "Cleveland Museum of Natural History"
+            "institution": "Cleveland Museum of Natural History",
+            "material": "Cervicals 1 to 4; nine posterior dorsals with left-side ribs; five sacrals; caudals 1 to 14; several chevrons; left scapula shaft and distal end; fragmentary coracoid; right sternal plate; proximal left radius and ulna; both ilia; left pubis; left ischium; left femur."
+          },
+          "diagnostic_features": [
+            "V-shaped, anterolaterally projecting laminae present on neural spines of the middle dorsal vertebrae.",
+            "Distal end of ischium not rotated inward and not fused to its opposite member in the midline."
+          ],
+          "size": {
+            "length_m": {
+              "min": 21,
+              "max": 21.3
+            }
           },
           "described": 1988,
           "authors": "McIntosh & Williams",
@@ -67682,7 +67709,8 @@
           "title": "A new species of sauropod dinosaur, Haplocanthosaurus delfsi sp. nov., from the Upper Jurassic Morrison Formation of Colorado",
           "journal": "Kirtlandia",
           "volume": "43",
-          "pages": "3-26"
+          "pages": "3-26",
+          "notes": "Describes the second species H. delfsi on a ~21 m mounted skeleton from the lower Morrison of Oil Creek, Colorado; presents a revised genus diagnosis."
         }
       ],
       "taxonomy": [
