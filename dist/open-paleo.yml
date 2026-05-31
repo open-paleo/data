@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-05-31T05:54:53.859Z
+  built_at: 2026-05-31T06:11:21.738Z
   clade_count: 250
   genus_count: 1390
   license: CC-BY-4.0
@@ -106683,6 +106683,40 @@ genera:
         described: 1915
         authors: Stromer
         described_in: stromer1915
+      - name: Spinosaurus mirabilis
+        etymology: From Latin 'mirabilis' meaning 'astonishing', in reference to the hypertrophied scimitar-shaped nasal-prefrontal crest of the holotype.
+        status: valid
+        type_species: false
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Cenomanian
+          from_ma: 100
+          to_ma: 95
+        location:
+          country: NE
+          region: Agadez Region
+          formation: Farak
+          locality: Sirig Taghat, Jenguebi area
+          coordinates:
+            - 16.97349
+            - 8.06629
+        holotype:
+          specimen_id:
+            - MNBH JEN1
+          specimen_type: holotype
+          institution: Musée National Boubou Hama
+          material: Associated right premaxilla, both maxillae, base and bottom half of the fused nasal crest with portions of both prefrontals, alveolar edge of the right dentary, and five maxillary teeth.
+        diagnostic_features:
+          - Low snout with parallel dorsal and ventral margins in lateral profile.
+          - Greater spacing of posterior maxillary and opposing dentary teeth.
+          - Scimitar-shaped nasal-prefrontal crest arching upward and backward with a lateral eminence offset toward the anterior margin; the crest is proportionally taller, exceeding cranium height at the orbits (lower and more fluted in S. aegyptiacus).
+          - Postaxial cervical pleurocoels with greater anteroposterior diameter than adjacent parapophyseal articular facets.
+          - Tibial articular depression for the ascending process of the astragalus reduced in area, with the medial malleolus edge exposed in anterior view.
+        described: 2026
+        authors: Sereno, Vidal, Myhrvold, et al.
+        described_in: sereno2026
     references:
       - id: stromer1915
         authors: Stromer, E.
@@ -106712,6 +106746,16 @@ genera:
         doi: 10.1126/science.1258750
         url: http://dx.doi.org/10.1126/science.1258750
         notes: Designates FSAC-KK 11888 (Kem Kem beds, Morocco) as the neotype of Spinosaurus aegyptiacus and argues for semi-aquatic, facultatively quadrupedal habits and pachyostotic limb bones.
+      - id: sereno2026
+        authors: Sereno, Paul C.; Vidal, Daniel; Myhrvold, Nathan P.; et al.
+        year: 2026
+        title: Scimitar-crested Spinosaurus species from the Sahara caps stepwise spinosaurid radiation
+        journal: Science
+        volume: "391"
+        pages: eadx5486
+        doi: 10.1126/science.adx5486
+        url: http://dx.doi.org/10.1126/science.adx5486
+        notes: Erects Spinosaurus mirabilis from the Cenomanian Farak Formation of Niger on the basis of MNBH JEN1, a subadult cranium with a hypertrophied scimitar-shaped nasal-prefrontal crest.
     taxonomy:
       - Life
       - Animalia
