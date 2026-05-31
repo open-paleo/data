@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-31T03:09:04.546Z",
+    "built_at": "2026-05-31T03:37:51.108Z",
     "clade_count": 250,
-    "genus_count": 1383,
+    "genus_count": 1384,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
     "version": "2026.05"
@@ -43732,6 +43732,120 @@
         "Saurischia",
         "Theropoda",
         "Tetanurae"
+      ]
+    },
+    "Cryptarcus": {
+      "genus": "Cryptarcus",
+      "parent": "Chasmosaurinae",
+      "etymology": "From Latin 'crypticus' (hidden) and 'arcus' (arch); refers both to the morphology of the transverse parietal bar and to the type species long being hidden within the genus Chasmosaurus.",
+      "description": "Cryptarcus is a genus of ceratopsid dinosaur found in the Dinosaur Park Formation of Alberta, dating to the middle Campanian age of the Late Cretaceous. The holotype skull measures approximately 94 centimeters in length.",
+      "diet": "herbivore",
+      "locomotion": "quadrupedal",
+      "paleoenvironment": [
+        "fluvial",
+        "coastal"
+      ],
+      "diagnostic_features": [
+        "Posteroventral process of premaxilla terminates with a spatulate, non-tapering distal end.",
+        "Episquamosal bases become progressively longer posteriorly until the second-to-last episquamosal; the most posterior episquamosal then reverses the trend by being distinctly smaller.",
+        "Epiparietals 1 and 2 both have low dome-shaped profiles with lenticular loci.",
+        "Epiparietals 1 and 2 are fused with a visible suture and located entirely on the dorsal surface of the posterior parietal bar within the midline embayment.",
+        "Medial-most epiparietal (ep1) located at the base of the deep median parietal embayment with its locus nearly touching its bilateral counterpart at the midline.",
+        "Lateral portion of epiparietal 2 turns onto the posterior edge of the transverse parietal bar while its anteromedial end occupies the dorsal bar surface."
+      ],
+      "identifiers": [
+        {
+          "source": "wikidata",
+          "id": "Q138779970"
+        }
+      ],
+      "species": [
+        {
+          "name": "Cryptarcus russelli",
+          "etymology": "Honors Loris S. Russell, the paleontologist who discovered the holotype skull in 1936.",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Campanian"
+            ],
+            "from_ma": 83.6,
+            "to_ma": 72.2
+          },
+          "location": {
+            "country": "CA",
+            "region": "Alberta",
+            "formation": "Dinosaur Park",
+            "locality": "Onefour",
+            "coordinates": [
+              49.12,
+              -110.47
+            ]
+          },
+          "holotype": {
+            "specimen_id": [
+              "CMNFV 8800"
+            ],
+            "specimen_type": "holotype",
+            "institution": "Canadian Museum of Nature",
+            "material": "Mostly complete cranium exposed in left lateral view; rostral, portions of left orbital rim, ventral jugal flange, left quadrate, left quadratojugal, right frill half, and lower jaws missing or reconstructed in plaster."
+          },
+          "synonyms": [
+            {
+              "name": "Chasmosaurus russelli",
+              "type": "reassigned",
+              "reason": "Originally described as Chasmosaurus russelli by Sternberg (1940); Holmes et al. (2026) reassessed the holotype (CMNFV 8800) and erected the new genus Cryptarcus to receive the species, treating the prior combination as a recombination (comb. nov.)."
+            }
+          ],
+          "described": 1940,
+          "authors": "Sternberg",
+          "described_in": "sternberg1940"
+        }
+      ],
+      "references": [
+        {
+          "id": "holmes2026",
+          "authors": "Holmes, Robert B.; Mallon, Jordan C.; Ryan, Michael J.; Evans, David C.",
+          "year": 2026,
+          "title": "New information on the holotype of \"Chasmosaurus\" russelli (Ornithischia, Ceratopsidae) necessitates the establishment of a new genus to receive the species",
+          "journal": "Canadian Journal of Earth Sciences",
+          "volume": "63",
+          "pages": "0031",
+          "doi": "10.1139/cjes-2025-0031",
+          "url": "http://dx.doi.org/10.1139/cjes-2025-0031",
+          "notes": "Erects Cryptarcus for 'Chasmosaurus' russelli Sternberg, 1940 after re-preparing the holotype; iterative phylogeny could not resolve its placement within any existing chasmosaurine genus."
+        },
+        {
+          "id": "sternberg1940",
+          "authors": "Sternberg, C. M.",
+          "year": 1940,
+          "title": "Ceratopsidae from Alberta",
+          "journal": "Journal of Paleontology",
+          "volume": "14",
+          "pages": "468-480",
+          "notes": "Original description of Chasmosaurus russelli, the species recombined as Cryptarcus russelli by Holmes et al. (2026)."
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Cerapoda",
+        "Marginocephalia",
+        "Ceratopsia",
+        "Ceratopsidae",
+        "Chasmosaurinae"
       ]
     },
     "Cryptosaurus": {
