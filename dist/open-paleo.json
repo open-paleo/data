@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-31T04:46:52.748Z",
+    "built_at": "2026-05-31T04:58:48.468Z",
     "clade_count": 250,
-    "genus_count": 1385,
+    "genus_count": 1386,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
     "version": "2026.05"
@@ -80529,6 +80529,117 @@
         "Clypeodonta",
         "Iguanodontia",
         "Elasmaria"
+      ]
+    },
+    "Kank": {
+      "genus": "Kank",
+      "parent": "Unenlagiinae",
+      "etymology": "From Kank, the elder Rhea in Aonikenk (Tehuelche) mythology who created the constellation Choiols (the Southern Cross), referring to the taxon's southern Patagonian provenance.",
+      "description": "Kank is an extinct genus of unenlagiid paravian dinosaur known from the Late Cretaceous (Maastrichtian age) Chorrillo Formation of southwestern Patagonia, Argentina. The genus contains a single species, Kank australis, known from fragmentary remains.",
+      "diet": "carnivore",
+      "locomotion": "bipedal",
+      "paleoenvironment": [
+        "fluvial",
+        "wetland",
+        "lacustrine"
+      ],
+      "diagnostic_features": [
+        "Cervicodorsal vertebra bearing three small pneumatic foramina on its ventral surface within the carotid groove",
+        "Cervicodorsal vertebra with a deep, wide 'epipophyseal fossa' between the postzygapophysis and the epipophysis in posterior view",
+        "Dentary teeth with a crenulate mesial carina restricted to the apical third of the crown, with irregular, gently crenulate, non-individualized denticles",
+        "Pedal phalanx II-2 with dorsoventrally depressed distal condyles near half the height of the proximal articular surface, and collateral pits positioned very close to the anterodorsal corner of the condyles"
+      ],
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "520479"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q139979324"
+        }
+      ],
+      "species": [
+        {
+          "name": "Kank australis",
+          "etymology": "From Latin 'australis' meaning 'southern', referring to the southern latitude of the type locality.",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Maastrichtian"
+            ],
+            "from_ma": 72.1,
+            "to_ma": 66
+          },
+          "location": {
+            "country": "AR",
+            "region": "Santa Cruz",
+            "formation": "Chorrillo",
+            "locality": "La Anita Farm",
+            "coordinates": [
+              -50.518612,
+              -72.563889
+            ]
+          },
+          "holotype": {
+            "specimen_id": [
+              "MPM-PV-23106-A"
+            ],
+            "specimen_type": "holotype",
+            "institution": "Museo Padre Molina, Rio Gallegos",
+            "material": "Cervicodorsal vertebra (CV10)."
+          },
+          "size": {
+            "length_m": {
+              "min": 2,
+              "max": 2
+            },
+            "weight_kg": {
+              "min": 27,
+              "max": 27
+            }
+          },
+          "described": 2026,
+          "authors": "Motta et al.",
+          "described_in": "motta2026"
+        }
+      ],
+      "references": [
+        {
+          "id": "motta2026",
+          "authors": "Motta, Matías J.; Aranciaga Rolando, Alexis M.; Rozadilla, Sebastián; Agnolín, Federico L.; Egli, Federico Brissón; Álvarez Herrera, Gerardo P.; Chimento, Nicolás R.; Coco, Gastón Lo; Tsuihiji, Takanobu; Manabe, Makoto; Pol, Diego; Novas, Fernando E.",
+          "year": 2026,
+          "title": "New unenlagiid from the Chorrillo Formation (Late Cretaceous, Maastrichtian), SW Patagonia, Argentina",
+          "journal": "Journal of Vertebrate Paleontology",
+          "doi": "10.1080/02724634.2026.2656456",
+          "url": "http://dx.doi.org/10.1080/02724634.2026.2656456"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Coelurosauria",
+        "Maniraptora",
+        "Paraves",
+        "Deinonychosauria",
+        "Dromaeosauridae",
+        "Unenlagiinae"
       ]
     },
     "Kansaignathus": {
