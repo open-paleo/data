@@ -3,13 +3,21 @@ parent: Leptoceratopsidae
 etymology: "Named for the gremlin, a small troublesome mythical creature."
 description: Gremlin is a genus of leptoceratopsid ceratopsian dinosaurs from
   the Campanian stage of the Cretaceous period, 77 million years ago. It
-  contains one species, Gremlin slobodorum, named in 2023 by Michael J. Ryan and
-  colleagues from a frontal bone found in the Oldman Formation of Alberta. It
-  can be distinguished from other leptoceratopsids by a ridge on the frontal
-  that runs transversely from the midline of the skull outwards to the top end
-  of the orbit.
+  contains one species, Gremlin slobodorum, named in 2023 by Michael J. Ryan
+  and colleagues from a frontal bone found in the Oldman Formation of Alberta.
 diet: herbivore
 locomotion: quadrupedal
+diagnostic_features:
+  - Transverse ridge on the frontal extends across the dorsal surface from the
+    medial margin to the anterodorsal border of the orbit.
+  - Transverse ridge separated from the raised, crescentic anterior border of
+    the frontal depression by a narrow band of smooth bone that continues as
+    the smooth surface of the depression.
+  - Transverse ridge and anterior margin of the frontal depression both diverge
+    from the same point on the slightly raised medial frontal margin.
+  - Transverse ridge marks the point of maximum thickness of the frontal, from
+    which the bone tapers anteriorly and sharply posteriorly across the frontal
+    depression.
 paleoenvironment:
   - fluvial
   - coastal
@@ -47,6 +55,8 @@ species:
       specimen_id: [ TMP 2011.053.0027 ]
       specimen_type: holotype
       institution: TMP
+      material: Incomplete right frontal lacking a portion of the anterolateral
+        margin.
     described_in: ryan2023
 references:
   - id: ryan2023
