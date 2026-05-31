@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-05-31T03:37:51.108Z",
+    "built_at": "2026-05-31T03:52:27.482Z",
     "clade_count": 250,
-    "genus_count": 1384,
+    "genus_count": 1385,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
     "version": "2026.05"
@@ -54275,6 +54275,120 @@
         "Maniraptora",
         "Oviraptorosauria",
         "Caenagnathidae"
+      ]
+    },
+    "Eopinacosaurus": {
+      "genus": "Eopinacosaurus",
+      "parent": "Ankylosaurinae",
+      "etymology": "From Greek 'eos' meaning 'dawn' plus Pinacosaurus, referring to the apparent lower stratigraphic or systematic position of the species relative to Pinacosaurus grangeri.",
+      "description": "Eopinacosaurus is an extinct genus of ankylosaurid armored dinosaur known from the Late Cretaceous (Campanian) Bayan Mandahu Formation of Inner Mongolia, China, with a referred skull from the coeval Djadokhta Formation of Mongolia. The genus contains a single species, Eopinacosaurus mephistocephalus, originally assigned to the coeval genus Pinacosaurus.",
+      "diet": "herbivore",
+      "locomotion": "quadrupedal",
+      "paleoenvironment": [
+        "arid"
+      ],
+      "diagnostic_features": [
+        "Supranarial embayment absent.",
+        "Lacrimal incisure absent or rudimentary.",
+        "Nasoprefrontal pyramid absent.",
+        "Knife-shaped, caudolaterally directed squamosal horns.",
+        "Medial segments of first cervical half-ring (h.r.1) broadly oval, with scythe-shaped medial osteoderms.",
+        "Straight dorsal border of scapula; no sulcus between anterior and posterior supraorbitals."
+      ],
+      "appearance": {
+        "integument": "armored"
+      },
+      "identifiers": [
+        {
+          "source": "wikidata",
+          "id": "Q139770360"
+        }
+      ],
+      "species": [
+        {
+          "name": "Eopinacosaurus mephistocephalus",
+          "etymology": "Honors Mephistopheles (the devil of Faust) plus Greek 'kephalē' meaning 'head', referencing the distinctive squamosal horns.",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Campanian"
+            ],
+            "from_ma": 83.6,
+            "to_ma": 72.2
+          },
+          "location": {
+            "country": "CN",
+            "region": "Nei Mongol",
+            "formation": "Bayan Mandahu",
+            "locality": "Bayan Mandahu",
+            "coordinates": [
+              41.702133,
+              106.756721
+            ]
+          },
+          "holotype": {
+            "specimen_id": [
+              "IMM 96BM3/1"
+            ],
+            "specimen_type": "holotype",
+            "institution": "Inner Mongolia Museum, Hohhot",
+            "material": "Articulated subadult skeleton with skull, both cervical half-rings, and a nearly complete postcranium in situ; some limb elements and dorsal armor are missing."
+          },
+          "synonyms": [
+            {
+              "name": "Pinacosaurus mephistocephalus",
+              "type": "reassigned",
+              "reason": "Originally described as Pinacosaurus mephistocephalus by Godefroit et al. (1999); Penkalski (2026) transferred the species to the new genus Eopinacosaurus after a specimen-level phylogenetic analysis recovered the holotype outside Pinacosaurus sensu stricto."
+            }
+          ],
+          "described": 1999,
+          "authors": "Godefroit, Pereda-Suberbiola, Li & Dong",
+          "described_in": "godefroit1999"
+        }
+      ],
+      "references": [
+        {
+          "id": "penkalski2026",
+          "authors": "Penkalski, Paul",
+          "year": 2026,
+          "title": "The morphology and systematics of Pinacosaurus",
+          "journal": "Historical Biology",
+          "pages": "1-42",
+          "doi": "10.1080/08912963.2026.2633178",
+          "url": "http://dx.doi.org/10.1080/08912963.2026.2633178",
+          "notes": "Erects Eopinacosaurus to receive 'Pinacosaurus' mephistocephalus Godefroit et al. 1999 and recognizes Pinacosaurus hilwitnorum sp. nov. as a second species of Pinacosaurus sensu stricto."
+        },
+        {
+          "id": "godefroit1999",
+          "authors": "Godefroit, P.; Pereda-Suberbiola, X.; Li, H.; Dong, Z. M.",
+          "year": 1999,
+          "title": "A new species of the ankylosaurid dinosaur Pinacosaurus from the Late Cretaceous of Inner Mongolia (P.R. China)",
+          "journal": "Bulletin de l'Institut Royal des Sciences Naturelles de Belgique, Sciences de la Terre",
+          "volume": "69",
+          "issue": "supp. B",
+          "pages": "17-36",
+          "notes": "Original description of Pinacosaurus mephistocephalus (IMM 96BM3/1) from the Bayan Mandahu Formation, recombined as Eopinacosaurus mephistocephalus by Penkalski (2026)."
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Thyreophora",
+        "Ankylosauria",
+        "Ankylosauridae",
+        "Ankylosaurinae"
       ]
     },
     "Eoraptor": {
