@@ -15,6 +15,20 @@ description: Gilmoreosaurus is a genus of hadrosauromorphan dinosaur from the
   Bactrosaurus.
 diet: herbivore
 locomotion: facultative
+diagnostic_features:
+  - Maxillary dental series with only 29 vertical tooth rows in adults.
+  - Maxillary apex of triangular outline located near mid-length of bone.
+  - Maxillary teeth spatulate with a low, sharp-edged median carina and
+    papillae present on all teeth of the maxillary series.
+  - Dorsal vertebrae with relatively short spinous processes (approximately
+    2.25 times centrum height) without transverse club-shaped thickening, and
+    centra with a longitudinal ventral keel.
+  - Sacral spinous processes broad fore-aft (widest measuring 82 mm) without
+    upward thickening, with posterior sacral centra traversed by a median
+    longitudinal ventral channel.
+  - Scapula with a nearly straight upper border and only moderately expanded
+    blade; predentary strongly U-shaped with a transverse ventral depression
+    at the anterior end and no posteriorly directed median process.
 paleoenvironment:
   - fluvial
 identifiers:
@@ -60,6 +74,19 @@ species:
       specimen_id: [AMNH 6551]
       specimen_type: holotype
       institution: AMNH
+      material: Disarticulated skull elements (maxillary, dentary fragment,
+        squamosal, quadrates, lacrimals, jugal, predentary), cervical, dorsal,
+        sacral, and caudal vertebrae, scapulae, coracoids, humerus, ulna,
+        radius, ilia, pubis, femur, tibia, and pes elements.
+      notes: AMNH 6551 was originally one of two cotypes (with AMNH 6371)
+        under Gilmore (1933); Brett-Surman (1979) erected the genus
+        Gilmoreosaurus and treats AMNH 6551 as the holotype.
+    synonyms:
+      - name: Mandschurosaurus mongoliensis
+        type: junior subjective
+        reason: Original combination (Gilmore, 1933). Brett-Surman (1979)
+          erected the new genus Gilmoreosaurus to accommodate this species
+          after Mandschurosaurus amurensis was identified as a nomen dubium.
 references:
   - id: brett-surman1979
     authors: BRETT-SURMAN, M. K.
@@ -72,3 +99,14 @@ references:
     publisher: Springer Science and Business Media LLC
     doi: 10.1038/277560a0
     url: http://dx.doi.org/10.1038/277560a0
+  - id: gilmore1933a
+    authors: Gilmore, C. W.
+    year: 1933
+    title: On the dinosaurian fauna of the Iren Dabasu Formation
+    journal: Bulletin of the American Museum of Natural History
+    volume: "68"
+    issue: "2-3"
+    pages: 23-78
+    notes: Original description of the species as Mandschurosaurus
+      mongoliensis on cotype material AMNH 6551 and AMNH 6371 from the Iren
+      Dabasu Formation, Inner Mongolia.
