@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-05-31T18:47:11.000Z
+  built_at: 2026-05-31T20:07:43.516Z
   clade_count: 250
-  genus_count: 1390
+  genus_count: 1391
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.05"
@@ -22887,6 +22887,90 @@ genera:
       - Sauropodomorpha
       - Sauropoda
       - Macronaria
+  Bienosaurus:
+    genus: Bienosaurus
+    parent: Thyreophora
+    etymology: From the surname Bien (in honor of M. N. Bien, collector of the holotype) plus Greek sauros ('lizard'); meaning 'Bien's lizard'.
+    description: Bienosaurus is a dubious genus of thyreophoran dinosaur from the Early Jurassic (probably Hettangian to Sinemurian) Lower Lufeng Formation of Yunnan Province in China.
+    diet: herbivore
+    diagnostic_features:
+      - Predentary short and wide
+      - Frontal thick, with small bony scutes fused to dorsal surface
+      - Dentary wide with ornamented lateral surface
+      - Teeth small and leaf-shaped with symmetrical crowns and developed cingulum
+    paleoenvironment:
+      - fluvial
+    appearance:
+      integument: armored
+    identifiers:
+      - source: pbdb
+        id: "66519"
+      - source: wikidata
+        id: Q142105
+      - source: gbif
+        id: "4823055"
+    species:
+      - name: Bienosaurus lufengensis
+        etymology: From Lufeng (the Lufeng Basin, where the holotype was found) and Latin -ensis ('from'); meaning 'from Lufeng'.
+        status: nomen dubium
+        type_species: true
+        period:
+          name:
+            - Early Jurassic
+          stage:
+            - Hettangian
+            - Sinemurian
+          from_ma: 201.3
+          to_ma: 192.9
+        location:
+          country: CN
+          region: Yunnan
+          formation: Lufeng
+          locality: Dark Red Beds, Lower Lufeng Formation
+          coordinates:
+            - 25.15
+            - 102.083336
+        holotype:
+          specimen_id:
+            - IVPP V15311
+          specimen_type: holotype
+          institution: Institute of Vertebrate Paleontology and Paleoanthropology
+          material: Nearly complete right lower jaw, fragmentary frontal, and other cranial fragments.
+          notes: Originally cataloged by Dong as IVPP V 9612, but Raven et al. (2019) reassigned the specimen to IVPP V15311 because V 9612 was already in use for the holotype of Sinornithoides youngi.
+        described: 2001
+        authors: Dong
+        described_in: dong2001b
+    references:
+      - id: dong2001b
+        authors: Dong, Z.
+        year: 2001
+        title: Primitive armored dinosaur from the Lufeng Basin, China
+        journal: Mesozoic Vertebrate Life (Tanke, D. H. and Carpenter, K., eds.)
+        publisher: Indiana University Press, Bloomington and Indianapolis
+        pages: 237-242
+      - id: raven2019
+        authors: Raven, T. J.; Barrett, P. M.; Xu, X.; Maidment, S. C. R.
+        year: 2019
+        title: A reassessment of the purported ankylosaurian dinosaur Bienosaurus lufengensis from the Lower Lufeng Formation of Yunnan, China
+        journal: Acta Palaeontologica Polonica
+        volume: "64"
+        issue: "2"
+        pages: 335-342
+        doi: 10.4202/app.00577.2018
+        url: http://dx.doi.org/10.4202/app.00577.2018
+        notes: Reassessment concluding Bienosaurus lufengensis is a nomen dubium and an indeterminate basal thyreophoran, not an ankylosaurian; corrects the holotype catalog number from V 9612 to V15311.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Thyreophora
   Bissektipelta:
     genus: Bissektipelta
     parent: Ankylosauridae
@@ -94490,9 +94574,9 @@ genera:
           institution: Pukyong National University Museum
           material: Partial skeleton.
           completeness: partial
-        described_in: dong2001
+        described_in: dong2001a
     references:
-      - id: dong2001
+      - id: dong2001a
         authors: Dong, Z.; Paik, I. S.; H. J. Kim
         year: 2001
         title: A preliminary report on a sauropod from the Hasandong Formation (Lower Cretaceous), Korea
