@@ -15,12 +15,17 @@
 //
 // Usage:
 //   npm run intake-resume -- Bagaraatan
+//   npm run intake-resume -- Bagaraatan --corpus /custom/path
+//
+// The corpus root resolves through `getCorpusDir()` — honoring the
+// `OPEN_PALEO_PAPERS_DIR` env var, falling back to a sibling
+// `../open-paleo-papers/` directory. See scripts/corpus-path.ts.
 
 import * as fs from "node:fs";
-import * as os from "node:os";
 import * as path from "node:path";
 import * as url from "node:url";
 
+import { getCorpusDir } from "./corpus-path.ts";
 import { readBibCitationKeys, resolveCitationKey } from "./utilities.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
@@ -29,8 +34,6 @@ const root = path.join(scriptDir, "..");
 
 const stagingIntakeDir = path.join(root, "staging", "intake");
 const referencesBibPath = path.join(root, "dist", "references.bib");
-const corpusDir = path.join(os.homedir(), "Desktop", "open-paleo-papers");
-const corpusMarkdownDir = path.join(corpusDir, "markdown");
 
 /**
  * One extraction prompt: a describing or supplementary paper that
@@ -220,20 +223,64 @@ function buildIntakePromptString(entry: Omit<IntakePromptEntry, "prompt">): stri
 }
 
 /**
+ * Parses the CLI arguments for the resume step.
+ *
+ * @param argv - Raw arguments (typically `process.argv.slice(2)`).
+ * @returns The genus name and corpus directory to use.
+ */
+function parseArguments(argv: Array<string>): { genus: string; corpusDir: string }
+{
+    const positional = new Array<string>();
+    let corpusDir = getCorpusDir();
+
+    for (let index = 0; index < argv.length; index += 1)
+    {
+        const argument = argv[index];
+
+        if (argument === "--corpus")
+        {
+            corpusDir = argv[index + 1] ?? corpusDir;
+            index += 1;
+        }
+        else if (argument.startsWith("--"))
+        {
+            throw new Error(`Unknown argument: ${argument}`);
+        }
+        else
+        {
+            positional.push(argument);
+        }
+    }
+
+    if (positional.length !== 1)
+    {
+        throw new Error("Usage: intake-resume <Genus> [--corpus <path>]");
+    }
+
+    return { genus: positional[0], corpusDir };
+}
+
+/**
  * Resume entry point.
  */
 function main(): void
 {
-    const args = process.argv.slice(2);
-    const positional = args.filter((arg) => !arg.startsWith("--"));
+    let genus: string;
+    let corpusDir: string;
 
-    if (positional.length !== 1)
+    try
     {
-        process.stderr.write("Usage: intake-resume <Genus>\n");
+        const parsed = parseArguments(process.argv.slice(2));
+        genus = parsed.genus;
+        corpusDir = parsed.corpusDir;
+    }
+    catch (error)
+    {
+        process.stderr.write(`${(error as Error).message}\n`);
         process.exit(2);
     }
 
-    const genus = positional[0];
+    const corpusMarkdownDir = path.join(corpusDir, "markdown");
     const targetDir = path.join(stagingIntakeDir, genus);
 
     if (!fs.existsSync(targetDir))
@@ -307,7 +354,7 @@ function main(): void
             process.stderr.write(`  - "${collision.key}": ${collision.reason}\n`);
             process.stderr.write(
                 `    Use "${collision.suggested}" instead. Update papers-needed.md and rename `
-                + `~/Desktop/open-paleo-papers/markdown/${collision.key}.md → ${collision.suggested}.md.\n`,
+                + `${corpusMarkdownDir}/${collision.key}.md → ${collision.suggested}.md.\n`,
             );
         }
 

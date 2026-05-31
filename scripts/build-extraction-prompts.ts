@@ -17,12 +17,16 @@
 // Usage:
 //   npm run build-extraction-prompts -- --letter A
 //   npm run build-extraction-prompts -- --letter A --corpus /custom/path
+//
+// The corpus root resolves through `getCorpusDir()` — honoring the
+// `OPEN_PALEO_PAPERS_DIR` env var, falling back to a sibling
+// `../open-paleo-papers/` directory. See scripts/corpus-path.ts.
 
 import * as fs from "node:fs";
-import * as os from "node:os";
 import * as path from "node:path";
 import * as url from "node:url";
 
+import { getCorpusDir } from "./corpus-path.ts";
 import type { GenusData, Species } from "./types.ts";
 import { findYamlFiles, parseYaml } from "./utilities.ts";
 
@@ -31,7 +35,6 @@ const scriptDir = path.dirname(scriptPath);
 const root = path.join(scriptDir, "..");
 const generaDir = path.join(root, "genera");
 const reportsDir = path.join(root, "reports");
-const defaultCorpusDir = path.join(os.homedir(), "Desktop", "open-paleo-papers");
 
 /**
  * Outcome of evaluating one genus against the queue rules.
@@ -271,7 +274,7 @@ function evaluateGenus(yamlPath: string, letter: string, corpusDir: string): Que
 function parseArguments(argv: Array<string>): { letter: string; corpusDir: string }
 {
     let letter: string | null = null;
-    let corpusDir = defaultCorpusDir;
+    let corpusDir = getCorpusDir();
 
     for (let index = 0; index < argv.length; index += 1)
     {

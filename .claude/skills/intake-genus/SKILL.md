@@ -115,7 +115,8 @@ the user understands why the bootstrap-proposed key was overridden.
 **Hard stop.** Tell the user:
 
 > Bootstrap complete. Fetch the listed papers into
-> `~/Desktop/open-paleo-papers/markdown/`, then for each fetched
+> `$OPEN_PALEO_PAPERS_DIR/markdown/` (defaults to a sibling
+> `../open-paleo-papers/markdown/` next to this repo), then for each fetched
 > paper, tick `[x]` in `staging/intake/<Genus>/papers-needed.md` and
 > paste a citation string on the same line after a `— ` separator.
 > Updating `dist/references.bib` is not required — the apply step
@@ -247,8 +248,9 @@ Editorial polish at this stage:
   `pronunciation:` fields). Do NOT paraphrase, summarise, or stitch
   in claims from the agent's notes — `feedback_verify_against_corpus`.
   Read the cached article first at
-  `~/Desktop/open-paleo-wd/wikipedia/<Genus>.json` (parse `text`,
-  paragraph 1 = up to the first `\n\n`); WebFetch is the fallback
+  `$OPEN_PALEO_WD_DIR/wikipedia/<Genus>.json` (defaults to a sibling
+  `../open-paleo-wd/wikipedia/`; parse `text`, paragraph 1 = up to the
+  first `\n\n`); WebFetch is the fallback
   when the genus isn't cached.
 - **PBDB seed corrections are routine.** The bootstrap copies
   `species[0].name`, `period`, `location.region/formation/coordinates`
@@ -438,7 +440,8 @@ disambiguate inside this repo only:
    body.
 
 **Do NOT rename markdown files in the paper corpus**
-(`~/Desktop/open-paleo-papers/markdown/`). The papers repo has its
+(`$OPEN_PALEO_PAPERS_DIR/markdown/`, defaults to
+`../open-paleo-papers/markdown/`). The papers repo has its
 own workflow that the user runs after this repo's `dist/references.bib`
 regenerates; that workflow detects the split and renames the
 markdown files. If you rename them yourself, you'll desync that
@@ -484,9 +487,8 @@ Follow the project's persistent rules at every gate:
   — but if you see misspelled tokens in the agent output, fix the
   JSON before running apply.)
 - Verify every paper-attributed claim against the corpus when the
-  paper exists in `~/Desktop/open-paleo-papers/markdown/` — never
-  cite from general/Wikipedia recall —
-  `feedback_verify_against_corpus`.
+  paper exists in `$OPEN_PALEO_PAPERS_DIR/markdown/` — never cite
+  from general/Wikipedia recall — `feedback_verify_against_corpus`.
 - The PBDB-seeded species block, period, and location in
   `bootstrap.yml` are routinely wrong; replace them during step 4
   polish — `feedback_pbdb_species_seed`.
@@ -495,8 +497,8 @@ Follow the project's persistent rules at every gate:
   proposed bare key may be the wrong paper — check sibling keys
   and bib titles before fetching — `feedback_bootstrap_key_check`.
 - Wikipedia article cache lives at
-  `~/Desktop/open-paleo-wd/wikipedia/<Genus>.json` — read it
-  before falling back to WebFetch — `reference_wikipedia_cache`.
+  `$OPEN_PALEO_WD_DIR/wikipedia/<Genus>.json` — read it before
+  falling back to WebFetch — `reference_wikipedia_cache`.
 - Hard stop before applying the Wikipedia-fallback for an
   unobtainable describing paper; every paper is a fresh decision
   for the user — `feedback_wikipedia_fallback_pattern`.

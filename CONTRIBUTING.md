@@ -176,6 +176,33 @@ Requires **Node.js 24** or later.
 
 Running validation locally before submitting helps catch formatting errors, missing references, and schema violations early.
 
+### Paper corpus and working directory
+
+A few maintainer-facing scripts (`intake-bootstrap`, `intake-resume`,
+`build-extraction-prompts`) and the `intake-genus` skill read from a
+local paper corpus that is **not** stored in this repo. By default
+they assume two sibling directories next to your `data/` checkout:
+
+```
+your-workspace/
+├── data/                 (this repo)
+├── open-paleo-papers/    (paper markdown corpus)
+│   └── markdown/{citation_key}.md
+└── open-paleo-wd/        (Claude working directory, e.g. Wikipedia cache)
+    └── wikipedia/{Genus}.json
+```
+
+If you keep those directories elsewhere, export the corresponding
+environment variables to override the defaults:
+
+```bash
+export OPEN_PALEO_PAPERS_DIR=/path/to/your/paper-corpus
+export OPEN_PALEO_WD_DIR=/path/to/your/working-dir
+```
+
+Most contributors will never need the corpus — it is only required
+for the maintainer-driven intake and backfill flows.
+
 ## Recognition
 
 Contributors are recognized in the following ways:

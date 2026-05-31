@@ -168,7 +168,8 @@ function buildPapersNeededBody(
     lines.push("");
     lines.push("For each paper:");
     lines.push("");
-    lines.push("1. Fetch the paper markdown into `~/Desktop/open-paleo-papers/markdown/{citation_key}.md`.");
+    lines.push("1. Fetch the paper markdown into `$OPEN_PALEO_PAPERS_DIR/markdown/{citation_key}.md`");
+    lines.push("   (defaults to a sibling `../open-paleo-papers/markdown/` next to this repo).");
     lines.push("2. Tick the checkbox `- [x]` and paste a citation string");
     lines.push("   on the same line, after a `— ` separator. Common formats");
     lines.push("   work — the parser is permissive but does best with a");
