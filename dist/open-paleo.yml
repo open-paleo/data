@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-05-31T05:31:16.268Z
+  built_at: 2026-05-31T05:44:56.157Z
   clade_count: 250
-  genus_count: 1388
+  genus_count: 1389
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.05"
@@ -94221,6 +94221,80 @@ genera:
       - Saurischia
       - Theropoda
       - Ceratosauria
+  Ptychotherates:
+    genus: Ptychotherates
+    parent: Saurischia
+    etymology: From Greek 'ptycho' meaning 'fold', referring to the many challenging reorientation axes on the holotype skull elements, and Greek 'therates' meaning 'hunter', for the inferred carnivorous habits.
+    description: Ptychotherates is an extinct genus of saurischian dinosaur known from the Late Triassic (latest Norian or Rhaetian) Chinle Formation at the Coelophysis Quarry, Ghost Ranch, New Mexico. The genus contains a single species, Ptychotherates bucculentus, known from a partial skull whose jugal is the proportionally deepest of any known Triassic-aged dinosaur. The describing paper recovers Ptychotherates as a close relative of Tawa, Chindesaurus, and Daemonosaurus.
+    diet: carnivore
+    locomotion: bipedal
+    paleoenvironment:
+      - fluvial
+    diagnostic_features:
+      - Prefrontal symmetrical in lateral view (anterior and posterior portions subequal in length).
+      - "Jugal body proportionally dorsoventrally deepest of any known Triassic-aged dinosaur: depth more than three times the height of the jugal posterior process, greater than half the height of the quadrate main body, and close to the length of the postorbital ventral process."
+      - Laterally extensive ventral process (crista interfenestralis) of the otoccipital.
+      - Ventral process of squamosal anteroposteriorly wide with a lateral fossa on its posterior part.
+      - Retroarticular process upturned immediately posterior to the glenoid.
+      - Posttemporal fenestra approximately as wide as the foramen magnum.
+    identifiers:
+      - source: pbdb
+        id: "519767"
+      - source: wikidata
+        id: Q139345300
+      - source: zoobank
+        id: C96AB9E2-59EE-4758-BB95-EC4253831CB9
+    species:
+      - name: Ptychotherates bucculentus
+        etymology: Latin bucculentus ('with full cheeks'), referring to the exceptionally tall jugal.
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Triassic
+          stage:
+            - Norian
+            - Rhaetian
+          from_ma: 210
+          to_ma: 201.4
+        location:
+          country: US
+          region: New Mexico
+          formation: Chinle
+          locality: Coelophysis Quarry, Ghost Ranch
+          coordinates:
+            - 36.331699
+            - -106.473099
+        holotype:
+          specimen_id:
+            - CM 31368
+          specimen_type: holotype
+          institution: Carnegie Museum of Natural History
+          material: Mostly complete, partially articulated skull with complete braincase, much of skull roof, partial maxillae, nasal, prefrontal, frontals, parietals, postorbitals, squamosals, jugal, quadratojugal, quadrate, fragmentary palatine and pterygoid, surangular, articular, partial prearticular, and partial dentaries.
+        described: 2026
+        authors: Srivastava and Nesbitt
+        described_in: srivastava2026
+    references:
+      - id: srivastava2026
+        authors: Srivastava, Simba; Nesbitt, Sterling J.
+        year: 2026
+        title: "A new taxon of saurischian dinosaur from the Coelophysis Quarry of New Mexico, USA (Triassic: latest Norian or Rhaetian) highlights herrerasaurian diversity in the latest Triassic"
+        journal: Papers in Palaeontology
+        volume: "12"
+        issue: "2"
+        doi: 10.1002/spp2.70069
+        url: http://dx.doi.org/10.1002/spp2.70069
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
   Puertasaurus:
     genus: Puertasaurus
     parent: Colossosauria
