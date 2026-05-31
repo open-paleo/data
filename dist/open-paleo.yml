@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-05-31T22:56:25.339Z
+  built_at: 2026-05-31T23:06:16.311Z
   clade_count: 250
   genus_count: 1391
   license: CC-BY-4.0
@@ -21719,9 +21719,15 @@ genera:
     etymology: "From Kazakh batyr meaning 'hero warrior' combined with Greek sauros meaning 'lizard'. Full meaning: 'Batyr (Kazakh hero warrior) lizard'."
     description: Batyrosaurus is an extinct genus of herbivorous basal hadrosauroid dinosaur known from the Late Cretaceous Bostobe Formation (Santonian to Campanian stage) of central Kazakhstan. It contains a single species, Batyrosaurus rozhdestvenskyi. It is possible that Batyrosaurus represents the same taxon as the doubtful Arstanosaurus akkurganensis as both were found from the same formation.
     diet: herbivore
-    locomotion: facultative
+    locomotion: bipedal
+    diagnostic_features:
+      - Parietal forming long caudal lappets that overlie the supraoccipital and are overlain by the squamosals, but remain well separated from the paroccipital wings.
+      - Frontals rostrocaudally elongated, approximately 1.7 times longer than wide.
+      - Lateral side of rostral process of jugal bearing a deep horizontal sulcus below the lacrimal facet.
+      - Glenoid surface of surangular perforated by a foramen.
     paleoenvironment:
       - fluvial
+      - forested
     identifiers:
       - source: pbdb
         id: "245643"
@@ -21757,6 +21763,7 @@ genera:
             - AEHM 4/1
           specimen_type: holotype
           institution: Amur Natural History Museum of the Institute of Geology and Nature Management, Russian Academy of Sciences
+          material: Partial skull and mandible, ~60 isolated teeth, paired sternals, right humerus, left radius, fragmentary metacarpals, and manual phalanges.
         described: 2012
         authors: Godefroit et al.
         described_in: godefroit2012a
