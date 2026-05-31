@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-05-31T03:52:27.482Z
+  built_at: 2026-05-31T04:46:52.748Z
   clade_count: 250
   genus_count: 1385
   license: CC-BY-4.0
@@ -90232,6 +90232,41 @@ genera:
           specimen_type: holotype
           institution: American Museum of Natural History
         described_in: gilmore1933b
+      - name: Pinacosaurus hilwitnorum
+        etymology: Latinization of the truncated surnames of Robert Hill, Larry Witmer, and Mark Norell, who first described the holotype skull (IGM 100/1014) in 2003 as a referred specimen of P. grangeri.
+        status: valid
+        type_species: false
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+          from_ma: 75.35
+          to_ma: 72.1
+        location:
+          country: MN
+          locality: Ukhaa Tolgod
+          region: Omnogov
+          formation: Djadokhta
+          coordinates:
+            - 43.664444
+            - 100.901947
+        holotype:
+          specimen_id:
+            - IGM 100/1014
+          specimen_type: holotype
+          institution: Instituto de Geología, Universidad Nacional Autónoma de México
+          material: Skull with lower jaws.
+        diagnostic_features:
+          - Three or more 'C' paranasal apertures plus B (P. grangeri has a single 'C' plus B).
+          - More prominent nasal ridges; pointed internarials.
+          - Fused parietals (paired in P. grangeri).
+          - Small triangular sagittal nuchal element (possible postparietal).
+          - Posterior palatal foramen present.
+          - Parallel vertical grooves on teeth (divergent in P. grangeri); reduced scapular medial brace.
+        described: 2026
+        authors: Penkalski
+        described_in: penkalski2026
     references:
       - id: gilmore1933b
         authors: Gilmore, C. W.
@@ -90240,6 +90275,15 @@ genera:
         journal: American Museum Novitates
         volume: "679"
         pages: 1-20
+      - id: penkalski2026
+        authors: Penkalski, Paul
+        year: 2026
+        title: The morphology and systematics of Pinacosaurus
+        journal: Historical Biology
+        pages: 1-42
+        doi: 10.1080/08912963.2026.2633178
+        url: http://dx.doi.org/10.1080/08912963.2026.2633178
+        notes: Revises Pinacosaurus, erecting P. hilwitnorum sp. nov. for the Ukhaa Tolgod skull IGM 100/1014 previously referred to P. grangeri.
     taxonomy:
       - Life
       - Animalia
