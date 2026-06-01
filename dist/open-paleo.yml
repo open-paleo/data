@@ -1,11 +1,11 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-05-31T23:13:37.993Z
+  built_at: 2026-06-01T01:44:03.046Z
   clade_count: 250
   genus_count: 1391
   license: CC-BY-4.0
   schema_version: 1.0.0
-  version: "2026.05"
+  version: "2026.06"
 tree:
   Life:
     Animalia:
@@ -91111,8 +91111,13 @@ genera:
     description: Planicoxa is a genus of advanced iguanodontian dinosaur from the Early Cretaceous of North America. It is known from the partial skeletons of several individual specimens. Its fossils were discovered in Utah, United States.
     diet: herbivore
     locomotion: bipedal
+    diagnostic_features:
+      - Caudal vertebrae bear paired ventral ridges connecting the anterior and posterior chevron facets along the ventral surface.
+      - Humeral head well developed and extending onto the anterior surface of the humerus.
+      - Postacetabular blade of the ilium short and horizontally directed, functionally forming an antitrochanter.
     paleoenvironment:
       - fluvial
+      - lacustrine
     identifiers:
       - source: pbdb
         id: "66517"
@@ -91154,6 +91159,7 @@ genera:
             - DMNH 42504
           specimen_type: holotype
           institution: Denver Museum of Nature and Science
+          material: Left ilium.
         described_in: dicroce2001
     references:
       - id: dicroce2001
