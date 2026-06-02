@@ -49,6 +49,7 @@ The following have been fixed/updated by the user, but have not yet been process
 
 | Genus | Citation key | Resolution |
 |---|---|---|
+| Crichtonpelta | `arbour2015`, `lü2007b` | `arbour2015` erects the new combination, `lü2007b` is the original describing paper |
 
 ## 2. Wrong `described_in` citations
 
@@ -64,7 +65,6 @@ updated (correct `described_in`, add the right paper to
 
 | Genus | Current key | Problem | Likely correct paper |
 |---|---|---|---|
-| Crichtonpelta | `arbour2015` | Keep `arbour2015` as `described_in` — Arbour 2015 is the formal erection of the *Crichtonpelta benxiensis* combination (re-assigned from *Crichtonsaurus benxiensis*). Re-run extraction without the non-primary filter so the existing markdown is processed. Original *species* description is Lü et al. 2007 (*Crichtonsaurus*); not required for the genus YAML. |
 
 ## 3. Real binomial / spelling discrepancies
 
@@ -76,7 +76,6 @@ cross-check against ICZN / current literature.
 
 | Genus | YAML | In paper | Letter | Note |
 |---|---|---|---|---|
-| Efraasia | *minor* | *Efraasia diagnostica* | E | Galton 1973 used species epithet *diagnostica*; current accepted form is *minor*. Verify nomenclatural history — possibly subsumed into the older *Sellosaurus minor* via species reassignment. |
 
 ## 4. Correct papers, but not actionable
 
