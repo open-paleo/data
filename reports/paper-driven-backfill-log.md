@@ -14,6 +14,38 @@ in `paper-driven-backfill.md`.
 
 ## Entries
 
+### Material-straggler backfill, letters E–M — 2026-06-03
+
+19 targets across E, F, G, I, K, L, M (no H/J in the set); all queued.
+**Applied: 12** — material for Edmontonia (✚diag), Elaltitan,
+Europatitan, Gongxianosaurus, Imperobator, Indosaurus, Kansaignathus,
+Leptoceratops (✚diag), Lourinhasaurus, Lusotitan, Mantellisaurus,
+Mongolosaurus (✚diag). Heavy trimming of over-long material strings
+(Lourinhasaurus 507→191) and locality/collector tails (Kansaignathus
+→ "Right dentary"; Mongolosaurus dropped the Granger field-number tail).
+
+Ran `spellcheck-extractions` on the JSONs **before** apply this time
+(per feedback_spellcheck_before_apply): 0 suspicious, 5 likely terms
+(diaphyseal, maxillaries, suprapostzygapophyseal, Helopus,
+pleurocentral) added to dictionaries/paleo-vocab.txt (1209→1214) and
+dictionary regenerated. No post-apply AE warnings this batch.
+
+Nulled bare-specimen-number "material" (no element list in the paper):
+Giraffatitan (`paul1988b`, subgenus erection) and Koshisaurus (already
+§1).
+
+Sentinels / no usable data (7):
+- BHL/monograph fragment markdown: Elaphrosaurus (`janensch1920`),
+  Fulgurotherium & Magyarosaurus (`huene1932` — same fragment as
+  Betasuchus). Added to corpus-report §1.
+- Koshisaurus (`shibata2015b`) — truncated markdown, already §1.
+- Replacement/provisional/composite (no holotype in paper, not
+  corpus-fixable): Lambeosaurus (`parks1923`, *L. lambei* is a nomen
+  provisorium here), Laplatasaurus (`huene1929`, no holotype
+  designated — composite material), Giraffatitan (above).
+
+Validation: 0 errors, 12 pre-existing warnings. Lint clean.
+
 ### Material-straggler backfill, letter D — 2026-06-03
 
 6 targets, all queued. **Applied: 3** — material for Diclonius
