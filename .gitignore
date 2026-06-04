@@ -6,12 +6,15 @@ dist/
 staging/
 
 # Paper-driven backfill — regenerable intermediates.
-# The aggregate `reports/extracted-paper-fields-<Letter>.json` and
-# the findings markdown are the durable records.
 reports/extractions/
 reports/extraction-queue-*.json
 reports/extraction-prompts-*.jsonl
-reports/extracted-paper-fields-*-dryrun.json
+reports/extracted-paper-fields-*.json
+reports/extracted-paper-fields-*-spellcheck.md
+
+# Generated on demand — derived purely from the data (run
+# `npm run report-missing-fields` or the /report skill); not checked in.
+reports/missing-fields.md
 
 # MacOS
 .DS_Store

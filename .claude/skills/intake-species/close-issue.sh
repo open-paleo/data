@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
 # Close the GitHub Intake: Species issue for a promoted species.
 #
-# Unlike the intake-genus close helper, species issues are NOT in
-# reports/intake-triage.md — they are typically freshly-filed issues
-# (e.g. from the 2026 batch). The issue number must be passed
-# explicitly.
+# The issue number must be passed explicitly.
 #
 # Usage:
 #   bash .claude/skills/intake-species/close-issue.sh <Genus> <species> <issue> <commit_sha>

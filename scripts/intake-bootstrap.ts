@@ -9,7 +9,7 @@
 //   ├── bootstrap.yml        Best-effort YAML from external sources
 //   ├── papers-needed.md     Checklist of papers to fetch and add to
 //   │                        the corpus
-//   └── triage.md            Raw triage notes for the resume step
+//   └── notes.md             Verbatim --notes context (when provided)
 //
 // Exits non-zero if `staging/intake/{Genus}/` already exists.
 //
@@ -35,72 +35,8 @@ const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
 const root = path.join(scriptDir, "..");
 
-const triageReportPath = path.join(root, "reports", "intake-triage.md");
 const referencesBibPath = path.join(root, "dist", "references.bib");
 const stagingIntakeDir = path.join(root, "staging", "intake");
-
-/**
- * One row of the Bucket B table in the triage report.
- */
-type TriageRow = {
-    issue: number;
-    genus: string;
-    label: string;
-    notes: string;
-};
-
-/**
- * Reads the intake-triage report and returns the triage row for a
- * given genus, scanning across every bucket.
- *
- * @param genus - The genus name (case-sensitive).
- * @returns The triage row, or null if the genus is not present.
- */
-function findTriageRow(genus: string): TriageRow | null
-{
-    if (!fs.existsSync(triageReportPath))
-    {
-        return null;
-    }
-
-    const content = fs.readFileSync(triageReportPath, "utf8");
-
-    for (const line of content.split("\n"))
-    {
-        if (!line.startsWith("| "))
-        {
-            continue;
-        }
-
-        const cells = line.split("|").map((cell) => cell.trim());
-
-        if (cells.length < 5)
-        {
-            continue;
-        }
-
-        if (cells[2] !== genus)
-        {
-            continue;
-        }
-
-        const issue = Number.parseInt(cells[1], 10);
-
-        if (!Number.isInteger(issue))
-        {
-            continue;
-        }
-
-        return {
-            issue,
-            genus: cells[2],
-            label: cells[3],
-            notes: cells[4].replace(/\s*\[done[^\]]*\]\s*/g, "").trim(),
-        };
-    }
-
-    return null;
-}
 
 /**
  * Synthesises a citation key from author surname + year following the
@@ -135,7 +71,7 @@ function citationKeyFor(authors: string, year: string | number): string
  * Builds the `papers-needed.md` checklist body.
  *
  * @param genus - The genus name.
- * @param triage - The triage row, used for context notes.
+ * @param notes - Verbatim --notes context, or null.
  * @param describingKey - Citation key of the describing paper, or null
  *     when not yet known.
  * @param describingDoi - DOI of the describing paper, or null.
@@ -152,7 +88,7 @@ function citationKeyFor(authors: string, year: string | number): string
  */
 function buildPapersNeededBody(
     genus: string,
-    triage: TriageRow | null,
+    notes: string | null,
     describingKey: string | null,
     describingDoi: string | null,
     describingTitle: string | null,
@@ -252,11 +188,11 @@ function buildPapersNeededBody(
     lines.push("  DOI: ...");
     lines.push("");
 
-    if (triage?.notes)
+    if (notes)
     {
-        lines.push("## Triage notes (verbatim)");
+        lines.push("## Notes (verbatim)");
         lines.push("");
-        lines.push(`> ${triage.notes}`);
+        lines.push(`> ${notes}`);
         lines.push("");
     }
 
@@ -290,21 +226,9 @@ async function main(): Promise<void>
         process.exit(1);
     }
 
-    const triage = noteOverride
-        ? { issue: 0, genus, label: "", notes: noteOverride }
-        : findTriageRow(genus);
+    const notes = noteOverride;
 
     process.stdout.write(`Bootstrapping ${genus}...\n`);
-
-    if (triage)
-    {
-        process.stdout.write(`  Triage: issue #${triage.issue} (${triage.label})\n`);
-    }
-    else
-    {
-        process.stdout.write("  Triage: no row found — proceeding without context\n");
-    }
-
     process.stdout.write("  Fetching PBDB taxon...\n");
     const taxon = await fetchPbdbTaxon(genus);
 
@@ -392,7 +316,7 @@ async function main(): Promise<void>
 
     const papersNeededBody = buildPapersNeededBody(
         genus,
-        triage,
+        notes,
         describingKey,
         describingDoi,
         describingTitle,
@@ -405,12 +329,12 @@ async function main(): Promise<void>
     const papersNeededPath = path.join(targetDir, "papers-needed.md");
     fs.writeFileSync(papersNeededPath, papersNeededBody, "utf8");
 
-    if (triage?.notes)
+    if (notes)
     {
-        const triagePath = path.join(targetDir, "triage.md");
+        const notesPath = path.join(targetDir, "notes.md");
         fs.writeFileSync(
-            triagePath,
-            `# ${genus} — Triage notes\n\n${triage.notes}\n`,
+            notesPath,
+            `# ${genus} — Notes\n\n${notes}\n`,
             "utf8",
         );
     }

@@ -3,43 +3,25 @@
 #
 # This helper does ONLY GitHub-side work:
 #
-#   1. Look up the issue number from reports/intake-triage.md
-#   2. Add a completion comment referencing the commit SHA
-#   3. Remove the "Intake: Disputed" / "Intake: Requires Manual
+#   1. Add a completion comment referencing the commit SHA
+#   2. Remove the "Intake: Disputed" / "Intake: Requires Manual
 #      Intervention" sub-label
-#   4. Close the issue with reason "completed"
+#   3. Close the issue with reason "completed"
 #
-# Marking the triage row [done <sha>] is NOT done here — that has to
-# happen BEFORE the genus push so it lands in the same push and avoids
-# racing the GitHub Actions Build workflow. See SKILL.md step 7.
+# The issue number is passed explicitly (bulk intake from a triage
+# table has been retired; intake is now one genus at a time).
 #
-# Usage: bash .claude/skills/intake-genus/close-issue.sh <Genus> <commit_sha>
+# Usage: bash .claude/skills/intake-genus/close-issue.sh <Genus> <issue_number> <commit_sha>
 set -euo pipefail
 
-if [ "$#" -ne 2 ]; then
-    echo "Usage: $0 <Genus> <commit_sha>" >&2
+if [ "$#" -ne 3 ]; then
+    echo "Usage: $0 <Genus> <issue_number> <commit_sha>" >&2
     exit 2
 fi
 
 genus="$1"
-commit_sha="$2"
-triage_path="reports/intake-triage.md"
-
-if [ ! -f "$triage_path" ]; then
-    echo "Missing $triage_path" >&2
-    exit 1
-fi
-
-# Locate the issue number from the triage table — the row's second
-# pipe-separated cell is the issue number.
-issue_number=$(awk -F'|' -v g=" $genus " '
-    $3 == g { gsub(/[ \t]/, "", $2); print $2; exit }
-' "$triage_path")
-
-if [ -z "$issue_number" ]; then
-    echo "Could not find $genus in $triage_path" >&2
-    exit 1
-fi
+issue_number="$2"
+commit_sha="$3"
 
 echo "Genus:        $genus"
 echo "Issue:        #$issue_number"

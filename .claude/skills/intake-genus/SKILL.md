@@ -1,6 +1,6 @@
 ---
 name: intake-genus
-description: Run the per-genus intake pipeline. Picks the next eligible Bucket B entry from reports/intake-triage.md (or accepts an explicit genus), bootstraps a stub from PBDB/Wikipedia/Wikidata, pauses for the user to fetch describing/supplementary papers into the local corpus, dispatches Sonnet extraction agents, applies the results, then promotes/commits/closes.
+description: Run the per-genus intake pipeline for an explicit genus name. Bootstraps a stub from PBDB/Wikipedia/Wikidata, pauses for the user to fetch describing/supplementary papers into the local corpus, dispatches Sonnet extraction agents, applies the results, then promotes/commits/closes. Use when adding a new genus that is ready (its paper / ICZN ruling exists). Requires the genus name (and its GitHub intake issue number for closing).
 user-invocable: true
 argument-hint: "[Genus]"
 allowed-tools: Bash Read Write Edit Glob Grep Agent AskUserQuestion
@@ -9,39 +9,26 @@ allowed-tools: Bash Read Write Edit Glob Grep Agent AskUserQuestion
 # Intake Genus
 
 Run the per-genus intake pipeline end-to-end with hard stops between
-each stage so the user retains review control. The pipeline was
-originally written for **Bucket B** (modern + obscure) entries from
-`reports/intake-triage.md`, and `npm run intake-pick-next` only
-returns Bucket B candidates. The same pipeline also works for
-Bucket D Cat III/IV stubs (`status: nomen dubium`, minimal
-diagnostic features) when the user supplies an explicit genus name
-— see `reports/bucket-d-classification.md` for the categories.
-Bucket C (iconic legacy) is more complex and is still out of scope.
+each stage so the user retains review control.
 
-If `$ARGUMENTS` is empty, the skill picks the next eligible Bucket B
-genus by alphabetical order. If the user supplied a genus name, use
-that genus instead.
+Bulk intake from a triage table has been retired — the dataset is
+essentially complete, with only a handful of genera left that await
+external prerequisites (a describing paper, an ICZN ruling, etc.). This
+skill now runs **one explicit genus at a time**, when that genus is
+ready. Bucket C (iconic legacy) remains more complex and out of scope.
 
 ---
 
-## Step 1 — Pick the genus
+## Step 1 — Identify the genus
 
-If `$ARGUMENTS` is empty:
+The genus name must be supplied in `$ARGUMENTS`. If it is empty, ask
+the user which genus to intake and stop until they answer.
 
-```
-npm run intake-pick-next
-```
+Also ask the user for the genus's **GitHub intake issue number** (used
+at close-out in Step 7) and any notes they want carried into the stub,
+unless they have already provided them.
 
-Parse the JSON line from stdout — `{issue, genus, label, notes}` — and
-report it to the user as the candidate. If the script exits non-zero,
-report that no eligible Bucket B entry remains and stop.
-
-If `$ARGUMENTS` is non-empty, treat the first positional token as the
-genus name and look up its triage row by reading
-`reports/intake-triage.md` directly.
-
-Tell the user which genus we are about to process and the triage
-notes.
+Tell the user which genus we are about to process before continuing.
 
 ## Step 2 — Bootstrap
 
@@ -57,8 +44,8 @@ This writes:
   external sources
 - `staging/intake/<Genus>/papers-needed.md` — describing-paper
   citation key, plus a checklist for any supplementary papers
-- `staging/intake/<Genus>/triage.md` — verbatim triage notes (when
-  the triage report has a row for this genus)
+- `staging/intake/<Genus>/notes.md` — verbatim `--notes` context (when
+  you passed `--notes`)
 
 After the script returns, **read both files yourself** and summarise
 to the user:
@@ -66,10 +53,10 @@ to the user:
 - How many fields the bootstrap populated
 - The proposed describing-paper citation key
 - Whether that key is already in `dist/references.bib`
-- Any supplementary papers the triage notes mention (e.g. the 2024
+- Any supplementary papers your notes mention (e.g. the 2024
   Słowiak reassessment paper for Bagaraatan)
 
-If the triage notes explicitly call out a supplementary paper, edit
+If your notes explicitly call out a supplementary paper, edit
 `papers-needed.md` to add a stub entry under
 "Additional papers (optional)" with the citation key and DOI, marked
 `- [ ]`. The user will mark `[x]` once they have it.
@@ -83,7 +70,7 @@ this is a routine check, not an exception**. Common failure modes:
 - **PBDB tracks a homonym, not the type.** Ex: Titanosaurus Lydekker
   1877 (Indian, valid) vs. Titanosaurus Marsh 1877 (preoccupied
   American name → renamed Atlantosaurus). PBDB returned Marsh as
-  authority; the triage and Wikipedia both said Lydekker.
+  authority; the notes and Wikipedia both said Lydekker.
 - **The proposed key already exists in the bib but for a different
   paper.** Ex: bootstrap proposed `marsh1888` for Ceratops — that
   key is already in the bib, but it's the Pleurocoelus / Potomac
@@ -95,12 +82,12 @@ this is a routine check, not an exception**. Common failure modes:
 
 Before reporting the proposed key to the user, **always**:
 
-1. Compare the proposed key against the triage notes' author + year.
+1. Compare the proposed key against your notes' author + year.
    If they disagree, the bootstrap is wrong; flag it and propose the
-   triage-aligned key.
+   notes-aligned key.
 2. If the proposed key is already in the bib, run a quick check
-   (read the bib entry's title) to confirm it matches the paper the
-   triage describes. If the title is from a different paper, the
+   (read the bib entry's title) to confirm it matches the paper your
+   notes describe. If the title is from a different paper, the
    bootstrap has a key collision: mark this as a citation-key
    disambiguation case (see below).
 3. If the bootstrap proposed a fresh letter suffix (`<key>e`,
@@ -140,7 +127,7 @@ decides per paper, every time:
 > 2. Build a Wikipedia-fallback stub (description = Wikipedia
 >    paragraph 1 verbatim; holotype block omitted; reference cited
 >    with metadata from secondary literature; gap logged in
->    `corpus-paper-report.md` §1)
+>    the corpus repo's `corpus-paper-report.md` §1)
 > 3. Defer this genus
 
 If the user picks the Wikipedia-fallback path, follow the recipe in
@@ -255,7 +242,7 @@ Editorial polish at this stage:
 - **PBDB seed corrections are routine.** The bootstrap copies
   `species[0].name`, `period`, `location.region/formation/coordinates`
   straight from PBDB; these are wrong often enough that you must
-  inspect each one against the corpus paper / triage / Wikipedia.
+  inspect each one against the corpus paper / your notes / Wikipedia.
   Don't promote until you've corrected them. Common patterns:
   PBDB-seeded species name is often the wrong species of a multi-
   species genus, or a synonym of the type, or even another genus's
@@ -266,7 +253,7 @@ Editorial polish at this stage:
   reference notes, or synonym `reason:` attributes a specific claim
   to a specific author-year (e.g. "synonymised by Smith 1999"),
   that claim must trace back to (a) corpus content actually read,
-  (b) Wikipedia paragraph 1 (verbatim), or (c) the triage notes.
+  (b) Wikipedia paragraph 1 (verbatim), or (c) your notes.
   Never invent citations from general/Wikipedia recall when the
   paper exists in the corpus — `feedback_verify_against_corpus`.
 - Etymology values from the agent are sometimes terse. Polish them to
@@ -327,7 +314,7 @@ Draft a commit message of the form:
 ```
 <Genus>: full-fat intake from PBDB/Wikipedia + <citation_keys>
 
-<one or two sentences from the triage notes — what the genus is,
+<one or two sentences from your notes — what the genus is,
 its describing paper, and any resolution paper applied>.
 ```
 
@@ -344,14 +331,7 @@ git commit -m "<message>"
 Append the canonical co-author line per the project's commit-message
 template.
 
-## Step 7 — Mark triage row, push, then close issue
-
-The triage row update has to land in the SAME push as the genus
-commit. Otherwise the GitHub Actions Build workflow on the genus
-push races with a follow-up triage push and gets `[remote rejected]
-cannot lock ref` when trying to push its `dist/` build outputs (it
-self-corrects on the next push, but produces a noisy red `Build`
-run that looks like real breakage).
+## Step 7 — Push, then close issue
 
 Sequence:
 
@@ -372,35 +352,22 @@ Sequence:
    commit_sha=$(git rev-parse --short HEAD)
    ```
 
-3. Edit `reports/intake-triage.md` to append `[done <commit_sha>]`
-   to the row's notes column. The row pattern is
-   `| <issue> | <Genus> | <label> | ...notes... |`; add the
-   `[done ...]` marker just before the trailing pipe.
-
-4. Commit the triage update with a one-liner:
-
-   ```
-   git commit -m "Mark <Genus> triage row done in <commit_sha>"
-   ```
-
-   (Plus the canonical co-author line.)
-
-5. Push both commits in one push:
+3. Push the genus commit:
 
    ```
    git push origin main
    ```
 
-6. Now run the GitHub-side close helper, passing the same SHA you
-   recorded in the triage row:
+4. Run the GitHub-side close helper with the issue number the user
+   gave in Step 1 and the SHA from step 2:
 
    ```
-   bash .claude/skills/intake-genus/close-issue.sh <Genus> <commit_sha>
+   bash .claude/skills/intake-genus/close-issue.sh <Genus> <issue_number> <commit_sha>
    ```
 
    This adds the completion comment, removes the `Intake: ...`
    sub-label, and closes the issue. It does NOT touch any in-repo
-   files — that work was done in steps 3-4.
+   files.
 
 ## Step 8 — Clean up staging
 
@@ -408,9 +375,8 @@ Sequence:
 rm -rf staging/intake/<Genus>
 ```
 
-Tell the user the genus is fully intaken, give them the final commit
-SHA and PR/issue URL, and ask whether to immediately pick the next
-Bucket B genus.
+Tell the user the genus is fully intaken, and give them the final commit
+SHA and issue URL.
 
 ---
 

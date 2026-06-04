@@ -10,9 +10,8 @@
 // The JSONL is consumed by an agent dispatcher (currently a human
 // driving the Agent tool); each row already contains the exact prompt
 // to send. Constructing prompts this way — rather than hand-typing
-// genus/species/key into each invocation — eliminates the transcription
-// errors that surfaced during the letter-A run (see
-// reports/paper-driven-backfill.md).
+// genus/species/key into each invocation — eliminates transcription
+// errors. The orchestrating workflow lives in the `update-genus` skill.
 //
 // Usage:
 //   npm run build-extraction-prompts -- --letter A
