@@ -14,6 +14,49 @@ in `paper-driven-backfill.md`.
 
 ## Entries
 
+### Material-straggler backfill, letters N–Z — 2026-06-03 (final batch)
+
+32 targets across N, O, P, Q, R, S, T, V, W, X, Y, Z; all queued.
+**Applied: 20** — material for Naashoibitosaurus, Ningyuansaurus,
+Nuthetes, Opisthocoelicaudia, Ornithopsis, Panoplosaurus, Pinacosaurus,
+Qiupalong, Quilmesaurus, Rhabdodon, Rinconsaurus, Scolosaurus,
+Segisaurus, Sinocephale, Spinophorosaurus, Tietasaura, Variraptor,
+Vespersaurus, Xingtianosaurus, Yamanasaurus (several also gained
+diagnostic_features: Nuthetes, Panoplosaurus, Pinacosaurus, Qiupalong,
+Quilmesaurus, Scolosaurus, Segisaurus).
+
+Review edits: heavy trimming of localities/collector/catalog tails and
+over-long strings; nulled bare-catalog-only "material" for Vagaceratops
+(`sampson2010`, reassigned taxon — holotype from Holmes et al. 2001).
+Spellcheck before apply: 0 suspicious after fixing two typos in the JSONs
+(`maleolus`→`malleolus` Quilmesaurus; `armour`→`armor` Panoplosaurus &
+Scolosaurus, plus Scolosaurus material). One AE warning slipped to
+validate and was fixed (Ornithopsis "labelled"→"labeled"). 11 likely
+terms added to paleo-vocab (1214→1225); dictionary regenerated.
+
+Not filled (12):
+- huene1932 monograph fragment: Plateosauravus, Walgettosuchus (added
+  to §1, same fragment as Betasuchus/Fulgurotherium/Magyarosaurus).
+- Empty/abstract markdown: Nevadadromeus (`bonde2022`), Notoceratops
+  (`tapia1919`). Added to §1.
+- Wrong-paper-content: Tanius (`wiman1929` = *Helopus*), Ruehleia
+  (`galton2001` = a 1985 *Plateosaurus* paper — §1 note updated),
+  plus already-§1 Neuquensaurus (`powell1992`) and Zigongosaurus
+  (`hou1976`).
+- No holotype in the describing paper: Paranthodon (`nopcsa1929` names
+  it in one sentence — material is in `galton1981`; noted §1),
+  Scelidosaurus (`owen1859` brief note, genus misspelled; full
+  description is Owen 1861), Scansoriopteryx (`czerkas2002`, no
+  holotype subsection), Vagaceratops (above).
+
+Validation: 0 errors, 12 pre-existing warnings. Lint clean.
+
+**Pass complete (A–Z).** `species.holotype.material` missing 181 → 136
+over the three batches (45 genera populated: A–D 13, E–M 12, N–Z 20).
+The remaining unfilled targets are all documented corpus issues in
+corpus-paper-report §1 (fragment/abstract/wrong-paper markdown, or
+papers that carry no original holotype description).
+
 ### Material-straggler backfill, letters E–M — 2026-06-03
 
 19 targets across E, F, G, I, K, L, M (no H/J in the set); all queued.
