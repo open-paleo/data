@@ -14,6 +14,42 @@ in `paper-driven-backfill.md`.
 
 ## Entries
 
+### Pending-resolution re-extraction — 2026-06-04
+
+Re-extraction sweep over the corpus-report "Pending Resolution Papers"
+list after the user landed the markdown conversions (huene1932 full
+monograph + owen1875, cope1866, nopcsa1915, galton1980c, etc.).
+**13 genera processed, all applied:** Paranthodon, Zapsalis, Betasuchus,
+Dacentrurus, Dryptosaurus, Fulgurotherium, Magyarosaurus, Plateosauravus,
+Walgettosuchus, Notoceratops, Elaphrosaurus, Nevadadromeus, Cumnoria.
+`species.holotype.material` 136 → 124.
+
+**Custom prompts, not `build-extraction-prompts`.** For the reassigned /
+replacement-name genera the material source ≠ `described_in` (the #1886
+nuance), so each agent was pointed at the correct descriptive paper:
+Betasuchus→seeley1883, Dacentrurus→owen1875, Dryptosaurus→cope1866,
+Plateosauravus→haughton1924, Notoceratops→huene1929, Cumnoria→galton1980c,
+Paranthodon→galton1981 (redescription). Genus-erection papers used where
+they are also the descriptive source: Fulgurotherium/Walgettosuchus→huene1932.
+Prompts for original-binomial papers carried a "treated as X in this paper"
+hint (Megalosaurus bredai, Omosaurus armatus, Laelaps aquilunguis,
+Titanosaurus dacus, Plateosaurus cullingworthi, Camptosaurus prestwichii).
+
+Notes:
+- Magyarosaurus: nopcsa1915 (preliminary note) gave the diagnosis but no
+  material; material pulled from the now-full huene1932 (von Huene's type
+  designation) and merged — two-source entry.
+- Fulgurotherium: material only (paper lists no autapomorphies).
+- Zapsalis (diag only — material already present), Elaphrosaurus & Cumnoria
+  (material only — diagnosis already present).
+- Coahuilaceratops & Crichtonpelta already complete; dropped from the table.
+- Catalog/locality tails trimmed on 6 material strings; 0 spellcheck
+  suspicious. 19 vocab terms added (paleo-vocab 1225 → 1244); dictionary
+  regenerated.
+
+Pending Resolution Papers table emptied. Validation 0 errors, 12
+pre-existing warnings; lint clean.
+
 ### Material-straggler backfill, letters N–Z — 2026-06-03 (final batch)
 
 32 targets across N, O, P, Q, R, S, T, V, W, X, Y, Z; all queued.

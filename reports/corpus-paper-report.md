@@ -38,7 +38,6 @@ up automatically once the markdown is restored.
 | Bustingorrytitan | `salgado2023` | B | Corpus markdown is abstract-only (10 lines); body of paper not present. Diagnostic features captured during letter-B run from the abstract, but holotype material (specimen MMCh-Pv 232 fide Wikipedia) cannot be extracted. Needs full-paper re-fetch. |
 | Cetiosaurus | `owen1841` | C | Corpus markdown is the proceedings abstract/summary of Owen's 1841 memoir, not the full paper; no holotype designation and the species epithet *oxoniensis* does not appear. `diagnostic_features` already populated; only `material` is blocked. Needs the full memoir. |
 | Tanius | `wiman1929` | T | Wrong-paper-content: `wiman1929.md` describes *Helopus zdanskyi* and isolated theropod fragments; *Tanius sinensis* is absent. The Tanius description is in the same Wiman 1929 Palaeontologia Sinica volume — the corpus file is the wrong portion. |
-| Paranthodon | `nopcsa1929` | P | The describing paper (Nopcsa 1929) names *Paranthodon* in a single sentence with no holotype subsection or autapomorphy list (binomial there is *Paranthodon Oweni*). Holotype material/diagnosis are better sourced from the Galton & Coombs 1981 redescription (`galton1981`, already cited) — a described_in vs. material-source nuance. |
 | Koshisaurus | `shibata2015b` | K | Corpus markdown lacks the Systematic Paleontology section (Holotype, Referred Material, Diagnosis subsections); only abstract and discussion are captured. Diagnostic features partly extracted during letter-K run from abstract; holotype material and formal autapomorphy list missing. Needs full-paper re-fetch. |
 | Xiaosaurus | `dong1983b` | X | Corpus markdown filed under `dong1983b` describes *Dashanpulong xialong*, not *Xiaosaurus dashanpensis*. Wrong-paper-content pattern. The actual Xiaosaurus description is Dong & Tang 1983 (different paper); citation key likely needs disambiguation. |
 | Zigongosaurus | `hou1976` | Z | Corpus markdown filed under `hou1976` describes *Fumeisaurus shuchangensis*, not *Zigongosaurus fuxiensis*. Wrong-paper-content pattern. The actual Zigongosaurus description is Hou, Zhao & Chu 1976 (different paper); citation key likely needs disambiguation. |
@@ -49,21 +48,6 @@ The following have been fixed/updated by the user, but have not yet been process
 
 | Genus | Citation key | Resolution |
 |---|---|---|
-| Coahuilaceratops | `loewen2010` | Fixed in corpus |
-| Crichtonpelta | `arbour2015`, `lü2007b` | `arbour2015` erects the new combination, `lü2007b` is the original describing paper |
-| Paranthodon | Four cited papers | Updated in corpus |
-| Zapsalis | `marsh1876a`, `marsh1876b`, `larson2013` | Updated in corpus |
-| Betasuchus | `huene1932`, `seeley1883` | huene1932 PDF updated (markdown re-conversion pending); `seeley1883` (original, *Megalosaurus bredai*) already in corpus markdown |
-| Dacentrurus | `lucas1902`, `owen1875` | `owen1875` (original, *Omosaurus armatus*) PDF added, markdown conversion pending; described_in stays `lucas1902` (replacement name) |
-| Dryptosaurus | `marsh1877b`, `cope1866` | `cope1866` (original, *Laelaps aquilunguis*) PDF added, markdown conversion pending; described_in stays `marsh1877b` (replacement name) |
-| Fulgurotherium | `huene1932` | huene1932 PDF updated; markdown re-conversion pending |
-| Magyarosaurus | `huene1932`, `nopcsa1915` | huene1932 PDF updated (markdown pending); `nopcsa1915` (original, *Titanosaurus dacus*) PDF added, markdown pending |
-| Plateosauravus | `huene1932`, `haughton1924` | huene1932 PDF updated (markdown pending); `haughton1924` (original, *Plateosaurus cullingworthi*) already in corpus markdown |
-| Walgettosuchus | `huene1932` | huene1932 PDF updated; markdown re-conversion pending |
-| Notoceratops | `tapia1919`, `huene1929` | `tapia1919` names the taxon (brief note, no description); `huene1929` (in corpus markdown) provides the description. described_in stays `tapia1919`; material recoverable from `huene1929` pending #1886 |
-| Elaphrosaurus | `janensch1920` | Fixed in corpus |
-| Nevadadromeus | `bonde2022` | Fixed in corpus |
-| Cumnoria | `seeley1888a`, `galton1980c` | `galton1980c` (Galton & Powell 1980, first modern description as *Camptosaurus prestwichii*) being converted to corpus markdown — extract `material` from it. described_in stays `seeley1888a` (genus erection) pending #1886 |
 
 ## 2. Wrong `described_in` citations
 
