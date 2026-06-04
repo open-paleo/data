@@ -18,15 +18,29 @@ Species-level checks evaluate the type species, falling back to the first listed
 - **species.size.length_m**: 546 missing (39.3%)
 - **pronunciation.phonetic**: 246 missing (17.7%)
 - **species.holotype.completeness**: 201 missing (14.5%)
-- **species.holotype.material**: 181 missing (13.0%)
 - **species.location.locality**: 181 missing (13.0%)
-- **diagnostic_features**: 171 missing (12.3%)
+- **species.holotype.material**: 168 missing (12.1%)
+- **diagnostic_features**: 167 missing (12.0%)
 - **species.location.coordinates**: 37 missing (2.7%)
 - **species.holotype.specimen_id**: 24 missing (1.7%)
 - **species.holotype.institution**: 9 missing (0.6%)
 - **paleoenvironment**: 3 missing (0.2%)
 - **locomotion**: 1 missing (0.1%)
 - **species.etymology**: 1 missing (0.1%)
+- **etymology**: 0 missing (0.0%)
+- **description**: 0 missing (0.0%)
+- **diet**: 0 missing (0.0%)
+- **identifiers**: 0 missing (0.0%)
+- **references**: 0 missing (0.0%)
+- **species.period.name**: 0 missing (0.0%)
+- **species.period.stage**: 0 missing (0.0%)
+- **species.location.country**: 0 missing (0.0%)
+- **species.location.region**: 0 missing (0.0%)
+- **species.location.formation**: 0 missing (0.0%)
+- **species.described**: 0 missing (0.0%)
+- **species.authors**: 0 missing (0.0%)
+- **species.described_in**: 0 missing (0.0%)
+- **species (no entries)**: 0 missing (0.0%)
 
 ## Missing lists
 
@@ -70,17 +84,17 @@ Ajnabia, Akainacephalus, Alcovasaurus, Amargastegos, Analong, Anhuilong, Anoplos
 
 Abrictosaurus, Achillobator, Acrocanthosaurus, Aegyptosaurus, Aeolosaurus, Aletopelta, Alioramus, Allosaurus, Alpkarakush, Alvarezsaurus, Amanzia, Amazonsaurus, Amtosaurus, Amurosaurus, Amygdalodon, Anserimimus, Archaeoceratops, Archaeornithomimus, Arrhinoceratops, Asiaceratops, Astigmasaura, Atlascopcosaurus, Batyrosaurus, Betasuchus, Bicharracosaurus, Bienosaurus, Brachylophosaurus, Breviceratops, Bruhathkayosaurus, Bustingorrytitan, Callovosaurus, Campananeyen, Cariocecus, Carnotaurus, Caudipteryx, Cetiosauriscus, Cetiosaurus, Chakisaurus, Chasmosaurus, Chilantaisaurus, Chingkankousaurus, Chinshakiangosaurus, Chuandongocoelurus, Chubutisaurus, Cienciargentina, Cionodon, Coahuilaceratops, Conchoraptor, Coronosaurus, Corythosaurus, Cryptarcus, Cumnoria, Dacentrurus, Dashanpusaurus, Deinocheirus, Diclonius, Dicraeosaurus, Diplotomodon, Dromaeosauroides, Dryptosaurus, Duriatitan, Dyoplosaurus, Dysalotosaurus, Edmontonia, Elaltitan, Elaphrosaurus, Emiliasaura, Eopinacosaurus, Euhelopus, Europatitan, Fulgurotherium, Gigantspinosaurus, Gilmoreosaurus, Giraffatitan, Gondwanatitan, Gongxianosaurus, Gremlin, Guaibasaurus, Haplocanthosaurus, Harpymimus, Heishansaurus, Hudiesaurus, Hypacrosaurus, Imperobator, Inawentu, Indosaurus, Itemirus, Janenschia, Jaxartosaurus, Jingiella, Jingshanosaurus, Kaijiangosaurus, Kank, Kansaignathus, Koshisaurus, Kotasaurus, Lambeosaurus, Lametasaurus, Laplatasaurus, Lapparentosaurus, Leptoceratops, Ligabueino, Lophorhothon, Lourinhasaurus, Luoyanggia, Lusotitan, Magnamanus, Magyarosaurus, Mamenchisaurus, Mantellisaurus, Mongolosaurus, Monkonosaurus, Montanoceratops, Naashoibitosaurus, Nagatitan, Neovenator, Neuquensaurus, Nevadadromeus, Ningyuansaurus, Ninjatitan, Noasaurus, Notoceratops, Nuthetes, Opisthocoelicaudia, Ornithopsis, Ouranosaurus, Pachysuchus, Palaeopteryx, Panoplosaurus, Paranthodon, Pararhabdodon, Parksosaurus, Parvicursor, Patagonykus, Patagopelta, Pellegrinisaurus, Phaedrolosaurus, Phosphatotitan, Pinacosaurus, Planicoxa, Plateosauravus, Poekilopleuron, Polacanthoides, Polyonax, Probactrosaurus, Protognathosaurus, Ptychotherates, Qinlingosaurus, Qiupalong, Quilmesaurus, Rayososaurus, Rhabdodon, Rinchenia, Rinconsaurus, Riojasaurus, Ruehleia, Saltasaurus, Santanaraptor, Saurolophus, Scansoriopteryx, Scelidosaurus, Scolosaurus, Scutellosaurus, Segisaurus, Shamosaurus, Shanyangosaurus, Siamosaurus, Sierraceratops, Sinocephale, Spinophorosaurus, Spondylosoma, Talarurus, Tanius, Tatisaurus, Tehuelchesaurus, Tendaguria, Tienshanosaurus, Tietasaura, Timimus, Titanomachya, Torvosaurus, Tsagantegia, Tsintaosaurus, Tugulusaurus, Turanoceratops, Udanoceratops, Vagaceratops, Valdosaurus, Variraptor, Velocisaurus, Vespersaurus, Vitosaura, Vulcanodon, Walgettosuchus, Xiangyunloong, Xianshanosaurus, Xingtianosaurus, Yamanasaurus, Yandusaurus, Yeneen, Zigongosaurus
 
-### species.holotype.material (181)
-
-Abrictosaurus, Achillobator, Acrocanthosaurus, Aegyptosaurus, Aeolosaurus, Alioramus, Allosaurus, Alpkarakush, Alvarezsaurus, Amanzia, Amazonsaurus, Amtosaurus, Amurosaurus, Amygdalodon, Anserimimus, Archaeoceratops, Archaeornithomimus, Arrhinoceratops, Asiaceratops, Astigmasaura, Atlascopcosaurus, Betasuchus, Brachylophosaurus, Breviceratops, Bruhathkayosaurus, Bustingorrytitan, Callovosaurus, Campananeyen, Cariocecus, Carnotaurus, Caudipteryx, Cetiosauriscus, Cetiosaurus, Chakisaurus, Chasmosaurus, Chilantaisaurus, Chingkankousaurus, Chinshakiangosaurus, Chuandongocoelurus, Chubutisaurus, Cienciargentina, Cionodon, Coahuilaceratops, Conchoraptor, Coronosaurus, Corythosaurus, Cumnoria, Dacentrurus, Dashanpusaurus, Deinocheirus, Diclonius, Dicraeosaurus, Diplotomodon, Dromaeosauroides, Dryptosaurus, Duriatitan, Dyoplosaurus, Dysalotosaurus, Edmontonia, Elaltitan, Elaphrosaurus, Emiliasaura, Euhelopus, Europatitan, Fulgurotherium, Gigantspinosaurus, Giraffatitan, Gondwanatitan, Gongxianosaurus, Guaibasaurus, Harpymimus, Hudiesaurus, Hypacrosaurus, Imperobator, Inawentu, Indosaurus, Itemirus, Janenschia, Jaxartosaurus, Jingiella, Jingshanosaurus, Kaijiangosaurus, Kansaignathus, Koshisaurus, Kotasaurus, Lambeosaurus, Laplatasaurus, Lapparentosaurus, Leptoceratops, Ligabueino, Lophorhothon, Lourinhasaurus, Lusotitan, Magyarosaurus, Mamenchisaurus, Mantellisaurus, Mongolosaurus, Monkonosaurus, Montanoceratops, Naashoibitosaurus, Neovenator, Neuquensaurus, Nevadadromeus, Ningyuansaurus, Ninjatitan, Noasaurus, Notoceratops, Nuthetes, Opisthocoelicaudia, Ornithopsis, Ouranosaurus, Pachysuchus, Palaeopteryx, Panoplosaurus, Paranthodon, Pararhabdodon, Parksosaurus, Parvicursor, Patagonykus, Patagopelta, Pellegrinisaurus, Phaedrolosaurus, Pinacosaurus, Plateosauravus, Poekilopleuron, Polacanthoides, Polyonax, Probactrosaurus, Protognathosaurus, Qinlingosaurus, Qiupalong, Quilmesaurus, Rayososaurus, Rhabdodon, Rinchenia, Rinconsaurus, Riojasaurus, Ruehleia, Saltasaurus, Santanaraptor, Saurolophus, Scansoriopteryx, Scelidosaurus, Scolosaurus, Scutellosaurus, Segisaurus, Shamosaurus, Shanyangosaurus, Siamosaurus, Sierraceratops, Sinocephale, Spinophorosaurus, Spondylosoma, Talarurus, Tanius, Tatisaurus, Tehuelchesaurus, Tendaguria, Tienshanosaurus, Tietasaura, Timimus, Titanomachya, Torvosaurus, Tsagantegia, Tsintaosaurus, Tugulusaurus, Turanoceratops, Udanoceratops, Vagaceratops, Valdosaurus, Variraptor, Velocisaurus, Vespersaurus, Vitosaura, Vulcanodon, Walgettosuchus, Xingtianosaurus, Yamanasaurus, Yandusaurus, Yeneen, Zigongosaurus
-
 ### species.location.locality (181)
 
 Abydosaurus, Acanthopholis, Acristavus, Adelolophus, Aepisaurus, Agathaumas, Agrosaurus, Ahvaytum, Algoasaurus, Alocodon, Altispinax, Alwalkeria, Aquilops, Archaeoceratops, Arstanosaurus, Astrodon, Australotitan, Aviatyrannis, Bagaraatan, Balaur, Beipiaognathus, Betasuchus, Bistahieversor, Bisticeratops, Brachyceratops, Bradycneme, Brontotholus, Bruhathkayosaurus, Caenagnathus, Campylodoniscus, Chialingosaurus, Chienkosaurus, Chingkankousaurus, Chondrosteosaurus, Cionodon, Clasmodosaurus, Coeluroides, Compsosuchus, Coronosaurus, Craspedodon, Craterosaurus, Crichtonsaurus, Cristatusaurus, Crittendenceratops, Cryptosaurus, Dandakosaurus, Deinonychus, Diclonius, Dinheirosaurus, Dinodocus, Diplotomodon, Dolichosuchus, Dysganus, Dzharacursor, Eoneophron, Eucamerotus, Fulengia, Geranosaurus, Gigantoscelus, Glishades, Gongpoquansaurus, Gryponyx, Gwyneddosaurus, Halticosaurus, Hanssuesia, Heishansaurus, Heptasteornis, Hierosaurus, Horshamosaurus, Hypselosaurus, Hypsibema, Iliosuchus, Inosaurus, Jeholornis, Jiutaisaurus, Kakuru, Koparion, Kosmoceratops, Kulceratops, Kundurosaurus, Laosaurus, Lexovisaurus, Loncosaurus, Macrurosaurus, Maleevus, Marmarospondylus, Masiakasaurus, Megapnosaurus, Menefeeceratops, Microceratus, Microcoelus, Microhadrosaurus, Minotaurasaurus, Mnyamawamtuka, Mochlodon, Monkonosaurus, Morinosaurus, Nasutoceratops, Nedcolbertia, Nedoceratops, Neosodon, Nodocephalosaurus, Nomingia, Ojoceratops, Ojoraptorsaurus, Oohkotokia, Ornithomimoides, Orosaurus, Orthogoniosaurus, Orthomerus, Ostromia, Ozraptor, Pachysuchus, Palaeopteryx, Palaeoscincus, Paronychodon, Peishansaurus, Pentaceratops, Phaedrolosaurus, Phyllodon, Platytholus, Polacanthoides, Polyonax, Priconodon, Priodontognathus, Prodeinodon, Pteropelyx, Pterospondylus, Pukyongosaurus, Qianzhousaurus, Qinlingosaurus, Rahonavis, Rapetosaurus, Raptorex, Regnosaurus, Rhinorex, Rugocaudia, Sarmientosaurus, Sasayamagnomus, Sauroniops, Sauropelta, Saurophaganax, Savannasaurus, Scansoriopteryx, Siamosaurus, Siluosaurus, Sinocoelurus, Sinopeltosaurus, Stegosaurides, Syngonosaurus, Szechuanosaurus, Tatankacephalus, Tatisaurus, Teinurosaurus, Terminocavus, Texacephale, Tharosaurus, Thecocoelurus, Thecospondylus, Thespesius, Tianchisaurus, Tianzhenosaurus, Tichosteus, Tienshanosaurus, Tratayenia, Trierarchuncus, Trigonosaurus, Trimucrodon, Triunfosaurus, Tuebingosaurus, Utahceratops, Vahiny, Wakinosaurus, Willinakaqe, Wyleyia, Xiyunykus, Zapsalis, Zhejiangosaurus, Ziapelta, Zigongosaurus, Zizhongosaurus
 
-### diagnostic_features (171)
+### species.holotype.material (168)
 
-Abrictosaurus, Achillobator, Aegyptosaurus, Aeolosaurus, Alioramus, Alvarezsaurus, Amtosaurus, Amurosaurus, Amygdalodon, Anserimimus, Archaeoceratops, Arrhinoceratops, Asiaceratops, Astigmasaura, Atlascopcosaurus, Betasuchus, Brachylophosaurus, Breviceratops, Bruhathkayosaurus, Callovosaurus, Campananeyen, Carcharodontosaurus, Cariocecus, Carnotaurus, Cetiosauriscus, Chakisaurus, Chindesaurus, Chingkankousaurus, Chinshakiangosaurus, Chuandongocoelurus, Chubutisaurus, Cienciargentina, Cionodon, Conchoraptor, Corythosaurus, Dacentrurus, Dashanpusaurus, Deinocheirus, Dinodocus, Diplotomodon, Dolichosuchus, Dromaeosauroides, Dryptosaurus, Duriatitan, Dyoplosaurus, Dysalotosaurus, Edmontonia, Embasaurus, Emiliasaura, Euhelopus, Euoplocephalus, Fulgurotherium, Gigantspinosaurus, Gondwanatitan, Guaibasaurus, Gwyneddosaurus, Harpymimus, Horshamosaurus, Hudiesaurus, Hulsanpes, Hypacrosaurus, Iliosuchus, Inawentu, Itemirus, Janenschia, Jaxartosaurus, Jingiella, Jingshanosaurus, Kaijiangosaurus, Kelmayisaurus, Kotasaurus, Kurupi, Lambeosaurus, Lametasaurus, Lapparentosaurus, Leaellynasaura, Leptoceratops, Ligabueino, Liliensternus, Lophorhothon, Luanchuanraptor, Magnosaurus, Magyarosaurus, Mamenchisaurus, Mandschurosaurus, Megalosaurus, Microhadrosaurus, Mongolosaurus, Monkonosaurus, Montanoceratops, Nanshiungosaurus, Neovenator, Neuquensaurus, Nevadadromeus, Ninjatitan, Noasaurus, Notoceratops, Nuthetes, Ohmdenosaurus, Orthogoniosaurus, Ouranosaurus, Pachysuchus, Palaeopteryx, Panoplosaurus, Paranthodon, Pararhabdodon, Parksosaurus, Parvicursor, Patagonykus, Patagopelta, Pellegrinisaurus, Phaedrolosaurus, Pinacosaurus, Plateosauravus, Poekilopleuron, Polacanthoides, Polyodontosaurus, Polyonax, Probactrosaurus, Protognathosaurus, Qinlingosaurus, Qiupalong, Quilmesaurus, Rapator, Rayososaurus, Rinchenia, Riojasaurus, Ruehleia, Saltasaurus, Santanaraptor, Saurolophus, Scolosaurus, Scutellosaurus, Segisaurus, Shamosaurus, Shanyangosaurus, Siamosaurus, Sierraceratops, Siluosaurus, Spondylosoma, Streptospondylus, Talarurus, Tanius, Tatisaurus, Tehuelchesaurus, Teinurosaurus, Tendaguria, Thecocoelurus, Tienshanosaurus, Timimus, Titanomachya, Torvosaurus, Trimucrodon, Tsagantegia, Tsintaosaurus, Tugulusaurus, Turanoceratops, Udanoceratops, Valdosaurus, Velocipes, Velocisaurus, Vitosaura, Vulcanodon, Walgettosuchus, Xiaosaurus, Yandusaurus, Yeneen, Yuanyanglong, Zapsalis, Zephyrosaurus, Zigongosaurus
+Abrictosaurus, Achillobator, Aeolosaurus, Alioramus, Allosaurus, Alvarezsaurus, Amtosaurus, Amurosaurus, Amygdalodon, Anserimimus, Archaeoceratops, Archaeornithomimus, Asiaceratops, Astigmasaura, Atlascopcosaurus, Betasuchus, Brachylophosaurus, Breviceratops, Bruhathkayosaurus, Bustingorrytitan, Callovosaurus, Campananeyen, Cariocecus, Carnotaurus, Caudipteryx, Cetiosauriscus, Cetiosaurus, Chakisaurus, Chingkankousaurus, Chinshakiangosaurus, Chuandongocoelurus, Chubutisaurus, Cienciargentina, Cionodon, Conchoraptor, Coronosaurus, Cumnoria, Dacentrurus, Dashanpusaurus, Deinocheirus, Diplotomodon, Dromaeosauroides, Dryptosaurus, Duriatitan, Dysalotosaurus, Edmontonia, Elaltitan, Elaphrosaurus, Emiliasaura, Euhelopus, Europatitan, Fulgurotherium, Gigantspinosaurus, Giraffatitan, Gondwanatitan, Gongxianosaurus, Guaibasaurus, Harpymimus, Hudiesaurus, Hypacrosaurus, Imperobator, Inawentu, Indosaurus, Itemirus, Janenschia, Jaxartosaurus, Jingiella, Jingshanosaurus, Kaijiangosaurus, Kansaignathus, Koshisaurus, Kotasaurus, Lambeosaurus, Laplatasaurus, Lapparentosaurus, Leptoceratops, Ligabueino, Lophorhothon, Lourinhasaurus, Lusotitan, Magyarosaurus, Mamenchisaurus, Mantellisaurus, Mongolosaurus, Monkonosaurus, Montanoceratops, Naashoibitosaurus, Neovenator, Neuquensaurus, Nevadadromeus, Ningyuansaurus, Ninjatitan, Noasaurus, Notoceratops, Nuthetes, Opisthocoelicaudia, Ornithopsis, Ouranosaurus, Pachysuchus, Palaeopteryx, Panoplosaurus, Paranthodon, Pararhabdodon, Parksosaurus, Parvicursor, Patagonykus, Patagopelta, Pellegrinisaurus, Phaedrolosaurus, Pinacosaurus, Plateosauravus, Poekilopleuron, Polacanthoides, Polyonax, Probactrosaurus, Protognathosaurus, Qinlingosaurus, Qiupalong, Quilmesaurus, Rayososaurus, Rhabdodon, Rinchenia, Rinconsaurus, Riojasaurus, Ruehleia, Saltasaurus, Santanaraptor, Saurolophus, Scansoriopteryx, Scelidosaurus, Scolosaurus, Scutellosaurus, Segisaurus, Shamosaurus, Shanyangosaurus, Siamosaurus, Sierraceratops, Sinocephale, Spinophorosaurus, Spondylosoma, Talarurus, Tanius, Tatisaurus, Tehuelchesaurus, Tendaguria, Tienshanosaurus, Tietasaura, Timimus, Titanomachya, Torvosaurus, Tsagantegia, Tsintaosaurus, Tugulusaurus, Turanoceratops, Udanoceratops, Vagaceratops, Valdosaurus, Variraptor, Velocisaurus, Vespersaurus, Vitosaura, Vulcanodon, Walgettosuchus, Xingtianosaurus, Yamanasaurus, Yandusaurus, Yeneen, Zigongosaurus
+
+### diagnostic_features (167)
+
+Abrictosaurus, Achillobator, Aeolosaurus, Alioramus, Alvarezsaurus, Amtosaurus, Amurosaurus, Amygdalodon, Anserimimus, Archaeoceratops, Asiaceratops, Astigmasaura, Atlascopcosaurus, Betasuchus, Brachylophosaurus, Breviceratops, Bruhathkayosaurus, Callovosaurus, Campananeyen, Carcharodontosaurus, Cariocecus, Carnotaurus, Cetiosauriscus, Chakisaurus, Chindesaurus, Chingkankousaurus, Chinshakiangosaurus, Chuandongocoelurus, Chubutisaurus, Cienciargentina, Cionodon, Conchoraptor, Dacentrurus, Dashanpusaurus, Deinocheirus, Dinodocus, Diplotomodon, Dolichosuchus, Dromaeosauroides, Dryptosaurus, Duriatitan, Dysalotosaurus, Edmontonia, Embasaurus, Emiliasaura, Euhelopus, Euoplocephalus, Fulgurotherium, Gigantspinosaurus, Gondwanatitan, Guaibasaurus, Gwyneddosaurus, Harpymimus, Horshamosaurus, Hudiesaurus, Hulsanpes, Hypacrosaurus, Iliosuchus, Inawentu, Itemirus, Janenschia, Jaxartosaurus, Jingiella, Jingshanosaurus, Kaijiangosaurus, Kelmayisaurus, Kotasaurus, Kurupi, Lambeosaurus, Lametasaurus, Lapparentosaurus, Leaellynasaura, Leptoceratops, Ligabueino, Liliensternus, Lophorhothon, Luanchuanraptor, Magnosaurus, Magyarosaurus, Mamenchisaurus, Mandschurosaurus, Megalosaurus, Microhadrosaurus, Mongolosaurus, Monkonosaurus, Montanoceratops, Nanshiungosaurus, Neovenator, Neuquensaurus, Nevadadromeus, Ninjatitan, Noasaurus, Notoceratops, Nuthetes, Ohmdenosaurus, Orthogoniosaurus, Ouranosaurus, Pachysuchus, Palaeopteryx, Panoplosaurus, Paranthodon, Pararhabdodon, Parksosaurus, Parvicursor, Patagonykus, Patagopelta, Pellegrinisaurus, Phaedrolosaurus, Pinacosaurus, Plateosauravus, Poekilopleuron, Polacanthoides, Polyodontosaurus, Polyonax, Probactrosaurus, Protognathosaurus, Qinlingosaurus, Qiupalong, Quilmesaurus, Rapator, Rayososaurus, Rinchenia, Riojasaurus, Ruehleia, Saltasaurus, Santanaraptor, Saurolophus, Scolosaurus, Scutellosaurus, Segisaurus, Shamosaurus, Shanyangosaurus, Siamosaurus, Sierraceratops, Siluosaurus, Spondylosoma, Streptospondylus, Talarurus, Tanius, Tatisaurus, Tehuelchesaurus, Teinurosaurus, Tendaguria, Thecocoelurus, Tienshanosaurus, Timimus, Titanomachya, Torvosaurus, Trimucrodon, Tsagantegia, Tsintaosaurus, Tugulusaurus, Turanoceratops, Udanoceratops, Valdosaurus, Velocipes, Velocisaurus, Vitosaura, Vulcanodon, Walgettosuchus, Xiaosaurus, Yandusaurus, Yeneen, Yuanyanglong, Zapsalis, Zephyrosaurus, Zigongosaurus
 
 ### species.location.coordinates (37)
 
@@ -105,3 +119,59 @@ Bienosaurus
 ### species.etymology (1)
 
 Kuszholia
+
+### etymology (0)
+
+_none_
+
+### description (0)
+
+_none_
+
+### diet (0)
+
+_none_
+
+### identifiers (0)
+
+_none_
+
+### references (0)
+
+_none_
+
+### species.period.name (0)
+
+_none_
+
+### species.period.stage (0)
+
+_none_
+
+### species.location.country (0)
+
+_none_
+
+### species.location.region (0)
+
+_none_
+
+### species.location.formation (0)
+
+_none_
+
+### species.described (0)
+
+_none_
+
+### species.authors (0)
+
+_none_
+
+### species.described_in (0)
+
+_none_
+
+### species (no entries) (0)
+
+_none_

@@ -14,6 +14,99 @@ in `paper-driven-backfill.md`.
 
 ## Entries
 
+### Material-straggler backfill, letter D — 2026-06-03
+
+6 targets, all queued. **Applied: 3** — material for Diclonius
+(`cope1876a`, the Fort Union paper renamed during the Zapsalis work),
+Dicraeosaurus, Dyoplosaurus (also `diagnostic_features`). Trimmed
+localities/catalog numbers from all three.
+
+- Caught one new American-English warning post-apply: Dyoplosaurus
+  diag "armoured" → "armored" (Parks 1924 Canadian spelling). The
+  reference *title* keeps "armoured" (verbatim). Going forward, run
+  `spellcheck-extractions` on the JSONs before apply to catch these
+  earlier (per feedback_spellcheck_before_apply).
+- Skipped: Dromaeosauroides (`christiansen2003`, review-quality — the
+  markdown is Bonde's review chapter, already in corpus-report §1).
+- No usable data: Dacentrurus (`lucas1902`) and Dryptosaurus
+  (`marsh1877b`) — both replacement-name notes with no holotype
+  description; originals are Owen 1875 and Cope 1866 respectively.
+  Added to corpus-report §1 as described_in candidates.
+
+Validation: 0 errors, 12 pre-existing warnings. Lint clean.
+
+### Material-straggler backfill, letter C — 2026-06-03
+
+9 targets, all queued. **Applied: 4** — material for Chasmosaurus,
+Chilantaisaurus, Coahuilaceratops, Corythosaurus (Corythosaurus also
+got `diagnostic_features`). Coahuilaceratops cleared the corpus-report
+Pending-Resolution list (loewen2010 now present and extracts cleanly).
+
+Edited in review:
+- Caudipteryx (`qiang1998`) and Coronosaurus (`ryan2012a`) returned
+  only a bare specimen number as "material" (Nature letter / Appendix-A
+  comb. nov. — no element list in the text). Nulled both rather than
+  duplicate `specimen_id`; their diagnosis slots were already filled.
+- Trimmed embedded catalog numbers from Chilantaisaurus (IVPP V.2884)
+  and Coahuilaceratops (CPC 276) before apply.
+
+Skipped/no-op:
+- Cetiosauriscus (`huene1927c`) — review-quality genus erection
+  (auto-skip); no holotype subsection.
+- Cetiosaurus (`owen1841`) and Cumnoria (`seeley1888a`) — abstract-only
+  corpus markdown; diagnosis already filled, material not derivable.
+  Both added to corpus-paper-report §1.
+
+Validation: 0 errors, 12 pre-existing warnings. Lint clean.
+
+### Material-straggler backfill, letter B — 2026-06-03
+
+2 targets (Betasuchus, Bustingorrytitan); both queued, **0 applied** —
+both are corpus-markdown problems, not extraction issues:
+
+- Bustingorrytitan (`salgado2023`): abstract-only markdown (10 lines);
+  no Holotype section. Already tracked in corpus-paper-report §1.
+- Betasuchus (`huene1932`): the markdown is a 39-line fragment of
+  Huene's 1932 *Saurischia* monograph covering other taxa; the
+  Betasuchus section is absent. Added to corpus-paper-report §1.
+
+Both remain in the missing-material set pending corpus re-fetch.
+
+### Material-straggler backfill, letter A — 2026-06-03
+
+New themed sub-pass (not a fresh letter run — the A–Z pass is long
+complete). Target set: the 77 genera that still lack
+`species.holotype.material` *and* whose `described_in` paper is present
+in the corpus (derived by cross-referencing the missing-fields report
+against `manifest.json` by key, after excluding MISSING_PAPERS and
+BHL-pending entries). Running alphabetically. Letter A = 9 targets;
+`build-extraction-prompts --letter A` queued exactly those 9 (134
+already-filled, 13 no-markdown — i.e. the rest of A is done).
+
+- **Applied: 6.** Material for Acrocanthosaurus, Aegyptosaurus,
+  Alpkarakush, Amanzia, Amazonsaurus, Arrhinoceratops;
+  `diagnostic_features` also filled for Aegyptosaurus and Arrhinoceratops
+  (only two with an empty diagnosis slot).
+- **Edited in review: 3 over-long material strings trimmed** to the
+  ≤200-char guideline (Acrocanthosaurus 374→204, Alpkarakush 420→226,
+  Amanzia 305→238).
+- **Auto-skipped (paper_quality=review): 2.** Amurosaurus (`bolotsky1991`
+  markdown is a later *Hadrosaurs* review chapter, not the 1991 original)
+  and Archaeornithomimus (`russell1972` erects the genus in a comparative
+  review with no holotype block). Both have non-describing `described_in`
+  keys in the corpus — candidates for a described_in audit.
+- **No-op: 1.** Allosaurus — `marsh1877c` is the 1877 brief notice with
+  no holotype description; the YAML holotype is a neotype (USNM V 4734).
+
+Surprises: confirms "have the paper" ≠ "paper contains a holotype
+description" — brief 19th-c. notices, review chapters, and
+replacement/lectotype/neotype designations carry no extractable original
+material. Amanzia is a syntype (no holotype designated by Huene 1922);
+recorded as a syntype series.
+
+Validation: 0 errors, 12 pre-existing warnings. Lint clean. Not yet
+committed (batch left in working tree for review).
+
 ### Pending-resolution sweep #3 — 2026-05-06
 
 - Cross-letter run targeting the third batch of 8 entries in
