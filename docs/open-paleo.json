@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-06-05T01:30:39.778Z",
+    "built_at": "2026-06-05T02:02:03.753Z",
     "clade_count": 250,
     "genus_count": 1391,
     "license": "CC-BY-4.0",
@@ -7171,6 +7171,13 @@
         "fluvial",
         "arid"
       ],
+      "diagnostic_features": [
+        "Lower cheek teeth with relatively symmetrical crowns, narrow basal cingula, and slender, unswollen roots that are well set off from the crowns",
+        "Middle vertical ridge of the cheek-tooth crown lying centrally on the external face, with anterior and posterior ridges of about equal prominence",
+        "Caniniform teeth absent in the type (a presumed female); where present in the referred specimen, the lower caniniform is serrated on the anterior cutting edge only",
+        "Lateral face of the maxilla vertically concave, without a longitudinal ridge",
+        "Mandible lacking a lateral fenestra, with dentaries inflated anteriorly"
+      ],
       "identifiers": [
         {
           "source": "pbdb",
@@ -7209,7 +7216,8 @@
               "UCL B54"
             ],
             "specimen_type": "holotype",
-            "institution": "Grant Museum of Zoology, University College"
+            "institution": "Grant Museum of Zoology, University College",
+            "material": "Skull with full dentition and a partial, only partly-prepared postcranial skeleton, including four unfused sacral vertebrae, forelimb and manus, femur, metatarsals, and pes"
           },
           "size": {
             "length_m": {
@@ -7221,12 +7229,31 @@
               "max": 45
             }
           },
+          "synonyms": [
+            {
+              "name": "Lycorhinus consors",
+              "type": "reassigned",
+              "reason": "Originally described as Lycorhinus consors by Thulborn (1974); Hopson (1975) erected Abrictosaurus for the species."
+            }
+          ],
           "described": 1975,
           "authors": "Hopson",
           "described_in": "hopson1975"
         }
       ],
       "references": [
+        {
+          "id": "thulborn1974",
+          "authors": "Thulborn, R. A.",
+          "year": 1974,
+          "title": "A new heterodontosaurid dinosaur (Reptilia: Ornithischia) from the Upper Triassic Red Beds of Lesotho",
+          "journal": "Zoological Journal of the Linnean Society",
+          "volume": "55",
+          "issue": "2",
+          "pages": "151-175",
+          "doi": "10.1111/j.1096-3642.1974.tb01591.x",
+          "notes": "Original description of the type material (UCL B54) as Lycorhinus consors; Hopson (1975) erected Abrictosaurus for this species."
+        },
         {
           "id": "hopson1975",
           "authors": "Hopson, J. A.",
