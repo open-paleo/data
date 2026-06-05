@@ -10,6 +10,11 @@ locomotion: quadrupedal
 paleoenvironment:
   - fluvial
   - coastal
+diagnostic_features:
+  - Dorsal vertebrae higher than wide, with concave articular faces and an
+    obtuse ventral tuberosity at each end of the underside of the longer centrum
+  - Long bones (tibia, fibula) solid and cancellous throughout, lacking a
+    medullary cavity, with a dense glistening superficial layer
 identifiers:
   - source: pbdb
     id: "52929"
@@ -45,6 +50,8 @@ species:
       specimen_id: [ AMNH FR 3950 ]
       specimen_type: holotype
       institution: AMNH
+      material: At least three posterior dorsal vertebrae (neural arches co-ossified)
+        and fragments of limb bones, including portions of a tibia and fibula
     described_in: cope1874
 references:
   - id: cope1874
@@ -57,3 +64,11 @@ references:
     volume: "1"
     issue: "1"
     pages: 9-22
+  - id: cope1875
+    authors: Cope, E. D.
+    year: 1875
+    title: Report on the Vertebrate Paleontology of Colorado
+    journal: United States Geological Survey of the Territories
+    pages: 429-533
+    notes: Provides a fuller description of Polyonax mortuarius than the original
+      1874 notice.
