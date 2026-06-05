@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-06-05T00:47:26.928Z",
+    "built_at": "2026-06-05T01:30:39.778Z",
     "clade_count": 250,
     "genus_count": 1391,
     "license": "CC-BY-4.0",
@@ -78300,6 +78300,14 @@
       "paleoenvironment": [
         "coastal"
       ],
+      "diagnostic_features": [
+        "Astragalus low and platy, unlike that of all other sauropods",
+        "Anterior caudal vertebrae with strongly convex posterior and strongly concave anterior articular surfaces, lacking pleurocoels",
+        "Middle caudal vertebrae strongly pinched laterally, with weakly biconvex articular surfaces and a high-elliptical cross-section",
+        "Anterior dorsal vertebrae with nearly completely reduced neural spines and very robust diapophyses",
+        "Manus phalangeal formula 2-2-1-1-1, with only the first digit bearing a very large claw",
+        "Pes with clawed first three toes, phalangeal formula 2-3-3-2-1, and a short, proximally very broad metatarsal V"
+      ],
       "identifiers": [
         {
           "source": "pbdb",
@@ -78352,7 +78360,8 @@
               "SMNS 12144"
             ],
             "specimen_type": "holotype",
-            "institution": "Staatliches Museum für Naturkunde"
+            "institution": "Staatliches Museum für Naturkunde",
+            "material": "Distal articular end of the right femur, right tibia and fibula, right astragalus, and right metatarsals I-V with corresponding phalanges I-V"
           },
           "size": {
             "length_m": {
@@ -78360,12 +78369,44 @@
               "max": 20
             }
           },
+          "synonyms": [
+            {
+              "name": "Gigantosaurus robustus",
+              "type": "reassigned",
+              "reason": "Originally described as Gigantosaurus robustus; the genus name was preoccupied, and the species was reassigned to Tornieria and later to Janenschia."
+            },
+            {
+              "name": "Tornieria robusta",
+              "type": "reassigned",
+              "reason": "Combination used after Sternfeld (1911) transferred the species to Tornieria; Wild (1991) found it generically distinct and erected Janenschia."
+            }
+          ],
           "described": 1991,
           "authors": "Wild",
           "described_in": "wild1991"
         }
       ],
       "references": [
+        {
+          "id": "fraas1908",
+          "authors": "Fraas, E.",
+          "year": 1908,
+          "title": "Dinosaurierfunde in Ostafrika [Dinosaur finds in East Africa]",
+          "journal": "Jahreshefte des Vereins für Vaterländische Naturkunde in Württemberg",
+          "volume": "64",
+          "pages": "84-86",
+          "notes": "In German. Original description of the type material (Skeleton B, holotype SMNS 12144, a right hindlimb) as Gigantosaurus robustus; Gigantosaurus was preoccupied by Seeley, 1869."
+        },
+        {
+          "id": "sternfeld1911",
+          "authors": "Sternfeld, R.",
+          "year": 1911,
+          "title": "Zur Nomenklatur der Gattung Gigantosaurus Fraas [On the nomenclature of the genus Gigantosaurus Fraas]",
+          "journal": "Sitzungsberichte der Gesellschaft Naturforschender Freunde zu Berlin",
+          "volume": "8",
+          "pages": "398",
+          "notes": "In German. Replaced the preoccupied Gigantosaurus Fraas, 1908 with Tornieria, transferring Gigantosaurus robustus to Tornieria robusta, the epithet changing to agree with the feminine genus."
+        },
         {
           "id": "wild1991",
           "authors": "Wild, R.",
