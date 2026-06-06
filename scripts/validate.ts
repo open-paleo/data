@@ -166,6 +166,7 @@ const allowedHolotypeStatus = new Set(schema.holotype_status ?? []);
 const allowedSpecimenTypes = new Set(schema.specimen_types ?? []);
 const allowedIntegument = new Set(schema.integument ?? []);
 const allowedIntegumentEvidence = new Set(schema.integument_evidence ?? []);
+const allowedFeatures = new Set(Object.values(schema.appearance_features ?? {}).flat());
 const allowedPaleoenvironments = new Set(schema.paleoenvironments ?? []);
 const allowedSynonymTypes = new Set(schema.synonym_types ?? []);
 const allowedIdentifierSources = new Set(schema.identifier_sources ?? []);
@@ -1252,6 +1253,20 @@ for (const [filePath, doc] of genusParsed)
             "Appearance compliance",
             filePath,
             `invalid integument evidence '${appearance.evidence}' (must be one of: ${[...allowedIntegumentEvidence].join(", ")})`);
+    }
+
+    if (Array.isArray(appearance.features))
+    {
+        for (const feature of appearance.features)
+        {
+            if (!allowedFeatures.has(feature))
+            {
+                checkError(
+                    "Appearance compliance",
+                    filePath,
+                    `invalid appearance feature '${feature}' (not in schema appearance_features)`);
+            }
+        }
     }
 }
 

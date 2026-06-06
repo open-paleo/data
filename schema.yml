@@ -62,6 +62,59 @@ integument_evidence:
   - direct
   - inferred
 
+# appearance.features controlled vocabulary, grouped by body region.
+# The set of valid feature tags is the UNION of all lists below; a tag's
+# body region is the group it appears under (so the same structure serves
+# both validation and UI grouping). Tags are short lowercase noun phrases
+# for discrete external structures. Body COVERINGS (feathered/scaled) belong
+# in `integument`, not here — only distinctive integumentary STRUCTURES
+# (quill knobs, tail bristles) are features.
+appearance_features:
+  head:
+    - nasal crest
+    - hollow cranial crest
+    - solid cranial crest
+    - nasal horn
+    - brow horns
+    - cranial dome
+    - cranial bosses
+    - keratinous beak
+    - elongate snout
+    - enlarged caniniform teeth
+    - neck frill
+    - frill spikes
+    - epoccipitals
+    - downturned snout
+    - jugal horns
+    - feather crest
+    - snout hornlets
+  neck:
+    - elongate neck
+    - bifurcated cervical spines
+  torso:
+    - dorsal sail
+    - dorsal spines
+    - dermal plates
+    - shoulder spikes
+  body:
+    - osteoderms
+    - body armor
+  limbs:
+    - enlarged manual claws
+    - sickle claw
+    - reduced forelimbs
+    - elongate forelimbs
+    - quill knobs
+    - membranous wing
+    - feathered wings
+    - hindlimb feathers
+  tail:
+    - tail club
+    - tail spikes
+    - whiplash tail
+    - tail bristles
+    - feathered tail
+
 paleoenvironments:
   - fluvial
   - lacustrine

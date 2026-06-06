@@ -633,6 +633,13 @@ export type Schema = {
     integument_evidence?: Array<string>;
 
     /**
+     * Allowed appearance.features tags, grouped by body region. The set of
+     * valid tags is the union of all groups; a tag's body region is the
+     * group key it appears under (used for optional UI grouping).
+     */
+    appearance_features?: Record<string, Array<string>>;
+
+    /**
      * Allowed paleoenvironment values.
      */
     paleoenvironments?: Array<string>;
