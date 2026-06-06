@@ -205,9 +205,10 @@ function buildPapersNeededBody(
 async function main(): Promise<void>
 {
     const args = process.argv.slice(2);
-    const positional = args.filter((arg) => !arg.startsWith("--"));
     const notesIndex = args.indexOf("--notes");
     const noteOverride = notesIndex >= 0 ? args[notesIndex + 1] : null;
+    const positional = args.filter(
+        (arg, index) => !arg.startsWith("--") && index !== notesIndex + 1);
 
     if (positional.length !== 1)
     {
