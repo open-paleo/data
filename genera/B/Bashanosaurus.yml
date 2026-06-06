@@ -55,6 +55,12 @@ species:
         - 30.941999
         - 108.750999
     size:
+      weight_kg:
+        min: 240
+        max: 240
+      hip_height_m:
+        min: 0.7
+        max: 0.7
       length_m:
         min: 3
         max: 3
@@ -83,3 +89,11 @@ references:
     publisher: Informa UK Limited
     doi: 10.1080/02724634.2021.1995737
     url: http://dx.doi.org/10.1080/02724634.2021.1995737
+  - id: jones2026a
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
+    book: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25025-0
+    notes: Source of the mass and hip height estimates.

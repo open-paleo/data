@@ -65,6 +65,12 @@ species:
         - 26.343056
         - 102.144447
     size:
+      weight_kg:
+        min: 2000
+        max: 2000
+      hip_height_m:
+        min: 2.9
+        max: 2.9
       length_m:
         min: 11.6
         max: 12.0
@@ -91,3 +97,11 @@ references:
     volume: "48"
     issue: "3"
     pages: 185-202
+  - id: jones2026b
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
+    book: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25023-6
+    notes: Source of the mass and hip height estimates.

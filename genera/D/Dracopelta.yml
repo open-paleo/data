@@ -62,6 +62,9 @@ species:
         five different types of dermal armor.
       completeness: partial
     size:
+      hip_height_m:
+        min: 0.7
+        max: 0.7
       length_m:
         min: 3.0
         max: 3.0
@@ -84,3 +87,11 @@ references:
     publisher: Elsevier BV
     doi: 10.1016/s0016-6995(80)80081-7
     url: http://dx.doi.org/10.1016/s0016-6995(80)80081-7
+  - id: jones2026a
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
+    book: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25025-0
+    notes: Source of the hip height estimate.

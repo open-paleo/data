@@ -54,6 +54,12 @@ species:
         - 48.945168
         - -110.562073
     size:
+      weight_kg:
+        min: 2200
+        max: 2200
+      hip_height_m:
+        min: 2
+        max: 2
       length_m:
         min: 6.0
         max: 6.0
@@ -77,3 +83,11 @@ references:
     journal: "New Perspectives on Horned Dinosaurs: The Royal Tyrrell Museum
       Ceratopsian Symposium. Indiana University Press, Bloomington"
     pages: 181-188
+  - id: jones2026a
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
+    book: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25025-0
+    notes: Source of the mass and hip height estimates.

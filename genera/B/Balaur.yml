@@ -60,6 +60,9 @@ species:
         caudal vertebrae and much of the pectoral and pelvic girdles and limbs
       completeness: partial
     size:
+      hip_height_m:
+        min: 0.6
+        max: 0.6
       length_m:
         min: 1.8
         max: 2.5
@@ -82,3 +85,11 @@ references:
     publisher: Proceedings of the National Academy of Sciences
     doi: 10.1073/pnas.1006970107
     url: http://dx.doi.org/10.1073/pnas.1006970107
+  - id: jones2026c
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
+    book: "The Princeton Encyclopedia of Dinosaurs: Theropods"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25021-2
+    notes: Source of the hip height estimate.

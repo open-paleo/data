@@ -57,6 +57,12 @@ species:
         left digit II"
       completeness: partial
     size:
+      weight_kg:
+        min: 12
+        max: 12
+      hip_height_m:
+        min: 0.5
+        max: 0.5
       length_m:
         min: 2.0
         max: 2.0
@@ -76,3 +82,11 @@ references:
     publisher: Informa UK Limited
     doi: 10.1080/14772019.2010.484650
     url: http://dx.doi.org/10.1080/14772019.2010.484650
+  - id: jones2026b
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
+    book: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25023-6
+    notes: Source of the mass and hip height estimates.

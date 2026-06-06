@@ -65,6 +65,16 @@ species:
         vertebrae; juvenile based on unfused neurocentral sutures and scarred
         bone surfaces. Preserves mammalian stomach contents.
       completeness: complete
+    size:
+      length_m:
+        min: 1
+        max: 1
+      weight_kg:
+        min: 0.5
+        max: 0.5
+      hip_height_m:
+        min: 0.2
+        max: 0.2
     described: 2025
     authors: Qiu et al.
     described_in: qiu2025
@@ -83,3 +93,11 @@ references:
     notes: Erects Huadanosaurus for a juvenile skeleton from the Dawangzhangzi
       bed previously assigned to Sinosauropteryx prima. Holotype preserves
       eutriconodont + eutherian gut contents.
+  - id: jones2026c
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
+    book: "The Princeton Encyclopedia of Dinosaurs: Theropods"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25021-2
+    notes: Source of the body length, mass, and hip height estimates.

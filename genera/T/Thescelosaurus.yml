@@ -75,6 +75,9 @@ species:
         coracoids.
       completeness: partial
     size:
+      hip_height_m:
+        min: 1
+        max: 1
       length_m:
         min: 2.5
         max: 4.5
@@ -93,3 +96,11 @@ references:
     volume: "61"
     issue: "5"
     pages: 1-5
+  - id: jones2026a
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
+    book: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25025-0
+    notes: Source of the hip height estimate.

@@ -69,6 +69,9 @@ species:
         vertebrae), including a perfectly preserved skull.
       completeness: complete
     size:
+      hip_height_m:
+        min: 2.5
+        max: 2.5
       length_m:
         min: 8.0
         max: 11.0
@@ -90,3 +93,11 @@ references:
     volume: "23"
     issue: "5"
     pages: 302-304
+  - id: jones2026c
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
+    book: "The Princeton Encyclopedia of Dinosaurs: Theropods"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25021-2
+    notes: Source of the hip height estimate.

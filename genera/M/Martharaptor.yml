@@ -56,6 +56,16 @@ species:
       material: Fragmentary skeleton including vertebral fragments, scapula, forelimb
         and hindlimb bones, ischium, and well-preserved manual unguals
       completeness: fragmentary
+    size:
+      length_m:
+        min: 2.9
+        max: 2.9
+      weight_kg:
+        min: 100
+        max: 100
+      hip_height_m:
+        min: 0.9
+        max: 0.9
     described: 2012
     authors: Senter et al.
     described_in: senter2012a
@@ -72,3 +82,11 @@ references:
     publisher: Public Library of Science (PLoS)
     doi: 10.1371/journal.pone.0043911
     url: http://dx.doi.org/10.1371/journal.pone.0043911
+  - id: jones2026c
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
+    book: "The Princeton Encyclopedia of Dinosaurs: Theropods"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25021-2
+    notes: Source of the body length, mass, and hip height estimates.

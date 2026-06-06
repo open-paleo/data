@@ -64,6 +64,12 @@ species:
         extensively excavated centra reduced to thin shells.
       completeness: fragmentary
     size:
+      weight_kg:
+        min: 25
+        max: 25
+      hip_height_m:
+        min: 0.6
+        max: 0.6
       length_m:
         min: 1.8
         max: 1.8
@@ -95,3 +101,18 @@ references:
     notes: Phylogenetic reanalysis recovering Coelurus fragilis as basal-most
       ornithomimosaur under equal-weight parsimony; authors note this does not
       settle the longstanding placement ambiguity.
+  - id: paul2024a
+    authors: Paul, Gregory S.
+    year: 2024
+    title: "The Princeton Field Guide to Dinosaurs (3rd ed.)"
+    book: "The Princeton Field Guide to Dinosaurs (3rd ed.)"
+    publisher: Princeton University Press
+    notes: Source of the mass estimate.
+  - id: jones2026c
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
+    book: "The Princeton Encyclopedia of Dinosaurs: Theropods"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25021-2
+    notes: Source of the hip height estimate.

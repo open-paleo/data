@@ -75,6 +75,9 @@ species:
       region: Baden-Württemberg
       formation: Trossingen
     size:
+      hip_height_m:
+        min: 2
+        max: 2
       length_m:
         min: 4.8
         max: 10.0
@@ -121,6 +124,16 @@ species:
         left femoral head (559); a left tibia (556). Lectotype and
         paralectotypes designated in Moser (2003). Original syntype series
         largely destroyed.'
+    size:
+      length_m:
+        min: 9.4
+        max: 9.4
+      weight_kg:
+        min: 2600
+        max: 2600
+      hip_height_m:
+        min: 2.3
+        max: 2.3
     described: 1837
     authors: Meyer
     described_in: meyer1837
@@ -151,3 +164,19 @@ references:
     doi: 10.1007/BF01493265
     url: https://doi.org/10.1007/BF01493265
     notes: In German. Original description of Plateosaurus trossingensis.
+  - id: jones2026b
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
+    book: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25023-6
+    notes: Source of the hip height estimate.
+  - id: molina-pérez2020
+    authors: Molina-Pérez, Rubén; Larramendi, Asier
+    year: 2020
+    title: "Dinosaur Facts and Figures: The Sauropods and Other Sauropodomorphs"
+    book: "Dinosaur Facts and Figures: The Sauropods and Other Sauropodomorphs"
+    publisher: Princeton University Press
+    isbn: 978-0-691-19069-3
+    notes: Source of the body length, mass, and hip height estimates.

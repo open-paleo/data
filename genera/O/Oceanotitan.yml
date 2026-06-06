@@ -61,6 +61,16 @@ species:
         neural arch fragments, anterior chevron, right scapula, right coracoid, ilium
         fragment, two pubes, two ischia, right femur, tibia, fibula, and astragalus
       completeness: partial
+    size:
+      length_m:
+        min: 16
+        max: 16
+      weight_kg:
+        min: 10000
+        max: 10000
+      hip_height_m:
+        min: 3.1
+        max: 3.1
     described: 2019
     authors: Mocho et al.
     described_in: mocho2019
@@ -76,3 +86,11 @@ references:
     publisher: Informa UK Limited
     doi: 10.1080/02724634.2019.1578782
     url: http://dx.doi.org/10.1080/02724634.2019.1578782
+  - id: jones2026b
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
+    book: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25023-6
+    notes: Source of the body length, mass, and hip height estimates.

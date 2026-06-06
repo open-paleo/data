@@ -51,6 +51,9 @@ species:
         - 50.75
         - -2.916667
     size:
+      hip_height_m:
+        min: 0.8
+        max: 0.8
       length_m:
         min: 3.8
         max: 4.0
@@ -75,3 +78,11 @@ references:
     volume: "17"
     pages: 91-176
     publisher: Adam and Charles Black
+  - id: jones2026a
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
+    book: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25025-0
+    notes: Source of the hip height estimate.

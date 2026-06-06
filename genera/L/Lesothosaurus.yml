@@ -64,6 +64,12 @@ species:
         and almost complete skull (UCL B23)."
       completeness: partial
     size:
+      weight_kg:
+        min: 18
+        max: 18
+      hip_height_m:
+        min: 0.55
+        max: 0.55
       length_m:
         min: 1.0
         max: 2.0
@@ -83,3 +89,18 @@ references:
     publisher: Springer Science and Business Media LLC
     doi: 10.1007/bf03006735
     url: http://dx.doi.org/10.1007/bf03006735
+  - id: paul2024a
+    authors: Paul, Gregory S.
+    year: 2024
+    title: "The Princeton Field Guide to Dinosaurs (3rd ed.)"
+    book: "The Princeton Field Guide to Dinosaurs (3rd ed.)"
+    publisher: Princeton University Press
+    notes: Source of the mass estimate.
+  - id: jones2026a
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
+    book: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25025-0
+    notes: Source of the hip height estimate.

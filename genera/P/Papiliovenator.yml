@@ -43,6 +43,16 @@ species:
       coordinates:
         - 41.743919
         - 106.744362
+    size:
+      length_m:
+        min: 1
+        max: 1
+      weight_kg:
+        min: 3
+        max: 3
+      hip_height_m:
+        min: 0.3
+        max: 0.3
     described: 2022
     authors: Pei et al.
     described_in: pei2022
@@ -65,3 +75,11 @@ references:
     publisher: Elsevier BV
     doi: 10.1016/j.cretres.2021.105052
     url: http://dx.doi.org/10.1016/j.cretres.2021.105052
+  - id: jones2026c
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
+    book: "The Princeton Encyclopedia of Dinosaurs: Theropods"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25021-2
+    notes: Source of the body length, mass, and hip height estimates.

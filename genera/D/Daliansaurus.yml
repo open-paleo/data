@@ -67,6 +67,12 @@ species:
       material: Nearly complete skeleton with estimated total body length of 1 meter.
       completeness: complete
     size:
+      weight_kg:
+        min: 1.5
+        max: 1.5
+      hip_height_m:
+        min: 0.3
+        max: 0.3
       length_m:
         min: 1.0
         max: 1.0
@@ -87,3 +93,18 @@ references:
     publisher: Wiley
     doi: 10.1111/1755-6724.13307
     url: http://dx.doi.org/10.1111/1755-6724.13307
+  - id: paul2024a
+    authors: Paul, Gregory S.
+    year: 2024
+    title: "The Princeton Field Guide to Dinosaurs (3rd ed.)"
+    book: "The Princeton Field Guide to Dinosaurs (3rd ed.)"
+    publisher: Princeton University Press
+    notes: Source of the mass estimate.
+  - id: jones2026c
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
+    book: "The Princeton Encyclopedia of Dinosaurs: Theropods"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25021-2
+    notes: Source of the hip height estimate.

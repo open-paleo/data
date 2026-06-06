@@ -55,6 +55,16 @@ species:
       coordinates:
         - 54.433331
         - 48.383331
+    size:
+      length_m:
+        min: 20
+        max: 20
+      weight_kg:
+        min: 15000
+        max: 15000
+      hip_height_m:
+        min: 3.1
+        max: 3.1
     described: 2018
     authors: Averianov and Efimov
     described_in: averianov2018b
@@ -76,3 +86,11 @@ references:
     publisher: Saint Petersburg State University
     doi: 10.21638/spbu03.2018.301
     url: http://dx.doi.org/10.21638/spbu03.2018.301
+  - id: jones2026b
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
+    book: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25023-6
+    notes: Source of the body length, mass, and hip height estimates.

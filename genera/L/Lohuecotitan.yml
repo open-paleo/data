@@ -60,6 +60,16 @@ species:
       material: Partial skeleton comprising cervical, dorsal, sacral and caudal
         vertebrae, haemal arches, ulna, ischia, pubis, femur, fibula, tibia, and ribs
       completeness: partial
+    size:
+      length_m:
+        min: 11
+        max: 11
+      weight_kg:
+        min: 3000
+        max: 3000
+      hip_height_m:
+        min: 2
+        max: 2
     described: 2016
     authors: Díez Díaz et al.
     described_in: díezdíaz2016
@@ -76,3 +86,11 @@ references:
     publisher: Elsevier BV
     doi: 10.1016/j.cretres.2016.08.001
     url: http://dx.doi.org/10.1016/j.cretres.2016.08.001
+  - id: jones2026b
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
+    book: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25023-6
+    notes: Source of the body length, mass, and hip height estimates.

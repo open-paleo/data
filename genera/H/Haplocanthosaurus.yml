@@ -81,6 +81,9 @@ species:
           Haplocanthus is preoccupied by a fish and was replaced in the same
           volume by Haplocanthosaurus (Hatcher, 1903b).
     size:
+      hip_height_m:
+        min: 3.5
+        max: 3.5
       length_m:
         min: 14.8
         max: 14.8
@@ -120,6 +123,9 @@ species:
       - Distal end of ischium not rotated inward and not fused to its opposite
         member in the midline.
     size:
+      weight_kg:
+        min: 14400
+        max: 14400
       length_m:
         min: 21.0
         max: 21.3
@@ -157,3 +163,18 @@ references:
     notes: Describes the second species H. delfsi on a ~21 m mounted skeleton
       from the lower Morrison of Oil Creek, Colorado; presents a revised
       genus diagnosis.
+  - id: jones2026b
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
+    book: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25023-6
+    notes: Source of the hip height estimate.
+  - id: paul2024a
+    authors: Paul, Gregory S.
+    year: 2024
+    title: "The Princeton Field Guide to Dinosaurs (3rd ed.)"
+    book: "The Princeton Field Guide to Dinosaurs (3rd ed.)"
+    publisher: Princeton University Press
+    notes: Source of the mass estimate.

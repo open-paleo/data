@@ -73,6 +73,16 @@ species:
       coordinates:
         - 50.599998
         - -1.966667
+    size:
+      length_m:
+        min: 0.65
+        max: 0.65
+      weight_kg:
+        min: 0.3
+        max: 0.3
+      hip_height_m:
+        min: 0.15
+        max: 0.15
     described: 1861
     authors: Owen
 
@@ -92,3 +102,11 @@ references:
     journal: The Palaeontological Society, London
     volume: "1858"
     pages: 31-39
+  - id: jones2026a
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
+    book: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25025-0
+    notes: Source of the body length, mass, and hip height estimates.

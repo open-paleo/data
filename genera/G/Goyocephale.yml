@@ -72,6 +72,12 @@ species:
         tarsals, metatarsals II-IV, pedal phalanges, caudal tendons
       completeness: partial
     size:
+      weight_kg:
+        min: 28
+        max: 28
+      hip_height_m:
+        min: 0.5
+        max: 0.5
       length_m:
         min: 2
         max: 2
@@ -88,3 +94,11 @@ references:
     volume: "27"
     issue: 1-4
     pages: 115-127
+  - id: jones2026a
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
+    book: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25025-0
+    notes: Source of the mass and hip height estimates.

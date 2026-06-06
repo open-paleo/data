@@ -65,6 +65,12 @@ species:
         vertebrae, belonging to a single individual
       completeness: fragmentary
     size:
+      weight_kg:
+        min: 15000
+        max: 15000
+      hip_height_m:
+        min: 3.5
+        max: 3.5
       length_m:
         min: 12
         max: 14
@@ -83,3 +89,11 @@ references:
     pages: 529-564
     doi: 10.5281/zenodo.13454985
     url: http://dx.doi.org/10.5281/zenodo.13454985
+  - id: jones2026b
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
+    book: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25023-6
+    notes: Source of the mass and hip height estimates.

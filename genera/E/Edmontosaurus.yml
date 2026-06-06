@@ -85,6 +85,9 @@ species:
         ribs.
       completeness: partial
     size:
+      hip_height_m:
+        min: 3.2
+        max: 3.2
       length_m:
         min: 7.0
         max: 15.0
@@ -104,3 +107,11 @@ references:
     volume: "31"
     issue: "7"
     pages: 65-73
+  - id: jones2026a
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
+    book: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25025-0
+    notes: Source of the hip height estimate.

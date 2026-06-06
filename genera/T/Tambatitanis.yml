@@ -60,6 +60,16 @@ species:
         vertebra, dorsal vertebrae, dorsal ribs, sacral ribs, sacral spine, pubis,
         ilium, caudal vertebrae, chevrons"
       completeness: partial
+    size:
+      length_m:
+        min: 18
+        max: 18
+      weight_kg:
+        min: 8000
+        max: 8000
+      hip_height_m:
+        min: 2.7
+        max: 2.7
     described: 2014
     authors: Saegusa and Ikeda
     described_in: saegusa2014
@@ -75,3 +85,11 @@ references:
     publisher: Magnolia Press
     doi: 10.11646/zootaxa.3848.1.1
     url: http://dx.doi.org/10.11646/zootaxa.3848.1.1
+  - id: jones2026b
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
+    book: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25023-6
+    notes: Source of the body length, mass, and hip height estimates.

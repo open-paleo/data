@@ -55,6 +55,16 @@ species:
         dorsal vertebrae, 16 dorsal ribs, both pectoral girdles, nearly complete left
         and partial right forelimb, partial pelvis, and partial left hind limb
       completeness: partial
+    size:
+      length_m:
+        min: 3
+        max: 3
+      weight_kg:
+        min: 65
+        max: 65
+      hip_height_m:
+        min: 1
+        max: 1
     described: 2010
     authors: Sertich and Loewen
     described_in: sertich2010
@@ -71,3 +81,18 @@ references:
     publisher: Public Library of Science (PLoS)
     doi: 10.1371/journal.pone.0009789
     url: http://dx.doi.org/10.1371/journal.pone.0009789
+  - id: paul2024a
+    authors: Paul, Gregory S.
+    year: 2024
+    title: "The Princeton Field Guide to Dinosaurs (3rd ed.)"
+    book: "The Princeton Field Guide to Dinosaurs (3rd ed.)"
+    publisher: Princeton University Press
+    notes: Source of the body length and mass estimates.
+  - id: jones2026b
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
+    book: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25023-6
+    notes: Source of the hip height estimate.

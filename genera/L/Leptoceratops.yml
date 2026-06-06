@@ -73,6 +73,9 @@ species:
         crest, dentary, predentary, splenial), an articulated caudal series, a
         complete fore limb, and parts of the hind limbs
     size:
+      hip_height_m:
+        min: 0.8
+        max: 0.8
       length_m:
         min: 2.0
         max: 2.0
@@ -92,3 +95,11 @@ references:
     volume: "33"
     issue: "36"
     pages: 567-580
+  - id: jones2026a
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
+    book: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25025-0
+    notes: Source of the hip height estimate.

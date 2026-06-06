@@ -63,6 +63,12 @@ species:
       material: Partial skeleton including skull.
       completeness: partial
     size:
+      weight_kg:
+        min: 1000
+        max: 1000
+      hip_height_m:
+        min: 1
+        max: 1
       length_m:
         min: 4.0
         max: 4.0
@@ -77,3 +83,18 @@ references:
     journal: "The University of Kansas Paleontological Contributions: Vertebrata"
     volume: "8"
     pages: 1-24
+  - id: paul2024a
+    authors: Paul, Gregory S.
+    year: 2024
+    title: "The Princeton Field Guide to Dinosaurs (3rd ed.)"
+    book: "The Princeton Field Guide to Dinosaurs (3rd ed.)"
+    publisher: Princeton University Press
+    notes: Source of the mass estimate.
+  - id: jones2026a
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
+    book: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25025-0
+    notes: Source of the hip height estimate.

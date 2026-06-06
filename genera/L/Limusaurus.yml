@@ -66,6 +66,9 @@ species:
       material: Articulated nearly complete skeleton.
       completeness: complete
     size:
+      hip_height_m:
+        min: 0.5
+        max: 0.5
       length_m:
         min: 1.7
         max: 1.7
@@ -90,3 +93,11 @@ references:
     publisher: Springer Science and Business Media LLC
     doi: 10.1038/nature08124
     url: http://dx.doi.org/10.1038/nature08124
+  - id: jones2026c
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
+    book: "The Princeton Encyclopedia of Dinosaurs: Theropods"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25021-2
+    notes: Source of the hip height estimate.

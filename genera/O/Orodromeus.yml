@@ -57,6 +57,12 @@ species:
       material: Virtually complete skull and skeleton, lacking the tail
       completeness: complete
     size:
+      weight_kg:
+        min: 7
+        max: 7
+      hip_height_m:
+        min: 0.45
+        max: 0.45
       length_m:
         min: 2.5
         max: 2.5
@@ -75,3 +81,11 @@ references:
     publisher: Springer Science and Business Media LLC
     doi: 10.1038/332256a0
     url: http://dx.doi.org/10.1038/332256a0
+  - id: jones2026a
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
+    book: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25025-0
+    notes: Source of the mass and hip height estimates.

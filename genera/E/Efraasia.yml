@@ -63,6 +63,12 @@ species:
         (SMNS 12668).
       completeness: complete
     size:
+      weight_kg:
+        min: 365
+        max: 365
+      hip_height_m:
+        min: 1.2
+        max: 1.2
       length_m:
         min: 6.0
         max: 7.0
@@ -83,3 +89,11 @@ references:
     publisher: Springer Science and Business Media LLC
     doi: 10.1007/bf02985709
     url: http://dx.doi.org/10.1007/bf02985709
+  - id: molina-pérez2020
+    authors: Molina-Pérez, Rubén; Larramendi, Asier
+    year: 2020
+    title: "Dinosaur Facts and Figures: The Sauropods and Other Sauropodomorphs"
+    book: "Dinosaur Facts and Figures: The Sauropods and Other Sauropodomorphs"
+    publisher: Princeton University Press
+    isbn: 978-0-691-19069-3
+    notes: Source of the mass and hip height estimates.

@@ -44,6 +44,16 @@ species:
       coordinates:
         - 38.644444
         - -111.26889
+    size:
+      length_m:
+        min: 3
+        max: 3
+      weight_kg:
+        min: 78
+        max: 78
+      hip_height_m:
+        min: 0.9
+        max: 0.9
     described: 2019
     authors: Zanno et al.
     described_in: zanno2019
@@ -66,3 +76,11 @@ references:
     publisher: Springer Science and Business Media LLC
     doi: 10.1038/s42003-019-0308-7
     url: http://dx.doi.org/10.1038/s42003-019-0308-7
+  - id: jones2026c
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
+    book: "The Princeton Encyclopedia of Dinosaurs: Theropods"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25021-2
+    notes: Source of the body length, mass, and hip height estimates.

@@ -61,6 +61,9 @@ species:
       material: Partial skull with most elements of the skull roof and partial braincase
       completeness: partial
     size:
+      hip_height_m:
+        min: 2.6
+        max: 2.6
       length_m:
         min: 5.0
         max: 5.0
@@ -85,3 +88,11 @@ references:
     publisher: Springer Science and Business Media LLC
     doi: 10.1007/s11434-009-3614-5
     url: http://dx.doi.org/10.1007/s11434-009-3614-5
+  - id: jones2026a
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
+    book: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25025-0
+    notes: Source of the hip height estimate.

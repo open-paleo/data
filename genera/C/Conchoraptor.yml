@@ -47,6 +47,12 @@ species:
       specimen_type: holotype
       institution: GIN
     size:
+      weight_kg:
+        min: 32
+        max: 32
+      hip_height_m:
+        min: 0.7
+        max: 0.7
       length_m:
         min: 1.0
         max: 2.0
@@ -70,3 +76,11 @@ references:
     volume: "47"
     issue: "1"
     pages: 97-116
+  - id: jones2026c
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
+    book: "The Princeton Encyclopedia of Dinosaurs: Theropods"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25021-2
+    notes: Source of the mass and hip height estimates.

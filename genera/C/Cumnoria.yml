@@ -49,6 +49,12 @@ species:
         - 51.735279
         - -1.313611
     size:
+      weight_kg:
+        min: 250
+        max: 250
+      hip_height_m:
+        min: 1.2
+        max: 1.2
       length_m:
         min: 3.5
         max: 3.5
@@ -118,3 +124,11 @@ references:
     doi: 10.1144/0016-76492007-154
     url: http://dx.doi.org/10.1144/0016-76492007-154
     notes: Revives the genus Cumnoria.
+  - id: jones2026a
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
+    book: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25025-0
+    notes: Source of the mass and hip height estimates.

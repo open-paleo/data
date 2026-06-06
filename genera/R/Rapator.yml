@@ -39,6 +39,12 @@ species:
         - -29.4333
         - 147.983307
     size:
+      weight_kg:
+        min: 2000
+        max: 2000
+      hip_height_m:
+        min: 2
+        max: 2
       length_m:
         min: 9.0
         max: 9.0
@@ -62,3 +68,11 @@ references:
     volume: "4"
     issue: 1-2
     pages: 1-361
+  - id: jones2026c
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
+    book: "The Princeton Encyclopedia of Dinosaurs: Theropods"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25021-2
+    notes: Source of the mass and hip height estimates.

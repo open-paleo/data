@@ -54,6 +54,16 @@ species:
       coordinates:
         - -29.666668
         - -53.75
+    size:
+      length_m:
+        min: 1.5
+        max: 1.5
+      weight_kg:
+        min: 4
+        max: 4
+      hip_height_m:
+        min: 0.4
+        max: 0.4
     described: 1999
     authors: Langer et al.
     described_in: langer1999
@@ -79,3 +89,18 @@ references:
     publisher: Elsevier BV
     doi: 10.1016/s1251-8050(00)80025-7
     url: http://dx.doi.org/10.1016/s1251-8050(00)80025-7
+  - id: paul2024a
+    authors: Paul, Gregory S.
+    year: 2024
+    title: "The Princeton Field Guide to Dinosaurs (3rd ed.)"
+    book: "The Princeton Field Guide to Dinosaurs (3rd ed.)"
+    publisher: Princeton University Press
+    notes: Source of the body length and mass estimates.
+  - id: jones2026b
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
+    book: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25023-6
+    notes: Source of the hip height estimate.

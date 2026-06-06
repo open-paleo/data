@@ -63,6 +63,9 @@ species:
       material: Partial skeleton
       completeness: partial
     size:
+      hip_height_m:
+        min: 0.2
+        max: 0.2
       length_m:
         min: 0.7
         max: 0.7
@@ -98,3 +101,11 @@ references:
     publisher: American Association for the Advancement of Science (AAAS)
     doi: 10.1126/science.280.5361.179g
     url: http://dx.doi.org/10.1126/science.280.5361.179g
+  - id: jones2026c
+    authors: Jones, Bryce; Viola, Egidio
+    year: 2026
+    title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
+    book: "The Princeton Encyclopedia of Dinosaurs: Theropods"
+    publisher: Princeton University Press
+    isbn: 978-0-691-25021-2
+    notes: Source of the hip height estimate.
