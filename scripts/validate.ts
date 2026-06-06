@@ -164,6 +164,7 @@ const allowedLocomotion = new Set(schema.locomotion ?? []);
 const allowedCompleteness = new Set(schema.completeness ?? []);
 const allowedHolotypeStatus = new Set(schema.holotype_status ?? []);
 const allowedSpecimenTypes = new Set(schema.specimen_types ?? []);
+const allowedIcznRulingTypes = new Set(schema.iczn_ruling_types ?? []);
 const allowedIntegument = new Set(schema.integument ?? []);
 const allowedIntegumentEvidence = new Set(schema.integument_evidence ?? []);
 const allowedFeatures = new Set(Object.values(schema.appearance_features ?? {}).flat());
@@ -505,20 +506,51 @@ for (const [filePath, doc] of genusParsed)
         }
     }
 
-    // Check genus-level described_in
-    if (doc.described_in && !ids.has(doc.described_in))
+    // Check the genus-level erected_in (genus-authority override).
+    if (doc.erected_in && !ids.has(doc.erected_in))
     {
         checkError(
             "Reference integrity",
             filePath,
-            `described_in '${doc.described_in}' does not match any reference id`);
+            `erected_in '${doc.erected_in}' does not match any reference id`);
     }
 
-    // Check species-level described_in
+    // Check genus-level ICZN ruling references.
+    if (Array.isArray(doc.iczn_rulings))
+    {
+        for (const ruling of doc.iczn_rulings)
+        {
+            if (ruling && ruling.ruling && !ids.has(ruling.ruling))
+            {
+                checkError(
+                    "Reference integrity",
+                    filePath,
+                    `iczn_rulings: ruling '${ruling.ruling}' does not match any reference id`);
+            }
+
+            if (ruling && ruling.petition && !ids.has(ruling.petition))
+            {
+                checkError(
+                    "Reference integrity",
+                    filePath,
+                    `iczn_rulings: petition '${ruling.petition}' does not match any reference id`);
+            }
+        }
+    }
+
+    // Check species-level erected_in and described_in.
     if (Array.isArray(doc.species))
     {
         for (const species of doc.species)
         {
+            if (species && species.erected_in && !ids.has(species.erected_in))
+            {
+                checkError(
+                    "Reference integrity",
+                    filePath,
+                    `species '${species.name ?? "?"}': erected_in '${species.erected_in}' does not match any reference id`);
+            }
+
             if (species && species.described_in && !ids.has(species.described_in))
             {
                 checkError(
@@ -526,6 +558,92 @@ for (const [filePath, doc] of genusParsed)
                     filePath,
                     `species '${species.name ?? "?"}': described_in '${species.described_in}' does not match any reference id`);
             }
+        }
+    }
+}
+
+// 10b. ICZN ruling compliance — each ruling needs a known type and an Opinion
+startCheck("ICZN ruling compliance");
+
+for (const [filePath, doc] of genusParsed)
+{
+    if (!doc || !Array.isArray(doc.iczn_rulings))
+    {
+        continue;
+    }
+
+    for (const ruling of doc.iczn_rulings)
+    {
+        if (!ruling)
+        {
+            continue;
+        }
+
+        if (!ruling.type)
+        {
+            checkError(
+                "ICZN ruling compliance",
+                filePath,
+                "iczn_rulings: entry missing required 'type'");
+        }
+        else if (!allowedIcznRulingTypes.has(ruling.type))
+        {
+            checkError(
+                "ICZN ruling compliance",
+                filePath,
+                `iczn_rulings: invalid type '${ruling.type}' (must be one of: ${[...allowedIcznRulingTypes].join(", ")})`);
+        }
+
+        if (!ruling.ruling)
+        {
+            checkError(
+                "ICZN ruling compliance",
+                filePath,
+                `iczn_rulings: entry of type '${ruling.type ?? "?"}' missing required 'ruling' (the Opinion reference)`);
+        }
+    }
+}
+
+// 10c. Species authority — every species needs erected_in; the denormalized
+// authors/described fields were removed in the #1886 migration
+startCheck("Species authority");
+
+for (const [filePath, doc] of genusParsed)
+{
+    if (!doc || !Array.isArray(doc.species))
+    {
+        continue;
+    }
+
+    for (const species of doc.species)
+    {
+        if (!species)
+        {
+            continue;
+        }
+
+        if (!species.erected_in)
+        {
+            checkError(
+                "Species authority",
+                filePath,
+                `species '${species.name ?? "?"}': missing required 'erected_in'`);
+        }
+
+        if ("authors" in species)
+        {
+            checkError(
+                "Species authority",
+                filePath,
+                `species '${species.name ?? "?"}': legacy 'authors' field present (author is derived from erected_in)`);
+        }
+
+        if ("described" in species)
+        {
+            checkError(
+                "Species authority",
+                filePath,
+                `species '${species.name ?? "?"}': legacy 'described' field present (year is derived from erected_in)`);
         }
     }
 }

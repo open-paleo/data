@@ -262,6 +262,50 @@ function resolveInstitutionKeys(
 
 resolveInstitutionKeys(genera, institutionRegistry);
 
+/**
+ * Derives the denormalized author/year onto each species (and the genus) from
+ * the `erected_in` reference, for consumers of the built dataset. Source YAML
+ * carries only the reference pointer (issue #1886); the human-readable
+ * authority is reconstituted here. Genus authority uses the genus-level
+ * `erected_in` override when present, else the type species's `erected_in`.
+ *
+ * @param generaMap - The processed genera map (mutated in place).
+ */
+function deriveAuthorities(generaMap: Record<string, ProcessedGenus>): void
+{
+    for (const genus of Object.values(generaMap))
+    {
+        const references = new Map(
+            (genus.references ?? [])
+                .filter((reference) => reference && reference.id)
+                .map((reference) => [reference.id as string, reference]));
+
+        for (const species of genus.species ?? [])
+        {
+            const reference = species.erected_in ? references.get(species.erected_in) : undefined;
+
+            if (reference)
+            {
+                species.authors = reference.authors;
+                species.described = reference.year;
+            }
+        }
+
+        const typeSpecies = (genus.species ?? []).find((species) => species.type_species)
+            ?? genus.species?.[0];
+        const genusAuthorityKey = genus.erected_in ?? typeSpecies?.erected_in;
+        const genusReference = genusAuthorityKey ? references.get(genusAuthorityKey) : undefined;
+
+        if (genusReference)
+        {
+            genus.authors = genusReference.authors;
+            genus.described = genusReference.year;
+        }
+    }
+}
+
+deriveAuthorities(genera);
+
 const clades: Record<string, ProcessedClade> = {};
 
 for (const file of findYamlFiles(path.join(root, "clades")))

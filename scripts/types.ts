@@ -259,12 +259,16 @@ export type Species = {
     size?: Size;
 
     /**
-     * Year the species was formally described.
+     * Year the species was described. DERIVED during build from the
+     * `erected_in` reference — it must NOT appear in source YAML (enforced by
+     * the Species authority validation check).
      */
     described?: number;
 
     /**
-     * Author(s) who described the species. May be a single string or an array.
+     * Author(s) of the species. DERIVED during build from the `erected_in`
+     * reference — it must NOT appear in source YAML (enforced by the Species
+     * authority validation check).
      */
     authors?: string | Array<string>;
 
@@ -290,7 +294,18 @@ export type Species = {
     diagnostic_features?: Array<string>;
 
     /**
-     * Reference ID (from the genus references list) of the describing paper.
+     * Reference ID (in this file's references) of the nomenclatural act that
+     * established the current genus+species combination — the taxonomic
+     * authority for the species. The species author and year are derived from
+     * this reference.
+     */
+    erected_in?: string;
+
+    /**
+     * Reference ID (in this file's references) of the authoritative paper the
+     * holotype material and diagnosis are drawn from — the original
+     * description or a later redescription. Falls back to `erected_in` when
+     * omitted.
      */
     described_in?: string;
 };
@@ -313,6 +328,35 @@ export type Appearance = {
      * Notable appearance features (e.g. "cranial crest", "tail club").
      */
     features?: Array<string>;
+};
+
+/**
+ * A formal ICZN ruling affecting a genus's nomenclature (e.g. a
+ * plenary-power designation of the type species). Genus-scoped.
+ */
+export type IcznRuling = {
+    /**
+     * The kind of ruling, from schema.yml `iczn_ruling_types`
+     * (e.g. "type-species", "name-conservation").
+     */
+    type?: string;
+
+    /**
+     * Reference ID (in this file's references) of the published Opinion that
+     * issued the ruling.
+     */
+    ruling?: string;
+
+    /**
+     * Reference ID (in this file's references) of the Case / application that
+     * petitioned for the ruling, when cited.
+     */
+    petition?: string;
+
+    /**
+     * Plain-text explanation of what the ruling did and why.
+     */
+    notes?: string;
 };
 
 /**
@@ -505,19 +549,32 @@ export type GenusData = {
     references?: Array<Reference>;
 
     /**
-     * Year the genus was formally described.
+     * Reference ID (in this file's references) of the paper that erected this
+     * genus — the genus authority. Set ONLY when it differs from the type
+     * species's `erected_in` (e.g. when an ICZN ruling later replaced the
+     * original type species). When omitted, the genus authority is the type
+     * species's `erected_in`.
+     */
+    erected_in?: string;
+
+    /**
+     * Formal ICZN rulings affecting this genus's nomenclature (e.g. a
+     * plenary-power type-species designation).
+     */
+    iczn_rulings?: Array<IcznRuling>;
+
+    /**
+     * Year the genus was erected. DERIVED during build from the genus
+     * authority (the genus-level `erected_in` override, else the type
+     * species's `erected_in`). Not present in source YAML.
      */
     described?: number;
 
     /**
-     * Author(s) who described the genus.
+     * Author(s) who erected the genus. DERIVED during build from the genus
+     * authority (see `described`). Not present in source YAML.
      */
     authors?: string;
-
-    /**
-     * Reference ID of the paper that first described this genus.
-     */
-    described_in?: string;
 
     /**
      * Media items associated with this genus (photos, reconstructions).
@@ -621,6 +678,11 @@ export type Schema = {
      * `species.holotype.specimen_type`.
      */
     specimen_types?: Array<string>;
+
+    /**
+     * Allowed kinds of ICZN ruling (applied to `iczn_rulings[].type`).
+     */
+    iczn_ruling_types?: Array<string>;
 
     /**
      * Allowed integument types.

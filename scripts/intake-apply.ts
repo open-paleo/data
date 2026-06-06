@@ -460,7 +460,7 @@ function applyExtraction(
             species.size = size;
         }
 
-        species.described_in = extraction.citation_key;
+        species.erected_in = extraction.citation_key;
     }
 
     // Diagnostic features and synonyms accumulate from every paper.

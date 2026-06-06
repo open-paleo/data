@@ -81,9 +81,7 @@ species:
       weight_kg:
         min: 20
         max: 20
-    described: 2003
-    authors: Lü
-    described_in: lü2003
+    erected_in: lü2002
   - name: Heyuannia yanshini
     etymology: "Named in honor of academician Aleksandr Leonidovich Yanshin."
     status: valid
@@ -99,8 +97,8 @@ species:
       specimen_id: [ MPC-D 100/30 ]
       specimen_type: holotype
       institution: MPC
-    described: 1981
-    authors: Barsbold
+    erected_in: funston2018
+    described_in: barsbold1981
     synonyms:
       - name: Ingenia yanshini
         type: reassigned
@@ -112,9 +110,9 @@ species:
           ethical concerns over Easter's redescription of Ajancingenia (which
           included plagiarized text).
 references:
-  - id: lü2003
+  - id: lü2002
     authors: Lü, Junchang
-    year: 2003
+    year: 2002
     title: "A new oviraptorosaurid (Theropoda: Oviraptorosauria) from the Late
       Cretaceous of southern China"
     journal: Journal of Vertebrate Paleontology
@@ -124,5 +122,35 @@ references:
     publisher: Informa UK Limited
     doi: 10.1671/0272-4634(2002)022[0871:anotof]2.0.co;2
     url: http://dx.doi.org/10.1671/0272-4634(2002)022[0871:anotof]2.0.co;2
+  - id: barsbold1981
+    authors: Barsbold, R.
+    year: 1981
+    title: Bezzubyye khishchnyye dinozavry Mongolii [Toothless carnivorous dinosaurs
+      of Mongolia]
+    journal: Sovmestnaia Sovetsko-Mongol'skaia Paleontologicheskaia Ekspeditsiia Trudy
+    volume: "15"
+    pages: 28-39
+  - id: easter2013
+    authors: Easter, J.
+    year: 2013
+    title: A new name for the oviraptorid dinosaur "Ingenia" yanshini (Barsbold,
+      1981; preoccupied by Gerlach, 1957)
+    journal: Zootaxa
+    volume: "3737"
+    issue: "2"
+    pages: 184-190
+    doi: 10.11646/zootaxa.3737.2.6
+    notes: Coins the replacement genus Ajancingenia for the preoccupied Ingenia;
+      later rejected by most authors.
+  - id: funston2018
+    authors: Funston, G. F.; Mendonca, S. E.; Currie, P. J.; Barsbold, R.
+    year: 2018
+    title: Oviraptorosaur anatomy, diversity and ecology in the Nemegt Basin
+    journal: Palaeogeography, Palaeoclimatology, Palaeoecology
+    volume: "494"
+    pages: 101-120
+    doi: 10.1016/j.palaeo.2017.10.023
+    notes: Reassigns the species to Heyuannia yanshini, establishing the current
+      combination.
 pronunciation:
   phonetic: Hey-YOU-ARN-ee-ah

@@ -25,26 +25,32 @@ the extraction before applying.
   markdown (below).
 - **A whole letter** at once: `npm run build-extraction-prompts -- --letter X`
   writes `reports/extraction-prompts-X.jsonl` (one ready prompt per
-  queued genus, keyed off each genus's `described_in`). Dispatch each
-  row's `prompt` to a Sonnet agent.
+  queued genus, keyed off each genus's describing paper — `described_in`
+  if set, else `erected_in`). Dispatch each row's `prompt` to a Sonnet
+  agent.
 
-## IMPORTANT: material source ≠ described_in for reassigned genera
+## Authority model: erected_in vs described_in (#1886)
 
-`build-extraction-prompts` targets each genus's `described_in`. By
-convention `described_in` is the **genus-erecting** paper, which for
-reassigned / replacement-name genera is NOT where the holotype is
-described (see proposal #1886). For those, point the extraction at the
-**descriptive** paper instead — usually the original description or a
-later redescription, cited in the genus's `references:` (e.g. Betasuchus
-→ `seeley1883`, Dacentrurus → `owen1875`, Paranthodon → `galton1981`).
-When the paper uses the original binomial, tell the agent so in the
-prompt ("treated as *Megalosaurus bredai* in this paper").
+Each species carries **`erected_in`** (the nomenclatural act — the
+authority) and an optional **`described_in`** (the authoritative
+descriptive source: original description or later redescription).
+`build-extraction-prompts` targets **`described_in` if set, else
+`erected_in`**, so it already points at the right descriptive paper for
+the reassigned / replacement-name cases that carry an explicit
+`described_in` (e.g. Betasuchus → `seeley1883`, Paranthodon →
+`galton1981`, Crichtonpelta → `lü2007b`).
+
+If a reassigned genus's descriptive source differs from its `erected_in`
+but has **no** `described_in` yet, point the extraction at the correct
+reference by hand and add the `described_in` pointer while you are there.
+When the paper uses the original binomial, tell the agent so in the prompt
+("treated as *Megalosaurus bredai* in this paper").
 
 ## Per-genus flow
 
 1. **Pick the source paper.** Read the genus YAML; choose the markdown
-   key (`described_in` if it is the describing paper, else the
-   descriptive reference). Confirm `$OPEN_PALEO_PAPERS_DIR/markdown/<key>.md`
+   key — the species's `described_in` if set, else its `erected_in`.
+   Confirm `$OPEN_PALEO_PAPERS_DIR/markdown/<key>.md`
    exists and is substantive (not an abstract/fragment). If it is
    missing or wrong, log it in the corpus repo's
    `corpus-paper-report.md` and stop.
@@ -96,7 +102,8 @@ prompt ("treated as *Megalosaurus bredai* in this paper").
 - Extraction artifacts under `reports/extractions/` and the
   `extraction-*`/`extracted-*` files are gitignored scratch.
 - Corpus-quality problems (missing / wrong / abstract-only markdown,
-  wrong-paper-content, described_in-vs-material cases) go in the corpus
-  repo's `corpus-paper-report.md`.
-- `described_in` follows the genus-erection convention pending #1886;
-  do not repoint it to the descriptive paper.
+  wrong-paper-content, erected_in-vs-descriptive-source cases) go in the
+  corpus repo's `corpus-paper-report.md`.
+- `erected_in` is the species authority — do not repoint it to a
+  descriptive paper. Record a differing descriptive source as
+  `described_in`, which falls back to `erected_in` when omitted.

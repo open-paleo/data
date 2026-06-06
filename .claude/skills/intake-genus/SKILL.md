@@ -394,9 +394,10 @@ When the user flags such a collision (e.g. "the existing
 disambiguate inside this repo only:
 
 1. Edit the existing genus YAML(s) under `genera/` that reference the
-   bare key — rename both the `references[].id` and every
-   `species[].described_in` (and any other crossref) from `<key>` to
-   `<key>a`. Use grep to find them all before editing.
+   bare key — rename the `references[].id` and every crossref to it:
+   `species[].erected_in`, `species[].described_in`, the genus-level
+   `erected_in`, and `iczn_rulings[].ruling`/`.petition` — from `<key>`
+   to `<key>a`. Use grep to find them all before editing.
 2. Edit `staging/intake/<Genus>/bootstrap.yml` and
    `staging/intake/<Genus>/papers-needed.md` to use `<key>b` (or the
    next free letter) for the new paper.

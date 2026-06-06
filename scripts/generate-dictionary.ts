@@ -141,21 +141,6 @@ for (const file of findYamlFiles(path.join(root, "genera")))
                 }
             }
 
-            if (species.authors)
-            {
-                if (Array.isArray(species.authors))
-                {
-                    for (const author of species.authors)
-                    {
-                        extractAuthorSurnames(author);
-                    }
-                }
-                else
-                {
-                    extractAuthorSurnames(species.authors);
-                }
-            }
-
             if (species.location && typeof species.location.formation === "string")
             {
                 for (const word of species.location.formation.split(/\s+/))

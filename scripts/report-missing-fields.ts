@@ -220,14 +220,9 @@ const speciesChecks: Array<FieldCheck> = [
         isPresent: (target) => isPopulated((target as Species).size?.skull_length_m),
     },
     {
-        label: "species.described",
+        label: "species.erected_in",
         scope: "species",
-        isPresent: (target) => isPopulated((target as Species).described),
-    },
-    {
-        label: "species.authors",
-        scope: "species",
-        isPresent: (target) => isPopulated((target as Species).authors),
+        isPresent: (target) => isPopulated((target as Species).erected_in),
     },
     {
         label: "species.described_in",

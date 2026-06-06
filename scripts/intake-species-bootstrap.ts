@@ -195,9 +195,7 @@ type SpeciesSeed = {
         specimen_type?: string;
         institution?: string;
     };
-    described?: number;
-    authors?: string;
-    described_in?: string;
+    erected_in?: string;
 };
 
 /**
@@ -543,19 +541,9 @@ async function main(): Promise<void>
         seed.holotype = holotypeBlock;
     }
 
-    if (describingYear !== null)
-    {
-        seed.described = describingYear;
-    }
-
-    if (describingAuthors !== null)
-    {
-        seed.authors = describingAuthors;
-    }
-
     if (describingKey !== null)
     {
-        seed.described_in = describingKey;
+        seed.erected_in = describingKey;
     }
 
     // Write outputs.

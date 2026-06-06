@@ -2115,16 +2115,6 @@ export function toGenusYaml(enriched: EnrichedGenus, reference: Record<string, s
         species.size = size;
     }
 
-    if (enriched.year)
-    {
-        species.described = enriched.year;
-    }
-
-    if (enriched.authors)
-    {
-        species.authors = enriched.authors;
-    }
-
     genus.species = [species] as GenusData["species"];
 
     if (reference && reference.authors && reference.year && reference.title)
@@ -2172,9 +2162,9 @@ export function toGenusYaml(enriched: EnrichedGenus, reference: Record<string, s
 
         genus.references = [referenceEntry] as GenusData["references"];
 
-        if (species.described && genus.references?.[0]?.id)
+        if (genus.references?.[0]?.id)
         {
-            (species as Record<string, unknown>).described_in = genus.references[0].id;
+            (species as Record<string, unknown>).erected_in = genus.references[0].id;
         }
     }
 

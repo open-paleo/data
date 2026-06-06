@@ -24,10 +24,9 @@
 //   location_*           → species.location.{country, region, formation,
 //                          locality, coordinates}
 //   size_*               → species.size.{length_m, weight_kg}
-//   described_year       → species.described
-//   described_authors    → species.authors
-//   citation_key         → species.described_in (describing paper) +
-//                          genus.references[]
+//   citation_key         → species.erected_in (describing paper) +
+//                          genus.references[] (carries the described_year /
+//                          described_authors, from which author/year derive)
 //   synonyms             → species.synonyms
 //
 // Usage:
@@ -403,17 +402,9 @@ function applyExtractionToSpecies(
             species.size = sizeBlock;
         }
 
-        if (extraction.described_year !== null && extraction.described_year !== undefined)
-        {
-            species.described = extraction.described_year;
-        }
-
-        if (extraction.described_authors)
-        {
-            species.authors = extraction.described_authors;
-        }
-
-        species.described_in = extraction.citation_key;
+        // The describing paper erects the new species; author/year are derived
+        // from this reference at build time (issue #1886).
+        species.erected_in = extraction.citation_key;
     }
 
     if (Array.isArray(extraction.diagnostic_features)

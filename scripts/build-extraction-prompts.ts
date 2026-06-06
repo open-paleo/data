@@ -43,7 +43,8 @@ type QueueOutcome =
     | { kind: "skip"; reason: SkipReason; genus: string };
 
 type SkipReason =
-    | "no_described_in"
+    | "no_describing_paper"
+    | "no_species_name"
     | "no_corpus_markdown"
     | "both_fields_filled";
 
@@ -106,7 +107,8 @@ type QueueSummary = {
     total_genera_in_letter: number;
     queued: number;
     skipped: {
-        no_described_in: Array<string>;
+        no_describing_paper: Array<string>;
+        no_species_name: Array<string>;
         no_corpus_markdown: Array<string>;
         both_fields_filled: Array<string>;
     };
@@ -217,11 +219,13 @@ function evaluateGenus(yamlPath: string, letter: string, corpusDir: string): Que
     const data = parseYaml<GenusData>(yamlPath);
 
     const representative = pickRepresentativeSpecies(data);
-    const describedIn = representative?.described_in;
+    // The authoritative descriptive paper: an explicit described_in (original
+    // description / redescription) when present, else the erecting paper.
+    const describedIn = representative?.described_in ?? representative?.erected_in;
 
     if (!isPopulated(describedIn))
     {
-        return { kind: "skip", reason: "no_described_in", genus };
+        return { kind: "skip", reason: "no_describing_paper", genus };
     }
 
     const markdownPath = path.join(corpusDir, "markdown", `${describedIn}.md`);
@@ -243,7 +247,7 @@ function evaluateGenus(yamlPath: string, letter: string, corpusDir: string): Que
 
     if (!isPopulated(speciesName))
     {
-        return { kind: "skip", reason: "no_described_in", genus };
+        return { kind: "skip", reason: "no_species_name", genus };
     }
 
     const outputPath = path.join(reportsDir, "extractions", letter, `${genus}.json`);
@@ -320,7 +324,8 @@ if (!fs.existsSync(path.join(corpusDir, "markdown")))
 const yamlFiles = findYamlFiles(letterDir).sort();
 
 const queued = new Array<PromptEntry>();
-const skippedNoDescribedIn = new Array<string>();
+const skippedNoDescribingPaper = new Array<string>();
+const skippedNoSpeciesName = new Array<string>();
 const skippedNoCorpusMarkdown = new Array<string>();
 const skippedBothFieldsFilled = new Array<string>();
 
@@ -332,9 +337,13 @@ for (const yamlFile of yamlFiles)
     {
         queued.push(outcome.entry);
     }
-    else if (outcome.reason === "no_described_in")
+    else if (outcome.reason === "no_describing_paper")
     {
-        skippedNoDescribedIn.push(outcome.genus);
+        skippedNoDescribingPaper.push(outcome.genus);
+    }
+    else if (outcome.reason === "no_species_name")
+    {
+        skippedNoSpeciesName.push(outcome.genus);
     }
     else if (outcome.reason === "no_corpus_markdown")
     {
@@ -353,7 +362,8 @@ const summary: QueueSummary = {
     total_genera_in_letter: yamlFiles.length,
     queued: queued.length,
     skipped: {
-        no_described_in: skippedNoDescribedIn,
+        no_describing_paper: skippedNoDescribingPaper,
+        no_species_name: skippedNoSpeciesName,
         no_corpus_markdown: skippedNoCorpusMarkdown,
         both_fields_filled: skippedBothFieldsFilled,
     },
@@ -370,7 +380,8 @@ fs.writeFileSync(promptsPath, queued.map((entry) => JSON.stringify(entry)).join(
 
 console.log(`Letter ${letter}: ${yamlFiles.length} genera scanned`);
 console.log(`  queued: ${queued.length}`);
-console.log(`  skipped (no_described_in): ${skippedNoDescribedIn.length}`);
+console.log(`  skipped (no_describing_paper): ${skippedNoDescribingPaper.length}`);
+console.log(`  skipped (no_species_name): ${skippedNoSpeciesName.length}`);
 console.log(`  skipped (no_corpus_markdown): ${skippedNoCorpusMarkdown.length}`);
 console.log(`  skipped (both_fields_filled): ${skippedBothFieldsFilled.length}`);
 console.log("");
