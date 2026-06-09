@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-06-09T03:41:00.723Z
+  built_at: 2026-06-09T04:10:07.842Z
   clade_count: 250
   genus_count: 1392
   license: CC-BY-4.0
@@ -5625,7 +5625,7 @@ clades:
       - Slender and elongate metatarsus adapted for cursorial locomotion
       - Asymmetric trochlea of metatarsal IV
     references:
-      - id: gilmore1924
+      - id: gilmore1924a
         authors: Gilmore, C.W.
         year: 1924
         title: A new coelurid dinosaur from the Belly River Cretaceous of Alberta
@@ -35109,11 +35109,11 @@ genera:
           weight_kg:
             min: 100
             max: 100
-        erected_in: gilmore1924
+        erected_in: gilmore1924a
         authors: Gilmore, C W
         described: 1924
     references:
-      - id: gilmore1924
+      - id: gilmore1924a
         authors: Gilmore, C W
         year: 1924
         title: A new Coelurid dinosaur from the Belly River Cretaceous of Alberta
@@ -76664,6 +76664,13 @@ genera:
     appearance:
       integument: scaled
       evidence: inferred
+    diagnostic_features:
+      - Skull comparatively short with a high, narrow crest bearing a long, narrow posterior prolongation that overhangs the occiput, both crest and prolongation formed by the premaxillae and nasals
+      - Highest point of the crest situated in front of the orbit, with the premaxillae extending to its extreme posterior tip
+      - Narrow beak with open nares
+      - Maxilla very short between the anterior jugal articulation and the infraorbital foramen, bearing 38-39 vertical tooth rows
+      - Greatly reduced lacrimal and a relatively short quadrate
+      - Mandible strongly decurved anteriorly, the dentary with 40-41 vertical tooth rows; teeth long and narrow with papillate margins
     identifiers:
       - source: pbdb
         id: "38763"
@@ -76713,6 +76720,7 @@ genera:
             - CMN 2869
           specimen_type: holotype
           institution: Canadian Museum of Nature
+          material: A fairly complete skull and right mandibular ramus.
         size:
           length_m:
             min: 7
@@ -76721,6 +76729,7 @@ genera:
             min: 2600
             max: 3400
         erected_in: parks1923
+        described_in: gilmore1924b
         authors: Parks, W. A.
         described: 1923
     references:
@@ -76731,6 +76740,14 @@ genera:
         journal: University of Toronto Studies, Geology Series
         volume: "15"
         pages: 1-57
+      - id: gilmore1924b
+        authors: Gilmore, C. W.
+        year: 1924
+        title: On the genus Stephanosaurus, with a description of the type specimen of Lambeosaurus lambei Parks
+        journal: National Museum of Canada Bulletin
+        volume: "38"
+        issue: "43"
+        pages: 29-48
     taxonomy:
       - Life
       - Animalia
