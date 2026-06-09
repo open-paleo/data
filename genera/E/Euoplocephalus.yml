@@ -22,6 +22,17 @@ appearance:
     - tail spikes
   integument: armored
   evidence: direct
+diagnostic_features:
+  - Cranial ornamentation absent posterior to the orbits; lacks postocular
+    caputegulae (subcircular ornamentation) at the bases of the squamosal and
+    quadratojugal horns
+  - First cervical half ring with oval to subcircular-based keeled medial and
+    lateral primary osteoderms, lacking interstitial osteoderms at their bases
+  - Tail club knob with semicircular major osteoderms in dorsal view
+  - Laterally directed sacral ribs
+  - Proportionately short postacetabular process of the ilium
+  - Anteriorly directed nares and no continuous keel between the squamosal horn
+    and the supraorbitals
 identifiers:
   - source: pbdb
     id: "38838"
@@ -60,8 +71,7 @@ species:
       specimen_id: [ CMN 210 ]
       specimen_type: holotype
       institution: CMN
-      material: Upper part of a heavily armored cranium and a transverse,
-        semicircular series of five keeled scutes from the neck or tail.
+      material: Fragmentary skull roof and partial first cervical half ring.
       completeness: fragmentary
     size:
       length_m:
@@ -71,6 +81,7 @@ species:
         min: 2000
         max: 2000
     erected_in: lambe1910
+    described_in: arbour2013
 references:
   - id: lambe1910
     authors: Lambe, L. M.
@@ -80,6 +91,31 @@ references:
     journal: The Ottawa Naturalist
     volume: "24"
     pages: 149-151
+  - id: lambe1902
+    authors: Lambe, L. M.
+    year: 1902
+    title: New genera and species from the Belly River Series (mid-Cretaceous)
+    journal: Geological Survey of Canada Contributions to Canadian Palaeontology
+    volume: "3"
+    issue: "2"
+    pages: 25-81
+    doi: 10.5281/zenodo.3233762
+    url: http://dx.doi.org/10.5281/zenodo.3233762
+    notes: Original description of the holotype (CMN 210) as Stereocephalus tutus;
+      states no explicit diagnostic characters.
+  - id: arbour2013
+    authors: Arbour, Victoria M.; Currie, Philip J.
+    year: 2013
+    title: Euoplocephalus tutus and the diversity of ankylosaurid dinosaurs in the
+      Late Cretaceous of Alberta, Canada, and Montana, USA
+    journal: PLOS ONE
+    volume: "8"
+    issue: "5"
+    pages: e62421
+    doi: 10.1371/journal.pone.0062421
+    url: http://dx.doi.org/10.1371/journal.pone.0062421
+    notes: Redescribes E. tutus, restricts the taxon, and provides the revised
+      differential diagnosis used here.
   - id: paul2024a
     authors: Paul, Gregory S.
     year: 2024
