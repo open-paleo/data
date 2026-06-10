@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-06-10T03:46:30.166Z",
+    "built_at": "2026-06-10T04:42:25.804Z",
     "clade_count": 250,
     "genus_count": 1392,
     "license": "CC-BY-4.0",
@@ -153120,6 +153120,14 @@
           "id": "52571895"
         }
       ],
+      "iczn_rulings": [
+        {
+          "type": "type-specimen",
+          "ruling": "iczn1994",
+          "petition": "charig1992",
+          "notes": "Opinion 1788 set aside the inappropriate lectotype (an indeterminate theropod knee joint) and designated NHMUK R.1111, the skull and skeleton, as the replacement lectotype of Scelidosaurus harrisonii."
+        }
+      ],
       "species": [
         {
           "name": "Scelidosaurus harrisonii",
@@ -153164,10 +153172,12 @@
             "specimen_id": [
               "NHMUK R.1111"
             ],
-            "specimen_type": "holotype",
-            "institution": "Natural History Museum"
+            "specimen_type": "lectotype",
+            "institution": "Natural History Museum",
+            "material": "A nearly complete skull with an associated, largely articulated postcranial skeleton."
           },
           "erected_in": "owen1859",
+          "described_in": "norman2020",
           "authors": "Owen, R.",
           "described": 1859
         }
@@ -153182,6 +153192,37 @@
           "volume": "17",
           "pages": "91-176",
           "publisher": "Adam and Charles Black"
+        },
+        {
+          "id": "charig1992",
+          "authors": "Charig, A. J.; Newman, B. H.",
+          "year": 1992,
+          "title": "Scelidosaurus harrisonii Owen, 1861 (Reptilia, Ornithischia): proposed replacement of inappropriate lectotype",
+          "journal": "Bulletin of Zoological Nomenclature",
+          "volume": "49",
+          "pages": "280-283"
+        },
+        {
+          "id": "iczn1994",
+          "authors": "International Commission on Zoological Nomenclature",
+          "year": 1994,
+          "title": "Opinion 1788. Scelidosaurus harrisonii Owen, 1861 (Reptilia, Ornithischia): lectotype replaced",
+          "journal": "Bulletin of Zoological Nomenclature",
+          "volume": "51",
+          "pages": "288"
+        },
+        {
+          "id": "norman2020",
+          "authors": "Norman, David B.",
+          "year": 2020,
+          "title": "Scelidosaurus harrisonii from the Early Jurassic of Dorset, England: cranial anatomy",
+          "journal": "Zoological Journal of the Linnean Society",
+          "volume": "188",
+          "issue": "1",
+          "pages": "1-81",
+          "doi": "10.1093/zoolinnean/zlz074",
+          "url": "http://dx.doi.org/10.1093/zoolinnean/zlz074",
+          "notes": "Modern redescription of the lectotype (NHMUK R.1111); source of the holotype material account."
         },
         {
           "id": "jones2026a",
