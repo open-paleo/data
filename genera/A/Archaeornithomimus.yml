@@ -13,11 +13,14 @@ locomotion: bipedal
 paleoenvironment:
   - fluvial
 diagnostic_features:
-  - First and third metacarpals short relative to the second metacarpal
-  - Metatarsals short relative to their midshaft circumference (fourth
-    metatarsal circumference ~25.9% of bone length)
-  - Manual unguals straight (not recurved)
-  - Pedal unguals recurved
+  - Five sacral vertebrae
+  - Short, relatively robust limb bones
+  - Coracoid with a rounded anterior margin and a well-developed biceps tubercle
+  - Metacarpal I short relative to metacarpals II and III
+  - Ischium with an anteriorly expanded distal end and a pubic boot with a
+    relatively flat ventral surface
+  - Proximal end of metatarsal III constricted, not visible in anterior view
+    when the metatarsals are articulated
 appearance:
   integument: feathered
   evidence: direct
@@ -67,7 +70,11 @@ species:
       specimen_id: [ AMNH 6565 ]
       specimen_type: lectotype
       institution: AMNH
+      material: Incomplete pes consisting of distal tarsals III and IV,
+        metatarsals II-IV, and the first phalanx of digit IV.
+      completeness: fragmentary
     erected_in: russell1972
+    described_in: smith1990
 references:
   - id: russell1972
     authors: Russell, Dale A.
@@ -80,6 +87,30 @@ references:
     publisher: Canadian Science Publishing
     doi: 10.1139/e72-031
     url: http://dx.doi.org/10.1139/e72-031
+  - id: gilmore1933a
+    authors: Gilmore, C. W.
+    year: 1933
+    title: On the dinosaurian fauna of the Iren Dabasu Formation
+    journal: Bulletin of the American Museum of Natural History
+    volume: "68"
+    issue: "2-3"
+    pages: 23-78
+    notes: Original description of the species as Ornithomimus asiaticus on
+      cotypes AMNH 6565 (pes) and AMNH 6569 (manus); source of the lectotype
+      material.
+  - id: smith1990
+    authors: Smith, D.; Galton, P.
+    year: 1990
+    title: "Osteology of Archaeornithomimus asiaticus (Upper Cretaceous, Iren
+      Dabasu Formation, People's Republic of China)"
+    journal: Journal of Vertebrate Paleontology
+    volume: "10"
+    issue: "2"
+    pages: 255-265
+    doi: 10.1080/02724634.1990.10011811
+    url: http://dx.doi.org/10.1080/02724634.1990.10011811
+    notes: First comprehensive description of the fossils; designates AMNH 6565
+      as the lectotype, Gilmore (1933) having selected no holotype.
   - id: jones2026c
     authors: Jones, Bryce; Viola, Egidio
     year: 2026
