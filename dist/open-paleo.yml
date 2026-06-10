@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-06-10T02:10:29.507Z
+  built_at: 2026-06-10T02:45:05.389Z
   clade_count: 250
   genus_count: 1392
   license: CC-BY-4.0
@@ -11527,6 +11527,11 @@ genera:
       - name: Madsenius
         type: nomen nudum
         reason: Informal name; never met ICZN requirements for formal publication and is treated as referable to Allosaurus. Per Olshevsky's Dinosaur Genera List.
+    iczn_rulings:
+      - type: type-specimen
+        ruling: iczn2023
+        petition: paulcarpenter2010
+        notes: Designated USNM V 4734 as the neotype of Allosaurus fragilis, conserving usage (Opinion 2486, Case 3506); replaces the non-diagnostic original syntype YPM 1930.
     species:
       - name: Allosaurus fragilis
         etymology: From Latin 'fragilis' meaning 'fragile', referring to the lightweight construction features of the vertebrae that Othniel Charles Marsh noted when describing the species in 1877.
@@ -11553,6 +11558,7 @@ genera:
             - USNM V 4734
           specimen_type: neotype
           institution: National Museum of Natural History, Smithsonian Institution
+          material: Nearly complete skeleton including the skull and lower jaws, presacral vertebrae, a complete sacrum, about thirty caudal vertebrae, the pelvis, ribs, and all four limbs and feet.
         size:
           length_m:
             min: 8.5
@@ -11561,6 +11567,7 @@ genera:
             min: 6000
             max: 6000
         erected_in: marsh1877c
+        described_in: gilmore1920
         synonyms:
           - name: Epanterias amplexus
             type: junior subjective
@@ -11579,6 +11586,37 @@ genera:
         publisher: American Journal of Science (AJS)
         doi: 10.2475/ajs.s3-14.84.514
         url: http://dx.doi.org/10.2475/ajs.s3-14.84.514
+      - id: gilmore1920
+        authors: Gilmore, C. W.
+        year: 1920
+        title: Osteology of the carnivorous Dinosauria in the United States National Museum, with special reference to the genera Antrodemus (Allosaurus) and Ceratosaurus
+        journal: Bulletin of the United States National Museum
+        volume: "110"
+        pages: 1-154
+        publisher: Smithsonian Institution
+        doi: 10.5479/si.03629236.110.i
+        url: http://dx.doi.org/10.5479/si.03629236.110.i
+        notes: Redescribes the neotype USNM V 4734 (as Antrodemus); source of the holotype material.
+      - id: paulcarpenter2010
+        authors: Paul, Gregory S.; Carpenter, Kenneth
+        year: 2010
+        title: "Allosaurus Marsh, 1877 (Dinosauria, Theropoda): proposed conservation of usage by designation of a neotype for its type species Allosaurus fragilis Marsh, 1877"
+        journal: Bulletin of Zoological Nomenclature
+        volume: "67"
+        issue: "1"
+        pages: 53-56
+        doi: 10.21805/bzn.v67i1.a7
+        url: http://dx.doi.org/10.21805/bzn.v67i1.a7
+      - id: iczn2023
+        authors: International Commission on Zoological Nomenclature
+        year: 2023
+        title: "Opinion 2486 (Case 3506) - Allosaurus Marsh, 1877 (Dinosauria, Theropoda): usage conserved by designation of a neotype for its type species Allosaurus fragilis Marsh, 1877"
+        journal: Bulletin of Zoological Nomenclature
+        volume: "80"
+        issue: "1"
+        pages: 65-68
+        doi: 10.21805/bzn.v80.a015
+        url: http://dx.doi.org/10.21805/bzn.v80.a015
       - id: paul2024a
         authors: Paul, Gregory S.
         year: 2024
