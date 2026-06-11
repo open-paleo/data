@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-06-11T02:32:28.804Z",
+    "built_at": "2026-06-11T03:40:56.265Z",
     "clade_count": 250,
-    "genus_count": 1392,
+    "genus_count": 1393,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
     "version": "2026.06"
@@ -156681,6 +156681,117 @@
       "authors": "Turner, Alan H.; Montanari, Shaena; Norell, Mark A.",
       "described": 2021
     },
+    "Shuangbaisaurus": {
+      "genus": "Shuangbaisaurus",
+      "parent": "Theropoda",
+      "etymology": "From \"Shuangbai\" (Shuangbai County in Yunnan, China, where the holotype was found) and Greek \"sauros\" (lizard); meaning \"Shuangbai lizard\".",
+      "pronunciation": {
+        "phonetic": "SHONG-by-SOR-us"
+      },
+      "description": "Shuangbaisaurus is a genus of theropod dinosaur, possibly a junior synonym of Sinosaurus. It lived in the Early Jurassic of Yunnan Province, China, and is represented by a single species, S. anlongbaoensis, known from a partial skull. Like the theropods Dilophosaurus and Sinosaurus, Shuangbaisaurus bore a pair of thin, midline crests on its skull. Unusually, these crests extended backwards over the level of the eyes, which, along with the unusual orientation of the jugal bone, led the describers to name it as a new genus. However, Shuangbaisaurus also possesses a groove between its premaxilla and maxilla, a characteristic which has been used to characterize Sinosaurus as a genus. Among the two morphotypes present within the genus Sinosaurus, Shuangbaisaurus more closely resembles the morphotype that is variably treated as a distinct species, S. sinensis, in its relatively tall skull.",
+      "diet": "carnivore",
+      "locomotion": "bipedal",
+      "paleoenvironment": [
+        "fluvial"
+      ],
+      "diagnostic_features": [
+        "Parasagittal crests present at least along the orbital dorsal rims (supraorbital crests spanning the entire dorsal rims of the orbits)",
+        "Premaxillary body higher than long, with ventral border of the preserved dorsal rim approximately level with the ventral border of the antorbital fenestra",
+        "Ventral edge of the premaxilla notably elevated, higher than the ventral edge of the maxilla, placing the last two premaxillary teeth above the maxillary ventral edge",
+        "Small, round upper temporal fenestra with diameter shorter than the transverse width of the parietals in between and about half the length of the skull table posterior to the orbit",
+        "Quadratojugal and posterior process of jugal directed posteroventrally"
+      ],
+      "appearance": {
+        "features": [
+          "orbital crest"
+        ],
+        "integument": "scaled",
+        "evidence": "inferred"
+      },
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "370735"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q29051703"
+        }
+      ],
+      "species": [
+        {
+          "name": "Shuangbaisaurus anlongbaoensis",
+          "etymology": "Named for Anlongbao Town in Shuangbai County, near where the holotype was recovered; the name literally means \"dragon-placing fort\".",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Jurassic"
+            ],
+            "stage": [
+              "Hettangian"
+            ],
+            "from_ma": 201.3,
+            "to_ma": 199.3
+          },
+          "location": {
+            "country": "CN",
+            "region": "Yunnan",
+            "locality": "Liuna Village, Anlongbao Town",
+            "formation": "Fengjiahe",
+            "coordinates": [
+              24.686272,
+              101.63839
+            ]
+          },
+          "size": {
+            "skull_length_m": {
+              "min": 0.54,
+              "max": 0.54
+            }
+          },
+          "holotype": {
+            "specimen_id": [
+              "CPM C2140ZA245"
+            ],
+            "specimen_type": "holotype",
+            "institution": "Chuxiong Prefectural Museum",
+            "material": "Partial skull with associated lower jaw, missing the nasals and the dorsal portions of the premaxillae, maxillae, and lacrimals.",
+            "completeness": "partial"
+          },
+          "erected_in": "wang2017b",
+          "authors": "Wang, Guo-Fu; You, Hai-Lu; Pan, Shi-Gang; Wang, Tao",
+          "described": 2017
+        }
+      ],
+      "references": [
+        {
+          "id": "wang2017b",
+          "authors": "Wang, Guo-Fu; You, Hai-Lu; Pan, Shi-Gang; Wang, Tao",
+          "year": 2017,
+          "title": "A new crested theropod dinosaur from the Early Jurassic of Yunnan Province, China",
+          "journal": "Vertebrata PalAsiatica",
+          "volume": "55",
+          "issue": "2",
+          "pages": "177-186"
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda"
+      ],
+      "authors": "Wang, Guo-Fu; You, Hai-Lu; Pan, Shi-Gang; Wang, Tao",
+      "described": 2017
+    },
     "Shuangmiaosaurus": {
       "genus": "Shuangmiaosaurus",
       "parent": "Hadrosauroidea",
@@ -186666,14 +186777,14 @@
               "max": 1.5
             }
           },
-          "erected_in": "wang2017",
+          "erected_in": "wang2017a",
           "authors": "Wang, Ya-Ming; You, Hai-Lu; Wang, Tao",
           "described": 2017
         }
       ],
       "references": [
         {
-          "id": "wang2017",
+          "id": "wang2017a",
           "authors": "Wang, Ya-Ming; You, Hai-Lu; Wang, Tao",
           "year": 2017,
           "title": "A new basal sauropodiform dinosaur from the Lower Jurassic of Yunnan Province, China",
