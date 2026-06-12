@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-06-12T01:45:25.304Z
+  built_at: 2026-06-12T01:59:58.299Z
   clade_count: 250
-  genus_count: 1395
+  genus_count: 1396
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.06"
@@ -75840,6 +75840,85 @@ genera:
       - Kritosaurini
     authors: Brown, B.
     described: 1910
+  Kryptohadros:
+    genus: Kryptohadros
+    parent: Hadrosauroidea
+    etymology: From Ancient Greek "kryptos" (hidden) and "hadros" (thick or bulky, commonly used in hadrosauroid names); meaning "hidden hadrosauroid".
+    description: Kryptohadros is an extinct genus of hadrosauroid ornithopod dinosaur known from the Late Cretaceous (Maastrichtian age) Densuș-Ciula Formation of Romania. The genus contains a single species, Kryptohadros kallaiae, known from a partial skull and skeleton. Phylogenetic analyses revealed Kryptohadros is closely related to the coeval Transylvanian Telmatosaurus and the Italian Tethyshadros, together forming a group of southeastern European-endemic taxa, called the Telmatosauridae. Kryptohadros is the second named non-hadrosaurid hadrosauroid from the Hațeg Basin, following Telmatosaurus, which was named by Franz Nopcsa in 1903.
+    diet: herbivore
+    locomotion: facultative
+    paleoenvironment:
+      - fluvial
+    identifiers:
+      - source: pbdb
+        id: "519378"
+      - source: wikidata
+        id: Q138537431
+    species:
+      - name: Kryptohadros kallaiae
+        etymology: Named for Csilla Kállai, the mother of lead author János Magyar.
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+          from_ma: 72.1
+          to_ma: 66
+        location:
+          country: RO
+          region: Hunedoara
+          locality: Fântânele-3 site, Hațeg Basin
+          formation: Densuș-Ciula
+          coordinates:
+            - 45.621868
+            - 22.79283
+        holotype:
+          specimen_id:
+            - LPB (FGGUB) R.2882
+          specimen_type: holotype
+          institution: Laboratory of Paleontology, Faculty of Geology and Geophysics, University of Bucharest
+          material: Partial skull, dorsal rib fragments, caudal vertebrae, a neural spine fragment, chevrons, and a partial hindlimb.
+          completeness: partial
+        erected_in: magyar2026
+        authors: Magyar, János; Ősi, Attila; Csiki-Sava, Zoltán; Budai, Soma; Botfalvai, Gábor
+        described: 2026
+    references:
+      - id: magyar2026
+        authors: Magyar, János; Ősi, Attila; Csiki-Sava, Zoltán; Budai, Soma; Botfalvai, Gábor
+        year: 2026
+        title: New early Maastrichtian 'duck-billed' dinosaur from Hațeg Basin (Densuș-Ciula Formation, Romania) documents an endemic clade of non-hadrosaurid hadrosauroids in the south-eastern Late Cretaceous European Archipelago
+        journal: Journal of Systematic Palaeontology
+        volume: "24"
+        issue: "1"
+        pages: "2607800"
+        publisher: Informa UK Limited
+        doi: 10.1080/14772019.2025.2607800
+        url: http://dx.doi.org/10.1080/14772019.2025.2607800
+        notes: Erects Kryptohadros kallaiae and names the clade Telmatosauridae.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Dryomorpha
+      - Styracosterna
+      - Hadrosauriformes
+      - Hadrosauroidea
+    authors: Magyar, János; Ősi, Attila; Csiki-Sava, Zoltán; Budai, Soma; Botfalvai, Gábor
+    described: 2026
   Kryptops:
     genus: Kryptops
     parent: Abelisauridae
@@ -135521,7 +135600,7 @@ genera:
           specimen_id:
             - LPB (FGGUB) R.2070
           specimen_type: holotype
-          institution: Laboratorio de Paleontología y Biocronología, Facultad de Ciencias Exactas, Ingeniería y Agrimensura (FCEIA), Universidad Nacional de Rosario
+          institution: Laboratory of Paleontology, Faculty of Geology and Geophysics, University of Bucharest
           material: Articulated basicranium and associated left and right frontals
           completeness: fragmentary
         authors: Augustin, Felix J.; Bastiaans, Dylan; Dumbravă, Mihai D.; Csiki-Sava, Zoltán
