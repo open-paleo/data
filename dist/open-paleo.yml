@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-06-12T01:59:58.299Z
+  built_at: 2026-06-12T02:15:09.483Z
   clade_count: 250
-  genus_count: 1396
+  genus_count: 1397
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.06"
@@ -58690,6 +58690,93 @@ genera:
       - Hadrosauroidea
     authors: You, H.-l.; Li, D.-Q.; P. Dodson
     described: 2014
+  Gongshuilong:
+    genus: Gongshuilong
+    parent: Brachylophosaurini
+    etymology: From "Gongshui" (the Gong River, near the discovery site in Jiangxi, China) and Chinese "long" (dragon); meaning "Gong River dragon".
+    description: Gongshuilong is an extinct genus of saurolophine hadrosaurid dinosaur known from the Late Cretaceous (Maastrichtian age) Lianhe Formation of China. The genus contains a single species, Gongshuilong fanwei, known from a bonebed representing the disarticulated remains of at least two individuals. Gongshuilong is a member of the group Brachylophosaurini within the Hadrosauridae, and it is the second member of this otherwise North American clade, following Wulagasaurus, found in Asia. It is also the first hadrosaurid to be named from fossils found in South China. Gongshuilong is characterized by the uniquely elongated and curved neural spines of the vertebrae at the end of the tail, forming a tall, sail-like structure.
+    diet: herbivore
+    locomotion: facultative
+    appearance:
+      integument: scaled
+      evidence: inferred
+    identifiers:
+      - source: pbdb
+        id: "519523"
+      - source: wikidata
+        id: Q138837825
+    species:
+      - name: Gongshuilong fanwei
+        etymology: Named for the species' prominent sail-like tail, formed by the elongated, curved neural spines of the distal caudal vertebrae.
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+          from_ma: 72.1
+          to_ma: 66
+        location:
+          country: CN
+          region: Jiangxi
+          locality: Shahe, Ganzhou
+          formation: Lianhe
+          coordinates:
+            - 25.8193
+            - 114.9674
+        size:
+          length_m:
+            min: 7
+            max: 7
+        holotype:
+          specimen_id:
+            - BGS-JX F001-1
+          specimen_type: holotype
+          institution: Basic Geological Survey Institute of the Jiangxi Geological Survey and Exploration Institute
+          material: A right dentary; paratype a partial skull preserving the left jugal and quadrate.
+          completeness: fragmentary
+        erected_in: yao2026
+        authors: Yao, Han; Qiu, Wenjiang; Yu, Juan; Yang, Ling; Wang, Huimin; Cao, Shenghua; Zhao, Kui; Xu, Mengyuan; Shi, Guo; Lou, Fasheng; Zeng, Cuimin; Lu, Pikun; Wu, Rui; Xu, Xing; Han, Fenglu; Xing, Hai
+        described: 2026
+    references:
+      - id: yao2026
+        authors: Yao, Han; Qiu, Wenjiang; Yu, Juan; Yang, Ling; Wang, Huimin; Cao, Shenghua; Zhao, Kui; Xu, Mengyuan; Shi, Guo; Lou, Fasheng; Zeng, Cuimin; Lu, Pikun; Wu, Rui; Xu, Xing; Han, Fenglu; Xing, Hai
+        year: 2026
+        title: "A new saurolophine hadrosaurid (Dinosauria: Ornithopoda) from the Upper Cretaceous of South China, providing further support for the possible Asian origin of Brachylophosaurini"
+        journal: Journal of Systematic Palaeontology
+        volume: "24"
+        issue: "1"
+        pages: "2635569"
+        publisher: Informa UK Limited
+        doi: 10.1080/14772019.2026.2635569
+        url: http://dx.doi.org/10.1080/14772019.2026.2635569
+        notes: Erects Gongshuilong fanwei; source of the body length estimate.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Ornithopoda
+      - Clypeodonta
+      - Iguanodontia
+      - Dryomorpha
+      - Styracosterna
+      - Hadrosauriformes
+      - Hadrosauroidea
+      - Hadrosauridae
+      - Hadrosaurinae
+      - Brachylophosaurini
+    authors: Yao, Han; Qiu, Wenjiang; Yu, Juan; Yang, Ling; Wang, Huimin; Cao, Shenghua; Zhao, Kui; Xu, Mengyuan; Shi, Guo; Lou, Fasheng; Zeng, Cuimin; Lu, Pikun; Wu, Rui; Xu, Xing; Han, Fenglu; Xing, Hai
+    described: 2026
   Gongxianosaurus:
     genus: Gongxianosaurus
     parent: Sauropodiformes
