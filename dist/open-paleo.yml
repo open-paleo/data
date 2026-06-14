@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-06-13T22:32:10.211Z
+  built_at: 2026-06-14T21:31:49.200Z
   clade_count: 250
   genus_count: 1397
   license: CC-BY-4.0
@@ -45173,7 +45173,7 @@ genera:
         authors: Russell, Dale A.
         described: 1972
     references:
-      - id: parks1926
+      - id: parks1926a
         authors: Parks, W. A.
         year: 1926
         title: Struthiomimus brevetertius — A new species of dinosaur from the Edmonton Formation of Alberta
@@ -47412,11 +47412,11 @@ genera:
           length_m:
             min: 6
             max: 7
-        erected_in: galton1973
+        erected_in: galton1973a
         authors: Galton, Peter M.
         described: 1973
     references:
-      - id: galton1973
+      - id: galton1973a
         authors: Galton, Peter M.
         year: 1973
         title: "On the anatomy and relationships of Efraasia diagnostica (Huene) n. gen., a prosauropod dinosaur (Reptilia: Saurischia) from the Upper Triassic of Germany"
@@ -103281,6 +103281,13 @@ genera:
     appearance:
       integument: scaled
       evidence: inferred
+    diagnostic_features:
+      - Antorbital fenestra very small, bounded by the maxilla and lacrimal
+      - Posterodorsal end of the jugal expanded anteroposteriorly
+      - Posterior process of the premaxilla deep, allowing extensive maxilla-nasal contact
+      - Cheek teeth with numerous low, rounded, parallel vertical ridges on the thickly enameled crown (labial on maxillary teeth, lingual on dentary teeth)
+      - Frontals narrow and elongate, maximum width about two-thirds of their length
+      - About 18 maxillary and 20 dentary tooth positions per side
     identifiers:
       - source: pbdb
         id: "38739"
@@ -103315,6 +103322,8 @@ genera:
             - ROM 804
           specimen_type: holotype
           institution: Royal Ontario Museum
+          material: A partial skull with a largely articulated postcranial skeleton (dorsal, sacral and caudal vertebrae, girdles, fore- and hindlimbs) and extensive ossified caudal tendons; cervicals and manus absent.
+          completeness: partial
         size:
           length_m:
             min: 3
@@ -103326,9 +103335,18 @@ genera:
             min: 1
             max: 1
         erected_in: sternberg1937
+        described_in: galton1973b
         authors: Sternberg, C. M.
         described: 1937
     references:
+      - id: parks1926b
+        authors: Parks, William A.
+        year: 1926
+        title: Thescelosaurus warreni, a new species of orthopodous dinosaur from the Edmonton Formation of Alberta
+        journal: University of Toronto Studies (Geological Series)
+        volume: "21"
+        pages: 1-42
+        notes: Original description of the holotype (ROM 804) as Thescelosaurus warreni; source of the holotype material. Sternberg (1937) later made it the type of Parksosaurus.
       - id: sternberg1937
         authors: Sternberg, C. M.
         year: 1937
@@ -103336,6 +103354,14 @@ genera:
         journal: Proceedings of the Geological Society of America
         volume: "1936"
         pages: "375"
+      - id: galton1973b
+        authors: Galton, Peter M.
+        year: 1973
+        title: Redescription of the skull and mandible of Parksosaurus from the Late Cretaceous with comments on the family Hypsilophodontidae (Ornithischia)
+        journal: Life Sciences Contribution, Royal Ontario Museum
+        volume: "89"
+        pages: 1-21
+        notes: Modern redescription of the skull and mandible; source of the diagnostic features.
     taxonomy:
       - Life
       - Animalia
