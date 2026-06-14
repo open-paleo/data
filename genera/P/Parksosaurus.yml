@@ -19,6 +19,15 @@ paleoenvironment:
 appearance:
   integument: scaled
   evidence: inferred
+diagnostic_features:
+  - Antorbital fenestra very small, bounded by the maxilla and lacrimal
+  - Posterodorsal end of the jugal expanded anteroposteriorly
+  - Posterior process of the premaxilla deep, allowing extensive maxilla-nasal
+    contact
+  - Cheek teeth with numerous low, rounded, parallel vertical ridges on the
+    thickly enameled crown (labial on maxillary teeth, lingual on dentary teeth)
+  - Frontals narrow and elongate, maximum width about two-thirds of their length
+  - About 18 maxillary and 20 dentary tooth positions per side
 identifiers:
   - source: pbdb
     id: "38739"
@@ -53,6 +62,10 @@ species:
       specimen_id: [ ROM 804 ]
       specimen_type: holotype
       institution: ROM
+      material: A partial skull with a largely articulated postcranial skeleton
+        (dorsal, sacral and caudal vertebrae, girdles, fore- and hindlimbs) and
+        extensive ossified caudal tendons; cervicals and manus absent.
+      completeness: partial
     size:
       length_m:
         min: 3.0
@@ -64,7 +77,19 @@ species:
         min: 1
         max: 1
     erected_in: sternberg1937
+    described_in: galton1973b
 references:
+  - id: parks1926b
+    authors: Parks, William A.
+    year: 1926
+    title: Thescelosaurus warreni, a new species of orthopodous dinosaur from
+      the Edmonton Formation of Alberta
+    journal: University of Toronto Studies (Geological Series)
+    volume: "21"
+    pages: 1-42
+    notes: Original description of the holotype (ROM 804) as Thescelosaurus
+      warreni; source of the holotype material. Sternberg (1937) later made it
+      the type of Parksosaurus.
   - id: sternberg1937
     authors: Sternberg, C. M.
     year: 1937
@@ -72,3 +97,13 @@ references:
     journal: Proceedings of the Geological Society of America
     volume: "1936"
     pages: "375"
+  - id: galton1973b
+    authors: Galton, Peter M.
+    year: 1973
+    title: Redescription of the skull and mandible of Parksosaurus from the Late
+      Cretaceous with comments on the family Hypsilophodontidae (Ornithischia)
+    journal: Life Sciences Contribution, Royal Ontario Museum
+    volume: "89"
+    pages: 1-21
+    notes: Modern redescription of the skull and mandible; source of the
+      diagnostic features.
