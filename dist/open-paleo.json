@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-06-14T21:31:49.200Z",
+    "built_at": "2026-06-15T00:05:49.905Z",
     "clade_count": 250,
     "genus_count": 1397,
     "license": "CC-BY-4.0",
@@ -110800,15 +110800,34 @@
             ],
             "specimen_type": "holotype",
             "institution": "Institute of Vertebrate Paleontology and Paleoanthropology",
-            "material": "Fragmentary postcranial remains",
+            "material": "A composite mounted skeleton assembled from disarticulated remains of more than one individual (~35% plaster): a partial skull (occipital region, both dentaries) and fragmentary postcranial elements.",
             "completeness": "fragmentary"
           },
+          "synonyms": [
+            {
+              "name": "Trachodon amurense",
+              "type": "reassigned",
+              "reason": "Originally described as Trachodon amurense by Riabinin (1925); Riabinin (1930) erected Mandschurosaurus for the material."
+            }
+          ],
           "erected_in": "riabinin1930",
+          "described_in": "riabinin1925",
           "authors": "Riabinin, A. N.",
           "described": 1930
         }
       ],
       "references": [
+        {
+          "id": "riabinin1925",
+          "authors": "Riabinin, A. N.",
+          "year": 1925,
+          "title": "A mounted skeleton of the gigantic reptile Trachodon amurense, nov. sp.",
+          "journal": "Izvestiya Geologicheskogo Komiteta",
+          "volume": "44",
+          "issue": "1",
+          "pages": "1-12",
+          "notes": "Original description of the species as Trachodon amurense; the mounted skeleton was later made the type of Mandschurosaurus by Riabinin (1930)."
+        },
         {
           "id": "riabinin1930",
           "authors": "Riabinin, A. N.",
@@ -175516,6 +175535,14 @@
         "integument": "scaled",
         "evidence": "inferred"
       },
+      "diagnostic_features": [
+        "Humerus straight and massive, with a strongly indented head, a large deltopectoral crest extending past midshaft, and a broad distal end",
+        "Forearm short, with a humerus-to-radius length ratio of about 2.2 and a massive ulna (length-to-proximal-width ratio about 2.1)",
+        "First manual phalanx of digit I stout, short, and twisted so the distal condyles are angled relative to the proximal end",
+        "Subacetabular parts of the pubis and ischium unemarginated ventrally, forming a nearly continuous ventromedian symphysis along most of their length",
+        "Obturator foramen fully enclosed in the pubis, terminating distally in a small anteroposteriorly expanded pubic foot",
+        "Ilium with a very low dorsal blade tapering to a rounded posterior point and a wide brevis shelf; acetabulum wide but shallow"
+      ],
       "identifiers": [
         {
           "source": "pbdb",
@@ -175578,7 +175605,9 @@
               "BYU 2002"
             ],
             "specimen_type": "holotype",
-            "institution": "Earth Sciences Museum, Brigham Young University"
+            "institution": "Earth Sciences Museum, Brigham Young University",
+            "material": "Left and right humeri, radii, and ulnae (six forelimb long bones) of a single individual.",
+            "completeness": "fragmentary"
           },
           "size": {
             "length_m": {
@@ -195006,6 +195035,13 @@
         "integument": "scaled",
         "evidence": "inferred"
       },
+      "diagnostic_features": [
+        "Anterior edge of the maxilla above the tooth row bears a forward-and-downward projecting process contacting the premaxillary suture; maxillary foramen not prominent",
+        "Maxilla bearing 12-14 teeth and mandible 15-17 teeth",
+        "Prefrontal forming the main component of the dorsal orbital border; posterior part of the temporal bone exceptionally thick (up to 18 mm); upper temporal fenestra oval and narrow anteroposteriorly",
+        "Premaxillary teeth largest, with long pointed crowns bearing small apical tubercles but no serrations; cheek-tooth crowns convex externally and concave internally with a prominent internal median ridge",
+        "Anterior end of the dentary symphysis projecting downward with a rough external surface; lower margin of the dentary bearing a longitudinal groove extending to the symphysis"
+      ],
       "identifiers": [
         {
           "source": "pbdb",
