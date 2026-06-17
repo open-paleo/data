@@ -16,6 +16,9 @@ paleoenvironment:
 appearance:
   integument: armored
   evidence: direct
+diagnostic_features:
+  - Posterior caudal centra dorsoventrally flattened
+  - Fibular lateral tuberosity strongly developed
 identifiers:
   - source: pbdb
     id: "64317"
@@ -52,6 +55,9 @@ species:
       specimen_id: [ MLP Ly 1-6-V-28-1 ]
       specimen_type: holotype
       institution: MLP
+      material: Six caudal vertebrae; the girdle and limb material often referred
+        to the species was not directly associated with these type caudals.
+      completeness: fragmentary
     size:
       hip_height_m:
         min: 2
@@ -62,8 +68,23 @@ species:
       weight_kg:
         min: 1800
         max: 3500
+    synonyms:
+      - name: Titanosaurus australis
+        type: reassigned
+        reason: Originally described as Titanosaurus australis by Lydekker (1893);
+          reassigned to the new genus Neuquensaurus by Powell (1992).
     erected_in: powell1992
+    described_in: otero2010
 references:
+  - id: lydekker1893a
+    authors: Lydekker, R.
+    year: 1893
+    title: Contributions to a knowledge of the fossil vertebrates of
+      Argentina. I. — The dinosaurs of Patagonia
+    journal: Anales del Museo de La Plata. Paleontología Argentina
+    volume: "2"
+    pages: 1-16
+    notes: Original description of the species as Titanosaurus australis.
   - id: powell1986
     authors: Powell, J. E.
     year: 1986
@@ -84,6 +105,16 @@ references:
       Biotico: Actas del Segundo Curso de Paleontologia in Cuenca. Institutio
       "Juan de Valdes", Cuenca, Argentina'
     pages: 165-230
+  - id: otero2010
+    authors: Otero, A.
+    year: 2010
+    title: The appendicular skeleton of Neuquensaurus, a Late Cretaceous
+      saltasaurine sauropod from Patagonia, Argentina
+    journal: Acta Palaeontologica Polonica
+    volume: "55"
+    issue: "3"
+    pages: 399-426
+    notes: Redescription of the appendicular skeleton of Neuquensaurus.
   - id: jones2026b
     authors: Jones, Bryce; Viola, Egidio
     year: 2026
