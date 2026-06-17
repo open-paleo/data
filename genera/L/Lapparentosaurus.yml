@@ -17,6 +17,11 @@ paleoenvironment:
 appearance:
   integument: scaled
   evidence: inferred
+diagnostic_features:
+  - Posterior dorsal neural spines low and laterally flat, without divergent
+    (tetraradiate) laminae
+  - Neural arch of the posterior dorsals low, with a short distance between the
+    zygapophyses and the centrum (poor dorsoventral development)
 identifiers:
   - source: pbdb
     id: "65915"
@@ -46,9 +51,12 @@ species:
         - -16.5
         - 47.12722
     holotype:
-      specimen_id: [ MNHN.F.MAA91 ]
+      specimen_id: [ MNHN.F.MAA91, MNHN.F.MAA92 ]
       specimen_type: holotype
       institution: MHNP
+      material: Two associated neural arches of posterior dorsal vertebrae, with
+        broken diapophyses.
+      completeness: fragmentary
     size:
       length_m:
         min: 12.3
