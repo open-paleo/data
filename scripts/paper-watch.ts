@@ -46,6 +46,15 @@ const articleTypes = ["article", "review", "preprint", "book-chapter", "book", "
 const registrySources = ["catalogue of life", "checklistbank", "global biodiversity information facility", "gbif"];
 
 /**
+ * Generic self-deposit / data repositories. Works hosted here are kept but
+ * flagged with a note, since they are often self-published essays or
+ * deposited copies rather than journal articles. Deliberately excludes
+ * dedicated preprint servers (bioRxiv, EarthArXiv), whose preprints are not
+ * "self-published" in this sense.
+ */
+const depositSources = ["zenodo", "figshare"];
+
+/**
  * One discovered work that mentioned at least one tracked taxon name.
  */
 type WatchHit = {
@@ -81,6 +90,13 @@ type WatchHit = {
      * record.
      */
     isOpenAccess: boolean;
+
+    /**
+     * True when the host is a generic self-deposit repository (see
+     * depositSources): the entry is kept but flagged as possibly a
+     * self-published essay or deposited copy rather than a journal article.
+     */
+    isDeposit: boolean;
 
     /**
      * Canonical genus names matched in the title or abstract.
@@ -603,6 +619,7 @@ function matchWorks(
             publicationDate: typeof work.publication_date === "string" ? work.publication_date : "",
             venue: location?.source?.display_name ?? null,
             isOpenAccess: openAccess?.is_oa === true,
+            isDeposit: depositSources.some((name) => sourceName.includes(name)),
             genera: [...matchedGenera].sort(),
             clades: reportedClades.sort(),
         });
@@ -627,8 +644,9 @@ function formatHit(hit: WatchHit): string
     const link = hit.doi ? `https://doi.org/${hit.doi}` : `https://openalex.org/${hit.openAlexId}`;
     const venueLine = hit.venue ? `\n  **${hit.venue}**` : "";
     const access = hit.isOpenAccess ? " 🔓" : "";
+    const note = hit.isDeposit ? "\n  _Note: self-published / deposited_" : "";
 
-    return `- [ ] ${hit.publicationDate} — ${hit.title}${venueLine}\n  ${link}${access}`;
+    return `- [ ] ${hit.publicationDate} — ${hit.title}${venueLine}\n  ${link}${access}${note}`;
 }
 
 /**

@@ -23,8 +23,9 @@ function formatHit(hit)
     const date = hit.publicationDate ? `${hit.publicationDate} — ` : "";
     const venueLine = hit.venue ? `\n  **${hit.venue}**` : "";
     const access = hit.isOpenAccess ? " 🔓" : "";
+    const note = hit.isDeposit ? "\n  _Note: self-published / deposited_" : "";
 
-    return `- [ ] ${date}${hit.title}${venueLine}\n  ${link}${access}`;
+    return `- [ ] ${date}${hit.title}${venueLine}\n  ${link}${access}${note}`;
 }
 
 /**
