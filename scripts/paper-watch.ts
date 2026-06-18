@@ -645,8 +645,11 @@ function formatHit(hit: WatchHit): string
     const venueLine = hit.venue ? `\n  **${hit.venue}**` : "";
     const access = hit.isOpenAccess ? " 🔓" : "";
     const note = hit.isDeposit ? "\n  _Note: self-published / deposited_" : "";
+    // Hidden per-item anchor (invisible when rendered) so the triage skill can
+    // locate an item's checkbox by DOI to tick it.
+    const anchor = ` <!-- doi:${hit.doi ?? hit.openAlexId} -->`;
 
-    return `- [ ] ${hit.publicationDate} — ${hit.title}${venueLine}\n  ${link}${access}${note}`;
+    return `- [ ] ${hit.publicationDate} — ${hit.title}${anchor}${venueLine}\n  ${link}${access}${note}`;
 }
 
 /**
