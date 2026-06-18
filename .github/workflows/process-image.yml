@@ -15,12 +15,12 @@ jobs:
     if: contains(github.event.issue.labels.*.name, 'Add Image')
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           lfs: true
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: 24
           cache: npm
@@ -29,7 +29,7 @@ jobs:
         run: npm ci
 
       - name: Process image submission
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           script: |
             const script = require('./.github/scripts/process-image.cjs');
@@ -37,7 +37,7 @@ jobs:
 
       - name: Label issue on failure
         if: failure()
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           script: |
             await github.rest.issues.createComment({

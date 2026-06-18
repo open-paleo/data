@@ -36,7 +36,7 @@ jobs:
         run: npm ci
 
       - name: Restore watch state
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v5
         with:
           path: .github/paper-watch
           # The run-id key never hits on a fresh run, so the restore falls
@@ -58,14 +58,14 @@ jobs:
 
       - name: Save watch state
         if: always()
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v5
         with:
           path: .github/paper-watch
           key: paper-watch-state-${{ github.run_id }}
 
       - name: Upload digest artifact
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: paper-watch-digest
           path: |
@@ -78,7 +78,7 @@ jobs:
         env:
           PAPER_WATCH_ASSIGNEE: ${{ vars.PAPER_WATCH_ASSIGNEE }}
           PAPER_WATCH_MENTION: ${{ vars.PAPER_WATCH_MENTION }}
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             const script = require('./.github/scripts/paper-watch-issue.cjs');

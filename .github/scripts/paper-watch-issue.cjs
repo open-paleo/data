@@ -7,7 +7,7 @@
 const fs = require("node:fs");
 
 const commentMarker = "<!-- open-paleo:paper-watch -->";
-const watchLabel = "paper-watch";
+const watchLabel = "Paper Watch";
 
 /**
  * Formats a single hit as a markdown checklist line.
