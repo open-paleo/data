@@ -16,5 +16,13 @@ reports/extracted-paper-fields-*-spellcheck.md
 # `npm run report-missing-fields` or the /report skill); not checked in.
 reports/missing-fields.md
 
+# Paper-watch digest — regenerable from OpenAlex (run `npm run paper-watch`).
+reports/paper-watch.md
+reports/paper-watch.json
+
+# Paper-watch incremental state — persisted between CI runs via actions/cache,
+# never committed (and written locally by a dry run with --write-state).
+.github/paper-watch/
+
 # MacOS
 .DS_Store

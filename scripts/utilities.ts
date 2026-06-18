@@ -4,6 +4,17 @@ import { parse as parseYamlContent } from "yaml";
 import type { FlaggedSources, InstitutionEntry, TreeNode } from "./types.ts";
 
 /**
+ * Escapes a string for safe inclusion as a literal in a regular expression.
+ *
+ * @param value - The literal string to escape.
+ * @returns The escaped string.
+ */
+export function escapeRegExp(value: string): string
+{
+    return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+/**
  * Parses a YAML file and returns the result cast to the specified type.
  *
  * @param filePath - Absolute path to the YAML file.
@@ -222,7 +233,7 @@ export function resolveCitationKey(
         return { resolvedKey: proposedKey, collided: false, reason: null };
     }
 
-    const escaped = proposedKey.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const escaped = escapeRegExp(proposedKey);
     const variantPattern = new RegExp(`^${escaped}[a-z]$`);
 
     const existingVariants = [...existingKeys]

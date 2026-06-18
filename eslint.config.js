@@ -173,6 +173,7 @@ export default tseslint.config(
                 exports: "readonly",
                 Buffer: "readonly",
                 console: "readonly",
+                process: "readonly",
             },
         },
         plugins: {

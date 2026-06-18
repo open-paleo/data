@@ -1,0 +1,85 @@
+name: Paper Watch
+
+on:
+  schedule:
+    # Daily at 6:17 PM Pacific. GitHub cron is UTC with no DST handling, so
+    # two season-gated lines keep it on Pacific time year-round:
+    #   18:17 PDT (Mar-Oct) = 01:17 UTC
+    - cron: "17 1 * 3-10 *"
+    #   18:17 PST (Nov-Feb) = 02:17 UTC
+    - cron: "17 2 * 1,2,11,12 *"
+  workflow_dispatch:
+    inputs:
+      since:
+        description: "Override start date (YYYY-MM-DD); blank = since last run"
+        required: false
+        type: string
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Restore watch state
+        uses: actions/cache/restore@v4
+        with:
+          path: .github/paper-watch
+          # The run-id key never hits on a fresh run, so the restore falls
+          # through to the most recent paper-watch-state-* entry.
+          key: paper-watch-state-${{ github.run_id }}
+          restore-keys: |
+            paper-watch-state-
+
+      - name: Run paper watch
+        env:
+          OPENALEX_MAILTO: ${{ vars.OPENALEX_MAILTO }}
+          SINCE: ${{ github.event.inputs.since }}
+        run: |
+          args=(--write-state --json reports/paper-watch.json)
+          if [ -n "$SINCE" ]; then
+            args+=(--since "$SINCE")
+          fi
+          npm run paper-watch -- "${args[@]}"
+
+      - name: Save watch state
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: .github/paper-watch
+          key: paper-watch-state-${{ github.run_id }}
+
+      - name: Upload digest artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: paper-watch-digest
+          path: |
+            reports/paper-watch.md
+            reports/paper-watch.json
+          retention-days: 30
+          if-no-files-found: ignore
+
+      - name: File digest issue
+        env:
+          PAPER_WATCH_ASSIGNEE: ${{ vars.PAPER_WATCH_ASSIGNEE }}
+          PAPER_WATCH_MENTION: ${{ vars.PAPER_WATCH_MENTION }}
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const script = require('./.github/scripts/paper-watch-issue.cjs');
+            await script({ github, context, jsonPath: 'reports/paper-watch.json' });
