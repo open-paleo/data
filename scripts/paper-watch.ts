@@ -31,6 +31,21 @@ const openAlexBase = "https://api.openalex.org/works";
 const shortNameThreshold = 5;
 
 /**
+ * OpenAlex work types kept by the watcher (applied as a fetch-time filter).
+ * Excludes datasets, 3D scans, peer-review records, paratext (covers, tables
+ * of contents), errata, and the like, which are not the papers we track.
+ */
+const articleTypes = ["article", "review", "preprint", "book-chapter", "book", "dissertation"];
+
+/**
+ * Source (host) name substrings for nomenclatural / biodiversity registries
+ * whose DOIs are registration stubs, not the describing paper. Matched
+ * case-insensitively against the work's host venue and dropped, since the
+ * real paper — when indexed — appears as its own journal article.
+ */
+const registrySources = ["catalogue of life", "checklistbank", "global biodiversity information facility", "gbif"];
+
+/**
  * One discovered work that mentioned at least one tracked taxon name.
  */
 type WatchHit = {
@@ -420,7 +435,8 @@ function dedupHits(candidates: Array<WatchHit>): Array<WatchHit>
  */
 async function fetchRecentWorks(options: Options): Promise<Array<Record<string, unknown>>>
 {
-    const filter = `concepts.id:${options.conceptId},from_publication_date:${options.since}`;
+    const filter = `concepts.id:${options.conceptId},from_publication_date:${options.since}`
+        + `,type:${articleTypes.join("|")}`;
     const works: Array<Record<string, unknown>> = [];
     let cursor = "*";
     let page = 0;
@@ -476,7 +492,8 @@ async function fetchRecentWorks(options: Options): Promise<Array<Record<string, 
  * @param allCladeNames - Full tree-clade set, used only as corroboration.
  * @param seen - Dedup keys already reported in prior runs.
  * @param options - Resolved run options (for the guard toggle).
- * @returns The deduplicated hits and the count filtered by the guard.
+ * @returns The deduplicated hits and the counts filtered by the homonym
+ *     guard and the registry-source guard.
  */
 function matchWorks(
     works: Array<Record<string, unknown>>,
@@ -485,13 +502,14 @@ function matchWorks(
     allCladeNames: Set<string>,
     seen: Set<string>,
     options: Options,
-): { hits: Array<WatchHit>; droppedByGuard: number }
+): { hits: Array<WatchHit>; droppedByGuard: number; droppedAsRegistry: number }
 {
     const genusMatcher = compileNameMatcher([...generaByName.keys()]);
     const cladeMatcher = compileNameMatcher([...allCladeNames]);
 
     const candidates: Array<WatchHit> = [];
     let droppedByGuard = 0;
+    let droppedAsRegistry = 0;
 
     for (const work of works)
     {
@@ -568,6 +586,14 @@ function matchWorks(
         }
 
         const location = work.primary_location as { source?: { display_name?: string } } | null;
+        const sourceName = (location?.source?.display_name ?? "").toLowerCase();
+
+        if (registrySources.some((name) => sourceName.includes(name)))
+        {
+            droppedAsRegistry++;
+            continue;
+        }
+
         const openAccess = work.open_access as { is_oa?: boolean } | null;
 
         candidates.push({
@@ -585,7 +611,7 @@ function matchWorks(
     const hits = dedupHits(candidates);
     hits.sort((first, second) => second.publicationDate.localeCompare(first.publicationDate));
 
-    return { hits, droppedByGuard };
+    return { hits, droppedByGuard, droppedAsRegistry };
 }
 
 /**
@@ -694,11 +720,18 @@ async function main(): Promise<void>
 
     const works = await fetchRecentWorks(options);
     const seen = new Set(state.seen);
-    const { hits, droppedByGuard } = matchWorks(works, generaByName, cladeNames, allCladeNames, seen, options);
+    const { hits, droppedByGuard, droppedAsRegistry } = matchWorks(
+        works, generaByName, cladeNames, allCladeNames, seen, options,
+    );
+
+    const filterNotes = [
+        droppedByGuard > 0 ? `${droppedByGuard} short-name homonym` : null,
+        droppedAsRegistry > 0 ? `${droppedAsRegistry} registry-stub` : null,
+    ].filter(Boolean);
 
     console.log(
         `Scanned ${works.length} paleontology works; ${hits.length} new taxon match(es)`
-        + `${droppedByGuard > 0 ? ` (${droppedByGuard} short-name homonym match(es) filtered)` : ""}.\n`,
+        + `${filterNotes.length > 0 ? ` (${filterNotes.join(", ")} match(es) filtered)` : ""}.\n`,
     );
 
     const byGenus = new Map<string, number>();
