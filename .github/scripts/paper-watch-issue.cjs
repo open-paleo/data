@@ -10,23 +10,27 @@ const commentMarker = "<!-- open-paleo:paper-watch -->";
 const watchLabel = "Paper Watch";
 
 /**
- * Formats a single hit as a markdown checklist line.
+ * Formats a single hit as a markdown checklist item: title, the venue in
+ * bold on its own line (for at-a-glance access triage), then the link with
+ * an open-access lock when a free version exists.
  *
  * @param {object} hit - One entry from the paper-watch JSON output.
- * @returns {string} The markdown line.
+ * @returns {string} The markdown item.
  */
 function formatHit(hit)
 {
     const link = hit.doi ? `https://doi.org/${hit.doi}` : `https://openalex.org/${hit.openAlexId}`;
-    const venue = hit.venue ? ` _(${hit.venue})_` : "";
     const date = hit.publicationDate ? `${hit.publicationDate} — ` : "";
+    const venueLine = hit.venue ? `\n  **${hit.venue}**` : "";
+    const access = hit.isOpenAccess ? " 🔓" : "";
 
-    return `- [ ] ${date}${hit.title}${venue}\n  ${link}`;
+    return `- [ ] ${date}${hit.title}${venueLine}\n  ${link}${access}`;
 }
 
 /**
- * Builds the full issue body, grouped by genus with a clade-only section
- * for matches that hit a clade name but no tracked genus.
+ * Builds the full issue body, grouped by the exact set of genera a paper
+ * mentions (so a multi-genus paper appears once under a combined heading),
+ * with a clade-only section for matches that hit a clade but no genus.
  *
  * @param {Array<object>} hits - The paper-watch JSON output.
  * @param {string} date - The run date (ISO yyyy-mm-dd).
@@ -35,7 +39,7 @@ function formatHit(hit)
  */
 function buildIssueBody(hits, date, mention)
 {
-    const byGenus = new Map();
+    const byGenusSet = new Map();
     const cladeOnly = [];
 
     for (const hit of hits)
@@ -43,20 +47,21 @@ function buildIssueBody(hits, date, mention)
         if (!hit.genera || hit.genera.length === 0)
         {
             cladeOnly.push(hit);
-            continue;
         }
-
-        for (const genus of hit.genera)
+        else
         {
-            if (!byGenus.has(genus))
+            const key = hit.genera.join(", ");
+
+            if (!byGenusSet.has(key))
             {
-                byGenus.set(genus, []);
+                byGenusSet.set(key, []);
             }
 
-            byGenus.get(genus).push(hit);
+            byGenusSet.get(key).push(hit);
         }
     }
 
+    const distinctGenera = new Set(hits.flatMap((hit) => hit.genera ?? [])).size;
     const lines = [commentMarker];
 
     if (mention)
@@ -66,7 +71,7 @@ function buildIssueBody(hits, date, mention)
 
     lines.push(
         `Automated digest from OpenAlex for **${date}** — ${hits.length} new paper(s) `
-            + `across ${byGenus.size} genus/genera.`,
+            + `across ${distinctGenera} genus/genera.`,
         "",
         "Tick a box once the paper has been triaged (`/update-genus`, "
             + "`/intake-genus`, or a `notable_specimens` entry). Short-name "
@@ -74,11 +79,11 @@ function buildIssueBody(hits, date, mention)
         "",
     );
 
-    for (const genus of [...byGenus.keys()].sort())
+    for (const key of [...byGenusSet.keys()].sort())
     {
-        lines.push(`### ${genus}`, "");
+        lines.push(`### ${key}`, "");
 
-        for (const hit of byGenus.get(genus))
+        for (const hit of byGenusSet.get(key))
         {
             lines.push(formatHit(hit));
         }

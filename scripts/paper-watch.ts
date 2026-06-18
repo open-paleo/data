@@ -61,6 +61,13 @@ type WatchHit = {
     venue: string | null;
 
     /**
+     * True when OpenAlex reports a freely readable version exists anywhere
+     * (work-level open access), regardless of which copy is the journal of
+     * record.
+     */
+    isOpenAccess: boolean;
+
+    /**
      * Canonical genus names matched in the title or abstract.
      */
     genera: Array<string>;
@@ -425,7 +432,7 @@ async function fetchRecentWorks(options: Options): Promise<Array<Record<string, 
             "per-page": "200",
             cursor,
             mailto: options.mailto,
-            select: "id,doi,title,publication_date,primary_location,abstract_inverted_index",
+            select: "id,doi,title,publication_date,primary_location,open_access,abstract_inverted_index",
         });
 
         const response = await fetch(`${openAlexBase}?${query.toString()}`);
@@ -561,6 +568,7 @@ function matchWorks(
         }
 
         const location = work.primary_location as { source?: { display_name?: string } } | null;
+        const openAccess = work.open_access as { is_oa?: boolean } | null;
 
         candidates.push({
             doi,
@@ -568,6 +576,7 @@ function matchWorks(
             title: stripTags(rawTitle),
             publicationDate: typeof work.publication_date === "string" ? work.publication_date : "",
             venue: location?.source?.display_name ?? null,
+            isOpenAccess: openAccess?.is_oa === true,
             genera: [...matchedGenera].sort(),
             clades: reportedClades.sort(),
         });
@@ -580,7 +589,26 @@ function matchWorks(
 }
 
 /**
- * Renders the hits as a grouped markdown digest, one section per genus.
+ * Renders one hit as a markdown checklist item: title, the venue in bold on
+ * its own line (for at-a-glance access triage), then the link with an
+ * open-access lock when a free version exists.
+ *
+ * @param hit - The hit to render.
+ * @returns The markdown for the item.
+ */
+function formatHit(hit: WatchHit): string
+{
+    const link = hit.doi ? `https://doi.org/${hit.doi}` : `https://openalex.org/${hit.openAlexId}`;
+    const venueLine = hit.venue ? `\n  **${hit.venue}**` : "";
+    const access = hit.isOpenAccess ? " 🔓" : "";
+
+    return `- [ ] ${hit.publicationDate} — ${hit.title}${venueLine}\n  ${link}${access}`;
+}
+
+/**
+ * Renders the hits as a markdown digest grouped by the exact set of genera a
+ * paper mentions, so a multi-genus paper appears once under a combined
+ * "Genus A, Genus B" heading rather than repeated under each genus.
  *
  * @param hits - The fresh hits to render.
  * @param options - Resolved run options (for the header window).
@@ -588,7 +616,7 @@ function matchWorks(
  */
 function renderDigest(hits: Array<WatchHit>, options: Options): string
 {
-    const byGenus = new Map<string, Array<WatchHit>>();
+    const byGenusSet = new Map<string, Array<WatchHit>>();
     const cladeOnly: Array<WatchHit> = [];
 
     for (const hit of hits)
@@ -596,41 +624,34 @@ function renderDigest(hits: Array<WatchHit>, options: Options): string
         if (hit.genera.length === 0)
         {
             cladeOnly.push(hit);
-            continue;
         }
-
-        for (const genus of hit.genera)
+        else
         {
-            if (!byGenus.has(genus))
+            const key = hit.genera.join(", ");
+
+            if (!byGenusSet.has(key))
             {
-                byGenus.set(genus, []);
+                byGenusSet.set(key, []);
             }
 
-            byGenus.get(genus)!.push(hit);
+            byGenusSet.get(key)!.push(hit);
         }
     }
 
+    const distinctGenera = new Set(hits.flatMap((hit) => hit.genera)).size;
     const lines: Array<string> = [
         "# Paper watch",
         "",
         `Window: works published since **${options.since}** · `
-            + `${hits.length} new work(s) matching ${byGenus.size} genus/genera.`,
+            + `${hits.length} new work(s) across ${distinctGenera} genus/genera.`,
         "",
     ];
 
-    const formatHit = (hit: WatchHit): string =>
+    for (const key of [...byGenusSet.keys()].sort())
     {
-        const link = hit.doi ? `https://doi.org/${hit.doi}` : `https://openalex.org/${hit.openAlexId}`;
-        const venue = hit.venue ? ` — _${hit.venue}_` : "";
+        lines.push(`## ${key}`, "");
 
-        return `  - [${hit.publicationDate}] ${hit.title}${venue}\n    ${link}`;
-    };
-
-    for (const genus of [...byGenus.keys()].sort())
-    {
-        lines.push(`## ${genus}`, "");
-
-        for (const hit of byGenus.get(genus)!)
+        for (const hit of byGenusSet.get(key)!)
         {
             lines.push(formatHit(hit));
         }
@@ -644,7 +665,7 @@ function renderDigest(hits: Array<WatchHit>, options: Options): string
 
         for (const hit of cladeOnly)
         {
-            lines.push(`${formatHit(hit)}\n    clades: ${hit.clades.join(", ")}`);
+            lines.push(`${formatHit(hit)}\n  clades: ${hit.clades.join(", ")}`);
         }
 
         lines.push("");
