@@ -95,6 +95,83 @@ export type Holotype = {
 };
 
 /**
+ * A curated highlight of NON-type material for a genus — a famous,
+ * most-complete, or otherwise scientifically or culturally significant
+ * specimen. This is a hand-picked highlights list, not an exhaustive record
+ * of referred material. The type specimen itself lives in `Species.holotype`,
+ * never here.
+ */
+export type NotableSpecimen = {
+    /**
+     * Informal name the specimen is known by (e.g. "Sue", "Stan", "Big Al").
+     */
+    nickname?: string;
+
+    /**
+     * Catalogue number(s) of the specimen, one per array element (never a
+     * compressed "X to Y" range). Optional — a specimen may be known only by
+     * nickname.
+     */
+    specimen_id?: Array<string>;
+
+    /**
+     * Institution or collection housing the specimen, as a key in
+     * institutions.yaml. Required when `specimen_id` is present unless `status`
+     * records the specimen as lost/destroyed/uncatalogued; when set on a
+     * no-longer-intact specimen it records the last-known repository.
+     */
+    institution?: string;
+
+    /**
+     * Physical state when the specimen is no longer intact at the recorded
+     * institution. Allowed values come from `schema.yml` under `holotype_status`
+     * ("destroyed", "lost", "uncatalogued", "unknown").
+     */
+    status?: string;
+
+    /**
+     * Species the specimen is referred to (a binomial matching a `Species.name`
+     * in this genus). Optional — omit when the referral is uncertain.
+     */
+    species?: string;
+
+    /**
+     * Why the specimen is notable, from `schema.yml` under
+     * `specimen_categories` (e.g. "most-complete", "exceptional-preservation").
+     */
+    category?: string;
+
+    /**
+     * Required free-text explanation of why this specimen matters. Plain text,
+     * American English, no markup. The per-specimen reason lives here, not on
+     * the cited reference's notes.
+     */
+    significance: string;
+
+    /**
+     * Discovery details, when known. Both sub-fields are optional — a specimen
+     * may be notable without a recorded discovery date or discoverer.
+     */
+    discovered?: {
+        /**
+         * Year the specimen was discovered.
+         */
+        year?: number;
+
+        /**
+         * Person or team credited with the discovery.
+         */
+        by?: string;
+    };
+
+    /**
+     * Reference ID (in this file's `references`) of the paper describing or
+     * referring the specimen. A pointer only.
+     */
+    reference?: string;
+};
+
+/**
  * Geological time period and stage for a species occurrence.
  */
 export type Period = {
@@ -544,6 +621,14 @@ export type GenusData = {
     species?: Array<Species>;
 
     /**
+     * Curated highlights of notable non-type specimens (famous skeletons,
+     * most-complete material, soft-tissue finds). Hand-picked and optional —
+     * not an exhaustive referred-material list. The type specimen lives under
+     * the relevant species's `holotype`, not here.
+     */
+    notable_specimens?: Array<NotableSpecimen>;
+
+    /**
      * Published references cited in this genus file.
      */
     references?: Array<Reference>;
@@ -678,6 +763,12 @@ export type Schema = {
      * `species.holotype.specimen_type`.
      */
     specimen_types?: Array<string>;
+
+    /**
+     * Allowed reasons a non-type specimen is notable. Applied to
+     * `notable_specimens[].category`.
+     */
+    specimen_categories?: Array<string>;
 
     /**
      * Allowed kinds of ICZN ruling (applied to `iczn_rulings[].type`).

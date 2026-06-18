@@ -240,12 +240,7 @@ function resolveInstitutionKeys(
 {
     for (const genus of Object.values(generaMap))
     {
-        if (!genus.species)
-        {
-            continue;
-        }
-
-        for (const species of genus.species)
+        for (const species of genus.species ?? [])
         {
             if (species.holotype?.institution)
             {
@@ -254,6 +249,19 @@ function resolveInstitutionKeys(
                 if (entry)
                 {
                     species.holotype.institution = entry.name;
+                }
+            }
+        }
+
+        for (const specimen of genus.notable_specimens ?? [])
+        {
+            if (specimen.institution)
+            {
+                const entry = registry[specimen.institution];
+
+                if (entry)
+                {
+                    specimen.institution = entry.name;
                 }
             }
         }
@@ -486,7 +494,7 @@ const schemaOutput: Record<string, unknown> = {};
 // Array-type vocabularies (sorted)
 const arrayKeys = [
     "status", "synonym_types", "diet", "locomotion", "completeness",
-    "holotype_status", "specimen_types",
+    "holotype_status", "specimen_types", "specimen_categories",
     "integument", "integument_evidence", "paleoenvironments",
     "periods", "identifier_sources",
 ];

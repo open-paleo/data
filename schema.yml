@@ -52,6 +52,17 @@ specimen_types:
   - neotype
   - unknown
 
+# Why a non-type specimen qualifies as notable (notable_specimens[].category).
+specimen_categories:
+  - most-complete
+  - largest
+  - exceptional-preservation
+  - gut-contents
+  - reproductive
+  - pathology
+  - historic
+  - iconic
+
 # Kinds of formal ICZN ruling recorded under a genus's iczn_rulings.
 iczn_ruling_types:
   - type-species

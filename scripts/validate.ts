@@ -164,6 +164,7 @@ const allowedLocomotion = new Set(schema.locomotion ?? []);
 const allowedCompleteness = new Set(schema.completeness ?? []);
 const allowedHolotypeStatus = new Set(schema.holotype_status ?? []);
 const allowedSpecimenTypes = new Set(schema.specimen_types ?? []);
+const allowedSpecimenCategories = new Set(schema.specimen_categories ?? []);
 const allowedIcznRulingTypes = new Set(schema.iczn_ruling_types ?? []);
 const allowedIntegument = new Set(schema.integument ?? []);
 const allowedIntegumentEvidence = new Set(schema.integument_evidence ?? []);
@@ -1346,6 +1347,173 @@ for (const [filePath, doc] of genusParsed)
     }
 }
 
+// 20b. Notable specimens
+startCheck("Notable specimens");
+
+const notableSpecimenLimit = 6;
+const significanceLimit = 300;
+
+for (const [filePath, doc] of genusParsed)
+{
+    if (!doc || !Array.isArray(doc.notable_specimens))
+    {
+        continue;
+    }
+
+    const speciesNames = new Set(
+        (doc.species ?? [])
+            .map((species) => species.name)
+            .filter((name): name is string => typeof name === "string"));
+    const referenceIds = new Set(
+        (doc.references ?? [])
+            .map((reference) => reference.id)
+            .filter((id): id is string => typeof id === "string"));
+
+    if (doc.notable_specimens.length > notableSpecimenLimit)
+    {
+        checkWarning(
+            "Notable specimens",
+            filePath,
+            `${doc.notable_specimens.length} notable_specimens listed (> ${notableSpecimenLimit}); this is a curated highlights list, not a full referred-material record`);
+    }
+
+    for (const [index, specimen] of doc.notable_specimens.entries())
+    {
+        if (!specimen || typeof specimen !== "object")
+        {
+            checkError("Notable specimens", filePath, `notable_specimens[${index}] must be an object`);
+            continue;
+        }
+
+        const hasSpecimenId = Array.isArray(specimen.specimen_id) && specimen.specimen_id.length > 0;
+        const label = specimen.nickname ?? (hasSpecimenId ? specimen.specimen_id![0] : `#${index}`);
+
+        // Identity: a nickname or at least one specimen_id.
+        if (!specimen.nickname && !hasSpecimenId)
+        {
+            checkError(
+                "Notable specimens",
+                filePath,
+                `notable_specimens[${index}]: needs a 'nickname' or 'specimen_id'`);
+        }
+
+        if (hasSpecimenId)
+        {
+            for (const [idIndex, value] of specimen.specimen_id!.entries())
+            {
+                if (typeof value !== "string" || value.trim().length === 0)
+                {
+                    checkError(
+                        "Notable specimens",
+                        filePath,
+                        `notable_specimens '${label}': specimen_id[${idIndex}] must be a non-empty string`);
+                }
+            }
+        }
+
+        // status reuses the holotype_status vocabulary.
+        const hasValidStatus = typeof specimen.status === "string" && allowedHolotypeStatus.has(specimen.status);
+
+        if (specimen.status !== undefined && !allowedHolotypeStatus.has(specimen.status))
+        {
+            checkError(
+                "Notable specimens",
+                filePath,
+                `notable_specimens '${label}': invalid status '${specimen.status}' (must be one of: ${[...allowedHolotypeStatus].join(", ")})`);
+        }
+
+        // A catalogued specimen needs a home unless it is lost/destroyed/uncatalogued.
+        if (hasSpecimenId && !specimen.institution && !hasValidStatus)
+        {
+            checkError(
+                "Notable specimens",
+                filePath,
+                `notable_specimens '${label}': has specimen_id but no 'institution' (set institution, or 'status' for lost/destroyed/uncatalogued)`);
+        }
+
+        if (specimen.institution && !allowedInstitutionKeys.has(specimen.institution))
+        {
+            checkError(
+                "Notable specimens",
+                filePath,
+                `notable_specimens '${label}': institution '${specimen.institution}' is not a valid key in institutions.yaml`);
+        }
+
+        if (specimen.category !== undefined && !allowedSpecimenCategories.has(specimen.category))
+        {
+            checkError(
+                "Notable specimens",
+                filePath,
+                `notable_specimens '${label}': invalid category '${specimen.category}' (must be one of: ${[...allowedSpecimenCategories].join(", ")})`);
+        }
+
+        if (specimen.species && !speciesNames.has(specimen.species))
+        {
+            checkError(
+                "Notable specimens",
+                filePath,
+                `notable_specimens '${label}': species '${specimen.species}' does not match any species name in this genus`);
+        }
+
+        if (specimen.reference && !referenceIds.has(specimen.reference))
+        {
+            checkError(
+                "Notable specimens",
+                filePath,
+                `notable_specimens '${label}': reference '${specimen.reference}' does not match any reference id`);
+        }
+
+        if (typeof specimen.significance !== "string" || specimen.significance.trim().length === 0)
+        {
+            checkError(
+                "Notable specimens",
+                filePath,
+                `notable_specimens '${label}': missing required 'significance'`);
+        }
+        else
+        {
+            if (specimen.significance.length > significanceLimit)
+            {
+                checkWarning(
+                    "Notable specimens",
+                    filePath,
+                    `notable_specimens '${label}': significance is ${specimen.significance.length} chars (> ${significanceLimit}); tighten it`);
+            }
+        }
+
+        if (specimen.discovered !== undefined)
+        {
+            const discovered = specimen.discovered;
+
+            if (typeof discovered !== "object" || discovered === null)
+            {
+                checkError(
+                    "Notable specimens",
+                    filePath,
+                    `notable_specimens '${label}': discovered must be an object with optional 'year' and 'by'`);
+            }
+            else
+            {
+                if (discovered.year !== undefined && typeof discovered.year !== "number")
+                {
+                    checkError(
+                        "Notable specimens",
+                        filePath,
+                        `notable_specimens '${label}': discovered.year must be a number`);
+                }
+
+                if (discovered.by !== undefined && (typeof discovered.by !== "string" || discovered.by.trim().length === 0))
+                {
+                    checkError(
+                        "Notable specimens",
+                        filePath,
+                        `notable_specimens '${label}': discovered.by must be a non-empty string`);
+                }
+            }
+        }
+    }
+}
+
 // 21. Appearance compliance
 startCheck("Appearance compliance");
 
@@ -1821,6 +1989,21 @@ for (const [filePath, doc] of allParsed)
             if (reference && typeof reference.notes === "string")
             {
                 checkAmericanEnglish(filePath, `references[${index}].notes`, reference.notes);
+            }
+        }
+    }
+
+    const notableSpecimens = (doc as GenusData).notable_specimens;
+
+    if (Array.isArray(notableSpecimens))
+    {
+        for (let index = 0; index < notableSpecimens.length; index += 1)
+        {
+            const specimen = notableSpecimens[index];
+
+            if (specimen && typeof specimen.significance === "string")
+            {
+                checkAmericanEnglish(filePath, `notable_specimens[${index}].significance`, specimen.significance);
             }
         }
     }
