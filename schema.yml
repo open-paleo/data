@@ -53,15 +53,37 @@ specimen_types:
   - unknown
 
 # Why a non-type specimen qualifies as notable (notable_specimens[].category).
+# category is OPTIONAL: omit it when no value genuinely fits rather than
+# forcing the nearest label. One specimen gets the single best-fit category.
 specimen_categories:
+  # THE most complete known specimen of the taxon (a superlative claim, not
+  # merely "fairly complete" or "more complete than the holotype").
   - most-complete
+  # The largest known individual of the taxon.
   - largest
+  # Soft tissue, skin, feathers, articulation, or otherwise extraordinary
+  # preservation quality.
   - exceptional-preservation
+  # Preserved stomach / gut contents or a last meal.
   - gut-contents
+  # Eggs, embryos, a gravid individual, or brooding behavior.
   - reproductive
+  # A notable injury, disease, bite mark, or healed fracture.
   - pathology
+  # Historically important (e.g. first mounted skeleton, a landmark early find).
   - historic
+  # A famous, usually nicknamed individual (e.g. "Sue", "Stan").
   - iconic
+  # A referred specimen notable for preserving major anatomy ABSENT in the
+  # holotype (classically the first or first-good skull), substantially
+  # extending what is known of the taxon. Not the same as most-complete.
+  - complementary
+  # Documents a growth stage or ontogenetic variation (a juvenile, or a
+  # notably old individual).
+  - ontogeny
+  # First or earliest record of the taxon from a region, formation, or time
+  # interval (a geographic or stratigraphic range extension).
+  - range-extension
 
 # Kinds of formal ICZN ruling recorded under a genus's iczn_rulings.
 iczn_ruling_types:

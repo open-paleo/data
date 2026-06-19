@@ -113,6 +113,35 @@ species:
       - name: Epanterias amplexus
         type: junior subjective
         reason: Based on AMNH 5767; generally treated as a junior synonym of Allosaurus fragilis, though debate persists. Epanterias is also widely considered nomen dubium due to lack of diagnostic features.
+notable_specimens:
+  - nickname: "Big Al"
+    specimen_id: [MOR 693]
+    institution: MOR
+    category: iconic
+    significance: "A 95 percent complete, partially articulated subadult, one of the most famous Allosaurus specimens. Renowned for its 19 broken or infected bones, including a long-lived foot infection that may have contributed to its death; later referred to A. jimmadseni."
+    discovered:
+      year: 1991
+      by: "Kirby Siber"
+    reference: chure2020
+  - nickname: "Big Al II"
+    specimen_id: [SMA 0005]
+    institution: SMA
+    category: exceptional-preservation
+    significance: "A second well-preserved Allosaurus from Howe Ranch. Preserves a 20 by 20 centimeter skin impression at the base of the tail showing large scales up to 2 centimeters across, though the scales resemble sauropod skin and associated non-theropod remains cast some doubt on the attribution."
+    reference: chure2020
+  - specimen_id: [AMNH 5753]
+    institution: AMNH
+    category: historic
+    significance: "Found in 1879 but left unpacked until 1903, when it proved to be one of the most complete theropod specimens then known. Put on view in 1908 as the first free-standing mount of a theropod dinosaur, famously posed as if scavenging an Apatosaurus, though never scientifically described."
+    discovered:
+      year: 1879
+      by: "H. F. Hubbell"
+    reference: breithaupt1999
+  - specimen_id: [AMNH 680]
+    institution: AMNH
+    category: largest
+    significance: "The largest definitive Allosaurus specimen, estimated at about 9.7 meters long and 2.3 to 2.7 tonnes, used to anchor maximum-size estimates for the genus."
+    reference: chure2000
 references:
   - id: marsh1877c
     authors: Marsh, O. C.
@@ -139,6 +168,23 @@ references:
     url: http://dx.doi.org/10.5479/si.03629236.110.i
     notes: Redescribes the neotype USNM V 4734 (as Antrodemus); source of the
       holotype material.
+  - id: breithaupt1999
+    authors: Breithaupt, Brent H.
+    year: 1999
+    title: "AMNH 5753: The world's first free-standing theropod skeleton"
+    journal: Journal of Vertebrate Paleontology
+    volume: "19"
+    pages: 33A
+    doi: 10.1080/02724634.1999.10011202
+  - id: chure2000
+    authors: Chure, D. J.
+    year: 2000
+    title: A new species of Allosaurus from the Morrison Formation of Dinosaur National
+      Monument (UT-CO) and a revision of the theropod family Allosauridae
+    book: A new species of Allosaurus from the Morrison Formation of Dinosaur National
+      Monument (UT-CO) and a revision of the theropod family Allosauridae
+    publisher: Columbia University
+    notes: Ph.D. dissertation.
   - id: paulcarpenter2010
     authors: Paul, Gregory S.; Carpenter, Kenneth
     year: 2010
@@ -151,6 +197,15 @@ references:
     pages: 53-56
     doi: 10.21805/bzn.v67i1.a7
     url: http://dx.doi.org/10.21805/bzn.v67i1.a7
+  - id: chure2020
+    authors: Chure, D. J.; Loewen, M. A.
+    year: 2020
+    title: Cranial anatomy of Allosaurus jimmadseni, a new species from the lower
+      part of the Morrison Formation (Upper Jurassic) of Western North America
+    journal: PeerJ
+    volume: "8"
+    pages: e7803
+    doi: 10.7717/peerj.7803
   - id: iczn2023
     authors: International Commission on Zoological Nomenclature
     year: 2023

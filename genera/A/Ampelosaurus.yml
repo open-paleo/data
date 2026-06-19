@@ -76,6 +76,22 @@ species:
         min: 8000
         max: 9980
     erected_in: leloeuff1995
+notable_specimens:
+  - nickname: "Eva"
+    institution: MDE
+    species: Ampelosaurus atacis
+    category: most-complete
+    significance: "Relatively complete, partially articulated young-adult skeleton with an almost complete disarticulated skull, taking several seasons to excavate. Helps make Ampelosaurus one of the best-known dinosaurs in France, though it remains undescribed."
+    discovered:
+      year: 2001
+      by: "Eva Morvan"
+    reference: souillat2002
+  - specimen_id: [MDE-C3-174]
+    institution: MDE
+    species: Ampelosaurus atacis
+    category: largest
+    significance: "Femur of the largest known individual, used to estimate the maximum body size of about 13.9 meters long for the genus."
+    reference: vila2022
 references:
   - id: leloeuff1995
     authors: Le Loeuff, J.
@@ -88,6 +104,26 @@ references:
     journal: Comptes Rendus de l'Académie des Sciences à Paris, Série IIa
     volume: "321"
     pages: 693-699
+  - id: souillat2002
+    authors: Souillat, C.; Le Loeuff, J.
+    year: 2002
+    title: Numéro Spécial 2002
+    journal: La Lettre de Dinosauria
+    pages: 1-23
+  - id: vila2022
+    authors: Vila, Bernat; Sellés, Albert; Moreno-Azanza, Miguel; Razzolini, Novella
+      L.; Gil-Delgado, Alejandro; Canudo, José Ignacio; Galobart, Àngel
+    year: 2022
+    title: A titanosaurian sauropod with Gondwanan affinities in the latest
+      Cretaceous of Europe
+    journal: Nature Ecology & Evolution
+    volume: "6"
+    issue: "3"
+    pages: 288-296
+    publisher: Springer Science and Business Media LLC
+    doi: 10.1038/s41559-021-01651-5
+    url: http://dx.doi.org/10.1038/s41559-021-01651-5
+    notes: Size outlined in the supplementary information to the paper.
   - id: jones2026b
     authors: Jones, Bryce; Viola, Egidio
     year: 2026

@@ -82,6 +82,25 @@ species:
         min: 1000.0
         max: 1000.0
     erected_in: brown1914a
+notable_specimens:
+  - specimen_id: [NMC 8547]
+    institution: CMN
+    species: Anchiceratops ornatus
+    category: most-complete
+    significance: "Lacks most of the skull but is otherwise the most complete skeleton known from any ceratopsid, preserving the spinal column to the last tail vertebra. Displayed as a half-mount with a cast skull; the traditional basis for the genus's postcranial anatomy."
+    discovered:
+      year: 1925
+      by: "Charles M. Sternberg"
+    reference: dodson1996
+  - specimen_id: [NMC 8535]
+    institution: CMN
+    species: Anchiceratops ornatus
+    category: complementary
+    significance: "A complete skull, originally named as the species A. longirostris, now widely regarded as a junior synonym of A. ornatus. Its cast supplies the skull for the NMC 8547 mount."
+    discovered:
+      year: 1924
+      by: "Charles M. Sternberg"
+    reference: sternberg1929b
 references:
   - id: brown1914a
     authors: Brown, B.
@@ -93,6 +112,21 @@ references:
     volume: "33"
     issue: "33"
     pages: 539-548
+  - id: sternberg1929b
+    authors: Sternberg, C. M.
+    year: 1929
+    title: A new species of horned dinosaur from the Upper Cretaceous of Alberta
+    journal: National Museum of Canada Bulletin
+    volume: "54"
+    pages: 34-37
+  - id: dodson1996
+    authors: Dodson, P.
+    year: 1996
+    title: The Horned Dinosaurs
+    book: The Horned Dinosaurs
+    publisher: Princeton University Press
+    notes: Sternberg never formally described NMC 8547; Dodson gives a brief
+      description of it here.
   - id: jones2026a
     authors: Jones, Bryce; Viola, Egidio
     year: 2026
