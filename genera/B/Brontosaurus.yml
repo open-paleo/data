@@ -89,6 +89,21 @@ species:
         min: 14000
         max: 20000
     erected_in: marsh1879
+notable_specimens:
+  - specimen_id: [UW 15556]
+    institution: UW
+    category: most-complete
+    significance: "A very well-preserved adult postcranial skeleton bearing many cervical and caudal vertebrae; the most complete definite specimen of the species. Found intermingled with a juvenile skeleton (CM 566) during a Carnegie Museum expedition."
+    discovered:
+      year: 1901
+      by: "William Harlow Reed"
+    reference: tschopp2015
+  - specimen_id: [AMNH 460]
+    institution: AMNH
+    species: Brontosaurus excelsus
+    category: historic
+    significance: "Principal specimen of the first-ever mounted sauropod skeleton, unveiled by the AMNH in 1905 as Brontosaurus excelsus, a composite incorporating bones from AMNH 592, 222, and 339 plus a sculpted conjectural skull."
+    reference: norell1995
 references:
   - id: marsh1879
     authors: Marsh, O. C.
@@ -101,6 +116,24 @@ references:
     publisher: American Journal of Science (AJS)
     doi: 10.2475/ajs.s3-18.108.501
     url: http://dx.doi.org/10.2475/ajs.s3-18.108.501
+  - id: norell1995
+    authors: Norell, M. A.; Gaffney, E. S.; Dingus, L.
+    year: 1995
+    title: Discovering Dinosaurs in the American Museum of Natural History
+    publisher: Alfred A. Knopf
+  - id: tschopp2015
+    authors: Tschopp, E.; Mateus, O.; Benson, R. B. J.
+    year: 2015
+    title: A specimen-level phylogenetic analysis and taxonomic revision of
+      Diplodocidae (Dinosauria, Sauropoda)
+    journal: PeerJ
+    volume: "3"
+    pages: e857
+    publisher: PeerJ
+    doi: 10.7717/peerj.857
+    url: http://dx.doi.org/10.7717/peerj.857
+    notes: Specimen-level revision that resurrected Brontosaurus as a genus
+      distinct from Apatosaurus.
   - id: jones2026b
     authors: Jones, Bryce; Viola, Egidio
     year: 2026

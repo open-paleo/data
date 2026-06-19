@@ -77,6 +77,25 @@ species:
       institution: YPM
       material: Caudal vertebrae.
       completeness: fragmentary
+notable_specimens:
+  - specimen_id: [AMNH 6341]
+    institution: AMNH
+    species: Barosaurus lentus
+    category: most-complete
+    significance: "The most complete specimen of Barosaurus lentus, excavated from the Carnegie Quarry in 1923. A cast of it was controversially mounted in the American Museum lobby, rearing up to defend its young from an attacking Allosaurus."
+    discovered:
+      year: 1923
+      by: "Earl Douglass"
+    reference: mcintosh2005
+  - nickname: "Gordo"
+    specimen_id: [ROM 3670]
+    institution: ROM
+    species: Barosaurus lentus
+    category: iconic
+    significance: "Nicknamed \"Gordo\"; excavated by Douglass at the Carnegie Quarry and unrecognized in ROM storage for 45 years until rediscovered in 2007 by David Evans. About 40% complete, it is at nearly 27.5 meters the largest dinosaur ever mounted in Canada."
+    discovered:
+      by: "Earl Douglass"
+    reference: rom2007
 references:
   - id: marsh1890b
     authors: Marsh, O. C.
@@ -89,6 +108,20 @@ references:
     publisher: American Journal of Science (AJS)
     doi: 10.2475/ajs.s3-39.229.81
     url: http://dx.doi.org/10.2475/ajs.s3-39.229.81
+  - id: mcintosh2005
+    authors: McIntosh, J. S.
+    year: 2005
+    title: The genus Barosaurus (Marsh)
+    book: "Thunder Lizards: The Sauropodomorph Dinosaurs"
+    publisher: Indiana University Press
+    pages: 38-77
+  - id: rom2007
+    authors: Royal Ontario Museum
+    year: 2007
+    title: Massive Barosaurus skeleton discovered at the ROM
+    publisher: Royal Ontario Museum
+    url: https://www.rom.on.ca/news-releases/massive-barosaurus-skeleton-discovered-rom
+    notes: Press release.
   - id: jones2026b
     authors: Jones, Bryce; Viola, Egidio
     year: 2026

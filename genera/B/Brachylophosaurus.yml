@@ -87,6 +87,39 @@ species:
         min: 7000
         max: 7000
     erected_in: sternberg1953
+notable_specimens:
+  - nickname: "Elvis"
+    specimen_id: [MOR 794]
+    institution: MOR
+    species: Brachylophosaurus canadensis
+    category: most-complete
+    significance: "Articulated skeleton and skull preserved in three dimensions without flattening, missing only the very tip of the tail, making it about 95% complete. Its completeness enabled Prieto-Marquez's 2005 redescription of the genus. On display at the Phillips County Museum."
+    discovered:
+      year: 1994
+      by: "Nate Murphy"
+    reference: prieto-márquez2005
+  - specimen_id: [FMNH PR 862]
+    institution: FMNH
+    category: historic
+    significance: "Disarticulated crested-hadrosaur skull collected September 9, 1922 on the Field Museum's Red Deer River expedition under Elmer S. Riggs. Recognized in field notes as an entirely new type of crested hadrosaur, it was later referred to Brachylophosaurus, predating the genus's naming."
+    discovered:
+      year: 1922
+      by: "George Fryer Sternberg"
+    reference: brinkman2013
+  - specimen_id: [TMP 1990.104.1]
+    institution: TMP
+    category: gut-contents
+    significance: "Well-preserved southern Alberta specimen from near Manyberries and Onefour, preserving the front half of a skeleton and a complete skull. Remains largely undescribed apart from comparison of its stomach contents and skeleton to the holotype."
+    reference: cuthbertson2010
+  - nickname: "Leonardo"
+    specimen_id: [JRF 115]
+    institution: GPDM
+    species: Brachylophosaurus canadensis
+    category: exceptional-preservation
+    significance: "Mummified specimen with about 90% of its cast surface covered by skin impressions, recognized by Guinness World Records as the Best Preserved Dinosaur. Preserves polygonal scales, a dorsal row of triangular feature scales, stomach contents, and needle-like parasitic worms."
+    discovered:
+      year: 2000
+    reference: murphy2006
 references:
   - id: sternberg1953
     authors: Sternberg, C. M.
@@ -96,6 +129,46 @@ references:
     journal: National Museum of Canada Bulletin
     volume: "128"
     pages: 275-286
+  - id: prieto-márquez2005
+    authors: Prieto-Márquez, Alberto
+    year: 2005
+    title: New information on the cranium of Brachylophosaurus, with a revision of
+      its phylogenetic position
+    journal: Journal of Vertebrate Paleontology
+    volume: "25"
+    issue: "1"
+    pages: 144-156
+    doi: "10.1671/0272-4634(2005)025[0144:NIOTCO]2.0.CO;2"
+  - id: murphy2006
+    authors: Murphy, N. L.; Trexler, D.; Thompson, M.
+    year: 2006
+    title: "\"Leonardo,\" a mummified Brachylophosaurus from the Judith River
+      Formation"
+    book: "Horns and Beaks: Ceratopsian and Ornithopod Dinosaurs"
+    publisher: Indiana University Press
+    pages: 117-133
+    isbn: 0-253-34817-X
+  - id: cuthbertson2010
+    authors: Cuthbertson, R. S.; Holmes, R. B.
+    year: 2010
+    title: "The first complete description of the holotype of Brachylophosaurus
+      canadensis Sternberg, 1953 (Dinosauria: Hadrosauridae) with comments on
+      intraspecific variation"
+    journal: Zoological Journal of the Linnean Society
+    volume: "159"
+    issue: "2"
+    pages: 373-397
+    doi: 10.1111/j.1096-3642.2009.00612.x
+  - id: brinkman2013
+    authors: Brinkman, P. D.
+    year: 2013
+    title: "Red Deer River Shakedown: A history of the Captain Marshall Field
+      Paleontological Expedition to Alberta, 1922, and its aftermath"
+    journal: Earth Sciences History
+    volume: "32"
+    issue: "2"
+    pages: 204-234
+    doi: 10.17704/eshi.32.2.n450m52t2964730k
   - id: paul2024a
     authors: Paul, Gregory S.
     year: 2024

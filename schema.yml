@@ -59,8 +59,11 @@ specimen_categories:
   # THE most complete known specimen of the taxon (a superlative claim, not
   # merely "fairly complete" or "more complete than the holotype").
   - most-complete
-  # The largest known individual of the taxon.
-  - largest
+  # The specimen representing the largest known INDIVIDUAL of the taxon —
+  # acceptable from a single diagnostic element only if it securely establishes
+  # the taxon's maximum size. NOT a large isolated bone for its own sake, a
+  # questioned referral, or a sub-adult whose real significance is ontogenetic.
+  - largest-individual
   # Soft tissue, skin, feathers, articulation, or otherwise extraordinary
   # preservation quality.
   - exceptional-preservation

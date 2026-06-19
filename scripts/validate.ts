@@ -685,13 +685,10 @@ function validateReferences(filePath: string, doc: GenusData | CladeData): void
             }
         }
 
-        if (!reference.journal && !reference.book)
-        {
-            checkError(
-                "Reference completeness",
-                filePath,
-                `reference '${reference.id ?? "?"}': must have at least one of 'journal' or 'book'`);
-        }
+        // journal/book are optional: an article carries `journal`, a chapter
+        // carries `book` (its containing volume), and a standalone book,
+        // monograph, thesis, or press release carries neither — its venue is
+        // recorded via `publisher` (and `url`/`notes` where applicable).
     }
 }
 
