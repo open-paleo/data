@@ -102,6 +102,39 @@ species:
         min: 4000
         max: 15900
     erected_in: lambe1917
+notable_specimens:
+  - nickname: AMNH mummy
+    specimen_id: [AMNH 5060]
+    institution: AMNH
+    category: exceptional-preservation
+    significance: "The \"mummified\" Trachodon mummy, with extensive preserved skin impressions known for most of the body. Carbonized possible gut contents were reported but never described. Found in 1908 in the Lance Formation near Lusk, Wyoming, and purchased by the museum for $2,000."
+    discovered:
+      year: 1908
+      by: "Charles Hazelius Sternberg and his sons"
+    references: [sereno2025, sternberg1909]
+  - nickname: Senckenberg mummy
+    specimen_id: [SM 4036]
+    institution: SMF-DE
+    category: gut-contents
+    significance: "Second Sternberg mummy, with skin impressions and described plant gut contents (needles of the conifer Cunninghamites elegans, twigs, and seeds), debated as a true last meal versus washed-in debris. Also preserves rare scleral rings and substantial keratinous beak."
+    discovered:
+      year: 1910
+      by: "Charles Hazelius Sternberg and his sons"
+    references: [sereno2025, krausel1922, uhl2020]
+  - nickname: Dakota
+    specimen_id: [MRF-03, NDGS 2000]
+    institution: NDGS
+    category: exceptional-preservation
+    significance: "A well-publicized \"mummy\" with preserved skin impressions apparently including remnant organic compounds from the skin. Discovered in 1999 in the Hell Creek Formation of North Dakota and announced in 2007."
+    discovered:
+      year: 1999
+      by: "Tyler Lyson"
+    references: [manning2009]
+  - specimen_id: [LACM 23502]
+    institution: CRE
+    category: exceptional-preservation
+    significance: "Preserves a rhamphotheca, indicating the beak of Edmontosaurus was more hook-shaped and extensive than many scientific and public illustrations have depicted; whether it is the true rhamphotheca or a cast of the inner structure is uncertain."
+    references: [morris1970]
 references:
   - id: lambe1917
     authors: Lambe, L. M.
@@ -120,3 +153,65 @@ references:
     publisher: Princeton University Press
     isbn: 978-0-691-25025-0
     notes: Source of the hip height estimate, and the appearance features.
+  - id: sereno2025
+    authors: Sereno, Paul C.; Saitta, Evan T.; Vidal, Daniel; Myhrvold,
+      Nathan; Ciudad Real, María; Baumgart, Stephanie L.; Bop, Lauren L.;
+      Keillor, Tyler M.; Eriksen, Marcus; Derstler, Kraig
+    year: 2025
+    title: 'Duck-billed dinosaur fleshy midline and hooves reveal terrestrial
+      clay-template "mummification"'
+    journal: Science
+    volume: "391"
+    issue: "6780"
+    pages: eadw3536
+    doi: 10.1126/science.adw3536
+  - id: sternberg1909
+    authors: Sternberg, Charles H.
+    year: 1909
+    title: Expedition to the Laramie Beds of Converse County, Wyoming
+    journal: Transactions of the Kansas Academy of Science
+    volume: "22"
+    pages: 113-116
+    doi: 10.2307/3624729
+  - id: krausel1922
+    authors: Kräusel, Richard
+    year: 1922
+    title: Die Nahrung von Trachodon
+    journal: Paläontologische Zeitschrift
+    volume: "4"
+    pages: "80"
+    doi: 10.1007/BF03041547
+    notes: Title translates as "The diet of Trachodon"; in German.
+  - id: uhl2020
+    authors: Uhl, Dieter
+    year: 2020
+    title: "A reappraisal of the 'stomach' contents of the Edmontosaurus
+      annectens mummy at the Senckenberg Naturmuseum in Frankfurt/Main
+      (Germany)"
+    journal: Zeitschrift der Deutschen Gesellschaft für Geowissenschaften
+    volume: "171"
+    issue: "1"
+    pages: 71-85
+    doi: 10.1127/zdgg/2020/0224
+  - id: manning2009
+    authors: Manning, Phillip L.; Morris, Peter M.; McMahon, Adam; Jones,
+      Emrys; Gize, Andy; Macquaker, Joe H. S.; Wolff, G.; Thompson, Anu;
+      Marshall, Jim; Taylor, Kevin G.; Lyson, Tyler; Gaskell, Simon;
+      Reamtong, Onrapak; Sellers, William I.; van Dongen, Bart E.; Buckley,
+      Mike; Wogelius, Roy A.
+    year: 2009
+    title: "Mineralized soft-tissue structure and chemistry in a mummified
+      hadrosaur from the Hell Creek Formation, North Dakota (USA)"
+    journal: Proceedings of the Royal Society B
+    volume: "276"
+    issue: "1672"
+    pages: 3429-3437
+    doi: 10.1098/rspb.2009.0812
+  - id: morris1970
+    authors: Morris, William J.
+    year: 1970
+    title: Hadrosaurian dinosaur bills — morphology and function
+    journal: Contributions in Science
+    volume: "193"
+    pages: 1-14
+    publisher: Natural History Museum of Los Angeles County
