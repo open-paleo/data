@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-06-20T19:08:32.915Z",
+    "built_at": "2026-06-20T20:51:21.905Z",
     "clade_count": 250,
     "genus_count": 1398,
     "license": "CC-BY-4.0",
@@ -63331,6 +63331,71 @@
           "described": 1917
         }
       ],
+      "notable_specimens": [
+        {
+          "nickname": "AMNH mummy",
+          "specimen_id": [
+            "AMNH 5060"
+          ],
+          "institution": "American Museum of Natural History",
+          "category": "exceptional-preservation",
+          "significance": "The \"mummified\" Trachodon mummy, with extensive preserved skin impressions known for most of the body. Carbonized possible gut contents were reported but never described. Found in 1908 in the Lance Formation near Lusk, Wyoming, and purchased by the museum for $2,000.",
+          "discovered": {
+            "year": 1908,
+            "by": "Charles Hazelius Sternberg and his sons"
+          },
+          "references": [
+            "sereno2025",
+            "sternberg1909"
+          ]
+        },
+        {
+          "nickname": "Senckenberg mummy",
+          "specimen_id": [
+            "SM 4036"
+          ],
+          "institution": "Senckenberg Naturmuseum",
+          "category": "gut-contents",
+          "significance": "Second Sternberg mummy, with skin impressions and described plant gut contents (needles of the conifer Cunninghamites elegans, twigs, and seeds), debated as a true last meal versus washed-in debris. Also preserves rare scleral rings and substantial keratinous beak.",
+          "discovered": {
+            "year": 1910,
+            "by": "Charles Hazelius Sternberg and his sons"
+          },
+          "references": [
+            "sereno2025",
+            "krausel1922",
+            "uhl2020"
+          ]
+        },
+        {
+          "nickname": "Dakota",
+          "specimen_id": [
+            "MRF-03",
+            "NDGS 2000"
+          ],
+          "institution": "North Dakota Geological Survey",
+          "category": "exceptional-preservation",
+          "significance": "A well-publicized \"mummy\" with preserved skin impressions apparently including remnant organic compounds from the skin. Discovered in 1999 in the Hell Creek Formation of North Dakota and announced in 2007.",
+          "discovered": {
+            "year": 1999,
+            "by": "Tyler Lyson"
+          },
+          "references": [
+            "manning2009"
+          ]
+        },
+        {
+          "specimen_id": [
+            "LACM 23502"
+          ],
+          "institution": "Natural History Museum of Los Angeles County",
+          "category": "exceptional-preservation",
+          "significance": "Preserves a rhamphotheca, indicating the beak of Edmontosaurus was more hook-shaped and extensive than many scientific and public illustrations have depicted; whether it is the true rhamphotheca or a cast of the inner structure is uncertain.",
+          "references": [
+            "morris1970"
+          ]
+        }
+      ],
       "references": [
         {
           "id": "lambe1917",
@@ -63351,6 +63416,70 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25025-0",
           "notes": "Source of the hip height estimate, and the appearance features."
+        },
+        {
+          "id": "sereno2025",
+          "authors": "Sereno, Paul C.; Saitta, Evan T.; Vidal, Daniel; Myhrvold, Nathan; Ciudad Real, María; Baumgart, Stephanie L.; Bop, Lauren L.; Keillor, Tyler M.; Eriksen, Marcus; Derstler, Kraig",
+          "year": 2025,
+          "title": "Duck-billed dinosaur fleshy midline and hooves reveal terrestrial clay-template \"mummification\"",
+          "journal": "Science",
+          "volume": "391",
+          "issue": "6780",
+          "pages": "eadw3536",
+          "doi": "10.1126/science.adw3536"
+        },
+        {
+          "id": "sternberg1909",
+          "authors": "Sternberg, Charles H.",
+          "year": 1909,
+          "title": "Expedition to the Laramie Beds of Converse County, Wyoming",
+          "journal": "Transactions of the Kansas Academy of Science",
+          "volume": "22",
+          "pages": "113-116",
+          "doi": "10.2307/3624729"
+        },
+        {
+          "id": "krausel1922",
+          "authors": "Kräusel, Richard",
+          "year": 1922,
+          "title": "Die Nahrung von Trachodon",
+          "journal": "Paläontologische Zeitschrift",
+          "volume": "4",
+          "pages": "80",
+          "doi": "10.1007/BF03041547",
+          "notes": "Title translates as \"The diet of Trachodon\"; in German."
+        },
+        {
+          "id": "uhl2020",
+          "authors": "Uhl, Dieter",
+          "year": 2020,
+          "title": "A reappraisal of the 'stomach' contents of the Edmontosaurus annectens mummy at the Senckenberg Naturmuseum in Frankfurt/Main (Germany)",
+          "journal": "Zeitschrift der Deutschen Gesellschaft für Geowissenschaften",
+          "volume": "171",
+          "issue": "1",
+          "pages": "71-85",
+          "doi": "10.1127/zdgg/2020/0224"
+        },
+        {
+          "id": "manning2009",
+          "authors": "Manning, Phillip L.; Morris, Peter M.; McMahon, Adam; Jones, Emrys; Gize, Andy; Macquaker, Joe H. S.; Wolff, G.; Thompson, Anu; Marshall, Jim; Taylor, Kevin G.; Lyson, Tyler; Gaskell, Simon; Reamtong, Onrapak; Sellers, William I.; van Dongen, Bart E.; Buckley, Mike; Wogelius, Roy A.",
+          "year": 2009,
+          "title": "Mineralized soft-tissue structure and chemistry in a mummified hadrosaur from the Hell Creek Formation, North Dakota (USA)",
+          "journal": "Proceedings of the Royal Society B",
+          "volume": "276",
+          "issue": "1672",
+          "pages": "3429-3437",
+          "doi": "10.1098/rspb.2009.0812"
+        },
+        {
+          "id": "morris1970",
+          "authors": "Morris, William J.",
+          "year": 1970,
+          "title": "Hadrosaurian dinosaur bills — morphology and function",
+          "journal": "Contributions in Science",
+          "volume": "193",
+          "pages": "1-14",
+          "publisher": "Natural History Museum of Los Angeles County"
         }
       ],
       "taxonomy": [
@@ -67105,6 +67234,20 @@
           "described": 1990
         }
       ],
+      "notable_specimens": [
+        {
+          "specimen_id": [
+            "UNPSJB-PV 920"
+          ],
+          "institution": "Universidad Nacional de la Patagonia San Juan Bosco",
+          "species": "Epachthosaurus sciuttoi",
+          "category": "most-complete",
+          "significance": "A nearly complete, well-preserved, articulated referred skeleton and one of the most complete titanosaurian skeletons known, missing only the skull, neck, four or five cranial dorsal vertebrae, and several distal caudals.",
+          "references": [
+            "martinez2004"
+          ]
+        }
+      ],
       "references": [
         {
           "id": "powell1990",
@@ -67124,6 +67267,17 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25023-6",
           "notes": "Source of the body length, mass, and hip height estimates."
+        },
+        {
+          "id": "martinez2004",
+          "authors": "Martínez, R. D.; Giménez, O.; Rodríguez, J.; Luna, M.; Lamanna, M. C.",
+          "year": 2004,
+          "title": "An articulated specimen of the basal titanosaurian (Dinosauria: Sauropoda) Epachthosaurus sciuttoi from the early Late Cretaceous Bajo Barreal Formation of Chubut Province, Argentina",
+          "journal": "Journal of Vertebrate Paleontology",
+          "volume": "24",
+          "issue": "1",
+          "pages": "107-120",
+          "doi": "10.1671/9.1"
         }
       ],
       "taxonomy": [
@@ -68822,6 +68976,26 @@
           "described": 1956
         }
       ],
+      "notable_specimens": [
+        {
+          "nickname": "Exemplar b",
+          "specimen_id": [
+            "PMU 24706"
+          ],
+          "institution": "Paleontological Museum",
+          "species": "Euhelopus zdanskyi",
+          "category": "complementary",
+          "significance": "Referred second skeleton, of an individual about as large as the holotype, preserving anatomy absent in the type: nine articulated dorsal vertebrae and sacrum, two dorsal ribs, a nearly complete pelvis, and a right hindlimb.",
+          "discovered": {
+            "year": 1923,
+            "by": "Otto Zdansky"
+          },
+          "references": [
+            "wiman1929",
+            "wilson2009"
+          ]
+        }
+      ],
       "references": [
         {
           "id": "wiman1929",
@@ -69004,6 +69178,32 @@
           "described": 1910
         }
       ],
+      "notable_specimens": [
+        {
+          "specimen_id": [
+            "AMNH 5403"
+          ],
+          "institution": "American Museum of Natural History",
+          "species": "Euoplocephalus tutus",
+          "category": "largest-individual",
+          "significance": "Bears the largest known skull of Euoplocephalus, 411 millimeters long and 478 millimeters wide.",
+          "references": [
+            "vickaryous2003"
+          ]
+        },
+        {
+          "specimen_id": [
+            "ROM 1930"
+          ],
+          "institution": "Royal Ontario Museum",
+          "species": "Euoplocephalus tutus",
+          "category": "complementary",
+          "significance": "The most informative specimen for armor configuration of the certain Euoplocephalus material, preserving some torso osteoderms in their original position, including osteoderms with a base length of fifteen centimeters.",
+          "references": [
+            "arbour2013"
+          ]
+        }
+      ],
       "references": [
         {
           "id": "lambe1910",
@@ -69048,6 +69248,17 @@
           "book": "The Princeton Field Guide to Dinosaurs (3rd ed.)",
           "publisher": "Princeton University Press",
           "notes": "Source of the appearance features."
+        },
+        {
+          "id": "vickaryous2003",
+          "authors": "Vickaryous, M. K.; Russell, A. P.",
+          "year": 2003,
+          "title": "A redescription of the skull of Euoplocephalus tutus (Archosauria: Ornithischia): a foundation for comparative and systematic studies of ankylosaurian dinosaurs",
+          "journal": "Zoological Journal of the Linnean Society",
+          "volume": "137",
+          "issue": "1",
+          "pages": "157-186",
+          "doi": "10.1046/j.1096-3642.2003.00045.x"
         }
       ],
       "taxonomy": [
@@ -69270,6 +69481,32 @@
           "erected_in": "sander2006",
           "authors": "Sander, P. M.; Mateus, O.; T. Laven, N. Knótschke",
           "described": 2006
+        }
+      ],
+      "notable_specimens": [
+        {
+          "specimen_id": [
+            "DFMMh/FV 415"
+          ],
+          "institution": "Dinosaurier-Freilichtmuseum",
+          "species": "Europasaurus holgeri",
+          "category": "largest-individual",
+          "significance": "A partial femur representing the largest known Europasaurus individual at a body length of 6.2 meters. Uniquely among the specimens it shows lines of arrested growth and partly lamellar internal bone, indicating it died after reaching full adult body size and securing the dwarf taxon's maximum size.",
+          "references": [
+            "sander2006"
+          ]
+        },
+        {
+          "specimen_id": [
+            "DFMMh/FV 009"
+          ],
+          "institution": "Dinosaurier-Freilichtmuseum",
+          "species": "Europasaurus holgeri",
+          "category": "ontogeny",
+          "significance": "The youngest and smallest known individual at 1.75 meters long. It lacks growth marks and laminar bone tissue, identifying it as a young juvenile and anchoring the histological growth series used to show Europasaurus was a true dwarf rather than a juvenile of a larger taxon.",
+          "references": [
+            "sander2006"
+          ]
         }
       ],
       "references": [
@@ -128493,7 +128730,7 @@
               "SMF 09-2"
             ],
             "specimen_type": "holotype",
-            "institution": "Sauriermuseum Frick, Frick",
+            "institution": "Sauriermuseum Frick",
             "material": "Partial postcranial skeleton and cranium of a juvenile to subadult individual.",
             "completeness": "partial"
           },
