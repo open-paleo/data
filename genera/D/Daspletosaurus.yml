@@ -91,6 +91,32 @@ species:
         min: 1.0
         max: 1.0
     erected_in: russell1970
+notable_specimens:
+  - nickname: Pete III
+    specimen_id: [CMC VP 15826]
+    institution: CMC-US
+    category: largest-individual
+    significance: "Largest known specimen of Daspletosaurus, suggesting the genus could reach lengths of over 9 meters; its description identified new anatomical features previously unknown from the genus and may represent an unnamed species."
+    references: [warnercowgill2025]
+  - specimen_id: [OTM 200]
+    institution: OTM
+    category: gut-contents
+    significance: "Two Medicine Formation specimen preserving the digested remains of a juvenile hadrosaur in its gut region, providing direct evidence that Daspletosaurus fed on hadrosaurs."
+    references: [varricchio2001]
+  - specimen_id: [TMP 85.62.1]
+    institution: TMP
+    category: pathology
+    significance: "A full-grown Dinosaur Park Daspletosaurus exhibiting tyrannosaur bite marks on its skull, cited as evidence of intraspecific facial biting in the genus."
+    references: [tanke1998]
+  - specimen_id: [FMNH PR308]
+    institution: FMNH
+    species: Daspletosaurus torosus
+    category: historic
+    significance: "Nearly complete skeleton and skull collected by Barnum Brown, mounted for display in Chicago and labeled Albertosaurus libratus for many years before being reassigned to Daspletosaurus torosus."
+    discovered:
+      year: 1914
+      by: "Barnum Brown"
+    references: [carr1999]
 references:
   - id: russell1970
     authors: Russell, Dale A.
@@ -108,3 +134,43 @@ references:
     book: "The Princeton Field Guide to Dinosaurs (3rd ed.)"
     publisher: Princeton University Press
     notes: Source of the appearance features.
+  - id: warnercowgill2025
+    authors: Warner-Cowgill, E.; Storrs, G. W.; Rogers, R. R.; Maltese, A. E.
+    year: 2025
+    title: "Cranial anatomy and stratigraphy of a new specimen of the
+      tyrannosaurine dinosaur Daspletosaurus from the Judith River Formation
+      of Central Montana, USA"
+    journal: Acta Palaeontologica Polonica
+    volume: "70"
+    issue: "1"
+    pages: 159-174
+    doi: 10.4202/app.01143.2024
+  - id: varricchio2001
+    authors: Varricchio, David J.
+    year: 2001
+    title: "Gut contents from a Cretaceous tyrannosaurid: implications for
+      theropod dinosaur digestive tracts"
+    journal: Journal of Paleontology
+    volume: "75"
+    issue: "2"
+    pages: 401-406
+    doi: "10.1666/0022-3360(2001)075<0401:GCFACT>2.0.CO;2"
+  - id: tanke1998
+    authors: Tanke, Darren H.; Currie, Philip J.
+    year: 1998
+    title: "Head-biting behavior in theropod dinosaurs: paleopathological
+      evidence"
+    journal: Gaia
+    volume: "15"
+    pages: 167-184
+    notes: Issue dated 1998 but not printed until 2000.
+  - id: carr1999
+    authors: Carr, Thomas D.
+    year: 1999
+    title: "Craniofacial ontogeny in Tyrannosauridae (Dinosauria,
+      Coelurosauria)"
+    journal: Journal of Vertebrate Paleontology
+    volume: "19"
+    issue: "3"
+    pages: 497-520
+    doi: 10.1080/02724634.1999.10011161

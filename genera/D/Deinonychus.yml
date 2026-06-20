@@ -99,6 +99,25 @@ species:
         min: 0.4
         max: 0.4
     erected_in: ostrom1969
+notable_specimens:
+  - specimen_id: [AMNH 3015]
+    institution: AMNH
+    species: Deinonychus antirrhopus
+    category: reproductive
+    significance: "The original and most complete Deinonychus specimen, found in 1931 near Billings, Montana. Fossilized eggshells in its matrix, in close contact with the gastralia, were identified as the first dromaeosaurid egg, suggesting the animal brooded its eggs."
+    discovered:
+      year: 1931
+      by: "Barnum Brown"
+    references: [makovicky2000]
+  - specimen_id: [MCZ 4371]
+    institution: MCZ
+    species: Deinonychus antirrhopus
+    category: complementary
+    significance: "A referred skeleton excavated in Montana in 1974, preserving well-preserved femora, pubes, a sacrum, better ilia, and pes and metatarsus elements that were missing or poorly known from earlier material, prompting Ostrom to revise his skeletal restoration of Deinonychus."
+    discovered:
+      year: 1974
+      by: "Steven Orzack"
+    references: [ostrom1976]
 references:
   - id: ostrom1969
     authors: Ostrom, J. H.
@@ -115,3 +134,19 @@ references:
     publisher: Princeton University Press
     isbn: 978-0-691-25021-2
     notes: Source of the appearance features.
+  - id: makovicky2000
+    authors: Makovicky, P. J.; Grellet-Tinner, G.
+    year: 2000
+    title: "Association between a specimen of Deinonychus antirrhopus and
+      theropod eggshell"
+    book: "First international symposium on dinosaur eggs and babies, Isona
+      i Conca Dellà, Catalonia, Spain, 23-26 September 1999"
+    pages: 123-128
+  - id: ostrom1976
+    authors: Ostrom, J. H.
+    year: 1976
+    title: "On a new specimen of the Lower Cretaceous theropod dinosaur
+      Deinonychus antirrhopus"
+    journal: Breviora
+    volume: "439"
+    pages: 1-21
