@@ -75,6 +75,19 @@ species:
         min: 20
         max: 20
     erected_in: huxley1870
+notable_specimens:
+  - specimen_id: [NHMUK PV R 5829]
+    institution: BMNH
+    species: Hypsilophodon foxii
+    category: largest-individual
+    significance: "The skeleton of a large animal and the largest known specimen, with a femur length of 202 millimeters; it anchors the genus's revised maximum known length of about 1.8 meters after a larger femur was reattributed to Valdosaurus."
+    references: [galton1974, galton2009]
+  - specimen_id: [NHMUK PV R 5830, NHMUK PV R 196, NHMUK PV R 196a]
+    institution: BMNH
+    species: Hypsilophodon foxii
+    category: ontogeny
+    significance: "Among the most significant specimens of the genus, these are skeletons of juvenile animals, documenting growth stages of the taxon."
+    references: [galton1974]
 references:
   - id: huxley1870
     authors: Huxley, T. H.
@@ -96,3 +109,21 @@ references:
     publisher: Princeton University Press
     isbn: 978-0-691-25025-0
     notes: Source of the hip height estimate, and the appearance features.
+  - id: galton1974
+    authors: Galton, P. M.
+    year: 1974
+    title: "The ornithischian dinosaur Hypsilophodon from the Wealden of the
+      Isle of Wight"
+    journal: Bulletin of the British Museum (Natural History), Geology
+    volume: "25"
+    pages: 1-152
+  - id: galton2009
+    authors: Galton, P. M.
+    year: 2009
+    title: Notes on Neocomian (Lower Cretaceous) ornithopod dinosaurs from
+      England - Hypsilophodon, Valdosaurus, "Camptosaurus", "Iguanodon" - and
+      referred specimens from Romania and elsewhere
+    journal: Revue de Paléobiologie, Genève
+    volume: "28"
+    issue: "1"
+    pages: 211-273
