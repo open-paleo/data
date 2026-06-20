@@ -1452,12 +1452,28 @@ for (const [filePath, doc] of genusParsed)
                 `notable_specimens '${label}': species '${specimen.species}' does not match any species name in this genus`);
         }
 
-        if (specimen.reference && !referenceIds.has(specimen.reference))
+        if (specimen.references !== undefined)
         {
-            checkError(
-                "Notable specimens",
-                filePath,
-                `notable_specimens '${label}': reference '${specimen.reference}' does not match any reference id`);
+            if (!Array.isArray(specimen.references))
+            {
+                checkError(
+                    "Notable specimens",
+                    filePath,
+                    `notable_specimens '${label}': references must be a list of reference ids`);
+            }
+            else
+            {
+                for (const referenceId of specimen.references)
+                {
+                    if (!referenceIds.has(referenceId))
+                    {
+                        checkError(
+                            "Notable specimens",
+                            filePath,
+                            `notable_specimens '${label}': reference '${referenceId}' does not match any reference id`);
+                    }
+                }
+            }
         }
 
         if (typeof specimen.significance !== "string" || specimen.significance.trim().length === 0)
@@ -1576,15 +1592,12 @@ for (const [filePath, doc] of genusParsed)
             }
         }
     }
-    else if (doc.paleoenvironment && typeof doc.paleoenvironment === "string")
+    else if (doc.paleoenvironment !== undefined)
     {
-        if (!allowedPaleoenvironments.has(doc.paleoenvironment))
-        {
-            checkError(
-                "Paleoenvironment compliance",
-                filePath,
-                `invalid paleoenvironment '${doc.paleoenvironment}' (must be one of: ${[...allowedPaleoenvironments].join(", ")})`);
-        }
+        checkError(
+            "Paleoenvironment compliance",
+            filePath,
+            "paleoenvironment must be a list of values");
     }
 }
 

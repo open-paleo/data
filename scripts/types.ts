@@ -165,10 +165,12 @@ export type NotableSpecimen = {
     };
 
     /**
-     * Reference ID (in this file's `references`) of the paper describing or
-     * referring the specimen. A pointer only.
+     * Reference IDs (in this file's `references`) of the paper(s) describing or
+     * referring the specimen. Pointers only. A specimen may be documented by
+     * more than one paper (e.g. one describing the skeleton, another a notable
+     * feature).
      */
-    reference?: string;
+    references?: Array<string>;
 };
 
 /**
@@ -347,7 +349,7 @@ export type Species = {
      * reference — it must NOT appear in source YAML (enforced by the Species
      * authority validation check).
      */
-    authors?: string | Array<string>;
+    authors?: string;
 
     /**
      * Prose description of the species.
@@ -593,7 +595,7 @@ export type GenusData = {
     /**
      * Paleoenvironment(s) from the controlled vocabulary in schema.yml.
      */
-    paleoenvironment?: string | Array<string>;
+    paleoenvironment?: Array<string>;
 
     /**
      * External appearance and integument data.
