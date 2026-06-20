@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-06-20T04:32:20.042Z
+  built_at: 2026-06-20T19:08:32.915Z
   clade_count: 250
   genus_count: 1398
   license: CC-BY-4.0
@@ -42619,6 +42619,40 @@ genera:
         erected_in: russell1970
         authors: Russell, Dale A.
         described: 1970
+    notable_specimens:
+      - nickname: Pete III
+        specimen_id:
+          - CMC VP 15826
+        institution: Museum of Natural History and Science, Cincinnati Museum Center
+        category: largest-individual
+        significance: Largest known specimen of Daspletosaurus, suggesting the genus could reach lengths of over 9 meters; its description identified new anatomical features previously unknown from the genus and may represent an unnamed species.
+        references:
+          - warnercowgill2025
+      - specimen_id:
+          - OTM 200
+        institution: Old Trail Museum
+        category: gut-contents
+        significance: Two Medicine Formation specimen preserving the digested remains of a juvenile hadrosaur in its gut region, providing direct evidence that Daspletosaurus fed on hadrosaurs.
+        references:
+          - varricchio2001
+      - specimen_id:
+          - TMP 85.62.1
+        institution: Royal Tyrrell Museum of Paleontology
+        category: pathology
+        significance: A full-grown Dinosaur Park Daspletosaurus exhibiting tyrannosaur bite marks on its skull, cited as evidence of intraspecific facial biting in the genus.
+        references:
+          - tanke1998
+      - specimen_id:
+          - FMNH PR308
+        institution: Field Museum of Natural History
+        species: Daspletosaurus torosus
+        category: historic
+        significance: Nearly complete skeleton and skull collected by Barnum Brown, mounted for display in Chicago and labeled Albertosaurus libratus for many years before being reassigned to Daspletosaurus torosus.
+        discovered:
+          year: 1914
+          by: Barnum Brown
+        references:
+          - carr1999
     references:
       - id: russell1970
         authors: Russell, Dale A.
@@ -42636,6 +42670,41 @@ genera:
         book: The Princeton Field Guide to Dinosaurs (3rd ed.)
         publisher: Princeton University Press
         notes: Source of the appearance features.
+      - id: warnercowgill2025
+        authors: Warner-Cowgill, E.; Storrs, G. W.; Rogers, R. R.; Maltese, A. E.
+        year: 2025
+        title: Cranial anatomy and stratigraphy of a new specimen of the tyrannosaurine dinosaur Daspletosaurus from the Judith River Formation of Central Montana, USA
+        journal: Acta Palaeontologica Polonica
+        volume: "70"
+        issue: "1"
+        pages: 159-174
+        doi: 10.4202/app.01143.2024
+      - id: varricchio2001
+        authors: Varricchio, David J.
+        year: 2001
+        title: "Gut contents from a Cretaceous tyrannosaurid: implications for theropod dinosaur digestive tracts"
+        journal: Journal of Paleontology
+        volume: "75"
+        issue: "2"
+        pages: 401-406
+        doi: 10.1666/0022-3360(2001)075<0401:GCFACT>2.0.CO;2
+      - id: tanke1998
+        authors: Tanke, Darren H.; Currie, Philip J.
+        year: 1998
+        title: "Head-biting behavior in theropod dinosaurs: paleopathological evidence"
+        journal: Gaia
+        volume: "15"
+        pages: 167-184
+        notes: Issue dated 1998 but not printed until 2000.
+      - id: carr1999
+        authors: Carr, Thomas D.
+        year: 1999
+        title: Craniofacial ontogeny in Tyrannosauridae (Dinosauria, Coelurosauria)
+        journal: Journal of Vertebrate Paleontology
+        volume: "19"
+        issue: "3"
+        pages: 497-520
+        doi: 10.1080/02724634.1999.10011161
     taxonomy:
       - Life
       - Animalia
@@ -43332,6 +43401,27 @@ genera:
         erected_in: kielanjaworowska1969
         authors: Kielan-Jaworowska, Z.
         described: 1969
+    notable_specimens:
+      - specimen_id:
+          - MPC-D 100/127
+        institution: Paleontological Center, Mongolian Academy of Sciences
+        species: Deinocheirus mirificus
+        category: gut-contents
+        significance: Found at Bugiin Tsav, this near-complete specimen preserved more than 1,400 gastroliths among its ribs and gastralia, including fish vertebrae and scales that indicate omnivory. Reunited with poached, repatriated skull, hand, and feet, it yielded the first known Deinocheirus skull.
+        discovered:
+          year: 2009
+        references:
+          - lee2014
+      - specimen_id:
+          - MPC-D 100/128
+        institution: Paleontological Center, Mongolian Academy of Sciences
+        species: Deinocheirus mirificus
+        category: complementary
+        significance: A subadult, only 74 percent the size of the largest individual, collected at the Altan Ula IV locality. It fills most gaps left by specimen MPC-D 100/127, preserving nearly all dorsal and caudal vertebrae, the ilium, a partial ischium, and most of the left hindlimb.
+        discovered:
+          year: 2006
+        references:
+          - lee2014
     references:
       - id: kielanjaworowska1969
         authors: Kielan-Jaworowska, Z.
@@ -43349,6 +43439,15 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
         notes: Source of the appearance features.
+      - id: lee2014
+        authors: Lee, Y.-N.; Barsbold, R.; Currie, P. J.; Kobayashi, Y.; Lee, H.-J.; Godefroit, P.; Escuillié, F. O.; Chinzorig, T.
+        year: 2014
+        title: Resolving the long-standing enigmas of a giant ornithomimosaur Deinocheirus mirificus
+        journal: Nature
+        volume: "515"
+        issue: "7526"
+        pages: 257-260
+        doi: 10.1038/nature13874
     taxonomy:
       - Life
       - Animalia
@@ -43455,6 +43554,29 @@ genera:
         erected_in: ostrom1969
         authors: Ostrom, J. H.
         described: 1969
+    notable_specimens:
+      - specimen_id:
+          - AMNH 3015
+        institution: American Museum of Natural History
+        species: Deinonychus antirrhopus
+        category: reproductive
+        significance: The original and most complete Deinonychus specimen, found in 1931 near Billings, Montana. Fossilized eggshells in its matrix, in close contact with the gastralia, were identified as the first dromaeosaurid egg, suggesting the animal brooded its eggs.
+        discovered:
+          year: 1931
+          by: Barnum Brown
+        references:
+          - makovicky2000
+      - specimen_id:
+          - MCZ 4371
+        institution: Museum of Comparative Zoology, Harvard University
+        species: Deinonychus antirrhopus
+        category: complementary
+        significance: A referred skeleton excavated in Montana in 1974, preserving well-preserved femora, pubes, a sacrum, better ilia, and pes and metatarsus elements that were missing or poorly known from earlier material, prompting Ostrom to revise his skeletal restoration of Deinonychus.
+        discovered:
+          year: 1974
+          by: Steven Orzack
+        references:
+          - ostrom1976
     references:
       - id: ostrom1969
         authors: Ostrom, J. H.
@@ -43471,6 +43593,19 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
         notes: Source of the appearance features.
+      - id: makovicky2000
+        authors: Makovicky, P. J.; Grellet-Tinner, G.
+        year: 2000
+        title: Association between a specimen of Deinonychus antirrhopus and theropod eggshell
+        book: First international symposium on dinosaur eggs and babies, Isona i Conca Dellà, Catalonia, Spain, 23-26 September 1999
+        pages: 123-128
+      - id: ostrom1976
+        authors: Ostrom, J. H.
+        year: 1976
+        title: On a new specimen of the Lower Cretaceous theropod dinosaur Deinonychus antirrhopus
+        journal: Breviora
+        volume: "439"
+        pages: 1-21
     taxonomy:
       - Life
       - Animalia
@@ -43771,6 +43906,20 @@ genera:
         erected_in: bakker1988a
         authors: Bakker, R. T.
         described: 1988
+    notable_specimens:
+      - nickname: Tank
+        specimen_id:
+          - FPDM-V9673
+          - BHI 127327
+        institution: Fukui Prefectural Dinosaur Museum
+        category: complementary
+        significance: Referred partial nodosaurid skeleton nicknamed Tank from the Lance Formation of Niobrara County, Wyoming, comprising a fragmentary skull, parts of the postcranial skeleton, and 75 osteoderms, preserving postcranial anatomy absent in the skull-and-armor-only holotype.
+        discovered:
+          year: 1988
+        references:
+          - derstler1994
+          - carpenter2013
+          - sonoda2016
     references:
       - id: bakker1988a
         authors: Bakker, R. T.
@@ -43818,6 +43967,30 @@ genera:
         book: The Princeton Field Guide to Dinosaurs (3rd ed.)
         publisher: Princeton University Press
         notes: Source of the length and mass estimates.
+      - id: derstler1994
+        authors: Derstler, K.
+        year: 1994
+        title: Dinosaurs of the Lance Formation in eastern Wyoming
+        book: The Dinosaurs of Wyoming
+        publisher: Wyoming Geological Association
+        pages: 127-146
+        notes: Wyoming Geological Association Guidebook, 44th Annual Field Conference. Initial description of the Tank specimen.
+      - id: carpenter2013
+        authors: Carpenter, K.; DiCroce, T.; Kinneer, B.; Simon, R.
+        year: 2013
+        title: "Pelvis of Gargoyleosaurus (Dinosauria: Ankylosauria) and the origin and evolution of the ankylosaur pelvis"
+        journal: PLOS ONE
+        volume: "8"
+        issue: "11"
+        pages: e79887
+        doi: 10.1371/journal.pone.0079887
+      - id: sonoda2016
+        authors: Sonoda, T.; Noda, Y.
+        year: 2016
+        title: Transfer of museum collection from the Hayashibara Museum of Natural Sciences to the Fukui Prefectural Dinosaur Museum
+        journal: Memoir of the Fukui Prefectural Dinosaur Museum
+        volume: "15"
+        pages: 93-98
     taxonomy:
       - Life
       - Animalia
@@ -44015,6 +44188,34 @@ genera:
           completeness: partial
         authors: Hocknull, Scott A.; White, Matt A.; Tischler, Travis R.; Cook, Alex G.; Calleja, Naomi D.; Sloan, Trish; Elliott, David A.
         described: 2009
+    notable_specimens:
+      - nickname: Judy
+        specimen_id:
+          - AODF 888
+        institution: Australian Age of Dinosaurs Fossil
+        species: Diamantinasaurus matildae
+        category: gut-contents
+        significance: Referred subadult preserving the first known fossilized gut contents of any sauropod, plus skin with polygonal scales. The contents show bulk feeding and multi-level browsing on conifers, seed ferns and flowering plants.
+        references:
+          - poropat2025
+      - nickname: Ann
+        specimen_id:
+          - AODF 906
+        institution: Australian Age of Dinosaurs Fossil
+        species: Diamantinasaurus matildae
+        category: complementary
+        significance: Referred specimen preserving a much more complete skull, about 50 centimeters long, with numerous previously unknown cranial elements intact, greatly extending knowledge of the genus's cranial anatomy.
+        references:
+          - poropat2023
+      - nickname: Oliver
+        specimen_id:
+          - AODF 663
+        institution: Australian Age of Dinosaurs Fossil
+        species: Diamantinasaurus matildae
+        category: ontogeny
+        significance: Referred juvenile specimen of Diamantinasaurus, documenting an immature growth stage of the genus.
+        references:
+          - rigby2022
     references:
       - id: hocknull2009
         authors: Hocknull, Scott A.; White, Matt A.; Tischler, Travis R.; Cook, Alex G.; Calleja, Naomi D.; Sloan, Trish; Elliott, David A.
@@ -44035,6 +44236,33 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
         notes: Source of the hip height estimate.
+      - id: poropat2023
+        authors: Poropat, S. F.; Mannion, P. D.; Rigby, S. L.; Duncan, R. J.; Pentland, A. H.; Bevitt, J. J.; Sloan, T.; Elliott, D. A.
+        year: 2023
+        title: A nearly complete skull of the sauropod dinosaur Diamantinasaurus matildae from the Upper Cretaceous Winton Formation of Australia and implications for the early evolution of titanosaurs
+        journal: Royal Society Open Science
+        volume: "10"
+        issue: "4"
+        pages: "221618"
+        doi: 10.1098/rsos.221618
+      - id: poropat2025
+        authors: Poropat, S. F.; Tosolini, A.-M. P.; Beeston, S. L.; Enchelmaier, M. J.; Pentland, A. H.; Mannion, P. D.; Upchurch, P.; Chin, K.; Korasidis, V. A.; Bell, P. R.; Enriquez, N. J.; Holman, A. I.; Brosnan, L. M.; Elson, A. L.; Tripp, M.; Scarlett, A. G.; Godel, B.; Madden, R. H. C.; Rickard, W. D. A.; Bevitt, J. J.; Tischler, T. R.; Croxford, T. L. M.; Sloan, T.; Elliott, D. A.; Grice, K.
+        year: 2025
+        title: Fossilized gut contents elucidate the feeding habits of sauropod dinosaurs
+        journal: Current Biology
+        volume: "35"
+        issue: "11"
+        pages: 2597-2613.e7
+        doi: 10.1016/j.cub.2025.04.053
+      - id: rigby2022
+        authors: Rigby, S. L.; Poropat, S. F.; Mannion, P. D.; Pentland, A. H.; Sloan, T.; Rumbold, S. J.; Webster, C. B.; Elliott, D. A.
+        year: 2022
+        title: "A juvenile Diamantinasaurus matildae (Dinosauria: Titanosauria) from the Upper Cretaceous Winton Formation of Queensland, Australia, with implications for sauropod ontogeny"
+        journal: Journal of Vertebrate Paleontology
+        volume: "41"
+        issue: "6"
+        pages: e2047991
+        doi: 10.1080/02724634.2021.2047991
     taxonomy:
       - Life
       - Animalia
@@ -44465,6 +44693,28 @@ genera:
         erected_in: welles1970
         authors: Welles, S. P.
         described: 1970
+    notable_specimens:
+      - specimen_id:
+          - UCMP 77270
+        institution: University of California Museum of Paleontology
+        species: Dilophosaurus wetherilli
+        category: complementary
+        significance: Adult referred skeleton found in 1964, about one-third larger than the type juveniles. Its preserved skull crests revealed the animal bore paired crests, prompting Welles to erect the new genus Dilophosaurus; it remains the only specimen preserving much of the crests.
+        discovered:
+          year: 1964
+          by: Samuel P. Welles
+        references:
+          - marsh2020
+      - specimen_id:
+          - MNA P1.3181
+        institution: Museum of Northern Arizona
+        species: Dilophosaurus wetherilli
+        category: ontogeny
+        significance: Infant specimen found in 1978 in the Rock Head Quadrangle, the youngest known example of the genus and one of the earliest known infant theropods from North America, preceded only by some Coelophysis specimens. It includes a partial humerus, a partial fibula, and a tooth fragment.
+        discovered:
+          year: 1978
+        references:
+          - gay2001
     references:
       - id: welles1970
         authors: Welles, S. P.
@@ -44481,6 +44731,23 @@ genera:
         book: The Princeton Field Guide to Dinosaurs (3rd ed.)
         publisher: Princeton University Press
         notes: Source of the appearance features.
+      - id: marsh2020
+        authors: Marsh, A. D.; Rowe, T. B.
+        year: 2020
+        title: A comprehensive anatomical and phylogenetic evaluation of Dilophosaurus wetherilli (Dinosauria, Theropoda) with descriptions of new specimens from the Kayenta Formation of northern Arizona
+        journal: Journal of Paleontology
+        volume: "94"
+        issue: S78
+        pages: 1-103
+        doi: 10.1017/jpa.2020.14
+      - id: gay2001
+        authors: Gay, R.
+        year: 2001
+        title: "New specimens of Dilophosaurus wetherilli (Dinosauria: Theropoda) from the early Jurassic Kayenta Formation of northern Arizona"
+        journal: Western Association of Vertebrate Paleontologists Annual Meeting
+        volume: "1"
+        pages: "1"
+        notes: Annual meeting abstract, Mesa, Arizona.
     taxonomy:
       - Life
       - Animalia
@@ -44565,6 +44832,17 @@ genera:
         erected_in: herne2018
         authors: Herne, Matthew C.; Tait, Alan M.; Weisbecker, Vera; Hall, Michael; Nair, Jay P.; Cleeland, Michael; Salisbury, Steven W.
         described: 2018
+    notable_specimens:
+      - specimen_id:
+          - NMV P229456
+        institution: Museums Victoria
+        species: Diluvicursor pickeringi
+        category: largest-individual
+        significance: Referred partial caudal vertebra of a larger individual, about twice the length of the juvenile holotype's vertebrae. Found nearby in the same deposit, it is the basis for estimating that adults reached at least 2.3 meters long.
+        discovered:
+          year: 2005
+        references:
+          - herne2018
     references:
       - id: herne2018
         authors: Herne, Matthew C.; Tait, Alan M.; Weisbecker, Vera; Hall, Michael; Nair, Jay P.; Cleeland, Michael; Salisbury, Steven W.
@@ -45040,6 +45318,35 @@ genera:
         erected_in: hatcher1901
         authors: Hatcher, J. B.
         described: 1901
+    notable_specimens:
+      - specimen_id:
+          - AMNH FR 223
+        institution: American Museum of Natural History
+        category: historic
+        significance: Semi-articulated partial postcranial skeleton from Como Bluff, collected 1897; the first Diplodocus mount made and the first well-preserved individual skeleton of the genus discovered. Later found to belong to D. hallorum and to be the geologically youngest specimen of that species.
+        discovered:
+          year: 1897
+          by: Barnum Brown and Henry Osborn
+        references:
+          - tschopp2015a
+          - osborn1899
+      - specimen_id:
+          - CM 11255
+        institution: Carnegie Museum of Natural History
+        category: ontogeny
+        significance: Juvenile skull whose snout was not blunt and whose teeth were not confined to the front of the snout, differing greatly from adult Diplodocus skulls. The differences indicate adults and juveniles fed differently, an ecological difference not previously observed in sauropodomorphs.
+        references:
+          - whitlock2010
+      - specimen_id:
+          - NMMNH P-3690
+        institution: New Mexico Museum of Natural History and Science
+        category: gut-contents
+        significance: Semi-articulated partial skeleton from near San Ysidro, New Mexico, preserving 230 gastroliths along with vertebrae, partial pelvis, and right femur. Originally named Seismosaurus, it was later referred to Diplodocus hallorum.
+        discovered:
+          year: 1985
+        references:
+          - tschopp2015a
+          - gillette1994
     references:
       - id: marsh1878b
         authors: Marsh, O. C.
@@ -45094,6 +45401,28 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
         notes: Source of the body length, mass, and hip height estimates, and the appearance features.
+      - id: osborn1899
+        authors: Osborn, H. F.
+        year: 1899
+        title: A skeleton of Diplodocus, recently mounted in the American Museum
+        journal: Science
+        volume: "10"
+        issue: "259"
+        pages: 870-874
+      - id: whitlock2010
+        authors: Whitlock, John A.; Wilson, Jeffrey A.; Lamanna, Matthew C.
+        year: 2010
+        title: "Description of a nearly complete juvenile skull of Diplodocus (Sauropoda: Diplodocoidea) from the Late Jurassic of North America"
+        journal: Journal of Vertebrate Paleontology
+        volume: "30"
+        issue: "2"
+        pages: 442-457
+        doi: 10.1080/02724631003617647
+      - id: gillette1994
+        authors: Gillette, D. D.
+        year: 1994
+        title: "Seismosaurus: The Earth Shaker"
+        publisher: Columbia University Press
     taxonomy:
       - Life
       - Animalia
@@ -46927,6 +47256,17 @@ genera:
         erected_in: marsh1894
         authors: Marsh, O. C.
         described: 1894
+    notable_specimens:
+      - specimen_id:
+          - CM 11340
+        institution: Carnegie Museum of Natural History
+        category: ontogeny
+        significance: "Front half of a hatchling skeleton from Dinosaur National Monument, Utah. It confirmed that Dryosaurus followed craniofacial growth patterns seen in other vertebrates: proportionally large eyes and a short snout when young, with eyes shrinking and snout lengthening with age."
+        discovered:
+          year: 1922
+          by: Earl Douglass
+        references:
+          - carpenter1994
     references:
       - id: marsh1894
         authors: Marsh, O. C.
@@ -46947,6 +47287,14 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
         notes: Source of the hip height estimate, and the appearance features.
+      - id: carpenter1994
+        authors: Carpenter, K.
+        year: 1994
+        title: Baby Dryosaurus from the Upper Jurassic Morrison Formation of Dinosaur National Monument
+        book: Dinosaur Eggs and Babies
+        publisher: Cambridge University Press
+        pages: 288-297
+        isbn: 0-521-44342-3
     taxonomy:
       - Life
       - Animalia
@@ -48277,6 +48625,15 @@ genera:
         erected_in: averianov2024b
         authors: Averianov, Alexander O.; Sues, Hans-Dieter
         described: 2024
+    notable_specimens:
+      - specimen_id:
+          - ZIN PH 1400/16
+        institution: Zoological Institute, Russian Academy of Sciences
+        species: Dzharacursor bissektensis
+        category: reproductive
+        significance: A referred femur may preserve medullary bone, an endosteal tissue formed in female birds preparing to lay eggs. Given the sampled individual's size, it may indicate Dzharacursor females reached sexual maturity before somatic maturity.
+        references:
+          - skutschas2017
     references:
       - id: averianov2024b
         authors: Averianov, Alexander O.; Sues, Hans-Dieter
@@ -48288,6 +48645,15 @@ genera:
         publisher: Informa UK Limited
         doi: 10.1080/02724634.2024.2433759
         url: http://dx.doi.org/10.1080/02724634.2024.2433759
+      - id: skutschas2017
+        authors: Skutschas, P. P.; Boitsova, E. A.; Averianov, A. O.; Sues, H.-D.
+        year: 2017
+        title: Ontogenetic changes in long-bone histology of an ornithomimid theropod dinosaur from the Upper Cretaceous Bissekty Formation of Uzbekistan
+        journal: Historical Biology
+        volume: "29"
+        issue: "6"
+        pages: 715-729
+        doi: 10.1080/08912963.2016.1233180
     taxonomy:
       - Life
       - Animalia
@@ -110325,7 +110691,7 @@ genera:
           specimen_id:
             - MQ98-II-1
           specimen_type: holotype
-          institution: Canterbury Museum
+          institution: Colección Museográfica de Cinctorres
           material: Almost complete right dentary from a large individual 6-8m long.
           completeness: fragmentary
         erected_in: santoscubedo2021
