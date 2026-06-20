@@ -79,6 +79,22 @@ species:
         min: 2000
         max: 3000
     erected_in: lambe1914a
+notable_specimens:
+  - specimen_id: [TMP 2009.12.14]
+    institution: TMP
+    category: gut-contents
+    significance: "Juvenile Gorgosaurus preserving in situ stomach contents of two roughly one-year-old Citipes juveniles, with only their hindlimbs and caudal vertebrae present. Provides direct dietary evidence reinforcing the theory of an ontogenetic dietary shift in tyrannosaurids."
+    references: [therrien2023]
+  - specimen_id: [TCMI 2001.89.1]
+    institution: TCMI
+    category: pathology
+    significance: "Specimen from Montana showing severe pathologies: healed leg, rib, and vertebral fractures, osteomyelitis at the tip of the lower jaw resulting in permanent tooth loss, and possibly a brain tumor."
+    references: [pickrell2003]
+  - specimen_id: [TMP91.36.500]
+    institution: TMP
+    category: pathology
+    significance: "Very complete sub-adult preserving face-bite injuries, a thoroughly healed right fibula fracture, a healed dentary fracture, and a mushroom-like hyperostosis of a right pedal phalanx; preserved in a characteristic death pose."
+    references: [rothschild2001]
 references:
   - id: lambe1914a
     authors: Lambe, L. M.
@@ -104,3 +120,27 @@ references:
     url: http://dx.doi.org/10.1111/brv.12829
     notes: Documents faint polygonal scale impressions between the caudal
       chevrons.
+  - id: therrien2023
+    authors: Therrien, F.; Zelenitsky, D. K.; Tanaka, K.; Voris, J. T.;
+      Erickson, G. M.; Currie, P. J.; DeBuhr, C. L.; Kobayashi, Y.
+    year: 2023
+    title: "Exceptionally preserved stomach contents of a young tyrannosaurid
+      reveal an ontogenetic dietary shift in an iconic extinct predator"
+    journal: Science Advances
+    volume: "9"
+    issue: "49"
+    pages: eadi0505
+    doi: 10.1126/sciadv.adi0505
+  - id: pickrell2003
+    authors: Pickrell, John
+    year: 2003
+    title: First dinosaur brain tumor found, experts suggest
+    publisher: National Geographic News
+    notes: Online news article reporting the pathologies of TCMI 2001.89.1.
+  - id: rothschild2001
+    authors: Rothschild, B.; Tanke, D. H.; Ford, T. L.
+    year: 2001
+    title: Theropod stress fractures and tendon avulsions as a clue to activity
+    book: Mesozoic Vertebrate Life
+    publisher: Indiana University Press
+    pages: 331-336
