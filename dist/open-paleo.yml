@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-06-20T21:53:03.971Z
+  built_at: 2026-06-20T23:06:50.874Z
   clade_count: 250
   genus_count: 1398
   license: CC-BY-4.0
@@ -51544,11 +51544,11 @@ genera:
           weight_kg:
             min: 10
             max: 10
-        erected_in: sereno1993
+        erected_in: sereno1993a
         authors: Sereno, Paul C.; Forster, Catherine A.; Rogers, Raymond R.; Monetta, Alfredo M.
         described: 1993
     references:
-      - id: sereno1993
+      - id: sereno1993a
         authors: Sereno, Paul C.; Forster, Catherine A.; Rogers, Raymond R.; Monetta, Alfredo M.
         year: 1993
         title: Primitive dinosaur skeleton from Argentina and the early evolution of Dinosauria
@@ -59370,7 +59370,7 @@ genera:
         pages: 1-236
         publisher: People's Publishing House, Sichuan Publishing Group
         notes: Updated redescription of the holotype specimen.
-      - id: maidment2006
+      - id: maidment2006a
         authors: Maidment, S. C. R.; Wei, G.
         year: 2006
         title: A review of the Late Jurassic stegosaurs (Dinosauria, Stegosauria) from the People's Republic of China
@@ -64463,6 +64463,15 @@ genera:
         erected_in: reig1963
         authors: Reig, O. A.
         described: 1963
+    notable_specimens:
+      - specimen_id:
+          - PVSJ 407
+        institution: División de Paleontología de Vertebrados del Museo de Ciencias Naturales y Universidad Nacional de San Juan
+        species: Herrerasaurus ischigualastensis
+        category: pathology
+        significance: Referred Herrerasaurus skull bearing a pit in a skull bone and two pits on the splenial, attributed to a bite. Surrounding bone is swollen and porous, indicating a short-lived non-lethal infection, likely sustained in a fight with another Herrerasaurus.
+        references:
+          - sereno1993b
     references:
       - id: reig1963
         authors: Reig, O. A.
@@ -64479,6 +64488,15 @@ genera:
         book: "The Princeton Encyclopedia of Dinosaurs: Theropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
+      - id: sereno1993b
+        authors: Sereno, P. C.; Novas, F. E.
+        year: 1993
+        title: The skull and neck of the basal theropod Herrerasaurus ischigualastensis
+        journal: Journal of Vertebrate Paleontology
+        volume: "13"
+        issue: "4"
+        pages: 451-476
+        doi: 10.1080/02724634.1994.10011525
         notes: Source of the hip height estimate.
     taxonomy:
       - Life
@@ -64898,6 +64916,18 @@ genera:
         erected_in: carpenter2001b
         authors: Carpenter, K.; Miles, C. A.; K. Cloward
         described: 2001
+    notable_specimens:
+      - nickname: Victoria
+        specimen_id:
+          - SMA 0018
+        institution: University of Zurich Paleontology Museum
+        species: Hesperosaurus mjosi
+        category: exceptional-preservation
+        significance: Rather complete skeleton with skull from the Howe-Stephens Quarry, Wyoming, preserving skin impressions and an impression of a back plate's underside interpreted as a horn sheath, the first direct evidence of such a sheath in any stegosaurian.
+        discovered:
+          year: 1996
+        references:
+          - christiansen2010
     references:
       - id: carpenter2001b
         authors: Carpenter, K.; Miles, C. A.; K. Cloward
@@ -64913,6 +64943,15 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
         notes: Source of the hip height estimate, and the appearance features.
+      - id: christiansen2010
+        authors: Christiansen, N. A.; Tschopp, E.
+        year: 2010
+        title: Exceptional stegosaur integument impressions from the Upper Jurassic Morrison Formation of Wyoming
+        journal: Swiss Journal of Geosciences
+        volume: "103"
+        issue: "2"
+        pages: 163-171
+        doi: 10.1007/s00015-010-0026-0
     pronunciation:
       phonetic: hes-per-oh-sore-us
     taxonomy:
@@ -65004,6 +65043,44 @@ genera:
         erected_in: crompton1962
         authors: CROMPTON, A. W.; CHARIG, A. J.
         described: 1962
+    notable_specimens:
+      - specimen_id:
+          - SAM-PK-K1332
+        institution: Iziko South African Museum
+        species: Heterodontosaurus tucki
+        category: most-complete
+        significance: The most complete heterodontosaurid skeleton described to date. Found at the Voyizane locality, it preserves skull and skeleton in articulation with little displacement, and as an adult underpins the full description of the genus's anatomy.
+        discovered:
+          year: 1966
+        references:
+          - santaluca1980
+          - norman2011
+      - specimen_id:
+          - AM 4766
+        institution: Albany Museum
+        species: Heterodontosaurus tucki
+        category: complementary
+        significance: A very complete specimen found near Grahamstown. Its rock was too hard to remove, so it was synchrotron-scanned in 2016; the data on its pelvis and gastralia underpinned a 2021 reinterpretation of ornithischian breathing, with Heterodontosaurus as an intermediate stage.
+        discovered:
+          year: 2005
+        references:
+          - radermacher2021
+      - specimen_id:
+          - SAM-PK-K10487
+        institution: Iziko South African Museum
+        species: Heterodontosaurus tucki
+        category: ontogeny
+        significance: The front part of a juvenile skull, the key ontogenetic specimen for the genus, showing that the eye sockets became proportionally smaller and the snout longer with age. CT scans revealed unerupted replacement teeth even at this early stage, informing the tooth-replacement debate.
+        references:
+          - butler2008
+      - specimen_id:
+          - SAM-PK-K1334
+        institution: Iziko South African Museum
+        species: Heterodontosaurus tucki
+        category: ontogeny
+        significance: A left maxilla from the Voyizane locality. Its upper jaw was the first specimen in which unerupted replacement teeth were discovered in Heterodontosaurus, a find later corroborated by the juvenile skull AMNH 24000.
+        references:
+          - norman2011
     references:
       - id: crompton1962
         authors: CROMPTON, A. W.; CHARIG, A. J.
@@ -65023,6 +65100,38 @@ genera:
         book: The Princeton Field Guide to Dinosaurs (3rd ed.)
         publisher: Princeton University Press
         notes: Source of the appearance features.
+      - id: santaluca1980
+        authors: Santa Luca, A. P.
+        year: 1980
+        title: The postcranial skeleton of Heterodontosaurus tucki (Reptilia, Ornithischia) from the Stormberg of South Africa
+        journal: Annals of the South African Museum
+        volume: "79"
+        issue: "7"
+        pages: 159-211
+      - id: norman2011
+        authors: Norman, D. B.; Crompton, A. W.; Butler, R. J.; Porro, L. B.; Charig, A. J.
+        year: 2011
+        title: "The Lower Jurassic ornithischian dinosaur Heterodontosaurus tucki Crompton & Charig, 1962: cranial anatomy, functional morphology, taxonomy, and relationships"
+        journal: Zoological Journal of the Linnean Society
+        pages: 182-276
+        doi: 10.1111/j.1096-3642.2011.00697.x
+      - id: radermacher2021
+        authors: Radermacher, V. J.; Fernandez, V.; Schachner, E. R.; Butler, R. J.; Bordy, E. M.; Naylor Hudgins, M.; de Klerk, W. J.; Chapelle, K. E. J.; Choiniere, J. N.
+        year: 2021
+        title: A new Heterodontosaurus specimen elucidates the unique ventilatory macroevolution of ornithischian dinosaurs
+        journal: eLife
+        volume: "10"
+        pages: e66036
+        doi: 10.7554/eLife.66036
+      - id: butler2008
+        authors: Butler, R. J.; Porro, L. B.; Norman, D. B.
+        year: 2008
+        title: A juvenile skull of the primitive ornithischian dinosaur Heterodontosaurus tucki from the 'Stormberg' of southern Africa
+        journal: Journal of Vertebrate Paleontology
+        volume: "28"
+        issue: "3"
+        pages: 702-711
+        doi: 10.1671/0272-4634(2008)28[702:AJSOTP]2.0.CO;2
     taxonomy:
       - Life
       - Animalia
@@ -67107,6 +67216,15 @@ genera:
         erected_in: dong1982
         authors: Dong, Z.; Tang, Z.; S.-w. Zhou
         described: 1982
+    notable_specimens:
+      - specimen_id:
+          - ZDM T7001
+        institution: Zigong Dinosaur Museum
+        species: Huayangosaurus taibaii
+        category: complementary
+        significance: "A referred skeleton more complete than the partial holotype, preserving anatomy the type lacks: a complete shoulder girdle, a humerus, both ilia, a pubic bone, both ischia, and eleven plates, substantially extending knowledge of the genus."
+        references:
+          - maidment2006b
     references:
       - id: dong1982
         authors: Dong, Z.; Tang, Z.; S.-w. Zhou
@@ -67124,6 +67242,15 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
         notes: Source of the hip height estimate, and the appearance features.
+      - id: maidment2006b
+        authors: Maidment, Susannah C. R.; Wei, Guangbiao; Norman, David B.
+        year: 2006
+        title: Re-description of the postcranial skeleton of the middle Jurassic stegosaur Huayangosaurus taibaii
+        journal: Journal of Vertebrate Paleontology
+        volume: "26"
+        issue: "4"
+        pages: 944-956
+        doi: 10.1671/0272-4634(2006)26[944:ROTPSO]2.0.CO;2
     taxonomy:
       - Life
       - Animalia
@@ -68460,6 +68587,26 @@ genera:
         erected_in: huxley1870
         authors: Huxley, T. H.
         described: 1870
+    notable_specimens:
+      - specimen_id:
+          - NHMUK PV R 5829
+        institution: Natural History Museum
+        species: Hypsilophodon foxii
+        category: largest-individual
+        significance: The skeleton of a large animal and the largest known specimen, with a femur length of 202 millimeters; it anchors the genus's revised maximum known length of about 1.8 meters after a larger femur was reattributed to Valdosaurus.
+        references:
+          - galton1974
+          - galton2009
+      - specimen_id:
+          - NHMUK PV R 5830
+          - NHMUK PV R 196
+          - NHMUK PV R 196a
+        institution: Natural History Museum
+        species: Hypsilophodon foxii
+        category: ontogeny
+        significance: Among the most significant specimens of the genus, these are skeletons of juvenile animals, documenting growth stages of the taxon.
+        references:
+          - galton1974
     references:
       - id: huxley1870
         authors: Huxley, T. H.
@@ -68480,6 +68627,21 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
         notes: Source of the hip height estimate, and the appearance features.
+      - id: galton1974
+        authors: Galton, P. M.
+        year: 1974
+        title: The ornithischian dinosaur Hypsilophodon from the Wealden of the Isle of Wight
+        journal: Bulletin of the British Museum (Natural History), Geology
+        volume: "25"
+        pages: 1-152
+      - id: galton2009
+        authors: Galton, P. M.
+        year: 2009
+        title: Notes on Neocomian (Lower Cretaceous) ornithopod dinosaurs from England - Hypsilophodon, Valdosaurus, "Camptosaurus", "Iguanodon" - and referred specimens from Romania and elsewhere
+        journal: Revue de Paléobiologie, Genève
+        volume: "28"
+        issue: "1"
+        pages: 211-273
     taxonomy:
       - Life
       - Animalia
