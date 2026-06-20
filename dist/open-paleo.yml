@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-06-20T20:58:37.672Z
+  built_at: 2026-06-20T21:53:03.971Z
   clade_count: 250
   genus_count: 1398
   license: CC-BY-4.0
@@ -25660,7 +25660,7 @@ genera:
           specimen_id:
             - IGM 100/3652
           specimen_type: holotype
-          institution: Instituto de Geología, Universidad Nacional Autónoma de México
+          institution: Institute of Geology, Mongolian Academy of Sciences
           material: Partial skeleton including articulated partial skull; left side nearly complete, lacking rostral, postorbital, squamosal, and most of parietal; postcranials include rib, partial left scapula, proximal right ischium, and unidentifiable fragments.
           completeness: partial
         erected_in: yu2020
@@ -56944,6 +56944,18 @@ genera:
           completeness: partial
         authors: Tschopp, Emanuel; Mateus, Octávio; Benson, Roger B.J.
         described: 2015
+    notable_specimens:
+      - specimen_id:
+          - AMNH 969
+        institution: American Museum of Natural History
+        species: Galeamopus hayi
+        category: complementary
+        significance: Referred specimen of G. hayi preserving a nearly complete skull and the atlas-axis complex in articulation, cranial anatomy largely absent in the type-species holotype, which is composed mainly of a braincase and partial postcranial skeleton.
+        discovered:
+          year: 1903
+          by: Peter Kaisen
+        references:
+          - tschopp2015a
     references:
       - id: tschopp2015a
         authors: Tschopp, Emanuel; Mateus, Octávio; Benson, Roger B.J.
@@ -57159,6 +57171,24 @@ genera:
         erected_in: osmlska1972
         authors: Osmólska, H.; Roniewicz, E.; R. Barsbold
         described: 1972
+    notable_specimens:
+      - specimen_id:
+          - IGM 100/1133
+        institution: Institute of Geology, Mongolian Academy of Sciences
+        species: Gallimimus bullatus
+        category: exceptional-preservation
+        significance: "Skull preserving soft-tissue structures on the beak: the inner side bears columnar structures the describers compared to the lamellae of anseriform bird beaks, central to the debate over whether ornithomimosaurs were filter-feeders or high-fiber herbivores."
+        references:
+          - norell2001
+      - specimen_id:
+          - MPC-D100F/17
+        institution: Paleontological Center, Mongolian Academy of Sciences
+        category: trace-association
+        significance: A clenched Gallimimus foot found in 2009 directly associated with a fossil trackway in the Nemegt, a rare instance of tracks preserved together with body fossils; the rest of the skeleton had been removed by fossil poachers.
+        discovered:
+          year: 2009
+        references:
+          - lee2018
     references:
       - id: osmlska1972
         authors: Osmólska, H.; Roniewicz, E.; R. Barsbold
@@ -57174,6 +57204,23 @@ genera:
         book: The Princeton Field Guide to Dinosaurs (3rd ed.)
         publisher: Princeton University Press
         notes: Source of the appearance features.
+      - id: norell2001
+        authors: Norell, M. A.; Makovicky, P. J.; Currie, P. J.
+        year: 2001
+        title: The beaks of ostrich dinosaurs
+        journal: Nature
+        volume: "412"
+        issue: "6850"
+        pages: 873-874
+        doi: 10.1038/35091139
+      - id: lee2018
+        authors: Lee, H.-J.; Lee, Y.-N.; Adams, T. L.; Currie, P. J.; Kobayashi, Y.; Jacobs, L. L.; Koppelhus, E. B.
+        year: 2018
+        title: Theropod trackways associated with a Gallimimus foot skeleton from the Nemegt Formation, Mongolia
+        journal: Palaeogeography, Palaeoclimatology, Palaeoecology
+        volume: "494"
+        pages: 160-167
+        doi: 10.1016/j.palaeo.2017.10.020
     taxonomy:
       - Life
       - Animalia
@@ -58870,6 +58917,29 @@ genera:
         erected_in: coria1995
         authors: Coria, Rodolfo A.; Salgado, Leonardo
         described: 1995
+    notable_specimens:
+      - specimen_id:
+          - MUCPv-95
+        institution: Universidad Nacional del Comahue
+        species: Giganotosaurus carolinii
+        category: largest-individual
+        significance: Referred partial left dentary about 8% larger than the holotype's at 62 cm, from a supposedly larger individual. It has been used to extrapolate a maximum length of 13.2 meters and a 1.95-meter skull, central to the debate over the largest theropods.
+        discovered:
+          year: 1987
+          by: Jorge O. Calvo
+        references:
+          - calvo1998
+      - specimen_id:
+          - MUCPv-52
+        institution: Universidad Nacional del Comahue
+        species: Giganotosaurus carolinii
+        category: historic
+        significance: An incomplete tooth referred to Giganotosaurus, discovered near Lake Ezequiel Ramos Mexia in 1987, making it the first known fossil of the genus, predating the holotype.
+        discovered:
+          year: 1987
+          by: A. Delgado
+        references:
+          - calvo1999
     references:
       - id: coria1995
         authors: Coria, Rodolfo A.; Salgado, Leonardo
@@ -58882,6 +58952,20 @@ genera:
         publisher: Springer Science and Business Media LLC
         doi: 10.1038/377224a0
         url: http://dx.doi.org/10.1038/377224a0
+      - id: calvo1998
+        authors: Calvo, J. O.; Coria, R. A.
+        year: 1998
+        title: New specimen of Giganotosaurus carolinii (Coria & Salgado, 1995), supports it as the largest theropod ever found
+        journal: Gaia
+        volume: "15"
+        pages: 117-122
+      - id: calvo1999
+        authors: Calvo, J. O.
+        year: 1999
+        title: Dinosaurs and other vertebrates of the Lake Ezequiel Ramos Mexía area, Neuquén-Patagonia, Argentina
+        journal: National Science Museum Monographs
+        volume: "15"
+        pages: 13-45
     taxonomy:
       - Life
       - Animalia
@@ -59529,6 +59613,15 @@ genera:
         erected_in: paul1988b
         authors: Paul, G. S.
         described: 1988
+    notable_specimens:
+      - specimen_id:
+          - HMN XV2
+        institution: Museum für Naturkunde Berlin
+        species: Giraffatitan brancai
+        category: largest-individual
+        significance: Largest known individual of the taxon, represented by a fibula 13 percent larger than the corresponding bone of the subadult lectotype SII; it shows the animal grew beyond the standard size estimates, to roughly 23-26 meters long and about 40-48 metric tons.
+        references:
+          - paul1988b
     references:
       - id: paul1988b
         authors: Paul, G. S.
@@ -60001,6 +60094,25 @@ genera:
         erected_in: tsogtbaatar2019
         authors: Tsogtbaatar, Khishigjav; Weishampel, David B.; Evans, David C.; Watabe, Mahito
         described: 2019
+    notable_specimens:
+      - specimen_id:
+          - ZPAL MgD-III/3
+        institution: Institute of Paleobiology, Polish Academy of Sciences
+        species: Gobihadros mongoliensis
+        category: pathology
+        significance: Exceptionally large, old individual whose CT scans revealed calcium pyrophosphate deposition disease in caudal vertebrae and pedal phalanges. At 7.5 meters it may mark the taxon's top size limit; closely spaced growth lines and an external fundamental system confirm advanced age.
+        references:
+          - tsogtbaatar2019
+          - slowiak2020
+          - slowiak2021
+      - specimen_id:
+          - MPC-D100/763
+        institution: Paleontological Center, Mongolian Academy of Sciences
+        species: Gobihadros mongoliensis
+        category: complementary
+        significance: Referred complete articulated skull, with a hand, of an immature individual roughly 3 meters long; the most important of the referred specimens, helping make Gobihadros the most completely known basal hadrosauroid from Asia.
+        references:
+          - tsogtbaatar2019
     references:
       - id: tsogtbaatar2019
         authors: Tsogtbaatar, Khishigjav; Weishampel, David B.; Evans, David C.; Watabe, Mahito
@@ -60021,6 +60133,23 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
         notes: Source of the mass and hip height estimates, and the appearance features.
+      - id: slowiak2020
+        authors: Słowiak, J.; Szczygielski, T.; Ginter, M.; Fostowicz-Frelik, Ł.
+        year: 2020
+        title: Uninterrupted growth in a non-polar hadrosaur explains the gigantism among duck-billed dinosaurs
+        journal: Palaeontology
+        volume: "63"
+        issue: "4"
+        pages: 579-599
+        doi: 10.1111/pala.12473
+      - id: slowiak2021
+        authors: Słowiak, J.; Szczygielski, T.; Rothschild, B. M.; Surmik, D.
+        year: 2021
+        title: "Dinosaur senescence: a hadrosauroid with age-related diseases brings a new perspective of old dinosaurs"
+        journal: Scientific Reports
+        volume: "11"
+        pages: "11947"
+        doi: 10.1038/s41598-021-91366-1
     taxonomy:
       - Life
       - Animalia
@@ -61223,6 +61352,28 @@ genera:
         erected_in: lambe1914a
         authors: Lambe, L. M.
         described: 1914
+    notable_specimens:
+      - specimen_id:
+          - TMP 2009.12.14
+        institution: Royal Tyrrell Museum of Paleontology
+        category: gut-contents
+        significance: Juvenile Gorgosaurus preserving in situ stomach contents of two roughly one-year-old Citipes juveniles, with only their hindlimbs and caudal vertebrae present. Provides direct dietary evidence reinforcing the theory of an ontogenetic dietary shift in tyrannosaurids.
+        references:
+          - therrien2023
+      - specimen_id:
+          - TCMI 2001.89.1
+        institution: The Children's Museum of Indianapolis
+        category: pathology
+        significance: "Specimen from Montana showing severe pathologies: healed leg, rib, and vertebral fractures, osteomyelitis at the tip of the lower jaw resulting in permanent tooth loss, and possibly a brain tumor."
+        references:
+          - pickrell2003
+      - specimen_id:
+          - TMP91.36.500
+        institution: Royal Tyrrell Museum of Paleontology
+        category: pathology
+        significance: Very complete sub-adult preserving face-bite injuries, a thoroughly healed right fibula fracture, a healed dentary fracture, and a mushroom-like hyperostosis of a right pedal phalanx; preserved in a characteristic death pose.
+        references:
+          - rothschild2001
     references:
       - id: lambe1914a
         authors: Lambe, L. M.
@@ -61242,6 +61393,28 @@ genera:
         doi: 10.1111/brv.12829
         url: http://dx.doi.org/10.1111/brv.12829
         notes: Documents faint polygonal scale impressions between the caudal chevrons.
+      - id: therrien2023
+        authors: Therrien, F.; Zelenitsky, D. K.; Tanaka, K.; Voris, J. T.; Erickson, G. M.; Currie, P. J.; DeBuhr, C. L.; Kobayashi, Y.
+        year: 2023
+        title: Exceptionally preserved stomach contents of a young tyrannosaurid reveal an ontogenetic dietary shift in an iconic extinct predator
+        journal: Science Advances
+        volume: "9"
+        issue: "49"
+        pages: eadi0505
+        doi: 10.1126/sciadv.adi0505
+      - id: pickrell2003
+        authors: Pickrell, John
+        year: 2003
+        title: First dinosaur brain tumor found, experts suggest
+        publisher: National Geographic News
+        notes: Online news article reporting the pathologies of TCMI 2001.89.1.
+      - id: rothschild2001
+        authors: Rothschild, B.; Tanke, D. H.; Ford, T. L.
+        year: 2001
+        title: Theropod stress fractures and tendon avulsions as a clue to activity
+        book: Mesozoic Vertebrate Life
+        publisher: Indiana University Press
+        pages: 331-336
     taxonomy:
       - Life
       - Animalia
@@ -108961,7 +109134,7 @@ genera:
           specimen_id:
             - IGM 100/1014
           specimen_type: holotype
-          institution: Instituto de Geología, Universidad Nacional Autónoma de México
+          institution: Institute of Geology, Mongolian Academy of Sciences
           material: Skull with lower jaws.
           completeness: partial
         diagnostic_features:
@@ -148383,7 +148556,7 @@ genera:
           specimen_id:
             - IGM 100/1315
           specimen_type: holotype
-          institution: Instituto de Geología, Universidad Nacional Autónoma de México
+          institution: Institute of Geology, Mongolian Academy of Sciences
           material: Partial skull missing premaxillae, rostral, and predentary; much of frill and left cheek and posterior part of left mandible absent
           completeness: partial
         authors: MAKOVICKY, PETER J; NORELL, MARK A
