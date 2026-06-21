@@ -69,7 +69,7 @@ species:
     holotype:
       specimen_id: [ QM F6140 ]
       specimen_type: holotype
-      institution: QM
+      institution: QM-AU
       material: Nearly complete skeleton lacking most of tail, including skull and
         postcranial elements.
       completeness: complete
@@ -84,6 +84,16 @@ species:
         min: 2800
         max: 8854
     erected_in: bartholomai1981
+notable_specimens:
+  - nickname: Dunluce Skull
+    specimen_id: [QM F14921]
+    institution: QM-AU
+    category: complementary
+    significance: "A referred skull from somewhat older Allaru Mudstone (Albian) layers than the holotype, considered by Molnar to represent a separate, yet unnamed Muttaburrasaurus species."
+    discovered:
+      year: 1987
+      by: "John Stewart-Moore and Robert Walker"
+    references: [molnar1996]
 references:
   - id: bartholomai1981
     authors: Bartholomai, A.; Molnar, R. E.
@@ -101,4 +111,13 @@ references:
     book: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
     publisher: Princeton University Press
     isbn: 978-0-691-25025-0
+  - id: molnar1996
+    authors: Molnar, Ralph E.
+    year: 1996
+    title: "Observations on the Australian ornithopod dinosaur,
+      Muttaburrasaurus"
+    journal: Memoirs of the Queensland Museum
+    volume: "39"
+    issue: "3"
+    pages: 639-652
     notes: Source of the hip height estimate, and the appearance features.

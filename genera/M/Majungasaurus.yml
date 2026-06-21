@@ -84,6 +84,21 @@ species:
       material: Partial skull and skeleton.
       completeness: partial
     erected_in: lavocat1955
+notable_specimens:
+  - specimen_id: [FMNH PR 2100]
+    institution: FMNH
+    species: Majungasaurus crenatissimus
+    category: exceptional-preservation
+    significance: "A spectacularly complete skull preserving cranial anatomy absent from the fragmentary type dentary. Its dome-shaped frontal swelling matched Majungatholus, leading to that name's recognition as a synonym, and CT scanning reconstructed its brain and inner ear."
+    discovered:
+      year: 1996
+    references: [sampson1998, sampson2007]
+  - specimen_id: [UA 8678]
+    institution: UA
+    species: Majungasaurus crenatissimus
+    category: physiology
+    significance: "A superbly preserved series of vertebrae and ribs whose pneumatic foramina let scientists reconstruct the respiratory system, implying avian-style air sacs and flow-through ventilation, with implications for the early evolution of bird respiration."
+    references: [oconnor2005]
 references:
   - id: lavocat1955
     authors: Lavocat, R.
@@ -103,3 +118,33 @@ references:
     publisher: Princeton University Press
     isbn: 978-0-691-25021-2
     notes: Source of the hip height estimate, and the appearance features.
+  - id: sampson1998
+    authors: Sampson, S. D.
+    year: 1998
+    title: "Predatory dinosaur remains from Madagascar: implications for the
+      Cretaceous biogeography of Gondwana"
+    journal: Science
+    volume: "280"
+    issue: "5366"
+    pages: 1048-1051
+    doi: 10.1126/science.280.5366.1048
+  - id: sampson2007
+    authors: Sampson, Scott D.; Witmer, Lawrence M.
+    year: 2007
+    title: "Craniofacial anatomy of Majungasaurus crenatissimus (Theropoda:
+      Abelisauridae) from the Late Cretaceous of Madagascar"
+    journal: Journal of Vertebrate Paleontology
+    volume: "27"
+    pages: 32-102
+    doi: "10.1671/0272-4634(2007)27[32:CAOMCT]2.0.CO;2"
+    notes: Society of Vertebrate Paleontology Memoir 8.
+  - id: oconnor2005
+    authors: O'Connor, Patrick M.; Claessens, Leon P. A. M.
+    year: 2005
+    title: "Basic avian pulmonary design and flow-through ventilation in
+      non-avian theropod dinosaurs"
+    journal: Nature
+    volume: "436"
+    issue: "7048"
+    pages: 253-256
+    doi: 10.1038/nature03716
