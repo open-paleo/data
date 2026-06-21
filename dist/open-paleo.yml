@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-06-21T06:35:33.425Z
+  built_at: 2026-06-21T23:11:42.296Z
   clade_count: 250
   genus_count: 1398
   license: CC-BY-4.0
@@ -101746,6 +101746,27 @@ genera:
           completeness: complete
         authors: Funston, Gregory F.; Chinzorig, Tsogtbaatar; Tsogtbaatar, Khishigjav; Kobayashi, Yoshitsugu; Sullivan, Corwin; Currie, Philip J.
         described: 2020
+    notable_specimens:
+      - specimen_id:
+          - MPC-D 102/12
+        institution: Paleontological Center, Mongolian Academy of Sciences
+        species: Oksoko avarsan
+        category: ontogeny
+        significance: The only known adult specimen of Oksoko, at least 5 years old with an estimated body mass of 74 kg, contrasting with the juvenile holotype individuals and showing the limb bones become more robust in adults.
+        discovered:
+          year: 1998
+        references:
+          - funston2020a
+      - specimen_id:
+          - MPC-D 100/33
+        institution: Paleontological Center, Mongolian Academy of Sciences
+        species: Oksoko avarsan
+        significance: The first specimen of Oksoko, a partial subadult postcranial skeleton, long referred to as a paratype of Heyuannia but sharing traits with Oksoko including a reduced third metacarpal.
+        discovered:
+          year: 1974
+          by: Soviet-Mongolian Palaeontological Expedition
+        references:
+          - funston2020a
     references:
       - id: funston2020a
         authors: Funston, Gregory F.; Chinzorig, Tsogtbaatar; Tsogtbaatar, Khishigjav; Kobayashi, Yoshitsugu; Sullivan, Corwin; Currie, Philip J.
@@ -102891,7 +102912,45 @@ genera:
         erected_in: marsh1890b
         authors: Marsh, O. C.
         described: 1890
+    notable_specimens:
+      - specimen_id:
+          - TMP 2009.110.1
+          - TMP 2008.70.1
+          - TMP 1995.110.1
+        institution: Royal Tyrrell Museum of Paleontology
+        category: exceptional-preservation
+        significance: "Three feathered skeletons across growth stages: a roughly one-year-old juvenile (TMP 2009.110.1) and an adult (TMP 2008.70.1) with body filaments, plus an adult (TMP 1995.110.1) with pennaceous wing-like forelimb feathers. Only adults bore the wings, suggesting they evolved for display."
+        references:
+          - zelenitsky2012
+      - specimen_id:
+          - UALVP 52531
+        institution: University of Alberta Laboratory for Vertebrate Paleontology
+        category: exceptional-preservation
+        significance: A densely feathered specimen from the lower Dinosaur Park Formation, the first Ornithomimus to preserve tail feathers, which resembled an ostrich's in structure and distribution. Skin impressions show bare skin from mid-thigh to the feet and a flap of skin connecting the upper thigh to the torso.
+        references:
+          - vanderreest2016
     references:
+      - id: vanderreest2016
+        authors: Van der Reest, Aaron J.; Wolfe, Alexander P.; Currie, Philip J.
+        year: 2016
+        title: "A densely feathered ornithomimid (Dinosauria: Theropoda) from the Upper Cretaceous Dinosaur Park Formation, Alberta, Canada"
+        journal: Cretaceous Research
+        volume: "58"
+        pages: 108-117
+        publisher: Elsevier BV
+        doi: 10.1016/j.cretres.2015.10.004
+        url: http://dx.doi.org/10.1016/j.cretres.2015.10.004
+      - id: zelenitsky2012
+        authors: Zelenitsky, Darla K.; Therrien, François; Erickson, Gregory M.; DeBuhr, Christopher L.; Kobayashi, Yoshitsugu; Eberth, David A.; Hadfield, Frank
+        year: 2012
+        title: Feathered non-avian dinosaurs from North America provide insight into wing origins
+        journal: Science
+        volume: "338"
+        issue: "6106"
+        pages: 510-514
+        publisher: American Association for the Advancement of Science (AAAS)
+        doi: 10.1126/science.1225376
+        url: http://dx.doi.org/10.1126/science.1225376
       - id: marsh1890b
         authors: Marsh, O. C.
         year: 1890
@@ -104166,6 +104225,25 @@ genera:
         erected_in: osborn1924b
         authors: Osborn, H. F.
         described: 1924
+    notable_specimens:
+      - specimen_id:
+          - MPC-D 100/42
+        institution: Paleontological Center, Mongolian Academy of Sciences
+        category: complementary
+        significance: Very well-preserved, rather complete tall-crested individual from the Djadokhta Formation referred to Oviraptor by Barsbold in 1981. As the holotype is fragmentary and crestless, it became the prime depiction of the taxon, though Clark and colleagues in 2002 questioned the referral.
+        references:
+          - barsbold1981
+      - specimen_id:
+          - AMNH 33092
+        institution: American Museum of Natural History
+        species: Oviraptor philoceratops
+        category: ontogeny
+        significance: A nestling or very small juvenile composed of a right tibia and metatarsals III and IV, reported by Norell and colleagues in 2018. Found in association with the holotype and likely part of the nest, its 5.87 cm tibia indicates a much smaller individual than the holotype, supporting parental care.
+        discovered:
+          year: 1923
+          by: Central Asiatic Expedition
+        references:
+          - norell2018
     references:
       - id: osborn1924b
         authors: Osborn, H. F.
@@ -104181,6 +104259,21 @@ genera:
         book: "The Princeton Encyclopedia of Dinosaurs: Theropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
+      - id: barsbold1981
+        authors: Barsbold, R.
+        year: 1981
+        title: Bezzubyye khishchnyye dinozavry Mongolii [Toothless carnivorous dinosaurs of Mongolia]
+        journal: Sovmestnaia Sovetsko-Mongol'skaia Paleontologicheskaia Ekspeditsiia Trudy
+        volume: "15"
+        pages: 28-39
+      - id: norell2018
+        authors: Norell, M. A.; Balanoff, A. M.; Barta, D. E.; Erickson, G. M.
+        year: 2018
+        title: A second specimen of Citipati osmolskae associated with a nest of eggs from Ukhaa Tolgod, Omnogov Aimag, Mongolia
+        journal: American Museum Novitates
+        issue: "3899"
+        pages: 1-44
+        doi: 10.1206/3899.1
         notes: Source of the hip height estimate, and the appearance features.
     taxonomy:
       - Life
