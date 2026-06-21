@@ -91,6 +91,21 @@ species:
       material: Partial skull and skeleton
       completeness: partial
     erected_in: osborn1924b
+notable_specimens:
+  - specimen_id: [MPC-D 100/42]
+    institution: MPC
+    category: complementary
+    significance: "Very well-preserved, rather complete tall-crested individual from the Djadokhta Formation referred to Oviraptor by Barsbold in 1981. As the holotype is fragmentary and crestless, it became the prime depiction of the taxon, though Clark and colleagues in 2002 questioned the referral."
+    references: [barsbold1981]
+  - specimen_id: [AMNH 33092]
+    institution: AMNH
+    species: Oviraptor philoceratops
+    category: ontogeny
+    significance: "A nestling or very small juvenile composed of a right tibia and metatarsals III and IV, reported by Norell and colleagues in 2018. Found in association with the holotype and likely part of the nest, its 5.87 cm tibia indicates a much smaller individual than the holotype, supporting parental care."
+    discovered:
+      year: 1923
+      by: "Central Asiatic Expedition"
+    references: [norell2018]
 references:
   - id: osborn1924b
     authors: Osborn, H. F.
@@ -106,4 +121,21 @@ references:
     book: "The Princeton Encyclopedia of Dinosaurs: Theropods"
     publisher: Princeton University Press
     isbn: 978-0-691-25021-2
+  - id: barsbold1981
+    authors: Barsbold, R.
+    year: 1981
+    title: Bezzubyye khishchnyye dinozavry Mongolii [Toothless carnivorous dinosaurs
+      of Mongolia]
+    journal: Sovmestnaia Sovetsko-Mongol'skaia Paleontologicheskaia Ekspeditsiia Trudy
+    volume: "15"
+    pages: 28-39
+  - id: norell2018
+    authors: Norell, M. A.; Balanoff, A. M.; Barta, D. E.; Erickson, G. M.
+    year: 2018
+    title: A second specimen of Citipati osmolskae associated with a nest of eggs
+      from Ukhaa Tolgod, Omnogov Aimag, Mongolia
+    journal: American Museum Novitates
+    issue: "3899"
+    pages: 1-44
+    doi: 10.1206/3899.1
     notes: Source of the hip height estimate, and the appearance features.
