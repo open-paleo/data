@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-06-20T23:50:18.143Z
+  built_at: 2026-06-21T00:23:15.365Z
   clade_count: 250
   genus_count: 1398
   license: CC-BY-4.0
@@ -75334,6 +75334,18 @@ genera:
           completeness: partial
         authors: Tschopp, Emanuel; Mateus, Octávio
         described: 2012
+    notable_specimens:
+      - specimen_id:
+          - AMNH FARB 7530
+        institution: American Museum of Natural History
+        species: Kaatedocus siberi
+        category: historic
+        significance: Recovered in 1934 by Barnum Brown's AMNH team at the Howe Quarry near Shell, Wyoming. One of only about 10% of the Howe bones to survive a 1940s museum fire, it was long interpreted as Barosaurus before being reinterpreted in 2015 as Kaatedocus.
+        discovered:
+          year: 1934
+          by: Barnum Brown
+        references:
+          - tschopp2015a
     references:
       - id: tschopp2012
         authors: Tschopp, Emanuel; Mateus, Octávio
@@ -75354,6 +75366,15 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
         notes: Source of the mass and hip height estimates, and the appearance features.
+      - id: tschopp2015a
+        authors: Tschopp, E.; Mateus, O.; Benson, R. B. J.
+        year: 2015
+        title: A specimen-level phylogenetic analysis and taxonomic revision of Diplodocidae (Dinosauria, Sauropoda)
+        journal: PeerJ
+        volume: "3"
+        pages: e857
+        publisher: PeerJ
+        doi: 10.7717/peerj.857
     taxonomy:
       - Life
       - Animalia
@@ -76927,6 +76948,26 @@ genera:
         erected_in: clark2001
         authors: Clark, James M.; Norell, Mark A.; Barsbold, Rinchen
         described: 2001
+    notable_specimens:
+      - nickname: Juliet
+        specimen_id:
+          - IGM 100/1002
+          - MPC-D 100/1002
+        institution: Paleontological Center, Mongolian Academy of Sciences
+        species: Khaan mckennai
+        category: iconic
+        significance: Referred specimen found together with the holotype; the pair was informally nicknamed Romeo and Juliet. It was central to a 2014 study of possible sexual dimorphism in Khaan, differing from the holotype in its anterior chevrons, which bear a heel-like distal expansion.
+        references:
+          - persons2015
+      - specimen_id:
+          - IGM 100/973
+          - MPC-D 100/973
+        institution: Paleontological Center, Mongolian Academy of Sciences
+        species: Khaan mckennai
+        category: largest-individual
+        significance: A third, considerably larger referred specimen of Khaan mckennai, documenting a larger individual than the holotype and its associated referred specimen.
+        references:
+          - clark2001
     references:
       - id: clark2001
         authors: Clark, James M.; Norell, Mark A.; Barsbold, Rinchen
@@ -76939,6 +76980,14 @@ genera:
         publisher: Informa UK Limited
         doi: 10.1671/0272-4634(2001)021[0209:tnotou]2.0.co;2
         url: http://dx.doi.org/10.1671/0272-4634(2001)021[0209:tnotou]2.0.co;2
+      - id: persons2015
+        authors: Persons, W. S. IV; Funston, G. F.; Currie, P. J.; Norell, M. A.
+        year: 2015
+        title: A possible instance of sexual dimorphism in the tails of two oviraptorosaur dinosaurs
+        journal: Scientific Reports
+        volume: "5"
+        pages: "9472"
+        doi: 10.1038/srep09472
     taxonomy:
       - Life
       - Animalia
@@ -78321,6 +78370,23 @@ genera:
           completeness: partial
         authors: Sampson, Scott D.; Loewen, Mark A.; Farke, Andrew A.; Roberts, Eric M.; Forster, Catherine A.; Smith, Joshua A.; Titus, Alan L.
         described: 2010
+    notable_specimens:
+      - specimen_id:
+          - UMNH VP 16878
+        institution: Utah Museum of Natural History
+        species: Kosmoceratops richardsoni
+        category: ontogeny
+        significance: A disarticulated subadult skull about half the size of the adult, missing the premaxilla, rostral, and predentary bones. It has the same number and pattern of epiossifications as the adult holotype, distinguishing the subadult growth stage of Kosmoceratops from that of Utahceratops.
+        references:
+          - loewen2013b
+      - specimen_id:
+          - UMNH VP 21339
+        institution: Utah Museum of Natural History
+        species: Kosmoceratops richardsoni
+        category: ontogeny
+        significance: A disarticulated subadult or adult whose femur was histologically sampled, showing sustained rapid growth and supporting an elevated, endothermic metabolism in Kosmoceratops. The analysis determined the specimen was subadult to adult, ruling out that it represented an immature Vagaceratops.
+        references:
+          - levitt2013
     references:
       - id: sampson2010
         authors: Sampson, Scott D.; Loewen, Mark A.; Farke, Andrew A.; Roberts, Eric M.; Forster, Catherine A.; Smith, Joshua A.; Titus, Alan L.
@@ -78341,6 +78407,20 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
         notes: Source of the hip height estimate, and the appearance features.
+      - id: loewen2013b
+        authors: Loewen, M.; Farke, A. A.; Sampson, S. D.; Getty, M. A.; Lund, E. K.; O'Connor, P. M.
+        year: 2013
+        title: Ceratopsid dinosaurs from the Grand Staircase of Southern Utah
+        book: "At the Top of the Grand Staircase: The Late Cretaceous of Southern Utah"
+        publisher: Indiana University Press
+        pages: 488-503
+        isbn: 978-0-253-00883-1
+      - id: levitt2013
+        authors: Levitt, C. G.
+        year: 2013
+        title: Bone histology and growth of chasmosaurine ceratopsid dinosaurs from the late Campanian Kaiparowits Formation, Southern Utah
+        publisher: University of Utah
+        notes: Master's thesis.
     taxonomy:
       - Life
       - Animalia
@@ -86250,7 +86330,7 @@ genera:
           weight_kg:
             min: 500
             max: 2500
-        erected_in: loewen2013
+        erected_in: loewen2013a
         holotype:
           specimen_id:
             - UMNH VP 20200
@@ -86261,7 +86341,7 @@ genera:
         authors: Loewen, Mark A.; Irmis, Randall B.; Sertich, Joseph J. W.; Currie, Philip J.; Sampson, Scott D.
         described: 2013
     references:
-      - id: loewen2013
+      - id: loewen2013a
         authors: Loewen, Mark A.; Irmis, Randall B.; Sertich, Joseph J. W.; Currie, Philip J.; Sampson, Scott D.
         year: 2013
         title: Tyrant Dinosaur Evolution Tracks the Rise and Fall of Late Cretaceous Oceans
