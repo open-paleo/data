@@ -90,6 +90,25 @@ species:
         min: 100
         max: 100
     erected_in: brown1914c
+notable_specimens:
+  - specimen_id: [CMN 8889]
+    institution: CMN
+    species: Leptoceratops gracilis
+    category: most-complete
+    significance: "The most complete known Leptoceratops, a skull, jaw, and most of a skeleton found in the Scollard Formation of Alberta. With the tail of CMN 8887 added, the reconstructed skeleton measures 1.81 meters. It was complete enough for Dale Russell to publish a fully reconstructed skeleton of the genus."
+    discovered:
+      year: 1947
+      by: "Charles M. Sternberg"
+    references: [sternberg1951]
+  - specimen_id: [UWGM-200]
+    institution: UWGM
+    species: Leptoceratops gracilis
+    category: range-extension
+    significance: "The rear part of a skull marking the first record of Leptoceratops from the Hell Creek Formation of Montana. Prepared in 1998, it preserves the first complete braincase yet described for the genus."
+    discovered:
+      year: 1992
+      by: "Brig Konecke"
+    references: [ott2006]
 references:
   - id: brown1914c
     authors: Brown, B.
@@ -108,3 +127,21 @@ references:
     publisher: Princeton University Press
     isbn: 978-0-691-25025-0
     notes: Source of the hip height estimate, and the appearance features.
+  - id: sternberg1951
+    authors: Sternberg, C. M.
+    year: 1951
+    title: "Complete skeleton of Leptoceratops gracilis from the Upper
+      Edmonton member on Red Deer River, Alberta"
+    journal: National Museum of Canada Bulletin
+    volume: "123"
+    pages: 225-255
+  - id: ott2006
+    authors: Ott, C. J.
+    year: 2006
+    title: "Cranial anatomy and biogeography of the first Leptoceratops
+      gracilis (Dinosauria: Ornithischia) specimens from the Hell Creek
+      Formation, Southeast Montana"
+    book: "Horns and Beaks: Ceratopsian and Ornithopod Dinosaurs"
+    publisher: Indiana University Press
+    pages: 213-234
+    isbn: 0-253-34817-X

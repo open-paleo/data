@@ -105,6 +105,23 @@ species:
         max: 3400
     erected_in: parks1923
     described_in: gilmore1924b
+notable_specimens:
+  - specimen_id: [ROM 1218]
+    institution: ROM
+    species: Lambeosaurus lambei
+    category: exceptional-preservation
+    significance: "One of only three Lambeosaurus specimens preserving skin impressions. Uniquely, it preserves a subcircular arrangement of feature scales formed by eight wedge-shaped scales converging to a single central point, a pattern not seen in the other skin-bearing specimens."
+    discovered:
+      year: 1919
+    references: [bell2014]
+  - specimen_id: [TMP 1966.04.1]
+    institution: TMP
+    category: complementary
+    significance: "Basis of the 2007 redescription of L. magnicristatus, supplying most of the species' postcranial anatomy after the holotype was badly water-damaged and much of its limbs and girdles discarded. It also preserves skin impressions along the neck, forelimb, and leg."
+    discovered:
+      year: 1937
+      by: "C. M. Sternberg"
+    references: [evans2007]
 references:
   - id: parks1923
     authors: Parks, W. A.
@@ -122,3 +139,22 @@ references:
     volume: "38"
     issue: "43"
     pages: 29-48
+  - id: bell2014
+    authors: Bell, P. R.
+    year: 2014
+    title: A review of hadrosaurid skin impressions
+    book: Hadrosaurs
+    publisher: Indiana University Press
+    pages: 572-590
+    isbn: 978-0-253-01385-9
+  - id: evans2007
+    authors: Evans, David C.; Reisz, Robert R.
+    year: 2007
+    title: "Anatomy and relationships of Lambeosaurus magnicristatus, a
+      crested hadrosaurid dinosaur (Ornithischia) from the Dinosaur Park
+      Formation, Alberta"
+    journal: Journal of Vertebrate Paleontology
+    volume: "27"
+    issue: "2"
+    pages: 373-393
+    doi: "10.1671/0272-4634(2007)27[373:AAROLM]2.0.CO;2"

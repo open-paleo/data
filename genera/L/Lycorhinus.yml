@@ -78,6 +78,15 @@ species:
         min: 1.2
         max: 1.2
     erected_in: haughton1924
+notable_specimens:
+  - specimen_id: [NHMUK RU A100]
+    institution: BMNH
+    species: Lycorhinus angustidens
+    category: complementary
+    significance: "Referred partial skull from Paballong, the holotype locality. Preserving premaxilla, maxilla, jugal, postorbital, frontal, nasal, and toothed mandible, it provides cranial anatomy absent in the jaw-only holotype. Sereno referred it to Lycorhinus angustidens in 2012."
+    discovered:
+      by: "Kenneth Kermack"
+    references: [sereno2012]
 references:
   - id: haughton1924
     authors: Haughton, S. H.
@@ -94,3 +103,12 @@ references:
     publisher: Princeton University Press
     isbn: 978-0-691-25025-0
     notes: Source of the mass and hip height estimates, and the appearance features.
+  - id: sereno2012
+    authors: Sereno, Paul
+    year: 2012
+    title: Taxonomy, morphology, masticatory function and phylogeny of
+      heterodontosaurid dinosaurs
+    journal: ZooKeys
+    volume: "226"
+    pages: 1-225
+    doi: 10.3897/zookeys.226.2840
