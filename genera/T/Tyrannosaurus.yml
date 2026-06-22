@@ -131,7 +131,126 @@ species:
         ribs, scapula, humerus, ilium, pubis, ischium, and metapodials.
       completeness: partial
     erected_in: osborn1905
+notable_specimens:
+  - nickname: Sue
+    specimen_id: [FMNH PR2081]
+    institution: FMNH
+    species: Tyrannosaurus rex
+    category: most-complete
+    significance: "The most complete (about 85 percent) and largest Tyrannosaurus skeleton, from the Hell Creek Formation. Histology shows it reached full size at age 19 and died at about 28, the longest estimated life of any tyrannosaur known."
+    discovered:
+      year: 1990
+      by: "Sue Hendrickson"
+    references: [brochu2003]
+  - nickname: Stan
+    specimen_id: [NHMAD 2020.00001, BHI 3033]
+    institution: NHMAD
+    species: Tyrannosaurus rex
+    category: pathology
+    significance: "The second most complete Tyrannosaurus skeleton, 199 bones representing 70 percent of the total, from the Hell Creek Formation. Its pathologies include broken and healed ribs, a broken and healed neck, and a hole in the back of the head about the size of a Tyrannosaurus tooth."
+    discovered:
+      year: 1992
+      by: "Stan Sacrison"
+    references: [wolff2009, tanke1998]
+  - nickname: Scotty
+    specimen_id: [RSM P2523.8]
+    institution: RSM
+    species: Tyrannosaurus rex
+    category: largest-individual
+    significance: "Reported to measure 13 meters in length. Using a mass estimation technique extrapolating from femur circumference, Scotty was estimated as the largest known Tyrannosaurus specimen at 8.87 t in body mass."
+    references: [persons2019]
+  - nickname: B-rex
+    specimen_id: [MOR 1125]
+    institution: MOR
+    species: Tyrannosaurus rex
+    category: reproductive
+    significance: "From the Hell Creek Formation. Yielded medullary tissue in its femur, found only in female birds during ovulation, confirming it as a female that died during ovulation; the only Tyrannosaurus conclusively sexed. Also a source of reported soft-tissue blood vessels and collagen."
+    references: [schweitzer2005]
+  - nickname: Wyrex
+    specimen_id: [HMNS 2006.1743.01, BHI 6230]
+    institution: HMNS
+    species: Tyrannosaurus rex
+    category: exceptional-preservation
+    significance: "Preserves patches of mosaic scales on the tail, hip, and neck, used in a 2017 review concluding that feather covering of large tyrannosaurids, if present, was limited to the upper side of the trunk. Also shows pathologies: a hole penetrating its jugal and severe tail trauma with bone remodeling."
+    discovered:
+      year: 2002
+      by: "Dan Wells and Don Wyrick"
+    references: [bell2017]
+  - nickname: Wankel rex
+    specimen_id: [MOR 555]
+    institution: MOR
+    species: Tyrannosaurus rex
+    category: complementary
+    significance: "The first complete Tyrannosaurus forelimbs were identified in 1989 belonging to MOR 555, confirming that the genus had short two-fingered arms about 1 meter long, as had been suggested from the related Gorgosaurus."
+    references: [carpenter2001c]
 references:
+  - id: brochu2003
+    authors: Brochu, C. R.
+    year: 2003
+    title: "Osteology of Tyrannosaurus rex: insights from a nearly complete skeleton
+      and high-resolution computed tomographic analysis of the skull"
+    journal: Society of Vertebrate Paleontology Memoirs
+    volume: "7"
+    pages: 1-138
+    doi: 10.2307/3889334
+  - id: wolff2009
+    authors: Wolff, E. D. S.; Salisbury, S. W.; Horner, J. R.; Varricchio, D. J.
+    year: 2009
+    title: Common avian infection plagued the tyrant dinosaurs
+    journal: PLOS ONE
+    volume: "4"
+    issue: "9"
+    pages: e7288
+    publisher: Public Library of Science (PLoS)
+    doi: 10.1371/journal.pone.0007288
+    url: http://dx.doi.org/10.1371/journal.pone.0007288
+  - id: tanke1998
+    authors: Tanke, Darren H.; Currie, Philip J.
+    year: 1998
+    title: "Head-biting behavior in theropod dinosaurs: paleopathological evidence"
+    journal: Gaia
+    issue: "15"
+    pages: 167-184
+  - id: persons2019
+    authors: Persons, S. W.; Currie, P. J.; Erickson, G. M.
+    year: 2019
+    title: An older and exceptionally large adult specimen of Tyrannosaurus rex
+    journal: The Anatomical Record
+    volume: "303"
+    issue: "4"
+    pages: 656-672
+    doi: 10.1002/ar.24118
+    url: http://dx.doi.org/10.1002/ar.24118
+  - id: schweitzer2005
+    authors: Schweitzer, M. H.; Wittmeyer, J. L.; Horner, J. R.
+    year: 2005
+    title: Gender-specific reproductive tissue in ratites and Tyrannosaurus rex
+    journal: Science
+    volume: "308"
+    issue: "5727"
+    pages: 1456-1460
+    doi: 10.1126/science.1112158
+    url: http://dx.doi.org/10.1126/science.1112158
+  - id: bell2017
+    authors: Bell, P. R.; Campione, N. E.; Persons, W. S., IV; Currie, P. J.;
+      Larson, P. L.; Tanke, D. H.; Bakker, R. T.
+    year: 2017
+    title: Tyrannosauroid integument reveals conflicting patterns of gigantism and
+      feather evolution
+    journal: Biology Letters
+    volume: "13"
+    issue: "6"
+    pages: "20170092"
+    doi: 10.1098/rsbl.2017.0092
+    url: http://dx.doi.org/10.1098/rsbl.2017.0092
+  - id: carpenter2001c
+    authors: Carpenter, K.; Smith, M.
+    year: 2001
+    title: Forelimb osteology and biomechanics of Tyrannosaurus rex
+    book: Mesozoic Vertebrate Life
+    publisher: Indiana University Press
+    pages: 90-116
+    isbn: 978-0-253-33907-2
   - id: osborn1905
     authors: Osborn, H.F.
     year: 1905
