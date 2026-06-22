@@ -92,7 +92,59 @@ species:
         min: 33.0
         max: 40.0
     erected_in: jensen1985
+notable_specimens:
+  - nickname: Jimbo
+    specimen_id: [WDC DMJ-021]
+    institution: WDC
+    species: Supersaurus vivianae
+    category: ontogeny
+    significance: "Much more complete specimen, about 30 percent of the skeleton, found while hiking in Converse County, Wyoming; nicknamed Jimbo. A 2024 study found it skeletally mature and so old its exact age could not be reliably calculated, making it possibly the oldest dinosaur known thus far."
+    discovered:
+      year: 1996
+      by: "Brandon Flyr and Bart Lesco"
+    references: [lovelace2008, woodruff2024]
+  - specimen_id: [BYU 9024]
+    institution: BYU
+    species: Supersaurus vivianae
+    category: largest-individual
+    significance: "A large cervical vertebra measuring 1.38 meters in length, the longest cervical known, from the Dry Mesa Quarry and reassigned to Supersaurus. One estimate gives an approximate length up to 50 meters, which would have made it the longest animal to ever live."
+    references: [jensen1987, curtice2021]
 references:
+  - id: lovelace2008
+    authors: Lovelace, David M.; Hartman, Scott A.; Wahl, William R.
+    year: 2008
+    title: Morphology of a specimen of Supersaurus (Dinosauria, Sauropoda) from the
+      Morrison Formation of Wyoming, and a re-evaluation of diplodocid phylogeny
+    journal: Arquivos do Museu Nacional
+    volume: "65"
+    issue: "4"
+    pages: 527-544
+  - id: woodruff2024
+    authors: Woodruff, D. C.; Curtice, B. D.; Foster, J. R.
+    year: 2024
+    title: Seis-ing up the Super-Morrison formation sauropods
+    journal: Journal of Anatomy
+    volume: "247"
+    issue: "3-4"
+    pages: 682-698
+    doi: 10.1111/joa.14108
+    url: http://dx.doi.org/10.1111/joa.14108
+  - id: jensen1987
+    authors: Jensen, James A.
+    year: 1987
+    title: New brachiosaur material from the Late Jurassic of Utah and Colorado
+    journal: The Great Basin Naturalist
+    volume: "47"
+    issue: "4"
+    pages: 592-608
+  - id: curtice2021
+    authors: Curtice, Brian
+    year: 2021
+    title: New Dry Mesa Dinosaur Quarry Supersaurus vivianae (Jensen 1985) axial
+      elements provide additional insight into its phylogenetic relationships and
+      size, suggesting an animal that exceeded 39 meters in length
+    publisher: Society of Vertebrate Paleontology 81st Annual Meeting
+    notes: Conference abstract.
   - id: jensen1985
     authors: Jensen, J. A.
     year: 1985

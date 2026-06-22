@@ -92,7 +92,35 @@ species:
         min: 1500
         max: 2000
     erected_in: ostrom1970
+notable_specimens:
+  - specimen_id: [AMNH 3036]
+    institution: AMNH
+    species: Sauropelta edwardsorum
+    category: exceptional-preservation
+    significance: "Called one of the best-preserved nodosaurid skeletons known, preserving a large amount of body armor in situ. On display at the American Museum of Natural History, it let Carpenter accurately describe and reconstruct Sauropelta's armor arrangement."
+    discovered:
+      by: "Barnum Brown"
+    references: [ostrom1970, carpenter1984]
+  - specimen_id: [AMNH 3035]
+    institution: AMNH
+    species: Sauropelta edwardsorum
+    category: complementary
+    significance: "Preserves the cervical armor and most of a skull, missing only the end of the snout, supplying cranial anatomy absent from the skull-less holotype skeleton."
+    discovered:
+      by: "Barnum Brown"
+    references: [ostrom1970, carpenter1984]
 references:
+  - id: carpenter1984
+    authors: Carpenter, Kenneth
+    year: 1984
+    title: "Skeletal reconstruction and life restoration of Sauropelta
+      (Ankylosauria: Nodosauridae) from the Cretaceous of North America"
+    journal: Canadian Journal of Earth Sciences
+    volume: "21"
+    issue: "12"
+    pages: 1491-1498
+    doi: 10.1139/e84-154
+    url: http://dx.doi.org/10.1139/e84-154
   - id: ostrom1970
     authors: Ostrom, J. H.
     year: 1970

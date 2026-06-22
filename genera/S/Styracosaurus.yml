@@ -88,7 +88,65 @@ species:
         min: 1.6
         max: 1.8
     erected_in: lambe1913
+notable_specimens:
+  - specimen_id: [TMP 2009.80.1]
+    institution: TMP
+    species: Styracosaurus albertensis
+    category: ontogeny
+    significance: "Nearly complete skull and partial skeleton from Princess Coulee, notable as the smallest and likely youngest known Styracosaurus with a nearly complete skull, documenting a juvenile growth stage of the genus."
+    discovered:
+      year: 2008
+    references: [brown2020]
+  - specimen_id: [UALVP 55900]
+    institution: UALVP
+    species: Styracosaurus albertensis
+    category: individual-variation
+    significance: "Skull of a large Styracosaurus from Matzhiwin Creek near Duchess, Alberta; its asymmetrical horns, compared to deer antlers, indicate that individual variation was likely commonplace in the genus."
+    discovered:
+      year: 2015
+    references: [holmes2020]
+  - specimen_id: [TMP 1989.97.1]
+    institution: TMP
+    species: Styracosaurus albertensis
+    category: range-extension
+    significance: "Nearly complete skull and skeleton from Sage Creek, about 130 kilometers southeast of the holotype, the only definitive specimen of Styracosaurus albertensis from outside Dinosaur Provincial Park."
+    discovered:
+      year: 1989
+    references: [ryan2007b]
 references:
+  - id: brown2020
+    authors: Brown, C.; Holmes, R. B.; Currie, P. J.
+    year: 2020
+    title: "A subadult individual of Styracosaurus albertensis (Ornithischia:
+      Ceratopsidae) with comments on ontogeny and intraspecific variation in
+      Styracosaurus and Centrosaurus"
+    journal: Vertebrate Anatomy Morphology Palaeontology
+    volume: "8"
+    issue: "1"
+    pages: 67-95
+    doi: 10.18435/vamp29361
+    url: http://dx.doi.org/10.18435/vamp29361
+  - id: holmes2020
+    authors: Holmes, R. B.; Persons, W. S.; Singh Rupal, B.; Jawad Qureshi, A.;
+      Currie, P. J.
+    year: 2020
+    title: Morphological variation and asymmetrical development in the skull of
+      Styracosaurus albertensis
+    journal: Cretaceous Research
+    volume: "107"
+    pages: "104308"
+    doi: 10.1016/j.cretres.2019.104308
+    url: http://dx.doi.org/10.1016/j.cretres.2019.104308
+  - id: ryan2007b
+    authors: Ryan, M. J.; Holmes, R. B.; Russell, A. P.
+    year: 2007
+    title: A revision of the late Campanian centrosaurine ceratopsid genus
+      Styracosaurus from the Western Interior of North America
+    journal: Journal of Vertebrate Paleontology
+    volume: "27"
+    issue: "4"
+    pages: 944-962
+    doi: 10.1671/0272-4634(2007)27[944:AROTLC]2.0.CO;2
   - id: lambe1913
     authors: Lambe, L. M.
     year: 1913
