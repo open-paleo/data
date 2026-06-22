@@ -144,7 +144,46 @@ species:
       - name: Dimodosaurus
         type: junior subjective
         reason: D. poligniensis was created for material now considered referable to Plateosaurus engelhardti.
+notable_specimens:
+  - specimen_id: [AMNH FARB 6810]
+    institution: AMNH
+    category: complementary
+    significance: "The best-preserved skull of Plateosaurus, taken apart during preparation so it is available as separate bones. It was described anew in 2011 by Prieto-Márquez and Norell, who referred it to P. erlenbergensis."
+    references: [prietomarquez2011]
+  - specimen_id: [SMNS 91296]
+    institution: SMNS
+    category: pathology
+    significance: "Bears lesions most likely caused by a fall or a similar form of trauma, though they could alternatively result from a predator attack in which the predator did not penetrate the tail muscle far enough to leave bite traces on the bone."
+    references: [schaeffer2024]
+  - specimen_id: [SMNS 13200]
+    institution: SMNS
+    species: Plateosaurus trossingensis
+    category: pathology
+    significance: "A P. trossingensis specimen whose chevron pathologies have been hypothesized to result from capture myopathy induced by a mud-miring trap, consistent with the mud-miring taphonomic scenario for the genus."
+    references: [schaeffer2024]
 references:
+  - id: prietomarquez2011
+    authors: Prieto-Márquez, A.; Norell, Mark A.
+    year: 2011
+    title: "Redescription of a nearly complete skull of Plateosaurus (Dinosauria:
+      Sauropodomorpha) from the Late Triassic of Trossingen (Germany)"
+    journal: American Museum Novitates
+    issue: "3727"
+    pages: 1-58
+    doi: 10.1206/3727.2
+  - id: schaeffer2024
+    authors: Schaeffer, Joep; Wolff, Ewan; Witzmann, Florian; Ferreira, Gabriel S.;
+      Schoch, Rainer R.; Mujal, Eudald
+    year: 2024
+    title: Paleobiological implications of chevron pathology in the sauropodomorph
+      Plateosaurus trossingensis from the Upper Triassic of SW Germany
+    journal: PLOS ONE
+    volume: "19"
+    issue: "7"
+    pages: e0306819
+    publisher: Public Library of Science (PLoS)
+    doi: 10.1371/journal.pone.0306819
+    url: http://dx.doi.org/10.1371/journal.pone.0306819
   - id: meyer1837
     authors: Meyer, H. v.
     year: 1837
