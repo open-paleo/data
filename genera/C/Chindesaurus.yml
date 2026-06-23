@@ -23,12 +23,15 @@ paleoenvironment:
 appearance:
   integument: unknown
 diagnostic_features:
-  - Astragalus bearing a prominent anterior cleft that continues posteriorly
-    across the distal astragalar surface as a groove
-  - Distal astragalar surface subcardiform in outline, with the anterior margin
-    much wider than the posterior margin
-  - Astragalus with a prominent posteroproximal projection extending beyond the
-    proximal articular surface, medially to centrally located
+  - Diagnosed by a unique combination of character states rather than discrete
+    autapomorphies; the 'glutealiform' astragalus formerly used to diagnose the
+    genus is now referred to the Chindesaurus + Tawa hallae clade.
+  - Proximal surface of the femoral head smooth, lacking a groove.
+  - Dorsolateral ('greater') trochanter of the femur forming a rounded ridge.
+  - Dorsal centra anteroposteriorly short, with centrum length less than
+    1.33 times the height of the anterior articular surface.
+  - Prezygapophyses of the distal caudal vertebrae reduced, not extending
+    farther anteriorly than 24% of centrum length.
 identifiers:
   - source: pbdb
     id: "66908"
@@ -69,10 +72,14 @@ species:
       specimen_id: [ PEFO 10395 ]
       specimen_type: holotype
       institution: PEFO
-      material: "Partial skeleton: vertebrae, limb bones, hip fragments, right femur,
-        partial tibia, astragalus"
+      material: "Partial skeleton: cervical and dorsal centra, sacral and caudal
+        vertebrae, hemal arches, both iliac pubic peduncles with a partial iliac
+        blade and the left postacetabular process, partial pubes, the proximal
+        left and complete right femora, a partial right tibia, and a partial
+        right astragalus."
       completeness: partial
     erected_in: long1995
+    described_in: marsh2019
 references:
   - id: long1995
     authors: Long, R. A.; Murry, P. A.
@@ -83,3 +90,18 @@ references:
     volume: "4"
     pages: 1-254
     publisher: New Mexico Museum of Natural History and Science
+  - id: marsh2019
+    authors: Marsh, A. D.; Parker, W. G.; Langer, M. C.; Nesbitt, S. J.
+    year: 2019
+    title: Redescription of the holotype specimen of Chindesaurus bryansmalli
+      Long and Murry, 1995 (Dinosauria, Theropoda), from Petrified Forest
+      National Park, Arizona
+    journal: Journal of Vertebrate Paleontology
+    volume: "39"
+    issue: "3"
+    pages: e1645682
+    doi: 10.1080/02724634.2019.1645682
+    url: http://dx.doi.org/10.1080/02724634.2019.1645682
+    notes: Redescribes and re-inventories the holotype PEFO 10395, revises the
+      diagnosis, removes most referred specimens, and recovers Chindesaurus as
+      the sister taxon to Tawa hallae outside Neotheropoda.
