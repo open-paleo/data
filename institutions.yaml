@@ -15,9 +15,10 @@ XHPM:
   location:
     country: CN
     city: Dalian
-  aliases: [D, DNHM, DLNM, DMNH, DNM]
+  aliases: [D, DNHM, DLNM, DNM]
 
-AC:
+ACM:
+  aliases: [AC]
   name: Beneski Museum of Natural History, Amherst College
   location:
     country: US
@@ -28,18 +29,12 @@ AAIZ:
     country: KZ
     city: Almaty
   aliases: ["IZ AN KazSSR", "IZ AN KSSR"]
-AEHM:
+AENM:
   name: Amur Natural History Museum of the Institute of Geology and Nature Management, Russian Academy of Sciences
   location:
     country: RU
     city: Blagoveshchensk
-  aliases: [AENM, AEIM]
-ZGTM:
-  name: Chernyshev Central Museum of Geological Exploration
-  location:
-    country: RU
-    city: St. Petersburg
-  aliases: [CCMGE, CNIGR, AHCCCP, CNIGRM, TsNIGR, TsNIGRI]
+  aliases: [AEIM, AEHM]
 AMNH:
   name: American Museum of Natural History
   location:
@@ -51,29 +46,19 @@ ASDM:
     country: US
     city: Tucson
 
-ANS:
-  name: Academy of Natural Sciences
-  location:
-    country: US
-    city: Philadelphia
-  aliases: [ANSP]
 AOD:
+  aliases: [AODF]
   name: Australian Age of Dinosaurs Fossil Museum of Natural History
   location:
     country: AU
     city: Winton
 
-AODF:
-  name: Australian Age of Dinosaurs Fossil
-  location:
-    country: AU
-    city: Winton
-BBU:
+UBB:
   name: Museum of Paleontology-Stratigraphy, Department of Geology, Universitatea Babeș-Bolyai
   location:
     country: RO
     city: Cluj-Napoca
-  aliases: [MTB, TBM, UBB, MPS-BBU-CN]
+  aliases: [MTB, TBM, MPS-BBU-CN, BBU]
 BENC:
   name: Benemérita Escuela Normal de Coahuila
   location:
@@ -88,12 +73,12 @@ BGS-JX:
   name: Basic Geological Survey Institute of the Jiangxi Geological Survey and Exploration Institute
   location:
     country: CN
-BLUZ:
+MBLUZ:
   name: Museo de Biología de la Universidad del Zulia
   location:
     country: VE
     city: Maracaibo
-  aliases: [MBLUZ]
+  aliases: [BLUZ]
 
 BLRK:
   name: Bureau of Land and Resources of Kazuo County
@@ -108,12 +93,12 @@ BM:
     city: Copenhagen
   aliases: [SNM, UZM, NHMD, UZMK, ZMUC]
 
-BMNH:
+NHMUK:
   name: Natural History Museum
   location:
     country: GB
     city: London
-  aliases: [NHML, NHMUK, BM(NH)]
+  aliases: [NHML, BM(NH), BMNH]
 BMNHC:
   name: Beijing Museum of Natural History
   location:
@@ -131,12 +116,8 @@ BMRP:
     country: US
     city: Rockford, Illinois
 BP:
+  aliases: [BPI]
   name: Evolutionary Studies Institute (formerly Bernard Price Institute for Palaeontological Research), University of the Witwatersrand
-  location:
-    country: ZA
-    city: Johannesburg
-BPI:
-  name: Evolutionary Studies Institute, University of the Witwatersrand
   location:
     country: ZA
     city: Johannesburg
@@ -145,32 +126,25 @@ BPM:
   location:
     country: CN
     city: Beipiao
-BRSMG:
+BMAG:
   name: Bristol City Museum and Art Gallery
   location:
     country: GB
     city: Bristol
-  aliases: [BCM, BRSUG]
-BRT:
+  aliases: [BCM, BRSUG, BRSMG]
+USTL:
   name: Université de Montpellier
   location:
     country: FR
     city: Montpellier
-  aliases: [USTL, ISE-M, LG-FSM]
+  aliases: [ISE-M, LG-FSM, BRT]
 
-BSM:
-  name: Bayerische Staatssammlung für Paläontologie und Geologie
-  location:
-    country: DE
-    city: München
-  aliases: [PMM, BSPM, BSPHG, BSPHM, SNSB-BSPG]
-
-BSP:
+BSPG:
   name: Bayerische Staatssammlung für Paläontologie und Geologie
   location:
     country: DE
     city: Munich
-  aliases: [BSPG]
+  aliases: [BSP, BSM, PMM, BSPM, BSPHG, BSPHM, SNSB-BSPG]
 BXGM:
   name: Benxi Geological Museum
   location:
@@ -182,18 +156,12 @@ BYU:
   location:
     country: US
     city: Provo
-CAD:
+JLUM:
   name: Jilin University Museum
   location:
     country: CN
     city: Changchun
-  aliases: [CUST, JLUM, RCPS]
-CAGS-IG:
-  name: Chinese Academy of Geological Sciences-Institute of Geology
-  location:
-    country: CN
-    city: Beijing
-
+  aliases: [CUST, RCPS, CAD]
 CAMSM:
   name: Sedgwick Museum, University of Cambridge
 CCG:
@@ -202,6 +170,7 @@ CCG:
     country: CN
     city: Chengdu
 CCMGE:
+  aliases: [ZGTM, CNIGR, AHCCCP, CNIGRM, TsNIGR, TsNIGRI]
   name: F.N. Chernyshev Central Museum of Geological Exploration
   location:
     country: RU
@@ -212,28 +181,29 @@ UWA:
     country: AU
     city: Crawley
   aliases: [CENRM]
-CEPUNL:
+FCT-UNL:
+  aliases: [CEPUNL]
   name: Centro de Estratigrafia e Paleobiologia, Universidade Nova de Lisboa
   location:
     country: PT
     city: Lisbon
-CEU:
+CEUM:
   name: College of Eastern Utah Prehistoric Museum
   location:
     country: US
     city: Price
-  aliases: [CEUM]
+  aliases: [CEU]
 CGM:
   name: Egyptian Geological Museum
   location:
     country: EG
     city: Cairo
-CHRP:
+FFLCRP:
   name: Departamento de Biologia, Faculdade de Filosofia, Ciências e Letras de Ribeirão Preto, Universidade de São Paulo
   location:
     country: BR
     city: Ribeirão Preto
-  aliases: [LIRP, LPRP, FFLCRP]
+  aliases: [LIRP, LPRP, CHRP]
 
 UFMA:
   name: Universidade Federal do Maranhão (UFMA), Campus do Bacanga
@@ -241,29 +211,30 @@ UFMA:
     country: BR
     city: São Luís
   aliases: [CPDOL, HUFMA, CHUFMA, CPUFMA]
-CIC:
+MJHG:
   name: "Museo Naturalístico, Antropológico e Histórico \"Jorge Gerhold\""
   location:
     country: AR
     city: Ingeniero Jacobacci
-  aliases: [MJHG]
+  aliases: [CIC]
 CIP:
   name: Chongqing Institute of Paleontology
   location:
     country: CN
     city: Chongqing
-CJPM:
+JZT:
+  aliases: [CJPM]
   name: Chaoyang Jizantang Paleontological Museum
   location:
     country: CN
     city: Chaoyang
 
-CL:
+CLH:
   name: Museo Paleontológico de Galve
   location:
     country: ES
     city: Teruel
-  aliases: [CLH]
+  aliases: [CL, MPG]
 CLGRP:
   name: Chongqing Laboratory of Geoheritage Protection and Research
   location:
@@ -300,12 +271,12 @@ CMNH:
     country: US
     city: Cleveland
 
-VM:
+CMP:
   name: Museo de la Valltorta
   location:
     country: ES
     city: Tírig
-  aliases: [CMP]
+  aliases: [VM]
 CPC:
   name: Colección Paleontológica de Coahuila, Museo del Desierto (MUDE)
   location:
@@ -319,36 +290,36 @@ CPM:
     city: Chuxiong
   aliases: [CXMVZA]
 
-CPP:
+CPPLIP:
   name: "Centro de Pesquisas Paleontológicas \"Llewellyn Ivor Price\", Universidade Federal do Triângulo Mineiro (UFTM), Peirópolis"
   location:
     country: BR
     city: Uberaba
-  aliases: [UFTM, CPPLIP]
+  aliases: [UFTM, CPP]
 CPT:
   name: Museo de la Fundación Conjunto Paleontológico de Teruel-Dinópolis
   location:
     country: ES
     city: Teruel
-  aliases: [MAP]
-CRE:
+  aliases: [MAP, MOAL]
+LACM:
   name: Natural History Museum of Los Angeles County
   location:
     country: US
     city: Los Angeles
-  aliases: [LACM, LACMNH]
+  aliases: [LACMNH, CRE]
 
 CRILAR:
   name: Centro Regional de Investigaciones Científicas y Transferencia Tecnológica de La Rioja
   location:
     country: AR
     city: Anillaco
-DZ:
+MZUSP:
   name: Museu de Zoologia da Universidade de São Paulo
   location:
     country: BR
     city: São Paulo
-  aliases: [MSP, MZP, CTMZ, MPSP, MZDP, MZPA, MZSP, MZUP, WCAB, ZMUP, DZUSP, Mzict, MZUSP, DZSASP, MZSP-PV]
+  aliases: [MSP, MZP, CTMZ, MPSP, MZDP, MZPA, MZSP, MZUP, WCAB, ZMUP, DZUSP, Mzict, DZSASP, MZSP-PV, DZ]
 CUT:
   name: Chengdu University of Technology
   location:
@@ -371,17 +342,18 @@ DFMMh:
     country: DE
     city: Münchehagen
 DGM:
+  aliases: [MCT]
   name: Museu da Divisão de Geologia e Mineralogia
   location:
     country: BR
     city: Rio de Janeiro
 
-QP:
+QM:
   name: Queensland Museum, Centre for Biodiversity
   location:
     country: AU
     city: Brisbane
-  aliases: [QMB, QMF, QMI, QMJ, DHMB]
+  aliases: [QMB, QMF, QMI, QMJ, DHMB, QP]
 
 DINO:
   name: Dinosaur National Monument
@@ -395,12 +367,6 @@ DMNH:
     city: Denver
   aliases: [DMNS]
 
-PW:
-  name: Bureau of Fossils Research and Geological Museum, Department of Mineral Resources, Ministry of Natural Resources and Environment, Ratchatewi
-  location:
-    country: TH
-    city: Bangkok
-  aliases: [TF, DMR]
 DYM:
   name: Dongyang Museum
   location:
@@ -426,12 +392,12 @@ FH:
   location:
     country: CN
     city: Fushan
-FHSC:
+FHSM:
   name: Sternberg Museum of Natural History, Fort Hays State University
   location:
     country: US
     city: Hays
-  aliases: [FHSM]
+  aliases: [FHSC]
 FMNH:
   name: Field Museum of Natural History
   location:
@@ -485,24 +451,24 @@ GMC:
 GMH:
   name: Geiseltalmuseum of Martin-Luther Universität Halle-Wittenberg, Germany, now referred to as the Geiseltalsammlung, housed as part of the Zentralmagazin Naturwissenschaftlicher Sammlungen
 
-MV:
+NIGP:
   name: Nanjing Institute of Geology and Palaeontology, Academia Sinica (NIGPAS)
   location:
     country: CN
     city: Nanjing
-  aliases: [GMN, NIGP, NIGPCAS]
+  aliases: [GMN, NIGPCAS, MV]
 
 GMNH:
   name: Gunma Museum of Natural History
   location:
     country: JP
     city: Gunma
-IP:
+GNM:
   name: Georgian National Museum
   location:
     country: GE
     city: Tbilisi
-  aliases: [GNM, GSM, NMG, TMT, GNHM, IPGAS]
+  aliases: [GSM, NMG, TMT, GNHM, IPGAS, IP]
 GPDM:
   name: Great Plains Dinosaur Museum
   location:
@@ -540,7 +506,6 @@ GSP:
   location:
     country: PK
     city: Quetta
-  aliases: [MSM]
 GSLTZP:
   name: Fossil Research and Development Center, Third Geology and Mineral Resources Exploration Academy of Gansu Province
   location:
@@ -563,11 +528,6 @@ GZG:
   location:
     country: DE
     city: Göttingen
-HAII:
-  name: Henan Geological Museum
-  location:
-    country: CN
-    city: Zhengzhou
 HBV:
   name: Geoscience Museum, Shijiazhuang University of Economics
   location:
@@ -578,7 +538,7 @@ HGM:
   location:
     country: CN
     city: Zhengzhou
-  aliases: [KLR, HIII]
+  aliases: [KLR, HIII, HAII]
 HM:
   name: Museum für Naturkunde Berlin
   location:
@@ -595,23 +555,11 @@ HMNS:
   location:
     country: US
     city: Houston
-HNM:
-  name: Magyar Természettudományi Múzeum
-  location:
-    country: HU
-    city: Budapest
-  aliases: [MNH, MTM, HNHM, MNSB, NHMB, PG-HNHM]
 HORSM:
   name: Horsham Museum
   location:
     country: GB
     city: Horsham
-HUE:
-  name: Museo de las Ciencias de Castilla-La Mancha
-  location:
-    country: ES
-    city: Cuenca
-  aliases: [MCCM]
 HYMV:
   name: Heyuan Dinosaur Museum
   location:
@@ -636,6 +584,7 @@ ICP:
     city: Cerdanyola del Vallès
   aliases: [IPS, IPSN, MICP]
 IGCAGS:
+  aliases: [CAGS-IG]
   name: Institute of Geology, Chinese Academy of Geological Sciences
   location:
     country: CN
@@ -678,12 +627,12 @@ ISI:
     country: IN
     city: Calcutta
   aliases: [ISIR]
-OR:
+IVIC:
   name: Instituto Venezolano de Investigaciones Científicas
   location:
     country: VE
     city: San António de los Altos
-  aliases: [IVIC]
+  aliases: [OR]
 
 IVPG:
   name: Institute of Vertebrate Paleontology, Gansu Agricultural University
@@ -697,24 +646,19 @@ IVPP:
     country: CN
     city: Beijing
 
-IWCMS:
-  name: Isle of Wight County Museum Service at Dinosaur Isle
-  location:
-    country: GB
-    city: Sandown
-JM:
+JME:
   name: Jura-Museum Eichstätt
   location:
     country: DE
     city: Eichstätt
-  aliases: [JME, SoS, JM-E]
+  aliases: [SoS, JM-E, JM]
 
-JMP:
+JZMP:
   name: Jinzhou Museum of Paleontology
   location:
     country: CN
     city: Jinzhou
-  aliases: [JZMP]
+  aliases: [JMP]
 
 JACVM:
   name: Junta de Acción Comunal de la Vereda de Monquirá
@@ -798,18 +742,18 @@ LH:
   location:
     country: CN
     city: Hohhot
-LM:
+NML:
   name: Naturkundemuseum Leipzig
   location:
     country: DE
     city: Leipzig
-  aliases: [NML, MLEP, NKML]
-LNK:
+  aliases: [MLEP, NKML, LM]
+SMNK:
   name: Staatliches Museum für Naturkunde Karlsruhe
   location:
     country: DE
     city: Karlsruhe
-  aliases: [SMNK]
+  aliases: [LNK]
 
 LPB-AR:
   name: Laboratorio de Paleontología y Biocronología, Facultad de Ciencias Exactas, Ingeniería y Agrimensura (FCEIA), Universidad Nacional de Rosario
@@ -849,7 +793,8 @@ MAE:
   location:
     country: MN
     city: Ulaanbaatar
-MAL:
+MOM:
+  aliases: [MAL]
   name: Malawi Department of Antiquities Collection
   location:
     country: MW
@@ -883,17 +828,12 @@ MCP:
   location:
     country: BR
     city: Porto Alegre
-MCST:
+MCSNT:
   name: Museo Civico di Storia Naturale di Trieste
   location:
     country: IT
     city: Trieste
-  aliases: [MCSNT]
-MCT:
-  name: Collection of the Earth Science Museum of the National Department of Mineral Production
-  location:
-    country: BR
-    city: Rio de Janeiro
+  aliases: [MCST]
 MCZ:
   name: Museum of Comparative Zoology, Harvard University
   location:
@@ -921,12 +861,12 @@ MGUAN:
 
 MGUH:
   name: Geological Museum of the University of Copenhagen
-MHBR:
+MHNH:
   name: Muséum d’Histoire Naturelle du Havre
   location:
     country: FR
     city: Le Havre
-  aliases: [MHNH]
+  aliases: [MHBR]
 MHH:
   name: Urweltmuseum Hauff
   location:
@@ -962,7 +902,7 @@ MIWG:
   location:
     country: GB
     city: Sandown
-  aliases: [Museum of the Isle of Wight]
+  aliases: [Museum of the Isle of Wight, IWCMS]
 ML:
   name: Museu da Lourinhã
 MLL:
@@ -989,7 +929,8 @@ MMS:
   location:
     country: AR
     city: Salto
-MN:
+MNRJ:
+  aliases: [MN]
   name: Museu Nacional
   location:
     country: BR
@@ -1002,6 +943,7 @@ MNA:
     city: Flagstaff
 
 MNBH:
+  aliases: [MNN]
   name: Musée National Boubou Hama
   location:
     country: NE
@@ -1017,22 +959,6 @@ MNHN:
     country: FR
     city: Paris
   aliases: [MHNP, MNHNP, MNHN-ZA]
-MNN:
-  name: Musée National du Niger
-  location:
-    country: NE
-    city: Niamey
-MNS:
-  name: Staatliches Museum für Naturkunde
-  location:
-    country: DE
-    city: Stuttgart
-  aliases: [SMNS, SMNHS]
-MOAL:
-  name: Museo Aragonés de Paleontología, Fundación Conjunto Paleontológico de Teruel-Dinópolis (FCPT-D)
-  location:
-    country: ES
-    city: Teruel
 MOR:
   name: Museum of the Rockies
   location:
@@ -1065,11 +991,6 @@ MPEF:
   location:
     country: AR
     city: Trelew
-MPG:
-  name: Museo Paleontológico de Galve
-  location:
-    country: ES
-    city: Galve
 MPM:
   name: Museo Padre Molina, Rio Gallegos
   location:
@@ -1106,24 +1027,19 @@ MSM:
   location:
     country: US
     city: Mesa
-TCM:
+MTCO:
   name: Muzeul Țării Crișurilor
   location:
     country: RO
     city: Oradea
-  aliases: [MTCO]
-MUC:
+  aliases: [TCM]
+UNCo:
   name: Universidad Nacional del Comahue
   location:
     country: AR
     city: Neuquén
-  aliases: [MUCP, UNCo]
+  aliases: [MUCP, MUC, MUCPv]
 
-MUCPv:
-  name: Museo de Geologia y Paleontologia de la Universidad Nacional del Comahue
-  location:
-    country: AR
-    city: Neuquén
 MUGEO:
   name: Museu Geológico Valdemar Lefèvre
   location:
@@ -1139,12 +1055,12 @@ MUVP:
   location:
     country: EG
     city: Mansoura
-MVP:
+UCMP:
   name: University of California Museum of Paleontology
   location:
     country: US
     city: Berkeley
-  aliases: [UCMP]
+  aliases: [MVP]
 MWC:
   name: Museums of Western Colorado, Dinosaur Journey
   location:
@@ -1171,12 +1087,12 @@ NMMNH:
     country: US
     city: Albuquerque
   aliases: [NMBGMR]
-NMNH:
+USNM:
   name: "National Museum of Natural History, Smithsonian Institution"
   location:
     country: US
     city: Washington D.C.
-  aliases: [USNM]
+  aliases: [NMNH]
 NMT:
   name: National Museum of Tanzania
   location:
@@ -1290,7 +1206,8 @@ PRC:
   location:
     country: TH
     city: Kantarawichai
-PS:
+MDS:
+  aliases: [PS]
   name: Museo de Dinosaurios de Salas de los Infantes
   location:
     country: ES
@@ -1313,7 +1230,8 @@ PVL:
     country: AR
     city: Tucumán
 
-PVSJ:
+UNSJ:
+  aliases: [PVSJ]
   name: División de Paleontología de Vertebrados del Museo de Ciencias Naturales y Universidad Nacional de San Juan
   location:
     country: AR
@@ -1343,12 +1261,12 @@ RAM:
 RBCM:
   name: Royal BC Museum
 
-RBINS:
+IRSNB:
   name: Royal Belgian Institute of Natural Sciences
   location:
     country: BE
     city: Brussels
-  aliases: [IRSNB]
+  aliases: [RBINS]
 ROM:
   name: Royal Ontario Museum
   location:
@@ -1451,7 +1369,8 @@ SMPSMU:
   location:
     country: US
     city: Dallas
-SMU:
+UMD:
+  aliases: [SMU]
   name: Schuler Museum of Paleontology, Southern Methodist University
   location:
     country: US
@@ -1472,12 +1391,6 @@ STM:
     country: CN
     city: Pingyi
   aliases: [STMN]
-TMH:
-  name: Teylers Museum
-  location:
-    country: NL
-    city: Haarlem
-  aliases: [TSMHN]
 TMM:
   name: Texas Memorial Museum, Austin, Texas, USA (used for collections now housed in the Vertebrate Paleontology Collections at the Jackson School Museum of Earth History, Austin, Texas, USA), now called the Texas Science and Natural History Museum
 TLAM:
@@ -1485,18 +1398,19 @@ TLAM:
   location:
     country: US
     city: Timber Lake
-TM:
+DNMNH:
   name: Ditsong National Museum of Natural History
   location:
     country: ZA
     city: Pretoria
-  aliases: [TrM]
+  aliases: [TrM, TM, TMH, TSMHN]
 TNM:
   name: Tongnan Museum
   location:
     country: CN
     city: Chongqing
-UA:
+UADBA:
+  aliases: [UA]
   name: Universite d’Antananarivo
   location:
     country: MG
@@ -1523,14 +1437,15 @@ UCM:
   location:
     country: US
     city: Boulder
-UCPC:
+UCRC:
   name: University of Chicago Research Collection
   location:
     country: US
     city: Chicago
-  aliases: [UCRC]
+  aliases: [UCPC]
 
-SDNHM:
+SDSNH:
+  aliases: [SDNHM]
   name: San Diego Natural History Museum
   location:
     country: US
@@ -1559,7 +1474,8 @@ ULBRA:
   location:
     country: BR
     city: Canoas-RS
-UM:
+UMMP:
+  aliases: [UM]
   name: Museum of Paleontology, University of Michigan
   location:
     country: US
@@ -1590,18 +1506,18 @@ WARMS:
     country: GB
     city: Warwick
 
-WDC:
+WYDICE:
   name: Wyoming Dinosaur Center
   location:
     country: US
     city: Thermopolis
-  aliases: [WYDICE]
-ZH:
+  aliases: [WDC]
+ZMNH:
   name: Zhejiang Museum of Natural History
   location:
     country: CN
     city: Hangzhou
-  aliases: [ZNM, ZPM, WLMH, ZMNH]
+  aliases: [ZNM, ZPM, WLMH, ZH]
 WMNM:
   name: LWL-Museum für Naturkunde
   location:
@@ -1617,12 +1533,12 @@ YFGP:
   location:
     country: CN
     city: Yixian
-YH:
+YHZ:
   name: Yizhou Fossil Museum
   location:
     country: CN
     city: Yixian
-  aliases: [YHK, YHZ]
+  aliases: [YHK, YH]
 YLSNHM:
   name: Yinliang Stone Natural History Museum
   location:
@@ -1652,7 +1568,8 @@ ZG:
     country: CN
     city: Zigong
   aliases: [ZDM]
-ZIN:
+ZISP:
+  aliases: [ZIN]
   name: Zoological Institute, Russian Academy of Sciences
   location:
     country: RU
@@ -1718,7 +1635,7 @@ SMNS:
   location:
     country: DE
     city: Stuttgart
-  aliases: [SMNS-P]
+  aliases: [SMNS-P, MNS, SMNHS]
 
 GPIH:
   name: Geological-Paleontological Institute and Museum
@@ -1758,10 +1675,11 @@ NMW:
   aliases: [NMGW, AC-NMW]
 
 ANSP:
-  name: Academy of Natural Sciences of Drexel University
+  name: Academy of Natural Sciences of Philadelphia
   location:
     country: US
     city: Philadelphia
+  aliases: [ANS]
 
 NSM:
   name: Nevada State Museum
@@ -1903,6 +1821,7 @@ PKNU:
     city: Busan
 
 DMR:
+  aliases: [PW, TF]
   name: Department of Mineral Resources
   location:
     country: TH
@@ -1927,6 +1846,7 @@ MTD:
     city: Morella
 
 MCCM:
+  aliases: [HUE]
   name: Coleccions de la Conselleria de Cultura de Morella
   location:
     country: ES
@@ -1950,19 +1870,22 @@ HGI:
     country: HR
     city: Zagreb
 
-MAFI:
+GIH:
+  aliases: [MAFI]
   name: Hungarian Geological Survey
   location:
     country: HU
     city: Budapest
 
 HNHM:
+  aliases: [HNM, MNH, MTM, MNSB, NHMB, PG-HNHM]
   name: Hungarian Natural History Museum
   location:
     country: HU
     city: Budapest
 
-PIUW:
+IPUW:
+  aliases: [PIUW]
   name: Paläontologisches Institut und Museum der Universität Wien
   location:
     country: AT
@@ -2061,7 +1984,8 @@ USMBA:
   location:
     country: MA
     city: Fez
-UW:
+UWBM:
+  aliases: [UW]
   name: University of Wyoming Geological Museum
   location:
     country: US
@@ -2084,7 +2008,8 @@ DGBU:
     country: KR
     city: Busan
 
-UEN:
+FAU:
+  aliases: [UEN]
   name: Geozentrum Nordbayern, Friedrich-Alexander-Universität Erlangen-Nürnberg
   location:
     country: DE
