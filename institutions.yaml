@@ -1,5 +1,5 @@
 # Institution registry for vertebrate palaeontology.
-# Sources: Wedel et al. crowdsourced vert-palaeo list; Sabaj 2023 MASTER LIST v9.8.
+# Sources: Wedel et al. crowdsourced vert-palaeo list; Sabaj MASTER LIST v13 (2026-06-19).
 # Format: keyed by canonical abbreviation with name, location, and aliases.
 #
 # Disambiguation policy. When two institutions share an abbreviation,
@@ -329,10 +329,12 @@ CUT:
   location:
     country: CN
     city: Chengdu
-CV:
-  name: Chongqing Natural History Museum
+CFEC:
+  name: Chongqing Museum of Natural History
   location:
     country: CN
+    city: Chongqing
+  aliases: [CV]
 
 CVEB:
   name: Centre for Vertebrate Evolutionary Biology, Yunnan University
@@ -450,9 +452,10 @@ GMC:
   aliases: [GMV, NGMC]
 
 GMH:
-  name: Geiseltalmuseum of Martin-Luther Universität Halle-Wittenberg, Germany, now referred to as the Geiseltalsammlung, housed as part of the Zentralmagazin Naturwissenschaftlicher Sammlungen
+  name: Geological Museum of Heilongjiang
   location:
-    country: DE
+    country: CN
+    city: Harbin
 
 NIGP:
   name: Nanjing Institute of Geology and Palaeontology, Academia Sinica (NIGPAS)
