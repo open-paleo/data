@@ -118,8 +118,22 @@ names and `(Author Year)` no-comma single-citation parentheticals.
 ## Institution Registry
 
 Every `holotype.institution` value must be a key in
-[`institutions.yaml`](./institutions.yaml). When two institutions share
-an abbreviation, both entries are disambiguated with an
+[`institutions.yaml`](./institutions.yaml).
+
+The [Sabaj MASTER LIST](https://doi.org/10.1643/ASIHCODONS2020) (the
+current version — see the `institutions.yaml` header for the one used in
+the last full audit) is the **canonical authority** for which code
+denotes which institution. Prefer Sabaj's current code for an
+institution, and keep any superseded codes as `aliases` so existing
+specimen-number prefixes still resolve. Two cases fall outside Sabaj and
+are handled locally: (1) institutions **absent** from Sabaj (many
+smaller or regional museums) — choose a sensible code from the describing
+literature; and (2) **collisions**, where one code denotes two genuinely
+different institutions — disambiguate with the ISO-suffix rule below
+rather than adopting Sabaj's single owner.
+
+When two institutions share an abbreviation, both entries are
+disambiguated with an
 ISO-3166-1 alpha-2 country suffix: `<CODE>-<ISO>` (e.g. `MCNA-AR` for
 the Mendoza museum, `MCNA-ES` for the Vitoria-Gasteiz museum). No bare
 key may remain when a collision exists — adding a new colliding entry
