@@ -86,12 +86,12 @@ BLRK:
     country: CN
     city: Kazuo
 
-BM:
+NHMD:
   name: Statens Naturhistoriske Museum (SNM), Københavns Universitet
   location:
     country: DK
     city: Copenhagen
-  aliases: [SNM, UZM, NHMD, UZMK, ZMUC]
+  aliases: [SNM, UZM, UZMK, ZMUC, BM, MGUH]
 
 NHMUK:
   name: Natural History Museum
@@ -163,6 +163,7 @@ JLUM:
     city: Changchun
   aliases: [CUST, RCPS, CAD]
 CAMSM:
+  aliases: [SMG, SM]
   name: Sedgwick Museum, University of Cambridge
   location:
     country: GB
@@ -219,7 +220,8 @@ MJHG:
     country: AR
     city: Ingeniero Jacobacci
   aliases: [CIC]
-CIP:
+CIP-CN:
+  aliases: [CIP]
   name: Chongqing Institute of Paleontology
   location:
     country: CN
@@ -440,11 +442,6 @@ GG:
   location:
     country: DE
     city: Greifswald
-GI:
-  name: Geological Institute, Mongolian Academy of Sciences
-  location:
-    country: MN
-    city: Ulaanbaatar
 GMC:
   name: National Geological Museum of China
   location:
@@ -545,12 +542,12 @@ HGM:
     country: CN
     city: Zhengzhou
   aliases: [KLR, HIII, HAII]
-HM:
-  name: Museum für Naturkunde Berlin
+ZMB:
+  name: "Museum für Naturkunde, Berlin"
   location:
     country: DE
     city: Berlin
-  aliases: [MB, HMB, HMN, MfN, HMNB, MB.R.]
+  aliases: [MB, HMB, HMN, MfN, HMNB, MB.R., HM]
 HMG:
   name: Hobetsu Museum
   location:
@@ -595,11 +592,6 @@ IGCAGS:
   location:
     country: CN
     city: Beijing
-IGM-MN:
-  name: Institute of Geology, Mongolian Academy of Sciences
-  location:
-    country: MN
-    city: Ulaanbaatar
 IGM-MX:
   name: Instituto de Geología, Universidad Nacional Autónoma de México
   location:
@@ -710,7 +702,8 @@ KU:
     country: US
     city: Lawrence
   aliases: [KUI, KUIT, KUMNH, KUNHM, UKMNH]
-LCM:
+LCM-GB:
+  aliases: [LCM]
   name: Leicester Museum & Art Gallery
   location:
     country: GB
@@ -867,8 +860,6 @@ MGUAN:
     country: AO
     city: Luanda
 
-MGUH:
-  name: Geological Museum of the University of Copenhagen
 MHNH:
   name: Muséum d’Histoire Naturelle du Havre
   location:
@@ -901,12 +892,12 @@ MMNH:
     city: Marseille
   aliases: [MHNMF]
 
-MHP:
-  name: Paleontological and Paleobotanical Museum
+NMP:
+  name: "National Museum, Prague"
   location:
-    country: GR
-    city: Nostimo Kastorias
-  aliases: [NMP, MNHP, NMP6V]
+    country: CZ
+    city: Prague
+  aliases: [MNHP, NMP6V, MHP]
 MIWG:
   name: Dinosaur Isle Museum
   location:
@@ -985,6 +976,7 @@ MOZ:
     country: AR
     city: Zapala
 MPC:
+  aliases: [GIN, GI, IGM-MN, IGM, MGI]
   name: Paleontological Center, Mongolian Academy of Sciences
   location:
     country: MN
@@ -1038,7 +1030,8 @@ MSC:
     city: Birmingham
   aliases: [RMM]
 
-MSM:
+MSM-US:
+  aliases: [MSM]
   name: Mesa Southwest Museum
   location:
     country: US
@@ -1128,7 +1121,8 @@ NMV P:
     country: AU
     city: Melbourne
 
-NMZ:
+NMZB:
+  aliases: [NMZ, NHMZ, QG]
   name: Natural History Museum of Zimbabwe
   location:
     country: ZW
@@ -1292,7 +1286,8 @@ ROM:
   location:
     country: CA
     city: Toronto
-RSM:
+RSM-CA:
+  aliases: [RSM]
   name: Royal Saskatchewan Museum
   location:
     country: CA
@@ -1377,11 +1372,6 @@ SMF-DE:
   location:
     country: DE
     city: Frankfurt am Main
-SMG:
-  name: Sedgwick Museum of Geology
-  location:
-    country: GB
-    city: Cambridge
 SMP:
   name: State Museum of Pennsylvania
   location:
@@ -1650,12 +1640,6 @@ PEFI:
     country: BR
     city: Presidente Prudente
 
-GIN:
-  name: Geological Institute, Mongolian Academy of Sciences
-  location:
-    country: MN
-    city: Ulaanbaatar
-
 SMNS:
   name: Staatliches Museum für Naturkunde
   location:
@@ -1681,7 +1665,8 @@ MHNM-AC:
     country: MA
     city: Marrakech
 
-MGB:
+MGB-FR:
+  aliases: [MGB]
   name: Musée Géologique du Boulonnais
   location:
     country: FR
@@ -1693,12 +1678,12 @@ MNEM:
     country: MA
     city: Rabat
 
-NMW:
+NMW-GB:
   name: National Museum Wales
   location:
     country: GB
     city: Cardiff
-  aliases: [NMGW, AC-NMW]
+  aliases: [NMGW, AC-NMW, NMW]
 
 ANSP:
   name: Academy of Natural Sciences of Philadelphia
@@ -1707,7 +1692,8 @@ ANSP:
     city: Philadelphia
   aliases: [ANS]
 
-NSM:
+NSM-US:
+  aliases: [NSM]
   name: Nevada State Museum
   location:
     country: US
@@ -1768,19 +1754,22 @@ CDM:
     country: CN
     city: Xingcheng
 
-SCM:
+SCM-CN:
+  aliases: [SCM]
   name: Sichuan Provincial Museum
   location:
     country: CN
     city: Chengdu
 
-SUM:
+SUM-CN:
+  aliases: [SUM]
   name: Shijiazhuang University Museum
   location:
     country: CN
     city: Shijiazhuang
 
-NWU:
+NWU-CN:
+  aliases: [NWU]
   name: Northwest University
   location:
     country: CN
@@ -1865,7 +1854,8 @@ MCD:
     country: ES
     city: Isona
 
-MTD:
+MTD-ES:
+  aliases: [MTD]
   name: Museu Temps de Dinosaures
   location:
     country: ES
@@ -1976,7 +1966,8 @@ SGMU:
     country: UZ
     city: Tashkent
 
-UPM:
+UPM-RU:
+  aliases: [UPM]
   name: Udory Paleontological Museum
   location:
     country: RU
