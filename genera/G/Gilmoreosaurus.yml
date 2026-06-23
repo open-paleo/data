@@ -5,30 +5,23 @@ pronunciation:
 etymology: Charles Whitney Gilmore's lizard; named in honor of American paleontologist Charles Whitney Gilmore, combined with Greek sauros (lizard)
 description: Gilmoreosaurus is a genus of hadrosauromorphan dinosaur from the
   Late Cretaceous of Asia. The type species is Gilmoreosaurus mongoliensis,
-  known from the Iren Dabasu Formation of Inner Mongolia, dating to 96 million
-  years ago. Additional specimens have been described as distinct species,
-  including G. atavus from the Khodzhakul Formation of Uzbekistan, and G.
-  arkhangelskyi from the Bissekty Formation, also of Uzbekistan. However, these
-  are based on very fragmentary remains, and their classification is dubious. An
-  additional species, G. kysylkumense, also from the Bissekty Formation, is
-  sometimes included, though it has also been referred to the related genus
-  Bactrosaurus.
+  known from the Iren Dabasu Formation of Inner Mongolia, of latest Campanian
+  to early Maastrichtian age. Additional specimens have been described as
+  distinct species, including G. atavus from the Khodzhakul Formation of
+  Uzbekistan, and G. arkhangelskyi from the Bissekty Formation, also of
+  Uzbekistan. However, these are based on very fragmentary remains, and their
+  classification is dubious. An additional species, G. kysylkumense, also from
+  the Bissekty Formation, is sometimes included, though it has also been
+  referred to the related genus Bactrosaurus.
 diet: herbivore
 locomotion: facultative
 diagnostic_features:
-  - Maxillary dental series with only 29 vertical tooth rows in adults.
-  - Maxillary apex of triangular outline located near mid-length of bone.
-  - Maxillary teeth spatulate with a low, sharp-edged median carina and
-    papillae present on all teeth of the maxillary series.
-  - Dorsal vertebrae with relatively short spinous processes (approximately
-    2.25 times centrum height) without transverse club-shaped thickening, and
-    centra with a longitudinal ventral keel.
-  - Sacral spinous processes broad fore-aft (widest measuring 82 mm) without
-    upward thickening, with posterior sacral centra traversed by a median
-    longitudinal ventral channel.
-  - Scapula with a nearly straight upper border and only moderately expanded
-    blade; predentary strongly U-shaped with a transverse ventral depression
-    at the anterior end and no posteriorly directed median process.
+  - Paddle-shaped postacetabular process of the ilium, less than 70% of the
+    length of the iliac central plate.
+  - Ilium combining an ischial tuberosity with a supraacetabular process whose
+    apex lies posterodorsal to the ischial peduncle (a unique combination
+    within Hadrosauroidea).
+  - Manual phalanx III-1 with a strongly asymmetrical distal articular surface.
 paleoenvironment:
   - fluvial
 appearance:
@@ -53,8 +46,9 @@ species:
         - Late Cretaceous
       stage:
         - Campanian
-      from_ma: 83.6
-      to_ma: 72.2
+        - Maastrichtian
+      from_ma: 73.0
+      to_ma: 70.0
     location:
       country: CN
       locality: Quarry 149, Iren Dabasu
@@ -71,18 +65,18 @@ species:
         min: 1200
         max: 3600
     erected_in: brett-surman1979
+    described_in: prieto-márquez2010b
     holotype:
-      specimen_id: [AMNH 6551]
-      specimen_type: holotype
+      specimen_id: [AMNH FARB 30735]
+      specimen_type: lectotype
       institution: AMNH
-      material: Disarticulated skull elements (maxillary, dentary fragment,
-        squamosal, quadrates, lacrimals, jugal, predentary), cervical, dorsal,
-        sacral, and caudal vertebrae, scapulae, coracoids, humerus, ulna,
-        radius, ilia, pubis, femur, tibia, and pes elements.
-      completeness: partial
-      notes: AMNH 6551 was originally one of two cotypes (with AMNH 6371)
-        under Gilmore (1933); Brett-Surman (1979) erected the genus
-        Gilmoreosaurus and treats AMNH 6551 as the holotype.
+      material: Complete right ilium.
+      completeness: fragmentary
+      notes: Prieto-Márquez & Norell (2010) recataloged the former AMNH 6551
+        type lot — disarticulated bones of at least four individuals — into
+        individual specimen numbers (AMNH FARB 30653-30773) and designated the
+        right ilium AMNH FARB 30735 as the lectotype; the remaining elements,
+        with the predentary AMNH 6369 (Gilmore's cotype), form the hypodigm.
     synonyms:
       - name: Mandschurosaurus mongoliensis
         type: junior subjective
@@ -112,3 +106,17 @@ references:
     notes: Original description of the species as Mandschurosaurus
       mongoliensis on cotype material AMNH 6551 and AMNH 6371 from the Iren
       Dabasu Formation, Inner Mongolia.
+  - id: prieto-márquez2010b
+    authors: Prieto-Márquez, A.; Norell, M. A.
+    year: 2010
+    title: "Anatomy and relationships of Gilmoreosaurus mongoliensis
+      (Dinosauria, Hadrosauroidea) from the late Cretaceous of Central Asia"
+    journal: American Museum Novitates
+    issue: "3694"
+    pages: 1-49
+    publisher: American Museum of Natural History
+    doi: 10.1206/3694.2
+    url: http://dx.doi.org/10.1206/3694.2
+    notes: Redescription of the recataloged type material; designates the
+      lectotype AMNH FARB 30735, emends the diagnosis, and recovers G.
+      mongoliensis as a non-hadrosaurid hadrosauroid close to Hadrosauridae.
