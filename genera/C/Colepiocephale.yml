@@ -7,25 +7,32 @@ description: Colepiocephale is a genus of pachycephalosaurid dinosaur from Late
   Cretaceous (middle Campanian stage) deposits of Alberta, Canada. It was
   collected from the Foremost Formation. The type species, C. lambei, was
   originally described by Sternberg in 1945 as Stegoceras lambei, and later
-  renamed by Sullivan in 2003. C. lambei is a domed pachycephalosaur
-  characterized principally by the lack of a lateral and posteriosquamosal
-  shelf, a steeply down-turned parietal, and the presence of two incipient nodes
-  tucked under the posterior margin of the parietosquamosal border.
+  renamed by Sullivan in 2003. C. lambei is a small domed pachycephalosaur
+  known only from incomplete frontoparietal domes. A 2009 redescription by
+  Schott and colleagues showed that the posteromedial extension of the parietal
+  is broken off in every specimen and that the supratemporal fenestrae remained
+  open, refuting earlier interpretations of a reduced occiput and
+  ontogenetically lost squamosals; the genus is now diagnosed chiefly by
+  features of the dome, including prominent, columnar supraorbital lobes and a
+  narrow, high frontonasal boss.
 diet: herbivore
 locomotion: bipedal
 paleoenvironment:
   - coastal
 diagnostic_features:
-  - Parietal strongly down-turned, forming steeply inclined border across entire
-    posterior breadth of skull
-  - Squamosals restricted to lateral sides and much reduced, with no lateral or
-    posterior squamosal shelf
-  - Peripheral elements (postorbital, posterior supraorbital, anterior
-    supraorbital, prefrontal) reduced and situated low along the frontoparietal
-  - Frontoparietal dome with pronounced constriction (diastema) at contact of
-    postorbital and posterior supraorbital viewed dorsally
-  - Lateral frontal lobes (prefrontal and anterior supraorbital) incipient and
-    recessed posteriorly, with medial nasal boss prominent and relatively narrow
+  - Frontoparietal dome reaching its greatest width near the posterior margin
+    of the sutural surface for the postorbital.
+  - Inflated parietal region of the dome overhanging the anterior margin of the
+    supratemporal fenestrae.
+  - Sutural surface for the postorbital highly arched, producing a pronounced
+    diastema between the sutural surfaces for the postorbital and posterior
+    supraorbital.
+  - Diastema accompanied by a distinct indentation in the lateral wall of the
+    dome.
+  - Frontonasal boss narrow and high, flanked at its posterior end by the
+    supraorbital lobes.
+  - Supraorbital lobes highly distinct and columnar (pillar-like in larger
+    specimens).
 appearance:
   features:
     - cranial dome
@@ -62,13 +69,15 @@ species:
       specimen_id: [CMN 8818]
       specimen_type: holotype
       institution: CMN
-      material: Nearly complete frontoparietal dome with peripheral skull elements.
+      material: Nearly complete frontoparietal dome, missing the posteromedial
+        extension of the parietal and all peripheral skull bones.
       completeness: fragmentary
     size:
       length_m:
         min: 1.9
         max: 1.9
     erected_in: sullivan2003b
+    described_in: schott2009
 references:
   - id: sullivan2003b
     authors: Sullivan, R. M.
@@ -82,6 +91,22 @@ references:
     publisher: Informa UK Limited
     doi: 10.1671/0272-4634(2003)23[181:rotdsl]2.0.co;2
     url: http://dx.doi.org/10.1671/0272-4634(2003)23[181:rotdsl]2.0.co;2
+  - id: schott2009
+    authors: Schott, R. K.; Evans, D. C.; Williamson, T. E.; Carr, T. D.;
+      Goodwin, M. B.
+    year: 2009
+    title: "The anatomy and systematics of Colepiocephale lambei (Dinosauria:
+      Pachycephalosauridae)"
+    journal: Journal of Vertebrate Paleontology
+    volume: "29"
+    issue: "3"
+    pages: 771-786
+    publisher: Informa UK Limited
+    doi: 10.1671/039.029.0329
+    url: http://dx.doi.org/10.1671/039.029.0329
+    notes: Anatomical redescription of all known C. lambei material;
+      reinterprets the parietosquamosal region (open supratemporal fenestrae,
+      squamosals unpreserved) and revises the diagnosis.
   - id: jones2026a
     authors: Jones, B.; Viola, E.
     year: 2026
