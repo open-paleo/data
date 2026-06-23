@@ -13,6 +13,16 @@ locomotion: bipedal
 paleoenvironment:
   - fluvial
   - lacustrine
+diagnostic_features:
+  - Eleven dentary teeth, restricted to the anterior portion of the dentary.
+  - Transition between anterior and posterior caudal vertebrae at the
+    eighteenth caudal vertebra.
+  - Triangular-shaped depression on the dorsal surface of the supraglenoid
+    buttress of the scapula.
+  - Low ridge dorsal to that depression, along the posterior edge of the
+    scapular blade.
+  - Small but deep collateral ligament fossa on the lateral condyle of
+    metacarpal III.
 appearance:
   integument: feathered
   evidence: inferred
@@ -50,6 +60,9 @@ species:
       specimen_id: [ IGM 100/29 ]
       specimen_type: holotype
       institution: MPC
+      material: Nearly complete skeleton, missing parts of the pectoral
+        girdles, pelvic girdles, and hindlimbs.
+      completeness: partial
     size:
       hip_height_m:
         min: 0.8
@@ -61,6 +74,7 @@ species:
         min: 147
         max: 147
     erected_in: barsbold1984
+    described_in: kobayashi2005b
 references:
   - id: barsbold1984
     authors: Barsbold, R.; Perle, A.
@@ -71,6 +85,17 @@ references:
     volume: "1984"
     issue: "2"
     pages: 118-120
+  - id: kobayashi2005b
+    authors: Kobayashi, Y.; Barsbold, R.
+    year: 2005
+    title: "Anatomy of Harpymimus okladnikovi Barsbold and Perle 1984
+      (Dinosauria; Theropoda) of Mongolia"
+    book: The Carnivorous Dinosaurs
+    publisher: Indiana University Press, Bloomington (K. Carpenter, ed.)
+    pages: 97-126
+    notes: Redescription of the holotype IGM 100/29; provides a self-contained
+      amended diagnosis and detailed anatomy, independent of Kobayashi's 2004
+      thesis.
   - id: jones2026c
     authors: Jones, B.; Viola, E.
     year: 2026
