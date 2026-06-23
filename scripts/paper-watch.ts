@@ -115,7 +115,9 @@ type WatchHit = {
  */
 type WatchState = {
     /**
-     * ISO date of the previous successful run (used as the default `since`).
+     * ISO date of the previous successful run. Informational only: the fetch
+     * window is a fixed publication-date lookback (see parseOptions), and
+     * re-report suppression is handled entirely by `seen`.
      */
     lastRun: string | null;
 
@@ -135,20 +137,23 @@ type Options = {
     maxPages: number;
     conceptId: string;
     mailto: string;
+    apiKey: string | null;
     writeState: boolean;
     jsonPath: string | null;
     allShort: boolean;
 };
 
 /**
- * Parses process arguments into a typed options object, applying defaults
- * and deriving the `since` date from saved state when not given explicitly.
+ * Parses process arguments into a typed options object, applying defaults.
+ * Unless an explicit `--since` is given, the window is a fixed `--days`
+ * lookback (default 60) ending today — deliberately NOT "since the last run",
+ * so works that OpenAlex indexes weeks after their backdated publication date
+ * stay within range until caught; the persisted `seen` set dedups them.
  *
  * @param argv - Raw arguments (typically `process.argv.slice(2)`).
- * @param state - Previously persisted watcher state.
  * @returns The resolved options for this run.
  */
-function parseOptions(argv: Array<string>, state: WatchState): Options
+function parseOptions(argv: Array<string>): Options
 {
     const flag = (name: string): string | null =>
     {
@@ -157,8 +162,8 @@ function parseOptions(argv: Array<string>, state: WatchState): Options
         return index >= 0 && index + 1 < argv.length ? argv[index + 1] : null;
     };
 
-    const days = Number(flag("--days") ?? "30");
-    let since = flag("--since") ?? state.lastRun;
+    const days = Number(flag("--days") ?? "60");
+    let since = flag("--since");
 
     if (!since)
     {
@@ -174,6 +179,7 @@ function parseOptions(argv: Array<string>, state: WatchState): Options
         maxPages: Number(flag("--max-pages") ?? "25"),
         conceptId: flag("--concept") ?? paleontologyConceptId,
         mailto: flag("--mailto") ?? process.env.OPENALEX_MAILTO ?? "open-paleo@users.noreply.github.com",
+        apiKey: flag("--api-key") ?? process.env.OPENALEX_API_KEY ?? null,
         writeState: argv.includes("--write-state"),
         jsonPath: flag("--json"),
         allShort: argv.includes("--all-short"),
@@ -446,6 +452,16 @@ function dedupHits(candidates: Array<WatchHit>): Array<WatchHit>
  * Fetches recent paleontology works from OpenAlex, page by page, and yields
  * the raw work objects. Uses cursor pagination and the polite pool (mailto).
  *
+ * Windows by `from_publication_date` over a rolling fixed lookback (see
+ * `--days`), NOT "since the last run". OpenAlex indexes works days-to-weeks
+ * after their (often publisher-backdated) publication date, so a narrow
+ * since-last-run window permanently misses any work indexed after its
+ * publication date has already scrolled past the boundary. A fixed lookback
+ * keeps recently-published works in range until they are indexed; the `seen`
+ * set prevents re-reporting them on subsequent runs. (`from_created_date`,
+ * which would window by index date directly, is an OpenAlex premium-plan
+ * filter and returns "Plan upgrade required" on the free tier.)
+ *
  * @param options - Resolved run options.
  * @returns The collected work objects.
  */
@@ -466,6 +482,14 @@ async function fetchRecentWorks(options: Options): Promise<Array<Record<string, 
             mailto: options.mailto,
             select: "id,doi,title,publication_date,primary_location,open_access,abstract_inverted_index",
         });
+
+        // OpenAlex moved to API-key credits: an authenticated key raises the
+        // daily allowance from $0.10 to $1 (~10,000 list calls). Passed as a
+        // query parameter per the OpenAlex auth guide; kept out of logs.
+        if (options.apiKey)
+        {
+            query.set("api_key", options.apiKey);
+        }
 
         const response = await fetch(`${openAlexBase}?${query.toString()}`);
 
@@ -730,7 +754,7 @@ function renderDigest(hits: Array<WatchHit>, options: Options): string
 async function main(): Promise<void>
 {
     const state = loadState();
-    const options = parseOptions(process.argv.slice(2), state);
+    const options = parseOptions(process.argv.slice(2));
     const { generaByName, cladeNames, allCladeNames, genusCount } = buildNameIndex(options.includeClades);
 
     console.log(

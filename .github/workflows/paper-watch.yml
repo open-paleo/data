@@ -48,6 +48,7 @@ jobs:
       - name: Run paper watch
         env:
           OPENALEX_MAILTO: ${{ vars.OPENALEX_MAILTO }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
           SINCE: ${{ github.event.inputs.since }}
         run: |
           args=(--write-state --json reports/paper-watch.json)

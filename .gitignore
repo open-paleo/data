@@ -28,5 +28,11 @@ reports/notable-specimens-candidates.md
 # never committed (and written locally by a dry run with --write-state).
 .github/paper-watch/
 
+# Local environment / secrets (e.g. OPENALEX_API_KEY for paper-watch).
+# Loaded by `npm run paper-watch` via node --env-file-if-exists; never committed.
+# CI supplies the same vars from workflow secrets, so no .env exists there.
+.env
+.env.*
+
 # MacOS
 .DS_Store
