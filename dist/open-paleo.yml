@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-06-23T22:38:19.110Z
+  built_at: 2026-06-23T22:57:34.467Z
   clade_count: 250
   genus_count: 1398
   license: CC-BY-4.0
@@ -58374,17 +58374,15 @@ genera:
     etymology: Jaw bite; from Greek genys (jaw) and dektes (bite)
     pronunciation:
       phonetic: JEN-ee-o-DEK-teez
-    description: Genyodectes and dektes ("bite")) is a genus of ceratosaurian theropod dinosaur from the Lower Cretaceous (Aptian) of South America. The holotype material (MLP 26-39, Museo de La Plata, La Plata, Argentina) was collected from the Cerro Barcino Formation, Cañadón Grande, Departamento Paso de Indios in the Chubut Province of Argentina and consists of an incomplete snout, including the premaxillae, portions of both maxillas, the right and left dentary, many teeth, a fragment of the left splenial, and parts of the supradentaries. These elements are generally poorly preserved and some are in articulation. The premaxilla of Genyodectes possesses relatively large and protruding teeth, similar to those of Ceratosaurus. The specific name, serus, means "late". In 2016 it was estimated to be 6.25 meters (20.5 ft) in length and 790 kg (1,740 lb) in weight.
+    description: Genyodectes is a genus of ceratosaurian theropod dinosaur from the Lower Cretaceous (Aptian-Albian) of South America. The holotype material (MLP 26-39, Museo de La Plata, La Plata, Argentina) was collected from the Cerro Barcino Formation, Cañadón Grande, Departamento Paso de Indios in the Chubut Province of Argentina and consists of an incomplete snout, including the premaxillae, portions of both maxillas, the right and left dentary, many teeth, a fragment of the left splenial, and parts of the supradentaries. These elements are generally poorly preserved and some are in articulation. The premaxilla of Genyodectes possesses relatively large and protruding teeth, similar to those of Ceratosaurus. The specific name, serus, means "late". In 2016 it was estimated to be 6.25 meters (20.5 ft) in length and 790 kg (1,740 lb) in weight.
     diet: carnivore
     locomotion: bipedal
     paleoenvironment:
       - fluvial
     diagnostic_features:
-      - Four premaxillary teeth per side, slightly obliquely set and crowded so they overlap each other.
-      - Inner wall of dentary tooth-sockets continuous and as high as the outer wall, without vertical clefts or lappets.
-      - Very few successional teeth exposed (in contrast to Megalosaurus where a successor is visible at nearly every tooth).
-      - Anterior splenial extension forming a small loosely-apposed laterally compressed rod along the upper inner border of the dentary.
-      - Mandibular teeth comparatively small, none larger than those of the premaxilla; foremost symphysial pair especially small and relatively thick.
+      - Premaxillary teeth closely spaced and arranged in an overlapping en-echelon pattern (shared, if at all, only with Ceratosaurus).
+      - Longest maxillary tooth crowns exceeding the minimal dorsoventral depth of the mandible in apicobasal length (shared, if at all, only with Ceratosaurus).
+      - Four premaxillary teeth, versus three in Ceratosaurus.
     appearance:
       integument: scaled
       evidence: inferred
@@ -58406,8 +58404,9 @@ genera:
           name:
             - Early Cretaceous
           stage:
+            - Aptian
             - Albian
-          from_ma: 113
+          from_ma: 121.4
           to_ma: 100.5
         location:
           country: AR
@@ -58425,12 +58424,13 @@ genera:
             min: 790
             max: 790
         erected_in: woodward1901
+        described_in: rauhut2004
         holotype:
           specimen_id:
             - MLP 26-39
           specimen_type: holotype
           institution: Museo de La Plata
-          material: Partial snout with teeth
+          material: Partial snout including both nearly complete premaxillae, fragments of both maxillae, both dentaries (all with teeth), parts of both supradentaries, and fragments of the left splenial.
           completeness: fragmentary
         authors: Woodward, A. S.
         described: 1901
@@ -58446,6 +58446,18 @@ genera:
         publisher: Wiley
         doi: 10.1111/j.1469-7998.1901.tb08537.x
         url: http://dx.doi.org/10.1111/j.1469-7998.1901.tb08537.x
+      - id: rauhut2004
+        authors: Rauhut, O. W. M.
+        year: 2004
+        title: "Provenance and anatomy of Genyodectes serus, a large-toothed ceratosaur (Dinosauria: Theropoda) from Patagonia"
+        journal: Journal of Vertebrate Paleontology
+        volume: "24"
+        issue: "4"
+        pages: 894-902
+        publisher: Informa UK Limited
+        doi: 10.1671/0272-4634(2004)024[0894:PAAOGS]2.0.CO;2
+        url: http://dx.doi.org/10.1671/0272-4634(2004)024[0894:PAAOGS]2.0.CO;2
+        notes: Redescription of the reprepared holotype MLP 26-39; gives the first formal diagnosis, argues ceratosaurid affinities, and assesses the provenance as Aptian-Albian, Cerro Barcino Formation.
     taxonomy:
       - Life
       - Animalia
