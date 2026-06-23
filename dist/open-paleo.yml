@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-06-23T20:32:12.324Z
+  built_at: 2026-06-23T20:55:09.001Z
   clade_count: 250
   genus_count: 1398
   license: CC-BY-4.0
@@ -44813,10 +44813,13 @@ genera:
     paleoenvironment:
       - fluvial
     diagnostic_features:
-      - Posterior cervical and dorsal vertebrae with bifurcated neural spines but with only one well defined infraparapophysial lamina present from dorsal 4 backwards.
-      - In mid and posterior dorsals, the infraparapophysial lamina is obliquely directed from the parapophysis to the ventroposterior corner of the neural arch.
-      - A complex accessory articulation derived from the hyposphene, exposed in lateral view, present in dorsal vertebrae 4 through 9.
-      - Lower section of the neural arch of mid and posterior dorsal vertebrae dorsoventrally shorter than in Diplodocus.
+      - Posterior cervical vertebra (Cv14) with a ventral keel restricted to the posterior end of the centrum (autapomorphy).
+      - Subvertical lamina between the ventral surface of the postzygodiapophyseal lamina and the dorsal surface of the posterior centrodiapophyseal lamina in posterior cervical vertebrae.
+      - Three small subcircular fossae posterior to the lateral coel on the neural spine of posterior cervical vertebra Cv14 (autapomorphy).
+      - Presacral neural spines unbifurcated (a reversal, autapomorphic within Flagellicaudata).
+      - Dorsal centra maintaining approximately the same anteroposterior length throughout the series (autapomorphic within Diplodocidae).
+      - Robust horizontal accessory lamina linking the hyposphene with the base of the posterior centrodiapophyseal lamina in middle-posterior dorsal vertebrae (autapomorphy).
+      - Diapophyses projecting dorsolaterally in the dorsal vertebrae (autapomorphic within Diplodocidae).
     appearance:
       integument: scaled
       evidence: inferred
@@ -44851,7 +44854,7 @@ genera:
             - ML 414
           specimen_type: holotype
           institution: Museu da Lourinhã
-          material: Two incomplete cervical and nine articulated dorsal vertebrae, seven fragmented centrae, some incomplete neural arches, twelve dorsal ribs, and fragmentary appendicular bones.
+          material: Two articulated posterior cervical vertebrae, the articulated dorsal series (nine vertebrae plus the diapophysis of a tenth), dorsal ribs, one anterior caudal centrum and several incomplete centra, a distal pubis fragment, and gastroliths.
           completeness: partial
         size:
           hip_height_m:
@@ -44864,6 +44867,7 @@ genera:
             min: 8800
             max: 8800
         erected_in: bonaparte1999a
+        described_in: mannion2012b
         authors: Bonaparte, J. F.; Mateus, O.
         described: 1999
     references:
@@ -44875,6 +44879,18 @@ genera:
         volume: "5"
         issue: "2"
         pages: 13-29
+      - id: mannion2012b
+        authors: Mannion, P. D.; Upchurch, P.; Mateus, O.; Barnes, R. N.; Jones, M. E. H.
+        year: 2012
+        title: "New information on the anatomy and systematic position of Dinheirosaurus lourinhanensis (Sauropoda: Diplodocoidea) from the Late Jurassic of Portugal, with a review of European diplodocoids"
+        journal: Journal of Systematic Palaeontology
+        volume: "10"
+        issue: "3"
+        pages: 521-551
+        publisher: Informa UK Limited
+        doi: 10.1080/14772019.2011.595432
+        url: http://dx.doi.org/10.1080/14772019.2011.595432
+        notes: Redescription and emended diagnosis of Dinheirosaurus; recovers it as the sister taxon to Supersaurus, treated provisionally.
       - id: jones2026b
         authors: Jones, B.; Viola, E.
         year: 2026
@@ -49478,7 +49494,7 @@ genera:
           weight_kg:
             min: 23000
             max: 42800
-        erected_in: mannion2012
+        erected_in: mannion2012a
         holotype:
           specimen_id:
             - PVL 4628
@@ -49489,7 +49505,7 @@ genera:
         authors: Mannion, P. D.; Otero, A.
         described: 2012
     references:
-      - id: mannion2012
+      - id: mannion2012a
         authors: Mannion, P. D.; Otero, A.
         year: 2012
         title: A reappraisal of the Late Cretaceous Argentinean sauropod dinosaur Argyrosaurus superbus, with a description of a new titanosaur genus
