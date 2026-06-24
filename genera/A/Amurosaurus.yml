@@ -12,6 +12,19 @@ diet: herbivore
 locomotion: facultative
 paleoenvironment:
   - fluvial
+diagnostic_features:
+  - Largely dorsally directed, helmet-shaped hollow supracranial crest, slightly
+    longer anteroposteriorly than dorsoventrally tall (height/length ratio ~0.9)
+  - Robust, knob-like ventral end of the jugal anterior process, strongly
+    posteriorly curved
+  - Several anterodorsally-posteroventrally oriented lateral foramina on the
+    maxilla, the last very large and partly obscured by the jugal contact
+  - Narrow infratemporal region of the jugal, about 70% as wide as the orbit
+  - Anterior third of the strongly ventrally bowed parietal sagittal crest low,
+    with a transversely wide, posteriorly tapered dorsal outline
+  - Mesiodistally wide maxillary tooth crowns (about 1.2-1.3 teeth per cm)
+  - Posterolateral process of the sternum slightly shorter than the anteromedial
+    plate, and preacetabular process of the ilium gently ventrally deflected
 appearance:
   integument: scaled
   evidence: inferred
@@ -27,8 +40,9 @@ identifiers:
 synonyms:
   - name: Sahaliyania
     type: junior subjective
-    reason: Material is indistinguishable from Amurosaurus and is now treated as a
-      junior synonym.
+    reason: Wulaga (Yuliangzi Formation) lambeosaurine material assigned to
+      Sahaliyania is indistinguishable from Amurosaurus riabinini; Xing et al.
+      (2022) formally synonymized Sahaliyania with Amurosaurus.
 species:
   - name: Amurosaurus riabinini
     etymology: "Named for the late Russian paleontologist Anatoly Riabinin, who
@@ -63,7 +77,9 @@ species:
       specimen_id: [ AEHM 1/12 ]
       specimen_type: holotype
       institution: AENM
+      material: Associated left maxilla and dentary.
     erected_in: bolotsky1991
+    described_in: xing2022
 references:
   - id: bolotsky1991
     authors: Bolotsky, Y. L.; Kurzanov, S. M.
@@ -72,3 +88,19 @@ references:
     journal: Geology of the Pacific Ocean Border
     pages: 94-103
     publisher: Amur KNII
+  - id: xing2022
+    authors: Xing, H.; Gu, W.; Hai, S.; Yu, T.; Han, D.; Zhang, Y.; Zhang, S.
+    year: 2022
+    title: "Osteological and taxonomic reassessments of Sahaliyania elunchunorum
+      (Dinosauria, Hadrosauridae) from the Upper Cretaceous Yuliangzi Formation,
+      northeast China"
+    journal: Journal of Vertebrate Paleontology
+    volume: "41"
+    issue: "6"
+    pages: e2085111
+    publisher: Informa UK Limited
+    doi: 10.1080/02724634.2021.2085111
+    url: http://dx.doi.org/10.1080/02724634.2021.2085111
+    notes: Refers the Wulaga lambeosaurine material (formerly Sahaliyania
+      elunchunorum) to Amurosaurus riabinini, synonymizing Sahaliyania, and
+      provides an amended diagnosis.
