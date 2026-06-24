@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-06-24T04:15:15.853Z
+  built_at: 2026-06-24T04:21:48.083Z
   clade_count: 250
   genus_count: 1397
   license: CC-BY-4.0
@@ -120692,11 +120692,12 @@ genera:
     paleoenvironment:
       - marine
     diagnostic_features:
-      - Enlargement of anterior lobe of ilium, sharply differentiating from Triassic theropods
-      - Great trochanter small and peg-like, intermediate between Triassic and later Jurassic forms
-      - Preacetabular notch narrower than in Megalosaurus, more similar to Ceratosaurus
-      - Relatively large size of pubes and ischia, primitive character
-      - Fourth trochanter forming prominent ridge on posterior face of femur shaft
+      - Ilium with the main axis of the preacetabular process strongly anteroventrally oriented in lateral view (also in Eoabelisaurus).
+      - Ilium with an only slightly posteriorly projecting ischiadic peduncle (autapomorphy).
+      - Ilium without a laterally exposed ventromedial margin of the brevis fossa, only a short portion of its base exposed (also in Cryolophosaurus).
+      - Ilium with a poorly transversely expanded brevis fossa (also in non-coelophysid neotheropods).
+      - Femur with a dorsolateral trochanter on the proximal end (also in the referred WARMS G667-690 and other non-averostran neotheropods).
+      - Femoral fourth trochanter poorly posteriorly expanded, raised as a low ridge (also in WARMS G667-690, coelophysids, and early ceratosaurians).
     appearance:
       integument: scaled
       evidence: inferred
@@ -120739,7 +120740,7 @@ genera:
             - BMNH R4840/1
           specimen_type: holotype
           institution: Natural History Museum
-          material: Portions of pelvis (ilium, pubis, ischium), imperfect left femur, vertebral centrum.
+          material: A posterior dorsal vertebra, partial left and right ilia each fused to the proximal portion of their respective pubis, and a left femur missing most of the femoral head and with a severely damaged distal end.
           completeness: fragmentary
         size:
           hip_height_m:
@@ -120752,13 +120753,18 @@ genera:
             min: 50
             max: 140
         erected_in: andrews1921
+        described_in: ezcurra2020
+        synonyms:
+          - name: Sarcosaurus andrewsi
+            type: junior subjective
+            reason: Erected by von Huene (1932) on NHMUK R3542, a right tibia; Ezcurra et al. (2020) regarded it as a subjective junior synonym of Sarcosaurus woodi.
         authors: Andrews, C. W.
         described: 1921
     references:
       - id: andrews1921
         authors: Andrews, C. W.
         year: 1921
-        title: LVI.-On some ramins of a Theropodous dinosaur from the Lower Lias of Barrow-on-Soa
+        title: LVI.—On some remains of a Theropodous dinosaur from the Lower Lias of Barrow-on-Soa
         journal: Annals and Magazine of Natural History
         volume: "8"
         issue: "47"
@@ -120766,6 +120772,17 @@ genera:
         publisher: Informa UK Limited
         doi: 10.1080/00222932108632620
         url: http://dx.doi.org/10.1080/00222932108632620
+      - id: ezcurra2020
+        authors: Ezcurra, M. D.; Butler, R. J.; Maidment, S. C. R.; Sansom, I. J.; Meade, L. E.; Radley, J. D.
+        year: 2020
+        title: A revision of the early neotheropod genus Sarcosaurus from the Early Jurassic (Hettangian-Sinemurian) of central England
+        journal: Zoological Journal of the Linnean Society
+        volume: "191"
+        pages: 113-149
+        publisher: Oxford University Press (OUP)
+        doi: 10.1093/zoolinnean/zlaa054
+        url: http://dx.doi.org/10.1093/zoolinnean/zlaa054
+        notes: Redescription and revision of Sarcosaurus; affirms S. woodi as valid (overturning its nomen dubium status), synonymizes S. andrewsi, and recovers it as a non-averostran neotheropod close to Averostra.
       - id: jones2026c
         authors: Jones, B.; Viola, E.
         year: 2026
