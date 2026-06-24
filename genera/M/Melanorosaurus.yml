@@ -15,17 +15,16 @@ paleoenvironment:
   - fluvial
   - arid
 diagnostic_features:
-  - Vertebral centra considerably longer than high with oval end surfaces,
-    dorsals rounded below
-  - Humerus distal end differs from Gresslyosaurus; lateral condyle considerably
-    smaller than medial with broad depression on anterior face
-  - Ulna posterior border bent in S-shaped curve, differing from Plateosaurus
-    erlenbergensis
-  - Ilium shape most similar to Massospondylus carinatus
-  - Femur shorter relative to humerus than in other Plateosauridae; 4th
-    trochanter lower end below bone midpoint
-  - Tibia massive with large proximal end, straight shaft, broadened distal end;
-    sharp keel on anterior surface in lower half
+  - Posterior margin of the ulna with a pronounced sigmoidal outline.
+  - Sigmoidal dorsal margin of the iliac pubic peduncle.
+  - Ratio of ilium height at the level of the ischiac peduncle to total ilium
+    length greater than 0.67.
+  - Ilium with a straight posterior margin continuous with the ischial peduncle,
+    steeply angled at 65° to the horizontal.
+  - Proximal caudal vertebrae with dorsoventrally elongate, mediolaterally
+    narrow, heart-shaped centra at least 1.42 times taller than wide.
+  - Proximal caudal centra with a deeply incised ventral midline groove.
+  - Proximal caudal centra with foramina on their lateral surfaces.
 appearance:
   integument: scaled
   evidence: inferred
@@ -65,12 +64,19 @@ species:
     holotype:
       specimen_id:
         - SAM-PK-3449
-        - SAM-PK-3450
-      specimen_type: syntype
+      specimen_type: lectotype
       institution: SAM
-      material: "Incomplete skeleton: tibia, fibula, partial pelvis, vertebrae,
-        metatarsals, femur, humerus."
+      material: "Partial skeleton of one individual: a mid-cervical neural arch
+        and centrum, a cervicodorsal centrum, two dorsal centra and two dorsal
+        neural arches, two partial sacral and three caudal vertebrae, the right
+        ulna and partial left radius, the right ilium and partial left pubis,
+        complete left and partial right tibiae, the left fibula, and metatarsals
+        I-IV."
       completeness: partial
+      notes: Barrett & Choiniere (2024) designated SAM-PK-3449 as the lectotype
+        and excluded SAM-PK-3450 (a different individual found ~18 m away); the
+        femur and humerus that Haughton (1924) only doubtfully associated with
+        the type are not part of the lectotype.
     size:
       length_m:
         min: 8.0
@@ -79,6 +85,7 @@ species:
         min: 1300
         max: 1300
     erected_in: haughton1924
+    described_in: barrett2024b
 references:
   - id: haughton1924
     authors: Haughton, S. H.
@@ -87,3 +94,19 @@ references:
     journal: Annals of the South African Museum
     volume: "12"
     pages: 323-497
+  - id: barrett2024b
+    authors: Barrett, P. M.; Choiniere, J. N.
+    year: 2024
+    title: "Melanorosaurus readi Haughton, 1924 (Dinosauria, Sauropodomorpha)
+      from the Late Triassic of South Africa: osteology and designation of a
+      lectotype"
+    journal: Journal of Vertebrate Paleontology
+    volume: "44"
+    issue: "1"
+    pages: e2337802
+    publisher: Informa UK Limited
+    doi: 10.1080/02724634.2024.2337802
+    url: http://dx.doi.org/10.1080/02724634.2024.2337802
+    notes: Revised osteology based on the syntype series; designates SAM-PK-3449
+      as the lectotype, excludes SAM-PK-3450, and restricts the hypodigm to the
+      lectotype.
