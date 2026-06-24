@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-06-24T16:27:43.191Z
+  built_at: 2026-06-24T16:57:01.263Z
   clade_count: 250
   genus_count: 1397
   license: CC-BY-4.0
@@ -90273,10 +90273,14 @@ genera:
     locomotion: bipedal
     paleoenvironment:
       - coastal
-      - fluvial
-      - lacustrine
       - marine
-      - wetland
+    diagnostic_features:
+      - Dentary with 13-14 teeth, an unexpanded third alveolus, and a straight dorsal profile with an unexpanded symphysial area
+      - Lateral row of dentary neurovascular foramina housed in a shallow longitudinal groove; interdental plates tall and unfused; two Meckelian foramina; Meckelian groove shallow
+      - Ventral surfaces of the first and third to fifth sacral centra evenly rounded, with a longitudinal angular ridge on the ventral surface of the second sacral centrum
+      - Dorsally directed flange around midheight of the scapular blade
+      - Array of posterodorsally inclined grooves on the lateral surface of the median iliac ridge; anteroposteriorly thick ischial apron with an almost flat medial surface and a prominent, rugose distal ischial tubercle
+      - Complementary groove-and-ridge structures on the articular surfaces between metatarsals II and III
     appearance:
       integument: scaled
       evidence: inferred
@@ -90301,22 +90305,10 @@ genera:
         period:
           name:
             - Middle Jurassic
-            - Late Jurassic
-            - Early Cretaceous
           stage:
-            - Bajocian
             - Bathonian
-            - Callovian
-            - Oxfordian
-            - Kimmeridgian
-            - Tithonian
-            - Berriasian
-            - Valanginian
-            - Hauterivian
-            - Barremian
-            - Aptian
-          from_ma: 170.3
-          to_ma: 119.57
+          from_ma: 168.3
+          to_ma: 166.1
         location:
           country: GB
           locality: Stonesfield Slate quarries
@@ -90333,12 +90325,13 @@ genera:
             min: 700
             max: 700
         erected_in: mantell1827
+        described_in: benson2010c
         holotype:
           specimen_id:
             - OUM J13505
           specimen_type: lectotype
           institution: Oxford University Museum of Natural History
-          material: Partial lower jaw.
+          material: Almost complete right dentary.
           completeness: fragmentary
         authors: Mantell, G.
         described: 1827
@@ -90376,6 +90369,18 @@ genera:
         publisher: University of California Press, Berkeley
         pages: 169-209
         notes: Chapter in Weishampel, Dodson and Osmolska (eds.), first edition of The Dinosauria; designates OUM J13505 as the lectotype of Megalosaurus bucklandii.
+      - id: benson2010c
+        authors: Benson, R. B. J.
+        year: 2010
+        title: "A description of Megalosaurus bucklandii (Dinosauria: Theropoda) from the Bathonian of the UK and the relationships of Middle Jurassic theropods"
+        journal: Zoological Journal of the Linnean Society
+        volume: "158"
+        issue: "4"
+        pages: 882-935
+        publisher: Oxford University Press (OUP)
+        doi: 10.1111/j.1096-3642.2009.00569.x
+        url: http://dx.doi.org/10.1111/j.1096-3642.2009.00569.x
+        notes: Comprehensive redescription and autapomorphy-based diagnosis of Megalosaurus bucklandii, restricting the taxon to the Bathonian of Britain; includes a phylogenetic analysis of basal tetanurans.
     taxonomy:
       - Life
       - Animalia
