@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-06-24T02:09:39.297Z",
+    "built_at": "2026-06-24T02:18:34.810Z",
     "clade_count": 250,
     "genus_count": 1398,
     "license": "CC-BY-4.0",
@@ -117637,12 +117637,13 @@
         "arid"
       ],
       "diagnostic_features": [
-        "Vertebral centra considerably longer than high with oval end surfaces, dorsals rounded below",
-        "Humerus distal end differs from Gresslyosaurus; lateral condyle considerably smaller than medial with broad depression on anterior face",
-        "Ulna posterior border bent in S-shaped curve, differing from Plateosaurus erlenbergensis",
-        "Ilium shape most similar to Massospondylus carinatus",
-        "Femur shorter relative to humerus than in other Plateosauridae; 4th trochanter lower end below bone midpoint",
-        "Tibia massive with large proximal end, straight shaft, broadened distal end; sharp keel on anterior surface in lower half"
+        "Posterior margin of the ulna with a pronounced sigmoidal outline.",
+        "Sigmoidal dorsal margin of the iliac pubic peduncle.",
+        "Ratio of ilium height at the level of the ischiac peduncle to total ilium length greater than 0.67.",
+        "Ilium with a straight posterior margin continuous with the ischial peduncle, steeply angled at 65° to the horizontal.",
+        "Proximal caudal vertebrae with dorsoventrally elongate, mediolaterally narrow, heart-shaped centra at least 1.42 times taller than wide.",
+        "Proximal caudal centra with a deeply incised ventral midline groove.",
+        "Proximal caudal centra with foramina on their lateral surfaces."
       ],
       "appearance": {
         "integument": "scaled",
@@ -117698,13 +117699,13 @@
           },
           "holotype": {
             "specimen_id": [
-              "SAM-PK-3449",
-              "SAM-PK-3450"
+              "SAM-PK-3449"
             ],
-            "specimen_type": "syntype",
+            "specimen_type": "lectotype",
             "institution": "Iziko South African Museum",
-            "material": "Incomplete skeleton: tibia, fibula, partial pelvis, vertebrae, metatarsals, femur, humerus.",
-            "completeness": "partial"
+            "material": "Partial skeleton of one individual: a mid-cervical neural arch and centrum, a cervicodorsal centrum, two dorsal centra and two dorsal neural arches, two partial sacral and three caudal vertebrae, the right ulna and partial left radius, the right ilium and partial left pubis, complete left and partial right tibiae, the left fibula, and metatarsals I-IV.",
+            "completeness": "partial",
+            "notes": "Barrett & Choiniere (2024) designated SAM-PK-3449 as the lectotype and excluded SAM-PK-3450 (a different individual found ~18 m away); the femur and humerus that Haughton (1924) only doubtfully associated with the type are not part of the lectotype."
           },
           "size": {
             "length_m": {
@@ -117717,6 +117718,7 @@
             }
           },
           "erected_in": "haughton1924",
+          "described_in": "barrett2024b",
           "authors": "Haughton, S. H.",
           "described": 1924
         }
@@ -117730,6 +117732,20 @@
           "journal": "Annals of the South African Museum",
           "volume": "12",
           "pages": "323-497"
+        },
+        {
+          "id": "barrett2024b",
+          "authors": "Barrett, P. M.; Choiniere, J. N.",
+          "year": 2024,
+          "title": "Melanorosaurus readi Haughton, 1924 (Dinosauria, Sauropodomorpha) from the Late Triassic of South Africa: osteology and designation of a lectotype",
+          "journal": "Journal of Vertebrate Paleontology",
+          "volume": "44",
+          "issue": "1",
+          "pages": "e2337802",
+          "publisher": "Informa UK Limited",
+          "doi": "10.1080/02724634.2024.2337802",
+          "url": "http://dx.doi.org/10.1080/02724634.2024.2337802",
+          "notes": "Revised osteology based on the syntype series; designates SAM-PK-3449 as the lectotype, excludes SAM-PK-3450, and restricts the hypodigm to the lectotype."
         }
       ],
       "taxonomy": [
@@ -123062,14 +123078,14 @@
               "max": 386
             }
           },
-          "erected_in": "barrett2024",
+          "erected_in": "barrett2024a",
           "authors": "Barrett, P.; Chapelle, K.; Sciscio, L.; Broderick, T.; Zondo, M.; Munyikwa, D.; Choiniere, J.",
           "described": 2024
         }
       ],
       "references": [
         {
-          "id": "barrett2024",
+          "id": "barrett2024a",
           "authors": "Barrett, P.; Chapelle, K.; Sciscio, L.; Broderick, T.; Zondo, M.; Munyikwa, D.; Choiniere, J.",
           "year": 2024,
           "title": "A new sauropodomorph dinosaur from the Late Triassic of the Mid-Zambezi Basin, Zimbabwe",
