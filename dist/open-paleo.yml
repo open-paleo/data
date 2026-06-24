@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-06-24T05:55:44.774Z
+  built_at: 2026-06-24T06:40:50.539Z
   clade_count: 250
   genus_count: 1397
   license: CC-BY-4.0
@@ -89665,12 +89665,13 @@ genera:
       - arid
     diet: herbivore
     diagnostic_features:
-      - Vertebrae proportionally longer than those of extinct crocodile Macrospondylus, with centra exceeding 3-5 inches in length
-      - Centrum compressed at middle and carinate beneath, keel most produced near anterior termination
-      - Both articular extremities concave; anterior and posterior zygapophyses project beyond corresponding ends of centrum
-      - Neural arch anchylosed to centrum, giving off short depressed obtuse diapophysis in advance of middle of base
-      - Longitudinal ridge on caudal vertebrae with shallow longitudinal channel below, indicating neurapophysial suture line
-      - Neural spine with deep fossae at fore and back part of base; summit rounded; height proportional to length
+      - Basipterygoid processes diverging at an angle of less than 60°
+      - Anterior cervical centra strongly elongate, with centrum length to anterior centrum height ratios greater than 7.0
+      - Neural spines of the anterior cervical vertebrae bearing anterior hook-like expansions
+      - Distal scapular blade with a small dorsal and a large ventral expansion
+      - Deltopectoral crest extending for about 60% of the humeral length
+      - Ulna length to humerus length ratio of 0.6 or less
+      - Anterior surface of the distal pubes flat and unexpanded
     appearance:
       features:
         - enlarged manual claws
@@ -89724,12 +89725,12 @@ genera:
           to_ma: 174.7
         location:
           country: ZA
-          locality: Beauchef Abbey (213), Harrismith (zone B/1)
+          locality: Bornmansdrift Farm 133, Clocolan District
           region: Free State
           formation: Elliot
           coordinates:
-            - -28.509443
-            - 28.623056
+            - -28.962739
+            - 27.430377
         size:
           hip_height_m:
             min: 1.2
@@ -89745,9 +89746,11 @@ genera:
             - BP/1/4934
           specimen_type: neotype
           institution: Evolutionary Studies Institute (formerly Bernard Price Institute for Palaeontological Research), University of the Witwatersrand
-          material: Caudal and dorsal vertebrae with preserved neural arches, zygapophyses, and spines; centra showing concavity at articular extremities and median compression; carinate ventral surface with longitudinal ridge
-          completeness: fragmentary
+          material: Partially complete, articulated skeleton including an almost complete skull, but lacking most of the hind limbs and tail; an adult individual.
+          completeness: partial
+          notes: The original syntype series (five cervical vertebrae) was destroyed in the 19 May 1941 bombing of the Hunterian Museum of the Royal College of Surgeons, London, leaving only casts and illustrations. As casts cannot serve as types, Yates and Barrett (2010) formally designated BP/1/4934 as the neotype under ICZN Article 75, following earlier suggestions by Sues et al. (2004) and Barrett (2009).
         erected_in: owen1854a
+        described_in: barrett2019
         authors: Owen, R.
         described: 1854
     notable_specimens:
@@ -89778,6 +89781,33 @@ genera:
         title: Descriptive catalogue of the Fossil organic remains of Reptilia and Pisces contained in the Museum of the Royal College of Surgeons of England
         journal: London
         pages: 97-98
+      - id: yates2010
+        authors: Yates, A. M.; Barrett, P. M.
+        year: 2010
+        title: "Massospondylus carinatus Owen 1854 (Dinosauria: Sauropodomorpha) from the Lower Jurassic of South Africa: Proposed conservation of usage by designation of a neotype"
+        journal: Palaeontologia Africana
+        volume: "45"
+        pages: 7-10
+        notes: Formally designates BP/1/4934 as the neotype of Massospondylus carinatus under ICZN Article 75, the original syntype series having been destroyed in 1941.
+      - id: chapelle2018
+        authors: Chapelle, K. E. J.; Choiniere, J. N.
+        year: 2018
+        title: "A revised cranial description of Massospondylus carinatus Owen (Dinosauria: Sauropodomorpha) based on computed tomographic scans and a review of cranial characters for basal Sauropodomorpha"
+        journal: PeerJ
+        volume: "6"
+        pages: e4224
+        publisher: PeerJ
+        doi: 10.7717/peerj.4224
+        url: http://dx.doi.org/10.7717/peerj.4224
+        notes: CT-based revised cranial description; proposes cranial autapomorphies (basipterygoid processes diverging less than 60°) and rejects the earlier Sues et al. (2004) cranial diagnosis.
+      - id: barrett2019
+        authors: Barrett, P. M.; Chapelle, K. E. J.; Staunton, C. K.; Botha, J.; Choiniere, J. N.
+        year: 2019
+        title: "Postcranial osteology of the neotype specimen of Massospondylus carinatus Owen, 1854 (Dinosauria: Sauropodomorpha) from the upper Elliot Formation of South Africa"
+        journal: Palaeontologia Africana
+        volume: "53"
+        pages: 114-178
+        notes: First full postcranial description of the neotype BP/1/4934 and an emended diagnosis of the species; confirms by osteohistology that the neotype is an adult.
       - id: jones2026b
         authors: Jones, B.; Viola, E.
         year: 2026
