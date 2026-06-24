@@ -14,13 +14,10 @@ locomotion: bipedal
 paleoenvironment:
   - fluvial
 diagnostic_features:
-  - Humerus without deltopectoral crest
-  - Tibia with marked anteromedial longitudinal enlargement in proximal third
-  - Fibula with abrupt anteroposterior narrowing in mid-shaft
-  - Astragalus with proximal articular surface divided into two levels by marked
-    step
-  - Calcaneum with strong marked posterodistal projection
-  - Ungual phalanges with flat ventral surfaces
+  - Anteromedial bulge on the proximal extremity of the tibia
+  - Calcaneum with a pronounced posterodistal projection
+  - Distal tip of the sacral neural spine strongly projected posteriorly
+  - Sternal process of the coracoid markedly reduced
 appearance:
   integument: scaled
   evidence: inferred
@@ -43,9 +40,8 @@ species:
         - Late Cretaceous
       stage:
         - Cenomanian
-        - Turonian
       from_ma: 100.5
-      to_ma: 89.8
+      to_ma: 93.9
     location:
       country: AR
       locality: 28 km northeast of Buen Pasto
@@ -65,11 +61,15 @@ species:
       specimen_id: [ UNPSJB-PV 942 ]
       specimen_type: holotype
       institution: UNPSJB
-      material: Partial skeleton including vertebrae, rib fragments, scapula, coracoid,
-        humerus, ulnae, femur, tibia, fibula, astragalus, calcaneum, and pedal
+      material: Partial skeleton comprising four cervical, seven dorsal, four
+        sacral, and six caudal vertebrae (all partial); a rib fragment; partial
+        left scapula;
+        right coracoid; right humerus; both ulnae; incomplete left femur; both
+        tibiae; both fibulae; right astragalus; left calcaneum; and 13 pedal
         phalanges.
       completeness: partial
     erected_in: martínez1998
+    described_in: ibiricu2014
 references:
   - id: martínez1998
     authors: Martínez, R. D.
@@ -83,3 +83,16 @@ references:
     volume: "21"
     issue: 46/47
     pages: 119-135
+  - id: ibiricu2014
+    authors: Ibiricu, L. M.; Martínez, R. D.; Luna, M.; Casal, G. A.
+    year: 2014
+    title: "A reappraisal of Notohypsilophodon comodorensis (Ornithischia:
+      Ornithopoda) from the Late Cretaceous of Patagonia, Argentina"
+    journal: Zootaxa
+    volume: "3786"
+    issue: "4"
+    publisher: Magnolia Press
+    doi: 10.11646/zootaxa.3786.4.1
+    url: http://dx.doi.org/10.11646/zootaxa.3786.4.1
+    notes: Restudy of the holotype providing an emended diagnosis; recovers
+      Notohypsilophodon as a basal ornithopod, more basal than Gasparinisaura.
