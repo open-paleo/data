@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-06-24T20:02:32.545Z
+  built_at: 2026-06-24T20:14:54.490Z
   clade_count: 250
   genus_count: 1397
   license: CC-BY-4.0
@@ -72223,18 +72223,18 @@ genera:
     etymology: Named after Jaklapal village in Telangana, central India, near where the fossils were discovered, combined with Greek sauros (lizard); meaning 'Jaklapal lizard'
     pronunciation:
       phonetic: yak-luh-pah-lee-sor-us
-    description: Jaklapallisaurus is a genus of unaysaurid sauropodomorph dinosaur. It lived during the Late Triassic period (late Norian to earliest Rhaetian) in what is now Telangana, central India. The genus is monotypic, only including the species Jaklapallisaurus asymmetricus.
+    description: Jaklapallisaurus is a genus of unaysaurid sauropodomorph dinosaur. It lived during the Late Triassic period (early to middle Norian) in what is now Telangana, central India. The genus is monotypic, only including the species Jaklapallisaurus asymmetricus.
     locomotion: bipedal
     paleoenvironment:
       - fluvial
     diet: herbivore
     diagnostic_features:
-      - Distal femur with widely transversely open popliteal fossa in distal view
-      - Medial condyle of distal femur sub-triangular in distal view
-      - Distal femur with straight anterior margin
-      - Distal tibia with concave posteromedial border
-      - Astragalar body with straight dorsal edge in posterior view
-      - Medial condyle of astragalus strongly developed anteriorly, 1.6 times deeper than lateral
+      - Femur with distal transverse width more than 1.5 times the anteroposterior depth across the medial condyle
+      - Medial distal condyle of the femur sub-triangular in distal view
+      - Distal end of the femur with a straight anterior margin
+      - Proximal end of the tibia with poorly asymmetric posterior condyles
+      - Distal end of the tibia with a concave posteromedial border
+      - Astragalus with the medial condyle strongly developed anteriorly (medial end 1.6 times deeper than the lateral) and a tuber on the lateral half of the ventral surface
     appearance:
       integument: scaled
       evidence: inferred
@@ -72248,7 +72248,7 @@ genera:
       - source: eol
         id: "42334243"
     species:
-      - name: Jaklapallisaurus asymmetrica
+      - name: Jaklapallisaurus asymmetricus
         etymology: From Latin 'asymmetricus' meaning 'asymmetrical', referring to the highly asymmetrical astragalus of this species in distal view.
         status: valid
         type_species: true
@@ -72257,9 +72257,8 @@ genera:
             - Late Triassic
           stage:
             - Norian
-            - Rhaetian
-          from_ma: 227
-          to_ma: 201.4
+          from_ma: 225
+          to_ma: 215
         location:
           country: IN
           locality: 3 km north of Jaklapalli village
@@ -72279,12 +72278,13 @@ genera:
             min: 1.2
             max: 1.2
         erected_in: novas2010a
+        described_in: ezcurra2023
         holotype:
           specimen_id:
-            - ISI R273/1
+            - ISIR 274
           specimen_type: holotype
           institution: Geology Museum, Indian Statistical Institute
-          material: Partial skeleton.
+          material: A probable anterior dorsal vertebra, an anterior caudal vertebra, the right distal femur, right tibia, right astragalus, right metatarsals I-IV, and right pedal phalanges I-1 and II-1.
           completeness: partial
         authors: Novas, F. E.; Ezcurra, M. D.; Chatterjee, S.; Kutty, T. S.
         described: 2010
@@ -72300,6 +72300,15 @@ genera:
         publisher: Cambridge University Press (CUP)
         doi: 10.1017/s1755691011020093
         url: http://dx.doi.org/10.1017/s1755691011020093
+      - id: ezcurra2023
+        authors: Ezcurra, M. D.; Müller, R. T.; Novas, F. E.; Chatterjee, S.
+        year: 2023
+        title: Osteology of the sauropodomorph dinosaur Jaklapallisaurus asymmetricus from the Late Triassic of central India
+        journal: The Anatomical Record
+        publisher: Wiley
+        doi: 10.1002/ar.25359
+        url: http://dx.doi.org/10.1002/ar.25359
+        notes: Comprehensive osteological redescription of the holotype with an emended diagnosis; recovers Jaklapallisaurus as a unaysaurid at the base of Plateosauria.
       - id: jones2026b
         authors: Jones, B.; Viola, E.
         year: 2026
