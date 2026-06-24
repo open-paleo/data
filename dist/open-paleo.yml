@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-06-24T20:54:06.715Z
+  built_at: 2026-06-24T21:46:11.300Z
   clade_count: 250
   genus_count: 1397
   license: CC-BY-4.0
@@ -17057,11 +17057,9 @@ genera:
       - fluvial
       - lacustrine
     diagnostic_features:
-      - Cervical vertebrae strongly opisthocoelous with large pneumatic cavities in the centra
-      - Posterior lumbar vertebrae with articular faces very nearly flat and transverse
-      - Sacral vertebrae more solid with transverse processes nearer the middle of the centra than in Atlantosaurus
-      - Anterior caudal vertebrae biconcave with cancellous interior structure
-      - Chevron bones with superior articular ends of rami not united but separated from each other, as in Mosasauria with free haemapophyses
+      - Accessory horizontal lamina in the spinodiapophyseal fossa of the mid- and posterior cervical vertebrae, not connected to any surrounding lamina
+      - Prezygodiapophyseal lamina of the posterior cervical and anterior dorsal vertebrae lacking a roughened lateral aspect
+      - Scapular blade straight in lateral view
     appearance:
       features:
         - whiplash tail
@@ -17125,6 +17123,7 @@ genera:
             min: 16400
             max: 22400
         erected_in: marsh1877c
+        described_in: tschopp2015a
         authors: Marsh, O. C.
         described: 1877
       - name: Apatosaurus louisae
@@ -17149,6 +17148,7 @@ genera:
           specimen_type: holotype
           institution: Carnegie Museum of Natural History
         erected_in: holland1915
+        described_in: tschopp2015a
         authors: Holland, W. J.
         described: 1915
     notable_specimens:
@@ -17162,6 +17162,7 @@ genera:
           year: 1909
           by: Earl Douglass
         references:
+          - mcintosh1975
           - parsons1997
     references:
       - id: marsh1877c
@@ -17183,11 +17184,32 @@ genera:
         volume: "9"
         issue: 3-4
         pages: 381-383
+      - id: mcintosh1975
+        authors: McIntosh, J. S.; Berman, D. S.
+        year: 1975
+        title: "Description of the palate and lower jaw of the sauropod dinosaur Diplodocus (Reptilia: Saurischia) with remarks on the nature of the skull of Apatosaurus"
+        journal: Journal of Paleontology
+        volume: "49"
+        issue: "1"
+        pages: 187-199
+        publisher: Cambridge University Press (CUP)
+        notes: Establishes that Apatosaurus had a Diplodocus-like skull (the jawless skull CM 11162 found with the A. louisae holotype), not the Camarasaurus-like skull historically mounted on it.
       - id: parsons1997
         authors: Parsons, K. M.
         year: 1997
         title: The wrongheaded dinosaur
         journal: Carnegie Magazine
+      - id: tschopp2015a
+        authors: Tschopp, E.; Mateus, O.; Benson, R. B. J.
+        year: 2015
+        title: A specimen-level phylogenetic analysis and taxonomic revision of Diplodocidae (Dinosauria, Sauropoda)
+        journal: PeerJ
+        volume: "3"
+        pages: e857
+        publisher: PeerJ
+        doi: 10.7717/peerj.857
+        url: http://dx.doi.org/10.7717/peerj.857
+        notes: Specimen-level revision of Diplodocidae providing an emended diagnosis of Apatosaurus and restricting the genus to A. ajax and A. louisae, moving other species to Brontosaurus.
       - id: jones2026b
         authors: Jones, B.; Viola, E.
         year: 2026
