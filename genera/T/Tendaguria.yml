@@ -10,6 +10,11 @@ diet: herbivore
 locomotion: quadrupedal
 paleoenvironment:
   - coastal
+diagnostic_features:
+  - Dorsal surface of each anterior dorsal diapophysis excavated by two fossae,
+    one posterolateral to the prezygapophyses along the anterior half of the
+    diapophysis and one directly posterior to the prezygapophyses
+  - Prespinal midline ridge developed on the anteriormost dorsal neural spines
 appearance:
   integument: scaled
   evidence: inferred
@@ -51,10 +56,13 @@ species:
         min: 4
         max: 4
     erected_in: bonaparte2000
+    described_in: mannion2019
     holotype:
       specimen_id: [MB.R.2092.1, MB.R.2092.2]
       specimen_type: syntype
       institution: ZMB
+      material: Two associated anterior dorsal vertebrae
+      completeness: fragmentary
 references:
   - id: bonaparte2000
     authors: Bonaparte, J. F.; Heinrich, W.-D.; Wild, R.
@@ -69,6 +77,22 @@ references:
     publisher: Schweizerbart
     doi: 10.1127/pala/256/2000/25
     url: http://dx.doi.org/10.1127/pala/256/2000/25
+  - id: mannion2019
+    authors: Mannion, P. D.; Upchurch, P.; Schwarz, D.; Wings, O.
+    year: 2019
+    title: "Taxonomic affinities of the putative titanosaurs from the Late Jurassic
+      Tendaguru Formation of Tanzania: phylogenetic and biogeographic
+      implications for eusauropod dinosaur evolution"
+    journal: Zoological Journal of the Linnean Society
+    volume: "185"
+    issue: "3"
+    pages: 784-909
+    publisher: Oxford University Press (OUP)
+    doi: 10.1093/zoolinnean/zly068
+    url: http://dx.doi.org/10.1093/zoolinnean/zly068
+    notes: Full redescription of the holotypic anterior dorsal vertebrae of
+      Tendaguria tanzaniensis, recovering it as a turiasaur and sister taxon
+      of Moabosaurus.
   - id: jones2026b
     authors: Jones, B.; Viola, E.
     year: 2026
