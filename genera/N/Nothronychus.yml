@@ -19,23 +19,25 @@ locomotion: bipedal
 paleoenvironment:
   - fluvial
 diagnostic_features:
-  - Teeth with serrations extending close to constriction with circular root
-  - Anterior dorsal vertebrae with long pedicle and large pleurocoel encasing
-    multiple separate pneumatic foramina
-  - Scapula slender with laterally facing glenoid
-  - Slender, straight humerus with short deltopectoral crest and lacking spur on
-    humeral shaft
-  - Manual unguals with flexor tubercle not extending below the proximal
-    articulation and lacking dorsoproximal lip
-  - Thin ischium nearly excluded from acetabulum with large rectangular medially
-    situated obturator process
-  - Fibula with M. iliofibularis tubercle approximately at mid-shaft
-  - Pedal unguals thick
+  - Distinctly subcircular obturator process of the ischium.
+  - Ovoid, dorsoventrally elongate obturator foramen, its maximum length more
+    than 200% of its maximum width.
+  - Contact between the pubis and ischium restricted to the proximal half of the
+    obturator process.
+  - Deep notch between the ventral aspect of the obturator process and the
+    cranial ischial shaft.
+  - In the type species N. mckinleyi, the ventral notch between the obturator
+    process and the iliac shaft is craniocaudally narrow (wide in N. graffami),
+    the cranial caudal centra are platycoelous, and the caudal centra bear a
+    hypertrophied caudoventral heel about one-third the centrum length.
+  - In N. mckinleyi, the glenoid lacks a caudal buttress and the caudal process
+    of the ischium is poorly defined and elongate, extending to the shaft
+    opposite the obturator process.
 appearance:
   features:
     - enlarged manual claws
   integument: feathered
-  evidence: direct
+  evidence: inferred
 identifiers:
   - source: pbdb
     id: "66507"
@@ -77,17 +79,19 @@ species:
         min: 800
         max: 1200
     holotype:
-      specimen_id: [ MSM P2106 ]
+      specimen_id: [ MSM P2117 ]
       specimen_type: holotype
       institution: MSM-US
-      material: Partial disarticulated skeleton including isolated teeth, fragmentary
-        skull elements, several cervical vertebrae, first dorsal vertebra, anterior
-        caudal vertebra, ribs, fused gastralia, scapula, right humerus, complete right
-        and partial left ulna, metacarpals, manual phalanges, two manual unguals, two
-        ischia, two tibia, right fibula, partial metatarsals, pedal phalanges, two pedal
-        unguals.
+      material: "Partially disarticulated skeleton: isolated teeth, a partial
+        braincase and cranial fragments, fragments of seven cervical vertebrae,
+        one cranial dorsal vertebra, a dorsal centrum, one mid-caudal vertebra,
+        cervical and dorsal ribs, fused gastralia, a chevron fragment, the left
+        scapula, right humerus and ulna, a distal metacarpal II and two manual
+        phalanges, both ischia, both tibiae, the right fibula, a partial
+        metatarsal II, three pedal phalanges, and two pedal unguals."
       completeness: partial
     erected_in: kirkland2001
+    described_in: hedrick2015
 references:
   - id: kirkland2001
     authors: Kirkland, J. I.; Wolfe, D. G.
@@ -100,6 +104,22 @@ references:
     publisher: Informa UK Limited
     doi: 10.1671/0272-4634(2001)021[0410:fdtdtf]2.0.co;2
     url: http://dx.doi.org/10.1671/0272-4634(2001)021[0410:fdtdtf]2.0.co;2
+  - id: hedrick2015
+    authors: Hedrick, B. P.; Zanno, L. E.; Wolfe, D. G.; Dodson, P.
+    year: 2015
+    title: "The Slothful Claw: osteology and taphonomy of Nothronychus mckinleyi
+      and N. graffami (Dinosauria: Theropoda) and anatomical considerations for
+      derived therizinosaurids"
+    journal: PLOS ONE
+    volume: "10"
+    issue: "6"
+    pages: e0129449
+    publisher: Public Library of Science (PLoS)
+    doi: 10.1371/journal.pone.0129449
+    url: http://dx.doi.org/10.1371/journal.pone.0129449
+    notes: Osteological redescription of both Nothronychus species; corrects
+      characters interpreted as diagenetic artefacts and follows Zanno's
+      amended diagnoses.
   - id: jones2026c
     authors: Jones, B.; Viola, E.
     year: 2026
