@@ -7,7 +7,7 @@ pronunciation:
 description: Owenodon is a genus of iguanodontian dinosaur known from a partial
   lower jaw discovered in Early Cretaceous-aged rocks of Dorset, United Kingdom,
   and possibly also Romania and Spain. The first and only definitive specimen
-  was found in the Lulworth Formation of the Purbeck Limestone Group, dating to
+  was found in the Durlston Formation of the Purbeck Limestone Group, dating to
   the middle Berriasian stage.
 diet: herbivore
 locomotion: bipedal
@@ -15,14 +15,20 @@ paleoenvironment:
   - coastal
   - lacustrine
 diagnostic_features:
-  - dentary deeper than Camptosaurus relative to length
-  - dental margin and tooth row arched
-  - longer symphysis than Camptosaurus
-  - lingual surface of crowns equally subdivided by simple well-defined primary
-    ridge and parallel equal-sized secondary ridge
-  - tertiary ridges essentially absent
-  - no abbreviated cingulum formed by inrolling of denticulate distal edge of
-    lower distal corner of crown
+  - Lingual surface of the tooth crowns equally subdivided by a primary and a
+    secondary ridge that are equal in prominence, well-defined, narrow, raised,
+    and parallel (potential autapomorphy).
+  - Tertiary ridges, originating from the bases of the apical denticles and
+    extending over the lingual crown surface, absent (potential autapomorphy).
+  - Marginal denticles simple and tongue-shaped, lacking mammillations.
+  - Denticulate margin at the distal corner of the crown not inrolled into an
+    oblique cingulum bordering a vertical channel along the distal edge of the
+    root.
+  - Fifteen alveoli, the most posterior curving laterally into the base of the
+    coronoid process; coronoid process elevated but obliquely inclined
+    posterodorsally and not anteroposteriorly expanded near its apex.
+  - No obvious diastema between the predentary-attachment area and the
+    tooth-bearing margin of the dentary.
 appearance:
   integument: scaled
   evidence: inferred
@@ -39,18 +45,16 @@ species:
     type_species: true
     period:
       name:
-        - Late Jurassic
         - Early Cretaceous
       stage:
-        - Tithonian
         - Berriasian
-      from_ma: 149.2
+      from_ma: 143.1
       to_ma: 139.8
     location:
       country: GB
       locality: Durlston Bay, Swanage
       region: England
-      formation: Lulworth
+      formation: Durlston
       coordinates:
         - 50.602222
         - -1.949167
@@ -58,14 +62,15 @@ species:
       specimen_id: [ NHMUK PV R 2998 ]
       specimen_type: holotype
       institution: NHMUK
-      material: Almost complete right dentary with most teeth preserved in
-        situ; 14 alveoli with teeth plus a rudimentary 15th alveolus
+      material: Nearly complete right dentary with fifteen alveoli (several teeth
+        missing), crushed transversely with the anterior tip broken.
       completeness: fragmentary
     size:
       length_m:
         min: 5
         max: 5
     erected_in: galton2009
+    described_in: norman2012
 references:
   - id: galton2009
     authors: Galton, P. M.
@@ -77,6 +82,17 @@ references:
     volume: "28"
     issue: "1"
     pages: 211-273
+  - id: norman2012
+    authors: Norman, D. B.
+    year: 2012
+    title: "Iguanodontian taxa (Dinosauria: Ornithischia) from the Lower
+      Cretaceous of England and Belgium"
+    book: Bernissart Dinosaurs and Early Cretaceous Terrestrial Ecosystems
+    publisher: Indiana University Press, Bloomington (P. Godefroit, ed.)
+    pages: 175-212
+    notes: Emended diagnosis and discussion of the Owenodon holotype NHMUK
+      R2998; rejects the dentary-depth and tooth-row-arching characters as
+      crushing artifacts and regards the genus's validity as provisional.
   - id: jones2026a
     authors: Jones, B.; Viola, E.
     year: 2026
