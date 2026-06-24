@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-06-24T04:35:35.612Z
+  built_at: 2026-06-24T04:45:15.902Z
   clade_count: 250
   genus_count: 1397
   license: CC-BY-4.0
@@ -92793,7 +92793,7 @@ genera:
         category: complementary
         significance: Second known specimen of Minotaurasaurus (skull, axis, first cervical half-ring) from the Ukhaa Tolgod locality of the Djadochta Formation. Its description established the type specimen's stratigraphic position and confirmed the taxon's validity against synonymy with Tarchia.
         references:
-          - penkalski2017
+          - penkalski2016
     references:
       - id: miles2009
         authors: Miles, C. A.; Miles, C. J.
@@ -92809,14 +92809,17 @@ genera:
         title: The Princeton Field Guide to Dinosaurs (3rd ed.)
         publisher: Princeton University Press
         notes: Source of the appearance features.
-      - id: penkalski2017
+      - id: penkalski2016
         authors: Penkalski, P.; Tumanova, T.
-        year: 2017
+        year: 2016
         title: "The cranial morphology and taxonomic status of Tarchia (Dinosauria: Ankylosauridae) from the Upper Cretaceous of Mongolia"
         journal: Cretaceous Research
         volume: "70"
         pages: 117-127
+        publisher: Elsevier BV
         doi: 10.1016/j.cretres.2016.10.004
+        url: http://dx.doi.org/10.1016/j.cretres.2016.10.004
+        notes: Redescribes the holotype skull of Tarchia kielanae and provides a revised cranial diagnosis, confirming it as valid and distinct from Saichania and Minotaurasaurus.
     taxonomy:
       - Life
       - Animalia
@@ -134345,13 +134348,12 @@ genera:
     paleoenvironment:
       - arid
     diagnostic_features:
-      - Brain case exceptionally high, nearly twice the height of comparably-sized Saichania
-      - Foramen magnum taller than wide, unlike other Mongolian ankylosaurids
-      - Exoccipital high and short, perpendicular to skull roof
-      - Occipital part of skull and condyle partly visible in dorsal view, shifted beyond roof
-      - Single foramen for nerves IX-XII posterior to fenestra ovalis
-      - Skull roof with numerous dorsally-positioned grooves, smooth elevated areas, bilaterally symmetrical ornamentation
-      - Laterosphenoid completely fused to adjoining bones and postocular shelf
+      - Fenestra ovalis and cranial nerves IX-XI exit through a single external opening, with two separate exits for cranial nerve XII
+      - Accessory postorbital osteoderm fused to the skull roof
+      - Squamosal horn separated from the supraorbital boss by a postorbital fossa, with the accessory osteoderm seated within that fossa
+      - Large, deep braincase; foramen magnum taller than wide
+      - Nuchal osteoderms taller laterally than medially
+      - Occiput just visible in dorsal view and proportionally high in caudal view; postocular caputegulae absent
     appearance:
       features:
         - tail club
@@ -134380,8 +134382,8 @@ genera:
             - Late Cretaceous
           stage:
             - Campanian
-          from_ma: 83.6
-          to_ma: 72.2
+          from_ma: 76
+          to_ma: 72.1
         location:
           country: MN
           locality: Khulsan, Central Cliffs, site 6
@@ -134395,7 +134397,7 @@ genera:
             - ZPAL MgD-I/111
           specimen_type: holotype
           institution: Institute of Paleobiology, Polish Academy of Sciences
-          material: Incomplete skull with roof, brain case, and occipital region
+          material: Partial skull preserving most of one side of the postfrontal skull roof, including the sagittal midline and the braincase
           completeness: fragmentary
         size:
           hip_height_m:
@@ -134408,6 +134410,7 @@ genera:
             min: 2500
             max: 3000
         erected_in: maryanska1977
+        described_in: penkalski2016
         authors: Maryanska, T.
         described: 1977
     references:
@@ -134418,6 +134421,17 @@ genera:
         journal: Palaeontologia Polonica
         volume: "37"
         pages: 85-151
+      - id: penkalski2016
+        authors: Penkalski, P.; Tumanova, T.
+        year: 2016
+        title: "The cranial morphology and taxonomic status of Tarchia (Dinosauria: Ankylosauridae) from the Upper Cretaceous of Mongolia"
+        journal: Cretaceous Research
+        volume: "70"
+        pages: 117-127
+        publisher: Elsevier BV
+        doi: 10.1016/j.cretres.2016.10.004
+        url: http://dx.doi.org/10.1016/j.cretres.2016.10.004
+        notes: Redescribes the holotype skull of Tarchia kielanae and provides a revised cranial diagnosis, confirming it as valid and distinct from Saichania and Minotaurasaurus.
       - id: jones2026a
         authors: Jones, B.; Viola, E.
         year: 2026
