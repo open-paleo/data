@@ -17,13 +17,17 @@ locomotion: bipedal
 paleoenvironment:
   - fluvial
 diagnostic_features:
-  - Medium-sized segnosaurid (distinctly smaller than Segnosaurus galbinensis)
+  - Antorbital fossa lateromedially expanded, containing three pneumatic pockets
+    rostroventral to the maxillary fenestra, with a well-developed overhanging lip
+    and a caudally placed, reduced maxillary fenestra
+  - Caudal process of the maxilla large and mediolaterally expanded
+  - Main body of the lacrimal transversely inflated and pneumatized
+  - Supraoccipital bearing a prominent nuchal crest
+  - Quadrate with an accessory third condyle and an obliquely oriented mandibular
+    capitulum
+  - Dentary bearing 31 teeth
   - Pedal unguals strongly compressed laterally (vs. thick and non-compressed in
     Segnosaurus)
-  - Greater number of mandibular teeth (31 per branch vs. 24-25 in Segnosaurus)
-  - Edentulous portion of mandible longer than in Segnosaurus galbinensis
-  - Posterior process of vomer very long, lamellar, co-ossified ventrally
-    forming a V-shape in cross-section extending to basicranium
 appearance:
   features:
     - keratinous beak
@@ -80,6 +84,7 @@ species:
         min: 250.0
         max: 250.0
     erected_in: barsbold1980
+    described_in: lautenschlager2014
 references:
   - id: barsbold1980
     authors: Barsbold, R.; Perle, A.
@@ -89,6 +94,29 @@ references:
     volume: "25"
     issue: "2"
     pages: 187-195
+  - id: perle1981
+    authors: Perle, A.
+    year: 1981
+    title: New Segnosauridae from the Upper Cretaceous of Mongolia
+    journal: Transactions of the Joint Soviet-Mongolian Paleontological Expedition
+    volume: "15"
+    pages: 50-59
+    notes: Detailed original osteological description of the holotype of Erlikosaurus
+      andrewsi (named "Erlicosaurus"); the 1980 Segnosauria paper provided the name.
+  - id: lautenschlager2014
+    authors: Lautenschlager, S.; Witmer, L. M.; Perle, A.; Zanno, L. E.; Rayfield,
+      E. J.
+    year: 2014
+    title: "Cranial anatomy of Erlikosaurus andrewsi (Dinosauria, Therizinosauria):
+      new insights based on digital reconstruction"
+    journal: Journal of Vertebrate Paleontology
+    volume: "34"
+    issue: "6"
+    pages: 1263-1291
+    doi: 10.1080/02724634.2014.874529
+    url: http://dx.doi.org/10.1080/02724634.2014.874529
+    notes: CT-based digital redescription of the holotype skull; provides the current
+      emended diagnosis of Erlikosaurus andrewsi.
   - id: jones2026c
     authors: Jones, B.; Viola, E.
     year: 2026
