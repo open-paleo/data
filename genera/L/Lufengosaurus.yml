@@ -13,12 +13,14 @@ paleoenvironment:
   - lacustrine
 diet: herbivore
 diagnostic_features:
-  - Teeth weakly spatulated with coarse serrations similar to Gypsaurus but much
-    larger
-  - Skull approximately 3-5 times the length of anterior tail vertebrae
-  - Neck comparatively long
-  - Belongs to Plateosauridae, similar to Plateosaurus grayianus but about
-    one-fourth smaller
+  - Distinct tuberosity on the lateral surface of the ascending process of the
+    maxilla (absent in other prosauropods).
+  - Low boss on the central portion of the jugal, at the junction of its three
+    rami (maxillary, postorbital, and quadratojugal processes).
+  - Prominent boss on the dorsal surface of the rostrolateral process of the
+    parietal.
+  - Ridge along the caudal part of the lateral surface of the maxilla, forming
+    the dorsal boundary of a shallow buccal emargination.
 appearance:
   integument: scaled
   evidence: inferred
@@ -76,13 +78,15 @@ species:
       specimen_id: [ IVPP V15 ]
       specimen_type: holotype
       institution: IVPP
-      material: Almost complete skeleton including well preserved skull.
+      material: Almost complete skeleton, including a largely complete but
+        dorsoventrally crushed skull (premaxillae missing, snout reconstructed).
       completeness: complete
     synonyms:
       - name: Gyposaurus sinensis
         type: junior subjective
         reason: Recent work indicates G. sinensis is referable to Lufengosaurus huenei.
     erected_in: young1940
+    described_in: barrett2005b
 references:
   - id: young1940
     authors: Young, C.-C.
@@ -94,6 +98,21 @@ references:
     pages: 235-239
     doi: 10.1111/j.1755-6724.1940.mp203-4003.x
     url: https://doi.org/10.1111/j.1755-6724.1940.mp203-4003.x
+  - id: barrett2005b
+    authors: Barrett, P. M.; Upchurch, P.; Wang, X.-L.
+    year: 2005
+    title: "Cranial osteology of Lufengosaurus huenei Young (Dinosauria:
+      Prosauropoda) from the Lower Jurassic of Yunnan, People's Republic of
+      China"
+    journal: Journal of Vertebrate Paleontology
+    volume: "25"
+    issue: "4"
+    pages: 806-822
+    publisher: Informa UK Limited
+    doi: 10.1671/0272-4634(2005)025[0806:COOLHY]2.0.CO;2
+    url: http://dx.doi.org/10.1671/0272-4634(2005)025[0806:COOLHY]2.0.CO;2
+    notes: Detailed cranial redescription of the holotype IVPP V15; confirms
+      Lufengosaurus as valid and provides an emended (cranial) diagnosis.
   - id: jones2026b
     authors: Jones, B.; Viola, E.
     year: 2026
