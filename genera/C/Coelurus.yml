@@ -16,16 +16,16 @@ locomotion: bipedal
 paleoenvironment:
   - fluvial
 diagnostic_features:
-  - Dorsal and lumbar vertebrae centra so extensively excavated that walls are
-    reduced to a thin shell (~1 mm thick).
-  - Vertebral cavities apparently lack internal partitions, with smooth inner
-    wall surfaces.
-  - Trunk vertebrae elongate and biconcave with high neural arches united to
-    centra by suture.
-  - Sides of vertebrae somewhat excavated with small openings into the central
-    cavity.
-  - Cup at each end of centra unusually smooth and regular.
-  - Zygapophyses positioned close together and oriented nearly vertical.
+  - Dentary very gracile
+  - All vertebral centra elongated and very thin-walled
+  - All neural spines long and low
+  - Paired pleurocoels on some cervicals; triangular diapophyseal ala angled
+    sharply ventrolaterally; centroprezygapophyseal lamina forming a fossa
+    lateral to the neural canal; centrodiapophyseal lamina present; caudal
+    prezygapophyses very short
+  - Pubic foot very arcuate ventrally and projecting posterodorsally; pubic
+    fenestra at the middle of the pubic apron
+  - Metatarsus very long and gracile, almost as long as the tibia or femur
 appearance:
   integument: unknown
 identifiers:
@@ -59,12 +59,19 @@ species:
         - -106.2
     holotype:
       specimen_id:
-        - YPM 2010
-      specimen_type: holotype
+        - YPM 1991
+        - YPM 1992
+        - YPM 1993
+      specimen_type: syntype
       institution: YPM
-      material: Vertebrae including dorsal, lumbar, and anterior caudal vertebrae with
-        extensively excavated centra reduced to thin shells.
+      material: Proximal and mid-caudal vertebrae (centra and neural arches) and a
+        cervical vertebra, the thin-walled vertebrae illustrated by Marsh (1881).
       completeness: fragmentary
+      notes: Coelurus fragilis was based on a series of vertebrae; Marsh marked
+        YPM 1991 as the type, and Carpenter et al. (2005) treat YPM 1991-1993 as
+        syntypes (no lectotype has been designated). The much more complete
+        skeleton YPM 2010 is the type of Coelurus agilis Marsh (1884), here
+        referred to C. fragilis.
     size:
       weight_kg:
         min: 25
@@ -76,6 +83,20 @@ species:
         min: 1.8
         max: 1.8
     erected_in: marsh1879
+    described_in: carpenter2005b
+    synonyms:
+      - name: Coelurus agilis
+        type: junior subjective
+        reason: Erected by Marsh (1884) on the more complete skeleton YPM 2010;
+          Carpenter et al. (2005) regarded it as a junior subjective synonym of
+          Coelurus fragilis.
+notable_specimens:
+  - specimen_id: [YPM 2010]
+    institution: YPM
+    species: Coelurus fragilis
+    category: complementary
+    significance: "Much more complete partial skeleton (cervical, dorsal, and caudal vertebrae plus pelvic and limb elements) from Quarry 13, Como Bluff. Originally the holotype of Coelurus agilis Marsh 1884, referred to C. fragilis by Carpenter et al. (2005); the principal source for the genus's modern anatomy."
+    references: [carpenter2005b]
 references:
   - id: marsh1879
     authors: Marsh, O. C.
@@ -88,6 +109,28 @@ references:
     publisher: American Journal of Science (AJS)
     doi: 10.2475/ajs.s3-18.108.501
     url: http://dx.doi.org/10.2475/ajs.s3-18.108.501
+  - id: ostrom1980
+    authors: Ostrom, J. H.
+    year: 1980
+    title: "Coelurus and Ornitholestes: Are they the same?"
+    book: "Aspects of Vertebrate History: Essays in Honor of Edwin Harris Colbert"
+    publisher: Museum of Northern Arizona Press (Jacobs, L. L., ed.)
+    pages: 245-256
+    isbn: 978-0-89734-052-6
+    notes: Compares the type material of the two genera and concludes they are
+      distinct rather than synonymous.
+  - id: carpenter2005b
+    authors: Carpenter, K.; Miles, C.; Ostrom, J. H.; Cloward, K.
+    year: 2005
+    title: "Redescription of the small maniraptoran theropods Ornitholestes and
+      Coelurus from the Upper Jurassic Morrison Formation of Wyoming"
+    book: The Carnivorous Dinosaurs
+    publisher: Indiana University Press (Carpenter, K., ed.)
+    pages: 49-71
+    isbn: 978-0-253-34539-4
+    notes: Redescribes both genera as distinct taxa, provides revised diagnoses,
+      and treats YPM 2010 (the Coelurus agilis type) as referred material of
+      C. fragilis.
   - id: delcourt2025
     authors: Delcourt, D.; Grillo, O. N.; Hendrickx, C.; Kellermann, M.; Langer, M. C.
     year: 2025
