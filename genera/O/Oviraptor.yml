@@ -21,17 +21,21 @@ locomotion: bipedal
 paleoenvironment:
   - arid
 diagnostic_features:
-  - Entirely edentulous cranium (toothless)
-  - Eight craniofacial and mandibular fenestrations (unique arrangement)
-  - Cranium exceeding facial region in length, abbreviate and vertically deep
-    posteriorly
-  - Manus tridactyl with abbreviated metacarpals and irregularly elongated digits
-  - Extremely elongate second digit (II), D.I and III relatively abbreviated
-  - Faciocranial index 70% (extremely low, distinct from megalosaurs)
-  - Large interclavicle and extremely elongate scapula
+  - Rostrum and lower jaw proportionately more elongate than in other
+    oviraptorids — a plesiomorphic condition suggesting Oviraptor is the most
+    basal oviraptorid.
+  - Region anterior to the antorbital fenestra, and the antorbital fenestra
+    itself, longitudinally elongate, rather than foreshortened as in other
+    oviraptorids.
+  - Dentary anterior to the coronoid process proportionately longer than in
+    Citipati, its dorsal edge descending less steeply anterior to the mandibular
+    fenestra.
+  - Maxilla relatively longer than in other oviraptorids (though shorter than in
+    caenagnathid outgroups).
+  - Anterior end of the jugal not extending forward beneath the antorbital
+    fenestra (as it does in Citipati), resembling Khaan.
 appearance:
   features:
-    - hollow cranial crest
     - keratinous beak
   integument: feathered
   evidence: inferred
@@ -88,15 +92,20 @@ species:
       specimen_id: [ AMNH 6517 ]
       specimen_type: holotype
       institution: AMNH
-      material: Partial skull and skeleton
+      material: Partial skull (crushed mediolaterally and incompletely
+        preserved) with an associated postcranial skeleton, preserved together
+        on the original slab; preserved cranial elements include the mandible,
+        partial frontals and parietals, braincase, quadrates, pterygoids, and
+        jugals.
       completeness: partial
     erected_in: osborn1924b
+    described_in: clark2002
 notable_specimens:
   - specimen_id: [MPC-D 100/42]
     institution: MPC
     category: complementary
-    significance: "Very well-preserved, rather complete tall-crested individual from the Djadokhta Formation referred to Oviraptor by Barsbold in 1981. As the holotype is fragmentary and crestless, it became the prime depiction of the taxon, though Clark and colleagues in 2002 questioned the referral."
-    references: [barsbold1981]
+    significance: "Rather complete tall-crested individual from the Djadokhta Formation referred to Oviraptor by Barsbold in 1981; as the crestless holotype is fragmentary, it long served as the prime depiction of the taxon. Clark et al. (2002) found it does not belong to Oviraptor, more closely resembling Citipati."
+    references: [barsbold1981, clark2002]
   - specimen_id: [AMNH 33092]
     institution: AMNH
     species: Oviraptor philoceratops
@@ -114,6 +123,20 @@ references:
     journal: American Museum Novitates
     volume: "144"
     pages: 1-12
+  - id: clark2002
+    authors: Clark, J. M.; Norell, M. A.; Rowe, T.
+    year: 2002
+    title: "Cranial anatomy of Citipati osmolskae (Theropoda, Oviraptorosauria),
+      and a reinterpretation of the holotype of Oviraptor philoceratops"
+    journal: American Museum Novitates
+    issue: "3364"
+    pages: 1-24
+    publisher: American Museum of Natural History
+    doi: "10.1206/0003-0082(2002)364<0001:CAOCOT>2.0.CO;2"
+    url: "http://dx.doi.org/10.1206/0003-0082(2002)364<0001:CAOCOT>2.0.CO;2"
+    notes: Reinterprets the crushed holotype skull AMNH 6517 as the most basal
+      oviraptorid (elongate rostrum and dentary) and removes the crested IGM
+      100/42 from Oviraptor, reassigning it toward Citipati.
   - id: jones2026c
     authors: Jones, B.; Viola, E.
     year: 2026
