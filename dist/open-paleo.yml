@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-06-24T20:27:07.367Z
+  built_at: 2026-06-24T20:54:06.715Z
   clade_count: 250
   genus_count: 1397
   license: CC-BY-4.0
@@ -28576,7 +28576,7 @@ genera:
     pronunciation:
       phonetic: BRAK-i-SER-a-tops
     etymology: "From Greek brachys (βραχύς) meaning 'short', Greek keras (κέρας) meaning 'horn', and Greek ops (ὤψ) meaning 'face'. Full meaning: 'short horned face'."
-    description: Brachyceratops is a dubious genus of ceratopsian dinosaur from the late Cretaceous Period of Montana, United States. Brachyceratops has historically been known from juvenile remains, with one specimen having since been re-classified as Rubeosaurus ovatus.
+    description: Brachyceratops is a dubious genus of ceratopsian dinosaur from the late Cretaceous Period of Montana, United States. Brachyceratops has historically been known from juvenile remains, with one specimen having since been re-classified as Rubeosaurus ovatus. Because the holotype is too incomplete and juvenile to preserve diagnostic features, Sampson et al. (1997) and McDonald (2011) regarded Brachyceratops as a nomen dubium.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -28603,7 +28603,7 @@ genera:
     species:
       - name: Brachyceratops montanensis
         etymology: Named for the provenance of the holotype from Montana, United States.
-        status: valid
+        status: nomen dubium
         type_species: true
         period:
           name:
@@ -28628,9 +28628,10 @@ genera:
             - USNM 7951
           specimen_type: holotype
           institution: National Museum of Natural History, Smithsonian Institution
-          material: Disarticulated skull (nasals, prefrontals, postfrontals, postorbitals, premaxillaries, maxillaries, alisphenoid) with provisionally associated fragmentary frill, right dentary, and predentary
+          material: Disarticulated skull (nasals, prefrontals, postfrontals, postorbitals, premaxillaries, maxillaries, lachrymal, alisphenoid, exoccipital) with provisionally associated fragmentary frill, right dentary, and predentary
           completeness: fragmentary
         erected_in: gilmore1914a
+        described_in: gilmore1917
         authors: Gilmore, C. W.
         described: 1914
     references:
@@ -28642,6 +28643,38 @@ genera:
         volume: "63"
         issue: "3"
         pages: 1-10
+      - id: gilmore1917
+        authors: Gilmore, C. W.
+        year: 1917
+        title: Brachyceratops, a ceratopsian dinosaur from the Two Medicine Formation of Montana, with notes on associated fossil reptiles
+        journal: United States Geological Survey Professional Paper
+        volume: "103"
+        pages: 1-45
+        publisher: United States Geological Survey
+        notes: Comprehensive osteological monograph of Brachyceratops montanensis based on juvenile material from a Two Medicine Formation bone bed, including a formal diagnosis and the first skeletal restoration.
+      - id: sampson1997
+        authors: Sampson, S. D.; Ryan, M. J.; Tanke, D. H.
+        year: 1997
+        title: "Craniofacial ontogeny in centrosaurine dinosaurs (Ornithischia: Ceratopsidae): taphonomic and behavioral implications"
+        journal: Zoological Journal of the Linnean Society
+        volume: "121"
+        pages: 293-337
+        publisher: Oxford University Press (OUP)
+        doi: 10.1111/j.1096-3642.1997.tb00340.x
+        url: http://dx.doi.org/10.1111/j.1096-3642.1997.tb00340.x
+        notes: Classifies Brachyceratops montanensis as a nomen dubium based on its juvenile craniofacial morphology.
+      - id: mcdonald2011b
+        authors: McDonald, A. T.
+        year: 2011
+        title: "A subadult specimen of Rubeosaurus ovatus (Dinosauria: Ceratopsidae), with observations on other ceratopsids from the Two Medicine Formation"
+        journal: PLOS ONE
+        volume: "6"
+        issue: "8"
+        pages: e22710
+        publisher: Public Library of Science (PLoS)
+        doi: 10.1371/journal.pone.0022710
+        url: http://dx.doi.org/10.1371/journal.pone.0022710
+        notes: Regards Brachyceratops as a nomen dubium because its holotype is too incomplete and juvenile to preserve diagnostic features, and thus not a senior synonym of Rubeosaurus.
     taxonomy:
       - Life
       - Animalia
@@ -103575,7 +103608,7 @@ genera:
           institution: National Museum of Natural History, Smithsonian Institution
           material: Fragmentary postcranium including left and right ilia
           completeness: fragmentary
-        erected_in: mcdonald2011
+        erected_in: mcdonald2011a
         authors: McDonald, A. T.
         described: 2011
     synonyms:
@@ -103591,7 +103624,7 @@ genera:
         volume: "36"
         pages: 197-332
         notes: Original description as Camptosaurus depressus on the basis of an ilium-bearing specimen from the Lakota Formation of South Dakota.
-      - id: mcdonald2011
+      - id: mcdonald2011a
         authors: McDonald, A. T.
         year: 2011
         title: "The taxonomy of species assigned to Camptosaurus (Dinosauria: Ornithopoda)"
