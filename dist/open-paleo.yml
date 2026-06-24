@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-06-24T02:18:34.810Z
+  built_at: 2026-06-24T02:28:47.824Z
   clade_count: 250
   genus_count: 1398
   license: CC-BY-4.0
@@ -94997,21 +94997,24 @@ genera:
     pronunciation:
       phonetic: muht-a-BUHR-a-SAWR-us
     etymology: Named for Muttaburra, a town in Queensland, Australia near where the fossil was discovered, combined with Greek '-saurus' meaning 'lizard'.
-    description: Muttaburrasaurus was a genus of herbivorous iguanodontian ornithopod dinosaur that lived in what is now north-eastern Australia sometime between 112 and 103 million years ago during the early Cretaceous period. It has been recovered in some analyses as a member of the iguanodontian clade Rhabdodontomorpha, or alternately as a member of Elasmaria. After Kunbarrasaurus, it is Australia's most completely known dinosaur from skeletal remains. It was named after Muttaburra, the site in Queensland, Australia, where it was found. The dinosaur was selected from twelve candidates to become the official fossil emblem of the State of Queensland.
+    description: Muttaburrasaurus was a genus of herbivorous iguanodontian ornithopod dinosaur that lived in what is now north-eastern Australia during the Cenomanian stage of the Late Cretaceous period, about 96 million years ago. It has been recovered in some analyses as a member of the iguanodontian clade Rhabdodontomorpha, or alternately as a member of Elasmaria. After Kunbarrasaurus, it is Australia's most completely known dinosaur from skeletal remains. It was named after Muttaburra, the site in Queensland, Australia, where it was found. The dinosaur was selected from twelve candidates to become the official fossil emblem of the State of Queensland.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
       - fluvial
       - coastal
     diagnostic_features:
-      - Nasal region of snout greatly inflated into hollow bulla, unlike any other described form
-      - Maxillary teeth with multiple low ridges but lacking central carina
-      - Postorbital region of skull broad and low, with height slightly over half maximum breadth
-      - Quadrate inclined posteriorly
-      - Lateral process present on frontal
-      - Dorsal centra keeled
-      - Anterior caudal centra with ventral pits
-      - Four metatarsals present
+      - Posterodorsal and posteroventral processes of the premaxilla abutting along a tight lateral suture to form the anterolateral part of the enlarged cavum nasi proprium within the dorsally inflated muzzle.
+      - Novel paired ossifications (prenasals) — either premaxillary processes or neomorphic bones — forming the dorsal roof and internal septa of the enlarged cavum nasi proprium.
+      - Horizontal septum of the prenasal dividing the cavum nasi proprium into inferior and superior airways, with a sagittal septum further dividing the superior airway into left and right meatuses.
+      - Thickened pendulous support ridge of the prenasal projecting ventrally into the superior airway meatus.
+      - Toroidal fossa at the anterior end of the nasal body forming the posterior end of the superior airway meatus.
+      - T-shaped lacrimal with a descending process projecting ventrally toward the dorsal opening of the maxillary neurovascular tract.
+      - Pterygoid lacking palatine and vomeral contacts on the anterior face of the boss for the basipterygoid process.
+      - Two protuberances at the dorsal tip of the ascending process of the supraoccipital, accommodated ventrally on the parietals.
+      - Nasal excluded from the naris by the premaxilla (convergent with Lambeosaurinae).
+      - Dentulous premaxilla bearing five alveoli, as in early-diverging neornithischians.
+      - Caniniform premaxillary teeth lacking a substantial root-crown constriction, as in some heterodontosaurids.
     appearance:
       features:
         - nasal crest
@@ -95033,12 +95036,10 @@ genera:
         type_species: true
         period:
           name:
-            - Early Cretaceous
             - Late Cretaceous
           stage:
-            - Albian
             - Cenomanian
-          from_ma: 106.3
+          from_ma: 100.5
           to_ma: 93.9
         location:
           country: AU
@@ -95053,7 +95054,7 @@ genera:
             - QM F6140
           specimen_type: holotype
           institution: Queensland Museum, Geoscience Collection
-          material: Nearly complete skeleton lacking most of tail, including skull and postcranial elements.
+          material: Almost complete skull — including newly identified premaxillary rami bearing five premaxillary teeth — and a partial postcranium; among the most complete ornithopod specimens from Gondwana.
           completeness: complete
         size:
           hip_height_m:
@@ -95066,6 +95067,7 @@ genera:
             min: 2800
             max: 8854
         erected_in: bartholomai1981
+        described_in: herne2026
         authors: Bartholomai, A.; Molnar, R. E.
         described: 1981
     notable_specimens:
@@ -95104,6 +95106,17 @@ genera:
         issue: "3"
         pages: 639-652
         notes: Source of the hip height estimate, and the appearance features.
+      - id: herne2026
+        authors: Herne, M. C.; Bevitt, J. J.; Milan, L.; Hocknull, S. A.; Tait, A. M.; Allen, C. M.; Rozefelds, A. C.; Molnar, R. E.; Weisbecker, V.; Bell, P. R.
+        year: 2026
+        title: Cranial anatomy, palaeoneurology, palaeobiology and stratigraphic age of the large-bodied ornithopod, Muttaburrasaurus langdoni Bartholomai and Molnar, 1981, from the mid-Cretaceous of Australia
+        journal: PeerJ
+        volume: "14"
+        pages: e20794
+        publisher: PeerJ
+        doi: 10.7717/peerj.20794
+        url: http://dx.doi.org/10.7717/peerj.20794
+        notes: CT-based redescription of the holotype cranium and palaeoneurology; identifies premaxillary teeth and prenasal ossifications and dates the holotype locality to the Cenomanian (~96.3 Ma).
     taxonomy:
       - Life
       - Animalia
