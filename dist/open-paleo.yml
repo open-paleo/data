@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-06-24T04:03:15.586Z
+  built_at: 2026-06-24T04:15:15.853Z
   clade_count: 250
   genus_count: 1397
   license: CC-BY-4.0
@@ -115380,12 +115380,15 @@ genera:
       - fluvial
       - lacustrine
     diagnostic_features:
-      - Large, discrete, window-like pneumatic fenestra on ascending ramus of maxilla
-      - Extremely reduced premaxilla (2.2% of basal skull length, versus 4.3-4.6% in other tyrannosaurids)
-      - Absence of pronounced vertical ridge on lateral surface of ilium
-      - Extremely long and low skull with snout comprising 70% of total skull length
-      - Anteroposteriorly elongate maxillary fenestra with length-to-depth ratio greater than 1.9
-      - Series of pronounced, discrete rugosities on nasal
+      - Large fenestra on the ascending ramus of the maxilla (an ovoid accessory pneumatic fenestra posterodorsal to the maxillary fenestra, absent in other tyrannosauroids).
+      - Extremely reduced premaxilla (only ~2.2% of basal skull length, not elongated despite the longirostrine snout).
+      - Laterally straight, rod-like nasal that does not expand laterally around the naris region (unlike the hourglass shape in Alioramus).
+      - Anteroventrally oriented ventral process of the lacrimal.
+      - Gracile and shallow dorsal prong of the anterior ramus of the squamosal.
+      - Anteroposteriorly oriented ventral process of the squamosal.
+      - Anterior edge of the dentary smoothly merging with the ventral dentary margin.
+      - Highly concave dorsal margin of the supradentary.
+      - Absence of a pronounced vertical ridge on the lateral surface of the ilium (postcranial character retained from Lü et al. 2014).
     appearance:
       features:
         - elongate snout
@@ -115402,7 +115405,7 @@ genera:
     species:
       - name: Qianzhousaurus sinensis
         etymology: From the Greek-derived Latin 'sinensis' meaning 'of China' or 'Chinese', derived from 'Sinai' (Σῖναι), a classical reference to China.
-        status: disputed
+        status: valid
         type_species: true
         period:
           name:
@@ -115422,6 +115425,7 @@ genera:
             min: 2
             max: 2
         erected_in: lü2014
+        described_in: foster2021
         location:
           country: CN
           region: Jiangxi
@@ -115431,7 +115435,7 @@ genera:
             - GM F10004
           specimen_type: holotype
           institution: Gunma Museum of Natural History
-          material: Partial sub-adult individual with nearly complete skull, cervical vertebrae, dorsal vertebrae, caudal vertebrae, scapulocoracoids, partial ilia, and left leg
+          material: Partial individual with a nearly complete skull and almost complete left mandible, plus cervical, dorsal, and caudal vertebrae, scapulocoracoids, partial ilia, and the left leg; reinterpreted by Foster et al. as an adult — the most mature alioramin known — with highly fused cranial bones and well-developed ornamentation.
           completeness: partial
         authors: Lü, J.; Yi, L.; Brusatte, S. L.; Yang, L.; Li, H.; Chen, L.
         described: 2014
@@ -115446,6 +115450,18 @@ genera:
         publisher: Springer Science and Business Media LLC
         doi: 10.1038/ncomms4788
         url: http://dx.doi.org/10.1038/ncomms4788
+      - id: foster2021
+        authors: Foster, W.; Brusatte, S. L.; Carr, T. D.; Williamson, T. E.; Yi, L.; Lü, J.
+        year: 2021
+        title: The cranial anatomy of the long-snouted tyrannosaurid dinosaur Qianzhousaurus sinensis from the Upper Cretaceous of China
+        journal: Journal of Vertebrate Paleontology
+        volume: "41"
+        issue: "4"
+        pages: e1999251
+        publisher: Informa UK Limited
+        doi: 10.1080/02724634.2021.1999251
+        url: http://dx.doi.org/10.1080/02724634.2021.1999251
+        notes: Detailed cranial redescription of the holotype GM F10004; updates the diagnosis with new cranial autapomorphies and interprets the holotype as the adult (most mature) alioramin.
       - id: jones2026c
         authors: Jones, B.; Viola, E.
         year: 2026
