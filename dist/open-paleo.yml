@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-06-24T03:48:51.057Z
+  built_at: 2026-06-24T03:59:31.550Z
   clade_count: 250
   genus_count: 1397
   license: CC-BY-4.0
@@ -104688,7 +104688,7 @@ genera:
     species:
       - name: Palaeopteryx thomsoni
         etymology: Named in honor of Sir Arthur Thomson.
-        status: valid
+        status: nomen dubium
         type_species: true
         period:
           name:
@@ -104710,7 +104710,10 @@ genera:
             - BYU 2022
           specimen_type: holotype
           institution: Earth Sciences Museum, Brigham Young University
+          material: A single bone end, reidentified by Jensen and Padian (1989) as the distal radius of a maniraptoran theropod (deinonychosaur or bird), having originally been described as the proximal tibiotarsus of a bird.
+          completeness: fragmentary
         erected_in: jensen1981
+        described_in: jensen1989
         authors: Jensen, J. A.
         described: 1981
     references:
@@ -104721,6 +104724,18 @@ genera:
         journal: Encyclia
         volume: "58"
         pages: 109-128
+      - id: jensen1989
+        authors: Jensen, J. A.; Padian, K.
+        year: 1989
+        title: "Small pterosaurs and dinosaurs from the Uncompahgre fauna (Brushy Basin Member, Morrison Formation: ?Tithonian), Late Jurassic, western Colorado"
+        journal: Journal of Paleontology
+        volume: "63"
+        issue: "3"
+        pages: 364-373
+        publisher: Cambridge University Press (CUP)
+        doi: 10.1017/S0022336000019533
+        url: http://dx.doi.org/10.1017/S0022336000019533
+        notes: Reidentifies the Palaeopteryx holotype BYU 2022 as the distal radius of a maniraptoran theropod and regards Palaeopteryx thomsoni as invalid (non-diagnostic and never properly diagnosed).
     taxonomy:
       - Life
       - Animalia
