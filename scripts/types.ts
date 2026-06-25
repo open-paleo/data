@@ -912,3 +912,38 @@ export type FlaggedSources = {
         open_paleo_additions?: Array<FlaggedAddition>;
     };
 };
+
+/**
+ * A maintainer's verification of a single flagged-source reference, recorded
+ * in flagged-signoffs.yml and keyed there by reference id. A `verified: true`
+ * entry suppresses that reference's flagged-source validator warning.
+ */
+export type FlaggedSignoff = {
+    /**
+     * Whether the reference has been verified; only `true` suppresses the
+     * flagged-source warning.
+     */
+    verified?: boolean;
+
+    /**
+     * Citation count recorded at the `checked` date (from OpenAlex/Crossref),
+     * or null when the paper has no indexed citation-database record.
+     */
+    cited_by?: number | null;
+
+    /**
+     * ISO date (YYYY-MM-DD) on which the verification was performed.
+     */
+    checked?: string;
+
+    /**
+     * One-line justification for the sign-off.
+     */
+    rationale?: string;
+};
+
+/**
+ * The flagged-source sign-off registry (flagged-signoffs.yml): a map of
+ * reference id to its verification record.
+ */
+export type FlaggedSignoffs = Record<string, FlaggedSignoff>;

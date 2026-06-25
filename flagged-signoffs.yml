@@ -1,0 +1,65 @@
+# Open Paleo — Flagged Source Sign-offs
+#
+# Each entry records a maintainer's verification of a reference whose
+# publisher or journal appears in flagged-sources.yml. A reference id listed
+# here with `verified: true` suppresses that reference's flagged-source
+# validator warning. See flagged-sources.yml for the policy this complements.
+#
+# Verification must rest on evidence INDEPENDENT of the flagged source itself:
+# third-party citation databases (OpenAlex, Crossref) and citations by
+# independent, reputable works. A flagged publisher hosting its own paper is
+# not evidence of legitimacy. `cited_by` is the independent citation count at
+# the `checked` date (null when no third-party record was found).
+# Re-verify periodically.
+#
+# To sign off a reference: confirm the specific paper is independently cited
+# and/or indexed by third parties, peer-reviewed in practice, and free of red
+# flags (e.g. retraction), then add an entry keyed by its reference id.
+
+beccari2021:
+  verified: true
+  cited_by: 21
+  checked: "2026-06-24"
+  rationale: Describing paper for Issi; cited by 21 independent works (OpenAlex), indexed in Crossref, not retracted.
+
+manitkoon2023:
+  verified: true
+  cited_by: 10
+  checked: "2026-06-24"
+  rationale: Describing paper for Minimocursor; cited by 10 independent works (OpenAlex), indexed in Crossref, not retracted.
+
+longrich2024b:
+  verified: true
+  cited_by: 4
+  checked: "2026-06-24"
+  rationale: Describing paper for Coahuilasaurus; cited by 4 independent works (OpenAlex), indexed in Crossref, not retracted.
+
+rivera-sylva2026:
+  verified: true
+  cited_by: 0
+  checked: "2026-06-24"
+  rationale: Describing paper for Xenovenator by established authors; recorded in the third-party Crossref and OpenAlex indexes, not retracted; no independent citations yet (published 2026).
+
+longrich2026:
+  verified: true
+  cited_by: 0
+  checked: "2026-06-24"
+  rationale: Describing paper for Phosphatotitan by established authors; recorded in the third-party Crossref and OpenAlex indexes, not retracted; no independent citations yet (published 2026).
+
+ma2026:
+  verified: true
+  cited_by: 0
+  checked: "2026-06-24"
+  rationale: Describing paper for Qianjiangsaurus by established authors; recorded in the third-party Crossref and OpenAlex indexes, not retracted; no independent citations yet (published 2026).
+
+miles2009:
+  verified: true
+  cited_by: null
+  checked: "2026-06-24"
+  rationale: Describing paper for Minotaurasaurus; no DOI, but cited in the reference lists of independent peer-reviewed journals — PeerJ (2018), Zoological Journal of the Linnean Society (2014), and Cretaceous Research (2016).
+
+mohabey2013:
+  verified: true
+  cited_by: null
+  checked: "2026-06-24"
+  rationale: Citation-only reference in Titanosaurus.yml — no dataset field is sourced from it, so the flagged-source data-quality concern does not apply. Documents the 2012 rediscovery of a lost Titanosaurus indicus syntype vertebra; co-authored by J. A. Wilson.

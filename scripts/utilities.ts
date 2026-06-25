@@ -1,7 +1,7 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
 import { parse as parseYamlContent } from "yaml";
-import type { FlaggedSources, InstitutionEntry, TreeNode } from "./types.ts";
+import type { FlaggedSignoffs, FlaggedSources, InstitutionEntry, TreeNode } from "./types.ts";
 
 /**
  * Escapes a string for safe inclusion as a literal in a regular expression.
@@ -140,6 +140,46 @@ export function buildFlaggedSet(group: FlaggedSources["publishers"] | FlaggedSou
     for (const addition of group?.open_paleo_additions ?? [])
     {
         result.add(addition.name.trim().toLowerCase());
+    }
+
+    return result;
+}
+
+/**
+ * Loads the flagged-source sign-off registry (flagged-signoffs.yml), a map of
+ * reference id to its verification record. Returns an empty map when the file
+ * is absent.
+ *
+ * @param signoffsPath - Absolute path to flagged-signoffs.yml.
+ * @returns The parsed sign-off map.
+ */
+export function loadFlaggedSignoffs(signoffsPath: string): FlaggedSignoffs
+{
+    if (!fs.existsSync(signoffsPath))
+    {
+        return {};
+    }
+
+    return (parseYamlContent(fs.readFileSync(signoffsPath, "utf8")) as FlaggedSignoffs) ?? {};
+}
+
+/**
+ * Builds the set of reference ids that carry a verified flagged-source
+ * sign-off; membership suppresses that reference's flagged-source warning.
+ *
+ * @param signoffs - The sign-off map from loadFlaggedSignoffs.
+ * @returns A Set of verified reference ids for O(1) membership checks.
+ */
+export function buildVerifiedSet(signoffs: FlaggedSignoffs): Set<string>
+{
+    const result = new Set<string>();
+
+    for (const [referenceId, signoff] of Object.entries(signoffs))
+    {
+        if (signoff?.verified)
+        {
+            result.add(referenceId);
+        }
     }
 
     return result;

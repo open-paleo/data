@@ -9,7 +9,7 @@ import * as url from "node:url";
 
 import { parse as parseYamlContent } from "yaml";
 
-import { buildFlaggedSet, findYamlFiles, loadFlaggedSources } from "./utilities.ts";
+import { buildFlaggedSet, buildVerifiedSet, findYamlFiles, loadFlaggedSignoffs, loadFlaggedSources } from "./utilities.ts";
 
 import type {
     GenusData,
@@ -184,6 +184,7 @@ const allowedInstitutionKeys = new Set(Object.keys(institutionRegistry));
 const flaggedSources = loadFlaggedSources(path.join(root, "flagged-sources.yml"));
 const flaggedPublishers = buildFlaggedSet(flaggedSources.publishers);
 const flaggedJournals = buildFlaggedSet(flaggedSources.journals);
+const verifiedReferenceIds = buildVerifiedSet(loadFlaggedSignoffs(path.join(root, "flagged-signoffs.yml")));
 
 const genusFiles = findYamlFiles(path.join(root, "genera"));
 const genusParsed = new Map<string, GenusData>();
@@ -838,6 +839,11 @@ for (const [filePath, doc] of allParsed)
         const publisher = reference.publisher?.trim().toLowerCase();
         const journal = reference.journal?.trim().toLowerCase();
         const referenceLabel = reference.id ?? reference.title ?? "?";
+
+        if (reference.id && verifiedReferenceIds.has(reference.id))
+        {
+            continue;
+        }
 
         if (publisher && flaggedPublishers.has(publisher))
         {
