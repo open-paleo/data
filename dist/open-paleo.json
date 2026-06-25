@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-06-25T18:05:55.923Z",
+    "built_at": "2026-06-25T20:11:52.780Z",
     "clade_count": 250,
     "genus_count": 1398,
     "license": "CC-BY-4.0",
@@ -88568,7 +88568,7 @@
       "pronunciation": {
         "phonetic": "HIP-see-BEE-ma"
       },
-      "description": "Hypsibema is an extinct genus of very large basal hadrosauroid dinosaur from the Late Cretaceous (Campanian) of eastern North America. The type species is H. crassicauda, with a potential second species in H. missouriensis (now generally placed in its own genus, Parrosaurus). Most remains of H. crassicauda, including the type specimen, are known from the Tar Heel Formation of North Carolina, in addition to some remains known from the Marshalltown Formation of New Jersey.",
+      "description": "Hypsibema is an extinct genus of very large basal hadrosauroid dinosaur from the Late Cretaceous of eastern North America. The type species, H. crassicauda, is known mainly from the Tar Heel Formation of North Carolina and the Marshalltown Formation of New Jersey. A second species, H. missouriensis from the Maastrichtian of Missouri, was originally named Neosaurus and then Parrosaurus before being referred to Hypsibema by Baird and Horner (1979); a proposed return of that species to Parrosaurus has not gained broad acceptance.",
       "diet": "herbivore",
       "locomotion": "facultative",
       "paleoenvironment": [
@@ -88610,7 +88610,7 @@
         {
           "name": "Parrosaurus",
           "type": "reassigned",
-          "reason": "Coined as a replacement name for the preoccupied Neosaurus; the underlying specimen was later reassigned to Hypsibema."
+          "reason": "Coined by Gilmore (1945) as a replacement for the preoccupied Neosaurus; its type species was referred to Hypsibema by Baird and Horner (1979). A proposed revival of Parrosaurus has not gained broad acceptance."
         }
       ],
       "species": [
@@ -88656,6 +88656,62 @@
           "erected_in": "cope1869a",
           "authors": "Cope, E. D.",
           "described": 1869
+        },
+        {
+          "name": "Hypsibema missouriensis",
+          "etymology": "Named for Missouri, the U.S. state where the holotype was discovered, with the Latin suffix '-ensis'.",
+          "status": "valid",
+          "type_species": false,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Maastrichtian"
+            ],
+            "from_ma": 72.1,
+            "to_ma": 66
+          },
+          "location": {
+            "country": "US",
+            "region": "Missouri",
+            "formation": "Ripley",
+            "locality": "Chronister Site, near Glen Allen, Bollinger County",
+            "coordinates": [
+              37.31,
+              -90
+            ]
+          },
+          "holotype": {
+            "specimen_id": [
+              "USNM 16735"
+            ],
+            "specimen_type": "holotype",
+            "institution": "National Museum of Natural History, Smithsonian Institution",
+            "material": "13 caudal centra and two unidentified fragments; all neural arches missing",
+            "completeness": "fragmentary"
+          },
+          "diagnostic_features": [
+            "Caudal centra amphicoelous, longer than wide, with angularly rounded sides shallowly concave from end to end",
+            "Articular ends with a flattened peripheral border surrounding a concave central area bearing radiating bumps and depressions",
+            "Sides of the centra divided subequally by a low longitudinal ridge that fades posteriorly",
+            "Chevron facets restricted to the posterior ends of the centra, the ventral surface scooped out between them"
+          ],
+          "synonyms": [
+            {
+              "name": "Neosaurus missouriensis",
+              "type": "reassigned",
+              "reason": "Original combination (Gilmore and Stewart, 1945); the genus name Neosaurus was preoccupied."
+            },
+            {
+              "name": "Parrosaurus missouriensis",
+              "type": "reassigned",
+              "reason": "Combination under Parrosaurus, the replacement name Gilmore (1945) coined for the preoccupied Neosaurus; referred to Hypsibema by Baird and Horner (1979)."
+            }
+          ],
+          "erected_in": "gilmore1945a",
+          "authors": "Gilmore, C. W.; Stewart, D. R.",
+          "described": 1945
         }
       ],
       "references": [
@@ -88667,6 +88723,41 @@
           "journal": "Proceedings of the Academy of Natural Sciences of Philadelphia",
           "volume": "21",
           "pages": "191-192"
+        },
+        {
+          "id": "gilmore1945a",
+          "authors": "Gilmore, C. W.; Stewart, D. R.",
+          "year": 1945,
+          "title": "A new sauropod dinosaur from the Upper Cretaceous of Missouri",
+          "journal": "Journal of Paleontology",
+          "volume": "19",
+          "issue": "1",
+          "pages": "23-29",
+          "url": "https://www.jstor.org/stable/1299165",
+          "notes": "Original description of the type material, as the sauropod Neosaurus missouriensis."
+        },
+        {
+          "id": "gilmore1945b",
+          "authors": "Gilmore, C. W.",
+          "year": 1945,
+          "title": "Parrosaurus, n. name, replacing Neosaurus Gilmore, 1945",
+          "journal": "Journal of Paleontology",
+          "volume": "19",
+          "issue": "5",
+          "pages": "540",
+          "url": "https://www.jstor.org/stable/1299009",
+          "notes": "Replacement genus name (Parrosaurus) for the preoccupied Neosaurus Gilmore, 1945."
+        },
+        {
+          "id": "baird1979",
+          "authors": "Baird, D.; Horner, J. R.",
+          "year": 1979,
+          "title": "Cretaceous dinosaurs of North Carolina",
+          "journal": "Brimleyana",
+          "volume": "2",
+          "pages": "1-28",
+          "url": "https://www.biodiversitylibrary.org/part/442233",
+          "notes": "Referred Parrosaurus missouriensis to Hypsibema, keeping it separate from H. crassicauda pending better material."
         }
       ],
       "taxonomy": [
