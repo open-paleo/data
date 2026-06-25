@@ -894,6 +894,47 @@ for (const [filePath, doc] of allParsed)
     }
 }
 
+// 12d. Dispute structure — object with a non-empty string summary; history
+// entries need a YYYY-MM-DD date and a note. Applies to genera and clades.
+startCheck("Dispute structure");
+
+for (const [filePath, doc] of allParsed)
+{
+    if (!doc || !doc.dispute)
+    {
+        continue;
+    }
+
+    if (typeof doc.dispute.summary !== "string" || doc.dispute.summary.trim() === "")
+    {
+        checkError(
+            "Dispute structure",
+            filePath,
+            "dispute must have a non-empty 'summary' string");
+    }
+
+    const disputeHistory = Array.isArray(doc.dispute.history) ? doc.dispute.history : [];
+
+    for (const update of disputeHistory)
+    {
+        if (typeof update?.date !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(update.date))
+        {
+            checkError(
+                "Dispute structure",
+                filePath,
+                "dispute.history entry needs a 'date' in YYYY-MM-DD form");
+        }
+
+        if (typeof update?.note !== "string" || update.note.trim() === "")
+        {
+            checkError(
+                "Dispute structure",
+                filePath,
+                "dispute.history entry needs a non-empty 'note' string");
+        }
+    }
+}
+
 // 13. Location completeness — country required if location present
 startCheck("Location completeness");
 
@@ -1914,9 +1955,20 @@ for (const [filePath, doc] of allParsed)
         checkAmericanEnglish(filePath, "etymology", genus.etymology);
     }
 
-    if (typeof genus.dispute === "string")
+    if (genus.dispute)
     {
-        checkAmericanEnglish(filePath, "dispute", genus.dispute);
+        if (typeof genus.dispute.summary === "string")
+        {
+            checkAmericanEnglish(filePath, "dispute.summary", genus.dispute.summary);
+        }
+
+        for (const update of genus.dispute.history ?? [])
+        {
+            if (typeof update.note === "string")
+            {
+                checkAmericanEnglish(filePath, "dispute.history", update.note);
+            }
+        }
     }
 
     if (Array.isArray(genus.diagnostic_features))
@@ -2136,9 +2188,20 @@ for (const [filePath, doc] of allParsed)
         checkCitationFormat(filePath, "etymology", genus.etymology);
     }
 
-    if (typeof genus.dispute === "string")
+    if (genus.dispute)
     {
-        checkCitationFormat(filePath, "dispute", genus.dispute);
+        if (typeof genus.dispute.summary === "string")
+        {
+            checkCitationFormat(filePath, "dispute.summary", genus.dispute.summary);
+        }
+
+        for (const update of genus.dispute.history ?? [])
+        {
+            if (typeof update.note === "string")
+            {
+                checkCitationFormat(filePath, "dispute.history", update.note);
+            }
+        }
     }
 
     if (Array.isArray(genus.diagnostic_features))

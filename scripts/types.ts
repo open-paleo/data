@@ -577,10 +577,10 @@ export type GenusData = {
      * Brief account of any active scientific disagreement over the genus
      * (validity, synonymy, placement). Distinct from `description`: the
      * description reads like a Wikipedia intro, while this field captures
-     * the disputed status as a UI-renderable callout. Only set when the
-     * taxon's status is contested in the literature.
+     * the disputed status as a UI-renderable callout, plus a dated decision
+     * history. Only set when the taxon's status is contested in the literature.
      */
-    dispute?: string;
+    dispute?: Dispute;
 
     /**
      * Dietary category from the controlled vocabulary in schema.yml.
@@ -670,6 +670,33 @@ export type GenusData = {
 };
 
 /**
+ * A placement/identity dispute and its dated decision history. The structured
+ * form (vs. a bare string) lets a later pass find when a placement was last
+ * reviewed and on what basis. Used on both genus YAMLs and clade files.
+ */
+export type Dispute = {
+    /**
+     * Current state of the disagreement, as a UI-renderable callout.
+     */
+    summary: string;
+
+    /**
+     * Dated record of placement/identity decisions, oldest first.
+     */
+    history?: Array<{
+        /**
+         * ISO date (YYYY-MM-DD) of the decision.
+         */
+        date: string;
+
+        /**
+         * What was decided and why (source + governing rule).
+         */
+        note: string;
+    }>;
+};
+
+/**
  * Top-level data structure for a clade YAML file.
  */
 export type CladeData = {
@@ -702,6 +729,12 @@ export type CladeData = {
      * Published references cited in this clade file.
      */
     references?: Array<Reference>;
+
+    /**
+     * Active disagreement over this clade's placement (or content), with dated
+     * decision history. Set only when the clade's position is contested.
+     */
+    dispute?: Dispute;
 };
 
 /**
