@@ -16,6 +16,20 @@ diet: carnivore
 locomotion: bipedal
 paleoenvironment:
   - fluvial
+diagnostic_features:
+  - Premaxilla with an accessory peg-and-socket interpremaxillary articulation in
+    the dorsal symphyseal region
+  - Maxilla with an enlarged maxillary fenestra about one-sixth the length of the
+    maxillary tooth row
+  - Scapulocoracoid glenoid fossa wider mediolaterally than long
+    anteroposteriorly
+  - Distal ischial boot with the left and right ischia conjoined anteriorly but
+    diverging posterolaterally
+  - Femoral head oriented anteromedially and inclined proximally
+  - Thumbprint-shaped depression on the posterior femoral shaft lateral to the
+    proximal end of the fourth trochanter
+  - Robust suboval ridge on the external surface of the lesser trochanter of the
+    femur
 appearance:
   integument: scaled
   evidence: inferred
@@ -49,9 +63,14 @@ species:
         - 50.635109
         - -1.41035
     holotype:
-      specimen_id: [MIWG 6348]
+      specimen_id: [MIWG 6348, BMNH R10001]
       specimen_type: holotype
-      institution: NHMUK
+      institution: MIWG
+      material: Partial skeleton with premaxillae, maxilla, nasal, palatine,
+        dentary, teeth, cervical to caudal vertebrae, ribs, gastralia, scapula,
+        coracoid, ilia, pubes, ischia, femora, tibiae, and pedal elements.
+      notes: Holotype individual dual-numbered — cranial and limb elements MIWG
+        6348 (Dinosaur Isle), vertebrae and pelvis BMNH R10001 (NHM London).
     size:
       length_m:
         min: 7.4
@@ -63,6 +82,7 @@ species:
         min: 2
         max: 2.5
     erected_in: hutt1996
+    described_in: brusatte2008
 references:
   - id: hutt1996
     authors: Hutt, S.; Martill, D. M.; Barker, M. J.
@@ -76,3 +96,16 @@ references:
     publisher: Schweizerbart
     doi: 10.1127/njgpm/1996/1996/635
     url: http://dx.doi.org/10.1127/njgpm/1996/1996/635
+  - id: brusatte2008
+    authors: Brusatte, S. L.; Benson, R. B. J.; Hutt, S.
+    year: 2008
+    title: "The osteology of Neovenator salerii (Dinosauria: Theropoda) from the
+      Wealden Group (Barremian) of the Isle of Wight"
+    journal: Monograph of the Palaeontographical Society
+    volume: "162"
+    issue: "631"
+    pages: 1-166
+    doi: 10.1080/25761900.2008.12452864
+    url: http://dx.doi.org/10.1080/25761900.2008.12452864
+    notes: Comprehensive osteological monograph of the holotype with a formal
+      diagnosis; recovers Neovenator as the basalmost carcharodontosaurid.
