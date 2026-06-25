@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-06-25T05:05:59.695Z
+  built_at: 2026-06-25T05:37:05.359Z
   clade_count: 250
   genus_count: 1397
   license: CC-BY-4.0
@@ -118672,18 +118672,17 @@ genera:
     pronunciation:
       phonetic: ree-ah-BEE-ni-no-HAD-ros
     etymology: Named for Russian paleontologist Anatoly Nikolaevich Riabinin, who first described the type material, combined with 'hadros' as in Hadrosauridae; meaning 'Riabinin's hadrosaur.'
-    description: Riabininohadros is an extinct genus of ankylopollexian dinosaur from the Maastrichtian of Crimea. Its type species is Riabininohadros weberi, emended to Riabininohadros weberae. It was originally classified as a species of Orthomerus, until 2015.
+    description: Riabininohadros is an extinct genus of ankylopollexian dinosaur from the Maastrichtian of Crimea. Its type and only species, Riabininohadros weberae, was originally described as a species of Orthomerus before being placed in its own genus.
     diet: herbivore
     locomotion: facultative
     paleoenvironment:
       - marine
     diagnostic_features:
-      - Tibia strongly flattened at distal end and expanded at proximal end
-      - Medial condyle at distal end of tibia considerably shorter than lateral condyle, situated at considerable distance from one another
-      - Medial and lateral condyles at distal end of third metatarsal separated from one another and situated at some distance apart
-      - Large distance between medial and lateral condyles on distal portion of tibia forms small depression and triangular distal end
-      - Strong expansion of tibia at distal and proximal ends with very gradual narrowing toward center
-      - Contact between second and third metatarsals expressed over more than two-thirds of third metatarsal length
+      - Extensor groove between the distal femoral condyles completely open laterally, with the anterior ends of the medial and lateral condyles at different levels
+      - Bridge between the distal femoral condyles positioned near the anterior margin of the bone rather than centrally, associated with reduction of the lateral condyle
+      - Lateral malleolus of the tibia noticeably longer than the medial condyle and directed distally
+      - Deep notch along the posteromedial edge of the proximal surface of the third metatarsal, extending distally onto the proximal third of the bone
+      - Large depression on the distal lateral femoral condyle for the anterior cruciate ligament
     appearance:
       integument: scaled
       evidence: inferred
@@ -118696,9 +118695,10 @@ genera:
         id: "8720304"
       - source: eol
         id: "53424317"
+    erected_in: lopatin2020
     species:
       - name: Riabininohadros weberae
-        etymology: Named for Gertruda Weber, who discovered the holotype hindlimb elements near Bakhchysarai, Crimea, in 1934; the feminine ending '-ae' reflects that Weber was a woman.
+        etymology: Named for Gertruda F. Weber, who discovered the holotype hind-limb material on Mt. Besh-Kosh near Bakhchysarai, Crimea, in 1934. Riabinin's original epithet weberi was emended to the feminine weberae, in her honor, by Nessov in 1995.
         status: valid
         type_species: true
         period:
@@ -118718,25 +118718,66 @@ genera:
             - 33.861565
         holotype:
           specimen_id:
-            - ZGTM 5751
+            - TsNIGR Museum 5751
           specimen_type: holotype
           institution: F.N. Chernyshev Central Museum of Geological Exploration
-          material: Fragmentary femur, left tibia with intact distal end, two tarsals, three metatarsals, one phalanx of second toe, and undetermined bone fragments from the left hind limb
+          material: Fragmentary left hind limb comprising the distal femur, tibia, astragalus, calcaneus, second and third metatarsals, and proximal phalanx of the second digit, plus the proximal end of a right fibula
           completeness: fragmentary
         size:
           length_m:
             min: 6.6
             max: 6.6
-        erected_in: ulansky2015
-        authors: Ulansky, R. E.
-        described: 2015
+        erected_in: riabinin1945
+        described_in: averianov2019
+        synonyms:
+          - name: Orthomerus weberi
+            type: reassigned
+            reason: Originally described as Orthomerus weberi by Riabinin (1945); epithet emended to weberae by Nessov (1995) and reassigned to the new genus Riabininohadros by Lopatin and Averianov (2020).
+        authors: Riabinin, A. N.
+        described: 1945
     references:
+      - id: riabinin1945
+        authors: Riabinin, A. N.
+        year: 1945
+        title: Dinosaur remains in the Upper Cretaceous of Crimea
+        journal: Paleontologiya i Stratigrafiya
+        issue: "4"
+        pages: 4-10
+        notes: Posthumous original description of the type material as Orthomerus weberi.
+      - id: nessov1995
+        authors: Nessov, L. A.
+        year: 1995
+        title: "Dinozavri severnoi Yevrazii: Novye dannye o sostave kompleksov, ekologii i paleobiogeografii [Dinosaurs of northern Eurasia: new data about assemblages, ecology, and paleobiogeography]"
+        journal: Institute for Scientific Research on the Earth's Crust, St. Petersburg State University, St. Petersburg
+        pages: 1-156
+        notes: Emended the specific epithet from weberi to weberae.
+      - id: averianov2019
+        authors: Averianov, A. O.; Lopatin, A. V.
+        year: 2019
+        title: Dinosaur Fossils from the Upper Cretaceous of Crimea
+        journal: Paleontological Journal
+        volume: "53"
+        issue: "4"
+        pages: 398-410
+        doi: 10.1134/S0031030119040026
+        notes: Redescription of the holotype, correcting several of Riabinin's original element identifications.
       - id: ulansky2015
         authors: Ulansky, R. E.
         year: 2015
         title: Riabininohadros, novyy rod dlya gadrozavra iz maastrikhta Kryma Rossiya [Riabininohadros, a new genus for hadrosaur from Maastrichtian of Crimea, Russia]
         journal: Dinologia
         pages: 1-10
+        notes: Coined the name Riabininohadros for Orthomerus weberae, but the name was unavailable under the ICZN (no diagnosis, no ISSN or ISBN, and not registered in ZooBank).
+      - id: lopatin2020
+        authors: Lopatin, A. V.; Averianov, A. O.
+        year: 2020
+        title: Riabininohadros, a New Genus for the Ornithischian Dinosaur Orthomerus weberae (Ornithopoda, Iguanodontia) from the Late Cretaceous of Crimea
+        journal: Paleontological Journal
+        volume: "54"
+        issue: "3"
+        pages: 320-322
+        doi: 10.1134/S0031030120030089
+        notes: Formally erected the genus Riabininohadros to make the name available and valid.
       - id: jones2026a
         authors: Jones, B.; Viola, E.
         year: 2026
@@ -118759,8 +118800,8 @@ genera:
       - Ornithopoda
       - Ankylopollexia
       - Styracosterna
-    authors: Ulansky, R. E.
-    described: 2015
+    authors: Lopatin, A. V.; Averianov, A. O.
+    described: 2020
   Richardoestesia:
     genus: Richardoestesia
     parent: Dromaeosauridae
