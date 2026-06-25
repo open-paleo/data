@@ -1,0 +1,114 @@
+genus: Ornithodesmus
+parent: Dromaeosauridae
+etymology: From Greek 'ornis' (bird) and 'desmos' (link or bond); meaning 'bird
+  link'.
+description: Ornithodesmus is a genus of small, dromaeosaurid dinosaur from the
+  Isle of Wight in England, dating to about 125 million years ago. The name,
+  along with that of the type and only species, O. cluniculus, was originally
+  assigned to a bird-like sacrum (a series of vertebrae fused to the hip bones),
+  initially believed to come from a bird and subsequently identified as a
+  pterosaur. More complete pterosaur remains were later assigned to
+  Ornithodesmus. More recently, a detailed analysis determined that the original
+  specimen in fact came from a small theropod, specifically a dromaeosaur,
+  making it one of the first dromaeosaurs known to science. All pterosaurian
+  material previously assigned to this genus has been renamed Istiodactylus.
+dispute: >
+  Originally described as a bird (Seeley, 1887) and long treated as a pterosaur,
+  the holotype sacrum was reidentified as a small theropod by Howse and Milner
+  (1993), who referred it to Theropoda (as a troodontid) and regarded the genus
+  as a nomen vanum given the limited material. Later analyses placed it in
+  Dromaeosauridae (Naish and Martill, 2007) and among unenlagiine dromaeosaurids
+  (Hartman et al., 2019). Its validity and precise placement remain debated.
+diet: carnivore
+locomotion: bipedal
+paleoenvironment:
+  - fluvial
+diagnostic_features:
+  - All six sacral vertebrae fully ankylosed at a sacrum length of under 100 mm
+  - Sixth sacral centrum shorter than fifth sacral centrum
+  - Pneumatic foramina present on the lateral walls of the first two sacral
+    centra
+  - Ventral surface of sacrals 2-5 broadly flattened with a pronounced medial
+    groove running posteriorly from sacral 2 to the posterior rim of sacral 6
+  - "Neural platform present: horizontal laminar extensions from bases of neural
+    arches fuse with sacral diapophyses to form a continuous lateral sheet of
+    bone on each side"
+identifiers:
+  - source: pbdb
+    id: "38501"
+  - source: wikidata
+    id: Q1578419
+  - source: gbif
+    id: "4818540"
+  - source: eol
+    id: "47449863"
+species:
+  - name: Ornithodesmus cluniculus
+    status: valid
+    type_species: true
+    period:
+      name:
+        - Early Cretaceous
+      stage:
+        - Barremian
+      from_ma: 129.4
+      to_ma: 125
+    location:
+      country: GB
+      locality: Brook, Isle of Wight
+      region: England
+      formation: Wessex
+      coordinates:
+        - 50.659
+        - -1.487
+    holotype:
+      specimen_id:
+        - BMNH R187
+      specimen_type: holotype
+      institution: NHMUK
+      material: Poorly preserved sacrum comprising six ankylosed vertebrae, about
+        96 mm long
+      completeness: fragmentary
+    size:
+      length_m:
+        min: 1.5
+        max: 1.5
+    erected_in: seeley1887
+    described_in: howse1993
+references:
+  - id: seeley1887
+    authors: Seeley, H. G.
+    year: 1887
+    title: On a Sacrum, apparently indicating a new type of Bird, Ornithodesmus
+      cluniculus, Seeley, from the Wealden of Brook
+    journal: Quarterly Journal of the Geological Society of London
+    volume: "43"
+    issue: "1-4"
+    pages: 206-211
+    publisher: Geological Society of London
+    doi: 10.1144/gsl.jgs.1887.043.01-04.19
+    url: http://dx.doi.org/10.1144/gsl.jgs.1887.043.01-04.19
+  - id: howse1993
+    authors: Howse, S. C. B.; Milner, A. R.
+    year: 1993
+    title: Ornithodesmus—a maniraptoran theropod dinosaur from the Lower
+      Cretaceous of the Isle of Wight, England
+    journal: Palaeontology
+    volume: "36"
+    pages: 425-437
+    notes: Redescription of the holotype sacrum; removed it from Pterosauria and
+      referred it to Theropoda (as a troodontid), treating the genus as a nomen
+      vanum given the limited material.
+  - id: naish2007
+    authors: Naish, D.; Martill, D. M.
+    year: 2007
+    title: "Dinosaurs of Great Britain and the role of the Geological Society of
+      London in their discovery: basal Dinosauria and Saurischia"
+    journal: Journal of the Geological Society
+    volume: "164"
+    issue: "3"
+    pages: 493-510
+    doi: 10.1144/0016-76492006-032
+    url: http://dx.doi.org/10.1144/0016-76492006-032
+    notes: Bicentennial review of British saurischians; identifies Ornithodesmus
+      as a probable dromaeosaurid based on the sacrum from the Wessex Formation.
