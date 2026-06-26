@@ -40,7 +40,12 @@ type ProcessedClade = {
     taxonomy: Array<string>;
 
     /**
-     * Year the clade was formally described.
+     * Type genus of a rank-based name (omitted for unranked clades).
+     */
+    type_genus?: string;
+
+    /**
+     * Year the clade was formally described (derived from `erected_in` when set).
      */
     described?: number;
 
@@ -322,11 +327,28 @@ for (const file of findYamlFiles(path.join(root, "clades")))
 
     if (data && data.clade)
     {
+        // Derive authors/year from the erected_in reference (in this clade's
+        // own references block); fall back to the legacy described/authors.
+        let described = data.described;
+        let authors = data.authors;
+
+        if (data.erected_in)
+        {
+            const authorityReference = (data.references ?? []).find((reference) => reference.id === data.erected_in);
+
+            if (authorityReference)
+            {
+                authors = authorityReference.authors;
+                described = authorityReference.year;
+            }
+        }
+
         clades[data.clade] = {
             description: data.description,
             taxonomy: findPath(tree, data.clade) ?? [ ],
-            described: data.described,
-            authors: data.authors,
+            type_genus: data.type_genus,
+            described,
+            authors,
             diagnostic_features: data.diagnostic_features,
             references: data.references,
         };

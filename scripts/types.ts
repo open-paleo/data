@@ -711,12 +711,35 @@ export type CladeData = {
     description?: string;
 
     /**
-     * Year the clade was formally named or defined.
+     * Type genus of a rank-based (family-group or superfamily) name, e.g.
+     * "Tyrannosaurus" for Tyrannosauridae. Omitted for unranked phylogenetic
+     * clades (e.g. Eutyrannosauria, Coelurosauria), which have no type genus.
+     */
+    type_genus?: string;
+
+    /**
+     * Citation key of the reference that established (erected) the clade name —
+     * the nomenclatural authority. `authors`/`described` are DERIVED from this
+     * reference during build; prefer it over the legacy fields.
+     */
+    erected_in?: string;
+
+    /**
+     * Citation key of the authoritative descriptive source for the clade (e.g.
+     * a later redefinition or diagnosis). Falls back to `erected_in` when
+     * omitted.
+     */
+    described_in?: string;
+
+    /**
+     * @deprecated Use `erected_in` instead — year is derived from its reference.
+     * Retained transitionally until all clade files migrate.
      */
     described?: number;
 
     /**
-     * Author(s) who named or defined the clade.
+     * @deprecated Use `erected_in` instead — authors are derived from its
+     * reference. Retained transitionally until all clade files migrate.
      */
     authors?: string;
 

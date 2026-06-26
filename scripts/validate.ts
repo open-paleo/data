@@ -564,6 +564,47 @@ for (const [filePath, doc] of genusParsed)
     }
 }
 
+// 10a. Clade reference integrity — clade erected_in/described_in match a
+// reference id in the same clade file.
+startCheck("Clade reference integrity");
+
+for (const [filePath, doc] of cladeParsed)
+{
+    if (!doc)
+    {
+        continue;
+    }
+
+    const ids = new Set<string>();
+
+    if (Array.isArray(doc.references))
+    {
+        for (const reference of doc.references)
+        {
+            if (reference && reference.id)
+            {
+                ids.add(reference.id);
+            }
+        }
+    }
+
+    if (doc.erected_in && !ids.has(doc.erected_in))
+    {
+        checkError(
+            "Clade reference integrity",
+            filePath,
+            `erected_in '${doc.erected_in}' does not match any reference id`);
+    }
+
+    if (doc.described_in && !ids.has(doc.described_in))
+    {
+        checkError(
+            "Clade reference integrity",
+            filePath,
+            `described_in '${doc.described_in}' does not match any reference id`);
+    }
+}
+
 // 10b. ICZN ruling compliance — each ruling needs a known type and an Opinion
 startCheck("ICZN ruling compliance");
 
