@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-06-26T19:24:41.669Z
+  built_at: 2026-06-26T20:38:13.284Z
   clade_count: 239
   genus_count: 1398
   license: CC-BY-4.0
@@ -217,7 +217,6 @@ tree:
                       Herrerasauridae: {}
                     Ornithischia:
                       Thyreophora:
-                        Stegosauria: {}
                         Ankylosauria:
                           Ankylosauridae:
                             Ankylosaurinae:
@@ -293,7 +292,7 @@ tree:
                           Stegosauria:
                             Stegosauridae:
                               Dacentrurinae: {}
-                              Huayangosaurinae: {}
+                              Stegosaurinae: {}
                       Neornithischia:
                         Thescelosauridae:
                           Orodrominae: {}
@@ -1865,6 +1864,8 @@ clades:
       - Lambeosaurinae
       - Corythosaurini
   Dacentrurinae:
+    description: |
+      Dacentrurinae is a subfamily of stegosaurid dinosaurs erected for the long-spined European and African plated dinosaurs allied to Dacentrurus. Members are distinguished from other stegosaurids by their elongate paired terminal tail spines and relatively gracile build. The subfamily was named in the description of Miragaia and has since been expanded to include several Middle to Late Jurassic taxa from Europe and North Africa.
     taxonomy:
       - Life
       - Animalia
@@ -1881,6 +1882,33 @@ clades:
       - Stegosauria
       - Stegosauridae
       - Dacentrurinae
+    type_genus: Dacentrurus
+    described: 2009
+    authors: Mateus, O.; Maidment, S. C. R.; Christiansen, N. A.
+    diagnostic_features:
+      - Two pairs of long terminal caudal dermal spines (thagomizer)
+      - Dorsal centra wider than long in the Dacentrurus-Adratiklit-Thyreosaurus subgroup
+    references:
+      - id: mateus2009
+        authors: Mateus, O.; Maidment, S. C. R.; Christiansen, N. A.
+        year: 2009
+        title: A new long-necked 'sauropod-mimic' stegosaur and the evolution of the plated dinosaurs
+        journal: "Proceedings of the Royal Society B: Biological Sciences"
+        volume: "276"
+        pages: 1815-1821
+        doi: 10.1098/rspb.2008.1909
+        url: http://dx.doi.org/10.1098/rspb.2008.1909
+        notes: Erected the subfamily Dacentrurinae.
+      - id: sánchez-fenollosa2025
+        authors: Sánchez-Fenollosa, S.; Cobos, A.
+        year: 2025
+        title: "New insights into the phylogeny and skull evolution of stegosaurian dinosaurs: an extraordinary cranium from the European Late Jurassic (Dinosauria: Stegosauria)"
+        journal: Vertebrate Zoology
+        volume: "75"
+        pages: 165-189
+        doi: 10.3897/vz.75.e146618
+        url: http://dx.doi.org/10.3897/vz.75.e146618
+        notes: Formalized Dacentrurinae and expanded its membership.
   Deinocheiridae:
     taxonomy:
       - Life
@@ -2861,23 +2889,6 @@ clades:
       - Oviraptorosauria
       - Oviraptoridae
       - Heyuanninae
-  Huayangosaurinae:
-    taxonomy:
-      - Life
-      - Animalia
-      - Chordata
-      - Vertebrata
-      - Sarcopterygii
-      - Tetrapoda
-      - Reptilia
-      - Archosauria
-      - Dinosauria
-      - Ornithischia
-      - Genasauria
-      - Thyreophora
-      - Stegosauria
-      - Stegosauridae
-      - Huayangosaurinae
   Hypsilophodontidae:
     taxonomy:
       - Life
@@ -5018,7 +5029,7 @@ clades:
       - Spinosaurinae
   Stegosauria:
     description: |
-      Stegosauria is a clade of thyreophoran ornithischian dinosaurs best known for their distinctive rows of dorsal plates and spines. Stegosaurs appeared in the Middle Jurassic and were most diverse during the Late Jurassic, with the group declining through the Cretaceous. They were medium to large quadrupedal herbivores with small heads, short necks, and hindlimbs significantly longer than forelimbs, giving the body a distinctive arched profile. The tail typically bore two pairs of elongate spines (the "thagomizer").
+      Stegosauria is a clade of thyreophoran ornithischian dinosaurs best known for their distinctive rows of dorsal plates and spines. Stegosaurs appeared in the Middle Jurassic and were most diverse during the Late Jurassic, with the group declining through the Cretaceous. They were medium to large quadrupedal herbivores with small heads, short necks, and hindlimbs significantly longer than forelimbs, giving the body a distinctive arched profile. The tail typically bore two pairs of elongate spines (the "thagomizer"). Crown-group diversity is concentrated in the family Stegosauridae; many basal and fragmentary genera remain of uncertain position within the clade.
     taxonomy:
       - Life
       - Animalia
@@ -5030,10 +5041,12 @@ clades:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Stegosauria
+    type_genus: Stegosaurus
     described: 1877
-    authors: Marsh
+    authors: Marsh, O. C.
     diagnostic_features:
       - Parasagittal rows of alternating or paired dorsal plates and/or spines
       - Tail spines (thagomizer) used for defense
@@ -5043,13 +5056,30 @@ clades:
       - Relatively small brain (low encephalization quotient)
     references:
       - id: marsh1877a
-        authors: Marsh, O.C.
+        authors: Marsh, O. C.
         year: 1877
         title: A new order of extinct Reptilia (Stegosauria) from the Jurassic of the Rocky Mountains
         journal: American Journal of Science
-        volume: "14"
+        volume: s3-14
+        issue: "84"
         pages: 513-514
+        doi: 10.2475/ajs.s3-14.84.513
+        url: http://dx.doi.org/10.2475/ajs.s3-14.84.513
+        notes: Erected the order Stegosauria.
+      - id: maidment2008
+        authors: Maidment, S. C. R.; Norman, D. B.; Barrett, P. M.; Upchurch, P.
+        year: 2008
+        title: "Systematics and phylogeny of Stegosauria (Dinosauria: Ornithischia)"
+        journal: Journal of Systematic Palaeontology
+        volume: "6"
+        issue: "4"
+        pages: 367-407
+        doi: 10.1017/S1477201908002459
+        url: http://dx.doi.org/10.1017/S1477201908002459
+        notes: Comprehensive systematic revision of Stegosauria.
   Stegosauridae:
+    description: |
+      Stegosauridae is the crown family of Stegosauria, comprising the derived, large-bodied plated dinosaurs of the Middle Jurassic through Early Cretaceous. Stegosaurids are characterized by relatively long necks, tall dorsal plates or spines arranged in parasagittal rows, and a thagomizer of paired terminal tail spines. The family is conventionally divided into two subfamilies, the long-spined Dacentrurinae and the plate-bearing Stegosaurinae; several basal and fragmentary members are not assigned to either subfamily.
     taxonomy:
       - Life
       - Animalia
@@ -5065,6 +5095,83 @@ clades:
       - Thyreophora
       - Stegosauria
       - Stegosauridae
+    type_genus: Stegosaurus
+    described: 1880
+    authors: Marsh, O. C.
+    diagnostic_features:
+      - Elongated nasal process of the premaxilla forming the anterodorsal margin of the external naris
+      - Fourth trochanter of the femur extremely reduced or absent
+      - Absence of ossified epaxial tendons
+      - Transversely enlarged summits on the proximal caudal neural spines
+    references:
+      - id: marsh1880
+        authors: Marsh, O. C.
+        year: 1880
+        title: Principal characters of American Jurassic dinosaurs, Part III
+        journal: American Journal of Science
+        volume: s3-19
+        issue: "111"
+        pages: 253-259
+        doi: 10.2475/ajs.s3-19.111.253
+        url: http://dx.doi.org/10.2475/ajs.s3-19.111.253
+        notes: Named the family Stegosauridae.
+      - id: sánchez-fenollosa2025
+        authors: Sánchez-Fenollosa, S.; Cobos, A.
+        year: 2025
+        title: "New insights into the phylogeny and skull evolution of stegosaurian dinosaurs: an extraordinary cranium from the European Late Jurassic (Dinosauria: Stegosauria)"
+        journal: Vertebrate Zoology
+        volume: "75"
+        pages: 165-189
+        doi: 10.3897/vz.75.e146618
+        url: http://dx.doi.org/10.3897/vz.75.e146618
+        notes: Most recent comprehensive revision of stegosaurian phylogeny.
+  Stegosaurinae:
+    description: |
+      Stegosaurinae is a subfamily of stegosaurid dinosaurs containing Stegosaurus and its closest relatives, the plate-bearing stegosaurids of the Late Jurassic and Early Cretaceous of North America, Europe, and Asia. Members are characterized by large, often alternating dorsal plates and a derived sacral and pelvic morphology. The subfamily dates by coordination from Marsh's naming of Stegosauridae and was given a modern phylogenetic definition by Sánchez-Fenollosa and Cobos (2025) as the stegosaurids closer to Stegosaurus than to Dacentrurus.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Thyreophora
+      - Stegosauria
+      - Stegosauridae
+      - Stegosaurinae
+    type_genus: Stegosaurus
+    described: 1880
+    authors: Marsh, O. C.
+    diagnostic_features:
+      - Large parasagittal dorsal plates, alternating in derived members
+      - Maximum-clade membership defined by closer relationship to Stegosaurus stenops than to Dacentrurus armatus
+    references:
+      - id: marsh1880
+        authors: Marsh, O. C.
+        year: 1880
+        title: Principal characters of American Jurassic dinosaurs, Part III
+        journal: American Journal of Science
+        volume: s3-19
+        issue: "111"
+        pages: 253-259
+        doi: 10.2475/ajs.s3-19.111.253
+        url: http://dx.doi.org/10.2475/ajs.s3-19.111.253
+        notes: Named Stegosauridae; Stegosaurinae dates from this work by ICZN coordination.
+      - id: sánchez-fenollosa2025
+        authors: Sánchez-Fenollosa, S.; Cobos, A.
+        year: 2025
+        title: "New insights into the phylogeny and skull evolution of stegosaurian dinosaurs: an extraordinary cranium from the European Late Jurassic (Dinosauria: Stegosauria)"
+        journal: Vertebrate Zoology
+        volume: "75"
+        pages: 165-189
+        doi: 10.3897/vz.75.e146618
+        url: http://dx.doi.org/10.3897/vz.75.e146618
+        notes: Provided a modern phylogenetic definition of Stegosaurinae.
   Struthiosaurinae:
     taxonomy:
       - Life
@@ -7987,7 +8094,7 @@ genera:
     described: 2009
   Adratiklit:
     genus: Adratiklit
-    parent: Stegosauria
+    parent: Dacentrurinae
     etymology: From Berber/Amazigh 'adrar' meaning 'mountain' and 'tiklit' meaning 'lizard'; meaning 'mountain lizard'
     pronunciation:
       phonetic: AD-ruh-TIK-lit
@@ -8089,8 +8196,11 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Stegosauria
+      - Stegosauridae
+      - Dacentrurinae
     authors: Maidment, S. C. R.; Raven, T. J.; Ouarhache, D.; Barrett, P. M.
     described: 2020
   Adynomosaurus:
@@ -11020,11 +11130,17 @@ genera:
     described: 2011
   Alcovasaurus:
     genus: Alcovasaurus
-    parent: Dacentrurinae
+    parent: Stegosauridae
     pronunciation:
       phonetic: al-KOH-vuh-SAWR-us
     etymology: Named after Alcova, Wyoming, where the holotype was discovered
     description: Alcovasaurus is an extinct genus of herbivorous stegosaurian dinosaurs that lived in the Late Jurassic. It was found in the Morrison Formation of Wyoming, United States. The genus contains a single species, Alcovasaurus longispinus, originally assigned to the genus Stegosaurus. It is likely a member of the Dacentrurinae, and has been referred to the genus Miragaia by some authors.
+    dispute:
+      summary: |
+        Alcovasaurus has an unstable position, recovered outside Eurypoda by Raven and Maidment (2017, attributed to missing data and possible immaturity) and within Dacentrurinae after recoding by Sanchez-Fenollosa and Cobos (2025). It is placed at Stegosauridae without a subfamily pending stable resolution.
+      history:
+        - date: 2026-06-26
+          note: Placed at Stegosauridae, subfamily placement unstable across analyses (P2).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -11124,7 +11240,6 @@ genera:
       - Thyreophora
       - Stegosauria
       - Stegosauridae
-      - Dacentrurinae
     authors: Galton, P. M.; Carpenter, K.
     described: 2016
   Alectrosaurus:
@@ -13017,6 +13132,12 @@ genera:
     etymology: From 'Amarga' (the Argentine La Amarga Formation that yielded the type material) and Greek 'stegos' (roof, in reference to stegosaurs); intended sense 'La Amarga roof'.
     description: |
       Amargastegos is a nomen dubium genus of stegosaurian dinosaur informally proposed by Ulansky (2014) for the partial skeleton MACN N-43 from the Barremian La Amarga Formation of Neuquén Province, Argentina. The same material had previously been formally described by Pereda-Suberbiola et al. (2013) as Stegosauria indet., on the grounds that it lacks any autapomorphies allowing referral to a particular stegosaurian taxon. Galton and Carpenter (2016) declared Amargastegos brevicollus a nomen dubium on ICZN Article 13 grounds (the informal Dinologia venue) and confirmed Stegosauria indet. as the correct identification of the type material.
+    dispute:
+      summary: |
+        Amargastegos is an informally named taxon (nomen nudum) regarded as an indeterminate stegosaur (Galton and Carpenter, 2016). It is retained at Stegosauria incertae sedis pending a formal description; a dedicated literature review is tracked separately.
+      history:
+        - date: 2026-06-26
+          note: Parked at Stegosauria incertae sedis, nomen nudum and an indeterminate stegosaur (P2).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -13106,6 +13227,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Stegosauria
     authors: Ulansky, R. E.
@@ -23700,6 +23822,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Stegosauria
     authors: Ning, L.; Maidment, S. C. R.; Daqing, L.; Hailu, Y.; Guangzhao, P.
@@ -25195,6 +25318,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Stegosauria
     authors: Hui, D.; Ning, L.; Maidment, S. C. R.; Guangbiao, W.; Yuxuan, Z.; Xufeng, H.; Qingyu, M.; Xunqian, W.; Haiqian, H.; Guangzhao, P.
@@ -35733,6 +35857,12 @@ genera:
       phonetic: JYAH-LING-o-SAWR-us
     etymology: Named after the Chialing River (now Jialing River) in Sichuan Province, China, where fossils were discovered, + Greek sauros ('lizard'), meaning 'Chialing lizard'.
     description: Chialingosaurus is a genus of herbivorous stegosaurian dinosaur similar to Kentrosaurus from the Upper Shaximiao Formation, Late Jurassic beds in Sichuan Province in China. Its age makes it one of the oldest species of stegosaurs, living about 160 million years ago. Since it was an herbivore, scientists think that Chialingosaurus probably ate ferns and cycads, which were plentiful during the period when Chialingosaurus was alive.
+    dispute:
+      summary: |
+        Chialingosaurus is a nomen dubium for which no autapomorphies have been identified (Maidment and Wei, 2006), and it has been suggested to be a juvenile Tuojiangosaurus. It is retained at Stegosauria incertae sedis.
+      history:
+        - date: 2026-06-26
+          note: Parked at Stegosauria incertae sedis, nomen dubium with no diagnostic features (P2).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -35821,6 +35951,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Stegosauria
     authors: Young, C.-C.
@@ -37463,11 +37594,17 @@ genera:
     described: 2023
   Chungkingosaurus:
     genus: Chungkingosaurus
-    parent: Huayangosaurinae
+    parent: Stegosauria
     pronunciation:
       phonetic: CHUNG-CHING-o-SAWR-us
     etymology: Named after Chongqing (formerly romanized as Chungking), the city in Sichuan Province, China where fossils were found, + Greek sauros ('lizard'), meaning 'Chongqing lizard'.
     description: Chungkingosaurus is a genus of stegosaurian dinosaur from the Late Jurassic Upper Shaximiao Formation in what is now China. The type species is Chungkingosaurus jiangbeiensis.
+    dispute:
+      summary: |
+        Chungkingosaurus has been recovered as a huayangosaurid (Maidment et al., 2008), in a basal clade with Huayangosaurus (Raven and Maidment, 2017), and as the earliest-diverging stegosaurid (Sanchez-Fenollosa and Cobos, 2025). With its family placement unresolved and Huayangosauridae not retained, it is placed at Stegosauria incertae sedis.
+      history:
+        - date: 2026-06-26
+          note: Placed at Stegosauria incertae sedis, family placement bounces between basal Stegosauridae and the Huayangosaurus group (P2).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -37573,8 +37710,6 @@ genera:
       - Genasauria
       - Thyreophora
       - Stegosauria
-      - Stegosauridae
-      - Huayangosaurinae
     authors: Dong, Z.; Zhou, S.; H. Zhang
     described: 1983
   Cienciargentina:
@@ -40400,6 +40535,12 @@ genera:
     pronunciation:
       phonetic: KRAY-tuh-ro-SOR-us
     description: Craterosaurus is a dubious genus of stegosaurian dinosaur that lived during the Early Cretaceous (possibly Aptian stage) of the Woburn Sands Formation of England. Estimated to measure around 4 m (13 ft) in length and weighing approximately 560 kg (1,230 lb), Craterosaurus may actually be a junior synonym of Regnosaurus, but only one fossil, a partial vertebra, was recovered.
+    dispute:
+      summary: |
+        Craterosaurus is a nomen dubium based on a single partial vertebra whose features are now known to be widespread in Stegosauria (Maidment et al., 2008). It is retained at Stegosauria incertae sedis.
+      history:
+        - date: 2026-06-26
+          note: Parked at Stegosauria incertae sedis, nomen dubium based on an undiagnostic vertebra (P2).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -40479,6 +40620,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Stegosauria
     authors: Seeley, H. G.
@@ -59226,7 +59368,7 @@ genera:
     described: 1916
   Gigantspinosaurus:
     genus: Gigantspinosaurus
-    parent: Huayangosaurinae
+    parent: Stegosauria
     etymology: From Latin gigas/giganteus, 'enormous', + Latin spina, 'spine', + Greek sauros, 'lizard'; means 'giant-spined lizard', referring to its massive shoulder spines
     pronunciation:
       phonetic: JIH-gant-SPY-no-SOR-us
@@ -59344,8 +59486,6 @@ genera:
       - Genasauria
       - Thyreophora
       - Stegosauria
-      - Stegosauridae
-      - Huayangosaurinae
     authors: Ouyang, H.
     described: 1992
   Gilmoreosaurus:
@@ -64812,7 +64952,7 @@ genera:
     described: 2019
   Hesperosaurus:
     genus: Hesperosaurus
-    parent: Stegosauridae
+    parent: Stegosaurinae
     etymology: Western lizard; from Ancient Greek hésperos (western) and saûros (lizard)
     description: Hesperosaurus is a herbivorous stegosaurian dinosaur from the Kimmeridgian age of the Jurassic period, approximately 156 million years ago.
     diet: herbivore
@@ -64936,6 +65076,7 @@ genera:
       - Thyreophora
       - Stegosauria
       - Stegosauridae
+      - Stegosaurinae
     authors: Carpenter, K.; Miles, C. A.; K. Cloward
     described: 2001
   Heterodontosaurus:
@@ -67100,6 +67241,12 @@ genera:
       phonetic: HWAH-YAHNG-o-SAWR-us
     etymology: From Huayang (華陽), an alternate historical name for Sichuan Province, China, combined with Greek sauros (lizard); meaning 'Huayang lizard'
     description: Huayangosaurus is a genus of stegosaurian dinosaur from the Middle Jurassic of China. The name derives from "Huayang" (華陽), an alternate name for Sichuan (the province where it was discovered), and "saurus", meaning "lizard". It lived during the Bathonian to Callovian stages, around 165 million years ago, some 20 million years before its famous relative, Stegosaurus appeared in North America. At only approximately 4 meters (13 ft) long, it was also much smaller than its famous cousin. Found in the Lower Shaximiao Formation, Huayangosaurus shared the local Middle Jurassic landscape with the sauropods Shunosaurus, Datousaurus, Omeisaurus and Protognathosaurus, the ornithopod Xiaosaurus and the carnivorous Gasosaurus.
+    dispute:
+      summary: |
+        Huayangosaurus is the basal-most well-known stegosaur and the type genus of the traditional family Huayangosauridae. That family is of disputed utility, as its only consistent additional member (Chungkingosaurus) is recovered variously within or outside it and recent works deprecate the node, so Huayangosaurus is retained at Stegosauria incertae sedis rather than placed in a near-monotypic family.
+      history:
+        - date: 2026-06-26
+          note: Placed at Stegosauria incertae sedis, Huayangosauridae not retained as a node (unstable membership, deprecated by recent works) (P4).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -67217,6 +67364,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Stegosauria
     authors: Dong, Z.; Tang, Z.; S.-w. Zhou
@@ -68701,12 +68849,18 @@ genera:
     described: 1870
   Hypsirhophus:
     genus: Hypsirhophus
-    parent: Stegosauridae
+    parent: Stegosauria
     pronunciation:
       phonetic: HIP-si-ROH-fus
     etymology: From Greek hypsi (high) and rhophos (roof); meaning "high roof", referring to the tall dorsal vertebrae. Cope's original spelling "Hypsirophus" (without the second h) is considered a typesetting variant.
     description: |
       Hypsirhophus is a genus of stegosaurian dinosaurs. It contains a single species, Hypsirhophus discurus, which is known only from a fragmentary specimen. The fossil consists of partial vertebrae from the back, three from the tail, and a piece of rib.
+    dispute:
+      summary: |
+        The validity of Hypsirhophus is contested. Maidment et al. (2008) treated Hypsirhophus discursus as a junior synonym of Stegosaurus armatus, while other workers retain it as a poorly known but possibly distinct stegosaur (Galton, 2010). It is retained at Stegosauria incertae sedis.
+      history:
+        - date: 2026-06-26
+          note: Parked at Stegosauria incertae sedis, validity contested and possibly a junior synonym of Stegosaurus (P2).
     diet: herbivore
     locomotion: quadrupedal
     diagnostic_features:
@@ -68800,7 +68954,6 @@ genera:
       - Genasauria
       - Thyreophora
       - Stegosauria
-      - Stegosauridae
     authors: Cope, E. D.
     described: 1878
   Iani:
@@ -70923,6 +71076,12 @@ genera:
     pronunciation:
       phonetic: ih-zah-BEH-ree-SOH-ruh
     description: Isaberrysaura is an extinct genus of stegosaurian ornithischian dinosaurs from the Middle Jurassic Los Molles Formation of Patagonia, Argentina. The genus contains a single species, I. mollensis, described by Salgado in 2017 based on a single specimen. Although initially classified as a basal neornithischian, subsequent analyses have allied it with the Stegosauria as the morphology of its skull resembles those of other members of the group.
+    dispute:
+      summary: |
+        The affinities of Isaberrysaura are contested. The describing authors (Salgado et al., 2017) recovered it as a basal neornithischian outside Thyreophora, whereas subsequent analyses (Han et al., 2018; Raven and Maidment, 2018; Sanchez-Fenollosa and Cobos, 2025) recover it as a basal stegosaur. Its membership in Stegosauria is not yet settled.
+      history:
+        - date: 2026-06-26
+          note: Placed at Stegosauria incertae sedis, recovered as a basal stegosaur by recent analyses but originally described as a basal neornithischian (P2/P3).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -71020,6 +71179,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Stegosauria
     authors: Salgado, L.; Canudo, J. I.; Garrido, A. C.; Moreno-Azanza, M.; Martínez, L. C. A.; Coria, R. A.; Gasca, J. M.
@@ -73332,7 +73492,7 @@ genera:
     described: 2013
   Jiangjunosaurus:
     genus: Jiangjunosaurus
-    parent: Stegosauridae
+    parent: Stegosaurinae
     etymology: Named after Jiangjunmiao ('temple of the general'), an abandoned town near the discovery site in Xinjiang, China, with Chinese jiangjun meaning 'general', combined with Greek sauros (lizard); meaning 'general's temple lizard'
     pronunciation:
       phonetic: jee-AHNG-joo-no-SOR-us
@@ -73428,6 +73588,7 @@ genera:
       - Thyreophora
       - Stegosauria
       - Stegosauridae
+      - Stegosaurinae
     authors: Jia, C.; Forster, C. A.; X. Xu, J. M. C.
     described: 2007
   Jiangshanosaurus:
@@ -76665,12 +76826,18 @@ genera:
     described: 2021
   Kentrosaurus:
     genus: Kentrosaurus
-    parent: Stegosauria
+    parent: Stegosauridae
     pronunciation:
       phonetic: KEN-troh-SOR-uhs
       ipa: /ˌkɛntroʊˈsɔːrəs/
     etymology: From Greek 'kentron' (prickle or spike) and 'sauros' (lizard); meaning 'prickle lizard', referring to its prominent spikes
     description: Kentrosaurus is a genus of stegosaurid dinosaur from the Late Jurassic in Lindi Region of Tanzania. The type species is K. aethiopicus, named and described by German paleontologist Edwin Hennig in 1915. Often thought to be a "primitive" member of the Stegosauria, several recent cladistic analyses find it as more derived than many other stegosaurs, and a close relative of Stegosaurus from the North American Morrison Formation within the Stegosauridae.
+    dispute:
+      summary: |
+        Kentrosaurus is securely a stegosaurid, but its subfamily placement is contested, having been recovered in Stegosaurinae (Maidment et al., 2008), as a stemward stegosaurid (Jones and Viola, 2026), and in Dacentrurinae (Sanchez-Fenollosa and Cobos, 2025). It is placed at Stegosauridae without a subfamily.
+      history:
+        - date: 2026-06-26
+          note: Placed at Stegosauridae, subfamily (Dacentrurinae vs Stegosaurinae) contested (P2).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -76771,8 +76938,10 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Stegosauria
+      - Stegosauridae
     authors: Hennig, E.
     described: 1915
   Kerberosaurus:
@@ -82236,12 +82405,18 @@ genera:
     described: 2009
   Lexovisaurus:
     genus: Lexovisaurus
-    parent: Stegosauridae
+    parent: Stegosauria
     etymology: From the Lexovii (a Gallic people who inhabited the region of present-day Lisieux in Normandy, where Hoffstetter's French stegosaurine specimens were found) and Greek 'sauros' (lizard).
     pronunciation:
       phonetic: lek-SOH-vi-SOR-us
     description: |
       Lexovisaurus is a genus of stegosaurian dinosaur known from limb bones and armor fragments from Middle to Late Jurassic-aged strata of Europe.
+    dispute:
+      summary: |
+        Lexovisaurus is a nomen dubium; its holotype preserves no diagnostic features and referred material was reassigned to Loricatosaurus (Maidment et al., 2008). It is retained at Stegosauria incertae sedis.
+      history:
+        - date: 2026-06-26
+          note: Parked at Stegosauria incertae sedis, nomen dubium with diagnostic material referred to Loricatosaurus (P2).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -82365,7 +82540,6 @@ genera:
       - Genasauria
       - Thyreophora
       - Stegosauria
-      - Stegosauridae
     authors: Hoffstetter, R.
     described: 1957
   Leyesaurus:
@@ -84984,7 +85158,7 @@ genera:
     described: 2007
   Loricatosaurus:
     genus: Loricatosaurus
-    parent: Stegosauridae
+    parent: Stegosaurinae
     etymology: From Latin loricatus (armored) combined with Greek sauros (lizard); meaning "armored lizard"
     pronunciation:
       phonetic: LOH-ree-KAH-toe-SOR-us
@@ -85082,6 +85256,7 @@ genera:
       - Thyreophora
       - Stegosauria
       - Stegosauridae
+      - Stegosaurinae
     authors: Maidment, S. C. R.; Norman, D. B.; Barrett, P. M.; Upchurch, P.
     described: 2008
   Loricosaurus:
@@ -93276,6 +93451,12 @@ genera:
     pronunciation:
       phonetic: MEE-ruh-GAH-yuh
     description: Miragaia is a genus of long-necked stegosaurid dinosaur. Its fossils have been found in Upper Jurassic rocks in Portugal (Lourinhã Formation, Sobral Unit) and possibly also Wyoming and Utah, United States (Morrison Formation). Miragaia has the longest neck known for any stegosaurian, which included at least seventeen vertebrae. Some researchers consider this taxon to be a junior synonym of Dacentrurus.
+    dispute:
+      summary: |
+        The validity of Miragaia is contested. It was erected as a long-necked dacentrurine (Mateus et al., 2009) and is widely treated as valid, but Sanchez-Fenollosa and Cobos (2025) synonymized it with Dacentrurus armatus. Either way it falls within Dacentrurinae.
+      history:
+        - date: 2026-06-26
+          note: Placed at Dacentrurinae, whether a valid dacentrurine or a junior synonym of Dacentrurus (P2).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -93909,11 +94090,17 @@ genera:
     described: 1933
   Mongolostegus:
     genus: Mongolostegus
-    parent: Stegosauridae
+    parent: Stegosauria
     etymology: From 'Mongol' (Mongolia, where it was found) and Greek 'stegos' (roof); meaning 'Mongolian roof', referencing Mongolia and its classification as a stegosaur.
     pronunciation:
       phonetic: mon-GO-lo-STEG-us
     description: Mongolostegus is an extinct genus of stegosaurian dinosaurs from the Early Cretaceous (Aptian-Albian ages) Dzunbain Formation of Mongolia. The genus contains a single species, Mongolostegus exspectabilis, known from a fragmentary single specimen representing the first stegosaur named from Mongolia. It is one of the youngest known stegosaurs, along with Yanbeilong and an unnamed species from the Hekou Group of China. In contrast to these taxa, which are members of the late-diverging stegosaur subfamily Stegosaurinae, Mongolostegus may have affinities to more basal taxa such as the Huayangosauridae.
+    dispute:
+      summary: |
+        Mongolostegus is known from very fragmentary material and behaves as a rogue taxon; Sanchez-Fenollosa and Cobos (2025) recover it as either a huayangosaurid or an early-diverging stegosaurid and exclude it from their primary analysis. It is placed at Stegosauria incertae sedis.
+      history:
+        - date: 2026-06-26
+          note: Placed at Stegosauria incertae sedis, fragmentary rogue taxon with unresolved family placement (P2).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -94011,7 +94198,6 @@ genera:
       - Genasauria
       - Thyreophora
       - Stegosauria
-      - Stegosauridae
     authors: Tumanova, T. A.; Alifanov, V. R.
     described: 2018
   Monkonosaurus:
@@ -94021,6 +94207,12 @@ genera:
       phonetic: MONG-kon-o-SAWR-us
     etymology: Named for Markam County (also known as Monko), the region of Tibet where the holotype was found, combined with Greek 'sauros' meaning 'lizard'.
     description: Monkonosaurus is a dubious genus of herbivorous stegosaurian dinosaur from the Late Jurassic/Early Cretaceous-aged Loe-ein Formation of Tibet (or the Early Cretaceous Lura Formation of China). Some sources place it as alive during the Oxfordian - Albian stages, around 163 - 100 million years ago, although Monkonosaurus was probably only alive during the Late Jurassic (163 - 152.1 ± 0.9 million years ago), making it among the earliest known stegosaurs along with Chungkingosaurus and Bashanosaurus.
+    dispute:
+      summary: |
+        Monkonosaurus is a nomen dubium; its fragmentary material preserves no unique identifiable characters (Maidment and Wei, 2006). It is retained at Stegosauria incertae sedis.
+      history:
+        - date: 2026-06-26
+          note: Parked at Stegosauria incertae sedis, nomen dubium with no diagnostic features (P2).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -94095,6 +94287,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Stegosauria
     authors: Zhao, X.
@@ -106573,7 +106766,7 @@ genera:
     described: 2001
   Paranthodon:
     genus: Paranthodon
-    parent: Stegosauria
+    parent: Stegosauridae
     pronunciation:
       ipa: /pəˈrænθədɒn/
       phonetic: puh-RAN-thuh-don
@@ -106701,8 +106894,10 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Stegosauria
+      - Stegosauridae
     authors: Nopcsa, B. F.
     described: 1929
   Pararhabdodon:
@@ -118306,11 +118501,17 @@ genera:
     described: 2015
   Regnosaurus:
     genus: Regnosaurus
-    parent: Stegosauria
+    parent: Thyreophora
     pronunciation:
       phonetic: REG-noh-SAWR-us
     etymology: Named for the Regni, the ancient Roman name for the people of Sussex, England, where the fossils were found, combined with Greek 'sauros' meaning 'lizard'; meaning 'Sussex lizard.'
     description: Regnosaurus is an extinct genus of herbivorous presumably armored dinosaur known from the early Cretaceous Wealden Formation of England. The genus contains a single species, Regnosaurus northamptoni, known from a single partial jaw bone. Regnosaurus has traditionally been regarded as a stegosaur, possibly related to the Jurassic Huayangosaurus of China. Later research considers it to be a dubious, indeterminate thyreophoran.
+    dispute:
+      summary: |
+        Regnosaurus is a nomen dubium whose assignment to Stegosauria is contested. Maidment et al. (2008) found no stegosaurian synapomorphies in the single dentary fragment and reassigned it to Thyreophora indeterminate, whereas some reference works (Jones and Viola, 2026) still list it as a stegosaur nomen dubium. It is placed at Thyreophora pending diagnostic material.
+      history:
+        - date: 2026-06-26
+          note: Reparented from Stegosauria to Thyreophora incertae sedis, no stegosaurian synapomorphies (Maidment et al., 2008); Stegosauria membership contested (P2).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -118383,7 +118584,6 @@ genera:
       - Dinosauria
       - Ornithischia
       - Thyreophora
-      - Stegosauria
     authors: Mantell, G. A.
     described: 1848
   Rhabdodon:
@@ -131074,7 +131274,7 @@ genera:
     described: 1953
   Stegosaurus:
     genus: Stegosaurus
-    parent: Stegosauridae
+    parent: Stegosaurinae
     etymology: From Greek stegos (roof) and sauros (lizard); meaning "roof lizard", in reference to the parasagittal rows of large dermal plates that Marsh initially interpreted as forming a roof-like carapace over the back of the animal.
     pronunciation:
       phonetic: STEG-o-SAWR-us
@@ -131258,6 +131458,7 @@ genera:
       - Thyreophora
       - Stegosauria
       - Stegosauridae
+      - Stegosaurinae
     authors: Marsh, O. C.
     described: 1877
   Stegouros:
@@ -142491,7 +142692,7 @@ genera:
     described: 1973
   Tuojiangosaurus:
     genus: Tuojiangosaurus
-    parent: Stegosauria
+    parent: Stegosauridae
     pronunciation:
       phonetic: TWAW-JYAHNG-o-SAWR-us
     etymology: Named after the Tuo River (Tuojiang) of Sichuan Province, China, combined with Greek sauros meaning 'lizard'; translates as 'Tuo River lizard'
@@ -142584,8 +142785,10 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Stegosauria
+      - Stegosauridae
     authors: Dong, Z.; Li, X.; S. Zhou, Y. Z.
     described: 1977
   Turanoceratops:
@@ -151431,7 +151634,7 @@ genera:
     described: 2021
   Yanbeilong:
     genus: Yanbeilong
-    parent: Stegosauria
+    parent: Stegosaurinae
     pronunciation:
       phonetic: yen-BAY-long
     etymology: From Chinese yanbe meaning 'north of Yanmen Pass' (a region of Shanxi Province, China) and long meaning 'dragon'; translates as 'north of Yanmen Pass dragon'
@@ -151521,8 +151724,11 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Stegosauria
+      - Stegosauridae
+      - Stegosaurinae
     authors: Jia, L.; Li, N.; Dong, L.; Shi, J.; Kang, Z.; Wang, S.; Xu, S.; You, H.
     described: 2024
   Yandusaurus:
@@ -152103,7 +152309,7 @@ genera:
     described: 1990
   Yingshanosaurus:
     genus: Yingshanosaurus
-    parent: Stegosauridae
+    parent: Stegosauria
     etymology: Named after Yingshan (a locality in Sichuan Province, China), combined with Greek sauros meaning 'lizard'; translates as 'Yingshan lizard'
     description: Yingshanosaurus is an extinct genus of stegosaurian dinosaurs from the Middle Jurassic of what is now Southwestern China. It is known from a partial skeleton discovered in 1983, including back, sacrum, and tail vertebrae, forelimb and hindlimb bones, shoulder and hip bones, and several osteoderms, including plates and a shoulder spine. The genus contains a single species, Yingshanosaurus jichuanensis, named and described in 1994. For some time after its discovery and scientific description, many paleontologists were unaware of the Chinese research published on it and questioned its validity.
     diet: herbivore
@@ -152192,7 +152398,6 @@ genera:
       - Genasauria
       - Thyreophora
       - Stegosauria
-      - Stegosauridae
     authors: Zhu, S.
     described: 1994
   Yinlong:
