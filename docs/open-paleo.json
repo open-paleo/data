@@ -1,8 +1,8 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-06-25T21:57:06.013Z",
-    "clade_count": 250,
+    "built_at": "2026-06-26T17:20:30.934Z",
+    "clade_count": 245,
     "genus_count": 1398,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
@@ -64,7 +64,6 @@
                                 "Carcharodontosauridae": {}
                               },
                               "Coelurosauria": {
-                                "Tyrannosauridae": {},
                                 "Ornithomimosauria": {},
                                 "Maniraptora": {
                                   "Therizinosauridae": {},
@@ -79,19 +78,13 @@
                               "Tetanurae": {
                                 "Coelurosauria": {
                                   "Tyrannosauroidea": {
+                                    "Proceratosauridae": {},
                                     "Eutyrannosauria": {
                                       "Tyrannosauridae": {
-                                        "Tyrannosaurinae": {
-                                          "Tyrannosaurini": {},
-                                          "Daspletosaurini": {},
-                                          "Teratophoneini": {},
-                                          "Alioramini": {}
-                                        },
-                                        "Albertosaurinae": {}
-                                      },
-                                      "Nanotyrannidae": {}
-                                    },
-                                    "Proceratosauridae": {}
+                                        "Albertosaurinae": {},
+                                        "Tyrannosaurinae": {}
+                                      }
+                                    }
                                   },
                                   "Maniraptora": {
                                     "Paraves": {
@@ -627,6 +620,7 @@
       ]
     },
     "Albertosaurinae": {
+      "description": "Albertosaurinae is one of the two subfamilies of Tyrannosauridae, erected by Currie, Hurum and Sabath (2003) and defined as all tyrannosaurids closer to Albertosaurus than to Tyrannosaurus. Its members, Albertosaurus and Gorgosaurus, are relatively gracile, long-legged tyrannosaurids of the Late Cretaceous of western North America.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -647,30 +641,28 @@
         "Eutyrannosauria",
         "Tyrannosauridae",
         "Albertosaurinae"
-      ]
-    },
-    "Alioramini": {
-      "taxonomy": [
-        "Life",
-        "Animalia",
-        "Chordata",
-        "Vertebrata",
-        "Sarcopterygii",
-        "Tetrapoda",
-        "Reptilia",
-        "Archosauria",
-        "Dinosauria",
-        "Saurischia",
-        "Theropoda",
-        "Neotheropoda",
-        "Averostra",
-        "Tetanurae",
-        "Coelurosauria",
-        "Tyrannosauroidea",
-        "Eutyrannosauria",
-        "Tyrannosauridae",
-        "Tyrannosaurinae",
-        "Alioramini"
+      ],
+      "type_genus": "Albertosaurus",
+      "described": 2003,
+      "authors": "Currie, P. J.; Hurum, J. H.; Sabath, K.",
+      "diagnostic_features": [
+        "Frontal with a vertical postorbital suture anteriorly but a distinct horizontal shelf posteriorly",
+        "Jugal pneumatic recess with a horizontal axis and a relatively small opening",
+        "Lacrimal pneumatic openings set within a single fossa",
+        "Maxillary fenestra whose anterior margin terminates behind the anterior margin of the antorbital fossa"
+      ],
+      "references": [
+        {
+          "id": "currie2003",
+          "authors": "Currie, P. J.; Hurum, J. H.; Sabath, K.",
+          "year": 2003,
+          "title": "Skull structure and evolution in tyrannosaurid dinosaurs",
+          "journal": "Acta Palaeontologica Polonica",
+          "volume": "48",
+          "issue": "2",
+          "pages": "227-234",
+          "url": "https://app.pan.pl/article/item/app48-227.html"
+        }
       ]
     },
     "Allosauria": {
@@ -2245,30 +2237,6 @@
         "Dacentrurinae"
       ]
     },
-    "Daspletosaurini": {
-      "taxonomy": [
-        "Life",
-        "Animalia",
-        "Chordata",
-        "Vertebrata",
-        "Sarcopterygii",
-        "Tetrapoda",
-        "Reptilia",
-        "Archosauria",
-        "Dinosauria",
-        "Saurischia",
-        "Theropoda",
-        "Neotheropoda",
-        "Averostra",
-        "Tetanurae",
-        "Coelurosauria",
-        "Tyrannosauroidea",
-        "Eutyrannosauria",
-        "Tyrannosauridae",
-        "Tyrannosaurinae",
-        "Daspletosaurini"
-      ]
-    },
     "Deinocheiridae": {
       "taxonomy": [
         "Life",
@@ -2943,7 +2911,7 @@
         "Eutyrannosauria"
       ],
       "described": 2018,
-      "authors": "Delcourt & Grillo",
+      "authors": "Delcourt, R.; Grillo, O. N.",
       "diagnostic_features": [
         "Rugose nasals with cornual ornamentation.",
         "Lacrimal with an inflated cornual process that expands dorsally during ontogeny.",
@@ -2952,6 +2920,18 @@
         "Medial margins of the distal condyle and diaphysis of metatarsal III aligned (not offset)."
       ],
       "references": [
+        {
+          "id": "delcourt2018",
+          "authors": "Delcourt, R.; Grillo, O. N.",
+          "year": 2018,
+          "title": "Tyrannosauroids from the Southern Hemisphere: implications for biogeography, evolution, and taxonomy",
+          "journal": "Palaeogeography, Palaeoclimatology, Palaeoecology",
+          "volume": "511",
+          "pages": "379-387",
+          "doi": "10.1016/j.palaeo.2018.09.003",
+          "url": "http://dx.doi.org/10.1016/j.palaeo.2018.09.003",
+          "notes": "Erected the clade Eutyrannosauria."
+        },
         {
           "id": "voris2025",
           "authors": "Voris, J. T.; Zelenitsky, D. K.; Kobayashi, Y.; Modesto, S. P.; Therrien, F.; Tsutsumi, H.; Chinzorig, T.; Tsogtbaatar, K.",
@@ -4216,52 +4196,6 @@
         "Microraptorinae"
       ]
     },
-    "Nanotyrannidae": {
-      "description": "Nanotyrannidae is a family of eutyrannosaurian theropod dinosaurs erected by Zanno and Napoli (2025) for Nanotyrannus and any taxa more closely related to it than to Tyrannosaurus or Albertosaurus. The family is presently known from the Maastrichtian Hell Creek Formation of western North America; Bayesian biogeographic analysis also recovers Appalachiosaurus and Dryptosaurus within the clade, but the authors caution that this placement requires additional data.\n",
-      "taxonomy": [
-        "Life",
-        "Animalia",
-        "Chordata",
-        "Vertebrata",
-        "Sarcopterygii",
-        "Tetrapoda",
-        "Reptilia",
-        "Archosauria",
-        "Dinosauria",
-        "Saurischia",
-        "Theropoda",
-        "Neotheropoda",
-        "Averostra",
-        "Tetanurae",
-        "Coelurosauria",
-        "Tyrannosauroidea",
-        "Eutyrannosauria",
-        "Nanotyrannidae"
-      ],
-      "described": 2025,
-      "authors": "Zanno & Napoli",
-      "diagnostic_features": [
-        "Absence of a clearly defined embayment for the subnarial foramen at the premaxillary/maxillary suture.",
-        "Unserrated premaxillary tooth crowns that are straight and chisel-shaped.",
-        "Pneumatic foramen in the quadratojugal.",
-        "Extension of the glenoid fossa onto the lateral surface of the scapula.",
-        "Apomorphically elongate lower hindlimbs (tibia plus metatarsus) relative to femur length."
-      ],
-      "references": [
-        {
-          "id": "zanno2025",
-          "authors": "Zanno, L. E.; Napoli, J. G.",
-          "year": 2025,
-          "title": "Nanotyrannus and Tyrannosaurus coexisted at the close of the Cretaceous",
-          "journal": "Nature",
-          "volume": "648",
-          "pages": "357-367",
-          "doi": "10.1038/s41586-025-09801-6",
-          "url": "http://dx.doi.org/10.1038/s41586-025-09801-6",
-          "notes": "Erects Nanotyrannidae for Nanotyrannus on a branch-based phylogenetic definition; diagnostic characters are drawn from the genus-level Nanotyrannus diagnosis in the same paper."
-        }
-      ]
-    },
     "Nasutoceratopsini": {
       "taxonomy": [
         "Life",
@@ -5079,6 +5013,7 @@
       ]
     },
     "Proceratosauridae": {
+      "description": "Proceratosauridae is a family of small, early-diverging tyrannosauroids, defined as all theropods more closely related to Proceratosaurus than to Tyrannosaurus, Allosaurus, Compsognathus, Coelurus, Ornithomimus, or Deinonychus. Named for the crested Middle Jurassic Proceratosaurus, it contains the earliest and most basal members of Tyrannosauroidea.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -5097,6 +5032,28 @@
         "Coelurosauria",
         "Tyrannosauroidea",
         "Proceratosauridae"
+      ],
+      "type_genus": "Proceratosaurus",
+      "described": 2010,
+      "authors": "Rauhut, O. W. M.; Milner, A. C.; Moore-Fay, S.",
+      "diagnostic_features": [
+        "Strongly enlarged external nares",
+        "Slight anterior offset of the maxillary ascending ramus from the anterior margin of the maxillary body",
+        "Midline cranial crest or horn on the nasals"
+      ],
+      "references": [
+        {
+          "id": "rauhut2010",
+          "authors": "Rauhut, O. W. M.; Milner, A. C.; Moore-Fay, S.",
+          "year": 2010,
+          "title": "Cranial osteology and phylogenetic position of the theropod dinosaur Proceratosaurus bradleyi (Woodward, 1910) from the Middle Jurassic of England",
+          "journal": "Zoological Journal of the Linnean Society",
+          "volume": "158",
+          "issue": "1",
+          "pages": "155-195",
+          "doi": "10.1111/j.1096-3642.2009.00591.x",
+          "url": "http://dx.doi.org/10.1111/j.1096-3642.2009.00591.x"
+        }
       ]
     },
     "Prosauropoda": {
@@ -5987,30 +5944,6 @@
         "Tenontosauridae"
       ]
     },
-    "Teratophoneini": {
-      "taxonomy": [
-        "Life",
-        "Animalia",
-        "Chordata",
-        "Vertebrata",
-        "Sarcopterygii",
-        "Tetrapoda",
-        "Reptilia",
-        "Archosauria",
-        "Dinosauria",
-        "Saurischia",
-        "Theropoda",
-        "Neotheropoda",
-        "Averostra",
-        "Tetanurae",
-        "Coelurosauria",
-        "Tyrannosauroidea",
-        "Eutyrannosauria",
-        "Tyrannosauridae",
-        "Tyrannosaurinae",
-        "Teratophoneini"
-      ]
-    },
     "Tetanurae": {
       "description": "Tetanurae, meaning \"stiff tails,\" is a large clade of theropod dinosaurs characterized by stiffened tails with interlocking zygapophyses in the distal caudal vertebrae, and the reduction of the hand to three functional digits. Tetanurans include the megalosauroids, allosaurs, and coelurosaurs (including birds). The clade represents the majority of theropod diversity from the Middle Jurassic onward.\n",
       "taxonomy": [
@@ -6488,13 +6421,17 @@
         "Dinosauria",
         "Saurischia",
         "Theropoda",
+        "Neotheropoda",
+        "Averostra",
         "Tetanurae",
-        "Avetheropoda",
         "Coelurosauria",
+        "Tyrannosauroidea",
+        "Eutyrannosauria",
         "Tyrannosauridae"
       ],
+      "type_genus": "Tyrannosaurus",
       "described": 1906,
-      "authors": "Osborn",
+      "authors": "Osborn, H.F.",
       "diagnostic_features": [
         "Proportionally enormous skull with robust, deeply rooted teeth",
         "D-shaped cross-section of premaxillary teeth (incisiform premaxillary teeth)",
@@ -6516,6 +6453,7 @@
       ]
     },
     "Tyrannosaurinae": {
+      "description": "Tyrannosaurinae is one of the two subfamilies of Tyrannosauridae. The name traces to Osborn (1906) but was given its modern phylogenetic definition by Currie, Hurum and Sabath (2003) as all tyrannosaurids closer to Tyrannosaurus than to Albertosaurus. It comprises the robust, deep-skulled tyrannosaurids, including Tyrannosaurus, Tarbosaurus, and Daspletosaurus, as well as the long-snouted alioramins.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -6536,33 +6474,42 @@
         "Eutyrannosauria",
         "Tyrannosauridae",
         "Tyrannosaurinae"
-      ]
-    },
-    "Tyrannosaurini": {
-      "taxonomy": [
-        "Life",
-        "Animalia",
-        "Chordata",
-        "Vertebrata",
-        "Sarcopterygii",
-        "Tetrapoda",
-        "Reptilia",
-        "Archosauria",
-        "Dinosauria",
-        "Saurischia",
-        "Theropoda",
-        "Neotheropoda",
-        "Averostra",
-        "Tetanurae",
-        "Coelurosauria",
-        "Tyrannosauroidea",
-        "Eutyrannosauria",
-        "Tyrannosauridae",
-        "Tyrannosaurinae",
-        "Tyrannosaurini"
+      ],
+      "type_genus": "Tyrannosaurus",
+      "described": 1906,
+      "authors": "Osborn, H. F.",
+      "diagnostic_features": [
+        "Inflated ectopterygoid sinus",
+        "Jugal anterior ramus deep below the pneumatic opening in mature individuals",
+        "Parietal sagittal crest extending forward onto the back of the frontals",
+        "Tall but broad parietal nuchal crest"
+      ],
+      "references": [
+        {
+          "id": "osborn1906",
+          "authors": "Osborn, H. F.",
+          "year": 1906,
+          "title": "Tyrannosaurus, Upper Cretaceous carnivorous dinosaur (second communication)",
+          "journal": "Bulletin of the American Museum of Natural History",
+          "volume": "22",
+          "pages": "281-296"
+        },
+        {
+          "id": "currie2003",
+          "authors": "Currie, P. J.; Hurum, J. H.; Sabath, K.",
+          "year": 2003,
+          "title": "Skull structure and evolution in tyrannosaurid dinosaurs",
+          "journal": "Acta Palaeontologica Polonica",
+          "volume": "48",
+          "issue": "2",
+          "pages": "227-234",
+          "url": "https://app.pan.pl/article/item/app48-227.html",
+          "notes": "Provides the modern phylogenetic definition and cranial diagnosis of Tyrannosaurinae."
+        }
       ]
     },
     "Tyrannosauroidea": {
+      "description": "Tyrannosauroidea is a superfamily of coelurosaurian theropods comprising the giant Late Cretaceous Tyrannosauridae together with their smaller, mostly earlier-diverging relatives. The group ranges from small-bodied Middle Jurassic and Early Cretaceous forms, such as the proceratosaurids, to the largest terrestrial predators of the Late Cretaceous of Laurasia.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -6580,6 +6527,42 @@
         "Tetanurae",
         "Coelurosauria",
         "Tyrannosauroidea"
+      ],
+      "type_genus": "Tyrannosaurus",
+      "described": 1905,
+      "authors": "Osborn, H. F.",
+      "diagnostic_features": [
+        "Braincase with a deep otic recess (columellar canal) bearing an internal fenestra vestibuli",
+        "Elongate cochlear duct, indicating heightened sensitivity to low-frequency sound",
+        "Tubular brain endocast with only a slight midbrain flexure",
+        "Pronounced midbrain peak on the endocast, anterior to the posterior middle cerebral vein",
+        "Indistinct flocculus that barely crosses the plane of the anterior semicircular canal"
+      ],
+      "references": [
+        {
+          "id": "osborn1905",
+          "authors": "Osborn, H. F.",
+          "year": 1905,
+          "title": "Tyrannosaurus and other Cretaceous carnivorous dinosaurs",
+          "journal": "Bulletin of the American Museum of Natural History",
+          "volume": "21",
+          "issue": "14",
+          "pages": "259-265",
+          "doi": "10.5281/zenodo.814935",
+          "url": "http://dx.doi.org/10.5281/zenodo.814935"
+        },
+        {
+          "id": "brusatte2016",
+          "authors": "Brusatte, S. L.; Averianov, A.; Sues, H.-D.; Muir, A.; Butler, I. B.",
+          "year": 2016,
+          "title": "New tyrannosaur from the mid-Cretaceous of Uzbekistan clarifies evolution of giant body sizes and advanced senses in tyrant dinosaurs",
+          "journal": "Proceedings of the National Academy of Sciences",
+          "volume": "113",
+          "issue": "13",
+          "pages": "3447-3452",
+          "doi": "10.1073/pnas.1600140113",
+          "notes": "Source of the tyrannosauroid braincase and endocast synapomorphies."
+        }
       ]
     },
     "Unaysauridae": {
@@ -14041,7 +14024,7 @@
     },
     "Alioramus": {
       "genus": "Alioramus",
-      "parent": "Alioramini",
+      "parent": "Tyrannosaurinae",
       "pronunciation": {
         "phonetic": "AL-ee-o-RAY-mus",
         "ipa": "/ˌælioʊˈreɪməs/"
@@ -14174,8 +14157,7 @@
         "Tyrannosauroidea",
         "Eutyrannosauria",
         "Tyrannosauridae",
-        "Tyrannosaurinae",
-        "Alioramini"
+        "Tyrannosaurinae"
       ],
       "authors": "Kurzanov, S. M.",
       "described": 1976
@@ -21539,7 +21521,7 @@
     },
     "Appalachiosaurus": {
       "genus": "Appalachiosaurus",
-      "parent": "Tyrannosauroidea",
+      "parent": "Eutyrannosauria",
       "pronunciation": {
         "phonetic": "AP-uh-LAY-chee-oh-SOR-uhs",
         "ipa": "/ˌæpəˌleɪtʃioʊˈsɔːrəs/"
@@ -21677,7 +21659,8 @@
         "Averostra",
         "Tetanurae",
         "Coelurosauria",
-        "Tyrannosauroidea"
+        "Tyrannosauroidea",
+        "Eutyrannosauria"
       ],
       "authors": "Carr, T. D.; Williamson, T. E.; Schwimmer, D. R.",
       "described": 2005
@@ -29320,6 +29303,15 @@
         "phonetic": "BAH-gah-RAH-tan"
       },
       "description": "Bagaraatan is a genus of theropod dinosaur from the Late Cretaceous period of what is now the Nemegt Formation of Mongolia. It may have been a small predatory dinosaur measuring around 3 to 4 meters (9.8 to 13.1 ft) in length.",
+      "dispute": {
+        "summary": "Bagaraatan ostromi was named by Osmólska (1996) on an incomplete Nemegt Formation skeleton she could place only tentatively within Tetanurae. Słowiak et al. (2024) found the holotype to be a chimera of a caenagnathid oviraptorosaur and a juvenile tyrannosaurid, restricted the holotype to the tyrannosaurid elements, and concluded it is an indeterminate juvenile tyrannosaurid rather than a valid distinct genus.\n",
+        "history": [
+          {
+            "date": "2026-06-25",
+            "note": "Kept at Tyrannosauridae (clade of the restricted holotype per Słowiak et al. 2024); genus validity questionable."
+          }
+        ]
+      },
       "diet": "carnivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -29438,9 +29430,12 @@
         "Dinosauria",
         "Saurischia",
         "Theropoda",
+        "Neotheropoda",
+        "Averostra",
         "Tetanurae",
-        "Avetheropoda",
         "Coelurosauria",
+        "Tyrannosauroidea",
+        "Eutyrannosauria",
         "Tyrannosauridae"
       ],
       "authors": "Osmólska, H.",
@@ -34229,7 +34224,7 @@
     },
     "Bistahieversor": {
       "genus": "Bistahieversor",
-      "parent": "Teratophoneini",
+      "parent": "Eutyrannosauria",
       "etymology": "From Bistahi (the Bisti/De-Na-Zin Wilderness area in New Mexico, where fossils were found; from Navajo bistahi meaning 'among the adobe formations') + Latin eversor meaning 'destroyer'; overall meaning 'Bistahi destroyer'.",
       "pronunciation": {
         "phonetic": "bis-tah-he-ee-VER-sor"
@@ -34353,10 +34348,7 @@
         "Tetanurae",
         "Coelurosauria",
         "Tyrannosauroidea",
-        "Eutyrannosauria",
-        "Tyrannosauridae",
-        "Tyrannosaurinae",
-        "Teratophoneini"
+        "Eutyrannosauria"
       ],
       "authors": "Carr, T. D.; Williamson, T. E.",
       "described": 2010
@@ -54649,7 +54641,7 @@
     },
     "Daspletosaurus": {
       "genus": "Daspletosaurus",
-      "parent": "Daspletosaurini",
+      "parent": "Tyrannosaurinae",
       "etymology": "From Greek daspletos ('frightful') + sauros ('lizard'), meaning 'frightful lizard'.",
       "pronunciation": {
         "phonetic": "das-PLEET-uh-SOR-uhs",
@@ -54899,8 +54891,7 @@
         "Tyrannosauroidea",
         "Eutyrannosauria",
         "Tyrannosauridae",
-        "Tyrannosaurinae",
-        "Daspletosaurini"
+        "Tyrannosaurinae"
       ],
       "authors": "Russell, D. A.",
       "described": 1970
@@ -61062,7 +61053,7 @@
     },
     "Dryptosaurus": {
       "genus": "Dryptosaurus",
-      "parent": "Tyrannosauroidea",
+      "parent": "Eutyrannosauria",
       "etymology": "From Greek drypto (to tear) + sauros (lizard): 'tearing lizard'.",
       "pronunciation": {
         "phonetic": "DRIP-toh-SOR-uhs",
@@ -61219,7 +61210,8 @@
         "Averostra",
         "Tetanurae",
         "Coelurosauria",
-        "Tyrannosauroidea"
+        "Tyrannosauroidea",
+        "Eutyrannosauria"
       ],
       "authors": "Marsh, O. C.",
       "described": 1877
@@ -61771,7 +61763,7 @@
     },
     "Dynamoterror": {
       "genus": "Dynamoterror",
-      "parent": "Teratophoneini",
+      "parent": "Tyrannosaurinae",
       "etymology": "From Greek dynamis (power) + Latin terror (terror): 'powerful terror'.",
       "pronunciation": {
         "phonetic": "die-NAM-o-TEH-ruh"
@@ -61883,8 +61875,7 @@
         "Tyrannosauroidea",
         "Eutyrannosauria",
         "Tyrannosauridae",
-        "Tyrannosaurinae",
-        "Teratophoneini"
+        "Tyrannosaurinae"
       ],
       "authors": "McDonald, A. T.; Wolfe, D. G.; Dooley, A. C.",
       "described": 2018
@@ -80565,12 +80556,21 @@
     },
     "Gualicho": {
       "genus": "Gualicho",
-      "parent": "Tyrannosauroidea",
+      "parent": "Avetheropoda",
       "etymology": "Named in reference to the gualichu, a malevolent supernatural entity in the mythology of the Mapuche and other Patagonian peoples",
       "pronunciation": {
         "phonetic": "gwah-LEE-cho"
       },
       "description": "Gualicho is an enigmatic genus of theropod dinosaurs. The type species is Gualicho shinyae. It lived in what is now northern Patagonia, on what was then a South American island continent split off from the supercontinent Gondwana. The fossils were found in the Huincul Formation, dating to the late Cenomanian-early Turonian age of the upper Cretaceous Period, around 91 million years ago.",
+      "dispute": {
+        "summary": "Apesteguía et al. (2016) recovered Gualicho shinyae as a neovenatorid carcharodontosaurian (an allosauroid), sister to Deltadromeus, arguing its tyrannosaurid-like didactyl manus is convergent rather than evidence of tyrannosauroid affinity; its exact position within Tetanurae remains contested. It is not a tyrannosauroid.\n",
+        "history": [
+          {
+            "date": "2026-06-25",
+            "note": "Removed from Tyrannosauroidea and placed conservatively at Avetheropoda; final placement deferred to the theropod backbone pass (#1860)."
+          }
+        ]
+      },
       "diet": "carnivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -80678,11 +80678,8 @@
         "Dinosauria",
         "Saurischia",
         "Theropoda",
-        "Neotheropoda",
-        "Averostra",
         "Tetanurae",
-        "Coelurosauria",
-        "Tyrannosauroidea"
+        "Avetheropoda"
       ],
       "authors": "Apesteguía, S.; Smith, N. D.; Juárez Valieri, R.; Makovicky, P. J.",
       "described": 2016
@@ -103086,12 +103083,21 @@
     },
     "Labocania": {
       "genus": "Labocania",
-      "parent": "Teratophoneini",
+      "parent": "Tyrannosauroidea",
       "pronunciation": {
         "phonetic": "lah-boh-KAHN-ee-a"
       },
       "etymology": "Named after the La Bocana Roja Formation in Baja California, Mexico, where the type specimen was likely recovered",
       "description": "Labocania is an extinct genus of theropod dinosaur of disputed affinities, known from the Late Cretaceous of Mexico. Initially regarded as an indeterminate theropod, later studies have mentioned possible affinities with tyrannosaurids, abelisaurids, or carcharodontosaurids. More recent research based on additional fossil material found support for a position within the tyrannosaurine clade Teratophoneini. Two species have been proposed: L. anomala (the type species), likely from the La Bocana Roja Formation, and L. aguillonae from the Cerro del Pueblo Formation.",
+      "dispute": {
+        "summary": "Labocania anomala was described by Molnar (1974) as Theropoda incertae sedis — tyrannosaurid-like in some postcranial features but with cranial elements resembling other large theropods, so he declined a family assignment. Its affinities remain debated; more recent material has been argued to support a tyrannosaurine position.\n",
+        "history": [
+          {
+            "date": "2026-06-25",
+            "note": "Placed conservatively at Tyrannosauroidea incertae sedis; affinities range from Theropoda indet. (Molnar, 1974) to tyrannosaurine in recent work."
+          }
+        ]
+      },
       "diet": "carnivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -103204,11 +103210,7 @@
         "Averostra",
         "Tetanurae",
         "Coelurosauria",
-        "Tyrannosauroidea",
-        "Eutyrannosauria",
-        "Tyrannosauridae",
-        "Tyrannosaurinae",
-        "Teratophoneini"
+        "Tyrannosauroidea"
       ],
       "authors": "Molnar, R. E.",
       "described": 1974
@@ -125089,7 +125091,7 @@
     },
     "Nanotyrannus": {
       "genus": "Nanotyrannus",
-      "parent": "Nanotyrannidae",
+      "parent": "Tyrannosaurinae",
       "etymology": "Originally proposed by Bakker, Williams and Currie (1988) as Latin nano (\"small\") plus tyrannus (\"tyrant\"); the derivation is now usually corrected to Greek nanos (\"dwarf\" or \"pygmy\") and tyrannos (\"king\"), in reference to the small body size relative to other tyrannosauroids.",
       "pronunciation": {
         "ipa": "/ˌnænoʊˈtaɪrænəs/",
@@ -125097,7 +125099,13 @@
       },
       "description": "Nanotyrannus is a genus of tyrannosauroid dinosaur that lived in what is now western North America during the Maastrichtian age of the Late Cretaceous, 67 to 66 million years ago. Its fossils are known from the Hell Creek Formation. It was one of the last-known non-avian dinosaurs and lived until the Cretaceous-Paleogene extinction event. The first named species, N. lancensis, was described as a new species of Gorgosaurus in 1946 by Charles W. Gilmore based on a single skull. Re-examination of the specimen in 1988 by Robert T. Bakker, Michael Williams and Philip J. Currie moved the species to a new genus of tyrannosaurid, named Nanotyrannus in reference to its small body size compared to other tyrannosaurids.\n",
       "dispute": {
-        "summary": "The validity of Nanotyrannus is actively contested. After the 1988 erection of the genus, Carr (1999) and Woodward et al. (2020) argued that the holotype CMNH 7541 is an immature Tyrannosaurus rex, citing tooth-grain immaturity and femoral osteohistology. Longrich and Saitta (2024), Zanno and Napoli (2025) — who erected a second species, N. lethaeus — and Griffin et al. (2025, ceratobranchial histology) reaffirmed Nanotyrannus as a distinct, skeletally mature taxon. No broad consensus yet.\n"
+        "summary": "The validity of Nanotyrannus is actively contested. After the 1988 erection of the genus, Carr (1999) and Woodward et al. (2020) argued that the holotype CMNH 7541 is an immature Tyrannosaurus rex, citing tooth-grain immaturity and femoral osteohistology. Longrich and Saitta (2024), Zanno and Napoli (2025) — who erected a second species, N. lethaeus — and Griffin et al. (2025, ceratobranchial histology) reaffirmed Nanotyrannus as a distinct, skeletally mature taxon. No broad consensus yet.\n",
+        "history": [
+          {
+            "date": "2026-06-25",
+            "note": "Placed at Tyrannosaurinae — the least-inclusive clade accepted whether Nanotyrannus is a distinct tyrannosaurine or a juvenile Tyrannosaurus; validity unresolved."
+          }
+        ]
       },
       "diet": "carnivore",
       "locomotion": "bipedal",
@@ -125371,7 +125379,8 @@
         "Coelurosauria",
         "Tyrannosauroidea",
         "Eutyrannosauria",
-        "Nanotyrannidae"
+        "Tyrannosauridae",
+        "Tyrannosaurinae"
       ],
       "authors": "Bakker, R. T.; Williams, M.; Currie, P. J.",
       "described": 1988
@@ -150616,7 +150625,7 @@
     },
     "Qianzhousaurus": {
       "genus": "Qianzhousaurus",
-      "parent": "Alioramini",
+      "parent": "Tyrannosaurinae",
       "etymology": "Named for Qianzhou, the older name of Ganzhou, China, where the remains were discovered, combined with Greek 'sauros' meaning 'lizard'; meaning 'Qianzhou lizard.'",
       "pronunciation": {
         "phonetic": "chee-EN-jo-SOR-us"
@@ -150769,8 +150778,7 @@
         "Tyrannosauroidea",
         "Eutyrannosauria",
         "Tyrannosauridae",
-        "Tyrannosaurinae",
-        "Alioramini"
+        "Tyrannosaurinae"
       ],
       "authors": "Lü, J.; Yi, L.; Brusatte, S. L.; Yang, L.; Li, H.; Chen, L.",
       "described": 2014
@@ -152893,6 +152901,15 @@
       },
       "etymology": "From Latin raptor ('robber') and rex ('king')",
       "description": "Raptorex is a controversial genus of tyrannosaurid dinosaur. Its fossil remains consist of a single juvenile specimen probably uncovered in Mongolia, or possibly northeastern China. The type species is R. kriegsteini, described in 2009 by Sereno and colleagues. The genus name is derived from Latin raptor, \"robber\", and rex, \"king\". The specific name honors Roman Kriegstein, a survivor of the Holocaust, whose son Henry Kriegstein donated the specimen to the University of Chicago for scientific study.",
+      "dispute": {
+        "summary": "Raptorex kriegsteini was named by Sereno et al. (2009) from a single juvenile skeleton of uncertain provenance. Subsequent workers regard it as a likely juvenile tyrannosaurine — possibly Tarbosaurus — which would make the genus a nomen dubium.\n",
+        "history": [
+          {
+            "date": "2026-06-25",
+            "note": "Kept at Tyrannosauroidea incertae sedis; validity and provenance contested (likely a juvenile tyrannosaurine)."
+          }
+        ]
+      },
       "diet": "carnivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -175368,7 +175385,7 @@
     },
     "Tarbosaurus": {
       "genus": "Tarbosaurus",
-      "parent": "Tyrannosaurini",
+      "parent": "Tyrannosaurinae",
       "etymology": "From Ancient Greek 'tarbos' meaning 'terror' or 'alarm' and 'sauros' meaning 'lizard'.",
       "pronunciation": {
         "phonetic": "TAR-buh-SOR-uhs",
@@ -175575,8 +175592,7 @@
         "Tyrannosauroidea",
         "Eutyrannosauria",
         "Tyrannosauridae",
-        "Tyrannosaurinae",
-        "Tyrannosaurini"
+        "Tyrannosaurinae"
       ],
       "authors": "Maleev, E. A.",
       "described": 1955
@@ -177680,7 +177696,7 @@
     },
     "Teratophoneus": {
       "genus": "Teratophoneus",
-      "parent": "Teratophoneini",
+      "parent": "Tyrannosaurinae",
       "etymology": "From Ancient Greek 'teras' meaning 'monster' and 'phoneus' meaning 'murderer', translating as 'monstrous murderer'.",
       "pronunciation": {
         "phonetic": "teh-RAT-o-FO-nee-us"
@@ -177842,8 +177858,7 @@
         "Tyrannosauroidea",
         "Eutyrannosauria",
         "Tyrannosauridae",
-        "Tyrannosaurinae",
-        "Teratophoneini"
+        "Tyrannosaurinae"
       ],
       "authors": "Carr, T. D.; Williamson, T. E.; Britt, B. B.; Stadtman, K.",
       "described": 2011
@@ -178390,7 +178405,7 @@
     },
     "Thanatotheristes": {
       "genus": "Thanatotheristes",
-      "parent": "Daspletosaurini",
+      "parent": "Tyrannosaurinae",
       "etymology": "From Greek Thanatos, \"death\", combined with Greek theristḗs, \"harvester\" - means \"reaper of death\" (literally \"death harvester\")",
       "pronunciation": {
         "phonetic": "THA-nah-toe-theh-RISS-teez"
@@ -178507,8 +178522,7 @@
         "Tyrannosauroidea",
         "Eutyrannosauria",
         "Tyrannosauridae",
-        "Tyrannosaurinae",
-        "Daspletosaurini"
+        "Tyrannosaurinae"
       ],
       "authors": "Voris, J. T.; Therrien, F.; Zelenitsky, D. K.; Brown, C. M.",
       "described": 2020
@@ -181051,12 +181065,21 @@
     },
     "Timimus": {
       "genus": "Timimus",
-      "parent": "Tyrannosauroidea",
+      "parent": "Coelurosauria",
       "pronunciation": {
         "phonetic": "ti-MIEM-us"
       },
       "etymology": "Combines the name Tim (honoring both Timothy Rich, son of the discoverers, and paleontologist Tim Flannery) with Latin mimus ('mimic'), meaning 'Tim's mimic'",
       "description": "Timimus is a genus of small coelurosaurian theropod dinosaur from the Early Cretaceous of Australia. It was originally identified as an ornithomimosaur, but now it is thought to be a different kind of theropod, possibly a tyrannosauroid.",
+      "dispute": {
+        "summary": "Timimus hermani was named by Rich and Vickers-Rich (1994) on an isolated femur and referred to Ornithomimosauria; its affinities have since been questioned, with a tyrannosauroid placement among the alternatives proposed. The single-element holotype is too fragmentary to resolve this.\n",
+        "history": [
+          {
+            "date": "2026-06-25",
+            "note": "Moved from Tyrannosauroidea to Coelurosauria incertae sedis (least-inclusive uncontested clade; ornithomimosaur per Rich and Vickers-Rich (1994), later tyrannosauroid proposals)."
+          }
+        ]
+      },
       "diet": "carnivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -181161,11 +181184,9 @@
         "Dinosauria",
         "Saurischia",
         "Theropoda",
-        "Neotheropoda",
-        "Averostra",
         "Tetanurae",
-        "Coelurosauria",
-        "Tyrannosauroidea"
+        "Avetheropoda",
+        "Coelurosauria"
       ],
       "authors": "Rich, T. H.; Vickers-Rich, P.",
       "described": 1994
@@ -186129,7 +186150,7 @@
     },
     "Tyrannosaurus": {
       "genus": "Tyrannosaurus",
-      "parent": "Tyrannosaurini",
+      "parent": "Tyrannosaurinae",
       "etymology": "From Greek tyrannos (tyrant) and sauros (lizard); meaning \"tyrant lizard\", a name Osborn coined to convey the genus's exceptional size relative to all then-known carnivorous land vertebrates.",
       "pronunciation": {
         "phonetic": "ti-RAN-o-SAWR-us",
@@ -186506,8 +186527,7 @@
         "Tyrannosauroidea",
         "Eutyrannosauria",
         "Tyrannosauridae",
-        "Tyrannosaurinae",
-        "Tyrannosaurini"
+        "Tyrannosaurinae"
       ],
       "authors": "Osborn, H. F.",
       "described": 1905
@@ -202658,7 +202678,7 @@
     },
     "Zhuchengtyrannus": {
       "genus": "Zhuchengtyrannus",
-      "parent": "Tyrannosaurini",
+      "parent": "Tyrannosaurinae",
       "etymology": "Named after Zhucheng, Shandong Province, China (the type locality), combined with Latin tyrannus meaning 'tyrant'; translates as 'Zhucheng tyrant'",
       "pronunciation": {
         "phonetic": "JOO-chang-tie-RAN-us"
@@ -202783,8 +202803,7 @@
         "Tyrannosauroidea",
         "Eutyrannosauria",
         "Tyrannosauridae",
-        "Tyrannosaurinae",
-        "Tyrannosaurini"
+        "Tyrannosaurinae"
       ],
       "authors": "Hone, D. W. E.; Wang, K.; Sullivan, C.; Zhao, X.; Chen, S.; Li, D.; Ji, S.; Ji, Q.; Xu, X.",
       "described": 2011
