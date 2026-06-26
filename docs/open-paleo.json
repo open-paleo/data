@@ -1,8 +1,8 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-06-26T18:13:06.342Z",
-    "clade_count": 245,
+    "built_at": "2026-06-26T19:24:41.669Z",
+    "clade_count": 239,
     "genus_count": 1398,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
@@ -337,10 +337,7 @@
                             }
                           },
                           "Marginocephalia": {
-                            "Pachycephalosauria": {},
-                            "Ceratopsia": {
-                              "Ceratopsidae": {}
-                            }
+                            "Pachycephalosauria": {}
                           }
                         },
                         "Genasauria": {
@@ -404,17 +401,8 @@
                                   "Chaoyangsauridae": {}
                                 },
                                 "Ceratopsidae": {
-                                  "Centrosaurinae": {
-                                    "Nasutoceratopsini": {},
-                                    "Centrosaurini": {},
-                                    "Pachyrhinosaurini": {}
-                                  },
-                                  "Chasmosaurinae": {
-                                    "Triceratopsini": {}
-                                  },
-                                  "Centrasaurinae": {
-                                    "Albertaceratopsini": {}
-                                  }
+                                  "Centrosaurinae": {},
+                                  "Chasmosaurinae": {}
                                 }
                               },
                               "Pachycephalosauria": {
@@ -596,27 +584,6 @@
         "Megalosauroidea",
         "Megalosauridae",
         "Afrovenatorinae"
-      ]
-    },
-    "Albertaceratopsini": {
-      "taxonomy": [
-        "Life",
-        "Animalia",
-        "Chordata",
-        "Vertebrata",
-        "Sarcopterygii",
-        "Tetrapoda",
-        "Reptilia",
-        "Archosauria",
-        "Dinosauria",
-        "Ornithischia",
-        "Genasauria",
-        "Cerapoda",
-        "Marginocephalia",
-        "Ceratopsia",
-        "Ceratopsidae",
-        "Centrasaurinae",
-        "Albertaceratopsini"
       ]
     },
     "Albertosaurinae": {
@@ -1636,27 +1603,8 @@
         "Caudipterygidae"
       ]
     },
-    "Centrasaurinae": {
-      "taxonomy": [
-        "Life",
-        "Animalia",
-        "Chordata",
-        "Vertebrata",
-        "Sarcopterygii",
-        "Tetrapoda",
-        "Reptilia",
-        "Archosauria",
-        "Dinosauria",
-        "Ornithischia",
-        "Genasauria",
-        "Cerapoda",
-        "Marginocephalia",
-        "Ceratopsia",
-        "Ceratopsidae",
-        "Centrasaurinae"
-      ]
-    },
     "Centrosaurinae": {
+      "description": "Centrosaurinae is one of the two subfamilies of Ceratopsidae, comprising the short-frilled, nasal-ornament-dominated horned dinosaurs of the Late Cretaceous of North America and Asia. Centrosaurines concentrate their cranial ornamentation on the nasal region and the parietal margin, and span the early-diverging nasutoceratopsin and albertaceratopsin lineages as well as the derived centrosaurin and pachyrhinosaurin radiations (the latter replacing nasal horns with thickened bosses). The subfamily was named by Lambe in 1915 with Centrosaurus as its type genus.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -1674,27 +1622,28 @@
         "Ceratopsia",
         "Ceratopsidae",
         "Centrosaurinae"
-      ]
-    },
-    "Centrosaurini": {
-      "taxonomy": [
-        "Life",
-        "Animalia",
-        "Chordata",
-        "Vertebrata",
-        "Sarcopterygii",
-        "Tetrapoda",
-        "Reptilia",
-        "Archosauria",
-        "Dinosauria",
-        "Ornithischia",
-        "Genasauria",
-        "Cerapoda",
-        "Marginocephalia",
-        "Ceratopsia",
-        "Ceratopsidae",
-        "Centrosaurinae",
-        "Centrosaurini"
+      ],
+      "type_genus": "Centrosaurus",
+      "described": 1915,
+      "authors": "Lambe, L. M.",
+      "diagnostic_features": [
+        "Cranial ornamentation concentrated on the nasal region and parietal margin, with large bladelike epiparietals (more than six loci per side in derived forms)",
+        "Rostrocaudally abbreviated squamosal with a stepped caudomedian margin",
+        "Wide parietal midline bar with a triangular cross-section that tapers laterally",
+        "Premaxilla with a pronounced ventral angle and a subcircular external narial region",
+        "Narial spine formed by both the nasal and the premaxilla"
+      ],
+      "references": [
+        {
+          "id": "lambe1915",
+          "authors": "Lambe, L. M.",
+          "year": 1915,
+          "title": "On Eoceratops canadensis, gen. nov., with remarks on other genera of Cretaceous horned dinosaurs",
+          "journal": "Geological Survey of Canada Museum Bulletin",
+          "volume": "12",
+          "issue": "24",
+          "notes": "Erected the subfamilies Centrosaurinae and Chasmosaurinae."
+        }
       ]
     },
     "Cerapoda": {
@@ -1746,6 +1695,7 @@
         "Archosauria",
         "Dinosauria",
         "Ornithischia",
+        "Genasauria",
         "Cerapoda",
         "Marginocephalia",
         "Ceratopsia"
@@ -1773,7 +1723,7 @@
       ]
     },
     "Ceratopsidae": {
-      "description": "Ceratopsidae is a family of large-bodied ceratopsian ornithischian dinosaurs known from the Late Cretaceous of western North America (and possibly Asia). Ceratopsids are among the most recognizable dinosaurs, characterized by elaborate cranial ornamentation including large nasal and supraorbital horns, expansive parietosquamosal frills often decorated with epiossifications (epoccipitals and epiparietals), and a robust, barrel-shaped body. The family is divided into Chasmosaurinae (long-frilled forms like Triceratops) and Centrosaurinae (short-frilled forms like Centrosaurus).\n",
+      "description": "Ceratopsidae is a family of large-bodied ceratopsian ornithischian dinosaurs known from the Late Cretaceous of western North America (and possibly Asia). Ceratopsids are among the most recognizable dinosaurs, characterized by elaborate cranial ornamentation including large nasal and supraorbital horns, expansive parietosquamosal frills often decorated with epiossifications (epoccipitals and epiparietals), and a robust, barrel-shaped body. The family is divided into the short-frilled Centrosaurinae and the long-frilled Chasmosaurinae.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -1785,13 +1735,15 @@
         "Archosauria",
         "Dinosauria",
         "Ornithischia",
+        "Genasauria",
         "Cerapoda",
         "Marginocephalia",
         "Ceratopsia",
         "Ceratopsidae"
       ],
-      "described": 1890,
-      "authors": "Marsh",
+      "type_genus": "Ceratops",
+      "described": 1888,
+      "authors": "Marsh, O. C.",
       "diagnostic_features": [
         "Large parietosquamosal frill with marginal epiossifications (epoccipitals)",
         "Prominent nasal horn and/or paired supraorbital horns",
@@ -1802,13 +1754,30 @@
       ],
       "references": [
         {
-          "id": "marsh1890ceratopsidae",
-          "authors": "Marsh, O.C.",
+          "id": "marsh1888b",
+          "authors": "Marsh, O. C.",
+          "year": 1888,
+          "title": "A new family of horned Dinosauria, from the Cretaceous",
+          "journal": "American Journal of Science",
+          "volume": "s3-36",
+          "issue": "216",
+          "pages": "477-478",
+          "doi": "10.2475/ajs.s3-36.216.477",
+          "url": "http://dx.doi.org/10.2475/ajs.s3-36.216.477",
+          "notes": "Named the family Ceratopsidae."
+        },
+        {
+          "id": "marsh1890a",
+          "authors": "Marsh, O. C.",
           "year": 1890,
           "title": "Additional characters of the Ceratopsidae, with notice of new Cretaceous dinosaurs",
           "journal": "American Journal of Science",
-          "volume": "39",
-          "pages": "418-426"
+          "volume": "s3-39",
+          "issue": "233",
+          "pages": "418-426",
+          "doi": "10.2475/ajs.s3-39.233.418",
+          "url": "http://dx.doi.org/10.2475/ajs.s3-39.233.418",
+          "notes": "Provided additional characters diagnosing the Ceratopsidae."
         }
       ]
     },
@@ -1972,6 +1941,7 @@
       ]
     },
     "Chasmosaurinae": {
+      "description": "Chasmosaurinae is one of the two subfamilies of Ceratopsidae, comprising the long-frilled horned dinosaurs of the Late Cretaceous of North America, typified by elongate brow horns, reduced nasal horns, and greatly elongate parietosquamosal frills with large parietal fenestrae. The subfamily ranges from earlier forms such as Chasmosaurus and Pentaceratops to the derived Triceratopsini (Triceratops, Torosaurus, and their relatives). It was named by Lambe in 1915 with Chasmosaurus as its type genus.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -1989,6 +1959,28 @@
         "Ceratopsia",
         "Ceratopsidae",
         "Chasmosaurinae"
+      ],
+      "type_genus": "Chasmosaurus",
+      "described": 1915,
+      "authors": "Lambe, L. M.",
+      "diagnostic_features": [
+        "Elongate postorbital (brow) horncores, contrasting with the abbreviated horns of centrosaurines",
+        "Reduced nasal horncore or boss",
+        "Greatly elongate parietosquamosal frill with large parietal fenestrae and elongate squamosals",
+        "Only three epiparietal loci (P1-P3) per side along the parietal lateral ramus",
+        "Premaxilla longer than tall, with subequal dorsal and ventral rami of the rostral"
+      ],
+      "references": [
+        {
+          "id": "lambe1915",
+          "authors": "Lambe, L. M.",
+          "year": 1915,
+          "title": "On Eoceratops canadensis, gen. nov., with remarks on other genera of Cretaceous horned dinosaurs",
+          "journal": "Geological Survey of Canada Museum Bulletin",
+          "volume": "12",
+          "issue": "24",
+          "notes": "Erected the subfamilies Centrosaurinae and Chasmosaurinae."
+        }
       ]
     },
     "Citipatinae": {
@@ -4196,27 +4188,6 @@
         "Microraptorinae"
       ]
     },
-    "Nasutoceratopsini": {
-      "taxonomy": [
-        "Life",
-        "Animalia",
-        "Chordata",
-        "Vertebrata",
-        "Sarcopterygii",
-        "Tetrapoda",
-        "Reptilia",
-        "Archosauria",
-        "Dinosauria",
-        "Ornithischia",
-        "Genasauria",
-        "Cerapoda",
-        "Marginocephalia",
-        "Ceratopsia",
-        "Ceratopsidae",
-        "Centrosaurinae",
-        "Nasutoceratopsini"
-      ]
-    },
     "Nemegtosauridae": {
       "taxonomy": [
         "Life",
@@ -4827,27 +4798,6 @@
         "Pachycephalosauria",
         "Pachycephalosauridae",
         "Pachycephalosaurini"
-      ]
-    },
-    "Pachyrhinosaurini": {
-      "taxonomy": [
-        "Life",
-        "Animalia",
-        "Chordata",
-        "Vertebrata",
-        "Sarcopterygii",
-        "Tetrapoda",
-        "Reptilia",
-        "Archosauria",
-        "Dinosauria",
-        "Ornithischia",
-        "Genasauria",
-        "Cerapoda",
-        "Marginocephalia",
-        "Ceratopsia",
-        "Ceratopsidae",
-        "Centrosaurinae",
-        "Pachyrhinosaurini"
       ]
     },
     "Parankylosauria": {
@@ -6272,27 +6222,6 @@
         "Neosauropoda",
         "Macronaria",
         "Titanosauriformes"
-      ]
-    },
-    "Triceratopsini": {
-      "taxonomy": [
-        "Life",
-        "Animalia",
-        "Chordata",
-        "Vertebrata",
-        "Sarcopterygii",
-        "Tetrapoda",
-        "Reptilia",
-        "Archosauria",
-        "Dinosauria",
-        "Ornithischia",
-        "Genasauria",
-        "Cerapoda",
-        "Marginocephalia",
-        "Ceratopsia",
-        "Ceratopsidae",
-        "Chasmosaurinae",
-        "Triceratopsini"
       ]
     },
     "Troodontidae": {
@@ -7896,7 +7825,7 @@
     },
     "Achelousaurus": {
       "genus": "Achelousaurus",
-      "parent": "Pachyrhinosaurini",
+      "parent": "Centrosaurinae",
       "etymology": "Named after Achelous, the Greek deity of rivers, combined with Greek 'sauros' meaning 'lizard'; meaning 'Achelous lizard'",
       "pronunciation": {
         "phonetic": "ak-e-LOH-uh-SAWR-us",
@@ -8038,8 +7967,7 @@
         "Marginocephalia",
         "Ceratopsia",
         "Ceratopsidae",
-        "Centrosaurinae",
-        "Pachyrhinosaurini"
+        "Centrosaurinae"
       ],
       "authors": "Sampson, S. D.",
       "described": 1995
@@ -10732,6 +10660,15 @@
       },
       "etymology": "From Ancient Greek 'αγαν' (agan, 'much') and 'θαυμα' (thauma, 'wonder'); meaning 'much wonder', given by Cope in reference to the large size of the type material.",
       "description": "Agathaumas is a dubious genus of a large ceratopsid dinosaur that lived in Wyoming during the Late Cretaceous (late Maastrichtian stage, 66 million years ago). It was seen as the largest land animal known at the time of its discovery.",
+      "dispute": {
+        "summary": "Agathaumas is a nomen dubium based on postcranial material that lacks diagnostic ceratopsid characters and is widely regarded as indeterminate, possibly referable to Triceratops. It cannot be assigned to either subfamily and is retained at Ceratopsidae incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-06-26",
+            "note": "Parked at Ceratopsidae incertae sedis, undiagnostic holotype precludes subfamily assignment (P2)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "quadrupedal",
       "paleoenvironment": [
@@ -10821,6 +10758,7 @@
         "Archosauria",
         "Dinosauria",
         "Ornithischia",
+        "Genasauria",
         "Cerapoda",
         "Marginocephalia",
         "Ceratopsia",
@@ -11855,6 +11793,7 @@
         "Archosauria",
         "Dinosauria",
         "Ornithischia",
+        "Genasauria",
         "Cerapoda",
         "Marginocephalia",
         "Ceratopsia"
@@ -12582,6 +12521,7 @@
         "Archosauria",
         "Dinosauria",
         "Ornithischia",
+        "Genasauria",
         "Cerapoda",
         "Marginocephalia",
         "Ceratopsia"
@@ -12591,7 +12531,7 @@
     },
     "Albertaceratops": {
       "genus": "Albertaceratops",
-      "parent": "Albertaceratopsini",
+      "parent": "Centrosaurinae",
       "etymology": "Named after Alberta, Canada, combined with Greek 'keras' meaning 'horn' and 'ops' meaning 'face'; meaning 'Alberta horned face'",
       "description": "Albertaceratops is a genus of centrosaurine horned dinosaur from the middle Campanian-age Upper Cretaceous Oldman Formation of Alberta, Canada.",
       "diet": "herbivore",
@@ -12730,8 +12670,7 @@
         "Marginocephalia",
         "Ceratopsia",
         "Ceratopsidae",
-        "Centrasaurinae",
-        "Albertaceratopsini"
+        "Centrosaurinae"
       ],
       "authors": "Ryan, M. J.",
       "described": 2007
@@ -28405,7 +28344,7 @@
     },
     "Avaceratops": {
       "genus": "Avaceratops",
-      "parent": "Nasutoceratopsini",
+      "parent": "Centrosaurinae",
       "pronunciation": {
         "phonetic": "AY-va-SER-a-tops"
       },
@@ -28525,8 +28464,7 @@
         "Marginocephalia",
         "Ceratopsia",
         "Ceratopsidae",
-        "Centrosaurinae",
-        "Nasutoceratopsini"
+        "Centrosaurinae"
       ],
       "authors": "Dodson, P.",
       "described": 1986
@@ -36415,12 +36353,21 @@
     },
     "Brachyceratops": {
       "genus": "Brachyceratops",
-      "parent": "Centrosaurinae",
+      "parent": "Ceratopsidae",
       "pronunciation": {
         "phonetic": "BRAK-i-SER-a-tops"
       },
       "etymology": "From Greek brachys (βραχύς) meaning 'short', Greek keras (κέρας) meaning 'horn', and Greek ops (ὤψ) meaning 'face'. Full meaning: 'short horned face'.",
       "description": "Brachyceratops is a dubious genus of ceratopsian dinosaur from the late Cretaceous Period of Montana, United States. Brachyceratops has historically been known from juvenile remains, with one specimen having since been re-classified as Rubeosaurus ovatus. Because the holotype is too incomplete and juvenile to preserve diagnostic features, Sampson et al. (1997) and McDonald (2011) regarded Brachyceratops as a nomen dubium.",
+      "dispute": {
+        "summary": "Brachyceratops is a nomen dubium based on incomplete juvenile material; Sampson et al. (1997) and McDonald (2011) found the holotype too immature to diagnose, and a referred specimen has been reassigned to Rubeosaurus. Though almost certainly a centrosaurine, it cannot be placed reliably below family level and is retained at Ceratopsidae incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-06-26",
+            "note": "Moved from Centrosaurinae to Ceratopsidae incertae sedis, undiagnostic juvenile holotype (P2); the centrosaurine analyses and Jones (2026) leave it unplaced."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "quadrupedal",
       "paleoenvironment": [
@@ -36567,8 +36514,7 @@
         "Cerapoda",
         "Marginocephalia",
         "Ceratopsia",
-        "Ceratopsidae",
-        "Centrosaurinae"
+        "Ceratopsidae"
       ],
       "authors": "Gilmore, C. W.",
       "described": 1914
@@ -42829,7 +42775,7 @@
     },
     "Centrosaurus": {
       "genus": "Centrosaurus",
-      "parent": "Centrosaurini",
+      "parent": "Centrosaurinae",
       "pronunciation": {
         "phonetic": "SEN-troh-SOR-uhs",
         "ipa": "/ˌsɛntroʊˈsɔːrəs/"
@@ -42971,8 +42917,7 @@
         "Marginocephalia",
         "Ceratopsia",
         "Ceratopsidae",
-        "Centrosaurinae",
-        "Centrosaurini"
+        "Centrosaurinae"
       ],
       "authors": "Lambe, L. M.",
       "described": 1905
@@ -43312,6 +43257,15 @@
         "phonetic": "SEH-ruh-tops"
       },
       "description": "Ceratops is a dubious genus of herbivorous ceratopsian dinosaur which lived during the Late Cretaceous. Its fossils have been found in the Judith River Formation in Montana. Although poorly known, Ceratops is important in the history of dinosaurs, since it is the type genus for which both the Ceratopsia and the Ceratopsidae have been named.\n",
+      "dispute": {
+        "summary": "Ceratops is a nomen dubium known only from a pair of postorbital horncores and an occipital condyle that lack diagnostic features, despite being the type genus by which both Ceratopsia and Ceratopsidae were named. It cannot be placed below family level and is retained at Ceratopsidae incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-06-26",
+            "note": "Parked at Ceratopsidae incertae sedis, undiagnostic holotype; type genus by name only (P2)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "quadrupedal",
       "diagnostic_features": [
@@ -43419,6 +43373,7 @@
         "Archosauria",
         "Dinosauria",
         "Ornithischia",
+        "Genasauria",
         "Cerapoda",
         "Marginocephalia",
         "Ceratopsia",
@@ -51357,7 +51312,7 @@
     },
     "Coronosaurus": {
       "genus": "Coronosaurus",
-      "parent": "Centrosaurini",
+      "parent": "Centrosaurinae",
       "etymology": "From Latin corona, 'crown', + Greek sauros, 'lizard'; means 'crowned lizard', referring to the crown-like horn arrangement on its frill",
       "pronunciation": {
         "phonetic": "kuh-RON-o-SOR-us"
@@ -51506,8 +51461,7 @@
         "Marginocephalia",
         "Ceratopsia",
         "Ceratopsidae",
-        "Centrosaurinae",
-        "Centrosaurini"
+        "Centrosaurinae"
       ],
       "authors": "Ryan, M. J.; Evans, D. C.; Shepherd, K. M.",
       "described": 2012
@@ -52454,7 +52408,7 @@
     },
     "Crittendenceratops": {
       "genus": "Crittendenceratops",
-      "parent": "Nasutoceratopsini",
+      "parent": "Centrosaurinae",
       "etymology": "Named after the Fort Crittenden Formation in Arizona where the fossils were found, + Greek ceratops ('horned face'), meaning 'horned face from the Fort Crittenden Formation'.",
       "pronunciation": {
         "phonetic": "CRIH-ten-den-SEH-ruh-tops"
@@ -52579,8 +52533,7 @@
         "Marginocephalia",
         "Ceratopsia",
         "Ceratopsidae",
-        "Centrosaurinae",
-        "Nasutoceratopsini"
+        "Centrosaurinae"
       ],
       "authors": "Dalman, S. G.; Hodnett, J.-P. M.; A. J. Lichtig, S. G. L.",
       "described": 2018
@@ -62275,6 +62228,7 @@
         "Archosauria",
         "Dinosauria",
         "Ornithischia",
+        "Genasauria",
         "Cerapoda",
         "Marginocephalia",
         "Ceratopsia"
@@ -63689,7 +63643,7 @@
     },
     "Einiosaurus": {
       "genus": "Einiosaurus",
-      "parent": "Pachyrhinosaurini",
+      "parent": "Centrosaurinae",
       "pronunciation": {
         "phonetic": "ie-nee-o-SAWR-us"
       },
@@ -63813,8 +63767,7 @@
         "Marginocephalia",
         "Ceratopsia",
         "Ceratopsidae",
-        "Centrosaurinae",
-        "Pachyrhinosaurini"
+        "Centrosaurinae"
       ],
       "authors": "Sampson, S. D.",
       "described": 1995
@@ -66758,7 +66711,7 @@
     },
     "Eotriceratops": {
       "genus": "Eotriceratops",
-      "parent": "Triceratopsini",
+      "parent": "Chasmosaurinae",
       "etymology": "From Greek eos (dawn) + treis (three) + keras (horn) + ops (face): 'dawn three-horned face', marking it as an early relative of Triceratops.",
       "pronunciation": {
         "phonetic": "EE-oh-tri-SEH-ruh-tops"
@@ -66872,8 +66825,7 @@
         "Marginocephalia",
         "Ceratopsia",
         "Ceratopsidae",
-        "Chasmosaurinae",
-        "Triceratopsini"
+        "Chasmosaurinae"
       ],
       "authors": "Wu, X.-C.; Brinkman, D. B.; Eberth, D. A.; Braman, D. R.",
       "described": 2007
@@ -70610,6 +70562,7 @@
         "Archosauria",
         "Dinosauria",
         "Ornithischia",
+        "Genasauria",
         "Cerapoda",
         "Marginocephalia",
         "Ceratopsia"
@@ -72748,7 +72701,7 @@
     },
     "Furcatoceratops": {
       "genus": "Furcatoceratops",
-      "parent": "Nasutoceratopsini",
+      "parent": "Centrosaurinae",
       "etymology": "Forked horned face; from Latin furcatus (forked) and Greek keras (horn) and ops (face)",
       "pronunciation": {
         "phonetic": "fuh-KAH-tow-SEH-ruh-tops"
@@ -72850,8 +72803,7 @@
         "Marginocephalia",
         "Ceratopsia",
         "Ceratopsidae",
-        "Centrosaurinae",
-        "Nasutoceratopsini"
+        "Centrosaurinae"
       ],
       "authors": "Ishikawa, H.; Tsuihiji, T.; Manabe, M.",
       "described": 2023
@@ -102283,6 +102235,7 @@
         "Archosauria",
         "Dinosauria",
         "Ornithischia",
+        "Genasauria",
         "Cerapoda",
         "Marginocephalia",
         "Ceratopsia"
@@ -109711,7 +109664,7 @@
     },
     "Lokiceratops": {
       "genus": "Lokiceratops",
-      "parent": "Albertaceratopsini",
+      "parent": "Centrosaurinae",
       "etymology": "Named for Loki, the Norse god, combined with Greek 'ceratops' meaning 'horned face' (from 'keras' meaning 'horn' and 'ops' meaning 'face'), hence 'Loki horned face'. The species name 'rangiformis' means 'reindeer-shaped' in reference to its elaborate ornamentation.",
       "pronunciation": {
         "phonetic": "LOW-kee-SEH-ruh-tops"
@@ -109849,8 +109802,7 @@
         "Marginocephalia",
         "Ceratopsia",
         "Ceratopsidae",
-        "Centrasaurinae",
-        "Albertaceratopsini"
+        "Centrosaurinae"
       ],
       "authors": "Loewen, M. A.; Sertich, J. J. W.; Sampson, S.; O'Connor, J. K.; Carpenter, S.; Sisson, B.; Øhlenschlæger, A.; Farke, A. A.; Makovicky, P. J.; Longrich, N.; Evans, D. C.",
       "described": 2024
@@ -117306,7 +117258,7 @@
     },
     "Medusaceratops": {
       "genus": "Medusaceratops",
-      "parent": "Albertaceratopsini",
+      "parent": "Centrosaurinae",
       "etymology": "From Medusa, the snake-haired monster of Greek mythology whose gaze turned men to stone, referencing the large snake-like frill spikes, combined with Latinized Greek 'ceratops' meaning 'horned face'.",
       "pronunciation": {
         "phonetic": "muh-DOO-suh-SEH-ruh-tops"
@@ -117435,8 +117387,7 @@
         "Marginocephalia",
         "Ceratopsia",
         "Ceratopsidae",
-        "Centrasaurinae",
-        "Albertaceratopsini"
+        "Centrosaurinae"
       ],
       "authors": "Ryan, M. J.; Russell, A. P.; S. Hartman",
       "described": 2010
@@ -119402,6 +119353,7 @@
         "Archosauria",
         "Dinosauria",
         "Ornithischia",
+        "Genasauria",
         "Cerapoda",
         "Marginocephalia",
         "Ceratopsia"
@@ -119786,6 +119738,7 @@
         "Archosauria",
         "Dinosauria",
         "Ornithischia",
+        "Genasauria",
         "Cerapoda",
         "Marginocephalia",
         "Ceratopsia"
@@ -122138,12 +122091,21 @@
     },
     "Monoclonius": {
       "genus": "Monoclonius",
-      "parent": "Centrosaurinae",
+      "parent": "Ceratopsidae",
       "pronunciation": {
         "phonetic": "mon-o-KLOHN-ee-us"
       },
       "etymology": "From Greek 'monos' (single) and 'klonos' (sprout or twig); meaning 'single sprout', likely referring to the single root of its teeth.",
       "description": "Monoclonius is an extinct dubious genus of herbivorous ceratopsian dinosaur found in the Late Cretaceous layers of the Judith River Formation in Montana, United States, and the uppermost rock layers of the Dinosaur Park Formation in Alberta, Canada dated to between 75 and 74.6 million years ago.",
+      "dispute": {
+        "summary": "Monoclonius is a nomen dubium; most historically referred specimens have been reassigned to Centrosaurus and the remainder are too fragmentary or immature to diagnose (Ryan, 2006). Although a centrosaurine, it is not reliably placeable below family level and is retained at Ceratopsidae incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-06-26",
+            "note": "Moved from Centrosaurinae to Ceratopsidae incertae sedis, most specimens reassigned to Centrosaurus (P2)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "quadrupedal",
       "paleoenvironment": [
@@ -122248,8 +122210,7 @@
         "Cerapoda",
         "Marginocephalia",
         "Ceratopsia",
-        "Ceratopsidae",
-        "Centrosaurinae"
+        "Ceratopsidae"
       ],
       "authors": "Cope, E. D.",
       "described": 1876
@@ -126174,7 +126135,7 @@
     },
     "Nasutoceratops": {
       "genus": "Nasutoceratops",
-      "parent": "Nasutoceratopsini",
+      "parent": "Centrosaurinae",
       "etymology": "From Latin 'nasutus' meaning 'large-nosed' and Latinized Greek 'ceratops' meaning 'horned face'; translates as 'large-nosed horned face', referring to its distinctive enlarged nasal region.",
       "pronunciation": {
         "phonetic": "nuh-SU-toe-SEH-ruh-tops"
@@ -126339,8 +126300,7 @@
         "Marginocephalia",
         "Ceratopsia",
         "Ceratopsidae",
-        "Centrosaurinae",
-        "Nasutoceratopsini"
+        "Centrosaurinae"
       ],
       "authors": "Sampson, S. D.; Lund, E. K.; Loewen, M. A.; Farke, A. A.; Clayton, K. E.",
       "described": 2013
@@ -126859,14 +126819,20 @@
     },
     "Nedoceratops": {
       "genus": "Nedoceratops",
-      "parent": "Triceratopsini",
+      "parent": "Chasmosaurinae",
       "etymology": "From Russian 'nedo' (insufficient) and Greek 'keratops' (horned face); meaning 'insufficient horned face', in reference to the absence of a prominent nasal horn on the holotype skull.",
       "pronunciation": {
         "phonetic": "ned-o-SEH-ruh-tops"
       },
       "description": "Nedoceratops is a controversial genus of ceratopsid dinosaur from the Late Cretaceous period Lance Formation of North America. It is known only from a single skull discovered in Wyoming. Its status is the subject of ongoing debate among paleontologists: some authors consider Nedoceratops a valid, distinct taxon, while others consider it to be an unusual specimen of Triceratops.\n",
       "dispute": {
-        "summary": "The validity of Nedoceratops is actively contested. Scannella and Horner (2010, 2011) and Scannella et al. (2014) treated USNM 2412 as a transitional or ontogenetic morph within Triceratops, arguing that Triceratops, Torosaurus, and Nedoceratops together represent different growth stages of a single anagenetic lineage. Farke (2011) and Maiorino et al. (2013) rebutted this, treating Nedoceratops as a distinct chasmosaurine genus diagnosed by an undifferentiated nasal horncore, near-vertical postorbital horncores, and small parietal fenestrae. No broad consensus has been reached.\n"
+        "summary": "The validity of Nedoceratops is actively contested. Scannella and Horner (2010, 2011) and Scannella et al. (2014) treated USNM 2412 as a transitional or ontogenetic morph within Triceratops, arguing that Triceratops, Torosaurus, and Nedoceratops together represent different growth stages of a single anagenetic lineage. Farke (2011) and Maiorino et al. (2013) rebutted this, treating Nedoceratops as a distinct chasmosaurine genus diagnosed by an undifferentiated nasal horncore, near-vertical postorbital horncores, and small parietal fenestrae. No broad consensus has been reached.\n",
+        "history": [
+          {
+            "date": "2026-06-26",
+            "note": "Placed at Chasmosaurinae, the least-inclusive clade accepted whether Nedoceratops is a valid chasmosaurine or a growth stage of Triceratops; tribes dropped (P4). Validity unresolved."
+          }
+        ]
       },
       "diet": "herbivore",
       "locomotion": "quadrupedal",
@@ -127044,8 +127010,7 @@
         "Marginocephalia",
         "Ceratopsia",
         "Ceratopsidae",
-        "Chasmosaurinae",
-        "Triceratopsini"
+        "Chasmosaurinae"
       ],
       "authors": "Lull, R. S.",
       "described": 1905
@@ -130761,6 +130726,7 @@
         "Archosauria",
         "Dinosauria",
         "Ornithischia",
+        "Genasauria",
         "Cerapoda",
         "Marginocephalia",
         "Ceratopsia"
@@ -131932,7 +131898,7 @@
     },
     "Ojoceratops": {
       "genus": "Ojoceratops",
-      "parent": "Triceratopsini",
+      "parent": "Chasmosaurinae",
       "etymology": "Ojo Alamo horned face",
       "pronunciation": {
         "phonetic": "o-jo-SEH-ruh-tops"
@@ -132029,8 +131995,7 @@
         "Marginocephalia",
         "Ceratopsia",
         "Ceratopsidae",
-        "Chasmosaurinae",
-        "Triceratopsini"
+        "Chasmosaurinae"
       ],
       "authors": "Sullivan, R. M.; Lucas, S. G.",
       "described": 2010
@@ -136182,7 +136147,7 @@
     },
     "Pachyrhinosaurus": {
       "genus": "Pachyrhinosaurus",
-      "parent": "Pachyrhinosaurini",
+      "parent": "Centrosaurinae",
       "pronunciation": {
         "phonetic": "pak-i-RIEN-o-SAWR-us"
       },
@@ -136356,8 +136321,7 @@
         "Marginocephalia",
         "Ceratopsia",
         "Ceratopsidae",
-        "Centrosaurinae",
-        "Pachyrhinosaurini"
+        "Centrosaurinae"
       ],
       "authors": "Sternberg, C. M.",
       "described": 1950
@@ -145656,6 +145620,15 @@
       },
       "etymology": "From Greek 'polys' meaning 'many' and 'anax' meaning 'master' or 'lord', meaning 'master over many.'",
       "description": "Polyonax is a genus of ceratopsid dinosaur from the Late Cretaceous (late Maastrichtian) Denver Formation of Colorado, United States. Founded upon poor remains, it is today regarded as a dubious name.",
+      "dispute": {
+        "summary": "Polyonax is a nomen dubium founded on fragmentary remains that have been recognized as an indeterminate ceratopsid since Hatcher et al. (1907). It is not assignable to either subfamily and is retained at Ceratopsidae incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-06-26",
+            "note": "Parked at Ceratopsidae incertae sedis, fragmentary indeterminate holotype (P2)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "quadrupedal",
       "paleoenvironment": [
@@ -145759,6 +145732,7 @@
         "Archosauria",
         "Dinosauria",
         "Ornithischia",
+        "Genasauria",
         "Cerapoda",
         "Marginocephalia",
         "Ceratopsia",
@@ -148954,6 +148928,7 @@
         "Archosauria",
         "Dinosauria",
         "Ornithischia",
+        "Genasauria",
         "Cerapoda",
         "Marginocephalia",
         "Ceratopsia"
@@ -153610,7 +153585,7 @@
     },
     "Regaliceratops": {
       "genus": "Regaliceratops",
-      "parent": "Triceratopsini",
+      "parent": "Chasmosaurinae",
       "etymology": "From Latin regalis (royal) and Greek keras (horn) and ops (face); meaning \"Royal horned face\".",
       "pronunciation": {
         "phonetic": "ree-guh-li-seh-ruh-tops"
@@ -153756,8 +153731,7 @@
         "Marginocephalia",
         "Ceratopsia",
         "Ceratopsidae",
-        "Chasmosaurinae",
-        "Triceratopsini"
+        "Chasmosaurinae"
       ],
       "authors": "Brown, C. M.; Henderson, D. M.",
       "described": 2015
@@ -161723,6 +161697,7 @@
         "Archosauria",
         "Dinosauria",
         "Ornithischia",
+        "Genasauria",
         "Cerapoda",
         "Marginocephalia",
         "Ceratopsia"
@@ -169305,7 +169280,7 @@
     },
     "Spinops": {
       "genus": "Spinops",
-      "parent": "Centrosaurini",
+      "parent": "Centrosaurinae",
       "etymology": "From Latin 'spina' (spine, thorn) + Greek 'ops' (face, appearance), meaning 'spine face' or 'thorn face', referring to the prominent spines and horns on the frill of this ceratopsian.",
       "pronunciation": {
         "phonetic": "SPIEN-ops"
@@ -169438,8 +169413,7 @@
         "Marginocephalia",
         "Ceratopsia",
         "Ceratopsidae",
-        "Centrosaurinae",
-        "Centrosaurini"
+        "Centrosaurinae"
       ],
       "authors": "Farke, A. A.; Ryan, M. J.; Barrett, P. M.; Tanke, D. H.; Braman, D. R.; Loewen, M. A.; Graham, M. R.",
       "described": 2011
@@ -172015,7 +171989,7 @@
     },
     "Styracosaurus": {
       "genus": "Styracosaurus",
-      "parent": "Centrosaurini",
+      "parent": "Centrosaurinae",
       "etymology": "From Ancient Greek styrax, \"spike at the butt-end of a spear-shaft\", combined with Greek sauros, \"lizard\" - means \"spiked lizard\"",
       "pronunciation": {
         "phonetic": "sti-RAK-uh-SOR-uhs",
@@ -172242,8 +172216,7 @@
         "Marginocephalia",
         "Ceratopsia",
         "Ceratopsidae",
-        "Centrosaurinae",
-        "Centrosaurini"
+        "Centrosaurinae"
       ],
       "authors": "Lambe, L. M.",
       "described": 1913
@@ -181320,12 +181293,21 @@
     },
     "Titanoceratops": {
       "genus": "Titanoceratops",
-      "parent": "Triceratopsini",
+      "parent": "Chasmosaurinae",
       "etymology": "From Greek 'titanos' meaning 'titan' (giant) and 'ceratops' meaning 'horned face', in reference to its exceptionally large size among horned dinosaurs.",
       "pronunciation": {
         "phonetic": "tie-TAN-o-SEH-ruh-tops"
       },
       "description": "Titanoceratops is a controversial genus of chasmosaurine ceratopsian dinosaur that lived in the Late Cretaceous period (Campanian stage, about 75 million years ago) in what is now New Mexico. Titanoceratops was named for its large size, being one of the largest known horned dinosaurs and the type species was named T. ouranos, after Uranus (Ouranos), the father of the Greek titans. It was named in 2011 by Nicholas R. Longrich for a specimen previously referred to Pentaceratops. Longrich believed that unique features found in the skull reveal it to have been a close relative of Triceratops, classified within the subgroup Triceratopsini. However, other researchers have expressed skepticism, and believe Titanoceratops to simply be an unusually large, old specimen of Pentaceratops.",
+      "dispute": {
+        "summary": "Titanoceratops is contested between a valid genus and an exceptionally large individual of Pentaceratops. Longrich (2011) erected it for OMNH 10165 and recovered it as the earliest triceratopsin, and Dalman et al. (2022) likewise recovered it within Triceratopsini. Lehman (1998) had interpreted the same specimen as an aberrant large Pentaceratops sternbergii, and Fowler and Freedman Fowler (2020) treat it as aff. Pentaceratops and exclude it from their matrix. Its resolution below subfamily level is therefore unsettled.\n",
+        "history": [
+          {
+            "date": "2026-06-26",
+            "note": "Placed at Chasmosaurinae, accepted whether Titanoceratops is a valid basal triceratopsin or a large Pentaceratops; tribes dropped (P4)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "quadrupedal",
       "paleoenvironment": [
@@ -181455,8 +181437,7 @@
         "Marginocephalia",
         "Ceratopsia",
         "Ceratopsidae",
-        "Chasmosaurinae",
-        "Triceratopsini"
+        "Chasmosaurinae"
       ],
       "authors": "Longrich, N. R.",
       "described": 2011
@@ -182609,12 +182590,21 @@
     },
     "Torosaurus": {
       "genus": "Torosaurus",
-      "parent": "Triceratopsini",
+      "parent": "Chasmosaurinae",
       "pronunciation": {
         "phonetic": "TOR-o-SAWR-us"
       },
       "etymology": "From Greek toros, \"perforated\" or \"full of holes\", combined with Greek sauros, \"lizard\" - means \"perforated lizard\", in reference to the large openings in its frill",
       "description": "Torosaurus is a genus of herbivorous chasmosaurine ceratopsian dinosaur that lived during the late Maastrichtian age of the Late Cretaceous period, between 68 and 66 million years ago, though it is possible that the species range might extend to as far back as 69 million years ago. Fossils have been discovered across the Western Interior of North America, from as far north as Saskatchewan to as far south as Texas.",
+      "dispute": {
+        "summary": "Whether Torosaurus is a valid genus or the fully mature growth stage of Triceratops is contested. Scannella and Horner (2010) argued from frill ontogeny and bone histology that all known Torosaurus skulls are senescent Triceratops, formally synonymizing the two. Longrich (2011), Maiorino et al. (2013, proportional mismatches), and Mallon et al. (2022, putative subadult Torosaurus specimens) rejected the synonymy on the absence of transitional forms, and most recent phylogenetic analyses (Dalman et al., 2022) continue to recover the two as distinct. No broad consensus has been reached.\n",
+        "history": [
+          {
+            "date": "2026-06-26",
+            "note": "Placed at Chasmosaurinae, the least-inclusive clade accepted whether Torosaurus is a distinct triceratopsin or mature Triceratops; tribes dropped (P4). Validity unresolved."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "quadrupedal",
       "paleoenvironment": [
@@ -182777,8 +182767,7 @@
         "Marginocephalia",
         "Ceratopsia",
         "Ceratopsidae",
-        "Chasmosaurinae",
-        "Triceratopsini"
+        "Chasmosaurinae"
       ],
       "authors": "Marsh, O. C.",
       "described": 1891
@@ -183701,7 +183690,7 @@
     },
     "Triceratops": {
       "genus": "Triceratops",
-      "parent": "Triceratopsini",
+      "parent": "Chasmosaurinae",
       "etymology": "From Greek tri (three), keras (horn) and ops (face); meaning \"three-horned face\", referring to the paired supraorbital horn-cores and the median nasal horn-core that ornament the skull.",
       "pronunciation": {
         "phonetic": "try-SERR-uh-tops",
@@ -183990,8 +183979,7 @@
         "Marginocephalia",
         "Ceratopsia",
         "Ceratopsidae",
-        "Chasmosaurinae",
-        "Triceratopsini"
+        "Chasmosaurinae"
       ],
       "authors": "Marsh, O. C.",
       "described": 1889
@@ -197653,7 +197641,7 @@
     },
     "Yehuecauhceratops": {
       "genus": "Yehuecauhceratops",
-      "parent": "Nasutoceratopsini",
+      "parent": "Centrosaurinae",
       "etymology": "From Nahuatl yehuecauh meaning 'ancient' combined with Greek keras meaning 'horn' and ops meaning 'face'; translates as 'ancient horned face'",
       "pronunciation": {
         "phonetic": "yeh-WAY-cow-SEH-ruh-tops"
@@ -197773,8 +197761,7 @@
         "Marginocephalia",
         "Ceratopsia",
         "Ceratopsidae",
-        "Centrosaurinae",
-        "Nasutoceratopsini"
+        "Centrosaurinae"
       ],
       "authors": "Rivera-Sylva, H. E.; Frey, E.; Stinnesbeck, W.; Guzmán-Gutiérrez, J. R.; González-González, A. H.",
       "described": 2017
