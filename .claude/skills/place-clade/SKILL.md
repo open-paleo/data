@@ -127,9 +127,16 @@ makes no decisions:
      "papers_to_chase": [{"key_guess": "author2024", "doi": "...", "why": "..."}]}
   ],
   "subclade_structure_seen": "free-text summary of the cladogram(s)",
+  "clade_acceptance": [{"clade": "...", "accepted": "broadly | emerging | deprecated | disputed",
+    "why": "is this node USED in recent literature + reference works, not just recovered in one matrix?"}],
   "naming_authorities": [{"clade": "...", "erected_by": "Author year", "type_genus": "..."}]
 }
 ```
+
+Have the triage agent judge **clade acceptance** (is a candidate node broadly
+*used* in current literature?), not only membership — a clade can be real and
+widely adopted even if one older matrix predates its naming and so doesn't
+recover it.
 
 The triage output is a **signal** that tells you where to point primary
 review and which papers to fetch. The *decision* always uses primary
@@ -211,6 +218,15 @@ Synthesize the review JSON into a placement decision, in the main thread:
 - **Which named clades survive (P4).** Keep family by default; keep a subfamily
   only if it is stable AND has ≥2 genera; drop tribes and any node that would
   be monotypic — park those genera one level up. Record what you dropped.
+  **Judge a clade by its *current acceptance*, not by whether every matrix you
+  read recovers it.** A framework paper that PREDATES a clade's naming cannot
+  recover that name — its silence is not a vote against the clade (P3: recency
+  beats seniority when methods supersede). Weight the triage clade-acceptance
+  signal + the Jones smell-test for whether a node is broadly used now; don't
+  let two older analyses outvote a clade the recent literature has adopted.
+  (Stegosauria lesson: Dacentrurinae/Stegosaurinae looked "unstable" only
+  because `raven2017`/`maidment2008` predate their formalization; the current
+  consensus + Jones use both — so they were kept.)
 - **Each genus's keystone parent (P2).** The least-inclusive clade the sources
   agree on. Contested finer resolution → `dispute:` on the genus.
 - **Clade-level disputes (P6).** A sub-clade whose own higher placement is
