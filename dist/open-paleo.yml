@@ -1,7 +1,7 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-06-26T20:42:03.007Z
-  clade_count: 239
+  built_at: 2026-06-26T21:52:43.238Z
+  clade_count: 237
   genus_count: 1398
   license: CC-BY-4.0
   schema_version: 1.0.0
@@ -227,8 +227,6 @@ tree:
                             Styracosterna:
                               Hadrosauriformes:
                                 Hadrosauridae: {}
-                        Marginocephalia:
-                          Pachycephalosauria: {}
                       Genasauria:
                         Cerapoda:
                           Ornithopoda:
@@ -278,8 +276,6 @@ tree:
                             Pachycephalosauria:
                               Pachycephalosauridae:
                                 Pachycephalosaurinae: {}
-                                Pachycephalosaurini: {}
-                              Eupachycephalosauria: {}
                         Thyreophora:
                           Ankylosauria:
                             Ankylosauridae:
@@ -2421,23 +2417,6 @@ clades:
       - Ankylosauridae
       - Ankylosaurinae
       - Euoplocephalini
-  Eupachycephalosauria:
-    taxonomy:
-      - Life
-      - Animalia
-      - Chordata
-      - Vertebrata
-      - Sarcopterygii
-      - Tetrapoda
-      - Reptilia
-      - Archosauria
-      - Dinosauria
-      - Ornithischia
-      - Genasauria
-      - Cerapoda
-      - Marginocephalia
-      - Pachycephalosauria
-      - Eupachycephalosauria
   Eusauropoda:
     taxonomy:
       - Life
@@ -3408,6 +3387,7 @@ clades:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Cerapoda
       - Marginocephalia
     described: 1986
@@ -4117,7 +4097,7 @@ clades:
       - Oviraptorosauria
   Pachycephalosauria:
     description: |
-      Pachycephalosauria, meaning "thick-headed lizards," is a clade of marginocephalian ornithischian dinosaurs characterized by a dramatically thickened skull roof (frontoparietal dome). These bipedal herbivores or omnivores were most diverse during the Late Cretaceous of North America and Asia. The thickened dome has been hypothesized to have served in intraspecific head-butting or flank-butting contests, though this remains debated. Notable genera include Pachycephalosaurus, Stegoceras, and Dracorex.
+      Pachycephalosauria, meaning "thick-headed lizards," is a clade of marginocephalian ornithischian dinosaurs characterized by a dramatically thickened skull roof (frontoparietal dome). These bipedal herbivores or omnivores were most diverse during the Late Cretaceous of North America and Asia. The thickened dome has been hypothesized to have served in intraspecific head-butting or flank-butting contests, though this remains debated. Notable genera include Pachycephalosaurus and Stegoceras.
     taxonomy:
       - Life
       - Animalia
@@ -4129,11 +4109,13 @@ clades:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Cerapoda
       - Marginocephalia
       - Pachycephalosauria
+    type_genus: Pachycephalosaurus
     described: 1974
-    authors: Maryanska & Osmolska
+    authors: Maryanska, T.; Osmolska, H.
     diagnostic_features:
       - Dramatically thickened frontoparietal dome on the skull roof
       - Peripheral ornamentation of nodes and horns around the dome margin
@@ -4143,13 +4125,24 @@ clades:
       - Broad body with flared iliac blades
     references:
       - id: maryankaosmolska1974
-        authors: Maryanska, T. & Osmolska, H.
+        authors: Maryanska, T.; Osmolska, H.
         year: 1974
         title: Pachycephalosauria, a new suborder of ornithischian dinosaurs
         journal: Palaeontologia Polonica
         volume: "30"
         pages: 45-102
+        notes: Erected the clade Pachycephalosauria.
+      - id: schott2016
+        authors: Schott, R. K.; Evans, D. C.
+        year: 2016
+        title: "Cranial variation and systematics of Foraminacephale brevis gen. nov. and the diversity of pachycephalosaurid dinosaurs (Ornithischia: Cerapoda) in the Belly River Group of Alberta, Canada"
+        journal: Zoological Journal of the Linnean Society
+        doi: 10.1111/zoj.12465
+        url: http://dx.doi.org/10.1111/zoj.12465
+        notes: Comprehensive systematic analysis of pachycephalosaurid diversity.
   Pachycephalosauridae:
+    description: |
+      Pachycephalosauridae is the principal family of Pachycephalosauria, encompassing the dome-headed dinosaurs of the Late Cretaceous of North America and Asia together with a few Stegoceras-grade forms bearing incipient or flat skull roofs. The family spans the basal Stegoceras-grade taxa and the derived, fully domed subfamily Pachycephalosaurinae. It was named by Sternberg in 1945 with Pachycephalosaurus as its type genus.
     taxonomy:
       - Life
       - Animalia
@@ -4166,7 +4159,34 @@ clades:
       - Marginocephalia
       - Pachycephalosauria
       - Pachycephalosauridae
+    type_genus: Pachycephalosaurus
+    described: 1945
+    authors: Sternberg, C. M.
+    diagnostic_features:
+      - Thickened frontoparietal ranging from flat to fully domed
+      - Squamosal developed into a deep plate on the occiput with enlarged upper-outer corners
+      - Variably developed nodes, in rows or clusters, on the squamosal
+      - Broad squamosal exposure on the occiput
+      - Supratemporal fenestrae ranging from open to closed
+    references:
+      - id: sternberg1945
+        authors: Sternberg, C. M.
+        year: 1945
+        title: Pachycephalosauridae proposed for dome-headed dinosaurs, Stegoceras lambei, n. sp., described
+        journal: Journal of Paleontology
+        volume: "19"
+        notes: Named the family Pachycephalosauridae.
+      - id: schott2016
+        authors: Schott, R. K.; Evans, D. C.
+        year: 2016
+        title: "Cranial variation and systematics of Foraminacephale brevis gen. nov. and the diversity of pachycephalosaurid dinosaurs (Ornithischia: Cerapoda) in the Belly River Group of Alberta, Canada"
+        journal: Zoological Journal of the Linnean Society
+        doi: 10.1111/zoj.12465
+        url: http://dx.doi.org/10.1111/zoj.12465
+        notes: Comprehensive systematic analysis of pachycephalosaurid diversity.
   Pachycephalosaurinae:
+    description: |
+      Pachycephalosaurinae is the derived subfamily of pachycephalosaurids, used in its modern sense for all pachycephalosaurids more closely related to Pachycephalosaurus than to Stegoceras. It comprises the fully domed forms together with several flat-headed taxa recovered on the Pachycephalosaurus side of the family. The subfamily dates by coordination from Sternberg's 1945 naming of Pachycephalosauridae, and was given its modern, stem-based usage by Williamson and Carr (2003) following Sereno.
     taxonomy:
       - Life
       - Animalia
@@ -4184,24 +4204,32 @@ clades:
       - Pachycephalosauria
       - Pachycephalosauridae
       - Pachycephalosaurinae
-  Pachycephalosaurini:
-    taxonomy:
-      - Life
-      - Animalia
-      - Chordata
-      - Vertebrata
-      - Sarcopterygii
-      - Tetrapoda
-      - Reptilia
-      - Archosauria
-      - Dinosauria
-      - Ornithischia
-      - Genasauria
-      - Cerapoda
-      - Marginocephalia
-      - Pachycephalosauria
-      - Pachycephalosauridae
-      - Pachycephalosaurini
+    type_genus: Pachycephalosaurus
+    described: 1945
+    authors: Sternberg, C. M.
+    diagnostic_features:
+      - Fully domed frontoparietal (sensu Sereno, 1998)
+      - Supratemporal fenestrae closed in adults
+      - Parietosquamosal contact positioned caudodorsal to the occiput
+      - Epaxial muscle scars restricted to a position dorsolateral to the foramen magnum
+    references:
+      - id: sternberg1945
+        authors: Sternberg, C. M.
+        year: 1945
+        title: Pachycephalosauridae proposed for dome-headed dinosaurs, Stegoceras lambei, n. sp., described
+        journal: Journal of Paleontology
+        volume: "19"
+        notes: Named Pachycephalosauridae; Pachycephalosaurinae dates from this work by ICZN coordination.
+      - id: williamson2003
+        authors: Williamson, T. E.; Carr, T. D.
+        year: 2003
+        title: A new genus of derived pachycephalosaurian from western North America
+        journal: Journal of Vertebrate Paleontology
+        volume: "22"
+        issue: "4"
+        pages: 779-801
+        doi: 10.1671/0272-4634(2002)022[0779:angodp]2.0.co;2
+        notes: Provided the modern stem-based usage of Pachycephalosaurinae.
   Parankylosauria:
     taxonomy:
       - Life
@@ -10255,7 +10283,7 @@ genera:
     described: 1922
   Alaskacephale:
     genus: Alaskacephale
-    parent: Pachycephalosaurini
+    parent: Pachycephalosaurinae
     etymology: Named for Alaska, where it was discovered, combined with Greek 'kephale' meaning 'head', referring to its pachycephalosaurid dome-headed nature.
     pronunciation:
       phonetic: a-LASS-kuh-SEF-uh-lee
@@ -10341,7 +10369,7 @@ genera:
       - Marginocephalia
       - Pachycephalosauria
       - Pachycephalosauridae
-      - Pachycephalosaurini
+      - Pachycephalosaurinae
     authors: Sullivan, R. M.
     described: 2006
   Albalophosaurus:
@@ -13938,6 +13966,12 @@ genera:
     pronunciation:
       phonetic: AM-tuh-SEF-uh-lee
     description: Amtocephale is a genus of pachycephalosaurid dinosaur from early Late Cretaceous (Cenomanian-Coniacian stages) deposits of southern Gobi Desert, Mongolia.
+    dispute:
+      summary: |
+        Amtocephale is known from a single fragmentary subadult dome; it is securely a pachycephalosaurid, but key characters are unknown and its subfamily placement is unresolved (Schott and Evans, 2016). Jones and Viola (2026) place it within Pachycephalosaurinae. It is retained at Pachycephalosauridae without a subfamily.
+      history:
+        - date: 2026-06-26
+          note: Placed at Pachycephalosauridae, fragmentary holotype leaving subfamily placement unresolved (P2).
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -61520,7 +61554,7 @@ genera:
     described: 1914
   Goyocephale:
     genus: Goyocephale
-    parent: Pachycephalosauria
+    parent: Pachycephalosaurinae
     pronunciation:
       phonetic: GOH-yo-SEF-a-lee
     etymology: From Mongolian goyo (decorated, ornate) and Ancient Greek kephale (head); meaning 'decorated head'
@@ -61620,9 +61654,12 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Cerapoda
       - Marginocephalia
       - Pachycephalosauria
+      - Pachycephalosauridae
+      - Pachycephalosaurinae
     authors: Perle, A.; Maryanska, T.; H. Osmólska
     described: 1982
   Graciliceratops:
@@ -61844,11 +61881,17 @@ genera:
     described: 2004
   Gravitholus:
     genus: Gravitholus
-    parent: Eupachycephalosauria
+    parent: Pachycephalosauridae
     pronunciation:
       phonetic: GRAV-i-THOL-us
     etymology: From Latin gravis (heavy) and tholus (dome); meaning 'heavy dome', referring to its thick skull roof
     description: Gravitholus was a genus of pachycephalosaurid dinosaur from the late Cretaceous period (Campanian stage, around 75 million years ago). It was a pachycephalosaur, and like other pachycephalosaurids the skull roof formed a thick dome made of dense bone, which may have been used in head-butting contests over mates or territory. It lived in what is now Alberta, Canada, and was described in 1979 by W. P. Wall and Peter Galton. The type species is Gravitholus albertae.
+    dispute:
+      summary: |
+        The validity of Gravitholus is contested. Dyer et al. (2023) used synchrotron microtomography and morphometrics to argue that Gravitholus albertae is a subjective junior synonym of Stegoceras validum, a conclusion followed by Jones and Viola (2026); its describing-era treatment (Longrich et al., 2010) considered it valid. Pending broad consensus it is retained as a valid basal pachycephalosaurid.
+      history:
+        - date: 2026-06-26
+          note: Placed at Pachycephalosauridae (Stegoceras-grade), kept valid pending consensus although recent work synonymizes it with Stegoceras validum (P5).
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -61927,7 +61970,7 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Pachycephalosauria
-      - Eupachycephalosauria
+      - Pachycephalosauridae
     authors: Wall, W. P.; Galton, P. M.
     described: 1979
   Gremlin:
@@ -63433,6 +63476,12 @@ genera:
     pronunciation:
       phonetic: han-SU-see-uh
     description: Hanssuesia is a genus of pachycephalosaurid dinosaurs from the late Cretaceous period. It lived in what is now Alberta and Montana, and contains the single species Hanssuesia sternbergi.
+    dispute:
+      summary: |
+        The validity of Hanssuesia is contested. Dyer et al. (2023) found that Hanssuesia sternbergi falls within the variation of Stegoceras validum and proposed synonymy, while Woodruff et al. (2025) provisionally retained it pending a fuller ontogenetic assessment. It is kept as a valid basal pachycephalosaurid for now.
+      history:
+        - date: 2026-06-26
+          note: Placed at Pachycephalosauridae (Stegoceras-grade), kept valid pending consensus; synonymy with Stegoceras proposed but not yet settled (P5).
     diet: herbivore
     locomotion: bipedal
     diagnostic_features:
@@ -65892,11 +65941,17 @@ genera:
     described: 1998
   Homalocephale:
     genus: Homalocephale
-    parent: Eupachycephalosauria
+    parent: Pachycephalosaurinae
     pronunciation:
       phonetic: HOM-a-lo-SEF-a-lee
     etymology: From Greek homalos (even, flat) and kephale (head); meaning 'even head' or 'flat-headed', referring to its flat skull roof unlike other pachycephalosaurs
     description: Homalocephale is a genus of pachycephalosaurid dinosaur that lived during the Late Cretaceous period of what is now the Nemegt Formation, Mongolia. The genus was described in 1974 by Halszka Osmólska and Teresa Maryańska, and consists of a single species, H. calathocercos. Though Homalocephale has been regarded as a synonym (and juvenile form) of Prenocephale, juvenile specimens of the latter indicate that they were distinct. Homalocephale was 1.8 m (5.9 ft) long and possibly an omnivore.
+    dispute:
+      summary: |
+        Homalocephale has been proposed to be a juvenile or female of Prenocephale (Longrich et al., 2010), but Evans et al. (2018) showed that juvenile Prenocephale retain a parietosquamosal ornamentation pattern distinct from Homalocephale, supporting its validity. Its exact position within Pachycephalosaurinae is unstable.
+      history:
+        - date: 2026-06-26
+          note: Placed at Pachycephalosaurinae, recovered closer to Pachycephalosaurus than to Stegoceras; ontogenetic synonymy with Prenocephale raised and rejected (P2/P3).
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -65989,7 +66044,8 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Pachycephalosauria
-      - Eupachycephalosauria
+      - Pachycephalosauridae
+      - Pachycephalosaurinae
     authors: Maryańska, T.; Osmólska, H.
     described: 1974
   Hoplitosaurus:
@@ -104909,7 +104965,7 @@ genera:
     described: 1998
   Pachycephalosaurus:
     genus: Pachycephalosaurus
-    parent: Eupachycephalosauria
+    parent: Pachycephalosaurinae
     pronunciation:
       phonetic: pak-i-SEF-a-lo-SAWR-us
       ipa: /ˌpækɪˌsɛfələˈsɔːrəs/
@@ -105047,7 +105103,8 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Pachycephalosauria
-      - Eupachycephalosauria
+      - Pachycephalosauridae
+      - Pachycephalosaurinae
     authors: Brown, B.; Schlaikjer, E. M.
     described: 1943
   Pachyrhinosaurus:
@@ -112656,7 +112713,7 @@ genera:
     described: 2007
   Prenocephale:
     genus: Prenocephale
-    parent: Eupachycephalosauria
+    parent: Pachycephalosaurinae
     etymology: From Greek 'prenes' (sloping, inclined) and 'kephalē' (head), referring to the anteriorly inclined profile of the highly domed cranium.
     pronunciation:
       phonetic: PREE-no-SEF-a-lee
@@ -112761,7 +112818,8 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Pachycephalosauria
-      - Eupachycephalosauria
+      - Pachycephalosauridae
+      - Pachycephalosaurinae
     authors: Maryańska, T.; Osmólska, H.
     described: 1974
   Prenoceratops:
@@ -127707,11 +127765,17 @@ genera:
     described: 2007
   Sinocephale:
     genus: Sinocephale
-    parent: Pachycephalosauridae
+    parent: Pachycephalosaurinae
     etymology: From Latin 'Sinae' (China) + Greek 'kephale' (head), meaning 'Chinese head', referring to its country of origin and the distinctive domed head typical of pachycephalosaurids.
     pronunciation:
       phonetic: SI-no-SEPH-uh-lee
     description: Sinocephale is a genus of pachycephalosaurid dinosaur that lived in what is now Inner Mongolia, China, during the Cretaceous period. The genus contains a single species, Sinocephale bexelli, which was originally named as a species of the genus Troodon in 1953, and later transferred to the genus Stegoceras in 1964. After decades of being considered dubious, it was re-evaluated in 2021 and recognized as a valid taxon, being given its own genus, Sinocephale. The original holotype was lost, with modern research conducted using rediscovered plaster casts.
+    dispute:
+      summary: |
+        Sinocephale is known only from plastotypes of a lost holotype and is diagnosed by a single autapomorphy. Evans et al. (2021) recovered it as a Prenocephale-grade member of Pachycephalosaurinae but cautioned that support for its precise position is weak.
+      history:
+        - date: 2026-06-26
+          note: Placed at Pachycephalosaurinae following Evans et al. (2021), with weak support and plastotype-only material (P2).
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -127789,6 +127853,7 @@ genera:
       - Marginocephalia
       - Pachycephalosauria
       - Pachycephalosauridae
+      - Pachycephalosaurinae
     authors: Evans, D. C.; Brown, C. M.; You, H.; Campione, N. E.
     described: 2021
   Sinoceratops:
@@ -130925,7 +130990,7 @@ genera:
     described: 1970
   Stegoceras:
     genus: Stegoceras
-    parent: Eupachycephalosauria
+    parent: Pachycephalosauridae
     pronunciation:
       phonetic: ste-GOS-er-as
     etymology: From Greek 'stege' (στέγη) meaning 'roof' and 'keras' (κέρας) meaning 'horn'; meaning 'horn roof', referring to the domed skull.
@@ -131087,7 +131152,7 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Pachycephalosauria
-      - Eupachycephalosauria
+      - Pachycephalosauridae
     authors: Lambe, L. M.
     described: 1902
   Stegopelta:
@@ -137116,6 +137181,12 @@ genera:
     pronunciation:
       phonetic: tek-sa-SEH-fuh-lee
     description: Texacephale is a possibly dubious genus of pachycephalosaurid dinosaur from the Campanian stage of the Late Cretaceous. Its fossils come from the Aguja Formation of Big Bend National Park, in Texas, and were described in 2010 by Longrich, Sankey and Tanke. The generic name means Texas + "head" (kephale in Greek) in reference to its place of discovery, and the specific name langstoni honors Wann Langston. It may be a synonym of Stegoceras.
+    dispute:
+      summary: |
+        The validity of Texacephale is contested. It was described as a valid pachycephalosaurid with three autapomorphies (Longrich et al., 2010), but Jasinski and Sullivan (2011) and Woodruff et al. (2025) regard its diagnostic traits as artifacts of taphonomic distortion and treat it as dubious. It is retained at Pachycephalosauridae pending revision.
+      history:
+        - date: 2026-06-26
+          note: Placed at Pachycephalosauridae (basal, no subfamily), valid per Longrich et al. (2010) but regarded as dubious by later authors (P2).
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -143009,7 +143080,7 @@ genera:
     described: 2006
   Tylocephale:
     genus: Tylocephale
-    parent: Pachycephalosauridae
+    parent: Pachycephalosaurinae
     pronunciation:
       phonetic: TIE-lo-SEF-a-lee
     etymology: From Greek tylos meaning 'swelling' or 'knob' and kephale meaning 'head'; translates as 'swollen head,' referring to its domed skull
@@ -143105,6 +143176,7 @@ genera:
       - Marginocephalia
       - Pachycephalosauria
       - Pachycephalosauridae
+      - Pachycephalosaurinae
     authors: Maryańska, T.; Osmólska, H.
     described: 1974
   Tyrannomimus:
@@ -147934,6 +148006,12 @@ genera:
       phonetic: WAHN-NAHN-o-SAWR-us
     etymology: Named for Wannan (southern Anhui), the region of China where the fossils were discovered, combined with Greek 'sauros' meaning 'lizard'.
     description: Wannanosaurus is a genus of basal pachycephalosaurian dinosaur from the Maastrichtian-aged (Upper Cretaceous) Xiaoyan Formation, about 70 million years ago, in what is now Anhui, China. The type species Wannanosaurus yansiensis was described by Hou Lian-Hai in 1977.
+    dispute:
+      summary: |
+        Wannanosaurus is consistently recovered as the basal-most pachycephalosaur, outside the crown family Pachycephalosauridae (Schott and Evans, 2016; Chinzorig et al., 2025), though its position may be influenced by the immaturity of the only known specimens. It is retained at Pachycephalosauria incertae sedis.
+      history:
+        - date: 2026-06-26
+          note: Placed at Pachycephalosauria incertae sedis, the basal-most pachycephalosaur outside Pachycephalosauridae (P2).
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -148009,6 +148087,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Cerapoda
       - Marginocephalia
       - Pachycephalosauria
@@ -154926,6 +155005,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Cerapoda
       - Marginocephalia
       - Pachycephalosauria
