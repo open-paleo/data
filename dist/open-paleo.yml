@@ -1,7 +1,7 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-06-27T22:38:02.961Z
-  clade_count: 226
+  built_at: 2026-06-27T23:51:16.672Z
+  clade_count: 227
   genus_count: 1398
   license: CC-BY-4.0
   schema_version: 1.0.0
@@ -244,15 +244,16 @@ tree:
                                 Parksosauridae: {}
                           Marginocephalia:
                             Ceratopsia:
+                              Chaoyangsauridae: {}
                               Neoceratopsia:
-                                Coronosauria:
-                                  Ceratopsoidea: {}
-                                  Protoceratopsidae: {}
-                                Leptoceratopsidae: {}
-                                Chaoyangsauridae: {}
-                              Ceratopsidae:
-                                Centrosaurinae: {}
-                                Chasmosaurinae: {}
+                                Euceratopsia:
+                                  Leptoceratopsidae: {}
+                                  Coronosauria:
+                                    Protoceratopsidae: {}
+                                    Ceratopsoidea:
+                                      Ceratopsidae:
+                                        Centrosaurinae: {}
+                                        Chasmosaurinae: {}
                             Pachycephalosauria:
                               Pachycephalosauridae:
                                 Pachycephalosaurinae: {}
@@ -1266,6 +1267,10 @@ clades:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Centrosaurinae
     type_genus: Centrosaurus
@@ -1320,7 +1325,7 @@ clades:
         pages: 234-256
   Ceratopsia:
     description: |
-      Ceratopsia, meaning "horned faces," is a clade of marginocephalian ornithischian dinosaurs characterized by a unique rostral bone at the tip of the upper jaw and a parietosquamosal frill extending from the back of the skull. The clade includes small, bipedal basal forms such as Psittacosaurus and large, quadrupedal ceratopsids like Triceratops and Styracosaurus. Ceratopsians were exclusively herbivorous and were most diverse in the Late Cretaceous of North America and Asia. Horns above the eyes and nose evolved in more derived members.
+      Ceratopsia is the clade of beaked, mostly herbivorous ornithischian dinosaurs known as the horned dinosaurs, ranging from the Late Jurassic to the end of the Cretaceous. They are united by the rostral bone, a unique median ossification capping the upper beak. The clade spans small bipedal forms such as Psittacosaurus and the Jurassic Chaoyangsauridae through the diverse Neoceratopsia, which culminates in the large, frilled and horned Ceratopsidae.
     taxonomy:
       - Life
       - Animalia
@@ -1336,23 +1341,35 @@ clades:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+    type_genus: Ceratops
     described: 1890
-    authors: Marsh
+    authors: Marsh, O. C.
     diagnostic_features:
-      - Rostral bone forming a sharp, beak-like tip of the upper jaw
-      - Parietosquamosal frill extending posterodorsally from the skull
-      - Jugal flanges (flared cheek horns) on the skull
-      - Shearing dentition with double-rooted cheek teeth
-      - Nasal and supraorbital horns in derived ceratopsids
-      - Predentary bone with a sharp cutting edge
+      - Rostral bone, a unique median ossification forming the tip of the upper beak
+      - Tall, narrow skull that is triangular in anterior view
+      - Laterally flared jugals giving the skull a broad cheek region
+      - Vaulted palate
     references:
       - id: marsh1890a
-        authors: Marsh, O.C.
+        authors: Marsh, O. C.
         year: 1890
         title: Additional characters of the Ceratopsidae, with notice of new Cretaceous dinosaurs
         journal: American Journal of Science
-        volume: "39"
+        volume: s3-39
         pages: 418-426
+        doi: 10.2475/ajs.s3-39.233.418
+        url: http://dx.doi.org/10.2475/ajs.s3-39.233.418
+        notes: Named the suborder Ceratopsia.
+      - id: madzia2021
+        authors: Madzia, D.; Arbour, V. M.; Boyd, C. A.; Farke, A. A.; Cruzado-Caballero, P.; Evans, D. C.
+        year: 2021
+        title: The phylogenetic nomenclature of ornithischian dinosaurs
+        journal: PeerJ
+        volume: "9"
+        pages: e12362
+        doi: 10.7717/peerj.12362
+        url: http://dx.doi.org/10.7717/peerj.12362
+        notes: Provides the modern phylogenetic definition of Ceratopsia.
   Ceratopsidae:
     description: |
       Ceratopsidae is a family of large-bodied ceratopsian ornithischian dinosaurs known from the Late Cretaceous of western North America (and possibly Asia). Ceratopsids are among the most recognizable dinosaurs, characterized by elaborate cranial ornamentation including large nasal and supraorbital horns, expansive parietosquamosal frills often decorated with epiossifications (epoccipitals and epiparietals), and a robust, barrel-shaped body. The family is divided into the short-frilled Centrosaurinae and the long-frilled Chasmosaurinae.
@@ -1371,6 +1388,10 @@ clades:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
     type_genus: Ceratops
     described: 1888
@@ -1406,6 +1427,8 @@ clades:
         url: http://dx.doi.org/10.2475/ajs.s3-39.233.418
         notes: Provided additional characters diagnosing the Ceratopsidae.
   Ceratopsoidea:
+    description: |
+      Ceratopsoidea is the clade of coronosaurian neoceratopsians containing Ceratops and Triceratops but not Protoceratops — the lineage of large-bodied horned dinosaurs and their nearest relatives. Besides Ceratopsidae, it includes the basal forms Zuniceratops and Turanoceratops, which approach the ceratopsid condition (brow horns, double-rooted teeth) without belonging to Ceratopsidae.
     taxonomy:
       - Life
       - Animalia
@@ -1422,8 +1445,36 @@ clades:
       - Marginocephalia
       - Ceratopsia
       - Neoceratopsia
+      - Euceratopsia
       - Coronosauria
       - Ceratopsoidea
+    type_genus: Ceratops
+    described: 1902
+    authors: Hay, O. P.
+    diagnostic_features:
+      - Postorbital (brow) horncores
+      - Trend toward double-rooted cheek teeth
+      - Frontal excluded from the dorsal orbital margin
+      - Large body size relative to other neoceratopsians
+    references:
+      - id: hay1902
+        authors: Hay, O. P.
+        year: 1902
+        title: Bibliography and catalogue of the fossil Vertebrata of North America
+        journal: Bulletin of the United States Geological Survey
+        volume: "179"
+        pages: 1-868
+        notes: Named Ceratopsoidea.
+      - id: madzia2021
+        authors: Madzia, D.; Arbour, V. M.; Boyd, C. A.; Farke, A. A.; Cruzado-Caballero, P.; Evans, D. C.
+        year: 2021
+        title: The phylogenetic nomenclature of ornithischian dinosaurs
+        journal: PeerJ
+        volume: "9"
+        pages: e12362
+        doi: 10.7717/peerj.12362
+        url: http://dx.doi.org/10.7717/peerj.12362
+        notes: Provides the modern phylogenetic definition of Ceratopsoidea.
   Ceratosauria:
     description: |
       Ceratosauria is a clade of early-diverging theropod dinosaurs that radiated primarily during the Jurassic and Cretaceous periods. Many ceratosaurs possessed prominent cranial ornamentation, including horns and crests. The group was particularly diverse in Gondwanan landmasses and includes the abelisaurids, noasaurids, and the Jurassic ceratosaurids. Ceratosaurs generally retained four digits on the hand, unlike the three-fingered condition of more derived theropods.
@@ -1530,6 +1581,8 @@ clades:
       - Eusauropoda
       - Cetiosauridae
   Chaoyangsauridae:
+    description: |
+      Chaoyangsauridae is a clade of small, early-diverging ceratopsians from the Late Jurassic and Early Cretaceous of Asia (and, if Stenopelix belongs here, Europe), comprising Chaoyangsaurus, Xuanhuaceratops, Yinlong, and Hualianceratops. They are among the most basal known ceratopsians, lying outside Neoceratopsia, and retain many primitive marginocephalian features alongside the diagnostic ceratopsian rostral bone.
     taxonomy:
       - Life
       - Animalia
@@ -1545,8 +1598,34 @@ clades:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
-      - Neoceratopsia
       - Chaoyangsauridae
+    type_genus: Chaoyangsaurus
+    described: 2006
+    authors: Zhao, X.; Cheng, Z.; Xu, X.; Makovicky, P. J.
+    diagnostic_features:
+      - Small body size with a proportionally large head
+      - Primitive, low rostral bone
+      - Retention of premaxillary teeth
+      - Short, incipient parietosquamosal shelf without a true frill
+    references:
+      - id: zhao2006
+        authors: Zhao, X.; Cheng, Z.; Xu, X.; Makovicky, P. J.
+        year: 2006
+        title: A new ceratopsian from the Upper Jurassic Houcheng Formation of Hebei, China
+        journal: Acta Geologica Sinica
+        volume: "80"
+        pages: 467-473
+        notes: Described Xuanhuaceratops and proposed the family Chaoyangsauridae.
+      - id: han2015
+        authors: Han, F.; Forster, C. A.; Clark, J. M.; Xu, X.
+        year: 2015
+        title: A new taxon of basal ceratopsian from China and the early evolution of Ceratopsia
+        journal: PLOS ONE
+        volume: "10"
+        pages: e0143369
+        doi: 10.1371/journal.pone.0143369
+        url: http://dx.doi.org/10.1371/journal.pone.0143369
+        notes: Recovered a monophyletic Chaoyangsauridae outside Neoceratopsia.
   Chasmosaurinae:
     description: |
       Chasmosaurinae is one of the two subfamilies of Ceratopsidae, comprising the long-frilled horned dinosaurs of the Late Cretaceous of North America, typified by elongate brow horns, reduced nasal horns, and greatly elongate parietosquamosal frills with large parietal fenestrae. The subfamily ranges from earlier forms such as Chasmosaurus and Pentaceratops to the derived Triceratopsini (Triceratops, Torosaurus, and their relatives). It was named by Lambe in 1915 with Chasmosaurus as its type genus.
@@ -1565,6 +1644,10 @@ clades:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Chasmosaurinae
     type_genus: Chasmosaurus
@@ -1748,6 +1831,8 @@ clades:
       - Coelurosauria
       - Compsognathidae
   Coronosauria:
+    description: |
+      Coronosauria is the clade of neoceratopsians comprising Protoceratopsidae and Ceratopsoidea and their most recent common ancestor — the smallest clade containing Protoceratops and Triceratops. Its members have a well-developed parietosquamosal frill and a fused anterior cervical series (syncervical), and the clade includes both the Asian protoceratopsids and the lineage leading to the large horned Ceratopsidae.
     taxonomy:
       - Life
       - Animalia
@@ -1764,7 +1849,34 @@ clades:
       - Marginocephalia
       - Ceratopsia
       - Neoceratopsia
+      - Euceratopsia
       - Coronosauria
+    described: 1986
+    authors: Sereno, P. C.
+    diagnostic_features:
+      - Well-developed, broad parietosquamosal frill
+      - Syncervical formed by fusion of the first several cervical vertebrae
+      - Enlarged external naris
+      - Strongly downturned, deep rostrum
+    references:
+      - id: sereno1986
+        authors: Sereno, P. C.
+        year: 1986
+        title: Phylogeny of the bird-hipped dinosaurs (order Ornithischia)
+        journal: National Geographic Research
+        volume: "2"
+        pages: 234-256
+        notes: Named Coronosauria.
+      - id: madzia2021
+        authors: Madzia, D.; Arbour, V. M.; Boyd, C. A.; Farke, A. A.; Cruzado-Caballero, P.; Evans, D. C.
+        year: 2021
+        title: The phylogenetic nomenclature of ornithischian dinosaurs
+        journal: PeerJ
+        volume: "9"
+        pages: e12362
+        doi: 10.7717/peerj.12362
+        url: http://dx.doi.org/10.7717/peerj.12362
+        notes: Provides the modern phylogenetic definition of Coronosauria.
   Dacentrurinae:
     description: |
       Dacentrurinae is a subfamily of stegosaurid dinosaurs erected for the long-spined European and African plated dinosaurs allied to Dacentrurus. Members are distinguished from other stegosaurids by their elongate paired terminal tail spines and relatively gracile build. The subfamily was named in the description of Miragaia and has since been expanded to include several Middle to Late Jurassic taxa from Europe and North Africa.
@@ -2236,6 +2348,43 @@ clades:
       - Ceratosauria
       - Ceratosauroidea
       - Etrigansauria
+  Euceratopsia:
+    description: |
+      Euceratopsia is the clade comprising Leptoceratopsidae and Coronosauria and their most recent common ancestor — the smallest clade containing Leptoceratops, Protoceratops, and Triceratops. It groups the more derived neoceratopsians, excluding the basal neoceratopsian grade, and was named to provide a stable name for this consistently recovered node.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Cerapoda
+      - Marginocephalia
+      - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+    described: 2021
+    authors: Madzia, D.; Arbour, V. M.; Boyd, C. A.; Farke, A. A.; Cruzado-Caballero, P.; Evans, D. C.
+    diagnostic_features:
+      - Deep, robust dentary with a high coronoid process
+      - Strongly developed parietosquamosal frill relative to basal neoceratopsians
+      - Enlarged, mediolaterally compressed predentary
+    references:
+      - id: madzia2021
+        authors: Madzia, D.; Arbour, V. M.; Boyd, C. A.; Farke, A. A.; Cruzado-Caballero, P.; Evans, D. C.
+        year: 2021
+        title: The phylogenetic nomenclature of ornithischian dinosaurs
+        journal: PeerJ
+        volume: "9"
+        pages: e12362
+        doi: 10.7717/peerj.12362
+        url: http://dx.doi.org/10.7717/peerj.12362
+        notes: Erected Euceratopsia as the smallest clade containing Leptoceratops, Protoceratops, and Triceratops.
   Eudromaeosauria:
     taxonomy:
       - Life
@@ -2912,6 +3061,8 @@ clades:
         url: http://dx.doi.org/10.7717/peerj.12362
         notes: Provides the modern phylogenetic definition of Lambeosaurinae.
   Leptoceratopsidae:
+    description: |
+      Leptoceratopsidae is a clade of small, mostly hornless neoceratopsians from the Cretaceous of Asia, North America, and Europe, including Leptoceratops, Montanoceratops, Udanoceratops, and Zhuchengceratops. They retain a short frill and lack the large brow horns of ceratopsids, but bear deep, robust jaws with a distinctive shearing dentition. The clade is the sister group of Coronosauria within Euceratopsia.
     taxonomy:
       - Life
       - Animalia
@@ -2928,7 +3079,35 @@ clades:
       - Marginocephalia
       - Ceratopsia
       - Neoceratopsia
+      - Euceratopsia
       - Leptoceratopsidae
+    type_genus: Leptoceratops
+    described: 1923
+    authors: Nopcsa, F.
+    diagnostic_features:
+      - Deep, robust dentary with a high, laterally displaced coronoid process
+      - Short parietosquamosal frill lacking large fenestrae
+      - Absence of large supraorbital (brow) horns
+      - Marked lateral ridge on the surangular
+    references:
+      - id: nopcsa1923
+        authors: Nopcsa, F.
+        year: 1923
+        title: Die Familien der Reptilien
+        journal: Fortschritte der Geologie und Palaeontologie
+        volume: "2"
+        pages: 1-210
+        notes: Named Leptoceratopsidae (as a subfamily).
+      - id: he2015
+        authors: He, Y.; Makovicky, P. J.; Wang, K.; Chen, S.; Sullivan, C.; Han, F.; Xu, X.
+        year: 2015
+        title: A new leptoceratopsid (Ornithischia, Ceratopsia) with a unique ischium from the Upper Cretaceous of Shandong Province, China
+        journal: PLOS ONE
+        volume: "10"
+        pages: e0144148
+        doi: 10.1371/journal.pone.0144148
+        url: http://dx.doi.org/10.1371/journal.pone.0144148
+        notes: Provides a modern phylogenetic delimitation of Leptoceratopsidae.
   Lessemsauridae:
     taxonomy:
       - Life
@@ -3501,6 +3680,8 @@ clades:
       - Lithostrotia
       - Nemegtosauridae
   Neoceratopsia:
+    description: |
+      Neoceratopsia is the major clade of ceratopsians containing all forms closer to Triceratops than to Chaoyangsaurus or Psittacosaurus. It encompasses a grade of small basal taxa (such as Liaoceratops, Aquilops, and Auroraceratops) leading to Euceratopsia, the clade uniting Leptoceratopsidae with the frilled and horned Coronosauria. Neoceratopsians show a progressive enlargement of the skull and development of the parietosquamosal frill.
     taxonomy:
       - Life
       - Animalia
@@ -3517,6 +3698,32 @@ clades:
       - Marginocephalia
       - Ceratopsia
       - Neoceratopsia
+    described: 1986
+    authors: Sereno, P. C.
+    diagnostic_features:
+      - Enlarged skull relative to body size
+      - Development of a parietosquamosal frill from the rear of the skull
+      - Epijugal ossification capping the jugal
+      - Strongly keeled, vaulted rostral and predentary forming a deep beak
+    references:
+      - id: sereno1986
+        authors: Sereno, P. C.
+        year: 1986
+        title: Phylogeny of the bird-hipped dinosaurs (order Ornithischia)
+        journal: National Geographic Research
+        volume: "2"
+        pages: 234-256
+        notes: Named Neoceratopsia.
+      - id: madzia2021
+        authors: Madzia, D.; Arbour, V. M.; Boyd, C. A.; Farke, A. A.; Cruzado-Caballero, P.; Evans, D. C.
+        year: 2021
+        title: The phylogenetic nomenclature of ornithischian dinosaurs
+        journal: PeerJ
+        volume: "9"
+        pages: e12362
+        doi: 10.7717/peerj.12362
+        url: http://dx.doi.org/10.7717/peerj.12362
+        notes: Provides the modern phylogenetic definition of Neoceratopsia.
   Neoiguanodontia:
     taxonomy:
       - Life
@@ -4312,6 +4519,8 @@ clades:
       - Anchisauria
       - Prosauropoda
   Protoceratopsidae:
+    description: |
+      Protoceratopsidae is a clade of small to medium-sized coronosaurian neoceratopsians from the Late Cretaceous of Asia, including Protoceratops, Bagaceratops, and Breviceratops. They bear a well-developed but solid frill and a deep, narrow snout, but lack the large brow horns and frill fenestrae of ceratopsids. Following Czepiński's (2019) revision the family absorbs the taxa formerly placed in "Bagaceratopsidae."
     taxonomy:
       - Life
       - Animalia
@@ -4328,8 +4537,36 @@ clades:
       - Marginocephalia
       - Ceratopsia
       - Neoceratopsia
+      - Euceratopsia
       - Coronosauria
       - Protoceratopsidae
+    type_genus: Protoceratops
+    described: 1923
+    authors: Granger, W.; Gregory, W. K.
+    diagnostic_features:
+      - Solid (unfenestrated or minimally fenestrated) parietosquamosal frill
+      - Deep, narrow snout with a prominent nasal horn or boss in some members
+      - Reduced or absent premaxillary dentition
+      - Tall neural spines over the sacrum and tail
+    references:
+      - id: granger1923
+        authors: Granger, W.; Gregory, W. K.
+        year: 1923
+        title: Protoceratops andrewsi, a pre-ceratopsian dinosaur from Mongolia
+        journal: American Museum Novitates
+        volume: "72"
+        pages: 1-9
+        notes: Named Protoceratopsidae.
+      - id: czepiński2019
+        authors: Czepiński, Ł.
+        year: 2019
+        title: Ontogeny and variation of a protoceratopsid dinosaur Bagaceratops rozhdestvenskyi from the Late Cretaceous of the Gobi Desert
+        journal: Historical Biology
+        volume: "32"
+        pages: 1394-1421
+        doi: 10.1080/08912963.2019.1593404
+        url: http://dx.doi.org/10.1080/08912963.2019.1593404
+        notes: Revised Protoceratopsidae and synonymized several Gobi genera into Bagaceratops.
   Rebbachisauridae:
     taxonomy:
       - Life
@@ -6915,6 +7152,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Centrosaurinae
     authors: Sampson, S. D.
@@ -9045,6 +9286,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
     authors: Cope, E. D.
     described: 1872
@@ -9339,6 +9584,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Chasmosaurinae
     authors: Lucas, S. G.; Sullivan, R. M.; A. P. Hunt
@@ -9726,6 +9975,12 @@ genera:
     pronunciation:
       phonetic: OI-ka-SEH-ruh-tops
     description: Ajkaceratops is a genus of ceratopsian dinosaur described in 2010. It lived during the Late Cretaceous in the western Tethyan archipelago, in what is now Europe. The type species, A. kozmai, was originally described as a ceratopsian most closely related to forms in east Asia, from where its ancestors may have migrated by island-hopping. Later research, however, questioned this assignment and treated Ajkaceratops as an ornithischian of unresolved affinity. In 2026, more complete cranial remains referable to the species were described, supporting its placement as a ceratopsian.
+    dispute:
+      summary: |
+        Ajkaceratops kozmai is a bizarre European ornithischian of contested affinity. Maidment and others (2026) recover it as a ceratopsian near the Ceratopsoidea, but its redescribers (Czepiński and Madzia, 2024) classify it only as ?Ceratopsia, noting that a ceratopsian position depends on interpreting its anterior snout element as a rostral and that it may not be a ceratopsian at all.
+      history:
+        - date: 2026-06-27
+          note: Placed at Ceratopsia incertae sedis following Czepiński and Madzia (2024); the finer ceratopsoid placement of Maidment and others (2026) and the possibility of a non-ceratopsian identity both reflected, not adopted (P2).
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -10301,11 +10556,17 @@ genera:
     described: 2006
   Albalophosaurus:
     genus: Albalophosaurus
-    parent: Ceratopsia
+    parent: Marginocephalia
     etymology: From Latin 'albus' meaning 'white' and Greek 'lophos' meaning 'crest' and 'sauros' meaning 'lizard', referring to the snow-covered crest of Mount Hakusan near where it was found.
     pronunciation:
       phonetic: AL-ba-LOH-fo-SOR-us
     description: Albalophosaurus is a genus of marginocephalian ornithischian dinosaur that lived in Japan during the Early Cretaceous. The type species is Albalophosaurus yamaguchiorum.
+    dispute:
+      summary: |
+        Albalophosaurus yamaguchiorum is a fragmentary taxon of uncertain affinity, recovered as a basal ceratopsian (Han and others, 2012; Jones, 2026) but, by Fonseca and others (2024), variously as a basal pachycephalosaur, the sister to Marginocephalia, or a basal ceratopsian.
+      history:
+        - date: 2026-06-27
+          note: Placed at Marginocephalia incertae sedis given conflicting basal-ceratopsian and basal-pachycephalosaurian results; not assigned within Ceratopsia pending resolution (P2).
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -10393,7 +10654,6 @@ genera:
       - Genasauria
       - Cerapoda
       - Marginocephalia
-      - Ceratopsia
     authors: Ohashi, T.; Barrett, P. M.
     described: 2009
   Albertaceratops:
@@ -10503,6 +10763,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Centrosaurinae
     authors: Ryan, M. J.
@@ -14728,6 +14992,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Chasmosaurinae
     authors: Brown, B.
@@ -19761,6 +20029,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Chasmosaurinae
     authors: Parks, W. A.
@@ -20092,6 +20364,12 @@ genera:
       phonetic: AY-zha-SER-a-tops
     etymology: From Asia (the continent where the genus was found) + Greek keras (κέρας) meaning 'horn' + ops (ὤψ) meaning 'face'; overall meaning 'Asian horned face'.
     description: Asiaceratops is a genus of herbivorous ceratopsian dinosaur. It lived during the Early-Late Cretaceous. The type species, A. salsopaludalis is known from Uzbekistan, while A. sulcidens is known from China and Mongolia.
+    dispute:
+      summary: |
+        Asiaceratops salsopaludalis is based on fragmentary material and is often regarded as a nomen dubium, though several analyses include it as a basal neoceratopsian.
+      history:
+        - date: 2026-06-27
+          note: Placed at Neoceratopsia (basal); nomen dubium (P2).
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -22617,6 +22895,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Centrosaurinae
     authors: Dodson, P.
@@ -23192,6 +23474,7 @@ genera:
       - Marginocephalia
       - Ceratopsia
       - Neoceratopsia
+      - Euceratopsia
       - Coronosauria
       - Protoceratopsidae
     authors: Maryańska, T.; Osmólska, H.
@@ -23624,6 +23907,12 @@ genera:
     etymology: From the Bain-Dzak locality (Mongolian for "rich-in-saxaul", the Mongolian name for the Flaming Cliffs of the Gobi Desert) and Greek keratops (horned face); meaning "Bain-Dzak horned face".
     description: |
       Bainoceratops is a genus of ceratopsian dinosaur from the late Campanian in the Late Cretaceous. The type species is B. efremovi. Its fossils were found in southern Mongolia in the Djadochta Formation.
+    dispute:
+      summary: |
+        Bainoceratops efremovi is based only on vertebrae and is widely regarded as a junior synonym of Protoceratops andrewsi (Makovicky and Norell, 2006; Jones, 2026); Czepiński (2019) likewise notes it may fall within the variation of P. andrewsi but did not formally act. Kept valid pending consensus.
+      history:
+        - date: 2026-06-27
+          note: Placed at Protoceratopsidae; proposed synonymy with Protoceratops reflected, not adopted (P5).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -23703,6 +23992,7 @@ genera:
       - Marginocephalia
       - Ceratopsia
       - Neoceratopsia
+      - Euceratopsia
       - Coronosauria
       - Protoceratopsidae
     authors: Tereshchenko, V. S.; Alifanov, V. R.
@@ -27165,6 +27455,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Chasmosaurinae
     authors: Dalman, S. G.; Jasinski, S. E.; S. G. Lucas
@@ -28780,6 +29074,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
     authors: Gilmore, C. W.
     described: 1914
@@ -29508,6 +29806,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Chasmosaurinae
     authors: Wick, S. L.; Lehman, T. M.
@@ -29605,6 +29907,7 @@ genera:
       - Marginocephalia
       - Ceratopsia
       - Neoceratopsia
+      - Euceratopsia
       - Coronosauria
       - Protoceratopsidae
     authors: Kurzanov, S. M.
@@ -33675,6 +33978,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Centrosaurinae
     authors: Lambe, L. M.
@@ -33814,6 +34121,7 @@ genera:
       - Marginocephalia
       - Ceratopsia
       - Neoceratopsia
+      - Euceratopsia
       - Leptoceratopsidae
     authors: Chinnery, B. J.; Horner, J. R.
     described: 2007
@@ -34024,6 +34332,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
     authors: Marsh, O. C.
     described: 1888
@@ -35424,7 +35736,6 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
-      - Neoceratopsia
       - Chaoyangsauridae
     authors: Xijin, Z.; Zhengwu, C.; Xing, X.
     described: 1999
@@ -35649,6 +35960,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Chasmosaurinae
     authors: Lambe, L. M.
@@ -38503,6 +38818,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Chasmosaurinae
     authors: Loewen, M. A.; Sampson, S. D.; Lund, E. K.; Farke, A. A.; Aguillón-Martínez, M. C.; de Leon, C. A.; Rodríguez-de la Rosa, R. A.; Getty, M. A.; Eberth, D. A.
@@ -40219,6 +40538,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Centrosaurinae
     authors: Ryan, M. J.; Evans, D. C.; Shepherd, K. M.
@@ -40438,12 +40761,18 @@ genera:
     described: 1914
   Craspedodon:
     genus: Craspedodon
-    parent: Neoceratopsia
+    parent: Ceratopsia
     etymology: From Greek 'kraspedon' (edge, fringe, border) and 'odon' (tooth); meaning 'edge tooth', in reference to the ridges and denticles ornamenting the tooth crowns.
     pronunciation:
       phonetic: kras-PED-o-don
     description: |
       Craspedodon is an extinct genus of ornithischian dinosaur from the Late Cretaceous Lonzée Member of Belgium. Only a single species, C. lonzeensis, is known.
+    dispute:
+      summary: |
+        Craspedodon lonzeensis is based on fragmentary teeth from Belgium reinterpreted as neoceratopsian by Godefroit and Lambert (2007); Maidment and others (2026) caution that such teeth are difficult to distinguish from those of ornithopods. Treated as a nomen dubium.
+      history:
+        - date: 2026-06-27
+          note: Placed at Ceratopsia incertae sedis; nomen dubium (P2).
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -40538,7 +40867,6 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
-      - Neoceratopsia
     authors: Dollo, L.
     described: 1883
   Craterosaurus:
@@ -41058,6 +41386,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Centrosaurinae
     authors: Dalman, S. G.; Hodnett, J.-P. M.; A. J. Lichtig, S. G. L.
@@ -41349,6 +41681,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Chasmosaurinae
     authors: Sternberg, C. M.
@@ -44225,6 +44561,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Centrosaurinae
     authors: Kirkland, J. I.; Deblieux, D. D.
@@ -48412,6 +48752,12 @@ genera:
     pronunciation:
       phonetic: dis-GANN-us
     description: Dysganus (meaning "rough enamel") is a dubious genus of ceratopsian dinosaur from the Campanian stage of the Late Cretaceous. The fossil teeth referred to Dysganus were first collected by Charles Sternberg from the Judith River Formation of Montana and later described by Edward Drinker Cope. All of the species are now seen as dubious ceratopsians, though referred material from tyrannosaurids and hadrosaurids were found in New Mexico.
+    dispute:
+      summary: |
+        Dysganus is a tooth-based taxon whose material may be ceratopsid, hadrosaurid, or otherwise indeterminate; it is a nomen dubium.
+      history:
+        - date: 2026-06-27
+          note: Placed at Ceratopsia incertae sedis; nomen dubium (P2).
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -49657,6 +50003,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Centrosaurinae
     authors: Sampson, S. D.
@@ -52017,6 +52367,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Chasmosaurinae
     authors: Wu, X.-C.; Brinkman, D. B.; Eberth, D. A.; Braman, D. R.
@@ -54795,6 +55149,12 @@ genera:
     pronunciation:
       phonetic: feh-ren-seh-ruh-tops
     description: Ferenceratops is an extinct genus of basal ceratopsian dinosaur from the Maastrichtian Sînpetru and Densuș-Ciula Formations of the Haţeg Basin, western Romania. The single species, Ferenceratops shqiperorum, was originally described by Weishampel et al. (2003) as a second species of the rhabdodontid ornithopod Zalmoxes; Maidment et al. (2026) reanalysed the holotype postcrania and recovered it as a ceratopsian, erecting a new genus and arguing that 'Zalmoxes' shqiperorum belongs to a previously unrecognised European ceratopsian lineage that also includes Ajkaceratops from Hungary.
+    dispute:
+      summary: |
+        Ferenceratops shqiperorum was erected by Maidment and others (2026) for material formerly assigned to the ornithopod Zalmoxes shqiperorum, which they recovered as a European ceratopsian near the Ceratopsoidea. Its affinities within Ceratopsia are not yet corroborated by other analyses.
+      history:
+        - date: 2026-06-27
+          note: Placed at Ceratopsia incertae sedis following Maidment and others (2026); finer placement unresolved (P2).
     diet: herbivore
     locomotion: bipedal
     diagnostic_features:
@@ -55167,6 +55527,7 @@ genera:
       - Marginocephalia
       - Ceratopsia
       - Neoceratopsia
+      - Euceratopsia
       - Leptoceratopsidae
     authors: Arbour, V. M.; Evans, D. C.
     described: 2019
@@ -56588,6 +56949,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Centrosaurinae
     authors: Ishikawa, H.; Tsuihiji, T.; Manabe, M.
@@ -62093,6 +62458,7 @@ genera:
       - Marginocephalia
       - Ceratopsia
       - Neoceratopsia
+      - Euceratopsia
       - Leptoceratopsidae
     authors: Ryan, M. J.; Micucci, L.; Rizo, H.; Sullivan, C.; Lee, Y.-N.; Evans, D. C.
     described: 2023
@@ -62181,6 +62547,7 @@ genera:
       - Marginocephalia
       - Ceratopsia
       - Neoceratopsia
+      - Euceratopsia
       - Leptoceratopsidae
     authors: Ryan, M. J.; Evans, D. C.; Currie, P. J.; Brown, C. M.; Brinkman, D.
     described: 2012
@@ -64399,11 +64766,17 @@ genera:
     described: 1953
   Helioceratops:
     genus: Helioceratops
-    parent: Leptoceratopsidae
+    parent: Neoceratopsia
     etymology: From Greek helios (sun), keras (horn), and ops (face); meaning 'sun horned face', referencing the animal's Eastern (sunrise) origin and its relationship to other ceratopsians
     pronunciation:
       phonetic: HEE-lee-o-SEH-ruh-tops
     description: Helioceratops is a genus of herbivorous neoceratopsian dinosaur from the Middle Cretaceous of China.
+    dispute:
+      summary: |
+        Helioceratops brachygnathus has been recovered both as a basal neoceratopsian and as a leptoceratopsid; Jones (2026) reports both placements and leans toward a basal neoceratopsian position.
+      history:
+        - date: 2026-06-27
+          note: Placed at Neoceratopsia (basal) following the prevailing view (Jones, 2026); leptoceratopsid alternative reflected (P2).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -64487,7 +64860,6 @@ genera:
       - Marginocephalia
       - Ceratopsia
       - Neoceratopsia
-      - Leptoceratopsidae
     authors: Jin, L.; Chen, J.; Zan, S.; Godefroit, P.
     described: 2009
   Heptasteornis:
@@ -66629,7 +67001,6 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
-      - Neoceratopsia
       - Chaoyangsauridae
     authors: Han, F.; Forster, C. A.; Clark, J. M.; Xu, X.
     described: 2015
@@ -71596,6 +71967,7 @@ genera:
       - Marginocephalia
       - Ceratopsia
       - Neoceratopsia
+      - Euceratopsia
       - Leptoceratopsidae
     authors: He, Y.; Makovicky, P. J.; Wang, K.; Chen, S.; Sullivan, C.; Han, F.; Xu, X.
     described: 2015
@@ -75355,6 +75727,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Chasmosaurinae
     authors: Longrich, N. R.
@@ -78314,11 +78690,17 @@ genera:
     described: 1994
   Koreaceratops:
     genus: Koreaceratops
-    parent: Leptoceratopsidae
+    parent: Neoceratopsia
     pronunciation:
       phonetic: ko-REE-uh-SERR-uh-tops
     etymology: From 'Korea' (referring to South Korea, where it was discovered) combined with Greek 'keras' (horn) and 'ops' (face); meaning 'Korean horned face'
     description: Koreaceratops is a genus of basal ceratopsian dinosaur discovered in Albian-aged (Early Cretaceous) rocks of South Korea.
+    dispute:
+      summary: |
+        Koreaceratops hwaseongensis has been recovered just stemward of Euceratopsia as a basal neoceratopsian and, in some analyses, within Leptoceratopsidae (Morschhauser and others, 2018); Jones (2026) leans toward the basal position.
+      history:
+        - date: 2026-06-27
+          note: Placed at Neoceratopsia (basal) following the prevailing view (Jones, 2026); leptoceratopsid alternative reflected (P2).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -78403,7 +78785,6 @@ genera:
       - Marginocephalia
       - Ceratopsia
       - Neoceratopsia
-      - Leptoceratopsidae
     authors: Lee, Y.-N.; Ryan, M. J.; Kobayashi, Y.
     described: 2010
   Koreanosaurus:
@@ -78738,6 +79119,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Chasmosaurinae
     authors: Sampson, S. D.; Loewen, M. A.; Farke, A. A.; Roberts, E. M.; Forster, C. A.; Smith, J. A.; Titus, A. L.
@@ -79126,11 +79511,17 @@ genera:
     described: 2008
   Kulceratops:
     genus: Kulceratops
-    parent: Ceratopsia
+    parent: Neoceratopsia
     pronunciation:
       phonetic: kool-SER-a-tops
     etymology: Named for the Khodzhakul Formation where the fossils were found, with 'kul' meaning 'lake' in the local language, combined with Greek 'keratops' meaning 'horned face'; the specific name kulensis also references the formation.
     description: "Kulceratops is a genus of ceratopsian dinosaur from the Early Cretaceous. It lived in the late Albian stage. It is one of the few ceratopsians known from this period. However, the fossils from this genus have been sparse: only jaw and tooth fragments have been found so far."
+    dispute:
+      summary: |
+        Kulceratops kulensis is a poorly known Early Cretaceous taxon, generally treated as a nomen dubium but interpreted as a basal neoceratopsian.
+      history:
+        - date: 2026-06-27
+          note: Placed at Neoceratopsia (basal); nomen dubium (P2).
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -79201,6 +79592,7 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
     authors: Nessov, L. A.
     described: 1995
   Kulindadromeus:
@@ -82033,6 +82425,7 @@ genera:
       - Marginocephalia
       - Ceratopsia
       - Neoceratopsia
+      - Euceratopsia
       - Leptoceratopsidae
     authors: Brown, B.
     described: 1914
@@ -85021,6 +85414,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Centrosaurinae
     authors: Loewen, M. A.; Sertich, J. J. W.; Sampson, S.; O'Connor, J. K.; Carpenter, S.; Sisson, B.; Øhlenschlæger, A.; Farke, A. A.; Makovicky, P. J.; Longrich, N.; Evans, D. C.
@@ -87093,6 +87490,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Centrosaurinae
     authors: Lund, E. K.; O'Connor, P. M.; Loewen, M. A.; Jinnah, Z. A.
@@ -90838,6 +91239,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Centrosaurinae
     authors: Ryan, M. J.; Russell, A. P.; S. Hartman
@@ -91660,6 +92065,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Centrosaurinae
     authors: Dalman, S. G.; Lucas, S. G.; Jasinski, S. E.; Lichtig, A. J.; Dodson, P.
@@ -91993,6 +92402,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Chasmosaurinae
     authors: Ryan, M. J.; Evans, D. C.; Currie, P. J.; Loewen, M. A.
@@ -92264,9 +92677,15 @@ genera:
     described: 2025
   Microceratus:
     genus: Microceratus
-    parent: Ceratopsia
+    parent: Neoceratopsia
     etymology: From Greek 'mikros' (small) and 'keras' (horn); meaning 'small-horned'.
     description: Microceratus is a genus of small ceratopsian dinosaur that lived in the Cretaceous period of Mongolia. It walked on two legs, had short front arms, a characteristic ceratopsian frill and beak-like mouth, and was around 60 cm (2.0 ft) long. It was one of the most primitive ceratopsians, or horned dinosaurs, along with Psittacosaurus, which was also discovered in Mongolia.
+    dispute:
+      summary: |
+        Microceratus gobiensis is a replacement name for the preoccupied Microceratops; most referred material has been reassigned to Graciliceratops, leaving a poorly diagnosable basal neoceratopsian widely treated as a nomen dubium.
+      history:
+        - date: 2026-06-27
+          note: Placed at Neoceratopsia (basal); nomen dubium (P2).
     diet: herbivore
     locomotion: bipedal
     diagnostic_features:
@@ -92358,6 +92777,7 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
     authors: Mateus, O.
     described: 2008
   Microcoelus:
@@ -92575,11 +92995,17 @@ genera:
     described: 1979
   Micropachycephalosaurus:
     genus: Micropachycephalosaurus
-    parent: Ceratopsia
+    parent: Cerapoda
     pronunciation:
       phonetic: MIEK-ro-PAK-i-SEF-a-lo-SAWR-us
     etymology: From Greek 'mikros' (small), 'pachys' (thick), 'kephale' (head), and 'sauros' (lizard); meaning 'small thick-headed lizard'.
     description: Micropachycephalosaurus is an extinct genus of basal marginocephalian dinosaur, containing only the type species, Micropachycephalosaurus hongtuyanensis. It lived in China during the Late Cretaceous (Campanian) and was found in the Jiangjunding Formation. It has the longest name of any dinosaur, with 23 letters in the genus name alone, while the full binomial contains 37 letters.
+    dispute:
+      summary: |
+        Despite its name, Micropachycephalosaurus hongtuyanensis is not confidently a pachycephalosaur. The dedicated redescription (Butler and Zhao, 2009) found no unambiguous synapomorphies and treated it as Cerapoda incertae sedis; some analyses recover it as a basal ceratopsian (Butler and others, 2011; Jones, 2026) while Fonseca and others (2024) recover it as a pachycephalosaur.
+      history:
+        - date: 2026-06-27
+          note: Placed at Cerapoda incertae sedis following the dedicated redescription (Butler and Zhao, 2009), which declines assignment to either Ceratopsia or Pachycephalosauria; conflicting ceratopsian and pachycephalosaurian results reflected, not adopted (P1, P2).
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -92661,8 +93087,6 @@ genera:
       - Ornithischia
       - Genasauria
       - Cerapoda
-      - Marginocephalia
-      - Ceratopsia
     authors: Dong, Z.
     described: 1978
   Microraptor:
@@ -94572,6 +94996,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
     authors: Cope, E. D.
     described: 1876
@@ -94925,6 +95353,7 @@ genera:
       - Marginocephalia
       - Ceratopsia
       - Neoceratopsia
+      - Euceratopsia
       - Leptoceratopsidae
     authors: Sternberg, C. M.
     described: 1951
@@ -97711,6 +98140,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Centrosaurinae
     authors: Sampson, S. D.; Lund, E. K.; Loewen, M. A.; Farke, A. A.; Clayton, K. E.
@@ -97916,6 +98349,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Chasmosaurinae
     authors: Fowler, D. W.; Freedman Fowler, E. A.
@@ -98258,6 +98695,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Chasmosaurinae
     authors: Lull, R. S.
@@ -101028,6 +101469,12 @@ genera:
     pronunciation:
       phonetic: not-o-SEH-ruh-tops
     description: Notoceratops is a dubious genus of extinct ornithischian dinosaur. The genus was described based on an incomplete, toothless left dentary (now lost) from the Late Cretaceous of Patagonia (in Argentina), probably dating to the Campanian or Maastrichtian. Initially classified as a putative ceratopsian found in the Lago Colhué Huapi Formation, the lost fragmentary holotype precludes confident referral of this taxon within ornithischians, with some researchers suggesting that it belongs to a hadrosaur instead.
+    dispute:
+      summary: |
+        Notoceratops bonarellii is based on a now-lost dentary; its ceratopsian identity has been both supported and questioned (some regard it as possibly hadrosaurian), and it is treated as a nomen dubium.
+      history:
+        - date: 2026-06-27
+          note: Placed at Ceratopsia incertae sedis; nomen dubium (P2).
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -102086,6 +102533,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Chasmosaurinae
     authors: Sullivan, R. M.; Lucas, S. G.
@@ -105400,6 +105851,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Centrosaurinae
     authors: Sternberg, C. M.
@@ -109581,6 +110036,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Chasmosaurinae
     authors: Osborn, H. F.
@@ -112608,6 +113067,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
     authors: Cope, E. D.
     described: 1874
@@ -113118,6 +113581,7 @@ genera:
       - Marginocephalia
       - Ceratopsia
       - Neoceratopsia
+      - Euceratopsia
       - Leptoceratopsidae
     authors: Chinnery, B.
     described: 2004
@@ -114694,6 +115158,7 @@ genera:
       - Marginocephalia
       - Ceratopsia
       - Neoceratopsia
+      - Euceratopsia
       - Coronosauria
       - Protoceratopsidae
     authors: Granger, W.; Gregory, W. K.
@@ -118764,6 +119229,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Chasmosaurinae
     authors: Brown, C. M.; Henderson, D. M.
@@ -124774,6 +125243,12 @@ genera:
     pronunciation:
       phonetic: seh-ren-DIP-uh-SEH-ruh-tops
     description: Serendipaceratops is a genus of herbivorous ornithischian dinosaur, possibly an ankylosaur, from the early Cretaceous Period of Australia. The type species, S. arthurcclarkei, was named in 2003.
+    dispute:
+      summary: |
+        Serendipaceratops arthurcclarkei is based on a single ulna from Australia; its referral to Ceratopsia has been disputed, with some workers suggesting the bone is not diagnostic or may pertain to an ankylosaur. Treated as a nomen dubium.
+      history:
+        - date: 2026-06-27
+          note: Placed at Ceratopsia incertae sedis; nomen dubium, possible non-ceratopsian identity reflected (P2).
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -127390,6 +127865,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Chasmosaurinae
     authors: Dalman, S. G.; Lucas, S. G.; Jasinski, S. E.; Longrich, N. R.
@@ -128206,6 +128685,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Centrosaurinae
     authors: Xu, X.; Wang, K.; Zhao, X.; Li, D.
@@ -130413,6 +130896,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Chasmosaurinae
     authors: Mallon, J. C.; Ott, C. J.; Larson, P. L.; Iuliano, E. M.; Evans, D. C.
@@ -130769,6 +131256,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Centrosaurinae
     authors: Farke, A. A.; Ryan, M. J.; Barrett, P. M.; Tanke, D. H.; Braman, D. R.; Loewen, M. A.; Graham, M. R.
@@ -131989,6 +132480,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Centrosaurinae
     authors: Wilson, J. P.; Ryan, M. J.; Evans, D. C.
@@ -132121,6 +132616,12 @@ genera:
       phonetic: ste-NOP-e-liks
     etymology: From Greek stenos, "narrow", combined with Greek pelyx, "pelvis" - means "narrow pelvis", referring to the characteristic narrow hips
     description: Stenopelix is a genus of basal ceratopsian from the Early Cretaceous (late Berriasian stage, approximately 140 million years ago) of Germany. The genus is based on a partial skeleton lacking the skull, and its classification is based on characteristics of the hips.
+    dispute:
+      summary: |
+        Stenopelix valdensis has been placed variously as a basal pachycephalosaur, a basal marginocephalian, and a basal ceratopsian; recent analyses (Yu and others, 2020; Fonseca and others, 2024) recover it within Chaoyangsauridae, sister to Yinlong, and Jones (2026) follows this.
+      history:
+        - date: 2026-06-27
+          note: Placed at Chaoyangsauridae following Yu and others (2020), Fonseca and others (2024), and Jones (2026); earlier pachycephalosaurian placements not adopted (P3).
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -132206,7 +132707,6 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
-      - Neoceratopsia
       - Chaoyangsauridae
     authors: Meyer, H. V.
     described: 1857
@@ -132893,6 +133393,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Centrosaurinae
     authors: Lambe, L. M.
@@ -137285,6 +137789,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Chasmosaurinae
     authors: Fowler, D. W.; Freedman Fowler, E. A.
@@ -139970,6 +140478,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Chasmosaurinae
     authors: Longrich, N. R.
@@ -140997,6 +141509,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Chasmosaurinae
     authors: Marsh, O. C.
@@ -141929,6 +142445,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Chasmosaurinae
     authors: Marsh, O. C.
@@ -143160,6 +143680,12 @@ genera:
       phonetic: too-RAHN-o-SER-a-tops
     etymology: Combines 'Turan', an old Persian name for Turkestan (the region of discovery in Uzbekistan), with Greek 'ceratops' meaning 'horned face'.
     description: Turanoceratops is a genus of herbivorous ceratopsian dinosaur from the late Cretaceous Bissekty Formation of Uzbekistan. The fossils dated from the mid-late Turonian stage, roughly 90 million years ago. The skull bore a pair of long brow horns like those seen in the Ceratopsidae, although Turanoceratops appears to have been transitional between earlier ceratopsians and ceratopsids, and not a ceratopsid itself.
+    dispute:
+      summary: |
+        Turanoceratops tardabilis is the basis of a long dispute over the first Asian ceratopsid. Sues and Averianov (2009) recovered it within Ceratopsidae as the sister to Centrosaurinae, but Farke and others (2009) reanalyzed it as the sister taxon to Ceratopsidae lying outside it, a view followed by Jones (2026).
+      history:
+        - date: 2026-06-27
+          note: Placed at Ceratopsoidea, the least-inclusive clade both hypotheses accept; the within-Ceratopsidae position of Sues and Averianov (2009) reflected, not adopted (P2, P3).
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -143245,6 +143771,7 @@ genera:
       - Marginocephalia
       - Ceratopsia
       - Neoceratopsia
+      - Euceratopsia
       - Coronosauria
       - Ceratopsoidea
     authors: Nessov, L. A.; Kaznyshkina, L. F.; G. O. Cherepanov
@@ -144215,6 +144742,7 @@ genera:
       - Marginocephalia
       - Ceratopsia
       - Neoceratopsia
+      - Euceratopsia
       - Leptoceratopsidae
     authors: Kurzanov, S. M.
     described: 1992
@@ -144881,6 +145409,7 @@ genera:
       - Marginocephalia
       - Ceratopsia
       - Neoceratopsia
+      - Euceratopsia
       - Leptoceratopsidae
     authors: Ryan, M. J.; Evans, D. C.; Currie, P. J.; Brown, C. M.; Brinkman, D.
     described: 2012
@@ -145284,6 +145813,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Chasmosaurinae
     authors: Sampson, S. D.; Loewen, M. A.; Farke, A. A.; Roberts, E. M.; Forster, C. A.; Smith, J. A.; Titus, A. L.
@@ -145610,6 +146143,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Chasmosaurinae
     authors: Sampson, S. D.; Loewen, M. A.; Farke, A. A.; Roberts, E. M.; Forster, C. A.; Smith, J. A.; Titus, A. L.
@@ -148652,6 +149189,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Centrosaurinae
     authors: Evans, D. C.; Ryan, M. J.
@@ -149592,6 +150133,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Centrosaurinae
     authors: Ryan, M. J.; Evans, D. C.; Shepherd, K. M.
@@ -151487,7 +152032,6 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
-      - Neoceratopsia
       - Chaoyangsauridae
     authors: Zhao, X.; Cheng, Z.; X. Xu, P. J. M.
     described: 2006
@@ -152514,6 +153058,10 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
+      - Neoceratopsia
+      - Euceratopsia
+      - Coronosauria
+      - Ceratopsoidea
       - Ceratopsidae
       - Centrosaurinae
     authors: Rivera-Sylva, H. E.; Frey, E.; Stinnesbeck, W.; Guzmán-Gutiérrez, J. R.; González-González, A. H.
@@ -152892,7 +153440,6 @@ genera:
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
-      - Neoceratopsia
       - Chaoyangsauridae
     authors: Xu, X.; Forster, C. A.; Clark, J. M.; Mo, J.
     described: 2006
@@ -156206,6 +156753,7 @@ genera:
       - Marginocephalia
       - Ceratopsia
       - Neoceratopsia
+      - Euceratopsia
       - Leptoceratopsidae
     authors: Xu, X.; Wang, K.; Zhao, X.; Sullivan, C.; Chen, S.
     described: 2010
@@ -156809,6 +157357,7 @@ genera:
       - Marginocephalia
       - Ceratopsia
       - Neoceratopsia
+      - Euceratopsia
       - Coronosauria
       - Ceratopsoidea
     authors: Wolfe, D. G.; Kirkland, J. I.
