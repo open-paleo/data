@@ -1,7 +1,7 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-06-26T21:52:43.238Z
-  clade_count: 237
+  built_at: 2026-06-27T05:40:45.909Z
+  clade_count: 235
   genus_count: 1398
   license: CC-BY-4.0
   schema_version: 1.0.0
@@ -216,11 +216,6 @@ tree:
                         Guaibasauridae: {}
                       Herrerasauridae: {}
                     Ornithischia:
-                      Thyreophora:
-                        Ankylosauria:
-                          Ankylosauridae:
-                            Ankylosaurinae:
-                              Ankylosaurini: {}
                       Cerapoda:
                         Ornithopoda:
                           Ankylopollexia:
@@ -279,11 +274,9 @@ tree:
                         Thyreophora:
                           Ankylosauria:
                             Ankylosauridae:
-                              Ankylosaurinae:
-                                Ankylosaurini: {}
-                                Euoplocephalini: {}
-                            Nodosauridae:
-                              Struthiosaurinae: {}
+                              Shamosaurinae: {}
+                              Ankylosaurinae: {}
+                            Nodosauridae: {}
                             Parankylosauria: {}
                           Stegosauria:
                             Stegosauridae:
@@ -654,7 +647,7 @@ clades:
         pages: 234-256
   Ankylosauria:
     description: |
-      Ankylosauria is a clade of heavily armored thyreophoran ornithischian dinosaurs known from the Middle Jurassic to the end of the Cretaceous. Ankylosaurs were low-slung, quadrupedal herbivores encased in extensive dermal armor consisting of osteoderms arranged in transverse rows across the body, often supplemented by lateral spines. Some ankylosaurs, particularly ankylosaurids, possessed a massive bony tail club used for defense. The clade includes Ankylosauridae and Nodosauridae.
+      Ankylosauria is a clade of heavily armored thyreophoran ornithischian dinosaurs known from the Middle Jurassic to the end of the Cretaceous. Ankylosaurs were low-slung, quadrupedal herbivores encased in extensive dermal armor consisting of osteoderms arranged in transverse rows across the body, often supplemented by lateral spines. Some ankylosaurs, particularly ankylosaurids, possessed a massive bony tail club used for defense. The clade is traditionally divided into Ankylosauridae and Nodosauridae, with the early-diverging Gondwanan Parankylosauria recognized more recently.
     taxonomy:
       - Life
       - Animalia
@@ -666,10 +659,12 @@ clades:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
+    type_genus: Ankylosaurus
     described: 1923
-    authors: Osborn
+    authors: Osborn, H. F.
     diagnostic_features:
       - Extensive dermal armor covering the dorsal surface and flanks
       - Low, wide body plan with short, robust limbs
@@ -679,95 +674,73 @@ clades:
       - Secondary palate present
     references:
       - id: osborn1923b
-        authors: Osborn, H.F.
+        authors: Osborn, H. F.
         year: 1923
         title: Two Lower Cretaceous dinosaurs of Mongolia
         journal: American Museum Novitates
         volume: "95"
         pages: 1-10
-  Ankylosauridae:
-    description: Ankylosauridae is a family of armored dinosaurs within Ankylosauria, and is the sister group to Nodosauridae. The oldest known ankylosaurids date to around 122 million years ago, and the clade went extinct 66 million years ago during the Cretaceous–Paleogene extinction event. These animals were mainly herbivorous and were obligate quadrupeds, with leaf-shaped teeth and robust, scute-covered bodies. Ankylosaurids possess a distinctly domed and short snout, wedge-shaped osteoderms on their skull, scutes along their torso, and a tail club.
-    taxonomy:
-      - Life
-      - Animalia
-      - Chordata
-      - Vertebrata
-      - Sarcopterygii
-      - Tetrapoda
-      - Reptilia
-      - Archosauria
-      - Dinosauria
-      - Ornithischia
-      - Thyreophora
-      - Ankylosauria
-      - Ankylosauridae
-    described: 1908
-    authors: Brown
-    references:
-      - id: brown1909
-        authors: Brown, Barnum
-        year: 1909
-        title: The ankylosauridea, a new family of armored dinosaurs from the upper cretaceous
-        journal: Zeitschrift für Induktive Abstammungs- und Vererbungslehre
-        volume: "2"
-        issue: "1"
-        publisher: Springer Science and Business Media LLC
-        pages: 26-26
-        doi: 10.1007/bf01975763
-  Ankylosaurinae:
-    description: Ankylosaurinae is a subfamily of ankylosaurid dinosaurs, existing from the Early Cretaceous about 105 million years ago until the end of the Late Cretaceous, about 66 mya. Many genera are included in the clade, such as Ankylosaurus, Pinacosaurus, Euoplocephalus, and Saichania.
-    taxonomy:
-      - Life
-      - Animalia
-      - Chordata
-      - Vertebrata
-      - Sarcopterygii
-      - Tetrapoda
-      - Reptilia
-      - Archosauria
-      - Dinosauria
-      - Ornithischia
-      - Thyreophora
-      - Ankylosauria
-      - Ankylosauridae
-      - Ankylosaurinae
-    described: 1918
-    authors: Nopcsa
-    references:
-      - id: leahey2015
-        authors: Leahey, L.G.; Molnar, R.E.; Carpenter, K.; Witmer, L.M.; Salisbury, S.W.
-        year: 2015
-        title: "Cranial osteology of the ankylosaurian dinosaur formerly known as<i>Minmi</i>sp. (Ornithischia: Thyreophora) from the Lower Cretaceous Allaru Mudstone of Richmond, Queensland, Australia"
-        journal: PeerJ
-        volume: "3"
-        publisher: PeerJ
-        pages: e1475
-        doi: 10.7717/peerj.1475
-        url: http://dx.doi.org/10.7717/peerj.1475
-      - id: thompson2011
-        authors: Thompson, R.S.; Parish, J.C.; Maidment, S.C.R.; Barrett, P.M.
-        year: 2011
-        title: "Phylogeny of the ankylosaurian dinosaurs (Ornithischia: Thyreophora)"
+        notes: Erected the clade Ankylosauria.
+      - id: raven2023
+        authors: Raven, T. J.; Barrett, P. M.; Joyce, C. B.; Maidment, S. C. R.
+        year: 2023
+        title: "The phylogenetic relationships and evolutionary history of the armoured dinosaurs (Ornithischia: Thyreophora)"
         journal: Journal of Systematic Palaeontology
-        volume: "10"
-        issue: "2"
-        publisher: Informa UK Limited
-        pages: 301-312
-        doi: 10.1080/14772019.2011.569091
-        url: http://dx.doi.org/10.1080/14772019.2011.569091
+        volume: "21"
+        pages: "2205433"
+        doi: 10.1080/14772019.2023.2205433
+        url: http://dx.doi.org/10.1080/14772019.2023.2205433
+        notes: Comprehensive recent phylogeny of the armored dinosaurs.
+  Ankylosauridae:
+    description: |
+      Ankylosauridae is one of the two principal families of Ankylosauria, the tail-clubbed armored dinosaurs of the Cretaceous of Asia and North America. Ankylosaurids are obligate quadrupeds with leaf-shaped teeth and robust, scute-covered bodies; they are distinguished by a short, deep snout with wedge-shaped (caputegular) cranial osteoderms and, in derived members, a massive bony tail club. The family comprises the basal Shamosaurinae and the derived Ankylosaurinae.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Thyreophora
+      - Ankylosauria
+      - Ankylosauridae
+    type_genus: Ankylosaurus
+    described: 1908
+    authors: Brown, B.
+    diagnostic_features:
+      - Lateral temporal fenestrae closed by cranial ornamentation
+      - Skull wider than long with an anteroposteriorly arched roof
+      - Nasal process of the premaxilla not visible on the skull roof
+      - Three sacral vertebrae
+      - Triangular caudal osteoderms; a handle-and-knob tail club in derived members
+    references:
+      - id: brown1908
+        authors: Brown, B.
+        year: 1908
+        title: The Ankylosauridae, a new family of armored dinosaurs from the Upper Cretaceous
+        journal: Bulletin of the American Museum of Natural History
+        volume: "24"
+        pages: 187-201
+        notes: Named the family Ankylosauridae.
       - id: arbour2015
-        authors: Arbour, V.M.; Currie, P.J.
+        authors: Arbour, V. M.; Currie, P. J.
         year: 2015
         title: Systematics, phylogeny and palaeobiogeography of the ankylosaurid dinosaurs
         journal: Journal of Systematic Palaeontology
         volume: "14"
         issue: "5"
-        publisher: Informa UK Limited
         pages: 385-444
         doi: 10.1080/14772019.2015.1059985
         url: http://dx.doi.org/10.1080/14772019.2015.1059985
-  Ankylosaurini:
-    description: Ankylosaurinae is a subfamily of ankylosaurid dinosaurs, existing from the Early Cretaceous about 105 million years ago until the end of the Late Cretaceous, about 66 mya.
+        notes: Comprehensive systematic revision of Ankylosauridae.
+  Ankylosaurinae:
+    description: |
+      Ankylosaurinae is the derived subfamily of ankylosaurid dinosaurs, comprising the tail-clubbed forms of the Late Cretaceous of Asia and North America such as Ankylosaurus, Pinacosaurus, Euoplocephalus, Saichania, and Tarchia. It is defined as all ankylosaurids more closely related to Ankylosaurus than to Shamosaurus, and dates by ICZN coordination from Brown's 1908 naming of Ankylosauridae.
     taxonomy:
       - Life
       - Animalia
@@ -779,24 +752,39 @@ clades:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
       - Ankylosauridae
       - Ankylosaurinae
-      - Ankylosaurini
-    described: 2016
-    authors: Arbour and Currie
+    type_genus: Ankylosaurus
+    described: 1908
+    authors: Brown, B.
+    diagnostic_features:
+      - Well-developed handle-and-knob tail club
+      - Numerous bulbous caputegulae (cranial osteoderms) on the skull roof
+      - Squamosal and postocular horns forming pronounced cranial projections
+      - Anteriorly facing external nares in derived members
     references:
+      - id: brown1908
+        authors: Brown, B.
+        year: 1908
+        title: The Ankylosauridae, a new family of armored dinosaurs from the Upper Cretaceous
+        journal: Bulletin of the American Museum of Natural History
+        volume: "24"
+        pages: 187-201
+        notes: Named Ankylosauridae; Ankylosaurinae dates from this work by ICZN coordination.
       - id: arbour2015
-        authors: Arbour, Victoria M.; Currie, Philip J.
+        authors: Arbour, V. M.; Currie, P. J.
         year: 2015
         title: Systematics, phylogeny and palaeobiogeography of the ankylosaurid dinosaurs
         journal: Journal of Systematic Palaeontology
         volume: "14"
         issue: "5"
-        publisher: Informa UK Limited
         pages: 385-444
         doi: 10.1080/14772019.2015.1059985
+        url: http://dx.doi.org/10.1080/14772019.2015.1059985
+        notes: Provides the modern phylogenetic delimitation of Ankylosaurinae.
   Apatosaurinae:
     taxonomy:
       - Life
@@ -2399,24 +2387,6 @@ clades:
       - Titanosauriformes
       - Somphospondyli
       - Euhelopodidae
-  Euoplocephalini:
-    taxonomy:
-      - Life
-      - Animalia
-      - Chordata
-      - Vertebrata
-      - Sarcopterygii
-      - Tetrapoda
-      - Reptilia
-      - Archosauria
-      - Dinosauria
-      - Ornithischia
-      - Genasauria
-      - Thyreophora
-      - Ankylosauria
-      - Ankylosauridae
-      - Ankylosaurinae
-      - Euoplocephalini
   Eusauropoda:
     taxonomy:
       - Life
@@ -3814,6 +3784,8 @@ clades:
       - Noasauridae
       - Noasaurinae
   Nodosauridae:
+    description: |
+      Nodosauridae is one of the two principal families of Ankylosauria, comprising the armored dinosaurs that lacked a bony tail club, in contrast to the ankylosaurids. Nodosaurids were cosmopolitan through the Cretaceous and are typified by Nodosaurus and the well-armored panoplosaurine and struthiosaurine lineages, together with the spiny basal polacanthines. They retain prominent lateral shoulder and flank spines and a narrower, more elongate skull than ankylosaurids.
     taxonomy:
       - Life
       - Animalia
@@ -3829,6 +3801,36 @@ clades:
       - Thyreophora
       - Ankylosauria
       - Nodosauridae
+    type_genus: Nodosaurus
+    described: 1890
+    authors: Marsh, O. C.
+    diagnostic_features:
+      - Absence of a bony tail club
+      - Narrow, anteroposteriorly elongate skull
+      - Prominent laterally projecting cervical, shoulder, and flank spines in many taxa
+      - Closed lateral temporal fenestra concealed by cranial armor
+    references:
+      - id: marsh1890b
+        authors: Marsh, O. C.
+        year: 1890
+        title: Description of new dinosaurian reptiles
+        journal: American Journal of Science
+        volume: s3-39
+        issue: "229"
+        pages: 81-86
+        doi: 10.2475/ajs.s3-39.229.81
+        url: http://dx.doi.org/10.2475/ajs.s3-39.229.81
+        notes: Named the family Nodosauridae.
+      - id: rivera-sylva2018
+        authors: Rivera-Sylva, H. E.; Frey, E.; Stinnesbeck, W.; Carbot-Chanona, G.; Sanchez-Uribe, I. E.; Guzmán-Gutiérrez, J. R.
+        year: 2018
+        title: Paleodiversity of Late Cretaceous Ankylosauria from Mexico and their phylogenetic significance
+        journal: Swiss Journal of Palaeontology
+        volume: "137"
+        pages: 83-93
+        doi: 10.1007/s13358-018-0153-1
+        url: http://dx.doi.org/10.1007/s13358-018-0153-1
+        notes: Phylogenetic analysis of nodosaurid relationships.
   Opisthocoelicaudiinae:
     taxonomy:
       - Life
@@ -4231,6 +4233,8 @@ clades:
         doi: 10.1671/0272-4634(2002)022[0779:angodp]2.0.co;2
         notes: Provided the modern stem-based usage of Pachycephalosaurinae.
   Parankylosauria:
+    description: |
+      Parankylosauria is an early-diverging clade of Gondwanan armored dinosaurs erected for Stegouros and its relatives, recovered as the sister group to Euankylosauria (Ankylosauridae + Nodosauridae). Its members are small, slender-limbed ankylosaurs, several bearing a distinctive frond-like tail weapon (the macuahuitl of Stegouros) rather than a knob-like tail club.
     taxonomy:
       - Life
       - Animalia
@@ -4246,6 +4250,34 @@ clades:
       - Thyreophora
       - Ankylosauria
       - Parankylosauria
+    described: 2021
+    authors: Soto-Acuña, S.; Vargas, A. O.; Kaluza, J.; Leppe, M. A.; Botelho, J. F.; Palma-Liberona, J.; Simon-Gutstein, C.; Fernández, R. A.; Ortiz, H.; Milla, V.; Aravena, B.; Manríquez, L. M. E.; Alarcón-Muñoz, J.; Pino, J. P.; Trevisan, C.; Mansilla, H.; Hinojosa, L. F.; Muñoz-Walther, V.; Rubilar-Rogers, D.
+    diagnostic_features:
+      - Slender, gracile limbs relative to other ankylosaurs
+      - Thin dermal sacral shield
+      - Dorsoventrally flattened distal caudal osteoderms (in the Stegouros tail weapon)
+      - Teeth with denticles confluent with enamel ridges and an asymmetric bulged cingulum
+    references:
+      - id: soto-acuña2021
+        authors: Soto-Acuña, S.; Vargas, A. O.; Kaluza, J.; Leppe, M. A.; Botelho, J. F.; Palma-Liberona, J.; Simon-Gutstein, C.; Fernández, R. A.; Ortiz, H.; Milla, V.; Aravena, B.; Manríquez, L. M. E.; Alarcón-Muñoz, J.; Pino, J. P.; Trevisan, C.; Mansilla, H.; Hinojosa, L. F.; Muñoz-Walther, V.; Rubilar-Rogers, D.
+        year: 2021
+        title: Bizarre tail weaponry in a transitional ankylosaur from subantarctic Chile
+        journal: Nature
+        volume: "600"
+        pages: 259-263
+        doi: 10.1038/s41586-021-04147-1
+        url: http://dx.doi.org/10.1038/s41586-021-04147-1
+        notes: Described Stegouros and erected Parankylosauria.
+      - id: soto-acuña2024
+        authors: Soto-Acuña, S.; Vargas, A. O.; Kaluza, J.
+        year: 2024
+        title: "A new look at the first dinosaur discovered in Antarctica: reappraisal of Antarctopelta oliveroi (Ankylosauria: Parankylosauria)"
+        journal: Advances in Polar Science
+        volume: "35"
+        pages: 78-107
+        doi: 10.12429/j.advps.2023.0036
+        url: http://dx.doi.org/10.12429/j.advps.2023.0036
+        notes: Reappraisal of Antarctopelta supporting Parankylosauria.
   Parasaurolophini:
     taxonomy:
       - Life
@@ -4957,6 +4989,52 @@ clades:
       - Coelurosauria
       - Maniraptora
       - Scansoriopterygidae
+  Shamosaurinae:
+    description: |
+      Shamosaurinae is a small subfamily of early-diverging ankylosaurid dinosaurs from the Cretaceous of Asia, sister to the derived Ankylosaurinae. It is typified by Shamosaurus and Gobisaurus, which share a distinctive premaxillary furrow and retain a relatively elongate, less ornamented skull lacking the fully developed tail club of ankylosaurines.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Thyreophora
+      - Ankylosauria
+      - Ankylosauridae
+      - Shamosaurinae
+    type_genus: Shamosaurus
+    described: 1983
+    authors: Tumanova, T. A.
+    diagnostic_features:
+      - Premaxillary furrow on the anterior palate
+      - Elongate skull relative to derived ankylosaurines
+      - Less extensive cranial caputegular ornamentation
+    references:
+      - id: tumanova1983
+        authors: Tumanova, T. A.
+        year: 1983
+        title: The first ankylosaurs from the Lower Cretaceous of Mongolia
+        book: Fossil Reptiles of Mongolia (Trudy Sovmestnaya Sovetsko-Mongol'skaya Paleontologicheskaya Ekspeditsiya)
+        volume: "24"
+        pages: 110-118
+        notes: Named Shamosaurus and the subfamily Shamosaurinae.
+      - id: arbour2015
+        authors: Arbour, V. M.; Currie, P. J.
+        year: 2015
+        title: Systematics, phylogeny and palaeobiogeography of the ankylosaurid dinosaurs
+        journal: Journal of Systematic Palaeontology
+        volume: "14"
+        issue: "5"
+        pages: 385-444
+        doi: 10.1080/14772019.2015.1059985
+        url: http://dx.doi.org/10.1080/14772019.2015.1059985
+        notes: Recovered Shamosaurinae (Gobisaurus + Shamosaurus) as sister to Ankylosaurinae.
   Sinovenatorinae:
     taxonomy:
       - Life
@@ -5200,23 +5278,6 @@ clades:
         doi: 10.3897/vz.75.e146618
         url: http://dx.doi.org/10.3897/vz.75.e146618
         notes: Provided a modern phylogenetic definition of Stegosaurinae.
-  Struthiosaurinae:
-    taxonomy:
-      - Life
-      - Animalia
-      - Chordata
-      - Vertebrata
-      - Sarcopterygii
-      - Tetrapoda
-      - Reptilia
-      - Archosauria
-      - Dinosauria
-      - Ornithischia
-      - Genasauria
-      - Thyreophora
-      - Ankylosauria
-      - Nodosauridae
-      - Struthiosaurinae
   Styracosterna:
     description: |
       Styracosterna, meaning "spiked stern," is a clade of ankylopollexian ornithopod dinosaurs characterized by a spike-like first manual ungual (thumb spike) that is more developed and conical than in basal ankylopollexians. The clade includes Iguanodon and more derived ornithopods leading to Hadrosauriformes. Styracosternans became the dominant large-bodied herbivores in many Early to Late Cretaceous ecosystems worldwide.
@@ -5507,6 +5568,7 @@ clades:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
     described: 1915
     authors: Nopcsa
@@ -6793,6 +6855,12 @@ genera:
       phonetic: a-kan-THOF-o-lis
       ipa: /ˌækənˈθɒfoʊlɪs/
     description: Acanthopholis is a genus of ankylosaurian dinosaur in the family Nodosauridae that lived during the Late Cretaceous Period of England. A single species, A. horrida, exists.
+    dispute:
+      summary: |
+        Acanthopholis is a nomen dubium; its species rest on composite, non-diagnostic syntypes (Pereda-Suberbiola and Barrett, 1999). It is retained at Ankylosauria incertae sedis.
+      history:
+        - date: 2026-06-26
+          note: Parked at Ankylosauria incertae sedis, nomen dubium not assignable below Ankylosauria (P2).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -6878,6 +6946,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
     authors: Huxley, T. H.
@@ -9519,11 +9588,17 @@ genera:
     described: 1999
   Ahshislepelta:
     genus: Ahshislepelta
-    parent: Ankylosauridae
+    parent: Ankylosauria
     etymology: Named after Ah-shi-sle-pah Wash, the locality where the fossil was found, combined with Greek 'pelta' meaning 'shield'; meaning 'Ah-shi-sle-pah Wash shield'
     pronunciation:
       phonetic: Ah-shi-sle-pel-ta
     description: Ahshislepelta is a monospecific genus of ankylosaur dinosaur from New Mexico that lived during the Late Cretaceous (late Campanian stage, 74.5 Ma) in what is now the Hunter Wash Member of the Kirtland Formation. The type and only species, Ahshislepelta minor, is known only from an incomplete postcranial skeleton of a small subadult or adult individual. It was named in 2011 by Michael Burns and Robert M. Sullivan. Based on the size of the humerus, Ahshislepelta is larger than Pinacosaurus mephistocephalus but smaller than Talarurus and Pinacosaurus grangeri.
+    dispute:
+      summary: |
+        The family placement of Ahshislepelta is contested, recovered as a basal ankylosaurid by Arbour and Currie (2015) but as a nodosaurine by Jones and Viola (2026). It is retained at Ankylosauria incertae sedis pending resolution.
+      history:
+        - date: 2026-06-26
+          note: Parked at Ankylosauria incertae sedis, family placement contested between Ankylosauridae and Nodosauridae (P2).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -9614,9 +9689,9 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
-      - Ankylosauridae
     authors: Burns, M. E.; Sullivan, R. M.
     described: 2011
   Ahshislesaurus:
@@ -10021,7 +10096,7 @@ genera:
     described: 2021
   Akainacephalus:
     genus: Akainacephalus
-    parent: Ankylosaurini
+    parent: Ankylosaurinae
     pronunciation:
       phonetic: ah-KAY-nuh-SEF-uh-lus
     etymology: From Greek 'akaina' meaning 'thorn' or 'spike' and 'kephale' meaning 'head'; meaning 'thorn head'
@@ -10121,11 +10196,11 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
       - Ankylosauridae
       - Ankylosaurinae
-      - Ankylosaurini
     authors: Wiersma, J. P.; Irmis, R. B.
     described: 2018
   Alamosaurus:
@@ -11463,6 +11538,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
       - Ankylosauridae
@@ -15715,7 +15791,7 @@ genera:
     described: 1999
   Ankylosaurus:
     genus: Ankylosaurus
-    parent: Ankylosaurini
+    parent: Ankylosaurinae
     etymology: From Greek 'ankylos' (fused, bent) and 'sauros' (lizard), referring to the coossified plates of the skull and the fused vertebral elements.
     pronunciation:
       ipa: /ˌæŋkəloʊˈsɔːrəs/
@@ -15883,16 +15959,16 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
       - Ankylosauridae
       - Ankylosaurinae
-      - Ankylosaurini
     authors: Brown, B.
     described: 1908
   Anodontosaurus:
     genus: Anodontosaurus
-    parent: Euoplocephalini
+    parent: Ankylosaurinae
     etymology: From Ancient Greek 'an' meaning 'without', 'odon' meaning 'tooth', and 'sauros' meaning 'lizard', meaning 'toothless lizard', inspired by compression damage to the specimen that removed the teeth and misled the describer into assuming large trituration plates had replaced the normal dentition.
     pronunciation:
       phonetic: an-o-DONT-o-SOR-us
@@ -15999,7 +16075,6 @@ genera:
       - Ankylosauria
       - Ankylosauridae
       - Ankylosaurinae
-      - Euoplocephalini
     authors: Sternberg, C. M.
     described: 1929
   Anomalipes:
@@ -26883,12 +26958,13 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
     authors: Dong, Z.
     described: 2001
   Bissektipelta:
     genus: Bissektipelta
-    parent: Ankylosauridae
+    parent: Ankylosaurinae
     etymology: From Bissekty (the Bissekty Formation of Uzbekistan, where the fossils were found) + Greek pelte (πέλτη) meaning 'shield'; overall meaning 'Bissekty shield'.
     pronunciation:
       phonetic: bish-ehk-tee-pel-tuh
@@ -27013,9 +27089,11 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
       - Ankylosauridae
+      - Ankylosaurinae
     authors: Parish, J. C.; Barrett, P. M.
     described: 2004
   Bistahieversor:
@@ -29074,6 +29152,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
     authors: Chakravarti, D. K.
     described: 1934
@@ -33506,6 +33585,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
       - Ankylosauridae
@@ -37418,6 +37498,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
       - Ankylosauridae
@@ -40774,6 +40855,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
       - Ankylosauridae
@@ -40788,6 +40870,12 @@ genera:
       phonetic: CRY-ton-SOR-us
     description: |
       Crichtonsaurus is a dubious genus of herbivorous ankylosaurid dinosaur that lived during the Late Cretaceous in what is now China. It was named after Michael Crichton, the author of the dinosaur novel Jurassic Park. A sister taxon was discovered, C. benxiensis, which is now identified as a separate genus.
+    dispute:
+      summary: |
+        Crichtonsaurus is a nomen dubium; the holotype of C. bohlini lacks diagnostic characters (Arbour, 2014). It is retained at Ankylosauria incertae sedis (the valid related taxon is Crichtonpelta).
+      history:
+        - date: 2026-06-26
+          note: Parked at Ankylosauria incertae sedis, undiagnostic holotype (P2).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -40875,6 +40963,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
     authors: Dong, Z.
@@ -41374,6 +41463,12 @@ genera:
       phonetic: KRIP-to-SOR-us
     description: |
       Cryptosaurus is a dubious genus of dinosaur known from a partial femur from the Late Jurassic of England. The sole species is Cryptosaurus eumerus.
+    dispute:
+      summary: |
+        Cryptosaurus is known only from a single femur and is an indeterminate ankylosaur, not assignable below Ankylosauria.
+      history:
+        - date: 2026-06-26
+          note: Parked at Ankylosauria incertae sedis, indeterminate single-element holotype (P2).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -41454,6 +41549,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
     authors: Seeley, H. G.
@@ -42841,7 +42937,7 @@ genera:
     described: 1970
   Datai:
     genus: Datai
-    parent: Ankylosauridae
+    parent: Ankylosaurinae
     etymology: A composite of the final characters of the Chinese words 'tongda' (meaning 'to understand' or 'to be sensible') and 'antai' (meaning 'stable'); the specific name yingliangis honors the Yingliang Group.
     pronunciation:
       phonetic: DAH-tai
@@ -42920,9 +43016,11 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
       - Ankylosauridae
+      - Ankylosaurinae
     authors: Xing, L.; Niu, K.; Mallon, J.; Miyashita, T.
     described: 2024
   Datanglong:
@@ -46435,7 +46533,7 @@ genera:
     described: 2001
   Dracopelta:
     genus: Dracopelta
-    parent: Ankylosauria
+    parent: Nodosauridae
     pronunciation:
       phonetic: drak-o-PEL-ta
     etymology: "From Latin draco (dragon) + Greek pelte (shield): 'dragon shield'."
@@ -46536,8 +46634,10 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
+      - Nodosauridae
     authors: Galton, P. M.
     described: 1980
   Dracoraptor:
@@ -48171,7 +48271,7 @@ genera:
     described: 2018
   Dyoplosaurus:
     genus: Dyoplosaurus
-    parent: Euoplocephalini
+    parent: Ankylosaurinae
     pronunciation:
       phonetic: DIE-o-plo-SAWR-us
     etymology: "From Greek dyoplos (double-armored) + sauros (lizard): 'double-armored lizard'."
@@ -48285,7 +48385,6 @@ genera:
       - Ankylosauria
       - Ankylosauridae
       - Ankylosaurinae
-      - Euoplocephalini
     authors: Parks, W. A.
     described: 1924
   Dysalotosaurus:
@@ -50452,6 +50551,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
     authors: Haubold, H.
     described: 1990
@@ -51570,6 +51670,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
       - Ankylosauridae
@@ -53726,7 +53827,7 @@ genera:
     described: 1956
   Euoplocephalus:
     genus: Euoplocephalus
-    parent: Euoplocephalini
+    parent: Ankylosaurinae
     pronunciation:
       ipa: /juːˌɒploʊˈsɛfələs/
       phonetic: yoo-OP-loh-SEF-uh-luhs
@@ -53882,7 +53983,6 @@ genera:
       - Ankylosauria
       - Ankylosauridae
       - Ankylosaurinae
-      - Euoplocephalini
     authors: Lambe, L. M.
     described: 1910
   Euronychodon:
@@ -54207,7 +54307,7 @@ genera:
     described: 2017
   Europelta:
     genus: Europelta
-    parent: Struthiosaurinae
+    parent: Nodosauridae
     etymology: "From Europa (Europe, where it was found) + Greek pelte (shield): 'Europe's shield', reflecting its nodosaurid armor and European origin."
     pronunciation:
       phonetic: YOO-ro-PEL-tuh
@@ -54308,7 +54408,6 @@ genera:
       - Thyreophora
       - Ankylosauria
       - Nodosauridae
-      - Struthiosaurinae
     authors: Kirkland, J. I.; Alcalá, L.; Loewen, M. A.; Espílez, E.; Mampel, L.; Wiersma, J. P.
     described: 2013
   Euskelosaurus:
@@ -59980,11 +60079,17 @@ genera:
     described: 2010
   Glyptodontopelta:
     genus: Glyptodontopelta
-    parent: Nodosauridae
+    parent: Ankylosauria
     pronunciation:
       phonetic: GLIP-to-don-to-PEL-tuh
     etymology: Glyptodon shield; named for resemblance of its armor to that of the prehistoric mammal Glyptodon, combined with Greek pelta (shield)
     description: Glyptodontopelta is a monospecific genus of nodosaurid dinosaur from New Mexico that lived during the Late Cretaceous (lower to upper Maastrichtian, 69 to 66 Ma) in what is now the Naashoibito member of the Ojo Alamo Formation. The type and only species, Glyptodontopelta mimus, is known from numerous specimens that consist of osteoderms, a dentary, supraorbital and bone fragments. It was named in 2000 by Tracy Ford. Edmontonia australis is a junior synonym of Glyptodontopelta.
+    dispute:
+      summary: |
+        Glyptodontopelta is known almost entirely from osteoderms; treated as a nomen dubium by Vickaryous et al. (2004) and as valid by Burns (2008), it cannot be placed below Ankylosauria. It is retained at Ankylosauria incertae sedis.
+      history:
+        - date: 2026-06-26
+          note: Parked at Ankylosauria incertae sedis, armor-based and not placeable to family (P2).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -60057,7 +60162,6 @@ genera:
       - Genasauria
       - Thyreophora
       - Ankylosauria
-      - Nodosauridae
     authors: Ford, T. L.
     described: 2000
   Gnathovorax:
@@ -60405,7 +60509,7 @@ genera:
     described: 2019
   Gobisaurus:
     genus: Gobisaurus
-    parent: Ankylosauridae
+    parent: Shamosaurinae
     etymology: From the Gobi Desert (where it was found) combined with Greek sauros (lizard); meaning 'Gobi lizard'
     description: Gobisaurus is an extinct genus of herbivorous basal ankylosaurid ankylosaur from the Lower Cretaceous of China (Nei Mongol Zizhiqu). The genus is monotypic, containing only the species Gobisaurus domoculus.
     diet: herbivore
@@ -60514,9 +60618,11 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
       - Ankylosauridae
+      - Shamosaurinae
     authors: Vickaryous, M. K.; Russell, A. P.; Currie, P. J.; Zhao, X.-J.
     described: 2001
   Gobititan:
@@ -64293,6 +64399,12 @@ genera:
       phonetic: hay-SHAHN-SAWR-us
     etymology: Named after Heishan (Black Mountains) in Gansu Province, China, combined with Greek sauros (lizard); meaning 'Heishan lizard'
     description: Heishansaurus, meaning "Heishan lizard" after the area in China where it was discovered, is the name given to a dubious genus of herbivorous ornithischian dinosaur, probably belonging to the Ankylosauridae.
+    dispute:
+      summary: |
+        Heishansaurus is a nomen dubium; its holotype is lost and the material was undiagnostic (Arbour, 2014). It is retained at Ankylosauria incertae sedis.
+      history:
+        - date: 2026-06-26
+          note: Parked at Ankylosauria incertae sedis, nomen dubium with lost holotype (P2).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -64359,6 +64471,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
     authors: Bohlin, B.
@@ -65683,6 +65796,12 @@ genera:
       phonetic: HY-er-oh-SAWR-us
     etymology: From Greek 'hieros' meaning 'sacred' and 'sauros' meaning 'lizard', hence 'sacred lizard'.
     description: Hierosaurus is an extinct genus of nodosaurid ankylosaur which lived during the Late Cretaceous 87 to 82 million years ago. Its fossils were found in the Smoky Hill Chalk Member of the Niobrara Formation, in western Kansas, which would have been near the middle of the Western Interior Sea during the Late Cretaceous. It was a nodosaurid, an ankylosaur without a clubbed tail.
+    dispute:
+      summary: |
+        Hierosaurus is a nomen dubium based on osteoderms; H. coleii was reassigned to Niobrarasaurus. It is retained at Ankylosauria incertae sedis.
+      history:
+        - date: 2026-06-26
+          note: Parked at Ankylosauria incertae sedis, nomen dubium based on undiagnostic armor (P2).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -65753,6 +65872,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
     authors: Wieland, G. R.
@@ -66176,12 +66296,18 @@ genera:
     described: 1902
   Horshamosaurus:
     genus: Horshamosaurus
-    parent: Nodosauridae
+    parent: Ankylosauria
     pronunciation:
       phonetic: HOR-shum-o-SAWR-us
     etymology: From Horsham (the West Sussex market town where the Horsham Museum holds the holotype) and Greek 'sauros' (lizard); meaning 'Horsham lizard'.
     description: |
       Horshamosaurus is a genus of herbivorous ankylosaurian dinosaur from the Barremian stage of the Early Cretaceous of what is now England. The type species is Horshamosaurus rudgwickensis.
+    dispute:
+      summary: |
+        Horshamosaurus is regarded as a nomen dubium (Raven et al., 2020). It is retained at Ankylosauria incertae sedis.
+      history:
+        - date: 2026-06-26
+          note: Parked at Ankylosauria incertae sedis, nomen dubium (P2).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -66262,7 +66388,6 @@ genera:
       - Genasauria
       - Thyreophora
       - Ankylosauria
-      - Nodosauridae
     authors: Blows, W. T.
     described: 2015
   Huabeisaurus:
@@ -67285,6 +67410,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
       - Ankylosauridae
@@ -72563,6 +72689,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
     authors: Riguetti, F. J.; Apesteguía, S.; Pereda-Suberbiola, X.
     described: 2022
@@ -74751,6 +74878,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
       - Ankylosauridae
@@ -79252,7 +79380,7 @@ genera:
     described: 2014
   Kunbarrasaurus:
     genus: Kunbarrasaurus
-    parent: Ankylosauria
+    parent: Parankylosauria
     etymology: From Wulguru language kunbarra (shield) combined with Greek sauros (lizard); meaning "shield lizard"
     pronunciation:
       phonetic: KOON-ba-rah-SOR-rus
@@ -79360,8 +79488,10 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
+      - Parankylosauria
     authors: Leahey, L. G.; Molnar, R. E.; Carpenter, K.; Witmer, L. M.; Salisbury, S. W.
     described: 2015
   Kundurosaurus:
@@ -82967,6 +83097,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
       - Ankylosauridae
@@ -88555,6 +88686,12 @@ genera:
       phonetic: mahl-YAY-yev-us
     etymology: Named in honor of Soviet paleontologist Evgeny Maleev; the suffix '-us' is a standard Latinized honorific formation
     description: Maleevus is an extinct genus of herbivorous ankylosaurid dinosaur from the late Cretaceous, around 90 million years ago (possibly 98-83 Ma), of Mongolia.
+    dispute:
+      summary: |
+        Maleevus is a nomen dubium; its fragmentary material lacks diagnostic characters (Arbour, 2014), though it is generally regarded as an ankylosaurid. It is retained at Ankylosauridae without a subfamily.
+      history:
+        - date: 2026-06-26
+          note: Placed at Ankylosauridae, kept as a probable ankylosaurid although the genus is a nomen dubium (P2).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -88632,6 +88769,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
       - Ankylosauridae
@@ -93170,11 +93308,17 @@ genera:
     described: 2023
   Minmi:
     genus: Minmi
-    parent: Ankylosauridae
+    parent: Ankylosauria
     pronunciation:
       phonetic: MIN-mee
     etymology: Named for Minmi Crossing, a location in Queensland, Australia near where it was found; the Wikipedia article retrieved is about a Japanese musician, not the dinosaur.
     description: Minmi is a genus of small herbivorous ankylosaurian dinosaur that lived during the early Cretaceous Period of Australia, about 120 to 112 million years ago.
+    dispute:
+      summary: |
+        Both the validity and placement of Minmi are contested. Arbour and Currie (2015) regarded Minmi paravertebra as a nomen dubium, while others uphold it; phylogenetic analyses recover it as an unstable wildcard, even outside Eurypoda in the preferred tree of Raven et al. (2023). It is retained at Ankylosauria incertae sedis.
+      history:
+        - date: 2026-06-26
+          note: Parked at Ankylosauria incertae sedis, validity and placement both unresolved (P2).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -93272,9 +93416,9 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
-      - Ankylosauridae
     authors: Molnar, R. E.
     described: 1980
   Minotaurasaurus:
@@ -93284,6 +93428,12 @@ genera:
     pronunciation:
       phonetic: min-uh-TOR-a-SOR-us
     description: Minotaurasaurus is a monospecific genus of ankylosaurid dinosaur that lived in Mongolia during the Late Cretaceous (late Campanian stage, ~75-71 Ma) in what is now the Djadochta Formation. The type and only species, Minotaurasaurus ramachandrani, is known from two skulls, a cervical vertebra and a cervical half ring. It was named and described in 2009 by Clifford Miles and Clark Miles. The holotype of Minotaurasaurus has been suspected to be illegally exported out of Mongolia. It has been suggested to be a synonym of Tarchia but more recent publications consider it as a distinct genus.
+    dispute:
+      summary: |
+        The validity of Minotaurasaurus is contested. Arbour and Currie (2015) treated it as a junior synonym of Tarchia kielanae, whereas Penkalski and Tumanova (2016) and Wiersma and Irmis (2018) found it distinct. Retained as a valid ankylosaurine pending consensus.
+      history:
+        - date: 2026-06-26
+          note: Placed at Ankylosaurinae, kept valid although some analyses synonymize it with Tarchia (P5).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -93386,6 +93536,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
       - Ankylosauridae
@@ -100242,6 +100393,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
       - Ankylosauridae
@@ -102493,6 +102645,12 @@ genera:
       phonetic: OH-oh-kuh-TOH-kee-uh
     etymology: From Blackfoot 'ooh'kotoka' meaning 'large stone' and Latin suffix '-ia' meaning 'derived from', giving the meaning 'child of stone', referring to its extensive body armor; the name also honors the Blackfoot people on whose land the specimen was found.
     description: Oohkotokia is a genus of ankylosaurid dinosaur within the subfamily Ankylosaurinae. It is known from the upper levels of the Two Medicine Formation (late Campanian stage, about 74 Ma ago) of Montana, United States. The discovery of Oohkotokia supports that Ankylosaurine dinosaurs existed and flourished continuously in Montana and/or Alberta throughout the late Campanian and early Maastrichtian stages in the Late Cretaceous period. It was a large, heavily built, quadrupedal, herbivore, that could grow up to 5 meters (16 ft) long and weigh up to 2 metric tons (2.2 short tons).
+    dispute:
+      summary: |
+        The validity of Oohkotokia is contested. Arbour and Currie (2015) treated it as a junior synonym of Scolosaurus cutleri, whereas Penkalski (2018) and Wiersma and Irmis (2018) found it distinct. Retained as a valid ankylosaurine pending consensus.
+      history:
+        - date: 2026-06-26
+          note: Placed at Ankylosaurinae, kept valid although some analyses synonymize it with Scolosaurus (P5).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -102585,6 +102743,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
       - Ankylosauridae
@@ -105513,6 +105672,12 @@ genera:
       phonetic: PAY-lee-o-SINK-us
     etymology: From Greek 'palaios' meaning 'ancient' and 'skinkos' meaning 'lizard' (related to skink); translates as 'ancient lizard'.
     description: Palaeoscincus is a dubious genus of ankylosaurian dinosaur based on teeth from the mid-late Campanian-age Upper Cretaceous Judith River Formation of Montana. Like several other dinosaur genera named by Joseph Leidy (Deinodon, Thespesius, and Trachodon), it is an historically important genus with a convoluted taxonomy that has been all but abandoned by modern dinosaur paleontologists. Because of its wide use in the early 20th century, it was somewhat well known to the general public, often through illustrations of an animal with the armor of Edmontonia and the tail club of an ankylosaurid.
+    dispute:
+      summary: |
+        Palaeoscincus is a classic tooth taxon and a nomen dubium; the teeth are indeterminate within Ankylosauria (Vickaryous et al., 2004). It is retained at Ankylosauria incertae sedis.
+      history:
+        - date: 2026-06-26
+          note: Parked at Ankylosauria incertae sedis, undiagnostic tooth-based nomen dubium (P2).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -105575,6 +105740,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
     authors: Leidy, J.
@@ -107820,6 +107986,12 @@ genera:
       phonetic: pat-uh-GOH-PEL-tuh
     etymology: Named after Patagonia, the region in Argentina where it was found, combined with Latin pelta (shield); meaning "Patagonian shield".
     description: Patagopelta is an extinct genus of ankylosaurian dinosaur from the Late Cretaceous (upper Campanian-lower Maastrichtian) Allen Formation of Argentina. The genus contains a single species, P. cristata, known from several partial skeletons, isolated bones, and osteoderms. While originally described as a member of the family Nodosauridae, later discoveries provided support for parankylosaurian affinities. Patagopelta is a small armored dinosaur, comparable in size to the 'dwarf' nodosaurid Struthiosaurus, at about 2 m (6.6 ft) long. It is larger, more robust, and more heavily armored than other paranklyosaurs such as Stegouros.
+    dispute:
+      summary: |
+        The placement of Patagopelta is contested. Its describers (Riguetti et al., 2022) and Jones and Viola (2026) place it as a nodosaurine nodosaurid, whereas Soto-Acuna et al. (2024) recovered it within Parankylosauria. It is placed at Nodosauridae following the prevailing view.
+      history:
+        - date: 2026-06-26
+          note: Placed at Nodosauridae, with a recovered-as-parankylosaurian alternative noted (P2).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -108744,6 +108916,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
     authors: Bohlin, B.
     described: 1953
@@ -110727,6 +110900,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
       - Ankylosauridae
@@ -111364,7 +111538,7 @@ genera:
     described: 1913
   Platypelta:
     genus: Platypelta
-    parent: Euoplocephalini
+    parent: Ankylosaurinae
     pronunciation:
       phonetic: PLAT-ee-PEL-tuh
     etymology: From Greek platys (πλατύς, 'flat' or 'broad') and Latin pelta ('small shield'), meaning 'flat shield', referring to the broad, flat armor of this ankylosaurid
@@ -111475,7 +111649,6 @@ genera:
       - Ankylosauria
       - Ankylosauridae
       - Ankylosaurinae
-      - Euoplocephalini
     authors: Penkalski, P.
     described: 2018
   Platytholus:
@@ -112059,6 +112232,12 @@ genera:
       phonetic: pol-uh-KAN-thoy-deez
     etymology: From Polacanthus (the related genus) and Greek -oides (-οειδής, 'resembling' or 'like'), meaning 'resembling Polacanthus'
     description: Polacanthoides is a dubious genus of nodosaurid dinosaur from the Wessex Formation of England. The type species is P. ponderosus.
+    dispute:
+      summary: |
+        Polacanthoides is a nomen dubium based on a chimeric specimen combining Hylaeosaurus and Polacanthus material (Raven et al., 2020). It is retained at Ankylosauria incertae sedis.
+      history:
+        - date: 2026-06-26
+          note: Parked at Ankylosauria incertae sedis, chimeric nomen dubium (P2).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -112127,6 +112306,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
     authors: Nopcsa, B. F.
@@ -112943,6 +113123,12 @@ genera:
       phonetic: pry-KON-oh-don
     etymology: From Greek prion (saw), konos (cone), and odon (tooth); meaning "saw cone tooth".
     description: Priconodon is an extinct genus of ankylosaurian dinosaur (perhaps nodosaurid), mainly known from its large teeth. Its remains have been found in the Early Cretaceous (Aptian-Albian age) Arundel Formation of Muirkirk, Prince George's County, Maryland, USA, and possibly the Potomac Group, also located in Maryland. As an ankylosaur, Priconodon would have been a large armored quadrupedal herbivore, though no size estimation has been done due to the scarcity of described remains.
+    dispute:
+      summary: |
+        Priconodon is known only from teeth and is widely regarded as an indistinct nomen dubium (Vickaryous et al., 2004), though not universally. It is retained at Ankylosauria incertae sedis.
+      history:
+        - date: 2026-06-26
+          note: Parked at Ankylosauria incertae sedis, tooth-based and largely indeterminate (P2).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -113009,6 +113195,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
     authors: Marsh, O. C.
@@ -113020,6 +113207,12 @@ genera:
     pronunciation:
       phonetic: PRY-oh-don-TOG-nah-thus
     description: Priodontognathus is a genus of ankylosaurian dinosaur possibly from the Late Jurassic (Oxfordian-aged) Lower Calcareous Grit of Yorkshire, England. It is a dubious genus based on a maxilla, and has been erroneously mixed up with iguanodonts and stegosaurs.
+    dispute:
+      summary: |
+        Priodontognathus is a nomen dubium based on a single maxilla with a long history of misidentification. It is retained at Ankylosauria incertae sedis.
+      history:
+        - date: 2026-06-26
+          note: Parked at Ankylosauria incertae sedis, undiagnostic single-element nomen dubium (P2).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -113091,6 +113284,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
     authors: Seeley, H. G.
@@ -118641,6 +118835,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
     authors: Mantell, G. A.
     described: 1848
@@ -120683,6 +120878,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
       - Ankylosauridae
@@ -121415,6 +121611,12 @@ genera:
     pronunciation:
       phonetic: SAHR-ko-LES-teez
     description: Sarcolestes is an extinct genus of ankylosaurian ornithischian dinosaur from the Oxford Clay of England. The current type and only species is S. leedsi, and the holotype is a single partial left mandible. The genus and species were named in 1893 by Richard Lydekker, who thought they belonged to a theropod.
+    dispute:
+      summary: |
+        Sarcolestes is one of the earliest ankylosaurs (Callovian) but is known from a single fragmentary mandible, too incomplete to assign to a family. It is retained at Ankylosauria incertae sedis.
+      history:
+        - date: 2026-06-26
+          note: Parked at Ankylosauria incertae sedis, fragmentary holotype precludes family assignment (P2).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -121502,6 +121704,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
     authors: Lydekker, R.
@@ -123350,6 +123553,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
     authors: Owen, R.
     described: 1859
@@ -123672,7 +123876,7 @@ genera:
     described: 2012
   Scolosaurus:
     genus: Scolosaurus
-    parent: Euoplocephalini
+    parent: Ankylosaurinae
     etymology: From Greek 'skolos' (stake, thorn, prickle) + 'sauros' (lizard), meaning 'thorn lizard' or 'spiked lizard', referring to the spiky armor projections.
     pronunciation:
       phonetic: SKOH-lo-SOR-us
@@ -123789,7 +123993,6 @@ genera:
       - Ankylosauria
       - Ankylosauridae
       - Ankylosaurinae
-      - Euoplocephalini
     authors: Nopcsa, B. F.
     described: 1928
   Scutellosaurus:
@@ -123885,6 +124088,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
     authors: Colbert, E. H.
     described: 1981
@@ -124731,7 +124935,7 @@ genera:
     described: 2017
   Shamosaurus:
     genus: Shamosaurus
-    parent: Ankylosauridae
+    parent: Shamosaurinae
     pronunciation:
       phonetic: SHAH-maw-SAWR-us
     etymology: From Mandarin Chinese 'sha mo' (sand desert, the Chinese name for the Gobi Desert) + Greek 'sauros' (lizard), meaning 'Gobi desert lizard'.
@@ -124823,9 +125027,11 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
       - Ankylosauridae
+      - Shamosaurinae
     authors: Tumanova, T. A.
     described: 1983
   Shanag:
@@ -127551,6 +127757,12 @@ genera:
       phonetic: sin-AN-ky-lo-SAWR-us
     etymology: From Latin/Greek 'Sina' meaning 'China' or 'Chinese', Greek 'ankylos' meaning 'fused' or 'bent', and 'sauros' meaning 'lizard'; meaning 'Chinese fused lizard.'
     description: Sinankylosaurus is a dubious dinosaur genus known from the Late Cretaceous Hongtuya Formation of China. The genus contains a single species, Sinankylosaurus zhuchengensis, known from a partial right ilium (a pelvic bone). This specimen was originally described as belonging to an ankylosaur, although later research has disputed this identification, noting the lack of anatomical characters uniting Sinankylosaurus with this group.
+    dispute:
+      summary: |
+        Sinankylosaurus has been argued to lack ankylosaur diagnostic features (Zheng et al., 2021) and is treated as a nomen dubium. It is retained at Ankylosauria incertae sedis.
+      history:
+        - date: 2026-06-26
+          note: Parked at Ankylosauria incertae sedis, nomen dubium of uncertain diagnosability (P2).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -127624,6 +127836,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
     authors: Wang, K. B.; Zhang, Y. X.; Chen, J.; Chen, S. Q.; Wang, P. Y.
@@ -128156,6 +128369,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
     authors: Ulansky, R. E.
     described: 2014
@@ -130181,6 +130395,12 @@ genera:
     parent: Ankylosauria
     etymology: From Latin 'spica' meaning 'spike' and Latin 'mellum' meaning 'collar', referring to the spiked osteoderms fused to the rib of the holotype specimen
     description: Spicomellus is an extinct genus of unusual early ankylosaurian dinosaur from the El Mers III Formation (Bathonian age) of Morocco. The genus contains a single species, Spicomellus afer, representing the oldest named definitive ankylosaur. The species was initially described in 2021 based on a single rib with fused osteoderms, rendering its life appearance and relationships uncertain. In 2025, several additional bones, including osteoderms and cranial and postcranial remains, were described, revealing that it bears a unique array of spines over the body, including extremely elongated spikes around the neck and pelvis. It likely had a tail weapon, making it the oldest known ankylosaur with this structure.
+    dispute:
+      summary: |
+        Spicomellus is the earliest known definitive ankylosaur, but its position is unresolved; Maidment et al. (2025) recover it as an early-diverging ankylosaurid while reference works leave it unplaced to family. It is retained at Ankylosauria incertae sedis.
+      history:
+        - date: 2026-06-26
+          note: Parked at Ankylosauria incertae sedis, family placement of this earliest ankylosaur not firmly resolved (P2).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -130294,6 +130514,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
     authors: Maidment, S. C. R.; Strachan, S. J.; Ouarhache, D.; Scheyer, T. M.; Brown, E. E.; Fernandez, V.; Johanson, Z.; Raven, T. J.; Barrett, P. M.
@@ -131334,6 +131555,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
     authors: Bohlin, B.
     described: 1953
@@ -133791,6 +134013,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
       - Ankylosauridae
@@ -134752,11 +134975,17 @@ genera:
     described: 2005
   Taohelong:
     genus: Taohelong
-    parent: Nodosauridae
+    parent: Ankylosauria
     etymology: From Chinese Tao (the Tao River), he ("river"), and long ("dragon") - means "dragon of the Tao River"
     pronunciation:
       phonetic: dow-huh-long
     description: Taohelong is a genus of nodosaurid dinosaur known from Early Cretaceous rocks in north-central China. It is based on Gansu Dinosaur Museum (GSDM) 00021, fossils including a tail vertebra, ribs, a left ilium (the main bone of the hip), and bony armor recovered from the Hekou Group in the Lanzhou-Minhe Basin. The animal's armor includes part of a "sacral shield", a carpet of osteoderms over the hips found in some other ankylosaurians. Taohelong was named and described in 2013 by Yang Jing-Tao, You Hai-Lu, Li Da-Qing, and Kong De-Lai. The type species is Taohelong jinchengensis. The generic name means "dragon (long) of the river (he) Tao". The specific name refers to the provenance at Jincheng.
+    dispute:
+      summary: |
+        The placement of Taohelong is contested between Polacanthinae and Nodosaurinae, and analyses recover it outside the main ankylosaur clades on largely postcranial, incomplete material. It is retained at Ankylosauria incertae sedis.
+      history:
+        - date: 2026-06-26
+          note: Parked at Ankylosauria incertae sedis, family placement unresolved (P2).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -134828,7 +135057,6 @@ genera:
       - Genasauria
       - Thyreophora
       - Ankylosauria
-      - Nodosauridae
     authors: Yang, J.-T.; You, H.-L.; D.-Q. Li, D.-L. K.
     described: 2013
   Tapuiasaurus:
@@ -135325,6 +135553,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
       - Ankylosauridae
@@ -135746,6 +135975,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
     authors: Simmons, D. J.; Nash, E. G.
     described: 1965
@@ -138655,6 +138885,12 @@ genera:
       phonetic: tyen-CHIH-SAWR-us
     etymology: From Chinese meaning 'heavenly pool lizard', referring to Tianchi (Heavenly Lake) near the discovery locality in Xinjiang, China.
     description: Tianchisaurus, also invalidly called Tianchiasaurus and "Jurassosaurus", is a genus of ankylosaurian dinosaur from the Late Jurassic (Oxfordian-Kimmeridgian) Toutunhe Formation of China. While many later-diverging ankylosaurids had bony clubs at the tips of their tails, Tianchisaurus likely lacked such a structure.
+    dispute:
+      summary: |
+        Tianchisaurus is a nomen dubium; its material is lost and the holotype lacked distinguishing characters (Arbour and Currie, 2015), leaving it Ankylosauria indeterminate. It is retained at Ankylosauria incertae sedis.
+      history:
+        - date: 2026-06-26
+          note: Parked at Ankylosauria incertae sedis, nomen dubium with lost, undiagnostic material (P2).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -138749,6 +138985,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
     authors: Dong, Z.
@@ -138995,6 +139232,9 @@ genera:
     dispute:
       summary: |
         The validity of Tianzhenosaurus is contested. Sullivan (1999) and Arbour and Currie (2015) treated T. youngi as a junior subjective synonym of the Mongolian ankylosaurid Saichania chulsanensis, finding no taxonomically significant differences between the holotype skulls. In 2024, Pang, Li and Guo described a second species, T. chengi, treating Tianzhenosaurus as a valid genus. No broad consensus has been reached.
+      history:
+        - date: 2026-06-26
+          note: Placed at Ankylosaurinae, kept valid although Arbour and Currie (2015) synonymize it with Saichania (P5).
     diet: herbivore
     locomotion: quadrupedal
     integument: armored
@@ -139129,6 +139369,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
       - Ankylosauridae
@@ -142446,6 +142687,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
       - Ankylosauridae
@@ -146158,7 +146400,7 @@ genera:
     described: 2024
   Vectipelta:
     genus: Vectipelta
-    parent: Ankylosauria
+    parent: Nodosauridae
     etymology: Named after Vectis (the Latin name for the Isle of Wight), combined with Latin pelta meaning 'shield'; translates as 'Isle of Wight shield'
     pronunciation:
       phonetic: VEK-tee-PEL-tuh
@@ -146253,8 +146495,10 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
+      - Nodosauridae
     authors: Pond, S.; Strachan, S.-J.; Raven, T. J.; Simpson, M. I.; Morgan, K.; Maidment, S. C. R.
     described: 2023
   Vectiraptor:
@@ -154259,6 +154503,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
     authors: Yao, X.; Barrett, P. M.; Yang, L.; Xu, X.; Bi, S. D.
     described: 2022
@@ -154911,6 +155156,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
       - Ankylosauridae
@@ -155310,6 +155556,12 @@ genera:
       phonetic: juh-JAHNG-oh-SAWR-us
     etymology: Named after Zhejiang Province, eastern China where it was found, combined with Greek sauros meaning 'lizard'; translates as 'Zhejiang lizard'
     description: Zhejiangosaurus is an extinct genus of ankylosaurian dinosaur from the Upper Cretaceous (Cenomanian stage) of Zhejiang, eastern China. It was first named by a group of Chinese authors Lü Junchang, Jin Xingsheng, Sheng Yiming and Li Yihong in 2007 and the type species is Zhejiangosaurus lishuiensis ("from Lishui", where the fossil was found). It has no diagnostic features, and thus is a nomen dubium.
+    dispute:
+      summary: |
+        Zhejiangosaurus is a nomen dubium; Arbour and Currie (2015) found its preserved traits too widespread to diagnose. It is retained at Ankylosauria incertae sedis.
+      history:
+        - date: 2026-06-26
+          note: Parked at Ankylosauria incertae sedis, no diagnostic features (P2).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -155399,6 +155651,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
     authors: Lü, J.; Jin, X.; Sheng, Y.; Li, Y.; Wang, G.; Azuma, Y.
@@ -155706,11 +155959,17 @@ genera:
     described: 2008
   Zhongyuansaurus:
     genus: Zhongyuansaurus
-    parent: Ankylosauridae
+    parent: Shamosaurinae
     pronunciation:
       phonetic: johng-YWEN-SAWR-us
     etymology: Zhongyuan lizard
     description: Zhongyuansaurus is an extinct genus of ankylosaurid dinosaurs known from the Early Cretaceous Haoling Formation of what is now Henan Province, China. The genus contains two species, Z. luoyangensis, named in 2007, and Z. junchangi, named in 2025, both known from a single partial skeleton. Zhongyuansaurus is similar to Gobisaurus, prompting some researchers to regard the genera as synonymous.
+    dispute:
+      summary: |
+        The validity of Zhongyuansaurus is contested. Arbour and Currie (2015) found its remains indistinguishable from Gobisaurus and treated it as a junior synonym, a view followed by Jones and Viola (2026); it is retained as a valid shamosaurine pending broad consensus.
+      history:
+        - date: 2026-06-26
+          note: Placed at Ankylosauridae (Shamosaurinae), kept valid although recent work synonymizes it with Gobisaurus (P5).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -155782,9 +156041,11 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
       - Ankylosauridae
+      - Shamosaurinae
     authors: Xu, L.; Lü, J.; Zhang, X.; Jia, S.; Hu, W.; Zhang, J.; Wu, Y.; Ji, Q.
     described: 2007
   Zhuchengceratops:
@@ -156084,7 +156345,7 @@ genera:
     described: 2011
   Ziapelta:
     genus: Ziapelta
-    parent: Ankylosaurini
+    parent: Ankylosaurinae
     etymology: Named after the Zia sun symbol, the stylized sun emblem of the Zia Pueblo people of New Mexico, where the fossil was found, combined with Greek 'pelta' meaning 'small shield', referring to its ankylosaur armor.
     pronunciation:
       phonetic: zee-uh-PEL-tuh
@@ -156174,11 +156435,11 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
       - Ankylosauridae
       - Ankylosaurinae
-      - Ankylosaurini
     authors: Arbour, V. M.; Burns, M. E.; Sullivan, R. M.; Lucas, S. G.; Cantrell, A. K.; Fry, J.; Suazo, T. L.
     described: 2014
   Zigongosaurus:
@@ -156795,7 +157056,7 @@ genera:
     described: 2003
   Zuul:
     genus: Zuul
-    parent: Ankylosaurini
+    parent: Ankylosaurinae
     etymology: Named after Zuul, the fictional monster from the 1984 film Ghostbusters, due to the resemblance of its skull to the creature's face
     pronunciation:
       ipa: /ˈzuːl/
@@ -156893,10 +157154,10 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Thyreophora
       - Ankylosauria
       - Ankylosauridae
       - Ankylosaurinae
-      - Ankylosaurini
     authors: Arbour, V. M.; Evans, D. C.
     described: 2017
