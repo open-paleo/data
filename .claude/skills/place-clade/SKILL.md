@@ -205,11 +205,21 @@ for the clade's major group** — the encyclopedia is split three ways:
 - `jones2026c` — *…: Theropods* (Theropoda)
 
 Pick the volume that contains the clade you are placing; a clade straddling a
-boundary (rare) checks against both. Dispatch a firewalled agent over the
-corpus markdown for that volume, asking where it places each member taxon. Use
-it as a **sanity signal** on the prevailing view (P3), never as the deciding
-source. Where Jones and the primary analyses disagree, the primary analyses win
-and the disagreement is dispute material.
+boundary (rare) checks against both.
+
+**Run Jones AFTER the Step 4 review agents return, not in parallel — it is a
+cross-check, so it should react to the primary findings.** Wait for the
+dedicated-analysis JSON, pull out the *contested* claims (surprises, clade
+moves, taxa ejected from the clade, synonymies, anything where the analyses
+disagree with each other or with the current tree), then dispatch a firewalled
+Jones agent that is GIVEN those specific claims and asked to **confirm /
+dispute / call nuanced-or-silent** each one against the Jones text, with a
+grounding quote. (A blind "where does Jones place each taxon?" pass is an
+acceptable fallback for the uncontested bulk, but the adjudication of the
+contested claims is the point.) Use Jones as a **sanity signal** on the
+prevailing view (P3), never as the deciding source. Where Jones and the primary
+analyses disagree, the primary analyses win and the disagreement is dispute
+material.
 
 ## Step 6 — Decide the structure (P4) and the rebuild plan
 
