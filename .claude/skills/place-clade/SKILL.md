@@ -165,6 +165,19 @@ fabricate a placement (`feedback_no_seeding_from_recall`).
 
 ## Step 4 — Firewalled phylogeny review
 
+**Before dispatching, confirm EVERY paper you are about to feed an agent is
+actually relevant — don't assume relevance from the key name or from a
+recollection that "there should be a paper by this author/year."** A key
+existing in the corpus (`[ -f .../<key>.md ]` → "HAVE") only proves a file is
+present; it says nothing about whether that paper is the one you need. Grep the
+bib title (and/or the markdown's first header) for each key and confirm before
+feeding it. The corpus entry may be a perfectly correct, well-keyed paper that
+is simply irrelevant to your clade — e.g. `prieto-márquez2011a` is correctly a
+*Plateosaurus* skull redescription, and feeding it to a hadrosauroid review was
+*my* bad assumption, not a corpus error. Drop any irrelevant paper from the
+reading list and, if the paper you actually need is absent, treat that as a Step
+3 sourcing gap (`feedback_fetch_primary_not_summary`).
+
 For each fetched paper (or logical group), dispatch a **firewalled review
 agent** (Sonnet, `general-purpose`) that reads ONLY that markdown and returns
 **JSON only**:
