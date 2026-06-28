@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-06-27T23:51:16.672Z",
+    "built_at": "2026-06-28T05:41:30.735Z",
     "clade_count": 227,
     "genus_count": 1398,
     "license": "CC-BY-4.0",
@@ -325,9 +325,11 @@
                                     "Styracosterna": {
                                       "Hadrosauriformes": {
                                         "Hadrosauroidea": {
-                                          "Hadrosauridae": {
-                                            "Saurolophinae": {},
-                                            "Lambeosaurinae": {}
+                                          "Hadrosauromorpha": {
+                                            "Hadrosauridae": {
+                                              "Saurolophinae": {},
+                                              "Lambeosaurinae": {}
+                                            }
                                           }
                                         }
                                       }
@@ -335,7 +337,6 @@
                                     "Dryosauridae": {},
                                     "Ankylopollexia": {
                                       "Neoiguanodontia": {
-                                        "Hadrosauromorpha": {},
                                         "Iguanodontidae": {}
                                       }
                                     }
@@ -3114,6 +3115,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae"
       ],
       "type_genus": "Hadrosaurus",
@@ -3152,7 +3154,7 @@
       ]
     },
     "Hadrosauriformes": {
-      "description": "Hadrosauriformes is a clade of styracosternan ornithopod dinosaurs that includes the hadrosaurs (duck-billed dinosaurs) and their immediate relatives such as Iguanodon. Hadrosauriforms are characterized by well- developed dental batteries consisting of multiple stacked replacement teeth, broad and flattened snouts (often described as duck-billed), and large body size. The clade was globally distributed during the Cretaceous period and represents one of the most successful ornithischian radiations.\n",
+      "description": "Hadrosauriformes is the clade of styracosternan ornithopods containing the most recent common ancestor of Iguanodon and Hadrosaurus and all its descendants. It unites the iguanodontid-grade forms with the hadrosauroids and the duck-billed Hadrosauridae, and its members are large herbivores with increasingly complex dental batteries and broad, edentulous bills. The clade was globally distributed and represents one of the most successful ornithischian radiations of the Cretaceous.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -3174,27 +3176,40 @@
         "Hadrosauriformes"
       ],
       "described": 1997,
-      "authors": "Sereno",
+      "authors": "Sereno, P. C.",
       "diagnostic_features": [
-        "Well-developed dental battery with multiple replacement teeth in each tooth position",
-        "Broad, flattened premaxilla forming a duck-like bill",
-        "Reduced or absent thumb spike compared to basal styracosternans",
-        "Elongate and dorsoventrally flattened rostrum",
-        "Three or more replacement teeth per tooth family"
+        "Dental battery with multiple stacked replacement teeth per tooth position",
+        "Broad, flattened, edentulous premaxillary bill",
+        "Reduction or loss of the manual pollex spike in derived members",
+        "Elongate, dorsoventrally low rostrum"
       ],
       "references": [
         {
           "id": "sereno1997",
-          "authors": "Sereno, P.C.",
+          "authors": "Sereno, P. C.",
           "year": 1997,
           "title": "The origin and evolution of dinosaurs",
           "journal": "Annual Review of Earth and Planetary Sciences",
           "volume": "25",
-          "pages": "435-489"
+          "pages": "435-489",
+          "notes": "Named Hadrosauriformes."
+        },
+        {
+          "id": "madzia2021",
+          "authors": "Madzia, D.; Arbour, V. M.; Boyd, C. A.; Farke, A. A.; Cruzado-Caballero, P.; Evans, D. C.",
+          "year": 2021,
+          "title": "The phylogenetic nomenclature of ornithischian dinosaurs",
+          "journal": "PeerJ",
+          "volume": "9",
+          "pages": "e12362",
+          "doi": "10.7717/peerj.12362",
+          "url": "http://dx.doi.org/10.7717/peerj.12362",
+          "notes": "Provides the modern phylogenetic definition of Hadrosauriformes."
         }
       ]
     },
     "Hadrosauroidea": {
+      "description": "Hadrosauroidea is the superfamily of hadrosauriform ornithopods containing the duck-billed Hadrosauridae and a long grade of non-hadrosaurid relatives such as Probactrosaurus, Eolambia, Bactrosaurus, and Telmatosaurus. Its members track the acquisition of the hadrosaurid dental battery and broad bill, and the clade records the Cretaceous radiation of duck-billed dinosaurs across Asia, North America, Europe, and beyond. The basal grade is poorly resolved, but the clade Hadrosauromorpha unites the forms closest to Hadrosauridae.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -3215,9 +3230,43 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea"
+      ],
+      "type_genus": "Hadrosaurus",
+      "described": 1869,
+      "authors": "Cope, E. D.",
+      "diagnostic_features": [
+        "Dental battery with strongly reduced or absent cingula on the crowns",
+        "Loss of the manual pollex (thumb spike)",
+        "Broad, transversely expanded edentulous premaxillary bill",
+        "Three or more functional teeth per vertical tooth family"
+      ],
+      "references": [
+        {
+          "id": "cope1869b",
+          "authors": "Cope, E. D.",
+          "year": 1869,
+          "title": "Synopsis of the extinct Batrachia, Reptilia, and Aves of North America",
+          "journal": "Transactions of the American Philosophical Society",
+          "volume": "14",
+          "pages": "1-252",
+          "notes": "Hadrosauroidea dates from Cope's naming of Hadrosauridae by ICZN coordination of family-group names."
+        },
+        {
+          "id": "madzia2021",
+          "authors": "Madzia, D.; Arbour, V. M.; Boyd, C. A.; Farke, A. A.; Cruzado-Caballero, P.; Evans, D. C.",
+          "year": 2021,
+          "title": "The phylogenetic nomenclature of ornithischian dinosaurs",
+          "journal": "PeerJ",
+          "volume": "9",
+          "pages": "e12362",
+          "doi": "10.7717/peerj.12362",
+          "url": "http://dx.doi.org/10.7717/peerj.12362",
+          "notes": "Provides the modern phylogenetic definition of Hadrosauroidea."
+        }
       ]
     },
     "Hadrosauromorpha": {
+      "description": "Hadrosauromorpha is the clade of hadrosauroids comprising Hadrosauridae and the non-hadrosaurid forms closer to it than to Probactrosaurus — the grade of taxa immediately ancestral to the duck-billed dinosaurs, including Bactrosaurus, Gilmoreosaurus, Telmatosaurus, and Tethyshadros. Although the internal relationships of these taxa are poorly resolved, the clade is consistently recovered and is diagnosed by a suite of derived cranial and dental characters approaching the hadrosaurid condition.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -3235,9 +3284,44 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
-        "Ankylopollexia",
-        "Neoiguanodontia",
+        "Styracosterna",
+        "Hadrosauriformes",
+        "Hadrosauroidea",
         "Hadrosauromorpha"
+      ],
+      "described": 2014,
+      "authors": "Norman, D. B.",
+      "diagnostic_features": [
+        "Loss of the surangular foramen",
+        "Shallow embayment of the jugal wing of the quadrate",
+        "Reduction of the antorbital fenestra",
+        "Further elaboration of the dental battery toward the hadrosaurid condition"
+      ],
+      "references": [
+        {
+          "id": "norman2014",
+          "authors": "Norman, D. B.",
+          "year": 2014,
+          "title": "On the history, osteology, and systematic position of the Wealden (Hastings group) dinosaur Hypselospinus fittoni (Iguanodontia: Styracosterna)",
+          "journal": "Zoological Journal of the Linnean Society",
+          "volume": "173",
+          "pages": "92-189",
+          "doi": "10.1111/zoj.12193",
+          "url": "http://dx.doi.org/10.1111/zoj.12193",
+          "notes": "Named Hadrosauromorpha."
+        },
+        {
+          "id": "madzia2021",
+          "authors": "Madzia, D.; Arbour, V. M.; Boyd, C. A.; Farke, A. A.; Cruzado-Caballero, P.; Evans, D. C.",
+          "year": 2021,
+          "title": "The phylogenetic nomenclature of ornithischian dinosaurs",
+          "journal": "PeerJ",
+          "volume": "9",
+          "pages": "e12362",
+          "doi": "10.7717/peerj.12362",
+          "url": "http://dx.doi.org/10.7717/peerj.12362",
+          "notes": "Provides the modern phylogenetic definition of Hadrosauromorpha."
+        }
       ]
     },
     "Halszkaraptorinae": {
@@ -3501,6 +3585,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Lambeosaurinae"
       ],
@@ -5600,6 +5685,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Saurolophinae"
       ],
@@ -6129,7 +6215,7 @@
       ]
     },
     "Styracosterna": {
-      "description": "Styracosterna, meaning \"spiked stern,\" is a clade of ankylopollexian ornithopod dinosaurs characterized by a spike-like first manual ungual (thumb spike) that is more developed and conical than in basal ankylopollexians. The clade includes Iguanodon and more derived ornithopods leading to Hadrosauriformes. Styracosternans became the dominant large-bodied herbivores in many Early to Late Cretaceous ecosystems worldwide.\n",
+      "description": "Styracosterna is a clade of ankylopollexian ornithopod dinosaurs containing Iguanodon and all taxa closer to it than to Camptosaurus. Its members are medium- to large-bodied iguanodontians with a conical, spike-like manual pollex and increasingly specialized dentition, and the clade encompasses the classic \"iguanodont-grade\" forms grading into Hadrosauriformes and ultimately the duck-billed Hadrosauridae. Styracosternans were dominant large herbivores across Early to Late Cretaceous ecosystems worldwide.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -6150,23 +6236,35 @@
         "Styracosterna"
       ],
       "described": 1986,
-      "authors": "Sereno",
+      "authors": "Sereno, P. C.",
       "diagnostic_features": [
-        "Well-developed, spike-like conical pollex ungual",
-        "Loss of manual digit V phalanges in many members",
-        "Elongate snout with expanded and edentulous premaxilla",
-        "Hoof-like unguals on pedal digits",
-        "Maxillary tooth rows set medially with a fleshy cheek inferred"
+        "Conical, spike-like manual pollex ungual",
+        "Elongate snout with an expanded, edentulous premaxilla",
+        "Reduction of the phalanges in the lateral manual digits",
+        "Hoof-like unguals on the pedal digits"
       ],
       "references": [
         {
-          "id": "sereno1986styracosterna",
-          "authors": "Sereno, P.C.",
+          "id": "sereno1986",
+          "authors": "Sereno, P. C.",
           "year": 1986,
-          "title": "Phylogeny of the bird-hipped dinosaurs (Order Ornithischia)",
+          "title": "Phylogeny of the bird-hipped dinosaurs (order Ornithischia)",
           "journal": "National Geographic Research",
           "volume": "2",
-          "pages": "234-256"
+          "pages": "234-256",
+          "notes": "Named Styracosterna."
+        },
+        {
+          "id": "madzia2021",
+          "authors": "Madzia, D.; Arbour, V. M.; Boyd, C. A.; Farke, A. A.; Cruzado-Caballero, P.; Evans, D. C.",
+          "year": 2021,
+          "title": "The phylogenetic nomenclature of ornithischian dinosaurs",
+          "journal": "PeerJ",
+          "volume": "9",
+          "pages": "e12362",
+          "doi": "10.7717/peerj.12362",
+          "url": "http://dx.doi.org/10.7717/peerj.12362",
+          "notes": "Provides the modern phylogenetic definition of Styracosterna."
         }
       ]
     },
@@ -8876,6 +8974,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Saurolophinae"
       ],
@@ -9664,6 +9763,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Lambeosaurinae"
       ],
@@ -10062,6 +10162,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Lambeosaurinae"
       ],
@@ -11906,6 +12007,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Saurolophinae"
       ],
@@ -12315,6 +12417,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Lambeosaurinae"
       ],
@@ -17865,6 +17968,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Lambeosaurinae"
       ],
@@ -18384,6 +18488,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Saurolophinae"
       ],
@@ -19405,6 +19510,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Lambeosaurinae"
       ],
@@ -22184,6 +22290,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae"
       ],
       "authors": "Prieto-Márquez, A.; Wagner, J. R.; Lehman, T.",
@@ -22747,6 +22854,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Lambeosaurinae"
       ],
@@ -24400,6 +24508,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Lambeosaurinae"
       ],
@@ -25472,6 +25581,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae"
       ],
       "authors": "Shilin, P. V.; Suslov, Y. V.",
@@ -27711,6 +27821,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Saurolophinae"
       ],
@@ -29352,7 +29463,7 @@
     },
     "Bactrosaurus": {
       "genus": "Bactrosaurus",
-      "parent": "Hadrosauroidea",
+      "parent": "Hadrosauromorpha",
       "etymology": "From Greek baktron (βάκτρον) meaning 'club' or 'walking stick' + Greek sauros (σαῦρος) meaning 'lizard'; overall meaning 'club lizard'.",
       "pronunciation": {
         "phonetic": "BAK-tro-SAWR-us",
@@ -29504,7 +29615,8 @@
         "Dryomorpha",
         "Styracosterna",
         "Hadrosauriformes",
-        "Hadrosauroidea"
+        "Hadrosauroidea",
+        "Hadrosauromorpha"
       ],
       "authors": "Gilmore, C. W.",
       "described": 1933
@@ -32180,6 +32292,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae"
       ],
       "authors": "Maryanska, T.; Osmólska, H.",
@@ -32487,6 +32600,15 @@
         "phonetic": "bah-TEE-row-SOR-us"
       },
       "description": "Batyrosaurus is an extinct genus of herbivorous basal hadrosauroid dinosaur known from the Late Cretaceous Bostobe Formation (Santonian to Campanian stage) of central Kazakhstan. It contains a single species, Batyrosaurus rozhdestvenskyi. It is possible that Batyrosaurus represents the same taxon as the doubtful Arstanosaurus akkurganensis as both were found from the same formation.",
+      "dispute": {
+        "summary": "Batyrosaurus rozhdestvenskyi is generally placed within basal Hadrosauroidea (Lockwood and others, 2021; Jones, 2026), though it retains a surangular foramen and at least one analysis recovers it more basally among Styracosterna.\n",
+        "history": [
+          {
+            "date": "2026-06-27",
+            "note": "Placed at Hadrosauroidea following the prevailing view (P2)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "bipedal",
       "diagnostic_features": [
@@ -35039,6 +35161,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Lambeosaurinae"
       ],
@@ -35635,6 +35758,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Saurolophinae"
       ],
@@ -37260,6 +37384,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Saurolophinae"
       ],
@@ -38105,6 +38230,15 @@
         "phonetic": "bri-STO-nee-us"
       },
       "description": "Brighstoneus is a genus of hadrosauriform dinosaur from the Early Cretaceous Wessex Formation of the Isle of Wight, England. The genus contains a single species, Brighstoneus simmondsi, known from a partial skeleton.",
+      "dispute": {
+        "summary": "Brighstoneus simmondsi was described as a basal hadrosauriform (Lockwood and others, 2021; followed by Jones, 2026), but Lockwood and others (2024) recovered it outside Hadrosauriformes as the earliest-diverging hadrosauroid.\n",
+        "history": [
+          {
+            "date": "2026-06-27",
+            "note": "Placed at Hadrosauriformes following the original description and Jones (2026); the basal-hadrosauroid result of Lockwood and others (2024) reflected, not adopted (P2)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "facultative",
       "paleoenvironment": [
@@ -42032,6 +42166,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Lambeosaurinae"
       ],
@@ -42206,6 +42341,15 @@
       "parent": "Hadrosauroidea",
       "etymology": "Named for Cariocecus (also spelled Cariociecus), the Iberian god of war who became syncretised with Mars and Ares.",
       "description": "Cariocecus bocagei is an extinct species of hadrosauroid ornithopod dinosaurs known from the Early Cretaceous of what is now Portugal. C. bocagei is the only species in the genus Cariocecus. It is known from a partial skull that was discovered in 2016 and subsequently given a scientific name and description in 2025. This specimen represents the first iguanodontian skull to be found in the country.",
+      "dispute": {
+        "summary": "Cariocecus bocagei is a basal hadrosauroid from the Lower Cretaceous of Portugal described by Bertozzo and others (2025).\n",
+        "history": [
+          {
+            "date": "2026-06-27",
+            "note": "Placed at Hadrosauroidea following the describers (Bertozzo and others, 2025); the describing paper was not available for review this pass, so the placement follows secondary signals and is provisional (P2)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "facultative",
       "paleoenvironment": [
@@ -43174,7 +43318,7 @@
     },
     "Cedrorestes": {
       "genus": "Cedrorestes",
-      "parent": "Hadrosauroidea",
+      "parent": "Styracosterna",
       "etymology": "From Latin 'cedrus' meaning 'cedar' and Greek 'oros' meaning 'mountain' (after the Cedar Mountain Formation where the fossil was found), with Greek suffix '-etes' meaning 'dweller'.",
       "pronunciation": {
         "phonetic": "SEE-dro-RESS-teez"
@@ -43283,9 +43427,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
-        "Styracosterna",
-        "Hadrosauriformes",
-        "Hadrosauroidea"
+        "Styracosterna"
       ],
       "authors": "Gilpin, D.; DiCroce, T.; K. Carpenter",
       "described": 2007
@@ -45864,6 +46006,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Lambeosaurinae"
       ],
@@ -48991,6 +49134,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae"
       ],
       "authors": "Cope, E. D.",
@@ -49378,13 +49522,22 @@
     },
     "Claosaurus": {
       "genus": "Claosaurus",
-      "parent": "Hadrosauroidea",
+      "parent": "Hadrosauromorpha",
       "pronunciation": {
         "phonetic": "KLAY-uh-SOR-uhs",
         "ipa": "/ˌkleɪəˈsɔːrəs/"
       },
       "etymology": "From Greek klao (κλάω) meaning 'broken' and Greek sauros (σαῦρος) meaning 'lizard'. Full meaning: 'broken lizard', referring to the unusual position of the fossils when discovered.",
       "description": "Claosaurus is a genus of hadrosauroid dinosaur that lived during the Late Cretaceous Period (Santonian-Campanian) of what is now North America. The type and only known valid species is Claosaurus agilis. Traditionally classified as an early member of the family Hadrosauridae, a 2008 analysis found Claosaurus to be outside of the clade containing Hadrosaurus and other hadrosaurids, making it the closest non-hadrosaurid relative of true hadrosaurids within the clade Hadrosauromorpha.",
+      "dispute": {
+        "summary": "Claosaurus agilis has at times been called a basal hadrosaurid, but recent analyses consistently place it among the derived non-hadrosaurid hadrosauromorphs, outside Hadrosauridae (Tsogtbaatar and others, 2019; Jones, 2026).\n",
+        "history": [
+          {
+            "date": "2026-06-27",
+            "note": "Placed at Hadrosauromorpha; the historical basal-hadrosaurid interpretation reflected, not adopted (P2)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "facultative",
       "paleoenvironment": [
@@ -49518,7 +49671,8 @@
         "Dryomorpha",
         "Styracosterna",
         "Hadrosauriformes",
-        "Hadrosauroidea"
+        "Hadrosauroidea",
+        "Hadrosauromorpha"
       ],
       "authors": "Marsh, O. C.",
       "described": 1890
@@ -49913,6 +50067,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Saurolophinae"
       ],
@@ -52307,6 +52462,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Lambeosaurinae"
       ],
@@ -53666,6 +53822,15 @@
         "phonetic": "kum-NOH-ree-uh"
       },
       "description": "Cumnoria is a genus of basal iguanodontian dinosaur that lived during the Late Jurassic period (Kimmeridgian age) in what is now Oxfordshire, United Kingdom.",
+      "dispute": {
+        "summary": "Cumnoria prestwichii is usually recovered as a basal styracosternan (Madzia and others, 2021) but has also been placed as a non-ankylopollexian iguanodontian just outside Ankylopollexia (Maidment, 2023; Jones, 2026).\n",
+        "history": [
+          {
+            "date": "2026-06-27",
+            "note": "Placed at Styracosterna following the reference phylogeny (Madzia and others, 2021); the more basal position reflected, not adopted (P2)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "facultative",
       "paleoenvironment": [
@@ -54411,6 +54576,15 @@
         "phonetic": "da-KO-tuh-don"
       },
       "description": "Dakotadon is a genus of iguanodont dinosaur from the Early Cretaceous (Valanginian to Barremian) Lakota Formation of South Dakota, USA, known from a partial skull. It was first described in 1989 as Iguanodon lakotaensis, by David B. Weishampel and Philip R. Bjork. Its assignment has been controversial. Some researchers suggested that \"I.\" lakotaensis was more basal than I. bernissartensis, and related to Theiophytalia, but David Norman has suggested that it was a synonym of I. bernissartensis. Gregory S. Paul, working on a revision of iguanodont species, gave \"I.\" lakotaensis its own genus, Dakotadon, in 2008. He measured its length at 6 meters (20 ft) and body mass at 1 metric ton (1.1 short tons).",
+      "dispute": {
+        "summary": "Dakotadon lakotaensis (originally Iguanodon lakotaensis) is treated as a valid basal styracosternan by some (Madzia and others, 2021), but its skull closely resembles Iguanodon bernissartensis and its validity has been questioned (Norman, 2014).\n",
+        "history": [
+          {
+            "date": "2026-06-27",
+            "note": "Placed at Styracosterna; possible synonymy with Iguanodon reflected, not adopted (P5)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "facultative",
       "paleoenvironment": [
@@ -57641,6 +57815,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae"
       ],
       "authors": "Cope, E. D.",
@@ -60077,6 +60252,15 @@
       },
       "etymology": "From Latin draco (dragon) + Ancient Greek onyx (claw): 'dragon claw'.",
       "description": "Draconyx is a genus of ornithopod dinosaur from the Late Jurassic of what is now Portugal. It was found in the Lourinhã Formation in 1991, and described by Octávio Mateus and Miguel Telles Antunes in 2001.",
+      "dispute": {
+        "summary": "Draconyx loureiroi was originally referred to Camptosauridae (Mateus and Antunes, 2001) but recent analyses place it among basal Styracosterna (Madzia and others, 2021; Jones, 2026).\n",
+        "history": [
+          {
+            "date": "2026-06-27",
+            "note": "Placed at Styracosterna following recent analyses; the camptosaurid interpretation reflected, not adopted (P3)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "facultative",
       "paleoenvironment": [
@@ -64156,6 +64340,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Saurolophinae"
       ],
@@ -66443,12 +66628,21 @@
     },
     "Eolambia": {
       "genus": "Eolambia",
-      "parent": "Hadrosauroidea",
+      "parent": "Hadrosauromorpha",
       "pronunciation": {
         "phonetic": "EE-oh-LAM-bee-a"
       },
       "etymology": "From Greek eos (dawn) + Lambeosaurinae: 'dawn lambeosaurine', indicating it is an early relative of lambeosaurine hadrosaurs.",
       "description": "Eolambia is a genus of herbivorous hadrosauroid dinosaur from the early Late Cretaceous of the United States. It contains a single species, E. caroljonesa, named by paleontologist James Kirkland in 1998. The type specimen of Eolambia was discovered by Carole and Ramal Jones in 1993; the species name honors Carole. Since then, hundreds of bones have been discovered from both adults and juveniles, representing nearly every element of the skeleton. All of the specimens have thus far been found in Emery County, Utah, in a layer of rock known as the Mussentuchit Member of the Cedar Mountain Formation.",
+      "dispute": {
+        "summary": "Eolambia caroljonesa was originally described as a lambeosaurine hadrosaurid (Kirkland, 1998) but is now consistently recovered as a basal hadrosauromorph, well outside Hadrosauridae (McDonald and others, 2017; Jones, 2026).\n",
+        "history": [
+          {
+            "date": "2026-06-27",
+            "note": "Placed at Hadrosauromorpha; the original lambeosaurine interpretation reflected, not adopted (P3)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "facultative",
       "paleoenvironment": [
@@ -66577,7 +66771,8 @@
         "Dryomorpha",
         "Styracosterna",
         "Hadrosauriformes",
-        "Hadrosauroidea"
+        "Hadrosauroidea",
+        "Hadrosauromorpha"
       ],
       "authors": "Kirkland, J. I.",
       "described": 1998
@@ -67368,6 +67563,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae"
       ],
       "authors": "Prieto-Marquez, A.; Erickson, G. M.; Ebersole, J. A.",
@@ -72700,9 +72896,18 @@
     },
     "Fukuisaurus": {
       "genus": "Fukuisaurus",
-      "parent": "Hadrosauroidea",
+      "parent": "Hadrosauriformes",
       "etymology": "From Fukui (the prefecture in Japan where it was discovered) + Greek sauros, 'lizard'; means 'Fukui lizard'. The article notes that Fukui itself means 'Fortunate Well' in Japanese",
       "description": "Fukuisaurus is a genus of herbivorous ornithopod dinosaur that lived during the Early Cretaceous in what is now Japan. The type species is Fukuisaurus tetoriensis, which was named and described in 2003.",
+      "dispute": {
+        "summary": "Fukuisaurus tetoriensis has been placed in basal Styracosterna (Madzia and others, 2021) and among Hadrosauriformes (Jones, 2026), and in some analyses as a basal hadrosauroid.\n",
+        "history": [
+          {
+            "date": "2026-06-27",
+            "note": "Placed at Styracosterna, the least-inclusive clade these results agree on (P2)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "facultative",
       "paleoenvironment": [
@@ -72834,8 +73039,7 @@
         "Iguanodontia",
         "Dryomorpha",
         "Styracosterna",
-        "Hadrosauriformes",
-        "Hadrosauroidea"
+        "Hadrosauriformes"
       ],
       "authors": "Kobayashi, Y.; Azuma, Y.",
       "described": 2003
@@ -73891,7 +74095,7 @@
     },
     "Fylax": {
       "genus": "Fylax",
-      "parent": "Hadrosauroidea",
+      "parent": "Hadrosauromorpha",
       "etymology": "Keeper; from modern Greek fýlax meaning keeper or guardian",
       "pronunciation": {
         "phonetic": "FYE-laks"
@@ -74005,7 +74209,8 @@
         "Dryomorpha",
         "Styracosterna",
         "Hadrosauriformes",
-        "Hadrosauroidea"
+        "Hadrosauroidea",
+        "Hadrosauromorpha"
       ],
       "authors": "Prieto-Marquez, A.; Carrera Farias, M.",
       "described": 2021
@@ -77333,7 +77538,7 @@
     },
     "Gilmoreosaurus": {
       "genus": "Gilmoreosaurus",
-      "parent": "Hadrosauroidea",
+      "parent": "Hadrosauromorpha",
       "pronunciation": {
         "phonetic": "GIL-mohr-o-SAWR-us"
       },
@@ -77489,7 +77694,8 @@
         "Dryomorpha",
         "Styracosterna",
         "Hadrosauriformes",
-        "Hadrosauroidea"
+        "Hadrosauroidea",
+        "Hadrosauromorpha"
       ],
       "authors": "Brett-Surman, M. K.",
       "described": 1979
@@ -77831,11 +78037,11 @@
       },
       "description": "Glishades is a genus of hadrosauroid dinosaur that lived in the Late Cretaceous in North America. It is based on AMNH 27414, two partial premaxillae discovered in the Upper Cretaceous rocks of the upper Two Medicine Formation in Montana, dated to about 74.5 million years ago. Cladistic analysis conducted by Prieto-Márquez suggests that Glishades is a non-hadrosaurid hadrosauroid, probably a sister taxon to Bactrosaurus johnsoni. The type species is Glishades ericksoni. In 2012, Campione et al. suggest the holotype specimen of Glishades might actually be an indeterminate juvenile saurolophine hadrosaurid and consider it to be a nomen dubium.",
       "dispute": {
-        "summary": "Glishades ericksoni was excluded from Hadrosauridae by Prieto-Márquez (2010), who recovered it as a non-hadrosaurid hadrosauroid; Campione and others (2012) further regarded it as a nomen dubium possibly representing a juvenile saurolophine.\n",
+        "summary": "Glishades ericksoni was described as a non-hadrosaurid hadrosauroid (Prieto-Márquez, 2010) but is widely regarded as a nomen dubium, its holotype possibly a juvenile saurolophine (Campione and others, 2012; Jones, 2026).\n",
         "history": [
           {
             "date": "2026-06-27",
-            "note": "Reparented from Hadrosauridae to Hadrosauroidea incertae sedis following Prieto-Márquez (2010); nomen dubium status noted (P1)."
+            "note": "Placed at Hadrosauroidea incertae sedis; nomen dubium (P2)."
           }
         ]
       },
@@ -78173,7 +78379,7 @@
     },
     "Gobihadros": {
       "genus": "Gobihadros",
-      "parent": "Hadrosauroidea",
+      "parent": "Hadrosauromorpha",
       "pronunciation": {
         "phonetic": "GOH-bee-HAD-ros"
       },
@@ -78366,7 +78572,8 @@
         "Dryomorpha",
         "Styracosterna",
         "Hadrosauriformes",
-        "Hadrosauroidea"
+        "Hadrosauroidea",
+        "Hadrosauromorpha"
       ],
       "authors": "Tsogtbaatar, K.; Weishampel, D. B.; Evans, D. C.; Watabe, M.",
       "described": 2019
@@ -79543,6 +79750,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Saurolophinae"
       ],
@@ -79682,7 +79890,7 @@
     },
     "Gonkoken": {
       "genus": "Gonkoken",
-      "parent": "Hadrosauroidea",
+      "parent": "Hadrosauromorpha",
       "etymology": "Similar to a wild duck or swan; from the Aonikenk (Tehuelche) language of Patagonia",
       "pronunciation": {
         "phonetic": "gon-KO-ken"
@@ -79814,7 +80022,8 @@
         "Dryomorpha",
         "Styracosterna",
         "Hadrosauriformes",
-        "Hadrosauroidea"
+        "Hadrosauroidea",
+        "Hadrosauromorpha"
       ],
       "authors": "Alarcón-Muñoz, J.; Vargas, A. O.; Püschel, H. P.; Soto-Acuña, S.; Manríquez, L.; Leppe, M.; Kaluza, J.; Milla, V.; Gutstein, C. S.; Palma-Liberona, J.; Stinnesbeck, W.; Frey, E.; Pino, J. P.; Bajor, D.; Núñez, E.; Ortiz, H.; Rubilar-Rogers, D.; Cruzado-Caballero, P.",
       "described": 2023
@@ -81074,6 +81283,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Saurolophinae"
       ],
@@ -81862,6 +82072,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae"
       ],
       "authors": "Leidy, J.",
@@ -86793,6 +87004,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Saurolophinae"
       ],
@@ -88014,7 +88226,7 @@
     },
     "Huehuecanauhtlus": {
       "genus": "Huehuecanauhtlus",
-      "parent": "Hadrosauroidea",
+      "parent": "Hadrosauromorpha",
       "etymology": "From Nahuatl 'huehuetl' meaning 'ancient' and 'canauhtli' meaning 'duck', giving 'ancient duck', in reference to its hadrosauroid (duck-billed) affinities; the specific name tiquichensis honors the town of Tiquicheo, Michoacán.",
       "pronunciation": {
         "phonetic": "UE-UE-CANA-UHh-TLUS"
@@ -88151,7 +88363,8 @@
         "Dryomorpha",
         "Styracosterna",
         "Hadrosauriformes",
-        "Hadrosauroidea"
+        "Hadrosauroidea",
+        "Hadrosauromorpha"
       ],
       "authors": "Ramírez-Velasco, A. A.; Benammi, M.; Prieto-Márquez, A.; Ortega, J. A.; Hernández-Rivera, R.",
       "described": 2012
@@ -88884,6 +89097,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Lambeosaurinae"
       ],
@@ -89513,6 +89727,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae"
       ],
       "authors": "Cope, E. D.",
@@ -90831,7 +91046,7 @@
     },
     "Iguanodon": {
       "genus": "Iguanodon",
-      "parent": "Styracosterna",
+      "parent": "Hadrosauriformes",
       "etymology": "From the modern lizard 'Iguana' and Greek 'odous/odontos' (tooth); meaning 'iguana tooth', referring to Mantell's original recognition that the fossil teeth resembled those of living iguanas at much larger scale.",
       "pronunciation": {
         "ipa": "/ɪˈɡwɑːnədɒn/",
@@ -91063,7 +91278,8 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
-        "Styracosterna"
+        "Styracosterna",
+        "Hadrosauriformes"
       ],
       "authors": "Mantell, G.",
       "described": 1825
@@ -94955,6 +95171,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Lambeosaurinae"
       ],
@@ -95394,7 +95611,7 @@
     },
     "Jeyawati": {
       "genus": "Jeyawati",
-      "parent": "Hadrosauroidea",
+      "parent": "Hadrosauromorpha",
       "etymology": "From the Zuni language meaning \"grinding mouth\"",
       "pronunciation": {
         "phonetic": "HEY-a-WAH-tee"
@@ -95528,7 +95745,8 @@
         "Dryomorpha",
         "Styracosterna",
         "Hadrosauriformes",
-        "Hadrosauroidea"
+        "Hadrosauroidea",
+        "Hadrosauromorpha"
       ],
       "authors": "McDonald, A. T.; Wolfe, D. G.; Kirkland, J. I.",
       "described": 2010
@@ -97094,12 +97312,21 @@
     },
     "Jintasaurus": {
       "genus": "Jintasaurus",
-      "parent": "Hadrosauroidea",
+      "parent": "Hadrosauromorpha",
       "etymology": "Named for Jinta County in Gansu, China, where the fossils were discovered, combined with Chinese 'long' meaning 'dragon', hence 'Jinta County dragon'.",
       "pronunciation": {
         "phonetic": "JEEN-tah-SOR-us"
       },
       "description": "Jintasaurus is a genus of hadrosauriform dinosaur that lived during the Early Cretaceous of what is now Jiuquan, Gansu, northwestern China. The type species is J. meniscus, described by Hai-Lu You and Da-Qing Li in 2009. The holotype and only known specimen includes the postorbital skull, lacking the jugal and quadratojugal, whose discovery supports the theory that hadrosaurs originated in Asia.",
+      "dispute": {
+        "summary": "Jintasaurus meniscus is placed within Hadrosauromorpha by recent analyses (Madzia and others, 2021; Alarcón-Muñoz and others, 2023; Jones, 2026), but is based on a partial skull and its validity and distinctness from sympatric Xuwulong have been questioned (Norman, 2014).\n",
+        "history": [
+          {
+            "date": "2026-06-27",
+            "note": "Placed at Hadrosauromorpha following the prevailing view; validity concerns noted (P2)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "facultative",
       "paleoenvironment": [
@@ -97214,7 +97441,8 @@
         "Dryomorpha",
         "Styracosterna",
         "Hadrosauriformes",
-        "Hadrosauroidea"
+        "Hadrosauroidea",
+        "Hadrosauromorpha"
       ],
       "authors": "You, H.-L.; Li, D.-Q.",
       "described": 2009
@@ -98978,6 +99206,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Saurolophinae"
       ],
@@ -99858,6 +100087,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Lambeosaurinae"
       ],
@@ -100106,6 +100336,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Saurolophinae"
       ],
@@ -100412,6 +100643,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Saurolophinae"
       ],
@@ -102159,6 +102391,15 @@
         "phonetic": "koh-shee-SOR-us"
       },
       "description": "Koshisaurus is a monospecific genus of basal hadrosauroid from the Kitadani Formation in Japan. The discovery of the genus suggests that hadrosauroids had higher diversity along the eastern margin of Asia in the Early Cretaceous. \"Koshi\" means an old Japanese regional name including Fukui prefecture where fossils of the genus were discovered.",
+      "dispute": {
+        "summary": "Koshisaurus katsuyama is generally recovered as a basal hadrosauroid (Madzia and others, 2020; Jones, 2026), but Tsogtbaatar and others (2019) recovered it as the sister to Hadrosauriformes, outside Hadrosauroidea.\n",
+        "history": [
+          {
+            "date": "2026-06-27",
+            "note": "Placed at Hadrosauroidea following the prevailing view; the outside-Hadrosauroidea result of Tsogtbaatar and others (2019) reflected, not adopted (P2)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "facultative",
       "paleoenvironment": [
@@ -102750,6 +102991,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Saurolophinae"
       ],
@@ -102758,12 +103000,21 @@
     },
     "Kryptohadros": {
       "genus": "Kryptohadros",
-      "parent": "Hadrosauroidea",
+      "parent": "Hadrosauromorpha",
       "pronunciation": {
         "phonetic": "KRIP-toh-HAD-ros"
       },
       "etymology": "From Ancient Greek \"kryptos\" (hidden) and \"hadros\" (thick or bulky, commonly used in hadrosauroid names); meaning \"hidden hadrosauroid\".",
       "description": "Kryptohadros is an extinct genus of hadrosauroid ornithopod dinosaur known from the Late Cretaceous (Maastrichtian age) Densuș-Ciula Formation of Romania. The genus contains a single species, Kryptohadros kallaiae, known from a partial skull and skeleton. Phylogenetic analyses revealed Kryptohadros is closely related to the coeval Transylvanian Telmatosaurus and the Italian Tethyshadros, together forming a group of southeastern European-endemic taxa, called the Telmatosauridae. Kryptohadros is the second named non-hadrosaurid hadrosauroid from the Hațeg Basin, following Telmatosaurus, which was named by Franz Nopcsa in 1903.",
+      "dispute": {
+        "summary": "Kryptohadros kallaiae is a non-hadrosaurid hadrosauroid described by Magyar and others (2026), who recovered it with Telmatosaurus and Tethyshadros in a proposed new family Telmatosauridae, outside Hadrosauridae.\n",
+        "history": [
+          {
+            "date": "2026-06-27",
+            "note": "Placed at Hadrosauromorpha following Magyar and others (2026); the proposed Telmatosauridae reflected, not adopted (P4)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "facultative",
       "paleoenvironment": [
@@ -102854,7 +103105,8 @@
         "Dryomorpha",
         "Styracosterna",
         "Hadrosauriformes",
-        "Hadrosauroidea"
+        "Hadrosauroidea",
+        "Hadrosauromorpha"
       ],
       "authors": "Magyar, J.; Ősi, A.; Csiki-Sava, Z.; Budai, S.; Botfalvai, G.",
       "described": 2026
@@ -103518,6 +103770,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Saurolophinae"
       ],
@@ -104278,6 +104531,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Saurolophinae"
       ],
@@ -104616,6 +104870,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Lambeosaurinae"
       ],
@@ -105229,6 +105484,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae"
       ],
       "authors": "Coria, R. A.; Riga, B. G.; Casadío, S.",
@@ -105817,6 +106073,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Lambeosaurinae"
       ],
@@ -107364,7 +107621,7 @@
     },
     "Levnesovia": {
       "genus": "Levnesovia",
-      "parent": "Hadrosauroidea",
+      "parent": "Hadrosauromorpha",
       "etymology": "Named in honor of the late Russian paleontologist Lev Nessov; the suffix '-ia' is a standard Latinized honorific formation",
       "pronunciation": {
         "phonetic": "lev-neh-SO-vee-uh"
@@ -107480,7 +107737,8 @@
         "Dryomorpha",
         "Styracosterna",
         "Hadrosauriformes",
-        "Hadrosauroidea"
+        "Hadrosauroidea",
+        "Hadrosauromorpha"
       ],
       "authors": "Sues, H.-D.; Averianov, A.",
       "described": 2009
@@ -110821,12 +111079,21 @@
     },
     "Lophorhothon": {
       "genus": "Lophorhothon",
-      "parent": "Hadrosauroidea",
+      "parent": "Hadrosauromorpha",
       "pronunciation": {
         "phonetic": "LOF-o-ROH-thon"
       },
       "etymology": "From Greek 'lophos' meaning 'crested' and 'rhothon' meaning 'nose', giving the meaning 'crested nose', referring to the nasal crest of the holotype.",
       "description": "Lophorhothon is a genus of hadrosauroid dinosaur from the Late Cretaceous of Alabama, and possibly Georgia and North Carolina. It was the first dinosaur genus discovered in Alabama, in the United States.",
+      "dispute": {
+        "summary": "Lophorhothon atopus was originally described as a basal hadrosaurine, inside Hadrosauridae (Langston, 1960), but later analyses place it within Hadrosauromorpha just outside Hadrosauridae, among the closest non-hadrosaurid relatives of the family (Prieto-Márquez, 2021; Alarcón-Muñoz and others, 2023; Jones, 2026).\n",
+        "history": [
+          {
+            "date": "2026-06-27",
+            "note": "Placed at Hadrosauromorpha; the historical inside-Hadrosauridae interpretation reflected, not adopted (P2)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "facultative",
       "paleoenvironment": [
@@ -110941,7 +111208,8 @@
         "Dryomorpha",
         "Styracosterna",
         "Hadrosauriformes",
-        "Hadrosauroidea"
+        "Hadrosauroidea",
+        "Hadrosauromorpha"
       ],
       "authors": "Langston, W.",
       "described": 1960
@@ -114085,6 +114353,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Lambeosaurinae"
       ],
@@ -114808,6 +115077,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Saurolophinae"
       ],
@@ -115677,6 +115947,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae"
       ],
       "authors": "Prieto-Márquez, A.; Wagner, J. R.",
@@ -116125,6 +116396,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae"
       ],
       "authors": "Riabinin, A. N.",
@@ -120582,6 +120854,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae"
       ],
       "authors": "Dong, Z.",
@@ -121981,6 +122254,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Lambeosaurinae"
       ],
@@ -123707,7 +123981,7 @@
     },
     "Morelladon": {
       "genus": "Morelladon",
-      "parent": "Hadrosauroidea",
+      "parent": "Styracosterna",
       "etymology": "Combines a reference to Morella (a town in Castellón, Spain, near the discovery site) with Greek odṓn (ὀδών), meaning 'tooth'",
       "pronunciation": {
         "phonetic": "moh-RAY-o-don"
@@ -123844,9 +124118,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
-        "Styracosterna",
-        "Hadrosauriformes",
-        "Hadrosauroidea"
+        "Styracosterna"
       ],
       "authors": "Gasulla, J. M.; Escaso, F.; Narváez, I.; Ortega, F.; Sanz, J. L.",
       "described": 2015
@@ -125357,6 +125629,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Saurolophinae"
       ],
@@ -125789,12 +126062,21 @@
     },
     "Nanningosaurus": {
       "genus": "Nanningosaurus",
-      "parent": "Hadrosauroidea",
+      "parent": "Hadrosauromorpha",
       "etymology": "Refers to the city of Nanning in Guangxi, China, located close to the excavation site, combined with Greek sauros meaning 'lizard'",
       "pronunciation": {
         "phonetic": "nah-NING-oh-SOR-us"
       },
       "description": "Nanningosaurus is a genus of hadrosauromorph dinosaur from the upper Late Cretaceous of the Nalong Basin, Guangxi, China.",
+      "dispute": {
+        "summary": "Nanningosaurus dashiensis was tentatively described as a basal lambeosaurine, but this is widely regarded as erroneous; recent analyses place it as a non-hadrosaurid hadrosauromorph (Alarcón-Muñoz and others, 2023; Jones, 2026).\n",
+        "history": [
+          {
+            "date": "2026-06-27",
+            "note": "Placed at Hadrosauromorpha; the original lambeosaurine interpretation reflected, not adopted (P3)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "facultative",
       "diagnostic_features": [
@@ -125914,7 +126196,8 @@
         "Dryomorpha",
         "Styracosterna",
         "Hadrosauriformes",
-        "Hadrosauroidea"
+        "Hadrosauroidea",
+        "Hadrosauromorpha"
       ],
       "authors": "Mo, J.; Zhao, Z.; W. Wang, X. X.",
       "described": 2007
@@ -126644,7 +126927,7 @@
     },
     "Nanyangosaurus": {
       "genus": "Nanyangosaurus",
-      "parent": "Hadrosauroidea",
+      "parent": "Hadrosauromorpha",
       "pronunciation": {
         "phonetic": "nahn-yahng-o-SAWR-us"
       },
@@ -126764,7 +127047,8 @@
         "Dryomorpha",
         "Styracosterna",
         "Hadrosauriformes",
-        "Hadrosauroidea"
+        "Hadrosauroidea",
+        "Hadrosauromorpha"
       ],
       "authors": "Xu, X.; Zhao, X.-J.; Lü, J.-C.; Huang, W.-B.; Li, Z.-Y.; Dong, Z.-M.",
       "described": 2000
@@ -130568,6 +130852,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Lambeosaurinae"
       ],
@@ -133486,6 +133771,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Lambeosaurinae"
       ],
@@ -134441,6 +134727,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Saurolophinae"
       ],
@@ -135723,6 +136010,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae"
       ],
       "authors": "Seeley, H. G.",
@@ -139797,6 +140085,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Lambeosaurinae"
       ],
@@ -140012,6 +140301,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Lambeosaurinae"
       ],
@@ -141227,7 +141517,13 @@
       "etymology": "Named in honor of iguanodont researcher Gregory S. Paul, plus Greek odon (\"tooth\") in keeping with the Iguanodontia naming convention.",
       "description": "Paulodon is a genus of iguanodontian dinosaur from the early Barremian (Early Cretaceous) of Galve in Teruel, Spain. It was erected by Sancarlo, Mandorlo and Ford (2025) for material previously described as Iguanodon galvensis by Verdú et al. (2015).\n",
       "dispute": {
-        "summary": "Paleontologists have informally disagreed with the methodology behind Sancarlo et al.'s 2025 erection of Paulodon. An independent 2026 study by Rotatori et al. concluded that \"I.\" galvensis requires a new generic name within Iguanodontidae, but did not mention or endorse Paulodon — leaving the taxonomic situation unresolved.\n"
+        "summary": "Paulodon is a poorly known styracosternan whose distinctness and precise affinities are unresolved; it may be referable to an Iguanodon-grade form.\n",
+        "history": [
+          {
+            "date": "2026-06-27",
+            "note": "Placed at Styracosterna incertae sedis; finer placement unresolved (P2)."
+          }
+        ]
       },
       "diet": "herbivore",
       "locomotion": "facultative",
@@ -142612,6 +142908,15 @@
         "phonetic": "pen-el-o-pog-nay-thus"
       },
       "description": "Penelopognathus is a genus of hadrosauroid dinosaur which lived in the Early Cretaceous Bayin-Gobi Formation in what is now China. The discovery of this taxon contributes to the hypothesis that hadrosauroids originated in Asia.",
+      "dispute": {
+        "summary": "Penelopognathus weishampeli is a fragmentary taxon recovered as a basal hadrosauroid (Jones, 2026) and, in other analyses, among Hadrosauromorpha (Magyar and others, 2026).\n",
+        "history": [
+          {
+            "date": "2026-06-27",
+            "note": "Placed at Hadrosauroidea following Jones (2026); the more derived hadrosauromorph position reflected, not adopted (P2)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "facultative",
       "paleoenvironment": [
@@ -145743,7 +146048,7 @@
     },
     "Plesiohadros": {
       "genus": "Plesiohadros",
-      "parent": "Hadrosauroidea",
+      "parent": "Hadrosauromorpha",
       "etymology": "From Greek 'plesios' meaning 'near' and 'hadros' meaning 'thick' (as in Hadrosauridae), meaning 'near to hadrosaurids.'",
       "pronunciation": {
         "phonetic": "PLEH-see-o-HAH-dros"
@@ -145865,7 +146170,8 @@
         "Dryomorpha",
         "Styracosterna",
         "Hadrosauriformes",
-        "Hadrosauroidea"
+        "Hadrosauroidea",
+        "Hadrosauromorpha"
       ],
       "authors": "Tsogtbaatar, K.; Weishampel, D. B.; D. C. Evans, M. W.",
       "described": 2014
@@ -147766,12 +148072,21 @@
     },
     "Proa": {
       "genus": "Proa",
-      "parent": "Hadrosauriformes",
+      "parent": "Styracosterna",
       "etymology": "From Spanish 'proa' meaning 'prow', alluding to the pointed shape of the animal's predentary bone.",
       "pronunciation": {
         "phonetic": "PRAU"
       },
       "description": "Proa is a genus of basal iguanodont dinosaur from the Early Cretaceous Escucha Formation of Aragón, Spain. The type and only species, Proa valdearinnoensis, is known from fragmentary remains and represents an unusual hadrosauriform from the Albian stage.",
+      "dispute": {
+        "summary": "Proa valdearinnoensis has been recovered at the base of Hadrosauriformes (McDonald and others, 2012; Norman, 2014) and within basal Hadrosauroidea (Madzia and others, 2020); Jones (2026) places it in basal Styracosterna.\n",
+        "history": [
+          {
+            "date": "2026-06-27",
+            "note": "Placed at Styracosterna, the least-inclusive clade these results agree on; finer hadrosauriform/hadrosauroid placements reflected, not adopted (P2)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "facultative",
       "paleoenvironment": [
@@ -147916,8 +148231,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
-        "Styracosterna",
-        "Hadrosauriformes"
+        "Styracosterna"
       ],
       "authors": "McDonald, A. T.; Espílez, E.; Mampel, L.; Kirkland, J. I.; Alcalá, L.",
       "described": 2012
@@ -148204,6 +148518,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Saurolophinae"
       ],
@@ -148882,6 +149197,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Saurolophinae"
       ],
@@ -149747,12 +150063,21 @@
     },
     "Protohadros": {
       "genus": "Protohadros",
-      "parent": "Hadrosauroidea",
+      "parent": "Hadrosauromorpha",
       "pronunciation": {
         "phonetic": "PROH-to-HAD-ros"
       },
       "etymology": "From Greek 'protos' meaning 'first' and 'hadros' meaning 'thick' (as in Hadrosauridae), meaning 'first hadrosaur.' The specific name byrdi honors discoverer Gary Byrd.",
       "description": "Protohadros is a genus of basal hadrosaurid dinosaur from the early Late Cretaceous (Cenomanian stage, approximately 100-93.9 million years ago) of what is now Texas, United States. It is represented by the species Protohadros byrdi, known from a partially complete skull and associated postcranial remains recovered from the Woodbine Formation. Protohadros was one of the earliest derived hadrosaurs in North America.",
+      "dispute": {
+        "summary": "Protohadros byrdi was described as a basal hadrosaurid (Head, 1998), who defined Hadrosauridae to include it; Jones (2026), Gates and Lamb (2021), and Alarcón-Muñoz and others (2023) recover it within Hadrosauromorpha, whereas Norman (2014) places it outside Hadrosauromorpha as it retains a surangular foramen.\n",
+        "history": [
+          {
+            "date": "2026-06-27",
+            "note": "Placed at Hadrosauromorpha following the prevailing recent view; the more basal position of Norman (2014) and the historical basal-hadrosaurid interpretation reflected, not adopted (P2, P3)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "facultative",
       "paleoenvironment": [
@@ -149885,7 +150210,8 @@
         "Dryomorpha",
         "Styracosterna",
         "Hadrosauriformes",
-        "Hadrosauroidea"
+        "Hadrosauroidea",
+        "Hadrosauromorpha"
       ],
       "authors": "Head, J. J.",
       "described": 1998
@@ -150207,6 +150533,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae"
       ],
       "authors": "Cope, E. D.",
@@ -154179,12 +154506,21 @@
     },
     "Ratchasimasaurus": {
       "genus": "Ratchasimasaurus",
-      "parent": "Hadrosauroidea",
+      "parent": "Styracosterna",
       "etymology": "Named after Nakhon Ratchasima province in Thailand where the fossil was found, combined with Greek sauros (lizard); meaning \"Nakhon Ratchasima lizard\".",
       "pronunciation": {
         "phonetic": "rat-KAS-ee-muh-SOR-us"
       },
       "description": "Ratchasimasaurus is a genus of iguanodontian ornithopod dinosaur from Early Cretaceous (Aptian stage) Khok Kruat Formation of Nakhon Ratchasima province in northeastern Thailand. The type and only species is R. suranareae, named after Thao Suranari, a 19th-century war heroine. It was considered by one study to be a nomen dubium, diagnosed with characters widespread in Styracosterna.",
+      "dispute": {
+        "summary": "Ratchasimasaurus suranareae is a fragmentary Thai taxon variously placed in basal Styracosterna (Jones, 2026) or basal Hadrosauroidea (Madzia and others, 2021); its diagnosis lacks autapomorphies and it may be a nomen dubium.\n",
+        "history": [
+          {
+            "date": "2026-06-27",
+            "note": "Placed at Styracosterna, the least-inclusive clade these results agree on; nomen dubium (P2)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "facultative",
       "paleoenvironment": [
@@ -154298,9 +154634,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
-        "Styracosterna",
-        "Hadrosauriformes",
-        "Hadrosauroidea"
+        "Styracosterna"
       ],
       "authors": "Shibata, M.; Jintasakul, P.; Azuma, Y.",
       "described": 2011
@@ -155328,6 +155662,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Saurolophinae"
       ],
@@ -155613,6 +155948,15 @@
       },
       "etymology": "Named for Russian paleontologist Anatoly Nikolaevich Riabinin, who first described the type material, combined with 'hadros' as in Hadrosauridae; meaning 'Riabinin's hadrosaur.'",
       "description": "Riabininohadros is an extinct genus of ankylopollexian dinosaur from the Maastrichtian of Crimea. Its type and only species, Riabininohadros weberae, was originally described as a species of Orthomerus before being placed in its own genus.",
+      "dispute": {
+        "summary": "Riabininohadros weberi (formerly Orthomerus weberi) is a fragmentary European taxon; Lopatin and Averianov (2020) recovered it as a primitive styracosternan well outside Hadrosauroidea, whereas it was historically associated with hadrosaurids and Jones (2026) places it more basally within Ankylopollexia.\n",
+        "history": [
+          {
+            "date": "2026-06-27",
+            "note": "Placed at Styracosterna following Lopatin and Averianov (2020); the more basal position reflected, not adopted (P2)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "facultative",
       "paleoenvironment": [
@@ -159580,6 +159924,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Saurolophinae"
       ],
@@ -162087,6 +162432,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Saurolophinae"
       ],
@@ -163497,6 +163843,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Saurolophinae"
       ],
@@ -164727,12 +165074,21 @@
     },
     "Shuangmiaosaurus": {
       "genus": "Shuangmiaosaurus",
-      "parent": "Hadrosauroidea",
+      "parent": "Hadrosauromorpha",
       "pronunciation": {
         "phonetic": "shwahng-MYOW-SAWR-us"
       },
       "etymology": "Named after the village of Shuangmiao in Beipiao, Liaoning Province, China, the site of discovery, combined with Greek 'sauros' (lizard).",
       "description": "Shuangmiaosaurus is a genus of herbivorous iguanodontian ornithopod dinosaur which lived in China during the Late Cretaceous Period, about 100 million years ago.",
+      "dispute": {
+        "summary": "Shuangmiaosaurus gilmorei is a non-hadrosaurid hadrosauromorph in several analyses, placed near Hadrosauridae (Madzia and others, 2020), but its position is unstable and it may be a more basal hadrosauroid or a non-hadrosauroid iguanodontian (Norman, 2004).\n",
+        "history": [
+          {
+            "date": "2026-06-27",
+            "note": "Placed at Hadrosauromorpha following the prevailing recent view; more basal alternatives reflected, not adopted (P2)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "facultative",
       "paleoenvironment": [
@@ -164848,7 +165204,8 @@
         "Dryomorpha",
         "Styracosterna",
         "Hadrosauriformes",
-        "Hadrosauroidea"
+        "Hadrosauroidea",
+        "Hadrosauromorpha"
       ],
       "authors": "You, H.; Ji, Q.; J. Li, Y. L.",
       "described": 2003
@@ -165175,12 +165532,21 @@
     },
     "Siamodon": {
       "genus": "Siamodon",
-      "parent": "Hadrosauriformes",
+      "parent": "Hadrosauroidea",
       "etymology": "Named after Siam (the historical name for Thailand) where it was found, combined with Greek odon, \"tooth\" - derived from the country of origin",
       "pronunciation": {
         "phonetic": "si-am-o-don"
       },
       "description": "Siamodon is an extinct genus of iguanodontian ornithopod dinosaur from Early Cretaceous deposits of northeastern Thailand.",
+      "dispute": {
+        "summary": "Siamodon nimngami is a Thai hadrosauroid most similar to Probactrosaurus (Jones, 2026); Norman (2014) considered it a nomen dubium pending more material, and its remains may overlap with Ratchasimasaurus.\n",
+        "history": [
+          {
+            "date": "2026-06-27",
+            "note": "Placed at Hadrosauroidea; nomen dubium (P2)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "facultative",
       "paleoenvironment": [
@@ -165303,7 +165669,8 @@
         "Iguanodontia",
         "Dryomorpha",
         "Styracosterna",
-        "Hadrosauriformes"
+        "Hadrosauriformes",
+        "Hadrosauroidea"
       ],
       "authors": "Buffetaut, E.; Suteethorn, V.",
       "described": 2011
@@ -175284,6 +175651,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Lambeosaurinae"
       ],
@@ -175981,7 +176349,7 @@
     },
     "Tanius": {
       "genus": "Tanius",
-      "parent": "Hadrosauroidea",
+      "parent": "Hadrosauromorpha",
       "pronunciation": {
         "phonetic": "TAHN-ee-us"
       },
@@ -176108,7 +176476,8 @@
         "Dryomorpha",
         "Styracosterna",
         "Hadrosauriformes",
-        "Hadrosauroidea"
+        "Hadrosauroidea",
+        "Hadrosauromorpha"
       ],
       "authors": "Wiman, C.",
       "described": 1929
@@ -178268,12 +178637,21 @@
     },
     "Telmatosaurus": {
       "genus": "Telmatosaurus",
-      "parent": "Hadrosauroidea",
+      "parent": "Hadrosauromorpha",
       "pronunciation": {
         "phonetic": "TEL-ma-to-SAWR-us"
       },
       "etymology": "From Greek telma/telmat-, \"swamp\" or \"marsh\", combined with Greek sauros, \"lizard\" - means \"marsh lizard\"",
       "description": "Telmatosaurus is a genus of basal hadrosauromorph dinosaur from the Late Cretaceous of Romania. It was relatively small for its group, measuring approximately 5 m (16 ft) in length and 600 kg (1,300 lb) in body mass, which has been explained as an instance of insular dwarfism.",
+      "dispute": {
+        "summary": "Telmatosaurus transsylvanicus was historically treated as the most basal hadrosaurid (Weishampel and others, 1993), but recent analyses place it among the derived non-hadrosaurid hadrosauromorphs, outside Hadrosauridae (Tsogtbaatar and others, 2019; Jones, 2026). Magyar and others (2026) group it with Tethyshadros and Kryptohadros in a proposed family Telmatosauridae.\n",
+        "history": [
+          {
+            "date": "2026-06-27",
+            "note": "Placed at Hadrosauromorpha following the prevailing view; the basalmost-hadrosaurid interpretation and the proposed Telmatosauridae both reflected, not adopted (P2, P4)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "facultative",
       "paleoenvironment": [
@@ -178457,7 +178835,8 @@
         "Dryomorpha",
         "Styracosterna",
         "Hadrosauriformes",
-        "Hadrosauroidea"
+        "Hadrosauroidea",
+        "Hadrosauromorpha"
       ],
       "authors": "Nopcsa, B. F.",
       "described": 1903
@@ -179265,12 +179644,21 @@
     },
     "Tethyshadros": {
       "genus": "Tethyshadros",
-      "parent": "Hadrosauroidea",
+      "parent": "Hadrosauromorpha",
       "etymology": "Named after the ancient Tethys Sea (whose remnant waters covered the region), combined with Greek hadros, \"thick\" or \"stout\" (root of Hadrosauridae) - means \"Tethyan hadrosauroid\"",
       "pronunciation": {
         "phonetic": "teth-eez-HAD-ros"
       },
       "description": "Tethyshadros is a genus of hadrosauroid dinosaur from the Late Cretaceous (Campanian) Lipica Formation (previously thought to come from the younger informal \"Liburnia Formation\") of Trieste, Italy. The type and only species is T. insularis.",
+      "dispute": {
+        "summary": "Tethyshadros insularis is recovered as a derived non-hadrosaurid hadrosauromorph in most analyses, grouped with Telmatosaurus and Kryptohadros in the proposed Telmatosauridae (Magyar and others, 2026); Prieto-Márquez and Wagner (2023) instead recovered it within Hadrosauridae.\n",
+        "history": [
+          {
+            "date": "2026-06-27",
+            "note": "Placed at Hadrosauromorpha following the prevailing view; the within-Hadrosauridae result of Prieto-Márquez and Wagner (2023) and the proposed Telmatosauridae both reflected, not adopted (P2, P4)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "facultative",
       "paleoenvironment": [
@@ -179442,7 +179830,8 @@
         "Dryomorpha",
         "Styracosterna",
         "Hadrosauriformes",
-        "Hadrosauroidea"
+        "Hadrosauroidea",
+        "Hadrosauromorpha"
       ],
       "authors": "Dalla Vecchia, F. M.",
       "described": 2009
@@ -181125,6 +181514,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae"
       ],
       "authors": "Leidy, J.",
@@ -183213,6 +183603,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Lambeosaurinae"
       ],
@@ -184545,6 +184936,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae"
       ],
       "authors": "Leidy, J.",
@@ -186559,6 +186951,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Lambeosaurinae"
       ],
@@ -191681,6 +192074,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Lambeosaurinae"
       ],
@@ -194436,6 +194830,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae"
       ],
       "authors": "Juárez Valieri, R. D.; Haro, J. A.; L. E. Fiorelli, J. O. C.",
@@ -194841,6 +195236,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae",
         "Saurolophinae"
       ],
@@ -198528,6 +198924,7 @@
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
+        "Hadrosauromorpha",
         "Hadrosauridae"
       ],
       "authors": "Kobayashi, Y.; Takasaki, R.; Kubota, K.; Fiorillo, A. R.",
@@ -203081,7 +203478,7 @@
     },
     "Zhanghenglong": {
       "genus": "Zhanghenglong",
-      "parent": "Hadrosauroidea",
+      "parent": "Hadrosauromorpha",
       "etymology": "Named after Zhang Heng, the first-century Chinese scientist, combined with Mandarin long (龙), meaning 'dragon'; thus 'Zhang Heng's dragon'",
       "pronunciation": {
         "phonetic": "jahng-huhng-long"
@@ -203208,7 +203605,8 @@
         "Dryomorpha",
         "Styracosterna",
         "Hadrosauriformes",
-        "Hadrosauroidea"
+        "Hadrosauroidea",
+        "Hadrosauromorpha"
       ],
       "authors": "Xing, H.; Wang, D.; Han, F.; Sullivan, C.; Ma, Q.; He, Y.; Hone, D. W. E.; Yan, R.; Du, F.; Xu, X.",
       "described": 2014
