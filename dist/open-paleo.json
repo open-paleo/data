@@ -1,8 +1,8 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-06-28T05:41:30.735Z",
-    "clade_count": 227,
+    "built_at": "2026-06-29T22:06:43.733Z",
+    "clade_count": 221,
     "genus_count": 1398,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
@@ -321,35 +321,27 @@
                             "Ornithopoda": {
                               "Clypeodonta": {
                                 "Iguanodontia": {
+                                  "Rhabdodontomorpha": {
+                                    "Rhabdodontidae": {}
+                                  },
+                                  "Elasmaria": {},
                                   "Dryomorpha": {
-                                    "Styracosterna": {
-                                      "Hadrosauriformes": {
-                                        "Hadrosauroidea": {
-                                          "Hadrosauromorpha": {
-                                            "Hadrosauridae": {
-                                              "Saurolophinae": {},
-                                              "Lambeosaurinae": {}
+                                    "Dryosauridae": {},
+                                    "Ankylopollexia": {
+                                      "Styracosterna": {
+                                        "Hadrosauriformes": {
+                                          "Hadrosauroidea": {
+                                            "Hadrosauromorpha": {
+                                              "Hadrosauridae": {
+                                                "Saurolophinae": {},
+                                                "Lambeosaurinae": {}
+                                              }
                                             }
                                           }
                                         }
                                       }
-                                    },
-                                    "Dryosauridae": {},
-                                    "Ankylopollexia": {
-                                      "Neoiguanodontia": {
-                                        "Iguanodontidae": {}
-                                      }
                                     }
-                                  },
-                                  "Rhabdodontomorpha": {
-                                    "Rhabdodontoidea": {
-                                      "Rhabdodontidae": {}
-                                    },
-                                    "Tenontosauridae": {},
-                                    "Rhabdodontia": {}
-                                  },
-                                  "Elasmaria": {},
-                                  "Iguanodontoidea": {}
+                                  }
                                 },
                                 "Hypsilophodontidae": {
                                   "Parksosauridae": {}
@@ -780,7 +772,7 @@
       ]
     },
     "Ankylopollexia": {
-      "description": "Ankylopollexia, meaning \"fused thumb,\" is a clade of ornithopod dinosaurs characterized by a robust, conical thumb spike formed by a modified and enlarged pollex (first manual digit). This distinctive feature likely served as a defensive weapon or for intraspecific combat. Ankylopollexians range from medium-sized bipedal forms such as Camptosaurus to the large iguanodonts and hadrosaurs. The clade represents one of the most diverse and successful ornithischian radiations.\n",
+      "description": "Ankylopollexia is a clade of dryomorph ornithopod dinosaurs characterized by a robust, conical thumb spike formed by an enlarged, modified pollex. It ranges from medium-sized bipedal forms such as Camptosaurus through the iguanodonts to the hadrosaurs, and represents one of the most diverse and successful ornithischian radiations of the Cretaceous.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -801,23 +793,35 @@
         "Ankylopollexia"
       ],
       "described": 1986,
-      "authors": "Sereno",
+      "authors": "Sereno, P. C.",
       "diagnostic_features": [
-        "Conical, spike-like thumb (pollex) formed by a fused and enlarged first manual ungual",
-        "Robust metacarpal I fused to or tightly articulating with the carpus",
+        "Conical, spike-like manual pollex formed by an enlarged first ungual",
+        "Robust first metacarpal tightly articulating with the carpus",
         "Progressive reduction of manual digit V",
-        "Elongate and robust prepubic process",
-        "Trend toward increasingly complex dental batteries in derived members"
+        "Elongate prepubic process of the pubis"
       ],
       "references": [
         {
-          "id": "sereno1986ankylopollexia",
-          "authors": "Sereno, P.C.",
+          "id": "sereno1986",
+          "authors": "Sereno, P. C.",
           "year": 1986,
-          "title": "Phylogeny of the bird-hipped dinosaurs (Order Ornithischia)",
+          "title": "Phylogeny of the bird-hipped dinosaurs (order Ornithischia)",
           "journal": "National Geographic Research",
           "volume": "2",
-          "pages": "234-256"
+          "pages": "234-256",
+          "notes": "Named Ankylopollexia."
+        },
+        {
+          "id": "madzia2021",
+          "authors": "Madzia, D.; Arbour, V. M.; Boyd, C. A.; Farke, A. A.; Cruzado-Caballero, P.; Evans, D. C.",
+          "year": 2021,
+          "title": "The phylogenetic nomenclature of ornithischian dinosaurs",
+          "journal": "PeerJ",
+          "volume": "9",
+          "pages": "e12362",
+          "doi": "10.7717/peerj.12362",
+          "url": "http://dx.doi.org/10.7717/peerj.12362",
+          "notes": "Provides the modern phylogenetic definition of Ankylopollexia."
         }
       ]
     },
@@ -2621,6 +2625,7 @@
       ]
     },
     "Dryomorpha": {
+      "description": "Dryomorpha is the clade of iguanodontian ornithopods comprising Dryosauridae and Ankylopollexia and their most recent common ancestor. It unites the small, gracile dryosaurids with the robust, thumb-spiked ankylopollexians and the lineage leading to the hadrosaurs, marking the transition toward the large bulk-feeding ornithopods of the Cretaceous.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -2638,9 +2643,42 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha"
+      ],
+      "described": 1986,
+      "authors": "Sereno, P. C.",
+      "diagnostic_features": [
+        "Antorbital fenestra closed or greatly reduced",
+        "Brevis shelf of the ilium broadly exposed in lateral view",
+        "Loss of the first distal tarsal",
+        "Reduced manual and pedal digit counts relative to basal iguanodontians"
+      ],
+      "references": [
+        {
+          "id": "sereno1986",
+          "authors": "Sereno, P. C.",
+          "year": 1986,
+          "title": "Phylogeny of the bird-hipped dinosaurs (order Ornithischia)",
+          "journal": "National Geographic Research",
+          "volume": "2",
+          "pages": "234-256",
+          "notes": "Named Dryomorpha."
+        },
+        {
+          "id": "madzia2021",
+          "authors": "Madzia, D.; Arbour, V. M.; Boyd, C. A.; Farke, A. A.; Cruzado-Caballero, P.; Evans, D. C.",
+          "year": 2021,
+          "title": "The phylogenetic nomenclature of ornithischian dinosaurs",
+          "journal": "PeerJ",
+          "volume": "9",
+          "pages": "e12362",
+          "doi": "10.7717/peerj.12362",
+          "url": "http://dx.doi.org/10.7717/peerj.12362",
+          "notes": "Provides the modern phylogenetic definition of Dryomorpha."
+        }
       ]
     },
     "Dryosauridae": {
+      "description": "Dryosauridae is a family of small, gracile, cursorial iguanodontian ornithopods of the Late Jurassic to Early Cretaceous, including Dryosaurus, Dysalotosaurus, Valdosaurus, and Elrhazosaurus. They were lightly built, long-legged herbivores lacking the thumb spike of ankylopollexians, and form the sister group of Ankylopollexia within Dryomorpha.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -2659,6 +2697,39 @@
         "Iguanodontia",
         "Dryomorpha",
         "Dryosauridae"
+      ],
+      "type_genus": "Dryosaurus",
+      "described": 1984,
+      "authors": "Milner, A. R.; Norman, D. B.",
+      "diagnostic_features": [
+        "Edentulous, beak-like premaxilla",
+        "Long, slender hindlimbs with an elongate tibia relative to the femur",
+        "Absence of a manual pollex spike",
+        "Crownward ridge pattern with a single strong primary ridge on dentary teeth"
+      ],
+      "references": [
+        {
+          "id": "milnernorman1984",
+          "authors": "Milner, A. R.; Norman, D. B.",
+          "year": 1984,
+          "title": "The biogeography of advanced ornithopod dinosaurs (Archosauria: Ornithischia) — a cladistic-vicariance model",
+          "book": "Third Symposium on Mesozoic Terrestrial Ecosystems, Short Papers",
+          "publisher": "Attempto Verlag",
+          "pages": "145-150",
+          "notes": "Named Dryosauridae."
+        },
+        {
+          "id": "madzia2021",
+          "authors": "Madzia, D.; Arbour, V. M.; Boyd, C. A.; Farke, A. A.; Cruzado-Caballero, P.; Evans, D. C.",
+          "year": 2021,
+          "title": "The phylogenetic nomenclature of ornithischian dinosaurs",
+          "journal": "PeerJ",
+          "volume": "9",
+          "pages": "e12362",
+          "doi": "10.7717/peerj.12362",
+          "url": "http://dx.doi.org/10.7717/peerj.12362",
+          "notes": "Provides the modern phylogenetic definition of Dryosauridae."
+        }
       ]
     },
     "Elaphrosaurinae": {
@@ -2682,6 +2753,7 @@
       ]
     },
     "Elasmaria": {
+      "description": "Elasmaria is a clade of small to medium-sized iguanodontian ornithopods largely endemic to Gondwana (South America, Antarctica, Australia, and Africa), including Talenkauen, Macrogryphosaurus, Anabisetia, and the Antarctic Morrosaurus and Trinisaura. Several members bear distinctive thin, mineralized intercostal plates along the ribcage. The clade represents a major southern radiation of cursorial ornithopods through the Cretaceous.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -2699,6 +2771,38 @@
         "Clypeodonta",
         "Iguanodontia",
         "Elasmaria"
+      ],
+      "described": 2007,
+      "authors": "Calvo, J. O.; Porfiri, J. D.; Novas, F. E.",
+      "diagnostic_features": [
+        "Thin, plate-like mineralized intercostal plates on the dorsal ribs (where preserved)",
+        "Gracile, cursorial hindlimb proportions",
+        "Anterolaterally projecting preacetabular process of the ilium",
+        "Retention of a small, slender pedal digit I"
+      ],
+      "references": [
+        {
+          "id": "calvo2007c",
+          "authors": "Calvo, J. O.; Porfiri, J. D.; Novas, F. E.",
+          "year": 2007,
+          "title": "Discovery of a new ornithopod dinosaur from the Portezuelo Formation (Upper Cretaceous), Neuquén, Patagonia, Argentina",
+          "journal": "Arquivos do Museu Nacional",
+          "volume": "65",
+          "pages": "471-483",
+          "notes": "Named Elasmaria."
+        },
+        {
+          "id": "fonseca2024",
+          "authors": "Fonseca, A. O.; Reid, I. J.; Venner, A.; Duncan, R. J.; Garcia, M. S.; Müller, R. T.",
+          "year": 2024,
+          "title": "A comprehensive phylogenetic analysis on early ornithischian evolution",
+          "journal": "Journal of Systematic Palaeontology",
+          "volume": "22",
+          "pages": "2346577",
+          "doi": "10.1080/14772019.2024.2346577",
+          "url": "http://dx.doi.org/10.1080/14772019.2024.2346577",
+          "notes": "Provides a modern phylogenetic delimitation of Elasmaria within Iguanodontia."
+        }
       ]
     },
     "Enantiornithes": {
@@ -3112,6 +3216,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -3172,6 +3277,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes"
       ],
@@ -3227,6 +3333,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea"
@@ -3284,6 +3391,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -3437,6 +3545,7 @@
       ]
     },
     "Iguanodontia": {
+      "description": "Iguanodontia is the major clade of derived ornithopod dinosaurs containing the rhabdodontomorphs, dryomorphs, and the lineage leading to the duck-billed hadrosaurids, together with (in recent analyses) the Gondwanan Elasmaria. Its members range from small cursorial forms to the giant iguanodonts and hadrosaurs, and are united by dental and pedal specializations for bulk herbivory. Iguanodontians were among the most abundant and widespread plant eaters of the Cretaceous.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -3453,49 +3562,40 @@
         "Ornithopoda",
         "Clypeodonta",
         "Iguanodontia"
-      ]
-    },
-    "Iguanodontidae": {
-      "taxonomy": [
-        "Life",
-        "Animalia",
-        "Chordata",
-        "Vertebrata",
-        "Sarcopterygii",
-        "Tetrapoda",
-        "Reptilia",
-        "Archosauria",
-        "Dinosauria",
-        "Ornithischia",
-        "Genasauria",
-        "Cerapoda",
-        "Ornithopoda",
-        "Clypeodonta",
-        "Iguanodontia",
-        "Dryomorpha",
-        "Ankylopollexia",
-        "Neoiguanodontia",
-        "Iguanodontidae"
-      ]
-    },
-    "Iguanodontoidea": {
-      "taxonomy": [
-        "Life",
-        "Animalia",
-        "Chordata",
-        "Vertebrata",
-        "Sarcopterygii",
-        "Tetrapoda",
-        "Reptilia",
-        "Archosauria",
-        "Dinosauria",
-        "Ornithischia",
-        "Genasauria",
-        "Cerapoda",
-        "Ornithopoda",
-        "Clypeodonta",
-        "Iguanodontia",
-        "Iguanodontoidea"
+      ],
+      "described": 1891,
+      "authors": "Baur, G.",
+      "diagnostic_features": [
+        "Loss of the primitive ornithopod first premaxillary tooth",
+        "Reduced or absent antorbital and surangular foramina",
+        "Femoral fourth trochanter pendant in form",
+        "Wide, ventrally flattened pedal unguals approaching a hoof-like form"
+      ],
+      "references": [
+        {
+          "id": "baur1891",
+          "authors": "Baur, G.",
+          "year": 1891,
+          "title": "Remarks on the reptiles generally called Dinosauria",
+          "journal": "American Naturalist",
+          "volume": "25",
+          "pages": "434-454",
+          "doi": "10.1086/275329",
+          "url": "http://dx.doi.org/10.1086/275329",
+          "notes": "Named Iguanodontia."
+        },
+        {
+          "id": "madzia2021",
+          "authors": "Madzia, D.; Arbour, V. M.; Boyd, C. A.; Farke, A. A.; Cruzado-Caballero, P.; Evans, D. C.",
+          "year": 2021,
+          "title": "The phylogenetic nomenclature of ornithischian dinosaurs",
+          "journal": "PeerJ",
+          "volume": "9",
+          "pages": "e12362",
+          "doi": "10.7717/peerj.12362",
+          "url": "http://dx.doi.org/10.7717/peerj.12362",
+          "notes": "Provides the modern phylogenetic definition of Iguanodontia."
+        }
       ]
     },
     "Jeholosauridae": {
@@ -3582,6 +3682,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -4364,28 +4465,6 @@
           "url": "http://dx.doi.org/10.7717/peerj.12362",
           "notes": "Provides the modern phylogenetic definition of Neoceratopsia."
         }
-      ]
-    },
-    "Neoiguanodontia": {
-      "taxonomy": [
-        "Life",
-        "Animalia",
-        "Chordata",
-        "Vertebrata",
-        "Sarcopterygii",
-        "Tetrapoda",
-        "Reptilia",
-        "Archosauria",
-        "Dinosauria",
-        "Ornithischia",
-        "Genasauria",
-        "Cerapoda",
-        "Ornithopoda",
-        "Clypeodonta",
-        "Iguanodontia",
-        "Dryomorpha",
-        "Ankylopollexia",
-        "Neoiguanodontia"
       ]
     },
     "Neornithischia": {
@@ -5368,28 +5447,8 @@
         "Rebbachisaurinae"
       ]
     },
-    "Rhabdodontia": {
-      "taxonomy": [
-        "Life",
-        "Animalia",
-        "Chordata",
-        "Vertebrata",
-        "Sarcopterygii",
-        "Tetrapoda",
-        "Reptilia",
-        "Archosauria",
-        "Dinosauria",
-        "Ornithischia",
-        "Genasauria",
-        "Cerapoda",
-        "Ornithopoda",
-        "Clypeodonta",
-        "Iguanodontia",
-        "Rhabdodontomorpha",
-        "Rhabdodontia"
-      ]
-    },
     "Rhabdodontidae": {
+      "description": "Rhabdodontidae is a family of small to medium-sized rhabdodontomorph ornithopods from the Late Cretaceous of the European archipelago, including Rhabdodon, Zalmoxes, Mochlodon, Matheronodon, and Transylvanosaurus. They were stocky, short-faced herbivores with distinctive high-crowned, strongly ridged teeth adapted to a tough island flora, and they form a characteristic element of the insular faunas of Late Cretaceous Europe.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -5407,32 +5466,46 @@
         "Clypeodonta",
         "Iguanodontia",
         "Rhabdodontomorpha",
-        "Rhabdodontoidea",
         "Rhabdodontidae"
-      ]
-    },
-    "Rhabdodontoidea": {
-      "taxonomy": [
-        "Life",
-        "Animalia",
-        "Chordata",
-        "Vertebrata",
-        "Sarcopterygii",
-        "Tetrapoda",
-        "Reptilia",
-        "Archosauria",
-        "Dinosauria",
-        "Ornithischia",
-        "Genasauria",
-        "Cerapoda",
-        "Ornithopoda",
-        "Clypeodonta",
-        "Iguanodontia",
-        "Rhabdodontomorpha",
-        "Rhabdodontoidea"
+      ],
+      "type_genus": "Rhabdodon",
+      "described": 2003,
+      "authors": "Weishampel, D. B.; Jianu, C.; Csiki, Z.; Norman, D. B.",
+      "diagnostic_features": [
+        "Tall, narrow maxillary and dentary teeth with one dominant primary ridge",
+        "Strongly reduced number of tooth positions",
+        "Deep, robust dentary",
+        "Heavily built, short-limbed postcranium"
+      ],
+      "references": [
+        {
+          "id": "weishampel2003",
+          "authors": "Weishampel, D. B.; Jianu, C.; Csiki, Z.; Norman, D. B.",
+          "year": 2003,
+          "title": "Osteology and phylogeny of Zalmoxes (n. g.), an unusual euornithopod dinosaur from the latest Cretaceous of Romania",
+          "journal": "Journal of Systematic Palaeontology",
+          "volume": "1",
+          "pages": "65-123",
+          "doi": "10.1017/s1477201903001032",
+          "url": "http://dx.doi.org/10.1017/s1477201903001032",
+          "notes": "Named Rhabdodontidae."
+        },
+        {
+          "id": "madzia2021",
+          "authors": "Madzia, D.; Arbour, V. M.; Boyd, C. A.; Farke, A. A.; Cruzado-Caballero, P.; Evans, D. C.",
+          "year": 2021,
+          "title": "The phylogenetic nomenclature of ornithischian dinosaurs",
+          "journal": "PeerJ",
+          "volume": "9",
+          "pages": "e12362",
+          "doi": "10.7717/peerj.12362",
+          "url": "http://dx.doi.org/10.7717/peerj.12362",
+          "notes": "Provides the modern phylogenetic definition of Rhabdodontidae."
+        }
       ]
     },
     "Rhabdodontomorpha": {
+      "description": "Rhabdodontomorpha is an early-diverging clade of iguanodontian ornithopods comprising the European Rhabdodontidae and the North American Tenontosaurus-grade taxa (Tenontosaurus, Iani, Convolosaurus). Its members are small to medium-sized, relatively short-snouted herbivores that retain many plesiomorphic ornithopod features, and the clade represents a long-lived lineage spanning the Early to Late Cretaceous of Laurasia.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -5450,6 +5523,40 @@
         "Clypeodonta",
         "Iguanodontia",
         "Rhabdodontomorpha"
+      ],
+      "described": 2016,
+      "authors": "Dieudonné, P.-E.; Tortosa, T.; Torcida Fernández-Baldor, F.; Canudo, J. I.; Díaz-Martínez, I.",
+      "diagnostic_features": [
+        "Robust, deep dentary with a strongly developed coronoid process",
+        "Tall-crowned cheek teeth with prominent primary ridges",
+        "Reduced tooth count relative to other iguanodontians",
+        "Stocky, graviportal limb proportions in derived members"
+      ],
+      "references": [
+        {
+          "id": "dieudonné2016",
+          "authors": "Dieudonné, P.-E.; Tortosa, T.; Torcida Fernández-Baldor, F.; Canudo, J. I.; Díaz-Martínez, I.",
+          "year": 2016,
+          "title": "An unexpected early rhabdodontid from Europe (Lower Cretaceous of Salas de los Infantes, Burgos Province, Spain) and a re-examination of basal iguanodontian relationships",
+          "journal": "PLOS ONE",
+          "volume": "11",
+          "pages": "e0156251",
+          "doi": "10.1371/journal.pone.0156251",
+          "url": "http://dx.doi.org/10.1371/journal.pone.0156251",
+          "notes": "Erected Rhabdodontomorpha."
+        },
+        {
+          "id": "madzia2021",
+          "authors": "Madzia, D.; Arbour, V. M.; Boyd, C. A.; Farke, A. A.; Cruzado-Caballero, P.; Evans, D. C.",
+          "year": 2021,
+          "title": "The phylogenetic nomenclature of ornithischian dinosaurs",
+          "journal": "PeerJ",
+          "volume": "9",
+          "pages": "e12362",
+          "doi": "10.7717/peerj.12362",
+          "url": "http://dx.doi.org/10.7717/peerj.12362",
+          "notes": "Provides the modern phylogenetic definition of Rhabdodontomorpha."
+        }
       ]
     },
     "Rinconsauria": {
@@ -5682,6 +5789,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -6233,6 +6341,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna"
       ],
       "described": 1986,
@@ -6311,27 +6420,6 @@
         "Dinocephalia",
         "Tapinocephalidae",
         "Tapinocephalinae"
-      ]
-    },
-    "Tenontosauridae": {
-      "taxonomy": [
-        "Life",
-        "Animalia",
-        "Chordata",
-        "Vertebrata",
-        "Sarcopterygii",
-        "Tetrapoda",
-        "Reptilia",
-        "Archosauria",
-        "Dinosauria",
-        "Ornithischia",
-        "Genasauria",
-        "Cerapoda",
-        "Ornithopoda",
-        "Clypeodonta",
-        "Iguanodontia",
-        "Rhabdodontomorpha",
-        "Tenontosauridae"
       ]
     },
     "Tetanurae": {
@@ -8971,6 +9059,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -9760,6 +9849,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -10159,6 +10249,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -12004,6 +12095,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -12414,6 +12506,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -15406,13 +15499,22 @@
     },
     "Altirhinus": {
       "genus": "Altirhinus",
-      "parent": "Neoiguanodontia",
+      "parent": "Hadrosauroidea",
       "pronunciation": {
         "phonetic": "al-ti-RIEN-us",
         "ipa": "/ˌæltɪˈraɪnəs/"
       },
       "etymology": "From Latin 'altus' meaning 'high' and Greek 'rhinos' meaning 'nose', meaning 'high nose', referring to its distinctively arched nasal profile.",
       "description": "Altirhinus is a genus of ornithopod dinosaur from the Early Cretaceous (Albian) Khuren Dukh Formation of Dornogov, Mongolia. The only known species, Altirhinus kurzanovi, is characterized by its distinctive highly arched nasal region.",
+      "dispute": {
+        "summary": "Altirhinus kurzanovi is placed near the base of Hadrosauroidea by Jones (2026), but it has also been recovered as a styracosternan just outside Hadrosauroidea (Neoiguanodontia-grade).\n",
+        "history": [
+          {
+            "date": "2026-06-29",
+            "note": "Placed at Hadrosauroidea (basal) following the prevailing view; the styracosternan alternative reflected (P2)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "facultative",
       "paleoenvironment": [
@@ -15537,7 +15639,9 @@
         "Iguanodontia",
         "Dryomorpha",
         "Ankylopollexia",
-        "Neoiguanodontia"
+        "Styracosterna",
+        "Hadrosauriformes",
+        "Hadrosauroidea"
       ],
       "authors": "Norman, D. B.",
       "described": 1998
@@ -17117,6 +17221,15 @@
         "phonetic": "am-pell-o-nath-us"
       },
       "description": "Ampelognathus is an extinct genus of possibly rhabdodontomorph ornithopod dinosaurs from the Late Cretaceous (Cenomanian) Lewisville Formation of Texas. The type species is Ampelognathus coheni.",
+      "dispute": {
+        "summary": "Ampelognathus coheni is recovered within Rhabdodontomorpha by Czepiński and Madzia (2025), but Jones (2026) treats it as a basal ornithopod between Thescelosauridae and Iguanodontia.\n",
+        "history": [
+          {
+            "date": "2026-06-29",
+            "note": "Placed at Rhabdodontomorpha following Czepiński and Madzia (2025); the basal-ornithopod alternative reflected, not adopted (P3)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -17965,6 +18078,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -18485,6 +18599,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -19507,6 +19622,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -22287,6 +22403,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -22851,6 +22968,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -24505,6 +24623,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -25578,6 +25697,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -27140,6 +27260,15 @@
       },
       "etymology": "Named for Atlas Copco, the company whose equipment sponsored the Dinosaur Cove excavation in Australia, combined with Greek 'sauros' meaning 'lizard'.",
       "description": "Atlascopcosaurus is a genus of herbivorous basal iguanodont dinosaur from the Early Cretaceous Eumeralla Formation of Australia.",
+      "dispute": {
+        "summary": "Atlascopcosaurus loadsi is based on limited material; it is recovered in Elasmaria by recent analyses but treated as a nomen dubium by some and placed in an unnamed basal-iguanodontian clade by Boyd (2015).\n",
+        "history": [
+          {
+            "date": "2026-06-29",
+            "note": "Placed at Elasmaria following recent analyses; nomen dubium (P2)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -27818,6 +27947,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -29613,6 +29743,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -31642,12 +31773,21 @@
     },
     "Barilium": {
       "genus": "Barilium",
-      "parent": "Iguanodontidae",
+      "parent": "Hadrosauriformes",
       "etymology": "From Greek barys meaning 'heavy' combined with Latin ilium (the hip bone). Full meaning: 'heavy ilium', referring to the robust hip bone.",
       "pronunciation": {
         "phonetic": "bar-il-ee-um"
       },
       "description": "Barilium is a genus of iguanodontian dinosaur which was first described as a species of Iguanodon (I. dawsoni) by Richard Lydekker in 1888, the specific epithet honoring the discoverer Charles Dawson, who collected the holotype during the 1880s.",
+      "dispute": {
+        "summary": "Barilium dawsoni is recovered within a monophyletic Iguanodontidae by Lockwood and others (2024), but Jones (2026) places it in Styracosterna outside Iguanodontidae, and the family is traditionally paraphyletic.\n",
+        "history": [
+          {
+            "date": "2026-06-29",
+            "note": "Placed at Hadrosauriformes, the uncontested keystone; the monophyletic Iguanodontidae of Lockwood and others (2024) reflected, not adopted (P4, P5)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "facultative",
       "paleoenvironment": [
@@ -31782,8 +31922,8 @@
         "Iguanodontia",
         "Dryomorpha",
         "Ankylopollexia",
-        "Neoiguanodontia",
-        "Iguanodontidae"
+        "Styracosterna",
+        "Hadrosauriformes"
       ],
       "authors": "Norman, D. B.",
       "described": 2010
@@ -32289,6 +32429,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -32727,6 +32868,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea"
@@ -32883,7 +33025,7 @@
     },
     "Bayannurosaurus": {
       "genus": "Bayannurosaurus",
-      "parent": "Ankylopollexia",
+      "parent": "Styracosterna",
       "etymology": "Named for the Bayin-Gobi (Bayannur) region of China where the fossils were found, combined with Greek 'sauros' meaning 'lizard'.",
       "pronunciation": {
         "phonetic": "BAY-a-NOOR-oh-SOR-us"
@@ -32998,7 +33140,8 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
-        "Ankylopollexia"
+        "Ankylopollexia",
+        "Styracosterna"
       ],
       "authors": "Xu, X.; Tan, Q.; Gao, Y.; Bao, Z.; Yin, Z.; Guo, B.; Wang, J.; Tan, L.; Zhang, Y.; Xing, H.",
       "described": 2018
@@ -35158,6 +35301,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -35319,12 +35463,21 @@
     },
     "Bolong": {
       "genus": "Bolong",
-      "parent": "Iguanodontidae",
+      "parent": "Hadrosauroidea",
       "etymology": "From the names of the brothers Bo Hai-chen and Bo Xue (who helped uncover the specimen) + Mandarin lóng (龍) meaning 'dragon'; overall meaning 'Bo's dragon'.",
       "pronunciation": {
         "phonetic": "BO-long"
       },
       "description": "Bolong is a genus of iguanodontian dinosaur known from the Early Cretaceous Yixian Formation of western Liaoning Province, China. It lived about 125 million years ago in the earliest Aptian.",
+      "dispute": {
+        "summary": "Bolong yixianensis is placed among the basalmost hadrosauroids by Jones (2026) and subsequent work, though the analysis that named it (Wu and Godefroit, 2012) recovered it near a monophyletic Iguanodontidae.\n",
+        "history": [
+          {
+            "date": "2026-06-29",
+            "note": "Placed at Hadrosauroidea (basal) following the prevailing view (P3)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "facultative",
       "paleoenvironment": [
@@ -35478,8 +35631,9 @@
         "Iguanodontia",
         "Dryomorpha",
         "Ankylopollexia",
-        "Neoiguanodontia",
-        "Iguanodontidae"
+        "Styracosterna",
+        "Hadrosauriformes",
+        "Hadrosauroidea"
       ],
       "authors": "Wu, W.-H.; Godefroit, P.; D.-y. Hu",
       "described": 2010
@@ -35755,6 +35909,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -37381,6 +37536,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -38360,6 +38516,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes"
       ],
@@ -40764,6 +40921,15 @@
         "phonetic": "cah-LO-vo-SOR-us"
       },
       "description": "Callovosaurus is a genus of iguanodontian dinosaur known from most of a left thigh bone discovered in Middle Jurassic-age rocks of England. At times, it has been considered dubious or a valid genus of basal iguanodontian, perhaps a dryosaurid.",
+      "dispute": {
+        "summary": "Callovosaurus leedsi is regarded as a dryosaurid by Jones (2026), but it is based on limited material and has been recovered in a basal Iguanodontia polytomy (McDonald and others, 2012) and outside Dryomorpha by Czepiński and Madzia (2025); its validity is sometimes questioned.\n",
+        "history": [
+          {
+            "date": "2026-06-29",
+            "note": "Placed at Dryosauridae following the prevailing view (Jones, 2026); the more basal alternatives reflected, not adopted (P2)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -40999,6 +41165,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna"
       ],
       "authors": "Prieto-Márquez, A.; Sellés, A.",
@@ -42163,6 +42330,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -42433,6 +42601,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea"
@@ -43427,6 +43596,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna"
       ],
       "authors": "Gilpin, D.; DiCroce, T.; K. Carpenter",
@@ -46003,6 +46173,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -47818,12 +47989,21 @@
     },
     "Choyrodon": {
       "genus": "Choyrodon",
-      "parent": "Iguanodontia",
+      "parent": "Hadrosauroidea",
       "etymology": "Named for the city of Choyr in Mongolia, where the fossils were found, combined with Greek 'odon' meaning 'tooth'.",
       "pronunciation": {
         "phonetic": "kwa-yuh-row-don"
       },
       "description": "Choyrodon is a genus of hadrosauroid dinosaur from the Early Cretaceous (Albian) Khuren Dukh Formation of Mongolia. The type and only species is Choyrodon barsboldi. The generic name is derived from the city of Choyr, and -odon, from Latin for tooth; the specific name barsboldi honors paleontologist Rinchen Barsbold. The material consists of a holotype partial skull and cervical ribs, with two other partial skulls both with associated postcranial material. It was found to be the sister taxon of Eolambia.",
+      "dispute": {
+        "summary": "Choyrodon barsboldi is placed among basal hadrosauroids by Jones (2026), who notes its phylogenetic position is poorly resolved; it has been recovered close to Eolambia.\n",
+        "history": [
+          {
+            "date": "2026-06-29",
+            "note": "Placed at Hadrosauroidea (basal) following the prevailing view (P2)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -47937,7 +48117,12 @@
         "Cerapoda",
         "Ornithopoda",
         "Clypeodonta",
-        "Iguanodontia"
+        "Iguanodontia",
+        "Dryomorpha",
+        "Ankylopollexia",
+        "Styracosterna",
+        "Hadrosauriformes",
+        "Hadrosauroidea"
       ],
       "authors": "Gates, T. A.; Tsogtbaatar, K.; Zanno, L. E.; Chinzorig, T.; Watabe, M.",
       "described": 2018
@@ -49131,6 +49316,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -49669,6 +49855,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -50064,6 +50251,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -51452,6 +51640,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes"
       ],
@@ -51886,13 +52075,22 @@
     },
     "Convolosaurus": {
       "genus": "Convolosaurus",
-      "parent": "Tenontosauridae",
+      "parent": "Rhabdodontomorpha",
       "etymology": "From Latin convolo ('to flock together') + Greek sauros ('lizard'), meaning 'flocking lizard', in reference to the concentration of juvenile fossils found together at the discovery site.",
       "pronunciation": {
         "phonetic": "kon-vuh-luh-SAWR-us",
         "ipa": "/ˌkɒnvələˈsɔːrəs/"
       },
       "description": "Convolosaurus is a genus of basal ornithopod dinosaur from the Twin Mountains Formation from Proctor Lake in Comanche County, Texas. The type and only species is Convolosaurus marri.",
+      "dispute": {
+        "summary": "Convolosaurus marri is recovered within Rhabdodontomorpha (as a tenontosaurid) by Fonseca and others (2024) and Czepiński and Madzia (2025), but earlier studies and Jones (2026) place it as a basal ornithopod outside Iguanodontia, near Hypsilophodon and Thescelosaurus.\n",
+        "history": [
+          {
+            "date": "2026-06-29",
+            "note": "Placed at Rhabdodontomorpha following the most recent comprehensive analyses; the basal-ornithopod (outside Iguanodontia) alternative reflected, not adopted (P3)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -52026,8 +52224,7 @@
         "Ornithopoda",
         "Clypeodonta",
         "Iguanodontia",
-        "Rhabdodontomorpha",
-        "Tenontosauridae"
+        "Rhabdodontomorpha"
       ],
       "authors": "Andrzejewski, K. A.; Winkler, D. A.; Jacobs, L. L.",
       "described": 2019
@@ -52459,6 +52656,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -54006,6 +54204,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna"
       ],
       "authors": "Seeley, H. G.",
@@ -54714,6 +54913,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna"
       ],
       "authors": "Paul, G. S.",
@@ -56004,6 +56204,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea"
@@ -57812,6 +58013,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -60388,6 +60590,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna"
       ],
       "authors": "Mateus, O.; Telles Antunes, M.",
@@ -64337,6 +64540,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -65781,12 +65985,21 @@
     },
     "Emiliasaura": {
       "genus": "Emiliasaura",
-      "parent": "Rhabdodontomorpha",
+      "parent": "Dryosauridae",
       "etymology": "Named in honor of Emilia (likely a personal name) + Latin saura (lizard): 'Emilia's lizard'.",
       "pronunciation": {
         "phonetic": "eh-MEE-lee-uh-SOH-ruh"
       },
       "description": "Emiliasaura is an extinct genus of iguanodontian ornithopod dinosaurs from the Early Cretaceous (Valanginian) Mulichinco Formation of Neuquén Province, Argentina. The genus contains a single species, Emiliasaura alessandrii, known from three individual specimens. Emiliasaura was initially described as a rhabdodontomorph. If this identification is correct, it would represent the oldest member of this clade and the first named from South America. However, a later analysis of rhabdodontomorphs failed to recover Emiliasaura within this clade, instead placing it as a styracosternan.",
+      "dispute": {
+        "summary": "Emiliasaura alessandrii was described as an early-diverging rhabdodontomorph, but Czepiński and Madzia (2025), followed by Jones (2026), instead recover it within Dryosauridae; some readings place it among basal styracosternans.\n",
+        "history": [
+          {
+            "date": "2026-06-29",
+            "note": "Placed at Dryosauridae following Czepiński and Madzia (2025) and Jones (2026); the rhabdodontomorph and styracosternan alternatives reflected, not adopted (P3)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -65883,7 +66096,8 @@
         "Ornithopoda",
         "Clypeodonta",
         "Iguanodontia",
-        "Rhabdodontomorpha"
+        "Dryomorpha",
+        "Dryosauridae"
       ],
       "authors": "Coria, R. A.; Cerda, I. A.; Escaso, F.; Baiano, M. A.; Bellardini, F.; Braun, A.; Coria, L. M.; Gutierrez, J. M.; Pino, D.; Windholz, G. J.; Currie, P. J.; Ortega, F.",
       "described": 2025
@@ -66769,6 +66983,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -67560,6 +67775,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -67868,7 +68084,7 @@
     },
     "Eousdryosaurus": {
       "genus": "Eousdryosaurus",
-      "parent": "Dryomorpha",
+      "parent": "Dryosauridae",
       "etymology": "From Greek eous (eastern) + Dryosaurus (the related genus): 'eastern Dryosaurus', referring to its geographic origin in Portugal relative to other dryosaurid relatives.",
       "pronunciation": {
         "phonetic": "yuss-dry-o-sor-us"
@@ -68002,7 +68218,8 @@
         "Ornithopoda",
         "Clypeodonta",
         "Iguanodontia",
-        "Dryomorpha"
+        "Dryomorpha",
+        "Dryosauridae"
       ],
       "authors": "Escaso, F.; Ortega, F.; Dantas, P.; Malafaia, E.; Silva, B.; Gasulla, J. M.; Mocho, P.; Narváez, I.; Sanz, J. L.",
       "described": 2014
@@ -68575,6 +68792,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea"
@@ -72083,12 +72301,21 @@
     },
     "Foskeia": {
       "genus": "Foskeia",
-      "parent": "Rhabdodontia",
+      "parent": "Rhabdodontomorpha",
       "etymology": "From Ancient Greek 'phōs' meaning 'light' and 'boskein' meaning 'to forage', referring to its small size and presumed herbivorous habits.",
       "pronunciation": {
         "phonetic": "foh-SKAY-ah"
       },
       "description": "Foskeia is an extinct genus of rhabdodontomorph ornithopod dinosaurs known from the Early Cretaceous (Barremian to Aptian ages) Castrillo de la Reina Formation of Spain. The genus contains a single species, Foskeia pelendonum, known from fossils of multiple individuals of different ontogenetic stages. Before its formal description, it had been nicknamed the \"Vegagete ornithopod.\"",
+      "dispute": {
+        "summary": "Foskeia is a recently named rhabdodontomorph; its describing paper was not available for review this pass, so the placement follows secondary signals and is provisional.\n",
+        "history": [
+          {
+            "date": "2026-06-29",
+            "note": "Placed at Rhabdodontomorpha provisionally; finer placement unresolved (P2)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -72193,8 +72420,7 @@
         "Ornithopoda",
         "Clypeodonta",
         "Iguanodontia",
-        "Rhabdodontomorpha",
-        "Rhabdodontia"
+        "Rhabdodontomorpha"
       ],
       "authors": "Dieudonné, P.; Becerra, M. G.; Zanesco, T.; Tortosa, T.; Cruzado‐Caballero, P.; Stein, K.; Torcida Fernández‐Baldor, F.",
       "described": 2026
@@ -72338,6 +72564,15 @@
         "phonetic": "foss-TOR-ee-uh"
       },
       "description": "Fostoria is a genus of iguanodontian ornithopod dinosaur from the Griman Creek Formation of New South Wales, Australia. The type and only species, Fostoria dhimbangunmal was described in 2019.",
+      "dispute": {
+        "summary": "Fostoria dhimbangunmal is placed within Rhabdodontomorpha by Jones (2026) and Madzia and others (2021), but Czepiński and Madzia (2025) recover it outside Rhabdodontomorpha; its fragmentary material limits confidence.\n",
+        "history": [
+          {
+            "date": "2026-06-29",
+            "note": "Placed at Rhabdodontomorpha following the prevailing view; the outside-Rhabdodontomorpha result of Czepiński and Madzia (2025) reflected, not adopted (P2)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -73038,6 +73273,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes"
       ],
@@ -73460,12 +73696,21 @@
     },
     "Fulgurotherium": {
       "genus": "Fulgurotherium",
-      "parent": "Iguanodontia",
+      "parent": "Elasmaria",
       "etymology": "Lightning beast; from Latin fulgur (lightning), referring to Lightning Ridge, Australia, where fossils were found, and Greek therion (beast)",
       "pronunciation": {
         "phonetic": "full-GOO-ro-THEE-ree-um"
       },
       "description": "Fulgurotherium is a dubious genus of ornithischian dinosaur from the Late Cretaceous (Cenomanian) Griman Creek Formation. It lived in what is now Australia.",
+      "dispute": {
+        "summary": "Fulgurotherium australe is based on fragmentary material and is widely treated as a nomen dubium, though it has been tentatively referred to Elasmaria.\n",
+        "history": [
+          {
+            "date": "2026-06-29",
+            "note": "Placed at Elasmaria following the tentative referral; nomen dubium (P2)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -73574,7 +73819,8 @@
         "Cerapoda",
         "Ornithopoda",
         "Clypeodonta",
-        "Iguanodontia"
+        "Iguanodontia",
+        "Elasmaria"
       ],
       "authors": "Huene, F. V.",
       "described": 1932
@@ -74207,6 +74453,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -77692,6 +77939,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -78144,6 +78392,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea"
@@ -78570,6 +78819,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -79637,6 +79887,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea"
@@ -79747,6 +79998,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -80020,6 +80272,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -81280,6 +81533,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -82069,6 +82323,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -83013,6 +83268,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea"
@@ -84507,12 +84763,21 @@
     },
     "Hesperonyx": {
       "genus": "Hesperonyx",
-      "parent": "Dryomorpha",
+      "parent": "Dryosauridae",
       "pronunciation": {
         "phonetic": "hes-PERR-ON-iks"
       },
       "etymology": "Western claw; from Greek hesperos (western) and onyx (claw)",
       "description": "Hesperonyx is an extinct genus of dryomorphan ornithopod dinosaur from the Late Jurassic Lourinhã Formation of Portugal. The genus contains a single species, Hesperonyx martinhotomasorum, known from bones of the fore- and hindlimbs.",
+      "dispute": {
+        "summary": "Hesperonyx darwini is recovered as a dryosaurid in some analyses and as a basal dryomorphan in others; Jones (2026) treats it as a likely dryosaurid.\n",
+        "history": [
+          {
+            "date": "2026-06-29",
+            "note": "Placed at Dryosauridae following the prevailing view; the basal-dryomorphan alternative reflected (P2)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -84618,7 +84883,8 @@
         "Ornithopoda",
         "Clypeodonta",
         "Iguanodontia",
-        "Dryomorpha"
+        "Dryomorpha",
+        "Dryosauridae"
       ],
       "authors": "Rotatori, F. M.; Ferrari, L.; Sequero, C.; Camilo, B.; Mateus, O.; Moreno-Azanza, M.",
       "described": 2023
@@ -85910,6 +86176,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna"
       ],
       "authors": "McDonald, A. T.; Kirkland, J. I.; DeBlieux, D. D.; Madsen, S. K.; Cavin, J.; Milner, A. R. C.; Panzarin, L.",
@@ -87001,6 +87268,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -88361,6 +88629,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -89094,6 +89363,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -89343,7 +89613,7 @@
     },
     "Hypselospinus": {
       "genus": "Hypselospinus",
-      "parent": "Neoiguanodontia",
+      "parent": "Styracosterna",
       "etymology": "From Greek 'hypselos' meaning 'high' and Latin 'spina' meaning 'spine' or 'thorn', in reference to the tall neural spines on the vertebrae.",
       "pronunciation": {
         "phonetic": "HIP-sel-o-SPIEN-us"
@@ -89494,7 +89764,7 @@
         "Iguanodontia",
         "Dryomorpha",
         "Ankylopollexia",
-        "Neoiguanodontia"
+        "Styracosterna"
       ],
       "authors": "Norman, D. B.",
       "described": 2010
@@ -89724,6 +89994,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -90069,7 +90340,7 @@
     },
     "Iani": {
       "genus": "Iani",
-      "parent": "Tenontosauridae",
+      "parent": "Rhabdodontomorpha",
       "etymology": "Named after Ianus (Janus), the two-faced Roman god of transitions and change, symbolizing the transitional nature of this dinosaur at a time of major faunal change",
       "pronunciation": {
         "phonetic": "YAN-ee"
@@ -90202,8 +90473,7 @@
         "Ornithopoda",
         "Clypeodonta",
         "Iguanodontia",
-        "Rhabdodontomorpha",
-        "Tenontosauridae"
+        "Rhabdodontomorpha"
       ],
       "authors": "Zanno, L. E.; Gates, T. A.; Avrahami, H. M.; Tucker, R. T.; Makovicky, P. J.",
       "described": 2023
@@ -91039,6 +91309,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna"
       ],
       "authors": "McDonald, A. T.; Kirkland, J. I.; DeBlieux, D. D.; Madsen, S. K.; Cavin, J.; Milner, A. R. C.; Panzarin, L.",
@@ -91278,6 +91549,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes"
       ],
@@ -93769,6 +94041,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna"
       ],
       "authors": "Lockwood, J. A. F.; Martill, D. M.; Maidment, S. C. R.",
@@ -94185,7 +94458,7 @@
     },
     "Iyuku": {
       "genus": "Iyuku",
-      "parent": "Iguanodontia",
+      "parent": "Dryosauridae",
       "etymology": "From the Xhosa word for 'hatchling', in reference to the immature status of the specimens. The species name honors South African paleontologist Mike Raath.",
       "pronunciation": {
         "phonetic": "eye-YOO-koo"
@@ -94315,7 +94588,9 @@
         "Cerapoda",
         "Ornithopoda",
         "Clypeodonta",
-        "Iguanodontia"
+        "Iguanodontia",
+        "Dryomorpha",
+        "Dryosauridae"
       ],
       "authors": "Forster, C. A.; de Klerk, W. J.; Poole, K. E.; Chinsamy‐Turan, A.; Roberts, E. M.; Ross, C. F.",
       "described": 2022
@@ -95168,6 +95443,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -95743,6 +96019,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -97439,6 +97716,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -97741,6 +98019,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea"
@@ -99203,6 +99482,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -99221,6 +99501,15 @@
       },
       "etymology": "Named after Farm Kangnas in the Orange River valley of northern Cape Province, South Africa; meaning \"Farm Kangnas lizard\"",
       "description": "Kangnasaurus is a genus of elasmarian ornithopod dinosaur found in Late Cretaceous rocks of South Africa. It is known from a tooth and possibly some postcranial remains dating between the middle-Campanian to Maastrichtian Kalahari Deposits Formation.",
+      "dispute": {
+        "summary": "Kangnasaurus coetzeei is based on a tooth and fragmentary remains; it is recovered as an elasmarian by recent analyses but has historically been treated as a dryosaurid and is sometimes regarded as a nomen dubium.\n",
+        "history": [
+          {
+            "date": "2026-06-29",
+            "note": "Placed at Elasmaria following recent analyses; nomen dubium (P2)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -100084,6 +100373,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -100333,6 +100623,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -100640,6 +100931,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -102512,6 +102804,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea"
@@ -102988,6 +103281,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -103103,6 +103397,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -103767,6 +104062,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -104528,6 +104824,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -104867,6 +105164,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -105246,6 +105544,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna"
       ],
       "authors": "You, H.; Ji, Q.; D. Li",
@@ -105481,6 +105780,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -106070,6 +106370,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -107735,6 +108036,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -110970,6 +111272,15 @@
       "parent": "Iguanodontia",
       "etymology": "Meaning uncertain; either from Araucanian 'lonco' meaning 'chief' or Greek 'lonche' meaning 'lance', combined with Greek 'sauros' meaning 'lizard'.",
       "description": "Loncosaurus is an extinct genus of ornithopod dinosaur from the Upper Cretaceous of Provincia de Santa Cruz, Argentina. The type (and only known) species is Loncosaurus argentinus, described by the famous Argentinian paleontologist Florentino Ameghino, but is considered a dubious name. Details on this animal are often contradictory, befitting a genus that was long confused for a theropod.",
+      "dispute": {
+        "summary": "Loncosaurus argentinus is based on a partial femur, long confused with theropods; it is now regarded as an indeterminate iguanodontian and a nomen dubium (Norman, 2004).\n",
+        "history": [
+          {
+            "date": "2026-06-29",
+            "note": "Placed at Iguanodontia incertae sedis; nomen dubium (P2)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -111206,6 +111517,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -112679,7 +112991,7 @@
     },
     "Lurdusaurus": {
       "genus": "Lurdusaurus",
-      "parent": "Iguanodontoidea",
+      "parent": "Styracosterna",
       "pronunciation": {
         "phonetic": "LOOR-duh-SAWR-us"
       },
@@ -112829,7 +113141,9 @@
         "Ornithopoda",
         "Clypeodonta",
         "Iguanodontia",
-        "Iguanodontoidea"
+        "Dryomorpha",
+        "Ankylopollexia",
+        "Styracosterna"
       ],
       "authors": "Taquet, P.; Russell, D. A.",
       "described": 1999
@@ -114207,6 +114521,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna"
       ],
       "authors": "Fuentes Vidarte, C.; Meijide Calvo, M.; F. Meijide Fuentes, M. M. F.",
@@ -114350,6 +114665,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -115074,6 +115390,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -115944,6 +116261,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -116393,6 +116711,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -116791,12 +117110,21 @@
     },
     "Mantellisaurus": {
       "genus": "Mantellisaurus",
-      "parent": "Iguanodontia",
+      "parent": "Hadrosauriformes",
       "etymology": "Named for Gideon Mantell, the English geologist and paleontologist who first described Iguanodon, combined with Greek '-saurus' meaning 'lizard'.",
       "pronunciation": {
         "phonetic": "man-tell-i-SOR-us"
       },
       "description": "Mantellisaurus is a genus of iguanodontian dinosaur that lived in the Barremian and early Aptian ages of the Early Cretaceous Period of Europe. Its remains are known from Belgium (Bernissart), England, Spain and Germany. The type and only species is M. atherfieldensis. Formerly known as Iguanodon atherfieldensis, the new genus Mantellisaurus was erected for the species by Gregory Paul in 2007. According to Paul, Mantellisaurus was more lightly built than Iguanodon and more closely related to Ouranosaurus, making Iguanodon in its traditional sense paraphyletic. It is known from many complete and almost complete skeletons. The genus name honors Gideon Mantell, the discoverer of Iguanodon.",
+      "dispute": {
+        "summary": "Mantellisaurus atherfieldensis is grouped with Iguanodon (and, in some analyses, Barilium and Comptonatus) in a monophyletic Iguanodontidae by Lockwood and others (2024), but this family is traditionally paraphyletic and Iguanodontidae is not consistently recovered.\n",
+        "history": [
+          {
+            "date": "2026-06-29",
+            "note": "Placed at Hadrosauriformes, the uncontested keystone; the monophyletic Iguanodontidae of Lockwood and others (2024) reflected, not adopted (P4, P5)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "bipedal",
       "diagnostic_features": [
@@ -117017,7 +117345,11 @@
         "Cerapoda",
         "Ornithopoda",
         "Clypeodonta",
-        "Iguanodontia"
+        "Iguanodontia",
+        "Dryomorpha",
+        "Ankylopollexia",
+        "Styracosterna",
+        "Hadrosauriformes"
       ],
       "authors": "Paul, G. S.",
       "described": 2007
@@ -118057,7 +118389,7 @@
     },
     "Matheronodon": {
       "genus": "Matheronodon",
-      "parent": "Rhabdodontoidea",
+      "parent": "Rhabdodontidae",
       "etymology": "Named after French paleontologist Philippe Matheron, combined with Greek 'odon' (tooth); meaning 'Matheron's tooth'.",
       "pronunciation": {
         "phonetic": "math-uh-ron-o-don"
@@ -118171,7 +118503,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Rhabdodontomorpha",
-        "Rhabdodontoidea"
+        "Rhabdodontidae"
       ],
       "authors": "Godefroit, P.; Garcia, G.; Gomez, B.; Stein, K.; Cincotta, A.; Lefèvre, U.; Valentin, X.",
       "described": 2017
@@ -120851,6 +121183,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -122251,6 +122584,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -122833,7 +123167,7 @@
     },
     "Mochlodon": {
       "genus": "Mochlodon",
-      "parent": "Rhabdodontoidea",
+      "parent": "Rhabdodontidae",
       "etymology": "From Greek 'mochlos' meaning 'bar' or 'lever' and 'odon' meaning 'tooth', giving the meaning 'bar tooth' or 'lever tooth', referring to a distinctive tooth morphology.",
       "pronunciation": {
         "phonetic": "MOK-lo-don"
@@ -122976,7 +123310,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Rhabdodontomorpha",
-        "Rhabdodontoidea"
+        "Rhabdodontidae"
       ],
       "authors": "Seeley, H. G.",
       "described": 1881
@@ -124118,6 +124452,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna"
       ],
       "authors": "Gasulla, J. M.; Escaso, F.; Narváez, I.; Ortega, F.; Sanz, J. L.",
@@ -124991,6 +125326,15 @@
       },
       "etymology": "Named for Muttaburra, a town in Queensland, Australia near where the fossil was discovered, combined with Greek '-saurus' meaning 'lizard'.",
       "description": "Muttaburrasaurus was a genus of herbivorous iguanodontian ornithopod dinosaur that lived in what is now north-eastern Australia during the Cenomanian stage of the Late Cretaceous period, about 96 million years ago. It has been recovered in some analyses as a member of the iguanodontian clade Rhabdodontomorpha, or alternately as a member of Elasmaria. After Kunbarrasaurus, it is Australia's most completely known dinosaur from skeletal remains. It was named after Muttaburra, the site in Queensland, Australia, where it was found. The dinosaur was selected from twelve candidates to become the official fossil emblem of the State of Queensland.",
+      "dispute": {
+        "summary": "Muttaburrasaurus langdoni is placed within Rhabdodontomorpha by Jones (2026), Dieudonné and others (2016), and Madzia and others (2021), but Czepiński and Madzia (2025) recover it outside Rhabdodontomorpha (near or within Elasmaria).\n",
+        "history": [
+          {
+            "date": "2026-06-29",
+            "note": "Placed at Rhabdodontomorpha following the prevailing view; the outside-Rhabdodontomorpha result of Czepiński and Madzia (2025) reflected, not adopted (P2, P3)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -125626,6 +125970,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -126194,6 +126539,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -127045,6 +127391,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -127167,6 +127514,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna"
       ],
       "authors": "Ji, S.; Zhang, P.",
@@ -130849,6 +131197,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -132774,6 +133123,15 @@
         "phonetic": "ob-uh-lig-nath-us"
       },
       "description": "Obelignathus is an extinct genus of rhabdodontomorph ornithopod dinosaurs from the Late Cretaceous 'Grès à Reptiles' Formation of France. The genus contains a single species, O. septimanicus, known from a right dentary. The species was initially classified as a species of the coeval Rhabdodon.",
+      "dispute": {
+        "summary": "Obelignathus septimanicus (formerly Rhabdodon septimanicus) is recovered as an early-diverging rhabdodontomorph under implied weighting but as an elasmarian under equal weighting by Czepiński and Madzia (2025); its position is unstable.\n",
+        "history": [
+          {
+            "date": "2026-06-29",
+            "note": "Placed at Rhabdodontomorpha following the implied-weighting result of Czepiński and Madzia (2025); the elasmarian alternative reflected, not adopted (P2)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -133768,6 +134126,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -134724,6 +135083,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -136007,6 +136367,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -136159,7 +136520,7 @@
     },
     "Osmakasaurus": {
       "genus": "Osmakasaurus",
-      "parent": "Iguanodontia",
+      "parent": "Ankylopollexia",
       "etymology": "From Lakota 'osmaka' (canyon) and Greek 'sauros' (lizard); meaning 'canyon lizard'.",
       "pronunciation": {
         "phonetic": "os-MAH-kuh-SOR-us"
@@ -136289,7 +136650,9 @@
         "Cerapoda",
         "Ornithopoda",
         "Clypeodonta",
-        "Iguanodontia"
+        "Iguanodontia",
+        "Dryomorpha",
+        "Ankylopollexia"
       ],
       "authors": "McDonald, A. T.",
       "described": 2011
@@ -136438,7 +136801,7 @@
     },
     "Ouranosaurus": {
       "genus": "Ouranosaurus",
-      "parent": "Neoiguanodontia",
+      "parent": "Styracosterna",
       "pronunciation": {
         "phonetic": "oo-RAHN-o-SAWR-us"
       },
@@ -136565,7 +136928,7 @@
         "Iguanodontia",
         "Dryomorpha",
         "Ankylopollexia",
-        "Neoiguanodontia"
+        "Styracosterna"
       ],
       "authors": "Taquet, P.",
       "described": 1972
@@ -137073,7 +137436,7 @@
     },
     "Owenodon": {
       "genus": "Owenodon",
-      "parent": "Dryomorpha",
+      "parent": "Ankylopollexia",
       "etymology": "Named for Richard Owen, the British paleontologist who first described the specimen, combined with Greek 'odon' meaning 'tooth'.",
       "pronunciation": {
         "phonetic": "o-wen-o-don"
@@ -137201,7 +137564,8 @@
         "Ornithopoda",
         "Clypeodonta",
         "Iguanodontia",
-        "Dryomorpha"
+        "Dryomorpha",
+        "Ankylopollexia"
       ],
       "authors": "Galton, P. M.",
       "described": 2009
@@ -140082,6 +140446,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -140298,6 +140663,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -140448,7 +140814,7 @@
     },
     "Pareisactus": {
       "genus": "Pareisactus",
-      "parent": "Rhabdodontoidea",
+      "parent": "Rhabdodontidae",
       "pronunciation": {
         "phonetic": "par-eye-SAK-tus"
       },
@@ -140551,7 +140917,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Rhabdodontomorpha",
-        "Rhabdodontoidea"
+        "Rhabdodontidae"
       ],
       "authors": "Párraga, J.; Prieto-Márquez, A.",
       "described": 2019
@@ -141669,6 +142035,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna"
       ],
       "authors": "Sancarlo, F.; Mandorlo, D.; Ford, T. L.",
@@ -143029,6 +143396,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea"
@@ -145192,7 +145560,7 @@
     },
     "Planicoxa": {
       "genus": "Planicoxa",
-      "parent": "Iguanodontia",
+      "parent": "Styracosterna",
       "pronunciation": {
         "phonetic": "plan-i-KOHK-suh"
       },
@@ -145316,7 +145684,10 @@
         "Cerapoda",
         "Ornithopoda",
         "Clypeodonta",
-        "Iguanodontia"
+        "Iguanodontia",
+        "Dryomorpha",
+        "Ankylopollexia",
+        "Styracosterna"
       ],
       "authors": "DiCroce, T.; Carpenter, K.",
       "described": 2001
@@ -146168,6 +146539,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -147301,6 +147673,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea"
@@ -148231,6 +148604,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna"
       ],
       "authors": "McDonald, A. T.; Espílez, E.; Mampel, L.; Kirkland, J. I.; Alcalá, L.",
@@ -148367,6 +148741,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea"
@@ -148515,6 +148890,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -149194,6 +149570,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -150208,6 +150585,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -150530,6 +150908,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -151949,6 +152328,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea"
@@ -154634,6 +155014,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna"
       ],
       "authors": "Shibata, M.; Jintasakul, P.; Azuma, Y.",
@@ -155516,7 +155897,6 @@
         "Clypeodonta",
         "Iguanodontia",
         "Rhabdodontomorpha",
-        "Rhabdodontoidea",
         "Rhabdodontidae"
       ],
       "authors": "Matheron, P.",
@@ -155659,6 +156039,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -156126,6 +156507,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna"
       ],
       "authors": "Lopatin, A. V.; Averianov, A. O.",
@@ -159921,6 +160303,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -162429,6 +162812,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -163840,6 +164224,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -165202,6 +165587,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -165668,6 +166054,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea"
@@ -169479,6 +169866,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea"
@@ -174828,6 +175216,15 @@
       },
       "etymology": "From Greek 'syngonos' meaning 'congenital' or 'related by birth', combined with Greek 'sauros' meaning 'lizard', likely referring to the fused or closely associated bones in the specimen.",
       "description": "Syngonosaurus is an extinct genus of ornithopod dinosaur from the Early Cretaceous. It was an iguanodontian discovered in the Cambridge Greensand of England and was first described in 1879. The type species, S. macrocercus, was described by British paleontologist Harry Seeley in 1879 and it was later synonymised with Acanthopholis, but the genus was reinstated in a 2020 study, when Syngonosaurus and Eucercosaurus were reinterpreted as basal iguanodontians.",
+      "dispute": {
+        "summary": "Syngonosaurus macrocercus, long synonymized with the ankylosaur Acanthopholis, was reinstated as a basal iguanodontian (McDonald and others, 2020); it is based on Cambridge Greensand composites and is treated as an indeterminate iguanodontian.\n",
+        "history": [
+          {
+            "date": "2026-06-29",
+            "note": "Placed at Iguanodontia incertae sedis; nomen dubium (P2)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -175648,6 +176045,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -176474,6 +176872,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -178833,6 +179232,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -179156,13 +179556,22 @@
     },
     "Tenontosaurus": {
       "genus": "Tenontosaurus",
-      "parent": "Tenontosauridae",
+      "parent": "Rhabdodontomorpha",
       "pronunciation": {
         "phonetic": "ti-NON-tuh-SOR-uhs",
         "ipa": "/tɪˌnɒntəˈsɔːrəs/"
       },
       "etymology": "From Greek tenon ('sinew') and sauros ('lizard'), meaning 'sinew lizard', referring to the bony tendons stiffening its back and tail",
       "description": "Tenontosaurus is a genus of iguanodontian ornithopod dinosaur. It had an unusually long, broad tail, which like its back was stiffened with a network of bony tendons. The genus is known from the late Aptian to Albian ages of the Early Cretaceous period sediments of western North America, dating between 115 and 108 million years ago. It contains two species, Tenontosaurus tilletti (described by John Ostrom in 1970) and Tenontosaurus dossi (described by Winkler, Murry, and Jacobs in 1997). Many specimens of T. tilletti have been collected from several geological formations throughout western North America. T. dossi is known from only a handful of specimens collected from the Twin Mountains Formation of Parker County, Texas.",
+      "dispute": {
+        "summary": "Tenontosaurus is recovered as an early-diverging rhabdodontomorph (with Iani and Convolosaurus) by the recent comprehensive analyses (Fonseca and others, 2024; Czepiński and Madzia, 2025), but earlier work and Jones (2026) place it as a basal iguanodontian outside Rhabdodontomorpha.\n",
+        "history": [
+          {
+            "date": "2026-06-29",
+            "note": "Placed at Rhabdodontomorpha following the most recent comprehensive analyses; the basal-Iguanodontia alternative reflected, not adopted (P3)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -179334,8 +179743,7 @@
         "Ornithopoda",
         "Clypeodonta",
         "Iguanodontia",
-        "Rhabdodontomorpha",
-        "Tenontosauridae"
+        "Rhabdodontomorpha"
       ],
       "authors": "Ostrom, J. H.",
       "described": 1970
@@ -179828,6 +180236,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -180964,6 +181373,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna"
       ],
       "authors": "Brill, K.; Carpenter, K.",
@@ -181511,6 +181921,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -182454,6 +182865,15 @@
       },
       "etymology": "From Greek teichos, \"wall\", combined with Greek osteon, \"bone\" - means \"walled bone\", referring to vertebrae that lacked lateral pneumatic foramina in their side walls",
       "description": "Tichosteus is a genus of herbivorous dinosaur from the Late Jurassic. It is known only from vertebrae recovered from Kimmeridgian rocks in the Morrison Formation, Colorado.",
+      "dispute": {
+        "summary": "Tichosteus is based on vertebrae only and lacks unique diagnostic features; it is treated as a dubious iguanodontian (Norman, 2004).\n",
+        "history": [
+          {
+            "date": "2026-06-29",
+            "note": "Placed at Iguanodontia incertae sedis; nomen dubium (P2)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -183600,6 +184020,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -184933,6 +185354,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -185082,6 +185504,15 @@
         "phonetic": "TRAN-sil-VAY-no-SOR-us"
       },
       "description": "Transylvanosaurus is an extinct genus of rhabdodontid ornithopod dinosaur from the Late Cretaceous (Maastrichtian) Hateg Basin of Romania. The type species is Transylvanosaurus platycephalus, known from a fragmentary skull.",
+      "dispute": {
+        "summary": "Transylvanosaurus platycephalus was described as a rhabdodontid, and Jones (2026) places it within Rhabdodontidae, but Czepiński and Madzia (2025) recover it as an early-diverging rhabdodontomorph outside Rhabdodontidae.\n",
+        "history": [
+          {
+            "date": "2026-06-29",
+            "note": "Placed at Rhabdodontomorpha, the least-inclusive clade these results agree on; the within-Rhabdodontidae position reflected, not adopted (P2)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -186948,6 +187379,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -192071,6 +192503,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -194827,6 +195260,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -195233,6 +195667,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -198503,6 +198938,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea"
@@ -198921,6 +199357,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -201062,12 +201499,21 @@
     },
     "Yueosaurus": {
       "genus": "Yueosaurus",
-      "parent": "Iguanodontia",
+      "parent": "Neornithischia",
       "etymology": "Named for 'Yue', the ancient name for Zhejiang Province, China, combined with Greek 'sauros' meaning 'lizard'.",
       "pronunciation": {
         "phonetic": "yoo-SOR-us"
       },
       "description": "Yueosaurus is an extinct genus of basal neornithischian dinosaur known from Zhejiang Province, China.",
+      "dispute": {
+        "summary": "Yueosaurus tiantaiensis, formerly treated as a basal ornithopod, is recovered as a basal neornithischian (a jeholosaurid, in a clade with Jeholosaurus outside Cerapoda) by Boyd (2015) and Jones (2026); it is not an iguanodontian.\n",
+        "history": [
+          {
+            "date": "2026-06-29",
+            "note": "Reparented from Iguanodontia to Neornithischia incertae sedis following Boyd (2015) and Jones (2026); finer (jeholosaurid) placement deferred to the Neornithischia pass (P2)."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -201181,11 +201627,7 @@
         "Archosauria",
         "Dinosauria",
         "Ornithischia",
-        "Genasauria",
-        "Cerapoda",
-        "Ornithopoda",
-        "Clypeodonta",
-        "Iguanodontia"
+        "Neornithischia"
       ],
       "authors": "Zheng, W.; Jin, X.; Shibata, M.; Azuma, Y.; Yu, F.",
       "described": 2012
@@ -201458,6 +201900,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea"
@@ -202392,7 +202835,7 @@
     },
     "Zalmoxes": {
       "genus": "Zalmoxes",
-      "parent": "Rhabdodontoidea",
+      "parent": "Rhabdodontidae",
       "etymology": "Named after Zalmoxis (also spelled Zamolxis), a deity or legendary king worshipped by the Getae people of ancient Thrace and Dacia (modern Romania), where the fossil was found.",
       "description": "Zalmoxes is a genus of probable rhabdodontid ornithopod dinosaur from the Maastrichtian age of the Late Cretaceous in what is now Romania. The genus is known from specimens first named as the species Mochlodon robustum in 1899 by Franz Nopcsa before being reclassified as Rhabdodon robustum by him in 1915. In 1990, this name was corrected to Rhabdodon robustus by George Olshevsky and, in 2003, the species was once more reclassified as the type species Zalmoxes robustus. Zalmoxes represents one of the most common vertebrates of Transylvania during the latest Cretaceous period. The generic name refers to the Dacian deity Zalmoxis and the specific name robustus refers to the robustness of the remains. Another species, Zalmoxes shqiperorum, was named in 2003, but this species has since been reassigned to a separate genus of ceratopsian, Ferenceratops.",
       "diet": "herbivore",
@@ -202532,7 +202975,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Rhabdodontomorpha",
-        "Rhabdodontoidea"
+        "Rhabdodontidae"
       ],
       "authors": "Weishampel, D. B.; Jianu, C.; Csiki, Z.; Norman, D. B.",
       "described": 2003
@@ -203603,6 +204046,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea",
@@ -205436,6 +205880,7 @@
         "Clypeodonta",
         "Iguanodontia",
         "Dryomorpha",
+        "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
         "Hadrosauroidea"
