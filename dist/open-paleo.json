@@ -1,8 +1,8 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-06-30T07:02:14.608Z",
-    "clade_count": 215,
+    "built_at": "2026-06-30T19:00:08.339Z",
+    "clade_count": 214,
     "genus_count": 1398,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
@@ -285,9 +285,7 @@
                                                   "Diplodocinae": {},
                                                   "Apatosaurinae": {}
                                                 },
-                                                "Dicraeosauridae": {
-                                                  "Dicraeosaurinae": {}
-                                                }
+                                                "Dicraeosauridae": {}
                                               }
                                             }
                                           }
@@ -955,6 +953,7 @@
       ]
     },
     "Apatosaurinae": {
+      "description": "Apatosaurinae is the diplodocid subfamily containing the robustly built Apatosaurus and Brontosaurus, known from the Late Jurassic Morrison Formation of North America. Apatosaurines are distinguished from the more gracile diplodocines by their massive, heavily constructed necks and forelimbs. The subfamily was credited to Huene (1927) and validly applied in a phylogenetic framework by Tschopp et al. (2015); it is defined as the stem-based clade of all diplodocids more closely related to Apatosaurus than to Diplodocus.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -980,6 +979,38 @@
         "Flagellicaudata",
         "Diplodocidae",
         "Apatosaurinae"
+      ],
+      "type_genus": "Apatosaurus",
+      "described": 1927,
+      "authors": "Huene, F. V.",
+      "diagnostic_features": [
+        "Cervical ribs massive and ventrally displaced well below the centrum.",
+        "Cervical vertebrae short and stout relative to those of diplodocines.",
+        "Robustly constructed forelimb and pectoral girdle."
+      ],
+      "references": [
+        {
+          "id": "huene1927c",
+          "authors": "Huene, F. V.",
+          "year": 1927,
+          "title": "Sichtung der Grundlagen der jetzigen Kenntnis der Sauropoden [Sorting through the basis of the current knowledge of sauropods]",
+          "journal": "Eclogae Geologica Helveticae",
+          "volume": "20",
+          "pages": "444-470",
+          "notes": "Work credited as the authority for the subfamily Apatosaurinae."
+        },
+        {
+          "id": "tschopp2015a",
+          "authors": "Tschopp, E.; Mateus, O.; Benson, R. B. J.",
+          "year": 2015,
+          "title": "A specimen-level phylogenetic analysis and taxonomic revision of Diplodocidae (Dinosauria, Sauropoda)",
+          "journal": "PeerJ",
+          "volume": "3",
+          "pages": "e857",
+          "doi": "10.7717/peerj.857",
+          "url": "http://dx.doi.org/10.7717/peerj.857",
+          "notes": "Validly applied Apatosaurinae in a phylogenetic context and resurrected Brontosaurus as a distinct genus."
+        }
       ]
     },
     "Aphanosauria": {
@@ -2395,6 +2426,7 @@
       ]
     },
     "Dicraeosauridae": {
+      "description": "Dicraeosauridae is a family of flagellicaudatan sauropods known from the Middle Jurassic to Early Cretaceous of South America, Africa, North America, and Asia. Dicraeosaurids are small to medium-sized, short-necked diplodocoids with tall, often bifurcated cervical and dorsal neural spines that reach extreme lengths in forms such as Amargasaurus and Bajadasaurus. The family is defined as the stem-based clade of all flagellicaudatans more closely related to Dicraeosaurus than to Diplodocus (Sereno, 1998).\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -2419,34 +2451,39 @@
         "Diplodocimorpha",
         "Flagellicaudata",
         "Dicraeosauridae"
-      ]
-    },
-    "Dicraeosaurinae": {
-      "taxonomy": [
-        "Life",
-        "Animalia",
-        "Chordata",
-        "Vertebrata",
-        "Sarcopterygii",
-        "Tetrapoda",
-        "Reptilia",
-        "Archosauria",
-        "Dinosauria",
-        "Saurischia",
-        "Sauropodomorpha",
-        "Bagualosauria",
-        "Plateosauria",
-        "Massopoda",
-        "Sauropodiformes",
-        "Sauropoda",
-        "Gravisauria",
-        "Eusauropoda",
-        "Neosauropoda",
-        "Diplodocoidea",
-        "Diplodocimorpha",
-        "Flagellicaudata",
-        "Dicraeosauridae",
-        "Dicraeosaurinae"
+      ],
+      "type_genus": "Dicraeosaurus",
+      "described": 1927,
+      "authors": "Huene, F. V.",
+      "diagnostic_features": [
+        "Tall, dorsoventrally elongate neural spines on the cervical and dorsal vertebrae, bifurcated along much of the column.",
+        "Relatively short neck with comparatively few, foreshortened cervical vertebrae.",
+        "Postparietal fenestra present, with an expanded crista prootica on the braincase.",
+        "Reduced or absent pneumaticity of the presacral vertebral centra."
+      ],
+      "references": [
+        {
+          "id": "huene1927c",
+          "authors": "Huene, F. V.",
+          "year": 1927,
+          "title": "Sichtung der Grundlagen der jetzigen Kenntnis der Sauropoden [Sorting through the basis of the current knowledge of sauropods]",
+          "journal": "Eclogae Geologica Helveticae",
+          "volume": "20",
+          "pages": "444-470",
+          "notes": "Work credited as the authority for the family Dicraeosauridae."
+        },
+        {
+          "id": "sereno1998",
+          "authors": "Sereno, P. C.",
+          "year": 1998,
+          "title": "A rationale for phylogenetic definitions, with application to the higher-level taxonomy of Dinosauria",
+          "journal": "Neues Jahrbuch für Geologie und Paläontologie, Abhandlungen",
+          "volume": "210",
+          "pages": "41-83",
+          "doi": "10.1127/njgpa/210/1998/41",
+          "url": "http://dx.doi.org/10.1127/njgpa/210/1998/41",
+          "notes": "Provided the stem-based phylogenetic definition of Dicraeosauridae."
+        }
       ]
     },
     "Dinocephalia": {
@@ -2499,7 +2536,7 @@
       ]
     },
     "Diplodocidae": {
-      "description": "Diplodocidae is a family of diplodocoid sauropod dinosaurs known primarily from the Late Jurassic of North America, with additional occurrences in Africa and Europe. Diplodocids are characterized by their extremely elongated bodies with long, whip-like tails, elongate and shallow skulls with anteriorly restricted pencil-shaped teeth, and bifurcated (forked) neural spines on cervical and dorsal vertebrae. Notable members include Diplodocus, Apatosaurus, and Brontosaurus.\n",
+      "description": "Diplodocidae is a family of flagellicaudatan sauropods known primarily from the Late Jurassic of North America, with additional records in Africa, Europe, and South America. Diplodocids are characterized by extremely elongate bodies and whip-like tails, long shallow skulls with anteriorly restricted pencil-shaped teeth, and bifurcated neural spines on the cervical and dorsal vertebrae. The family splits into the subfamilies Apatosaurinae and Diplodocinae and is defined as the stem-based clade of all flagellicaudatans more closely related to Diplodocus than to Dicraeosaurus (Sereno, 1998).\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -2525,29 +2562,41 @@
         "Flagellicaudata",
         "Diplodocidae"
       ],
+      "type_genus": "Diplodocus",
       "described": 1884,
-      "authors": "Marsh",
+      "authors": "Marsh, O. C.",
       "diagnostic_features": [
-        "Extremely elongated tail with whip-like distal section",
-        "Pencil-shaped (cylindrical) teeth restricted to the front of the jaws",
-        "Bifurcated (forked) neural spines on cervical and anterior dorsal vertebrae",
-        "Anteroposteriorly elongated skull with squared-off snout",
-        "Elongated cervical vertebrae with low neural arches",
-        "Tail chevrons with anterior and posterior projections (double-beamed)"
+        "Extremely elongate tail terminating in a whip-like series of rod-shaped distal caudals.",
+        "Pencil-shaped (cylindrical) teeth restricted to the front of the jaws.",
+        "Bifurcated neural spines on the cervical and anterior dorsal vertebrae.",
+        "Tail chevrons with both anterior and posterior projections (double-beamed) in the middle of the tail."
       ],
       "references": [
         {
           "id": "marsh1884diplodocidae",
-          "authors": "Marsh, O.C.",
+          "authors": "Marsh, O. C.",
           "year": 1884,
           "title": "Principal characters of American Jurassic dinosaurs, Part VIII",
           "journal": "American Journal of Science",
           "volume": "27",
           "pages": "329-340"
+        },
+        {
+          "id": "sereno1998",
+          "authors": "Sereno, P. C.",
+          "year": 1998,
+          "title": "A rationale for phylogenetic definitions, with application to the higher-level taxonomy of Dinosauria",
+          "journal": "Neues Jahrbuch für Geologie und Paläontologie, Abhandlungen",
+          "volume": "210",
+          "pages": "41-83",
+          "doi": "10.1127/njgpa/210/1998/41",
+          "url": "http://dx.doi.org/10.1127/njgpa/210/1998/41",
+          "notes": "Provided the stem-based phylogenetic definition of Diplodocidae."
         }
       ]
     },
     "Diplodocimorpha": {
+      "description": "Diplodocimorpha is the node-based clade comprising Rebbachisauridae, Flagellicaudata (Dicraeosauridae plus Diplodocidae), and their most recent common ancestor, to the exclusion of basal diplodocoids such as Haplocanthosaurus. The name was coined by Calvo and Salgado (1995) and given its current phylogenetic definition by Taylor and Naish (2005) as the least inclusive clade containing Diplodocus and Rebbachisaurus.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -2570,9 +2619,40 @@
         "Neosauropoda",
         "Diplodocoidea",
         "Diplodocimorpha"
+      ],
+      "described": 1995,
+      "authors": "Calvo, J. O.; Salgado, L.",
+      "diagnostic_features": [
+        "Contains the narrow-toothed rebbachisaurids and the whip-tailed flagellicaudatans to the exclusion of basal diplodocoids.",
+        "Further retraction and enlargement of the external nares relative to basal diplodocoids.",
+        "Marked reduction of the hyposphene-hypantrum accessory articulations in the dorsal vertebrae of derived members."
+      ],
+      "references": [
+        {
+          "id": "calvo1995",
+          "authors": "Calvo, J. O.; Salgado, L.",
+          "year": 1995,
+          "title": "Rebbachisaurus tessonei sp. nov. a new Sauropoda from the Albian-Cenomanian of Argentina; new evidence on the origin of the Diplodocidae",
+          "journal": "Gaia",
+          "volume": "11",
+          "pages": "13-33",
+          "notes": "Coined the clade name Diplodocimorpha."
+        },
+        {
+          "id": "taylor2005",
+          "authors": "Taylor, M. P.; Naish, D.",
+          "year": 2005,
+          "title": "The phylogenetic taxonomy of Diplodocoidea (Dinosauria: Sauropoda)",
+          "journal": "PaleoBios",
+          "volume": "25",
+          "issue": "2",
+          "pages": "1-7",
+          "notes": "Provided the node-based phylogenetic definition of Diplodocimorpha."
+        }
       ]
     },
     "Diplodocinae": {
+      "description": "Diplodocinae is the diplodocid subfamily containing Diplodocus and its closest relatives, including Barosaurus, Galeamopus, Tornieria, Supersaurus, Dinheirosaurus, Leinkupal, and Ardetosaurus. Its members are the most gracile and elongate diplodocids, with especially long necks and tails. The subfamily is defined as the stem-based clade of all diplodocids more closely related to Diplodocus than to Apatosaurus (Taylor and Naish, 2005).\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -2598,9 +2678,40 @@
         "Flagellicaudata",
         "Diplodocidae",
         "Diplodocinae"
+      ],
+      "type_genus": "Diplodocus",
+      "described": 1884,
+      "authors": "Marsh, O. C.",
+      "diagnostic_features": [
+        "Mid-cervical vertebrae extremely elongate, with elongation indices commonly exceeding four.",
+        "Slender, gracile cervical and dorsal proportions relative to Apatosaurinae.",
+        "Cervical ribs slender and not ventrally displaced."
+      ],
+      "references": [
+        {
+          "id": "marsh1884diplodocidae",
+          "authors": "Marsh, O. C.",
+          "year": 1884,
+          "title": "Principal characters of American Jurassic dinosaurs, Part VIII",
+          "journal": "American Journal of Science",
+          "volume": "27",
+          "pages": "329-340"
+        },
+        {
+          "id": "taylor2005",
+          "authors": "Taylor, M. P.; Naish, D.",
+          "year": 2005,
+          "title": "The phylogenetic taxonomy of Diplodocoidea (Dinosauria: Sauropoda)",
+          "journal": "PaleoBios",
+          "volume": "25",
+          "issue": "2",
+          "pages": "1-7",
+          "notes": "Provided the stem-based phylogenetic definition of Diplodocinae."
+        }
       ]
     },
     "Diplodocoidea": {
+      "description": "Diplodocoidea is a superfamily of neosauropod dinosaurs comprising the narrow-snouted rebbachisaurids, the short-necked high-spined dicraeosaurids, and the extremely elongate diplodocids, together with basal forms such as Haplocanthosaurus. Diplodocoids share slender, pencil-like teeth restricted to the front of the jaws, retracted external nares, and squared-off snouts. The superfamily is defined as the stem-based clade of all neosauropods more closely related to Diplodocus than to Saltasaurus (Wilson and Sereno, 1998).\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -2622,6 +2733,38 @@
         "Eusauropoda",
         "Neosauropoda",
         "Diplodocoidea"
+      ],
+      "type_genus": "Diplodocus",
+      "described": 1884,
+      "authors": "Marsh, O. C.",
+      "diagnostic_features": [
+        "Tooth crowns slender and subcylindrical (pencil-like), restricted to the anterior part of the jaws.",
+        "External nares retracted to a position dorsal to or behind the orbits.",
+        "Elevated tooth replacement rates with multiple replacement teeth per alveolus.",
+        "Squared-off (rather than rounded) anterior margin of the snout in dorsal view."
+      ],
+      "references": [
+        {
+          "id": "marsh1884diplodocidae",
+          "authors": "Marsh, O. C.",
+          "year": 1884,
+          "title": "Principal characters of American Jurassic dinosaurs, Part VIII",
+          "journal": "American Journal of Science",
+          "volume": "27",
+          "pages": "329-340"
+        },
+        {
+          "id": "wilsonsereno1998",
+          "authors": "Wilson, J. A.; Sereno, P. C.",
+          "year": 1998,
+          "title": "Early evolution and higher-level phylogeny of sauropod dinosaurs",
+          "journal": "Memoir (Society of Vertebrate Paleontology)",
+          "volume": "5",
+          "pages": "1-68",
+          "doi": "10.2307/3889325",
+          "url": "http://dx.doi.org/10.2307/3889325",
+          "notes": "Provided the stem-based phylogenetic definition of Diplodocoidea."
+        }
       ]
     },
     "Dromaeosauridae": {
@@ -3176,6 +3319,7 @@
       ]
     },
     "Flagellicaudata": {
+      "description": "Flagellicaudata is the node-based clade comprising Dicraeosauridae and Diplodocidae and their most recent common ancestor, named for the whip-like distal tails characteristic of its members. It was erected by Harris and Dodson (2004) as the least inclusive clade containing Dicraeosaurus and Diplodocus. Flagellicaudatans range from the short-necked, high-spined dicraeosaurids to the extremely elongate diplodocids.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -3199,6 +3343,28 @@
         "Diplodocoidea",
         "Diplodocimorpha",
         "Flagellicaudata"
+      ],
+      "described": 2004,
+      "authors": "Harris, J. D.; Dodson, P.",
+      "diagnostic_features": [
+        "Distal caudal vertebrae elongate and rod-like, forming a whip-like tail.",
+        "Bifurcated (forked) neural spines on the cervical and anterior dorsal vertebrae.",
+        "Anterior caudal vertebrae with the neural arch positioned on the anterior half of the centrum."
+      ],
+      "references": [
+        {
+          "id": "harris2004",
+          "authors": "Harris, J. D.; Dodson, P.",
+          "year": 2004,
+          "title": "A new diplodocoid sauropod dinosaur from the Upper Jurassic Morrison Formation of Montana, USA",
+          "journal": "Acta Palaeontologica Polonica",
+          "volume": "49",
+          "issue": "2",
+          "pages": "197-210",
+          "doi": "10.5281/zenodo.13506584",
+          "url": "http://dx.doi.org/10.5281/zenodo.13506584",
+          "notes": "Erected the clade Flagellicaudata when describing Suuwassea."
+        }
       ]
     },
     "Furileusauria": {
@@ -3918,6 +4084,7 @@
       ]
     },
     "Khebbashia": {
+      "description": "Khebbashia is the node-based clade uniting the two derived rebbachisaurid subfamilies Limaysaurinae and Rebbachisaurinae, to the exclusion of the basal rebbachisaurid grade. It was erected by Fanti et al. (2015) as the least inclusive clade containing Limaysaurus, Nigersaurus, and Rebbachisaurus, and is defined as a node-based name to avoid conflict with the stem-based Rebbachisauridae. Its members include the most specialized rebbachisaurids, with broad tooth batteries and gracile limb proportions.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -3942,6 +4109,28 @@
         "Diplodocimorpha",
         "Rebbachisauridae",
         "Khebbashia"
+      ],
+      "described": 2015,
+      "authors": "Fanti, F.; Cau, A.; Cantelli, L.; Hassine, M.; Auditore, M.",
+      "diagnostic_features": [
+        "Teeth bearing both high-angle and low-angle wear facets.",
+        "Tooth crowns with lingual grooves.",
+        "Gracile humerus with a robustness index below 0.27."
+      ],
+      "references": [
+        {
+          "id": "fanti2015",
+          "authors": "Fanti, F.; Cau, A.; Cantelli, L.; Hassine, M.; Auditore, M.",
+          "year": 2015,
+          "title": "New information on Tataouinea hannibalis from the Early Cretaceous of Tunisia and implications for the tempo and mode of rebbachisaurid sauropod evolution",
+          "journal": "PLOS ONE",
+          "volume": "10",
+          "issue": "4",
+          "pages": "e0123475",
+          "doi": "10.1371/journal.pone.0123475",
+          "url": "http://dx.doi.org/10.1371/journal.pone.0123475",
+          "notes": "Erected the clade Khebbashia for Limaysaurinae plus Rebbachisaurinae."
+        }
       ]
     },
     "Lambeosaurinae": {
@@ -4107,6 +4296,7 @@
       ]
     },
     "Limaysaurinae": {
+      "description": "Limaysaurinae is the South American rebbachisaurid subfamily within Khebbashia, now typically restricted to Limaysaurus and Cathartesaura. It was erected by Whitlock (2011) and is defined as the stem-based clade of all rebbachisaurids more closely related to Limaysaurus than to Nigersaurus. Its members are mid- to Late Cretaceous Patagonian sauropods.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -4132,6 +4322,29 @@
         "Rebbachisauridae",
         "Khebbashia",
         "Limaysaurinae"
+      ],
+      "type_genus": "Limaysaurus",
+      "described": 2011,
+      "authors": "Whitlock, J. A.",
+      "diagnostic_features": [
+        "Scapular acromion broad, its total length at least half that of the scapula.",
+        "Contact between the spinoprezygapophyseal and spinopostzygapophyseal laminae forming a lateral lamina on the anterior caudal neural spines.",
+        "Accessory lateral lamina developed on the anterior caudal vertebrae."
+      ],
+      "references": [
+        {
+          "id": "whitlock2011",
+          "authors": "Whitlock, J. A.",
+          "year": 2011,
+          "title": "A phylogenetic analysis of Diplodocoidea (Saurischia: Sauropoda)",
+          "journal": "Zoological Journal of the Linnean Society",
+          "volume": "161",
+          "issue": "4",
+          "pages": "872-915",
+          "doi": "10.1111/j.1096-3642.2010.00665.x",
+          "url": "http://dx.doi.org/10.1111/j.1096-3642.2010.00665.x",
+          "notes": "Erected the subfamilies Limaysaurinae and Nigersaurinae."
+        }
       ]
     },
     "Lirainosaurinae": {
@@ -5955,6 +6168,7 @@
       ]
     },
     "Rebbachisauridae": {
+      "description": "Rebbachisauridae is a family of diplodocoid sauropods known mainly from the Cretaceous of Gondwana, with records in Europe and possibly North America. Rebbachisaurids retained relatively broad, squared muzzles bearing batteries of replacement teeth and are characterized by the loss of the hyposphene-hypantrum accessory articulations and by distinctive, often high-spined dorsal and sacral vertebrae. The family is defined as the stem-based clade of all diplodocoids more closely related to Rebbachisaurus than to Diplodocus (Salgado et al., 2004).\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -5978,9 +6192,44 @@
         "Diplodocoidea",
         "Diplodocimorpha",
         "Rebbachisauridae"
+      ],
+      "type_genus": "Rebbachisaurus",
+      "described": 1997,
+      "authors": "Bonaparte, J. F.",
+      "diagnostic_features": [
+        "Loss of the hyposphene-hypantrum accessory articulations in the anterior caudal vertebrae (retained in the basalmost members).",
+        "Spinodiapophyseal lamina present and often festooned on the dorsal neural spines.",
+        "Middle caudal centra nearly cylindrical with a flattened ventral margin.",
+        "Scapular acromion expanded, with a racquet-shaped distal scapular blade in many taxa."
+      ],
+      "references": [
+        {
+          "id": "bonaparte1997",
+          "authors": "Bonaparte, J. F.",
+          "year": 1997,
+          "title": "Rayososaurus agrioensis Bonaparte 1995",
+          "journal": "Ameghiniana",
+          "volume": "34",
+          "pages": "116",
+          "notes": "Nomenclatural note credited as the authority for Rebbachisauridae."
+        },
+        {
+          "id": "salgado2004",
+          "authors": "Salgado, L.; Garrido, A.; Cocca, S. E.; Cocca, J. R.",
+          "year": 2004,
+          "title": "Lower Cretaceous rebbachisaurid sauropods from Cerro Aguada del León (Lohan Cura Formation), Neuquén Province, northwestern Patagonia, Argentina",
+          "journal": "Journal of Vertebrate Paleontology",
+          "volume": "24",
+          "issue": "4",
+          "pages": "903-912",
+          "doi": "10.1671/0272-4634(2004)024[0903:lcrsfc]2.0.co;2",
+          "url": "http://dx.doi.org/10.1671/0272-4634(2004)024[0903:lcrsfc]2.0.co;2",
+          "notes": "Applied the stem-based definition of Rebbachisauridae and named Limaysaurus."
+        }
       ]
     },
     "Rebbachisaurinae": {
+      "description": "Rebbachisaurinae is the derived rebbachisaurid subfamily within Khebbashia containing Rebbachisaurus, Nigersaurus, Demandasaurus, and Tataouinea, a largely Euro-African group of broad-muzzled, tooth-battery-bearing sauropods. It is defined as the stem-based clade of all rebbachisaurids more closely related to Rebbachisaurus than to Limaysaurus, and as the eponymous subfamily of Rebbachisaurus it takes priority over the synonymous Nigersaurinae (Wilson and Allain, 2015).\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -6006,6 +6255,39 @@
         "Rebbachisauridae",
         "Khebbashia",
         "Rebbachisaurinae"
+      ],
+      "type_genus": "Rebbachisaurus",
+      "described": 1997,
+      "authors": "Bonaparte, J. F.",
+      "diagnostic_features": [
+        "Deep centroprezygapophyseal fossa on the middle and posterior dorsal vertebrae.",
+        "Divided centropostzygapophyseal lamina on the middle and posterior dorsal neural arches.",
+        "Anterior caudal vertebrae with a triangular lateral expansion of the neural spine."
+      ],
+      "references": [
+        {
+          "id": "bonaparte1997",
+          "authors": "Bonaparte, J. F.",
+          "year": 1997,
+          "title": "Rayososaurus agrioensis Bonaparte 1995",
+          "journal": "Ameghiniana",
+          "volume": "34",
+          "pages": "116",
+          "notes": "As the work establishing the eponymous genus Rebbachisaurus in a ranked context, credited as the authority for Rebbachisaurinae, which has priority over Nigersaurinae."
+        },
+        {
+          "id": "wilson2015",
+          "authors": "Wilson, J. A.; Allain, R.",
+          "year": 2015,
+          "title": "Osteology of Rebbachisaurus garasbae Lavocat, 1954, a diplodocoid (Dinosauria, Sauropoda) from the early Late Cretaceous-aged Kem Kem beds of southeastern Morocco",
+          "journal": "Journal of Vertebrate Paleontology",
+          "volume": "35",
+          "issue": "4",
+          "pages": "e1000701",
+          "doi": "10.1080/02724634.2014.1000701",
+          "url": "http://dx.doi.org/10.1080/02724634.2014.1000701",
+          "notes": "Formally defined Rebbachisaurinae and treated Nigersaurinae as a junior synonym."
+        }
       ]
     },
     "Rhabdodontidae": {
@@ -12596,6 +12878,15 @@
     "Agustinia": {
       "genus": "Agustinia",
       "parent": "Rebbachisauridae",
+      "dispute": {
+        "summary": "The affinities of Agustinia are contested. Recent dedicated rebbachisaurid analyses place it as a basal member of Rebbachisauridae (Bellardini et al., 2022; Jones, 2026), though it is an unstable operational taxonomic unit that is pruned from the consensus in several analyses (Lerzo et al., 2024). Earlier assessments differ: D'Emic et al. (2009) found no diagnostic features placing it in Diplodocoidea or Titanosauria and regarded it as a neosauropod of uncertain affinity, while Mannion et al. (2013) interpreted a fibular character as somphospondylan and tentatively referred it to Somphospondyli.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Retained at Rebbachisauridae following the prevailing recent view (Bellardini et al., 2022; Jones, 2026); the alternative somphospondylan and neosauropod incertae sedis interpretations are noted, and its position within Rebbachisauridae is unresolved.\n"
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "ah-goo-STEE-nee-uh",
         "ipa": "/ɑːɡəˈstɪniə/"
@@ -17393,7 +17684,7 @@
     },
     "Amargasaurus": {
       "genus": "Amargasaurus",
-      "parent": "Dicraeosaurinae",
+      "parent": "Dicraeosauridae",
       "pronunciation": {
         "phonetic": "ah-MAHR-gah-SAWR-us",
         "ipa": "/əˌmɑːrɡəˈsɔːrəs/"
@@ -17543,8 +17834,7 @@
         "Diplodocoidea",
         "Diplodocimorpha",
         "Flagellicaudata",
-        "Dicraeosauridae",
-        "Dicraeosaurinae"
+        "Dicraeosauridae"
       ],
       "authors": "Salgado, L.; Bonaparte, J. F.",
       "described": 1991
@@ -18471,6 +18761,15 @@
     "Amphicoelias": {
       "genus": "Amphicoelias",
       "parent": "Diplodocoidea",
+      "dispute": {
+        "summary": "The position of Amphicoelias altus within Diplodocoidea is highly labile. Tschopp et al. (2015) recovered it as Diplodocidae incertae sedis, outside both Apatosaurinae and Diplodocinae, and the Princeton Encyclopedia (Jones, 2026) follows a diplodocid placement. A dedicated redescription (Mannion et al., 2021) found its position unstable across matrices and weighting schemes, recovering it variously as the sister to Diplodocimorpha (a non-diplodocimorph diplodocoid, like Haplocanthosaurus), as a basal diplodocine, or as an apatosaurine; the low scorability of the holotype drives the instability. It is consistently recovered as a valid diplodocoid distinct from Diplodocus.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Diplodocoidea, the least inclusive uncontested node, pending resolution of its labile position between a non-diplodocimorph diplodocoid and a basal diplodocid (Tschopp et al., 2015; Mannion et al., 2021).\n"
+          }
+        ]
+      },
       "etymology": "From Greek 'amphi' meaning 'on both sides' and 'koilos' meaning 'hollow' or 'concave'; meaning 'biconcave', referring to the shape of the vertebrae",
       "pronunciation": {
         "phonetic": "AM-fi-SEEL-ee-as",
@@ -31817,7 +32116,7 @@
     },
     "Bajadasaurus": {
       "genus": "Bajadasaurus",
-      "parent": "Dicraeosaurinae",
+      "parent": "Dicraeosauridae",
       "etymology": "Named after La Bajada, the locality in Patagonia, Argentina where it was found, combined with Greek sauros meaning 'lizard'. Full meaning: 'Bajada lizard'.",
       "pronunciation": {
         "phonetic": "bah-HAH-dah-SOR-us"
@@ -31952,8 +32251,7 @@
         "Diplodocoidea",
         "Diplodocimorpha",
         "Flagellicaudata",
-        "Dicraeosauridae",
-        "Dicraeosaurinae"
+        "Dicraeosauridae"
       ],
       "authors": "Gallina, P. A.; Apesteguía, S.; Canale, J. I.; Haluza, A.",
       "described": 2019
@@ -38805,7 +39103,7 @@
     },
     "Brachytrachelopan": {
       "genus": "Brachytrachelopan",
-      "parent": "Dicraeosaurinae",
+      "parent": "Dicraeosauridae",
       "etymology": "From Greek 'brachys' meaning 'short', 'trachelos' meaning 'neck', and 'pan' referencing the god Pan, a homage to the short-necked sauropod and the pastoral deity.",
       "description": "Brachytrachelopan is a genus of short-necked sauropod dinosaur from the Late Jurassic (Oxfordian to Tithonian) of Argentina. The holotype and only known specimen (Museo Paleontológico Egidio Feruglio MPEF-PV 1716) was collected from an erosional exposure of fluvial sandstone within the Cañadón Calcáreo Formation on a hill approximately 25 kilometers (16 mi) north-northeast of Cerro Cóndor, Chubut Province, in west-central Argentina, South America. Though very incomplete, the skeletal elements recovered were found in articulation and include eight cervical, twelve dorsal, and three sacral vertebrae, as well as proximal portions of the posterior cervical ribs and all the dorsal ribs, the distal end of the left femur, the proximal end of the left tibia, and the right ilium. Much of the specimen was probably lost to erosion many years before its discovery. The type species is Brachytrachelopan mesai. The specific name honors Daniel Mesa, a local shepherd who discovered the specimen while searching for lost sheep. The genus name translates as \"short-necked Pan\", Pan being the god of the shepherds.",
       "diet": "herbivore",
@@ -38930,8 +39228,7 @@
         "Diplodocoidea",
         "Diplodocimorpha",
         "Flagellicaudata",
-        "Dicraeosauridae",
-        "Dicraeosaurinae"
+        "Dicraeosauridae"
       ],
       "authors": "Rauhut, O. W. M.; Remes, K.; Fechner, R.; Cladera, G.; Puerta, P.",
       "described": 2005
@@ -39962,6 +40259,15 @@
     "Brontosaurus": {
       "genus": "Brontosaurus",
       "parent": "Apatosaurinae",
+      "dispute": {
+        "summary": "Brontosaurus was resurrected as a genus distinct from Apatosaurus on the basis of a specimen-level phylogenetic analysis (Tschopp et al., 2015), which is followed here. The separation is not universally accepted, and some workers continue to regard Brontosaurus as a junior synonym of Apatosaurus.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Retained as a valid genus within Apatosaurinae following Tschopp et al. (2015); the synonymy with Apatosaurus favored by some workers is noted.\n"
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "BRON-tuh-SOR-uhs",
         "ipa": "/ˌbrɒntəˈsɔːrəs/"
@@ -45890,7 +46196,16 @@
     },
     "Cetiosauriscus": {
       "genus": "Cetiosauriscus",
-      "parent": "Flagellicaudata",
+      "parent": "Eusauropoda",
+      "dispute": {
+        "summary": "Long allied with diplodocoids, Cetiosauriscus is no longer regarded as a member of Diplodocoidea. Specimen-level analysis recovered it outside Neosauropoda as a non-neosauropod eusauropod (Tschopp et al., 2015), and subsequent work continues to place it as a basal eusauropod (Moore et al., 2023; Jones, 2026). Its precise position among eusauropods is unresolved.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Removed from Diplodocoidea (formerly placed at Flagellicaudata) and reparented to Eusauropoda incertae sedis as a non-neosauropod eusauropod (Tschopp et al., 2015; Jones, 2026); finer placement is deferred to the eusauropod-backbone reconciliation.\n"
+          }
+        ]
+      },
       "pronunciation": {
         "ipa": "/ˌsiːtioʊˈsɔːrɪskəs/",
         "phonetic": "SEE-tee-oh-SOR-iss-kuhs"
@@ -46080,11 +46395,7 @@
         "Sauropodiformes",
         "Sauropoda",
         "Gravisauria",
-        "Eusauropoda",
-        "Neosauropoda",
-        "Diplodocoidea",
-        "Diplodocimorpha",
-        "Flagellicaudata"
+        "Eusauropoda"
       ],
       "authors": "Huene, F. V.",
       "described": 1927
@@ -59347,7 +59658,7 @@
     },
     "Dicraeosaurus": {
       "genus": "Dicraeosaurus",
-      "parent": "Dicraeosaurinae",
+      "parent": "Dicraeosauridae",
       "pronunciation": {
         "phonetic": "die-KREE-o-SAWR-us"
       },
@@ -59511,8 +59822,7 @@
         "Diplodocoidea",
         "Diplodocimorpha",
         "Flagellicaudata",
-        "Dicraeosauridae",
-        "Dicraeosaurinae"
+        "Dicraeosauridae"
       ],
       "authors": "Janensch, W.",
       "described": 1914
@@ -60163,6 +60473,15 @@
     "Dinheirosaurus": {
       "genus": "Dinheirosaurus",
       "parent": "Diplodocinae",
+      "dispute": {
+        "summary": "Dinheirosaurus lourinhanensis is recovered as a basal diplodocine, often as the sister taxon to Supersaurus (Mannion et al., 2012). Tschopp et al. (2015) found the two close enough to propose sinking Dinheirosaurus into Supersaurus as the new combination Supersaurus lourinhanensis, a synonymy that has not been broadly adopted.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Retained as a valid genus within Diplodocinae; the proposed synonymy with Supersaurus (Tschopp et al., 2015) is noted but not adopted pending broader consensus.\n"
+          }
+        ]
+      },
       "pronunciation": {
         "ipa": "/diːnˌjeɪroʊˈsɔːrəs/",
         "phonetic": "deen-YAYR-o-SAWR-us"
@@ -64645,6 +64964,15 @@
     "Dyslocosaurus": {
       "genus": "Dyslocosaurus",
       "parent": "Dicraeosauridae",
+      "dispute": {
+        "summary": "Dyslocosaurus is known from fragmentary limb material originally described as a diplodocid (McIntosh et al., 1992). Recent analyses tentatively recover it as a dicraeosaurid (Tschopp et al., 2015; Whitlock et al., 2025), but the material is poor and possibly composite, and some workers regard the genus as a nomen dubium, with a suggestion that the holotype combines titanosaur and theropod elements.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Dicraeosauridae following the tentative assignment of recent analyses (Tschopp et al., 2015; Whitlock et al., 2025); the fragmentary, possibly composite holotype and the nomen dubium concern are noted.\n"
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "dis-LOK-o-SAWR-us"
       },
@@ -84878,6 +85206,15 @@
     "Haplocanthosaurus": {
       "genus": "Haplocanthosaurus",
       "parent": "Diplodocoidea",
+      "dispute": {
+        "summary": "Haplocanthosaurus is most often recovered as the basalmost member of Diplodocoidea (Whitlock, 2011; Royo-Torres et al., 2020; Jones, 2026), lying outside Diplodocimorpha. The placement is weakly supported, and some analyses instead recover it as a basal neosauropod outside Diplodocoidea or as a non-neosauropod eusauropod; the conservative placement here reflects the prevailing but unstable diplodocoid assignment.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Retained at Diplodocoidea as a non-diplodocimorph diplodocoid following the prevailing view (Whitlock, 2011; Jones, 2026); a more basal neosauropod position recovered by some analyses is unresolved.\n"
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "hap-lo-KAN-tho-SAWR-us"
       },
@@ -95717,7 +96054,16 @@
     },
     "Itapeuasaurus": {
       "genus": "Itapeuasaurus",
-      "parent": "Rebbachisaurinae",
+      "parent": "Rebbachisauridae",
+      "dispute": {
+        "summary": "The describers placed Itapeuasaurus within Rebbachisaurinae as the sister taxon to Demandasaurus (Lindoso et al., 2019). More recent analyses instead recover it in a more stemward position, outside Khebbashia, in a clade with the South American rebbachisaurids Sidersaura and Astigmasaura (Lerzo et al., 2024; Bellardini et al., 2025).\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Moved from Rebbachisaurinae to Rebbachisauridae, the least inclusive uncontested node, reflecting the conflict between a Rebbachisaurinae placement (Lindoso et al., 2019) and a stemward position with Sidersaura and Astigmasaura (Lerzo et al., 2024; Bellardini et al., 2025).\n"
+          }
+        ]
+      },
       "etymology": "Named for Itapeua, the beach locality in Maranhão, Brazil where the fossils were discovered, combined with Greek 'sauros' meaning 'lizard', hence 'Itapeua lizard'.",
       "description": "Itapeuasaurus is a genus of rebbachisaurid sauropod dinosaur from the Alcântara Formation (Itapecuru Group) of Maranhão in Brazil. The type and only species is Itapeuasaurus cajapioensis. It is the most complete Cenomanian-aged diplodocoid known from South America and it is also the first reported Cenomanian-aged rebbachisaurid discovered in South America.",
       "diet": "herbivore",
@@ -95845,9 +96191,7 @@
         "Neosauropoda",
         "Diplodocoidea",
         "Diplodocimorpha",
-        "Rebbachisauridae",
-        "Khebbashia",
-        "Rebbachisaurinae"
+        "Rebbachisauridae"
       ],
       "authors": "Lindoso, R. M.; Medeiros, M. A. A.; Carvalho, I. de S.; Pereira, A. A.; Mendes, I. D.; Iori, F. V.; Sousa, E. P.; Arcanjo, S. H. S.; Silva, T. C. M.",
       "described": 2019
@@ -100565,7 +100909,16 @@
     },
     "Kaatedocus": {
       "genus": "Kaatedocus",
-      "parent": "Dicraeosauridae",
+      "parent": "Flagellicaudata",
+      "dispute": {
+        "summary": "The family-level placement of Kaatedocus is disputed. Tschopp and Mateus (2013) and Tschopp et al. (2015) recovered it as a diplodocine diplodocid, sister to Barosaurus, and the Princeton Encyclopedia (Jones, 2026) follows this view. Whitlock and Wilson Mantilla (2020) instead recovered it as the basalmost dicraeosaurid on cranial characters, a result reproduced when Kaatedocus was added to an independent matrix; under that hypothesis the diplodocid characters previously cited for it are reinterpreted as more general flagellicaudatan features.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Flagellicaudata, the least inclusive clade accepted by both hypotheses, pending resolution of its diplodocine (Tschopp et al., 2015) versus dicraeosaurid (Whitlock and Wilson Mantilla, 2020) placement.\n"
+          }
+        ]
+      },
       "etymology": "From Crow language 'kaate' meaning 'small' combined with Greek 'dokos' meaning 'beam', referring to the vertebrae; the name means 'small beam', alluding to its relatively small size compared to other diplodocids.",
       "pronunciation": {
         "phonetic": "kaht-uh-doh-kus"
@@ -100738,8 +101091,7 @@
         "Neosauropoda",
         "Diplodocoidea",
         "Diplodocimorpha",
-        "Flagellicaudata",
-        "Dicraeosauridae"
+        "Flagellicaudata"
       ],
       "authors": "Tschopp, E.; Mateus, O.",
       "described": 2012
@@ -101759,6 +102111,15 @@
     "Katepensaurus": {
       "genus": "Katepensaurus",
       "parent": "Rebbachisauridae",
+      "dispute": {
+        "summary": "Although undoubtedly a rebbachisaurid, the position of Katepensaurus is uncertain. The describers and the redescription place it within Limaysaurinae (Ibiricu et al., 2015), whereas other analyses recover it as the basalmost member of Rebbachisaurinae (Fanti et al., 2015; Lerzo et al., 2024) or just outside Khebbashia (Royo-Torres et al., 2020).\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Retained at Rebbachisauridae, the least inclusive uncontested node, because its finer position ranges from Limaysaurinae to Rebbachisaurinae to outside Khebbashia across analyses.\n"
+          }
+        ]
+      },
       "etymology": "From Tehuelche 'katepenk' meaning 'hole', referring to a distinctive opening in the transverse processes of the dorsal vertebrae, combined with Greek 'sauros' meaning 'lizard'. The species name honors Alejandro Goicoechea, owner of the ranch where it was found.",
       "description": "Katepensaurus is an extinct genus of rebbachisaurid sauropod dinosaur known from the Late Cretaceous of south-central Chubut Province of central Patagonia, Argentina. It contains a single species, Katepensaurus goicoecheai.",
       "diet": "herbivore",
@@ -111581,7 +111942,7 @@
     },
     "Lingwulong": {
       "genus": "Lingwulong",
-      "parent": "Flagellicaudata",
+      "parent": "Dicraeosauridae",
       "etymology": "From 'Lingwu' (the city in Ningxia, China near the discovery site) and Chinese 'long' (dragon); meaning 'Lingwu dragon'",
       "pronunciation": {
         "phonetic": "ling-wu-long"
@@ -111725,7 +112086,8 @@
         "Neosauropoda",
         "Diplodocoidea",
         "Diplodocimorpha",
-        "Flagellicaudata"
+        "Flagellicaudata",
+        "Dicraeosauridae"
       ],
       "authors": "Xu, X.; Upchurch, P.; Mannion, P. D.; Barrett, P. M.; Regalado-Fernandez, O. R.; Mo, J.; Ma, J.; Liu, H.",
       "described": 2018
@@ -133838,7 +134200,16 @@
     },
     "Nopcsaspondylus": {
       "genus": "Nopcsaspondylus",
-      "parent": "Khebbashia",
+      "parent": "Rebbachisauridae",
+      "dispute": {
+        "summary": "Nopcsaspondylus is known only from a now-lost dorsal vertebra preserved in Nopcsa's original illustrations. It is regarded as a probable rebbachisaurid on the basis of those figures (Apesteguia, 2007; Royo-Torres et al., 2020), but the loss of the specimen and the absence of clear autapomorphies leave its position within the family unresolved and its validity tentative.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Moved from Khebbashia to Rebbachisauridae; the lost holotype cannot be resolved more finely than a basal rebbachisaurid.\n"
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "NOP-chuh-SPON-dih-lus"
       },
@@ -133948,8 +134319,7 @@
         "Neosauropoda",
         "Diplodocoidea",
         "Diplodocimorpha",
-        "Rebbachisauridae",
-        "Khebbashia"
+        "Rebbachisauridae"
       ],
       "authors": "Apesteguía, S.",
       "described": 2007
@@ -157483,6 +157853,15 @@
     "Rayososaurus": {
       "genus": "Rayososaurus",
       "parent": "Rebbachisauridae",
+      "dispute": {
+        "summary": "Rayososaurus is a valid rebbachisaurid distinct from Limaysaurus, from which it was separated when the species formerly referred to it was moved to the new genus Limaysaurus (Salgado et al., 2004). Its position within Rebbachisauridae is poorly constrained owing to its fragmentary holotype: it has been recovered within Limaysaurinae (Carballido et al., 2012), in a basal position (Royo-Torres et al., 2020), and within a derived Rebbachisaurinae (Ren et al., 2023), and is frequently excluded from analyses.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Retained at Rebbachisauridae, the least inclusive uncontested node; the fragmentary holotype precludes a stable subfamily assignment.\n"
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "rie-YOH-soh-SAWR-us"
       },
@@ -198913,6 +199292,15 @@
     "Xenoposeidon": {
       "genus": "Xenoposeidon",
       "parent": "Rebbachisauridae",
+      "dispute": {
+        "summary": "Originally described as a neosauropod of uncertain affinity (Taylor and Naish, 2007) and later treated as a nomen dubium by some, Xenoposeidon was reinterpreted as the earliest known rebbachisaurid on the basis of a shared neural-arch lamina arrangement (Taylor, 2018), a placement resting on morphological argument rather than a numerical analysis. A competing titanosaur interpretation has also been raised.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Rebbachisauridae following Taylor (2018) and the Princeton Encyclopedia (Jones, 2026); the assignment rests on a single shared character and has not yet been tested in a quantitative analysis.\n"
+          }
+        ]
+      },
       "etymology": "From Greek xenos meaning 'strange' or 'alien' and Poseidon (the Greek god of the sea), in allusion to the sauropod genus Sauroposeidon; translates as 'strange Poseidon'",
       "pronunciation": {
         "phonetic": "ZEE-no-puh-SYE-don"
