@@ -1,7 +1,7 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-06-29T22:06:43.733Z
-  clade_count: 221
+  built_at: 2026-06-30T00:00:02.911Z
+  clade_count: 219
   genus_count: 1398
   license: CC-BY-4.0
   schema_version: 1.0.0
@@ -217,9 +217,40 @@ tree:
                       Herrerasauridae: {}
                     Ornithischia:
                       Genasauria:
-                        Cerapoda:
-                          Ornithopoda:
-                            Clypeodonta:
+                        Thyreophora:
+                          Ankylosauria:
+                            Ankylosauridae:
+                              Shamosaurinae: {}
+                              Ankylosaurinae: {}
+                            Nodosauridae: {}
+                            Parankylosauria: {}
+                          Stegosauria:
+                            Stegosauridae:
+                              Dacentrurinae: {}
+                              Stegosaurinae: {}
+                        Neornithischia:
+                          Jeholosauridae: {}
+                          Thescelosauridae:
+                            Orodrominae: {}
+                            Thescelosaurinae: {}
+                          Cerapoda:
+                            Marginocephalia:
+                              Ceratopsia:
+                                Chaoyangsauridae: {}
+                                Neoceratopsia:
+                                  Euceratopsia:
+                                    Leptoceratopsidae: {}
+                                    Coronosauria:
+                                      Protoceratopsidae: {}
+                                      Ceratopsoidea:
+                                        Ceratopsidae:
+                                          Centrosaurinae: {}
+                                          Chasmosaurinae: {}
+                              Pachycephalosauria:
+                                Pachycephalosauridae:
+                                  Pachycephalosaurinae: {}
+                            Ornithopoda:
+                              Hypsilophodontidae: {}
                               Iguanodontia:
                                 Rhabdodontomorpha:
                                   Rhabdodontidae: {}
@@ -234,39 +265,6 @@ tree:
                                             Hadrosauridae:
                                               Saurolophinae: {}
                                               Lambeosaurinae: {}
-                              Hypsilophodontidae:
-                                Parksosauridae: {}
-                          Marginocephalia:
-                            Ceratopsia:
-                              Chaoyangsauridae: {}
-                              Neoceratopsia:
-                                Euceratopsia:
-                                  Leptoceratopsidae: {}
-                                  Coronosauria:
-                                    Protoceratopsidae: {}
-                                    Ceratopsoidea:
-                                      Ceratopsidae:
-                                        Centrosaurinae: {}
-                                        Chasmosaurinae: {}
-                            Pachycephalosauria:
-                              Pachycephalosauridae:
-                                Pachycephalosaurinae: {}
-                        Thyreophora:
-                          Ankylosauria:
-                            Ankylosauridae:
-                              Shamosaurinae: {}
-                              Ankylosaurinae: {}
-                            Nodosauridae: {}
-                            Parankylosauria: {}
-                          Stegosauria:
-                            Stegosauridae:
-                              Dacentrurinae: {}
-                              Stegosaurinae: {}
-                      Neornithischia:
-                        Thescelosauridae:
-                          Orodrominae: {}
-                          Thescelosaurinae: {}
-                        Jeholosauridae: {}
                       Fabrosauridae: {}
                       Heterodontosauridae:
                         Heterodontosaurinae: {}
@@ -607,9 +605,9 @@ clades:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -1268,6 +1266,7 @@ clades:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -1297,7 +1296,7 @@ clades:
         notes: Erected the subfamilies Centrosaurinae and Chasmosaurinae.
   Cerapoda:
     description: |
-      Cerapoda is a clade of ornithischian dinosaurs that unites Ornithopoda and Marginocephalia. Cerapodans are characterized by specialized jaw mechanics adapted for efficient oral processing of plant material, including a well- developed coronoid process on the dentary, asymmetrical enamel on the teeth enabling precise occlusion, and the loss of premaxillary teeth. The clade encompasses a wide range of herbivorous dinosaurs from small bipeds to giant quadrupedal forms.
+      Cerapoda is the derived neornithischian clade that unites Ornithopoda and Marginocephalia. Cerapodans share specialized jaw mechanics adapted for efficient oral processing of plant material, and the clade encompasses a vast range of herbivores from small bipeds to giant quadrupedal hadrosaurs and ceratopsids. It is nested within Neornithischia, more derived than the thescelosaurid and jeholosaurid grades.
     taxonomy:
       - Life
       - Animalia
@@ -1310,23 +1309,35 @@ clades:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
     described: 1986
-    authors: Sereno
+    authors: Sereno, P. C.
     diagnostic_features:
+      - Asymmetrical enamel on the cheek-tooth crowns enabling self-sharpening occlusion
+      - Dentary crowns bearing prominent ridges on the lingual surface only
       - Well-developed coronoid process on the dentary
-      - Asymmetrical enamel distribution on teeth facilitating shearing occlusion
-      - Reduction or loss of premaxillary teeth
-      - Diastema between premaxillary and maxillary tooth rows
-      - Specialized jaw mechanics for efficient oral processing of vegetation
+      - Reduction or loss of the premaxillary teeth
+      - Diastema between the premaxillary and maxillary tooth rows
     references:
       - id: sereno1986
-        authors: Sereno, P.C.
+        authors: Sereno, P. C.
         year: 1986
-        title: Phylogeny of the bird-hipped dinosaurs (Order Ornithischia)
+        title: Phylogeny of the bird-hipped dinosaurs (order Ornithischia)
         journal: National Geographic Research
         volume: "2"
         pages: 234-256
+        notes: Erected Cerapoda.
+      - id: madzia2021
+        authors: Madzia, D.; Arbour, V. M.; Boyd, C. A.; Farke, A. A.; Cruzado-Caballero, P.; Evans, D. C.
+        year: 2021
+        title: The phylogenetic nomenclature of ornithischian dinosaurs
+        journal: PeerJ
+        volume: "9"
+        pages: e12362
+        doi: 10.7717/peerj.12362
+        url: http://dx.doi.org/10.7717/peerj.12362
+        notes: Provides the modern phylogenetic definition of Cerapoda.
   Ceratopsia:
     description: |
       Ceratopsia is the clade of beaked, mostly herbivorous ornithischian dinosaurs known as the horned dinosaurs, ranging from the Late Jurassic to the end of the Cretaceous. They are united by the rostral bone, a unique median ossification capping the upper beak. The clade spans small bipedal forms such as Psittacosaurus and the Jurassic Chaoyangsauridae through the diverse Neoceratopsia, which culminates in the large, frilled and horned Ceratopsidae.
@@ -1342,6 +1353,7 @@ clades:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -1389,6 +1401,7 @@ clades:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -1445,6 +1458,7 @@ clades:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -1599,6 +1613,7 @@ clades:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -1645,6 +1660,7 @@ clades:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -1693,22 +1709,6 @@ clades:
       - Oviraptorosauria
       - Oviraptoridae
       - Citipatinae
-  Clypeodonta:
-    taxonomy:
-      - Life
-      - Animalia
-      - Chordata
-      - Vertebrata
-      - Sarcopterygii
-      - Tetrapoda
-      - Reptilia
-      - Archosauria
-      - Dinosauria
-      - Ornithischia
-      - Genasauria
-      - Cerapoda
-      - Ornithopoda
-      - Clypeodonta
   Coelophysidae:
     taxonomy:
       - Life
@@ -1849,6 +1849,7 @@ clades:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -2255,9 +2256,9 @@ clades:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
     described: 1986
@@ -2301,9 +2302,9 @@ clades:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Dryosauridae
@@ -2367,9 +2368,9 @@ clades:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Elasmaria
     described: 2007
@@ -2452,6 +2453,7 @@ clades:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -2765,9 +2767,9 @@ clades:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -2819,9 +2821,9 @@ clades:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -2868,9 +2870,9 @@ clades:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -2919,9 +2921,9 @@ clades:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -3041,6 +3043,8 @@ clades:
       - Oviraptoridae
       - Heyuanninae
   Hypsilophodontidae:
+    description: |
+      Hypsilophodontidae is a clade of small, cursorial, bipedal ornithopods that historically served as a wastebasket for nearly all "hypsilophodont-grade" ornithischians. Under modern phylogenetic analyses the family has been drastically restricted, and is here recovered as a small early-diverging ornithopod clade comprising the type genus Hypsilophodon and the closely related Vectidromeus, both from the Barremian Wessex Formation of the Isle of Wight, England.
     taxonomy:
       - Life
       - Animalia
@@ -3053,10 +3057,37 @@ clades:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Hypsilophodontidae
+    type_genus: Hypsilophodon
+    described: 1882
+    authors: Dollo, L.
+    diagnostic_features:
+      - Accessory tooth-like ossification on the ascending process of the astragalus
+      - Straight articular surface of the femoral head
+      - Anterior (lesser) trochanter positioned anterior to the greater trochanter
+      - Small body size with gracile, cursorial bipedal limb proportions
+    references:
+      - id: dollo1882
+        authors: Dollo, L.
+        year: 1882
+        title: Première note sur les dinosaures de Bernissart
+        journal: Bulletin du Musée Royal d'Histoire Naturelle de Belgique
+        volume: "1"
+        pages: 1-18
+        notes: Erected Hypsilophodontidae.
+      - id: madzia2021
+        authors: Madzia, D.; Arbour, V. M.; Boyd, C. A.; Farke, A. A.; Cruzado-Caballero, P.; Evans, D. C.
+        year: 2021
+        title: The phylogenetic nomenclature of ornithischian dinosaurs
+        journal: PeerJ
+        volume: "9"
+        pages: e12362
+        doi: 10.7717/peerj.12362
+        url: http://dx.doi.org/10.7717/peerj.12362
+        notes: Provides the modern phylogenetic definition of Hypsilophodontidae.
   Iguanodontia:
     description: |
       Iguanodontia is the major clade of derived ornithopod dinosaurs containing the rhabdodontomorphs, dryomorphs, and the lineage leading to the duck-billed hadrosaurids, together with (in recent analyses) the Gondwanan Elasmaria. Its members range from small cursorial forms to the giant iguanodonts and hadrosaurs, and are united by dental and pedal specializations for bulk herbivory. Iguanodontians were among the most abundant and widespread plant eaters of the Cretaceous.
@@ -3072,9 +3103,9 @@ clades:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
     described: 1891
     authors: Baur, G.
@@ -3105,6 +3136,8 @@ clades:
         url: http://dx.doi.org/10.7717/peerj.12362
         notes: Provides the modern phylogenetic definition of Iguanodontia.
   Jeholosauridae:
+    description: |
+      Jeholosauridae is a clade of small basal neornithischians named for the East Asian genus Jeholosaurus. Although originally proposed to include the Chinese Changchunsaurus and Mongolian Haya, most recent comprehensive analyses recover those taxa within Thescelosaurinae and restrict Jeholosauridae to Jeholosaurus and Yueosaurus, recovered as an early-diverging neornithischian lineage lying stemward of Thescelosauridae and Cerapoda.
     taxonomy:
       - Life
       - Animalia
@@ -3116,8 +3149,39 @@ clades:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Neornithischia
       - Jeholosauridae
+    type_genus: Jeholosaurus
+    described: 2012
+    authors: Han, F.-L.; Barrett, P. M.; Butler, R. J.; Xu, X.
+    diagnostic_features:
+      - Straight humeral shaft lacking strong sigmoid curvature
+      - Fossa on the greater trochanter of the femur (fossa trochanteris)
+      - Six or more sacral vertebrae
+      - Lateral swelling of the ischiadic peduncle of the ilium
+    references:
+      - id: han2012
+        authors: Han, F.-L.; Barrett, P. M.; Butler, R. J.; Xu, X.
+        year: 2012
+        title: Postcranial anatomy of Jeholosaurus shangyuanensis (Dinosauria, Ornithischia) from the Lower Cretaceous Yixian Formation of China
+        journal: Journal of Vertebrate Paleontology
+        volume: "32"
+        issue: "6"
+        pages: 1370-1395
+        doi: 10.1080/02724634.2012.694385
+        url: http://dx.doi.org/10.1080/02724634.2012.694385
+        notes: Erected Jeholosauridae.
+      - id: madzia2021
+        authors: Madzia, D.; Arbour, V. M.; Boyd, C. A.; Farke, A. A.; Cruzado-Caballero, P.; Evans, D. C.
+        year: 2021
+        title: The phylogenetic nomenclature of ornithischian dinosaurs
+        journal: PeerJ
+        volume: "9"
+        pages: e12362
+        doi: 10.7717/peerj.12362
+        url: http://dx.doi.org/10.7717/peerj.12362
+        notes: Provides the modern phylogenetic definition of Jeholosauridae.
   Jinfengopteryginae:
     taxonomy:
       - Life
@@ -3178,9 +3242,9 @@ clades:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -3232,6 +3296,7 @@ clades:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -3564,6 +3629,7 @@ clades:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
     described: 1986
@@ -3851,6 +3917,7 @@ clades:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -3882,6 +3949,8 @@ clades:
         url: http://dx.doi.org/10.7717/peerj.12362
         notes: Provides the modern phylogenetic definition of Neoceratopsia.
   Neornithischia:
+    description: |
+      Neornithischia is the major clade of genasaurian ornithischians that excludes Thyreophora, uniting the basal "hypsilophodont-grade" forms with the thescelosaurids, jeholosaurids, and the more derived Cerapoda (Ornithopoda plus Marginocephalia). Its earliest members were small, gracile, cursorial bipeds of the Middle to Late Jurassic, and the clade went on to encompass the enormous radiations of horned, dome-headed, and duck-billed dinosaurs. It is here recovered as the sister group of Thyreophora within Genasauria.
     taxonomy:
       - Life
       - Animalia
@@ -3893,7 +3962,34 @@ clades:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Neornithischia
+    described: 1985
+    authors: Cooper, M. R.
+    diagnostic_features:
+      - Tab-shaped (subrectangular) obturator process on the ischium
+      - Articulation between the sacral ribs and the ischiadic peduncle of the ilium
+      - Cheek-tooth crowns low and triangular with a well-developed primary ridge
+      - Premaxillary dentition reduced and restricted to the anterior premaxilla
+    references:
+      - id: cooper1985
+        authors: Cooper, M. R.
+        year: 1985
+        title: A revision of the ornithischian dinosaur Kangnasaurus coetzeei Haughton, with a classification of the Ornithischia
+        journal: Annals of the South African Museum
+        volume: "95"
+        pages: 281-317
+        notes: Erected Neornithischia.
+      - id: madzia2021
+        authors: Madzia, D.; Arbour, V. M.; Boyd, C. A.; Farke, A. A.; Cruzado-Caballero, P.; Evans, D. C.
+        year: 2021
+        title: The phylogenetic nomenclature of ornithischian dinosaurs
+        journal: PeerJ
+        volume: "9"
+        pages: e12362
+        doi: 10.7717/peerj.12362
+        url: http://dx.doi.org/10.7717/peerj.12362
+        notes: Provides the modern phylogenetic definition of Neornithischia.
   Neosauropoda:
     taxonomy:
       - Life
@@ -4163,7 +4259,7 @@ clades:
         pages: 375-402
   Ornithopoda:
     description: |
-      Ornithopoda, meaning "bird feet," is a clade of cerapodan ornithischian dinosaurs that includes the iguanodonts and hadrosaurs along with numerous smaller, basal members. Ornithopods were among the most successful and widespread herbivorous dinosaurs, ranging from small bipedal forms in the Jurassic to large quadrupedal hadrosaurs in the Late Cretaceous. They are characterized by their efficient jaw mechanism that allowed transverse (pleurokinetic) chewing of plant material, a feature rare among reptiles.
+      Ornithopoda, meaning "bird feet," is a clade of cerapodan ornithischian dinosaurs that includes the iguanodonts and hadrosaurs together with a grade of smaller basal members and the restricted Hypsilophodontidae. Ornithopods were among the most successful and widespread herbivorous dinosaurs, ranging from small Jurassic bipeds to large quadrupedal Late Cretaceous hadrosaurs, and are characterized by an efficient pleurokinetic jaw mechanism that allowed transverse chewing of plant material.
     taxonomy:
       - Life
       - Animalia
@@ -4176,25 +4272,36 @@ clades:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
     described: 1881
-    authors: Marsh
+    authors: Marsh, O. C.
     diagnostic_features:
-      - Pleurokinetic skull allowing lateral movement of the maxillae during chewing
-      - Tridactyl (three-toed) pes with hoof-like unguals
-      - Absence of premaxillary teeth (keratinous beak present)
-      - Well-developed dental battery in advanced forms
-      - Tendency toward facultative or obligate quadrupedality in larger taxa
+      - Pleurokinetic skull permitting lateral rotation of the maxillae during chewing
+      - Jugal positioned well above the level of the quadrate condyles
+      - Lowered mandibular glenoid, offsetting the jaw joint below the tooth row
+      - Dentary crowns lacking a primary labial swelling; dentary tooth roots curved
       - Elongate prepubic process of the pubis
     references:
       - id: marsh1881a
-        authors: Marsh, O.C.
+        authors: Marsh, O. C.
         year: 1881
         title: Principal characters of American Jurassic dinosaurs, Part IV
         journal: American Journal of Science
         volume: "21"
         pages: 339-345
+        notes: Erected Ornithopoda.
+      - id: madzia2021
+        authors: Madzia, D.; Arbour, V. M.; Boyd, C. A.; Farke, A. A.; Cruzado-Caballero, P.; Evans, D. C.
+        year: 2021
+        title: The phylogenetic nomenclature of ornithischian dinosaurs
+        journal: PeerJ
+        volume: "9"
+        pages: e12362
+        doi: 10.7717/peerj.12362
+        url: http://dx.doi.org/10.7717/peerj.12362
+        notes: Provides the modern phylogenetic definition of Ornithopoda.
   Ornithothoraces:
     taxonomy:
       - Life
@@ -4259,6 +4366,8 @@ clades:
       - Ornithothoraces
       - Ornithuromorpha
   Orodrominae:
+    description: |
+      Orodrominae is one of the two subfamilies of Thescelosauridae, comprising small basal neornithischians from the Cretaceous of North America and Asia. Several members (Oryctodromeus, Orodromeus, Koreanosaurus) show skeletal adaptations associated with a fossorial, burrowing habit. The subfamily is defined as the thescelosaurids more closely related to Orodromeus than to Thescelosaurus.
     taxonomy:
       - Life
       - Animalia
@@ -4270,9 +4379,40 @@ clades:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Neornithischia
       - Thescelosauridae
       - Orodrominae
+    type_genus: Orodromeus
+    described: 2013
+    authors: Brown, C. M.; Evans, D. C.; Ryan, M. J.; Russell, A. P.
+    diagnostic_features:
+      - Sharp, pronounced scapular spine
+      - D-shaped fibular shaft cross-section throughout its length
+      - Long ventral process of the squamosal
+      - Sharp ventral keel on the cervical vertebrae
+    references:
+      - id: brown2013
+        authors: Brown, C. M.; Evans, D. C.; Ryan, M. J.; Russell, A. P.
+        year: 2013
+        title: New data on the diversity and abundance of small-bodied ornithopods (Dinosauria, Ornithischia) from the Belly River Group (Campanian) of Alberta
+        journal: Journal of Vertebrate Paleontology
+        volume: "33"
+        issue: "3"
+        pages: 495-520
+        doi: 10.1080/02724634.2013.746229
+        url: http://dx.doi.org/10.1080/02724634.2013.746229
+        notes: Erected Orodrominae.
+      - id: madzia2021
+        authors: Madzia, D.; Arbour, V. M.; Boyd, C. A.; Farke, A. A.; Cruzado-Caballero, P.; Evans, D. C.
+        year: 2021
+        title: The phylogenetic nomenclature of ornithischian dinosaurs
+        journal: PeerJ
+        volume: "9"
+        pages: e12362
+        doi: 10.7717/peerj.12362
+        url: http://dx.doi.org/10.7717/peerj.12362
+        notes: Provides the modern phylogenetic definition of Orodrominae.
   Oviraptoridae:
     taxonomy:
       - Life
@@ -4327,6 +4467,7 @@ clades:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Pachycephalosauria
@@ -4372,6 +4513,7 @@ clades:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Pachycephalosauria
@@ -4416,6 +4558,7 @@ clades:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Pachycephalosauria
@@ -4512,24 +4655,6 @@ clades:
       - Coelurosauria
       - Maniraptora
       - Paraves
-  Parksosauridae:
-    taxonomy:
-      - Life
-      - Animalia
-      - Chordata
-      - Vertebrata
-      - Sarcopterygii
-      - Tetrapoda
-      - Reptilia
-      - Archosauria
-      - Dinosauria
-      - Ornithischia
-      - Genasauria
-      - Cerapoda
-      - Ornithopoda
-      - Clypeodonta
-      - Hypsilophodontidae
-      - Parksosauridae
   Parvicursorinae:
     taxonomy:
       - Life
@@ -4670,6 +4795,7 @@ clades:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -4765,9 +4891,9 @@ clades:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Rhabdodontomorpha
       - Rhabdodontidae
@@ -4815,9 +4941,9 @@ clades:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Rhabdodontomorpha
     described: 2016
@@ -5055,9 +5181,9 @@ clades:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -5543,9 +5669,9 @@ clades:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -5771,6 +5897,8 @@ clades:
         volume: "21"
         pages: 417-423
   Thescelosauridae:
+    description: |
+      Thescelosauridae is a clade of small to medium-sized basal neornithischians that lies outside Cerapoda, comprising the subfamilies Orodrominae and Thescelosaurinae. Its members were stocky, ground-dwelling herbivores of the Cretaceous, several of them adapted for burrowing, ranging from North America and Asia. The junior synonym Parksosauridae Buchholz, 2002 covers the same clade; Thescelosauridae has nomenclatural precedence and is the name in prevailing use.
     taxonomy:
       - Life
       - Animalia
@@ -5782,9 +5910,40 @@ clades:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Neornithischia
       - Thescelosauridae
+    type_genus: Thescelosaurus
+    described: 1937
+    authors: Sternberg, C. M.
+    diagnostic_features:
+      - Fossa developed on the premaxilla-maxilla boundary
+      - Fossa on the pterygoid wing of the quadrate
+      - Laterally flattened greater trochanter of the femur
+      - Overhanging lateral condyle of the tibia
+      - Squared to rounded lateral distal tarsal
+    references:
+      - id: sternberg1937
+        authors: Sternberg, C. M.
+        year: 1937
+        title: Classification of Thescelosaurus, with a description of a new species
+        journal: Proceedings of the Geological Society of America
+        volume: "1936"
+        pages: "375"
+        notes: Origin of the family-group name Thescelosauridae.
+      - id: madzia2021
+        authors: Madzia, D.; Arbour, V. M.; Boyd, C. A.; Farke, A. A.; Cruzado-Caballero, P.; Evans, D. C.
+        year: 2021
+        title: The phylogenetic nomenclature of ornithischian dinosaurs
+        journal: PeerJ
+        volume: "9"
+        pages: e12362
+        doi: 10.7717/peerj.12362
+        url: http://dx.doi.org/10.7717/peerj.12362
+        notes: Provides the modern phylogenetic definition of Thescelosauridae and treats Parksosauridae as a junior synonym.
   Thescelosaurinae:
+    description: |
+      Thescelosaurinae is one of the two subfamilies of Thescelosauridae, comprising relatively robust, larger-bodied basal neornithischians from the Cretaceous of North America and Asia, including the type genus Thescelosaurus, Parksosaurus, and the East Asian Changchunsaurus and Haya. The subfamily is defined as the thescelosaurids more closely related to Thescelosaurus than to Orodromeus.
     taxonomy:
       - Life
       - Animalia
@@ -5796,9 +5955,37 @@ clades:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Neornithischia
       - Thescelosauridae
       - Thescelosaurinae
+    type_genus: Thescelosaurus
+    described: 1940
+    authors: Sternberg, C. M.
+    diagnostic_features:
+      - Two supraorbital bones that remain unfused
+      - Dorsally projecting, finger-like process on the surangular
+      - Robust, comparatively large-bodied build relative to orodromines
+      - Ilium with a sinuous dorsal margin in derived members
+    references:
+      - id: sternberg1940c
+        authors: Sternberg, C. M.
+        year: 1940
+        title: Thescelosaurus edmontonensis, n. sp., and classification of the Hypsilophodontidae
+        journal: Journal of Paleontology
+        volume: "14"
+        pages: 481-494
+        notes: Origin of the family-group name Thescelosaurinae.
+      - id: madzia2021
+        authors: Madzia, D.; Arbour, V. M.; Boyd, C. A.; Farke, A. A.; Cruzado-Caballero, P.; Evans, D. C.
+        year: 2021
+        title: The phylogenetic nomenclature of ornithischian dinosaurs
+        journal: PeerJ
+        volume: "9"
+        pages: e12362
+        doi: 10.7717/peerj.12362
+        url: http://dx.doi.org/10.7717/peerj.12362
+        notes: Provides the modern phylogenetic definition of Thescelosaurinae.
   Thyreophora:
     description: |
       Thyreophora, meaning "shield bearers," is a clade of armored ornithischian dinosaurs that includes Stegosauria and Ankylosauria. Thyreophorans are characterized by the presence of dermal armor in the form of osteoderms (bony scutes, plates, or spines) embedded in the skin along the body. The clade appeared in the Early Jurassic and persisted until the end of the Cretaceous, with a global distribution. Thyreophorans were obligate quadrupeds and herbivores.
@@ -7302,6 +7489,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -7724,9 +7912,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -8008,6 +8196,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Pachycephalosauria
@@ -8321,9 +8510,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -8626,9 +8815,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -9442,6 +9631,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -9740,6 +9930,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -10034,9 +10225,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -10251,6 +10442,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -10350,9 +10542,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -10710,6 +10902,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Pachycephalosauria
@@ -10815,6 +11008,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
     authors: Ohashi, T.; Barrett, P. M.
@@ -10923,6 +11117,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -11033,6 +11228,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Neornithischia
       - Thescelosauridae
       - Orodrominae
@@ -12732,9 +12928,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -14062,9 +14258,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Rhabdodontomorpha
     authors: Tykoski, R. S.; Contreras, D. L.; Noto, C.
@@ -14428,6 +14624,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Pachycephalosauria
@@ -14614,9 +14811,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -14815,9 +15012,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Elasmaria
     authors: Coria, R. A.; Calvo, J. O.
@@ -15013,9 +15210,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -15170,6 +15367,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -15789,9 +15987,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -17920,9 +18118,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -18034,6 +18232,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -18345,9 +18544,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -18550,6 +18749,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -19602,9 +19802,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -20215,6 +20415,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -20429,9 +20630,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -20633,6 +20834,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -21721,9 +21923,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Elasmaria
     authors: Rich, T. H.; Vickers-Rich, P.
@@ -22149,9 +22351,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -22255,6 +22457,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -23091,6 +23294,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -23526,9 +23730,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -23671,6 +23875,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -24189,6 +24394,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -25185,9 +25391,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -25570,9 +25776,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -25903,9 +26109,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -26113,9 +26319,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -26214,6 +26420,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -27669,6 +27876,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -27772,9 +27980,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -28022,9 +28230,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -28236,9 +28444,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -29299,6 +29507,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -29483,9 +29692,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -30033,6 +30242,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -30133,6 +30343,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -30242,9 +30453,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -30708,6 +30919,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Pachycephalosauria
@@ -31007,6 +31219,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
     authors: Madzia, D.; Boyd, C. A.; Mazuch, M.
@@ -32163,9 +32376,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Dryosauridae
@@ -32265,9 +32478,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -32958,9 +33171,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -33146,9 +33359,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -33356,9 +33569,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -34113,9 +34326,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -34227,6 +34440,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -34369,6 +34583,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -34581,6 +34796,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -35452,16 +35668,16 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Elasmaria
     authors: Nogueira, R. A.; Rozadilla, S.; Agnolín, F. L.; Garcia Marsà, J. A.; Motta, M. J.; Novas, F. E.
     described: 2024
   Changchunsaurus:
     genus: Changchunsaurus
-    parent: Ornithopoda
+    parent: Thescelosaurinae
     etymology: Named after Changchun, the city near where it was discovered in Jilin Province, China, + Greek sauros ('lizard'), meaning 'Changchun lizard'.
     pronunciation:
       phonetic: CHAHNG-choon-SOR-us
@@ -35570,8 +35786,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
-      - Cerapoda
-      - Ornithopoda
+      - Neornithischia
+      - Thescelosauridae
+      - Thescelosaurinae
     authors: Zan, S.-Q.; Chen, J.; L.-Y. Jin, T. L.
     described: 2005
   Changmiania:
@@ -35679,6 +35896,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
     authors: Yang, Y.; Wu, W.; Dieudonné, P.-E.; Godefroit, P.
@@ -35985,6 +36203,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -36083,9 +36302,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -36211,6 +36430,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -37562,9 +37782,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -38473,9 +38693,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -38883,9 +39103,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -39090,6 +39310,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -39187,9 +39408,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -39753,6 +39974,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Pachycephalosauria
@@ -40251,9 +40473,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -40697,9 +40919,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Rhabdodontomorpha
     authors: Andrzejewski, K. A.; Winkler, D. A.; Jacobs, L. L.
@@ -40818,6 +41040,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -41030,9 +41253,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -41149,6 +41372,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -41668,6 +41892,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -41963,6 +42188,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -42219,9 +42445,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -42757,9 +42983,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -43747,9 +43973,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -44858,6 +45084,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -45120,9 +45347,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -45635,9 +45862,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Elasmaria
     authors: Herne, M. C.; Tait, A. M.; Weisbecker, V.; Hall, M.; Nair, J. P.; Cleeland, M.; Salisbury, S. W.
@@ -46801,11 +47028,17 @@ genera:
     described: 2008
   Doolysaurus:
     genus: Doolysaurus
-    parent: Thescelosauridae
+    parent: Thescelosaurinae
     etymology: Combines a reference to 'Dooly the Little Dinosaur', a Korean cartoon character, with Ancient Greek 'sauros' meaning 'lizard'; the specific name huhmini honors paleontologist Min Huh, founder of the Korean Dinosaur Research Center.
     pronunciation:
       phonetic: DOO-lee-SOR-us
     description: Doolysaurus is an extinct genus of thescelosaurid ornithischian dinosaur known from the Cretaceous (Albian-lower Cenomanian) Ilseongsan Formation of South Korea. The genus contains a single species, Doolysaurus huhmini, known from the partial skeleton of a small juvenile individual. It is the first named South Korean dinosaur with diagnostic cranial material, providing important insight into the early evolution of thescelosaurid ornithischians in East Asia, and the second named basal neornithischian from South Korea after Koreanosaurus.
+    dispute:
+      summary: |
+        Doolysaurus is recovered within Thescelosaurinae, as sister to a clade of Parksosaurus, Fona, and Thescelosaurus, in the primary (Bayesian and majority-rule) analyses of Jung and others (2026). A sensitivity analysis using the Avrahami and others (2024) matrix instead recovered it as a basal orodromine.
+      history:
+        - date: 2026-06-29
+          note: Placed at Thescelosaurinae following the primary result of Jung and others (2026) (P1); the Orodrominae alternative from their sensitivity analysis is recorded.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -46877,8 +47110,10 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Neornithischia
       - Thescelosauridae
+      - Thescelosaurinae
     authors: Jung, J.; Kim, M.; Jo, H.; Clarke, J. A.
     described: 2026
   Dornraptor:
@@ -47088,9 +47323,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -48078,9 +48313,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Dryosauridae
@@ -49046,9 +49281,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Dryosauridae
@@ -49141,6 +49376,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -50104,9 +50340,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -50311,6 +50547,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -51026,9 +51263,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Dryosauridae
@@ -51292,9 +51529,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Dryosauridae
@@ -51380,6 +51617,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Neornithischia
     authors: Maidment, S. C. R.; Barrett, P. M.
     described: 2025
@@ -51972,9 +52210,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -52591,9 +52829,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -52692,6 +52930,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -52932,9 +53171,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Dryosauridae
@@ -53367,9 +53606,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -55566,6 +55805,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -55853,6 +56093,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -55954,6 +56195,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Neornithischia
       - Thescelosauridae
       - Thescelosaurinae
@@ -56052,6 +56294,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Pachycephalosauria
@@ -56149,9 +56392,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Rhabdodontomorpha
     authors: Dieudonné, P.; Becerra, M. G.; Zanesco, T.; Tortosa, T.; Cruzado‐Caballero, P.; Stein, K.; Torcida Fernández‐Baldor, F.
@@ -56366,9 +56609,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Rhabdodontomorpha
     authors: Bell, P. R.; Brougham, T.; Herne, M. C.; Frauenfelder, T.; Smith, E. T.
@@ -56797,9 +57040,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -57215,9 +57458,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Elasmaria
     authors: Huene, F. V.
@@ -57300,6 +57543,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -57710,9 +57954,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -57930,9 +58174,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Elasmaria
     authors: Herne, M. C.; Nair, J. P.; Evans, A. R.; Tait, A. M.
@@ -59029,7 +59273,7 @@ genera:
     described: 1985
   Gasparinisaura:
     genus: Gasparinisaura
-    parent: Parksosauridae
+    parent: Elasmaria
     pronunciation:
       phonetic: gas-pah-REEN-ee-SAWR-a
     etymology: Gasparini's lizard; named in honor of Argentine paleontologist Zulma Brandoni de Gasparini, combined with Greek sauros (lizard)
@@ -59128,11 +59372,11 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
-      - Hypsilophodontidae
-      - Parksosauridae
+      - Iguanodontia
+      - Elasmaria
     authors: Coria, R. A.; Salgado, L.
     described: 1996
   Gastonia:
@@ -59628,6 +59872,12 @@ genera:
     pronunciation:
       phonetic: gih-dee-on-man-tell-ee-uh
     description: Gideonmantellia is an extinct genus of basal ornithopod dinosaur known from the Early Cretaceous (Barremian stage) Camarillas Formation of Galve, Province of Teruel, Spain. It contains a single species, Gideonmantellia amosanjuanae.
+    dispute:
+      summary: |
+        Gideonmantellia is placed as a basal ornithopod outside Iguanodontia, the position recovered by Madzia and others (2017) and favored by recent studies (Manitkoon and others, 2023) and by Jones (2026). Fonseca and others (2024) instead recover it within a restricted Hypsilophodontidae as the sister taxon of Hypsilophodon.
+      history:
+        - date: 2026-06-29
+          note: Placed at Ornithopoda incertae sedis following Madzia and others (2017) and Jones (2026) (P2); the Hypsilophodontidae alternative of Fonseca and others (2024) is unresolved.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -59698,6 +59948,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
     authors: Ruiz-Omeñaca, J. I.; Canudo, J. I.; Cuenca-Bescós, G.; Cruzado-Caballero, P.; Gasca, J. M.; Moreno-Azanza, M.
@@ -60378,9 +60629,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -60715,9 +60966,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -61037,9 +61288,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -61850,9 +62101,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -61937,9 +62188,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -62147,9 +62398,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -62416,6 +62667,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Pachycephalosauria
@@ -62520,6 +62772,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -62728,6 +62981,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Pachycephalosauria
@@ -62820,6 +63074,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -62909,6 +63164,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -63104,9 +63360,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -63702,9 +63958,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -64335,6 +64591,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Pachycephalosauria
@@ -64426,9 +64683,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -64940,11 +65197,17 @@ genera:
     described: 1984
   Haya:
     genus: Haya
-    parent: Thescelosauridae
+    parent: Thescelosaurinae
     etymology: From Sanskrit 'haya', referring to the Hayagriva avatar of Vishnu (depicted with a horse head), in reference to the elongate horse-like skull and the deity's appearance in the Buddhist art of Mongolia.
     pronunciation:
       phonetic: hah-yah
     description: Haya is an extinct genus of basal neornithischian dinosaur known from the Late Cretaceous of Mongolia.
+    dispute:
+      summary: |
+        Haya is recovered within Thescelosaurinae by Boyd (2015) and Fonseca and others (2024) and is so classified by Jones (2026). Barta and Norell (2021) could not resolve it between Thescelosaurinae and Orodrominae, and Herne and others (2019) placed it in Jeholosauridae.
+      history:
+        - date: 2026-06-29
+          note: Placed at Thescelosaurinae following Boyd (2015), Fonseca and others (2024), and Jones (2026) (P3); subfamily position not fully resolved (Barta and Norell, 2021).
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -65047,8 +65310,10 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Neornithischia
       - Thescelosauridae
+      - Thescelosaurinae
     authors: Makovicky, P. J.; Kilbourne, B. M.; Sadleir, R. W.; Norell, M. A.
     described: 2011
   Heishansaurus:
@@ -65227,6 +65492,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -65659,9 +65925,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Dryosauridae
@@ -66634,9 +66900,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -66836,6 +67102,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Pachycephalosauria
@@ -67377,6 +67644,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -67474,9 +67742,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -68523,9 +68791,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -69081,9 +69349,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -69390,9 +69658,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -69562,9 +69830,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -69713,9 +69981,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Hypsilophodontidae
     authors: Huxley, T. H.
     described: 1870
@@ -69929,9 +70197,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Rhabdodontomorpha
     authors: Zanno, L. E.; Gates, T. A.; Avrahami, H. M.; Tucker, R. T.; Makovicky, P. J.
@@ -70574,9 +70842,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -70755,9 +71023,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -72259,9 +72527,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Elasmaria
     authors: Novas, F.; Agnolin, F.; Rozadilla, S.; Aranciaga-Rolando, A.; Brissón-Eli, F.; Motta, M.; Cerroni, M.; Ezcurra, M.; Martinelli, A.; D´Angelo, J.; Álvarez-Herrera, G.; Gentil, A.; Bogan, S.; Chimento, N.; García-Marsà, J.; Lo Coco, G.; Miquel, S.; Brito, F.; Vera, E.; Loinaze, V.; Fernandez, M.; Salgado, L.
@@ -72352,6 +72620,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -72658,9 +72927,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -73080,9 +73349,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Dryosauridae
@@ -73729,9 +73998,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -73967,6 +74236,12 @@ genera:
       phonetic: juh-HOH-lo-SAWR-us
     etymology: Named after Jehol, a historical province in northeastern China (western Liaoning and northern Hebei), combined with Greek sauros (lizard); meaning 'Jehol lizard'
     description: Jeholosaurus is a genus of small neornithischian dinosaur from the Early Cretaceous-aged Yixian Formation of what is now China.
+    dispute:
+      summary: |
+        Jeholosaurus is the type genus of Jeholosauridae, recovered as an early-diverging neornithischian (with Yueosaurus) stemward of Thescelosauridae and Cerapoda by Boyd (2015), Madzia and others (2018), Manitkoon and others (2023), and Jones (2026). Fonseca and others (2024) instead recover Jeholosaurus within Thescelosaurinae, rendering Jeholosauridae inapplicable.
+      history:
+        - date: 2026-06-29
+          note: Placed at Jeholosauridae following the prevailing recent view (P3); the Thescelosaurinae alternative of Fonseca and others (2024) is recorded.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -74068,6 +74343,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Neornithischia
       - Jeholosauridae
     authors: Xu, X.; Wang, X.-L.; H.-L. You
@@ -74171,9 +74447,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -75485,9 +75761,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -75719,9 +75995,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -76129,6 +76405,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -76843,9 +77120,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -76952,9 +77229,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Elasmaria
     authors: Haughton, S. H.
@@ -77534,9 +77811,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -77727,9 +78004,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -77959,9 +78236,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -79200,6 +79477,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -79295,6 +79573,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Neornithischia
       - Thescelosauridae
       - Orodrominae
@@ -79393,9 +79672,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -79542,6 +79821,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -79752,9 +80032,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -79843,9 +80123,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -80025,6 +80305,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -80141,6 +80422,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Neornithischia
     authors: Godefroit, P.; Sinitsa, S. M.; Dhouailly, D.; Bolotsky, Y. L.; Sizov, A. V.; McNamara, M. E.; Benton, M. J.; Spagna, P.
     described: 2014
@@ -80347,9 +80629,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -80929,9 +81211,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -81184,9 +81466,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -81471,9 +81753,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -81482,11 +81764,17 @@ genera:
     described: 2005
   Laosaurus:
     genus: Laosaurus
-    parent: Ornithopoda
+    parent: Neornithischia
     pronunciation:
       phonetic: LAY-oh-SAWR-us
     etymology: From Greek laas (stone or fossil) and sauros (lizard); meaning "stone or fossil lizard"
     description: Laosaurus is a genus of neornithischian dinosaur. The type species, Laosaurus celer, was first described by O.C. Marsh in 1878 from remains discovered in the Upper Jurassic (Kimmeridgian) Morrison Formation of Wyoming. The validity of this genus is doubtful because it is based on fragmentary fossils. A second species also from the Morrison Formation, L. gracilis, and a species from the Upper Cretaceous Allison Formation of Alberta, Canada, L. minimus, are also considered dubious.
+    dispute:
+      summary: |
+        Laosaurus is a nomen dubium based on fragmentary Late Jurassic material from the Morrison Formation; its species have been variously reassigned or considered indeterminate (Galton, 1977). Its describing literature was not available for this assessment.
+      history:
+        - date: 2026-06-29
+          note: Parked at Neornithischia incertae sedis (P2); fragmentary nomen dubium not placeable more precisely.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -81562,8 +81850,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
-      - Cerapoda
-      - Ornithopoda
+      - Neornithischia
     authors: Marsh, O. C.
     described: 1878
   Lapampasaurus:
@@ -81652,9 +81939,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -82098,9 +82385,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -82308,9 +82595,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Elasmaria
     authors: Rich, T. H.; Vickers-Rich, P.
@@ -82868,6 +83155,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -83381,9 +83669,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -83753,6 +84041,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -85860,6 +86149,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -85956,9 +86246,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
     authors: Ameghino, F.
     described: 1899
@@ -86058,9 +86348,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -87305,9 +87595,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -87952,6 +88242,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -88172,9 +88463,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Elasmaria
     authors: Calvo, J. O.; Porfiri, J. D.; F. E. Novas
@@ -88361,9 +88652,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -88469,9 +88760,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -88920,9 +89211,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Elasmaria
     authors: Cruzado-Caballero, P.; Gasca, J. M.; Filippi, L. S.; Cerda, I. A.; Garrido, A. C.
@@ -89029,9 +89320,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -89690,9 +89981,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -90030,9 +90321,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -90518,9 +90809,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -91400,9 +91691,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Rhabdodontomorpha
       - Rhabdodontidae
@@ -91720,6 +92011,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -92546,6 +92838,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -92883,6 +93176,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -93258,6 +93552,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -93466,9 +93761,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -93572,6 +93867,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
     authors: Dong, Z.
     described: 1978
@@ -94195,6 +94491,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Neornithischia
     authors: Manitkoon, S.; Deesri, U.; Khalloufi, B.; Nonsrirach, T.; Suteethorn, V.; Chanthasit, P.; Boonla, W.; Buffetaut, E.
     described: 2023
@@ -94530,9 +94827,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -95083,9 +95380,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Rhabdodontomorpha
       - Rhabdodontidae
@@ -95481,6 +95778,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -95837,6 +96135,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -95948,9 +96247,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -96220,9 +96519,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Elasmaria
     authors: Rozadilla, S.; Agnolin, F. L.; Novas, F. E.; Aranciaga Rolando, A. M.; Motta, M. J.; Lirio, J. M.; Isasi, M. P.
@@ -96329,6 +96628,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -96764,9 +97064,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Rhabdodontomorpha
     authors: Bartholomai, A.; Molnar, R. E.
@@ -97112,9 +97412,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -97553,9 +97853,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -97567,11 +97867,17 @@ genera:
     described: 2007
   Nanosaurus:
     genus: Nanosaurus
-    parent: Ornithopoda
+    parent: Neornithischia
     pronunciation:
       phonetic: NAY-no-SAWR-us
     etymology: From Greek 'nanos' (small or dwarf) and 'sauros' (lizard); meaning 'small or dwarf lizard'.
     description: Nanosaurus is an extinct genus of neornithischian dinosaur that lived about 155 to 148 million years ago, during the Late Jurassic in North America. Its fossils are known from the Morrison Formation of the south-western United States. The type and only species, Nanosaurus agilis, was described and named by Othniel Charles Marsh in 1877. The taxon has a complicated taxonomic history, largely the work of Marsh and Peter M. Galton, involving the genera Laosaurus, Hallopus, Drinker, Othnielia, and Othnielosaurus, the latter three now being considered to be synonyms of Nanosaurus. It had historically been classified as a hypsilophodont or fabrosaur, types of generalized small bipedal herbivore, but more recent research has abandoned these groupings as paraphyletic and Nanosaurus is today considered a basal member of Neornithischia.
+    dispute:
+      summary: |
+        Nanosaurus is treated as a valid basal neornithischian by Carpenter and Galton (2018), who synonymized Drinker, Othnielia, and Othnielosaurus with it, and by Fonseca and others (2024) and Jones (2026). Boyd (2015) and Barrett and Maidment (2025) instead regard Nanosaurus agilis as a nomen dubium lacking diagnostic features.
+      history:
+        - date: 2026-06-29
+          note: Retained at Neornithischia incertae sedis following Fonseca and others (2024) and Jones (2026) (P2); the nomen dubium assessment of Boyd (2015) and Barrett and Maidment (2025) is recorded.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -97680,8 +97986,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
-      - Cerapoda
-      - Ornithopoda
+      - Neornithischia
     authors: Marsh, O. C.
     described: 1877
   Nanotyrannus:
@@ -98201,9 +98506,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -98298,9 +98603,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -98643,6 +98948,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -98852,6 +99158,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -99198,6 +99505,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -100149,11 +100457,17 @@ genera:
     described: 1992
   Nevadadromeus:
     genus: Nevadadromeus
-    parent: Thescelosaurinae
+    parent: Thescelosauridae
     etymology: Named after Nevada, the US state where it was found, combined with Greek 'dromeus' (runner); meaning 'Nevada runner'.
     pronunciation:
       phonetic: nuh-VAH-duh-DROH-me-us
     description: Nevadadromeus is an extinct genus of small thescelosaurine ornithischian dinosaur, from the Willow Tank Formation of Nevada, United States. The genus contains a single species, N. schmitti, which represents the first non-avian dinosaur named from Nevada.
+    dispute:
+      summary: |
+        Nevadadromeus is a thescelosaurid whose subfamily placement is unresolved: its describers (Bonde and others, 2022) and Jones (2026) favor Thescelosaurinae, whereas Fonseca and others (2024) recover it within Orodrominae, and the original analysis found both subfamilies about equally likely.
+      history:
+        - date: 2026-06-29
+          note: Placed at Thescelosauridae incertae sedis (P2); the analyses disagree on whether it is a thescelosaurine or an orodromine.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -100226,9 +100540,9 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Neornithischia
       - Thescelosauridae
-      - Thescelosaurinae
     authors: Bonde, J. W.; Hall, R. L.; Krumenacker, L. J.; Varricchio, D. J.
     described: 2022
   Newtonsaurus:
@@ -101125,9 +101439,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -102062,6 +102376,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -102193,11 +102508,17 @@ genera:
     described: 2016
   Notohypsilophodon:
     genus: Notohypsilophodon
-    parent: Thescelosaurinae
+    parent: Elasmaria
     pronunciation:
       phonetic: NOT-o-hip-si-LOF-o-don
     etymology: From Greek 'notos' meaning 'south wind' (indicating its southern provenance in South America) combined with the genus name Hypsilophodon, indicating its similarity to that ornithopod.
     description: Notohypsilophodon is a genus of ornithopod dinosaur from the Late Cretaceous of Argentina. It was described as the only "hypsilophodont" known from South America, although this assessment is not universally supported, and Gasparinisaura is now believed to have been a basal euornithopod as well.
+    dispute:
+      summary: |
+        Notohypsilophodon is recovered within Elasmaria by dedicated analyses of Gondwanan ornithopods (Rozadilla and others, 2016) and is treated as an elasmarian by Jones (2026). Earlier matrices derived from Boyd (2015), including Madzia and others (2017, 2021), instead place it within Thescelosaurinae.
+      history:
+        - date: 2026-06-29
+          note: Placed at Elasmaria following Rozadilla and others (2016) and Jones (2026) (P3, recency and dedicated sampling); the Thescelosaurinae alternative is recorded.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -102289,9 +102610,12 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Neornithischia
-      - Thescelosauridae
-      - Thescelosaurinae
+      - Cerapoda
+      - Ornithopoda
+      - Iguanodontia
+      - Elasmaria
     authors: Martínez, R. D.
     described: 1998
   Nqwebasaurus:
@@ -102684,9 +103008,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Rhabdodontomorpha
     authors: Czepiński, Ł.; Madzia, D.
@@ -102775,9 +103099,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -103044,6 +103368,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -103369,9 +103694,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -104107,9 +104432,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -104807,6 +105132,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Neornithischia
       - Thescelosauridae
       - Orodrominae
@@ -105088,9 +105414,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -105106,6 +105432,12 @@ genera:
     parent: Orodrominae
     etymology: From Ancient Greek 'oruktēs' meaning 'digger' and 'dromaios' meaning 'runner'; translates as 'digging runner', reflecting its unique status as the first non-avian dinosaur with evidence of burrowing behavior.
     description: Oryctodromeus is an extinct genus of small orodromine thescelosaurid dinosaur. Fossils are known from the Late Cretaceous Blackleaf Formation of southwestern Montana and the Wayan Formation of southeastern Idaho, USA, both of the Cenomanian stage, roughly 105-96 million years ago. A member of the small, presumably fast-running herbivorous family Thescelosauridae, Oryctodromeus is the first non-avian dinosaur published that shows evidence of burrowing behavior.
+    dispute:
+      summary: |
+        Oryctodromeus is recovered within Orodrominae by most analyses (Brown and others, 2013; Boyd, 2015; Barta and Norell, 2021) and by Jones (2026). Avrahami and others (2024) instead recover it, with Fona, within Thescelosaurinae.
+      history:
+        - date: 2026-06-29
+          note: Placed at Orodrominae following the prevailing view (P3); the Thescelosaurinae alternative of Avrahami and others (2024) is recorded.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -105203,6 +105535,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Neornithischia
       - Thescelosauridae
       - Orodrominae
@@ -105306,9 +105639,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -105514,9 +105847,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -106005,9 +106338,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -106236,6 +106569,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Pachycephalosauria
@@ -106371,6 +106705,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -108193,9 +108528,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -108358,9 +108693,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -108558,9 +108893,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Rhabdodontomorpha
       - Rhabdodontidae
@@ -108573,6 +108908,12 @@ genera:
       phonetic: PAHRK-so-SAWR-us
     etymology: Named after Canadian paleontologist William A. Parks, who discovered the specimen, combined with Greek sauros meaning 'lizard'; meaning 'Parks's lizard'
     description: Parksosaurus is a genus of neornithischian dinosaur from the early Maastrichtian-aged (Upper Cretaceous) Horseshoe Canyon Formation of Alberta, Canada. It is based on most of a partially articulated skeleton and partial skull, showing it to have been a small, bipedal, herbivorous dinosaur. It is one of the few described non-hadrosaurid ornithopods from the end of the Cretaceous in North America, existing around 70 million years ago.
+    dispute:
+      summary: |
+        Parksosaurus is most often recovered within Thescelosaurinae, close to Thescelosaurus (Boyd, 2015; Manitkoon and others, 2023), the position followed by Jones (2026). Herne and others (2019) instead recovered it as the basalmost ornithopod, and Rozadilla and others (2016) near basal Iguanodontia.
+      history:
+        - date: 2026-06-29
+          note: Placed at Thescelosaurinae following the prevailing view (P3); the basal-ornithopod alternative of Herne and others (2019) is recorded.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -108673,6 +109014,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Neornithischia
       - Thescelosauridae
       - Thescelosaurinae
@@ -109413,9 +109755,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -110453,9 +110795,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -110571,6 +110913,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -111405,11 +111748,17 @@ genera:
     described: 2019
   Phyllodon:
     genus: Phyllodon
-    parent: Ornithopoda
+    parent: Neornithischia
     etymology: From Greek 'phyllon' meaning 'leaf' and 'odon' meaning 'tooth'; translates as 'leaf tooth', named for the leaf-shaped teeth.
     pronunciation:
       phonetic: FILL-o-don
     description: Phyllodon is a genus of small ornithischian dinosaur from the Late Jurassic (Kimmeridgian) Camadas de Guimarota Formation of Leiria, Portugal and possibly also the Middle Jurassic (Bathonian) Chipping Norton Limestone of England. It may have been closely related to contemporaneous ornithischian dinosaurs from North America. This genus is known from teeth and possibly partial lower jaws. The name is also in use for a genus of modern moss, but this is not considered to be a problem because the two organisms are in two different kingdoms.
+    dispute:
+      summary: |
+        Phyllodon is based only on isolated teeth from the Late Jurassic of Portugal and is widely regarded as a nomen dubium (Norman, 2004), thought to represent a basal neornithischian comparable to Nanosaurus (Galton, 2006). Its describing paper was not available for this assessment.
+      history:
+        - date: 2026-06-29
+          note: Parked at Neornithischia incertae sedis (P2); fragmentary, tooth-based nomen dubium not placeable more precisely.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -111487,8 +111836,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
-      - Cerapoda
-      - Ornithopoda
+      - Neornithischia
     authors: Thulborn, R. A.
     described: 1973
   Piatnitzkysaurus:
@@ -112200,9 +112548,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -112746,6 +113094,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Pachycephalosauria
@@ -112843,9 +113192,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -113607,6 +113956,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -113709,9 +114059,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -114007,6 +114357,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Pachycephalosauria
@@ -114121,6 +114472,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -114420,9 +114772,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -114523,9 +114875,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -114636,9 +114988,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -115154,9 +115506,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -115709,6 +116061,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -115931,9 +116284,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -116088,6 +116441,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -116175,9 +116529,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -116763,6 +117117,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Neornithischia
     authors: Yang, Y.; King, J. L.; Xu, X.
     described: 2025
@@ -117076,12 +117431,18 @@ genera:
     described: 2000
   Qantassaurus:
     genus: Qantassaurus
-    parent: Ornithopoda
+    parent: Elasmaria
     pronunciation:
       ipa: /ˌkwɑːntəˈsɔːrəs/
       phonetic: KWAHN-tuh-SOR-uhs
     etymology: Named after Qantas, the Australian airline, combined with Greek 'sauros' (lizard); honors the national carrier of the country where it was discovered.
     description: Qantassaurus is a genus of basal two-legged, plant-eating elasmarian ornithischian dinosaur that lived in Australia about 125-112 million years ago, when the continent was still partly south of the Antarctic Circle. It was described by Patricia Vickers-Rich and her husband Tom Rich in 1999 after a find near Inverloch, and named after Qantas, the Australian airline.
+    dispute:
+      summary: |
+        Qantassaurus is referred to Elasmaria following Madzia and others (2017) and the assessment of Jones (2026). It behaves as an unstable wildcard in several analyses (Herne and others, 2019; Bell and others, 2018), in which it could not be placed with confidence, and it is known only from dentaries.
+      history:
+        - date: 2026-06-29
+          note: Placed at Elasmaria following Madzia and others (2017) and Jones (2026) (P2); recovered as an unstable wildcard by Herne and others (2019) and Bell and others (2018).
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -117155,8 +117516,11 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
+      - Iguanodontia
+      - Elasmaria
     authors: Rich, T. H.; Vickers-Rich, P.
     described: 1999
   Qianjiangsaurus:
@@ -117269,9 +117633,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -119334,9 +119698,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -119797,6 +120161,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -120006,9 +120371,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Rhabdodontomorpha
       - Rhabdodontidae
@@ -120114,9 +120479,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -120474,9 +120839,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -122552,6 +122917,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Neornithischia
     authors: Li, N.; Dai, H.; Tan, C.; Hu, X.; Wei, Z.; Lin, Y.; Wei, G.; Li, D.; Meng, L.; Hao, B.; You, H.; Peng, G.
     described: 2019
@@ -123103,6 +123469,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -123363,9 +123730,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -125266,9 +125633,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -125812,9 +126179,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Elasmaria
     authors: Ibiricu, L. M.; Casal, G. A.; Martínez, R. D.; Luna, M.; Canale, J. I.; Álvarez, B. N.; González Riga, B.
@@ -125906,6 +126273,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -126342,9 +126710,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -127386,9 +127754,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -127742,9 +128110,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -128463,6 +128831,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -128476,11 +128845,17 @@ genera:
     described: 2022
   Siluosaurus:
     genus: Siluosaurus
-    parent: Ornithopoda
+    parent: Neornithischia
     pronunciation:
       phonetic: suh-LOO-o-SAWR-us
     description: Siluosaurus is a genus of ornithischian dinosaur from the Early Cretaceous (Barremian-Albian) Xinminbao Group of Gansu, China. It is based on the specimen IVPP V.11117 (1-2), which consists of two teeth. It is an obscure genus, with no papers doing more than mentioning it since it was described in 1997. The type species is S. zhanggiani.
     etymology: Named for the Silk Road (Chinese 'Silu'), referencing the discovery location in Gansu, China, along the historic Silk Road corridor, combined with Greek 'sauros' meaning 'lizard'; meaning 'Silk Road lizard.'
+    dispute:
+      summary: |
+        Siluosaurus is based on two isolated teeth from the Early Cretaceous of China and is generally regarded as a nomen dubium; it was originally referred to the now-abandoned Hypsilophodontidae. Its describing paper was not available for this assessment.
+      history:
+        - date: 2026-06-29
+          note: Parked at Neornithischia incertae sedis (P2); fragmentary, tooth-based nomen dubium not placeable more precisely.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -128544,8 +128919,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
-      - Cerapoda
-      - Ornithopoda
+      - Neornithischia
     authors: Dong, Z.
     described: 1997
   Silutitan:
@@ -129169,6 +129543,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Pachycephalosauria
@@ -129283,6 +129658,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -130653,9 +131029,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -131388,6 +131764,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Pachycephalosauria
@@ -131495,6 +131872,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -131855,6 +132233,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -132490,6 +132869,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Pachycephalosauria
@@ -133079,6 +133459,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -133306,6 +133687,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -133992,6 +134374,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -134821,9 +135204,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
     authors: Seeley, H. G.
     described: 1879
@@ -135275,9 +135658,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Elasmaria
     authors: Novas, F. E.; Cambiaso, A. V.; A. Ambrosio
@@ -135362,9 +135745,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -136002,9 +136385,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -137791,9 +138174,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -138183,9 +138566,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Rhabdodontomorpha
     authors: Ostrom, J. H.
@@ -138411,6 +138794,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -138560,9 +138944,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -138657,6 +139041,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Pachycephalosauria
@@ -139429,9 +139814,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -139584,7 +139969,7 @@ genera:
     described: 1954
   Thescelosaurus:
     genus: Thescelosaurus
-    parent: Clypeodonta
+    parent: Thescelosaurinae
     pronunciation:
       phonetic: THESS-el-oh-sore-us
       ipa: /ˌθɛsɪləˈsɔːrəs/
@@ -139755,9 +140140,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
-      - Cerapoda
-      - Ornithopoda
-      - Clypeodonta
+      - Neornithischia
+      - Thescelosauridae
+      - Thescelosaurinae
     authors: Gilmore, C. W.
     described: 1913
   Thespesius:
@@ -139842,9 +140227,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -140642,9 +141027,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
     authors: Cope, E. D.
     described: 1877
@@ -140805,9 +141190,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Elasmaria
     authors: Bandeira, K. L. N.; Navarro, B. A.; Pêgas, R. V.; Brilhante, N. S.; Brum, A. S.; de Souza, L. G.; da Silva, R. C.; Gallo, V.
@@ -141117,6 +141502,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -141454,9 +141840,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -142150,6 +142536,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -142479,9 +142866,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -142680,9 +143067,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Rhabdodontomorpha
     authors: Augustin, F. J.; Bastiaans, D.; Dumbravă, M. D.; Csiki-Sava, Z.
@@ -143094,6 +143481,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -143490,9 +143878,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Elasmaria
     authors: Coria, R. A.; Moly, J. J.; Reguero, M.; Santillana, S.; Marenssi, S.
@@ -144022,9 +144410,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -144421,6 +144809,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -144644,6 +145033,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Pachycephalosauria
@@ -145392,6 +145782,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -146059,6 +146450,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -146464,6 +146856,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -146794,6 +147187,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -147149,9 +147543,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Dryosauridae
@@ -147556,6 +147950,12 @@ genera:
     pronunciation:
       phonetic: VEK-tee-DROH-me-us
     description: Vectidromeus is an extinct genus of hypsilophodontid ornithopod dinosaur from the Early Cretaceous Wessex Formation of England. The genus contains a single species, V. insularis, known from a partial skeleton belonging to a juvenile individual.
+    dispute:
+      summary: |
+        Vectidromeus was assigned to Hypsilophodontidae as the sister taxon of Hypsilophodon by Longrich and others (2024) on the basis of morphological comparison; no cladistic analysis was performed, and the holotype is a juvenile.
+      history:
+        - date: 2026-06-29
+          note: Placed at Hypsilophodontidae following Longrich and others (2024); the assignment rests on morphological comparison rather than a phylogenetic analysis.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -147632,9 +148032,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Hypsilophodontidae
     authors: Longrich, N. R.; Martill, D. M.; Munt, M.; Green, M.; Penn, M.; Smith, S.
     described: 2024
@@ -147939,9 +148339,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -149573,6 +149973,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Pachycephalosauria
@@ -149585,6 +149986,12 @@ genera:
       phonetic: wee-WORR-uh-SAWR-us
     etymology: Named after the Wee Warra geologic locality near Lightning Ridge, New South Wales, Australia, where the fossil was found, plus Greek sauros ('lizard')
     description: Weewarrasaurus is a genus of ornithopod dinosaur from the Late Cretaceous of the Griman Creek Formation near Lightning Ridge, in New South Wales, Australia. The type and only species is W. pobeni, known from the holotype, an isolated dentary preserved in opal, as well as a secondary referred dentary. It is thought to have co-existed with multiple other ornithopods of different sizes and lineages.
+    dispute:
+      summary: |
+        Weewarrasaurus is a basal ornithopod whose describers (Bell and others, 2018) recovered it in a polyphyletic group among taxa classically considered elasmarian, without a stable position. A close affinity with Elasmaria is plausible but unconfirmed.
+      history:
+        - date: 2026-06-29
+          note: Placed at Ornithopoda incertae sedis following Bell and others (2018) (P2); possible elasmarian affinity unresolved.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -149655,6 +150062,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
     authors: Bell, P. R.; Herne, M. C.; Brougham, T.; Smith, E. T.
@@ -149842,6 +150250,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -150041,9 +150450,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -150357,9 +150766,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -150790,6 +151199,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -152689,6 +153099,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -152889,9 +153300,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -153017,6 +153428,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -153211,9 +153623,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -153424,6 +153836,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Neornithischia
     authors: He, X.
     described: 1979
@@ -153718,6 +154131,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -154100,6 +154514,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -154854,7 +155269,7 @@ genera:
     described: 2025
   Yueosaurus:
     genus: Yueosaurus
-    parent: Neornithischia
+    parent: Jeholosauridae
     etymology: Named for 'Yue', the ancient name for Zhejiang Province, China, combined with Greek 'sauros' meaning 'lizard'.
     pronunciation:
       phonetic: yoo-SOR-us
@@ -154865,6 +155280,8 @@ genera:
       history:
         - date: 2026-06-29
           note: Reparented from Iguanodontia to Neornithischia incertae sedis following Boyd (2015) and Jones (2026); finer (jeholosaurid) placement deferred to the Neornithischia pass (P2).
+        - date: 2026-06-29
+          note: Placed at Jeholosauridae (with Jeholosaurus) following Boyd (2015), Madzia and others (2018), Manitkoon and others (2023), and Jones (2026) (P3); Fonseca and others (2024) instead place Jeholosaurus in Thescelosaurinae, rendering Jeholosauridae inapplicable.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -154951,7 +155368,9 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Neornithischia
+      - Jeholosauridae
     authors: Zheng, W.; Jin, X.; Shibata, M.; Azuma, Y.; Yu, F.
     described: 2012
   Yulong:
@@ -155160,9 +155579,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -155987,9 +156406,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Rhabdodontomorpha
       - Rhabdodontidae
@@ -156527,6 +156946,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Pachycephalosauria
@@ -156715,6 +157135,7 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
+      - Genasauria
       - Neornithischia
       - Thescelosauridae
       - Orodrominae
@@ -156814,9 +157235,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
@@ -157417,6 +157838,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -158021,6 +158443,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Marginocephalia
       - Ceratopsia
@@ -158221,9 +158644,9 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
       - Cerapoda
       - Ornithopoda
-      - Clypeodonta
       - Iguanodontia
       - Dryomorpha
       - Ankylopollexia
