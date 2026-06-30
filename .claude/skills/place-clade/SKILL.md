@@ -38,7 +38,13 @@ Apply these at every placement decision; they are the spine of the whole pass.
   *named* clade that is uncontested and a useful node. Family-level by default;
   subfamily only when stable AND ≥2 genera (or a strongly distinct lineage);
   never manufacture a monotypic node — stop one level up. (Pilot precedent:
-  kept family + subfamily, dropped tribes and Nanotyrannidae.)
+  kept family + subfamily, dropped tribes and Nanotyrannidae.) **Drop any clade
+  whose entire subtree contains zero member genera** — a clade is justified only
+  if at least one genus is parented somewhere within it (pure backbone nodes like
+  Genasauria are fine because their subtree is full of genera; the target is
+  truly empty nodes, e.g. an Anchisauria left empty after its only contents were
+  reparented) (`feedback_drop_empty_clades`). Do not mass-delete empty nodes
+  outside the batch's scope without asking the user.
 - **P5 — Reflect ≠ adopt.** A bold, well-evidenced single study is always
   *reflected* (a `dispute:` note, maybe a conservative `parent:` move) but only
   *adopted* as `parent:` when it rests on genuinely new evidence, has no
@@ -144,6 +150,32 @@ literature (Step 4). Summarize the triage to the user: which members look
 consistent vs need-review vs disputed, the candidate clades, and the
 **papers-needed list**.
 
+**Every `papers_to_chase` entry is an UNVERIFIED guess, never a citation.**
+The triage agent reads prose and produces two distinct kinds of bad entry, which
+you must tell apart before acting on either (`feedback_triage_paper_keys_unverified`):
+
+- **Confabulated** — the agent invented an author/year that the Wikipedia article
+  does not actually cite (it pattern-matched a claim to a plausible-sounding paper
+  from its own prior). Test: grep the cached article text for the surname — if the
+  article never names that author, and Crossref/OpenAlex have no such paper on the
+  topic, it is confabulation. **Discard it; do not chase it and do not treat it as
+  covered.** (Diplodocoidea lesson: a "Mannion et al. 2019" rebbachisaurid-subfamily
+  revision — the Rebbachisauridae article contains no "Mannion" at all; the real
+  citations were Bonaparte 1997, Whitlock 2011, Fanti 2015.)
+- **Real but key-colliding** — the article really does cite that author+year, and a
+  real paper exists, but the corpus key for that author+year is already taken by a
+  *different* real paper. Test: the article text names the author and a DOI lookup
+  returns a real on-topic paper whose DOI ≠ the corpus file's. This is a genuine
+  **sourcing gap**, not a covered paper — fetch it under a disambiguated key (Step 3).
+  (Diplodocoidea lesson: the Agustinia article cites a real "Bellardini et al. 2022"
+  redescription of *Agustinia ligabuei* — `10.1080/08912963.2022.2142911` — distinct
+  from the corpus `bellardini2022`, which is the *Ligabuesaurus* paper.)
+
+So for every decision-relevant `papers_to_chase` entry, resolve it against (a) the
+cached article's actual reference text and (b) a Crossref/OpenAlex DOI lookup — then
+classify it confabulated (discard) or real (fetch under the right key). Never carry a
+bare author+year forward on trust.
+
 ## Step 3 — Literature-sourcing pause (first-class)
 
 Sourcing pauses are part of the process, not a failure. Build the
@@ -163,6 +195,50 @@ once you have confirmed none of the existing splits is it
 (`feedback_bootstrap_key_check`, `feedback_hyphenated_surname_keys`,
 `feedback_author_spelling`).
 
+**A corpus `HAVE` is NOT confirmation — it is the START of a check, never the end.**
+`[ -f .../<key>.md ]` proves only that a file exists under that name; it says
+nothing about which paper or which taxon it actually is. The single rule that
+prevents the "I assumed `<key>` was the right paper" failure:
+
+> **Before you write the word "covered", "in corpus", or "HAVE" about any paper
+> — to the user, in a list, or in your own plan — you must have READ that file's
+> title in this run and confirmed it names the expected taxon/topic.** No title
+> read = the paper's status is *unknown*, not *covered*. This title-check is
+> mandatory HERE, at list-building time, and is not deferred to Step 4. (Step 4
+> repeats it as a backstop; it is not the first place it happens.)
+
+Two reasons a `HAVE` lies, both of which bit the Diplodocoidea batch:
+
+- **One author+year, many papers.** A surname+year routinely maps to several
+  distinct real papers; the corpus stores them under suffixed keys, but the *bare*
+  key is claimed by whichever was filed first. So a `HAVE` under a triage-guessed
+  `author<year>` may be a *different real paper* than the one you need — e.g.
+  `bellardini2022` is the *Ligabuesaurus* osteology, while the *Agustinia ligabuei*
+  redescription you actually want is a separate Bellardini 2022 that needs a
+  disambiguated key (`bellardini2022a`). When the wanted paper is real but its bare
+  key is taken, that is a **sourcing gap**, not a covered paper — add it to the
+  fetch list under the suffixed key, with its DOI.
+- **The guessed paper does not exist.** A confabulated triage key (`mannion2019`
+  for a rebbachisaurid revision that was never written) may *collide* with a real,
+  unrelated corpus paper of the same key (the Tendaguru-titanosaur `mannion2019`).
+  The title-check reveals the mismatch; the right move is to **drop it** (it answers
+  no question for this clade), not to substitute the unrelated paper.
+
+Resolve each entry by DOI, not by author+year string. Verify a paper's existence
+and identity with a Crossref/OpenAlex DOI lookup (and the cached article's actual
+reference text) rather than trusting that `<surname><year>.md` is the paper the
+triage meant (`feedback_corpus_key_collision`, `feedback_verify_against_corpus`).
+
+**When you resolve a DOI, read the FULL returned title, never a truncated
+preview.** Crossref/OpenAlex list views truncate titles, and a truncated title is
+a title-check you have not actually done — "Osteological revision of the holotype
+of the Middle Jurassic sau…" reads as your Cetiosauriscus paper but resolves to a
+*Patagosaurus* revision. Fetch the full title (e.g. query the DOI directly, or
+read the untruncated `title` field) and confirm it names the expected taxon before
+you record the DOI or treat the paper as covered. The Step 4 EXTRACTION FAILED
+backstop will still catch a mismatch, but a truncated-title slip is cheaper to
+avoid here.
+
 **Hard stop.** Give the user the list of phylogeny papers to fetch into
 `$OPEN_PALEO_PAPERS_DIR/markdown/<key>.md` (clade-naming papers, recent
 total-evidence / dedicated phylogenetic analyses, any redescription that
@@ -170,8 +246,14 @@ re-scores the disputed taxa). Mention they can lean on Wikipedia taxoboxes or
 OpenAlex to find candidates. Wait for the user to say which landed.
 
 If a needed paper is unobtainable, park the affected genus/clade at the
-least-inclusive uncontested node + a `dispute:` flag and note the gap — never
-fabricate a placement (`feedback_no_seeding_from_recall`).
+least-inclusive uncontested node + a `dispute:` flag — never fabricate a
+placement (`feedback_no_seeding_from_recall`). The `dispute:` field states only
+the **published** scientific debate (who argues what, citing real papers); it
+must **never** record that a paper was unobtainable or otherwise reference local
+sourcing state — that is a local-machine convention with no place in committed
+repo data. Note the sourcing gap in the workflow tracker / your message to the
+user instead (`feedback_no_sourcing_gap_in_dispute`,
+`feedback_no_process_notes_in_references`, `feedback_no_corpus_reference_in_data`).
 
 ## Step 4 — Firewalled phylogeny review
 
@@ -253,14 +335,18 @@ boundary (rare) checks against both.
 
 **Run Jones AFTER the Step 4 review agents return, not in parallel — it is a
 cross-check, so it should react to the primary findings.** Wait for the
-dedicated-analysis JSON, pull out the *contested* claims (surprises, clade
-moves, taxa ejected from the clade, synonymies, anything where the analyses
-disagree with each other or with the current tree), then dispatch a firewalled
-Jones agent that is GIVEN those specific claims and asked to **confirm /
-dispute / call nuanced-or-silent** each one against the Jones text, with a
-grounding quote. (A blind "where does Jones place each taxon?" pass is an
-acceptable fallback for the uncontested bulk, but the adjudication of the
-contested claims is the point.) Use Jones as a **sanity signal** on the
+dedicated-analysis JSON, then dispatch a firewalled Jones agent that covers the
+**ENTIRE member set — every genus and sub-clade in the batch gets a Jones
+verdict**, not just the contested ones. For each taxon, ask Jones where it
+places it / what status it gives it. ON TOP OF that full pass, single out the
+*contested* claims (surprises, clade moves, taxa ejected from the clade,
+synonymies, anything where the analyses disagree with each other or with the
+current tree) and have Jones explicitly **confirm / dispute / call
+nuanced-or-silent** each, with a grounding quote — the contested adjudication is
+the sharpest output, but it does not replace the full-set coverage (every
+placement deserves the cross-check, and a "silent" verdict on a taxon is itself
+useful signal). For a large batch, split the full set across more than one Jones
+agent rather than dropping taxa. Use Jones as a **sanity signal** on the
 prevailing view (P3), never as the deciding source. Where Jones and the primary
 analyses disagree, the primary analyses win and the disagreement is dispute
 material.
@@ -291,8 +377,19 @@ Synthesize the review JSON into a placement decision, in the main thread:
 - **Naming authorities for each kept clade.** `erected_in` = the
   nomenclatural-act paper; `described_in` = the authoritative descriptive/
   diagnostic source if different; `type_genus` for rank-based names, **omitted**
-  for unranked clades (e.g. Eutyrannosauria). Wikipedia taxoboxes are the fast
-  way to find the erecting authority; confirm the key/title in the bib.
+  for unranked clades (e.g. Eutyrannosauria). **Take old family-group authorities
+  from the literature, not from recall or a Wikipedia taxobox** — they are
+  routinely misremembered. The reliable source is the *reference lists* of the
+  corpus papers that cite them: dispatch a firewalled agent to extract the
+  verbatim citation (authors, year, title, journal, volume, pages) from the
+  bibliographies of the phylogeny papers you already reviewed, and cross-check
+  the year across more than one of them. (Diplodocoidea lesson: Dicraeosauridae
+  AND Apatosaurinae are both **Huene, 1927** — not Janensch 1914/1929 as recall
+  and the triage assumed; Diplodocimorpha is Calvo and Salgado, 1995, defined by
+  Taylor and Naish, 2005.) A Wikipedia taxobox or your prior is at most a hint to
+  verify against the reference lists, never the citation of record. For DOIs of
+  the authority papers, look them up by full title in Crossref/OpenAlex; many
+  pre-DOI classics are legitimately citation-only.
 
 Present the full plan to the user — surviving structure, per-genus parents,
 disputes, deferrals, and the clade authorities — and wait for sign-off before
@@ -330,7 +427,23 @@ Per-clade **reset-and-rebuild**, not a big-bang flatten. Once the user approves:
    Clade `authors`/`year` are **build-derived** from `erected_in` — never write
    them in source. Both `erected_in` and `described_in` must resolve to a
    reference `id` present in that same clade file (the validator's "Clade
-   reference integrity" check enforces this).
+   reference integrity" check enforces this). Old clade files predate the
+   migration and may carry legacy `described:`/`authors:` fields — delete those
+   when you rebuild.
+
+   **Before authoring any `references:` entry, check whether the paper already
+   exists in the repo under a key, and REUSE it.** Grep `clades/` and `genera/`
+   for the author+year (including suffixed variants `<author><year>a/b/c` and
+   diacritic spellings) — `grep -rl "id: <author><year>" clades genera`. If the
+   paper is already keyed, copy its **canonical** `authors`/`title`/`journal`/
+   `volume`/`pages` string verbatim (only the `notes:` may differ per context)
+   and use that existing id; do NOT mint a fresh bare key. A bare `huene1927`
+   authored next to an existing `huene1927c` is both a duplicate of the same
+   paper and a disambiguation error the validator rejects — and `huene1927c` was
+   already the exact Sichtung-1927 paper this batch needed. New key only when no
+   existing entry is the paper, and then with the right suffix
+   (`feedback_bootstrap_key_check`, `project_reference_conventions`,
+   `feedback_hyphenated_surname_keys`).
 3. **Member genus YAMLs** — set each `parent:` to its keystone clade. Add
    `dispute:` only to contested genera:
 
