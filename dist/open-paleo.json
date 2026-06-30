@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-06-30T19:00:08.339Z",
+    "built_at": "2026-06-30T20:38:14.228Z",
     "clade_count": 214,
     "genus_count": 1398,
     "license": "CC-BY-4.0",
@@ -1225,7 +1225,7 @@
       ]
     },
     "Brachiosauridae": {
-      "description": "Brachiosauridae is a family of macronarian sauropod dinosaurs known from the Late Jurassic to Early Cretaceous of North America, Africa, Europe, and possibly South America. Brachiosaurids are distinguished by their unusual body proportions, with forelimbs longer than or subequal to hindlimbs, giving them a distinctive giraffe-like elevated posture. This configuration allowed them to browse at greater heights than most other sauropods. Notable members include Brachiosaurus and Giraffatitan.\n",
+      "description": "Brachiosauridae is a family of titanosauriform sauropods defined as all taxa more closely related to Brachiosaurus than to Saltasaurus, known from the Late Jurassic to the mid-Cretaceous of North America, Africa, and Europe. Brachiosaurids are distinguished by their unusual proportions, with forelimbs longer than or subequal to the hindlimbs, producing a giraffe-like, elevated posture suited to high browsing. The family forms a largely Late Jurassic grade of basal members (Europasaurus, Vouivria, Brachiosaurus) leading to a clade of Cretaceous forms including Giraffatitan and the North American Cedarosaurus and Venenosaurus.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -1250,25 +1250,26 @@
         "Titanosauriformes",
         "Brachiosauridae"
       ],
-      "described": 1903,
-      "authors": "Riggs",
+      "type_genus": "Brachiosaurus",
+      "described": 1904,
+      "authors": "Riggs, E. S.",
       "diagnostic_features": [
-        "Forelimbs longer than or subequal in length to hindlimbs",
-        "Elevated, giraffe-like body posture with the shoulders higher than the hips",
-        "Elongated humerus exceeding femoral length",
-        "Highly elevated narial region on the skull",
-        "Spatulate teeth arranged along the full extent of the jaw margins",
-        "Relatively short tail compared to other sauropods"
+        "Forelimbs longer than or subequal in length to the hindlimbs",
+        "Humerus elongate, exceeding or approaching femoral length",
+        "Highly elevated, arched narial region on the skull",
+        "Spatulate teeth distributed along the full extent of the jaw margins",
+        "Coracoid with a quadrangular outline",
+        "Relatively short tail compared with other macronarians"
       ],
       "references": [
         {
-          "id": "riggs1903",
-          "authors": "Riggs, E.S.",
-          "year": 1903,
-          "title": "Brachiosaurus altithorax, the largest known dinosaur",
-          "journal": "American Journal of Science",
-          "volume": "15",
-          "pages": "299-306"
+          "id": "riggs1904",
+          "authors": "Riggs, E. S.",
+          "year": 1904,
+          "title": "Structure and relationships of opisthocoelian dinosaurs. Part II, the Brachiosauridae",
+          "journal": "Field Columbian Museum, Geological Series",
+          "volume": "2",
+          "pages": "229-247"
         }
       ]
     },
@@ -1338,6 +1339,7 @@
       ]
     },
     "Camarasauridae": {
+      "description": "Camarasauridae is a family of basal macronarian sauropods defined as all taxa more closely related to Camarasaurus than to Saltasaurus. Best known from the Late Jurassic Morrison Formation of North America, the family also includes the Portuguese Lourinhasaurus, with which Camarasaurus forms a clade in recent analyses. Camarasaurids were robustly built, medium-sized sauropods with deep, arched skulls and stout, spatulate teeth distributed along the jaw margins.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -1361,9 +1363,31 @@
         "Macronaria",
         "Camarasauromorpha",
         "Camarasauridae"
+      ],
+      "type_genus": "Camarasaurus",
+      "described": 1877,
+      "authors": "Cope, E. D.",
+      "diagnostic_features": [
+        "Deep, dorsoventrally tall snout with a steeply inclined premaxillary margin",
+        "Stout, spoon-shaped teeth with broad crowns",
+        "Cervical vertebrae with deeply excavated, chambered pleurocoels",
+        "Anterior dorsal neural spines bifurcate",
+        "Relatively short cervical series compared with other macronarians"
+      ],
+      "references": [
+        {
+          "id": "cope1877b",
+          "authors": "Cope, E. D.",
+          "year": 1877,
+          "title": "On a gigantic saurian from the Dakota epoch of Colorado",
+          "journal": "Paleontological Bulletin",
+          "volume": "25",
+          "pages": "5-10"
+        }
       ]
     },
     "Camarasauromorpha": {
+      "description": "Camarasauromorpha is a node-based clade of macronarian sauropods comprising the most recent common ancestor of Camarasaurus and the titanosaurs, together with all of its descendants. It unites the Late Jurassic Camarasauridae with Titanosauriformes (brachiosaurids plus somphospondylans) and includes a number of basal forms whose finer placement remains unresolved. The clade marks the macronarian transition toward the broad-toothed, robustly built body plan that dominated the Cretaceous.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -1386,6 +1410,25 @@
         "Neosauropoda",
         "Macronaria",
         "Camarasauromorpha"
+      ],
+      "described": 1997,
+      "authors": "Salgado, L.; Coria, R. A.; Calvo, J. O.",
+      "diagnostic_features": [
+        "Opisthocoelous dorsal vertebral centra",
+        "Reduced or absent posterior centroparapophyseal lamina in the middle and posterior dorsal vertebrae",
+        "Proximal end of the radius subtriangular in outline",
+        "Expanded, plate-like sternal elements"
+      ],
+      "references": [
+        {
+          "id": "salgado1997",
+          "authors": "Salgado, L.; Coria, R. A.; Calvo, J. O.",
+          "year": 1997,
+          "title": "Evolution of titanosaurid sauropods. I: phylogenetic analysis based on the postcranial evidence",
+          "journal": "Ameghiniana",
+          "volume": "34",
+          "pages": "3-32"
+        }
       ]
     },
     "Carcharodontosauria": {
@@ -2399,6 +2442,7 @@
       ]
     },
     "Diamantinasauria": {
+      "description": "Diamantinasauria is a clade of somphospondylan titanosauriforms erected for the Australian Diamantinasaurus and Savannasaurus and their close relatives, including the Argentine Sarmientosaurus. Members are medium to large sauropods of the mid-Cretaceous of Gondwana, characterized by a distinctive D-shaped sternal plate and features of the braincase and appendicular skeleton. The clade is recovered by the most recent dedicated analyses as the sister group to Titanosauria, just outside that clade, marking it as one of the most derived non-titanosaurian somphospondylan lineages.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -2423,6 +2467,27 @@
         "Titanosauriformes",
         "Somphospondyli",
         "Diamantinasauria"
+      ],
+      "described": 2021,
+      "authors": "Poropat, S. F.; Kundrát, M.; Mannion, P. D.; Upchurch, P.; Tischler, T. R.; Elliott, D. A.",
+      "diagnostic_features": [
+        "Sternal plate D-shaped rather than reniform",
+        "Absence of hyposphene-hypantrum articulations throughout the dorsal series",
+        "Confluence of the spinopostzygapophyseal and centropostzygapophyseal fossae owing to loss of the intrapostzygapophyseal lamina",
+        "Scapular blade bearing a fossa and a tuberosity on its medial surface near the acromion",
+        "Ulna with a prominent interosseous ridge on the distal anterior surface"
+      ],
+      "references": [
+        {
+          "id": "poropat2021",
+          "authors": "Poropat, S. F.; Kundrát, M.; Mannion, P. D.; Upchurch, P.; Tischler, T. R.; Elliott, D. A.",
+          "year": 2021,
+          "title": "Second specimen of the Late Cretaceous Australian sauropod dinosaur Diamantinasaurus matildae provides new anatomical information on the skull and neck of early titanosaurs",
+          "journal": "Zoological Journal of the Linnean Society",
+          "volume": "192",
+          "pages": "610-674",
+          "doi": "10.1093/zoolinnean/zlaa173"
+        }
       ]
     },
     "Dicraeosauridae": {
@@ -3126,6 +3191,7 @@
       ]
     },
     "Euhelopodidae": {
+      "description": "Euhelopodidae is a clade of somphospondylan titanosauriforms largely restricted to the Early Cretaceous of eastern Asia, recovered by most recent analyses as an early-diverging group within Somphospondyli, roughly sister to Titanosauria. The name dates to Romer's grouping of Euhelopus with various East Asian sauropods, but the modern clade was given a phylogenetic definition by D'Emic as all taxa closer to Euhelopus than to Neuquensaurus. Its core membership (Euhelopus, Erketu, Qiaowanlong, Gobititan, Phuwiangosaurus, and Tangvayosaurus) is reasonably stable, though the placement of several fragmentary Chinese taxa fluctuates between this clade and basal Titanosauria.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -3150,6 +3216,36 @@
         "Titanosauriformes",
         "Somphospondyli",
         "Euhelopodidae"
+      ],
+      "type_genus": "Euhelopus",
+      "described": 1956,
+      "authors": "Romer, A. S.",
+      "diagnostic_features": [
+        "Bifid (bifurcated) neural spines on the anterior cervical vertebrae",
+        "Thick, subhorizontal epipophyseal-prezygapophyseal lamina dividing the spinodiapophyseal fossa",
+        "Pendant, posteriorly projecting cervical ribs",
+        "Elongate cervical centra with strongly developed pneumatic excavations"
+      ],
+      "references": [
+        {
+          "id": "romer1956",
+          "authors": "Romer, A. S.",
+          "year": 1956,
+          "title": "Osteology of the Reptiles",
+          "publisher": "University of Chicago Press",
+          "pages": "772 pp",
+          "notes": "Renamed Helopus zdanskyi Wiman, 1929 to Euhelopus zdanskyi because Helopus was preoccupied; the name Euhelopodidae derives from this genus."
+        },
+        {
+          "id": "demic2012b",
+          "authors": "D'Emic, M. D.",
+          "year": 2012,
+          "title": "The early evolution of titanosauriform sauropod dinosaurs",
+          "journal": "Zoological Journal of the Linnean Society",
+          "volume": "166",
+          "pages": "624-671",
+          "doi": "10.1111/j.1096-3642.2012.00853.x"
+        }
       ]
     },
     "Eusauropoda": {
@@ -4464,7 +4560,7 @@
       ]
     },
     "Macronaria": {
-      "description": "Macronaria, meaning \"large nostrils,\" is a clade of neosauropod dinosaurs characterized by large nasal openings (external nares) that are typically larger than the orbits. The clade includes brachiosaurids, titanosaurs, and their relatives, and was particularly diverse and dominant during the Cretaceous period. Macronarians tended to have more robust, box-like skulls with spatulate teeth, in contrast to the elongate skulls and peg-like teeth of diplodocoids.\n",
+      "description": "Macronaria, meaning \"large nostrils,\" is a clade of neosauropod dinosaurs defined as all sauropods more closely related to Saltasaurus than to Diplodocus. It is the sister group to Diplodocoidea within Neosauropoda and encompasses the basal camarasauromorphs, brachiosaurids, and the titanosaurs, becoming the dominant sauropod radiation of the Cretaceous. Macronarians are characterized by enlarged external nares and box-like skulls bearing broad, spatulate teeth, in contrast to the elongate skulls and peg-like teeth of diplodocoids.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -4487,10 +4583,10 @@
         "Neosauropoda",
         "Macronaria"
       ],
-      "described": 1995,
-      "authors": "Wilson & Sereno",
+      "described": 1998,
+      "authors": "Wilson, J. A.; Sereno, P. C.",
       "diagnostic_features": [
-        "Enlarged external nares larger than the orbit",
+        "Enlarged external nares, typically larger than the orbit",
         "Spatulate (spoon-shaped) teeth",
         "Box-like, dorsoventrally deep skull",
         "Opisthocoelous anterior caudal vertebrae",
@@ -4499,12 +4595,13 @@
       "references": [
         {
           "id": "wilsonsereno1998",
-          "authors": "Wilson, J.A. & Sereno, P.C.",
+          "authors": "Wilson, J. A.; Sereno, P. C.",
           "year": 1998,
           "title": "Early evolution and higher-level phylogeny of sauropod dinosaurs",
-          "journal": "Society of Vertebrate Paleontology Memoir",
+          "journal": "Memoir (Society of Vertebrate Paleontology)",
           "volume": "5",
-          "pages": "1-68"
+          "pages": "1-68",
+          "doi": "10.2307/3889325"
         }
       ]
     },
@@ -7020,6 +7117,7 @@
       ]
     },
     "Somphospondyli": {
+      "description": "Somphospondyli is a clade of titanosauriform sauropods defined as all taxa more closely related to Saltasaurus than to Brachiosaurus, and is the sister group to Brachiosauridae within Titanosauriformes. It contains the diverse, largely Cretaceous Titanosauria together with a paraphyletic array of basal, non-titanosaurian forms and the East Asian clade Euhelopodidae. The group is named for its characteristically spongy, camellate internal bone tissue, which pervaded the presacral and sometimes the caudal vertebrae.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -7043,6 +7141,27 @@
         "Macronaria",
         "Titanosauriformes",
         "Somphospondyli"
+      ],
+      "described": 1998,
+      "authors": "Wilson, J. A.; Sereno, P. C.",
+      "diagnostic_features": [
+        "Spongy (somphospondylous) camellate internal tissue throughout the presacral vertebrae",
+        "Six sacral vertebrae",
+        "Convex anterior articular surfaces on at least the proximal caudal centra",
+        "Cervical vertebrae with reduced or absent pleurocoel-dividing laminae",
+        "Sternal plates with a crescentic (reniform) outline in many members"
+      ],
+      "references": [
+        {
+          "id": "wilsonsereno1998",
+          "authors": "Wilson, J. A.; Sereno, P. C.",
+          "year": 1998,
+          "title": "Early evolution and higher-level phylogeny of sauropod dinosaurs",
+          "journal": "Memoir (Society of Vertebrate Paleontology)",
+          "volume": "5",
+          "pages": "1-68",
+          "doi": "10.2307/3889325"
+        }
       ]
     },
     "Spinosauridae": {
@@ -7776,6 +7895,7 @@
       ]
     },
     "Titanosauriformes": {
+      "description": "Titanosauriformes is a clade of macronarian sauropods defined as the least inclusive group containing Brachiosaurus and Saltasaurus, and comprising the two sister lineages Brachiosauridae and Somphospondyli. The clade originated in the Late Jurassic and persisted to the end of the Cretaceous, achieving a global distribution and including the largest known terrestrial animals. Titanosauriforms are united by features of the vertebrae and limb girdles, many fragmentary basal members being assignable no more precisely than to this node.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -7798,6 +7918,26 @@
         "Neosauropoda",
         "Macronaria",
         "Titanosauriformes"
+      ],
+      "described": 1997,
+      "authors": "Salgado, L.; Coria, R. A.; Calvo, J. O.",
+      "diagnostic_features": [
+        "Camellate (somphospondylous) internal tissue in the presacral vertebrae",
+        "Anterior caudal vertebrae with the neural arch placed on the anterior half of the centrum",
+        "Biconvex or procoelous distalmost caudal vertebrae in many members",
+        "Reduced olecranon process of the ulna",
+        "Femur with a prominent lateral bulge below the greater trochanter"
+      ],
+      "references": [
+        {
+          "id": "salgado1997",
+          "authors": "Salgado, L.; Coria, R. A.; Calvo, J. O.",
+          "year": 1997,
+          "title": "Evolution of titanosaurid sauropods. I: phylogenetic analysis based on the postcranial evidence",
+          "journal": "Ameghiniana",
+          "volume": "34",
+          "pages": "3-32"
+        }
       ]
     },
     "Troodontidae": {
@@ -10377,7 +10517,7 @@
             "by": "Michael D. D'Emic"
           },
           "references": [
-            "demic2012"
+            "demic2012a"
           ]
         }
       ],
@@ -10415,7 +10555,7 @@
           "pages": "207-246"
         },
         {
-          "id": "demic2012",
+          "id": "demic2012a",
           "authors": "D'Emic, M. D.; Melstrom, K. M.; Eddy, D. R.",
           "year": 2012,
           "title": "Paleobiology and geographic range of the large-bodied Cretaceous theropod dinosaur Acrocanthosaurus atokensis",
@@ -28446,7 +28586,16 @@
     },
     "Atlasaurus": {
       "genus": "Atlasaurus",
-      "parent": "Macronaria",
+      "parent": "Eusauropoda",
+      "dispute": {
+        "summary": "The affinities of Atlasaurus are contested. The dedicated titanosauriform analyses of D'Emic (2012) and Mannion et al. (2013, 2017) recover it as a non-neosauropod eusauropod, outside Macronaria, whereas Moore et al. (2020) recover it as a basal macronarian, Royo-Torres et al. (2020) as a brachiosaurid, and Jones (2026) retains it within Camarasauromorpha.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Moved from Macronaria to Eusauropoda following the dedicated titanosauriform analyses that place it outside Neosauropoda; finer placement is deferred to the eusauropod and turiasaur reconciliation.\n"
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "AT-luh-SAWR-us"
       },
@@ -28584,9 +28733,7 @@
         "Sauropodiformes",
         "Sauropoda",
         "Gravisauria",
-        "Eusauropoda",
-        "Neosauropoda",
-        "Macronaria"
+        "Eusauropoda"
       ],
       "authors": "Monbaron, M.; Russell, D. A.; Taquet, P.",
       "described": 1999
@@ -29433,6 +29580,15 @@
     "Australodocus": {
       "genus": "Australodocus",
       "parent": "Somphospondyli",
+      "dispute": {
+        "summary": "Originally described as a diplodocid (Remes, 2007), Australodocus is now regarded as a non-titanosaurian titanosauriform (Whitlock, 2011; Mannion et al., 2019). Mannion et al. (2019) recover it as a somphospondylan close to Euhelopodidae under equal weights but within Brachiosauridae under implied weights, and favor a somphospondylan identity.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Somphospondyli following Mannion et al. (2019); the brachiosaurid and euhelopodid alternatives are noted.\n"
+          }
+        ]
+      },
       "etymology": "From Latin australis meaning 'southern' + Greek dokos (δοκός) meaning 'beam'; overall meaning 'southern beam', referring to its discovery in southern Tanzania.",
       "pronunciation": {
         "phonetic": "OSS-tra-luh-DOE-kus"
@@ -29574,7 +29730,16 @@
     },
     "Australotitan": {
       "genus": "Australotitan",
-      "parent": "Somphospondyli",
+      "parent": "Diamantinasauria",
+      "dispute": {
+        "summary": "Australotitan is recovered within Diamantinasauria, where Beeston et al. (2024) found insufficient autapomorphies to distinguish it from Diamantinasaurus and suggested it is probably a junior synonym of Diamantinasaurus matildae, retaining it conservatively as an indeterminate diamantinasaurian.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed in Diamantinasauria following Hocknull et al. (2021) and Beeston et al. (2024); its possible synonymy with Diamantinasaurus is noted.\n"
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "aw-STRAY-lo-TIE-tan",
         "ipa": "/ɔːˈstreɪloʊˈtaɪtən/"
@@ -29729,7 +29894,8 @@
         "Neosauropoda",
         "Macronaria",
         "Titanosauriformes",
-        "Somphospondyli"
+        "Somphospondyli",
+        "Diamantinasauria"
       ],
       "authors": "Hocknull, S. A.; Wilkinson, M.; Lawrence, R. A.; Konstantinov, V.; Mackenzie, S.; Mackenzie, R.",
       "described": 2021
@@ -35935,6 +36101,15 @@
     "Bicharracosaurus": {
       "genus": "Bicharracosaurus",
       "parent": "Macronaria",
+      "dispute": {
+        "summary": "Bicharracosaurus is recovered as a macronarian by its describers (Reutter et al., 2026), but its position oscillates between a basal macronarian, allied with Tehuelchesaurus and Janenschia, and a member of Brachiosauridae depending on the matrix and weighting scheme, and a brachiosaurid identity is considered possible.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Macronaria incertae sedis following Reutter et al. (2026); the unresolved brachiosaurid alternative is noted.\n"
+          }
+        ]
+      },
       "etymology": "From Spanish 'bicharraco' (informal term for 'big animal', used by discoverer Dionide Mesa to refer to the large size of the fossils) and Greek 'sauros' meaning 'lizard'.",
       "pronunciation": {
         "phonetic": "bee-chah-RAH-koh-SOR-us"
@@ -58114,7 +58289,16 @@
     },
     "Daxiatitan": {
       "genus": "Daxiatitan",
-      "parent": "Euhelopodidae",
+      "parent": "Somphospondyli",
+      "dispute": {
+        "summary": "Daxiatitan has been variously recovered as a non-titanosaurian somphospondylan (Mannion et al., 2019; Wang et al., 2021), a euhelopodid (D'Emic, 2012; Moore et al., 2020), and a basal titanosaur (Han et al., 2024; Jones, 2026), with its describers favoring a titanosaurian identity.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed conservatively at Somphospondyli given the unresolved euhelopodid versus titanosaurian debate; finer placement may be revisited in the Titanosauria pass.\n"
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "dah-SHYAH-TIE-tan"
       },
@@ -58251,8 +58435,7 @@
         "Neosauropoda",
         "Macronaria",
         "Titanosauriformes",
-        "Somphospondyli",
-        "Euhelopodidae"
+        "Somphospondyli"
       ],
       "authors": "You, H.-L.; Li, D.-Q.; L.-q. Zhou, Q. J.",
       "described": 2008
@@ -60640,7 +60823,7 @@
     },
     "Dinodocus": {
       "genus": "Dinodocus",
-      "parent": "Macronaria",
+      "parent": "Titanosauriformes",
       "etymology": "From Greek 'deinos' (terrible, fearfully great) and 'dokos' (beam); meaning 'terrible beam', a reference to the large size of the limb bones.",
       "pronunciation": {
         "phonetic": "die-NOD-o-kus"
@@ -60778,7 +60961,8 @@
         "Gravisauria",
         "Eusauropoda",
         "Neosauropoda",
-        "Macronaria"
+        "Macronaria",
+        "Titanosauriformes"
       ],
       "authors": "Owen, R.",
       "described": 1884
@@ -65512,7 +65696,16 @@
     },
     "Dzharatitanis": {
       "genus": "Dzharatitanis",
-      "parent": "Somphospondyli",
+      "parent": "Neosauropoda",
+      "dispute": {
+        "summary": "Dzharatitanis was described as a rebbachisaurid diplodocoid, the first reported from Asia (Averianov and Sues, 2021), but a subsequent reanalysis argued the holotype is more likely that of a titanosaur; the conflict remains unresolved (Jones, 2026).\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Moved out of Somphospondyli to Neosauropoda incertae sedis pending resolution of the rebbachisaurid versus titanosaurian debate; finer placement is deferred to the relevant backbone pass.\n"
+          }
+        ]
+      },
       "etymology": "From Dzharakuduk (the type locality in Uzbekistan) + Greek titan (giant): 'Dzharakuduk titan'.",
       "pronunciation": {
         "phonetic": "jah-ruh-tie-tan-iss"
@@ -65643,10 +65836,7 @@
         "Sauropoda",
         "Gravisauria",
         "Eusauropoda",
-        "Neosauropoda",
-        "Macronaria",
-        "Titanosauriformes",
-        "Somphospondyli"
+        "Neosauropoda"
       ],
       "authors": "Averianov, A.; Sues, H.-D.",
       "described": 2021
@@ -72245,6 +72435,15 @@
     "Europasaurus": {
       "genus": "Europasaurus",
       "parent": "Camarasauromorpha",
+      "dispute": {
+        "summary": "Europasaurus is consistently recovered as a basal macronarian, but its precise placement is disputed: the analyses of D'Emic (2012) and Mannion et al. (2013, 2017) recover it as the basalmost brachiosaurid, whereas Carballido and Sander (2014) and Sander et al. (2006) place it as a basal camarasauromorph outside both Camarasauridae and Brachiosauridae. Jones (2026) leaves the family-level placement open.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed conservatively at Camarasauromorpha, the least inclusive node both hypotheses share; the brachiosaurid alternative is noted.\n"
+          }
+        ]
+      },
       "etymology": "From Europa (Europe, named after the Phoenician princess in Greek mythology) + Greek sauros, 'lizard'; means 'Europe lizard', referring to its discovery in Germany",
       "description": "Europasaurus is a genus of dwarf sauropod dinosaur from the Late Jurassic Süntel Formation of Lower Saxony, Germany. The type and only species, Europasaurus holgeri, is notable for being among the smallest known adult sauropods, likely the result of insular dwarfism on the Late Jurassic European archipelago.",
       "diet": "herbivore",
@@ -75733,6 +75932,15 @@
     "Fushanosaurus": {
       "genus": "Fushanosaurus",
       "parent": "Titanosauriformes",
+      "dispute": {
+        "summary": "Fushanosaurus is known only from a single femur and was described as a gigantic titanosauriform (Wang et al., 2019). A subsequent reassessment of mamenchisaurid anatomy noted that its purported titanosauriform features are more broadly distributed among eusauropods, raising the possibility that it is a mamenchisaurid (Moore et al., 2023).\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Titanosauriformes incertae sedis following the original description; the mamenchisaurid alternative (Moore et al., 2023) is noted.\n"
+          }
+        ]
+      },
       "etymology": "Fushan lizard; named after the Fushan Museum in China where its remains are stored, combined with Greek sauros (lizard)",
       "pronunciation": {
         "phonetic": "foo-SHAN-o-SOR-us"
@@ -76744,12 +76952,21 @@
     },
     "Galvesaurus": {
       "genus": "Galvesaurus",
-      "parent": "Brachiosauridae",
+      "parent": "Titanosauriformes",
+      "dispute": {
+        "summary": "Galvesaurus has been recovered both as a non-neosauropod eusauropod within Turiasauria (Royo-Torres et al., 2006; Mocho et al., 2014) and as a basal titanosauriform or basal macronarian near the base of Titanosauriformes (Mannion et al., 2017; Perez-Pueyo et al., 2019; Jones, 2026). The more recent and dedicated analyses favor a basal titanosauriform position.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Moved from Brachiosauridae to Titanosauriformes incertae sedis following the recent consensus (Mannion et al., 2017; Perez-Pueyo et al., 2019; Jones, 2026); the turiasaurian alternative is noted.\n"
+          }
+        ]
+      },
       "etymology": "Galve lizard; named after Galve, the town in Spain where fossils were found, combined with Greek sauros (lizard)",
       "pronunciation": {
         "phonetic": "GAL-vay-SOR-us"
       },
-      "description": "Galvesaurus, or Galveosaurus (meaning \"Galve lizard\"), is a genus of brachiosaurid sauropod dinosaur from the Late Jurassic period. Fossils of the only known species, G. herreroi, were found in Galve, Spain, hence its generic name. The specific name herreroi honors the discoverer, José María Herrero. Some researchers suggest that the taxon might represent a junior synonym of the Portuguese genus Lusotitan.",
+      "description": "Galvesaurus, or Galveosaurus (meaning \"Galve lizard\"), is a genus of titanosauriform sauropod dinosaur from the Late Jurassic period. Fossils of the only known species, G. herreroi, were found in Galve, Spain, hence its generic name. The specific name herreroi honors the discoverer, José María Herrero. Some researchers suggest that the taxon might represent a junior synonym of the Portuguese genus Lusotitan.",
       "diet": "herbivore",
       "locomotion": "quadrupedal",
       "paleoenvironment": [
@@ -76885,8 +77102,7 @@
         "Eusauropoda",
         "Neosauropoda",
         "Macronaria",
-        "Titanosauriformes",
-        "Brachiosauridae"
+        "Titanosauriformes"
       ],
       "authors": "Barco, J. L.; Canudo, J. I.; G. Cuenca-Bescós, J. I. R.-O.",
       "described": 2005
@@ -77020,6 +77236,15 @@
     "Gannansaurus": {
       "genus": "Gannansaurus",
       "parent": "Somphospondyli",
+      "dispute": {
+        "summary": "Gannansaurus is known from very limited material and was placed within Somphospondyli, allied to Euhelopus, by its describers (Lu et al., 2013). Jones (2026), citing similar anatomy in later-described titanosaurs, instead considers it most likely a titanosaur.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed conservatively at Somphospondyli following the original description; the titanosaurian alternative (Jones, 2026) is noted.\n"
+          }
+        ]
+      },
       "etymology": "Gannan lizard; named after the Gannan region (Ganzhou Basin) of Jiangxi Province, China, combined with Greek sauros (lizard)",
       "pronunciation": {
         "phonetic": "ga-nan-SOR-us"
@@ -88690,7 +88915,16 @@
     },
     "Huabeisaurus": {
       "genus": "Huabeisaurus",
-      "parent": "Euhelopodidae",
+      "parent": "Somphospondyli",
+      "dispute": {
+        "summary": "Huabeisaurus has been recovered as a euhelopodid (D'Emic, 2012) but most recent analyses place it among the basalmost titanosaurs (Han et al., 2024; Jones, 2026).\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed conservatively at Somphospondyli given the unresolved euhelopodid versus basal titanosaur debate; finer placement may be revisited in the Titanosauria pass.\n"
+          }
+        ]
+      },
       "etymology": "Named for North China (Huabei, meaning 'north China' in Chinese) combined with Greek 'sauros' meaning 'lizard', hence 'North China lizard'.",
       "pronunciation": {
         "phonetic": "hwah-bay-SAWR-us",
@@ -88839,8 +89073,7 @@
         "Neosauropoda",
         "Macronaria",
         "Titanosauriformes",
-        "Somphospondyli",
-        "Euhelopodidae"
+        "Somphospondyli"
       ],
       "authors": "Pang, Q.; Cheng, Z.",
       "described": 2000
@@ -89388,6 +89621,15 @@
     "Huanghetitan": {
       "genus": "Huanghetitan",
       "parent": "Somphospondyli",
+      "dispute": {
+        "summary": "Phylogenetic analyses place the type species Huanghetitan liujiaxiaensis among the most derived non-titanosaurian somphospondylans (D'Emic, 2012; Mayer et al., 2026; Jones, 2026), although it has also been recovered as a basal titanosaur (Mannion et al., 2019). The referred species \"H.\" ruyangensis is widely regarded as generically distinct.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Somphospondyli following the majority of recent analyses; the basal titanosaur alternative is noted.\n"
+          }
+        ]
+      },
       "etymology": "Named for the Yellow River (Huanghe in Chinese) combined with 'titan' (giant), hence 'Yellow River titan'.",
       "pronunciation": {
         "phonetic": "HWANG-he-TIE-tuhn"
@@ -96326,6 +96568,15 @@
     "Iuticosaurus": {
       "genus": "Iuticosaurus",
       "parent": "Titanosauriformes",
+      "dispute": {
+        "summary": "Iuticosaurus was erected for \"Titanosaurus\" valdensis and interpreted as an early titanosaur (Le Loeuff, 1993), but its caudal vertebrae are now regarded as those of an indeterminate titanosauriform (Mannion et al., 2013; Jones, 2026).\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Retained at Titanosauriformes incertae sedis as an indeterminate, likely dubious taxon following Mannion et al. (2013) and Jones (2026).\n"
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "YOO-ti-ko-SAWR-us"
       },
@@ -98466,6 +98717,15 @@
     "Jiangshanosaurus": {
       "genus": "Jiangshanosaurus",
       "parent": "Somphospondyli",
+      "dispute": {
+        "summary": "The placement of Jiangshanosaurus is highly variable, having been recovered as a basal titanosaur (Wang et al., 2021), within Euhelopodidae (Mannion et al., 2019; Han et al., 2024), within Lithostrotia (Mayer et al., 2026), or just stemward of Titanosauria (Mo et al., 2023).\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed conservatively at Somphospondyli given the unresolved debate over its euhelopodid versus titanosaurian affinities.\n"
+          }
+        ]
+      },
       "etymology": "Named for Jiangshan County in Zhejiang Province, China, where the fossils were found, combined with Greek 'sauros' meaning 'lizard'.",
       "pronunciation": {
         "phonetic": "jee-AHNG-shah-no-SOR-us"
@@ -98729,6 +98989,15 @@
     "Jiangxititan": {
       "genus": "Jiangxititan",
       "parent": "Somphospondyli",
+      "dispute": {
+        "summary": "Jiangxititan was described as a derived titanosaur within Lognkosauria (Mo et al., 2023), but a reanalysis recovered it as a non-titanosaurian somphospondylan, albeit as an unstable taxon (Han et al., 2024).\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed conservatively at Somphospondyli following Han et al. (2024); the lognkosaurian titanosaur placement (Mo et al., 2023) is noted.\n"
+          }
+        ]
+      },
       "etymology": "Named for Jiangxi Province, China, where the fossils were found, combined with Greek 'titan' meaning 'giant'.",
       "pronunciation": {
         "phonetic": "jee-AHNG-shee-TIE-tuhn"
@@ -110949,7 +111218,16 @@
     },
     "Liaoningotitan": {
       "genus": "Liaoningotitan",
-      "parent": "Titanosauriformes",
+      "parent": "Euhelopodidae",
+      "dispute": {
+        "summary": "Liaoningotitan was redescribed as a euhelopodid, recovered as the sister taxon of Yongjinglong (Shan et al., 2025), although Jones (2026) treats it as an unstable basal somphospondylan.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Euhelopodidae following Shan et al. (2025); its instability in other analyses is noted.\n"
+          }
+        ]
+      },
       "etymology": "Named after Liaoning Province, China combined with Greek titan (giant); meaning \"Liaoning giant\"",
       "pronunciation": {
         "phonetic": "lee-YOW-ning-o-TIE-tuhn"
@@ -111096,7 +111374,9 @@
         "Eusauropoda",
         "Neosauropoda",
         "Macronaria",
-        "Titanosauriformes"
+        "Titanosauriformes",
+        "Somphospondyli",
+        "Euhelopodidae"
       ],
       "authors": "Zhou, C.-F.; Wu, W.-H.; Sekiya, T.; Dong, Z.-M.",
       "described": 2018
@@ -119255,7 +119535,16 @@
     },
     "Mansourasaurus": {
       "genus": "Mansourasaurus",
-      "parent": "Diamantinasauria",
+      "parent": "Titanosauria",
+      "dispute": {
+        "summary": "Mansourasaurus was described as a derived titanosaur most closely related to Eurasian lithostrotians, placing it in or near Lirainosaurinae (Sallam et al., 2018; Jones, 2026); it is not a member of Diamantinasauria.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Moved from Diamantinasauria to Titanosauria following Sallam et al. (2018) and Jones (2026); finer placement within Titanosauria is deferred to the Titanosauria pass.\n"
+          }
+        ]
+      },
       "etymology": "Named for Mansoura University in Egypt, the institution whose paleontologists discovered and described it, combined with Greek 'sauros' meaning 'lizard'.",
       "pronunciation": {
         "phonetic": "man-SOO-rah-SOR-us"
@@ -119390,7 +119679,7 @@
         "Macronaria",
         "Titanosauriformes",
         "Somphospondyli",
-        "Diamantinasauria"
+        "Titanosauria"
       ],
       "authors": "Sallam, H. M.; Gorscak, E.; O'Connor, P. M.; El-Dawoudi, I. A.; El-Sayed, S.; Saber, S.; Kora, M. A.; Sertich, J. J. W.; Seiffert, E. R.; Lamanna, M. C.",
       "described": 2018
@@ -135813,7 +136102,16 @@
     },
     "Oceanotitan": {
       "genus": "Oceanotitan",
-      "parent": "Titanosauriformes",
+      "parent": "Somphospondyli",
+      "dispute": {
+        "summary": "Oceanotitan is a titanosauriform whose finer placement varies between analyses: it has been recovered as the earliest-branching somphospondylan (Mocho et al., 2019; Jones, 2026) and as an early-branching macronarian outside Titanosauriformes (Mocho et al., 2023).\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Somphospondyli following Mocho et al. (2019) and Jones (2026); the basal macronarian alternative is noted.\n"
+          }
+        ]
+      },
       "etymology": "From Latin 'oceanus' meaning 'ocean', because the fossil was found at the base of a coastal cliff overlooking the Atlantic Ocean, combined with 'Titan' from Greek mythology meaning 'giant'.",
       "pronunciation": {
         "phonetic": "OH-see-AH-no-TIE-tan"
@@ -135949,7 +136247,8 @@
         "Eusauropoda",
         "Neosauropoda",
         "Macronaria",
-        "Titanosauriformes"
+        "Titanosauriformes",
+        "Somphospondyli"
       ],
       "authors": "Mocho, P.; Royo-Torres, R.; Ortega, F.",
       "described": 2019
@@ -140674,6 +140973,15 @@
     "Padillasaurus": {
       "genus": "Padillasaurus",
       "parent": "Somphospondyli",
+      "dispute": {
+        "summary": "Padillasaurus was originally described as a brachiosaurid (Carballido et al., 2015) but subsequent analyses recover it as a basal non-titanosaurian somphospondylan, a placement that has since become the prevailing view (Mannion et al., 2017; Jones, 2026).\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Somphospondyli following the prevailing recent literature; the original brachiosaurid placement is noted.\n"
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "puh-DEE-yuh-SAWR-us"
       },
@@ -149155,7 +149463,7 @@
     },
     "Pleurocoelus": {
       "genus": "Pleurocoelus",
-      "parent": "Titanosauriformes",
+      "parent": "Macronaria",
       "pronunciation": {
         "ipa": "/ˌplʊəroʊˈsiːləs/",
         "phonetic": "PLOOR-o-SEEL-us"
@@ -149286,8 +149594,7 @@
         "Gravisauria",
         "Eusauropoda",
         "Neosauropoda",
-        "Macronaria",
-        "Titanosauriformes"
+        "Macronaria"
       ],
       "authors": "Marsh, O. C.",
       "described": 1888
@@ -153889,7 +154196,16 @@
     },
     "Pukyongosaurus": {
       "genus": "Pukyongosaurus",
-      "parent": "Titanosauriformes",
+      "parent": "Somphospondyli",
+      "dispute": {
+        "summary": "Pukyongosaurus is based on fragmentary remains and was originally referred to Euhelopodidae (Dong et al., 2001). It is widely regarded as a nomen dubium and is otherwise placed only as an indeterminate titanosauriform or basal somphospondylan (D'Emic, 2012; Jones, 2026).\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed conservatively at Somphospondyli; the genus is widely treated as a nomen dubium.\n"
+          }
+        ]
+      },
       "etymology": "Named after Pukyong National University in South Korea, combined with Greek sauros (lizard); meaning \"Pukyong lizard\".",
       "pronunciation": {
         "phonetic": "puk-YON-go-SOR-us"
@@ -154021,7 +154337,8 @@
         "Eusauropoda",
         "Neosauropoda",
         "Macronaria",
-        "Titanosauriformes"
+        "Titanosauriformes",
+        "Somphospondyli"
       ],
       "authors": "Dong, Z.; Paik, I. S.; H. J. Kim",
       "described": 2001
@@ -160583,7 +160900,16 @@
     },
     "Ruixinia": {
       "genus": "Ruixinia",
-      "parent": "Euhelopodidae",
+      "parent": "Somphospondyli",
+      "dispute": {
+        "summary": "Ruixinia was described as a somphospondylan, favored by its describers as a basal titanosaur (Mo et al., 2023), but has been recovered within Euhelopodidae by Han et al. (2024).\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed conservatively at Somphospondyli given the unresolved euhelopodid versus titanosaurian debate.\n"
+          }
+        ]
+      },
       "etymology": "Named in honor of Ruixin Zhang, who made significant contributions to the infrastructure and collection of the Erlianhaote Dinosaur Museum.",
       "pronunciation": {
         "phonetic": "roo-eh-sheen"
@@ -160721,8 +161047,7 @@
         "Neosauropoda",
         "Macronaria",
         "Titanosauriformes",
-        "Somphospondyli",
-        "Euhelopodidae"
+        "Somphospondyli"
       ],
       "authors": "Mo, J.; Ma, F.; Yu, Y.; Xu, X.",
       "described": 2023
@@ -160876,7 +161201,16 @@
     },
     "Ruyangosaurus": {
       "genus": "Ruyangosaurus",
-      "parent": "Euhelopodidae",
+      "parent": "Somphospondyli",
+      "dispute": {
+        "summary": "The position of Ruyangosaurus is uncertain. It was described as a non- titanosauriform macronarian (Lu et al., 2009), recovered as a basal titanosaur by some analyses (Moore et al., 2020; Mo et al., 2023), and increasingly allied with Euhelopodidae by others (Mannion et al., 2019; Wang et al., 2021).\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed conservatively at Somphospondyli given the unresolved euhelopodid versus titanosaurian debate.\n"
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "roo-YAHNG-oh-SAWR-us"
       },
@@ -161012,8 +161346,7 @@
         "Neosauropoda",
         "Macronaria",
         "Titanosauriformes",
-        "Somphospondyli",
-        "Euhelopodidae"
+        "Somphospondyli"
       ],
       "authors": "Lü, J.-C.; Xu, L.; Jia, S.-H.; Zhang, X.-L.; Zhang, J.-M.; Yang, L.-L.; You, H.-L.; Ji, Q.",
       "described": 2009
@@ -162453,6 +162786,15 @@
     "Sarmientosaurus": {
       "genus": "Sarmientosaurus",
       "parent": "Diamantinasauria",
+      "dispute": {
+        "summary": "Sarmientosaurus was originally described as a basal lithostrotian titanosaur (Martinez et al., 2016), but recent analyses recover it as the earliest-diverging member of Diamantinasauria (Poropat et al., 2023; Beeston et al., 2024). The position of Diamantinasauria relative to Titanosauria is treated in the clade entry.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed in Diamantinasauria following the recent dedicated analyses; the original lithostrotian placement is noted.\n"
+          }
+        ]
+      },
       "etymology": "Named after the town of Sarmiento in Chubut Province, Argentina, near where the fossils were discovered, combined with Greek 'sauros' (lizard).",
       "pronunciation": {
         "phonetic": "sahr-me-en-toe-sor-us"
@@ -172984,7 +173326,16 @@
     },
     "Sonidosaurus": {
       "genus": "Sonidosaurus",
-      "parent": "Somphospondyli",
+      "parent": "Titanosauria",
+      "dispute": {
+        "summary": "Sonidosaurus was described as a relatively derived titanosaur (Xu et al., 2006) and has been suggested to be a non-saltasaurid lithostrotian with possible saltasaurid affinities (Jones, 2026).\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Moved to Titanosauria following its describers; finer placement within Titanosauria is deferred to the Titanosauria pass.\n"
+          }
+        ]
+      },
       "etymology": "Named after Sonid, the large geographical area in Inner Mongolia that includes the type locality, combined with Greek sauros, \"lizard\" - means \"Sonid lizard\"",
       "description": "Sonidosaurus is a genus of sauropod dinosaur from the Late Cretaceous. It was a titanosaur which lived in what is now Inner Mongolia. The type species, Sonidosaurus saihangaobiensis, was described by Xu, Zhang, Tan, Zhao, and Tan in 2006. It was a small titanosaur, about 9 meters (30 ft) long. It was first discovered in the Saihangaobi, Iren Dabasu (Erlian) Formation, in 2001 in a quarry which would later yield the remains of Gigantoraptor.",
       "diet": "herbivore",
@@ -173102,7 +173453,8 @@
         "Neosauropoda",
         "Macronaria",
         "Titanosauriformes",
-        "Somphospondyli"
+        "Somphospondyli",
+        "Titanosauria"
       ],
       "authors": "Xu, X.; Zhang, X.; Tan, Q.; Zhao, X.; Tan, L.",
       "described": 2006
@@ -179209,7 +179561,16 @@
     },
     "Tambatitanis": {
       "genus": "Tambatitanis",
-      "parent": "Euhelopodidae",
+      "parent": "Somphospondyli",
+      "dispute": {
+        "summary": "Tambatitanis was preliminarily placed within Euhelopodidae by its describers, who nonetheless noted titanosaur-like braincase features (Saegusa and Ikeda, 2014). A more recent analysis recovered it as the basalmost titanosaur (Mo et al., 2023).\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed conservatively at Somphospondyli given the unresolved euhelopodid versus titanosaurian debate.\n"
+          }
+        ]
+      },
       "etymology": "Named for Tamba (now Tamba-Sasayama), the city in Hyōgo Prefecture, Japan, where the fossils were found, combined with Ancient Greek 'titanis' meaning 'titan' or 'giant'; meaning 'Tamba giant.'",
       "pronunciation": {
         "phonetic": "TAM-buh-TIE-tan-is"
@@ -179347,8 +179708,7 @@
         "Neosauropoda",
         "Macronaria",
         "Titanosauriformes",
-        "Somphospondyli",
-        "Euhelopodidae"
+        "Somphospondyli"
       ],
       "authors": "Saegusa, H.; Ikeda, T.",
       "described": 2014
@@ -180666,6 +181026,15 @@
     "Tastavinsaurus": {
       "genus": "Tastavinsaurus",
       "parent": "Somphospondyli",
+      "dispute": {
+        "summary": "Tastavinsaurus is most often recovered as a basal somphospondylan (D'Emic, 2012; Mocho et al., 2023; Mayer et al., 2026; Jones, 2026), though a minority of analyses place it more stemward as a basal macronarian, and it was formerly the basis of the now-rejected clade Laurasiformes.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Somphospondyli following the current majority view; the basal macronarian alternative is noted.\n"
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "tas-tuh-VIN-SAWR-us"
       },
@@ -181660,12 +182029,21 @@
     },
     "Tehuelchesaurus": {
       "genus": "Tehuelchesaurus",
-      "parent": "Camarasauromorpha",
+      "parent": "Eusauropoda",
+      "dispute": {
+        "summary": "Tehuelchesaurus was originally interpreted as a camarasauromorph, a position supported by Carballido and Sander (2014) and the camarasaurid analysis of Mocho et al. (2014). More recent analyses (Mannion et al., 2019; Mocho et al., 2023) and Jones (2026) instead place it in Turiasauria, outside Macronaria.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Moved from Camarasauromorpha to Eusauropoda following the recent analyses and Jones (2026) that recover it in Turiasauria; finer placement is deferred to the eusauropod and turiasaur reconciliation.\n"
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "tay-WAYL-chay-SAWR-us"
       },
       "etymology": "Named in honor of the Tehuelche people, the indigenous inhabitants of the Argentinian province of Chubut where the fossil was first found, combined with Greek 'sauros' meaning 'lizard'.",
-      "description": "Tehuelchesaurus is a genus of macronarian sauropod dinosaur from the Late Jurassic (Oxfordian to Tithonian) of Argentina. It is named in honor of the Tehuelche people, native to the Argentinian province of Chubut, where it was first found.",
+      "description": "Tehuelchesaurus is a genus of eusauropod dinosaur from the Late Jurassic (Oxfordian to Tithonian) of Argentina. It is named in honor of the Tehuelche people, native to the Argentinian province of Chubut, where it was first found.",
       "diet": "herbivore",
       "locomotion": "quadrupedal",
       "paleoenvironment": [
@@ -181792,10 +182170,7 @@
         "Sauropodiformes",
         "Sauropoda",
         "Gravisauria",
-        "Eusauropoda",
-        "Neosauropoda",
-        "Macronaria",
-        "Camarasauromorpha"
+        "Eusauropoda"
       ],
       "authors": "Rich, T. H.; Vickers-Rich, P.; Gimenez, O.; Cúneo, R.; Puerta, P.; Vacca, R.",
       "described": 1999
@@ -189638,6 +190013,15 @@
     "Triunfosaurus": {
       "genus": "Triunfosaurus",
       "parent": "Somphospondyli",
+      "dispute": {
+        "summary": "Triunfosaurus was described as a basal titanosaur (Carvalho et al., 2017), but the support for that placement is weak and a reassessment recovered it as an indeterminate somphospondylan, suggesting the holotype may be a chimera (Poropat et al., 2017; Jones, 2026).\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed conservatively at Somphospondyli following Poropat et al. (2017); the basal titanosaur alternative and possible chimeric status are noted.\n"
+          }
+        ]
+      },
       "etymology": "Named for the Triunfo Basin in Paraíba, Brazil, where the fossils were found, combined with Greek 'sauros' meaning 'lizard'.",
       "pronunciation": {
         "phonetic": "tree-UN-fo-SOR-us"
@@ -198319,6 +198703,15 @@
     "Wintonotitan": {
       "genus": "Wintonotitan",
       "parent": "Diamantinasauria",
+      "dispute": {
+        "summary": "Wintonotitan has been recovered both as a non-titanosaurian somphospondylan outside Diamantinasauria (Poropat et al., 2015; Jones, 2026) and, more recently and robustly, as a member of Diamantinasauria (Beeston et al., 2024).\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed in Diamantinasauria following Beeston et al. (2024); the alternative non-titanosaurian somphospondylan placement is noted.\n"
+          }
+        ]
+      },
       "etymology": "Named after Winton, Queensland, Australia (the area where it was found, associated with the Winton Formation), combined with Greek titan meaning 'giant'; translates as 'Winton titan'",
       "pronunciation": {
         "phonetic": "win-TON-o-TIE-tan"
@@ -199857,7 +200250,16 @@
     },
     "Xianshanosaurus": {
       "genus": "Xianshanosaurus",
-      "parent": "Euhelopodidae",
+      "parent": "Somphospondyli",
+      "dispute": {
+        "summary": "Xianshanosaurus has an uncertain placement, having been recovered as a non-titanosaurian somphospondylan, a euhelopodid, a basal titanosaur, and a lithostrotian in different analyses (D'Emic, 2012; Han et al., 2024; Jones, 2026), often as the sister taxon of Daxiatitan.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed conservatively at Somphospondyli given the unresolved euhelopodid versus titanosaurian debate; finer placement may be revisited in the Titanosauria pass.\n"
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "shyen-SHAHN-oh-SAWR-us"
       },
@@ -199992,8 +200394,7 @@
         "Neosauropoda",
         "Macronaria",
         "Titanosauriformes",
-        "Somphospondyli",
-        "Euhelopodidae"
+        "Somphospondyli"
       ],
       "authors": "Lü, J.; Xu, L.; Jiang, X.; Jia, S.; Li, M.; Yuan, C.; Zhang, X.; Ji, Q.",
       "described": 2009
@@ -203958,6 +204359,15 @@
     "Yongjinglong": {
       "genus": "Yongjinglong",
       "parent": "Euhelopodidae",
+      "dispute": {
+        "summary": "Yongjinglong was originally described as a derived titanosaurian saltasaurid (Li et al., 2014), but most recent analyses instead recover it within Euhelopodidae (Mannion et al., 2019; Shan et al., 2025; Jones, 2026).\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Euhelopodidae following the prevailing recent analyses; the original derived-titanosaur placement is noted.\n"
+          }
+        ]
+      },
       "etymology": "From Yongjing County, Gansu Province, China (near where the holotype was found) and Chinese long ('dragon'), meaning 'Yongjing dragon'",
       "pronunciation": {
         "phonetic": "yoong-jeeng-long"
@@ -205064,7 +205474,7 @@
     },
     "Yunmenglong": {
       "genus": "Yunmenglong",
-      "parent": "Somphospondyli",
+      "parent": "Euhelopodidae",
       "pronunciation": {
         "phonetic": "YOON-mung-long"
       },
@@ -205184,7 +205594,8 @@
         "Neosauropoda",
         "Macronaria",
         "Titanosauriformes",
-        "Somphospondyli"
+        "Somphospondyli",
+        "Euhelopodidae"
       ],
       "authors": "Lü, J.; Xu, L.; Pu, H.; Zhang, X.; Zhang, Y.; Jia, S.; Chang, H.; Zhang, J.; Wei, X.",
       "described": 2013
