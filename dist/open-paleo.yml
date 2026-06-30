@@ -1,7 +1,7 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-06-30T01:04:49.660Z
-  clade_count: 218
+  built_at: 2026-06-30T03:03:17.621Z
+  clade_count: 215
   genus_count: 1398
   license: CC-BY-4.0
   schema_version: 1.0.0
@@ -153,67 +153,59 @@ tree:
                             Coelophysidae:
                               Coelophysinae: {}
                       Sauropodomorpha:
-                        Sauropoda:
-                          Diplodocidae: {}
-                          Macronaria:
-                            Brachiosauridae: {}
-                            Titanosauria: {}
-                        Massopoda:
-                          Sauropodiformes:
-                            Sauropoda:
-                              Gravisauria:
-                                Eusauropoda:
-                                  Mamenchisauridae: {}
-                                  Neosauropoda:
-                                    Macronaria:
-                                      Titanosauriformes:
-                                        Somphospondyli:
-                                          Titanosauria:
-                                            Lithostrotia:
-                                              Saltasauroidea:
-                                                Lohuecosauria:
-                                                  Saltasauridae:
-                                                    Saltasaurinae:
-                                                      Saltasaurini: {}
-                                                    Opisthocoelicaudiinae: {}
-                                              Aeolosaurini: {}
-                                              Nemegtosauridae: {}
-                                            Colossosauria:
-                                              Rinconsauria: {}
-                                              Lognkosauria: {}
-                                            Eutitanosauria:
-                                              Lirainosaurinae: {}
-                                            Titanosauridae: {}
-                                          Euhelopodidae: {}
-                                          Diamantinasauria: {}
-                                        Brachiosauridae: {}
-                                      Camarasauromorpha:
-                                        Camarasauridae: {}
-                                    Diplodocoidea:
-                                      Diplodocimorpha:
-                                        Rebbachisauridae:
-                                          Khebbashia:
-                                            Rebbachisaurinae: {}
-                                            Limaysaurinae: {}
-                                        Flagellicaudata:
-                                          Diplodocidae:
-                                            Diplodocinae: {}
-                                            Apatosaurinae: {}
-                                          Dicraeosauridae:
-                                            Dicraeosaurinae: {}
-                                  Turiasauria: {}
-                                  Cetiosauridae: {}
-                              Lessemsauridae: {}
-                          Massospondylidae: {}
-                          Riojasauridae: {}
+                        Saturnaliidae: {}
                         Bagualosauria:
                           Plateosauria:
-                            Anchisauria:
-                              Prosauropoda: {}
-                        Plateosauridae: {}
-                        Saturnaliidae: {}
-                        Unaysauridae: {}
-                        Guaibasauridae: {}
+                            Unaysauridae: {}
+                            Plateosauridae: {}
+                            Massopoda:
+                              Massospondylidae: {}
+                              Riojasauridae: {}
+                              Sauropodiformes:
+                                Lessemsauridae: {}
+                                Sauropoda:
+                                  Gravisauria:
+                                    Eusauropoda:
+                                      Mamenchisauridae: {}
+                                      Neosauropoda:
+                                        Macronaria:
+                                          Titanosauriformes:
+                                            Somphospondyli:
+                                              Titanosauria:
+                                                Lithostrotia:
+                                                  Saltasauroidea:
+                                                    Lohuecosauria:
+                                                      Saltasauridae:
+                                                        Saltasaurinae:
+                                                          Saltasaurini: {}
+                                                        Opisthocoelicaudiinae: {}
+                                                  Aeolosaurini: {}
+                                                  Nemegtosauridae: {}
+                                                Colossosauria:
+                                                  Rinconsauria: {}
+                                                  Lognkosauria: {}
+                                                Eutitanosauria:
+                                                  Lirainosaurinae: {}
+                                                Titanosauridae: {}
+                                              Euhelopodidae: {}
+                                              Diamantinasauria: {}
+                                            Brachiosauridae: {}
+                                          Camarasauromorpha:
+                                            Camarasauridae: {}
+                                        Diplodocoidea:
+                                          Diplodocimorpha:
+                                            Rebbachisauridae:
+                                              Khebbashia:
+                                                Rebbachisaurinae: {}
+                                                Limaysaurinae: {}
+                                            Flagellicaudata:
+                                              Diplodocidae:
+                                                Diplodocinae: {}
+                                                Apatosaurinae: {}
+                                              Dicraeosauridae:
+                                                Dicraeosaurinae: {}
+                                      Turiasauria: {}
+                                      Cetiosauridae: {}
                       Herrerasauridae: {}
                     Ornithischia:
                       Genasauria:
@@ -352,6 +344,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -573,22 +567,6 @@ clades:
       - Coelurosauria
       - Maniraptora
       - Anchiornithidae
-  Anchisauria:
-    taxonomy:
-      - Life
-      - Animalia
-      - Chordata
-      - Vertebrata
-      - Sarcopterygii
-      - Tetrapoda
-      - Reptilia
-      - Archosauria
-      - Dinosauria
-      - Saurischia
-      - Sauropodomorpha
-      - Bagualosauria
-      - Plateosauria
-      - Anchisauria
   Ankylopollexia:
     description: |
       Ankylopollexia is a clade of dryomorph ornithopod dinosaurs characterized by a robust, conical thumb spike formed by an enlarged, modified pollex. It ranges from medium-sized bipedal forms such as Camptosaurus through the iguanodonts to the hadrosaurs, and represents one of the most diverse and successful ornithischian radiations of the Cretaceous.
@@ -789,6 +767,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -936,6 +916,8 @@ clades:
       - Enantiornithes
       - Avisauridae
   Bagualosauria:
+    description: |
+      Bagualosauria is the clade of sauropodomorphs comprising Bagualosaurus and all more derived forms (Plateosauria, including the sauropods), to the exclusion of the basalmost Carnian sauropodomorphs and Saturnaliidae. Erected to capture the transition toward bulk herbivory and larger body size, it marks the point on the sauropodomorph stem where more leaf-shaped dentition and heavier builds appear.
     taxonomy:
       - Life
       - Animalia
@@ -949,6 +931,25 @@ clades:
       - Saurischia
       - Sauropodomorpha
       - Bagualosauria
+    described: 2019
+    authors: Pretto, F. A.; Langer, M. C.; Schultz, C. L.
+    diagnostic_features:
+      - Increased body size relative to the basalmost sauropodomorphs
+      - Cheek teeth more uniformly leaf-shaped, with coarser marginal serrations
+      - More robust, weight-bearing hindlimb proportions
+      - Expanded, more anteroposteriorly elongate ilium
+    references:
+      - id: pretto2019
+        authors: Pretto, F. A.; Langer, M. C.; Schultz, C. L.
+        year: 2019
+        title: "A new dinosaur (Saurischia: Sauropodomorpha) from the Late Triassic of Brazil provides insights on the evolution of sauropodomorph body plan"
+        journal: Zoological Journal of the Linnean Society
+        volume: "185"
+        issue: "2"
+        pages: 388-416
+        doi: 10.1093/zoolinnean/zly028
+        url: http://dx.doi.org/10.1093/zoolinnean/zly028
+        notes: Named Bagualosauria.
   Baryonychinae:
     taxonomy:
       - Life
@@ -983,8 +984,16 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
+      - Titanosauriformes
       - Brachiosauridae
     described: 1903
     authors: Riggs
@@ -1075,6 +1084,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -1097,6 +1108,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -1591,6 +1604,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -1804,6 +1819,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -1981,6 +1998,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -2004,6 +2023,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -2027,6 +2048,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -2096,7 +2119,17 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Diplodocoidea
+      - Diplodocimorpha
+      - Flagellicaudata
       - Diplodocidae
     described: 1884
     authors: Marsh
@@ -2128,6 +2161,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -2149,6 +2184,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -2173,6 +2210,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -2510,6 +2549,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -2533,6 +2574,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -2570,6 +2613,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -2645,6 +2690,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -2748,24 +2795,12 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
       - Gravisauria
-  Guaibasauridae:
-    taxonomy:
-      - Life
-      - Animalia
-      - Chordata
-      - Vertebrata
-      - Sarcopterygii
-      - Tetrapoda
-      - Reptilia
-      - Archosauria
-      - Dinosauria
-      - Saurischia
-      - Sauropodomorpha
-      - Guaibasauridae
   Hadrosauridae:
     description: |
       Hadrosauridae is a family of large ornithopod dinosaurs commonly known as duck-billed dinosaurs. Hadrosaurs were the most diverse and abundant large herbivorous dinosaurs of the Late Cretaceous and had a near-global distribution. They are characterized by highly specialized dental batteries of hundreds of closely packed teeth forming a continuous grinding surface and by broad, edentulous premaxillary bills. The family divides into two major subfamilies: the predominantly solid-crested or crestless Saurolophinae and the hollow-crested Lambeosaurinae. A grade of early-diverging taxa, including the type genus Hadrosaurus, Eotrachodon, Aquilarhinus, and Yamatosaurus, lies outside both subfamilies.
@@ -3289,6 +3324,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -3403,6 +3440,8 @@ clades:
         url: http://dx.doi.org/10.1371/journal.pone.0144148
         notes: Provides a modern phylogenetic delimitation of Leptoceratopsidae.
   Lessemsauridae:
+    description: |
+      Lessemsauridae is a clade of large-bodied sauropodiform sauropodomorphs from the Late Triassic to Early Jurassic of Gondwana, comprising Lessemsaurus, Antetonitrus, Ingentia, and Ledumahadi. Its members were among the first dinosaurs to attain very large size, with robust, graviportal limbs, and they sit at the immediate origin of Sauropoda.
     taxonomy:
       - Life
       - Animalia
@@ -3415,10 +3454,31 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
-      - Sauropoda
       - Lessemsauridae
+    type_genus: Lessemsaurus
+    described: 2018
+    authors: Apaldetti, C.; Martínez, R. N.; Cerda, I. A.; Pol, D.; Alcober, O.
+    diagnostic_features:
+      - Very large body size with graviportal, columnar limb proportions
+      - Dorsoventrally tall, transversely expanded ("plate-like") dorsal neural spines
+      - Slit-shaped neural canals on the dorsal vertebrae
+      - Massive, broad scapular blade
+    references:
+      - id: apaldetti2018
+        authors: Apaldetti, C.; Martínez, R. N.; Cerda, I. A.; Pol, D.; Alcober, O.
+        year: 2018
+        title: An early trend towards gigantism in Triassic sauropodomorph dinosaurs
+        journal: Nature Ecology & Evolution
+        volume: "2"
+        issue: "8"
+        pages: 1227-1232
+        doi: 10.1038/s41559-018-0599-y
+        url: http://dx.doi.org/10.1038/s41559-018-0599-y
+        notes: Erected Lessemsauridae.
   Limaysaurinae:
     taxonomy:
       - Life
@@ -3432,6 +3492,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -3456,6 +3518,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -3481,6 +3545,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -3505,6 +3571,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -3530,6 +3598,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -3558,7 +3628,14 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
     described: 1995
     authors: Wilson & Sereno
@@ -3608,6 +3685,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -3721,6 +3800,8 @@ clades:
         volume: "2"
         pages: 234-256
   Massopoda:
+    description: |
+      Massopoda is the large clade of plateosaurian sauropodomorphs containing all taxa more closely related to Saltasaurus than to Plateosaurus, thereby uniting Massospondylidae, Riojasauridae, the sauropodiform grade, and the sauropods. Its members span the small bipedal massospondylids through the gigantic quadrupedal sauropods, and the clade encompasses the great majority of sauropodomorph diversity.
     taxonomy:
       - Life
       - Animalia
@@ -3733,8 +3814,31 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
+    described: 2007
+    authors: Yates, A. M.
+    diagnostic_features:
+      - Anterior end of the premaxilla deflected to form an enlarged narial region
+      - Reduced or absent lateral lamina of the prefrontal
+      - Distal end of the tibia with a transversely expanded, sub-rectangular outline
+      - Trend toward enlarged body size and graviportal limb proportions
+    references:
+      - id: yates2007
+        authors: Yates, A. M.
+        year: 2007
+        title: "Solving a dinosaurian puzzle: the identity of Aliwalia rex Galton"
+        journal: Historical Biology
+        volume: "19"
+        issue: "1"
+        pages: 93-123
+        doi: 10.1080/08912960600866953
+        url: http://dx.doi.org/10.1080/08912960600866953
+        notes: Erected Massopoda.
   Massospondylidae:
+    description: |
+      Massospondylidae is a family of small to medium-sized, long-necked sauropodomorphs from the Late Triassic to Early Jurassic, with a near-global distribution and built around Massospondylus. Its members are facultatively bipedal herbivores or omnivores; the family forms an early-branching lineage within Massopoda, outside the sauropodiform grade.
     taxonomy:
       - Life
       - Animalia
@@ -3747,8 +3851,38 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Massospondylidae
+    type_genus: Massospondylus
+    described: 1914
+    authors: Huene, F. von
+    diagnostic_features:
+      - Snout with a depression behind the external naris
+      - Strongly ventrally curved symphyseal end of the dentary
+      - Cervical vertebrae 4 or 5 more than four times longer than the anterior centrum height
+      - Lacrimal with a web of bone spanning the junction of its anterior and ventral rami
+    references:
+      - id: huene1914
+        authors: Huene, F. von
+        year: 1914
+        title: Das naturliche System der Saurischia
+        journal: Centralblatt fur Mineralogie, Geologie und Palaontologie B
+        volume: "1914"
+        pages: 154-168
+        notes: Erected Massospondylidae.
+      - id: apaldetti2011
+        authors: Apaldetti, C.; Martinez, R. N.; Alcober, O. A.; Pol, D.
+        year: 2011
+        title: "A New Basal Sauropodomorph (Dinosauria: Saurischia) from Quebrada del Barro Formation (Marayes-El Carrizal Basin), Northwestern Argentina"
+        journal: PLoS ONE
+        volume: "6"
+        issue: "11"
+        pages: e26964
+        doi: 10.1371/journal.pone.0026964
+        url: http://dx.doi.org/10.1371/journal.pone.0026964
+        notes: Phylogenetic analysis of Massospondylidae membership.
   Megalosauria:
     taxonomy:
       - Life
@@ -3962,6 +4096,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -4075,6 +4211,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -4226,6 +4364,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -4780,6 +4920,8 @@ clades:
       - Megalosauroidea
       - Piatnitzkysauridae
   Plateosauria:
+    description: |
+      Plateosauria is a clade of sauropodomorph dinosaurs uniting Plateosauridae and Massopoda (and, in many analyses, Unaysauridae), encompassing the more derived, obligately or facultatively quadrupedal herbivores of the Late Triassic to Early Jurassic and all of their descendants including the sauropods. It is nested within Bagualosauria and represents the bulk of sauropodomorph diversity above the basal Carnian grade.
     taxonomy:
       - Life
       - Animalia
@@ -4794,7 +4936,36 @@ clades:
       - Sauropodomorpha
       - Bagualosauria
       - Plateosauria
+    described: 1913
+    authors: Tornier, G.
+    diagnostic_features:
+      - Leaf-shaped cheek teeth with coarse marginal denticles set at an angle to the crown margin
+      - Robust, weight-bearing limb proportions
+      - Enlarged, broad-bladed manual pollex
+      - Anteroposteriorly elongate, low ilium
+    references:
+      - id: tornier1913
+        authors: Tornier, G.
+        year: 1913
+        title: Reptilia (Paläontologie)
+        book: Handwörterbuch der Naturwissenschaften
+        volume: "8"
+        pages: 337-376
+        notes: Origin of the name Plateosauria.
+      - id: müller2018a
+        authors: Müller, R. T.; Langer, M. C.; Dias-da-Silva, S.
+        year: 2018
+        title: An exceptionally preserved association of complete dinosaur skeletons reveals the oldest long-necked sauropodomorphs
+        journal: Biology Letters
+        volume: "14"
+        issue: "11"
+        pages: "20180633"
+        doi: 10.1098/rsbl.2018.0633
+        url: http://dx.doi.org/10.1098/rsbl.2018.0633
+        notes: Recovers Plateosauria as Plateosauridae plus Massopoda, sister to Unaysauridae.
   Plateosauridae:
+    description: |
+      Plateosauridae is a family of plateosaurian sauropodomorphs from the Late Triassic to earliest Jurassic of Europe and Asia, built around the well-known Plateosaurus. In modern usage the family is restricted, with Plateosaurus and Issi as its securely included members; several historically referred taxa (e.g. Yimenosaurus, Euskelosaurus) are of uncertain or dubious status. Its members are medium- to large-bodied, long-necked, facultatively bipedal herbivores.
     taxonomy:
       - Life
       - Animalia
@@ -4807,7 +4978,28 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Plateosauridae
+    type_genus: Plateosaurus
+    described: 1895
+    authors: Marsh, O. C.
+    diagnostic_features:
+      - Large external naris
+      - Transversely broad, leaf-shaped cheek teeth with coarse marginal denticles
+      - Robust, elongate cervical vertebrae
+      - Large, recurved manual pollex ungual
+    references:
+      - id: marsh1895
+        authors: Marsh, O. C.
+        year: 1895
+        title: On the affinities and classification of the dinosaurian reptiles
+        journal: American Journal of Science
+        volume: "50"
+        pages: 483-498
+        doi: 10.2475/ajs.s3-50.300.483
+        url: http://dx.doi.org/10.2475/ajs.s3-50.300.483
+        notes: Erected Plateosauridae.
   Proceratosauridae:
     description: |
       Proceratosauridae is a family of small, early-diverging tyrannosauroids, defined as all theropods more closely related to Proceratosaurus than to Tyrannosaurus, Allosaurus, Compsognathus, Coelurus, Ornithomimus, or Deinonychus. Named for the crested Middle Jurassic Proceratosaurus, it contains the earliest and most basal members of Tyrannosauroidea.
@@ -4847,23 +5039,6 @@ clades:
         pages: 155-195
         doi: 10.1111/j.1096-3642.2009.00591.x
         url: http://dx.doi.org/10.1111/j.1096-3642.2009.00591.x
-  Prosauropoda:
-    taxonomy:
-      - Life
-      - Animalia
-      - Chordata
-      - Vertebrata
-      - Sarcopterygii
-      - Tetrapoda
-      - Reptilia
-      - Archosauria
-      - Dinosauria
-      - Saurischia
-      - Sauropodomorpha
-      - Bagualosauria
-      - Plateosauria
-      - Anchisauria
-      - Prosauropoda
   Protoceratopsidae:
     description: |
       Protoceratopsidae is a clade of small to medium-sized coronosaurian neoceratopsians from the Late Cretaceous of Asia, including Protoceratops, Bagaceratops, and Breviceratops. They bear a well-developed but solid frill and a deep, narrow snout, but lack the large brow horns and frill fenestrae of ceratopsids. Following Czepiński's (2019) revision the family absorbs the taxa formerly placed in "Bagaceratopsidae."
@@ -4927,6 +5102,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -4949,6 +5126,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -5071,6 +5250,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -5084,6 +5265,8 @@ clades:
       - Colossosauria
       - Rinconsauria
   Riojasauridae:
+    description: |
+      Riojasauridae is a small clade of massopodan sauropodomorphs from the Late Triassic comprising Riojasaurus and Eucnemesaurus, medium- to large-bodied, heavily built quadrupedal or facultatively quadrupedal herbivores. It is an early-branching lineage within Massopoda; its exact position fluctuates between sister to Massospondylidae and a more crownward position near Sauropodiformes.
     taxonomy:
       - Life
       - Animalia
@@ -5096,8 +5279,30 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Riojasauridae
+    type_genus: Riojasaurus
+    described: 2007
+    authors: Yates, A. M.
+    diagnostic_features:
+      - Robust, columnar hindlimb with a straight femoral shaft
+      - Tall crest-like lesser (anterior) trochanter of the femur
+      - Large posterior proximal tubercle on the femur
+      - Heavily built, weight-bearing postcranium
+    references:
+      - id: yates2007
+        authors: Yates, A. M.
+        year: 2007
+        title: "Solving a dinosaurian puzzle: the identity of Aliwalia rex Galton"
+        journal: Historical Biology
+        volume: "19"
+        issue: "1"
+        pages: 93-123
+        doi: 10.1080/08912960600866953
+        url: http://dx.doi.org/10.1080/08912960600866953
+        notes: Erected Riojasauridae.
   Saltasauridae:
     taxonomy:
       - Life
@@ -5111,6 +5316,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -5138,6 +5345,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -5166,6 +5375,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -5195,6 +5406,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -5208,6 +5421,8 @@ clades:
       - Lithostrotia
       - Saltasauroidea
   Saturnaliidae:
+    description: |
+      Saturnaliidae is a clade of small, gracile, early-diverging sauropodomorphs from the Late Triassic (Carnian) of South America, retaining a relatively carnivorous-to-omnivorous dentition and slender, cursorial proportions. Its core members are Saturnalia and Chromogisaurus; Pampadromaeus and Panphagia are sometimes included but their membership is less stable. The family was raised from Saturnaliinae and represents one of the basalmost sauropodomorph lineages.
     taxonomy:
       - Life
       - Animalia
@@ -5221,6 +5436,25 @@ clades:
       - Saurischia
       - Sauropodomorpha
       - Saturnaliidae
+    type_genus: Saturnalia
+    described: 2010
+    authors: Ezcurra, M. D.
+    diagnostic_features:
+      - Small body size with slender, cursorial hindlimb proportions
+      - Lanceolate, partly serrated teeth retaining a faunivorous component
+      - Elongate, lightly built cervical vertebrae
+      - Gracile, plesiomorphic manus and pes
+    references:
+      - id: ezcurra2010a
+        authors: Ezcurra, M. D.
+        year: 2010
+        title: "A new early dinosaur (Saurischia: Sauropodomorpha) from the Late Triassic of Argentina: a reassessment of dinosaur origin and phylogeny"
+        journal: Journal of Systematic Palaeontology
+        volume: "8"
+        pages: 371-425
+        doi: 10.1080/14772019.2010.484650
+        url: http://dx.doi.org/10.1080/14772019.2010.484650
+        notes: Named Saturnaliinae, the family-group name later raised to Saturnaliidae; authority by coordination.
   Saurischia:
     description: |
       Saurischia, meaning "lizard-hipped," is one of the two major clades of dinosaurs. Saurischians retain an ancestral pelvic configuration in which the pubis points forward and downward, in contrast to the retroverted pubis of ornithischians. The clade includes the bipedal, mostly carnivorous theropods and the long-necked, herbivorous sauropodomorphs. Saurischia is defined as all dinosaurs more closely related to birds than to Triceratops.
@@ -5319,6 +5553,10 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
     described: 1878
     authors: Marsh
@@ -5338,6 +5576,8 @@ clades:
         volume: "16"
         pages: 411-416
   Sauropodiformes:
+    description: |
+      Sauropodiformes is the clade of massopodan sauropodomorphs containing all taxa more closely related to Saltasaurus than to Massospondylus, spanning the "near-sauropod" grade (Anchisaurus, Melanorosaurus, Aardonyx, Mussaurus, and relatives) through the lessemsaurids and the sauropods themselves. Its members document the transition to obligate quadrupedality and gigantism on the line leading to Sauropoda.
     taxonomy:
       - Life
       - Animalia
@@ -5350,8 +5590,37 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
+    described: 2007
+    authors: Sereno, P. C.
+    diagnostic_features:
+      - Trend toward obligate quadrupedality with a shortened, weight-bearing manus
+      - Robust, columnar limb bones with reduced shaft torsion
+      - Broadened, weight-bearing pes with a reduced pollex
+      - Massive scapular blade in derived members
+    references:
+      - id: sereno2007
+        authors: Sereno, P. C.
+        year: 2007
+        title: "Basal Sauropodomorpha: historical and recent phylogenetic hypotheses, with comments on Ammosaurus major (Marsh, 1889)"
+        journal: Special Papers in Palaeontology
+        volume: "77"
+        pages: 261-289
+        notes: Erected Sauropodiformes.
+      - id: mcphee2014
+        authors: McPhee, B. W.; Yates, A. M.; Choiniere, J. N.; Abdala, F.
+        year: 2014
+        title: "The complete anatomy and phylogenetic relationships of Antetonitrus ingenipes (Sauropodiformes, Dinosauria): implications for the origins of Sauropoda"
+        journal: Zoological Journal of the Linnean Society
+        volume: "171"
+        issue: "1"
+        pages: 151-205
+        doi: 10.1111/zoj.12127
+        url: http://dx.doi.org/10.1111/zoj.12127
+        notes: Provides the stem-based redefinition of Sauropodiformes adopted here.
   Sauropodomorpha:
     description: |
       Sauropodomorpha is a major clade of saurischian dinosaurs comprising the long-necked herbivorous dinosaurs and their ancestors. The clade ranges from small, facultatively bipedal early forms of the Late Triassic to the giant quadrupedal sauropods that dominated terrestrial herbivore niches throughout the Jurassic and Cretaceous. Sauropodomorphs include the largest land animals ever to have lived and are characterized by their elongated necks, small heads relative to body size, and herbivorous or omnivorous diets.
@@ -5368,14 +5637,14 @@ clades:
       - Saurischia
       - Sauropodomorpha
     described: 1932
-    authors: Huene
+    authors: Huene, F. von
     diagnostic_features:
       - Elongated neck with ten or more cervical vertebrae
       - Small skull relative to body size
       - Leaf-shaped or spatulate teeth adapted for herbivory
-      - Enlarged nares
+      - Enlarged external nares
       - Large pollex (thumb) claw on manus digit I
-      - Trend toward increasing body size through evolutionary history
+      - Evolutionary trend toward increasing body size
     references:
       - id: huene1932
         authors: Huene, F. von
@@ -5384,6 +5653,7 @@ clades:
         journal: Monographien zur Geologie und Palaeontologie
         volume: "4"
         pages: 1-361
+        notes: Erected Sauropodomorpha.
   Saurornithoidini:
     taxonomy:
       - Life
@@ -5530,6 +5800,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -6128,8 +6400,17 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
       - Titanosauria
     described: 1877
     authors: Lydekker
@@ -6161,6 +6442,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -6185,6 +6468,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -6288,6 +6573,8 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -6434,6 +6721,8 @@ clades:
         doi: 10.1073/pnas.1600140113
         notes: Source of the tyrannosauroid braincase and endocast synapomorphies.
   Unaysauridae:
+    description: |
+      Unaysauridae is a clade of early-diverging plateosaurian sauropodomorphs from the Late Triassic of Brazil and India, comprising Unaysaurus, Macrocollum, and Jaklapallisaurus. Its members are small to medium-sized, long-necked bipeds recovered as the sister group of (or basalmost branch within) Plateosauria. United mainly by an astragalus with a cranially expanded medial condyle, the family's validity has been questioned because some of its synapomorphies rest on incomplete material.
     taxonomy:
       - Life
       - Animalia
@@ -6446,7 +6735,28 @@ clades:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Unaysauridae
+    type_genus: Unaysaurus
+    described: 2018
+    authors: Müller, R. T.; Langer, M. C.; Dias-da-Silva, S.
+    diagnostic_features:
+      - Astragalus with a cranially expanded medial condyle (about 1.6 times the craniocaudal length of the lateral condyle)
+      - Promaxillary fenestra present (where the skull is known)
+      - Longitudinal ventral sulcus on the proximal and middle caudal centra
+    references:
+      - id: müller2018a
+        authors: Müller, R. T.; Langer, M. C.; Dias-da-Silva, S.
+        year: 2018
+        title: An exceptionally preserved association of complete dinosaur skeletons reveals the oldest long-necked sauropodomorphs
+        journal: Biology Letters
+        volume: "14"
+        issue: "11"
+        pages: "20180633"
+        doi: 10.1098/rsbl.2018.0633
+        url: http://dx.doi.org/10.1098/rsbl.2018.0633
+        notes: Erected Unaysauridae.
   Unenlagiinae:
     taxonomy:
       - Life
@@ -6591,6 +6901,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
     authors: Yates, A. M.; Bonnan, M. F.; Neveling, J.; Chinsamy, A.; Blackbeard, M. G.
@@ -6695,8 +7007,17 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
       - Titanosauria
     authors: Averianov, A. O.; Lopatin, A. V.
     described: 2020
@@ -6830,6 +7151,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -7168,6 +7491,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -7270,8 +7595,16 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
+      - Titanosauriformes
       - Brachiosauridae
     authors: Chure, D.; Britt, B. B.; Whitlock, J. A.; Wilson, J. A.
     described: 2010
@@ -8391,6 +8724,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -8721,6 +9056,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Massospondylidae
     authors: Martínez, R. N.
@@ -9031,8 +9368,17 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
       - Titanosauria
     authors: Stromer, E.
     described: 1932
@@ -9127,6 +9473,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -9216,6 +9564,10 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
     authors: Gervais, P.
     described: 1852
@@ -9839,12 +10191,18 @@ genera:
     described: 1992
   Agrosaurus:
     genus: Agrosaurus
-    parent: Prosauropoda
+    parent: Sauropodomorpha
     pronunciation:
       ipa: /ˌæɡroʊˈsɔːrəs/
       phonetic: AG-roh-SOR-us
     etymology: From Greek agros ('field') and sauros ('lizard'), meaning 'field lizard'
     description: Agrosaurus is a potentially dubious genus of thecodontosaurid sauropodomorph probably originating from the Magnesian Conglomerate of England that was originally believed to be a Triassic prosauropod from Australia. Agrosaurus would thus be the oldest dinosaur from that country. However, this appears to have been an error, and the material actually appears to come from Thecodontosaurus or a Thecodontosaurus-like animal from Bristol, England (Avon Fissure Fill). The type species is Agrosaurus macgillivrayi.
+    dispute:
+      summary: |
+        Agrosaurus macgillivrayi is a nomen dubium; its material is most likely referable to Thecodontosaurus from the Late Triassic of England rather than Australia.
+      history:
+        - date: 2026-06-29
+          note: Reparented from the deprecated Prosauropoda to Sauropodomorpha incertae sedis (P2); nomen dubium, possibly Thecodontosaurus.
     diet: herbivore
     locomotion: bipedal
     diagnostic_features:
@@ -9920,10 +10278,6 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
-      - Bagualosauria
-      - Plateosauria
-      - Anchisauria
-      - Prosauropoda
     authors: Seeley, H. G.
     described: 1891
   Agujaceratops:
@@ -10123,6 +10477,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -10897,6 +11253,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -12201,6 +12559,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -13683,6 +14043,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -13799,6 +14161,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -14018,6 +14382,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -14131,6 +14497,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -14504,6 +14872,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -14616,6 +14986,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -15011,6 +15383,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -15222,6 +15596,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -15656,7 +16032,7 @@ genera:
     described: 2008
   Anchisaurus:
     genus: Anchisaurus
-    parent: Massopoda
+    parent: Sauropodiformes
     pronunciation:
       phonetic: ANG-ki-SAWR-us
     etymology: From Greek 'anchi' meaning 'near' or 'close to' and 'sauros' meaning 'lizard', referring to its placement near the base of the sauropodomorph family tree.
@@ -15786,7 +16162,10 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
+      - Sauropodiformes
     authors: Marsh, O. C.
     described: 1885
   Andesaurus:
@@ -15885,8 +16264,17 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
       - Titanosauria
     authors: Calvo, J. O.; Bonaparte, J. F.
     described: 1991
@@ -15988,6 +16376,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -16189,6 +16579,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -17209,6 +17601,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -17397,9 +17791,10 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
-      - Sauropoda
       - Lessemsauridae
     authors: Yates, A. M.; Kitching, J. W.
     described: 2003
@@ -17997,6 +18392,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -18447,6 +18844,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -18551,7 +18950,14 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
     authors: Sanz, J. L.; Buscalioni, A. D.; M.-L. Casanovas, J.-V. S.
     described: 1987
@@ -19048,6 +19454,10 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
     authors: Buffetaut, E.
     described: 2005
@@ -19803,6 +20213,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -20020,6 +20432,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -20134,8 +20548,17 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
       - Titanosauria
     authors: Lydekker, R.
     described: 1893
@@ -20416,6 +20839,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -20645,6 +21070,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -21118,6 +21545,10 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
     authors: Osborn, H. F.
     described: 1924
@@ -21311,6 +21742,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -21424,7 +21857,14 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
     authors: Leidy, J.
     described: 1865
@@ -21523,6 +21963,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -21541,6 +21983,12 @@ genera:
     pronunciation:
       phonetic: ah-SIGH-lo-SOR-US
     description: Asylosaurus is a genus of basal sauropodomorph dinosaur from the Late Triassic Avon Fissure Fill of England. It is based on partial remains, discovered in the autumn of 1834, described in 1836 by Henry Riley and Samuel Stutchbury as pertaining to Thecodontosaurus, that Othniel Charles Marsh brought to Yale University between 1888 and 1890. These remains thus escaped destruction by a bombardment in 1940 during World War II, unlike the original holotype of Thecodontosaurus. Asylosaurus was described in 2007 by Peter Galton. The type species is A. yalensis, referring to Yale. The bones originally came from a Rhaetian-age cave fill at Durdham Down, Clifton, Bristol.
+    dispute:
+      summary: |
+        Asylosaurus yalensis is a basal sauropodomorph from the Late Triassic of England, closely comparable to Thecodontosaurus; Jones (2026) regards it as a probable nomen dubium whose material cannot be confidently distinguished from Thecodontosaurus.
+      history:
+        - date: 2026-06-29
+          note: Parked at Sauropodomorpha incertae sedis (P2); possible nomen dubium close to Thecodontosaurus.
     locomotion: bipedal
     paleoenvironment:
       - fluvial
@@ -21730,6 +22178,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -21820,6 +22270,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -21934,7 +22386,14 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
     authors: Monbaron, M.; Russell, D. A.; Taquet, P.
     described: 1999
@@ -22254,6 +22713,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -22674,6 +23135,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -22796,6 +23259,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -23092,6 +23557,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -23307,6 +23774,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -23728,8 +24197,17 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
       - Titanosauria
     authors: Calvo, J. O.; Riga, B. G.
     described: 2019
@@ -24210,6 +24688,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -24713,6 +25193,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -25288,8 +25770,17 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
       - Titanosauria
     authors: Zhang, X.; Lü, J.; Xu, L.; Li, J.; Yang, L.; Hu, W.; Jia, S.; Ji, Q.; Zhang, C.
     described: 2009
@@ -25392,6 +25883,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -25678,6 +26171,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -25781,8 +26276,17 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
       - Titanosauria
     authors: Salgado, L.; Coria, R. A.
     described: 2009
@@ -26332,6 +26836,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -27069,6 +27575,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -27574,7 +28082,14 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
     authors: Reutter, A.; Carballido, J. L.; Windholz, G. J.; Pol, D.; Rauhut, O. W. M.
     described: 2026
@@ -28120,6 +28635,12 @@ genera:
       phonetic: bli-KAHN-a-SAWR-us
     etymology: Named for the Blikana locality in South Africa where the fossils were found, combined with Greek 'sauros' meaning 'lizard', meaning 'lizard from Blikana'.
     description: Blikanasaurus is a genus of sauropodomorph dinosaur from the late Triassic of South Africa. The generic name Blikanasaurus is derived from Greek, meaning "lizard from Blikana". The species name cromptoni is taken from the surname of A.W. "Fuzz" Crompton, an American paleontologist who led numerous field expeditions in Elliot Formation outcrop localities in South Africa. Blikanasaurus is only known from partial hindlimb bones that were recovered from the lower Elliot Formation (LEF) in the Eastern Cape.
+    dispute:
+      summary: |
+        Blikanasaurus cromptoni is a robust, derived sauropodiform known from a partial hindlimb; it is recovered as a basal sauropod by some analyses (McPhee and others, 2014; Jones, 2026) and as a non-sauropodan sauropodiform by others.
+      history:
+        - date: 2026-06-29
+          note: Placed at Sauropodiformes incertae sedis (P2); the basal-Sauropoda placement is recorded, boundary deferred to the Sauropoda pass.
     diagnostic_features:
       - Tibia with maximum proximal width 0.48 of maximum length; descending process relatively deep and robust
       - Distal end of fibula with a large oval, ventromedially directed articular surface
@@ -28222,6 +28743,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
     authors: Galton, P. M.; Van Heerden, J.
@@ -28676,6 +29199,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -28799,6 +29324,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -29013,8 +29540,17 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
       - Titanosauria
     authors: You, H.; Ji, Q.; Lamanna, M. C.; Li, J.; Li, Y.
     described: 2004
@@ -29333,6 +29869,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -29498,8 +30036,16 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
+      - Titanosauriformes
       - Brachiosauridae
     authors: Riggs, E. S.
     described: 1903
@@ -29981,6 +30527,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -30162,6 +30710,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -30272,6 +30822,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -30662,6 +31214,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -30771,6 +31325,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -30929,6 +31485,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -31143,6 +31701,10 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
     authors: Yadagiri, P.; Ayyasami, K.
     described: 1987
@@ -31570,6 +32132,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -32013,6 +32577,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -32806,6 +33372,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -32921,6 +33489,12 @@ genera:
       phonetic: kam-e-LOH-tee-a
     etymology: Named after Camelot, the legendary castle and court of King Arthur, referring to the discovery location in southwest England (near the supposed location of Camelot); overall meaning 'from Camelot'.
     description: Camelotia is a large-bodied sauropodomorph from the latest Triassic (Rhaetian) of southwest England. It is best known from a partial postcranial skeleton found in the Westbury Formation and named by Peter M. Galton in 1985. Subsequent work has generally placed Camelotia as a relatively derived sauropodomorph close to the origin of Sauropoda, although its exact position among early non-sauropod sauropodomorphs remains debated. It is sometimes placed in Melanorosauridae as a close relative of Melanorosaurus. With a body length and mass estimated at 8-10 meters (26-33 ft) and 3.8 tonnes (8,400 lb), respectively, it is one of the largest sauropodomorphs known from the Triassic.
+    dispute:
+      summary: |
+        Camelotia borealis is a fragmentary, large sauropodiform close to the origin of Sauropoda; its position is labile and it is sometimes referred to Melanorosauridae.
+      history:
+        - date: 2026-06-29
+          note: Placed at Sauropodiformes incertae sedis (P2); Sauropoda boundary unresolved, position labile due to incomplete material.
     diagnostic_features:
       - Height exceeds length for centra of the posterior dorsal and anterior caudal vertebrae
       - Lesser trochanter extends close to proximal end of femur
@@ -33000,6 +33574,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
     authors: Galton, P. M.
@@ -33074,6 +33650,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -33388,6 +33966,10 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
     authors: Haubold, H.; Kuhn, O.
     described: 1961
@@ -33986,6 +34568,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -34256,8 +34840,16 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
+      - Titanosauriformes
       - Brachiosauridae
     authors: Tidwell, V.; Carpenter, K.; W. Brooks
     described: 1999
@@ -35405,6 +35997,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -35581,6 +36175,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -35679,6 +36275,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -36663,6 +37261,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -36948,6 +37548,10 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
     authors: Bohlin, B.
     described: 1953
@@ -37515,6 +38119,10 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
     authors: Yeh, H.-K.
     described: 1975
@@ -37726,8 +38334,17 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
       - Titanosauria
     authors: Simón, E.; Salgado, L.; Calvo, J. O.
     described: 2018
@@ -37811,6 +38428,10 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
     authors: Owen, R.
     described: 1876
@@ -38205,6 +38826,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -38409,6 +39032,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -38510,6 +39135,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -38721,6 +39348,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -39335,6 +39964,10 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
     authors: Ameghino, F.
     described: 1898
@@ -40213,6 +40846,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Massospondylidae
     authors: Bonaparte, J. F.
@@ -40315,6 +40950,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -42683,6 +43320,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -43542,7 +44181,14 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
     authors: Peng, G.; Ye, Y.; Gao, Y.; Shu, C.; Jiang, S.
     described: 2005
@@ -43628,6 +44274,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -44207,6 +44855,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -44420,6 +45070,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -44936,6 +45588,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -45382,6 +46036,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -45602,6 +46258,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -46212,6 +46870,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -46328,7 +46988,14 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
     authors: Owen, R.
     described: 1884
@@ -46565,6 +47232,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -46929,6 +47598,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -47150,8 +47821,17 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
       - Titanosauria
     authors: Lü, J.; Azuma, Y.; Chen, R.; Zheng, W.; Jin, X.
     described: 2008
@@ -47871,6 +48551,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -48305,6 +48987,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -48989,6 +49673,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -49615,6 +50301,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -49709,6 +50397,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -50019,6 +50709,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -50885,6 +51577,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -52438,6 +53132,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -52649,6 +53345,12 @@ genera:
       ipa: /ˈiːoʊˌræptər/
     etymology: From Greek eos, 'dawn', + Latin raptor, 'seizer/thief'; means 'dawn thief' or 'dawn plunderer', reflecting its status as one of the earliest known dinosaurs
     description: Eoraptor is a genus of small, lightly built, basal sauropodomorph dinosaur. One of the earliest-known dinosaurs and one of the earliest sauropodomorphs, it lived approximately 231 to 228 million years ago, during the Late Triassic in Western Gondwana, in the region that is now northwestern Argentina. The type and only species, Eoraptor lunensis, was first described in 1993, and is known from an almost complete and well-preserved skeleton and several fragmentary ones. Eoraptor had multiple tooth shapes, which suggests that it was omnivorous.
+    dispute:
+      summary: |
+        Eoraptor lunensis was originally described as a basal theropod (Sereno and others, 1993) and later argued to be a basal saurischian outside both Theropoda and Sauropodomorpha. Most analyses since its 2012 redescription (Sereno and others; Martinez and others, 2011) recover it as a basal sauropodomorph, the view followed by Jones (2026).
+      history:
+        - date: 2026-06-29
+          note: Placed at Sauropodomorpha incertae sedis (basal) following the prevailing post-2012 view and Jones (2026) (P3); the basal-theropod and basal-saurischian alternatives are recorded.
     diet: omnivore
     locomotion: bipedal
     paleoenvironment:
@@ -53428,6 +54130,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -53970,6 +54674,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -54537,6 +55243,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -54652,6 +55360,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Riojasauridae
     authors: Van Hoepen, E. C. N.
@@ -54790,6 +55500,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -55164,6 +55876,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -55271,6 +55985,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -55389,12 +56105,18 @@ genera:
     described: 2013
   Euskelosaurus:
     genus: Euskelosaurus
-    parent: Sauropodomorpha
+    parent: Plateosauridae
     etymology: From Greek eu ("good"), skelos ("leg"), and sauros ("lizard"); meaning "good-legged lizard", chosen by Huxley in reference to the unusually large femur of the type material.
     pronunciation:
       phonetic: yoo-SKEE-lo-SOR-us
     description: |
       Euskelosaurus is a sauropodomorph dinosaur from the Late Triassic of South Africa and Lesotho. Fossils have only been recovered from the lower Elliot Formation in South Africa and Lesotho, and in one locality in Zimbabwe.
+    dispute:
+      summary: |
+        Euskelosaurus browni is widely regarded as a nomen dubium wastebasket taxon; its material is plateosaurid-grade in nature but lacks diagnostic features (Jones, 2026).
+      history:
+        - date: 2026-06-29
+          note: Reparented to Plateosauridae incertae sedis (P2); nomen dubium, material plateosaurid in nature.
     diet: herbivore
     locomotion: quadrupedal
     diagnostic_features:
@@ -55500,6 +56222,9 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Plateosauridae
     authors: Huxley, T. H.
     described: 1866
   Eustreptospondylus:
@@ -56050,6 +56775,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -57295,6 +58022,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -57418,11 +58147,17 @@ genera:
     described: 2016
   Fulengia:
     genus: Fulengia
-    parent: Prosauropoda
+    parent: Massospondylidae
     etymology: An anagram of the genus name Lufengosaurus, itself named for the Lufeng Formation of China where the fossils were found.
     pronunciation:
       phonetic: foo-LEN-jee-uh
     description: Fulengia is a dubious genus of basal sauropodomorph dinosaur from the Early Jurassic Lufeng Formation of China. The type species, F. youngi, was described by Carroll and Galton in 1977. It is a nomen dubium and may be the same animal as Lufengosaurus (from which it is anagramized). It was originally thought to be a lizard.
+    dispute:
+      summary: |
+        Fulengia youngi is a nomen dubium based on a tiny skull, possibly a juvenile Lufengosaurus, and was originally described as a lizard (Galton and Upchurch, 2004).
+      history:
+        - date: 2026-06-29
+          note: Placed at Massospondylidae incertae sedis (P2); nomen dubium, possibly a juvenile Lufengosaurus.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -57508,8 +58243,8 @@ genera:
       - Sauropodomorpha
       - Bagualosauria
       - Plateosauria
-      - Anchisauria
-      - Prosauropoda
+      - Massopoda
+      - Massospondylidae
     authors: Carroll, R. L.; Galton, P. M.
     described: 1977
   Fulgurotherium:
@@ -57784,6 +58519,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -57890,6 +58627,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -58000,6 +58739,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -58222,6 +58963,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -58579,8 +59322,16 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
+      - Titanosauriformes
       - Brachiosauridae
     authors: Barco, J. L.; Canudo, J. I.; G. Cuenca-Bescós, J. I. R.-O.
     described: 2005
@@ -58670,8 +59421,17 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
       - Titanosauria
     authors: Han, F.; Yang, L.; Lou, F.; Sullivan, C.; Xu, X.; Qiu, W.; Liu, H.; Yu, J.; Wu, R.; Ke, Y.; Xu, M.; Hu, J.; Lu, P.
     described: 2024
@@ -58759,6 +59519,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -59091,6 +59853,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -59308,6 +60072,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -60456,16 +61222,26 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
     authors: Seeley, H. G.
     described: 1869
   Gigantoscelus:
     genus: Gigantoscelus
-    parent: Prosauropoda
+    parent: Sauropodomorpha
     pronunciation:
       phonetic: jy-GAN-to-SEE-lus
     etymology: giant shin
     description: Gigantoscelus is a dubious genus of basal sauropodomorph dinosaur from the Early Jurassic of South Africa.
+    dispute:
+      summary: |
+        Gigantoscelus molengraaffi is a nomen dubium based on a fragmentary femur from the Late Triassic of southern Africa (Galton and Upchurch, 2004).
+      history:
+        - date: 2026-06-29
+          note: Reparented from the deprecated Prosauropoda to Sauropodomorpha incertae sedis (P2); fragmentary nomen dubium.
     diet: herbivore
     locomotion: bipedal
     diagnostic_features:
@@ -60537,10 +61313,6 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
-      - Bagualosauria
-      - Plateosauria
-      - Anchisauria
-      - Prosauropoda
     authors: Van Hoepen, E. C. N.
     described: 1916
   Gigantspinosaurus:
@@ -60922,8 +61694,16 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
+      - Titanosauriformes
       - Brachiosauridae
     authors: Paul, G. S.
     described: 1988
@@ -61029,6 +61809,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Massospondylidae
     authors: Smith, N. D.; Pol, D.
@@ -61776,6 +62558,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -62077,6 +62861,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -62365,6 +63151,12 @@ genera:
       phonetic: GOONG-shyen-o-SAWR-us
     etymology: Named for Gongxian County in Sichuan Province, China, where the fossils were found, combined with Greek 'sauros' meaning 'lizard'.
     description: "Gongxianosaurus is a genus of basal sauropod dinosaur from the early Jurassic Period (Sinemurian-Pliensbachian stage). The only species is Gongxianosaurus shibeiensis. Based on four fragmentary to complete specimens found in the Ziliujing Formation, China (Sichuan Province), it is one of the most completely known early sauropods. The skeleton is known in large part, missing both the hand and the majority of the skull. Gongxianosaurus was firstly named and described in a short note published in 1998; however, a comprehensive description has yet to be published. Gongxianosaurus shibeiensis was named for the place it was found, near the village Shibei in Gong County (珙县; Pinyin: Gǒng Xiàn)."
+    dispute:
+      summary: |
+        Gongxianosaurus shibeiensis is recovered among the basalmost sauropods by Jones (2026) and others, but as a non-sauropodan sauropodiform near the Sauropoda boundary under more restrictive definitions.
+      history:
+        - date: 2026-06-29
+          note: Placed at Sauropodiformes incertae sedis (P2); the basal-Sauropoda placement is recorded, boundary deferred to the Sauropoda pass.
     locomotion: facultative
     paleoenvironment:
       - lacustrine
@@ -62452,6 +63244,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
     authors: He, X.; Wang, C.; Liu, S.; Zhou, F.; Liu, T.; Cai, K.; Dai, B.
@@ -63331,11 +64125,17 @@ genera:
     described: 2012
   Gryponyx:
     genus: Gryponyx
-    parent: Prosauropoda
+    parent: Massospondylidae
     etymology: Hooked-claw; from Greek grypos (hooked) and onyx (claw)
     pronunciation:
       phonetic: GRIP-on-iks
     description: Gryponyx is an extinct genus of massopod sauropodomorph known from southern Free State, central South Africa.
+    dispute:
+      summary: |
+        Gryponyx africanus has been recovered as a basal massospondylid (Vasconcelos and Yates, 2004); some referred species are nomina dubia and the validity of the genus is debated (Jones, 2026).
+      history:
+        - date: 2026-06-29
+          note: Placed at Massospondylidae incertae sedis (P2); basal massospondylid affinity with contested validity.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -63416,8 +64216,8 @@ genera:
       - Sauropodomorpha
       - Bagualosauria
       - Plateosauria
-      - Anchisauria
-      - Prosauropoda
+      - Massopoda
+      - Massospondylidae
     authors: Broom, R.
     described: 1911
   Gryposaurus:
@@ -63532,11 +64332,17 @@ genera:
     described: 1914
   Guaibasaurus:
     genus: Guaibasaurus
-    parent: Guaibasauridae
+    parent: Sauropodomorpha
     pronunciation:
       phonetic: GWIE-bah-SAWR-us
     etymology: Named after the Guaíba River region of Rio Grande do Sul, Brazil, where it was discovered, combined with Greek sauros (lizard); meaning 'Guaíba lizard'
     description: Guaibasaurus is an extinct genus of basal saurischian dinosaur known from the Late Triassic Caturrita Formation of Rio Grande do Sul, southern Brazil. Most analyses recover it as a sauropodomorph, although there are some suggestions that it was a theropod instead. In 2016 Gregory S. Paul estimated it at around 2 meters long (6.6 ft) and 10 kg (22 lbs), whereas in 2020 Molina-Pérez and Larramendi listed it at 3 meters (10 ft) and 35 kg (77 lbs).
+    dispute:
+      summary: |
+        Guaibasaurus candelariensis has an unstable position: originally a basal theropod, it is recovered as a basal sauropodomorph by recent analyses (Novas and others, 2011, within Guaibasauridae; Hechenleitner and others, 2025, as sister to Bagualosauria). The family Guaibasauridae is not adopted here, being contested and effectively monotypic.
+      history:
+        - date: 2026-06-29
+          note: Placed at Sauropodomorpha incertae sedis (basal) following the recent sauropodomorph hypotheses (P2); the basal-theropod alternative and the deprecated Guaibasauridae are recorded.
     locomotion: bipedal
     paleoenvironment:
       - fluvial
@@ -63627,7 +64433,6 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
-      - Guaibasauridae
     authors: Bonaparte, J. F.; Ferigolo, J.; A. M. Ribeiro
     described: 1999
   Gualicho:
@@ -64218,6 +65023,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -64640,8 +65447,17 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
       - Titanosauria
     authors: Wang, X.; Bandeira, K. L. N.; Qiu, R.; Jiang, S.; Cheng, X.; Ma, Y.; Kellner, A. W. A.
     described: 2021
@@ -65014,6 +65830,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -67146,6 +67964,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -67597,6 +68417,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -68125,6 +68947,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -68216,6 +69040,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -68310,6 +69136,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -68653,7 +69481,7 @@ genera:
     described: 1982
   Huayracursor:
     genus: Huayracursor
-    parent: Sauropodomorpha
+    parent: Bagualosauria
     etymology: From Quechua huayra (wind) and Latin cursor (runner); meaning 'wind runner'
     pronunciation:
       phonetic: WHY-rah-KUR-suh
@@ -68733,6 +69561,7 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
     authors: Hechenleitner, E. M.; Martinelli, A. G.; Rocher, S.; Fiorelli, L. E.; Juarez, M.; Taborda, J. R. A.; Desojo, J. B.
     described: 2025
   Hudiesaurus:
@@ -68840,6 +69669,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -69692,6 +70523,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -70569,6 +71402,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -70791,6 +71626,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -70809,11 +71646,17 @@ genera:
     described: 2022
   Ignavusaurus:
     genus: Ignavusaurus
-    parent: Massospondylidae
+    parent: Massopoda
     etymology: From Latin 'ignavus' meaning 'coward' and Ancient Greek 'sauros' meaning 'lizard', giving 'coward's lizard'; the name refers to the type locality Ha Ralekoala, which literally means 'the place of the father of the coward' in the local language.
     pronunciation:
       phonetic: ig-NAY-vu-SOR-us
     description: Ignavusaurus is a genus of basal sauropodomorph dinosaur that lived during the Early Jurassic in what is now Lesotho. Its fossils were found in the Upper Elliot Formation which is probably Hettangian in age (around 200 million years ago). It was described on the basis of a partial, well preserved articulated skeleton. The type species, I. rachelis, was described in 2010 by Spanish paleontologist F. Knoll.
+    dispute:
+      summary: |
+        Ignavusaurus rachelis is recovered close to Sarahsaurus; it falls outside Massospondylidae (Apaldetti and others, 2011) or within it (Chapelle and others, 2019) depending on the analysis.
+      history:
+        - date: 2026-06-29
+          note: Placed at Massopoda incertae sedis (P2); Massospondylidae membership is recorded but not adopted.
     locomotion: bipedal
     paleoenvironment:
       - fluvial
@@ -70906,8 +71749,9 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
-      - Massospondylidae
     authors: Knoll, F.
     described: 2010
   Iguanacolossus:
@@ -71558,6 +72402,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -71951,9 +72797,10 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
-      - Sauropoda
       - Lessemsauridae
     authors: Apaldetti, C.; Martínez, R. N.; Cerda, I. A.; Pol, D.; Alcober, O.
     described: 2018
@@ -72241,6 +73088,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
     authors: Peyre de Fabrègues, C.; Bi, S.; Li, H.; Li, G.; Yang, L.; Xu, X.
@@ -72590,6 +73439,10 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
     authors: Buffetaut, E.; Suteethorn, V.; Cuny, G.; Tong, H.; Le Loeuff, J.; Khansubha, S.; Jongautchariyakul, S.
     described: 2000
@@ -72889,6 +73742,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -73001,6 +73856,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Plateosauridae
     authors: Beccari, V.; Mateus, O.; Wings, O.; Milàn, J.; Clemmensen, L. B.
     described: 2021
@@ -73186,6 +74043,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -73397,6 +74256,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -73709,6 +74570,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -73941,6 +74804,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Unaysauridae
     authors: Novas, F. E.; Ezcurra, M. D.; Chatterjee, S.; Kutty, T. S.
     described: 2010
@@ -74062,6 +74927,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -75022,6 +75889,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -75225,6 +76094,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -75521,6 +76392,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -75727,6 +76600,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -75742,6 +76617,12 @@ genera:
       phonetic: JING-SHAHN-o-SAWR-us
     etymology: Named after the town of Jingshan ("Golden Hill") near the fossil locality in Lufeng County, Yunnan, China; meaning "Jingshan lizard"
     description: Jingshanosaurus is a genus of sauropodomorph dinosaurs from the early Jurassic period (201.4 to 196.5 million years ago, Hettangian age) of China. The type and only species is Jingshanosaurus xinwaensis. Its maximum weight was around 4.3 t (4.7 short tons) with an adult femur length of 845 mm (33.3 in). The genus grew up to 5 m (16 ft) long.
+    dispute:
+      summary: |
+        Jingshanosaurus xinwaensis is most commonly recovered among the basalmost Sauropodiformes (Jones, 2026), but Rauhut and others (2020) place it within Massospondylidae.
+      history:
+        - date: 2026-06-29
+          note: Placed at Sauropodiformes incertae sedis following the prevailing view and Jones (2026) (P3); the Massospondylidae alternative is recorded.
     locomotion: facultative
     paleoenvironment:
       - fluvial
@@ -75825,6 +76706,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
     authors: Zhang, Y.; Yang, Z.
@@ -76245,6 +77128,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -76454,6 +77339,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -76907,6 +77794,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -77096,6 +77985,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -77687,8 +78578,17 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
       - Titanosauria
     authors: Gomani, E. M.
     described: 2005
@@ -77787,6 +78687,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -78648,9 +79550,15 @@ genera:
     described: 2025
   Kholumolumo:
     genus: Kholumolumo
-    parent: Sauropodomorpha
+    parent: Massopoda
     etymology: From the Basuto (Sesotho) name for a type of dragon-like creature that the local Basuto people associated with dinosaur fossils.
     description: Kholumolumo , formerly "Kholumolumosaurus" or "Thotobolosaurus", is an extinct genus of massopodan sauropodomorph dinosaur, which was closely related to Sarahsaurus, from the lower Elliot Formation of Maphutseng, Lesotho. The type species, Kholumolumo ellenbergerorum was formally described in 2020.
+    dispute:
+      summary: |
+        Kholumolumo ellenbergerorum is recovered as an early-branching massopodan, sandwiched between Plateosauridae and Massospondylidae (Peyre de Fabregues and Allain, 2019), the position followed by Jones (2026); it has also been associated with Lessemsauridae.
+      history:
+        - date: 2026-06-29
+          note: Placed at Massopoda incertae sedis following Peyre de Fabregues and Allain (2019) and Jones (2026) (P2); the Lessemsauridae alternative is recorded.
     locomotion: bipedal
     paleoenvironment:
       - fluvial
@@ -78751,6 +79659,9 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
     authors: Peyre de Fabrègues, C.; Allain, R.
     described: 2019
   Khulsanurus:
@@ -79241,6 +80152,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -80088,6 +81001,10 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
     authors: Yadagiri, P.
     described: 1988
@@ -81823,6 +82740,10 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
     authors: Kutty, T. S.; Chatterjee, S.; Galton, P. M.; Upchurch, P.
     described: 2007
@@ -82239,8 +83160,17 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
       - Titanosauria
     authors: Huene, F. V.
     described: 1929
@@ -82335,6 +83265,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -82665,6 +83597,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -82773,7 +83707,7 @@ genera:
     described: 1989
   Ledumahadi:
     genus: Ledumahadi
-    parent: Sauropodiformes
+    parent: Lessemsauridae
     etymology: From Sesotho meaning 'giant thunderclap', in reference to the animal's enormous size. The species name 'mafube' means 'dawn' in Sesotho.
     pronunciation:
       phonetic: leh-DOO-muh-HA-dee
@@ -82869,8 +83803,11 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
+      - Lessemsauridae
     authors: McPhee, B. W.; Benson, R. B. J.; Botha-Brink, J.; Bordy, E. M.; Choiniere, J. N.
     described: 2018
   Leinkupal:
@@ -82967,6 +83904,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -82987,6 +83926,12 @@ genera:
     pronunciation:
       phonetic: lee-o-neh-ra-sor-us
     description: Leonerasaurus is a basal genus of sauropodomorph dinosaur. Currently, there is only one species known, named L. taquetrensis by Diego Pol, Alberto Garrido and Ignacio A. Cerda in 2011. The fossil, an incomplete subadult individual, was found in the Las Leoneras Formation in Argentina. This formation is probably Early Jurassic in age. Leonerasaurus was a small non-sauropod sauropodomorph, showing an unusual combination of basal and derived characters. This indicates that the evolution of early sauropodomorphs witnessed a great degree of convergent evolution.
+    dispute:
+      summary: |
+        Leonerasaurus taquetrensis shows a mosaic of basal and sauropod-like characters and its position is inconsistent between studies, falling among basal sauropodiforms or basal massopodans.
+      history:
+        - date: 2026-06-29
+          note: Placed at Sauropodiformes incertae sedis (P2); position inconsistent between analyses.
     locomotion: facultative
     paleoenvironment:
       - lacustrine
@@ -83079,6 +84024,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
     authors: Pol, D.; Garrido, A.; Cerda, I. A.
@@ -83753,9 +84700,10 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
-      - Sauropoda
       - Lessemsauridae
     authors: Bonaparte, J. F.
     described: 1999
@@ -84111,6 +85059,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Massospondylidae
     authors: Apaldetti, C.; Martinez, R. N.; Alcober, O. A.; Pol, D.
@@ -84482,6 +85432,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -84795,6 +85747,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -85006,6 +85960,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -85238,6 +86194,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -85773,6 +86731,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -85888,6 +86848,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
     authors: Zhang, Q.-N.; Jia, L.; Wang, T.; Zhang, Y.-G.; You, H.-L.
@@ -85993,6 +86955,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -86207,6 +87171,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -86847,6 +87813,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -86960,6 +87928,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -87222,6 +88192,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -87552,6 +88524,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Massospondylidae
     authors: Young, C.-C.
@@ -87888,8 +88862,16 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
+      - Titanosauriformes
       - Brachiosauridae
     authors: Antunes, M. T.; Mateus, O.
     described: 2003
@@ -88542,6 +89524,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Unaysauridae
     authors: Müller, R. T.; Langer, M. C.; Dias-da-Silva, S.
     described: 2018
@@ -88727,6 +89711,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -89177,6 +90163,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -89860,8 +90848,17 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
       - Titanosauria
     authors: González Riga, B. J.; Previtera, E.; Pirrone, C. A.
     described: 2009
@@ -89966,6 +90963,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -90388,6 +91387,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -90807,6 +91808,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -91191,6 +92194,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -91274,6 +92279,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -91784,6 +92791,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Massospondylidae
     authors: Owen, R.
@@ -91978,6 +92987,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -92715,6 +93726,12 @@ genera:
       phonetic: me-LAN-or-o-SAWR-us
     etymology: From Greek 'melas' meaning 'black', 'oros' meaning 'mountain', and 'sauros' meaning 'lizard'; translates as 'Black Mountain Lizard', named for the Black Mountains (Thaba Nyama) near the South African discovery site.
     description: Melanorosaurus is a genus of basal sauropodomorph dinosaur that lived during the Late Triassic period. An omnivore from South Africa, it had a large body and sturdy limbs, suggesting it moved quadrupedally. Its limb bones were massive and heavy like the limb bones of true sauropods.
+    dispute:
+      summary: |
+        Melanorosaurus readi is a derived sauropodiform hovering on the boundary of Sauropoda; depending on the Sauropoda definition it is the immediate non-sauropodan sister of the clade or just inside it.
+      history:
+        - date: 2026-06-29
+          note: Placed at Sauropodiformes incertae sedis (P2); the precise Sauropoda boundary is deferred to the Sauropoda pass.
     diet: omnivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -92814,6 +93831,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
     authors: Haughton, S. H.
@@ -92918,6 +93937,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -93125,6 +94146,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -93377,6 +94400,12 @@ genera:
     pronunciation:
       phonetic: may-RO-kuh-TAY-noss
     description: Meroktenos is a genus of basal sauropodomorph dinosaur that lived during the Late Triassic period of what is now Lesotho.
+    dispute:
+      summary: |
+        Meroktenos thabanensis is a derived sauropodiform near the boundary of Sauropoda; it has been associated with Lessemsauridae but is recovered in a polytomy of apical non-sauropodan sauropodiforms by Peyre de Fabregues and Allain (2016).
+      history:
+        - date: 2026-06-29
+          note: Placed at Sauropodiformes incertae sedis (P2); the Lessemsauridae alternative and the Sauropoda boundary are recorded.
     locomotion: facultative
     paleoenvironment:
       - fluvial
@@ -93451,6 +94480,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
     authors: Peyre de Fabrègues, C.; Allain, R.
@@ -93830,6 +94861,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -94459,6 +95492,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -95347,8 +96382,17 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
       - Titanosauria
     authors: Gorscak, E.; O'Connor, P. M.
     described: 2019
@@ -95449,6 +96493,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -95662,8 +96708,17 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
       - Titanosauria
     authors: Gilmore, C. W.
     described: 1933
@@ -96513,6 +97568,10 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
     authors: Sauvage, H.-E.
     described: 1874
@@ -96996,6 +98055,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
     authors: Barrett, P.; Chapelle, K.; Sciscio, L.; Broderick, T.; Zondo, M.; Munyikwa, D.; Choiniere, J.
     described: 2024
@@ -97098,6 +98159,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
     authors: Bonaparte, J. F.; Vince, M.
@@ -97355,6 +98418,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -97706,6 +98771,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -98896,8 +99963,17 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
       - Titanosauria
     authors: Filippi, L. S.; García, R. A.; Garrido, A. C.
     described: 2011
@@ -99002,6 +100078,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -99447,6 +100525,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -100157,6 +101237,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -100261,6 +101343,10 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
     authors: de la Moussaye, G.
     described: 1884
@@ -100619,6 +101705,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -100913,6 +102001,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Massospondylidae
     authors: Chapelle, K. E. J.; Barrett, P. M.; Botha, J.; Choiniere, J. N.
@@ -101228,6 +102318,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -101408,8 +102500,17 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
       - Titanosauria
     authors: Gallina, P. A.; Canale, J. I.; Carballido, J. L.
     described: 2021
@@ -102137,6 +103238,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -102240,6 +103343,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -102675,6 +103780,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -103000,6 +104107,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -103390,6 +104499,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -103474,6 +104585,10 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
     authors: Wild, R.
     described: 1978
@@ -103996,6 +105111,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -104314,6 +105431,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -104426,6 +105545,10 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
     authors: Gervais, P.
     described: 1852
@@ -105200,6 +106323,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -105327,6 +106452,12 @@ genera:
       phonetic: OR-o-SAWR-us
     etymology: From Greek 'oros' (mountain) and 'sauros' (lizard); meaning 'mountain lizard'.
     description: Orosaurus is a dubious genus of basal sauropodomorph dinosaur from the Late Triassic of South Africa, containing a single species, O. capensis.
+    dispute:
+      summary: |
+        Orosaurus capensis is a nomen dubium based on fragmentary Late Triassic material from southern Africa, historically synonymized with Euskelosaurus.
+      history:
+        - date: 2026-06-29
+          note: Parked at Sauropodomorpha incertae sedis (P2); fragmentary nomen dubium.
     locomotion: bipedal
     paleoenvironment:
       - fluvial
@@ -106249,6 +107380,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -106906,6 +108039,12 @@ genera:
       phonetic: PAK-i-SOO-kus
     etymology: From Greek pachys (παχύς, 'thick') and Latin/Greek suchos (from Σοῦχος, 'crocodile'), meaning 'thick crocodile', a reference to the robust snout
     description: Pachysuchus is a dubious extinct genus of basal sauropodomorph dinosaur from the Early Jurassic of China.
+    dispute:
+      summary: |
+        Pachysuchus imperfectus, from the Early Jurassic of China, was originally described as a phytosaur; reidentification of the holotype showed it to be an indeterminate early sauropodomorph and a nomen dubium (Barrett and Xu, 2012).
+      history:
+        - date: 2026-06-29
+          note: Parked at Sauropodomorpha incertae sedis (P2); nomen dubium, originally misidentified as a phytosaur.
     locomotion: bipedal
     paleoenvironment:
       - fluvial
@@ -107063,6 +108202,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -107341,6 +108482,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -107361,6 +108504,12 @@ genera:
     pronunciation:
       phonetic: PAM-puh-DROH-me-us
     description: Pampadromaeus is an extinct genus of basal sauropodomorph dinosaurs known from the Late Triassic (Carnian) Santa Maria Formation of the Paraná Basin in Rio Grande do Sul, southern Brazil.
+    dispute:
+      summary: |
+        Pampadromaeus barberenai is a basalmost sauropodomorph from the Late Triassic of Brazil, recovered within Saturnaliidae by some analyses but as a basal sauropodomorph outside it by others; Jones (2026) treats its Saturnaliidae membership as not firmly established.
+      history:
+        - date: 2026-06-29
+          note: Placed at Saturnaliidae following its common recovery there (P2); the basal-Sauropodomorpha-incertae-sedis alternative is recorded.
     locomotion: bipedal
     paleoenvironment:
       - fluvial
@@ -107638,6 +108787,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -107960,6 +109111,12 @@ genera:
     pronunciation:
       phonetic: pan-FAG-ee-uh
     description: Panphagia is a genus of sauropodomorph dinosaur described in 2009. It lived around 231 million years ago, during the Carnian age of the Late Triassic period in what is now northwestern Argentina. Fossils of the genus were found in the La Peña Member of the Ischigualasto Formation in the Ischigualasto-Villa Unión Basin. The name Panphagia comes from the Greek words pan, meaning "all", and phagein, meaning "to eat", in reference to its inferred omnivorous diet. Panphagia is one of the earliest known dinosaurs, and is an important find which may mark the transition of diet in early sauropodomorph dinosaurs.
+    dispute:
+      summary: |
+        Panphagia protos is a basalmost sauropodomorph from the Late Triassic of Argentina, sometimes placed within Saturnaliidae and sometimes as a more basal sauropodomorph; its membership is not firmly established (Jones, 2026).
+      history:
+        - date: 2026-06-29
+          note: Placed at Saturnaliidae following its common recovery there (P2); the basal-Sauropodomorpha-incertae-sedis alternative is recorded.
     diet: omnivore
     locomotion: bipedal
     paleoenvironment:
@@ -108472,6 +109629,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -109690,6 +110849,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -109801,6 +110962,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -110644,6 +111807,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -110777,6 +111942,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -111217,6 +112384,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -111328,8 +112497,17 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
       - Titanosauria
     authors: Filippi, L. S.; Canudo, J. I.; Salgado, J. L.; Garrido, A.; García, R.; Cerda, I. A.; Otero, A.
     described: 2011
@@ -111420,6 +112598,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -111704,6 +112884,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -111837,6 +113019,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -112259,6 +113443,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -112536,6 +113722,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -112748,11 +113936,17 @@ genera:
     described: 2001
   Plateosauravus:
     genus: Plateosauravus
-    parent: Plateosauridae
+    parent: Plateosauria
     pronunciation:
       phonetic: PLAY-tee-o-SAWR-AY-vus
     etymology: From the genus name Plateosaurus combined with Latin 'avus' meaning 'grandfather'; translates as 'grandfather of Plateosaurus', indicating it as an ancestral or more primitive relative.
     description: Plateosauravus is a basal plateosaurian of uncertain affinities from the Late Triassic Elliot Formation of South Africa.
+    dispute:
+      summary: |
+        Plateosauravus cullingworthi has been recovered in almost every position among early sauropodomorphs; the most recent comprehensive study found it a massospondylid (Krupandan, 2019), whereas other analyses place it in Plateosauridae or as a basal massopodan (Wang and others, 2025).
+      history:
+        - date: 2026-06-29
+          note: Placed at Plateosauria incertae sedis (P2); bounces between Plateosauridae and basal Massopoda, the lowest node both accept.
     locomotion: bipedal
     paleoenvironment:
       - fluvial
@@ -112855,7 +114049,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
-      - Plateosauridae
+      - Bagualosauria
+      - Plateosauria
     authors: Huene, F. V.
     described: 1932
   Plateosaurus:
@@ -113075,6 +114270,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Plateosauridae
     authors: Fraas, E.
     described: 1913
@@ -113490,6 +114687,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -114438,6 +115637,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Massospondylidae
     authors: Kutty, T. S.; Chatterjee, S.; Galton, P. M.; Upchurch, P.
@@ -116358,6 +117559,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -116985,6 +118188,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -117093,6 +118298,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -117221,6 +118428,10 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
     authors: McPhee, B. W.; Bonnan, M. F.; Yates, A. M.; Neveling, J.; Choiniere, J. N.
     described: 2015
@@ -117408,6 +118619,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -117835,11 +119048,17 @@ genera:
     described: 2025
   Qianlong:
     genus: Qianlong
-    parent: Sauropodomorpha
+    parent: Sauropodiformes
     etymology: From Mandarin '黔' (Qian), a name for Guizhou Province, China, and 'long' (龙) meaning 'dragon'; meaning 'Guizhou dragon.' The specific name shouhu means 'guarding' in Mandarin, referencing the associated adult and embryo fossils.
     pronunciation:
       phonetic: chee-an-long
     description: Qianlong is an extinct genus of basal sauropodomorph dinosaur from the Early Jurassic Ziliujing Formation of China. Known from partial skeletons of three mature individuals associated with several eggs, some of which contain embryos, these fossils may represent the oldest leathery eggs currently known.
+    dispute:
+      summary: |
+        Qianlong shouhu was placed as a basal sauropodiform, sister to Yunnanosaurus, by its describers (Han and others, 2023), but is recovered among basal massopodans by Wang and others (2025).
+      history:
+        - date: 2026-06-29
+          note: Reparented to Sauropodiformes incertae sedis following its describers (P2); the basal-Massopoda alternative is recorded.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -117936,6 +119155,10 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
     authors: Han, F.; Yu, Y.; Zhang, S.; Zeng, R.; Wang, X.; Cai, H.; Wu, T.; Wen, Y.; Cai, S.; Li, C.; Wu, R.; Zhao, Q.; Xu, X.
     described: 2023
   Qianzhousaurus:
@@ -118162,6 +119385,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -118276,6 +119501,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -118365,6 +119592,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -118454,6 +119683,10 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
     authors: Xue, X.; Zhang, Y.; Bi, Y.; Yue, L.; Chen, D.
     described: 1996
@@ -118772,6 +120005,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -118874,6 +120109,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -119087,6 +120324,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -119674,6 +120913,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -120118,6 +121359,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -120228,6 +121471,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -120780,6 +122025,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -120883,6 +122130,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -121350,6 +122599,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -121457,6 +122708,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Riojasauridae
     authors: Bonaparte, J. F.
@@ -121753,6 +123006,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -121772,11 +123027,17 @@ genera:
     described: 2000
   Ruehleia:
     genus: Ruehleia
-    parent: Plateosauridae
+    parent: Plateosauria
     pronunciation:
       phonetic: ROO-lee-uh
     etymology: Named for German paleontologist Hugo Rühle von Lilienstern, who collected paleontological material from the region.
     description: Ruehleia is a genus of sauropodomorph dinosaur from the Late Triassic period of Germany. The type species is R. bedheimensis, described by Galton in 2001, and is named for the German paleontologist Hugo Rühle von Lilienstern. Discovered in 1952, the holotype consists of one nearly complete skeleton, including cervical (neck), dorsal (back), and caudal (tail) vertebrae; a partial sacrum; a scapulocoracoid; pelvic bones; most limb bones; and a partially complete manus (hands). The fossils were found in the Trossingen Formation of central Germany and date to the Norian stage, around 216 to 208 million years ago.
+    dispute:
+      summary: |
+        Ruehleia bedheimensis is a German Late Triassic sauropodomorph usually treated as a plateosaurid, but the analysis of Wang and others (2025) instead places it with Plateosauravus as a basal massopodan.
+      history:
+        - date: 2026-06-29
+          note: Placed at Plateosauria incertae sedis (P2); Plateosauridae versus basal Massopoda unresolved.
     locomotion: bipedal
     paleoenvironment:
       - fluvial
@@ -121853,7 +123114,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
-      - Plateosauridae
+      - Bagualosauria
+      - Plateosauria
     authors: Galton, P. M.
     described: 2001
   Rugocaudia:
@@ -121940,6 +123202,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -122160,6 +123424,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -122273,6 +123539,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -122385,6 +123653,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -122603,6 +123873,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -122907,6 +124179,10 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
     authors: Young, C. C.
     described: 1944
@@ -123112,11 +124388,17 @@ genera:
     described: 2019
   Sarahsaurus:
     genus: Sarahsaurus
-    parent: Massospondylidae
+    parent: Massopoda
     etymology: Named in honor of Sarah (Mrs. Ernest) Butler, an Austin philanthropist who helped fund the 'Dino Pit' exhibit at the Austin Nature and Science Center, combined with Greek 'sauros' meaning 'lizard'.
     pronunciation:
       phonetic: SAH-ruh-SOR-us
     description: Sarahsaurus is a genus of basal sauropodomorph dinosaur which lived during the Early Jurassic period in what is now northeastern Arizona, United States.
+    dispute:
+      summary: |
+        Sarahsaurus aurifontanalis is recovered just outside Massospondylidae as a basal massopodan by Apaldetti and others (2011) but within Massospondylidae by Chapelle and others (2019); Jones (2026) leaves it unresolved between the two.
+      history:
+        - date: 2026-06-29
+          note: Placed at Massopoda incertae sedis (P2); Massospondylidae membership (Chapelle and others, 2019) is recorded but not adopted.
     locomotion: bipedal
     paleoenvironment:
       - fluvial
@@ -123229,8 +124511,9 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
-      - Massospondylidae
     authors: Rowe, T. B.; Sues, H.-D.; Reisz, R. R.
     described: 2010
   Sarcolestes:
@@ -123566,6 +124849,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -124512,6 +125797,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -124889,6 +126176,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -125201,6 +126490,12 @@ genera:
       phonetic: shlyt-HY-mee-uh
     etymology: Named after Schleitheim, the Swiss locality (in the canton of Schaffhausen) where the type material was found, with the Latinised suffix '-ia'.
     description: Schleitheimia is an extinct genus of sauropodiform sauropodomorph dinosaur, from the Gruhalde Member of Klettgau Formation of Switzerland. The type species, Schleitheimia schutzi was formally described in 2020.
+    dispute:
+      summary: |
+        Schleitheimia schutzi is recovered as the immediate sister taxon of Sauropoda (or in a polytomy of direct outgroups to Sauropoda) by Rauhut and others (2020).
+      history:
+        - date: 2026-06-29
+          note: Placed at Sauropodiformes incertae sedis (P2); recovered as sister to Sauropoda, boundary deferred to the Sauropoda pass.
     locomotion: facultative
     paleoenvironment:
       - fluvial
@@ -125289,6 +126584,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
     authors: Rauhut, O. W. M.; Holwerda, F. M.; Furrer, H.
@@ -125951,6 +127248,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
     authors: Otero, A.; Krupandan, E.; Pol, D.; Chinsamy, A.; Choiniere, J.
@@ -126174,6 +127473,12 @@ genera:
     pronunciation:
       phonetic: SAY-eet-AWD
     description: Seitaad is a genus of sauropodomorph dinosaur which lived during the Early Jurassic period in what is now southern Utah, United States.
+    dispute:
+      summary: |
+        Seitaad ruessi is recovered outside Massospondylidae among basal Sauropodiformes by Apaldetti and others (2011) but within Massospondylidae by Rauhut and others (2020).
+      history:
+        - date: 2026-06-29
+          note: Placed at Sauropodiformes incertae sedis (P2); the Massospondylidae alternative is recorded.
     locomotion: facultative
     paleoenvironment:
       - arid
@@ -126273,6 +127578,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
     authors: Sertich, J. J. W.; Loewen, M. A.
@@ -127448,6 +128755,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -128068,6 +129377,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -128825,6 +130136,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -128925,6 +130238,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -129211,6 +130526,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -131453,6 +132770,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -131549,6 +132868,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -131666,8 +132987,16 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
+      - Titanosauriformes
       - Brachiosauridae
     authors: Ratkevich, R.
     described: 1998
@@ -131770,8 +133099,16 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
+      - Titanosauriformes
       - Brachiosauridae
     authors: Royo-Torres, R.; Fuentes, C.; Meijide, M.; Meijide-Fuentes, F.; Meijide-Fuentes, M.
     described: 2017
@@ -132326,6 +133663,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -134969,6 +136308,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -135195,6 +136536,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -136283,6 +137626,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -136489,6 +137834,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -136894,6 +138241,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -137396,6 +138745,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -137613,6 +138964,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -138040,6 +139393,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -138143,6 +139498,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -138509,6 +139866,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -138628,6 +139987,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -139652,6 +141013,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -140655,8 +142018,17 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
       - Titanosauria
     authors: Pereira, P. V L. G. C.; Bandeira, K. L. N.; Vidal, L. S.; Ribeiro, T. B.; Candeiro, C. R. dos A.; Bergqvist, L. P.
     described: 2024
@@ -141314,6 +142686,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -141812,6 +143186,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -141944,8 +143320,17 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
       - Titanosauria
     authors: Lydekker, R.
     described: 1877
@@ -142262,6 +143647,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -142355,6 +143742,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -142605,6 +143994,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -143466,6 +144857,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -143906,6 +145299,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -144199,6 +145594,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -144645,11 +146042,17 @@ genera:
     described: 1958
   Tuebingosaurus:
     genus: Tuebingosaurus
-    parent: Massopoda
+    parent: Sauropodiformes
     etymology: Named after Tübingen, Germany (where the specimen was stored at the University of Tübingen), combined with Greek sauros meaning 'lizard'; translates as 'Tübingen lizard'
     pronunciation:
       phonetic: tur-bin-jo-sor-us
     description: Tuebingosaurus is an extinct genus of massopodan sauropodomorph dinosaur from the Late Triassic Trossingen Formation of Germany. The genus contains a single species, Tuebingosaurus maierfritzorum, originally identified as a specimen of Plateosaurus.
+    dispute:
+      summary: |
+        Tuebingosaurus maierfritzorum is a derived massopodan recovered close to the origin of Sauropoda; its position is labile, most often near Schleitheimia or on the line leading to Sauropoda (Regalado Fernandez and Werneburg, 2022).
+      history:
+        - date: 2026-06-29
+          note: Placed at Sauropodiformes incertae sedis (P2); near the Sauropoda boundary, position labile.
     locomotion: bipedal
     paleoenvironment:
       - fluvial
@@ -144737,7 +146140,10 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
+      - Sauropodiformes
     authors: Fernández, O. R. R.; Werneburg, I.
     described: 2022
   Tugulusaurus:
@@ -145150,6 +146556,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -145896,6 +147304,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -146120,6 +147530,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -146214,6 +147626,10 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
     authors: Kim, H. M.
     described: 1983
@@ -146342,7 +147758,7 @@ genera:
     described: 2021
   Unaysaurus:
     genus: Unaysaurus
-    parent: Plateosauridae
+    parent: Unaysauridae
     etymology: From 'unay', a word meaning 'black water' in the Tupi language indigenous to Brazil, referring to the black-water stream near the discovery site, combined with Greek 'sauros' meaning 'lizard'.
     pronunciation:
       phonetic: yoo-na-hee-SOR-us
@@ -146460,7 +147876,9 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
-      - Plateosauridae
+      - Bagualosauria
+      - Plateosauria
+      - Unaysauridae
     authors: Leal, L. A.; Azevedo, S. A. K.; Kellner, A. W. A.; da Rosa, Á. A. S.
     described: 2004
   Unenlagia:
@@ -146963,6 +148381,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -147289,8 +148709,17 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
       - Titanosauria
     authors: Paul, G. S.
     described: 2025
@@ -147507,6 +148936,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -149035,8 +150466,16 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
+      - Titanosauriformes
       - Brachiosauridae
     authors: Tidwell, V.; Carpenter, K.; S. Meyer
     described: 2001
@@ -149536,6 +150975,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -149645,6 +151086,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -149747,8 +151190,16 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
+      - Titanosauriformes
       - Brachiosauridae
     authors: Mannion, P. D.; Allain, R.; Moine, O.
     described: 2017
@@ -149842,6 +151293,10 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
     authors: Raath, M. A.
     described: 1972
@@ -150095,6 +151550,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -150788,6 +152245,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -150881,6 +152340,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
     authors: Wang, Y.-M.; Zhang, Q.-N.; Wang, Y.-C.; Xu, H.; Chen, J.; Feng, Z.; Xu, X.; Wang, T.; You, H.-L.
     described: 2025
@@ -151529,6 +152990,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -151863,6 +153326,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
     authors: Hu, S.-B.; Wang, Y.-C.; Mo, X.; Zhang, X.-Q.; Zeng, W.-T.; Wang, T.; Sun, Z.-B.; Dong, Q.-X.; Guan, Q.; Liu, Y.-H.; Zhang, Y.-S.; Bing, Y.; Wang, Y.-M.; You, H.-L.
     described: 2026
@@ -151965,6 +153430,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -152290,6 +153757,12 @@ genera:
     pronunciation:
       phonetic: sheeng-SHAH-long
     description: Xingxiulong is a genus of bipedal massopodan sauropodomorph from the Early Jurassic of China. It contains two species; the type species is X. chengi, described by Wang et al. in 2017 from three specimens, two adults and an immature individual, that collectively constitute a mostly complete skeleton. Adults of this species measured 4-5 meters (13-16 ft) long and 1-1.5 meters (3.3-4.9 ft) tall. A second species, X. yueorum, was described by Chen et al. in 2025 based on a partial articulated postcranial skeleton of an adult individual larger than X. chengi.
+    dispute:
+      summary: |
+        Xingxiulong chengi was described as a basal sauropodiform, sister to Jingshanosaurus (Wang and others, 2017), but a basal massopodan position is only slightly less parsimonious and is recovered by some analyses (Wang and others, 2025).
+      history:
+        - date: 2026-06-29
+          note: Placed at Sauropodiformes incertae sedis following its describers (P2); the basal-Massopoda alternative is recorded.
     locomotion: bipedal
     paleoenvironment:
       - fluvial
@@ -152382,6 +153855,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
     authors: Wang, Y.-M.; You, H.-L.; Wang, T.
@@ -152583,6 +154058,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -152918,11 +154395,17 @@ genera:
     described: 2010
   Xixiposaurus:
     genus: Xixiposaurus
-    parent: Plateosauridae
+    parent: Massopoda
     etymology: Named for the village of Xixipo in Lufeng County, Yunnan, China, where the holotype was discovered, combined with Greek 'sauros' meaning 'lizard'.
     pronunciation:
       phonetic: she-SHEE-po-SOR-us
     description: Xixiposaurus is a genus of "prosauropod" dinosaur which existed in what is now Lower Lufeng Formation, China during the lower Jurassic period. It was first named by Sekiya Toru in 2010 and the type species is X. suni.
+    dispute:
+      summary: |
+        Xixiposaurus suni is an Early Jurassic Chinese sauropodomorph of unstable position, recovered near Mussaurus in Massopoda or among basal massospondylids depending on the analysis.
+      history:
+        - date: 2026-06-29
+          note: Placed at Massopoda incertae sedis (P2); Massospondylidae and Sauropodiformes alternatives are unresolved.
     locomotion: bipedal
     paleoenvironment:
       - fluvial
@@ -153007,7 +154490,9 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
-      - Plateosauridae
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
     authors: Sekiya, T.
     described: 2010
   Xiyunykus:
@@ -153737,6 +155222,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -154257,6 +155744,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -154437,18 +155926,33 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
       - Titanosauria
     authors: Filippi, L. S.; Bellardini, F.; Carballido, J. L.; Méndez, A. H.; Garrido, A. C.
     described: 2026
   Yimenosaurus:
     genus: Yimenosaurus
-    parent: Prosauropoda
+    parent: Plateosauridae
     pronunciation:
       phonetic: yee-MUHN-o-SAWR-us
     etymology: Named after Yimen County (also written as Yiman) in Yunnan Province, China where it was found, combined with Greek sauros meaning 'lizard'; translates as 'Yiman reptile'
     description: Yimenosaurus is an extinct genus of plateosaurid sauropodomorph dinosaur that lived in China in the Early Jurassic. The genus was first named in 1990 by Ziqi Bai, Jie Yang and Guohui Wang, along with its type and only species, Yimenosaurus youngi. The species name honors renowned Chinese paleontologist Yang Zhongjian, the father of Chinese paleontology, known as C.C. Young in English. Known material includes the holotype, an almost complete skull and mandible, as well as incomplete cervical and dorsal vertebrae, a mostly complete sacrum, an ilium, ischia, partial ribs and complete femur, and a paratype, a well-preserved postcrania with a fragmentary skull. In 2010 Paul estimated its length at 9 meters (30 ft) and its weight at 2 tonnes (2.2 short tons).
+    dispute:
+      summary: |
+        Yimenosaurus youngi was originally referred to Plateosauridae but has not been included in modern phylogenetic analyses, so its placement is provisional (Jones, 2026).
+      history:
+        - date: 2026-06-29
+          note: Reparented from the deprecated Prosauropoda to Plateosauridae following the historical assignment (P2); not tested in a modern analysis.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -154537,8 +156041,7 @@ genera:
       - Sauropodomorpha
       - Bagualosauria
       - Plateosauria
-      - Anchisauria
-      - Prosauropoda
+      - Plateosauridae
     authors: Bai, Z.; Yang, J.; G. Wang
     described: 1990
   Yingshanosaurus:
@@ -154860,6 +156363,12 @@ genera:
     pronunciation:
       phonetic: YEEZ-hoo-SOR-us
     description: Yizhousaurus is a genus of basal sauropodiform dinosaurs which existed in what is now Lufeng Formation, Yunnan Province of southern China during the lower Jurassic period. Identified from a nearly complete and exquisitely preserved skeleton, it is the most complete basal sauropod currently known with intact skull. Although its name was revealed in a 2010 Geological Society of America abstract by Sankar Chatterjee, T. Wang, S.G. Pan, Z. Dong, X.C. Wu, and Paul Upchurch, it wasn't validly named and described until 2018. The type species is Yizhousaurus sunae.
+    dispute:
+      summary: |
+        Yizhousaurus sunae is a sauropodiform with a convergently sauropod-like skull; Jones (2026) places it in Sauropodiformes rather than Sauropoda, though it has been called one of the most complete early sauropods.
+      history:
+        - date: 2026-06-29
+          note: Placed at Sauropodiformes incertae sedis following Jones (2026) (P2); the basal-Sauropoda alternative is recorded.
     locomotion: facultative
     paleoenvironment:
       - fluvial
@@ -154958,6 +156467,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
     authors: Zhang, Q.-N.; You, H.-L.; Wang, T.; Chatterjee, S.
@@ -155065,6 +156576,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -155384,6 +156897,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -155901,6 +157416,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -155920,6 +157437,12 @@ genera:
       phonetic: yoo-NAN-oh-SOR-uhs
     etymology: Named for Yunnan Province, China, where the fossils were found, combined with Greek 'sauros' meaning 'lizard'.
     description: Yunnanosaurus is an extinct genus of sauropodomorph dinosaur that lived approximately 199 to 183 million years ago in what is now the Yunnan Province, in China, for which it was named. Yunnanosaurus was a large sized, moderately-built, ground-dwelling, quadrupedal herbivore, that could also walk bipedally, and ranged in size from 7 meters (23 feet) long and 2 m (6.5 ft) high to 4 m (13 ft) high in the largest species.
+    dispute:
+      summary: |
+        Yunnanosaurus huangi is most commonly recovered among basal Sauropodiformes (Jones, 2026), close to Jingshanosaurus and Lishulong, but is sometimes placed within Massospondylidae or as a basal massopodan.
+      history:
+        - date: 2026-06-29
+          note: Placed at Sauropodiformes incertae sedis following the prevailing view and Jones (2026) (P3); the Massospondylidae alternative is recorded.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -156025,6 +157548,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
     authors: Young, C.-C.
@@ -156528,7 +158053,14 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
       - Macronaria
     authors: Dai, H.; Tan, C.; Xiong, C.; Ma, Q.; Li, N.; Yu, H.; Wei, Z.; Wang, P.; Yi, J.; Wei, G.; You, H.; Ren, X.
     described: 2022
@@ -156862,6 +158394,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -157264,6 +158798,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -158156,6 +159692,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -158450,6 +159988,8 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
       - Massopoda
       - Sauropodiformes
       - Sauropoda
@@ -158550,6 +160090,10 @@ genera:
       - Dinosauria
       - Saurischia
       - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
       - Sauropoda
     authors: Dong, Z.; Zhou, S.; H. Zhang
     described: 1983
