@@ -114,6 +114,18 @@ the member-genus count, and confirm the GitHub issue is **#1860** (this pass
 logs progress there, it does not open/close a per-clade issue). Wait for the
 user to confirm scope before continuing.
 
+**If the batch is defined by exclusion** ("non-titanosaur Macronaria", "rest of
+Ornithopoda") or sits against a live clade boundary, **say so at scope time and
+warn that some current members will leak across the boundary.** By construction,
+genera the recent analyses pull into the *excluded* sister group are mis-parented
+in your subtree and must be moved out — reparent each to the adjacent clade (the
+node it actually belongs to, e.g. `Titanosauria`, `Eusauropoda`, `Neosauropoda`)
+and mark it **deferred** to that clade's future batch, rather than leaving it
+wrongly placed or forcing it into your batch's nodes. Flag this expectation up
+front so the eviction/deferral list at Step 6 is no surprise. (Macronaria lesson:
+Sonidosaurus + Mansourasaurus → Titanosauria, Dzharatitanis → Neosauropoda,
+Atlasaurus + Tehuelchesaurus → Eusauropoda.)
+
 ## Step 2 — Triage (Wikipedia as a *signal*, not a verdict)
 
 Dispatch **one firewalled triage agent** (Sonnet, `general-purpose`) that reads
@@ -245,6 +257,22 @@ total-evidence / dedicated phylogenetic analyses, any redescription that
 re-scores the disputed taxa). Mention they can lean on Wikipedia taxoboxes or
 OpenAlex to find candidates. Wait for the user to say which landed.
 
+**When a freshly fetched paper's `author<year>` matches an existing BARE key,
+the new paper takes suffix `b` and the existing bare key is retagged to `a` —
+and you must rename every reference to the old bare key in the SAME batch.**
+This is the inverse of the corpus-collision case above (where the *wanted* paper
+was already taken): here the *incoming* paper collides. The validator's
+"Reference key disambiguation" check fails the moment a bare `<key>` coexists
+with any `<key>b`, so do the rename proactively at apply time, not reactively
+after `npm run validate`. Mechanically: (a) ingest the new paper as `<key>b`;
+(b) `grep -rln '<key>\b' clades genera` for the old bare key and rewrite each
+`id:`/`erected_in:`/`described_in:`/`references: [...]` occurrence to `<key>a`.
+(Macronaria lesson: fetching D'Emic's titanosauriform framework as `demic2012b`
+forced the existing Acrocanthosaurus `demic2012` → `demic2012a`.) The new paper
+will not be in `dist/references.bib` until some data file references it, so
+author its full citation in the first clade/genus file that uses it
+(`feedback_disambiguation_suffix_order`, `feedback_bootstrap_key_check`).
+
 If a needed paper is unobtainable, park the affected genus/clade at the
 least-inclusive uncontested node + a `dispute:` flag — never fabricate a
 placement (`feedback_no_seeding_from_recall`). The `dispute:` field states only
@@ -314,6 +342,18 @@ Tell each agent: do NOT invent; `null`/`[]` when the paper is silent; focus
 only on the target taxa; write an `EXTRACTION FAILED` sentinel if the markdown
 is empty/boilerplate. Run multiple agents in parallel (one message).
 
+**For a large batch, sequence in two waves to avoid redundant reads.** Wave A =
+the framework/dedicated-analysis papers (the decision-makers under P3): one
+agent per framework paper, each told the full target-taxon list. Wait for Wave A
+to return, then build the set of genera that *no* framework scored. Wave B =
+describing-paper reads only for those framework-orphan genera, grouped by region
+or theme (a few short describing papers per agent under "logical group"), each
+returning the original placement + any in/out-of-scope signal. This keeps you
+from reading 84 describing papers when the frameworks already cover most genera,
+and surfaces the true orphans (recent/obscure/dubious taxa) cleanly. Run Jones
+(Step 5) only after BOTH waves return. (Macronaria lesson: ~16 framework + ~7
+orphan agents covered 84 genera with almost no overlap.)
+
 **Expect the agents to correct your priors** — in the pilot they reversed three
 of my pre-committed dispositions (Bagaraatan stays Tyrannosauridae; Labocania
 is *Theropoda incertae sedis*, not carcharodontosaurid; Timimus is an
@@ -338,7 +378,14 @@ cross-check, so it should react to the primary findings.** Wait for the
 dedicated-analysis JSON, then dispatch a firewalled Jones agent that covers the
 **ENTIRE member set — every genus and sub-clade in the batch gets a Jones
 verdict**, not just the contested ones. For each taxon, ask Jones where it
-places it / what status it gives it. ON TOP OF that full pass, single out the
+places it / what status it gives it. **Have the agent report BOTH Jones's adopted
+classification (the taxon's CLASSIFICATION box) AND its prose verdict, and flag
+where they diverge** — Jones often pins a box to one hypothesis while the
+surrounding prose lists the competing analyses, and that divergence is itself
+dispute signal you would miss by reading only the box. (Macronaria lesson:
+Atlasaurus's box reads Camarasauromorpha while its prose lists the
+outside-Macronaria analyses; Tehuelchesaurus's box is Turiasauria, visible only
+in the box, not the headline.) ON TOP OF that full pass, single out the
 *contested* claims (surprises, clade moves, taxa ejected from the clade,
 synonymies, anything where the analyses disagree with each other or with the
 current tree) and have Jones explicitly **confirm / dispute / call
@@ -415,6 +462,12 @@ Per-clade **reset-and-rebuild**, not a big-bang flatten. Once the user approves:
    described_in: <key>        # omit if same as erected_in
    diagnostic_features:
      - 3–6 synapomorphy bullets, American English.
+   dispute:                   # ONLY for a P6 clade-level dispute; omit otherwise
+     summary: >
+       The clade's own higher placement / validity debate (who argues what).
+     history:
+       - date: "<YYYY-MM-DD>"
+         note: Placed at <parent> following <source> (P-rule); <what's unresolved>.
    references:
      - id: <key>
        authors: ...           # initials form "Surname, F. M." (project house style)
@@ -423,6 +476,13 @@ Per-clade **reset-and-rebuild**, not a big-bang flatten. Once the user approves:
        journal: ...
        # plain-text notes: only; no markdown (feedback_no_markdown_in_reference_notes)
    ```
+
+   A clade gets a `dispute:` block (same shape as a genus dispute) **only** when
+   the node's own position or monophyly is contested (P6) — e.g. Euhelopodidae
+   (type genus possibly non-neosauropod) or Diamantinasauria (in vs out of
+   Titanosauria). Record it **once** here; member genera carry no per-genus
+   dispute for the clade-level debate. See `clades/Khebbashia.yml` /
+   `clades/Megaraptora.yml` for worked examples.
 
    Clade `authors`/`year` are **build-derived** from `erected_in` — never write
    them in source. Both `erected_in` and `described_in` must resolve to a
