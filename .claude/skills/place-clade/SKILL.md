@@ -147,10 +147,20 @@ consistent vs need-review vs disputed, the candidate clades, and the
 ## Step 3 — Literature-sourcing pause (first-class)
 
 Sourcing pauses are part of the process, not a failure. Build the
-papers-needed list from triage. For each paper, **check the bib before asking
-for it** — and pick the *right* same-author/year key: suffixes like
-`loewen2013a`/`b` or `benson2010a` are usually distinct real papers, not
-miskeys, so confirm by title (`feedback_bootstrap_key_check`,
+papers-needed list from triage. For each paper, **check the bib AND the corpus
+markdown dir before asking for it** — and pick the *right* same-author/year key.
+A bare `author<year>` key you reconstruct from memory frequently does NOT exist
+as such: the paper usually lives under a **letter-suffixed split**
+(`butler2008b`, `pol2011a`, `riguetti2022a`) or a **diacritic-preserving**
+spelling (`dieudonné2020`, not `dieudonne2020`). So **always check for a key
+split, and whether any paper in the split is the one you want**: (a) list every
+sibling under that author+year — `ls $OPEN_PALEO_PAPERS_DIR/markdown/<author><year>*.md`
+and grep the bib for `<author><year>`, including diacritic-folded and -preserved
+spellings — and (b) inspect each candidate's title / first markdown header to
+find the one you actually need (suffixes like `loewen2013a`/`b` are usually
+distinct real papers, not miskeys). Only treat a paper as a genuine sourcing gap
+once you have confirmed none of the existing splits is it
+(`feedback_bootstrap_key_check`, `feedback_hyphenated_surname_keys`,
 `feedback_author_spelling`).
 
 **Hard stop.** Give the user the list of phylogeny papers to fetch into
