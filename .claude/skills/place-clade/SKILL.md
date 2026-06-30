@@ -421,6 +421,18 @@ Synthesize the review JSON into a placement decision, in the main thread:
   it. Genera that conservative placement lands in a messy, not-yet-reconciled
   backbone region are **deferred** with a `dispute:` note and listed for the
   backbone pass (pilot precedent: Megaraptora + Gualicho deferred).
+- **Validity / affinity tickets → "Literature Review" GitHub label.** Any
+  nomen-dubium flag, contested synonymy, or untested/under-described taxon
+  surfaced during the batch (e.g. a genus erected with no phylogenetic analysis,
+  a synonymy one paper proposes and another rejects, a wastebasket type genus)
+  is filed as a GitHub issue under the **`Literature Review`** label — always,
+  as a permanent part of this workflow. Bundle a batch's items into one
+  issue when they share a theme; the issue records the published debate and the
+  conservative placement taken, never local sourcing state
+  (`feedback_no_corpus_reference_in_data`). The placement itself stays
+  conservative (least-inclusive + `dispute:`); the ticket tracks the unresolved
+  taxonomy for a future revisit. Open it at commit/log time (Step 9–10) and note
+  its number in the #1860 log entry.
 - **Naming authorities for each kept clade.** `erected_in` = the
   nomenclatural-act paper; `described_in` = the authoritative descriptive/
   diagnostic source if different; `type_genus` for rank-based names, **omitted**
