@@ -1,7 +1,7 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-06-30T21:06:55.840Z
-  clade_count: 214
+  built_at: 2026-06-30T23:59:54.183Z
+  clade_count: 211
   genus_count: 1398
   license: CC-BY-4.0
   schema_version: 1.0.0
@@ -173,20 +173,17 @@ tree:
                                             Somphospondyli:
                                               Titanosauria:
                                                 Lithostrotia:
-                                                  Saltasauroidea:
-                                                    Lohuecosauria:
+                                                  Eutitanosauria:
+                                                    Colossosauria:
+                                                      Lognkosauria: {}
+                                                      Rinconsauria:
+                                                        Aeolosaurini: {}
+                                                    Saltasauroidea:
+                                                      Nemegtosauridae: {}
+                                                      Lirainosaurinae: {}
                                                       Saltasauridae:
-                                                        Saltasaurinae:
-                                                          Saltasaurini: {}
                                                         Opisthocoelicaudiinae: {}
-                                                  Aeolosaurini: {}
-                                                  Nemegtosauridae: {}
-                                                Colossosauria:
-                                                  Rinconsauria: {}
-                                                  Lognkosauria: {}
-                                                Eutitanosauria:
-                                                  Lirainosaurinae: {}
-                                                Titanosauridae: {}
+                                                        Saltasaurinae: {}
                                               Euhelopodidae: {}
                                               Diamantinasauria: {}
                                             Brachiosauridae: {}
@@ -331,6 +328,8 @@ clades:
       - Ceratosauria
       - Abelisauroidea
   Aeolosaurini:
+    description: |
+      Aeolosaurini is a tribe of rinconsaurian titanosaurs erected by Franco-Rosas et al. (2004) for Aeolosaurus, Gondwanatitan and their relatives, and given a formal phylogenetic content by Carballido et al. (2017) and subsequent analyses. Its members are medium-sized Late Cretaceous titanosaurs of South America and Africa, diagnosed chiefly by distinctive anteriorly inclined caudal neural spines and prezygapophyses that project well beyond the front of the centrum, giving the tail a characteristic articulation.
     taxonomy:
       - Life
       - Animalia
@@ -356,7 +355,39 @@ clades:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
+      - Colossosauria
+      - Rinconsauria
       - Aeolosaurini
+    type_genus: Aeolosaurus
+    described: 2004
+    authors: Franco-Rosas, A. C.; Salgado, L.; Rosas, C. F.; Carvalho, I. S.
+    diagnostic_features:
+      - Anterior and middle caudal neural spines strongly inclined anteriorly
+      - Caudal prezygapophyses elongate, projecting beyond the anterior margin of the centrum
+      - Strongly procoelous caudal centra with prominent distal condyles
+      - Haemal arches with an anterior expansion
+    references:
+      - id: franco-rosas2004
+        authors: Franco-Rosas, A. C.; Salgado, L.; Rosas, C. F.; Carvalho, I. S.
+        year: 2004
+        title: Nuevos materiales de titanosaurios (Sauropoda) en el Cretácico Superior de Mato Grosso, Brasil
+        journal: Revista Brasileira de Paleontologia
+        volume: "7"
+        issue: "3"
+        pages: 329-336
+        notes: Erected the tribe Aeolosaurini.
+      - id: carballido2017
+        authors: Carballido, J. L.; Pol, D.; Otero, A.; Cerda, I. A.; Salgado, L.; Garrido, A. C.; Ramezani, J.; Cúneo, N. R.; Krause, J. M.
+        year: 2017
+        title: A new giant titanosaur sheds light on body mass evolution among sauropod dinosaurs
+        journal: "Proceedings of the Royal Society B: Biological Sciences"
+        volume: "284"
+        issue: "1860"
+        pages: "20171219"
+        publisher: The Royal Society
+        doi: 10.1098/rspb.2017.1219
+        notes: Recovered Aeolosaurini within Rinconsauria in a dedicated phylogenetic analysis.
   Afrovenatorinae:
     taxonomy:
       - Life
@@ -1898,6 +1929,8 @@ clades:
         volume: "1914"
         pages: 154-168
   Colossosauria:
+    description: |
+      Colossosauria is a stem-based clade of derived titanosaurs defined as all taxa closer to Patagotitan than to Saltasaurus. Named by González Riga et al. (2019) and incorporated into the node-stem framework of Carballido et al. (2022), it unites the giant-bodied Lognkosauria (Argentinosaurus, Patagotitan, Puertasaurus and relatives) with the smaller-bodied Rinconsauria, and so spans the largest known terrestrial animals down to medium-sized forms. Members are characterized chiefly by features of the appendicular skeleton.
     taxonomy:
       - Life
       - Animalia
@@ -1922,7 +1955,36 @@ clades:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
+      - Eutitanosauria
       - Colossosauria
+    described: 2019
+    authors: González Riga, B. J.; Lamanna, M. C.; Otero, A.; Ortiz David, L. D.; Kellner, A. W. A.; Ibiricu, L. M.
+    diagnostic_features:
+      - Eye-shaped (reniform) sternal plates with a strong lateral expansion
+      - Robust, transversely broad metacarpals forming a vertical colonnade
+      - Femur with a prominent lateral bulge below the greater trochanter
+      - Forelimb and hindlimb proportions indicating a wide-gauge stance
+    references:
+      - id: gonzálezriga2019
+        authors: González Riga, B. J.; Lamanna, M. C.; Otero, A.; Ortiz David, L. D.; Kellner, A. W. A.; Ibiricu, L. M.
+        year: 2019
+        title: An overview of the appendicular skeletal anatomy of South American titanosaurian sauropods, with definition of a newly recognized clade
+        journal: Anais da Academia Brasileira de Ciências
+        volume: "91"
+        issue: suppl 2
+        pages: e20180374
+        doi: 10.1590/0001-3765201920180374
+        notes: Defined Colossosauria.
+      - id: carballido2022
+        authors: Carballido, J. L.; Otero, A.; Mannion, P. D.; Salgado, L.; Pérez Moreno, A. P.
+        year: 2022
+        title: "Titanosauria: a critical reappraisal of its systematics and the relevance of the South American record"
+        book: South American Sauropodomorph Dinosaurs
+        publisher: Springer
+        pages: 269-298
+        doi: 10.1007/978-3-030-95959-3_8
+        notes: Recovered Colossosauria as the Patagotitan-line stem of Eutitanosauria.
   Compsognathidae:
     taxonomy:
       - Life
@@ -2861,6 +2923,8 @@ clades:
       - Megalosauridae
       - Eustreptospondylinae
   Eutitanosauria:
+    description: |
+      Eutitanosauria is a node-based clade of derived titanosaurs defined by Carballido et al. (2022) as the least-inclusive clade containing Patagotitan and Saltasaurus. It is the immediate parent of the two principal derived titanosaur lineages — Colossosauria (the branch closer to Patagotitan) and Saltasauroidea (the branch closer to Saltasaurus) — and so encompasses the giant lognkosaurs and rinconsaurs together with the dwarfed, heavily armored saltasaurids. The name was first introduced by Sanz et al. (1999) for a comparable assemblage of advanced titanosaurs; Carballido et al. (2022) recovered and formally redefined it within their node-stem framework.
     taxonomy:
       - Life
       - Animalia
@@ -2885,7 +2949,34 @@ clades:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
       - Eutitanosauria
+    described: 1999
+    authors: Sanz, J. L.; Powell, J. E.; Le Loeuff, J.; Martinez, R.; Pereda-Suberbiola, X.
+    diagnostic_features:
+      - Absence of a prominent prespinal lamina on anterior caudal vertebrae
+      - Strongly procoelous caudal centra throughout the tail
+      - Eye-shaped (reniform) sternal plates
+      - Reduced or absent carpal ossification and loss of manual phalanges
+    references:
+      - id: sanz1999
+        authors: Sanz, J. L.; Powell, J. E.; Le Loeuff, J.; Martinez, R.; Pereda-Suberbiola, X.
+        year: 1999
+        title: Sauropod remains from the Upper Cretaceous of Laño (northcentral Spain). Titanosaur phylogenetic relationships
+        journal: Estudios del Museo de Ciencias Naturales de Alava
+        volume: "14"
+        issue: especial 1
+        pages: 235-255
+        notes: Introduced the name Eutitanosauria.
+      - id: carballido2022
+        authors: Carballido, J. L.; Otero, A.; Mannion, P. D.; Salgado, L.; Pérez Moreno, A. P.
+        year: 2022
+        title: "Titanosauria: a critical reappraisal of its systematics and the relevance of the South American record"
+        book: South American Sauropodomorph Dinosaurs
+        publisher: Springer
+        pages: 269-298
+        doi: 10.1007/978-3-030-95959-3_8
+        notes: Recovered and redefined Eutitanosauria as the node Patagotitan + Saltasaurus, parent of Colossosauria and Saltasauroidea.
   Eutyrannosauria:
     description: |
       Eutyrannosauria is a clade of derived tyrannosauroid theropod dinosaurs comprising Tyrannosauridae and its closest non- tyrannosaurid relatives, the North American taxa Appalachiosaurus and Dryptosaurus. Members of the clade are characterized by large body size, rugose nasal ornamentation, and a suite of cranial pneumaticity features. Voris et al. (2025) recover Khankhuuluu mongoliensis as the immediate sister taxon of Eutyrannosauria.
@@ -3846,33 +3937,8 @@ clades:
         url: http://dx.doi.org/10.1111/j.1096-3642.2010.00665.x
         notes: Erected the subfamilies Limaysaurinae and Nigersaurinae.
   Lirainosaurinae:
-    taxonomy:
-      - Life
-      - Animalia
-      - Chordata
-      - Vertebrata
-      - Sarcopterygii
-      - Tetrapoda
-      - Reptilia
-      - Archosauria
-      - Dinosauria
-      - Saurischia
-      - Sauropodomorpha
-      - Bagualosauria
-      - Plateosauria
-      - Massopoda
-      - Sauropodiformes
-      - Sauropoda
-      - Gravisauria
-      - Eusauropoda
-      - Neosauropoda
-      - Macronaria
-      - Titanosauriformes
-      - Somphospondyli
-      - Titanosauria
-      - Eutitanosauria
-      - Lirainosaurinae
-  Lithostrotia:
+    description: |
+      Lirainosaurinae is a subfamily of derived titanosaurs erected by Díez Díaz et al. (2018) for the European titanosaurs Lirainosaurus, Ampelosaurus and Atsinganosaurus and their relatives. Its members are small- to medium-sized, often gracile titanosaurs of the Late Cretaceous of southwestern Europe (the Ibero-Armorican island), characterized by features of the teeth, vertebrae and osteoderms. The subfamily is recovered within Saltasauroidea in the analysis that named it.
     taxonomy:
       - Life
       - Animalia
@@ -3898,7 +3964,30 @@ clades:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
-  Lognkosauria:
+      - Eutitanosauria
+      - Saltasauroidea
+      - Lirainosaurinae
+    type_genus: Lirainosaurus
+    described: 2018
+    authors: Díez Díaz, V.; Garcia, G.; Pereda-Suberbiola, X.; Jentgen-Ceschino, B.; Stein, K.; Godefroit, P.; Valentin, X.
+    diagnostic_features:
+      - Slender, high-crowned teeth with a low slenderness index relative to other titanosaurs
+      - Anterior caudal vertebrae with dorsoventrally tall neural arches
+      - Osteoderms of relatively small size with a bulb-and-root structure
+      - Gracile limb proportions
+    references:
+      - id: díezdíaz2018
+        authors: Díez Díaz, V.; Garcia, G.; Pereda-Suberbiola, X.; Jentgen-Ceschino, B.; Stein, K.; Godefroit, P.; Valentin, X.
+        year: 2018
+        title: The titanosaurian dinosaur Atsinganosaurus velauciensis (Sauropoda) from the Upper Cretaceous of southern France. New material, phylogenetic affinities, and palaeobiogeographical implications
+        journal: Cretaceous Research
+        volume: "91"
+        pages: 429-456
+        doi: 10.1016/j.cretres.2018.06.015
+        notes: Erected Lirainosaurinae.
+  Lithostrotia:
+    description: |
+      Lithostrotia is a clade of derived titanosaurs comprising Malawisaurus, the more derived saltasauroids and colossosaurians, and all descendants of their most recent common ancestor. Named for the bony osteoderms borne by many of its members (Greek lithostrotos, "inlaid with stones"), the clade captures the bulk of Cretaceous titanosaur diversity and is diagnosed largely by strongly procoelous caudal vertebrae. It excludes a grade of more basal titanosaurs such as Andesaurus and Argentinosaurus that retain amphiplatyan or only weakly procoelous anterior caudals.
     taxonomy:
       - Life
       - Animalia
@@ -3923,36 +4012,73 @@ clades:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
+    described: 2004
+    authors: Upchurch, P.; Barrett, P. M.; Dodson, P.
+    diagnostic_features:
+      - Strongly procoelous anterior and middle caudal vertebrae with prominent distal condyles
+      - Osteoderms present in many members
+      - Sharply angled, anterolaterally directed preacetabular process of the ilium
+      - Six sacral vertebrae
+    references:
+      - id: upchurch2004
+        authors: Upchurch, P.; Barrett, P. M.; Dodson, P.
+        year: 2004
+        title: Sauropoda
+        book: The Dinosauria, 2nd edition
+        publisher: University of California Press
+        pages: 259-322
+        notes: Erected Lithostrotia for the osteoderm-bearing derived titanosaurs.
+  Lognkosauria:
+    description: |
+      Lognkosauria is a clade of colossosaurian titanosaurs erected by Calvo et al. (2007) for Futalognkosaurus, Mendozasaurus and their close relatives. It includes several of the most massive land animals ever to have lived — Argentinosaurus, Patagotitan, Puertasaurus and Notocolossus among them — and is characterized by extremely wide, transversely expanded presacral vertebrae and broad, anteroposteriorly compressed neural spines. Members are concentrated in the mid- to Late Cretaceous of South America.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Massopoda
+      - Sauropodiformes
+      - Sauropoda
+      - Gravisauria
+      - Eusauropoda
+      - Neosauropoda
+      - Macronaria
+      - Titanosauriformes
+      - Somphospondyli
+      - Titanosauria
+      - Lithostrotia
+      - Eutitanosauria
       - Colossosauria
       - Lognkosauria
-  Lohuecosauria:
-    taxonomy:
-      - Life
-      - Animalia
-      - Chordata
-      - Vertebrata
-      - Sarcopterygii
-      - Tetrapoda
-      - Reptilia
-      - Archosauria
-      - Dinosauria
-      - Saurischia
-      - Sauropodomorpha
-      - Bagualosauria
-      - Plateosauria
-      - Massopoda
-      - Sauropodiformes
-      - Sauropoda
-      - Gravisauria
-      - Eusauropoda
-      - Neosauropoda
-      - Macronaria
-      - Titanosauriformes
-      - Somphospondyli
-      - Titanosauria
-      - Lithostrotia
-      - Saltasauroidea
-      - Lohuecosauria
+    described: 2007
+    authors: Calvo, J. O.; Porfiri, J. D.; González-Riga, B. J.; Kellner, A. W. A.
+    diagnostic_features:
+      - Cervical and dorsal vertebrae extremely wide transversely, with markedly expanded neural spines
+      - Anterior caudal vertebrae with wide, dorsoventrally low neural arches
+      - Robust, transversely broad limb bones
+      - Large body size, including the largest known sauropods
+    references:
+      - id: calvo2007a
+        authors: Calvo, J. O.; Porfiri, J. D.; González-Riga, B. J.; Kellner, A. W. A.
+        year: 2007
+        title: A new Cretaceous terrestrial ecosystem from Gondwana with the description of a new sauropod dinosaur
+        journal: Anais da Academia Brasileira de Ciências
+        volume: "79"
+        issue: "3"
+        pages: 529-541
+        publisher: FapUNIFESP (SciELO)
+        doi: 10.1590/s0001-37652007000300013
+        notes: Erected Lognkosauria.
   Macronaria:
     description: |
       Macronaria, meaning "large nostrils," is a clade of neosauropod dinosaurs defined as all sauropods more closely related to Saltasaurus than to Diplodocus. It is the sister group to Diplodocoidea within Neosauropoda and encompasses the basal camarasauromorphs, brachiosaurids, and the titanosaurs, becoming the dominant sauropod radiation of the Cretaceous. Macronarians are characterized by enlarged external nares and box-like skulls bearing broad, spatulate teeth, in contrast to the elongate skulls and peg-like teeth of diplodocoids.
@@ -4455,6 +4581,8 @@ clades:
       - Dromaeosauridae
       - Microraptorinae
   Nemegtosauridae:
+    description: |
+      Nemegtosauridae is a family of derived titanosaurs erected by Upchurch (1995) for Nemegtosaurus and given a modern phylogenetic treatment by Wilson (2005) following his redescription of the Nemegtosaurus skull. Long known mainly from cranial material, its core members — Nemegtosaurus and Quaesitosaurus of the Late Cretaceous of Mongolia — possess elongate, low skulls with slender, pencil-like teeth restricted to the front of the jaws, a morphology once thought diplodocoid but now recognized as titanosaurian.
     taxonomy:
       - Life
       - Animalia
@@ -4480,7 +4608,38 @@ clades:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
+      - Saltasauroidea
       - Nemegtosauridae
+    type_genus: Nemegtosaurus
+    described: 1995
+    authors: Upchurch, P.
+    diagnostic_features:
+      - Low, elongate skull with a long preorbital region
+      - Slender, peg-like teeth concentrated at the front of the jaws
+      - Posteriorly retracted external nares
+      - Frontals excluded from the margin of the supratemporal fenestra
+    references:
+      - id: upchurch1995
+        authors: Upchurch, P.
+        year: 1995
+        title: The evolutionary history of sauropod dinosaurs
+        journal: Philosophical Transactions of the Royal Society of London B
+        volume: "349"
+        issue: "1330"
+        pages: 365-390
+        doi: 10.1098/rstb.1995.0125
+        notes: Erected Nemegtosauridae.
+      - id: wilson2005
+        authors: Wilson, J. A.
+        year: 2005
+        title: "Redescription of the Mongolian sauropod Nemegtosaurus mongoliensis Nowinski (Dinosauria: Saurischia) and comments on Late Cretaceous sauropod diversity"
+        journal: Journal of Systematic Palaeontology
+        volume: "3"
+        issue: "3"
+        pages: 283-318
+        doi: 10.1017/s1477201905001628
+        notes: Redescribed Nemegtosaurus and recovered Nemegtosauridae among derived titanosaurs.
   Neoceratopsia:
     description: |
       Neoceratopsia is the major clade of ceratopsians containing all forms closer to Triceratops than to Chaoyangsaurus or Psittacosaurus. It encompasses a grade of small basal taxa (such as Liaoceratops, Aquilops, and Auroraceratops) leading to Euceratopsia, the clade uniting Leptoceratopsidae with the frilled and horned Coronosauria. Neoceratopsians show a progressive enlargement of the skull and development of the parietosquamosal frill.
@@ -4723,6 +4882,8 @@ clades:
         url: http://dx.doi.org/10.1007/s13358-018-0153-1
         notes: Phylogenetic analysis of nodosaurid relationships.
   Opisthocoelicaudiinae:
+    description: |
+      Opisthocoelicaudiinae is a subfamily of saltasaurid titanosaurs erected for Opisthocoelicaudia (McIntosh, 1990) and recovered as the sister group to Saltasaurinae within Saltasauridae in the revision of Wilson and Upchurch (2003). Its members are relatively large, robust titanosaurs of the Late Cretaceous, distinguished above all by opisthocoelous anterior caudal vertebrae — the reverse of the procoely typical of most derived titanosaurs — and by stoutly built limbs.
     taxonomy:
       - Life
       - Animalia
@@ -4748,10 +4909,38 @@ clades:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
       - Saltasauroidea
-      - Lohuecosauria
       - Saltasauridae
       - Opisthocoelicaudiinae
+    type_genus: Opisthocoelicaudia
+    described: 1990
+    authors: McIntosh, J. S.
+    diagnostic_features:
+      - Opisthocoelous anterior caudal vertebrae
+      - Robust, columnar limb bones
+      - Strongly developed neural-spine bifurcation reduced or absent
+      - Posteriorly positioned, dorsally directed neural spines on anterior caudals
+    references:
+      - id: mcintosh1990
+        authors: McIntosh, J. S.
+        year: 1990
+        title: Sauropoda
+        book: The Dinosauria, 1st edition
+        publisher: University of California Press
+        pages: 345-401
+        notes: Recognized the opisthocoelicaudiine grouping within derived titanosaurs.
+      - id: wilson2003b
+        authors: Wilson, J. A.; Upchurch, P.
+        year: 2003
+        title: A revision of Titanosaurus Lydekker (Dinosauria - Sauropoda), the first dinosaur genus with a 'Gondwanan' distribution
+        journal: Journal of Systematic Palaeontology
+        volume: "1"
+        issue: "3"
+        pages: 125-160
+        publisher: Informa UK Limited
+        doi: 10.1017/s1477201903001044
+        notes: Recovered Opisthocoelicaudiinae as sister to Saltasaurinae within Saltasauridae.
   Ornithischia:
     description: |
       Ornithischia, meaning "bird-hipped," is one of the two traditionally recognized major clades of dinosaurs. Ornithischians are united by a distinctive pelvic anatomy in which the pubis is rotated posteriorly to lie parallel with the ischium, convergently resembling the pelvic arrangement of birds (though birds are actually saurischians). The clade includes the armored thyreophorans (stegosaurs and ankylosaurs), the horned ceratopsians, the dome-headed pachycephalosaurs, and the duck-billed ornithopods, together with a grade of small early-diverging forms and the early-branching Heterodontosauridae. All ornithischians were herbivorous.
@@ -5668,6 +5857,8 @@ clades:
         url: http://dx.doi.org/10.7717/peerj.12362
         notes: Provides the modern phylogenetic definition of Rhabdodontomorpha.
   Rinconsauria:
+    description: |
+      Rinconsauria is a clade of colossosaurian titanosaurs erected by Calvo et al. (2007) for Rinconsaurus and Muyelensaurus and their relatives. Its members are small- to medium-sized titanosaurs of the Late Cretaceous of South America, distinguished by strongly procoelous caudal vertebrae with anteriorly displaced neural arches and a distinctive caudal morphology. Several analyses recover the Aeolosaurini within Rinconsauria, making it the parent of that more derived tribe.
     taxonomy:
       - Life
       - Animalia
@@ -5692,8 +5883,27 @@ clades:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
+      - Eutitanosauria
       - Colossosauria
       - Rinconsauria
+    described: 2007
+    authors: Calvo, J. O.; González Riga, B. J.; Porfiri, J. D.
+    diagnostic_features:
+      - Middle caudal vertebrae with neural arches set on the anterior half of the centrum
+      - Strongly procoelous caudal centra with well-developed distal condyles
+      - Anterior caudal neural spines posterodorsally inclined
+      - Small to medium body size
+    references:
+      - id: calvo2007b
+        authors: Calvo, J. O.; González Riga, B. J.; Porfiri, J. D.
+        year: 2007
+        title: A new titanosaur sauropod from the Late Cretaceous of Neuquén, Patagonia, Argentina
+        journal: Arquivos do Museu Nacional, Rio de Janeiro
+        volume: "65"
+        issue: "4"
+        pages: 485-504
+        notes: Erected Rinconsauria.
   Riojasauridae:
     description: |
       Riojasauridae is a small clade of massopodan sauropodomorphs from the Late Triassic comprising Riojasaurus and Eucnemesaurus, medium- to large-bodied, heavily built quadrupedal or facultatively quadrupedal herbivores. It is an early-branching lineage within Massopoda; its exact position fluctuates between sister to Massospondylidae and a more crownward position near Sauropodiformes.
@@ -5734,6 +5944,8 @@ clades:
         url: http://dx.doi.org/10.1080/08912960600866953
         notes: Erected Riojasauridae.
   Saltasauridae:
+    description: |
+      Saltasauridae is a family of derived saltasauroid titanosaurs comprising the armored, often dwarfed Saltasaurinae (Saltasaurus, Neuquensaurus and relatives) and the larger Opisthocoelicaudiinae (Opisthocoelicaudia and relatives), together with their most recent common ancestor and all descendants. The family was given a stem-based phylogenetic definition by Sereno (1998) and recovered in the revision of Wilson and Upchurch (2003). Members are among the most derived titanosaurs and include the last surviving sauropods of the Maastrichtian.
     taxonomy:
       - Life
       - Animalia
@@ -5759,10 +5971,41 @@ clades:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
       - Saltasauroidea
-      - Lohuecosauria
       - Saltasauridae
+    type_genus: Saltasaurus
+    described: 1998
+    authors: Sereno, P. C.
+    diagnostic_features:
+      - Six co-ossified sacral vertebrae
+      - Strongly procoelous caudal vertebrae with prominent distal condyles
+      - Osteoderms present, including large and small morphotypes
+      - Posterior dorsal vertebrae with reduced neural spines
+    references:
+      - id: sereno1998
+        authors: Sereno, P. C.
+        year: 1998
+        title: A rationale for phylogenetic definitions, with application to the higher-level taxonomy of Dinosauria
+        journal: Neues Jahrbuch für Geologie und Paläontologie, Abhandlungen
+        volume: "210"
+        pages: 41-83
+        doi: 10.1127/njgpa/210/1998/41
+        notes: Provided the stem-based phylogenetic definition of Saltasauridae.
+      - id: wilson2003b
+        authors: Wilson, J. A.; Upchurch, P.
+        year: 2003
+        title: A revision of Titanosaurus Lydekker (Dinosauria - Sauropoda), the first dinosaur genus with a 'Gondwanan' distribution
+        journal: Journal of Systematic Palaeontology
+        volume: "1"
+        issue: "3"
+        pages: 125-160
+        publisher: Informa UK Limited
+        doi: 10.1017/s1477201903001044
+        notes: Recovered Saltasauridae and its constituent subfamilies in revising Titanosaurus.
   Saltasaurinae:
+    description: |
+      Saltasaurinae is a subfamily of saltasaurid titanosaurs erected by Powell (1992) for Saltasaurus and recovered with a modern content by Wilson and Upchurch (2003). Its members — Saltasaurus, Neuquensaurus, Rocasaurus and relatives — are small, heavily armored titanosaurs of the Late Cretaceous of South America, bearing a dense pavement of osteoderms and small bony ossicles in the skin. They include some of the smallest of all sauropods.
     taxonomy:
       - Life
       - Animalia
@@ -5788,42 +6031,40 @@ clades:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
       - Saltasauroidea
-      - Lohuecosauria
       - Saltasauridae
       - Saltasaurinae
-  Saltasaurini:
-    taxonomy:
-      - Life
-      - Animalia
-      - Chordata
-      - Vertebrata
-      - Sarcopterygii
-      - Tetrapoda
-      - Reptilia
-      - Archosauria
-      - Dinosauria
-      - Saurischia
-      - Sauropodomorpha
-      - Bagualosauria
-      - Plateosauria
-      - Massopoda
-      - Sauropodiformes
-      - Sauropoda
-      - Gravisauria
-      - Eusauropoda
-      - Neosauropoda
-      - Macronaria
-      - Titanosauriformes
-      - Somphospondyli
-      - Titanosauria
-      - Lithostrotia
-      - Saltasauroidea
-      - Lohuecosauria
-      - Saltasauridae
-      - Saltasaurinae
-      - Saltasaurini
+    type_genus: Saltasaurus
+    described: 1992
+    authors: Powell, J. E.
+    diagnostic_features:
+      - Dermal armor of large keeled osteoderms set among numerous small ossicles
+      - Strongly procoelous caudal vertebrae with anteriorly displaced neural arches
+      - Posterior dorsal vertebrae with reduced, posteriorly inclined neural spines
+      - Small body size
+    references:
+      - id: powell1992
+        authors: Powell, J. E.
+        year: 1992
+        title: Osteologia de Saltasaurus loricatus (Sauropoda - Titanosauridae) del Cretácico Superior del noroeste Argentino [Osteology of Saltasaurus loricatus (Sauropoda - Titanosauridae) from the Upper Cretaceous of northwest Argentina]
+        journal: 'In J. L. Sanz & A. D. Buscalioni (eds.), Los Dinosaurios y Su Entorno Biotico: Actas del Segundo Curso de Paleontologia in Cuenca. Institutio "Juan de Valdes", Cuenca, Argentina'
+        pages: 165-230
+        notes: Erected Saltasaurinae.
+      - id: wilson2003b
+        authors: Wilson, J. A.; Upchurch, P.
+        year: 2003
+        title: A revision of Titanosaurus Lydekker (Dinosauria - Sauropoda), the first dinosaur genus with a 'Gondwanan' distribution
+        journal: Journal of Systematic Palaeontology
+        volume: "1"
+        issue: "3"
+        pages: 125-160
+        publisher: Informa UK Limited
+        doi: 10.1017/s1477201903001044
+        notes: Recovered Saltasaurinae as sister to Opisthocoelicaudiinae within Saltasauridae.
   Saltasauroidea:
+    description: |
+      Saltasauroidea is a stem-based clade of derived titanosaurs defined as all taxa closer to Saltasaurus than to Patagotitan. It is the sister branch of Colossosauria within Eutitanosauria in the framework of Carballido et al. (2022), having been named by França et al. (2016). Saltasauroidea unites the heavily armored, often dwarfed Saltasauridae with a range of other derived titanosaurs (including the nemegtosaurids and the European lirainosaurines in some analyses), and accounts for much of the terminal-Cretaceous titanosaur diversity of Gondwana and Laurasia.
     taxonomy:
       - Life
       - Animalia
@@ -5849,7 +6090,35 @@ clades:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
       - Saltasauroidea
+    type_genus: Saltasaurus
+    described: 2016
+    authors: França, M. A. G.; Marsola, J. C. de A.; Riff, D.; Hsiou, A. S.; Langer, M. C.
+    diagnostic_features:
+      - Strongly procoelous caudal vertebrae throughout the tail
+      - Osteoderms present in many members
+      - Posterior dorsal vertebrae with well-developed lateral pneumatic foramina
+      - Reduced and block-like carpus and manus
+    references:
+      - id: frança2016
+        authors: França, M. A. G.; Marsola, J. C. de A.; Riff, D.; Hsiou, A. S.; Langer, M. C.
+        year: 2016
+        title: "New lower jaw and teeth referred to Maxakalisaurus topai (Titanosauria: Aeolosaurini) and their implications for the phylogeny of titanosaurid sauropods"
+        journal: PeerJ
+        volume: "4"
+        pages: e2054
+        doi: 10.7717/peerj.2054
+        notes: Introduced the name Saltasauroidea.
+      - id: carballido2022
+        authors: Carballido, J. L.; Otero, A.; Mannion, P. D.; Salgado, L.; Pérez Moreno, A. P.
+        year: 2022
+        title: "Titanosauria: a critical reappraisal of its systematics and the relevance of the South American record"
+        book: South American Sauropodomorph Dinosaurs
+        publisher: Springer
+        pages: 269-298
+        doi: 10.1007/978-3-030-95959-3_8
+        notes: Recovered Saltasauroidea as the Saltasaurus-line stem of Eutitanosauria.
   Saturnaliidae:
     description: |
       Saturnaliidae is a clade of small, gracile, early-diverging sauropodomorphs from the Late Triassic (Carnian) of South America, retaining a relatively carnivorous-to-omnivorous dentition and slender, cursorial proportions. Its core members are Saturnalia and Chromogisaurus; Pampadromaeus and Panphagia are sometimes included but their membership is less stable. The family was raised from Saturnaliinae and represents one of the basalmost sauropodomorph lineages.
@@ -6839,7 +7108,7 @@ clades:
         notes: Provides the modern phylogenetic definition of Thyreophora.
   Titanosauria:
     description: |
-      Titanosauria is a diverse and species-rich clade of macronarian sauropod dinosaurs that dominated herbivore niches across Gondwana and Laurasia during the Cretaceous period. Titanosaurs include both the largest known dinosaurs (Argentinosaurus, Patagotitan) and some of the smallest sauropods (Magyarosaurus). Many titanosaurs possessed osteoderms (bony armor plates) embedded in the skin, a feature unique among sauropods. The clade was the last major sauropod radiation before the end-Cretaceous extinction.
+      Titanosauria is a diverse and species-rich clade of macronarian sauropod dinosaurs that dominated herbivore niches across Gondwana and Laurasia during the Cretaceous period. Titanosaurs include both the largest known dinosaurs (Argentinosaurus, Patagotitan) and some of the smallest sauropods (Magyarosaurus). Many titanosaurs possessed osteoderms (bony armor plates) embedded in the skin, a feature unique among sauropods. The clade was the last major sauropod radiation before the end-Cretaceous extinction. The name was coined by Bonaparte and Coria (1993); Salgado et al. (1997) provided the first phylogenetic definition based on the postcranial evidence.
     taxonomy:
       - Life
       - Animalia
@@ -6864,8 +7133,8 @@ clades:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
-    described: 1877
-    authors: Lydekker
+    described: 1993
+    authors: Bonaparte, J. F.; Coria, R. A.
     diagnostic_features:
       - Procoelous caudal vertebrae (concave anteriorly, convex posteriorly)
       - Osteoderms (bony dermal armor) present in many taxa
@@ -6874,39 +7143,23 @@ clades:
       - Strongly opisthocoelous dorsal and caudal vertebrae
       - Expanded iliac blade with a preacetabular process directed laterally
     references:
-      - id: lydekker1877
-        authors: Lydekker, R.
-        year: 1877
-        title: Notices of new and other Vertebrata from Indian Tertiary and Secondary rocks
-        journal: Records of the Geological Survey of India
-        volume: "10"
-        pages: 30-43
-  Titanosauridae:
-    taxonomy:
-      - Life
-      - Animalia
-      - Chordata
-      - Vertebrata
-      - Sarcopterygii
-      - Tetrapoda
-      - Reptilia
-      - Archosauria
-      - Dinosauria
-      - Saurischia
-      - Sauropodomorpha
-      - Bagualosauria
-      - Plateosauria
-      - Massopoda
-      - Sauropodiformes
-      - Sauropoda
-      - Gravisauria
-      - Eusauropoda
-      - Neosauropoda
-      - Macronaria
-      - Titanosauriformes
-      - Somphospondyli
-      - Titanosauria
-      - Titanosauridae
+      - id: bonaparte1993
+        authors: Bonaparte, J. F.; Coria, R. A.
+        year: 1993
+        title: Un nuevo y gigantesco saurópodo titanosaurio de la Formación Rio Limay (Albanio-Cenomaniano) de la Provincia del Neuquén, Argentina [A new and huge titanosaur sauropod from the Rio Limay Formation (Albian-Cenomanian) of Neuquén Province, Argentina]
+        journal: Ameghiniana
+        volume: "30"
+        issue: "3"
+        pages: 271-282
+        notes: Coined the name Titanosauria.
+      - id: salgado1997
+        authors: Salgado, L.; Coria, R. A.; Calvo, J. O.
+        year: 1997
+        title: "Evolution of titanosaurid sauropods. I: phylogenetic analysis based on the postcranial evidence"
+        journal: Ameghiniana
+        volume: "34"
+        pages: 3-32
+        notes: Provided the first phylogenetic definition of Titanosauria.
   Titanosauriformes:
     description: |
       Titanosauriformes is a clade of macronarian sauropods defined as the least inclusive group containing Brachiosaurus and Saltasaurus, and comprising the two sister lineages Brachiosauridae and Somphospondyli. The clade originated in the Late Jurassic and persisted to the end of the Cretaceous, achieving a global distribution and including the largest known terrestrial animals. Titanosauriforms are united by features of the vertebrae and limb girdles, many fragmentary basal members being assignable no more precisely than to this node.
@@ -7405,6 +7658,13 @@ genera:
     pronunciation:
       phonetic: ab-duh-RAY-noo-rus
     description: Abdarainurus is a genus of titanosaur dinosaur from the Alagteeg Formation in Mongolia. The type and only species is A. barsboldi. Currently seen as an indeterminate titanosaur, it may represent a previously unknown lineage of Asian macronarians. Abdarainurus is not known from many remains; it is only known from eight front tail vertebrae and a middle tail vertebra and several chevrons.
+    dispute:
+      summary: |
+        Placed within Titanosauria as incertae sedis. Abdarainurus is known only from highly unusual caudal vertebrae, including opisthocoelous anterior and middle caudals otherwise seen in Opisthocoelicaudia, and was erected as Titanosauria incertae sedis (Averianov and Lopatin, 2020). The describers' preferred result is a basal titanosaur, but their strict consensus also allows a non-titanosaurian somphospondylan position, and they suggest it may represent a previously unknown specialized lineage of Asian macronarians. It is parked at Titanosauria following their preferred placement.
+      history:
+        - date: 2026-06-30
+          note: |
+            Placed at Titanosauria incertae sedis per Averianov and Lopatin (2020); a non-titanosaurian somphospondylan position is noted as possible.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -7519,6 +7779,13 @@ genera:
     pronunciation:
       phonetic: ab-DEE-toe-SOR-us
     description: Abditosaurus is an extinct genus of titanosaurian sauropod dinosaur from the Late Cretaceous (Maastrichtian) Conques Formation (Tremp Group) of Catalonia, Spain. The genus contains a single species, Abditosaurus kuehnei, known from a partial specimen representing the most complete titanosaur skeleton found in Europe. Phylogenetic analyses recover it within a clade of South American and African saltasaurines, distinct from other insular dwarf sauropods from the European archipelago. Abditosaurus inhabited the Ibero-Armorican Island, a prehistoric island made up of what is now Spain, Portugal, and southern France, and would have been the largest titanosaur species in its environment.
+    dispute:
+      summary: |
+        Placed within Saltasauridae as incertae sedis. The describing analysis (Vila et al., 2022) recovered Abditosaurus more precisely as a saltasaurine, within a clade of South American and African saltasaurines (sister to Paralititan) distinct from the lirainosaurine titanosaurs of the European archipelago. Because that saltasaurine topology rests on a single analysis whose recovered neighbors (Paralititan, Maxakalisaurus) are atypical relative to most studies, it is placed conservatively at Saltasauridae rather than within Saltasaurinae.
+      history:
+        - date: 2026-06-30
+          note: |
+            Placed at Saltasauridae incertae sedis; Vila et al. (2022) recover it within Saltasaurinae, but the supporting topology is not yet corroborated.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -7655,8 +7922,8 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
       - Saltasauroidea
-      - Lohuecosauria
       - Saltasauridae
     authors: Vila, B.; Sellés, A.; Moreno-Azanza, M.; Razzolini, N. L.; Gil-Delgado, A.; Canudo, J. I.; Galobart, À.
     described: 2022
@@ -9133,7 +9400,7 @@ genera:
     described: 2013
   Adamantisaurus:
     genus: Adamantisaurus
-    parent: Rinconsauria
+    parent: Aeolosaurini
     pronunciation:
       ipa: /ˌædəˌmæntɪˈsɔːrəs/
       phonetic: AD-uh-MAN-tiss-OR-uhs
@@ -9235,8 +9502,11 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
+      - Eutitanosauria
       - Colossosauria
       - Rinconsauria
+      - Aeolosaurini
     authors: Santucci, R. M.; Bertini, R. J.
     described: 2006
   Adasaurus:
@@ -9985,6 +10255,9 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
+      - Colossosauria
+      - Rinconsauria
       - Aeolosaurini
     authors: Powell, J. E.
     described: 1987
@@ -11625,12 +11898,19 @@ genera:
     described: 2018
   Alamosaurus:
     genus: Alamosaurus
-    parent: Saltasaurinae
+    parent: Saltasauridae
     etymology: Named after the Ojo Alamo rock formation combined with Greek 'sauros' meaning 'lizard'; meaning 'Ojo Alamo lizard'
     pronunciation:
       phonetic: AL-a-mo-SAWR-us
       ipa: /ˌæləmoʊˈsɔːrəs/
     description: Alamosaurus is a genus of titanosaurian sauropod dinosaurs containing a single known species, Alamosaurus sanjuanensis, from the Maastrichtian age of the Late Cretaceous period in what is now southwestern North America. It is one of the few known titanosaurs to have inhabited North America after the nearly 30-million-year absence of sauropods from the North American fossil record ("sauropod hiatus") and probably represents an immigrant from South America.
+    dispute:
+      summary: |
+        Placed within Saltasauridae as incertae sedis. Alamosaurus has long resisted precise placement: an early assessment (Lehman, 2002) found it a mosaic of titanosaur features and could not resolve it beyond an indeterminate derived titanosaur. More recent analyses disagree over its closest relatives, with an Asian affinity as sister to Opisthocoelicaudia (Poropat et al., 2021; Santucci and Filippi, 2022) opposed to a South American affinity close to Pellegrinisaurus (Cerda et al., 2021; Navarro et al., 2022), placements that fall within Saltasauridae under some definitions. It is parked at Saltasauridae pending resolution.
+      history:
+        - date: 2026-06-30
+          note: |
+            Placed at Saltasauridae incertae sedis; Asian (Opisthocoelicaudia) and South American (Pellegrinisaurus) affinities remain unresolved.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -11772,10 +12052,9 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
       - Saltasauroidea
-      - Lohuecosauria
       - Saltasauridae
-      - Saltasaurinae
     authors: Gilmore, C. W.
     described: 1922
   Alaskacephale:
@@ -15396,7 +15675,9 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
       - Eutitanosauria
+      - Saltasauroidea
       - Lirainosaurinae
     authors: Le Loeuff, J.
     described: 1995
@@ -18018,7 +18299,7 @@ genera:
     described: 2006
   Antarctosaurus:
     genus: Antarctosaurus
-    parent: Lithostrotia
+    parent: Titanosauria
     etymology: From Greek 'antarktikos' meaning 'southern' (opposite of the north/arctic) and 'sauros' meaning 'lizard'; meaning 'southern lizard'
     pronunciation:
       phonetic: an-TARK-to-SAWR-us
@@ -18138,7 +18419,6 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
-      - Lithostrotia
     authors: Huene, F. V.
     described: 1929
   Anteavis:
@@ -19270,7 +19550,7 @@ genera:
     described: 2014
   Arackar:
     genus: Arackar
-    parent: Lithostrotia
+    parent: Saltasauroidea
     etymology: From Kunza (the language of the Atacameno people of Chile) 'arackar' meaning 'skeleton'
     description: Arackar is an extinct genus of lithostrotian sauropod, possibly part of the Saltasauridae, discovered in the Hornitos Formation of Atacama Province, Chile. The genus contains a single species, Arackar licanantay, described by Rubilar-Rogers et al. in 2021.
     diet: herbivore
@@ -19382,6 +19662,8 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
+      - Saltasauroidea
     authors: Rubilar-Rogers, D.; Vargas, A. O.; González Riga, B.; Soto-Acuña, S.; Alarcón-Muñoz, J.; Iriarte-Díaz, J.; Arévalo, C.; Gutstein, C. S.
     described: 2021
   Aragosaurus:
@@ -20868,7 +21150,7 @@ genera:
     described: 2009
   Argentinosaurus:
     genus: Argentinosaurus
-    parent: Eutitanosauria
+    parent: Lognkosauria
     pronunciation:
       phonetic: ahr-jen-TEEN-o-SAWR-us
     etymology: From Argentina (the country where fossils were found) + Greek sauros (σαῦρος) meaning 'lizard'; overall meaning 'lizard from Argentina'.
@@ -20969,7 +21251,10 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
       - Eutitanosauria
+      - Colossosauria
+      - Lognkosauria
     authors: Bonaparte, J. F.; Coria, R. A.
     described: 1993
   Argyrosaurus:
@@ -21492,7 +21777,7 @@ genera:
     described: 1925
   Arrudatitan:
     genus: Arrudatitan
-    parent: Rinconsauria
+    parent: Aeolosaurini
     etymology: Named after Arruda (a person's name honored in the genus), combined with Greek Titan meaning 'giant'; overall meaning 'Arruda's giant'.
     pronunciation:
       phonetic: ar-HU-da-TIE-tuhn
@@ -21607,8 +21892,11 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
+      - Eutitanosauria
       - Colossosauria
       - Rinconsauria
+      - Aeolosaurini
     authors: Silva Junior, J. C. G.; Martinelli, A. G.; Iori, F. V.; Marinho, T. S.; Hechenleitner, E. M.; Langer, M. C.
     described: 2021
   Arstanosaurus:
@@ -23255,7 +23543,9 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
       - Eutitanosauria
+      - Saltasauroidea
       - Lirainosaurinae
     authors: Garcia, G.; Amico, S.; Fournier, F.; Thouand, E.; Valentin, X.
     described: 2010
@@ -24010,11 +24300,18 @@ genera:
     described: 2010
   Austroposeidon:
     genus: Austroposeidon
-    parent: Lognkosauria
+    parent: Colossosauria
     etymology: From Latin austro- meaning 'southern' + Poseidon (Ποσειδῶν), the Greek god of the sea, used here as a reference to enormous size (as in Sauroposeidon); overall meaning 'Southern Poseidon'.
     pronunciation:
       phonetic: Oss-tro-puh-SIGH-don
     description: Austroposeidon is a genus of titanosaurian sauropod dinosaur from the Late Cretaceous Presidente Prudente Formation of Brazil. It contains one species, Austroposeidon magnificus (meaning "Magnificent Southern Poseidon").
+    dispute:
+      summary: |
+        Placed conservatively within Colossosauria. The describing analysis (Bandeira et al., 2016) recovered Austroposeidon as the sister group of Lognkosauria rather than within it, whereas a later analysis (Navarro et al., 2022) recovered it inside Lognkosauria; most other studies leave it unresolved owing to its fragmentary remains. Colossosauria is the least-inclusive node these placements share.
+      history:
+        - date: 2026-06-30
+          note: |
+            Reparented from Lognkosauria to Colossosauria; the describing analysis places it just outside Lognkosauria and only Navarro et al. (2022) recovers it within, so it is parked at the shared uncontested node.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -24114,8 +24411,9 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
+      - Eutitanosauria
       - Colossosauria
-      - Lognkosauria
     authors: Bandeira, K. L. N.; Medeiros Simbras, F.; Batista Machado, E.; de Almeida Campos, D.; Oliveira, G. R.; Kellner, A. W. A.
     described: 2016
   Austroraptor:
@@ -26230,6 +26528,13 @@ genera:
       phonetic: bow-tyen-MAHN-SAWR-us
     etymology: Named for the Baotianman National Nature Reserve in Henan Province, China, where the fossils were found, combined with Greek 'sauros' meaning 'lizard'.
     description: Baotianmansaurus is an extinct genus of somphospondylian sauropod. Its fossils were discovered in the Late Cretaceous Gaogou Formation of Henan Province, China. The type and only species is B. henanensis - named after the province in which it was found.
+    dispute:
+      summary: |
+        Placed within Titanosauria as incertae sedis. Its position is genuinely contested: the describing paper (Zhang et al., 2009) declined to place Baotianmansaurus within Titanosauria, assigning it to Titanosauriformes, and it has since been recovered as a non-titanosaurian somphospondylan (Mannion et al., 2019), a basal titanosaur, and a derived saltasauroid. The most recent dedicated analysis (Han et al., 2024) recovers it within Titanosauria, on which basis it is retained here, though that study notes its position remains controversial.
+      history:
+        - date: 2026-06-30
+          note: |
+            Retained in Titanosauria following Han et al. (2024); the describing paper placed it only in Titanosauriformes and other analyses recover it outside Titanosauria.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -27296,6 +27601,13 @@ genera:
     pronunciation:
       phonetic: BOH-roo-TIE-tuhn
     description: Baurutitan is a genus of sauropod dinosaur that lived during the Late Cretaceous in what is now Brazil. The type species, Baurutitan britoi, was described in 2005 by Kellner and colleagues, although the fossil remains had already been discovered in 1957. Baurutitan is classified as a lithostrotian titanosaur, and is distinguished from related genera based on its distinctive caudal vertebrae. This South American dinosaur was found in the Serra da Galga Formation near Uberaba, in the Brazilian state of Minas Gerais.
+    dispute:
+      summary: |
+        Placed within Aeolosaurini following Silva Junior et al. (2022), whose phylogenetic analysis recovers Baurutitan as an aeolosaurin; the describing paper (Kellner et al., 2005) classified it only as a derived titanosaur, without a cladistic analysis. Silva Junior et al. (2022) further proposed that Trigonosaurus pricei is a junior synonym of Baurutitan britoi (Baurutitan having page priority within the shared 2005 volume) and split off part of the Trigonosaurus material as Caieiria; Fronimos (2023) rejected the synonymy, citing distinct first-caudal morphology.
+      history:
+        - date: 2026-06-30
+          note: |
+            Placed in Aeolosaurini per Silva Junior et al. (2022); the Trigonosaurus synonymy that work proposes is contested by Fronimos (2023).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -27401,6 +27713,9 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
+      - Colossosauria
+      - Rinconsauria
       - Aeolosaurini
     authors: Kellner, A. W. A.; Campos, D. D. A.; M. N. F. Trotta
     described: 2005
@@ -29777,15 +30092,15 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
       - Saltasauroidea
-      - Lohuecosauria
       - Saltasauridae
       - Saltasaurinae
     authors: Martinelli, A.; Forasiepi, A.
     described: 2004
   Bonitasaura:
     genus: Bonitasaura
-    parent: Eutitanosauria
+    parent: Colossosauria
     etymology: "Named after the La Bonita fossil quarry in Argentina where remains were found, combined with Greek sauros meaning 'lizard'. Full meaning: 'La Bonita lizard'."
     pronunciation:
       phonetic: boh-NEE-tah-SOR-uh
@@ -29901,7 +30216,9 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
       - Eutitanosauria
+      - Colossosauria
     authors: Apesteguía, S.
     described: 2004
   Borealopelta:
@@ -31286,13 +31603,15 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
+      - Eutitanosauria
       - Colossosauria
       - Rinconsauria
     authors: Machado, E. B.; Avilla, L. dos S.; Nava, W. R.; Campos, D. de A.; Kellner, A. W. A.
     described: 2013
   Bravasaurus:
     genus: Bravasaurus
-    parent: Rinconsauria
+    parent: Aeolosaurini
     etymology: From Laguna Brava National Park in La Rioja, Argentina (where fossils were found) + Greek sauros (σαῦρος) meaning 'lizard'; overall meaning 'Laguna Brava lizard'.
     pronunciation:
       phonetic: BRAH-vah-SOR-us
@@ -31398,8 +31717,11 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
+      - Eutitanosauria
       - Colossosauria
       - Rinconsauria
+      - Aeolosaurini
     authors: Hechenleitner, E. M.; Leuzinger, L.; Martinelli, A. G.; Rocher, S.; Fiorelli, L. E.; Taborda, J. R. A.; Salgado, L.
     described: 2020
   Bravoceratops:
@@ -32610,7 +32932,7 @@ genera:
     described: 2016
   Bustingorrytitan:
     genus: Bustingorrytitan
-    parent: Lithostrotia
+    parent: Saltasauroidea
     etymology: Named after Manuel Bustingorry (the landowner on whose property fossils were found) combined with Greek Titan (Τιτάν) meaning 'giant'; overall meaning 'Bustingorry's giant'.
     pronunciation:
       phonetic: bus-tin-goh-ree-tie-tuhn
@@ -32716,6 +33038,8 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
+      - Saltasauroidea
     authors: Salgado, L.
     described: 2023
   Byronosaurus:
@@ -33161,6 +33485,9 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
+      - Colossosauria
+      - Rinconsauria
       - Aeolosaurini
     authors: Silva Junior, J. C. G.; Martinelli, A. G.; Marinho, T. S.; da Silva, J. I.; Langer, M. C.
     described: 2022
@@ -36863,6 +37190,8 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
+      - Eutitanosauria
       - Colossosauria
       - Rinconsauria
     authors: Agnolin, F.; Motta, M.; García Marsá, J.; Aranciaga Rolando, M.; Alvarez Herrera, G.; Chimento, N.; Rozadilla, S.; Brizzon-Egli, F.; Cerroni, M.; Panzeri, K.; Bogan, S.; Casadio, S.; Sterli, J.; Miquel, S.; Martínez, S.; Perez, L.; Pol, D.; Novas, F.
@@ -38818,6 +39147,13 @@ genera:
     parent: Titanosauria
     etymology: Named after Villa El Chocón, the locality in Neuquén Province, Argentina where the holotype was found, + Greek sauros ('lizard'), meaning 'El Chocón lizard'.
     description: Choconsaurus is an extinct genus of herbivorous sauropod dinosaur belonging to the group Titanosauriformes, which lived in the area of present-day Argentina at the end of the Cretaceous.
+    dispute:
+      summary: |
+        Placed within Titanosauria as incertae sedis. The describing analysis (Simon et al., 2018) recovered Choconsaurus as a non-eutitanosaurian (basal) titanosaur, but reported near-equal support for two positions, a basal titanosaur versus a non-titanosaurian (derived) somphospondylan, so its membership in Titanosauria is not secure. It is parked at the base of Titanosauria following the preferred result.
+      history:
+        - date: 2026-06-30
+          note: |
+            Placed at Titanosauria incertae sedis; the describing analysis found near-equal support for a non-titanosaurian somphospondylan position.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -39723,6 +40059,8 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
+      - Eutitanosauria
       - Colossosauria
     authors: Agnolin, F. L.; Gonzalez Riga, B. J.; Aranciaga Rolando, A. M.; Rozadilla, S.; Motta, M. J.; Chimento, N. R.; Novas, F. E.
     described: 2023
@@ -48318,6 +48656,13 @@ genera:
       phonetic: dohng-YAHNG-oh-SAWR-us
     etymology: Named for Dongyang in Zhejiang Province, China, where the fossils were found, combined with Greek 'sauros' meaning 'lizard'.
     description: Dongyangosaurus is a genus of titanosaurian sauropod dinosaur from the Late Cretaceous. The only species is Dongyangosaurus sinensis, from which only a single fragmentary skeleton is known, coming from the Zhejiang province of eastern China. It was described and named by Lü Junchang and colleagues. Like other sauropods, Dongyangosaurus would have been a large quadrupedal herbivore.
+    dispute:
+      summary: |
+        Placed within Titanosauria as incertae sedis. The describing paper (Lu et al., 2008) assigned Dongyangosaurus to Titanosauria as a basal titanosaur, and the most recent dedicated analysis (Han et al., 2024) recovers it within Titanosauria in an eastern-Asian clade with Andesaurus, Huabeisaurus, Baotianmansaurus and others. Its position is debated, as these Chinese taxa are often recovered as non-titanosaurian somphospondylans in other work and Paul (2024) questions whether it is a titanosaurid, but it is retained within Titanosauria following the describing and most recent dedicated analyses.
+      history:
+        - date: 2026-06-30
+          note: |
+            Retained in Titanosauria per Lu et al. (2008) and Han et al. (2024); a non-titanosaurian somphospondylan position recovered by other analyses is noted.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -49048,7 +49393,7 @@ genera:
     described: 2005
   Dreadnoughtus:
     genus: Dreadnoughtus
-    parent: Eutitanosauria
+    parent: Lithostrotia
     etymology: Named after the dreadnought class of battleships, from Old English meaning 'fears nothing', in reference to the animal's immense size which would have made it largely invulnerable to predators.
     description: Dreadnoughtus is a genus of titanosaurian sauropod dinosaur containing a single species, Dreadnoughtus schrani. It is known from two partial skeletons discovered in Upper Cretaceous (Campanian to Maastrichtian, approximately 76-70 million years ago) rocks of the Cerro Fortaleza Formation in Santa Cruz Province, Argentina. It is one of the largest terrestrial vertebrates known from reasonably complete remains, with the immature type specimen measuring 26 meters (85 ft) in total body length and weighing up to 48-49 metric tons (53-54 short tons).
     diet: herbivore
@@ -49158,7 +49503,7 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
-      - Eutitanosauria
+      - Lithostrotia
     authors: Lacovara, K. J.; Lamanna, M. C.; Ibiricu, L. M.; Poole, J. C.; Schroeter, E. R.; Ullmann, P. V.; Voegele, K. K.; Boles, Z. M.; Carter, A. M.; Fowler, E. K.; Egerton, V. M.; Moyer, A. E.; Coughenour, C. L.; Schein, J. P.; Harris, J. D.; Martínez, R. D.; Novas, F. E.
     described: 2014
   Dromaeosauroides:
@@ -49594,6 +49939,8 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
+      - Eutitanosauria
       - Colossosauria
       - Lognkosauria
     authors: Navarrete, C.; Casal, G.; Martínez, R.
@@ -59378,6 +59725,8 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
+      - Eutitanosauria
       - Colossosauria
       - Lognkosauria
     authors: Calvo, J. O.; Porfiri, J. D.; González-Riga, B. J.; Kellner, A. W. A.
@@ -60505,7 +60854,9 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
       - Eutitanosauria
+      - Saltasauroidea
       - Lirainosaurinae
     authors: Díez Díaz, V.; Garcia, G.; Pereda Suberbiola, X.; Jentgen-Ceschino, B.; Stein, K.; Godefroit, P.; Valentin, X.
     described: 2020
@@ -63514,6 +63865,9 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
+      - Colossosauria
+      - Rinconsauria
       - Aeolosaurini
     authors: Kellner, A. W. A.; Azevedo, S. A. K. D.
     described: 1999
@@ -71110,7 +71464,7 @@ genera:
     described: 2024
   Hypselosaurus:
     genus: Hypselosaurus
-    parent: Titanosauridae
+    parent: Titanosauria
     pronunciation:
       phonetic: HIP-sel-o-SAWR-us
     etymology: From Greek hypsilos (high, lofty) and sauros (lizard); meaning 'highest lizard'
@@ -71202,7 +71556,6 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
-      - Titanosauridae
     authors: Matheron, P.
     described: 1869
   Hypselospinus:
@@ -72082,8 +72435,8 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
       - Saltasauroidea
-      - Lohuecosauria
       - Saltasauridae
       - Saltasaurinae
     authors: Navarro, B. A.; Ghilardi, A. M.; Aureliano, T.; Díaz, V. D.; Bandeira, K. L. N.; Cattaruzzi, A. G. S.; Iori, F. V.; Martine, A. M.; Carvalho, A. B.; Anelli, L. E.; Fernandes, M. A.; Zaher, H.
@@ -72306,8 +72659,8 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
       - Saltasauroidea
-      - Lohuecosauria
       - Saltasauridae
     authors: Gorscak, E.; Lamanna, M. C.; Schwarz, D.; Díaz, V. D.; Salem, B. S.; Sallam, H. M.; Wiechmann, M. F.
     described: 2022
@@ -72974,7 +73327,7 @@ genera:
     described: 2019
   Inawentu:
     genus: Inawentu
-    parent: Eutitanosauria
+    parent: Colossosauria
     etymology: Meaning "imitator"; language not specified in the article
     pronunciation:
       phonetic: ee-nah-WEN-too
@@ -73081,7 +73434,9 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
       - Eutitanosauria
+      - Colossosauria
     authors: Filippi, L. S.; Juárez Valieri, R. D.; Gallina, P. A.; Méndez, A. H.; Gianechini, F. A.; Garrido, A. C.
     described: 2024
   Incisivosaurus:
@@ -74429,6 +74784,7 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
       - Saltasauroidea
     authors: Wilson, J. A.; Upchurch, P.
     described: 2003
@@ -75166,7 +75522,7 @@ genera:
     described: 2023
   Jainosaurus:
     genus: Jainosaurus
-    parent: Lithostrotia
+    parent: Titanosauria
     pronunciation:
       phonetic: JIEN-o-SAWR-us
     etymology: Named after Indian paleontologist Sohan Lal Jain, who made significant contributions to the study of Indian dinosaurs, combined with Greek sauros (lizard); meaning 'Jain's lizard'
@@ -75268,7 +75624,6 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
-      - Lithostrotia
     authors: Hunt, A. P.; Lockley, M. G.; S. G. Lucas, C. A. M.
     described: 1995
   Jakapil:
@@ -78602,7 +78957,7 @@ genera:
     described: 1984
   Kaijutitan:
     genus: Kaijutitan
-    parent: Lithostrotia
+    parent: Titanosauria
     pronunciation:
       phonetic: KIE-joo-TIE-tan
     etymology: Named after 'kaiju', the type of giant monster from Japanese cinema, combined with 'titan' meaning giant. The species name refers to the Maui people of the Mapuche.
@@ -78717,7 +79072,6 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
-      - Lithostrotia
     authors: Filippi, L. S.; Salgado, L.; Garrido, A. C.
     described: 2019
   Kakuru:
@@ -79212,7 +79566,7 @@ genera:
     described: 2021
   Karongasaurus:
     genus: Karongasaurus
-    parent: Titanosauria
+    parent: Lithostrotia
     etymology: Named after Karonga, the district in Malawi where fossils were found, combined with Greek 'sauros' (lizard); meaning 'Karonga lizard'
     description: Karongasaurus is a genus of titanosaur sauropod dinosaur from the Early Cretaceous. The type species, K. gittelmani, was described by Elizabeth Gomani in 2005.
     diet: herbivore
@@ -79310,6 +79664,7 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
     authors: Gomani, E. M.
     described: 2005
   Katepensaurus:
@@ -87495,7 +87850,9 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
       - Eutitanosauria
+      - Saltasauroidea
       - Lirainosaurinae
     authors: Sanz, J. L.; Powell, J. E.; Le Loeuff, J.; Martinez, R.; Pereda-Suberbiola, X.
     described: 1999
@@ -87825,11 +88182,18 @@ genera:
     described: 2020
   Lohuecotitan:
     genus: Lohuecotitan
-    parent: Eutitanosauria
+    parent: Lithostrotia
     etymology: Named for Lo Hueco, the fossil site in Spain where it was discovered, combined with Greek 'titan' meaning 'giant'.
     pronunciation:
       phonetic: loh-HWAY-co-TIE-tuhn
     description: Lohuecotitan is an extinct genus of titanosaurian sauropod dinosaur which lived during the Late Cretaceous in Spain. The only species known in the genus is Lohuecotitan pandafilandi, described and named in 2016.
+    dispute:
+      summary: |
+        Placed within Lithostrotia as incertae sedis. The describing analysis (Diez Diaz et al., 2016) recovered Lohuecotitan only as an indeterminate derived lithostrotian in a polytomy, and its position has remained unstable: subsequent studies variously recover it as a basal lithostrotian (Diez Diaz et al., 2018), possibly within Saltasauridae (Gorscak and O'Connor, 2019), or within Lirainosaurinae (Navarro et al., 2022). It is parked at Lithostrotia pending resolution.
+      history:
+        - date: 2026-06-30
+          note: |
+            Placed at Lithostrotia incertae sedis; positions ranging from basal lithostrotian to saltasaurid to lirainosaurine have been recovered.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -87935,7 +88299,7 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
-      - Eutitanosauria
+      - Lithostrotia
     authors: Díez Díaz, V.; Mocho, P.; Páramo, A.; Escaso, F.; Marcos-Fernández, F.; Sanz, J. L.; Ortega, F.
     described: 2016
   Lokiceratops:
@@ -88453,7 +88817,7 @@ genera:
     described: 2008
   Loricosaurus:
     genus: Loricosaurus
-    parent: Saltasaurini
+    parent: Titanosauria
     pronunciation:
       phonetic: lo-REE-ko-SAWR-us
     etymology: From Latin 'lorica' (armor/cuirass) and Greek 'sauros' (lizard); meaning 'armor lizard', in reference to the dermal armor on which the genus is based.
@@ -88577,12 +88941,6 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
-      - Lithostrotia
-      - Saltasauroidea
-      - Lohuecosauria
-      - Saltasauridae
-      - Saltasaurinae
-      - Saltasaurini
     authors: Huene, F. V.
     described: 1929
   Losillasaurus:
@@ -90808,7 +91166,7 @@ genera:
     described: 1932
   Magyarosaurus:
     genus: Magyarosaurus
-    parent: Eutitanosauria
+    parent: Lithostrotia
     pronunciation:
       phonetic: MOD-yar-o-SAWR-us
     etymology: From Hungarian 'Magyar' meaning 'Hungarian' and Greek 'sauros' meaning 'lizard'; named for Hungary, the country that controlled the Transylvanian region where it was found at the time of discovery.
@@ -90927,7 +91285,7 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
-      - Eutitanosauria
+      - Lithostrotia
     authors: Huene, F. V.
     described: 1932
   Mahakala:
@@ -91506,11 +91864,18 @@ genera:
     described: 1955
   Malarguesaurus:
     genus: Malarguesaurus
-    parent: Titanosauria
+    parent: Somphospondyli
     pronunciation:
       phonetic: muh-LAR-gway-SAWR-us
     etymology: Named after the Malargüe Department of Mendoza Province, Argentina, combined with Greek 'sauros' (lizard); meaning 'Malargüe lizard'.
     description: Malarguesaurus is a genus of titanosauriform sauropod dinosaur from the Late Cretaceous of Mendoza Province, Argentina. Its fossils, consisting of tail vertebrae, chevrons, ribs, and limb bones, were found in the upper Turonian-lower Coniacian Portezuelo Formation of the Neuquén Group. The type species, described by González Riga et al. in 2008, is M. florenciae.
+    dispute:
+      summary: |
+        Evicted from Titanosauria and placed in Somphospondyli pending the Somphospondyli placement pass. Malarguesaurus was described as a basal titanosauriform (Gonzalez Riga et al., 2009) and is recovered by recent analyses as a non-titanosaurian somphospondylan rather than a titanosaur. Its precise position among non-titanosaurian somphospondylans is left for that clade's pass.
+      history:
+        - date: 2026-06-30
+          note: |
+            Moved from Titanosauria to Somphospondyli as a non-titanosaurian somphospondylan; final placement deferred to the Somphospondyli batch.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -91611,7 +91976,6 @@ genera:
       - Macronaria
       - Titanosauriformes
       - Somphospondyli
-      - Titanosauria
     authors: González Riga, B. J.; Previtera, E.; Pirrone, C. A.
     described: 2009
   Malawisaurus:
@@ -92464,7 +92828,7 @@ genera:
     described: 2025
   Mansourasaurus:
     genus: Mansourasaurus
-    parent: Titanosauria
+    parent: Saltasauroidea
     dispute:
       summary: |
         Mansourasaurus was described as a derived titanosaur most closely related to Eurasian lithostrotians, placing it in or near Lirainosaurinae (Sallam et al., 2018; Jones, 2026); it is not a member of Diamantinasauria.
@@ -92579,6 +92943,9 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
+      - Eutitanosauria
+      - Saltasauroidea
     authors: Sallam, H. M.; Gorscak, E.; O'Connor, P. M.; El-Dawoudi, I. A.; El-Sayed, S.; Saber, S.; Kora, M. A.; Sertich, J. J. W.; Seiffert, E. R.; Lamanna, M. C.
     described: 2018
   Mantellisaurus:
@@ -93651,7 +94018,7 @@ genera:
     described: 2017
   Maxakalisaurus:
     genus: Maxakalisaurus
-    parent: Rinconsauria
+    parent: Aeolosaurini
     etymology: Named after the Maxakali people, an indigenous ethnic group of Minas Gerais, Brazil, combined with Greek 'sauros' (lizard); meaning 'Maxakali lizard'
     description: Maxakalisaurus is a genus of titanosaur dinosaur, found in the Adamantina Formation of Brazil, in the state of Minas Gerais in 1998. The genus name is derived from the tribe of the Maxakali; Topa is one of their divinities.
     diet: herbivore
@@ -93758,8 +94125,11 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
+      - Eutitanosauria
       - Colossosauria
       - Rinconsauria
+      - Aeolosaurini
     authors: Kellner, A. W. A.; Campos, D. d. A.; d. Azevedo, S. A. K.; Trotta, M. N. F.; Henriques, D. D. R.; Craik, M. M. T.; d. P. Silva, H.
     described: 2006
   Mbiresaurus:
@@ -94708,6 +95078,8 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
+      - Eutitanosauria
       - Colossosauria
       - Lognkosauria
     authors: González-Riga, B. J.
@@ -94917,6 +95289,7 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
       - Eutitanosauria
     authors: Rolando, M. A.; García Marsà, J. A.; Agnolín, F. L.; Motta, M. J.; Rozadilla, S.; Novas, F. E.
     described: 2022
@@ -95533,7 +95906,7 @@ genera:
     described: 2008
   Microcoelus:
     genus: Microcoelus
-    parent: Saltasaurinae
+    parent: Titanosauria
     pronunciation:
       phonetic: MY-kro-SEE-lus
     etymology: From Greek 'mikros' (small) and 'koilos' (hollow); meaning 'small hollow', a reference to the shallow lateral pit on the holotype dorsal vertebra.
@@ -95632,11 +96005,6 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
-      - Lithostrotia
-      - Saltasauroidea
-      - Lohuecosauria
-      - Saltasauridae
-      - Saltasaurinae
     authors: Lydekker, R.
     described: 1893
   Microhadrosaurus:
@@ -97055,7 +97423,7 @@ genera:
     described: 2004
   Mnyamawamtuka:
     genus: Mnyamawamtuka
-    parent: Titanosauria
+    parent: Lithostrotia
     etymology: From Kiswahili 'Mnyama wa Mtuka', meaning 'beast of the Mtuka river drainage', contracted to form the genus name.
     description: Mnyamawamtuka is a genus of lithostrotian titanosaur sauropod dinosaur from the Cretaceous Galula Formation in Tanzania. The type and only species is M. moyowamkia.
     diet: herbivore
@@ -97153,6 +97521,7 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
     authors: Gorscak, E.; O'Connor, P. M.
     described: 2019
   Moabosaurus:
@@ -97389,6 +97758,13 @@ genera:
       phonetic: mong-GO-lo-SAWR-us
     etymology: Named after Mongolia, where the fossil was discovered, combined with Greek 'sauros' (lizard); meaning 'Mongolia lizard'
     description: Mongolosaurus is a genus of titanosauriform sauropod dinosaur which lived during the Early Cretaceous of China.
+    dispute:
+      summary: |
+        Placed within Titanosauria as incertae sedis. Known largely from teeth and fragmentary material, Mongolosaurus was originally described as a sauropod of undetermined family (Gilmore, 1933). It has been recovered as a titanosaur (Mannion, 2011, and later work, possibly within Lognkosauria) but also as a non-titanosaurian somphospondylan (D'Emic, 2012; Averianov and Sues, 2017), and has occasionally been treated as a nomen dubium. It is retained within Titanosauria following the works that recover it there.
+      history:
+        - date: 2026-06-30
+          note: |
+            Retained in Titanosauria following Mannion (2011) and later work; a non-titanosaurian somphospondylan position and a nomen-dubium history are noted.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -99196,6 +99572,8 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
+      - Eutitanosauria
       - Colossosauria
       - Rinconsauria
     authors: Calvo, J. O.; González Riga, B. J.; J. D. Porfiri
@@ -100629,7 +101007,7 @@ genera:
     described: 2022
   Narambuenatitan:
     genus: Narambuenatitan
-    parent: Titanosauria
+    parent: Lithostrotia
     etymology: Refers to Puesto Narambuena, the locality in northern Patagonia, Argentina, where the fossil was found, combined with Greek Titan (a giant)
     pronunciation:
       phonetic: na-ram-bweh-na-tie-tuhn
@@ -100741,6 +101119,7 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
     authors: Filippi, L. S.; García, R. A.; Garrido, A. C.
     described: 2011
   Narindasaurus:
@@ -102016,6 +102395,8 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
+      - Saltasauroidea
       - Nemegtosauridae
     authors: Nowinski, A.
     described: 1971
@@ -102350,7 +102731,7 @@ genera:
     described: 2005
   Neuquensaurus:
     genus: Neuquensaurus
-    parent: Saltasaurini
+    parent: Saltasaurinae
     pronunciation:
       phonetic: nayoo-ken-SAWR-us
     etymology: Named for the Neuquén Province and Neuquén River of Argentina where its fossils were recovered, combined with Greek 'sauros' meaning 'lizard'.
@@ -102484,11 +102865,10 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
       - Saltasauroidea
-      - Lohuecosauria
       - Saltasauridae
       - Saltasaurinae
-      - Saltasaurini
     authors: Powell, J. E.
     described: 1992
   Nevadadromeus:
@@ -103189,6 +103569,13 @@ genera:
       phonetic: NIN-juh-TIE-tan
     etymology: Named for 'Ninja', a nickname of Argentine paleontologist Sebastian Apesteguia, combined with Latin 'titan' meaning 'giant'; translates as 'Ninja giant'.
     description: Ninjatitan is an exinct genus of titanosaurian sauropod dinosaur from the Early Cretaceous (Berriasian-Valanginian age) Bajada Colorada Formation of Argentina. The genus contains a single species, Ninjatitan zapatai, which was named and described in 2021 based on a partial postcranial skeleton discovered in 2014. Its generic name comes from a nickname of Argentine paleontologist Sebastian Apesteguia, and the specific name comes from technician Rogelio Zapata.
+    dispute:
+      summary: |
+        Placed within Titanosauria as incertae sedis. Potentially the oldest known titanosaur, Ninjatitan is known from fragmentary remains and its precise position is poorly resolved: the describing authors (Gallina et al., 2021) recovered two hypotheses, a very basal titanosaur or a lognkosaurian, and a later analysis (Moreno et al., 2023) recovered it within Rinconsauria. A basal position within Titanosauria is currently favored, as a derived (Late Cretaceous) subfamily placement would be hard to reconcile with its Early Cretaceous age.
+      history:
+        - date: 2026-06-30
+          note: |
+            Placed at Titanosauria incertae sedis; basal-titanosaur, lognkosaurian, and rinconsaurian positions have all been recovered.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -104026,7 +104413,7 @@ genera:
     described: 2007
   Normanniasaurus:
     genus: Normanniasaurus
-    parent: Eutitanosauria
+    parent: Titanosauria
     pronunciation:
       ipa: /nɔːrˈmæniəˌsɔːrəs/
       phonetic: nor-man-eye-ah-sor-us
@@ -104127,7 +104514,6 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
-      - Eutitanosauria
     authors: Le Loeuff, J.; Suteethorn, S.; E. Buffetaut
     described: 2013
   Notatesseraeraptor:
@@ -104443,7 +104829,7 @@ genera:
     described: 1919
   Notocolossus:
     genus: Notocolossus
-    parent: Colossosauria
+    parent: Lognkosauria
     etymology: From Greek notos (νότος, 'south wind') and kolossos (κολοσσός, 'giant statue'), meaning 'giant of the south', referring to its southern hemisphere provenance and enormous size
     pronunciation:
       phonetic: NOT-o-cuh-LOSS-us
@@ -104564,7 +104950,10 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
+      - Eutitanosauria
       - Colossosauria
+      - Lognkosauria
     authors: González Riga, B. J.; Lamanna, M. C.; Ortiz David, L. D.; Calvo, J. O.; Coria, J. P.
     described: 2016
   Notohypsilophodon:
@@ -104782,11 +105171,18 @@ genera:
     described: 2000
   Nullotitan:
     genus: Nullotitan
-    parent: Lithostrotia
+    parent: Saltasauroidea
     pronunciation:
       phonetic: NOO-lo-TIE-tan
     etymology: Named in honor of geologist Francisco Nullo, combined with Greek 'titan' (giant); meaning 'Nullo's giant'.
     description: Nullotitan is an extinct genus of lithostrotian titanosaur dinosaurs from the Late Cretaceous Chorrillo Formation of Santa Cruz Province, Argentina. The genus contains a single species, Nullotitan glaciaris. It was a contemporary of the ornithopod Isasicursor, which was described in the same paper.
+    dispute:
+      summary: |
+        Placed within Saltasauroidea as incertae sedis. The describing authors (Novas et al., 2019) did not run a phylogenetic analysis and suspected a colossosaurian affinity on the basis of individual characters, whereas the only cladistic analysis to include it (Cerda et al., 2021) recovered Nullotitan as the sister taxon of Saltasauridae, within Saltasauroidea. It is placed following that analysis, with the describers' colossosaurian suspicion noted.
+      history:
+        - date: 2026-06-30
+          note: |
+            Placed at Saltasauroidea incertae sedis per the analysis of Cerda et al. (2021); the describers (Novas et al., 2019) instead suspected a colossosaurian position.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -104892,6 +105288,8 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
+      - Saltasauroidea
     authors: Novas, F.; Agnolin, F.; Rozadilla, S.; Aranciaga-Rolando, A.; Brissón-Eli, F.; Motta, M.; Cerroni, M.; Ezcurra, M.; Martinelli, A.; D´Angelo, J.; Álvarez-Herrera, G.; Gentil, A.; Bogan, S.; Chimento, N.; García-Marsà, J.; Lo Coco, G.; Miquel, S.; Brito, F.; Vera, E.; Loinaze, V.; Fernandez, M.; Salgado, L.
     described: 2019
   Nuthetes:
@@ -106224,8 +106622,8 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
       - Saltasauroidea
-      - Lohuecosauria
       - Saltasauridae
       - Opisthocoelicaudiinae
     authors: Borsuk-Bialynicka, M.
@@ -108063,7 +108461,7 @@ genera:
     described: 2020
   Overosaurus:
     genus: Overosaurus
-    parent: Rinconsauria
+    parent: Aeolosaurini
     pronunciation:
       phonetic: oh-VAIR-o-SAWR-us
     etymology: Named after the Cerro Overo locality in Patagonia, Argentina, combined with Greek sauros (lizard); meaning "Overo lizard".
@@ -108172,8 +108570,11 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
+      - Eutitanosauria
       - Colossosauria
       - Rinconsauria
+      - Aeolosaurini
     authors: Coria, R. A.; Filippi, L. S.; Chiappe, L. M.; García, R.; Arcucci, A. B.
     described: 2013
   Oviraptor:
@@ -109173,11 +109574,18 @@ genera:
     described: 1856
   Paludititan:
     genus: Paludititan
-    parent: Eutitanosauria
+    parent: Lithostrotia
     pronunciation:
       phonetic: puh-LOO-di-TIE-tan
     etymology: From Latin palus ('marsh' or 'swamp') and Greek Titan (a giant), meaning 'marsh titan', referring to the marshy paleoenvironment where it was found in Romania
     description: Paludititan is a genus of titanosaurian sauropod dinosaur which lived in the area of present Romania during the Late Cretaceous. It existed in the island ecosystem known as Hațeg Island.
+    dispute:
+      summary: |
+        Placed within Lithostrotia as incertae sedis. The describing analysis (Csiki et al., 2010) found conflicting topologies across datasets and resolved Paludititan only as a derived titanosaur, most probably a lithostrotian; later studies recover it as a basal lithostrotian (Diez Diaz et al., 2018; Navarro et al., 2022). It has never been recovered as a saltasaurine or lirainosaurine.
+      history:
+        - date: 2026-06-30
+          note: |
+            Placed at Lithostrotia incertae sedis; the describing study found its precise position equivocal across datasets.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -109281,7 +109689,7 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
-      - Eutitanosauria
+      - Lithostrotia
     authors: Csiki, Z.; Codrea, V.; Jipa-Murzea, C.; Godefroit, P.
     described: 2010
   Pampadromaeus:
@@ -109587,6 +109995,9 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
+      - Colossosauria
+      - Rinconsauria
       - Aeolosaurini
     authors: Calvo, J. O.; Porfiri, J. D.
     described: 2010
@@ -110321,6 +110732,13 @@ genera:
       phonetic: pa-RAL-i-TIE-tuhn
     etymology: From Greek parali (tidal, of the sea) and titan (giant); meaning "tidal giant".
     description: Paralititan is a genus of sauropod dinosaur that lived in present-day Egypt during the Late Cretaceous period. It was described by American paleontologist Joshua B. Smith and colleagues in 2001. The genus contains a single species, Paralititan stromeri, named based on a fragmentary skeleton including vertebrae and limb bones. These fossils were unearthed by an American expedition to the Bahariya Oasis in western Egypt in rock layers of the Bahariya Formation. This formation dates to the Cenomanian stage of the Late Cretaceous, which lasted 101 to 94 million years ago. An incomplete dorsal (back) vertebra that had been described by German paleontologist Ernst Stromer in 1932 was also assigned to Paralititan. However, this vertebra had been destroyed during the Bombing of Munich in World War II.
+    dispute:
+      summary: |
+        Placed within Lithostrotia as incertae sedis. The fragmentary holotype and brief original description leave the position very uncertain. The describing analysis (Smith et al., 2001) nested Paralititan within Titanosauridae using a small matrix, whereas recent analyses recover it within Saltasauridae, close to Maxakalisaurus (Vila et al., 2022; Gorscak et al., 2023), with a colossosaurian position also considered plausible. It is parked at Lithostrotia pending resolution.
+      history:
+        - date: 2026-06-30
+          note: |
+            Placed at Lithostrotia incertae sedis; Saltasauridae and colossosaurian positions are both reported in recent work.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -111648,7 +112066,7 @@ genera:
     described: 1979
   Patagotitan:
     genus: Patagotitan
-    parent: Eutitanosauria
+    parent: Lognkosauria
     etymology: Named for Patagonia, the region of Argentina where it was discovered, combined with Greek 'titan' meaning 'giant', referencing its enormous size.
     description: Patagotitan is a genus of titanosaurian sauropod dinosaur from the Early Cretaceous (Albian stage) Cerro Barcino Formation in Chubut Province, Patagonia, Argentina. The genus contains a single species known from at least six young adult individuals, Patagotitan mayorum, which was first announced in 2014 and then named in 2017 by José Carballido and colleagues. Originally thought to be the largest known titanosaur and land animal overall, preliminary studies and press releases suggested that Patagotitan had an estimated length of 37 m (121 ft) and an estimated weight of 69 tonnes (76 short tons). Later research revised the length estimate down to 31 m (102 ft) and weight estimates down to approximately 50-60 tonnes (55-66 short tons), suggesting that Patagotitan was of a similar size to, if not smaller than, its closest relatives Argentinosaurus and Puertasaurus. Still, Patagotitan is one of the best-known titanosaurs, and so its interrelationships with other titanosaurs have been relatively consistent in phylogenetic analyses. This led to its use in a re-definition of the group Colossosauria by Carballido and colleagues in 2022.
     diet: herbivore
@@ -111761,7 +112179,10 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
       - Eutitanosauria
+      - Colossosauria
+      - Lognkosauria
     authors: Carballido, J. L.; Pol, D.; Otero, A.; Cerda, I. A.; Salgado, L.; Garrido, A. C.; Ramezani, J.; Cúneo, N. R.; Krause, J. M.
     described: 2017
   Paulodon:
@@ -112509,7 +112930,7 @@ genera:
     described: 1994
   Pellegrinisaurus:
     genus: Pellegrinisaurus
-    parent: Lithostrotia
+    parent: Saltasauroidea
     pronunciation:
       phonetic: pel-e-GREEN-ee-SAWR-us
     etymology: Named after Pellegrini Lake (Lago Pellegrini) in Río Negro Province, Argentina, where the holotype was found, combined with Greek sauros meaning 'lizard'; meaning 'Pellegrini lizard'
@@ -112607,6 +113028,8 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
+      - Saltasauroidea
     authors: Salgado, L.
     described: 1996
   Pelorosaurus:
@@ -113397,6 +113820,7 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
       - Eutitanosauria
     authors: Díaz, V. D.; Mannion, P. D.; Csiki-Sava, Z.; Upchurch, P.
     described: 2025
@@ -113683,6 +114107,8 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
+      - Eutitanosauria
       - Colossosauria
       - Lognkosauria
     authors: Longrich, N. R.; Pérez-Moreno, A.; Díez Díaz, V.; Pereda-Suberbiola, X.; Bardet, N.; Jalil, N.-E.
@@ -114421,11 +114847,18 @@ genera:
     described: 1933
   Pitekunsaurus:
     genus: Pitekunsaurus
-    parent: Rinconsauria
+    parent: Colossosauria
     etymology: From Mapudungun pitekun, meaning 'to discover', combined with Greek sauros meaning 'lizard'; meaning 'discovery lizard'
     pronunciation:
       phonetic: PEE-tuh-koon-SOR-us
     description: Pitekunsaurus is a genus of titanosaurian sauropod dinosaur from the Late Cretaceous Anacleto Formation of Neuquén, Argentina. It was described by L. Filippi and A. Garrido in 2008. The type species is P. macayai. The generic name is derived from Mapudungun pitekun, meaning "to discover", the epitheton honors the discoverer, oil company explorer Luis Macaya, who found the fossil in April 2004.
+    dispute:
+      summary: |
+        Placed conservatively within Colossosauria. The describing paper (Filippi and Garrido, 2008) ran no phylogenetic analysis and referred Pitekunsaurus only to Titanosauria, tentatively noting a possible affinity with Rinconsaurus. Subsequent analyses conflict: it has been recovered as an aeolosaurin (Coria et al., 2013) and a rinconsaur (Navarro et al., 2022), both within Rinconsauria, but also as a basal colossosaur outside Rinconsauria (Gonzalez Riga et al., 2018). Colossosauria is the least-inclusive node these placements share.
+      history:
+        - date: 2026-06-30
+          note: |
+            Reparented from Rinconsauria to Colossosauria; Rinconsauria membership is contested by Gonzalez Riga et al. (2018), so it is parked at the shared uncontested node.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -114521,8 +114954,9 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
+      - Eutitanosauria
       - Colossosauria
-      - Rinconsauria
     authors: Filippi, L. S.; Garrido, A. C.
     described: 2008
   Piveteausaurus:
@@ -118886,7 +119320,7 @@ genera:
     described: 2026
   Puertasaurus:
     genus: Puertasaurus
-    parent: Colossosauria
+    parent: Lognkosauria
     etymology: Named for Pablo Puerta, one of the field workers who discovered the fossil specimen, combined with Greek '-saurus' meaning 'lizard'.
     description: Puertasaurus is a genus of sauropod dinosaur that lived in South America during the Late Cretaceous Period. It is known from a single specimen recovered from sedimentary rocks of the Cerro Fortaleza Formation in southwestern Patagonia, Argentina, which probably is Campanian or Maastrichtian in age. The only species is Puertasaurus reuili. Described by the paleontologist Fernando Novas and colleagues in 2005, it was named in honor of Pablo Puerta and Santiago Reuil, who discovered and prepared the specimen. It consists of four well-preserved vertebrae, including one cervical, one dorsal, and two caudal vertebrae. Puertasaurus is a member of Titanosauria, the dominant group of sauropods during the Cretaceous.
     diet: herbivore
@@ -118985,7 +119419,10 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
+      - Eutitanosauria
       - Colossosauria
+      - Lognkosauria
     authors: Novas, F.; Salgado, L.; Calvo, J.; Agnolin, F.
     described: 2005
   Pukyongosaurus:
@@ -119323,7 +119760,7 @@ genera:
     described: 2025
   Punatitan:
     genus: Punatitan
-    parent: Rinconsauria
+    parent: Aeolosaurini
     etymology: Named for the puna, the high-altitude Andean plateau characterized by oxygen-depleted atmosphere, combined with Greek 'titan' meaning 'giant'; meaning 'puna giant.'
     pronunciation:
       phonetic: POO-na-TIE-tuhn
@@ -119431,8 +119868,11 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
+      - Eutitanosauria
       - Colossosauria
       - Rinconsauria
+      - Aeolosaurini
     authors: Hechenleitner, E. M.; Leuzinger, L.; Martinelli, A. G.; Rocher, S.; Fiorelli, L. E.; Taborda, J. R. A.; Salgado, L.
     described: 2020
   Pycnonemosaurus:
@@ -120405,8 +120845,8 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
       - Saltasauroidea
-      - Lohuecosauria
       - Saltasauridae
     authors: Mo, J.-Y.; Huang, C.-L.; Zhao, Z.-R.; Wang, W.; Xu, X.
     described: 2008
@@ -120818,6 +121258,8 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
+      - Saltasauroidea
       - Nemegtosauridae
     authors: Kurzanov, S. M.; Bannikov, A. F.
     described: 1983
@@ -120921,6 +121363,8 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
+      - Eutitanosauria
       - Colossosauria
       - Lognkosauria
     authors: González Riga, B. J.; Ortiz David, L.
@@ -121029,7 +121473,7 @@ genera:
     described: 2001
   Qunkasaura:
     genus: Qunkasaura
-    parent: Saltasauridae
+    parent: Opisthocoelicaudiinae
     etymology: From 'Qunka' (or 'Kunka'), the old Spanish name that gave rise to Cuenca in Castilla-La Mancha, Spain, where the Lo Hueco site is located, combined with Greek 'saura' meaning 'lizard'.
     pronunciation:
       phonetic: KUN-kuh-SOH-ruh
@@ -121137,9 +121581,10 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
       - Saltasauroidea
-      - Lohuecosauria
       - Saltasauridae
+      - Opisthocoelicaudiinae
     authors: Mocho, P.; Escaso, F.; Marcos-Fernández, F.; Páramo, A.; Sanz, J. L.; Vidal, D.; Ortega, F.
     described: 2024
   Rahiolisaurus:
@@ -121726,6 +122171,7 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
       - Saltasauroidea
     authors: Curry Rogers, K. A.; Forster, C. A.
     described: 2001
@@ -123424,6 +123870,8 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
+      - Eutitanosauria
       - Colossosauria
       - Rinconsauria
     authors: Calvo, J. O.; González Riga, B. J.
@@ -123832,8 +124280,8 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
       - Saltasauroidea
-      - Lohuecosauria
       - Saltasauridae
       - Saltasaurinae
     authors: Salgado, L.; Azpilicueta, C.
@@ -124259,7 +124707,7 @@ genera:
     described: 2023
   Rukwatitan:
     genus: Rukwatitan
-    parent: Rinconsauria
+    parent: Titanosauria
     etymology: Named for the Rukwa Rift Basin in Tanzania where it was found, combined with Greek 'titan' meaning 'giant'.
     pronunciation:
       phonetic: ruk-wah-TI-tuhn
@@ -124370,8 +124818,6 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
-      - Colossosauria
-      - Rinconsauria
     authors: Gorscak, E.; O'Connor, P. M.; Stevens, N. J.; Roberts, E. M.
     described: 2014
   Ruyangosaurus:
@@ -124610,7 +125056,7 @@ genera:
     described: 1977
   Saltasaurus:
     genus: Saltasaurus
-    parent: Saltasaurini
+    parent: Saltasaurinae
     pronunciation:
       phonetic: SAHL-tah-SAWR-us
     etymology: Named after Salta Province in northwestern Argentina, where the fossils were found, combined with Greek 'sauros' (lizard), meaning 'lizard from Salta'.
@@ -124711,11 +125157,10 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
       - Saltasauroidea
-      - Lohuecosauria
       - Saltasauridae
       - Saltasaurinae
-      - Saltasaurini
     authors: Bonaparte, J. F.; Powell, J. E.
     described: 1980
   Saltriovenator:
@@ -129489,7 +129934,7 @@ genera:
     described: 2009
   Shingopana:
     genus: Shingopana
-    parent: Lithostrotia
+    parent: Aeolosaurini
     etymology: From Swahili 'shingo' meaning 'neck' and 'pana' meaning 'wide'; meaning 'wide neck', in reference to the animal's broad neck.
     pronunciation:
       phonetic: SHEEN-go-PAH-nah
@@ -129601,6 +130046,10 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
+      - Colossosauria
+      - Rinconsauria
+      - Aeolosaurini
     authors: Gorscak, E.; O'Connor, P. M.; Roberts, E. M.; Stevens, N. J.
     described: 2017
   Shishugounykus:
@@ -138999,6 +139448,13 @@ genera:
     parent: Saltasauroidea
     etymology: Named for the Tapuia people of Brazil combined with Greek 'sauros' meaning 'lizard', referring to the region of discovery in Minas Gerais, Brazil.
     description: Tapuiasaurus is a genus of titanosaur which lived during the Lower Cretaceous period (Aptian age) in what is now Minas Gerais, Brazil.
+    dispute:
+      summary: |
+        Placed within Saltasauroidea as incertae sedis. The describing analysis (Zaher et al., 2011), which benefits from rare cranial material, recovered Tapuiasaurus deeply nested among derived titanosaurs as the sister taxon of Rapetosaurus, close to Nemegtosaurus. Later work cautions that this grouping of the few cranially-known titanosaurs may be an artifact and that Tapuiasaurus could occupy a much more basal, possibly pre-lithostrotian position (Wilson et al., 2016). It is parked at Saltasauroidea following the dedicated cranial analysis.
+      history:
+        - date: 2026-06-30
+          note: |
+            Placed at Saltasauroidea incertae sedis per Zaher et al. (2011); a more basal position (Wilson et al., 2016) is noted.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -139109,6 +139565,7 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
       - Saltasauroidea
     authors: Zaher, H.; Pol, D.; Carvalho, A. B.; Nascimento, P. M.; Riccomini, C.; Larson, P.; Juarez-Valieri, R.; Pires-Domingues, R.; da Silva, N. J.; de Almeida Campos, D.
     described: 2011
@@ -144072,6 +144529,7 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
       - Saltasauroidea
     authors: Pérez-Moreno, A.; Salgado, L.; Carballido, J. L.; Otero, A.; Pol, D.
     described: 2024
@@ -145645,7 +146103,7 @@ genera:
     described: 2018
   Traukutitan:
     genus: Traukutitan
-    parent: Lognkosauria
+    parent: Titanosauria
     etymology: From Mapuche/Araucanian Trauku (a mountain spirit usually represented as a giant) and Greek titan ('giant'), meaning 'Trauku titan'
     pronunciation:
       phonetic: TRAW-cu-TIE-tuhn
@@ -145742,8 +146200,6 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
-      - Colossosauria
-      - Lognkosauria
     authors: Juárez Valieri, R. D.; Calvo, J. O.
     described: 2011
   Triceratops:
@@ -146070,10 +146526,14 @@ genera:
       phonetic: try-GON-o-SAWR-us
     etymology: From Greek 'trigōnon' (triangle), in reference to the Triângulo Mineiro region of Minas Gerais, Brazil where the holotype was found, and 'sauros' (lizard); meaning 'triangle lizard'.
     description: |
-      Trigonosaurus is a genus of saltasaurid dinosaurs from the Maastrichtian Serra da Galga Formation of Brazil. The type species, Trigonosaurus pricei, was first described by Campos, Kellner, Bertini, and Santucci in 2005. It was based on two specimens, both consisting mainly of vertebrae. The two specimens were originally believed to have come from the same individual. However, one specimen was described as the holotype of Caieiria in 2022, while the holotype may have instead come from Baurutitan. Before its description, it was known as the "Peirópolis titanosaur", after the place it was found.
+      Trigonosaurus is a genus of titanosaurian dinosaurs from the Maastrichtian Serra da Galga Formation of Brazil. The type species, Trigonosaurus pricei, was first described by Campos, Kellner, Bertini, and Santucci in 2005. It was based on two specimens, both consisting mainly of vertebrae. The two specimens were originally believed to have come from the same individual. However, one specimen was described as the holotype of Caieiria in 2022, while the holotype may have instead come from Baurutitan. Before its description, it was known as the "Peirópolis titanosaur", after the place it was found.
     dispute:
       summary: |
         The validity of Trigonosaurus is contested. Silva Junior et al. (2022) proposed that T. pricei is a junior subjective synonym of Baurutitan britoi (which has page priority within the same 2005 journal volume) and erected the postcranial paratype (MCT 1719-R) as a separate new genus, Caieiria allocaudata. Fronimos (2023) explicitly rejected the synonymy, citing morphological differences in the first caudal vertebra of the two taxa.
+      history:
+        - date: 2026-06-30
+          note: |
+            Placed in Aeolosaurini following the phylogenetic analysis of Silva Junior et al. (2022); the proposed synonymy with Baurutitan is contested by Fronimos (2023).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -146185,6 +146645,9 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
+      - Colossosauria
+      - Rinconsauria
       - Aeolosaurini
     authors: Campos, D. A.; Kellner, A. W. A.; Bertini, R. J.; Santucci, R. M.
     described: 2005
@@ -148196,6 +148659,8 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
+      - Eutitanosauria
       - Colossosauria
       - Rinconsauria
     authors: Salgado, L.; de Souza Carvalho, I.
@@ -148423,6 +148888,7 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
       - Saltasauroidea
     authors: Soto, M.; Carballido, J. L.; Langer, M. C.; Silva Junior, J. C. G.; Montenegro, F.; Perea, D.
     described: 2024
@@ -149729,7 +150195,7 @@ genera:
     described: 2010
   Vahiny:
     genus: Vahiny
-    parent: Lithostrotia
+    parent: Titanosauria
     etymology: From Malagasy meaning 'traveler'
     pronunciation:
       phonetic: va-heenh
@@ -149828,7 +150294,6 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
-      - Lithostrotia
     authors: Curry Rogers, K.; Wilson, J. A.
     described: 2014
   Valdoraptor:
@@ -151755,7 +152220,7 @@ genera:
     described: 2025
   Volgatitan:
     genus: Volgatitan
-    parent: Lithostrotia
+    parent: Colossosauria
     pronunciation:
       phonetic: VOL-guh-TIE-tan
     etymology: Named for the Volga River region of Russia (Ulyanovsk Oblast) where the fossils were found, combined with 'titan' meaning 'giant'.
@@ -151868,6 +152333,8 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
+      - Colossosauria
     authors: Averianov, A.; Efimov, V.
     described: 2018
   Volkheimeria:
@@ -156136,8 +156603,8 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
       - Saltasauroidea
-      - Lohuecosauria
       - Saltasauridae
       - Saltasaurinae
     authors: Apesteguía, S.; Soto Luzuriaga, J. E.; Gallina, P. A.; Granda, J. T.; Guamán Jaramillo, G. A.
@@ -156766,7 +157233,7 @@ genera:
     described: 2017
   Yeneen:
     genus: Yeneen
-    parent: Titanosauria
+    parent: Saltasauroidea
     etymology: Named after Yeneen, an entity in Tehuelche (Aonikenk) culture tied to cold and winter weather; references the type locality La Invernada, a Spanish word for the wintering location of cattle.
     pronunciation:
       phonetic: YEN-een
@@ -156846,6 +157313,9 @@ genera:
       - Titanosauriformes
       - Somphospondyli
       - Titanosauria
+      - Lithostrotia
+      - Eutitanosauria
+      - Saltasauroidea
     authors: Filippi, L. S.; Bellardini, F.; Carballido, J. L.; Méndez, A. H.; Garrido, A. C.
     described: 2026
   Yimenosaurus:
@@ -160531,7 +161001,7 @@ genera:
     described: 2010
   Zhuchengtitan:
     genus: Zhuchengtitan
-    parent: Saltasauridae
+    parent: Opisthocoelicaudiinae
     etymology: Named after Zhucheng, Shandong Province, China where it was found, combined with Greek titan meaning 'giant'; translates as 'Zhucheng titan'
     pronunciation:
       phonetic: JOO-chang-TIE-tuhn
@@ -160621,9 +161091,10 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
+      - Eutitanosauria
       - Saltasauroidea
-      - Lohuecosauria
       - Saltasauridae
+      - Opisthocoelicaudiinae
     authors: Mo, J.; Wang, K.; Chen, S.; Wang, P.; Xu, X.
     described: 2017
   Zhuchengtyrannus:
