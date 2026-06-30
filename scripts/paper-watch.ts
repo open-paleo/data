@@ -15,11 +15,22 @@ const statePath = path.join(root, ".github", "paper-watch", "state.json");
 const digestPath = path.join(root, "reports", "paper-watch.md");
 
 /**
- * OpenAlex concept id for Paleontology. Used to bound the fetch volume to
- * paleontology literature, which also suppresses cross-kingdom homonyms
- * before local taxon-name matching runs.
+ * OpenAlex topic ids used to bound the fetch volume to fossil literature,
+ * which also suppresses cross-kingdom homonyms before local taxon-name
+ * matching runs. These are the three fossil-bearing topics of the Paleontology
+ * subfield (1911); the subfield's other topics — modern beetle taxonomy, cave
+ * biology, archaeology, marine-invertebrate physiology — are left out to keep
+ * the fetch volume under the page cap.
+ *
+ * Replaces the former Paleontology concept (C151730666) filter. OpenAlex froze
+ * "concepts" in favor of "topics", so 2024-onward works increasingly carry no
+ * Paleontology concept and fell straight through the old net — e.g. the
+ * Panguraptor lufengensis redescription, tagged with topic T10109 but no
+ * Paleontology concept. Matched against ANY of a work's topics, not just its
+ * primary_topic, because OpenAlex routinely mis-assigns the primary (that same
+ * Panguraptor work's primary_topic is "Diatoms and Algae Research").
  */
-const paleontologyConceptId = "C151730666";
+const paleontologyTopicIds = ["T10109", "T10955", "T11354"];
 
 const openAlexBase = "https://api.openalex.org/works";
 
@@ -135,7 +146,7 @@ type Options = {
     days: number;
     includeClades: boolean;
     maxPages: number;
-    conceptId: string;
+    topicIds: Array<string>;
     mailto: string;
     apiKey: string | null;
     writeState: boolean;
@@ -176,8 +187,11 @@ function parseOptions(argv: Array<string>): Options
         since,
         days,
         includeClades: argv.includes("--clades"),
-        maxPages: Number(flag("--max-pages") ?? "25"),
-        conceptId: flag("--concept") ?? paleontologyConceptId,
+        maxPages: Number(flag("--max-pages") ?? "40"),
+        topicIds: (flag("--topics") ?? paleontologyTopicIds.join(","))
+            .split(",")
+            .map((id) => id.trim())
+            .filter((id) => id.length > 0),
         mailto: flag("--mailto") ?? process.env.OPENALEX_MAILTO ?? "open-paleo@users.noreply.github.com",
         apiKey: flag("--api-key") ?? process.env.OPENALEX_API_KEY ?? null,
         writeState: argv.includes("--write-state"),
@@ -467,7 +481,7 @@ function dedupHits(candidates: Array<WatchHit>): Array<WatchHit>
  */
 async function fetchRecentWorks(options: Options): Promise<Array<Record<string, unknown>>>
 {
-    const filter = `concepts.id:${options.conceptId},from_publication_date:${options.since}`
+    const filter = `topics.id:${options.topicIds.join("|")},from_publication_date:${options.since}`
         + `,type:${articleTypes.join("|")}`;
     const works: Array<Record<string, unknown>> = [];
     let cursor = "*";
@@ -760,7 +774,7 @@ async function main(): Promise<void>
     console.log(
         `Paper watch: ${genusCount} genera`
         + `${options.includeClades ? ` + ${cladeNames.size} clades` : ""}, `
-        + `since ${options.since} (concept ${options.conceptId}).`,
+        + `since ${options.since} (topics ${options.topicIds.join("|")}).`,
     );
 
     const works = await fetchRecentWorks(options);
