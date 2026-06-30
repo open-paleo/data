@@ -1,7 +1,7 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-06-30T00:00:02.911Z
-  clade_count: 219
+  built_at: 2026-06-30T01:04:49.660Z
+  clade_count: 218
   genus_count: 1398
   license: CC-BY-4.0
   schema_version: 1.0.0
@@ -265,7 +265,6 @@ tree:
                                             Hadrosauridae:
                                               Saurolophinae: {}
                                               Lambeosaurinae: {}
-                      Fabrosauridae: {}
                       Heterodontosauridae:
                         Heterodontosaurinae: {}
     Plantae: {}
@@ -2633,19 +2632,6 @@ clades:
         doi: 10.1038/s41586-025-08964-6
         url: http://dx.doi.org/10.1038/s41586-025-08964-6
         notes: Uses Eutyrannosauria (Delcourt and Grillo, 2018) as an established clade and recovers Khankhuuluu mongoliensis as its immediate sister taxon.
-  Fabrosauridae:
-    taxonomy:
-      - Life
-      - Animalia
-      - Chordata
-      - Vertebrata
-      - Sarcopterygii
-      - Tetrapoda
-      - Reptilia
-      - Archosauria
-      - Dinosauria
-      - Ornithischia
-      - Fabrosauridae
   Flagellicaudata:
     taxonomy:
       - Life
@@ -2688,6 +2674,8 @@ clades:
       - Brachyrostra
       - Furileusauria
   Genasauria:
+    description: |
+      Genasauria is the major ornithischian clade that excludes the earliest- diverging forms (such as Heterodontosauridae and a grade of small basal ornithischians), uniting Thyreophora with Neornithischia and so encompassing the great majority of ornithischian diversity. Its members share evidence of fleshy cheeks bounding inset tooth rows, an adaptation for more efficient oral processing of plant material.
     taxonomy:
       - Life
       - Animalia
@@ -2700,6 +2688,32 @@ clades:
       - Dinosauria
       - Ornithischia
       - Genasauria
+    described: 1986
+    authors: Sereno, P. C.
+    diagnostic_features:
+      - Buccal emargination of the tooth rows, with maxillary and dentary teeth inset from the lateral jaw margin (implying muscular cheeks)
+      - Spout-shaped, edentulous anterior margin of the predentary and premaxilla
+      - Reduced number of premaxillary teeth
+      - Cheek-tooth crowns bearing a prominent primary ridge
+    references:
+      - id: sereno1986
+        authors: Sereno, P. C.
+        year: 1986
+        title: Phylogeny of the bird-hipped dinosaurs (order Ornithischia)
+        journal: National Geographic Research
+        volume: "2"
+        pages: 234-256
+        notes: Erected Genasauria.
+      - id: madzia2021
+        authors: Madzia, D.; Arbour, V. M.; Boyd, C. A.; Farke, A. A.; Cruzado-Caballero, P.; Evans, D. C.
+        year: 2021
+        title: The phylogenetic nomenclature of ornithischian dinosaurs
+        journal: PeerJ
+        volume: "9"
+        pages: e12362
+        doi: 10.7717/peerj.12362
+        url: http://dx.doi.org/10.7717/peerj.12362
+        notes: Provides the modern phylogenetic definition of Genasauria.
   Giganotosaurini:
     taxonomy:
       - Life
@@ -2995,6 +3009,8 @@ clades:
       - Saurischia
       - Herrerasauridae
   Heterodontosauridae:
+    description: |
+      Heterodontosauridae is a clade of small, early-diverging ornithischian dinosaurs notable for their strongly differentiated (heterodont) dentition, including enlarged caniniform tusks set off from the cheek teeth by a diastema. Known from the Late Triassic to the Early Cretaceous of Gondwana and Laurasia, they comprise a basal Laurasian grade (Echinodon, Fruitadens, Tianyulong) and the more derived, largely Gondwanan Heterodontosaurinae. They are here placed near the base of Ornithischia, outside Genasauria.
     taxonomy:
       - Life
       - Animalia
@@ -3007,7 +3023,36 @@ clades:
       - Dinosauria
       - Ornithischia
       - Heterodontosauridae
+    type_genus: Heterodontosaurus
+    described: 1966
+    authors: Kuhn, O.
+    diagnostic_features:
+      - Enlarged caniniform teeth in both the premaxilla and the dentary
+      - Postcaniniform diastema separating the caniniform from the cheek-tooth row
+      - Cheek-tooth crowns with a swollen base and well-developed apical wear facets
+      - Reduced or episodic tooth replacement rather than continuous replacement
+      - Small body size with elongate, gracile, cursorial hindlimbs
+    references:
+      - id: kuhn1966
+        authors: Kuhn, O.
+        year: 1966
+        title: Die Reptilien
+        book: Die Reptilien
+        publisher: Verlag Oeben
+        notes: Origin of the family-group name Heterodontosauridae.
+      - id: sereno2012
+        authors: Sereno, P. C.
+        year: 2012
+        title: Taxonomy, morphology, masticatory function and phylogeny of heterodontosaurid dinosaurs
+        journal: ZooKeys
+        volume: "226"
+        pages: 1-225
+        doi: 10.3897/zookeys.226.2840
+        url: http://dx.doi.org/10.3897/zookeys.226.2840
+        notes: Monographic revision and phylogenetic definition of Heterodontosauridae.
   Heterodontosaurinae:
+    description: |
+      Heterodontosaurinae is the derived, largely Gondwanan subfamily of Heterodontosauridae, comprising Heterodontosaurus, Lycorhinus, Abrictosaurus, Manidens, and Pegomastax. Defined as the heterodontosaurids more closely related to Heterodontosaurus than to Tianyulong, Fruitadens, or Echinodon, its members show the most specialized heterodontosaurid jaw mechanics, with tall cheek-tooth crowns worn into continuous occlusal surfaces.
     taxonomy:
       - Life
       - Animalia
@@ -3021,6 +3066,33 @@ clades:
       - Ornithischia
       - Heterodontosauridae
       - Heterodontosaurinae
+    type_genus: Heterodontosaurus
+    described: 1966
+    authors: Kuhn, O.
+    diagnostic_features:
+      - Deep postcaniniform diastema
+      - Jaw articulation set well below the level of the cheek-tooth row
+      - Enlarged, inset surangular foramen
+      - External mandibular fossa developed on the surangular
+      - Cheek-tooth crowns taller than wide, worn into systematic occlusal facets
+    references:
+      - id: kuhn1966
+        authors: Kuhn, O.
+        year: 1966
+        title: Die Reptilien
+        book: Die Reptilien
+        publisher: Verlag Oeben
+        notes: Origin of the family-group name Heterodontosaurinae.
+      - id: sereno2012
+        authors: Sereno, P. C.
+        year: 2012
+        title: Taxonomy, morphology, masticatory function and phylogeny of heterodontosaurid dinosaurs
+        journal: ZooKeys
+        volume: "226"
+        pages: 1-225
+        doi: 10.3897/zookeys.226.2840
+        url: http://dx.doi.org/10.3897/zookeys.226.2840
+        notes: Provides the phylogenetic definition of Heterodontosaurinae.
   Heyuanninae:
     taxonomy:
       - Life
@@ -4171,7 +4243,7 @@ clades:
       - Opisthocoelicaudiinae
   Ornithischia:
     description: |
-      Ornithischia, meaning "bird-hipped," is one of the two traditionally recognized major clades of dinosaurs. Ornithischians are united by a distinctive pelvic anatomy in which the pubis is rotated posteriorly to lie parallel with the ischium, convergently resembling the pelvic arrangement of birds (though birds are actually saurischians). The clade includes the armored thyreophorans (stegosaurs and ankylosaurs), the horned ceratopsians, the dome-headed pachycephalosaurs, and the duck-billed ornithopods. All ornithischians were herbivorous.
+      Ornithischia, meaning "bird-hipped," is one of the two traditionally recognized major clades of dinosaurs. Ornithischians are united by a distinctive pelvic anatomy in which the pubis is rotated posteriorly to lie parallel with the ischium, convergently resembling the pelvic arrangement of birds (though birds are actually saurischians). The clade includes the armored thyreophorans (stegosaurs and ankylosaurs), the horned ceratopsians, the dome-headed pachycephalosaurs, and the duck-billed ornithopods, together with a grade of small early-diverging forms and the early-branching Heterodontosauridae. All ornithischians were herbivorous.
     taxonomy:
       - Life
       - Animalia
@@ -4184,22 +4256,34 @@ clades:
       - Dinosauria
       - Ornithischia
     described: 1888
-    authors: Seeley
+    authors: Seeley, H. G.
     diagnostic_features:
-      - Opisthopubic pelvis with posteriorly directed pubis parallel to ischium
-      - Predentary bone at the tip of the lower jaw
-      - Ossified tendons along the vertebral column in many taxa
-      - Leaf-shaped cheek teeth with denticulate margins
-      - Palpebral bone in the orbit
-      - Herbivorous diet across all members
+      - Opisthopubic pelvis with the pubis rotated posteriorly to parallel the ischium
+      - Predentary bone capping the tip of the lower jaw
+      - Leaf-shaped cheek-tooth crowns with denticulate margins
+      - Palpebral (supraorbital) bone roofing the orbit
+      - Ossified epaxial tendons along the vertebral column in many members
     references:
       - id: seeley1888ornithischia
-        authors: Seeley, H.G.
+        authors: Seeley, H. G.
         year: 1888
         title: On the classification of the fossil animals commonly named Dinosauria
         journal: Proceedings of the Royal Society of London
         volume: "43"
         pages: 165-171
+        doi: 10.1098/rspl.1887.0117
+        url: http://dx.doi.org/10.1098/rspl.1887.0117
+        notes: Erected Ornithischia.
+      - id: madzia2021
+        authors: Madzia, D.; Arbour, V. M.; Boyd, C. A.; Farke, A. A.; Cruzado-Caballero, P.; Evans, D. C.
+        year: 2021
+        title: The phylogenetic nomenclature of ornithischian dinosaurs
+        journal: PeerJ
+        volume: "9"
+        pages: e12362
+        doi: 10.7717/peerj.12362
+        url: http://dx.doi.org/10.7717/peerj.12362
+        notes: Provides the modern phylogenetic definition of Ornithischia.
   Ornithomimidae:
     taxonomy:
       - Life
@@ -5988,7 +6072,7 @@ clades:
         notes: Provides the modern phylogenetic definition of Thescelosaurinae.
   Thyreophora:
     description: |
-      Thyreophora, meaning "shield bearers," is a clade of armored ornithischian dinosaurs that includes Stegosauria and Ankylosauria. Thyreophorans are characterized by the presence of dermal armor in the form of osteoderms (bony scutes, plates, or spines) embedded in the skin along the body. The clade appeared in the Early Jurassic and persisted until the end of the Cretaceous, with a global distribution. Thyreophorans were obligate quadrupeds and herbivores.
+      Thyreophora, meaning "shield bearers," is the clade of armored ornithischian dinosaurs that includes Stegosauria and Ankylosauria together with a basal grade of early-diverging forms (Scutellosaurus, Emausaurus, Scelidosaurus, and relatives). Thyreophorans are characterized by dermal armor in the form of osteoderms (bony scutes, plates, or spines) arranged in parasagittal rows. The clade appeared in the Early Jurassic and persisted to the end of the Cretaceous, with the basal members being small and facultatively bipedal and the derived eurypodans large obligate quadrupeds.
     taxonomy:
       - Life
       - Animalia
@@ -6003,21 +6087,32 @@ clades:
       - Genasauria
       - Thyreophora
     described: 1915
-    authors: Nopcsa
+    authors: Nopcsa, B. F.
     diagnostic_features:
-      - Parasagittal rows of osteoderms (dermal armor) along the dorsal surface
-      - Keeled scutes or plates on the body
-      - Quadrupedal stance in all but the most basal forms
-      - Robust, low-slung body plan
-      - Small head relative to body size with simple, leaf-shaped teeth
+      - Parasagittal rows of keeled dermal osteoderms along the dorsal surface
+      - Low, transversely broad jugal with a horizontally expanded anterior process
+      - Postorbital region of the skull roof thickened and rugose
+      - Robust, low-slung body plan trending toward obligate quadrupedality
+      - Simple, low-crowned, leaf-shaped cheek teeth
     references:
       - id: nopcsa1915
-        authors: Nopcsa, F.
+        authors: Nopcsa, B. F.
         year: 1915
-        title: Die Dinosaurier der siebenburgischen Landesteile Ungarns
-        journal: Mitteilungen aus dem Jahrbuche der ungarischen geologischen Reichsanstalt
+        title: Die Dinosaurier der siebenbürgischen Landesteile Ungarns
+        journal: Mitteilungen aus dem Jahrbuche der Königlich Ungarischen Geologischen Reichsanstalt
         volume: "23"
         pages: 1-26
+        notes: Erected Thyreophora.
+      - id: madzia2021
+        authors: Madzia, D.; Arbour, V. M.; Boyd, C. A.; Farke, A. A.; Cruzado-Caballero, P.; Evans, D. C.
+        year: 2021
+        title: The phylogenetic nomenclature of ornithischian dinosaurs
+        journal: PeerJ
+        volume: "9"
+        pages: e12362
+        doi: 10.7717/peerj.12362
+        url: http://dx.doi.org/10.7717/peerj.12362
+        notes: Provides the modern phylogenetic definition of Thyreophora.
   Titanosauria:
     description: |
       Titanosauria is a diverse and species-rich clade of macronarian sauropod dinosaurs that dominated herbivore niches across Gondwana and Laurasia during the Cretaceous period. Titanosaurs include both the largest known dinosaurs (Argentinosaurus, Patagotitan) and some of the smallest sauropods (Magyarosaurus). Many titanosaurs possessed osteoderms (bony armor plates) embedded in the skin, a feature unique among sauropods. The clade was the last major sauropod radiation before the end-Cretaceous extinction.
@@ -9644,7 +9739,7 @@ genera:
     described: 1872
   Agilisaurus:
     genus: Agilisaurus
-    parent: Genasauria
+    parent: Neornithischia
     pronunciation:
       phonetic: AJ-i-li-SAWR-us
       ipa: /ˌædʒɪlɪˈsɔːrəs/
@@ -9739,6 +9834,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
     authors: Peng, G.
     described: 1992
   Agrosaurus:
@@ -12663,12 +12759,18 @@ genera:
     described: 2012
   Alocodon:
     genus: Alocodon
-    parent: Fabrosauridae
+    parent: Ornithischia
     etymology: From Greek 'alotrou' (a furrow) and 'odous' (tooth); meaning 'furrow tooth', alluding to the ribs and furrows ornamenting the lingual surfaces of the cheek crowns.
     pronunciation:
       phonetic: a-LOK-o-don
     description: |
       Alocodon is a genus of ornithischian dinosaur known from multiple teeth from the Middle or Late Jurassic Cabaços Formation of Portugal, and also the Forest Marble and Chipping Norton Formations of England. A single species is known, A. kuehnei.
+    dispute:
+      summary: |
+        Alocodon is a nomen dubium based on isolated teeth from the Middle to Late Jurassic of Portugal; its affinities are highly uncertain, having been suggested to be an ornithopod or a thyreophoran but not demonstrable (Jones, 2026). It was formerly placed in the deprecated Fabrosauridae.
+      history:
+        - date: 2026-06-29
+          note: Reparented from the deprecated Fabrosauridae to Ornithischia incertae sedis (P2); tooth-based nomen dubium.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -12732,7 +12834,6 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
-      - Fabrosauridae
     authors: Thulborn, R. A.
     described: 1973
   Alpkarakush:
@@ -14639,6 +14740,12 @@ genera:
       phonetic: AHM-to-SAWR-us
     etymology: Named after Amtgai, the Mongolian type locality, plus Greek sauros ('lizard')
     description: Amtosaurus is a genus of ornithischian dinosaur based on a fragmentary skull collected from the Late Cretaceous (Cenomanian to Turonian) Bayanshiree Formation of Mongolia and originally believed to represent an ankylosaurid. Hadrosaurid affinities have also been suggested. However, according to Parish and Barrett, this specimen is too fragmentary to be reliably classified beyond an indeterminate ornithischian. A second species assigned to the genus, A. archibaldi, has become the basis of a valid ankylosaurid taxon, Bissektipelta.
+    dispute:
+      summary: |
+        Amtosaurus is a nomen dubium based on a braincase originally referred to Ankylosauria; later assessment could not confirm even an ankylosaurian identity and delegated it to Ornithischia indeterminate (Parish and Barrett, 2004; Jones, 2026).
+      history:
+        - date: 2026-06-29
+          note: Parked at Ornithischia incertae sedis (P2); nomen dubium, not assignable below Ornithischia.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -18763,6 +18870,12 @@ genera:
     pronunciation:
       phonetic: AH-kee-o-CUR-suh
     description: Archaeocursor is an extinct genus of basal ornithischian dinosaurs from the Early Jurassic Ziliujing Formation of China. The genus contains a single species, A. asiaticus, known from a single femur. Archaeocursor represents the oldest and most basal ornithischian described from Asia.
+    dispute:
+      summary: |
+        Archaeocursor is known only from a femur and was recovered as the sister taxon of Eocursor, immediately outside Genasauria, on a single synapomorphy (Yao and others, 2025). The placement is weakly supported and provisional.
+      history:
+        - date: 2026-06-29
+          note: Placed at Ornithischia incertae sedis (outside Genasauria) following Yao and others (2025) (P2); weakly supported and based on a femur only.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -27472,6 +27585,12 @@ genera:
     pronunciation:
       phonetic: bee-EN-oh-SOR-us
     description: Bienosaurus is a dubious genus of thyreophoran dinosaur from the Early Jurassic (probably Hettangian to Sinemurian) Lower Lufeng Formation of Yunnan Province in China.
+    dispute:
+      summary: |
+        Bienosaurus is a nomen dubium based on a fragmentary lower jaw from the Early Jurassic of China; reassessment found no diagnostic features and identified it as an indeterminate early-diverging thyreophoran, possibly synonymous with Tatisaurus (Raven and others, 2019; Jones, 2026).
+      history:
+        - date: 2026-06-29
+          note: Retained at Thyreophora incertae sedis (P2); nomen dubium, possibly synonymous with Tatisaurus.
     diet: herbivore
     diagnostic_features:
       - Predentary short and wide
@@ -29708,11 +29827,17 @@ genera:
     described: 1953
   Brachypodosaurus:
     genus: Brachypodosaurus
-    parent: Thyreophora
+    parent: Ornithischia
     pronunciation:
       phonetic: BRAK-ee-POH-doh-SAWR-us
     etymology: From Greek "brachys" (short) and "pous" (foot), plus "sauros" (lizard); meaning "short-footed lizard".
     description: Brachypodosaurus is a dubious genus of dinosaur, possibly an ornithischian, from the Late Cretaceous Lameta Formation (Maastrichtian) in India.
+    dispute:
+      summary: |
+        Brachypodosaurus is a nomen dubium based on a single humerus from the Late Cretaceous of India; it has been referred to both Stegosauria and Ankylosauria, but all identifications have been challenged and it cannot be placed with confidence (Jones, 2026).
+      history:
+        - date: 2026-06-29
+          note: Reparented from Thyreophora to Ornithischia incertae sedis (P2); nomen dubium with all identifications challenged.
     diet: herbivore
     identifiers:
       - source: pbdb
@@ -29765,8 +29890,6 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
-      - Genasauria
-      - Thyreophora
     authors: Chakravarti, D. K.
     described: 1934
   Brachytrachelopan:
@@ -37019,6 +37142,12 @@ genera:
     pronunciation:
       phonetic: CHIH-lee-SOR-us
     description: Chilesaurus is an extinct genus of herbivorous dinosaur. While its exact classification is uncertain, many researchers believe it is a theropod, with a minority of academics suggesting that it may be an ornithischian. The type and only known species so far is Chilesaurus diegosuarezi. Chilesaurus lived between 148-147 million years ago (Mya) in the Late Jurassic period of Chile. Showing a combination of traits from theropods, ornithischians, and sauropodomorphs, this genus has far-reaching implications for the evolution of dinosaurs, such as whether the traditional saurischian-ornithischian split is superior or inferior to the proposed group Ornithoscelida. This however, has been contested by several other authors, who believe that the weight of evidence supports its membership within Theropoda, and possibly as a member of Tetanurae.
+    dispute:
+      summary: |
+        Chilesaurus diegosuarezi is an enigmatic herbivorous dinosaur of highly contested affinities, combining theropod, ornithischian, and sauropodomorph features. It was originally described as a tetanuran theropod (Novas and others, 2015), but later analyses recovered it as an early-diverging ornithischian or as the sister taxon of Ornithischia within Ornithoscelida (Baron and Barrett, 2017). Its placement bears directly on the contested basal saurischian and ornithischian backbone.
+      history:
+        - date: 2026-06-29
+          note: Deferred because the placement straddles the Saurischia-Ornithischia boundary (theropod per Novas and others, 2015; ornithischian or near-ornithischian per Baron and Barrett, 2017); retained provisionally at Ornithischia pending the theropod and ornithischian backbone reconciliation.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -51917,11 +52046,17 @@ genera:
     described: 2008
   Eocursor:
     genus: Eocursor
-    parent: Genasauria
+    parent: Ornithischia
     etymology: "From Greek eos (dawn) + Latin cursor (runner): 'dawn runner', indicating it is one of the earliest known ornithischians."
     pronunciation:
       phonetic: ee-o-KUHR-sor
     description: Eocursor is genus of basal ornithischian dinosaur that lived in what is now South Africa during the Early Jurassic. Remains of this animal have been found in the Upper Elliot Formation and it is among the most completely known early ornithischians, shedding new light on the origin of the group.
+    dispute:
+      summary: |
+        Eocursor is an early-diverging ornithischian most often recovered just outside Genasauria, as its sister taxon or, with Archaeocursor, as a successive outgroup (Butler and others, 2007; Yao and others, 2025), the position followed by Jones (2026). Some analyses based on the Madzia, Boyd and Mazuch (2018) matrix instead place it within Heterodontosauridae (Boyd, 2015; Madzia and others, 2021).
+      history:
+        - date: 2026-06-29
+          note: Placed at Ornithischia incertae sedis (outside Genasauria) following Butler and others (2007), Yao and others (2025), and Jones (2026) (P2); the heterodontosaurid alternative is recorded.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -52008,7 +52143,6 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
-      - Genasauria
     authors: Butler, R. J.; Smith, R. M.; Norman, D. B.
     described: 2007
   Eodromaeus:
@@ -55495,6 +55629,12 @@ genera:
       phonetic: FAB-rə-SOR-əs
     description: |
       Fabrosaurus is a dubious extinct genus of ornithischian dinosaur that lived during the Early Jurassic during the Hettangian to Sinemurian stages (199 - 189 mya).
+    dispute:
+      summary: |
+        Fabrosaurus is a nomen dubium based on a fragmentary dentary from the Early Jurassic of Lesotho, widely regarded as indeterminate and possibly a junior synonym of Lesothosaurus (Jones, 2026). The former family Fabrosauridae erected around it is no longer recognized.
+      history:
+        - date: 2026-06-29
+          note: Parked at Ornithischia incertae sedis (P2); nomen dubium, with the deprecated Fabrosauridae dropped.
     diet: herbivore
     locomotion: bipedal
     diagnostic_features:
@@ -55924,6 +56064,12 @@ genera:
     pronunciation:
       phonetic: fur-GAN-no-SEF-uh-lee
     description: Ferganocephale is a dubious genus of neornithischian dinosaur. It was from the Middle Jurassic Balabansai Svita of Kyrgyzstan. The type and only species is F. adenticulatum.
+    dispute:
+      summary: |
+        Ferganocephale was originally described as the oldest pachycephalosaur on the basis of isolated teeth (Averianov and others, 2005), but this was soon disputed (Sullivan, 2006) and it is now treated as an ornithischian of uncertain placement (Butler and Sullivan, 2009; Jones, 2026).
+      history:
+        - date: 2026-06-29
+          note: Parked at Ornithischia incertae sedis (P2); tooth-based nomen dubium, the pachycephalosaur identification rejected.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -56618,7 +56764,7 @@ genera:
     described: 2019
   Fruitadens:
     genus: Fruitadens
-    parent: Heterodontosaurinae
+    parent: Heterodontosauridae
     etymology: "From Fruita (the city of Fruita, Colorado, USA, where fossils were found) + Latin dens (tooth): 'Fruita teeth'."
     pronunciation:
       phonetic: FRU-tah-denz
@@ -56706,7 +56852,6 @@ genera:
       - Dinosauria
       - Ornithischia
       - Heterodontosauridae
-      - Heterodontosaurinae
     authors: Butler, R. J.; Galton, P. M.; Porro, L. B.; Chiappe, L. M.; Henderson, D. M.; Erickson, G. M.
     described: 2009
   Fujianvenator:
@@ -59789,6 +59934,12 @@ genera:
     pronunciation:
       phonetic: juh-RAN-o-SOR-us
     description: Geranosaurus is a genus of heterodontosaurid ornithischian dinosaur that lived during the Early Jurassic, between 191.1 and 187.5 million years ago. It is known from a single species, G. atavus, that was named in 1911 by Robert Broom for partial jaws found during road-cutting in South Africa. The genus name is likely derived from the word for "crane" in reference to the bird-like limb bones, while the species name means "ancestor" likely in reference to its position as an early ornithischian. The limited material and poor preservation of Geranosaurus have rendered it difficult to diagnose, with authors accepting it as a dubious name though differentiable from its relative Heterodontosaurus, the only other heterodontosaurid known from the Clarens Formation.
+    dispute:
+      summary: |
+        Geranosaurus is a nomen dubium based on fragmentary jaw material from the Early Jurassic of South Africa; it shows heterodontosaurid features but most analyses conclude the remains lack sufficient diagnostic characters (Sereno, 2012; Jones, 2026).
+      history:
+        - date: 2026-06-29
+          note: Retained at Heterodontosauridae incertae sedis (P2); nomen dubium, a heterodontosaurid by anatomy but not diagnosable.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -61942,11 +62093,17 @@ genera:
     described: 1999
   Gongbusaurus:
     genus: Gongbusaurus
-    parent: Fabrosauridae
+    parent: Ornithischia
     etymology: Named for the imperial Chinese ministry of public works (gong bu), honoring the Tang dynasty poet Du Fu who served in that ministry after 760 AD as a 'junior consultant' (shi yi), combined with Greek 'sauros' meaning 'lizard'.
     pronunciation:
       phonetic: GUNG-boo-SOR-us
     description: Gongbusaurus is a genus of ornithischian, perhaps ornithopod, dinosaur that lived between about 160 and 157 million years ago, in the Late Jurassic period. A small herbivore, it is very poorly known. Two species have been assigned to it, but as the original name is based on teeth, there is no concrete evidence to connect the two species. Its fossils have been found in China.
+    dispute:
+      summary: |
+        Gongbusaurus is based on isolated teeth from the Jurassic of China, and the type species is an indeterminate basal ornithischian (Jones, 2026); a second referred species may represent a separate taxon. It was formerly placed in the deprecated Fabrosauridae.
+      history:
+        - date: 2026-06-29
+          note: Reparented from the deprecated Fabrosauridae to Ornithischia incertae sedis (P2); tooth-based nomen dubium.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -62023,7 +62180,6 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
-      - Fabrosauridae
     authors: Dong, Z.; Zhou, S.; H. Zhang
     described: 1983
   Gongpoquansaurus:
@@ -66457,7 +66613,7 @@ genera:
     described: 2012
   Hexinlusaurus:
     genus: Hexinlusaurus
-    parent: Genasauria
+    parent: Neornithischia
     etymology: Named for He Xinlu, a Chinese paleontologist, combined with Greek 'sauros' meaning 'lizard'.
     pronunciation:
       phonetic: huh-SHEEN-lu-SOR-us
@@ -66560,6 +66716,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Genasauria
+      - Neornithischia
     authors: Barrett, P. M.; Butler, R. J.; Knoll, F.
     described: 2005
   Heyuannia:
@@ -73572,6 +73729,12 @@ genera:
     pronunciation:
       phonetic: ja-ka-pill
     description: Jakapil is a genus of basal thyreophoran dinosaur from the Late Cretaceous (Cenomanian-aged) Candeleros Formation of Argentina. The type species is Jakapil kaniukura.
+    dispute:
+      summary: |
+        Jakapil is a Late Cretaceous Patagonian thyreophoran. Its describers recovered it as a basal thyreophoran closely related to Scelidosaurus (Riguetti and others, 2022), and Jones (2026) follows this. Alternative matrices place it as a stem-eurypodan or basal ankylosaur, and Raven and others (2023) suggested marginocephalian affinities; the describers explicitly rejected a parankylosaur relationship.
+      history:
+        - date: 2026-06-29
+          note: Placed at Thyreophora (basal grade) following Riguetti and others (2022) and Jones (2026) (P2); stem-ankylosaur and marginocephalian alternatives are recorded.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -82186,6 +82349,12 @@ genera:
     pronunciation:
       phonetic: la-KWIN-tuh-SOR-ruh
     description: Laquintasaura is a genus of Venezuelan ornithischian dinosaur containing a single species, Laquintasaura venezuelae. It is known for being one of the most primitive ornithischians in the fossil record, as well as the first dinosaur to have been identified from Venezuela. The name is derived from the La Quinta Formation, where it was discovered, and the feminine Greek suffix for lizard, with the specific name referring to the country of Venezuela. It is known from hundreds of fossil elements, all derived from a single extensive bonebed locality. Initially discovered by French paleontologists, numerous expeditions have been conducted to excavate from the bonebed, largely led by Marcelo R Sánchez-Villagra. Once thought to represent remains of Lesothosaurus, it was formally named in a 2014 study; much of the abundant material was not yet prepared at the time and research remains ongoing.
+    dispute:
+      summary: |
+        Laquintasaura is an unstable early ornithischian recovered either as an early-diverging thyreophoran (Baron and others, 2017; Yao and others, 2025) or as a basal ornithischian outside Genasauria (Barrett and others, 2014; Riguetti and others, 2022). Jones (2026) leaves it unresolved at the base of Ornithischia.
+      history:
+        - date: 2026-06-29
+          note: Placed at Ornithischia incertae sedis (P2); analyses are divided between basal Thyreophora and basal Ornithischia outside Genasauria.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -83369,6 +83538,12 @@ genera:
       phonetic: le-SOH-toh-SAWR-us
     etymology: Named after Lesotho, the country in southern Africa where it was found, combined with Greek 'sauros' (lizard); meaning 'lizard from Lesotho'
     description: Lesothosaurus is a monospecific genus of ornithischian dinosaur that lived during the Early Jurassic in what is now South Africa and Lesotho. It was named by paleontologist Peter Galton in 1978, the name meaning "lizard from Lesotho". The genus has only one valid species, Lesothosaurus diagnosticus. Lesothosaurus is one of the most completely-known early ornithischians, based on numerous skull and postcranial fossils from the Upper Elliot Formation. It had a simpler tooth and jaw anatomy than later ornithischians, and may have been omnivorous in some parts of the year.
+    dispute:
+      summary: |
+        Lesothosaurus is one of the most unstable basal ornithischians. It has been recovered as the most basal thyreophoran (Butler and others, 2008; Boyd, 2015), as the basalmost neornithischian (Herne and others, 2019; Manitkoon and others, 2023, followed by Jones, 2026), and as an ornithischian outside Genasauria (Baron and others, 2017; Fonseca and others, 2024). Because these placements straddle Genasauria, it is parked at the least-inclusive uncontested node.
+      history:
+        - date: 2026-06-29
+          note: Placed at Ornithischia incertae sedis (P2); recovered variously as basal Thyreophora, basalmost Neornithischia, or outside Genasauria.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -90336,11 +90511,17 @@ genera:
     described: 1930
   Manidens:
     genus: Manidens
-    parent: Heterodontosauridae
+    parent: Heterodontosaurinae
     etymology: From Latin 'manus' (hand) and 'dens' (tooth), referring to the hand-shaped form of the posterior lower teeth.
     pronunciation:
       phonetic: man-EYE-denz
     description: Manidens is an extinct genus of heterodontosaurid dinosaur from the Early Jurassic of Patagonia. It is a sister taxon of the closely related Pegomastax from South Africa. Fossils have been found in the Cañadón Asfalto Formation in Chubut Province, Argentina, considered to be originally dated to the Bajocian, latter were found to be from Toarcian beds.
+    dispute:
+      summary: |
+        Manidens is a Middle Jurassic Patagonian heterodontosaurid recovered within Heterodontosaurinae as its basalmost member by the most comprehensive analyses (Sereno, 2012; Fonseca and others, 2024), the position followed by Jones (2026). Its describers (Pol and others, 2011) instead placed it just outside the Gondwanan clade, as its sister taxon.
+      history:
+        - date: 2026-06-29
+          note: Reparented from Heterodontosauridae to Heterodontosaurinae following Sereno (2012), Fonseca and others (2024), and Jones (2026) (P3); Pol and others (2011) place it as sister to the subfamily.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -90435,6 +90616,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Heterodontosauridae
+      - Heterodontosaurinae
     authors: Pol, D.; Rauhut, O. W. M.; Becerra, M.
     described: 2011
   Manipulonyx:
@@ -110072,7 +110254,7 @@ genera:
     described: 2005
   Pegomastax:
     genus: Pegomastax
-    parent: Heterodontosauridae
+    parent: Heterodontosaurinae
     etymology: From Greek pego- (πηγός, 'strong' or 'stout') and mastax (μάσταξ, 'jaw' or 'mouth'), meaning 'strong jaw', referring to its robust lower jaw
     pronunciation:
       phonetic: peg-o-mas-tahks
@@ -110173,6 +110355,7 @@ genera:
       - Dinosauria
       - Ornithischia
       - Heterodontosauridae
+      - Heterodontosaurinae
     authors: Sereno, P.
     described: 2012
   Peishansaurus:
@@ -110182,6 +110365,12 @@ genera:
       ipa: /ˌbeɪˌʃɑːnˈsɔːrəs/
     etymology: "Named after Beishan (Peishan in older romanisation), meaning 'Northern Mountains' in Chinese (Chinese: 北山, Běishān), in Gansu Province where the specimen was found, combined with Greek sauros meaning 'lizard'"
     description: Peishansaurus was a genus of ornithischian dinosaur that lived during the Late Cretaceous period (late Santonian-Campanian stages), roughly 85-72 million years ago.
+    dispute:
+      summary: |
+        Peishansaurus is a nomen dubium based on a fragmentary jaw from the Late Cretaceous of China, most likely a thyreophoran (possibly an ankylosaur); the holotype is now lost (Jones, 2026).
+      history:
+        - date: 2026-06-29
+          note: Retained at Thyreophora incertae sedis (P2); nomen dubium, holotype lost.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -124839,6 +125028,12 @@ genera:
       ipa: /ˌsɛlɪdoʊˈsɔːrəs/
     etymology: From Greek 'skelis'/'skelidos' (rib of beef, hind leg) + 'sauros' (lizard), intended to mean 'limb lizard'; the name references the animal's robust limbs.
     description: Scelidosaurus is a genus of herbivorous armored ornithischian dinosaur from the Jurassic of England.
+    dispute:
+      summary: |
+        Scelidosaurus is a well-known basal thyreophoran. Most analyses recover it as the sister taxon of Eurypoda (Stegosauria plus Ankylosauria), basal to both (Sereno, 1986; Maidment and others, 2008; Jones, 2026). Norman (2020) instead placed it on the line leading to Ankylosauria, after the divergence of Stegosauria.
+      history:
+        - date: 2026-06-29
+          note: Placed at Thyreophora (basal grade) following the prevailing sister-to-Eurypoda topology (P3); the sister-to-Ankylosauria placement of Norman (2020) is recorded.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -129762,6 +129957,12 @@ genera:
     etymology: From Greek 'sino-' (Chinese, after the Sinae) and 'peltē' (small shield) plus 'sauros' (lizard); meaning approximately 'Chinese small-shielded lizard', a replacement name for the preoccupied Sinopelta Ulansky, 2014a.
     description: |
       Sinopeltosaurus is a dubious genus of extinct thyreophoran ornithischian dinosaur described by Roman Ulansky for the articulated ankle specimen FMNH CUP 2338 from the Lower Jurassic Lufeng Formation of Yunnan, China. The type and only species is S. minimus. The specimen was originally described by Irmis and Knoll (2008) as an indeterminate basal ornithischian and was later identified as a nomen dubium by Galton and Carpenter (2016), who listed it as Ornithischia indet., possibly Thyreophora indet. Ulansky's companion paper used the variant name 'Sinopelta minima' for the same animal; Galton and Carpenter (2016) acted as first revisers under the ICZN and selected Sinopeltosaurus minimus as the official combination.
+    dispute:
+      summary: |
+        Sinopeltosaurus, based on an articulated tarsus from the Early Jurassic of China, is a nomen dubium; the material was originally described as an indeterminate ornithischian (Irmis and Knoll, 2008) and is most plausibly an early-diverging thyreophoran (Galton and Carpenter, 2016; Jones, 2026), though the original naming did not meet ICZN requirements.
+      history:
+        - date: 2026-06-29
+          note: Retained at Thyreophora incertae sedis (P2); nomen dubium based on an isolated tarsus.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -132988,6 +133189,12 @@ genera:
     pronunciation:
       phonetic: STEG-oh-suh-RYE-deez
     description: Stegosaurides is a genus of herbivorous thyreophoran (perhaps ankylosaurid or possibly stegosaurian) dinosaur. It lived during the Cretaceous. Its fossils were found in the Xinminbao Group near Heishan in Gansu Province in China. These fossils consist of fragmentary material, including dermal spine elements. The genus is occasionally misspelled as "Stegosauroides".
+    dispute:
+      summary: |
+        Stegosaurides is a nomen dubium based on fragmentary thyreophoran remains from the Cretaceous of China that cannot be assigned to either Stegosauria or Ankylosauria with confidence (Jones, 2026).
+      history:
+        - date: 2026-06-29
+          note: Retained at Thyreophora incertae sedis (P2); nomen dubium, indeterminate thyreophoran.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -137426,6 +137633,12 @@ genera:
       phonetic: DAH-DEE-SAWR-us
     etymology: From 'Ta Ti' (Da Di), the name of the village in Yunnan Province, China near where the fossil was found, plus Greek sauros ('lizard')
     description: Tatisaurus is a genus of ornithischian dinosaur from the Early Jurassic from the Lower Lufeng Formation in Yunnan Province in China. Little is known as the remains are fragmentary. The type species is T. oehleri.
+    dispute:
+      summary: |
+        Tatisaurus is a nomen dubium based on fragmentary jaw material from the Early Jurassic of China, regarded as an indeterminate basal thyreophoran and possibly synonymous with Bienosaurus (Raven and others, 2019; Jones, 2026).
+      history:
+        - date: 2026-06-29
+          note: Retained at Thyreophora incertae sedis (P2); nomen dubium, possibly synonymous with Bienosaurus.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -143714,6 +143927,12 @@ genera:
       phonetic: try-MYOO-kro-don
     etymology: From Latin tri- ('three') and mucro ('dagger point' or 'sharp tip'), and Greek odous ('tooth'), meaning 'three-pointed tooth', referring to the tricuspid teeth
     description: Trimucrodon is a genus of ornithischian dinosaur from the Late Jurassic Lourinhã Formation of Portugal. The type, and currently only, species is T. cuneatus.
+    dispute:
+      summary: |
+        Trimucrodon is a nomen dubium based on isolated teeth from the Late Jurassic of Portugal, treated as an indeterminate ornithischian (Jones, 2026). It was formerly assigned to the deprecated Fabrosauridae.
+      history:
+        - date: 2026-06-29
+          note: Parked at Ornithischia incertae sedis (P2); tooth-based nomen dubium.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -151760,12 +151979,18 @@ genera:
     described: 2009
   Xiaosaurus:
     genus: Xiaosaurus
-    parent: Fabrosauridae
+    parent: Ornithischia
     etymology: From Chinese 'xiao' meaning 'dawn', referring to the early geological age of the fossil, combined with Greek 'sauros' meaning 'lizard'.
     pronunciation:
       ipa: /ʃaʊˈsɔːrəs/
       phonetic: shyow-SOR-us
     description: Xiaosaurus is a genus of small herbivorous ornithischian dinosaur from the middle Jurassic (approximately 170.3 to 163.5 million years ago) of what is now the Sichuan Basin of China.
+    dispute:
+      summary: |
+        Xiaosaurus is a small ornithischian from the Middle Jurassic of China usually regarded as a nomen dubium, its fragmentary material lacking sufficient diagnostic features for a more precise placement (Jones, 2026). It was formerly placed in the deprecated Fabrosauridae.
+      history:
+        - date: 2026-06-29
+          note: Reparented from the deprecated Fabrosauridae to Ornithischia incertae sedis (P2); nomen dubium.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -151844,7 +152069,6 @@ genera:
       - Archosauria
       - Dinosauria
       - Ornithischia
-      - Fabrosauridae
     authors: Dong, Z.; Tang, Z.
     described: 1983
   Xiaotingia:
@@ -156123,6 +156347,12 @@ genera:
     pronunciation:
       phonetic: YOO-she-SOR-us
     description: Yuxisaurus is an extinct genus of early thyreophoran dinosaur from the Early Jurassic (Sinemurian-Toarcian) Fengjiahe Formation of southwestern China. The genus contains a single species, Yuxisaurus kopchicki, known from a partial skeleton and many osteoderms.
+    dispute:
+      summary: |
+        Yuxisaurus is an Early Jurassic Chinese thyreophoran recovered as an early-diverging member of the clade, most closely related to Emausaurus and outside Eurypoda (Yao and others, 2022; Jones, 2026). A later analysis tentatively recovered it as a basal parankylosaur, but with poor support.
+      history:
+        - date: 2026-06-29
+          note: Placed at Thyreophora (basal grade) following Yao and others (2022) and Jones (2026) (P3); a weakly supported parankylosaur alternative is recorded.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
