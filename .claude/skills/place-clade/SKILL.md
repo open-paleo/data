@@ -175,18 +175,39 @@ fabricate a placement (`feedback_no_seeding_from_recall`).
 
 ## Step 4 — Firewalled phylogeny review
 
-**Before dispatching, confirm EVERY paper you are about to feed an agent is
-actually relevant — don't assume relevance from the key name or from a
-recollection that "there should be a paper by this author/year."** A key
-existing in the corpus (`[ -f .../<key>.md ]` → "HAVE") only proves a file is
-present; it says nothing about whether that paper is the one you need. Grep the
-bib title (and/or the markdown's first header) for each key and confirm before
-feeding it. The corpus entry may be a perfectly correct, well-keyed paper that
-is simply irrelevant to your clade — e.g. `prieto-márquez2011a` is correctly a
-*Plateosaurus* skull redescription, and feeding it to a hadrosauroid review was
-*my* bad assumption, not a corpus error. Drop any irrelevant paper from the
-reading list and, if the paper you actually need is absent, treat that as a Step
-3 sourcing gap (`feedback_fetch_primary_not_summary`).
+**Before dispatching, derive each paper key from the DATA (not recall) and
+title-check the ENTIRE review set — fetched papers AND ones already in the
+corpus.** This is where wrong papers slip in, and it keeps happening when the
+check is applied only to newly-fetched gap papers: a key existing in the corpus
+(`[ -f .../<key>.md ]` → "HAVE") only proves a file is present, and a key you
+reconstruct from memory ("there should be a Langer 2019 / Yang 2020 about topic
+X") is a guess, not a fact. The corpus file is almost always a correct,
+correctly-keyed paper that simply is not the one your recall mapped it to — e.g.
+`yang2020` is the *Changmiania* ornithopod paper (not *Irisosaurus*),
+`langer2019` is the *Vespersaurus* noasaurid paper (not the Saturnaliidae
+paper), and `prieto-márquez2011a` is a *Plateosaurus* skull redescription (not a
+hadrosauroid paper). In every such case the corpus was right and the
+key→topic mapping in my head was wrong.
+
+So, mechanically, for EVERY paper in the review set:
+
+- **Take a per-genus paper's key from that genus's own YAML** —
+  `erected_in` / `described_in` — never from memory. The genus file is the
+  source of truth for which key = which taxon (e.g. `genera/I/Irisosaurus.yml`
+  → `erected_in: peyredefabrègues2020`, so peyredefabrègues2020 IS the
+  Irisosaurus paper — do not guess `yang2020`). For a clade authority, take the
+  key from the existing `clades/` file or the triage agent's `papers_to_chase`.
+- **Then print and read the title of every key you will dispatch** (grep the bib
+  title and/or the markdown's first `#` header) and confirm it names the expected
+  taxon/topic — **including papers already in the corpus, not just fetched
+  gaps.** Never feed an agent a paper whose title you have not just read in this
+  run.
+
+Drop any paper whose content does not match; if the paper you actually need is
+absent, treat that as a Step 3 sourcing gap (`feedback_fetch_primary_not_summary`).
+The firewalled agents return an `EXTRACTION FAILED` sentinel when a misassigned
+paper slips through — treat that as a backstop, not a substitute for the
+title-check (`feedback_verify_against_corpus`).
 
 For each fetched paper (or logical group), dispatch a **firewalled review
 agent** (Sonnet, `general-purpose`) that reads ONLY that markdown and returns
