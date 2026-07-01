@@ -57,11 +57,12 @@ const articleTypes = ["article", "review", "preprint", "book-chapter", "book", "
 const registrySources = ["catalogue of life", "checklistbank", "global biodiversity information facility", "gbif"];
 
 /**
- * Generic self-deposit / data repositories. Works hosted here are kept but
- * flagged with a note, since they are often self-published essays or
- * deposited copies rather than journal articles. Deliberately excludes
- * dedicated preprint servers (bioRxiv, EarthArXiv), whose preprints are not
- * "self-published" in this sense.
+ * Generic self-deposit repositories. Works hosted here are dropped: they are
+ * overwhelmingly self-published essays, crank preprints, art projects, or data
+ * dumps rather than peer-reviewed papers, and any legitimate science deposited
+ * here resurfaces as its own journal article once indexed. Deliberately
+ * excludes dedicated preprint servers (bioRxiv, EarthArXiv), whose preprints
+ * are curated and kept.
  */
 const depositSources = ["zenodo", "figshare"];
 
@@ -101,13 +102,6 @@ type WatchHit = {
      * record.
      */
     isOpenAccess: boolean;
-
-    /**
-     * True when the host is a generic self-deposit repository (see
-     * depositSources): the entry is kept but flagged as possibly a
-     * self-published essay or deposited copy rather than a journal article.
-     */
-    isDeposit: boolean;
 
     /**
      * Canonical genus names matched in the title or abstract.
@@ -547,7 +541,8 @@ async function fetchRecentWorks(options: Options): Promise<Array<Record<string, 
  * @param seen - Dedup keys already reported in prior runs.
  * @param options - Resolved run options (for the guard toggle).
  * @returns The deduplicated hits and the counts filtered by the homonym
- *     guard and the registry-source guard.
+ *     guard, the no-venue (blog) guard, the registry-source guard, and the
+ *     self-deposit guard.
  */
 function matchWorks(
     works: Array<Record<string, unknown>>,
@@ -556,14 +551,22 @@ function matchWorks(
     allCladeNames: Set<string>,
     seen: Set<string>,
     options: Options,
-): { hits: Array<WatchHit>; droppedByGuard: number; droppedAsRegistry: number }
+): {
+    hits: Array<WatchHit>;
+    droppedByGuard: number;
+    droppedNoVenue: number;
+    droppedAsRegistry: number;
+    droppedAsDeposit: number;
+}
 {
     const genusMatcher = compileNameMatcher([...generaByName.keys()]);
     const cladeMatcher = compileNameMatcher([...allCladeNames]);
 
     const candidates: Array<WatchHit> = [];
     let droppedByGuard = 0;
+    let droppedNoVenue = 0;
     let droppedAsRegistry = 0;
+    let droppedAsDeposit = 0;
 
     for (const work of works)
     {
@@ -642,9 +645,23 @@ function matchWorks(
         const location = work.primary_location as { source?: { display_name?: string } } | null;
         const sourceName = (location?.source?.display_name ?? "").toLowerCase();
 
-        if (registrySources.some((name) => sourceName.includes(name)))
+        // A work with no host venue is a blog post or uncurated web deposit
+        // (e.g. SVPOW essays archived via Rogue Scholar), never a tracked
+        // paper: every real journal, preprint server, and archive supplies a
+        // source display name.
+        if (sourceName.length === 0)
+        {
+            droppedNoVenue++;
+            continue;
+        }
+        else if (registrySources.some((name) => sourceName.includes(name)))
         {
             droppedAsRegistry++;
+            continue;
+        }
+        else if (depositSources.some((name) => sourceName.includes(name)))
+        {
+            droppedAsDeposit++;
             continue;
         }
 
@@ -657,7 +674,6 @@ function matchWorks(
             publicationDate: typeof work.publication_date === "string" ? work.publication_date : "",
             venue: location?.source?.display_name ?? null,
             isOpenAccess: openAccess?.is_oa === true,
-            isDeposit: depositSources.some((name) => sourceName.includes(name)),
             genera: [...matchedGenera].sort(),
             clades: reportedClades.sort(),
         });
@@ -666,7 +682,7 @@ function matchWorks(
     const hits = dedupHits(candidates);
     hits.sort((first, second) => second.publicationDate.localeCompare(first.publicationDate));
 
-    return { hits, droppedByGuard, droppedAsRegistry };
+    return { hits, droppedByGuard, droppedNoVenue, droppedAsRegistry, droppedAsDeposit };
 }
 
 /**
@@ -682,12 +698,11 @@ function formatHit(hit: WatchHit): string
     const link = hit.doi ? `https://doi.org/${hit.doi}` : `https://openalex.org/${hit.openAlexId}`;
     const venueLine = hit.venue ? `\n  **${hit.venue}**` : "";
     const access = hit.isOpenAccess ? " 🔓" : "";
-    const note = hit.isDeposit ? "\n  _Note: self-published / deposited_" : "";
     // Hidden per-item anchor (invisible when rendered) so the triage skill can
     // locate an item's checkbox by DOI to tick it.
     const anchor = ` <!-- doi:${hit.doi ?? hit.openAlexId} -->`;
 
-    return `- [ ] ${hit.publicationDate} — ${hit.title}${anchor}${venueLine}\n  ${link}${access}${note}`;
+    return `- [ ] ${hit.publicationDate} — ${hit.title}${anchor}${venueLine}\n  ${link}${access}`;
 }
 
 /**
@@ -779,13 +794,15 @@ async function main(): Promise<void>
 
     const works = await fetchRecentWorks(options);
     const seen = new Set(state.seen);
-    const { hits, droppedByGuard, droppedAsRegistry } = matchWorks(
+    const { hits, droppedByGuard, droppedNoVenue, droppedAsRegistry, droppedAsDeposit } = matchWorks(
         works, generaByName, cladeNames, allCladeNames, seen, options,
     );
 
     const filterNotes = [
         droppedByGuard > 0 ? `${droppedByGuard} short-name homonym` : null,
+        droppedNoVenue > 0 ? `${droppedNoVenue} blog/no-venue` : null,
         droppedAsRegistry > 0 ? `${droppedAsRegistry} registry-stub` : null,
+        droppedAsDeposit > 0 ? `${droppedAsDeposit} self-deposit` : null,
     ].filter(Boolean);
 
     console.log(
