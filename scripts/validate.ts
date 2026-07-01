@@ -859,6 +859,151 @@ for (const [baseKey, variants] of conflictsByBaseKey)
     }
 }
 
+// 12d. Reference identity consistency — a single reference id must name one
+// paper everywhere it appears. The bib build is first-writer-wins, so two
+// files defining the same id as different papers silently drop one citation
+// with no error or warning. Each occurrence is reduced to an identity
+// signature (first-author surname + year + a normalized title stem) plus, when
+// present, a normalized DOI; if an id's occurrences disagree on either, the id
+// conflates distinct papers (split into suffixed keys) or drifts on the same
+// paper's fields (reconcile to one canonical citation). Diacritics,
+// punctuation, and case are normalized away so purely cosmetic drift stays
+// silent, and the title is compared as a bounded stem so a truncated title
+// still matches its fuller twin while genuinely different titles — which
+// diverge early — do not.
+startCheck("Reference identity consistency");
+
+/**
+ * Number of leading normalized title characters compared when deriving a
+ * reference's identity signature. Long enough that distinct papers diverge
+ * within it, short enough that a truncated title still matches its fuller
+ * form.
+ */
+const identityTitleStemLength = 40;
+
+/**
+ * Reduces free text to a comparison form: decomposes accents and drops the
+ * combining marks, lowercases, and collapses every run of non-alphanumeric
+ * characters to a single space, so `Wüsten Ägyptens` and `Wusten Agyptens`,
+ * or `c.w.` and `c. w.`, compare equal.
+ *
+ * @param text - The raw text, when present.
+ * @returns The normalized text, or an empty string when absent.
+ */
+function normalizeForIdentity(text: string | undefined): string
+{
+    if (!text)
+    {
+        return "";
+    }
+
+    return text
+        .normalize("NFD")
+        .replace(/[̀-ͯ]/g, "")
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, " ")
+        .trim();
+}
+
+/**
+ * Extracts the normalized first-author surname from a reference `authors`
+ * string, following the same convention as citation-key derivation: the first
+ * semicolon-separated entry, up to its first comma, first whitespace token.
+ *
+ * @param authors - The authors string, when present.
+ * @returns The normalized surname, or an empty string when absent.
+ */
+function firstAuthorSurnameForIdentity(authors: string | undefined): string
+{
+    const firstAuthor = (authors ?? "").split(";")[0];
+    const surnamePart = firstAuthor.split(",")[0].trim();
+
+    return normalizeForIdentity(surnamePart.split(/\s+/)[0]);
+}
+
+/**
+ * Normalizes a DOI for identity comparison: trims, lowercases, and strips any
+ * resolver prefix so `https://doi.org/10.X`, `doi:10.X`, and `10.x` compare
+ * equal.
+ *
+ * @param doi - The raw DOI, when present.
+ * @returns The normalized DOI, or an empty string when absent.
+ */
+function normalizeDoiForIdentity(doi: string | undefined): string
+{
+    if (!doi)
+    {
+        return "";
+    }
+
+    return doi
+        .trim()
+        .toLowerCase()
+        .replace(/^https?:\/\/(dx\.)?doi\.org\//, "")
+        .replace(/^doi:/, "");
+}
+
+/**
+ * Per reference id, the distinct identity signatures and DOIs seen across all
+ * files, plus every file the id appears in, so a conflict can be reported
+ * against each involved file.
+ */
+const referenceIdentitiesById = new Map<
+    string,
+    { signatures: Set<string>; dois: Set<string>; files: Set<string> }
+>();
+
+for (const [filePath, doc] of allParsed)
+{
+    if (!doc || !Array.isArray(doc.references))
+    {
+        continue;
+    }
+
+    for (const reference of doc.references)
+    {
+        if (!reference || !reference.id)
+        {
+            continue;
+        }
+
+        const identity = referenceIdentitiesById.get(reference.id)
+            ?? { signatures: new Set<string>(), dois: new Set<string>(), files: new Set<string>() };
+
+        const titleStem = normalizeForIdentity(reference.title).slice(0, identityTitleStemLength);
+        const signature = `${firstAuthorSurnameForIdentity(reference.authors)}|${reference.year ?? ""}|${titleStem}`;
+
+        identity.signatures.add(signature);
+
+        const normalizedDoi = normalizeDoiForIdentity(reference.doi);
+
+        if (normalizedDoi)
+        {
+            identity.dois.add(normalizedDoi);
+        }
+
+        identity.files.add(filePath);
+        referenceIdentitiesById.set(reference.id, identity);
+    }
+}
+
+for (const [referenceId, identity] of referenceIdentitiesById)
+{
+    if (identity.signatures.size < 2 && identity.dois.size < 2)
+    {
+        continue;
+    }
+
+    for (const filePath of identity.files)
+    {
+        checkError(
+            "Reference identity consistency",
+            filePath,
+            `reference id '${referenceId}' names different papers across files; disambiguate with suffixed keys (e.g. '${referenceId}a', '${referenceId}b') or reconcile the entries to one canonical citation`,
+        );
+    }
+}
+
 // 12b. Flagged publication sources — references citing publishers or
 // journals on flagged-sources.yml emit a warning for reviewer sign-off.
 startCheck("Flagged publication sources");
