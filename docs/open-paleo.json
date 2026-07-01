@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-07-01T04:57:56.202Z",
+    "built_at": "2026-07-01T05:52:44.063Z",
     "clade_count": 206,
     "genus_count": 1398,
     "license": "CC-BY-4.0",
@@ -2499,6 +2499,7 @@
       ]
     },
     "Deinocheiridae": {
+      "description": "Deinocheiridae is one of the two principal ornithomimosaur families, revived by Lee et al. (2014) with the redescription of Deinocheirus. Its members are generally large, robustly proportioned ornithomimosaurs that retained a non-arctometatarsalian pes, in contrast to the cursorial Ornithomimidae. The family includes the giant Deinocheirus, the Mongolian Garudimimus, and the Mexican Paraxenisaurus; the older family Garudimimidae is treated as a junior synonym.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -2520,6 +2521,38 @@
         "Arctometatarsalia",
         "Ornithomimosauria",
         "Deinocheiridae"
+      ],
+      "type_genus": "Deinocheirus",
+      "described": 1970,
+      "authors": "Osmólska, H.; Roniewicz, E.",
+      "diagnostic_features": [
+        "Large body size with robust, non-cursorial hindlimb proportions",
+        "Pes non-arctometatarsalian, with metatarsal III not pinched proximally",
+        "Broad, low pedal unguals",
+        "Dorsoventrally deep dentary in taxa preserving the lower jaw"
+      ],
+      "references": [
+        {
+          "id": "osmólska1970",
+          "authors": "Osmólska, H.; Roniewicz, E.",
+          "year": 1970,
+          "title": "Deinocheiridae, a new family of theropod dinosaurs",
+          "journal": "Palaeontologia Polonica",
+          "volume": "21",
+          "pages": "5-19",
+          "notes": "Erected the family Deinocheiridae for Deinocheirus mirificus."
+        },
+        {
+          "id": "lee2014",
+          "authors": "Lee, Y.-N.; Barsbold, R.; Currie, P. J.; Kobayashi, Y.; Lee, H.-J.; Godefroit, P.; Escuillié, F. O.; Chinzorig, T.",
+          "year": 2014,
+          "title": "Resolving the long-standing enigmas of a giant ornithomimosaur Deinocheirus mirificus",
+          "journal": "Nature",
+          "volume": "515",
+          "issue": "7526",
+          "pages": "257-260",
+          "notes": "Redescription of Deinocheirus that revalidated Deinocheiridae as a distinct ornithomimosaur family."
+        }
       ]
     },
     "Deinonychosauria": {
@@ -5971,6 +6004,7 @@
       ]
     },
     "Ornithomimidae": {
+      "description": "Ornithomimidae is the derived, cursorial family of ornithomimosaurs, comprising the toothless, long-limbed \"ostrich mimics\" of the Late Cretaceous of Asia and North America. Members are united by the arctometatarsalian pes and an edentulous, beaked skull. The family includes Ornithomimus, Struthiomimus, Gallimimus, and numerous related genera; beyond a reliably basal Archaeornithomimus, its internal relationships are largely unresolved.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -5992,10 +6026,44 @@
         "Arctometatarsalia",
         "Ornithomimosauria",
         "Ornithomimidae"
+      ],
+      "type_genus": "Ornithomimus",
+      "described": 1890,
+      "authors": "Marsh, O. C.",
+      "diagnostic_features": [
+        "Arctometatarsalian pes, with metatarsal III pinched between II and IV proximally",
+        "Edentulous skull bearing a keratinous beak",
+        "Elongate, gracile, cursorial hindlimbs",
+        "Long neck formed of elongate cervical vertebrae"
+      ],
+      "references": [
+        {
+          "id": "marsh1890b",
+          "authors": "Marsh, O. C.",
+          "year": 1890,
+          "title": "Description of new dinosaurian reptiles",
+          "journal": "American Journal of Science",
+          "volume": "s3-39",
+          "issue": "229",
+          "pages": "81-86",
+          "notes": "Named Ornithomimus and erected the family Ornithomimidae."
+        },
+        {
+          "id": "kobayashi2005a",
+          "authors": "Kobayashi, Y.; Barsbold, R.",
+          "year": 2005,
+          "title": "Reexamination of a primitive ornithomimosaur, Garudimimus brevipes Barsbold, 1981 (Dinosauria: Theropoda), from the Late Cretaceous of Mongolia",
+          "journal": "Canadian Journal of Earth Sciences",
+          "volume": "42",
+          "issue": "9",
+          "pages": "1501-1521",
+          "publisher": "Canadian Science Publishing",
+          "notes": "Identifies the arctometatarsalian pes as the diagnostic synapomorphy of Ornithomimidae."
+        }
       ]
     },
     "Ornithomimosauria": {
-      "description": "Ornithomimosauria, meaning \"bird-mimic lizards,\" is a clade of coelurosaurian theropod dinosaurs known from the Cretaceous of North America, Asia, Europe, and Africa. Often called \"ostrich dinosaurs,\" ornithomimosaurs were characterized by long legs adapted for swift running, elongate necks, small skulls with toothless beaks (in derived forms), and large eyes. They were likely omnivorous or herbivorous, representing a significant ecological departure from the ancestral carnivorous theropod condition.\n",
+      "description": "Ornithomimosauria, the \"ostrich dinosaurs,\" is a clade of maniraptoriform coelurosaurian theropods known from the Cretaceous of Asia, North America, Europe, and Africa. Basal members retained teeth, while the two derived families (Deinocheiridae and Ornithomimidae) developed edentulous, keratinous beaks. Ornithomimosaurs were lightly built, long-necked, and long-legged, and are widely inferred to have been herbivorous or omnivorous, a marked departure from the ancestral carnivorous theropod condition.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -6017,25 +6085,37 @@
         "Arctometatarsalia",
         "Ornithomimosauria"
       ],
-      "described": 1972,
-      "authors": "Russell",
+      "type_genus": "Ornithomimus",
+      "described": 1976,
+      "authors": "Barsbold, R.",
       "diagnostic_features": [
-        "Toothless, keratinous beak in derived members",
-        "Elongate cervical vertebrae forming a long, S-curved neck",
-        "Large orbits with well-developed sclerotic rings",
-        "Long, gracile hindlimbs adapted for cursorial locomotion",
-        "Arctometatarsalian foot in derived forms",
-        "Elongate manus with subequal metacarpals"
+        "Elongate cervical vertebrae forming a long, gracile neck",
+        "Reduced or absent dentition, with a keratinous beak in derived members",
+        "Small, lightly built skull with large orbits",
+        "Long, slender, cursorial hindlimbs",
+        "Manus with subequal, elongate metacarpals and weakly curved unguals"
       ],
       "references": [
         {
-          "id": "russell1972",
-          "authors": "Russell, D.A.",
-          "year": 1972,
-          "title": "Ostrich dinosaurs from the Late Cretaceous of western Canada",
-          "journal": "Canadian Journal of Earth Sciences",
-          "volume": "9",
-          "pages": "375-402"
+          "id": "barsbold1976b",
+          "authors": "Barsbold, R.",
+          "year": 1976,
+          "title": "On the evolution and systematics of the late Mesozoic dinosaurs",
+          "journal": "Transactions of the Joint Soviet-Mongolian Paleontological Expedition",
+          "volume": "3",
+          "pages": "68-75",
+          "notes": "Erected the clade Ornithomimosauria."
+        },
+        {
+          "id": "lee2014",
+          "authors": "Lee, Y.-N.; Barsbold, R.; Currie, P. J.; Kobayashi, Y.; Lee, H.-J.; Godefroit, P.; Escuillié, F. O.; Chinzorig, T.",
+          "year": 2014,
+          "title": "Resolving the long-standing enigmas of a giant ornithomimosaur Deinocheirus mirificus",
+          "journal": "Nature",
+          "volume": "515",
+          "issue": "7526",
+          "pages": "257-260",
+          "notes": "Redescription of Deinocheirus establishing the division of Ornithomimosauria into Deinocheiridae and Ornithomimidae."
         }
       ]
     },
@@ -12840,7 +12920,16 @@
     },
     "Afromimus": {
       "genus": "Afromimus",
-      "parent": "Ornithomimosauria",
+      "parent": "Ceratosauria",
+      "dispute": {
+        "summary": "Originally described as a basal ornithomimosaur (Sereno, 2017), but subsequent analyses reject that placement and recover Afromimus among ceratosaurs. Cerroni et al. (2019) place it within Abelisauroidea, and possibly Noasauridae, reinterpreting its proposed ornithomimosaur characters as ceratosaurian; Hendrickx et al. (2024) recover it in Berthasauridae, the sister group of Abelisauroidea. Its fragmentary material precludes confident assignment to any abelisauroid subclade, so it is placed conservatively at Ceratosauria.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Moved from Ornithomimosauria to Ceratosauria following Cerroni et al. (2019) and Hendrickx et al. (2024), which reject ornithomimosaur affinity; the precise position within Ceratosauria remains unresolved.\n"
+          }
+        ]
+      },
       "etymology": "From 'Africa' combined with Greek 'mimos' meaning 'mimic'; meaning 'Africa mimic'",
       "pronunciation": {
         "phonetic": "AF-ro-MY-mus"
@@ -12948,6 +13037,29 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25021-2",
           "notes": "Source of the mass and hip height estimates."
+        },
+        {
+          "id": "cerroni2019",
+          "authors": "Cerroni, M. A.; Agnolín, F. L.; Brissón Egli, F.; Novas, F. E.",
+          "year": 2019,
+          "title": "The phylogenetic position of Afromimus tenerensis Sereno, 2017 and its paleobiogeographical implications",
+          "journal": "Journal of African Earth Sciences",
+          "volume": "159",
+          "pages": "103572",
+          "doi": "10.1016/j.jafrearsci.2019.103572",
+          "notes": "Phylogenetic reassessment recovering Afromimus within Abelisauroidea, and possibly Noasauridae, rejecting ornithomimosaur affinity."
+        },
+        {
+          "id": "hendrickx2024",
+          "authors": "Hendrickx, C.; Cerroni, M. A.; Agnolín, F. L.; Catalano, S.; Ribeiro, C. F.; Delcourt, R.",
+          "year": 2024,
+          "title": "Osteology, relationship, and feeding ecology of the theropod dinosaur Noasaurus leali, from the Late Cretaceous of North-Western Argentina",
+          "journal": "Zoological Journal of the Linnean Society",
+          "volume": "202",
+          "issue": "4",
+          "pages": "zlae150",
+          "doi": "10.1093/zoolinnean/zlae150",
+          "notes": "Erects Berthasauridae and recovers Afromimus within it, as the sister group of Abelisauroidea."
         }
       ],
       "taxonomy": [
@@ -12964,12 +13076,7 @@
         "Theropoda",
         "Neotheropoda",
         "Averostra",
-        "Tetanurae",
-        "Avetheropoda",
-        "Coelurosauria",
-        "Maniraptoriformes",
-        "Arctometatarsalia",
-        "Ornithomimosauria"
+        "Ceratosauria"
       ],
       "authors": "Sereno, P. C.",
       "described": 2017
@@ -31432,7 +31539,16 @@
     },
     "Aviatyrannis": {
       "genus": "Aviatyrannis",
-      "parent": "Ornithomimosauria",
+      "parent": "Tyrannosauroidea",
+      "dispute": {
+        "summary": "The affinities of Aviatyrannis are contested. It was described as a basal tyrannosauroid (Rauhut, 2003) and is treated as such by most subsequent work, but Hattori et al. (2023) argued from the holotype ilium that it is instead an ornithomimosaur, recovering it in supplementary analyses either as the earliest deinocheirid, sister to Tyrannomimus, or outside both ornithomimosaur families near Shenzhousaurus; that result is unstable and was excluded from their primary tree. It is placed conservatively at Tyrannosauroidea following the prevailing view.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Moved from Ornithomimosauria to Tyrannosauroidea following Rauhut (2003) and the prevailing view; the ornithomimosaur hypothesis of Hattori et al. (2023) is recorded as an unresolved alternative.\n"
+          }
+        ]
+      },
       "etymology": "From Latin 'avia' (grandmother) and 'tyrannis' (genitive of 'tyrannus', tyrant); meaning 'the tyrant's grandmother'.",
       "pronunciation": {
         "phonetic": "AY-vi-uh-TIE-ran-iss"
@@ -31588,9 +31704,7 @@
         "Tetanurae",
         "Avetheropoda",
         "Coelurosauria",
-        "Maniraptoriformes",
-        "Arctometatarsalia",
-        "Ornithomimosauria"
+        "Tyrannosauroidea"
       ],
       "authors": "Rauhut, O. W. M.",
       "described": 2003
@@ -36047,6 +36161,15 @@
     "Beishanlong": {
       "genus": "Beishanlong",
       "parent": "Ornithomimosauria",
+      "dispute": {
+        "summary": "The family-level placement of Beishanlong is unresolved. Lee et al. (2014) recovered it as the basalmost member of Deinocheiridae, but Serrano-Brañas et al. (2020) instead recovered it as a basal ornithomimosaur outside the family. It is placed conservatively at Ornithomimosauria.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Retained at Ornithomimosauria; the basal-deinocheirid placement of Lee et al. (2014) is recorded as an unresolved alternative.\n"
+          }
+        ]
+      },
       "etymology": "From Chinese Bei Shan meaning 'North Mountains' combined with Chinese long (龙) meaning 'dragon'. Full meaning: 'North Mountains dragon'.",
       "pronunciation": {
         "phonetic": "bay-SHAN-long"
@@ -87125,7 +87248,16 @@
     },
     "Harpymimus": {
       "genus": "Harpymimus",
-      "parent": "Deinocheiridae",
+      "parent": "Ornithomimosauria",
+      "dispute": {
+        "summary": "The family-level placement of Harpymimus is unresolved. Most analyses recover it as a basal ornithomimosaur lying outside the two families and more derived than Pelecanimimus (Kobayashi and Barsbold, 2005; Lee et al., 2014), whereas Serrano-Brañas et al. (2020) and Hattori et al. (2023) recover it as the basalmost member of Deinocheiridae. It is placed conservatively at Ornithomimosauria.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Moved from Deinocheiridae to Ornithomimosauria; the basal-deinocheirid placement of Serrano-Brañas et al. (2020) and Hattori et al. (2023) is recorded as an unresolved alternative.\n"
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "HAR-pi-MIEM-us"
       },
@@ -87271,8 +87403,7 @@
         "Coelurosauria",
         "Maniraptoriformes",
         "Arctometatarsalia",
-        "Ornithomimosauria",
-        "Deinocheiridae"
+        "Ornithomimosauria"
       ],
       "authors": "Barsbold, R.; Perle, A.",
       "described": 1984
@@ -105310,6 +105441,15 @@
     "Kinnareemimus": {
       "genus": "Kinnareemimus",
       "parent": "Ornithomimosauria",
+      "dispute": {
+        "summary": "Kinnareemimus is a fragmentary taxon whose position is unstable. It was described as an ornithomimosaur (Buffetaut et al., 2009) and is generally regarded as a basal member of the clade, but analyses vary widely: Hartman et al. (2019) recovered it as a tyrannosauroid in their shortest trees, and it behaves as a wildcard in recent ornithomimosaur matrices (Averianov and Sues, 2024). It is placed conservatively as a basal ornithomimosaur.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Retained at Ornithomimosauria as a basal member; the non-ornithomimosaur result of Hartman et al. (2019) and its instability across recent matrices are recorded as unresolved.\n"
+          }
+        ]
+      },
       "etymology": "Named after Kinnaree, a half-human half-bird figure from Thai folklore, combined with Latin mimus (mimic); meaning \"Kinnaree mimic\"",
       "pronunciation": {
         "ipa": "/ˌkɪnəriˈmɑːiməs/",
@@ -136996,6 +137136,15 @@
     "Nqwebasaurus": {
       "genus": "Nqwebasaurus",
       "parent": "Ornithomimosauria",
+      "dispute": {
+        "summary": "The placement of Nqwebasaurus is contested. Most recent analyses recover it as the basalmost ornithomimosaur (Choiniere et al., 2012; Serrano-Brañas et al., 2020), but it has also been recovered outside Ornithomimosauria, near the base of Alvarezsauroidea (Hartman et al., 2019), and it was originally described as a coelurosaur of uncertain affinities (de Klerk et al., 2000). It is placed conservatively as the basalmost ornithomimosaur.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Retained at Ornithomimosauria following the recent majority; the alvarezsauroid alternative of Hartman et al. (2019) is recorded as unresolved.\n"
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "en-KWEB-ah-SAWR-us"
       },
@@ -186124,6 +186273,15 @@
     "Thecocoelurus": {
       "genus": "Thecocoelurus",
       "parent": "Ornithomimosauria",
+      "dispute": {
+        "summary": "Thecocoelurus is a nomen dubium of contested affinity, based on a partial cervical vertebra from the Early Cretaceous of England. It has been referred to Ornithomimosauria (Allain et al., 2014), but the holotype was earlier reidentified as an oviraptorosaur and it is widely treated as a nomen dubium (Naish and Martill, 2002). It is placed conservatively at Ornithomimosauria following the most recent assessment.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Retained at Ornithomimosauria following Allain et al. (2014); the oviraptorosaur reidentification and its status as a nomen dubium are recorded as unresolved.\n"
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "THEE-ko-see-LOO-rus"
       },
@@ -186746,7 +186904,7 @@
             "year": 1973
           },
           "references": [
-            "barsbold1976"
+            "barsbold1976a"
           ]
         },
         {
@@ -186767,7 +186925,7 @@
       ],
       "references": [
         {
-          "id": "barsbold1976",
+          "id": "barsbold1976a",
           "authors": "Barsbold, R.",
           "year": 1976,
           "title": "Novyye dannyye o terizinozavre (Therizinosauridae, Theropoda) [New data on Therizinosaurus (Therizinosauridae, Theropoda)]",
@@ -193558,7 +193716,16 @@
     },
     "Tyrannomimus": {
       "genus": "Tyrannomimus",
-      "parent": "Deinocheiridae",
+      "parent": "Ornithomimosauria",
+      "dispute": {
+        "summary": "Tyrannomimus is known only from its describing analysis (Hattori et al., 2023), which recovered it within Deinocheiridae as the sister taxon of Harpymimus. Because that deinocheirid position depends on the contested membership of Harpymimus and is not corroborated by an independent analysis, it is placed conservatively as a basal ornithomimosaur outside the two families.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Moved from Deinocheiridae to Ornithomimosauria; the deinocheirid placement of Hattori et al. (2023) is recorded as the unresolved alternative.\n"
+          }
+        ]
+      },
       "etymology": "From Latin 'tyrannus' meaning 'tyrant' and Latin 'mimus' meaning 'mimic', referring to its morphological similarities with tyrannosauroids.",
       "pronunciation": {
         "phonetic": "ty-RAN-o-MY-mus"
@@ -193690,8 +193857,7 @@
         "Coelurosauria",
         "Maniraptoriformes",
         "Arctometatarsalia",
-        "Ornithomimosauria",
-        "Deinocheiridae"
+        "Ornithomimosauria"
       ],
       "authors": "Hattori, S.; Shibata, M.; Kawabe, S.; Imai, T.; Nishi, H.; Azuma, Y.",
       "described": 2023
@@ -196548,6 +196714,15 @@
     "Valdoraptor": {
       "genus": "Valdoraptor",
       "parent": "Ornithomimosauria",
+      "dispute": {
+        "summary": "Valdoraptor is a nomen dubium based on a partial metatarsus from the Early Cretaceous of England, and its affinity is contested. It is most often referred to Ornithomimosauria (Allain et al., 2014), where it would rank among the oldest known members of the clade, but some workers favor a noasaurid ceratosaur affinity, and its diagnostic characters are regarded as homoplastic. It is placed conservatively at Ornithomimosauria.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Retained at Ornithomimosauria following Allain et al. (2014); its status as a nomen dubium and the alternative noasaurid affinity are recorded as unresolved.\n"
+          }
+        ]
+      },
       "etymology": "From Latin 'Valdus' (Wealden, referring to the Wealden Group) and 'raptor' (plunderer); meaning 'Wealden plunderer'.",
       "pronunciation": {
         "phonetic": "VALD-o-RAP-tor"
