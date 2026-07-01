@@ -1,7 +1,7 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-01T20:21:31.235Z
-  clade_count: 206
+  built_at: 2026-07-01T22:33:35.610Z
+  clade_count: 204
   genus_count: 1398
   license: CC-BY-4.0
   schema_version: 1.0.0
@@ -43,15 +43,13 @@ tree:
                             Tetanurae:
                               Megalosauroidea:
                                 Piatnitzkysauridae: {}
-                                Megalosauridae:
-                                  Megalosaurinae: {}
-                                  Eustreptospondylinae: {}
-                                  Afrovenatorinae: {}
-                                Spinosauridae:
-                                  Baryonychinae:
-                                    Ceratosuchopsini: {}
-                                  Spinosaurinae: {}
-                                Megalosauria: {}
+                                Megalosauria:
+                                  Megalosauridae:
+                                    Megalosaurinae: {}
+                                    Afrovenatorinae: {}
+                                  Spinosauridae:
+                                    Baryonychinae: {}
+                                    Spinosaurinae: {}
                               Avetheropoda:
                                 Allosauroidea:
                                   Metriacanthosauridae:
@@ -374,6 +372,8 @@ clades:
         doi: 10.1098/rspb.2017.1219
         notes: Recovered Aeolosaurini within Rinconsauria in a dedicated phylogenetic analysis.
   Afrovenatorinae:
+    description: |
+      Afrovenatorinae is the subfamily of megalosaurid theropods erected by Carrano, Benson and Sampson (2012) for Afrovenator, Dubreuillosaurus, Magnosaurus, Piveteausaurus and Leshansaurus (with Poekilopleuron tentatively). Defined as all megalosaurids closer to Afrovenator than to Megalosaurus, it groups the more gracile, largely Middle Jurassic megalosaurids and is the sister group of Megalosaurinae. The subfamily is used in preference to the sometimes-cited Eustreptospondylinae.
     taxonomy:
       - Life
       - Animalia
@@ -390,8 +390,27 @@ clades:
       - Averostra
       - Tetanurae
       - Megalosauroidea
+      - Megalosauria
       - Megalosauridae
       - Afrovenatorinae
+    type_genus: Afrovenator
+    described: 2012
+    authors: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D.
+    diagnostic_features:
+      - Squared anterior margin of the maxillary antorbital fenestra
+      - Puboischiadic plate broadly open along the midline
+    references:
+      - id: carrano2012
+        authors: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D.
+        year: 2012
+        title: "The phylogeny of Tetanurae (Dinosauria: Theropoda)"
+        journal: Journal of Systematic Palaeontology
+        volume: "10"
+        issue: "2"
+        pages: 211-300
+        publisher: Informa UK Limited
+        doi: 10.1080/14772019.2011.630927
+        url: http://dx.doi.org/10.1080/14772019.2011.630927
   Albertosaurinae:
     description: |
       Albertosaurinae is one of the two subfamilies of Tyrannosauridae, erected by Currie, Hurum and Sabath (2003) and defined as all tyrannosaurids closer to Albertosaurus than to Tyrannosaurus. Its members, Albertosaurus and Gorgosaurus, are relatively gracile, long-legged tyrannosaurids of the Late Cretaceous of western North America.
@@ -1031,6 +1050,8 @@ clades:
         url: http://dx.doi.org/10.1093/zoolinnean/zly028
         notes: Named Bagualosauria.
   Baryonychinae:
+    description: |
+      Baryonychinae is the subfamily of spinosaurids that retain comparatively robust, blade-like serrated teeth, including Baryonyx, Suchomimus and their relatives (with the tribe Ceratosuchopsini of some authors). It is generally recovered as the sister group of Spinosaurinae, though its monophyly is contested. The subfamily is diagnosed relative to Spinosaurinae mainly by plesiomorphic craniodental features.
     taxonomy:
       - Life
       - Animalia
@@ -1047,8 +1068,34 @@ clades:
       - Averostra
       - Tetanurae
       - Megalosauroidea
+      - Megalosauria
       - Spinosauridae
       - Baryonychinae
+    type_genus: Baryonyx
+    described: 1986
+    authors: Charig, A. J.; Milner, A. C.
+    references:
+      - id: charig1986
+        authors: Charig, A. J.; Milner, A. C.
+        year: 1986
+        title: Baryonyx, a remarkable new theropod dinosaur
+        journal: Nature
+        volume: "324"
+        issue: "6095"
+        pages: 359-361
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1038/324359a0
+      - id: sereno1998b
+        authors: Sereno, P. C.; Beck, A. L.; Dutheil, D. B.; Gado, B.; Larsson, H. C. E.; Lyon, G. H.; Marcot, J. D.; Rauhut, O. W. M.; Sadleir, R. W.; Sidor, C. A.; Varricchio, D. D.; Wilson, G. P.; Wilson, J. A.
+        year: 1998
+        title: A Long-Snouted Predatory Dinosaur from Africa and the Evolution of Spinosaurids
+        journal: Science
+        volume: "282"
+        issue: "5392"
+        pages: 1298-1302
+        publisher: American Association for the Advancement of Science (AAAS)
+        doi: 10.1126/science.282.5392.1298
+        url: http://dx.doi.org/10.1126/science.282.5392.1298
   Brachiosauridae:
     description: |
       Brachiosauridae is a family of titanosauriform sauropods defined as all taxa more closely related to Brachiosaurus than to Saltasaurus, known from the Late Jurassic to the mid-Cretaceous of North America, Africa, and Europe. Brachiosaurids are distinguished by their unusual proportions, with forelimbs longer than or subequal to the hindlimbs, producing a giraffe-like, elevated posture suited to high browsing. The family forms a largely Late Jurassic grade of basal members (Europasaurus, Vouivria, Brachiosaurus) leading to a clade of Cretaceous forms including Giraffatitan and the North American Cedarosaurus and Venenosaurus.
@@ -1763,26 +1810,6 @@ clades:
         doi: 10.2475/ajs.s3-27.160.329
         url: http://dx.doi.org/10.2475/ajs.s3-27.160.329
         notes: Named the family Ceratosauridae for Ceratosaurus.
-  Ceratosuchopsini:
-    taxonomy:
-      - Life
-      - Animalia
-      - Chordata
-      - Vertebrata
-      - Sarcopterygii
-      - Tetrapoda
-      - Reptilia
-      - Archosauria
-      - Dinosauria
-      - Saurischia
-      - Theropoda
-      - Neotheropoda
-      - Averostra
-      - Tetanurae
-      - Megalosauroidea
-      - Spinosauridae
-      - Baryonychinae
-      - Ceratosuchopsini
   Cetiosauridae:
     description: |
       Cetiosauridae is a family-level grouping of basal eusauropod dinosaurs erected by Lydekker (1888) and typified by Cetiosaurus. Long used as a wastebasket for non-neosauropod sauropods, the family has been revived in a restricted sense for a small clade of Middle Jurassic taxa, most consistently Cetiosaurus and Patagosaurus (united by loss of the spinodiapophyseal lamina; Holwerda et al., 2021), with Chebsaurus and Lapparentosaurus included in some analyses. Its validity and contents remain debated, and several studies recover it instead as a paraphyletic grade of basal eusauropods.
@@ -3104,25 +3131,6 @@ clades:
         pages: 215-275
         doi: 10.1046/j.1096-3642.2002.00029.x
         notes: Comprehensive cladistic analysis diagnosing Eusauropoda.
-  Eustreptospondylinae:
-    taxonomy:
-      - Life
-      - Animalia
-      - Chordata
-      - Vertebrata
-      - Sarcopterygii
-      - Tetrapoda
-      - Reptilia
-      - Archosauria
-      - Dinosauria
-      - Saurischia
-      - Theropoda
-      - Neotheropoda
-      - Averostra
-      - Tetanurae
-      - Megalosauroidea
-      - Megalosauridae
-      - Eustreptospondylinae
   Eutitanosauria:
     description: |
       Eutitanosauria is a node-based clade of derived titanosaurs defined by Carballido et al. (2022) as the least-inclusive clade containing Patagotitan and Saltasaurus. It is the immediate parent of the two principal derived titanosaur lineages — Colossosauria (the branch closer to Patagotitan) and Saltasauroidea (the branch closer to Saltasaurus) — and so encompasses the giant lognkosaurs and rinconsaurs together with the dwarfed, heavily armored saltasaurids. The name was first introduced by Sanz et al. (1999) for a comparable assemblage of advanced titanosaurs; Carballido et al. (2022) recovered and formally redefined it within their node-stem framework.
@@ -4734,6 +4742,8 @@ clades:
         url: http://dx.doi.org/10.1371/journal.pone.0026964
         notes: Phylogenetic analysis of Massospondylidae membership.
   Megalosauria:
+    description: |
+      Megalosauria is the node-based clade uniting Megalosauridae and Spinosauridae within Megalosauroidea, to the exclusion of Piatnitzkysauridae. The name, coined by Bonaparte in 1850, was applied to this node by Carrano, Benson and Sampson (2012). It contains the large megalosaurid predators and the specialized spinosaurids, along with basal, poorly resolved members such as Streptospondylus and Eustreptospondylus.
     taxonomy:
       - Life
       - Animalia
@@ -4751,9 +4761,36 @@ clades:
       - Tetanurae
       - Megalosauroidea
       - Megalosauria
+    described: 1850
+    authors: Bonaparte, C.-L.
+    diagnostic_features:
+      - External naris positioned behind the premaxillary tooth row
+      - Lateral lamina of the maxilla forming a large shelf that obscures the anteroventral corner of the antorbital fossa
+      - Broad midline depression on the basioccipital about two-thirds the width of the occipital condyle
+      - Enlarged, subcircular third dentary alveolus
+      - Iliac pubic peduncle with a length-to-width ratio of about 1.55 to 1.75
+      - Stout, bar-like medial distal crest on the femur
+    references:
+      - id: bonaparte1850
+        authors: Bonaparte, C.-L.
+        year: 1850
+        title: Conspectus Systematum Herpetologiae et Amphibiologiae. Editio Altera Reformata
+        publisher: E. J. Brill
+        notes: Origin of the name Megalosauria, applied as a node-based clade by Carrano et al. (2012).
+      - id: carrano2012
+        authors: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D.
+        year: 2012
+        title: "The phylogeny of Tetanurae (Dinosauria: Theropoda)"
+        journal: Journal of Systematic Palaeontology
+        volume: "10"
+        issue: "2"
+        pages: 211-300
+        publisher: Informa UK Limited
+        doi: 10.1080/14772019.2011.630927
+        url: http://dx.doi.org/10.1080/14772019.2011.630927
   Megalosauridae:
     description: |
-      Megalosauridae is a family of large basal tetanuran theropod dinosaurs known primarily from the Middle to Late Jurassic of Europe, Africa, and South America. The family includes Megalosaurus bucklandii, the first dinosaur to be scientifically described and named (1824). Megalosaurids were robust, large- bodied predators with powerful forelimbs and laterally compressed, serrated teeth.
+      Megalosauridae is a family of large-bodied basal tetanuran theropods known mainly from the Middle to Late Jurassic of Europe, Africa and the Americas, including Megalosaurus bucklandii, the first dinosaur to be scientifically named. Within Megalosauria it is the sister group of Spinosauridae, and comprises the subfamilies Megalosaurinae and Afrovenatorinae together with basal forms such as Eustreptospondylus. The family-group name dates from Fitzinger (1843).
     taxonomy:
       - Life
       - Animalia
@@ -4770,24 +4807,40 @@ clades:
       - Averostra
       - Tetanurae
       - Megalosauroidea
+      - Megalosauria
       - Megalosauridae
-    described: 1869
-    authors: Huxley
+    type_genus: Megalosaurus
+    described: 1843
+    authors: Fitzinger, L.
     diagnostic_features:
-      - Large body size with robust skeletal construction
-      - Laterally compressed, serrated teeth
-      - Well-developed and powerful forelimbs with large manual claws
-      - Tall neural spines on dorsal vertebrae
-      - Distinctive premaxillary-maxillary contact morphology
+      - Humeral deltopectoral crest extending at least 0.52 of the way down the humeral shaft
+      - Absence of a fibular anterolateral tubercle
+      - Absence of the quadrate foramen
+      - Paroccipital processes directed dorsolaterally to laterally
+      - Well-defined longitudinal groove for neurovascular foramina on the lateral surface of the dentary
+      - Ischial shaft curving anteroventrally, with the antitrochanter absent and the symphysis expanded as an apron
     references:
-      - id: huxley1869
-        authors: Huxley, T.H.
-        year: 1869
-        title: On the upper jaw of Megalosaurus
-        journal: Quarterly Journal of the Geological Society of London
-        volume: "25"
-        pages: 311-314
+      - id: fitzinger1843
+        authors: Fitzinger, L.
+        year: 1843
+        title: Systema Reptilium. Fasciculus Primus. Amblyglossae
+        publisher: Braumüller und Seidel
+        pages: 106 pp
+        notes: Origin of the family-group name Megalosauridae.
+      - id: benson2010c
+        authors: Benson, R. B. J.
+        year: 2010
+        title: "A description of Megalosaurus bucklandii (Dinosauria: Theropoda) from the Bathonian of the UK and the relationships of Middle Jurassic theropods"
+        journal: Zoological Journal of the Linnean Society
+        volume: "158"
+        issue: "4"
+        pages: 882-935
+        publisher: Oxford University Press (OUP)
+        doi: 10.1111/j.1096-3642.2009.00569.x
+        url: http://dx.doi.org/10.1111/j.1096-3642.2009.00569.x
   Megalosaurinae:
+    description: |
+      Megalosaurinae is the subfamily of megalosaurid theropods containing the large, robust Middle to Late Jurassic predators Megalosaurus, Torvosaurus, Duriavenator and Wiehenvenator. Defined as all megalosaurids closer to Megalosaurus than to Afrovenator, it is consistently recovered as the sister group of Afrovenatorinae within Megalosauridae, with Duriavenator the basalmost and stratigraphically oldest member and Torvosaurus the most derived.
     taxonomy:
       - Life
       - Animalia
@@ -4804,11 +4857,34 @@ clades:
       - Averostra
       - Tetanurae
       - Megalosauroidea
+      - Megalosauria
       - Megalosauridae
       - Megalosaurinae
+    type_genus: Megalosaurus
+    described: 1843
+    authors: Fitzinger, L.
+    references:
+      - id: fitzinger1843
+        authors: Fitzinger, L.
+        year: 1843
+        title: Systema Reptilium. Fasciculus Primus. Amblyglossae
+        publisher: Braumüller und Seidel
+        pages: 106 pp
+        notes: Origin of the family-group name Megalosauridae, and by coordination the subfamily Megalosaurinae.
+      - id: carrano2012
+        authors: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D.
+        year: 2012
+        title: "The phylogeny of Tetanurae (Dinosauria: Theropoda)"
+        journal: Journal of Systematic Palaeontology
+        volume: "10"
+        issue: "2"
+        pages: 211-300
+        publisher: Informa UK Limited
+        doi: 10.1080/14772019.2011.630927
+        url: http://dx.doi.org/10.1080/14772019.2011.630927
   Megalosauroidea:
     description: |
-      Megalosauroidea is a superfamily of large-bodied basal tetanuran theropods that includes Megalosauridae and Spinosauridae. These predators were prominent during the Middle Jurassic through Late Cretaceous. Megalosauroids were among the first dinosaurs to be scientifically described and include some of the most specialized predatory forms, such as the semi-aquatic spinosaurids.
+      Megalosauroidea is a superfamily of basal tetanuran theropods that unites the family Piatnitzkysauridae with the clade Megalosauria (Megalosauridae plus Spinosauridae). Defined as all theropods closer to Megalosaurus than to Allosaurus or Tyrannosaurus, it ranges from the Middle Jurassic to the Late Cretaceous and includes large-bodied terrestrial predators as well as the elongate-snouted, semiaquatic spinosaurids. Spinosauroidea and Torvosauroidea are junior synonyms.
     taxonomy:
       - Life
       - Animalia
@@ -4825,22 +4901,35 @@ clades:
       - Averostra
       - Tetanurae
       - Megalosauroidea
-    described: 2002
-    authors: Holtz, Molnar & Currie
+    type_genus: Megalosaurus
+    described: 1843
+    authors: Fitzinger, L.
     diagnostic_features:
-      - Large body size in most members
-      - Elongate premaxilla-maxilla contact
-      - Robust skull construction with well-developed antorbital fenestra
-      - Elongate and robust manual unguals
-      - Basal tetanuran grade of skeletal organization
+      - U-shaped ventral process of the postorbital
+      - Chevrons whose proximal articular surface lacks distinct anterior and posterior facets
+      - Iliac pubic peduncle with a length-to-width ratio of about 1.3 to 1.4
+      - Anterior dorsal vertebrae with prominent ventral keels inset from the lateral surfaces
+      - Step-like ridge within the infrapostzygapophyseal fossa of the dorsal vertebrae
+      - Dorsal neural spines about 1.4 to 1.7 times the centrum height
     references:
-      - id: holtzetal2004
-        authors: Holtz, T.R., Molnar, R.E. & Currie, P.J.
-        year: 2004
-        title: Basal Tetanurae
-        journal: The Dinosauria (2nd edition)
-        volume: ""
-        pages: 71-110
+      - id: fitzinger1843
+        authors: Fitzinger, L.
+        year: 1843
+        title: Systema Reptilium. Fasciculus Primus. Amblyglossae
+        publisher: Braumüller und Seidel
+        pages: 106 pp
+        notes: Origin of the family-group name Megalosauridae, and by coordination the superfamily Megalosauroidea.
+      - id: carrano2012
+        authors: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D.
+        year: 2012
+        title: "The phylogeny of Tetanurae (Dinosauria: Theropoda)"
+        journal: Journal of Systematic Palaeontology
+        volume: "10"
+        issue: "2"
+        pages: 211-300
+        publisher: Informa UK Limited
+        doi: 10.1080/14772019.2011.630927
+        url: http://dx.doi.org/10.1080/14772019.2011.630927
   Megaraptora:
     taxonomy:
       - Life
@@ -6031,6 +6120,8 @@ clades:
         doi: 10.1016/j.cretres.2011.11.014
         url: http://dx.doi.org/10.1016/j.cretres.2011.11.014
   Piatnitzkysauridae:
+    description: |
+      Piatnitzkysauridae is a family of comparatively small, basal megalosauroid theropods from the Middle to Late Jurassic, comprising Piatnitzkysaurus, Condorraptor and Marshosaurus, and in some analyses the Chinese Xuanhanosaurus. Named by Carrano, Benson and Sampson (2012), it is the basalmost clade of Megalosauroidea and the sister group of Megalosauria.
     taxonomy:
       - Life
       - Animalia
@@ -6048,6 +6139,27 @@ clades:
       - Tetanurae
       - Megalosauroidea
       - Piatnitzkysauridae
+    type_genus: Piatnitzkysaurus
+    described: 2012
+    authors: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D.
+    diagnostic_features:
+      - Two parallel rows of nutrient foramina on the lateral surface of the maxilla
+      - Vertically striated (ridged) paradental plates
+      - Reduced atlas-axis parapophyses
+      - Anteriorly inclined posterior dorsal neural spines
+      - Canted distal humeral condyles
+    references:
+      - id: carrano2012
+        authors: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D.
+        year: 2012
+        title: "The phylogeny of Tetanurae (Dinosauria: Theropoda)"
+        journal: Journal of Systematic Palaeontology
+        volume: "10"
+        issue: "2"
+        pages: 211-300
+        publisher: Informa UK Limited
+        doi: 10.1080/14772019.2011.630927
+        url: http://dx.doi.org/10.1080/14772019.2011.630927
   Plateosauria:
     description: |
       Plateosauria is a clade of sauropodomorph dinosaurs uniting Plateosauridae and Massopoda (and, in many analyses, Unaysauridae), encompassing the more derived, obligately or facultatively quadrupedal herbivores of the Late Triassic to Early Jurassic and all of their descendants including the sauropods. It is nested within Bagualosauria and represents the bulk of sauropodomorph diversity above the basal Carnian grade.
@@ -7108,7 +7220,7 @@ clades:
         doi: 10.2307/3889325
   Spinosauridae:
     description: |
-      Spinosauridae is a family of large megalosauroid theropod dinosaurs characterized by elongated, crocodile-like snouts and conical, unserrated teeth adapted for piscivory (fish-eating). Many spinosaurids possessed enlarged dorsal neural spines forming a sail or ridge along the back. The family includes Spinosaurus, one of the largest known theropods, which shows evidence of semi-aquatic habits. Spinosaurids are known from the Cretaceous of Africa, Europe, and South America.
+      Spinosauridae is a family of specialized megalosauroid theropods from the Cretaceous of Africa, Europe, Asia and South America. Sister to Megalosauridae within Megalosauria, it comprises the subfamilies Baryonychinae and Spinosaurinae, the latter including the giant, semiaquatic Spinosaurus. Spinosaurids are distinguished by elongate, crocodile-like snouts, subconical teeth with reduced or absent serrations, enlarged first-finger claws, and, in derived forms, tall dorsal neural spines that form a sail. Baryonychidae is a junior synonym.
     taxonomy:
       - Life
       - Animalia
@@ -7125,16 +7237,15 @@ clades:
       - Averostra
       - Tetanurae
       - Megalosauroidea
+      - Megalosauria
       - Spinosauridae
+    type_genus: Spinosaurus
     described: 1915
-    authors: Stromer
+    authors: Stromer, E.
     diagnostic_features:
-      - Elongated, narrow snout with a terminal rosette of premaxillary teeth
-      - Conical, unserrated teeth adapted for grasping fish
-      - Enlarged, elongate neural spines on dorsal and sacral vertebrae
-      - Secondary palate partially developed
-      - Enlarged manual ungual on digit I
-      - Retracted external nares
+      - Elongate, laterally compressed (crocodile-like) rostrum
+      - Subconical teeth with reduced or absent serrations
+      - Dorsal neural spines 1.9 or more times the centrum height, forming a sail in derived taxa
     references:
       - id: stromer1915
         authors: Stromer, E.
@@ -7144,6 +7255,8 @@ clades:
         volume: "28"
         pages: 1-32
   Spinosaurinae:
+    description: |
+      Spinosaurinae is the subfamily of derived spinosaurids characterized by conical, unserrated teeth, comprising Spinosaurus, Irritator, Ichthyovenator and their relatives, including the Iberian taxa Vallibonavenatrix and Camarillasaurus. Sister to Baryonychinae, it includes the largest and most specialized, semiaquatic spinosaurids.
     taxonomy:
       - Life
       - Animalia
@@ -7160,8 +7273,31 @@ clades:
       - Averostra
       - Tetanurae
       - Megalosauroidea
+      - Megalosauria
       - Spinosauridae
       - Spinosaurinae
+    type_genus: Spinosaurus
+    described: 1915
+    authors: Stromer, E.
+    references:
+      - id: stromer1915
+        authors: Stromer, E.
+        year: 1915
+        title: Ergebnisse der Forschungsreisen Prof. E. Stromers in den Wusten Agyptens. II. Wirbeltier-Reste der Baharije-Stufe (unterstes Cenoman). 3. Das Original des Theropoden Spinosaurus aegyptiacus nov. gen., nov. spec.
+        journal: Abhandlungen der Koniglichen Bayerischen Akademie der Wissenschaften
+        volume: "28"
+        pages: 1-32
+      - id: sereno1998b
+        authors: Sereno, P. C.; Beck, A. L.; Dutheil, D. B.; Gado, B.; Larsson, H. C. E.; Lyon, G. H.; Marcot, J. D.; Rauhut, O. W. M.; Sadleir, R. W.; Sidor, C. A.; Varricchio, D. D.; Wilson, G. P.; Wilson, J. A.
+        year: 1998
+        title: A Long-Snouted Predatory Dinosaur from Africa and the Evolution of Spinosaurids
+        journal: Science
+        volume: "282"
+        issue: "5392"
+        pages: 1298-1302
+        publisher: American Association for the Advancement of Science (AAAS)
+        doi: 10.1126/science.282.5392.1298
+        url: http://dx.doi.org/10.1126/science.282.5392.1298
   Stegosauria:
     description: |
       Stegosauria is a clade of thyreophoran ornithischian dinosaurs best known for their distinctive rows of dorsal plates and spines. Stegosaurs appeared in the Middle Jurassic and were most diverse during the Late Jurassic, with the group declining through the Cretaceous. They were medium to large quadrupedal herbivores with small heads, short necks, and hindlimbs significantly longer than forelimbs, giving the body a distinctive arched profile. The tail typically bore two pairs of elongate spines (the "thagomizer"). Crown-group diversity is concentrated in the family Stegosauridae; many basal and fragmentary genera remain of uncertain position within the clade.
@@ -11366,7 +11502,7 @@ genera:
     described: 2017
   Afrovenator:
     genus: Afrovenator
-    parent: Eustreptospondylinae
+    parent: Afrovenatorinae
     pronunciation:
       phonetic: AF-ro-vee-NAY-tor
       ipa: /ˌæfroʊvɪˈneɪtər/
@@ -11470,8 +11606,9 @@ genera:
       - Averostra
       - Tetanurae
       - Megalosauroidea
+      - Megalosauria
       - Megalosauridae
-      - Eustreptospondylinae
+      - Afrovenatorinae
     authors: Sereno, P. C.; Wilson, J. A.; Larsson, H. C. E.; Dutheil, D. B.; Sues, H.-D.
     described: 1994
   Agathaumas:
@@ -28185,6 +28322,7 @@ genera:
       - Averostra
       - Tetanurae
       - Megalosauroidea
+      - Megalosauria
       - Spinosauridae
       - Baryonychinae
     authors: Charig, A. J.; Milner, A. C.
@@ -35149,6 +35287,12 @@ genera:
   Camarillasaurus:
     genus: Camarillasaurus
     parent: Spinosaurinae
+    dispute:
+      summary: |
+        Camarillasaurus cirugedae was originally described as a basal ceratosaur (Sanchez-Hernandez and Benton, 2012) but is now recovered as a spinosaurine spinosaurid by recent analyses (Barker et al., 2021; Isasmendi et al., 2024; Rauhut et al., 2025), the last placing it as a derived spinosaurine close to Spinosaurus.
+      history:
+        - date: 2026-07-01
+          note: Placed at Spinosaurinae following the recent reassessments (P2/P3); the original ceratosaurian identification is superseded.
     etymology: From Camarillas (the village of Camarillas in Teruel Province, Spain, near where fossils were found) + Greek sauros (σαῦρος) meaning 'lizard'; overall meaning 'Camarillas lizard'.
     pronunciation:
       phonetic: cam-a-REE-yuh-SOR-us
@@ -35239,6 +35383,7 @@ genera:
       - Averostra
       - Tetanurae
       - Megalosauroidea
+      - Megalosauria
       - Spinosauridae
       - Spinosaurinae
     authors: Sánchez-Hernández, B.; Benton, M.
@@ -37525,7 +37670,13 @@ genera:
     described: 1884
   Ceratosuchops:
     genus: Ceratosuchops
-    parent: Ceratosuchopsini
+    parent: Baryonychinae
+    dispute:
+      summary: |
+        Ceratosuchops inferodios is a baryonychine spinosaurid (Barker et al., 2021; Rauhut et al., 2025); Barker et al. (2021) placed it in the tribe Ceratosuchopsini with Riparovenator and Suchomimus. Jones (2026) notes it may be conspecific with Riparovenator, representing ontogenetic or individual variation.
+      history:
+        - date: 2026-07-01
+          note: Placed at Baryonychinae following Barker et al. (2021) and Rauhut et al. (2025) (P2/P4; the tribe Ceratosuchopsini is not retained); the proposed synonymy with Riparovenator is unresolved.
     pronunciation:
       phonetic: serr-AT-oh-SOO-kops
     etymology: From Greek keras/keratos ('horn') + Latin suchus ('crocodile', from Greek) + ops ('face'), meaning 'horned crocodile face', in reference to the bony boss on the postorbital bone.
@@ -37630,9 +37781,9 @@ genera:
       - Averostra
       - Tetanurae
       - Megalosauroidea
+      - Megalosauria
       - Spinosauridae
       - Baryonychinae
-      - Ceratosuchopsini
     authors: Barker, C. T.; Hone, D. W. E.; Naish, D.; Cau, A.; Lockwood, J. A. F.; Foster, B.; Clarkin, C. E.; Schneider, P.; Gostling, N. J.
     described: 2021
   Cetiosauriscus:
@@ -44320,6 +44471,12 @@ genera:
   Cristatusaurus:
     genus: Cristatusaurus
     parent: Baryonychinae
+    dispute:
+      summary: |
+        Cristatusaurus lapparenti is a fragmentary baryonychine that Carrano et al. (2012) considered an indeterminate baryonychine almost certainly synonymous with Suchomimus tenerensis; Lacerda et al. (2022), reported by Jones (2026), instead found it distinct and valid. Its validity and possible synonymy remain contested.
+      history:
+        - date: 2026-07-01
+          note: Placed at Baryonychinae following Carrano et al. (2012) (P2); retained as a valid genus pending resolution of the proposed synonymy with Suchomimus.
     pronunciation:
       phonetic: kris-TAY-tuh-SAWR-us
     etymology: From Latin 'cristatus' meaning 'crested' and Greek 'sauros' meaning 'lizard', referring to the crested skull of this spinosaurid dinosaur.
@@ -44410,6 +44567,7 @@ genera:
       - Averostra
       - Tetanurae
       - Megalosauroidea
+      - Megalosauria
       - Spinosauridae
       - Baryonychinae
     authors: Taquet, P.; Russell, D. A.
@@ -51330,7 +51488,13 @@ genera:
     described: 1877
   Dubreuillosaurus:
     genus: Dubreuillosaurus
-    parent: Eustreptospondylinae
+    parent: Afrovenatorinae
+    dispute:
+      summary: |
+        Dubreuillosaurus valesdunensis is recovered as an afrovenatorine megalosaurid (Carrano et al., 2012). Cau (2024) argues it is a junior synonym of Poekilopleuron bucklandii, its holotype representing a juvenile of that taxon; other authors retain it as a distinct genus.
+      history:
+        - date: 2026-07-01
+          note: Placed at Afrovenatorinae following Carrano et al. (2012) (P2); retained as a valid genus pending resolution of the proposed synonymy with Poekilopleuron.
     etymology: Named for French fossil collector and preparator Pascal Dubreuil, who found the specimen, combined with Greek 'sauros' meaning 'lizard'.
     description: Dubreuillosaurus is a genus of carnivorous megalosaurid theropod dinosaur from the middle Jurassic Period. Its fossils were found in France. The only named species, Dubreuillosaurus valesdunensis, was originally described as a species of Poekilopleuron, Poekilopleuron? valesdunensis, which is still formally the type species of the genus. It was later renamed Dubreuillosaurus valesdunensis when, in 2005, Allain came to the conclusion that it was not part of the genus Poekilopleuron. Its type specimen, MNHN 1998-13, is only rivalled in the number of preserved elements in this group by that of Eustreptospondylus. Dubreuillosaurus is considered to be a sister taxon of Magnosaurus. It did not show signs of insular dwarfism even though it was uncovered on an island.
     diet: carnivore
@@ -51434,8 +51598,9 @@ genera:
       - Averostra
       - Tetanurae
       - Megalosauroidea
+      - Megalosauria
       - Megalosauridae
-      - Eustreptospondylinae
+      - Afrovenatorinae
     authors: Allain, R.
     described: 2005
   Duonychus:
@@ -51746,6 +51911,7 @@ genera:
       - Averostra
       - Tetanurae
       - Megalosauroidea
+      - Megalosauria
       - Megalosauridae
       - Megalosaurinae
     authors: Benson, R. B. J.
@@ -58298,7 +58464,13 @@ genera:
     described: 1866
   Eustreptospondylus:
     genus: Eustreptospondylus
-    parent: Eustreptospondylinae
+    parent: Megalosauridae
+    dispute:
+      summary: |
+        Eustreptospondylus oxoniensis is a basal megalosaurid whose exact position is unresolved. Carrano et al. (2012) and Benson (2010) recover it as the basalmost megalosaurid outside the two subfamilies, Rauhut et al. (2016) place it in the megalosaurid subfamily they call Eustreptospondylinae, and Jones (2026) treats it as a basal member of Megalosauria. Proposed synonymies with Magnosaurus and Streptospondylus have been rejected.
+      history:
+        - date: 2026-07-01
+          note: Placed at Megalosauridae (basal) following Carrano et al. (2012) and Benson (2010) (P2); the finer subfamily assignment is unresolved.
     etymology: "From Ancient Greek eu- (well) + streptos (twisted) + spondylos (vertebra): 'well-twisted vertebra', referring to the morphology of its vertebrae."
     pronunciation:
       phonetic: yoo-STREPT-o-spon-DY-luhs
@@ -58410,8 +58582,8 @@ genera:
       - Averostra
       - Tetanurae
       - Megalosauroidea
+      - Megalosauria
       - Megalosauridae
-      - Eustreptospondylinae
     authors: Walker, A. D.
     described: 1964
   Fabrosaurus:
@@ -73464,6 +73636,12 @@ genera:
   Iberospinus:
     genus: Iberospinus
     parent: Spinosauridae
+    dispute:
+      summary: |
+        Iberospinus natarioi is a spinosaurid whose subfamily placement is unstable. The describing analysis (Mateus and Estraviz-Lopez, 2022) recovers it as sister to the Baryonyx plus Suchomimus clade, outside both subfamilies but favoring baryonychine affinity; Barker et al. (2021) and Isasmendi et al. (2024) recover it as a baryonychine, whereas Rauhut et al. (2025) recover it as the basalmost spinosaurine.
+      history:
+        - date: 2026-07-01
+          note: Placed at Spinosauridae, the least-inclusive uncontested node, following the conflicting analyses (P2); its baryonychine-versus-spinosaurine position is unresolved.
     etymology: Iberian spine; from Iberia (the Iberian Peninsula, where it was found in Portugal) and Latin spina (spine), referring to its spinosaurid neural spines
     pronunciation:
       phonetic: eye-BEH-ro-SPY-nus
@@ -73549,6 +73727,7 @@ genera:
       - Averostra
       - Tetanurae
       - Megalosauroidea
+      - Megalosauria
       - Spinosauridae
     authors: Mateus, O.; Estraviz-López, D.
     described: 2022
@@ -73800,6 +73979,7 @@ genera:
       - Averostra
       - Tetanurae
       - Megalosauroidea
+      - Megalosauria
       - Spinosauridae
       - Spinosaurinae
     authors: Allain, R.; Xaisanavong, T.; Richir, P.; Khentavong, B.
@@ -75517,6 +75697,7 @@ genera:
       - Averostra
       - Tetanurae
       - Megalosauroidea
+      - Megalosauria
       - Spinosauridae
       - Spinosaurinae
     authors: Martill, D. M.; Cruickshank, A. R. I.; Frey, E.; Small, P. G.; Clarke, M.
@@ -86957,6 +87138,7 @@ genera:
       - Averostra
       - Tetanurae
       - Megalosauroidea
+      - Megalosauria
       - Megalosauridae
       - Afrovenatorinae
     authors: Li, F.; Peng, G.; Yong, Y.; Jiang, S.; Huang, D.
@@ -92488,7 +92670,7 @@ genera:
     described: 2012
   Magnosaurus:
     genus: Magnosaurus
-    parent: Eustreptospondylinae
+    parent: Afrovenatorinae
     pronunciation:
       phonetic: MAG-no-SAWR-us
     etymology: From Latin 'magnus' (large) and Greek 'sauros' (lizard); meaning 'large lizard'
@@ -92601,8 +92783,9 @@ genera:
       - Averostra
       - Tetanurae
       - Megalosauroidea
+      - Megalosauria
       - Megalosauridae
-      - Eustreptospondylinae
+      - Afrovenatorinae
     authors: Huene, F. V.
     described: 1932
   Magyarosaurus:
@@ -95942,6 +96125,7 @@ genera:
       - Averostra
       - Tetanurae
       - Megalosauroidea
+      - Megalosauria
       - Megalosauridae
       - Megalosaurinae
     authors: Mantell, G.
@@ -116601,7 +116785,7 @@ genera:
     described: 2008
   Piveteausaurus:
     genus: Piveteausaurus
-    parent: Eustreptospondylinae
+    parent: Afrovenatorinae
     pronunciation:
       phonetic: peev-toh-SAWR-us
     etymology: Named after French paleontologist Jean Piveteau, who first described the type specimen, combined with Greek sauros (lizard); meaning "Jean Piveteau's lizard".
@@ -116689,8 +116873,9 @@ genera:
       - Averostra
       - Tetanurae
       - Megalosauroidea
+      - Megalosauria
       - Megalosauridae
-      - Eustreptospondylinae
+      - Afrovenatorinae
     authors: Taquet, P.; Welles, S. P.
     described: 1977
   Planicoxa:
@@ -117746,11 +117931,17 @@ genera:
     described: 1911
   Poekilopleuron:
     genus: Poekilopleuron
-    parent: Eustreptospondylinae
+    parent: Megalosauridae
+    dispute:
+      summary: |
+        Poekilopleuron bucklandii is a fragmentary taxon, its holotype destroyed in World War II, with an unstable position. Carrano et al. (2012) recover it tentatively as an afrovenatorine megalosaurid but note that a single step moves it to Piatnitzkysauridae or Allosauria; Benson (2010) recovers it as an allosauroid; and Cau (2024) treats it as a megalosauroid and the senior synonym of Dubreuillosaurus.
+      history:
+        - date: 2026-07-01
+          note: Placed at Megalosauridae following the prevailing analyses (P2/P3); its afrovenatorine assignment is tentative and an allosauroid position cannot be excluded.
     pronunciation:
       phonetic: PEEK-i-lo-PLOOR-on
     etymology: From Greek poikilos (varied, diverse) and pleuron (rib); meaning "varied ribs".
-    description: Poekilopleuron is a genus of carnosaurian theropod dinosaur, which lived during the middle Bathonian of the Jurassic, about 168 to 166 million years ago. The genus has been used under many different spelling variants, although only one, Poekilopleuron, is valid. The type species is P. bucklandii, named after William Buckland, and many junior synonyms of it have also been erected. Little material is currently known, as the holotype was destroyed in World War II, although many casts of the material still exist.
+    description: Poekilopleuron is a genus of megalosaurid theropod dinosaur, which lived during the middle Bathonian of the Jurassic, about 168 to 166 million years ago. The genus has been used under many different spelling variants, although only one, Poekilopleuron, is valid. The type species is P. bucklandii, named after William Buckland, and many junior synonyms of it have also been erected. Little material is currently known, as the holotype was destroyed in World War II, although many casts of the material still exist.
     diet: carnivore
     locomotion: bipedal
     paleoenvironment:
@@ -117831,8 +118022,8 @@ genera:
       - Averostra
       - Tetanurae
       - Megalosauroidea
+      - Megalosauria
       - Megalosauridae
-      - Eustreptospondylinae
     authors: Eudes-Deslongchamps, J. A.
     described: 1837
   Polacanthoides:
@@ -119912,6 +120103,12 @@ genera:
   Protathlitis:
     genus: Protathlitis
     parent: Baryonychinae
+    dispute:
+      summary: |
+        Protathlitis cinctorrensis was described as a basal baryonychine (Santos-Cubedo et al., 2023) and treated as a valid baryonychine by Jones (2026), but Rauhut et al. (2025) regard it as a probably chimeric nomen dubium whose spinosaurid affinities are questionable.
+      history:
+        - date: 2026-07-01
+          note: Placed at Baryonychinae following the describing analysis (P2); retained as valid pending resolution of the nomen-dubium/chimera hypothesis of Rauhut et al. (2025).
     pronunciation:
       phonetic: pro-TATH-li-tis
     etymology: From Greek protathlitis (champion); meaning "champion".
@@ -120015,6 +120212,7 @@ genera:
       - Averostra
       - Tetanurae
       - Megalosauroidea
+      - Megalosauria
       - Spinosauridae
       - Baryonychinae
     authors: Santos-Cubedo, A.; de Santisteban, C.; Poza, B.; Meseguer, S.
@@ -125704,6 +125902,12 @@ genera:
   Riojavenatrix:
     genus: Riojavenatrix
     parent: Baryonychinae
+    dispute:
+      summary: |
+        Riojavenatrix lacustris is an unstable spinosaurid; its describing analysis (Isasmendi et al., 2024) prefers a baryonychine placement, and Rauhut et al. (2025) recover it as a derived baryonychine under implied weights, but both find it can also fall among early-branching spinosaurines.
+      history:
+        - date: 2026-07-01
+          note: Placed at Baryonychinae following the preferred results of Isasmendi et al. (2024) and Rauhut et al. (2025) (P2); an early-spinosaurine position cannot be excluded.
     etymology: Named for La Rioja Province, Spain, where the fossils were found, combined with Latin 'venatrix' meaning 'huntress'; meaning 'La Rioja huntress.'
     pronunciation:
       phonetic: ree-YO-ha-VEH-nuh-trix
@@ -125798,13 +126002,20 @@ genera:
       - Averostra
       - Tetanurae
       - Megalosauroidea
+      - Megalosauria
       - Spinosauridae
       - Baryonychinae
     authors: Isasmendi, E.; Cuesta, E.; Díaz-Martínez, I.; Company, J.; Sáez-Benito, P.; Viera, L. I.; Torices, A.; Pereda-Suberbiola, X.
     described: 2024
   Riparovenator:
     genus: Riparovenator
-    parent: Ceratosuchopsini
+    parent: Baryonychinae
+    dispute:
+      summary: |
+        Riparovenator milnerae is a baryonychine spinosaurid, sister to Ceratosuchops in the tribe Ceratosuchopsini as originally described (Barker et al., 2021) and recovered as a baryonychine by Rauhut et al. (2025). Jones (2026) notes it may be conspecific with Ceratosuchops.
+      history:
+        - date: 2026-07-01
+          note: Placed at Baryonychinae following Barker et al. (2021) and Rauhut et al. (2025) (P2/P4; the tribe Ceratosuchopsini is not retained); the proposed synonymy with Ceratosuchops is unresolved.
     pronunciation:
       phonetic: ri-PAIR-o-ven-AY-tor
     etymology: From Latin riparius (of the riverbank) and venator (hunter); meaning "riverbank hunter".
@@ -125904,9 +126115,9 @@ genera:
       - Averostra
       - Tetanurae
       - Megalosauroidea
+      - Megalosauria
       - Spinosauridae
       - Baryonychinae
-      - Ceratosuchopsini
     authors: Barker, C. T.; Hone, D. W. E.; Naish, D.; Cau, A.; Lockwood, J. A. F.; Foster, B.; Clarkin, C. E.; Schneider, P.; Gostling, N. J.
     described: 2021
   Rocasaurus:
@@ -129735,6 +129946,12 @@ genera:
   Sciurumimus:
     genus: Sciurumimus
     parent: Megalosauroidea
+    dispute:
+      summary: |
+        Sciurumimus albersdoerferi is based on a juvenile skeleton, and its affinities are contested. It was described as a basal megalosauroid (Rauhut et al., 2012) and recovered within Megalosauroidea by later analyses (Cau, 2024), but the maniraptoromorph analysis of Hartman et al. (2019), followed by Jones (2026), instead recovered it as a compsognathid coelurosaur.
+      history:
+        - date: 2026-07-01
+          note: Placed at Megalosauroidea following the describing paper and Cau (2024) (P2/P3); the compsognathid alternative (Hartman et al., 2019) remains unresolved given the juvenile holotype.
     etymology: Named for its squirrel-like tail; from Latin Sciurus (the tree squirrel genus) and Greek mimos, meaning "mimic" - the name means "squirrel mimic"
     pronunciation:
       phonetic: SIGH-oor-uh-MIEM-us
@@ -132708,6 +132925,12 @@ genera:
   Siamosaurus:
     genus: Siamosaurus
     parent: Spinosauridae
+    dispute:
+      summary: |
+        Siamosaurus suteethorni is based on isolated teeth and is widely regarded as a nomen dubium (Smyth et al., 2020, reported by Jones, 2026); Carrano et al. (2012) could identify the material only as an indeterminate spinosaurid. Newly referred specimens may eventually support its validity as a basal spinosaurine.
+      history:
+        - date: 2026-07-01
+          note: Placed at Spinosauridae following Carrano et al. (2012) (P2); retained as a nomen-dubium-grade, teeth-based taxon that cannot be resolved to a subfamily.
     pronunciation:
       phonetic: sie-AM-o-SAWR-us
     etymology: Named for Siam, the ancient name of Thailand, where the fossils were found, combined with Greek 'sauros' meaning 'lizard'; meaning 'Siam lizard.'
@@ -132788,6 +133011,7 @@ genera:
       - Averostra
       - Tetanurae
       - Megalosauroidea
+      - Megalosauria
       - Spinosauridae
     authors: Buffetaut, E.; Ingavat, R.
     described: 1986
@@ -137107,6 +137331,7 @@ genera:
       - Averostra
       - Tetanurae
       - Megalosauroidea
+      - Megalosauria
       - Spinosauridae
       - Spinosaurinae
     authors: Stromer, E.
@@ -138495,6 +138720,12 @@ genera:
   Streptospondylus:
     genus: Streptospondylus
     parent: Megalosauria
+    dispute:
+      summary: |
+        Streptospondylus altdorfensis, stabilized as a valid theropod by the lectotype designation of Allain (2001), is a fragmentary taxon recovered as Megalosauria incertae sedis by Carrano et al. (2012) — unresolved between Megalosauridae and Spinosauridae, and possibly a basal member of either. Benson (2010) recovered it more basally, as Tetanurae incertae sedis.
+      history:
+        - date: 2026-07-01
+          note: Placed at Megalosauria, the least-inclusive uncontested node, following Carrano et al. (2012) (P2); its finer position is unresolved.
     pronunciation:
       phonetic: STREP-to-SPON-di-lus
     etymology: From Ancient Greek streptós, "twisted", combined with Greek spóndulos, "vertebra" - means "twisted vertebra"
@@ -139082,7 +139313,7 @@ genera:
     described: 1913
   Suchomimus:
     genus: Suchomimus
-    parent: Ceratosuchopsini
+    parent: Baryonychinae
     pronunciation:
       phonetic: SOOK-o-MIEM-us
     etymology: From Greek souchos ('crocodile') and Latin mimus ('mimic'), meaning 'crocodile mimic', alluding to its elongated skull and piscivorous adaptations
@@ -139175,14 +139406,20 @@ genera:
       - Averostra
       - Tetanurae
       - Megalosauroidea
+      - Megalosauria
       - Spinosauridae
       - Baryonychinae
-      - Ceratosuchopsini
     authors: Sereno, P. C.; Beck, A. L.; Dutheil, D. B.; Gado, B.; Larsson, H. C. E.; Lyon, G. H.; Marcot, J. D.; Rauhut, O. W. M.; Sadleir, R. W.; Sidor, C. A.; Varricchio, D. D.; Wilson, G. P.; Wilson, J. A.
     described: 1998
   Suchosaurus:
     genus: Suchosaurus
     parent: Baryonychinae
+    dispute:
+      summary: |
+        Suchosaurus cultridens and S. girardi are based on isolated teeth reidentified as spinosaurid; Carrano et al. (2012) refer the material to Baryonychinae but regard it as a nomen dubium, and Mateus et al. (2011) likewise treat both species as nomina dubia, with Suchosaurus a possible senior synonym of Baryonyx.
+      history:
+        - date: 2026-07-01
+          note: Placed at Baryonychinae following Carrano et al. (2012) (P2); retained as a nomen-dubium-grade, teeth-based taxon.
     pronunciation:
       phonetic: SOO-ko-SAWR-us
     etymology: From Greek 'souchos' (crocodile, after the Egyptian crocodile-god Sobek) and 'sauros' (lizard); meaning 'crocodile lizard'.
@@ -139275,6 +139512,7 @@ genera:
       - Averostra
       - Tetanurae
       - Megalosauroidea
+      - Megalosauria
       - Spinosauridae
       - Baryonychinae
     authors: Owen, R.
@@ -147544,6 +147782,7 @@ genera:
       - Averostra
       - Tetanurae
       - Megalosauroidea
+      - Megalosauria
       - Megalosauridae
       - Megalosaurinae
     authors: Galton, P. M.; Jensen, J. A.
@@ -152527,7 +152766,13 @@ genera:
     described: 1977
   Vallibonavenatrix:
     genus: Vallibonavenatrix
-    parent: Baryonychinae
+    parent: Spinosaurinae
+    dispute:
+      summary: |
+        Vallibonavenatrix cani was described as a spinosaurine (Malafaia et al., 2020) and recovered as a spinosaurine by Rauhut et al. (2025), but its position is unstable across other analyses, which variously place it as a baryonychine, a basal spinosaurid, or even a megalosaurid (Barker et al., 2021; Isasmendi et al., 2024).
+      history:
+        - date: 2026-07-01
+          note: Placed at Spinosaurinae following the describing paper and Rauhut et al. (2025) (P2/P3); its position is unstable across analyses.
     pronunciation:
       phonetic: va-yee-BO-nuh-ven-AY-triks
     etymology: Named after Vallibona, the town in Castellón, Spain near where its remains were found, combined with Latin venatrix meaning 'huntress'; translates as 'Vallibona huntress'
@@ -152609,8 +152854,9 @@ genera:
       - Averostra
       - Tetanurae
       - Megalosauroidea
+      - Megalosauria
       - Spinosauridae
-      - Baryonychinae
+      - Spinosaurinae
     authors: Malafaia, E.; Gasulla, J. M.; Escaso, F.; Narváez, I.; Sanz, J. L.; Ortega, F.
     described: 2020
   Variraptor:
@@ -155395,6 +155641,7 @@ genera:
       - Averostra
       - Tetanurae
       - Megalosauroidea
+      - Megalosauria
       - Megalosauridae
       - Megalosaurinae
     authors: Rauhut, O. M.; Hübner, T.; Lanser, K.
@@ -158019,6 +158266,12 @@ genera:
   Xuanhanosaurus:
     genus: Xuanhanosaurus
     parent: Piatnitzkysauridae
+    dispute:
+      summary: |
+        Xuanhanosaurus qilixiaensis is recovered as a basal piatnitzkysaurid by most analyses (Benson, 2010; Rauhut et al., 2016; Rauhut and Pol, 2019), but Carrano et al. (2012) and Zou et al. (2025) instead place it in Metriacanthosauridae among the allosauroids, a result followed by Jones (2026). Its high proportion of missing data leaves the placement weak.
+      history:
+        - date: 2026-07-01
+          note: Placed at Piatnitzkysauridae following the prevailing analyses (P2/P3); the metriacanthosaurid (allosauroid) alternative is unresolved and flagged for the theropod backbone reconciliation.
     pronunciation:
       phonetic: SHWEN-HAHN-o-SAWR-us
     etymology: Named for Xuanhan County in Sichuan, China, where the fossils were recovered, combined with Greek 'sauros' meaning 'lizard'.
