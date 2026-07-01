@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-07-01T05:52:44.063Z",
+    "built_at": "2026-07-01T17:21:17.044Z",
     "clade_count": 206,
     "genus_count": 1398,
     "license": "CC-BY-4.0",
@@ -8199,6 +8199,7 @@
       ]
     },
     "Therizinosauria": {
+      "description": "Therizinosauria is the clade of secondarily herbivorous maniraptoran theropods, formerly known as \"Segnosauria,\" ranging from the Early Cretaceous to the end of the Cretaceous of Asia and North America, with its most contentious basal members reaching back into the Early Jurassic. The clade spans a transition from small, lightly built early-diverging forms retaining grasping hands and functionally tridactyl feet to large-bodied later members with barrel-shaped guts, opisthopubic pelves, small leaf-toothed skulls bearing a rhamphotheca, and greatly enlarged manual unguals. Falcarius and Fukuivenator are among the earliest-diverging members, while Therizinosaurus and the therizinosaurids represent the derived extreme.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -8218,10 +8219,41 @@
         "Coelurosauria",
         "Maniraptoriformes",
         "Therizinosauria"
+      ],
+      "described": 1997,
+      "authors": "Russell, D. A.",
+      "diagnostic_features": [
+        "Distal reduction in dentary tooth size combined with a high tooth count set in interdental plates behind a downturned, buccally emarginated dentary",
+        "Small lanceolate crowns with coarse denticles and a constricted base",
+        "Enlarged, mediolaterally compressed manual unguals",
+        "Opisthopubic pelvis with a broadly everted preacetabular process of the ilium",
+        "Reduced, robust pes trending toward a functionally weight-bearing first digit"
+      ],
+      "references": [
+        {
+          "id": "russell1997",
+          "authors": "Russell, D. A.",
+          "year": 1997,
+          "title": "Therizinosauria",
+          "book": "Encyclopedia of Dinosaurs",
+          "publisher": "Academic Press",
+          "pages": "729-730"
+        },
+        {
+          "id": "zanno2010",
+          "authors": "Zanno, L. E.",
+          "year": 2010,
+          "title": "A taxonomic and phylogenetic re-evaluation of Therizinosauria (Dinosauria: Maniraptora)",
+          "journal": "Journal of Systematic Palaeontology",
+          "volume": "8",
+          "issue": "4",
+          "pages": "503-543",
+          "doi": "10.1080/14772019.2010.488045"
+        }
       ]
     },
     "Therizinosauridae": {
-      "description": "Therizinosauridae is a family of bizarre, large-bodied maniraptoran theropod dinosaurs known from the Cretaceous of Asia and North America. Despite their theropod ancestry, therizinosaurs were herbivorous, possessing a suite of unusual adaptations including enormously elongated manual claws (up to 1 meter in Therizinosaurus), a wide, barrel-shaped torso for housing an enlarged herbivorous gut, a small head with a keratinous beak and leaf-shaped teeth, and a broad, four-toed foot.\n",
+      "description": "Therizinosauridae is the family of large-bodied, derived therizinosaurs known from the Cretaceous of Asia and North America. Herbivorous despite their theropod ancestry, therizinosaurids possess a suite of unusual adaptations including enormously elongated manual unguals (up to a meter long in Therizinosaurus), a wide, barrel-shaped torso housing an enlarged gut, a small skull with an edentulous, keratin-sheathed premaxilla and leaf-shaped cheek teeth, an opisthopubic pelvis, and a broad, functionally tetradactyl foot. The family's boundary is drawn differently by different workers: a narrow node-based definition anchored on Nothronychus, Segnosaurus, Erlikosaurus and Therizinosaurus (Zanno, 2010) excludes several intermediate genera, whereas a broader stem-based definition anchored on Therizinosaurus but not Alxasaurus (Kobayashi et al., 2022, 2025) draws them in.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -8244,15 +8276,15 @@
         "Therizinosauroidea",
         "Therizinosauridae"
       ],
+      "type_genus": "Therizinosaurus",
       "described": 1954,
-      "authors": "Maleev",
+      "authors": "Maleev, E. A.",
       "diagnostic_features": [
-        "Enormously elongated manual unguals (claws), especially on digit I",
-        "Wide, barrel-shaped torso accommodating an enlarged gut",
-        "Small skull with edentulous premaxilla and leaf-shaped cheek teeth",
-        "Opisthopubic (posteriorly directed) pelvis",
-        "Broad, functionally tetradactyl (four-toed) pes",
-        "Dense, filamentous integumentary covering"
+        "Enormously elongated manual unguals, especially on digit I",
+        "Wide, barrel-shaped torso accommodating an enlarged herbivorous gut",
+        "Small skull with an edentulous premaxilla and leaf-shaped cheek teeth",
+        "Opisthopubic (posteriorly directed) pubis",
+        "Broad, functionally tetradactyl pes with a weight-bearing first digit"
       ],
       "references": [
         {
@@ -8264,10 +8296,22 @@
           "volume": "1954",
           "issue": "3",
           "pages": "106-108"
+        },
+        {
+          "id": "zanno2010",
+          "authors": "Zanno, L. E.",
+          "year": 2010,
+          "title": "A taxonomic and phylogenetic re-evaluation of Therizinosauria (Dinosauria: Maniraptora)",
+          "journal": "Journal of Systematic Palaeontology",
+          "volume": "8",
+          "issue": "4",
+          "pages": "503-543",
+          "doi": "10.1080/14772019.2010.488045"
         }
       ]
     },
     "Therizinosauroidea": {
+      "description": "Therizinosauroidea is the derived superfamily of Therizinosauria, conventionally defined as the least inclusive clade containing Beipiaosaurus inexpectus and Therizinosaurus cheloniformis and thus excluding the basal-most therizinosaurs such as Falcarius. It encompasses the intermediate-grade Asian genera that grade morphologically toward the derived family Therizinosauridae, combining a maniraptoran forelimb and incipient gut and pelvic specializations with a still relatively lightly built skeleton. Some authors (notably Senter) have instead used the name for the entire therizinosaurian total group, but the nested usage following Russell and Dong (1993) and Zanno (2010) is adopted here.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -8288,6 +8332,39 @@
         "Maniraptoriformes",
         "Therizinosauria",
         "Therizinosauroidea"
+      ],
+      "type_genus": "Therizinosaurus",
+      "described": 1993,
+      "authors": "Russell, D. A.; Dong, Z.-M.",
+      "diagnostic_features": [
+        "Loss of the plesiomorphic subcondylar recess retained in Falcarius",
+        "Coossification of the sacral neural spines into a supraneural plate",
+        "Deep, anteriorly hooked cervical epipophyses",
+        "Femoral head confluent with the neck without an evident transition",
+        "Progressively enlarged, transversely broadened preacetabular ala of the ilium"
+      ],
+      "references": [
+        {
+          "id": "russell1993b",
+          "authors": "Russell, D. A.; Dong, Z.-M.",
+          "year": 1993,
+          "title": "The affinities of a new theropod from the Alxa Desert, Inner Mongolia, People's Republic of China",
+          "journal": "Canadian Journal of Earth Sciences",
+          "volume": "30",
+          "issue": "10",
+          "pages": "2107-2127"
+        },
+        {
+          "id": "zanno2010",
+          "authors": "Zanno, L. E.",
+          "year": 2010,
+          "title": "A taxonomic and phylogenetic re-evaluation of Therizinosauria (Dinosauria: Maniraptora)",
+          "journal": "Journal of Systematic Palaeontology",
+          "volume": "8",
+          "issue": "4",
+          "pages": "503-543",
+          "doi": "10.1080/14772019.2010.488045"
+        }
       ]
     },
     "Theropoda": {
@@ -69276,12 +69353,21 @@
     },
     "Enigmosaurus": {
       "genus": "Enigmosaurus",
-      "parent": "Therizinosauridae",
+      "parent": "Therizinosauroidea",
       "pronunciation": {
         "phonetic": "ee-NIG-mo-SAWR-us"
       },
       "etymology": "From Greek enigma (riddle/enigma) + sauros (lizard): 'enigma lizard' or 'enigmatic lizard', reflecting uncertainty about its affinities at the time of description.",
       "description": "Enigmosaurus is a genus of therizinosauroid that lived in Asia during the Late Cretaceous period. It was a medium-sized, ground-dwelling, bipedal herbivore that represents the third therizinosaur taxon from the Bayan Shireh Formation, although it is known from the lower part. The genus is monotypic, including only the type species E. mongoliensis, known from a well-preserved pelvis and other tentative body remains.",
+      "dispute": {
+        "summary": "Enigmosaurus is an intermediate-grade therizinosaur whose family-level assignment depends on how Therizinosauridae is defined. Zanno (2010) recovers it outside Therizinosauridae, as a successive outgroup to that family, a result followed by the Princeton Encyclopedia (Jones, 2026). Under the broader Therizinosaurus-anchored definition of Kobayashi et al. (2022, 2025) it is drawn into Therizinosauridae, recovered near the derived genera Erlikosaurus and Segnosaurus. It is placed conservatively in Therizinosauroidea. A proposed synonymy with Erlikosaurus has been rejected.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Therizinosauroidea (outside Therizinosauridae) following Zanno (2010) and Jones (2026); Kobayashi et al. (2022, 2025) include it in a more broadly defined Therizinosauridae.\n"
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -69398,8 +69484,7 @@
         "Coelurosauria",
         "Maniraptoriformes",
         "Therizinosauria",
-        "Therizinosauroidea",
-        "Therizinosauridae"
+        "Therizinosauroidea"
       ],
       "authors": "Barsbold, R.",
       "described": 1983
@@ -72228,12 +72313,21 @@
     },
     "Erliansaurus": {
       "genus": "Erliansaurus",
-      "parent": "Therizinosauridae",
+      "parent": "Therizinosauroidea",
       "etymology": "From Erlian (the town of Erlian/Erenhot in Inner Mongolia, China, near the discovery site) + Greek sauros (lizard): 'Erlian lizard'.",
       "pronunciation": {
         "phonetic": "ur-lee-yen-sor-us"
       },
       "description": "Erliansaurus is a genus of therizinosaurian theropod dinosaur that lived in Asia during the Campanian stage of the Late Cretaceous period in what is now Nei Mongol, Iren Dabasu Formation.",
+      "dispute": {
+        "summary": "Erliansaurus is an intermediate-grade therizinosaur whose family-level assignment depends on how Therizinosauridae is defined. Under the narrow node-based definition of Zanno (2010) it lies outside Therizinosauridae as an intermediate therizinosauroid, a result followed by Hartman et al. (2019) and the Princeton Encyclopedia (Jones, 2026). Under the broader Therizinosaurus-anchored definition of Kobayashi et al. (2022, 2025) it is drawn into Therizinosauridae, recovered with Neimongosaurus as the family's most basal clade. It is placed conservatively in Therizinosauroidea.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Therizinosauroidea (outside Therizinosauridae) following Zanno (2010), Hartman et al. (2019) and Jones (2026); Kobayashi et al. (2022, 2025) include it in a more broadly defined Therizinosauridae.\n"
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -72365,15 +72459,14 @@
         "Coelurosauria",
         "Maniraptoriformes",
         "Therizinosauria",
-        "Therizinosauroidea",
-        "Therizinosauridae"
+        "Therizinosauroidea"
       ],
       "authors": "Xu, X.; Zhang, Z.-H.; Sereno, P. C.; Zhao, X.-J.; Kuang, X.-W.; Han, J.; Tan, L.",
       "described": 2002
     },
     "Erlikosaurus": {
       "genus": "Erlikosaurus",
-      "parent": "Therizinosauria",
+      "parent": "Therizinosauridae",
       "pronunciation": {
         "phonetic": "ER-lik-o-SAWR-us"
       },
@@ -72538,7 +72631,9 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptoriformes",
-        "Therizinosauria"
+        "Therizinosauria",
+        "Therizinosauroidea",
+        "Therizinosauridae"
       ],
       "authors": "Barsbold, R.; Perle, A.",
       "described": 1980
@@ -72672,12 +72767,21 @@
     },
     "Eshanosaurus": {
       "genus": "Eshanosaurus",
-      "parent": "Therizinosauridae",
+      "parent": "Therizinosauria",
       "pronunciation": {
         "phonetic": "uh-SHAH-no-SAWR-us"
       },
       "etymology": "Named for Eshan County in Yunnan Province, China, where the fossil was found, combined with Greek 'sauros' meaning 'lizard'.",
       "description": "Eshanosaurus is a genus of a dinosaur from the early Jurassic Period. It is known only from a fossil partial lower jawbone, found in China. It may be a therizinosaurian, and if so the earliest known coelurosaur.",
+      "dispute": {
+        "summary": "Both the affinities and the age of Eshanosaurus are contested. The original description (Xu et al., 2001) and a dedicated reassessment (Barrett, 2009) interpret its partial dentary as therizinosaurian, which, given the Early Jurassic age reported for the type locality, would make it the oldest known coelurosaur and imply an extensive ghost lineage. Others read the same material as a basal sauropodomorph (Kirkland and Wolfe, 2001) or note that many of the cited characters also occur in sauropodomorphs, and both Zanno (2010) and Sues and Averianov (2016) treat its therizinosaurian identity as problematic. It has never been included in a numerical phylogenetic analysis.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Therizinosauria following the therizinosaurian affinity defended by Xu et al. (2001) and Barrett (2009); its position within the clade is untested and its identity and Early Jurassic age remain disputed.\n"
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -72804,9 +72908,7 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptoriformes",
-        "Therizinosauria",
-        "Therizinosauroidea",
-        "Therizinosauridae"
+        "Therizinosauria"
       ],
       "authors": "Xu, X.; Zhao, X.; Clark, J. M.",
       "described": 2001
@@ -76632,6 +76734,15 @@
         "phonetic": "foo-KOO-ee-VEN-uh-tuh"
       },
       "description": "Fukuivenator is an extinct genus of maniraptoran theropod dinosaur from the Early Cretaceous Kitadani Formation of Japan.",
+      "dispute": {
+        "summary": "The affinities of Fukuivenator are disputed. Its original description (Azuma et al., 2016) recovered it as a basal maniraptoran of uncertain position that could not be referred to any known coelurosaurian subgroup, and Hartman et al. (2019) placed it near the base of Maniraptora. A CT-based osteological restudy by the same group (Hattori et al., 2021) instead recovered it as the basalmost member of Therizinosauria, citing therizinosaurian synapomorphies such as a subotic recess, eleven or more cervical vertebrae, and anterior humeral condyles, though the authors caution that support for this position is weak. The Princeton Encyclopedia (Jones, 2026) adopts the basalmost therizinosaur placement.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Therizinosauria as its basalmost member following Hattori et al. (2021) and Jones (2026), which supersede the incertae sedis interpretation of Azuma et al. (2016); the placement is weakly supported.\n"
+          }
+        ]
+      },
       "diet": "carnivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -99824,6 +99935,15 @@
         "phonetic": "JEE-EN-CHAN-go-SOR-us"
       },
       "description": "Jianchangosaurus is a genus of therizinosaurian dinosaur that lived approximately 126 million years ago during the early part of the Cretaceous Period from the Yixian Formation in what is now China. The type specimen, a juvenile, was discovered in Jianchang County, in the western part of Liaoning Province. It was described in 2013 by a team of paleontologists from the Henan Museum, who determined that it was among the most basal therizinosaurs.",
+      "dispute": {
+        "summary": "Jianchangosaurus is consistently recovered as one of the most basal therizinosaurs (Pu et al., 2013; Hartman et al., 2019), and that placement is not in question. Its validity, however, is contested: Cau (2024) argued that the genus is a junior synonym of Beipiaosaurus, treating its holotype as an immature individual, but this synonymy rests on a single analysis and has not been adopted by subsequent workers or reference works (e.g. Jones, 2026), which continue to treat Jianchangosaurus as a valid, distinct genus.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Retained as a valid basal therizinosaurian within Therizinosauria; the synonymy with Beipiaosaurus proposed by Cau (2024) is noted but not adopted pending broader corroboration.\n"
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -113897,6 +114017,15 @@
       },
       "etymology": "Named for the county-level city of Lingyuan in Liaoning Province, China, where it was discovered, combined with Ancient Greek 'sauros' meaning 'lizard'; the specific name sihedangensis also references the discovery locality, the town of Sihedang.",
       "description": "Lingyuanosaurus is a genus of therizinosaurian theropod from the Early Cretaceous of Liaoning Province, China. The type and only species is L. sihedangensis. It was uncovered within one of the formations that make up the Jehol biota, although the exact geological formation - and therefore also its precise geological age - is unknown.",
+      "dispute": {
+        "summary": "Lingyuanosaurus is a transitional therizinosaur whose precise position is weakly resolved. Its describers (Yao et al., 2019) recovered it within Therizinosauroidea, in an intermediate position between early-diverging genera such as Beipiaosaurus and later therizinosaurs, but support was low (a Bremer support of 1) and only a small fraction of the character matrix could be scored for the taxon. The Princeton Encyclopedia (Jones, 2026) instead treats it as a basal member of Therizinosauria, most closely related to Jianchangosaurus and Beipiaosaurus. It is placed conservatively at Therizinosauria.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Therizinosauria; Yao et al. (2019) recover it within Therizinosauroidea, but the position is weakly supported and Jones (2026) treats it as a basal therizinosaurian.\n"
+          }
+        ]
+      },
       "diet": "carnivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -122009,12 +122138,21 @@
     },
     "Martharaptor": {
       "genus": "Martharaptor",
-      "parent": "Therizinosauroidea",
+      "parent": "Therizinosauria",
       "etymology": "Named in honor of Martha C. Hayden, the paleontologist assistant who helped discover the Hayden-Corbett site in the Cedar Mountain Formation of Utah where the specimen was found, combined with Latin 'raptor' meaning 'thief'.",
       "pronunciation": {
         "phonetic": "mar-thuh-RAP-tuhr"
       },
-      "description": "Martharaptor is a genus of therizinosauroid theropod dinosaurs from the Early Cretaceous of the Cedar Mountain Formation in Utah. They can be distinguished from other therizinosauroids by means of several features of the skeleton (particularly the hands and feet) which were intermediate between early therizinosaurs such as Falcarius and Beipiaosaurus, and more \"advanced\" members of the group like therizinosaurids. The deep and homogeneous hand claws clearly differ from the case in early therizinosauroids, but the foot has not yet acquired the robust morphology of therizinosaurids.",
+      "description": "Martharaptor is a genus of therizinosaur from the Early Cretaceous of the Cedar Mountain Formation in Utah. They can be distinguished from other therizinosaurs by means of several features of the skeleton (particularly the hands and feet) which were intermediate between early therizinosaurs such as Falcarius and Beipiaosaurus, and more \"advanced\" members of the group like therizinosaurids. The deep and homogeneous hand claws clearly differ from the case in early therizinosauroids, but the foot has not yet acquired the robust morphology of therizinosaurids.",
+      "dispute": {
+        "summary": "Martharaptor is a poorly known basal therizinosaur whose precise position is unresolved. Its describers (Senter et al., 2012) recovered it near the base of Therizinosauroidea, but with weak support, and Hartman et al. (2019) found it to occupy several equally parsimonious positions as a therizinosaur less derived than Alxasaurus. It is therefore placed conservatively within Therizinosauria rather than at a finer node.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Therizinosauria; Senter et al. (2012) and the Princeton Encyclopedia place it near the base of Therizinosauroidea, but the position is labile (Hartman et al., 2019).\n"
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -122138,8 +122276,7 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptoriformes",
-        "Therizinosauria",
-        "Therizinosauroidea"
+        "Therizinosauria"
       ],
       "authors": "Senter, P.; Kirkland, J. I.; DeBlieux, D. D.",
       "described": 2012
@@ -133003,12 +133140,21 @@
     },
     "Neimongosaurus": {
       "genus": "Neimongosaurus",
-      "parent": "Therizinosauridae",
+      "parent": "Therizinosauroidea",
       "etymology": "Named after Nei Mongol (Inner Mongolia), the Chinese autonomous region where it was found, combined with Greek 'sauros' (lizard); meaning 'Nei Mongol lizard'.",
       "pronunciation": {
         "phonetic": "nay-MOHN-go-SOR-us"
       },
       "description": "Neimongosaurus is a genus of herbivorous therizinosaurian theropod dinosaur that lived in China during the Late Cretaceous period. Its fossils are known from the strata of the Iren Dabasu Formation. It is known from two specimens, discovered in 1999 by researchers from the Ministry of Land and Resources and described two years later. One species, N. yangi, is known, named after Chinese paleontologist Yang Zhongjian.",
+      "dispute": {
+        "summary": "Neimongosaurus is an intermediate-grade therizinosaur whose family-level assignment depends on how Therizinosauridae is defined. Under the narrow node-based definition of Zanno (2010) it lies outside Therizinosauridae as an intermediate therizinosauroid, a result followed by Hartman et al. (2019) and the Princeton Encyclopedia (Jones, 2026). Under the broader Therizinosaurus-anchored definition of Kobayashi et al. (2022, 2025) it is drawn into Therizinosauridae, recovered with Erliansaurus as the family's most basal clade. It is placed conservatively in Therizinosauroidea.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Therizinosauroidea (outside Therizinosauridae) following Zanno (2010), Hartman et al. (2019) and Jones (2026); Kobayashi et al. (2022, 2025) include it in a more broadly defined Therizinosauridae.\n"
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -133138,8 +133284,7 @@
         "Coelurosauria",
         "Maniraptoriformes",
         "Therizinosauria",
-        "Therizinosauroidea",
-        "Therizinosauridae"
+        "Therizinosauroidea"
       ],
       "authors": "Zhang, X.-H.; Xu, X.; Zhao, X.-J.; Sereno, P. C.; Kuang, X.-W.; Tan, L.",
       "described": 2001
@@ -180331,12 +180476,21 @@
     },
     "Suzhousaurus": {
       "genus": "Suzhousaurus",
-      "parent": "Therizinosauridae",
+      "parent": "Therizinosauroidea",
       "pronunciation": {
         "phonetic": "soo-JOH-SAWR-us"
       },
       "etymology": "Named after Suzhou (a region in Gansu Province, China) where the fossils were found, combined with Greek sauros, \"lizard\" - means \"Suzhou lizard\"",
-      "description": "Suzhousaurus is an extinct genus of large therizinosaurid dinosaurs from the Early Cretaceous of China. The genus is known from two specimens discovered in the Xiagou and Zhonggou Formations, both part of the Xinminbao Group. These findings were made during fieldwork in 1999 and 2004.",
+      "description": "Suzhousaurus is an extinct genus of large therizinosaurs from the Early Cretaceous of China. The genus is known from two specimens discovered in the Xiagou and Zhonggou Formations, both part of the Xinminbao Group. These findings were made during fieldwork in 1999 and 2004.",
+      "dispute": {
+        "summary": "Suzhousaurus is a large, latest-diverging intermediate therizinosaur whose family-level assignment depends on how Therizinosauridae is defined. Zanno (2010) recovers it just outside Therizinosauridae as the most derived therizinosauroid, a result followed by the Princeton Encyclopedia (Jones, 2026); under the broader Therizinosaurus-anchored definition of Kobayashi et al. (2022, 2025) it is drawn into Therizinosauridae, within a derived subclade alongside Therizinosaurus and Paralitherizinosaurus. It is placed conservatively in Therizinosauroidea.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Therizinosauroidea (outside Therizinosauridae) following Zanno (2010) and Jones (2026), who treat it as the most derived therizinosauroid; Kobayashi et al. (2022, 2025) include it in a more broadly defined Therizinosauridae.\n"
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -180469,8 +180623,7 @@
         "Coelurosauria",
         "Maniraptoriformes",
         "Therizinosauria",
-        "Therizinosauroidea",
-        "Therizinosauridae"
+        "Therizinosauroidea"
       ],
       "authors": "Li, D.; Peng, C.; You, H.; Lamanna, M. C.; Harris, J. D.; Lacovara, K. J.; Zhang, J.",
       "described": 2007
