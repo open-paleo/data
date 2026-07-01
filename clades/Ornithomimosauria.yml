@@ -1,28 +1,52 @@
 clade: Ornithomimosauria
 description: >
-  Ornithomimosauria, meaning "bird-mimic lizards," is a clade of coelurosaurian
-  theropod dinosaurs known from the Cretaceous of North America, Asia, Europe,
-  and Africa. Often called "ostrich dinosaurs," ornithomimosaurs were
-  characterized by long legs adapted for swift running, elongate necks, small
-  skulls with toothless beaks (in derived forms), and large eyes. They were
-  likely omnivorous or herbivorous, representing a significant ecological
-  departure from the ancestral carnivorous theropod condition.
-described: 1972
-authors: Russell
-
+  Ornithomimosauria, the "ostrich dinosaurs," is a clade of maniraptoriform
+  coelurosaurian theropods known from the Cretaceous of Asia, North America,
+  Europe, and Africa. Basal members retained teeth, while the two derived
+  families (Deinocheiridae and Ornithomimidae) developed edentulous, keratinous
+  beaks. Ornithomimosaurs were lightly built, long-necked, and long-legged, and
+  are widely inferred to have been herbivorous or omnivorous, a marked departure
+  from the ancestral carnivorous theropod condition.
+type_genus: Ornithomimus
+erected_in: barsbold1976b
 diagnostic_features:
-  - Toothless, keratinous beak in derived members
-  - Elongate cervical vertebrae forming a long, S-curved neck
-  - Large orbits with well-developed sclerotic rings
-  - Long, gracile hindlimbs adapted for cursorial locomotion
-  - Arctometatarsalian foot in derived forms
-  - Elongate manus with subequal metacarpals
-
+  - Elongate cervical vertebrae forming a long, gracile neck
+  - Reduced or absent dentition, with a keratinous beak in derived members
+  - Small, lightly built skull with large orbits
+  - Long, slender, cursorial hindlimbs
+  - Manus with subequal, elongate metacarpals and weakly curved unguals
+dispute:
+  summary: >
+    The higher placement of Ornithomimosauria within Coelurosauria is unsettled.
+    The clade is retained here within Arctometatarsalia, following the
+    arctometatarsalian-foot hypothesis (Holtz, 1996), but most recent analyses
+    instead recover Ornithomimosauria as an early-diverging lineage of
+    Maniraptoriformes and do not support a monophyletic Arctometatarsalia. The
+    node is retained conservatively at its current position.
+  history:
+    - date: "2026-06-30"
+      note: >
+        Subtree rebuilt and member genera re-placed. The clade is kept under
+        Arctometatarsalia, with the competing basal-maniraptoriform hypothesis
+        recorded as the unresolved alternative.
 references:
-  - id: russell1972
-    authors: Russell, D.A.
-    year: 1972
-    title: "Ostrich dinosaurs from the Late Cretaceous of western Canada"
-    journal: "Canadian Journal of Earth Sciences"
-    volume: "9"
-    pages: "375-402"
+  - id: barsbold1976b
+    authors: Barsbold, R.
+    year: 1976
+    title: On the evolution and systematics of the late Mesozoic dinosaurs
+    journal: Transactions of the Joint Soviet-Mongolian Paleontological Expedition
+    volume: "3"
+    pages: 68-75
+    notes: Erected the clade Ornithomimosauria.
+  - id: lee2014
+    authors: Lee, Y.-N.; Barsbold, R.; Currie, P. J.; Kobayashi, Y.; Lee,
+      H.-J.; Godefroit, P.; Escuillié, F. O.; Chinzorig, T.
+    year: 2014
+    title: "Resolving the long-standing enigmas of a giant ornithomimosaur
+      Deinocheirus mirificus"
+    journal: Nature
+    volume: "515"
+    issue: "7526"
+    pages: 257-260
+    notes: Redescription of Deinocheirus establishing the division of
+      Ornithomimosauria into Deinocheiridae and Ornithomimidae.

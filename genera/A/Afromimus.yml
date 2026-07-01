@@ -1,5 +1,21 @@
 genus: Afromimus
-parent: Ornithomimosauria
+parent: Ceratosauria
+dispute:
+  summary: >
+    Originally described as a basal ornithomimosaur (Sereno, 2017), but subsequent
+    analyses reject that placement and recover Afromimus among ceratosaurs.
+    Cerroni et al. (2019) place it within Abelisauroidea, and possibly
+    Noasauridae, reinterpreting its proposed ornithomimosaur characters as
+    ceratosaurian; Hendrickx et al. (2024) recover it in Berthasauridae, the
+    sister group of Abelisauroidea. Its fragmentary material precludes confident
+    assignment to any abelisauroid subclade, so it is placed conservatively at
+    Ceratosauria.
+  history:
+    - date: "2026-06-30"
+      note: >
+        Moved from Ornithomimosauria to Ceratosauria following Cerroni et al.
+        (2019) and Hendrickx et al. (2024), which reject ornithomimosaur affinity;
+        the precise position within Ceratosauria remains unresolved.
 etymology: From 'Africa' combined with Greek 'mimos' meaning 'mimic'; meaning
   'Africa mimic'
 pronunciation:
@@ -91,3 +107,27 @@ references:
     publisher: Princeton University Press
     isbn: 978-0-691-25021-2
     notes: Source of the mass and hip height estimates.
+  - id: cerroni2019
+    authors: Cerroni, M. A.; Agnolín, F. L.; Brissón Egli, F.; Novas, F. E.
+    year: 2019
+    title: "The phylogenetic position of Afromimus tenerensis Sereno, 2017 and its
+      paleobiogeographical implications"
+    journal: Journal of African Earth Sciences
+    volume: "159"
+    pages: "103572"
+    doi: 10.1016/j.jafrearsci.2019.103572
+    notes: Phylogenetic reassessment recovering Afromimus within Abelisauroidea,
+      and possibly Noasauridae, rejecting ornithomimosaur affinity.
+  - id: hendrickx2024
+    authors: Hendrickx, C.; Cerroni, M. A.; Agnolín, F. L.; Catalano, S.; Ribeiro,
+      C. F.; Delcourt, R.
+    year: 2024
+    title: "Osteology, relationship, and feeding ecology of the theropod dinosaur
+      Noasaurus leali, from the Late Cretaceous of North-Western Argentina"
+    journal: Zoological Journal of the Linnean Society
+    volume: "202"
+    issue: "4"
+    pages: zlae150
+    doi: 10.1093/zoolinnean/zlae150
+    notes: Erects Berthasauridae and recovers Afromimus within it, as the sister
+      group of Abelisauroidea.
