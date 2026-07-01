@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-07-01T17:21:17.044Z",
+    "built_at": "2026-07-01T18:24:58.644Z",
     "clade_count": 206,
     "genus_count": 1398,
     "license": "CC-BY-4.0",
@@ -118,13 +118,13 @@
                                         }
                                       },
                                       "Oviraptorosauria": {
-                                        "Oviraptoridae": {
-                                          "Citipatinae": {},
-                                          "Heyuanninae": {}
-                                        },
                                         "Caudipterygidae": {},
-                                        "Caenagnathidae": {
-                                          "Caenagnathinae": {}
+                                        "Caenagnathoidea": {
+                                          "Oviraptoridae": {
+                                            "Citipatiinae": {},
+                                            "Heyuanninae": {}
+                                          },
+                                          "Caenagnathidae": {}
                                         }
                                       },
                                       "Avialae": {
@@ -1348,6 +1348,7 @@
       ]
     },
     "Caenagnathidae": {
+      "description": "Caenagnathidae is a family of toothless oviraptorosaurs known from the Cretaceous of Asia and North America, ranging from the tiny Caenagnathasia to the gigantic Gigantoraptor. They are distinguished by slender, elongate hind limbs, lightly built forelimbs, and a deep, edentulous lower jaw with a fused symphysis bearing complex lingual occlusal ridges. Internal relationships are weakly resolved, with Microvenator, Gigantoraptor and Anomalipes forming a basal grade and the remaining, mostly Laramidian genera forming a poorly supported crown; no stable subfamily-level division is currently recognized.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -1367,10 +1368,43 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
+        "Caenagnathoidea",
         "Caenagnathidae"
+      ],
+      "type_genus": "Caenagnathus",
+      "described": 1940,
+      "authors": "Sternberg, R. M.",
+      "diagnostic_features": [
+        "Fully fused, edentulous mandibular symphysis with paired lingual ridges",
+        "Deep dentary bearing a prominent lateral fossa and pneumatic foramen",
+        "Elongate, gracile, cursorial hindlimb with a fused tarsometatarsus in some genera",
+        "Preacetabular process of the ilium expanded ventrally"
+      ],
+      "references": [
+        {
+          "id": "sternberg1940a",
+          "authors": "Sternberg, R. M.",
+          "year": 1940,
+          "title": "A toothless bird from the Cretaceous of Alberta",
+          "journal": "Journal of Paleontology",
+          "volume": "14",
+          "issue": "1",
+          "pages": "81-85"
+        },
+        {
+          "id": "funston2020b",
+          "authors": "Funston, G.",
+          "year": 2020,
+          "title": "Caenagnathids of the Dinosaur Park Formation (Campanian) of Alberta, Canada: anatomy, osteohistology, taxonomy, and evolution",
+          "journal": "Vertebrate Anatomy Morphology Palaeontology",
+          "volume": "8",
+          "pages": "105-153",
+          "doi": "10.18435/vamp29362"
+        }
       ]
     },
-    "Caenagnathinae": {
+    "Caenagnathoidea": {
+      "description": "Caenagnathoidea is the derived clade of oviraptorosaurs comprising the two families Oviraptoridae and Caenagnathidae and their most recent common ancestor. Its members share a deep, edentulous skull with an extensive keratinous beak, a shortened tail, and the most specialized cranial and mandibular morphologies within Oviraptorosauria. The superfamily is consistently recovered and widely used, uniting the crested Asian oviraptorids with the toothless, often long-legged caenagnathids of Asia and North America.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -1390,8 +1424,39 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
-        "Caenagnathidae",
-        "Caenagnathinae"
+        "Caenagnathoidea"
+      ],
+      "type_genus": "Caenagnathus",
+      "described": 1940,
+      "authors": "Sternberg, R. M.",
+      "diagnostic_features": [
+        "Fully edentulous jaws sheathed in a keratinous rhamphotheca",
+        "Deep, foreshortened skull with a secondarily pneumatized palate",
+        "Dentary with an elongate symphysis bearing lingual occlusal ridges",
+        "Mandibular articular facet for the quadrate formed almost entirely by the articular"
+      ],
+      "references": [
+        {
+          "id": "sternberg1940a",
+          "authors": "Sternberg, R. M.",
+          "year": 1940,
+          "title": "A toothless bird from the Cretaceous of Alberta",
+          "journal": "Journal of Paleontology",
+          "volume": "14",
+          "issue": "1",
+          "pages": "81-85"
+        },
+        {
+          "id": "lamanna2014",
+          "authors": "Lamanna, M. C.; Sues, H.-D.; Schachner, E. R.; Lyson, T. R.",
+          "year": 2014,
+          "title": "A new large-bodied oviraptorosaurian theropod dinosaur from the latest Cretaceous of western North America",
+          "journal": "PLoS ONE",
+          "volume": "9",
+          "issue": "3",
+          "pages": "e92022",
+          "doi": "10.1371/journal.pone.0092022"
+        }
       ]
     },
     "Camarasauridae": {
@@ -1575,6 +1640,7 @@
       ]
     },
     "Caudipterygidae": {
+      "description": "Caudipterygidae is a family of small, early-diverging oviraptorosaurs from the Early Cretaceous of China, encompassing Caudipteryx and its close relatives. They retain long legs, a comparatively long snout with small anterior teeth, and short forelimbs bearing large pennaceous feathers, and are among the most basal oviraptorosaurs. The family is recovered as a clade in several dedicated analyses, though some workers instead treat its members as a paraphyletic basal grade.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -1595,6 +1661,38 @@
         "Maniraptora",
         "Oviraptorosauria",
         "Caudipterygidae"
+      ],
+      "type_genus": "Caudipteryx",
+      "described": 2000,
+      "authors": "Zhou, Z.; Wang, X.; Zhang, F.; Xu, X.",
+      "diagnostic_features": [
+        "Small anterior premaxillary and maxillary teeth, absent posteriorly",
+        "Elongate hindlimb with a cursorial, gracile build",
+        "Short forelimb bearing remiges and a rectricial fan of pennaceous feathers",
+        "Gastrolith clusters preserved in the abdominal region"
+      ],
+      "references": [
+        {
+          "id": "zhou2000",
+          "authors": "Zhou, Z.; Wang, X.; Zhang, F.; Xu, X.",
+          "year": 2000,
+          "title": "Important features of Caudipteryx - Evidence from two nearly complete new specimens",
+          "journal": "Vertebrata PalAsiatica",
+          "volume": "38",
+          "issue": "4",
+          "pages": "241-254"
+        },
+        {
+          "id": "lamanna2014",
+          "authors": "Lamanna, M. C.; Sues, H.-D.; Schachner, E. R.; Lyson, T. R.",
+          "year": 2014,
+          "title": "A new large-bodied oviraptorosaurian theropod dinosaur from the latest Cretaceous of western North America",
+          "journal": "PLoS ONE",
+          "volume": "9",
+          "issue": "3",
+          "pages": "e92022",
+          "doi": "10.1371/journal.pone.0092022"
+        }
       ]
     },
     "Centrosaurinae": {
@@ -2140,7 +2238,8 @@
         }
       ]
     },
-    "Citipatinae": {
+    "Citipatiinae": {
+      "description": "Citipatiinae is the subfamily of crested oviraptorids that originated in southern China and includes Citipati and its close relatives. The name was erected by Funston et al. (2020) for the crested clade formerly assigned to Oviraptorinae, after their analysis recovered the type genus Oviraptor in a more basal position outside the group. Its members typically bear tall, well-developed cranial crests and retain relatively long, fully functional three-fingered hands.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -2160,8 +2259,30 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
+        "Caenagnathoidea",
         "Oviraptoridae",
-        "Citipatinae"
+        "Citipatiinae"
+      ],
+      "type_genus": "Citipati",
+      "described": 2020,
+      "authors": "Funston, G. F.; Chinzorig, T.; Tsogtbaatar, K.; Kobayashi, Y.; Sullivan, C.; Currie, P. J.",
+      "diagnostic_features": [
+        "Tall, well-developed bony cranial crest",
+        "Relatively long manus retaining three functional digits",
+        "Nasal region incorporated into a raised, pneumatic crest"
+      ],
+      "references": [
+        {
+          "id": "funston2020a",
+          "authors": "Funston, G. F.; Chinzorig, T.; Tsogtbaatar, K.; Kobayashi, Y.; Sullivan, C.; Currie, P. J.",
+          "year": 2020,
+          "title": "A new two-fingered dinosaur sheds light on the radiation of Oviraptorosauria",
+          "journal": "Royal Society Open Science",
+          "volume": "7",
+          "issue": "10",
+          "pages": "201184",
+          "doi": "10.1098/rsos.201184"
+        }
       ]
     },
     "Coelophysidae": {
@@ -4267,6 +4388,7 @@
       ]
     },
     "Heyuanninae": {
+      "description": "Heyuanninae is the subfamily of small, generally crestless oviraptorids that radiated across the Gobi Desert and southern China in the Late Cretaceous. Its members are marked by a progressive reduction of the hand, culminating in the two-fingered Oksoko, and include Heyuannia, Conchoraptor, Khaan and their relatives. The name replaces the older Ingeniinae, which was based on the genus \"Ingenia\" (a junior homonym now referred to Heyuannia).\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -4286,8 +4408,40 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
+        "Caenagnathoidea",
         "Oviraptoridae",
         "Heyuanninae"
+      ],
+      "type_genus": "Heyuannia",
+      "described": 1981,
+      "authors": "Barsbold, R.",
+      "diagnostic_features": [
+        "Small body size with a low, usually uncrested or weakly crested skull",
+        "Progressive reduction and shortening of the manus, digit III reduced or lost",
+        "Enlarged, robust first manual digit",
+        "Synsacrum of seven to eight vertebrae"
+      ],
+      "references": [
+        {
+          "id": "barsbold1981",
+          "authors": "Barsbold, R.",
+          "year": 1981,
+          "title": "Bezzubyye khishchnyye dinozavry Mongolii [Toothless carnivorous dinosaurs of Mongolia]",
+          "journal": "Sovmestnaia Sovetsko-Mongol'skaia Paleontologicheskaia Ekspeditsiia Trudy",
+          "volume": "15",
+          "pages": "28-39"
+        },
+        {
+          "id": "funston2020a",
+          "authors": "Funston, G. F.; Chinzorig, T.; Tsogtbaatar, K.; Kobayashi, Y.; Sullivan, C.; Currie, P. J.",
+          "year": 2020,
+          "title": "A new two-fingered dinosaur sheds light on the radiation of Oviraptorosauria",
+          "journal": "Royal Society Open Science",
+          "volume": "7",
+          "issue": "10",
+          "pages": "201184",
+          "doi": "10.1098/rsos.201184"
+        }
       ]
     },
     "Hypsilophodontidae": {
@@ -6299,6 +6453,7 @@
       ]
     },
     "Oviraptoridae": {
+      "description": "Oviraptoridae is a family of derived, short-skulled oviraptorosaurs known almost entirely from the Late Cretaceous of central and eastern Asia. They are distinguished by deep, box-like, often prominently crested skulls, a robust edentulous beak, and relatively short necks and tails. The family divides into two subfamilies, the crested Citipatiinae and the short-armed Heyuanninae, with several basal genera (including the type genus Oviraptor) falling outside both.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -6318,10 +6473,43 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
+        "Caenagnathoidea",
         "Oviraptoridae"
+      ],
+      "type_genus": "Oviraptor",
+      "described": 1976,
+      "authors": "Barsbold, R.",
+      "diagnostic_features": [
+        "Deep, foreshortened, box-like skull, frequently bearing a tall bony crest",
+        "Robust, edentulous, downturned beak with a shortened snout",
+        "Pair of tooth-like premaxillary processes projecting into the palate",
+        "Shortened neck and tail relative to basal oviraptorosaurs"
+      ],
+      "references": [
+        {
+          "id": "barsbold1976b",
+          "authors": "Barsbold, R.",
+          "year": 1976,
+          "title": "On the evolution and systematics of the late Mesozoic dinosaurs",
+          "journal": "Transactions of the Joint Soviet-Mongolian Paleontological Expedition",
+          "volume": "3",
+          "pages": "68-75"
+        },
+        {
+          "id": "funston2020a",
+          "authors": "Funston, G. F.; Chinzorig, T.; Tsogtbaatar, K.; Kobayashi, Y.; Sullivan, C.; Currie, P. J.",
+          "year": 2020,
+          "title": "A new two-fingered dinosaur sheds light on the radiation of Oviraptorosauria",
+          "journal": "Royal Society Open Science",
+          "volume": "7",
+          "issue": "10",
+          "pages": "201184",
+          "doi": "10.1098/rsos.201184"
+        }
       ]
     },
     "Oviraptorosauria": {
+      "description": "Oviraptorosauria is a clade of feathered maniraptoran theropods from the Cretaceous of Asia and North America, most closely related to Paraves within Pennaraptora. They are characterized by short, deep skulls trending toward edentulism and a keratinous beak, and range from small, long-snouted early-diverging forms (Incisivosaurus, Caudipteryx) to the large, crested oviraptorids and the toothless caenagnathids of the derived clade Caenagnathoidea. Most were herbivores or omnivores, and several are preserved with pennaceous feathers, brooding postures, or gastroliths.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -6341,6 +6529,37 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria"
+      ],
+      "type_genus": "Oviraptor",
+      "described": 1976,
+      "authors": "Barsbold, R.",
+      "diagnostic_features": [
+        "Short, deep skull with a reduced dentition trending toward edentulism",
+        "Downturned, robust dentary with an extensive symphysis",
+        "Pneumatic, tall-spined cervical vertebrae with a long, mobile neck",
+        "Shortened tail, in derived members terminating in coossified distal caudals",
+        "Large, three-fingered grasping hand (reduced in derived oviraptorids)"
+      ],
+      "references": [
+        {
+          "id": "barsbold1976b",
+          "authors": "Barsbold, R.",
+          "year": 1976,
+          "title": "On the evolution and systematics of the late Mesozoic dinosaurs",
+          "journal": "Transactions of the Joint Soviet-Mongolian Paleontological Expedition",
+          "volume": "3",
+          "pages": "68-75"
+        },
+        {
+          "id": "funston2018",
+          "authors": "Funston, G. F.; Mendonca, S. E.; Currie, P. J.; Barsbold, R.",
+          "year": 2018,
+          "title": "Oviraptorosaur anatomy, diversity and ecology in the Nemegt Basin",
+          "journal": "Palaeogeography, Palaeoclimatology, Palaeoecology",
+          "volume": "494",
+          "pages": "101-120",
+          "doi": "10.1016/j.palaeo.2017.10.023"
+        }
       ]
     },
     "Pachycephalosauria": {
@@ -22750,6 +22969,7 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
+        "Caenagnathoidea",
         "Caenagnathidae"
       ],
       "authors": "Yu, Y.; Wang, K.; Chen, S.; Sullivan, C.; Wang, S.; Wang, P.; Xu, X.",
@@ -23573,7 +23793,7 @@
     },
     "Anzu": {
       "genus": "Anzu",
-      "parent": "Caenagnathinae",
+      "parent": "Caenagnathidae",
       "etymology": "Named for Anzu, a feathered demon from Mesopotamian (Sumerian and Akkadian) mythology.",
       "pronunciation": {
         "phonetic": "AHN-zoo"
@@ -23716,8 +23936,8 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
-        "Caenagnathidae",
-        "Caenagnathinae"
+        "Caenagnathoidea",
+        "Caenagnathidae"
       ],
       "authors": "Lamanna, M. C.; Sues, H.-D.; Schachner, E. R.; Lyson, T. R.",
       "described": 2014
@@ -23963,7 +24183,7 @@
     },
     "Apatoraptor": {
       "genus": "Apatoraptor",
-      "parent": "Caenagnathinae",
+      "parent": "Caenagnathidae",
       "etymology": "From Greek 'apate' meaning 'deception' and Latin 'raptor' meaning 'thief'; meaning 'deceptive thief'",
       "pronunciation": {
         "phonetic": "ah-PAY-toh-RAP-tuhr"
@@ -24098,8 +24318,8 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
-        "Caenagnathidae",
-        "Caenagnathinae"
+        "Caenagnathoidea",
+        "Caenagnathidae"
       ],
       "authors": "Funston, G. F.; Currie, P. J.",
       "described": 2016
@@ -33688,7 +33908,7 @@
     },
     "Banji": {
       "genus": "Banji",
-      "parent": "Heyuanninae",
+      "parent": "Oviraptoridae",
       "etymology": "From Chinese '斑嵴' (bān jǐ) meaning 'striped crest', referring to the prominent crest on its skull; the full species name Banji long means 'striped crest dragon' in Chinese.",
       "pronunciation": {
         "phonetic": "BAHN-jee"
@@ -33834,8 +34054,8 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
-        "Oviraptoridae",
-        "Heyuanninae"
+        "Caenagnathoidea",
+        "Oviraptoridae"
       ],
       "authors": "Xu, X.; Han, F.-L.",
       "described": 2010
@@ -35926,6 +36146,7 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
+        "Caenagnathoidea",
         "Caenagnathidae"
       ],
       "authors": "Pu, H.; Zelenitsky, D. K.; Lü, J.; Currie, P. J.; Carpenter, K.; Xu, L.; Koppelhus, E. B.; Jia, S.; Xiao, L.; Chuang, H.; Li, T.; Kundrát, M.; Shen, C.",
@@ -42705,7 +42926,7 @@
     },
     "Caenagnathasia": {
       "genus": "Caenagnathasia",
-      "parent": "Caenagnathinae",
+      "parent": "Caenagnathidae",
       "pronunciation": {
         "phonetic": "see-NAG-na-THAY-zhee-a"
       },
@@ -42831,15 +43052,15 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
-        "Caenagnathidae",
-        "Caenagnathinae"
+        "Caenagnathoidea",
+        "Caenagnathidae"
       ],
       "authors": "Currie, P. J.; Godfrey, S. J.; Nessov, L.",
       "described": 1993
     },
     "Caenagnathus": {
       "genus": "Caenagnathus",
-      "parent": "Caenagnathinae",
+      "parent": "Caenagnathidae",
       "etymology": "From Greek 'kainos' (new, recent) and 'gnathos' (jaw); meaning 'recent jaw', alluding to the novel jaw morphology distinct from then-known birds and reptiles.",
       "pronunciation": {
         "phonetic": "KAY-nag-NAY-thus"
@@ -42974,8 +43195,8 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
-        "Caenagnathidae",
-        "Caenagnathinae"
+        "Caenagnathoidea",
+        "Caenagnathidae"
       ],
       "authors": "Sternberg, R. M.",
       "described": 1940
@@ -45742,7 +45963,7 @@
     },
     "Caudipteryx": {
       "genus": "Caudipteryx",
-      "parent": "Oviraptorosauria",
+      "parent": "Caudipterygidae",
       "pronunciation": {
         "phonetic": "kaw-DIP-ter-iks"
       },
@@ -45940,7 +46161,8 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptora",
-        "Oviraptorosauria"
+        "Oviraptorosauria",
+        "Caudipterygidae"
       ],
       "authors": "Qiang, J.; Currie, P. J.; Norell, M. A.; Shu-An, J.",
       "described": 1998
@@ -50552,6 +50774,7 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
+        "Caenagnathoidea",
         "Caenagnathidae"
       ],
       "authors": "Gilmore, C. W.",
@@ -52174,7 +52397,7 @@
     },
     "Citipati": {
       "genus": "Citipati",
-      "parent": "Citipatinae",
+      "parent": "Citipatiinae",
       "etymology": "From Sanskrit/Tibetan Buddhist mythology, citipati refers to the 'lords of the cemetery' or 'funeral pyre lords', two monks who became the guardians of the dead. The name alludes to individuals found atop nests, interpreted as brooding over eggs.",
       "pronunciation": {
         "phonetic": "CHIT-i-puh-tih"
@@ -52398,15 +52621,16 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
+        "Caenagnathoidea",
         "Oviraptoridae",
-        "Citipatinae"
+        "Citipatiinae"
       ],
       "authors": "Clark, J. M.; Norell, M. A.; Barsbold, R.",
       "described": 2001
     },
     "Citipes": {
       "genus": "Citipes",
-      "parent": "Caenagnathinae",
+      "parent": "Caenagnathidae",
       "pronunciation": {
         "ipa": "/ˈsɪtipɛz/",
         "phonetic": "sit-eye-pez"
@@ -52548,8 +52772,8 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
-        "Caenagnathidae",
-        "Caenagnathinae"
+        "Caenagnathoidea",
+        "Caenagnathidae"
       ],
       "authors": "Funston, G.",
       "described": 2020
@@ -54825,6 +55049,7 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
+        "Caenagnathoidea",
         "Oviraptoridae",
         "Heyuanninae"
       ],
@@ -55277,12 +55502,21 @@
     },
     "Corythoraptor": {
       "genus": "Corythoraptor",
-      "parent": "Citipatinae",
+      "parent": "Citipatiinae",
       "etymology": "From Greek korythos, 'helmet', + Latin raptor, 'thief'; means 'helmeted thief', referring to its tall cassowary-like head crest",
       "pronunciation": {
         "phonetic": "koh-RITH-o-RAP-tuhr"
       },
       "description": "Corythoraptor is a genus of oviraptorid dinosaur from the late Maastrichtian Nanxiong Formation of South China. It contains one species, C. jacobsi, known from a single well-preserved skeleton, and named after paleontologist Louis L. Jacobs. It bears a tall crest similar to that of the modern cassowary, and possibly had a similar functionality of display and resonance to detect lower-frequency sounds.",
+      "dispute": {
+        "summary": "Corythoraptor is generally treated as a valid crested oviraptorid, recovered as the sister taxon of Huanansaurus within Citipatiinae (Lu et al., 2017; Funston et al., 2020). Its validity has been questioned: Cau (2024) argued that it is a junior synonym of Banji, treating the differences between them as ontogenetic, but this synonymy rests on a single analysis and has not been adopted by subsequent workers or reference works (e.g. Jones, 2026).\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Retained as a valid genus within Citipatiinae; the proposed synonymy with Banji (Cau, 2024) is noted but not adopted pending broader corroboration.\n"
+          }
+        ]
+      },
       "diet": "omnivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -55414,8 +55648,9 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
+        "Caenagnathoidea",
         "Oviraptoridae",
-        "Citipatinae"
+        "Citipatiinae"
       ],
       "authors": "Lü, J.; Li, G.; Kundrát, M.; Lee, Y.-N.; Sun, Z.; Kobayashi, Y.; Shen, C.; Teng, F.; Liu, H.",
       "described": 2017
@@ -68481,7 +68716,7 @@
     },
     "Elmisaurus": {
       "genus": "Elmisaurus",
-      "parent": "Caenagnathinae",
+      "parent": "Caenagnathidae",
       "pronunciation": {
         "phonetic": "EL-mi-SAWR-us"
       },
@@ -68626,8 +68861,8 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
-        "Caenagnathidae",
-        "Caenagnathinae"
+        "Caenagnathoidea",
+        "Caenagnathidae"
       ],
       "authors": "Osmolska, H.",
       "described": 1981
@@ -70419,6 +70654,7 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
+        "Caenagnathoidea",
         "Caenagnathidae"
       ],
       "authors": "Atkins-Weltman, K. L.; Simon, D. J.; Woodward, H. N.; Funston, G. F.; Snively, E.",
@@ -71599,7 +71835,7 @@
     },
     "Epichirostenotes": {
       "genus": "Epichirostenotes",
-      "parent": "Caenagnathinae",
+      "parent": "Caenagnathidae",
       "etymology": "From Greek epi- (above/upon, here meaning 'after in time') + Chirostenotes (the related oviraptorosaurian genus): 'above Chirostenotes', because it lived stratigraphically and temporally after Chirostenotes.",
       "pronunciation": {
         "phonetic": "ep-ih-KI-roh-steh-NO-teez"
@@ -71710,8 +71946,8 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
-        "Caenagnathidae",
-        "Caenagnathinae"
+        "Caenagnathoidea",
+        "Caenagnathidae"
       ],
       "authors": "Sullivan, R. M.; Jasinski, S. E.; M. P. A. Van Tomme",
       "described": 2011
@@ -78702,7 +78938,7 @@
     },
     "Ganzhousaurus": {
       "genus": "Ganzhousaurus",
-      "parent": "Heyuanninae",
+      "parent": "Citipatiinae",
       "etymology": "Ganzhou lizard; named after Ganzhou City in Jiangxi Province, China, combined with Greek sauros (lizard)",
       "pronunciation": {
         "phonetic": "kan-jo-SOR-us"
@@ -78840,8 +79076,9 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
+        "Caenagnathoidea",
         "Oviraptoridae",
-        "Heyuanninae"
+        "Citipatiinae"
       ],
       "authors": "Wang, S.; Sun, C.; Sullivan, C.; Xu, X.",
       "described": 2013
@@ -80669,6 +80906,15 @@
       "parent": "Caenagnathidae",
       "etymology": "From Greek gigas/gigantos, 'giant', + Latin raptor, 'thief/seizer'; means 'giant thief', referring to its status as the largest known oviraptorosaur",
       "description": "Gigantoraptor is a genus of large oviraptorosaurian dinosaur that lived in Asia during the Late Cretaceous period. It is known from the Iren Dabasu Formation of Inner Mongolia, where the first remains were found in 2005.",
+      "dispute": {
+        "summary": "Gigantoraptor is now generally recovered as a basal caenagnathid (Longrich et al., 2013; Lamanna et al., 2014; Funston, 2020), a marked departure from its original description as a basal oviraptorid (Xu et al., 2007). A minority result (Hartman et al., 2019) still recovers it, with Microvenator, within Oviraptoridae. It is placed at Caenagnathidae following the prevailing view.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Caenagnathidae (basal) following the caenagnathid analyses; Hartman et al. (2019) alternatively recover it as an oviraptorid.\n"
+          }
+        ]
+      },
       "diet": "omnivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -80807,6 +81053,7 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
+        "Caenagnathoidea",
         "Caenagnathidae"
       ],
       "authors": "Xu, X.; Tan, Q.; Wang, J.; Zhao, X.; Tan, L.",
@@ -82277,7 +82524,7 @@
     },
     "Gobiraptor": {
       "genus": "Gobiraptor",
-      "parent": "Oviraptoridae",
+      "parent": "Heyuanninae",
       "pronunciation": {
         "phonetic": "GOH-bee-RAP-tor"
       },
@@ -82413,7 +82660,9 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
-        "Oviraptoridae"
+        "Caenagnathoidea",
+        "Oviraptoridae",
+        "Heyuanninae"
       ],
       "authors": "Lee, S.; Lee, Y.-N.; Chinsamy, A.; Lü, J.; Barsbold, R.; Tsogtbaatar, K.",
       "described": 2019
@@ -86004,7 +86253,7 @@
     },
     "Hagryphus": {
       "genus": "Hagryphus",
-      "parent": "Caenagnathinae",
+      "parent": "Caenagnathidae",
       "etymology": "From Egyptian Ha (a god of the western desert) and Greek gryps/gryphon (griffin); meaning 'Ha's griffin'",
       "description": "Hagryphus is a monospecific genus of caenagnathid dinosaur from southern Utah that lived during the Late Cretaceous (upper Campanian stage, 75.95 Ma) in what is now the Kaiparowits Formation of the Grand Staircase-Escalante National Monument. The type and only species, Hagryphus giganteus, is known only from an incomplete but articulated left manus and the distal portion of the left radius. It was named in 2005 by Lindsay E. Zanno and Scott D. Sampson. Hagryphus has an estimated length of 2.4-3 meters (8-10 feet) and weight of 50 kilograms (110 lbs).",
       "diet": "omnivore",
@@ -86144,8 +86393,8 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
-        "Caenagnathidae",
-        "Caenagnathinae"
+        "Caenagnathoidea",
+        "Caenagnathidae"
       ],
       "authors": "Zanno, L. E.; Sampson, S. D.",
       "described": 2005
@@ -89550,6 +89799,7 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
+        "Caenagnathoidea",
         "Oviraptoridae",
         "Heyuanninae"
       ],
@@ -90912,7 +91162,7 @@
     },
     "Huanansaurus": {
       "genus": "Huanansaurus",
-      "parent": "Citipatinae",
+      "parent": "Citipatiinae",
       "etymology": "From Chinese Huanan (Southern China) combined with Greek sauros (lizard); meaning 'Southern China lizard'",
       "pronunciation": {
         "phonetic": "HWAH-nan-SOR-us"
@@ -91054,8 +91304,9 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
+        "Caenagnathoidea",
         "Oviraptoridae",
-        "Citipatinae"
+        "Citipatiinae"
       ],
       "authors": "Lü, J.; Pu, H.; Kobayashi, Y.; Xu, L.; Chang, H.; Shang, Y.; Liu, D.; Lee, Y.-N.; Kundrát, M.; Shen, C.",
       "described": 2015
@@ -100487,6 +100738,7 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
+        "Caenagnathoidea",
         "Oviraptoridae",
         "Heyuanninae"
       ],
@@ -105022,6 +105274,7 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
+        "Caenagnathoidea",
         "Oviraptoridae",
         "Heyuanninae"
       ],
@@ -111587,6 +111840,7 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
+        "Caenagnathoidea",
         "Caenagnathidae"
       ],
       "authors": "Longrich, N. R.; Barnes, K.; Clark, S.; Millar, L.",
@@ -117192,6 +117446,7 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
+        "Caenagnathoidea",
         "Oviraptoridae"
       ],
       "authors": "Lü, J.; Xu, L.; Jiang, X.; Jia, S.; Li, M.; Yuan, C.; Zhang, X.; Ji, Q.",
@@ -118092,6 +118347,7 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
+        "Caenagnathoidea",
         "Oviraptoridae",
         "Heyuanninae"
       ],
@@ -126072,6 +126328,7 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
+        "Caenagnathoidea",
         "Caenagnathidae"
       ],
       "authors": "Ostrom, J. H.",
@@ -130813,6 +131070,7 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
+        "Caenagnathoidea",
         "Oviraptoridae"
       ],
       "authors": "Lü, J.; Yi, L.; Zhong, H.; Wei, X.",
@@ -133489,6 +133747,7 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
+        "Caenagnathoidea",
         "Oviraptoridae",
         "Heyuanninae"
       ],
@@ -135204,9 +135463,18 @@
     },
     "Ningyuansaurus": {
       "genus": "Ningyuansaurus",
-      "parent": "Oviraptorosauria",
+      "parent": "Maniraptora",
       "etymology": "Derived from Ningyuan, an ancient name for Xingcheng City in western Liaoning Province, China, combined with Greek sauros meaning 'lizard'",
-      "description": "Ningyuansaurus is a pennaraptoran dinosaur genus. It contains the single species Ningyuansaurus wangi, known from a fossil specimen from the Early Cretaceous Yixian Formation (Aptian stage, 124.6 Ma ago) of Jianchang, western Liaoning Province, People's Republic of China. It was originally thought to be the basalmost species of oviraptorosaur, based on its long skull and a greater number of teeth in comparison to any other known oviraptorosaur. However, later research showed that it is a member of Halszkaraptorinae. The generic name Ningyuansaurus is derived from Ningyuan, an ancient name for Xingcheng City. The specific name honors Wang Qiuwu, the private owner of the specimen who donated it for scientific study. The specimen is now in the Confuciusornis Museum in Xingcheng.",
+      "description": "Ningyuansaurus is a pennaraptoran dinosaur genus. It contains the single species Ningyuansaurus wangi, known from a fossil specimen from the Early Cretaceous Yixian Formation (Aptian stage, 124.6 Ma ago) of Jianchang, western Liaoning Province, People's Republic of China. It was originally thought to be the basalmost species of oviraptorosaur, based on its long skull and a greater number of teeth in comparison to any other known oviraptorosaur. However, later analyses have variously recovered it outside Oviraptorosauria, as a halszkaraptorine or a basal troodontid, and its affinities remain unresolved. The generic name Ningyuansaurus is derived from Ningyuan, an ancient name for Xingcheng City. The specific name honors Wang Qiuwu, the private owner of the specimen who donated it for scientific study. The specimen is now in the Confuciusornis Museum in Xingcheng.",
+      "dispute": {
+        "summary": "The affinities of Ningyuansaurus are unresolved and it may lie outside Oviraptorosauria. The original description (Ji et al., 2012) recovered it as the basalmost oviraptorosaur, but Hartman et al. (2019) instead recovered it as a halszkaraptorine dromaeosaurid (sister to Mahakala), and Cau and Madzia (2021) recovered it under equal weighting as a basal troodontid within Sinovenatorinae, shifting to a basal oviraptorosaur only under implied weighting. It is therefore placed conservatively at Maniraptora pending the broader paravian-backbone reconciliation.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Evicted from Oviraptorosauria and placed at Maniraptora (deferred); the oviraptorosaur, troodontid, and halszkaraptorine hypotheses are all supported by different analyses and none prevails.\n"
+          }
+        ]
+      },
       "diet": "omnivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -135304,8 +135572,7 @@
         "Tetanurae",
         "Avetheropoda",
         "Coelurosauria",
-        "Maniraptora",
-        "Oviraptorosauria"
+        "Maniraptora"
       ],
       "authors": "Ji, Q.; Lü, J.-C.; X.-f. Wei, X.-R. W.",
       "described": 2012
@@ -136166,13 +136433,22 @@
     },
     "Nomingia": {
       "genus": "Nomingia",
-      "parent": "Caenagnathinae",
+      "parent": "Caenagnathidae",
       "pronunciation": {
         "ipa": "/noʊˈmɪŋɡiə/",
         "phonetic": "no-MING-gee-uh"
       },
       "etymology": "Named after the Nomingiin Gobi (one of the 'Thirty-Three Gobis' of the Gobi Desert) where the holotype was found",
       "description": "Nomingia is a genus of oviraptorosaurian theropod dinosaur known from the Late Cretaceous Bugin Tsav Beds of Mongolia.",
+      "dispute": {
+        "summary": "Nomingia was originally described as an oviraptorid but is now generally recovered as a caenagnathid (Funston et al., 2018; Funston, 2020). Its validity is also questioned: Funston et al. (2021) suggested that Nomingia is a junior synonym of Elmisaurus, in which case the older name would take priority, and Hao et al. (2025) followed this by merging its scores into Elmisaurus. It is retained here as a valid caenagnathid pending broader acceptance of the synonymy.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Caenagnathidae; the proposed synonymy with Elmisaurus (Funston et al., 2021) is noted but not adopted.\n"
+          }
+        ]
+      },
       "diet": "omnivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -136289,8 +136565,8 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
-        "Caenagnathidae",
-        "Caenagnathinae"
+        "Caenagnathoidea",
+        "Caenagnathidae"
       ],
       "authors": "Barsbold, R.; Osmólska, H.; Watabe, M.; Currie, P. J.; Tsogtbaatar, K.",
       "described": 2000
@@ -138319,6 +138595,15 @@
         "phonetic": "o-jo-RAP-tuh-SOR-us"
       },
       "description": "Ojoraptorsaurus is a dubious genus of oviraptorosaurian dinosaur from the late Cretaceous. Ojoraptorsaurus is only known from pubic bones found at the Naashoibito Member of the Ojo Alamo Formation dating to the late Maastrichtian, about 66 million years ago. It was first named by Robert M. Sullivan, Steven E. Jasinski and Mark P.A. van Tomme in 2011 and the type species is Ojoraptorsaurus boerei. The generic name combines a reference to the formation with a Latin raptor, \"plunderer\", and a Latinised Greek saurus, \"lizard\". The specific name honors oceanographer Arjan Boeré who found the specimen.",
+      "dispute": {
+        "summary": "Ojoraptorsaurus is a caenagnathid but its validity is contested. It was named from a pair of fused pubes, and Funston and Williamson (2024) reassessed its proposed diagnostic features as non-autapomorphic in light of newer pelvic material, concluding that it should be regarded as a nomen dubium. The Princeton Encyclopedia (Jones, 2026) still treats it as valid.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Caenagnathidae; its validity is disputed, having been argued to be a nomen dubium by Funston and Williamson (2024).\n"
+          }
+        ]
+      },
       "diet": "omnivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -138427,6 +138712,7 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
+        "Caenagnathoidea",
         "Caenagnathidae"
       ],
       "authors": "Sullivan, R. M.; Jasinski, S. E.; M. P. A. Van Tomme",
@@ -138592,6 +138878,7 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
+        "Caenagnathoidea",
         "Oviraptoridae",
         "Heyuanninae"
       ],
@@ -142103,6 +142390,7 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
+        "Caenagnathoidea",
         "Oviraptoridae"
       ],
       "authors": "Osborn, H. F.",
@@ -154492,6 +154780,15 @@
       },
       "etymology": "From Greek protos (before) and the genus name Archaeopteryx; meaning \"before Archaeopteryx\".",
       "description": "Protarchaeopteryx is a genus of turkey-sized feathered theropod dinosaur from China. Known from the Jianshangou bed of the Yixian Formation, it lived during the early Aptian age of the Early Cretaceous, approximately 124.6 million years ago. It was probably a herbivore or omnivore, although its hands were very similar to those of small carnivorous dinosaurs. It appears to be one of the most basal members of the Oviraptorosauria, closely related to Incisivosaurus, or a taxon slightly less closely related to birds than oviraptorosaurs were.",
+      "dispute": {
+        "summary": "Protarchaeopteryx is generally recovered among the basalmost oviraptorosaurs (Senter et al., 2004; Cau, 2018), but its position at the base of Pennaraptora is labile: Hartman et al. (2019) recovered it just outside Oviraptorosauria, as the sister group of Pennaraptora, only two steps from a basal oviraptorosaur position. It is placed conservatively as a basal oviraptorosaur.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Oviraptorosauria (basal) following the prevailing view; Hartman et al. (2019) recover it marginally outside the clade.\n"
+          }
+        ]
+      },
       "diet": "omnivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -161715,7 +162012,7 @@
     },
     "Rinchenia": {
       "genus": "Rinchenia",
-      "parent": "Citipatinae",
+      "parent": "Citipatiinae",
       "etymology": "Named after Mongolian paleontologist Byambyn Rinchen, with the Latinised suffix '-ia' forming the genus name.",
       "description": "Rinchenia is a genus of oviraptorid dinosaur that lived in Asia during the Late Cretaceous epoch in what is now Mongolia, Nemegt Formation. The type and only known species, Rinchenia mongoliensis, was originally classified as a species within the genus Oviraptor (named Oviraptor mongoliensis), but a subsequent reexamination found differences significant enough to warrant a separate genus. The name Rinchenia was coined for this new genus, though not formally described in detail.",
       "diet": "omnivore",
@@ -161873,8 +162170,9 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
+        "Caenagnathoidea",
         "Oviraptoridae",
-        "Citipatinae"
+        "Citipatiinae"
       ],
       "authors": "Barsbold, R.",
       "described": 1997
@@ -170326,7 +170624,16 @@
       "genus": "Shixinggia",
       "parent": "Heyuanninae",
       "etymology": "Named for Shixing County, Guangdong, China, where the fossil was discovered.",
-      "description": "Shixinggia is a genus of oviraptorosaurian dinosaur from the Late Cretaceous period of Shixing County, Guangdong, China, for which it was named. While no skull was recovered, the specimen (BVP-112) is known from a fair amount of post-cranial material that shows it was a fairly derived oviraptorosaur (slightly more advanced than Nomingia), of superfamily Caenagnathoidea. Lü et al. (2003, 2005) describe it as an oviraptorid, but it could be a caenagnathid.",
+      "description": "Shixinggia is a genus of oviraptorosaurian dinosaur from the Late Cretaceous period of Shixing County, Guangdong, China, for which it was named. While no skull was recovered, the specimen (BVP-112) is known from a fair amount of post-cranial material that shows it was a fairly derived oviraptorosaur of superfamily Caenagnathoidea.",
+      "dispute": {
+        "summary": "Shixinggia is known only from postcranial material, and whether it is an oviraptorid or a caenagnathid is unresolved. Its describers (Lu and Zhang, 2005) and a later analysis (Funston et al., 2020) place it within Oviraptoridae, the latter as the basalmost member of Heyuanninae, but the incompleteness of the specimen leaves open the possibility that it is instead a caenagnathid.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Heyuanninae following Funston et al. (2020); its oviraptorid versus caenagnathid identity is not firmly established.\n"
+          }
+        ]
+      },
       "diet": "omnivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -170451,6 +170758,7 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
+        "Caenagnathoidea",
         "Oviraptoridae",
         "Heyuanninae"
       ],
@@ -190020,7 +190328,7 @@
     },
     "Tongtianlong": {
       "genus": "Tongtianlong",
-      "parent": "Citipatinae",
+      "parent": "Citipatiinae",
       "etymology": "Combines a reference to the nearby Tongtianyan grotto in Jiangxi, China, with Chinese 'long' meaning 'dragon'; 'Tongtian' also means 'road to heaven' in Chinese.",
       "pronunciation": {
         "phonetic": "TONG-tee-YEN-long"
@@ -190149,8 +190457,9 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
+        "Caenagnathoidea",
         "Oviraptoridae",
-        "Citipatinae"
+        "Citipatiinae"
       ],
       "authors": "Lü, J.; Chen, R.; Brusatte, S. L.; Zhu, Y.; Shen, C.",
       "described": 2016
@@ -201517,7 +201826,7 @@
     },
     "Wulatelong": {
       "genus": "Wulatelong",
-      "parent": "Citipatinae",
+      "parent": "Oviraptoridae",
       "etymology": "From Wulate (referring to Wulatehouqi, the region of Inner Mongolia, China where it was found) and Chinese long ('dragon')",
       "pronunciation": {
         "phonetic": "woo-la-tuh-long"
@@ -201657,8 +201966,8 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
-        "Oviraptoridae",
-        "Citipatinae"
+        "Caenagnathoidea",
+        "Oviraptoridae"
       ],
       "authors": "Xu, X.; Tan, Q.-W.; Wang, S.; Sullivan, C.; Hone, D. W. E.; Han, F.-L.; Ma, Q.-Y.; Tan, L.; Xiao, D.",
       "described": 2013
@@ -207771,6 +208080,7 @@
         "Coelurosauria",
         "Maniraptora",
         "Oviraptorosauria",
+        "Caenagnathoidea",
         "Oviraptoridae"
       ],
       "authors": "Lü, J.; Currie, P. J.; Xu, L.; Zhang, X.; Pu, H.; Jia, S.",
