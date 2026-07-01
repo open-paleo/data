@@ -1,8 +1,8 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-07-01T03:20:12.381Z",
-    "clade_count": 210,
+    "built_at": "2026-07-01T04:36:28.517Z",
+    "clade_count": 206,
     "genus_count": 1398,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
@@ -169,24 +169,18 @@
                                 }
                               },
                               "Ceratosauria": {
-                                "Abelisauridae": {
-                                  "Brachyrostra": {
-                                    "Furileusauria": {
-                                      "Abelisaurinae": {}
+                                "Ceratosauridae": {},
+                                "Abelisauroidea": {
+                                  "Abelisauridae": {
+                                    "Majungasaurinae": {},
+                                    "Brachyrostra": {
+                                      "Furileusauria": {}
                                     }
                                   },
-                                  "Carnotaurinae": {
-                                    "Majungasaurini": {}
+                                  "Noasauridae": {
+                                    "Noasaurinae": {},
+                                    "Elaphrosaurinae": {}
                                   }
-                                },
-                                "Noasauridae": {
-                                  "Noasaurinae": {},
-                                  "Elaphrosaurinae": {}
-                                },
-                                "Abelisauroidea": {},
-                                "Ceratosauridae": {},
-                                "Ceratosauroidea": {
-                                  "Etrigansauria": {}
                                 }
                               }
                             },
@@ -370,7 +364,7 @@
   },
   "clades": {
     "Abelisauridae": {
-      "description": "Abelisauridae is a family of ceratosaurian theropod dinosaurs that were dominant predators in Gondwanan landmasses during the Cretaceous period. Abelisaurids are characterized by short, deep skulls, heavily ornamented cranial bones, and dramatically reduced forelimbs that are even more vestigial than those of tyrannosaurids. Notable members include Carnotaurus, Majungasaurus, and Abelisaurus. The family was most diverse in South America, Madagascar, and India.\n",
+      "description": "Abelisauridae is a family of ceratosaurian theropods that were the dominant large predators of the Gondwanan landmasses during the Cretaceous. Abelisaurids are characterized by short, deep, heavily ornamented skulls and dramatically reduced, vestigial forelimbs. A basal grade of taxa such as Rugops, Spectrovenator, and Eoabelisaurus subtends two derived subclades, the Indo-Madagascan Majungasaurinae and the mostly South American Brachyrostra. Notable members include Carnotaurus, Majungasaurus, and Abelisaurus.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -386,52 +380,33 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Abelisauridae"
       ],
+      "type_genus": "Abelisaurus",
       "described": 1985,
-      "authors": "Bonaparte & Novas",
+      "authors": "Bonaparte, J. F.; Novas, F. E.",
       "diagnostic_features": [
-        "Short, deep skull with rugose ornamentation on frontal and nasal bones",
-        "Extremely reduced forelimbs with vestigial digits",
-        "Thickened skull roof bones",
-        "Robust and short cervical vertebrae",
-        "Well-developed femoral musculature attachment sites indicating powerful hindlimbs"
+        "Short, deep skull with heavy sculpturing of the frontal, nasal, and lacrimal bones.",
+        "Extremely reduced forelimbs with short, stout metacarpals and vestigial manual digits.",
+        "Thickened, co-ossified skull roof.",
+        "Short, robust cervical vertebrae with prominent epipophyses."
       ],
       "references": [
         {
-          "id": "bonapartenovas1985",
-          "authors": "Bonaparte, J.F. & Novas, F.E.",
+          "id": "bonaparte1985b",
+          "authors": "Bonaparte, J. F.; Novas, F. E.",
           "year": 1985,
-          "title": "Abelisaurus comahuensis, n.g., n.sp., Carnosauria del Cretacico Tardio de Patagonia",
+          "title": "Abelisaurus comahuensis, n.g., n.sp., Carnosauria del Crétacico Tardio de Patagonia [Abelisaurus comahuensis, n.g., n.sp., Carnosauria from the Late Cretaceous of Patagonia]",
           "journal": "Ameghiniana",
           "volume": "21",
-          "pages": "259-265"
+          "pages": "259-265",
+          "notes": "Named Abelisaurus and the family Abelisauridae. In Spanish."
         }
       ]
     },
-    "Abelisaurinae": {
-      "taxonomy": [
-        "Life",
-        "Animalia",
-        "Chordata",
-        "Vertebrata",
-        "Sarcopterygii",
-        "Tetrapoda",
-        "Reptilia",
-        "Archosauria",
-        "Dinosauria",
-        "Saurischia",
-        "Theropoda",
-        "Neotheropoda",
-        "Averostra",
-        "Ceratosauria",
-        "Abelisauridae",
-        "Brachyrostra",
-        "Furileusauria",
-        "Abelisaurinae"
-      ]
-    },
     "Abelisauroidea": {
+      "description": "Abelisauroidea is the superfamily uniting the two major Cretaceous ceratosaur radiations, Abelisauridae and Noasauridae, as sister families. Named by Bonaparte for the Gondwanan theropod families he recognized as close relatives, it is the least-inclusive clade containing both Abelisaurus and Noasaurus. Abelisauroids were the dominant terrestrial predators of the southern continents through much of the Cretaceous, spanning small, gracile noasaurids to large, deep-skulled abelisaurids.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -448,6 +423,30 @@
         "Averostra",
         "Ceratosauria",
         "Abelisauroidea"
+      ],
+      "type_genus": "Abelisaurus",
+      "described": 1991,
+      "authors": "Bonaparte, J. F.",
+      "diagnostic_features": [
+        "Elongate cervical vertebrae with epipophyses and low neural spines.",
+        "Anterior cervical ribs directed strongly anteroventrally.",
+        "Femur with a proximally placed, medially oriented head and reduced trochanteric shelf."
+      ],
+      "references": [
+        {
+          "id": "bonaparte1991b",
+          "authors": "Bonaparte, J. F.",
+          "year": 1991,
+          "title": "The Gondwanian theropod families Abelisauridae and Noasauridae",
+          "journal": "Historical Biology",
+          "volume": "5",
+          "issue": "1",
+          "pages": "1-25",
+          "publisher": "Informa UK Limited",
+          "doi": "10.1080/10292389109380385",
+          "url": "http://dx.doi.org/10.1080/10292389109380385",
+          "notes": "United Abelisauridae and Noasauridae as closely related Gondwanan theropod families, the basis for the superfamily Abelisauroidea."
+        }
       ]
     },
     "Aeolosaurini": {
@@ -1303,6 +1302,7 @@
       ]
     },
     "Brachyrostra": {
+      "description": "Brachyrostra is a clade of derived, mostly South American abelisaurids erected by Canale and colleagues, defined as all abelisaurids more closely related to Carnotaurus than to Majungasaurus. It groups short-snouted forms such as Ilokelesia, Ekrixinatosaurus, and Skorpiovenator with the more deeply nested Furileusauria, and is the reciprocal sister subclade to Majungasaurinae within Abelisauridae. Brachyrostrans are characterized by proportionally short, deep skulls with a progressively enclosed orbit.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -1318,8 +1318,33 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Abelisauridae",
         "Brachyrostra"
+      ],
+      "described": 2008,
+      "authors": "Canale, J. I.; Scanferla, C. A.; Agnolin, F. L.; Novas, F. E.",
+      "diagnostic_features": [
+        "Proportionally shortened, deep snout.",
+        "Progressive enclosure of the orbit by the postorbital and lacrimal.",
+        "Strongly ornamented cranial bones.",
+        "Anteriorly expanded cnemial crest of the tibia in derived members."
+      ],
+      "references": [
+        {
+          "id": "canale2008",
+          "authors": "Canale, J. I.; Scanferla, C. A.; Agnolin, F. L.; Novas, F. E.",
+          "year": 2008,
+          "title": "New carnivorous dinosaur from the Late Cretaceous of NW Patagonia and the evolution of abelisaurid theropods",
+          "journal": "Naturwissenschaften",
+          "volume": "96",
+          "issue": "3",
+          "pages": "409-414",
+          "publisher": "Springer Science and Business Media LLC",
+          "doi": "10.1007/s00114-008-0487-4",
+          "url": "http://dx.doi.org/10.1007/s00114-008-0487-4",
+          "notes": "Named Skorpiovenator and erected the clade Brachyrostra for the South American abelisaurid radiation."
+        }
       ]
     },
     "Caenagnathidae": {
@@ -1547,26 +1572,6 @@
         "Carcharodontosauria",
         "Carcharodontosauridae",
         "Carcharodontosaurinae"
-      ]
-    },
-    "Carnotaurinae": {
-      "taxonomy": [
-        "Life",
-        "Animalia",
-        "Chordata",
-        "Vertebrata",
-        "Sarcopterygii",
-        "Tetrapoda",
-        "Reptilia",
-        "Archosauria",
-        "Dinosauria",
-        "Saurischia",
-        "Theropoda",
-        "Neotheropoda",
-        "Averostra",
-        "Ceratosauria",
-        "Abelisauridae",
-        "Carnotaurinae"
       ]
     },
     "Caudipterygidae": {
@@ -1868,7 +1873,7 @@
       ]
     },
     "Ceratosauria": {
-      "description": "Ceratosauria is a clade of early-diverging theropod dinosaurs that radiated primarily during the Jurassic and Cretaceous periods. Many ceratosaurs possessed prominent cranial ornamentation, including horns and crests. The group was particularly diverse in Gondwanan landmasses and includes the abelisaurids, noasaurids, and the Jurassic ceratosaurids. Ceratosaurs generally retained four digits on the hand, unlike the three-fingered condition of more derived theropods.\n",
+      "description": "Ceratosauria is a clade of early-diverging averostran theropod dinosaurs that radiated through the Jurassic and Cretaceous, reaching its greatest diversity on the Gondwanan landmasses. It comprises a grade of basal ceratosaurs, the Jurassic Ceratosauridae, and the derived Abelisauroidea (abelisaurids plus noasaurids). Many ceratosaurs bear prominent cranial ornamentation, and the group retains a four-fingered hand in its basal members, in contrast to the reduced manus of tetanurans.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -1885,28 +1890,34 @@
         "Averostra",
         "Ceratosauria"
       ],
+      "type_genus": "Ceratosaurus",
       "described": 1884,
-      "authors": "Marsh",
+      "authors": "Marsh, O. C.",
       "diagnostic_features": [
-        "Cranial ornamentation including horns, bosses, or rugose crests in many taxa",
-        "Fused pelvic elements (ilium, ischium, pubis) in mature individuals",
-        "Four functional digits on the manus in basal members",
-        "Specialized sacral vertebral articulations",
-        "Distinctive cervical vertebral morphology with low neural spines"
+        "Cranial ornamentation (horns, bosses, or rugose crests) in many members.",
+        "Extensive fusion of the pelvic elements, and of the astragalus and calcaneum to the tibia, in mature individuals.",
+        "Four functional digits retained on the manus in basal members.",
+        "Sacral and anterior caudal vertebrae with distinctive interlocking articulations in derived forms."
       ],
       "references": [
         {
           "id": "marsh1884",
-          "authors": "Marsh, O.C.",
+          "authors": "Marsh, O. C.",
           "year": 1884,
-          "title": "Principal characters of American Jurassic dinosaurs, Part VIII",
+          "title": "Principal characters of American Jurassic dinosaurs; Part VIII, The order Theropoda",
           "journal": "American Journal of Science",
           "volume": "27",
-          "pages": "329-340"
+          "issue": "160",
+          "pages": "329-340",
+          "publisher": "American Journal of Science",
+          "doi": "10.2475/ajs.s3-27.160.329",
+          "url": "http://dx.doi.org/10.2475/ajs.s3-27.160.329",
+          "notes": "Named Ceratosaurus and the order Ceratosauria, along with the family Ceratosauridae, on a near-complete skeleton from the Morrison Formation of Garden Park, Colorado."
         }
       ]
     },
     "Ceratosauridae": {
+      "description": "Ceratosauridae is a small family of ceratosaurian theropods comprising the Late Jurassic Ceratosaurus and the Early Cretaceous Genyodectes, recovered as the sister group of Abelisauroidea in most analyses. Its members are large-bodied ceratosaurs with elongate, blade-like teeth and, in Ceratosaurus, a row of midline osteoderms along the back and tail. The family occupies a position outside the abelisaurid–noasaurid radiation.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -1923,25 +1934,31 @@
         "Averostra",
         "Ceratosauria",
         "Ceratosauridae"
-      ]
-    },
-    "Ceratosauroidea": {
-      "taxonomy": [
-        "Life",
-        "Animalia",
-        "Chordata",
-        "Vertebrata",
-        "Sarcopterygii",
-        "Tetrapoda",
-        "Reptilia",
-        "Archosauria",
-        "Dinosauria",
-        "Saurischia",
-        "Theropoda",
-        "Neotheropoda",
-        "Averostra",
-        "Ceratosauria",
-        "Ceratosauroidea"
+      ],
+      "type_genus": "Ceratosaurus",
+      "described": 1884,
+      "authors": "Marsh, O. C.",
+      "diagnostic_features": [
+        "Greatly elongate maxillary and dentary tooth crowns that extend below the ventral margin of the jaws when the mouth is closed.",
+        "Nasal horn and paired lacrimal ridges (in Ceratosaurus).",
+        "Row of small median osteoderms along the dorsal midline (in Ceratosaurus).",
+        "Retention of a relatively deep, unornamented antorbital region compared to abelisaurids."
+      ],
+      "references": [
+        {
+          "id": "marsh1884",
+          "authors": "Marsh, O. C.",
+          "year": 1884,
+          "title": "Principal characters of American Jurassic dinosaurs; Part VIII, The order Theropoda",
+          "journal": "American Journal of Science",
+          "volume": "27",
+          "issue": "160",
+          "pages": "329-340",
+          "publisher": "American Journal of Science",
+          "doi": "10.2475/ajs.s3-27.160.329",
+          "url": "http://dx.doi.org/10.2475/ajs.s3-27.160.329",
+          "notes": "Named the family Ceratosauridae for Ceratosaurus."
+        }
       ]
     },
     "Ceratosuchopsini": {
@@ -3100,6 +3117,7 @@
       ]
     },
     "Elaphrosaurinae": {
+      "description": "Elaphrosaurinae is a subfamily of noasaurids erected by Rauhut and Carrano for Elaphrosaurus and its close relatives, defined as all noasaurids more closely related to Elaphrosaurus than to Noasaurus. Its members — Elaphrosaurus, Limusaurus, and the derived Huinculsaurus — are long-necked, lightly built ceratosaurs that span the Middle Jurassic to the Late Cretaceous and show a trend toward reduction or loss of the dentition. The clade is diagnosed by distinctive elongate, transversely constricted cervical and anterior dorsal vertebrae.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -3115,8 +3133,34 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Noasauridae",
         "Elaphrosaurinae"
+      ],
+      "type_genus": "Elaphrosaurus",
+      "described": 2016,
+      "authors": "Rauhut, O. W. M.; Carrano, M. T.",
+      "diagnostic_features": [
+        "Extreme transverse constriction of the posterior cervical and anterior dorsal vertebral centra.",
+        "Elongate, low cervical vertebrae producing a long neck.",
+        "Reduction or complete loss of the dentition (edentulism in Limusaurus).",
+        "Gracile, cursorial hindlimb proportions."
+      ],
+      "references": [
+        {
+          "id": "rauhut2016b",
+          "authors": "Rauhut, O. W. M.; Carrano, M. T.",
+          "year": 2016,
+          "title": "The theropod dinosaur Elaphrosaurus bambergi Janensch, 1920, from the Late Jurassic of Tendaguru, Tanzania",
+          "journal": "Zoological Journal of the Linnean Society",
+          "volume": "178",
+          "issue": "3",
+          "pages": "546-610",
+          "publisher": "Oxford University Press (OUP)",
+          "doi": "10.1111/zoj.12425",
+          "url": "http://dx.doi.org/10.1111/zoj.12425",
+          "notes": "Placed Elaphrosaurus in Noasauridae and erected the subfamily Elaphrosaurinae."
+        }
       ]
     },
     "Elasmaria": {
@@ -3194,26 +3238,6 @@
         "Avialae",
         "Ornithothoraces",
         "Enantiornithes"
-      ]
-    },
-    "Etrigansauria": {
-      "taxonomy": [
-        "Life",
-        "Animalia",
-        "Chordata",
-        "Vertebrata",
-        "Sarcopterygii",
-        "Tetrapoda",
-        "Reptilia",
-        "Archosauria",
-        "Dinosauria",
-        "Saurischia",
-        "Theropoda",
-        "Neotheropoda",
-        "Averostra",
-        "Ceratosauria",
-        "Ceratosauroidea",
-        "Etrigansauria"
       ]
     },
     "Euceratopsia": {
@@ -3517,7 +3541,7 @@
       ],
       "references": [
         {
-          "id": "delcourt2018",
+          "id": "delcourt2018a",
           "authors": "Delcourt, R.; Grillo, O. N.",
           "year": 2018,
           "title": "Tyrannosauroids from the Southern Hemisphere: implications for biogeography, evolution, and taxonomy",
@@ -3593,6 +3617,7 @@
       ]
     },
     "Furileusauria": {
+      "description": "Furileusauria is a clade of derived brachyrostran abelisaurids erected by Filippi and colleagues, defined as the most inclusive clade containing Carnotaurus but not Ilokelesia, Skorpiovenator, or Majungasaurus. It encompasses most of the latest Cretaceous South American abelisaurids, including Carnotaurus, Aucasaurus, Viavenator, and Llukalkan, and is diagnosed by derived features of the cervical vertebrae and hindlimb. The recently described European Caletodraco extends the clade beyond South America.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -3608,9 +3633,33 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Abelisauridae",
         "Brachyrostra",
         "Furileusauria"
+      ],
+      "described": 2016,
+      "authors": "Filippi, L. S.; Méndez, A. H.; Juárez Valieri, R. D.; Garrido, A. C.",
+      "diagnostic_features": [
+        "Cervical epipophyses bearing a stout, anteriorly directed prong.",
+        "Hypertrophied axial and cervical vertebral processes.",
+        "Axe-shaped (anteriorly expanded) cnemial crest of the tibia.",
+        "Mediolaterally compressed shaft of metatarsal II."
+      ],
+      "references": [
+        {
+          "id": "filippi2016",
+          "authors": "Filippi, L. S.; Méndez, A. H.; Juárez Valieri, R. D.; Garrido, A. C.",
+          "year": 2016,
+          "title": "A new brachyrostran with hypertrophied axial structures reveals an unexpected radiation of latest Cretaceous abelisaurids",
+          "journal": "Cretaceous Research",
+          "volume": "61",
+          "pages": "209-219",
+          "publisher": "Elsevier BV",
+          "doi": "10.1016/j.cretres.2015.12.018",
+          "url": "http://dx.doi.org/10.1016/j.cretres.2015.12.018",
+          "notes": "Named Viavenator and erected the clade Furileusauria."
+        }
       ]
     },
     "Genasauria": {
@@ -4862,7 +4911,8 @@
         }
       ]
     },
-    "Majungasaurini": {
+    "Majungasaurinae": {
+      "description": "Majungasaurinae is a subfamily of derived abelisaurids erected by Tortosa and colleagues for a mainly Indo-Madagascan radiation, defined as all abelisaurids more closely related to Majungasaurus than to Carnotaurus. Its members include Majungasaurus, Rajasaurus, Indosaurus, and Rahiolisaurus, together with the European Arcovenator, and are diagnosed by details of the frontal ornamentation and braincase. It is the reciprocal sister subclade to Brachyrostra within Abelisauridae.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -4878,9 +4928,34 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Abelisauridae",
-        "Carnotaurinae",
-        "Majungasaurini"
+        "Majungasaurinae"
+      ],
+      "type_genus": "Majungasaurus",
+      "described": 2014,
+      "authors": "Tortosa, T.; Buffetaut, E.; Vialle, N.; Dutour, Y.; Turini, E.; Cheylan, G.",
+      "diagnostic_features": [
+        "Single median frontal horn or dome (rather than paired cornual structures).",
+        "Thickened frontals with a distinct nuchal crest.",
+        "Reduced supratemporal fossa on the frontal.",
+        "Fusion of the frontals in mature individuals."
+      ],
+      "references": [
+        {
+          "id": "tortosa2014",
+          "authors": "Tortosa, T.; Buffetaut, E.; Vialle, N.; Dutour, Y.; Turini, E.; Cheylan, G.",
+          "year": 2014,
+          "title": "A new abelisaurid dinosaur from the Late Cretaceous of southern France: Palaeobiogeographical implications",
+          "journal": "Annales de Paléontologie",
+          "volume": "100",
+          "issue": "1",
+          "pages": "63-86",
+          "publisher": "Elsevier BV",
+          "doi": "10.1016/j.annpal.2013.10.003",
+          "url": "http://dx.doi.org/10.1016/j.annpal.2013.10.003",
+          "notes": "Named Arcovenator and erected the subfamily Majungasaurinae."
+        }
       ]
     },
     "Mamenchisauridae": {
@@ -5625,7 +5700,7 @@
       ]
     },
     "Noasauridae": {
-      "description": "Noasauridae is a family of small to medium-sized ceratosaurian theropod dinosaurs known primarily from Gondwanan continents during the Cretaceous period. Noasaurids were lightly built, gracile predators or omnivores, and represent the smaller-bodied counterpart to their sister group Abelisauridae within Abelisauria. Notable members include Noasaurus, Masiakasaurus, and Elaphrosaurus.\n",
+      "description": "Noasauridae is a family of small to medium-sized ceratosaurian theropods, the gracile sister group of Abelisauridae within Abelisauroidea. Known mainly from the Gondwanan continents but also from the Jurassic of Africa and Asia, noasaurids were lightly built predators and omnivores. The family is usually divided into the sickle-clawed Noasaurinae and the toothless, long-necked Elaphrosaurinae, subtended by a grade of basal forms such as Deltadromeus and Kiyacursor.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -5641,30 +5716,33 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Noasauridae"
       ],
+      "type_genus": "Noasaurus",
       "described": 1980,
-      "authors": "Bonaparte & Powell",
+      "authors": "Bonaparte, J. F.; Powell, J. E.",
       "diagnostic_features": [
-        "Small to medium body size with gracile build",
-        "Lightly constructed skull",
-        "Elongate cervical vertebrae relative to abelisaurids",
-        "Procumbent (forward-projecting) teeth in some taxa",
-        "Relatively long and slender hindlimbs"
+        "Small body size and lightly constructed, gracile skeleton.",
+        "Elongate cervical vertebrae relative to abelisaurids.",
+        "Strongly modified, enlarged manual or pedal ungual in some members.",
+        "Slender, cursorial hindlimb proportions."
       ],
       "references": [
         {
-          "id": "bonapartepowell1980",
-          "authors": "Bonaparte, J.F. & Powell, J.E.",
+          "id": "bonaparte1980",
+          "authors": "Bonaparte, J. F.; Powell, J. E.",
           "year": 1980,
           "title": "A continental assemblage of tetrapods from the Upper Cretaceous beds of El Brete, northwestern Argentina (Sauropoda-Coelurosauria-Carnosauria-Aves)",
-          "journal": "Memoires de la Societe Geologique de France",
+          "journal": "Mémoires de la Société Géologique de France, Nouvelle Série",
           "volume": "139",
-          "pages": "19-28"
+          "pages": "19-28",
+          "notes": "Named Noasaurus and the family Noasauridae."
         }
       ]
     },
     "Noasaurinae": {
+      "description": "Noasaurinae is the subfamily of noasaurids containing Noasaurus and its close relatives, defined as all noasaurids more closely related to Noasaurus than to Elaphrosaurus. The name dates by coordination from Bonaparte and Powell's family Noasauridae and was given a phylogenetic definition by Rauhut and Carrano. Its members — Noasaurus, Masiakasaurus, Velocisaurus, Vespersaurus, and Laevisuchus — form a Late Cretaceous Gondwanan radiation of small, sickle-clawed predators with distinctive procumbent anterior teeth.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -5680,8 +5758,44 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Noasauridae",
         "Noasaurinae"
+      ],
+      "type_genus": "Noasaurus",
+      "described": 1980,
+      "authors": "Bonaparte, J. F.; Powell, J. E.",
+      "diagnostic_features": [
+        "Reduced proximal end of metatarsal II.",
+        "Procumbent, forward-projecting anterior dentary teeth in several members.",
+        "Strongly recurved, enlarged pedal or manual ungual.",
+        "Cervical vertebrae with well-developed epipophyses."
+      ],
+      "references": [
+        {
+          "id": "bonaparte1980",
+          "authors": "Bonaparte, J. F.; Powell, J. E.",
+          "year": 1980,
+          "title": "A continental assemblage of tetrapods from the Upper Cretaceous beds of El Brete, northwestern Argentina (Sauropoda-Coelurosauria-Carnosauria-Aves)",
+          "journal": "Mémoires de la Société Géologique de France, Nouvelle Série",
+          "volume": "139",
+          "pages": "19-28",
+          "notes": "Named Noasaurus, the basis for Noasaurinae by coordination."
+        },
+        {
+          "id": "rauhut2016b",
+          "authors": "Rauhut, O. W. M.; Carrano, M. T.",
+          "year": 2016,
+          "title": "The theropod dinosaur Elaphrosaurus bambergi Janensch, 1920, from the Late Jurassic of Tendaguru, Tanzania",
+          "journal": "Zoological Journal of the Linnean Society",
+          "volume": "178",
+          "issue": "3",
+          "pages": "546-610",
+          "publisher": "Oxford University Press (OUP)",
+          "doi": "10.1111/zoj.12425",
+          "url": "http://dx.doi.org/10.1111/zoj.12425",
+          "notes": "Provided the phylogenetic definition of Noasaurinae."
+        }
       ]
     },
     "Nodosauridae": {
@@ -9272,7 +9386,16 @@
     },
     "Abelisaurus": {
       "genus": "Abelisaurus",
-      "parent": "Abelisaurinae",
+      "parent": "Abelisauridae",
+      "dispute": {
+        "summary": "The position of Abelisaurus is unresolved and it behaves as a wildcard taxon. It has been recovered as a basal abelisaurid (Carrano and Sampson, 2008), within Furileusauria as a relative of Carnotaurus and Aucasaurus (Filippi and colleagues, 2016; Gianechini and colleagues, 2021), within Carnotaurini (Tortosa and colleagues, 2014), and within Majungasaurinae (Pol and colleagues, 2024).\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Abelisauridae, the least-inclusive uncontested node, given its instability (P2).\n"
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "ah-BEL-i-SAWR-us",
         "ipa": "/əˌbɛlɪˈsɔːrəs/"
@@ -9420,10 +9543,8 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
-        "Abelisauridae",
-        "Brachyrostra",
-        "Furileusauria",
-        "Abelisaurinae"
+        "Abelisauroidea",
+        "Abelisauridae"
       ],
       "authors": "Bonaparte, J. F.; Novas, F. E.",
       "described": 1985
@@ -17744,14 +17865,14 @@
               "max": 3
             }
           },
-          "erected_in": "bonaparte1991",
+          "erected_in": "bonaparte1991a",
           "authors": "Bonaparte, J. F.",
           "described": 1991
         }
       ],
       "references": [
         {
-          "id": "bonaparte1991",
+          "id": "bonaparte1991a",
           "authors": "Bonaparte, J. F.",
           "year": 1991,
           "title": "Los vertebrados fósiles de la Formación Rio Colorado, de la Ciudad de Neuquén y Cercanías, Cretácico Superior, Argentina [The vertebrate fossils of the Rio Colorado Formation, from the city of Neuquén and surrounding areas, Upper Cretaceous, Argentina]",
@@ -26062,7 +26183,16 @@
     },
     "Arcovenator": {
       "genus": "Arcovenator",
-      "parent": "Majungasaurini",
+      "parent": "Majungasaurinae",
+      "dispute": {
+        "summary": "Arcovenator is placed in Majungasaurinae by its describers (Tortosa and colleagues, 2014) and most analyses, but Pol and colleagues (2024) instead recovered it within Brachyrostra.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Majungasaurinae following the erecting analysis and prevailing usage (P2, P3).\n"
+          }
+        ]
+      },
       "etymology": "From the river Arc (flowing near the discovery site in France) + Latin venator meaning 'hunter'; overall meaning 'Arc hunter'.",
       "pronunciation": {
         "phonetic": "ahr-KO-veh-NAY-tuhr"
@@ -26198,9 +26328,9 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Abelisauridae",
-        "Carnotaurinae",
-        "Majungasaurini"
+        "Majungasaurinae"
       ],
       "authors": "Tortosa, T.; Buffetaut, E.; Vialle, N.; Dutour, Y.; Turini, E.; Cheylan, G.",
       "described": 2014
@@ -29751,7 +29881,7 @@
     },
     "Aucasaurus": {
       "genus": "Aucasaurus",
-      "parent": "Brachyrostra",
+      "parent": "Furileusauria",
       "etymology": "Named after Auca Mahuevo, the fossil site in Argentina where it was found; 'saur' from Greek sauros meaning 'lizard'. Full meaning: 'Auca Mahuevo lizard'.",
       "description": "Aucasaurus is a genus of medium-sized abelisaurid theropod dinosaur from Argentina that lived during the Late Cretaceous (Santonian to Campanian stage) of the Anacleto Formation. It was smaller than the related Carnotaurus, although more derived in some ways, such as its extremely reduced arms and almost total lack of fingers.",
       "diet": "carnivore",
@@ -29871,8 +30001,10 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Abelisauridae",
-        "Brachyrostra"
+        "Brachyrostra",
+        "Furileusauria"
       ],
       "authors": "Coria, R. A.; Chiappe, L. M.; Dingus, L.",
       "described": 2002
@@ -30612,6 +30744,15 @@
     "Austrocheirus": {
       "genus": "Austrocheirus",
       "parent": "Noasauridae",
+      "dispute": {
+        "summary": "The position of Austrocheirus is unresolved: it was originally described as a basal abelisauroid (Ezcurra and colleagues, 2010), later assigned within Noasauridae (Tortosa and colleagues, 2014), and recovered by Hendrickx and colleagues (2024) in the poorly supported clade Berthasauridae, sister to Abelisauroidea.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Noasauridae following Tortosa and colleagues (2014) and reference-work usage (P2); Berthasauridae recorded but not adopted (P5).\n"
+          }
+        ]
+      },
       "etymology": "From Latin austro- meaning 'southern' + Greek cheir (χείρ) meaning 'hand'; overall meaning 'southern hand', referring to its discovery in southern Argentina and the partial hand fossils known.",
       "pronunciation": {
         "phonetic": "OSS-tro-KIE-russ"
@@ -30726,6 +30867,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Noasauridae"
       ],
       "authors": "Ezcurra, M. D.; Agnolin, F. L.; Novas, F. E.",
@@ -36190,7 +36332,7 @@
     },
     "Berberosaurus": {
       "genus": "Berberosaurus",
-      "parent": "Ceratosauridae",
+      "parent": "Ceratosauria",
       "etymology": "From Berber (referring to the Berber people of Morocco, near where the fossils were found) + Greek sauros (σαῦρος) meaning 'lizard'; overall meaning 'Berber lizard'.",
       "pronunciation": {
         "phonetic": "BUHR-buh-SOR-us"
@@ -36307,8 +36449,7 @@
         "Theropoda",
         "Neotheropoda",
         "Averostra",
-        "Ceratosauria",
-        "Ceratosauridae"
+        "Ceratosauria"
       ],
       "authors": "Allain, R.; Tykoski, R.; Aquesbi, N.; Jalil, N.-E.; Monbaron, M.; Russell, D.; Taquet, P.",
       "described": 2007
@@ -36316,6 +36457,15 @@
     "Berthasaura": {
       "genus": "Berthasaura",
       "parent": "Noasauridae",
+      "dispute": {
+        "summary": "Berthasaura was described as the basalmost noasaurid, the placement followed here, but Hendrickx and colleagues (2024) recovered it in a new clade Berthasauridae (with Austrocheirus and Afromimus) as the sister group of Abelisauroidea; that clade was recovered in only one of three analyses and is acknowledged to be poorly supported.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Noasauridae following the describing analysis and prevailing reference-work usage (P2, P5); Berthasauridae recorded but not adopted.\n"
+          }
+        ]
+      },
       "etymology": "Named after Bertha Lutz, a prominent Brazilian scientist and feminist, combined with Greek sauros (σαῦρος) meaning 'lizard'; overall meaning 'Bertha's lizard'.",
       "pronunciation": {
         "phonetic": "BUR-tha-SOR-uh"
@@ -36463,6 +36613,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Noasauridae"
       ],
       "authors": "de Souza, G. A.; Soares, M. B.; Weinschütz, L. C.; Wilner, E.; Lopes, R. T.; de Araújo, O. M. O.; Kellner, A. W. A.",
@@ -36470,7 +36621,16 @@
     },
     "Betasuchus": {
       "genus": "Betasuchus",
-      "parent": "Ceratosauria",
+      "parent": "Abelisauroidea",
+      "dispute": {
+        "summary": "Betasuchus is based on a single femur fragment and is widely regarded as a nomen dubium. It is generally interpreted as an abelisaurid, although Carrano and Sampson (2008) placed it only as an indeterminate ceratosaur and an affinity with Dryptosaurus has also been proposed.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Abelisauroidea incertae sedis following the prevailing interpretation (P2).\n"
+          }
+        ]
+      },
       "etymology": "From Greek 'beta' (the second letter) and 'suchos' meaning 'crocodile'; von Huene coined the name when renaming 'Megalosaurus bredai' in 1932, giving 'B crocodile'.",
       "pronunciation": {
         "phonetic": "BAYT-uh-SOOK-us"
@@ -36591,7 +36751,8 @@
         "Theropoda",
         "Neotheropoda",
         "Averostra",
-        "Ceratosauria"
+        "Ceratosauria",
+        "Abelisauroidea"
       ],
       "authors": "Huene, F. V.",
       "described": 1932
@@ -43255,6 +43416,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Abelisauridae",
         "Brachyrostra",
         "Furileusauria"
@@ -45111,6 +45273,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Abelisauridae",
         "Brachyrostra",
         "Furileusauria"
@@ -48910,7 +49073,7 @@
     },
     "Chenanisaurus": {
       "genus": "Chenanisaurus",
-      "parent": "Etrigansauria",
+      "parent": "Abelisauridae",
       "etymology": "Named after Sidi Chennane, the locality in Morocco (Khouribga phosphate mines) where the fossil was found, + Greek sauros ('lizard'), meaning 'Sidi Chennane lizard'.",
       "pronunciation": {
         "phonetic": "sheh-NAN-eye-SOR-us"
@@ -49021,8 +49184,8 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
-        "Ceratosauroidea",
-        "Etrigansauria"
+        "Abelisauroidea",
+        "Abelisauridae"
       ],
       "authors": "Longrich, N. R.; Pereda-Suberbiola, X.; Jalil, N.-E.; Khaldoune, F.; Jourani, E.",
       "described": 2017
@@ -53007,6 +53170,15 @@
     "Coeluroides": {
       "genus": "Coeluroides",
       "parent": "Abelisauroidea",
+      "dispute": {
+        "summary": "Coeluroides is known from caudal vertebrae and is usually regarded as a nomen dubium, although Novas and colleagues (2004) considered it possibly a valid indeterminate abelisauroid; a synonymy with Ornithomimoides has also been proposed.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Abelisauroidea incertae sedis (P2).\n"
+          }
+        ]
+      },
       "etymology": "From Coelurus (a related theropod genus, itself from Greek 'koilos' (hollow) and 'oura' (tail)) and Greek '-oides' (resembling); meaning 'Coelurus-like'.",
       "pronunciation": {
         "phonetic": "see-loo-ROY-deez"
@@ -53927,7 +54099,16 @@
     },
     "Compsosuchus": {
       "genus": "Compsosuchus",
-      "parent": "Abelisauridae",
+      "parent": "Abelisauroidea",
+      "dispute": {
+        "summary": "Compsosuchus is based on fragmentary axial material and is generally treated as a nomen dubium (Novas and colleagues, 2004). It has been interpreted as an allosauroid, an abelisaurid, and a noasaurid, without resolution.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Abelisauroidea incertae sedis as a nomen dubium (P2).\n"
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "KOMP-so-SOO-kus"
       },
@@ -54028,7 +54209,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
-        "Abelisauridae"
+        "Abelisauroidea"
       ],
       "authors": "Huene, F. V.; Matley, C. A.",
       "described": 1933
@@ -57177,7 +57358,16 @@
     },
     "Dahalokely": {
       "genus": "Dahalokely",
-      "parent": "Brachyrostra",
+      "parent": "Abelisauroidea",
+      "dispute": {
+        "summary": "Dahalokely is confidently an abelisauroid, but its finer placement is unresolved. The describing analysis (Farke and Sertich, 2013) recovered it weakly as a basal noasaurid, whereas later analyses place it within Abelisauridae, variously as a basal brachyrostran (Filippi and colleagues, 2016) or a majungasaurine, and it is frequently recovered as an unstable taxon.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at the least-inclusive uncontested node, Abelisauroidea, pending resolution (P2).\n"
+          }
+        ]
+      },
       "etymology": "From Malagasy 'dahalo' meaning 'thief' and 'kely' meaning 'small', giving 'small thief', referring to its estimated small size relative to known abelisaurids; the specific name tokana means 'lonely' in Malagasy, referencing Madagascar's isolation.",
       "pronunciation": {
         "phonetic": "dah-HAH-loo-KAY-lee"
@@ -57292,8 +57482,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
-        "Abelisauridae",
-        "Brachyrostra"
+        "Abelisauroidea"
       ],
       "authors": "Farke, A. A.; Sertich, J. J. W.",
       "described": 2013
@@ -59610,6 +59799,15 @@
     "Deltadromeus": {
       "genus": "Deltadromeus",
       "parent": "Noasauridae",
+      "dispute": {
+        "summary": "The affinities of Deltadromeus are contested. Carrano and Sampson (2008) and Rauhut and Carrano (2016) recovered it as a basal noasaurid, the interpretation followed here, but it has also been interpreted as a coelurosaur, a megaraptoran-grade avetheropod, and a basal carcharodontosaurian (Hendrickx and colleagues, 2024), and a synonymy with Bahariasaurus has been proposed.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Noasauridae following the prevailing interpretation (P2, P3); the non-ceratosaur alternatives are recorded.\n"
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "DEL-ta-DROHM-ee-us"
       },
@@ -59727,6 +59925,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Noasauridae"
       ],
       "authors": "Sereno, P. C.; Dutheil, D. B.; Iarochene, M.; Larsson, H. C. E.; Lyon, G. H.; Magwene, P. M.; Sidor, C. A.; Varricchio, D. J.; Wilson, J. A.",
@@ -64551,6 +64750,15 @@
     "Dryptosauroides": {
       "genus": "Dryptosauroides",
       "parent": "Abelisauridae",
+      "dispute": {
+        "summary": "Dryptosauroides is based on caudal vertebrae and is generally regarded as a nomen dubium (Novas and colleagues, 2004); the material is now thought to represent an indeterminate abelisaurid.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Abelisauridae incertae sedis as a nomen dubium (P2).\n"
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "DRIP-toh-sawr-OY-deez"
       },
@@ -64695,6 +64903,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Abelisauridae"
       ],
       "authors": "Huene, F. V.; Matley, C. A.",
@@ -67648,6 +67857,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Abelisauridae",
         "Brachyrostra"
       ],
@@ -67921,6 +68131,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Noasauridae",
         "Elaphrosaurinae"
       ],
@@ -67929,7 +68140,16 @@
     },
     "Elemgasem": {
       "genus": "Elemgasem",
-      "parent": "Furileusauria",
+      "parent": "Brachyrostra",
+      "dispute": {
+        "summary": "Elemgasem is a brachyrostran whose exact position is uncertain; the describing analyses (Baiano and colleagues, 2022) recovered it either within Furileusauria or as its sister taxon, and it is an unstable taxon.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Brachyrostra, the least-inclusive uncontested node (P2).\n"
+          }
+        ]
+      },
       "etymology": "Named after Elemgasem, a deity in Tehuelche mythology from the indigenous people of Patagonia; the name is taken directly from Tehuelche tradition",
       "description": "Elemgasem is an extinct genus of brachyrostran abelisaurid from the Late Cretaceous Portezuelo Formation of Patagonia, Argentina. The genus contains a single species, Elemgasem nubilus. The cladistic position of Elemgasem within Brachyrostra is uncertain, given that phylogenetic analyses recover it as either a sister taxon to Furileusauria or in several positions within this clade.",
       "diet": "carnivore",
@@ -68051,9 +68271,9 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Abelisauridae",
-        "Brachyrostra",
-        "Furileusauria"
+        "Brachyrostra"
       ],
       "authors": "Baiano, M. A.; Pol, D.; Bellardini, F.; Windholz, G. J.; Cerda, I. A.; Garrido, A. C.; Coria, R. A.",
       "described": 2022
@@ -69063,6 +69283,15 @@
     "Eoabelisaurus": {
       "genus": "Eoabelisaurus",
       "parent": "Abelisauridae",
+      "dispute": {
+        "summary": "Eoabelisaurus is recovered as the basalmost abelisaurid by its describers (Pol and Rauhut, 2012) and by Zaher and colleagues (2020), but several analyses instead place it outside Abelisauridae as a basal abelisauroid, and one hypothesis allies it with Ceratosauridae.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Abelisauridae following the describing analysis and Zaher and colleagues (2020) (P2, P3).\n"
+          }
+        ]
+      },
       "pronunciation": {
         "ipa": "/ˈioʊəˌbɛlɪˈsɔːrəs/",
         "phonetic": "EE-o-ah-BEL-i-SOR-us"
@@ -69179,6 +69408,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Abelisauridae"
       ],
       "authors": "Pol, D.; Rauhut, O. W. M.",
@@ -75263,7 +75493,16 @@
     },
     "Fosterovenator": {
       "genus": "Fosterovenator",
-      "parent": "Ceratosauridae",
+      "parent": "Ceratosauria",
+      "dispute": {
+        "summary": "Fosterovenator is known only from an isolated juvenile tibia and astragalus and a fibula of a larger individual, and no phylogenetic analysis has tested its position. Its original description assigns it to Ceratosauridae yet argues it is closer to Elaphrosaurus, while also noting that the tibia resembles that of a basal tetanuran; its validity is uncertain.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed conservatively at Ceratosauria incertae sedis pending redescription (P2).\n"
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "FOS-ter-o-ven-AY-tor"
       },
@@ -75386,8 +75625,7 @@
         "Theropoda",
         "Neotheropoda",
         "Averostra",
-        "Ceratosauria",
-        "Ceratosauridae"
+        "Ceratosauria"
       ],
       "authors": "Dalman, S. G.",
       "described": 2014
@@ -79489,7 +79727,16 @@
     },
     "Genusaurus": {
       "genus": "Genusaurus",
-      "parent": "Majungasaurini",
+      "parent": "Abelisauridae",
+      "dispute": {
+        "summary": "The placement of Genusaurus is contentious. It has been assigned to Coelophysoidea originally, then to Noasauridae (Carrano and Sampson, 2008), and to Abelisauridae by most subsequent analyses (Tortosa and colleagues, 2014; Rauhut and Carrano, 2016; Pol and colleagues, 2024), where it is often unstable.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Abelisauridae following the prevailing recent analyses (P2, P3).\n"
+          }
+        ]
+      },
       "etymology": "Knee lizard; from Latin genu (knee) and Greek sauros (lizard), referring to distinctive features of the knee region",
       "pronunciation": {
         "phonetic": "JEN-yuu-SOR-uhs",
@@ -79606,16 +79853,15 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
-        "Abelisauridae",
-        "Carnotaurinae",
-        "Majungasaurini"
+        "Abelisauroidea",
+        "Abelisauridae"
       ],
       "authors": "Accarie, H.; Beaudoin, B.; Dejax, J.; Friès, G.; Michard, J.-G.; Taquet, P.",
       "described": 1995
     },
     "Genyodectes": {
       "genus": "Genyodectes",
-      "parent": "Ceratosauria",
+      "parent": "Ceratosauridae",
       "etymology": "Jaw bite; from Greek genys (jaw) and dektes (bite)",
       "pronunciation": {
         "phonetic": "JEN-ee-o-DEK-teez"
@@ -79748,7 +79994,8 @@
         "Theropoda",
         "Neotheropoda",
         "Averostra",
-        "Ceratosauria"
+        "Ceratosauria",
+        "Ceratosauridae"
       ],
       "authors": "Woodward, A. S.",
       "described": 1901
@@ -84982,6 +85229,15 @@
     "Guemesia": {
       "genus": "Guemesia",
       "parent": "Brachyrostra",
+      "dispute": {
+        "summary": "Guemesia was tentatively placed in Brachyrostra by its describers, who noted a puzzling mix of majungasaurine and basal-abelisaurid features; Pol and colleagues (2024) recovered it within Furileusauria, while others suggest it could represent a distinct lineage.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Brachyrostra, the least-inclusive uncontested node (P2).\n"
+          }
+        ]
+      },
       "etymology": "Named after Martín Miguel de Güemes, an Argentine independence hero whose death bicentenary was in 2021",
       "pronunciation": {
         "phonetic": "gweh-MAY-see-uh"
@@ -85083,6 +85339,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Abelisauridae",
         "Brachyrostra"
       ],
@@ -91791,7 +92048,16 @@
     },
     "Huinculsaurus": {
       "genus": "Huinculsaurus",
-      "parent": "Noasauridae",
+      "parent": "Elaphrosaurinae",
+      "dispute": {
+        "summary": "Huinculsaurus was described as a close relative of Elaphrosaurus and is treated as the most derived elaphrosaurine by reference works, the placement followed here, but the material is fragmentary and it is recovered as an unstable taxon, with some analyses finding it a more general noasaurid.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Elaphrosaurinae following the describing analysis and reference-work usage (P2).\n"
+          }
+        ]
+      },
       "etymology": "Named after the Huincul Formation of Argentina where it was found, combined with Greek sauros (lizard); meaning 'Huincul lizard'",
       "pronunciation": {
         "phonetic": "HYOO-win-kul-SOR-us"
@@ -91915,7 +92181,9 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
-        "Noasauridae"
+        "Abelisauroidea",
+        "Noasauridae",
+        "Elaphrosaurinae"
       ],
       "authors": "Baiano, M. A.; Coria, R. A.; Cau, A.",
       "described": 2020
@@ -94966,6 +95234,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Abelisauridae",
         "Brachyrostra"
       ],
@@ -95368,7 +95637,16 @@
     },
     "Indosaurus": {
       "genus": "Indosaurus",
-      "parent": "Majungasaurini",
+      "parent": "Majungasaurinae",
+      "dispute": {
+        "summary": "Indosaurus is consistently placed in Majungasaurinae (Tortosa and colleagues, 2014), though it has occasionally been regarded as a nomen dubium (Novas and colleagues, 2010) and may be synonymous with Indosuchus.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Majungasaurinae following Tortosa and colleagues (2014) (P2).\n"
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "IN-do-SAWR-us"
       },
@@ -95483,9 +95761,9 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Abelisauridae",
-        "Carnotaurinae",
-        "Majungasaurini"
+        "Majungasaurinae"
       ],
       "authors": "Huene, F. V.; Matley, C. A.",
       "described": 1933
@@ -95493,6 +95771,15 @@
     "Indosuchus": {
       "genus": "Indosuchus",
       "parent": "Abelisauridae",
+      "dispute": {
+        "summary": "Indosuchus is a valid abelisaurid, but its finer relationships are unsettled and it may be a senior synonym of, or conspecific with, Indosaurus; much of its historically referred material has been reassigned to other taxa.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Abelisauridae pending revision (P2).\n"
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "IN-do-SOOK-us"
       },
@@ -95609,6 +95896,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Abelisauridae"
       ],
       "authors": "Huene, F. V.; Matley, C. A.",
@@ -105272,6 +105560,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Noasauridae"
       ],
       "authors": "Averianov, A. O.; Skutschas, P. P.; Atuchin, A. A.; Slobodin, D. A.; Feofanova, O. A.; Vladimirova, O. N.",
@@ -105702,6 +105991,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Abelisauridae",
         "Brachyrostra",
         "Furileusauria"
@@ -106822,6 +107112,15 @@
     "Kryptops": {
       "genus": "Kryptops",
       "parent": "Abelisauridae",
+      "dispute": {
+        "summary": "The validity of Kryptops is debated: only the maxilla of the holotype is securely abelisaurid, and the associated postcranium may be a chimera, possibly belonging to a carcharodontosaurid such as Eocarcharia (Delcourt, 2018). Its position within Abelisauridae is unstable across analyses.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Abelisauridae following the maxillary evidence (P2).\n"
+          }
+        ]
+      },
       "etymology": "From Greek kryptos (covered/hidden) and ops (face); meaning \"covered face\", referring to the heavily textured surface of the maxilla",
       "pronunciation": {
         "phonetic": "CRIP-tops"
@@ -106936,6 +107235,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Abelisauridae"
       ],
       "authors": "Sereno, P. C.; Brusatte, S. L.",
@@ -107641,6 +107941,15 @@
     "Kurupi": {
       "genus": "Kurupi",
       "parent": "Abelisauridae",
+      "dispute": {
+        "summary": "Kurupi is a derived abelisaurid of uncertain subclade: Pol and colleagues (2024) list it among furileusaurians, but it is an unstable taxon and other treatments place it in an unresolved polytomy between Majungasaurinae and Brachyrostra.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Abelisauridae, the least-inclusive uncontested node (P2).\n"
+          }
+        ]
+      },
       "description": "Kurupi itaata is an extinct species of abelisaurid theropod dinosaurs from the Late Cretaceous Marília Formation of Brazil. It is the only species in the genus Kurupi.",
       "etymology": "Named for Kurupi, a god of fertility and sexuality from Guaraní mythology; chosen to reference the discovery of the holotype near a love hotel ('Motel Paraíso' / 'Paradise Motel').",
       "diet": "carnivore",
@@ -107738,6 +108047,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Abelisauridae"
       ],
       "authors": "Iori, F. V.; Araújo-Júnior, H. I. de; Tavares, S. A. S.; Marinho, T. da S.; Martinelli, A. G.",
@@ -108005,7 +108315,7 @@
     },
     "Laevisuchus": {
       "genus": "Laevisuchus",
-      "parent": "Noasauridae",
+      "parent": "Noasaurinae",
       "pronunciation": {
         "ipa": "/ˌlɛvɪˈsjuːkəs/",
         "phonetic": "LEE-vi-SOOK-us"
@@ -108123,7 +108433,9 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
-        "Noasauridae"
+        "Abelisauroidea",
+        "Noasauridae",
+        "Noasaurinae"
       ],
       "authors": "Huene, F. V.; Matley, C. A.",
       "described": 1933
@@ -108608,6 +108920,15 @@
     "Lametasaurus": {
       "genus": "Lametasaurus",
       "parent": "Abelisauridae",
+      "dispute": {
+        "summary": "Lametasaurus is a chimera based on associated but probably non- conspecific elements and is widely regarded as a nomen dubium. Some of the material conforms to Abelisauridae, and it has been suggested as a possible senior synonym of Indosaurus or Rajasaurus, though the holotype is lost.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Abelisauridae as a nomen dubium pending revision (P2).\n"
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "luh-MAY-tuh-SOR-us"
       },
@@ -108709,6 +109030,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Abelisauridae"
       ],
       "authors": "Matley, C. A.",
@@ -112563,7 +112885,16 @@
     },
     "Ligabueino": {
       "genus": "Ligabueino",
-      "parent": "Noasauridae",
+      "parent": "Abelisauroidea",
+      "dispute": {
+        "summary": "Ligabueino, a tiny and fragmentary taxon, was originally regarded as a noasaurid, but Carrano and colleagues (2011) could place it only within Abelisauroidea, and Hendrickx and colleagues (2024) recovered it near the base of that clade.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Abelisauroidea following the most confident published assignment (P2).\n"
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "LEE-gah-BOO-ay-EE-noh"
       },
@@ -112663,7 +112994,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
-        "Noasauridae"
+        "Abelisauroidea"
       ],
       "authors": "Bonaparte, J. F.",
       "described": 1996
@@ -113258,6 +113589,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Noasauridae",
         "Elaphrosaurinae"
       ],
@@ -114534,6 +114866,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Abelisauridae",
         "Brachyrostra",
         "Furileusauria"
@@ -119153,7 +119486,7 @@
     },
     "Majungasaurus": {
       "genus": "Majungasaurus",
-      "parent": "Majungasaurini",
+      "parent": "Majungasaurinae",
       "pronunciation": {
         "ipa": "/məˌdʒʌŋɡəˈsɔːrəs/",
         "phonetic": "mah-joon-gah-sore-us"
@@ -119358,9 +119691,9 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Abelisauridae",
-        "Carnotaurinae",
-        "Majungasaurini"
+        "Majungasaurinae"
       ],
       "authors": "Lavocat, R.",
       "described": 1955
@@ -121802,6 +122135,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Noasauridae",
         "Noasaurinae"
       ],
@@ -134284,7 +134618,7 @@
     },
     "Niebla": {
       "genus": "Niebla",
-      "parent": "Abelisaurinae",
+      "parent": "Furileusauria",
       "etymology": "From Spanish 'niebla' meaning 'mist', referring to the foggy days during the excavation of the fossil.",
       "pronunciation": {
         "phonetic": "nyeh-blah"
@@ -134419,10 +134753,10 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Abelisauridae",
         "Brachyrostra",
-        "Furileusauria",
-        "Abelisaurinae"
+        "Furileusauria"
       ],
       "authors": "Aranciaga Rolando, M.; Cerroni, M. A.; Garcia Marsà, J. A.; Agnolín, F. L.; Motta, M. J.; Rozadilla, S.; Brisson Eglí, F.; Novas, F. E.",
       "described": 2021
@@ -135233,6 +135567,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Noasauridae",
         "Noasaurinae"
       ],
@@ -139377,6 +139712,15 @@
     "Ornithomimoides": {
       "genus": "Ornithomimoides",
       "parent": "Abelisauroidea",
+      "dispute": {
+        "summary": "Ornithomimoides is based on isolated vertebrae and is generally treated as a nomen dubium; reviews suggest an abelisauroid affinity, and a synonymy with Coeluroides has been proposed.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Abelisauroidea incertae sedis (P2).\n"
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "or-NITH-o-mie-MOI-deez"
       },
@@ -140123,6 +140467,15 @@
     "Orthogoniosaurus": {
       "genus": "Orthogoniosaurus",
       "parent": "Ceratosauria",
+      "dispute": {
+        "summary": "Orthogoniosaurus is founded on a single incomplete tooth and has long been regarded as a nomen dubium (Carrano and Sampson, 2008); one review considered it possibly ceratosaurian, but it cannot be placed more precisely.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Retained at Ceratosauria incertae sedis as a nomen dubium (P2).\n"
+          }
+        ]
+      },
       "etymology": "From Greek 'orthos' (straight), 'gonia' (angle), and 'sauros' (lizard); meaning 'straight angled lizard', referring to the straight posterior edge of its type tooth.",
       "pronunciation": {
         "phonetic": "OR-tho-GOH-nee-o-SOR-us"
@@ -155188,7 +155541,16 @@
     },
     "Pterospondylus": {
       "genus": "Pterospondylus",
-      "parent": "Ceratosauria",
+      "parent": "Coelophysoidea",
+      "dispute": {
+        "summary": "Pterospondylus is based on a single Late Triassic dorsal vertebra, and its original description assigns it to no clade; it is generally regarded as a nomen dubium and a probable coelophysoid (Rauhut and Hungerbühler, 1998), not a ceratosaur.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Evicted from Ceratosauria and placed conservatively at Coelophysoidea as a probable coelophysoid nomen dubium; deferred to the coelophysoid/theropod-backbone pass (P2).\n"
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "terr-oh-SPON-dih-lus"
       },
@@ -155288,8 +155650,7 @@
         "Saurischia",
         "Theropoda",
         "Neotheropoda",
-        "Averostra",
-        "Ceratosauria"
+        "Coelophysoidea"
       ],
       "authors": "Jaekel, O.",
       "described": 1914
@@ -156248,6 +156609,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Abelisauridae",
         "Brachyrostra",
         "Furileusauria"
@@ -158067,6 +158429,15 @@
     "Quilmesaurus": {
       "genus": "Quilmesaurus",
       "parent": "Furileusauria",
+      "dispute": {
+        "summary": "Quilmesaurus was argued to be a nomen dubium by Juárez Valieri and colleagues (2007) for lacking unambiguous autapomorphies, but numerous subsequent studies continue to treat it as a valid furileusaurian abelisaurid.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Retained at Furileusauria following prevailing usage (P2, P5).\n"
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "keel-may-SAWR-us"
       },
@@ -158191,6 +158562,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Abelisauridae",
         "Brachyrostra",
         "Furileusauria"
@@ -158344,7 +158716,16 @@
     },
     "Rahiolisaurus": {
       "genus": "Rahiolisaurus",
-      "parent": "Brachyrostra",
+      "parent": "Majungasaurinae",
+      "dispute": {
+        "summary": "The placement of Rahiolisaurus is disputed. It was included in Majungasaurinae by the erecting analysis (Tortosa and colleagues, 2014) and by Pol and colleagues (2024), whereas Filippi and colleagues (2016) recovered it as a basal brachyrostran and other analyses find it unstable.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Majungasaurinae following the erecting analysis and the most recent comprehensive study (P2, P3); the Brachyrostra alternative is recorded.\n"
+          }
+        ]
+      },
       "etymology": "Named after Rahioli, the village in Gujarat, India, near where the fossils were recovered, combined with Greek 'sauros' (lizard).",
       "pronunciation": {
         "phonetic": "RA-hee-O-lee-SOR-us"
@@ -158479,8 +158860,9 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Abelisauridae",
-        "Brachyrostra"
+        "Majungasaurinae"
       ],
       "authors": "Novas, F. E.; Chatterjee, S.; Rudra, D. K.; Datta, P. M.",
       "described": 2010
@@ -158659,7 +159041,7 @@
     },
     "Rajasaurus": {
       "genus": "Rajasaurus",
-      "parent": "Majungasaurini",
+      "parent": "Majungasaurinae",
       "pronunciation": {
         "ipa": "/ˌrɑːdʒəˈsɔːrəs/",
         "phonetic": "RAH-juh-sore-us"
@@ -158792,9 +159174,9 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Abelisauridae",
-        "Carnotaurinae",
-        "Majungasaurini"
+        "Majungasaurinae"
       ],
       "authors": "Wilson, J. A.; Sereno, P. C.; Srivastava, S.; Bhatt, D. K.; Khosla, A.; Sahni, A.",
       "described": 2003
@@ -162282,6 +162664,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Abelisauridae"
       ],
       "authors": "Sereno, P. C.; Wilson, J. A.; Conrad, J. L.",
@@ -174655,6 +175038,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Abelisauridae",
         "Brachyrostra"
       ],
@@ -175364,6 +175748,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Abelisauridae"
       ],
       "authors": "Zaher, H.; Pol, D.; Navarro, B. A.; Delcourt, R.; Carvalho, A. B.",
@@ -176383,6 +176768,15 @@
     "Spinostropheus": {
       "genus": "Spinostropheus",
       "parent": "Ceratosauria",
+      "dispute": {
+        "summary": "The ceratosaurian affinities of Spinostropheus rest on the referred specimen MNN TIG6; Rauhut and Carrano (2016) argued that the type material of S. gautieri lacks ceratosaurian synapomorphies and may represent a basal tetanuran, and Hendrickx and colleagues (2024) likewise excluded the type from their analyses.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Ceratosauria following the referred material and Carrano and Sampson (2008), pending resolution of the type material (P2).\n"
+          }
+        ]
+      },
       "etymology": "From Latin spina ('spine') and Greek stropheus ('vertebra'), referring to the epipophyseal processes of the vertebrae",
       "pronunciation": {
         "phonetic": "SPY-no-STROH-fee-us"
@@ -182049,6 +182443,15 @@
     "Tarascosaurus": {
       "genus": "Tarascosaurus",
       "parent": "Abelisauridae",
+      "dispute": {
+        "summary": "The validity of Tarascosaurus is contested: originally described as an abelisaurid, it was later regarded as a nomen dubium (Allain and Pereda- Suberbiola, 2003; Rauhut, 2003), then reaffirmed as a valid abelisaurid by subsequent studies. Its position within the family is unresolved.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Abelisauridae (P2).\n"
+          }
+        ]
+      },
       "etymology": "Named after the Tarasque, a legendary monster from Provencal folklore (France), combined with Greek sauros, \"lizard\" - means \"Tarasque lizard\"",
       "pronunciation": {
         "phonetic": "ta-RASS-ko-SOR-us"
@@ -182179,6 +182582,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Abelisauridae"
       ],
       "authors": "Le Loeuff, J.; Buffetaut, E.",
@@ -185502,7 +185906,7 @@
               "max": 1.8
             }
           },
-          "erected_in": "delcourt2018",
+          "erected_in": "delcourt2018b",
           "holotype": {
             "specimen_id": [
               "MPMA 08-0016/95"
@@ -185518,7 +185922,7 @@
       ],
       "references": [
         {
-          "id": "delcourt2018",
+          "id": "delcourt2018b",
           "authors": "Delcourt, R.; Iori, F. V.",
           "year": 2018,
           "title": "A new Abelisauridae (Dinosauria: Theropoda) from São José do Rio Preto Formation, Upper Cretaceous of Brazil and comments on the Bauru Group fauna",
@@ -185555,6 +185959,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Abelisauridae",
         "Brachyrostra"
       ],
@@ -190387,6 +190792,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Abelisauridae"
       ],
       "authors": "Cerroni, M. A.; Motta, M. J.; Agnolín, F. L.; Aranciaga Rolando, A. M.; Brissón Egli, F.; Novas, F. E.",
@@ -197981,14 +198387,14 @@
             "specimen_type": "holotype",
             "institution": "Universidad Nacional del Comahue"
           },
-          "erected_in": "bonaparte1991",
+          "erected_in": "bonaparte1991a",
           "authors": "Bonaparte, J. F.",
           "described": 1991
         }
       ],
       "references": [
         {
-          "id": "bonaparte1991",
+          "id": "bonaparte1991a",
           "authors": "Bonaparte, J. F.",
           "year": 1991,
           "title": "Los vertebrados fósiles de la Formación Rio Colorado, de la Ciudad de Neuquén y Cercanías, Cretácico Superior, Argentina [The vertebrate fossils of the Rio Colorado Formation, from the city of Neuquén and surrounding areas, Upper Cretaceous, Argentina]",
@@ -198013,6 +198419,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Noasauridae",
         "Noasaurinae"
       ],
@@ -198304,6 +198711,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Noasauridae",
         "Noasaurinae"
       ],
@@ -198569,6 +198977,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Abelisauridae",
         "Brachyrostra",
         "Furileusauria"
@@ -198670,6 +199079,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Abelisauridae"
       ],
       "authors": "Velandia, H. J.; Ezcurra, M. D.; Hechenleitner, E. M.; Basilici, G.; Martinelli, A. G.; Fiorelli, L. E.",
@@ -200175,14 +200585,14 @@
             "material": "Fragmentary skull and skeleton of a single individual; premaxilla, maxilla, lacrimal, postorbital, quadratojugal ramus, dentary, teeth, caudal vertebrae, dorsal ribs, gastralia, manual phalanx, fibulae, astragalus, calcaneum.",
             "completeness": "partial"
           },
-          "erected_in": "rauhut2016",
+          "erected_in": "rauhut2016a",
           "authors": "Rauhut, O. M.; Hübner, T.; Lanser, K.",
           "described": 2016
         }
       ],
       "references": [
         {
-          "id": "rauhut2016",
+          "id": "rauhut2016a",
           "authors": "Rauhut, O. M.; Hübner, T.; Lanser, K.",
           "year": 2016,
           "title": "A new megalosaurid theropod dinosaur from the late Middle Jurassic (Callovian) of north-western Germany: Implications for theropod evolution and faunal turnover in the Jurassic",
@@ -201499,6 +201909,15 @@
     "Xenotarsosaurus": {
       "genus": "Xenotarsosaurus",
       "parent": "Abelisauridae",
+      "dispute": {
+        "summary": "Xenotarsosaurus is consistently an abelisaurid, but its finer position is unresolved: it is recovered as a basal abelisaurid outside the derived subclades (Tortosa and colleagues, 2014) or as the basalmost brachyrostran (Filippi and colleagues, 2016), and it behaves as an unstable taxon in recent analyses.\n",
+        "history": [
+          {
+            "date": "2026-06-30",
+            "note": "Placed at Abelisauridae, the least-inclusive uncontested node (P2).\n"
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "zen-o-TAR-so-SAWR-us"
       },
@@ -201631,6 +202050,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
+        "Abelisauroidea",
         "Abelisauridae"
       ],
       "authors": "Martínez, R. D.; Giménez, O.; J. Rodríguez, G. B.",
