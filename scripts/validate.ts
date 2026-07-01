@@ -744,6 +744,80 @@ for (const [filePath, doc] of cladeParsed)
     validateReferences(filePath, doc);
 }
 
+// 11b. Redundant DOI-pointer URLs — a reference `url` that merely points at
+// the reference's own DOI (e.g. http://dx.doi.org/{doi}) carries no extra
+// information, since any consumer can regenerate it from the `doi` field.
+// Keep `url` only when it points somewhere a DOI cannot reach (a repository
+// deposit, an archived copy, a paper with no DOI, etc.).
+startCheck("Redundant DOI-pointer URL");
+
+/**
+ * Determines whether a reference `url` is nothing more than a pointer at the
+ * reference's own DOI (e.g. `http://dx.doi.org/{doi}` or
+ * `https://doi.org/{doi}`). DOIs are case-insensitive and the URL may
+ * percent-encode characters that the raw DOI leaves literal, so both forms
+ * are compared.
+ *
+ * @param urlValue - The reference's `url` field, if present.
+ * @param doiValue - The reference's `doi` field, if present.
+ * @returns True when the URL only re-encodes the DOI and can be dropped.
+ */
+function isDoiPointerUrl(urlValue?: string, doiValue?: string): boolean
+{
+    if (!urlValue || !doiValue)
+    {
+        return false;
+    }
+
+    const match = urlValue.match(/^https?:\/\/(?:[a-z0-9.-]+\.)?doi\.org\/(.+)$/i);
+
+    if (!match)
+    {
+        return false;
+    }
+
+    const urlDoi = match[1];
+    const doi = String(doiValue);
+
+    if (urlDoi === doi || urlDoi.toLowerCase() === doi.toLowerCase())
+    {
+        return true;
+    }
+
+    try
+    {
+        if (decodeURIComponent(urlDoi) === doi)
+        {
+            return true;
+        }
+    }
+    catch
+    {
+        // Malformed percent-encoding: fall through to a non-match.
+    }
+
+    return false;
+}
+
+for (const [filePath, doc] of [...genusParsed.entries(), ...cladeParsed.entries()])
+{
+    if (!doc || !Array.isArray(doc.references))
+    {
+        continue;
+    }
+
+    for (const reference of doc.references)
+    {
+        if (reference && isDoiPointerUrl(reference.url, reference.doi))
+        {
+            checkWarning(
+                "Redundant DOI-pointer URL",
+                filePath,
+                `reference '${reference.id ?? "?"}': url '${reference.url}' just points at its own doi; drop it (consumers can regenerate it from 'doi')`);
+        }
+    }
+}
+
 // 12. Unique reference IDs
 startCheck("Unique reference IDs");
 
