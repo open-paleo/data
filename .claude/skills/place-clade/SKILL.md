@@ -254,8 +254,15 @@ avoid here.
 **Hard stop.** Give the user the list of phylogeny papers to fetch into
 `$OPEN_PALEO_PAPERS_DIR/markdown/<key>.md` (clade-naming papers, recent
 total-evidence / dedicated phylogenetic analyses, any redescription that
-re-scores the disputed taxa). Mention they can lean on Wikipedia taxoboxes or
-OpenAlex to find candidates. Wait for the user to say which landed.
+re-scores the disputed taxa). **Give the DOI for each paper by default, wherever
+one exists** — resolve it via Crossref/OpenAlex (reading the FULL untruncated
+title to confirm identity, per the rule above) and derive the corpus key from
+the paper's ACTUAL first author, not the triage guess (e.g. Saltriovenator is
+`dalsasso2018`, not `cau2018`). List each entry as `key — Authors year, title
+(DOI: ...)` so the user can fetch it directly; note "citation-only, no DOI" for
+legitimate pre-DOI classics rather than omitting the line. Mention they can lean
+on Wikipedia taxoboxes or OpenAlex to find candidates. Wait for the user to say
+which landed.
 
 **When a freshly fetched paper's `author<year>` matches an existing BARE key,
 the new paper takes suffix `b` and the existing bare key is retagged to `a` —
