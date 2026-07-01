@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-07-01T18:24:58.644Z",
+    "built_at": "2026-07-01T20:21:31.235Z",
     "clade_count": 206,
     "genus_count": 1398,
     "license": "CC-BY-4.0",
@@ -139,11 +139,10 @@
                                       },
                                       "Scansoriopterygidae": {},
                                       "Anchiornithidae": {},
-                                      "Alvarezsauria": {
-                                        "Alvarezsauroidea": {
-                                          "Alvarezsauridae": {
-                                            "Parvicursorinae": {}
-                                          }
+                                      "Alvarezsauroidea": {
+                                        "Alvarezsauridae": {
+                                          "Patagonykinae": {},
+                                          "Parvicursorinae": {}
                                         }
                                       }
                                     },
@@ -669,29 +668,8 @@
         "Allosauroidea"
       ]
     },
-    "Alvarezsauria": {
-      "taxonomy": [
-        "Life",
-        "Animalia",
-        "Chordata",
-        "Vertebrata",
-        "Sarcopterygii",
-        "Tetrapoda",
-        "Reptilia",
-        "Archosauria",
-        "Dinosauria",
-        "Saurischia",
-        "Theropoda",
-        "Neotheropoda",
-        "Averostra",
-        "Tetanurae",
-        "Avetheropoda",
-        "Coelurosauria",
-        "Maniraptora",
-        "Alvarezsauria"
-      ]
-    },
     "Alvarezsauridae": {
+      "description": "Alvarezsauridae is the derived, short-armed family of alvarezsauroids that radiated in the Late Cretaceous of South America, Asia, and North America. Node-based as the least-inclusive clade containing Alvarezsaurus and Mononykus, it comprises the basal South American genera (Alvarezsaurus, Achillesaurus), the large-bodied Patagonykinae, and the diverse, miniaturized Asian Parvicursorinae. Alvarezsaurids are marked by a dramatically foreshortened, powerful forelimb built around the enlarged thumb, and by extensively fused, bird-like hindlimb and vertebral features.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -710,12 +688,34 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptora",
-        "Alvarezsauria",
         "Alvarezsauroidea",
         "Alvarezsauridae"
+      ],
+      "type_genus": "Alvarezsaurus",
+      "described": 1991,
+      "authors": "Bonaparte, J. F.",
+      "diagnostic_features": [
+        "Presacral vertebrae with ball-and-socket (opisthocoelous) intercentral joints",
+        "Humerus with a figure-of-eight cross-section",
+        "Hypertrophied olecranon process of the ulna",
+        "Symmetrical iliac blade",
+        "Fully procoelous caudal vertebrae"
+      ],
+      "references": [
+        {
+          "id": "bonaparte1991a",
+          "authors": "Bonaparte, J. F.",
+          "year": 1991,
+          "title": "Los vertebrados fósiles de la Formación Rio Colorado, de la Ciudad de Neuquén y Cercanías, Cretácico Superior, Argentina [The vertebrate fossils of the Rio Colorado Formation, from the city of Neuquén and surrounding areas, Upper Cretaceous, Argentina]",
+          "journal": "Revista del Museo Argentino de Ciencias Naturales \"Bernardino Rivadavia\" e Instituto Nacional de Investigación de las Ciencias Naturales: Paleontología",
+          "volume": "4",
+          "issue": "3",
+          "pages": "17-123"
+        }
       ]
     },
     "Alvarezsauroidea": {
+      "description": "Alvarezsauroidea is the total-group clade of alvarezsaurian theropods, comprising the long-armed, comparatively generalized Jurassic and Early Cretaceous forms (such as Haplocheirus, Bannykus, and Xiyunykus) together with the short-armed, highly derived Late Cretaceous family Alvarezsauridae. Its members are small coelurosaurs distinguished by a greatly enlarged first manual digit and reduced lateral fingers, a specialization carried to an extreme in the derived, probably insectivorous parvicursorines. Authors who treat Bonaparte's older name as senior refer to the same clade as Alvarezsauria.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -734,8 +734,33 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptora",
-        "Alvarezsauria",
         "Alvarezsauroidea"
+      ],
+      "type_genus": "Alvarezsaurus",
+      "described": 2010,
+      "authors": "Choiniere, J. N.; Xu, X.; Clark, J. M.; Forster, C. A.; Guo, Y.; Han, F.",
+      "diagnostic_features": [
+        "Elongate basipterygoid processes and a steeply (vertically) inclined basisphenoid",
+        "Hypertrophied internal tuberosity of the humerus, separated from the humeral head by a distinct notch and lying level with or projecting above the head",
+        "Enlarged humeral ectepicondyle",
+        "Conical lateral distal condyle of the femur projecting further distally than the flattened medial condyle",
+        "Greatly enlarged ungual on manual digit I, much larger than the unguals of the other digits",
+        "First metacarpal with distal condyles lacking collateral ligament fossae"
+      ],
+      "references": [
+        {
+          "id": "choiniere2010a",
+          "authors": "Choiniere, J. N.; Xu, X.; Clark, J. M.; Forster, C. A.; Guo, Y.; Han, F.",
+          "year": 2010,
+          "title": "A Basal Alvarezsauroid Theropod from the Early Late Jurassic of Xinjiang, China",
+          "journal": "Science",
+          "volume": "327",
+          "issue": "5965",
+          "pages": "571-574",
+          "publisher": "American Association for the Advancement of Science (AAAS)",
+          "doi": "10.1126/science.1182143",
+          "url": "http://dx.doi.org/10.1126/science.1182143"
+        }
       ]
     },
     "Anchiornithidae": {
@@ -6797,6 +6822,7 @@
       ]
     },
     "Parvicursorinae": {
+      "description": "Parvicursorinae is the derived subfamily of alvarezsaurids that dominated the Late Cretaceous of Asia, with a few members in North America. It contains the smallest, most specialized alvarezsaurs, in which the forelimb is reduced to a stout, single-clawed digging or probing tool and the hindlimb is elongate and extensively fused. Defined as the most inclusive clade containing Parvicursor but not Patagonykus, it is the senior name for the derived Mongolian radiation and is used in preference to the synonymous Mononykinae; its internal relationships are poorly resolved and largely form a polytomy.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -6815,10 +6841,80 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptora",
-        "Alvarezsauria",
         "Alvarezsauroidea",
         "Alvarezsauridae",
         "Parvicursorinae"
+      ],
+      "type_genus": "Parvicursor",
+      "described": 1996,
+      "authors": "Karhu, A. A.; Rautian, A. S.",
+      "diagnostic_features": [
+        "Absence of pleurocoels in the cervical vertebrae",
+        "Absent or reduced, laterally facing fibular facet of the astragalus",
+        "Broad ascending process of the astragalus covering most of the anterior surface of the distal tibia",
+        "Notch on the medial edge of the ascending process of the astragalus",
+        "Metatarsal III not reaching the proximal end of the metatarsus",
+        "Penultimate manual phalanges with a straight shaft"
+      ],
+      "references": [
+        {
+          "id": "karhu1996",
+          "authors": "Karhu, A. A.; Rautian, A. S.",
+          "year": 1996,
+          "title": "A new family of Maniraptora (Dinosauria: Saurischia) from the Late Cretaceous of Mongolia",
+          "journal": "Paleontological Journal",
+          "volume": "30",
+          "issue": "5",
+          "pages": "583-592"
+        }
+      ]
+    },
+    "Patagonykinae": {
+      "description": "Patagonykinae is a subfamily of large-bodied, plesiomorphic South American alvarezsaurids comprising Patagonykus and Bonapartenykus from the Late Cretaceous of Patagonia. Coined by Agnolín et al. (2012) for these two genera, it groups the biggest known alvarezsaurs, which retain comparatively robust proportions relative to the miniaturized Asian parvicursorines.\n",
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Avetheropoda",
+        "Coelurosauria",
+        "Maniraptora",
+        "Alvarezsauroidea",
+        "Alvarezsauridae",
+        "Patagonykinae"
+      ],
+      "type_genus": "Patagonykus",
+      "described": 2012,
+      "authors": "Agnolin, F. L.; Powell, J. E.; Novas, F. E.; Kundrát, M.",
+      "diagnostic_features": [
+        "Large body size relative to other alvarezsaurids",
+        "Longitudinal ridge on the lateral surface of the coracoid",
+        "Strongly sculptured ventral half of the coracoid",
+        "Medially deflected coracoid"
+      ],
+      "references": [
+        {
+          "id": "agnolin2012",
+          "authors": "Agnolin, F. L.; Powell, J. E.; Novas, F. E.; Kundrát, M.",
+          "year": 2012,
+          "title": "New alvarezsaurid (Dinosauria, Theropoda) from uppermost Cretaceous of north-western Patagonia with associated eggs",
+          "journal": "Cretaceous Research",
+          "volume": "35",
+          "pages": "33-56",
+          "publisher": "Elsevier BV",
+          "doi": "10.1016/j.cretres.2011.11.014",
+          "url": "http://dx.doi.org/10.1016/j.cretres.2011.11.014"
+        }
       ]
     },
     "Piatnitzkysauridae": {
@@ -10912,6 +11008,15 @@
     "Achillesaurus": {
       "genus": "Achillesaurus",
       "parent": "Alvarezsauridae",
+      "dispute": {
+        "summary": "Achillesaurus manazzonei is a basal alvarezsaurid closely allied to Alvarezsaurus. Makovicky et al. (2012) argued that the features separating the two are ontogenetic and that Achillesaurus may be a junior synonym of Alvarezsaurus; the describing authors (Martinelli and Vera, 2007) and Meso et al. (2024) retain it as a distinct genus while noting that it is unstable and incompletely known.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Alvarezsauridae following Meso et al. (2024) (P2); retained as a valid genus pending resolution of the proposed synonymy with Alvarezsaurus."
+          }
+        ]
+      },
       "etymology": "Named for Achilles' heel from Greek mythology, referencing diagnostic features found in the heel anatomy; combined with Greek 'sauros' meaning 'lizard'. The species name honors Professor Rafael Manazzone.",
       "pronunciation": {
         "phonetic": "a-KILL-ee-SOR-us"
@@ -11024,7 +11129,6 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptora",
-        "Alvarezsauria",
         "Alvarezsauroidea",
         "Alvarezsauridae"
       ],
@@ -16035,7 +16139,6 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptora",
-        "Alvarezsauria",
         "Alvarezsauroidea",
         "Alvarezsauridae"
       ],
@@ -16371,7 +16474,6 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptora",
-        "Alvarezsauria",
         "Alvarezsauroidea",
         "Alvarezsauridae",
         "Parvicursorinae"
@@ -17523,7 +17625,16 @@
     },
     "Alnashetri": {
       "genus": "Alnashetri",
-      "parent": "Alvarezsauridae",
+      "parent": "Alvarezsauroidea",
+      "dispute": {
+        "summary": "Alnashetri cerropoliciensis was originally described as a basal alvarezsaurid (Makovicky et al., 2012), and older analyses and the reference-work treatment of Jones (2026) place it within Alvarezsauridae, close to Patagonykinae. The most recent analyses — Meso et al. (2024) and the near-complete specimen described by Makovicky et al. (2026) — instead recover it outside Alvarezsauridae as a basal, non-alvarezsaurid alvarezsauroid.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Alvarezsauroidea, the least-inclusive uncontested node, following the recent analyses of Meso et al. (2024) and Makovicky et al. (2026) (P2/P3); the older within-Alvarezsauridae placement is unresolved."
+          }
+        ]
+      },
       "etymology": "From the Günün-a-kunna dialect of the Tehuelche language, meaning 'slender thighs', referring to the long and slender hind limbs of the holotype. The species name honors the nearby village of Cerro Policía.",
       "pronunciation": {
         "phonetic": "al-nuh-sheh-tree"
@@ -17652,9 +17763,7 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptora",
-        "Alvarezsauria",
-        "Alvarezsauroidea",
-        "Alvarezsauridae"
+        "Alvarezsauroidea"
       ],
       "authors": "Makovicky, P. J.; Apesteguía, S.; Gianechini, F. A.",
       "described": 2012
@@ -18313,7 +18422,6 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptora",
-        "Alvarezsauria",
         "Alvarezsauroidea",
         "Alvarezsauridae"
       ],
@@ -24056,7 +24164,16 @@
     },
     "Aorun": {
       "genus": "Aorun",
-      "parent": "Alvarezsauria",
+      "parent": "Avetheropoda",
+      "dispute": {
+        "summary": "Aorun zhaoi is based on a juvenile skeleton, and its affinities are highly unstable. It was originally described as a basal coelurosaur (Choiniere et al., 2013) and recovered as an early-diverging alvarezsaurian by Xu et al. (2018), Qin et al. (2019), and — with weak support — Meso et al. (2024). Broad theropod analyses reject this: Hartman et al. (2019) recovered it as a compsognathid, and Cau (2024) recovered it as an early-diverging allosauroid, interpreting its coelurosaurian signal as an artifact of the holotype's juvenile ontogeny. Jones (2026) treats it as a basal coelurosaur.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed conservatively at Avetheropoda, the least-inclusive clade shared by all hypotheses, and deferred to the theropod backbone reconciliation; alvarezsaurian, compsognathid, and allosauroid placements are all in play."
+          }
+        ]
+      },
       "etymology": "From Mandarin Chinese, a shortened masculine name of Ao Run, the Chinese mythical deity and Dragon King of the West Sea in the epic Journey to the West. The species name honors Professor Zhao Xijin.",
       "pronunciation": {
         "phonetic": "AW-roon"
@@ -24173,10 +24290,7 @@
         "Neotheropoda",
         "Averostra",
         "Tetanurae",
-        "Avetheropoda",
-        "Coelurosauria",
-        "Maniraptora",
-        "Alvarezsauria"
+        "Avetheropoda"
       ],
       "authors": "Choiniere, J. N.; Clark, J. M.; Forster, C. A.; Norell, M. A.; Eberth, D. A.; Erickson, G. M.; Chu, H.; Xu, X.",
       "described": 2013
@@ -34201,7 +34315,6 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptora",
-        "Alvarezsauria",
         "Alvarezsauroidea"
       ],
       "authors": "Xu, X.; Choiniere, J.; Tan, Q.; Benson, R. B. J.; Clark, J.; Sullivan, C.; Zhao, Q.; Han, F.; Ma, Q.; He, Y.; Wang, S.; Xing, H.; Tan, L.",
@@ -38482,7 +38595,7 @@
     },
     "Bonapartenykus": {
       "genus": "Bonapartenykus",
-      "parent": "Alvarezsauroidea",
+      "parent": "Patagonykinae",
       "etymology": "Named after José F. Bonaparte, the prominent Argentine paleontologist, combined with Greek onyx/onykhos (ὄνυξ/ὄνυχος) meaning 'claw'; overall meaning 'José F. Bonaparte's claw'.",
       "pronunciation": {
         "phonetic": "bo-nuh-par-toh-ni-kuss"
@@ -38617,8 +38730,9 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptora",
-        "Alvarezsauria",
-        "Alvarezsauroidea"
+        "Alvarezsauroidea",
+        "Alvarezsauridae",
+        "Patagonykinae"
       ],
       "authors": "Agnolin, F. L.; Powell, J. E.; Novas, F. E.; Kundrát, M.",
       "described": 2012
@@ -46922,6 +47036,15 @@
     "Ceratonykus": {
       "genus": "Ceratonykus",
       "parent": "Parvicursorinae",
+      "dispute": {
+        "summary": "Ceratonykus oculatus is consistently recovered as a parvicursorine alvarezsaurid (Alifanov and Barsbold, 2009; Kubo et al., 2023; Meso et al., 2024). Averianov and Lopatin (2022) argued that it is very similar to Parvicursor remotus and is likely a junior synonym of it; this synonymy is not followed by Kubo et al. (2023) or by the reference-work treatment of Jones (2026), which retain both as valid genera.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Parvicursorinae following the prevailing analyses (P2); retained as valid pending resolution of the proposed synonymy with Parvicursor."
+          }
+        ]
+      },
       "etymology": "From Greek keras/keratos ('horn') + onyx/nykos ('claw'), meaning 'horned claw'.",
       "pronunciation": {
         "phonetic": "suh-RAH-toe-NY-kus"
@@ -47054,7 +47177,6 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptora",
-        "Alvarezsauria",
         "Alvarezsauroidea",
         "Alvarezsauridae",
         "Parvicursorinae"
@@ -67137,7 +67259,6 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptora",
-        "Alvarezsauria",
         "Alvarezsauroidea",
         "Alvarezsauridae",
         "Parvicursorinae"
@@ -68869,7 +68990,16 @@
     },
     "Elopteryx": {
       "genus": "Elopteryx",
-      "parent": "Alvarezsauridae",
+      "parent": "Paraves",
+      "dispute": {
+        "summary": "Elopteryx nopscai, from the Maastrichtian of Romania, has a history of conflation with Heptasteornis. Naish and Dyke (2004) showed that the Elopteryx femora bear a posterior trochanter, a feature absent in alvarezsaurids, and concluded that it is not an alvarezsaurid but rather a troodontid or a non-ornithuromorphan pygostylian; Jones (2026) regards it as a dubious theropod of uncertain affinity.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Removed from the alvarezsaurs and placed conservatively at Paraves, the least-inclusive uncontested node for a troodontid-or-pygostylian identity, following Naish and Dyke (2004); deferred pending a stable placement."
+          }
+        ]
+      },
       "etymology": "From Greek 'helos' meaning 'marsh' or 'swamp' and Greek 'pteryx' meaning 'wing'; means 'marsh wing'.",
       "pronunciation": {
         "phonetic": "ee-LOP-tuh-rix"
@@ -68978,9 +69108,7 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptora",
-        "Alvarezsauria",
-        "Alvarezsauroidea",
-        "Alvarezsauridae"
+        "Paraves"
       ],
       "authors": "Andrews, C. W.",
       "described": 1913
@@ -87334,6 +87462,15 @@
     "Haplocheirus": {
       "genus": "Haplocheirus",
       "parent": "Alvarezsauroidea",
+      "dispute": {
+        "summary": "Haplocheirus sollers is recovered as the basalmost alvarezsauroid by the dedicated alvarezsaur analyses (Choiniere et al., 2010, 2014; Xu et al., 2018; Qin et al., 2019; Meso et al., 2024), but its alvarezsauroid affinity is contested. The maniraptoromorph analysis of Hartman et al. (2019) recovered it as a compsognathid, and Agnolín et al. (2021) argued on cranial evidence that Haplocheirus and the other Jurassic Chinese \"alvarezsauroids\" resemble ornithomimosaurs and may fall outside Alvarezsauroidea.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Alvarezsauroidea following the prevailing dedicated analyses (P2/P3); the compsognathid and ornithomimosaur alternatives remain unresolved."
+          }
+        ]
+      },
       "etymology": "Simple hand; from Ancient Greek haplós (simple) and kheír (hand)",
       "pronunciation": {
         "ipa": "/ˌhæplʊuˈkəirəs/",
@@ -87479,7 +87616,6 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptora",
-        "Alvarezsauria",
         "Alvarezsauroidea"
       ],
       "authors": "Choiniere, J. N.; Xu, X.; Clark, J. M.; Forster, C. A.; Guo, Y.; Han, F.",
@@ -88173,6 +88309,15 @@
     "Heptasteornis": {
       "genus": "Heptasteornis",
       "parent": "Alvarezsauridae",
+      "dispute": {
+        "summary": "Heptasteornis andrewsi, from the Maastrichtian of Romania, is based on a distal tibiotarsus that Naish and Dyke (2004) identified as the first European alvarezsaurid on the basis of an alvarezsaurid-type astragalar notch; they nonetheless regarded the genus as a nomen dubium for lack of distinguishing autapomorphies. Meso et al. (2024) recovered it as an unstable alvarezsaurid, and Jones (2026) treats its alvarezsaurid identity as a gaining-traction hypothesis rather than a settled result.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Alvarezsauridae following Naish and Dyke (2004) (P2); retained as a nomen-dubium-grade alvarezsaurid whose finer position cannot be resolved."
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "hep-tas-tee-OR-nis"
       },
@@ -88277,7 +88422,6 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptora",
-        "Alvarezsauria",
         "Alvarezsauroidea",
         "Alvarezsauridae"
       ],
@@ -98732,7 +98876,6 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptora",
-        "Alvarezsauria",
         "Alvarezsauroidea",
         "Alvarezsauridae",
         "Parvicursorinae"
@@ -105679,7 +105822,6 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptora",
-        "Alvarezsauria",
         "Alvarezsauroidea",
         "Alvarezsauridae",
         "Parvicursorinae"
@@ -114537,7 +114679,6 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptora",
-        "Alvarezsauria",
         "Alvarezsauroidea",
         "Alvarezsauridae",
         "Parvicursorinae"
@@ -121486,7 +121627,6 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptora",
-        "Alvarezsauria",
         "Alvarezsauroidea",
         "Alvarezsauridae",
         "Parvicursorinae"
@@ -128820,7 +128960,6 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptora",
-        "Alvarezsauria",
         "Alvarezsauroidea",
         "Alvarezsauridae",
         "Parvicursorinae"
@@ -133756,7 +133895,16 @@
     },
     "Nemegtonykus": {
       "genus": "Nemegtonykus",
-      "parent": "Alvarezsauroidea",
+      "parent": "Alvarezsauridae",
+      "dispute": {
+        "summary": "Nemegtonykus citus was described as a parvicursorine forming a polytomy with other Gobi alvarezsaurids (Lee et al., 2019). Its position is unsettled: Kubo et al. (2023) recovered it outside Parvicursorinae as a successive sister taxon, and Meso et al. (2024) found it unstable and treated it as a junior synonym of Mononykus — a synonymy rejected by Lee et al. (2019) and by the reference-work treatment of Jones (2026), which retain it as a valid genus.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Alvarezsauridae, the least-inclusive uncontested node, following Kubo et al. (2023) (P2); its Parvicursorinae membership and the proposed Mononykus synonymy remain unresolved."
+          }
+        ]
+      },
       "etymology": "Named after the Nemegt Formation of Mongolia where it was found, combined with Greek 'onyx' (claw); meaning 'Nemegt claw'.",
       "description": "Nemegtonykus is a genus of alvarezsaurid dinosaur from the Late Cretaceous ( Maastrichtian) Nemegt Formation of Mongolia. The type and only species is Nemegtonykus citus. It is the second alvarezsaurid known from the Nemegt Formation, preceded by Mononykus.",
       "diet": "carnivore",
@@ -133876,8 +134024,8 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptora",
-        "Alvarezsauria",
-        "Alvarezsauroidea"
+        "Alvarezsauroidea",
+        "Alvarezsauridae"
       ],
       "authors": "Lee, S.; Park, J.-Y.; Lee, Y.-N.; Kim, S.-H.; Lü, J.; Barsbold, R.; Tsogtbaatar, K.",
       "described": 2019
@@ -139301,7 +139449,6 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptora",
-        "Alvarezsauria",
         "Alvarezsauroidea",
         "Alvarezsauridae",
         "Parvicursorinae"
@@ -146380,7 +146527,6 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptora",
-        "Alvarezsauria",
         "Alvarezsauroidea",
         "Alvarezsauridae",
         "Parvicursorinae"
@@ -146390,7 +146536,7 @@
     },
     "Patagonykus": {
       "genus": "Patagonykus",
-      "parent": "Alvarezsauroidea",
+      "parent": "Patagonykinae",
       "pronunciation": {
         "phonetic": "pat-a-GON-i-kus"
       },
@@ -146513,8 +146659,9 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptora",
-        "Alvarezsauria",
-        "Alvarezsauroidea"
+        "Alvarezsauroidea",
+        "Alvarezsauridae",
+        "Patagonykinae"
       ],
       "authors": "Novas, F. E.",
       "described": 1994
@@ -158597,7 +158744,16 @@
     },
     "Qiupanykus": {
       "genus": "Qiupanykus",
-      "parent": "Alvarezsauroidea",
+      "parent": "Alvarezsauridae",
+      "dispute": {
+        "summary": "Qiupanykus zhangi was described as a parvicursorine recovered near the base of Parvicursorinae (Lü et al., 2018). More recent work places it outside Parvicursorinae as a more basal alvarezsaurid: Kubo et al. (2023) recovered it as one of several successive sister taxa to Parvicursorinae, a result Averianov et al. (2025) suggest may reflect its incomplete material.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Alvarezsauridae, the least-inclusive uncontested node, following Kubo et al. (2023) (P2); its membership in Parvicursorinae is unresolved."
+          }
+        ]
+      },
       "etymology": "Named after the Qiupa Formation where the fossil was found, combined with Greek onyx (claw); meaning \"claw from the Qiupa Formation\".",
       "pronunciation": {
         "ipa": "/ˌtɕʰuˈpaːˈnɑ͡ikəs/",
@@ -158731,8 +158887,8 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptora",
-        "Alvarezsauria",
-        "Alvarezsauroidea"
+        "Alvarezsauroidea",
+        "Alvarezsauridae"
       ],
       "authors": "Lü, J.; Xu, L.; Chang, H.; Jia, S.; Zhang, J.; Gao, D.; Zhang, Y.; Zhang, C.; Ding, F.",
       "described": 2018
@@ -170482,7 +170638,16 @@
     },
     "Shishugounykus": {
       "genus": "Shishugounykus",
-      "parent": "Alvarezsauria",
+      "parent": "Alvarezsauroidea",
+      "dispute": {
+        "summary": "Shishugounykus inexpectus was described as an early-diverging alvarezsaurian (Qin et al., 2019) and recovered as the earliest-diverging member of the group by Meso et al. (2024). Agnolín et al. (2021) questioned this, arguing that the Jurassic Chinese \"alvarezsauroids\" (Shishugounykus with Haplocheirus and Aorun) may instead have ornithomimosaur or compsognathid affinities.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Alvarezsauroidea following Qin et al. (2019) and Meso et al. (2024) (P2/P3); the non-alvarezsauroid hypothesis has not been tested by a numerical analysis."
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "shih-shoo-GOH-NY-kus"
       },
@@ -170615,7 +170780,7 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptora",
-        "Alvarezsauria"
+        "Alvarezsauroidea"
       ],
       "authors": "Qin, Z.; Clark, J.; Choiniere, J.; Xu, X.",
       "described": 2019
@@ -171475,7 +171640,6 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptora",
-        "Alvarezsauria",
         "Alvarezsauroidea",
         "Alvarezsauridae",
         "Parvicursorinae"
@@ -192098,7 +192262,7 @@
     },
     "Trierarchuncus": {
       "genus": "Trierarchuncus",
-      "parent": "Alvarezsauridae",
+      "parent": "Parvicursorinae",
       "etymology": "Named from Greek meaning 'captain hook,' in reference to its single-clawed hands",
       "pronunciation": {
         "phonetic": "tree-uh-rar-chun-kuss"
@@ -192209,9 +192373,9 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptora",
-        "Alvarezsauria",
         "Alvarezsauroidea",
-        "Alvarezsauridae"
+        "Alvarezsauridae",
+        "Parvicursorinae"
       ],
       "authors": "Fowler, D. W.; Wilson, J. P.; Freedman Fowler, E. A.; Noto, C. R.; Anduza, D.; Horner, J. R.",
       "described": 2020
@@ -193491,6 +193655,15 @@
     "Tugulusaurus": {
       "genus": "Tugulusaurus",
       "parent": "Alvarezsauroidea",
+      "dispute": {
+        "summary": "Tugulusaurus faciles was long treated as an enigmatic coelurosaur or ornithomimosaur, and even as a nomen dubium, until its validity was reaffirmed by the redescription of Rauhut and Xu (2005). It has since been recovered as a basal alvarezsauroid by Xu et al. (2018) and within a Bannykus plus Tugulusaurus plus Xiyunykus clade by Meso et al. (2024), a placement adopted by Jones (2026).\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Alvarezsauroidea following Xu et al. (2018) and Meso et al. (2024) (P2/P3); the referral rests on a single matrix lineage and the earlier uncertain-coelurosaur interpretation is noted."
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "too-GOO-loo-SAWR-us"
       },
@@ -193604,7 +193777,6 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptora",
-        "Alvarezsauria",
         "Alvarezsauroidea"
       ],
       "authors": "Dong, Z.",
@@ -204218,7 +204390,6 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptora",
-        "Alvarezsauria",
         "Alvarezsauroidea",
         "Alvarezsauridae",
         "Parvicursorinae"
@@ -204625,7 +204796,6 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptora",
-        "Alvarezsauria",
         "Alvarezsauroidea"
       ],
       "authors": "Xu, X.; Choiniere, J.; Tan, Q.; Benson, R. B. J.; Clark, J.; Sullivan, C.; Zhao, Q.; Han, F.; Ma, Q.; He, Y.; Wang, S.; Xing, H.; Tan, L.",
