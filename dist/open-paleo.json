@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-07-02T18:10:29.130Z",
+    "built_at": "2026-07-02T18:18:15.113Z",
     "clade_count": 195,
     "genus_count": 1398,
     "license": "CC-BY-4.0",
@@ -70,13 +70,13 @@
                                     "Metriacanthosauridae": {
                                       "Metriacanthosaurinae": {}
                                     },
-                                    "Carcharodontosauria": {
-                                      "Carcharodontosauridae": {
-                                        "Carcharodontosaurinae": {}
-                                      }
-                                    },
                                     "Allosauria": {
-                                      "Allosauridae": {}
+                                      "Allosauridae": {},
+                                      "Carcharodontosauria": {
+                                        "Carcharodontosauridae": {
+                                          "Carcharodontosaurinae": {}
+                                        }
+                                      }
                                     }
                                   },
                                   "Coelurosauria": {
@@ -591,6 +591,7 @@
       ]
     },
     "Allosauria": {
+      "description": "Allosauria is a clade of allosauroid theropods comprising Allosauridae and Carcharodontosauria, recovered as the sister group of the metriacanthosaurids within Allosauroidea. The group unites the well-known Late Jurassic Allosaurus with the giant carcharodontosaurians that were among the largest terrestrial predators of the Cretaceous.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -609,6 +610,31 @@
         "Avetheropoda",
         "Allosauroidea",
         "Allosauria"
+      ],
+      "described": 1988,
+      "authors": "Paul, G.S.",
+      "references": [
+        {
+          "id": "paul1988a",
+          "authors": "Paul, G.S.",
+          "year": 1988,
+          "title": "Predatory Dinosaurs of the World",
+          "journal": "Simon & Schuster, New York",
+          "volume": "",
+          "pages": "1-464"
+        },
+        {
+          "id": "carrano2012",
+          "authors": "Carrano, M. T.; Benson, R. B. J.; Sampson, S. D.",
+          "year": 2012,
+          "title": "The phylogeny of Tetanurae (Dinosauria: Theropoda)",
+          "journal": "Journal of Systematic Palaeontology",
+          "volume": "10",
+          "issue": "2",
+          "pages": "211-300",
+          "publisher": "Informa UK Limited",
+          "doi": "10.1080/14772019.2011.630927"
+        }
       ]
     },
     "Allosauridae": {
@@ -656,6 +682,7 @@
       ]
     },
     "Allosauroidea": {
+      "description": "Allosauroidea is a superfamily of carnosaurian theropods comprising the metriacanthosaurids and the allosaurians (Allosauridae plus Carcharodontosauria). Allosauroids were medium- to gigantic-sized bipedal predators that dominated many terrestrial ecosystems from the Middle Jurassic to the early Late Cretaceous, and are typified by large skulls, frequently ornamented with crests or rugosities, and by long, laterally compressed, serrated teeth.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -673,6 +700,23 @@
         "Tetanurae",
         "Avetheropoda",
         "Allosauroidea"
+      ],
+      "type_genus": "Allosaurus",
+      "described": 1994,
+      "authors": "Currie, P. J.; Zhao, X.-J.",
+      "references": [
+        {
+          "id": "currie1994",
+          "authors": "Currie, P. J.; Zhao, X.-J.",
+          "year": 1994,
+          "title": "A new carnosaur (Dinosauria, Theropoda) from the Jurassic of Xinjiang, People's Republic of China",
+          "journal": "Canadian Journal of Earth Sciences",
+          "volume": "30",
+          "issue": "10",
+          "pages": "2037-2081",
+          "publisher": "Canadian Science Publishing",
+          "doi": "10.1139/e93-179"
+        }
       ]
     },
     "Alvarezsauridae": {
@@ -1648,6 +1692,7 @@
         "Tetanurae",
         "Avetheropoda",
         "Allosauroidea",
+        "Allosauria",
         "Carcharodontosauria"
       ],
       "described": 2010,
@@ -1691,6 +1736,7 @@
         "Tetanurae",
         "Avetheropoda",
         "Allosauroidea",
+        "Allosauria",
         "Carcharodontosauria",
         "Carcharodontosauridae"
       ],
@@ -1735,6 +1781,7 @@
         "Tetanurae",
         "Avetheropoda",
         "Allosauroidea",
+        "Allosauria",
         "Carcharodontosauria",
         "Carcharodontosauridae",
         "Carcharodontosaurinae"
@@ -5866,6 +5913,7 @@
       ]
     },
     "Metriacanthosauridae": {
+      "description": "Metriacanthosauridae is a family of allosauroid theropods known chiefly from the Middle and Late Jurassic of Asia and Europe, including Yangchuanosaurus, Sinraptor, and their relatives. Metriacanthosaurids were large predators with tall dorsal neural spines and are recovered as one of the two principal lineages of Allosauroidea, the other being Allosauria. The family is the senior synonym of Sinraptoridae Currie and Zhao, 1994.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -5884,9 +5932,36 @@
         "Avetheropoda",
         "Allosauroidea",
         "Metriacanthosauridae"
+      ],
+      "type_genus": "Metriacanthosaurus",
+      "described": 1988,
+      "authors": "Paul, G.S.",
+      "references": [
+        {
+          "id": "paul1988a",
+          "authors": "Paul, G.S.",
+          "year": 1988,
+          "title": "Predatory Dinosaurs of the World",
+          "journal": "Simon & Schuster, New York",
+          "volume": "",
+          "pages": "1-464"
+        },
+        {
+          "id": "carrano2012",
+          "authors": "Carrano, M. T.; Benson, R. B. J.; Sampson, S. D.",
+          "year": 2012,
+          "title": "The phylogeny of Tetanurae (Dinosauria: Theropoda)",
+          "journal": "Journal of Systematic Palaeontology",
+          "volume": "10",
+          "issue": "2",
+          "pages": "211-300",
+          "publisher": "Informa UK Limited",
+          "doi": "10.1080/14772019.2011.630927"
+        }
       ]
     },
     "Metriacanthosaurinae": {
+      "description": "Metriacanthosaurinae is the more derived of the two subfamilies of Metriacanthosauridae, comprising the metriacanthosaurids more closely related to Metriacanthosaurus than to Yangchuanosaurus. It was erected by Carrano, Benson and Sampson (2012) and includes Metriacanthosaurus, Sinraptor, and Siamotyrannus, distinguished from basal metriacanthosaurids by features of the pelvis and hindlimb.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -5906,6 +5981,31 @@
         "Allosauroidea",
         "Metriacanthosauridae",
         "Metriacanthosaurinae"
+      ],
+      "type_genus": "Metriacanthosaurus",
+      "described": 2012,
+      "authors": "Carrano, M. T.; Benson, R. B. J.; Sampson, S. D.",
+      "diagnostic_features": [
+        "Anteroventral border of the maxillary antorbital fossa demarcated by a raised ridge",
+        "Pronounced ventral keel on the anterior dorsal vertebrae",
+        "Straight posterior margin of the iliac postacetabular process",
+        "Angle of less than 60 degrees between the long axes of the pubic shaft and the pubic boot",
+        "Ventrally curved ischial shaft",
+        "Bulbous fibular crest on the tibia"
+      ],
+      "references": [
+        {
+          "id": "carrano2012",
+          "authors": "Carrano, M. T.; Benson, R. B. J.; Sampson, S. D.",
+          "year": 2012,
+          "title": "The phylogeny of Tetanurae (Dinosauria: Theropoda)",
+          "journal": "Journal of Systematic Palaeontology",
+          "volume": "10",
+          "issue": "2",
+          "pages": "211-300",
+          "publisher": "Informa UK Limited",
+          "doi": "10.1080/14772019.2011.630927"
+        }
       ]
     },
     "Microraptorinae": {
@@ -12004,6 +12104,7 @@
         "Tetanurae",
         "Avetheropoda",
         "Allosauroidea",
+        "Allosauria",
         "Carcharodontosauria",
         "Carcharodontosauridae"
       ],
@@ -18188,6 +18289,15 @@
     "Alpkarakush": {
       "genus": "Alpkarakush",
       "parent": "Metriacanthosauridae",
+      "dispute": {
+        "summary": "Alpkarakush kyrgyzicus is consistently recovered as a metriacanthosaurid, but its position within the family is unstable: the describing analysis placed it as the sister taxon of Metriacanthosaurinae under implied weighting and within a Metriacanthosaurinae polytomy under equal weights (Rauhut et al., 2024). It is placed conservatively at Metriacanthosauridae incertae sedis pending resolution of whether it belongs to Metriacanthosaurinae.\n",
+        "history": [
+          {
+            "date": "2026-07-02",
+            "note": "Placed at Metriacanthosauridae incertae sedis following Rauhut et al. (2024) (P2); its possible membership in Metriacanthosaurinae is unresolved."
+          }
+        ]
+      },
       "etymology": "Named for Alpkarakush, a mythical powerful bird from the Kyrgyz Epic of Manas. The species name honors the Kyrgyz Republic where the specimen was discovered.",
       "pronunciation": {
         "phonetic": "Alf-kara-kush"
@@ -28647,6 +28757,15 @@
     "Asfaltovenator": {
       "genus": "Asfaltovenator",
       "parent": "Allosauroidea",
+      "dispute": {
+        "summary": "The phylogenetic position of Asfaltovenator vialidadi is unstable. Its describers recovered it as a basal allosauroid and noted that its mosaic of megalosauroid and allosauroid characters destabilizes tetanuran topology (Rauhut and Pol, 2019); Jones and Viola (2026) likewise treat it as a basal allosauroid outside both Allosauria and Metriacanthosauridae. Other analyses instead place it within Allosauridae as the sister taxon of Allosaurus (Rauhut et al., 2024; Kellermann et al., 2025). It is placed conservatively at Allosauroidea incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-07-02",
+            "note": "Placed at Allosauroidea incertae sedis (P2); recovered as a basal allosauroid by Rauhut and Pol (2019) but within Allosauridae by later analyses."
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "as-FAHL-toh-ven-AY-tor"
       },
@@ -45862,6 +45981,7 @@
         "Tetanurae",
         "Avetheropoda",
         "Allosauroidea",
+        "Allosauria",
         "Carcharodontosauria",
         "Carcharodontosauridae",
         "Carcharodontosaurinae"
@@ -55323,6 +55443,7 @@
         "Tetanurae",
         "Avetheropoda",
         "Allosauroidea",
+        "Allosauria",
         "Carcharodontosauria",
         "Carcharodontosauridae"
       ],
@@ -70449,6 +70570,7 @@
         "Tetanurae",
         "Avetheropoda",
         "Allosauroidea",
+        "Allosauria",
         "Carcharodontosauria",
         "Carcharodontosauridae"
       ],
@@ -72707,6 +72829,15 @@
     "Erectopus": {
       "genus": "Erectopus",
       "parent": "Allosauroidea",
+      "dispute": {
+        "summary": "Erectopus superbus is known from a lectotype maxilla and lost syntypes, and its affinities are only broadly constrained. It is regarded as an allosauroid (Allain, 2005), and Carrano, Benson and Sampson (2012) suggested it may be a metriacanthosaurid but listed no shared characters; other analyses treat it as an unstable taxon of uncertain position (Cau, 2024). It is placed conservatively at Allosauroidea incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-07-02",
+            "note": "Placed at Allosauroidea incertae sedis (P2); a possible metriacanthosaurid affinity is unresolved and the taxon is fragmentary."
+          }
+        ]
+      },
       "etymology": "From Latin 'erectus' (upright) and Greek 'pous' (foot); meaning 'upright foot', a reference to the posture of the original syntype foot bones described by Sauvage (1882).",
       "pronunciation": {
         "phonetic": "ee-REK-toe-puss"
@@ -81343,6 +81474,7 @@
         "Tetanurae",
         "Avetheropoda",
         "Allosauroidea",
+        "Allosauria",
         "Carcharodontosauria",
         "Carcharodontosauridae",
         "Carcharodontosaurinae"
@@ -105168,6 +105300,7 @@
         "Tetanurae",
         "Avetheropoda",
         "Allosauroidea",
+        "Allosauria",
         "Carcharodontosauria",
         "Carcharodontosauridae"
       ],
@@ -109721,6 +109854,7 @@
         "Tetanurae",
         "Avetheropoda",
         "Allosauroidea",
+        "Allosauria",
         "Carcharodontosauria",
         "Carcharodontosauridae"
       ],
@@ -118427,6 +118561,7 @@
         "Tetanurae",
         "Avetheropoda",
         "Allosauroidea",
+        "Allosauria",
         "Carcharodontosauria"
       ],
       "authors": "Malafaia, E.; Mocho, P.; Escaso, F.; Ortega, F.",
@@ -122534,6 +122669,7 @@
         "Tetanurae",
         "Avetheropoda",
         "Allosauroidea",
+        "Allosauria",
         "Carcharodontosauria",
         "Carcharodontosauridae",
         "Carcharodontosaurinae"
@@ -125381,6 +125517,7 @@
         "Tetanurae",
         "Avetheropoda",
         "Allosauroidea",
+        "Allosauria",
         "Carcharodontosauria",
         "Carcharodontosauridae",
         "Carcharodontosaurinae"
@@ -128996,7 +129133,16 @@
     },
     "Monolophosaurus": {
       "genus": "Monolophosaurus",
-      "parent": "Allosauroidea",
+      "parent": "Tetanurae",
+      "dispute": {
+        "summary": "Monolophosaurus jiangi was long regarded as a basal allosauroid, but recent analyses place it outside Allosauroidea among basal tetanurans: as the sister taxon of Avetheropoda (Smith et al., 2007), as a basal tetanuran outside Megalosauroidea and Avetheropoda (Carrano, Benson and Sampson, 2012), as a basal megalosauroid allied with Chuandongocoelurus (Benson, 2010), or as an early-branching spinosaurid within Megalosauroidea (Rauhut et al., 2024). It is placed conservatively at Tetanurae incertae sedis pending the basal-tetanuran reconciliation.\n",
+        "history": [
+          {
+            "date": "2026-07-02",
+            "note": "Moved from Allosauroidea to Tetanurae incertae sedis; recovered outside Allosauroidea in all recent analyses, with its exact basal-tetanuran or megalosauroid position unresolved. Deferred to the theropod-backbone reconciliation."
+          }
+        ]
+      },
       "etymology": "From Greek 'monos' meaning 'single' and 'lophos' meaning 'crest', plus Greek 'sauros' meaning 'lizard'; translates as 'single-crested lizard', named for the distinctive single crest on its skull.",
       "pronunciation": {
         "phonetic": "MON-oh-LOF-oh-SOR-uhs",
@@ -129125,9 +129271,7 @@
         "Theropoda",
         "Neotheropoda",
         "Averostra",
-        "Tetanurae",
-        "Avetheropoda",
-        "Allosauroidea"
+        "Tetanurae"
       ],
       "authors": "Zhao, X.-J.; Currie, P. J.",
       "described": 1993
@@ -134806,6 +134950,7 @@
         "Tetanurae",
         "Avetheropoda",
         "Allosauroidea",
+        "Allosauria",
         "Carcharodontosauria"
       ],
       "authors": "Hutt, S.; Martill, D. M.; Barker, M. J.",
@@ -166490,6 +166635,7 @@
         "Tetanurae",
         "Avetheropoda",
         "Allosauroidea",
+        "Allosauria",
         "Carcharodontosauria",
         "Carcharodontosauridae"
       ],
@@ -166696,6 +166842,15 @@
     "Saurophaganax": {
       "genus": "Saurophaganax",
       "parent": "Allosauridae",
+      "dispute": {
+        "summary": "Saurophaganax maximus has historically been treated as a giant allosaurid, either a distinct genus or a species of Allosaurus (A. maximus; Smith, 1998). Danison et al. (2024) argued that the referred material is a chimera of a large Allosaurus and a diplodocid sauropod and that the holotype neural arch is undiagnostic, rendering Saurophaganax a nomen dubium; they erected Allosaurus anax for the theropod material. Pending broad acceptance of that reassessment, the genus is retained conservatively at Allosauridae.\n",
+        "history": [
+          {
+            "date": "2026-07-02",
+            "note": "Retained at Allosauridae; the chimera and nomen dubium argument of Danison et al. (2024), and the proposed transfer of the valid theropod material to Allosaurus anax, are flagged for review and not yet adopted."
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "SAWR-o-FAG-a-naks"
       },
@@ -170614,6 +170769,7 @@
         "Tetanurae",
         "Avetheropoda",
         "Allosauroidea",
+        "Allosauria",
         "Carcharodontosauria",
         "Carcharodontosauridae"
       ],
@@ -170774,6 +170930,15 @@
     "Shidaisaurus": {
       "genus": "Shidaisaurus",
       "parent": "Metriacanthosauridae",
+      "dispute": {
+        "summary": "Shidaisaurus jinae is a basal metriacanthosaurid. Carrano, Benson and Sampson (2012) allowed for the possibility that it belongs to Metriacanthosaurinae, and Jones and Viola (2026) place it there, but dedicated analyses more often recover it in an unresolved basal position within Metriacanthosauridae (Zou et al., 2025). It is placed conservatively at Metriacanthosauridae incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-07-02",
+            "note": "Placed at Metriacanthosauridae incertae sedis (P2); its possible assignment to Metriacanthosaurinae is unresolved."
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "shih-DYE-SAWR-us"
       },
@@ -172350,6 +172515,15 @@
     "Siamotyrannus": {
       "genus": "Siamotyrannus",
       "parent": "Metriacanthosaurinae",
+      "dispute": {
+        "summary": "Siamotyrannus isanensis was originally described as an early tyrannosaur (Buffetaut et al., 1996), but that assignment has been rejected; reanalysis places it within Metriacanthosauridae as a member of Metriacanthosaurinae (Carrano, Benson and Sampson, 2012; Rauhut et al., 2024). An alternative hypothesis allies the fragmentary holotype with the megaraptorans (noted by Jones and Viola, 2026). It is placed at Metriacanthosaurinae following the prevailing view.\n",
+        "history": [
+          {
+            "date": "2026-07-02",
+            "note": "Placed at Metriacanthosaurinae following Carrano, Benson and Sampson (2012) and Rauhut et al. (2024) (P3); the original tyrannosaurid identification is rejected and a minority megaraptoran affinity is noted."
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "sie-AM-o-ti-RAN-us"
       },
@@ -172633,6 +172807,7 @@
         "Tetanurae",
         "Avetheropoda",
         "Allosauroidea",
+        "Allosauria",
         "Carcharodontosauria"
       ],
       "authors": "Chokchaloemwong, D.; Hattori, S.; Cuesta, E.; Jintasakul, P.; Shibata, M.; Azuma, Y.",
@@ -175720,6 +175895,15 @@
     "Sinraptor": {
       "genus": "Sinraptor",
       "parent": "Metriacanthosaurinae",
+      "dispute": {
+        "summary": "Sinraptor is assigned to Metriacanthosaurinae by the analysis that erected the subfamily and by subsequent work (Carrano, Benson and Sampson, 2012; Rauhut et al., 2024; Jones and Viola, 2026), but Zou et al. (2025) instead recover Sinraptor on the Yangchuanosaurus branch of Metriacanthosauridae, outside Metriacanthosaurinae. It is placed at Metriacanthosaurinae following the prevailing view.\n",
+        "history": [
+          {
+            "date": "2026-07-02",
+            "note": "Placed at Metriacanthosaurinae following Carrano, Benson and Sampson (2012) and Rauhut et al. (2024) (P3); Zou et al. (2025) recover it outside the subfamily."
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "sien-RAP-tor",
         "ipa": "/sɪnˈræptər/"
@@ -182982,6 +183166,7 @@
         "Tetanurae",
         "Avetheropoda",
         "Allosauroidea",
+        "Allosauria",
         "Carcharodontosauria",
         "Carcharodontosauridae"
       ],
@@ -184934,6 +185119,7 @@
         "Tetanurae",
         "Avetheropoda",
         "Allosauroidea",
+        "Allosauria",
         "Carcharodontosauria",
         "Carcharodontosauridae",
         "Carcharodontosaurinae"
@@ -195465,6 +195651,7 @@
         "Tetanurae",
         "Avetheropoda",
         "Allosauroidea",
+        "Allosauria",
         "Carcharodontosauria",
         "Carcharodontosauridae",
         "Carcharodontosaurinae"
@@ -196222,6 +196409,7 @@
         "Tetanurae",
         "Avetheropoda",
         "Allosauroidea",
+        "Allosauria",
         "Carcharodontosauria"
       ],
       "authors": "Tanaka, K.; Anvarov, O. U. O.; Zelenitsky, D. K.; Ahmedshaev, A. S.; Kobayashi, Y.",
@@ -200134,6 +200322,7 @@
         "Tetanurae",
         "Avetheropoda",
         "Allosauroidea",
+        "Allosauria",
         "Carcharodontosauria",
         "Carcharodontosauridae"
       ],
