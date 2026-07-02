@@ -1,8 +1,8 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-07-02T03:02:39.754Z",
-    "clade_count": 203,
+    "built_at": "2026-07-02T04:34:37.302Z",
+    "clade_count": 201,
     "genus_count": 1398,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
@@ -106,10 +106,7 @@
                                             "Halszkaraptorinae": {}
                                           },
                                           "Troodontidae": {
-                                            "Troodontinae": {
-                                              "Saurornithoidini": {},
-                                              "Troodontini": {}
-                                            },
+                                            "Troodontinae": {},
                                             "Sinovenatorinae": {},
                                             "Jinfengopteryginae": {}
                                           }
@@ -2730,6 +2727,7 @@
       ]
     },
     "Deinonychosauria": {
+      "description": "Deinonychosauria is the clade of paravian theropods comprising Dromaeosauridae and Troodontidae, the closest relatives of birds among non-avialan dinosaurs. Its members share an enlarged, retractable sickle claw on the second toe and a functionally didactyl foot. Deinonychosauria is recovered as the sister group of Avialae in most recent analyses.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -2750,6 +2748,25 @@
         "Maniraptora",
         "Paraves",
         "Deinonychosauria"
+      ],
+      "described": 1969,
+      "authors": "Colbert, E. H.; Russell, D. A.",
+      "diagnostic_features": [
+        "Enlarged, retractable sickle-shaped ungual on pedal digit II",
+        "Functionally didactyl foot with a raised second toe",
+        "Elongate penultimate phalanx on pedal digit II",
+        "Modified metatarsal II permitting hyperextension of the second toe"
+      ],
+      "references": [
+        {
+          "id": "colbertrussell1969",
+          "authors": "Colbert, E. H.; Russell, D. A.",
+          "year": 1969,
+          "title": "The small Cretaceous dinosaur Dromaeosaurus",
+          "journal": "American Museum Novitates",
+          "volume": "2380",
+          "pages": "1-49"
+        }
       ]
     },
     "Diamantinasauria": {
@@ -4682,6 +4699,7 @@
       ]
     },
     "Jinfengopteryginae": {
+      "description": "Jinfengopteryginae is a subfamily of small troodontids erected for the type genus Jinfengopteryx and its relatives, including Liaoningvenator and the European Tamarro. Members are small-bodied, relatively basal troodontids known in part from feathered specimens. The monophyly of the group is contested (see dispute).\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -4704,6 +4722,26 @@
         "Deinonychosauria",
         "Troodontidae",
         "Jinfengopteryginae"
+      ],
+      "type_genus": "Jinfengopteryx",
+      "described": 2012,
+      "authors": "Turner, A. H.; Makovicky, P. J.; Norell, M. A.",
+      "diagnostic_features": [
+        "Small body size with a short, deep skull",
+        "Plantar displacement of the proximal end of metatarsal III relative to metatarsals II and IV",
+        "Numerous small, unserrated or weakly serrated teeth"
+      ],
+      "references": [
+        {
+          "id": "turner2012",
+          "authors": "Turner, A. H.; Makovicky, P. J.; Norell, M. A.",
+          "year": 2012,
+          "title": "A Review of Dromaeosaurid Systematics and Paravian Phylogeny",
+          "journal": "Bulletin of the American Museum of Natural History",
+          "volume": "371",
+          "pages": "1-206",
+          "doi": "10.1206/748.1"
+        }
       ]
     },
     "Khebbashia": {
@@ -8103,32 +8141,6 @@
         }
       ]
     },
-    "Saurornithoidini": {
-      "taxonomy": [
-        "Life",
-        "Animalia",
-        "Chordata",
-        "Vertebrata",
-        "Sarcopterygii",
-        "Tetrapoda",
-        "Reptilia",
-        "Archosauria",
-        "Dinosauria",
-        "Saurischia",
-        "Theropoda",
-        "Neotheropoda",
-        "Averostra",
-        "Tetanurae",
-        "Avetheropoda",
-        "Coelurosauria",
-        "Maniraptora",
-        "Paraves",
-        "Deinonychosauria",
-        "Troodontidae",
-        "Troodontinae",
-        "Saurornithoidini"
-      ]
-    },
     "Saurornitholestinae": {
       "description": "Saurornitholestinae is a subfamily of North American eudromaeosaurian dromaeosaurids comprising the type genus Saurornitholestes and Atrociraptor, and in some analyses Acheroraptor and Bambiraptor. Members combine relatively short, deep snouts with enlarged, blade-like anterior teeth. The subfamily is supported by recent cranial studies but is not recovered by all analyses, some of which place its members within Velociraptorinae.\n",
       "taxonomy": [
@@ -8253,6 +8265,7 @@
       ]
     },
     "Sinovenatorinae": {
+      "description": "Sinovenatorinae is a subfamily of small, early-diverging troodontids from the Early Cretaceous Jehol Biota of China, comprising the type genus Sinovenator together with Mei and, in most analyses, Sinusonasus, Daliansaurus, and Jianianhualong. Members are among the smallest and most basal troodontids. The monophyly and membership of the group are contested (see dispute).\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -8275,6 +8288,28 @@
         "Deinonychosauria",
         "Troodontidae",
         "Sinovenatorinae"
+      ],
+      "type_genus": "Sinovenator",
+      "described": 2017,
+      "authors": "Shen, C.; Lü, J.; Liu, S.; Kundrát, M.; Brusatte, S. L.; Gao, H.",
+      "diagnostic_features": [
+        "Small body size with a proportionally large braincase",
+        "Anterior dentary teeth more closely packed than posterior teeth",
+        "Metatarsal IV mediolaterally wide"
+      ],
+      "references": [
+        {
+          "id": "shen2017b",
+          "authors": "Shen, C.; Lü, J.; Liu, S.; Kundrát, M.; Brusatte, S. L.; Gao, H.",
+          "year": 2017,
+          "title": "A New Troodontid Dinosaur from the Lower Cretaceous Yixian Formation of Liaoning Province, China",
+          "journal": "Acta Geologica Sinica (English Edition)",
+          "volume": "91",
+          "issue": "3",
+          "pages": "763-780",
+          "publisher": "Wiley",
+          "doi": "10.1111/1755-6724.13307"
+        }
       ]
     },
     "Somphospondyli": {
@@ -9191,7 +9226,7 @@
       ]
     },
     "Troodontidae": {
-      "description": "Troodontidae is a family of small, bird-like maniraptoran theropod dinosaurs known from the Cretaceous of North America, Asia, and Europe. Troodontids are notable for possessing the largest brain-to-body-size ratio among non-avian dinosaurs, suggesting relatively high intelligence. They had large, forward- facing eyes indicating good binocular vision, long and slender legs adapted for speed, and a retractable sickle claw on the second toe (smaller than in dromaeosaurids). Troodontids are among the closest known relatives of Aves.\n",
+      "description": "Troodontidae is a family of small, bird-like maniraptoran theropod dinosaurs known from the Jurassic and Cretaceous of North America, Asia, and Europe. Troodontids possessed among the largest brain-to-body-size ratios of non-avian dinosaurs, large forward-facing eyes, long slender legs, and closely packed teeth. The family includes the basal Sinovenatorinae, the Jinfengopteryginae, and the derived Troodontinae, and is one of the closest relatives of birds.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -9214,20 +9249,20 @@
         "Deinonychosauria",
         "Troodontidae"
       ],
+      "type_genus": "Troodon",
       "described": 1924,
-      "authors": "Gilmore",
+      "authors": "Gilmore, C. W.",
       "diagnostic_features": [
-        "Large brain relative to body size (high encephalization quotient)",
+        "Numerous, closely packed teeth with large denticles on the distal carina",
         "Large, forward-facing orbits with well-developed binocular vision",
-        "Closely packed, numerous small teeth with large denticles",
-        "Retractable sickle claw on pedal digit II (smaller than dromaeosaurid condition)",
-        "Slender and elongate metatarsus adapted for cursorial locomotion",
-        "Asymmetric trochlea of metatarsal IV"
+        "Enlarged braincase with a high encephalization quotient",
+        "Slender, subarctometatarsalian metatarsus with an asymmetric metatarsal IV trochlea",
+        "Retractable pedal ungual II smaller than in dromaeosaurids"
       ],
       "references": [
         {
           "id": "gilmore1924a",
-          "authors": "Gilmore, C.W.",
+          "authors": "Gilmore, C. W.",
           "year": 1924,
           "title": "A new coelurid dinosaur from the Belly River Cretaceous of Alberta",
           "journal": "Bulletin of the Canadian Department of Mines, Geological Survey",
@@ -9237,6 +9272,7 @@
       ]
     },
     "Troodontinae": {
+      "description": "Troodontinae is the derived subfamily of troodontids, containing the largest and most encephalized members, including the type genus Troodon together with Saurornithoides, Zanabazar, Gobivenator, and their North American and Asian relatives. Members have deep, anteromedially deflected dentaries and reach the greatest body sizes in the family. The subfamily's membership varies between analyses.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -9259,32 +9295,28 @@
         "Deinonychosauria",
         "Troodontidae",
         "Troodontinae"
-      ]
-    },
-    "Troodontini": {
-      "taxonomy": [
-        "Life",
-        "Animalia",
-        "Chordata",
-        "Vertebrata",
-        "Sarcopterygii",
-        "Tetrapoda",
-        "Reptilia",
-        "Archosauria",
-        "Dinosauria",
-        "Saurischia",
-        "Theropoda",
-        "Neotheropoda",
-        "Averostra",
-        "Tetanurae",
-        "Avetheropoda",
-        "Coelurosauria",
-        "Maniraptora",
-        "Paraves",
-        "Deinonychosauria",
-        "Troodontidae",
-        "Troodontinae",
-        "Troodontini"
+      ],
+      "type_genus": "Troodon",
+      "described": 2017,
+      "authors": "van der Reest, A. J.; Currie, P. J.",
+      "diagnostic_features": [
+        "Anteromedially deflected dentary with a U-shaped symphysis",
+        "Enlarged denticles on the dentary teeth",
+        "Elongate ambiens process on the anterior margin of the iliopubic symphysis",
+        "Large body size relative to other troodontids"
+      ],
+      "references": [
+        {
+          "id": "vanderreest2017",
+          "authors": "van der Reest, A. J.; Currie, P. J.",
+          "year": 2017,
+          "title": "Troodontids (Theropoda) from the Dinosaur Park Formation, Alberta, with a description of a unique new taxon: implications for deinonychosaur diversity in North America",
+          "journal": "Canadian Journal of Earth Sciences",
+          "volume": "54",
+          "issue": "9",
+          "pages": "919-935",
+          "doi": "10.1139/cjes-2017-0031"
+        }
       ]
     },
     "Turiasauria": {
@@ -16112,7 +16144,16 @@
     },
     "Albertavenator": {
       "genus": "Albertavenator",
-      "parent": "Troodontini",
+      "parent": "Troodontinae",
+      "dispute": {
+        "summary": "Albertavenator curriei, based on frontal material once attributed to Troodon, is recovered as a derived troodontine; Rivera-Sylva et al. (2026) place it in their new tribe Troodontini (with Xenovenator), which is not adopted here as a node. It is placed in Troodontinae.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Moved from Troodontini (tribe dropped) to Troodontinae following Evans and Williamson (2017) and Rivera-Sylva et al. (2026)."
+          }
+        ]
+      },
       "etymology": "Named after Alberta, Canada, combined with Latin 'venator' meaning 'hunter'; meaning 'Alberta hunter'",
       "pronunciation": {
         "phonetic": "al-BURR-tuh-vuh-NAY-tuhr"
@@ -16238,8 +16279,7 @@
         "Paraves",
         "Deinonychosauria",
         "Troodontidae",
-        "Troodontinae",
-        "Troodontini"
+        "Troodontinae"
       ],
       "authors": "Evans, D. C.; Cullen, T. M.; Larson, D. W.; Rego, A.",
       "described": 2017
@@ -17731,6 +17771,15 @@
     "Almas": {
       "genus": "Almas",
       "parent": "Troodontidae",
+      "dispute": {
+        "summary": "Almas is recovered as the earliest-diverging member of a Late Cretaceous troodontid clade (Pei et al., 2017, 2022) and as one node closer to Troodontinae than Sinovenatorinae by Hartman et al. (2019); some earlier analyses placed it in Jinfengopteryginae (Turner et al., 2012). It is placed at Troodontidae incertae sedis pending resolution.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Troodontidae incertae sedis (least-inclusive uncontested clade); basal Late Cretaceous position not assignable to a subfamily."
+          }
+        ]
+      },
       "etymology": "From Mongolian 'almas', a 'wild man'-like creature in Mongolian folklore.",
       "pronunciation": {
         "phonetic": "al-mass"
@@ -21581,7 +21630,16 @@
     },
     "Anchiornis": {
       "genus": "Anchiornis",
-      "parent": "Troodontidae",
+      "parent": "Paraves",
+      "dispute": {
+        "summary": "The placement of Anchiornis is contested but is no longer generally within Troodontidae. It is recovered as an anchiornithid on the avialan stem (Foth and Rauhut, 2017; Pei et al., 2020; Jones et al., 2026) or as an archaeopterygid at the base of Deinonychosauria (Xu et al., 2011; Hartman et al., 2019); only the weakly supported, preliminary analysis of Godefroit et al. (2013) recovers it as a basal troodontid. It is placed conservatively at Paraves incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Moved from Troodontidae to Paraves incertae sedis (anchiornithid/avialan or basal deinonychosaur, not a troodontid in recent analyses). Deferred to the basal-paravian/Avialae batch."
+          }
+        ]
+      },
       "etymology": "From Greek 'anchi' meaning 'near' and 'ornis' meaning 'bird', meaning 'near bird', reflecting its close morphological similarity to modern birds.",
       "description": "Anchiornis is a genus of small, four-winged paravian dinosaurs, with only one known species, the type species Anchiornis huxleyi, named for its similarity to modern birds. Anchiornis fossils have been found only in the Tiaojishan Formation of Liaoning, China, in rocks dated to the Late Jurassic, about 160 million years ago. It is known from hundreds of specimens, and given the exquisite preservation of some of these fossils, it became the first Mesozoic dinosaur species for which almost the entire life appearance could be determined, and an important source of information on the early evolution of birds.",
       "diet": "carnivore",
@@ -21798,9 +21856,7 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptora",
-        "Paraves",
-        "Deinonychosauria",
-        "Troodontidae"
+        "Paraves"
       ],
       "authors": "Xu, X.; Zhao, Q.; Norell, M.; Sullivan, C.; Hone, D.; Erickson, G.; Wang, X.; Han, F.; Guo, Y.",
       "described": 2008
@@ -26578,6 +26634,15 @@
     "Archaeornithoides": {
       "genus": "Archaeornithoides",
       "parent": "Troodontidae",
+      "dispute": {
+        "summary": "Archaeornithoides is based on a fragmentary juvenile skull and was originally linked to troodontids and spinosaurids as a close bird relative (Elzanowski and Wellnhofer, 1992). Bever and Norell (2009) concluded it is a distinct, valid genus but of highly uncertain phylogenetic position, generally near or within Troodontidae. It is placed at Troodontidae incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Troodontidae incertae sedis; fragmentary juvenile holotype, position uncertain. Flagged for Literature Review."
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "AHR-kee-OR-ni-THOI-deez"
       },
@@ -39770,7 +39835,16 @@
     },
     "Borogovia": {
       "genus": "Borogovia",
-      "parent": "Saurornithoidini",
+      "parent": "Troodontinae",
+      "dispute": {
+        "summary": "Borogovia is known from lower hind-limb material and its position is unsettled. It is recovered within Troodontinae near Saurornithoides (Sellés et al., 2021) or as the sister taxon to Troodontinae (Cau and Madzia, 2021), and has historically been suggested as a possible senior synonym of Zanabazar (Nemegt troodontids). It is placed in Troodontinae following the recent analyses.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Moved from Saurornithoidini (tribe dropped) to Troodontinae; sister-to-Troodontinae alternative and possible Zanabazar synonymy noted."
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "bor-o-GOH-vee-a"
       },
@@ -39905,8 +39979,7 @@
         "Paraves",
         "Deinonychosauria",
         "Troodontidae",
-        "Troodontinae",
-        "Saurornithoidini"
+        "Troodontinae"
       ],
       "authors": "Osmolska, H.",
       "described": 1987
@@ -40920,7 +40993,16 @@
     },
     "Bradycneme": {
       "genus": "Bradycneme",
-      "parent": "Troodontidae",
+      "parent": "Maniraptora",
+      "dispute": {
+        "summary": "Bradycneme is a fragmentary Romanian maniraptoran of highly uncertain affinity. It was originally described as a giant owl (Harrison and Walker, 1975), later treated as an indeterminate maniraptoran or troodontid, and most recently favored as an alvarezsauroid (Naish and Dyke, 2004; Hartman et al., 2019; Jones et al., 2026). Given the spread of hypotheses and the fragmentary holotype it is placed conservatively at Maniraptora incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Moved from Troodontidae to Maniraptora incertae sedis (owl, troodontid, and alvarezsauroid hypotheses all proposed; not supported as a troodontid by any analysis). Flagged for Literature Review."
+          }
+        ]
+      },
       "etymology": "From Ancient Greek bradys (βραδύς) meaning 'slow, ponderous' + kneme (κνήμη) meaning 'leg'; overall meaning 'ponderous leg', referring to the robust leg bone on which the genus is based.",
       "pronunciation": {
         "phonetic": "BRAD-ik-NEE-mee"
@@ -41021,10 +41103,7 @@
         "Tetanurae",
         "Avetheropoda",
         "Coelurosauria",
-        "Maniraptora",
-        "Paraves",
-        "Deinonychosauria",
-        "Troodontidae"
+        "Maniraptora"
       ],
       "authors": "Harrison, C. J. O.; Walker, C. A.",
       "described": 1975
@@ -43017,6 +43096,15 @@
     "Byronosaurus": {
       "genus": "Byronosaurus",
       "parent": "Troodontinae",
+      "dispute": {
+        "summary": "Byronosaurus is consistently recovered as a troodontine, but often near the base of the subfamily or just outside the derived Saurornithoides-Zanabazar- Troodon clade (Norell et al., 2009; Tsuihiji et al., 2014; Hartman et al., 2019). It is placed in Troodontinae following these analyses.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed in Troodontinae; recovered as a basal troodontine or an outgroup to the derived troodontine clade."
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "BIE-ruh-no-SAWR-us"
       },
@@ -49069,6 +49157,15 @@
     "Changzhousaurus": {
       "genus": "Changzhousaurus",
       "parent": "Deinonychosauria",
+      "dispute": {
+        "summary": "Changzhousaurus was described from a specimen with a mosaic of troodontid, dromaeosaurid, anchiornithid, and avialan features; no quantitative analysis was run, and its describers preferred an early-diverging deinonychosaurian interpretation while conceding anchiornithine or avialan status is not impossible (Xu et al., 2026). It is placed at Deinonychosauria incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Deinonychosauria incertae sedis (least-inclusive uncontested clade); mosaic morphology, no phylogenetic analysis, family-level placement unresolved."
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "chahng-joh-SAWR-us"
       },
@@ -58467,7 +58564,16 @@
     },
     "Daliansaurus": {
       "genus": "Daliansaurus",
-      "parent": "Troodontidae",
+      "parent": "Sinovenatorinae",
+      "dispute": {
+        "summary": "Daliansaurus was described as a member of Sinovenatorinae (Shen et al., 2017), the placement adopted here, but later analyses (Hartman et al., 2019) and Jones et al. (2026) instead recover it in a more derived position closer to Troodontinae.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Moved from Troodontidae to Sinovenatorinae following its describers (Shen et al., 2017); the closer-to-Troodontinae alternative (Hartman et al., 2019) is noted."
+          }
+        ]
+      },
       "etymology": "Named after Dalian, a city in Liaoning Province, China, + Greek sauros ('lizard' or 'reptile'), meaning 'Dalian reptile'.",
       "pronunciation": {
         "phonetic": "DAH-ly-uhn-SOR-us"
@@ -58611,7 +58717,8 @@
         "Maniraptora",
         "Paraves",
         "Deinonychosauria",
-        "Troodontidae"
+        "Troodontidae",
+        "Sinovenatorinae"
       ],
       "authors": "Shen, C.; Lü, J.; Liu, S.; Kundrát, M.; Brusatte, S. L.; Gao, H.",
       "described": 2017
@@ -80270,6 +80377,15 @@
     "Geminiraptor": {
       "genus": "Geminiraptor",
       "parent": "Troodontidae",
+      "dispute": {
+        "summary": "Geminiraptor is known only from a single maxilla and its position within Troodontidae is indeterminable — its describers recovered it in an unresolved basal polytomy (Senter et al., 2010), and later analyses disagree (Hartman et al., 2019, within Troodontinae; Kubota et al., 2024, outside it). It is placed at Troodontidae incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Troodontidae incertae sedis (least-inclusive uncontested clade); single-maxilla holotype, position unresolved."
+          }
+        ]
+      },
       "etymology": "Twin seizer; from Latin gemini (twins) and raptor (seizer), referring to the twin geologists Marina and Celina Suarez who discovered the fossil site",
       "pronunciation": {
         "phonetic": "JEM-in-i-RAP-tor"
@@ -83151,7 +83267,16 @@
     },
     "Gobivenator": {
       "genus": "Gobivenator",
-      "parent": "Troodontidae",
+      "parent": "Troodontinae",
+      "dispute": {
+        "summary": "Gobivenator is a derived troodontid recovered within Troodontinae (as a basal member with Hypnovenator, or near Saurornithoides/Zanabazar/Troodon) by most analyses (Tsuihiji et al., 2014; van der Reest and Currie, 2017; Kubota et al., 2024), the placement adopted here, though Sellés et al. (2021) place it just stemward of the subfamily.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Moved from Troodontidae to Troodontinae following the prevailing view (Tsuihiji et al., 2014; van der Reest and Currie, 2017)."
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "GOH-bee-ven-AY-tor"
       },
@@ -83272,7 +83397,8 @@
         "Maniraptora",
         "Paraves",
         "Deinonychosauria",
-        "Troodontidae"
+        "Troodontidae",
+        "Troodontinae"
       ],
       "authors": "Tsuihiji, T.; Barsbold, R.; Watabe, M.; Tsogtbaatar, K.; Chinzorig, T.; Fujiyama, Y.; Suzuki, S.",
       "described": 2014
@@ -87659,6 +87785,15 @@
     "Harenadraco": {
       "genus": "Harenadraco",
       "parent": "Troodontidae",
+      "dispute": {
+        "summary": "Harenadraco is a fragmentary troodontid (mostly hind-limb material) recovered in an unstable position by its describers (Lee et al., 2023): under implied weighting it groups with Early Cretaceous Chinese troodontids, but under equal weighting it is pruned as unstable. It is placed at Troodontidae incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Troodontidae incertae sedis (least-inclusive uncontested clade); fragmentary and phylogenetically unstable."
+          }
+        ]
+      },
       "etymology": "Sand dragon; from Latin harena (sand) and draco (dragon), referring to the sandy desert environment of the Baruungoyot Formation",
       "pronunciation": {
         "phonetic": "huh-RAY-nuh-DRAH-ko"
@@ -88928,6 +89063,15 @@
     "Hesperornithoides": {
       "genus": "Hesperornithoides",
       "parent": "Troodontidae",
+      "dispute": {
+        "summary": "Hesperornithoides, the oldest definitive troodontid, is recovered in a basal position by its describers (Hartman et al., 2019) — though within their tree it falls in a derived clade with Daliansaurus, Xixiasaurus, and Sinusonasus — and as the basalmost troodontid by Sellés et al. (2021). It is not assigned to a named subfamily and is placed at Troodontidae incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Troodontidae incertae sedis (least-inclusive uncontested clade); basal position not assignable to a subfamily."
+          }
+        ]
+      },
       "etymology": "From Greek 'Hesperis' meaning 'western', 'ornis' meaning 'bird', and '-eides' meaning 'form', hence 'western bird form'. The species name honors the Miessler family.",
       "pronunciation": {
         "phonetic": "HESS-per-OR-nee-THOY-deez"
@@ -93471,6 +93615,15 @@
     "Hypnovenator": {
       "genus": "Hypnovenator",
       "parent": "Troodontinae",
+      "dispute": {
+        "summary": "Hypnovenator was described as the oldest and a basal member of Troodontinae, forming a clade with Gobivenator (Kubota et al., 2024), the placement adopted here. It has not yet been tested by independent analyses.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed in Troodontinae (basal, sister to Gobivenator) following Kubota et al. (2024)."
+          }
+        ]
+      },
       "etymology": "Sleep hunter; from Greek hypnos (sleep) and Latin venator (hunter), possibly referring to its nocturnal hunting behavior",
       "pronunciation": {
         "phonetic": "HIP-no-VEN-uh-tuh"
@@ -101061,6 +101214,15 @@
     "Jianianhualong": {
       "genus": "Jianianhualong",
       "parent": "Sinovenatorinae",
+      "dispute": {
+        "summary": "Jianianhualong is consistently recovered as a basal troodontid and is placed in Sinovenatorinae by Hartman et al. (2019) and Jones et al. (2026), the placement adopted here, although Cau and Madzia (2021) recover it outside that subfamily and its describers placed it in a polytomy near Sinusonasus.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed in Sinovenatorinae following Hartman et al. (2019); the membership instability of Sinovenatorinae is recorded on the clade file."
+          }
+        ]
+      },
       "etymology": "Named after Jianianhua (the company that funded the research) combined with Chinese long (dragon); meaning \"Jianianhua dragon\"",
       "description": "Jianianhualong is a genus of troodontid theropod dinosaur from the Early Cretaceous of China. It contains a single species, Jianianhualong tengi, named in 2017 by Xu Xing and colleagues based on an articulated skeleton preserving feathers. The feathers at the middle of the tail of Jianianhualong are asymmetric, being the first record of asymmetrical feathers among the troodontids. Despite aerodynamic differences from the flight feathers of modern birds, the feathers in the tail vane of Jianianhualong could have functioned in drag reduction while the animal was moving. The discovery of Jianianhualong supports the notion that asymmetrical feathers appeared early in the evolutionary history of the Paraves.",
       "diet": "carnivore",
@@ -101435,6 +101597,15 @@
     "Jinfengopteryx": {
       "genus": "Jinfengopteryx",
       "parent": "Jinfengopteryginae",
+      "dispute": {
+        "summary": "Jinfengopteryx was originally described as a basal avialan/archaeopterygid (Ji et al., 2005) but is now generally recovered as a troodontid, and is the type genus of Jinfengopteryginae (Turner et al., 2012; Sellés et al., 2021). Its finer position is unstable — Hartman et al. (2019) recover it equally in Sinovenatorinae or with the jinfengopterygines, and some analyses shift it stemward as a basal paravian.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed in Jinfengopteryginae (its type genus) following Turner et al. (2012) and Sellés et al. (2021); original avialan and basal-paravian readings noted. Clade-level monophyly dispute recorded on the Jinfengopteryginae file."
+          }
+        ]
+      },
       "etymology": "From Chinese Jinfeng (golden phoenix, the queen of birds in Chinese folklore) and Ancient Greek pteryx (feather, wing); meaning 'golden phoenix feather'",
       "pronunciation": {
         "phonetic": "jin-feng-OP-tuh-rix"
@@ -106682,6 +106853,15 @@
     "Koparion": {
       "genus": "Koparion",
       "parent": "Troodontidae",
+      "dispute": {
+        "summary": "Koparion douglassi is based on a single maxillary tooth from the Morrison Formation and is a tooth-based taxon; its describer referred it to Troodontidae on dental characters (Chure, 1994), but it cannot be placed more precisely and is treated by some as of doubtful validity. It is placed at Troodontidae incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Troodontidae incertae sedis; single-tooth taxon. Flagged for Literature Review."
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "ko-PAYR-ee-on"
       },
@@ -113387,6 +113567,15 @@
     "Liaoningvenator": {
       "genus": "Liaoningvenator",
       "parent": "Jinfengopteryginae",
+      "dispute": {
+        "summary": "Liaoningvenator was originally recovered by its describers in a clade with the anchiornithids (Shen et al., 2017), but is placed in Jinfengopteryginae by Sellés et al. (2021) and near the base of Troodontinae by Hartman et al. (2019). It is placed in Jinfengopteryginae following the most recent dedicated analysis.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed in Jinfengopteryginae following Sellés et al. (2021); anchiornithid-grade and near-Troodontinae alternatives noted."
+          }
+        ]
+      },
       "etymology": "Named after Liaoning Province, China combined with Latin venator (hunter); meaning \"Liaoning hunter\"",
       "pronunciation": {
         "phonetic": "lee-YOW-ning-VEN-uh-tuh"
@@ -143864,7 +144053,16 @@
     },
     "Pamparaptor": {
       "genus": "Pamparaptor",
-      "parent": "Deinonychosauria",
+      "parent": "Dromaeosauridae",
+      "dispute": {
+        "summary": "Pamparaptor is a small Patagonian deinonychosaur known only from a partial foot with a troodontid-like, subarctometatarsalian pes. Its describers interpreted it as a dromaeosaurid (Porfiri et al., 2011), rejecting an earlier referral to Neuquenraptor; possible unenlagiine affinities have been suggested, and Novas et al. (2013) could place it only as an indeterminate paravian. It is placed at Dromaeosauridae incertae sedis following its describers.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Moved from Deinonychosauria to Dromaeosauridae incertae sedis (dromaeosaurid with troodontid-like pes, Porfiri et al., 2011); unenlagiine and indeterminate-paravian alternatives noted."
+          }
+        ]
+      },
       "etymology": "Named for the Pampas region of South America where it was found, combined with Latin 'raptor' meaning 'thief'; translates as 'thief of the Pampas'.",
       "pronunciation": {
         "ipa": "/ˈpɑːmpəræptər/",
@@ -143992,7 +144190,8 @@
         "Coelurosauria",
         "Maniraptora",
         "Paraves",
-        "Deinonychosauria"
+        "Deinonychosauria",
+        "Dromaeosauridae"
       ],
       "authors": "Porfiri, J. D.; Calvo, J. O.; Santos, D. dos",
       "described": 2011
@@ -144825,6 +145024,15 @@
     "Papiliovenator": {
       "genus": "Papiliovenator",
       "parent": "Troodontidae",
+      "dispute": {
+        "summary": "Papiliovenator was described as one of the most basal Late Cretaceous troodontids, the second-earliest-diverging after Almas (Pei et al., 2022); some trees place it within Jinfengopteryginae. It is not assigned to a stable subfamily and is placed at Troodontidae incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Troodontidae incertae sedis (least-inclusive uncontested clade); basal Late Cretaceous position."
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "puh-PIL-ee-oh-ven-AY-tor"
       },
@@ -147308,6 +147516,15 @@
     "Pectinodon": {
       "genus": "Pectinodon",
       "parent": "Troodontidae",
+      "dispute": {
+        "summary": "Pectinodon bakkeri is a tooth-based troodontid taxon from the Lance and Hell Creek formations. Its describers placed it in the old family Saurornithoididae (= Troodontidae); it is treated as a valid but tooth-based taxon by some (Currie and Larson, 2013) and as a nomen dubium by others, possibly synonymous with Troodon. It is placed at Troodontidae incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Troodontidae incertae sedis; tooth-based taxon of contested validity. Flagged for Literature Review."
+          }
+        ]
+      },
       "etymology": "From Latin pecten ('comb') and Greek odon (ὀδών, 'tooth'), meaning 'comb tooth', referring to the comb-like serrations on the rear edge of its teeth",
       "pronunciation": {
         "phonetic": "pec-tin-o-don"
@@ -149234,7 +149451,16 @@
     },
     "Philovenator": {
       "genus": "Philovenator",
-      "parent": "Jinfengopteryginae",
+      "parent": "Troodontinae",
+      "dispute": {
+        "summary": "Philovenator (originally described from a juvenile once referred to Saurornithoides) is recovered as a derived troodontine, close to Linhevenator, by most analyses (Tsuihiji et al., 2014; van der Reest and Currie, 2017; Hartman et al., 2019; Jones et al., 2026), the placement adopted here. Sellés et al. (2021) instead recover it within Jinfengopteryginae.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Moved from Jinfengopteryginae to Troodontinae following the prevailing view (Hartman et al., 2019; van der Reest and Currie, 2017); the jinfengopterygine alternative (Sellés et al., 2021) noted."
+          }
+        ]
+      },
       "etymology": "From Greek philos (loving) and Latin venator (hunter); literally meaning \"love hunter\".",
       "pronunciation": {
         "phonetic": "FIH-lo-VEN-uh-tuh"
@@ -149371,7 +149597,7 @@
         "Paraves",
         "Deinonychosauria",
         "Troodontidae",
-        "Jinfengopteryginae"
+        "Troodontinae"
       ],
       "authors": "Xu, X.; Zhao, Q.; Sullivan, C.; Tan, Q.-W.; Sander, M.; Ma, Q.-Y.",
       "described": 2012
@@ -152507,7 +152733,16 @@
     },
     "Polyodontosaurus": {
       "genus": "Polyodontosaurus",
-      "parent": "Troodontini",
+      "parent": "Troodontidae",
+      "dispute": {
+        "summary": "Polyodontosaurus grandis, based on a single troodontid dentary, is widely regarded as a nomen dubium: Currie (1987) referred its material to Troodon, and van der Reest and Currie (2017) confirmed the dentary lacks diagnostic features. It cannot be placed below family level and is retained at Troodontidae incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Moved from Troodontini (tribe dropped) to Troodontidae incertae sedis; nomen dubium, dentary-only holotype (possibly = Troodon). Flagged for Literature Review."
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "pol-ee-o-DON-to-SAWR-us"
       },
@@ -152612,9 +152847,7 @@
         "Maniraptora",
         "Paraves",
         "Deinonychosauria",
-        "Troodontidae",
-        "Troodontinae",
-        "Troodontini"
+        "Troodontidae"
       ],
       "authors": "Gilmore, C. W.",
       "described": 1932
@@ -166583,7 +166816,7 @@
     },
     "Saurornithoides": {
       "genus": "Saurornithoides",
-      "parent": "Saurornithoidini",
+      "parent": "Troodontinae",
       "pronunciation": {
         "ipa": "/sɔːˌrɔːrnɪˈθɔɪdiːz/",
         "phonetic": "saw-ROR-ni-THOY-deez"
@@ -166759,8 +166992,7 @@
         "Paraves",
         "Deinonychosauria",
         "Troodontidae",
-        "Troodontinae",
-        "Saurornithoidini"
+        "Troodontinae"
       ],
       "authors": "Osborn, H. F.",
       "described": 1924
@@ -173972,7 +174204,16 @@
     },
     "Sinornithoides": {
       "genus": "Sinornithoides",
-      "parent": "Troodontinae",
+      "parent": "Troodontidae",
+      "dispute": {
+        "summary": "Sinornithoides is recovered near the base of the troodontine radiation but outside a stably defined Troodontinae — as an outgroup to the derived Saurornithoides-Zanabazar-Troodon clade (Norell et al., 2009), just stemward of Troodontinae when that subfamily was erected (van der Reest and Currie, 2017), or in a basal polytomy (Yin et al., 2018). It is placed at Troodontidae incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Moved from Troodontinae to Troodontidae incertae sedis (least-inclusive uncontested clade); recovered just stemward of Troodontinae."
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "sie-NOR-ni-THOI-deez"
       },
@@ -174120,8 +174361,7 @@
         "Maniraptora",
         "Paraves",
         "Deinonychosauria",
-        "Troodontidae",
-        "Troodontinae"
+        "Troodontidae"
       ],
       "authors": "Russell, D. A.; Dong, Z.-M.",
       "described": 1993
@@ -175265,7 +175505,16 @@
     },
     "Sinusonasus": {
       "genus": "Sinusonasus",
-      "parent": "Troodontidae",
+      "parent": "Sinovenatorinae",
+      "dispute": {
+        "summary": "Sinusonasus was recovered within Sinovenatorinae by its subfamily's erecting analysis (Shen et al., 2017), the placement adopted here, but Hartman et al. (2019) instead recover it in a more derived position (paired with Xixiasaurus, near Hesperornithoides), and Jones et al. (2026) note its position is unstable.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Moved from Troodontidae to Sinovenatorinae following Shen et al. (2017); the derived-position alternative (Hartman et al., 2019) is noted."
+          }
+        ]
+      },
       "etymology": "From Latin 'sinus' (wave, curve, bay) + Latin 'nasus' (nose), meaning 'wavy nose' or 'sinuous nose', referring to the sinusoid (wave-like) form of the nasal bones in lateral view.",
       "pronunciation": {
         "phonetic": "sih-NOO-soh-NAH-sus"
@@ -175407,7 +175656,8 @@
         "Maniraptora",
         "Paraves",
         "Deinonychosauria",
-        "Troodontidae"
+        "Troodontidae",
+        "Sinovenatorinae"
       ],
       "authors": "Xu, X.; Wang, X.",
       "described": 2004
@@ -178767,7 +179017,16 @@
     },
     "Stenonychosaurus": {
       "genus": "Stenonychosaurus",
-      "parent": "Troodontini",
+      "parent": "Troodontinae",
+      "dispute": {
+        "summary": "Stenonychosaurus inequalis was resurrected as a valid genus by van der Reest and Currie (2017), who treated Troodon formosus as a nomen dubium and referred the diagnostic Dinosaur Park Formation troodontid material to it; Cullen et al. (2021) synonymized Latenivenatrix into it. Whether Stenonychosaurus is valid or a junior synonym of Troodon remains contested (Varricchio et al., 2025). It is recovered as a derived troodontine.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Moved from Troodontini (tribe dropped) to Troodontinae; validity versus Troodon synonymy unresolved. Flagged for Literature Review."
+          }
+        ]
+      },
       "etymology": "From Greek 'stenos' meaning 'narrow', 'onyx/onychos' meaning 'claw', and 'sauros' meaning 'lizard'; meaning 'narrow claw lizard', referring to the narrow enlarged claw on the second toe.",
       "description": "Stenonychosaurus is a disputed genus of troodontid dinosaur from the Late Cretaceous Dinosaur Park Formation of Alberta, Canada, as well as possibly the Two Medicine Formation. The type and only species, S. inequalis, was named by Charles Mortram Sternberg in 1932, based on a foot, fragments of a hand, and some caudal vertebrae from the Late Cretaceous of Alberta. S. inequalis was reassigned in 1987 by Phil Currie to the genus Troodon, which was reverted by the recognition of Stenonychosaurus as a separate genus from the possibly dubious Troodon in 2017 by Evans et al. and also later in the same year by Van der Reest and Currie.",
       "diet": "carnivore",
@@ -178915,8 +179174,7 @@
         "Paraves",
         "Deinonychosauria",
         "Troodontidae",
-        "Troodontinae",
-        "Troodontini"
+        "Troodontinae"
       ],
       "authors": "Sternberg, C. M.",
       "described": 1932
@@ -181804,7 +182062,16 @@
     },
     "Talos": {
       "genus": "Talos",
-      "parent": "Saurornithoidini",
+      "parent": "Troodontinae",
+      "dispute": {
+        "summary": "Talos is a North American troodontine whose finer position is contested: it is recovered among the derived troodontines by some analyses (Hartman et al., 2019) and in a more basal troodontine position by others (Averianov and Sues, 2016; van der Reest and Currie, 2017). It is placed in Troodontinae.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Moved from Saurornithoidini (tribe dropped) to Troodontinae; derived-versus-basal troodontine position unresolved."
+          }
+        ]
+      },
       "pronunciation": {
         "ipa": "/ˈteɪlɒs/",
         "phonetic": "TAY-luhs"
@@ -181947,8 +182214,7 @@
         "Paraves",
         "Deinonychosauria",
         "Troodontidae",
-        "Troodontinae",
-        "Saurornithoidini"
+        "Troodontinae"
       ],
       "authors": "Zanno, L. E.; Varricchio, D. J.; O'Connor, P. M.; Titus, A. L.; Knell, M. J.",
       "described": 2011
@@ -181956,6 +182222,15 @@
     "Tamarro": {
       "genus": "Tamarro",
       "parent": "Jinfengopteryginae",
+      "dispute": {
+        "summary": "Tamarro, the first European jinfengopterygine, was placed in Jinfengopteryginae by its describers (Sellés et al., 2021), the placement adopted here, though the attribution is queried given the fragmentary holotype (a partial metatarsal) and the contested monophyly of the subfamily.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed in Jinfengopteryginae following Sellés et al. (2021); fragmentary holotype, attribution queried by the describers. Clade-level monophyly dispute recorded on the Jinfengopteryginae file."
+          }
+        ]
+      },
       "etymology": "Named after the tamarro, a small creature in the folklore of Pallars, Spain",
       "pronunciation": {
         "phonetic": "tah-MAH-row"
@@ -189911,6 +190186,15 @@
     "Tochisaurus": {
       "genus": "Tochisaurus",
       "parent": "Troodontidae",
+      "dispute": {
+        "summary": "Tochisaurus nemegtensis is known only from a single metatarsus. It is accepted as a valid troodontid on the distinctive slender, functionally didactyl foot (Kurzanov and Osmolska, 1991), but the single-element holotype prevents any finer placement. It is placed at Troodontidae incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Troodontidae incertae sedis; single-metatarsus holotype. Flagged for Literature Review."
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "TOHK-i-SAWR-us"
       },
@@ -192728,7 +193012,16 @@
     },
     "Troodon": {
       "genus": "Troodon",
-      "parent": "Troodontini",
+      "parent": "Troodontinae",
+      "dispute": {
+        "summary": "Troodon formosus, the type genus of Troodontidae, is widely regarded as a nomen dubium because its holotype is an isolated, undiagnostic tooth (Zanno et al., 2011; Evans et al., 2017; van der Reest and Currie, 2017), leading some authors to transfer its referred material to Stenonychosaurus. Varricchio et al. (2025) instead propose a neotype and an ICZN petition to retain Troodon. Where its referred material is scored it is recovered as a derived troodontine (with Saurornithoides and Zanabazar), the placement adopted here.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Moved from Troodontini (tribe dropped) to Troodontinae; retained pending the ICZN petition (Varricchio et al., 2025). Nomen-dubium status flagged for Literature Review."
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "TROH-uh-don",
         "ipa": "/ˈtroʊ.ədɒn/"
@@ -192857,8 +193150,7 @@
         "Paraves",
         "Deinonychosauria",
         "Troodontidae",
-        "Troodontinae",
-        "Troodontini"
+        "Troodontinae"
       ],
       "authors": "Leidy, J.",
       "described": 1856
@@ -196133,6 +196425,15 @@
     "Urbacodon": {
       "genus": "Urbacodon",
       "parent": "Troodontinae",
+      "dispute": {
+        "summary": "Urbacodon is a fragmentary troodontid known mainly from a dentary. It has been recovered as a derived troodontine near Zanabazar (Hartman et al., 2019; Wang et al., 2024), the placement adopted here, but Jones et al. (2026) note its fragmentary nature leaves its position indeterminate.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed in Troodontinae following Hartman et al. (2019); fragmentary, position weakly constrained."
+          }
+        ]
+      },
       "etymology": "Named after URBAC (an acronym honoring Uzbek, Russian, British, American, and Canadian scientists who collaborated on Central Asian paleontological expeditions), combined with Greek odon meaning 'tooth'",
       "description": "Urbacodon is a genus of troodontid theropod dinosaur. Two species have been described, both of which are known from a partial dentary: U. itemirensis from the Dzharakuduk Formation (Cenomanian) of Uzbekistan and U. norelli from the Iren Dabasu Formation of China. Possible remains are also known from the Bissekty Formation (Turonian) of Uzbekistan.",
       "diet": "carnivore",
@@ -202628,7 +202929,16 @@
     },
     "Xenovenator": {
       "genus": "Xenovenator",
-      "parent": "Troodontini",
+      "parent": "Troodontinae",
+      "dispute": {
+        "summary": "Xenovenator espinosai, a thick-skulled Mexican troodontid, was recovered within Troodontinae by its describers (Rivera-Sylva et al., 2026), who placed it in a new tribe Troodontini (with Albertavenator and the North American Troodon complex). The tribe is not adopted here as a node (single analysis); the genus is placed in Troodontinae.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Moved from Troodontini (tribe dropped) to Troodontinae following Rivera-Sylva et al. (2026)."
+          }
+        ]
+      },
       "etymology": "From Greek xenos ('strange') and Latin venator ('hunter'), meaning 'strange hunter'",
       "pronunciation": {
         "phonetic": "ZEE-no-VEN-uh-tuh"
@@ -202740,8 +203050,7 @@
         "Paraves",
         "Deinonychosauria",
         "Troodontidae",
-        "Troodontinae",
-        "Troodontini"
+        "Troodontinae"
       ],
       "authors": "Rivera-Sylva, H. E.; Aguillón-Martinez, M. C.; Flores-Ventura, J.; Sánchez-Uribe, I. E.; Guzman-Gutierrez, J. R.; Longrich, N. R.",
       "described": 2026
@@ -203178,7 +203487,16 @@
     },
     "Xiaotingia": {
       "genus": "Xiaotingia",
-      "parent": "Sinovenatorinae",
+      "parent": "Paraves",
+      "dispute": {
+        "summary": "Xiaotingia has been recovered in many positions: as an archaeopterygid at the base of Deinonychosauria (Xu et al., 2011), as an anchiornithid on the avialan stem (Foth and Rauhut, 2017; Pei et al., 2020; Jones et al., 2026), and as a sinovenatorine troodontid (Hartman et al., 2019, which requires nine extra steps to move it elsewhere). Given the spread across the Troodontidae-Avialae boundary it is placed conservatively at Paraves incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Moved from Sinovenatorinae to Paraves incertae sedis (anchiornithid/avialan versus troodontid). Deferred to the basal-paravian/Avialae batch."
+          }
+        ]
+      },
       "etymology": "Named in honor of Chinese paleontologist Zheng Xiaoting; the generic name is derived from Xiaoting, the first part of Zheng's given name",
       "pronunciation": {
         "phonetic": "shyow-TIN-gee-uh"
@@ -203325,10 +203643,7 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptora",
-        "Paraves",
-        "Deinonychosauria",
-        "Troodontidae",
-        "Sinovenatorinae"
+        "Paraves"
       ],
       "authors": "Xu, X.; You, H.; Du, K.; Han, F.",
       "described": 2011
@@ -204160,6 +204475,15 @@
     "Xixiasaurus": {
       "genus": "Xixiasaurus",
       "parent": "Troodontidae",
+      "dispute": {
+        "summary": "Xixiasaurus is a poorly understood, unserrated-toothed troodontid whose position varies widely across analyses — near Byronosaurus, with Sinovenator and Mei, with Zanabazar and Saurornithoides, or paired with Sinusonasus (Hartman et al., 2019) — and Jones et al. (2026) conclude its placement will remain ambiguous without more material. It is placed at Troodontidae incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Troodontidae incertae sedis (least-inclusive uncontested clade); highly unstable across analyses."
+          }
+        ]
+      },
       "pronunciation": {
         "ipa": "/ˌʃiːʃiəˈsɔːrəs/",
         "phonetic": "SHE-shah-SOR-us"
@@ -209250,7 +209574,7 @@
     },
     "Zanabazar": {
       "genus": "Zanabazar",
-      "parent": "Saurornithoidini",
+      "parent": "Troodontinae",
       "etymology": "Named after Öndör Gegeen Zanabazar, the first Jebtsundamba Khutuktu and supreme spiritual leader of Mongolian Buddhism in the 17th century, honoring the Mongolian heritage of the fossil's origin.",
       "pronunciation": {
         "phonetic": "zah-nuh-buh-zar"
@@ -209388,8 +209712,7 @@
         "Paraves",
         "Deinonychosauria",
         "Troodontidae",
-        "Troodontinae",
-        "Saurornithoidini"
+        "Troodontinae"
       ],
       "authors": "Norell, M. A.; Makovicky, P. J.; Bever, G. S.; Balanoff, A. M.; Clark, J. M.; Barsbold, R.; Rowe, T.",
       "described": 2009
