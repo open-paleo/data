@@ -1,7 +1,7 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-02T04:34:37.302Z
-  clade_count: 201
+  built_at: 2026-07-02T05:50:14.946Z
+  clade_count: 197
   genus_count: 1398
   license: CC-BY-4.0
   schema_version: 1.0.0
@@ -70,19 +70,22 @@ tree:
                                         Tyrannosaurinae: {}
                                   Maniraptora:
                                     Paraves:
-                                      Deinonychosauria:
-                                        Dromaeosauridae:
-                                          Microraptorinae: {}
-                                          Eudromaeosauria:
-                                            Dromaeosaurinae: {}
-                                            Velociraptorinae: {}
-                                            Saurornitholestinae: {}
-                                          Unenlagiinae: {}
-                                          Halszkaraptorinae: {}
-                                        Troodontidae:
-                                          Troodontinae: {}
-                                          Sinovenatorinae: {}
-                                          Jinfengopteryginae: {}
+                                      Eumaniraptora:
+                                        Deinonychosauria:
+                                          Dromaeosauridae:
+                                            Microraptorinae: {}
+                                            Eudromaeosauria:
+                                              Dromaeosaurinae: {}
+                                              Velociraptorinae: {}
+                                              Saurornitholestinae: {}
+                                            Unenlagiinae: {}
+                                            Halszkaraptorinae: {}
+                                          Troodontidae:
+                                            Troodontinae: {}
+                                            Sinovenatorinae: {}
+                                            Jinfengopteryginae: {}
+                                        Avialae: {}
+                                        Anchiornithidae: {}
                                     Oviraptorosauria:
                                       Caudipterygidae: {}
                                       Caenagnathoidea:
@@ -90,14 +93,7 @@ tree:
                                           Citipatiinae: {}
                                           Heyuanninae: {}
                                         Caenagnathidae: {}
-                                    Avialae:
-                                      Ornithothoraces:
-                                        Ornithuromorpha:
-                                          Ornithurae: {}
-                                        Enantiornithes:
-                                          Avisauridae: {}
                                     Scansoriopterygidae: {}
-                                    Anchiornithidae: {}
                                     Alvarezsauroidea:
                                       Alvarezsauridae:
                                         Patagonykinae: {}
@@ -608,6 +604,8 @@ clades:
         publisher: American Association for the Advancement of Science (AAAS)
         doi: 10.1126/science.1182143
   Anchiornithidae:
+    description: |
+      Anchiornithidae is a clade of small, four-winged, Anchiornis-like paravian theropods from the Middle to Late Jurassic of Asia, erected by Foth and Rauhut in 2017 with Anchiornis as its type genus. Its members are feathered, long-legged forms with extensive hindlimb plumage, and the group is most often recovered as the earliest-diverging clade of Avialae, though its position and membership remain contentious. Recognized members include Anchiornis, Eosinopteryx, Ostromia, Serikornis, Caihong, and Fujianvenator.
     taxonomy:
       - Life
       - Animalia
@@ -626,7 +624,27 @@ clades:
       - Avetheropoda
       - Coelurosauria
       - Maniraptora
+      - Paraves
+      - Eumaniraptora
       - Anchiornithidae
+    type_genus: Anchiornis
+    described: 2017
+    authors: Foth, C.; Rauhut, O. W. M.
+    diagnostic_features:
+      - Extensive pennaceous feathering on the hindlimb forming a hindwing
+      - Elongate, gracile hindlimbs with an unspecialized, non-raptorial pes
+      - Skull with a subtriangular profile and numerous small, closely spaced teeth
+      - Forelimb shorter than in Archaeopteryx and later avialans
+    references:
+      - id: foth2017
+        authors: Foth, C.; Rauhut, O. W. M.
+        year: 2017
+        title: Re-evaluation of the Haarlem Archaeopteryx and the radiation of maniraptoran theropod dinosaurs
+        journal: BMC Evolutionary Biology
+        volume: "17"
+        issue: "1"
+        publisher: Springer Science and Business Media LLC
+        doi: 10.1186/s12862-017-1076-y
   Ankylopollexia:
     description: |
       Ankylopollexia is a clade of dryomorph ornithopod dinosaurs characterized by a robust, conical thumb spike formed by an enlarged, modified pollex. It ranges from medium-sized bipedal forms such as Camptosaurus through the iguanodonts to the hadrosaurs, and represents one of the most diverse and successful ornithischian radiations of the Cretaceous.
@@ -961,6 +979,8 @@ clades:
         volume: ""
         pages: 1-464
   Avialae:
+    description: |
+      Avialae is the bird-line clade of paravian theropods, conventionally the most inclusive group containing modern birds but not the deinonychosaurs, and in most recent analyses the sister group of Deinonychosauria within Eumaniraptora. It encompasses Archaeopteryx and the anchiornithid grade at its base together with the pygostylian and ornithothoracine birds. Its members are characterized by forelimbs modified into feathered wings and progressive adaptations toward powered flight.
     taxonomy:
       - Life
       - Animalia
@@ -979,30 +999,24 @@ clades:
       - Avetheropoda
       - Coelurosauria
       - Maniraptora
+      - Paraves
+      - Eumaniraptora
       - Avialae
-  Avisauridae:
-    taxonomy:
-      - Life
-      - Animalia
-      - Chordata
-      - Vertebrata
-      - Sarcopterygii
-      - Tetrapoda
-      - Reptilia
-      - Archosauria
-      - Dinosauria
-      - Saurischia
-      - Theropoda
-      - Neotheropoda
-      - Averostra
-      - Tetanurae
-      - Avetheropoda
-      - Coelurosauria
-      - Maniraptora
-      - Avialae
-      - Ornithothoraces
-      - Enantiornithes
-      - Avisauridae
+    described: 1986
+    authors: Gauthier, J.A.
+    diagnostic_features:
+      - Forelimb modified into a feathered wing with asymmetric flight feathers
+      - Forelimb longer than the hindlimb in most members
+      - Caudal series shortened, trending toward a pygostyle in derived members
+      - Reversed or partially reversed hallux in many members
+    references:
+      - id: gauthier1986
+        authors: Gauthier, J.A.
+        year: 1986
+        title: Saurischian monophyly and the origin of birds
+        journal: Memoirs of the California Academy of Sciences
+        volume: "8"
+        pages: 1-55
   Bagualosauria:
     description: |
       Bagualosauria is the clade of sauropodomorphs comprising Bagualosaurus and all more derived forms (Plateosauria, including the sauropods), to the exclusion of the basalmost Carnian sauropodomorphs and Saturnaliidae. Erected to capture the transition toward bulk herbivory and larger body size, it marks the point on the sauropodomorph stem where more leaf-shaped dentition and heavier builds appear.
@@ -2345,6 +2359,7 @@ clades:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
     described: 1969
     authors: Colbert, E. H.; Russell, D. A.
@@ -2725,6 +2740,7 @@ clades:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
     type_genus: Dromaeosaurus
@@ -2768,6 +2784,7 @@ clades:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Eudromaeosauria
@@ -2967,28 +2984,6 @@ clades:
         pages: "2346577"
         doi: 10.1080/14772019.2024.2346577
         notes: Provides a modern phylogenetic delimitation of Elasmaria within Iguanodontia.
-  Enantiornithes:
-    taxonomy:
-      - Life
-      - Animalia
-      - Chordata
-      - Vertebrata
-      - Sarcopterygii
-      - Tetrapoda
-      - Reptilia
-      - Archosauria
-      - Dinosauria
-      - Saurischia
-      - Theropoda
-      - Neotheropoda
-      - Averostra
-      - Tetanurae
-      - Avetheropoda
-      - Coelurosauria
-      - Maniraptora
-      - Avialae
-      - Ornithothoraces
-      - Enantiornithes
   Euceratopsia:
     description: |
       Euceratopsia is the clade comprising Leptoceratopsidae and Coronosauria and their most recent common ancestor — the smallest clade containing Leptoceratops, Protoceratops, and Triceratops. It groups the more derived neoceratopsians, excluding the basal neoceratopsian grade, and was named to provide a stable name for this consistently recovered node.
@@ -3048,6 +3043,7 @@ clades:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Eudromaeosauria
@@ -3120,6 +3116,45 @@ clades:
         volume: "166"
         pages: 624-671
         doi: 10.1111/j.1096-3642.2012.00853.x
+  Eumaniraptora:
+    description: |
+      Eumaniraptora is the paravian clade uniting Deinonychosauria (dromaeosaurids and troodontids) and Avialae, defined as a node-based taxon anchored on Deinonychus and modern birds. It contains the theropods most closely related to birds, whose members share elongate feathered forelimbs and a broadly modified manus. The clade excludes the more stemward paravians recovered outside the Deinonychosauria plus Avialae node.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Avetheropoda
+      - Coelurosauria
+      - Maniraptora
+      - Paraves
+      - Eumaniraptora
+    described: 1999
+    authors: Padian, K.; Hutchinson, J. R.; Holtz, T. R.
+    diagnostic_features:
+      - Forelimb elongate, approaching or exceeding hindlimb length in many members
+      - Large asymmetric pennaceous feathers on the forelimb forming an aerofoil
+      - Laterally oriented glenoid permitting a wide arc of forelimb elevation
+      - Distal carpal incorporated into a trochlea permitting extensive wrist folding
+    references:
+      - id: padian1999
+        authors: Padian, K.; Hutchinson, J. R.; Holtz, T. R.
+        year: 1999
+        title: Phylogenetic definitions and nomenclature of the major taxonomic categories of the carnivorous Dinosauria (Theropoda)
+        journal: Journal of Vertebrate Paleontology
+        volume: "19"
+        issue: "1"
+        pages: 69-80
   Eusauropoda:
     description: |
       Eusauropoda ("true sauropods") is a clade erected by Upchurch (1995) for the least inclusive group containing Shunosaurus lii and Saltasaurus loricatus. It comprises the great majority of sauropod diversity, including the basal East Asian radiation Mamenchisauridae, the non-neosauropod clades Turiasauria and Cetiosauridae, and Neosauropoda, with Shunosaurus and Barapasaurus among the basalmost members. Eusauropods are diagnosed by extensive cranial and dental modifications for bulk herbivory together with further elongation and pneumatization of the neck.
@@ -3684,6 +3719,7 @@ clades:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Halszkaraptorinae
@@ -4077,6 +4113,7 @@ clades:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
       - Jinfengopteryginae
@@ -5096,6 +5133,7 @@ clades:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Microraptorinae
@@ -5695,72 +5733,6 @@ clades:
         pages: e12362
         doi: 10.7717/peerj.12362
         notes: Provides the modern phylogenetic definition of Ornithopoda.
-  Ornithothoraces:
-    taxonomy:
-      - Life
-      - Animalia
-      - Chordata
-      - Vertebrata
-      - Sarcopterygii
-      - Tetrapoda
-      - Reptilia
-      - Archosauria
-      - Dinosauria
-      - Saurischia
-      - Theropoda
-      - Neotheropoda
-      - Averostra
-      - Tetanurae
-      - Avetheropoda
-      - Coelurosauria
-      - Maniraptora
-      - Avialae
-      - Ornithothoraces
-  Ornithurae:
-    taxonomy:
-      - Life
-      - Animalia
-      - Chordata
-      - Vertebrata
-      - Sarcopterygii
-      - Tetrapoda
-      - Reptilia
-      - Archosauria
-      - Dinosauria
-      - Saurischia
-      - Theropoda
-      - Neotheropoda
-      - Averostra
-      - Tetanurae
-      - Avetheropoda
-      - Coelurosauria
-      - Maniraptora
-      - Avialae
-      - Ornithothoraces
-      - Ornithuromorpha
-      - Ornithurae
-  Ornithuromorpha:
-    taxonomy:
-      - Life
-      - Animalia
-      - Chordata
-      - Vertebrata
-      - Sarcopterygii
-      - Tetrapoda
-      - Reptilia
-      - Archosauria
-      - Dinosauria
-      - Saurischia
-      - Theropoda
-      - Neotheropoda
-      - Averostra
-      - Tetanurae
-      - Avetheropoda
-      - Coelurosauria
-      - Maniraptora
-      - Avialae
-      - Ornithothoraces
-      - Ornithuromorpha
   Orodrominae:
     description: |
       Orodrominae is one of the two subfamilies of Thescelosauridae, comprising small basal neornithischians from the Cretaceous of North America and Asia. Several members (Oryctodromeus, Orodromeus, Koreanosaurus) show skeletal adaptations associated with a fossorial, burrowing habit. The subfamily is defined as the thescelosaurids more closely related to Orodromeus than to Thescelosaurus.
@@ -6084,6 +6056,8 @@ clades:
         doi: 10.12429/j.advps.2023.0036
         notes: Reappraisal of Antarctopelta supporting Parankylosauria.
   Paraves:
+    description: |
+      Paraves is the stem-based paravian clade containing all theropods closer to modern birds than to oviraptorosaurs, comprising Eumaniraptora (Deinonychosauria plus Avialae) together with a shifting set of basal forms. It was coined by Sereno in 1997 and subsequently given a formal phylogenetic definition. Its members are small, gracile, feathered theropods, many with elongate feathered forelimbs and a raptorial or perching pes.
     taxonomy:
       - Life
       - Animalia
@@ -6103,6 +6077,21 @@ clades:
       - Coelurosauria
       - Maniraptora
       - Paraves
+    described: 1997
+    authors: Sereno, P. C.
+    diagnostic_features:
+      - Elongate penultimate manual and pedal phalanges
+      - Forelimbs elongate relative to body size, bearing pennaceous feathers
+      - Reduced number of maxillary and dentary teeth in many members
+      - Distally placed obturator process on the ischium
+    references:
+      - id: sereno1997
+        authors: Sereno, P. C.
+        year: 1997
+        title: The origin and evolution of dinosaurs
+        journal: Annual Review of Earth and Planetary Sciences
+        volume: "25"
+        pages: 435-489
   Parvicursorinae:
     description: |
       Parvicursorinae is the derived subfamily of alvarezsaurids that dominated the Late Cretaceous of Asia, with a few members in North America. It contains the smallest, most specialized alvarezsaurs, in which the forelimb is reduced to a stout, single-clawed digging or probing tool and the hindlimb is elongate and extensively fused. Defined as the most inclusive clade containing Parvicursor but not Patagonykus, it is the senior name for the derived Mongolian radiation and is used in preference to the synonymous Mononykinae; its internal relationships are poorly resolved and largely form a polytomy.
@@ -7114,6 +7103,7 @@ clades:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Eudromaeosauria
@@ -7137,6 +7127,8 @@ clades:
         publisher: Proceedings of the National Academy of Sciences
         doi: 10.1073/pnas.0811664106
   Scansoriopterygidae:
+    description: |
+      Scansoriopterygidae is a clade of small, unusual maniraptoran theropods from the Middle to Late Jurassic of China, including Scansoriopteryx, Epidexipteryx, Ambopteryx, and Yi, characterized by a greatly elongate third manual digit and, in at least some members, membranous, bat-like wings supported by a styliform wrist element. The family is named for Scansoriopteryx and was given a phylogenetic content by Zhang et al. in 2008. Its position among coelurosaurs is contentious, with recent analyses most often placing it just outside Paraves.
     taxonomy:
       - Life
       - Animalia
@@ -7156,6 +7148,30 @@ clades:
       - Coelurosauria
       - Maniraptora
       - Scansoriopterygidae
+    type_genus: Scansoriopteryx
+    described: 2002
+    authors: Czerkas, S. A.; Yuan, C.
+    diagnostic_features:
+      - Greatly elongate third manual digit, longer than the first two
+      - Membranous wing supported by an ossified styliform wrist element in some members
+      - Short, deep skull with procumbent anterior teeth
+      - Small body size with a proportionally large head
+    references:
+      - id: czerkas2002
+        authors: Czerkas, S. A.; Yuan, C.
+        year: 2002
+        title: An arboreal maniraptoran from northeastern China
+        journal: Feathered Dinosaurs and the Origin of Flight. The Dinosaur Museum Journal 1. The Dinosaur Museum, Blanding, UT
+        pages: 63-95
+      - id: zhang2008
+        authors: Zhang, F.; Zhou, Z.; Xu, X.; Wang, X.; Sullivan, C.
+        year: 2008
+        title: A bizarre Jurassic maniraptoran from China with elongate ribbon-like feathers
+        journal: Nature
+        volume: "455"
+        issue: "7216"
+        pages: 1105-1108
+        publisher: Springer Science and Business Media LLC
   Shamosaurinae:
     description: |
       Shamosaurinae is a small subfamily of early-diverging ankylosaurid dinosaurs from the Cretaceous of Asia, sister to the derived Ankylosaurinae. It is typified by Shamosaurus and Gobisaurus, which share a distinctive premaxillary furrow and retain a relatively elongate, less ornamented skull lacking the fully developed tail club of ankylosaurines.
@@ -7223,6 +7239,7 @@ clades:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
       - Sinovenatorinae
@@ -8067,6 +8084,7 @@ clades:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
     type_genus: Troodon
@@ -8108,6 +8126,7 @@ clades:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
       - Troodontinae
@@ -8370,6 +8389,7 @@ clades:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Unenlagiinae
@@ -8411,6 +8431,7 @@ clades:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Eudromaeosauria
@@ -9685,6 +9706,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Eudromaeosauria
@@ -9895,6 +9917,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Eudromaeosauria
@@ -10525,6 +10548,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Eudromaeosauria
@@ -13496,6 +13520,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
       - Troodontinae
@@ -14719,6 +14744,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
     authors: Pei, R.; Norell, M. A.; Barta, D. E.; Bever, G. S.; Pittman, M.; Xu, X.
@@ -17590,13 +17616,7 @@ genera:
     described: 1914
   Anchiornis:
     genus: Anchiornis
-    parent: Paraves
-    dispute:
-      summary: |
-        The placement of Anchiornis is contested but is no longer generally within Troodontidae. It is recovered as an anchiornithid on the avialan stem (Foth and Rauhut, 2017; Pei et al., 2020; Jones et al., 2026) or as an archaeopterygid at the base of Deinonychosauria (Xu et al., 2011; Hartman et al., 2019); only the weakly supported, preliminary analysis of Godefroit et al. (2013) recovers it as a basal troodontid. It is placed conservatively at Paraves incertae sedis.
-      history:
-        - date: 2026-07-01
-          note: Moved from Troodontidae to Paraves incertae sedis (anchiornithid/avialan or basal deinonychosaur, not a troodontid in recent analyses). Deferred to the basal-paravian/Avialae batch.
+    parent: Anchiornithidae
     etymology: From Greek 'anchi' meaning 'near' and 'ornis' meaning 'bird', meaning 'near bird', reflecting its close morphological similarity to modern birds.
     description: Anchiornis is a genus of small, four-winged paravian dinosaurs, with only one known species, the type species Anchiornis huxleyi, named for its similarity to modern birds. Anchiornis fossils have been found only in the Tiaojishan Formation of Liaoning, China, in rocks dated to the Late Jurassic, about 160 million years ago. It is known from hundreds of specimens, and given the exquisite preservation of some of these fossils, it became the first Mesozoic dinosaur species for which almost the entire life appearance could be determined, and an important source of information on the early evolution of birds.
     diet: carnivore
@@ -17761,6 +17781,8 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
+      - Anchiornithidae
     authors: Xu, X.; Zhao, Q.; Norell, M.; Sullivan, C.; Hone, D.; Erickson, G.; Wang, X.; Han, F.; Guo, Y.
     described: 2008
   Anchisaurus:
@@ -21184,6 +21206,12 @@ genera:
   Archaeopteryx:
     genus: Archaeopteryx
     parent: Avialae
+    dispute:
+      summary: |
+        Archaeopteryx is traditionally the basalmost avialan (Turner et al., 2012; Pei et al., 2020; Jones et al., 2026), but a number of analyses instead recover it among the basal deinonychosaurs, close to the anchiornithids and troodontids (Xu et al., 2011; Godefroit et al., 2013; Hartman et al., 2019). It is placed at Avialae following the prevailing recent view.
+      history:
+        - date: 2026-07-01
+          note: Retained at Avialae following the prevailing view (P3), with the competing basal-deinonychosaur hypothesis recorded.
     pronunciation:
       phonetic: AHR-kee-OP-ter-iks
       ipa: /ˌɑːrkiːˈɒptərɪks/
@@ -21391,6 +21419,8 @@ genera:
       - Avetheropoda
       - Coelurosauria
       - Maniraptora
+      - Paraves
+      - Eumaniraptora
       - Avialae
     authors: Meyer, H. V.
     described: 1861
@@ -21500,6 +21530,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
     authors: Elzanowski, A.; Wellnhofer, P.
@@ -23213,6 +23244,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
     authors: Nessov, L. A.
@@ -24363,6 +24395,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Eudromaeosauria
@@ -25469,6 +25502,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Unenlagiinae
@@ -27125,6 +27159,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
     authors: Csiki, Z.; Vremir, M.; Brusatte, S. L.; Norell, M. A.
@@ -27255,6 +27290,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Eudromaeosauria
@@ -31518,6 +31554,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Eudromaeosauria
@@ -31632,6 +31669,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
       - Troodontinae
@@ -33693,6 +33731,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Unenlagiinae
@@ -34153,6 +34192,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
       - Troodontinae
@@ -34478,7 +34518,7 @@ genera:
     described: 2022
   Caihong:
     genus: Caihong
-    parent: Paraves
+    parent: Anchiornithidae
     etymology: From Mandarin Chinese caihong (彩虹) meaning 'rainbow', likely referring to its iridescent feather coloration as inferred from melanosomes.
     description: Caihong is a genus of small paravian theropod dinosaur from China that lived during the Late Jurassic period.
     diet: carnivore
@@ -34584,6 +34624,8 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
+      - Anchiornithidae
     authors: Hu, D.; Clarke, J. A.; Eliason, C. M.; Qiu, R.; Li, Q.; Shawkey, M. D.; Zhao, C.; D'Alba, L.; Jiang, J.; Xu, X.
     described: 2018
   Calamosaurus:
@@ -38638,6 +38680,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Microraptorinae
@@ -38738,6 +38781,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
     authors: Xu, X.
     described: 2026
@@ -45832,6 +45876,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
     authors: DePalma, R. A.; Burnham, D. A.; Martin, L. D.; Larson, P. L.; Bakker, R. T.
@@ -45956,6 +46001,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
       - Sinovenatorinae
@@ -46950,6 +46996,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
     authors: Wang, X.; Cau, A.; Guo, B.; Ma, F.; Qing, G.; Liu, Y.
@@ -47380,6 +47427,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Eudromaeosauria
@@ -48759,6 +48807,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Eudromaeosauria
@@ -49434,6 +49483,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Unenlagiinae
@@ -50687,6 +50737,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
     authors: Christiansen, P.; Bonde, N.
@@ -50806,6 +50857,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Eudromaeosauria
@@ -53980,13 +54032,13 @@ genera:
     described: 1981
   Elopteryx:
     genus: Elopteryx
-    parent: Paraves
+    parent: Maniraptora
     dispute:
       summary: |
-        Elopteryx nopscai, from the Maastrichtian of Romania, has a history of conflation with Heptasteornis. Naish and Dyke (2004) showed that the Elopteryx femora bear a posterior trochanter, a feature absent in alvarezsaurids, and concluded that it is not an alvarezsaurid but rather a troodontid or a non-ornithuromorphan pygostylian; Jones (2026) regards it as a dubious theropod of uncertain affinity.
+        Elopteryx nopcsai, from the Maastrichtian of Romania, is a dubious taxon known from fragmentary femora, with a tangled history of conflation with Bradycneme and Heptasteornis. Naish and Dyke (2004) concluded it is not an alvarezsaurid but a maniraptoran of uncertain affinity, and Jones et al. (2026) regard it as a dubious theropod; Stoicescu et al. (2024) interpret new material as that of a secondarily flightless avialan and suggest Balaur bondoc may be its junior synonym. It is placed conservatively at Maniraptora incertae sedis.
       history:
         - date: 2026-07-01
-          note: Removed from the alvarezsaurs and placed conservatively at Paraves, the least-inclusive uncontested node for a troodontid-or-pygostylian identity, following Naish and Dyke (2004); deferred pending a stable placement.
+          note: Moved from Paraves to Maniraptora incertae sedis; the flightless-avialan interpretation and possible Balaur synonymy (Stoicescu et al., 2024) are noted, and the dubious status is flagged for review.
     etymology: From Greek 'helos' meaning 'marsh' or 'swamp' and Greek 'pteryx' meaning 'wing'; means 'marsh wing'.
     pronunciation:
       phonetic: ee-LOP-tuh-rix
@@ -54070,7 +54122,6 @@ genera:
       - Avetheropoda
       - Coelurosauria
       - Maniraptora
-      - Paraves
     authors: Andrews, C. W.
     described: 1913
   Elrhazosaurus:
@@ -55565,7 +55616,13 @@ genera:
     described: 1993
   Eosinopteryx:
     genus: Eosinopteryx
-    parent: Paraves
+    parent: Anchiornithidae
+    dispute:
+      summary: |
+        Eosinopteryx brevipenna is skeletally very similar to Anchiornis, and several workers have questioned its distinctness, treating it as a probable junior synonym of Anchiornis; Foth et al. (2025) excluded it from their analysis on validity grounds. Its position within the anchiornithid grade is otherwise stable.
+      history:
+        - date: 2026-07-01
+          note: Placed at Anchiornithidae (Foth and Rauhut, 2017; Xu et al., 2023); validity relative to Anchiornis flagged for review, and the clade-level position debate is recorded on Anchiornithidae.
     etymology: From Greek eos, 'dawn/daybreak', + Latin Sinae, 'Chinese', + Greek pteryx, 'feather' or 'wing'; means 'dawn Chinese feather', referring to its early age and feathered Chinese specimen
     pronunciation:
       phonetic: EE-oh-si-NOP-ter-ix
@@ -55674,6 +55731,8 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
+      - Anchiornithidae
     authors: Godefroit, P.; Demuynck, H.; Dyke, G.; Hu, D.; Escuillié, F.; Claeys, P.
     described: 2013
   Eotrachodon:
@@ -56343,7 +56402,13 @@ genera:
     described: 2011
   Epidexipteryx:
     genus: Epidexipteryx
-    parent: Paraves
+    parent: Scansoriopterygidae
+    dispute:
+      summary: |
+        Epidexipteryx hui is a scansoriopterygid; Cau (2024) considers it a junior synonym of Epidendrosaurus (and hence of Scansoriopteryx), arguing its distinguishing features are ontogenetic, though most workers retain it as a valid genus. It is placed at Scansoriopterygidae.
+      history:
+        - date: 2026-07-01
+          note: Moved from Paraves to Scansoriopterygidae; the possible synonymy with Epidendrosaurus (Cau, 2024) flagged for review.
     etymology: From Greek 'epi' meaning 'upon' or 'over', 'deixi' meaning 'display', and 'pteryx' meaning 'wing' or 'feather', in reference to its ornamental display feathers.
     pronunciation:
       phonetic: ep-id-ecks-IP-tuh-ricks
@@ -56449,7 +56514,7 @@ genera:
       - Avetheropoda
       - Coelurosauria
       - Maniraptora
-      - Paraves
+      - Scansoriopterygidae
     authors: Zhang, F.; Zhou, Z.; Xu, X.; Wang, X.; Sullivan, C.
     described: 2008
   Equijubus:
@@ -57794,6 +57859,12 @@ genera:
   Euronychodon:
     genus: Euronychodon
     parent: Paraves
+    dispute:
+      summary: |
+        Euronychodon is a tooth taxon based on isolated teeth originally identified as Paronychodon, tentatively referred to Dromaeosauridae by Antunes and Sigogneau-Russell (1991) and later compared with the troodontid Byronosaurus; it is widely regarded as a nomen dubium and a possible junior synonym of Paronychodon, and Jones et al. (2026) list it among nomina dubia. It is placed conservatively at Paraves incertae sedis.
+      history:
+        - date: 2026-07-01
+          note: Retained at Paraves incertae sedis as a dubious deinonychosaur-grade tooth taxon; nomen dubium status flagged for review.
     pronunciation:
       phonetic: YOOR-oh-NY-koh-don
     etymology: A contraction of "Europe" and Paronychodon (the genus whose teeth Euronychodon's resemble); the popular gloss is "European claw tooth".
@@ -59707,7 +59778,7 @@ genera:
     described: 2009
   Fujianvenator:
     genus: Fujianvenator
-    parent: Avialae
+    parent: Anchiornithidae
     pronunciation:
       phonetic: foo-JYEN-ven-AY-tor
     etymology: "From Fujian (Fujian Province, China, where it was discovered) + Latin venator (hunter): 'Fujian hunter'."
@@ -59811,7 +59882,9 @@ genera:
       - Avetheropoda
       - Coelurosauria
       - Maniraptora
-      - Avialae
+      - Paraves
+      - Eumaniraptora
+      - Anchiornithidae
     authors: Xu, L.; Wang, M.; Chen, R.; Dong, L.; Lin, M.; Xu, X.; Tang, J.; You, H.; Zhou, G.; Wang, L.; He, W.; Li, Y.; Zhang, C.; Zhou, Z.
     described: 2023
   Fukuiraptor:
@@ -62640,6 +62713,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
     authors: Senter, P.; Kirkland, J. I.; Bird, J.; Bartlett, J. A.
@@ -64834,6 +64908,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
       - Troodontinae
@@ -66016,6 +66091,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Microraptorinae
@@ -67454,6 +67530,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Halszkaraptorinae
@@ -68269,6 +68346,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
     authors: Lee, S.; Lee, Y.-N.; Park, J.-Y.; Kim, S.-H.; Badamkhatan, Z.; Idersaikhan, D.; Tsogtbaatar, K.
@@ -69041,6 +69119,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Microraptorinae
@@ -69265,6 +69344,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
     authors: Hartman, S.; Mortimer, M.; Wahl, W. R.; Lomax, D. R.; Lippincott, J.; Lovelace, D. M.
@@ -72266,6 +72346,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Halszkaraptorinae
@@ -72715,6 +72796,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
       - Troodontinae
@@ -74504,6 +74586,8 @@ genera:
       history:
         - date: 2026-07-01
           note: Moved from Dromaeosauridae to Paraves incertae sedis (Ely and Case, 2019; lacks dromaeosaurid synapomorphies). Deferred to the basal-paravian/Avialae batch for finer placement.
+        - date: 2026-07-01
+          note: Retained at Paraves incertae sedis; the unenlagiine hypothesis (Motta et al., 2025) is noted but not adopted, and the placement is tracked for review.
     pronunciation:
       phonetic: im-PERR-oh-BAY-tor
     etymology: From Latin 'imperobator' meaning 'powerful warrior'. The species name refers to Antarctica, the continent where it was found.
@@ -76462,6 +76546,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Eudromaeosauria
@@ -77574,6 +77659,8 @@ genera:
       - Avetheropoda
       - Coelurosauria
       - Maniraptora
+      - Paraves
+      - Eumaniraptora
       - Avialae
     authors: Zhou, Z.; Zhang, F.
     described: 2002
@@ -77883,6 +77970,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Microraptorinae
@@ -78554,6 +78642,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
       - Sinovenatorinae
@@ -78863,6 +78952,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
       - Jinfengopteryginae
@@ -80752,6 +80842,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Unenlagiinae
@@ -80863,6 +80954,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Eudromaeosauria
@@ -82874,6 +82966,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
     authors: Chure, D. J.
@@ -84250,6 +84343,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Eudromaeosauria
@@ -84344,7 +84438,13 @@ genera:
     described: 2021
   Kuszholia:
     genus: Kuszholia
-    parent: Ornithurae
+    parent: Avialae
+    dispute:
+      summary: |
+        Kuszholia mengi is based on isolated pneumatic vertebrae and is of uncertain affinity. It has been treated as an ornithuromorph or ornithurine bird and as a possible enantiornithine, while other workers regard it as a non-avialan coelurosaur near bird ancestry; it is widely considered a nomen dubium. It is placed conservatively at Avialae incertae sedis.
+      history:
+        - date: 2026-07-01
+          note: Moved from Ornithurae to Avialae incertae sedis (the Ornithurae, Ornithuromorpha, and Enantiornithes scaffold was removed as unoccupied); dubious status flagged for review.
     etymology: From Kazakh qus joly (Milky Way, literally "bird road"); meaning "Milky Way bird"
     description: Kuszholia is the name given to a genus of primitive birds or bird-like dinosaurs from the Late Cretaceous.
     diet: carnivore
@@ -84433,10 +84533,9 @@ genera:
       - Avetheropoda
       - Coelurosauria
       - Maniraptora
+      - Paraves
+      - Eumaniraptora
       - Avialae
-      - Ornithothoraces
-      - Ornithuromorpha
-      - Ornithurae
     authors: Nessov, L. A.
     described: 1992
   Labocania:
@@ -88017,6 +88116,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
       - Jinfengopteryginae
@@ -89001,6 +89101,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Eudromaeosauria
@@ -89114,6 +89215,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
       - Troodontinae
@@ -90805,6 +90907,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Eudromaeosauria
@@ -92802,6 +92905,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Halszkaraptorinae
@@ -96249,6 +96353,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
       - Sinovenatorinae
@@ -97798,6 +97903,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Microraptorinae
@@ -98033,6 +98139,12 @@ genera:
   Migmanychion:
     genus: Migmanychion
     parent: Maniraptora
+    dispute:
+      summary: |
+        Migmanychion laiyang is known only from a forelimb and is confidently referred only to Maniraptora. Its describers recovered it as the sister taxon of Fukuivenator (Wang et al., 2023); Jones et al. (2026) place that pair within Therizinosauria, while alternative constrained positions within Oviraptorosauria or Paraves are only slightly less parsimonious. It is placed conservatively at Maniraptora incertae sedis.
+      history:
+        - date: 2026-07-01
+          note: Retained at Maniraptora incertae sedis; the sister-to-Fukuivenator result leaves it unresolved between therizinosaur and pennaraptoran affinities.
     etymology: From Greek 'meigma' (mixture) and 'nychion' (claw); meaning 'claw mixture', referring to the mix of claw features in the specimen.
     pronunciation:
       phonetic: mig-mah-nee-shon
@@ -102856,6 +102968,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Halszkaraptorinae
@@ -104138,6 +104251,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Unenlagiinae
@@ -104915,6 +105029,8 @@ genera:
         - date: 2026-07-01
           note: |
             Evicted from Oviraptorosauria and placed at Maniraptora (deferred); the oviraptorosaur, troodontid, and halszkaraptorine hypotheses are all supported by different analyses and none prevails.
+        - date: 2026-07-01
+          note: Retained at Maniraptora incertae sedis in the Avialae and basal-paravian batch; placement remains unresolved and is tracked for review.
     diet: omnivore
     locomotion: bipedal
     paleoenvironment:
@@ -106828,6 +106944,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
     authors: Owen, R.
@@ -108491,6 +108608,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
     authors: Seeley, H. G.
@@ -109710,6 +109828,8 @@ genera:
       - Avetheropoda
       - Coelurosauria
       - Maniraptora
+      - Paraves
+      - Eumaniraptora
       - Anchiornithidae
     authors: Foth, C.; Rauhut, O. W. M.
     described: 2017
@@ -109818,6 +109938,12 @@ genera:
   Overoraptor:
     genus: Overoraptor
     parent: Paraves
+    dispute:
+      summary: |
+        Overoraptor chimentoi was recovered by its describers as the sister taxon of Rahonavis, together just outside Avialae and explicitly separate from the unenlagiids (Motta et al., 2020); other matrices place it in a basal maniraptoran or basal pennaraptoran polytomy, and Jones et al. (2026) place it within Unenlagiidae. It is placed conservatively at Paraves incertae sedis.
+      history:
+        - date: 2026-07-01
+          note: Retained at Paraves incertae sedis; the sister-to-Rahonavis (near Avialae) and unenlagiid hypotheses are unresolved.
     pronunciation:
       phonetic: oh-vehr-oh-RAP-tor
       ipa: /ˌʊuvərʊuˈræptər/
@@ -110876,6 +111002,12 @@ genera:
   Palaeopteryx:
     genus: Palaeopteryx
     parent: Maniraptora
+    dispute:
+      summary: |
+        Palaeopteryx thomsoni is based on a fragmentary bone reidentified as the distal radius of a small deinonychosaur or bird; Jensen and Padian (1989) regarded the binomial as invalid and based on non-diagnostic material, and Jones et al. (2026) list it among nomina dubia. It is placed conservatively at Maniraptora incertae sedis.
+      history:
+        - date: 2026-07-01
+          note: Retained at Maniraptora incertae sedis as a dubious, non-diagnostic taxon; invalid-binomial status flagged for review.
     pronunciation:
       phonetic: pay-lee-oh-TERR-iks
     etymology: From Greek palaios (ancient) and pteryx (wing); meaning "ancient wing".
@@ -111372,6 +111504,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
     authors: Porfiri, J. D.; Calvo, J. O.; Santos, D. dos
@@ -112108,6 +112241,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
     authors: Pei, R.; Qin, Y.; Wen, A.; Zhao, Q.; Wang, Z.; Liu, Z.; Guo, W.; Liu, P.; Ye, W.; Wang, L.; Yin, Z.; Dai, R.; Xu, X.
@@ -113054,6 +113188,12 @@ genera:
   Paronychodon:
     genus: Paronychodon
     parent: Paraves
+    dispute:
+      summary: |
+        Paronychodon lacustris is a classic tooth taxon founded on isolated teeth (Cope, 1876) and is widely regarded as a nomen dubium; the teeth have been attributed to many theropod lineages, most likely some member of Eumaniraptora (Jones et al., 2026, which lists it among nomina dubia). It is placed conservatively at Paraves incertae sedis.
+      history:
+        - date: 2026-07-01
+          note: Retained at Paraves incertae sedis as a dubious tooth taxon; nomen dubium status flagged for review.
     etymology: From Greek 'para' meaning 'beside', 'onyx' meaning 'claw', and 'odon' meaning 'tooth'; translates as 'beside claw tooth', referring to the claw-like nature of the tooth.
     pronunciation:
       phonetic: PAH-ro-NIK-o-don
@@ -114003,6 +114143,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
     authors: Carpenter, K.
@@ -114010,6 +114151,12 @@ genera:
   Pedopenna:
     genus: Pedopenna
     parent: Paraves
+    dispute:
+      summary: |
+        Pedopenna daohugouensis is known only from a hindlimb, and its position is unstable. It has been recovered as an anchiornithid (Foth and Rauhut, 2017), as a more stemward avialan (Foth et al., 2025), as a scansoriopterygid (Brusatte et al., 2014; Hartman et al., 2019), and as a basal paravian outside Eumaniraptora (Lefèvre et al., 2017). It is placed conservatively at Paraves incertae sedis.
+      history:
+        - date: 2026-07-01
+          note: Retained at Paraves incertae sedis; the anchiornithid, stemward-avialan, and scansoriopterygid hypotheses are not resolved on the fragmentary material.
     pronunciation:
       phonetic: ped-oh-PEN-uh
       ipa: /ˌpɛdoʊˈpɛnə/
@@ -115506,6 +115653,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
       - Troodontinae
@@ -117411,6 +117559,12 @@ genera:
   Pneumatoraptor:
     genus: Pneumatoraptor
     parent: Paraves
+    dispute:
+      summary: |
+        Pneumatoraptor fodori is based on a single scapulocoracoid, too incomplete for confident placement. Its describers placed it at Paraves without a finer resolution (Ősi et al., 2010), noting dromaeosaurid-like features of the shoulder girdle. It is placed conservatively at Paraves incertae sedis.
+      history:
+        - date: 2026-07-01
+          note: Retained at Paraves incertae sedis; the fragmentary material precludes a finer placement.
     etymology: From Greek 'pneuma' meaning 'air' or 'breath', combined with Latin 'raptor' meaning 'thief', likely referring to pneumatic (air-filled) features in the bones.
     pronunciation:
       phonetic: nu-MAT-o-RAP-tor
@@ -117974,6 +118128,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
     authors: Gilmore, C. W.
@@ -121597,6 +121752,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
     authors: Allain, R.; Taquet, P.
@@ -123369,6 +123525,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Unenlagiinae
@@ -125181,6 +125338,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
     authors: Currie, P. J.; Rigby, J. K.; Sloan, R. E.
@@ -128782,6 +128940,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
       - Troodontinae
@@ -128896,6 +129055,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Eudromaeosauria
@@ -129030,6 +129190,12 @@ genera:
   Scansoriopteryx:
     genus: Scansoriopteryx
     parent: Scansoriopterygidae
+    dispute:
+      summary: |
+        Scansoriopteryx heilmanni and Epidendrosaurus ningchengensis were described nearly simultaneously and are widely regarded as the same taxon; the name in use depends on which publication is judged to have priority, with most workers (and Jones et al., 2026) treating Scansoriopteryx as the senior synonym. It is retained as a valid scansoriopterygid pending resolution.
+      history:
+        - date: 2026-07-01
+          note: Placed at Scansoriopterygidae (type genus); the Epidendrosaurus synonymy and priority question flagged for review.
     etymology: From Latin 'scansorius' meaning 'climbing' and Greek 'pteryx' meaning 'wing'; meaning 'climbing wing', in reference to its arboreal adaptations.
     pronunciation:
       phonetic: san-SOH-ree-OP-tuh-riks
@@ -130629,7 +130795,13 @@ genera:
     described: 2003
   Serikornis:
     genus: Serikornis
-    parent: Paraves
+    parent: Anchiornithidae
+    dispute:
+      summary: |
+        Serikornis sungei was recovered by its describers as a basal paravian outside Eumaniraptora, the sister taxon of Eosinopteryx (Lefèvre et al., 2017), and some workers have suggested it may be a junior synonym of Anchiornis. It is treated here as a valid anchiornithid pending revision.
+      history:
+        - date: 2026-07-01
+          note: Placed at Anchiornithidae with the other Anchiornis-like taxa; validity relative to Anchiornis flagged for review, and the clade-level position debate is recorded on Anchiornithidae.
     etymology: From Greek 'serikos' (silken, of silk) + 'ornis' (bird), meaning 'silk bird', likely referring to the soft, silky appearance of the preserved feathers.
     pronunciation:
       phonetic: SAY-ree-KOR-niss
@@ -130729,6 +130901,8 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
+      - Anchiornithidae
     authors: Lefèvre, U.; Cau, A.; Cincotta, A.; Hu, D.; Chinsamy, A.; Escuillié, F.; Godefroit, P.
     described: 2017
   Shamosaurus:
@@ -130945,6 +131119,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
     authors: Turner, A. H.; Hwang, S. H.; Norell, M. A.
@@ -131954,6 +132129,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Eudromaeosauria
@@ -134401,6 +134577,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
     authors: Russell, D. A.; Dong, Z.-M.
@@ -134658,6 +134835,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Microraptorinae
@@ -135160,6 +135338,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
       - Sinovenatorinae
@@ -135385,6 +135564,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
       - Sinovenatorinae
@@ -138074,6 +138254,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
       - Troodontinae
@@ -140384,6 +140565,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
       - Troodontinae
@@ -140491,6 +140673,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
       - Jinfengopteryginae
@@ -145398,6 +145581,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
     authors: Zheng, X.; Xu, X.; You, H.; Zhao, Q.; Dong, Z.
@@ -146572,6 +146756,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
     authors: Kurzanov, S. M.; Osmólska, H.
@@ -148745,6 +148930,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
       - Troodontinae
@@ -148854,6 +149040,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Eudromaeosauria
@@ -151030,6 +151217,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Unenlagiinae
@@ -151332,6 +151520,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
       - Troodontinae
@@ -151669,6 +151858,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Eudromaeosauria
@@ -152453,6 +152643,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
     authors: Le Loeuff, J.; Buffetaut, E.
@@ -152964,6 +153155,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Eudromaeosauria
@@ -153354,6 +153546,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Eudromaeosauria
@@ -154841,6 +155034,12 @@ genera:
   Wellnhoferia:
     genus: Wellnhoferia
     parent: Avialae
+    dispute:
+      summary: |
+        The validity of Wellnhoferia grandis is disputed. Elzanowski (2001) erected it for the Solnhofen specimen on the basis of a shortened tail and a four-phalanx fourth pedal digit, and Senter and Robins (2003) supported its distinctness, but Mayr et al. (2007) and Jones et al. (2026) regard it as a junior synonym of Archaeopteryx lithographica. It is retained here as a valid genus pending revision.
+      history:
+        - date: 2026-07-01
+          note: Placed at Avialae incertae sedis; validity relative to Archaeopteryx lithographica flagged for review.
     etymology: Named after German paleontologist Peter Wellnhofer, who described the Solnhofen specimen of Archaeopteryx in 1988
     pronunciation:
       phonetic: WEL-un-hoh-FEE-ree-a
@@ -154920,6 +155119,8 @@ genera:
       - Avetheropoda
       - Coelurosauria
       - Maniraptora
+      - Paraves
+      - Eumaniraptora
       - Avialae
     authors: Elzanowski, A.
     described: 2001
@@ -155779,6 +155980,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Microraptorinae
@@ -155786,7 +155988,13 @@ genera:
     described: 2020
   Wyleyia:
     genus: Wyleyia
-    parent: Avialae
+    parent: Maniraptora
+    dispute:
+      summary: |
+        Wyleyia valdensis is based on a single partial humerus. Originally described as a bird of uncertain affinity (Harrison and Walker, 1973), it was reassessed by Naish and Martill (2007) as an indeterminate maniraptoran and a nomen dubium. It is placed conservatively at Maniraptora incertae sedis.
+      history:
+        - date: 2026-07-01
+          note: Moved from Avialae to Maniraptora incertae sedis following Naish and Martill (2007); nomen dubium status flagged for review.
     etymology: Named in honor of J. F. Wyley, who discovered the specimen in Weald Clay deposits of Henfield, Sussex, England.
     pronunciation:
       phonetic: WY-lee-yuh
@@ -155868,7 +156076,6 @@ genera:
       - Avetheropoda
       - Coelurosauria
       - Maniraptora
-      - Avialae
     authors: Harrison, C. J. O.; Walker, C. A.
     described: 1973
   Xenoceratops:
@@ -156321,6 +156528,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
       - Troodontinae
@@ -156669,13 +156877,13 @@ genera:
     described: 1983
   Xiaotingia:
     genus: Xiaotingia
-    parent: Paraves
+    parent: Eumaniraptora
     dispute:
       summary: |
-        Xiaotingia has been recovered in many positions: as an archaeopterygid at the base of Deinonychosauria (Xu et al., 2011), as an anchiornithid on the avialan stem (Foth and Rauhut, 2017; Pei et al., 2020; Jones et al., 2026), and as a sinovenatorine troodontid (Hartman et al., 2019, which requires nine extra steps to move it elsewhere). Given the spread across the Troodontidae-Avialae boundary it is placed conservatively at Paraves incertae sedis.
+        Xiaotingia has been recovered in many positions: as an archaeopterygid at the base of Deinonychosauria (Xu et al., 2011), as an anchiornithid on the avialan stem (Foth and Rauhut, 2017; Pei et al., 2020; Xu et al., 2023; Jones et al., 2026), as a more stemward avialan outside the anchiornithids (Foth et al., 2025), as a sinovenatorine troodontid (Hartman et al., 2019), and as a basal scansoriopterygid (Lefèvre et al., 2017). The competing avialan and deinonychosaur hypotheses agree only on Eumaniraptora, where it is placed.
       history:
         - date: 2026-07-01
-          note: Moved from Sinovenatorinae to Paraves incertae sedis (anchiornithid/avialan versus troodontid). Deferred to the basal-paravian/Avialae batch.
+          note: Moved from Paraves to Eumaniraptora incertae sedis — the two-camp consensus (anchiornithid-avialan versus troodontid); the lone basal-scansoriopterygid recovery (Lefèvre et al., 2017) is noted but does not control the placement.
     etymology: Named in honor of Chinese paleontologist Zheng Xiaoting; the generic name is derived from Xiaoting, the first part of Zheng's given name
     pronunciation:
       phonetic: shyow-TIN-gee-uh
@@ -156790,6 +156998,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
     authors: Xu, X.; You, H.; Du, K.; Han, F.
     described: 2011
   Xingtianosaurus:
@@ -157534,6 +157743,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
     authors: Lü, J.; Xu, L.; Liu, Y.; Zhang, X.; Jia, S.; Ji, Q.
@@ -159407,6 +159617,12 @@ genera:
   Yixianosaurus:
     genus: Yixianosaurus
     parent: Maniraptora
+    dispute:
+      summary: |
+        There is no consensus on the position of Yixianosaurus longimanus, known from a shoulder girdle and forelimbs. Its describers placed it as a basal deinonychosaur; later studies have recovered it as a basal paravian (Foth and Rauhut, 2017), an anchiornithid close to Xiaotingia (Cau et al., 2017; Jones et al., 2026), and, under implied weighting, near the base of Pennaraptora (Foth et al., 2025). It is placed conservatively at Maniraptora incertae sedis.
+      history:
+        - date: 2026-07-01
+          note: Retained at Maniraptora incertae sedis; recovered placements span Pennaraptora to Avialae and none prevails.
     pronunciation:
       phonetic: ee-SHYEN-oh-SAWR-us
     etymology: Named after the Yixian Formation of Liaoning, China where it was found, combined with Greek sauros meaning 'lizard'; translates as 'Yixian lizard'
@@ -159859,6 +160075,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Unenlagiinae
@@ -160914,6 +161131,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Eudromaeosauria
@@ -161446,6 +161664,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Troodontidae
       - Troodontinae
@@ -161675,6 +161894,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
     authors: Cope, E. D.
@@ -162383,6 +162603,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
     authors: Lü, J.; Brusatte, S. L.
@@ -162492,6 +162713,7 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
       - Deinonychosauria
       - Dromaeosauridae
       - Microraptorinae
@@ -162499,7 +162721,13 @@ genera:
     described: 2017
   Zhongornis:
     genus: Zhongornis
-    parent: Paraves
+    parent: Avialae
+    dispute:
+      summary: |
+        Zhongornis haoae is known from a single juvenile, and its position is uncertain. It was originally described as a basal avialan, the sister taxon of Pygostylia (Gao et al., 2008), and is recovered near the base of Avialae by Hartman et al. (2019); a restudy by O'Connor and Sullivan reinterpreted it as the sister taxon of Scansoriopterygidae. It is placed conservatively at Avialae incertae sedis.
+      history:
+        - date: 2026-07-01
+          note: Moved from Paraves to Avialae incertae sedis following the basal-avialan hypothesis (Gao et al., 2008; Hartman et al., 2019); the juvenile holotype and the scansoriopterygid-sister alternative are noted.
     pronunciation:
       phonetic: JOHNG-or-nis
     etymology: From Chinese zhong meaning 'intermediate' or 'middle' and Greek ornis meaning 'bird'; translates as 'intermediate bird,' referring to its transitional morphology
@@ -162589,6 +162817,8 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
+      - Eumaniraptora
+      - Avialae
     authors: Gao, C.; Chiappe, L. M.; Meng, Q.; O'Connor, J. K.; Wang, X.; Cheng, X.; Liu, J.
     described: 2008
   Zhongyuansaurus:
