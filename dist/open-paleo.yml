@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-02T18:18:15.113Z
+  built_at: 2026-07-02T19:54:00.651Z
   clade_count: 195
   genus_count: 1398
   license: CC-BY-4.0
@@ -26727,7 +26727,13 @@ genera:
     described: 2019
   Bahariasaurus:
     genus: Bahariasaurus
-    parent: Avetheropoda
+    parent: Abelisauroidea
+    dispute:
+      summary: |
+        Bahariasaurus ingens is a large theropod whose holotype was destroyed in 1944, complicating its classification. It has historically been allied with tetanurans (as a carcharodontosaurid or megaraptoran), but recent phylogenetic analyses recover it within Ceratosauria as an abelisauroid (Carrano and Sampson, 2008; Rauhut and Carrano, 2016; Cau, 2024; Cau and Paterna, 2025). Cau and Paterna (2025) further argue that Deltadromeus agilis is a junior synonym of Bahariasaurus; that synonymy is not yet widely adopted. It is placed at Abelisauroidea incertae sedis following the prevailing recent view.
+      history:
+        - date: 2026-07-02
+          note: Moved from Avetheropoda to Abelisauroidea incertae sedis following recent analyses recovering it as an abelisauroid ceratosaur; the historical tetanuran (carcharodontosaurid/megaraptoran) hypotheses and the proposed Deltadromeus synonymy are flagged for review.
     pronunciation:
       phonetic: bah-hah-REE-ya-SAWR-us
     etymology: From Bahariya (the Bahariya Oasis and Formation in Egypt, where the fossils were found) + Greek sauros (σαῦρος) meaning 'lizard'; overall meaning 'Bahariya lizard'.
@@ -26820,8 +26826,8 @@ genera:
       - Theropoda
       - Neotheropoda
       - Averostra
-      - Tetanurae
-      - Avetheropoda
+      - Ceratosauria
+      - Abelisauroidea
     authors: Stromer, E.
     described: 1934
   Bainoceratops:
@@ -39616,6 +39622,12 @@ genera:
   Chienkosaurus:
     genus: Chienkosaurus
     parent: Tetanurae
+    dispute:
+      summary: |
+        Chienkosaurus ceratosauroides is a nomen dubium based on four isolated teeth, three of which have been shown to be non-theropod, and it has often been treated as a synonym of Szechuanosaurus. It is placed conservatively at Tetanurae incertae sedis.
+      history:
+        - date: 2026-07-02
+          note: Placed at Tetanurae incertae sedis; regarded as a nomen dubium.
     etymology: lizard of Jiange County
     description: Chienkosaurus is a dubious genus of carnivorous theropod dinosaur from the Late Jurassic Kuangyuan Series of China. It was probably related to Szechuanosaurus.
     diet: carnivore
@@ -39699,10 +39711,12 @@ genera:
     parent: Avetheropoda
     dispute:
       summary: |
-        Chilantaisaurus tashuikouensis is a large, fragmentary theropod whose position is highly unstable, recovered as a basal carcharodontosaurian or neovenatorid close to Neovenator (Benson et al., 2010; Carrano et al., 2012; Jones et al., 2026), as a basal coelurosaur, or as a tyrannosauroid (Kellermann et al., 2025). Because these hypotheses span Allosauroidea and Coelurosauria, it is placed conservatively at Avetheropoda incertae sedis.
+        Chilantaisaurus tashuikouensis is a large, fragmentary theropod whose position is highly unstable. It has been recovered as a basal carcharodontosaurian or neovenatorid close to Neovenator (Benson et al., 2010; Carrano et al., 2012; Rauhut et al., 2024; Kellermann et al., 2025; Jones and Viola, 2026), as a non-megaraptoran tetanuran of uncertain affinity (Novas et al., 2013), and as a megaraptoran within Tyrannosauroidea (Naish and Cau, 2022). Because these hypotheses span Allosauroidea and Coelurosauria, it is placed conservatively at Avetheropoda incertae sedis.
       history:
         - date: 2026-07-01
-          note: Moved from the deprecated Neovenatoridae to Avetheropoda incertae sedis (deferred); its allosauroid-versus-coelurosaur position awaits the Avetheropoda-backbone reconciliation.
+          note: Moved from the deprecated Neovenatoridae to Avetheropoda incertae sedis (deferred).
+        - date: 2026-07-02
+          note: Confirmed and placed at Avetheropoda incertae sedis in the basal-Tetanurae/Avetheropoda batch; its allosauroid-versus-coelurosaur position remains unresolved.
     pronunciation:
       phonetic: jee-LAHN-tie-SAWR-us
     etymology: Named after Jilantai (also romanized as Chilantai) Salt Lake in Inner Mongolia, China, where the fossils were found, + Greek sauros ('lizard'), meaning 'Jilantai Salt Lake lizard'.
@@ -44867,7 +44881,13 @@ genera:
     described: 2010
   Cryolophosaurus:
     genus: Cryolophosaurus
-    parent: Tetanurae
+    parent: Neotheropoda
+    dispute:
+      summary: |
+        Cryolophosaurus ellioti was originally described as an allosaurid and has been recovered as a basal tetanuran in some analyses, but recent work places it outside Averostra and Tetanurae as a non-averostran neotheropod in a grade with Dilophosaurus and Zupaysaurus (Nesbitt et al., 2009; Marsh and Rowe, 2020; Jones and Viola, 2026). It is placed conservatively at Neotheropoda incertae sedis.
+      history:
+        - date: 2026-07-02
+          note: Moved from Tetanurae to Neotheropoda incertae sedis following the prevailing view that it is a non-averostran (pre-tetanuran) neotheropod.
     pronunciation:
       ipa: /ˌkraɪəˌloʊfəˈsɔːrəs/
       phonetic: KRY-uh-LOH-fuh-SAWR-uhs
@@ -44970,8 +44990,6 @@ genera:
       - Saurischia
       - Theropoda
       - Neotheropoda
-      - Averostra
-      - Tetanurae
     authors: Hammer, W. R.; Hickerson, W. J.
     described: 1994
   Cryptarcus:
@@ -46127,7 +46145,13 @@ genera:
     described: 2017
   Dandakosaurus:
     genus: Dandakosaurus
-    parent: Tetanurae
+    parent: Averostra
+    dispute:
+      summary: |
+        Dandakosaurus indicus is a nomen dubium based on a single partial pubis; it has been interpreted as a possible ceratosaur or a basal tetanuran. Because these hypotheses span Ceratosauria and Tetanurae, it is placed conservatively at Averostra incertae sedis.
+      history:
+        - date: 2026-07-02
+          note: Moved from Tetanurae to Averostra incertae sedis; regarded as a nomen dubium of uncertain ceratosaur-versus-tetanuran affinity.
     etymology: Named after Dandakaranya, the ancient name for the region of central India (Andhra Pradesh) where the fossils were found, + Greek sauros ('lizard'), meaning 'Dandakaranya lizard'.
     pronunciation:
       phonetic: DAN-duh-ko-SOR-us
@@ -46219,7 +46243,6 @@ genera:
       - Theropoda
       - Neotheropoda
       - Averostra
-      - Tetanurae
     authors: Yadagiri, P.
     described: 1982
   Dashanpusaurus:
@@ -46707,10 +46730,12 @@ genera:
     parent: Avetheropoda
     dispute:
       summary: |
-        Datanglong guangxiensis is a fragmentary theropod of uncertain position, recovered as a basal carcharodontosaurian (Mo et al., 2014; Jones et al., 2026) but also as a coelurosaur (Cau, 2014) or a basal megaraptoran (Samathi et al., 2024; favored by Kellermann et al., 2025). Because these hypotheses span Allosauroidea and Coelurosauria, it is placed conservatively at Avetheropoda incertae sedis.
+        Datanglong guangxiensis is a fragmentary theropod of uncertain position. It was described as a basal carcharodontosaurian (Mo et al., 2014) and is treated as an indeterminate carcharodontosaurid by Kellermann et al. (2025) and Jones and Viola (2026), but has also been recovered as a coelurosaur (Cau, 2014) and, in one of three analyses, as a basal megaraptoran (Samathi et al., 2024). Because these hypotheses span Allosauroidea and Coelurosauria, it is placed conservatively at Avetheropoda incertae sedis.
       history:
         - date: 2026-07-01
-          note: Moved from Carcharodontosauria to Avetheropoda incertae sedis (deferred); the carcharodontosaurian and megaraptoran hypotheses await the Avetheropoda-backbone reconciliation.
+          note: Moved from Carcharodontosauria to Avetheropoda incertae sedis (deferred).
+        - date: 2026-07-02
+          note: Confirmed and placed at Avetheropoda incertae sedis in the basal-Tetanurae/Avetheropoda batch; the carcharodontosaurian-versus-coelurosaur position remains unresolved.
     etymology: From Datang (the basin in Guangxi, China where it was found) + Chinese long (龍), 'dragon'; means 'Datang dragon'
     pronunciation:
       phonetic: dah-tang-long
@@ -62442,6 +62467,12 @@ genera:
   Gasosaurus:
     genus: Gasosaurus
     parent: Tetanurae
+    dispute:
+      summary: |
+        Gasosaurus constructus is most likely a basal tetanuran of indeterminate position (Carrano, Benson and Sampson, 2012). It has variously been interpreted as a basal coelurosaur or a basal carnosaur, and has been suggested to be synonymous with the contemporaneous Kaijiangosaurus lini from the same formation. It is placed conservatively at Tetanurae incertae sedis.
+      history:
+        - date: 2026-07-02
+          note: Placed at Tetanurae incertae sedis; its finer position and the possible synonymy with Kaijiangosaurus are unresolved.
     pronunciation:
       phonetic: GAS-o-SAWR-us
       ipa: /ˌɡæsoʊˈsɔːrəs/
@@ -74535,7 +74566,13 @@ genera:
     described: 1825
   Iliosuchus:
     genus: Iliosuchus
-    parent: Avetheropoda
+    parent: Tetanurae
+    dispute:
+      summary: |
+        Iliosuchus incognitus is a nomen dubium based on ilia that are difficult to distinguish from those of a juvenile Megalosaurus; it has been interpreted as a possible tyrannosauroid or a megalosaurid (Benson, 2009). Because these hypotheses span Coelurosauria and Megalosauroidea, it is placed conservatively at Tetanurae incertae sedis.
+      history:
+        - date: 2026-07-02
+          note: Moved from Avetheropoda to Tetanurae incertae sedis; regarded as a nomen dubium.
     pronunciation:
       phonetic: IL-ee-oh-SOO-kus
     etymology: From the ilium (hip bone) and Greek Souchos (the crocodile god); meaning "crocodile-hipped"
@@ -74609,7 +74646,6 @@ genera:
       - Neotheropoda
       - Averostra
       - Tetanurae
-      - Avetheropoda
     authors: Huene, F. V.
     described: 1932
   Ilokelesia:
@@ -75335,6 +75371,12 @@ genera:
   Inosaurus:
     genus: Inosaurus
     parent: Tetanurae
+    dispute:
+      summary: |
+        Inosaurus tedreftensis is a nomen dubium based on fragmentary, now-lost vertebrae; its affinities within Theropoda cannot be determined. It is placed conservatively at Tetanurae incertae sedis.
+      history:
+        - date: 2026-07-02
+          note: Placed at Tetanurae incertae sedis; regarded as a nomen dubium.
     etymology: Named after In Tedreft, the locality in Niger where the holotype was collected; meaning "In Tedreft lizard"
     description: Inosaurus is a dubious genus of extinct theropod dinosaur from the Early Cretaceous age "Continental intercalaire" and Echkar Formation of Niger and possibly from the Late Cretaceous age Baharija Formation of Egypt. The type, and only species, is I. tedreftensis.
     diet: carnivore
@@ -80405,6 +80447,12 @@ genera:
   Kaijiangosaurus:
     genus: Kaijiangosaurus
     parent: Tetanurae
+    dispute:
+      summary: |
+        Kaijiangosaurus lini was described only in a 1984 book and has never been the subject of a peer-reviewed redescription or dedicated phylogenetic analysis; it is most likely a basal tetanuran (Carrano, Benson and Sampson, 2012) and has been suggested to be synonymous with the contemporaneous Gasosaurus constructus. It is placed conservatively at Tetanurae incertae sedis.
+      history:
+        - date: 2026-07-02
+          note: Placed at Tetanurae incertae sedis; its validity relative to Gasosaurus is unresolved.
     pronunciation:
       phonetic: KIE-JYAHNG-o-SAWR-us
     etymology: Named after the Kai River (Kaijiang) in Sichuan, China; meaning "Kaijiang lizard"
@@ -81321,11 +81369,17 @@ genera:
     described: 2013
   Kayentavenator:
     genus: Kayentavenator
-    parent: Tetanurae
+    parent: Neotheropoda
+    dispute:
+      summary: |
+        Kayentavenator elysiae, based on an immature partial skeleton, was described as a basal tetanuran closer to Allosaurus than to coelophysoids (Gay, 2010), but subsequent work treats the holotype as a specimen of the coelophysoid "Syntarsus" (Megapnosaurus) kayentakatae, making Kayentavenator a possible junior synonym (Ezcurra, 2012, 2017). Because the tetanuran and coelophysoid hypotheses span Neotheropoda, it is placed conservatively at Neotheropoda incertae sedis.
+      history:
+        - date: 2026-07-02
+          note: Moved from Tetanurae to Neotheropoda incertae sedis; the describer's tetanuran interpretation and the competing coelophysoid synonymy with "Syntarsus" kayentakatae are both unresolved.
     etymology: Named after the Kayenta Formation of northeastern Arizona combined with Latin venator (hunter); meaning "Kayenta hunter"
     pronunciation:
       phonetic: KAI-en-tuh-VEN-uh-tuh
-    description: Kayentavenator is a genus of small carnivorous tetanuran dinosaur that lived during the Early Jurassic Period. Fossils were recovered from the Kayenta Formation of northeastern Arizona, and were described in 2010.
+    description: Kayentavenator is a genus of small carnivorous theropod dinosaur that lived during the Early Jurassic Period. Fossils were recovered from the Kayenta Formation of northeastern Arizona, and were described in 2010. Its affinities are contested, with interpretations ranging from a basal tetanuran to a coelophysoid.
     diet: carnivore
     locomotion: bipedal
     paleoenvironment:
@@ -81401,8 +81455,6 @@ genera:
       - Saurischia
       - Theropoda
       - Neotheropoda
-      - Averostra
-      - Tetanurae
     authors: Gay, R.
     described: 2010
   Kazaklambia:
@@ -99853,7 +99905,7 @@ genera:
         Monolophosaurus jiangi was long regarded as a basal allosauroid, but recent analyses place it outside Allosauroidea among basal tetanurans: as the sister taxon of Avetheropoda (Smith et al., 2007), as a basal tetanuran outside Megalosauroidea and Avetheropoda (Carrano, Benson and Sampson, 2012), as a basal megalosauroid allied with Chuandongocoelurus (Benson, 2010), or as an early-branching spinosaurid within Megalosauroidea (Rauhut et al., 2024). It is placed conservatively at Tetanurae incertae sedis pending the basal-tetanuran reconciliation.
       history:
         - date: 2026-07-02
-          note: Moved from Allosauroidea to Tetanurae incertae sedis; recovered outside Allosauroidea in all recent analyses, with its exact basal-tetanuran or megalosauroid position unresolved. Deferred to the theropod-backbone reconciliation.
+          note: Moved from Allosauroidea to Tetanurae incertae sedis in the Allosauroidea batch, then confirmed and placed at Tetanurae incertae sedis in the basal-Tetanurae/Avetheropoda batch; recovered outside Allosauroidea in all recent analyses, with its exact basal-tetanuran or megalosauroid position unresolved.
     etymology: From Greek 'monos' meaning 'single' and 'lophos' meaning 'crest', plus Greek 'sauros' meaning 'lizard'; translates as 'single-crested lizard', named for the distinctive single crest on its skull.
     pronunciation:
       phonetic: MON-oh-LOF-oh-SOR-uhs
@@ -115642,6 +115694,12 @@ genera:
   Phaedrolosaurus:
     genus: Phaedrolosaurus
     parent: Tetanurae
+    dispute:
+      summary: |
+        Phaedrolosaurus ilikensis is a nomen dubium based on a single non-diagnostic tooth, sometimes suggested to be dromaeosaurid; referred postcranial material has been separated as Xinjiangovenator. It is placed conservatively at Tetanurae incertae sedis.
+      history:
+        - date: 2026-07-02
+          note: Placed at Tetanurae incertae sedis; regarded as a nomen dubium.
     etymology: From Greek phaedros (elated, bright, gleaming) and sauros (lizard); meaning "elated lizard".
     pronunciation:
       phonetic: fee-DROH-lo-SOR-us
@@ -119659,6 +119717,12 @@ genera:
   Prodeinodon:
     genus: Prodeinodon
     parent: Tetanurae
+    dispute:
+      summary: |
+        Prodeinodon is a wastebasket nomen dubium based on isolated teeth showing no diagnostic features; some referred teeth have been interpreted as carcharodontosaurid. It is placed conservatively at Tetanurae incertae sedis.
+      history:
+        - date: 2026-07-02
+          note: Placed at Tetanurae incertae sedis; regarded as a nomen dubium.
     pronunciation:
       phonetic: pro-DY-no-don
     etymology: From Greek pro (before) and the genus name Deinodon; meaning "before Deinodon".
@@ -131448,6 +131512,12 @@ genera:
   Shanyangosaurus:
     genus: Shanyangosaurus
     parent: Avetheropoda
+    dispute:
+      summary: |
+        Shanyangosaurus niupanggouensis is known from a partial postcranium and is poorly constrained. It has been assigned to Avetheropoda (Holtz et al., 2004) and, in a more recent analysis, recovered as a basal oviraptorosaur close to Caudipteryx (Hartman et al., 2019), though that result is regarded as far from definitive. It is placed conservatively at Avetheropoda incertae sedis.
+      history:
+        - date: 2026-07-02
+          note: Placed at Avetheropoda incertae sedis; a more precise coelurosaurian (possibly oviraptorosaurian) affinity is unresolved.
     pronunciation:
       phonetic: shahn-yahng-o-SAWR-us
     etymology: Named after the Shanyang Formation (Shanyang County, Shaanxi, China) where it was found, combined with Greek sauros, "lizard" - means "Shanyang lizard"
@@ -134482,6 +134552,12 @@ genera:
   Sinocoelurus:
     genus: Sinocoelurus
     parent: Tetanurae
+    dispute:
+      summary: |
+        Sinocoelurus fragilis is a nomen dubium based on four isolated, unserrated teeth; its theropod identity has even been questioned. It is placed conservatively at Tetanurae incertae sedis.
+      history:
+        - date: 2026-07-02
+          note: Placed at Tetanurae incertae sedis; regarded as a nomen dubium.
     etymology: From Latin/Greek 'Sino-' meaning 'Chinese' and Greek 'koilos' meaning 'hollow' and 'oura' meaning 'tail'; meaning 'Chinese hollow tail', referencing both the discovery location and the hollow-tailed genus Coelurus.
     pronunciation:
       phonetic: SIEN-o-see-LOOR-us
@@ -140126,11 +140202,12 @@ genera:
     parent: Tetanurae
     dispute:
       summary: |
-        Szechuanosaurus campi is a nomen dubium based on undiagnostic teeth, variously regarded as a metriacanthosaurid or allosaurid.
+        Szechuanosaurus campi is a nomen dubium based on undiagnostic teeth; referred skeletal material formerly placed in the genus has been reassigned to Yangchuanosaurus (Carrano, Benson and Sampson, 2012). It is placed conservatively at Tetanurae incertae sedis.
       history:
         - date: 2026-06-30
-          note: |
-            Reparented to Tetanurae and deferred to the Allosauroidea pass (P2).
+          note: Reparented to Tetanurae and deferred to the Allosauroidea pass (P2).
+        - date: 2026-07-02
+          note: Confirmed and placed at Tetanurae incertae sedis in the basal-Tetanurae/Avetheropoda batch; remains a nomen dubium.
     pronunciation:
       phonetic: SUH-CHWAHN-o-SAWR-us
     etymology: Named after the Szechuan (Sichuan) Province of China where fossils were found, combined with Greek sauros, "lizard" - means "Szechuan lizard"
@@ -142947,6 +143024,12 @@ genera:
   Teinurosaurus:
     genus: Teinurosaurus
     parent: Tetanurae
+    dispute:
+      summary: |
+        Teinurosaurus sauvagei is a nomen dubium based on a single distal caudal vertebra; it cannot be assigned below Theropoda with confidence. It is placed conservatively at Tetanurae incertae sedis.
+      history:
+        - date: 2026-07-02
+          note: Placed at Tetanurae incertae sedis; regarded as a nomen dubium.
     etymology: From Greek 'teinein' meaning 'to stretch' and 'oura' meaning 'tail', combined with Greek 'sauros' meaning 'lizard', likely referring to an elongated tail vertebra.
     pronunciation:
       phonetic: tie-NOOR-o-SOR-us
@@ -153005,6 +153088,12 @@ genera:
   Vectaerovenator:
     genus: Vectaerovenator
     parent: Tetanurae
+    dispute:
+      summary: |
+        Vectaerovenator inopinatus is known from a few vertebrae and shares homoplastic features across Tetanurae. The describing analysis recovered it within Tyrannosauroidea (as sister to Megaraptora), but the authors reject that position as an artifact of homoplasy and low support and treat the genus as Tetanurae incertae sedis (Barker et al., 2020). It is placed accordingly.
+      history:
+        - date: 2026-07-02
+          note: Placed at Tetanurae incertae sedis following the describers' preferred classification; the recovered tyrannosauroid position is treated as homoplastic.
     etymology: Named after Vectis (the Latin name for the Isle of Wight), combined with Latin aero meaning 'air' (referring to the pneumaticity of the vertebrae) and venator meaning 'hunter'; translates as 'Isle of Wight air-filled hunter'
     pronunciation:
       phonetic: vec-TER-oh-VEN-uh-tuh
@@ -161198,6 +161287,12 @@ genera:
   Yunyangosaurus:
     genus: Yunyangosaurus
     parent: Tetanurae
+    dispute:
+      summary: |
+        Yunyangosaurus puanensis shares vertebral features with megalosauroids and was described as a possible basal megalosauroid, but in the numerical analysis it behaves as a wildcard: under equal weights it falls in an unresolved polytomy at the base of Tetanurae (collapsing Megalosauroidea and Coelurosauria), and only under implied weighting does it nest within Megalosauroidea (Dai et al., 2020). It is placed conservatively at Tetanurae incertae sedis.
+      history:
+        - date: 2026-07-02
+          note: Placed at Tetanurae incertae sedis; the possible megalosauroid affinity is unresolved.
     pronunciation:
       phonetic: yoon-YAHNG-oh-SAWR-us
     etymology: Named for Yunyang County in Chongqing, China, where the fossils were found, combined with Greek 'sauros' meaning 'lizard'.
