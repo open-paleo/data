@@ -264,21 +264,19 @@ legitimate pre-DOI classics rather than omitting the line. Mention they can lean
 on Wikipedia taxoboxes or OpenAlex to find candidates. Wait for the user to say
 which landed.
 
-**When a freshly fetched paper's `author<year>` matches an existing BARE key,
-the new paper takes suffix `b` and the existing bare key is retagged to `a` —
-and you must rename every reference to the old bare key in the SAME batch.**
-This is the inverse of the corpus-collision case above (where the *wanted* paper
-was already taken): here the *incoming* paper collides. The validator's
-"Reference key disambiguation" check fails the moment a bare `<key>` coexists
-with any `<key>b`, so do the rename proactively at apply time, not reactively
-after `npm run validate`. Mechanically: (a) ingest the new paper as `<key>b`;
-(b) `grep -rln '<key>\b' clades genera` for the old bare key and rewrite each
-`id:`/`erected_in:`/`described_in:`/`references: [...]` occurrence to `<key>a`.
-(Macronaria lesson: fetching D'Emic's titanosauriform framework as `demic2012b`
-forced the existing Acrocanthosaurus `demic2012` → `demic2012a`.) The new paper
-will not be in `dist/references.bib` until some data file references it, so
-author its full citation in the first clade/genus file that uses it
-(`feedback_disambiguation_suffix_order`, `feedback_bootstrap_key_check`).
+**When a freshly fetched paper's `author<year>a` collides with an existing store
+entry for a *different* paper, the *incoming* paper takes the next free letter —
+nothing existing is renamed.** Keys are append-only (universal `a`-suffixing:
+every key already carries a disambiguation letter), so a same-author-year
+collision only affects the new paper. Ingest it as `<author><year>b` (or the
+next free letter `c`…): bibliographic data lives in the **reference store**, so
+create its store file `references/<letter>/<author><year>b.yml` with the full
+citation (`<letter>` = the ASCII-folded lowercase first character of the key),
+and cite it from the clade/genus file as an `{id, notes?}` pointer — pointing
+`references[].id` / `erected_in` / `described_in` at the new key. The validator's
+"Reference key disambiguation" check fails on any **bare** key (one ending in its
+year), so never leave a citation on a bare `<author><year>`
+(`feedback_bootstrap_key_check`).
 
 If a needed paper is unobtainable, park the affected genus/clade at the
 least-inclusive uncontested node + a `dispute:` flag — never fabricate a
@@ -565,17 +563,17 @@ files (`feedback_full_validation_output`). A new `tree.yml` clade with no
 matching `clades/` file is a warning you must resolve in the same change
 (`feedback_no_new_warnings_without_signoff`).
 
-If `npm run build` modifies `dist/` or `docs/`, restore them — the GitHub
+If `npm run build` modifies `dist/`, restore it — the GitHub
 Action regenerates them (`feedback_no_commit_dist`):
 
 ```
-git restore dist/ docs/open-paleo.json
+git restore dist/
 ```
 
 ## Step 9 — Commit the batch (atomic)
 
 Stage exactly the changed `tree.yml`, `clades/*.yml`, genus YAMLs, and the
-updated `reports/placement-progress.yml` — never `dist/`/`docs/`. Draft a commit
+updated `reports/placement-progress.yml` — never `dist/`. Draft a commit
 message:
 
 ```
@@ -625,7 +623,7 @@ ask whether to pick up the next clade.
   usually distinct papers (`feedback_bootstrap_key_check`).
 - Do not auto-commit/push; every "wait for the user" is a hard stop
   (`feedback_no_auto_commit`, `feedback_skill_approval_gates`).
-- Never commit `dist/`/`docs/` (`feedback_no_commit_dist`).
+- Never commit `dist/` (`feedback_no_commit_dist`).
 - No markdown in reference `notes:`; `notes:` describes the paper's scientific
   role, not process state (`feedback_no_markdown_in_reference_notes`,
   `feedback_no_process_notes_in_references`).

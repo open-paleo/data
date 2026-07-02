@@ -180,50 +180,51 @@ npm run intake-apply -- <Genus>
 ```
 
 This merges the extraction JSON files into `bootstrap.yml` and writes
-`staging/intake/<Genus>/final.yml`. The script populates references
-from `dist/references.bib` when the citation key happens to be present
-already; otherwise it leaves a placeholder of the form:
+`staging/intake/<Genus>/final.yml`. Bibliographic data lives in the
+**reference store** (`references/<letter>/<key>.yml`, one file per
+reference); the genus file cites each paper with an `{id, notes?}`
+pointer. When a citation key already has a store entry (or is in
+`dist/references.bib`), the script writes its store file (no-clobber) and
+adds the pointer. When a key has **no** store entry yet, the script
+**skips** that citation and emits a warning rather than writing an
+unresolved pointer — a pointer must resolve to a complete store entry.
 
-```yaml
-- id: <key>
-  notes: 'TODO: fill in from papers-needed.md citation.'
-```
+### Step 4b — Add missing reference-store entries
 
-### Step 4b — Fill in reference placeholders
-
-For every reference entry whose `notes` is the `TODO:` placeholder,
-read the corresponding citation string from
+For every apply warning of the form `Reference <key>: no reference-store
+entry yet; citation skipped`, read the citation string from
 `staging/intake/<Genus>/papers-needed.md` (the line beginning
-`- [x] **<key>** — ...`) and replace the placeholder with the parsed
-fields. Use the project's canonical reference key order:
+`- [x] **<key>** — ...`) and create `references/<letter>/<key>.yml`
+(`<letter>` = the ASCII-folded lowercase first character of the key)
+using the canonical field order:
 
 ```yaml
-- id: <key>
-  authors: ...
-  year: ...
-  title: ...
-  journal: ...
-  volume: "..."
-  issue: "..."
-  pages: ...
-  publisher: ...
-  doi: ...
-  url: http://dx.doi.org/<doi>
-  notes: ...   # only when meaningful (e.g. supplementary papers)
+id: <key>
+authors: ...
+year: ...
+title: ...
+journal: ...
+volume: "..."
+issue: "..."
+pages: ...
+publisher: ...
+doi: ...
 ```
+
+Do **not** add a `url:` that just points at the DOI, and do **not** put
+`notes:` in the store file — notes are per-citation and live on the
+pointer in the genus file. Then **re-run** `npm run intake-apply --
+<Genus>`; the re-run finds the new store entry and adds the pointer
+(carrying the agent's notes for supplementary papers).
 
 For supplementary papers (when the agent's extraction set `is_describing:
-false`):
-
-- If the citation key was already in the bib, the script will have
-  copied the agent's `notes` field into the reference's `notes`.
-  Leave that text in place if it captures the paper's role; trim it
-  under 200 chars (the validator's warning threshold) if it does not.
-- If the citation key was NOT in the bib (the apply will have left a
-  TODO placeholder), the script will have stashed the agent's notes
-  in `staging/intake/<Genus>/pending-notes/<key>.txt`. After you
-  fill in the reference metadata, also append the pending notes from
-  that file as the reference's `notes:` field (trim under 200 chars).
+false`), the paper's role is recorded as `notes:` on the genus file's
+pointer — the apply step copies it from the agent's `notes` (trim under
+200 chars, the validator's warning threshold). If the citation was
+skipped, the agent's notes are stashed at
+`staging/intake/<Genus>/pending-notes/<key>.txt`; once the store entry
+exists and you re-run apply, the pointer notes are restored from the
+extraction automatically.
 
 Editorial polish at this stage:
 
@@ -292,10 +293,10 @@ If validation produces errors, surface them and ask whether to fix
 them in-place or revert. If validation produces only warnings, list
 them and ask whether to proceed.
 
-If `npm run build` modifies `dist/` or `docs/`, restore those:
+If `npm run build` modifies `dist/`, restore it:
 
 ```
-git restore dist/ docs/open-paleo.json
+git restore dist/
 ```
 
 (per the project's `feedback_no_commit_dist` rule — the GitHub
@@ -382,29 +383,27 @@ SHA and issue URL.
 
 ## Citation key disambiguation
 
-The bootstrap and resume scripts auto-disambiguate proposed keys
-against the bib by **key name only** — they do not inspect DOIs.
-That means a bare `<author><year>` already in the bib will be reused
-even if it actually points to a *different* paper by the same author
-in the same year. This collision is invisible to the scripts; the
-user typically catches it by recognising the DOI mismatch.
+Keys are uniformly `<author><year><letter>` — a fresh describing paper is
+keyed `<author><year>a`. The bootstrap and resume scripts disambiguate by
+**key name only** — they do not inspect DOIs. So if a store entry
+`references/<letter>/<author><year>a.yml` already exists for a *different*
+paper by the same author in the same year, it is silently reused. This
+collision is invisible to the scripts; the user typically catches it by
+recognising the DOI mismatch.
 
-When the user flags such a collision (e.g. "the existing
-`averianov2024` is the rspb noasaurid, not the JVP ornithomimid"),
-disambiguate inside this repo only:
+Because keys are **append-only** (every key already carries a
+disambiguation letter), a collision means only the **new** paper needs the
+next free letter — nothing existing is renamed or retagged. When the user
+flags one (e.g. "the existing `averianov2024a` is the rspb noasaurid, not
+the JVP ornithomimid"):
 
-1. Edit the existing genus YAML(s) under `genera/` that reference the
-   bare key — rename the `references[].id` and every crossref to it:
-   `species[].erected_in`, `species[].described_in`, the genus-level
-   `erected_in`, and `iczn_rulings[].ruling`/`.petition` — from `<key>`
-   to `<key>a`. Use grep to find them all before editing.
-2. Edit `staging/intake/<Genus>/bootstrap.yml` and
-   `staging/intake/<Genus>/papers-needed.md` to use `<key>b` (or the
-   next free letter) for the new paper.
-3. Stage both the renamed pre-existing genus YAML(s) AND the new
-   genus YAML in the same commit so the bib regenerates with both
-   letter-suffixed keys atomically. Mention the rename in the commit
-   body.
+1. Give the new paper the next free letter (`<author><year>b`, or `c`…).
+   Edit `staging/intake/<Genus>/bootstrap.yml` and
+   `staging/intake/<Genus>/papers-needed.md` to use it, then re-run the
+   apply step.
+2. Confirm the new store file `references/<letter>/<author><year>b.yml`
+   was written and the new genus's `references[].id` / `erected_in` point
+   at it. Commit the new store file and genus YAML together.
 
 **Do NOT rename markdown files in the paper corpus**
 (`$OPEN_PALEO_PAPERS_DIR/markdown/`, defaults to
@@ -441,7 +440,7 @@ files that already exist.
 
 Follow the project's persistent rules at every gate:
 
-- Never commit `dist/` or `docs/` — `feedback_no_commit_dist`.
+- Never commit `dist/` — `feedback_no_commit_dist`.
 - Pull rebase autostash before push — recurring pattern.
 - Treat each "Wait for the user" as a hard stop —
   `feedback_skill_approval_gates`.

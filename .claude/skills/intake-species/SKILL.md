@@ -142,13 +142,16 @@ block and the existing genus YAML, writing
 Read the proposed YAML and apply the same polish discipline as the
 genus pipeline:
 
-- **Reference placeholders.** Any `notes: "TODO: fill in from
-  papers-needed.md citation."` entry must be replaced with the
-  parsed citation fields (authors, year, title, journal, volume,
-  issue, pages, publisher, doi, url, notes). For supplementary
-  papers whose notes were stashed under `pending-notes/<key>.txt`,
-  append the stashed notes (trimmed under 200 chars) as the
-  reference's `notes:` field after filling in metadata.
+- **Missing reference-store entries.** Bibliographic data lives in the
+  reference store (`references/<letter>/<key>.yml`); the genus file cites
+  each paper with an `{id, notes?}` pointer. For every apply warning
+  `Reference <key>: no reference-store entry yet; citation skipped`, create
+  `references/<letter>/<key>.yml` from the papers-needed.md citation
+  (`id`, authors, year, title, journal, volume, issue, pages, publisher,
+  doi — **no** DOI-pointer `url`, and **no** `notes` in the store file),
+  then re-run the apply step. The re-run adds the pointer, carrying the
+  supplementary paper's role as `notes:` (trimmed under 200 chars) from the
+  extraction.
 - **PBDB seed corrections.** The bootstrap copies whatever PBDB
   reports for the species: locality coordinates, formation, age
   range. These are routinely wrong or imprecise for newly-erected
@@ -210,10 +213,10 @@ them in-place or revert (`git restore genera/<Letter>/<Genus>.yml`).
 If validation produces only warnings, list them and ask whether to
 proceed.
 
-If `npm run build` modifies `dist/` or `docs/`, restore those:
+If `npm run build` modifies `dist/`, restore it:
 
 ```
-git restore dist/ docs/open-paleo.json
+git restore dist/
 ```
 
 (per `feedback_no_commit_dist`).
@@ -303,7 +306,7 @@ another species addition.
 
 Follow the project's persistent rules at every gate:
 
-- Never commit `dist/` or `docs/` — `feedback_no_commit_dist`.
+- Never commit `dist/` — `feedback_no_commit_dist`.
 - Pull rebase autostash before push.
 - Treat each "Wait for the user" as a hard stop —
   `feedback_skill_approval_gates`.
