@@ -1,7 +1,7 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-01T23:44:18.821Z
-  clade_count: 204
+  built_at: 2026-07-02T00:07:34.836Z
+  clade_count: 203
   genus_count: 1398
   license: CC-BY-4.0
   schema_version: 1.0.0
@@ -115,7 +115,6 @@ tree:
                                     Therizinosauria:
                                       Therizinosauroidea:
                                         Therizinosauridae: {}
-                                  Maniraptoromorpha: {}
                             Ceratosauria:
                               Ceratosauridae: {}
                               Abelisauroidea:
@@ -2057,7 +2056,7 @@ clades:
         notes: Raised Coelophysoidea to a phylogenetically defined superfamily.
   Coelurosauria:
     description: |
-      Coelurosauria is a large and diverse clade of theropod dinosaurs that includes tyrannosaurs, ornithomimosaurs, maniraptorans, and all living birds. Coelurosaurs are the most speciose theropod clade and exhibit an extraordinary range of body sizes, diets, and ecologies. Many coelurosaurs possessed filamentous integumentary structures or true feathers. The clade originated in the Middle Jurassic and includes the only dinosaur lineage to survive the end-Cretaceous extinction.
+      Coelurosauria is a large and diverse clade of theropod dinosaurs that includes tyrannosauroids, compsognathids, ornithomimosaurs, maniraptorans, and all living birds. Coelurosaurs are the most speciose theropod clade and exhibit an extraordinary range of body sizes, diets, and ecologies. Many coelurosaurs possessed filamentous integumentary structures or true feathers. The clade originated by the Middle Jurassic and includes the only dinosaur lineage to survive the end-Cretaceous extinction.
     taxonomy:
       - Life
       - Animalia
@@ -2076,13 +2075,12 @@ clades:
       - Avetheropoda
       - Coelurosauria
     described: 1914
-    authors: Huene
+    authors: Huene, F. von
     diagnostic_features:
       - Elongate distal caudal vertebrae with reduced or absent transverse processes
       - Filamentous integument or feathers present in many lineages
       - Reduced or absent prefrontal bone
-      - Semilunate carpal bone in wrist of many derived taxa
-      - Tibiotarsus longer than femur
+      - Semilunate carpal bone in the wrist of many derived taxa
       - Enlarged cerebrum relative to body size
     references:
       - id: huene1914
@@ -2150,6 +2148,8 @@ clades:
         doi: 10.1007/978-3-030-95959-3_8
         notes: Recovered Colossosauria as the Patagotitan-line stem of Eutitanosauria.
   Compsognathidae:
+    description: |
+      Compsognathidae is a group of small, lightly built early-diverging coelurosaurs known from the Late Jurassic and Early Cretaceous of Europe, Asia, and South America, with the Late Jurassic Compsognathus of Europe as the type genus. Members are small-bodied, long-tailed predators, several preserving filamentous integument, and include the Jehol "compsognathid-grade" taxa such as Sinosauropteryx. The monophyly and content of the family are contested (see dispute), with the type genus and the Jehol taxa often not recovered as a single clade.
     taxonomy:
       - Life
       - Animalia
@@ -2168,6 +2168,22 @@ clades:
       - Avetheropoda
       - Coelurosauria
       - Compsognathidae
+    type_genus: Compsognathus
+    described: 1871
+    authors: Cope, E. D.
+    diagnostic_features:
+      - Small body size with a proportionally long tail
+      - Skull low and lightly built with numerous small teeth
+      - Manus with a robust, enlarged first digit
+      - Filamentous integument preserved in several members
+    references:
+      - id: cope1871
+        authors: Cope, E. D.
+        year: 1871
+        title: Synopsis of the extinct Batrachia, Reptilia and Aves of North America
+        journal: Transactions of the American Philosophical Society
+        volume: "14"
+        pages: 1-252
   Coronosauria:
     description: |
       Coronosauria is the clade of neoceratopsians comprising Protoceratopsidae and Ceratopsoidea and their most recent common ancestor — the smallest clade containing Protoceratops and Triceratops. Its members have a well-developed parietosquamosal frill and a fused anterior cervical series (syncervical), and the clade includes both the Asian protoceratopsids and the lineage leading to the large horned Ceratopsidae.
@@ -4549,25 +4565,6 @@ clades:
       - Avetheropoda
       - Coelurosauria
       - Maniraptoriformes
-  Maniraptoromorpha:
-    taxonomy:
-      - Life
-      - Animalia
-      - Chordata
-      - Vertebrata
-      - Sarcopterygii
-      - Tetrapoda
-      - Reptilia
-      - Archosauria
-      - Dinosauria
-      - Saurischia
-      - Theropoda
-      - Neotheropoda
-      - Averostra
-      - Tetanurae
-      - Avetheropoda
-      - Coelurosauria
-      - Maniraptoromorpha
   Marginocephalia:
     description: |
       Marginocephalia, meaning "fringed heads," is a clade of cerapodan ornithischian dinosaurs united by the presence of a distinctive bony shelf or frill projecting from the posterior margin of the skull. The clade includes Pachycephalosauria (dome-headed dinosaurs) and Ceratopsia (horned dinosaurs). Marginocephalians were exclusively herbivorous and ranged from small bipedal forms to massive quadrupedal ceratopsids. The group was most diverse in the Late Cretaceous of North America and Asia.
@@ -4870,6 +4867,8 @@ clades:
         publisher: Informa UK Limited
         doi: 10.1080/14772019.2011.630927
   Megaraptora:
+    description: |
+      Megaraptora is a clade of medium-to-large predatory theropods known mainly from the Cretaceous of Gondwana, with additional records from Asia. They are characterized by greatly enlarged, strongly curved manual claws on the first two digits and elongate, pneumatic skeletons. The clade comprises the derived family Megaraptoridae together with more basal forms such as Fukuiraptor, Phuwiangvenator, and Vayuraptor.
     taxonomy:
       - Life
       - Animalia
@@ -4888,7 +4887,25 @@ clades:
       - Avetheropoda
       - Coelurosauria
       - Megaraptora
+    type_genus: Megaraptor
+    described: 2010
+    authors: Benson, R. B. J.; Carrano, M. T.; Brusatte, S. L.
+    diagnostic_features:
+      - Greatly enlarged, transversely compressed and strongly recurved manual ungual on digit I
+      - Elongate and gracile forelimb with a robust first metacarpal
+      - Extensive postcranial pneumaticity of the vertebrae
+      - Long, shallow-snouted skull with small, blade-like teeth
+    references:
+      - id: benson2009d
+        authors: Benson, R. B. J.; Carrano, M. T.; Brusatte, S. L.
+        year: 2010
+        title: "A new clade of archaic large-bodied predatory dinosaurs (Theropoda: Allosauroidea) that survived to the latest Mesozoic"
+        journal: Naturwissenschaften
+        volume: "97"
+        pages: 71-78
   Megaraptoridae:
+    description: |
+      Megaraptoridae is the derived family of megaraptoran theropods, comprising the larger, mostly South American forms together with the Australian Australovenator. It contains the type genus Megaraptor and its close relatives and excludes the more basal megaraptorans Fukuiraptor and Phuwiangvenator. Members were the apex predators of many Late Cretaceous Gondwanan ecosystems.
     taxonomy:
       - Life
       - Animalia
@@ -4908,6 +4925,22 @@ clades:
       - Coelurosauria
       - Megaraptora
       - Megaraptoridae
+    type_genus: Megaraptor
+    described: 2013
+    authors: Novas, F. E.; Agnolin, F. L.; Ezcurra, M. D.; Porfiri, J.; Canale, J. I.
+    diagnostic_features:
+      - Cervical vertebrae with extensive lateral pneumatic fossae and camellate internal structure
+      - Strongly opisthocoelous anterior dorsal vertebrae
+      - Elongate, gracile metatarsus
+      - Manual unguals I and II hypertrophied relative to the pes
+    references:
+      - id: novas2013
+        authors: Novas, F. E.; Agnolin, F. L.; Ezcurra, M. D.; Porfiri, J.; Canale, J. I.
+        year: 2013
+        title: "Evolution of the carnivorous dinosaurs during the Cretaceous: The evidence from Patagonia"
+        journal: Cretaceous Research
+        volume: "45"
+        pages: 174-215
   Metriacanthosauridae:
     taxonomy:
       - Life
@@ -18095,7 +18128,7 @@ genera:
     described: 2018
   Aniksosaurus:
     genus: Aniksosaurus
-    parent: Compsognathidae
+    parent: Coelurosauria
     etymology: From Modern Greek 'anoixi' meaning 'spring' (the season) and 'sauros' meaning 'lizard'; meaning 'spring lizard', referring to the onset of spring in the Southern Hemisphere when the fossil was found
     pronunciation:
       phonetic: ah-NIK-so-SOR-us
@@ -18184,7 +18217,6 @@ genera:
       - Tetanurae
       - Avetheropoda
       - Coelurosauria
-      - Compsognathidae
     authors: Martínez, R.; Novas, F.
     described: 2006
   Animantarx:
@@ -28714,6 +28746,12 @@ genera:
   Beipiaognathus:
     genus: Beipiaognathus
     parent: Compsognathidae
+    dispute:
+      summary: |
+        Beipiaognathus was described as a compsognathid, but its holotype is widely regarded as a composite or heavily restored specimen, and Cau (2024) excluded it from analysis as a mis-restored chimera showing derived maniraptoran features. Its validity and placement are therefore doubtful. It is retained in Compsognathidae as originally described, pending re-examination of the specimen.
+      history:
+        - date: 2026-07-01
+          note: Retained at Compsognathidae as described; possible chimera/nomen dubium (Cau, 2024). Flagged for Literature Review.
     etymology: "Named after Beipiao, a city in Liaoning Province, China, combined with Greek gnathos meaning 'jaw'. Full meaning: 'Beipiao jaw'."
     pronunciation:
       phonetic: bay-pyow-gna-thus
@@ -34403,6 +34441,12 @@ genera:
   Calamospondylus:
     genus: Calamospondylus
     parent: Coelurosauria
+    dispute:
+      summary: |
+        Calamospondylus oweni is a nomen dubium. Although the name is validly published, the type material (a now-lost sacrum and pelvic remains from the Wealden of the Isle of Wight) preserves no diagnostic characters, and Naish (2002) showed it is based on a different specimen from Aristosuchus, with which it had long been synonymized. It can be identified only as a small coelurosaurian theropod.
+      history:
+        - date: 2026-07-01
+          note: Placed at Coelurosauria incertae sedis; nomen dubium with lost, undiagnostic type material (Naish, 2002). Flagged for Literature Review.
     etymology: From Greek kalamos (reed) and spondylos (vertebra), in reference to the hollow, reed-like nature of the vertebrae.
     pronunciation:
       phonetic: kal-uh-mo-SPON-dih-lus
@@ -42108,6 +42152,12 @@ genera:
   Coelurus:
     genus: Coelurus
     parent: Coelurosauria
+    dispute:
+      summary: |
+        The placement of Coelurus is debated. It is commonly recovered near the base of Tyrannosauroidea, sometimes in a reduced Coeluridae with Tanycolagreus (Hartman et al., 2019; Jones et al., 2026), but a base-of-Compsognathidae position has not been ruled out, and Delcourt et al. (2025) recovered it as the earliest-branching ornithomimosaur. It is placed conservatively at Coelurosauria incertae sedis.
+      history:
+        - date: 2026-07-01
+          note: Placed at Coelurosauria incertae sedis (least-inclusive uncontested clade); Coeluridae/basal-Tyrannosauroidea and ornithomimosaur hypotheses proposed. Coeluridae not adopted as a node (contested, sparsely populated).
     etymology: From Greek 'koilos' (hollow) and 'oura' (tail); meaning 'hollow tail', referring to the extensively excavated, thin-walled vertebrae described in the holotype.
     pronunciation:
       phonetic: seel-YOOR-us
@@ -70313,7 +70363,13 @@ genera:
     described: 2000
   Huadanosaurus:
     genus: Huadanosaurus
-    parent: Coelurosauria
+    parent: Compsognathidae
+    dispute:
+      summary: |
+        Huadanosaurus was described by Qiu et al. (2025), who recovered it among the Jehol compsognathid-grade theropods that they grouped as Sinosauropterygidae, alongside Sinosauropteryx and Sinocalliopteryx. Its tyrannosauroid-like cranial features were interpreted as convergence rather than phylogenetic signal. It is placed in Compsognathidae in the family's traditional, broadly used sense; the Sinosauropterygidae hypothesis is reflected in the Compsognathidae clade dispute.
+      history:
+        - date: 2026-07-01
+          note: Moved from Coelurosauria to Compsognathidae for consistency with the other Jehol compsognathid-grade taxa (Qiu et al., 2025); Sinosauropterygidae hypothesis reflected at the clade level.
     etymology: From Chinese 'huadan' (the birthday of a great person or institution), commemorating several Chinese scientific anniversaries, and Greek 'sauros' (lizard).
     pronunciation:
       phonetic: hwah-dan-o-sor-us
@@ -70415,6 +70471,7 @@ genera:
       - Tetanurae
       - Avetheropoda
       - Coelurosauria
+      - Compsognathidae
     authors: Qiu, R.; Wang, X.; Jiang, S.; Meng, J.; Zhou, Z.
     described: 2025
   Hualianceratops:
@@ -71034,6 +71091,12 @@ genera:
   Huaxiagnathus:
     genus: Huaxiagnathus
     parent: Compsognathidae
+    dispute:
+      summary: |
+        Huaxiagnathus was described as a basal compsognathid, a placement largely upheld (Jones et al., 2026), though Hartman et al. (2019) recovered it just outside a reduced Compsognathidae. Cau and Paterna (2025) proposed that the proceratosaurid Sinotyrannus is a mature individual of Huaxiagnathus, which would make it a junior synonym and imply a tyrannosauroid-grade affinity; Jones et al. (2026) reject this, treating Sinotyrannus as a valid proceratosaurid. It is retained in Compsognathidae pending resolution of the synonymy.
+      history:
+        - date: 2026-07-01
+          note: Retained at Compsognathidae; contested Sinotyrannus synonymy (Cau and Paterna, 2025, versus Jones et al., 2026) flagged for Literature Review.
     etymology: From Chinese 'Hua Xia' (華夏), a traditional word for China, and Greek 'gnathos' meaning 'jaw', hence 'China jaw'.
     pronunciation:
       phonetic: hwah-shahg-NATH-us
@@ -79501,6 +79564,12 @@ genera:
   Juravenator:
     genus: Juravenator
     parent: Coelurosauria
+    dispute:
+      summary: |
+        The affinities of Juravenator are uncertain because the holotype is an immature individual. It was described as a small basal coelurosaur close to Compsognathus, loosely within Compsognathidae (Chiappe and Göhlich, 2010), and Jones et al. (2026) place it there. However, Rauhut et al. (2012) and Foth et al. (2020) showed that its coelurosaurian characters may be juvenile artifacts, that it is drawn toward the base of Tetanurae as the sister taxon of the megalosauroid Sciurumimus when both juveniles are analyzed together, and that its supposed tail "scales" are better interpreted as adipocere. It is placed conservatively at Coelurosauria incertae sedis.
+      history:
+        - date: 2026-07-01
+          note: Placed at Coelurosauria incertae sedis; compsognathid-grade (Chiappe and Göhlich, 2010) versus basal-tetanuran/megalosauroid juvenile-artifact (Rauhut et al., 2012; Foth et al., 2020) hypotheses unresolved.
     etymology: Named after the Franconian Jura region of Germany (where it was found) combined with Latin venator (hunter); meaning 'Jura hunter'
     description: Juravenator is a genus of tetanuran theropod dinosaur which lived about 152 or 151 million years ago in modern day Franconian Jura of Germany (Torleite Formation) during the Late Jurassic. It is known from a single, juvenile specimen measuring about 75 cm (2.46 ft) in length.
     diet: carnivore
@@ -82132,7 +82201,13 @@ genera:
     described: 1993
   Kol:
     genus: Kol
-    parent: Coelurosauria
+    parent: Alvarezsauridae
+    dispute:
+      summary: |
+        Kol ghuva was described by Turner et al. (2009) as a derived alvarezsaurid, more derived than Alvarezsaurus and Patagonykus, on the basis of its extreme arctometatarsalian foot. Because the holotype is a single articulated foot, the placement is poorly constrained, and some subsequent authors have suggested it may instead be a basal oviraptorosaurian. It is placed in Alvarezsauridae following the describing analysis and Jones et al. (2026).
+      history:
+        - date: 2026-07-01
+          note: Moved from Coelurosauria to Alvarezsauridae following Turner et al. (2009) and Jones et al. (2026); fragmentary holotype, with a basal oviraptorosaurian alternative proposed.
     pronunciation:
       phonetic: khol
     description: Kol is an extinct genus of coelurosaurian theropod dinosaur from the Late Cretaceous of Mongolia. The type and only species is Kol ghuva. The type specimen was excavated from the Ukhaa Tolgod locality of the Djadochta Formation, dating to about 75 million years ago. It is believed to have been about twice the size of the contemporaneous Shuvuuia. However, unlike Shuvuuia, which is known from many well preserved specimens, and although Ukhaa Tolgod has been thoroughly explored, Kol is known only from one complete foot, suggesting that it must have been relatively rare in that ecosystem.
@@ -82231,6 +82306,9 @@ genera:
       - Tetanurae
       - Avetheropoda
       - Coelurosauria
+      - Maniraptora
+      - Alvarezsauroidea
+      - Alvarezsauridae
     authors: Turner, A. H.; Nesbitt, S. J.; Norell, M. A.
     described: 2009
   Koleken:
@@ -89974,7 +90052,13 @@ genera:
     described: 2001
   Lourinhanosaurus:
     genus: Lourinhanosaurus
-    parent: Coelurosauria
+    parent: Avetheropoda
+    dispute:
+      summary: |
+        The affinities of Lourinhanosaurus are highly uncertain. It has variously been referred to Allosauroidea (as a sinraptorid/metriacanthosaurid), to Megalosauroidea, and to Coelurosauria. Carrano et al. (2012) recovered it weakly allied with Coelurosauria, while Hartman et al. (2019) and Jones et al. (2026) place it near the base of Avetheropoda without resolving whether it is an allosauroid or a coelurosaur. It is placed conservatively at Avetheropoda incertae sedis, the least-inclusive clade common to the competing hypotheses.
+      history:
+        - date: 2026-07-01
+          note: Moved from Coelurosauria to Avetheropoda incertae sedis; allosauroid, megalosauroid, and coelurosaur hypotheses unresolved (Carrano et al., 2012; Hartman et al., 2019). Deferred for the avetheropod/allosauroid backbone pass.
     pronunciation:
       phonetic: loh-reen-YAH-no-SAWR-us
     etymology: Named for Lourinhã, the town in Portugal near where the fossils were found, combined with Greek 'sauros' meaning 'lizard', hence 'Lourinhã lizard'. The species name honors Portuguese paleontologist Miguel Telles Antunes.
@@ -90104,7 +90188,6 @@ genera:
       - Averostra
       - Tetanurae
       - Avetheropoda
-      - Coelurosauria
     authors: Mateus, O.
     described: 1998
   Lourinhasaurus:
@@ -98229,7 +98312,13 @@ genera:
     described: 2009
   Mirischia:
     genus: Mirischia
-    parent: Maniraptoromorpha
+    parent: Coelurosauria
+    dispute:
+      summary: |
+        The placement of Mirischia is highly unstable. It was originally described as a compsognathid (Naish et al., 2004); Dal Sasso and Maganuco (2011) recovered it as a basal coelurosaur outside Compsognathidae; Qiu et al. (2025) placed it in Sinosauropterygidae; and Delcourt et al. (2025), in their preferred implied-weights analysis, recovered it among the earliest-branching Maniraptoromorpha with Tanycolagreus and Santanaraptor. Given the conflict and the incomplete holotype, it is placed conservatively at Coelurosauria incertae sedis.
+      history:
+        - date: 2026-07-01
+          note: Moved from Maniraptoromorpha to Coelurosauria incertae sedis (least-inclusive uncontested clade); compsognathid, Sinosauropterygidae, earliest-maniraptoromorph, and ornithomimosaur hypotheses all proposed.
     pronunciation:
       phonetic: my-RIS-kee-uh
     etymology: From Latin 'mirus' (wonderful) and the Latinized plural of Greek 'ischion' (hip joint); meaning 'wonderful hips' or 'wonderful ischia', referring to the unusual ischia
@@ -98337,7 +98426,6 @@ genera:
       - Tetanurae
       - Avetheropoda
       - Coelurosauria
-      - Maniraptoromorpha
     authors: Naish, D.; Martill, D. M.; Frey, E.
     described: 2004
   Mnyamawamtuka:
@@ -102586,6 +102674,12 @@ genera:
   Nedcolbertia:
     genus: Nedcolbertia
     parent: Coelurosauria
+    dispute:
+      summary: |
+        The placement of Nedcolbertia is contested. Originally described as an indeterminate coelurosaur, it has been narrowed by recent reviews and by Hartman et al. (2019) and Jones et al. (2026) to a basal ornithomimosaur, whereas Cau (2024) recovered it among early-diverging allosauroids. Given the fragmentary holotype and the ornithomimosaur-versus-allosauroid conflict, it is placed conservatively at Coelurosauria incertae sedis.
+      history:
+        - date: 2026-07-01
+          note: Placed at Coelurosauria incertae sedis (least-inclusive uncontested clade); basal-ornithomimosaur (Hartman et al., 2019; Jones et al., 2026) versus allosauroid (Cau, 2024) hypotheses unresolved.
     pronunciation:
       phonetic: ned-kohl-BER-tee-a
     etymology: Named in honor of Edwin H. 'Ned' Colbert, the prominent American vertebrate paleontologist
@@ -107993,7 +108087,13 @@ genera:
     described: 1887
   Ornitholestes:
     genus: Ornitholestes
-    parent: Compsognathidae
+    parent: Coelurosauria
+    dispute:
+      summary: |
+        The placement of Ornitholestes is unsettled. Most modern analyses recover it at or near the base of Maniraptoromorpha (Hartman et al., 2019), and it has also been proposed as the basalmost oviraptorosaurian (Chapelle et al., 2021). It is not a compsognathid. It is placed conservatively at Coelurosauria incertae sedis pending resolution.
+      history:
+        - date: 2026-07-01
+          note: Moved from Compsognathidae to Coelurosauria incertae sedis (least-inclusive uncontested clade); basal maniraptoromorph per Hartman et al. (2019) and Jones et al. (2026), basalmost oviraptorosaurian per Chapelle et al. (2021).
     pronunciation:
       phonetic: or-NITH-o-LES-teez
     etymology: From Ancient Greek 'ornis' (bird) and 'lestes' (robber); meaning 'bird robber'.
@@ -108100,7 +108200,6 @@ genera:
       - Tetanurae
       - Avetheropoda
       - Coelurosauria
-      - Compsognathidae
     authors: Osborn, H. F.
     described: 1903
   Ornithomimoides:
@@ -126465,6 +126564,12 @@ genera:
   Santanaraptor:
     genus: Santanaraptor
     parent: Coelurosauria
+    dispute:
+      summary: |
+        The placement of Santanaraptor is contested. It has been recovered as a tyrannosauroid (a rare Gondwanan record) by several authors, an arrangement followed by Jones et al. (2026) but not universally accepted. Delcourt et al. (2025) recovered it as an early-branching megaraptoran within Tyrannosauroidea under equal weights, but preferred an earliest-branching Maniraptoromorpha position (with Tanycolagreus and Mirischia) under implied weights, explicitly rejecting tyrannosauroid and compsognathid affinities. The holotype is a juvenile with much missing data. It is placed conservatively at Coelurosauria incertae sedis.
+      history:
+        - date: 2026-07-01
+          note: Placed at Coelurosauria incertae sedis (least-inclusive uncontested clade); tyrannosauroid, megaraptoran-within-Tyrannosauroidea, and earliest-maniraptoromorph hypotheses proposed (Delcourt et al., 2025).
     pronunciation:
       phonetic: sahn-TAHN-uh-RAP-tor
     etymology: Named after the Santana Formation of Brazil where the fossil was found, combined with Latin raptor (thief); meaning "Santana Formation thief".
@@ -128867,6 +128972,12 @@ genera:
   Scipionyx:
     genus: Scipionyx
     parent: Compsognathidae
+    dispute:
+      summary: |
+        Scipionyx is known only from a hatchling, complicating its classification. Dal Sasso and Maganuco (2011) recovered it as a basal compsognathid, and Jones et al. (2026) follow this. Cau (2024), however, recovered it as an immature spinosaurid within Megalosauroidea, arguing its compsognathid-grade appearance reflects juvenile morphology rather than affinity. It is retained in Compsognathidae pending study of adult material.
+      history:
+        - date: 2026-07-01
+          note: Retained at Compsognathidae; the immature-spinosaurid reinterpretation (Cau, 2024) is reflected but not adopted. Flagged for Literature Review.
     pronunciation:
       ipa: /ˈʃɪˌpiːoʊnɪks, ˌʃɪpiːˈoʊ-/
       phonetic: SHIH-pee-oh-nicks
@@ -132252,6 +132363,12 @@ genera:
   Siats:
     genus: Siats
     parent: Megaraptora
+    dispute:
+      summary: |
+        Siats was originally described as a megaraptoran within Neovenatoridae (Allosauroidea). Its position has since been contentious: it has been recovered as a tyrannosauroid, as a non-megaraptoran neovenatorid, and as a coelurosaur of uncertain placement, and Jones et al. (2026) tentatively retain it in Neovenatoridae. The recent allosauroid analysis of Kellermann et al. (2025) recovers it firmly within Megaraptora, where it is placed here; its position relative to Megaraptoridae is unresolved, so it is left in Megaraptora incertae sedis.
+      history:
+        - date: 2026-07-01
+          note: Placed at Megaraptora incertae sedis following Kellermann et al. (2025); non-megaraptoran and neovenatorid alternatives noted. The Megaraptora higher-position debate is recorded on the Megaraptora clade file, not here.
     etymology: Named after Siats, a man-eating monster from the mythology of the Ute people of Utah, near where the fossil was found.
     pronunciation:
       phonetic: see-atch
@@ -133155,6 +133272,12 @@ genera:
   Sinocalliopteryx:
     genus: Sinocalliopteryx
     parent: Compsognathidae
+    dispute:
+      summary: |
+        Sinocalliopteryx was described as a basal compsognathid, a placement followed by many authors and by Jones et al. (2026). Hartman et al. (2019) instead recovered it as a basal maniraptoromorph outside a reduced Compsognathidae, and Qiu et al. (2025) placed it with the other Jehol taxa in Sinosauropterygidae. It is retained in Compsognathidae in the family's traditional sense; those alternatives are reflected in the Compsognathidae clade dispute.
+      history:
+        - date: 2026-07-01
+          note: Retained at Compsognathidae; basal-maniraptoromorph (Hartman et al., 2019) and Sinosauropterygidae (Qiu et al., 2025) hypotheses reflected at the clade level.
     etymology: From Latin 'Sinae' (China) + Greek 'kalos' (beautiful) + Greek 'pteryx' (feather, wing), meaning 'Chinese beautiful feather'.
     description: Sinocalliopteryx is a genus of carnivorous coelurosaurian theropod dinosaurs from the Lower Cretaceous Yixian Formation of China (Jianshangou Beds, dating to 124.6 Ma). While similar to the related Huaxiagnathus, Sinocalliopteryx were larger. In 2007, the type specimen was the largest known compsognathid exemplar, at 2.37 meters (7.8 ft) in length. In 2012, an even larger specimen was reported.
     diet: carnivore
@@ -134074,7 +134197,7 @@ genera:
     described: 1999
   Sinosauropteryx:
     genus: Sinosauropteryx
-    parent: Coelurosauria
+    parent: Compsognathidae
     pronunciation:
       phonetic: SIEN-o-saw-ROP-te-riks
     etymology: From Latin/Greek 'Sino-' meaning 'Chinese', Greek 'sauros' meaning 'reptile' or 'lizard', and 'pteryx' meaning 'wing'; meaning 'Chinese reptilian wing.'
@@ -134195,6 +134318,7 @@ genera:
       - Tetanurae
       - Avetheropoda
       - Coelurosauria
+      - Compsognathidae
     authors: Ji, Q.; Ji, S.
     described: 1996
   Sinosaurus:
@@ -140315,6 +140439,12 @@ genera:
   Tanycolagreus:
     genus: Tanycolagreus
     parent: Coelurosauria
+    dispute:
+      summary: |
+        The placement of Tanycolagreus is unsettled. It is frequently recovered near the base of Tyrannosauroidea, sometimes with Coelurus in a reduced Coeluridae (Hartman et al., 2019; Jones et al., 2026); Cau (2024) recovered it within Tyrannosauroidea, while Delcourt et al. (2025), under implied weights, recovered it among the earliest-branching Maniraptoromorpha with Santanaraptor and Mirischia. It is placed conservatively at Coelurosauria incertae sedis.
+      history:
+        - date: 2026-07-01
+          note: Placed at Coelurosauria incertae sedis (least-inclusive uncontested clade); basal-Tyrannosauroidea/Coeluridae and earliest-maniraptoromorph hypotheses proposed. Coeluridae not adopted as a node.
     pronunciation:
       phonetic: tan-ee-KOL-uh-gree-us
     etymology: From Greek 'tany' meaning 'long' or 'stretched out', 'kolon' meaning 'limb', and 'agreus' meaning 'hunter', referring to the greater length of its forelimbs and hindlimbs compared to Coelurus
@@ -156329,6 +156459,12 @@ genera:
   Xinjiangovenator:
     genus: Xinjiangovenator
     parent: Coelurosauria
+    dispute:
+      summary: |
+        Xinjiangovenator is known only from a lower hind limb (originally referred to the nomen dubium Phaedrolosaurus ilikensis). Rauhut and Xu (2005) tentatively referred it to Maniraptora, possibly close to Bagaraatan, but with low support, and Jones et al. (2026) note that its bone features are more suggestive of tyrannosauroids or megaraptorans. Given the sparse material it is placed conservatively at Coelurosauria incertae sedis.
+      history:
+        - date: 2026-07-01
+          note: Placed at Coelurosauria incertae sedis (least-inclusive uncontested clade); weakly supported maniraptoran versus tyrannosauroid/megaraptoran signals, fragmentary holotype.
     etymology: Named after Xinjiang, the autonomous region of China where it was found, combined with Latin venator meaning 'hunter'; translates as 'Xinjiang hunter'
     pronunciation:
       phonetic: SHEEN-JEE-yon-go-VEN-uh-tuh
@@ -157289,6 +157425,12 @@ genera:
   Xunmenglong:
     genus: Xunmenglong
     parent: Compsognathidae
+    dispute:
+      summary: |
+        Xunmenglong was described as a small compsognathid in a polytomy with Compsognathus, Huaxiagnathus, and Juravenator, a placement Jones et al. (2026) follow. Cau (2024) instead recovered it among the earliest-diverging branches of Tetanurae, outside Coelurosauria. It is retained in Compsognathidae; the basal-tetanuran hypothesis is reflected in the Compsognathidae clade dispute.
+      history:
+        - date: 2026-07-01
+          note: Retained at Compsognathidae; basal-Tetanurae hypothesis (Cau, 2024) reflected at the clade level.
     pronunciation:
       phonetic: shoon-MUNG-long
     etymology: From Chinese xun ('swift'), meng ('fierce'), and long ('dragon'), meaning 'swift fierce dragon'
@@ -162698,6 +162840,12 @@ genera:
   Zuolong:
     genus: Zuolong
     parent: Coelurosauria
+    dispute:
+      summary: |
+        Zuolong is usually recovered as a basal coelurosaur (Choiniere et al., 2010; Sayão et al., 2020, as sister to Aratasaurus), and Jones et al. (2026) follow this, but Cau (2018) placed it further stemward as a basal tetanuran outside Coelurosauria. It is placed at Coelurosauria incertae sedis following the prevailing view.
+      history:
+        - date: 2026-07-01
+          note: Placed at Coelurosauria incertae sedis; basal coelurosaur per most analyses, basal tetanuran per Cau (2018).
     pronunciation:
       phonetic: zoo-OH-long
     etymology: Named in honor of General Zuo Zongtang (also known as General Tso), a 19th-century Chinese military leader, combined with Chinese 'long' meaning 'dragon'.
