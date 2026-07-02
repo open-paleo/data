@@ -15,6 +15,36 @@ export function escapeRegExp(value: string): string
 }
 
 /**
+ * Latin letters with no canonical NFD decomposition to a base ASCII letter.
+ * Folding them keeps every reference key inside the 26 `a`–`z` buckets instead
+ * of spawning a stray directory for a Polish `ł`, Nordic `ø`, or similar.
+ */
+const nonDecomposingLetterFolds: Record<string, string> = {
+    "ł": "l", "ø": "o", "đ": "d", "ð": "d", "þ": "t", "ß": "s",
+    "ı": "i", "ħ": "h", "ĸ": "k", "ŋ": "n", "œ": "o", "æ": "a",
+};
+
+/**
+ * Returns the store directory bucket for a reference key: the folded, lowercase
+ * first character. Diacritics are stripped via NFD (so `ősi2010a` buckets to
+ * `o`) and the non-decomposing Latin letters above fold to their base letter,
+ * so every key lands in one of the 26 `a`–`z` buckets — mirroring the
+ * `genera/<Letter>/` layout. Anything that still does not fold to `a`–`z`
+ * (e.g. a non-Latin script) falls back to `_`, keeping the mapping total and
+ * deterministic.
+ *
+ * @param key - The reference key (e.g. "royo-torres2006a", "ősi2010a").
+ * @returns The single-character bucket name.
+ */
+export function referenceBucket(key: string): string
+{
+    const first = key.normalize("NFD").replace(/[̀-ͯ]/g, "")[0]?.toLowerCase() ?? "";
+    const folded = nonDecomposingLetterFolds[first] ?? first;
+
+    return /^[a-z]$/.test(folded) ? folded : "_";
+}
+
+/**
  * Parses a YAML file and returns the result cast to the specified type.
  *
  * @param filePath - Absolute path to the YAML file.

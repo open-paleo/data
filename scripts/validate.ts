@@ -9,7 +9,7 @@ import * as url from "node:url";
 
 import { parse as parseYamlContent } from "yaml";
 
-import { buildFlaggedSet, buildVerifiedSet, findYamlFiles, loadFlaggedSignoffs, loadFlaggedSources } from "./utilities.ts";
+import { buildFlaggedSet, buildVerifiedSet, findYamlFiles, loadFlaggedSignoffs, loadFlaggedSources, referenceBucket } from "./utilities.ts";
 
 import type {
     GenusData,
@@ -185,6 +185,34 @@ const flaggedSources = loadFlaggedSources(path.join(root, "flagged-sources.yml")
 const flaggedPublishers = buildFlaggedSet(flaggedSources.publishers);
 const flaggedJournals = buildFlaggedSet(flaggedSources.journals);
 const verifiedReferenceIds = buildVerifiedSet(loadFlaggedSignoffs(path.join(root, "flagged-signoffs.yml")));
+
+// The canonical reference store: references/<letter>/<id>.yml, one file per
+// reference. Bibliographic fields live here; per-occurrence notes stay on the
+// in-file `{id, notes?}` pointers. Parsed once and shared across the reference
+// checks below.
+const referenceStoreFiles = findYamlFiles(path.join(root, "references"));
+const referenceStoreParsed = new Map<string, Reference | null>();
+const referenceStoreById = new Map<string, Reference>();
+
+for (const filePath of referenceStoreFiles)
+{
+    try
+    {
+        const entry = parseYamlContent(fs.readFileSync(filePath, "utf8")) as Reference;
+        referenceStoreParsed.set(filePath, entry);
+
+        if (entry && entry.id && !referenceStoreById.has(entry.id))
+        {
+            referenceStoreById.set(entry.id, entry);
+        }
+    }
+    catch
+    {
+        referenceStoreParsed.set(filePath, null);
+    }
+}
+
+const referenceStoreIds = new Set(referenceStoreById.keys());
 
 const genusFiles = findYamlFiles(path.join(root, "genera"));
 const genusParsed = new Map<string, GenusData>();
@@ -495,26 +523,28 @@ for (const [filePath, doc] of genusParsed)
         continue;
     }
 
-    const ids = new Set<string>();
-
+    // Every in-file citation pointer must resolve to a store entry.
     if (Array.isArray(doc.references))
     {
         for (const reference of doc.references)
         {
-            if (reference && reference.id)
+            if (reference && reference.id && !referenceStoreIds.has(reference.id))
             {
-                ids.add(reference.id);
+                checkError(
+                    "Reference integrity",
+                    filePath,
+                    `reference '${reference.id}' does not resolve to a store entry (references/${reference.id[0]}/${reference.id}.yml)`);
             }
         }
     }
 
     // Check the genus-level erected_in (genus-authority override).
-    if (doc.erected_in && !ids.has(doc.erected_in))
+    if (doc.erected_in && !referenceStoreIds.has(doc.erected_in))
     {
         checkError(
             "Reference integrity",
             filePath,
-            `erected_in '${doc.erected_in}' does not match any reference id`);
+            `erected_in '${doc.erected_in}' does not resolve to a store entry`);
     }
 
     // Check genus-level ICZN ruling references.
@@ -522,20 +552,20 @@ for (const [filePath, doc] of genusParsed)
     {
         for (const ruling of doc.iczn_rulings)
         {
-            if (ruling && ruling.ruling && !ids.has(ruling.ruling))
+            if (ruling && ruling.ruling && !referenceStoreIds.has(ruling.ruling))
             {
                 checkError(
                     "Reference integrity",
                     filePath,
-                    `iczn_rulings: ruling '${ruling.ruling}' does not match any reference id`);
+                    `iczn_rulings: ruling '${ruling.ruling}' does not resolve to a store entry`);
             }
 
-            if (ruling && ruling.petition && !ids.has(ruling.petition))
+            if (ruling && ruling.petition && !referenceStoreIds.has(ruling.petition))
             {
                 checkError(
                     "Reference integrity",
                     filePath,
-                    `iczn_rulings: petition '${ruling.petition}' does not match any reference id`);
+                    `iczn_rulings: petition '${ruling.petition}' does not resolve to a store entry`);
             }
         }
     }
@@ -545,27 +575,27 @@ for (const [filePath, doc] of genusParsed)
     {
         for (const species of doc.species)
         {
-            if (species && species.erected_in && !ids.has(species.erected_in))
+            if (species && species.erected_in && !referenceStoreIds.has(species.erected_in))
             {
                 checkError(
                     "Reference integrity",
                     filePath,
-                    `species '${species.name ?? "?"}': erected_in '${species.erected_in}' does not match any reference id`);
+                    `species '${species.name ?? "?"}': erected_in '${species.erected_in}' does not resolve to a store entry`);
             }
 
-            if (species && species.described_in && !ids.has(species.described_in))
+            if (species && species.described_in && !referenceStoreIds.has(species.described_in))
             {
                 checkError(
                     "Reference integrity",
                     filePath,
-                    `species '${species.name ?? "?"}': described_in '${species.described_in}' does not match any reference id`);
+                    `species '${species.name ?? "?"}': described_in '${species.described_in}' does not resolve to a store entry`);
             }
         }
     }
 }
 
-// 10a. Clade reference integrity — clade erected_in/described_in match a
-// reference id in the same clade file.
+// 10a. Clade reference integrity — clade citation pointers and
+// erected_in/described_in resolve to a store entry.
 startCheck("Clade reference integrity");
 
 for (const [filePath, doc] of cladeParsed)
@@ -575,33 +605,34 @@ for (const [filePath, doc] of cladeParsed)
         continue;
     }
 
-    const ids = new Set<string>();
-
     if (Array.isArray(doc.references))
     {
         for (const reference of doc.references)
         {
-            if (reference && reference.id)
+            if (reference && reference.id && !referenceStoreIds.has(reference.id))
             {
-                ids.add(reference.id);
+                checkError(
+                    "Clade reference integrity",
+                    filePath,
+                    `reference '${reference.id}' does not resolve to a store entry`);
             }
         }
     }
 
-    if (doc.erected_in && !ids.has(doc.erected_in))
+    if (doc.erected_in && !referenceStoreIds.has(doc.erected_in))
     {
         checkError(
             "Clade reference integrity",
             filePath,
-            `erected_in '${doc.erected_in}' does not match any reference id`);
+            `erected_in '${doc.erected_in}' does not resolve to a store entry`);
     }
 
-    if (doc.described_in && !ids.has(doc.described_in))
+    if (doc.described_in && !referenceStoreIds.has(doc.described_in))
     {
         checkError(
             "Clade reference integrity",
             filePath,
-            `described_in '${doc.described_in}' does not match any reference id`);
+            `described_in '${doc.described_in}' does not resolve to a store entry`);
     }
 }
 
@@ -691,57 +722,75 @@ for (const [filePath, doc] of genusParsed)
     }
 }
 
-// 11. Reference completeness
-startCheck("Reference completeness");
+// 11. Reference store integrity — each references/<letter>/<id>.yml file must
+// parse, carry an `id` equal to its filename (NFC + lowercase), and hold the
+// required bibliographic fields. This is the single source of truth for
+// bibliographic data, so completeness is enforced here rather than per citing
+// file.
+startCheck("Reference store integrity");
 
 const requiredRefFields: Array<keyof Reference> = ["id", "authors", "year", "title"];
 
-/**
- * Validates that all references in a genus or clade document have the required fields.
- *
- * @param filePath - Path to the file being validated (for error reporting).
- * @param doc - The parsed genus or clade document.
- */
-function validateReferences(filePath: string, doc: GenusData | CladeData): void
+for (const [filePath, entry] of referenceStoreParsed)
 {
-    if (!doc || !Array.isArray(doc.references))
+    if (!entry)
     {
-        return;
+        checkError("Reference store integrity", filePath, "store entry failed to parse");
+        continue;
     }
 
-    for (const reference of doc.references)
+    const baseName = path.basename(filePath, ".yml");
+
+    if (entry.id !== baseName)
     {
-        if (!reference)
-        {
-            continue;
-        }
-
-        for (const field of requiredRefFields)
-        {
-            if (!reference[field])
-            {
-                checkError(
-                    "Reference completeness",
-                    filePath,
-                    `reference '${reference.id ?? "?"}': missing required field '${field}'`);
-            }
-        }
-
-        // journal/book are optional: an article carries `journal`, a chapter
-        // carries `book` (its containing volume), and a standalone book,
-        // monograph, thesis, or press release carries neither — its venue is
-        // recorded via `publisher` (and `url`/`notes` where applicable).
+        checkError(
+            "Reference store integrity",
+            filePath,
+            `store 'id' '${entry.id ?? "?"}' does not match filename '${baseName}'`);
     }
-}
 
-for (const [filePath, doc] of genusParsed)
-{
-    validateReferences(filePath, doc);
-}
+    if (baseName.normalize("NFC") !== baseName)
+    {
+        checkError(
+            "Reference store integrity",
+            filePath,
+            `filename '${baseName}' is not NFC-normalized`);
+    }
 
-for (const [filePath, doc] of cladeParsed)
-{
-    validateReferences(filePath, doc);
+    if (baseName !== baseName.toLowerCase())
+    {
+        checkError(
+            "Reference store integrity",
+            filePath,
+            `filename '${baseName}' must be lowercase`);
+    }
+
+    const bucket = path.basename(path.dirname(filePath));
+    const expectedBucket = referenceBucket(baseName);
+
+    if (bucket !== expectedBucket)
+    {
+        checkError(
+            "Reference store integrity",
+            filePath,
+            `store file is in bucket '${bucket}' but key '${baseName}' belongs in '${expectedBucket}' (references/${expectedBucket}/)`);
+    }
+
+    for (const field of requiredRefFields)
+    {
+        if (!entry[field])
+        {
+            checkError(
+                "Reference store integrity",
+                filePath,
+                `reference '${entry.id ?? baseName}': missing required field '${field}'`);
+        }
+    }
+
+    // journal/book are optional: an article carries `journal`, a chapter
+    // carries `book` (its containing volume), and a standalone book,
+    // monograph, thesis, or press release carries neither — its venue is
+    // recorded via `publisher` (and `url`/`notes` where applicable).
 }
 
 // 11b. Redundant DOI-pointer URLs — a reference `url` that merely points at
@@ -799,22 +848,14 @@ function isDoiPointerUrl(urlValue?: string, doiValue?: string): boolean
     return false;
 }
 
-for (const [filePath, doc] of [...genusParsed.entries(), ...cladeParsed.entries()])
+for (const [filePath, entry] of referenceStoreParsed)
 {
-    if (!doc || !Array.isArray(doc.references))
+    if (entry && isDoiPointerUrl(entry.url, entry.doi))
     {
-        continue;
-    }
-
-    for (const reference of doc.references)
-    {
-        if (reference && isDoiPointerUrl(reference.url, reference.doi))
-        {
-            checkWarning(
-                "Redundant DOI-pointer URL",
-                filePath,
-                `reference '${reference.id ?? "?"}': url '${reference.url}' just points at its own doi; drop it (consumers can regenerate it from 'doi')`);
-        }
+        checkWarning(
+            "Redundant DOI-pointer URL",
+            filePath,
+            `reference '${entry.id ?? "?"}': url '${entry.url}' just points at its own doi; drop it (consumers can regenerate it from 'doi')`);
     }
 }
 
@@ -851,229 +892,31 @@ for (const [filePath, doc] of allParsed)
     }
 }
 
-// 12c. Reference key disambiguation — when any "{base}{a-z}" suffix
-// variant exists across the dataset, the bare "{base}" key must not
-// also exist. Mixing them silently breaks lookups and makes it
-// ambiguous which paper "{base}" refers to. Co-existing keys must all
-// be disambiguated (e.g., `huene1927a`, `huene1927b`, `huene1927c`
-// with no bare `huene1927`).
+// 12c. Reference key disambiguation — every store key carries a disambiguation
+// letter (universal `a`-suffixing), so keys are uniformly
+// `<surname><year><letter>` and adding another same-author-year paper never
+// renames an existing key or retags its citations. A bare key (ending in its
+// year) violates this convention.
 startCheck("Reference key disambiguation");
 
-/**
- * Index of every reference id seen across all genera and clade files,
- * keyed by id, with each entry recording every (file, id) occurrence
- * for diagnostic output.
- */
-const referenceIdOccurrences = new Map<string, Array<string>>();
+const referenceStoreFileById = new Map<string, string>();
 
-for (const [filePath, doc] of allParsed)
+for (const [filePath, entry] of referenceStoreParsed)
 {
-    if (!doc || !Array.isArray(doc.references))
+    if (entry && entry.id)
     {
-        continue;
-    }
-
-    for (const reference of doc.references)
-    {
-        if (!reference || !reference.id)
-        {
-            continue;
-        }
-
-        const occurrences = referenceIdOccurrences.get(reference.id) ?? [];
-
-        occurrences.push(filePath);
-        referenceIdOccurrences.set(reference.id, occurrences);
+        referenceStoreFileById.set(entry.id, filePath);
     }
 }
 
-const allReferenceIds = new Set(referenceIdOccurrences.keys());
-
-/**
- * Maps each bare reference id to the set of suffixed variants that
- * coexist with it. Built up so we can emit one error per bare key
- * rather than one per (bare, variant) pair.
- */
-const conflictsByBaseKey = new Map<string, Set<string>>();
-
-for (const referenceId of allReferenceIds)
+for (const referenceId of referenceStoreIds)
 {
-    const suffixMatch = /^(.*\d)([a-z])$/.exec(referenceId);
-
-    if (!suffixMatch)
-    {
-        continue;
-    }
-
-    const baseKey = suffixMatch[1];
-
-    if (!allReferenceIds.has(baseKey))
-    {
-        continue;
-    }
-
-    const variants = conflictsByBaseKey.get(baseKey) ?? new Set<string>();
-
-    variants.add(referenceId);
-    conflictsByBaseKey.set(baseKey, variants);
-}
-
-for (const [baseKey, variants] of conflictsByBaseKey)
-{
-    const variantList = Array.from(variants).sort().join(", ");
-    const bareOccurrences = referenceIdOccurrences.get(baseKey) ?? [];
-
-    for (const filePath of bareOccurrences)
+    if (/\d$/.test(referenceId))
     {
         checkError(
             "Reference key disambiguation",
-            filePath,
-            `bare reference id '${baseKey}' coexists with suffixed variant(s) ${variantList}; rename '${baseKey}' to '${baseKey}a' (or another postfix) to disambiguate`,
-        );
-    }
-}
-
-// 12d. Reference identity consistency — a single reference id must name one
-// paper everywhere it appears. The bib build is first-writer-wins, so two
-// files defining the same id as different papers silently drop one citation
-// with no error or warning. Each occurrence is reduced to an identity
-// signature (first-author surname + year + a normalized title stem) plus, when
-// present, a normalized DOI; if an id's occurrences disagree on either, the id
-// conflates distinct papers (split into suffixed keys) or drifts on the same
-// paper's fields (reconcile to one canonical citation). Diacritics,
-// punctuation, and case are normalized away so purely cosmetic drift stays
-// silent, and the title is compared as a bounded stem so a truncated title
-// still matches its fuller twin while genuinely different titles — which
-// diverge early — do not.
-startCheck("Reference identity consistency");
-
-/**
- * Number of leading normalized title characters compared when deriving a
- * reference's identity signature. Long enough that distinct papers diverge
- * within it, short enough that a truncated title still matches its fuller
- * form.
- */
-const identityTitleStemLength = 40;
-
-/**
- * Reduces free text to a comparison form: decomposes accents and drops the
- * combining marks, lowercases, and collapses every run of non-alphanumeric
- * characters to a single space, so `Wüsten Ägyptens` and `Wusten Agyptens`,
- * or `c.w.` and `c. w.`, compare equal.
- *
- * @param text - The raw text, when present.
- * @returns The normalized text, or an empty string when absent.
- */
-function normalizeForIdentity(text: string | undefined): string
-{
-    if (!text)
-    {
-        return "";
-    }
-
-    return text
-        .normalize("NFD")
-        .replace(/[̀-ͯ]/g, "")
-        .toLowerCase()
-        .replace(/[^a-z0-9]+/g, " ")
-        .trim();
-}
-
-/**
- * Extracts the normalized first-author surname from a reference `authors`
- * string, following the same convention as citation-key derivation: the first
- * semicolon-separated entry, up to its first comma, first whitespace token.
- *
- * @param authors - The authors string, when present.
- * @returns The normalized surname, or an empty string when absent.
- */
-function firstAuthorSurnameForIdentity(authors: string | undefined): string
-{
-    const firstAuthor = (authors ?? "").split(";")[0];
-    const surnamePart = firstAuthor.split(",")[0].trim();
-
-    return normalizeForIdentity(surnamePart.split(/\s+/)[0]);
-}
-
-/**
- * Normalizes a DOI for identity comparison: trims, lowercases, and strips any
- * resolver prefix so `https://doi.org/10.X`, `doi:10.X`, and `10.x` compare
- * equal.
- *
- * @param doi - The raw DOI, when present.
- * @returns The normalized DOI, or an empty string when absent.
- */
-function normalizeDoiForIdentity(doi: string | undefined): string
-{
-    if (!doi)
-    {
-        return "";
-    }
-
-    return doi
-        .trim()
-        .toLowerCase()
-        .replace(/^https?:\/\/(dx\.)?doi\.org\//, "")
-        .replace(/^doi:/, "");
-}
-
-/**
- * Per reference id, the distinct identity signatures and DOIs seen across all
- * files, plus every file the id appears in, so a conflict can be reported
- * against each involved file.
- */
-const referenceIdentitiesById = new Map<
-    string,
-    { signatures: Set<string>; dois: Set<string>; files: Set<string> }
->();
-
-for (const [filePath, doc] of allParsed)
-{
-    if (!doc || !Array.isArray(doc.references))
-    {
-        continue;
-    }
-
-    for (const reference of doc.references)
-    {
-        if (!reference || !reference.id)
-        {
-            continue;
-        }
-
-        const identity = referenceIdentitiesById.get(reference.id)
-            ?? { signatures: new Set<string>(), dois: new Set<string>(), files: new Set<string>() };
-
-        const titleStem = normalizeForIdentity(reference.title).slice(0, identityTitleStemLength);
-        const signature = `${firstAuthorSurnameForIdentity(reference.authors)}|${reference.year ?? ""}|${titleStem}`;
-
-        identity.signatures.add(signature);
-
-        const normalizedDoi = normalizeDoiForIdentity(reference.doi);
-
-        if (normalizedDoi)
-        {
-            identity.dois.add(normalizedDoi);
-        }
-
-        identity.files.add(filePath);
-        referenceIdentitiesById.set(reference.id, identity);
-    }
-}
-
-for (const [referenceId, identity] of referenceIdentitiesById)
-{
-    if (identity.signatures.size < 2 && identity.dois.size < 2)
-    {
-        continue;
-    }
-
-    for (const filePath of identity.files)
-    {
-        checkError(
-            "Reference identity consistency",
-            filePath,
-            `reference id '${referenceId}' names different papers across files; disambiguate with suffixed keys (e.g. '${referenceId}a', '${referenceId}b') or reconcile the entries to one canonical citation`,
+            referenceStoreFileById.get(referenceId) ?? "(store)",
+            `bare reference key '${referenceId}' must carry a disambiguation letter (rename to '${referenceId}a')`,
         );
     }
 }
@@ -1082,44 +925,36 @@ for (const [referenceId, identity] of referenceIdentitiesById)
 // journals on flagged-sources.yml emit a warning for reviewer sign-off.
 startCheck("Flagged publication sources");
 
-for (const [filePath, doc] of allParsed)
+for (const [filePath, reference] of referenceStoreParsed)
 {
-    if (!doc || !Array.isArray(doc.references))
+    if (!reference)
     {
         continue;
     }
 
-    for (const reference of doc.references)
+    const publisher = reference.publisher?.trim().toLowerCase();
+    const journal = reference.journal?.trim().toLowerCase();
+    const referenceLabel = reference.id ?? reference.title ?? "?";
+
+    if (reference.id && verifiedReferenceIds.has(reference.id))
     {
-        if (!reference)
-        {
-            continue;
-        }
+        continue;
+    }
 
-        const publisher = reference.publisher?.trim().toLowerCase();
-        const journal = reference.journal?.trim().toLowerCase();
-        const referenceLabel = reference.id ?? reference.title ?? "?";
+    if (publisher && flaggedPublishers.has(publisher))
+    {
+        checkWarning(
+            "Flagged publication sources",
+            filePath,
+            `reference '${referenceLabel}': publisher '${reference.publisher}' is flagged for reviewer verification`);
+    }
 
-        if (reference.id && verifiedReferenceIds.has(reference.id))
-        {
-            continue;
-        }
-
-        if (publisher && flaggedPublishers.has(publisher))
-        {
-            checkWarning(
-                "Flagged publication sources",
-                filePath,
-                `reference '${referenceLabel}': publisher '${reference.publisher}' is flagged for reviewer verification`);
-        }
-
-        if (journal && flaggedJournals.has(journal))
-        {
-            checkWarning(
-                "Flagged publication sources",
-                filePath,
-                `reference '${referenceLabel}': journal '${reference.journal}' is flagged for reviewer verification`);
-        }
+    if (journal && flaggedJournals.has(journal))
+    {
+        checkWarning(
+            "Flagged publication sources",
+            filePath,
+            `reference '${referenceLabel}': journal '${reference.journal}' is flagged for reviewer verification`);
     }
 }
 
@@ -1144,7 +979,7 @@ for (const [filePath, doc] of allParsed)
 
         if (reference.notes.length > referenceNotesLimit)
         {
-            const referenceLabel = reference.id ?? reference.title ?? "?";
+            const referenceLabel = reference.id ?? "?";
 
             checkWarning(
                 "Reference notes length",

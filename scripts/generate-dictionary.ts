@@ -1,7 +1,7 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
 import * as url from "node:url";
-import type { CladeData, GenusData, InstitutionEntry, Schema, TreeNode } from "./types.ts";
+import type { CladeData, GenusData, InstitutionEntry, Reference, Schema, TreeNode } from "./types.ts";
 import { collectAllKeys, findYamlFiles, parseYaml } from "./utilities.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
@@ -155,17 +155,6 @@ for (const file of findYamlFiles(path.join(root, "genera")))
     {
         extractAuthorSurnames(data.authors);
     }
-
-    if (data.references)
-    {
-        for (const reference of data.references)
-        {
-            if (reference.authors)
-            {
-                extractAuthorSurnames(reference.authors);
-            }
-        }
-    }
 }
 
 for (const file of findYamlFiles(path.join(root, "clades")))
@@ -184,16 +173,17 @@ for (const file of findYamlFiles(path.join(root, "clades")))
             extractAuthorSurnames(author);
         }
     }
+}
 
-    if (data.references)
+// Author surnames come from the canonical reference store, where the
+// bibliographic fields live (genus/clade files carry only citation pointers).
+for (const file of findYamlFiles(path.join(root, "references")))
+{
+    const reference = parseYaml<Reference>(file);
+
+    if (reference && reference.authors)
     {
-        for (const reference of data.references)
-        {
-            if (reference.authors)
-            {
-                extractAuthorSurnames(reference.authors);
-            }
-        }
+        extractAuthorSurnames(reference.authors);
     }
 }
 

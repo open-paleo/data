@@ -6,7 +6,7 @@ import { stringify as stringifyYaml } from "yaml";
 
 import { collectAllKeys, findYamlFiles, parseYaml, loadInstitutionRegistry } from "./utilities.ts";
 
-import type { GenusData, CladeData, TreeNode, Reference, InstitutionEntry } from "./types.ts";
+import type { GenusData, CladeData, TreeNode, Reference, ReferencePointer, InstitutionEntry } from "./types.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
@@ -16,13 +16,20 @@ const root = path.join(scriptDir, "..");
 const dist = path.join(root, "dist");
 
 /**
- * A genus record enriched with its computed taxonomy path.
+ * A genus record enriched with its computed taxonomy path. Its `references`
+ * hold fully-inflated blocks (store fields merged with each pointer's notes),
+ * unlike the source `GenusData` which carries bare pointers.
  */
-type ProcessedGenus = GenusData & {
+type ProcessedGenus = Omit<GenusData, "references"> & {
     /**
      * Ordered list of ancestor clades from root to the genus's parent.
      */
     taxonomy: Array<string>;
+
+    /**
+     * Fully-inflated references for output.
+     */
+    references?: Array<Reference>;
 };
 
 /**
@@ -213,6 +220,63 @@ function collectLeaves(tree: TreeNode): Array<string>
 
 const tree = parseYaml<TreeNode>(path.join(root, "tree.yml"));
 
+/**
+ * Loads the canonical reference store (`references/<letter>/<key>.yml`) into a
+ * map keyed by reference id. Each file holds one reference's bibliographic
+ * fields; per-occurrence notes live on the in-file pointers, not here.
+ *
+ * @param storeDir - The references/ directory.
+ * @returns A map from reference id to its bibliographic record.
+ */
+function loadReferenceStore(storeDir: string): Map<string, Reference>
+{
+    const store = new Map<string, Reference>();
+
+    if (!fs.existsSync(storeDir))
+    {
+        return store;
+    }
+
+    for (const file of findYamlFiles(storeDir))
+    {
+        const entry = parseYaml<Reference>(file);
+
+        if (entry && entry.id)
+        {
+            store.set(entry.id, entry);
+        }
+    }
+
+    return store;
+}
+
+const referenceStore = loadReferenceStore(path.join(root, "references"));
+
+/**
+ * Re-inflates in-file reference pointers (`{id, notes?}`) into full
+ * bibliographic blocks by merging each pointer with its store entry, so the
+ * built dataset carries self-contained references. An unknown id falls back to
+ * the bare pointer.
+ *
+ * @param pointers - The in-file reference pointers.
+ * @returns Full reference blocks for output.
+ */
+function inflateReferences(pointers?: Array<ReferencePointer>): Array<Reference>
+{
+    return (pointers ?? []).map((pointer) =>
+    {
+        const entry = pointer.id ? referenceStore.get(pointer.id) : undefined;
+        const inflated: Reference = { ...(entry ?? { id: pointer.id }) };
+
+        if (pointer.notes !== undefined)
+        {
+            inflated.notes = pointer.notes;
+        }
+
+        return inflated;
+    });
+}
+
 const genera: Record<string, ProcessedGenus> = { };
 
 for (const file of findYamlFiles(path.join(root, "genera")))
@@ -223,6 +287,7 @@ for (const file of findYamlFiles(path.join(root, "genera")))
     {
         genera[data.genus] = {
             ...data,
+            references: inflateReferences(data.references),
             taxonomy: findPath(tree, data.parent ?? "") ?? [ ],
         };
     }
@@ -288,14 +353,9 @@ function deriveAuthorities(generaMap: Record<string, ProcessedGenus>): void
 {
     for (const genus of Object.values(generaMap))
     {
-        const references = new Map(
-            (genus.references ?? [])
-                .filter((reference) => reference && reference.id)
-                .map((reference) => [reference.id as string, reference]));
-
         for (const species of genus.species ?? [])
         {
-            const reference = species.erected_in ? references.get(species.erected_in) : undefined;
+            const reference = species.erected_in ? referenceStore.get(species.erected_in) : undefined;
 
             if (reference)
             {
@@ -307,7 +367,7 @@ function deriveAuthorities(generaMap: Record<string, ProcessedGenus>): void
         const typeSpecies = (genus.species ?? []).find((species) => species.type_species)
             ?? genus.species?.[0];
         const genusAuthorityKey = genus.erected_in ?? typeSpecies?.erected_in;
-        const genusReference = genusAuthorityKey ? references.get(genusAuthorityKey) : undefined;
+        const genusReference = genusAuthorityKey ? referenceStore.get(genusAuthorityKey) : undefined;
 
         if (genusReference)
         {
@@ -327,14 +387,14 @@ for (const file of findYamlFiles(path.join(root, "clades")))
 
     if (data && data.clade)
     {
-        // Derive authors/year from the erected_in reference (in this clade's
-        // own references block); fall back to the legacy described/authors.
+        // Derive authors/year from the erected_in reference (resolved against
+        // the store); fall back to the legacy described/authors.
         let described = data.described;
         let authors = data.authors;
 
         if (data.erected_in)
         {
-            const authorityReference = (data.references ?? []).find((reference) => reference.id === data.erected_in);
+            const authorityReference = referenceStore.get(data.erected_in);
 
             if (authorityReference)
             {
@@ -350,7 +410,7 @@ for (const file of findYamlFiles(path.join(root, "clades")))
             described,
             authors,
             diagnostic_features: data.diagnostic_features,
-            references: data.references,
+            references: inflateReferences(data.references),
         };
     }
 }
@@ -412,38 +472,13 @@ END;
 
 fs.writeFileSync(path.join(dist, "tree.nexus"), nexus);
 
-/**
- * Collects references
- */
-function collectReferences(records: Record<string, ProcessedClade | ProcessedGenus>): void
-{
-    for (const record of Object.values(records))
-    {
-        if (record.references)
-        {
-            for (const reference of record.references)
-            {
-                if (reference.id && !referenceMap.has(reference.id))
-                {
-                    referenceMap.set(reference.id, reference);
-                }
-            }
-        }
-    }
-}
-
-const referenceMap = new Map<string, Reference>();
-
-collectReferences(genera);
-collectReferences(clades);
-
 let bib = `% Open Paleo — CC BY 4.0
 % github.com/open-paleo/data
 % Attribution: Open Paleo contributors
 
 `;
 
-for (const reference of referenceMap.values())
+for (const reference of [...referenceStore.values()].sort((first, second) => (first.id ?? "").localeCompare(second.id ?? "")))
 {
     const entryType = reference.book ? "incollection" : "article";
     const fields = new Array<string>();

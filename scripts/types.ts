@@ -165,7 +165,7 @@ export type NotableSpecimen = {
     };
 
     /**
-     * Reference IDs (in this file's `references`) of the paper(s) describing or
+     * Reference IDs (resolved against the reference store) of the paper(s) describing or
      * referring the specimen. Pointers only. A specimen may be documented by
      * more than one paper (e.g. one describing the skeleton, another a notable
      * feature).
@@ -373,7 +373,7 @@ export type Species = {
     diagnostic_features?: Array<string>;
 
     /**
-     * Reference ID (in this file's references) of the nomenclatural act that
+     * Reference ID (resolved against the reference store) of the nomenclatural act that
      * established the current genus+species combination — the taxonomic
      * authority for the species. The species author and year are derived from
      * this reference.
@@ -381,7 +381,7 @@ export type Species = {
     erected_in?: string;
 
     /**
-     * Reference ID (in this file's references) of the authoritative paper the
+     * Reference ID (resolved against the reference store) of the authoritative paper the
      * holotype material and diagnosis are drawn from — the original
      * description or a later redescription. Falls back to `erected_in` when
      * omitted.
@@ -421,13 +421,13 @@ export type IcznRuling = {
     type?: string;
 
     /**
-     * Reference ID (in this file's references) of the published Opinion that
+     * Reference ID (resolved against the reference store) of the published Opinion that
      * issued the ruling.
      */
     ruling?: string;
 
     /**
-     * Reference ID (in this file's references) of the Case / application that
+     * Reference ID (resolved against the reference store) of the Case / application that
      * petitioned for the ruling, when cited.
      */
     petition?: string;
@@ -454,11 +454,15 @@ export type Identifier = {
 };
 
 /**
- * A published scientific reference backing taxonomic data.
+ * A published scientific reference backing taxonomic data. This is the
+ * canonical store record — one per `references/<letter>/<key>.yml` file. The
+ * bibliographic fields live here and nowhere else; per-occurrence commentary
+ * lives on the in-file `ReferencePointer.notes`, not here.
  */
 export type Reference = {
     /**
-     * Short citation key used to link from described_in fields (e.g. "osborn1905").
+     * Short citation key used to link from described_in fields (e.g. "osborn1905a").
+     * Equals the store filename basename.
      */
     id?: string;
 
@@ -488,6 +492,12 @@ export type Reference = {
     book?: string;
 
     /**
+     * Series or monograph-series title, when the venue is part of a numbered
+     * series (e.g. "Geophysical Monograph 41").
+     */
+    series?: string;
+
+    /**
      * Publisher name, if applicable.
      */
     publisher?: string;
@@ -508,6 +518,12 @@ export type Reference = {
     pages?: string;
 
     /**
+     * Article number / e-locator used by journals that number articles instead
+     * of paginating them (e.g. "e0143369", "101142").
+     */
+    article_number?: string;
+
+    /**
      * Digital Object Identifier.
      */
     doi?: string;
@@ -523,7 +539,28 @@ export type Reference = {
     url?: string;
 
     /**
-     * Additional notes about the reference.
+     * Additional notes about the reference. Present only on the built/inflated
+     * output, where it is merged in from the citing file's `ReferencePointer`;
+     * it is never stored in the `references/` store file itself.
+     */
+    notes?: string;
+};
+
+/**
+ * An in-file citation: a pointer to a store reference by `id`, plus optional
+ * context-specific commentary. This is what a genus/clade `references:` list
+ * holds after normalization — the bibliographic fields are resolved from the
+ * `references/<letter>/<id>.yml` store at build time.
+ */
+export type ReferencePointer = {
+    /**
+     * Citation key resolving to a `references/` store entry.
+     */
+    id?: string;
+
+    /**
+     * Context-specific commentary on why this paper is cited here. Local to
+     * this citation; distinct from the shared bibliographic record.
      */
     notes?: string;
 };
@@ -631,13 +668,14 @@ export type GenusData = {
     notable_specimens?: Array<NotableSpecimen>;
 
     /**
-     * Published references cited in this genus file.
+     * Citations for this genus — pointers into the reference store, each with
+     * optional local notes.
      */
-    references?: Array<Reference>;
+    references?: Array<ReferencePointer>;
 
     /**
-     * Reference ID (in this file's references) of the paper that erected this
-     * genus — the genus authority. Set ONLY when it differs from the type
+     * Reference ID (resolved against the reference store) of the paper that
+     * erected this genus — the genus authority. Set ONLY when it differs from the type
      * species's `erected_in` (e.g. when an ICZN ruling later replaced the
      * original type species). When omitted, the genus authority is the type
      * species's `erected_in`.
@@ -749,9 +787,10 @@ export type CladeData = {
     diagnostic_features?: Array<string>;
 
     /**
-     * Published references cited in this clade file.
+     * Citations for this clade — pointers into the reference store, each with
+     * optional local notes.
      */
-    references?: Array<Reference>;
+    references?: Array<ReferencePointer>;
 
     /**
      * Active disagreement over this clade's placement (or content), with dated
