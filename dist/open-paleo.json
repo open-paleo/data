@@ -1,8 +1,8 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-07-02T05:50:14.946Z",
-    "clade_count": 197,
+    "built_at": "2026-07-02T06:58:01.369Z",
+    "clade_count": 195,
     "genus_count": 1398,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
@@ -72,11 +72,8 @@
                                     },
                                     "Carcharodontosauria": {
                                       "Carcharodontosauridae": {
-                                        "Carcharodontosaurinae": {
-                                          "Giganotosaurini": {}
-                                        }
-                                      },
-                                      "Neovenatoridae": {}
+                                        "Carcharodontosaurinae": {}
+                                      }
                                     },
                                     "Allosauria": {
                                       "Allosauridae": {}
@@ -1632,6 +1629,7 @@
       ]
     },
     "Carcharodontosauria": {
+      "description": "Carcharodontosauria is a clade of allosauroid theropods comprising Carcharodontosauridae and their closest relatives, encompassing many of the largest terrestrial predators of the Cretaceous across Gondwana and Laurasia. It was named by Benson, Carrano, and Brusatte in 2010 for this radiation of derived allosauroids. Its basal members are medium-sized forms that grade into the giant carcharodontosaurids.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -1650,10 +1648,31 @@
         "Avetheropoda",
         "Allosauroidea",
         "Carcharodontosauria"
+      ],
+      "described": 2010,
+      "authors": "Benson, R. B. J.; Carrano, M. T.; Brusatte, S. L.",
+      "diagnostic_features": [
+        "Large body size with proportionally large, ornamented skulls",
+        "Laterally compressed, serrated teeth",
+        "Extensive cranial pneumaticity",
+        "Rugose ornamentation on the lacrimal and postorbital bones"
+      ],
+      "references": [
+        {
+          "id": "benson2010d",
+          "authors": "Benson, R. B. J.; Carrano, M. T.; Brusatte, S. L.",
+          "year": 2010,
+          "title": "A new clade of archaic large-bodied predatory dinosaurs (Theropoda: Allosauroidea) that survived to the latest Mesozoic",
+          "journal": "Naturwissenschaften",
+          "volume": "97",
+          "issue": "1",
+          "pages": "71-78",
+          "doi": "10.1007/s00114-009-0614-x"
+        }
       ]
     },
     "Carcharodontosauridae": {
-      "description": "Carcharodontosauridae, meaning \"shark-toothed lizard family,\" is a family of giant carnosaur theropod dinosaurs known from the Cretaceous of Africa, South America, Europe, Asia, and North America. The family includes some of the largest terrestrial predators ever to have lived, such as Carcharodontosaurus, Giganotosaurus, and Mapusaurus. They are named for their distinctive large, laterally compressed teeth with prominent serrations resembling those of Carcharodon (great white shark).\n",
+      "description": "Carcharodontosauridae, meaning \"shark-toothed lizards,\" is a family of giant carnosaurian theropods known from the Cretaceous of Africa, South America, Europe, Asia, and North America, named by Stromer in 1931 for Carcharodontosaurus. The family includes some of the largest terrestrial predators ever known, such as Carcharodontosaurus, Giganotosaurus, and Mapusaurus, and is characterized by large, laterally compressed, serrated teeth and heavily ornamented skulls.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -1674,14 +1693,15 @@
         "Carcharodontosauria",
         "Carcharodontosauridae"
       ],
+      "type_genus": "Carcharodontosaurus",
       "described": 1931,
-      "authors": "Stromer",
+      "authors": "Stromer, E.",
       "diagnostic_features": [
         "Large, laterally compressed teeth with pronounced, shark-like serrations",
         "Very large body size, often exceeding 10 meters in length",
-        "Prominent ornamentation on lacrimal and postorbital bones",
+        "Prominent ornamentation on the lacrimal and postorbital bones",
         "Pneumatized cranial bones with extensive sinus systems",
-        "Elongate and narrow maxilla"
+        "Elongate, narrow maxilla"
       ],
       "references": [
         {
@@ -1696,6 +1716,7 @@
       ]
     },
     "Carcharodontosaurinae": {
+      "description": "Carcharodontosaurinae is the subfamily of derived carcharodontosaurids containing Carcharodontosaurus and its closest relatives, including the giant South American forms Giganotosaurus, Mapusaurus, Meraxes, and Tyrannotitan. It comprises the largest members of the family; some authors use the informal tribe \"Giganotosaurini\" for the South American radiation within it. The subfamily was established within the phylogeny of Allosauroidea by Brusatte and Sereno in 2008.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -1716,6 +1737,27 @@
         "Carcharodontosauria",
         "Carcharodontosauridae",
         "Carcharodontosaurinae"
+      ],
+      "type_genus": "Carcharodontosaurus",
+      "described": 2008,
+      "authors": "Brusatte, S. L.; Sereno, P. C.",
+      "diagnostic_features": [
+        "Very large body size, among the largest of all theropods",
+        "Deep, robust skull with extensive rugose cranial ornamentation",
+        "Fused interdental plates",
+        "Reduced, gracile forelimbs relative to body size"
+      ],
+      "references": [
+        {
+          "id": "brusatte2008b",
+          "authors": "Brusatte, S. L.; Sereno, P. C.",
+          "year": 2008,
+          "title": "Phylogeny of Allosauroidea (Dinosauria: Theropoda): comparative analysis and resolution",
+          "journal": "Journal of Systematic Palaeontology",
+          "volume": "6",
+          "issue": "2",
+          "pages": "155-182"
+        }
       ]
     },
     "Caudipterygidae": {
@@ -3986,30 +4028,6 @@
         }
       ]
     },
-    "Giganotosaurini": {
-      "taxonomy": [
-        "Life",
-        "Animalia",
-        "Chordata",
-        "Vertebrata",
-        "Sarcopterygii",
-        "Tetrapoda",
-        "Reptilia",
-        "Archosauria",
-        "Dinosauria",
-        "Saurischia",
-        "Theropoda",
-        "Neotheropoda",
-        "Averostra",
-        "Tetanurae",
-        "Avetheropoda",
-        "Allosauroidea",
-        "Carcharodontosauria",
-        "Carcharodontosauridae",
-        "Carcharodontosaurinae",
-        "Giganotosaurini"
-      ]
-    },
     "Gravisauria": {
       "description": "Gravisauria is a clade of sauropod dinosaurs erected by Allain and Aquesbi (2008), defined as the least inclusive clade containing Tazoudasaurus naimi and Saltasaurus loricatus. It encompasses the vulcanodontid grade (including Vulcanodon and Tazoudasaurus) together with Eusauropoda, and corresponds to the node that several recent classifications (following Yates, 2007) treat as the principal radiation of fully graviportal sauropods. Gravisaurians are united by the acquisition of columnar, weight-bearing limbs and the broadening of the dorsal neural spines.\n",
       "taxonomy": [
@@ -6140,28 +6158,6 @@
         "Saurischia",
         "Theropoda",
         "Neotheropoda"
-      ]
-    },
-    "Neovenatoridae": {
-      "taxonomy": [
-        "Life",
-        "Animalia",
-        "Chordata",
-        "Vertebrata",
-        "Sarcopterygii",
-        "Tetrapoda",
-        "Reptilia",
-        "Archosauria",
-        "Dinosauria",
-        "Saurischia",
-        "Theropoda",
-        "Neotheropoda",
-        "Averostra",
-        "Tetanurae",
-        "Avetheropoda",
-        "Allosauroidea",
-        "Carcharodontosauria",
-        "Neovenatoridae"
       ]
     },
     "Noasauridae": {
@@ -45697,7 +45693,16 @@
     },
     "Carcharodontosaurus": {
       "genus": "Carcharodontosaurus",
-      "parent": "Carcharodontosauridae",
+      "parent": "Carcharodontosaurinae",
+      "dispute": {
+        "summary": "Carcharodontosaurus saharicus is a stable carcharodontosaurine, but referral of the second species, C. iguidensis, to the genus is contested: several analyses recover C. iguidensis outside Carcharodontosaurus sensu stricto and suggest it warrants its own genus (Chiarenza and Cau, 2016; Kellermann et al., 2025; Cau and Paterna, 2025).\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Carcharodontosaurinae following the drop of the Giganotosaurini tribe; the validity of the referred species C. iguidensis is flagged for review."
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "kahr-KAR-o-DON-to-SAWR-us",
         "ipa": "/ˌkɑːrkəroʊˌdɒntoʊˈsɔːrəs/"
@@ -45855,7 +45860,8 @@
         "Avetheropoda",
         "Allosauroidea",
         "Carcharodontosauria",
-        "Carcharodontosauridae"
+        "Carcharodontosauridae",
+        "Carcharodontosaurinae"
       ],
       "authors": "Stromer, E.",
       "described": 1931
@@ -50381,7 +50387,16 @@
     },
     "Chilantaisaurus": {
       "genus": "Chilantaisaurus",
-      "parent": "Neovenatoridae",
+      "parent": "Avetheropoda",
+      "dispute": {
+        "summary": "Chilantaisaurus tashuikouensis is a large, fragmentary theropod whose position is highly unstable, recovered as a basal carcharodontosaurian or neovenatorid close to Neovenator (Benson et al., 2010; Carrano et al., 2012; Jones et al., 2026), as a basal coelurosaur, or as a tyrannosauroid (Kellermann et al., 2025). Because these hypotheses span Allosauroidea and Coelurosauria, it is placed conservatively at Avetheropoda incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Moved from the deprecated Neovenatoridae to Avetheropoda incertae sedis (deferred); its allosauroid-versus-coelurosaur position awaits the Avetheropoda-backbone reconciliation."
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "jee-LAHN-tie-SAWR-us"
       },
@@ -50510,10 +50525,7 @@
         "Neotheropoda",
         "Averostra",
         "Tetanurae",
-        "Avetheropoda",
-        "Allosauroidea",
-        "Carcharodontosauria",
-        "Neovenatoridae"
+        "Avetheropoda"
       ],
       "authors": "Hu, S.-Y.",
       "described": 1964
@@ -55151,6 +55163,15 @@
     "Concavenator": {
       "genus": "Concavenator",
       "parent": "Carcharodontosauridae",
+      "dispute": {
+        "summary": "Concavenator corcovatus is generally recovered as a basal carcharodontosaurid (Ortega et al., 2010; Carrano et al., 2012), but some analyses place it more basally, at the base of Carcharodontosauria and paired with Siamraptor, possibly within Metriacanthosauridae (Kellermann et al., 2025). It is placed conservatively at Carcharodontosauridae incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Retained at Carcharodontosauridae incertae sedis; the basal-Carcharodontosauria and metriacanthosaurid alternatives are unresolved."
+          }
+        ]
+      },
       "etymology": "From Latin Conca, an old name for Cuenca (the Spanish city near the discovery site), + Latin venator ('hunter'), meaning 'Cuenca hunter'.",
       "description": "Concavenator is a genus of carcharodontosaurian dinosaur that lived in Spain during the Early Cretaceous epoch, about 125 million years ago. The genus contains a single species, Concavenator corcovatus, named and described in 2010 from a nearly complete skeleton collected from the Las Hoyas fossil site of the La Huérguina Formation.",
       "diet": "carnivore",
@@ -59533,7 +59554,16 @@
     },
     "Datanglong": {
       "genus": "Datanglong",
-      "parent": "Carcharodontosauria",
+      "parent": "Avetheropoda",
+      "dispute": {
+        "summary": "Datanglong guangxiensis is a fragmentary theropod of uncertain position, recovered as a basal carcharodontosaurian (Mo et al., 2014; Jones et al., 2026) but also as a coelurosaur (Cau, 2014) or a basal megaraptoran (Samathi et al., 2024; favored by Kellermann et al., 2025). Because these hypotheses span Allosauroidea and Coelurosauria, it is placed conservatively at Avetheropoda incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Moved from Carcharodontosauria to Avetheropoda incertae sedis (deferred); the carcharodontosaurian and megaraptoran hypotheses await the Avetheropoda-backbone reconciliation."
+          }
+        ]
+      },
       "etymology": "From Datang (the basin in Guangxi, China where it was found) + Chinese long (龍), 'dragon'; means 'Datang dragon'",
       "pronunciation": {
         "phonetic": "dah-tang-long"
@@ -59641,9 +59671,7 @@
         "Neotheropoda",
         "Averostra",
         "Tetanurae",
-        "Avetheropoda",
-        "Allosauroidea",
-        "Carcharodontosauria"
+        "Avetheropoda"
       ],
       "authors": "Mo, J.; Zhou, F.; Li, G.; Huang, Z.; Cao, C.",
       "described": 2014
@@ -70277,6 +70305,15 @@
     "Eocarcharia": {
       "genus": "Eocarcharia",
       "parent": "Carcharodontosauridae",
+      "dispute": {
+        "summary": "Eocarcharia dinops is regarded as a basal carcharodontosaurid on the basis of its referred maxilla (Sereno and Brusatte, 2008), but Cau and Paterna (2025) argue the hypodigm is chimeric, reinterpreting the holotype postorbital as a spinosaurid (Baryonychinae) and severing it from the carcharodontosaurid maxilla. It is placed conservatively at Carcharodontosauridae incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Retained at Carcharodontosauridae incertae sedis following the referred maxilla; the chimeric-hypodigm and spinosaurid-holotype hypothesis (Cau and Paterna, 2025) is flagged for review."
+          }
+        ]
+      },
       "etymology": "From Greek eos, 'dawn/early', + Greek karcharias, 'shark' (as in a sharp-toothed creature); means 'dawn shark', referring to its early geological age and shark-like serrated teeth",
       "pronunciation": {
         "phonetic": "EE-o-car-CAR-ee-uh"
@@ -76924,7 +76961,16 @@
     },
     "Fukuiraptor": {
       "genus": "Fukuiraptor",
-      "parent": "Neovenatoridae",
+      "parent": "Megaraptora",
+      "dispute": {
+        "summary": "Fukuiraptor kitadaniensis is a megaraptoran theropod, originally placed within the allosauroid family Neovenatoridae (Benson et al., 2010; Carrano et al., 2012) but recovered by most recent analyses within Megaraptora, near Tyrannosauroidea rather than among carcharodontosaurians. It is placed at Megaraptora incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Moved from the deprecated Neovenatoridae to Megaraptora incertae sedis (a megaraptoran, not a carcharodontosaurian); the higher position of Megaraptora is handled within Coelurosauria."
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "foo-KOO-ee-RAP-tor"
       },
@@ -77072,9 +77118,8 @@
         "Averostra",
         "Tetanurae",
         "Avetheropoda",
-        "Allosauroidea",
-        "Carcharodontosauria",
-        "Neovenatoridae"
+        "Coelurosauria",
+        "Megaraptora"
       ],
       "authors": "Azuma, Y.; Currie, P. J.",
       "described": 2000
@@ -81108,7 +81153,7 @@
     },
     "Giganotosaurus": {
       "genus": "Giganotosaurus",
-      "parent": "Carcharodontosauridae",
+      "parent": "Carcharodontosaurinae",
       "pronunciation": {
         "ipa": "/ˌɡɪɡəˌnoʊtəˈsɔːrəs/",
         "phonetic": "GIG-uh-NOH-tuh-SOR-uhs"
@@ -81294,7 +81339,8 @@
         "Avetheropoda",
         "Allosauroidea",
         "Carcharodontosauria",
-        "Carcharodontosauridae"
+        "Carcharodontosauridae",
+        "Carcharodontosaurinae"
       ],
       "authors": "Coria, R. A.; Salgado, L.",
       "described": 1995
@@ -104999,6 +105045,15 @@
     "Kelmayisaurus": {
       "genus": "Kelmayisaurus",
       "parent": "Carcharodontosauridae",
+      "dispute": {
+        "summary": "Kelmayisaurus petrolicus, once considered a nomen dubium, was revalidated as a basal carcharodontosaurid on the basis of a single autapomorphy (Brusatte et al., 2012); its fragmentary material yields weak, unstable support, and Kellermann et al. (2025) recover it in varying positions across Allosauroidea. It is placed conservatively at Carcharodontosauridae incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Carcharodontosauridae incertae sedis following Brusatte et al. (2012); fragmentary material and unstable support flagged for review."
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "kuhl-MAH-yi-SAWR-us"
       },
@@ -109544,6 +109599,15 @@
     "Lajasvenator": {
       "genus": "Lajasvenator",
       "parent": "Carcharodontosauridae",
+      "dispute": {
+        "summary": "Lajasvenator ascheriae is recovered as a basal carcharodontosaurid, variously as sister to Eocarcharia (Coria et al., 2020; Jones et al., 2026) or in a polytomy of basal carcharodontosaurids with Lusovenator and Concavenator (Canale et al., 2022). It is placed at Carcharodontosauridae incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Carcharodontosauridae incertae sedis as a basal member; its finer position is unresolved."
+          }
+        ]
+      },
       "etymology": "Named after the city of Las Lajas in Neuquén, Argentina combined with Latin venator (hunter); meaning \"Las Lajas hunter\"",
       "pronunciation": {
         "phonetic": "LAH-hass-VEN-uh-tuh"
@@ -118218,6 +118282,15 @@
     "Lusovenator": {
       "genus": "Lusovenator",
       "parent": "Carcharodontosauria",
+      "dispute": {
+        "summary": "Lusovenator santosi, one of the oldest known carcharodontosaurians, is recovered as a basal member of Carcharodontosauria outside Carcharodontosauridae (Malafaia et al., 2020; Jones et al., 2026), or as a basal carcharodontosaurid close to Lajasvenator (Kellermann et al., 2025). It is placed at Carcharodontosauria incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Carcharodontosauria incertae sedis; membership in Carcharodontosauridae is unresolved."
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "LOO-so-ven-AY-tor"
       },
@@ -122333,7 +122406,7 @@
     },
     "Mapusaurus": {
       "genus": "Mapusaurus",
-      "parent": "Carcharodontosauridae",
+      "parent": "Carcharodontosaurinae",
       "etymology": "From Mapudungun 'mapu' (earth or land) and Greek 'sauros' (lizard); meaning 'earth lizard'",
       "description": "Mapusaurus is a genus of giant carcharodontosaurid carnosaurian dinosaur that lived in Argentina during the Cenomanian-Turonian ages of the Late Cretaceous. It is known from a bonebed of between seven and nine specimens, excavated from the strata of the Huincul Formation between 1997 and 2001 as part of the Argentinian-Canadian Dinosaur Project. In 2006, Rodolfo Coria and Philip J. Currie scientifically described Mapusaurus. Only one species of Mapusaurus, M. roseae, has been described, named after the rose-colored rocks in which it was discovered and sponsor Rose Letwin.",
       "diet": "carnivore",
@@ -122456,7 +122529,8 @@
         "Avetheropoda",
         "Allosauroidea",
         "Carcharodontosauria",
-        "Carcharodontosauridae"
+        "Carcharodontosauridae",
+        "Carcharodontosaurinae"
       ],
       "authors": "Coria, R. A.; Currie, P. J.",
       "described": 2006
@@ -125151,7 +125225,7 @@
     },
     "Meraxes": {
       "genus": "Meraxes",
-      "parent": "Giganotosaurini",
+      "parent": "Carcharodontosaurinae",
       "etymology": "Named for Meraxes, the female dragon ridden by Queen Rhaenys Targaryen in George R. R. Martin's novel series A Song of Ice and Fire.",
       "pronunciation": {
         "phonetic": "muh-RAK-seez"
@@ -125303,8 +125377,7 @@
         "Allosauroidea",
         "Carcharodontosauria",
         "Carcharodontosauridae",
-        "Carcharodontosaurinae",
-        "Giganotosaurini"
+        "Carcharodontosaurinae"
       ],
       "authors": "Canale, J. I.; Apesteguía, S.; Gallina, P. A.; Mitchell, J.; Smith, N. D.; Cullen, T. M.; Shinya, A.; Haluza, A.; Gianechini, F. A.; Makovicky, P. J.",
       "described": 2022
@@ -134575,7 +134648,16 @@
     },
     "Neovenator": {
       "genus": "Neovenator",
-      "parent": "Neovenatoridae",
+      "parent": "Carcharodontosauria",
+      "dispute": {
+        "summary": "Neovenator salerii is consistently recovered as a basal carcharodontosaurian, variously as the basalmost member of Carcharodontosauria, as sister to Carcharodontosauridae, or (in older analyses) as the type of a now-deprecated Neovenatoridae that also contained Chilantaisaurus and the megaraptorans. It is placed at Carcharodontosauria incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Moved from Neovenatoridae to Carcharodontosauria incertae sedis; Neovenatoridae was dropped as its former megaraptoran content is now placed within Coelurosauria."
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "NEE-oh-ve-NAY-tor"
       },
@@ -134668,7 +134750,7 @@
             }
           },
           "erected_in": "hutt1996",
-          "described_in": "brusatte2008",
+          "described_in": "brusatte2008a",
           "authors": "Hutt, S.; Martill, D. M.; Barker, M. J.",
           "described": 1996
         }
@@ -134687,7 +134769,7 @@
           "doi": "10.1127/njgpm/1996/1996/635"
         },
         {
-          "id": "brusatte2008",
+          "id": "brusatte2008a",
           "authors": "Brusatte, S. L.; Benson, R. B. J.; Hutt, S.",
           "year": 2008,
           "title": "The osteology of Neovenator salerii (Dinosauria: Theropoda) from the Wealden Group (Barremian) of the Isle of Wight",
@@ -134716,8 +134798,7 @@
         "Tetanurae",
         "Avetheropoda",
         "Allosauroidea",
-        "Carcharodontosauria",
-        "Neovenatoridae"
+        "Carcharodontosauria"
       ],
       "authors": "Hutt, S.; Martill, D. M.; Barker, M. J.",
       "described": 1996
@@ -160224,7 +160305,16 @@
     },
     "Rapator": {
       "genus": "Rapator",
-      "parent": "Neovenatoridae",
+      "parent": "Megaraptora",
+      "dispute": {
+        "summary": "Rapator ornitholestoides is a megaraptoran based on a single manual element and is widely regarded as a nomen dubium (Agnolín et al., 2010). It was formerly placed in Neovenatoridae; recent analyses recover megaraptorans near Tyrannosauroidea rather than among carcharodontosaurians. It is placed conservatively at Megaraptora incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Moved from the deprecated Neovenatoridae to Megaraptora incertae sedis; nomen dubium status flagged for review."
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "RAP-uh-tor"
       },
@@ -160340,9 +160430,8 @@
         "Averostra",
         "Tetanurae",
         "Avetheropoda",
-        "Allosauroidea",
-        "Carcharodontosauria",
-        "Neovenatoridae"
+        "Coelurosauria",
+        "Megaraptora"
       ],
       "authors": "Huene, F. V.",
       "described": 1932
@@ -166242,7 +166331,13 @@
       },
       "description": "Sauroniops is a controversial genus of carnivorous carcharodontosaurid theropod dinosaurs known from the Late Cretaceous (Cenomanian stage) of Morocco. It is known from the Gara Sbaa Formation of the Kem Kem beds and contains a single species, S. pachytholus.\n",
       "dispute": {
-        "summary": "The validity of Sauroniops is actively contested. Ibrahim et al. (2020) argued that S. pachytholus is a junior synonym of Carcharodontosaurus saharicus, interpreting the holotype as an immature C. saharicus frontal and finding the diagnostic characters unconvincing. Paterna and Cau (2022) rebutted this, reaffirming the diagnosis and reporting additional Kem Kem carcharodontosaurid material distinct from C. saharicus. Kellermann, Cuesta and Rauhut (2025) declined the synonymy but treated Sauroniops as a nomen dubium, holding that erecting a taxon on a single frontal is inappropriate pending more material.\n"
+        "summary": "The validity of Sauroniops is actively contested. Ibrahim et al. (2020) argued that S. pachytholus is a junior synonym of Carcharodontosaurus saharicus, interpreting the holotype as an immature C. saharicus frontal and finding the diagnostic characters unconvincing. Paterna and Cau (2022) rebutted this, reaffirming the diagnosis and reporting additional Kem Kem carcharodontosaurid material distinct from C. saharicus. Kellermann, Cuesta and Rauhut (2025) declined the synonymy but treated Sauroniops as a nomen dubium, holding that erecting a taxon on a single frontal is inappropriate pending more material.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Retained at Carcharodontosauridae incertae sedis; validity (nomen dubium per Kellermann et al., 2025) and the proposed synonymy with Carcharodontosaurus remain unresolved."
+          }
+        ]
       },
       "diet": "carnivore",
       "locomotion": "bipedal",
@@ -170361,6 +170456,15 @@
     "Shaochilong": {
       "genus": "Shaochilong",
       "parent": "Carcharodontosauridae",
+      "dispute": {
+        "summary": "Shaochilong maortuensis has been recovered as a derived carcharodontosaurid, the first from Asia (Brusatte et al., 2009; Carrano et al., 2012; Jones et al., 2026), but Kellermann et al. (2025) instead recover it within Tyrannosauroidea in all analyses, rebutting the proposed carcharodontosaurid characters. It is retained conservatively at Carcharodontosauridae incertae sedis pending corroboration of the tyrannosauroid hypothesis.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Retained at Carcharodontosauridae incertae sedis (prevailing view; P5), with the recent tyrannosauroid hypothesis (Kellermann et al., 2025) reflected but not adopted."
+          }
+        ]
+      },
       "etymology": "From Chinese '鲨齿' (shāchǐ) meaning 'shark tooth' and '龙' (lóng) meaning 'dragon'; meaning 'shark-toothed dragon', referring to its shark-like serrated teeth.",
       "pronunciation": {
         "phonetic": "Sha-chi-long"
@@ -172382,6 +172486,15 @@
     "Siamraptor": {
       "genus": "Siamraptor",
       "parent": "Carcharodontosauria",
+      "dispute": {
+        "summary": "Siamraptor suwati is recovered as a basal member of Carcharodontosauria, often as sister to Concavenator (Chokchaloemwong et al., 2019; Kellermann et al., 2025); in analyses that do not recover a monophyletic Carcharodontosauria it falls instead within Metriacanthosauridae. It is placed at Carcharodontosauria incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Carcharodontosauria incertae sedis; the metriacanthosaurid alternative is unresolved."
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "SY-am-RAP-tor"
       },
@@ -182744,6 +182857,15 @@
     "Tameryraptor": {
       "genus": "Tameryraptor",
       "parent": "Carcharodontosauridae",
+      "dispute": {
+        "summary": "Tameryraptor markgrafi, erected for Stromer's destroyed Bahariya carcharodontosaurid, is recovered as a derived carcharodontosaurid outside Carcharodontosaurinae (Kellermann et al., 2025) or as the sister taxon of Carcharodontosaurus saharicus (Cau and Paterna, 2025). It is placed at Carcharodontosauridae incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Carcharodontosauridae incertae sedis; its position relative to Carcharodontosaurus is unresolved."
+          }
+        ]
+      },
       "etymology": "From Egyptian Tamery, meaning \"the beloved land\" (an ancient Egyptian name for Egypt), combined with Latin raptor, \"thief\" - means \"thief from the beloved land\"",
       "description": "Tameryraptor is an extinct genus of large carcharodontosaurid dinosaur that lived during the Late Cretaceous (Cenomanian age) in what is now Egypt. It is known from a partial skeleton collected in rock layers from the Bahariya Formation by crews of German paleontologist Ernst Stromer in 1914, comprising an incomplete skull, vertebrae, and several other postcranial elements. Stromer described the specimen in 1931, referring it to the previously named Megalosaurus saharicus on the basis of its tooth anatomy, and placing it in a new genus, Carcharodontosaurus. In 1944, it was destroyed in the Bombing of Munich during the Second World War. The specimen remained assigned to Carcharodontosaurus saharicus until a review of photographs of the fossil material in 2025 allowed researchers around German paleontologist Maximilian Kellermann to recognize the material as belonging to a distinct taxon known from a single species, Tameryraptor markgrafi.",
       "diet": "carnivore",
@@ -184645,7 +184767,16 @@
     },
     "Taurovenator": {
       "genus": "Taurovenator",
-      "parent": "Carcharodontosauridae",
+      "parent": "Carcharodontosaurinae",
+      "dispute": {
+        "summary": "Taurovenator violantei is recovered among the giganotosaurine carcharodontosaurids (Aranciaga Rolando et al., 2024), but its validity is disputed: Coria and Currie (2020) considered it a junior synonym of Mapusaurus, while a redescription based on new material (MPCA-Pv 803) defended it as distinct, and other analyses recover it only as an unstable wildcard within Carcharodontosauridae (Cau and Paterna, 2025).\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Carcharodontosaurinae following Aranciaga Rolando et al. (2024); the Mapusaurus synonymy and its phylogenetic instability are flagged for review."
+          }
+        ]
+      },
       "etymology": "From Latin 'taurus' meaning 'bull' and 'venator' meaning 'hunter', hence 'bull hunter'.",
       "pronunciation": {
         "phonetic": "TOH-ro-VEN-uh-tuh"
@@ -184796,7 +184927,8 @@
         "Avetheropoda",
         "Allosauroidea",
         "Carcharodontosauria",
-        "Carcharodontosauridae"
+        "Carcharodontosauridae",
+        "Carcharodontosaurinae"
       ],
       "authors": "Motta, M. J.; Aranciaga Rolando, A. M.; Rozadilla, S.; Agnolin, F. L.; Chimento, N. R.; Brissón Egli, F.; Novas, F. E.",
       "described": 2016
@@ -195184,7 +195316,7 @@
     },
     "Tyrannotitan": {
       "genus": "Tyrannotitan",
-      "parent": "Giganotosaurini",
+      "parent": "Carcharodontosaurinae",
       "pronunciation": {
         "ipa": "/tɪˌrænəˈtaɪtən/",
         "phonetic": "tie-RAN-oh-tie-tan"
@@ -195327,8 +195459,7 @@
         "Allosauroidea",
         "Carcharodontosauria",
         "Carcharodontosauridae",
-        "Carcharodontosaurinae",
-        "Giganotosaurini"
+        "Carcharodontosaurinae"
       ],
       "authors": "Novas, F. E.; de Valais, S.; Vickers-Rich, P.; Rich, T.",
       "described": 2005
@@ -195918,6 +196049,15 @@
     "Ulughbegsaurus": {
       "genus": "Ulughbegsaurus",
       "parent": "Carcharodontosauria",
+      "dispute": {
+        "summary": "Ulughbegsaurus uzbekistanensis was described as a carcharodontosaurian close to Neovenator (Tanaka et al., 2021), but its identity has been questioned, with some workers treating the material as indeterminate or non-carcharodontosaurian (Sues et al., 2024; Kellermann et al., 2025). It is placed conservatively at Carcharodontosauria incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Placed at Carcharodontosauria incertae sedis (formerly grouped in the deprecated Neovenatoridae); its validity and referral are flagged for review."
+          }
+        ]
+      },
       "etymology": "Named after Ulugh Beg (the 15th-century Timurid sultan and astronomer), combined with Greek sauros meaning 'lizard'; translates as 'Ulugh Beg's lizard'",
       "description": "Ulughbegsaurus is an extinct genus of carcharodontosaurid theropod dinosaurs from the Late Cretaceous Bissekty Formation (Turonian age) and Khodzhakul Formation (Cenomanian age) of Uzbekistan. The genus contains a single species, Ulughbegsaurus uzbekistanensis, known from multiple maxilla fragments.",
       "diet": "carnivore",
@@ -196527,7 +196667,16 @@
     },
     "Unquillosaurus": {
       "genus": "Unquillosaurus",
-      "parent": "Carcharodontosauridae",
+      "parent": "Maniraptora",
+      "dispute": {
+        "summary": "Unquillosaurus ceibalii is known only from a single pubis and has been placed variously as a carnosaur, a carcharodontosaurid (Carrano et al., 2012), and a maniraptoran; the prevailing recent view treats it as a maniraptoran, possibly a member of Averaptora or Unenlagiinae (Novas and Agnolín, 2004; Agnolín and Novas, 2013). It is a probable nomen dubium and is placed conservatively at Maniraptora incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Moved from Carcharodontosauridae to Maniraptora incertae sedis following the prevailing maniraptoran interpretation; nomen dubium status flagged for review."
+          }
+        ]
+      },
       "pronunciation": {
         "phonetic": "oong-KEE-yo-SAWR-us"
       },
@@ -196649,9 +196798,8 @@
         "Averostra",
         "Tetanurae",
         "Avetheropoda",
-        "Allosauroidea",
-        "Carcharodontosauria",
-        "Carcharodontosauridae"
+        "Coelurosauria",
+        "Maniraptora"
       ],
       "authors": "Powell, J. E.",
       "described": 1979
@@ -199846,6 +199994,15 @@
     "Veterupristisaurus": {
       "genus": "Veterupristisaurus",
       "parent": "Carcharodontosauridae",
+      "dispute": {
+        "summary": "Veterupristisaurus milneri, the oldest known carcharodontosaurid, is recovered within Carcharodontosauridae (Rauhut, 2011; Kellermann et al., 2025) or as a basal member of the wider Carcharodontosauria (Malafaia et al., 2020). Its validity has been questioned because its sole diagnostic character is shared with Lusovenator (Kellermann et al., 2025). It is placed at Carcharodontosauridae incertae sedis.\n",
+        "history": [
+          {
+            "date": "2026-07-01",
+            "note": "Retained at Carcharodontosauridae incertae sedis; validity relative to Lusovenator flagged for review."
+          }
+        ]
+      },
       "etymology": "From Latin 'veter' meaning 'old' or 'ancient' and Latin 'pristis' meaning 'shark', combined with Greek 'sauros' meaning 'lizard', meaning 'old shark lizard', referring to Veterupristisaurus being the oldest known representative of the carcharodontosaurids",
       "pronunciation": {
         "phonetic": "veh-TEH-ru-PRIS-tee-SOR-us"
