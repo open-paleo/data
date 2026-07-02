@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-02T00:07:34.836Z
+  built_at: 2026-07-02T03:02:39.754Z
   clade_count: 203
   genus_count: 1398
   license: CC-BY-4.0
@@ -2690,7 +2690,7 @@ clades:
         notes: Provided the stem-based phylogenetic definition of Diplodocoidea.
   Dromaeosauridae:
     description: |
-      Dromaeosauridae is a family of small to medium-sized maniraptoran theropod dinosaurs commonly known as "raptors." Dromaeosaurids were agile, feathered predators characterized by their signature enlarged, sickle-shaped retractable claw on the second toe (pedal digit II), stiffened tails used for balance during rapid pursuit, and well-developed pennaceous feathers. The family includes well-known genera such as Velociraptor, Deinonychus, and Microraptor. Dromaeosaurids are among the closest non-avian relatives of birds.
+      Dromaeosauridae is a family of small to medium-sized maniraptoran theropod dinosaurs commonly known as "raptors," known from the Late Jurassic to the end of the Cretaceous and distributed across all continents. Dromaeosaurids were agile, feathered predators characterized by an enlarged, sickle-shaped retractable claw on the second toe and a stiffened tail. The family includes the basal Halszkaraptorinae and the Gondwanan Unenlagiinae, the small Microraptorinae, and the derived Eudromaeosauria (Dromaeosaurus, Velociraptor, Deinonychus, and relatives). Dromaeosaurids are among the closest known relatives of birds.
     taxonomy:
       - Life
       - Animalia
@@ -2712,24 +2712,28 @@ clades:
       - Paraves
       - Deinonychosauria
       - Dromaeosauridae
+    type_genus: Dromaeosaurus
     described: 1922
-    authors: Matthew & Brown
+    authors: Matthew, W. D.; Brown, B.
     diagnostic_features:
       - Enlarged, hyperextensible, sickle-shaped ungual on pedal digit II
-      - Stiffened tail with elongated prezygapophyses and chevrons
-      - Pennaceous feathers on forelimbs and hindlimbs
-      - Semilunate carpal bone enabling wing-folding motion of manus
-      - Laterally compressed, recurved, serrated teeth
-      - Reduced and stiffened distal tail functioning as a dynamic stabilizer
+      - Stiffened tail with elongate prezygapophyses and chevrons
+      - Pennaceous feathers on the forelimbs and tail
+      - Semilunate carpal bone enabling a folding motion of the manus
+      - Lateral teeth with denticles larger on the distal than the mesial carina
     references:
-      - id: matthewbrown1922
-        authors: Matthew, W.D. & Brown, B.
+      - id: matthew1922
+        authors: Matthew, W. D.; Brown, B.
         year: 1922
         title: The family Deinodontidae, with notice of a new genus from the Cretaceous of Alberta
         journal: Bulletin of the American Museum of Natural History
         volume: "46"
+        issue: "6"
         pages: 367-385
+        doi: 10.5281/zenodo.1048848
   Dromaeosaurinae:
+    description: |
+      Dromaeosaurinae is a subfamily of eudromaeosaurian dromaeosaurids containing the type genus Dromaeosaurus and its close relatives, including the large-bodied Utahraptor and Achillobator. Members are robustly built predators with deep, massive skulls and comparatively coarse tooth serrations. The precise content of the subfamily varies between analyses, but Dromaeosaurus, Utahraptor, and Achillobator are consistently included.
     taxonomy:
       - Life
       - Animalia
@@ -2753,6 +2757,23 @@ clades:
       - Dromaeosauridae
       - Eudromaeosauria
       - Dromaeosaurinae
+    type_genus: Dromaeosaurus
+    described: 1922
+    authors: Matthew, W. D.; Brown, B.
+    diagnostic_features:
+      - Deep, robust, and heavily constructed skull
+      - Large, coarse denticles on both carinae of the lateral teeth
+      - Robust, D-shaped premaxillary teeth
+    references:
+      - id: matthew1922
+        authors: Matthew, W. D.; Brown, B.
+        year: 1922
+        title: The family Deinodontidae, with notice of a new genus from the Cretaceous of Alberta
+        journal: Bulletin of the American Museum of Natural History
+        volume: "46"
+        issue: "6"
+        pages: 367-385
+        doi: 10.5281/zenodo.1048848
   Dryomorpha:
     description: |
       Dryomorpha is the clade of iguanodontian ornithopods comprising Dryosauridae and Ankylopollexia and their most recent common ancestor. It unites the small, gracile dryosaurids with the robust, thumb-spiked ankylopollexians and the lineage leading to the hadrosaurs, marking the transition toward the large bulk-feeding ornithopods of the Cretaceous.
@@ -2991,6 +3012,8 @@ clades:
         doi: 10.7717/peerj.12362
         notes: Erected Euceratopsia as the smallest clade containing Leptoceratops, Protoceratops, and Triceratops.
   Eudromaeosauria:
+    description: |
+      Eudromaeosauria is the clade of "true" dromaeosaurids, comprising the mostly Laurasian, ground-living predators of the Cretaceous and excluding the small Microraptorinae and the Gondwanan Unenlagiinae. It is a node-based clade anchored on Dromaeosaurus, Velociraptor, Deinonychus, and Saurornitholestes, and is conventionally divided into three subfamilies: Dromaeosaurinae, Velociraptorinae, and Saurornitholestinae. Its members bear the largest, sharpest sickle claws in the family.
     taxonomy:
       - Life
       - Animalia
@@ -3013,6 +3036,24 @@ clades:
       - Deinonychosauria
       - Dromaeosauridae
       - Eudromaeosauria
+    described: 2009
+    authors: Longrich, N. R.; Currie, P. J.
+    diagnostic_features:
+      - Large, deep, and strongly recurved pedal ungual II held clear of the ground
+      - Deep, robust dentary
+      - Shortened, box-like metatarsus relative to microraptorines
+      - Enlarged denticles on the distal carina of the lateral teeth
+    references:
+      - id: longrich2009a
+        authors: Longrich, N. R.; Currie, P. J.
+        year: 2009
+        title: A microraptorine (Dinosauria-Dromaeosauridae) from the Late Cretaceous of North America
+        journal: Proceedings of the National Academy of Sciences
+        volume: "106"
+        issue: "13"
+        pages: 5002-5007
+        publisher: Proceedings of the National Academy of Sciences
+        doi: 10.1073/pnas.0811664106
   Euhelopodidae:
     description: |
       Euhelopodidae is a clade of somphospondylan titanosauriforms largely restricted to the Early Cretaceous of eastern Asia, recovered by most recent analyses as an early-diverging group within Somphospondyli, roughly sister to Titanosauria. The name dates to Romer's grouping of Euhelopus with various East Asian sauropods, but the modern clade was given a phylogenetic definition by D'Emic as all taxa closer to Euhelopus than to Neuquensaurus. Its core membership (Euhelopus, Erketu, Qiaowanlong, Gobititan, Phuwiangosaurus, and Tangvayosaurus) is reasonably stable, though the placement of several fragmentary Chinese taxa fluctuates between this clade and basal Titanosauria.
@@ -3607,6 +3648,8 @@ clades:
         doi: 10.7717/peerj.12362
         notes: Provides the modern phylogenetic definition of Hadrosauromorpha.
   Halszkaraptorinae:
+    description: |
+      Halszkaraptorinae is a clade of small, early-diverging dromaeosaurids from the Late Cretaceous of Mongolia, comprising Halszkaraptor, Mahakala, Hulsanpes, and Natovenator. Members have long necks, numerous small teeth, and forelimb and body proportions that have been interpreted as adaptations for a semiaquatic, possibly diving lifestyle. The clade was erected by Cau et al. (2017) and is usually recovered at or near the base of Dromaeosauridae.
     taxonomy:
       - Life
       - Animalia
@@ -3629,6 +3672,24 @@ clades:
       - Deinonychosauria
       - Dromaeosauridae
       - Halszkaraptorinae
+    type_genus: Halszkaraptor
+    described: 2017
+    authors: Cau, A.; Beyrand, V.; Voeten, D. F. A. E.; Fernandez, V.; Tafforeau, P.; Stein, K.; Barsbold, R.; Tsogtbaatar, K.; Currie, P. J.; Godefroit, P.
+    diagnostic_features:
+      - Elongate cervical vertebrae producing a long neck
+      - Numerous small, closely packed teeth
+      - Premaxilla with a battery of small teeth and neurovascular foramina
+      - Dorsoventrally flattened, elongate forelimb elements
+    references:
+      - id: cau2017
+        authors: Cau, A.; Beyrand, V.; Voeten, D. F. A. E.; Fernandez, V.; Tafforeau, P.; Stein, K.; Barsbold, R.; Tsogtbaatar, K.; Currie, P. J.; Godefroit, P.
+        year: 2017
+        title: Synchrotron scanning reveals amphibious ecomorphology in a new clade of bird-like dinosaurs
+        journal: Nature
+        volume: "552"
+        issue: "7685"
+        pages: 395-399
+        publisher: Springer Science and Business Media LLC
   Herrerasauria:
     description: |
       Herrerasauria is a clade of early saurischian dinosaurs uniting Herrerasauridae with a small number of more basal or fragmentary relatives, here Maleriraptor and Caseosaurus. It is defined as all dinosaurs more closely related to Herrerasaurus than to Liliensternus and Plateosaurus, and is placed within Saurischia outside the theropod-sauropodomorph divergence. Some authors treat Herrerasauria as synonymous with Herrerasauridae, whereas several recent analyses recover a broader clade.
@@ -4981,6 +5042,8 @@ clades:
       - Metriacanthosauridae
       - Metriacanthosaurinae
   Microraptorinae:
+    description: |
+      Microraptorinae (also Microraptoria) is a clade of small, often four-winged dromaeosaurids known mainly from the Early Cretaceous Jehol Biota of China, with a few later and more widespread members. Many preserve extensive pennaceous feathers on both the fore- and hindlimbs, and several were capable of gliding or limited powered flight. The clade is commonly recovered as the sister group of Eudromaeosauria within Dromaeosauridae.
     taxonomy:
       - Life
       - Animalia
@@ -5003,6 +5066,22 @@ clades:
       - Deinonychosauria
       - Dromaeosauridae
       - Microraptorinae
+    type_genus: Microraptor
+    described: 2004
+    authors: Senter, P.; Barsbold, R.; Britt, B. B.; Burnham, D. A.
+    diagnostic_features:
+      - Small body size with elongate pennaceous feathers on the hindlimb (metatarsal "wing")
+      - Proportionally long forelimbs
+      - Posterolateral process of the premaxilla separating the maxilla from the naris
+      - Slender, weakly recurved teeth with reduced or absent mesial serrations
+    references:
+      - id: senter2004
+        authors: Senter, P.; Barsbold, R.; Britt, B. B.; Burnham, D. A.
+        year: 2004
+        title: Systematics and evolution of Dromaeosauridae (Dinosauria, Theropoda)
+        journal: Bulletin of the Gunma Museum of Natural History
+        volume: "8"
+        pages: 1-20
   Nemegtosauridae:
     description: |
       Nemegtosauridae is a family of derived titanosaurs erected by Upchurch (1995) for Nemegtosaurus and given a modern phylogenetic treatment by Wilson (2005) following his redescription of the Nemegtosaurus skull. Long known mainly from cranial material, its core members — Nemegtosaurus and Quaesitosaurus of the Late Cretaceous of Mongolia — possess elongate, low skulls with slender, pencil-like teeth restricted to the front of the jaws, a morphology once thought diplodocoid but now recognized as titanosaurian.
@@ -7005,6 +7084,8 @@ clades:
       - Troodontinae
       - Saurornithoidini
   Saurornitholestinae:
+    description: |
+      Saurornitholestinae is a subfamily of North American eudromaeosaurian dromaeosaurids comprising the type genus Saurornitholestes and Atrociraptor, and in some analyses Acheroraptor and Bambiraptor. Members combine relatively short, deep snouts with enlarged, blade-like anterior teeth. The subfamily is supported by recent cranial studies but is not recovered by all analyses, some of which place its members within Velociraptorinae.
     taxonomy:
       - Life
       - Animalia
@@ -7028,6 +7109,24 @@ clades:
       - Dromaeosauridae
       - Eudromaeosauria
       - Saurornitholestinae
+    type_genus: Saurornitholestes
+    described: 2009
+    authors: Longrich, N. R.; Currie, P. J.
+    diagnostic_features:
+      - Short, deep snout relative to velociraptorines
+      - Enlarged, strongly recurved anterior maxillary and dentary teeth
+      - Second premaxillary tooth enlarged and flattened with ridged enamel
+    references:
+      - id: longrich2009a
+        authors: Longrich, N. R.; Currie, P. J.
+        year: 2009
+        title: A microraptorine (Dinosauria-Dromaeosauridae) from the Late Cretaceous of North America
+        journal: Proceedings of the National Academy of Sciences
+        volume: "106"
+        issue: "13"
+        pages: 5002-5007
+        publisher: Proceedings of the National Academy of Sciences
+        doi: 10.1073/pnas.0811664106
   Scansoriopterygidae:
     taxonomy:
       - Life
@@ -8225,6 +8324,8 @@ clades:
         doi: 10.1098/rsbl.2018.0633
         notes: Erected Unaysauridae.
   Unenlagiinae:
+    description: |
+      Unenlagiinae is a clade of mostly Gondwanan paravian theropods, including the type genus Unenlagia together with Buitreraptor, Austroraptor, Neuquenraptor, and Rahonavis, and several fragmentary forms. Members range from turkey-sized, long-armed predators to the five-meter, short-armed, long-snouted Austroraptor, and are characterized by elongate, lightly built snouts with numerous small teeth. Their placement relative to Dromaeosauridae and Avialae is contested (see dispute).
     taxonomy:
       - Life
       - Animalia
@@ -8247,7 +8348,25 @@ clades:
       - Deinonychosauria
       - Dromaeosauridae
       - Unenlagiinae
+    type_genus: Unenlagia
+    described: 1999
+    authors: Bonaparte, J. F.
+    diagnostic_features:
+      - Elongate, low snout with a high tooth count
+      - Small, weakly recurved teeth with reduced or absent serrations
+      - Metatarsal III not pinched proximally (subarctometatarsalian condition in some members)
+    references:
+      - id: bonaparte1999e
+        authors: Bonaparte, J. F.
+        year: 1999
+        title: "Tetrapod faunas from South America and India: a palaeobiogeographic interpretation"
+        journal: Proceedings of the Indian National Science Academy
+        volume: 65A
+        issue: "3"
+        pages: 427-437
   Velociraptorinae:
+    description: |
+      Velociraptorinae is a subfamily of eudromaeosaurian dromaeosaurids centered on the predominantly Asian genus Velociraptor and its relatives, including Tsaagan, Linheraptor, Shri, and Kuru, with several North American members. Members typically have long, low, and narrow snouts. The subfamily is widely used but its content is variable, and it is sometimes recovered as a paraphyletic grade toward Dromaeosaurinae.
     taxonomy:
       - Life
       - Animalia
@@ -8271,6 +8390,21 @@ clades:
       - Dromaeosauridae
       - Eudromaeosauria
       - Velociraptorinae
+    type_genus: Velociraptor
+    described: 1983
+    authors: Barsbold, R.
+    diagnostic_features:
+      - Long, low, and narrow snout
+      - Dorsally deflected caudal margin of the dentary
+      - Elongate maxillary and dentary tooth rows with numerous teeth
+    references:
+      - id: barsbold1983
+        authors: Barsbold, R.
+        year: 1983
+        title: Khishchnye dinozavry mela Mongolii [Carnivorous dinosaurs from the Cretaceous of Mongolia]
+        journal: Trudy - Sovmestnaya Sovetsko-Mongol'skaya Paleontologicheskaya Ekspeditsiya
+        volume: "19"
+        pages: "89"
 genera:
   Aardonyx:
     genus: Aardonyx
@@ -9420,7 +9554,13 @@ genera:
     described: 1995
   Acheroraptor:
     genus: Acheroraptor
-    parent: Velociraptorinae
+    parent: Eudromaeosauria
+    dispute:
+      summary: |
+        The subfamily placement of Acheroraptor is contested. It was described as a basal velociraptorine (Evans et al., 2013) with Asian affinities, a placement followed by Jasinski et al. (2020), but Powers et al. (2022) and Jones et al. (2026) instead recover it within Saurornitholestinae. Known mainly from jaw material, it is placed at Eudromaeosauria incertae sedis.
+      history:
+        - date: 2026-07-01
+          note: Moved from Velociraptorinae to Eudromaeosauria incertae sedis (least-inclusive uncontested clade); velociraptorine and saurornitholestine hypotheses proposed.
     etymology: From Greek 'Acheron' (the underworld river) and Latin 'raptor' meaning 'thief' or 'plunderer'; meaning 'underworld thief'
     pronunciation:
       phonetic: ah-SHEH-ro-RAP-tuh
@@ -9523,7 +9663,6 @@ genera:
       - Deinonychosauria
       - Dromaeosauridae
       - Eudromaeosauria
-      - Velociraptorinae
     authors: Evans, D. C.; Larson, D. W.; Currie, P. J.
     described: 2013
   Achillesaurus:
@@ -9626,7 +9765,13 @@ genera:
     described: 2007
   Achillobator:
     genus: Achillobator
-    parent: Eudromaeosauria
+    parent: Dromaeosaurinae
+    dispute:
+      summary: |
+        Achillobator is consistently recovered as a large-bodied dromaeosaurine (Turner et al., 2012; Cau et al., 2017; Powers et al., 2020; Jones et al., 2026), often close to Utahraptor. Some analyses (Napoli et al., 2021) instead keep it as a eudromaeosaur outside a narrowly defined Velociraptorinae without resolving its subfamily, and its holotype was historically suspected of being a chimera (a claim now generally rejected). It is placed in Dromaeosaurinae following the prevailing view.
+      history:
+        - date: 2026-07-01
+          note: Moved from Eudromaeosauria to Dromaeosaurinae following the prevailing view (Turner et al., 2012; Powers et al., 2020; Jones et al., 2026).
     etymology: Named after Achilles, the Greek hero, combined with Mongolian 'bator' meaning 'hero'; meaning 'Achilles hero'
     pronunciation:
       phonetic: uh-KIL-uh-BAY-tor
@@ -9728,6 +9873,7 @@ genera:
       - Deinonychosauria
       - Dromaeosauridae
       - Eudromaeosauria
+      - Dromaeosaurinae
     authors: Perle, A.; Norell, M. A.; J. M. Clark
     described: 1999
   Acristavus:
@@ -10239,7 +10385,13 @@ genera:
     described: 2006
   Adasaurus:
     genus: Adasaurus
-    parent: Eudromaeosauria
+    parent: Velociraptorinae
+    dispute:
+      summary: |
+        Adasaurus was originally placed in Dromaeosaurinae (Barsbold, 1983), but most recent analyses, following a firsthand rescoring, recover it firmly within Velociraptorinae (Turner et al., 2012; Napoli et al., 2021; Powers et al., 2020; Jones et al., 2026), in some as the sister taxon of Kuru. It is placed in Velociraptorinae following the current consensus.
+      history:
+        - date: 2026-07-01
+          note: Moved from Eudromaeosauria to Velociraptorinae following the current consensus (Turner et al., 2012; Napoli et al., 2021); original Dromaeosaurinae placement noted.
     etymology: From Mongolian 'ada' meaning 'evil spirit' or 'devil' and Greek 'sauros' meaning 'lizard'; meaning 'evil lizard'
     pronunciation:
       phonetic: AH-duh-SOR-uhs
@@ -10351,6 +10503,7 @@ genera:
       - Deinonychosauria
       - Dromaeosauridae
       - Eudromaeosauria
+      - Velociraptorinae
     authors: Barsbold, R.
     described: 1983
   Adelolophus:
@@ -22924,6 +23077,12 @@ genera:
   Asiamericana:
     genus: Asiamericana
     parent: Dromaeosauridae
+    dispute:
+      summary: |
+        Asiamericana asiatica is a nomen dubium based on three isolated teeth whose affinities are uncertain even at a high level; the describer noted they could be theropod (possibly spinosaurid) or belong to a saurodontid fish (Nessov, 1995), and later work considered them synonymous with the tooth taxon Richardoestesia (Averianov and Sues, 2019). It is retained provisionally at Dromaeosauridae incertae sedis.
+      history:
+        - date: 2026-07-01
+          note: Retained at Dromaeosauridae incertae sedis; nomen dubium, teeth of uncertain affinity (possibly Richardoestesia or non-theropod). Flagged for Literature Review.
     etymology: From the ancient continent "Asiamerica", reflecting Nessov's interpretation of the genus as evidence of Late Cretaceous faunal links between Asia and North America.
     pronunciation:
       phonetic: AY-zha-MER-i-KAHN-uh
@@ -24048,6 +24207,12 @@ genera:
   Atrociraptor:
     genus: Atrociraptor
     parent: Saurornitholestinae
+    dispute:
+      summary: |
+        Atrociraptor was originally described as a velociraptorine (Currie and Varricchio, 2004) but is recovered within Saurornitholestinae, as the sister taxon of Saurornitholestes, by most recent analyses (Longrich and Currie, 2009; Currie and Evans, 2019; Powers et al., 2022; Jones et al., 2026), the placement adopted here.
+      history:
+        - date: 2026-07-01
+          note: Placed in Saurornitholestinae following the recent consensus (Currie and Evans, 2019; Powers et al., 2022); original velociraptorine placement noted.
     pronunciation:
       ipa: /əˌtrɑːsiˈræptər/
       phonetic: Ah-TROSS-ee-rap-tor
@@ -26789,6 +26954,12 @@ genera:
   Balaur:
     genus: Balaur
     parent: Dromaeosauridae
+    dispute:
+      summary: |
+        The position of Balaur, an aberrant island form from the Late Cretaceous of Romania, is highly uncertain. It was described as a velociraptorine (Csiki et al., 2010) and a series of recent analyses again recover it as a velociraptorine (Pei et al., 2020; Turner et al., 2021; Napoli et al., 2021), the placement adopted here. An intervening set of studies instead argued it is a basal avialan (Cau et al., 2015; Hartman et al., 2019, the latter requiring eight extra steps to make it a dromaeosaurid). It is placed at Dromaeosauridae incertae sedis.
+      history:
+        - date: 2026-07-01
+          note: Placed at Dromaeosauridae incertae sedis (least-inclusive uncontested clade); velociraptorine and basal-avialan hypotheses both current. Kept in Dromaeosauridae following the most recent analyses.
     pronunciation:
       ipa: /ˈbæl.aʊr/
       phonetic: BAL-our
@@ -26914,7 +27085,13 @@ genera:
     described: 2010
   Bambiraptor:
     genus: Bambiraptor
-    parent: Dromaeosauridae
+    parent: Eudromaeosauria
+    dispute:
+      summary: |
+        The subfamily placement of Bambiraptor is highly unstable. It has been recovered as a velociraptorine (Turner et al., 2012), a saurornitholestine (Powers et al., 2022; Jones et al., 2026), a microraptorine (Hartman et al., 2019), and as an outlying basal eudromaeosaur sister to the rest of Eudromaeosauria (Currie and Evans, 2019; Pei et al., 2020). It is placed at Eudromaeosauria incertae sedis pending resolution.
+      history:
+        - date: 2026-07-01
+          note: Moved from Dromaeosauridae to Eudromaeosauria incertae sedis (least-inclusive uncontested clade); velociraptorine, saurornitholestine, microraptorine, and basal-eudromaeosaur hypotheses all proposed.
     pronunciation:
       phonetic: BAM-bee-RAP-tor
     etymology: "Named after the Disney movie character Bambi (itself from Italian bambino meaning 'child') combined with Latin raptor meaning 'thief'. Full meaning: 'Bambi thief', referring to its small size."
@@ -27034,6 +27211,7 @@ genera:
       - Paraves
       - Deinonychosauria
       - Dromaeosauridae
+      - Eudromaeosauria
     authors: Burnham, D. A.; Derstler, K. L.; Currie, P. J.; Bakker, R. T.; Zhou, Z.; Ostrom, J. H.
     described: 2000
   Banji:
@@ -31194,7 +31372,13 @@ genera:
     described: 2004
   Boreonykus:
     genus: Boreonykus
-    parent: Dromaeosaurinae
+    parent: Eudromaeosauria
+    dispute:
+      summary: |
+        The subfamily placement of Boreonykus is unresolved. It was described as a velociraptorine (Bell and Currie, 2016) and Jones et al. (2026) treat it as a possible velociraptorine, whereas Currie and Evans (2019) recovered it within Dromaeosaurinae. Known from fragmentary cranial material, it is placed at Eudromaeosauria incertae sedis.
+      history:
+        - date: 2026-07-01
+          note: Moved from Dromaeosaurinae to Eudromaeosauria incertae sedis (least-inclusive uncontested clade); velociraptorine and dromaeosaurine hypotheses proposed.
     etymology: From Greek 'boreos' meaning 'northern' and 'nykus' or 'onyx' meaning 'claw', referring to its discovery in northern Canada.
     pronunciation:
       phonetic: boh-ree-o-NY-kus
@@ -31291,7 +31475,6 @@ genera:
       - Deinonychosauria
       - Dromaeosauridae
       - Eudromaeosauria
-      - Dromaeosaurinae
     authors: Bell, P. R.; Currie, P. J.
     described: 2015
   Borogovia:
@@ -45472,7 +45655,13 @@ genera:
     described: 2008
   Dakotaraptor:
     genus: Dakotaraptor
-    parent: Dromaeosaurinae
+    parent: Dromaeosauridae
+    dispute:
+      summary: |
+        The placement of Dakotaraptor is contested and complicated by a probable chimeric holotype (its "furcula" is a turtle entoplastron; Arbour et al., 2015). It has been recovered as a dromaeosaurine (DePalma et al., 2015; Currie and Evans, 2019), a velociraptorine (Pei et al., 2020), and an unenlagiine (Hartman et al., 2019). Given the spread of placements and the chimera concern, it is placed at Dromaeosauridae incertae sedis.
+      history:
+        - date: 2026-07-01
+          note: Moved from Dromaeosaurinae to Dromaeosauridae incertae sedis (least-inclusive uncontested clade); dromaeosaurine, velociraptorine, and unenlagiine hypotheses proposed, holotype possibly chimeric. Flagged for Literature Review.
     etymology: Named after the Dakotas (the Hell Creek Formation of the western USA, spanning the Dakotas, Montana and Wyoming) + Latin raptor ('thief' or 'plunderer'), meaning 'thief from Dakota'.
     pronunciation:
       phonetic: duh-KO-tuh-RAP-tuh
@@ -45579,8 +45768,6 @@ genera:
       - Paraves
       - Deinonychosauria
       - Dromaeosauridae
-      - Eudromaeosauria
-      - Dromaeosaurinae
     authors: DePalma, R. A.; Burnham, D. A.; Martin, L. D.; Larson, P. L.; Bakker, R. T.
     described: 2015
   Daliansaurus:
@@ -46580,6 +46767,12 @@ genera:
   Daurlong:
     genus: Daurlong
     parent: Dromaeosauridae
+    dispute:
+      summary: |
+        Daurlong is a short-armed Jehol dromaeosaurid recovered by its describers in a clade with Tianyuraptor and Zhenyuanlong, placed crownward of Microraptorinae and stemward of Eudromaeosauria (Wang et al., 2022; Jones et al., 2026). This "short-armed" grouping is weakly supported and not recovered by all analyses, so it is placed at Dromaeosauridae incertae sedis.
+      history:
+        - date: 2026-07-01
+          note: Placed at Dromaeosauridae incertae sedis (least-inclusive uncontested clade); basal short-armed-dromaeosaurid grouping with Tianyuraptor and Zhenyuanlong weakly supported.
     etymology: Named after the Daur people (Daur Autonomous Banner of Inner Mongolia, China, where the fossils were found) + Chinese long (龙, 'dragon'), meaning 'Daur dragon'.
     pronunciation:
       phonetic: da-wur-long
@@ -46947,6 +47140,12 @@ genera:
   Deinonychus:
     genus: Deinonychus
     parent: Eudromaeosauria
+    dispute:
+      summary: |
+        The subfamily placement of Deinonychus is genuinely unresolved. It has been recovered as a velociraptorine (Turner et al., 2012; Napoli et al., 2021; Powers et al., 2020), as a dromaeosaurine (DePalma et al., 2015; the placement Jones et al., 2026 adopt), and in a distinct clade with Utahraptor and Achillobator outside both subfamilies (Hartman et al., 2019; Jasinski et al., 2020). It is placed at Eudromaeosauria incertae sedis pending resolution.
+      history:
+        - date: 2026-07-01
+          note: Placed at Eudromaeosauria incertae sedis (least-inclusive uncontested clade); velociraptorine, dromaeosaurine, and own-clade hypotheses all current.
     pronunciation:
       phonetic: dy-NON-ih-kuhs
       ipa: /daɪˈnɒnɪkəs/
@@ -48386,6 +48585,12 @@ genera:
   Dineobellator:
     genus: Dineobellator
     parent: Velociraptorinae
+    dispute:
+      summary: |
+        Dineobellator is recovered as a North American velociraptorine by its describers (Jasinski et al., 2020) and by Jones et al. (2026), the placement adopted here, though Jones notes this may partly reflect the incompleteness of the material.
+      history:
+        - date: 2026-07-01
+          note: Placed in Velociraptorinae following Jasinski et al. (2020); placement may be affected by incomplete material.
     pronunciation:
       phonetic: dih-NAY-oh-BEL-ah-tor
       ipa: /dɪˌneɪoʊbəˈleɪtər/
@@ -49070,6 +49275,12 @@ genera:
   Diuqin:
     genus: Diuqin
     parent: Unenlagiinae
+    dispute:
+      summary: |
+        Diuqin is an incomplete, somatically immature unenlagiine whose describers recovered it as a paravian with several plausible positions, the strongest affinity being with Unenlagiinae (Porfiri et al., 2024). It is placed in Unenlagiinae following that assessment, with its instability noted.
+      history:
+        - date: 2026-07-01
+          note: Placed in Unenlagiinae following Porfiri et al. (2024); phylogenetically unstable, immature holotype.
     etymology: "From Mapudungun diuqin: 'bird of prey', referring to its classification as a predatory theropod."
     pronunciation:
       phonetic: dee-YOO-kin
@@ -50310,6 +50521,12 @@ genera:
   Dromaeosauroides:
     genus: Dromaeosauroides
     parent: Dromaeosauridae
+    dispute:
+      summary: |
+        Dromaeosauroides bornholmensis is based on isolated tooth crowns. Its describers assigned it to Dromaeosauridae, resembling Dromaeosaurus (Christiansen and Bonde, 2003), but other authors regard the material as indeterminate. It is retained provisionally at Dromaeosauridae incertae sedis as a tooth-based taxon.
+      history:
+        - date: 2026-07-01
+          note: Retained at Dromaeosauridae incertae sedis; tooth-based taxon, considered indeterminate by some authors. Flagged for Literature Review.
     etymology: From Dromaeosaurus + Greek -oides, 'resembling'; means 'resembling Dromaeosaurus', indicating its morphological similarity to that genus
     pronunciation:
       phonetic: DROH-mee-o-sor-ROY-deez
@@ -68615,6 +68832,12 @@ genera:
   Hesperonychus:
     genus: Hesperonychus
     parent: Microraptorinae
+    dispute:
+      summary: |
+        Hesperonychus is generally recovered as a microraptorine (Longrich and Currie, 2009; Jones et al., 2026), extending the group into the Late Cretaceous of North America, the placement adopted here. Hartman et al. (2019), however, recovered the holotype as an avialan at least as close to birds as Balaur. It is placed in Microraptorinae following the prevailing view.
+      history:
+        - date: 2026-07-01
+          note: Placed in Microraptorinae following the prevailing view (Longrich and Currie, 2009; Jones et al., 2026); the avialan hypothesis (Hartman et al., 2019) is recorded.
     etymology: From Greek 'hesperos' meaning 'western' and 'onychos' meaning 'claw'. The type species, H. elizabethae, was named in honor of Dr. Elizabeth Nicholls of the Royal Tyrrell Museum of Palaeontology.
     pronunciation:
       phonetic: hes-puh-ruh-NIE-kus
@@ -74170,7 +74393,13 @@ genera:
     described: 2000
   Imperobator:
     genus: Imperobator
-    parent: Dromaeosauridae
+    parent: Paraves
+    dispute:
+      summary: |
+        Imperobator antarcticus is known from a fragmentary pes and cannot be confidently referred to any of the major paravian subclades. Its describers explicitly rejected a dromaeosaurid referral because it lacks the enlarged sickle claw and the ginglymoid distal metatarsal II characteristic of dromaeosaurids, recovering it only as Paraves incertae sedis (Ely and Case, 2019); a later study argued for unenlagiine affinities (Motta et al., 2025). It is placed conservatively at Paraves incertae sedis.
+      history:
+        - date: 2026-07-01
+          note: Moved from Dromaeosauridae to Paraves incertae sedis (Ely and Case, 2019; lacks dromaeosaurid synapomorphies). Deferred to the basal-paravian/Avialae batch for finer placement.
     pronunciation:
       phonetic: im-PERR-oh-BAY-tor
     etymology: From Latin 'imperobator' meaning 'powerful warrior'. The species name refers to Antarctica, the continent where it was found.
@@ -74256,8 +74485,6 @@ genera:
       - Coelurosauria
       - Maniraptora
       - Paraves
-      - Deinonychosauria
-      - Dromaeosauridae
     authors: Ely, R. C.; Case, J. A.
     described: 2019
   Inawentu:
@@ -76037,6 +76264,12 @@ genera:
   Itemirus:
     genus: Itemirus
     parent: Dromaeosaurinae
+    dispute:
+      summary: |
+        Itemirus was erected on an isolated braincase and was long of uncertain affinity (originally its own family, later suggested to be tyrannosauroid or velociraptorine). Recent analyses that add referred material place it within Dromaeosaurinae (Sues and Averianov, 2014; Jones et al., 2026), the placement adopted here, but the fragmentary type keeps this weakly constrained.
+      history:
+        - date: 2026-07-01
+          note: Placed in Dromaeosaurinae following Sues and Averianov (2014) and Jones et al. (2026); braincase-based type, historically ambiguous (velociraptorine and tyrannosauroid affinities also proposed).
     pronunciation:
       phonetic: ee-te-MEER-us
     etymology: Named for the Itemir locality in Uzbekistan where the fossils were discovered.
@@ -80311,6 +80544,12 @@ genera:
   Kank:
     genus: Kank
     parent: Unenlagiinae
+    dispute:
+      summary: |
+        Kank is known only from a cervicodorsal vertebra with referred teeth and pedal phalanges, and was identified as a member of the unenlagiine clade by apomorphic characters (Motta et al., 2026), who treat that clade as the family Unenlagiidae under Paraves rather than within Dromaeosauridae. It is placed in Unenlagiinae here; the clade-level position debate is recorded on the Unenlagiinae file.
+      history:
+        - date: 2026-07-01
+          note: Placed in Unenlagiinae following Motta et al. (2026); fragmentary (single vertebra). The Novas-school treatment of Unenlagiidae as a distinct paravian clade is covered by the clade-level dispute.
     etymology: From Kank, the elder Rhea in Aonikenk (Tehuelche) mythology who created the constellation Choiols (the Southern Cross), referring to the taxon's southern Patagonian provenance.
     pronunciation:
       phonetic: kank
@@ -80405,6 +80644,12 @@ genera:
   Kansaignathus:
     genus: Kansaignathus
     parent: Velociraptorinae
+    dispute:
+      summary: |
+        Kansaignathus is known only from an isolated dentary and was recovered as a basal velociraptorine by its describers (Averianov and Lopatin, 2021), a position appearing in most of their trees but resting on very limited character data. It is placed in Velociraptorinae following the describing analysis, with the fragmentary type noted.
+      history:
+        - date: 2026-07-01
+          note: Placed in Velociraptorinae following Averianov and Lopatin (2021); dentary-only holotype, placement weakly constrained.
     pronunciation:
       ipa: /ˌkɛnsɑːiˈnɛiθəs/
     etymology: Named for the area near the town of Konsoy ('Kansai' in Russian) in Tajikistan where it was discovered, combined with Greek 'gnathos' meaning 'jaw'.
@@ -83776,7 +84021,7 @@ genera:
     described: 2012
   Kuru:
     genus: Kuru
-    parent: Dromaeosauridae
+    parent: Velociraptorinae
     pronunciation:
       ipa: /ˈkuruˈkʊlə/
       phonetic: koo-roo
@@ -83885,6 +84130,8 @@ genera:
       - Paraves
       - Deinonychosauria
       - Dromaeosauridae
+      - Eudromaeosauria
+      - Velociraptorinae
     authors: Napoli, J. G.; Ruebenstahl, A. A.; Bhullar, B.-A. S.; Turner, A. H.; Norell, M. A.
     described: 2021
   Kurupi:
@@ -88528,6 +88775,12 @@ genera:
   Linheraptor:
     genus: Linheraptor
     parent: Velociraptorinae
+    dispute:
+      summary: |
+        Linheraptor is consistently recovered as a velociraptorine, as the sister taxon of Tsaagan (Jasinski et al., 2020; Pei et al., 2020; Jones et al., 2026). Its validity has been questioned: Senter and colleagues argued it is a junior synonym of Tsaagan mangas, but this was rejected by later restudy (Xu et al., 2015). The velociraptorine placement is not in doubt; only the genus-level distinction from Tsaagan is contested.
+      history:
+        - date: 2026-07-01
+          note: Placed in Velociraptorinae (sister to Tsaagan); the proposed synonymy with Tsaagan is noted but rejected by recent restudy.
     etymology: Named for Linhe, a city in Inner Mongolia near the fossil discovery site, combined with Latin 'raptor' meaning 'thief' or 'plunderer'.
     pronunciation:
       phonetic: LIN-huh-RAP-tor
@@ -90324,7 +90577,13 @@ genera:
     described: 1998
   Luanchuanraptor:
     genus: Luanchuanraptor
-    parent: Dromaeosauridae
+    parent: Velociraptorinae
+    dispute:
+      summary: |
+        Luanchuanraptor is an Asian dromaeosaurid known from an associated but partial skeleton and is rarely included in phylogenetic analyses. The analyses that do include it recover it as a velociraptorine (Hartman et al., 2019; Pei et al., 2020), the placement adopted here, but its position is weakly constrained.
+      history:
+        - date: 2026-07-01
+          note: Moved from Dromaeosauridae to Velociraptorinae following Hartman et al. (2019) and Pei et al. (2020); understudied, position weakly constrained.
     pronunciation:
       phonetic: lwahn-CHWAHN-RAP-tor
     etymology: Named after Luanchuan, Henan Province, China combined with Latin raptor (thief/seizer); meaning "Luanchuan thief"
@@ -90420,6 +90679,8 @@ genera:
       - Paraves
       - Deinonychosauria
       - Dromaeosauridae
+      - Eudromaeosauria
+      - Velociraptorinae
     authors: Lü, J.-C.; Xu, L.; Zhang, X.-L.; Ji, Q.; Jia, S.-H.; Hu, W.-Y.; Zhang, J.-M.; Wu, Y.-H.
     described: 2007
   Lucianovenator:
@@ -92301,6 +92562,12 @@ genera:
   Mahakala:
     genus: Mahakala
     parent: Halszkaraptorinae
+    dispute:
+      summary: |
+        Mahakala was originally described as the basalmost dromaeosaurid (Turner et al., 2007) and is still recovered in that position by some analyses. Cau et al. (2017) instead recovered it within Halszkaraptorinae, the placement adopted here and followed by Jones et al. (2026), though Jasinski et al. (2020) recovered it outside that clade. It is placed in Halszkaraptorinae following the prevailing recent view.
+      history:
+        - date: 2026-07-01
+          note: Placed in Halszkaraptorinae following Cau et al. (2017) and Jones et al. (2026); the basalmost-dromaeosaurid reading is noted.
     etymology: Named after Mahakala, a deity common to Hinduism and Buddhism.
     pronunciation:
       ipa: /mɐɦaːˈkaːlɐ/
@@ -103629,6 +103896,12 @@ genera:
   Neuquenraptor:
     genus: Neuquenraptor
     parent: Unenlagiinae
+    dispute:
+      summary: |
+        Neuquenraptor is recovered as an unenlagiine (Novas and Pol, 2005; Agnolin and Novas, 2013; Jones et al., 2026), but it has repeatedly been suggested to be a junior synonym of Unenlagia comahuensis, and some analyses treat the two as the same operational taxon. It is retained as a valid unenlagiine pending resolution of the synonymy.
+      history:
+        - date: 2026-07-01
+          note: Placed in Unenlagiinae; possible synonymy with Unenlagia noted. The Unenlagiinae dromaeosaurid-versus-avialan debate is recorded on the clade file.
     etymology: Meaning 'Neuquén thief'; from Neuquén Province, Argentina, where it was found, combined with Latin raptor ('thief' or 'plunderer')
     pronunciation:
       phonetic: NEW-kin-RAP-tuhr
@@ -106334,6 +106607,12 @@ genera:
   Nuthetes:
     genus: Nuthetes
     parent: Dromaeosauridae
+    dispute:
+      summary: |
+        Nuthetes destructor is widely regarded as a nomen dubium. It was originally described as a monitor-like lizard (Owen, 1854), later referred to Dromaeosauridae/Velociraptorinae on tooth and jaw characters (Milner, 2002), and subsequently noted to resemble proceratosaurid tyrannosauroids (Rauhut et al., 2010). It is retained provisionally at Dromaeosauridae incertae sedis.
+      history:
+        - date: 2026-07-01
+          note: Retained at Dromaeosauridae incertae sedis; nomen dubium with a shifting history (lizard, dromaeosaurid, proceratosaurid). Flagged for Literature Review.
     etymology: From Koine Greek 'nouthetes' meaning 'one who admonishes' or 'a monitor', referring to the similarity of its teeth to those of a modern monitor lizard.
     pronunciation:
       phonetic: nuth-EE-teez
@@ -107975,11 +108254,14 @@ genera:
   Ornithodesmus:
     genus: Ornithodesmus
     parent: Dromaeosauridae
-    etymology: From Greek 'ornis' (bird) and 'desmos' (link or bond); meaning 'bird link'.
-    description: Ornithodesmus is a genus of small, dromaeosaurid dinosaur from the Isle of Wight in England, dating to about 125 million years ago. The name, along with that of the type and only species, O. cluniculus, was originally assigned to a bird-like sacrum (a series of vertebrae fused to the hip bones), initially believed to come from a bird and subsequently identified as a pterosaur. More complete pterosaur remains were later assigned to Ornithodesmus. More recently, a detailed analysis determined that the original specimen in fact came from a small theropod, specifically a dromaeosaur, making it one of the first dromaeosaurs known to science. All pterosaurian material previously assigned to this genus has been renamed Istiodactylus.
     dispute:
       summary: |
-        Originally described as a bird (Seeley, 1887) and long treated as a pterosaur, the holotype sacrum was reidentified as a small theropod by Howse and Milner (1993), who referred it to Theropoda (as a troodontid) and regarded the genus as a nomen vanum given the limited material. Later analyses placed it in Dromaeosauridae (Naish and Martill, 2007) and among unenlagiine dromaeosaurids (Hartman et al., 2019). Its validity and precise placement remain debated.
+        Ornithodesmus cluniculus is based on a single sacrum long misidentified as a bird (Seeley, 1887) and then a pterosaur before Howse and Milner (1993) reidentified it as a small theropod and regarded the genus as a nomen vanum given the limited material. It was later referred to Dromaeosauridae (Naish and Martill, 2007) and recovered as a very basal dromaeosaurid, possibly a member of Unenlagiidae (Hartman et al., 2019). Given the fragmentary type its validity and precise placement remain debated; it is retained at Dromaeosauridae incertae sedis.
+      history:
+        - date: 2026-07-01
+          note: Retained at Dromaeosauridae incertae sedis; sacrum-only holotype, possibly unenlagiine (Hartman et al., 2019). Flagged for Literature Review.
+    etymology: From Greek 'ornis' (bird) and 'desmos' (link or bond); meaning 'bird link'.
+    description: Ornithodesmus is a genus of small, dromaeosaurid dinosaur from the Isle of Wight in England, dating to about 125 million years ago. The name, along with that of the type and only species, O. cluniculus, was originally assigned to a bird-like sacrum (a series of vertebrae fused to the hip bones), initially believed to come from a bird and subsequently identified as a pterosaur. More complete pterosaur remains were later assigned to Ornithodesmus. More recently, a detailed analysis determined that the original specimen in fact came from a small theropod, specifically a dromaeosaur, making it one of the first dromaeosaurs known to science. All pterosaurian material previously assigned to this genus has been renamed Istiodactylus.
     diet: carnivore
     locomotion: bipedal
     paleoenvironment:
@@ -121058,6 +121340,12 @@ genera:
   Pyroraptor:
     genus: Pyroraptor
     parent: Dromaeosauridae
+    dispute:
+      summary: |
+        Pyroraptor is a fragmentary European dromaeosaurid whose finer placement is uncertain. It has been treated as a labile wildcard taxon (Turner et al., 2012), placed as a basal dromaeosaurid (Cau and Madzia, 2021), and suggested to have unenlagiine-like foot morphology (Longrich et al., 2022). It is placed at Dromaeosauridae incertae sedis.
+      history:
+        - date: 2026-07-01
+          note: Placed at Dromaeosauridae incertae sedis (least-inclusive uncontested clade); fragmentary, with basal-dromaeosaurid and possible unenlagiine affinities proposed.
     pronunciation:
       phonetic: PIE-ro-RAP-tor
     etymology: From Greek pyr (fire) and Latin raptor (thief); meaning "fire thief", named because the first fossils were found after a forest fire.
@@ -122796,6 +123084,12 @@ genera:
   Rahonavis:
     genus: Rahonavis
     parent: Unenlagiinae
+    dispute:
+      summary: |
+        Rahonavis has an unusually contested position even among unenlagiines. It was originally described as a bird more derived than Archaeopteryx (Forster et al., 1998), and several analyses continue to recover it on the avialan stem (Agnolin and Novas, 2013; Cau, 2018; as the Overoraptor + Rahonavis clade sister to Avialae in Motta et al., 2020). Other analyses recover it as a dromaeosaurid unenlagiine (Makovicky et al., 2005; Turner et al., 2012; Hartman et al., 2019, the last requiring ten extra steps to make it avialan). It is placed in Unenlagiinae following the latter, with the avialan hypothesis noted.
+      history:
+        - date: 2026-07-01
+          note: Placed in Unenlagiinae following the dromaeosaurid hypothesis (Makovicky et al., 2005; Turner et al., 2012; Hartman et al., 2019); the recurring avialan-bird hypothesis is recorded. This per-genus dispute supplements the clade-level Unenlagiinae debate.
     pronunciation:
       phonetic: rah-HOON-a-vis
     etymology: From Malagasy 'rahona' meaning 'cloud' or 'menace' and Latin 'avis' meaning 'bird', named for its bird-like nature and discovery in Madagascar.
@@ -124638,6 +124932,12 @@ genera:
   Richardoestesia:
     genus: Richardoestesia
     parent: Dromaeosauridae
+    dispute:
+      summary: |
+        Richardoestesia is a jaw- and tooth-based taxon most often treated as a form taxon or nomen dubium; its describers assigned it only to Maniraptora, family unknown (Currie et al., 1990), and it is used across many formations to denote a general tooth morphology rather than a natural taxon (Larson and Currie, 2013). Its referral to Dromaeosauridae is uncertain; it is retained provisionally at Dromaeosauridae incertae sedis.
+      history:
+        - date: 2026-07-01
+          note: Retained at Dromaeosauridae incertae sedis; tooth/form taxon, formally Maniraptora family-unknown, dromaeosaurid affinity uncertain. Flagged for Literature Review.
     pronunciation:
       phonetic: ri-KARD-o-es-TEE-zee-a
     etymology: Named in honor of paleontologist Richard Estes, with the Latinised possessive form 'Richardoestesia' combining his first name Richard with his surname Estes.
@@ -130378,7 +130678,13 @@ genera:
     described: 1983
   Shanag:
     genus: Shanag
-    parent: Microraptorinae
+    parent: Dromaeosauridae
+    dispute:
+      summary: |
+        Shanag is a small basal dromaeosaurid whose finer placement is unsettled. It is most often recovered among the basal dromaeosaurids, between Microraptorinae and Eudromaeosauria (Turner et al., 2012; Jones et al., 2026), but is sometimes recovered within Microraptorinae, and Agnolin and Novas (2013) suggested it may be a basal averaptoran closer to birds. It is placed at Dromaeosauridae incertae sedis pending resolution.
+      history:
+        - date: 2026-07-01
+          note: Moved from Microraptorinae to Dromaeosauridae incertae sedis (least-inclusive uncontested clade); basal-dromaeosaurid, microraptorine, and averaptoran hypotheses proposed.
     etymology: Named after the 'shanag', the black-hatted dancers who perform in the Buddhist Cham ceremonial dance, referring to the locality in Mongolia where it was found.
     description: Shanag is a genus of paravian theropod dinosaur from the Early Cretaceous Period of Mongolia. It may be a dromaeosaurid, but some researchers are skeptical of this classification. The type species is S. ashile.
     diet: carnivore
@@ -130485,7 +130791,6 @@ genera:
       - Paraves
       - Deinonychosauria
       - Dromaeosauridae
-      - Microraptorinae
     authors: Turner, A. H.; Hwang, S. H.; Norell, M. A.
     described: 2007
   Shantungosaurus:
@@ -131396,7 +131701,7 @@ genera:
     described: 2005
   Shri:
     genus: Shri
-    parent: Dromaeosauridae
+    parent: Velociraptorinae
     pronunciation:
       ipa: /ʃriː/
       phonetic: shree
@@ -131495,6 +131800,8 @@ genera:
       - Paraves
       - Deinonychosauria
       - Dromaeosauridae
+      - Eudromaeosauria
+      - Velociraptorinae
     authors: Turner, A. H.; Montanari, S.; Norell, M. A.
     described: 2021
   Shuangbaisaurus:
@@ -144790,6 +145097,12 @@ genera:
   Tianyuraptor:
     genus: Tianyuraptor
     parent: Dromaeosauridae
+    dispute:
+      summary: |
+        The finer placement of Tianyuraptor is unsettled. It has been recovered as a basal microraptorine (Turner et al., 2012; Agnolin and Novas, 2013) and, more often in recent work, as a short-armed basal dromaeosaurid just outside Microraptorinae and stemward of Eudromaeosauria, sometimes in a clade with Zhenyuanlong and Daurlong (Lu and Brusatte, 2015; Wang et al., 2022; Jones et al., 2026). It is placed at Dromaeosauridae incertae sedis pending resolution.
+      history:
+        - date: 2026-07-01
+          note: Placed at Dromaeosauridae incertae sedis (least-inclusive uncontested clade); microraptorine and basal short-armed-dromaeosaurid hypotheses proposed.
     pronunciation:
       phonetic: tyen-YOO-RAP-tor
     etymology: Named after the Shandong Tianyu Museum of Nature where the holotype specimen is housed, combined with Latin 'raptor' meaning 'robber', referring to the action of grabbing prey
@@ -151040,7 +151353,7 @@ genera:
     described: 2010
   Utahraptor:
     genus: Utahraptor
-    parent: Eudromaeosauria
+    parent: Dromaeosaurinae
     pronunciation:
       phonetic: YOO-tah-RAP-tor
     etymology: Named for the state of Utah, USA, where the fossils were found, combined with Latin 'raptor' meaning 'robber' or 'plunderer'.
@@ -151158,6 +151471,7 @@ genera:
       - Deinonychosauria
       - Dromaeosauridae
       - Eudromaeosauria
+      - Dromaeosaurinae
     authors: Kirkland, J. I.; Burge, D.; R. Gaston
     described: 1993
   Utetitan:
@@ -151834,6 +152148,12 @@ genera:
   Variraptor:
     genus: Variraptor
     parent: Dromaeosauridae
+    dispute:
+      summary: |
+        The validity of Variraptor mechinorum is contested. It was erected as a French dromaeosaurid on vertebrae and a humerus (Le Loeuff and Buffetaut, 1998), but Allain and Taquet (2000) argued the holotype lacks distinguishing features and treated it as a nomen dubium, a view others have disputed. Where analyzed it has been placed as a basal dromaeosaurid (Cau and Madzia, 2021). It is retained provisionally at Dromaeosauridae incertae sedis.
+      history:
+        - date: 2026-07-01
+          note: Retained at Dromaeosauridae incertae sedis; validity contested (possible nomen dubium, possible synonym of Pyroraptor). Flagged for Literature Review.
     pronunciation:
       phonetic: VARR-i-rap-tor
       ipa: /ˈværɪræptər/
@@ -152339,6 +152659,12 @@ genera:
   Vectiraptor:
     genus: Vectiraptor
     parent: Eudromaeosauria
+    dispute:
+      summary: |
+        Vectiraptor is known only from a few dorsal vertebrae and a partial sacrum, and no cladistic analysis has been run for it. Its describers argued from vertebral characters that it is a eudromaeosaur, perhaps a basal member of the group or its sister taxon, but stressed that more complete material is needed (Longrich et al., 2022). It is placed at Eudromaeosauria incertae sedis.
+      history:
+        - date: 2026-07-01
+          note: Placed at Eudromaeosauria incertae sedis (least-inclusive uncontested clade); fragmentary, no numerical analysis available.
     etymology: Combines Latin 'Vectis' meaning 'Isle of Wight' and Latin 'raptor' meaning 'thief'; the species name honors discoverer Mick Green.
     pronunciation:
       phonetic: VEC-tee-RAP-tuh
@@ -155146,7 +155472,7 @@ genera:
     described: 2013
   Wulong:
     genus: Wulong
-    parent: Dromaeosauridae
+    parent: Microraptorinae
     pronunciation:
       phonetic: WOO-long
     etymology: From Chinese 'wu' meaning 'dancing' and 'long' meaning 'dragon', in reference to the specimen's sprightly preserved pose.
@@ -155254,6 +155580,7 @@ genera:
       - Paraves
       - Deinonychosauria
       - Dromaeosauridae
+      - Microraptorinae
     authors: Poust, A. W.; Gao, C.; Varricchio, D. J.; Wu, J.; Zhang, F.
     described: 2020
   Wyleyia:
@@ -159214,6 +159541,12 @@ genera:
   Ypupiara:
     genus: Ypupiara
     parent: Unenlagiinae
+    dispute:
+      summary: |
+        Ypupiara is recovered as an unenlagiine, sister to Austroraptor, by its describers (Brum et al., 2021), the placement adopted here. It is known only from a maxilla and dentary, and the holotype (DGM 921-R) was destroyed in the 2018 Museu Nacional fire, so the placement rests on limited, now-lost material.
+      history:
+        - date: 2026-07-01
+          note: Placed in Unenlagiinae following Brum et al. (2021); fragmentary, holotype destroyed in the 2018 Museu Nacional fire. Flagged for Literature Review.
     etymology: From Tupi (indigenous Brazilian language) meaning 'the one who lives in the water,' derived from a figure in Tupi mythology
     description: Ypupiara is an extinct genus of unenlagiine theropod from the Late Cretaceous Serra da Galga Formation of Brazil. It was the first member of the Dromaeosauridae to be discovered in South America and the first member of the Unenlagiinae to be discovered, but not the first to be identified as such. The type and only species, Y. lopai, is known solely from a specimen that was destroyed in a fire in 2018.
     diet: carnivore
@@ -161023,7 +161356,13 @@ genera:
     described: 2006
   Zapsalis:
     genus: Zapsalis
-    parent: Dromaeosaurinae
+    parent: Dromaeosauridae
+    dispute:
+      summary: |
+        Zapsalis abradens is a tooth-based taxon widely regarded as a nomen dubium. Currie and Evans (2019) showed that teeth referred to Zapsalis in the Dinosaur Park Formation are the second premaxillary teeth of Saurornitholestes langstoni, suggesting the two may be synonymous, but stopped short of formal synonymy because the Montana holotype differs. It is retained provisionally at Dromaeosauridae incertae sedis.
+      history:
+        - date: 2026-07-01
+          note: Moved from Dromaeosaurinae to Dromaeosauridae incertae sedis; tooth-based nomen dubium, possibly the premaxillary teeth of Saurornitholestes (Currie and Evans, 2019). Flagged for Literature Review.
     pronunciation:
       phonetic: zap-SAL-is
     etymology: From Greek za meaning 'thorough' (an intensifying prefix) and psalis meaning 'pair of scissors'; translates as 'thorough scissors,' referring to the cutting teeth
@@ -161124,8 +161463,6 @@ genera:
       - Paraves
       - Deinonychosauria
       - Dromaeosauridae
-      - Eudromaeosauria
-      - Dromaeosaurinae
     authors: Cope, E. D.
     described: 1876
   Zaraapelta:
@@ -161732,6 +162069,12 @@ genera:
   Zhenyuanlong:
     genus: Zhenyuanlong
     parent: Dromaeosauridae
+    dispute:
+      summary: |
+        Zhenyuanlong is a large, short-armed Jehol dromaeosaurid whose finer placement is unresolved. Its describers recovered the Liaoning dromaeosaurids in a basal polytomy and explicitly did not recover a Zhenyuanlong + Tianyuraptor clade (Lu and Brusatte, 2015), whereas Wang et al. (2022) and Jones et al. (2026) group it with Tianyuraptor and Daurlong just stemward of Eudromaeosauria. It is placed at Dromaeosauridae incertae sedis.
+      history:
+        - date: 2026-07-01
+          note: Placed at Dromaeosauridae incertae sedis (least-inclusive uncontested clade); basal position with weak support, short-armed grouping with Tianyuraptor and Daurlong not universally recovered.
     etymology: Named after Sun Zhenyuan, who discovered the specimen, combined with Chinese Pinyin lóng (龙/龍) meaning 'dragon'; thus 'Zhenyuan's dragon'
     pronunciation:
       phonetic: jen-HWAHN-long
