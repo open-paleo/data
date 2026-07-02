@@ -1,7 +1,7 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
-import { parse as parseYamlContent } from "yaml";
-import type { FlaggedSignoffs, FlaggedSources, InstitutionEntry, TreeNode } from "./types.ts";
+import { parse as parseYamlContent, stringify as stringifyYaml } from "yaml";
+import type { FlaggedSignoffs, FlaggedSources, InstitutionEntry, Reference, TreeNode } from "./types.ts";
 
 /**
  * Escapes a string for safe inclusion as a literal in a regular expression.
@@ -42,6 +42,57 @@ export function referenceBucket(key: string): string
     const folded = nonDecomposingLetterFolds[first] ?? first;
 
     return /^[a-z]$/.test(folded) ? folded : "_";
+}
+
+/**
+ * Canonical field order for a store reference file, `id` first.
+ */
+const referenceFieldOrder: Array<keyof Reference> = [
+    "id", "authors", "year", "title", "journal", "book", "series",
+    "publisher", "volume", "issue", "pages", "article_number", "doi",
+    "isbn", "url",
+];
+
+/**
+ * Writes a reference to the store at `references/<bucket>/<id>.yml` with the
+ * canonical field order, creating the bucket directory as needed. Existing
+ * store files are left untouched — the store is the single source of truth, so
+ * a re-run never clobbers a curated entry. `notes` is never written (it is
+ * per-citation and lives on the in-file pointer). Returns whether a new file
+ * was created.
+ *
+ * @param dataRoot - Repository root containing the `references/` directory.
+ * @param entry - The reference record; must carry an `id`.
+ * @returns True when a new store file was written, false when it already existed.
+ */
+export function writeStoreReference(dataRoot: string, entry: Reference): boolean
+{
+    if (!entry.id)
+    {
+        throw new Error("writeStoreReference: entry is missing an id");
+    }
+
+    const filePath = path.join(dataRoot, "references", referenceBucket(entry.id), `${entry.id}.yml`);
+
+    if (fs.existsSync(filePath))
+    {
+        return false;
+    }
+
+    const ordered: Record<string, unknown> = {};
+
+    for (const field of referenceFieldOrder)
+    {
+        if (entry[field] !== undefined && entry[field] !== null && entry[field] !== "")
+        {
+            ordered[field] = entry[field];
+        }
+    }
+
+    fs.mkdirSync(path.dirname(filePath), { recursive: true });
+    fs.writeFileSync(filePath, stringifyYaml(ordered, { lineWidth: 80 }));
+
+    return true;
 }
 
 /**

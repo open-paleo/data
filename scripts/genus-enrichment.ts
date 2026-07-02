@@ -17,11 +17,12 @@
 import * as path from "node:path";
 import * as url from "node:url";
 
-import type { GenusData, Schema, StageInfo } from "./types.ts";
+import type { GenusData, Reference, Schema, StageInfo } from "./types.ts";
 import {
     parseYaml,
     loadInstitutionRegistry,
     flattenInstitutionMap,
+    writeStoreReference,
 } from "./utilities.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
@@ -2121,51 +2122,51 @@ export function toGenusYaml(enriched: EnrichedGenus, reference: Record<string, s
     {
         const surname = (reference.authors ?? "")
             .split(",")[0].trim().toLowerCase().replace(/\s+/g, "");
-        const referenceId = `${surname}${reference.year}`;
+        // Universal `a`-suffixing: a fresh describing paper starts at `a`.
+        // Collisions are resolved manually (citation-key disambiguation policy).
+        const referenceId = `${surname}${reference.year}a`;
 
-        const referenceEntry: Record<string, unknown> = { id: referenceId };
-
-        referenceEntry.authors = reference.authors;
-        referenceEntry.year = parseInt(reference.year, 10);
-        referenceEntry.title = reference.title;
+        const storeEntry: Reference = {
+            id: referenceId,
+            authors: reference.authors,
+            year: parseInt(reference.year, 10),
+            title: reference.title,
+        };
 
         if (reference.journal)
         {
-            referenceEntry.journal = reference.journal;
+            storeEntry.journal = reference.journal;
         }
 
         if (reference.volume)
         {
-            referenceEntry.volume = reference.volume;
+            storeEntry.volume = reference.volume;
         }
 
         if (reference.issue)
         {
-            referenceEntry.issue = reference.issue;
+            storeEntry.issue = reference.issue;
         }
 
         if (reference.pages)
         {
-            referenceEntry.pages = reference.pages;
+            storeEntry.pages = reference.pages;
         }
 
         if (reference.publisher)
         {
-            referenceEntry.publisher = reference.publisher;
+            storeEntry.publisher = reference.publisher;
         }
 
         if (reference.doi)
         {
-            referenceEntry.doi = reference.doi;
-            referenceEntry.url = `http://dx.doi.org/${reference.doi}`;
+            storeEntry.doi = reference.doi;
         }
 
-        genus.references = [referenceEntry] as GenusData["references"];
+        writeStoreReference(root, storeEntry);
 
-        if (genus.references?.[0]?.id)
-        {
-            (species as Record<string, unknown>).erected_in = genus.references[0].id;
-        }
+        genus.references = [{ id: referenceId }] as GenusData["references"];
+        (species as Record<string, unknown>).erected_in = referenceId;
     }
 
     return genus;

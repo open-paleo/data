@@ -39,6 +39,7 @@ import * as url from "node:url";
 import { parse as parseYamlContent, stringify as stringifyYaml } from "yaml";
 
 import type { GenusData, Reference, Species } from "./types.ts";
+import { referenceBucket, writeStoreReference } from "./utilities.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
@@ -164,7 +165,6 @@ function readBibReferences(): Map<string, Reference>
         if (fields.doi)
         {
             entry.doi = fields.doi;
-            entry.url = `http://dx.doi.org/${fields.doi}`;
         }
 
         result.set(key, entry);
@@ -486,30 +486,49 @@ function appendReference(
     const referenceEntry = buildReferenceEntry(extraction.citation_key, bibIndex);
     const isPlaceholder = referenceEntry.notes?.startsWith("TODO:") ?? false;
 
-    if (!extraction.is_describing && extraction.notes)
+    const localNotes = (!extraction.is_describing && extraction.notes)
+        ? extraction.notes
+        : undefined;
+
+    if (isPlaceholder)
     {
-        if (isPlaceholder)
+        // No reference-store entry yet, so the paper cannot be cited (a pointer
+        // must resolve to a complete store entry). Stash any notes and warn; the
+        // SKILL adds the store file from papers-needed.md, then re-runs apply.
+        if (localNotes)
         {
             const pendingDir = path.join(targetDir, "pending-notes");
             fs.mkdirSync(pendingDir, { recursive: true });
             fs.writeFileSync(
                 path.join(pendingDir, `${extraction.citation_key}.txt`),
-                extraction.notes,
+                localNotes,
                 "utf8",
             );
-            warnings.push(
-                `Reference ${extraction.citation_key}: bib has no entry; agent notes `
-                + `stashed at ${path.relative(root, pendingDir)}/${extraction.citation_key}.txt `
-                + "for the SKILL to merge after step 4b.",
-            );
         }
-        else
-        {
-            referenceEntry.notes = extraction.notes;
-        }
-    }
 
-    genus.references = [...referenceList, referenceEntry];
+        warnings.push(
+            `Reference ${extraction.citation_key}: no reference-store entry yet; citation skipped. `
+            + `Add references/${referenceBucket(extraction.citation_key)}/${extraction.citation_key}.yml `
+            + "from the papers-needed.md citation"
+            + (localNotes ? `; agent notes stashed at ${path.relative(root, path.join(targetDir, "pending-notes"))}/${extraction.citation_key}.txt` : "")
+            + ", then re-run apply.",
+        );
+    }
+    else
+    {
+        const bibFields = { ...referenceEntry };
+        delete bibFields.notes;
+        writeStoreReference(root, bibFields);
+
+        const pointer: { id: string; notes?: string } = { id: extraction.citation_key };
+
+        if (localNotes)
+        {
+            pointer.notes = localNotes;
+        }
+
+        genus.references = [...referenceList, pointer];
+    }
 
     return warnings;
 }

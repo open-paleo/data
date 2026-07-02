@@ -46,6 +46,7 @@ import * as url from "node:url";
 import { parse as parseYamlContent, stringify as stringifyYaml } from "yaml";
 
 import type { GenusData } from "./types.ts";
+import { referenceBucket, writeStoreReference } from "./utilities.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
@@ -181,7 +182,6 @@ function readBibReferences(): Map<string, ReferenceEntry>
         if (fields.doi)
         {
             entry.doi = fields.doi;
-            entry.url = `http://dx.doi.org/${fields.doi}`;
         }
 
         result.set(key, entry);
@@ -507,41 +507,55 @@ function applyExtraction(
         const referenceEntry = buildReferenceEntry(extraction.citation_key, bibIndex);
         const isPlaceholder = referenceEntry.notes?.startsWith("TODO:") ?? false;
 
-        // For supplementary papers, surface the agent's `notes`
-        // field on the reference entry so the genus YAML records
-        // the paper's role (e.g. "Reassessment that disentangled
-        // the chimeric holotype..."). Describing-paper notes are
-        // typically about the taxon itself rather than the paper's
-        // role, so we leave them off the reference.
-        //
-        // When the bib lookup returned a TODO placeholder, do NOT
-        // overwrite the notes — the placeholder is the SKILL's cue
-        // to fill in metadata. Stash the agent's notes in a side
-        // file so the SKILL can pick them up after filling metadata.
-        if (!extraction.is_describing && extraction.notes)
+        // Supplementary papers record their role as per-citation `notes` on the
+        // in-file pointer; describing-paper notes are about the taxon, so they
+        // are left off the citation.
+        const localNotes = (!extraction.is_describing && extraction.notes)
+            ? extraction.notes
+            : undefined;
+
+        if (isPlaceholder)
         {
-            if (isPlaceholder)
+            // The paper has no reference-store entry yet, so it cannot be cited
+            // — a pointer must resolve to a complete store entry. Stash any
+            // notes and warn; the SKILL adds the store file from the
+            // papers-needed.md citation, then re-runs apply.
+            if (localNotes)
             {
                 const pendingDir = path.join(stagingIntakeDir, extraction.genus, "pending-notes");
                 fs.mkdirSync(pendingDir, { recursive: true });
                 fs.writeFileSync(
                     path.join(pendingDir, `${extraction.citation_key}.txt`),
-                    extraction.notes,
+                    localNotes,
                     "utf8",
                 );
-                warnings.push(
-                    `Reference ${extraction.citation_key}: bib has no entry; agent notes `
-                    + `stashed at staging/intake/${extraction.genus}/pending-notes/${extraction.citation_key}.txt `
-                    + "for the SKILL to merge after step 4b.",
-                );
             }
-            else
-            {
-                referenceEntry.notes = extraction.notes;
-            }
-        }
 
-        genus.references = [...referenceList, referenceEntry];
+            warnings.push(
+                `Reference ${extraction.citation_key}: no reference-store entry yet; citation skipped. `
+                + `Add references/${referenceBucket(extraction.citation_key)}/${extraction.citation_key}.yml `
+                + "from the papers-needed.md citation"
+                + (localNotes ? ` (agent notes stashed under staging/intake/${extraction.genus}/pending-notes/)` : "")
+                + ", then re-run apply.",
+            );
+        }
+        else
+        {
+            // Write the bibliographic record to the store (no-clobber) and cite
+            // it with an `{id, notes?}` pointer.
+            const bibFields = { ...referenceEntry };
+            delete bibFields.notes;
+            writeStoreReference(root, bibFields);
+
+            const pointer: { id: string; notes?: string } = { id: extraction.citation_key };
+
+            if (localNotes)
+            {
+                pointer.notes = localNotes;
+            }
+
+            genus.references = [...referenceList, pointer];
+        }
     }
 
     return warnings;
