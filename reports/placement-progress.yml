@@ -35,7 +35,7 @@ Aeolosaurus: {status: placed, parent: Aeolosaurini, batch: Titanosauria, date: "
 Aepisaurus: {status: placed, parent: Sauropoda, batch: "Sauropoda backbone", date: "2026-06-29"}
 Aepyornithomimus: {status: placed, parent: Ornithomimidae, batch: Ornithomimosauria, date: "2026-06-30"}
 Aerosteon: {status: placed, parent: Megaraptoridae, batch: Coelurosauria-backbone, date: "2026-07-01"}
-Afromimus: {status: deferred, batch: Ornithomimosauria, note: reparented to Ceratosauria (non-ornithomimosaur); ceratosaur backbone}
+Afromimus: {status: placed, parent: Ceratosauria, batch: theropod-backbone reconciliation, date: "2026-07-02"}
 Afrovenator: {status: placed, parent: Afrovenatorinae, batch: Megalosauroidea, date: "2026-07-01"}
 Agathaumas: {status: placed, parent: Ceratopsidae, batch: Ceratopsidae, date: "2026-06-26"}
 Agilisaurus: {status: placed, parent: Neornithischia, batch: "basal Ornithischia", date: "2026-06-29"}
@@ -68,7 +68,7 @@ Alnashetri: {status: placed, parent: Alvarezsauroidea, batch: Alvarezsauria, dat
 Alocodon: {status: placed, parent: Ornithischia, batch: "basal Ornithischia", date: "2026-06-29"}
 Alpkarakush: {status: placed, parent: Metriacanthosauridae, batch: Allosauroidea (Allosauria + Metriacanthosauridae), date: "2026-07-02"}
 Altirhinus: {status: placed, parent: Hadrosauroidea, batch: Iguanodontia, date: "2026-06-29"}
-Altispinax: {status: deferred, batch: "basal Theropoda", parent: Tetanurae, note: "reparented to Tetanurae; Megalosauroidea/Allosauroidea pass", date: "2026-06-30"}
+Altispinax: {status: placed, parent: Tetanurae, batch: theropod-backbone reconciliation, date: "2026-07-02"}
 Alvarezsaurus: {status: placed, parent: Alvarezsauridae, batch: Alvarezsauria, date: "2026-07-01"}
 Alwalkeria: {status: placed, parent: Archosauria, batch: "basal Theropoda", date: "2026-06-30"}
 Alxasaurus: {status: placed, parent: Therizinosauroidea, batch: Therizinosauria, date: "2026-07-01"}
@@ -108,7 +108,7 @@ Anteavis: {status: placed, parent: Theropoda, batch: "basal Theropoda", date: "2
 Antetonitrus: {status: placed, parent: Lessemsauridae, batch: "basal Sauropodomorpha", date: "2026-06-29"}
 Anzu: {status: placed, parent: Caenagnathidae, batch: Oviraptorosauria, date: "2026-07-01"}
 Aoniraptor: {status: placed, parent: Megaraptora, batch: Coelurosauria-backbone, date: "2026-07-01"}
-Aorun: {status: deferred, batch: Alvarezsauria, note: "theropod-backbone reconciliation; unstable (alvarezsaurian vs compsognathid vs allosauroid), parked at Avetheropoda"}
+Aorun: {status: placed, parent: Avetheropoda, batch: theropod-backbone reconciliation, date: "2026-07-02"}
 Apatoraptor: {status: placed, parent: Caenagnathidae, batch: Oviraptorosauria, date: "2026-07-01"}
 Apatosaurus: {status: placed, parent: Apatosaurinae, batch: Diplodocoidea, date: "2026-06-30"}
 Appalachiosaurus: {status: placed, parent: Eutyrannosauria, batch: Tyrannosauroidea, date: "2026-06-26"}
@@ -286,8 +286,8 @@ Chialingosaurus: {status: placed, parent: Stegosauria, batch: Stegosauria, date:
 Chiayusaurus: {status: placed, parent: Sauropoda, batch: "Sauropoda backbone", date: "2026-06-29"}
 Chienkosaurus: {status: placed, parent: Tetanurae, batch: basal Tetanurae / Avetheropoda residue, date: "2026-07-02"}
 Chilantaisaurus: {status: placed, parent: Avetheropoda, batch: basal Tetanurae / Avetheropoda residue, date: "2026-07-02"}
-Chilesaurus: {status: deferred, batch: "basal Ornithischia", note: theropod/ornithischian backbone reconciliation}
-Chindesaurus: {status: deferred, batch: "basal Theropoda", parent: Saurischia, note: "parked at Saurischia; Morphoraptora vs base-of-Theropoda", date: "2026-06-30"}
+Chilesaurus: {status: placed, parent: Dinosauria, batch: theropod-backbone reconciliation, date: "2026-07-02"}
+Chindesaurus: {status: placed, parent: Saurischia, batch: theropod-backbone reconciliation, date: "2026-07-02"}
 Chingkankousaurus: {status: placed, parent: Tyrannosauroidea, batch: Tyrannosauroidea, date: "2026-06-26"}
 Chinshakiangosaurus: {status: placed, parent: Sauropoda, batch: "Sauropoda backbone", date: "2026-06-29"}
 Chirostenotes: {status: placed, parent: Caenagnathidae, batch: Oviraptorosauria, date: "2026-07-01"}
@@ -338,7 +338,7 @@ Cryptosaurus: {status: placed, parent: Ankylosauria, batch: Ankylosauria, date: 
 Cumnoria: {status: placed, parent: Styracosterna, batch: Hadrosauroidea, date: "2026-06-27"}
 Daanosaurus: {status: placed, parent: Eusauropoda, batch: "Sauropoda backbone", date: "2026-06-29"}
 Dacentrurus: {status: placed, parent: Dacentrurinae, batch: Stegosauria, date: "2026-06-26"}
-Daemonosaurus: {status: deferred, batch: "basal Theropoda", parent: Saurischia, note: "parked at Saurischia; Morphoraptora vs base-of-Theropoda", date: "2026-06-30"}
+Daemonosaurus: {status: placed, parent: Saurischia, batch: theropod-backbone reconciliation, date: "2026-07-02"}
 Dahalokely: {status: placed, parent: Abelisauroidea, batch: Ceratosauria, date: "2026-06-30"}
 Dakotadon: {status: placed, parent: Styracosterna, batch: Hadrosauroidea, date: "2026-06-27"}
 Dakotaraptor: {status: placed, parent: Dromaeosauridae, batch: Dromaeosauridae, date: "2026-07-01"}
@@ -415,7 +415,7 @@ Elmisaurus: {status: placed, parent: Caenagnathidae, batch: Oviraptorosauria, da
 Elopteryx: {status: placed, parent: Maniraptora, batch: "Avialae + basal paravians", date: "2026-07-01"}
 Elrhazosaurus: {status: placed, parent: Dryosauridae, batch: Iguanodontia, date: "2026-06-29"}
 Emausaurus: {status: placed, parent: Thyreophora, batch: "basal Ornithischia", date: "2026-06-29"}
-Embasaurus: {status: deferred, batch: "basal Theropoda", parent: Tetanurae, note: "reparented to Tetanurae; Megalosauroidea pass", date: "2026-06-30"}
+Embasaurus: {status: placed, parent: Tetanurae, batch: theropod-backbone reconciliation, date: "2026-07-02"}
 Emiliasaura: {status: placed, parent: Dryosauridae, batch: Iguanodontia, date: "2026-06-29"}
 Enigmacursor: {status: placed, parent: Neornithischia, batch: "Ornithopoda C", date: "2026-06-29"}
 Enigmosaurus: {status: placed, parent: Therizinosauroidea, batch: Therizinosauria, date: "2026-07-01"}
@@ -529,7 +529,7 @@ Gryphoceratops: {status: placed, parent: Leptoceratopsidae, batch: Ceratopsia, d
 Gryponyx: {status: placed, parent: Massospondylidae, batch: "basal Sauropodomorpha", date: "2026-06-29"}
 Gryposaurus: {status: placed, parent: Saurolophinae, batch: Hadrosauridae, date: "2026-06-27"}
 Guaibasaurus: {status: placed, parent: Sauropodomorpha, batch: "basal Sauropodomorpha", date: "2026-06-29"}
-Gualicho: {status: deferred, batch: Tyrannosauroidea, note: theropod-backbone reconciliation}
+Gualicho: {status: placed, parent: Avetheropoda, batch: theropod-backbone reconciliation, date: "2026-07-02"}
 Guanlong: {status: placed, parent: Proceratosauridae, batch: Tyrannosauroidea, date: "2026-06-26"}
 Guemesia: {status: placed, parent: Brachyrostra, batch: Ceratosauria, date: "2026-06-30"}
 Gwyneddosaurus: {status: placed, parent: Archosauromorpha, batch: "basal Theropoda", date: "2026-06-30"}
@@ -1018,8 +1018,8 @@ Protognathosaurus: {status: placed, parent: Eusauropoda, batch: "Sauropoda backb
 Protohadros: {status: placed, parent: Hadrosauromorpha, batch: Hadrosauroidea, date: "2026-06-27"}
 Psittacosaurus: {status: placed, parent: Ceratopsia, batch: Ceratopsia, date: "2026-06-27"}
 Pteropelyx: {status: placed, parent: Hadrosauridae, batch: Hadrosauridae, date: "2026-06-27"}
-Pterospondylus: {status: deferred, batch: Ceratosauria, note: evicted to Coelophysoidea; coelophysoid/theropod-backbone pass}
-Ptychotherates: {status: deferred, batch: "basal Theropoda", parent: Saurischia, note: "parked at Saurischia; Morphoraptora vs base-of-Theropoda", date: "2026-06-30"}
+Pterospondylus: {status: placed, parent: Coelophysoidea, batch: theropod-backbone reconciliation, date: "2026-07-02"}
+Ptychotherates: {status: placed, parent: Saurischia, batch: theropod-backbone reconciliation, date: "2026-07-02"}
 Puertasaurus: {status: placed, parent: Lognkosauria, batch: Titanosauria, date: "2026-06-30"}
 Pukyongosaurus: {status: placed, parent: Somphospondyli, batch: "Macronaria (non-titanosaur)", date: "2026-06-30"}
 Pulanesaura: {status: placed, parent: Sauropoda, batch: "Sauropoda backbone", date: "2026-06-29"}
@@ -1119,7 +1119,7 @@ Shingopana: {status: placed, parent: Aeolosaurini, batch: Titanosauria, date: "2
 Shishugounykus: {status: placed, parent: Alvarezsauroidea, batch: Alvarezsauria, date: "2026-07-01"}
 Shixinggia: {status: placed, parent: Heyuanninae, batch: Oviraptorosauria, date: "2026-07-01"}
 Shri: {status: placed, parent: Velociraptorinae, batch: Dromaeosauridae, date: "2026-07-01"}
-Shuangbaisaurus: {status: deferred, batch: "basal Theropoda", parent: Averostra, note: "reparented to Averostra; Ceratosauria/Tetanurae pass", date: "2026-06-30"}
+Shuangbaisaurus: {status: placed, parent: Neotheropoda, batch: theropod-backbone reconciliation, date: "2026-07-02"}
 Shuangmiaosaurus: {status: placed, parent: Hadrosauromorpha, batch: Hadrosauroidea, date: "2026-06-27"}
 Shunosaurus: {status: placed, parent: Eusauropoda, batch: "Sauropoda backbone", date: "2026-06-29"}
 Shuvuuia: {status: placed, parent: Parvicursorinae, batch: Alvarezsauria, date: "2026-07-01"}
@@ -1145,7 +1145,7 @@ Sinornithoides: {status: placed, parent: Troodontidae, batch: Troodontidae, date
 Sinornithomimus: {status: placed, parent: Ornithomimidae, batch: Ornithomimosauria, date: "2026-06-30"}
 Sinornithosaurus: {status: placed, parent: Microraptorinae, batch: Dromaeosauridae, date: "2026-07-01"}
 Sinosauropteryx: {status: placed, parent: Compsognathidae, batch: Coelurosauria-backbone, date: "2026-07-01"}
-Sinosaurus: {status: deferred, batch: "basal Theropoda", parent: Averostra, note: "reparented to Averostra; Ceratosauria/Tetanurae pass", date: "2026-06-30"}
+Sinosaurus: {status: placed, parent: Neotheropoda, batch: theropod-backbone reconciliation, date: "2026-07-02"}
 Sinotyrannus: {status: placed, parent: Proceratosauridae, batch: Tyrannosauroidea, date: "2026-06-26"}
 Sinovenator: {status: placed, parent: Sinovenatorinae, batch: Troodontidae, date: "2026-07-01"}
 Sinraptor: {status: placed, parent: Metriacanthosaurinae, batch: Allosauroidea (Allosauria + Metriacanthosauridae), date: "2026-07-02"}
@@ -1208,7 +1208,7 @@ Tatankacephalus: {status: placed, parent: Nodosauridae, batch: Ankylosauria, dat
 Tataouinea: {status: placed, parent: Rebbachisaurinae, batch: Diplodocoidea, date: "2026-06-30"}
 Tatisaurus: {status: placed, parent: Thyreophora, batch: "basal Ornithischia", date: "2026-06-29"}
 Taurovenator: {status: placed, parent: Carcharodontosaurinae, batch: Carcharodontosauria, date: "2026-07-01"}
-Tawa: {status: deferred, batch: "basal Theropoda", parent: Saurischia, note: "parked at Saurischia; Morphoraptora vs base-of-Theropoda", date: "2026-06-30"}
+Tawa: {status: placed, parent: Saurischia, batch: theropod-backbone reconciliation, date: "2026-07-02"}
 Tazoudasaurus: {status: placed, parent: Gravisauria, batch: "Sauropoda backbone", date: "2026-06-29"}
 Tehuelchesaurus: {status: deferred, parent: Eusauropoda, batch: "Macronaria (non-titanosaur)", note: eusauropod/turiasaur reconciliation}
 Teinurosaurus: {status: placed, parent: Tetanurae, batch: basal Tetanurae / Avetheropoda residue, date: "2026-07-02"}
@@ -1304,7 +1304,7 @@ Vectidromeus: {status: placed, parent: Hypsilophodontidae, batch: "Ornithopoda C
 Vectipelta: {status: placed, parent: Nodosauridae, batch: Ankylosauria, date: "2026-06-26"}
 Vectiraptor: {status: placed, parent: Eudromaeosauria, batch: Dromaeosauridae, date: "2026-07-01"}
 Velafrons: {status: placed, parent: Lambeosaurinae, batch: Hadrosauridae, date: "2026-06-27"}
-Velocipes: {status: deferred, batch: "basal Theropoda", parent: Saurischia, note: "parked at Saurischia; theropod vs neosauropod", date: "2026-06-30"}
+Velocipes: {status: placed, parent: Saurischia, batch: theropod-backbone reconciliation, date: "2026-07-02"}
 Velociraptor: {status: placed, parent: Velociraptorinae, batch: Dromaeosauridae, date: "2026-07-01"}
 Velocisaurus: {status: placed, parent: Noasaurinae, batch: Ceratosauria, date: "2026-06-30"}
 Venenosaurus: {status: placed, parent: Brachiosauridae, batch: "Macronaria (non-titanosaur)", date: "2026-06-30"}
@@ -1316,7 +1316,7 @@ Volgatitan: {status: placed, parent: Colossosauria, batch: Titanosauria, date: "
 Volkheimeria: {status: placed, parent: Gravisauria, batch: "Sauropoda backbone", date: "2026-06-29"}
 Vouivria: {status: placed, parent: Brachiosauridae, batch: "Macronaria (non-titanosaur)", date: "2026-06-30"}
 Vulcanodon: {status: placed, parent: Gravisauria, batch: "Sauropoda backbone", date: "2026-06-29"}
-Wakinosaurus: {status: deferred, batch: "basal Theropoda", parent: Tetanurae, note: "reparented to Tetanurae; Allosauroidea pass", date: "2026-06-30"}
+Wakinosaurus: {status: placed, parent: Tetanurae, batch: theropod-backbone reconciliation, date: "2026-07-02"}
 Walgettosuchus: {status: placed, parent: Theropoda, batch: "basal Theropoda", date: "2026-06-30"}
 Wamweracaudia: {status: placed, parent: Mamenchisauridae, batch: "Sauropoda backbone", date: "2026-06-29"}
 Wannanosaurus: {status: placed, parent: Pachycephalosauria, batch: Pachycephalosauria, date: "2026-06-26"}
