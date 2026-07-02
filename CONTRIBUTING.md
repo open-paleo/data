@@ -64,6 +64,42 @@ in Open Paleo, submit a [Correct Taxonomy](../../issues/new?template=correct-tax
 issue with references showing community adoption — not just the
 original proposal.
 
+## How genera are placed in the tree
+
+Every genus in `genera/` sits at a `parent:` clade that reflects the
+**least-inclusive placement the published literature agrees on** — no more
+precise than the sources support. The tree was assembled by a systematic,
+source-first pass over every genus; the principles below govern both that pass
+and any future placement change.
+
+- **Trace every placement to a primary source.** A genus's parent and any
+  `dispute:` note must derive from an inspected phylogenetic analysis,
+  redescription, or naming paper — never from recall or from an unsourced prior
+  tree.
+- **Place at the least-inclusive *uncontested* clade.** When analyses disagree
+  between clades A and B, the genus is parented at the lowest clade both accept
+  (often an *incertae sedis* position within a backbone node such as `Tetanurae`
+  or `Neosauropoda`), and the finer disagreement is recorded in a `dispute:`
+  block rather than resolved by picking a side.
+- **Weigh independent analyses, not papers.** A reused matrix is one data point;
+  recency, taxon and character sampling, and dedicated-versus-incidental scope
+  all matter. A single new study is *reflected* in a dispute, but only *adopted*
+  as the parent once it has stood unchallenged and been taken up by later work
+  (see the consensus policy above).
+- **Clades earn their place.** A named clade is kept only where it is a useful,
+  currently-used node containing at least one genus; monotypic nodes, tribes,
+  and empty clades are collapsed into the level above. A clade whose own higher
+  position is contested carries that dispute once, in its `clades/` file, not
+  smeared across its members.
+- **Nomina dubia and untested taxa are placed conservatively and flagged.** They
+  are parented at the broadest node their material supports, marked in a
+  `dispute:` block, and logged as a `Literature Review` issue for future
+  revisiting.
+
+Clade authorities are recorded as `erected_in` (the nomenclatural-act paper)
+and, where different, `described_in` (the authoritative diagnostic source), both
+taken from the literature rather than from a taxobox.
+
 ## Neutrality and Good Faith
 
 - **No nomenclatural advocacy.** This project records the state of published taxonomy — it does not take sides in naming disputes. Do not use contributions to promote or suppress a particular name, author, or taxonomic opinion. If you have a personal stake in a naming dispute, disclose it.
