@@ -1,7 +1,7 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-02T21:31:42.916Z
-  clade_count: 195
+  built_at: 2026-07-02T21:58:04.790Z
+  clade_count: 190
   genus_count: 1398
   license: CC-BY-4.0
   schema_version: 1.0.0
@@ -9,32 +9,14 @@ _metadata:
 tree:
   Life:
     Animalia:
-      Arthropoda:
-        Trilobita: {}
-      Mollusca:
-        Cephalopoda:
-          Ammonoidea: {}
       Chordata:
         Vertebrata:
-          Actinopterygii: {}
           Sarcopterygii:
             Tetrapoda:
-              Synapsida:
-                Therapsida:
-                  Dinocephalia:
-                    Tapinocephalidae:
-                      Tapinocephalinae: {}
               Reptilia:
-                Lepidosauria: {}
-                Archosauromorpha:
-                  Tanystropheidae: {}
-                Ichthyosauria: {}
-                Sauropterygia:
-                  Plesiosauria: {}
+                Archosauromorpha: {}
                 Archosauria:
                   Aphanosauria: {}
-                  Pterosauria: {}
-                  Crocodylomorpha: {}
                   Dinosauria:
                     Saurischia:
                       Theropoda:
@@ -223,7 +205,6 @@ tree:
                                               Lambeosaurinae: {}
                       Heterodontosauridae:
                         Heterodontosaurinae: {}
-    Plantae: {}
 clades:
   Abelisauridae:
     description: |
@@ -2552,19 +2533,6 @@ clades:
         pages: 41-83
         doi: 10.1127/njgpa/210/1998/41
         notes: Provided the stem-based phylogenetic definition of Dicraeosauridae.
-  Dinocephalia:
-    description: |
-      Dinocephalia is an extinct group of large therapsids from the Middle Permian. They were among the first large terrestrial vertebrates, with some members exceeding 3 meters in length. Dinocephalians included both herbivorous and carnivorous forms and are characterized by thickened skull bones, often interpreted as adaptations for head-butting behavior. The group went extinct at the end of the Capitanian stage.
-    taxonomy:
-      - Life
-      - Animalia
-      - Chordata
-      - Vertebrata
-      - Sarcopterygii
-      - Tetrapoda
-      - Synapsida
-      - Therapsida
-      - Dinocephalia
   Dinosauria:
     description: |
       Dinosauria is a clade of archosaurian reptiles that first appeared during the Triassic period, approximately 233 million years ago. Dinosaurs are united by a suite of anatomical features including a fully upright (parasagittal) stance, a fully open (perforated) acetabulum in the pelvis, and three or more sacral vertebrae. The clade encompasses two major lineages, Saurischia and Ornithischia, and includes all descendants of their most recent common ancestor, extending to modern birds (Aves).
@@ -7652,48 +7620,6 @@ clades:
         pages: e12362
         doi: 10.7717/peerj.12362
         notes: Provides the modern phylogenetic definition of Styracosterna.
-  Tanystropheidae:
-    description: |
-      Tanystropheidae is a family of non-archosauriform archosauromorphs from the Triassic period, characterized by an extremely elongated neck composed of elongate cervical vertebrae with extensive cervical ribs. Members ranged from small insectivores to large piscivores. The family was widespread during the Triassic, with fossils found in Europe, Asia, the Middle East, and North America.
-    taxonomy:
-      - Life
-      - Animalia
-      - Chordata
-      - Vertebrata
-      - Sarcopterygii
-      - Tetrapoda
-      - Reptilia
-      - Archosauromorpha
-      - Tanystropheidae
-  Tapinocephalidae:
-    description: |
-      Tapinocephalidae is a family of large herbivorous dinocephalians from the Middle Permian Karoo Basin of South Africa. Members are characterized by massive, heavily built bodies and distinctively thickened cranial roofs. Tapinocephalids were among the largest land animals of their time and are divided into the subfamilies Tapinocephalinae and Struthiocephalinae.
-    taxonomy:
-      - Life
-      - Animalia
-      - Chordata
-      - Vertebrata
-      - Sarcopterygii
-      - Tetrapoda
-      - Synapsida
-      - Therapsida
-      - Dinocephalia
-      - Tapinocephalidae
-  Tapinocephalinae:
-    description: |
-      Tapinocephalinae is a subfamily of tapinocephalid dinocephalians, large herbivorous therapsids from the Middle Permian of South Africa. Members are characterized by a low, depressed skull with a thickened cranial roof, interpreted as an adaptation for intraspecific combat. Tapinocephalinae includes some of the largest terrestrial animals of the Permian.
-    taxonomy:
-      - Life
-      - Animalia
-      - Chordata
-      - Vertebrata
-      - Sarcopterygii
-      - Tetrapoda
-      - Synapsida
-      - Therapsida
-      - Dinocephalia
-      - Tapinocephalidae
-      - Tapinocephalinae
   Tetanurae:
     description: |
       Tetanurae, meaning "stiff tails," is a large clade of theropod dinosaurs characterized by stiffened tails with interlocking zygapophyses in the distal caudal vertebrae, and the reduction of the hand to three functional digits. Tetanurans include the megalosauroids, allosaurs, and coelurosaurs (including birds). The clade represents the majority of theropod diversity from the Middle Jurassic onward.
@@ -7728,18 +7654,6 @@ clades:
         journal: Memoirs of the California Academy of Sciences
         volume: "8"
         pages: 1-55
-  Therapsida:
-    description: |
-      Therapsida is a major clade of synapsids that includes mammals and their extinct close relatives. Therapsids were the dominant large terrestrial vertebrates during the Permian period and diversified extensively before and after the end-Permian mass extinction. The clade encompasses a wide range of body plans, from large herbivorous dinocephalians to the small cynodonts that gave rise to mammals.
-    taxonomy:
-      - Life
-      - Animalia
-      - Chordata
-      - Vertebrata
-      - Sarcopterygii
-      - Tetrapoda
-      - Synapsida
-      - Therapsida
   Therizinosauria:
     description: |
       Therizinosauria is the clade of secondarily herbivorous maniraptoran theropods, formerly known as "Segnosauria," ranging from the Early Cretaceous to the end of the Cretaceous of Asia and North America, with its most contentious basal members reaching back into the Early Jurassic. The clade spans a transition from small, lightly built early-diverging forms retaining grasping hands and functionally tridactyl feet to large-bodied later members with barrel-shaped guts, opisthopubic pelves, small leaf-toothed skulls bearing a rhamphotheca, and greatly enlarged manual unguals. Falcarius and Fukuivenator are among the earliest-diverging members, while Therizinosaurus and the therizinosaurids represent the derived extreme.
