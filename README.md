@@ -43,8 +43,8 @@ Open Paleo exists because it solves a different problem:
   vocabularies before it can be merged.
 
 - **Low barrier to contribution.** Anyone with a GitHub account can
-  contribute through the contribution wizard or a pull request. No
-  institutional affiliation or registration required.
+  contribute by opening a pull request. No institutional affiliation or
+  registration required.
 
 - **Taxonomy-focused.** PBDB's core data model is the fossil
   *occurrence* — a specific find at a specific place and time. Open
@@ -144,9 +144,7 @@ The build script (`scripts/build.ts`) produces the following output files in `di
 
 We welcome contributions from paleontologists, enthusiasts, and anyone interested in open science. All contributions must be backed by published scientific literature.
 
-The easiest way to contribute is through the **[contribution wizard](https://open-paleo.github.io/data/)** — a guided web form with searchable dropdowns, field validation, and a YAML preview. The wizard files a GitHub issue with the proposed changes; automation then opens a pull request for review. No special tools required.
-
-You can also open a pull request directly if you prefer to edit YAML files yourself.
+To contribute, open a pull request that edits the YAML data files directly. Every change is checked by automated validation (`npm run validate`) before it can be merged.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines, scientific rigor requirements, and quality standards.
 

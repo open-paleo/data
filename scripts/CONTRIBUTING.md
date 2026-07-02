@@ -2,10 +2,10 @@
 
 This guide is for developers contributing to the scripts that power
 Open Paleo's validation, build, and automation tooling — including
-TypeScript scripts (`scripts/`), browser JavaScript (`docs/`), and
-GitHub Actions workflow scripts (`.github/scripts/`). If you are
-contributing **data** (genera, clades, corrections, images), see the
-main [CONTRIBUTING.md](../CONTRIBUTING.md) instead.
+TypeScript scripts (`scripts/`) and GitHub Actions workflow scripts
+(`.github/scripts/`). If you are contributing **data** (genera, clades,
+corrections, images), see the main [CONTRIBUTING.md](../CONTRIBUTING.md)
+instead.
 
 ## Technology
 
@@ -13,8 +13,8 @@ main [CONTRIBUTING.md](../CONTRIBUTING.md) instead.
   in TypeScript
 - **Node.js 24** — scripts run directly via `node --experimental-strip-types`
   with no build step required
-- **Plain JavaScript** — browser code in `docs/` (ES modules) and GitHub
-  Actions workflow scripts in `.github/scripts/` (CommonJS)
+- **Plain JavaScript** — GitHub Actions workflow scripts in `.github/scripts/`
+  (CommonJS)
 - **yaml** — the runtime YAML dependency, used to parse and serialize YAML
 
 ## Setup
@@ -33,27 +33,11 @@ npm install
 | `build.ts`               | `npm run build`               | Produce output files in `dist/`                |
 | `generate-dictionary.ts` | `npm run generate-dictionary` | Generate spell check dictionary                |
 | `utilities.ts`           | —                             | Shared helper functions imported by scripts    |
-| —                        | `npm run preview`             | Build and serve the contribution wizard locally |
-
-## Previewing the Contribution Wizard
-
-The `docs/` directory contains a static contribution wizard served via
-GitHub Pages. To preview it locally:
-
-```bash
-npm run preview
-```
-
-This runs the build (to generate `docs/schema.json` and
-`docs/open-paleo.json`) then starts a local server at
-`http://localhost:8080`. Requires **Python 3** (for `python3 -m
-http.server`), which is pre-installed on macOS and most Linux
-distributions.
 
 ## Code Style
 
-All code — TypeScript (`scripts/`), browser JavaScript (`docs/`), and
-CommonJS workflow scripts (`.github/scripts/`) — must follow these rules.
+All code — TypeScript (`scripts/`) and CommonJS workflow scripts
+(`.github/scripts/`) — must follow these rules.
 Formatting is enforced by ESLint with
 [@stylistic/eslint-plugin](https://eslint.style/); TypeScript-specific
 rules use [@typescript-eslint](https://typescript-eslint.io/):
@@ -178,7 +162,7 @@ for (const file of findYamlFiles(path.join(root, "genera")))
 ## Linting
 
 ```bash
-# Check for lint and style errors (scripts/, docs/, .github/scripts/)
+# Check for lint and style errors (scripts/, .github/scripts/)
 npm run lint
 
 # Auto-fix lint and style errors

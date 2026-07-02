@@ -4,9 +4,7 @@ Thank you for your interest in contributing to Open Paleo. This is a community-m
 
 ## How to Contribute
 
-The easiest way to contribute is through the **[contribution wizard](https://open-paleo.github.io/data/)**, a guided web form that walks you through each field with searchable dropdowns, validation, and pre-populated current values for update flows. The wizard generates the YAML for your contribution and files a GitHub issue — no special tools required. Automation then opens a pull request with your changes for review.
-
-You can also open a pull request directly if you prefer to edit YAML files yourself.
+To contribute, open a pull request that edits the YAML data files directly. Automated validation checks every change before it can be merged. See the schema and existing entries under `genera/` and `clades/` for the expected shape, and `references/` for the citation store.
 
 ## Scientific Rigor
 
@@ -199,9 +197,9 @@ so the collision is visible at the source.
 
 ## Process
 
-- **Use the [contribution wizard](https://open-paleo.github.io/data/) or open a pull request.** The wizard ensures contributions are structured and automatable.
+- **Open a pull request** that edits the YAML data files directly, and make sure `npm run validate` passes.
 - **Do not modify `tree.yml` without discussion.** Changes to the clade hierarchy affect every genus in the affected subtree. Open an issue first to discuss the change and its justification.
-- **Respect the review process.** Auto-merged PRs (new genera, new images) go through automated validation. PRs that affect the tree structure require manual review from maintainers. Do not pressure maintainers to merge faster.
+- **Respect the review process.** Every PR runs automated validation, and PRs are reviewed by maintainers before merge — changes that affect the tree structure especially so. Do not pressure maintainers to merge faster.
 
 ## Local Development Setup
 

@@ -139,30 +139,6 @@ export default tseslint.config(
         },
     },
     {
-        // Shared formatting rules for browser JavaScript files
-        files: ["docs/**/*.js"],
-        languageOptions: {
-            globals: {
-                window: "readonly",
-                document: "readonly",
-                console: "readonly",
-                fetch: "readonly",
-                setTimeout: "readonly",
-                Event: "readonly",
-                history: "readonly",
-                URLSearchParams: "readonly",
-                encodeURIComponent: "readonly",
-                navigator: "readonly",
-            },
-        },
-        plugins: {
-            "@stylistic": stylistic,
-        },
-        rules: {
-            ...sharedStylisticRules,
-        },
-    },
-    {
         // Shared formatting rules for GitHub Actions workflow scripts
         files: [".github/scripts/**/*.cjs"],
         languageOptions: {
@@ -184,6 +160,6 @@ export default tseslint.config(
         },
     },
     {
-        ignores: ["dist/**", "node_modules/**", "docs/vendor/**"],
+        ignores: ["dist/**", "node_modules/**"],
     },
 );

@@ -2,9 +2,9 @@
 
 ## Code Style
 
-All code in this repository — TypeScript (`scripts/`), plain JavaScript
-(`docs/`), and CommonJS workflow scripts (`.github/scripts/`) — must follow
-the coding style defined in [`scripts/CONTRIBUTING.md`](scripts/CONTRIBUTING.md).
+All code in this repository — TypeScript (`scripts/`) and CommonJS workflow
+scripts (`.github/scripts/`) — must follow the coding style defined in
+[`scripts/CONTRIBUTING.md`](scripts/CONTRIBUTING.md).
 Read it before writing or modifying any code.
 
 Key rules that are easy to miss:
@@ -22,7 +22,7 @@ Key rules that are easy to miss:
   of separate blocks
 - **No `// ---` section dividers**
 
-ESLint enforces formatting for `scripts/`, `docs/`, and `.github/scripts/`.
+ESLint enforces formatting for `scripts/` and `.github/scripts/`.
 Always run `npm run lint` before considering code complete.
 
 ## Git Workflow
@@ -33,8 +33,8 @@ and wait for the user to say to commit/push.
 ## Build & Verify
 
 ```
-npm run build        # generates dist/ and docs/ outputs
-npm run lint         # checks scripts/, docs/, and .github/scripts/
+npm run build        # generates dist/ outputs
+npm run lint         # checks scripts/ and .github/scripts/
 npm run typecheck    # TypeScript type checking
-npm run preview      # build + serve contribution wizard at localhost:8080
+npm run validate     # validates the dataset
 ```
