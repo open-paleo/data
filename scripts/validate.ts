@@ -51,6 +51,44 @@ function extractClades(node: TreeNode | null, clades = new Set<string>()): Set<s
 }
 
 /**
+ * Determines which tree clades have at least one member genus somewhere in
+ * their subtree, accumulating the populated clade names into `populated`.
+ *
+ * A clade counts as populated when it is the direct `parent:` of some genus,
+ * or when any of its descendant clades is populated. Every child is visited
+ * so the accumulator is filled for the whole tree, not just the first hit.
+ *
+ * @param node - The tree node (map of child clade name to subtree) to inspect.
+ * @param name - The clade name of `node`, or null at the tree root.
+ * @param genusParents - The set of every `parent:` value across all genera.
+ * @param populated - Accumulator set of populated clade names.
+ * @returns True when `node`'s subtree contains at least one member genus.
+ */
+function collectPopulatedClades(node: TreeNode | null, name: string | null, genusParents: Set<string>, populated: Set<string>): boolean
+{
+    let hasGenus = name !== null && genusParents.has(name);
+
+    if (node && typeof node === "object")
+    {
+        for (const key of Object.keys(node))
+        {
+            const childPopulated = collectPopulatedClades(node[key], key, genusParents, populated);
+            if (childPopulated)
+            {
+                hasGenus = true;
+            }
+        }
+    }
+
+    if (hasGenus && name !== null)
+    {
+        populated.add(name);
+    }
+
+    return hasGenus;
+}
+
+/**
  * Converts an absolute path to a path relative to the repository root.
  *
  * @param absPath - The absolute file path.
@@ -342,6 +380,34 @@ for (const filePath of cladeFiles)
             "No orphan clades",
             filePath,
             `clade file exists but '${name}' is not in tree.yml`);
+    }
+}
+
+// 5b. Clade population — every non-scaffolding clade must have a member genus
+//     somewhere in its subtree (P4: no empty clades). See issue #1953.
+startCheck("Clade population");
+
+const genusParents = new Set<string>();
+
+for (const doc of genusParsed.values())
+{
+    if (doc && doc.parent)
+    {
+        genusParents.add(doc.parent);
+    }
+}
+
+const populatedClades = new Set<string>();
+collectPopulatedClades(tree, null, genusParents, populatedClades);
+
+for (const clade of treeClades)
+{
+    if (!populatedClades.has(clade) && !scaffoldingClades.has(clade))
+    {
+        checkError(
+            "Clade population",
+            null,
+            `clade '${clade}' in tree.yml has an empty subtree — no genus is parented to it or any descendant (drop the node or reparent genera under it)`);
     }
 }
 
