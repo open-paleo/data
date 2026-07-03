@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-07-03T03:41:21.768Z",
+    "built_at": "2026-07-03T04:14:29.715Z",
     "clade_count": 190,
     "genus_count": 1399,
     "license": "CC-BY-4.0",
@@ -193673,11 +193673,15 @@
       "genus": "Triunfosaurus",
       "parent": "Somphospondyli",
       "dispute": {
-        "summary": "Triunfosaurus was described as a basal titanosaur (Carvalho et al., 2017), but the support for that placement is weak and a reassessment recovered it as an indeterminate somphospondylan, suggesting the holotype may be a chimera (Poropat et al., 2017; Jones, 2026).\n",
+        "summary": "Triunfosaurus was described as a basal titanosaur (Carvalho et al., 2017), but Poropat et al. (2017) reassessed it as an indeterminate somphospondylan. A redescription by Mannion and Carvalho (2026) provides a revised diagnosis, rebuts the suggestion that the holotype is a chimera, and recovers it as a somphospondylan lying either just outside Titanosauria or as an early-diverging titanosaur; its titanosaurian affinities cannot be excluded.\n",
         "history": [
           {
             "date": "2026-06-30",
             "note": "Placed conservatively at Somphospondyli following Poropat et al. (2017); the basal titanosaur alternative and possible chimeric status are noted.\n"
+          },
+          {
+            "date": "2026-07-02",
+            "note": "Mannion and Carvalho (2026) redescribe the holotype, provide a revised diagnosis, and rebut the chimeric-holotype concern; Triunfosaurus is retained at Somphospondyli, with its position relative to Titanosauria unresolved.\n"
           }
         ]
       },
@@ -193685,18 +193689,16 @@
       "pronunciation": {
         "phonetic": "tree-UN-fo-SOR-us"
       },
-      "description": "Triunfosaurus is a genus of somphospondylan sauropod dinosaur from the Early Cretaceous of Brazil. It contains a single species, T. leonardii, described by Carvalho et al. in 2017. As a genus, Triunfosaurus can be distinguished from all other titanosaurs by the unique proportions of its ischium. It was initially described as a basal titanosaur, making it the earliest basal titanosaur known; however, subsequent research questioned the identification of the taxon as a titanosaur, instead reassigning it to the Somphospondyli.",
+      "description": "Triunfosaurus is a genus of somphospondylan sauropod dinosaur from the Early Cretaceous of Brazil. It contains a single species, T. leonardii, described by Carvalho et al. in 2017. It was initially described as a basal titanosaur, potentially the earliest known; however, subsequent research questioned its identification as a titanosaur and reassigned it to the Somphospondyli.",
       "diet": "herbivore",
       "locomotion": "quadrupedal",
       "paleoenvironment": [
         "fluvial"
       ],
       "diagnostic_features": [
-        "Middle-anterior caudal vertebrae with short robust prezygapophyses directed anteriorly and slightly inclined upward",
-        "Neural spine small with sagittal process expanded at distal ends",
-        "Anteroposterior pubic pedicel of ischium divided by total ischium length larger than 0.5 (autapomorphy)",
-        "Close angle less than 70° formed between ischial shaft and acetabular line (autapomorphy)",
-        "Haemal canal dorsoventral height less than 50% of whole chevron, unlike other titanosaurs"
+        "Small tubercle close to the distal end of the lateral surface of the anterior caudal prezygapophyses.",
+        "Anterior caudal neural spines strongly expanded anteroposteriorly, the dorsal third of the spine about a third longer anteroposteriorly than the base.",
+        "Anteriormost haemal arch with ridges along the lateral margins of the proximal rami, forming flange-like processes that continue onto the distal blade."
       ],
       "appearance": {
         "integument": "scaled",
@@ -193745,7 +193747,7 @@
             ],
             "specimen_type": "holotype",
             "institution": "Universidade Federal do Rio de Janeiro, Departamento de Geologia",
-            "material": "Three middle-posterior articulated caudal vertebrae; one right ischium; three isolated haemal arches; three isolated neural spines",
+            "material": "Three articulated anterior caudal vertebrae; three isolated caudal neural spines; three proximal haemal arches; one right ischium",
             "completeness": "fragmentary"
           },
           "size": {
@@ -193763,6 +193765,7 @@
             }
           },
           "erected_in": "carvalho2017a",
+          "described_in": "mannion2026a",
           "authors": "Carvalho, I. S.; Salgado, L.; Lindoso, R. M.; de Araújo-Júnior, H. I.; Costa Nogueira, F. C.; Soares, J. A.",
           "described": 2017
         }
@@ -193777,6 +193780,30 @@
           "volume": "75",
           "pages": "74-84",
           "doi": "10.1016/j.jsames.2017.01.010"
+        },
+        {
+          "id": "poropat2017a",
+          "authors": "Poropat, S. F.; Nair, J. P.; Syme, C. E.; Mannion, P. D.; Upchurch, P.; Hocknull, S. A.; Cook, A. G.; Tischler, T. R.; Holland, T.",
+          "year": 2017,
+          "title": "Reappraisal of Austrosaurus mckillopi Longman, 1933 from the Allaru Mudstone of Queensland, Australia's first named Cretaceous sauropod dinosaur",
+          "journal": "Alcheringa: An Australasian Journal of Palaeontology",
+          "volume": "41",
+          "issue": "4",
+          "pages": "543-580",
+          "doi": "10.1080/03115518.2017.1334826",
+          "notes": "Reappraisal of Austrosaurus that reassessed Triunfosaurus as an indeterminate somphospondylan and questioned its titanosaurian affinities."
+        },
+        {
+          "id": "mannion2026a",
+          "authors": "Mannion, P. D.; Carvalho, I. S.",
+          "year": 2026,
+          "title": "Re-evaluation of the Early Cretaceous titanosauriform sauropod dinosaur Triunfosaurus leonardii from the Triunfo Basin, Brazil: implications for the initial radiations of Somphospondyli and Titanosauria",
+          "journal": "Zoological Journal of the Linnean Society",
+          "volume": "207",
+          "issue": "1",
+          "publisher": "Oxford University Press (OUP)",
+          "doi": "10.1093/zoolinnean/zlag073",
+          "notes": "Redescription of the Triunfosaurus holotype with a revised diagnosis; recovers it as a somphospondylan close to or within the early titanosaur radiation."
         },
         {
           "id": "jones2026b",
