@@ -2,16 +2,14 @@
 // extraction JSON files at `staging/intake/{Genus}/extractions/` into
 // `bootstrap.yml` and writes `final.yml`.
 //
-// Reference metadata is sourced in this priority order:
-//
-//   1. `dist/references.bib`, when the citation key is already
-//      present (common for keys reused across genera).
-//   2. A `TODO: fill in from papers-needed.md citation.` placeholder.
-//      The skill's apply step is then responsible for replacing the
-//      placeholder by reading the user-pasted citation string in
-//      `papers-needed.md`. Doing the citation parsing in the skill
-//      (rather than in this script) keeps the parsing flexible
-//      across the many idiosyncratic citation formats people paste.
+// Citations resolve against the reference store directly: a paper is
+// cited with an `{id, notes?}` pointer when its store file
+// `references/<letter>/<key>.yml` exists; otherwise the citation is
+// skipped with a warning (a pointer must resolve to a complete store
+// entry). The skill's step 4b authors the store file from the
+// user-pasted `papers-needed.md` citation and re-runs apply — keeping
+// the citation parsing in the skill accommodates the many idiosyncratic
+// formats people paste.
 //
 // Merge rules (describing paper → genus YAML):
 //
@@ -46,14 +44,13 @@ import * as url from "node:url";
 import { parse as parseYamlContent, stringify as stringifyYaml } from "yaml";
 
 import type { GenusData } from "./types.ts";
-import { referenceBucket, writeStoreReference } from "./utilities.ts";
+import { referenceBucket } from "./utilities.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
 const root = path.join(scriptDir, "..");
 
 const stagingIntakeDir = path.join(root, "staging", "intake");
-const referencesBibPath = path.join(root, "dist", "references.bib");
 
 /**
  * Shape of one per-paper extraction JSON written by the intake agent.
@@ -85,139 +82,6 @@ type IntakeExtraction = {
     notes?: string | null;
     empty?: boolean;
 };
-
-/**
- * One reference entry as it appears in genus YAML files.
- */
-type ReferenceEntry = {
-    id: string;
-    authors?: string;
-    year?: number;
-    title?: string;
-    journal?: string;
-    volume?: string;
-    issue?: string;
-    pages?: string;
-    publisher?: string;
-    doi?: string;
-    url?: string;
-    notes?: string;
-};
-
-/**
- * Parses `dist/references.bib` and returns a citation-key → metadata
- * map. Only the fields the genus YAML schema cares about are returned.
- *
- * @returns Citation-key indexed reference metadata.
- */
-function readBibReferences(): Map<string, ReferenceEntry>
-{
-    const result = new Map<string, ReferenceEntry>();
-
-    if (!fs.existsSync(referencesBibPath))
-    {
-        return result;
-    }
-
-    const content = fs.readFileSync(referencesBibPath, "utf8");
-    const entryPattern = /@\w+\{([^,]+),([^@]+)/g;
-    let entryMatch: RegExpExecArray | null;
-
-    while ((entryMatch = entryPattern.exec(content)) !== null)
-    {
-        const key = entryMatch[1].trim();
-        const body = entryMatch[2];
-        const fields: Record<string, string> = {};
-
-        const fieldPattern = /(\w+)\s*=\s*\{([^{}]*(?:\{[^{}]*\}[^{}]*)*)\}/g;
-        let fieldMatch: RegExpExecArray | null;
-
-        while ((fieldMatch = fieldPattern.exec(body)) !== null)
-        {
-            fields[fieldMatch[1].toLowerCase()] = fieldMatch[2].trim();
-        }
-
-        const entry: ReferenceEntry = { id: key };
-
-        if (fields.author)
-        {
-            entry.authors = fields.author;
-        }
-
-        if (fields.year)
-        {
-            entry.year = parseInt(fields.year, 10);
-        }
-
-        if (fields.title)
-        {
-            entry.title = fields.title;
-        }
-
-        if (fields.journal)
-        {
-            entry.journal = fields.journal;
-        }
-
-        if (fields.volume)
-        {
-            entry.volume = fields.volume;
-        }
-
-        if (fields.number)
-        {
-            entry.issue = fields.number;
-        }
-
-        if (fields.pages)
-        {
-            entry.pages = fields.pages;
-        }
-
-        if (fields.publisher)
-        {
-            entry.publisher = fields.publisher;
-        }
-
-        if (fields.doi)
-        {
-            entry.doi = fields.doi;
-        }
-
-        result.set(key, entry);
-    }
-
-    return result;
-}
-
-/**
- * Builds a reference entry for a citation key. Falls back to a
- * placeholder when the key is not in `dist/references.bib` — the
- * skill's apply step is responsible for filling those placeholders
- * in by reading the citation text the user pasted into
- * `papers-needed.md`.
- *
- * @param key - Citation key.
- * @param bibIndex - Map of citation key → metadata parsed from bib.
- * @returns The reference entry to add to `genus.references`.
- */
-function buildReferenceEntry(
-    key: string,
-    bibIndex: Map<string, ReferenceEntry>,
-): ReferenceEntry
-{
-    const fromBib = bibIndex.get(key);
-
-    if (fromBib)
-    {
-        return fromBib;
-    }
-
-    return {
-        id: key,
-        notes: "TODO: fill in from papers-needed.md citation.",
-    };
-}
 
 /**
  * Returns a new GenusData object with top-level keys arranged in the
@@ -317,13 +181,11 @@ function reorderGenus(genus: GenusData): GenusData
  *
  * @param genus - Genus data (mutated).
  * @param extraction - Parsed extraction JSON.
- * @param bibIndex - Reference metadata lookup.
  * @returns Empty array on success, otherwise warning strings.
  */
 function applyExtraction(
     genus: GenusData,
     extraction: IntakeExtraction,
-    bibIndex: Map<string, ReferenceEntry>,
 ): Array<string>
 {
     const warnings = new Array<string>();
@@ -504,8 +366,9 @@ function applyExtraction(
 
     if (!alreadyReferenced)
     {
-        const referenceEntry = buildReferenceEntry(extraction.citation_key, bibIndex);
-        const isPlaceholder = referenceEntry.notes?.startsWith("TODO:") ?? false;
+        const key = extraction.citation_key;
+        const inStore = fs.existsSync(
+            path.join(root, "references", referenceBucket(key), `${key}.yml`));
 
         // Supplementary papers record their role as per-citation `notes` on the
         // in-file pointer; describing-paper notes are about the taxon, so they
@@ -514,26 +377,26 @@ function applyExtraction(
             ? extraction.notes
             : undefined;
 
-        if (isPlaceholder)
+        if (!inStore)
         {
-            // The paper has no reference-store entry yet, so it cannot be cited
-            // — a pointer must resolve to a complete store entry. Stash any
-            // notes and warn; the SKILL adds the store file from the
-            // papers-needed.md citation, then re-runs apply.
+            // No store entry yet, so the paper cannot be cited — a pointer must
+            // resolve to a complete store entry. Stash any notes and warn; the
+            // SKILL adds the store file from the papers-needed.md citation, then
+            // re-runs apply.
             if (localNotes)
             {
                 const pendingDir = path.join(stagingIntakeDir, extraction.genus, "pending-notes");
                 fs.mkdirSync(pendingDir, { recursive: true });
                 fs.writeFileSync(
-                    path.join(pendingDir, `${extraction.citation_key}.txt`),
+                    path.join(pendingDir, `${key}.txt`),
                     localNotes,
                     "utf8",
                 );
             }
 
             warnings.push(
-                `Reference ${extraction.citation_key}: no reference-store entry yet; citation skipped. `
-                + `Add references/${referenceBucket(extraction.citation_key)}/${extraction.citation_key}.yml `
+                `Reference ${key}: no reference-store entry yet; citation skipped. `
+                + `Add references/${referenceBucket(key)}/${key}.yml `
                 + "from the papers-needed.md citation"
                 + (localNotes ? ` (agent notes stashed under staging/intake/${extraction.genus}/pending-notes/)` : "")
                 + ", then re-run apply.",
@@ -541,13 +404,8 @@ function applyExtraction(
         }
         else
         {
-            // Write the bibliographic record to the store (no-clobber) and cite
-            // it with an `{id, notes?}` pointer.
-            const bibFields = { ...referenceEntry };
-            delete bibFields.notes;
-            writeStoreReference(root, bibFields);
-
-            const pointer: { id: string; notes?: string } = { id: extraction.citation_key };
+            // Cite the existing store entry with an `{id, notes?}` pointer.
+            const pointer: { id: string; notes?: string } = { id: key };
 
             if (localNotes)
             {
@@ -616,10 +474,8 @@ function main(): void
     }
 
     const bootstrap = parseYamlContent(fs.readFileSync(bootstrapPath, "utf8")) as GenusData;
-    const bibIndex = readBibReferences();
 
     process.stdout.write(`Applying extractions for ${genus}...\n`);
-    process.stdout.write(`  Bib metadata loaded: ${bibIndex.size} entries\n`);
 
     const allWarnings = new Array<string>();
 
@@ -644,7 +500,7 @@ function main(): void
         const role = data.is_describing ? "describing" : "supplementary";
         process.stdout.write(`  Apply ${filename} (${role}, ${data.citation_key})\n`);
 
-        const warnings = applyExtraction(bootstrap, data, bibIndex);
+        const warnings = applyExtraction(bootstrap, data);
 
         for (const warning of warnings)
         {

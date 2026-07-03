@@ -46,6 +46,14 @@ reference by hand and add the `described_in` pointer while you are there.
 When the paper uses the original binomial, tell the agent so in the prompt
 ("treated as *Megalosaurus bredai* in this paper").
 
+The `described_in` target must resolve to a **reference-store** entry
+(`references/<letter>/<key>.yml`) and be cited in the genus's
+`references:` list as an `{id, notes?}` pointer. If that descriptive
+paper is not yet in the store, create its `references/<letter>/<key>.yml`
+(canonical fields; no DOI-pointer `url`, no `notes`) and add the pointer
+to the genus's `references:` before validating — and stage the new store
+file together with the genus file when committing.
+
 ## Per-genus flow
 
 1. **Pick the source paper.** Read the genus YAML; choose the markdown

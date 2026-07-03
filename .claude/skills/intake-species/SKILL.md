@@ -223,11 +223,18 @@ git restore dist/
 
 ## Step 6 — Commit
 
-Stage only the modified genus file:
+Stage the modified genus file **and any reference-store file created for
+the new species** (any `references/<letter>/<key>.yml` you authored in
+step 4b) — the pointer and its store entry must land in the same commit
+or validation fails on push:
 
 ```
 git add genera/<Letter>/<Genus>.yml
+git add references/<letter>/<key>.yml   # one per new store entry
 ```
+
+Run `git status` and confirm the staged set is the genus file plus its
+new store entries only (no `dist/`).
 
 Draft a commit message of the form:
 

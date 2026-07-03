@@ -183,11 +183,13 @@ This merges the extraction JSON files into `bootstrap.yml` and writes
 `staging/intake/<Genus>/final.yml`. Bibliographic data lives in the
 **reference store** (`references/<letter>/<key>.yml`, one file per
 reference); the genus file cites each paper with an `{id, notes?}`
-pointer. When a citation key already has a store entry (or is in
-`dist/references.bib`), the script writes its store file (no-clobber) and
-adds the pointer. When a key has **no** store entry yet, the script
-**skips** that citation and emits a warning rather than writing an
-unresolved pointer — a pointer must resolve to a complete store entry.
+pointer. The script resolves each citation against the store directly:
+when the store file `references/<letter>/<key>.yml` exists, it adds the
+pointer; when it does **not** exist, the script **skips** that citation
+and emits a warning rather than writing an unresolved pointer — a pointer
+must resolve to a complete store entry. (The describing paper's store
+file is normally written at bootstrap when PBDB/Crossref supplied its
+metadata; a paper the bootstrap could not resolve is handled in 4b.)
 
 ### Step 4b — Add missing reference-store entries
 
@@ -304,11 +306,18 @@ Action regenerates these).
 
 ## Step 6 — Commit
 
-Stage only the new genus file:
+Stage the new genus file **and every reference-store file created for
+it** (any `references/<letter>/<key>.yml` you authored in step 4b) — the
+pointers must land in the same commit as the store entries they resolve
+to, or validation fails on push:
 
 ```
 git add genera/<Letter>/<Genus>.yml
+git add references/<letter>/<key>.yml   # one per new store entry
 ```
+
+Run `git status` and confirm the staged set is exactly the genus file
+plus its new store entries (no `dist/`).
 
 Draft a commit message of the form:
 
