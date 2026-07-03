@@ -2,18 +2,25 @@ genus: Panguraptor
 parent: Coelophysoidea
 dispute:
   summary: >
-    Panguraptor lufengensis is recovered within Coelophysidae by its
-    describers (You and others, 2014) and by Ezcurra and others (2020) but
-    as a basal non-coelophysid coelophysoid by Spiekman and others (2021).
+    Panguraptor lufengensis is recovered within Coelophysidae by its describers
+    (You and others, 2014) and by Ezcurra and others (2020), but as a basal
+    non-coelophysid coelophysoid by Spiekman and others (2021) and by the
+    redescription of Zhang and others (2026), which recovers it as the
+    earliest-diverging member of Coelophysoidea.
   history:
     - date: "2026-06-30"
       note: >
         Placed at Coelophysoidea, the least-inclusive clade these results agree
         on.
+    - date: "2026-07-02"
+      note: >
+        Zhang and others (2026) redescribe the holotype and recover Panguraptor
+        as the earliest-diverging coelophysoid, outside Coelophysidae,
+        supporting the basal placement; retained at Coelophysoidea.
 etymology: Named after Pangu, the Chinese creator deity (also evoking the supercontinent Pangaea), combined with Latin raptor (seizer, robber); meaning "Pangu plunderer".
 pronunciation:
   phonetic: PAN-goo-RAP-tuh
-description: 'Panguraptor is a genus of coelophysid theropod dinosaur known from
+description: 'Panguraptor is a genus of coelophysoid theropod dinosaur known from
   fossils discovered in Lower Jurassic rocks of southern China. The type and
   only known species is Panguraptor lufengensis. The generic name refers to the
   deity Pangu but also to the supercontinent Pangaea for which in a geological
@@ -26,9 +33,20 @@ paleoenvironment:
   - fluvial
   - lacustrine
 diagnostic_features:
-  - Diagonal rostrodorsal-caudoventral ridge on lateral surface of maxilla
-    within antorbital fossa
-  - Distal tarsal IV with hooked craniomedial corner
+  - Diagonal rostrodorsal-caudoventral ridge on the lateral surface of the
+    maxilla, extending beyond the antorbital fossa with a shallow groove dorsal
+    to it (autapomorphy).
+  - Group of four elliptical, laterally facing foramina on the lateral surface
+    of the maxilla anterior to the antorbital fenestra, one behind the diagonal
+    ridge and three in front (autapomorphy).
+  - Distinct bony ridge along the dorsal margin of the lateral surface of the
+    scapula (autapomorphy).
+  - Hooked structure at the ventrolateral corner of the proximal head of distal
+    tarsal IV (autapomorphy).
+  - Large, deep, circular anterior pleurocoel on cervical vertebrae III-X,
+    versus the shallow elliptical pleurocoel of other coelophysoids.
+  - Cervical rib length subequal to the centrum length from cervicals III to
+    VIII, rather than markedly exceeding it as in other coelophysoids.
 appearance:
   integument: scaled
   evidence: inferred
@@ -49,8 +67,9 @@ species:
         - Early Jurassic
       stage:
         - Hettangian
+        - Sinemurian
       from_ma: 201.3
-      to_ma: 199.5
+      to_ma: 192.9
     location:
       country: CN
       locality: Shawan, Lufeng
@@ -72,13 +91,18 @@ species:
     holotype:
       specimen_id: [LFGT-0103]
       specimen_type: holotype
-      institution: LDM
+      institution: LFGT
       material: Articulated partial skeleton including skull and lower jaw, presacral
         vertebral column, part of ribs, right scapula and partial right forelimb, part
         of pelvic girdle, parts of both hind limbs
       completeness: partial
     erected_in: you2014b
+    described_in: zhang2026b
 references:
   - id: you2014b
+  - id: zhang2026b
+    notes: Redescription of the holotype LFGT-0103 with a revised six-character
+      diagnosis; recovers Panguraptor as the earliest-diverging coelophysoid,
+      outside Coelophysidae.
   - id: jones2026c
     notes: Source of the mass and hip height estimates.
