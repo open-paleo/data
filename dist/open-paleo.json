@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-07-03T04:14:29.715Z",
+    "built_at": "2026-07-03T04:31:24.755Z",
     "clade_count": 190,
     "genus_count": 1399,
     "license": "CC-BY-4.0",
@@ -21364,7 +21364,7 @@
               "LFGT LCD 9701-1"
             ],
             "specimen_type": "holotype",
-            "institution": "Lufeng Dinosaur Museum",
+            "institution": "Center for Dinosaur Research and Protection, Bureau of Natural Resources of Lufeng City",
             "material": "11 articulated cervical vertebrae (axis-cervical 12), 8 middle-posterior dorsal vertebrae, 4-5 sacral vertebrae, first 24 caudal vertebrae, chevrons, some dorsal ribs, pubes, left humerus, ulna, radius, metacarpals, ilium, and femur.",
             "completeness": "partial"
           },
@@ -144993,11 +144993,15 @@
       "genus": "Panguraptor",
       "parent": "Coelophysoidea",
       "dispute": {
-        "summary": "Panguraptor lufengensis is recovered within Coelophysidae by its describers (You and others, 2014) and by Ezcurra and others (2020) but as a basal non-coelophysid coelophysoid by Spiekman and others (2021).\n",
+        "summary": "Panguraptor lufengensis is recovered within Coelophysidae by its describers (You and others, 2014) and by Ezcurra and others (2020), but as a basal non-coelophysid coelophysoid by Spiekman and others (2021) and by the redescription of Zhang and others (2026), which recovers it as the earliest-diverging member of Coelophysoidea.\n",
         "history": [
           {
             "date": "2026-06-30",
             "note": "Placed at Coelophysoidea, the least-inclusive clade these results agree on.\n"
+          },
+          {
+            "date": "2026-07-02",
+            "note": "Zhang and others (2026) redescribe the holotype and recover Panguraptor as the earliest-diverging coelophysoid, outside Coelophysidae, supporting the basal placement; retained at Coelophysoidea.\n"
           }
         ]
       },
@@ -145005,7 +145009,7 @@
       "pronunciation": {
         "phonetic": "PAN-goo-RAP-tuh"
       },
-      "description": "Panguraptor is a genus of coelophysid theropod dinosaur known from fossils discovered in Lower Jurassic rocks of southern China. The type and only known species is Panguraptor lufengensis. The generic name refers to the deity Pangu but also to the supercontinent Pangaea for which in a geological context the same characters are used: 盘古. Raptor means \"seizer\", \"robber\" in Latin. The specific name is a reference to the Lufeng Formation. It was described in 2014 by You Hai-Lu and colleagues.",
+      "description": "Panguraptor is a genus of coelophysoid theropod dinosaur known from fossils discovered in Lower Jurassic rocks of southern China. The type and only known species is Panguraptor lufengensis. The generic name refers to the deity Pangu but also to the supercontinent Pangaea for which in a geological context the same characters are used: 盘古. Raptor means \"seizer\", \"robber\" in Latin. The specific name is a reference to the Lufeng Formation. It was described in 2014 by You Hai-Lu and colleagues.",
       "diet": "carnivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -145013,8 +145017,12 @@
         "lacustrine"
       ],
       "diagnostic_features": [
-        "Diagonal rostrodorsal-caudoventral ridge on lateral surface of maxilla within antorbital fossa",
-        "Distal tarsal IV with hooked craniomedial corner"
+        "Diagonal rostrodorsal-caudoventral ridge on the lateral surface of the maxilla, extending beyond the antorbital fossa with a shallow groove dorsal to it (autapomorphy).",
+        "Group of four elliptical, laterally facing foramina on the lateral surface of the maxilla anterior to the antorbital fenestra, one behind the diagonal ridge and three in front (autapomorphy).",
+        "Distinct bony ridge along the dorsal margin of the lateral surface of the scapula (autapomorphy).",
+        "Hooked structure at the ventrolateral corner of the proximal head of distal tarsal IV (autapomorphy).",
+        "Large, deep, circular anterior pleurocoel on cervical vertebrae III-X, versus the shallow elliptical pleurocoel of other coelophysoids.",
+        "Cervical rib length subequal to the centrum length from cervicals III to VIII, rather than markedly exceeding it as in other coelophysoids."
       ],
       "appearance": {
         "integument": "scaled",
@@ -145045,10 +145053,11 @@
               "Early Jurassic"
             ],
             "stage": [
-              "Hettangian"
+              "Hettangian",
+              "Sinemurian"
             ],
             "from_ma": 201.3,
-            "to_ma": 199.5
+            "to_ma": 192.9
           },
           "location": {
             "country": "CN",
@@ -145079,11 +145088,12 @@
               "LFGT-0103"
             ],
             "specimen_type": "holotype",
-            "institution": "Lufeng Dinosaur Museum",
+            "institution": "Center for Dinosaur Research and Protection, Bureau of Natural Resources of Lufeng City",
             "material": "Articulated partial skeleton including skull and lower jaw, presacral vertebral column, part of ribs, right scapula and partial right forelimb, part of pelvic girdle, parts of both hind limbs",
             "completeness": "partial"
           },
           "erected_in": "you2014b",
+          "described_in": "zhang2026b",
           "authors": "You, H.-L.; Azuma, Y.; Wang, T.; Wang, Y.-M.; Dong, Z.-M.",
           "described": 2014
         }
@@ -145099,6 +145109,18 @@
           "volume": "3873",
           "issue": "3",
           "doi": "10.11646/zootaxa.3873.3.3"
+        },
+        {
+          "id": "zhang2026b",
+          "authors": "Zhang, Z.; Dong, Q.; Wang, T.; You, H.-L.; Wang, X.",
+          "year": 2026,
+          "title": "Redescription of the osteology and the systematics of Panguraptor lufengensis (Neotheropoda, Coelophysoidea)",
+          "journal": "Swiss Journal of Palaeontology",
+          "volume": "145",
+          "pages": "723-750",
+          "publisher": "Pensoft Publishers",
+          "doi": "10.3897/sjp.145.185485",
+          "notes": "Redescription of the holotype LFGT-0103 with a revised six-character diagnosis; recovers Panguraptor as the earliest-diverging coelophysoid, outside Coelophysidae."
         },
         {
           "id": "jones2026c",
@@ -204752,7 +204774,7 @@
               "LFGT-D0002"
             ],
             "specimen_type": "holotype",
-            "institution": "Lufeng Dinosaur Museum",
+            "institution": "Center for Dinosaur Research and Protection, Bureau of Natural Resources of Lufeng City",
             "material": "Partial skull and mandible; postcranial skeleton including atlas-axis complex, cervical, dorsal, sacral and caudal vertebrae; ribs, chevrons, ilium, pubis, ischium, femora, tibiae, fibulae, tarsals, and complete pes",
             "completeness": "complete"
           },
@@ -208217,7 +208239,7 @@
               "LFGT-ZLJ0033"
             ],
             "specimen_type": "holotype",
-            "institution": "Lufeng Dinosaur Museum",
+            "institution": "Center for Dinosaur Research and Protection, Bureau of Natural Resources of Lufeng City",
             "material": "Undistorted skeleton about 7m long, including well-preserved skull and mandible, mostly complete vertebral series (9 cervicals, 14 dorsals, 3 sacrals, 5 anterior caudals), pectoral and pelvic girdles, forelimbs and femora",
             "completeness": "complete"
           },
