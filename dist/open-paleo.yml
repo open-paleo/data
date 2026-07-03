@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-02T23:24:18.866Z
+  built_at: 2026-07-03T00:25:07.234Z
   clade_count: 190
-  genus_count: 1398
+  genus_count: 1399
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.07"
@@ -162934,6 +162934,88 @@ genera:
       - Ankylosauria
     authors: Lü, J.; Jin, X.; Sheng, Y.; Li, Y.; Wang, G.; Azuma, Y.
     described: 2007
+  Zhengheornis:
+    genus: Zhengheornis
+    parent: Avialae
+    etymology: '"Zhenghe" (Mandarin), for Zhenghe County where the holotype was found, + "ornis" (Greek), bird'
+    description: Zhengheornis is an extinct genus of basal avialan known from the Late Jurassic (Kimmeridgian–Tithonian ages) Nanyuan Formation of China. The genus contains a single species, Zhengheornis buyu, known from a partial skeleton with feather traces, preserved on a slab and counterslab.
+    locomotion: bipedal
+    diagnostic_features:
+      - Short tail comprising 15 caudal vertebrae, shorter than the combined length of the femur, tibia, and metatarsal III
+      - Final two caudal vertebrae box-like with bluntly convex caudal ends
+      - Slender ischium with a knob-like, distally located obturator process and no posterior process
+      - Manual phalanx III-1 shorter than manual phalanx III-2
+      - Metatarsal I articulates with metatarsal II at its distal third-length
+      - Short hallux with an ungual smaller than those of the other pedal digits
+    appearance:
+      integument: feathered
+    identifiers:
+      - source: wikidata
+        id: Q140393555
+    species:
+      - name: Zhengheornis buyu
+        etymology: '"buyu" (Mandarin), unexpected, from the ancient Chinese book Guoyu, referring to the unique tail and pelvic morphologies'
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Tithonian
+          from_ma: 152.1
+          to_ma: 145
+        location:
+          country: CN
+          region: Zhenghe County, Fujian Province
+          locality: Yangyuan Village
+          formation: Nanyuan Formation
+        holotype:
+          specimen_id:
+            - IVPP V34168
+          specimen_type: holotype
+          institution: Institute of Vertebrate Paleontology and Paleoanthropology
+          material: Articulated and partially complete skeleton, with most limb bones preserved as molds, and feathers preserved on a slab and counter slab
+        size:
+          weight_kg:
+            min: 0.0737
+            max: 0.1625
+        erected_in: wang2026a
+        authors: Wang, M.; Tang, J.; Deng, K.; Dong, L.; Xu, L.; Xu, X.; Lin, M.; Du, H.; Lin, G.; Chen, R.; Zhang, C.; Zhou, Z.
+        described: 2026
+    references:
+      - id: wang2026a
+        authors: Wang, M.; Tang, J.; Deng, K.; Dong, L.; Xu, L.; Xu, X.; Lin, M.; Du, H.; Lin, G.; Chen, R.; Zhang, C.; Zhou, Z.
+        year: 2026
+        title: Jurassic avialan reveals stepwise evolution of bony tail in birds
+        journal: Science Advances
+        volume: "12"
+        issue: "27"
+        article_number: eaeb5202
+        publisher: American Association for the Advancement of Science (AAAS)
+        doi: 10.1126/sciadv.aeb5202
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Avetheropoda
+      - Coelurosauria
+      - Maniraptora
+      - Paraves
+      - Eumaniraptora
+      - Avialae
+    authors: Wang, M.; Tang, J.; Deng, K.; Dong, L.; Xu, L.; Xu, X.; Lin, M.; Du, H.; Lin, G.; Chen, R.; Zhang, C.; Zhou, Z.
+    described: 2026
   Zhenyuanlong:
     genus: Zhenyuanlong
     parent: Dromaeosauridae
