@@ -186,7 +186,11 @@ async function run({ github, context, jsonPath })
     }
 
     const repo = context.repo;
-    const date = new Date().toISOString().slice(0, 10);
+    // Anchor the digest date to Pacific time. GitHub dispatches scheduled runs
+    // late (often hours), so a UTC date (toISOString) rolls to the next day for
+    // evening-Pacific runs past midnight UTC, filing the issue off-by-one.
+    // en-CA yields ISO yyyy-mm-dd; timeZone handles DST automatically.
+    const date = new Date().toLocaleDateString("en-CA", { timeZone: "America/Los_Angeles" });
     const title = `Paper watch — ${date} (${hits.length} new paper${hits.length === 1 ? "" : "s"})`;
 
     // Two notification paths, both optional and configured via repo variables
