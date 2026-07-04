@@ -1,27 +1,39 @@
 genus: Lametasaurus
-parent: Abelisauridae
+parent: Dinosauria
 dispute:
   summary: >
-    Lametasaurus is a chimera based on associated but probably non-
-    conspecific elements and is widely regarded as a nomen dubium. Some of
-    the material conforms to Abelisauridae, and it has been suggested as a
-    possible senior synonym of Indosaurus or Rajasaurus, though the holotype
-    is lost.
+    Lametasaurus is a chimera based on associated but probably non-conspecific
+    elements and is widely regarded as a nomen dubium. Its elements have been
+    referred to sharply different clades: the osteoderms have been read as
+    nodosaurid/ankylosaurian and, alternatively, as titanosaurian, while parts
+    of the pelvis and hindlimb have been compared to abelisaurid theropods
+    (raising the possibility that Lametasaurus is a senior synonym of Indosaurus
+    or Rajasaurus). Recent work identifies ankylosaurian synapomorphies in some
+    osteoderms, confirming the composite nature regardless of the other
+    material. With hypotheses spanning Ornithischia, Sauropodomorpha, and
+    Theropoda and the syntypes lost, the genus is placed conservatively at
+    Dinosauria incertae sedis.
   history:
     - date: "2026-06-30"
       note: >
         Placed at Abelisauridae as a nomen dubium pending revision.
+    - date: "2026-07-03"
+      note: >
+        Reparented from Abelisauridae to Dinosauria incertae sedis: the chimeric
+        syntypes yield competing ornithischian (nodosaurid/ankylosaurian),
+        sauropodomorph (titanosaurian), and theropod (abelisaurid) referrals, so
+        Dinosauria is the least-inclusive clade all hypotheses share. Removed
+        diet, locomotion, and the abelisaur-tibia-based weight estimate, which
+        presupposed the theropod reading.
 pronunciation:
   phonetic: luh-MAY-tuh-SOR-us
 etymology: Named after the Lameta Formation of India where it was discovered,
   combined with Greek 'sauros' (lizard); meaning 'Lameta lizard'
-description: Lametasaurus , is a chimeric genus of dinosaur known from the
-  Lameta Formation of Jabalpur, India. The type species is L. indicus. The
-  weight estimate of Lametasaurus, on the basis of the robust tibia, is 3,600 kg
-  (7,900 lb), similar morphology can be seen in the tibia of Pycnonemosaurus,
-  which indicates similar weight estimates.
-diet: carnivore
-locomotion: bipedal
+description: Lametasaurus is a chimeric genus of dinosaur from the Lameta
+  Formation of Jabalpur, India. The type species is L. indicus, erected by
+  Matley (1924) on an associated series of vertebrae, limb bones, and dermal
+  armor that is now considered to represent more than one animal. The syntype
+  material is lost, and the genus is generally treated as a nomen dubium.
 paleoenvironment:
   - fluvial
 appearance:
@@ -57,10 +69,6 @@ species:
       coordinates:
         - 23.168694
         - 79.972282
-    size:
-      weight_kg:
-        min: 3600
-        max: 3600
     holotype:
       specimen_type: syntype
       status: lost

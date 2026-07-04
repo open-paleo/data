@@ -2,15 +2,24 @@ genus: Kryptops
 parent: Abelisauridae
 dispute:
   summary: >
-    The validity of Kryptops is debated: only the maxilla of the holotype is
-    securely abelisaurid, and the associated postcranium may be a chimera,
-    possibly belonging to a carcharodontosaurid such as Eocarcharia
-    (Delcourt, 2018). Its position within Abelisauridae is unstable across
-    analyses.
+    Only the holotype maxilla is securely referable to Kryptops. Carrano et al.
+    (2012) argued the associated postcranium is a chimera and referred it to a
+    carcharodontosaurid, possibly Eocarcharia (though the postcranial elements do
+    not overlap with the skull-only Eocarcharia holotype); later studies agree
+    the postcrania are allosauroid. Delcourt (2018) questioned the genus's
+    validity, noting the maxilla preserves only a single autapomorphy and may
+    therefore be a nomen dubium. Its position within Abelisauridae is unstable
+    across analyses.
   history:
     - date: "2026-06-30"
       note: >
         Placed at Abelisauridae following the maxillary evidence.
+    - date: "2026-07-03"
+      note: >
+        Species status set to nomen dubium per Delcourt (2018): with the chimeric
+        postcrania removed, the holotype maxilla preserves only one autapomorphy.
+        Corrected the dispute attribution — the postcranial-chimera / Eocarcharia
+        hypothesis is Carrano et al. (2012), not Delcourt.
 etymology: From Greek kryptos (covered/hidden) and ops (face); meaning "covered face", referring to the heavily textured surface of the maxilla
 pronunciation:
   phonetic: CRIP-tops
@@ -49,7 +58,7 @@ identifiers:
 species:
   - name: Kryptops palaios
     etymology: "From Ancient Greek 'palaios' meaning 'old', in reference to the ancient age of the fossils relative to other known members of the Abelisauridae."
-    status: valid
+    status: nomen dubium
     type_species: true
     period:
       name:
@@ -81,3 +90,10 @@ species:
       completeness: fragmentary
 references:
   - id: sereno2008a
+  - id: carrano2012a
+    notes: Considered Kryptops palaios a chimera and referred the postcranium
+      (notably the pelvis and sacrum) to a carcharodontosaurid, possibly
+      Eocarcharia.
+  - id: delcourt2018c
+    notes: Questioned the validity of Kryptops, suggesting it may be a nomen
+      dubium because the holotype maxilla preserves only a single autapomorphy.

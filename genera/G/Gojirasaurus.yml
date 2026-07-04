@@ -2,15 +2,32 @@ genus: Gojirasaurus
 parent: Neotheropoda
 dispute:
   summary: >
-    Gojirasaurus quayi was originally described as a coelophysoid
-    (Carpenter, 1997) but is recovered on the stem lineage to Averostra by
-    Ezcurra and others (2020); it is regarded as a possible chimera and
-    nomen dubium by Nesbitt and others (2007).
+    Originally described as a large coelophysoid (Carpenter, 1997), Gojirasaurus
+    quayi rests on a composite holotype (UCM 47221) of fragmentary, largely
+    non-diagnostic elements. Nesbitt and others (2007) found that only some
+    components — the tibia and pubis — are clearly coelophysoid and distinct from
+    the co-occurring pseudosuchian Shuvosaurus, whereas others (the scapula and
+    vertebrae) are indistinguishable from it and the serrated tooth could belong
+    to any large carnivorous archosaur. Even the coelophysoid elements lack
+    unambiguous autapomorphies — the robust tibia matches Coelophysis-like
+    material apart from its larger size — so the taxon is widely treated as a
+    metataxon and nomen dubium. Ezcurra and others (2020) recovered it on the
+    stem lineage to Averostra; it is placed conservatively at Neotheropoda
+    incertae sedis.
   history:
     - date: "2026-06-30"
       note: >
         Placed at Neotheropoda, the least-inclusive clade the sources
         support.
+    - date: "2026-07-03"
+      note: >
+        Status set to nomen dubium: the holotype is a composite of fragmentary,
+        largely non-diagnostic elements (a metataxon per Nesbitt and others,
+        2007), with scapula and vertebrae indistinguishable from the co-occurring
+        Shuvosaurus and no unambiguous autapomorphies even in the coelophysoid
+        tibia and pubis. Extended the dispute summary, removed the contested
+        diagnostic_features, and wired in the Nesbitt and others (2007) and
+        Ezcurra and others (2020) papers.
 pronunciation:
   phonetic: go-JEER-a-SAWR-us
 etymology: "Godzilla lizard; named after the giant monster movie character Godzilla (known as Gojira in Japanese), combined with Greek sauros (lizard)"
@@ -21,19 +38,6 @@ diet: carnivore
 locomotion: bipedal
 paleoenvironment:
   - fluvial
-diagnostic_features:
-  - Tooth serrations closely spaced, restricted to carina, with cutting edges
-    curving upwards toward the tip (as in Saurornitholestes).
-  - Neural spine very tall relative to centrum height (x1.4), in contrast to
-    Coelophysis, Liliensternus, Syntarsus, and Herrerasaurus.
-  - Pubis with single large oval obturator fenestra (not doubled as in
-    Syntarsus, nor notched as in Liliensternus); pubic apron narrow.
-  - Medial tibial condyle larger than lateral condyle (condyles equal in
-    Dilophosaurus, Staurikosaurus, Syntarsus; lateral larger in Herrerasaurus).
-  - Astragalar facet offset approximately 35° relative to anteroposterior axis
-    of tibia (vs. 58° in Staurikosaurus and 30° in Dilophosaurus).
-  - Astragalar facet well developed as a distinct 'step', unlike the closed pit
-    condition in Herrerasaurus.
 appearance:
   integument: scaled
   evidence: inferred
@@ -56,7 +60,7 @@ synonyms:
 species:
   - name: Gojirasaurus quayi
     etymology: "Named for Quay County, New Mexico, where the holotype was discovered."
-    status: valid
+    status: nomen dubium
     type_species: true
     period:
       name:
@@ -92,3 +96,10 @@ species:
     erected_in: carpenter1997a
 references:
   - id: carpenter1997a
+  - id: nesbitt2007a
+    notes: Re-evaluated the holotype as a metataxon and probable nomen dubium;
+      found the scapula and vertebrae indistinguishable from Shuvosaurus and only
+      the tibia and pubis clearly coelophysoid.
+  - id: ezcurra2020a
+    notes: Neotheropod phylogenetic analysis (revising Sarcosaurus) that
+      recovered Gojirasaurus on the stem lineage to Averostra.

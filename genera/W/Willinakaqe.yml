@@ -9,24 +9,30 @@ description: Willinakaqe is a dubious genus of saurolophine hadrosaurid dinosaur
   Maastrichtian stage) of the Río Negro Province of southern Argentina.
 dispute:
   summary: >
-    Willinakaqe salitralensis was argued to be a nomen vanum by
-    Cruzado-Caballero and Coria (2016) because its holotype is a chimera
-    and the species lacks unique diagnostic features; it is treated as a
-    nomen dubium by later workers.
+    Cruzado-Caballero and Coria (2016) revised Willinakaqe salitralensis and
+    found that the referred material may represent more than one hadrosaurid
+    taxon, that all characters of the original diagnosis are invalid, and that
+    the holotype right premaxilla (MPCA-Pv SM 8) is itself too weathered and
+    incomplete to support a diagnosis. They termed the species a nomen vanum;
+    because the holotype is simply undiagnostic rather than a chimera, it is
+    treated here as a nomen dubium.
   history:
     - date: "2026-06-27"
       note: Placed at Hadrosauridae incertae sedis; nomen vanum/dubium.
+    - date: "2026-07-03"
+      note: >
+        Status set to nomen dubium (the schema has no 'nomen vanum'): once the
+        referred material Cruzado-Caballero and Coria (2016) flagged as possibly
+        multi-taxon is set aside, the holotype premaxilla is undiagnostic.
+        Corrected the dispute prose (the holotype is not itself a chimera) and
+        removed the original diagnostic_features, which that revision
+        invalidated. Also dropped the size estimate (paul2024a), which was scaled
+        from the referred, possibly-multi-taxon material. Sourced the revision as
+        cruzado-caballero2016a.
 diet: herbivore
 locomotion: facultative
 paleoenvironment:
   - fluvial
-diagnostic_features:
-  - Premaxilla with long and convex rostrolateral surface rostral to narial fossa
-  - Dorsal vertebrae with shallow fossa on lateral surface of neural arch at
-    transverse process base
-  - Sacral and proximal caudal neural spines more than three times centrum height
-  - Distal postacetabular process of ilium ventrally deflected
-  - Femur with open cranial intercondylar groove
 appearance:
   integument: scaled
   evidence: inferred
@@ -41,7 +47,7 @@ species:
   - name: Willinakaqe salitralensis
     etymology: "Named for the Salitral, the locality in Río Negro Province,
       Argentina, where the holotype was found."
-    status: valid
+    status: nomen dubium
     type_species: true
     period:
       name:
@@ -50,13 +56,6 @@ species:
         - Maastrichtian
       from_ma: 72.1
       to_ma: 66
-    size:
-      length_m:
-        min: 7
-        max: 7
-      weight_kg:
-        min: 2000
-        max: 2000
     location:
       country: AR
       region: Río Negro
@@ -65,10 +64,12 @@ species:
       specimen_id: [ MPCA-Pv SM 8 ]
       specimen_type: holotype
       institution: MPCA
-      material: Right premaxilla with long convex rostrolateral surface rostral to narial fossa
+      material: Right premaxilla; too weathered and incomplete to be diagnostic
       completeness: fragmentary
     erected_in: juárezvalieri2010a
 references:
   - id: juárezvalieri2010a
-  - id: paul2024a
-    notes: Source of the body length and mass estimates.
+  - id: cruzado-caballero2016a
+    notes: Revised the taxon; found the original diagnostic characters invalid,
+      the referred material possibly multi-taxon, and the holotype premaxilla too
+      weathered and incomplete to diagnose.
