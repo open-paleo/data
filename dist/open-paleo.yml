@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-03T05:16:22.405Z
-  clade_count: 190
-  genus_count: 1399
+  built_at: 2026-07-04T02:10:37.327Z
+  clade_count: 189
+  genus_count: 1398
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.07"
@@ -14,7 +14,6 @@ tree:
           Sarcopterygii:
             Tetrapoda:
               Reptilia:
-                Archosauromorpha: {}
                 Archosauria:
                   Aphanosauria: {}
                   Dinosauria:
@@ -923,19 +922,6 @@ clades:
       - Aphanosauria
     described: 2017
     authors: Ezcurra et al.
-    references: []
-  Archosauromorpha:
-    description: |
-      Archosauromorpha is a major clade of diapsid reptiles that includes archosaurs (birds, crocodilians, and their extinct relatives) and several related groups such as tanystropheids and rhynchosaurs. The clade originated in the Permian and diversified extensively during the Triassic, with members surviving to the present day as birds and crocodilians.
-    taxonomy:
-      - Life
-      - Animalia
-      - Chordata
-      - Vertebrata
-      - Sarcopterygii
-      - Tetrapoda
-      - Reptilia
-      - Archosauromorpha
     references: []
   Arctometatarsalia:
     taxonomy:
@@ -29121,10 +29107,13 @@ genera:
     parent: Compsognathidae
     dispute:
       summary: |
-        Beipiaognathus was described as a compsognathid, but its holotype is widely regarded as a composite or heavily restored specimen, and Cau (2024) excluded it from analysis as a mis-restored chimera showing derived maniraptoran features. Its validity and placement are therefore doubtful. It is retained in Compsognathidae as originally described, pending re-examination of the specimen.
+        Beipiaognathus was described as a compsognathid, but its holotype is widely regarded as a composite or heavily restored specimen, first assessed as a mis-restored chimera by Cau (informally, 2016). Its validity and placement are therefore doubtful, but it is retained in Compsognathidae as originally described, pending re-examination that may isolate the composite elements from diagnosable material.
       history:
         - date: 2026-07-01
-          note: Retained at Compsognathidae as described; possible chimera/nomen dubium (Cau, 2024).
+          note: Retained at Compsognathidae as described; possible chimera/nomen dubium.
+        - date: 2026-07-03
+          note: |
+            Re-sourced the composite/mis-restored assessment to Cau's informal 2016 assessment, replacing the earlier unsourced "Cau (2024)" attribution, and added a formal reference for it. Retained as a nomen dubium rather than evicted, since redescription may separate the chimeric elements and preserve diagnosable material.
     etymology: "Named after Beipiao, a city in Liaoning Province, China, combined with Greek gnathos meaning 'jaw'. Full meaning: 'Beipiao jaw'."
     pronunciation:
       phonetic: bay-pyow-gna-thus
@@ -29188,6 +29177,15 @@ genera:
         issue: "2"
         pages: 191-196
         doi: 10.3969/j.issn.1674-3636.2016.02.191
+      - id: xing2020a
+        authors: Xing, L.; Miyashita, T.; Wang, D.; Niu, K.; Currie, P. J.
+        year: 2020
+        title: A new compsognathid theropod dinosaur from the oldest assemblage of the Jehol Biota in the Lower Cretaceous Huajiying Formation, northeastern China
+        journal: Cretaceous Research
+        publisher: Elsevier BV
+        volume: "107"
+        doi: 10.1016/j.cretres.2019.104285
+        notes: Description of Xunmenglong; references Cau's assessment of the Beipiaognathus holotype as a composite / mis-restored specimen.
     taxonomy:
       - Life
       - Animalia
@@ -45934,6 +45932,9 @@ genera:
       history:
         - date: 2026-07-01
           note: Moved from Dromaeosaurinae to Dromaeosauridae incertae sedis (least-inclusive uncontested clade); dromaeosaurine, velociraptorine, and unenlagiine hypotheses proposed, holotype possibly chimeric.
+        - date: 2026-07-03
+          note: |
+            Wired the papers cited in the dispute (Arbour et al. 2015, Currie and Evans 2019, Hartman et al. 2019, Pei et al. 2020) into the references block. Reference hygiene only; genus retained as valid at Dromaeosauridae incertae sedis, since the diagnosis and size rest on retained dromaeosaurid material and redescription awaits access to the privately-held holotype.
     etymology: Named after the Dakotas (the Hell Creek Formation of the western USA, spanning the Dakotas, Montana and Wyoming) + Latin raptor ('thief' or 'plunderer'), meaning 'thief from Dakota'.
     pronunciation:
       phonetic: duh-KO-tuh-RAP-tuh
@@ -46012,6 +46013,48 @@ genera:
         volume: "14"
         pages: 1-16
         doi: 10.17161/paleo.1808.18764
+      - id: arbour2015b
+        authors: Arbour, V. M.; Zanno, L. E.; Larson, D. W.; Evans, D. C.; Sues, H.-D.
+        year: 2015
+        title: The furculae of the dromaeosaurid dinosaur Dakotaraptor steini are trionychid turtle entoplastra
+        journal: PeerJ
+        publisher: PeerJ
+        volume: "3"
+        pages: e1691
+        doi: 10.7717/peerj.1691
+        notes: Identified the holotype "furcula" as a trionychid turtle entoplastron, establishing the chimeric nature of the referred material.
+      - id: currie2019a
+        authors: Currie, P. J.; Evans, D. C.
+        year: 2019
+        title: Cranial Anatomy of New Specimens of Saurornitholestes langstoni (Dinosauria, Theropoda, Dromaeosauridae) from the Dinosaur Park Formation (Campanian) of Alberta
+        journal: The Anatomical Record
+        publisher: Wiley
+        volume: "303"
+        issue: "4"
+        pages: 691-715
+        doi: 10.1002/ar.24241
+        notes: Recovered Dakotaraptor within Dromaeosaurinae in its phylogenetic analysis.
+      - id: hartman2019a
+        authors: Hartman, S.; Mortimer, M.; Wahl, W. R.; Lomax, D. R.; Lippincott, J.; Lovelace, D. M.
+        year: 2019
+        title: A new paravian dinosaur from the Late Jurassic of North America supports a late acquisition of avian flight
+        journal: PeerJ
+        publisher: PeerJ
+        volume: "7"
+        pages: e7247
+        doi: 10.7717/peerj.7247
+        notes: Recovered Dakotaraptor as an unenlagiine in its large paravian analysis.
+      - id: pei2020a
+        authors: Pei, R.; Pittman, M.; Goloboff, P. A.; Dececchi, T. A.; Habib, M. B.; Kaye, T. G.; Larsson, H. C. E.; Norell, M. A.; Brusatte, S. L.; Xu, X.
+        year: 2020
+        title: Potential for Powered Flight Neared by Most Close Avialan Relatives, but Few Crossed Its Thresholds
+        journal: Current Biology
+        publisher: Elsevier BV
+        volume: "30"
+        issue: "20"
+        pages: 4033-4046.e8
+        doi: 10.1016/j.cub.2020.06.105
+        notes: Recovered Dakotaraptor as a velociraptorine.
       - id: jones2026c
         authors: Jones, B.; Viola, E.
         year: 2026
@@ -65156,11 +65199,14 @@ genera:
     parent: Neotheropoda
     dispute:
       summary: |
-        Gojirasaurus quayi was originally described as a coelophysoid (Carpenter, 1997) but is recovered on the stem lineage to Averostra by Ezcurra and others (2020); it is regarded as a possible chimera and nomen dubium by Nesbitt and others (2007).
+        Originally described as a large coelophysoid (Carpenter, 1997), Gojirasaurus quayi rests on a composite holotype (UCM 47221) of fragmentary, largely non-diagnostic elements. Nesbitt and others (2007) found that only some components — the tibia and pubis — are clearly coelophysoid and distinct from the co-occurring pseudosuchian Shuvosaurus, whereas others (the scapula and vertebrae) are indistinguishable from it and the serrated tooth could belong to any large carnivorous archosaur. Even the coelophysoid elements lack unambiguous autapomorphies — the robust tibia matches Coelophysis-like material apart from its larger size — so the taxon is widely treated as a metataxon and nomen dubium. Ezcurra and others (2020) recovered it on the stem lineage to Averostra; it is placed conservatively at Neotheropoda incertae sedis.
       history:
         - date: 2026-06-30
           note: |
             Placed at Neotheropoda, the least-inclusive clade the sources support.
+        - date: 2026-07-03
+          note: |
+            Status set to nomen dubium: the holotype is a composite of fragmentary, largely non-diagnostic elements (a metataxon per Nesbitt and others, 2007), with scapula and vertebrae indistinguishable from the co-occurring Shuvosaurus and no unambiguous autapomorphies even in the coelophysoid tibia and pubis. Extended the dispute summary, removed the contested diagnostic_features, and wired in the Nesbitt and others (2007) and Ezcurra and others (2020) papers.
     pronunciation:
       phonetic: go-JEER-a-SAWR-us
     etymology: Godzilla lizard; named after the giant monster movie character Godzilla (known as Gojira in Japanese), combined with Greek sauros (lizard)
@@ -65169,13 +65215,6 @@ genera:
     locomotion: bipedal
     paleoenvironment:
       - fluvial
-    diagnostic_features:
-      - Tooth serrations closely spaced, restricted to carina, with cutting edges curving upwards toward the tip (as in Saurornitholestes).
-      - Neural spine very tall relative to centrum height (x1.4), in contrast to Coelophysis, Liliensternus, Syntarsus, and Herrerasaurus.
-      - Pubis with single large oval obturator fenestra (not doubled as in Syntarsus, nor notched as in Liliensternus); pubic apron narrow.
-      - Medial tibial condyle larger than lateral condyle (condyles equal in Dilophosaurus, Staurikosaurus, Syntarsus; lateral larger in Herrerasaurus).
-      - Astragalar facet offset approximately 35° relative to anteroposterior axis of tibia (vs. 58° in Staurikosaurus and 30° in Dilophosaurus).
-      - Astragalar facet well developed as a distinct 'step', unlike the closed pit condition in Herrerasaurus.
     appearance:
       integument: scaled
       evidence: inferred
@@ -65198,7 +65237,7 @@ genera:
     species:
       - name: Gojirasaurus quayi
         etymology: Named for Quay County, New Mexico, where the holotype was discovered.
-        status: valid
+        status: nomen dubium
         type_species: true
         period:
           name:
@@ -65243,6 +65282,27 @@ genera:
         issue: "2"
         pages: 189-208
         doi: 10.1127/njgpa/205/1997/189
+      - id: nesbitt2007a
+        authors: Nesbitt, S. J.; Irmis, R. B.; Parker, W. G.
+        year: 2007
+        title: A critical re-evaluation of the Late Triassic dinosaur taxa of North America
+        journal: Journal of Systematic Palaeontology
+        publisher: Taylor & Francis
+        volume: "5"
+        issue: "2"
+        pages: 209-243
+        doi: 10.1017/S1477201907002040
+        notes: Re-evaluated the holotype as a metataxon and probable nomen dubium; found the scapula and vertebrae indistinguishable from Shuvosaurus and only the tibia and pubis clearly coelophysoid.
+      - id: ezcurra2020a
+        authors: Ezcurra, M. D.; Butler, R. J.; Maidment, S. C. R.; Sansom, I. J.; Meade, L. E.; Radley, J. D.
+        year: 2020
+        title: A revision of the early neotheropod genus Sarcosaurus from the Early Jurassic (Hettangian-Sinemurian) of central England
+        journal: Zoological Journal of the Linnean Society
+        publisher: Oxford University Press (OUP)
+        volume: "191"
+        pages: 113-149
+        doi: 10.1093/zoolinnean/zlaa054
+        notes: Neotheropod phylogenetic analysis (revising Sarcosaurus) that recovered Gojirasaurus on the stem lineage to Averostra.
     taxonomy:
       - Life
       - Animalia
@@ -67227,81 +67287,6 @@ genera:
       - Brachyrostra
     authors: Agnolín, F. L.; Cerroni, M. A.; Scanferla, A.; Goswami, A.; Paulina-Carabajal, A.; Halliday, T.; Cuff, A. R.; Reuil, S.
     described: 2021
-  Gwyneddosaurus:
-    genus: Gwyneddosaurus
-    parent: Archosauromorpha
-    dispute:
-      summary: |
-        Gwyneddosaurus erici was originally described as a coelurosaurian dinosaur but reinterpreted as a composite, probably a regurgitated bone mass of the tanystropheid Tanytrachelos (Olsen and Flynn, 1989).
-      history:
-        - date: 2026-06-30
-          note: |
-            Placed at Archosauromorpha, the least-inclusive defensible clade for this composite specimen.
-    pronunciation:
-      phonetic: GWIN-ehd-oh-SAWR-us
-    etymology: Named for Gwynedd (the historical Welsh region name applied to Montgomery County, Pennsylvania, where the fossils were found), combined with Greek 'sauros' meaning 'lizard'.
-    locomotion: bipedal
-    paleoenvironment:
-      - lacustrine
-    diet: carnivore
-    description: Gwyneddosaurus is a possibly invalid genus of extinct aquatic tanystropheid reptile. The type species, G. erici was described in 1945 by Wilhelm Bock, who identified it as a coelurosaurian dinosaur related to Podokesaurus (at the time, "podokesaurids" were thought to be coelurosaurians). Its remains were found in the Upper Triassic Lockatong Formation of Montgomery County, eastern Pennsylvania, and the holotype includes skull fragments, several vertebra, ribs, gastralia, partial shoulder and hip bones, and several forelimb and hindlimb elements found in soft shale, while the paratype includes a femur and a tibia. The type specimen is ANSP 15072 and it was discovered by Bock's four-year-old son while the paratype is only listed as ?(ASNP coll.). It was not a large animal; the type skeleton was estimated by Bock as 18 centimeters (7.1 in) long, and its thigh bone was only 23 millimeters long (0.91 in).
-    appearance:
-      integument: unknown
-    identifiers:
-      - source: pbdb
-        id: "80906"
-      - source: wikidata
-        id: Q5623838
-      - source: gbif
-        id: "4818318"
-    species:
-      - name: Gwyneddosaurus erici
-        etymology: Derived from the name 'Eric', possibly the discoverer of the specimen, though the precise honoree is unclear.
-        status: valid
-        type_species: true
-        period:
-          name:
-            - Late Triassic
-          stage:
-            - Norian
-          from_ma: 227
-          to_ma: 205.7
-        location:
-          country: US
-          region: Pennsylvania
-          formation: Lockatong
-          coordinates:
-            - 40.198696
-            - -75.26889
-        holotype:
-          specimen_id:
-            - ANSP 15072
-          specimen_type: holotype
-          institution: Academy of Natural Sciences of Philadelphia
-          material: Skull fragments, vertebrae, ribs, gastralia, partial shoulder and hip bones, forelimb and hindlimb elements
-          completeness: partial
-        erected_in: bock1945a
-        authors: Bock, W.
-        described: 1945
-    references:
-      - id: bock1945a
-        authors: Bock, W.
-        year: 1945
-        title: A new small reptile from the Triassic of Pennsylvania
-        journal: Notulae Naturae
-        volume: "154"
-        pages: 1-8
-    taxonomy:
-      - Life
-      - Animalia
-      - Chordata
-      - Vertebrata
-      - Sarcopterygii
-      - Tetrapoda
-      - Reptilia
-      - Archosauromorpha
-    authors: Bock, W.
-    described: 1945
   Hadrosaurus:
     genus: Hadrosaurus
     parent: Hadrosauridae
@@ -83999,11 +83984,14 @@ genera:
     parent: Abelisauridae
     dispute:
       summary: |
-        The validity of Kryptops is debated: only the maxilla of the holotype is securely abelisaurid, and the associated postcranium may be a chimera, possibly belonging to a carcharodontosaurid such as Eocarcharia (Delcourt, 2018). Its position within Abelisauridae is unstable across analyses.
+        Only the holotype maxilla is securely referable to Kryptops. Carrano et al. (2012) argued the associated postcranium is a chimera and referred it to a carcharodontosaurid, possibly Eocarcharia (though the postcranial elements do not overlap with the skull-only Eocarcharia holotype); later studies agree the postcrania are allosauroid. Delcourt (2018) questioned the genus's validity, noting the maxilla preserves only a single autapomorphy and may therefore be a nomen dubium. Its position within Abelisauridae is unstable across analyses.
       history:
         - date: 2026-06-30
           note: |
             Placed at Abelisauridae following the maxillary evidence.
+        - date: 2026-07-03
+          note: |
+            Species status set to nomen dubium per Delcourt (2018): with the chimeric postcrania removed, the holotype maxilla preserves only one autapomorphy. Corrected the dispute attribution — the postcranial-chimera / Eocarcharia hypothesis is Carrano et al. (2012), not Delcourt.
     etymology: From Greek kryptos (covered/hidden) and ops (face); meaning "covered face", referring to the heavily textured surface of the maxilla
     pronunciation:
       phonetic: CRIP-tops
@@ -84031,7 +84019,7 @@ genera:
     species:
       - name: Kryptops palaios
         etymology: From Ancient Greek 'palaios' meaning 'old', in reference to the ancient age of the fossils relative to other known members of the Abelisauridae.
-        status: valid
+        status: nomen dubium
         type_species: true
         period:
           name:
@@ -84074,6 +84062,27 @@ genera:
         issue: "1"
         pages: 15-46
         doi: 10.4202/app.2008.0102
+      - id: carrano2012a
+        authors: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D.
+        year: 2012
+        title: "The phylogeny of Tetanurae (Dinosauria: Theropoda)"
+        journal: Journal of Systematic Palaeontology
+        publisher: Informa UK Limited
+        volume: "10"
+        issue: "2"
+        pages: 211-300
+        doi: 10.1080/14772019.2011.630927
+        notes: Considered Kryptops palaios a chimera and referred the postcranium (notably the pelvis and sacrum) to a carcharodontosaurid, possibly Eocarcharia.
+      - id: delcourt2018c
+        authors: Delcourt, R.
+        year: 2018
+        title: "Ceratosaur palaeobiology: new insights on evolution and ecology of the southern rulers"
+        journal: Scientific Reports
+        publisher: Springer Science and Business Media LLC
+        volume: "8"
+        issue: "1"
+        doi: 10.1038/s41598-018-28154-x
+        notes: Questioned the validity of Kryptops, suggesting it may be a nomen dubium because the holotype maxilla preserves only a single autapomorphy.
     taxonomy:
       - Life
       - Animalia
@@ -85380,20 +85389,21 @@ genera:
     described: 1923
   Lametasaurus:
     genus: Lametasaurus
-    parent: Abelisauridae
+    parent: Dinosauria
     dispute:
       summary: |
-        Lametasaurus is a chimera based on associated but probably non- conspecific elements and is widely regarded as a nomen dubium. Some of the material conforms to Abelisauridae, and it has been suggested as a possible senior synonym of Indosaurus or Rajasaurus, though the holotype is lost.
+        Lametasaurus is a chimera based on associated but probably non-conspecific elements and is widely regarded as a nomen dubium. Its elements have been referred to sharply different clades: the osteoderms have been read as nodosaurid/ankylosaurian and, alternatively, as titanosaurian, while parts of the pelvis and hindlimb have been compared to abelisaurid theropods (raising the possibility that Lametasaurus is a senior synonym of Indosaurus or Rajasaurus). Recent work identifies ankylosaurian synapomorphies in some osteoderms, confirming the composite nature regardless of the other material. With hypotheses spanning Ornithischia, Sauropodomorpha, and Theropoda and the syntypes lost, the genus is placed conservatively at Dinosauria incertae sedis.
       history:
         - date: 2026-06-30
           note: |
             Placed at Abelisauridae as a nomen dubium pending revision.
+        - date: 2026-07-03
+          note: |
+            Reparented from Abelisauridae to Dinosauria incertae sedis: the chimeric syntypes yield competing ornithischian (nodosaurid/ankylosaurian), sauropodomorph (titanosaurian), and theropod (abelisaurid) referrals, so Dinosauria is the least-inclusive clade all hypotheses share. Removed diet, locomotion, and the abelisaur-tibia-based weight estimate, which presupposed the theropod reading.
     pronunciation:
       phonetic: luh-MAY-tuh-SOR-us
     etymology: Named after the Lameta Formation of India where it was discovered, combined with Greek 'sauros' (lizard); meaning 'Lameta lizard'
-    description: Lametasaurus , is a chimeric genus of dinosaur known from the Lameta Formation of Jabalpur, India. The type species is L. indicus. The weight estimate of Lametasaurus, on the basis of the robust tibia, is 3,600 kg (7,900 lb), similar morphology can be seen in the tibia of Pycnonemosaurus, which indicates similar weight estimates.
-    diet: carnivore
-    locomotion: bipedal
+    description: Lametasaurus is a chimeric genus of dinosaur from the Lameta Formation of Jabalpur, India. The type species is L. indicus, erected by Matley (1924) on an associated series of vertebrae, limb bones, and dermal armor that is now considered to represent more than one animal. The syntype material is lost, and the genus is generally treated as a nomen dubium.
     paleoenvironment:
       - fluvial
     appearance:
@@ -85428,10 +85438,6 @@ genera:
           coordinates:
             - 23.168694
             - 79.972282
-        size:
-          weight_kg:
-            min: 3600
-            max: 3600
         holotype:
           specimen_type: syntype
           status: lost
@@ -85458,13 +85464,6 @@ genera:
       - Reptilia
       - Archosauria
       - Dinosauria
-      - Saurischia
-      - Theropoda
-      - Neotheropoda
-      - Averostra
-      - Ceratosauria
-      - Abelisauroidea
-      - Abelisauridae
     authors: Matley, C. A.
     described: 1924
   Lamplughsaura:
@@ -120365,6 +120364,16 @@ genera:
         volume: "13"
         issue: "1"
         doi: 10.1038/s41598-023-33418-2
+      - id: rauhut2025a
+        authors: Rauhut, O. W. M.; Canudo, J. I.; Castanera, D.
+        year: 2025
+        title: Revision of the theropod dinosaur Camarillasaurus cirugedae from the Early Cretaceous (Barremian) of Teruel province, Spain
+        journal: Palaeontologia Electronica
+        volume: "28"
+        issue: "3"
+        pages: 1-67
+        doi: 10.26879/1543
+        notes: In revising Camarillasaurus, reassessed Protathlitis as a probably chimeric nomen dubium of questionable spinosaurid affinity.
       - id: jones2026c
         authors: Jones, B.; Viola, E.
         year: 2026
@@ -120396,29 +120405,15 @@ genera:
   Protoavis:
     genus: Protoavis
     parent: Theropoda
-    dispute:
-      summary: |
-        Protoavis texensis is a chimera whose avian identity is rejected by nearly all workers; the theropod material cannot be treated as a single organism.
-      history:
-        - date: 2026-06-30
-          note: |
-            Placed at Theropoda incertae sedis.
     pronunciation:
       phonetic: PROH-to-AY-vis
     etymology: From Greek protos (first) and Latin avis (bird); meaning "first bird".
-    description: Protoavis is a problematic taxon known from fragmentary remains from Late Triassic Norian stage deposits near Post, Texas. The animal's true classification has been the subject of much controversy, and there are many different interpretations of what the taxon actually is. When it was first described, the fossils were described as being from a primitive bird which, if the identification is valid, would push back avian origins some 60-75 million years.
+    description: |
+      Protoavis ("first bird") is a problematic Late Triassic (Norian) taxon from the Dockum Group near Post, Texas, originally described by Chatterjee in 1991 as a primitive bird that, if valid, would have pushed avian origins back some 60-75 million years. It is now widely regarded as a nomen dubium. The type material is a jumbled, disarticulated assemblage recovered from a flood-deposited bonebed, and most workers consider it a chimera of more than one animal: its elements have been variously attributed to a non-tetanuran theropod and a ceratosaur, with the skull and neck most likely belonging to a drepanosaurid, so the name cannot be referred to a single organism. Chatterjee has continued to defend the avian interpretation, but it is rejected by nearly all other workers. Its classification among theropods rests on the genuinely dinosaurian elements in the assemblage rather than on the holotype skull.
     diet: carnivore
     locomotion: bipedal
     paleoenvironment:
       - fluvial
-    diagnostic_features:
-      - Skull long and narrow with sharply tapered snout and relatively deep, expanded temporal region
-      - Orbit relatively enormous, circular, directed anteriorly to permit binocular vision
-      - Temporal region modified by loss of diapsid arch, postorbital bar, and squamosal-quadratojugal bar, resulting in confluence of supra- and infratemporal fenestrae
-      - Quadrate streptostylic with development of medial orbital process and prokinetic hinge
-      - Skull highly encephalized with cerebellum and cerebrum contacted dorsally
-      - Teeth restricted to tip of jaws by loss of posterior teeth
-      - Posterior cervicals heterocoelous; cervical ribs fused in adult
     appearance:
       integument: scaled
       evidence: inferred
@@ -120432,7 +120427,7 @@ genera:
     species:
       - name: Protoavis texensis
         etymology: Named for Texas, the US state where the holotype was discovered.
-        status: valid
+        status: nomen dubium
         type_species: true
         period:
           name:
@@ -120449,10 +120444,6 @@ genera:
           coordinates:
             - 33.521389
             - -101.315002
-        size:
-          skull_length_m:
-            min: 0.072
-            max: 0.072
         holotype:
           specimen_id:
             - TTU P 9200
@@ -128877,7 +128868,7 @@ genera:
     parent: Allosauridae
     dispute:
       summary: |
-        Saurophaganax maximus has historically been treated as a giant allosaurid, either a distinct genus or a species of Allosaurus (A. maximus; Smith, 1998). Danison et al. (2024) argued that the referred material is a chimera of a large Allosaurus and a diplodocid sauropod and that the holotype neural arch is undiagnostic, rendering Saurophaganax a nomen dubium; they erected Allosaurus anax for the theropod material. Pending broad acceptance of that reassessment, the genus is retained conservatively at Allosauridae.
+        Saurophaganax maximus has historically been treated as a giant allosaurid, either a distinct genus or a species of Allosaurus (A. maximus; Smith, 1998). Danison et al. (2024) argued that the referred material is a chimera of a large Allosaurus and a diplodocid sauropod and that the holotype neural arch is undiagnostic, rendering Saurophaganax a nomen dubium; they erected Allosaurus anax for the theropod material. Pending broad acceptance of that reassessment — and following its retention as a valid taxon in the Tetanurae analysis of Carrano et al. (2012) — the genus is kept conservatively at Allosauridae.
       history:
         - date: 2026-07-02
           note: Retained at Allosauridae; the chimera and nomen dubium argument of Danison et al. (2024), and the proposed transfer of the valid theropod material to Allosaurus anax, are noted but not yet adopted.
@@ -128932,7 +128923,7 @@ genera:
             - -102.978203
         holotype:
           specimen_id:
-            - OMNH 112
+            - OMNH 1123
           specimen_type: holotype
           institution: Oklahoma Museum of Natural History
           material: Mid-dorsal neural arch with horizontal lamina along neural spine base
@@ -128957,6 +128948,27 @@ genera:
         title: A reassessment of the gigantic theropod Saurophagus maximus from the Morrison Formation (Upper Jurassic) of Oklahoma, USA
         journal: A. Sun and Y. Wang (eds.), Sixth Symposium on Mesozoic Terrestrial Ecosystems and Biota, Short Papers, China Ocean Press, Beijing
         pages: 103-106
+      - id: carrano2012a
+        authors: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D.
+        year: 2012
+        title: "The phylogeny of Tetanurae (Dinosauria: Theropoda)"
+        journal: Journal of Systematic Palaeontology
+        publisher: Informa UK Limited
+        volume: "10"
+        issue: "2"
+        pages: 211-300
+        doi: 10.1080/14772019.2011.630927
+        notes: Retained Saurophaganax as a valid taxon in a phylogenetic analysis of Tetanurae.
+      - id: danison2024a
+        authors: Danison, A. D.; Wedel, M. J.; Barta, D. E.; Woodward, H. N.; Flora, H. M.; Lee, A. H.; Snively, E.
+        year: 2024
+        title: Chimerism of specimens referred to Saurophaganax maximus reveals a new species of Allosaurus (Dinosauria, Theropoda)
+        journal: Vertebrate Anatomy Morphology Palaeontology
+        volume: "12"
+        issue: "1"
+        pages: 81-114
+        doi: 10.18435/vamp29404
+        notes: Reassessed the referred material as a chimera; treated Saurophaganax maximus as a nomen dubium (undiagnostic holotype) and erected Allosaurus anax for the theropod material.
       - id: molina-pérez2019a
         authors: Molina-Pérez, R.; Larramendi, A.
         year: 2019
@@ -155865,20 +155877,17 @@ genera:
     description: Willinakaqe is a dubious genus of saurolophine hadrosaurid dinosaur described based on fossils from the late Cretaceous (late Campanian-early Maastrichtian stage) of the Río Negro Province of southern Argentina.
     dispute:
       summary: |
-        Willinakaqe salitralensis was argued to be a nomen vanum by Cruzado-Caballero and Coria (2016) because its holotype is a chimera and the species lacks unique diagnostic features; it is treated as a nomen dubium by later workers.
+        Cruzado-Caballero and Coria (2016) revised Willinakaqe salitralensis and found that the referred material may represent more than one hadrosaurid taxon, that all characters of the original diagnosis are invalid, and that the holotype right premaxilla (MPCA-Pv SM 8) is itself too weathered and incomplete to support a diagnosis. They termed the species a nomen vanum; because the holotype is simply undiagnostic rather than a chimera, it is treated here as a nomen dubium.
       history:
         - date: 2026-06-27
           note: Placed at Hadrosauridae incertae sedis; nomen vanum/dubium.
+        - date: 2026-07-03
+          note: |
+            Status set to nomen dubium (the schema has no 'nomen vanum'): once the referred material Cruzado-Caballero and Coria (2016) flagged as possibly multi-taxon is set aside, the holotype premaxilla is undiagnostic. Corrected the dispute prose (the holotype is not itself a chimera) and removed the original diagnostic_features, which that revision invalidated. Also dropped the size estimate (paul2024a), which was scaled from the referred, possibly-multi-taxon material. Sourced the revision as cruzado-caballero2016a.
     diet: herbivore
     locomotion: facultative
     paleoenvironment:
       - fluvial
-    diagnostic_features:
-      - Premaxilla with long and convex rostrolateral surface rostral to narial fossa
-      - Dorsal vertebrae with shallow fossa on lateral surface of neural arch at transverse process base
-      - Sacral and proximal caudal neural spines more than three times centrum height
-      - Distal postacetabular process of ilium ventrally deflected
-      - Femur with open cranial intercondylar groove
     appearance:
       integument: scaled
       evidence: inferred
@@ -155892,7 +155901,7 @@ genera:
     species:
       - name: Willinakaqe salitralensis
         etymology: Named for the Salitral, the locality in Río Negro Province, Argentina, where the holotype was found.
-        status: valid
+        status: nomen dubium
         type_species: true
         period:
           name:
@@ -155901,13 +155910,6 @@ genera:
             - Maastrichtian
           from_ma: 72.1
           to_ma: 66
-        size:
-          length_m:
-            min: 7
-            max: 7
-          weight_kg:
-            min: 2000
-            max: 2000
         location:
           country: AR
           region: Río Negro
@@ -155917,7 +155919,7 @@ genera:
             - MPCA-Pv SM 8
           specimen_type: holotype
           institution: Museo provincial de Cipolletti "Carlos Ameghino"
-          material: Right premaxilla with long convex rostrolateral surface rostral to narial fossa
+          material: Right premaxilla; too weathered and incomplete to be diagnostic
           completeness: fragmentary
         erected_in: juárezvalieri2010a
         authors: Juárez Valieri, R. D.; Haro, J. A.; L. E. Fiorelli, J. O. C.
@@ -155932,12 +155934,16 @@ genera:
         issue: "2"
         pages: 217-231
         doi: 10.22179/revmacn.12.242
-      - id: paul2024a
-        authors: Paul, G. S.
-        year: 2024
-        title: The Princeton Field Guide to Dinosaurs (3rd ed.)
-        publisher: Princeton University Press
-        notes: Source of the body length and mass estimates.
+      - id: cruzado-caballero2016a
+        authors: Cruzado-Caballero, P.; Coria, R. A.
+        year: 2016
+        title: "Revisiting the hadrosaurid diversity of the Allen Fm.: Re-evaluation of the taxonomic validity of Willinakaqe salitralensis (Ornithopoda, Hadrosauridae) from Salitral Moreno, Río Negro Province, Argentina"
+        journal: Ameghiniana
+        volume: "53"
+        issue: "2"
+        pages: 231-237
+        doi: 10.5710/AMGH.25.09.2015.2943
+        notes: Revised the taxon; found the original diagnostic characters invalid, the referred material possibly multi-taxon, and the holotype premaxilla too weathered and incomplete to diagnose.
     taxonomy:
       - Life
       - Animalia
