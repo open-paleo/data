@@ -20,6 +20,11 @@ reports/missing-fields.md
 reports/paper-watch.md
 reports/paper-watch.json
 
+# DOI audit — regenerable from doi.org/Crossref (run `npm run audit-dois`).
+reports/doi-audit.md
+reports/doi-audit-cache.json
+reports/doi-audit-followup.md
+
 # Paper-watch incremental state — persisted between CI runs via actions/cache,
 # never committed (and written locally by a dry run with --write-state).
 .github/paper-watch/
