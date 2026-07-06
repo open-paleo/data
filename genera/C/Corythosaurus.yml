@@ -3,8 +3,8 @@ parent: Lambeosaurinae
 pronunciation:
   phonetic: ko-RITH-o-SAWR-us
   ipa: /kəˌrɪθəˈsɔːrəs/
-etymology: "From Greek korys (κόρυς), 'helmet', + Greek sauros, 'lizard'; means
-  'helmeted lizard', referring to its helmet-like head crest"
+etymology: From Greek korys (κόρυς), 'helmet', + Greek sauros, 'lizard'; means
+  'helmeted lizard', referring to its helmet-like head crest
 description: Corythosaurus is a genus of hadrosaurid "duck-billed" dinosaur from
   the Late Cretaceous period, about 77-75.7 million years ago, in what is now
   western North America. Its name is derived from the Greek word κόρυς, meaning
@@ -41,8 +41,8 @@ identifiers:
     id: "4823234"
 species:
   - name: Corythosaurus casuarius
-    etymology: "Named for the cassowary (Casuarius), a modern bird with a similarly
-      prominent skull crest."
+    etymology: Named for the cassowary (Casuarius), a modern bird with a similarly
+      prominent skull crest.
     status: valid
     type_species: true
     period:
@@ -61,7 +61,8 @@ species:
         - 50.806301
         - -111.628029
     holotype:
-      specimen_id: [ AMNH 5240 ]
+      specimen_id:
+        - AMNH 5240
       specimen_type: holotype
       institution: AMNH
       material: Nearly complete skeleton with integument, articulated and complete
@@ -70,13 +71,52 @@ species:
     size:
       length_m:
         min: 7.7
-        max: 9.0
+        max: 9
       weight_kg:
-        min: 2500.0
-        max: 3820.0
+        min: 2500
+        max: 3820
       skull_length_m:
         min: 0.7
         max: 0.7
     erected_in: brown1914b
+  - name: Corythosaurus intermedius
+    etymology: From Latin 'intermedius' ('intermediate'), for the crest form,
+      intermediate between those of Lambeosaurus lambei and Corythosaurus
+      casuarius.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Campanian
+      from_ma: 83.6
+      to_ma: 72.2
+    location:
+      country: CA
+      region: Alberta
+      formation: Dinosaur Park
+      locality: Red Deer River, near Happy Jack Ferry
+    holotype:
+      specimen_id:
+        - ROM 776
+      specimen_type: holotype
+      institution: ROM
+      material: 'Nearly complete skull (specimen "A"): crested premaxillae and nasals,
+        maxillae, jugals, squamosals, quadrates, palatines, pterygoids,
+        braincase elements, and right dentary; no postcranial material.'
+    size:
+      length_m:
+        min: 9.35
+        max: 9.35
+    diagnostic_features:
+      - Crest ascending more gradually from the snout and extending farther back,
+        rather than rising abruptly.
+      - Postero-inferior angle of the crest drawn out into a short, stout
+        process.
+    erected_in: parks1923a
 references:
   - id: brown1914b
+  - id: parks1923a
+    notes: Original description of Corythosaurus intermedius on skull ROM 776 from
+      the Dinosaur Park Formation of Alberta.
