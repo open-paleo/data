@@ -52,8 +52,8 @@ synonyms:
       tentative. Per Olshevsky's Dinosaur Genera List.
 species:
   - name: Daspletosaurus torosus
-    etymology: "From Latin 'torosus' meaning 'muscular' or 'brawny', a reference to
-      the animal's robust build."
+    etymology: From Latin 'torosus' meaning 'muscular' or 'brawny', a reference to
+      the animal's robust build.
     status: valid
     type_species: true
     period:
@@ -72,7 +72,8 @@ species:
         - 50.751526
         - -111.485008
     holotype:
-      specimen_id: [ NMC 8506 ]
+      specimen_id:
+        - NMC 8506
       specimen_type: holotype
       institution: CMN
       material: Skull and skeleton lacking hind limbs.
@@ -80,43 +81,136 @@ species:
     size:
       length_m:
         min: 8.5
-        max: 11.0
+        max: 11
       weight_kg:
-        min: 2000.0
-        max: 3000.0
+        min: 2000
+        max: 3000
       hip_height_m:
         min: 2.2
         max: 2.2
       skull_length_m:
-        min: 1.0
-        max: 1.0
+        min: 1
+        max: 1
     erected_in: russell1970a
+  - name: Daspletosaurus horneri
+    etymology: Latinized form of 'Horner', honoring John R. (Jack) Horner for his
+      Two Medicine Formation field program and mentorship.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Campanian
+      from_ma: 75.1
+      to_ma: 74.4
+    location:
+      country: US
+      region: Montana
+      formation: Two Medicine
+      locality: Upper Two Medicine Formation
+    holotype:
+      specimen_id:
+        - MOR 590
+      specimen_type: holotype
+      institution: MOR
+      material: Complete skull, partial pectoral limb, and nearly complete hindlimb.
+    diagnostic_features:
+      - Skull taller than in D. torosus, with a shorter rostral ramus of the
+        lacrimal relative to the ventral ramus (rostral ramus longer in D.
+        torosus).
+      - Antorbital fossa of the lacrimal confluent with the ventral ramus of the
+        bone (separated by a deep concavity in D. torosus).
+      - Coronoid region of the surangular facing more laterally than dorsally
+        (facing equally dorsally and laterally in D. torosus).
+      - Primary lacrimal cornual process lower and less prominent, about 53% the
+        height of the rostral ramus (about 69% in D. torosus).
+      - Pneumatic foramen penetrating the lateral surface of the quadratojugal.
+      - Humerus about 34% the length of the femur.
+    erected_in: carr2017a
+  - name: Daspletosaurus wilsoni
+    etymology: Latinization of 'Wilson', after John Wilson, discoverer of the
+      holotype.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Campanian
+      from_ma: 76.5
+      to_ma: 75.64
+    location:
+      country: US
+      region: Montana
+      formation: Judith River
+      locality: Jack's B2 site, near Glasgow, Valley County
+    holotype:
+      specimen_id:
+        - BDM 107
+      specimen_type: holotype
+      institution: BDM
+      material: "Partial skull and postcranium: premaxillae, maxilla, jugal, lacrimal,
+        quadrate, quadratojugal, dentary, splenial, postorbital, squamosal,
+        cervical/sacral/caudal vertebrae, rib, chevron, metatarsal."
+    diagnostic_features:
+      - Mylohyoid foramen of the splenial elongate and dorsoventrally shallow
+        (much deeper in D. torosus and D. horneri).
+      - Cornual process of the lacrimal short (5.2 cm), intermediate in height
+        between the tall process of D. torosus and the low one of D. horneri.
+      - Prefrontal oriented rostrocaudally (rostromedially to mediolaterally in
+        D. horneri).
+      - Cornual process of the postorbital subdivided into a supraorbital shelf
+        and a caudodorsal tuberosity (undivided in D. horneri).
+      - Dorsal quadrate contact of the quadratojugal broadly visible in lateral
+        view (concealed in D. torosus).
+      - Premaxillary tooth row oriented entirely mediolaterally, concealing all
+        but the distalmost tooth in lateral view (rostromedial, several teeth
+        visible in D. torosus).
+    erected_in: warshaw2022a
 notable_specimens:
   - nickname: Pete III
-    specimen_id: [CMC VP 15826]
+    specimen_id:
+      - CMC VP 15826
     institution: CMC-US
     category: largest-individual
-    significance: "Largest known specimen of Daspletosaurus, suggesting the genus could reach lengths of over 9 meters; its description identified new anatomical features previously unknown from the genus and may represent an unnamed species."
-    references: [warnercowgill2025a]
-  - specimen_id: [OTM 200]
+    significance: Largest known specimen of Daspletosaurus, suggesting the genus
+      could reach lengths of over 9 meters; its description identified new
+      anatomical features previously unknown from the genus and may represent an
+      unnamed species.
+    references:
+      - warnercowgill2025a
+  - specimen_id:
+      - OTM 200
     institution: OTM
     category: gut-contents
-    significance: "Two Medicine Formation specimen preserving the digested remains of a juvenile hadrosaur in its gut region, providing direct evidence that Daspletosaurus fed on hadrosaurs."
-    references: [varricchio2001a]
-  - specimen_id: [TMP 85.62.1]
+    significance: Two Medicine Formation specimen preserving the digested remains of
+      a juvenile hadrosaur in its gut region, providing direct evidence that
+      Daspletosaurus fed on hadrosaurs.
+    references:
+      - varricchio2001a
+  - specimen_id:
+      - TMP 85.62.1
     institution: TMP
     category: pathology
-    significance: "A full-grown Dinosaur Park Daspletosaurus exhibiting tyrannosaur bite marks on its skull, cited as evidence of intraspecific facial biting in the genus."
-    references: [tanke1998a]
-  - specimen_id: [FMNH PR308]
+    significance: A full-grown Dinosaur Park Daspletosaurus exhibiting tyrannosaur
+      bite marks on its skull, cited as evidence of intraspecific facial biting
+      in the genus.
+    references:
+      - tanke1998a
+  - specimen_id:
+      - FMNH PR308
     institution: FMNH
     species: Daspletosaurus torosus
     category: historic
-    significance: "Nearly complete skeleton and skull collected by Barnum Brown, mounted for display in Chicago and labeled Albertosaurus libratus for many years before being reassigned to Daspletosaurus torosus."
+    significance: Nearly complete skeleton and skull collected by Barnum Brown,
+      mounted for display in Chicago and labeled Albertosaurus libratus for many
+      years before being reassigned to Daspletosaurus torosus.
     discovered:
       year: 1914
-      by: "Barnum Brown"
-    references: [carr1999a]
+      by: Barnum Brown
+    references:
+      - carr1999a
 references:
   - id: russell1970a
   - id: paul2024a
@@ -126,3 +220,9 @@ references:
   - id: tanke1998a
     notes: Issue dated 1998 but not printed until 2000.
   - id: carr1999a
+  - id: carr2017a
+    notes: Erects Daspletosaurus horneri on skull MOR 590 from the Two Medicine
+      Formation of Montana, proposing anagenesis from D. torosus.
+  - id: warshaw2022a
+    notes: Erects Daspletosaurus wilsoni on BDM 107 from the Judith River
+      Formation of Montana, interpreted as morphologically transitional.
