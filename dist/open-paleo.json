@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-07-06T20:12:44.986Z",
+    "built_at": "2026-07-06T20:36:57.540Z",
     "clade_count": 188,
     "genus_count": 1397,
     "license": "CC-BY-4.0",
@@ -52997,6 +52997,47 @@
           "erected_in": "lambe1914b",
           "authors": "Lambe, L. M.",
           "described": 1914
+        },
+        {
+          "name": "Chasmosaurus russelli",
+          "etymology": "Named for Dr. L. S. Russell, who collected the holotype.",
+          "status": "valid",
+          "type_species": false,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Campanian"
+            ],
+            "from_ma": 83.6,
+            "to_ma": 72.2
+          },
+          "location": {
+            "country": "CA",
+            "region": "Alberta",
+            "formation": "Dinosaur Park",
+            "locality": "Near Manyberries"
+          },
+          "holotype": {
+            "specimen_id": [
+              "NMC 8800"
+            ],
+            "specimen_type": "holotype",
+            "institution": "Canadian Museum of Nature",
+            "material": "Skull without lower jaws; anterior rostral, distal half of left jugal, right jugal, quadrate, squamosal, and part of right parietal edge lost to erosion before discovery."
+          },
+          "diagnostic_features": [
+            "Skull large, relatively high and short in front of the orbits.",
+            "Rostral straight along the lower edge, not hooked downward at the tip.",
+            "Nasal horncore massive; skull broad between the orbits, without brow horncores.",
+            "Well-developed epijugal.",
+            "Parietals deeply indented posteriorly; epoccipitals small, giving a nearly smooth squamosal border.",
+            "Mandible massive, more robust than in C. belli."
+          ],
+          "erected_in": "sternberg1940b",
+          "authors": "Sternberg, C. M.",
+          "described": 1940
         }
       ],
       "references": [
@@ -53017,6 +53058,16 @@
           "title": "The Princeton Field Guide to Dinosaurs (3rd ed.)",
           "publisher": "Princeton University Press",
           "notes": "Source of the appearance features."
+        },
+        {
+          "id": "sternberg1940b",
+          "authors": "Sternberg, C. M.",
+          "year": 1940,
+          "title": "Ceratopsidae from Alberta",
+          "journal": "Journal of Paleontology",
+          "volume": "14",
+          "pages": "468-480",
+          "notes": "Erects Chasmosaurus russelli on skull NMC 8800 from the Dinosaur Park Formation of Alberta."
         }
       ],
       "taxonomy": [
@@ -203385,6 +203436,58 @@
           "erected_in": "galton1979a",
           "authors": "Galton, P. M.; Jensen, J. A.",
           "described": 1979
+        },
+        {
+          "name": "Torvosaurus gurneyi",
+          "etymology": "Honors the paleoartist James Gurney, creator of the Dinotopia book series.",
+          "status": "valid",
+          "type_species": false,
+          "period": {
+            "name": [
+              "Late Jurassic"
+            ],
+            "stage": [
+              "Kimmeridgian",
+              "Tithonian"
+            ],
+            "from_ma": 152,
+            "to_ma": 145
+          },
+          "location": {
+            "country": "PT",
+            "region": "Estremadura",
+            "formation": "Lourinhã",
+            "member": "Amoreira-Porto Novo",
+            "locality": "Praia da Vermelha, Lourinhã"
+          },
+          "holotype": {
+            "specimen_id": [
+              "ML 1100"
+            ],
+            "specimen_type": "holotype",
+            "institution": "Museu da Lourinhã",
+            "material": "Incomplete left maxilla bearing one erupted and one unerupted tooth, and the posterior portion of a proximal caudal vertebra."
+          },
+          "size": {
+            "length_m": {
+              "min": 10,
+              "max": 10
+            },
+            "weight_kg": {
+              "min": 4000,
+              "max": 5000
+            }
+          },
+          "diagnostic_features": [
+            "Maxilla bearing fewer than eleven teeth.",
+            "Interdental plates fused with a straight ventral margin, rather than terminating in broad V-shaped points that fall short of the lateral wall.",
+            "Interdental wall extending nearly as far ventrally as the lateral wall of the maxillary body.",
+            "No protuberant ridge on the anterior part of the medial shelf, posterior to the anteromedial process.",
+            "Dorsal and medial ridges of the anteromedial process with a coincidental posterior extension."
+          ],
+          "erected_in": "hendrickx2014a",
+          "authors": "Hendrickx, C.; Mateus, O.",
+          "described": 2014
         }
       ],
       "notable_specimens": [
@@ -203425,6 +203528,19 @@
           "volume": "26",
           "issue": "1",
           "pages": "1-12"
+        },
+        {
+          "id": "hendrickx2014a",
+          "authors": "Hendrickx, C.; Mateus, O.",
+          "year": 2014,
+          "title": "Torvosaurus gurneyi n. sp., the largest terrestrial predator from Europe, and a proposed terminology of the maxilla anatomy in nonavian theropods",
+          "journal": "PLoS ONE",
+          "publisher": "Public Library of Science (PLoS)",
+          "volume": "9",
+          "issue": "3",
+          "pages": "e88905",
+          "doi": "10.1371/journal.pone.0088905",
+          "notes": "Original description of Torvosaurus gurneyi on maxilla ML 1100 from the Lourinhã Formation of Portugal."
         }
       ],
       "taxonomy": [
