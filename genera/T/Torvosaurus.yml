@@ -3,8 +3,8 @@ parent: Megalosaurinae
 pronunciation:
   phonetic: TOR-vo-SAWR-us
   ipa: /ˌtɔːrvoʊˈsɔːrəs/
-etymology: "From Latin torvus ('savage' or 'fierce') and Greek sauros
-  ('lizard'), meaning 'savage lizard'"
+etymology: From Latin torvus ('savage' or 'fierce') and Greek sauros ('lizard'),
+  meaning 'savage lizard'
 description: Torvosaurus is a genus of large megalosaurine theropod dinosaur
   that lived approximately 165 to 146.5 million years ago during the Callovian
   to Tithonian ages of the late Middle and Late Jurassic period in what is now
@@ -53,9 +53,9 @@ synonyms:
       analysis may yet revalidate the genus.
 species:
   - name: Torvosaurus tanneri
-    etymology: "Named for Nathan Eldon Tanner, who at the time of the species' 1979
+    etymology: Named for Nathan Eldon Tanner, who at the time of the species' 1979
       description was first counselor in the First Presidency of the Church of
-      Jesus Christ of Latter-day Saints."
+      Jesus Christ of Latter-day Saints.
     status: valid
     type_species: true
     period:
@@ -75,29 +75,82 @@ species:
         - 38.583099
         - -108.397202
     holotype:
-      specimen_id: [ BYU 2002 ]
+      specimen_id:
+        - BYU 2002
       specimen_type: holotype
       institution: BYU
-      material: Left and right humeri, radii, and ulnae (six forelimb long
-        bones) of a single individual.
+      material: Left and right humeri, radii, and ulnae (six forelimb long bones) of a
+        single individual.
       completeness: fragmentary
     size:
       length_m:
-        min: 9.0
-        max: 10.0
+        min: 9
+        max: 10
       weight_kg:
         min: 2000
         max: 5000
     erected_in: galton1979a
+  - name: Torvosaurus gurneyi
+    etymology: Honors the paleoartist James Gurney, creator of the Dinotopia book
+      series.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Jurassic
+      stage:
+        - Kimmeridgian
+        - Tithonian
+      from_ma: 152
+      to_ma: 145
+    location:
+      country: PT
+      region: Estremadura
+      formation: Lourinhã
+      member: Amoreira-Porto Novo
+      locality: Praia da Vermelha, Lourinhã
+    holotype:
+      specimen_id:
+        - ML 1100
+      specimen_type: holotype
+      institution: ML
+      material: Incomplete left maxilla bearing one erupted and one unerupted tooth,
+        and the posterior portion of a proximal caudal vertebra.
+    size:
+      length_m:
+        min: 10
+        max: 10
+      weight_kg:
+        min: 4000
+        max: 5000
+    diagnostic_features:
+      - Maxilla bearing fewer than eleven teeth.
+      - Interdental plates fused with a straight ventral margin, rather than
+        terminating in broad V-shaped points that fall short of the lateral wall.
+      - Interdental wall extending nearly as far ventrally as the lateral wall of
+        the maxillary body.
+      - No protuberant ridge on the anterior part of the medial shelf, posterior
+        to the anteromedial process.
+      - Dorsal and medial ridges of the anteromedial process with a coincidental
+        posterior extension.
+    erected_in: hendrickx2014a
 notable_specimens:
-  - specimen_id: [ML1188]
+  - specimen_id:
+      - ML1188
     institution: ML
     category: reproductive
-    significance: "A clutch of crushed eggs and embryonic material attributed to Torvosaurus from the Lourinha Formation, Portugal; the most primitive and only known basal theropod embryos, and the first evidence of a one-layered eggshell for theropod dinosaurs."
+    significance: A clutch of crushed eggs and embryonic material attributed to
+      Torvosaurus from the Lourinha Formation, Portugal; the most primitive and
+      only known basal theropod embryos, and the first evidence of a one-layered
+      eggshell for theropod dinosaurs.
     discovered:
       year: 2005
-      by: "Aart Walen"
-    references: [araújo2013a]
+      by: Aart Walen
+    references:
+      - araújo2013a
 references:
   - id: araújo2013a
   - id: galton1979a
+  - id: hendrickx2014a
+    notes: Original description of Torvosaurus gurneyi on maxilla ML 1100 from the
+      Lourinhã Formation of Portugal.
