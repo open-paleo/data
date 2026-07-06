@@ -1,8 +1,8 @@
 genus: Mochlodon
 parent: Rhabdodontidae
-etymology: "From Greek 'mochlos' meaning 'bar' or 'lever' and 'odon' meaning
+etymology: From Greek 'mochlos' meaning 'bar' or 'lever' and 'odon' meaning
   'tooth', giving the meaning 'bar tooth' or 'lever tooth', referring to a
-  distinctive tooth morphology."
+  distinctive tooth morphology.
 pronunciation:
   phonetic: MOK-lo-don
 description: Mochlodon is a genus of rhabdodontid dinosaurs from the Late
@@ -43,9 +43,8 @@ synonyms:
       treated as a junior synonym of Mochlodon.
 species:
   - name: Mochlodon suessi
-    etymology: "Named for Eduard Suess, the geologist who led the team that
-      excavated the type material from the Gute Hoffnung mine at Muthmannsdorf,
-      Austria."
+    etymology: Named for Eduard Suess, the geologist who led the team that excavated
+      the type material from the Gute Hoffnung mine at Muthmannsdorf, Austria.
     status: valid
     type_species: true
     period:
@@ -74,14 +73,56 @@ species:
         min: 0.6
         max: 0.6
     holotype:
-      specimen_id: [ PIUW 2349 ]
+      specimen_id:
+        - PIUW 2349
       specimen_type: lectotype
       institution: IPUW
       material: Right dentary bone, ~7.5 cm long with tooth-bearing part 17-18 mm;
         small parietal bone; scapula fragment also referred
       completeness: fragmentary
     erected_in: seeley1881a
+  - name: Mochlodon vorosi
+    etymology: Honors Attila Vörös, the paleontologist who founded the Hungarian
+      Academy of Sciences' paleontological research group.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Santonian
+      from_ma: 85.7
+      to_ma: 83.6
+    location:
+      country: HU
+      region: Veszprém
+      formation: Csehbánya
+      locality: Iharkút
+    holotype:
+      specimen_id:
+        - MTM V 2010.105.1
+      specimen_type: holotype
+      institution: HNHM
+      material: Complete left dentary with four broken teeth.
+    size:
+      length_m:
+        min: 1.2
+        max: 1.8
+    diagnostic_features:
+      - Dentary with a markedly deeper depression below the coronoid process that
+        becomes transversely shallower but dorsoventrally wider toward the
+        dentary-surangular suture.
+      - Rostral tip of the dentary directed rostrally, so the dorsal margin of
+        the symphyseal region is horizontal and near the level of the alveolar
+        margin (rostroventrally directed in M. suessi).
+      - Groove on the dorsal margin of the symphyseal region bordered caudally by
+        a dorsally rounded vertical wall separating the first alveolus from the
+        symphyseal region.
+    erected_in: ősi2012a
 references:
   - id: seeley1881a
   - id: jones2026a
     notes: Source of the body length, mass, and hip height estimates.
+  - id: ősi2012a
+    notes: Erects Mochlodon vorosi on dentary MTM V 2010.105.1 from the Csehbánya
+      Formation (Iharkút) of Hungary; revises rhabdodontid phylogeny.
