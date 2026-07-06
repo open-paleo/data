@@ -28,6 +28,8 @@ diagnostic_features:
     dentary with rounded ventral border in Leptoceratops
   - Caudal neural spines very long, some more than five times the height of the
     corresponding centrum, versus two to two-and-a-half times in Leptoceratops
+  - Splenial heavier and more elongate, with a more massive anterior end than in
+    Leptoceratops
 identifiers:
   - source: pbdb
     id: "38850"
@@ -37,6 +39,7 @@ identifiers:
     id: "4823253"
   - source: eol
     id: "4532034"
+erected_in: sternberg1951a
 species:
   - name: Montanoceratops cerorhynchus
     etymology: "From Ancient Greek 'keras' ('horn') and 'rhynchos' ('snout' or 'beak'), meaning 'horn-snouted', referring to what was originally interpreted as a nasal horn."
@@ -62,6 +65,9 @@ species:
       specimen_id: [AMNH 5464]
       specimen_type: holotype
       institution: AMNH
+      material: Partial skull and jaws; complete cervical, dorsal, and sacral
+        vertebrae; 13 caudals; ribs; near-complete pelvis; both femora; left
+        tibia, fibula, astragalus; foot phalanges.
     size:
       hip_height_m:
         min: 0.8
@@ -72,8 +78,12 @@ species:
       weight_kg:
         min: 170
         max: 170
-    erected_in: sternberg1951a
+    erected_in: brown1942a
 references:
+  - id: brown1942a
+    notes: Original description of the holotype (AMNH 5464), as Leptoceratops
+      cerorhynchus.
   - id: sternberg1951a
+    notes: Erected the genus Montanoceratops for the species.
   - id: jones2026a
     notes: Source of the hip height estimate, and the appearance features.
