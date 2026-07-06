@@ -3,9 +3,9 @@ parent: Massospondylidae
 pronunciation:
   ipa: /ˌmæsoʊˈspɒndɪləs/
   phonetic: MASS-oh-SPON-di-lus
-etymology: "From Greek 'massos' meaning 'longer' and 'spondylos' meaning
+etymology: From Greek 'massos' meaning 'longer' and 'spondylos' meaning
   'vertebra', referring to what Richard Owen identified as elongated tail
-  vertebrae."
+  vertebrae.
 description: Massospondylus is a genus of sauropodomorph dinosaur from the Early
   Jurassic of southern Africa. It was described by Richard Owen in 1854 from
   remains discovered in South Africa, and is thus one of the first dinosaurs to
@@ -82,8 +82,8 @@ synonyms:
       Dinosaur Genera List.
 species:
   - name: Massospondylus carinatus
-    etymology: "From Latin 'carinatus' meaning 'keeled', referring to the keeled
-      vertebrae that characterize this sauropodomorph."
+    etymology: From Latin 'carinatus' meaning 'keeled', referring to the keeled
+      vertebrae that characterize this sauropodomorph.
     status: valid
     type_species: true
     period:
@@ -109,50 +109,102 @@ species:
         min: 1.2
         max: 1.2
       length_m:
-        min: 4.0
-        max: 6.0
+        min: 4
+        max: 6
       weight_kg:
         min: 137
         max: 195
     holotype:
-      specimen_id: [ BP/1/4934 ]
+      specimen_id:
+        - BP/1/4934
       specimen_type: neotype
       institution: BP
-      material: Partially complete, articulated skeleton including an almost
-        complete skull, but lacking most of the hind limbs and tail; an adult
-        individual.
+      material: Partially complete, articulated skeleton including an almost complete
+        skull, but lacking most of the hind limbs and tail; an adult individual.
       completeness: partial
-      notes: The original syntype series (five cervical vertebrae) was destroyed
-        in the 19 May 1941 bombing of the Hunterian Museum of the Royal College
-        of Surgeons, London, leaving only casts and illustrations. As casts
-        cannot serve as types, Yates and Barrett (2010) formally designated
-        BP/1/4934 as the neotype under ICZN Article 75, following earlier
-        suggestions by Sues et al. (2004) and Barrett (2009).
+      notes: The original syntype series (five cervical vertebrae) was destroyed in
+        the 19 May 1941 bombing of the Hunterian Museum of the Royal College of
+        Surgeons, London, leaving only casts and illustrations. As casts cannot
+        serve as types, Yates and Barrett (2010) formally designated BP/1/4934
+        as the neotype under ICZN Article 75, following earlier suggestions by
+        Sues et al. (2004) and Barrett (2009).
     erected_in: owen1854a
     described_in: barrett2019a
+  - name: Massospondylus kaalae
+    etymology: After Sheena Kaal, Karoo vertebrate collections manager at the
+      Iziko South African Museum, in recognition of her assistance to
+      researchers.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Early Jurassic
+      stage:
+        - Hettangian
+        - Sinemurian
+      from_ma: 201.3
+      to_ma: 192.9
+    location:
+      country: ZA
+      region: Eastern Cape
+      formation: Elliot
+      member: Upper Elliot
+      locality: Near Voyizane, Herschel District
+      coordinates:
+        - -30.567
+        - 27.433
+    holotype:
+      specimen_id:
+        - SAM-PK-K1325
+      specimen_type: holotype
+      institution: SAM
+      material: "Incomplete, partially disarticulated skull: paired premaxillae,
+        maxillae, lacrimals, jugals, pterygoids, frontals, and parietals;
+        partial left nasal, left prefrontal, and right palatine; partial
+        braincase; right dentary; a prearticular; an almost complete left
+        mandible; teeth; indeterminate fragments"
+    diagnostic_features:
+      - Premaxilla forming more than 30% of the upper tooth row.
+      - Dorsolateral ridge on the lacrimal more prominent than in M. carinatus.
+      - Cultriform process of the parabasisphenoid positioned ventral to the
+        level of the basioccipital condyle (at the same level, or only slightly
+        deflected, in M. carinatus).
+      - Basipterygoid processes slender, elongate, and unexpanded distally
+        (bulbous and expanded in both directions in M. carinatus).
+    erected_in: barrett2009b
 notable_specimens:
   - nickname: Mafeteng hatchling
-    specimen_id: [SAM-PK-K413]
+    specimen_id:
+      - SAM-PK-K413
     institution: SAM
     species: Massospondylus carinatus
     category: ontogeny
-    significance: "Hatchling skeleton from Mafeteng, Lesotho, at first misidentified as the varanopid Heleosaurus. It is central to the debate over a juvenile-to-adult postural shift; analysis found this hatchling to be bipedal, suggesting Massospondylus was bipedal at all ages."
+    significance: Hatchling skeleton from Mafeteng, Lesotho, at first misidentified
+      as the varanopid Heleosaurus. It is central to the debate over a
+      juvenile-to-adult postural shift; analysis found this hatchling to be
+      bipedal, suggesting Massospondylus was bipedal at all ages.
     discovered:
       year: 1961
-      by: "British-South African palaeontological expedition"
-    references: [mooney2025a]
-  - specimen_id: [BP-1-5241]
+      by: British-South African palaeontological expedition
+    references:
+      - mooney2025a
+  - specimen_id:
+      - BP-1-5241
     institution: BP
     species: Massospondylus carinatus
     category: complementary
-    significance: "Preserves well-developed clavicles joined in a furcula-like arrangement that clasped the right and left shoulder blades. The specimen indicates clavicle reduction is limited to the line leading to ceratopsians and that the furcula of birds is derived from clavicles."
-    references: [yates2005b]
+    significance: Preserves well-developed clavicles joined in a furcula-like
+      arrangement that clasped the right and left shoulder blades. The specimen
+      indicates clavicle reduction is limited to the line leading to
+      ceratopsians and that the furcula of birds is derived from clavicles.
+    references:
+      - yates2005b
 references:
   - id: owen1854a
   - id: yates2010a
-    notes: Formally designates BP/1/4934 as the neotype of Massospondylus
-      carinatus under ICZN Article 75, the original syntype series having been
-      destroyed in 1941.
+    notes: Formally designates BP/1/4934 as the neotype of Massospondylus carinatus
+      under ICZN Article 75, the original syntype series having been destroyed
+      in 1941.
   - id: chapelle2018a
     notes: CT-based revised cranial description; proposes cranial autapomorphies
       (basipterygoid processes diverging less than 60°) and rejects the earlier
@@ -167,3 +219,6 @@ references:
   - id: yates2005b
   - id: sues2004a
     notes: Redescribed the skull of Massospondylus carinatus.
+  - id: barrett2009b
+    notes: Erects Massospondylus kaalae on skull SAM-PK-K1325 from the Upper
+      Elliot Formation of South Africa.
