@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-06T18:28:57.438Z
+  built_at: 2026-07-06T19:15:39.027Z
   clade_count: 188
   genus_count: 1397
   license: CC-BY-4.0
@@ -128057,7 +128057,7 @@ genera:
   Protoceratops:
     genus: Protoceratops
     parent: Protoceratopsidae
-    etymology: From Greek protos (first) and keratops (horned face); meaning "first horned face", chosen by Granger and Gregory to reflect their interpretation of the genus as an early, pre- ceratopsid member of the horned-dinosaur lineage.
+    etymology: From Greek protos (first) and keratops (horned face); meaning "first horned face", chosen by Granger and Gregory to reflect their interpretation of the genus as an early, pre-ceratopsid member of the horned-dinosaur lineage.
     pronunciation:
       phonetic: PROH-toh-SERR-uh-tops
       ipa: /ˌproʊtoʊˈsɛrətɒps/
@@ -128133,6 +128133,40 @@ genera:
         described_in: brown1940a
         authors: Granger, W.; Gregory, W. K.
         described: 1923
+      - name: Protoceratops hellenikorhinus
+        etymology: From Greek 'hellenikos' (Grecian) and 'rhis' (nose), referring to the elevated, angular snout resembling a Greek profile.
+        status: valid
+        type_species: false
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+          from_ma: 75
+          to_ma: 72.1
+        location:
+          country: CN
+          region: Inner Mongolia
+          formation: Bayan Mandahu
+          locality: Bayan Mandahu, Urad Houqi
+          coordinates:
+            - 41.741
+            - 106.745
+        holotype:
+          specimen_id:
+            - IMM 95BM1/1
+          specimen_type: holotype
+          institution: Inner Mongolia Museum, Hohhot
+          material: Nearly complete skull of a male individual, missing only the rostralmost premaxillae/rostral bone, the caudal basioccipital, and the frill's median parietal ridge; no postcranial elements.
+        diagnostic_features:
+          - Ventral edge of the dentary straight (curved in adult P. andrewsi).
+          - Caudal edge of the angular forming a caudally facing triangular surface for insertion of the depressor mandibulae.
+          - Long ventral projection of the squamosal contacting the quadratojugal at the caudoventral corner of the infratemporal fenestra (not observed in P. andrewsi).
+          - Longitudinal ridge on the maxilla straight and strongly reduced, discontinuous with the ventral margin of the jugal (well-marked, curved, and continuous with the jugal in P. andrewsi).
+          - Nasal horns bordered rostrally by a distinct concavity and more individualized than the incipient, regularly convex horns of P. andrewsi.
+        erected_in: lambert2001a
+        authors: Lambert, O.; Godefroit, P.; Li, H.; Shang, C.-Y.; Dong, Z.-M.
+        described: 2001
     notable_specimens:
       - nickname: Fighting Dinosaurs
         specimen_id:
@@ -128265,6 +128299,15 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
         notes: Source of the hip height estimate, and the appearance features.
+      - id: lambert2001a
+        authors: Lambert, O.; Godefroit, P.; Li, H.; Shang, C.-Y.; Dong, Z.-M.
+        year: 2001
+        title: A new species of Protoceratops (Dinosauria, Neoceratopsia) from the Late Cretaceous of Inner Mongolia (P. R. China)
+        journal: Bulletin de l'Institut Royal des Sciences Naturelles de Belgique, Sciences de la Terre
+        volume: "71"
+        issue: supplement
+        pages: 5-28
+        notes: Original description of Protoceratops hellenikorhinus on a male skull from the Bayan Mandahu Formation of Inner Mongolia.
     taxonomy:
       - Life
       - Animalia
