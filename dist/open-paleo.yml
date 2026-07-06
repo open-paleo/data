@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-06T19:15:39.027Z
+  built_at: 2026-07-06T20:12:44.986Z
   clade_count: 188
   genus_count: 1397
   license: CC-BY-4.0
@@ -47047,6 +47047,38 @@ genera:
         erected_in: brown1914b
         authors: Brown, B.
         described: 1914
+      - name: Corythosaurus intermedius
+        etymology: From Latin 'intermedius' ('intermediate'), for the crest form, intermediate between those of Lambeosaurus lambei and Corythosaurus casuarius.
+        status: valid
+        type_species: false
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+          from_ma: 83.6
+          to_ma: 72.2
+        location:
+          country: CA
+          region: Alberta
+          formation: Dinosaur Park
+          locality: Red Deer River, near Happy Jack Ferry
+        holotype:
+          specimen_id:
+            - ROM 776
+          specimen_type: holotype
+          institution: Royal Ontario Museum
+          material: 'Nearly complete skull (specimen "A"): crested premaxillae and nasals, maxillae, jugals, squamosals, quadrates, palatines, pterygoids, braincase elements, and right dentary; no postcranial material.'
+        size:
+          length_m:
+            min: 9.35
+            max: 9.35
+        diagnostic_features:
+          - Crest ascending more gradually from the snout and extending farther back, rather than rising abruptly.
+          - Postero-inferior angle of the crest drawn out into a short, stout process.
+        erected_in: parks1923a
+        authors: Parks, W. A.
+        described: 1923
     references:
       - id: brown1914b
         authors: Brown, B.
@@ -47056,6 +47088,14 @@ genera:
         volume: "33"
         issue: "35"
         pages: 559-564
+      - id: parks1923a
+        authors: Parks, W. A.
+        year: 1923
+        title: Corythosaurus intermedius, a new species of trachodont dinosaur
+        journal: University of Toronto Studies, Geology Series
+        volume: "15"
+        pages: 1-57
+        notes: Original description of Corythosaurus intermedius on skull ROM 776 from the Dinosaur Park Formation of Alberta.
     taxonomy:
       - Life
       - Animalia
