@@ -59,8 +59,7 @@ synonyms:
       List.
 species:
   - name: Dicraeosaurus hansemanni
-    etymology: "Named in honor of the German scientist and politician David von
-      Hansemann."
+    etymology: Named in honor of the German scientist and politician David von Hansemann.
     status: valid
     type_species: true
     period:
@@ -81,7 +80,8 @@ species:
         - -9.696665
         - 39.228008
     holotype:
-      specimen_id: [ MB.R.4886 ]
+      specimen_id:
+        - MB.R.4886
       specimen_type: holotype
       institution: ZMB
       material: Skeleton including cervical, trunk, and caudal vertebrae and a femur
@@ -91,13 +91,51 @@ species:
         min: 3.8
         max: 3.8
       length_m:
-        min: 14.0
-        max: 15.0
+        min: 14
+        max: 15
       weight_kg:
         min: 5000
         max: 6000
     erected_in: janensch1914a
+  - name: Dicraeosaurus sattleri
+    etymology: Honors W. B. Sattler, who discovered the Tendaguru fossil site and
+      supported the expedition.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Jurassic
+      stage:
+        - Kimmeridgian
+        - Tithonian
+      from_ma: 152
+      to_ma: 145
+    location:
+      country: TZ
+      region: Lindi
+      formation: Tendaguru
+      locality: Upper Saurian Bed, Tendaguru
+      coordinates:
+        - -9.696665
+        - 39.228008
+    diagnostic_features:
+      - Trunk vertebrae more slender and lightly built, with a smaller, less
+        massive centrum.
+      - Neural spines of the trunk vertebrae narrower but relatively longer and
+        proportionally higher than in D. hansemanni (bifurcated in the same
+        manner).
+      - Diapophyses of the trunk vertebrae less elongate relative to centrum
+        length.
+      - Anterior caudal vertebrae with proportionally higher neural spines.
+      - Dorsal ribs slimmer and lighter, with thinner, weaker distal ends.
+      - Chevrons lighter, slimmer, and more strongly curved.
+      - Pubis and femur more slender and lightly built.
+    erected_in: janensch1914a
+    described_in: janensch1929a
 references:
   - id: janensch1914a
   - id: jones2026b
     notes: Source of the hip height estimate, and the appearance features.
+  - id: janensch1929a
+    notes: Detailed comparative osteology of the vertebral column of both
+      Dicraeosaurus species; source of the D. sattleri differential diagnosis.
