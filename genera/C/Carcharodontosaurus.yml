@@ -2,14 +2,15 @@ genus: Carcharodontosaurus
 parent: Carcharodontosaurinae
 dispute:
   summary: >
-    Carcharodontosaurus saharicus is a stable carcharodontosaurine, but referral of
-    the second species, C. iguidensis, to the genus is contested: several analyses
-    recover C. iguidensis outside Carcharodontosaurus sensu stricto and suggest it
-    warrants its own genus (Chiarenza and Cau, 2016; Kellermann et al., 2025; Cau
-    and Paterna, 2025).
+    Carcharodontosaurus saharicus is a stable carcharodontosaurine, but referral
+    of the second species, C. iguidensis, to the genus is contested: several
+    analyses recover C. iguidensis outside Carcharodontosaurus sensu stricto and
+    suggest it warrants its own genus (Chiarenza and Cau, 2016; Kellermann et
+    al., 2025; Cau and Paterna, 2025).
   history:
-    - date: "2026-07-01"
-      note: Placed at Carcharodontosaurinae following the drop of the Giganotosaurini tribe; the validity of the referred species C. iguidensis is uncertain.
+    - date: 2026-07-01
+      note: Placed at Carcharodontosaurinae following the drop of the Giganotosaurini
+        tribe; the validity of the referred species C. iguidensis is uncertain.
 pronunciation:
   phonetic: kahr-KAR-o-DON-to-SAWR-us
   ipa: /ˌkɑːrkəroʊˌdɒntoʊˈsɔːrəs/
@@ -62,8 +63,8 @@ identifiers:
     id: "4433601"
 species:
   - name: Carcharodontosaurus saharicus
-    etymology: "Means 'of the Sahara', referring to the Sahara Desert region of
-      North Africa where the type specimen was found."
+    etymology: Means 'of the Sahara', referring to the Sahara Desert region of North
+      Africa where the type specimen was found.
     status: valid
     type_species: true
     period:
@@ -102,22 +103,65 @@ species:
         min: 1.42
         max: 1.6
     holotype:
-      specimen_id: [ SGM-Din 1 ]
+      specimen_id:
+        - SGM-Din 1
       specimen_type: neotype
       institution: SGM
-      material: Partial cranium lacking the premaxillae, squamosals,
-        quadratojugals, quadrates, and most of the palate.
+      material: Partial cranium lacking the premaxillae, squamosals, quadratojugals,
+        quadrates, and most of the palate.
       completeness: partial
     erected_in: stromer1931a
     described_in: brusatte2007a
+  - name: Carcharodontosaurus iguidensis
+    etymology: From Iguidi, the area of Niger where the holotype was found, with
+      the Latin suffix '-ensis' ('from').
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Cenomanian
+      from_ma: 100.5
+      to_ma: 93.9
+    location:
+      country: NE
+      region: Agadez
+      formation: Echkar
+      locality: Iguidi, west of In Abangharit
+    holotype:
+      specimen_id:
+        - MNN IGU2
+      specimen_type: holotype
+      institution: MNBH
+      material: Left maxilla, missing most of the ascending ramus and the posterior
+        end of the main body, and all erupted teeth.
+    diagnostic_features:
+      - External antorbital fossa on the maxilla very reduced, restricted to a
+        small area near the maxillary fenestra.
+      - Anteromedial process of the maxilla broadly arched toward the midline and
+        not overhanging a deep ventral fossa (present in C. saharicus).
+      - Prominent horizontal crest on the medial aspect of the maxillary body.
+      - Deeply invaginated fossa on the anterior surface of the laterosphenoid
+        ala of the braincase.
+      - Ventral margin of the maxilla nearly straight in lateral view, lacking
+        the laterally protruding antorbital fossa rim of C. saharicus.
+      - Enamel wrinkles on the tooth crowns less numerous and confined mainly to
+        the base of the distal carina, less developed than in C. saharicus.
+    erected_in: brusatte2007a
 references:
   - id: stromer1931a
   - id: brusatte2007a
+    notes: Erects Carcharodontosaurus iguidensis on maxilla MNN IGU2 from the
+      Cenomanian Echkar Formation of Niger, and revises the genus.
   - id: jones2026c
     notes: Source of the hip height estimate, and the appearance features.
   - id: cau2025a
-    notes: Recovered C. iguidensis outside Carcharodontosaurus sensu stricto, suggesting it warrants its own genus.
+    notes: Recovered C. iguidensis outside Carcharodontosaurus sensu stricto,
+      suggesting it warrants its own genus.
   - id: chiarenza2016a
-    notes: Commenting on Cenomanian North African theropods, recovered C. iguidensis outside Carcharodontosaurus sensu stricto.
+    notes: Commenting on Cenomanian North African theropods, recovered C. iguidensis
+      outside Carcharodontosaurus sensu stricto.
   - id: kellermann2025a
-    notes: Re-evaluation supports excluding a Bahariya taxon from Carcharodontosaurus sensu stricto.
+    notes: Re-evaluation supports excluding a Bahariya taxon from
+      Carcharodontosaurus sensu stricto.
