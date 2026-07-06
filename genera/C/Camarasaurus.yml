@@ -65,13 +65,14 @@ synonyms:
       and is now treated as a junior synonym.
   - name: Cathetosaurus
     type: possible subjective
-    reason: Possible junior subjective synonym of Camarasaurus; identification is
-      tentative. Per Olshevsky's Dinosaur Genera List.
+    reason: Erected by Jensen (1988) for C. lewisi and synonymized with
+      Camarasaurus by McIntosh et al. (1996); some workers have since argued for
+      its resurrection as a distinct genus.
 species:
   - name: Camarasaurus supremus
-    etymology: "From Latin 'supremus' meaning 'supreme' or 'highest', reflecting the
+    etymology: From Latin 'supremus' meaning 'supreme' or 'highest', reflecting the
       very large size of the type species as recognized by Cope when he
-      described it in 1877."
+      described it in 1877.
     status: valid
     type_species: true
     period:
@@ -91,12 +92,13 @@ species:
         - 38.547501
         - -105.231598
     holotype:
-      specimen_id: [ AMNH 5760 ]
+      specimen_id:
+        - AMNH 5760
       specimen_type: holotype
       institution: AMNH
       material: Cervical and twenty dorsal/lumbar vertebrae, twenty caudals, both
-        scapulae and coracoids, half sacrum, two pairs pelvic bones, femur, tibia, one
-        metapodial.
+        scapulae and coracoids, half sacrum, two pairs pelvic bones, femur,
+        tibia, one metapodial.
       completeness: partial
     size:
       hip_height_m:
@@ -115,38 +117,193 @@ species:
           fragmentary fossils now considered referable to Camarasaurus supremus.
     erected_in: cope1877b
     described_in: osborn1921a
+  - name: Camarasaurus grandis
+    etymology: From Latin 'grandis' meaning 'large' or 'great', referring to the
+      animal's size.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Jurassic
+      stage:
+        - Kimmeridgian
+        - Tithonian
+      from_ma: 154.8
+      to_ma: 145
+    location:
+      country: US
+      region: Wyoming
+      formation: Morrison
+      locality: Marsh Quarry 1, Como Bluff
+    holotype:
+      specimen_id:
+        - YPM 1901
+      specimen_type: holotype
+      institution: YPM
+      material: Partial skeleton including cervical and caudal vertebrae, a femur, and
+        metapodials.
+    diagnostic_features:
+      - Neural arch of the anterior dorsal vertebrae borne on highly elevated
+        pedicels above the centra (the arch rests directly on the centrum in C.
+        lentus).
+      - Femoral great trochanter positioned distinctly below the femoral head and
+        continuous with it.
+    erected_in: marsh1877c
+    described_in: mcintosh1996a
+  - name: Camarasaurus lentus
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Jurassic
+      stage:
+        - Kimmeridgian
+        - Tithonian
+      from_ma: 154.8
+      to_ma: 145
+    location:
+      country: US
+      region: Wyoming
+      formation: Morrison
+      locality: Como Bluff
+    holotype:
+      specimen_id:
+        - YPM 1910
+      specimen_type: holotype
+      institution: YPM
+      material: "Partial postcranial skeleton: vertebral column C2–caudal 8, cervical
+        rib, left scapula, right coracoid, humeri, left radius, ilia, left
+        ischium, right pubis, left hindlimb/pes, right tibia"
+    diagnostic_features:
+      - Smaller than C. grandis, with proportionally shorter fore- and hindlimbs.
+      - Vertebrae shorter and more massive, with smaller internal pneumatic
+        cavities.
+      - Cervical and dorsal centra more strongly depressed (dorsoventrally
+        compressed) than in other species.
+      - Neural arch resting directly on the centrum rather than elevated on
+        pedicels above the articular faces (elevated in C. grandis and C.
+        supremus).
+      - Pubic foramen open posteriorly (entirely enclosed in C. supremus and C.
+        grandis).
+      - Axis with a depressed neural spine rising at a low angle (steeply
+        inclined in C. supremus).
+    erected_in: marsh1889b
+    described_in: gilmore1925a
+  - name: Camarasaurus lewisi
+    etymology: Honors Arnold D. Lewis, a field and laboratory preparator who
+      trained the author.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Jurassic
+      stage:
+        - Kimmeridgian
+        - Tithonian
+      from_ma: 154.8
+      to_ma: 145
+    location:
+      country: US
+      region: Colorado
+      formation: Morrison
+      member: Brushy Basin
+      locality: Dominguez-Jones Quarry, Pit 1, Mesa County
+      coordinates:
+        - 38.806
+        - -108.388
+    holotype:
+      specimen_id:
+        - BYU 9047
+      specimen_type: holotype
+      institution: BYU
+      material: "Articulated skeleton: atlas/axis plus 12 cervical vertebrae with
+        ribs; right humerus, radius, ulna, partial manus; 12 dorsal vertebrae; 1
+        dorsosacral vertebra; 20 dorsal ribs; 4 sacral vertebrae and ribs
+        co-ossified with 1 ilium; 1 pubis; both ischia; 43 anterior caudal
+        vertebrae with articulated chevrons"
+    size:
+      weight_kg:
+        min: 9100
+        max: 13600
+    diagnostic_features:
+      - Presacral neural spines bifid except the atlas/axis and the last dorsal,
+        the cleft persisting from cervical 3 through dorsal 11 (ending in the
+        mid-dorsal region in other species).
+      - Cleft in the dorsal neural spines V-shaped rather than U-shaped,
+        extending farther posteriorly than in other species.
+      - Prominent pre-epipophyseal ridges on the cervical postzygapophyses;
+        suprapostzygapophyseal laminae not confluent with the epipophyses.
+      - Anterior iliac processes rotated ventrally 18-20 degrees below the axis
+        of the vertebral column.
+      - Diagonal bone-struts connecting the metapophyseal spurs of the second and
+        third sacral neural spines to supracostal plates on the third and fourth
+        sacral ribs.
+      - Sacrocostal plate more strongly developed than in other species, even in
+        very aged individuals.
+      - Chevron heads with two articular surfaces of unequal orientation
+        (anterior facet horizontal, posterior sloping about 60 degrees
+        posteroventrally); anterior caudal chevrons about one-third longer than
+        in C. supremus.
+      - Forelimb more slender than in C. lentus, similar to that of C. grandis.
+    synonyms:
+      - name: Cathetosaurus lewisi
+        type: reassigned
+        reason: Originally erected as the type species of a new genus Cathetosaurus
+          (Jensen, 1988); McIntosh et al. (1996) found Cathetosaurus
+          indistinguishable from Camarasaurus at the generic level and
+          recombined the species as Camarasaurus lewisi.
+    erected_in: jensen1988a
+    described_in: mcintosh1996b
 notable_specimens:
-  - nickname: "E.T."
-    specimen_id: [SMA 0002]
+  - nickname: E.T.
+    specimen_id:
+      - SMA 0002
     institution: SMA
     category: exceptional-preservation
-    significance: "One of the best-known Camarasaurus skeletons, nearly every element articulated, with skin impressions showing hexagonal scales on the hindlimb and a patch of soft tissue interpreted as gums over the lower jaw and teeth. Among the oldest individuals identified, with five co-occurring pathologies."
+    significance: One of the best-known Camarasaurus skeletons, nearly every element
+      articulated, with skin impressions showing hexagonal scales on the
+      hindlimb and a patch of soft tissue interpreted as gums over the lower jaw
+      and teeth. Among the oldest individuals identified, with five co-occurring
+      pathologies.
     discovered:
       year: 1992
-      by: "Swiss field workers of the Sauriermuseum Aathal"
-    references: [tschopp2015b, wiersma2016a]
-  - specimen_id: [CM 11338]
+      by: Swiss field workers of the Sauriermuseum Aathal
+    references:
+      - tschopp2015b
+      - wiersma2016a
+  - specimen_id:
+      - CM 11338
     institution: CM
     category: exceptional-preservation
-    significance: "Nearly complete and articulated juvenile skeleton unearthed at Dinosaur National Monument; one of the best sauropod specimens known to science, with nearly every element preserved in articulation, and one of only two specimens preserving a complete tail."
+    significance: Nearly complete and articulated juvenile skeleton unearthed at
+      Dinosaur National Monument; one of the best sauropod specimens known to
+      science, with nearly every element preserved in articulation, and one of
+      only two specimens preserving a complete tail.
     discovered:
       year: 1914
-      by: "Earl Douglass"
-    references: [gilmore1925a, ikejiri2005a]
-  - specimen_id: [GMNH-PV 101]
+      by: Earl Douglass
+    references:
+      - gilmore1925a
+      - ikejiri2005a
+  - specimen_id:
+      - GMNH-PV 101
     institution: GMNH
     category: pathology
-    significance: "Nearly complete articulated skeleton preserving a complete tail with pathologies in thirteen vertebrae, including spina bifida in two vertebrae, the first reported example of this condition in dinosaurs, plus osteoarthritis and five pathologically fused caudal vertebrae."
+    significance: Nearly complete articulated skeleton preserving a complete tail
+      with pathologies in thirteen vertebrae, including spina bifida in two
+      vertebrae, the first reported example of this condition in dinosaurs, plus
+      osteoarthritis and five pathologically fused caudal vertebrae.
     discovered:
       year: 1992
-      by: "Jeffrie Parker and colleagues"
-    references: [mcintosh1996a]
+      by: Jeffrie Parker and colleagues
+    references:
+      - mcintosh1996a
 references:
   - id: cope1877b
   - id: osborn1921a
-    notes: Comprehensive iconographic monograph redescribing all of Cope's
-      Canyon City sauropod material at the AMNH; the primary osteological
-      reference for Camarasaurus supremus.
+    notes: Comprehensive iconographic monograph redescribing all of Cope's Canyon
+      City sauropod material at the AMNH; the primary osteological reference for
+      Camarasaurus supremus.
   - id: gilmore1925a
   - id: mcintosh1996a
   - id: ikejiri2005a
@@ -154,3 +311,15 @@ references:
   - id: wiersma2016a
   - id: jones2026b
     notes: Source of the hip height estimate.
+  - id: marsh1877c
+    notes: Erects the basionym Apatosaurus grandis, later recombined as
+      Camarasaurus grandis.
+  - id: marsh1889b
+    notes: Erects the basionym Morosaurus lentus, later recombined as
+      Camarasaurus lentus.
+  - id: jensen1988a
+    notes: Original description of the species, as Cathetosaurus lewisi.
+  - id: mcintosh1996b
+    notes: Redescribes the holotype (BYU 9047, misprinted as BYU 9740 in the
+      original description) and synonymizes Cathetosaurus with Camarasaurus,
+      providing a revised diagnosis of Camarasaurus lewisi.
