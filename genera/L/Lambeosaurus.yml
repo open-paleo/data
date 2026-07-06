@@ -3,15 +3,15 @@ parent: Lambeosaurinae
 pronunciation:
   ipa: /ˌlæmbiəˈsɔːrəs/
   phonetic: LAM-bee-uh-SOR-uhs
-etymology: "Named for Canadian paleontologist Lawrence M. Lambe, with the Greek
-  suffix '-saurus' meaning 'lizard'."
+etymology: Named for Canadian paleontologist Lawrence M. Lambe, with the Greek
+  suffix '-saurus' meaning 'lizard'.
 description: Lambeosaurus is a genus of hadrosaurid dinosaur that lived during
   the Late Cretaceous period of western North America. The first skull of
-  Lambeosaurus found was used by paleontologist Lawrence M. Lambe to justify
-  the creation of the new genus Stephanosaurus, although it was not part of the
+  Lambeosaurus found was used by paleontologist Lawrence M. Lambe to justify the
+  creation of the new genus Stephanosaurus, although it was not part of the
   latter's original material. Its incomplete nature led William A. Parks to name
-  Lambeosaurus lambei for this skull in 1923 to honor Lambe. Multiple species
-  of Lambeosaurus have been named since, including L. clavinitialis and L.
+  Lambeosaurus lambei for this skull in 1923 to honor Lambe. Multiple species of
+  Lambeosaurus have been named since, including L. clavinitialis and L.
   magnicristatus in 1935, and L. laticaudus in 1981 which was later moved to its
   own genus Magnapaulia. It has also been identified that some species earlier
   identified as belonging to Tetragonosaurus and Corythosaurus are now
@@ -70,9 +70,9 @@ synonyms:
       tentative. Per Olshevsky's Dinosaur Genera List.
 species:
   - name: Lambeosaurus lambei
-    etymology: "Named for Lawrence Morris Lambe, a Canadian paleontologist who
+    etymology: Named for Lawrence Morris Lambe, a Canadian paleontologist who
       described numerous Cretaceous dinosaurs from Alberta in the early
-      twentieth century."
+      twentieth century.
     status: valid
     type_species: true
     period:
@@ -91,39 +91,89 @@ species:
         - 50.791084
         - -111.609741
     holotype:
-      specimen_id: [ CMN 2869 ]
+      specimen_id:
+        - CMN 2869
       specimen_type: holotype
       institution: CMN
       material: A fairly complete skull and right mandibular ramus.
       completeness: partial
     size:
       length_m:
-        min: 7.0
+        min: 7
         max: 7.7
       weight_kg:
         min: 2600
         max: 3400
     erected_in: parks1923a
     described_in: gilmore1924b
+  - name: Lambeosaurus magnicristatus
+    etymology: From Latin 'magnus' ('large') and 'cristatus' ('crested'),
+      referring to its greatly enlarged cranial crest.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Campanian
+      from_ma: 75.35
+      to_ma: 74.8
+    location:
+      country: CA
+      region: Alberta
+      formation: Dinosaur Park
+      locality: Dinosaur Provincial Park
+    holotype:
+      specimen_id:
+        - CMN 8705
+      specimen_type: holotype
+      institution: CMN
+      material: Originally a near-complete articulated skull and postcranial skeleton;
+        most postcranial elements were later damaged by water and discarded,
+        leaving only the skull and right ilium prepared.
+    diagnostic_features:
+      - Crest strongly inclined rostrally, with a crest-snout angle less than 85
+        degrees, so that the crest strongly overhangs the snout.
+      - Caudodorsal process of the premaxilla enlarged rostrodorsally to a
+        greater degree, with a broadly rounded profile.
+      - Prepubic blade small, expanded to less than 1.7 times the width of the
+        prepubic neck.
+    erected_in: sternberg1935a
+    described_in: evans2007a
 notable_specimens:
-  - specimen_id: [ROM 1218]
+  - specimen_id:
+      - ROM 1218
     institution: ROM
     species: Lambeosaurus lambei
     category: exceptional-preservation
-    significance: "One of only three Lambeosaurus specimens preserving skin impressions. Uniquely, it preserves a subcircular arrangement of feature scales formed by eight wedge-shaped scales converging to a single central point, a pattern not seen in the other skin-bearing specimens."
+    significance: One of only three Lambeosaurus specimens preserving skin
+      impressions. Uniquely, it preserves a subcircular arrangement of feature
+      scales formed by eight wedge-shaped scales converging to a single central
+      point, a pattern not seen in the other skin-bearing specimens.
     discovered:
       year: 1919
-    references: [bell2014a]
-  - specimen_id: [TMP 1966.04.1]
+    references:
+      - bell2014a
+  - specimen_id:
+      - TMP 1966.04.1
     institution: TMP
     category: complementary
-    significance: "Basis of the 2007 redescription of L. magnicristatus, supplying most of the species' postcranial anatomy after the holotype was badly water-damaged and much of its limbs and girdles discarded. It also preserves skin impressions along the neck, forelimb, and leg."
+    significance: Basis of the 2007 redescription of L. magnicristatus, supplying
+      most of the species' postcranial anatomy after the holotype was badly
+      water-damaged and much of its limbs and girdles discarded. It also
+      preserves skin impressions along the neck, forelimb, and leg.
     discovered:
       year: 1937
-      by: "C. M. Sternberg"
-    references: [evans2007a]
+      by: C. M. Sternberg
+    references:
+      - evans2007a
 references:
   - id: parks1923a
   - id: gilmore1924b
   - id: bell2014a
+  - id: sternberg1935a
+    notes: Erects Lambeosaurus magnicristatus among the hooded hadrosaurs of the
+      Belly River Series.
   - id: evans2007a
+    notes: Redescription of Lambeosaurus magnicristatus on holotype CMN 8705 from
+      the Dinosaur Park Formation of Alberta.
