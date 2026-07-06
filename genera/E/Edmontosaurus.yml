@@ -3,8 +3,8 @@ parent: Saurolophinae
 pronunciation:
   ipa: /ɛdˌmɒntəˈsɔːrəs/
   phonetic: ed-MON-tuh-SOR-uhs
-etymology: "From Edmonton (city in Alberta, Canada, near the formation where it
-  was found) + Greek sauros, 'lizard'; means 'lizard from Edmonton'"
+etymology: From Edmonton (city in Alberta, Canada, near the formation where it
+  was found) + Greek sauros, 'lizard'; means 'lizard from Edmonton'
 description: 'Edmontosaurus (meaning "lizard from Edmonton"), often colloquially
   and historically known as Anatosaurus or Anatotitan (meaning "duck lizard" and
   "giant duck"), is a genus of hadrosaurid (duck-billed) dinosaur. It contains
@@ -63,8 +63,8 @@ synonyms:
     reason: Material is now widely recognized as indistinguishable from Edmontosaurus.
 species:
   - name: Edmontosaurus regalis
-    etymology: "From Latin 'regalis' meaning 'royal' or 'regal', reflecting the
-      large and impressive nature of the type specimen."
+    etymology: From Latin 'regalis' meaning 'royal' or 'regal', reflecting the large
+      and impressive nature of the type specimen.
     status: valid
     type_species: true
     period:
@@ -84,57 +84,132 @@ species:
         - 40.285278
         - -106.860558
     holotype:
-      specimen_id: [ CMN 2288 ]
+      specimen_id:
+        - CMN 2288
       specimen_type: holotype
       institution: CMN
       material: Skull with most vertebrae back to sixth caudal, one hind limb, one
-        humerus, both pubic bones, one ischium, greater part of right ilium, and some
-        ribs.
+        humerus, both pubic bones, one ischium, greater part of right ilium, and
+        some ribs.
       completeness: partial
     size:
       hip_height_m:
         min: 3.2
         max: 3.2
       length_m:
-        min: 7.0
-        max: 15.0
+        min: 7
+        max: 15
       weight_kg:
         min: 4000
         max: 15900
     erected_in: lambe1917a
+  - name: Edmontosaurus annectens
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Maastrichtian
+      from_ma: 69
+      to_ma: 66
+    location:
+      country: US
+      region: Wyoming
+      formation: Lance
+      locality: Niobrara County
+    holotype:
+      specimen_id:
+        - USNM 2414
+      specimen_type: holotype
+      institution: USNM
+      material: Nearly complete skull and postcranial skeleton.
+    diagnostic_features:
+      - Ischial shaft markedly elongate and straight.
+      - Pubis with a large, expanded prepubic process and only a small remnant of
+        the postpubic process.
+      - Prenarial region of the skull greatly elongated, especially at large size
+        (skull length exceeding 1 m).
+      - Caudodorsal corner of the narial vestibule only weakly excavated.
+      - Postorbital fossa weakly developed, leaving the dorsal process of the
+        jugal straight.
+    synonyms:
+      - name: Claosaurus annectens
+        type: reassigned
+        reason: Original combination; erected by Marsh (1892) as Claosaurus
+          annectens and subsequently referred to Edmontosaurus.
+      - name: Anatotitan copei
+        type: junior subjective
+        reason: Represents the largest, most mature ontogenetic stage of E.
+          annectens; its long, low skull is explained by allometric scaling with
+          size and individual variation, accentuated by dorsoventral crushing.
+      - name: Thespesius saskatchewanensis
+        type: junior subjective
+        reason: Holotype CMN 8509 represents a juvenile ontogenetic stage of E.
+          annectens, its proportions explained by allometric growth rather than
+          distinct taxonomic status.
+      - name: Diclonius mirabilis
+        type: junior subjective
+        reason: Included in the synonymy of E. annectens by Campione and Evans
+          (2011).
+    erected_in: marsh1892a
+    described_in: campione2011a
 notable_specimens:
   - nickname: AMNH mummy
-    specimen_id: [AMNH 5060]
+    specimen_id:
+      - AMNH 5060
     institution: AMNH
     category: exceptional-preservation
-    significance: "The \"mummified\" Trachodon mummy, with extensive preserved skin impressions known for most of the body. Carbonized possible gut contents were reported but never described. Found in 1908 in the Lance Formation near Lusk, Wyoming, and purchased by the museum for $2,000."
+    significance: The "mummified" Trachodon mummy, with extensive preserved skin
+      impressions known for most of the body. Carbonized possible gut contents
+      were reported but never described. Found in 1908 in the Lance Formation
+      near Lusk, Wyoming, and purchased by the museum for $2,000.
     discovered:
       year: 1908
-      by: "Charles Hazelius Sternberg and his sons"
-    references: [sereno2025a, sternberg1909a]
+      by: Charles Hazelius Sternberg and his sons
+    references:
+      - sereno2025a
+      - sternberg1909a
   - nickname: Senckenberg mummy
-    specimen_id: [SM 4036]
+    specimen_id:
+      - SM 4036
     institution: SMF-DE
     category: gut-contents
-    significance: "Second Sternberg mummy, with skin impressions and described plant gut contents (needles of the conifer Cunninghamites elegans, twigs, and seeds), debated as a true last meal versus washed-in debris. Also preserves rare scleral rings and substantial keratinous beak."
+    significance: Second Sternberg mummy, with skin impressions and described plant
+      gut contents (needles of the conifer Cunninghamites elegans, twigs, and
+      seeds), debated as a true last meal versus washed-in debris. Also
+      preserves rare scleral rings and substantial keratinous beak.
     discovered:
       year: 1910
-      by: "Charles Hazelius Sternberg and his sons"
-    references: [sereno2025a, kräusel1922a, uhl2020a]
+      by: Charles Hazelius Sternberg and his sons
+    references:
+      - sereno2025a
+      - kräusel1922a
+      - uhl2020a
   - nickname: Dakota
-    specimen_id: [MRF-03, NDGS 2000]
+    specimen_id:
+      - MRF-03
+      - NDGS 2000
     institution: NDGS
     category: exceptional-preservation
-    significance: "A well-publicized \"mummy\" with preserved skin impressions apparently including remnant organic compounds from the skin. Discovered in 1999 in the Hell Creek Formation of North Dakota and announced in 2007."
+    significance: A well-publicized "mummy" with preserved skin impressions
+      apparently including remnant organic compounds from the skin. Discovered
+      in 1999 in the Hell Creek Formation of North Dakota and announced in 2007.
     discovered:
       year: 1999
-      by: "Tyler Lyson"
-    references: [manning2009a]
-  - specimen_id: [LACM 23502]
+      by: Tyler Lyson
+    references:
+      - manning2009a
+  - specimen_id:
+      - LACM 23502
     institution: LACM
     category: exceptional-preservation
-    significance: "Preserves a rhamphotheca, indicating the beak of Edmontosaurus was more hook-shaped and extensive than many scientific and public illustrations have depicted; whether it is the true rhamphotheca or a cast of the inner structure is uncertain."
-    references: [morris1970a]
+    significance: Preserves a rhamphotheca, indicating the beak of Edmontosaurus was
+      more hook-shaped and extensive than many scientific and public
+      illustrations have depicted; whether it is the true rhamphotheca or a cast
+      of the inner structure is uncertain.
+    references:
+      - morris1970a
 references:
   - id: lambe1917a
   - id: jones2026a
@@ -146,3 +221,10 @@ references:
   - id: uhl2020a
   - id: manning2009a
   - id: morris1970a
+  - id: marsh1892a
+    notes: Erects the basionym Claosaurus annectens, later referred to
+      Edmontosaurus.
+  - id: campione2011a
+    notes: Morphometric revision recognizing only two valid Edmontosaurus species
+      and synonymizing Anatotitan copei and Thespesius saskatchewanensis into E.
+      annectens.
