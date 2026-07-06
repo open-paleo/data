@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-07-06T00:18:53.143Z",
+    "built_at": "2026-07-06T02:52:07.740Z",
     "clade_count": 189,
     "genus_count": 1398,
     "license": "CC-BY-4.0",
@@ -71007,6 +71007,28 @@
           "references": [
             "rocchi2026a"
           ]
+        },
+        {
+          "specimen_id": [
+            "MB.R.1617"
+          ],
+          "institution": "Museum für Naturkunde, Berlin",
+          "category": "pathology",
+          "significance": "An isolated presacral centrum co-ossified with a hemivertebra, producing about 35 degrees of kyphosis and 15 degrees of scoliosis. Interpreted as forming early in embryogenesis via hemimetameric segmental shift, it is one of few hemivertebrae documented in fossil vertebrates.",
+          "references": [
+            "witzmann2008a"
+          ]
+        },
+        {
+          "specimen_id": [
+            "MB.R.1336"
+          ],
+          "institution": "Museum für Naturkunde, Berlin",
+          "category": "pathology",
+          "significance": "A vertebral body showing macroscopic enlargement and, on micro-CT, the characteristic radiologic triad of Paget disease of bone in its mixed phase (trabecular coarsening, cortical thickening, and increased bone size). It is the oldest reported case of Paget disease in the fossil record.",
+          "references": [
+            "witzmann2011a"
+          ]
         }
       ],
       "references": [
@@ -71040,6 +71062,30 @@
           "issue": "3",
           "pages": "e70085",
           "doi": "10.1002/spp2.70085"
+        },
+        {
+          "id": "witzmann2008a",
+          "authors": "Witzmann, F.; Asbach, P.; Remes, K.; Hampe, O.; Hilger, A.; Paulke, A.",
+          "year": 2008,
+          "title": "Vertebral pathology in an ornithopod dinosaur: a hemivertebra in Dysalotosaurus lettowvorbecki from the Jurassic of Tanzania",
+          "journal": "The Anatomical Record",
+          "volume": "291",
+          "issue": "9",
+          "pages": "1149-1155",
+          "doi": "10.1002/ar.20734",
+          "notes": "Describes a pathological hemivertebra referred to Dysalotosaurus."
+        },
+        {
+          "id": "witzmann2011a",
+          "authors": "Witzmann, F.; Claeson, K. M.; Hampe, O.; Wieder, F.; Hilger, A.; Manke, I.; Niederhagen, M.; Rothschild, B. M.; Asbach, P.",
+          "year": 2011,
+          "title": "Paget disease of bone in a Jurassic dinosaur",
+          "journal": "Current Biology",
+          "volume": "21",
+          "issue": "17",
+          "pages": "R647-R648",
+          "doi": "10.1016/j.cub.2011.08.006",
+          "notes": "Reports Paget disease of bone in a referred Dysalotosaurus vertebra."
         }
       ],
       "taxonomy": [
@@ -105881,6 +105927,12 @@
         "integument": "scaled",
         "evidence": "inferred"
       },
+      "diagnostic_features": [
+        "Anterior end of the dentary strongly drawn downward, bearing a rounded projection along its anterior edge, unlike other lambeosaurines",
+        "Dentary bearing 34–35 tooth rows",
+        "Ischium with a closed, oval obturator foramen (round in Hypacrosaurus)",
+        "Humerus with a narrow, non-expanded proximal end, unlike Mandschurosaurus or Tanius"
+      ],
       "identifiers": [
         {
           "source": "pbdb",
@@ -105933,7 +105985,8 @@
               "PIN 1/5009"
             ],
             "specimen_type": "holotype",
-            "institution": "Paleontological Institute, Russian Academy of Sciences"
+            "institution": "Paleontological Institute, Russian Academy of Sciences",
+            "material": "Posterior part of the skull, dentary, surangular, four cervical and two dorsal vertebrae, ischium, femur, tibia, and humerus."
           },
           "erected_in": "riabinin1937a",
           "described_in": "riabinin1939a",
@@ -118195,6 +118248,13 @@
         "integument": "scaled",
         "evidence": "inferred"
       },
+      "diagnostic_features": [
+        "Distal end of the femur more anteroposteriorly compressed than in all other hypsilophodontids",
+        "Ridges present on both sides of unworn upper cheek teeth, a condition shared only with Othnielia among hypsilophodontids",
+        "Upper cheek tooth ridges lack two discrete size classes (unlike Atlascopcosaurus), being equally developed on both sides of the unworn tooth",
+        "Ridges cover the entire internal and external (lingual and buccal) surfaces of the crown rather than being restricted to marginal denticles",
+        "Lacks a single primary ridge markedly stronger than the others, and bears a maximum of five ridges rather than a minimum of eight as in several other hypsilophodontids"
+      ],
       "identifiers": [
         {
           "source": "pbdb",
@@ -118255,7 +118315,7 @@
             ],
             "specimen_type": "holotype",
             "institution": "Museums Victoria",
-            "material": "Partial skull",
+            "material": "Partial skull: left maxilla with eight cheek teeth, left pterygoid, left jugal, and possibly vomer and left premaxilla.",
             "completeness": "partial"
           },
           "erected_in": "rich1989a",
@@ -137058,6 +137118,13 @@
         "integument": "scaled",
         "evidence": "inferred"
       },
+      "diagnostic_features": [
+        "Well-developed nasal horncore on the nasals, absent in Leptoceratops",
+        "Squamosal extended well behind the head of the quadrate, helping form a parietosquamosal crest that Leptoceratops lacks",
+        "Dentary relatively long with a straight ventral border, versus the short dentary with rounded ventral border in Leptoceratops",
+        "Caudal neural spines very long, some more than five times the height of the corresponding centrum, versus two to two-and-a-half times in Leptoceratops",
+        "Splenial heavier and more elongate, with a more massive anterior end than in Leptoceratops"
+      ],
       "identifiers": [
         {
           "source": "pbdb",
@@ -137076,6 +137143,7 @@
           "id": "4532034"
         }
       ],
+      "erected_in": "sternberg1951a",
       "species": [
         {
           "name": "Montanoceratops cerorhynchus",
@@ -137108,7 +137176,8 @@
               "AMNH 5464"
             ],
             "specimen_type": "holotype",
-            "institution": "American Museum of Natural History"
+            "institution": "American Museum of Natural History",
+            "material": "Partial skull and jaws; complete cervical, dorsal, and sacral vertebrae; 13 caudals; ribs; near-complete pelvis; both femora; left tibia, fibula, astragalus; foot phalanges."
           },
           "size": {
             "hip_height_m": {
@@ -137124,12 +137193,22 @@
               "max": 170
             }
           },
-          "erected_in": "sternberg1951a",
-          "authors": "Sternberg, C. M.",
-          "described": 1951
+          "erected_in": "brown1942a",
+          "authors": "Brown, B.; Schlaikjer, E. M.",
+          "described": 1942
         }
       ],
       "references": [
+        {
+          "id": "brown1942a",
+          "authors": "Brown, B.; Schlaikjer, E. M.",
+          "year": 1942,
+          "title": "The skeleton of Leptoceratops with the description of a new species",
+          "journal": "American Museum Novitates",
+          "volume": "1169",
+          "pages": "1-15",
+          "notes": "Original description of the holotype (AMNH 5464), as Leptoceratops cerorhynchus."
+        },
         {
           "id": "sternberg1951a",
           "authors": "Sternberg, C. M.",
@@ -137139,7 +137218,8 @@
           "publisher": "Natural Resources Canada/CMSS/Information Management",
           "volume": "123",
           "pages": "225-255",
-          "doi": "10.4095/105059"
+          "doi": "10.4095/105059",
+          "notes": "Erected the genus Montanoceratops for the species."
         },
         {
           "id": "jones2026a",
@@ -161599,6 +161679,12 @@
         "integument": "scaled",
         "evidence": "inferred"
       },
+      "diagnostic_features": [
+        "Highly varied gastral (belly-rib) apparatus: unpaired chevron-shaped ribs together with paired ribs bearing small accessory stylet ossicles — the diverse rib arrangement for which the genus is named",
+        "Marked disproportion between a small, weakly built forelimb and a powerfully built hindlimb",
+        "Robust, compact humerus with a well-developed deltoid crest extending about halfway down the shaft",
+        "Strongly compressed, sharply curved (hooked) manual ungual, differing markedly in form from the pedal unguals"
+      ],
       "identifiers": [
         {
           "source": "pbdb",
