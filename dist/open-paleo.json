@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-07-06T06:02:00.679Z",
-    "clade_count": 189,
-    "genus_count": 1398,
+    "built_at": "2026-07-06T06:17:48.830Z",
+    "clade_count": 188,
+    "genus_count": 1397,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
     "version": "2026.07"
@@ -17,7 +17,6 @@
               "Tetrapoda": {
                 "Reptilia": {
                   "Archosauria": {
-                    "Aphanosauria": {},
                     "Dinosauria": {
                       "Saurischia": {
                         "Theropoda": {
@@ -1221,23 +1220,6 @@
           "notes": "Validly applied Apatosaurinae in a phylogenetic context and resurrected Brontosaurus as a distinct genus."
         }
       ]
-    },
-    "Aphanosauria": {
-      "description": "Aphanosauria is a clade of early avemetatarsalian archosaurs from the Middle to Late Triassic, known from South America, Europe, and possibly Africa. Members of Aphanosauria were quadrupedal or semi-quadrupedal and possessed a long neck and tail. They are among the earliest-diverging members of the bird-line (Avemetatarsalia) and are important for understanding the early evolution of archosaurs prior to the origin of pterosaurs and dinosaurs.\n",
-      "taxonomy": [
-        "Life",
-        "Animalia",
-        "Chordata",
-        "Vertebrata",
-        "Sarcopterygii",
-        "Tetrapoda",
-        "Reptilia",
-        "Archosauria",
-        "Aphanosauria"
-      ],
-      "described": 2017,
-      "authors": "Ezcurra et al.",
-      "references": []
     },
     "Arctometatarsalia": {
       "taxonomy": [
@@ -188820,120 +188802,6 @@
       ],
       "authors": "Sereno, P. C.; Wilson, J. A.; Conrad, J. L.",
       "described": 2004
-    },
-    "Spondylosoma": {
-      "genus": "Spondylosoma",
-      "parent": "Aphanosauria",
-      "dispute": {
-        "summary": "Spondylosoma absconditum was historically considered a basal dinosaur or herrerasaurid relative but is referred to the non-dinosaurian archosaur clade Aphanosauria (Nesbitt and others, 2017).\n",
-        "history": [
-          {
-            "date": "2026-06-30",
-            "note": "Placed at Aphanosauria; non-dinosaurian.\n"
-          }
-        ]
-      },
-      "pronunciation": {
-        "phonetic": "SPON-dil-o-SOHM-a"
-      },
-      "etymology": "From Greek spondylos, \"vertebra\", combined with Greek soma, \"body\" - means \"vertebra body\"",
-      "locomotion": "bipedal",
-      "paleoenvironment": [
-        "fluvial"
-      ],
-      "diet": "carnivore",
-      "description": "Spondylosoma is a genus of avemetatarsalian archosaur, belonging to the clade Aphanosauria, from the Middle Triassic (late Ladinian age) Lower Santa Maria Formation in Paleorrota Geopark, Brazil.",
-      "appearance": {
-        "integument": "unknown"
-      },
-      "identifiers": [
-        {
-          "source": "pbdb",
-          "id": "38509"
-        },
-        {
-          "source": "wikidata",
-          "id": "Q549748"
-        },
-        {
-          "source": "gbif",
-          "id": "4823546"
-        }
-      ],
-      "species": [
-        {
-          "name": "Spondylosoma absconditum",
-          "etymology": "From Latin 'absconditus' meaning 'hidden' or 'concealed', likely referring to the obscure or fragmentary nature of the fossil material.",
-          "status": "valid",
-          "type_species": true,
-          "period": {
-            "name": [
-              "Middle Triassic"
-            ],
-            "stage": [
-              "Ladinian"
-            ],
-            "from_ma": 241.464,
-            "to_ma": 237
-          },
-          "location": {
-            "country": "BR",
-            "locality": "Baum-Sanga (excavation 44), Chiniquá",
-            "region": "Rio Grande do Sul",
-            "formation": "Santa Maria",
-            "coordinates": [
-              -29.6667,
-              -54.366699
-            ]
-          },
-          "holotype": {
-            "specimen_id": [
-              "GPIT 479/30"
-            ],
-            "specimen_type": "holotype",
-            "institution": "Institut für Geowissenschaften, Universität Tübingen (English: Institute for Geosciences, Tübingen University) / Institut und Museum für Geologie und Paläontologie der Universität Tübingen"
-          },
-          "erected_in": "huene1942a",
-          "authors": "Huene, F. V.",
-          "described": 1942
-        }
-      ],
-      "references": [
-        {
-          "id": "huene1942a",
-          "authors": "Huene, F. V.",
-          "year": 1942,
-          "title": "Lieferungen 3/4. Pseudosuchia, Saurischia, Rhynchosauridae und Schlussabschnitt [Parts 3/4. Pseudosuchia, Saurischia, Rhynchosauridae, and Conclusions]",
-          "journal": "Die Fossilen Reptilien des Südamerikanischen Gondwanalandes.  Ergebnisse der Sauriergrabungen in Südbrasilien 1928/29 [The Fossil Reptiles of South American Gondwanaland.  Results of the Dinosaur Expeditions in southern Brazil 1928/29].  C. H. Beck'sche Verlagsbuchhandlung, München",
-          "pages": "161-332"
-        },
-        {
-          "id": "nesbitt2017a",
-          "authors": "Nesbitt, S. J.; Butler, R. J.; Ezcurra, M. D.; Barrett, P. M.; Stocker, M. R.; Angielczyk, K. D.; Smith, R. M. H.; Sidor, C. A.; Niedźwiedzki, G.; Sennikov, A. G.; Charig, A. J.",
-          "year": 2017,
-          "title": "The earliest bird-line archosaurs and the assembly of the dinosaur body plan",
-          "journal": "Nature",
-          "publisher": "Springer Science and Business Media LLC",
-          "volume": "544",
-          "issue": "7651",
-          "pages": "484-487",
-          "doi": "10.1038/nature22037",
-          "notes": "Referred Spondylosoma to the non-dinosaurian clade Aphanosauria."
-        }
-      ],
-      "taxonomy": [
-        "Life",
-        "Animalia",
-        "Chordata",
-        "Vertebrata",
-        "Sarcopterygii",
-        "Tetrapoda",
-        "Reptilia",
-        "Archosauria",
-        "Aphanosauria"
-      ],
-      "authors": "Huene, F. V.",
-      "described": 1942
     },
     "Staurikosaurus": {
       "genus": "Staurikosaurus",
