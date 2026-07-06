@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-06T17:40:59.241Z
+  built_at: 2026-07-06T18:11:10.272Z
   clade_count: 188
   genus_count: 1397
   license: CC-BY-4.0
@@ -56876,6 +56876,50 @@ genera:
         erected_in: lambe1917a
         authors: Lambe, L. M.
         described: 1917
+      - name: Edmontosaurus annectens
+        status: valid
+        type_species: false
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+          from_ma: 69
+          to_ma: 66
+        location:
+          country: US
+          region: Wyoming
+          formation: Lance
+          locality: Niobrara County
+        holotype:
+          specimen_id:
+            - USNM 2414
+          specimen_type: holotype
+          institution: National Museum of Natural History, Smithsonian Institution
+          material: Nearly complete skull and postcranial skeleton.
+        diagnostic_features:
+          - Ischial shaft markedly elongate and straight.
+          - Pubis with a large, expanded prepubic process and only a small remnant of the postpubic process.
+          - Prenarial region of the skull greatly elongated, especially at large size (skull length exceeding 1 m).
+          - Caudodorsal corner of the narial vestibule only weakly excavated.
+          - Postorbital fossa weakly developed, leaving the dorsal process of the jugal straight.
+        synonyms:
+          - name: Claosaurus annectens
+            type: reassigned
+            reason: Original combination; erected by Marsh (1892) as Claosaurus annectens and subsequently referred to Edmontosaurus.
+          - name: Anatotitan copei
+            type: junior subjective
+            reason: Represents the largest, most mature ontogenetic stage of E. annectens; its long, low skull is explained by allometric scaling with size and individual variation, accentuated by dorsoventral crushing.
+          - name: Thespesius saskatchewanensis
+            type: junior subjective
+            reason: Holotype CMN 8509 represents a juvenile ontogenetic stage of E. annectens, its proportions explained by allometric growth rather than distinct taxonomic status.
+          - name: Diclonius mirabilis
+            type: junior subjective
+            reason: Included in the synonymy of E. annectens by Campione and Evans (2011).
+        erected_in: marsh1892a
+        described_in: campione2011a
+        authors: Marsh, O. C.
+        described: 1892
     notable_specimens:
       - nickname: AMNH mummy
         specimen_id:
@@ -56989,6 +57033,28 @@ genera:
         publisher: Natural History Museum of Los Angeles County
         volume: "193"
         pages: 1-14
+      - id: marsh1892a
+        authors: Marsh, O. C.
+        year: 1892
+        title: Notice of new reptiles from the Laramie Formation
+        journal: American Journal of Science
+        publisher: American Journal of Science (AJS)
+        volume: s3-43
+        issue: "257"
+        pages: 449-453
+        doi: 10.2475/ajs.s3-43.257.449
+        notes: Erects the basionym Claosaurus annectens, later referred to Edmontosaurus.
+      - id: campione2011a
+        authors: Campione, N. E.; Evans, D. C.
+        year: 2011
+        title: "Cranial growth and variation in edmontosaurs (Dinosauria: Hadrosauridae): implications for latest Cretaceous megaherbivore diversity in North America"
+        journal: PLoS ONE
+        publisher: Public Library of Science (PLoS)
+        volume: "6"
+        issue: "9"
+        pages: e25186
+        doi: 10.1371/journal.pone.0025186
+        notes: Morphometric revision recognizing only two valid Edmontosaurus species and synonymizing Anatotitan copei and Thespesius saskatchewanensis into E. annectens.
     taxonomy:
       - Life
       - Animalia
