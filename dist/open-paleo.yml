@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-06T20:36:57.540Z
+  built_at: 2026-07-06T21:54:26.631Z
   clade_count: 188
   genus_count: 1397
   license: CC-BY-4.0
@@ -38673,6 +38673,38 @@ genera:
         described_in: brusatte2007a
         authors: Stromer, E.
         described: 1931
+      - name: Carcharodontosaurus iguidensis
+        etymology: From Iguidi, the area of Niger where the holotype was found, with the Latin suffix '-ensis' ('from').
+        status: valid
+        type_species: false
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Cenomanian
+          from_ma: 100.5
+          to_ma: 93.9
+        location:
+          country: NE
+          region: Agadez
+          formation: Echkar
+          locality: Iguidi, west of In Abangharit
+        holotype:
+          specimen_id:
+            - MNN IGU2
+          specimen_type: holotype
+          institution: Musée National Boubou Hama
+          material: Left maxilla, missing most of the ascending ramus and the posterior end of the main body, and all erupted teeth.
+        diagnostic_features:
+          - External antorbital fossa on the maxilla very reduced, restricted to a small area near the maxillary fenestra.
+          - Anteromedial process of the maxilla broadly arched toward the midline and not overhanging a deep ventral fossa (present in C. saharicus).
+          - Prominent horizontal crest on the medial aspect of the maxillary body.
+          - Deeply invaginated fossa on the anterior surface of the laterosphenoid ala of the braincase.
+          - Ventral margin of the maxilla nearly straight in lateral view, lacking the laterally protruding antorbital fossa rim of C. saharicus.
+          - Enamel wrinkles on the tooth crowns less numerous and confined mainly to the base of the distal carina, less developed than in C. saharicus.
+        erected_in: brusatte2007a
+        authors: Brusatte, S. L.; Sereno, P. C.
+        described: 2007
     references:
       - id: stromer1931a
         authors: Stromer, E.
@@ -38690,6 +38722,7 @@ genera:
         issue: "4"
         pages: 902-916
         doi: 10.1671/0272-4634(2007)27[902:ANSOCD]2.0.CO;2
+        notes: Erects Carcharodontosaurus iguidensis on maxilla MNN IGU2 from the Cenomanian Echkar Formation of Niger, and revises the genus.
       - id: jones2026c
         authors: Jones, B.; Viola, E.
         year: 2026
@@ -51822,6 +51855,38 @@ genera:
         erected_in: janensch1914a
         authors: Janensch, W.
         described: 1914
+      - name: Dicraeosaurus sattleri
+        etymology: Honors W. B. Sattler, who discovered the Tendaguru fossil site and supported the expedition.
+        status: valid
+        type_species: false
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Kimmeridgian
+            - Tithonian
+          from_ma: 152
+          to_ma: 145
+        location:
+          country: TZ
+          region: Lindi
+          formation: Tendaguru
+          locality: Upper Saurian Bed, Tendaguru
+          coordinates:
+            - -9.696665
+            - 39.228008
+        diagnostic_features:
+          - Trunk vertebrae more slender and lightly built, with a smaller, less massive centrum.
+          - Neural spines of the trunk vertebrae narrower but relatively longer and proportionally higher than in D. hansemanni (bifurcated in the same manner).
+          - Diapophyses of the trunk vertebrae less elongate relative to centrum length.
+          - Anterior caudal vertebrae with proportionally higher neural spines.
+          - Dorsal ribs slimmer and lighter, with thinner, weaker distal ends.
+          - Chevrons lighter, slimmer, and more strongly curved.
+          - Pubis and femur more slender and lightly built.
+        erected_in: janensch1914a
+        described_in: janensch1929a
+        authors: Janensch, W.
+        described: 1914
     references:
       - id: janensch1914a
         authors: Janensch, W.
@@ -51837,6 +51902,14 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
         notes: Source of the hip height estimate, and the appearance features.
+      - id: janensch1929a
+        authors: Janensch, W.
+        year: 1929
+        title: Die Wirbelsäule der Gattung Dicraeosaurus [The vertebral column of the genus Dicraeosaurus]
+        journal: Palaeontographica, Supplement 7
+        volume: 1. Reihe, Teil 2
+        pages: 37-133
+        notes: Detailed comparative osteology of the vertebral column of both Dicraeosaurus species; source of the D. sattleri differential diagnosis.
     taxonomy:
       - Life
       - Animalia
