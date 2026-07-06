@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-06T22:49:09.956Z
+  built_at: 2026-07-06T23:22:02.562Z
   clade_count: 188
   genus_count: 1397
   license: CC-BY-4.0
@@ -102074,6 +102074,41 @@ genera:
         described_in: barrett2019a
         authors: Owen, R.
         described: 1854
+      - name: Massospondylus kaalae
+        etymology: After Sheena Kaal, Karoo vertebrate collections manager at the Iziko South African Museum, in recognition of her assistance to researchers.
+        status: valid
+        type_species: false
+        period:
+          name:
+            - Early Jurassic
+          stage:
+            - Hettangian
+            - Sinemurian
+          from_ma: 201.3
+          to_ma: 192.9
+        location:
+          country: ZA
+          region: Eastern Cape
+          formation: Elliot
+          member: Upper Elliot
+          locality: Near Voyizane, Herschel District
+          coordinates:
+            - -30.567
+            - 27.433
+        holotype:
+          specimen_id:
+            - SAM-PK-K1325
+          specimen_type: holotype
+          institution: Iziko South African Museum
+          material: "Incomplete, partially disarticulated skull: paired premaxillae, maxillae, lacrimals, jugals, pterygoids, frontals, and parietals; partial left nasal, left prefrontal, and right palatine; partial braincase; right dentary; a prearticular; an almost complete left mandible; teeth; indeterminate fragments"
+        diagnostic_features:
+          - Premaxilla forming more than 30% of the upper tooth row.
+          - Dorsolateral ridge on the lacrimal more prominent than in M. carinatus.
+          - Cultriform process of the parabasisphenoid positioned ventral to the level of the basioccipital condyle (at the same level, or only slightly deflected, in M. carinatus).
+          - Basipterygoid processes slender, elongate, and unexpanded distally (bulbous and expanded in both directions in M. carinatus).
+        erected_in: barrett2009b
+        authors: Barrett, P. M.
+        described: 2009
     notable_specimens:
       - nickname: Mafeteng hatchling
         specimen_id:
@@ -102163,6 +102198,17 @@ genera:
         pages: 239-257
         doi: 10.5962/p.316084
         notes: Redescribed the skull of Massospondylus carinatus.
+      - id: barrett2009b
+        authors: Barrett, P. M.
+        year: 2009
+        title: A new basal sauropodomorph dinosaur from the Upper Elliot Formation (Lower Jurassic) of South Africa
+        journal: Journal of Vertebrate Paleontology
+        publisher: Informa UK Limited
+        volume: "29"
+        issue: "4"
+        pages: 1032-1045
+        doi: 10.1671/039.029.0401
+        notes: Erects Massospondylus kaalae on skull SAM-PK-K1325 from the Upper Elliot Formation of South Africa.
     taxonomy:
       - Life
       - Animalia
