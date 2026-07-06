@@ -67,8 +67,8 @@ synonyms:
       Chasmosaurus.
 species:
   - name: Chasmosaurus belli
-    etymology: "Named for collector Walter Bell, from whose discovery area the
-      holotype parietal bone was recovered."
+    etymology: Named for collector Walter Bell, from whose discovery area the
+      holotype parietal bone was recovered.
     status: valid
     type_species: true
     period:
@@ -87,12 +87,13 @@ species:
         - 50.734207
         - -111.513893
     holotype:
-      specimen_id: [ NMC 491 ]
+      specimen_id:
+        - NMC 491
       specimen_type: holotype
       institution: CMN
       material: Fairly complete skeleton with skull, including skin impressions; skull
-        dorsal surface preserved with large squamoso-parietal frill intact; front of
-        skull weathered away
+        dorsal surface preserved with large squamoso-parietal frill intact;
+        front of skull weathered away
       completeness: complete
     size:
       length_m:
@@ -107,7 +108,44 @@ species:
         reason: Originally described as Protorosaurus belli; the genus name was
           preoccupied, and the species was reassigned to Chasmosaurus.
     erected_in: lambe1914b
+  - name: Chasmosaurus russelli
+    etymology: Named for Dr. L. S. Russell, who collected the holotype.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Campanian
+      from_ma: 83.6
+      to_ma: 72.2
+    location:
+      country: CA
+      region: Alberta
+      formation: Dinosaur Park
+      locality: Near Manyberries
+    holotype:
+      specimen_id:
+        - NMC 8800
+      specimen_type: holotype
+      institution: CMN
+      material: Skull without lower jaws; anterior rostral, distal half of left jugal,
+        right jugal, quadrate, squamosal, and part of right parietal edge lost
+        to erosion before discovery.
+    diagnostic_features:
+      - Skull large, relatively high and short in front of the orbits.
+      - Rostral straight along the lower edge, not hooked downward at the tip.
+      - Nasal horncore massive; skull broad between the orbits, without brow
+        horncores.
+      - Well-developed epijugal.
+      - Parietals deeply indented posteriorly; epoccipitals small, giving a
+        nearly smooth squamosal border.
+      - Mandible massive, more robust than in C. belli.
+    erected_in: sternberg1940b
 references:
   - id: lambe1914b
   - id: paul2024a
     notes: Source of the appearance features.
+  - id: sternberg1940b
+    notes: Erects Chasmosaurus russelli on skull NMC 8800 from the Dinosaur Park
+      Formation of Alberta.
