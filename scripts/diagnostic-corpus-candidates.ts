@@ -66,7 +66,6 @@ function pickRepresentativeSpecies(genus: GenusData): Species | null
 function erectingDescribingKeys(genus: GenusData, species: Species): Array<string>
 {
     const keys = [
-        genus.described_in,
         genus.erected_in,
         species.described_in,
         species.erected_in,
@@ -97,9 +96,53 @@ function hasDiagnosticFeatures(genus: GenusData): boolean
     return false;
 }
 
+const nomenDubiumPattern = /nomen dubium|nomen vanum|non-?diagnostic|undiagnostic/i;
+
+/**
+ * Returns true when the genus is flagged as a nomen dubium or otherwise
+ * non-diagnostic in its description or dispute record. Such a taxon is a valid,
+ * available name whose material lacks diagnostic characters, so
+ * `diagnostic_features` should not be populated for it — it is excluded from
+ * the candidate list.
+ *
+ * @param genus - Parsed genus YAML document.
+ * @returns True when a nomen-dubium marker is present.
+ */
+function isNomenDubium(genus: GenusData): boolean
+{
+    const parts = new Array<string>();
+
+    if (typeof genus.description === "string")
+    {
+        parts.push(genus.description);
+    }
+
+    if (genus.dispute !== undefined)
+    {
+        if (typeof genus.dispute.summary === "string")
+        {
+            parts.push(genus.dispute.summary);
+        }
+
+        if (Array.isArray(genus.dispute.history))
+        {
+            for (const entry of genus.dispute.history)
+            {
+                if (typeof entry?.note === "string")
+                {
+                    parts.push(entry.note);
+                }
+            }
+        }
+    }
+
+    return nomenDubiumPattern.test(parts.join(" "));
+}
+
 const generaFiles = findYamlFiles(generaDir).sort();
 const candidates = new Array<{ genus: string; presentKeys: Array<string> }>();
 let skippedNonValid = 0;
+let skippedNomenDubium = 0;
 let skippedHaveDiagnostics = 0;
 let skippedNoPaper = 0;
 let parseFailures = 0;
@@ -131,6 +174,12 @@ for (const filePath of generaFiles)
         continue;
     }
 
+    if (isNomenDubium(genus))
+    {
+        skippedNomenDubium += 1;
+        continue;
+    }
+
     if (hasDiagnosticFeatures(genus))
     {
         skippedHaveDiagnostics += 1;
@@ -154,6 +203,7 @@ candidates.sort((first, second) => first.genus.localeCompare(second.genus));
 console.log(`Corpus markdown dir: ${corpusMarkdownDir}`);
 console.log(`Genera scanned: ${generaFiles.length} (parse failures: ${parseFailures})`);
 console.log(`Skipped — type species not valid: ${skippedNonValid}`);
+console.log(`Skipped — nomen dubium / non-diagnostic: ${skippedNomenDubium}`);
 console.log(`Skipped — already have diagnostic_features: ${skippedHaveDiagnostics}`);
 console.log(`Skipped — no erecting/describing paper in corpus: ${skippedNoPaper}`);
 console.log(`\nCandidates (missing diagnostic_features, valid type species, paper in corpus): ${candidates.length}\n`);
