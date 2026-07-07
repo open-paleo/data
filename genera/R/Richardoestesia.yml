@@ -3,14 +3,15 @@ parent: Dromaeosauridae
 dispute:
   summary: >
     Richardoestesia is a jaw- and tooth-based taxon most often treated as a form
-    taxon or nomen dubium; its describers assigned it only to Maniraptora, family
-    unknown (Currie et al., 1990), and it is used across many formations to denote a
-    general tooth morphology rather than a natural taxon (Larson and Currie, 2013).
-    Its referral to Dromaeosauridae is uncertain; it is retained provisionally at
-    Dromaeosauridae incertae sedis.
+    taxon or nomen dubium; its describers assigned it only to Maniraptora,
+    family unknown (Currie et al., 1990), and it is used across many formations
+    to denote a general tooth morphology rather than a natural taxon (Larson and
+    Currie, 2013). Its referral to Dromaeosauridae is uncertain; it is retained
+    provisionally at Dromaeosauridae incertae sedis.
   history:
-    - date: "2026-07-01"
-      note: Retained at Dromaeosauridae incertae sedis; tooth/form taxon, formally Maniraptora family-unknown, dromaeosaurid affinity uncertain.
+    - date: 2026-07-01
+      note: Retained at Dromaeosauridae incertae sedis; tooth/form taxon, formally
+        Maniraptora family-unknown, dromaeosaurid affinity uncertain.
 pronunciation:
   phonetic: ri-KARD-o-es-TEE-zee-a
 etymology: Named in honor of paleontologist Richard Estes, with the Latinised
@@ -53,8 +54,8 @@ identifiers:
     id: "4531529"
 species:
   - name: Richardoestesia gilmorei
-    etymology: "Named for Charles Whitney Gilmore, the paleontologist who originally
-      described the jaws as part of Chirostenotes pergracilis."
+    etymology: Named for Charles Whitney Gilmore, the paleontologist who originally
+      described the jaws as part of Chirostenotes pergracilis.
     status: valid
     type_species: true
     period:
@@ -74,13 +75,49 @@ species:
         - 46.465099
         - -109.297203
     holotype:
-      specimen_id: [ NMC 343 ]
+      specimen_id:
+        - NMC 343
       specimen_type: holotype
       institution: CMN
       material: Pair of dentaries with unerupted and germ teeth
       completeness: fragmentary
     erected_in: currie1990a
+  - name: Richardoestesia isosceles
+    etymology: From 'isosceles', for the isosceles-triangle outline of the tooth
+      crown in lateral view.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Campanian
+      from_ma: 77
+      to_ma: 76
+    location:
+      country: US
+      region: Texas
+      formation: Aguja
+      locality: Talley Mountain microsites (VL-489), Big Bend National Park
+    holotype:
+      specimen_id:
+        - LSUMG 489:6238
+      specimen_type: holotype
+      institution: LSUM
+      material: An isolated tooth.
+    diagnostic_features:
+      - Tooth crown straight along its length (curved proximally in R. gilmorei).
+      - Crown narrow, with an isosceles-triangle outline in lateral view.
+      - Denticles minute, square, and uniformly sized from base to tip, extending
+        the full length of the carinae (7-11 per mm).
+      - Anterior denticles, where present, considerably smaller than the
+        posterior denticles.
+      - Denticle tips straight to faintly rounded, never pointed.
+    erected_in: sankey2001a
 references:
   - id: currie1990a
   - id: larson2013a
     notes: Treated Richardoestesia as a tooth morphotype rather than a natural taxon.
+  - id: sankey2001a
+    notes: Erects Richardoestesia isosceles on an isolated tooth (LSUMG 489:6238)
+      from the Aguja Formation of Big Bend, Texas.
