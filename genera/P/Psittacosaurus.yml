@@ -132,8 +132,7 @@ species:
       completeness: partial
     erected_in: osborn1923b
   - name: Psittacosaurus sinensis
-    etymology: From Latin 'sinensis' meaning 'of China', for the country of
-      origin.
+    etymology: From Latin 'sinensis' meaning 'of China', for the country of origin.
     status: valid
     type_species: false
     period:
@@ -410,6 +409,49 @@ species:
         over half the orbit length, unlike the subtriangular palpebral of other
         Psittacosaurus.
     erected_in: napoli2019a
+  - name: Psittacosaurus sibiricus
+    etymology: Named for Siberia, the region of Russia where the holotype was
+      found.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Early Cretaceous
+      stage:
+        - Aptian
+        - Albian
+      from_ma: 121.4
+      to_ma: 105
+    location:
+      country: RU
+      region: Kemerovo
+      formation: Ilek
+      locality: Shestakovo 3, Chebula District
+    holotype:
+      specimen_id:
+        - PM TGU 16/4-20
+      specimen_type: holotype
+      institution: TGU
+      material: An articulated, almost complete adult skeleton including the skull.
+    size:
+      length_m:
+        min: 1.7
+        max: 1.85
+    diagnostic_features:
+      - Skull width exceeds skull length, unlike the proportionately narrower
+        skull of P. mongoliensis.
+      - Infratemporal fenestra small, its maximum height only 25% of skull
+        length versus 31-38% in P. mongoliensis and other congeners.
+      - Premaxilla anteroposteriorly short, with a maximum length-to-height
+        ratio under 60%, unlike the longer premaxilla of P. mongoliensis.
+      - Postorbital bears a short medial process that does not contribute to the
+        orbital margin, unlike the condition in P. mongoliensis.
+      - Jugal has a deep cleft for the quadratojugal that extends onto the
+        posterior face of the jugal horn, unlike P. mongoliensis.
+      - Angular bears a prominent tuber and there are 23 presacral vertebrae,
+        both differing from the condition in P. mongoliensis.
+    erected_in: leshchinskiy2000a
+    described_in: averianov2006a
 references:
   - id: osborn1923b
     notes: Erects Psittacosaurus mongoliensis on AMNH 6254 (Ashile Formation); also
@@ -425,8 +467,8 @@ references:
   - id: jones2026a
     notes: Source of the hip height estimate, and the appearance features.
   - id: young1958a
-    notes: Erects Psittacosaurus sinensis (Laiyang, Shandong); also treated P.
-      tingi as a junior synonym.
+    notes: Erects Psittacosaurus sinensis (Laiyang, Shandong); also treated P. tingi
+      as a junior synonym.
   - id: sereno1988a
     notes: Erects Psittacosaurus xinjiangensis on holotype IVPP V7698 from the
       Tugulu Group of Xinjiang.
@@ -434,14 +476,20 @@ references:
     notes: Erects Psittacosaurus meileyingensis on holotype IVPP V7705 from the
       Jiufotang Formation of Liaoning.
   - id: russell1996a
-    notes: Erects Psittacosaurus neimongoliensis on holotype IVPP 12-0888-2 from
-      the Ejinhoro Formation of Nei Mongol.
+    notes: Erects Psittacosaurus neimongoliensis on holotype IVPP 12-0888-2 from the
+      Ejinhoro Formation of Nei Mongol.
   - id: zhou2006b
     notes: Erects Psittacosaurus lujiatunensis on holotype ZMNH M8137 from the
       Lujiatun beds (lowermost Yixian Formation) of Liaoning.
   - id: sereno2010b
-    notes: Erects Psittacosaurus gobiensis on holotype LH PV2 from the Bayan
-      Gobi Formation of Nei Mongol.
+    notes: Erects Psittacosaurus gobiensis on holotype LH PV2 from the Bayan Gobi
+      Formation of Nei Mongol.
   - id: napoli2019a
     notes: Erects Psittacosaurus amitabha on holotype IGM 100/1132 from the
       Andakhuduk Formation of central Mongolia.
+  - id: leshchinskiy2000a
+    notes: Paper in which the name Psittacosaurus sibiricus first validly
+      appeared; the species is credited within it to Voronkevich and Averianov.
+  - id: averianov2006a
+    notes: Full redescription of Psittacosaurus sibiricus on holotype PM TGU
+      16/4-20 from the Ilek Formation (Shestakovo) of West Siberia.
