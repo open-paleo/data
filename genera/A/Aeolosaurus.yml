@@ -1,7 +1,7 @@
 genus: Aeolosaurus
 parent: Aeolosaurini
-etymology: "Named after Aeolus, the Greek god of winds, combined with Greek
-  'sauros' meaning 'lizard'; meaning 'Aeolus' lizard'"
+etymology: Named after Aeolus, the Greek god of winds, combined with Greek
+  'sauros' meaning 'lizard'; meaning 'Aeolus' lizard'
 pronunciation:
   phonetic: EE-o-lo-SAWR-us
   ipa: /ˌiːoʊloʊˈsɔːrəs/
@@ -29,8 +29,8 @@ identifiers:
     id: "4658365"
 species:
   - name: Aeolosaurus rionegrinus
-    etymology: "Named for Río Negro Province of Argentina, where the holotype was
-      discovered."
+    etymology: Named for Río Negro Province of Argentina, where the holotype was
+      discovered.
     status: valid
     type_species: true
     period:
@@ -54,17 +54,60 @@ species:
         min: 3
         max: 3
       length_m:
-        min: 14.0
+        min: 14
         max: 18.1
       weight_kg:
         min: 6000
         max: 14700
     holotype:
-      specimen_id: [ MJG-R 1 ]
+      specimen_id:
+        - MJG-R 1
       specimen_type: holotype
       institution: MGNHJ
     erected_in: powell1987a
+  - name: Aeolosaurus colhuehuapensis
+    etymology: Refers to Lago Colhué Huapi, in center-south Chubut Province, the
+      site where the specimen was found.
+    status: valid
+    type_species: false
+    period:
+      stage:
+        - Campanian
+        - Maastrichtian
+      from_ma: 83.6
+      to_ma: 66
+      name:
+        - Late Cretaceous
+    location:
+      country: AR
+      region: Chubut
+      formation: Bajo Barreal
+      coordinates:
+        - -45.5978
+        - -68.6222
+      locality: Emergent island in the southeast of Lago Colhué Huapi, Sarmiento
+        Department
+    holotype:
+      specimen_id:
+        - UNPSJB-PV 959
+      specimen_type: holotype
+      institution: UNPSJB
+      material: 21 articulated caudal vertebrae and seven articulated haemal arches
+        forming part of a tail series.
+    diagnostic_features:
+      - Deep, well-marked fossa between the transverse process and base of the
+        neural spine in the most anterior caudal vertebrae
+      - Slender infraspinoprezygapophyseal lamina connecting the base of the
+        prespinal lamina to the lower edge of the prezygapophyseal articular
+        facet, producing a fossa on each side of the prespinal lamina
+      - Posterior articular condyle in central/median position throughout the
+        caudal series (displaced dorsally in A. rionegrinus)
+      - Middle-caudal prezygapophyses somewhat shorter than in A. rionegrinus
+      - Postzygapophyses oriented lateroventrally with greater inclination to
+        the sagittal plane (nearly parallel to it in A. rionegrinus)
+    erected_in: casal2007a
 references:
   - id: powell1987a
   - id: jones2026b
     notes: Source of the hip height estimate.
+  - id: casal2007a
