@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-07-07T03:23:20.690Z",
+    "built_at": "2026-07-07T03:48:33.453Z",
     "clade_count": 188,
     "genus_count": 1397,
     "license": "CC-BY-4.0",
@@ -192069,6 +192069,87 @@
           ],
           "authors": "Bunzel, E.",
           "described": 1870
+        },
+        {
+          "name": "Struthiosaurus transylvanicus",
+          "status": "valid",
+          "type_species": false,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Maastrichtian"
+            ],
+            "from_ma": 72.1,
+            "to_ma": 66
+          },
+          "location": {
+            "country": "RO",
+            "region": "Hunedoara",
+            "formation": "Sânpetru",
+            "locality": "Sânpetru (Szentpéterfalva), Hațeg Basin"
+          },
+          "holotype": {
+            "specimen_id": [
+              "BMNH R4966"
+            ],
+            "specimen_type": "holotype",
+            "institution": "Natural History Museum",
+            "material": "Partial skull (braincase, frontal, parietal, postfrontal, quadrate), atlas, cervical and dorsal vertebrae, anterior caudal vertebrae, ribs, and a scapula, from associated remains found at Szentpéterfalva."
+          },
+          "diagnostic_features": [
+            "Skeleton overall much more robust than in Struthiosaurus austriacus.",
+            "Base of the skull markedly more robustly constructed than in S. austriacus.",
+            "Anterior ribs T-shaped in cross-section but more moderately developed than in the Gosau (S. austriacus) material.",
+            "Postcranial bone surfaces bearing a distinctive sculpture resembling intersecting fibers."
+          ],
+          "erected_in": "nopcsa1915a",
+          "authors": "Nopcsa, B. F.",
+          "described": 1915
+        },
+        {
+          "name": "Struthiosaurus languedocensis",
+          "etymology": "From Languedoc, the region of southern France where the holotype was found.",
+          "status": "valid",
+          "type_species": false,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Campanian"
+            ],
+            "from_ma": 73.5,
+            "to_ma": 72.1
+          },
+          "location": {
+            "country": "FR",
+            "region": "Hérault",
+            "locality": "L'Olivet Quarry, Villeveyrac-Mèze Basin"
+          },
+          "holotype": {
+            "specimen_id": [
+              "UM2 OLV-D50 A-G CV"
+            ],
+            "specimen_type": "holotype",
+            "institution": "Université de Montpellier",
+            "material": "Complete synsacrum and pelvic girdle, plus the four caudal-most dorsal vertebrae."
+          },
+          "size": {
+            "length_m": {
+              "min": 2.5,
+              "max": 3
+            }
+          },
+          "diagnostic_features": [
+            "Distal dorsal centra strongly compressed laterally and hourglass-shaped in ventral view, more so than in S. transylvanicus.",
+            "Ischium directed immediately caudal from the acetabulum, with a robust shaft that does not taper distally and ends in a blunt knob (slender and tapering in S. austriacus).",
+            "Synsacrum of ten co-ossified vertebrae (five dorsals, four sacrals, and one caudal)."
+          ],
+          "erected_in": "garcia2003a",
+          "authors": "Garcia, G.; Pereda-Suberbiola, X.",
+          "described": 2003
         }
       ],
       "references": [
@@ -192092,6 +192173,29 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25025-0",
           "notes": "Source of the hip height estimate, and the appearance features."
+        },
+        {
+          "id": "nopcsa1915a",
+          "authors": "Nopcsa, B. F.",
+          "year": 1915,
+          "title": "Die Dinosaurier der siebenbürgischen Landesteile Ungarns",
+          "journal": "Mitteilungen aus dem Jahrbuche der Königlich Ungarischen Geologischen Reichsanstalt",
+          "volume": "23",
+          "pages": "1-26",
+          "notes": "Monograph on the Transylvanian dinosaurs; erects Struthiosaurus transylvanicus on BMNH R4966 from the Sânpetru Formation of the Hațeg Basin."
+        },
+        {
+          "id": "garcia2003a",
+          "authors": "Garcia, G.; Pereda-Suberbiola, X.",
+          "year": 2003,
+          "title": "A new species of Struthiosaurus (Dinosauria: Ankylosauria) from the Upper Cretaceous of France",
+          "journal": "Journal of Vertebrate Paleontology",
+          "publisher": "Informa UK Limited",
+          "volume": "23",
+          "issue": "1",
+          "pages": "156-165",
+          "doi": "10.1671/0272-4634(2003)23[156:ANSOSD]2.0.CO;2",
+          "notes": "Erects Struthiosaurus languedocensis on synsacrum UM2 OLV-D50 from the Campanian of Villeveyrac, southern France."
         }
       ],
       "taxonomy": [
