@@ -37,8 +37,8 @@ identifiers:
     id: "4822605"
 species:
   - name: Omeisaurus junghsiensis
-    etymology: "Named for the Junghsi locality in Sichuan, China, where the holotype
-      was collected."
+    etymology: Named for the Junghsi locality in Sichuan, China, where the holotype
+      was collected.
     status: valid
     type_species: true
     period:
@@ -63,13 +63,14 @@ species:
         - 29.48333
         - 104.366699
     holotype:
-      specimen_id: [IVPP V930]
+      specimen_id:
+        - IVPP V930
       specimen_type: holotype
       institution: IVPP
       material: Left femur, sacrum, four cervical vertebrae, three presacral
-        vertebrae, thirteen sacral and post-sacral vertebrae, eight ribs,
-        left scapula and coracoid, complete left humerus, two ilia, two
-        ischia, left pubis, and left fibula
+        vertebrae, thirteen sacral and post-sacral vertebrae, eight ribs, left
+        scapula and coracoid, complete left humerus, two ilia, two ischia, left
+        pubis, and left fibula
       completeness: partial
     size:
       hip_height_m:
@@ -82,7 +83,142 @@ species:
         min: 4000
         max: 9800
     erected_in: young1939a
+  - name: Omeisaurus tianfuensis
+    etymology: Named for Tianfu (Land of Abundance), a traditional name for
+      Sichuan, the region of the fossil locality.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Middle Jurassic
+      stage:
+        - Bathonian
+        - Callovian
+      from_ma: 168.3
+      to_ma: 163.5
+    location:
+      country: CN
+      region: Sichuan
+      formation: Shaximiao
+      member: Lower
+      locality: Dashanpu, Zigong
+    holotype:
+      specimen_id:
+        - ZDM T5701
+      specimen_type: holotype
+      institution: ZG
+      material: Nearly complete postcranial skeleton lacking the skull, 2-3 middle
+        cervical vertebrae, posterior caudal vertebrae, and most fore and hind
+        limb elements.
+    size:
+      length_m:
+        min: 18
+        max: 20.2
+      weight_kg:
+        min: 8500
+        max: 9800
+    diagnostic_features:
+      - Lateral (pleurocoel) depressions of the cervical and dorsal vertebrae
+        more strongly developed than in O. junghsiensis
+      - First caudal rib narrower and less ventrally extended than the broader,
+        more downward-extending first caudal rib of O. junghsiensis
+      - Pubis relatively longer and more slender than the shorter, stouter pubis
+        of O. junghsiensis
+    erected_in: he1984b
+  - name: Omeisaurus jiaoi
+    etymology: Honors Jiao Zheng of the Zigong Dinosaur Museum development group.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Middle Jurassic
+      stage:
+        - Bathonian
+        - Callovian
+      from_ma: 168.3
+      to_ma: 163.5
+    location:
+      country: CN
+      region: Sichuan
+      formation: Shaximiao
+      member: Lower
+      locality: Dashanpu, Zigong
+    holotype:
+      specimen_id:
+        - ZDM 5050
+      specimen_type: holotype
+      institution: ZG
+      material: "Nearly complete postcranial skeleton lacking skull and cervical
+        vertebrae: 12 dorsal vertebrae, 5 sacral vertebrae, 29 caudal vertebrae,
+        partial dorsal ribs and chevrons, essentially complete pectoral girdle,
+        pelvic girdle, and fore and hind limbs."
+    diagnostic_features:
+      - First caudal vertebra lacks the fan-shaped caudal ribs seen in the
+        Omeisaurus type species and O. tianfuensis; the rib is laterally
+        directed with only slight anteroposterior expansion of the tip.
+      - "Tail markedly shorter than in O. tianfuensis: length of the first 25
+        caudal vertebrae is only 121% of total dorsal length, versus 148% in O.
+        tianfuensis."
+      - First chevron is very slender and articulates with the first caudal
+        vertebra, unlike O. tianfuensis, in which the largest chevron
+        articulates with the second caudal vertebra.
+      - Scapula is more slender with a more expanded distal end (maximum distal
+        width about 2x minimum shaft width) than in O. tianfuensis (about 1.6x).
+      - Dorsal neural spine apices are not greatly expanded and anterior caudal
+        vertebrae lack ventral keels, unlike O. luoquanensis, which also has
+        lower, plate-like anterior caudal neural spines.
+    erected_in: jiang2011a
+  - name: Omeisaurus puxiani
+    etymology: Named for Samantabhadra (Pu Xian), Bodhisattva of Mount Emei; 'Pu'
+      also references Pu'an, the type locality.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Middle Jurassic
+      stage:
+        - Bathonian
+        - Callovian
+      from_ma: 168.3
+      to_ma: 163.5
+    location:
+      country: CN
+      region: Chongqing
+      formation: Shaximiao
+      member: Lower
+      locality: Pu'an Town, Yunyang County
+    holotype:
+      specimen_id:
+        - CLGRP V00005
+      specimen_type: holotype
+      institution: CLGRP
+      material: "Partial articulated skeleton: 10 cervicals, 12 dorsals, partial
+        sacrum, 24 caudals, rib/chevron fragments, partial clavicle, right
+        forelimb, partial ilia, femora, right tibia and fibula"
+    diagnostic_features:
+      - Neural spines of posterior dorsal vertebrae are transversely extended,
+        unlike the anteroposterior extension seen in other Omeisaurus species
+      - Distal ends of anterior caudal neural spines expand posteriorly with a
+        bifid extension, a feature not seen in other Omeisaurus species
+      - Lateral fossae of dorsal centra are divided by secondary septa, more
+        prominently developed than in congeners such as O. tianfuensis and O.
+        jiaoi
+      - Edge of humerus deltopectoral crest turns posterolaterally, differing
+        from the anterolateral orientation in O. tianfuensis
+      - Ratio of ulna length to humerus length is relatively high, at 0.69
+      - Highest cervical elongation index exceeds four (4.4 in cervical 9),
+        among the highest recorded in the genus
+    erected_in: tan2020a
 references:
   - id: young1939a
   - id: jones2026b
     notes: Source of the hip height estimate.
+  - id: he1984b
+    notes: Erects Omeisaurus tianfuensis on holotype ZDM T5701 from the Lower
+      Shaximiao Formation of Dashanpu, Zigong.
+  - id: jiang2011a
+    notes: Erects Omeisaurus jiaoi on holotype ZDM 5050 from the Lower Shaximiao
+      Formation of Dashanpu, Zigong.
+  - id: tan2020a
+    notes: Erects Omeisaurus puxiani on holotype CLGRP V00005 from the lower
+      Shaximiao Formation of Yunyang, Chongqing.
