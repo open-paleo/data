@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-07-07T16:05:57.720Z",
+    "built_at": "2026-07-07T16:57:55.416Z",
     "clade_count": 188,
     "genus_count": 1397,
     "license": "CC-BY-4.0",
@@ -200837,6 +200837,81 @@
           "erected_in": "gilmore1913a",
           "authors": "Gilmore, C. W.",
           "described": 1913
+        },
+        {
+          "name": "Thescelosaurus assiniboiensis",
+          "etymology": "Named for the District of Assiniboia, a former (1882–1905) administrative unit of the North-West Territories enclosing the Frenchman Formation exposures; itself named after the Assiniboine First Nations People.",
+          "status": "valid",
+          "type_species": false,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Maastrichtian"
+            ],
+            "from_ma": 66.5,
+            "to_ma": 66
+          },
+          "location": {
+            "country": "CA",
+            "region": "Saskatchewan",
+            "formation": "Frenchman",
+            "locality": "Frenchman River Valley, near Cambery Coulee"
+          },
+          "holotype": {
+            "specimen_id": [
+              "RSM P 1225.1"
+            ],
+            "specimen_type": "holotype",
+            "institution": "Royal Saskatchewan Museum",
+            "material": "A small, relatively complete skeleton preserving a partial skull (including a nearly complete braincase), dorsal, sacral, and caudal vertebral series, dorsal ribs, pelvic girdles, and hindlimbs."
+          },
+          "diagnostic_features": [
+            "Supraoccipital bears a distinct median foramen running from the roof of the myelencephalon through to the dorsal surface of the element (autapomorphy).",
+            "Dorsal and posterior margins of the squamosal convex (autapomorphy), rather than flat/concave.",
+            "Calcaneum not reduced and thus participates in the mesotarsal joint (unlike T. garbanii, in which it is reduced and excluded)."
+          ],
+          "erected_in": "brown2011a",
+          "authors": "Brown, C. M.; Boyd, C. A.; Russell, A. P.",
+          "described": 2011
+        },
+        {
+          "name": "Thescelosaurus garbanii",
+          "etymology": "Honors Harley Garbani, the fossil collector who discovered the holotype.",
+          "status": "valid",
+          "type_species": false,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Maastrichtian"
+            ],
+            "from_ma": 67,
+            "to_ma": 66
+          },
+          "location": {
+            "country": "US",
+            "region": "Montana",
+            "formation": "Hell Creek",
+            "locality": "Garfield County (LACM Locality V3152)"
+          },
+          "holotype": {
+            "specimen_id": [
+              "LACM 33542"
+            ],
+            "specimen_type": "holotype",
+            "institution": "Natural History Museum of Los Angeles County",
+            "material": "Five posterior cervical and eleven anterior dorsal vertebrae, plus a left pes, tarsus, tibia, fibula, and distal end of femur"
+          },
+          "diagnostic_features": [
+            "Calcaneum excluded from midtarsal joint by a laterally expanded astragalus (calcaneum retains participation in the midtarsal joint in other referred Thescelosaurus specimens)"
+          ],
+          "erected_in": "morris1976a",
+          "described_in": "boyd2009a",
+          "authors": "Morris, W. J.",
+          "described": 1976
         }
       ],
       "notable_specimens": [
@@ -200893,7 +200968,8 @@
           "volume": "29",
           "issue": "3",
           "pages": "758-770",
-          "doi": "10.1671/039.029.0328"
+          "doi": "10.1671/039.029.0328",
+          "notes": "Taxonomic revision of Thescelosaurus; restricts T. garbanii to holotype LACM 33542 and sinks Bugenasaura into the genus."
         },
         {
           "id": "fisher2000a",
@@ -200945,6 +201021,28 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25025-0",
           "notes": "Source of the hip height estimate, and the appearance features."
+        },
+        {
+          "id": "morris1976a",
+          "authors": "Morris, W. J.",
+          "year": 1976,
+          "title": "Hypsilophodont dinosaurs: a new species and comments on their systematics",
+          "book": "Athlon: Essays on Palaeontology in Honour of Loris Shano Russell",
+          "publisher": "Royal Ontario Museum",
+          "notes": "Erects Thescelosaurus garbanii on the partial hindlimb LACM 33542 from the Hell Creek Formation of Montana."
+        },
+        {
+          "id": "brown2011a",
+          "authors": "Brown, C. M.; Boyd, C. A.; Russell, A. P.",
+          "year": 2011,
+          "title": "A new basal ornithopod dinosaur (Frenchman Formation, Saskatchewan, Canada), and implications for late Maastrichtian ornithischian diversity in North America",
+          "journal": "Zoological Journal of the Linnean Society",
+          "publisher": "Oxford University Press (OUP)",
+          "volume": "163",
+          "issue": "4",
+          "pages": "1157-1198",
+          "doi": "10.1111/j.1096-3642.2011.00735.x",
+          "notes": "Erects Thescelosaurus assiniboiensis on skeleton RSM P 1225.1 from the Frenchman Formation of Saskatchewan."
         }
       ],
       "taxonomy": [
