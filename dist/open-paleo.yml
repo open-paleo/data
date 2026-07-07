@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-07T06:41:51.079Z
+  built_at: 2026-07-07T16:05:57.720Z
   clade_count: 188
   genus_count: 1397
   license: CC-BY-4.0
@@ -116587,6 +116587,33 @@ genera:
         erected_in: marsh1890b
         authors: Marsh, O. C.
         described: 1890
+      - name: Ornithomimus edmontonicus
+        etymology: Named for the Edmonton Formation of Alberta, from which the holotype was recovered.
+        status: valid
+        type_species: false
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+          from_ma: 74
+          to_ma: 72.1
+        location:
+          country: CA
+          region: Alberta
+          formation: Horseshoe Canyon
+          locality: Red Deer River
+        holotype:
+          specimen_id:
+            - NMC 8632
+          specimen_type: holotype
+          institution: Canadian Museum of Nature
+          material: Fragments of three vertebrae, dorsal and abdominal ribs, proximal ends of both scapulae, coracoids, and humeri, right forelimb, distal end of left femur, both tibiae-fibulae, and right and part of left pes.
+          completeness: partial
+        erected_in: sternberg1933a
+        described_in: russell1972a
+        authors: Sternberg, C. M.
+        described: 1933
     notable_specimens:
       - specimen_id:
           - TMP 2009.110.1
@@ -116641,6 +116668,27 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
         notes: Source of the hip height estimate.
+      - id: sternberg1933a
+        authors: Sternberg, C. M.
+        year: 1933
+        title: A new Ornithomimus with complete abdominal cuirass
+        journal: The Canadian Field-Naturalist
+        volume: "47"
+        issue: "5"
+        pages: 79-83
+        doi: 10.5962/p.74515
+        notes: Erects Ornithomimus edmontonicus on the abdominal-cuirass skeleton NMC 8632 from the Edmonton Formation of Alberta.
+      - id: russell1972a
+        authors: Russell, D. A.
+        year: 1972
+        title: Ostrich Dinosaurs from the Late Cretaceous of Western Canada
+        journal: Canadian Journal of Earth Sciences
+        publisher: Canadian Science Publishing
+        volume: "9"
+        issue: "4"
+        pages: 375-402
+        doi: 10.1139/e72-031
+        notes: Redescription of ornithomimids recognizing O. edmontonicus as the valid second species and revising the family's systematics.
     taxonomy:
       - Life
       - Animalia
