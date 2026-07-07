@@ -58,11 +58,12 @@ function citationKeyFor(authors: string, year: string | number): string
     const surnamePart = firstAuthor.split(",")[0].trim();
     const surname = surnamePart.split(/\s+/)[0];
 
+    // Keep diacritics and hyphens per the reference-key convention (#1894):
+    // "Ősi" -> "ősi", "Prieto-Márquez" -> "prieto-márquez". Only spaces,
+    // digits, and other punctuation are removed.
     const normalised = surname
-        .normalize("NFD")
-        .replace(/[̀-ͯ]/g, "")
         .toLowerCase()
-        .replace(/[^a-z]/g, "");
+        .replace(/[^\p{L}-]/gu, "");
 
     return `${normalised}${year}`;
 }
