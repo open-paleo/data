@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-07T03:48:33.453Z
+  built_at: 2026-07-07T05:37:39.735Z
   clade_count: 188
   genus_count: 1397
   license: CC-BY-4.0
@@ -151789,6 +151789,67 @@ genera:
         described_in: penkalski2016a
         authors: Maryańska, T.
         described: 1977
+      - name: Tarchia teresae
+        etymology: Honors Teresa Maryańska, in recognition of her work on Asian dinosaurs.
+        status: valid
+        type_species: false
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+          from_ma: 71
+          to_ma: 69
+        location:
+          country: MN
+          region: Omnogov
+          formation: Nemegt
+          locality: Hermiin Tsav I
+        holotype:
+          specimen_id:
+            - PIN 3142/250
+          specimen_type: holotype
+          institution: Paleontological Institute, Russian Academy of Sciences
+          material: Skull, mandibles, and postcranial material.
+        diagnostic_features:
+          - Accessory postorbital osteoderm not fused to the skull roof (fused in T. kielanae).
+          - Quadrate and paroccipital process unfused.
+          - Skull roof over the postfrontal region deeply sculptured.
+          - Large, bifurcated opening for cranial nerves IX-XII.
+        erected_in: penkalski2017a
+        authors: Penkalski, P.; Tumanova, T.
+        described: 2017
+      - name: Tarchia tumanovae
+        etymology: Honors Tatiana Tumanova, for her contributions to understanding Mongolian ankylosaurs.
+        status: valid
+        type_species: false
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+          from_ma: 71
+          to_ma: 69
+        location:
+          country: MN
+          region: Omnogov
+          formation: Nemegt
+          locality: Hermiin Tsav
+        holotype:
+          specimen_id:
+            - MPC-D 100/1353
+          specimen_type: holotype
+          institution: Paleontological Center, Mongolian Academy of Sciences
+          material: Well-preserved skull; dorsal, sacral, and caudal vertebrae; sixteen dorsal ribs; ilia; a partial ischium; free osteoderms; and a tail club.
+        diagnostic_features:
+          - Single, relatively bulbous internarial caputegulum that does not reach the rostral tip of the beak.
+          - Basioccipital foramen moderate-sized (unlike T. kielanae and T. teresae).
+          - Quadrate-quadratojugal region situated anteriorly (unlike T. teresae).
+          - Quadrate unfused to the exoccipital (fused in T. kielanae).
+          - Interpterygoid vacuity visible in occipital view (not visible in T. teresae).
+        erected_in: park2021a
+        authors: Park, J.-Y.; Lee, Y.-N.; Kobayashi, Y.; Jacobs, L. L.; Barsbold, R.; Lee, H.-J.; Kim, N.; Song, K.-Y.; Polcyn, M. J.
+        described: 2021
     references:
       - id: maryańska1977a
         authors: Maryańska, T.
@@ -151814,6 +151875,26 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
         notes: Source of the hip height estimate, and the appearance features.
+      - id: penkalski2017a
+        authors: Penkalski, P.; Tumanova, T.
+        year: 2017
+        title: "The cranial morphology and taxonomic status of Tarchia (Dinosauria: Ankylosauridae) from the Upper Cretaceous of Mongolia"
+        journal: Cretaceous Research
+        publisher: Elsevier BV
+        volume: "70"
+        pages: 117-127
+        doi: 10.1016/j.cretres.2016.10.004
+        notes: Revises the cranial morphology and taxonomic status of Tarchia and erects T. teresae on PIN 3142/250 from the Nemegt Formation of Mongolia.
+      - id: park2021a
+        authors: Park, J.-Y.; Lee, Y.-N.; Kobayashi, Y.; Jacobs, L. L.; Barsbold, R.; Lee, H.-J.; Kim, N.; Song, K.-Y.; Polcyn, M. J.
+        year: 2021
+        title: A new ankylosaurid from the Upper Cretaceous Nemegt Formation of Mongolia and implications for paleoecology of armoured dinosaurs
+        journal: Scientific Reports
+        publisher: Springer Science and Business Media LLC
+        volume: "11"
+        pages: "22928"
+        doi: 10.1038/s41598-021-02273-4
+        notes: Erects Tarchia tumanovae on the partial skeleton MPC-D 100/1353 from the Nemegt Formation (Hermiin Tsav) of Mongolia.
     taxonomy:
       - Life
       - Animalia
