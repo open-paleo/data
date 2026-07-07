@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-07T22:59:12.580Z
+  built_at: 2026-07-07T23:20:00.155Z
   clade_count: 188
   genus_count: 1397
   license: CC-BY-4.0
@@ -129920,6 +129920,44 @@ genera:
         erected_in: napoli2019a
         authors: Napoli, J. G.; Hunt, T.; Erickson, G. M.; Norell, M. A.
         described: 2019
+      - name: Psittacosaurus sibiricus
+        etymology: Named for Siberia, the region of Russia where the holotype was found.
+        status: valid
+        type_species: false
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+            - Albian
+          from_ma: 121.4
+          to_ma: 105
+        location:
+          country: RU
+          region: Kemerovo
+          formation: Ilek
+          locality: Shestakovo 3, Chebula District
+        holotype:
+          specimen_id:
+            - PM TGU 16/4-20
+          specimen_type: holotype
+          institution: Paleontological Museum, Tomsk State University
+          material: An articulated, almost complete adult skeleton including the skull.
+        size:
+          length_m:
+            min: 1.7
+            max: 1.85
+        diagnostic_features:
+          - Skull width exceeds skull length, unlike the proportionately narrower skull of P. mongoliensis.
+          - Infratemporal fenestra small, its maximum height only 25% of skull length versus 31-38% in P. mongoliensis and other congeners.
+          - Premaxilla anteroposteriorly short, with a maximum length-to-height ratio under 60%, unlike the longer premaxilla of P. mongoliensis.
+          - Postorbital bears a short medial process that does not contribute to the orbital margin, unlike the condition in P. mongoliensis.
+          - Jugal has a deep cleft for the quadratojugal that extends onto the posterior face of the jugal horn, unlike P. mongoliensis.
+          - Angular bears a prominent tuber and there are 23 presacral vertebrae, both differing from the condition in P. mongoliensis.
+        erected_in: leshchinskiy2000a
+        described_in: averianov2006a
+        authors: Leshchinskiy, S. V.; Fayngertz, A. V.; Voronkevich, A. V.; Maschenko, E. N.; Averianov, A. O.
+        described: 2000
     references:
       - id: osborn1923b
         authors: Osborn, H. F.
@@ -130027,6 +130065,25 @@ genera:
         pages: 1-36
         doi: 10.1206/3932.1
         notes: Erects Psittacosaurus amitabha on holotype IGM 100/1132 from the Andakhuduk Formation of central Mongolia.
+      - id: leshchinskiy2000a
+        authors: Leshchinskiy, S. V.; Fayngertz, A. V.; Voronkevich, A. V.; Maschenko, E. N.; Averianov, A. O.
+        year: 2000
+        title: Preliminary results of the investigation of the Shestakovo localities of Early Cretaceous vertebrates
+        book: Materials of the Regional Conference of the Geologists of Siberia, Far East and North East of Russia
+        publisher: GalaPress
+        pages: 363-366
+        notes: Paper in which the name Psittacosaurus sibiricus first validly appeared; the species is credited within it to Voronkevich and Averianov.
+      - id: averianov2006a
+        authors: Averianov, A. O.; Voronkevich, A. V.; Leshchinskiy, S. V.; Fayngertz, A. V.
+        year: 2006
+        title: A ceratopsian dinosaur Psittacosaurus sibiricus from the Early Cretaceous of West Siberia
+        journal: Journal of Systematic Palaeontology
+        publisher: Informa UK Limited
+        volume: "4"
+        issue: "4"
+        pages: 359-395
+        doi: 10.1017/S1477201906001933
+        notes: Full redescription of Psittacosaurus sibiricus on holotype PM TGU 16/4-20 from the Ilek Formation (Shestakovo) of West Siberia.
     taxonomy:
       - Life
       - Animalia
