@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-07T17:31:51.242Z
+  built_at: 2026-07-07T17:52:32.840Z
   clade_count: 188
   genus_count: 1397
   license: CC-BY-4.0
@@ -147640,7 +147640,7 @@ genera:
     pronunciation:
       phonetic: STEG-o-SAWR-us
       ipa: /ˌstɛɡəˈsɔːrəs/
-    description: Stegosaurus is the type genus of Stegosauridae and one of the most readily recognized dinosaurs, characterized by two parasagittal rows of large, erect dermal plates running from the cervicodorsal junction to near the tail tip and by four long tail spines (the "thagomizer") at the distal end of the tail. Marsh erected the genus and the order Stegosauria in 1877 on a partial skeleton from the Morrison Formation of Colorado, originally naming S. armatus as the type species. C. W. Gilmore's 1914 monograph on USNM 4934 (Felch Quarry No. 1, Garden Park, Colorado) supplied the first detailed osteology of the genus and resolved decades of argument over the plate arrangement, demonstrating from articulated evidence that the plates of the two rows alternate rather than pair. Because Marsh's S. armatus material is too fragmentary to anchor the genus, ICZN Opinion 2320 (2013) set aside all prior type-species fixations under plenary power and designated S. stenops Marsh, 1887, with USNM 4934 as its holotype, as the new type species — the form on which most of our modern picture of the genus rests. Several previously named species (S. duplex, Diracodon laticeps) are subsumed in Stegosaurus, while the synonymies of Hesperosaurus and Wuerhosaurus proposed by Maidment et al. (2008) remain contested in subsequent literature and are not accepted here.
+    description: Stegosaurus is the type genus of Stegosauridae and one of the most readily recognized dinosaurs, characterized by two parasagittal rows of large, erect dermal plates running from the cervicodorsal junction to near the tail tip and by four long tail spines (the "thagomizer") at the distal end of the tail. Marsh erected the genus and the order Stegosauria in 1877 on a partial skeleton from the Morrison Formation of Colorado, originally naming S. armatus as the type species. C. W. Gilmore's 1914 monograph on USNM 4934 (Felch Quarry No. 1, Garden Park, Colorado) supplied the first detailed osteology of the genus and resolved decades of argument over the plate arrangement, demonstrating from articulated evidence that the plates of the two rows alternate rather than pair. Because Marsh's S. armatus material is too fragmentary to anchor the genus, ICZN Opinion 2320 (2013) set aside all prior type-species fixations under plenary power and designated S. stenops Marsh, 1887, with USNM 4934 as its holotype, as the new type species — the form on which most of our modern picture of the genus rests. Besides the type species, S. ungulatus (Marsh, 1879) is also widely recognized as valid; other named forms are subsumed in Stegosaurus (S. duplex as a junior synonym of S. ungulatus, and Diracodon laticeps), while the synonymies of Hesperosaurus and Wuerhosaurus proposed by Maidment et al. (2008) remain contested in subsequent literature and are not accepted here.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -147673,9 +147673,6 @@ genera:
       - source: zoobank
         id: 1E80BEA4-EB3D-44EB-9F44-87B94BE9394B
     synonyms:
-      - name: Stegosaurus duplex
-        type: junior subjective
-        reason: Erected by Marsh (1887) on a sacrum and other elements from Como Bluff, Wyoming; treated by Lull and by Gilmore (1914) as conspecific with the cotype of S. ungulatus and therefore invalid.
       - name: Diracodon laticeps
         type: junior subjective
         reason: Erected by Marsh (1881) on jaw fragments from Como Bluff, Wyoming; Gilmore (1914) argued the type was juvenile Stegosaurus material and referred its caudal vertebrae and spines to S. stenops, treating the genus as invalid.
@@ -147722,6 +147719,51 @@ genera:
         erected_in: marsh1887a
         authors: Marsh, O. C.
         described: 1887
+      - name: Stegosaurus ungulatus
+        etymology: From Latin 'ungulatus' meaning 'hoofed', in reference to the hoof-like unguals of the type specimen.
+        status: valid
+        type_species: false
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Kimmeridgian
+            - Tithonian
+          from_ma: 155
+          to_ma: 145
+        location:
+          country: US
+          region: Wyoming
+          formation: Morrison
+          locality: Como Bluff (Quarry 12/13, near Robber's Roost)
+        holotype:
+          specimen_id:
+            - YPM 1853
+          specimen_type: holotype
+          institution: Yale Peabody Museum of Natural History
+          material: Partial skull, several vertebrae, an ischium, partial limbs, several dermal plates, and four tail spikes (thagomizers).
+          completeness: partial
+        size:
+          length_m:
+            min: 7
+            max: 7.5
+          weight_kg:
+            min: 3800
+            max: 5000
+        diagnostic_features:
+          - Longer hind limb (femur) and hip bones than in S. stenops
+          - Plates proportionately smaller and more pointed, with wide bases and narrow tips, rather than the large broad plates of S. stenops
+          - A pair of small, flattened, spine-like plates positioned just before the tail spikes, mirrored in shape and arranged in pairs
+          - Sacral centra broad and rounded, lacking the ventral keel present in the sacrals of S. stenops
+          - Spinous processes of the sacral vertebrae taller than in S. stenops
+        synonyms:
+          - name: Stegosaurus duplex
+            type: junior subjective
+            reason: Type specimen (YPM 1858) is one of the cotypes upon which Marsh founded S. ungulatus (Gilmore, 1914); now regarded as synonymous with S. ungulatus.
+        erected_in: marsh1879a
+        described_in: gilmore1914b
+        authors: Marsh, O. C.
+        described: 1879
     notable_specimens:
       - nickname: Sophie
         specimen_id:
@@ -147766,6 +147808,17 @@ genera:
         pages: 413-417
         doi: 10.2475/ajs.s3-34.203.413
         notes: Erects Stegosaurus stenops on USNM 4934, later designated the type species of Stegosaurus under ICZN Opinion 2320.
+      - id: marsh1879a
+        authors: Marsh, O. C.
+        year: 1879
+        title: Notice of new Jurassic reptiles
+        journal: American Journal of Science
+        publisher: American Journal of Science (AJS)
+        volume: s3-18
+        issue: "108"
+        pages: 501-505
+        doi: 10.2475/ajs.s3-18.108.501
+        notes: Erects Stegosaurus ungulatus on YPM 1853 from the Morrison Formation of Como Bluff, Wyoming.
       - id: gilmore1914b
         authors: Gilmore, C. W.
         year: 1914
