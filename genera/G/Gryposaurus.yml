@@ -53,9 +53,9 @@ synonyms:
       Gryposaurus.
 species:
   - name: Gryposaurus notabilis
-    etymology: "From Latin 'notabilis' meaning 'notable' or 'remarkable', in
+    etymology: From Latin 'notabilis' meaning 'notable' or 'remarkable', in
       reference to the distinctive hooked nasal arch that sets this dinosaur
-      apart from other hadrosaurs."
+      apart from other hadrosaurs.
     status: valid
     type_species: true
     period:
@@ -84,14 +84,50 @@ species:
         min: 0.99
         max: 0.99
     holotype:
-      specimen_id: [ NMC 2278 ]
+      specimen_id:
+        - NMC 2278
       specimen_type: holotype
       institution: CMN
       material: Skull with approximately twenty feet of vertebral column, most of the
-        pectoral arch, about half of the ribs, the pelvic arch, one hind limb with
-        part of the foot, and skin impressions from between the femur and base of the
-        tail.
+        pectoral arch, about half of the ribs, the pelvic arch, one hind limb
+        with part of the foot, and skin impressions from between the femur and
+        base of the tail.
       completeness: partial
     erected_in: lambe1914b
+  - name: Gryposaurus monumentensis
+    etymology: Named for Grand Staircase-Escalante National Monument in southern
+      Utah, where all referred material has been recovered.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Campanian
+      from_ma: 75
+      to_ma: 74
+    location:
+      country: US
+      region: Utah
+      formation: Kaiparowits
+      locality: Grand Staircase-Escalante National Monument
+    holotype:
+      specimen_id:
+        - RAM 6797
+      specimen_type: holotype
+      institution: RAM
+      material: Largely articulated skull lacking most of the right side.
+    diagnostic_features:
+      - Infratemporal fenestra anteroposteriorly narrow, about half the width of
+        the orbit (subequal to or larger than the orbit in other species).
+      - Anterodorsal process of maxilla visible through the external naris.
+      - Predentary oral margin with large, pronged, clover-shaped denticles.
+      - Anterior portion of the dentary sharply downturned.
+      - Surangular with a distinct dorsal process on its median ridge.
+      - Mandibular foramen ovoid (subcircular in other species).
+    erected_in: gates2007b
 references:
   - id: lambe1914b
+  - id: gates2007b
+    notes: Erects Gryposaurus monumentensis on skull RAM 6797 from the late
+      Campanian Kaiparowits Formation of southern Utah.
