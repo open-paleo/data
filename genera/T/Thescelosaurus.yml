@@ -3,8 +3,8 @@ parent: Thescelosaurinae
 pronunciation:
   phonetic: THESS-el-oh-sore-us
   ipa: /ˌθɛsɪləˈsɔːrəs/
-etymology: "From Greek 'theskelos' meaning 'marvelous' or 'wondrous' and
-  'sauros' meaning 'lizard', hence 'marvelous lizard'."
+etymology: From Greek 'theskelos' meaning 'marvelous' or 'wondrous' and 'sauros'
+  meaning 'lizard', hence 'marvelous lizard'.
 description: Thescelosaurus is a genus of ornithischian dinosaur that lived
   during the Late Cretaceous period in western North America. It was named and
   described in 1913 by the paleontologist Charles W. Gilmore; the type species
@@ -51,9 +51,9 @@ synonyms:
       than previously inferred.
 species:
   - name: Thescelosaurus neglectus
-    etymology: "From Latin 'neglectus' meaning 'neglected', referring to the
-      holotype specimen having been overlooked and set aside in museum storage
-      for years before being formally described."
+    etymology: From Latin 'neglectus' meaning 'neglected', referring to the holotype
+      specimen having been overlooked and set aside in museum storage for years
+      before being formally described.
     status: valid
     type_species: true
     period:
@@ -73,7 +73,8 @@ species:
         - 43.299999
         - -104.366669
     holotype:
-      specimen_id: [ Geol. Survey Canada no. 8537 ]
+      specimen_id:
+        - Geol. Survey Canada no. 8537
       specimen_type: holotype
       institution: CMN
       material: Articulated skeleton lacking skull, neck, humeri, scapulae, and
@@ -90,33 +91,124 @@ species:
         min: 200
         max: 300
     erected_in: gilmore1913a
+  - name: Thescelosaurus assiniboiensis
+    etymology: Named for the District of Assiniboia, a former (1882–1905)
+      administrative unit of the North-West Territories enclosing the Frenchman
+      Formation exposures; itself named after the Assiniboine First Nations
+      People.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Maastrichtian
+      from_ma: 66.5
+      to_ma: 66
+    location:
+      country: CA
+      region: Saskatchewan
+      formation: Frenchman
+      locality: Frenchman River Valley, near Cambery Coulee
+    holotype:
+      specimen_id:
+        - RSM P 1225.1
+      specimen_type: holotype
+      institution: RSM-CA
+      material: A small, relatively complete skeleton preserving a partial skull
+        (including a nearly complete braincase), dorsal, sacral, and caudal
+        vertebral series, dorsal ribs, pelvic girdles, and hindlimbs.
+    diagnostic_features:
+      - Supraoccipital bears a distinct median foramen running from the roof of
+        the myelencephalon through to the dorsal surface of the element
+        (autapomorphy).
+      - Dorsal and posterior margins of the squamosal convex (autapomorphy),
+        rather than flat/concave.
+      - Calcaneum not reduced and thus participates in the mesotarsal joint
+        (unlike T. garbanii, in which it is reduced and excluded).
+    erected_in: brown2011a
+  - name: Thescelosaurus garbanii
+    etymology: Honors Harley Garbani, the fossil collector who discovered the
+      holotype.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Maastrichtian
+      from_ma: 67
+      to_ma: 66
+    location:
+      country: US
+      region: Montana
+      formation: Hell Creek
+      locality: Garfield County (LACM Locality V3152)
+    holotype:
+      specimen_id:
+        - LACM 33542
+      specimen_type: holotype
+      institution: LACM
+      material: Five posterior cervical and eleven anterior dorsal vertebrae, plus a
+        left pes, tarsus, tibia, fibula, and distal end of femur
+    diagnostic_features:
+      - Calcaneum excluded from midtarsal joint by a laterally expanded
+        astragalus (calcaneum retains participation in the midtarsal joint in
+        other referred Thescelosaurus specimens)
+    erected_in: morris1976a
+    described_in: boyd2009a
 notable_specimens:
   - nickname: Willo
-    specimen_id: [NCSM 15728]
+    specimen_id:
+      - NCSM 15728
     institution: NCSM
     species: Thescelosaurus neglectus
     category: iconic
-    significance: "Famous nicknamed specimen from the upper Hell Creek Formation of Harding County, South Dakota, preserving most of the skeleton and a complete skull. A chest mass once publicized as a fossilized heart is now doubted to be a geologic concretion."
+    significance: Famous nicknamed specimen from the upper Hell Creek Formation of
+      Harding County, South Dakota, preserving most of the skeleton and a
+      complete skull. A chest mass once publicized as a fossilized heart is now
+      doubted to be a geologic concretion.
     discovered:
       year: 1999
-      by: "Michael Hammer"
-    references: [boyd2009a, fisher2000a, cleland2011a]
-  - specimen_id: [MOR 979]
+      by: Michael Hammer
+    references:
+      - boyd2009a
+      - fisher2000a
+      - cleland2011a
+  - specimen_id:
+      - MOR 979
     institution: MOR
     category: complementary
-    significance: "Specimen from the Hell Creek Formation of Montana preserving a nearly complete skull and skeleton, one of the new finds that combined skull and skeleton material and helped resolve the historic and current species of the genus."
-    references: [boyd2009a]
-  - specimen_id: [TLAM.BA.2014.027.0001]
+    significance: Specimen from the Hell Creek Formation of Montana preserving a
+      nearly complete skull and skeleton, one of the new finds that combined
+      skull and skeleton material and helped resolve the historic and current
+      species of the genus.
+    references:
+      - boyd2009a
+  - specimen_id:
+      - TLAM.BA.2014.027.0001
     institution: TLAM
     species: Thescelosaurus neglectus
     category: complementary
-    significance: "Specimen from the Hell Creek Formation of Dewey County, South Dakota, including a mostly complete though slightly crushed skull and much of the skeleton. Its overlapping skull material allowed both it and the Willo specimen to be assigned to T. neglectus."
-    references: [boyd2014a]
+    significance: Specimen from the Hell Creek Formation of Dewey County, South
+      Dakota, including a mostly complete though slightly crushed skull and much
+      of the skeleton. Its overlapping skull material allowed both it and the
+      Willo specimen to be assigned to T. neglectus.
+    references:
+      - boyd2014a
 references:
   - id: boyd2009a
+    notes: Taxonomic revision of Thescelosaurus; restricts T. garbanii to
+      holotype LACM 33542 and sinks Bugenasaura into the genus.
   - id: fisher2000a
   - id: cleland2011a
   - id: boyd2014a
   - id: gilmore1913a
   - id: jones2026a
     notes: Source of the hip height estimate, and the appearance features.
+  - id: morris1976a
+    notes: Erects Thescelosaurus garbanii on the partial hindlimb LACM 33542
+      from the Hell Creek Formation of Montana.
+  - id: brown2011a
+    notes: Erects Thescelosaurus assiniboiensis on skeleton RSM P 1225.1 from
+      the Frenchman Formation of Saskatchewan.
