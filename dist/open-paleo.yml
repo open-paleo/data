@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-07T00:48:20.764Z
+  built_at: 2026-07-07T02:33:03.090Z
   clade_count: 188
   genus_count: 1397
   license: CC-BY-4.0
@@ -120728,6 +120728,69 @@ genera:
         described_in: sullivan1999b
         authors: Parks, W. A.
         described: 1922
+      - name: Parasaurolophus cyrtocristatus
+        etymology: From Greek 'kyrtos' ('curved') and Latin 'cristatus' ('crested'), referring to the short, strongly downcurved crest.
+        status: valid
+        type_species: false
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+          from_ma: 75.56
+          to_ma: 74.55
+        location:
+          country: US
+          region: New Mexico
+          formation: Fruitland
+          locality: Coal Creek, near Tsaya, McKinley County
+        holotype:
+          specimen_id:
+            - FMNH P27393
+          specimen_type: holotype
+          institution: Field Museum of Natural History
+          material: Cranial crest, dorso-caudal cranium, left dentary fragment, cervical-caudal vertebrae, scapulae, humeri, forelimb bones, ischia, ilia, pubes, femora, tibiae, ribs, chevrons, phalanges.
+        diagnostic_features:
+          - Cranial crest short, about one-third the length of P. walkeri's (~260 mm behind the occiput versus ~860 mm), curving strongly posteroventrally rather than arcing dorsocaudally.
+          - Total skull length exceeding ~1425 mm (versus ~1733 mm in P. walkeri).
+          - Narial passages separated by a median bony septum (as in P. walkeri; absent in P. tubicen).
+          - Internal narial tubes simple and paired, running from the external nares to the crest apex and U-bending forward into the choana.
+          - Lateral diverticula positioned medially between the dorsal and ventral ascending tracts, divided dorsally by a sagittal septum.
+          - Radius (585 mm) longer than the humerus (565 mm), unlike P. walkeri (humerus 520 mm exceeding radius 496 mm).
+        erected_in: ostrom1961a
+        described_in: sullivan1999b
+        authors: Ostrom, J. H.
+        described: 1961
+      - name: Parasaurolophus tubicen
+        etymology: From Latin 'tubicen' ('trumpeter'), alluding to the elongate, trumpet-like narial crest.
+        status: valid
+        type_species: false
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+          from_ma: 74.5
+          to_ma: 73
+        location:
+          country: US
+          region: New Mexico
+          formation: Kirtland
+        holotype:
+          specimen_id:
+            - PMU.R1250
+          specimen_type: holotype
+          institution: Paleontological Museum
+          material: Incomplete skull and narial crest, including posterior skull roof (parietal, postorbital, squamosal), basicranium (basioccipital, basisphenoid), right maxilla, jugal, and partial palatine.
+        diagnostic_features:
+          - Narial crest internally more complex than in P. walkeri, with a pair of dorsal tubes plus two further tube pairs that U-bend and coalesce into a single ventral tube pair.
+          - Lateral diverticula paired, forming a tight U-bend and fusing anteriorly with the ventral ascending tubes before entering the choana.
+          - Dorsal and dorsolateral surfaces of the narial crest bearing anastomosing furrows, absent in P. walkeri.
+          - Narial crest long, in contrast to the short, sharply curved crest of P. cyrtocristatus.
+        erected_in: wiman1931a
+        described_in: sullivan1999b
+        authors: Wiman, C.
+        described: 1931
     notable_specimens:
       - nickname: Joe
         specimen_id:
@@ -120789,6 +120852,25 @@ genera:
         title: The Princeton Field Guide to Dinosaurs (3rd ed.)
         publisher: Princeton University Press
         notes: Source of the appearance features.
+      - id: ostrom1961a
+        authors: Ostrom, J. H.
+        year: 1961
+        title: A new species of hadrosaurian dinosaur from the Cretaceous of New Mexico
+        journal: Journal of Paleontology
+        publisher: Cambridge University Press (CUP)
+        volume: "35"
+        issue: "3"
+        pages: 575-577
+        notes: Erects Parasaurolophus cyrtocristatus on skull FMNH P27393 from the Fruitland Formation of New Mexico.
+      - id: wiman1931a
+        authors: Wiman, C.
+        year: 1931
+        title: Parasaurolophus tubicen n. sp. aus der Kreide in New Mexico
+        journal: Nova Acta Regiae Societatis Scientiarum Upsaliensis, Series IV
+        volume: "7"
+        issue: "5"
+        pages: 3-11
+        notes: Erects Parasaurolophus tubicen on Wiman's skull PMU.R1250 from the Kirtland Formation of New Mexico.
     taxonomy:
       - Life
       - Animalia
