@@ -2,7 +2,8 @@ genus: Struthiosaurus
 parent: Nodosauridae
 pronunciation:
   phonetic: STROOTH-ee-o-SAWR-us
-etymology: From Latin struthio ('ostrich') and Greek sauros ('lizard'), meaning 'ostrich lizard'
+etymology: From Latin struthio ('ostrich') and Greek sauros ('lizard'), meaning
+  'ostrich lizard'
 description: Struthiosaurus is a genus of nodosaurid dinosaurs from the Late
   Cretaceous period (Santonian-Maastrichtian) of Austria, Romania, France, and
   possibly Hungary. It was a small dinosaur, measuring 2-3 m (6.6-9.8 ft) in
@@ -40,22 +41,26 @@ identifiers:
 synonyms:
   - name: Pleuropeltus
     type: junior subjective
-    reason: Reduced to a junior synonym of Struthiosaurus following taxonomic review that also consolidated Crataeomus and Hoplosaurus.
+    reason: Reduced to a junior synonym of Struthiosaurus following taxonomic review
+      that also consolidated Crataeomus and Hoplosaurus.
   - name: Leipsanosaurus
     type: junior subjective
     reason: Now considered referable to Struthiosaurus, alongside Danubiosaurus.
   - name: Hoplosaurus
     type: junior subjective
-    reason: Reduced to a junior synonym of Struthiosaurus alongside Pleuropeltus and Crataeomus following taxonomic review.
+    reason: Reduced to a junior synonym of Struthiosaurus alongside Pleuropeltus and
+      Crataeomus following taxonomic review.
   - name: Danubiosaurus
     type: junior subjective
     reason: Treated as a junior synonym of Struthiosaurus, alongside Leipsanosaurus.
   - name: Crataeomus
     type: junior subjective
-    reason: Reduced to a junior synonym of Struthiosaurus alongside Pleuropeltus and Hoplosaurus following taxonomic review.
+    reason: Reduced to a junior synonym of Struthiosaurus alongside Pleuropeltus and
+      Hoplosaurus following taxonomic review.
 species:
   - name: Struthiosaurus austriacus
-    etymology: "From Latin 'austriacus' meaning 'Austrian', referring to the provenance of the type specimen from Austria."
+    etymology: From Latin 'austriacus' meaning 'Austrian', referring to the
+      provenance of the type specimen from Austria.
     status: valid
     type_species: true
     period:
@@ -75,7 +80,8 @@ species:
         - 47.82
         - 16.24
     holotype:
-      specimen_id: [PIWU 2349/6]
+      specimen_id:
+        - PIWU 2349/6
       specimen_type: holotype
       institution: PIWU
       material: Fragment of a reptilian skull.
@@ -85,8 +91,8 @@ species:
         min: 0.7
         max: 0.7
       length_m:
-        min: 2.0
-        max: 3.0
+        min: 2
+        max: 3
       weight_kg:
         min: 300
         max: 400
@@ -94,8 +100,84 @@ species:
     synonyms:
       - name: Rhodanosaurus
         type: junior subjective
-        reason: R. ludguensis is generally treated as a junior synonym of Struthiosaurus austriacus, though some authors instead consider it Nodosauridae incertae sedis.
+        reason: R. ludguensis is generally treated as a junior synonym of Struthiosaurus
+          austriacus, though some authors instead consider it Nodosauridae
+          incertae sedis.
+  - name: Struthiosaurus transylvanicus
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Maastrichtian
+      from_ma: 72.1
+      to_ma: 66
+    location:
+      country: RO
+      region: Hunedoara
+      formation: Sânpetru
+      locality: Sânpetru (Szentpéterfalva), Hațeg Basin
+    holotype:
+      specimen_id:
+        - BMNH R4966
+      specimen_type: holotype
+      institution: NHMUK
+      material: Partial skull (braincase, frontal, parietal, postfrontal, quadrate),
+        atlas, cervical and dorsal vertebrae, anterior caudal vertebrae, ribs,
+        and a scapula, from associated remains found at Szentpéterfalva.
+    diagnostic_features:
+      - Skeleton overall much more robust than in Struthiosaurus austriacus.
+      - Base of the skull markedly more robustly constructed than in S.
+        austriacus.
+      - Anterior ribs T-shaped in cross-section but more moderately developed
+        than in the Gosau (S. austriacus) material.
+      - Postcranial bone surfaces bearing a distinctive sculpture resembling
+        intersecting fibers.
+    erected_in: nopcsa1915a
+  - name: Struthiosaurus languedocensis
+    etymology: From Languedoc, the region of southern France where the holotype
+      was found.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Campanian
+      from_ma: 73.5
+      to_ma: 72.1
+    location:
+      country: FR
+      region: Hérault
+      locality: L'Olivet Quarry, Villeveyrac-Mèze Basin
+    holotype:
+      specimen_id:
+        - UM2 OLV-D50 A-G CV
+      specimen_type: holotype
+      institution: USTL
+      material: Complete synsacrum and pelvic girdle, plus the four caudal-most dorsal
+        vertebrae.
+    size:
+      length_m:
+        min: 2.5
+        max: 3
+    diagnostic_features:
+      - Distal dorsal centra strongly compressed laterally and hourglass-shaped
+        in ventral view, more so than in S. transylvanicus.
+      - Ischium directed immediately caudal from the acetabulum, with a robust
+        shaft that does not taper distally and ends in a blunt knob (slender and
+        tapering in S. austriacus).
+      - Synsacrum of ten co-ossified vertebrae (five dorsals, four sacrals, and
+        one caudal).
+    erected_in: garcia2003a
 references:
   - id: bunzel1870a
   - id: jones2026a
     notes: Source of the hip height estimate, and the appearance features.
+  - id: nopcsa1915a
+    notes: Monograph on the Transylvanian dinosaurs; erects Struthiosaurus
+      transylvanicus on BMNH R4966 from the Sânpetru Formation of the Hațeg Basin.
+  - id: garcia2003a
+    notes: Erects Struthiosaurus languedocensis on synsacrum UM2 OLV-D50 from the
+      Campanian of Villeveyrac, southern France.
