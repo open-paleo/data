@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-07T00:14:24.231Z
+  built_at: 2026-07-07T00:48:20.764Z
   clade_count: 188
   genus_count: 1397
   license: CC-BY-4.0
@@ -118476,6 +118476,77 @@ genera:
         erected_in: sternberg1950a
         authors: Sternberg, C. M.
         described: 1950
+      - name: Pachyrhinosaurus lakustai
+        etymology: Honors Al Lakusta, who discovered and reported the Pipestone Creek bonebed.
+        status: valid
+        type_species: false
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+          from_ma: 73.5
+          to_ma: 73
+        location:
+          country: CA
+          region: Alberta
+          formation: Wapiti
+          locality: Pipestone Creek bonebed, near Grande Prairie
+        holotype:
+          specimen_id:
+            - TMP 1986.55.258
+          specimen_type: holotype
+          institution: Royal Tyrrell Museum of Paleontology
+          material: Transversely crushed adult skull, lacking most of the jugals, quadratojugals, quadrates, squamosals, and most of the parietals.
+        diagnostic_features:
+          - Smaller than P. canadensis.
+          - Nasal boss and other anterior facial ornamentation (including "fist-sized knobs") relatively less hypertrophied than in P. canadensis.
+          - Single transverse shelf of bone on the medial side of the premaxilla (a pair of shelves in P. canadensis and other centrosaurines).
+          - Short, robust premaxillary process projecting straight forward into the naris (long, slender, and finger-like, curving medially, in P. canadensis).
+          - Nasal boss fluting strong and regular, angled anterodorsally at about 45 degrees on adult nasal bosses (irregular and vertical in P. canadensis).
+          - Parietal bar curving slightly upward, with one to three median horns near the base of the midparietal bar (parietal bar essentially flat in P. canadensis).
+        erected_in: currie2008a
+        authors: Currie, P. J.; Langston, W.; Tanke, D. H.
+        described: 2008
+      - name: Pachyrhinosaurus perotorum
+        etymology: Honors the Perot family (Margot and H. Ross Perot and their children) for their support of science and science education.
+        status: valid
+        type_species: false
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+          from_ma: 70
+          to_ma: 69
+        location:
+          country: US
+          region: Alaska
+          formation: Prince Creek
+          locality: Kikak-Tegoseak Quarry, Colville River, North Slope
+        holotype:
+          specimen_id:
+            - DMNH 21200
+          specimen_type: holotype
+          institution: Denver Museum of Nature and Science
+          material: Posterior part of a parietal, including the partial median bar, posterior median emargination, and autapomorphic anterior-facing horns.
+        size:
+          length_m:
+            min: 5
+            max: 5
+          weight_kg:
+            min: 2000
+            max: 2000
+        diagnostic_features:
+          - Pair of short, dorsoventrally flattened horns projecting anteromedially and slightly dorsally from the anterior margin of the parietal transverse bar (unique among ceratopsids).
+          - Paired fossae dorsal to the narial fossa.
+          - Narrow median hump on the posterior part of the nasal boss.
+          - Basal sulcus of the nasal boss extending ventrally below the dorsal rim of the narial fossa, making the boss relatively deeper dorsoventrally.
+          - Rostral comb formed by the nasals and premaxillae (present in P. lakustai, absent in P. canadensis).
+          - Nasal and supraorbital bosses nearly in contact, separated only by a narrow groove (as in P. canadensis; widely separated in P. lakustai).
+        erected_in: fiorillo2012a
+        authors: Fiorillo, A. R.; Tykoski, R. S.
+        described: 2012
     notable_specimens:
       - nickname: Harvey
         specimen_id:
@@ -118517,6 +118588,25 @@ genera:
         volume: "118"
         pages: 109-120
         doi: 10.4095/105057
+      - id: currie2008a
+        authors: Currie, P. J.; Langston, W.; Tanke, D. H.
+        year: 2008
+        title: A new species of Pachyrhinosaurus (Dinosauria, Ceratopsidae) from the Upper Cretaceous of Alberta, Canada
+        book: A New Horned Dinosaur from an Upper Cretaceous Bone Bed in Alberta
+        publisher: NRC Research Press
+        pages: 1-108
+        notes: Erects Pachyrhinosaurus lakustai on skull TMP 1986.55.258 from the Wapiti Formation (Pipestone Creek bonebed) of Alberta.
+      - id: fiorillo2012a
+        authors: Fiorillo, A. R.; Tykoski, R. S.
+        year: 2012
+        title: A new Maastrichtian species of the centrosaurine ceratopsid Pachyrhinosaurus from the North Slope of Alaska
+        journal: Acta Palaeontologica Polonica
+        publisher: Polska Akademia Nauk Instytut Paleobiologii (Institute of Paleobiology, Polish Academy of Sciences)
+        volume: "57"
+        issue: "3"
+        pages: 561-573
+        doi: 10.4202/app.2011.0033
+        notes: Erects Pachyrhinosaurus perotorum on parietal DMNH 21200 from the Prince Creek Formation of the North Slope of Alaska.
     taxonomy:
       - Life
       - Animalia
