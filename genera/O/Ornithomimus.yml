@@ -3,8 +3,8 @@ parent: Ornithomimidae
 pronunciation:
   phonetic: or-NITH-o-MIEM-us
   ipa: /ˌɔːrnɪθəˈmaɪməs, -θoʊ-/
-etymology: "From Greek ornitho- (ὄρνις/ὀρνίθ-, 'bird') and mimos (μῖμος, 'mimic'
-  or 'imitator'), meaning 'bird mimic'"
+etymology: From Greek ornitho- (ὄρνις/ὀρνίθ-, 'bird') and mimos (μῖμος, 'mimic'
+  or 'imitator'), meaning 'bird mimic'
 description: "Ornithomimus is a genus of ornithomimid theropod dinosaurs from
   the Campanian and Maastrichtian ages of the Late Cretaceous in western North
   America. Ornithomimus was a swift, bipedal dinosaur which was covered in
@@ -39,7 +39,7 @@ identifiers:
     id: 2095931F-DD54-480D-9B77-70F785F52DB6
 species:
   - name: Ornithomimus velox
-    etymology: "From Latin 'velox' meaning 'swift'."
+    etymology: From Latin 'velox' meaning 'swift'.
     status: valid
     type_species: true
     period:
@@ -68,26 +68,76 @@ species:
         min: 170
         max: 170
     holotype:
-      specimen_id: [ YPM 542, YPM 548 ]
+      specimen_id:
+        - YPM 542
+        - YPM 548
       specimen_type: syntype
       institution: YPM
       material: Left tibia, left metatarsals, phalanges of second digit, left metacarpals
       completeness: fragmentary
     erected_in: marsh1890b
+  - name: Ornithomimus edmontonicus
+    etymology: Named for the Edmonton Formation of Alberta, from which the
+      holotype was recovered.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Campanian
+      from_ma: 74
+      to_ma: 72.1
+    location:
+      country: CA
+      region: Alberta
+      formation: Horseshoe Canyon
+      locality: Red Deer River
+    holotype:
+      specimen_id:
+        - NMC 8632
+      specimen_type: holotype
+      institution: CMN
+      material: Fragments of three vertebrae, dorsal and abdominal ribs, proximal ends
+        of both scapulae, coracoids, and humeri, right forelimb, distal end of
+        left femur, both tibiae-fibulae, and right and part of left pes.
+      completeness: partial
+    erected_in: sternberg1933a
+    described_in: russell1972a
 notable_specimens:
-  - specimen_id: [TMP 2009.110.1, TMP 2008.70.1, TMP 1995.110.1]
+  - specimen_id:
+      - TMP 2009.110.1
+      - TMP 2008.70.1
+      - TMP 1995.110.1
     institution: TMP
     category: exceptional-preservation
-    significance: "Three feathered skeletons across growth stages: a roughly one-year-old juvenile (TMP 2009.110.1) and an adult (TMP 2008.70.1) with body filaments, plus an adult (TMP 1995.110.1) with pennaceous wing-like forelimb feathers. Only adults bore the wings, suggesting they evolved for display."
-    references: [zelenitsky2012a]
-  - specimen_id: [UALVP 52531]
+    significance: "Three feathered skeletons across growth stages: a roughly
+      one-year-old juvenile (TMP 2009.110.1) and an adult (TMP 2008.70.1) with
+      body filaments, plus an adult (TMP 1995.110.1) with pennaceous wing-like
+      forelimb feathers. Only adults bore the wings, suggesting they evolved for
+      display."
+    references:
+      - zelenitsky2012a
+  - specimen_id:
+      - UALVP 52531
     institution: UALVP
     category: exceptional-preservation
-    significance: "A densely feathered specimen from the lower Dinosaur Park Formation, the first Ornithomimus to preserve tail feathers, which resembled an ostrich's in structure and distribution. Skin impressions show bare skin from mid-thigh to the feet and a flap of skin connecting the upper thigh to the torso."
-    references: [vanderreest2016a]
+    significance: A densely feathered specimen from the lower Dinosaur Park
+      Formation, the first Ornithomimus to preserve tail feathers, which
+      resembled an ostrich's in structure and distribution. Skin impressions
+      show bare skin from mid-thigh to the feet and a flap of skin connecting
+      the upper thigh to the torso.
+    references:
+      - vanderreest2016a
 references:
   - id: vanderreest2016a
   - id: zelenitsky2012a
   - id: marsh1890b
   - id: jones2026c
     notes: Source of the hip height estimate.
+  - id: sternberg1933a
+    notes: Erects Ornithomimus edmontonicus on the abdominal-cuirass skeleton
+      NMC 8632 from the Edmonton Formation of Alberta.
+  - id: russell1972a
+    notes: Redescription of ornithomimids recognizing O. edmontonicus as the
+      valid second species and revising the family's systematics.
