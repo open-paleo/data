@@ -2,9 +2,9 @@ genus: Pachyrhinosaurus
 parent: Centrosaurinae
 pronunciation:
   phonetic: pak-i-RIEN-o-SAWR-us
-etymology: "From Ancient Greek 'pachys' meaning 'thick', 'rhino' meaning 'nose',
+etymology: From Ancient Greek 'pachys' meaning 'thick', 'rhino' meaning 'nose',
   and 'sauros' meaning 'lizard'; translates as 'thick-nosed lizard', named for
-  the distinctive bony mass on its snout."
+  the distinctive bony mass on its snout.
 description: Pachyrhinosaurus is a genus of centrosaurine ceratopsid dinosaur
   from the Late Cretaceous period of North America. The first examples were
   discovered by Charles M. Sternberg in Alberta, Canada, in 1946, and named in
@@ -44,8 +44,7 @@ identifiers:
     id: D064BEDB-8F00-4600-85D3-D5F653629500
 species:
   - name: Pachyrhinosaurus canadensis
-    etymology: "Named for Canada, where the holotype specimens were discovered in
-      Alberta."
+    etymology: Named for Canada, where the holotype specimens were discovered in Alberta.
     status: valid
     type_species: true
     period:
@@ -72,26 +71,128 @@ species:
         min: 2000
         max: 4000
     holotype:
-      specimen_id: [ NMC 8867 ]
+      specimen_id:
+        - NMC 8867
       specimen_type: holotype
       institution: CMN
-      material: Skull without lower jaws, lacking beak and back part of crest, laterally
-        compressed.
+      material: Skull without lower jaws, lacking beak and back part of crest,
+        laterally compressed.
       completeness: partial
     erected_in: sternberg1950a
+  - name: Pachyrhinosaurus lakustai
+    etymology: Honors Al Lakusta, who discovered and reported the Pipestone Creek
+      bonebed.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Campanian
+      from_ma: 73.5
+      to_ma: 73
+    location:
+      country: CA
+      region: Alberta
+      formation: Wapiti
+      locality: Pipestone Creek bonebed, near Grande Prairie
+    holotype:
+      specimen_id:
+        - TMP 1986.55.258
+      specimen_type: holotype
+      institution: TMP
+      material: Transversely crushed adult skull, lacking most of the jugals,
+        quadratojugals, quadrates, squamosals, and most of the parietals.
+    diagnostic_features:
+      - Smaller than P. canadensis.
+      - Nasal boss and other anterior facial ornamentation (including "fist-sized
+        knobs") relatively less hypertrophied than in P. canadensis.
+      - Single transverse shelf of bone on the medial side of the premaxilla (a
+        pair of shelves in P. canadensis and other centrosaurines).
+      - Short, robust premaxillary process projecting straight forward into the
+        naris (long, slender, and finger-like, curving medially, in P.
+        canadensis).
+      - Nasal boss fluting strong and regular, angled anterodorsally at about 45
+        degrees on adult nasal bosses (irregular and vertical in P. canadensis).
+      - Parietal bar curving slightly upward, with one to three median horns near
+        the base of the midparietal bar (parietal bar essentially flat in P.
+        canadensis).
+    erected_in: currie2008a
+  - name: Pachyrhinosaurus perotorum
+    etymology: Honors the Perot family (Margot and H. Ross Perot and their
+      children) for their support of science and science education.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Maastrichtian
+      from_ma: 70
+      to_ma: 69
+    location:
+      country: US
+      region: Alaska
+      formation: Prince Creek
+      locality: Kikak-Tegoseak Quarry, Colville River, North Slope
+    holotype:
+      specimen_id:
+        - DMNH 21200
+      specimen_type: holotype
+      institution: DMNH
+      material: Posterior part of a parietal, including the partial median bar,
+        posterior median emargination, and autapomorphic anterior-facing horns.
+    size:
+      length_m:
+        min: 5
+        max: 5
+      weight_kg:
+        min: 2000
+        max: 2000
+    diagnostic_features:
+      - Pair of short, dorsoventrally flattened horns projecting anteromedially
+        and slightly dorsally from the anterior margin of the parietal transverse
+        bar (unique among ceratopsids).
+      - Paired fossae dorsal to the narial fossa.
+      - Narrow median hump on the posterior part of the nasal boss.
+      - Basal sulcus of the nasal boss extending ventrally below the dorsal rim
+        of the narial fossa, making the boss relatively deeper dorsoventrally.
+      - Rostral comb formed by the nasals and premaxillae (present in P. lakustai,
+        absent in P. canadensis).
+      - Nasal and supraorbital bosses nearly in contact, separated only by a
+        narrow groove (as in P. canadensis; widely separated in P. lakustai).
+    erected_in: fiorillo2012a
 notable_specimens:
   - nickname: Harvey
-    specimen_id: [TMP 1989.055.1234]
+    specimen_id:
+      - TMP 1989.055.1234
     institution: TMP
     category: pathology
-    significance: "Skull with severe lesions on the right side, the largest 195 mm across, producing a massive hole so deep that the left-side bones are visible within it; it partly destroyed the right eye socket and probably blinded the animal on that side. It survived and died later in a mass-death assemblage."
-    references: [carpenter2007a]
-  - specimen_id: [DMNH 21460]
+    significance: Skull with severe lesions on the right side, the largest 195 mm
+      across, producing a massive hole so deep that the left-side bones are
+      visible within it; it partly destroyed the right eye socket and probably
+      blinded the animal on that side. It survived and died later in a
+      mass-death assemblage.
+    references:
+      - carpenter2007a
+  - specimen_id:
+      - DMNH 21460
     institution: PMNS
     category: ontogeny
-    significance: "Incomplete nasal of an immature P. perotorum from the Kikak-Tegoseak Quarry, Alaska, with dorsally enlarged ornamentation marking an intermediate growth stage; its posterior part shows integument complexity (a cornified pad and sheath on the nasal boss) not previously recognized in the genus."
-    references: [fiorillo2013a]
+    significance: Incomplete nasal of an immature P. perotorum from the
+      Kikak-Tegoseak Quarry, Alaska, with dorsally enlarged ornamentation
+      marking an intermediate growth stage; its posterior part shows integument
+      complexity (a cornified pad and sheath on the nasal boss) not previously
+      recognized in the genus.
+    references:
+      - fiorillo2013a
 references:
   - id: carpenter2007a
   - id: fiorillo2013a
   - id: sternberg1950a
+  - id: currie2008a
+    notes: Erects Pachyrhinosaurus lakustai on skull TMP 1986.55.258 from the
+      Wapiti Formation (Pipestone Creek bonebed) of Alberta.
+  - id: fiorillo2012a
+    notes: Erects Pachyrhinosaurus perotorum on parietal DMNH 21200 from the
+      Prince Creek Formation of the North Slope of Alaska.
