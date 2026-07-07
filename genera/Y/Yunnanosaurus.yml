@@ -3,8 +3,8 @@ parent: Sauropodiformes
 pronunciation:
   ipa: /juːˌnænoʊˈsɔːrəs/
   phonetic: yoo-NAN-oh-SOR-uhs
-etymology: "Named for Yunnan Province, China, where the fossils were found,
-  combined with Greek 'sauros' meaning 'lizard'."
+etymology: Named for Yunnan Province, China, where the fossils were found,
+  combined with Greek 'sauros' meaning 'lizard'.
 description: Yunnanosaurus is an extinct genus of sauropodomorph dinosaur that
   lived approximately 199 to 183 million years ago in what is now the Yunnan
   Province, in China, for which it was named. Yunnanosaurus was a large sized,
@@ -13,13 +13,13 @@ description: Yunnanosaurus is an extinct genus of sauropodomorph dinosaur that
   high to 4 m (13 ft) high in the largest species.
 dispute:
   summary: >
-    Yunnanosaurus huangi is most commonly recovered among basal
-    Sauropodiformes (Jones, 2026), close to Jingshanosaurus and Lishulong,
-    but is sometimes placed within Massospondylidae or as a basal
-    massopodan.
+    Yunnanosaurus huangi is most commonly recovered among basal Sauropodiformes
+    (Jones, 2026), close to Jingshanosaurus and Lishulong, but is sometimes
+    placed within Massospondylidae or as a basal massopodan.
   history:
-    - date: "2026-06-29"
-      note: Placed at Sauropodiformes incertae sedis following the prevailing view and Jones (2026); the Massospondylidae alternative is recorded.
+    - date: 2026-06-29
+      note: Placed at Sauropodiformes incertae sedis following the prevailing view and
+        Jones (2026); the Massospondylidae alternative is recorded.
 diet: herbivore
 locomotion: bipedal
 paleoenvironment:
@@ -39,8 +39,8 @@ identifiers:
     id: "4817967"
 species:
   - name: Yunnanosaurus huangi
-    etymology: "Named for Huang Chiching (T.K. Huang), the director of the National
-      Geological Survey of China at the time the species was described."
+    etymology: Named for Huang Chiching (T.K. Huang), the director of the National
+      Geological Survey of China at the time the species was described.
     status: valid
     type_species: true
     period:
@@ -64,24 +64,71 @@ species:
         min: 240
         max: 240
       length_m:
-        min: 7.0
-        max: 13.0
+        min: 7
+        max: 13
       hip_height_m:
-        min: 2.0
-        max: 4.0
+        min: 2
+        max: 4
     holotype:
-      specimen_id: [ IVPP V20 ]
+      specimen_id:
+        - IVPP V20
       specimen_type: holotype
       institution: IVPP
       material: Skull, lower jaw pair and partly preserved skeletons
       completeness: partial
     erected_in: young1940a
+  - name: Yunnanosaurus youngi
+    etymology: Honors Professor C. C. Young, who first studied the Lufeng Basin
+      dinosaurs and erected the family Yunnanosauridae.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Middle Jurassic
+      stage:
+        - Bajocian
+        - Bathonian
+      from_ma: 170.3
+      to_ma: 166.1
+    location:
+      country: CN
+      region: Yunnan
+      formation: Zhanghe
+      locality: Banqing Houshanliangzi, Jiangyi, Yuanmou County
+    holotype:
+      specimen_id:
+        - CXMVZA 185
+      specimen_type: holotype
+      institution: CPM
+      material: "Partial postcranial skeleton: 10 cervical, 14 dorsal, 3 fused sacral,
+        17 caudal vertebrae, both pubes, ischia, and right ilium; no skull,
+        pectoral girdle, forelimbs, or hindlimbs."
+    size:
+      length_m:
+        min: 13
+        max: 13
+    diagnostic_features:
+      - Sixth cervical vertebra the longest in the vertebral column.
+      - Neural spines of the posterior cervical vertebrae short, with an expanded
+        distal end wider than its anteroposterior length.
+      - Three sacral vertebrae tightly fused, with a stout sacrocostal yoke
+        contacting the inner surface of the ilium.
+      - Ventral margin of the postacetabular process of the ilium slightly
+        concave (reversed V-shaped in Y. huangi).
+      - Ischium longer than the pubis, the latter with a rounded distal end
+        (pubis longer than ischium in Y. huangi).
+    erected_in: lü2007d
 notable_specimens:
-  - specimen_id: [ZMNH-M8739]
+  - specimen_id:
+      - ZMNH-M8739
     institution: ZMNH
     category: ontogeny
-    significance: "Juvenile referred to Yunnanosaurus robustus with partial cranial material and an almost complete postcranial skeleton; comparison with adult Y. huangi reveals very distinctive growth changes and characteristic dentition suggesting a potentially unique feeding mechanism."
-    references: [sekiya2013a]
+    significance: Juvenile referred to Yunnanosaurus robustus with partial cranial
+      material and an almost complete postcranial skeleton; comparison with
+      adult Y. huangi reveals very distinctive growth changes and characteristic
+      dentition suggesting a potentially unique feeding mechanism.
+    references:
+      - sekiya2013a
 references:
   - id: young1940a
   - id: sekiya2013a
@@ -89,3 +136,6 @@ references:
     notes: Source of the mass estimate.
   - id: jones2026b
     notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+  - id: lü2007d
+    notes: Erects Yunnanosaurus youngi on skeleton CXMVZA 185 from the Middle
+      Jurassic Zhanghe Formation of Yuanmou, Yunnan.
