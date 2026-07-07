@@ -3,10 +3,10 @@ parent: Mamenchisauridae
 pronunciation:
   ipa: /məˌmʌntʃiˈsɔːrəs/
   phonetic: muh-MUN-chee-SOR-uhs, or spelling pronunciation
-etymology: "Named after Mamenchi (a transliteration of the Chinese place name
-  for a ferry crossing, Maming Creek), where the first fossils were found near
+etymology: Named after Mamenchi (a transliteration of the Chinese place name for
+  a ferry crossing, Maming Creek), where the first fossils were found near
   Yibin, Sichuan, China, combined with Greek 'sauros' (lizard); meaning
-  'Mamenchi lizard'"
+  'Mamenchi lizard'
 description: Mamenchisaurus is an extinct genus of sauropod dinosaurs known for
   their remarkably long necks, which made up nearly half the total body length.
   Numerous species have been assigned to the genus; however, the validity of
@@ -38,9 +38,9 @@ identifiers:
     id: "4822602"
 species:
   - name: Mamenchisaurus constructus
-    etymology: "From Latin 'constructus' meaning 'constructed' or 'built', chosen
+    etymology: From Latin 'constructus' meaning 'constructed' or 'built', chosen
       because the holotype fossil was discovered during construction work on the
-      Yitang Highway in Sichuan Province, China."
+      Yitang Highway in Sichuan Province, China.
     status: valid
     type_species: true
     period:
@@ -65,27 +65,181 @@ species:
         min: 3.1
         max: 3.1
       length_m:
-        min: 13.0
-        max: 35.0
+        min: 13
+        max: 35
       weight_kg:
         min: 5000
         max: 45000
     holotype:
-      specimen_id: [ IVPP V 790 ]
+      specimen_id:
+        - IVPP V 790
       specimen_type: holotype
       institution: IVPP
     erected_in: young1954a
+  - name: Mamenchisaurus sinocanadorum
+    etymology: From sino- (China) and canad- (Canada) with the Latin genitive
+      plural -orum, for the China-Canada Dinosaur Project that recovered the
+      holotype.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Jurassic
+      stage:
+        - Oxfordian
+      from_ma: 162.4
+      to_ma: 158.7
+    location:
+      country: CN
+      region: Xinjiang
+      formation: Shishugou
+      coordinates:
+        - 44.804
+        - 90.048
+      locality: Jiangjunmiao, Junggar Basin
+    holotype:
+      specimen_id:
+        - IVPP V10603
+      specimen_type: holotype
+      institution: IVPP
+      material: Partial skull (left vomer, right pterygoid, possible ectopterygoid,
+        right quadrate), right dentary and complete left mandible; partial
+        cervical vertebrae 2–4; a nearly intact left cervical rib
+    diagnostic_features:
+      - Exceptionally elongate external mandibular fenestra (length:height ratio
+        in lateral view of 3.7)
+      - Ventral surface of the axis bears a deep, trough-like depression
+        containing several pneumatic foramina anteriorly
+      - Large, irregularly developed, paramedian pneumatic foramina flush with
+        the surrounding ventral surface of cervical vertebra 3
+      - Parallel-sided tooth crowns in labial view combined with a distolingual
+        boss on some dentary teeth
+      - Anterior surangular foramen at least twice as large in greatest diameter
+        as the posterior surangular foramen
+      - Essentially straight axial spinopostzygapophyseal lamina combined with a
+        relatively low neural spine (neural spine:neural arch height ratio
+        <0.45)
+    erected_in: russell1993c
+    described_in: moore2023a
+  - name: Mamenchisaurus hochuanensis
+    etymology: Named for Hechuan (Hochuan) County, Sichuan, China, where the
+      holotype was discovered
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Jurassic
+      stage:
+        - Oxfordian
+        - Kimmeridgian
+        - Tithonian
+      from_ma: 161.5
+      to_ma: 145
+    location:
+      country: CN
+      region: Sichuan
+      formation: Shaximiao
+      locality: Hechuan County (Mt. Gushushan)
+    holotype:
+      specimen_id:
+        - CCG V 20401
+      specimen_type: holotype
+      institution: CCG
+      material: Nearly complete vertebral column (cervical-caudal series), ilium,
+        ischium, partial pubis, tibia, fibula, astragali, partial pes,
+        fragmentary sternum, and proximal humerus
+    size:
+      length_m:
+        min: 22
+        max: 22
+    diagnostic_features:
+      - 19 cervical vertebrae, more numerous than in other known species of the
+        genus
+      - Cervical ribs bear dagger-shaped rib heads, unlike the spoon-shaped
+        heads of the type species
+      - Anterior three sacral neural spines fused, unlike the unfused condition
+        in the type species
+      - 16 anterior caudal vertebrae procoelous, more than in the type species
+      - Astragalus relatively low, compared to a higher astragalus in the type
+        species
+    erected_in: young1972a
+  - name: Mamenchisaurus youngi
+    etymology: Honors C. C. Young, the Chinese vertebrate paleontologist.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Jurassic
+      stage:
+        - Oxfordian
+        - Kimmeridgian
+        - Tithonian
+      from_ma: 161.5
+      to_ma: 145
+    location:
+      country: CN
+      region: Sichuan
+      formation: Shaximiao
+      locality: Xinmin, Zigong
+    holotype:
+      specimen_id:
+        - ZDM 0083
+      specimen_type: holotype
+      institution: ZG
+      material: Nearly complete skeleton with skull; presacral through eighth caudal
+        vertebrae articulated; pectoral girdle, pelvic girdle, and all four
+        limbs nearly complete and in articulation
+    size:
+      length_m:
+        min: 14
+        max: 14
+    diagnostic_features:
+      - About two-thirds the size of M. hochuanensis, with 30 presacral
+        vertebrae (vs. 32) and 5 sacral vertebrae (vs. 4).
+      - Cervicals only moderately elongated; longest cervical about twice the
+        longest dorsal, versus more than three times in M. hochuanensis.
+      - Mid-series cervical rib capitula bifurcated and dorsal pleurocoels well
+        developed, versus dagger-shaped capitula and poorly developed
+        pleurocoels in M. hochuanensis.
+      - Tibia longer than fibula, lacking an expanded distal end and without the
+        distomedial fibular inflation seen in M. constructus.
+      - Cervical ribs slender and elongated, versus relatively short in M.
+        constructus.
+      - Axis/third cervical vertebra length index of 1.4 (vs. 1.71 in M.
+        sinocanadorum); mandibular dentition of 22-24 teeth exceeds the Xinjiang
+        specimen's count.
+    erected_in: pi1996a
 notable_specimens:
-  - specimen_id: [ZDM0126]
+  - specimen_id:
+      - ZDM0126
     institution: ZG
     category: complementary
-    significance: "Nearly complete, mostly articulated specimen referred to M. hochuanensis that preserves the skull, pectoral girdle, and forelimb material missing from the holotype. It uniquely shows four fused distal caudal vertebrae possibly forming a tail club. A 2020 analysis cast doubt on its referral."
+    significance: Nearly complete, mostly articulated specimen referred to M.
+      hochuanensis that preserves the skull, pectoral girdle, and forelimb
+      material missing from the holotype. It uniquely shows four fused distal
+      caudal vertebrae possibly forming a tail club. A 2020 analysis cast doubt
+      on its referral.
     discovered:
       year: 1995
-    references: [xing2009a, moore2020a]
+    references:
+      - xing2009a
+      - moore2020a
 references:
   - id: young1954a
   - id: jones2026b
     notes: Source of the hip height estimate, and the appearance features.
   - id: xing2009a
   - id: moore2020a
+  - id: moore2023a
+    notes: Re-assessment of M. sinocanadorum on holotype IVPP V10603; recovers
+      Mamenchisaurus as non-monophyletic but withholds taxonomic action pending
+      re-evaluation of the type species.
+  - id: russell1993c
+    notes: Erects Mamenchisaurus sinocanadorum on holotype IVPP V10603 from the
+      Shishugou Formation of Xinjiang.
+  - id: young1972a
+    notes: Erects Mamenchisaurus hochuanensis on holotype CCG V 20401 from the
+      Shaximiao Formation of Sichuan.
+  - id: pi1996a
+    notes: Erects Mamenchisaurus youngi on holotype ZDM 0083 from the Shaximiao
+      Formation of Zigong, Sichuan.
