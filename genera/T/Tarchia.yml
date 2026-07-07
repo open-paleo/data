@@ -41,8 +41,8 @@ identifiers:
     id: "4530864"
 species:
   - name: Tarchia kielanae
-    etymology: "Named for Professor Zofia Kielan-Jaworowska, the leader of the
-      Polish-Mongolian expedition that discovered the holotype skull in 1970."
+    etymology: Named for Professor Zofia Kielan-Jaworowska, the leader of the
+      Polish-Mongolian expedition that discovered the holotype skull in 1970.
     status: valid
     type_species: true
     period:
@@ -50,7 +50,7 @@ species:
         - Late Cretaceous
       stage:
         - Campanian
-      from_ma: 76.0
+      from_ma: 76
       to_ma: 72.1
     location:
       country: MN
@@ -61,11 +61,12 @@ species:
         - 43.50032
         - 101.130188
     holotype:
-      specimen_id: [ ZPAL MgD-I/111 ]
+      specimen_id:
+        - ZPAL MgD-I/111
       specimen_type: holotype
       institution: ZPAL
-      material: Partial skull preserving most of one side of the postfrontal
-        skull roof, including the sagittal midline and the braincase
+      material: Partial skull preserving most of one side of the postfrontal skull
+        roof, including the sagittal midline and the braincase
       completeness: fragmentary
     size:
       hip_height_m:
@@ -79,11 +80,80 @@ species:
         max: 3000
     erected_in: maryańska1977a
     described_in: penkalski2016a
+  - name: Tarchia teresae
+    etymology: Honors Teresa Maryańska, in recognition of her work on Asian
+      dinosaurs.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Maastrichtian
+      from_ma: 71
+      to_ma: 69
+    location:
+      country: MN
+      region: Omnogov
+      formation: Nemegt
+      locality: Hermiin Tsav I
+    holotype:
+      specimen_id:
+        - PIN 3142/250
+      specimen_type: holotype
+      institution: PIN
+      material: Skull, mandibles, and postcranial material.
+    diagnostic_features:
+      - Accessory postorbital osteoderm not fused to the skull roof (fused in T.
+        kielanae).
+      - Quadrate and paroccipital process unfused.
+      - Skull roof over the postfrontal region deeply sculptured.
+      - Large, bifurcated opening for cranial nerves IX-XII.
+    erected_in: penkalski2017a
+  - name: Tarchia tumanovae
+    etymology: Honors Tatiana Tumanova, for her contributions to understanding
+      Mongolian ankylosaurs.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Maastrichtian
+      from_ma: 71
+      to_ma: 69
+    location:
+      country: MN
+      region: Omnogov
+      formation: Nemegt
+      locality: Hermiin Tsav
+    holotype:
+      specimen_id:
+        - MPC-D 100/1353
+      specimen_type: holotype
+      institution: MPC
+      material: Well-preserved skull; dorsal, sacral, and caudal vertebrae; sixteen
+        dorsal ribs; ilia; a partial ischium; free osteoderms; and a tail club.
+    diagnostic_features:
+      - Single, relatively bulbous internarial caputegulum that does not reach
+        the rostral tip of the beak.
+      - Basioccipital foramen moderate-sized (unlike T. kielanae and T. teresae).
+      - Quadrate-quadratojugal region situated anteriorly (unlike T. teresae).
+      - Quadrate unfused to the exoccipital (fused in T. kielanae).
+      - Interpterygoid vacuity visible in occipital view (not visible in T.
+        teresae).
+    erected_in: park2021a
 references:
   - id: maryańska1977a
   - id: penkalski2016a
-    notes: Redescribes the holotype skull of Tarchia kielanae and provides a
-      revised cranial diagnosis, confirming it as valid and distinct from
-      Saichania and Minotaurasaurus.
+    notes: Redescribes the holotype skull of Tarchia kielanae and provides a revised
+      cranial diagnosis, confirming it as valid and distinct from Saichania and
+      Minotaurasaurus.
   - id: jones2026a
     notes: Source of the hip height estimate, and the appearance features.
+  - id: penkalski2017a
+    notes: Revises the cranial morphology and taxonomic status of Tarchia and
+      erects T. teresae on PIN 3142/250 from the Nemegt Formation of Mongolia.
+  - id: park2021a
+    notes: Erects Tarchia tumanovae on the partial skeleton MPC-D 100/1353 from
+      the Nemegt Formation (Hermiin Tsav) of Mongolia.
