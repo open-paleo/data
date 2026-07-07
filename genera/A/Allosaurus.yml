@@ -1,6 +1,8 @@
 genus: Allosaurus
 parent: Allosauroidea
-etymology: From Greek 'allos' meaning 'different' or 'other' and 'sauros' meaning 'lizard'; meaning 'different lizard', alluding to its lightweight vertebrae
+etymology: From Greek 'allos' meaning 'different' or 'other' and 'sauros'
+  meaning 'lizard'; meaning 'different lizard', alluding to its lightweight
+  vertebrae
 pronunciation:
   ipa: /ˌæləˈsɔːrəs/
   phonetic: AL-o-SAWR-us
@@ -50,30 +52,40 @@ identifiers:
 synonyms:
   - name: Antrodemus
     type: junior subjective
-    reason: Although described before Allosaurus, the type material is too poor to be diagnostic; Allosaurus is given priority and Antrodemus treated as a junior synonym.
+    reason: Although described before Allosaurus, the type material is too poor to
+      be diagnostic; Allosaurus is given priority and Antrodemus treated as a
+      junior synonym.
   - name: Wyomingraptor
     type: nomen nudum
-    reason: Coined by an anonymous caller on Dr. Bob's Dinofacts radio show; never officially described in scientific literature.
+    reason: Coined by an anonymous caller on Dr. Bob's Dinofacts radio show; never
+      officially described in scientific literature.
   - name: Labrosaurus
     type: junior subjective
     reason: Type material is now considered indistinguishable from Allosaurus.
   - name: Creosaurus
     type: junior subjective
-    reason: "Williston (1901) noted that Marsh had never adequately distinguished Creosaurus from Allosaurus; subsequent work has confirmed the synonymy."
+    reason: Williston (1901) noted that Marsh had never adequately distinguished
+      Creosaurus from Allosaurus; subsequent work has confirmed the synonymy.
   - name: Apatodon
     type: possible subjective
-    reason: Possible junior subjective synonym of Allosaurus; identification is tentative. Per Olshevsky's Dinosaur Genera List.
+    reason: Possible junior subjective synonym of Allosaurus; identification is
+      tentative. Per Olshevsky's Dinosaur Genera List.
   - name: Madsenius
     type: nomen nudum
-    reason: Informal name; never met ICZN requirements for formal publication and is treated as referable to Allosaurus. Per Olshevsky's Dinosaur Genera List.
+    reason: Informal name; never met ICZN requirements for formal publication and is
+      treated as referable to Allosaurus. Per Olshevsky's Dinosaur Genera List.
 iczn_rulings:
   - type: type-specimen
     ruling: iczn2023a
     petition: paulcarpenter2010a
-    notes: Designated USNM V 4734 as the neotype of Allosaurus fragilis, conserving usage (Opinion 2486, Case 3506); replaces the non-diagnostic original syntype YPM 1930.
+    notes: Designated USNM V 4734 as the neotype of Allosaurus fragilis, conserving
+      usage (Opinion 2486, Case 3506); replaces the non-diagnostic original
+      syntype YPM 1930.
 species:
   - name: Allosaurus fragilis
-    etymology: "From Latin 'fragilis' meaning 'fragile', referring to the lightweight construction features of the vertebrae that Othniel Charles Marsh noted when describing the species in 1877."
+    etymology: From Latin 'fragilis' meaning 'fragile', referring to the lightweight
+      construction features of the vertebrae that Othniel Charles Marsh noted
+      when describing the species in 1877.
     status: valid
     type_species: true
     period:
@@ -93,55 +105,121 @@ species:
         - 41.893101
         - -106.041
     holotype:
-      specimen_id: [USNM V 4734]
+      specimen_id:
+        - USNM V 4734
       specimen_type: neotype
       institution: USNM
-      material: Nearly complete skeleton including the skull and lower jaws,
-        presacral vertebrae, a complete sacrum, about thirty caudal vertebrae,
-        the pelvis, ribs, and all four limbs and feet.
+      material: Nearly complete skeleton including the skull and lower jaws, presacral
+        vertebrae, a complete sacrum, about thirty caudal vertebrae, the pelvis,
+        ribs, and all four limbs and feet.
       completeness: complete
     size:
       length_m:
         min: 8.5
         max: 8.5
       weight_kg:
-        min: 6000.0
-        max: 6000.0
+        min: 6000
+        max: 6000
     erected_in: marsh1877c
     described_in: gilmore1920a
     synonyms:
       - name: Epanterias amplexus
         type: junior subjective
-        reason: Based on AMNH 5767; generally treated as a junior synonym of Allosaurus fragilis, though debate persists. Epanterias is also widely considered nomen dubium due to lack of diagnostic features.
+        reason: Based on AMNH 5767; generally treated as a junior synonym of Allosaurus
+          fragilis, though debate persists. Epanterias is also widely considered
+          nomen dubium due to lack of diagnostic features.
+  - name: Allosaurus jimmadseni
+    etymology: Honors James H. Madsen Jr., for his work excavating, preparing,
+      and curating Cleveland-Lloyd Allosaurus material.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Jurassic
+      stage:
+        - Kimmeridgian
+      from_ma: 157.3
+      to_ma: 152.8
+    location:
+      country: US
+      region: Utah
+      formation: Morrison
+      member: Salt Wash
+      locality: Dinosaur National Monument (locality DNM 116)
+    holotype:
+      specimen_id:
+        - DINO 11541
+      specimen_type: holotype
+      institution: DINO
+      material: "Nearly complete articulated skeleton: left half of skull with
+        occluded mandible, cervical-caudal vertebral column, ribs, gastral
+        basket, pectoral girdle and forelimb, complete pelvis, hindlimbs, and
+        partial pes."
+      completeness: complete
+    diagnostic_features:
+      - Ventral margin of the jugal is virtually straight, lacking the
+        pronounced sigmoidal convexity present in A. fragilis
+      - Nasals bear paired, blade-like crests along their lateral margins
+        forming a pronounced nasolacrimal crest, absent in A. fragilis
+      - A row of neurovascular foramina pierces the medioventral wall of the
+        maxillary antorbital fossa
+      - Relatively taller lacrimal horns than in A. fragilis
+      - Straight posteroventral jugal ramus of the maxilla where it articulates
+        with the jugal, rather than the pronounced ventral deflection seen in A.
+        fragilis
+      - Axial intercentrum is rotated dorsally and has a flared rim in lateral
+        view
+    erected_in: chure2020a
 notable_specimens:
-  - nickname: "Big Al"
-    specimen_id: [MOR 693]
+  - nickname: Big Al
+    specimen_id:
+      - MOR 693
     institution: MOR
     category: iconic
-    significance: "A 95 percent complete, partially articulated subadult, one of the most famous Allosaurus specimens. Renowned for its 19 broken or infected bones, including a long-lived foot infection that may have contributed to its death; later referred to A. jimmadseni."
+    significance: A 95 percent complete, partially articulated subadult, one of the
+      most famous Allosaurus specimens. Renowned for its 19 broken or infected
+      bones, including a long-lived foot infection that may have contributed to
+      its death; later referred to A. jimmadseni.
     discovered:
       year: 1991
-      by: "Kirby Siber"
-    references: [chure2020a]
-  - nickname: "Big Al II"
-    specimen_id: [SMA 0005]
+      by: Kirby Siber
+    references:
+      - chure2020a
+  - nickname: Big Al II
+    specimen_id:
+      - SMA 0005
     institution: SMA
     category: exceptional-preservation
-    significance: "A second well-preserved Allosaurus from Howe Ranch. Preserves a 20 by 20 centimeter skin impression at the base of the tail showing large scales up to 2 centimeters across, though the scales resemble sauropod skin and associated non-theropod remains cast some doubt on the attribution."
-    references: [chure2020a]
-  - specimen_id: [AMNH 5753]
+    significance: A second well-preserved Allosaurus from Howe Ranch. Preserves a 20
+      by 20 centimeter skin impression at the base of the tail showing large
+      scales up to 2 centimeters across, though the scales resemble sauropod
+      skin and associated non-theropod remains cast some doubt on the
+      attribution.
+    references:
+      - chure2020a
+  - specimen_id:
+      - AMNH 5753
     institution: AMNH
     category: historic
-    significance: "Found in 1879 but left unpacked until 1903, when it proved to be one of the most complete theropod specimens then known. Put on view in 1908 as the first free-standing mount of a theropod dinosaur, famously posed as if scavenging an Apatosaurus, though never scientifically described."
+    significance: Found in 1879 but left unpacked until 1903, when it proved to be
+      one of the most complete theropod specimens then known. Put on view in
+      1908 as the first free-standing mount of a theropod dinosaur, famously
+      posed as if scavenging an Apatosaurus, though never scientifically
+      described.
     discovered:
       year: 1879
-      by: "H. F. Hubbell"
-    references: [breithaupt1999a]
-  - specimen_id: [AMNH 680]
+      by: H. F. Hubbell
+    references:
+      - breithaupt1999a
+  - specimen_id:
+      - AMNH 680
     institution: AMNH
     category: largest-individual
-    significance: "The largest definitive Allosaurus specimen, estimated at about 9.7 meters long and 2.3 to 2.7 tonnes, used to anchor maximum-size estimates for the genus."
-    references: [chure2000a]
+    significance: The largest definitive Allosaurus specimen, estimated at about 9.7
+      meters long and 2.3 to 2.7 tonnes, used to anchor maximum-size estimates
+      for the genus.
+    references:
+      - chure2000a
 references:
   - id: marsh1877c
   - id: gilmore1920a
@@ -152,6 +230,8 @@ references:
     notes: Ph.D. dissertation.
   - id: paulcarpenter2010a
   - id: chure2020a
+    notes: Formally erects Allosaurus jimmadseni on holotype DINO 11541 from the
+      lower Morrison Formation; source of the species diagnosis.
   - id: iczn2023a
   - id: paul2024a
     notes: Source of the appearance features.
