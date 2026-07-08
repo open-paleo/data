@@ -40,7 +40,7 @@ identifiers:
     id: "4433559"
 species:
   - name: Saurornitholestes langstoni
-    etymology: "Named for Wann Langston, Jr., a prominent Canadian paleontologist."
+    etymology: Named for Wann Langston, Jr., a prominent Canadian paleontologist.
     status: valid
     type_species: true
     period:
@@ -60,12 +60,13 @@ species:
         - 50.748589
         - -111.406532
     holotype:
-      specimen_id: [ TMP 1974.10.5 ]
+      specimen_id:
+        - TMP 1974.10.5
       specimen_type: holotype
       institution: TMP
       material: Associated remains of incomplete skeleton including both frontals,
-        left ectopterygoid, left quadrate, two teeth, two vertebrae, gastralia, rib
-        fragments, metacarpal, phalanges and unguals of left manus.
+        left ectopterygoid, left quadrate, two teeth, two vertebrae, gastralia,
+        rib fragments, metacarpal, phalanges and unguals of left manus.
       completeness: fragmentary
     size:
       length_m:
@@ -78,7 +79,41 @@ species:
         min: 0.6
         max: 0.6
     erected_in: sues1978a
+  - name: Saurornitholestes sullivani
+    etymology: Honors Robert M. Sullivan, who discovered the holotype and whose
+      work advanced study of the Late Cretaceous San Juan Basin.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Campanian
+      from_ma: 73.4
+      to_ma: 73
+    location:
+      country: US
+      region: New Mexico
+      formation: Kirtland
+      member: De-na-zin
+      locality: Hunter Wash (SMP locality 311), San Juan Basin
+    holotype:
+      specimen_id:
+        - SMP VP-1270
+      specimen_type: holotype
+      institution: SMP
+      material: A nearly complete, slightly water-worn left frontal
+    diagnostic_features:
+      - Frontal more constricted anteriorly
+      - Orbital rim deeper and less strongly demarcated
+      - Olfactory bulb surface deeper and more prominent
+      - Ridge between the olfactory bulb and cerebral hemisphere surfaces more
+        pronounced and longer ventrally
+      - Frontal-frontal sutural surface more robust
+      - Frontal slightly smaller overall yet more robust
+    erected_in: jasinski2015a
 references:
   - id: sues1978a
   - id: paul2024b
     notes: Source of the appearance features.
+  - id: jasinski2015a
