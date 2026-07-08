@@ -25,8 +25,8 @@ diagnostic_features:
   - Modest bumpy ornamentation covering much of the lateral surface of the
     jugal, resembling that seen on the jugals of pachycephalosaurs.
   - Excavation on the lateral surface of the ischiadic peduncle of the ilium.
-  - Shaft and proximal end of metatarsal I strongly reduced, though the
-    distal condyle remains well formed.
+  - Shaft and proximal end of metatarsal I strongly reduced, though the distal
+    condyle remains well formed.
 identifiers:
   - source: pbdb
     id: "55575"
@@ -36,8 +36,8 @@ identifiers:
     id: "4823223"
 species:
   - name: Archaeoceratops oshimai
-    etymology: "Named for Mr. Oshima, director of the Chunichi-Shinbun of Japan, who
-      supported the Sino-Japan Silk Road Dinosaur Expedition."
+    etymology: Named for Mr. Oshima, director of the Chunichi-Shinbun of Japan, who
+      supported the Sino-Japan Silk Road Dinosaur Expedition.
     status: valid
     type_species: true
     period:
@@ -55,13 +55,14 @@ species:
         - 41.575001
         - 97.583336
     holotype:
-      specimen_id: [ IVPP V 11114 ]
+      specimen_id:
+        - IVPP V 11114
       specimen_type: holotype
       institution: IVPP
-      material: "Well-preserved, nearly complete skull and jaws; an
-        articulated partial vertebral column of one cervical, twelve dorsal,
-        and six sacral vertebrae; and a partial pelvis including both ilia,
-        both pubes, and a partial ischium."
+      material: Well-preserved, nearly complete skull and jaws; an articulated partial
+        vertebral column of one cervical, twelve dorsal, and six sacral
+        vertebrae; and a partial pelvis including both ilia, both pubes, and a
+        partial ischium.
     size:
       length_m:
         min: 0.9
@@ -71,11 +72,50 @@ species:
         max: 10
     erected_in: dong1997c
     described_in: you2003d
+  - name: Archaeoceratops yujingziensis
+    etymology: Named for the Yujingzi Basin, where the holotype was discovered.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Early Cretaceous
+      stage:
+        - Aptian
+        - Albian
+      from_ma: 125
+      to_ma: 100.5
+    location:
+      country: CN
+      region: Gansu
+      formation: Xinminpu Group
+      locality: Yujingzi Basin, Mazongshan area
+    holotype:
+      specimen_id:
+        - CAGS-IG-VD-003
+      specimen_type: holotype
+      institution: IGCAGS
+      material: Partial skull (right premaxilla to jugal), right mandible, dorsal
+        neural arch, sacral centrum, three proximal caudals, partial right
+        scapula, both femora, two metatarsals, three pedal phalanges.
+    size:
+      length_m:
+        min: 0.55
+        max: 0.55
+    diagnostic_features:
+      - Laterally deflected rostral end of the maxilla, producing a spoon-shaped
+        premaxillary beak with premaxillary teeth lateral to the maxillary tooth
+        row
+      - Striations on the enameled premaxillary teeth, combined with their
+        ventrolateral orientation
+      - Primary ridge absent on the maxillary teeth
+      - Horizontal shelf on the dentary teeth
+    erected_in: you2010a
 references:
   - id: dong1997c
   - id: you2003d
-    notes: Detailed redescription of the holotype and paratype of
-      Archaeoceratops oshimai; recovers the genus as the sister group to all
-      Late Cretaceous Neoceratopsia.
+    notes: Detailed redescription of the holotype and paratype of Archaeoceratops
+      oshimai; recovers the genus as the sister group to all Late Cretaceous
+      Neoceratopsia.
   - id: jones2026a
     notes: Source of the appearance features.
+  - id: you2010a
