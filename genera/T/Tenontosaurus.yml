@@ -3,8 +3,8 @@ parent: Rhabdodontomorpha
 pronunciation:
   phonetic: ti-NON-tuh-SOR-uhs
   ipa: /tɪˌnɒntəˈsɔːrəs/
-etymology: "From Greek tenon ('sinew') and sauros ('lizard'), meaning 'sinew
-  lizard', referring to the bony tendons stiffening its back and tail"
+etymology: From Greek tenon ('sinew') and sauros ('lizard'), meaning 'sinew
+  lizard', referring to the bony tendons stiffening its back and tail
 description: Tenontosaurus is a genus of iguanodontian ornithopod dinosaur. It
   had an unusually long, broad tail, which like its back was stiffened with a
   network of bony tendons. The genus is known from the late Aptian to Albian
@@ -17,16 +17,14 @@ description: Tenontosaurus is a genus of iguanodontian ornithopod dinosaur. It
   Twin Mountains Formation of Parker County, Texas.
 dispute:
   summary: >
-    Tenontosaurus is recovered as an early-diverging rhabdodontomorph
-    (with Iani and Convolosaurus) by the recent comprehensive analyses
-    (Fonseca and others, 2024; Czepiński and Madzia, 2025), but earlier
-    work and Jones (2026) place it as a basal iguanodontian outside
-    Rhabdodontomorpha.
+    Tenontosaurus is recovered as an early-diverging rhabdodontomorph (with Iani
+    and Convolosaurus) by the recent comprehensive analyses (Fonseca and others,
+    2024; Czepiński and Madzia, 2025), but earlier work and Jones (2026) place
+    it as a basal iguanodontian outside Rhabdodontomorpha.
   history:
-    - date: "2026-06-29"
-      note: Placed at Rhabdodontomorpha following the most recent
-        comprehensive analyses; the basal-Iguanodontia alternative
-        reflected, not adopted.
+    - date: 2026-06-29
+      note: Placed at Rhabdodontomorpha following the most recent comprehensive
+        analyses; the basal-Iguanodontia alternative reflected, not adopted.
 diet: herbivore
 locomotion: bipedal
 paleoenvironment:
@@ -73,9 +71,9 @@ synonyms:
       Tenontosaurus.
 species:
   - name: Tenontosaurus tilletti
-    etymology: "Named for the Lloyd Tillett family, who provided field parties from
+    etymology: Named for the Lloyd Tillett family, who provided field parties from
       Yale University with assistance and hospitality throughout their
-      expeditions in the Big Horn Basin."
+      expeditions in the Big Horn Basin.
     status: valid
     type_species: true
     period:
@@ -97,7 +95,8 @@ species:
         - 46.337502
         - -109.685501
     holotype:
-      specimen_id: [ AMNH 3040 ]
+      specimen_id:
+        - AMNH 3040
       specimen_type: holotype
       institution: AMNH
       material: Partial skeleton lacking skull and forelimbs.
@@ -107,25 +106,76 @@ species:
         min: 1.6
         max: 1.6
       length_m:
-        min: 6.0
-        max: 8.0
+        min: 6
+        max: 8
       weight_kg:
         min: 600
         max: 1019
     erected_in: ostrom1970a
+  - name: Tenontosaurus dossi
+    etymology: Honors James and Dorothy Doss, who donated the specimens from
+      their ranch.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Early Cretaceous
+      stage:
+        - Aptian
+      from_ma: 118
+      to_ma: 113
+    location:
+      country: US
+      region: Texas
+      formation: Twin Mountains
+      locality: Doss Ranch, Parker County
+    holotype:
+      specimen_id:
+        - FWMSH 93B1
+      specimen_type: holotype
+      institution: FWMSH
+      material: Skull and nearly complete postcranial skeleton, including cervical,
+        dorsal, sacral and caudal vertebrae with ossified tendons, pectoral and
+        pelvic girdles, and fore- and hindlimb elements.
+    size:
+      length_m:
+        min: 7
+        max: 8
+    diagnostic_features:
+      - One or more small premaxillary teeth present (never observed in T.
+        tilletti)
+      - Ulnare and intermedium very tightly interlocked, tighter than the fit
+        seen in T. tilletti
+      - Ilium lacks a laterally expressed brevis shelf, unlike T. tilletti
+      - Anterior pubic blade smoothly convex ventrally, lacking the bulge or
+        kink seen in most T. tilletti specimens
+      - Postpubis as long as the ischium, a primitive condition relative to the
+        shortened postpubis of T. tilletti
+      - Metatarsal V more than 30% of metatarsal III length, versus less than
+        30% in adult T. tilletti
+    paleoenvironment:
+      - coastal
+    erected_in: winkler1997a
 notable_specimens:
-  - specimen_id: [OMNH 34784]
+  - specimen_id:
+      - OMNH 34784
     institution: OMNH
     species: Tenontosaurus tilletti
     category: reproductive
-    significance: "A specimen preserving medullary bone tissue in the femur and tibia, indicating a reproductively active female that had not reached full adult size, dying at about age 8; evidence that dinosaurs reached reproductive maturity before maximum size."
-    references: [lee2008a]
+    significance: A specimen preserving medullary bone tissue in the femur and
+      tibia, indicating a reproductively active female that had not reached full
+      adult size, dying at about age 8; evidence that dinosaurs reached
+      reproductive maturity before maximum size.
+    references:
+      - lee2008a
 references:
   - id: lee2008a
   - id: ostrom1970a
   - id: jones2026a
     notes: Source of the hip height estimate.
   - id: fonseca2024a
-    notes: Recovered Tenontosaurus as an early-diverging rhabdodontomorph with Iani and Convolosaurus.
+    notes: Recovered Tenontosaurus as an early-diverging rhabdodontomorph with Iani
+      and Convolosaurus.
   - id: czepiński2025a
     notes: Recovered Tenontosaurus as an early-diverging rhabdodontomorph.
+  - id: winkler1997a
