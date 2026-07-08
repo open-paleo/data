@@ -40,8 +40,8 @@ identifiers:
     id: Q943775
 species:
   - name: Gastonia burgei
-    etymology: "Named for Donald L. Burge, director of the College of Eastern Utah
-      Prehistoric Museum."
+    etymology: Named for Donald L. Burge, director of the College of Eastern Utah
+      Prehistoric Museum.
     status: valid
     type_species: true
     period:
@@ -70,17 +70,55 @@ species:
         min: 0.9
         max: 0.9
     holotype:
-      specimen_id: [ CEUM 1307 ]
+      specimen_id:
+        - CEUM 1307
       specimen_type: holotype
       institution: CEUM
       material: Skull; from limestone layer in bonebed with disarticulated cranial and
-        postcranial elements of minimum four polacanthids, an iguanodontid, and the
-        type of Utahraptor ostrommaysorum.
+        postcranial elements of minimum four polacanthids, an iguanodontid, and
+        the type of Utahraptor ostrommaysorum.
       completeness: partial
     erected_in: kirkland1998b
+  - name: Gastonia lorriemcwhinneyae
+    etymology: Honors Lorrie McWhinney, who discovered the Gastonia bone bed
+      (Lorrie's Site) in 1999.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Early Cretaceous
+      stage:
+        - Aptian
+      from_ma: 125
+      to_ma: 113
+    location:
+      country: US
+      region: Utah
+      formation: Cedar Mountain
+      member: Ruby Ranch
+      locality: Lorrie's Site (DMNH Locality 2183), Grand County
+    holotype:
+      specimen_id:
+        - DMNH 49877
+      specimen_type: holotype
+      institution: DMNH
+      material: Skull roof, 23.8 cm wide across the postorbital horn cores and
+        23.5 cm long anteroposteriorly.
+    diagnostic_features:
+      - Flat skull roof, not domed (domed in G. burgei)
+      - Short paroccipital processes, proportionally less expanded distally
+      - Scapular blade parallel-sided, only slightly expanded distally in adults
+      - Postacetabular process of ilium only 36% the length of the preacetabular
+        process (56% in G. burgei)
+      - Ischium smoothly curved ventromedially, lacking the midshaft kink
+        present in G. burgei
+      - Basisphenoid less expanded distally and proportionally shorter relative
+        to basicranial length (more expanded and longer in G. burgei)
+    erected_in: kinneer2016a
 references:
   - id: kirkland1998b
   - id: paul2024a
     notes: Source of the body length and mass estimates.
   - id: jones2026a
     notes: Source of the hip height estimate, and the appearance features.
+  - id: kinneer2016a
