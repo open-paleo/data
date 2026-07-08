@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-07-08T21:00:24.992Z",
+    "built_at": "2026-07-08T21:25:55.556Z",
     "clade_count": 188,
     "genus_count": 1397,
     "license": "CC-BY-4.0",
@@ -207622,49 +207622,9 @@
       ],
       "synonyms": [
         {
-          "name": "Ceratops horridus",
-          "type": "junior subjective",
-          "reason": "Originally named by Marsh (1888) as Ceratops horridus and transferred by Marsh (1889) to the new genus as Triceratops horridus."
-        },
-        {
-          "name": "Triceratops flabellatus",
-          "type": "junior subjective",
-          "reason": "Sunk into T. horridus by Forster (1996); no consistent morphological characters distinguish it from T. horridus."
-        },
-        {
-          "name": "Triceratops serratus",
-          "type": "junior subjective",
-          "reason": "Sunk into T. horridus by Forster (1996)."
-        },
-        {
-          "name": "Triceratops elatus",
-          "type": "junior subjective",
-          "reason": "Sunk into T. horridus by Forster (1996)."
-        },
-        {
-          "name": "Triceratops calicornis",
-          "type": "junior subjective",
-          "reason": "Sunk into T. horridus by Forster (1996)."
-        },
-        {
-          "name": "Triceratops obtusus",
-          "type": "junior subjective",
-          "reason": "Sunk into T. horridus by Forster (1996)."
-        },
-        {
-          "name": "Triceratops brevicornis",
-          "type": "junior subjective",
-          "reason": "Sunk into T. prorsus by Forster (1996); shares the derived characters (closed frontal fontanelle, short supraorbital horns, short rounded rostrum) of that species."
-        },
-        {
           "name": "Ugrosaurus",
           "type": "junior subjective",
           "reason": "Generally interpreted in subsequent literature (Forster 1993; Lehman 1998) as a juvenile or pathological Triceratops horridus."
-        },
-        {
-          "name": "Triceratops ingens",
-          "type": "nomen nudum",
-          "reason": "Unpublished Marsh manuscript name, mentioned by Lull (1915) without description or diagnosis (per Forster, 1996)."
         }
       ],
       "species": [
@@ -207713,8 +207673,88 @@
             "completeness": "partial"
           },
           "erected_in": "marsh1889a",
+          "synonyms": [
+            {
+              "name": "Ceratops horridus",
+              "type": "junior subjective",
+              "reason": "Original combination; named by Marsh (1888) as Ceratops horridus and transferred by Marsh (1889) to the new genus as Triceratops horridus."
+            },
+            {
+              "name": "Triceratops flabellatus",
+              "type": "junior subjective",
+              "reason": "Sunk into T. horridus by Forster (1996); no consistent morphological characters distinguish it. The genus Sterrholophus (Marsh, 1891) is based on the same material."
+            },
+            {
+              "name": "Triceratops serratus",
+              "type": "junior subjective",
+              "reason": "Sunk into T. horridus by Forster (1996)."
+            },
+            {
+              "name": "Triceratops elatus",
+              "type": "junior subjective",
+              "reason": "Sunk into T. horridus by Forster (1996)."
+            },
+            {
+              "name": "Triceratops calicornis",
+              "type": "junior subjective",
+              "reason": "Sunk into T. horridus by Forster (1996)."
+            },
+            {
+              "name": "Triceratops obtusus",
+              "type": "junior subjective",
+              "reason": "Sunk into T. horridus by Forster (1996)."
+            }
+          ],
           "authors": "Marsh, O. C.",
           "described": 1889
+        },
+        {
+          "name": "Triceratops prorsus",
+          "etymology": "From Latin 'prorsus' (straight forward), for the forward-directed nasal horn.",
+          "status": "valid",
+          "type_species": false,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Maastrichtian"
+            ],
+            "from_ma": 68,
+            "to_ma": 66
+          },
+          "location": {
+            "country": "US",
+            "region": "Wyoming",
+            "formation": "Lance",
+            "locality": "Niobrara County"
+          },
+          "holotype": {
+            "specimen_id": [
+              "YPM 1822"
+            ],
+            "specimen_type": "holotype",
+            "institution": "Yale Peabody Museum of Natural History",
+            "material": "Skull with closed frontal fontanelle, relatively short supraorbital horns, a long forward-inclined nasal horn, and a short, convexly rounded rostrum; basal skull length 88 cm."
+          },
+          "diagnostic_features": [
+            "Frontal fontanelle absent, closed by fusion of frontals and parietals",
+            "Supraorbital horns relatively short, horn length to basal skull length ratio 0.61 or less",
+            "Rostrum relatively deep and short, with a convexly rounded rostral margin",
+            "Nasal horn long, curved, and forward-inclined (30-50 degrees from vertical), extending anterior to the external nares",
+            "Massive horn cores with a narrow, extensive frill bearing broadly convex squamosals"
+          ],
+          "synonyms": [
+            {
+              "name": "Triceratops brevicornus",
+              "type": "junior subjective",
+              "reason": "Sunk into T. prorsus by Forster (1996); shares the derived characters (closed frontal fontanelle, short supraorbital horns, short rounded rostrum) of that species."
+            }
+          ],
+          "erected_in": "marsh1890b",
+          "described_in": "forster1996a",
+          "authors": "Marsh, O. C.",
+          "described": 1890
         }
       ],
       "notable_specimens": [
@@ -207911,6 +207951,19 @@
           "pages": "e32623",
           "doi": "10.1371/journal.pone.0032623",
           "notes": "Argued Torosaurus is distinct from Triceratops, rejecting the synonymy."
+        },
+        {
+          "id": "marsh1890b",
+          "authors": "Marsh, O. C.",
+          "year": 1890,
+          "title": "Description of new dinosaurian reptiles",
+          "journal": "American Journal of Science",
+          "publisher": "American Journal of Science (AJS)",
+          "volume": "s3-39",
+          "issue": "229",
+          "pages": "81-86",
+          "doi": "10.2475/ajs.s3-39.229.81",
+          "notes": "Names Triceratops prorsus, the second currently-accepted species of the genus."
         }
       ],
       "taxonomy": [
