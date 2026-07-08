@@ -42,8 +42,8 @@ identifiers:
     id: "4531644"
 species:
   - name: Agujaceratops mariscalensis
-    etymology: "Named for the Mariscal area of Big Bend National Park, Texas, where
-      the holotype was collected."
+    etymology: Named for the Mariscal area of Big Bend National Park, Texas, where
+      the holotype was collected.
     status: valid
     type_species: true
     period:
@@ -72,14 +72,52 @@ species:
         min: 1500
         max: 1500
     holotype:
-      specimen_id: [ UTEP P.37.7.086 ]
+      specimen_id:
+        - UTEP P.37.7.086
       specimen_type: holotype
       institution: UTEP
-      material: Braincase, left supraorbital horncore, left maxilla, and right dentary;
-        collected from the upper part of the formation.
+      material: Braincase, left supraorbital horncore, left maxilla, and right
+        dentary; collected from the upper part of the formation.
       completeness: fragmentary
     erected_in: lucas2006a
+  - name: Agujaceratops mavericus
+    etymology: From 'maverick' (an unbranded range animal or lone dissenter); refers
+      to the Old Maverick Road, near where the holotype was collected.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Campanian
+      from_ma: 83.6
+      to_ma: 72.1
+    location:
+      country: US
+      region: Texas
+      formation: Aguja
+      member: Upper Shale
+      locality: Rattlesnake Mountain
+    holotype:
+      specimen_id:
+        - TMM 43098-1
+      specimen_type: holotype
+      institution: TMM
+      material: Nearly complete, disarticulated skull (the 'Rattlesnake Mt exemplar'),
+        including an intact right postorbital horncore and squamosal, but
+        lacking preserved parietal remains.
+    diagnostic_features:
+      - Squamosal relatively elongate (width/length ratio about 0.36, versus
+        0.44-0.55 in A. mariscalensis)
+      - Up to 10 episquamosals or corresponding marginal undulations of the
+        squamosal (versus six in A. mariscalensis)
+      - Episquamosals small and elliptical in cross section (large and
+        triangular in A. mariscalensis)
+      - Postorbital horncores with low basal circumference and low taper
+        relative to length
+    erected_in: lehman2016b
 references:
   - id: lucas2006a
   - id: jones2026a
     notes: Source of the hip height estimate, and the appearance features.
+  - id: lehman2016b
