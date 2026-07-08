@@ -788,6 +788,97 @@ for (const [filePath, doc] of genusParsed)
     }
 }
 
+// 10d. Self-contained references — every reference pointer within a genus or
+// clade (erected_in, described_in, iczn_rulings.ruling/petition) must also
+// appear in that file's own `references` block, so a consumer can resolve any
+// citation from the single inflated record without a separate lookup. The
+// build inflates only the `references` list, so a pointer absent from it would
+// dangle in the output. (notable_specimens references are already held to this
+// rule by the Notable specimens check.)
+startCheck("Self-contained references");
+
+/**
+ * Reports any pointer id that is missing from a record's own references block.
+ *
+ * @param filePath - Absolute path to the YAML file under inspection.
+ * @param localIds - The set of reference ids listed in the record's references.
+ * @param pointers - Labeled pointer ids to verify (label describes the field).
+ */
+function checkSelfContainedReferences(
+    filePath: string,
+    localIds: Set<string>,
+    pointers: Array<[string, string | undefined]>): void
+{
+    for (const [label, id] of pointers)
+    {
+        if (id && !localIds.has(id))
+        {
+            checkError(
+                "Self-contained references",
+                filePath,
+                `${label} '${id}' is not listed in this file's own references block (add it so the record resolves standalone)`);
+        }
+    }
+}
+
+for (const [filePath, doc] of genusParsed)
+{
+    if (!doc)
+    {
+        continue;
+    }
+
+    const localIds = new Set(
+        (doc.references ?? [])
+            .map((reference) => reference?.id)
+            .filter((id): id is string => typeof id === "string"));
+
+    const pointers: Array<[string, string | undefined]> = [["erected_in", doc.erected_in]];
+
+    for (const species of doc.species ?? [])
+    {
+        if (!species)
+        {
+            continue;
+        }
+
+        const speciesLabel = species.name ?? "?";
+        pointers.push([`species '${speciesLabel}': erected_in`, species.erected_in]);
+        pointers.push([`species '${speciesLabel}': described_in`, species.described_in]);
+    }
+
+    for (const ruling of doc.iczn_rulings ?? [])
+    {
+        if (!ruling)
+        {
+            continue;
+        }
+
+        pointers.push(["iczn_rulings: ruling", ruling.ruling]);
+        pointers.push(["iczn_rulings: petition", ruling.petition]);
+    }
+
+    checkSelfContainedReferences(filePath, localIds, pointers);
+}
+
+for (const [filePath, doc] of cladeParsed)
+{
+    if (!doc)
+    {
+        continue;
+    }
+
+    const localIds = new Set(
+        (doc.references ?? [])
+            .map((reference) => reference?.id)
+            .filter((id): id is string => typeof id === "string"));
+
+    checkSelfContainedReferences(
+        filePath,
+        localIds,
+        [["erected_in", doc.erected_in], ["described_in", doc.described_in]]);
+}
+
 // 11. Reference store integrity — each references/<letter>/<id>.yml file must
 // parse, carry an `id` equal to its filename (NFC + lowercase), and hold the
 // required bibliographic fields. This is the single source of truth for
@@ -1133,6 +1224,16 @@ for (const [filePath, doc] of genusParsed)
                 filePath,
                 `species '${species.name ?? "?"}': 'formation' must be a string, got ${typeof formation} (${JSON.stringify(formation)})`);
         }
+
+        const member = species?.location?.member;
+
+        if (member !== undefined && typeof member !== "string")
+        {
+            checkError(
+                "Location completeness",
+                filePath,
+                `species '${species.name ?? "?"}': 'member' must be a string, got ${typeof member} (${JSON.stringify(member)})`);
+        }
     }
 }
 
@@ -1429,20 +1530,20 @@ for (const [filePath, doc] of genusParsed)
                     `species '${species.name ?? "?"}': invalid completeness '${species.completeness}' (must be one of: ${[...allowedCompleteness].join(", ")})`);
             }
 
-            const holotypeCompleteness = species?.holotype?.completeness;
-            if (holotypeCompleteness && !allowedCompleteness.has(holotypeCompleteness))
+            const typeSpecimenCompleteness = species?.type_specimen?.completeness;
+            if (typeSpecimenCompleteness && !allowedCompleteness.has(typeSpecimenCompleteness))
             {
                 checkError(
                     "Locomotion/completeness compliance",
                     filePath,
-                    `species '${species.name ?? "?"}': invalid holotype.completeness '${holotypeCompleteness}' (must be one of: ${[...allowedCompleteness].join(", ")})`);
+                    `species '${species.name ?? "?"}': invalid type_specimen.completeness '${typeSpecimenCompleteness}' (must be one of: ${[...allowedCompleteness].join(", ")})`);
             }
         }
     }
 }
 
 // 20. Holotype consistency
-startCheck("Holotype consistency");
+startCheck("Type specimen consistency");
 
 for (const [filePath, doc] of genusParsed)
 {
@@ -1453,12 +1554,12 @@ for (const [filePath, doc] of genusParsed)
 
     for (const species of doc.species)
     {
-        if (!species || !species.holotype)
+        if (!species || !species.type_specimen)
         {
             continue;
         }
 
-        const holotype = species.holotype;
+        const holotype = species.type_specimen;
         const speciesLabel = species.name ?? "?";
 
         // When holotype.status is set to a valid enum value, the block represents
@@ -1475,9 +1576,9 @@ for (const [filePath, doc] of genusParsed)
             if (!hasValidStatus)
             {
                 checkError(
-                    "Holotype consistency",
+                    "Type specimen consistency",
                     filePath,
-                    `species '${speciesLabel}': holotype present but missing 'specimen_id' (must be a non-empty array of catalogue numbers, or set 'status' to lost/destroyed/unknown)`);
+                    `species '${speciesLabel}': type specimen present but missing 'specimen_id' (must be a non-empty array of catalogue numbers, or set 'status' to lost/destroyed/unknown)`);
             }
         }
         else
@@ -1487,7 +1588,7 @@ for (const [filePath, doc] of genusParsed)
                 if (typeof value !== "string" || value.trim().length === 0)
                 {
                     checkError(
-                        "Holotype consistency",
+                        "Type specimen consistency",
                         filePath,
                         `species '${speciesLabel}': specimen_id[${index}] must be a non-empty string`);
                 }
@@ -1497,14 +1598,14 @@ for (const [filePath, doc] of genusParsed)
         if (!holotype.institution && !hasValidStatus)
         {
             checkError(
-                "Holotype consistency",
+                "Type specimen consistency",
                 filePath,
-                `species '${speciesLabel}': holotype present but missing 'institution'`);
+                `species '${speciesLabel}': type specimen present but missing 'institution'`);
         }
         else if (holotype.institution && !allowedInstitutionKeys.has(holotype.institution))
         {
             checkError(
-                "Holotype consistency",
+                "Type specimen consistency",
                 filePath,
                 `species '${speciesLabel}': institution '${holotype.institution}' is not a valid key in institutions.yaml`);
         }
@@ -1514,15 +1615,15 @@ for (const [filePath, doc] of genusParsed)
             if (!hasValidStatus)
             {
                 checkError(
-                    "Holotype consistency",
+                    "Type specimen consistency",
                     filePath,
-                    `species '${speciesLabel}': holotype present but missing 'specimen_type' (must be one of: ${[...allowedSpecimenTypes].join(", ")})`);
+                    `species '${speciesLabel}': type specimen present but missing 'specimen_type' (must be one of: ${[...allowedSpecimenTypes].join(", ")})`);
             }
         }
         else if (!allowedSpecimenTypes.has(holotype.specimen_type))
         {
             checkError(
-                "Holotype consistency",
+                "Type specimen consistency",
                 filePath,
                 `species '${speciesLabel}': invalid specimen_type '${holotype.specimen_type}' (must be one of: ${[...allowedSpecimenTypes].join(", ")})`);
         }
@@ -1544,7 +1645,7 @@ for (const [filePath, doc] of genusParsed)
             if (holotype.specimen_type === "syntype" && idCount < 2)
             {
                 checkError(
-                    "Holotype consistency",
+                    "Type specimen consistency",
                     filePath,
                     `species '${speciesLabel}': specimen_type 'syntype' requires at least 2 specimen_ids (got ${idCount})`);
             }
@@ -1553,9 +1654,9 @@ for (const [filePath, doc] of genusParsed)
         if (holotype.status !== undefined && !allowedHolotypeStatus.has(holotype.status))
         {
             checkError(
-                "Holotype consistency",
+                "Type specimen consistency",
                 filePath,
-                `species '${speciesLabel}': invalid holotype status '${holotype.status}' (must be one of: ${[...allowedHolotypeStatus].join(", ")})`);
+                `species '${speciesLabel}': invalid type-specimen status '${holotype.status}' (must be one of: ${[...allowedHolotypeStatus].join(", ")})`);
         }
     }
 }
@@ -2184,9 +2285,9 @@ for (const [filePath, doc] of allParsed)
                 checkAmericanEnglish(filePath, `${speciesLabel}.etymology`, species.etymology);
             }
 
-            if (species.holotype && typeof species.holotype.material === "string")
+            if (species.type_specimen && typeof species.type_specimen.material === "string")
             {
-                checkAmericanEnglish(filePath, `${speciesLabel}.holotype.material`, species.holotype.material);
+                checkAmericanEnglish(filePath, `${speciesLabel}.type_specimen.material`, species.type_specimen.material);
             }
 
             if (Array.isArray(species.synonyms))
@@ -2417,9 +2518,9 @@ for (const [filePath, doc] of allParsed)
                 checkCitationFormat(filePath, `${speciesLabel}.etymology`, species.etymology);
             }
 
-            if (species.holotype && typeof species.holotype.material === "string")
+            if (species.type_specimen && typeof species.type_specimen.material === "string")
             {
-                checkCitationFormat(filePath, `${speciesLabel}.holotype.material`, species.holotype.material);
+                checkCitationFormat(filePath, `${speciesLabel}.type_specimen.material`, species.type_specimen.material);
             }
 
             if (Array.isArray(species.synonyms))

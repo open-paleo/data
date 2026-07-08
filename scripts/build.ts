@@ -298,7 +298,7 @@ const institutionRegistry = loadInstitutionRegistry(path.join(root, "institution
 
 /**
  * Resolves institution abbreviation keys to display names across all
- * species holotype blocks. Mutates the genera records in place.
+ * species type_specimen blocks. Mutates the genera records in place.
  *
  * @param generaMap - The processed genera map.
  * @param registry - The institution registry keyed by abbreviation.
@@ -312,13 +312,13 @@ function resolveInstitutionKeys(
     {
         for (const species of genus.species ?? [])
         {
-            if (species.holotype?.institution)
+            if (species.type_specimen?.institution)
             {
-                const entry = registry[species.holotype.institution];
+                const entry = registry[species.type_specimen.institution];
 
                 if (entry)
                 {
-                    species.holotype.institution = entry.name;
+                    species.type_specimen.institution = entry.name;
                 }
             }
         }

@@ -125,7 +125,7 @@ decides per paper, every time:
 > hard to obtain (`<reason>`). Options:
 > 1. Try to fetch it
 > 2. Build a Wikipedia-fallback stub (description = Wikipedia
->    paragraph 1 verbatim; holotype block omitted; reference cited
+>    paragraph 1 verbatim; type_specimen block omitted; reference cited
 >    with metadata from secondary literature; gap logged in
 >    the corpus repo's `corpus-paper-report.md` §1)
 > 3. Defer this genus

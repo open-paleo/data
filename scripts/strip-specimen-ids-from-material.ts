@@ -1,7 +1,7 @@
 // Strip specimen catalog tokens from extraction `holotype_material`
 // fields. The catalog number is already stored as a structured field
-// (`species.holotype.specimen_id`) and the institution abbreviation
-// is stored separately (`species.holotype.institution` →
+// (`species.type_specimen.specimen_id`) and the institution abbreviation
+// is stored separately (`species.type_specimen.institution` →
 // `institutions.yaml`), so its presence in the free-text `material`
 // description is redundant.
 //

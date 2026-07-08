@@ -1,6 +1,6 @@
 ---
 name: update-genus
-description: Backfill paper-derived fields (species.holotype.material, diagnostic_features) on an EXISTING genus YAML from its describing paper in the local corpus. Use when the user wants to fill missing material/diagnosis for one or more genera that already exist in genera/, or to re-extract after a corpus paper was added/fixed. Not for creating new genera (use intake-genus for that).
+description: Backfill paper-derived fields (species.type_specimen.material, diagnostic_features) on an EXISTING genus YAML from its describing paper in the local corpus. Use when the user wants to fill missing material/diagnosis for one or more genera that already exist in genera/, or to re-extract after a corpus paper was added/fixed. Not for creating new genera (use intake-genus for that).
 user-invocable: true
 argument-hint: "<Genus> [citation_key]"
 allowed-tools: Bash Read Write Edit Glob Grep Agent
@@ -10,7 +10,7 @@ allowed-tools: Bash Read Write Edit Glob Grep Agent
 
 Fill paper-derived fields on an **existing** genus from a paper already
 in the local corpus (`$OPEN_PALEO_PAPERS_DIR/markdown/<key>.md`). Scope:
-`species.holotype.material` and top-level `diagnostic_features` (the same
+`species.type_specimen.material` and top-level `diagnostic_features` (the same
 fields the per-letter backfill handles). Existing values are never
 overwritten.
 

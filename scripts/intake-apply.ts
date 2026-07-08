@@ -17,7 +17,7 @@
 //   etymology_species      → genus.species[0].etymology
 //   pronunciation_ipa      → genus.pronunciation.ipa (overwrites bootstrap)
 //   pronunciation_phonetic → genus.pronunciation.phonetic (overwrites)
-//   holotype_*           → genus.species[0].holotype.{specimen_id,
+//   holotype_*           → genus.species[0].type_specimen.{specimen_id,
 //                          specimen_type, institution, material}
 //   diagnostic_features  → genus.diagnostic_features
 //   paleoenvironment     → genus.paleoenvironment
@@ -247,7 +247,7 @@ function applyExtraction(
 
         if (extraction.holotype_specimen_id || extraction.holotype_material)
         {
-            const holotypeBlock: Record<string, unknown> = (species.holotype as Record<string, unknown>) ?? {};
+            const holotypeBlock: Record<string, unknown> = (species.type_specimen as Record<string, unknown>) ?? {};
 
             if (extraction.holotype_specimen_id)
             {
@@ -273,7 +273,7 @@ function applyExtraction(
                 holotypeBlock.material = extraction.holotype_material;
             }
 
-            species.holotype = holotypeBlock;
+            species.type_specimen = holotypeBlock;
         }
 
         if (extraction.paleoenvironment && extraction.paleoenvironment.length > 0)

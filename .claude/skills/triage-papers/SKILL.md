@@ -112,7 +112,7 @@ PRIMARY bucket and put every other action the paper supports in `secondary`
 `gated: true` and capture the claim; for redescriptions, distinguish whether
 the new material is the holotype or referred specimens (`material_basis`) —
 this is critical because referred material must NOT be written into
-`holotype.material`.
+`type_specimen.material`.
 
 ## Step 5 — Resolve against the dataset, then assemble the worklist
 
@@ -142,7 +142,7 @@ and any `secondary` actions:
   `/update-genus <Genus>` (material + diagnosis; the classic case).
 - **📝 Redescription — referred material** (`material_basis: referred`/`none`)
   — `/update-genus <Genus>` **diagnosis only**. Do NOT add the new specimens
-  to `holotype.material` (that field is the type specimen only); the new
+  to `type_specimen.material` (that field is the type specimen only); the new
   referred specimen is a **`notable_specimens` candidate** (flag it). Note if
   the emended diagnosis depends on a novel/contested referral.
 - **🎨 Appearance / soft tissue** — `/update-genus <Genus>` (appearance

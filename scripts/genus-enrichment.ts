@@ -2088,7 +2088,7 @@ export function toGenusYaml(enriched: EnrichedGenus, reference: Record<string, s
             holotypeData.institution = enriched.holotype.institution;
         }
 
-        species.holotype = holotypeData;
+        species.type_specimen = holotypeData;
     }
 
     if (enriched.mass ?? enriched.bodyLength ?? enriched.hipHeight)

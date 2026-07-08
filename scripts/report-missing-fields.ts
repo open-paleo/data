@@ -16,7 +16,7 @@ const outputPath = path.join(root, "reports", "missing-fields.md");
  */
 type FieldCheck = {
     /**
-     * Human-readable field path (e.g. "species.holotype.specimen_id").
+     * Human-readable field path (e.g. "species.type_specimen.specimen_id").
      */
     label: string;
 
@@ -140,9 +140,9 @@ const genusChecks: Array<FieldCheck> = [
  */
 const speciesChecks: Array<FieldCheck> = [
     {
-        label: "species.holotype.completeness",
+        label: "species.type_specimen.completeness",
         scope: "species",
-        isPresent: (target) => isPopulated((target as Species).holotype?.completeness),
+        isPresent: (target) => isPopulated((target as Species).type_specimen?.completeness),
     },
     {
         label: "species.etymology",
@@ -150,19 +150,19 @@ const speciesChecks: Array<FieldCheck> = [
         isPresent: (target) => isPopulated((target as Species).etymology),
     },
     {
-        label: "species.holotype.specimen_id",
+        label: "species.type_specimen.specimen_id",
         scope: "species",
-        isPresent: (target) => isPopulated((target as Species).holotype?.specimen_id),
+        isPresent: (target) => isPopulated((target as Species).type_specimen?.specimen_id),
     },
     {
-        label: "species.holotype.institution",
+        label: "species.type_specimen.institution",
         scope: "species",
-        isPresent: (target) => isPopulated((target as Species).holotype?.institution),
+        isPresent: (target) => isPopulated((target as Species).type_specimen?.institution),
     },
     {
-        label: "species.holotype.material",
+        label: "species.type_specimen.material",
         scope: "species",
-        isPresent: (target) => isPopulated((target as Species).holotype?.material),
+        isPresent: (target) => isPopulated((target as Species).type_specimen?.material),
     },
     {
         label: "species.period.name",

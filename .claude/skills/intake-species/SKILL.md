@@ -66,7 +66,7 @@ resume step's Sonnet prompts can read it alongside the corpus paper.
 After the script returns, **read both `bootstrap.species.yml` and
 `papers-needed.md` yourself** and summarise to the user:
 
-- Which PBDB-seeded fields the bootstrap captured (holotype,
+- Which PBDB-seeded fields the bootstrap captured (type_specimen,
   locality, age, authority) and which it didn't
 - The proposed describing-paper citation key (or "PBDB has no
   record" — common for post-2020 taxa)

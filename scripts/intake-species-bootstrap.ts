@@ -191,7 +191,7 @@ type SpeciesSeed = {
         formation?: string;
         coordinates?: Array<number>;
     };
-    holotype?: {
+    type_specimen?: {
         specimen_id?: Array<string>;
         specimen_type?: string;
         institution?: string;
@@ -529,7 +529,7 @@ async function main(): Promise<void>
 
     if (holotype?.specimenId)
     {
-        const holotypeBlock: NonNullable<SpeciesSeed["holotype"]> = {
+        const holotypeBlock: NonNullable<SpeciesSeed["type_specimen"]> = {
             specimen_id: [holotype.specimenId],
             specimen_type: "holotype",
         };
@@ -539,7 +539,7 @@ async function main(): Promise<void>
             holotypeBlock.institution = holotype.institution;
         }
 
-        seed.holotype = holotypeBlock;
+        seed.type_specimen = holotypeBlock;
     }
 
     if (describingKey !== null)

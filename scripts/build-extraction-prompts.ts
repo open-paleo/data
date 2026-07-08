@@ -80,7 +80,7 @@ type PromptEntry = {
     output_path: string;
 
     /**
-     * Whether the YAML already has species.holotype.material populated.
+     * Whether the YAML already has species.type_specimen.material populated.
      */
     current_material: boolean;
 
@@ -235,7 +235,7 @@ function evaluateGenus(yamlPath: string, letter: string, corpusDir: string): Que
         return { kind: "skip", reason: "no_corpus_markdown", genus };
     }
 
-    const hasMaterial = isPopulated(representative?.holotype?.material);
+    const hasMaterial = isPopulated(representative?.type_specimen?.material);
     const hasDiagnosticFeatures = isPopulated(data.diagnostic_features);
 
     if (hasMaterial && hasDiagnosticFeatures)

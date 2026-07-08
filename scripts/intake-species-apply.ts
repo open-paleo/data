@@ -16,7 +16,7 @@
 // Merge rules (describing paper → new species block + genus extras):
 //
 //   etymology_species    → species.etymology
-//   holotype_*           → species.holotype.{specimen_id, type, institution, material}
+//   holotype_*           → species.type_specimen.{specimen_id, type, institution, material}
 //   diagnostic_features  → species.diagnostic_features (species-level array;
 //                          falls back to genus-level if the genus has one and
 //                          the species has none)
@@ -171,7 +171,7 @@ function applyExtractionToSpecies(
             || extraction.holotype_specimen_type)
         {
             const holotypeBlock: Record<string, unknown> =
-                (species.holotype as Record<string, unknown>) ?? {};
+                (species.type_specimen as Record<string, unknown>) ?? {};
 
             if (extraction.holotype_specimen_id)
             {
@@ -197,7 +197,7 @@ function applyExtractionToSpecies(
                 holotypeBlock.material = extraction.holotype_material;
             }
 
-            species.holotype = holotypeBlock;
+            species.type_specimen = holotypeBlock;
         }
 
         if (extraction.period_name || extraction.period_stage

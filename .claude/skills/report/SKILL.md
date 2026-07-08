@@ -31,13 +31,13 @@ pure function of the data, like `dist/`). Never commit it.
    ```
    sed -n '/^### <field> (/,/^$/p' reports/missing-fields.md
    ```
-   e.g. `### species.holotype.material (124)`.
+   e.g. `### species.type_specimen.material (124)`.
 
 ## Notes
 
 - The file is regenerable and gitignored; do not stage or commit it.
 - Long-term progress tracking lives in the per-field GitHub issues
-  (e.g. diagnostic_features #1827, species.holotype.material #1833);
+  (e.g. diagnostic_features #1827, species.type_specimen.material #1833);
   refresh their summary counts periodically rather than committing the
   report.
 - The `media` field is intentionally excluded from the report.

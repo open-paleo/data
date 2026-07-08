@@ -32,11 +32,10 @@ export type InstitutionEntry = {
 };
 
 /**
- * Type-specimen information for a species. The block is named `holotype`
- * for historical reasons but also holds syntype, lectotype, and neotype
- * series — see `specimen_type`.
+ * Type-specimen information for a species: the holotype, or a syntype,
+ * lectotype, or neotype series — see `specimen_type`.
  */
-export type Holotype = {
+export type TypeSpecimen = {
     /**
      * Catalogue numbers comprising the type material (e.g. ["FMNH PR 2081"]).
      * Always an array with at least one element; consumers never branch on
@@ -93,7 +92,7 @@ export type Holotype = {
  * A curated highlight of NON-type material for a genus — a famous,
  * most-complete, or otherwise scientifically or culturally significant
  * specimen. This is a hand-picked highlights list, not an exhaustive record
- * of referred material. The type specimen itself lives in `Species.holotype`,
+ * of referred material. The type specimen itself lives in `Species.type_specimen`,
  * never here.
  */
 export type NotableSpecimen = {
@@ -220,6 +219,12 @@ export type Location = {
     formation?: string;
 
     /**
+     * Stratigraphic member within the formation, when the source resolves the
+     * occurrence to that finer level.
+     */
+    member?: string;
+
+    /**
      * Geographic coordinates as [latitude, longitude] in decimal degrees.
      */
     coordinates?: [number, number];
@@ -301,7 +306,7 @@ export type Species = {
 
     /**
      * Fossil completeness level for the species as a whole, aggregating the
-     * holotype and any referred material. Use `Holotype.completeness` for the
+     * holotype and any referred material. Use `TypeSpecimen.completeness` for the
      * type specimen alone. Allowed values come from `schema.yml` under
      * `completeness` ("complete", "partial", "fragmentary").
      */
@@ -313,9 +318,9 @@ export type Species = {
     etymology?: string;
 
     /**
-     * Holotype specimen information.
+     * Type-specimen (holotype/syntype/lectotype/neotype) information.
      */
-    holotype?: Holotype;
+    type_specimen?: TypeSpecimen;
 
     /**
      * Geological time period and stage.
@@ -658,7 +663,7 @@ export type GenusData = {
      * Curated highlights of notable non-type specimens (famous skeletons,
      * most-complete material, soft-tissue finds). Hand-picked and optional —
      * not an exhaustive referred-material list. The type specimen lives under
-     * the relevant species's `holotype`, not here.
+     * the relevant species's `type_specimen`, not here.
      */
     notable_specimens?: Array<NotableSpecimen>;
 
@@ -829,14 +834,14 @@ export type Schema = {
 
     /**
      * Allowed holotype physical-status values (e.g. "destroyed", "lost",
-     * "unknown"). Applied to `species.holotype.status`.
+     * "unknown"). Applied to `species.type_specimen.status`.
      */
     holotype_status?: Array<string>;
 
     /**
      * Allowed type-specimen categories (e.g. "holotype", "syntype",
      * "lectotype", "neotype", "unknown"). Applied to
-     * `species.holotype.specimen_type`.
+     * `species.type_specimen.specimen_type`.
      */
     specimen_types?: Array<string>;
 

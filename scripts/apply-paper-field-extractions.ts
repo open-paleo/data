@@ -20,7 +20,7 @@
 //
 //   - `diagnostic_features:` at top level, immediately before
 //     `identifiers:` (matches Iguanodon / Triceratops / Tyrannosaurus)
-//   - `material:` inside the type species's `holotype:` block, after
+//   - `material:` inside the type species's `type_specimen:` block, after
 //     `institution:`
 //
 // Field bodies are produced by the `yaml` library on a synthetic
@@ -164,13 +164,13 @@ function pickRepresentativeSpecies(lines: Array<string>, blocks: Array<SpeciesBl
 }
 
 /**
- * Locates the holotype block within a species block. Returns the
- * inclusive line range from the `    holotype:` header through its
- * last child line. Returns null when no holotype block is present.
+ * Locates the type_specimen block within a species block. Returns the
+ * inclusive line range from the `    type_specimen:` header through its
+ * last child line. Returns null when no type_specimen block is present.
  *
  * @param lines - File contents split by line.
  * @param block - Species block bounds.
- * @returns Holotype block bounds, or null.
+ * @returns type_specimen block bounds, or null.
  */
 function locateHolotypeBlock(lines: Array<string>, block: SpeciesBlock): SpeciesBlock | null
 {
@@ -178,7 +178,7 @@ function locateHolotypeBlock(lines: Array<string>, block: SpeciesBlock): Species
 
     for (let index = block.start; index <= block.end; index += 1)
     {
-        if (lines[index] === "    holotype:")
+        if (lines[index] === "    type_specimen:")
         {
             holotypeStart = index;
             break;
@@ -501,12 +501,12 @@ for (const name of fs.readdirSync(extractionsDir).filter((entry) => entry.endsWi
 
         if (result === null)
         {
-            failedInsertion.push({ genus: extraction.genus, field: "holotype.material" });
+            failedInsertion.push({ genus: extraction.genus, field: "type_specimen.material" });
         }
         else if (!result.alreadyPresent)
         {
             working = result.content;
-            appliedFields.push("holotype.material");
+            appliedFields.push("type_specimen.material");
         }
     }
 
