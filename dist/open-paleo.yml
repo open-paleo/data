@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-08T17:27:18.175Z
+  built_at: 2026-07-08T18:20:39.220Z
   clade_count: 188
   genus_count: 1397
   license: CC-BY-4.0
@@ -138638,6 +138638,39 @@ genera:
         erected_in: brown1912a
         authors: Brown, B.
         described: 1912
+      - name: Saurolophus angustirostris
+        etymology: From Latin 'angustus' (narrow) and 'rostrum' (snout); 'narrow-snouted', for the elongate skull of the Mongolian species.
+        status: valid
+        type_species: false
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Maastrichtian
+          from_ma: 72.1
+          to_ma: 66
+        location:
+          country: MN
+          region: Ömnögovi
+          formation: Nemegt
+          locality: Nemegt
+        holotype:
+          specimen_id:
+            - PIN 551/8
+          specimen_type: holotype
+          institution: Paleontological Institute, Russian Academy of Sciences
+          material: Subadult skull and skeleton, including a partial sclerotic ring (three to five overlapping plates) preserved in the right orbit.
+        diagnostic_features:
+          - Skull at least 20% longer than in the largest adults of S. osborni
+          - Premaxilla with a strongly reflected oral margin and an upturned premaxillary body in lateral view
+          - Broadly arcing anterior margin of the prenarial fossa
+          - Elongate, anteriorly directed spur on the anterior process of the jugal separating the lacrimal and maxilla, more pronounced than in S. osborni
+          - Shallow quadratojugal notch on the quadrate
+          - More strongly bowed quadrate in lateral view
+        erected_in: rozhdestvensky1952a
+        described_in: bell2011a
+        authors: Rozhdestvensky, A. K.
+        described: 1952
     notable_specimens:
       - specimen_id:
           - MPC-D 100/764 sensu Hone 2010
@@ -138688,6 +138721,26 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
         notes: Source of the hip height estimate, and the appearance features.
+      - id: rozhdestvensky1952a
+        authors: Rozhdestvensky, A. K.
+        year: 1952
+        title: Novyi predstavitel' utkonosykh dinozavrov iz verkhnemelovykh otlozhenii Mongolii [A new representative of the duck-billed dinosaurs from the Upper Cretaceous of Mongolia]
+        journal: Doklady Akademii Nauk SSSR
+        volume: "86"
+        issue: "2"
+        pages: 405-408
+        notes: Erects Saurolophus angustirostris on Mongolian material from the Nemegt Formation.
+      - id: bell2011a
+        authors: Bell, P. R.
+        year: 2011
+        title: Cranial osteology and ontogeny of Saurolophus angustirostris from the Late Cretaceous of Mongolia
+        journal: Acta Palaeontologica Polonica
+        publisher: Institute of Paleobiology, Polish Academy of Sciences
+        volume: "56"
+        issue: "4"
+        pages: 703-722
+        doi: 10.4202/app.2010.0061
+        notes: Cranial osteology and ontogeny redescription of S. angustirostris; source of the amended diagnosis and holotype description.
     taxonomy:
       - Life
       - Animalia
