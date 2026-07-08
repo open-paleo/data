@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-08T03:43:50.209Z
+  built_at: 2026-07-08T04:08:56.661Z
   clade_count: 188
   genus_count: 1397
   license: CC-BY-4.0
@@ -53153,10 +53153,6 @@ genera:
         id: "4822550"
       - source: eol
         id: "47459352"
-    synonyms:
-      - name: Seismosaurus hallorum
-        type: junior subjective
-        reason: Tschopp, Mateus and Benson (2015) recombined Seismosaurus hallorum Gillette, 1991 as Diplodocus hallorum on phylogenetic and pairwise- dissimilarity grounds, treating the differences as species-level rather than generic-level.
     species:
       - name: Diplodocus longus
         etymology: From Latin 'longus' (long), referring to the long tail of the holotype.
@@ -53236,6 +53232,48 @@ genera:
         erected_in: hatcher1901a
         authors: Hatcher, J. B.
         described: 1901
+      - name: Diplodocus hallorum
+        etymology: Honors James and Ruth Hall of the Ghost Ranch Conference Center, New Mexico, for their support of regional paleontology.
+        status: valid
+        type_species: false
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Kimmeridgian
+            - Tithonian
+          from_ma: 154.8
+          to_ma: 145
+        location:
+          country: US
+          region: New Mexico
+          formation: Morrison
+          member: Brushy Basin
+          locality: Seismosaurus Quarry, near San Ysidro, Sandoval County
+        holotype:
+          specimen_id:
+            - NMMNH P-3690
+          specimen_type: holotype
+          institution: New Mexico Museum of Natural History and Science
+          material: "Partially articulated skeleton: dorsal vertebrae and ribs, both ilia and ischia, a pubis, sacrum, caudal vertebrae, five chevrons, and 230 gastroliths."
+        diagnostic_features:
+          - Dorsal end of the postspinal lamina of single dorsal neural spines concave transversely
+          - Mid-caudal neural arches situated on the anterior half of the centrum
+          - Vertical mid-caudal neural spines (more posteriorly inclined in D. carnegii)
+          - Posterior end of the mid- and posterior caudal neural spine summits lies more or less straight above the postzygapophyses
+          - Distinct fossae on the medial surfaces of the proximal branches of the middle chevrons
+          - Gracile femur, with a robustness index below 0.22
+        synonyms:
+          - name: Seismosaurus halli
+            type: reassigned
+            reason: Original binomial (Gillette, 1991) for the holotype; the epithet was emended to hallorum (Gillette, 1994) for Latin grammar.
+          - name: Seismosaurus hallorum
+            type: reassigned
+            reason: Emended combination (Gillette, 1994); recombined as Diplodocus hallorum when Tschopp, Mateus and Benson (2015) synonymized Seismosaurus with Diplodocus.
+        erected_in: gillette1991a
+        described_in: tschopp2015a
+        authors: Gillette, D. D.
+        described: 1991
     notable_specimens:
       - specimen_id:
           - AMNH FR 223
