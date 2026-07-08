@@ -2,13 +2,16 @@ genus: Galeamopus
 parent: Diplodocinae
 pronunciation:
   phonetic: GAY-lee-uh-MOH-pus
-etymology: "From Latin 'galeam' (accusative of 'galea', 'helmet') and 'opus' meaning 'need'; intended as a translation of 'Wil-helm' ('want helmet'), honoring the first names of Utterback and Holland, and alluding to the brittle braincase of the type specimen being in need of a helmet."
+etymology: From Latin 'galeam' (accusative of 'galea', 'helmet') and 'opus'
+  meaning 'need'; intended as a translation of 'Wil-helm' ('want helmet'),
+  honoring the first names of Utterback and Holland, and alluding to the brittle
+  braincase of the type specimen being in need of a helmet.
 description: Galeamopus is a genus of herbivorous diplodocid sauropod dinosaurs.
   It contains two known species - Galeamopus hayi, known from the Late Jurassic
   lower Morrison Formation (Kimmeridgian age, about 155 million years ago) of
-  Wyoming, United States, and Galeamopus pabsti, known from Wyoming and Colorado.
-  The type species is known from one of the well-preserved diplodocid fossils, a
-  nearly complete skeleton with an associated skull.
+  Wyoming, United States, and Galeamopus pabsti, known from Wyoming and
+  Colorado. The type species is known from one of the well-preserved diplodocid
+  fossils, a nearly complete skeleton with an associated skull.
 diet: herbivore
 locomotion: quadrupedal
 paleoenvironment:
@@ -36,7 +39,7 @@ identifiers:
     id: "319102"
 species:
   - name: Galeamopus hayi
-    etymology: "Named for Oliver Perry Hay, in recognition of his paleontological work."
+    etymology: Named for Oliver Perry Hay, in recognition of his paleontological work.
     status: valid
     type_species: true
     period:
@@ -67,24 +70,74 @@ species:
         max: 3.9
     erected_in: tschopp2015a
     holotype:
-      specimen_id: [HMNS 175 (=CM 662)]
+      specimen_id:
+        - HMNS 175 (=CM 662)
       specimen_type: holotype
       institution: HMNS
       material: Cranial material, cervical/dorsal/sacral/caudal vertebrae, nearly
         complete forelimb and hindlimb.
       completeness: partial
+  - name: Galeamopus pabsti
+    etymology: Honors Dr. Ben Pabst, who discovered the holotype and led its
+      preparation and mounting at the Sauriermuseum Aathal.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Jurassic
+      stage:
+        - Kimmeridgian
+        - Tithonian
+      from_ma: 154.8
+      to_ma: 145
+    location:
+      country: US
+      region: Wyoming
+      formation: Morrison
+      locality: Howe-Scott Quarry, Bighorn Basin
+    holotype:
+      specimen_id:
+        - SMA 0011
+      specimen_type: holotype
+      institution: SMA
+      material: Partial skull; 13 cervical and 8 dorsal vertebrae; partial
+        sacrum; ribs; both scapulae, coracoids, and humeri; left forearm and
+        manus; right ilium and pubis; left ischium and hind limb with pes
+    diagnostic_features:
+      - Horizontal canal on the maxilla connecting the posterior margin of the
+        preantorbital fossa and the ventral margin of the antorbital fenestra
+      - Sagittal nuchal crest on the supraoccipital marked by a vertical midline
+        groove
+      - Anterior cervical vertebrae much taller than wide, with a
+        height-to-width ratio greater than 1.2
+      - Mid- and posterior cervical vertebrae with a large foramen connecting
+        the postzygapophyseal centrodiapophyseal fossa and the
+        spinopostzygapophyseal fossa
+      - Very robust humerus (robusticity index over 0.33) bearing a laterally
+        displaced, rugose tubercle on the concave proximal portion of the
+        anterior surface
+      - Ascending process of the astragalus with a concave posteroventral
+        margin, producing two distinct, rounded posterior processes in ventral
+        view
+    erected_in: tschopp2017a
 notable_specimens:
-  - specimen_id: [AMNH 969]
+  - specimen_id:
+      - AMNH 969
     institution: AMNH
     species: Galeamopus hayi
     category: complementary
-    significance: "Referred specimen of G. hayi preserving a nearly complete skull and the atlas-axis complex in articulation, cranial anatomy largely absent in the type-species holotype, which is composed mainly of a braincase and partial postcranial skeleton."
+    significance: Referred specimen of G. hayi preserving a nearly complete skull
+      and the atlas-axis complex in articulation, cranial anatomy largely absent
+      in the type-species holotype, which is composed mainly of a braincase and
+      partial postcranial skeleton.
     discovered:
       year: 1903
-      by: "Peter Kaisen"
-    references: [tschopp2015a]
+      by: Peter Kaisen
+    references:
+      - tschopp2015a
 references:
   - id: tschopp2015a
   - id: jones2026b
     notes: Source of the body length, mass, and hip height estimates, and the
       appearance features.
+  - id: tschopp2017a
