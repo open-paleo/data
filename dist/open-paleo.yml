@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-08T02:43:42.516Z
+  built_at: 2026-07-08T03:43:50.209Z
   clade_count: 188
   genus_count: 1397
   license: CC-BY-4.0
@@ -39554,6 +39554,37 @@ genera:
         erected_in: qiang1998a
         authors: Qiang, J.; Currie, P. J.; Norell, M. A.; Shu-An, J.
         described: 1998
+      - name: Caudipteryx dongi
+        etymology: Honors the Chinese paleontologist Dong Zhiming.
+        status: valid
+        type_species: false
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Barremian
+            - Aptian
+          from_ma: 125.77
+          to_ma: 119.57
+        location:
+          country: CN
+          region: Liaoning
+          formation: Yixian
+          locality: Zhangjiagou, Beipiao
+        holotype:
+          specimen_id:
+            - IVPP V 12344
+          specimen_type: holotype
+          institution: Institute of Vertebrate Paleontology and Paleoanthropology
+          material: Incomplete individual lacking the skull, with nearly complete forelimbs, pelvis, and hindlimbs, plus vertebral column, sternum, ribs, gastralia, gastroliths, and extensive feather impressions.
+        diagnostic_features:
+          - Sternum small, with a femur-to-sternum length ratio of about 6.0 (about 4.1 in C. zoui)
+          - Metacarpal I relatively long compared to metacarpal II, with a ratio of about 0.45 (about 0.40 in C. zoui)
+          - Ischium relatively short
+          - Ilium relatively long
+        erected_in: zhou2000b
+        authors: Zhou, Z.; Wang, X.
+        described: 2000
     notable_specimens:
       - specimen_id:
           - BPM 0001
@@ -39622,6 +39653,14 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
         notes: Source of the hip height estimate, and the appearance features.
+      - id: zhou2000b
+        authors: Zhou, Z.; Wang, X.
+        year: 2000
+        title: A new species of Caudipteryx from the Yixian Formation of Liaoning, northeast China
+        journal: Vertebrata PalAsiatica
+        volume: "38"
+        issue: "2"
+        pages: 111-127
     taxonomy:
       - Life
       - Animalia
