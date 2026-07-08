@@ -2,9 +2,9 @@ genus: Nothronychus
 parent: Therizinosauridae
 pronunciation:
   phonetic: noh-THRON-i-kus
-etymology: "From Greek 'nothros' meaning 'slothful' and 'onyx' meaning 'claw';
+etymology: From Greek 'nothros' meaning 'slothful' and 'onyx' meaning 'claw';
   translates as 'slothful claw', a reference to its therizinosaur-like elongated
-  claws and presumed slow-moving herbivorous habits."
+  claws and presumed slow-moving herbivorous habits.
 description: Nothronychus is a genus of therizinosaurid theropod dinosaurs that
   lived in North America during the Late Cretaceous period. The type species,
   Nothronychus mckinleyi, was described by James Kirkland and Douglas G. Wolfe
@@ -49,8 +49,8 @@ identifiers:
     id: "4433981"
 species:
   - name: Nothronychus mckinleyi
-    etymology: "Named for rancher Bobby McKinley, on whose land the fossil findings
-      were made."
+    etymology: Named for rancher Bobby McKinley, on whose land the fossil findings
+      were made.
     status: valid
     type_species: true
     period:
@@ -79,7 +79,8 @@ species:
         min: 800
         max: 1200
     holotype:
-      specimen_id: [ MSM P2117 ]
+      specimen_id:
+        - MSM P2117
       specimen_type: holotype
       institution: MSM-US
       material: "Partially disarticulated skeleton: isolated teeth, a partial
@@ -92,6 +93,44 @@ species:
       completeness: partial
     erected_in: kirkland2001a
     described_in: hedrick2015a
+  - name: Nothronychus graffami
+    etymology: Honors M. Graffam, who discovered the holotype.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Turonian
+      from_ma: 93.9
+      to_ma: 89.8
+    location:
+      country: US
+      region: Utah
+      formation: Tropic Shale
+      locality: Kaiparowits Basin, Kane County
+    holotype:
+      specimen_id:
+        - UMNH VP 16420
+      specimen_type: holotype
+      institution: UMNH
+      material: Nearly complete postcranial skeleton, including cervical, dorsal,
+        sacral and caudal vertebrae, pectoral girdle, forelimbs, pelvis,
+        hindlimbs and pes; skull not preserved
+    diagnostic_features:
+      - Cranial caudal vertebral centra strongly amphicoelous (platycoelous in
+        N. mckinleyi)
+      - Caudoventral aspect of the caudal centra poorly developed (hypertrophied
+        heel about one-third the centrum depth in N. mckinleyi)
+      - Glenoid with a pronounced caudal buttress (absent in N. mckinleyi)
+      - Ventral notch between the obturator process and iliac shaft
+        craniocaudally wide (narrow in N. mckinleyi)
+      - Pubic boot with a diminutive caudal process bearing a dorsally convex
+        ventral margin
+      - Subtriangular caudal process of the ischium diminutive (less than 5% of
+        ischium length), located proximal to the obturator foramen
+    erected_in: zanno2009a
+    described_in: hedrick2015a
 references:
   - id: kirkland2001a
   - id: hedrick2015a
@@ -100,3 +139,4 @@ references:
       diagnoses.
   - id: jones2026c
     notes: Source of the hip height estimate, and the appearance features.
+  - id: zanno2009a
