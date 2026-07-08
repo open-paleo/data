@@ -2,7 +2,8 @@ genus: Caudipteryx
 parent: Caudipterygidae
 pronunciation:
   phonetic: kaw-DIP-ter-iks
-etymology: From Latin cauda ('tail') + Greek pteryx ('feather' or 'wing'), meaning 'tail feather'.
+etymology: From Latin cauda ('tail') + Greek pteryx ('feather' or 'wing'),
+  meaning 'tail feather'.
 description: "Caudipteryx is a genus of small oviraptorosaurian dinosaurs that
   lived in China during the Early Cretaceous, around 124.6 million years ago.
   They were feathered and extremely bird-like in their overall appearance, to
@@ -36,7 +37,8 @@ identifiers:
     id: "66065"
 species:
   - name: Caudipteryx zoui
-    etymology: "Named for Zou Jiahua for his prominent support to the scientific community as the vice premier of China."
+    etymology: Named for Zou Jiahua for his prominent support to the scientific
+      community as the vice premier of China.
     status: valid
     type_species: true
     period:
@@ -56,12 +58,13 @@ species:
         - 41.799999
         - 120.73333
     holotype:
-      specimen_id: [NGMC 97-4-A]
+      specimen_id:
+        - NGMC 97-4-A
       specimen_type: holotype
       institution: GMC
       material: An articulated, largely complete skeleton with skull and a 22-vertebra
-        tail, with remiges on the second digit, tail rectrices, downy body feathers,
-        and gastroliths
+        tail, with remiges on the second digit, tail rectrices, downy body
+        feathers, and gastroliths
       completeness: complete
     size:
       hip_height_m:
@@ -74,23 +77,70 @@ species:
         min: 5
         max: 5
     erected_in: qiang1998a
+  - name: Caudipteryx dongi
+    etymology: Honors the Chinese paleontologist Dong Zhiming.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Early Cretaceous
+      stage:
+        - Barremian
+        - Aptian
+      from_ma: 125.77
+      to_ma: 119.57
+    location:
+      country: CN
+      region: Liaoning
+      formation: Yixian
+      locality: Zhangjiagou, Beipiao
+    holotype:
+      specimen_id:
+        - IVPP V 12344
+      specimen_type: holotype
+      institution: IVPP
+      material: Incomplete individual lacking the skull, with nearly complete
+        forelimbs, pelvis, and hindlimbs, plus vertebral column, sternum, ribs,
+        gastralia, gastroliths, and extensive feather impressions.
+    diagnostic_features:
+      - Sternum small, with a femur-to-sternum length ratio of about 6.0 (about
+        4.1 in C. zoui)
+      - Metacarpal I relatively long compared to metacarpal II, with a ratio of
+        about 0.45 (about 0.40 in C. zoui)
+      - Ischium relatively short
+      - Ilium relatively long
+    erected_in: zhou2000b
 notable_specimens:
-  - specimen_id: [BPM 0001]
+  - specimen_id:
+      - BPM 0001
     institution: BPM
     species: Caudipteryx zoui
     category: complementary
-    significance: "Referred specimen preserving a nearly complete skull, an element poorly known in the type material, along with feather impressions; described by Zhou and colleagues in 2000."
-    references: [zhou2000a]
-  - specimen_id: [IVPP V 12430]
+    significance: Referred specimen preserving a nearly complete skull, an element
+      poorly known in the type material, along with feather impressions;
+      described by Zhou and colleagues in 2000.
+    references:
+      - zhou2000a
+  - specimen_id:
+      - IVPP V 12430
     institution: IVPP
     category: exceptional-preservation
-    significance: "Referred specimen preserving a nearly complete skull and feather impressions; further analysis revealed preservation of a propatagium on its left arm. Referred only to Caudipteryx sp."
-    references: [zhou2000a, uno2023a]
-  - specimen_id: [STM4-3]
+    significance: Referred specimen preserving a nearly complete skull and feather
+      impressions; further analysis revealed preservation of a propatagium on
+      its left arm. Referred only to Caudipteryx sp.
+    references:
+      - zhou2000a
+      - uno2023a
+  - specimen_id:
+      - STM4-3
     institution: STM
     category: exceptional-preservation
-    significance: "Articulated individual lacking the skull and tail tip, preserving abundant integument, gastroliths, and a cartilage fragment reported to preserve chondrocytes. Collected from the Yixian Formation at Dapingfang Town near Chaoyang, west Liaoning."
-    references: [zheng2021a]
+    significance: Articulated individual lacking the skull and tail tip, preserving
+      abundant integument, gastroliths, and a cartilage fragment reported to
+      preserve chondrocytes. Collected from the Yixian Formation at Dapingfang
+      Town near Chaoyang, west Liaoning.
+    references:
+      - zheng2021a
 references:
   - id: qiang1998a
   - id: zhou2000a
@@ -98,3 +148,4 @@ references:
   - id: zheng2021a
   - id: jones2026c
     notes: Source of the hip height estimate, and the appearance features.
+  - id: zhou2000b
