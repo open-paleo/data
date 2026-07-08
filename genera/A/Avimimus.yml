@@ -40,8 +40,8 @@ identifiers:
     id: "47458687"
 species:
   - name: Avimimus portentosus
-    etymology: "From Latin 'portentosus' meaning 'monstrous' or 'extraordinary',
-      referring to the unusual bird-like characteristics of the animal."
+    etymology: From Latin 'portentosus' meaning 'monstrous' or 'extraordinary',
+      referring to the unusual bird-like characteristics of the animal.
     status: valid
     type_species: true
     period:
@@ -61,7 +61,8 @@ species:
         - 42.083332
         - 102.166664
     holotype:
-      specimen_id: [ PIN 3907/1 ]
+      specimen_id:
+        - PIN 3907/1
       specimen_type: holotype
       institution: PIN
       material: Incomplete skeleton including skull fragment, vertebrae, pectoral
@@ -72,5 +73,41 @@ species:
         min: 1.5
         max: 1.5
     erected_in: kurzanov1981a
+  - name: Avimimus nemegtensis
+    etymology: Named for the Nemegt Formation, where the type material was recovered.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Maastrichtian
+      from_ma: 72.1
+      to_ma: 66
+    location:
+      country: MN
+      region: Omnogov
+      formation: Nemegt
+      locality: Nemegt
+    holotype:
+      specimen_id:
+        - MPC-D 102/81
+      specimen_type: holotype
+      institution: MPC
+      material: Partial skull.
+    diagnostic_features:
+      - Exoccipital with a single jugular opening for cranial nerves IX-XII
+        (paired foramina in A. portentosus).
+      - Relatively smaller foramen magnum and wider pterygoids.
+      - Quadratojugal bowed laterally from the quadrate condyle, rather than
+        projecting anteriorly.
+      - Dentary with better-developed symphyseal shelf and shallower lingual
+        ridges.
+      - Ilium and ischium unfused, and ischiadic peduncle lacking an
+        antitrochanter.
+      - Preacetabular blade of ilium dorsally expanded and ventrally hooked,
+        with an extensive sigmoidal brevis shelf lacking suprabrevis ridges.
+    erected_in: funston2018a
 references:
   - id: kurzanov1981a
+  - id: funston2018a
