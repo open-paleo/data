@@ -46,9 +46,9 @@ synonyms:
       though this has not been formally tested.
 species:
   - name: Hypacrosaurus altispinus
-    etymology: "From Latin 'altus' ('high' or 'tall') and 'spina' ('spine'),
+    etymology: From Latin 'altus' ('high' or 'tall') and 'spina' ('spine'),
       referring to the tall neural spines that are 5 to 7 times the height of
-      their respective vertebral bodies in the back."
+      their respective vertebral bodies in the back.
     status: valid
     type_species: true
     period:
@@ -78,14 +78,41 @@ species:
         min: 4000
         max: 4000
     holotype:
-      specimen_id: [ AMNH 5204 ]
+      specimen_id:
+        - AMNH 5204
       specimen_type: holotype
       institution: AMNH
-      material: Last eight dorsal vertebrae, two anterior caudal vertebrae, both
-        ilia, the right ischium, the right pubis, and several ribs.
+      material: Last eight dorsal vertebrae, two anterior caudal vertebrae, both ilia,
+        the right ischium, the right pubis, and several ribs.
       completeness: partial
     erected_in: brown1913a
+  - name: Hypacrosaurus stebingeri
+    etymology: Honors Eugene Stebinger, who first described the Two Medicine
+      Formation and found the first remains of the species.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Campanian
+      from_ma: 76
+      to_ma: 74
+    location:
+      country: US
+      region: Montana
+      formation: Two Medicine
+      locality: Badger Creek, Glacier County (locality TM-065)
+    holotype:
+      specimen_id:
+        - MOR 549
+      specimen_type: holotype
+      institution: MOR
+      material: Nearly complete skeleton, including skull, ilium, and dorsal
+        vertebrae
+    erected_in: horner1994a
 references:
   - id: brown1913a
   - id: jones2026a
     notes: Source of the hip height estimate, and the appearance features.
+  - id: horner1994a
