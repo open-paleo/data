@@ -44,9 +44,9 @@ identifiers:
     id: "4531758"
 species:
   - name: Saurolophus osborni
-    etymology: "Named in honor of Henry Fairfield Osborn, American paleontologist
-      and president of the American Museum of Natural History, who was a mentor
-      to Barnum Brown."
+    etymology: Named in honor of Henry Fairfield Osborn, American paleontologist and
+      president of the American Museum of Natural History, who was a mentor to
+      Barnum Brown.
     status: valid
     type_species: true
     period:
@@ -66,11 +66,12 @@ species:
         - 51.5
         - -112.1
     holotype:
-      specimen_id: [ AMNH 5220 ]
+      specimen_id:
+        - AMNH 5220
       specimen_type: holotype
       institution: AMNH
-      material: A nearly complete articulated skeleton with skull, including
-        preserved sclerotic plates.
+      material: A nearly complete articulated skeleton with skull, including preserved
+        sclerotic plates.
       completeness: complete
     size:
       hip_height_m:
@@ -78,28 +79,79 @@ species:
         max: 3.1
       length_m:
         min: 8.2
-        max: 13.0
+        max: 13
       weight_kg:
         min: 3000
         max: 11000
       skull_length_m:
-        min: 1.0
+        min: 1
         max: 1.22
     erected_in: brown1912a
+  - name: Saurolophus angustirostris
+    etymology: From Latin 'angustus' (narrow) and 'rostrum' (snout);
+      'narrow-snouted', for the elongate skull of the Mongolian species.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Maastrichtian
+      from_ma: 72.1
+      to_ma: 66
+    location:
+      country: MN
+      region: Ömnögovi
+      formation: Nemegt
+      locality: Nemegt
+    holotype:
+      specimen_id:
+        - PIN 551/8
+      specimen_type: holotype
+      institution: PIN
+      material: Subadult skull and skeleton, including a partial sclerotic ring (three
+        to five overlapping plates) preserved in the right orbit.
+    diagnostic_features:
+      - Skull at least 20% longer than in the largest adults of S. osborni
+      - Premaxilla with a strongly reflected oral margin and an upturned
+        premaxillary body in lateral view
+      - Broadly arcing anterior margin of the prenarial fossa
+      - Elongate, anteriorly directed spur on the anterior process of the jugal
+        separating the lacrimal and maxilla, more pronounced than in S. osborni
+      - Shallow quadratojugal notch on the quadrate
+      - More strongly bowed quadrate in lateral view
+    erected_in: rozhdestvensky1952a
+    described_in: bell2011a
 notable_specimens:
-  - specimen_id: [MPC-D 100/764 sensu Hone 2010]
+  - specimen_id:
+      - MPC-D 100/764 sensu Hone 2010
     institution: MPC
     category: pathology
-    significance: "Left humerus of a nearly complete skeleton from the Bugiin Tsav locality of the Nemegt Formation, heavily damaged by Tarbosaurus bite marks (punctures, drag marks, and bite-and-drag marks) concentrated on the deltopectoral crest, interpreted as scavenging of an already dead animal."
-    references: [hone2010a]
-  - specimen_id: [MPC-D 100/764 sensu Dewaele 2015]
+    significance: Left humerus of a nearly complete skeleton from the Bugiin Tsav
+      locality of the Nemegt Formation, heavily damaged by Tarbosaurus bite
+      marks (punctures, drag marks, and bite-and-drag marks) concentrated on the
+      deltopectoral crest, interpreted as scavenging of an already dead animal.
+    references:
+      - hone2010a
+  - specimen_id:
+      - MPC-D 100/764 sensu Dewaele 2015
     institution: MPC
     category: ontogeny
-    significance: "Small partial nest from the Dragon's Tomb assemblage of the Nemegt Formation containing three or four perinatal juveniles and two fragmentary eggshells; skull lengths under five percent of adult length document the earliest growth stage and show the crest was poorly developed in infancy."
-    references: [dewaele2015a]
+    significance: Small partial nest from the Dragon's Tomb assemblage of the Nemegt
+      Formation containing three or four perinatal juveniles and two fragmentary
+      eggshells; skull lengths under five percent of adult length document the
+      earliest growth stage and show the crest was poorly developed in infancy.
+    references:
+      - dewaele2015a
 references:
   - id: hone2010a
   - id: dewaele2015a
   - id: brown1912a
   - id: jones2026a
     notes: Source of the hip height estimate, and the appearance features.
+  - id: rozhdestvensky1952a
+    notes: Erects Saurolophus angustirostris on Mongolian material from the Nemegt
+      Formation.
+  - id: bell2011a
+    notes: Cranial osteology and ontogeny redescription of S. angustirostris;
+      source of the amended diagnosis and holotype description.
