@@ -38,7 +38,8 @@ identifiers:
     id: "4433567"
 species:
   - name: Unenlagia comahuensis
-    etymology: "Named for the Comahue region of Argentina, where the holotype was found."
+    etymology: Named for the Comahue region (northwestern Patagonia), where the
+      type locality lies.
     status: valid
     type_species: true
     period:
@@ -58,12 +59,12 @@ species:
         - -38.453194
         - -68.724556
     holotype:
-      specimen_id: [MUCPv-349]
+      specimen_id: [ MCF-PVPH-78 ]
       specimen_type: holotype
       institution: MCF
-      material: Three presacral vertebrae, sacrum, dorsal ribs, two proximal haemal
-        arches, left scapula, incomplete humerus, ilia, pubes, right ischium, right
-        femur, left tibia.
+      material: Three presacral (8th, 10th, 13th dorsal) vertebrae, sacrum, dorsal
+        ribs, two proximal haemal arches, left scapula, incomplete humerus, ilia,
+        pubes, right ischium, right femur, and left tibia.
       completeness: partial
     size:
       hip_height_m:
@@ -76,7 +77,42 @@ species:
         min: 9
         max: 95
     erected_in: novas1997a
+  - name: Unenlagia paynemili
+    etymology: Honors Maximino Paynemil, chief of the Paynemil community near the
+      Futalognko site.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Turonian
+        - Coniacian
+      from_ma: 93.9
+      to_ma: 86.3
+    location:
+      country: AR
+      region: Neuquén
+      formation: Portezuelo
+      locality: Futalognko site, Lago Barreales
+    holotype:
+      specimen_id: [ MUCPv-349 ]
+      specimen_type: holotype
+      institution: UNCo
+      material: Left humerus (217 mm) and left pubis (267 mm) of a single
+        individual.
+      completeness: fragmentary
+    diagnostic_features:
+      - More gracile long bones
+      - Deltopectoral crest meeting the humeral shaft at about 116 degrees (about
+        140 degrees in U. comahuensis)
+      - Small anterior process on the distal end of the pubis (absent in U.
+        comahuensis)
+      - Postacetabular blade of the ilium broader and rounded distally, with a
+        shallower brevis fossa
+    erected_in: calvo2004c
 references:
+  - id: calvo2004c
   - id: novas1997a
   - id: jones2026c
     notes: Source of the hip height estimate, and the appearance features.
