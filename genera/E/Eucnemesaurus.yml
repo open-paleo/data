@@ -44,8 +44,8 @@ synonyms:
       confirmation.
 species:
   - name: Eucnemesaurus fortis
-    etymology: "From Latin 'fortis' meaning 'strong', reflecting the robust nature
-      of the described material."
+    etymology: From Latin 'fortis' meaning 'strong', reflecting the robust nature of
+      the described material.
     status: disputed
     type_species: true
     period:
@@ -75,13 +75,54 @@ species:
         min: 2
         max: 2
     holotype:
-      specimen_id: [ TrM 119 ]
+      specimen_id:
+        - TrM 119
       specimen_type: holotype
       institution: DNMNH
       material: Proximal half of left femur, complete left tibia, proximal portion of
-        left pubis, portions of dorsal and caudal vertebrae, and unidentified fragments.
+        left pubis, portions of dorsal and caudal vertebrae, and unidentified
+        fragments.
       completeness: fragmentary
     erected_in: vanhoepen1920a
+  - name: Eucnemesaurus entaxonis
+    etymology: From 'entaxonic', a foot in which the medial digits bear the main
+      weight-resisting forces; alludes to the species' robust pes.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Triassic
+      stage:
+        - Norian
+        - Rhaetian
+      from_ma: 227
+      to_ma: 201.4
+    location:
+      country: ZA
+      region: Eastern Cape
+      formation: Elliot
+      locality: Cannon Rock Farm, Aliwal North district
+    holotype:
+      specimen_id:
+        - BP/1/6234
+      specimen_type: holotype
+      institution: BP
+      material: Articulated posterior dorsal, sacral, and anterior caudal
+        vertebrae; partial right ilium and pubic apron; left ischium; right
+        femur; distal crus; and an almost complete right pes.
+    diagnostic_features:
+      - Deep brevis fossa with relatively thin lateral and medial walls on the
+        ventral surface of the postacetabular process of the ilium
+      - Sharp ventral keel on the centra of the proximal caudal vertebrae
+      - Femoral shaft beneath the fourth trochanter transversely elliptical in
+        cross-section (subcircular in E. fortis)
+      - Posterior descending process of the distal tibia does not extend as far
+        laterally as the anterior ascending process, leaving the latter visible
+        in posterior view (the two processes are level with each other in E.
+        fortis)
+      - Semi-stout pes in which the maximum proximal breadth of the first
+        metatarsal is approximately 0.6 times its proximodistal length
+    erected_in: mcphee2015b
 references:
   - id: vanhoepen1920a
   - id: paul2024a
@@ -89,4 +130,6 @@ references:
   - id: jones2026b
     notes: Source of the hip height estimate.
   - id: yates2007a
-    notes: Indicated Eucnemesaurus is valid and conspecific with the putative herrerasaurid Aliwalia.
+    notes: Indicated Eucnemesaurus is valid and conspecific with the putative
+      herrerasaurid Aliwalia.
+  - id: mcphee2015b
