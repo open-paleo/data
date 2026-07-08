@@ -27,38 +27,62 @@ Flagged sources are **not banned**. When a reference cites a flagged publisher o
 Open Paleo maintains a single phylogenetic tree. We do not maintain
 competing trees or alternative placements within the data itself.
 
-This means we are deliberately conservative about adopting taxonomic
-changes. A newly published reclassification, species split, or synonym
-proposal is not automatically reflected in the dataset. We wait until
-there is **broad consensus in the paleontological community** that the
-change is well-supported before updating the tree or changing a
-species' status.
+The consensus policy governs **taxonomic revisions** — changes to
+taxa that already exist in the literature. It is **not** a barrier to
+adding newly described taxa. The two cases are handled differently.
+
+### Adding a newly described taxon
+
+A validly published new genus or species is added on its own merits,
+**even if it was named very recently**, provided both of the following
+hold:
+
+- **The material is adequate — not fragmentary.** A reasonably complete
+  or otherwise diagnosable specimen qualifies. An isolated tooth, a
+  single indeterminate element, or a scrappy holotype does not; such
+  taxa are held until better material or corroboration appears.
+- **It is not already contested.** If the describing paper has drawn a
+  published rebuttal — a nomen-dubium call, or an argument that the taxon
+  is a synonym, a juvenile, or a misidentified specimen of a known
+  form — we hold it until that dispute resolves.
+
+Recency by itself is never a reason to wait. A well-founded new species
+on a good specimen is included even if it was described this year.
+
+### Adopting a taxonomic revision
+
+Changes to already-named taxa — reclassifications, species splits,
+synonymizations, **recombinations** (moving a species into another
+genus), genus merges, and resurrections from synonymy — are adopted
+only once there is **broad consensus in the paleontological community**
+that the change is well-supported. Until then the existing arrangement
+stands.
 
 In practice this means:
 
-- **A single paper is not enough.** One study proposing a new placement
-  does not trigger a change. We look for the proposal to be accepted,
-  cited approvingly, or adopted by subsequent phylogenetic analyses
-  before updating.
-- **Active debates are documented, not resolved.** When a placement is
+- **A single paper is not enough.** One study proposing a revision does
+  not trigger a change. We look for the proposal to be accepted, cited
+  approvingly, or adopted by subsequent analyses before updating.
+- **Active debates are documented, not resolved.** When a revision is
   genuinely controversial — with credible researchers on both sides —
-  we retain the existing placement, use `status: disputed` where
+  we retain the existing arrangement, use `status: disputed` where
   appropriate, and document the competing views in the description and
   references. The data should describe the state of the field, not
   pick a winner.
 - **Corrections to clear errors are fast-tracked.** If a taxon is
-  demonstrably misplaced due to a data entry mistake or an outdated
-  classification that the field has long since moved past, that can be
+  demonstrably misplaced due to a data-entry mistake or an outdated
+  classification the field has long since moved past, that can be
   corrected without waiting for new publications.
 
 This policy exists because Open Paleo is a reference dataset, not a
-journal. Consumers depend on it being stable and reliable. A tree that
-changes with every new preprint is less useful than one that tracks
-the settled understanding of the field, even if that understanding
-lags the cutting edge by a few years.
+journal. Consumers depend on it being stable and reliable. A tree whose
+*revisions* change with every new preprint is less useful than one that
+tracks the settled understanding of the field, even if that
+understanding lags the cutting edge by a few years — while still
+recording genuinely new animals as they are described.
 
-If you believe a change has reached consensus and should be reflected
-in Open Paleo, submit a [Correct Taxonomy](../../issues/new?template=correct-taxonomy.yml)
+If you believe a **revision** has reached consensus and should be
+reflected in Open Paleo, submit a [Correct Taxonomy](../../issues/new?template=correct-taxonomy.yml)
 issue with references showing community adoption — not just the
 original proposal.
 

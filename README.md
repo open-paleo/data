@@ -54,11 +54,15 @@ Open Paleo exists because it solves a different problem:
 
 **A note on currency:** Because Open Paleo maintains a single curated
 tree rather than a dynamic opinion-based system, we are deliberately
-conservative about adopting taxonomic changes. New proposals are not
-reflected in the dataset until there is broad consensus in the
-paleontological community. This makes the dataset stable and reliable
-for downstream consumers, even if it lags the cutting edge by a few
-years. See [CONTRIBUTING.md](CONTRIBUTING.md#taxonomic-disputes-and-consensus)
+conservative about adopting taxonomic *revisions* — reclassifications,
+synonymizations, splits, and recombinations are not reflected until
+there is broad consensus in the paleontological community. Newly
+described taxa are different: a validly named new genus or species on
+adequate, uncontested material is added on its own merits, even if
+recent. This keeps the dataset stable and reliable for downstream
+consumers — lagging the cutting edge on contested rearrangements by a
+few years, while still recording genuinely new animals promptly. See
+[CONTRIBUTING.md](CONTRIBUTING.md#taxonomic-disputes-and-consensus)
 for the full policy.
 
 In short: if you need occurrence data for quantitative research, use
