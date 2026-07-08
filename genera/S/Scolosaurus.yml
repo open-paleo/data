@@ -18,9 +18,9 @@ paleoenvironment:
   - fluvial
   - coastal
 diagnostic_features:
-  - Osteoderms predominantly conical, subconical, or mammillary in shape, with
-    a virtual absence of the oval to subrectangular, low-keeled osteoderms seen
-    in Dyoplosaurus and Euoplocephalus
+  - Osteoderms predominantly conical, subconical, or mammillary in shape, with a
+    virtual absence of the oval to subrectangular, low-keeled osteoderms seen in
+    Dyoplosaurus and Euoplocephalus
   - Presacral rod of four dorsosacral vertebrae with noticeably constricted
     intervertebral faces
   - Ilia weakly divergent; ischium with an unusually straight proximal border
@@ -49,9 +49,9 @@ identifiers:
     id: "24177353"
 species:
   - name: Scolosaurus cutleri
-    etymology: "Named for William Edmund Cutler, the independent fossil collector
-      who discovered the holotype in 1914 and was seriously injured when the
-      specimen fell on him during excavation."
+    etymology: Named for William Edmund Cutler, the independent fossil collector who
+      discovered the holotype in 1914 and was seriously injured when the
+      specimen fell on him during excavation.
     status: valid
     type_species: true
     period:
@@ -60,7 +60,7 @@ species:
       stage:
         - Campanian
       from_ma: 76.7
-      to_ma: 76.0
+      to_ma: 76
     location:
       country: CA
       locality: Quarry 80, Deadlodge Canyon
@@ -80,7 +80,8 @@ species:
         min: 2200
         max: 2200
     holotype:
-      specimen_id: [ NHMUK PV R.5161 ]
+      specimen_id:
+        - NHMUK PV R.5161
       specimen_type: holotype
       institution: NHMUK
       material: Nearly complete postcranial skeleton with dermal armor in situ; skull,
@@ -88,6 +89,45 @@ species:
       completeness: partial
     erected_in: nopcsa1928b
     described_in: penkalski2013b
+  - name: Scolosaurus thronus
+    etymology: From Latin 'thronus' (elevated seat, throne), for the species'
+      high stratigraphic position in the Dinosaur Park Formation and its quarry
+      atop a butte.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Campanian
+      from_ma: 76.5
+      to_ma: 75.5
+    location:
+      country: CA
+      region: Alberta
+      formation: Dinosaur Park
+      locality: Sternberg Quarry 112, Red Deer River (~40 m above the Oldman
+        contact)
+    holotype:
+      specimen_id:
+        - ROM 1930
+      specimen_type: holotype
+      institution: ROM
+      material: Partially articulated skeleton with skull and teeth, dorsal
+        vertebrae, a complete synsacrum, sacral ribs, most caudals, scapula,
+        partial ilia, humerus, a cervical half-ring, osteoderms, and skin.
+    diagnostic_features:
+      - Eight vertebrae in the synsacrum (4-2-2, plus cd1), one fewer than in
+        the type species
+      - Proximal caudal neural spines craniocaudally compressed and curved
+        cranially, unlike the erect, tapering spines of more distal caudals
+      - Several osteoderm shapes with no counterparts in the type species,
+        including more pronounced radial ribbing or fluting on some postcervical
+        osteoderms
+      - Proximal caudal osteoderms more strongly keeled
+      - A large (28 cm), high osteoderm that is weakly mammillary, keeled
+        cranially, and ribbed, with an open subconical apex
+    erected_in: penkalski2018a
 references:
   - id: nopcsa1928b
   - id: penkalski2013b
@@ -96,3 +136,4 @@ references:
       osteoderm, cervical half-ring, forelimb, and pelvic characters.
   - id: jones2026a
     notes: Source of the hip height estimate, and the appearance features.
+  - id: penkalski2018a
