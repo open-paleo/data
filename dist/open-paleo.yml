@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-07T23:55:31.655Z
+  built_at: 2026-07-08T00:15:13.158Z
   clade_count: 188
   genus_count: 1397
   license: CC-BY-4.0
@@ -13324,6 +13324,37 @@ genera:
         erected_in: lucas2006a
         authors: Lucas, S. G.; Sullivan, R. M.; A. P. Hunt
         described: 2006
+      - name: Agujaceratops mavericus
+        etymology: From 'maverick' (an unbranded range animal or lone dissenter); refers to the Old Maverick Road, near where the holotype was collected.
+        status: valid
+        type_species: false
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+          from_ma: 83.6
+          to_ma: 72.1
+        location:
+          country: US
+          region: Texas
+          formation: Aguja
+          member: Upper Shale
+          locality: Rattlesnake Mountain
+        holotype:
+          specimen_id:
+            - TMM 43098-1
+          specimen_type: holotype
+          institution: Texas Memorial Museum, Austin, Texas, USA (used for collections now housed in the Vertebrate Paleontology Collections at the Jackson School Museum of Earth History, Austin, Texas, USA), now called the Texas Science and Natural History Museum
+          material: Nearly complete, disarticulated skull (the 'Rattlesnake Mt exemplar'), including an intact right postorbital horncore and squamosal, but lacking preserved parietal remains.
+        diagnostic_features:
+          - Squamosal relatively elongate (width/length ratio about 0.36, versus 0.44-0.55 in A. mariscalensis)
+          - Up to 10 episquamosals or corresponding marginal undulations of the squamosal (versus six in A. mariscalensis)
+          - Episquamosals small and elliptical in cross section (large and triangular in A. mariscalensis)
+          - Postorbital horncores with low basal circumference and low taper relative to length
+        erected_in: lehman2016b
+        authors: Lehman, T. M.; Wick, S. L.; Barnes, K. R.
+        described: 2017
     references:
       - id: lucas2006a
         authors: Lucas, S. G.; Sullivan, R. M.; A. P. Hunt
@@ -13339,6 +13370,16 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
         notes: Source of the hip height estimate, and the appearance features.
+      - id: lehman2016b
+        authors: Lehman, T. M.; Wick, S. L.; Barnes, K. R.
+        year: 2017
+        title: New specimens of horned dinosaurs from the Aguja Formation of West Texas, and a revision of Agujaceratops
+        journal: Journal of Systematic Palaeontology
+        publisher: Informa UK Limited
+        volume: "15"
+        issue: "8"
+        pages: 641-674
+        doi: 10.1080/14772019.2016.1210683
     taxonomy:
       - Life
       - Animalia
