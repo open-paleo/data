@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-08T21:25:55.556Z
+  built_at: 2026-07-08T21:49:39.001Z
   clade_count: 188
   genus_count: 1397
   license: CC-BY-4.0
@@ -163886,7 +163886,7 @@ genera:
         id: "4433567"
     species:
       - name: Unenlagia comahuensis
-        etymology: Named for the Comahue region of Argentina, where the holotype was found.
+        etymology: Named for the Comahue region (northwestern Patagonia), where the type locality lies.
         status: valid
         type_species: true
         period:
@@ -163907,10 +163907,10 @@ genera:
             - -68.724556
         holotype:
           specimen_id:
-            - MUCPv-349
+            - MCF-PVPH-78
           specimen_type: holotype
           institution: Museo ‘Carmen Funes’, Plaza Huincul
-          material: Three presacral vertebrae, sacrum, dorsal ribs, two proximal haemal arches, left scapula, incomplete humerus, ilia, pubes, right ischium, right femur, left tibia.
+          material: Three presacral (8th, 10th, 13th dorsal) vertebrae, sacrum, dorsal ribs, two proximal haemal arches, left scapula, incomplete humerus, ilia, pubes, right ischium, right femur, and left tibia.
           completeness: partial
         size:
           hip_height_m:
@@ -163925,7 +163925,48 @@ genera:
         erected_in: novas1997a
         authors: Novas, F. E.; Puertat, P. F.
         described: 1997
+      - name: Unenlagia paynemili
+        etymology: Honors Maximino Paynemil, chief of the Paynemil community near the Futalognko site.
+        status: valid
+        type_species: false
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Turonian
+            - Coniacian
+          from_ma: 93.9
+          to_ma: 86.3
+        location:
+          country: AR
+          region: Neuquén
+          formation: Portezuelo
+          locality: Futalognko site, Lago Barreales
+        holotype:
+          specimen_id:
+            - MUCPv-349
+          specimen_type: holotype
+          institution: Universidad Nacional del Comahue
+          material: Left humerus (217 mm) and left pubis (267 mm) of a single individual.
+          completeness: fragmentary
+        diagnostic_features:
+          - More gracile long bones
+          - Deltopectoral crest meeting the humeral shaft at about 116 degrees (about 140 degrees in U. comahuensis)
+          - Small anterior process on the distal end of the pubis (absent in U. comahuensis)
+          - Postacetabular blade of the ilium broader and rounded distally, with a shallower brevis fossa
+        erected_in: calvo2004c
+        authors: Calvo, J. O.; Porfiri, J. D.; Kellner, A. W. A.
+        described: 2004
     references:
+      - id: calvo2004c
+        authors: Calvo, J. O.; Porfiri, J. D.; Kellner, A. W. A.
+        year: 2004
+        title: On a new maniraptoran dinosaur (Theropoda) from the Upper Cretaceous of Neuquén, Patagonia, Argentina
+        journal: Arquivos do Museu Nacional
+        publisher: Museu Nacional, Universidade Federal do Rio de Janeiro
+        volume: "62"
+        issue: "4"
+        pages: 549-566
       - id: novas1997a
         authors: Novas, F. E.; Puertat, P. F.
         year: 1997
