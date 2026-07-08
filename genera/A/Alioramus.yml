@@ -3,9 +3,9 @@ parent: Tyrannosaurinae
 pronunciation:
   phonetic: AL-ee-o-RAY-mus
   ipa: /ˌælioʊˈreɪməs/
-etymology: "From Latin 'alio' meaning 'different' and 'ramus' meaning 'branch',
+etymology: From Latin 'alio' meaning 'different' and 'ramus' meaning 'branch',
   meaning 'different branch', referring to its divergent position within the
-  tyrannosaurid family tree."
+  tyrannosaurid family tree.
 description: Alioramus is a genus of tyrannosaurid theropod dinosaurs from the
   Late Cretaceous period of Asia. It currently contains two species. The type
   species, A. remotus is known from a partial skull and three foot bones
@@ -48,9 +48,9 @@ identifiers:
     id: "8836444"
 species:
   - name: Alioramus remotus
-    etymology: "From Latin 'remotus' meaning 'removed', reflecting Soviet
+    etymology: From Latin 'remotus' meaning 'removed', reflecting Soviet
       paleontologist Sergei Kurzanov's belief that this dinosaur was far removed
-      from other members of the tyrannosaurid family."
+      from other members of the tyrannosaurid family.
     status: valid
     type_species: true
     period:
@@ -69,7 +69,8 @@ species:
         - 43
         - 99
     holotype:
-      specimen_id: [ PIN 3141/1 ]
+      specimen_id:
+        - PIN 3141/1
       specimen_type: holotype
       institution: PIN
       material: Incomplete skull, four middle dorsal vertebrae, proximal parts of
@@ -77,13 +78,57 @@ species:
       completeness: partial
     size:
       length_m:
-        min: 5.0
-        max: 6.0
+        min: 5
+        max: 6
       weight_kg:
         min: 385
         max: 700
     erected_in: kurzanov1976b
+  - name: Alioramus altai
+    etymology: Altai, in reference to the Altai mountain range, a prominent
+      topographic feature of southern Mongolia
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Maastrichtian
+      from_ma: 72.1
+      to_ma: 66
+    location:
+      country: MN
+      region: Ömnögovi
+      formation: Nemegt
+      locality: Tsagaan Khushu
+    holotype:
+      specimen_id:
+        - IGM 100/1844
+      specimen_type: holotype
+      institution: MPC
+      material: Disarticulated skull; cervical series; some dorsal, sacral, and
+        caudal vertebrae; ribs; chevrons; right ilium; both ischia; both femora;
+        right crus, tarsus, and metatarsus; some pedal elements
+    size:
+      weight_kg:
+        min: 369
+        max: 369
+    diagnostic_features:
+      - Accessory pneumatic fenestra posterodorsal to the promaxillary fenestra
+      - Maxillary fenestra strongly elongate (length:depth ratio 1.9)
+      - Conical, dorsally projecting cornual process (horn) on the lacrimal
+      - Laterally projecting horn (hornlet) on the jugal
+      - 20 dentary alveoli (18 in A. remotus)
+      - Posterior margin of the iliac postacetabular process projects
+        posterodorsally
+    erected_in: brusatte2009b
+    described_in: brusatte2012b
 references:
   - id: kurzanov1976b
   - id: paul2024a
     notes: Source of the appearance features.
+  - id: brusatte2009b
+  - id: brusatte2012b
+    notes: Monographic redescription of the A. altai holotype (IGM 100/1844)
+      whose diagnosis supersedes the original 2009 description; source of the
+      diagnostic features and material inventory.
