@@ -1,6 +1,10 @@
 genus: Anodontosaurus
 parent: Ankylosaurinae
-etymology: "From Ancient Greek 'an' meaning 'without', 'odon' meaning 'tooth', and 'sauros' meaning 'lizard', meaning 'toothless lizard', inspired by compression damage to the specimen that removed the teeth and misled the describer into assuming large trituration plates had replaced the normal dentition."
+etymology: From Ancient Greek 'an' meaning 'without', 'odon' meaning 'tooth',
+  and 'sauros' meaning 'lizard', meaning 'toothless lizard', inspired by
+  compression damage to the specimen that removed the teeth and misled the
+  describer into assuming large trituration plates had replaced the normal
+  dentition.
 pronunciation:
   phonetic: an-o-DONT-o-SOR-us
 description: Anodontosaurus is an extinct genus of ankylosaurid dinosaurs within
@@ -45,7 +49,9 @@ identifiers:
     id: "24179445"
 species:
   - name: Anodontosaurus lambei
-    etymology: "Named for Lawrence Morris Lambe, the Canadian geologist and paleontologist from the Geological Survey of Canada where the holotype was reposited."
+    etymology: Named for Lawrence Morris Lambe, the Canadian geologist and
+      paleontologist from the Geological Survey of Canada where the holotype was
+      reposited.
     status: valid
     type_species: true
     period:
@@ -65,7 +71,8 @@ species:
         - 51.630001
         - -112.934799
     holotype:
-      specimen_id: [CMN 8530]
+      specimen_id:
+        - CMN 8530
       specimen_type: holotype
       institution: CMN
       material: Skull, left mandibular ramus, one caudal vertebra with co-ossified
@@ -76,13 +83,48 @@ species:
         min: 1.2
         max: 1.2
       length_m:
-        min: 4.0
-        max: 5.0
+        min: 4
+        max: 5
       weight_kg:
         min: 2000
         max: 2000
     erected_in: sternberg1929a
+  - name: Anodontosaurus inceptus
+    etymology: Latin inceptus, beginning or incipient, reflecting its
+      early/transitional stratigraphic position
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Campanian
+      from_ma: 76.5
+      to_ma: 74.4
+    location:
+      country: CA
+      region: Alberta
+      formation: Dinosaur Park
+      locality: Near Hilda
+    holotype:
+      specimen_id:
+        - TMP 1997.132.1
+      specimen_type: holotype
+      institution: TMP
+      material: Skull with teeth, mandible, a partially prepared skeleton, both
+        cervical half-rings, and osteoderms
+    diagnostic_features:
+      - Broader-based squamosal horns
+      - Fan-shaped nasal plate (bell-shaped in A. lambei)
+      - Lacks the four symmetric postnasal scales present in A. lambei
+      - More prominent coronoid process
+      - Possibly triangular manual unguals
+      - Relatively flat, subcircular medial osteoderms on the first cervical
+        half-ring with a low caudal prominence, and complex pyramidal lateral
+        osteoderms on the same half-ring
+    erected_in: penkalski2018a
 references:
   - id: sternberg1929a
   - id: jones2026a
     notes: Source of the hip height estimate, and the appearance features.
+  - id: penkalski2018a
