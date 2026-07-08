@@ -387,10 +387,10 @@ for (const file of findYamlFiles(path.join(root, "clades")))
 
     if (data && data.clade)
     {
-        // Derive authors/year from the erected_in reference (resolved against
-        // the store); fall back to the legacy described/authors.
-        let described = data.described;
-        let authors = data.authors;
+        // Derive authors/year from the erected_in reference (the
+        // nomenclatural-act paper), resolved against the store.
+        let described: number | undefined;
+        let authors: string | undefined;
 
         if (data.erected_in)
         {

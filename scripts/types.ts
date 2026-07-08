@@ -23,11 +23,6 @@ export type InstitutionEntry = {
          * City where the institution is located.
          */
         city?: string;
-
-        /**
-         * Campus or building, when disambiguation is needed.
-         */
-        campus?: string;
     };
 
     /**
@@ -450,7 +445,7 @@ export type Identifier = {
     /**
      * Identifier value within the source database.
      */
-    id?: string | number;
+    id?: string;
 };
 
 /**
@@ -505,12 +500,12 @@ export type Reference = {
     /**
      * Volume number of the journal or series.
      */
-    volume?: string | number;
+    volume?: string;
 
     /**
      * Issue number within the volume.
      */
-    issue?: string | number;
+    issue?: string;
 
     /**
      * Page range (e.g. "1-65").
@@ -701,10 +696,6 @@ export type GenusData = {
      */
     authors?: string;
 
-    /**
-     * Media items associated with this genus (photos, reconstructions).
-     */
-    media?: Array<unknown>;
 };
 
 /**
@@ -768,18 +759,6 @@ export type CladeData = {
      * omitted.
      */
     described_in?: string;
-
-    /**
-     * @deprecated Use `erected_in` instead — year is derived from its reference.
-     * Retained transitionally until all clade files migrate.
-     */
-    described?: number;
-
-    /**
-     * @deprecated Use `erected_in` instead — authors are derived from its
-     * reference. Retained transitionally until all clade files migrate.
-     */
-    authors?: string;
 
     /**
      * Technical anatomical features that define membership in this clade.
@@ -898,11 +877,6 @@ export type Schema = {
      * Allowed external identifier sources.
      */
     identifier_sources?: Array<string>;
-
-    /**
-     * Allowed image type categories.
-     */
-    image_types?: Array<string>;
 
     /**
      * Allowed geological period names.

@@ -1,7 +1,7 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
 import * as url from "node:url";
-import type { CladeData, GenusData, InstitutionEntry, Reference, Schema, TreeNode } from "./types.ts";
+import type { GenusData, InstitutionEntry, Reference, Schema, TreeNode } from "./types.ts";
 import { collectAllKeys, findYamlFiles, parseYaml } from "./utilities.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
@@ -154,24 +154,6 @@ for (const file of findYamlFiles(path.join(root, "genera")))
     if (data.authors)
     {
         extractAuthorSurnames(data.authors);
-    }
-}
-
-for (const file of findYamlFiles(path.join(root, "clades")))
-{
-    const data = parseYaml<CladeData>(file);
-
-    if (!data)
-    {
-        continue;
-    }
-
-    if (data.authors)
-    {
-        for (const author of data.authors)
-        {
-            extractAuthorSurnames(author);
-        }
     }
 }
 

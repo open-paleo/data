@@ -1976,7 +1976,7 @@ export function toGenusYaml(enriched: EnrichedGenus, reference: Record<string, s
         genus.appearance = { integument: enriched.integument };
     }
 
-    const identifiers = new Array<{ source: string; id: string | number }>();
+    const identifiers = new Array<{ source: string; id: string }>();
 
     identifiers.push({ source: "pbdb", id: String(enriched.pbdbId) });
 
