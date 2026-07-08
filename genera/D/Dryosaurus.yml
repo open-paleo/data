@@ -3,7 +3,9 @@ parent: Dryosauridae
 pronunciation:
   ipa: /ˌdraɪəˈsɔːrəs/
   phonetic: DRY-uh-SOR-uhs
-etymology: "From Greek drys (δρῦς), 'tree' or 'oak', + Greek sauros, 'lizard'; means 'tree lizard', reflecting the forested habitat rather than the shape of its teeth"
+etymology: From Greek drys (δρῦς), 'tree' or 'oak', + Greek sauros, 'lizard';
+  means 'tree lizard', reflecting the forested habitat rather than the shape of
+  its teeth
 description: Dryosaurus meaning 'tree, oak' and σαυρος (sauros) meaning 'lizard'
   (the name reflects the forested habitat, not a vague oak-leaf shape of its
   cheek teeth as is sometimes assumed)) is an extinct genus of herbivorous
@@ -41,7 +43,9 @@ identifiers:
     id: "4823065"
 species:
   - name: Dryosaurus altus
-    etymology: "From Latin 'altus' meaning 'tall', given because the specimens were larger than those of Laosaurus celer, the species it was originally compared to when named as Laosaurus altus."
+    etymology: From Latin 'altus' meaning 'tall', given because the specimens were
+      larger than those of Laosaurus celer, the species it was originally
+      compared to when named as Laosaurus altus.
     status: valid
     type_species: true
     period:
@@ -61,7 +65,8 @@ species:
         - 41.9077
         - -105.963402
     holotype:
-      specimen_id: [YPM 1876]
+      specimen_id:
+        - YPM 1876
       specimen_type: holotype
       institution: YPM
       material: Tooth, pelvis, and hind leg.
@@ -71,23 +76,68 @@ species:
         min: 0.9
         max: 0.9
       length_m:
-        min: 3.0
-        max: 3.0
+        min: 3
+        max: 3
       weight_kg:
         min: 100
         max: 100
     erected_in: marsh1894a
+  - name: Dryosaurus elderae
+    etymology: Honors Ann Schaffer Elder (1958-2009) for her assistance to
+      Carpenter at the Carnegie Quarry, Dinosaur National Monument.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Jurassic
+      stage:
+        - Kimmeridgian
+        - Tithonian
+      from_ma: 154.8
+      to_ma: 145
+    location:
+      country: US
+      region: Utah
+      formation: Morrison
+      member: Brushy Basin
+      locality: Carnegie Quarry, Dinosaur National Monument, Uintah County
+    holotype:
+      specimen_id:
+        - CM 3392
+      specimen_type: holotype
+      institution: CM
+      material: "Partial articulated skeleton: skull and lower jaw, six cervicals,
+        thirteen dorsals, sacrum, pelvis, right scapula, coracoid and humerus,
+        partial right hind limb, and an articulated left hind foot"
+    diagnostic_features:
+      - Maxillary teeth with a broad midline ridge bearing up to three fine
+        secondary longitudinal ridges (weak primary ridge with few secondary
+        ridges in D. altus)
+      - Horizontal maxillary ramus of the jugal below the orbit deep (slender in
+        D. altus)
+      - Basal tuberae massive projections separated by a midline sulcus (a
+        posteroventral sheet or wedge with no sulcus in D. altus)
+      - Anterior cervical vertebrae low relative to their length (shorter and
+        taller in D. altus)
+      - Ilium long and low, especially the postacetabular process
+    erected_in: carpenter2018b
 notable_specimens:
-  - specimen_id: [CM 11340]
+  - specimen_id:
+      - CM 11340
     institution: CM
     category: ontogeny
-    significance: "Front half of a hatchling skeleton from Dinosaur National Monument, Utah. It confirmed that Dryosaurus followed craniofacial growth patterns seen in other vertebrates: proportionally large eyes and a short snout when young, with eyes shrinking and snout lengthening with age."
+    significance: "Front half of a hatchling skeleton from Dinosaur National
+      Monument, Utah. It confirmed that Dryosaurus followed craniofacial growth
+      patterns seen in other vertebrates: proportionally large eyes and a short
+      snout when young, with eyes shrinking and snout lengthening with age."
     discovered:
       year: 1922
-      by: "Earl Douglass"
-    references: [carpenter1994a]
+      by: Earl Douglass
+    references:
+      - carpenter1994a
 references:
   - id: marsh1894a
   - id: jones2026a
     notes: Source of the hip height estimate, and the appearance features.
   - id: carpenter1994a
+  - id: carpenter2018b
