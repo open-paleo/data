@@ -958,12 +958,16 @@ for (const [filePath, doc] of allParsed)
     }
 }
 
-// 12c. Reference key disambiguation — every store key carries a disambiguation
-// letter (universal `a`-suffixing), so keys are uniformly
-// `<surname><year><letter>` and adding another same-author-year paper never
-// renames an existing key or retags its citations. A bare key (ending in its
-// year) violates this convention.
+// 12c. Reference key disambiguation — every store key is uniformly
+// `<surname><year><letter>`: a non-numeric author fragment, a 4-digit year,
+// and a single lowercase a-z disambiguation suffix (universal `a`-suffixing).
+// This keeps keys machine-parseable and means adding another same-author-year
+// paper never renames an existing key or retags its citations. Both a bare key
+// (ending in its year) and a non-letter suffix (e.g. `sereno1986marginocephalia`)
+// violate the convention.
 startCheck("Reference key disambiguation");
+
+const referenceKeyPattern = /^\D+\d{4}[a-z]$/;
 
 const referenceStoreFileById = new Map<string, string>();
 
@@ -977,12 +981,16 @@ for (const [filePath, entry] of referenceStoreParsed)
 
 for (const referenceId of referenceStoreIds)
 {
-    if (/\d$/.test(referenceId))
+    if (!referenceKeyPattern.test(referenceId))
     {
+        const suggestion = /\d$/.test(referenceId)
+            ? ` (append a disambiguation letter, e.g. '${referenceId}a')`
+            : "";
+
         checkError(
             "Reference key disambiguation",
             referenceStoreFileById.get(referenceId) ?? "(store)",
-            `bare reference key '${referenceId}' must carry a disambiguation letter (rename to '${referenceId}a')`,
+            `reference key '${referenceId}' must be <surname><year><letter>: a non-numeric author, a 4-digit year, and a single a-z suffix${suggestion}`,
         );
     }
 }
