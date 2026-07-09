@@ -1,5 +1,5 @@
 genus: Emiliasaura
-parent: Dryosauridae
+parent: Iguanodontia
 etymology: "Named in honor of Emilia (likely a personal name) + Latin saura (lizard): 'Emilia's lizard'."
 pronunciation:
   phonetic: eh-MEE-lee-uh-SOH-ruh
@@ -14,14 +14,26 @@ description: Emiliasaura is an extinct genus of iguanodontian ornithopod
 dispute:
   summary: >
     Emiliasaura alessandrii was described as an early-diverging
-    rhabdodontomorph, but Czepiński and Madzia (2025), followed by Jones
-    (2026), instead recover it within Dryosauridae; some readings place
-    it among basal styracosternans.
+    rhabdodontomorph (Coria and others, 2025) — which would make it the
+    oldest and first South American member of that clade — but the
+    dedicated reanalysis of Czepiński and Madzia (2025) instead recovers
+    it as an early-diverging styracosternan and considers a
+    rhabdodontomorph identity unlikely. No analysis recovers it within
+    Dryosauridae.
   history:
     - date: "2026-06-29"
       note: Placed at Dryosauridae following Czepiński and Madzia (2025)
         and Jones (2026); the rhabdodontomorph and styracosternan
         alternatives reflected, not adopted.
+    - date: "2026-07-09"
+      note: Re-evaluated and moved to Iguanodontia incertae sedis.
+        Neither primary analysis supports Dryosauridae — the describing
+        study (Coria and others 2025) recovers a rhabdodontomorph and
+        Czepiński and Madzia (2025) recover a styracosternan — so
+        Iguanodontia is the least-inclusive clade both accept. The
+        earlier Dryosauridae placement, attributed to a
+        within-Dryosauridae reading of Czepiński and Madzia (2025), is
+        not supported by that paper.
 diet: herbivore
 locomotion: bipedal
 paleoenvironment:
@@ -77,7 +89,13 @@ species:
     erected_in: coria2025a
 references:
   - id: coria2025a
+    notes: Describing paper; recovered Emiliasaura as an early-diverging
+      rhabdodontomorph, the oldest member and first from South America.
+  - id: poole2022a
+    notes: Phylogeny of iguanodontian dinosaurs; the character framework
+      underlying the rhabdodontomorph hypothesis for this taxon.
   - id: czepiński2025a
-    notes: Recovered Emiliasaura within Dryosauridae rather than as a basal rhabdodontomorph.
+    notes: Recovered Emiliasaura as an early-diverging styracosternan and
+      considered a rhabdodontomorph identity unlikely.
   - id: jones2026a
-    notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+    notes: Assessment in the Princeton Encyclopedia of Dinosaurs.
