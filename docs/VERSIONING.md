@@ -101,8 +101,9 @@ under `dist/bindings/`:
   `datamodel-code-generator`)
 
 The build workflow regenerates and commits them **only when
-`schemas/open-paleo.schema.json` changes** (guarded by a content hash stored at
-`dist/bindings/.schema-hash`), so ordinary data pushes don't churn them.
+`schemas/open-paleo.schema.json` changes** (it compares the schema at the
+pre-push commit against the current file), so ordinary data pushes don't churn
+them.
 Regenerate locally with `npm run generate-bindings` (requires
 `pip install datamodel-code-generator`). Generation is deterministic, so an
 unchanged schema produces no diff.

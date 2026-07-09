@@ -33,19 +33,24 @@ jobs:
 
       # Regenerate the typed bindings only when the JSON Schema they derive
       # from actually changed, so ordinary data pushes don't pay the Python
-      # setup + generation cost or churn the bindings. The schema's content
-      # hash is stored next to the generated bindings; a mismatch (or missing
-      # bindings) triggers a rebuild.
+      # setup + generation cost or churn the bindings. Compares the schema at
+      # the pre-push commit (github.event.before) with the current file;
+      # regenerates on any difference, when that commit is unavailable
+      # (force-push, first push), or when the bindings are missing.
       - name: Decide whether to regenerate bindings
         id: bindings
         run: |
-          new_hash="$(sha256sum schemas/open-paleo.schema.json | cut -d' ' -f1)"
-          old_hash="$(cat dist/bindings/.schema-hash 2>/dev/null || echo '')"
-          if [ "$new_hash" != "$old_hash" ] || [ ! -f dist/bindings/open_paleo.py ] || [ ! -f dist/bindings/open-paleo.d.ts ]; then
-            echo "generate=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "generate=false" >> "$GITHUB_OUTPUT"
+          before="${{ github.event.before }}"
+          generate=true
+          if [ -f dist/bindings/open_paleo.py ] && [ -f dist/bindings/open-paleo.d.ts ] \
+            && [ -n "$before" ] && [ "$before" != "0000000000000000000000000000000000000000" ] \
+            && git fetch --depth=1 origin "$before" 2>/dev/null \
+            && git cat-file -e "$before:schemas/open-paleo.schema.json" 2>/dev/null; then
+            old="$(git show "$before:schemas/open-paleo.schema.json" | sha256sum | cut -d' ' -f1)"
+            new="$(sha256sum schemas/open-paleo.schema.json | cut -d' ' -f1)"
+            [ "$old" = "$new" ] && generate=false
           fi
+          echo "generate=$generate" >> "$GITHUB_OUTPUT"
 
       - name: Setup Python
         if: steps.bindings.outputs.generate == 'true'
@@ -59,9 +64,7 @@ jobs:
 
       - name: Generate type bindings
         if: steps.bindings.outputs.generate == 'true'
-        run: |
-          npm run generate-bindings
-          sha256sum schemas/open-paleo.schema.json | cut -d' ' -f1 > dist/bindings/.schema-hash
+        run: npm run generate-bindings
 
       - name: Commit build outputs
         run: |
