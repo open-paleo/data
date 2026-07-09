@@ -99,6 +99,8 @@ open-paleo/
   flagged-sources.yml       # Publishers and journals requiring reviewer verification
   clades/                   # One YAML file per clade (e.g., Dinosauria.yml)
   genera/                   # One YAML file per genus, organized alphabetically (e.g., genera/T/Tyrannosaurus.yml)
+  references/               # Canonical reference store (references/<letter>/<key>.yml)
+  schemas/                  # JSON Schema describing the built dataset (shipped in dist/)
   media/                    # Images (specimen photos, reconstructions, skeletal diagrams)
   dist/                     # Built output files (JSON, YAML, Newick, NEXUS, BibTeX)
   scripts/                  # Validation, build, and automation scripts
@@ -118,7 +120,7 @@ Each clade has a YAML file with its name, description, defining characteristics,
 
 ### `tree.yml`
 
-The single source of truth for phylogenetic structure. Defines the parent-child relationships between all clades, from Life down to the family or subfamily level. Genera are placed within this tree via their `parent_clade` field.
+The single source of truth for phylogenetic structure. Defines the parent-child relationships between all clades, from Life down to the family or subfamily level. Genera are placed within this tree via their `parent` field.
 
 ### `schema.yml`
 
@@ -132,6 +134,20 @@ A structured registry of museums, universities, and other institutions that hold
 
 A list of publishers and journals whose citations warrant additional reviewer scrutiny — predatory or borderline-predatory sources where individual papers may still be sound but a second look is warranted. The list mirrors [Beall's List](https://beallslist.net/) (filtered to paleontology-adjacent domains) with a small number of community-added sources. When a contribution cites a flagged publisher or journal, the validator emits a warning and the CI workflow posts a sticky pull-request comment asking the reviewer to sign off on the citation before merge. Citations are **never auto-rejected** — the goal is informed review, not blanket blocking. See [CONTRIBUTING.md](CONTRIBUTING.md#flagged-publication-sources) for the policy and the process for proposing additions or removals.
 
+### Data stability and versioning
+
+The **source YAML** under `genera/`, `clades/`, and `references/` is an
+editing format. Its layout may change between releases — treat it as internal.
+
+The **built outputs** in `dist/` are the stable, versioned contract. Build
+against `dist/open-paleo.json` or `dist/open-paleo.yml`, and validate against
+`dist/open-paleo.schema.json`. The output shape is versioned by
+`_metadata.schema_version` using semantic versioning: a **major** bump signals
+a breaking change to the output, a **minor** bump adds a field or vocabulary
+value (existing consumers keep working), and a **patch** is a documentation or
+derivation fix. See [docs/VERSIONING.md](docs/VERSIONING.md) for the full
+policy.
+
 ## Output Formats
 
 The build script (`scripts/build.ts`) produces the following output files in `dist/`:
@@ -143,6 +159,7 @@ The build script (`scripts/build.ts`) produces the following output files in `di
 | **Newick** | Phylogenetic tree in Newick notation, compatible with tree visualization software |
 | **NEXUS** | Phylogenetic tree in NEXUS format, compatible with phylogenetic analysis tools |
 | **BibTeX** | All references in BibTeX format, for use in academic papers and citation managers |
+| **JSON Schema** | `open-paleo.schema.json` — a JSON Schema (2020-12) describing the JSON/YAML output, for validating consumers and generating typed bindings |
 
 ## Contributing
 

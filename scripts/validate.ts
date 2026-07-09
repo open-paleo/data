@@ -2565,6 +2565,78 @@ for (const [filePath, doc] of allParsed)
     }
 }
 
+// 26. Output schema sync — the shipped JSON Schema (schemas/open-paleo.schema.json)
+// inlines the controlled-vocabulary enums for consumers, so they must stay in
+// step with schema.yml (the authoritative source). Drift here means the
+// published contract disagrees with what this validator enforces.
+startCheck("Output schema sync");
+
+const outputSchemaPath = path.join(root, "schemas", "open-paleo.schema.json");
+let outputSchema: { $defs?: Record<string, { enum?: Array<string> }> } | null = null;
+
+try
+{
+    outputSchema = JSON.parse(fs.readFileSync(outputSchemaPath, "utf8"));
+}
+catch (error: unknown)
+{
+    const message = error instanceof Error ? error.message : String(error);
+    checkError("Output schema sync", outputSchemaPath, `cannot read JSON Schema: ${message}`);
+}
+
+if (outputSchema)
+{
+    const outputSchemaDefs = outputSchema.$defs ?? {};
+
+    /**
+     * Compares one JSON-Schema enum against the authoritative schema.yml list,
+     * order-independent, and reports any divergence.
+     *
+     * @param defName - The $defs key holding the enum in the JSON Schema.
+     * @param allowedValues - The authoritative values from schema.yml.
+     */
+    const checkEnumSync = (defName: string, allowedValues: Array<string>): void =>
+    {
+        const schemaEnum = outputSchemaDefs[defName]?.enum;
+
+        if (!Array.isArray(schemaEnum))
+        {
+            checkError("Output schema sync", outputSchemaPath, `$defs.${defName}.enum is missing`);
+            return;
+        }
+
+        const expected = [...allowedValues].sort();
+        const actual = [...schemaEnum].sort();
+        const missing = expected.filter((value) => !actual.includes(value));
+        const extra = actual.filter((value) => !expected.includes(value));
+
+        if (missing.length > 0 || extra.length > 0)
+        {
+            checkError(
+                "Output schema sync",
+                outputSchemaPath,
+                `$defs.${defName}.enum out of sync with schema.yml (missing: ${missing.join(", ") || "none"}; extra: ${extra.join(", ") || "none"})`);
+        }
+    };
+
+    const schemaVocabularies = schema as unknown as Record<string, Array<string>>;
+
+    const enumDefNames: Array<string> = [
+        "status", "synonym_types", "diet", "locomotion", "completeness",
+        "holotype_status", "specimen_types", "specimen_categories",
+        "iczn_ruling_types", "integument", "integument_evidence",
+        "paleoenvironments", "identifier_sources", "periods",
+    ];
+
+    for (const defName of enumDefNames)
+    {
+        checkEnumSync(defName, schemaVocabularies[defName] ?? []);
+    }
+
+    checkEnumSync("appearance_features", [...allowedFeatures]);
+    checkEnumSync("stages", Object.keys(stages));
+}
+
 // Output
 
 console.log("Validating Open Paleo data...\n");

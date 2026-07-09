@@ -1,0 +1,282 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/open-paleo/data/main/schemas/open-paleo.schema.json",
+  "title": "Open Paleo dataset",
+  "description": "Schema for the built Open Paleo dataset (dist/open-paleo.json and dist/open-paleo.yml). This describes the STABLE output contract, versioned by _metadata.schema_version. The source YAML under genera/, clades/, and references/ is an editing format and is NOT covered by this schema. Objects intentionally allow additional properties so that future additive (minor-version) fields validate against a pinned v1 schema. Controlled-vocabulary enums under $defs mirror schema.yml, which remains the authoritative source (a validator check keeps them in sync).",
+  "type": "object",
+  "required": ["_metadata", "tree", "clades", "genera"],
+  "properties": {
+    "_metadata": { "$ref": "#/$defs/metadata" },
+    "tree": { "$ref": "#/$defs/treeNode" },
+    "clades": {
+      "type": "object",
+      "description": "Processed clade records keyed by clade name.",
+      "additionalProperties": { "$ref": "#/$defs/clade" }
+    },
+    "genera": {
+      "type": "object",
+      "description": "Processed genus records keyed by genus name.",
+      "additionalProperties": { "$ref": "#/$defs/genus" }
+    }
+  },
+  "$defs": {
+    "metadata": {
+      "type": "object",
+      "required": ["version", "schema_version", "built_at", "license", "attribution", "genus_count", "clade_count"],
+      "properties": {
+        "version": { "type": "string", "description": "Calendar version of the data release (YYYY.MM)." },
+        "schema_version": { "type": "string", "description": "Semantic version of this output schema (see docs/VERSIONING.md)." },
+        "built_at": { "type": "string", "format": "date-time" },
+        "license": { "type": "string" },
+        "attribution": { "type": "string" },
+        "genus_count": { "type": "integer", "minimum": 0 },
+        "clade_count": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "treeNode": {
+      "type": "object",
+      "description": "Recursive clade hierarchy: each key is a clade name whose value is its subtree (an empty object for a leaf).",
+      "additionalProperties": { "$ref": "#/$defs/treeNode" }
+    },
+    "clade": {
+      "type": "object",
+      "required": ["taxonomy"],
+      "properties": {
+        "description": { "type": "string" },
+        "taxonomy": { "$ref": "#/$defs/taxonomy" },
+        "type_genus": { "type": "string", "description": "Type genus of a rank-based name; absent for unranked clades." },
+        "described": { "type": "integer", "description": "Year the clade was erected (derived from erected_in)." },
+        "authors": { "type": "string", "description": "Author(s) who erected the clade (derived from erected_in)." },
+        "diagnostic_features": { "type": "array", "items": { "type": "string" } },
+        "references": { "type": "array", "items": { "$ref": "#/$defs/reference" } }
+      }
+    },
+    "genus": {
+      "type": "object",
+      "required": ["genus", "parent", "description", "species", "taxonomy"],
+      "properties": {
+        "genus": { "type": "string" },
+        "parent": { "type": "string", "description": "Parent clade name (a node in tree)." },
+        "taxonomy": { "$ref": "#/$defs/taxonomy" },
+        "etymology": { "type": "string" },
+        "pronunciation": { "$ref": "#/$defs/pronunciation" },
+        "description": { "type": "string" },
+        "dispute": { "$ref": "#/$defs/dispute" },
+        "diet": { "$ref": "#/$defs/diet" },
+        "locomotion": { "$ref": "#/$defs/locomotion" },
+        "paleoenvironment": { "type": "array", "items": { "$ref": "#/$defs/paleoenvironments" } },
+        "appearance": { "$ref": "#/$defs/appearance" },
+        "diagnostic_features": { "type": "array", "items": { "type": "string" } },
+        "identifiers": { "type": "array", "items": { "$ref": "#/$defs/identifier" } },
+        "synonyms": { "type": "array", "items": { "$ref": "#/$defs/synonym" } },
+        "species": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/species" } },
+        "notable_specimens": { "type": "array", "items": { "$ref": "#/$defs/notableSpecimen" } },
+        "references": { "type": "array", "items": { "$ref": "#/$defs/reference" } },
+        "iczn_rulings": { "type": "array", "items": { "$ref": "#/$defs/icznRuling" } },
+        "described": { "type": "integer", "description": "Year the genus was erected (derived from its authority)." },
+        "authors": { "type": "string", "description": "Author(s) who erected the genus (derived from its authority)." }
+      }
+    },
+    "species": {
+      "type": "object",
+      "required": ["name", "status", "period", "erected_in"],
+      "properties": {
+        "name": { "type": "string", "description": "Binomial (e.g. \"Tyrannosaurus rex\")." },
+        "status": { "$ref": "#/$defs/status" },
+        "type_species": { "type": "boolean" },
+        "completeness": { "$ref": "#/$defs/completeness" },
+        "etymology": { "type": "string" },
+        "type_specimen": { "$ref": "#/$defs/typeSpecimen" },
+        "period": { "$ref": "#/$defs/period" },
+        "location": { "$ref": "#/$defs/location" },
+        "size": { "$ref": "#/$defs/size" },
+        "described": { "type": "integer", "description": "Year the species was described (derived from erected_in)." },
+        "authors": { "type": "string", "description": "Species author(s) (derived from erected_in)." },
+        "description": { "type": "string" },
+        "synonyms": { "type": "array", "items": { "$ref": "#/$defs/synonym" } },
+        "diagnostic_features": { "type": "array", "items": { "type": "string" } },
+        "erected_in": { "type": "string", "description": "Reference id of the nomenclatural act establishing the combination." },
+        "described_in": { "type": "string", "description": "Reference id of the authoritative descriptive source; falls back to erected_in." }
+      }
+    },
+    "typeSpecimen": {
+      "type": "object",
+      "description": "Type-specimen block: the holotype, or a syntype/lectotype/neotype series (see specimen_type).",
+      "properties": {
+        "specimen_id": { "type": "array", "items": { "type": "string" }, "description": "Catalogue number(s), one per element." },
+        "specimen_type": { "$ref": "#/$defs/specimen_types" },
+        "institution": { "type": "string", "description": "Resolved institution display name." },
+        "material": { "type": "string" },
+        "status": { "$ref": "#/$defs/holotype_status" },
+        "completeness": { "$ref": "#/$defs/completeness" },
+        "notes": { "type": "string" }
+      }
+    },
+    "notableSpecimen": {
+      "type": "object",
+      "required": ["significance"],
+      "properties": {
+        "nickname": { "type": "string" },
+        "specimen_id": { "type": "array", "items": { "type": "string" } },
+        "institution": { "type": "string", "description": "Resolved institution display name." },
+        "status": { "$ref": "#/$defs/holotype_status" },
+        "species": { "type": "string" },
+        "category": { "$ref": "#/$defs/specimen_categories" },
+        "significance": { "type": "string" },
+        "discovered": {
+          "type": "object",
+          "properties": {
+            "year": { "type": "integer" },
+            "by": { "type": "string" }
+          }
+        },
+        "references": { "type": "array", "items": { "type": "string" }, "description": "Reference ids resolving within this genus's references." }
+      }
+    },
+    "reference": {
+      "type": "object",
+      "required": ["id"],
+      "description": "Inflated bibliographic record (store fields merged with the citing pointer's local notes).",
+      "properties": {
+        "id": { "type": "string" },
+        "authors": { "type": "string" },
+        "year": { "type": "integer" },
+        "title": { "type": "string" },
+        "journal": { "type": "string" },
+        "book": { "type": "string" },
+        "series": { "type": "string" },
+        "publisher": { "type": "string" },
+        "volume": { "type": "string" },
+        "issue": { "type": "string" },
+        "pages": { "type": "string" },
+        "article_number": { "type": "string" },
+        "doi": { "type": "string" },
+        "isbn": { "type": "string" },
+        "url": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    },
+    "identifier": {
+      "type": "object",
+      "properties": {
+        "source": { "$ref": "#/$defs/identifier_sources" },
+        "id": { "type": "string" }
+      }
+    },
+    "synonym": {
+      "type": "object",
+      "required": ["name", "type"],
+      "properties": {
+        "name": { "type": "string" },
+        "type": { "$ref": "#/$defs/synonym_types" },
+        "reason": { "type": "string" }
+      }
+    },
+    "icznRuling": {
+      "type": "object",
+      "properties": {
+        "type": { "$ref": "#/$defs/iczn_ruling_types" },
+        "ruling": { "type": "string", "description": "Reference id of the published Opinion." },
+        "petition": { "type": "string", "description": "Reference id of the Case/application." },
+        "notes": { "type": "string" }
+      }
+    },
+    "dispute": {
+      "type": "object",
+      "required": ["summary"],
+      "properties": {
+        "summary": { "type": "string" },
+        "history": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["date", "note"],
+            "properties": {
+              "date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+              "note": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "pronunciation": {
+      "type": "object",
+      "properties": {
+        "ipa": { "type": "string" },
+        "phonetic": { "type": "string" }
+      }
+    },
+    "appearance": {
+      "type": "object",
+      "properties": {
+        "integument": { "$ref": "#/$defs/integument" },
+        "evidence": { "$ref": "#/$defs/integument_evidence" },
+        "features": { "type": "array", "items": { "$ref": "#/$defs/appearance_features" } }
+      }
+    },
+    "period": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "array", "items": { "$ref": "#/$defs/periods" } },
+        "stage": { "type": "array", "items": { "$ref": "#/$defs/stages" } },
+        "from_ma": { "type": "number" },
+        "to_ma": { "type": "number" }
+      }
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "country": { "type": "string", "pattern": "^[A-Z]{2}$", "description": "ISO 3166-1 alpha-2 code (see schema.yml countries)." },
+        "region": { "type": "string" },
+        "locality": { "type": "string" },
+        "formation": { "type": "string" },
+        "member": { "type": "string" },
+        "coordinates": {
+          "type": "array",
+          "description": "[latitude, longitude] in decimal degrees.",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": { "type": "number" }
+        }
+      }
+    },
+    "size": {
+      "type": "object",
+      "properties": {
+        "length_m": { "$ref": "#/$defs/sizeRange" },
+        "weight_kg": { "$ref": "#/$defs/sizeRange" },
+        "hip_height_m": { "$ref": "#/$defs/sizeRange" },
+        "skull_length_m": { "$ref": "#/$defs/sizeRange" }
+      }
+    },
+    "sizeRange": {
+      "type": "object",
+      "required": ["min", "max"],
+      "properties": {
+        "min": { "type": "number", "exclusiveMinimum": 0 },
+        "max": { "type": "number", "exclusiveMinimum": 0 }
+      }
+    },
+    "taxonomy": {
+      "type": "array",
+      "description": "Ordered ancestor clade names from root to the record's placement.",
+      "items": { "type": "string" }
+    },
+    "status": { "type": "string", "enum": ["valid", "nomen dubium", "nomen nudum", "disputed"] },
+    "synonym_types": { "type": "string", "enum": ["junior subjective", "junior objective", "possible subjective", "preoccupied", "reassigned", "nomen oblitum", "nomen rejectum", "nomen nudum", "nomen ex dissertatione", "nomen manuscriptum", "informal", "boycotted"] },
+    "diet": { "type": "string", "enum": ["herbivore", "carnivore", "omnivore", "insectivore", "piscivore"] },
+    "locomotion": { "type": "string", "enum": ["bipedal", "quadrupedal", "facultative"] },
+    "completeness": { "type": "string", "enum": ["complete", "partial", "fragmentary"] },
+    "holotype_status": { "type": "string", "enum": ["destroyed", "lost", "uncatalogued", "unknown"] },
+    "specimen_types": { "type": "string", "enum": ["holotype", "syntype", "lectotype", "neotype", "unknown"] },
+    "specimen_categories": { "type": "string", "enum": ["most-complete", "largest-individual", "exceptional-preservation", "gut-contents", "reproductive", "pathology", "historic", "iconic", "complementary", "ontogeny", "range-extension", "sensory", "trace-association", "physiology", "individual-variation"] },
+    "iczn_ruling_types": { "type": "string", "enum": ["type-species", "type-specimen", "name-conservation", "name-suppression", "priority-reversal", "spelling-emendation"] },
+    "integument": { "type": "string", "enum": ["feathered", "scaled", "armored", "unknown"] },
+    "integument_evidence": { "type": "string", "enum": ["direct", "inferred"] },
+    "paleoenvironments": { "type": "string", "enum": ["fluvial", "lacustrine", "coastal", "deltaic", "arid", "forested", "wetland", "marine", "polar"] },
+    "identifier_sources": { "type": "string", "enum": ["zoobank", "wikidata", "gbif", "pbdb", "eol"] },
+    "periods": { "type": "string", "enum": ["Late Triassic", "Middle Triassic", "Early Triassic", "Late Jurassic", "Middle Jurassic", "Early Jurassic", "Late Cretaceous", "Early Cretaceous", "Late Permian", "Middle Permian", "Early Permian"] },
+    "stages": { "type": "string", "enum": ["Maastrichtian", "Campanian", "Santonian", "Coniacian", "Turonian", "Cenomanian", "Albian", "Aptian", "Barremian", "Hauterivian", "Valanginian", "Berriasian", "Tithonian", "Kimmeridgian", "Oxfordian", "Callovian", "Bathonian", "Bajocian", "Aalenian", "Toarcian", "Pliensbachian", "Sinemurian", "Hettangian", "Rhaetian", "Norian", "Carnian", "Ladinian", "Anisian", "Olenekian", "Induan", "Changhsingian", "Wuchiapingian", "Capitanian", "Wordian", "Roadian", "Kungurian", "Artinskian", "Sakmarian", "Asselian"] },
+    "appearance_features": { "type": "string", "enum": ["nasal crest", "hollow cranial crest", "solid cranial crest", "nasal horn", "brow horns", "cranial dome", "cranial bosses", "keratinous beak", "elongate snout", "enlarged caniniform teeth", "neck frill", "frill spikes", "epoccipitals", "downturned snout", "jugal horns", "feather crest", "snout hornlets", "orbital crest", "fleshy cranial crest", "square snout", "frontal horn", "procumbent teeth", "squamosal horns", "elongate neck", "bifurcated cervical spines", "neck spines", "cervical half rings", "dorsal sail", "dorsal spines", "dermal plates", "shoulder spikes", "osteoderms", "body armor", "enlarged manual claws", "sickle claw", "reduced forelimbs", "elongate forelimbs", "quill knobs", "membranous wing", "feathered wings", "hindlimb feathers", "enlarged pedal claws", "multiple pedal claws", "thumb spike", "reduced outer digit", "tail club", "tail spikes", "whiplash tail", "tail bristles", "feathered tail"] }
+  }
+}

@@ -533,4 +533,12 @@ for (const reference of [...referenceStore.values()].sort((first, second) => (fi
 
 fs.writeFileSync(path.join(dist, "references.bib"), bib);
 
-console.log("Built: open-paleo.json, open-paleo.yml, tree.newick, tree.nexus, references.bib");
+// Ship the JSON Schema that describes this output alongside the data, so
+// consumers can validate dist/open-paleo.json (and .yml) against it. The
+// schema is hand-authored under schemas/ (the source of truth); a validator
+// check keeps its controlled-vocabulary enums in sync with schema.yml.
+fs.copyFileSync(
+    path.join(root, "schemas", "open-paleo.schema.json"),
+    path.join(dist, "open-paleo.schema.json"));
+
+console.log("Built: open-paleo.json, open-paleo.yml, open-paleo.schema.json, tree.newick, tree.nexus, references.bib");
