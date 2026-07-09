@@ -31,6 +31,38 @@ jobs:
       - name: Build outputs
         run: npm run build
 
+      # Regenerate the typed bindings only when the JSON Schema they derive
+      # from actually changed, so ordinary data pushes don't pay the Python
+      # setup + generation cost or churn the bindings. The schema's content
+      # hash is stored next to the generated bindings; a mismatch (or missing
+      # bindings) triggers a rebuild.
+      - name: Decide whether to regenerate bindings
+        id: bindings
+        run: |
+          new_hash="$(sha256sum schemas/open-paleo.schema.json | cut -d' ' -f1)"
+          old_hash="$(cat dist/bindings/.schema-hash 2>/dev/null || echo '')"
+          if [ "$new_hash" != "$old_hash" ] || [ ! -f dist/bindings/open_paleo.py ] || [ ! -f dist/bindings/open-paleo.d.ts ]; then
+            echo "generate=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "generate=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Setup Python
+        if: steps.bindings.outputs.generate == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install binding generator
+        if: steps.bindings.outputs.generate == 'true'
+        run: pip install datamodel-code-generator==0.45.0
+
+      - name: Generate type bindings
+        if: steps.bindings.outputs.generate == 'true'
+        run: |
+          npm run generate-bindings
+          sha256sum schemas/open-paleo.schema.json | cut -d' ' -f1 > dist/bindings/.schema-hash
+
       - name: Commit build outputs
         run: |
           git config user.name "github-actions[bot]"

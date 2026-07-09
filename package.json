@@ -6,6 +6,7 @@
   "scripts": {
     "validate": "node --experimental-strip-types scripts/validate.ts",
     "build": "node --experimental-strip-types scripts/build.ts",
+    "generate-bindings": "mkdir -p dist/bindings && json2ts schemas/open-paleo.schema.json -o dist/bindings/open-paleo.d.ts && python3 -m datamodel_code_generator --input schemas/open-paleo.schema.json --input-file-type jsonschema --output-model-type pydantic_v2.BaseModel --disable-timestamp --collapse-root-models --output dist/bindings/open_paleo.py",
     "generate-dictionary": "node --experimental-strip-types scripts/generate-dictionary.ts",
     "lint": "eslint scripts/ .github/scripts/",
     "lint:fix": "eslint scripts/ .github/scripts/ --fix",
@@ -39,6 +40,7 @@
     "@types/node": "^22.19.15",
     "cspell": "8.17.5",
     "eslint": "9.18.0",
+    "json-schema-to-typescript": "^15.0.4",
     "typescript": "5.7.3",
     "typescript-eslint": "8.22.0"
   }

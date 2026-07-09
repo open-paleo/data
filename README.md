@@ -100,9 +100,9 @@ open-paleo/
   clades/                   # One YAML file per clade (e.g., Dinosauria.yml)
   genera/                   # One YAML file per genus, organized alphabetically (e.g., genera/T/Tyrannosaurus.yml)
   references/               # Canonical reference store (references/<letter>/<key>.yml)
-  schemas/                  # JSON Schema describing the built dataset (shipped in dist/)
+  schemas/                  # JSON Schema source describing the built dataset
   media/                    # Images (specimen photos, reconstructions, skeletal diagrams)
-  dist/                     # Built output files (JSON, YAML, Newick, NEXUS, BibTeX)
+  dist/                     # Built outputs (JSON, YAML, JSON Schema, Newick, NEXUS, BibTeX; typed bindings under dist/bindings/)
   scripts/                  # Validation, build, and automation scripts
   dictionaries/             # Auto-generated custom dictionary for spell checking
   .github/                  # Workflows and CODEOWNERS
@@ -147,6 +147,11 @@ a breaking change to the output, a **minor** bump adds a field or vocabulary
 value (existing consumers keep working), and a **patch** is a documentation or
 derivation fix. See [docs/VERSIONING.md](docs/VERSIONING.md) for the full
 policy.
+
+Typed bindings generated from the schema ship in
+[`dist/bindings/`](dist/bindings/): TypeScript declarations (`open-paleo.d.ts`)
+and Python Pydantic v2 models (`open_paleo.py`). They are regenerated whenever
+the schema changes, so they always match the current contract.
 
 ## Output Formats
 

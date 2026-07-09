@@ -89,3 +89,23 @@ can validate `dist/open-paleo.yml` live against the same schema.
 Because the schema leaves objects open to additional properties, a document
 built under a later **minor** schema version still validates against an earlier
 v1 schema — new fields are simply ignored by the older validator.
+
+## Typed bindings
+
+Language bindings generated from the schema ship as part of the `dist/` output,
+under `dist/bindings/`:
+
+- `dist/bindings/open-paleo.d.ts` — TypeScript declarations (via
+  `json-schema-to-typescript`)
+- `dist/bindings/open_paleo.py` — Python Pydantic v2 models (via
+  `datamodel-code-generator`)
+
+The build workflow regenerates and commits them **only when
+`schemas/open-paleo.schema.json` changes** (guarded by a content hash stored at
+`dist/bindings/.schema-hash`), so ordinary data pushes don't churn them.
+Regenerate locally with `npm run generate-bindings` (requires
+`pip install datamodel-code-generator`). Generation is deterministic, so an
+unchanged schema produces no diff.
+
+The recursive `tree` is typed as a nested dictionary in both bindings; its full
+recursive shape lives in the JSON Schema, which validation enforces.
