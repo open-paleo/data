@@ -1,22 +1,28 @@
 genus: Choconsaurus
-parent: Titanosauria
+parent: Somphospondyli
 etymology: Named after Villa El Chocón, the locality in Neuquén Province, Argentina where the holotype was found, + Greek sauros ('lizard'), meaning 'El Chocón lizard'.
 description: Choconsaurus is an extinct genus of herbivorous sauropod dinosaur
   belonging to the group Titanosauriformes, which lived in the area of
   present-day Argentina at the end of the Cretaceous.
 dispute:
   summary: >
-    Placed within Titanosauria as incertae sedis. The describing analysis (Simón
-    et al., 2018) recovered Choconsaurus as a non-eutitanosaurian (basal)
-    titanosaur, but reported near-equal support for two positions, a basal
-    titanosaur versus a non-titanosaurian (derived) somphospondylan, so its
-    membership in Titanosauria is not secure. It is placed at the base of
-    Titanosauria following the preferred result.
+    Placed at Somphospondyli incertae sedis. The describing analysis (Simón et
+    al., 2018) recovered Choconsaurus as a non-eutitanosaurian (basal) titanosaur
+    in its most parsimonious trees, but reported that titanosaur membership is
+    very weakly supported — a position outside Titanosauria (as a
+    non-titanosaurian somphospondylan) is only one step less parsimonious.
+    Somphospondyli is the least-inclusive clade both positions accept.
   history:
     - date: "2026-06-30"
       note: >
         Placed at Titanosauria incertae sedis; the describing analysis found
         near-equal support for a non-titanosaurian somphospondylan position.
+    - date: "2026-07-09"
+      note: >
+        Broadened to Somphospondyli incertae sedis: the describing analysis found
+        titanosaur membership very weakly supported, with a non-titanosaurian
+        somphospondylan position only one step less parsimonious, so the
+        conservative shared node is adopted.
 diet: herbivore
 locomotion: quadrupedal
 paleoenvironment:
@@ -85,5 +91,8 @@ species:
     erected_in: simón2018a
 references:
   - id: simón2018a
+    notes: Describing analysis; recovered Choconsaurus as a basal titanosaur but
+      found that placement very weakly supported, with a non-titanosaurian
+      somphospondylan position only one step longer.
   - id: jones2026b
     notes: Source of the body length, mass, and hip height estimates.

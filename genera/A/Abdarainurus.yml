@@ -1,5 +1,5 @@
 genus: Abdarainurus
-parent: Titanosauria
+parent: Somphospondyli
 etymology: Named after Abdrant Nuru, the holotype locality in Mongolia, combined with Latin 'urus' meaning 'tail'
 pronunciation:
   phonetic: ab-duh-RAY-noo-rus
@@ -11,19 +11,27 @@ description: Abdarainurus is a genus of titanosaur dinosaur from the Alagteeg
   several chevrons.
 dispute:
   summary: >
-    Placed within Titanosauria as incertae sedis. Abdarainurus is known only from
+    Placed at Somphospondyli incertae sedis. Abdarainurus is known only from
     highly unusual caudal vertebrae, including opisthocoelous anterior and middle
     caudals otherwise seen in Opisthocoelicaudia, and was erected as Titanosauria
-    incertae sedis (Averianov and Lopatin, 2020). The describers' preferred
-    result is a basal titanosaur, but their strict consensus also allows a
-    non-titanosaurian somphospondylan position, and they suggest it may represent
-    a previously unknown specialized lineage of Asian macronarians. It is placed
-    at Titanosauria following their preferred placement.
+    incertae sedis (Averianov and Lopatin, 2020). Their preferred (implied
+    weighting) analysis recovers a basal titanosaur, as does the most recent
+    dedicated analysis (Han et al., 2024, which recovers it as sister to
+    Gandititan), but the equal-weighting strict consensus of the erecting paper
+    allows a non-titanosaurian somphospondylan position. Somphospondyli is the
+    least-inclusive clade all these hypotheses accept.
   history:
     - date: "2026-06-30"
       note: >
         Placed at Titanosauria incertae sedis per Averianov and Lopatin (2020); a
         non-titanosaurian somphospondylan position is noted as possible.
+    - date: "2026-07-09"
+      note: >
+        Broadened to Somphospondyli incertae sedis: although the describers'
+        preferred result and Han et al. (2024) both recover a basal titanosaur,
+        the equal-weighting analysis of the erecting paper recovers a
+        non-titanosaurian somphospondylan, so the conservative shared node is
+        adopted.
 diet: herbivore
 locomotion: quadrupedal
 paleoenvironment:
@@ -94,5 +102,11 @@ species:
       completeness: fragmentary
 references:
   - id: averianov2020a
+    notes: Erecting paper; recovered Abdarainurus as a basal titanosaur under
+      implied weighting, but as a non-titanosaurian somphospondylan under equal
+      weighting.
+  - id: han2024a
+    notes: Recovered Abdarainurus within Titanosauria as the sister taxon of
+      Gandititan.
   - id: jones2026b
     notes: Source of the body length, mass, and hip height estimates.
