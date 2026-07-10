@@ -1,18 +1,29 @@
 genus: Deltadromeus
-parent: Noasauridae
+parent: Averostra
 dispute:
   summary: >
-    The affinities of Deltadromeus are contested. Carrano and Sampson (2008)
-    and Rauhut and Carrano (2016) recovered it as a basal noasaurid, the
-    interpretation followed here, but it has also been interpreted as a
-    coelurosaur, a megaraptoran-grade avetheropod, and a basal
-    carcharodontosaurian (Hendrickx and colleagues, 2024), and a synonymy
-    with Bahariasaurus has been proposed.
+    The affinities of Deltadromeus are deeply contested, spanning both major
+    averostran lineages. On the ceratosaur side, Carrano and Sampson (2008)
+    recovered it as a basal ceratosaur (explicitly rejecting the earlier
+    noasaurid interpretation). On the tetanuran side, the describing paper
+    (Sereno and others, 1996) recovered a basal coelurosaur, Apesteguía and
+    others (2016) a neovenatorid allosauroid (sister to Gualicho), Motta and
+    others (2016) a megaraptoran, and Delcourt and others (2025) an
+    ornithomimosaur. A synonymy with Bahariasaurus has also been proposed but
+    is not adopted. Averostra is the least-inclusive clade all these
+    hypotheses accept.
   history:
     - date: "2026-06-30"
       note: >
         Placed at Noasauridae following the prevailing interpretation (P2,
         P3); the non-ceratosaur alternatives are recorded.
+    - date: "2026-07-09"
+      note: >
+        Broadened from Noasauridae to Averostra incertae sedis: the credible
+        hypotheses span Ceratosauria (basal ceratosaur — Carrano and Sampson
+        (2008) reject a noasaurid position) and Tetanurae (coelurosaur,
+        allosauroid, megaraptoran, ornithomimosaur), so the conservative
+        shared node is adopted.
 pronunciation:
   phonetic: DEL-ta-DROHM-ee-us
 etymology: From Greek delta ('river delta' or 'change') + dromos ('runner'), meaning 'river delta runner' or 'change runner', possibly referring to the Nile River delta region where related material was found.
@@ -89,7 +100,16 @@ species:
       completeness: partial
 references:
   - id: sereno1996a
+    notes: Describing paper; recovered Deltadromeus as a basal coelurosaur.
   - id: carrano2008a
-    notes: Recovered Deltadromeus as a basal noasaurid in their Ceratosauria phylogeny
+    notes: Recovered Deltadromeus as a basal ceratosaur near Elaphrosaurus,
+      explicitly rejecting a noasaurid position (12 extra steps).
   - id: rauhut2016b
-    notes: Recovered Deltadromeus as a basal noasaurid in their Elaphrosaurus revision
+    notes: Recovered Deltadromeus among basal ceratosaurs in their Elaphrosaurus revision.
+  - id: apesteguía2016a
+    notes: Recovered Deltadromeus as a neovenatorid allosauroid, sister to Gualicho.
+  - id: motta2016a
+    notes: Grouped Deltadromeus with Bahariasaurus and Aoniraptor as megaraptoran
+      theropods (proposed Bahariasauridae).
+  - id: delcourt2025a
+    notes: Recovered Deltadromeus within Ornithomimosauria, alongside Gualicho.

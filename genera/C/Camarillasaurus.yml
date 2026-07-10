@@ -1,15 +1,23 @@
 genus: Camarillasaurus
-parent: Spinosaurinae
+parent: Spinosauridae
 dispute:
   summary: >
     Camarillasaurus cirugedae was originally described as a basal ceratosaur
-    (Sánchez-Hernández and Benton, 2012) but is now recovered as a spinosaurine
-    spinosaurid by recent analyses (Barker et al., 2021; Isasmendi et al., 2024;
-    Rauhut et al., 2025), the last placing it as a derived spinosaurine close to
-    Spinosaurus.
+    (Sánchez-Hernández and Benton, 2014), but that reading is superseded: recent
+    analyses recover it as a spinosaurid. Its subfamily placement is unstable —
+    recovered as a spinosaurine by Barker et al. (2021) and Rauhut et al. (2025,
+    as a derived spinosaurine near Spinosaurus), but treated as a basal
+    spinosaurid, possibly outside both subfamilies, by Santos-Cubedo et al.
+    (2023). Spinosauridae is the least-inclusive clade the current hypotheses
+    accept.
   history:
     - date: "2026-07-01"
       note: Placed at Spinosaurinae following the recent reassessments; the original ceratosaurian identification is superseded.
+    - date: "2026-07-09"
+      note: Broadened to Spinosauridae incertae sedis. The spinosaurid identity
+        is well supported but the subfamily placement is unstable (spinosaurine
+        versus basal spinosaurid outside both subfamilies), so the conservative
+        shared node is adopted.
 etymology: From Camarillas (the village of Camarillas in Teruel Province, Spain, near where fossils were found) + Greek sauros (σαῦρος) meaning 'lizard'; overall meaning 'Camarillas lizard'.
 pronunciation:
   phonetic: cam-a-REE-yuh-SOR-us
@@ -81,11 +89,14 @@ species:
       completeness: partial
 references:
   - id: sánchez-hernández2012a
+    notes: Describing paper (2014); recovered Camarillasaurus as a basal
+      ceratosaur, a reading later superseded.
   - id: jones2026c
     notes: Source of the body length estimate.
   - id: barker2021a
-    notes: New spinosaurid description's phylogeny recovered Camarillasaurus as a spinosaurine.
-  - id: isasmendi2024a
-    notes: New basal spinosaurid description's analysis included Camarillasaurus in phylogeny.
+    notes: Recovered Camarillasaurus as an early-branching spinosaurine.
+  - id: santos-cubedo2023a
+    notes: Treated Camarillasaurus in text as a basal spinosaurid, possibly
+      outside both subfamilies or close to Iberospinus.
   - id: rauhut2025a
     notes: Revision of Camarillasaurus placed it as a derived spinosaurine near Spinosaurus.

@@ -1,16 +1,23 @@
 genus: Shaochilong
-parent: Carcharodontosauridae
+parent: Avetheropoda
 dispute:
   summary: >
-    Shaochilong maortuensis has been recovered as a derived carcharodontosaurid, the
-    first from Asia (Brusatte et al., 2009; Carrano et al., 2012; Jones et al.,
-    2026), but Kellermann et al. (2025) instead recover it within Tyrannosauroidea in
-    all analyses, rebutting the proposed carcharodontosaurid characters. It is
-    retained conservatively at Carcharodontosauridae incertae sedis pending
-    corroboration of the tyrannosauroid hypothesis.
+    Shaochilong maortuensis is recovered as a derived carcharodontosaurid, the
+    first from Asia (Brusatte et al., 2009; Carrano et al., 2012; Jones, 2026),
+    but the two most recent analyses instead place it within Coelurosauria:
+    Kellermann et al. (2025) recover it as a tyrannosauroid in all their
+    analyses (rebutting the proposed carcharodontosaurid characters), and Rauhut
+    et al. (2024) recover it as a coelurosaur. Carcharodontosauridae
+    (Allosauroidea) and Tyrannosauroidea (Coelurosauria) are the two branches of
+    Avetheropoda, the least-inclusive clade all these hypotheses accept.
   history:
     - date: "2026-07-01"
       note: Retained at Carcharodontosauridae incertae sedis (prevailing view; P5), with the recent tyrannosauroid hypothesis (Kellermann et al., 2025) reflected but not adopted.
+    - date: "2026-07-09"
+      note: Broadened to Avetheropoda incertae sedis. The carcharodontosaurid
+        versus tyrannosauroid/coelurosaur dispute is live — the two most recent
+        analyses (Rauhut et al. 2024; Kellermann et al. 2025) recover it within
+        Coelurosauria — so the conservative shared node is adopted.
 etymology: "From Chinese '鲨齿' (shāchǐ) meaning 'shark tooth' and '龙' (lóng) meaning 'dragon'; meaning 'shark-toothed dragon', referring to its shark-like serrated teeth."
 pronunciation:
   phonetic: Sha-chi-long
@@ -95,9 +102,13 @@ species:
       completeness: fragmentary
 references:
   - id: brusatte2009a
+    notes: Redescription; recovered Shaochilong as a derived carcharodontosaurid,
+      the first from Asia, rejecting earlier tyrannosauroid/coelurosaur readings.
   - id: jones2026c
     notes: Source of the hip height estimate.
   - id: carrano2012a
-    notes: Tetanurae phylogeny bearing on Shaochilong's placement.
+    notes: Recovered Shaochilong as a derived carcharodontosaurid.
+  - id: rauhut2024a
+    notes: Recovered Shaochilong as a coelurosaur, not a carcharodontosaurid.
   - id: kellermann2025a
     notes: Recovered Shaochilong within Tyrannosauroidea, not Carcharodontosauridae.

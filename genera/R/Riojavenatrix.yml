@@ -1,14 +1,20 @@
 genus: Riojavenatrix
-parent: Baryonychinae
+parent: Spinosauridae
 dispute:
   summary: >
     Riojavenatrix lacustris is an unstable spinosaurid; its describing analysis
     (Isasmendi et al., 2024) prefers a baryonychine placement, and Rauhut et al.
-    (2025) recover it as a derived baryonychine under implied weights, but both
-    find it can also fall among early-branching spinosaurines.
+    (2025) recover it as a baryonychine under implied weights, but both find it
+    can also fall among early-branching spinosaurines. Spinosauridae is the
+    least-inclusive clade both subfamily hypotheses accept.
   history:
     - date: "2026-07-01"
       note: Placed at Baryonychinae following the preferred results of Isasmendi et al. (2024) and Rauhut et al. (2025); an early-spinosaurine position cannot be excluded.
+    - date: "2026-07-09"
+      note: Broadened to Spinosauridae incertae sedis. The baryonychine placement
+        is only the preferred (and, for Rauhut et al. 2025, implied-weights)
+        result, with an early-branching spinosaurine position also recovered, so
+        the conservative shared node is adopted.
 etymology: "Named for La Rioja Province, Spain, where the fossils were found, combined with Latin 'venatrix' meaning 'huntress'; meaning 'La Rioja huntress.'"
 pronunciation:
   phonetic: ree-YO-ha-VEH-nuh-trix
@@ -76,7 +82,10 @@ species:
       completeness: partial
 references:
   - id: isasmendi2024a
+    notes: Describing paper; erected Riojavenatrix as a baryonychine, though its
+      analysis also recovered an early spinosaurine position.
   - id: jones2026c
     notes: Source of the body length estimate.
   - id: rauhut2025a
-    notes: Revision recovered Riojavenatrix as a derived baryonychine spinosaurid under implied weights.
+    notes: Recovered Riojavenatrix as a baryonychine under implied weights; under
+      equal weights it floated among baryonychines and early spinosaurines.

@@ -1,15 +1,22 @@
 genus: Vallibonavenatrix
-parent: Spinosaurinae
+parent: Spinosauridae
 dispute:
   summary: >
     Vallibonavenatrix cani was described as a spinosaurine (Malafaia et al.,
-    2020) and recovered as a spinosaurine by Rauhut et al. (2025), but its
-    position is unstable across other analyses, which variously place it as a
-    baryonychine, a basal spinosaurid, or even a megalosaurid (Barker et al.,
-    2021; Isasmendi et al., 2024).
+    2020) and again recovered as a spinosaurine by Rauhut et al. (2025), but its
+    position is unstable across other analyses, which recover it as a
+    baryonychine or a basal spinosaurid outside both subfamilies (Barker et al.,
+    2021; Mateus and Estraviz-López, 2022) or, as an unstable-wildcard result, a
+    megalosaurid (Isasmendi et al., 2024). Spinosauridae is the least-inclusive
+    clade the credible hypotheses accept.
   history:
     - date: "2026-07-01"
       note: Placed at Spinosaurinae following the describing paper and Rauhut et al. (2025); its position is unstable across analyses.
+    - date: "2026-07-09"
+      note: Broadened to Spinosauridae incertae sedis. The subfamily placement
+        flip-flops across analyses (spinosaurine, baryonychine, or basal
+        spinosaurid outside both subfamilies), so the conservative shared node
+        is adopted.
 pronunciation:
   phonetic: va-yee-BO-nuh-ven-AY-triks
 etymology: Named after Vallibona, the town in Castellón, Spain near where its remains were found, combined with Latin venatrix meaning 'huntress'; translates as 'Vallibona huntress'
@@ -69,9 +76,15 @@ species:
       completeness: partial
 references:
   - id: malafaia2020b
+    notes: Describing paper; recovered Vallibonavenatrix as a spinosaurine.
   - id: rauhut2025a
     notes: Camarillasaurus revision recovered Vallibonavenatrix as a spinosaurine.
   - id: barker2021a
-    notes: New Wessex spinosaurid paper placed Vallibonavenatrix as a baryonychine or basal spinosaurid.
+    notes: Recovered Vallibonavenatrix as a baryonychine (parsimony) or a basal
+      spinosaurid outside both subfamilies (Bayesian).
+  - id: mateus2022a
+    notes: Could not recover Vallibonavenatrix as a spinosaurine; it fell in an
+      unresolved position within Spinosauridae.
   - id: isasmendi2024a
-    notes: New European basal spinosaurid description bearing on Vallibonavenatrix's unstable placement.
+    notes: Recovered Vallibonavenatrix in unstable positions, including an early
+      spinosaurine and, as a wildcard result, a megalosaurid.
