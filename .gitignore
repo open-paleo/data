@@ -28,6 +28,14 @@ reports/doi-audit-followup.md
 # Ad-hoc workflow notes (not checked in).
 reports/*-diagnosis-deferred.md
 
+# Dispute/description citation audit (#1968, /audit-disputes): per-slice findings
+# reports and intermediates are regenerable from the committed condensations, so
+# they are not checked in. The re-audit queue is DURABLE state (which loci to
+# re-audit when a missing/incomplete source paper lands) and IS committed.
+reports/audit/*
+!reports/audit/reaudit-queue.yml
+!reports/audit/data-quality-and-missing-papers.md
+
 # Paper-watch incremental state — persisted between CI runs via actions/cache,
 # never committed (and written locally by a dry run with --write-state).
 .github/paper-watch/

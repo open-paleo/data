@@ -1,0 +1,64 @@
+pending:
+  blows2015a:
+    first_seen: '2026-07-09'
+    last_seen: '2026-07-09'
+    loci:
+    - Horshamosaurus
+    reason: not-in-corpus
+    slices:
+    - Ankylosauria
+  geoffroysaint-hilaire1831a:
+    first_seen: '2026-07-09'
+    last_seen: '2026-07-09'
+    loci:
+    - Cryptosaurus
+    reason: not-in-corpus
+    slices:
+    - Ankylosauria
+  mantell1833b:
+    first_seen: '2026-07-09'
+    last_seen: '2026-07-09'
+    loci:
+    - Polacanthoides
+    reason: not-in-corpus
+    slices:
+    - Ankylosauria
+  nopcsa1928a:
+    first_seen: '2026-07-09'
+    last_seen: '2026-07-09'
+    loci:
+    - Polacanthoides
+    reason: source-incomplete
+    slices:
+    - Ankylosauria
+    note: >-
+      Markdown truncated (~line 1103, mid-Scolosaurus) before reaching
+      Polacanthoides. Polacanthoides erected_in: nopcsa1928a is CORRECT (Nopcsa
+      1928 erects P. ponderosus, confirmed via Wikipedia) — the taxon-absent
+      flag was a truncation artifact, NOT a data error. Re-condense once the
+      full markdown is restored (tracked in corpus-paper-report.md section 1).
+  pereda-suberbiola1999a:
+    first_seen: '2026-07-09'
+    last_seen: '2026-07-09'
+    loci:
+    - Acanthopholis
+    reason: not-in-corpus
+    slices:
+    - Ankylosauria
+  zheng2021b:
+    first_seen: '2026-07-09'
+    last_seen: '2026-07-09'
+    loci:
+    - Sinankylosaurus
+    reason: fetch-pending
+    slices:
+    - Ankylosauria
+    note: >-
+      Sinankylosaurus wrongly cites zheng2021a (Zheng X., Caudipteryx cartilage
+      paper) for its nomen-dubium critique. Correct source is Zheng W. et al.
+      2021, "First definitive ankylosaurian dinosaur from the Cretaceous of
+      Jilin Province, northeastern China", Cretaceous Research 127:104953,
+      doi:10.1016/j.cretres.2021.104953 (user fetching into corpus, likely key
+      zheng2021b). When it lands: condense + verify the critique, create the
+      ref, re-point Sinankylosaurus dispute.summary + references.notes, and
+      remove zheng2021a. Keep zheng2021a (Caudipteryx uses it correctly).
