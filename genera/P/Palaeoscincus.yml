@@ -2,8 +2,8 @@ genus: Palaeoscincus
 parent: Ankylosauria
 pronunciation:
   phonetic: PAY-lee-o-SINK-us
-etymology: "From Greek 'palaios' meaning 'ancient' and 'skinkos' meaning
-  'lizard' (related to skink); translates as 'ancient lizard'."
+etymology: From Greek 'palaios' meaning 'ancient' and 'skinkos' meaning 'lizard'
+  (related to skink); translates as 'ancient lizard'.
 description: Palaeoscincus is a dubious genus of ankylosaurian dinosaur based on
   teeth from the mid-late Campanian-age Upper Cretaceous Judith River Formation
   of Montana. Like several other dinosaur genera named by Joseph Leidy
@@ -14,10 +14,13 @@ description: Palaeoscincus is a dubious genus of ankylosaurian dinosaur based on
   animal with the armor of Edmontonia and the tail club of an ankylosaurid.
 dispute:
   summary: >
-    Palaeoscincus is a classic tooth taxon and a nomen dubium; the teeth are indeterminate within Ankylosauria (Vickaryous et al., 2004). It is retained at Ankylosauria incertae sedis.
+    Palaeoscincus is a classic tooth taxon and a nomen dubium; the teeth are
+    indeterminate within Ankylosauria (Vickaryous et al., 2004). It is retained
+    at Ankylosauria incertae sedis.
   history:
-    - date: "2026-06-26"
-      note: Placed at Ankylosauria incertae sedis, undiagnostic tooth-based nomen dubium.
+    - date: 2026-06-26
+      note: Placed at Ankylosauria incertae sedis, undiagnostic tooth-based nomen
+        dubium.
 diet: herbivore
 locomotion: quadrupedal
 paleoenvironment:
@@ -35,11 +38,10 @@ identifiers:
   - source: wikidata
     id: Q38789678
 species:
-  - name: Palaeoscincus magoder
-    etymology: "A nomen nudum arising from a misreading of the German words 'mag
-      oder' in a faunal list by Karl ('Charles') L. Henning, which were
-      mistakenly treated as a specific name rather than ordinary German text."
-    status: valid
+  - name: Palaeoscincus costatus
+    etymology: From Latin 'costatus' meaning 'ribbed', in reference to the
+      radiating costae ornamenting the tooth crown.
+    status: nomen dubium
     type_species: true
     period:
       name:
@@ -49,17 +51,16 @@ species:
     location:
       country: US
       region: Montana
-      formation: Two Medicine
-      coordinates:
-        - 48.9646
-        - -112.664398
+      formation: Judith River
+      locality: Bad Lands of the Judith River
     type_specimen:
-      specimen_id: [ ANSP 9263 ]
+      specimen_id:
+        - ANSP 9263
       specimen_type: holotype
       institution: ANSP
-      material: Single specimen of a tooth; crown palmate with eight radiating costae;
-        fang flattened cylindrical, hollow, expanding into ridge at base. Crown
-        breadth 4 lines, length 2.5 lines; fang width 2 lines, thickness 1 line.
+      material: A single tooth with a palmate crown bearing eight radiating costae
+        ending in variably developed marginal points; the flattened, hollow fang
+        expands into a ridge around the crown's base.
       completeness: fragmentary
     erected_in: leidy1856b
 references:
