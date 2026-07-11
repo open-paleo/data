@@ -137,7 +137,7 @@ type WatchState = {
  */
 type Options = {
     since: string;
-    days: number;
+    days: number | null;
     includeClades: boolean;
     maxPages: number;
     topicIds: Array<string>;
@@ -150,10 +150,15 @@ type Options = {
 
 /**
  * Parses process arguments into a typed options object, applying defaults.
- * Unless an explicit `--since` is given, the window is a fixed `--days`
- * lookback (default 60) ending today — deliberately NOT "since the last run",
- * so works that OpenAlex indexes weeks after their backdated publication date
- * stay within range until caught; the persisted `seen` set dedups them.
+ * The window is deliberately NOT "since the last run": journals backdate a
+ * work's publication_date to its volume year (commonly Jan 1), while OpenAlex
+ * only indexes it months later, so a work can surface with a publication_date
+ * that has already scrolled far past any short lookback. Resolution order:
+ *   1. explicit `--since` wins;
+ *   2. else an explicit `--days` gives a rolling day lookback ending today;
+ *   3. else the default anchors to Jan 1 of *last* year, wide enough to keep
+ *      volume-year-backdated works in range until they are indexed.
+ * The persisted `seen` set dedups across runs so nothing is re-reported.
  *
  * @param argv - Raw arguments (typically `process.argv.slice(2)`).
  * @returns The resolved options for this run.
@@ -167,21 +172,29 @@ function parseOptions(argv: Array<string>): Options
         return index >= 0 && index + 1 < argv.length ? argv[index + 1] : null;
     };
 
-    const days = Number(flag("--days") ?? "60");
+    const daysFlag = flag("--days");
+    const days = daysFlag !== null ? Number(daysFlag) : null;
     let since = flag("--since");
 
-    if (!since)
+    if (!since && days !== null)
     {
         const start = new Date();
         start.setUTCDate(start.getUTCDate() - days);
         since = start.toISOString().slice(0, 10);
+    }
+    else if (!since)
+    {
+        // Anchor to Jan 1 of last year so volume-year-backdated works (stamped
+        // Jan 1 of a volume, indexed up to a year-plus later) stay in range.
+        const lastYear = new Date().getUTCFullYear() - 1;
+        since = `${lastYear}-01-01`;
     }
 
     return {
         since,
         days,
         includeClades: argv.includes("--clades"),
-        maxPages: Number(flag("--max-pages") ?? "40"),
+        maxPages: Number(flag("--max-pages") ?? "200"),
         topicIds: (flag("--topics") ?? paleontologyTopicIds.join(","))
             .split(",")
             .map((id) => id.trim())
@@ -460,15 +473,20 @@ function dedupHits(candidates: Array<WatchHit>): Array<WatchHit>
  * Fetches recent paleontology works from OpenAlex, page by page, and yields
  * the raw work objects. Uses cursor pagination and the polite pool (mailto).
  *
- * Windows by `from_publication_date` over a rolling fixed lookback (see
- * `--days`), NOT "since the last run". OpenAlex indexes works days-to-weeks
- * after their (often publisher-backdated) publication date, so a narrow
- * since-last-run window permanently misses any work indexed after its
- * publication date has already scrolled past the boundary. A fixed lookback
- * keeps recently-published works in range until they are indexed; the `seen`
- * set prevents re-reporting them on subsequent runs. (`from_created_date`,
- * which would window by index date directly, is an OpenAlex premium-plan
- * filter and returns "Plan upgrade required" on the free tier.)
+ * Windows by `from_publication_date` (see parseOptions for how the start date
+ * is resolved), NOT "since the last run". OpenAlex indexes works weeks to
+ * months after their often-backdated publication date, so a work can appear
+ * with a publication_date that already sits far behind a short window — a
+ * new-genus paper stamped Jan 1 but indexed six months later slips straight
+ * through. Windowing by index date would fix this directly, but every such
+ * filter — `from_created_date`, `from_updated_date`, and `sort=created_date`
+ * — is OpenAlex premium-plan-gated ("Plan upgrade required" on the free tier).
+ * So the window is instead widened on the publication-date axis to span
+ * volume-year backdating, and the `seen` set prevents re-reporting.
+ *
+ * Stops at `options.maxPages` as a runaway guard; if the cap is hit with a
+ * cursor still pending, the tail of the window is dropped and a warning is
+ * logged (raise --max-pages) rather than failing silently.
  *
  * @param options - Resolved run options.
  * @returns The collected work objects.
@@ -519,6 +537,18 @@ async function fetchRecentWorks(options: Options): Promise<Array<Record<string, 
         {
             break;
         }
+    }
+
+    // A non-empty cursor here means the page cap stopped us before the window
+    // was exhausted, so some in-window works were never fetched. Surface it
+    // loudly: a silent truncation would let matches be missed as the corpus
+    // and window grow, which is exactly the failure this watcher guards against.
+    if (cursor && page >= options.maxPages)
+    {
+        console.warn(
+            `WARNING: hit the ${options.maxPages}-page fetch cap with more works remaining; `
+            + "the oldest part of the window was not scanned. Raise --max-pages.",
+        );
     }
 
     return works;
