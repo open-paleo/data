@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-10T23:58:41.431Z
+  built_at: 2026-07-11T00:32:32.764Z
   clade_count: 188
   genus_count: 1398
   license: CC-BY-4.0
@@ -119618,6 +119618,9 @@ genera:
           - name: Stenotholus
             type: junior subjective
             reason: S. kohleri was reclassified as juvenile Stygimoloch spinifer; with Stygimoloch itself now interpreted as a juvenile of Pachycephalosaurus wyomingensis, Stenotholus is also treated as a junior synonym.
+          - name: Pachycephalosaurus grangeri
+            type: junior subjective
+            reason: Erected by Brown and Schlaikjer (1943) on a more complete skull; now regarded as conspecific with, and a junior synonym of, the type species P. wyomingensis.
         erected_in: brown1943a
         authors: Brown, B.; Schlaikjer, E. M.
         described: 1943
@@ -124112,12 +124115,13 @@ genera:
   Pelorosaurus:
     genus: Pelorosaurus
     parent: Titanosauriformes
-    etymology: From Greek pelor ("monster") and sauros ("lizard"); meaning "monstrous lizard". Mantell explicitly chose the name to indicate the enormous magnitude of the type humerus.
+    erected_in: mantell1850a
+    etymology: From Greek pelor ("monster") and sauros ("lizard"); meaning "monstrous lizard". Mantell explicitly chose the name to indicate the enormous magnitude of the humerus he described.
     pronunciation:
       ipa: /pəˌlɒroʊˈsɔːrəs/
       phonetic: pe-LOH-ro-SOR-us
     description: |
-      Pelorosaurus is a genus of titanosauriform sauropod dinosaur. Remains referred to Pelorosaurus date from the Early Cretaceous period, about 140-125 million years ago, and have been found in England. Thomas Holtz estimated its length at 24 m (79 ft). The name Pelorosaurus was one of the first to be given to any sauropod. Many species have been assigned to the genus historically, but most are currently considered to belong to other genera. Problematically, the first named species of Pelorosaurus, P. conybeari, is a junior synonym of Cetiosaurus brevis (now Pelorosaurus brevis).
+      Pelorosaurus is a genus of titanosauriform sauropod dinosaur. Remains referred to Pelorosaurus date from the Early Cretaceous period, about 140-125 million years ago, and have been found in England. Thomas Holtz estimated its length at 24 m (79 ft). The name Pelorosaurus was one of the first to be given to any sauropod. Many species have been assigned to the genus historically, but most are currently considered to belong to other genera. The type species is Pelorosaurus brevis (Owen, 1842); the long-used name P. conybeari (Mantell, 1850) is a junior objective synonym based on the same Cuckfield type material.
     diet: herbivore
     locomotion: quadrupedal
     diagnostic_features:
@@ -124146,8 +124150,8 @@ genera:
         type: nomen nudum
         reason: Mantell intended to use the name "Colossosaurus" in November 1849 for the Cetiosaurus brevis material, but on discovering that Greek 'kolossos' meant 'statue' rather than 'giant' he changed the name to Pelorosaurus before formal publication. The replacement Pelorosaurus appeared in Mantell (1850); Colossosaurus was never validly published.
     species:
-      - name: Pelorosaurus conybeari
-        etymology: Named in honor of William Conybeare. Mantell originally wrote the species "Conybearei"; under ICZN priority of the original spelling this is corrected to "conybeari".
+      - name: Pelorosaurus brevis
+        etymology: From Latin 'brevis' meaning 'short'.
         status: nomen dubium
         type_species: true
         period:
@@ -124162,7 +124166,7 @@ genera:
           country: GB
           region: England
           formation: Tunbridge Wells Sand
-          locality: Tilgate Forest, Sussex (Hastings Beds Group, Wealden)
+          locality: Cuckfield, Sussex (Hastings Beds Group, Wealden)
           coordinates:
             - 51.05
             - -0.16
@@ -124172,14 +124176,34 @@ genera:
             max: 24
         type_specimen:
           specimen_id:
-            - NHMUK PV OR 28626
-          specimen_type: holotype
+            - NHMUK R2544
+            - NHMUK R2545
+            - NHMUK R2546
+            - NHMUK R2547
+            - NHMUK R2548
+            - NHMUK R2549
+            - NHMUK R2550
+          specimen_type: syntype
           institution: Natural History Museum
-          material: A right humerus, 54 inches long and 32 inches in circumference at the distal extremity.
+          material: Four proximal caudal vertebrae (R2544-R2547) and three chevrons (R2548-R2550) from Cuckfield; the Isle of Wight material originally included by Owen was subsequently shown to be iguanodontian and removed.
           completeness: fragmentary
-        erected_in: mantell1850a
-        authors: Mantell, G. A.
-        described: 1850
+        synonyms:
+          - name: Pelorosaurus conybeari
+            type: junior objective
+            reason: Melville (1849) coined 'Cetiosaurus' conybeari for the Cuckfield sauropod component of 'C.' brevis, but this was inadmissible as brevis remained available for the same type material; Mantell's Pelorosaurus conybeari (1850), which referred the associated humerus, is therefore a junior objective synonym of the senior 'C.' brevis, which has priority.
+        erected_in: owen1842a
+        authors: Owen, R.
+        described: 1842
+    notable_specimens:
+      - specimen_id:
+          - NHMUK PV OR 28626
+        institution: Natural History Museum
+        species: Pelorosaurus brevis
+        category: historic
+        significance: A large right humerus (~54 inches) from Cuckfield; Mantell (1850) made it the basis of the new genus Pelorosaurus, one of the first sauropods recognized. A referred specimen, not the name-bearing type; lacking autapomorphies, it is referred to Titanosauriformes incertae sedis.
+        references:
+          - mantell1850a
+          - taylor2007a
     references:
       - id: mantell1850a
         authors: Mantell, G. A.
