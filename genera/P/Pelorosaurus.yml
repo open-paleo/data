@@ -1,8 +1,10 @@
 genus: Pelorosaurus
 parent: Titanosauriformes
+erected_in: mantell1850a
 etymology: From Greek pelor ("monster") and sauros ("lizard");
   meaning "monstrous lizard". Mantell explicitly chose the
-  name to indicate the enormous magnitude of the type humerus.
+  name to indicate the enormous magnitude of the humerus he
+  described.
 pronunciation:
   ipa: /pəˌlɒroʊˈsɔːrəs/
   phonetic: pe-LOH-ro-SOR-us
@@ -14,9 +16,10 @@ description: >
   24 m (79 ft). The name Pelorosaurus was one of the first to
   be given to any sauropod. Many species have been assigned to
   the genus historically, but most are currently considered to
-  belong to other genera. Problematically, the first named
-  species of Pelorosaurus, P. conybeari, is a junior synonym
-  of Cetiosaurus brevis (now Pelorosaurus brevis).
+  belong to other genera. The type species is Pelorosaurus
+  brevis (Owen, 1842); the long-used name P. conybeari
+  (Mantell, 1850) is a junior objective synonym based on the
+  same Cuckfield type material.
 diet: herbivore
 locomotion: quadrupedal
 diagnostic_features:
@@ -59,11 +62,8 @@ synonyms:
       in Mantell (1850); Colossosaurus was never validly
       published.
 species:
-  - name: Pelorosaurus conybeari
-    etymology: Named in honor of William Conybeare. Mantell
-      originally wrote the species "Conybearei"; under ICZN
-      priority of the original spelling this is corrected to
-      "conybeari".
+  - name: Pelorosaurus brevis
+    etymology: From Latin 'brevis' meaning 'short'.
     status: nomen dubium
     type_species: true
     period:
@@ -78,8 +78,7 @@ species:
       country: GB
       region: England
       formation: Tunbridge Wells Sand
-      locality: Tilgate Forest, Sussex (Hastings Beds Group,
-        Wealden)
+      locality: Cuckfield, Sussex (Hastings Beds Group, Wealden)
       coordinates:
         - 51.05
         - -0.16
@@ -89,13 +88,38 @@ species:
         max: 24
     type_specimen:
       specimen_id:
-        - NHMUK PV OR 28626
-      specimen_type: holotype
+        - NHMUK R2544
+        - NHMUK R2545
+        - NHMUK R2546
+        - NHMUK R2547
+        - NHMUK R2548
+        - NHMUK R2549
+        - NHMUK R2550
+      specimen_type: syntype
       institution: NHMUK
-      material: A right humerus, 54 inches long and 32 inches in circumference at the
-        distal extremity.
+      material: Four proximal caudal vertebrae (R2544-R2547) and three chevrons
+        (R2548-R2550) from Cuckfield; the Isle of Wight material originally
+        included by Owen was subsequently shown to be iguanodontian and removed.
       completeness: fragmentary
-    erected_in: mantell1850a
+    synonyms:
+      - name: Pelorosaurus conybeari
+        type: junior objective
+        reason: Melville (1849) coined 'Cetiosaurus' conybeari for the Cuckfield
+          sauropod component of 'C.' brevis, but this was inadmissible as brevis
+          remained available for the same type material; Mantell's Pelorosaurus
+          conybeari (1850), which referred the associated humerus, is therefore a
+          junior objective synonym of the senior 'C.' brevis, which has priority.
+    erected_in: owen1842a
+notable_specimens:
+  - specimen_id: [NHMUK PV OR 28626]
+    institution: NHMUK
+    species: Pelorosaurus brevis
+    category: historic
+    significance: A large right humerus (~54 inches) from Cuckfield; Mantell (1850)
+      made it the basis of the new genus Pelorosaurus, one of the first sauropods
+      recognized. A referred specimen, not the name-bearing type; lacking
+      autapomorphies, it is referred to Titanosauriformes incertae sedis.
+    references: [mantell1850a, taylor2007a]
 references:
   - id: mantell1850a
     notes: Erects Pelorosaurus on a large humerus from Tilgate Forest (read 14
