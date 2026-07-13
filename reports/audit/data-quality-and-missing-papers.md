@@ -9,7 +9,7 @@ citation audit (#1968). Its purpose is to let corpus materials be
 **Scope of this report:** the seven slices assembled/condensed so far —
 Ankylosauria (pilot, audited), plus the pre-build set Tyrannosauroidea,
 Stegosauria, Ceratosauria, Ceratopsia, Ornithopoda, Sauropoda. Cache
-state at generation: **461 condensations / 11,556 taxon positions**.
+state at generation: **500 condensations / 12,891 taxon positions**.
 
 Two companion files hold the machine-actionable and corpus-side records:
 - `reports/audit/reaudit-queue.yml` (this repo) — durable queue keyed by
@@ -24,60 +24,47 @@ Two companion files hold the machine-actionable and corpus-side records:
 
 Papers **cited directly by a `dispute:` block** in the dataset but absent
 from the corpus. Each blocks the semantic (Tier-1) check for the named
-locus until fetched. 28 distinct papers across the seven slices.
+locus until fetched. 9 still missing (the fetched-and-condensed ones have been removed).
 
 Fetch these first: they are load-bearing for a specific audit and several
 are the *erecting/authority* paper for a contested taxon.
 
-| Ref-id | Slice → locus | Year | DOI | Title (short) |
-|---|---|---|---|---|
-| `blows2015a` | Ankylosauria → Horshamosaurus | 2015 | — | British Polacanthid Dinosaurs |
-| `geoffroysaint-hilaire1831a` | Ankylosauria → Cryptosaurus | 1831 | — | Recherches sur de grands sauriens fossiles |
-| `mantell1833b` | Ankylosauria → Polacanthoides | 1833 | — | Observations on the remains of the Iguanodon |
-| `pereda-suberbiola1999a` | Ankylosauria → Acanthopholis | 1999 | — | Systematic review of ankylosaurian remains, Albian-Cenomanian of England |
-| `bertozzo2025b` | Ceratopsia → Ajkaceratops | 2025 | 10.1371/journal.pone.0312519 | Skull of *Jeholosaurus shangyuanensis* |
-| `hatcher1907a` | Ceratopsia → Polyonax | 1907 | — | The Ceratopsia (Hatcher, Marsh & Lull) |
-| `nessov1989a` | Ceratopsia → Asiaceratops, Turanoceratops | 1989 | — | Mesozoic ceratopsian dinosaurs and crocodiles of central Asia |
-| `iori2021a` | Ceratosauria → Kurupi | 2021 | 10.1016/j.jsames.2021.103551 | New theropod, Late Cretaceous of Brazil |
-| `bonaparte1996a` | Ceratosauria → Ligabueino; Sauropoda → Rayososaurus | 1996 | — | Cretaceous tetrapods of Argentina |
-| `abel1919a` | Ornithopoda → Orthomerus | 1919 | — | Die Stämme der Wirbeltiere |
-| `galton1980a` | Ornithopoda → Callovosaurus | 1980 | 10.1127/njgpa/160/1980/73 | European Jurassic hypsilophodontid/camptosaurid ornithopods |
-| `head2001a` | Ornithopoda → Eolambia | 2001 | 10.1671/0272-4634(2001)021[0392:AROTPP]2.0.CO;2 | Phylogenetic position of *Eolambia caroljonesa* |
-| `mantell1834a` | Ornithopoda → Mantellisaurus | 1834 | — | Discovery of the bones of the Iguanodon in Kentish Rag |
-| `riabinin1925a` | Ornithopoda → Mandschurosaurus | 1925 | — | Mounted skeleton of *Trachodon amurense* |
-| `riabinin1945a` | Ornithopoda → Riabininohadros | 1945 | — | Dinosaur remains in the Upper Cretaceous of Crimea |
-| `ruiz-omeñaca2007a` | Ornithopoda → Callovosaurus | 2007 | — | *Callovosaurus leedsi*, the earliest dryosaurid |
-| `weishampel1993a` | Ornithopoda → Telmatosaurus | 1993 | — | *Telmatosaurus transsylvanicus*, most basal hadrosaurid |
-| `bakker1998a` | Sauropoda → Brontosaurus | 1998 | — | Dinosaur mid-life crisis: Jurassic-Cretaceous transition |
-| `cabrera1947a` | Sauropoda → Amygdalodon | 1947 | — | Un saurópodo nuevo del Jurásico de Patagonia |
-| `lapparent1955a` | Sauropoda → Rhoetosaurus | 1955 | — | Dinosauriens (Traité de Paléontologie V) |
-| `läng2008a` | Sauropoda → Lapparentosaurus | 2008 | — | Les Cétiosaures et les sauropodes du Jurassique moyen |
-| `mannion2011b` | Sauropoda → Mongolosaurus | 2011 | 10.1080/14772019.2010.527379 | Reassessment of *Mongolosaurus haplodon* |
-| `norell1995a` | Sauropoda → Brontosaurus | 1995 | — | Discovering Dinosaurs in the AMNH |
-| `rich1999a` | Sauropoda → Tehuelchesaurus | 1999 | — | A new sauropod from Chubut province, Argentina |
-| `yadagiri1979a` | Sauropoda → Rhoetosaurus | 1979 | — | Sauropod from the Kota Formation, India |
-| `hennig1915b` | Stegosauria → Lexovisaurus | 1915 | — | Stegosauria (Fossilium Catalogus) |
-| `hennig1925a` | Stegosauria → Kentrosaurus | 1925 | — | *Kentrurosaurus aethiopicus*, Tendaguru stegosaurs |
-| `zhao1986a` | Stegosauria → Monkonosaurus | 1986 | — | [Reptiles] (Cretaceous of the Ordos Basin) |
+| Notes | Ref-id | Slice → locus | Year | DOI | Title (short) |
+|---|---|---|---|---|---|
+| | `blows2015a` | Ankylosauria → Horshamosaurus | 2015 | — | British Polacanthid Dinosaurs |
+| UW? | `iori2021a` | Ceratosauria → Kurupi | 2021 | 10.1016/j.jsames.2021.103551 | New theropod, Late Cretaceous of Brazil |
+| | `bonaparte1996a` | Ceratosauria → Ligabueino; Sauropoda → Rayososaurus | 1996 | — | Cretaceous tetrapods of Argentina |
+| UW? | `galton1980a` | Ornithopoda → Callovosaurus | 1980 | 10.1127/njgpa/160/1980/73 | European Jurassic hypsilophodontid/camptosaurid ornithopods |
+| | `riabinin1925a` | Ornithopoda → Mandschurosaurus | 1925 | — | Mounted skeleton of *Trachodon amurense* |
+| | `lapparent1955a` | Sauropoda → Rhoetosaurus | 1955 | — | Dinosauriens (Traité de Paléontologie V) |
+| | `läng2008a` | Sauropoda → Lapparentosaurus | 2008 | — | Les Cétiosaures et les sauropodes du Jurassique moyen |
+| | `rich1999a` | Sauropoda → Tehuelchesaurus | 1999 | — | A new sauropod from Chubut province, Argentina |
+| Not required, name misprint reference only | `yadagiri1979a` | Sauropoda → Rhoetosaurus | 1979 | — | Sauropod from the Kota Formation, India |
+| | `zhao1986a` | Stegosauria → Monkonosaurus | 1986 | — | [Reptiles] (Cretaceous of the Ordos Basin) |
 
 **Notes on priority within this list:**
 - The four Ankylosauria entries are already tracked in `reaudit-queue.yml`
   (surfaced by the completed pilot).
-- `mannion2011b` (Mongolosaurus reassessment) is the direct authority for
-  a placement re-evaluated in the #1962 re-eval — high value, has a DOI.
-- `galton1980a` + `ruiz-omeñaca2007a` both bear on **Callovosaurus**;
-  `head2001a` on **Eolambia**; `weishampel1993a` on **Telmatosaurus** —
-  all recent enough to have retrievable full text (DOIs where shown).
-- The pre-DOI historical erecting papers (Mantell 1833/1834, Riabinin
-  1925/1945, Hennig 1915/1925, Geoffroy Saint-Hilaire 1831, Cabrera 1947,
-  Lapparent 1955, Abel 1919, Zhao 1986) are the hardest to source but are
-  the nomenclatural authorities for their loci; batch via BHL / archive
-  scans where possible.
+- `galton1980a` bears on **Callovosaurus** — recent enough to have
+  retrievable full text (DOI shown).
+- The pre-DOI historical erecting papers still outstanding (Riabinin
+  1925, Lapparent 1955, Zhao 1986) are the hardest to source but are the
+  nomenclatural authorities for their loci; batch via BHL / archive scans
+  where possible. (Riabinin 1945 and Hennig 1925 have since been fetched
+  and condensed; Geoffroy Saint-Hilaire 1831 is tracked under the
+  Ankylosauria re-audit queue for Cryptosaurus.)
 - `zheng2021b` (Sinankylosaurus, Ankylosauria) is a distinct case tracked
   in `reaudit-queue.yml` as `fetch-pending`: the dataset currently cites
   the *wrong* Zheng 2021 paper, and the correct one must be fetched before
   the re-point. Not a coverage gap in the table above (nothing cites the
   correct key yet).
+- `norman2014b` (Protohadros, Hadrosauroidea) — RESOLVED. Protohadros had
+  cited `norman2014a` (the *Hypselospinus fittoni* osteology paper) for a
+  placement it does not make; the intended source was the other Norman
+  2014, "Iguanodonts from the Wealden of England..." (in *Hadrosaurs*,
+  Eberth & Evans eds.). It has since been fetched, condensed, and verified
+  (Protohadros scored outside Hadrosauromorpha, surangular foramen present)
+  and re-pointed to `norman2014b`.
 
 ---
 
@@ -91,30 +78,18 @@ partial` (or annotated in `taxa_treated[].notes`) and will regenerate
 automatically on re-fetch (its `source_sha256` changes).
 
 ### 2a. Truncated / fragmentary markdown → re-fetch or re-convert
-| Ref-id | Bucket | Problem |
-|---|---|---|
-| `upchurch2004a` | Sauropoda | **Priority.** Only a ~7.8 KB / 18-paragraph fragment of the ~64-page *Sauropoda* chapter of *The Dinosauria* 2nd ed. (Ornithopsis→Cedarosaurus only). A full **PDF exists at `pdfs/upchurch2004a.pdf`** — re-convert to recover Titanosauria/Diplodocoidea/basal sauropods + phylogeny. Very widely cited. |
-| `nopcsa1928a` | Ankylosauria | Cuts off ~line 1103 mid-*Scolosaurus*, before *Polacanthoides ponderosus*. (Data is correct; flag was a truncation artifact.) |
-| `cope1872a` | Sauropoda | Bundled Proc. A.P.S. scan — a fish description (*Amyzon*) precedes and unrelated content follows; opens mid-sentence. |
-| `romer1956a` | Sauropoda | Only a ~5-line mid-book fragment of *Osteology of the Reptiles* (partial sauropod family list). |
-| `langston1960a` | Ornithopoda | Opens mid-sentence, cuts off mid-word in the *Lophorhothon* description. |
-| `prieto-márquez2021a` | Ornithopoda | Abstract only — no Systematic Palaeontology / Results. |
-| `seeley1888a` | (Ornithischia authority) | "Classification of the Dinosauria" abstract, truncated mid-sentence. |
-| `horner2004a` | Ornithopoda | *Dinosauria*-2e Hadrosauridae chapter fragment, no phylogeny/diagnosis section. |
-| `brett-surman1989a` | Ornithopoda | Mid-monograph excerpt starting at genus #27, no front matter. |
-| `upchurch1995a` | Sauropoda | *Minor.* Complete except two `[FILTER-BLOCKED QUARTER]` redaction placeholders in the Conclusion — general prose only, no taxon placements lost. |
+| Notes | Ref-id | Bucket | Problem |
+|---|---|---|---|
 
 ### 2b. Wrong paper / wrong edition filed under the key → re-file
-| Ref-id | Bucket | Problem |
-|---|---|---|
-| `tumanova1987a` | Ankylosauria | Markdown is Tumanova's **2000** *Age of Dinosaurs in Russia and Mongolia* chapter, not the **1987** *Pantsirnyye dinozavry Mongolii* monograph the citation points to. Re-file the 2000 chapter under its own key; fetch the true 1987 monograph. |
-| `rauhut2003a` | Tyrannosauroidea/Ceratosauria | Markdown is Rauhut 2003 *"A tyrannosauroid… from the Upper Jurassic of Portugal"* (*Aviatyrannis*), not the 2003 basal-theropod monograph. Verify which the citing genera intend; split keys if the monograph is meant. |
+| Notes | Ref-id | Bucket | Problem |
+|---|---|---|---|
+| Resolved | `tumanova1987a` | Ankylosauria | Was: markdown was the **2000** *Age of Dinosaurs in Russia and Mongolia* chapter, not the **1987** *Armored Dinosaurs of Mongolia* monograph the citation points to. Now fixed — the wrong chapter was re-filed under `tumanova2018a` (condensed) and the true 1987 monograph fetched under this key and re-condensed (clears the Maleevus Tier-0 class-1 flag). |
 
 ### 2c. Bundled multi-paper scans → split & re-key
-| Ref-id | Bucket | Problem |
-|---|---|---|
-| `riabinin1931a` | Sauropoda/others (Cionodon, Embasaurus) | Holds TWO 1931 Riabinin articles. `Embasaurus`'s citation is correct; but `Cionodon` cites this id while its real erecting article is the appended, un-keyed "Amu-Darya" piece. Split & re-point Cionodon. |
-| `wiman1929` | (Euhelopus / Tanius) | Shared key; markdown covers *Euhelopus* correctly but the *Tanius* portion of the same volume is absent. |
+| Notes | Ref-id | Bucket | Problem |
+|---|---|---|---|
+|   | `wiman1929` | (Euhelopus / Tanius) | Shared key; markdown covers *Euhelopus* correctly but the *Tanius* portion of the same volume is absent. |
 
 Most other bundled scans encountered (shilin1982a, leidy1856a/1856c, cope1869a/1877d, molnar1996a, nopcsa1903a, sereno2009a, etc.) were **scoped correctly** by the extraction agents and need no action.
 
@@ -129,32 +104,34 @@ heuristic (first-author surname + year), so a few may already exist under
 a variant key; verify before fetching. 119 distinct leads total; the
 most-actionable are below.
 
-### 3a. With a DOI (quickest to fetch)
-| Times flagged | Ref | DOI | Note |
-|---|---|---|---|
-| 2× | Arbour & Currie (2016) | 10.1080/14772019.2015.1059985 | Ankylosaurid systematics/phylogeny |
-| 2× | Thompson et al. (2012) | 10.1080/14772019.2011.569091 | Ankylosaurian phylogeny |
-| 2× | Torcida Fernández-Baldor et al. (2011) | 10.4202/app.2010.0003 | *Demandasaurus* (rebbachisaurid) |
-| 1× | Bellardini et al. (2024) | 10.1080/08912963.2023.2268638 | Rebbachisaurid hind-limb anatomy |
-| 1× | Sereno (1997) | 10.1146/annurev.earth.25.1.435 | Origin & evolution of dinosaurs (review) |
-| 1× | Han et al. (2017) | 10.1080/14772019.2017.1369185 | *Yinlong* postcranial / ceratopsian phylogeny |
-| 1× | Scannella & Horner (2011) | 10.1371/journal.pone.0028705 | *Nedoceratops* transitional morphology |
-| 1× | Costa Franco-Rosas et al. (2004) | 10.4072/rbp.2004.3.04 | New titanosaur material, Brazil |
-| 1× | D'Emic & Wilson (2011) | 10.4202/app.2009.0149 | Holotype of *Neuquensaurus australis* |
+### 3a. First-wave DOI leads — all resolved
 
-### 3b. No DOI, flagged repeatedly (higher-value historical/review works)
-| Times | Ref | Note |
-|---|---|---|
-| 5× | Prieto-Márquez (2010) | Global phylogeny of Hadrosauridae — the base matrix for many Ornithopoda disputes; **fetch ahead of the Ornithopoda audit** |
-| 2× | Norman (1986) | Anatomy of *Iguanodon atherfieldensis* |
-| 2× | Curry Rogers (2005) | *Titanosauria: A Phylogenetic Overview* (review chapter) |
-| 2× | Curry Rogers & Forster (2004) | Skull of *Rapetosaurus krausei* |
-| 2× | Carballido et al. (2011) | Phylogenetic analysis incl. *Janenschia*/*Tendaguria* |
-| 2× | Carr (2020) | *Tyrannosaurus rex* ontogeny/histology |
+All fetched and condensed. The last, Scannella & Horner 2011 on *Nedoceratops*,
+is in the corpus under **`scannella2011a`** (double "n" — the earlier
+`scanella2011a` here was a typo) and has been condensed.
 
-The remaining ~104 leads were each flagged once (long tail; consult the
-condensations' `references_worth_pulling` fields when auditing a specific
-locus).
+### 3b. Second-wave DOI leads — all resolved
+
+All six (Gauthier 1986 `gauthier1986a`, Holtz 1994 `holtz1994a`, Forster 1997
+`forster1997a` — an SVP abstract only, Norman 1980 `norman1980a`, Dodson 1975
+`dodson1975a`, Casanovas et al. 1999 `casanovas1999a`) have been fetched and
+condensed. (Curry Rogers & Forster 2001, the most-flagged at 3×, was already in
+corpus.)
+
+### 3c. Third-wave singletons from the just-condensed batch
+
+Surfaced by the 11 papers condensed in the third wave (the two §1 authority
+papers, the six §3b leads, plus `riabinin1945a`, `carrano2012a`). All are 1×
+(below the earlier 2× actionable bar) so they are enrichment, not blockers. The
+Ankylosauria-relevant ones worth pulling when that slice's fixes are worked:
+Coombs & Maryańska 1990 (Ankylosauria, *The Dinosauria* 1st ed.), Maryańska 1977
+(Ankylosauridae from Mongolia), Tumanova 1977 (*Tarchia gigantea* redescription),
+Maleev 1956 (armoured dinosaurs of the Upper Cretaceous of Mongolia), Blows 1987
+(*Polacanthus foxii*), Pereda-Suberbiola 1994 (*Polacanthus*), Nopcsa 1918
+(Thyreophora scheme). The remaining singletons (hadrosaur/lambeosaurine classics
+behind Dodson 1975 and Casanovas 1999; theropod-systematics refs behind Gauthier,
+Holtz, Carrano) plus the first-wave long tail stay lower priority — consult the
+condensations' `references_worth_pulling` fields when auditing a specific locus.
 
 ---
 
