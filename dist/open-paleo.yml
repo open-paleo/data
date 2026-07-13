@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-13T19:33:07.791Z
+  built_at: 2026-07-13T19:57:50.316Z
   clade_count: 188
   genus_count: 1398
   license: CC-BY-4.0
@@ -4747,7 +4747,7 @@ clades:
         publisher: Elsevier BV
         volume: "176"
         doi: 10.1016/j.cretres.2025.106188
-        notes: Recovered Khebbashia rebbachisaurids as monophyletic in its phylogenetic analysis.
+        notes: Uses Khebbashia as an inherited clade label; its scored Rebbachisaurinae exemplar remains an unresolved wildcard.
       - id: simón2025a
         authors: Simón, M. E.; Salgado, L.
         year: 2025
@@ -4756,7 +4756,7 @@ clades:
         publisher: Elsevier BV
         volume: "173"
         doi: 10.1016/j.cretres.2025.106137
-        notes: Recovered rebbachisaurid subfamilies as a paraphyletic grade, not monophyletic Khebbashia.
+        notes: Recovered Khebbashia as a monophyletic clade, sister to Lavocatisaurus.
       - id: lerzo2024a
         authors: Lerzo, L. N.; Gallina, P. A.; Canale, J. I.; Otero, A.; Carballido, J. L.; Apesteguía, S.; Makovicky, P. J.
         year: 2024
@@ -13540,7 +13540,7 @@ genera:
     parent: Rebbachisauridae
     dispute:
       summary: |
-        The affinities of Agustinia are contested. Recent dedicated rebbachisaurid analyses place it as a basal member of Rebbachisauridae (Bellardini et al., 2022; Jones, 2026), though it is an unstable operational taxonomic unit that is pruned from the consensus in several analyses (Lerzo et al., 2024). Earlier assessments differ: D'Emic et al. (2009) found no diagnostic features placing it in Diplodocoidea or Titanosauria and regarded it as a neosauropod of uncertain affinity, while Mannion et al. (2013) interpreted a fibular character as somphospondylan and tentatively referred it to Somphospondyli.
+        The affinities of Agustinia are contested. Recent dedicated rebbachisaurid analyses place it as a basal member of Rebbachisauridae (Bellardini et al., 2022; Jones, 2026), though it is an unstable operational taxonomic unit that is pruned from the consensus in several analyses (Lerzo et al., 2024). Earlier assessments differ: D'Emic et al. (2009) found no diagnostic features placing it in Diplodocoidea or Titanosauria and regarded it as a neosauropod of uncertain affinity, while Mannion et al. (2013), reinterpreting its purported osteoderms as displaced ribs and ischia, tentatively regarded it as an indeterminate somphospondylan.
       history:
         - date: 2026-06-30
           note: |
@@ -13626,16 +13626,15 @@ genera:
         pages: 208-233
         doi: 10.1080/08912963.2023.2297914
         notes: Found Agustinia an unstable taxon pruned from the phylogenetic consensus.
-      - id: bellardini2022a
-        authors: Bellardini, F.; Coria, R. A.; Pino, D. A.; Windholz, G. J.; Baiano, M. A.; Martinelli, A. G.
+      - id: bellardini2022b
+        authors: Bellardini, F.; Coria, R. A.; Windholz, G. J.; Martinelli, A. G.; Baiano, M. A.
         year: 2022
-        title: "Osteology and phylogenetic relationships of Ligabuesaurus leanzai (Dinosauria: Sauropoda) from the Early Cretaceous of the Neuquén Basin, Patagonia, Argentina"
-        journal: Zoological Journal of the Linnean Society
-        volume: "196"
-        issue: "4"
-        pages: 1333-1393
-        doi: 10.1093/zoolinnean/zlac003
-        notes: Phylogenetic analysis including Agustinia recovers it as an unstable rebbachisaurid operational taxonomic unit
+        title: "Revisiting the Early Cretaceous sauropod Agustinia ligabuei (Dinosauria: Diplodocoidea) from southern Neuquén Basin (Patagonia, Argentina), with implications on the early evolution of rebbachisaurids"
+        journal: Historical Biology
+        volume: "35"
+        issue: "12"
+        doi: 10.1080/08912963.2022.2142911
+        notes: Redescription and phylogenetic analysis recovering Agustinia as a basal rebbachisaurid.
       - id: demic2009a
         authors: D'Emic, M. D.; Wilson, J. A.; Chatterjee, S.
         year: 2009
@@ -13663,7 +13662,7 @@ genera:
         issue: "1"
         pages: 98-206
         doi: 10.1111/zoj.12029
-        notes: Interpreted a fibular character in Agustinia as significant for its affinities.
+        notes: Reinterpreted Agustinia's purported osteoderms as ribs/ischia and tentatively regarded it as an indeterminate somphospondylan.
     taxonomy:
       - Life
       - Animalia
@@ -56873,11 +56872,11 @@ genera:
     parent: Dicraeosauridae
     dispute:
       summary: |
-        Dyslocosaurus is known from fragmentary limb material originally described as a diplodocid (McIntosh et al., 1992). Recent analyses tentatively recover it as a dicraeosaurid (Tschopp et al., 2015; Whitlock et al., 2025), but the material is poor and possibly composite, and some workers regard the genus as a nomen dubium, with a suggestion that the holotype combines titanosaur and theropod elements.
+        Dyslocosaurus is known from fragmentary limb material originally described as a diplodocid (McIntosh et al., 1992). A recent analysis tentatively recovers it as a dicraeosaurid (Tschopp et al., 2015), but the material is poor and possibly composite, and some workers regard the genus as a nomen dubium, with a suggestion that the holotype combines titanosaur and theropod elements.
       history:
         - date: 2026-06-30
           note: |
-            Placed at Dicraeosauridae following the tentative assignment of recent analyses (Tschopp et al., 2015; Whitlock et al., 2025); the fragmentary, possibly composite holotype and the nomen dubium concern are noted.
+            Placed at Dicraeosauridae following the tentative assignment of Tschopp et al. (2015); the fragmentary, possibly composite holotype and the nomen dubium concern are noted.
     pronunciation:
       phonetic: dis-LOK-o-SAWR-us
     etymology: From Greek dys-, 'hard/difficult', + Greek lokos (topos), 'place', + Greek sauros, 'lizard'; means 'hard-to-place lizard', reflecting difficulty classifying it taxonomically
@@ -56976,14 +56975,6 @@ genera:
         pages: e857
         doi: 10.7717/peerj.857
         notes: Tentatively recovered Dyslocosaurus as a dicraeosaurid.
-      - id: whitlock2025a
-        authors: Whitlock, J. A.; Garderes, J. P.; Gallina, P.; Lamanna, M. C.
-        year: 2025
-        title: Athenar bermani, a new species of dicraeosaurid sauropod from Dinosaur National Monument, Utah, U.S.A.
-        journal: Palaeontologia Electronica
-        publisher: Coquina Press
-        doi: 10.26879/1550
-        notes: Reassessed Dyslocosaurus; the material is poor and possibly composite.
     taxonomy:
       - Life
       - Animalia
@@ -73846,7 +73837,7 @@ genera:
     parent: Diplodocoidea
     dispute:
       summary: |
-        Haplocanthosaurus is most often recovered as the basalmost member of Diplodocoidea (Whitlock, 2011; Royo-Torres et al., 2020; Jones, 2026), lying outside Diplodocimorpha. The placement is weakly supported, and some analyses instead recover it as a basal neosauropod outside Diplodocoidea or as a non-neosauropod eusauropod; the conservative placement here reflects the prevailing but unstable diplodocoid assignment.
+        Haplocanthosaurus is most often recovered as the basalmost member of Diplodocoidea (Whitlock, 2011; Jones, 2026), lying outside Diplodocimorpha. The placement is weakly supported, and some analyses instead recover it as a basal neosauropod outside Diplodocoidea or as a non-neosauropod eusauropod; the conservative placement here reflects the prevailing but unstable diplodocoid assignment.
       history:
         - date: 2026-06-30
           note: |
@@ -74010,17 +74001,6 @@ genera:
         pages: 872-915
         doi: 10.1111/j.1096-3642.2010.00665.x
         notes: Recovered Haplocanthosaurus as the basalmost diplodocoid.
-      - id: royo-torres2020a
-        authors: Royo-Torres, R.; Cobos, A.; Mocho, P.; Alcalá, L.
-        year: 2020
-        title: Origin and evolution of turiasaur dinosaurs set by means of a new 'rosetta' specimen from Spain
-        journal: Zoological Journal of the Linnean Society
-        publisher: Oxford University Press (OUP)
-        volume: "191"
-        issue: "1"
-        pages: 201-227
-        doi: 10.1093/zoolinnean/zlaa091
-        notes: Recovered Haplocanthosaurus as basalmost Diplodocoidea outside Diplodocimorpha
     taxonomy:
       - Life
       - Animalia
@@ -82857,7 +82837,7 @@ genera:
         publisher: Elsevier BV
         volume: "176"
         doi: 10.1016/j.cretres.2025.106188
-        notes: New rebbachisaurid description's phylogenetic analysis included Itapeuasaurus placement.
+        notes: Recovered Itapeuasaurus stemward outside Khebbashia in a clade with Astigmasaura and Sidersaura.
       - id: lerzo2024a
         authors: Lerzo, L. N.; Gallina, P. A.; Canale, J. I.; Otero, A.; Carballido, J. L.; Apesteguía, S.; Makovicky, P. J.
         year: 2024
@@ -82868,7 +82848,7 @@ genera:
         issue: "2"
         pages: 208-233
         doi: 10.1080/08912963.2023.2297914
-        notes: Recovered Itapeuasaurus stemward outside Khebbashia alongside Sidersaura and Astigmasaura.
+        notes: Recovered Itapeuasaurus stemward outside Khebbashia, sister to Sidersaura.
     taxonomy:
       - Life
       - Animalia
@@ -87911,11 +87891,11 @@ genera:
     parent: Rebbachisauridae
     dispute:
       summary: |
-        Although undoubtedly a rebbachisaurid, the position of Katepensaurus is uncertain. The describers and the redescription place it within Limaysaurinae (Ibiricu et al., 2015), whereas other analyses recover it as the basalmost member of Rebbachisaurinae (Fanti et al., 2015; Lerzo et al., 2024) or just outside Khebbashia (Royo-Torres et al., 2020).
+        Although undoubtedly a rebbachisaurid, the position of Katepensaurus is uncertain. The describers and the redescription place it within Limaysaurinae (Ibiricu et al., 2015), whereas other analyses recover it within Rebbachisaurinae (Lerzo et al., 2024), specifically as its basalmost member (Fanti et al., 2015).
       history:
         - date: 2026-06-30
           note: |
-            Retained at Rebbachisauridae, the least inclusive uncontested node, because its finer position ranges from Limaysaurinae to Rebbachisaurinae to outside Khebbashia across analyses.
+            Retained at Rebbachisauridae, the least inclusive uncontested node, because its finer position ranges from Limaysaurinae to Rebbachisaurinae across analyses.
     etymology: From Tehuelche 'katepenk' meaning 'hole', referring to a distinctive opening in the transverse processes of the dorsal vertebrae, combined with Greek 'sauros' meaning 'lizard'. The species name honors Alejandro Goicoechea, owner of the ranch where it was found.
     description: Katepensaurus is an extinct genus of rebbachisaurid sauropod dinosaur known from the Late Cretaceous of south-central Chubut Province of central Patagonia, Argentina. It contains a single species, Katepensaurus goicoecheai.
     diet: herbivore
@@ -88015,7 +87995,7 @@ genera:
         issue: "2"
         pages: 208-233
         doi: 10.1080/08912963.2023.2297914
-        notes: Recovered Katepensaurus as the basalmost member of Rebbachisaurinae.
+        notes: Recovered Katepensaurus within Rebbachisaurinae.
       - id: ibiricu2015a
         authors: Ibiricu, L. M.; Casal, G. A.; Martínez, R. D.; Lamanna, M. C.; Luna, M.; Salgado, L.
         year: 2015
@@ -88026,17 +88006,6 @@ genera:
         pages: 430-446
         doi: 10.5710/AMGH.24.04.2015.2830
         notes: New material and phylogenetic analysis confirm placement within rebbachisaurid subclade Limaysaurinae.
-      - id: royo-torres2020a
-        authors: Royo-Torres, R.; Cobos, A.; Mocho, P.; Alcalá, L.
-        year: 2020
-        title: Origin and evolution of turiasaur dinosaurs set by means of a new 'rosetta' specimen from Spain
-        journal: Zoological Journal of the Linnean Society
-        publisher: Oxford University Press (OUP)
-        volume: "191"
-        issue: "1"
-        pages: 201-227
-        doi: 10.1093/zoolinnean/zlaa091
-        notes: Placed Katepensaurus just outside Khebbashia in the diplodocoid tree
     taxonomy:
       - Life
       - Animalia
@@ -114473,7 +114442,7 @@ genera:
     parent: Rebbachisauridae
     dispute:
       summary: |
-        Nopcsaspondylus is known only from a now-lost dorsal vertebra preserved in Nopcsa's original illustrations. It is regarded as a probable rebbachisaurid on the basis of those figures (Apesteguía, 2007; Royo-Torres et al., 2020), but the loss of the specimen and the absence of clear autapomorphies leave its position within the family unresolved and its validity tentative.
+        Nopcsaspondylus is known only from a now-lost dorsal vertebra preserved in Nopcsa's original illustrations. It is regarded as a probable rebbachisaurid on the basis of those figures (Apesteguía, 2007), but the loss of the specimen and the absence of clear autapomorphies leave its position within the family unresolved and its validity tentative.
       history:
         - date: 2026-06-30
           note: |
@@ -114541,17 +114510,6 @@ genera:
         issue: "4"
         pages: 533-546
         doi: 10.1016/j.gr.2007.04.007
-      - id: royo-torres2020a
-        authors: Royo-Torres, R.; Cobos, A.; Mocho, P.; Alcalá, L.
-        year: 2020
-        title: Origin and evolution of turiasaur dinosaurs set by means of a new 'rosetta' specimen from Spain
-        journal: Zoological Journal of the Linnean Society
-        publisher: Oxford University Press (OUP)
-        volume: "191"
-        issue: "1"
-        pages: 201-227
-        doi: 10.1093/zoolinnean/zlaa091
-        notes: Sauropod supermatrix analysis recovered Nopcsaspondylus as a probable rebbachisaurid
     taxonomy:
       - Life
       - Animalia
@@ -134879,7 +134837,7 @@ genera:
     parent: Rebbachisauridae
     dispute:
       summary: |
-        Rayososaurus is a valid rebbachisaurid distinct from Limaysaurus, from which it was separated when the species formerly referred to it was moved to the new genus Limaysaurus (Salgado et al., 2004). Its position within Rebbachisauridae is poorly constrained owing to its fragmentary holotype: it has been recovered within Limaysaurinae (Carballido et al., 2012), in a basal position (Royo-Torres et al., 2020), and within a derived Rebbachisaurinae (Ren et al., 2023), and is frequently excluded from analyses.
+        Rayososaurus is a valid rebbachisaurid distinct from Limaysaurus, from which it was separated when the species formerly referred to it was moved to the new genus Limaysaurus (Salgado et al., 2004). Its position within Rebbachisauridae is poorly constrained owing to its fragmentary holotype: it has been recovered within Limaysaurinae (Carballido et al., 2012), and is frequently excluded from analyses.
       history:
         - date: 2026-06-30
           note: |
@@ -134973,17 +134931,6 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
         notes: Source of the body length and hip height estimates.
-      - id: royo-torres2020a
-        authors: Royo-Torres, R.; Cobos, A.; Mocho, P.; Alcalá, L.
-        year: 2020
-        title: Origin and evolution of turiasaur dinosaurs set by means of a new 'rosetta' specimen from Spain
-        journal: Zoological Journal of the Linnean Society
-        publisher: Oxford University Press (OUP)
-        volume: "191"
-        issue: "1"
-        pages: 201-227
-        doi: 10.1093/zoolinnean/zlaa091
-        notes: Recovered Rayososaurus in a basal turiasaur/rebbachisaurid-adjacent position in their phylogeny.
       - id: carballido2012a
         authors: Carballido, J. L.; Salgado, L.; Pol, D.; Canudo, J. I.; Garrido, A.
         year: 2012
@@ -134995,15 +134942,6 @@ genera:
         pages: 631-654
         doi: 10.1080/08912963.2012.672416
         notes: Recovers Rayososaurus-referred material within Limaysaurinae in rebbachisaurid phylogenetic analysis
-      - id: ren2023a
-        authors: Ren, X.-X.; Jiang, S.; Wang, X.-R.; Peng, G.-Z.; Ye, Y.; Jia, L.; You, H.-L.
-        year: 2023
-        title: "Re-examination of Dashanpusaurus dongi (Sauropoda: Macronaria) supports an early Middle Jurassic global distribution of neosauropod dinosaurs"
-        journal: Palaeogeography, Palaeoclimatology, Palaeoecology
-        volume: "610"
-        pages: "111318"
-        doi: 10.1016/j.palaeo.2022.111318
-        notes: Recovered Rayososaurus within a derived Rebbachisaurinae.
       - id: salgado2004a
         authors: Salgado, L.; Garrido, A.; Cocca, S. E.; Cocca, J. R.
         year: 2004
