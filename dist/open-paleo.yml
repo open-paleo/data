@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-13T03:23:59.183Z
+  built_at: 2026-07-13T03:54:40.610Z
   clade_count: 188
   genus_count: 1398
   license: CC-BY-4.0
@@ -28552,7 +28552,7 @@ genera:
     description: Bagaraatan is a genus of theropod dinosaur from the Late Cretaceous period of what is now the Nemegt Formation of Mongolia. It may have been a small predatory dinosaur measuring around 3 to 4 meters (9.8 to 13.1 ft) in length.
     dispute:
       summary: |
-        Bagaraatan ostromi was named by Osmólska (1996) on an incomplete Nemegt Formation skeleton she could place only tentatively within Tetanurae. Słowiak et al. (2024) found the holotype to be a chimera of a caenagnathid oviraptorosaur and a juvenile tyrannosaurid, restricted the holotype to the tyrannosaurid elements, and concluded it is an indeterminate juvenile tyrannosaurid rather than a valid distinct genus.
+        Bagaraatan ostromi was named by Osmólska (1996) on an incomplete Nemegt Formation skeleton she placed within Tetanurae but could refer only tentatively to Avetheropoda given the incomplete material. Słowiak et al. (2024) found the holotype to be a chimera of a caenagnathid oviraptorosaur and a juvenile tyrannosaurid, restricted the holotype to the tyrannosaurid elements, and reinterpreted it as an indeterminate juvenile tyrannosaurid (possibly a juvenile Tarbosaurus) without formally sinking the name, leaving its validity as a distinct genus unresolved.
       history:
         - date: 2026-06-25
           note: Kept at Tyrannosauridae (clade of the restricted holotype per Słowiak et al. 2024); genus validity questionable.
@@ -110129,7 +110129,7 @@ genera:
     described: 1877
   Nanotyrannus:
     genus: Nanotyrannus
-    parent: Tyrannosaurinae
+    parent: Eutyrannosauria
     etymology: Originally proposed by Bakker, Williams and Currie (1988) as Latin nano ("small") plus tyrannus ("tyrant"); the derivation is now usually corrected to Greek nanos ("dwarf" or "pygmy") and tyrannos ("king"), in reference to the small body size relative to other tyrannosauroids.
     pronunciation:
       ipa: /ˌnænoʊˈtaɪrænəs/
@@ -110141,7 +110141,7 @@ genera:
         The validity of Nanotyrannus is actively contested. After the 1988 erection of the genus, Carr (1999) and Woodward et al. (2020) argued that the holotype CMNH 7541 is an immature Tyrannosaurus rex, citing tooth-grain immaturity and femoral osteohistology. Longrich and Saitta (2024), Zanno and Napoli (2025) — who erected a second species, N. lethaeus — and Griffin et al. (2025, ceratobranchial histology) reaffirmed Nanotyrannus as a distinct, skeletally mature taxon. No broad consensus yet.
       history:
         - date: 2026-06-25
-          note: Placed at Tyrannosaurinae — the least-inclusive clade accepted whether Nanotyrannus is a distinct tyrannosaurine or a juvenile Tyrannosaurus; validity unresolved.
+          note: "Placed at Eutyrannosauria — the least-inclusive clade spanning both hypotheses: within Tyrannosaurinae if a juvenile Tyrannosaurus, or an early-diverging non-tyrannosaurid eutyrannosaurian (Nanotyrannidae, Zanno and Napoli 2025) if a distinct taxon; validity unresolved."
     diet: carnivore
     locomotion: bipedal
     paleoenvironment:
@@ -110170,7 +110170,7 @@ genera:
         reason: Original combination established by Gilmore (1946) for CMNH 7541, based on apparent affinities with G. sternbergi and G. libratus. Bakker, Williams and Currie (1988) reassigned the species to a new genus Nanotyrannus, yielding Nanotyrannus lancensis (Gilmore, 1946).
       - name: Clevelanotyrannus
         type: nomen nudum
-        reason: Name appearing on the original submitted manuscript and mentioned by Currie (1987) before peer-review feedback led the authors to rewrite the description; the published 1988 paper used Nanotyrannus instead and Clevelanotyrannus was never validly published.
+        reason: Unpublished manuscript name for CMNH 7541 that predated the formal description; the published 1988 paper (Bakker, Williams and Currie) used Nanotyrannus instead, so Clevelanotyrannus was never validly published.
     species:
       - name: Nanotyrannus lancensis
         etymology: From Latin lancensis ("of the Lance"), referring to the Lance Formation — Gilmore's (1946) original (and mistaken) attribution of the holotype's geological context; the actual horizon is the Hell Creek Formation.
@@ -110309,7 +110309,7 @@ genera:
         issue: "8069"
         pages: 973-979
         doi: 10.1038/s41586-025-08964-6
-        notes: Excludes N. lancensis from phylogenetic analysis as "problematic"; argues prior scoring on immature specimens confounded interrelationships (re Longrich and Saitta, 2024).
+        notes: Excludes N. lancensis from its phylogenetic analysis as a "problematic" taxon.
       - id: paul2025b
         authors: Paul, G. S.
         year: 2025
@@ -110334,17 +110334,6 @@ genera:
         journal: PeerJ
         doi: 10.7717/peerj.20469
         notes: BMRP 2002.4.1 and 2006.4.4 "do not fit with other Tyrannosaurus specimens"; authors note data "do not directly bear on the Nanotyrannus or multi-taxic proposals" — agnostic but compatible.
-      - id: currie1987a
-        authors: Currie, P. J.
-        year: 1987
-        title: Bird-like characteristics of the jaws and teeth of troodontid theropods (Dinosauria, Saurischia)
-        journal: Journal of Vertebrate Paleontology
-        publisher: Informa UK Limited
-        volume: "7"
-        issue: "1"
-        pages: 72-81
-        doi: 10.1080/02724634.1987.10011638
-        notes: Mentioned the manuscript name Clevelanotyrannus before peer review.
     taxonomy:
       - Life
       - Animalia
@@ -110364,8 +110353,6 @@ genera:
       - Coelurosauria
       - Tyrannosauroidea
       - Eutyrannosauria
-      - Tyrannosauridae
-      - Tyrannosaurinae
     authors: Bakker, R. T.; Williams, M.; Currie, P. J.
     described: 1988
   Nanshiungosaurus:
@@ -134404,7 +134391,7 @@ genera:
     description: Raptorex is a controversial genus of tyrannosaurid dinosaur. Its fossil remains consist of a single juvenile specimen probably uncovered in Mongolia, or possibly northeastern China. The type species is R. kriegsteini, described in 2009 by Sereno and colleagues. The genus name is derived from Latin raptor, "robber", and rex, "king". The specific name honors Roman Kriegstein, a survivor of the Holocaust, whose son Henry Kriegstein donated the specimen to the University of Chicago for scientific study.
     dispute:
       summary: |
-        Raptorex kriegsteini was named by Sereno et al. (2009) from a single juvenile skeleton of uncertain provenance. Subsequent workers regard it as a likely juvenile tyrannosaurine — possibly Tarbosaurus — which would make the genus a nomen dubium.
+        Raptorex kriegsteini was named by Sereno et al. (2009) from a single small skeleton (holotype LH PV18) they interpreted as a subadult from the Lower Cretaceous of China. Fowler et al. (2011) reassessed LH PV18 as a probable juvenile of currently unknown provenance, rejecting the Lower Cretaceous China origin, and argued it more likely represents a juvenile of a larger Late Cretaceous Mongolian tyrannosaurid — possibly Tarbosaurus, as in its original sale description — concluding that Raptorex should be regarded as a nomen dubium pending stronger evidence.
       history:
         - date: 2026-06-25
           note: Kept at Tyrannosauroidea incertae sedis; validity and provenance contested (likely a juvenile tyrannosaurine).
@@ -134480,6 +134467,17 @@ genera:
         issue: "5951"
         pages: 418-422
         doi: 10.1126/science.1177428
+        notes: Erected Raptorex kriegsteini on holotype LH PV18, interpreted as a subadult tyrannosauroid from the Lower Cretaceous of China.
+      - id: fowler2011b
+        authors: Fowler, D. W.; Woodward, H. N.; Freedman, E. A.; Larson, P. L.; Horner, J. R.
+        year: 2011
+        title: 'Reanalysis of "Raptorex kriegsteini": a juvenile tyrannosaurid dinosaur from Mongolia'
+        journal: PLoS ONE
+        volume: "6"
+        issue: "6"
+        pages: e21376
+        doi: 10.1371/journal.pone.0021376
+        notes: Reanalyzed LH PV18 as a probable juvenile of unknown provenance; argues it is likely a juvenile Late Cretaceous Mongolian tyrannosaurid (possibly Tarbosaurus), rendering Raptorex a nomen dubium.
     taxonomy:
       - Life
       - Animalia
