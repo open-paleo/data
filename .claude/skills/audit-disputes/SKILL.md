@@ -44,7 +44,12 @@ and rationale: `condense-instructions.md` (agent-facing) and the audit memories.
 
 - `assemble.py <Clade>` — Phase A. Slice → loci with dispute blocks → union of
   cited ref-ids → classify (primary / reference-work / not-in-corpus). Writes
-  `reports/audit/<Clade>/manifest.json`.
+  `reports/audit/<Clade>/manifest.json`. For a slice too large for one review
+  gate (≳40 loci), carve it into disjoint **sub-slices** with `--exclude CLADE`
+  (repeatable), which drops that clade's whole subtree — e.g. audit
+  `Hadrosauridae` on its own, then `Hadrosauroidea --exclude Hadrosauridae`, then
+  `Ornithopoda --exclude Hadrosauroidea`. Each sub-slice runs the full
+  assemble→condense→tier0→tier1→report→fix cycle independently.
 - `tier0.py <manifest>` — deterministic bibliographic checks. Writes `tier0.json`.
 - `report.py <work-dir> --date YYYY-MM-DD` — assembles the findings report AND
   updates the durable re-audit queue.

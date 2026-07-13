@@ -47,32 +47,52 @@ REFERENCE_WORK_PREFIXES = (
 MONOGRAPH_IDS = set()
 
 
-def load_tree_slice(slice_root):
-    """Return the set of clade node names at or below slice_root in tree.yml."""
-    tree = yaml.safe_load(open(os.path.join(DATA, "tree.yml")))
+def _find(node, target):
+    """Return the subtree dict rooted at `target`, or None if absent."""
+    if isinstance(node, dict):
+        for key, value in node.items():
+            if key == target:
+                return value
+            found = _find(value, target)
+            if found is not None:
+                return found
+    return None
 
-    def find(node, target):
-        if isinstance(node, dict):
-            for key, value in node.items():
-                if key == target:
-                    return value
-                found = find(value, target)
-                if found is not None:
-                    return found
-        return None
 
-    def names(node):
-        out = set()
-        if isinstance(node, dict):
-            for key, value in node.items():
-                out.add(key)
-                out |= names(value)
-        return out
+def _names(node):
+    """Return the set of all clade node names within `node`."""
+    out = set()
+    if isinstance(node, dict):
+        for key, value in node.items():
+            out.add(key)
+            out |= _names(value)
+    return out
 
-    sub = find(tree, slice_root)
+
+def subtree_names(tree, root):
+    """Return {root} plus every clade name below it, or None if root is absent."""
+    sub = _find(tree, root)
     if sub is None:
+        return None
+    return _names(sub) | {root}
+
+
+def load_tree_slice(slice_root, excludes=()):
+    """Return the clade names at/below slice_root, minus any excluded subtrees.
+
+    Each entry in `excludes` is a clade node whose entire subtree (the node and
+    all descendants) is removed — this lets a large slice be partitioned into
+    disjoint sub-slices without overlap (e.g. Ornithopoda --exclude Hadrosauroidea)."""
+    tree = yaml.safe_load(open(os.path.join(DATA, "tree.yml")))
+    names = subtree_names(tree, slice_root)
+    if names is None:
         sys.exit(f"slice root {slice_root!r} not found in tree.yml")
-    return names(sub) | {slice_root}
+    for excluded in excludes:
+        excluded_names = subtree_names(tree, excluded)
+        if excluded_names is None:
+            sys.exit(f"--exclude clade {excluded!r} not found in tree.yml")
+        names -= excluded_names
+    return names
 
 
 def classify(ref_id):
@@ -120,10 +140,13 @@ def collect_loci(clade_names):
 def main():
     parser = argparse.ArgumentParser(description="Assemble the audit working paper set for a slice")
     parser.add_argument("slice_root")
+    parser.add_argument("--exclude", action="append", default=[], metavar="CLADE",
+                        help="exclude this clade's entire subtree (repeatable); "
+                             "use to carve disjoint sub-slices of a large slice")
     parser.add_argument("--out", default=None)
     args = parser.parse_args()
 
-    clade_names = load_tree_slice(args.slice_root)
+    clade_names = load_tree_slice(args.slice_root, args.exclude)
     loci = list(collect_loci(clade_names))
 
     papers = {}
@@ -146,6 +169,7 @@ def main():
 
     manifest = {
         "slice_root": args.slice_root,
+        "excluded": list(args.exclude),
         "loci": [{"kind": k, "name": n, "file": f, "refs": r} for k, n, f, r in loci],
         "papers": sorted(papers.values(), key=lambda p: p["ref_id"]),
     }
@@ -154,7 +178,7 @@ def main():
     ref_works = [p for p in manifest["papers"] if p["classification"] == "reference-work"]
     not_in_corpus = [p for p in manifest["papers"] if not p["in_corpus"] and p["classification"] != "reference-work"]
 
-    print(f"slice: {args.slice_root}")
+    print(f"slice: {args.slice_root}" + (f" (excluding {', '.join(args.exclude)})" if args.exclude else ""))
     print(f"loci with dispute blocks: {len(loci)} ({sum(1 for l in loci if l[0]=='genus')} genera, {sum(1 for l in loci if l[0]=='clade')} clades)")
     print(f"distinct papers cited: {len(manifest['papers'])}")
     print(f"  to condense (in-corpus primary/monograph): {len(to_condense)}")
