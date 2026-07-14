@@ -44,14 +44,6 @@ pending:
     reason: not-in-corpus
     slices:
     - Ornithopoda
-  geoffroysaint-hilaire1831a:
-    first_seen: '2026-07-09'
-    last_seen: '2026-07-12'
-    loci:
-    - Cryptosaurus
-    reason: not-in-corpus
-    slices:
-    - Ankylosauria
   iori2021a:
     first_seen: '2026-07-12'
     last_seen: '2026-07-12'
@@ -84,23 +76,6 @@ pending:
     reason: source-incomplete
     slices:
     - Ceratosauria
-  poole2022a:
-    first_seen: '2026-07-13'
-    last_seen: '2026-07-13'
-    loci:
-    - Emiliasaura
-    note: Corpus markdown filed under poole2022a is the WRONG Poole 2022 paper (the
-      Iyuku / Anatomical Record ontogenetic-coding study, doi 10.1002/ar.25095), not
-      the Palaeontologia Electronica "Phylogeny of iguanodontian dinosaurs and the
-      evolution of quadrupedality" (doi 10.26879/702) that the ref-store poole2022a
-      and Emiliasaura's citation intend (confirmed as the matrix source by coria2025a).
-      Data is CORRECT; fix is corpus-side (logged in corpus-paper-report.md section
-      1). When the correct Palaeontologia Electronica paper is re-filed under poole2022a
-      (condensation self-heals on hash change), re-audit Emiliasaura's poole2022a
-      claim. Re-key the Iyuku paper as poole2022b if any locus needs it.
-    reason: corpus-wrong-paper
-    slices:
-    - Ornithopoda
   riabinin1925a:
     first_seen: '2026-07-13'
     last_seen: '2026-07-13'
@@ -117,23 +92,6 @@ pending:
     reason: not-in-corpus
     slices:
     - Sauropoda
-  xing2014b:
-    first_seen: '2026-07-13'
-    last_seen: '2026-07-13'
-    loci:
-    - Kundurosaurus
-    note: 'Kundurosaurus wrongly cited xing2014a (Xing et al. 2014 Zhanghenglong PLoS
-      ONE paper) for the Kundurosaurus->Kerberosaurus synonymy. Correct source is
-      Xing H., Zhao X., Wang K., Li D., Chen S., Mallon J.C., Zhang Y. & Xu X. (2014),
-      ''Comparative osteology and phylogenetic relationship of Edmontosaurus and Shantungosaurus'',
-      Acta Geologica Sinica (Eng. Ed.) 88(6):1623-1652, doi:10.1111/1755-6724.12334
-      (identified via Wikipedia cache + Crossref). Re-pointed Kundurosaurus references
-      xing2014a->xing2014b + created the ref-store entry. WHEN it lands as xing2014b
-      markdown: condense + verify the synonymy claim. Keep xing2014a (Zhanghenglong)
-      for whatever legitimately cites it.'
-    reason: fetch-pending
-    slices:
-    - Hadrosauridae
   yadagiri1979a:
     first_seen: '2026-07-13'
     last_seen: '2026-07-13'
