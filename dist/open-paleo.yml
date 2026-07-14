@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-14T03:22:27.162Z
+  built_at: 2026-07-14T03:44:58.992Z
   clade_count: 188
   genus_count: 1398
   license: CC-BY-4.0
@@ -122,6 +122,7 @@ tree:
                                               Somphospondyli:
                                                 Titanosauria:
                                                   Lithostrotia:
+                                                    Lirainosaurinae: {}
                                                     Eutitanosauria:
                                                       Colossosauria:
                                                         Lognkosauria: {}
@@ -129,7 +130,6 @@ tree:
                                                           Aeolosaurini: {}
                                                       Saltasauroidea:
                                                         Nemegtosauridae: {}
-                                                        Lirainosaurinae: {}
                                                         Saltasauridae:
                                                           Opisthocoelicaudiinae: {}
                                                           Saltasaurinae: {}
@@ -5047,8 +5047,6 @@ clades:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
-      - Eutitanosauria
-      - Saltasauroidea
       - Lirainosaurinae
     type_genus: Lirainosaurus
     described: 2018
@@ -5067,7 +5065,39 @@ clades:
         volume: "91"
         pages: 429-456
         doi: 10.1016/j.cretres.2018.06.015
-        notes: Erected Lirainosaurinae.
+        notes: Erected Lirainosaurinae; recovered within Lithostrotia, away from Saltasauridae.
+      - id: díezdíaz2020a
+        authors: Díez Díaz, V.; Garcia, G.; Pereda Suberbiola, X.; Jentgen-Ceschino, B.; Stein, K.; Godefroit, P.; Valentin, X.
+        year: 2020
+        title: "A new titanosaur (Dinosauria: Sauropoda) from the Upper Cretaceous of Velaux-La-Bastide Neuve (southern France)"
+        journal: Historical Biology
+        publisher: Informa UK Limited
+        volume: "33"
+        issue: "11"
+        pages: 2998-3017
+        doi: 10.1080/08912963.2020.1841184
+        notes: Recovered Lirainosaurinae as a monophyletic lithostrotian clade including Garrigatitan.
+      - id: vila2022a
+        authors: Vila, B.; Sellés, A.; Moreno-Azanza, M.; Razzolini, N. L.; Gil-Delgado, A.; Canudo, J. I.; Galobart, À.
+        year: 2022
+        title: A titanosaurian sauropod with Gondwanan affinities in the latest Cretaceous of Europe
+        journal: Nature Ecology & Evolution
+        publisher: Springer Science and Business Media LLC
+        volume: "6"
+        issue: "3"
+        pages: 288-296
+        doi: 10.1038/s41559-021-01651-5
+        notes: Recovered the Ibero-Armorican lirainosaurines near Opisthocoelicaudiinae.
+      - id: díaz2025a
+        authors: Díaz, V. D.; Mannion, P. D.; Csiki-Sava, Z.; Upchurch, P.
+        year: 2025
+        title: Revision of Romanian sauropod dinosaurs reveals high titanosaur diversity and body-size disparity on the latest Cretaceous Haţeg Island, with implications for titanosaurian biogeography
+        journal: Journal of Systematic Palaeontology
+        publisher: Informa UK Limited
+        volume: "23"
+        issue: "1"
+        doi: 10.1080/14772019.2024.2441516
+        notes: Recovered Lirainosaurinae just outside Saltasauridae under implied weighting; not monophyletic under equal weights.
       - id: jones2026b
         authors: Jones, B.; Viola, E.
         year: 2026
@@ -18420,8 +18450,6 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
-      - Eutitanosauria
-      - Saltasauroidea
       - Lirainosaurinae
     authors: Le Loeuff, J.
     described: 1995
@@ -26735,8 +26763,6 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
-      - Eutitanosauria
-      - Saltasauroidea
       - Lirainosaurinae
     authors: Garcia, G.; Amico, S.; Fournier, F.; Thouand, E.; Valentin, X.
     described: 2010
@@ -67550,8 +67576,6 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
-      - Eutitanosauria
-      - Saltasauroidea
       - Lirainosaurinae
     authors: Díez Díaz, V.; Garcia, G.; Pereda Suberbiola, X.; Jentgen-Ceschino, B.; Stein, K.; Godefroit, P.; Valentin, X.
     described: 2020
@@ -96793,8 +96817,6 @@ genera:
       - Somphospondyli
       - Titanosauria
       - Lithostrotia
-      - Eutitanosauria
-      - Saltasauroidea
       - Lirainosaurinae
     authors: Sanz, J. L.; Powell, J. E.; Le Loeuff, J.; Martínez, R.; Pereda-Suberbiola, X.
     described: 1999
