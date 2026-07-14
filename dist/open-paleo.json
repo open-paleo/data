@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-07-14T02:03:55.239Z",
+    "built_at": "2026-07-14T03:22:27.162Z",
     "clade_count": 188,
     "genus_count": 1398,
     "license": "CC-BY-4.0",
@@ -37799,13 +37799,17 @@
     },
     "Barapasaurus": {
       "genus": "Barapasaurus",
-      "parent": "Eusauropoda",
+      "parent": "Sauropoda",
       "dispute": {
-        "summary": "Barapasaurus is treated as a basal eusauropod by Jones (2026), but both Wilson (2002) and its own redescription (Bandyopadhyay et al., 2010) place it just outside Eusauropoda, more basal than Vulcanodon in the latter.\n",
+        "summary": "Barapasaurus is placed here as a basal, non-eusauropod sauropod. Under the node-based definition of Eusauropoda applied in this dataset (anchored on Shunosaurus), the two strongest cladistic analyses exclude it: Wilson (2002) recovers it just above Vulcanodon (a basal gravisaurian), while its redescription (Bandyopadhyay et al., 2010) recovers it below Vulcanodon, outside Gravisauria. Because those two results disagree on Gravisauria membership, it is placed conservatively at Sauropoda, the most basal node consistent with both. Stem-based analyses (Wilson and Sereno, 1998) and reference works (Jones, 2026) instead treat it as a eusauropod, but that rests on a broader Eusauropoda concept not used here.\n",
         "history": [
           {
             "date": "2026-06-29",
             "note": "Placed at Eusauropoda following Jones (2026); the outside-Eusauropoda position of Wilson (2002) and Bandyopadhyay and others (2010) reflected, not adopted.\n"
+          },
+          {
+            "date": "2026-07-13",
+            "note": "Moved from Eusauropoda to Sauropoda. Node-based analyses (Wilson, 2002; Bandyopadhyay and others, 2010) place Barapasaurus outside Eusauropoda but disagree on whether it falls within Gravisauria (above Vulcanodon) or below it; Sauropoda is the most basal node consistent with both.\n"
           }
         ]
       },
@@ -37922,6 +37926,17 @@
           "notes": "Treats Barapasaurus as a basal eusauropod; source of the hip height estimate."
         },
         {
+          "id": "wilson1998a",
+          "authors": "Wilson, J. A.; Sereno, P. C.",
+          "year": 1998,
+          "title": "Early evolution and higher-level phylogeny of sauropod dinosaurs",
+          "journal": "Memoir (Society of Vertebrate Paleontology)",
+          "volume": "5",
+          "pages": "1-68",
+          "doi": "10.2307/3889325",
+          "notes": "Recovered Barapasaurus within Eusauropoda under a stem-based definition; weakly supported."
+        },
+        {
           "id": "wilson2002a",
           "authors": "Wilson, J. A.",
           "year": 2002,
@@ -37962,9 +37977,7 @@
         "Plateosauria",
         "Massopoda",
         "Sauropodiformes",
-        "Sauropoda",
-        "Gravisauria",
-        "Eusauropoda"
+        "Sauropoda"
       ],
       "authors": "Jain, S. L.; Kutty, T. S.; T. Roy-Chowdhury, S. C.",
       "described": 1975
