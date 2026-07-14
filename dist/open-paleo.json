@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-07-14T03:44:58.992Z",
+    "built_at": "2026-07-14T04:08:56.796Z",
     "clade_count": 188,
     "genus_count": 1398,
     "license": "CC-BY-4.0",
@@ -106675,11 +106675,11 @@
         "phonetic": "YOO-ti-ko-SAWR-us"
       },
       "etymology": "Named after the Jutes (Iuti in Latin), the Germanic people associated with the Isle of Wight; meaning \"Jute lizard\"",
-      "description": "Iuticosaurus is a genus of titanosaur sauropod dinosaur from the Early Cretaceous of the Isle of Wight. Two species have been named: I. valdensis and I. lydekkeri. I. valdensis was found in the Wessex Formation and I. lydekkeri in the younger Upper Greensand.",
+      "description": "Iuticosaurus is a genus of titanosaurian sauropod dinosaur from the Early Cretaceous of the Isle of Wight, England. The type and only valid species, Iuticosaurus valdensis, was erected by Le Loeuff (1993) for caudal vertebrae from the Wealden that Huene (1929) had originally named \"Titanosaurus\" valdensis. It was long regarded as the oldest titanosaur known from Europe.",
       "diet": "herbivore",
       "locomotion": "quadrupedal",
       "paleoenvironment": [
-        "marine"
+        "fluvial"
       ],
       "diagnostic_features": [
         "Deeply procoelous caudal vertebrae with posterior ridge on lateral face of centrum",
@@ -106705,10 +106705,11 @@
           "id": "4967345"
         }
       ],
+      "erected_in": "leloeuff1993a",
       "species": [
         {
           "name": "Iuticosaurus valdensis",
-          "etymology": "Latinized form of 'Wealden', referring to the Wealden Group of southern England where the type material was discovered.",
+          "etymology": "From 'Wealden', for the Lower Cretaceous Wealden strata of the Isle of Wight that yielded the type material.",
           "status": "valid",
           "type_species": true,
           "period": {
@@ -106720,67 +106721,47 @@
               "Aptian"
             ],
             "from_ma": 129.4,
-            "to_ma": 120
+            "to_ma": 113
           },
           "location": {
             "country": "GB",
-            "locality": "Brook",
             "region": "Isle of Wight",
-            "formation": "Wessex"
+            "formation": "Wessex",
+            "locality": "Brook"
           },
           "type_specimen": {
             "specimen_id": [
-              "BMNH 151"
+              "BMNH R151"
             ],
             "specimen_type": "lectotype",
             "institution": "Natural History Museum",
-            "material": "Two incomplete middle caudal vertebrae; deeply procoelous with posterior ridge on lateral face and promontory at base of neural arch.",
+            "material": "Laterally compressed, water-worn middle caudal vertebra centrum.",
             "completeness": "fragmentary"
           },
-          "erected_in": "leloeuff1993a",
-          "authors": "Le Loeuff, J.",
-          "described": 1993
-        },
-        {
-          "name": "Iuticosaurus lydekkeri",
-          "etymology": "Named for Richard Lydekker, the British paleontologist who first described the fossil vertebrae.",
-          "status": "valid",
-          "period": {
-            "name": [
-              "Early Jurassic",
-              "Late Cretaceous"
-            ],
-            "stage": [
-              "Toarcian",
-              "Maastrichtian"
-            ],
-            "from_ma": 179.9,
-            "to_ma": 66
-          },
-          "size": {
-            "length_m": {
-              "min": 15,
-              "max": 20
+          "synonyms": [
+            {
+              "name": "Titanosaurus valdensis",
+              "type": "reassigned",
+              "reason": "Original combination by Huene (1929); recombined into the new genus Iuticosaurus by Le Loeuff (1993), who designated BMNH R151 as lectotype."
             }
-          },
-          "location": {
-            "country": "GB",
-            "region": "England",
-            "formation": "Upper Greensand"
-          },
-          "type_specimen": {
-            "specimen_id": [
-              "BMNH R146a"
-            ],
-            "specimen_type": "holotype",
-            "institution": "Natural History Museum"
-          },
-          "erected_in": "leloeuff1993a",
-          "authors": "Le Loeuff, J.",
-          "described": 1993
+          ],
+          "erected_in": "huene1929a",
+          "described_in": "leloeuff1993a",
+          "authors": "Huene, F. V.",
+          "described": 1929
         }
       ],
       "references": [
+        {
+          "id": "huene1929a",
+          "authors": "Huene, F. V.",
+          "year": 1929,
+          "title": "Los saurisquios y ornitisquios del Cretáceo Argentino [The Saurischians and Ornithischians of the Argentine Cretaceous]",
+          "journal": "Anales del Museo de La Plata, series 3",
+          "volume": "3",
+          "pages": "1-196",
+          "notes": "Erected the species as Titanosaurus valdensis."
+        },
         {
           "id": "leloeuff1993a",
           "authors": "Le Loeuff, J.",
@@ -106788,7 +106769,8 @@
           "title": "European titanosaurids",
           "journal": "Revue de Paléobiologie, Volume Spéciale",
           "volume": "7",
-          "pages": "105-117"
+          "pages": "105-117",
+          "notes": "Erected Iuticosaurus and recombined the type species as Iuticosaurus valdensis."
         },
         {
           "id": "jones2026b",
