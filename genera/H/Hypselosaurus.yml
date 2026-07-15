@@ -17,21 +17,21 @@ description: Hypselosaurus is a dubious genus of titanosaurian sauropod that
   found in the same formation as the dromaeosaurids Variraptor and Pyroraptor,
   the ornithopod Rhabdodon, and the ankylosaurian Rhodanosaurus, as well as
   indeterminate bones from other groups.
+dispute:
+  summary: >
+    Hypselosaurus priscus is based on non-diagnostic titanosaur material
+    from the Late Cretaceous of Provence and is listed among sauropod
+    nomina dubia (Weishampel and others, 2004); its holotype cannot be
+    reliably distinguished from other sauropods, and eggs long referred
+    to it likely pertain to more than one taxon.
+  history:
+    - date: "2026-07-14"
+      note: Marked a nomen dubium and retained at Titanosauria incertae
+        sedis; non-diagnostic material.
 diet: herbivore
 locomotion: quadrupedal
 paleoenvironment:
   - fluvial
-diagnostic_features:
-  - Caudal vertebrae distinctly depressed vertically (not compressed laterally
-    as in crocodiles) with oval articular faces 11 cm wide by 7 cm high
-  - Absence of medullary canal in long bones, indicating aquatic rather than
-    terrestrial habits
-  - Vertebral body approximately 12 cm long, narrowing to 8 cm width at center,
-    with small vertebral foramen occupying only half the length
-  - Articular apophyses arrangement with cone-shaped process on one side and two
-    divergent symmetrical apophyses on opposite side of caudal vertebrae
-  - Large, robust long bones with dimensions suggesting total animal length of
-    several meters
 appearance:
   integument: scaled
   evidence: inferred
@@ -46,7 +46,7 @@ species:
   - name: Hypselosaurus priscus
     etymology: "From Latin 'priscus' meaning 'ancient' or 'of former times', likely
       referring to the antiquity of the taxon."
-    status: valid
+    status: nomen dubium
     type_species: true
     period:
       name:
@@ -56,12 +56,13 @@ species:
       from_ma: 72.1
       to_ma: 66
     location:
-      country: ES
-      region: Cataluña
-      formation: Conques
+      country: FR
+      locality: Rognac, Aix Basin
+      region: Provence-Alpes-Côte d'Azur
+      formation: Grès à Reptiles
       coordinates:
-        - 42.159443
-        - 0.973056
+        - 43.477409
+        - 5.239641
     type_specimen:
       specimen_type: holotype
       status: uncatalogued
@@ -78,3 +79,6 @@ species:
     erected_in: matheron1869a
 references:
   - id: matheron1869a
+  - id: weishampel2004a
+    notes: The Dinosauria (2nd ed.); lists Hypselosaurus priscus among sauropod
+      nomina dubia.
