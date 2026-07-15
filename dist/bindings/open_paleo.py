@@ -97,6 +97,7 @@ class SynonymTypes(Enum):
     possible_subjective = 'possible subjective'
     preoccupied = 'preoccupied'
     reassigned = 'reassigned'
+    emended_spelling = 'emended spelling'
     nomen_oblitum = 'nomen oblitum'
     nomen_rejectum = 'nomen rejectum'
     nomen_nudum = 'nomen nudum'
@@ -309,25 +310,6 @@ class AppearanceFeatures(Enum):
     feathered_tail = 'feathered tail'
 
 
-class Clade(BaseModel):
-    description: Optional[str] = None
-    taxonomy: List[str] = Field(
-        ...,
-        description="Ordered ancestor clade names from root to the record's placement.",
-    )
-    type_genus: Optional[str] = Field(
-        None, description='Type genus of a rank-based name; absent for unranked clades.'
-    )
-    described: Optional[int] = Field(
-        None, description='Year the clade was erected (derived from erected_in).'
-    )
-    authors: Optional[str] = Field(
-        None, description='Author(s) who erected the clade (derived from erected_in).'
-    )
-    diagnostic_features: Optional[List[str]] = None
-    references: Optional[List[Reference]] = None
-
-
 class TypeSpecimen(BaseModel):
     specimen_id: Optional[List[str]] = Field(
         None, description='Catalogue number(s), one per element.'
@@ -398,6 +380,26 @@ class Size(BaseModel):
     weight_kg: Optional[SizeRange] = None
     hip_height_m: Optional[SizeRange] = None
     skull_length_m: Optional[SizeRange] = None
+
+
+class Clade(BaseModel):
+    description: Optional[str] = None
+    taxonomy: List[str] = Field(
+        ...,
+        description="Ordered ancestor clade names from root to the record's placement.",
+    )
+    type_genus: Optional[str] = Field(
+        None, description='Type genus of a rank-based name; absent for unranked clades.'
+    )
+    described: Optional[int] = Field(
+        None, description='Year the clade was erected (derived from erected_in).'
+    )
+    authors: Optional[str] = Field(
+        None, description='Author(s) who erected the clade (derived from erected_in).'
+    )
+    diagnostic_features: Optional[List[str]] = None
+    synonyms: Optional[List[Synonym]] = None
+    references: Optional[List[Reference]] = None
 
 
 class Species(BaseModel):

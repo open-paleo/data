@@ -48,6 +48,7 @@
         "described": { "type": "integer", "description": "Year the clade was erected (derived from erected_in)." },
         "authors": { "type": "string", "description": "Author(s) who erected the clade (derived from erected_in)." },
         "diagnostic_features": { "type": "array", "items": { "type": "string" } },
+        "synonyms": { "type": "array", "items": { "$ref": "#/$defs/synonym" } },
         "references": { "type": "array", "items": { "$ref": "#/$defs/reference" } }
       }
     },
@@ -263,7 +264,7 @@
       "items": { "type": "string" }
     },
     "status": { "type": "string", "enum": ["valid", "nomen dubium", "nomen nudum", "disputed"] },
-    "synonym_types": { "type": "string", "enum": ["junior subjective", "junior objective", "possible subjective", "preoccupied", "reassigned", "nomen oblitum", "nomen rejectum", "nomen nudum", "nomen ex dissertatione", "nomen manuscriptum", "informal", "boycotted"] },
+    "synonym_types": { "type": "string", "enum": ["junior subjective", "junior objective", "possible subjective", "preoccupied", "reassigned", "emended spelling", "nomen oblitum", "nomen rejectum", "nomen nudum", "nomen ex dissertatione", "nomen manuscriptum", "informal", "boycotted"] },
     "diet": { "type": "string", "enum": ["herbivore", "carnivore", "omnivore", "insectivore", "piscivore"] },
     "locomotion": { "type": "string", "enum": ["bipedal", "quadrupedal", "facultative"] },
     "completeness": { "type": "string", "enum": ["complete", "partial", "fragmentary"] },

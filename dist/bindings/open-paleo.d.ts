@@ -9,6 +9,20 @@
  * Ordered ancestor clade names from root to the record's placement.
  */
 export type Taxonomy = string[];
+export type SynonymTypes =
+  | "junior subjective"
+  | "junior objective"
+  | "possible subjective"
+  | "preoccupied"
+  | "reassigned"
+  | "emended spelling"
+  | "nomen oblitum"
+  | "nomen rejectum"
+  | "nomen nudum"
+  | "nomen ex dissertatione"
+  | "nomen manuscriptum"
+  | "informal"
+  | "boycotted";
 export type Diet = "herbivore" | "carnivore" | "omnivore" | "insectivore" | "piscivore";
 export type Locomotion = "bipedal" | "quadrupedal" | "facultative";
 export type Paleoenvironments =
@@ -67,19 +81,6 @@ export type AppearanceFeatures =
   | "tail bristles"
   | "feathered tail";
 export type IdentifierSources = "zoobank" | "wikidata" | "gbif" | "pbdb" | "eol";
-export type SynonymTypes =
-  | "junior subjective"
-  | "junior objective"
-  | "possible subjective"
-  | "preoccupied"
-  | "reassigned"
-  | "nomen oblitum"
-  | "nomen rejectum"
-  | "nomen nudum"
-  | "nomen ex dissertatione"
-  | "nomen manuscriptum"
-  | "informal"
-  | "boycotted";
 export type Status = "valid" | "nomen dubium" | "nomen nudum" | "disputed";
 export type Completeness = "complete" | "partial" | "fragmentary";
 export type SpecimenTypes = "holotype" | "syntype" | "lectotype" | "neotype" | "unknown";
@@ -218,7 +219,14 @@ export interface Clade {
    */
   authors?: string;
   diagnostic_features?: string[];
+  synonyms?: Synonym[];
   references?: Reference[];
+  [k: string]: unknown;
+}
+export interface Synonym {
+  name: string;
+  type: SynonymTypes;
+  reason?: string;
   [k: string]: unknown;
 }
 /**
@@ -301,12 +309,6 @@ export interface Appearance {
 export interface Identifier {
   source?: IdentifierSources;
   id?: string;
-  [k: string]: unknown;
-}
-export interface Synonym {
-  name: string;
-  type: SynonymTypes;
-  reason?: string;
   [k: string]: unknown;
 }
 export interface Species {
