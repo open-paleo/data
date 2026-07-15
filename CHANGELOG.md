@@ -30,6 +30,10 @@ Initial public release, establishing the v1 output schema.
   TypeScript, producing JSON, YAML, JSON Schema, Newick, NEXUS, and BibTeX.
 - GitHub Actions for PR validation and build; issue-form contribution
   templates; spell checking with a generated taxonomy dictionary.
+- `synonyms` block on clade files (#1981), mirroring the genus-level
+  convention (bare `name` plus a controlled `type` and a `reason`), to record
+  replaced or emended family-group names; added the `emended spelling`
+  synonym type to the controlled vocabulary.
 
 ### Changed
 - Locked the v1 output schema (#1965): the species type-specimen block is

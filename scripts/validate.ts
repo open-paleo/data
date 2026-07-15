@@ -1442,6 +1442,17 @@ for (const [filePath, doc] of genusParsed)
     }
 }
 
+for (const [filePath, doc] of cladeParsed)
+{
+    if (doc && Array.isArray(doc.synonyms))
+    {
+        validateSynonyms(
+            doc.synonyms as Array<Record<string, unknown>>,
+            filePath,
+            "clade");
+    }
+}
+
 // 18. Size validity
 startCheck("Size validity");
 

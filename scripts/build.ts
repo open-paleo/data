@@ -6,7 +6,7 @@ import { stringify as stringifyYaml } from "yaml";
 
 import { findYamlFiles, parseYaml, loadInstitutionRegistry } from "./utilities.ts";
 
-import type { GenusData, CladeData, TreeNode, Reference, ReferencePointer, InstitutionEntry } from "./types.ts";
+import type { GenusData, CladeData, TreeNode, Reference, ReferencePointer, InstitutionEntry, Synonym } from "./types.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
@@ -65,6 +65,12 @@ type ProcessedClade = {
      * Technical diagnostic features of the clade.
      */
     diagnostic_features?: Array<string>;
+
+    /**
+     * Names that are synonyms of this clade (e.g. a replaced or emended
+     * family-group name).
+     */
+    synonyms?: Array<Synonym>;
 
     /**
      * Published references for the clade.
@@ -410,6 +416,7 @@ for (const file of findYamlFiles(path.join(root, "clades")))
             described,
             authors,
             diagnostic_features: data.diagnostic_features,
+            synonyms: data.synonyms,
             references: inflateReferences(data.references),
         };
     }

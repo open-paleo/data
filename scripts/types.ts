@@ -771,6 +771,12 @@ export type CladeData = {
     diagnostic_features?: Array<string>;
 
     /**
+     * Names that are synonyms of this clade (e.g. a replaced or emended
+     * family-group name). Mirrors the genus-level `synonyms` convention.
+     */
+    synonyms?: Array<Synonym>;
+
+    /**
      * Citations for this clade — pointers into the reference store, each with
      * optional local notes.
      */
