@@ -1060,12 +1060,6 @@ MSC:
     city: Birmingham
   aliases: [RMM]
 
-MSM-US:
-  aliases: [MSM]
-  name: Mesa Southwest Museum
-  location:
-    country: US
-    city: Mesa
 MTCO:
   name: Muzeul Țării Crișurilor
   location:
@@ -1248,12 +1242,17 @@ PRC:
   location:
     country: TH
     city: Kantarawichai
-MDS:
+MDS-ES:
   aliases: [PS]
   name: Museo de Dinosaurios de Salas de los Infantes
   location:
     country: ES
     city: Burgos
+MDS-LA:
+  name: Savannakhet Dinosaur Museum
+  location:
+    country: LA
+    city: Savannakhet
 
 PSL:
   name: Collections de la Faculté des Sciences de Lyon
@@ -1725,10 +1724,16 @@ NSM-US:
     city: Carson City
 
 AZMNH:
-  name: Arizona Museum of Natural History
+  aliases: [MSM-US]
+  name: Arizona Museum of Natural History (formerly Mesa Southwest Museum)
   location:
     country: US
     city: Mesa
+MSM-ES:
+  name: Museo Paleontológico Juan Cano Forner
+  location:
+    country: ES
+    city: Sant Mateu
 
 WSC:
   name: Western Science Center
