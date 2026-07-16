@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-15T05:22:16.502Z
+  built_at: 2026-07-16T01:32:18.380Z
   clade_count: 188
   genus_count: 1399
   license: CC-BY-4.0
@@ -152119,7 +152119,7 @@ genera:
     pronunciation:
       phonetic: SUH-CHWAHN-o-SAWR-us
     etymology: Named after the Szechuan (Sichuan) Province of China where fossils were found, combined with Greek sauros, "lizard" - means "Szechuan lizard"
-    description: Szechuanosaurus is an extinct genus of carnivorous theropod dinosaur from China. Its type species is based on several undiagnostic teeth from the Kuangyuan Series. Potential specimens referred to the genus span from the Early Triassic through the Late Triassic. Additional possible specimens were also reported from the Kalaza Formation.
+    description: Szechuanosaurus is an extinct genus of carnivorous theropod dinosaur from China. Its type species is based on several undiagnostic teeth from the Kuangyuan Series. Potential specimens referred to the genus span from the Late Jurassic through the Early Cretaceous. Additional possible specimens were also reported from the Kalaza Formation.
     diet: carnivore
     locomotion: bipedal
     paleoenvironment:
@@ -152137,58 +152137,6 @@ genera:
         id: "4822585"
       - source: eol
         id: "10576472"
-    species:
-      - name: Szechuanosaurus campi
-        etymology: Named for Charles Lewis Camp, the American paleontologist who discovered the referred specimen UCMP 32102.
-        status: nomen dubium
-        type_species: true
-        period:
-          name:
-            - Middle Jurassic
-            - Late Jurassic
-            - Early Cretaceous
-            - Late Cretaceous
-          stage:
-            - Bajocian
-            - Bathonian
-            - Callovian
-            - Oxfordian
-            - Kimmeridgian
-            - Tithonian
-            - Berriasian
-            - Valanginian
-            - Hauterivian
-            - Barremian
-            - Aptian
-            - Albian
-            - Cenomanian
-            - Turonian
-            - Coniacian
-            - Santonian
-            - Campanian
-          from_ma: 170.3
-          to_ma: 72.2
-        location:
-          country: CN
-          region: Sichuan
-          formation: Shaximiao
-          coordinates:
-            - 29.411388
-            - 104.852501
-        size:
-          length_m:
-            min: 7.3
-            max: 7.3
-        type_specimen:
-          specimen_id:
-            - CV00214
-          specimen_type: holotype
-          institution: Institute of Vertebrate Paleontology and Paleoanthropology
-          material: Six isolated teeth, some fragmentary, displaying moderately curved form with anterior and posterior denticulation; moderately compressed; posterior serrations more developed than anterior.
-          completeness: fragmentary
-        erected_in: young1942a
-        authors: Young, C. C.
-        described: 1942
     references:
       - id: young1942a
         authors: Young, C. C.
@@ -152211,6 +152159,36 @@ genera:
         pages: 211-300
         doi: 10.1080/14772019.2011.630927
         notes: Tetanurae phylogeny supporting reassignment of Szechuanosaurus material to Yangchuanosaurus.
+    species:
+      - name: Szechuanosaurus campi
+        etymology: Honors paleontologist Charles Lewis Camp, who first described a carnivorous dinosaur from the Red Basin of Szechuan
+        status: nomen dubium
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          from_ma: 163.5
+          to_ma: 145
+        location:
+          country: CN
+          region: Sichuan
+          coordinates:
+            - 32.403481
+            - 105.805908
+          formation: Kuangyuan Series
+          locality: Locality 47 (Chentsianyen escarpment), south of Kuangyuan city
+        type_specimen:
+          specimen_id:
+            - V235
+            - V236
+            - V238
+            - V239
+          specimen_type: syntype
+          institution: Institute of Vertebrate Paleontology and Paleoanthropology
+          material: "Six isolated teeth: two broken, three fragmentary, and one nearly complete; crowns compressed and moderately curved, with anterior and posterior denticulations."
+        erected_in: young1942a
+        authors: Young, C. C.
+        described: 1942
     taxonomy:
       - Life
       - Animalia
