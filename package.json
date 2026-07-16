@@ -13,6 +13,7 @@
     "typecheck": "tsc --noEmit",
     "report-missing-fields": "node --experimental-strip-types scripts/report-missing-fields.ts",
     "audit-dois": "node --experimental-strip-types scripts/audit-dois.ts",
+    "verify-data-integrity": "node --experimental-strip-types scripts/verify-data-integrity.ts",
     "diagnostic-corpus-candidates": "node --experimental-strip-types scripts/diagnostic-corpus-candidates.ts",
     "paper-watch": "node --env-file-if-exists=.env --experimental-strip-types scripts/paper-watch.ts",
     "build-extraction-prompts": "node --experimental-strip-types scripts/build-extraction-prompts.ts",
