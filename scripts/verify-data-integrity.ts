@@ -348,24 +348,51 @@ for (const record of speciesRecords)
     }
 
     const firstId = record.specimenIds[0];
-    const prefix = specimenPrefix(firstId);
 
-    if (!prefix)
+    // Institution codes conventionally lead the catalogue number. When the
+    // number instead opens with a digit it is a bare field/collection number
+    // with no embedded code (e.g. HGM "41HIII-0100", "1912VIII61") — there is
+    // nothing to verify against, so skip rather than flag a false positive.
+    if (!/^[A-Za-z]/.test(firstId.trim()))
     {
         continue;
     }
 
-    const canonicalsForPrefix = codeResolver.get(prefix);
-    const institutionCanonicals = codeResolver.get(record.institution.trim());
+    const institutionKey = record.institution.trim();
+    const institutionCanonicals = codeResolver.get(institutionKey);
 
-    // The prefix resolves cleanly if it and the institution share a canonical.
+    // The catalogue code may sit anywhere in the number, not just at the
+    // front: "PM TGU 16/4-20" (TGU), "Pv-6127-MOZ" (MOZ), "SNSB-BSPG AS I
+    // 563" (BSPG). Treat it as a match when any token of the number resolves
+    // to the institution's canonical, or when a space-bearing institution
+    // key is a literal prefix of the number ("FMNH CUP 2338", "NMV P186303").
+    const tokens = firstId.split(/[\s.\-/:()]+/).filter((token) => token.length > 0);
+
+    // Each token is a candidate code; so is its leading-alpha run, since the
+    // code and number are often run together ("PVSJ845" → "PVSJ", "V9065" → "V").
+    const candidates = new Set<string>();
+
+    for (const token of tokens)
+    {
+        candidates.add(token);
+
+        const leadingAlpha = specimenPrefix(token);
+
+        if (leadingAlpha)
+        {
+            candidates.add(leadingAlpha);
+        }
+    }
+
     let resolves = false;
 
-    if (canonicalsForPrefix && institutionCanonicals)
+    if (institutionCanonicals)
     {
-        for (const canonical of canonicalsForPrefix)
+        for (const candidate of candidates)
         {
-            if (institutionCanonicals.has(canonical))
+            const candidateCanonicals = codeResolver.get(candidate);
+
+            if (candidateCanonicals && [...candidateCanonicals].some((canonical) => institutionCanonicals.has(canonical)))
             {
                 resolves = true;
                 break;
@@ -373,8 +400,15 @@ for (const record of speciesRecords)
         }
     }
 
+    if (!resolves && institutionKey.includes(" ") && firstId.startsWith(institutionKey))
+    {
+        resolves = true;
+    }
+
     if (!resolves)
     {
+        const prefix = specimenPrefix(firstId) ?? firstId;
+
         report("specimen-prefix-institution-mismatch", record.genus, record.species,
             `specimen '${firstId}' (prefix '${prefix}') does not resolve to institution '${record.institution}'`);
     }
