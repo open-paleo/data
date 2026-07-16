@@ -17,7 +17,7 @@ import { parse as parseYamlContent } from "yaml";
 
 import { findYamlFiles, loadInstitutionRegistry } from "./utilities.ts";
 
-import type { GenusData, InstitutionEntry } from "./types.ts";
+import type { GenusData, InstitutionEntry, Schema, StageInfo } from "./types.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
@@ -159,6 +159,71 @@ function normalizeFormation(formation: string): string
 }
 
 const registry = loadInstitutionRegistry(path.join(root, "institutions.yaml"));
+
+const schema = parseYamlContent(fs.readFileSync(path.join(root, "schema.yml"), "utf8")) as Schema;
+const stages: Record<string, StageInfo> = schema.stages ?? {};
+
+/**
+ * Formations that legitimately straddle a national border, keyed by their
+ * normalized name to the set of ISO country codes they span. Members in any
+ * of these countries are not country outliers.
+ */
+const crossBorderFormations: Record<string, Array<string>> =
+    {
+        "elliot": ["ZA", "LS"],
+        "st. mary river": ["CA", "US"],
+        "la quinta": ["VE", "CO"],
+        "klettgau": ["CH", "DE"],
+        "aguja": ["US", "MX"],
+    };
+
+/**
+ * The maximum age gap (in millions of years) tolerated between a formation
+ * member and its nearest sibling before the member is flagged as a stage
+ * outlier. Adjacent/overlapping stages within one formation are normal;
+ * only a large gap (e.g. a Cenomanian record in an all-Maastrichtian
+ * formation) signals a likely error.
+ */
+const stageOutlierGapMa = 20;
+
+/**
+ * Resolves a species record's age interval as [younger_ma, older_ma],
+ * preferring explicit from_ma/to_ma and falling back to the union of its
+ * listed stages' ranges.
+ *
+ * @param record - The species record.
+ * @returns The [younger, older] Ma interval, or null if unresolvable.
+ */
+function maInterval(record: SpeciesRecord): [number, number] | null
+{
+    if (typeof record.fromMa === "number" && typeof record.toMa === "number")
+    {
+        return [record.toMa, record.fromMa];
+    }
+
+    const resolved = record.stageList
+        .map((stageName) => stages[stageName])
+        .filter((info): info is StageInfo => info !== undefined);
+
+    if (resolved.length === 0)
+    {
+        return null;
+    }
+
+    return [Math.min(...resolved.map((info) => info.to_ma)), Math.max(...resolved.map((info) => info.from_ma))];
+}
+
+/**
+ * Gap in millions of years between two age intervals; zero when they overlap.
+ *
+ * @param first - The first [younger, older] interval.
+ * @param second - The second [younger, older] interval.
+ * @returns The non-negative gap between the intervals.
+ */
+function intervalGap(first: [number, number], second: [number, number]): number
+{
+    return Math.max(first[0] - second[1], second[0] - first[1], 0);
+}
 
 /**
  * Builds a lookup from every institution code and alias to the set of
@@ -471,34 +536,57 @@ for (const group of formationGroups.values())
         }
     }
 
-    // Union of stages across the formation's members, for the overlap test.
-    const stageUnion = new Set<string>();
+    // Countries this formation may legitimately span: its majority plus any
+    // cross-border allowlist entry.
+    const formationKey = normalizeFormation(group[0].formation ?? "");
+    const acceptableCountries = new Set(crossBorderFormations[formationKey] ?? []);
 
-    for (const record of group)
+    // Fissure-fill deposits legitimately span wide age ranges (separate
+    // fissures in one quarry are different ages), so they are exempt from the
+    // stage-distance test.
+    const isFissureFill = formationKey.includes("fissure");
+
+    if (majorityCountry)
     {
-        for (const stage of record.stageList)
-        {
-            stageUnion.add(stage);
-        }
+        acceptableCountries.add(majorityCountry);
     }
 
-    for (const record of group)
+    // Age intervals, precomputed for the stage-distance test.
+    const intervals = group.map((record) => maInterval(record));
+
+    for (let i = 0; i < group.length; i++)
     {
-        if (majorityCountry && majorityCount >= 2 && record.country && record.country !== majorityCountry)
+        const record = group[i];
+
+        if (majorityCountry && majorityCount >= 2 && record.country && !acceptableCountries.has(record.country))
         {
             report("formation-country-outlier", record.genus, record.species,
                 `formation '${record.formation}' is mostly ${majorityCountry} but this record is ${record.country}`);
         }
 
-        if (record.stageList.length > 0 && stageUnion.size > record.stageList.length)
-        {
-            const overlaps = record.stageList.some((stage) => stageUnion.has(stage)
-                && group.some((other) => other !== record && other.stageList.includes(stage)));
+        // Stage outlier: flagged only when the member's age is far (> gap
+        // threshold) from every other genus in the formation. Adjacent or
+        // overlapping stages between siblings produce no gap.
+        const interval = intervals[i];
 
-            if (!overlaps)
+        if (interval && !isFissureFill)
+        {
+            let minGap = Infinity;
+
+            for (let j = 0; j < group.length; j++)
+            {
+                const other = intervals[j];
+
+                if (j !== i && group[j].genus !== record.genus && other)
+                {
+                    minGap = Math.min(minGap, intervalGap(interval, other));
+                }
+            }
+
+            if (minGap !== Infinity && minGap > stageOutlierGapMa)
             {
                 report("formation-stage-outlier", record.genus, record.species,
-                    `formation '${record.formation}' stages ${[...stageUnion].join("/")}, but this record only has ${record.stageList.join("/")}`);
+                    `age ${interval[1]}–${interval[0]} Ma is ${minGap.toFixed(1)} Ma from the nearest sibling in formation '${record.formation}'`);
             }
         }
     }
