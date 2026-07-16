@@ -2,22 +2,23 @@ genus: Szechuanosaurus
 parent: Tetanurae
 dispute:
   summary: >
-    Szechuanosaurus campi is a nomen dubium based on undiagnostic teeth; referred
-    skeletal material formerly placed in the genus has been reassigned to
-    Yangchuanosaurus (Carrano, Benson and Sampson, 2012). It is placed conservatively
-    at Tetanurae incertae sedis.
+    Szechuanosaurus campi is a nomen dubium based on undiagnostic teeth;
+    referred skeletal material formerly placed in the genus has been reassigned
+    to Yangchuanosaurus (Carrano, Benson and Sampson, 2012). It is placed
+    conservatively at Tetanurae incertae sedis.
   history:
-    - date: "2026-06-30"
+    - date: 2026-06-30
       note: Reparented to Tetanurae.
-    - date: "2026-07-02"
+    - date: 2026-07-02
       note: Confirmed placement at Tetanurae incertae sedis; remains a nomen dubium.
 pronunciation:
   phonetic: SUH-CHWAHN-o-SAWR-us
-etymology: Named after the Szechuan (Sichuan) Province of China where fossils were found, combined with Greek sauros, "lizard" - means "Szechuan lizard"
+etymology: Named after the Szechuan (Sichuan) Province of China where fossils
+  were found, combined with Greek sauros, "lizard" - means "Szechuan lizard"
 description: Szechuanosaurus is an extinct genus of carnivorous theropod
   dinosaur from China. Its type species is based on several undiagnostic teeth
   from the Kuangyuan Series. Potential specimens referred to the genus span from
-  the Early Triassic through the Late Triassic. Additional possible specimens
+  the Late Jurassic through the Early Cretaceous. Additional possible specimens
   were also reported from the Kalaza Formation.
 diet: carnivore
 locomotion: bipedal
@@ -36,58 +37,39 @@ identifiers:
     id: "4822585"
   - source: eol
     id: "10576472"
+references:
+  - id: young1942a
+  - id: carrano2012a
+    notes: Tetanurae phylogeny supporting reassignment of Szechuanosaurus material
+      to Yangchuanosaurus.
 species:
   - name: Szechuanosaurus campi
-    etymology: "Named for Charles Lewis Camp, the American paleontologist who discovered the referred specimen UCMP 32102."
+    etymology: Honors paleontologist Charles Lewis Camp, who first described a
+      carnivorous dinosaur from the Red Basin of Szechuan
     status: nomen dubium
     type_species: true
     period:
       name:
-        - Middle Jurassic
         - Late Jurassic
-        - Early Cretaceous
-        - Late Cretaceous
-      stage:
-        - Bajocian
-        - Bathonian
-        - Callovian
-        - Oxfordian
-        - Kimmeridgian
-        - Tithonian
-        - Berriasian
-        - Valanginian
-        - Hauterivian
-        - Barremian
-        - Aptian
-        - Albian
-        - Cenomanian
-        - Turonian
-        - Coniacian
-        - Santonian
-        - Campanian
-      from_ma: 170.3
-      to_ma: 72.2
+      from_ma: 163.5
+      to_ma: 145.0
     location:
       country: CN
       region: Sichuan
-      formation: Shaximiao
       coordinates:
-        - 29.411388
-        - 104.852501
-    size:
-      length_m:
-        min: 7.3
-        max: 7.3
+        - 32.403481
+        - 105.805908
+      formation: Kuangyuan Series
+      locality: Locality 47 (Chentsianyen escarpment), south of Kuangyuan city
     type_specimen:
-      specimen_id: [CV00214]
-      specimen_type: holotype
+      specimen_id:
+        - V235
+        - V236
+        - V238
+        - V239
+      specimen_type: syntype
       institution: IVPP
-      material: Six isolated teeth, some fragmentary, displaying moderately curved
-        form with anterior and posterior denticulation; moderately compressed;
-        posterior serrations more developed than anterior.
-      completeness: fragmentary
+      material: "Six isolated teeth: two broken, three fragmentary, and one nearly
+        complete; crowns compressed and moderately curved, with anterior and
+        posterior denticulations."
     erected_in: young1942a
-references:
-  - id: young1942a
-  - id: carrano2012a
-    notes: Tetanurae phylogeny supporting reassignment of Szechuanosaurus material to Yangchuanosaurus.
