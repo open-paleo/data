@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-16T05:27:24.816Z
+  built_at: 2026-07-17T04:37:03.498Z
   clade_count: 188
   genus_count: 1399
   license: CC-BY-4.0
@@ -11963,6 +11963,8 @@ genera:
         type_specimen:
           specimen_id:
             - MUGEO 1282
+            - MUGEO 1289
+            - MUGEO 1295
           specimen_type: holotype
           institution: Museu Geológico Valdemar Lefèvre
           material: Six articulated anterior caudal vertebrae and two haemapophyses.
@@ -29736,7 +29738,7 @@ genera:
             - 22.845142
         type_specimen:
           specimen_id:
-            - EME VP.313
+            - EME PV.313
           specimen_type: holotype
           institution: Erdélyi Múzeum-Egyesület (Transylvanian Museum Society)
           material: Articulated partial postcranial skeleton including dorsal, sacral, and caudal vertebrae and much of the pectoral and pelvic girdles and limbs
@@ -58006,13 +58008,13 @@ genera:
           from_ma: 83.6
           to_ma: 66
         location:
-          country: US
-          locality: Bijou Creek
-          region: Colorado
-          formation: Laramie
+          country: CA
+          locality: Red Deer River
+          region: Alberta
+          formation: Horseshoe Canyon
           coordinates:
-            - 40.285278
-            - -106.860558
+            - 51.35
+            - -112.8
         type_specimen:
           specimen_id:
             - CMN 2288
@@ -58266,6 +58268,7 @@ genera:
         id: Q134289
       - source: gbif
         id: "4822696"
+    erected_in: galton1973a
     species:
       - name: Efraasia minor
         etymology: From Latin 'minor' meaning 'smaller', originally applied when the specimens were named as Teratosaurus minor to note that they were smaller than Teratosaurus suevicus.
@@ -58291,8 +58294,8 @@ genera:
             - SMNS 11838
           specimen_type: holotype
           institution: Staatliches Museum für Naturkunde
-          material: Nearly complete articulated skeleton (SMNS 12667) and partial skeleton (SMNS 12668).
-          completeness: complete
+          material: Incomplete adult postcranium including dorsal vertebrae, one sacral centrum, a nearly complete right manus, phalanges of the left manus, pubes, right femur, tibia and fibula, and a partial right pes.
+          completeness: partial
         size:
           weight_kg:
             min: 365
@@ -58303,9 +58306,9 @@ genera:
           length_m:
             min: 6
             max: 7
-        erected_in: galton1973a
-        authors: Galton, P. M.
-        described: 1973
+        erected_in: yates2003b
+        authors: Yates, A. M.
+        described: 2003
     references:
       - id: galton1973a
         authors: Galton, P. M.
@@ -58317,6 +58320,18 @@ genera:
         issue: 3-4
         pages: 229-255
         doi: 10.1007/bf02985709
+        notes: Erected the genus Efraasia.
+      - id: yates2003b
+        authors: Yates, A. M.
+        year: 2003
+        title: The species taxonomy of the sauropodomorph dinosaurs from the Löwenstein Formation (Norian, Late Triassic) of Germany
+        journal: Palaeontology
+        publisher: Wiley
+        volume: "46"
+        issue: "2"
+        pages: 317-337
+        doi: 10.1111/j.0031-0239.2003.00301.x
+        notes: Erected the combination Efraasia minor and fixed SMNS 11838 as the holotype.
       - id: molina-pérez2020a
         authors: Molina-Pérez, R.; Larramendi, A.
         year: 2020
@@ -65448,7 +65463,7 @@ genera:
             - 136.544724
         type_specimen:
           specimen_id:
-            - FPDM-V9712203
+            - FPMN 97122
           specimen_type: holotype
           institution: Fukui Prefectural Dinosaur Museum
           material: Associated skeleton including skull fragments, vertebrae, both humeri, right ulna, manual phalanges and unguals, ilium fragments, pubis, ischia, right femur, partial tibia and fibula, right astragalus, metatarsals I-III, and pedal phalanges; estimated 4.2 m long individual
@@ -65583,6 +65598,7 @@ genera:
         type_specimen:
           specimen_id:
             - FPDM-V-40-1
+            - FPDM-V-40-2
           specimen_type: holotype
           institution: Fukui Prefectural Dinosaur Museum
           material: Partial skull.
@@ -66950,7 +66966,7 @@ genera:
             - 100.456665
         type_specimen:
           specimen_id:
-            - G.I.No.DPS 100/10
+            - IGM 100/11
           specimen_type: holotype
           institution: Paleontological Center, Mongolian Academy of Sciences
           material: Nearly complete skeleton with skull and mandible; braincase well preserved, snout somewhat distorted, lower jaw incomplete; forelimbs almost complete; hind limbs almost complete.
@@ -75716,11 +75732,12 @@ genera:
             max: 3500
         type_specimen:
           specimen_id:
-            - HMNS 14
+            - FPDM-V9674
           specimen_type: holotype
-          institution: Houston Museum of Nature and Science
+          institution: Fukui Prefectural Dinosaur Museum
           material: Nearly complete disarticulated skull, 13 cervical, 13 dorsal, 3 sacral, 44+ caudal vertebrae, ribs, chevrons, 10 dermal plates, pelvic elements, partial left scapula, ossified tendons
           completeness: complete
+          notes: Originally catalogued HMNH 001 (Carpenter et al. 2001); acquired by the Hayashibara Museum of Natural Sciences as HMNS 14, then transferred in 2015 to the Fukui Prefectural Dinosaur Museum and renumbered FPDM-V9674.
         erected_in: carpenter2001b
         authors: Carpenter, K.; Miles, C. A.; K. Cloward
         described: 2001
@@ -81501,7 +81518,7 @@ genera:
             max: 700
         type_specimen:
           specimen_id:
-            - GSI K27/685
+            - GSI K27/565
           specimen_type: holotype
           institution: Geological Survey of India
           status: lost
@@ -83586,8 +83603,8 @@ genera:
             max: 15000
         type_specimen:
           specimen_id:
-            - GSI K22/754
-          specimen_type: holotype
+            - GSI K27/497
+          specimen_type: lectotype
           institution: Geological Survey of India
           material: Posterior part of a skull
           completeness: fragmentary
@@ -86619,7 +86636,7 @@ genera:
             - 7.165
         type_specimen:
           specimen_id:
-            - MNN TIG 3-5
+            - MNN TIG3
           specimen_type: holotype
           institution: Musée National Boubou Hama
           material: Partial articulated skeleton including axis, forelimbs and hind limbs, pubes, and most of tail.
@@ -91795,11 +91812,12 @@ genera:
             - -115.733299
         type_specimen:
           specimen_id:
-            - CPC 2974
+            - IGM 5307
           specimen_type: holotype
-          institution: Colección Paleontológica de Coahuila, Museo del Desierto (MUDE)
+          institution: Instituto de Geología, Universidad Nacional Autónoma de México
           material: Incomplete right quadrate, complete left frontal, ventral portion of left maxilla, dentary fragment, proximal portions of both ischia, central shaft of right pubis, chevron, incomplete second right metatarsal, pedal phalanx, and several loose teeth.
           completeness: fragmentary
+          notes: Originally catalogued LACM 20877 (Molnar 1974); later reposited to the Instituto de Geología, UNAM, and renumbered IGM 5307.
         size:
           length_m:
             min: 6.3
@@ -94679,7 +94697,7 @@ genera:
             max: 10000
         type_specimen:
           specimen_id:
-            - PVL 4822-1/1
+            - PVL 4822-1
           specimen_type: holotype
           institution: Colección de Paleontologia de Vertebrados de la Fundación Instituto Miguel Lillo
           material: Partial skeleton.
@@ -95933,9 +95951,8 @@ genera:
             max: 200
         type_specimen:
           specimen_id:
-            - HMN BM.R.2175
             - MB.R.2175
-          specimen_type: syntype
+          specimen_type: holotype
           institution: Museum für Naturkunde, Berlin
           material: Partial and fragmentary skeletons of at least two individuals including skull elements, lower jaws, vertebrae, and appendicular skeleton
           completeness: partial
@@ -98133,7 +98150,7 @@ genera:
             max: 15000
         type_specimen:
           specimen_id:
-            - Lo-7
+            - Lo-5
           specimen_type: holotype
           institution: Museo de Ciencias Naturales de Valencia
           material: Procoelous proximal caudal vertebral centrum; length/height ratio >0.5 < 0.6; neural spine transversely compressed and cutlass shaped; caudal ribs wing shaped (specimen Lo-5)
@@ -99381,11 +99398,13 @@ genera:
             - 28.616667
         type_specimen:
           specimen_id:
+            - SAM 3606
             - UCRC PVC10
           specimen_type: holotype
-          institution: University of Chicago Research Collection
+          institution: Iziko South African Museum
           material: Portion of left dentary with canine and 11 molars (7 preserved, 4 impressions only).
           completeness: fragmentary
+          notes: SAM 3606 is the original holotype; owing to partial loss of the original material, the cast UCRC PVC10 has been used in subsequent taxonomic assessments, functioning as a partial lectotype.
         size:
           weight_kg:
             min: 1.8
@@ -101993,7 +102012,7 @@ genera:
     species:
       - name: Mandschurosaurus amurensis
         etymology: Named for the Amur River in China, on whose banks the holotype skeleton was collected.
-        status: valid
+        status: nomen dubium
         type_species: true
         period:
           name:
@@ -102018,9 +102037,8 @@ genera:
             min: 1500
             max: 2000
         type_specimen:
-          specimen_id:
-            - IVP AS coll.
           specimen_type: holotype
+          status: uncatalogued
           institution: Institute of Vertebrate Paleontology and Paleoanthropology
           material: "A composite mounted skeleton assembled from disarticulated remains of more than one individual (~35% plaster): a partial skull (occipital region, both dentaries) and fragmentary postcranial elements."
           completeness: fragmentary
@@ -165241,11 +165259,12 @@ genera:
             - -109.567902
         type_specimen:
           specimen_id:
-            - CEUM 184v
+            - CEUM 184v.86
           specimen_type: holotype
           institution: College of Eastern Utah Prehistoric Museum
-          material: Right second pedal ungual, first manus ungual, tibia, lachrymal, premaxilla.
+          material: Right second pedal ungual.
           completeness: fragmentary
+          notes: The associated first manus ungual, tibia, lachrymal, and premaxilla figured with the holotype are separately catalogued referred hypodigm elements, not part of the holotype.
         size:
           length_m:
             min: 4.9
@@ -166113,8 +166132,7 @@ genera:
           specimen_id:
             - MDE-D168
             - MDE-D169
-            - CM-645
-          specimen_type: syntype
+          specimen_type: holotype
           institution: Le Musée des Dinosaures Espéraza-Aude (Dinosaur Museum Espéraza), Espéraza, Department  Aude, Region  Languedoc-Roussillon-Midi-Pyrénées
           material: An articulated posterior dorsal vertebra and sacrum
           completeness: fragmentary
@@ -170093,9 +170111,10 @@ genera:
             - -69.616669
         type_specimen:
           specimen_id:
-            - PVL 612
+            - UNPSJB-Pv 184
+            - UNPSJB-Pv 612
           specimen_type: holotype
-          institution: Colección de Paleontologia de Vertebrados de la Fundación Instituto Miguel Lillo
+          institution: Universidad Nacional de la Patagonia San Juan Bosco
           material: Two incomplete cervical-dorsal vertebrae, femur, tibia, fibula, complete astragalocalcaneum of the right side
           completeness: fragmentary
         size:
