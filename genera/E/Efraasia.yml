@@ -38,6 +38,7 @@ identifiers:
     id: Q134289
   - source: gbif
     id: "4822696"
+erected_in: galton1973a
 species:
   - name: Efraasia minor
     etymology: "From Latin 'minor' meaning 'smaller', originally applied when the specimens were named as Teratosaurus minor to note that they were smaller than Teratosaurus suevicus."
@@ -62,9 +63,10 @@ species:
       specimen_id: [SMNS 11838]
       specimen_type: holotype
       institution: SMNS
-      material: Nearly complete articulated skeleton (SMNS 12667) and partial skeleton
-        (SMNS 12668).
-      completeness: complete
+      material: Incomplete adult postcranium including dorsal vertebrae, one sacral
+        centrum, a nearly complete right manus, phalanges of the left manus, pubes,
+        right femur, tibia and fibula, and a partial right pes.
+      completeness: partial
     size:
       weight_kg:
         min: 365
@@ -75,8 +77,11 @@ species:
       length_m:
         min: 6.0
         max: 7.0
-    erected_in: galton1973a
+    erected_in: yates2003b
 references:
   - id: galton1973a
+    notes: Erected the genus Efraasia.
+  - id: yates2003b
+    notes: Erected the combination Efraasia minor and fixed SMNS 11838 as the holotype.
   - id: molina-pérez2020a
     notes: Source of the mass and hip height estimates.
