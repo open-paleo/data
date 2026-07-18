@@ -19,6 +19,26 @@ diet: carnivore
 locomotion: bipedal
 paleoenvironment:
   - fluvial
+dispute:
+  summary: >
+    The generic placement of the single Mongolian species is long debated.
+    Maleev (1955) named the type material Tyrannosaurus bataar (holotype
+    PIN 551-1) and, in a companion paper, erected Tarbosaurus for the related
+    Tarbosaurus efremovi. Rozhdestvensky (1965) interpreted Maleev's several
+    Mongolian species as growth stages of one animal and, keeping the genus
+    Tarbosaurus, coined the combination Tarbosaurus bataar. Carpenter (1992)
+    judged the differences from Tyrannosaurus to fall within normal individual
+    and ontogenetic variation and sank Tarbosaurus into Tyrannosaurus
+    (Tyrannosaurus bataar), whereas Olshevsky, Ford and Yamamoto (1995) instead
+    split the material among Tarbosaurus, Jenghizkhan and Maleevosaurus. Most
+    work since 1999 recognizes a single species; the majority retains
+    Tarbosaurus bataar, with a minority (e.g. Carr and others) treating it as
+    Tyrannosaurus bataar.
+  history:
+    - date: "2026-07-17"
+      note: Retained as Tarbosaurus bataar, the majority usage since 1999; the
+        Tyrannosaurus bataar assignment (Carpenter 1992; Carr and others) is
+        recorded as a minority view.
 diagnostic_features:
   - Large skull, massive, with 2 large premaxillary foramina and third small
     foramen between premaxilla and maxilla
@@ -48,10 +68,13 @@ identifiers:
 synonyms:
   - name: Maleevosaurus
     type: junior subjective
-    reason: Now generally interpreted as a juvenile Tarbosaurus.
+    reason: Erected by Carpenter (1992) for Gorgosaurus novojilovi; now generally
+      interpreted as a juvenile Tarbosaurus.
   - name: Jenghizkhan
     type: junior subjective
-    reason: Now generally recognized as a junior synonym of Tarbosaurus.
+    reason: Erected by Olshevsky, Ford and Yamamoto (1995) for Tyrannosaurus bataar;
+      now generally recognized as a junior synonym of Tarbosaurus.
+erected_in: maleev1955a
 species:
   - name: Tarbosaurus bataar
     etymology: "From Mongolian 'baatar' meaning 'hero', though the original spelling
@@ -62,11 +85,8 @@ species:
       name:
         - Late Cretaceous
       stage:
-        - Coniacian
-        - Santonian
-        - Campanian
         - Maastrichtian
-      from_ma: 89.8
+      from_ma: 72.1
       to_ma: 66
     location:
       country: MN
@@ -96,11 +116,30 @@ species:
         min: 1.4
         max: 1.4
     synonyms:
+      - name: Tyrannosaurus bataar
+        type: reassigned
+        reason: Original combination (Maleev, 1955, on holotype PIN 551-1);
+          recombined as Tarbosaurus bataar by Rozhdestvensky (1965). Still used by
+          authors who regard the taxon as an Asian species of Tyrannosaurus.
+      - name: Tarbosaurus efremovi
+        type: junior subjective
+        reason: Named by Maleev (1955) on PIN 551-2 as the type species of
+          Tarbosaurus; treated as a growth stage of T. bataar since Rozhdestvensky
+          (1965).
+      - name: Gorgosaurus lancinator
+        type: junior subjective
+        reason: Named by Maleev (1955); synonymized with T. bataar as a growth
+          stage by Rozhdestvensky (1965).
+      - name: Gorgosaurus novojilovi
+        type: junior subjective
+        reason: Named by Maleev (1955); made the basis of Maleevosaurus by
+          Carpenter (1992) and later regarded as a juvenile Tarbosaurus.
       - name: Shanshanosaurus
         type: junior subjective
         reason: S. houyanshanensis has been provisionally accepted as referable to
           Tarbosaurus bataar.
-    erected_in: maleev1955a
+    erected_in: rozhdestvensky1965a
+    described_in: maleev1955b
 notable_specimens:
   - specimen_id: [MPC-D 107/7]
     institution: MPC
@@ -113,6 +152,12 @@ notable_specimens:
 references:
   - id: tsuihiji2011a
   - id: maleev1955a
+  - id: maleev1955b
+    notes: Original description of the species as Tyrannosaurus bataar.
+  - id: rozhdestvensky1965a
+    notes: Established the combination Tarbosaurus bataar, treating Maleev's Mongolian species as growth stages.
+  - id: carpenter1992a
+    notes: Reassigned the species to Tyrannosaurus and erected Maleevosaurus for Gorgosaurus novojilovi.
   - id: paul2024b
     notes: Source of the appearance features.
   - id: hendrickx2022a
