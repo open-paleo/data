@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-17T04:37:03.498Z
+  built_at: 2026-07-18T00:54:46.165Z
   clade_count: 188
   genus_count: 1399
   license: CC-BY-4.0
@@ -19215,9 +19215,11 @@ genera:
             max: 5000
         type_specimen:
           specimen_id:
-            - MLP 46-VIII-21-112
+            - MLP 46-VIII-21-1/2
           specimen_type: lectotype
           institution: Museo de La Plata
+          material: Posterior dorsal vertebra.
+          completeness: fragmentary
         erected_in: cabrera1947a
         authors: Cabrera, A.
         described: 1947
@@ -19230,6 +19232,16 @@ genera:
         volume: "12"
         issue: "95"
         pages: 1-17
+      - id: rauhut2003c
+        authors: Rauhut, O. W. M.
+        year: 2003
+        title: Revision of Amygdalodon patagonicus Cabrera, 1947 (Dinosauria, Sauropoda)
+        journal: Fossil Record
+        publisher: Wiley
+        volume: "6"
+        pages: 173-181
+        doi: 10.1002/mmng.20030060110
+        notes: Revision of Amygdalodon; designated the lectotype MLP 46-VIII-21-1/2.
       - id: pol2022a
         authors: Pol, D.; Gomez, K.; Holwerda, F. M.; Rauhut, O. W. M.; Carballido, J. L.
         year: 2022
@@ -146531,11 +146543,13 @@ genera:
             - 120.8722
         type_specimen:
           specimen_id:
+            - GMV 2123
             - NIGP 127586
           specimen_type: holotype
-          institution: Nanjing Institute of Geology and Palaeontology, Academia Sinica (NIGPAS)
+          institution: National Geological Museum of China
           material: A relatively complete skeleton with approximately 65 cm total length, nearly triangular skull over 6 cm long, 54 caudal vertebrae, short forelimb with humerus ~20 mm, long robust hind limb with femur 53 mm and tibia ~60 mm, feathers on skull apex, cervical, dorsal, and caudal regions.
           completeness: complete
+          notes: GMV 2123 is the holotype (main slab); the NIGP 127586 slab is its counterpart, housed at the Nanjing Institute of Geology and Palaeontology.
         size:
           hip_height_m:
             min: 0.2
@@ -162741,11 +162755,12 @@ genera:
             - 104.781944
         type_specimen:
           specimen_id:
-            - CV00209
+            - CV 209
           specimen_type: holotype
           institution: Chongqing Museum of Natural History
           material: Nearly complete skeleton including skull, vertebral column, fore- and hind-limbs, and a series of dermal plates and spikes.
           completeness: complete
+          notes: The holotype postcranial material could not be located as of Maidment et al. (2006).
         size:
           length_m:
             min: 6.5
@@ -162765,6 +162780,17 @@ genera:
         volume: "15"
         issue: "4"
         pages: 307-312
+      - id: maidment2006a
+        authors: Maidment, S. C. R.; Wei, G.
+        year: 2006
+        title: A review of the Late Jurassic stegosaurs (Dinosauria, Stegosauria) from the People's Republic of China
+        journal: Geological Magazine
+        publisher: Cambridge University Press (CUP)
+        volume: "143"
+        issue: "5"
+        pages: 621-634
+        doi: 10.1017/s0016756806002500
+        notes: Redescription of Tuojiangosaurus; reports the holotype postcranial material could not be located.
       - id: paul2024a
         authors: Paul, G. S.
         year: 2024
