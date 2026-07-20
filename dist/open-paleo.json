@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-07-20T23:00:26.977Z",
+    "built_at": "2026-07-20T23:22:36.793Z",
     "clade_count": 188,
     "genus_count": 1401,
     "license": "CC-BY-4.0",
@@ -45243,10 +45243,24 @@
       },
       "etymology": "From Latin brevis meaning 'short' + Greek keras (κέρας) meaning 'horn' + ops (ὤψ) meaning 'face'; overall meaning 'short horned face'.",
       "description": "Breviceratops is a genus of protoceratopsid dinosaur that lived during the Late Cretaceous in what is now the Barun Goyot Formation, Mongolia.",
+      "dispute": {
+        "summary": "Much of the material historically referred to Breviceratops kozlowskii has been reassigned to the sympatric Bagaceratops rozhdestvenskyi. Czepiński (2019) restricted Breviceratops kozlowskii to its holotype (ZPAL MgD-I/117) and one referred skull (ZPAL MgD-I/116), reassigning the remaining referred specimens — including Kurzanov's (1990) Hermiin Tsav skulls — to Bagaceratops, but upheld Breviceratops as a valid taxon distinct from both Bagaceratops and Protoceratops.\n",
+        "history": [
+          {
+            "date": "2026-07-20",
+            "note": "Referred material restricted to the holotype and ZPAL MgD-I/116 following Czepiński (2019); genus retained as valid and distinct from Bagaceratops."
+          }
+        ]
+      },
       "diet": "herbivore",
       "locomotion": "quadrupedal",
       "paleoenvironment": [
         "arid"
+      ],
+      "diagnostic_features": [
+        "Premaxillary teeth retained",
+        "Dentary without a sharp buccal crest",
+        "Well-developed accessory antorbital fenestra"
       ],
       "appearance": {
         "features": [
@@ -45269,6 +45283,7 @@
           "id": "4823186"
         }
       ],
+      "erected_in": "kurzanov1990a",
       "species": [
         {
           "name": "Breviceratops kozlowskii",
@@ -45314,14 +45329,34 @@
               "ZPAL MgD-I/117"
             ],
             "specimen_type": "holotype",
-            "institution": "Institute of Paleobiology, Polish Academy of Sciences"
+            "institution": "Institute of Paleobiology, Polish Academy of Sciences",
+            "material": "Immature skull with mandible and an associated fragmentary postcranial skeleton.",
+            "completeness": "partial"
           },
-          "erected_in": "kurzanov1990a",
-          "authors": "Kurzanov, S. M.",
-          "described": 1990
+          "synonyms": [
+            {
+              "name": "Protoceratops kozlowskii",
+              "type": "reassigned",
+              "reason": "Original combination by Maryańska and Osmólska (1975); Kurzanov (1990) erected the new genus Breviceratops for the species."
+            }
+          ],
+          "erected_in": "maryańska1975a",
+          "described_in": "czepiński2019a",
+          "authors": "Maryańska, T.; Osmólska, H.",
+          "described": 1975
         }
       ],
       "references": [
+        {
+          "id": "maryańska1975a",
+          "authors": "Maryańska, T.; Osmólska, H.",
+          "year": 1975,
+          "title": "Protoceratopsidae (Dinosauria) of Asia",
+          "journal": "Palaeontologia Polonica",
+          "volume": "33",
+          "pages": "133-182",
+          "notes": "Original description of the species as Protoceratops kozlowskii, based on the holotype ZPAL MgD-I/117 and referred juvenile material from Khulsan."
+        },
         {
           "id": "kurzanov1990a",
           "authors": "Kurzanov, S. M.",
@@ -45330,7 +45365,19 @@
           "journal": "Paleontological Journal",
           "volume": "1990",
           "issue": "4",
-          "pages": "85-91"
+          "pages": "85-91",
+          "notes": "Erected the genus Breviceratops for Protoceratops kozlowskii, retaining ZPAL MgD-I/117 as the holotype."
+        },
+        {
+          "id": "czepiński2019a",
+          "authors": "Czepiński, Ł.",
+          "year": 2019,
+          "title": "Ontogeny and variation of a protoceratopsid dinosaur Bagaceratops rozhdestvenskyi from the Late Cretaceous of the Gobi Desert",
+          "journal": "Historical Biology",
+          "volume": "32",
+          "pages": "1394-1421",
+          "doi": "10.1080/08912963.2019.1593404",
+          "notes": "Restricted Breviceratops kozlowskii to the holotype and ZPAL MgD-I/116, reassigning other referred material to Bagaceratops, and upheld it as a distinct taxon."
         },
         {
           "id": "jones2026a",
