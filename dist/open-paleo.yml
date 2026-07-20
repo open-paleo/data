@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-20T18:14:30.451Z
+  built_at: 2026-07-20T19:06:52.711Z
   clade_count: 188
   genus_count: 1401
   license: CC-BY-4.0
@@ -120526,6 +120526,8 @@ genera:
       history:
         - date: 2026-06-29
           note: Placed at Sauropodomorpha incertae sedis; nomen dubium, originally misidentified as a phytosaur.
+        - date: 2026-07-20
+          note: Species status set to nomen dubium, following Barrett and Xu (2012), who found the holotype snout to bear no autapomorphies or unique character combination; age widened to Hettangian–Sinemurian per the same reassessment of the Lower Lufeng Formation.
     locomotion: bipedal
     paleoenvironment:
       - fluvial
@@ -120544,14 +120546,15 @@ genera:
     species:
       - name: Pachysuchus imperfectus
         etymology: From Latin 'imperfectus' meaning 'imperfect', referring to the poorly preserved and incomplete nature of the holotype specimen.
-        status: valid
+        status: nomen dubium
         type_species: true
         period:
           name:
             - Early Jurassic
           stage:
+            - Hettangian
             - Sinemurian
-          from_ma: 199.3
+          from_ma: 201.3
           to_ma: 192.9
         location:
           country: CN
@@ -120565,7 +120568,10 @@ genera:
             - IVPP V 40
           specimen_type: holotype
           institution: Institute of Vertebrate Paleontology and Paleoanthropology
+          material: A badly damaged partial snout, comprising a fragmentary left premaxilla, left maxilla, and probable nasals with indeterminate bone fragments.
+          completeness: fragmentary
         erected_in: young1951a
+        described_in: barrett2012a
         authors: Young, C.-C.
         described: 1951
     references:
@@ -120584,7 +120590,7 @@ genera:
         volume: "50"
         issue: "2"
         pages: 151-159
-        notes: Reidentified the Pachysuchus holotype, originally described as a phytosaur.
+        notes: Redescribed the Pachysuchus holotype, reidentifying it as an indeterminate sauropodomorph rather than a phytosaur, and found no diagnostic features.
     taxonomy:
       - Life
       - Animalia
