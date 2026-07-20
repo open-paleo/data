@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-20T22:20:36.254Z
+  built_at: 2026-07-20T22:37:19.906Z
   clade_count: 188
   genus_count: 1401
   license: CC-BY-4.0
@@ -43908,7 +43908,7 @@ genera:
           to_ma: 199.5
         location:
           country: CN
-          locality: Fenghe village, Zhonghe
+          locality: Zhonghe, Yungyin County
           region: Yunnan
           formation: Fengjiahe
           coordinates:
@@ -43919,6 +43919,8 @@ genera:
             - IVPP V14474
           specimen_type: holotype
           institution: Institute of Vertebrate Paleontology and Paleoanthropology
+          material: Partial skeleton including a nearly complete left dentary, a cervical vertebra, dorsal vertebrae, several anterior caudal vertebrae, both scapulae, an incomplete pelvic girdle, and the hind limbs.
+          completeness: partial
         size:
           weight_kg:
             min: 3000
@@ -43929,9 +43931,10 @@ genera:
           length_m:
             min: 12
             max: 13
-        erected_in: yeh1975a
-        authors: Yeh, H.-K.
-        described: 1975
+        erected_in: dong1992a
+        described_in: upchurch2007a
+        authors: Dong, Z.
+        described: 1992
     references:
       - id: yeh1975a
         authors: Yeh, H.-K.
@@ -43940,6 +43943,24 @@ genera:
         journal: Yúnnán zhōngshēngdài hóng céng [Mesozoic Red Beds of Yunnan]
         publisher: Academia Sinica
         pages: 11-31
+        notes: Proposed the name Chinshakiangosaurus chunghoensis without a description, leaving it a nomen nudum.
+      - id: dong1992a
+        authors: Dong, Z.
+        year: 1992
+        title: Dinosaurian Faunas of China
+        publisher: China Ocean Press
+        isbn: 978-3-540-52084-9
+        notes: First described and figured the holotype, making the name available; the valid authorship is Chinshakiangosaurus chunghoensis Ye vide Dong, 1992.
+      - id: upchurch2007a
+        authors: Upchurch, P.; Barrett, P. M.; Zhao, X.-J.; Xu, X.
+        year: 2007
+        title: "A re-evaluation of Chinshakiangosaurus chunghoensis Ye vide Dong 1992 (Dinosauria, Sauropodomorpha): implications for cranial evolution in basal sauropod dinosaurs"
+        journal: Geological Magazine
+        volume: "144"
+        issue: "2"
+        pages: 247-262
+        doi: 10.1017/S0016756806003062
+        notes: Re-evaluation of the holotype dentary and reassessment of the taxon as provisionally valid; documents the holotype material, locality, and horizon.
       - id: paul2024a
         authors: Paul, G. S.
         year: 2024
@@ -43970,8 +43991,8 @@ genera:
       - Massopoda
       - Sauropodiformes
       - Sauropoda
-    authors: Yeh, H.-K.
-    described: 1975
+    authors: Dong, Z.
+    described: 1992
   Chirostenotes:
     genus: Chirostenotes
     parent: Caenagnathidae
