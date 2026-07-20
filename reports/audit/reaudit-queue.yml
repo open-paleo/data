@@ -17,6 +17,61 @@ pending:
     slices:
     - Ceratosauria
     - Diplodocoidea
+  brusatte2012c:
+    first_seen: '2026-07-19'
+    last_seen: '2026-07-19'
+    loci:
+    - Kelmayisaurus
+    note: 'Kelmayisaurus wrongly cites brusatte2012a (Brusatte & Benson, "The systematics
+      of Late Jurassic tyrannosauroid theropods from Europe and North America", Acta
+      Palaeontologica Polonica, doi:10.4202/app.2011.0141) for its revalidation as
+      a carcharodontosaurid on a single autapomorphy. Correct source is Brusatte,
+      Benson & Xu 2012, "A Reassessment of Kelmayisaurus petrolicus, a Large Theropod
+      Dinosaur from the Early Cretaceous of China", Acta Palaeontologica Polonica
+      57(1), doi:10.4202/app.2010.0125 — same authors, year and journal, hence the
+      collision. Not in corpus. When it lands: create the ref (likely brusatte2012c),
+      verify the revalidation claim + the autapomorphy, re-point the Kelmayisaurus
+      dispute.summary and references.notes, and drop brusatte2012a from Kelmayisaurus.
+      Keep brusatte2012a (Juratyrant cites it correctly). Kelmayisaurus is also missing
+      diagnostic_features, which should come from the correct paper.'
+    reason: fetch-pending
+    slices:
+    - Carcharodontosauria
+  naish2002b:
+    first_seen: '2026-07-19'
+    last_seen: '2026-07-19'
+    loci:
+    - Thecocoelurus
+    note: 'Naish & Martill 2002, "A reappraisal of Thecocoelurus daviesi (Dinosauria:
+      Theropoda) from the Early Cretaceous of the Isle of Wight", Proceedings of the
+      Geologists'' Association 113: 23-30, doi:10.1016/s0016-7878(02)80003-7. This
+      is the paper allain2014a credits for the nomen-dubium assessment, and the dedicated
+      treatment of the taxon. Do NOT key it naish2002a — that id already holds a different
+      Naish 2002 paper in the SAME journal and SAME volume 113 (Calamospondylus/Aristosuchus,
+      pp. 153-163). PDF supplied to the corpus; markdown pending. When it lands:
+      condense, verify the nomen-dubium call, create the ref and cite it from the
+      Thecocoelurus dispute alongside naish2001a.'
+    reason: fetch-pending
+    slices:
+    - Ornithomimosauria
+  naish2011a:
+    first_seen: '2026-07-19'
+    last_seen: '2026-07-19'
+    loci:
+    - Thecocoelurus
+    note: 'Naish, D. 2011, "Theropod dinosaurs", in English Wealden Fossils (Palaeontological
+      Association Field Guide to Fossils), pp. 530-532. Wikipedia cites this as the
+      sole pro-validity treatment of Thecocoelurus, in which Naish reportedly steps
+      back from his own earlier caenagnathid identification and suggests noasaurid
+      or abelisauroid affinities instead. Needed to settle whether the taxon should
+      stay valid: allain2014a (2014, in corpus) explicitly maintains the nomen-dubium
+      status and states the previously cited characters are not diagnostic, so the
+      pro-validity case rests entirely on this unverified field-guide chapter. Thecocoelurus
+      is tabled — no diagnostic_features backfill and no status change — until this
+      is read. Page range is from the Wikipedia citation and is unverified.'
+    reason: not-in-corpus
+    slices:
+    - Ornithomimosauria
   iori2021a:
     first_seen: '2026-07-12'
     last_seen: '2026-07-12'
