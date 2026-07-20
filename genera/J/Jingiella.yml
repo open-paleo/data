@@ -17,6 +17,18 @@ appearance:
     - elongate neck
   integument: scaled
   evidence: inferred
+diagnostic_features:
+  - Ratio of neural spine length to narrowest width of the neural arch of the
+    dorsal vertebra is about 4.4 (autapomorphy)
+  - Sacral centrum is opisthocoelous with a shallow depression on the lateral
+    surface
+  - Centra of the anterior caudal vertebrae are amphicoelous, with transversely
+    compressed articular surfaces
+  - Anterolateral and anteromedial processes of the ulna are generally
+    perpendicular to each other in proximal view
+  - Femoral head is medially oriented
+  - Middle portions of both the anterior and posterior surfaces of the femur are
+    slightly concave
 identifiers:
   - source: pbdb
     id: "484710"
@@ -46,12 +58,19 @@ species:
       length_m:
         min: 16
         max: 16
-    erected_in: ren2024a
+    erected_in: ren2024b
+    described_in: ren2024a
     type_specimen:
       specimen_id: [DXJL2021001]
       specimen_type: holotype
       institution: DXNR
+      material: Two dorsal vertebrae, one sacral vertebra, three caudal vertebrae,
+        left and right ulnae, and a right femur.
 references:
   - id: ren2024a
+    notes: Original description of the taxon, published under the genus name Jingia.
+  - id: ren2024b
+    notes: Established Jingiella as the replacement name for Jingia, preoccupied by
+      a moth genus.
   - id: jones2026b
     notes: Source of the body length estimate, and the appearance features.
