@@ -12,9 +12,16 @@ diet: omnivore
 locomotion: bipedal
 paleoenvironment:
   - arid
+diagnostic_features:
+  - Cranium lacking a pronounced crest
+  - Premaxilla with a vertical anterior margin
+  - Maxilla with a large accessory antorbital fenestra
+  - Nasals with three dorsal fenestrae per side
+  - Postorbital extending nearly to the bottom of the orbit
+  - Parietal with a low sagittal crest
+  - Enlarged first manual digit
 appearance:
   features:
-    - hollow cranial crest
     - keratinous beak
   integument: feathered
   evidence: direct
@@ -52,6 +59,8 @@ species:
       specimen_id: [ MPC-D 100/20 ]
       specimen_type: holotype
       institution: MPC
+      material: Nearly complete skull, partial mandible, and manus.
+      completeness: partial
     size:
       weight_kg:
         min: 32
@@ -63,10 +72,14 @@ species:
         min: 1.0
         max: 2.0
     erected_in: barsbold1986a
+    described_in: funston2018a
 references:
   - id: barsbold1986a
     notes: In German.
   - id: maryańska2002a
+  - id: funston2018a
+    notes: Lists the holotype (MPC-D 100/20) and provides an emended diagnosis
+      of Conchoraptor gracilis.
   - id: jones2026c
     notes: Source of the mass and hip height estimates, and the appearance
       features.
