@@ -1,5 +1,36 @@
 genus: Mamenchisaurus
 parent: Mamenchisauridae
+dispute:
+  summary: >
+    The composition of Mamenchisaurus is unsettled and the genus is poorly
+    defined. Many species and fragmentary specimens have been referred to it
+    over the years, several of them fragmentary and undiagnostic, and repeated
+    analyses have failed to recover the genus as monophyletic (Moore and
+    colleagues, 2020, 2023; Wang and colleagues, 2019). The type species,
+    M. constructus, rests on fragmentary material that yields little character
+    information: Moore and colleagues (2023) recovered no autapomorphies for
+    it, found its phylogenetic position unstable, and regarded the forked
+    mid-caudal chevrons long cited as diagnostic of the genus as possibly an
+    artifact of reconstruction. It frequently falls outside the clade
+    containing the other referred species (Dai and colleagues, 2025). Moore
+    and colleagues (2023) placed M. sinocanadorum outside that clade as well,
+    closest to Xinjiangtitan, but withheld taxonomic action pending a
+    re-evaluation of the type species, and Dai and colleagues (2025) retained
+    the generic name for their new species expressly to avoid further
+    nomenclatural confusion. The referred species also span an implausible
+    interval: Wang and colleagues (2019) dated the upper Suining Formation,
+    the horizon of M. anyuensis, to 114.4 million years, some 30 million years
+    younger than the Late Jurassic species, and called for a total
+    re-evaluation of the genus. Moore and colleagues (2020) likewise failed to
+    recover ZDM 0126 as sister to the M. hochuanensis holotype, casting doubt
+    on that referral.
+  history:
+    - date: "2026-07-19"
+      note: >
+        Retained at Mamenchisauridae with the referred species held as valid.
+        Recent analyses recover the genus as non-monophyletic, but no author
+        has yet proposed a replacement arrangement, so the existing
+        combinations stand pending revision of the type species.
 pronunciation:
   ipa: /məˌmʌntʃiˈsɔːrəs/
   phonetic: muh-MUN-chee-SOR-uhs, or spelling pronunciation
@@ -29,6 +60,16 @@ appearance:
     - elongate neck
   integument: scaled
   evidence: inferred
+diagnostic_features:
+  - Cervical and dorsal vertebrae highly pneumatic and procoelous; cervical
+    vertebrae very large with dorsal neural spines relatively straight and low
+  - Cervical ribs with a pronounced trough-like form and a broad, thin distal
+    end
+  - Dorsal vertebrae with relatively concave lateral surfaces
+  - Anterior six or seven caudal vertebrae deeply procoelous; mid-caudal and
+    posterior caudal vertebrae amphiplatyan
+  - Chevrons of the mid-caudal region markedly bifurcated but not massive,
+    remaining connected above, unlike the open-topped chevrons of Diplodocus
 identifiers:
   - source: pbdb
     id: "38670"
@@ -75,6 +116,9 @@ species:
         - IVPP V 790
       specimen_type: holotype
       institution: IVPP
+      material: Fourteen cervical vertebrae, five dorsal vertebrae, thirty caudal
+        vertebrae with ribs and chevrons, fragmentary ilium, partial right femur,
+        complete right tibia and fibula, right astragalus, and partial right pes.
     erected_in: young1954a
   - name: Mamenchisaurus sinocanadorum
     etymology: From sino- (China) and canad- (Canada) with the Latin genitive
@@ -209,6 +253,51 @@ species:
         sinocanadorum); mandibular dentition of 22-24 teeth exceeds the Xinjiang
         specimen's count.
     erected_in: pi1996a
+  - name: Mamenchisaurus sanjiangensis
+    etymology: From Chinese Pinyin 'sanjiang' (three rivers), for the type locality
+      at the confluence of the Jialing, Fu, and Qu Rivers in Hechuan District.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Jurassic
+      stage:
+        - Oxfordian
+      from_ma: 161.5
+      to_ma: 157.3
+    location:
+      country: CN
+      region: Chongqing
+      formation: Shaximiao
+      locality: Hechuan District
+    type_specimen:
+      specimen_id:
+        - CIP V0001
+      specimen_type: holotype
+      institution: CIP-CN
+      material: Two cervical vertebrae, twelve dorsal vertebrae, five sacral
+        vertebrae, four caudal vertebrae, left and right ilia, pubes and ischia,
+        and the left femur, tibia, and fibula.
+    diagnostic_features:
+      - Additional fossa on the base of the prezygodiapophyseal lamina of the
+        posterior cervical and anterior dorsal vertebrae (autapomorphy)
+      - Accessory lamina extending from the prezygapophysis to the diapophysis on
+        the anterior dorsal vertebrae (autapomorphy)
+      - Several accessory laminae divide the spinodiapophyseal fossa of the
+        dorsal vertebrae, and the spinodiapophyseal lamina is bifurcated
+        dorsally from the third to seventh dorsal, the two branches forming the
+        lateral margins of a secondary deep fossa (autapomorphy)
+      - Epipophyseal-prezygapophyseal lamina preserved on the posterior cervical
+        and anterior dorsal vertebrae
+      - Height of the neural arch relative to the posterior centrum articular
+        surface increases prominently from the anterior to the posterior dorsal
+        series
+      - Five sacral vertebrae completely fused, the distal portion of the neural
+        spines platform-shaped, with lateral excavation on the sacrals
+      - Dorsal margin of the ilium semicircular; femoral head dorsoventrally
+        projected, with a transverse width to anteroposterior length ratio of
+        about 2.6 at the femoral mid-shaft
+    erected_in: dai2025b
 notable_specimens:
   - specimen_id:
       - ZDM0126
@@ -243,3 +332,11 @@ references:
   - id: pi1996a
     notes: Erects Mamenchisaurus youngi on holotype ZDM 0083 from the Shaximiao
       Formation of Zigong, Sichuan.
+  - id: wang2019c
+    notes: Dates the upper Suining Formation, the horizon of M. anyuensis, to
+      114.4 million years, some 30 million years younger than the Late Jurassic
+      species of the genus.
+  - id: dai2025b
+    notes: Erects Mamenchisaurus sanjiangensis on holotype CIP V0001 from the
+      Shaximiao Formation of Chongqing; retains the generic name to avoid
+      further nomenclatural confusion.
