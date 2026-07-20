@@ -13,6 +13,19 @@ diet: herbivore
 locomotion: quadrupedal
 paleoenvironment:
   - arid
+diagnostic_features:
+  - Sacrum of four fused vertebrae
+  - Pubis and ischium broadly articulated, the ischium longer than the pubis
+  - Pubes forming a prominent, anteriorly facing distal apron, lacking a distinct
+    tubercle for m. ambiens
+  - Ischia forming the major part of the acetabulum
+  - Ilium with a very long pubic peduncle and a very short ischiadic peduncle
+  - Humerus weakly flared, about two-thirds the length of the femur
+  - Forelimb about 78% the length of the hindlimb
+  - Femur straight and columnar, lacking sigmoidal curvature
+  - Tibia short and robust with expanded ends, about 58% the length of the femur
+  - Astragalus with a prominent lateral peg and a height-to-length ratio of ~1.18
+  - Greatly enlarged hallux ungual
 appearance:
   integument: scaled
   evidence: inferred
@@ -51,6 +64,11 @@ species:
       specimen_id: [ NMZ QG24 ]
       specimen_type: holotype
       institution: NMZB
+      material: Partial postcranial skeleton lacking the skull and the cervical
+        and dorsal vertebrae; includes a four-vertebra sacrum, anterior caudals,
+        both humeri, the right radius and ulna, a partial pelvis, both hindlimbs,
+        and a near-complete pes.
+      completeness: partial
     size:
       hip_height_m:
         min: 3
@@ -62,7 +80,12 @@ species:
         min: 3500
         max: 3500
     erected_in: raath1972a
+    described_in: cooper1984a
 references:
   - id: raath1972a
+  - id: cooper1984a
+    notes: Detailed reassessment placing the holotype at the top of the Forest
+      Sandstone; the diagnostic features derive from its Vulcanodontidae (family)
+      diagnosis.
   - id: jones2026b
     notes: Source of the hip height estimate.
