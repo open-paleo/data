@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-07-20T17:35:42.698Z",
+    "built_at": "2026-07-20T18:14:30.451Z",
     "clade_count": 188,
     "genus_count": 1401,
     "license": "CC-BY-4.0",
@@ -209557,11 +209557,15 @@
       "etymology": "From Latin tri- ('three') and mucro ('dagger point' or 'sharp tip'), and Greek odous ('tooth'), meaning 'three-pointed tooth', referring to the tricuspid teeth",
       "description": "Trimucrodon is a genus of ornithischian dinosaur from the Late Jurassic Lourinhã Formation of Portugal. The type, and currently only, species is T. cuneatus.",
       "dispute": {
-        "summary": "Trimucrodon is a nomen dubium based on isolated teeth from the Late Jurassic of Portugal, treated as an indeterminate ornithischian (Jones, 2026). It was formerly assigned to the deprecated Fabrosauridae.\n",
+        "summary": "Trimucrodon cuneatus is based on three isolated tricuspid teeth — one designated as the holotype — from the Late Jurassic of Portugal, and its validity is contested. Thulborn (1973) diagnosed it on tooth-crown characters, notably the strongly divergent, prominent foremost and hindmost marginal denticles, and referred it to the now-abandoned Fabrosauridae. Weishampel and Witmer (1990) treated it as a nomen dubium, an indeterminate ornithischian outside Ornithopoda. Sereno (1991) declined that assessment — made, he noted, without comparison — and considered the taxon poorly established but distinct on its denticle pattern, placing it at Ornithischia incertae sedis. Weishampel et al. (2004) again regarded it as dubious while allowing that further study could support its validity, and Jones (2026) treats it as an indeterminate ornithischian. It is placed conservatively at Ornithischia incertae sedis.\n",
         "history": [
           {
             "date": "2026-06-29",
             "note": "Placed at Ornithischia incertae sedis; tooth-based nomen dubium."
+          },
+          {
+            "date": "2026-07-20",
+            "note": "Dispute rebalanced against primary sources — Sereno (1991) considered it possibly valid and distinct, against the nomen-dubium treatments of Weishampel and Witmer (1990), Weishampel et al. (2004), and Jones (2026)."
           }
         ]
       },
@@ -209593,7 +209597,7 @@
         {
           "name": "Trimucrodon cuneatus",
           "etymology": "From Latin 'cuneatus' meaning 'wedge-shaped', referring to the wedge shape of the teeth.",
-          "status": "valid",
+          "status": "nomen dubium",
           "type_species": true,
           "period": {
             "name": [
@@ -209624,23 +209628,55 @@
             "specimen_type": "holotype",
             "institution": "Museu Geológico do Instituto Geológico e Mineiro",
             "status": "uncatalogued",
-            "material": "Teeth; unclear if ever formally cataloged",
-            "completeness": "fragmentary"
+            "material": "A single tricuspid tooth crown; two additional crowns are referred to the species.",
+            "completeness": "fragmentary",
+            "notes": "Thulborn (1973) designated a single tooth crown as holotype but assigned no catalogue number; originally held at the Free University of Berlin, now at the Museu Geológico, Lisbon."
           },
-          "erected_in": "thulborn1975a",
+          "erected_in": "thulborn1973a",
           "authors": "Thulborn, R. A.",
-          "described": 1975
+          "described": 1973
         }
       ],
       "references": [
         {
-          "id": "thulborn1975a",
+          "id": "thulborn1973a",
           "authors": "Thulborn, R. A.",
-          "year": 1975,
+          "year": 1973,
           "title": "Teeth of ornithischian dinosaurs from the Upper Jurassic of Portugal, with description of a hypsilophodontid (Phyllodon henkeli gen. et sp. nov.) from the Guimarota lignite",
-          "journal": "Contribuição para o conhecimento da Fauna do Kimerridgiano da Mina de Lignito Guimarota (Leiria, Portugal). Serviços Geológicos de Portugal, Memória (Nova Série)",
+          "journal": "Memórias dos Serviços Geológicos de Portugal",
           "volume": "22",
-          "pages": "89-134"
+          "pages": "89-134",
+          "notes": "Erected Trimucrodon cuneatus, designating a single tooth crown as holotype and providing the original tooth-based diagnosis."
+        },
+        {
+          "id": "weishampel1990a",
+          "authors": "Weishampel, D. B.; Witmer, L. M.",
+          "year": 1990,
+          "title": "Lesothosauridae, Pisanosauridae, and Fabrosauridae",
+          "book": "The Dinosauria",
+          "publisher": "University of California Press",
+          "pages": "416-425",
+          "notes": "Treated Trimucrodon as a nomen dubium, an indeterminate ornithischian outside Ornithopoda."
+        },
+        {
+          "id": "sereno1991a",
+          "authors": "Sereno, P. C.",
+          "year": 1991,
+          "title": "Lesothosaurus, 'fabrosaurids,' and the early evolution of Ornithischia",
+          "journal": "Journal of Vertebrate Paleontology",
+          "volume": "11",
+          "issue": "2",
+          "pages": "168-197",
+          "doi": "10.1080/02724634.1991.10011386",
+          "notes": "Declined the nomen-dubium assessment and considered the taxon poorly established but distinct, placing it at Ornithischia incertae sedis."
+        },
+        {
+          "id": "weishampel2004a",
+          "authors": "Weishampel, D. B.; Dodson, P.; Osmólska, H.",
+          "year": 2004,
+          "title": "The Dinosauria, Second Edition",
+          "publisher": "University of California Press, Berkeley",
+          "notes": "Regarded Trimucrodon as dubious while allowing that further study could support its validity."
         },
         {
           "id": "jones2026a",
@@ -209649,7 +209685,7 @@
           "title": "The Princeton Encyclopedia of Dinosaurs: Ornithischians",
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25025-0",
-          "notes": "Placement and assessment in the Princeton Encyclopedia of Dinosaurs."
+          "notes": "Treats Trimucrodon as an indeterminate ornithischian in the Princeton Encyclopedia of Dinosaurs."
         }
       ],
       "taxonomy": [
@@ -209665,7 +209701,7 @@
         "Ornithischia"
       ],
       "authors": "Thulborn, R. A.",
-      "described": 1975
+      "described": 1973
     },
     "Trinisaura": {
       "genus": "Trinisaura",
