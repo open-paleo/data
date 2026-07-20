@@ -26,13 +26,7 @@ appearance:
 identifiers:
   - source: wikidata
     id: Q21011926
-synonyms:
-  - name: Polacanthus rudgwickensis
-    type: reassigned
-    reason: Blows (1996) originally described this material as
-      a second species of Polacanthus. Blows (2015) elevated it
-      to its own genus, Horshamosaurus, with H. rudgwickensis
-      as the type species (combinatio nova).
+erected_in: blows2015a
 species:
   - name: Horshamosaurus rudgwickensis
     etymology: Named for the village of Rudgwick in West
@@ -49,7 +43,8 @@ species:
       to_ma: 125
     location:
       country: GB
-      region: Rudgwick, West Sussex, England
+      region: West Sussex
+      locality: Rudgwick Brickworks quarry
       formation: Weald Clay Group
     type_specimen:
       specimen_id:
@@ -64,7 +59,13 @@ species:
         ischium by Raven et al. 2020), rib fragments, and
         osteoderms.
       completeness: fragmentary
-    erected_in: blows2015a
+    synonyms:
+      - name: Polacanthus rudgwickensis
+        type: reassigned
+        reason: Original description by Blows (1996) as a second species of
+          Polacanthus; Blows (2015) raised it to its own genus, Horshamosaurus,
+          with H. rudgwickensis as the type species.
+    erected_in: blows1996a
 references:
   - id: blows1996a
     notes: Original description of the type material under the name Polacanthus
