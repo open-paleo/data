@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-20T01:23:05.019Z
+  built_at: 2026-07-20T01:32:45.296Z
   clade_count: 188
-  genus_count: 1400
+  genus_count: 1401
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.07"
@@ -13831,13 +13831,9 @@ genera:
     paleoenvironment:
       - fluvial
     diagnostic_features:
-      - Top of neural spines transversely expanded in the last dorsal, all sacral, and three anterior caudal vertebrae
-      - "Three morphologically distinct osteoderm types articulating on top of neural spines: unpaired leaf-shaped (type a), laminar and transversely wide with lateral projections (type b), and elongate flat or cylindrical dorsolaterally projected (type c)"
-      - Fibula with a pronounced posterior projection on its proximal section and a bend internally directed, bounding the cnemial crest of the tibia
-      - Metatarsals of the titanosaur type
-    appearance:
-      integument: armored
-      evidence: direct
+      - Posterior dorsal, sacral, and anterior caudal neural spines with deep, dorsoventrally expanded, elliptical spinoprezygapophyseal and spinopostzygapophyseal fossae, apically enclosed by transversely and anteroposteriorly expanded dorsolateral margins
+      - Most posterior anterior caudal vertebrae with V-like (Y-like), dorsally divergent lateral laminae in lateral view
+      - Metatarsal I with prominent, proximodistally elongated laminae on the proximal half of the anterior and posterior surfaces of the bone
     identifiers:
       - source: pbdb
         id: "66565"
@@ -13878,9 +13874,10 @@ genera:
             - MCF-PVPH-110
           specimen_type: holotype
           institution: Museo ‘Carmen Funes’, Plaza Huincul
-          material: 3 Incomplete dorsal, 6 incomplete sacral, and 10 incomplete caudal vertebrae; 9 dermal ossifications; almost complete right tibia and fibula; 5 articulated left metatarsals
+          material: "Partially articulated postcranial skeleton: dorsal, sacral, and caudal neural spines (plus two newly referred fragments), a cervical rib, dorsal ribs, iliac fragment, a tibia, a fibula, metatarsals"
           completeness: partial
         erected_in: bonaparte1999c
+        described_in: bellardini2022b
         authors: Bonaparte, J. F.
         described: 1999
     references:
@@ -69682,7 +69679,9 @@ genera:
       evidence: direct
     diagnostic_features:
       - Parascapular (shoulder) spines at least twice the length of the scapula
-      - Dentary bearing more than 30 closely packed, leaf-shaped teeth
+      - Dentary bearing up to 30 closely packed, leaf-shaped teeth, each crown with five tuberculate serrations on the anterior and posterior margins
+      - External mandibular fenestra present, with a well-developed coronoid process and an elongated ridge along the lateral surface of the dentary
+      - Four firmly fused sacral vertebrae, the sacral neural spines co-ossified with the last dorsal neural spine into a fore-and-aft elongate plate
     identifiers:
       - source: pbdb
         id: "89460"
@@ -127579,6 +127578,85 @@ genera:
       - Hadrosauromorpha
     authors: Tsogtbaatar, K.; Weishampel, D. B.; D. C. Evans, M. W.
     described: 2014
+  Plesiolophus:
+    genus: Plesiolophus
+    parent: Lambeosaurinae
+    etymology: From Ancient Greek 'plesios' (near) and 'lophos' (crest); in reference to this taxon's phylogenetic proximity to Parasaurolophus while retaining more plesiomorphic cranial anatomy.
+    description: Plesiolophus is an extinct genus of lambeosaurine hadrosaurid dinosaur known from the Late Cretaceous (Campanian age) Oldman Formation of Canada. The genus contains a single species, Plesiolophus warnerensis, known from a partial skull. It belongs to the clade Parasaurolophini, where it exhibits more primitive cranial characters than its relatives.
+    diet: herbivore
+    locomotion: facultative
+    diagnostic_features:
+      - Adult frontal platform does not overhang the remainder of the frontals or the parietal posteriorly
+      - Postorbital process of the laterosphenoid projects anterolaterodorsally
+      - Dorsal surface of the parietal between the interfrontal process and the sagittal crest is down-warped, forming a well-developed triangular plateau separating the two
+      - Basipterygoid processes of the parabasisphenoid stout, with a complex lateral topography of an anterior swelling and a posterior depression
+      - Alar process of the basisphenoid is pendent, robust, and subrectangular in shape
+      - Frontal platform is steeply inclined, and a sagittal crest is present on the posterior part of the parietal
+    identifiers:
+      - source: wikidata
+        id: Q140473390
+    species:
+      - name: Plesiolophus warnerensis
+        etymology: Named for Warner, Alberta, where the holotype was discovered.
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+          from_ma: 83.6
+          to_ma: 72.2
+        location:
+          country: CA
+          locality: Milk River Ridge Reservoir
+          region: Alberta
+          formation: Oldman
+        type_specimen:
+          specimen_id:
+            - TMP 2016.023.0039
+          specimen_type: holotype
+          institution: Royal Tyrrell Museum of Paleontology
+          material: "Articulated posterior skull roof and braincase: partial prefrontals, complete fused frontals, parietal, partial postorbitals, left squamosal fragment, and nearly complete neurocranium"
+          completeness: partial
+        erected_in: mcfeeters2026a
+        authors: McFeeters, B. D.; Evans, D. C.; Ryan, M. J.; Maddin, H. C.
+        described: 2026
+    references:
+      - id: mcfeeters2026a
+        authors: McFeeters, B. D.; Evans, D. C.; Ryan, M. J.; Maddin, H. C.
+        year: 2026
+        title: "A new parasaurolophin dinosaur (Hadrosauridae: Lambeosaurinae) from the Oldman Formation of southern Alberta"
+        journal: Canadian Journal of Earth Sciences
+        volume: "63"
+        pages: 1-23
+        doi: 10.1139/cjes-2026-0013
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Neornithischia
+      - Cerapoda
+      - Ornithopoda
+      - Iguanodontia
+      - Dryomorpha
+      - Ankylopollexia
+      - Styracosterna
+      - Hadrosauriformes
+      - Hadrosauroidea
+      - Hadrosauromorpha
+      - Hadrosauridae
+      - Lambeosaurinae
+    authors: McFeeters, B. D.; Evans, D. C.; Ryan, M. J.; Maddin, H. C.
+    described: 2026
   Pleurocoelus:
     genus: Pleurocoelus
     parent: Macronaria
