@@ -14,15 +14,20 @@ paleoenvironment:
   - fluvial
   - arid
 diagnostic_features:
-  - Distal condyles of humerus weakly developed with pronounced rim around them
-  - Fusion of distal tarsals II and III to respective metatarsals (synapomorphy
-    of Megapnosaurus)
-  - Fusion of metatarsals II and III (unambiguous synapomorphy of genus
-    Megapnosaurus)
-  - Proximal ulna with well-developed olecranon process projecting dorsally and
-    sigmoid notch opening anteriorly
-  - Proximal radius with widely expanded margin and well-developed posterior
-    process
+  - Extensive fusion in the tarsal region, with the astragalocalcaneum fused
+    to the tibia and bearing an atypical ascending process
+  - Distal tarsals fused to the metatarsals, except for a free distal tarsal 4
+  - Fibula free but closely apposed to the tibia and astragalocalcaneum;
+    calcaneum lacking a tuber
+  - Long metatarsals (metatarsal III about 60% of femoral length); pes
+    functionally tridactyl (digits II–IV), with digit I highly reduced and
+    digit V a splint-like metatarsal
+  - Manus large and functionally tridactyl (digits I–III) with recurved
+    raptorial claws; manual digit IV reduced to a metacarpal and a single
+    vestigial phalanx
+  - Femur with a sharply inturned head and a distinct neck
+  - Dolichoiliac pelvis, the iliac blade flared posteriorly into a wide,
+    shallow shelf
 appearance:
   integument: scaled
   evidence: inferred
@@ -59,15 +64,16 @@ species:
       region: Matabeleland North
       formation: Forest Sandstone
       coordinates:
-        - -16.216667
-        - 30.1
+        - -19.966667
+        - 28.409722
     type_specimen:
       specimen_id:
         - QG 1
       specimen_type: holotype
       institution: NMZB
-      material: Near-complete articulated skeleton.
-      completeness: complete
+      material: Articulated postcranial skeleton lacking the skull and cervical
+        vertebrae.
+      completeness: partial
     size:
       hip_height_m:
         min: 0.7
@@ -81,11 +87,13 @@ species:
     erected_in: raath1969a
 references:
   - id: raath1969a
-    notes: Original description as Syntarsus rhodesiensis on a near-complete
-      articulated skeleton (QG 1) from the Forest Sandstone of Zimbabwe.
+    notes: Original description as Syntarsus rhodesiensis, based on the holotype
+      postcranial skeleton (QG 1) from the Forest Sandstone of Zimbabwe; source
+      of the diagnosis.
   - id: ivie2001a
     notes: Coins Megapnosaurus as a replacement name for Syntarsus Raath, 1969,
       preoccupied by the beetle genus Syntarsus Fairmaire, 1869.
   - id: irmis2004a
+    notes: First report of the genus from the Lower Lufeng Formation of China.
   - id: jones2026c
     notes: Source of the hip height estimate.
