@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-20T04:37:37.618Z
+  built_at: 2026-07-20T17:07:25.286Z
   clade_count: 188
   genus_count: 1401
   license: CC-BY-4.0
@@ -19176,6 +19176,9 @@ genera:
     appearance:
       integument: scaled
       evidence: inferred
+    diagnostic_features:
+      - Lateral walls of the neural canal and the centropostzygapophyseal laminae flared laterally toward the posterior
+      - Neural canal strongly flexed anteroposteriorly within the dorsal neural arches
     identifiers:
       - source: pbdb
         id: "38655"
@@ -19219,6 +19222,7 @@ genera:
           material: Posterior dorsal vertebra.
           completeness: fragmentary
         erected_in: cabrera1947a
+        described_in: rauhut2003c
         authors: Cabrera, A.
         described: 1947
     references:
@@ -47401,9 +47405,16 @@ genera:
     locomotion: bipedal
     paleoenvironment:
       - arid
+    diagnostic_features:
+      - Cranium lacking a pronounced crest
+      - Premaxilla with a vertical anterior margin
+      - Maxilla with a large accessory antorbital fenestra
+      - Nasals with three dorsal fenestrae per side
+      - Postorbital extending nearly to the bottom of the orbit
+      - Parietal with a low sagittal crest
+      - Enlarged first manual digit
     appearance:
       features:
-        - hollow cranial crest
         - keratinous beak
       integument: feathered
       evidence: direct
@@ -47441,6 +47452,8 @@ genera:
             - MPC-D 100/20
           specimen_type: holotype
           institution: Paleontological Center, Mongolian Academy of Sciences
+          material: Nearly complete skull, partial mandible, and manus.
+          completeness: partial
         size:
           weight_kg:
             min: 32
@@ -47452,6 +47465,7 @@ genera:
             min: 1
             max: 2
         erected_in: barsbold1986a
+        described_in: funston2018a
         authors: Barsbold, R.
         described: 1986
     references:
@@ -47471,6 +47485,15 @@ genera:
         volume: "47"
         issue: "1"
         pages: 97-116
+      - id: funston2018a
+        authors: Funston, G. F.; Mendonca, S. E.; Currie, P. J.; Barsbold, R.
+        year: 2018
+        title: Oviraptorosaur anatomy, diversity and ecology in the Nemegt Basin
+        journal: Palaeogeography, Palaeoclimatology, Palaeoecology
+        volume: "494"
+        pages: 101-120
+        doi: 10.1016/j.palaeo.2017.10.023
+        notes: Lists the holotype (MPC-D 100/20) and provides an emended diagnosis of Conchoraptor gracilis.
       - id: jones2026c
         authors: Jones, B.; Viola, E.
         year: 2026
@@ -128213,7 +128236,7 @@ genera:
     description: Polacanthoides is a dubious genus of ankylosaurian dinosaur from the Weald Clay of England. The type species is P. ponderosus.
     dispute:
       summary: |
-        Polacanthoides is a nomen dubium. Raven et al. (2020) reassessed its type material — previously referred in part to Hylaeosaurus and Polacanthus — as indeterminate ankylosaur remains that lack the diagnostic features of either genus. It is retained at Ankylosauria incertae sedis.
+        Polacanthoides is a nomen dubium. Its name-bearing material is a chimera assembled by Nopcsa (1928) from a partial scapula from the Wealden of Sussex, previously referred to Hylaeosaurus, together with a humerus and tibia from the Wessex Formation of the Isle of Wight that are now known only from casts. Raven et al. (2020) found no autapomorphies of Hylaeosaurus on the scapula and none of Polacanthus on the humerus and tibia, and regarded all of the material as indeterminate ankylosaur remains. It is retained at Ankylosauria incertae sedis.
       history:
         - date: 2026-06-26
           note: Placed at Ankylosauria incertae sedis; indeterminate nomen dubium.
@@ -128235,7 +128258,7 @@ genera:
     species:
       - name: Polacanthoides ponderosus
         etymology: From Latin 'ponderosus' meaning 'heavy' or 'ponderous'.
-        status: valid
+        status: nomen dubium
         type_species: true
         period:
           name:
@@ -163021,6 +163044,11 @@ genera:
     appearance:
       integument: feathered
       evidence: inferred
+    diagnostic_features:
+      - Proximal mid-caudal vertebrae with the neural arch placed only on the anterior two thirds of the centrum, the centrum considerably broader than high (width to height ratio about 1.5) (autapomorphy)
+      - Caudal centra increasing rapidly in length toward the posterior
+      - Minimal length of the first metacarpal less than the width of that bone (autapomorphy)
+      - Tibia with a pronounced, semicircular lateral expansion of the lateral malleolus (autapomorphy)
     identifiers:
       - source: pbdb
         id: "38549"
@@ -163055,6 +163083,7 @@ genera:
             - IVPP V 4025
           specimen_type: holotype
           institution: Institute of Vertebrate Paleontology and Paleoanthropology
+          material: Fragmentary postcranial skeleton comprising caudal vertebrae, a dorsal rib, the first digits of both manus, and partial hindlimbs.
         size:
           weight_kg:
             min: 15
@@ -163063,6 +163092,7 @@ genera:
             min: 1.9
             max: 3
         erected_in: dong1973a
+        described_in: rauhut2005c
         authors: Dong, Z.
         described: 1973
     references:
@@ -163278,6 +163308,12 @@ genera:
         - brow horns
       integument: scaled
       evidence: inferred
+    diagnostic_features:
+      - Tooth crowns with variably developed secondary ridges, unlike the condition in more derived ceratopsids
+      - Only two or three teeth in each vertical dental file, fewer than in more derived ceratopsids
+      - Teeth double-rooted, unlike Zuniceratops and more basal neoceratopsians
+      - Frontal excluded from the orbital margin, unlike more basal neoceratopsians
+      - Shallow supracranial cavity complex present, unlike more basal neoceratopsians
     identifiers:
       - source: pbdb
         id: "67677"
@@ -163320,7 +163356,9 @@ genera:
             - CCMGE 251/12457
           specimen_type: holotype
           institution: F.N. Chernyshev Central Museum of Geological Exploration
+          material: Incomplete left maxilla.
         erected_in: nessov1989a
+        described_in: sues2009b
         authors: Nessov, L. A.; Kaznyshkina, L. F.; G. O. Cherepanov
         described: 1989
     references:
@@ -167311,7 +167349,7 @@ genera:
     parent: Saurischia
     dispute:
       summary: |
-        Velocipes guerichi is a nomen dubium based on a partial fibula. Most interpretations treat it as a theropod — Skawiński and others (2017) recovered it as a basal neotheropod — but Rauhut and Hungerbühler (2000) judged the specimen too poorly preserved to identify beyond an indeterminate vertebrate.
+        Velocipes guerichi is a nomen dubium based on the proximal part of a fibula. Rauhut and Hungerbühler (2000) judged the specimen too poorly preserved to establish even what bone it is, and treated it as an indeterminate vertebrate; Welles (1984) had earlier found the holotype undiagnostic. Skawiński and others (2017) re-examined the specimen, reaffirmed its identification as a theropod fibula against that view, and argued it preserves phylogenetically informative characters, but concluded that it cannot be identified more precisely than an indeterminate theropod and offered no diagnosis. Earlier referrals to Ceratosauria (Tykoski and Rowe, 2004; Weishampel and others, 2004) are not supported by that re-examination.
       history:
         - date: 2026-06-30
           note: |
