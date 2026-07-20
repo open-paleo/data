@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-20T19:27:04.681Z
+  built_at: 2026-07-20T19:50:45.021Z
   clade_count: 188
   genus_count: 1401
   license: CC-BY-4.0
@@ -77129,10 +77129,7 @@ genera:
     identifiers:
       - source: wikidata
         id: Q21011926
-    synonyms:
-      - name: Polacanthus rudgwickensis
-        type: reassigned
-        reason: Blows (1996) originally described this material as a second species of Polacanthus. Blows (2015) elevated it to its own genus, Horshamosaurus, with H. rudgwickensis as the type species (combinatio nova).
+    erected_in: blows2015a
     species:
       - name: Horshamosaurus rudgwickensis
         etymology: Named for the village of Rudgwick in West Sussex, where the holotype was excavated from the Rudgwick Brickworks marl quarry in 1985.
@@ -77147,7 +77144,8 @@ genera:
           to_ma: 125
         location:
           country: GB
-          region: Rudgwick, West Sussex, England
+          region: West Sussex
+          locality: Rudgwick Brickworks quarry
           formation: Weald Clay Group
         type_specimen:
           specimen_id:
@@ -77156,9 +77154,13 @@ genera:
           institution: Horsham Museum
           material: Fragmentary postcranial skeleton including a nearly complete anterior dorsal vertebra, dorsal and caudal centra, proximal left scapula with fused coracoid fragment, distal left humerus, the element originally identified as a tibia (reinterpreted as an ischium by Raven et al. 2020), rib fragments, and osteoderms.
           completeness: fragmentary
-        erected_in: blows2015a
+        synonyms:
+          - name: Polacanthus rudgwickensis
+            type: reassigned
+            reason: Original description by Blows (1996) as a second species of Polacanthus; Blows (2015) raised it to its own genus, Horshamosaurus, with H. rudgwickensis as the type species.
+        erected_in: blows1996a
         authors: Blows, W. T.
-        described: 2015
+        described: 1996
     references:
       - id: blows1996a
         authors: Blows, W. T.
