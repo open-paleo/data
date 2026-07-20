@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-07-20T01:55:46.185Z",
+    "built_at": "2026-07-20T04:37:37.618Z",
     "clade_count": 188,
     "genus_count": 1401,
     "license": "CC-BY-4.0",
@@ -49134,6 +49134,14 @@
         "integument": "scaled",
         "evidence": "inferred"
       },
+      "diagnostic_features": [
+        "Underdeveloped crista prootica (autapomorphy)",
+        "Foramen for cranial nerve VII opens anterior to the crista prootica",
+        "Paraoccipital process internally hollow (autapomorphy)",
+        "Extremely broad lateral expansion of the quadrate fossa (autapomorphy)",
+        "Medial hemicondyle of the quadrate at least twice the size of the lateral hemicondyle",
+        "Dorsal alar arm of the transverse processes of the ilium (autapomorphy)"
+      ],
       "identifiers": [
         {
           "source": "pbdb",
@@ -49175,7 +49183,8 @@
               "MMCH-Pv 71"
             ],
             "specimen_type": "holotype",
-            "institution": "Museo Municipal ‘Ernesto Bachman’, Villa El Chocón"
+            "institution": "Museo Municipal ‘Ernesto Bachman’, Villa El Chocón",
+            "material": "Braincase, quadrate, posterior dorsal neural arch, partial sacral vertebra, sacral neural spine fragment, posterior caudal vertebra, right ilium, left ilium fragments, pedal unguals 1 and 2."
           },
           "erected_in": "lerzo2024b",
           "authors": "Lerzo, L. N.; Fernández-Baldor, F. T.; Canale, J. I.; Whitlock, J. A.; Otero, A.; Gallina, P. A.",
@@ -110505,6 +110514,14 @@
         "integument": "scaled",
         "evidence": "inferred"
       },
+      "diagnostic_features": [
+        "Ratio of neural spine length to narrowest width of the neural arch of the dorsal vertebra is about 4.4 (autapomorphy)",
+        "Sacral centrum is opisthocoelous with a shallow depression on the lateral surface",
+        "Centra of the anterior caudal vertebrae are amphicoelous, with transversely compressed articular surfaces",
+        "Anterolateral and anteromedial processes of the ulna are generally perpendicular to each other in proximal view",
+        "Femoral head is medially oriented",
+        "Middle portions of both the anterior and posterior surfaces of the femur are slightly concave"
+      ],
       "identifiers": [
         {
           "source": "pbdb",
@@ -110547,13 +110564,15 @@
               "max": 16
             }
           },
-          "erected_in": "ren2024a",
+          "erected_in": "ren2024b",
+          "described_in": "ren2024a",
           "type_specimen": {
             "specimen_id": [
               "DXJL2021001"
             ],
             "specimen_type": "holotype",
-            "institution": "Dongxing Municipal Bureau of Natural Resources"
+            "institution": "Dongxing Municipal Bureau of Natural Resources",
+            "material": "Two dorsal vertebrae, one sacral vertebra, three caudal vertebrae, left and right ulnae, and a right femur."
           },
           "authors": "Ren, X.-X.; Wang, X.-R.; Ji, Y.-N.; Guo, Z.; Ji, Q.",
           "described": 2024
@@ -110570,7 +110589,21 @@
           "volume": "37",
           "issue": "3",
           "pages": "465-478",
-          "doi": "10.1080/08912963.2024.2309287"
+          "doi": "10.1080/08912963.2024.2309287",
+          "notes": "Original description of the taxon, published under the genus name Jingia."
+        },
+        {
+          "id": "ren2024b",
+          "authors": "Ren, X.-X.; Wang, X.-R.; Ji, Y.-N.; Guo, Z.; Ji, Q.",
+          "year": 2024,
+          "title": "Addendum",
+          "journal": "Historical Biology",
+          "publisher": "Informa UK Limited",
+          "volume": "37",
+          "issue": "1",
+          "pages": "153",
+          "doi": "10.1080/08912963.2024.2325806",
+          "notes": "Established Jingiella as the replacement name for Jingia, preoccupied by a moth genus."
         },
         {
           "id": "jones2026b",
@@ -131147,6 +131180,15 @@
     "Mamenchisaurus": {
       "genus": "Mamenchisaurus",
       "parent": "Mamenchisauridae",
+      "dispute": {
+        "summary": "The composition of Mamenchisaurus is unsettled and the genus is poorly defined. Many species and fragmentary specimens have been referred to it over the years, several of them fragmentary and undiagnostic, and repeated analyses have failed to recover the genus as monophyletic (Moore and colleagues, 2020, 2023; Wang and colleagues, 2019). The type species, M. constructus, rests on fragmentary material that yields little character information: Moore and colleagues (2023) recovered no autapomorphies for it, found its phylogenetic position unstable, and regarded the forked mid-caudal chevrons long cited as diagnostic of the genus as possibly an artifact of reconstruction. It frequently falls outside the clade containing the other referred species (Dai and colleagues, 2025). Moore and colleagues (2023) placed M. sinocanadorum outside that clade as well, closest to Xinjiangtitan, but withheld taxonomic action pending a re-evaluation of the type species, and Dai and colleagues (2025) retained the generic name for their new species expressly to avoid further nomenclatural confusion. The referred species also span an implausible interval: Wang and colleagues (2019) dated the upper Suining Formation, the horizon of M. anyuensis, to 114.4 million years, some 30 million years younger than the Late Jurassic species, and called for a total re-evaluation of the genus. Moore and colleagues (2020) likewise failed to recover ZDM 0126 as sister to the M. hochuanensis holotype, casting doubt on that referral.\n",
+        "history": [
+          {
+            "date": "2026-07-19",
+            "note": "Retained at Mamenchisauridae with the referred species held as valid. Recent analyses recover the genus as non-monophyletic, but no author has yet proposed a replacement arrangement, so the existing combinations stand pending revision of the type species.\n"
+          }
+        ]
+      },
       "pronunciation": {
         "ipa": "/məˌmʌntʃiˈsɔːrəs/",
         "phonetic": "muh-MUN-chee-SOR-uhs, or spelling pronunciation"
@@ -131166,6 +131208,13 @@
         "integument": "scaled",
         "evidence": "inferred"
       },
+      "diagnostic_features": [
+        "Cervical and dorsal vertebrae highly pneumatic and procoelous; cervical vertebrae very large with dorsal neural spines relatively straight and low",
+        "Cervical ribs with a pronounced trough-like form and a broad, thin distal end",
+        "Dorsal vertebrae with relatively concave lateral surfaces",
+        "Anterior six or seven caudal vertebrae deeply procoelous; mid-caudal and posterior caudal vertebrae amphiplatyan",
+        "Chevrons of the mid-caudal region markedly bifurcated but not massive, remaining connected above, unlike the open-topped chevrons of Diplodocus"
+      ],
       "identifiers": [
         {
           "source": "pbdb",
@@ -131227,7 +131276,8 @@
               "IVPP V 790"
             ],
             "specimen_type": "holotype",
-            "institution": "Institute of Vertebrate Paleontology and Paleoanthropology"
+            "institution": "Institute of Vertebrate Paleontology and Paleoanthropology",
+            "material": "Fourteen cervical vertebrae, five dorsal vertebrae, thirty caudal vertebrae with ribs and chevrons, fragmentary ilium, partial right femur, complete right tibia and fibula, right astragalus, and partial right pes."
           },
           "erected_in": "young1954a",
           "authors": "Young, C.-C.",
@@ -131375,6 +131425,48 @@
           "erected_in": "pi1996a",
           "authors": "Pi, L.; Ou, Y.; Ye, Y.",
           "described": 1996
+        },
+        {
+          "name": "Mamenchisaurus sanjiangensis",
+          "etymology": "From Chinese Pinyin 'sanjiang' (three rivers), for the type locality at the confluence of the Jialing, Fu, and Qu Rivers in Hechuan District.",
+          "status": "valid",
+          "type_species": false,
+          "period": {
+            "name": [
+              "Late Jurassic"
+            ],
+            "stage": [
+              "Oxfordian"
+            ],
+            "from_ma": 161.5,
+            "to_ma": 157.3
+          },
+          "location": {
+            "country": "CN",
+            "region": "Chongqing",
+            "formation": "Shaximiao",
+            "locality": "Hechuan District"
+          },
+          "type_specimen": {
+            "specimen_id": [
+              "CIP V0001"
+            ],
+            "specimen_type": "holotype",
+            "institution": "Chongqing Institute of Paleontology",
+            "material": "Two cervical vertebrae, twelve dorsal vertebrae, five sacral vertebrae, four caudal vertebrae, left and right ilia, pubes and ischia, and the left femur, tibia, and fibula."
+          },
+          "diagnostic_features": [
+            "Additional fossa on the base of the prezygodiapophyseal lamina of the posterior cervical and anterior dorsal vertebrae (autapomorphy)",
+            "Accessory lamina extending from the prezygapophysis to the diapophysis on the anterior dorsal vertebrae (autapomorphy)",
+            "Several accessory laminae divide the spinodiapophyseal fossa of the dorsal vertebrae, and the spinodiapophyseal lamina is bifurcated dorsally from the third to seventh dorsal, the two branches forming the lateral margins of a secondary deep fossa (autapomorphy)",
+            "Epipophyseal-prezygapophyseal lamina preserved on the posterior cervical and anterior dorsal vertebrae",
+            "Height of the neural arch relative to the posterior centrum articular surface increases prominently from the anterior to the posterior dorsal series",
+            "Five sacral vertebrae completely fused, the distal portion of the neural spines platform-shaped, with lateral excavation on the sacrals",
+            "Dorsal margin of the ilium semicircular; femoral head dorsoventrally projected, with a transverse width to anteroposterior length ratio of about 2.6 at the femoral mid-shaft"
+          ],
+          "erected_in": "dai2025b",
+          "authors": "Dai, H.; Hu, X.-F.; Tan, C.; Ren, X.-X.; Ma, Q.-Y.; Wei, G.-B.; You, H.-L.",
+          "described": 2025
         }
       ],
       "notable_specimens": [
@@ -131478,6 +131570,30 @@
           "book": "Papers on Geosciences Contributed to the 30th International Geological Congress",
           "pages": "87-91",
           "notes": "Erects Mamenchisaurus youngi on holotype ZDM 0083 from the Shaximiao Formation of Zigong, Sichuan."
+        },
+        {
+          "id": "wang2019c",
+          "authors": "Wang, J.; Norell, M. A.; Pei, R.; Ye, Y.; Chang, S.-C.",
+          "year": 2019,
+          "title": "Surprisingly young age for the mamenchisaurid sauropods in South China",
+          "journal": "Cretaceous Research",
+          "publisher": "Elsevier BV",
+          "volume": "104",
+          "pages": "104176",
+          "doi": "10.1016/j.cretres.2019.07.006",
+          "notes": "Dates the upper Suining Formation, the horizon of M. anyuensis, to 114.4 million years, some 30 million years younger than the Late Jurassic species of the genus."
+        },
+        {
+          "id": "dai2025b",
+          "authors": "Dai, H.; Hu, X.-F.; Tan, C.; Ren, X.-X.; Ma, Q.-Y.; Wei, G.-B.; You, H.-L.",
+          "year": 2025,
+          "title": "A new mamenchisaurid sauropod dinosaur from the Upper Jurassic of Southwest China reveals new evolutionary evidence from East Asian eusauropods",
+          "journal": "Scientific Reports",
+          "publisher": "Springer Science and Business Media LLC",
+          "volume": "15",
+          "issue": "1",
+          "doi": "10.1038/s41598-025-29995-z",
+          "notes": "Erects Mamenchisaurus sanjiangensis on holotype CIP V0001 from the Shaximiao Formation of Chongqing; retains the generic name to avoid further nomenclatural confusion."
         }
       ],
       "taxonomy": [
@@ -160477,6 +160593,12 @@
         "integument": "scaled",
         "evidence": "inferred"
       },
+      "diagnostic_features": [
+        "Transverse width of the centrum of the posterior dorsal vertebrae approximately twice the maximum dorsoventral depth",
+        "Dorsal centra strongly depressed",
+        "Midposterior and posterior caudal vertebrae with anteroposteriorly elongated and dorsoventrally depressed neural spines",
+        "In midposterior and posterior caudals, the anterior end of the neural spine is positioned higher than the posterior end"
+      ],
       "identifiers": [
         {
           "source": "pbdb",
@@ -160536,7 +160658,8 @@
               "MPCA 1500"
             ],
             "specimen_type": "holotype",
-            "institution": "Museo provincial de Cipolletti \"Carlos Ameghino\""
+            "institution": "Museo provincial de Cipolletti \"Carlos Ameghino\"",
+            "material": "Four dorsal vertebral centra, twenty-six incomplete caudal vertebrae, and an incomplete right femur"
           },
           "erected_in": "salgado1996a",
           "authors": "Salgado, L.",
@@ -176524,6 +176647,14 @@
         "integument": "scaled",
         "evidence": "inferred"
       },
+      "diagnostic_features": [
+        "Femur relatively straight in dorsal view",
+        "Femoral head projects medially, forming a right angle with the shaft",
+        "Humerus robust, with a broad internal tuberosity and deltopectoral crest, and a short diaphysis constrained by the proximal and distal expansions",
+        "Ilium robust, with a broad posterior projection, the preacetabular process only slightly longer than the postacetabular process",
+        "Pubis with straight lateral and medial edges",
+        "Tibia plus astragalus length equal to 90% of femur length, humerus equal to 80% of femur length, and humerus plus radius equal to 67% of femur plus tibia length"
+      ],
       "identifiers": [
         {
           "source": "pbdb",
@@ -176576,7 +176707,8 @@
               "PVL 3808"
             ],
             "specimen_type": "holotype",
-            "institution": "Colección de Paleontologia de Vertebrados de la Fundación Instituto Miguel Lillo"
+            "institution": "Colección de Paleontologia de Vertebrados de la Fundación Instituto Miguel Lillo",
+            "material": "Most of a postcranial skeleton, lacking any cranial remains."
           },
           "size": {
             "hip_height_m": {
