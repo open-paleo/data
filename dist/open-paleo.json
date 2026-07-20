@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-07-20T22:37:19.906Z",
+    "built_at": "2026-07-20T23:00:26.977Z",
     "clade_count": 188,
     "genus_count": 1401,
     "license": "CC-BY-4.0",
@@ -55539,7 +55539,16 @@
         "phonetic": "Jin-gang-kou"
       },
       "etymology": "Named after Ch'ing-kang-kou (Wade-Giles romanization; pinyin: Jin-gang-kou, meaning 'diamond port', Chinese: 金刚口), the village in Shandong Province, China where it was found, combined with Greek sauros meaning 'lizard'. Full meaning: 'Chingkangkou lizard'.",
-      "description": "Chingkankousaurus is a genus of theropod dinosaur containing the single species Chingkankousaurus fragilis. C. fragilis is known only from a single fossilized bone fragment (specimen number IVPP V836) from the late Cretaceous Period Wangshi Series of Shandong province in eastern China.",
+      "description": "Chingkankousaurus is a genus of theropod dinosaur containing the single species Chingkankousaurus fragilis. C. fragilis is known only from a single fossilized bone fragment (specimen number IVPP V 836) from the late Cretaceous Period Wangshi Series of Shandong province in eastern China.",
+      "dispute": {
+        "summary": "Chingkankousaurus fragilis is a nomen dubium based on the posterior part of a single right scapula (IVPP V 836) from the Late Cretaceous of Shandong, China. Brusatte et al. (2013) upheld its identification as a scapula and placed it within Tyrannosauroidea, more derived than Guanlong and Dilong, but found no autapomorphies or unique character combination to diagnose the specimen. Holtz (2004) had referred it to Tarbosaurus and treated the species as a nomen dubium; Brusatte et al. (2013) considered that referral possible but unprovable, retaining the specimen as an indeterminate tyrannosauroid.\n",
+        "history": [
+          {
+            "date": "2026-07-20",
+            "note": "Species status set to nomen dubium following Brusatte et al. (2013), who found no diagnostic features on the holotype scapula but confirmed a tyrannosauroid placement."
+          }
+        ]
+      },
       "diet": "carnivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -55566,7 +55575,7 @@
         {
           "name": "Chingkankousaurus fragilis",
           "etymology": "From Latin 'fragilis' meaning 'fragile', referring to the delicate or fragmentary nature of the known fossil material.",
-          "status": "valid",
+          "status": "nomen dubium",
           "type_species": true,
           "period": {
             "name": [
@@ -55580,6 +55589,7 @@
           },
           "location": {
             "country": "CN",
+            "locality": "Laiyang",
             "region": "Shandong",
             "formation": "Jingangkou",
             "coordinates": [
@@ -55589,12 +55599,15 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "IVPP V836"
+              "IVPP V 836"
             ],
             "specimen_type": "holotype",
-            "institution": "Institute of Vertebrate Paleontology and Paleoanthropology"
+            "institution": "Institute of Vertebrate Paleontology and Paleoanthropology",
+            "material": "Posterior end of a right scapula.",
+            "completeness": "fragmentary"
           },
           "erected_in": "young1958a",
+          "described_in": "brusatte2013a",
           "authors": "Young, C.-C.",
           "described": 1958
         }
@@ -55608,7 +55621,17 @@
           "journal": "Palaeontologia Sinica, New Series C, Whole Number",
           "volume": "42",
           "issue": "16",
-          "pages": "1-138"
+          "pages": "1-138",
+          "notes": "Original description of Chingkankousaurus fragilis, based on the scapula IVPP V 836."
+        },
+        {
+          "id": "brusatte2013a",
+          "authors": "Brusatte, S. L.; Hone, D. W. E.; Xu, X.",
+          "year": 2013,
+          "title": "Phylogenetic revision of Chingkankousaurus fragilis, a forgotten tyrannosauroid specimen from the Late Cretaceous of China",
+          "book": "Tyrannosaurid Paleobiology",
+          "publisher": "Indiana University Press",
+          "notes": "Phylogenetic revision confirming the holotype as a tyrannosauroid scapula and the species as a nomen dubium lacking diagnostic features."
         }
       ],
       "taxonomy": [
