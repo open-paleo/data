@@ -8,8 +8,24 @@ etymology: "Named after Ch'ing-kang-kou (Wade-Giles romanization; pinyin:
   'lizard'. Full meaning: 'Chingkangkou lizard'."
 description: Chingkankousaurus is a genus of theropod dinosaur containing the
   single species Chingkankousaurus fragilis. C. fragilis is known only from a
-  single fossilized bone fragment (specimen number IVPP V836) from the late
+  single fossilized bone fragment (specimen number IVPP V 836) from the late
   Cretaceous Period Wangshi Series of Shandong province in eastern China.
+dispute:
+  summary: >
+    Chingkankousaurus fragilis is a nomen dubium based on the posterior part
+    of a single right scapula (IVPP V 836) from the Late Cretaceous of
+    Shandong, China. Brusatte et al. (2013) upheld its identification as a
+    scapula and placed it within Tyrannosauroidea, more derived than Guanlong
+    and Dilong, but found no autapomorphies or unique character combination to
+    diagnose the specimen. Holtz (2004) had referred it to Tarbosaurus and
+    treated the species as a nomen dubium; Brusatte et al. (2013) considered
+    that referral possible but unprovable, retaining the specimen as an
+    indeterminate tyrannosauroid.
+  history:
+    - date: "2026-07-20"
+      note: Species status set to nomen dubium following Brusatte et al.
+        (2013), who found no diagnostic features on the holotype scapula but
+        confirmed a tyrannosauroid placement.
 diet: carnivore
 locomotion: bipedal
 paleoenvironment:
@@ -27,7 +43,7 @@ species:
   - name: Chingkankousaurus fragilis
     etymology: "From Latin 'fragilis' meaning 'fragile', referring to the delicate
       or fragmentary nature of the known fossil material."
-    status: valid
+    status: nomen dubium
     type_species: true
     period:
       name:
@@ -38,15 +54,24 @@ species:
       to_ma: 72.2
     location:
       country: CN
+      locality: Laiyang
       region: Shandong
       formation: Jingangkou
       coordinates:
         - 36.886539
         - 120.658951
     type_specimen:
-      specimen_id: [ IVPP V836 ]
+      specimen_id: [ IVPP V 836 ]
       specimen_type: holotype
       institution: IVPP
+      material: Posterior end of a right scapula.
+      completeness: fragmentary
     erected_in: young1958a
+    described_in: brusatte2013a
 references:
   - id: young1958a
+    notes: Original description of Chingkankousaurus fragilis, based on the
+      scapula IVPP V 836.
+  - id: brusatte2013a
+    notes: Phylogenetic revision confirming the holotype as a tyrannosauroid
+      scapula and the species as a nomen dubium lacking diagnostic features.
