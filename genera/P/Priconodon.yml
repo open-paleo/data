@@ -12,10 +12,24 @@ description: Priconodon is an extinct genus of ankylosaurian dinosaur (perhaps
   scarcity of described remains.
 dispute:
   summary: >
-    Priconodon is known only from teeth and is widely regarded as an indistinct nomen dubium (Vickaryous et al., 2004), though not universally. It is retained at Ankylosauria incertae sedis.
+    The validity of Priconodon crassus is contested. It is known essentially
+    only from teeth, with a referred tibia, from the Arundel Formation of
+    Maryland. Carpenter and Kirkland (1998) accepted it as a valid nodosaurid
+    and gave a revised tooth-based diagnosis, West and Tibert (2004) argued from
+    a morphometric analysis that it is a distinct taxon, and Coombs (1978) had
+    earlier treated it as valid; other workers have instead listed it as a nomen
+    dubium without comment (Olshevsky, 1991; Ford, 2000; Vickaryous et al.,
+    2004). Arbour and Currie (2015) summarized this disagreement. It is retained
+    at Ankylosauria incertae sedis pending resolution.
   history:
     - date: "2026-06-26"
       note: Placed at Ankylosauria incertae sedis, tooth-based and largely indeterminate.
+    - date: "2026-07-21"
+      note: Status set to disputed — the taxon is genuinely contested between
+        substantive pro-valid treatments (Carpenter and Kirkland, 1998; West and
+        Tibert, 2004) and label-only nomen-dubium listings (Olshevsky, 1991;
+        Ford, 2000; Vickaryous et al., 2004). Holotype corrected from USNM 9154
+        to USNM 2135 (Carpenter and Kirkland, 1998; West and Tibert, 2004).
 diet: herbivore
 locomotion: quadrupedal
 paleoenvironment:
@@ -34,7 +48,7 @@ identifiers:
 species:
   - name: Priconodon crassus
     etymology: "From Latin 'crassus' meaning 'dense' or 'thick'."
-    status: valid
+    status: disputed
     type_species: true
     period:
       name:
@@ -51,13 +65,27 @@ species:
         - 39.030499
         - -76.8694
     type_specimen:
-      specimen_id: [USNM 9154]
+      specimen_id: [USNM 2135]
       specimen_type: holotype
       institution: USNM
-      material: Tooth (type specimen) and fragmentary remains
+      material: A worn tooth.
       completeness: fragmentary
     erected_in: marsh1888a
 references:
   - id: marsh1888a
+    notes: Erected Priconodon crassus on a tooth from the Arundel Formation of
+      Maryland.
+  - id: olshevsky1991a
+    notes: Listed Priconodon crassus as a nomen dubium.
+  - id: carpenter1998c
+    notes: Accepted Priconodon as a valid nodosaurid and provided a revised,
+      tooth-based diagnosis.
+  - id: ford2000a
+    notes: Listed Priconodon crassus as a nomen dubium.
   - id: vickaryous2004a
-    notes: Regarded Priconodon as an indistinct nomen dubium.
+    notes: Listed Priconodon among nomina dubia as an indistinct tooth taxon.
+  - id: west2004a
+    notes: Argued from a morphometric analysis of the type material that
+      Priconodon crassus is a distinct taxon.
+  - id: arbour2015a
+    notes: Summarized the disagreement over the validity of Priconodon crassus.
