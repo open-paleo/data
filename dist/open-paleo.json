@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-07-21T19:19:32.232Z",
+    "built_at": "2026-07-21T19:55:43.189Z",
     "clade_count": 188,
     "genus_count": 1401,
     "license": "CC-BY-4.0",
@@ -73299,11 +73299,15 @@
       "genus": "Dyslocosaurus",
       "parent": "Dicraeosauridae",
       "dispute": {
-        "summary": "Dyslocosaurus is known from fragmentary limb material originally described as a diplodocid (McIntosh et al., 1992). A recent analysis tentatively recovers it as a dicraeosaurid (Tschopp et al., 2015), but the material is poor and possibly composite, and some workers regard the genus as a nomen dubium, with a suggestion that the holotype combines titanosaur and theropod elements.\n",
+        "summary": "Dyslocosaurus is known only from fragmentary appendicular material, originally described as a diplodocid (McIntosh et al., 1992), and the association of that material has been questioned. Wilson and Sereno (1998) argued that two pedal phalanges and a small ungual are non-sauropod bones that do not belong with the specimen, while Tschopp et al. (2015) separately judged one pes phalanx to have been collected apart from the rest and excluded it. Both nonetheless retained the remainder as a valid taxon; Tschopp et al. (2015) found it diagnostic — uniting apatosaurine, diplodocine, and dicraeosaurid traits — and recovered it as the most basal dicraeosaurid.\n",
         "history": [
           {
             "date": "2026-06-30",
             "note": "Placed at Dicraeosauridae following the tentative assignment of Tschopp et al. (2015); the fragmentary, possibly composite holotype and the nomen dubium concern are noted.\n"
+          },
+          {
+            "date": "2026-07-21",
+            "note": "Dispute corrected and status kept valid — the chimeric elements are non-sauropod pedal bones (Wilson and Sereno, 1998), not \"titanosaur and theropod\" bones; both Wilson and Sereno (1998) and Tschopp et al. (2015) retain the remainder as a valid taxon, so the unsupported nomen-dubium framing was removed."
           }
         ]
       },
@@ -73320,9 +73324,7 @@
       ],
       "diagnostic_features": [
         "Proximodistal length of astragalus equal to about 50% of transverse breadth, a higher percentage than in other diplodocids.",
-        "Metatarsals with greater shaft circumference relative to length than in other diplodocids.",
-        "Ungual phalanx present on digit IV of pes, unique among Diplodocidae.",
-        "Possible ungual phalanx on digit V of pes, which if confirmed would be unique among all known Sauropoda."
+        "Metatarsals with greater shaft circumference relative to length than in other diplodocids."
       ],
       "appearance": {
         "features": [
@@ -73436,7 +73438,18 @@
           "volume": "3",
           "pages": "e857",
           "doi": "10.7717/peerj.857",
-          "notes": "Tentatively recovered Dyslocosaurus as a dicraeosaurid."
+          "notes": "Found the holotype diagnostic and Dyslocosaurus a valid taxon, recovering it as the most basal dicraeosaurid."
+        },
+        {
+          "id": "wilson1998a",
+          "authors": "Wilson, J. A.; Sereno, P. C.",
+          "year": 1998,
+          "title": "Early evolution and higher-level phylogeny of sauropod dinosaurs",
+          "journal": "Memoir (Society of Vertebrate Paleontology)",
+          "volume": "5",
+          "pages": "1-68",
+          "doi": "10.2307/3889325",
+          "notes": "Argued that two pedal phalanges and a small ungual of the Dyslocosaurus holotype are non-sauropod bones and should not be associated with it, while accepting the remainder."
         }
       ],
       "taxonomy": [
