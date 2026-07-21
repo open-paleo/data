@@ -2,14 +2,23 @@ genus: Kaijiangosaurus
 parent: Tetanurae
 dispute:
   summary: >
-    Kaijiangosaurus lini was described only in a 1984 book and has never been the
-    subject of a peer-reviewed redescription or dedicated phylogenetic analysis; it is
-    most likely a basal tetanuran (Carrano, Benson and Sampson, 2012) and has been
-    suggested to be synonymous with the contemporaneous Gasosaurus constructus. It is
-    placed conservatively at Tetanurae incertae sedis.
+    The validity of Kaijiangosaurus lini is unresolved. It was described only in
+    a 1984 book, on a holotype of seven cervical vertebrae (CCG 20020), and has
+    never been the subject of a peer-reviewed redescription. Rauhut (2003)
+    regarded it as a nomen dubium, whereas Carrano, Benson and Sampson (2012)
+    treated it as a fragmentary taxon requiring restudy — noting that the
+    referred material may not all belong to one taxon — and suggested a basal
+    tetanuran or averostran placement without declaring it dubious. Paul (2024)
+    suggested it may be a junior synonym of the contemporaneous Gasosaurus
+    constructus. It is placed conservatively at Tetanurae incertae sedis.
   history:
     - date: "2026-07-02"
       note: Placed at Tetanurae incertae sedis; its validity relative to Gasosaurus is unresolved.
+    - date: "2026-07-20"
+      note: Status set to disputed and the dispute expanded — Rauhut (2003)
+        regards it as a nomen dubium, Carrano and colleagues (2012) treat it as
+        a fragmentary taxon needing restudy, and Paul (2024) suggests synonymy
+        with Gasosaurus.
 pronunciation:
   phonetic: KIE-JYAHNG-o-SAWR-us
 etymology: Named after the Kai River (Kaijiang) in Sichuan, China; meaning
@@ -37,7 +46,7 @@ identifiers:
 species:
   - name: Kaijiangosaurus lini
     etymology: "Named for the paleontologist Lin Wenqiu."
-    status: valid
+    status: disputed
     type_species: true
     period:
       name:
@@ -58,8 +67,19 @@ species:
       specimen_id: [ CCG 20020 ]
       specimen_type: holotype
       institution: CCG
+      material: Seven cervical vertebrae.
+      completeness: fragmentary
     erected_in: he1984a
 references:
   - id: he1984a
+    notes: Original description of Kaijiangosaurus lini in a 1984 book on the
+      vertebrate fossils of Sichuan.
+  - id: rauhut2003b
+    notes: Regarded Kaijiangosaurus lini as a nomen dubium.
   - id: carrano2012a
-    notes: Tetanuran phylogeny consistent with Kaijiangosaurus as a basal tetanuran.
+    notes: Treated Kaijiangosaurus as a fragmentary taxon requiring restudy,
+      suggesting a basal tetanuran or averostran placement and noting the
+      referred material may not represent a single taxon.
+  - id: paul2024b
+    notes: Suggested Kaijiangosaurus may be a junior synonym of Gasosaurus
+      constructus.
