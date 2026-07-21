@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-21T21:21:08.083Z
+  built_at: 2026-07-21T21:59:55.084Z
   clade_count: 188
   genus_count: 1401
   license: CC-BY-4.0
@@ -129437,10 +129437,12 @@ genera:
     description: Priconodon is an extinct genus of ankylosaurian dinosaur (perhaps nodosaurid), mainly known from its large teeth. Its remains have been found in the Early Cretaceous (Aptian-Albian age) Arundel Formation of Muirkirk, Prince George's County, Maryland, USA, and possibly the Potomac Group, also located in Maryland. As an ankylosaur, Priconodon would have been a large armored quadrupedal herbivore, though no size estimation has been done due to the scarcity of described remains.
     dispute:
       summary: |
-        Priconodon is known only from teeth and is widely regarded as an indistinct nomen dubium (Vickaryous et al., 2004), though not universally. It is retained at Ankylosauria incertae sedis.
+        The validity of Priconodon crassus is contested. It is known essentially only from teeth, with a referred tibia, from the Arundel Formation of Maryland. Carpenter and Kirkland (1998) accepted it as a valid nodosaurid and gave a revised tooth-based diagnosis, West and Tibert (2004) argued from a morphometric analysis that it is a distinct taxon, and Coombs (1978) had earlier treated it as valid; other workers have instead listed it as a nomen dubium without comment (Olshevsky, 1991; Ford, 2000; Vickaryous et al., 2004). Arbour and Currie (2015) summarized this disagreement. It is retained at Ankylosauria incertae sedis pending resolution.
       history:
         - date: 2026-06-26
           note: Placed at Ankylosauria incertae sedis, tooth-based and largely indeterminate.
+        - date: 2026-07-21
+          note: Status set to disputed — the taxon is genuinely contested between substantive pro-valid treatments (Carpenter and Kirkland, 1998; West and Tibert, 2004) and label-only nomen-dubium listings (Olshevsky, 1991; Ford, 2000; Vickaryous et al., 2004). Holotype corrected from USNM 9154 to USNM 2135 (Carpenter and Kirkland, 1998; West and Tibert, 2004).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -129458,7 +129460,7 @@ genera:
     species:
       - name: Priconodon crassus
         etymology: From Latin 'crassus' meaning 'dense' or 'thick'.
-        status: valid
+        status: disputed
         type_species: true
         period:
           name:
@@ -129476,10 +129478,10 @@ genera:
             - -76.8694
         type_specimen:
           specimen_id:
-            - USNM 9154
+            - USNM 2135
           specimen_type: holotype
           institution: National Museum of Natural History, Smithsonian Institution
-          material: Tooth (type specimen) and fragmentary remains
+          material: A worn tooth.
           completeness: fragmentary
         erected_in: marsh1888a
         authors: Marsh, O. C.
@@ -129495,6 +129497,31 @@ genera:
         issue: "205"
         pages: 89-94
         doi: 10.2475/ajs.s3-35.205.89
+        notes: Erected Priconodon crassus on a tooth from the Arundel Formation of Maryland.
+      - id: olshevsky1991a
+        authors: Olshevsky, G.
+        year: 1991
+        title: A revision of the parainfraclass Archosauria Cope, 1869, excluding the advanced Crocodylia
+        journal: Mesozoic Meanderings
+        volume: "2"
+        pages: 1-196
+        notes: Listed Priconodon crassus as a nomen dubium.
+      - id: carpenter1998c
+        authors: Carpenter, K.; Kirkland, J. I.
+        year: 1998
+        title: Review of Lower and Middle Cretaceous ankylosaurs from North America
+        journal: Lower and Middle Cretaceous Terrestrial Ecosystems. New Mexico Museum of Natural History and Science Bulletin
+        volume: "14"
+        pages: 249-270
+        notes: Accepted Priconodon as a valid nodosaurid and provided a revised, tooth-based diagnosis.
+      - id: ford2000a
+        authors: Ford, T. L.
+        year: 2000
+        title: A review of ankylosaur osteoderms from New Mexico and a preliminary review of ankylosaur armor
+        journal: Dinosaurs of New Mexico. New Mexico Museum of Natural History and Science Bulletin
+        volume: "17"
+        pages: 157-176
+        notes: Listed Priconodon crassus as a nomen dubium.
       - id: vickaryous2004a
         authors: Vickaryous, M. K.; Maryańska, T.; Weishampel, D. B.
         year: 2004
@@ -129502,7 +129529,26 @@ genera:
         book: The Dinosauria, 2nd edition
         publisher: University of California Press
         pages: 363-392
-        notes: Regarded Priconodon as an indistinct nomen dubium.
+        notes: Listed Priconodon among nomina dubia as an indistinct tooth taxon.
+      - id: west2004a
+        authors: West, A.; Tibert, N.
+        year: 2004
+        title: "Quantitative analysis for the type material of Priconodon crassus: a distinct taxon from the Arundel Formation in southern Maryland"
+        journal: Geological Society of America Abstracts with Programs
+        volume: "36"
+        pages: "423"
+        notes: Argued from a morphometric analysis of the type material that Priconodon crassus is a distinct taxon.
+      - id: arbour2015a
+        authors: Arbour, V. M.; Currie, P. J.
+        year: 2015
+        title: Systematics, phylogeny and palaeobiogeography of the ankylosaurid dinosaurs
+        journal: Journal of Systematic Palaeontology
+        publisher: Informa UK Limited
+        volume: "14"
+        issue: "5"
+        pages: 385-444
+        doi: 10.1080/14772019.2015.1059985
+        notes: Summarized the disagreement over the validity of Priconodon crassus.
     taxonomy:
       - Life
       - Animalia
