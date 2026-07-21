@@ -2,13 +2,25 @@ genus: Riparovenator
 parent: Baryonychinae
 dispute:
   summary: >
-    Riparovenator milnerae is a baryonychine spinosaurid, sister to Ceratosuchops
-    in the tribe Ceratosuchopsini as originally described (Barker et al., 2021)
-    and recovered as a baryonychine by Rauhut et al. (2025). Jones (2026) notes
-    it may be conspecific with Ceratosuchops.
+    Riparovenator milnerae was erected as a distinct baryonychine spinosaurid,
+    sister to the co-occurring Ceratosuchops inferodios (Barker et al., 2021),
+    and both were kept distinct by Rauhut et al. (2025). Its distinctness as a
+    genus is contested, however: Sereno et al. (2022) tentatively referred the
+    Wessex baryonychine material to a single taxon, Ceratosuchops, attributing
+    the differences to individual variation, and Santos-Cubedo et al. (2023)
+    followed that synonymy by omitting Riparovenator from their count of valid
+    baryonychine genera, while Cau (2025) left the question open pending a
+    detailed comparative analysis. Its status as a genus distinct from
+    Ceratosuchops therefore remains unresolved.
   history:
     - date: "2026-07-01"
       note: Placed at Baryonychinae following Barker et al. (2021) and Rauhut et al. (2025) (P2/P4; the tribe Ceratosuchopsini is not retained); the proposed synonymy with Ceratosuchops is unresolved.
+    - date: "2026-07-21"
+      note: Status set to disputed — Riparovenator's distinctness from
+        Ceratosuchops is genuinely unresolved (kept distinct by Barker et al.,
+        2021, and Rauhut et al., 2025; tentatively synonymized by Sereno et al.,
+        2022, and Santos-Cubedo et al., 2023; left open by Cau, 2025). The
+        difference is treated as individual, not ontogenetic, variation.
 pronunciation:
   phonetic: ri-PAIR-o-ven-AY-tor
 etymology: From Latin riparius (of the riverbank) and venator (hunter); meaning "riverbank hunter".
@@ -49,7 +61,7 @@ identifiers:
 species:
   - name: Riparovenator milnerae
     etymology: "Named for Angela Milner, a British paleontologist who died in August 2021, shortly before the species was formally described."
-    status: valid
+    status: disputed
     type_species: true
     period:
       name:
@@ -82,7 +94,18 @@ notable_specimens:
     references: [barker2021a]
 references:
   - id: barker2021a
+    notes: Erected Riparovenator milnerae as a distinct baryonychine spinosaurid,
+      sister to Ceratosuchops.
+  - id: sereno2022a
+    notes: Tentatively referred the Wessex baryonychine material to a single
+      taxon, Ceratosuchops, treating Riparovenator's distinguishing features as
+      individual variation.
+  - id: santos-cubedo2023a
+    notes: Followed the synonymy of Sereno et al. (2022), omitting Riparovenator
+      from their count of valid baryonychine genera.
   - id: rauhut2025a
-    notes: Revision recovered Riparovenator as a baryonychine spinosaurid.
-  - id: jones2026c
-    notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+    notes: Recovered Riparovenator as a baryonychine spinosaurid, keeping it
+      distinct from Ceratosuchops.
+  - id: cau2025a
+    notes: Left the Riparovenator–Ceratosuchops synonymy open, deferring to a
+      future detailed comparison.
