@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-21T21:01:34.564Z
+  built_at: 2026-07-21T21:21:08.083Z
   clade_count: 188
   genus_count: 1401
   license: CC-BY-4.0
@@ -46452,11 +46452,13 @@ genera:
     parent: Abelisauroidea
     dispute:
       summary: |
-        Coeluroides is known from caudal vertebrae and is usually regarded as a nomen dubium, although Novas and colleagues (2004) considered it possibly a valid indeterminate abelisauroid.
+        Coeluroides largus is based on a few vertebrae from the Lameta Formation and is widely regarded as a nomen dubium (Olshevsky, 1991; Tykoski and Rowe, 2004). Carrano and Sampson (2008) found the material too fragmentary for specific diagnosis and argued that the Lameta theropod assemblage is likely over-split, with Coeluroides and several other named taxa probably representing only one or two abelisaurids. Novas and colleagues (2004) left its validity open, noting only that it may represent a valid indeterminate abelisauroid — a weak and isolated case. It is retained as a nomen dubium.
       history:
         - date: 2026-06-30
           note: |
             Placed at Abelisauroidea incertae sedis.
+        - date: 2026-07-21
+          note: Dispute expanded and kept nomen dubium — Olshevsky (1991), Tykoski and Rowe (2004), and Carrano and Sampson (2008, over-split argument) treat it as dubious/indeterminate, against only a weak "may be valid" from Novas and colleagues (2004).
     etymology: From Coelurus (a related theropod genus, itself from Greek 'koilos' (hollow) and 'oura' (tail)) and Greek '-oides' (resembling); meaning 'Coelurus-like'.
     pronunciation:
       phonetic: see-loo-ROY-deez
@@ -46466,11 +46468,6 @@ genera:
     locomotion: bipedal
     paleoenvironment:
       - fluvial
-    diagnostic_features:
-      - Mid-caudal vertebrae with wide, almost horizontally oriented and well-separated pre- and postzygapophyses.
-      - Transverse processes notably expanded and triangular in outline, deeply excavated on their dorsal surface.
-      - Axially extended neural-spine base on mid-caudals.
-      - Centra of caudal vertebrae 9-11 cm long; centrum well rounded in transverse section near the articular face and in the middle, fairly narrow at mid-length.
     appearance:
       integument: scaled
       evidence: inferred
@@ -46522,6 +46519,23 @@ genera:
         issue: "1"
         pages: 1-74
         notes: Original description of Coeluroides largus on three vertebrae from the Lameta Formation. The authors identified the elements as dorsal vertebrae; later workers recognized them as caudals.
+      - id: olshevsky1991a
+        authors: Olshevsky, G.
+        year: 1991
+        title: A revision of the parainfraclass Archosauria Cope, 1869, excluding the advanced Crocodylia
+        journal: Mesozoic Meanderings
+        volume: "2"
+        pages: 1-196
+        notes: Listed Coeluroides largus as a nomen dubium.
+      - id: wilson2003a
+        authors: Wilson, J. A.; Sereno, P. C.; Srivastava, S.; Bhatt, D. K.; Khosla, A.; Sahni, A.
+        year: 2003
+        title: A new abelisaurid (Dinosauria, Theropoda) from the Lameta Formation (Cretaceous, Maastrichtian) of India
+        journal: Contributions from the Museum of Paleontology, University of Michigan
+        volume: "31"
+        issue: "1"
+        pages: 1-42
+        notes: Grouped Coeluroides among Lameta theropods based on bones of dubious association or immature individuals.
       - id: novas2004b
         authors: Novas, F. E.; Agnolín, F. L.; Bandyopadhyay, S.
         year: 2004
@@ -46532,6 +46546,25 @@ genera:
         pages: 67-103
         doi: 10.22179/REVMACN.6.74
         notes: Follows Welles (1984) and Molnar (1990) in treating the type vertebrae as caudals. Leaves the validity of C. largus open, noting it may be a valid indeterminate abelisauroid.
+      - id: tykoski2004a
+        authors: Tykoski, R. S.; Rowe, T.
+        year: 2004
+        title: Ceratosauria
+        book: The Dinosauria, 2nd edition
+        publisher: University of California Press
+        pages: 47-70
+        isbn: 978-0-520-24209-8
+        notes: Listed Coeluroides largus among nomina dubia.
+      - id: carrano2008a
+        authors: Carrano, M. T.; Sampson, S. D.
+        year: 2008
+        title: "The Phylogeny of Ceratosauria (Dinosauria: Theropoda)"
+        journal: Journal of Systematic Palaeontology
+        volume: "6"
+        issue: "2"
+        pages: 183-236
+        doi: 10.1017/S1477201907002246
+        notes: Found the material too fragmentary for specific diagnosis and argued the Lameta theropod assemblage is likely over-split, with Coeluroides possibly among only one or two abelisaurids present.
     taxonomy:
       - Life
       - Animalia
