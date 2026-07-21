@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-07-20T23:22:36.793Z",
+    "built_at": "2026-07-21T03:10:55.226Z",
     "clade_count": 188,
     "genus_count": 1401,
     "license": "CC-BY-4.0",
@@ -139401,13 +139401,17 @@
         "phonetic": "MONG-kon-o-SAWR-us"
       },
       "etymology": "Named for Markam County (also known as Monko), the region of Tibet where the holotype was found, combined with Greek 'sauros' meaning 'lizard'.",
-      "description": "Monkonosaurus is a dubious genus of herbivorous stegosaurian dinosaur from the Late Jurassic/Early Cretaceous-aged Loe-ein Formation of Tibet (or the Early Cretaceous Lura Formation of China). Some sources place it as alive during the Oxfordian - Albian stages, around 163 - 100 million years ago, although Monkonosaurus was probably only alive during the Late Jurassic (163 - 152.1 ± 0.9 million years ago), making it among the earliest known stegosaurs along with Chungkingosaurus and Bashanosaurus.",
+      "description": "Monkonosaurus is a dubious genus of stegosaurian dinosaur from the Loe-ein Formation of eastern Tibet, of uncertain Late Jurassic to Early Cretaceous age. The type species is Monkonosaurus lawulacus.",
       "dispute": {
         "summary": "Monkonosaurus is a nomen dubium; its fragmentary material preserves no unique identifiable characters (Maidment and Wei, 2006). It is retained at Stegosauria incertae sedis.\n",
         "history": [
           {
             "date": "2026-06-26",
             "note": "Placed at Stegosauria incertae sedis, nomen dubium with no diagnostic features."
+          },
+          {
+            "date": "2026-07-20",
+            "note": "Species status set to nomen dubium and the holotype corrected to the unnumbered IVPP material following Maidment and Wei (2006); the inflated Oxfordian–Albian age narrowed to the Kimmeridgian–Hauterivian range given by Dong (1990) and Maidment and Wei (2006)."
           }
         ]
       },
@@ -139438,7 +139442,7 @@
         {
           "name": "Monkonosaurus lawulacus",
           "etymology": "Named for the Lawushan (Lawu mountains) in Tibet, the region where the holotype was found.",
-          "status": "valid",
+          "status": "nomen dubium",
           "type_species": true,
           "period": {
             "name": [
@@ -139446,18 +139450,14 @@
               "Early Cretaceous"
             ],
             "stage": [
-              "Oxfordian",
               "Kimmeridgian",
               "Tithonian",
               "Berriasian",
               "Valanginian",
-              "Hauterivian",
-              "Barremian",
-              "Aptian",
-              "Albian"
+              "Hauterivian"
             ],
-            "from_ma": 161.5,
-            "to_ma": 100.5
+            "from_ma": 157.3,
+            "to_ma": 129.4
           },
           "location": {
             "country": "CN",
@@ -139469,11 +139469,12 @@
             ]
           },
           "type_specimen": {
-            "specimen_id": [
-              "IVPP V 6975"
-            ],
             "specimen_type": "holotype",
-            "institution": "Institute of Vertebrate Paleontology and Paleoanthropology"
+            "institution": "Institute of Vertebrate Paleontology and Paleoanthropology",
+            "status": "uncatalogued",
+            "material": "Two partial vertebrae, three dermal plates, and a complete ilio-sacral block.",
+            "completeness": "fragmentary",
+            "notes": "The holotype was never assigned a catalogue number. Only the ilio-sacral block has been relocated at the IVPP, damaged since it was figured by Dong (1990); the vertebrae and dermal plates are now lost."
           },
           "size": {
             "length_m": {
@@ -139481,9 +139482,10 @@
               "max": 5
             }
           },
-          "erected_in": "zhao1986a",
-          "authors": "Zhao, X.",
-          "described": 1986
+          "erected_in": "dong1990b",
+          "described_in": "maidment2006a",
+          "authors": "Dong, Z.",
+          "described": 1990
         }
       ],
       "references": [
@@ -139495,7 +139497,18 @@
           "journal": "Ching-kuo Ti Pao o Hsi [The Cretaceous System of China. The Stratigraphy of China]",
           "publisher": "Geological Publishing House",
           "volume": "12",
-          "pages": "67-73"
+          "pages": "67-73",
+          "notes": "Established the binomial Monkonosaurus lawulacus without a description, leaving it a nomen nudum."
+        },
+        {
+          "id": "dong1990b",
+          "authors": "Dong, Z.",
+          "year": 1990,
+          "title": "Stegosaurs of Asia",
+          "book": "Dinosaur Systematics",
+          "publisher": "Cambridge University Press",
+          "pages": "255-268",
+          "notes": "First described the holotype, making the name available; the authorship is Monkonosaurus lawulacus Zhao in Dong, 1990."
         },
         {
           "id": "maidment2006a",
@@ -139508,7 +139521,7 @@
           "issue": "5",
           "pages": "621-634",
           "doi": "10.1017/s0016756806002500",
-          "notes": "Found no unique characters in Monkonosaurus, treating it as a nomen dubium."
+          "notes": "Reviewed the holotype, rejected each of the original diagnostic characters, and treated Monkonosaurus lawulacus as a nomen dubium."
         }
       ],
       "taxonomy": [
@@ -139526,8 +139539,8 @@
         "Thyreophora",
         "Stegosauria"
       ],
-      "authors": "Zhao, X.",
-      "described": 1986
+      "authors": "Dong, Z.",
+      "described": 1990
     },
     "Monoclonius": {
       "genus": "Monoclonius",
