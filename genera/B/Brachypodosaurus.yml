@@ -9,13 +9,23 @@ description: Brachypodosaurus is a dubious genus of dinosaur, possibly an
   India.
 dispute:
   summary: >
-    Brachypodosaurus is a nomen dubium based on a single humerus from the
-    Late Cretaceous of India; it has been referred to both Stegosauria and
-    Ankylosauria, but all identifications have been challenged and it
-    cannot be placed with confidence (Jones, 2026).
+    Brachypodosaurus is a nomen dubium based on a single humerus from the Late
+    Cretaceous Lameta Formation of India, and even its identification as a
+    dinosaurian humerus has been questioned. Chakravarti (1934) described it as
+    a stegosaur, but Wilson et al. (2003) noted that the Indian "stegosaur"
+    material shares no derived characters with Stegosauria. Later workers have
+    treated it as an indeterminate ankylosaur — Maryańska (1977) as
+    ?Ankylosauridae and Ford (2000) as Nodosauridae incertae sedis — while
+    Vickaryous et al. (2004) listed it among nomina dubia. The single humerus is
+    too incomplete to place with confidence.
   history:
     - date: "2026-06-29"
       note: Reparented from Thyreophora to Ornithischia incertae sedis; nomen dubium with all identifications challenged.
+    - date: "2026-07-20"
+      note: Dispute expanded across the literature — affinities range from
+        Stegosauria (Chakravarti, 1934, rejected by Wilson et al., 2003) to
+        indeterminate Ankylosauria (Maryańska, 1977; Ford, 2000), with the
+        humerus identification itself in doubt.
 diet: herbivore
 identifiers:
   - source: pbdb
@@ -44,10 +54,28 @@ species:
       coordinates:
         - 23.16
         - 79.95
+    type_specimen:
+      specimen_id: [ BHU V9 ]
+      specimen_type: holotype
+      institution: BHU
+      material: A single humerus.
+      completeness: fragmentary
     erected_in: chakravarti1934a
 references:
   - id: chakravarti1934a
     notes: Erects Brachypodosaurus gravis on a single humerus from the Lameta
       Formation near Jabalpur.
+  - id: maryańska1977a
+    notes: Listed Brachypodosaurus as a nomen dubium, referring the humerus
+      questionably to Ankylosauridae.
+  - id: wilson2003a
+    notes: Noted that the Indian "stegosaur" material, including
+      Brachypodosaurus, shares no derived characters with Stegosauria.
+  - id: vickaryous2004a
+    notes: Listed Brachypodosaurus among nomina dubia, its material a single
+      humerus.
+  - id: ford2000a
+    notes: Treated Brachypodosaurus as Nodosauridae incertae sedis and a nomen
+      dubium.
   - id: jones2026a
     notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
