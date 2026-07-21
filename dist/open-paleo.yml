@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-21T17:38:51.826Z
+  built_at: 2026-07-21T19:17:22.499Z
   clade_count: 188
   genus_count: 1401
   license: CC-BY-4.0
@@ -55630,10 +55630,12 @@ genera:
     parent: Dromaeosauridae
     dispute:
       summary: |
-        Dromaeosauroides bornholmensis is based on isolated tooth crowns. Its describers assigned it to Dromaeosauridae, resembling Dromaeosaurus (Christiansen and Bonde, 2003), but other authors regard the material as indeterminate. It is retained provisionally at Dromaeosauridae incertae sedis as a tooth-based taxon.
+        Dromaeosauroides bornholmensis is based on isolated tooth crowns, and its diagnosability has been debated. Lindgren et al. (2008), following Weishampel et al. (2004), regarded the holotype as indeterminate, but Bonde (2012) rebutted this — arguing that the teeth differ from those of other Early Cretaceous dromaeosaurids and of Dromaeosaurus, and that the earlier critiques rested on incorrect stratigraphic information — and retained the taxon as valid. Longrich et al. (2022) treated it as a possible early eudromaeosaur. It is retained as a valid, if tooth-based, dromaeosaurid.
       history:
         - date: 2026-07-01
           note: Retained at Dromaeosauridae incertae sedis; tooth-based taxon, considered indeterminate by some authors.
+        - date: 2026-07-21
+          note: Dispute rebalanced — the "indeterminate" assessment (Lindgren et al., 2008; Weishampel et al., 2004) was rebutted in detail by Bonde (2012), who retained the taxon as valid; status kept valid.
     etymology: From Dromaeosaurus + Greek -oides, 'resembling'; means 'resembling Dromaeosaurus', indicating its morphological similarity to that genus
     pronunciation:
       phonetic: DROH-mee-o-sor-ROY-deez
@@ -55708,6 +55710,35 @@ genera:
         issue: "2"
         pages: 287-299
         doi: 10.1127/njgpa/227/2003/287
+        notes: Erected Dromaeosauroides bornholmensis on an isolated tooth crown from the Jydegaard Formation of Bornholm.
+      - id: lindgren2008a
+        authors: Lindgren, J.; Currie, P. J.; Rees, J.; Siverson, M.; Lindström, S.; Alwmark, C.
+        year: 2008
+        title: Theropod dinosaur teeth from the lowermost Cretaceous Rabekke Formation on Bornholm, Denmark
+        journal: Geobios
+        volume: "41"
+        issue: "2"
+        pages: 253-262
+        doi: 10.1016/j.geobios.2007.05.001
+        notes: Regarded the Dromaeosauroides holotype tooth as indeterminate.
+      - id: bonde2012a
+        authors: Bonde, N.
+        year: 2012
+        title: "Danish Dinosaurs: A Review"
+        book: Bernissart Dinosaurs
+        publisher: Indiana University Press
+        pages: 435-449
+        isbn: 978-0-253-00570-0
+        notes: Rebutted the indeterminacy claim and retained Dromaeosauroides as a valid taxon, noting the teeth differ from other Early Cretaceous dromaeosaurids.
+      - id: longrich2022a
+        authors: Longrich, N. R.; Martill, D. M.; Jacobs, M. L.
+        year: 2022
+        title: A new dromaeosaurid dinosaur from the Wessex Formation (Lower Cretaceous, Barremian) of the Isle of Wight, and implications for European palaeobiogeography
+        journal: Cretaceous Research
+        publisher: Elsevier BV
+        volume: "134"
+        doi: 10.1016/j.cretres.2021.105123
+        notes: Treated Dromaeosauroides as a possible early eudromaeosaur.
     taxonomy:
       - Life
       - Animalia
