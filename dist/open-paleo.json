@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-07-21T05:44:31.722Z",
+    "built_at": "2026-07-21T06:35:56.298Z",
     "clade_count": 188,
     "genus_count": 1401,
     "license": "CC-BY-4.0",
@@ -44498,11 +44498,15 @@
       "etymology": "From Greek \"brachys\" (short) and \"pous\" (foot), plus \"sauros\" (lizard); meaning \"short-footed lizard\".",
       "description": "Brachypodosaurus is a dubious genus of dinosaur, possibly an ornithischian, from the Late Cretaceous Lameta Formation (Maastrichtian) in India.",
       "dispute": {
-        "summary": "Brachypodosaurus is a nomen dubium based on a single humerus from the Late Cretaceous of India; it has been referred to both Stegosauria and Ankylosauria, but all identifications have been challenged and it cannot be placed with confidence (Jones, 2026).\n",
+        "summary": "Brachypodosaurus is a nomen dubium based on a single humerus from the Late Cretaceous Lameta Formation of India, and even its identification as a dinosaurian humerus has been questioned. Chakravarti (1934) described it as a stegosaur, but Wilson et al. (2003) noted that the Indian \"stegosaur\" material shares no derived characters with Stegosauria. Later workers have treated it as an indeterminate ankylosaur — Maryańska (1977) as ?Ankylosauridae and Ford (2000) as Nodosauridae incertae sedis — while Vickaryous et al. (2004) listed it among nomina dubia. The single humerus is too incomplete to place with confidence.\n",
         "history": [
           {
             "date": "2026-06-29",
             "note": "Reparented from Thyreophora to Ornithischia incertae sedis; nomen dubium with all identifications challenged."
+          },
+          {
+            "date": "2026-07-20",
+            "note": "Dispute expanded across the literature — affinities range from Stegosauria (Chakravarti, 1934, rejected by Wilson et al., 2003) to indeterminate Ankylosauria (Maryańska, 1977; Ford, 2000), with the humerus identification itself in doubt."
           }
         ]
       },
@@ -44547,6 +44551,15 @@
               79.95
             ]
           },
+          "type_specimen": {
+            "specimen_id": [
+              "BHU V9"
+            ],
+            "specimen_type": "holotype",
+            "institution": "Banaras Hindu University",
+            "material": "A single humerus.",
+            "completeness": "fragmentary"
+          },
           "erected_in": "chakravarti1934a",
           "authors": "Chakravarti, D. K.",
           "described": 1934
@@ -44563,6 +44576,47 @@
           "issue": "3",
           "pages": "75-79",
           "notes": "Erects Brachypodosaurus gravis on a single humerus from the Lameta Formation near Jabalpur."
+        },
+        {
+          "id": "maryańska1977a",
+          "authors": "Maryańska, T.",
+          "year": 1977,
+          "title": "Ankylosauridae (Dinosauria) from Mongolia",
+          "journal": "Palaeontologia Polonica",
+          "volume": "37",
+          "pages": "85-151",
+          "notes": "Listed Brachypodosaurus as a nomen dubium, referring the humerus questionably to Ankylosauridae."
+        },
+        {
+          "id": "wilson2003a",
+          "authors": "Wilson, J. A.; Sereno, P. C.; Srivastava, S.; Bhatt, D. K.; Khosla, A.; Sahni, A.",
+          "year": 2003,
+          "title": "A new abelisaurid (Dinosauria, Theropoda) from the Lameta Formation (Cretaceous, Maastrichtian) of India",
+          "journal": "Contributions from the Museum of Paleontology, University of Michigan",
+          "volume": "31",
+          "issue": "1",
+          "pages": "1-42",
+          "notes": "Noted that the Indian \"stegosaur\" material, including Brachypodosaurus, shares no derived characters with Stegosauria."
+        },
+        {
+          "id": "vickaryous2004a",
+          "authors": "Vickaryous, M. K.; Maryańska, T.; Weishampel, D. B.",
+          "year": 2004,
+          "title": "Ankylosauria",
+          "book": "The Dinosauria, 2nd edition",
+          "publisher": "University of California Press",
+          "pages": "363-392",
+          "notes": "Listed Brachypodosaurus among nomina dubia, its material a single humerus."
+        },
+        {
+          "id": "ford2000a",
+          "authors": "Ford, T. L.",
+          "year": 2000,
+          "title": "A review of ankylosaur osteoderms from New Mexico and a preliminary review of ankylosaur armor",
+          "journal": "Dinosaurs of New Mexico. New Mexico Museum of Natural History and Science Bulletin",
+          "volume": "17",
+          "pages": "157-176",
+          "notes": "Treated Brachypodosaurus as Nodosauridae incertae sedis and a nomen dubium."
         },
         {
           "id": "jones2026a",
