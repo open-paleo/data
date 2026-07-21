@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-21T21:59:55.084Z
+  built_at: 2026-07-21T22:32:42.051Z
   clade_count: 188
   genus_count: 1401
   license: CC-BY-4.0
@@ -41417,10 +41417,12 @@ genera:
     parent: Baryonychinae
     dispute:
       summary: |
-        Ceratosuchops inferodios is a baryonychine spinosaurid (Barker et al., 2021; Rauhut et al., 2025); Barker et al. (2021) placed it in the tribe Ceratosuchopsini with Riparovenator and Suchomimus. Jones (2026) notes it may be conspecific with Riparovenator, representing ontogenetic or individual variation.
+        Ceratosuchops inferodios is a baryonychine spinosaurid from the Wessex Formation of the Isle of Wight (Barker et al., 2021), recovered as a baryonychine by later analyses (Rauhut et al., 2025; Cau, 2025). Its own validity is not in doubt, but its relationship to the co-occurring Riparovenator milnerae is unsettled: Sereno et al. (2022) tentatively treated the two as a single taxon, Ceratosuchops, attributing their differences to individual variation, and Santos-Cubedo et al. (2023) followed that synonymy, whereas Barker et al. (2021) and Rauhut et al. (2025) kept them distinct and Cau (2025) left the question open. Because Ceratosuchops is the senior name, it is retained as valid regardless.
       history:
         - date: 2026-07-01
           note: Placed at Baryonychinae following Barker et al. (2021) and Rauhut et al. (2025) (P2/P4; the tribe Ceratosuchopsini is not retained); the proposed synonymy with Riparovenator is unresolved.
+        - date: 2026-07-21
+          note: Dispute resourced to the primary literature and Jones (2026) dropped from it — the Ceratosuchops–Riparovenator single-taxon proposal rests on individual (not ontogenetic) variation; Ceratosuchops kept valid as the senior name.
     pronunciation:
       phonetic: serr-AT-oh-SOO-kops
     etymology: From Greek keras/keratos ('horn') + Latin suchus ('crocodile', from Greek) + ops ('face'), meaning 'horned crocodile face', in reference to the bony boss on the postorbital bone.
@@ -41501,13 +41503,26 @@ genera:
         volume: "11"
         issue: "1"
         doi: 10.1038/s41598-021-97870-8
-      - id: jones2026c
-        authors: Jones, B.; Viola, E.
-        year: 2026
-        title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
-        publisher: Princeton University Press
-        isbn: 978-0-691-25021-2
-        notes: Source of the body length, mass, and hip height estimates, and the appearance features.
+        notes: Erected Ceratosuchops inferodios, with Riparovenator, as a distinct baryonychine spinosaurid.
+      - id: sereno2022a
+        authors: Sereno, P. C.; Myhrvold, N.; Henderson, D. M.; Fish, F. E.; Vidal, D.; Baumgart, S. L.; Keillor, T. M.; Formoso, K. K.; Conroy, L. L.
+        year: 2022
+        title: Spinosaurus is not an aquatic dinosaur
+        journal: eLife
+        volume: "11"
+        pages: e80092
+        doi: 10.7554/eLife.80092
+        notes: Tentatively scored the Wessex baryonychine material as a single taxon, Ceratosuchops, attributing the differences to individual variation.
+      - id: santos-cubedo2023a
+        authors: Santos-Cubedo, A.; de Santisteban, C.; Poza, B.; Meseguer, S.
+        year: 2023
+        title: A new spinosaurid dinosaur species from the Early Cretaceous of Cinctorres (Spain)
+        journal: Scientific Reports
+        publisher: Springer Science and Business Media LLC
+        volume: "13"
+        issue: "1"
+        doi: 10.1038/s41598-023-33418-2
+        notes: Followed the synonymy of Sereno et al. (2022), counting Ceratosuchops but not Riparovenator among valid baryonychines.
       - id: rauhut2025a
         authors: Rauhut, O. W. M.; Canudo, J. I.; Castanera, D.
         year: 2025
@@ -41517,7 +41532,24 @@ genera:
         issue: "3"
         pages: 1-67
         doi: 10.26879/1543
-        notes: Phylogenetic analysis recovered Ceratosuchops as a baryonychine spinosaurid
+        notes: Recovered Ceratosuchops as a baryonychine spinosaurid, keeping it distinct from Riparovenator.
+      - id: cau2025a
+        authors: Cau, A.; Paterna, A.
+        year: 2025
+        title: "Beyond the Stromer's Riddle: the impact of lumping and splitting hypotheses on the systematics of the giant predatory dinosaurs from northern Africa"
+        journal: Italian Journal of Geosciences
+        volume: "144"
+        issue: "2"
+        pages: 162-185
+        doi: 10.3301/IJG.2025.10
+        notes: Left the Ceratosuchops–Riparovenator synonymy open, deferring to a future detailed comparison.
+      - id: jones2026c
+        authors: Jones, B.; Viola, E.
+        year: 2026
+        title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
+        publisher: Princeton University Press
+        isbn: 978-0-691-25021-2
+        notes: Source of the body length, mass, and hip height estimates, and the appearance features.
     taxonomy:
       - Life
       - Animalia
@@ -137451,10 +137483,12 @@ genera:
     parent: Baryonychinae
     dispute:
       summary: |
-        Riparovenator milnerae is a baryonychine spinosaurid, sister to Ceratosuchops in the tribe Ceratosuchopsini as originally described (Barker et al., 2021) and recovered as a baryonychine by Rauhut et al. (2025). Jones (2026) notes it may be conspecific with Ceratosuchops.
+        Riparovenator milnerae was erected as a distinct baryonychine spinosaurid, sister to the co-occurring Ceratosuchops inferodios (Barker et al., 2021), and both were kept distinct by Rauhut et al. (2025). Its distinctness as a genus is contested, however: Sereno et al. (2022) tentatively referred the Wessex baryonychine material to a single taxon, Ceratosuchops, attributing the differences to individual variation, and Santos-Cubedo et al. (2023) followed that synonymy by omitting Riparovenator from their count of valid baryonychine genera, while Cau (2025) left the question open pending a detailed comparative analysis. Its status as a genus distinct from Ceratosuchops therefore remains unresolved.
       history:
         - date: 2026-07-01
           note: Placed at Baryonychinae following Barker et al. (2021) and Rauhut et al. (2025) (P2/P4; the tribe Ceratosuchopsini is not retained); the proposed synonymy with Ceratosuchops is unresolved.
+        - date: 2026-07-21
+          note: Status set to disputed — Riparovenator's distinctness from Ceratosuchops is genuinely unresolved (kept distinct by Barker et al., 2021, and Rauhut et al., 2025; tentatively synonymized by Sereno et al., 2022, and Santos-Cubedo et al., 2023; left open by Cau, 2025). The difference is treated as individual, not ontogenetic, variation.
     pronunciation:
       phonetic: ri-PAIR-o-ven-AY-tor
     etymology: From Latin riparius (of the riverbank) and venator (hunter); meaning "riverbank hunter".
@@ -137490,7 +137524,7 @@ genera:
     species:
       - name: Riparovenator milnerae
         etymology: Named for Angela Milner, a British paleontologist who died in August 2021, shortly before the species was formally described.
-        status: valid
+        status: disputed
         type_species: true
         period:
           name:
@@ -137537,6 +137571,26 @@ genera:
         volume: "11"
         issue: "1"
         doi: 10.1038/s41598-021-97870-8
+        notes: Erected Riparovenator milnerae as a distinct baryonychine spinosaurid, sister to Ceratosuchops.
+      - id: sereno2022a
+        authors: Sereno, P. C.; Myhrvold, N.; Henderson, D. M.; Fish, F. E.; Vidal, D.; Baumgart, S. L.; Keillor, T. M.; Formoso, K. K.; Conroy, L. L.
+        year: 2022
+        title: Spinosaurus is not an aquatic dinosaur
+        journal: eLife
+        volume: "11"
+        pages: e80092
+        doi: 10.7554/eLife.80092
+        notes: Tentatively referred the Wessex baryonychine material to a single taxon, Ceratosuchops, treating Riparovenator's distinguishing features as individual variation.
+      - id: santos-cubedo2023a
+        authors: Santos-Cubedo, A.; de Santisteban, C.; Poza, B.; Meseguer, S.
+        year: 2023
+        title: A new spinosaurid dinosaur species from the Early Cretaceous of Cinctorres (Spain)
+        journal: Scientific Reports
+        publisher: Springer Science and Business Media LLC
+        volume: "13"
+        issue: "1"
+        doi: 10.1038/s41598-023-33418-2
+        notes: Followed the synonymy of Sereno et al. (2022), omitting Riparovenator from their count of valid baryonychine genera.
       - id: rauhut2025a
         authors: Rauhut, O. W. M.; Canudo, J. I.; Castanera, D.
         year: 2025
@@ -137546,14 +137600,17 @@ genera:
         issue: "3"
         pages: 1-67
         doi: 10.26879/1543
-        notes: Revision recovered Riparovenator as a baryonychine spinosaurid.
-      - id: jones2026c
-        authors: Jones, B.; Viola, E.
-        year: 2026
-        title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
-        publisher: Princeton University Press
-        isbn: 978-0-691-25021-2
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Recovered Riparovenator as a baryonychine spinosaurid, keeping it distinct from Ceratosuchops.
+      - id: cau2025a
+        authors: Cau, A.; Paterna, A.
+        year: 2025
+        title: "Beyond the Stromer's Riddle: the impact of lumping and splitting hypotheses on the systematics of the giant predatory dinosaurs from northern Africa"
+        journal: Italian Journal of Geosciences
+        volume: "144"
+        issue: "2"
+        pages: 162-185
+        doi: 10.3301/IJG.2025.10
+        notes: Left the Riparovenator–Ceratosuchops synonymy open, deferring to a future detailed comparison.
     taxonomy:
       - Life
       - Animalia
