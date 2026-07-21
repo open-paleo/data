@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-21T04:03:46.642Z
+  built_at: 2026-07-21T04:58:50.791Z
   clade_count: 188
   genus_count: 1401
   license: CC-BY-4.0
@@ -144737,10 +144737,12 @@ genera:
     parent: Spinosauridae
     dispute:
       summary: |
-        Siamosaurus suteethorni is based on isolated teeth and is widely regarded as a nomen dubium (Smyth et al., 2020, reported by Jones, 2026); Carrano et al. (2012) could identify the material only as an indeterminate spinosaurid. Newly referred specimens may eventually support its validity as a basal spinosaurine.
+        Siamosaurus suteethorni is based solely on isolated teeth, and both its affinities and its validity have been contested. Buffetaut and Ingavat (1986) tentatively referred it to Spinosauridae, but Sues et al. (2002) considered the material insufficient to establish even dinosaurian affinities, and Weishampel et al. (2004) placed it no more precisely than Theropoda indeterminate. Its spinosaurid identity has since gained support: Buffetaut et al. (2008) cited converging lines of evidence — including a spinosaurid skeleton from the tooth-bearing Khok Kruat Formation — and Carrano et al. (2012) referred the teeth to ?Spinosauridae. Nonetheless the genus is widely treated as a nomen dubium, because its teeth cannot be distinguished from those of other spinosaurids (Holtz et al., 2004; Sales and Schultz, 2017; Smyth et al., 2020); associated skeletal material may eventually permit a more secure identification.
       history:
         - date: 2026-07-01
           note: Placed at Spinosauridae following Carrano et al. (2012); retained as a nomen-dubium-grade, teeth-based taxon that cannot be resolved to a subfamily.
+        - date: 2026-07-20
+          note: Dispute expanded across the literature — its affinity has ranged from non-dinosaurian (Sues et al., 2002) to spinosaurid (Buffetaut et al., 2008; Carrano et al., 2012), while its tooth-based validity remains widely regarded as a nomen dubium.
     pronunciation:
       phonetic: sie-AM-o-SAWR-us
     etymology: Named for Siam, the ancient name of Thailand, where the fossils were found, combined with Greek 'sauros' meaning 'lizard'; meaning 'Siam lizard.'
@@ -144793,6 +144795,9 @@ genera:
             - DMR TF 2043a
           specimen_type: holotype
           institution: Department of Mineral Resources
+          material: A single well-preserved tooth crown.
+          completeness: fragmentary
+          notes: Eight further teeth (DMR TF 2043b–i) from the same locality are paratypes.
         erected_in: buffetaut1986a
         authors: Buffetaut, E.; Ingavat, R.
         described: 1986
@@ -144805,6 +144810,42 @@ genera:
         volume: "5"
         issue: "2"
         pages: 217-220
+        notes: Erected Siamosaurus suteethorni on isolated teeth and tentatively referred it to Spinosauridae.
+      - id: sues2002a
+        authors: Sues, H.-D.; Frey, E.; Martill, D. M.; Scott, D. M.
+        year: 2002
+        title: "Irritator challengeri, a spinosaurid (Dinosauria: Theropoda) from the Lower Cretaceous of Brazil"
+        journal: Journal of Vertebrate Paleontology
+        publisher: Informa UK Limited
+        volume: "22"
+        issue: "3"
+        pages: 535-547
+        doi: 10.1671/0272-4634(2002)022[0535:ICASDT]2.0.CO;2
+        notes: Considered the available material insufficient to establish even dinosaurian affinities for Siamosaurus.
+      - id: holtz2004a
+        authors: Holtz, T. R.; Molnar, R. E.; Currie, P. J.
+        year: 2004
+        title: Basal Tetanurae
+        book: The Dinosauria, 2nd edition
+        publisher: University of California Press
+        pages: 71-110
+        notes: Listed Siamosaurus suteethorni among nomina dubia based on isolated teeth.
+      - id: weishampel2004a
+        authors: Weishampel, D. B.; Dodson, P.; Osmólska, H.
+        year: 2004
+        title: The Dinosauria, Second Edition
+        publisher: University of California Press, Berkeley
+        notes: Placed Siamosaurus no more precisely than Theropoda indeterminate.
+      - id: buffetaut2008a
+        authors: Buffetaut, E.; Suteethorn, V.; Tong, H.; Amiot, R.
+        year: 2008
+        title: An Early Cretaceous spinosaur theropod from southern China
+        journal: Geological Magazine
+        volume: "145"
+        issue: "5"
+        pages: 745-748
+        doi: 10.1017/S0016756808005360
+        notes: Argued from converging evidence, including a spinosaurid skeleton in the tooth-bearing Khok Kruat Formation, that Siamosaurus is a spinosaurid.
       - id: carrano2012a
         authors: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D.
         year: 2012
@@ -144815,7 +144856,17 @@ genera:
         issue: "2"
         pages: 211-300
         doi: 10.1080/14772019.2011.630927
-        notes: Could identify Siamosaurus material only as an indeterminate spinosaurid.
+        notes: Referred the teeth to ?Spinosauridae, finding too little material to support retention of the taxon pending associated skeletal remains.
+      - id: sales2017a
+        authors: Sales, M. A. F.; Schultz, C. L.
+        year: 2017
+        title: "Spinosaur taxonomy and evolution of craniodental features: Evidence from Brazil"
+        journal: PLOS ONE
+        volume: "12"
+        issue: "11"
+        pages: e0187070
+        doi: 10.1371/journal.pone.0187070
+        notes: Treated Siamosaurus as a nomen dubium whose teeth cannot be distinguished from those of other Cretaceous spinosaurids.
       - id: jones2026c
         authors: Jones, B.; Viola, E.
         year: 2026
