@@ -8,6 +8,13 @@ status:
   - nomen nudum
   - disputed
 
+# Genus-level qualifier on the `parent` placement: how the genus attaches to
+# its parent clade. Omit when the placement is confidently resolved; set to
+# `incertae sedis` when the genus belongs within `parent` but cannot be
+# assigned to any of its subclades. The "why" lives in the `dispute` prose.
+placement:
+  - incertae sedis
+
 synonym_types:
   - junior subjective
   - junior objective

@@ -197,6 +197,7 @@ const tree = loadYamlFatal<TreeNode>(path.join(root, "tree.yml"), "tree.yml");
 const treeClades = extractClades(tree);
 
 const allowedStatus = new Set(schema.status ?? []);
+const allowedPlacement = new Set(schema.placement ?? []);
 const allowedDiet = new Set(schema.diet ?? []);
 const allowedLocomotion = new Set(schema.locomotion ?? []);
 const allowedCompleteness = new Set(schema.completeness ?? []);
@@ -317,6 +318,14 @@ for (const [filePath, doc] of genusParsed)
             "Schema compliance",
             filePath,
             `invalid diet value '${doc.diet}' (must be one of: ${[...allowedDiet].join(", ")})`);
+    }
+
+    if (doc.placement && !allowedPlacement.has(doc.placement))
+    {
+        checkError(
+            "Schema compliance",
+            filePath,
+            `invalid placement value '${doc.placement}' (must be one of: ${[...allowedPlacement].join(", ")})`);
     }
 
     if (Array.isArray(doc.species))
@@ -2633,7 +2642,7 @@ if (outputSchema)
     const schemaVocabularies = schema as unknown as Record<string, Array<string>>;
 
     const enumDefNames: Array<string> = [
-        "status", "synonym_types", "diet", "locomotion", "completeness",
+        "status", "placement", "synonym_types", "diet", "locomotion", "completeness",
         "holotype_status", "specimen_types", "specimen_categories",
         "iczn_ruling_types", "integument", "integument_evidence",
         "paleoenvironments", "identifier_sources", "periods",

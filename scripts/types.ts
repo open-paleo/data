@@ -596,6 +596,15 @@ export type GenusData = {
     parent?: string;
 
     /**
+     * Qualifier on the `parent` placement, from the controlled vocabulary in
+     * schema.yml (currently only "incertae sedis"). Omit when the placement is
+     * confidently resolved; set to "incertae sedis" when the genus belongs
+     * within `parent` but cannot be assigned to any of its subclades. The
+     * narrative rationale belongs in `dispute`, not here.
+     */
+    placement?: string;
+
+    /**
      * Origin and meaning of the genus name.
      */
     etymology?: string;
@@ -822,6 +831,11 @@ export type Schema = {
      * Allowed synonym type values (e.g. "junior", "preoccupied", "reassigned").
      */
     synonym_types?: Array<string>;
+
+    /**
+     * Allowed genus-level placement qualifiers (currently "incertae sedis").
+     */
+    placement?: Array<string>;
 
     /**
      * Allowed diet categories.

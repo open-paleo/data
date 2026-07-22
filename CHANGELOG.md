@@ -34,6 +34,10 @@ Initial public release, establishing the v1 output schema.
   convention (bare `name` plus a controlled `type` and a `reason`), to record
   replaced or emended family-group names; added the `emended spelling`
   synonym type to the controlled vocabulary.
+- Genus-level `placement` field (controlled value `incertae sedis`) qualifying
+  how a genus attaches to its `parent` clade, surfacing a previously
+  prose-only signal as a queryable field; backfilled across the genera placed
+  at incertae sedis. The narrative rationale remains in `dispute`.
 
 ### Changed
 - Locked the v1 output schema (#1965): the species type-specimen block is
