@@ -23,6 +23,10 @@ export type SynonymTypes =
   | "nomen manuscriptum"
   | "informal"
   | "boycotted";
+/**
+ * Genus-level qualifier on the parent placement; set when the genus cannot be assigned below its parent clade.
+ */
+export type Placement = "incertae sedis";
 export type Diet = "herbivore" | "carnivore" | "omnivore" | "insectivore" | "piscivore";
 export type Locomotion = "bipedal" | "quadrupedal" | "facultative";
 export type Paleoenvironments =
@@ -257,6 +261,7 @@ export interface Genus {
    * Parent clade name (a node in tree).
    */
   parent: string;
+  placement?: Placement;
   taxonomy: Taxonomy;
   etymology?: string;
   pronunciation?: Pronunciation;

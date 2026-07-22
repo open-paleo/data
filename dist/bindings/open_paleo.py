@@ -107,6 +107,10 @@ class SynonymTypes(Enum):
     boycotted = 'boycotted'
 
 
+class Placement(Enum):
+    incertae_sedis = 'incertae sedis'
+
+
 class Diet(Enum):
     herbivore = 'herbivore'
     carnivore = 'carnivore'
@@ -434,6 +438,7 @@ class Species(BaseModel):
 class Genus(BaseModel):
     genus: str
     parent: str = Field(..., description='Parent clade name (a node in tree).')
+    placement: Optional[Placement] = None
     taxonomy: List[str] = Field(
         ...,
         description="Ordered ancestor clade names from root to the record's placement.",

@@ -58,6 +58,7 @@
       "properties": {
         "genus": { "type": "string" },
         "parent": { "type": "string", "description": "Parent clade name (a node in tree)." },
+        "placement": { "$ref": "#/$defs/placement" },
         "taxonomy": { "$ref": "#/$defs/taxonomy" },
         "etymology": { "type": "string" },
         "pronunciation": { "$ref": "#/$defs/pronunciation" },
@@ -265,6 +266,7 @@
     },
     "status": { "type": "string", "enum": ["valid", "nomen dubium", "nomen nudum", "disputed"] },
     "synonym_types": { "type": "string", "enum": ["junior subjective", "junior objective", "possible subjective", "preoccupied", "reassigned", "emended spelling", "nomen oblitum", "nomen rejectum", "nomen nudum", "nomen ex dissertatione", "nomen manuscriptum", "informal", "boycotted"] },
+    "placement": { "type": "string", "enum": ["incertae sedis"], "description": "Genus-level qualifier on the parent placement; set when the genus cannot be assigned below its parent clade." },
     "diet": { "type": "string", "enum": ["herbivore", "carnivore", "omnivore", "insectivore", "piscivore"] },
     "locomotion": { "type": "string", "enum": ["bipedal", "quadrupedal", "facultative"] },
     "completeness": { "type": "string", "enum": ["complete", "partial", "fragmentary"] },
