@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-22T03:10:31.510Z
+  built_at: 2026-07-28T16:22:57.620Z
   clade_count: 188
-  genus_count: 1401
+  genus_count: 1400
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.07"
@@ -13824,11 +13824,14 @@ genera:
     parent: Rebbachisauridae
     dispute:
       summary: |
-        The affinities of Agustinia are contested. Recent dedicated rebbachisaurid analyses place it as a basal member of Rebbachisauridae (Bellardini et al., 2022; Jones, 2026), though it is an unstable operational taxonomic unit that is pruned from the consensus in several analyses (Lerzo et al., 2024). Earlier assessments differ: D'Emic et al. (2009) found no diagnostic features placing it in Diplodocoidea or Titanosauria and regarded it as a neosauropod of uncertain affinity, while Mannion et al. (2013), reinterpreting its purported osteoderms as displaced ribs and ischia, tentatively regarded it as an indeterminate somphospondylan.
+        The affinities of Agustinia are contested. Dedicated rebbachisaurid analyses recover it within Rebbachisauridae but disagree on where: Bellardini et al. (2022) found it a basal rebbachisaurid, while Lerzo et al. (2024b) recovered it as a derived rebbachisaurid within Nigersaurinae under implied weighting. It is an unstable operational taxonomic unit that is pruned from the consensus in several analyses (Lerzo et al., 2024a, 2024b). Earlier assessments differ more broadly: D'Emic et al. (2009) found no diagnostic features placing it in Diplodocoidea or Titanosauria and regarded it as a neosauropod of uncertain affinity, while Mannion et al. (2013), reinterpreting its purported osteoderms as displaced ribs and ischia, tentatively regarded it as an indeterminate somphospondylan.
       history:
         - date: 2026-06-30
           note: |
             Retained at Rebbachisauridae following the prevailing recent view (Bellardini et al., 2022; Jones, 2026); the alternative somphospondylan and neosauropod incertae sedis interpretations are noted, and its position within Rebbachisauridae is unresolved.
+        - date: 2026-07-22
+          note: |
+            Replaced the reference-work citation (Jones, 2026) with the primary analysis of Lerzo et al. (2024b), which recovers Agustinia as a derived rebbachisaurid within Nigersaurinae under implied weighting and prunes it as unstable under equal weighting; the genus is retained as a rebbachisaurid of unresolved position, not incertae sedis.
     pronunciation:
       phonetic: ah-goo-STEE-nee-uh
       ipa: /ɑːɡəˈstɪniə/
@@ -13907,6 +13910,17 @@ genera:
         pages: 208-233
         doi: 10.1080/08912963.2023.2297914
         notes: Found Agustinia an unstable taxon pruned from the phylogenetic consensus.
+      - id: lerzo2024b
+        authors: Lerzo, L. N.; Fernández-Baldor, F. T.; Canale, J. I.; Whitlock, J. A.; Otero, A.; Gallina, P. A.
+        year: 2024
+        title: "They all floated in the cretaceous: new rebbachisaurid (Sauropoda, Diplodocoidea) with a highly pneumatized skeleton from the Upper Cretaceous (lower Cenomanian) of Patagonia, Argentina"
+        journal: Historical Biology
+        publisher: Informa UK Limited
+        volume: "37"
+        issue: "8"
+        pages: 1795-1808
+        doi: 10.1080/08912963.2024.2383708
+        notes: Recovered Agustinia as a derived rebbachisaurid within Nigersaurinae under implied weighting, and as an unstable taxon pruned under equal weighting.
       - id: bellardini2022b
         authors: Bellardini, F.; Coria, R. A.; Windholz, G. J.; Martinelli, A. G.; Baiano, M. A.
         year: 2022
@@ -13926,13 +13940,6 @@ genera:
         pages: 165-177
         doi: 10.1671/039.029.0131
         notes: Found Agustinia lacks features placing it in Diplodocoidea or Titanosauria; a neosauropod of uncertain affinity.
-      - id: jones2026b
-        authors: Jones, B.; Viola, E.
-        year: 2026
-        title: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
-        publisher: Princeton University Press
-        isbn: 978-0-691-25023-6
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
       - id: mannion2013a
         authors: Mannion, P. D.; Upchurch, P.; Barnes, R. N.; Mateus, O.
         year: 2013
@@ -17404,187 +17411,6 @@ genera:
       - Alvarezsauridae
     authors: Bonaparte, J. F.
     described: 1991
-  Alwalkeria:
-    genus: Alwalkeria
-    parent: Archosauria
-    etymology: From the prefix 'Al-' added to 'Walkeria', the original (and preoccupied) genus name, which Chatterjee (1987) had coined in honor of British paleontologist Alick D. Walker for his contributions to Mesozoic vertebrate paleontology.
-    pronunciation:
-      ipa: /ˌælwɔːˈkɪəriə/
-      phonetic: al-woh-KEH-ree-uh
-    description: |
-      Alwalkeria is a historically problematic extinct genus of avemetatarsalian known from the Late Triassic Lower Maleri Formation of India. The genus contains a single species, Alwalkeria maleriensis. It was initially described in 1987 under the genus name 'Walkeria', based on a partial skull, several vertebrae, and fragmentary hindlimb bones. As this name is preoccupied, the new genus Alwalkeria was proposed to replace it. Early research interpreted the material belonging to a 'podokesaurid' (coelophysoid) theropod, herrerasaur, or Eoraptor-like basal eusaurischian dinosaur. Subsequent work recognized the chimaeric status of the fossils referred to this species, as they belong to multiple unrelated taxa. Some of the bones may belong to a dinosaur, and the skull is likely from a pseudosuchian. A 2025 study suggested lagerpetid affinities for the femora, though this was deemed unlikely by a subsequent review, which regarded A. maleriensis as a member of Pan-Aves (Avemetatarsalia) of uncertain placement.
-    dispute:
-      summary: |
-        The anatomical content and phylogenetic placement of Alwalkeria have been actively contested. Remes and Rauhut (2005, conference abstract) first identified the original ISI R 306 holotype series as a chimera; Lecuona, Ezcurra and Irmis (2016) reinterpreted the skull as a crocodylomorph. Novas et al. (2010) and Ezcurra et al. (2025) treated the genus as a valid basal saurischian based on the retained femur and astragalus. Sen and Ray (2025) erected Alickmeron maleriensis for the femora with proposed lagerpetid affinities. McDavid, Marchant and Reid (2026) refuted the lagerpetid assignment, synonymised Alickmeron with Alwalkeria as an objective junior synonym, and restricted the holotype to ISI R 306b (the distal right femur) with placement as Pan-Aves (Avemetatarsalia) incertae sedis.
-    diet: omnivore
-    locomotion: bipedal
-    paleoenvironment:
-      - fluvial
-    diagnostic_features:
-      - Teeth unserrated; anterior teeth conical, posterior teeth laterally compressed with faint flutings and recurved posteriorly.
-      - Maxilla lacks longitudinal alveolar ridge along the lower border of the antorbital fenestra.
-      - Dentary bears a distinct external longitudinal alveolar groove immediately below the alveolar margin.
-      - Dentary with an elongated median jaw symphysis, longer than in other podokesaurs.
-      - Femur with highly expanded proximal head (approximately three times shaft diameter) and a greatly enlarged fourth trochanter with acute and declined tip.
-      - Astragalus and calcaneum remain unfused even in a mature individual, unlike the strongly fused condition in Syntarsus and Coelophysis.
-    appearance:
-      integument: unknown
-    identifiers:
-      - source: pbdb
-        id: "66343"
-      - source: wikidata
-        id: Q133238
-      - source: gbif
-        id: "4822917"
-      - source: eol
-        id: "47043859"
-    synonyms:
-      - name: Walkeria
-        type: preoccupied
-        reason: Original generic combination, preoccupied by Walkeria Fleming, 1823 (Bryozoa). Renamed Alwalkeria by Chatterjee and Creisler (1994).
-      - name: Alickmeron
-        type: junior objective
-        reason: Erected by Sen and Ray (2025) for the partial femora of ISI R 306 with proposed lagerpetid affinities, but Alickmeron shares the same type species (Walkeria maleriensis Chatterjee, 1987) and same restricted holotype (ISI R 306b) as Alwalkeria; objective junior synonym under ICZN Art. 68.3, with Alwalkeria having priority (McDavid, Marchant and Reid 2026).
-    species:
-      - name: Alwalkeria maleriensis
-        etymology: From the Maleri Formation of the Pranhita–Godavari Valley, India, from which the type material was recovered.
-        status: valid
-        type_species: true
-        period:
-          name:
-            - Late Triassic
-          stage:
-            - Carnian
-          from_ma: 237
-          to_ma: 227.3
-        location:
-          country: IN
-          region: Nennal Village, Adilabad District, Andhra Pradesh
-          formation: Lower Maleri Formation
-          coordinates:
-            - 19.0667
-            - 79.633301
-        type_specimen:
-          specimen_id:
-            - ISI R 306b
-          specimen_type: holotype
-          institution: Geology Museum, Indian Statistical Institute
-          material: Distal right femur (ISI R 306b); originally the holotype series (ISI R 306) included a partial skull, dentary, ~28 vertebrae, a composite femur, and an astragalus, but the skull is now considered crocodylomorph and the other elements ambiguous.
-          completeness: fragmentary
-        size:
-          length_m:
-            min: 1.5
-            max: 1.5
-          weight_kg:
-            min: 4
-            max: 4
-          hip_height_m:
-            min: 0.25
-            max: 0.25
-        erected_in: chatterjee1987a
-        authors: Chatterjee, S.
-        described: 1987
-    references:
-      - id: chatterjee1987a
-        authors: Chatterjee, S.
-        year: 1987
-        title: A new theropod dinosaur from India with remarks on the Gondwana–Laurasia connection in the Late Triassic
-        journal: Gondwana Six; Stratigraphy, Sedimentology, and Paleontology
-        series: Geophysical Monograph 41
-        publisher: American Geophysical Union, Washington D.C.
-        pages: 183-189
-        doi: 10.1029/GM041p0183
-        notes: Original description, as Walkeria maleriensis on holotype ISI R 306 (partial skull, dentary, ~28 vertebrae, composite femur, astragalus); interpreted as a basal theropod.
-      - id: chatterjee1994a
-        authors: Chatterjee, S.; Creisler, B. S.
-        year: 1994
-        title: Alwalkeria (Theropoda) and Morturneria (Plesiosauria), new names for preoccupied Walkeria Chatterjee, 1987 and Turneria Chatterjee and Small, 1989
-        journal: Journal of Vertebrate Paleontology
-        volume: "14"
-        issue: "1"
-        pages: 142-142
-        doi: 10.1080/02724634.1994.10011546
-        notes: One-page nomenclatural note proposing Alwalkeria as a replacement name (nomen novum) for the preoccupied Walkeria Chatterjee, 1987 (preoccupied by Walkeria Fleming, 1823, Bryozoa).
-      - id: novas2010a
-        authors: Novas, F. E.; Ezcurra, M. D.; Chatterjee, S.; Kutty, T. S.
-        year: 2010
-        title: New dinosaur species from the Upper Triassic Upper Maleri and Lower Dharmaram formations of Central India
-        journal: Earth and Environmental Science Transactions of the Royal Society of Edinburgh
-        publisher: Cambridge University Press (CUP)
-        volume: "101"
-        issue: 3-4
-        pages: 333-349
-        doi: 10.1017/S1755691011020093
-        notes: Defends Alwalkeria as a valid basal saurischian on the basis of the holotype femur and astragalus, citing a hypertrophied femoral neck as a distinguishing feature.
-      - id: ezcurra2025a
-        authors: Ezcurra, M. D.; Garcia, M. S.; Novas, F. E.; Müller, R. T.; Agnolín, F. L.; Chatterjee, S.
-        year: 2025
-        title: A new herrerasaurian dinosaur from the Upper Triassic Upper Maleri Formation of south-central India
-        journal: Royal Society Open Science
-        publisher: The Royal Society
-        volume: "12"
-        issue: "5"
-        pages: "250081"
-        doi: 10.1098/rsos.250081
-        notes: Treats Alwalkeria as a valid Lower Maleri taxon distinct from Maleriraptor kuttyi (Upper Maleri); pre-2025 chimera view, with the skull treated as crocodylomorph per Lecuona et al. 2016.
-      - id: sen2025a
-        authors: Sen, S.; Ray, S.
-        year: 2025
-        title: Taxonomic reassessment of archosaurs with dinosaurian affinities from the lower fauna of the Upper Triassic Maleri Formation of India and their significance
-        journal: Journal of Vertebrate Paleontology
-        pages: e2546434
-        doi: 10.1080/02724634.2025.2546434
-        notes: Reassesses ISI R 306; erects Alickmeron maleriensis for the femora (claiming lagerpetid affinities) and treats the astragalus as Saurischia indet.
-      - id: mcdavid2026a
-        authors: McDavid, S. N.; Marchant, C. J.; Reid, I. J.
-        year: 2026
-        title: Alickmeron Sen & Ray, 2025 is an objective junior synonym of Alwalkeria Chatterjee & Creisler, 1994
-        journal: Journal of Vertebrate Paleontology
-        doi: 10.1080/02724634.2025.2604088
-        notes: Demonstrates Alickmeron Sen and Ray, 2025 is an objective junior synonym of Alwalkeria; accepts the ISI R 306b holotype restriction and places the taxon as Pan-Aves incertae sedis.
-      - id: paul2024a
-        authors: Paul, G. S.
-        year: 2024
-        title: The Princeton Field Guide to Dinosaurs (3rd ed.)
-        publisher: Princeton University Press
-        notes: Source of the body length and mass estimates.
-      - id: jones2026c
-        authors: Jones, B.; Viola, E.
-        year: 2026
-        title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
-        publisher: Princeton University Press
-        isbn: 978-0-691-25021-2
-        notes: Source of the hip height estimate.
-      - id: lecuona2016a
-        authors: Lecuona, A.; Ezcurra, M. D.; Irmis, R. B.
-        year: 2016
-        title: "Revision of the early crocodylomorph Trialestes romeri (Archosauria, Suchia) from the lower Upper Triassic Ischigualasto Formation of Argentina: one of the oldest-known crocodylomorphs"
-        journal: Papers in Palaeontology
-        publisher: Wiley
-        volume: "2"
-        issue: "4"
-        pages: 585-622
-        doi: 10.1002/spp2.1056
-        notes: Reassessed the Alwalkeria ISI R306 holotype as a chimera, within a revision of Trialestes.
-      - id: remes2005a
-        authors: Remes, K.; Rauhut, O. W. M.
-        year: 2005
-        title: "The oldest Indian dinosaur Alwalkeria maleriensis Chatterjee revised: a chimera including remains of a basal saurischian"
-        book: II Congresso Latino-Americano de Paleontologia de Vertebrados, Boletim de Resumos
-        publisher: Museu Nacional, Rio de Janeiro
-        pages: "218"
-        notes: First identified the Alwalkeria holotype series as a chimera (conference abstract).
-    taxonomy:
-      - Life
-      - Animalia
-      - Chordata
-      - Vertebrata
-      - Sarcopterygii
-      - Tetrapoda
-      - Reptilia
-      - Archosauria
-    authors: Chatterjee, S.
-    described: 1987
   Alxasaurus:
     genus: Alxasaurus
     parent: Therizinosauroidea
@@ -18707,13 +18533,17 @@ genera:
   Amphicoelias:
     genus: Amphicoelias
     parent: Diplodocoidea
+    placement: incertae sedis
     dispute:
       summary: |
-        The position of Amphicoelias altus within Diplodocoidea is highly labile. Tschopp et al. (2015) recovered it as Diplodocidae incertae sedis, outside both Apatosaurinae and Diplodocinae, and the Princeton Encyclopedia (Jones, 2026) follows a diplodocid placement. A dedicated redescription (Mannion et al., 2021) found its position unstable across matrices and weighting schemes, recovering it variously as the sister to Diplodocimorpha (a non-diplodocimorph diplodocoid, like Haplocanthosaurus), as a basal diplodocine, or as an apatosaurine; the low scorability of the holotype drives the instability. It is consistently recovered as a valid diplodocoid distinct from Diplodocus.
+        The position of Amphicoelias altus within Diplodocoidea is highly labile. Tschopp et al. (2015) recovered it as Diplodocidae incertae sedis, outside both Apatosaurinae and Diplodocinae. A dedicated redescription (Mannion et al., 2021) found its position unstable across matrices and weighting schemes, recovering it variously as the sister to Diplodocimorpha (a non-diplodocimorph diplodocoid, like Haplocanthosaurus), as a basal diplodocine, or as an apatosaurine; the low scorability of the holotype drives the instability. It is consistently recovered as a valid diplodocoid distinct from Diplodocus.
       history:
         - date: 2026-06-30
           note: |
             Placed at Diplodocoidea, the least inclusive uncontested node, pending resolution of its labile position between a non-diplodocimorph diplodocoid and a basal diplodocid (Tschopp et al., 2015; Mannion et al., 2021).
+        - date: 2026-07-22
+          note: |
+            Marked placement as incertae sedis: Amphicoelias is consistently a diplodocoid but its position within Diplodocoidea is unresolved (Mannion et al., 2021). Trimmed the reference-work diplodocid-placement citation (Jones, 2026) from the dispute, which the primary analyses already cover; the Jones (2026) citation is retained only for the hip-height estimate.
     etymology: From Greek 'amphi' meaning 'on both sides' and 'koilos' meaning 'hollow' or 'concave'; meaning 'biconcave', referring to the shape of the vertebrae
     pronunciation:
       phonetic: AM-fi-SEEL-ee-as
@@ -128475,11 +128305,14 @@ genera:
     parent: Coelophysoidea
     dispute:
       summary: |
-        Podokesaurus holyokensis is a coelophysoid whose holotype was destroyed and cannot be scored in modern analyses; it is treated as a coelophysid (Jones, 2026) or as Theropoda incertae sedis (Tykoski and Rowe, 2004).
+        Podokesaurus holyokensis is a coelophysoid theropod whose holotype was destroyed in a 1917 fire and cannot be rescored in modern phylogenetic analyses, so its affinities rest on the original description and later assessments rather than direct restudy. Most workers place it within Coelophysoidea: Carrano and Sampson (2004) treated it as a coelophysoid in their review of the group, Bristowe and Raath (2004) listed it as a junior synonym of Coelophysis without discussion, and Paul (2016) and Jones (2026) placed it as a coelophysid. Tykoski and Rowe (2004) accepted that it shows coelophysoid features but declined to place it more precisely than Theropoda incertae sedis. Coelophysoidea is adopted here as the least-inclusive clade the majority of assessments support.
       history:
         - date: 2026-06-30
           note: |
             Placed at Coelophysoidea, the least-inclusive clade the sources support for this lost-holotype taxon.
+        - date: 2026-07-22
+          note: |
+            Dispute expanded to document the support for the Coelophysoidea placement (Carrano and Sampson, 2004; Bristowe and Raath, 2004; Paul, 2016) against the single more conservative treatment as Theropoda incertae sedis (Tykoski and Rowe, 2004); the placement is treated as resolved rather than incertae sedis.
     pronunciation:
       phonetic: po-DOH-kee-SAWR-us
     etymology: From Greek podoces (πόδας ὠκύς, podas okys, 'swift-footed'), meaning 'swift-footed lizard', referring to its presumed agility
@@ -128550,6 +128383,16 @@ genera:
         issue: "186"
         pages: 469-479
         doi: 10.2475/ajs.s4-31.186.469
+      - id: carrano2004a
+        authors: Carrano, M. T.; Sampson, S. D.
+        year: 2004
+        title: "A review of coelophysoids (Dinosauria: Theropoda) from the Early Jurassic of Europe, with comments on the late history of the Coelophysoidea"
+        journal: Neues Jahrbuch für Geologie und Paläontologie - Monatshefte
+        volume: "2004"
+        issue: "9"
+        pages: 537-558
+        doi: 10.1127/njgpm/2004/2004/537
+        notes: Regarded the destroyed-holotype Podokesaurus as almost certainly an Early Jurassic coelophysoid on pelvic synapomorphies, but held little more could be said of its affinities.
       - id: tykoski2004a
         authors: Tykoski, R. S.; Rowe, T.
         year: 2004
@@ -128558,7 +128401,21 @@ genera:
         publisher: University of California Press
         pages: 47-70
         isbn: 978-0-520-24209-8
-        notes: Treated Podokesaurus as Theropoda incertae sedis.
+        notes: Accepted that Podokesaurus shows coelophysoid features but placed it no more precisely than Theropoda incertae sedis.
+      - id: bristowe2004a
+        authors: Bristowe, A.; Raath, M. A.
+        year: 2004
+        title: A juvenile coelophysoid skull from the Early Jurassic of Zimbabwe, and the synonymy of Coelophysis and Syntarsus
+        journal: Palaeontologia Africana
+        notes: Listed Podokesaurus as a junior synonym of Coelophysis without discussion, implying a coelophysoid placement.
+      - id: paul2016a
+        authors: Paul, G. S.
+        year: 2016
+        title: The Princeton Field Guide to Dinosaurs (2nd ed.)
+        publisher: Princeton University Press
+        pages: "84"
+        isbn: 978-0-691-16766-4
+        notes: Placed Podokesaurus among coelophysids.
       - id: jones2026c
         authors: Jones, B.; Viola, E.
         year: 2026
@@ -146097,6 +145954,7 @@ genera:
   Siluosaurus:
     genus: Siluosaurus
     parent: Cerapoda
+    placement: incertae sedis
     pronunciation:
       phonetic: suh-LOO-o-SAWR-us
     description: Siluosaurus is a genus of ornithischian dinosaur from the Early Cretaceous (Barremian-Albian) Xinminbao Group of Gansu, China, founded on two small teeth. The type species is S. zhanggiani.
