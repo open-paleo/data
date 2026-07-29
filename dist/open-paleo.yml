@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-07-28T16:22:57.620Z
+  built_at: 2026-07-29T22:44:25.034Z
   clade_count: 188
-  genus_count: 1400
+  genus_count: 1401
   license: CC-BY-4.0
   schema_version: 1.0.0
   version: "2026.07"
@@ -639,8 +639,8 @@ clades:
       - Maniraptora
       - Alvarezsauroidea
     type_genus: Alvarezsaurus
-    described: 2010
-    authors: Choiniere, J. N.; Xu, X.; Clark, J. M.; Forster, C. A.; Guo, Y.; Han, F.
+    described: 1991
+    authors: Bonaparte, J. F.
     diagnostic_features:
       - Elongate basipterygoid processes and a steeply (vertically) inclined basisphenoid
       - Hypertrophied internal tuberosity of the humerus, separated from the humeral head by a distinct notch and lying level with or projecting above the head
@@ -649,6 +649,15 @@ clades:
       - Greatly enlarged ungual on manual digit I, much larger than the unguals of the other digits
       - First metacarpal with distal condyles lacking collateral ligament fossae
     references:
+      - id: bonaparte1991a
+        authors: Bonaparte, J. F.
+        year: 1991
+        title: Los vertebrados fósiles de la Formación Rio Colorado, de la Ciudad de Neuquén y Cercanías, Cretácico Superior, Argentina [The vertebrate fossils of the Rio Colorado Formation, from the city of Neuquén and surrounding areas, Upper Cretaceous, Argentina]
+        journal: 'Revista del Museo Argentino de Ciencias Naturales "Bernardino Rivadavia" e Instituto Nacional de Investigación de las Ciencias Naturales: Paleontología'
+        volume: "4"
+        issue: "3"
+        pages: 17-123
+        notes: Erected Alvarezsauridae on Alvarezsaurus; Alvarezsauroidea is coordinate with it.
       - id: choiniere2010a
         authors: Choiniere, J. N.; Xu, X.; Clark, J. M.; Forster, C. A.; Guo, Y.; Han, F.
         year: 2010
@@ -659,6 +668,7 @@ clades:
         issue: "5965"
         pages: 571-574
         doi: 10.1126/science.1182143
+        notes: Described Haplocheirus and recovered it as the earliest-diverging alvarezsauroid, confirming a basal position for the clade within Maniraptora.
       - id: hartman2019a
         authors: Hartman, S.; Mortimer, M.; Wahl, W. R.; Lomax, D. R.; Lippincott, J.; Lovelace, D. M.
         year: 2019
@@ -668,7 +678,7 @@ clades:
         volume: "7"
         pages: e7247
         doi: 10.7717/peerj.7247
-        notes: Recovered Alvarezsauroidea paired with therizinosaurs among early maniraptoriforms.
+        notes: Recovered Alvarezsauroidea with Therizinosauria as the first-branching maniraptorans; an ornithomimosaur sister-group topology is four steps longer.
       - id: agnolín2021b
         authors: Agnolín, F. L.; Lu, J.-C.; Kundrát, M.; Xu, L.
         year: 2021
@@ -678,7 +688,7 @@ clades:
         issue: "3"
         pages: 443-452
         doi: 10.1080/08912963.2021.1929203
-        notes: Questioned monophyly of Jurassic Chinese alvarezsauroids on cranial grounds
+        notes: Questioned the alvarezsauroid affinities of Haplocheirus and other Jurassic Chinese forms on cranial grounds, arguing ornithomimosaur resemblances; ran no cladistic analysis.
       - id: meso2024a
         authors: Meso, J. G.; Pol, D.; Chiappe, L.; Qin, Z.; Díaz-Martínez, I.; Gianechini, F.; Apesteguía, S.; Makovicky, P. J.; Pittman, M.
         year: 2024
@@ -689,7 +699,7 @@ clades:
         issue: "2"
         pages: 135-155
         doi: 10.1111/cla.12600
-        notes: Recovered Alvarezsauroidea as the earliest-diverging maniraptoriform clade, with weak support.
+        notes: Recovered Alvarezsauroidea as the earliest-diverging maniraptoriform clade with Bremer 3 and jackknife 80%; the corresponding demotion of Ornithomimosauria is weakly supported.
   Anchiornithidae:
     description: |
       Anchiornithidae is a family of small, lightly built, feathered paravian theropod dinosaurs known mostly from the Late Jurassic of China, with the majority of fossils coming from the Tiaojishan Formation of Liaoning. Members include Anchiornis, Eosinopteryx, Serikornis, Caihong, Aurornis, Pedopenna, and Fujianvenator, alongside a few genera found beyond their Chinese heartland, such as Ostromia from Germany and the Early Cretaceous Yixianosaurus. These were long-legged, long-armed carnivores similar in build to Archaeopteryx and early troodontids, and most carried extensive pennaceous feathers down the legs as well as the arms, earning them the nickname "four-winged dinosaurs." Their arm feathers were slender, symmetrical, and unspecialized, likely useless for true flight. The group's exact place among paravians is unsettled, having been recovered at various times as the earliest-branching birds, as basal members of Troodontidae, or as part of Archaeopterygidae, and membership at the edges of the clade remains unstable.
@@ -732,6 +742,7 @@ clades:
         volume: "17"
         issue: "1"
         doi: 10.1186/s12862-017-1076-y
+        notes: Erected Anchiornithidae as a stem-based clade and recovered it as the basal-most avialan group, containing Anchiornis, Xiaotingia, Eosinopteryx and allies.
       - id: pei2020a
         authors: Pei, R.; Pittman, M.; Goloboff, P. A.; Dececchi, T. A.; Habib, M. B.; Kaye, T. G.; Larsson, H. C. E.; Norell, M. A.; Brusatte, S. L.; Xu, X.
         year: 2020
@@ -772,7 +783,7 @@ clades:
         volume: "7"
         pages: e7247
         doi: 10.7717/peerj.7247
-        notes: Maniraptoran phylogeny placing anchiornithids as basal paravians outside Eumaniraptora/within Avialae debate.
+        notes: Nested Anchiornis with Archaeopteryx in an expanded Archaeopterygidae recovered as deinonychosaurs, rejecting a stemward paravian position at 15 steps.
       - id: xu2011d
         authors: Xu, X.; You, H.; Du, K.; Han, F.
         year: 2011
@@ -784,6 +795,16 @@ clades:
         pages: 465-470
         doi: 10.1038/nature10288
         notes: Recovered Archaeopteryx among deinonychosaurs close to anchiornithids in a paravian phylogeny.
+      - id: cau2024a
+        authors: Cau, A.
+        year: 2024
+        title: A Unified Framework for Predatory Dinosaur Macroevolution
+        journal: Bollettino della Società Paleontologica Italiana
+        volume: "63"
+        issue: "1"
+        pages: 1-19
+        doi: 10.4435/BSPI.2024.08
+        notes: Recovered the anchiornithids as a paraphyletic grade of avialans leading to Scansoriopterygidae rather than as a clade; no support values are reported.
       - id: lefèvre2017a
         authors: Lefèvre, U.; Cau, A.; Cincotta, A.; Hu, D.; Chinsamy, A.; Escuillié, F.; Godefroit, P.
         year: 2017
@@ -1773,7 +1794,17 @@ clades:
         issue: "3"
         pages: e92022
         doi: 10.1371/journal.pone.0092022
-        notes: Oviraptorosaur phylogeny recovering Caudipterygidae as monophyletic.
+        notes: Oviraptorosaur phylogeny recovering Caudipterygidae as monophyletic in strict consensus, for Caudipteryx and Similicaudipteryx.
+      - id: qiu2019a
+        authors: Qiu, R.; Wang, X.; Wang, Q.; Li, N.; Zhang, J.; Ma, Y.
+        year: 2019
+        title: A new caudipterid from the Lower Cretaceous of China with information on the evolution of the manus of Oviraptorosauria
+        journal: Scientific Reports
+        publisher: Springer Science and Business Media LLC
+        volume: "9"
+        issue: "1"
+        doi: 10.1038/s41598-019-42547-6
+        notes: Erected Xingtianosaurus as a caudipterid and recovered Caudipteridae as monophyletic on a single character, with Caudipteryx, Similicaudipteryx and Xingtianosaurus in a polytomy.
       - id: hartman2019a
         authors: Hartman, S.; Mortimer, M.; Wahl, W. R.; Lomax, D. R.; Lippincott, J.; Lovelace, D. M.
         year: 2019
@@ -1783,18 +1814,7 @@ clades:
         volume: "7"
         pages: e7247
         doi: 10.7717/peerj.7247
-        notes: Large maniraptoran phylogeny; recovered Caudipterygidae members outside Caudipterygidae/Oviraptorosauria monophyly implied.
-      - id: funston2020a
-        authors: Funston, G. F.; Chinzorig, T.; Tsogtbaatar, K.; Kobayashi, Y.; Sullivan, C.; Currie, P. J.
-        year: 2020
-        title: A new two-fingered dinosaur sheds light on the radiation of Oviraptorosauria
-        journal: Royal Society Open Science
-        publisher: The Royal Society
-        volume: "7"
-        issue: "10"
-        pages: "201184"
-        doi: 10.1098/rsos.201184
-        notes: Recovered Caudipteryx, Similicaudipteryx, and Xingtianosaurus as monophyletic Caudipterygidae.
+        notes: Recovered Similicaudipteryx as the first-branching oviraptorosaur and described basal oviraptorosaurs as a grade of short-armed taxa including Caudipteryx.
       - id: jones2026c
         authors: Jones, B.; Viola, E.
         year: 2026
@@ -2539,6 +2559,7 @@ clades:
         journal: Proceedings of the American Association for the Advancement of Science
         volume: "19"
         pages: 194-247
+        notes: Listed Compsognathidae under the division Symphypoda with Compsognathus as its genus.
       - id: cau2024a
         authors: Cau, A.
         year: 2024
@@ -2569,6 +2590,13 @@ clades:
         issue: "5"
         doi: 10.1093/nsr/nwaf068
         notes: Placed Jehol compsognathid-like taxa plus Mirischia in separate clade Sinosauropterygidae.
+      - id: jones2026c
+        authors: Jones, B.; Viola, E.
+        year: 2026
+        title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
+        publisher: Princeton University Press
+        isbn: 978-0-691-25021-2
+        notes: Recovers a monophyletic Compsognathidae including Compsognathus and the Jehol taxa.
   Coronosauria:
     description: |
       Coronosauria is a clade of neoceratopsian dinosaurs, defined as the smallest group containing both Protoceratops and Triceratops. Its members show the first development of the elaborate neck frill and the fusion of the first several neck vertebrae into a single unit, an adaptation that helped support their increasingly heavy heads. Two subgroups are generally recognized within it: the Protoceratopsidae, a set of small Asian forms including Protoceratops and its closest relatives, and the Ceratopsoidea, which contains the large horned Ceratopsidae along with related animals such as Zuniceratops. Coronosaurs lived during the Cretaceous of Asia and North America.
@@ -4281,6 +4309,13 @@ clades:
         pages: 852-857
         doi: 10.1038/s41586-022-04528-0
         notes: Questioned the proposed semiaquatic ecology of halszkaraptorines.
+      - id: jones2026c
+        authors: Jones, B.; Viola, E.
+        year: 2026
+        title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
+        publisher: Princeton University Press
+        isbn: 978-0-691-25021-2
+        notes: Groups Halszkaraptorinae with Unenlagiinae as Unenlagiidae.
   Herrerasauria:
     description: |
       Herrerasauria is a clade of carnivorous dinosaurs from the Late Triassic, among the oldest dinosaurs known, first appearing roughly 233 million years ago during the Carnian stage. Its best-known members come from South America, including Herrerasaurus and Staurikosaurus of Argentina and Brazil, though possible relatives have also been recovered in North America, Africa, and perhaps other continents. Most were small to mid-sized predators, typically no more than about 4 meters long. Their anatomy blends primitive and derived features: they only superficially resemble later theropods and are not thought to be ancestral to any later dinosaur group. Distinctive traits include a hip socket that is only partly open, just two sacral vertebrae (the fewest of any dinosaur), and a hinged lower jaw. Their exact position on the dinosaur family tree remains debated, with analyses variously placing them as basal saurischians that diverged before the split between theropods and sauropodomorphs, or as early theropods.
@@ -4383,7 +4418,7 @@ clades:
       - id: benedetto1973a
         authors: Benedetto, J. L.
         year: 1973
-        title: Herrerasauridae, nueva familia de Saurisquios Triasicos
+        title: Herrerasauridae, nueva familia de Saurisquios Triasicos [Herrerasauridae, New Family of Triassic Saurischians]
         journal: Ameghiniana
         volume: "10"
         pages: 89-102
@@ -4476,16 +4511,16 @@ clades:
         pages: 1-225
         doi: 10.3897/zookeys.226.2840
         notes: Monographic revision and phylogenetic definition of Heterodontosauridae.
-      - id: butler2008a
-        authors: Butler, R. J.; Porro, L. B.; Norman, D. B.
+      - id: butler2008b
+        authors: Butler, R. J.; Upchurch, P.; Norman, D. B.
         year: 2008
-        title: A juvenile skull of the primitive ornithischian dinosaur Heterodontosaurus tucki from the 'Stormberg' of southern Africa
-        journal: Journal of Vertebrate Paleontology
-        volume: "28"
-        issue: "3"
-        pages: 702-711
-        doi: 10.1671/0272-4634(2008)28[702:AJSOTP]2.0.CO;2
-        notes: Juvenile heterodontosaurid skull description supporting basal Ornithischia placement outside Genasauria.
+        title: The phylogeny of the ornithischian dinosaurs
+        journal: Journal of Systematic Palaeontology
+        volume: "6"
+        issue: "1"
+        pages: 1-40
+        doi: 10.1017/S1477201907002271
+        notes: Ornithischian phylogenetic analysis recovering Heterodontosauridae outside Genasauria, close to the base of Ornithischia.
       - id: dieudonné2020a
         authors: Dieudonné, P.-E.; Cruzado-Caballero, P.; Godefroit, P.; Tortosa, T.
         year: 2020
@@ -4794,6 +4829,7 @@ clades:
         volume: "371"
         pages: 1-206
         doi: 10.1206/748.1
+        notes: Erected Jinfengopteryginae, with Jinfengopteryx recovered as sister to nearly all other troodontids.
       - id: sellés2021a
         authors: Sellés, A. G.; Vila, B.; Brusatte, S. L.; Currie, P. J.; Galobart, À.
         year: 2021
@@ -4803,7 +4839,7 @@ clades:
         volume: "11"
         issue: "1"
         doi: 10.1038/s41598-021-83745-5
-        notes: Recovered Jinfengopteryginae, placing Jinfengopteryx, Liaoningvenator, and Tamarro within it.
+        notes: Recovered Jinfengopteryginae, placing Jinfengopteryx, Liaoningvenator, Tamarro and Philovenator within it.
       - id: hartman2019a
         authors: Hartman, S.; Mortimer, M.; Wahl, W. R.; Lomax, D. R.; Lippincott, J.; Lovelace, D. M.
         year: 2019
@@ -4813,16 +4849,7 @@ clades:
         volume: "7"
         pages: e7247
         doi: 10.7717/peerj.7247
-        notes: Recovered Jinfengopteryginae's putative members in unstable, non-monophyletic positions.
-      - id: pei2022a
-        authors: Pei, R.; Qin, Y.; Wen, A.; Zhao, Q.; Wang, Z.; Liu, Z.; Guo, W.; Liu, P.; Ye, W.; Wang, L.; Yin, Z.; Dai, R.; Xu, X.
-        year: 2022
-        title: A new troodontid from the Upper Cretaceous Gobi Basin of inner Mongolia, China
-        journal: Cretaceous Research
-        publisher: Elsevier BV
-        volume: "130"
-        doi: 10.1016/j.cretres.2021.105052
-        notes: New troodontid description folding Jinfengopteryx into Sinovenatorinae.
+        notes: Recovered Jinfengopteryx in a highly unstable position, as likely to fall within Sinovenatorinae as to join the Almas group, with Liaoningvenator closer to troodontines.
   Khebbashia:
     description: |
       Khebbashia is a node-based clade of rebbachisaurid sauropods that unites the two most derived subfamilies, Limaysaurinae and Rebbachisaurinae, to the exclusion of the more basal rebbachisaurid forms. It is defined as the least inclusive clade containing Limaysaurus tessonei, Nigersaurus taqueti, and Rebbachisaurus garasbae, and the node-based framing keeps it distinct from the stem-based family Rebbachisauridae. Its members were medium-sized sauropods that lived during the Early Cretaceous of South America, Africa, and Europe. These were among the most specialized rebbachisaurids, notable for highly modified feeding apparatus, with broad batteries of closely packed teeth and slender limb proportions.
@@ -5963,6 +5990,23 @@ clades:
         issue: "1"
         doi: 10.1038/s41598-022-09272-z
         notes: Recovered Megaraptora within Coelurosauria as sister to or within Tyrannosauroidea
+      - id: cau2024a
+        authors: Cau, A.
+        year: 2024
+        title: A Unified Framework for Predatory Dinosaur Macroevolution
+        journal: Bollettino della Società Paleontologica Italiana
+        volume: "63"
+        issue: "1"
+        pages: 1-19
+        doi: 10.4435/BSPI.2024.08
+        notes: Recovered Megaraptora within Tyrannosauroidea; no support values are reported for the placement.
+      - id: jones2026c
+        authors: Jones, B.; Viola, E.
+        year: 2026
+        title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
+        publisher: Princeton University Press
+        isbn: 978-0-691-25021-2
+        notes: Reflects the allosauroid placement of Megaraptora in its classification boxes.
   Megaraptoridae:
     description: |
       Megaraptoridae is the derived family within Megaraptora, a group of carnivorous theropod dinosaurs noted for their powerfully built forelimbs and enormous hand claws. It encompasses the more advanced megaraptorans, including Megaraptor, Orkoraptor, Murusraptor, Aerosteon, and the Australian Australovenator, while excluding the basal-most members Fukuiraptor and Phuwiangvenator. Its members are set apart by a distinctive ulna that is T-shaped in cross section, formed by a thin, blade-like olecranon crest and a perpendicular ridge called the lateral tuberosity, and by thin, oval-sectioned claws bearing asymmetric grooves and a sharp lower edge. Most are known only from fragmentary remains, but collectively they were medium to large predators with slender, running-adapted limbs and heavily air-filled bones. They ranked among the apex predators of Late Cretaceous Gondwana, reaching their greatest diversity in Patagonia and also occurring in Australia.
@@ -6765,6 +6809,14 @@ clades:
         pages: 257-260
         doi: 10.1038/nature13874
         notes: Redescription of Deinocheirus establishing the division of Ornithomimosauria into Deinocheiridae and Ornithomimidae.
+      - id: holtz1994a
+        authors: Holtz, T. R.
+        year: 1994
+        title: "The phylogenetic position of the Tyrannosauridae: implications for theropod systematics"
+        journal: Journal of Paleontology
+        volume: "68"
+        pages: 1100-1117
+        notes: Proposed Arctometatarsalia on arctometatarsalian-foot evidence, recovering Ornithomimosauria within it as sister to Troodontidae in Bullatosauria.
       - id: holtz1996a
         authors: Holtz, T. R.
         year: 1996
@@ -6775,7 +6827,28 @@ clades:
         issue: "3"
         pages: 536-538
         doi: 10.1017/s0022336000038506
-        notes: Source of the arctometatarsalian-foot hypothesis placing Ornithomimosauria within Arctometatarsalia.
+        notes: Replaced the apomorphy-based definition of Arctometatarsalia with a stem-based one anchored on Ornithomimus, and coined Maniraptoriformes.
+      - id: cau2024a
+        authors: Cau, A.
+        year: 2024
+        title: A Unified Framework for Predatory Dinosaur Macroevolution
+        journal: Bollettino della Società Paleontologica Italiana
+        volume: "63"
+        issue: "1"
+        pages: 1-19
+        doi: 10.4435/BSPI.2024.08
+        notes: Recovered Ornithomimosauria as the sister group of Therizinosauroidea, both outside Maniraptora; no support values are reported.
+      - id: meso2024a
+        authors: Meso, J. G.; Pol, D.; Chiappe, L.; Qin, Z.; Díaz-Martínez, I.; Gianechini, F.; Apesteguía, S.; Makovicky, P. J.; Pittman, M.
+        year: 2024
+        title: Body size and evolutionary rate analyses reveal complex evolutionary history of Alvarezsauria
+        journal: Cladistics
+        publisher: Wiley
+        volume: "41"
+        issue: "2"
+        pages: 135-155
+        doi: 10.1111/cla.12600
+        notes: Treats an early-diverging maniraptoriform position for Ornithomimosauria as the prevailing view, recovering Alvarezsauria in that position instead.
   Ornithopoda:
     description: |
       Ornithopoda, meaning "bird feet," is a clade of ornithischian dinosaurs that includes the iguanodonts and hadrosaurs along with a range of smaller, more basal members. Known worldwide, ornithopods were among the most successful herbivorous dinosaurs of the Cretaceous, ranging from small, fast-running Jurassic bipeds to the large quadrupedal duck-billed hadrosaurs, some of which grew as heavy as medium-sized sauropods before dying out in the end-Cretaceous extinction. Their key evolutionary advantage was a progressively refined chewing apparatus, ultimately the most sophisticated of any non-avian dinosaur, that let them process tough plant material through a grinding, transverse jaw action. They are further distinguished by their characteristic birdlike feet, the lack of body armor, an elongated pubis, and the absence of an opening in the lower jaw. Early forms were mainly browsers or fruit-eaters, while larger, more derived members were bulk feeders capable of subsisting on coarse, low-nutrient vegetation.
@@ -7304,7 +7377,7 @@ clades:
         volume: "7"
         pages: e7247
         doi: 10.7717/peerj.7247
-        notes: Found Patagonykinae's monophyly not consistently recovered in this paravian phylogenetic analysis.
+        notes: Recovered Patagonykus and Bonapartenykus outside Alvarezsauridae, joined by Xiyunykus and Bannykus as patagonykines, though cautioning this arrangement is not heavily favored.
       - id: xu2018c
         authors: Xu, X.; Choiniere, J.; Tan, Q.; Benson, R. B. J.; Clark, J.; Sullivan, C.; Zhao, Q.; Han, F.; Ma, Q.; He, Y.; Wang, S.; Xing, H.; Tan, L.
         year: 2018
@@ -7315,14 +7388,14 @@ clades:
         issue: "17"
         pages: 2853-2860.e3
         doi: 10.1016/j.cub.2018.07.057
-        notes: Recovered Patagonykus and Bonapartenykus outside Alvarezsauridae as non-alvarezsaurid alvarezsauroids
+        notes: Recovered Patagonykus and Bonapartenykus outside Alvarezsauridae as successive outgroups on the alvarezsaurian stem, with Achillesaurus sister to Alvarezsauridae.
       - id: makovicky2026a
         authors: Makovicky, P. J.; Mitchell, J. S.; Meso, J. G.; Gianechini, F. A.; Cerda, I.; Apesteguía, S.
         year: 2026
         title: Argentine fossil rewrites evolutionary history of a baffling dinosaur clade
         journal: Nature
         doi: 10.1038/s41586-026-10194-3
-        notes: New Alnashetri specimen supports its placement outside Alvarezsauridae in Patagonykinae
+        notes: Alnashetri redescription; treats Patagonykus only as an anatomical comparator and assigns Patagonykinae no phylogenetic position.
       - id: jones2026c
         authors: Jones, B.; Viola, E.
         year: 2026
@@ -8274,7 +8347,7 @@ clades:
         notes: Erected Sauropodomorpha.
   Saurornitholestinae:
     description: |
-      Saurornitholestinae is a subfamily of eudromaeosaurian dromaeosaurid dinosaurs known only from the Late Cretaceous of western North America. Its members are medium-sized predators generally distinguished by their comparatively short snouts, and the group is typically taken to include Atrociraptor, Bambiraptor, and Saurornitholestes. It is most often recovered as the sister group to a clade uniting the dromaeosaurines and velociraptorines. Its exact position is contested, however: some analyses instead find it to be the earliest-diverging branch of the eudromaeosaurs, while others fail to recover it at all, distributing its proposed members among the velociraptorines or as basal eudromaeosaurs.
+      Saurornitholestinae is a subfamily of eudromaeosaurian dromaeosaurid dinosaurs known only from the Late Cretaceous of western North America. Its members are medium-sized predators generally distinguished by their comparatively short snouts, and the group is typically taken to include Atrociraptor, Bambiraptor, and Saurornitholestes. It is most often recovered as the sister group to a clade uniting the dromaeosaurines and velociraptorines. Its exact position is contested, however: some analyses instead find its proposed members to be the earliest-diverging branch of the eudromaeosaurs rather than a clade of their own.
     taxonomy:
       - Life
       - Animalia
@@ -8317,16 +8390,7 @@ clades:
         issue: "13"
         pages: 5002-5007
         doi: 10.1073/pnas.0811664106
-      - id: cau2021a
-        authors: Cau, A.; Madzia, D.
-        year: 2021
-        title: The phylogenetic affinities and morphological peculiarities of the bird-like dinosaur Borogovia gracilicrus from the Upper Cretaceous of Mongolia
-        journal: PeerJ
-        publisher: PeerJ
-        volume: "9"
-        pages: e12640
-        doi: 10.7717/peerj.12640
-        notes: Did not recover Saurornitholestinae, instead placing its members within Velociraptorinae or as basal eudromaeosaurs.
+        notes: Coined Saurornitholestinae for Saurornitholestes, Atrociraptor and Bambiraptor, and Eudromaeosauria for the larger clade.
       - id: pei2020a
         authors: Pei, R.; Pittman, M.; Goloboff, P. A.; Dececchi, T. A.; Habib, M. B.; Kaye, T. G.; Larsson, H. C. E.; Norell, M. A.; Brusatte, S. L.; Xu, X.
         year: 2020
@@ -8337,7 +8401,7 @@ clades:
         issue: "20"
         pages: 4033-4046.e8
         doi: 10.1016/j.cub.2020.06.105
-        notes: Large avialan-relatives phylogeny placing Saurornitholestinae members within Velociraptorinae instead.
+        notes: Did not recover Saurornitholestinae; placed Saurornitholestes and Bambiraptor as the earliest-diverging eudromaeosaurs, their order varying with weighting scheme.
       - id: powers2022a
         authors: Powers, M. J.; Fabbri, M.; Doschak, M. R.; Bhullar, B.-A. S.; Evans, D. C.; Norell, M. A.; Currie, P. J.
         year: 2022
@@ -8405,6 +8469,7 @@ clades:
         issue: "7216"
         pages: 1105-1108
         doi: 10.1038/nature07447
+        notes: Gave Scansoriopterygidae its phylogenetic definition and recovered it at the base of Avialae.
       - id: cau2021a
         authors: Cau, A.; Madzia, D.
         year: 2021
@@ -8414,7 +8479,25 @@ clades:
         volume: "9"
         pages: e12640
         doi: 10.7717/peerj.12640
-        notes: Recovered Scansoriopterygidae just outside Paraves, between Oviraptorosauria and the paravians.
+        notes: Recovered Scansoriopterygidae within Oviraptorosauria, consistently across the unweighted and all implied-weighting analyses.
+      - id: cau2018a
+        authors: Cau, A.
+        year: 2018
+        title: "The assembly of the avian body plan: a 160-million-year long process"
+        journal: Bollettino della Società Paleontologica Italiana
+        volume: "57"
+        issue: "1"
+        pages: 1-25
+        doi: 10.4435/BSPI.2018.01
+        notes: Parsimony analysis recovers scansoriopterygids among basal avialans, the Bayesian analysis as the basalmost oviraptorosaurs.
+      - id: agnolín2013a
+        authors: Agnolín, F. L.; Novas, F. E.
+        year: 2013
+        title: Avian Ancestors
+        book: SpringerBriefs in Earth System Sciences
+        publisher: Springer Netherlands
+        doi: 10.1007/978-94-007-5637-3
+        notes: Recovered scansoriopterygids as non-paravian maniraptorans, sister group to Oviraptorosauria.
       - id: pei2020a
         authors: Pei, R.; Pittman, M.; Goloboff, P. A.; Dececchi, T. A.; Habib, M. B.; Kaye, T. G.; Larsson, H. C. E.; Norell, M. A.; Brusatte, S. L.; Xu, X.
         year: 2020
@@ -8425,7 +8508,7 @@ clades:
         issue: "20"
         pages: 4033-4046.e8
         doi: 10.1016/j.cub.2020.06.105
-        notes: Placed scansoriopterygids just outside Paraves, between oviraptorosaurs and paravians.
+        notes: Scored scansoriopterygids in its large paravian matrix as non-paravian maniraptorans; states no recovered position for them in the main text.
       - id: hartman2019a
         authors: Hartman, S.; Mortimer, M.; Wahl, W. R.; Lomax, D. R.; Lippincott, J.; Lovelace, D. M.
         year: 2019
@@ -8445,6 +8528,16 @@ clades:
         pages: 1-206
         doi: 10.1206/748.1
         notes: Recovered scansoriopterygids near the base of Paraves in its paravian phylogeny review.
+      - id: cau2024a
+        authors: Cau, A.
+        year: 2024
+        title: A Unified Framework for Predatory Dinosaur Macroevolution
+        journal: Bollettino della Società Paleontologica Italiana
+        volume: "63"
+        issue: "1"
+        pages: 1-19
+        doi: 10.4435/BSPI.2024.08
+        notes: Recovered Scansoriopterygidae within Avialae, crownward of a paraphyletic anchiornithid grade; no support values are reported.
       - id: foth2025a
         authors: Foth, C.; van de Kamp, T.; Tischlinger, H.; Kantelis, T.; Carney, R. M.; Zuber, M.; Hamann, E.; Wallaard, J. J. W.; Lenz, N.; Rauhut, O. W. M.; Frey, E.
         year: 2025
@@ -8454,7 +8547,7 @@ clades:
         issue: "1"
         pages: 17-43
         doi: 10.3897/fr.28.131671
-        notes: Placed Scansoriopterygidae outside Avialae rather than as first-branching avialans.
+        notes: Recovered Scansoriopterygidae as basal members of Oviraptorosauria rather than within Paraves.
   Shamosaurinae:
     description: |
       Shamosaurinae is a basal subfamily of ankylosaurid dinosaurs, the heavily armored, quadrupedal herbivores of the Cretaceous. It is defined as the group containing Gobisaurus and Shamosaurus but excluding the more derived Ankylosaurus, and is recognized only when those two Asian genera form a clade to the exclusion of the ankylosaurines. As early-diverging members near the base of the family, its genera retain a comparatively long, lightly ornamented skull and lack the fully developed tail club that distinguishes their later ankylosaurid relatives.
@@ -8546,6 +8639,7 @@ clades:
         issue: "3"
         pages: 763-780
         doi: 10.1111/1755-6724.13307
+        notes: Erected Sinovenatorinae with a stem-based definition, recovering Sinovenator, Mei, Sinusonasus and Daliansaurus within it.
       - id: hartman2019a
         authors: Hartman, S.; Mortimer, M.; Wahl, W. R.; Lomax, D. R.; Lippincott, J.; Lovelace, D. M.
         year: 2019
@@ -8555,7 +8649,7 @@ clades:
         volume: "7"
         pages: e7247
         doi: 10.7717/peerj.7247
-        notes: Recovered Sinovenatorinae troodontid grouping in its paravian phylogenetic analysis.
+        notes: Recovered Sinovenatorinae with a different membership, excluding Sinusonasus and Daliansaurus and including Xiaotingia and Jianianhualong.
       - id: yin2018a
         authors: Yin, Y.; Pei, R.; Zhou, C.
         year: 2018
@@ -8565,6 +8659,13 @@ clades:
         pages: e4977
         doi: 10.7717/peerj.4977
         notes: Recovers Sinovenator, Sinusonasus, and the new specimen as an intermediate grade, not a clade
+      - id: jones2026c
+        authors: Jones, B.; Viola, E.
+        year: 2026
+        title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
+        publisher: Princeton University Press
+        isbn: 978-0-691-25021-2
+        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
   Somphospondyli:
     description: |
       Somphospondyli is a clade of titanosauriform sauropod dinosaurs that lived from the Late Jurassic to the end of the Cretaceous, with remains found on every continent. It embraces all titanosauriforms more closely related to the giant, largely Cretaceous titanosaurs than to the brachiosaurids, and so unites the diverse Titanosauria with the East Asian euhelopodids and an assortment of more basal, non-titanosaurian forms. Members are distinguished by details of their vertebrae, including a long neck and internal bone tissue riddled with a sponge-like network of air-filled chambers. It is this spongy, camellate texture pervading the backbone that gives the group its name.
@@ -9272,7 +9373,7 @@ clades:
       - id: nopcsa1915a
         authors: Nopcsa, B. F.
         year: 1915
-        title: Die Dinosaurier der siebenbürgischen Landesteile Ungarns
+        title: Die Dinosaurier der siebenbürgischen Landesteile Ungarns [The Dinosaurs of the Transylvanian Territories of Hungary]
         journal: Mitteilungen aus dem Jahrbuche der Königlich Ungarischen Geologischen Reichsanstalt
         volume: "23"
         pages: 1-26
@@ -9816,6 +9917,13 @@ clades:
         publisher: Springer Netherlands
         doi: 10.1007/978-94-007-5637-3
         notes: Treated unenlagiines as avialans closer to birds rather than dromaeosaurids.
+      - id: jones2026c
+        authors: Jones, B.; Viola, E.
+        year: 2026
+        title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
+        publisher: Princeton University Press
+        isbn: 978-0-691-25021-2
+        notes: Adopts Unenlagiinae as an early-diverging clade within Dromaeosauridae.
   Velociraptorinae:
     description: |
       Velociraptorinae is a subfamily of eudromaeosaurian dromaeosaurid dinosaurs, traditionally comprising the more slender, narrow-snouted species and centered on Velociraptor and its close relatives. Its members are found primarily in Asia and include such genera as Tsaagan, Kuru, and Adasaurus, though several North American forms like Acheroraptor, Dineobellator, and possibly Deinonychus have also been assigned to it. Velociraptorine teeth are often distinguished by having larger serrations along the rear edge than the front, or by lacking front serrations altogether. It is one of three major eudromaeosaurian subgroups, and while widely used, its exact composition is contentious: analyses vary greatly over which species truly belong, with some placing traditional members closer to Dromaeosaurus instead. Velociraptorines appear in the Late Cretaceous, and the bulk of their diversity, including the famous Velociraptor itself, is known from Asia.
@@ -11413,9 +11521,9 @@ genera:
             - 109.858887
         type_specimen:
           specimen_id:
-            - FR.MNUFR-15
+            - MNUFR 15
           specimen_type: holotype
-          institution: Paleontological Center, Mongolian Academy of Sciences
+          institution: Mongolian National University
         size:
           hip_height_m:
             min: 1.3
@@ -17031,7 +17139,46 @@ genera:
         erected_in: rauhut2024a
         type_specimen:
           specimen_id:
-            - FTU-1
+            - IGB 2-1
+            - IGB 2-2
+            - IGB 2-9
+            - IGB 2-10
+            - IGB 2-11
+            - IGB 2-12
+            - IGB 2-13
+            - IGB 2-14
+            - IGB 2-15
+            - IGB 2-16
+            - IGB 2-17
+            - IGB 2-18
+            - IGB 2-19
+            - IGB 2-20
+            - IGB 2-21
+            - IGB 2-22
+            - IGB 2-24
+            - IGB 2-25
+            - IGB 2-26
+            - IGB 2-27
+            - IGB 2-28
+            - IGB 2-29
+            - IGB 2-30
+            - IGB 2-31
+            - IGB 2-32
+            - IGB 2-33
+            - IGB 2-34
+            - IGB 2-35
+            - IGB 2-36
+            - IGB 2-37
+            - IGB 2-38
+            - IGB 2-39
+            - IGB 2-40
+            - IGB 2-41
+            - IGB 2-42
+            - IGB 2-43
+            - IGB 2-44
+            - IGB 2-45
+            - IGB 2-46
+            - IGB 2-47
           specimen_type: holotype
           institution: Institute of Geology, Kyrgyz National Academy of Sciences
           material: "Partial skeleton: both postorbitals, left quadratojugal, dorsal and sacral vertebrae, ribs, a manual phalanx and ungual, partial pelvis, and hindlimb bones (femora, tibiae, fibula, tarsals, metatarsals II–III, pedal phalanges)"
@@ -17078,10 +17225,12 @@ genera:
     description: Altirhinus is a genus of ornithopod dinosaur from the Early Cretaceous (Albian) Khuren Dukh Formation of Dornogov, Mongolia. The only known species, Altirhinus kurzanovi, is characterized by its distinctive highly arched nasal region.
     dispute:
       summary: |
-        Altirhinus kurzanovi is placed near the base of Hadrosauroidea by Jones (2026), but it has also been recovered as a styracosternan just outside Hadrosauroidea (Neoiguanodontia-grade).
+        Altirhinus kurzanovi is recovered within Hadrosauroidea as an early-diverging member by recent analyses (Godefroit et al., 2012; Poole, 2022). Norman (1998), describing the genus, instead regarded it as a derived iguanodontid alongside Iguanodon and Ouranosaurus — a position outside Hadrosauroidea as currently delimited — and interpreted its hadrosaurid-like cranial features as convergent rather than synapomorphic; that assessment rested on a provisional cladogram, with a full numerical analysis deferred. Norman (2014) later recovered it within a poorly resolved neoiguanodontian plexus.
       history:
         - date: 2026-06-29
           note: Placed at Hadrosauroidea (basal) following the prevailing view; the styracosternan alternative reflected.
+        - date: 2026-07-28
+          note: Retained at Hadrosauroidea (basal) following Godefroit et al. (2012) and Poole (2022); the iguanodontid assignment of Norman (1998) is recorded as the historical alternative.
     diet: herbivore
     locomotion: facultative
     paleoenvironment:
@@ -17154,6 +17303,33 @@ genera:
         issue: 1-2
         pages: 291-348
         doi: 10.1111/j.1096-3642.1998.tb02533.x
+        notes: Erected Altirhinus and regarded it as a derived iguanodontid alongside Iguanodon and Ouranosaurus, treating its hadrosaurid-like cranial features as convergent.
+      - id: godefroit2012a
+        authors: Godefroit, P.; Escuillié, F.; Y. L. Bolotsky, P. L.
+        year: 2012
+        title: A new basal hadrosauroid dinosaur from the Upper Cretaceus of Kazakhstan
+        journal: Bernissart Dinosaurs and Early Cretaceous Terrestrial Ecosystems
+        publisher: Indiana University Press
+        pages: 334-358
+        notes: Recovered Altirhinus among the successive Asian grade of non-hadrosaurid hadrosauroids.
+      - id: poole2022a
+        authors: Poole, K. E.
+        year: 2022
+        title: Phylogeny of iguanodontian dinosaurs and the evolution of quadrupedality
+        journal: Palaeontologia Electronica
+        volume: "25"
+        issue: "3"
+        pages: a30
+        doi: 10.26879/702
+        notes: Recovered Altirhinus within Hadrosauroidea in its iguanodontian phylogeny.
+      - id: norman2014b
+        authors: Norman, D. B.
+        year: 2014
+        title: "Iguanodonts from the Wealden of England: do they contribute to the discussion concerning hadrosaur origins?"
+        book: Hadrosaurs
+        publisher: Indiana University Press
+        pages: 10-43
+        notes: Recovered Altirhinus within a poorly resolved neoiguanodontian plexus.
       - id: jones2026a
         authors: Jones, B.; Viola, E.
         year: 2026
@@ -19078,7 +19254,7 @@ genera:
       - id: cabrera1947a
         authors: Cabrera, A.
         year: 1947
-        title: Un saurópodo nuevo del Jurásico de Patagonia
+        title: Un saurópodo nuevo del Jurásico de Patagonia [A New Sauropod from the Jurassic of Patagonia]
         journal: Instituto del Museo de la Universidad Nacional de La Plata, Notas del Mueso de La Plata, Paleontología
         volume: "12"
         issue: "95"
@@ -23517,7 +23693,7 @@ genera:
       - id: wellnhofer1993a
         authors: Wellnhofer, P.
         year: 1993
-        title: Das siebte Exemplar von Archaeopteryx aus den Solnhofener Schichten
+        title: Das siebte Exemplar von Archaeopteryx aus den Solnhofener Schichten [The Seventh Specimen of Archaeopteryx from the Solnhofen Layers]
         journal: Archaeopteryx
         volume: "11"
         pages: 1-48
@@ -44335,7 +44511,7 @@ genera:
     description: Choyrodon is a genus of hadrosauroid dinosaur from the Early Cretaceous (Albian) Khuren Dukh Formation of Mongolia. The type and only species is Choyrodon barsboldi. The generic name is derived from the city of Choyr, and -odon, from Latin for tooth; the specific name barsboldi honors paleontologist Rinchen Barsbold. The material consists of a holotype partial skull and cervical ribs, with two other partial skulls both with associated postcranial material. It was found to be the sister taxon of Eolambia.
     dispute:
       summary: |
-        Choyrodon barsboldi is placed among basal hadrosauroids by Jones (2026), who notes its phylogenetic position is poorly resolved; it has been recovered close to Eolambia.
+        Choyrodon barsboldi is an early-diverging hadrosauroid whose position within the group is poorly resolved. Gates et al. (2018), describing the genus, recovered it as the sister taxon of the North American Eolambia under the Norman (2015) matrix, but under the Wenhao and Godefroit (2012) matrix it fell into a large unresolved polytomy with other basal hadrosauroids.
       history:
         - date: 2026-06-29
           note: Placed at Hadrosauroidea (basal) following the prevailing view.
@@ -44404,6 +44580,7 @@ genera:
         volume: "6"
         pages: e5300
         doi: 10.7717/peerj.5300
+        notes: Erected Choyrodon and recovered it as sister taxon to Eolambia under the Norman (2015) matrix, unresolved under an alternative matrix.
       - id: paul2024a
         authors: Paul, G. S.
         year: 2024
@@ -55654,10 +55831,11 @@ genera:
             - 14.752449
         type_specimen:
           specimen_id:
-            - DK 315
+            - MGUH 27218
           specimen_type: holotype
           institution: Statens Naturhistoriske Museum (SNM), Københavns Universitet
           material: An anterior dentary tooth
+          notes: Also cited in the literature under the alternate number DK 315.
         size:
           length_m:
             min: 2
@@ -56032,7 +56210,7 @@ genera:
       - id: navarrete2011a
         authors: Navarrete, C.; Casal, G.; Martínez, R.
         year: 2011
-        title: Drusilasaura deseadensis gen. et sp. nov., un nuevo titanosaurio (Dinosauria-Sauropoda), de la Formación Bajo Barreal, Cretácico Superior del norte de Santa Cruz, Argentina
+        title: Drusilasaura deseadensis gen. et sp. nov., un nuevo titanosaurio (Dinosauria-Sauropoda), de la Formación Bajo Barreal, Cretácico Superior del norte de Santa Cruz, Argentina [Drusilasaura deseadensis gen. et sp. nov., a New Titanosaur (Dinosauria-Sauropoda) of the Bajo Barreal Formation, Upper Cretaceous of North of Santa Cruz, Argentina]
         journal: REVISTA BRASILEIRA DE PALEONTOLOGIA
         publisher: Sociedade Brasileira de Paleontologia
         volume: "14"
@@ -59598,7 +59776,7 @@ genera:
       - id: haubold1990a
         authors: Haubold, H.
         year: 1990
-        title: Ein neuer Dinosaurier (Ornithischia, Thyreophora) aus dem unteren Jura des nördlichen Mitteleuropa
+        title: Ein neuer Dinosaurier (Ornithischia, Thyreophora) aus dem unteren Jura des nördlichen Mitteleuropa [A New Dinosaur (Ornithischia, Thyreophora) from the Lower Jurassic of Northern Central Europe]
         journal: Revue de Paléobiologie
         volume: "9"
         issue: "1"
@@ -63628,7 +63806,7 @@ genera:
       - id: antunes1991a
         authors: Antunes, M. T.; Sigogneau-Russell, D.
         year: 1991
-        title: Nouvelles données sur les dinosaures du Crétacé supérieur du Portugal
+        title: Nouvelles données sur les dinosaures du Crétacé supérieur du Portugal [New Data on the Dinosaurs of the Upper Cretaceous of Portugal]
         journal: Comptes Rendus de l'Académie des Sciences, Paris, Série II
         volume: "313"
         pages: 113-119
@@ -71799,7 +71977,7 @@ genera:
     description: "Gongxianosaurus is a genus of basal sauropod dinosaur from the early Jurassic Period (Sinemurian-Pliensbachian stage). The only species is Gongxianosaurus shibeiensis. Based on four fragmentary to complete specimens found in the Ziliujing Formation, China (Sichuan Province), it is one of the most completely known early sauropods. The skeleton is known in large part, missing both the hand and the majority of the skull. Gongxianosaurus was firstly named and described in a short note published in 1998; however, a comprehensive description has yet to be published. Gongxianosaurus shibeiensis was named for the place it was found, near the village Shibei in Gong County (珙县; Pinyin: Gǒng Xiàn)."
     dispute:
       summary: |
-        Gongxianosaurus shibeiensis is recovered among the basalmost sauropods by Jones (2026) and others, but as a non-sauropodan sauropodiform near the Sauropoda boundary under more restrictive definitions.
+        Gongxianosaurus shibeiensis sits close to the sauropodiform-sauropod boundary. He et al. (1998), describing the genus, placed it within Sauropoda as an early and primitive sauropod retaining numerous prosauropod-like features, though without a cladistic analysis, and McPhee et al. (2014) likewise recovered it in an unresolved basal-Sauropoda polytomy. Rauhut et al. (2020) instead recovered it among sauropodiforms outside Sauropoda, and Pol et al. (2022) place it outside Eusauropoda on strong support.
       history:
         - date: 2026-06-29
           note: |
@@ -71873,6 +72051,35 @@ genera:
         volume: "18"
         issue: "1"
         pages: 1-6
+        notes: Erected Gongxianosaurus and placed it within Sauropoda as an early and primitive sauropod, arguing the case narratively rather than cladistically.
+      - id: mcphee2014a
+        authors: McPhee, B. W.; Yates, A. M.; Choiniere, J. N.; Abdala, F.
+        year: 2014
+        title: "The complete anatomy and phylogenetic relationships of Antetonitrus ingenipes (Sauropodiformes, Dinosauria): implications for the origins of Sauropoda"
+        journal: Zoological Journal of the Linnean Society
+        volume: "171"
+        issue: "1"
+        pages: 151-205
+        doi: 10.1111/zoj.12127
+        notes: Recovered Gongxianosaurus in an unresolved basal-Sauropoda polytomy.
+      - id: rauhut2020a
+        authors: Rauhut, O. W. M.; Holwerda, F. M.; Furrer, H.
+        year: 2020
+        title: A derived sauropodiform dinosaur and other sauropodomorph material from the Late Triassic of Canton Schaffhausen, Switzerland
+        journal: Swiss Journal of Geosciences
+        publisher: Pensoft Publishers
+        volume: "113"
+        issue: "1"
+        doi: 10.1186/s00015-020-00360-8
+        notes: Recovered Gongxianosaurus among sauropodiforms outside Sauropoda.
+      - id: pol2022a
+        authors: Pol, D.; Gomez, K.; Holwerda, F. M.; Rauhut, O. W. M.; Carballido, J. L.
+        year: 2022
+        title: Sauropods from the Early Jurassic of South America and the Radiation of Eusauropoda
+        journal: South American Sauropodomorph Dinosaurs (Springer Earth System Sciences)
+        pages: 131-163
+        doi: 10.1007/978-3-030-95959-3_4
+        notes: Recovered Gongxianosaurus outside Eusauropoda on strong support.
       - id: paul2024a
         authors: Paul, G. S.
         year: 2024
@@ -75330,16 +75537,21 @@ genera:
   Helioceratops:
     genus: Helioceratops
     parent: Neoceratopsia
+    placement: incertae sedis
     etymology: From Greek helios (sun), keras (horn), and ops (face); meaning 'sun horned face', referencing the animal's Eastern (sunrise) origin and its relationship to other ceratopsians
     pronunciation:
       phonetic: HEE-lee-o-SEH-ruh-tops
     description: Helioceratops is a genus of herbivorous neoceratopsian dinosaur from the Middle Cretaceous of China.
     dispute:
       summary: |
-        Helioceratops brachygnathus has been recovered both as a basal neoceratopsian and as a leptoceratopsid; Jones (2026) reports both placements and leans toward a basal neoceratopsian position.
+        Helioceratops brachygnathus is persistently unstable in neoceratopsian phylogenies, a consequence of its fragmentary material. Jin et al. (2009), describing the genus, treated it as a non-coronosaurian neoceratopsian alongside Auroraceratops and Yamaceratops, mapping characters onto an existing cladogram rather than running an analysis. Morschhauser et al. (2018) recovered it within Leptoceratopsidae as sister to all other members, a composition adopted in the formal definition of that clade by Madzia et al. (2021). Other analyses leave it unresolved: Arbour and Evans (2019) place it in a polytomy outside Coronosauria in their strict consensus, though it is the leptoceratopsid outgroup in 63% of individual trees; Ryan et al. (2023) and Tanaka et al. (2024) both leave it unresolved among the leptoceratopsids and their relatives; and Son et al. (2022) treat it as an unstable wildcard whose removal resolves the basal neoceratopsian polytomy.
       history:
         - date: 2026-06-27
           note: Placed at Neoceratopsia (basal) following the prevailing view (Jones, 2026); leptoceratopsid alternative reflected.
+        - date: 2026-07-28
+          note: Retained at Neoceratopsia (basal) following Jin et al. (2009); the leptoceratopsid placement of Morschhauser et al. (2018) is recorded as the competing hypothesis.
+        - date: 2026-07-29
+          note: Flagged incertae sedis within Neoceratopsia. Only Morschhauser et al. (2018) resolve the genus; Arbour and Evans (2019), Ryan et al. (2023) and Tanaka et al. (2024) leave it unresolved and Son et al. (2022) treat it as a wildcard, so it cannot be assigned to a subclade.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -75406,6 +75618,64 @@ genera:
         issue: "2"
         pages: 200-206
         doi: 10.1111/j.1755-6724.2009.00023.x
+        notes: Erected Helioceratops and treated it as a non-coronosaurian neoceratopsian with Auroraceratops and Yamaceratops, without a numerical analysis.
+      - id: morschhauser2018a
+        authors: Morschhauser, E. M.; You, H.; Li, D.; Dodson, P.
+        year: 2018
+        title: "Phylogenetic history of Auroraceratops rugosus (Ceratopsia: Ornithischia) from the Lower Cretaceous of Gansu Province, China"
+        journal: Journal of Vertebrate Paleontology
+        publisher: Informa UK Limited
+        volume: "38"
+        issue: sup1
+        pages: 117-147
+        doi: 10.1080/02724634.2018.1509866
+        notes: Recovered Helioceratops within Leptoceratopsidae as sister to all other members of that clade.
+      - id: madzia2021a
+        authors: Madzia, D.; Arbour, V. M.; Boyd, C. A.; Farke, A. A.; Cruzado-Caballero, P.; Evans, D. C.
+        year: 2021
+        title: The phylogenetic nomenclature of ornithischian dinosaurs
+        journal: PeerJ
+        volume: "9"
+        pages: e12362
+        doi: 10.7717/peerj.12362
+        notes: Includes Helioceratops in the composition of Leptoceratopsidae in its formal conversion of the clade.
+      - id: arbour2019a
+        authors: Arbour, V. M.; Evans, D. C.
+        year: 2019
+        title: A new leptoceratopsid dinosaur from Maastrichtian-aged deposits of the Sustut Basin, northern British Columbia, Canada
+        journal: PeerJ
+        publisher: PeerJ
+        volume: "7"
+        pages: e7926
+        doi: 10.7717/peerj.7926
+        notes: Recovered Helioceratops in an unresolved polytomy outside Coronosauria in strict consensus, and as the leptoceratopsid outgroup in 63% of individual trees.
+      - id: son2022a
+        authors: Son, M.; Lee, Y.-M.; Zorigt, B.; Kobayashi, Y.; Park, J.-Y.; Lee, S.; Kim, S.-H.; Lee, K. Y.
+        year: 2022
+        title: A new juvenile Yamaceratops (Dinosauria, Ceratopsia) from the Javkhlant Formation (Upper Cretaceous) of Mongolia
+        journal: PeerJ
+        volume: "10"
+        pages: e13176
+        doi: 10.7717/peerj.13176
+        notes: Treated Helioceratops as an unstable wildcard; removing it resolved the basal neoceratopsian polytomy.
+      - id: tanaka2024a
+        authors: Tanaka, T.; Chiba, K.; Ikeda, T.; Ryan, M. J.
+        year: 2024
+        title: A new neoceratopsian (Ornithischia, Ceratopsia) from the Lower Cretaceous Ohyamashimo Formation (Albian), southwestern Japan
+        journal: Papers in Palaeontology
+        publisher: Wiley
+        volume: "10"
+        issue: "5"
+        doi: 10.1002/spp2.1587
+        notes: Recovered Helioceratops in an unresolved polytomy with Koreaceratops, Yamaceratops, Leptoceratopsidae and Coronosauria.
+      - id: ryan2023a
+        authors: Ryan, M. J.; Micucci, L.; Rizo, H.; Sullivan, C.; Lee, Y.-N.; Evans, D. C.
+        year: 2023
+        title: "A new Late Cretaceous leptoceratopsid (Dinosauria: Ceratopsia) from the Oldman Formation (Campanian) of Alberta, Canada"
+        journal: "Windows into Sauropsid and Synapsid Evolution: Essays in Honor of Prof. Louis L. Jacobs"
+        publisher: Dinosaur Science Center Press
+        pages: 151-165
+        notes: Left Helioceratops unresolved with the leptoceratopsids and Koreaceratops in its majority-rule tree.
       - id: jones2026a
         authors: Jones, B.; Viola, E.
         year: 2026
@@ -75819,7 +76089,7 @@ genera:
     description: Hesperonyx is an extinct genus of dryomorphan ornithopod dinosaur from the Late Jurassic Lourinhã Formation of Portugal. The genus contains a single species, Hesperonyx martinhotomasorum, known from bones of the fore- and hindlimbs.
     dispute:
       summary: |
-        Hesperonyx martinhotomasorum is recovered as a dryosaurid in some analyses and as a basal dryomorphan in others; Jones (2026) treats it as a likely dryosaurid.
+        Hesperonyx martinhotomasorum is of uncertain position within Dryomorpha. Rotatori et al. (2023), describing the genus, recovered it at the base of Dryosauridae under Bayesian tip-dating but among the non-dryosaurid dryomorphans under parsimony, favoring neither result and concluding it is a dryomorphan of uncertain affinities.
       history:
         - date: 2026-06-29
           note: Placed at Dryosauridae following the prevailing view; the basal-dryomorphan alternative reflected.
@@ -75888,6 +76158,7 @@ genera:
         volume: "43"
         issue: "4"
         doi: 10.1080/02724634.2024.2310066
+        notes: Erected Hesperonyx; its Bayesian analysis recovers it at the base of Dryosauridae and its parsimony analyses among non-dryosaurid dryomorphans.
       - id: jones2026a
         authors: Jones, B.; Viola, E.
         year: 2026
@@ -76342,6 +76613,7 @@ genera:
         issue: "3"
         pages: 702-711
         doi: 10.1671/0272-4634(2008)28[702:AJSOTP]2.0.CO;2
+        notes: Described the juvenile skull SAM-PK-K10487 and referred it to Heterodontosaurus tucki on shared autapomorphies.
     taxonomy:
       - Life
       - Animalia
@@ -76980,7 +77252,7 @@ genera:
           specimen_id:
             - WN V-6
           specimen_type: holotype
-          institution: Zagreb Institute of Geology
+          institution: Museum of Bale
           material: Posterior dorsal vertebra.
           completeness: fragmentary
         erected_in: dallavecchia1998a
@@ -86537,7 +86809,7 @@ genera:
         erected_in: you2009a
         type_specimen:
           specimen_id:
-            - "FRDC: GJ 06-2-52"
+            - FRDC GJ 06-2-52
           specimen_type: holotype
           institution: The Fossil Research and Development Center of the Third Geology and Mineral Resources Exploration Academy of Gansu Provincial Bureau of Geo-exploration and Mineral Development
           material: Articulated posterior portion of the skull, including elements of the skull roof (postorbitals, squamosals, frontals, fused parietals) and almost complete braincase
@@ -93321,7 +93593,7 @@ genera:
       - id: coria2012a
         authors: Coria, R. A.; Riga, B. G.; Casadío, S.
         year: 2012
-        title: Un Nuevo Hadrosáurido (Dinosauria, Ornithopoda) de la Formación Allen, Provincia de la Pampa, Argentina
+        title: Un Nuevo Hadrosáurido (Dinosauria, Ornithopoda) de la Formación Allen, Provincia de la Pampa, Argentina [A New Hadrosaurid (Dinosauria, Ornithopoda) from the Allen Formation, La Pampa Province, Argentina]
         journal: Ameghiniana
         publisher: Asociacion Paleontologica Argentina
         volume: "49"
@@ -93464,7 +93736,7 @@ genera:
       - id: bonaparte1979c
         authors: Bonaparte, J. F.; Gasparini, Z.
         year: 1979
-        title: Los saurópodos de los grupos Neuquén y Chubut, y sus relaciones cronológicas
+        title: Los saurópodos de los grupos Neuquén y Chubut, y sus relaciones cronológicas [The Sauropods of the Neuquén and Chubut Groups and their Chronological Relations]
         journal: Actas del VII Congreso Geológico Argentino
         volume: "2"
         pages: 393-406
@@ -94893,7 +95165,7 @@ genera:
           specimen_id:
             - QW200701
           specimen_type: holotype
-          institution: Zigong Dinosaur Museum
+          institution: Leshan Giant Buddha Museum
           material: Relatively complete adult skeleton including incomplete skull, 7 cervical, 12 dorsal, 5 sacral, 2 caudal vertebrae, right ilium, left pubis, femur, tibiae, partial metacarpals, phalanges, astragalus, metatarsals
           completeness: complete
         size:
@@ -95060,16 +95332,16 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
         notes: Source of the hip height estimate.
-      - id: butler2008a
-        authors: Butler, R. J.; Porro, L. B.; Norman, D. B.
+      - id: butler2008b
+        authors: Butler, R. J.; Upchurch, P.; Norman, D. B.
         year: 2008
-        title: A juvenile skull of the primitive ornithischian dinosaur Heterodontosaurus tucki from the 'Stormberg' of southern Africa
-        journal: Journal of Vertebrate Paleontology
-        volume: "28"
-        issue: "3"
-        pages: 702-711
-        doi: 10.1671/0272-4634(2008)28[702:AJSOTP]2.0.CO;2
-        notes: Recovered Lesothosaurus as the most basal thyreophoran.
+        title: The phylogeny of the ornithischian dinosaurs
+        journal: Journal of Systematic Palaeontology
+        volume: "6"
+        issue: "1"
+        pages: 1-40
+        doi: 10.1017/S1477201907002271
+        notes: Recovered Lesothosaurus as the most basal thyreophoran, on a single unambiguous character.
       - id: herne2019a
         authors: Herne, M. C.; Nair, J. P.; Evans, A. R.; Tait, A. M.
         year: 2019
@@ -95432,7 +95704,7 @@ genera:
       - id: hoffstetter1957a
         authors: Hoffstetter, R.
         year: 1957
-        title: Quelques observations sur les Stégosaurinés
+        title: Quelques observations sur les Stégosaurinés [Some Observations on the Stegosaurinae]
         journal: Bulletin du Muséum National d'Histoire Naturelle, Paris, 2nde série
         volume: "29"
         pages: 537-547
@@ -100989,7 +101261,7 @@ genera:
       - id: nopcsa1915a
         authors: Nopcsa, B. F.
         year: 1915
-        title: Die Dinosaurier der siebenbürgischen Landesteile Ungarns
+        title: Die Dinosaurier der siebenbürgischen Landesteile Ungarns [The Dinosaurs of the Transylvanian Territories of Hungary]
         journal: Mitteilungen aus dem Jahrbuche der Königlich Ungarischen Geologischen Reichsanstalt
         volume: "23"
         pages: 1-26
@@ -102608,11 +102880,13 @@ genera:
             min: 1500
             max: 2000
         type_specimen:
+          specimen_id:
+            - CCMGE 1644
           specimen_type: holotype
-          status: uncatalogued
-          institution: Institute of Vertebrate Paleontology and Paleoanthropology
+          institution: F.N. Chernyshev Central Museum of Geological Exploration
           material: "A composite mounted skeleton assembled from disarticulated remains of more than one individual (~35% plaster): a partial skull (occipital region, both dentaries) and fragmentary postcranial elements."
           completeness: fragmentary
+          notes: Catalogued by Riabinin as no. 1644 of the Museum of the Geological Committee; the mounted skeleton is now held by the F. N. Chernyshev museum in St Petersburg.
         synonyms:
           - name: Trachodon amurense
             type: reassigned
@@ -109684,6 +109958,93 @@ genera:
       - Megaraptoridae
     authors: Coria, R. A.; Currie, P. J.
     described: 2016
+  Musango:
+    genus: Musango
+    parent: Unaysauridae
+    etymology: Named for the Musango Concession Area and nearby Musango Island at the type locality on Lake Kariba; 'musango' is a chiShona word meaning 'living in the bush', alluding to the remoteness of the site.
+    description: Musango is an extinct genus of unaysaurid sauropodomorph dinosaurs from the Upper Triassic (Norian) Pebbly Arkose Formation of Zimbabwe. The genus contains a single species, Musango matusadonaensis, known from a partial skeleton. Musango represents the fifth dinosaur genus to be named from Zimbabwe.
+    locomotion: bipedal
+    paleoenvironment:
+      - fluvial
+    diet: herbivore
+    dispute:
+      summary: |
+        The unaysaurid affinity of Musango rests on a single analysis with weak support throughout. Barrett and others (2026) recover Musango as the sister taxon of the sympatric Musankwa within Unaysauridae in all most-parsimonious trees, but that pairing is supported by one highly homoplastic astragalar character at a Bremer support of 1, and the authors caution that the relationship is unlikely to prove robust as new material comes to light. The position of Unaysauridae itself alternates between a sister-group relationship with Plateosauridae and the earliest-diverging position within Massopoda.
+      history:
+        - date: 2026-07-29
+          note: Placed in Unaysauridae following Barrett and others (2026), the only analysis so far to include the taxon; the weak support for that position and for the Musango–Musankwa pairing is recorded here rather than by attaching the genus to a less resolved parent.
+    diagnostic_features:
+      - Middle caudal vertebrae bear exceptionally elongate transverse processes, more than twice the centrum's transverse width and exceeding centrum anteroposterior length
+      - Distal ends of the middle caudal transverse processes are anteroposteriorly expanded and fan-shaped
+      - The supraacetabular crest of the ilium bifurcates posteriorly into two ridges
+      - The lateral margin of the pubic apron is greatly thickened and expanded anteroposteriorly relative to the medial margin, forming a prominent buttress
+      - The medial surface of the fibula's proximal expansion bears a deep concavity with a prominent ventrally extending midline ridge
+      - Two subparallel ridges extend from the posteromedial corner of the astragalus's ascending process
+    appearance:
+      integument: scaled
+      evidence: inferred
+    species:
+      - name: Musango matusadonaensis
+        etymology: Named for Matusadona National Park, adjacent to the type locality in Zimbabwe.
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Triassic
+          stage:
+            - Norian
+          from_ma: 227
+          to_ma: 205.7
+        location:
+          country: ZW
+          locality: Musango Archosaur Site, Musango Concession Area
+          region: Mashonaland West
+          formation: Pebbly Arkose
+          coordinates:
+            - -16.846367
+            - 28.384433
+        size:
+          weight_kg:
+            min: 165
+            max: 278
+        type_specimen:
+          specimen_id:
+            - NHMZ 2583
+          specimen_type: holotype
+          institution: Natural History Museum of Zimbabwe
+          material: Dorsal, sacral and caudal vertebrae, rib fragments, gastralia, chevrons, left scapula and coracoid, humerus, manual ungual, ilium, pubis, tibia, fibula, astragalus, calcaneum, metatarsal V and a pedal phalanx
+          completeness: partial
+        erected_in: barrett2026a
+        authors: Barrett, P. M.; Botha, J.; Sciscio, L.; Stuart, B. P.; Lovegrove, J.; Munyikwa, D.; Zondo, M.; Broderick, T. J.; Edwards, S. F.; Mbambo, E.; Chapelle, K. E. J.; Dollman, K. N.; Tolan, S.; Choiniere, J. N.
+        described: 2026
+    references:
+      - id: barrett2026a
+        authors: Barrett, P. M.; Botha, J.; Sciscio, L.; Stuart, B. P.; Lovegrove, J.; Munyikwa, D.; Zondo, M.; Broderick, T. J.; Edwards, S. F.; Mbambo, E.; Chapelle, K. E. J.; Dollman, K. N.; Tolan, S.; Choiniere, J. N.
+        year: 2026
+        title: "A new sauropodomorph dinosaur from the Pebbly Arkose Formation (Upper Triassic: Norian) of Kariba, Zimbabwe"
+        journal: Journal of Systematic Palaeontology
+        publisher: Informa UK Limited
+        volume: "24"
+        issue: "2"
+        pages: "2678610"
+        doi: 10.1080/14772019.2026.2678610
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Sauropodomorpha
+      - Bagualosauria
+      - Plateosauria
+      - Unaysauridae
+    authors: Barrett, P. M.; Botha, J.; Sciscio, L.; Stuart, B. P.; Lovegrove, J.; Munyikwa, D.; Zondo, M.; Broderick, T. J.; Edwards, S. F.; Mbambo, E.; Chapelle, K. E. J.; Dollman, K. N.; Tolan, S.; Choiniere, J. N.
+    described: 2026
   Musankwa:
     genus: Musankwa
     parent: Massopoda
@@ -119330,7 +119691,7 @@ genera:
       - id: nopcsa1915a
         authors: Nopcsa, B. F.
         year: 1915
-        title: Die Dinosaurier der siebenbürgischen Landesteile Ungarns
+        title: Die Dinosaurier der siebenbürgischen Landesteile Ungarns [The Dinosaurs of the Transylvanian Territories of Hungary]
         journal: Mitteilungen aus dem Jahrbuche der Königlich Ungarischen Geologischen Reichsanstalt
         volume: "23"
         pages: 1-26
@@ -121331,7 +121692,7 @@ genera:
     description: Pampadromaeus is an extinct genus of basal sauropodomorph dinosaurs known from the Late Triassic (Carnian) Santa Maria Formation of the Paraná Basin in Rio Grande do Sul, southern Brazil.
     dispute:
       summary: |
-        Pampadromaeus barberenai is a basalmost sauropodomorph from the Late Triassic of Brazil, recovered within Saturnaliidae by some analyses but as a basal sauropodomorph outside it by others; Jones (2026) treats its Saturnaliidae membership as not firmly established.
+        Pampadromaeus barberenai is an early sauropodomorph from the Late Triassic of Brazil whose finer position is unsettled. Langer et al. (2019) recovered it within Saturnaliidae, grouped with Saturnalia and Chromogisaurus in every most-parsimonious tree, though they describe the clade as weakly supported. Cabreira et al. (2011), describing the genus, instead placed it on the sauropodomorph stem outside any such clade, with its sister taxon varying between analyses.
       history:
         - date: 2026-06-29
           note: Placed at Saturnaliidae following its common recovery there; the basal-Sauropodomorpha-incertae-sedis alternative is recorded.
@@ -121404,6 +121765,17 @@ genera:
         issue: "12"
         pages: 1035-1040
         doi: 10.1007/s00114-011-0858-0
+        notes: Erected Pampadromaeus and placed it on the sauropodomorph stem, with its recovered sister taxon varying across four re-run matrices.
+      - id: langer2019b
+        authors: Langer, M. C.; McPhee, B. W.; Marsola, J. C. de A.; Roberto-da-Silva, L.; Cabreira, S. F.
+        year: 2019
+        title: Anatomy of the dinosaur Pampadromaeus barberenai (Saurischia—Sauropodomorpha) from the Late Triassic Santa Maria Formation of southern Brazil
+        journal: PLoS ONE
+        volume: "14"
+        issue: "2"
+        pages: e0212543
+        doi: 10.1371/journal.pone.0212543
+        notes: Recovered Pampadromaeus within Saturnaliidae, grouped with Saturnalia and Chromogisaurus in all most-parsimonious trees, on weak support.
       - id: paul2024a
         authors: Paul, G. S.
         year: 2024
@@ -122009,7 +122381,7 @@ genera:
     description: Panphagia is a genus of sauropodomorph dinosaur described in 2009. It lived around 231 million years ago, during the Carnian age of the Late Triassic period in what is now northwestern Argentina. Fossils of the genus were found in the La Peña Member of the Ischigualasto Formation in the Ischigualasto-Villa Unión Basin. The name Panphagia comes from the Greek words pan, meaning "all", and phagein, meaning "to eat", in reference to its inferred omnivorous diet. Panphagia is one of the earliest known dinosaurs, and is an important find which may mark the transition of diet in early sauropodomorph dinosaurs.
     dispute:
       summary: |
-        Panphagia protos is a basalmost sauropodomorph from the Late Triassic of Argentina, sometimes placed within Saturnaliidae and sometimes as a more basal sauropodomorph; its membership is not firmly established (Jones, 2026).
+        Panphagia protos is an early sauropodomorph from the Late Triassic of Argentina whose membership in Saturnaliidae is not firmly established. Langer et al. (2019) recovered it within the clade in most of their most-parsimonious trees but described its position as floating, nesting outside a less inclusive Saturnaliidae in others. Ezcurra (2010) recovered it outside Saturnaliinae as a more basal guaibasaurid, and Martinez and Alcober (2009), describing the genus, placed it as the most basal sauropodomorph, sister to Saturnalia and all more derived members of the group.
       history:
         - date: 2026-06-29
           note: Placed at Saturnaliidae following its common recovery there; the basal-Sauropodomorpha-incertae-sedis alternative is recorded.
@@ -122089,6 +122461,28 @@ genera:
         issue: "2"
         pages: e4397
         doi: 10.1371/journal.pone.0004397
+        notes: Erected Panphagia and recovered it as the most basal sauropodomorph, sister to Saturnalia and all more derived members of the group.
+      - id: langer2019b
+        authors: Langer, M. C.; McPhee, B. W.; Marsola, J. C. de A.; Roberto-da-Silva, L.; Cabreira, S. F.
+        year: 2019
+        title: Anatomy of the dinosaur Pampadromaeus barberenai (Saurischia—Sauropodomorpha) from the Late Triassic Santa Maria Formation of southern Brazil
+        journal: PLoS ONE
+        volume: "14"
+        issue: "2"
+        pages: e0212543
+        doi: 10.1371/journal.pone.0212543
+        notes: Recovered Panphagia within Saturnaliidae in most most-parsimonious trees, but described its position as floating.
+      - id: ezcurra2010a
+        authors: Ezcurra, M. D.
+        year: 2010
+        title: "A new early dinosaur (Saurischia: Sauropodomorpha) from the Late Triassic of Argentina: a reassessment of dinosaur origin and phylogeny"
+        journal: Journal of Systematic Palaeontology
+        publisher: Informa UK Limited
+        volume: "8"
+        issue: "3"
+        pages: 371-425
+        doi: 10.1080/14772019.2010.484650
+        notes: Recovered Panphagia outside Saturnaliinae, as a guaibasaurid more basal than Saturnalia and Chromogisaurus.
       - id: paul2024a
         authors: Paul, G. S.
         year: 2024
@@ -123910,7 +124304,7 @@ genera:
       - id: bonaparte1986b
         authors: Bonaparte, J. F.; Lange-Badré, B.
         year: 1986
-        title: Les Dinosaures (Carnosaures, Allosaurides, Sauropodes, Cetiosaurides) du Jurassique moyen de Cerro Cóndor (Chubut, Argentine)
+        title: Les Dinosaures (Carnosaures, Allosaurides, Sauropodes, Cetiosaurides) du Jurassique moyen de Cerro Cóndor (Chubut, Argentine) [The Dinosaurs (Carnosaurs, Allosaurids, Sauropods, Cetiosaurids) of the Middle Jurassic of Cerro Cóndor (Chubut, Argentina)]
         journal: Annales de paléontologie
         volume: "72"
         issue: "3"
@@ -126613,7 +127007,7 @@ genera:
       - id: bonaparte1986b
         authors: Bonaparte, J. F.; Lange-Badré, B.
         year: 1986
-        title: Les Dinosaures (Carnosaures, Allosaurides, Sauropodes, Cetiosaurides) du Jurassique moyen de Cerro Cóndor (Chubut, Argentine)
+        title: Les Dinosaures (Carnosaures, Allosaurides, Sauropodes, Cetiosaurides) du Jurassique moyen de Cerro Cóndor (Chubut, Argentine) [The Dinosaurs (Carnosaurs, Allosaurids, Sauropods, Cetiosaurids) of the Middle Jurassic of Cerro Cóndor (Chubut, Argentina)]
         journal: Annales de paléontologie
         volume: "72"
         issue: "3"
@@ -132217,7 +132611,7 @@ genera:
       - id: jaekel1914a
         authors: Jaekel, O.
         year: 1914
-        title: Über die Wirbeltierfunde in der oberen Trias von Halberstadt
+        title: Über die Wirbeltierfunde in der oberen Trias von Halberstadt [On the Vertebrate Finds in the Upper Triassic of Halberstadt]
         journal: Paläontologische Zeitschrift
         publisher: Springer Science and Business Media LLC
         volume: "1"
@@ -141245,7 +141639,7 @@ genera:
     parent: Scansoriopterygidae
     dispute:
       summary: |
-        Scansoriopteryx heilmanni and Epidendrosaurus ningchengensis were described nearly simultaneously and are widely regarded as the same taxon; the name in use depends on which publication is judged to have priority, with most workers (and Jones et al., 2026) treating Scansoriopteryx as the senior synonym. It is retained as a valid scansoriopterygid pending resolution.
+        Scansoriopteryx heilmanni and Epidendrosaurus ningchengensis were described within months of one another from separate juvenile specimens and are widely regarded as the same taxon. Which name has priority turns on publication medium rather than on the anatomy: Epidendrosaurus appeared online first, Scansoriopteryx in print first, and Article 21 of the ICZN does not recognize online-only publication. Scansoriopteryx is treated as the senior synonym here and by Jones et al. (2026), though the two names remain in competing use in the literature.
       history:
         - date: 2026-07-01
           note: Placed at Scansoriopterygidae (type genus); the Epidendrosaurus synonymy and priority question remains unresolved.
@@ -141285,8 +141679,8 @@ genera:
         id: "47458490"
     synonyms:
       - name: Epidendrosaurus
-        type: junior objective
-        reason: Controversial synonym; both genera described from very similar juvenile specimens. Scansoriopteryx appeared in print first and is treated as senior pending ICZN ruling.
+        type: junior subjective
+        reason: Founded on a different juvenile specimen (IVPP V12653) but widely regarded as the same taxon. Epidendrosaurus appeared online first while Scansoriopteryx appeared in print first, so under Article 21 of the ICZN, which does not recognize online-only publication, Scansoriopteryx holds priority; some workers nonetheless treat it as the junior name.
     species:
       - name: Scansoriopteryx heilmanni
         etymology: Named in honor of Gerhard Heilmann, a pioneer of avian paleontological studies who championed the concept of birds deriving from an arboreal ancestry.
@@ -141309,9 +141703,10 @@ genera:
             - 121.416664
         type_specimen:
           specimen_id:
-            - IVPP V12653
+            - CAGS02-IG-gausa-1
+            - DM 607
           specimen_type: holotype
-          institution: Institute of Vertebrate Paleontology and Paleoanthropology
+          institution: Institute of Geology, Chinese Academy of Geological Sciences
         size:
           length_m:
             min: 0.5
@@ -141332,6 +141727,7 @@ genera:
         title: An arboreal maniraptoran from northeastern China
         journal: Feathered Dinosaurs and the Origin of Flight. The Dinosaur Museum Journal 1. The Dinosaur Museum, Blanding, UT
         pages: 63-95
+        notes: Erected Scansoriopteryx heilmanni and the family Scansoriopterygidae, arguing a pre-theropod saurischian status without a numerical analysis.
       - id: paul2024a
         authors: Paul, G. S.
         year: 2024
@@ -151969,7 +152365,7 @@ genera:
       - id: nopcsa1915a
         authors: Nopcsa, B. F.
         year: 1915
-        title: Die Dinosaurier der siebenbürgischen Landesteile Ungarns
+        title: Die Dinosaurier der siebenbürgischen Landesteile Ungarns [The Dinosaurs of the Transylvanian Territories of Hungary]
         journal: Mitteilungen aus dem Jahrbuche der Königlich Ungarischen Geologischen Reichsanstalt
         volume: "23"
         pages: 1-26
@@ -174467,7 +174863,7 @@ genera:
     description: Yimenosaurus is an extinct genus of plateosaurid sauropodomorph dinosaur that lived in China in the Early Jurassic. The genus was first named in 1990 by Ziqi Bai, Jie Yang and Guohui Wang, along with its type and only species, Yimenosaurus youngi. The species name honors renowned Chinese paleontologist Yang Zhongjian, the father of Chinese paleontology, known as C.C. Young in English. Known material includes the holotype, an almost complete skull and mandible, as well as incomplete cervical and dorsal vertebrae, a mostly complete sacrum, an ilium, ischia, partial ribs and complete femur, and a paratype, a well-preserved postcrania with a fragmentary skull. In 2010 Paul estimated its length at 9 meters (30 ft) and its weight at 2 tonnes (2.2 short tons).
     dispute:
       summary: |
-        Yimenosaurus youngi was originally referred to Plateosauridae but has not been included in modern phylogenetic analyses, so its placement is provisional (Jones, 2026).
+        Yimenosaurus youngi was assigned to Plateosauridae by Bai et al. (1990) in its original description, and has not since been scored in a numerical phylogenetic analysis, so the placement remains provisional.
       history:
         - date: 2026-06-29
           note: Reparented from the deprecated Prosauropoda to Plateosauridae following the historical assignment; not tested in a modern analysis.
@@ -174545,6 +174941,7 @@ genera:
         journal: Yuxiwenbo (Yuxi Culture and Scholarship)
         volume: "1"
         pages: 14-23
+        notes: Erected Yimenosaurus and assigned it to Plateosauridae.
       - id: jones2026b
         authors: Jones, B.; Viola, E.
         year: 2026
@@ -174930,7 +175327,7 @@ genera:
     description: Yizhousaurus is a genus of basal sauropodiform dinosaurs which existed in what is now Lufeng Formation, Yunnan Province of southern China during the lower Jurassic period. Identified from a nearly complete and exquisitely preserved skeleton, it is the most complete basal sauropod currently known with intact skull. Although its name was revealed in a 2010 Geological Society of America abstract by Sankar Chatterjee, T. Wang, S.G. Pan, Z. Dong, X.C. Wu, and Paul Upchurch, it wasn't validly named and described until 2018. The type species is Yizhousaurus sunae.
     dispute:
       summary: |
-        Yizhousaurus sunae is a sauropodiform with a convergently sauropod-like skull; Jones (2026) places it in Sauropodiformes rather than Sauropoda, though it has been called one of the most complete early sauropods.
+        Yizhousaurus sunae is a sauropodiform with a convergently sauropod-like skull. Zhang et al. (2018), describing the genus, recovered it within Sauropodiformes as a non-sauropodan sauropodomorph close to Anchisaurus and Mussaurus, nearer the base of Sauropoda than other Lufeng sauropodomorphs but not within Sauropoda itself.
       history:
         - date: 2026-06-29
           note: Placed at Sauropodiformes incertae sedis following Jones (2026); the basal-Sauropoda alternative is recorded.
@@ -175006,6 +175403,7 @@ genera:
         volume: "8"
         issue: "1"
         doi: 10.1038/s41598-018-31874-9
+        notes: Erected Yizhousaurus and recovered it within Sauropodiformes as a non-sauropodan sauropodomorph, not within Sauropoda.
       - id: paul2024a
         authors: Paul, G. S.
         year: 2024
@@ -176084,10 +176482,12 @@ genera:
     description: Yunnanosaurus is an extinct genus of sauropodomorph dinosaur that lived approximately 199 to 183 million years ago in what is now the Yunnan Province, in China, for which it was named. Yunnanosaurus was a large sized, moderately-built, ground-dwelling, quadrupedal herbivore, that could also walk bipedally, and ranged in size from 7 meters (23 feet) long and 2 m (6.5 ft) high to 4 m (13 ft) high in the largest species.
     dispute:
       summary: |
-        Yunnanosaurus huangi is most commonly recovered among basal Sauropodiformes (Jones, 2026), close to Jingshanosaurus and Lishulong, but is sometimes placed within Massospondylidae or as a basal massopodan.
+        Yunnanosaurus huangi is most commonly recovered among non-sauropodan sauropodiforms: Sekiya et al. (2013) recovered the Yunnanosaurus clade as the sister taxon of Sauropoda, and Zhang et al. (2018) treated it among the uncontroversial non-sauropodan sauropodomorphs of the Lufeng Basin. Rauhut et al. (2020) instead recovered it within Massospondylidae, in a subclade with Jingshanosaurus and Seitaad.
       history:
         - date: 2026-06-29
           note: Placed at Sauropodiformes incertae sedis following the prevailing view and Jones (2026); the Massospondylidae alternative is recorded.
+        - date: 2026-07-28
+          note: Retained at Sauropodiformes incertae sedis following Sekiya et al. (2013) and Zhang et al. (2018); the Massospondylidae placement of Rauhut et al. (2020) is recorded as the competing hypothesis.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -176209,6 +176609,27 @@ genera:
         issue: "2"
         pages: 252-277
         doi: 10.1080/08912963.2013.821702
+        notes: Recovered the Yunnanosaurus clade as the sister taxon of Sauropoda.
+      - id: zhang2018a
+        authors: Zhang, Q.-N.; You, H.-L.; Wang, T.; Chatterjee, S.
+        year: 2018
+        title: A new sauropodiform dinosaur with a 'sauropodan' skull from the Lower Jurassic Lufeng Formation of Yunnan Province, China
+        journal: Scientific Reports
+        publisher: Springer Science and Business Media LLC
+        volume: "8"
+        issue: "1"
+        doi: 10.1038/s41598-018-31874-9
+        notes: Treated Yunnanosaurus among the uncontroversial non-sauropodan sauropodomorphs of the Lufeng Basin.
+      - id: rauhut2020a
+        authors: Rauhut, O. W. M.; Holwerda, F. M.; Furrer, H.
+        year: 2020
+        title: A derived sauropodiform dinosaur and other sauropodomorph material from the Late Triassic of Canton Schaffhausen, Switzerland
+        journal: Swiss Journal of Geosciences
+        publisher: Pensoft Publishers
+        volume: "113"
+        issue: "1"
+        doi: 10.1186/s00015-020-00360-8
+        notes: Recovered Yunnanosaurus within Massospondylidae, in a subclade with Jingshanosaurus and Seitaad.
       - id: paul2024a
         authors: Paul, G. S.
         year: 2024
