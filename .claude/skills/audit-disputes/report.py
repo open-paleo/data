@@ -164,7 +164,11 @@ def main():
     manifest = json.load(open(os.path.join(args.work_dir, "manifest.json")))
     tier0 = json.load(open(os.path.join(args.work_dir, "tier0.json")))
     tier1_results, findings = load_tier1(args.work_dir)
-    slice_root = manifest["slice_root"]
+    # A clades-only run shares its slice_root with the full-subtree run, so the
+    # report and the queue's slice labels key off the WORK DIR name instead —
+    # otherwise "Dinosauria --clades-only" would silently overwrite a later
+    # full "Dinosauria" report and blur which pass covered which loci.
+    slice_root = os.path.basename(os.path.normpath(args.work_dir)) or manifest["slice_root"]
 
     queue_path, pending = update_reaudit_queue(slice_root, tier0, tier1_results, args.date)
     report_text = render(slice_root, manifest, tier0, tier1_results, findings, pending)

@@ -34,6 +34,31 @@ used only to source a non-placement datum (body mass, hip height, integument,
 histology, age) — those are not this audit's concern; note them as `out-of-scope`
 only if you must, otherwise skip.
 
+### Clade loci only — also check the authority fields
+
+When the locus is a CLADE file, two structured fields are load-bearing citations
+in their own right, not just prose. Check each against its condensation:
+
+- **`erected_in`** asserts THIS paper is where the clade name was coined. Confirm
+  the condensation shows the paper erecting/naming that clade (a `description`
+  claim_type on the clade itself, or the clade appearing as a new name). Verdict
+  `name-not-erected` (class 2, high) when the paper plainly does not coin it.
+- **`described_in`** asserts a genuine revision/redescription of the clade.
+  Verdict `not-a-revision` (class 3, medium) when the condensation shows only a
+  passing mention or a claim about unrelated taxa.
+
+Two cautions, because both produce false positives easily:
+
+1. **A paper's TITLE is not evidence either way.** Family-group names are
+   routinely erected inside papers about a single genus — an erecting act often
+   sits in a Systematic Palaeontology header, not the title. Judge only on
+   whether the condensation records the naming act.
+2. **Pre-1990 and OCR'd sources under-report.** If the condensation is thin,
+   truncated, or garbled, that is NOT evidence the paper failed to erect the
+   name. Return `unverifiable` and say the source was too degraded to decide.
+
+Report these under `field: "erected_in"` / `field: "described_in"`.
+
 ## How to check each claim against the condensation
 
 Find the relevant taxon in the condensation's `taxa_treated` (for a clade locus,

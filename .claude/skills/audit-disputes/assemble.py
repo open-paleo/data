@@ -117,16 +117,23 @@ def sha256(path):
         return hashlib.sha256(handle.read()).hexdigest()
 
 
-def collect_loci(clade_names):
+def collect_loci(clade_names, clades_only=False):
     """Yield (kind, name, file, references) for every genus/clade in the slice
-    that carries a dispute block."""
-    for path in sorted(glob.glob(os.path.join(DATA, "genera", "*", "*.yml"))):
-        record = yaml.safe_load(open(path))
-        if not isinstance(record, dict) or "genus" not in record:
-            continue
-        if record.get("parent") in clade_names and "dispute" in record:
-            refs = [r.get("id") for r in (record.get("references") or []) if isinstance(r, dict) and r.get("id")]
-            yield ("genus", record["genus"], os.path.relpath(path, DATA), refs)
+    that carries a dispute block.
+
+    `clades_only` skips the genus loci entirely, leaving just the clades/*.yml
+    files. Use it to audit clade-level dispute blocks without dragging in the
+    genus loci beneath them — the genera were audited by their own subtree
+    slices, and re-collecting them would blow up an otherwise small review gate.
+    """
+    if not clades_only:
+        for path in sorted(glob.glob(os.path.join(DATA, "genera", "*", "*.yml"))):
+            record = yaml.safe_load(open(path))
+            if not isinstance(record, dict) or "genus" not in record:
+                continue
+            if record.get("parent") in clade_names and "dispute" in record:
+                refs = [r.get("id") for r in (record.get("references") or []) if isinstance(r, dict) and r.get("id")]
+                yield ("genus", record["genus"], os.path.relpath(path, DATA), refs)
     for name in sorted(clade_names):
         path = os.path.join(DATA, "clades", f"{name}.yml")
         if not os.path.exists(path):
@@ -143,11 +150,14 @@ def main():
     parser.add_argument("--exclude", action="append", default=[], metavar="CLADE",
                         help="exclude this clade's entire subtree (repeatable); "
                              "use to carve disjoint sub-slices of a large slice")
+    parser.add_argument("--clades-only", action="store_true",
+                        help="collect only clades/*.yml loci, skipping every genus locus "
+                             "in the slice; for auditing clade-level dispute blocks alone")
     parser.add_argument("--out", default=None)
     args = parser.parse_args()
 
     clade_names = load_tree_slice(args.slice_root, args.exclude)
-    loci = list(collect_loci(clade_names))
+    loci = list(collect_loci(clade_names, args.clades_only))
 
     papers = {}
     for kind, name, file, refs in loci:
@@ -170,6 +180,7 @@ def main():
     manifest = {
         "slice_root": args.slice_root,
         "excluded": list(args.exclude),
+        "clades_only": args.clades_only,
         "loci": [{"kind": k, "name": n, "file": f, "refs": r} for k, n, f, r in loci],
         "papers": sorted(papers.values(), key=lambda p: p["ref_id"]),
     }
@@ -178,14 +189,19 @@ def main():
     ref_works = [p for p in manifest["papers"] if p["classification"] == "reference-work"]
     not_in_corpus = [p for p in manifest["papers"] if not p["in_corpus"] and p["classification"] != "reference-work"]
 
-    print(f"slice: {args.slice_root}" + (f" (excluding {', '.join(args.exclude)})" if args.exclude else ""))
+    print(f"slice: {args.slice_root}"
+          + (f" (excluding {', '.join(args.exclude)})" if args.exclude else "")
+          + (" [clades only]" if args.clades_only else ""))
     print(f"loci with dispute blocks: {len(loci)} ({sum(1 for l in loci if l[0]=='genus')} genera, {sum(1 for l in loci if l[0]=='clade')} clades)")
     print(f"distinct papers cited: {len(manifest['papers'])}")
     print(f"  to condense (in-corpus primary/monograph): {len(to_condense)}")
     print(f"  reference-works (skip extraction): {len(ref_works)}  -> {', '.join(p['ref_id'] for p in ref_works)}")
     print(f"  NOT in corpus (coverage gap): {len(not_in_corpus)}  -> {', '.join(p['ref_id'] for p in not_in_corpus)}")
 
-    out = args.out or os.path.join(audit_dir(), args.slice_root, "manifest.json")
+    # A clades-only run gets its own work directory so it never overwrites the
+    # full-slice outputs for the same root.
+    work_dir = args.slice_root + ("-clades" if args.clades_only else "")
+    out = args.out or os.path.join(audit_dir(), work_dir, "manifest.json")
     os.makedirs(os.path.dirname(out), exist_ok=True)
     json.dump(manifest, open(out, "w"), indent=2, ensure_ascii=False)
     print(f"\nmanifest -> {out}")
