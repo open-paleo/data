@@ -1,5 +1,6 @@
 genus: Helioceratops
 parent: Neoceratopsia
+placement: incertae sedis
 etymology: From Greek helios (sun), keras (horn), and ops (face); meaning 'sun horned face', referencing the animal's Eastern (sunrise) origin and its relationship to other ceratopsians
 pronunciation:
   phonetic: HEE-lee-o-SEH-ruh-tops
@@ -7,13 +8,33 @@ description: Helioceratops is a genus of herbivorous neoceratopsian dinosaur
   from the Middle Cretaceous of China.
 dispute:
   summary: >
-    Helioceratops brachygnathus has been recovered both as a basal
-    neoceratopsian and as a leptoceratopsid; Jones (2026) reports both
-    placements and leans toward a basal neoceratopsian position.
+    Helioceratops brachygnathus is persistently unstable in neoceratopsian
+    phylogenies, a consequence of its fragmentary material. Jin et al.
+    (2009), describing the genus, treated it as a non-coronosaurian
+    neoceratopsian alongside Auroraceratops and Yamaceratops, mapping
+    characters onto an existing cladogram rather than running an analysis.
+    Morschhauser et al. (2018) recovered it within Leptoceratopsidae as
+    sister to all other members, a composition adopted in the formal
+    definition of that clade by Madzia et al. (2021). Other analyses leave it
+    unresolved: Arbour and Evans (2019) place it in a polytomy outside
+    Coronosauria in their strict consensus, though it is the leptoceratopsid
+    outgroup in 63% of individual trees; Ryan et al. (2023) and Tanaka et al.
+    (2024) both leave it unresolved among the leptoceratopsids and their
+    relatives; and Son et al. (2022) treat it as an unstable wildcard whose
+    removal resolves the basal neoceratopsian polytomy.
   history:
     - date: "2026-06-27"
       note: Placed at Neoceratopsia (basal) following the prevailing
         view (Jones, 2026); leptoceratopsid alternative reflected.
+    - date: "2026-07-28"
+      note: Retained at Neoceratopsia (basal) following Jin et al. (2009); the
+        leptoceratopsid placement of Morschhauser et al. (2018) is recorded as
+        the competing hypothesis.
+    - date: "2026-07-29"
+      note: Flagged incertae sedis within Neoceratopsia. Only Morschhauser et
+        al. (2018) resolve the genus; Arbour and Evans (2019), Ryan et al.
+        (2023) and Tanaka et al. (2024) leave it unresolved and Son et al.
+        (2022) treat it as a wildcard, so it cannot be assigned to a subclade.
 diet: herbivore
 locomotion: quadrupedal
 paleoenvironment:
@@ -70,5 +91,27 @@ species:
     erected_in: jin2009a
 references:
   - id: jin2009a
+    notes: Erected Helioceratops and treated it as a non-coronosaurian
+      neoceratopsian with Auroraceratops and Yamaceratops, without a numerical
+      analysis.
+  - id: morschhauser2018a
+    notes: Recovered Helioceratops within Leptoceratopsidae as sister to all
+      other members of that clade.
+  - id: madzia2021a
+    notes: Includes Helioceratops in the composition of Leptoceratopsidae in its
+      formal conversion of the clade.
+  - id: arbour2019a
+    notes: Recovered Helioceratops in an unresolved polytomy outside
+      Coronosauria in strict consensus, and as the leptoceratopsid outgroup in
+      63% of individual trees.
+  - id: son2022a
+    notes: Treated Helioceratops as an unstable wildcard; removing it resolved
+      the basal neoceratopsian polytomy.
+  - id: tanaka2024a
+    notes: Recovered Helioceratops in an unresolved polytomy with Koreaceratops,
+      Yamaceratops, Leptoceratopsidae and Coronosauria.
+  - id: ryan2023a
+    notes: Left Helioceratops unresolved with the leptoceratopsids and
+      Koreaceratops in its majority-rule tree.
   - id: jones2026a
     notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
