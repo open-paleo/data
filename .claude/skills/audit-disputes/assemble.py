@@ -40,6 +40,14 @@ REFERENCE_WORK_PREFIXES = (
     "glut",         # Dinosaurs: The Encyclopedia
     "olshevsky",    # Mesozoic Meanderings — self-published aggregate checklist
     "allain2003",   # Dinosaurs of France — broad synthesis review
+    # Pennaraptoran Theropod Dinosaurs (Bull. AMNH 440) — a 14-chapter, 49-author
+    # edited volume. Unlike the compendia above it is MIXED: several chapters are
+    # primary research. It is listed here because the systematics chapter, which is
+    # what gets cited for placements, states an adopted synthesis position and
+    # re-figures a separately published analysis (Pei et al. 2020) rather than
+    # running its own. If a future intake ingests an individual chapter under its
+    # own key, treat that chapter on its merits rather than inheriting this.
+    "pittman2020",
 )
 
 # Long monographs / revisions worth a targeted rather than skim read. Extend as
