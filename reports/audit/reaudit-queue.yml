@@ -33,6 +33,7 @@ pending:
       cites it correctly). Kelmayisaurus is also missing diagnostic_features, which should come from the
       correct paper.'
     reason: fetch-pending
+    resolution: Fetched
     slices:
     - Carcharodontosauria
   czerkas2002a:
@@ -150,6 +151,12 @@ pending:
     loci:
     - Patagonykinae
     reason: source-incomplete
+    resolution: RESOLVED 2026-07-29. Supplementary items fetched and converted; the claim is now verified
+      DIRECTLY rather than via third-party attestation. The authors' own node notation in markdown/supplementary/xu2018c-steps.md
+      reads "Patagonykus + (Achillesaurus (Alvarezsauridae))", and Fig. S1 gives the stem sequence (Tugulusaurus+Xiyunykus)
+      > Bannykus > Bonapartenykus > Patagonykus > Achillesaurus > Alvarezsauridae. The Tier-1 taxon-absent
+      flag was a main-text truncation artifact. Note the condensation at condensed/xu2018c.json is still
+      MAIN-TEXT ONLY and does not include these supplements.
     slices:
     - Dinosauria-clades
   yadagiri1979a:
