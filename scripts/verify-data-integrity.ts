@@ -143,6 +143,32 @@ function specimenPrefix(specimenId: string): string | null
 }
 
 /**
+ * Folds an institution name into a comparison key: accents stripped,
+ * parentheticals and any trailing "formerly …" clause removed, punctuation
+ * dropped, and the remaining words sorted. Sorting the words means word-order
+ * variants of one institution still collide, which is how the registry's
+ * duplicate pairs actually differed.
+ *
+ * @param name - The raw institution name.
+ * @returns A normalized comparison key, empty if the name carries no words.
+ */
+function normalizeInstitutionName(name: string): string
+{
+    return name
+        .normalize("NFKD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase()
+        .replace(/\([^)]*\)/g, " ")
+        .replace(/\bformerly\b.*/g, " ")
+        .replace(/[^a-z0-9]+/g, " ")
+        .trim()
+        .split(/\s+/)
+        .filter((word) => word.length > 0)
+        .sort()
+        .join(" ");
+}
+
+/**
  * Normalizes a formation name for grouping (trims, collapses whitespace,
  * strips a trailing "Formation"/"Fm" word, lowercases).
  *
@@ -185,6 +211,12 @@ const crossBorderFormations: Record<string, Array<string>> =
  * formation) signals a likely error.
  */
 const stageOutlierGapMa = 20;
+
+// Sub-collections curated separately inside a parent institution, so sharing the
+// parent's name is intentional rather than a split entry. Keyed by the entry
+// codes, sorted and joined with " | ". The Catholic University of Peking material
+// is cited in its own right ("FMNH CUP 2338"), which is why it holds a code.
+const deliberateSubCollections = new Set<string>(["FMNH | FMNH CUP"]);
 
 /**
  * Resolves a species record's age interval as [younger_ma, older_ma],
@@ -619,6 +651,85 @@ for (const record of speciesRecords)
     {
         report("period-span-too-wide", record.genus, record.species,
             `${reasons.join(", ")} (${record.stageList.join("/")})`);
+    }
+}
+
+// Check 6 — two registry entries describe the same institution.
+//
+// A split institution is invisible to check 3, because both halves resolve
+// happily: specimens of one collection simply validate against two different
+// codes. Seven such pairs were found and merged by hand; this keeps them from
+// re-accumulating.
+//
+// Only exact name collisions are reported. Fuzzier signals (same city plus a
+// shared distinctive word) were measured against the whole registry and produced
+// overwhelmingly shared-toponym noise, so they are deliberately not checked here.
+const institutionNameGroups = new Map<string, Array<string>>();
+
+for (const [code, entry] of Object.entries(registry))
+{
+    const nameKey = normalizeInstitutionName(entry.name ?? "");
+
+    if (nameKey.length === 0)
+    {
+        continue;
+    }
+
+    const group = institutionNameGroups.get(nameKey) ?? new Array<string>();
+
+    group.push(code);
+    institutionNameGroups.set(nameKey, group);
+}
+
+for (const group of institutionNameGroups.values())
+{
+    if (group.length < 2)
+    {
+        continue;
+    }
+
+    const codes = [...group].sort();
+
+    if (deliberateSubCollections.has(codes.join(" | ")))
+    {
+        continue;
+    }
+
+    report("duplicate-institution-entry", codes.join(", "), "-",
+        `entries share one institution name: '${registry[codes[0]]?.name ?? ""}'`);
+}
+
+// Check 7 — an alias is ambiguous: declared on more than one entry, or shadowing
+// another entry's canonical code. Either way a literature prefix stops having a
+// single meaning (the alias 'SM' once denoted both the Sedgwick Museum and the
+// Sirindhorn Museum).
+const aliasOwners = new Map<string, Array<string>>();
+
+for (const [code, entry] of Object.entries(registry))
+{
+    for (const alias of entry.aliases ?? [])
+    {
+        const owners = aliasOwners.get(alias) ?? new Array<string>();
+
+        owners.push(code);
+        aliasOwners.set(alias, owners);
+    }
+}
+
+for (const [alias, owners] of aliasOwners)
+{
+    const sortedOwners = [...owners].sort();
+
+    if (sortedOwners.length > 1)
+    {
+        report("ambiguous-institution-alias", sortedOwners.join(", "), "-",
+            `alias '${alias}' is declared on ${sortedOwners.length} entries`);
+    }
+    else if (registry[alias] !== undefined && alias !== sortedOwners[0])
+    {
+        report("ambiguous-institution-alias", `${sortedOwners[0]}, ${alias}`, "-",
+            `alias '${alias}' on ${sortedOwners[0]} is also a top-level code `
+            + `('${registry[alias]?.name ?? ""}')`);
     }
 }
 
