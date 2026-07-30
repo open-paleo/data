@@ -142,6 +142,26 @@ def splitStages(value, vocabulary):
     return {token for token in tokens if token in vocabulary}
 
 
+def loadFormationVariants():
+    """Load formation spellings already reviewed as variants of one name.
+
+    These stay in the report under their own REVIEWED heading rather than being
+    suppressed, because the canonical form is still undecided (#2012). Reporting
+    them separately means a spelling NOT on the list stands out as new.
+
+    @returns: Dict of normalized our-form -> set of normalized variant forms.
+    """
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "formation-variants.yml")
+
+    if not os.path.exists(path):
+        return {}
+
+    document = yaml.safe_load(open(path, encoding="utf-8")) or {}
+
+    return {normalizeFormation(ours): {normalizeFormation(v) for v in variants}
+            for ours, variants in document.items()}
+
+
 def loadAdjudicated():
     """Load findings already settled against a primary paper, so they stay closed.
 
@@ -332,6 +352,7 @@ def main():
     args = parser.parse_args()
 
     adjudicated = loadAdjudicated()
+    formationVariants = loadFormationVariants()
     institutionAliases = loadInstitutionAliases()
     stageVocabulary = loadStageVocabulary()
     referenceRecords = loadReferenceRecords()
@@ -509,8 +530,14 @@ def main():
                 referenceValues.append(f"{' / '.join(names)} ({reference['ref_id']})")
 
         if disagreeing:
+            known = formationVariants.get(normalizeFormation(ours.get("formation")), set())
+            reviewed = bool(disagreeingKeys) and all(key in known for key in disagreeingKeys)
+            category = ("formation-differs-known-spelling-variant-REVIEWED"
+                        if reviewed
+                        else classify("formation", disagreeing, agreeing, disagreeingKeys))
+
             if "formation" not in settled:
-                findings[classify("formation", disagreeing, agreeing, disagreeingKeys)].append(
+                findings[category].append(
                 agreementNote(agreeing) + 
                 f"{label}: ours '{ours['formation']}' vs {' | '.join(referenceValues)}")
 
@@ -552,7 +579,16 @@ def main():
              f"Matched {len(matched)} species against reference-work records.", "",
              "Every row is a QUESTION, not a defect: a reference work may corroborate a",
              "value but is never a primary source for it. Verify against the describing",
-             "paper before changing anything.", "", "## Summary", ""]
+             "paper before changing anything.", "",
+             "Categories ending **-REVIEWED** have already been looked at and need no",
+             "re-triage; they remain listed only because a decision is pending elsewhere.",
+             "Findings settled against a primary paper are suppressed entirely via",
+             "`adjudicated.yml`, which records the quotation that closed each one.", "",
+             "- `formation-differs-known-spelling-variant-REVIEWED` — compared 2026-07-30 and",
+             "  found to be variant spellings of one unit, not different units. Choosing a",
+             "  canonical form is deferred to #2012 (formations registry). A spelling NOT in",
+             "  `formation-variants.yml` is new and does need review.", "",
+             "## Summary", ""]
 
     for category in sorted(findings, key=lambda key: -len(findings[key])):
         lines.append(f"- **{category}**: {len(findings[category])}")
