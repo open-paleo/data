@@ -183,7 +183,7 @@ JLUM:
     city: Changchun
   aliases: [CUST, RCPS, CAD]
 CAMSM:
-  aliases: [SM, SMC]
+  aliases: [SMC, SM-GB]
   name: Sedgwick Museum, University of Cambridge
   location:
     country: GB
@@ -443,6 +443,7 @@ FPDM:
     city: Fukui
   aliases: [FPMN]
 FRDC:
+  aliases: [GSLTZP]
   name: The Fossil Research and Development Center of the Third Geology and Mineral Resources Exploration Academy of Gansu Provincial Bureau of Geo-exploration and Mineral Development
   location:
     country: CN
@@ -506,6 +507,7 @@ GPDM:
     country: US
     city: Malta
 GPMA:
+  aliases: [AGB, AGM]
   name: Geological and Paleontological Museum of Anhui
   location:
     country: CN
@@ -538,11 +540,6 @@ GSP:
   location:
     country: PK
     city: Quetta
-GSLTZP:
-  name: Fossil Research and Development Center, Third Geology and Mineral Resources Exploration Academy of Gansu Province
-  location:
-    country: CN
-    city: Lanzhou
 NHMAD:
   name: Natural History Museum Abu Dhabi
   location:
@@ -1233,12 +1230,6 @@ PIN:
   location:
     country: RU
     city: Moscow
-PIWU:
-  name: Paläontologisches Institut und Museum der Universität Wien
-  location:
-    country: AT
-    city: Vienna
-
 TGU:
   name: Paleontological Museum, Tomsk State University
   location:
@@ -1406,7 +1397,8 @@ SHN:
   location:
     country: PT
     city: Torres Vedras
-SM:
+SM-TH:
+  aliases: [SM]
   name: Sirindhorn Museum
   location:
     country: TH
@@ -1714,12 +1706,6 @@ MHNM-AC:
     country: MA
     city: Marrakech
 
-MNEM:
-  name: Ministère de l'Énergie et des Mines
-  location:
-    country: MA
-    city: Rabat
-
 NMW-GB:
   name: National Museum Wales
   location:
@@ -1759,13 +1745,6 @@ WSC:
   location:
     country: US
     city: Hemet
-
-AHM:
-  aliases: [AGB, AGM]
-  name: Anhui Geological Museum
-  location:
-    country: CN
-    city: Hefei
 
 SLCNGP:
   aliases: [LY]
@@ -1985,7 +1964,7 @@ HNHM:
     city: Budapest
 
 IPUW:
-  aliases: [PIUW]
+  aliases: [PIUW, PIWU, UWPI]
   name: Paläontologisches Institut und Museum der Universität Wien
   location:
     country: AT
