@@ -142,6 +142,28 @@ def splitStages(value, vocabulary):
     return {token for token in tokens if token in vocabulary}
 
 
+def loadAdjudicated():
+    """Load findings already settled against a primary paper, so they stay closed.
+
+    A reference work disagreeing with us is not evidence that we are wrong: of
+    the first 20 series findings triaged, 5 were the reference work folding
+    referred material, paratypes or hypodigm into the type. Once a primary has
+    been read and quoted, the finding is recorded in adjudicated.yml and
+    suppressed here rather than resurfacing every run.
+
+    @returns: Dict of binomial -> set of suppressed category prefixes.
+    """
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "adjudicated.yml")
+
+    if not os.path.exists(path):
+        return {}
+
+    document = yaml.safe_load(open(path, encoding="utf-8")) or {}
+
+    return {name: set(entry.get("categories") or [])
+            for name, entry in document.items() if isinstance(entry, dict)}
+
+
 def loadInstitutionAliases():
     """Map every institution code and alias to its canonical code.
 
@@ -176,10 +198,14 @@ def foldSpecimen(value, aliases):
     if not value:
         return ""
 
-    match = re.match(r"\s*([A-Za-z][A-Za-z.\-]*)\s*(.*)", str(value))
+    # Descriptive words ride along in values like "ISI R273 series" and would
+    # otherwise defeat containment against our expanded element list.
+    cleaned = re.sub(r"\b(series|specimens?|various)\b", " ", str(value), flags=re.I)
+
+    match = re.match(r"\s*([A-Za-z][A-Za-z.\-]*)\s*(.*)", cleaned)
 
     if not match:
-        return normalizeSpecimen(value)
+        return normalizeSpecimen(cleaned)
 
     code = match.group(1).upper().replace(".", "").replace("-", "")
 
@@ -305,6 +331,7 @@ def main():
                         help="maximum examples listed per category (default 12)")
     args = parser.parse_args()
 
+    adjudicated = loadAdjudicated()
     institutionAliases = loadInstitutionAliases()
     stageVocabulary = loadStageVocabulary()
     referenceRecords = loadReferenceRecords()
@@ -370,6 +397,7 @@ def main():
         return f"[CONFIRMED BY {','.join(sorted(agreeing))}] "
 
     for ours, references in matched:
+        settled = adjudicated.get(ours["binomial"], set())
         sourceIds = ",".join(sorted({reference["ref_id"] for reference in references}))
         label = f"{ours['binomial']} [{sourceIds}]"
 
@@ -406,13 +434,14 @@ def main():
                 disagreeingKeys.append(referenceSpecimen)
                 referenceValues.append(f"{raw} ({reference['ref_id']})")
 
-        if seriesValues:
+        if seriesValues and "holotype" not in settled:
             findings["holotype-series-vs-single-element"].append(
                 f"{label}: ours {ours['specimenIds']} — reference calls the type a "
                 f"series: {' | '.join(seriesValues)}")
 
         if disagreeing:
-            findings[classify("holotype", disagreeing, agreeing, disagreeingKeys)].append(
+            if "holotype" not in settled:
+                findings[classify("holotype", disagreeing, agreeing, disagreeingKeys)].append(
                 agreementNote(agreeing) + 
                 f"{label}: ours {ours['specimenIds'][:4]} vs {' | '.join(referenceValues)}")
 
@@ -480,7 +509,8 @@ def main():
                 referenceValues.append(f"{' / '.join(names)} ({reference['ref_id']})")
 
         if disagreeing:
-            findings[classify("formation", disagreeing, agreeing, disagreeingKeys)].append(
+            if "formation" not in settled:
+                findings[classify("formation", disagreeing, agreeing, disagreeingKeys)].append(
                 agreementNote(agreeing) + 
                 f"{label}: ours '{ours['formation']}' vs {' | '.join(referenceValues)}")
 
@@ -501,7 +531,8 @@ def main():
                 referenceValues.append(f"{reference['stage']} ({reference['ref_id']})")
 
         if disagreeing:
-            findings[classify("stage", disagreeing, agreeing, disagreeingKeys)].append(
+            if "stage" not in settled:
+                findings[classify("stage", disagreeing, agreeing, disagreeingKeys)].append(
                 agreementNote(agreeing) + 
                 f"{label}: ours {sorted(ourStages)} vs {' | '.join(referenceValues)}")
 

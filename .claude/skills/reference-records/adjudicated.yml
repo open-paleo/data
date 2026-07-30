@@ -1,0 +1,54 @@
+# Tier 1 findings settled against the erecting paper, and therefore suppressed
+# from the reconciliation report.
+#
+# Only close a finding here when a PRIMARY paper has been read and quoted. A
+# reference work disagreeing with us is not evidence that we are wrong -- of the
+# first 20 series findings triaged, 5 were the reference work conflating the
+# holotype with referred material, paratypes or hypodigm.
+#
+# Keyed by binomial; `categories` lists the finding prefixes to suppress.
+
+Aviatyrannis jurassica:
+  categories: [holotype]
+  source: rauhut2003a
+  verdict: ours-correct
+  note: >
+    "Holotype. IPFUB Gui Th 1, almost complete right ilium." Gui Th 2 and Gui Th 3
+    appear under "Referred material" (a fragmentary ilium and a partial right
+    ischium), so the reference work's "Gui Th 1 through 3" folds referred
+    material into the type.
+
+Deinonychus antirrhopus:
+  categories: [holotype]
+  source: ostrom1969a
+  verdict: ours-correct
+  note: >
+    "TYPE: YPM 5205, a complete left pes and an incomplete right pes. HYPODIGM:
+    YPM 5201, 5202, and 5203 ..." The type is YPM 5205 alone; the reference
+    work's "5205, 5203, 5206, 5210" lists the hypodigm.
+
+Kileskus aristotocus:
+  categories: [holotype]
+  source: averianov2010a
+  verdict: ours-correct
+  note: >
+    "Holotype. ZIN PH 5/117, incomplete right maxilla." A single element; the
+    reference work's "5/117 through 12/117" spans the referred material.
+
+Europasaurus holgeri:
+  categories: [holotype]
+  source: sander2006a
+  verdict: ours-correct
+  note: >
+    "Holotype. DFMMh/FV 291: disarticulated left premaxilla; right maxilla; ...
+    of one individual." One catalogue number covering many elements, so the
+    reference work's "DFMMh/FV 291 series" is loose phrasing rather than a
+    series of numbers.
+
+Trigonosaurus pricei:
+  categories: [holotype]
+  source: campos2005a
+  verdict: ours-correct
+  note: >
+    "Holotype - incomplete vertebral column ... (MCT 1488-R)". MCT 1719-R is
+    explicitly the paratype.
