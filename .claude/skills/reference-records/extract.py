@@ -416,6 +416,25 @@ def splitOccurrenceText(text):
             "country": primary["country"]}
 
 
+def trimSpecimenQualifiers(value):
+    """Cut an ontogeny or age qualifier off the end of a specimen cell.
+
+    The Molina-Perez tables append the specimen's growth stage or age to the same
+    cell -- "MLP 77-V-29-1 Indeterminate age", "QG 1 Adult" -- which is not part
+    of the catalogue number and makes the value spuriously extend our own.
+
+    @param value: Candidate specimen string, or None.
+    @returns: The value up to the first qualifier word, stripped.
+    """
+    if not value:
+        return value
+
+    match = re.search(r"\s+(indetermin\w*|undetermin\w*|adult|juvenile|subadult|"
+                      r"immature|unknown age|age)\b", value, re.I)
+
+    return value[:match.start()].strip() if match else value
+
+
 def looksLikeCatalogueNumber(value):
     """Reject anything that is not plausibly a specimen catalogue number.
 
@@ -510,6 +529,7 @@ def extractMolinaPerez(refId):
             else:
                 candidate = None
 
+            candidate = trimSpecimenQualifiers(candidate)
             specimen = candidate if looksLikeCatalogueNumber(candidate) else None
 
             records.append({

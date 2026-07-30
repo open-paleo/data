@@ -7,6 +7,8 @@
 # holotype with referred material, paratypes or hypodigm.
 #
 # Keyed by binomial; `categories` lists the finding prefixes to suppress.
+# `verdict: ticketed` means the question is real but out of scope for this pass
+# and tracked as a GitHub issue, so it should not resurface as a finding.
 
 Aviatyrannis jurassica:
   categories: [holotype]
@@ -52,3 +54,28 @@ Trigonosaurus pricei:
   note: >
     "Holotype - incomplete vertebral column ... (MCT 1488-R)". MCT 1719-R is
     explicitly the paratype.
+
+Argyrosaurus superbus:
+  categories: [holotype]
+  source: mannion2012a
+  verdict: ours-correct
+  note: >
+    "Holotype - MLP 77-V-29-1, a partly articulated left forelimb consisting of
+    the humerus, ulna, radius, probably two carpals (now lost), and all five
+    metacarpals." One catalogue number, not a series. lydekker1893a states no
+    holotype in the modern sense, so this 2012 reappraisal is the fixing source.
+
+Indosuchus raptorius:
+  categories: [holotype]
+  source: huene1933a
+  verdict: ticketed
+  issue: 2011
+  note: >
+    Type fixation unresolved. huene1933a founds the species on three specimens
+    with no holotype designated ("Frontals-K 20/350 and K 27/690, and roof of
+    skull K 27/685"), i.e. syntypes; Chatterjee (1978) designated the AMNH
+    material as lectotype, which dalman2011z argues is invalid since that
+    material lacks the diagnostic skull roof; Novas (2009) calls GSI K20/350 the
+    holotype. Our record matches none of these. Needs Chatterjee (1978) read
+    directly. Note jones2026c transposes the third element as GSI K20/690; the
+    primary writes K 27/690.
