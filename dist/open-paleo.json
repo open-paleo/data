@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-07-31T01:49:28.183Z",
+    "built_at": "2026-07-31T02:29:47.093Z",
     "clade_count": 188,
     "genus_count": 1401,
     "license": "CC-BY-4.0",
@@ -19447,11 +19447,12 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "AMNH 6368"
+              "AMNH 6554"
             ],
-            "specimen_type": "holotype",
+            "specimen_type": "lectotype",
             "institution": "American Museum of Natural History",
-            "material": "Two cotypes: right humerus, phalanx and ungual of manus (one specimen); right femur, tibia, fibula, astragalus, calcaneum, pes, and partial pubic foot (second specimen).",
+            "material": "A virtually complete right hind limb comprising femur, tibia, fibula, astragalus, calcaneum and pes, with two manual unguals cataloged under the same number.",
+            "notes": "Gilmore (1933) founded the species on two cotypes, AMNH 6368 and AMNH 6554, collected from sites about 30 m apart. Mader and Bradley (1989) found the AMNH 6368 forelimb material not to be tyrannosauroid and designated AMNH 6554, the hind limb, as the lectotype.",
             "completeness": "fragmentary"
           },
           "erected_in": "gilmore1933a",
@@ -19469,6 +19470,19 @@
           "volume": "68",
           "issue": "2-3",
           "pages": "23-78"
+        },
+        {
+          "id": "mader1989a",
+          "authors": "Mader, B. J.; Bradley, R. L.",
+          "year": 1989,
+          "title": "A redescription and revised diagnosis of the syntypes of the Mongolian tyrannosaur Alectrosaurus olseni",
+          "journal": "Journal of Vertebrate Paleontology",
+          "publisher": "Informa UK Limited",
+          "volume": "9",
+          "issue": "1",
+          "pages": "41-55",
+          "doi": "10.1080/02724634.1989.10011737",
+          "notes": "Redescribes the syntypes and designates AMNH 6554 as the lectotype, excluding the AMNH 6368 forelimb material from the genus."
         }
       ],
       "taxonomy": [
@@ -153706,7 +153720,7 @@
         {
           "name": "Bothriospondylus magnus",
           "type": "junior objective",
-          "reason": "Owen (1874) coined Bothriospondylus magnus on the subjects of his Plates VIII and IX, which Owen himself identified as among the specimens (Plates VII-IX) Seeley (1870) had previously used to erect Ornithopsis hulkei. Naish and Martill (2001) subsequently designated NHMUK R28632 as the lectotype of O. hulkei from that same syntype series, making B. magnus a junior objective synonym based on the shared physical specimen."
+          "reason": "Owen (1874) coined Bothriospondylus magnus on the subjects of his Plates VIII and IX, which Owen himself identified as among the specimens (Plates VII-IX) Seeley (1870) had previously used to erect Ornithopsis hulkei. Blows (1995) treats NHMUK 28632 as the lectotype of O. hulkei from that same syntype series, making B. magnus a junior objective synonym based on the shared physical specimen."
         }
       ],
       "diagnostic_features": [
@@ -153779,11 +153793,11 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "NHMUK R28632"
+              "NHMUK 28632"
             ],
             "specimen_type": "lectotype",
             "institution": "Natural History Museum",
-            "material": "Two vertebrae: a cervical from Tilgate and a dorsal labeled 'South-east of England', both from the Wealden",
+            "material": "A dorsal vertebral centrum from the Wealden of the Isle of Wight.",
             "completeness": "fragmentary"
           },
           "erected_in": "seeley1870a",
@@ -153823,14 +153837,27 @@
           "notes": "Coined Bothriospondylus magnus, later linked to Ornithopsis."
         },
         {
-          "id": "naish2001b",
-          "authors": "Naish, D.; Martill, D. M.",
-          "year": 2001,
-          "title": "Saurischian dinosaurs 1: Sauropods",
-          "book": "Dinosaurs of the Isle of Wight",
-          "publisher": "The Palaeontological Association",
-          "pages": "185-241",
-          "notes": "Designated NHMUK R28632 as the lectotype of Ornithopsis."
+          "id": "hulke1879a",
+          "authors": "Hulke, J. W.",
+          "year": 1879,
+          "title": "Note (3rd) on (Eucamerotus, Hulke) Ornithopsis, H. G. Seeley, = Bothrospondylus magnus, Owen, = Chondrosteosaurus magnus, Owen",
+          "journal": "Quarterly Journal of the Geological Society",
+          "volume": "35",
+          "issue": "1-4",
+          "pages": "752-762",
+          "doi": "10.1144/GSL.JGS.1879.035.01-04.55",
+          "notes": "Regards No. 28632 as the type of Ornithopsis."
+        },
+        {
+          "id": "blows1995a",
+          "authors": "Blows, W. T.",
+          "year": 1995,
+          "title": "The Early Cretaceous brachiosaurid dinosaurs Ornithopsis and Eucamerotus from the Isle of Wight, England",
+          "journal": "Palaeontology",
+          "volume": "38",
+          "issue": "1",
+          "pages": "187-197",
+          "notes": "Treats NHMUK 28632 as the lectotype and excludes the Sussex vertebra NHMUK 2239 from the syntype series."
         }
       ],
       "taxonomy": [
@@ -219689,7 +219716,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "NMZ QG24"
+              "QG24"
             ],
             "specimen_type": "holotype",
             "institution": "Natural History Museum of Zimbabwe",
