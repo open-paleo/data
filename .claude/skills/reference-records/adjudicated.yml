@@ -172,3 +172,59 @@ Vulcanodon karibaensis:
     in the National Museum of Zimbabwe, Bulawayo, and bears the catalogue number
     QG24." The institution stays NMZB; the catalogue number itself carries no
     institutional prefix.
+
+Mosaiceratops azumai:
+  categories: [holotype]
+  source: zheng2015a
+  verdict: ours-correct
+  note: >
+    "Holotype. ZMNH M8856 (housed in the collections of the Zhejiang Museum of
+    Natural History, Hangzhou, China)". The reference work's ZHMN transposes the
+    museum code.
+
+Rocasaurus muniozi:
+  categories: [holotype]
+  source: salgado2000a
+  verdict: ours-correct
+  note: >
+    "Holotype. MPCA-Pv 46: a juvenile individual represented by a cervical
+    centrum ...". The reference work's MCPA-Pv transposes the museum code.
+
+Shidaisaurus jinae:
+  categories: [holotype]
+  source: wu2009a
+  verdict: ours-correct
+  note: >
+    "Holotype: Lufeng Dinosaur Museum-Lufeng Chuanjie A'na (LDM-LCA) 9701-IV, a
+    partial skeleton". The paper expands the code, so LDM is Lufeng Dinosaur
+    Museum and the reference work's DML-LCA is a transposition.
+
+Sektensaurus sanjuanboscoi:
+  categories: [holotype]
+  source: ibiricu2019a
+  verdict: ours-correct
+  note: >
+    The paper writes UNPSJB-PV throughout, e.g. "an incomplete dorsal centrum
+    (UNPSJB-PV 1054/3) in left lateral ... views". The reference work's
+    UNPSJB-PB substitutes B for V in the collection code.
+
+Nanningosaurus dashiensis:
+  categories: [holotype]
+  source: mo2007a
+  verdict: ours-correct
+  note: >
+    "Holotype: NHMG8142, disarticulated partial skeleton including relatively
+    complete right and left maxillae ...". The reference work's NMG8142 drops
+    the H. A space was inserted after the code to match the other six NHMG
+    records; the paper itself writes it closed up.
+
+Shixinggia oblita:
+  categories: [holotype]
+  source: lu2005a
+  verdict: ours-correct
+  note: >
+    "Holotype: A nearly complete sacrum ... (The specimen is stored in the
+    Beijing Natural History Museum: BPV-112)." The reference work's BVP-112
+    transposes the collection code. NOTE: BPV is not registered in
+    institutions.yaml as a key or alias of BMNHC, so the prefix check passes
+    only because it stops at the first token.
