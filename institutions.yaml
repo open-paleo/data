@@ -1,3 +1,16 @@
+# Institution registry: canonical code -> name, location and aliases.
+#
+# ALIASES ARE APPEND-ONLY. Never remove one because nothing currently uses it --
+# that is exactly when it earns its keep, by resolving a code that appears only
+# in the literature. A code is removed only when it was wrong in the first
+# place, never because it looks unused. When two entries are merged, the losing
+# entry's code and all of its aliases move onto the survivor.
+#
+# Aliases carry superseded institution codes (BMNH for NHMUK), sub-collection
+# codes (MCF-PVPH within MCF) and spelling variants alike; they are not ordered
+# and do not by themselves record which form a given paper printed. A specimen
+# that was renumbered or rehoused records that per record, not here.
+
 XHPM:
   name: Xinghai Paleontological Museum of Dalian
   location:
@@ -68,7 +81,7 @@ BGS-JX:
   location:
     country: CN
 BHN:
-  aliases: [BHN2R]
+  aliases: [BHN2R, MGB, MGB-FR]
   name: Muséum d'Histoire Naturelle de Boulogne-sur-Mer
   location:
     country: FR
@@ -234,7 +247,7 @@ MJHG:
   location:
     country: AR
     city: Ingeniero Jacobacci
-  aliases: [CIC, MJG]
+  aliases: [CIC, MJG, MGNHJ]
 CIP-CN:
   aliases: [CIP]
   name: Chongqing Institute of Paleontology
@@ -507,7 +520,7 @@ GPDM:
     country: US
     city: Malta
 GPMA:
-  aliases: [AGB, AGM]
+  aliases: [AGB, AGM, AHM]
   name: Geological and Paleontological Museum of Anhui
   location:
     country: CN
@@ -897,6 +910,7 @@ MG:
     city: Lisbon
   aliases: [MIGM]
 MGUAN:
+  aliases: [MGUANPA]
   name: Museu de Geologia da Universidade Agostinho Neto
   location:
     country: AO
@@ -1388,6 +1402,7 @@ SDSM:
     country: US
     city: Rapid City
 SGM:
+  aliases: [MNEM]
   name: Service Géologique du Maroc, Ministére de l’Energie et des Mines
   location:
     country: MA
@@ -1576,7 +1591,7 @@ ZMNH:
   location:
     country: CN
     city: Hangzhou
-  aliases: [ZNM, ZPM, WLMH]
+  aliases: [ZNM, ZPM, WLMH, ZH]
 WMNM:
   name: LWL-Museum für Naturkunde
   location:
@@ -1870,6 +1885,7 @@ KDRC:
     city: Boseong
 
 PKNU:
+  aliases: [PKNUG]
   name: Pukyong National University Museum
   location:
     country: KR

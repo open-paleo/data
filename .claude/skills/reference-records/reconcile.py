@@ -178,7 +178,18 @@ def loadAdjudicated():
     if not os.path.exists(path):
         return {}
 
-    document = yaml.safe_load(open(path, encoding="utf-8")) or {}
+    raw = open(path, encoding="utf-8").read()
+    document = yaml.safe_load(raw) or {}
+
+    # YAML keeps the last of two entries under one key and says nothing, so a
+    # second block for a binomial silently discards the first -- which is how an
+    # occurrence adjudication once cancelled that taxon's holotype one. Findings
+    # for a binomial belong in ONE entry with several categories.
+    written = re.findall(r"^([^\s#][^\n:]*):$", raw, re.M)
+    duplicates = {name for name in written if written.count(name) > 1}
+
+    if duplicates:
+        raise SystemExit(f"adjudicated.yml has duplicate keys: {sorted(duplicates)}")
 
     return {name: set(entry.get("categories") or [])
             for name, entry in document.items() if isinstance(entry, dict)}
@@ -228,8 +239,20 @@ def foldSpecimen(value, aliases):
         return normalizeSpecimen(cleaned)
 
     code = match.group(1).upper().replace(".", "").replace("-", "")
+    remainder = match.group(2)
 
-    return normalizeSpecimen(aliases.get(code, match.group(1)) + " " + match.group(2))
+    # A sub-collection code may be glued to the institution ("ISIR 335/1") or
+    # written as a separate token ("ISI R335/1-65"), and folding only the leading
+    # token loses the collection letters on one side but not the other. Peel a
+    # leading run of letters off the remainder when it extends the code into
+    # another known alias, so both spellings reduce to the same key.
+    peeled = re.match(r"\s*([A-Za-z]+)(.*)", remainder, re.S)
+
+    if peeled and code + peeled.group(1).upper() in aliases:
+        code = code + peeled.group(1).upper()
+        remainder = peeled.group(2)
+
+    return normalizeSpecimen(aliases.get(code, code) + " " + remainder)
 
 
 def denotesSeries(value):
@@ -366,9 +389,16 @@ def main():
         if candidates:
             matched.append((record, candidates))
 
+    # Occurrence-level countries are fed in as well as the row's headline
+    # country. A row listing several countries only exposes the first at the top
+    # level, so names like "Belgium" would never enter the map and a cell naming
+    # one would read as unmappable rather than as ours.
     countryMap = buildCountryMap(
-        (reference.get("country"), ours.get("country"))
-        for ours, references in matched for reference in references)
+        [(reference.get("country"), ours.get("country"))
+         for ours, references in matched for reference in references]
+        + [(entry.get("country"), ours.get("country"))
+           for ours, references in matched for reference in references
+           for entry in (reference.get("occurrences") or [])])
 
     findings = collections.defaultdict(list)
 
@@ -487,13 +517,26 @@ def main():
             mappedIsos = {countryMap.get(fragment.strip().lower()) for fragment in fragments}
             mappedIsos.discard(None)
 
+            # Splitting on commas alone misses a country sitting mid-string,
+            # which is exactly what a wrapped cell produces: "Los Colorados
+            # Formation Argentina Lower Elliot Formation ...". The whole cell is
+            # therefore also scanned for country names on word boundaries, so a
+            # taxon occurring in several countries, or a cell that kept its own
+            # occurrence first and swallowed the following rows, still resolves
+            # to ours. Without this, 28 sound rows were quarantined and their
+            # formation and age discarded with them.
+            cellText = " ".join(fragments).lower()
+            mappedIsos |= {iso for name, iso in countryMap.items()
+                           if re.search(rf"(?<![a-z]){re.escape(name)}(?![a-z])", cellText)}
+
             if mappedIsos and ours.get("country") and ours["country"] not in mappedIsos:
-                summary = "; ".join(f"{entry.get('formation')}, {entry.get('country')}"
-                                    for entry in occurrences)
-                findings["occurrence-row-suspect"].append(
-                    f"{ours['binomial']} [{reference['ref_id']}]: reference reads "
-                    f"'{summary}' but the taxon is {ours['country']} — cell misaligned "
-                    f"or unparseable in the source markdown; quarantined")
+                if "occurrence" not in settled:
+                    summary = "; ".join(f"{entry.get('formation')}, {entry.get('country')}"
+                                        for entry in occurrences)
+                    findings["occurrence-row-suspect"].append(
+                        f"{ours['binomial']} [{reference['ref_id']}]: reference reads "
+                        f"'{summary}' but the taxon is {ours['country']} — cell misaligned "
+                        f"or unparseable in the source markdown; quarantined")
             else:
                 trusted.append(reference)
 

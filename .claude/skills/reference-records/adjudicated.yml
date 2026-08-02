@@ -812,12 +812,16 @@ Brontosaurus excelsus:
     specimen, later transferred to the University of Wyoming.
 
 Carcharodontosaurus saharicus:
-  categories: [holotype]
+  categories: [holotype, occurrence]
   source: brusatte2007a
   verdict: ours-correct
   note: >
     SGM-Din 1 is the neotype designated by brusatte2007a after the Stromer
     holotype was destroyed. Recorded as specimen_type neotype.
+    Separately, jones2026c's occurrence "Echkar Fm., Niger" belongs to
+    C. iguidensis, not to the type species, whose neotype comes from the Kem Kem
+    of Morocco; we hold both species with the right countries. Neither point
+    bears on #2009, which concerns the type fixation.
 
 Ceratonykus oculatus:
   categories: [holotype]
@@ -1051,16 +1055,16 @@ Patagotitan mayorum:
 Ruyangosaurus giganteus:
   categories: [holotype]
   source: lu2009a
-  verdict: ticketed
+  verdict: corrected
   issue: 2018
   note: >
-    The number is right but its formatting was wrong: lu2009a writes
-    41HIII-0002, ours read "41 HII I-0002". Correcting it exposes a collision -
-    the same number is the holotype of Zhongyuansaurus luoyangensis (xu2007a).
-    Both papers use it without acknowledging the other, and a later unpublished
-    revision of Ruyangosaurus repeats it. Labelled "sensu Lu 2009" and "sensu Xu
-    2007" respectively, following the stopgap used for #1901, pending contact
-    with the authors.
+    lu2009a prints 41HIII-0002, which collided with the holotype of
+    Zhongyuansaurus luoyangensis (xu2007a) - a sauropod and an ankylosaur under
+    one number. Resolved from the specimen itself: a photograph of the holotype
+    material shows the inscribed number ending in 3, so Ruyangosaurus is HGM
+    41HIII-0003 and the published 0002 is a typographical error, carried into
+    lacovara2014a and sethapanichsakul2026a. Zhongyuansaurus keeps 41HIII-0002.
+    The sensu labels used as a stopgap are removed.
 
 Segnosaurus galbinensis:
   categories: [holotype]
@@ -1316,3 +1320,52 @@ Tyrannosaurus rex:
     "Amer. Mus. No. 973"; the holotype was sold to the Carnegie Museum in 1941.
     molina-perez2019a lists seven numbers, of which the rest are referred
     specimens.
+
+Abrosaurus dongpoi:
+  categories: [occurrence]
+  source: jones2026b
+  verdict: ours-correct
+  note: >
+    Reference-side corruption, not a data question. The occurrence column of the
+    Jones sauropod table is locally shifted: Astrophocaudia reads correctly
+    (Paluxy Fm., United States), Australodocus carries "Udurchurkan Fm., Russia"
+    (an Amur-region unit unrelated to it), and Austrosaurus carries Tendaguru,
+    which is Australodocus's real occurrence. Ours are right throughout -
+    Abrosaurus CN/Shaximiao, Australodocus TZ/Tendaguru, Austrosaurus AU.
+
+Australodocus bohetii:
+  categories: [occurrence]
+  source: jones2026b
+  verdict: ours-correct
+  note: >
+    Same shifted region of the Jones table; see Abrosaurus dongpoi.
+
+Austrosaurus mckillopi:
+  categories: [occurrence]
+  source: jones2026b
+  verdict: ours-correct
+  note: >
+    Same shifted region of the Jones table; see Abrosaurus dongpoi.
+
+Linheraptor exquisitus:
+  categories: [occurrence]
+  source: jones2026c
+  verdict: ours-correct
+  note: >
+    "Djadokhta Fm., Mongolia" gives the wrong country: the taxon is from
+    Nuchidaba, Bayan Mandahu, Nei Mongol, China, in the Wulansuhai Formation.
+    The Wulansuhai is commonly correlated with the Djadokhta, which is likely
+    how the error arose, but the correlation does not move the locality across
+    the border.
+
+Raptorex kriegsteini:
+  categories: [occurrence]
+  source: jones2026c
+  verdict: ours-correct
+  note: >
+    Not an artifact but a live dispute, and our record already carries it.
+    Sereno et al. (2009) reported the holotype from the Lower Cretaceous of
+    China; Fowler et al. (2011) rejected that provenance and argued for the Late
+    Cretaceous Nemegt of Mongolia, which is the reading jones2026c follows. Our
+    formation reads "Unknown (provenance uncertain)" and the dispute block names
+    both hypotheses, so there is nothing to adopt.
