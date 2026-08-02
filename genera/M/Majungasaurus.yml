@@ -44,6 +44,15 @@ synonyms:
     type: junior subjective
     reason: Initially erected as a separate genus due to the lack of overlapping
       material; subsequently recognized as referable to Majungasaurus.
+iczn_rulings:
+  - type: type-specimen
+    ruling: iczn2011a
+    petition: carrano2009a
+    notes: Opinion 2269 set aside all previous type fixations for Megalosaurus
+      crenatissimus under the plenary power and designated MNHN.MAJ 1, the right
+      dentary Depéret described, as the neotype, the original material being
+      non-diagnostic. Majungasaurus was placed on the Official List of Generic
+      Names and crenatissimus on the Official List of Specific Names.
 species:
   - name: Majungasaurus crenatissimus
     etymology: "From Latin 'crenatus' meaning 'notched' combined with the
@@ -77,10 +86,10 @@ species:
         min: 750
         max: 1100
     type_specimen:
-      specimen_id: [ FMNH PR 2836 ]
+      specimen_id: [ MNHN.MAJ 1 ]
       specimen_type: neotype
-      institution: FMNH
-      material: Partial skull and skeleton.
+      institution: MNHN
+      material: Right dentary.
       completeness: partial
     erected_in: lavocat1955a
 notable_specimens:
@@ -100,6 +109,12 @@ notable_specimens:
     references: [oconnor2005a]
 references:
   - id: lavocat1955a
+  - id: carrano2009a
+    notes: Petitioned the Commission to replace the non-diagnostic holotype
+      with a neotype.
+  - id: iczn2011a
+    notes: Opinion 2269, which granted the petition and fixed MNHN.MAJ 1 as the
+      neotype.
   - id: jones2026c
     notes: Source of the hip height estimate, and the appearance features.
   - id: sampson1998a
