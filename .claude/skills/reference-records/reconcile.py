@@ -93,10 +93,12 @@ def formationsAgree(ourName, referenceName):
 
 
 def normalizeSpecimen(value):
-    """Fold a catalogue number: uppercase, strip punctuation and spacing.
+    """Fold a catalogue number: uppercase, strip punctuation, unpad numbers.
 
     "MCF-PVPH-236", "MCF PVPH 236" and "mcf/pvph/236" all fold together, so that
-    only genuinely different numbers are reported.
+    only genuinely different numbers are reported. Leading zeros are dropped
+    from each numeric run for the same reason: "CMN 0491" and "CMN 491" are one
+    specimen written two ways, as are "TMP 2002.068.0001" and "TMP 2002.68.1".
 
     @param value: Raw specimen string, or None.
     @returns: A normalized key, empty when nothing usable remains.
@@ -104,7 +106,10 @@ def normalizeSpecimen(value):
     if not value:
         return ""
 
-    return re.sub(r"[^A-Z0-9]+", "", str(value).upper())
+    stripped = re.sub(r"[^A-Z0-9]+", " ", str(value).upper())
+    unpadded = re.sub(r"\b0+(\d)", r"\1", stripped)
+
+    return unpadded.replace(" ", "")
 
 
 def loadStageVocabulary():
@@ -243,15 +248,27 @@ def foldSpecimen(value, aliases):
 
     # A sub-collection code may be glued to the institution ("ISIR 335/1") or
     # written as a separate token ("ISI R335/1-65"), and folding only the leading
-    # token loses the collection letters on one side but not the other. Peel a
-    # leading run of letters off the remainder when it extends the code into
-    # another known alias, so both spellings reduce to the same key.
-    peeled = re.match(r"\s*([A-Za-z]+)(.*)", remainder, re.S)
+    # token loses the collection letters on one side but not the other. Peel
+    # leading runs of letters off the remainder while each one extends the code
+    # into another known alias, so both spellings reduce to the same key. The
+    # loop matters for multi-token prefixes: "NHMUK PV R 9951" needs two peels
+    # before it resolves the way "NHMUK R9951" does in one.
+    while True:
+        peeled = re.match(r"\s*([A-Za-z]+)(.*)", remainder, re.S)
 
-    if peeled and code + peeled.group(1).upper() in aliases:
+        if not peeled or code + peeled.group(1).upper() not in aliases:
+            break
+
         code = code + peeled.group(1).upper()
         remainder = peeled.group(2)
 
+    # NOTE: an unknown code is often a registered institution carrying an
+    # UNREGISTERED collection suffix -- "MPC-D" for MPC, "NHMUK PV OR" for
+    # NHMUK -- and folding those would clear several findings. Trimming to the
+    # longest known prefix was tried and reverted: it cannot tell a collection
+    # code from part of the number, so it dropped the P of "NMMNH-P3690" and
+    # invented a CORROBORATED finding against "NMMNH P-3690". Distinguishing
+    # the two needs a registry of collection codes, which is #2014.
     return normalizeSpecimen(aliases.get(code, code) + " " + remainder)
 
 
