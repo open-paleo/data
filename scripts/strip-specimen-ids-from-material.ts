@@ -36,7 +36,7 @@ import { parseYaml } from "./utilities.ts";
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
 const root = path.join(scriptDir, "..");
-const reportsDir = path.join(root, "reports");
+const reportsDir = path.join(root, "scratch");
 
 /**
  * Escapes a string for embedding in a RegExp literal.

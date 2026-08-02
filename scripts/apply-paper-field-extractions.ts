@@ -1,5 +1,5 @@
 // Apply paper-driven extractions to genus YAML files. Reads each
-// `reports/extractions/<Letter>/<Genus>.json` produced by the Sonnet
+// `scratch/extractions/<Letter>/<Genus>.json` produced by the Sonnet
 // extraction agent and writes its `holotype_material` and
 // `diagnostic_features` into the matching `genera/<Letter>/<Genus>.yml`.
 //
@@ -44,7 +44,7 @@ const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
 const root = path.join(scriptDir, "..");
 const generaDir = path.join(root, "genera");
-const reportsDir = path.join(root, "reports");
+const reportsDir = path.join(root, "scratch");
 
 type Extraction = {
     genus: string;

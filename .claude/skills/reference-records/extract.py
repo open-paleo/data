@@ -34,11 +34,11 @@ import os
 import re
 import sys
 
-from _paths import corpus_dir, data_dir
+from _paths import audit_dir, corpus_dir, data_dir
 
 CORPUS = corpus_dir()
 MARKDOWN = os.path.join(CORPUS, "markdown")
-CACHE = os.path.join(data_dir(), "reports", "audit", "reference-records")
+CACHE = os.path.join(audit_dir(), "reference-records")
 
 SCHEMA_VERSION = 1
 

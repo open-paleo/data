@@ -44,7 +44,7 @@ and rationale: `condense-instructions.md` (agent-facing) and the audit memories.
 
 - `assemble.py <Clade>` — Phase A. Slice → loci with dispute blocks → union of
   cited ref-ids → classify (primary / reference-work / not-in-corpus). Writes
-  `reports/audit/<Clade>/manifest.json`. For a slice too large for one review
+  `scratch/audit/<Clade>/manifest.json`. For a slice too large for one review
   gate (≳40 loci), carve it into disjoint **sub-slices** with `--exclude CLADE`
   (repeatable), which drops that clade's whole subtree — e.g. audit
   `Hadrosauridae` on its own, then `Hadrosauroidea --exclude Hadrosauridae`, then
@@ -92,7 +92,7 @@ transcripts that actually wrote a `condensed/*.json` before counting models.)
 ## Phase 2 — Tier-0 deterministic checks
 
 ```
-python3 tier0.py reports/audit/<Clade>/manifest.json
+python3 tier0.py scratch/audit/<Clade>/manifest.json
 ```
 
 Flags wrong-paper-under-a-ref-id (title/DOI) and not-in-corpus coverage gaps.
@@ -108,7 +108,7 @@ publication (e.g. a 2000 chapter under a 1987 key), not a title-phrasing artifac
 Dispatch one agent per locus, **on Sonnet**, each told to follow
 `tier1-instructions.md` with the locus name/kind, its YAML path, the absolute
 `<CONDENSED_DIR>` (`$corpus/condensed`), and its output path
-`reports/audit/<Clade>/tier1/<locus>.json`.
+`scratch/audit/<Clade>/tier1/<locus>.json`.
 
 Each agent compares each load-bearing claim to the cited paper's condensation and
 returns findings (usually none). Enforce the guardrails from the instructions:
@@ -122,11 +122,11 @@ returns findings (usually none). Enforce the guardrails from the instructions:
 ## Phase 4 — Report + re-audit queue
 
 ```
-python3 report.py reports/audit/<Clade> --date <today>
+python3 report.py scratch/audit/<Clade> --date <today>
 ```
 
-Writes `reports/audit/<Clade>.md` (regenerable, gitignored) and updates
-`reports/audit/reaudit-queue.yml` (durable, committed): for every not-in-corpus
+Writes `scratch/audit/<Clade>.md` (regenerable, gitignored) and updates
+`.claude/skills/audit-disputes/reaudit-queue.yml` (durable, committed): for every not-in-corpus
 paper and every truncated/incomplete source, it records which loci to re-audit
 when that paper lands or is repaired. This is how a coverage gap becomes a
 tracked, actionable backlog instead of being silently dropped.

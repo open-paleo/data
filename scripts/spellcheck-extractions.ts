@@ -7,7 +7,7 @@
 //   - OCR artifacts or typos (fix the affected extraction by hand),
 //   - normal English words missing from the project dict (add to dict).
 //
-// Output: reports/extracted-paper-fields-<Letter>-spellcheck.md
+// Output: scratch/extracted-paper-fields-<Letter>-spellcheck.md
 //   Listing each unknown word, total occurrences, and which genera
 //   surfaced it. Sorted by frequency ascending so rare-and-suspicious
 //   words rise to the top.
@@ -25,7 +25,7 @@ import * as url from "node:url";
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
 const root = path.join(scriptDir, "..");
-const reportsDir = path.join(root, "reports");
+const reportsDir = path.join(root, "scratch");
 
 /**
  * Parses CLI flags. Supports `--letter <X>`.

@@ -12,7 +12,7 @@ const generaDir = path.join(root, "genera");
 const cladesDir = path.join(root, "clades");
 const treePath = path.join(root, "tree.yml");
 const statePath = path.join(root, ".github", "paper-watch", "state.json");
-const digestPath = path.join(root, "reports", "paper-watch.md");
+const digestPath = path.join(root, "scratch", "paper-watch.md");
 
 /**
  * OpenAlex topic ids used to bound the fetch volume to fossil literature,

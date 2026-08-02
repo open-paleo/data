@@ -4,8 +4,8 @@
 // describing paper, checks corpus markdown availability and current
 // YAML state, and emits two artifacts:
 //
-//   reports/extraction-queue-<letter>.json    summary + skip categories
-//   reports/extraction-prompts-<letter>.jsonl one ready-to-dispatch row per line
+//   scratch/extraction-queue-<letter>.json    summary + skip categories
+//   scratch/extraction-prompts-<letter>.jsonl one ready-to-dispatch row per line
 //
 // The JSONL is consumed by an agent dispatcher (currently a human
 // driving the Agent tool); each row already contains the exact prompt
@@ -33,7 +33,7 @@ const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
 const root = path.join(scriptDir, "..");
 const generaDir = path.join(root, "genera");
-const reportsDir = path.join(root, "reports");
+const reportsDir = path.join(root, "scratch");
 
 /**
  * Outcome of evaluating one genus against the queue rules.

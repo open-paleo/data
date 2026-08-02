@@ -15,7 +15,7 @@
 // structural syntax, so a whole-file replace is safe and preserves
 // formatting (indentation, key order, scalar style) verbatim.
 //
-// Defaults to dry-run mode: emits reports/genera-text-normalization.md
+// Defaults to dry-run mode: emits scratch/genera-text-normalization.md
 // summarising every file that would change, with sample contexts.
 // Pass --apply to write changes back to disk.
 //
@@ -33,7 +33,7 @@ const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
 const root = path.join(scriptDir, "..");
 const generaDir = path.join(root, "genera");
-const reportsDir = path.join(root, "reports");
+const reportsDir = path.join(root, "scratch");
 
 type Replacement = {
     from: string;

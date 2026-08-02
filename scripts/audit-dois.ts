@@ -9,8 +9,8 @@ const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
 const root = path.join(scriptDir, "..");
 const referencesDir = path.join(root, "references");
-const reportPath = path.join(root, "reports", "doi-audit.md");
-const cachePath = path.join(root, "reports", "doi-audit-cache.json");
+const reportPath = path.join(root, "scratch", "doi-audit.md");
+const cachePath = path.join(root, "scratch", "doi-audit-cache.json");
 
 const contactEmail = "sarah@bot2k3.net";
 const userAgent = `open-paleo-data DOI audit (mailto:${contactEmail})`;

@@ -34,12 +34,14 @@ def condensed_dir():
 
 
 def audit_dir():
-    """Where per-slice audit outputs (report, intermediates) live in the data
-    repo. Gitignored except the re-audit queue."""
-    return os.path.join(data_dir(), "reports", "audit")
+    """Where per-slice audit outputs (report, intermediates) are written. Under
+    scratch/, which is wholly gitignored -- everything here is regenerable."""
+    return os.path.join(data_dir(), "scratch", "audit")
 
 
 def reaudit_queue_path():
     """Durable, committed backlog of loci to re-audit when a missing/incomplete
-    source paper lands or is repaired."""
-    return os.path.join(audit_dir(), "reaudit-queue.yml")
+    source paper lands or is repaired. Owned by this skill, which is the only
+    thing that writes it, so it lives beside the scripts rather than under the
+    regenerable scratch output."""
+    return os.path.join(os.path.dirname(os.path.abspath(__file__)), "reaudit-queue.yml")

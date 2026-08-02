@@ -9,7 +9,7 @@ file, and classify it (primary | monograph | reference-work | not-in-corpus).
 No agents, no network. Output is a JSON manifest the condensation phase consumes.
 
 Usage:
-    python3 assemble.py <SliceRoot>          # writes reports/audit/<slice>/manifest.json
+    python3 assemble.py <SliceRoot>          # writes scratch/audit/<slice>/manifest.json
     python3 assemble.py <SliceRoot> --out X   # or an explicit path
 """
 

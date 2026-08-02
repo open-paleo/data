@@ -11,7 +11,8 @@ be re-audited rather than re-running the whole slice.
 Usage:
     python3 report.py <slice-work-dir>
         # expects <dir>/manifest.json, <dir>/tier0.json, <dir>/tier1/*.json
-        # writes  reports/audit/<slice>.md  and updates reports/audit/reaudit-queue.yml
+        # writes  scratch/audit/<slice>.md  and updates this skill's
+        # reaudit-queue.yml
 """
 
 import argparse
@@ -142,7 +143,8 @@ def render(slice_root, manifest, tier0, tier1_results, findings, queue_pending):
 
     lines.append("## Re-audit queue (this slice's contributions)")
     lines.append("")
-    lines.append("Durable backlog at `reports/audit/reaudit-queue.yml`. When one of these papers")
+    lines.append("Durable backlog at `.claude/skills/audit-disputes/reaudit-queue.yml`. "
+                 "When one of these papers")
     lines.append("lands in the corpus (or a truncated source is repaired), re-audit its loci.")
     lines.append("")
     contributed = {rid: e for rid, e in queue_pending.items() if slice_root in e.get("slices", [])}

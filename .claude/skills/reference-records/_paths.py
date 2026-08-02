@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Path resolution for the audit-disputes skill scripts.
+"""Path resolution for the reference-records skill scripts.
 
 Mirrors scripts/corpus-path.ts: the data repo is this file's repo root, and the
 paper corpus / working dir are resolved from environment overrides or the
@@ -34,12 +34,7 @@ def condensed_dir():
 
 
 def audit_dir():
-    """Where per-slice audit outputs (report, intermediates) live in the data
-    repo. Gitignored except the re-audit queue."""
-    return os.path.join(data_dir(), "reports", "audit")
-
-
-def reaudit_queue_path():
-    """Durable, committed backlog of loci to re-audit when a missing/incomplete
-    source paper lands or is repaired."""
-    return os.path.join(audit_dir(), "reaudit-queue.yml")
+    """Where this skill's cache and report are written. Under scratch/, which is
+    wholly gitignored -- everything here is regenerable from the reference
+    works plus the genus data."""
+    return os.path.join(data_dir(), "scratch", "audit")

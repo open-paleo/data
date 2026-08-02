@@ -24,7 +24,7 @@ the extraction before applying.
   done): build a custom prompt per genus pointing at the correct
   markdown (below).
 - **A whole letter** at once: `npm run build-extraction-prompts -- --letter X`
-  writes `reports/extraction-prompts-X.jsonl` (one ready prompt per
+  writes `scratch/extraction-prompts-X.jsonl` (one ready prompt per
   queued genus, keyed off each genus's describing paper — `described_in`
   if set, else `erected_in`). Dispatch each row's `prompt` to a Sonnet
   agent.
@@ -64,7 +64,7 @@ file together with the genus file when committing.
    `corpus-paper-report.md` and stop.
 
 2. **Dispatch a Sonnet extraction agent** that reads ONLY that markdown
-   and writes JSON to `reports/extractions/<Letter>/<Genus>.json` with
+   and writes JSON to `scratch/extractions/<Letter>/<Genus>.json` with
    this schema (it is gitignored scratch):
    ```
    {"genus","species","described_in","holotype_material":"≤200 chars, drop
@@ -107,7 +107,7 @@ file together with the genus file when committing.
 
 ## Notes
 
-- Extraction artifacts under `reports/extractions/` and the
+- Extraction artifacts under `scratch/extractions/` and the
   `extraction-*`/`extracted-*` files are gitignored scratch.
 - Corpus-quality problems (missing / wrong / abstract-only markdown,
   wrong-paper-content, erected_in-vs-descriptive-source cases) go in the

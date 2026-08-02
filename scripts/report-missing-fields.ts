@@ -9,7 +9,7 @@ const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
 const root = path.join(scriptDir, "..");
 const generaDir = path.join(root, "genera");
-const outputPath = path.join(root, "reports", "missing-fields.md");
+const outputPath = path.join(root, "scratch", "missing-fields.md");
 
 /**
  * Descriptor for a single field presence check.

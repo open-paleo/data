@@ -3,7 +3,7 @@
  * all genera to surface likely-spurious values — coordinates, specimen
  * IDs, formations, and ages that belong to a different species or
  * specimen (often PBDB-seeded). Emits a grouped report to
- * reports/audit/data-integrity.md and a per-check summary to stdout.
+ * scratch/audit/data-integrity.md and a per-check summary to stdout.
  * No external source, no LLM.
  *
  * See .claude/plans/data-quality-scan.md for the full plan.
@@ -780,7 +780,7 @@ for (const check of orderedChecks)
     reportLines.push("");
 }
 
-const reportDir = path.join(root, "reports", "audit");
+const reportDir = path.join(root, "scratch", "audit");
 
 fs.mkdirSync(reportDir, { recursive: true });
 

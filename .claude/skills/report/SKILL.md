@@ -8,7 +8,7 @@ allowed-tools: Bash Read
 
 # Report
 
-Generate `reports/missing-fields.md` on demand (it is gitignored — a
+Generate `scratch/missing-fields.md` on demand (it is gitignored — a
 pure function of the data, like `dist/`). Never commit it.
 
 ## Steps
@@ -17,19 +17,19 @@ pure function of the data, like `dist/`). Never commit it.
    ```
    npm run report-missing-fields
    ```
-   This writes `reports/missing-fields.md` (1391 genera) and prints a
+   This writes `scratch/missing-fields.md` (1391 genera) and prints a
    one-line confirmation.
 
 2. Show the per-field summary (the `**field**: N missing (P%)` block at
    the top):
    ```
-   grep -E '^\- \*\*.*missing \([0-9.]+%\)' reports/missing-fields.md
+   grep -E '^\- \*\*.*missing \([0-9.]+%\)' scratch/missing-fields.md
    ```
 
 3. If the user named a field (the optional argument), show that field's
    genus list:
    ```
-   sed -n '/^### <field> (/,/^$/p' reports/missing-fields.md
+   sed -n '/^### <field> (/,/^$/p' scratch/missing-fields.md
    ```
    e.g. `### species.type_specimen.material (124)`.
 

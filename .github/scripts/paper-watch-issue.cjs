@@ -1,6 +1,6 @@
 // Files (or updates) a GitHub issue summarizing the latest paper-watch run.
 // Invoked from the Paper Watch workflow after `npm run paper-watch` writes
-// its JSON output. Reads reports/paper-watch.json, groups the hits by genus
+// its JSON output. Reads scratch/paper-watch.json, groups the hits by genus
 // with triage checkboxes, and opens one issue per run. Does nothing when the
 // run found no new papers.
 

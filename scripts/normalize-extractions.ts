@@ -33,7 +33,7 @@ import * as url from "node:url";
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
 const root = path.join(scriptDir, "..");
-const reportsDir = path.join(root, "reports");
+const reportsDir = path.join(root, "scratch");
 
 /**
  * Replaces typographic dashes and curly quotes with their ASCII
@@ -75,7 +75,7 @@ function capitaliseFirstAlpha(input: string): string
  * a new object with the cleaned-up fields. Sentinel records (where
  * `notes` includes "EXTRACTION FAILED") are returned unchanged.
  *
- * @param record - Parsed JSON object from reports/extractions/<L>/.
+ * @param record - Parsed JSON object from scratch/extractions/<L>/.
  * @returns Object with normalized fields and a change count.
  */
 function normalizeRecord(record: Record<string, unknown>): { record: Record<string, unknown>; changes: number }

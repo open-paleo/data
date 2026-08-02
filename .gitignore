@@ -8,36 +8,13 @@ staging/
 # Local working plans — kept out of the repo.
 .claude/plans/
 
-# Paper-driven backfill — regenerable intermediates.
-reports/extractions/
-reports/extraction-queue-*.json
-reports/extraction-prompts-*.jsonl
-reports/extracted-paper-fields-*.json
-reports/extracted-paper-fields-*-spellcheck.md
-
-# Generated on demand — derived purely from the data (run
-# `npm run report-missing-fields` or the /report skill); not checked in.
-reports/missing-fields.md
-
-# Paper-watch digest — regenerable from OpenAlex (run `npm run paper-watch`).
-reports/paper-watch.md
-reports/paper-watch.json
-
-# DOI audit — regenerable from doi.org/Crossref (run `npm run audit-dois`).
-reports/doi-audit.md
-reports/doi-audit-cache.json
-reports/doi-audit-followup.md
-
-# Ad-hoc workflow notes (not checked in).
-reports/*-diagnosis-deferred.md
-
-# Dispute/description citation audit (#1968, /audit-disputes): per-slice findings
-# reports and intermediates are regenerable from the committed condensations, so
-# they are not checked in. The re-audit queue is DURABLE state (which loci to
-# re-audit when a missing/incomplete source paper lands) and IS committed.
-reports/audit/*
-!reports/audit/reaudit-queue.yml
-!reports/audit/data-quality-and-missing-papers.md
+# Every generated report, cache, queue and intermediate is written under
+# scratch/, and NOTHING there is ever committed: missing-fields reports,
+# extraction prompts, audit slices, paper-watch digests, DOI audits, triage
+# checklists. All of it is regenerable from the data plus the corpus. If
+# something under scratch/ turns out to be worth keeping, it belongs in a GitHub
+# issue, not in the repo.
+scratch/
 
 # Paper-watch incremental state — persisted between CI runs via actions/cache,
 # never committed (and written locally by a dry run with --write-state).
