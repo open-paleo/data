@@ -203,6 +203,7 @@ const allowedLocomotion = new Set(schema.locomotion ?? []);
 const allowedCompleteness = new Set(schema.completeness ?? []);
 const allowedHolotypeStatus = new Set(schema.holotype_status ?? []);
 const allowedSpecimenTypes = new Set(schema.specimen_types ?? []);
+const allowedFormerIdReasons = new Set(schema.former_id_reasons ?? []);
 const allowedSpecimenCategories = new Set(schema.specimen_categories ?? []);
 const allowedIcznRulingTypes = new Set(schema.iczn_ruling_types ?? []);
 const allowedIntegument = new Set(schema.integument ?? []);
@@ -1678,6 +1679,143 @@ for (const [filePath, doc] of genusParsed)
                 filePath,
                 `species '${speciesLabel}': invalid type-specimen status '${holotype.status}' (must be one of: ${[...allowedHolotypeStatus].join(", ")})`);
         }
+
+        if (holotype.former_ids !== undefined)
+        {
+            if (!Array.isArray(holotype.former_ids))
+            {
+                checkError(
+                    "Type specimen consistency",
+                    filePath,
+                    `species '${speciesLabel}': former_ids must be an array`);
+            }
+            else
+            {
+                validateFormerIds(
+                    holotype.former_ids,
+                    hasSpecimenIdArray ? holotype.specimen_id! : [],
+                    holotype.institution,
+                    filePath,
+                    `species '${speciesLabel}'`);
+            }
+        }
+    }
+}
+
+/**
+ * Validates one `former_ids` list: every entry well formed, institution keys
+ * resolvable, and the end of the chain matching the identifier the record
+ * actually holds.
+ *
+ * A specimen may move more than once, recorded as consecutive entries (A to B,
+ * then B to C). The last hop is the one that has to agree with the block's own
+ * `specimen_id` and `institution` — otherwise a record can document its history
+ * and forget to update its number.
+ *
+ * @param formerIds - The former_ids array, already known to be an array.
+ * @param specimenIds - The block's own catalogue numbers.
+ * @param institution - The block's own institution key, if any.
+ * @param filePath - Genus file being validated, for the error message.
+ * @param label - Human label for the record, for the error message.
+ * @returns Nothing; failures are reported through checkError.
+ */
+function validateFormerIds(
+    formerIds: Array<Record<string, unknown>>,
+    specimenIds: Array<string>,
+    institution: string | undefined,
+    filePath: string,
+    label: string,
+): void
+{
+    const held = new Set(specimenIds);
+    const originIds = new Set<string>();
+
+    for (const [index, entry] of formerIds.entries())
+    {
+        const position = `former_ids[${index}]`;
+
+        if (!entry || typeof entry !== "object")
+        {
+            checkError("Type specimen consistency", filePath,
+                `${label}: ${position} must be a mapping`);
+            continue;
+        }
+
+        for (const field of ["from_id", "to_id"])
+        {
+            if (typeof entry[field] !== "string" || !(entry[field] as string).trim())
+            {
+                checkError("Type specimen consistency", filePath,
+                    `${label}: ${position}.${field} must be a non-empty string`);
+            }
+        }
+
+        const reason = entry.reason;
+
+        if (typeof reason !== "string" || !allowedFormerIdReasons.has(reason))
+        {
+            checkError("Type specimen consistency", filePath,
+                `${label}: ${position}.reason '${String(reason)}' must be one of: `
+                + `${[...allowedFormerIdReasons].join(", ")}`);
+        }
+
+        const institutionFields = ["from_institution", "to_institution"] as const;
+
+        for (const field of institutionFields)
+        {
+            const value = entry[field];
+
+            if (value === undefined)
+            {
+                if (reason === "rehoused")
+                {
+                    checkError("Type specimen consistency", filePath,
+                        `${label}: ${position}.${field} is required when reason is 'rehoused'`);
+                }
+            }
+            else if (typeof value !== "string" || !allowedInstitutionKeys.has(value))
+            {
+                checkError("Type specimen consistency", filePath,
+                    `${label}: ${position}.${field} '${String(value)}' is not a valid key in institutions.yaml`);
+            }
+            else if (reason !== "rehoused")
+            {
+                checkError("Type specimen consistency", filePath,
+                    `${label}: ${position}.${field} is only meaningful when reason is 'rehoused'`);
+            }
+        }
+
+        if (typeof entry.from_id === "string")
+        {
+            originIds.add(entry.from_id);
+        }
+    }
+
+    // The end of every chain is a to_id that no other entry supersedes; each
+    // one has to be a number this record actually holds.
+    for (const [index, entry] of formerIds.entries())
+    {
+        const target = entry?.to_id;
+
+        if (typeof target !== "string" || originIds.has(target))
+        {
+            continue;
+        }
+
+        if (!held.has(target))
+        {
+            checkError("Type specimen consistency", filePath,
+                `${label}: former_ids[${index}].to_id '${target}' ends the chain but is not in specimen_id`);
+        }
+        else if (entry.reason === "rehoused"
+            && institution !== undefined
+            && entry.to_institution !== undefined
+            && entry.to_institution !== institution)
+        {
+            checkError("Type specimen consistency", filePath,
+                `${label}: former_ids[${index}].to_institution '${String(entry.to_institution)}' `
+                + `ends the chain but does not match institution '${institution}'`);
+        }
     }
 }
 
@@ -2643,7 +2781,8 @@ if (outputSchema)
 
     const enumDefNames: Array<string> = [
         "status", "placement", "synonym_types", "diet", "locomotion", "completeness",
-        "holotype_status", "specimen_types", "specimen_categories",
+        "holotype_status", "specimen_types", "former_id_reasons",
+        "specimen_categories",
         "iczn_ruling_types", "integument", "integument_evidence",
         "paleoenvironments", "identifier_sources", "periods",
     ];

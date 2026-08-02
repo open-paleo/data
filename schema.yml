@@ -60,6 +60,17 @@ specimen_types:
   - neotype
   - unknown
 
+# Why a specimen's catalogue number changed (former_ids[].reason). A prefix
+# changing because the institution was recoded (BMNH -> NHMUK) is NOT recorded
+# here: that is resolved through the aliases in institutions.yaml, which are
+# append-only for exactly this purpose.
+former_id_reasons:
+  # Renumbered within one institution, e.g. BYU 5500 -> BYU 9025.
+  - renumbered
+  # Moved to a different institution, whatever the cause -- repatriation,
+  # transfer, a collection being absorbed. Both institutions are recorded.
+  - rehoused
+
 # Why a non-type specimen qualifies as notable (notable_specimens[].category).
 # category is OPTIONAL: omit it when no value genuinely fits rather than
 # forcing the nearest label. One specimen gets the single best-fit category.

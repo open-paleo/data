@@ -10,6 +10,15 @@ and this project uses [calendar versioning](https://calver.org/) (YYYY.MM).
 Initial public release, establishing the v1 output schema.
 
 ### Added
+- `former_ids` on `species.type_specimen` and on `notable_specimens[]`,
+  recording the catalogue numbers a specimen was held under before its current
+  one. Each entry pairs `from_id` with `to_id` — a specimen that moved twice is
+  two entries, so neither end is called "current" — and gives a `reason` of
+  `renumbered` (within one institution) or `rehoused` (between institutions,
+  which also records `from_institution` and `to_institution`). An optional
+  `source` names the work documenting the change. Prefix changes caused by an
+  institution being recoded are NOT recorded here; those resolve through the
+  aliases in `institutions.yaml`. Output schema 1.0.0 → 1.1.0.
 - Structured dataset of 1,300+ genera and 180+ clades, each backed by published
   scientific literature, in a single phylogenetic tree (`tree.yml`) rooted at
   Life.

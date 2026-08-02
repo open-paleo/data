@@ -6,7 +6,7 @@ import { stringify as stringifyYaml } from "yaml";
 
 import { findYamlFiles, parseYaml, loadInstitutionRegistry } from "./utilities.ts";
 
-import type { GenusData, CladeData, TreeNode, Reference, ReferencePointer, InstitutionEntry, Synonym } from "./types.ts";
+import type { GenusData, CladeData, TreeNode, Reference, ReferencePointer, InstitutionEntry, Synonym, FormerId } from "./types.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
@@ -303,6 +303,33 @@ for (const file of findYamlFiles(path.join(root, "genera")))
 const institutionRegistry = loadInstitutionRegistry(path.join(root, "institutions.yaml"));
 
 /**
+ * Resolves the institution keys inside an identifier history to display names,
+ * so a consumer reading `former_ids` sees the same form as the block's own
+ * `institution` field rather than a bare code.
+ *
+ * @param formerIds - The former_ids array, or undefined when absent.
+ * @param registry - The institution registry keyed by abbreviation.
+ */
+function resolveFormerIdInstitutions(
+    formerIds: Array<FormerId> | undefined,
+    registry: Record<string, InstitutionEntry>,
+): void
+{
+    for (const entry of formerIds ?? [])
+    {
+        for (const field of ["from_institution", "to_institution"] as const)
+        {
+            const key = entry[field];
+
+            if (key && registry[key])
+            {
+                entry[field] = registry[key].name;
+            }
+        }
+    }
+}
+
+/**
  * Resolves institution abbreviation keys to display names across all
  * species type_specimen blocks. Mutates the genera records in place.
  *
@@ -327,6 +354,8 @@ function resolveInstitutionKeys(
                     species.type_specimen.institution = entry.name;
                 }
             }
+
+            resolveFormerIdInstitutions(species.type_specimen?.former_ids, registry);
         }
 
         for (const specimen of genus.notable_specimens ?? [])
@@ -340,6 +369,8 @@ function resolveInstitutionKeys(
                     specimen.institution = entry.name;
                 }
             }
+
+            resolveFormerIdInstitutions(specimen.former_ids, registry);
         }
     }
 }
@@ -437,7 +468,7 @@ const dataset: Dataset = {
         clade_count: Object.keys(clades).length,
         genus_count: Object.keys(genera).length,
         license: "CC-BY-4.0",
-        schema_version: "1.0.0",
+        schema_version: "1.1.0",
         version,
     },
     tree,

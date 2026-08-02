@@ -35,6 +35,60 @@ export type InstitutionEntry = {
  * Type-specimen information for a species: the holotype, or a syntype,
  * lectotype, or neotype series — see `specimen_type`.
  */
+/**
+ * One step in a specimen's identifier history. A specimen that moved twice is
+ * recorded as two entries (A to B, then B to C), so neither end is called
+ * "current" — that would be false of the earlier hop.
+ *
+ * A prefix changing because the institution was recoded (BMNH to NHMUK) is NOT
+ * recorded here. That resolves through the aliases in `institutions.yaml`,
+ * which are append-only for exactly this reason.
+ */
+export type FormerId = {
+    /**
+     * The catalogue number before the change.
+     */
+    from_id: string;
+
+    /**
+     * The catalogue number after the change. On the last hop this must be one
+     * of the block's own `specimen_id` values.
+     */
+    to_id: string;
+
+    /**
+     * Institution holding the specimen before the change, as a key in
+     * institutions.yaml. Present only when `reason` is "rehoused".
+     */
+    from_institution?: string;
+
+    /**
+     * Institution holding the specimen after the change, as a key in
+     * institutions.yaml. Present only when `reason` is "rehoused"; on the last
+     * hop it must match the block's own `institution`.
+     */
+    to_institution?: string;
+
+    /**
+     * Why the number changed. Allowed values come from `schema.yml` under
+     * `former_id_reasons` ("renumbered", "rehoused").
+     */
+    reason: string;
+
+    /**
+     * Reference id of the work documenting the change — not the works that
+     * merely used the old number, which are unbounded. Absent when no
+     * publication documents it, as when a photograph of the specimen settled
+     * it.
+     */
+    source?: string;
+
+    /**
+     * Why the change happened, when that is itself of interest. Usually absent.
+     */
+    notes?: string;
+};
+
 export type TypeSpecimen = {
     /**
      * Catalogue numbers comprising the type material (e.g. ["FMNH PR 2081"]).
@@ -78,6 +132,12 @@ export type TypeSpecimen = {
      * holotype plus referred material.
      */
     completeness?: string;
+
+    /**
+     * Numbers this specimen was catalogued under before its current one, most
+     * recent change last. See `FormerId`.
+     */
+    former_ids?: Array<FormerId>;
 
     /**
      * Free-text curatorial notes about the type specimen that do not fit the
@@ -165,6 +225,12 @@ export type NotableSpecimen = {
      * feature).
      */
     references?: Array<string>;
+
+    /**
+     * Numbers this specimen was catalogued under before its current one, most
+     * recent change last. See `FormerId`.
+     */
+    former_ids?: Array<FormerId>;
 };
 
 /**
@@ -864,6 +930,14 @@ export type Schema = {
      * `species.type_specimen.specimen_type`.
      */
     specimen_types?: Array<string>;
+
+    /**
+     * Allowed reasons a specimen's catalogue number changed (e.g.
+     * "renumbered", "rehoused"). Applied to
+     * `species.type_specimen.former_ids[].reason` and the same field on
+     * `notable_specimens[]`.
+     */
+    former_id_reasons?: Array<string>;
 
     /**
      * Allowed reasons a non-type specimen is notable. Applied to
