@@ -1,12 +1,12 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-07-31T02:33:30.562Z",
+    "built_at": "2026-08-02T17:41:37.519Z",
     "clade_count": 188,
     "genus_count": 1401,
     "license": "CC-BY-4.0",
     "schema_version": "1.0.0",
-    "version": "2026.07"
+    "version": "2026.08"
   },
   "tree": {
     "Life": {
@@ -11896,6 +11896,9 @@
           "erected_in": "vila2022a",
           "type_specimen": {
             "specimen_id": [
+              "MCD 6715",
+              "MCD 6716",
+              "MCD 6717",
               "MCD 6718",
               "MCD 6719",
               "MCD 6720",
@@ -11904,8 +11907,6 @@
               "MCD 6723",
               "MCD 6724",
               "MCD 6725",
-              "MCD 6726",
-              "MCD 6727",
               "MCD 6728",
               "MCD 6729",
               "MCD 6730",
@@ -11915,13 +11916,8 @@
               "MCD 6734",
               "MCD 6735",
               "MCD 6736",
-              "MCD 6737",
               "MCD 6738",
-              "MCD 6739",
-              "MCD 6740",
-              "MCD 6741",
               "MCD 6742",
-              "MCD 6743",
               "MCD 6744",
               "MCD 6745",
               "MCD 6746",
@@ -11929,7 +11925,17 @@
               "MCD 6748",
               "MCD 6749",
               "MCD 6750",
-              "MCD 6751"
+              "MCD 6751",
+              "MCD 6985",
+              "MCD 6986",
+              "MCD 6987",
+              "MCD 6988",
+              "MCD 9882",
+              "MNCN 59301",
+              "MNCN 79837",
+              "MNCN 79838",
+              "MNCN 79847",
+              "MNCN 79848"
             ],
             "specimen_type": "holotype",
             "institution": "Museu de la Conca Dellà",
@@ -16750,7 +16756,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "MCF-PVPH-110"
+              "MCF-PVPH 110"
             ],
             "specimen_type": "holotype",
             "institution": "Museo ‘Carmen Funes’, Plaza Huincul",
@@ -18768,7 +18774,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "RTMP 2001.45.91"
+              "TMP 2001.045.0091"
             ],
             "specimen_type": "holotype",
             "institution": "Royal Tyrrell Museum of Paleontology",
@@ -20069,7 +20075,7 @@
           "type": "type-specimen",
           "ruling": "iczn2023a",
           "petition": "paulcarpenter2010a",
-          "notes": "Designated USNM V 4734 as the neotype of Allosaurus fragilis, conserving usage (Opinion 2486, Case 3506); replaces the non-diagnostic original syntype YPM 1930."
+          "notes": "Designated USNM 4734 as the neotype of Allosaurus fragilis, conserving usage (Opinion 2486, Case 3506); replaces the non-diagnostic original syntype YPM 1930."
         }
       ],
       "species": [
@@ -20101,7 +20107,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "USNM V 4734"
+              "USNM 4734"
             ],
             "specimen_type": "neotype",
             "institution": "National Museum of Natural History, Smithsonian Institution",
@@ -20253,7 +20259,7 @@
           "volume": "110",
           "pages": "1-154",
           "doi": "10.5479/si.03629236.110.i",
-          "notes": "Redescribes the neotype USNM V 4734 (as Antrodemus); source of the holotype material."
+          "notes": "Redescribes the neotype USNM 4734 (as Antrodemus); source of the holotype material."
         },
         {
           "id": "breithaupt1999a",
@@ -24542,6 +24548,14 @@
       },
       "etymology": "From Greek 'anchi' meaning 'near' or 'close to' and 'sauros' meaning 'lizard', referring to its placement near the base of the sauropodomorph family tree.",
       "description": "Anchisaurus is a genus of basal sauropodomorph dinosaur. It lived during the Early Jurassic Period, and its fossils have been found in the red sandstone of the Upper Portland Formation, Northeastern United States, which was deposited from the Hettangian age into the Sinemurian age, between about 200 and 192 million years ago. Until recently it was classed as a member of Prosauropoda. The genus name Anchisaurus comes from the Greek αγχι (agkhi) anchi-; \"near, close\" + Greek σαυρος (sauros); \"lizard\". Anchisaurus was coined as a replacement name for \"Amphisaurus\", which was itself a replacement name for Hitchcock's \"Megadactylus\", both of which had already been used for other animals.",
+      "iczn_rulings": [
+        {
+          "type": "type-specimen",
+          "ruling": "iczn2015a",
+          "petition": "galton2012a",
+          "notes": "Opinion 2361 set aside all previous type fixations for Megadactylus polyzelus under the plenary power and designated YPM 1883, the almost complete skull and skeleton that is the holotype of Anchisaurus colurus Marsh, 1891, as the neotype, the original holotype being fragmentary and non-diagnostic. Anchisaurus was placed on the Official List of Generic Names and polyzelus on the Official List of Specific Names."
+        }
+      ],
       "locomotion": "bipedal",
       "paleoenvironment": [
         "fluvial",
@@ -24629,8 +24643,8 @@
           "synonyms": [
             {
               "name": "Yaleosaurus",
-              "type": "junior subjective",
-              "reason": "Originally described as Y. colurus (later Anchisaurus colurus); now considered referable to Anchisaurus polyzelus, with apparent differences attributed to misinterpretation and growth stage."
+              "type": "junior objective",
+              "reason": "Originally described as Y. colurus (later Anchisaurus colurus) on YPM 1883. Opinion 2361 designated that same specimen the neotype of Megadactylus polyzelus, so the two names share a name-bearing type."
             },
             {
               "name": "Ammosaurus",
@@ -24689,6 +24703,32 @@
           "issue": "220",
           "pages": "331-336",
           "doi": "10.2475/ajs.s3-37.220.331"
+        },
+        {
+          "id": "galton2012a",
+          "authors": "Galton, P. M.",
+          "year": 2012,
+          "title": "Case 3561. Anchisaurus Marsh, 1885 (Dinosauria, Sauropodomorpha): proposed conservation of usage by designation of a neotype for its type species Megadactylus polyzelus Hitchcock, 1865",
+          "journal": "Bulletin of Zoological Nomenclature",
+          "publisher": "International Trust for Zoological Nomenclature",
+          "volume": "69",
+          "issue": "1",
+          "pages": "44-50",
+          "doi": "10.21805/bzn.v69i1.a14",
+          "notes": "Petitioned the Commission to set aside the fragmentary holotype of Megadactylus polyzelus and designate YPM 1883 as neotype."
+        },
+        {
+          "id": "iczn2015a",
+          "authors": "International Commission on Zoological Nomenclature",
+          "year": 2015,
+          "title": "Opinion 2361 (Case 3561). Anchisaurus Marsh, 1885 (Dinosauria, Sauropodomorpha): usage conserved by designation of a neotype for its type species Megadactylus polyzelus Hitchcock, 1865",
+          "journal": "Bulletin of Zoological Nomenclature",
+          "publisher": "International Trust for Zoological Nomenclature",
+          "volume": "72",
+          "issue": "2",
+          "pages": "176-177",
+          "doi": "10.21805/bzn.v72i2.a2",
+          "notes": "Opinion 2361, which granted the petition and fixed YPM 1883 as the neotype."
         },
         {
           "id": "jones2026b",
@@ -24926,7 +24966,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "MGUANPA-003"
+              "MGUAN-PA-003"
             ],
             "specimen_type": "holotype",
             "institution": "Museu de Geologia da Universidade Agostinho Neto",
@@ -25880,7 +25920,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "TMP 1997.132.1"
+              "TMP 1997.132.0001"
             ],
             "specimen_type": "holotype",
             "institution": "Royal Tyrrell Museum of Paleontology",
@@ -28595,7 +28635,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "PIN 2229"
+              "PIN 2229/1"
             ],
             "specimen_type": "holotype",
             "institution": "Paleontological Institute, Russian Academy of Sciences",
@@ -30566,7 +30606,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "PVPH 1"
+              "MCF-PVPH 1"
             ],
             "specimen_type": "holotype",
             "institution": "Museo ‘Carmen Funes’, Plaza Huincul",
@@ -32636,11 +32676,12 @@
           },
           "type_specimen": {
             "specimen_id": [
+              "SMU 61732",
               "SMU 203/73655"
             ],
             "specimen_type": "holotype",
             "institution": "Shuler Museum of Paleontology, Southern Methodist University",
-            "material": "Single tooth and partial postcranial skeleton.",
+            "material": "A tooth, two cervical vertebrae, fragments of dorsal vertebrae, 24 caudal vertebrae, approximately 20 fragmentary dorsal ribs, two chevrons, a distal scapular blade, part of a right ilium, and numerous fragments.",
             "completeness": "partial"
           },
           "erected_in": "demic2013a",
@@ -33533,7 +33574,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "RTMP 95.166.1"
+              "TMP 1995.166.0001"
             ],
             "specimen_type": "holotype",
             "institution": "Royal Tyrrell Museum of Paleontology",
@@ -33868,7 +33909,7 @@
           "erected_in": "coria2002a",
           "type_specimen": {
             "specimen_id": [
-              "MCF-PVPH-236"
+              "MCF-PVPH 236"
             ],
             "specimen_type": "holotype",
             "institution": "Museo ‘Carmen Funes’, Plaza Huincul",
@@ -35222,7 +35263,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "QM F2361"
+              "QM F2316"
             ],
             "specimen_type": "holotype",
             "institution": "Queensland Museum, Centre for Biodiversity",
@@ -38322,7 +38363,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "ISI R 50"
+              "ISIR 50"
             ],
             "specimen_type": "holotype",
             "institution": "Geology Museum, Indian Statistical Institute",
@@ -38902,7 +38943,9 @@
           "erected_in": "salgado2009a",
           "type_specimen": {
             "specimen_id": [
-              "MCF-PVPH-447/1-3"
+              "MCF-PVPH 447/1",
+              "MCF-PVPH 447/2",
+              "MCF-PVPH 447/3"
             ],
             "specimen_type": "holotype",
             "institution": "Museo ‘Carmen Funes’, Plaza Huincul",
@@ -39050,7 +39093,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "ZPAL MgD-1/110"
+              "ZPAL MgD-I/110"
             ],
             "specimen_type": "holotype",
             "institution": "Institute of Paleobiology, Polish Academy of Sciences",
@@ -41721,7 +41764,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "ZIN PH 1/6"
+              "ZIN PH 1/16"
             ],
             "specimen_type": "holotype",
             "institution": "Zoological Institute, Russian Academy of Sciences",
@@ -43099,7 +43142,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "MPCA-460"
+              "MPCA 300"
             ],
             "specimen_type": "holotype",
             "institution": "Museo provincial de Cipolletti \"Carlos Ameghino\"",
@@ -44484,7 +44527,7 @@
         },
         {
           "specimen_id": [
-            "TMP 1990.104.1"
+            "TMP 1990.104.0001"
           ],
           "institution": "Royal Tyrrell Museum of Paleontology",
           "category": "gut-contents",
@@ -46330,7 +46373,7 @@
         },
         {
           "specimen_id": [
-            "TMP 1989.69.21"
+            "TMP 1989.069.0021"
           ],
           "institution": "Royal Tyrrell Museum of Paleontology",
           "category": "range-extension",
@@ -49121,11 +49164,52 @@
           "erected_in": "sánchez-hernández2012a",
           "type_specimen": {
             "specimen_id": [
-              "MPG-KPC1-46"
+              "MPG-KPC1",
+              "MPG-KPC2",
+              "MPG-KPC3",
+              "MPG-KPC4",
+              "MPG-KPC5",
+              "MPG-KPC6",
+              "MPG-KPC7",
+              "MPG-KPC8",
+              "MPG-KPC9",
+              "MPG-KPC10",
+              "MPG-KPC11",
+              "MPG-KPC12",
+              "MPG-KPC13",
+              "MPG-KPC14",
+              "MPG-KPC15",
+              "MPG-KPC16",
+              "MPG-KPC17",
+              "MPG-KPC18",
+              "MPG-KPC19",
+              "MPG-KPC20",
+              "MPG-KPC21",
+              "MPG-KPC22",
+              "MPG-KPC23",
+              "MPG-KPC30",
+              "MPG-KPC31",
+              "MPG-KPC32",
+              "MPG-KPC33",
+              "MPG-KPC34",
+              "MPG-KPC35",
+              "MPG-KPC36",
+              "MPG-KPC37",
+              "MPG-KPC38",
+              "MPG-KPC39",
+              "MPG-KPC43",
+              "MPG-KPC44",
+              "MPG-KPC45",
+              "MPG-KPC46",
+              "MPG-KPC47",
+              "MPG-KPC48",
+              "MPG-KPC49",
+              "MPG-KPC50",
+              "MPG-KPC51"
             ],
             "specimen_type": "holotype",
             "institution": "Museo Paleontológico de Galve",
-            "material": "Partial tooth, two sternal plates, broken right scapulocoracoid, incomplete sacrum, five caudal vertebrae, isolated caudal neural arch, chevron, presacral rib, vertebrae fragments, proximal right tibia, rib fragments",
+            "material": "Apical part of a lateral tooth, two almost complete sternal plates and isolated remains of sternal plates, broken right scapulocoracoid, almost complete presacral rib and rib fragments, posterior cervical or anterior dorsal vertebra, almost complete mid-dorsal vertebra, two broken dorsal centra, broken sacrum, two sacral centra, isolated neural arch, broken portion of a centrum with prezygapophysis, three broken anterior caudal centra, four mid-posterior caudal vertebrae, broken posterior caudal centrum, broken portion of a vertebral centrum, three possible broken tops of neural spines, almost complete chevron, isolated broken chevron blade, proximal part of a right tibia, and isolated bone fragments",
             "completeness": "partial"
           },
           "authors": "Sánchez-Hernández, B.; Benton, M.",
@@ -49285,7 +49369,14 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "NHMUK PV R 2870"
+              "NHMUK PV R 2870",
+              "NHMUK PV R 2871",
+              "NHMUK PV R 2872",
+              "NHMUK PV R 2873",
+              "NHMUK PV R 2874",
+              "NHMUK PV R 2876",
+              "NHMUK PV R 2877",
+              "NHMUK PV R 2878"
             ],
             "specimen_type": "holotype",
             "institution": "Natural History Museum",
@@ -55371,7 +55462,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "IVPP V2884.1"
+              "IVPP V2884"
             ],
             "specimen_type": "lectotype",
             "institution": "Institute of Vertebrate Paleontology and Paleoanthropology",
@@ -57317,7 +57408,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "MACN 18222/30"
+              "MACN 18222"
             ],
             "specimen_type": "holotype",
             "institution": "Museo Argentino de Ciencias Naturales ‘Bernardino Rivadavia’"
@@ -61241,7 +61332,7 @@
           "described_in": "ryan2005a",
           "type_specimen": {
             "specimen_id": [
-              "TMP 2002.68.1"
+              "TMP 2002.068.0001"
             ],
             "specimen_type": "holotype",
             "institution": "Royal Tyrrell Museum of Paleontology",
@@ -61275,7 +61366,7 @@
           "issue": "7",
           "pages": "1369",
           "doi": "10.1139/e05-029",
-          "notes": "Original description of the holotype (TMP 2002.68.1) as Centrosaurus brinkmani; source of the holotype material."
+          "notes": "Original description of the holotype (TMP 2002.068.0001) as Centrosaurus brinkmani; source of the holotype material."
         },
         {
           "id": "jones2026a",
@@ -65200,7 +65291,7 @@
         },
         {
           "specimen_id": [
-            "TMP 85.62.1"
+            "TMP 1985.062.0001"
           ],
           "institution": "Royal Tyrrell Museum of Paleontology",
           "category": "pathology",
@@ -65686,7 +65777,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "SXMG V 00005"
+              "SXMG V 0005"
             ],
             "specimen_type": "holotype",
             "institution": "Shanxi Museum of Geology",
@@ -75880,7 +75971,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "MCF-PVPH-380"
+              "MCF-PVPH 380"
             ],
             "specimen_type": "holotype",
             "institution": "Museo ‘Carmen Funes’, Plaza Huincul",
@@ -78808,7 +78899,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "RTMP 2002"
+              "TMP 2002.057.0007"
             ],
             "specimen_type": "holotype",
             "institution": "Royal Tyrrell Museum of Paleontology",
@@ -81289,7 +81380,8 @@
             "specimen_type": "holotype",
             "institution": "Paleontological Museum",
             "material": "A partial skull with lower jaws, an articulated presacral column (axis through the 25th presacral) with cervical ribs, a dorsal rib, and the left femur.",
-            "completeness": "partial"
+            "completeness": "partial",
+            "notes": "Formerly catalogued as PMU R 233 (exemplar a). The holotype as originally constituted also included exemplar c, whose accession number and whereabouts are unknown, so it cannot be listed."
           },
           "erected_in": "romer1956a",
           "described_in": "wilson2009a",
@@ -90247,6 +90339,19 @@
           "pages": "1-14"
         },
         {
+          "id": "taylor2011b",
+          "authors": "Taylor, M. P.",
+          "year": 2011,
+          "title": "Correction: A re-evaluation of Brachiosaurus altithorax Riggs, 1903 (Dinosauria, Sauropoda) and its generic separation from Giraffatitan brancai (Janensch, 1914)",
+          "journal": "Journal of Vertebrate Paleontology",
+          "publisher": "Informa UK Limited",
+          "volume": "31",
+          "issue": "3",
+          "pages": "727",
+          "doi": "10.1080/02724634.2011.557115",
+          "notes": "Corrects the lectotype designation of the 2009 re-evaluation, exchanging lectotype and paralectotype and giving their current numbers as MB.R.2180 and MB.R.2181."
+        },
+        {
           "id": "jones2026b",
           "authors": "Jones, B.; Viola, E.",
           "year": 2026,
@@ -92732,7 +92837,7 @@
       "notable_specimens": [
         {
           "specimen_id": [
-            "TMP 2009.12.14"
+            "TMP 2009.012.0014"
           ],
           "institution": "Royal Tyrrell Museum of Paleontology",
           "category": "gut-contents",
@@ -92754,7 +92859,7 @@
         },
         {
           "specimen_id": [
-            "TMP91.36.500"
+            "TMP 1991.036.0500"
           ],
           "institution": "Royal Tyrrell Museum of Paleontology",
           "category": "pathology",
@@ -94870,6 +94975,7 @@
           },
           "type_specimen": {
             "specimen_id": [
+              "NHMUK R1868",
               "NHMUK R1870"
             ],
             "specimen_type": "holotype",
@@ -99204,7 +99310,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "WN V-6"
+              "WN-V6"
             ],
             "specimen_type": "holotype",
             "institution": "Museum of Bale",
@@ -101837,7 +101943,7 @@
           "erected_in": "baiano2020a",
           "type_specimen": {
             "specimen_id": [
-              "MCF-PVPH-36"
+              "MCF-PVPH 36"
             ],
             "specimen_type": "holotype",
             "institution": "Museo ‘Carmen Funes’, Plaza Huincul",
@@ -105094,7 +105200,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "PVPH-35"
+              "MCF-PVPH 35"
             ],
             "specimen_type": "holotype",
             "institution": "Museo ‘Carmen Funes’, Plaza Huincul",
@@ -107091,7 +107197,7 @@
           "erected_in": "he2015a",
           "type_specimen": {
             "specimen_id": [
-              "ZCDM V0O016"
+              "ZCDM V00016"
             ],
             "specimen_type": "holotype",
             "institution": "Zhucheng Dinosaur Museum",
@@ -107224,71 +107330,71 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "ISI R335/1",
-              "ISI R335/2",
-              "ISI R335/3",
-              "ISI R335/4",
-              "ISI R335/5",
-              "ISI R335/6",
-              "ISI R335/7",
-              "ISI R335/8",
-              "ISI R335/9",
-              "ISI R335/10",
-              "ISI R335/11",
-              "ISI R335/12",
-              "ISI R335/13",
-              "ISI R335/14",
-              "ISI R335/15",
-              "ISI R335/16",
-              "ISI R335/17",
-              "ISI R335/18",
-              "ISI R335/19",
-              "ISI R335/20",
-              "ISI R335/21",
-              "ISI R335/22",
-              "ISI R335/23",
-              "ISI R335/24",
-              "ISI R335/25",
-              "ISI R335/26",
-              "ISI R335/27",
-              "ISI R335/28",
-              "ISI R335/29",
-              "ISI R335/30",
-              "ISI R335/31",
-              "ISI R335/32",
-              "ISI R335/33",
-              "ISI R335/34",
-              "ISI R335/35",
-              "ISI R335/36",
-              "ISI R335/37",
-              "ISI R335/38",
-              "ISI R335/39",
-              "ISI R335/40",
-              "ISI R335/41",
-              "ISI R335/42",
-              "ISI R335/43",
-              "ISI R335/44",
-              "ISI R335/45",
-              "ISI R335/46",
-              "ISI R335/47",
-              "ISI R335/48",
-              "ISI R335/49",
-              "ISI R335/50",
-              "ISI R335/51",
-              "ISI R335/52",
-              "ISI R335/53",
-              "ISI R335/54",
-              "ISI R335/55",
-              "ISI R335/56",
-              "ISI R335/57",
-              "ISI R335/58",
-              "ISI R335/59",
-              "ISI R335/60",
-              "ISI R335/61",
-              "ISI R335/62",
-              "ISI R335/63",
-              "ISI R335/64",
-              "ISI R335/65"
+              "ISIR 335/1",
+              "ISIR 335/2",
+              "ISIR 335/3",
+              "ISIR 335/4",
+              "ISIR 335/5",
+              "ISIR 335/6",
+              "ISIR 335/7",
+              "ISIR 335/8",
+              "ISIR 335/9",
+              "ISIR 335/10",
+              "ISIR 335/11",
+              "ISIR 335/12",
+              "ISIR 335/13",
+              "ISIR 335/14",
+              "ISIR 335/15",
+              "ISIR 335/16",
+              "ISIR 335/17",
+              "ISIR 335/18",
+              "ISIR 335/19",
+              "ISIR 335/20",
+              "ISIR 335/21",
+              "ISIR 335/22",
+              "ISIR 335/23",
+              "ISIR 335/24",
+              "ISIR 335/25",
+              "ISIR 335/26",
+              "ISIR 335/27",
+              "ISIR 335/28",
+              "ISIR 335/29",
+              "ISIR 335/30",
+              "ISIR 335/31",
+              "ISIR 335/32",
+              "ISIR 335/33",
+              "ISIR 335/34",
+              "ISIR 335/35",
+              "ISIR 335/36",
+              "ISIR 335/37",
+              "ISIR 335/38",
+              "ISIR 335/39",
+              "ISIR 335/40",
+              "ISIR 335/41",
+              "ISIR 335/42",
+              "ISIR 335/43",
+              "ISIR 335/44",
+              "ISIR 335/45",
+              "ISIR 335/46",
+              "ISIR 335/47",
+              "ISIR 335/48",
+              "ISIR 335/49",
+              "ISIR 335/50",
+              "ISIR 335/51",
+              "ISIR 335/52",
+              "ISIR 335/53",
+              "ISIR 335/54",
+              "ISIR 335/55",
+              "ISIR 335/56",
+              "ISIR 335/57",
+              "ISIR 335/58",
+              "ISIR 335/59",
+              "ISIR 335/60",
+              "ISIR 335/61",
+              "ISIR 335/62",
+              "ISIR 335/63",
+              "ISIR 335/64",
+              "ISIR 335/65"
             ],
             "specimen_type": "holotype",
             "institution": "Geology Museum, Indian Statistical Institute",
@@ -119821,7 +119927,7 @@
         },
         {
           "specimen_id": [
-            "TMP 1966.04.1"
+            "TMP 1966.004.0001"
           ],
           "institution": "Royal Tyrrell Museum of Paleontology",
           "category": "complementary",
@@ -120107,7 +120213,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "ISI R257/36"
+              "ISIR 257"
             ],
             "specimen_type": "holotype",
             "institution": "Geology Museum, Indian Statistical Institute",
@@ -124408,7 +124514,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "MCF-PVPH-233"
+              "MCF-PVPH 233"
             ],
             "specimen_type": "holotype",
             "institution": "Museo ‘Carmen Funes’, Plaza Huincul",
@@ -127787,7 +127893,36 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "MIGM 4956"
+              "MG 2",
+              "MG 4931",
+              "MG 4956",
+              "MG 4957",
+              "MG 4970",
+              "MG 4975",
+              "MG 4979",
+              "MG 4983",
+              "MG 4984",
+              "MG 5780",
+              "MG 5781",
+              "MG 30370",
+              "MG 30371",
+              "MG 30372",
+              "MG 30373",
+              "MG 30374",
+              "MG 30375",
+              "MG 30376",
+              "MG 30377",
+              "MG 30378",
+              "MG 30379",
+              "MG 30380",
+              "MG 30381",
+              "MG 30382",
+              "MG 30383",
+              "MG 30384",
+              "MG 30385",
+              "MG 30386",
+              "MG 30387",
+              "MG 30388"
             ],
             "specimen_type": "lectotype",
             "institution": "Museu Geológico do Instituto Geológico e Mineiro",
@@ -128453,7 +128588,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "41HIII-0010"
+              "41HIII-00010"
             ],
             "specimen_type": "holotype",
             "institution": "Henan Geological Museum",
@@ -129056,14 +129191,13 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "SAM 3606",
-              "UCRC PVC10"
+              "SAM 3606"
             ],
             "specimen_type": "holotype",
             "institution": "Iziko South African Museum",
             "material": "Portion of left dentary with canine and 11 molars (7 preserved, 4 impressions only).",
             "completeness": "fragmentary",
-            "notes": "SAM 3606 is the original holotype; owing to partial loss of the original material, the cast UCRC PVC10 has been used in subsequent taxonomic assessments, functioning as a partial lectotype."
+            "notes": "Owing to partial loss of the original material, the cast UCRC PVC10 has been used in subsequent taxonomic assessments."
           },
           "size": {
             "weight_kg": {
@@ -130019,11 +130153,37 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "MNS 200/132"
+              "MNS 2000/132.5",
+              "MNS 2000/132.59",
+              "MNS 2000/132.101",
+              "MNS 2000/132.106",
+              "MNS 2000/132.130",
+              "MNS 2000/132.267",
+              "MNS 2000/132.310",
+              "MNS 2000/132.420",
+              "MNS 2000/132.1046",
+              "MNS 2000/132.1047",
+              "MNS 2000/132.1048",
+              "MNS 2000/132.1049",
+              "MNS 2000/132.1050",
+              "MNS 2000/132.1051",
+              "MNS 2000/132.1052",
+              "MNS 2000/132.1053",
+              "MNS 2000/132.1064",
+              "MNS 2001/122.705",
+              "MNS 2001/122.1028",
+              "MNS 2001/122.1043",
+              "MNS 2002/95.101",
+              "MNS 2002/95.258",
+              "MNS 2002/95.875",
+              "MNS 2002/95.876",
+              "MNS 2003/69.506"
             ],
             "specimen_type": "holotype",
             "institution": "Staatliches Museum für Naturkunde",
-            "material": "Partial skeleton."
+            "material": "Partial skeleton comprising maxillary fragments, fragments of the left predentary, left dentary and right surangular, hyoids, alveolar parapets, sixty-two maxillary and thirty-six mandibular teeth, proatlas, one cervical and four dorsal vertebral centra, thirty-seven sacral fragments, thirty-two caudal vertebral centra, rib and chevron fragments with three complete chevrons, ossified tendon fragments, right scapula, both coracoids, both humeri, right radius, ulna, carpus and hand, left ilium fragment, both prepubes, right femur and tibia fragments, and right metatarsals II and IV",
+            "completeness": "partial",
+            "notes": "The describing paper states that only remains providing relevant anatomical or taxonomic information were described, so most of the holotype was never given a catalogue number. The numbers listed here are those the paper ties explicitly to a holotype element; the teeth, sacral fragments, chevrons and rib fragments are largely unnumbered."
           },
           "size": {
             "length_m": {
@@ -130469,9 +130629,9 @@
             "specimen_id": [
               "MBFSZ Ob.3091"
             ],
-            "specimen_type": "holotype",
+            "specimen_type": "lectotype",
             "institution": "Hungarian Geological Survey",
-            "material": "Anterior caudal vertebra designated as the type of the species by von Huene; sides approximately parallel in cross-section, slightly concave, centrum no narrower below than above",
+            "material": "Anterior caudal vertebra; sides approximately parallel in cross-section, slightly concave, centrum no narrower below than above",
             "completeness": "fragmentary"
           },
           "erected_in": "huene1932a",
@@ -131164,6 +131324,14 @@
           "reason": "Initially erected as a separate genus due to the lack of overlapping material; subsequently recognized as referable to Majungasaurus."
         }
       ],
+      "iczn_rulings": [
+        {
+          "type": "type-specimen",
+          "ruling": "iczn2011a",
+          "petition": "carrano2009a",
+          "notes": "Opinion 2269 set aside all previous type fixations for Megalosaurus crenatissimus under the plenary power and designated MNHN.MAJ 1, the right dentary Depéret described, as the neotype, the original material being non-diagnostic. Majungasaurus was placed on the Official List of Generic Names and crenatissimus on the Official List of Specific Names."
+        }
+      ],
       "species": [
         {
           "name": "Majungasaurus crenatissimus",
@@ -131206,11 +131374,11 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "FMNH PR 2836"
+              "MNHN.MAJ 1"
             ],
             "specimen_type": "neotype",
-            "institution": "Field Museum of Natural History",
-            "material": "Partial skull and skeleton.",
+            "institution": "Muséum national d'Histoire naturelle",
+            "material": "Right dentary.",
             "completeness": "partial"
           },
           "erected_in": "lavocat1955a",
@@ -131258,6 +131426,31 @@
           "volume": "27",
           "issue": "3",
           "pages": "256-259"
+        },
+        {
+          "id": "carrano2009a",
+          "authors": "Carrano, M. T.; Krause, D. W.; O'Connor, P. M.; Sampson, S. D.",
+          "year": 2009,
+          "title": "Case 3487. Megalosaurus crenatissimus Depéret, 1896 (currently Majungasaurus crenatissimus; Dinosauria, Theropoda): proposed replacement of the holotype by a neotype",
+          "journal": "Bulletin of Zoological Nomenclature",
+          "publisher": "International Trust for Zoological Nomenclature",
+          "volume": "66",
+          "issue": "3",
+          "pages": "261-264",
+          "notes": "Petitioned the Commission to replace the non-diagnostic holotype with a neotype."
+        },
+        {
+          "id": "iczn2011a",
+          "authors": "International Commission on Zoological Nomenclature",
+          "year": 2011,
+          "title": "Opinion 2269 (Case 3487). Megalosaurus crenatissimus Depéret, 1896 (currently Majungasaurus crenatissimus; Dinosauria, Theropoda): designation of a neotype",
+          "journal": "Bulletin of Zoological Nomenclature",
+          "publisher": "International Trust for Zoological Nomenclature",
+          "volume": "68",
+          "issue": "1",
+          "pages": "89-90",
+          "doi": "10.21805/bzn.v68i1.a7",
+          "notes": "Opinion 2269, which granted the petition and fixed MNHN.MAJ 1 as the neotype."
         },
         {
           "id": "jones2026c",
@@ -133412,7 +133605,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "MCF-PVPH-108.1"
+              "MCF-PVPH 108.1"
             ],
             "specimen_type": "holotype",
             "institution": "Museo ‘Carmen Funes’, Plaza Huincul",
@@ -134978,7 +135171,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "WDC DJR 001"
+              "WDC-DJR-001"
             ],
             "specimen_type": "holotype",
             "institution": "Wyoming Dinosaur Center",
@@ -141717,7 +141910,7 @@
           "erected_in": "coria2016a",
           "type_specimen": {
             "specimen_id": [
-              "MCF-PVPH-411"
+              "MCF-PVPH 411"
             ],
             "specimen_type": "holotype",
             "institution": "Museo ‘Carmen Funes’, Plaza Huincul",
@@ -143002,7 +143195,7 @@
       "pronunciation": {
         "phonetic": "nam-BAH-lee-uh"
       },
-      "description": "Nambalia is a genus of basal sauropodomorph dinosaur. It lived during the Late Triassic period (late Norian to earliest Rhaetian) in what is now Telangana, central India. It is known from the holotype ISI R273, parts 1-3, partially articulated postcranial material and from the paratypes ISI R273, parts 4-29, including partial postcrania of at least two individuals of different sizes found closely associated and one of them is nearly the same size as the holotype.",
+      "description": "Nambalia is a genus of basal sauropodomorph dinosaur. It lived during the Late Triassic period (late Norian to earliest Rhaetian) in what is now Telangana, central India. It is known from the holotype ISIR 273, parts 1-3, partially articulated postcranial material and from the paratypes ISIR 273, parts 4-29, including partial postcrania of at least two individuals of different sizes found closely associated and one of them is nearly the same size as the holotype.",
       "locomotion": "bipedal",
       "paleoenvironment": [
         "fluvial"
@@ -143065,9 +143258,9 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "ISI R273/1",
-              "ISI R273/2",
-              "ISI R273/3"
+              "ISIR 273/1",
+              "ISIR 273/2",
+              "ISIR 273/3"
             ],
             "specimen_type": "holotype",
             "institution": "Geology Museum, Indian Statistical Institute",
@@ -143365,7 +143558,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "NHMG8142"
+              "NHMG 8142"
             ],
             "specimen_type": "holotype",
             "institution": "Natural History Museum of Guangxi Zhuang Autonomous Region",
@@ -146824,7 +147017,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "MCF PVPH 77"
+              "MCF-PVPH 77"
             ],
             "specimen_type": "holotype",
             "institution": "Museo ‘Carmen Funes’, Plaza Huincul",
@@ -146980,7 +147173,12 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "MLP Ly 1-6-V-28-1"
+              "MLP-Ly 1",
+              "MLP-Ly 2",
+              "MLP-Ly 3",
+              "MLP-Ly 4",
+              "MLP-Ly 5",
+              "MLP-Ly 6"
             ],
             "specimen_type": "holotype",
             "institution": "Museo de La Plata",
@@ -150491,7 +150689,8 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "MACN-PV 18644"
+              "MACN-PV 18644",
+              "MPM 21542"
             ],
             "specimen_type": "holotype",
             "institution": "Museo Argentino de Ciencias Naturales ‘Bernardino Rivadavia’",
@@ -153584,13 +153783,13 @@
       "notable_specimens": [
         {
           "specimen_id": [
-            "TMP 2009.110.1",
-            "TMP 2008.70.1",
-            "TMP 1995.110.1"
+            "TMP 2009.110.0001",
+            "TMP 2008.070.0001",
+            "TMP 1995.110.0001"
           ],
           "institution": "Royal Tyrrell Museum of Paleontology",
           "category": "exceptional-preservation",
-          "significance": "Three feathered skeletons across growth stages: a roughly one-year-old juvenile (TMP 2009.110.1) and an adult (TMP 2008.70.1) with body filaments, plus an adult (TMP 1995.110.1) with pennaceous wing-like forelimb feathers. Only adults bore the wings, suggesting they evolved for display.",
+          "significance": "Three feathered skeletons across growth stages: a roughly one-year-old juvenile (TMP 2009.110.0001) and an adult (TMP 2008.070.0001) with body filaments, plus an adult (TMP 1995.110.0001) with pennaceous wing-like forelimb feathers. Only adults bore the wings, suggesting they evolved for display.",
           "references": [
             "zelenitsky2012a"
           ]
@@ -155166,10 +155365,10 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "MACN-Pv 805"
+              "MPCA-Pv 805"
             ],
             "specimen_type": "holotype",
-            "institution": "Museo Argentino de Ciencias Naturales ‘Bernardino Rivadavia’",
+            "institution": "Museo provincial de Cipolletti \"Carlos Ameghino\"",
             "material": "Four caudal vertebrae, two hemal arches, right scapula, right ulna, right hand elements, ilium fragment, incomplete left pubis, right and left metatarsals II and III, and left foot elements",
             "completeness": "partial"
           },
@@ -156166,7 +156365,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "TMP 1986.55.258"
+              "TMP 1986.055.0258"
             ],
             "specimen_type": "holotype",
             "institution": "Royal Tyrrell Museum of Paleontology",
@@ -156300,7 +156499,7 @@
           "book": "A New Horned Dinosaur from an Upper Cretaceous Bone Bed in Alberta",
           "publisher": "NRC Research Press",
           "pages": "1-108",
-          "notes": "Erects Pachyrhinosaurus lakustai on skull TMP 1986.55.258 from the Wapiti Formation (Pipestone Creek bonebed) of Alberta."
+          "notes": "Erects Pachyrhinosaurus lakustai on skull TMP 1986.055.0258 from the Wapiti Formation (Pipestone Creek bonebed) of Alberta."
         },
         {
           "id": "fiorillo2012a",
@@ -158783,7 +158982,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "BMNH 47337"
+              "BMNH 47338"
             ],
             "specimen_type": "holotype",
             "institution": "Natural History Museum",
@@ -160125,7 +160324,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "PVPH 37"
+              "MCF-PVPH 37"
             ],
             "specimen_type": "holotype",
             "institution": "Museo ‘Carmen Funes’, Plaza Huincul"
@@ -162734,11 +162933,41 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "MAU-Pv-PH-449/36"
+              "MAU-Pv-PH-449/1",
+              "MAU-Pv-PH-449/2",
+              "MAU-Pv-PH-449/3",
+              "MAU-Pv-PH-449/4",
+              "MAU-Pv-PH-449/5",
+              "MAU-Pv-PH-449/6",
+              "MAU-Pv-PH-449/7",
+              "MAU-Pv-PH-449/8",
+              "MAU-Pv-PH-449/9",
+              "MAU-Pv-PH-449/10",
+              "MAU-Pv-PH-449/11",
+              "MAU-Pv-PH-449/12",
+              "MAU-Pv-PH-449/13",
+              "MAU-Pv-PH-449/14",
+              "MAU-Pv-PH-449/15",
+              "MAU-Pv-PH-449/16",
+              "MAU-Pv-PH-449/17",
+              "MAU-Pv-PH-449/18",
+              "MAU-Pv-PH-449/19",
+              "MAU-Pv-PH-449/20",
+              "MAU-Pv-PH-449/22",
+              "MAU-Pv-PH-449/25",
+              "MAU-Pv-PH-449/26",
+              "MAU-Pv-PH-449/27",
+              "MAU-Pv-PH-449/29",
+              "MAU-Pv-PH-449/30",
+              "MAU-Pv-PH-449/31",
+              "MAU-Pv-PH-449/32",
+              "MAU-Pv-PH-449/35",
+              "MAU-Pv-PH-449/36",
+              "MAU-Pv-PH-449/37"
             ],
             "specimen_type": "holotype",
             "institution": "Museo Argentino Urquiza, Rincón de los Sauces",
-            "material": "Two incomplete teeth, posterior middle cervical vertebra, three incomplete posterior dorsal vertebrae, incomplete posterior dorsal arch, incomplete dorsal vertebral centrum, incomplete first caudal centrum, five anterior caudal vertebrae, right humerus, right and left sternal plates, four metacarpals, right and left femur, left tibia lacking distal end, distal end of right tibia, distal iliac peduncle fragment, left pubis, haema arch fragments, dorsal rib fragments, cervical rib fragments.",
+            "material": "Two incomplete teeth, posterior middle cervical vertebra, three incomplete posterior dorsal vertebrae, incomplete posterior dorsal arch, incomplete dorsal vertebral centrum, incomplete first caudal centrum, five anterior caudal vertebrae, right humerus, right and left sternal plates, four metacarpals, right and left femur, left tibia lacking distal end, distal end of right tibia, distal iliac peduncle fragment, left pubis, haemal arch fragments, dorsal rib fragments, cervical rib fragments.",
             "completeness": "partial"
           },
           "size": {
@@ -164940,17 +165169,32 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "SAM 3341",
-              "SAM 3345",
-              "SAM 3347",
-              "SAM 3350",
-              "SAM 3351",
-              "SAM 3603",
-              "SAM 3607"
+              "SAM-PK-3341",
+              "SAM-PK-3342",
+              "SAM-PK-3343",
+              "SAM-PK-3344",
+              "SAM-PK-3345",
+              "SAM-PK-3346",
+              "SAM-PK-3347",
+              "SAM-PK-3348",
+              "SAM-PK-3349",
+              "SAM-PK-3350",
+              "SAM-PK-3351",
+              "SAM-PK-3352",
+              "SAM-PK-3353",
+              "SAM-PK-3354",
+              "SAM-PK-3355",
+              "SAM-PK-3356",
+              "SAM-PK-3602",
+              "SAM-PK-3603",
+              "SAM-PK-3607",
+              "SAM-PK-3608",
+              "SAM-PK-3609"
             ],
             "specimen_type": "syntype",
             "institution": "Iziko South African Museum",
-            "material": "Co-types: bones of two individuals (a larger and a smaller) from a single bone pocket"
+            "material": "A large assemblage from a single bone pocket representing three or more moderately sized individuals plus a considerably more massive animal known from dorsal and sacral vertebrae and an almost complete pair of ischia.",
+            "notes": "The type series has never been firmly delimited. SAM-PK-3607 to 3609, the larger animal, was originally made the type material of Euskelosaurus africanus, and its conspecificity with the remainder is still doubted. The assemblage has been referred in turn to Plateosaurus, Plateosauravus, Euskelosaurus and back to Plateosauravus."
           },
           "erected_in": "huene1932a",
           "authors": "Huene, F. V.",
@@ -167420,7 +167664,7 @@
           "erected_in": "kutty2007a",
           "type_specimen": {
             "specimen_id": [
-              "ISI R265"
+              "ISIR 265"
             ],
             "specimen_type": "holotype",
             "institution": "Geology Museum, Indian Statistical Institute",
@@ -169192,8 +169436,8 @@
       "notable_specimens": [
         {
           "specimen_id": [
-            "TMP 1998.50.1",
-            "TMP 2016.37.1"
+            "TMP 1998.050.0001",
+            "TMP 2016.037.0001"
           ],
           "institution": "Royal Tyrrell Museum of Paleontology",
           "species": "Prosaurolophus maximus",
@@ -174629,6 +174873,8 @@
           },
           "type_specimen": {
             "specimen_id": [
+              "ISIR 550",
+              "ISIR 554",
               "ISIR 557"
             ],
             "specimen_type": "holotype",
@@ -175074,7 +175320,39 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "GSI Type No. 21141/1-33"
+              "GSI 21141/1",
+              "GSI 21141/2",
+              "GSI 21141/3",
+              "GSI 21141/4",
+              "GSI 21141/5",
+              "GSI 21141/6",
+              "GSI 21141/7",
+              "GSI 21141/8",
+              "GSI 21141/9",
+              "GSI 21141/10",
+              "GSI 21141/11",
+              "GSI 21141/12",
+              "GSI 21141/13",
+              "GSI 21141/14",
+              "GSI 21141/15",
+              "GSI 21141/16",
+              "GSI 21141/17",
+              "GSI 21141/18",
+              "GSI 21141/19",
+              "GSI 21141/20",
+              "GSI 21141/21",
+              "GSI 21141/22",
+              "GSI 21141/23",
+              "GSI 21141/24",
+              "GSI 21141/25",
+              "GSI 21141/26",
+              "GSI 21141/27",
+              "GSI 21141/28",
+              "GSI 21141/29",
+              "GSI 21141/30",
+              "GSI 21141/31",
+              "GSI 21141/32",
+              "GSI 21141/33"
             ],
             "specimen_type": "holotype",
             "institution": "Geological Survey of India",
@@ -176961,12 +177239,13 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "QM F1695"
+              "QM F1659"
             ],
             "specimen_type": "holotype",
             "institution": "Queensland Museum, Centre for Biodiversity",
             "material": "22 caudal vertebrae (some fractured), fragments of femur, tibia, fibula, and pelvic elements; over 100 specimens total",
-            "completeness": "fragmentary"
+            "completeness": "fragmentary",
+            "notes": "The syntype series and the referred material share the single registration number QM F1659, so the number denotes the hypodigm rather than the type series alone."
           },
           "erected_in": "longman1926a",
           "authors": "Longman, H. A.",
@@ -178136,7 +178415,24 @@
           "erected_in": "isasmendi2024a",
           "type_specimen": {
             "specimen_id": [
-              "CPI 1637"
+              "CPI 1637",
+              "CPI 1638",
+              "CPI 1639A",
+              "CPI 1639B",
+              "CPI 1640",
+              "CPI 1641A",
+              "CPI 1641B",
+              "CPI 1642",
+              "CPI 1643",
+              "CPI 1644",
+              "CPI 1645",
+              "CPI 1646",
+              "CPI 1647",
+              "CPI 1648",
+              "CPI 1675A",
+              "CPI 1675B",
+              "CPI 1676",
+              "CPI 1677"
             ],
             "specimen_type": "holotype",
             "institution": "Centro de Interpretación Paleontológica de La Rioja",
@@ -178620,10 +178916,12 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "HMN MB RvL 1"
+              "MB.R. 4718"
             ],
             "specimen_type": "holotype",
-            "institution": "Museum für Naturkunde, Berlin"
+            "institution": "Museum für Naturkunde, Berlin",
+            "material": "Partial postcranial skeleton comprising cervicals 2 to 10, 15 dorsals, partial sacrum, 19 caudals, vertebral fragments, numerous rib fragments, hemal arches, right scapula and coracoid, left scapula, both humeri, right radius and ulna, parts of both manus, both ilia, ischia and pubes, both femora and tibiae, right astragalus, and a distal tarsal",
+            "completeness": "partial"
           },
           "erected_in": "galton2001a",
           "authors": "Galton, P. M.",
@@ -178639,6 +178937,19 @@
           "book": "Actas de las I Jornadas Internacionales sobre Paleontología de Dinosaurios y su Entorno",
           "pages": "25-92",
           "notes": "Conference proceedings volume edited by the Colectivo Arqueológico-Paleontológico de Salas (C.A.S.); contains the original description of Ruehleia bedheimensis."
+        },
+        {
+          "id": "sues2025a",
+          "authors": "Sues, H.-D.; Schoch, R. R.",
+          "year": 2025,
+          "title": "Synopsis of the Triassic reptiles from Germany",
+          "journal": "Fossil Record",
+          "publisher": "Pensoft Publishers",
+          "volume": "28",
+          "issue": "2",
+          "pages": "411-483",
+          "doi": "10.3897/fr.28.164405",
+          "notes": "Catalogs the holotype as MB.R. 4718, the specimen Galton described as Individual 1."
         },
         {
           "id": "jones2026b",
@@ -179350,7 +179661,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "41 HII I-0002"
+              "HGM 41HIII-0002 sensu Lu 2009"
             ],
             "specimen_type": "holotype",
             "institution": "Henan Geological Museum",
@@ -182723,7 +183034,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "TMP 1974.10.5"
+              "TMP 1974.010.0005"
             ],
             "specimen_type": "holotype",
             "institution": "Royal Tyrrell Museum of Paleontology",
@@ -191410,11 +191721,11 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "KMV 8701"
+              "IVPP V34"
             ],
             "specimen_type": "holotype",
-            "institution": "Kunming Municipal Museum",
-            "material": "Fragmentary part of skull, lower jaw and many isolated teeth and limbs",
+            "institution": "Institute of Vertebrate Paleontology and Paleoanthropology",
+            "material": "Left maxilla fragment with four teeth, two other jaw fragments, and three isolated teeth",
             "completeness": "fragmentary"
           },
           "size": {
@@ -193051,12 +193362,36 @@
           "erected_in": "royo-torres2017a",
           "type_specimen": {
             "specimen_id": [
-              "MNS 2001/122"
+              "MNS 2001/122.132",
+              "MNS 2001/122.285",
+              "MNS 2001/122.405",
+              "MNS 2001/122.586",
+              "MNS 2001/122.611",
+              "MNS 2001/122.613",
+              "MNS 2001/122.695",
+              "MNS 2001/122.696",
+              "MNS 2001/122.700",
+              "MNS 2001/122.701",
+              "MNS 2001/122.703",
+              "MNS 2001/122.741",
+              "MNS 2001/122.743",
+              "MNS 2001/122.745",
+              "MNS 2001/122.784",
+              "MNS 2001/122.793",
+              "MNS 2001/122.799",
+              "MNS 2001/122.1056",
+              "MNS 2001/122.1232",
+              "MNS 2001/122.1233",
+              "MNS 2001/122.1236",
+              "MNS 2001/122.1237",
+              "MNS 2001/122.1238",
+              "MNS 2001/122.1240"
             ],
             "specimen_type": "holotype",
             "institution": "Staatliches Museum für Naturkunde",
             "material": "One tooth, three dorsal vertebrae with ribs, three sacral fragments, five caudal centra, two caudal vertebral spines, one chevron, humerus, radius, ulna, two ilia, two ischia, pubis fragment, femur",
-            "completeness": "partial"
+            "completeness": "partial",
+            "notes": "The teeth belong to the holotype but were never given a sub-number; the describing paper cites them under the bare accession lot MNS 2001/122, which also covers material of other taxa from the same quarry, so they are not listed individually here."
           },
           "authors": "Royo-Torres, R.; Fuentes, C.; Meijide, M.; Meijide-Fuentes, F.; Meijide-Fuentes, M.",
           "described": 2017
@@ -193356,7 +193691,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "TMP 87.113.3"
+              "TMP 1987.113.0003"
             ],
             "specimen_type": "holotype",
             "institution": "Royal Tyrrell Museum of Paleontology",
@@ -193437,7 +193772,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "TMP 2002.12.63"
+              "TMP 2002.012.0063"
             ],
             "specimen_type": "holotype",
             "institution": "Royal Tyrrell Museum of Paleontology",
@@ -197176,7 +197511,7 @@
       "notable_specimens": [
         {
           "specimen_id": [
-            "TMP 2009.80.1"
+            "TMP 2009.080.0001"
           ],
           "institution": "Royal Tyrrell Museum of Paleontology",
           "species": "Styracosaurus albertensis",
@@ -197206,7 +197541,7 @@
         },
         {
           "specimen_id": [
-            "TMP 1989.97.1"
+            "TMP 1989.097.0001"
           ],
           "institution": "Royal Tyrrell Museum of Paleontology",
           "species": "Styracosaurus albertensis",
@@ -197680,7 +198015,8 @@
             "specimen_type": "holotype",
             "institution": "Earth Sciences Museum, Brigham Young University",
             "material": "Scapulocoracoid.",
-            "completeness": "fragmentary"
+            "completeness": "fragmentary",
+            "notes": "Which scapulocoracoid bears the name is unsettled. The erecting paper gives BYU 5500, renumbered BYU 9025, and calls it a right scapulocoracoid; later work identifies BYU 9025 as the left and treats BYU 12962 as the holotype, while using BYU 9025 in its own figures and tables. The number from the erecting paper is followed here."
           },
           "size": {
             "weight_kg": {
@@ -206295,12 +206631,11 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "UFRJ-DG 368-R",
               "UFRJ-DG 527-R",
               "UFRJ-DG 574-R",
               "UFRJ-DG 591-R",
               "UFRJ-DG 606-R",
-              "UFRJ-DG 625-R",
+              "UFRJ-DG 635-R",
               "UFRJ-DG 636-R",
               "UFRJ-DG 638-R",
               "UFRJ-DG 704-R"
@@ -213278,7 +213613,7 @@
         "phonetic": "ti-RAN-o-SAWR-us",
         "ipa": "/tɪˌrænəˈsɔːrəs/"
       },
-      "description": "Tyrannosaurus is the type genus of Tyrannosauridae and one of the most iconic non-avian dinosaurs, defined by a deep, massively built skull, a foreshortened presacral column of about 23 vertebrae, an extremely reduced two-fingered forelimb, and a heavy, columnar hindlimb terminating in a functionally tridactyl pes. Osborn erected the genus and its type species T. rex in 1905 on a partial skeleton (then cataloged AMNH 973, now CM 9380) collected by Barnum Brown in 1902 from the Hell Creek beds of Dawson County, Montana. In the same paper Osborn also named Dynamosaurus imperiosus on a Wyoming skeleton (AMNH 5866), then formally sank it into Tyrannosaurus rex the following year. The mounted AMNH 5027 specimen, monographed by Osborn in 1916, became the public face of the genus for most of the twentieth century. The original AMNH 973 holotype was sold to the Carnegie Museum during World War II and became CM 9380. Cope's earlier name Manospondylus gigas (1892), based on lost dorsal vertebrae from the Hell Creek of South Dakota, was eventually declared a nomen oblitum because Tyrannosaurus has been in continuous use as the senior available name for over fifty years (ICZN Article 23.9). Modern work compiled by Brusatte et al. (2010) established T. rex as the largest Maastrichtian theropod of Laramidia, with a maximum body length around 13 m, growth rates on the order of 0.7 t per year through a fast-growth phase, and bite forces in excess of 13 kN.\n",
+      "description": "Tyrannosaurus is a genus of large theropod dinosaur. The type species Tyrannosaurus rex (rex meaning 'king' in Latin), often shortened to T. rex, is one of the best represented theropods. It lived throughout what is now western North America, on what was then an island continent known as Laramidia, and had a much wider range than other tyrannosaurids. Fossils are found in a variety of geological formations dated to the late Maastrichtian age of the Late Cretaceous period, 69 to 66 million years ago, with isolated specimens possibly indicating an earlier origin in the middle Campanian age. It was one of the last known members of the tyrannosaurids and among the last non-avian dinosaurs to exist before the Cretaceous-Paleogene extinction event.",
       "diet": "carnivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -213895,7 +214230,45 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "CPPLIP-912"
+              "CPP-911-UrHo",
+              "CPP-912-UrHo",
+              "CPP-914-UrHo",
+              "CPP-915-UrHo",
+              "CPP-917-UrHo",
+              "CPP-919-UrHo",
+              "CPP-921-UrHo",
+              "CPP-922-UrHo",
+              "CPP-923-UrHo",
+              "CPP-929-UrHo",
+              "CPP-992-UrHo",
+              "CPP-993-UrHo",
+              "CPP-1006-UrHo",
+              "CPP-1009-UrHo",
+              "CPP-1010-UrHo",
+              "CPP-1011-UrHo",
+              "CPP-1012-UrHo",
+              "CPP-1017-UrHo",
+              "CPP-1023-UrHo",
+              "CPP-1027-UrHo",
+              "CPP-1029-UrHo",
+              "CPP-1030-UrHo",
+              "CPP-1032-UrHo",
+              "CPP-1056-UrHo",
+              "CPP-1057-UrHo",
+              "CPP-1058-UrHo",
+              "CPP-1068-UrHo",
+              "CPP-1077-UrHo",
+              "CPP-1079-UrHo",
+              "CPP-1080-UrHo",
+              "CPP-1081-UrHo",
+              "CPP-1082-UrHo",
+              "CPP-1091-UrHo",
+              "CPP-1099-UrHo",
+              "CPP-1103-UrHo",
+              "CPP-1104-UrHo",
+              "CPP-1105-UrHo",
+              "CPP-1107-UrHo",
+              "CPP-1109-UrHo"
             ],
             "specimen_type": "holotype",
             "institution": "Centro de Pesquisas Paleontológicas \"Llewellyn Ivor Price\", Universidade Federal do Triângulo Mineiro (UFTM), Peirópolis",
@@ -214839,7 +215212,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "MCF-PVPH-78"
+              "MCF-PVPH 78"
             ],
             "specimen_type": "holotype",
             "institution": "Museo ‘Carmen Funes’, Plaza Huincul",
@@ -215050,7 +215423,7 @@
           "erected_in": "ryan2012b",
           "type_specimen": {
             "specimen_id": [
-              "TMP 95.12.6"
+              "TMP 1995.012.0006"
             ],
             "specimen_type": "holotype",
             "institution": "Royal Tyrrell Museum of Paleontology",
@@ -217732,11 +218105,13 @@
           "erected_in": "longrich2022a",
           "type_specimen": {
             "specimen_id": [
-              "IWCMS 2021.31.1-3"
+              "IWCMS 2021.31.1",
+              "IWCMS 2021.31.2",
+              "IWCMS 2021.31.3"
             ],
             "specimen_type": "holotype",
             "institution": "Dinosaur Isle Museum",
-            "material": "Two dorsal vertebrae",
+            "material": "Anterior dorsal vertebra, posterior dorsal vertebra, and a partial sacrum of three fused sacral vertebrae",
             "completeness": "fragmentary"
           },
           "authors": "Longrich, N. R.; Martill, D. M.; Jacobs, M. L.",
@@ -218014,7 +218389,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "GPIM UH no. 252"
+              "GPIM UH 252"
             ],
             "specimen_type": "holotype",
             "institution": "Geological-Paleontological Institute and Museum",
@@ -219577,7 +219952,48 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "MNHN.F.1934.6 DAM 1-42"
+              "MNHN.F.1934.6 DAM 1",
+              "MNHN.F.1934.6 DAM 2",
+              "MNHN.F.1934.6 DAM 3",
+              "MNHN.F.1934.6 DAM 4",
+              "MNHN.F.1934.6 DAM 5",
+              "MNHN.F.1934.6 DAM 6",
+              "MNHN.F.1934.6 DAM 7",
+              "MNHN.F.1934.6 DAM 8",
+              "MNHN.F.1934.6 DAM 9",
+              "MNHN.F.1934.6 DAM 10",
+              "MNHN.F.1934.6 DAM 11",
+              "MNHN.F.1934.6 DAM 12",
+              "MNHN.F.1934.6 DAM 13",
+              "MNHN.F.1934.6 DAM 14",
+              "MNHN.F.1934.6 DAM 15",
+              "MNHN.F.1934.6 DAM 16",
+              "MNHN.F.1934.6 DAM 17",
+              "MNHN.F.1934.6 DAM 18",
+              "MNHN.F.1934.6 DAM 19",
+              "MNHN.F.1934.6 DAM 20",
+              "MNHN.F.1934.6 DAM 21",
+              "MNHN.F.1934.6 DAM 22",
+              "MNHN.F.1934.6 DAM 23",
+              "MNHN.F.1934.6 DAM 24",
+              "MNHN.F.1934.6 DAM 25",
+              "MNHN.F.1934.6 DAM 26",
+              "MNHN.F.1934.6 DAM 27",
+              "MNHN.F.1934.6 DAM 28",
+              "MNHN.F.1934.6 DAM 29",
+              "MNHN.F.1934.6 DAM 30",
+              "MNHN.F.1934.6 DAM 31",
+              "MNHN.F.1934.6 DAM 32",
+              "MNHN.F.1934.6 DAM 33",
+              "MNHN.F.1934.6 DAM 34",
+              "MNHN.F.1934.6 DAM 35",
+              "MNHN.F.1934.6 DAM 36",
+              "MNHN.F.1934.6 DAM 37",
+              "MNHN.F.1934.6 DAM 38",
+              "MNHN.F.1934.6 DAM 39",
+              "MNHN.F.1934.6 DAM 40",
+              "MNHN.F.1934.6 DAM 41",
+              "MNHN.F.1934.6 DAM 42"
             ],
             "specimen_type": "holotype",
             "institution": "Muséum national d'Histoire naturelle",
@@ -220694,7 +221110,7 @@
           "erected_in": "evans2015a",
           "type_specimen": {
             "specimen_id": [
-              "TMP2011.051.0009"
+              "TMP 2011.051.0009"
             ],
             "specimen_type": "holotype",
             "institution": "Royal Tyrrell Museum of Paleontology",
@@ -221970,7 +222386,7 @@
       "notable_specimens": [
         {
           "specimen_id": [
-            "TMP 2010.76.24"
+            "TMP 2010.076.0024"
           ],
           "institution": "Royal Tyrrell Museum of Paleontology",
           "species": "Xenoceratops foremostensis",
@@ -224263,7 +224679,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "ZLJ01018"
+              "ZLJ0108"
             ],
             "specimen_type": "holotype",
             "institution": "Lufeng World Dinosaur Valley",
@@ -228731,7 +229147,7 @@
           "erected_in": "dai2020a",
           "type_specimen": {
             "specimen_id": [
-              "CLGPR v00002"
+              "CLGPR V00002"
             ],
             "specimen_type": "holotype",
             "institution": "Chongqing Laboratory of Geoheritage Protection and Research",
@@ -231343,7 +231759,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "HGM 41HIII-0002"
+              "HGM 41HIII-0002 sensu Xu 2007"
             ],
             "specimen_type": "holotype",
             "institution": "Henan Geological Museum",
