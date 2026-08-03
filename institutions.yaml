@@ -125,6 +125,9 @@ NHMUK:
     country: GB
     city: London
   aliases: [NHML, BM(NH), BMNH, NHM]
+  collections: [NHMUK PV, NHMUK PV R, NHMUK PV OR, NHMUK PV RU, NHMUK PV RUP,
+                NHMUK R, NHMUK OR, NHMUK RU, NHMUK RUP,
+                BMNH R, BMNH OR, BMNH RU, BMNH P]
 BMNHC:
   aliases: [BPV]
   name: Beijing Museum of Natural History
@@ -338,7 +341,8 @@ CPT:
   location:
     country: ES
     city: Teruel
-  aliases: [MAP, MOAL, AR]
+  aliases: [MAP, MOAL, AR, FCPTD, PCPTD]
+  collections: [CPT AR]
 LACM:
   name: Natural History Museum of Los Angeles County
   location:
@@ -501,6 +505,12 @@ GMH:
     country: CN
     city: Harbin
 
+NGMJ:
+  aliases: [NJGM]
+  name: Nanjing Geological Museum
+  location:
+    country: CN
+    city: Nanjing
 NIGP:
   name: Nanjing Institute of Geology and Palaeontology, Academia Sinica (NIGPAS)
   location:
@@ -1086,7 +1096,7 @@ MPCA:
   location:
     country: AR
     city: Cipolletti
-  collections: [MPCA-Pv, MPCA-SM]
+  collections: [MPCA-PV, MPCA-SM]
 MPCN:
   name: Museo Patagónico de Ciencias Naturales
   location:
@@ -1405,6 +1415,11 @@ TCMI:
   location:
     country: US
     city: Indianapolis
+PMAA:
+  name: Provincial Museum and Archives of Alberta
+  location:
+    country: CA
+    city: Edmonton
 TMP:
   name: Royal Tyrrell Museum of Paleontology
   location:
@@ -1452,7 +1467,7 @@ SGM:
   location:
     country: MA
     city: Rabat
-  collections: [SGM-Din]
+  collections: [SGM-Din, SGM To]
 SHN:
   name: Sociedade de Historia Natural
   location:
@@ -1602,6 +1617,11 @@ UMMP:
   location:
     country: US
     city: Ann Arbor
+UUVP:
+  name: University of Utah Vertebrate Paleontology Collection
+  location:
+    country: US
+    city: Salt Lake City
 UMNH:
   name: Utah Museum of Natural History
   location:
@@ -2023,7 +2043,7 @@ HIIUC:
   location:
     country: MA
     city: Casablanca
-  collections: [HIIUC-BN]
+  collections: [HIIUC BN]
 GIH:
   aliases: [MAFI, MBFSZ, SZTFH]
   name: Hungarian Geological Survey
@@ -2085,7 +2105,6 @@ SONATRACH:
     city: Boumerdès
 
 TDM:
-  aliases: [To]
   name: Tazouda Dinosaur Museum
   location:
     country: MA

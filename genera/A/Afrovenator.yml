@@ -55,12 +55,23 @@ species:
         - 16.83333
         - 6.53333
     type_specimen:
-      specimen_id: [UC OBA 1]
+      specimen_id: [MNBH TIG1]
       specimen_type: holotype
-      institution: UC
+      institution: MNBH
       material: Relatively complete skeleton including skull, vertebrae, forelimb,
         pelvic girdle, and hindlimb.
       completeness: complete
+      former_ids:
+        - from_id: UC OBA 1
+          to_id: MNBH TIG1
+          from_institution: UC
+          to_institution: MNBH
+          reason: rehoused
+          source: carrano2012a
+          notes: >-
+            The erecting paper treats UC OBA 1 as a temporary designation for
+            material held on loan; carrano2012a gives the permanent number as
+            "MNN TIG1 (= UC OBA 1)", MNN being the superseded code for MNBH.
     size:
       length_m:
         min: 9.0
@@ -74,5 +85,8 @@ species:
     erected_in: sereno1994a
 references:
   - id: sereno1994a
+  - id: carrano2012a
+    notes: Gives the permanent catalog number for the holotype, formerly held
+      under a temporary University of Chicago designation.
   - id: paul2024b
     notes: Source of the appearance features.

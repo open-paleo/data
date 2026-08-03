@@ -79,11 +79,20 @@ species:
         max: 4
     type_specimen:
       specimen_id:
-        - IVPP V20
+        - NGMJ 004546
       specimen_type: holotype
-      institution: IVPP
+      institution: NGMJ
       material: Skull, lower jaw pair and partly preserved skeletons
       completeness: partial
+      former_ids:
+        - from_id: IVPP V 20
+          to_id: NGMJ 004546
+          from_institution: IVPP
+          to_institution: NGMJ
+          reason: rehoused
+          notes: The date of the move is not recorded in any source read so far,
+            and both numbers remain in use; zhang2024a cites the specimen as
+            "IVPP V 20/NJGM 004546".
     erected_in: young1940a
   - name: Yunnanosaurus youngi
     etymology: Honors Professor C. C. Young, who first studied the Lufeng Basin
