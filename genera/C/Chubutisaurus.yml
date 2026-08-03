@@ -17,6 +17,11 @@ paleoenvironment:
 appearance:
   integument: scaled
   evidence: inferred
+diagnostic_features:
+  - One or more caudosacral vertebrae with articular faces lying in different
+    planes, a condition not described in other sauropods
+  - Pleurocoels on the caudosacral vertebrae
+  - Complete, unforked prespinal lamina on the posterior dorsal vertebrae
 identifiers:
   - source: pbdb
     id: "38688"
@@ -51,6 +56,9 @@ species:
       specimen_id: [ MACN 18222 ]
       specimen_type: holotype
       institution: MACN
+      material: A dorsal centrum, neural arch and spine, eleven caudal centra, a
+        sacro-caudal vertebra, left femur, tibia, humerus, ulna, radius, four
+        metacarpals, part of a fifth, and appendicular fragments
     size:
       hip_height_m:
         min: 3.5
@@ -62,6 +70,7 @@ species:
         min: 12000
         max: 12000
     erected_in: delcorro1975a
+    described_in: salgado1993a
 references:
   - id: delcorro1975a
   - id: salgado1993a
