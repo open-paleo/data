@@ -584,10 +584,13 @@ Magnamanus soriaensis:
   note: >
     "The fossils collected were inventoried according to the numbering provided
     by the Museo Numantino de Soria, MNS, with the following catalog numbers:
-    2000/132, 2001/122, 2002/95, 2003/69 and 2004/54." The paper designates no
-    single holotype specimen, only holotype material spread across five lots.
-    Ours held MNS 200/132, a typo of 2000/132. All five recorded. NOTE: because
-    no single specimen is fixed, specimen_type: holotype is arguably wrong here.
+    2000/132, 2001/122, 2002/95, 2003/69 and 2004/54." Ours held MNS 200/132, a
+    typo of 2000/132. specimen_type stays holotype: the paper carries a Holotype
+    heading and states the material "belongs to a single adult individual", so a
+    holotype was designated - it simply never received one catalog number. The
+    ids are the subset the paper ties to a named holotype element. The five lot
+    numbers are deliberately NOT recorded as ids, because lot 2001/122 also
+    holds the Soriatitan golmayensis holotype from the same quarry.
 
 Pelorosaurus brevis:
   categories: [holotype]
