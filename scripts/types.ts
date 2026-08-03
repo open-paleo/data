@@ -26,9 +26,22 @@ export type InstitutionEntry = {
     };
 
     /**
-     * Alternative abbreviation codes that resolve to this canonical key.
+     * Alternative abbreviation codes for the SAME body — superseded institution
+     * codes (BMNH for NHMUK) and spelling variants. Append-only: a code nothing
+     * currently uses is exactly the one earning its keep, by resolving a form
+     * that appears only in the literature.
      */
     aliases?: Array<string>;
+
+    /**
+     * Codes of collections curated separately WITHIN this institution, as they
+     * appear at the head of a catalogue number — "ISIR" for the Indian
+     * Statistical Institute's fossil reptile collection, "MCF-PVPH" for
+     * Plaza Huincul's vertebrate palaeontology collection. Distinct from
+     * `aliases`, which name the institution itself; a collection code names a
+     * part of it. Both resolve to this entry.
+     */
+    collections?: Array<string>;
 };
 
 /**

@@ -221,6 +221,11 @@ def loadInstitutionAliases():
         for alias in (entry.get("aliases") or []):
             mapping[str(alias).upper().replace("-", "").replace(" ", "")] = code
 
+        # Collection codes resolve to their parent institution too, which is
+        # what lets "MPC-D 100/130" and "IGM 100/130" compare equal.
+        for collection in (entry.get("collections") or []):
+            mapping[str(collection).upper().replace("-", "").replace(" ", "")] = code
+
     return mapping
 
 

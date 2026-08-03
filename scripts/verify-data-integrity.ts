@@ -212,12 +212,6 @@ const crossBorderFormations: Record<string, Array<string>> =
  */
 const stageOutlierGapMa = 20;
 
-// Sub-collections curated separately inside a parent institution, so sharing the
-// parent's name is intentional rather than a split entry. Keyed by the entry
-// codes, sorted and joined with " | ". The Catholic University of Peking material
-// is cited in its own right ("FMNH CUP 2338"), which is why it holds a code.
-const deliberateSubCollections = new Set<string>(["FMNH | FMNH CUP"]);
-
 /**
  * Resolves a species record's age interval as [younger_ma, older_ma],
  * preferring explicit from_ma/to_ma and falling back to the union of its
@@ -300,6 +294,14 @@ function buildCodeResolver(institutions: Record<string, InstitutionEntry>): Map<
         for (const alias of entry.aliases ?? [])
         {
             add(alias, canonical);
+        }
+
+        // A collection code names a part of this institution rather than the
+        // institution itself, but for resolution purposes it points here too:
+        // "ISIR 335/1" is held by ISI.
+        for (const collection of entry.collections ?? [])
+        {
+            add(collection, canonical);
         }
     }
 
@@ -690,11 +692,6 @@ for (const group of institutionNameGroups.values())
 
     const codes = [...group].sort();
 
-    if (deliberateSubCollections.has(codes.join(" | ")))
-    {
-        continue;
-    }
-
     report("duplicate-institution-entry", codes.join(", "), "-",
         `entries share one institution name: '${registry[codes[0]]?.name ?? ""}'`);
 }
@@ -707,12 +704,25 @@ const aliasOwners = new Map<string, Array<string>>();
 
 for (const [code, entry] of Object.entries(registry))
 {
-    for (const alias of entry.aliases ?? [])
+    // Collections resolve the same way aliases do, so an ambiguous collection
+    // code breaks resolution just as badly and is checked in the same pass.
+    for (const alias of [...(entry.aliases ?? []), ...(entry.collections ?? [])])
     {
         const owners = aliasOwners.get(alias) ?? new Array<string>();
 
         owners.push(code);
         aliasOwners.set(alias, owners);
+    }
+
+    // A code cannot be both a name for the whole institution and a name for one
+    // collection inside it.
+    for (const collection of entry.collections ?? [])
+    {
+        if ((entry.aliases ?? []).includes(collection))
+        {
+            report("ambiguous-institution-alias", code, "-",
+                `'${collection}' is declared as both an alias and a collection`);
+        }
     }
 }
 
