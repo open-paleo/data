@@ -1663,12 +1663,21 @@ for (const [filePath, doc] of genusParsed)
             // mis-labelled as a single type" and the latter is a review
             // concern, not a schema one. Syntype, by definition, requires
             // ≥ 2 distinct specimens, so that constraint stays.
-            if (holotype.specimen_type === "syntype" && idCount < 2)
+            // A syntype series normally IS several numbers, but a museum may
+            // register a whole series under one -- Rhoetosaurus brownei's
+            // syntypes and its referred material are all QM F1659. The single
+            // id is allowed when the record says why, so the exemption cannot
+            // be taken silently.
+            const explained = typeof holotype.notes === "string" && holotype.notes.trim().length > 0;
+
+            if (holotype.specimen_type === "syntype" && idCount < 2 && !explained)
             {
                 checkError(
                     "Type specimen consistency",
                     filePath,
-                    `species '${speciesLabel}': specimen_type 'syntype' requires at least 2 specimen_ids (got ${idCount})`);
+                    `species '${speciesLabel}': specimen_type 'syntype' requires at least 2 specimen_ids `
+                    + `(got ${idCount}); a series registered under one number is allowed, but the record `
+                    + "must explain it in 'notes'");
             }
         }
 
