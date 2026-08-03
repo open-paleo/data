@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-08-03T21:30:56.509Z",
+    "built_at": "2026-08-03T22:21:58.202Z",
     "clade_count": 188,
-    "genus_count": 1401,
+    "genus_count": 1402,
     "license": "CC-BY-4.0",
     "schema_version": "1.1.0",
     "version": "2026.08"
@@ -68863,6 +68863,149 @@
       ],
       "authors": "Jasinski, S. E.; Sullivan, R. M.; Dodson, P.",
       "described": 2020
+    },
+    "Dinevenator": {
+      "genus": "Dinevenator",
+      "parent": "Troodontinae",
+      "etymology": "From Navajo 'Diné', the name of the Navajo people, combined with Latin 'venator' meaning 'hunter'; meaning 'Diné hunter'.",
+      "description": "Dinevenator is a genus of troodontid theropod dinosaur from the Late Cretaceous of the San Juan Basin in New Mexico, United States. The type and only species is Dinevenator robustus, known solely from an isolated left frontal. That specimen was originally described as a species of the dromaeosaurid Saurornitholestes, subsequently reidentified as a troodontid, and in 2026 made the holotype of a new genus. It was a large, robust-skulled troodontid, and its recognition adds to the theropod diversity known from the Kirtlandian faunas of New Mexico.",
+      "dispute": {
+        "summary": "Dinevenator is recovered within the tribe Troodontini of Rivera-Sylva and others (2026), as the basalmost member and the sister taxon to Albertavenator plus Xenovenator. That tribe is not adopted here as a node, so the genus is placed in Troodontinae alongside them. The holotype frontal was formerly held to be undiagnostic: Evans and others (2014) treated the species as a nomen dubium referable only to an indeterminate troodontid, and Jasinski and Sullivan (2026) reassessed it as diagnostic in erecting the genus.\n",
+        "history": [
+          {
+            "date": "2026-08-03",
+            "note": "Intake; placed at Troodontinae rather than the unadopted tribe Troodontini, following the treatment of Albertavenator and Xenovenator."
+          }
+        ]
+      },
+      "diet": "carnivore",
+      "locomotion": "bipedal",
+      "paleoenvironment": [
+        "fluvial"
+      ],
+      "diagnostic_features": [
+        "Dorsoventrally thick and robust frontals",
+        "Frontals thicker posteriorly than anteriorly",
+        "Nearly flat frontals lacking a well-developed parasagittal trough and sagittal ridge, so the dorsolateral surface for the orbital rim is robust but only slightly raised",
+        "Posteromedial nasal projection between the frontals that is wider than long",
+        "More laterally oriented posterior portion of the lateral endocranial wall of the frontal",
+        "Lacks a transverse ventral ridge separating the cerebral and olfactory fossae"
+      ],
+      "identifiers": [
+        {
+          "source": "wikidata",
+          "id": "Q140835817"
+        }
+      ],
+      "erected_in": "jasinski2026a",
+      "species": [
+        {
+          "name": "Dinevenator robustus",
+          "etymology": "From Latin 'robustus' meaning 'robust' or 'strong'.",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Campanian"
+            ],
+            "from_ma": 73.4,
+            "to_ma": 73
+          },
+          "location": {
+            "country": "US",
+            "locality": "Alamo Wash (north fork), SMP locality 388, San Juan Basin",
+            "region": "New Mexico",
+            "formation": "Kirtland",
+            "member": "De-na-zin"
+          },
+          "type_specimen": {
+            "specimen_id": [
+              "SMP VP-1955"
+            ],
+            "specimen_type": "holotype",
+            "institution": "State Museum of Pennsylvania",
+            "material": "Nearly complete but weathered left frontal, lacking the lateral orbital margin and the postorbital process.",
+            "completeness": "fragmentary"
+          },
+          "synonyms": [
+            {
+              "name": "Saurornitholestes robustus",
+              "type": "reassigned",
+              "reason": "Original combination by Sullivan (2006); Jasinski and Sullivan (2026) erected the new genus Dinevenator for the species."
+            }
+          ],
+          "erected_in": "sullivan2006b",
+          "described_in": "jasinski2026a",
+          "authors": "Sullivan, R. M.",
+          "described": 2006
+        }
+      ],
+      "references": [
+        {
+          "id": "sullivan2006b",
+          "authors": "Sullivan, R. M.",
+          "year": 2006,
+          "title": "Saurornitholestes robustus n. sp. (Theropoda: Dromaeosauridae) from the Upper Cretaceous Kirtland Formation (De-na-zin Member), San Juan Basin, New Mexico",
+          "journal": "Late Cretaceous Vertebrates from the Western Interior. New Mexico Museum of Natural History and Science Bulletin",
+          "volume": "35",
+          "pages": "253-256",
+          "notes": "Original description of the species as Saurornitholestes robustus, founded on the holotype frontal."
+        },
+        {
+          "id": "evans2014a",
+          "authors": "Evans, D. C.; Larson, D. W.; Cullen, T. M.; Sullivan, R. M.",
+          "year": 2014,
+          "title": "\"Saurornitholestes\" robustus is a troodontid (Dinosauria: Theropoda)",
+          "journal": "Canadian Journal of Earth Sciences",
+          "publisher": "Canadian Science Publishing",
+          "volume": "51",
+          "issue": "7",
+          "pages": "730-734",
+          "doi": "10.1139/cjes-2014-0073",
+          "notes": "Reidentified the holotype frontal as troodontid rather than dromaeosaurid, and treated the species as a nomen dubium."
+        },
+        {
+          "id": "jasinski2026a",
+          "authors": "Jasinski, S. E.; Sullivan, R. M.",
+          "year": 2026,
+          "title": "Dinevenator, a New Genus of Troodontid Dinosaur from the Late Cretaceous of New Mexico",
+          "journal": "Fossil Studies",
+          "publisher": "MDPI AG",
+          "volume": "4",
+          "issue": "3",
+          "doi": "10.3390/fossils4030021",
+          "notes": "Reassessed the holotype as diagnostic and erected Dinevenator for the species."
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Avetheropoda",
+        "Coelurosauria",
+        "Maniraptora",
+        "Paraves",
+        "Eumaniraptora",
+        "Deinonychosauria",
+        "Troodontidae",
+        "Troodontinae"
+      ],
+      "authors": "Jasinski, S. E.; Sullivan, R. M.",
+      "described": 2026
     },
     "Dinheirosaurus": {
       "genus": "Dinheirosaurus",
