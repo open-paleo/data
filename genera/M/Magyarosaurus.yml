@@ -17,17 +17,17 @@ locomotion: quadrupedal
 paleoenvironment:
   - fluvial
 diagnostic_features:
-  - Anterior caudal vertebrae strongly procoelous and deeply grooved below
-  - Posterior caudal vertebrae partly planoconvex, elongated, with arch
-    restricted to posterior portion of centrum
-  - Anteriormost caudal vertebrae with small pleurozentral cavities absent in
-    following vertebrae
-  - Processus transversus of anteriormost caudal vertebrae rod-like rather than
-    plate-like (unlike Diplodocus)
-  - Dorsal vertebrae spongy with rather small, widely open pleurozentral
-    cavities communicating with spongy part through a foramen
-  - Neural spine of dorsal vertebrae +-shaped in cross-section, simple, somewhat
-    club-shaped
+  - Anterior caudal centra with ventrolateral ridges but without a midline
+    furrow
+  - Well-developed bulge on the posterior surface of the humerus, presumably the
+    site for M. latissimus dorsi, positioned approximately equidistant from the
+    medial and lateral margins
+  - Interosseous ridge of the ulna strongly distolaterally oriented, its
+    proximal end intersecting the anteromedial margin of the shaft
+  - Low eccentricity of the femoral midshaft, 1.1-1.4
+  - Subtle ridge on the anterior margin of the lateral surface of the fibula,
+    its proximal tip at approximately the level of the distal end of the lateral
+    trochanter
 appearance:
   features:
     - osteoderms
@@ -58,12 +58,9 @@ species:
       to_ma: 66
     location:
       country: RO
-      locality: Szentpéterfalva, Hateg Basin
+      locality: Kadic Locality I, Pârâul Vârtopilor, near Valioara
       region: Hunedoara
-      formation: Sînpetru
-      coordinates:
-        - 45.493622
-        - 23.092192
+      formation: Densuș-Ciula
     size:
       hip_height_m:
         min: 1.5
@@ -75,17 +72,28 @@ species:
         min: 660
         max: 972
     type_specimen:
-      specimen_id: [ MBFSZ Ob.3091 ]
+      specimen_id: [ SZTFH Ob.3091 ]
       specimen_type: lectotype
       institution: GIH
       material: Anterior caudal vertebra; sides approximately parallel in
         cross-section, slightly concave, centrum no narrower below than above
       completeness: fragmentary
+    synonyms:
+      - name: Magyarosaurus transsylvanicus
+        type: junior subjective
+        reason: Erected by Huene (1932); shown to be a chimaera drawing on the
+          type assemblage of M. dacus, a further individual, and indeterminate
+          titanosaurs, and so invalid and in part a junior synonym of M. dacus.
     erected_in: huene1932a
+    described_in: díaz2025a
 references:
   - id: nopcsa1915a
     notes: In German. Original description, as Titanosaurus dacus.
   - id: huene1932a
     notes: Reassigns Titanosaurus dacus to Magyarosaurus.
+  - id: díaz2025a
+    notes: Revision of the Romanian sauropods. Confirms the lectotype, gives a
+      revised autapomorphy-based diagnosis, and places the type locality at
+      Valioara rather than Sanpetru.
   - id: jones2026b
     notes: Source of the hip height estimate, and the appearance features.
