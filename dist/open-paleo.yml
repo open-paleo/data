@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-08-03T00:32:55.433Z
+  built_at: 2026-08-03T17:07:57.260Z
   clade_count: 188
   genus_count: 1401
   license: CC-BY-4.0
@@ -10432,7 +10432,7 @@ genera:
             - -67.982765
         type_specimen:
           specimen_id:
-            - MPCA 11098
+            - MPCA-PV 11098
           specimen_type: holotype
           institution: Museo provincial de Cipolletti "Carlos Ameghino"
           material: Large part of skull lacking right maxilla, jugal, quadratojugal, and squamosal; major part of palate absent. 85 cm maximal length.
@@ -10592,9 +10592,9 @@ genera:
             - 28.533333
         type_specimen:
           specimen_id:
-            - UCL B54
+            - NHMUK PV RU B54
           specimen_type: holotype
-          institution: Grant Museum of Zoology, University College
+          institution: Natural History Museum
           material: Skull with full dentition and a partial, only partly-prepared postcranial skeleton, including four unfused sacral vertebrae, forelimb and manus, femur, metatarsals, and pes
           completeness: partial
         size:
@@ -12554,7 +12554,7 @@ genera:
         erected_in: maidment2020a
         type_specimen:
           specimen_id:
-            - NHMUK PV R37366
+            - NHMUK PV R 37366
           specimen_type: holotype
           institution: Natural History Museum
           material: A dorsal vertebra.
@@ -13466,11 +13466,19 @@ genera:
             - 6.53333
         type_specimen:
           specimen_id:
-            - UC OBA 1
+            - MNBH TIG1
           specimen_type: holotype
-          institution: University of Chicago
+          institution: Musée National Boubou Hama
           material: Relatively complete skeleton including skull, vertebrae, forelimb, pelvic girdle, and hindlimb.
           completeness: complete
+          former_ids:
+            - from_id: UC OBA 1
+              to_id: MNBH TIG1
+              from_institution: University of Chicago
+              to_institution: Musée National Boubou Hama
+              reason: rehoused
+              source: carrano2012a
+              notes: The erecting paper treats UC OBA 1 as a temporary designation for material held on loan; carrano2012a gives the permanent number as "MNN TIG1 (= UC OBA 1)", MNN being the superseded code for MNBH.
         size:
           length_m:
             min: 9
@@ -13495,6 +13503,17 @@ genera:
         issue: "5183"
         pages: 267-271
         doi: 10.1126/science.266.5183.267
+      - id: carrano2012a
+        authors: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D.
+        year: 2012
+        title: "The phylogeny of Tetanurae (Dinosauria: Theropoda)"
+        journal: Journal of Systematic Palaeontology
+        publisher: Informa UK Limited
+        volume: "10"
+        issue: "2"
+        pages: 211-300
+        doi: 10.1080/14772019.2011.630927
+        notes: Gives the permanent catalog number for the holotype, formerly held under a temporary University of Chicago designation.
       - id: paul2024b
         authors: Paul, G. S.
         year: 2024
@@ -16976,7 +16995,7 @@ genera:
         erected_in: makovicky2012a
         type_specimen:
           specimen_id:
-            - MPCA-477
+            - MPCA-PV 477
           specimen_type: holotype
           institution: Museo provincial de Cipolletti "Carlos Ameghino"
           material: Partial left femur, distal portions of left and right tibiae, right fibula, proximal tarsals of both ankles, nearly complete right metatarsus, proximal and distal parts of left metapodials, left pedal digit III.
@@ -17483,7 +17502,7 @@ genera:
             max: 1000
         type_specimen:
           specimen_id:
-            - NHMUK R1828
+            - NHMUK PV R 1828
           specimen_type: holotype
           institution: Natural History Museum
           material: Tooth approximately 60 mm high and 22 mm long at alveolar end; saber-like curved, laterally compressed; serrated posterior edge; smooth anterior edge
@@ -17707,6 +17726,7 @@ genera:
           institution: Institute of Vertebrate Paleontology and Paleoanthropology
           material: "Largely disarticulated skeleton: dentary, cervicals, dorsals, sacrum, caudal series, scapula, coracoid, humerus, radius, ulna, carpals, metacarpals, manual phalanges, ilium, ischium, femur."
           completeness: partial
+          notes: The erecting paper designates "the larger individual" of two sharing this number, the smaller being referred material. Later work often writes the two as IVPP 88402a and 88402b, but no such suffixes were assigned; many elements were never marked with the accession number at all.
         erected_in: russell1993b
         authors: Russell, D. A.; Dong, Z.-M.
         described: 1993
@@ -22005,31 +22025,31 @@ genera:
             max: 6
         type_specimen:
           specimen_id:
-            - MPCA-Pv 804/1
-            - MPCA-Pv 804/2
-            - MPCA-Pv 804/3
-            - MPCA-Pv 804/4
-            - MPCA-Pv 804/5
-            - MPCA-Pv 804/6
-            - MPCA-Pv 804/7
-            - MPCA-Pv 804/8
-            - MPCA-Pv 804/9
-            - MPCA-Pv 804/10
-            - MPCA-Pv 804/11
-            - MPCA-Pv 804/12
-            - MPCA-Pv 804/13
-            - MPCA-Pv 804/14
-            - MPCA-Pv 804/15
-            - MPCA-Pv 804/16
-            - MPCA-Pv 804/17
-            - MPCA-Pv 804/18
-            - MPCA-Pv 804/19
-            - MPCA-Pv 804/20
-            - MPCA-Pv 804/21
-            - MPCA-Pv 804/22
-            - MPCA-Pv 804/23
-            - MPCA-Pv 804/24
-            - MPCA-Pv 804/25
+            - MPCA-PV 804/1
+            - MPCA-PV 804/2
+            - MPCA-PV 804/3
+            - MPCA-PV 804/4
+            - MPCA-PV 804/5
+            - MPCA-PV 804/6
+            - MPCA-PV 804/7
+            - MPCA-PV 804/8
+            - MPCA-PV 804/9
+            - MPCA-PV 804/10
+            - MPCA-PV 804/11
+            - MPCA-PV 804/12
+            - MPCA-PV 804/13
+            - MPCA-PV 804/14
+            - MPCA-PV 804/15
+            - MPCA-PV 804/16
+            - MPCA-PV 804/17
+            - MPCA-PV 804/18
+            - MPCA-PV 804/19
+            - MPCA-PV 804/20
+            - MPCA-PV 804/21
+            - MPCA-PV 804/22
+            - MPCA-PV 804/23
+            - MPCA-PV 804/24
+            - MPCA-PV 804/25
           specimen_type: holotype
           institution: Museo provincial de Cipolletti "Carlos Ameghino"
           material: "Incomplete vertebral series: last sacral vertebra, 6 proximal caudal vertebrae, 4 mid-caudal vertebrae, and 5 haemal arches"
@@ -30784,7 +30804,7 @@ genera:
             - -0.560833
         type_specimen:
           specimen_id:
-            - NHMUK R798
+            - NHMUK PV R 798
           specimen_type: holotype
           institution: Natural History Museum
           material: Partial skeleton.
@@ -31322,7 +31342,7 @@ genera:
             - -0.35
         type_specimen:
           specimen_id:
-            - NHMUK VP R9951
+            - NHMUK PV R 9951
           specimen_type: holotype
           institution: Natural History Museum
           material: Conjoined premaxillae, front of left maxilla, conjoined nasals, lacrimal and adjacent bones, frontals, anterior braincase, occiput, left dentary, some post-dentary bones; teeth; axis, most cervicals, some dorsals, one caudal; cervical rib, dorsal ribs, gastralia, chevrons; both scapulae, coracoids, possible clavicle; both humeri, manus phalanges including an extremely large ungual; ilia, pubes, ischium; both femora (partial), left fibula; right calcaneum; distal metatarsals, pes phalanges
@@ -31994,7 +32014,7 @@ genera:
             max: 2000
         type_specimen:
           specimen_id:
-            - HGM 41HIII1219
+            - HGM 41HIII-1219
           specimen_type: holotype
           institution: Henan Geological Museum
           material: Small, semi-articulated skeleton ('Baby Louie') associated with a partial nest of 6-8 eggs.
@@ -32841,7 +32861,7 @@ genera:
           formation: Maastricht Formation
         type_specimen:
           specimen_id:
-            - NHMUK R 42997
+            - NHMUK PV R 42997
           specimen_type: holotype
           institution: Natural History Museum
           material: Right femur; distal end sawn away, proximal end worn and broken; preserved length ~29 cm
@@ -32961,7 +32981,7 @@ genera:
         erected_in: novas2012a
         type_specimen:
           specimen_id:
-            - MPCA 865
+            - MPCA-PV 865
           specimen_type: holotype
           institution: Museo provincial de Cipolletti "Carlos Ameghino"
           material: Caudal half of skull in articulation with the lower jaws.
@@ -33980,7 +34000,7 @@ genera:
         erected_in: agnolín2012a
         type_specimen:
           specimen_id:
-            - MPCA 1290
+            - MPCA-PV 1290
           specimen_type: holotype
           institution: Museo provincial de Cipolletti "Carlos Ameghino"
           material: "Partial skeleton: incomplete mid-dorsal vertebra, nearly complete left scapulocoracoid, incomplete right scapulocoracoid, incomplete left tibia and femur, nearly complete left pubis articulated with incomplete pubic peduncle of ilium, and anterior blade of left ilium"
@@ -34085,7 +34105,7 @@ genera:
         erected_in: cruzado-caballero2017a
         type_specimen:
           specimen_id:
-            - MPCA-Pv SM2
+            - MPCA-PV SM 2
           specimen_type: holotype
           institution: Museo provincial de Cipolletti "Carlos Ameghino"
           material: Partial, articulated skeleton including dorsal and caudal vertebrae, sacrum, hemal arches, ribs, scapula, humerus, ulna, ilium, pubis, ischia, femora, tibiae, fibulae, astragalus, calcaneum, and left pes.
@@ -34315,7 +34335,7 @@ genera:
             max: 10
         type_specimen:
           specimen_id:
-            - MPCA 300
+            - MPCA-PV 300
           specimen_type: holotype
           institution: Museo provincial de Cipolletti "Carlos Ameghino"
           material: "Partially articulated subadult skeleton: left frontal, left parietal, right dentary with 15 teeth, two cervical, six dorsal, and 12 caudal vertebrae, two chevrons, cervical and dorsal ribs, humerus, radius, two metacarpals, femur, tibia, two metatarsals."
@@ -37001,7 +37021,7 @@ genera:
             - -68.700836
         type_specimen:
           specimen_id:
-            - MPCA 245
+            - MPCA-PV 245
           specimen_type: holotype
           institution: Museo provincial de Cipolletti "Carlos Ameghino"
           material: Near-complete, articulated, adult skeleton.
@@ -39763,7 +39783,7 @@ genera:
           locality: Iguidi, west of In Abangharit
         type_specimen:
           specimen_id:
-            - MNN IGU2
+            - MNBH IGU2
           specimen_type: holotype
           institution: Musée National Boubou Hama
           material: Left maxilla, missing most of the ascending ramus and the posterior end of the main body, and all erupted teeth.
@@ -39794,7 +39814,7 @@ genera:
         issue: "4"
         pages: 902-916
         doi: 10.1671/0272-4634(2007)27[902:ANSOCD]2.0.CO;2
-        notes: Erects Carcharodontosaurus iguidensis on maxilla MNN IGU2 from the Cenomanian Echkar Formation of Niger, and revises the genus.
+        notes: Erects Carcharodontosaurus iguidensis on maxilla MNBH IGU2 from the Cenomanian Echkar Formation of Niger, and revises the genus.
       - id: jones2026c
         authors: Jones, B.; Viola, E.
         year: 2026
@@ -40199,7 +40219,7 @@ genera:
             - -69.184166
         type_specimen:
           specimen_id:
-            - MPCA-232
+            - MPCA-PV 232
           specimen_type: holotype
           institution: Museo provincial de Cipolletti "Carlos Ameghino"
           material: Posterior cervical vertebra, dorsal vertebra, anterior caudal, mid caudal vertebra, left scapula, left ilium, right femur; poorly preserved dorsal vertebra, humerus, and metatarsal also collected.
@@ -41867,7 +41887,7 @@ genera:
             max: 10000
         type_specimen:
           specimen_id:
-            - NHMUK R3078
+            - NHMUK PV R 3078
           specimen_type: holotype
           institution: Natural History Museum
           material: "A partial skeleton: fragmentary dorsals and sacrals, a long caudal series with chevrons (the diplodocid-like tail), the right scapulocoracoid and forelimb, both ilia, and the left hind limb."
@@ -41878,7 +41898,7 @@ genera:
         described: 1980
     notable_specimens:
       - specimen_id:
-          - NHMUK PV R1967
+          - NHMUK PV R 1967
         institution: Natural History Museum
         category: pathology
         significance: A distal caudal tail tip from a different individual, once referred to Cetiosauriscus. Across ten biconvex vertebrae it shows injury at two points, with breakage that later healed, identified as the same form of pathology seen in the tail of Diplodocus.
@@ -42331,7 +42351,7 @@ genera:
             - -68.617775
         type_specimen:
           specimen_id:
-            - MPCA Pv 816
+            - MPCA-PV 816
           specimen_type: holotype
           institution: Museo provincial de Cipolletti "Carlos Ameghino"
           material: "Incomplete postcranial skeleton: posterior dorsal neural arch and centrum, a partial sacrum, several caudal vertebrae, partial left femur, right tibia and left fibula, calcaneus, and pedal phalanges."
@@ -45422,7 +45442,7 @@ genera:
             - -68.617775
         type_specimen:
           specimen_id:
-            - MPCA PV 820
+            - MPCA-PV 820
           specimen_type: holotype
           institution: Museo provincial de Cipolletti "Carlos Ameghino"
           material: Complete left humerus, left radius lacking proximal end, left complete metacarpal II, left ischium, left femur with eroded proximal end, left fibular shaft, incomplete proximal end of right tibia, and distal end of indeterminate metapodial.
@@ -50169,7 +50189,7 @@ genera:
             - -1.785
         type_specimen:
           specimen_id:
-            - NHMUK OR 46013
+            - NHMUK PV OR 46013
           specimen_type: holotype
           institution: Natural History Museum
           material: "Partial skeleton of a single individual: vertebral column, pelvis, right femur, a left fore limb (humerus, radius, ulna, carpus, metacarpals, phalanges), a tibia, and one dermal spine"
@@ -52768,7 +52788,65 @@ genera:
             - -3.3976
         type_specimen:
           specimen_id:
+            - MDS-RVII,2
+            - MDS-RVII,3
+            - MDS-RVII,4
+            - MDS-RVII,9
+            - MDS-RVII,10
+            - MDS-RVII,11
+            - MDS-RVII,12
+            - MDS-RVII,14
+            - MDS-RVII,15
             - MDS-RVII,16
+            - MDS-RVII,18
+            - MDS-RVII,19
+            - MDS-RVII,23
+            - MDS-RVII,99
+            - MDS-RVII,101
+            - MDS-RVII,216
+            - MDS-RVII,217
+            - MDS-RVII,218
+            - MDS-RVII,231
+            - MDS-RVII,232
+            - MDS-RVII,242
+            - MDS-RVII,275
+            - MDS-RVII,301
+            - MDS-RVII,332
+            - MDS-RVII,340
+            - MDS-RVII,364
+            - MDS-RVII,365
+            - MDS-RVII,368
+            - MDS-RVII,379
+            - MDS-RVII,382
+            - MDS-RVII,436
+            - MDS-RVII,437
+            - MDS-RVII,438
+            - MDS-RVII,440
+            - MDS-RVII,441
+            - MDS-RVII,443
+            - MDS-RVII,458
+            - MDS-RVII,466
+            - MDS-RVII,470
+            - MDS-RVII,587
+            - MDS-RVII,589
+            - MDS-RVII,590
+            - MDS-RVII,591
+            - MDS-RVII,592
+            - MDS-RVII,594
+            - MDS-RVII,600
+            - MDS-RVII,602
+            - MDS-RVII,605
+            - MDS-RVII,606
+            - MDS-RVII,609
+            - MDS-RVII,610
+            - MDS-RVII,611
+            - MDS-RVII,629
+            - MDS-RVII,796
+            - MDS-RVII,797
+            - MDS-RVII,798
+            - MDS-RVII,805
+            - MDS-RVII,806
+            - MDS-RVII,811
           specimen_type: holotype
           institution: Museo de Dinosaurios de Salas de los Infantes
           material: "Partial skeleton: right and left premaxillae, left dentary, six isolated teeth, three cervical vertebrae, five cervical ribs, two dorsal vertebrae, nine dorsal ribs, nineteen caudal vertebrae, nine haemal arches, left and right ischia, left femur"
@@ -55623,9 +55701,10 @@ genera:
         type_specimen:
           specimen_id:
             - MG 3
+            - MG 5787
           specimen_type: holotype
           institution: Museu Geológico do Instituto Geológico e Mineiro
-          material: Partial rib cage with thirteen dorsal vertebrae, associated ribs, and five different types of dermal armor.
+          material: Partial rib cage with twelve dorsal vertebrae and articulated proximal ribs, five different types of dermal armor, and an incomplete autopodium with three metapodials and digits II, III and IV.
           completeness: partial
         size:
           hip_height_m:
@@ -58522,7 +58601,7 @@ genera:
             max: 0.15
         type_specimen:
           specimen_id:
-            - NHMUK 48209
+            - NHMUK PV R 48209
           specimen_type: lectotype
           institution: Natural History Museum
           material: Premaxillae.
@@ -60669,7 +60748,7 @@ genera:
         erected_in: sereno2008a
         type_specimen:
           specimen_id:
-            - MNN GAD2
+            - MNBH GAD2
           specimen_type: holotype
           institution: Musée National Boubou Hama
           material: Postorbital (skull bone behind the orbit)
@@ -61170,7 +61249,7 @@ genera:
             - 101.90889
         type_specimen:
           specimen_id:
-            - CXMVZA 165
+            - CPM 165
           specimen_type: holotype
           institution: Chuxiong Prefectural Museum
           material: Eight dorsal vertebrae, a partial sacrum, a right ilium, a right complete pubis, two incomplete ischia, one complete right tibia, and both femora
@@ -63448,7 +63527,7 @@ genera:
           formation: Wessex
         type_specimen:
           specimen_id:
-            - NHMUK R.2522
+            - NHMUK PV R 2522
           specimen_type: holotype
           institution: Natural History Museum
           material: "Anterior trunk vertebra: neural arch with neurapophyses (~5 in. long, ~5-6 in. tall); prezygapophyses with large oblong articular surfaces; postzygapophyses; composite neural spine with anterior/posterior pillars; horizontal platform extending ~5 in. from neural spine; centrum broken/missing; compact bone with thin plates and immense cancellated spaces."
@@ -64414,7 +64493,7 @@ genera:
             - -0.566268
         type_specimen:
           specimen_id:
-            - AR-1/10
+            - CPT AR-1/10
           specimen_type: holotype
           institution: Museo de la Fundación Conjunto Paleontológico de Teruel-Dinópolis
           material: "Disarticulated partial skeleton: mostly complete skull, isolated nasals, dentary fragment, 15 teeth, atlas, 5 cervical vertebrae, 2 cervical ribs, 8 dorsal vertebrae, synsacrum section, dorsal ribs, 3 caudal vertebrae, 4 chevrons, coracoid, scapular blade fragment, 2 xiphosternal plates, 2 partial humeri, pelvis, 70 osteoderms"
@@ -70251,10 +70330,10 @@ genera:
             - 28.25
         type_specimen:
           specimen_id:
-            - TrM 65
+            - TM 65
           specimen_type: holotype
           institution: Ditsong National Museum of Natural History
-          material: Distal end of a right femur and a single toe bone.
+          material: Distal end of a right femur.
           completeness: fragmentary
         erected_in: vanhoepen1916a
         authors: Van Hoepen, E. C. N.
@@ -74202,8 +74281,8 @@ genera:
             - 0.6
         type_specimen:
           specimen_id:
-            - NHMUK R1868
-            - NHMUK R1870
+            - NHMUK PV R 1868
+            - NHMUK PV R 1870
           specimen_type: holotype
           institution: Natural History Museum
           material: Associated left humerus, ulna, radius, and skin impression from near elbow region
@@ -78439,7 +78518,7 @@ genera:
             - 114.933334
         type_specimen:
           specimen_id:
-            - HGM41HIII-0443
+            - HGM 41HIII-0443
           specimen_type: holotype
           institution: Henan Geological Museum
           material: Partial skeleton with nearly complete skull
@@ -79894,7 +79973,7 @@ genera:
             - -0.172222
         type_specimen:
           specimen_id:
-            - NHMUK R3775
+            - NHMUK PV R 3775
           specimen_type: holotype
           institution: Natural History Museum
           material: "Partial articulated skeleton: poorly preserved skull elements (maxilla, jugal, postorbital, dentary, ?occipital condyle), seven cervical and four dorsal vertebrae, cervical and dorsal ribs, both scapulae and coracoids, and numerous osteoderms."
@@ -79926,7 +80005,7 @@ genera:
         title: Osteology and taxonomy of British Wealden Supergroup (Berriasian-Aptian) ankylosaurs (Ornithischia, Ankylosauria)
         journal: Journal of Vertebrate Paleontology
         doi: 10.1080/02724634.2020.1826956
-        notes: Redescribes the Hylaeosaurus holotype NHMUK R3775, restricts the hypodigm to the holotype, revises the diagnosis, and confirms it as a valid Valanginian taxon.
+        notes: Redescribes the Hylaeosaurus holotype NHMUK PV R 3775, restricts the hypodigm to the holotype, revises the diagnosis, and confirms it as a valid Valanginian taxon.
       - id: jones2026a
         authors: Jones, B.; Viola, E.
         year: 2026
@@ -80361,7 +80440,7 @@ genera:
             - -0.560833
         type_specimen:
           specimen_id:
-            - NHMUK R1635
+            - NHMUK PV R 1635
           specimen_type: holotype
           institution: Natural History Museum
           material: Ilium and associated elements comprising posterior sacrum, anterior caudal centrum
@@ -84763,7 +84842,7 @@ genera:
             - -68.700836
         type_specimen:
           specimen_id:
-            - MPCA-Pv-630
+            - MPCA-PV 630
           specimen_type: holotype
           institution: Museo provincial de Cipolletti "Carlos Ameghino"
           material: Partial skeleton of subadult individual preserving cranial fragments (premaxilla, maxilla, basisphenoid), ~15 teeth, nearly complete left lower jaw plus isolated surangular, 12 vertebral elements, dorsal rib and 15 rib fragments, partial coracoid, nearly complete left scapula, partial right scapula, two partial humeri, possible partial ulna, metacarpals, three ischial and two femoral fragments, distal tibia, proximal fibula, pedal phalanges, and 40+ osteoderms.
@@ -86235,7 +86314,7 @@ genera:
             max: 0.15
         type_specimen:
           specimen_id:
-            - HGM41-HIII0421
+            - HGM 41HIII-0421
           specimen_type: holotype
           institution: Henan Geological Museum
           material: Incomplete skeleton with partial skull including lower jaw, eight cervical, three dorsal and nine caudal vertebrae, two chevrons, nearly complete pectoral girdle and left forelimb, both sternal plates, and sternal and dorsal ribs.
@@ -87721,7 +87800,7 @@ genera:
             - 7.165
         type_specimen:
           specimen_id:
-            - MNN TIG3
+            - MNBH TIG3
           specimen_type: holotype
           institution: Musée National Boubou Hama
           material: Partial articulated skeleton including axis, forelimbs and hind limbs, pubes, and most of tail.
@@ -92059,7 +92138,7 @@ genera:
         erected_in: sereno2008a
         type_specimen:
           specimen_id:
-            - MNN GAD1
+            - MNBH GAD1
           specimen_type: holotype
           institution: Musée National Boubou Hama
           material: Partial maxilla and initially associated postcranial elements; postcranials now regarded as allosauroid.
@@ -92931,7 +93010,13 @@ genera:
           institution: Instituto de Geología, Universidad Nacional Autónoma de México
           material: Incomplete right quadrate, complete left frontal, ventral portion of left maxilla, dentary fragment, proximal portions of both ischia, central shaft of right pubis, chevron, incomplete second right metatarsal, pedal phalanx, and several loose teeth.
           completeness: fragmentary
-          notes: Originally catalogued LACM 20877 (Molnar 1974); later reposited to the Instituto de Geología, UNAM, and renumbered IGM 5307.
+          former_ids:
+            - from_id: LACM 20877
+              to_id: IGM 5307
+              from_institution: Natural History Museum of Los Angeles County
+              to_institution: Instituto de Geología, Universidad Nacional Autónoma de México
+              reason: rehoused
+              notes: Repatriated to Mexico. molnar1974a figures the quadrate as LACM 20877; no source read so far dates the transfer.
         size:
           length_m:
             min: 6.3
@@ -95644,9 +95729,9 @@ genera:
             - 27.25
         type_specimen:
           specimen_id:
-            - NHMUK PV RU B17
-            - NHMUK PV RU B23
-            - NHMUK PV R11956
+            - NHMUK PV RU B 17
+            - NHMUK PV RU B 23
+            - NHMUK PV R 11956
           specimen_type: syntype
           institution: Natural History Museum
           material: Syntype assemblage from at least two individuals — mostly disarticulated remains including one articulated skull (with stapes, ceratohyals, and anterior cervical vertebrae), additional postcranial material, and a separate partial skull.
@@ -99042,7 +99127,7 @@ genera:
             - -0.241701
         type_specimen:
           specimen_id:
-            - NHMUK R3167
+            - NHMUK PV R 3167
           specimen_type: holotype
           institution: Natural History Museum
           material: Partial skeleton including two cervical vertebrae, six dorsal vertebrae, 16 caudal vertebrae, right humerus, right ulna, carpus, two metacarpals, partial ilia, partial right ischium and pubis, left femur, left partial tibia and partial fibula with fused tarsals, and dermal armor
@@ -100587,7 +100672,7 @@ genera:
         described: 1924
     notable_specimens:
       - specimen_id:
-          - NHMUK RU A100
+          - NHMUK PV RU A 100
         institution: Natural History Museum
         species: Lycorhinus angustidens
         category: complementary
@@ -103797,7 +103882,7 @@ genera:
             - -1.352
         type_specimen:
           specimen_id:
-            - NHMUK R5764
+            - NHMUK PV R 5764
           specimen_type: holotype
           institution: Natural History Museum
           material: Mostly complete (~80%) skeleton with much of the skull, cervical to caudal vertebrae with ribs and chevrons, scapula, coracoid, sternals, forelimbs, ilia, partial pubes and ischia, hindlimbs, and pedes.
@@ -103822,7 +103907,7 @@ genera:
     notable_specimens:
       - nickname: Maidstone specimen
         specimen_id:
-          - NHMUK 3741
+          - NHMUK PV R 3741
         institution: Natural History Museum
         category: historic
         significance: Found in a Maidstone quarry in February 1834 and acquired by Gideon Mantell, who identified it as Iguanodon from its teeth. It was used in the first skeletal reconstructions and artistic renderings of Iguanodon, later excluded from Iguanodon and referred to Mantellisaurus.
@@ -103850,7 +103935,7 @@ genera:
         issue: "665"
         pages: 1-63
         doi: 10.1080/02693445.2023.2234156
-        notes: Detailed osteological monograph of the holotype NHMUK R5764 with an emended three-character diagnosis; finds prior Paul and Norman diagnoses non-autapomorphic.
+        notes: Detailed osteological monograph of the holotype NHMUK PV R 5764 with an emended three-character diagnosis; finds prior Paul and Norman diagnoses non-autapomorphic.
       - id: jones2026a
         authors: Jones, B.; Viola, E.
         year: 2026
@@ -104167,7 +104252,7 @@ genera:
           formation: Forest Marble
         type_specimen:
           specimen_id:
-            - NHMUK R.22428
+            - NHMUK PV R 22428
           specimen_type: holotype
           institution: Natural History Museum
           material: Dorso-lumbar vertebral centrum; figured in Plate VI.
@@ -115103,7 +115188,7 @@ genera:
             - 9.133333
         type_specimen:
           specimen_id:
-            - MNN GAD512
+            - MNBH GAD512
           specimen_type: holotype
           institution: Musée National Boubou Hama
           material: Partial articulated skeleton including partial skull, neck, scapula, forelimbs, and hind limbs
@@ -119641,7 +119726,7 @@ genera:
     synonyms:
       - name: Bothriospondylus magnus
         type: junior objective
-        reason: Owen (1874) coined Bothriospondylus magnus on the subjects of his Plates VIII and IX, which Owen himself identified as among the specimens (Plates VII-IX) Seeley (1870) had previously used to erect Ornithopsis hulkei. Blows (1995) treats NHMUK 28632 as the lectotype of O. hulkei from that same syntype series, making B. magnus a junior objective synonym based on the shared physical specimen.
+        reason: Owen (1874) coined Bothriospondylus magnus on the subjects of his Plates VIII and IX, which Owen himself identified as among the specimens (Plates VII-IX) Seeley (1870) had previously used to erect Ornithopsis hulkei. Blows (1995) treats NHMUK PV R 28632 as the lectotype of O. hulkei from that same syntype series, making B. magnus a junior objective synonym based on the shared physical specimen.
     diagnostic_features:
       - Enormous pneumatic foramina 3-4 inches long, approximating pterodactyl size rather than avian
       - Vertically ovate posterior articular surface, well cupped and concave in lateral view
@@ -119693,7 +119778,7 @@ genera:
             max: 18
         type_specimen:
           specimen_id:
-            - NHMUK 28632
+            - NHMUK PV R 28632
           specimen_type: lectotype
           institution: Natural History Museum
           material: A dorsal vertebral centrum from the Wealden of the Isle of Wight.
@@ -119744,7 +119829,7 @@ genera:
         volume: "38"
         issue: "1"
         pages: 187-197
-        notes: Treats NHMUK 28632 as the lectotype and excludes the Sussex vertebra NHMUK 2239 from the syntype series.
+        notes: Treats NHMUK PV R 28632 as the lectotype and excludes the Sussex vertebra NHMUK PV R 2239 from the syntype series.
     taxonomy:
       - Life
       - Animalia
@@ -119940,7 +120025,7 @@ genera:
         erected_in: huxley1867b
         type_specimen:
           specimen_id:
-            - NHMUK R1626
+            - NHMUK PV R 1626
           specimen_type: holotype
           institution: Natural History Museum
           material: Vertebrae
@@ -120118,7 +120203,7 @@ genera:
           formation: Maastricht Formation
         type_specimen:
           specimen_id:
-            - NHMUK R 42955
+            - NHMUK PV R 42955
           specimen_type: lectotype
           institution: Natural History Museum
           material: Right femur (~500 mm proximodistal length).
@@ -120166,7 +120251,7 @@ genera:
         volume: "108"
         pages: "104334"
         doi: 10.1016/j.cretres.2019.104334
-        notes: Designates NHMUK R 42955 (right femur) as lectotype of Orthomerus dolloi; treats the taxon as nomen dubium and recovers it as basal Hadrosauroidea, outside Hadrosauridae.
+        notes: Designates NHMUK PV R 42955 (right femur) as lectotype of Orthomerus dolloi; treats the taxon as nomen dubium and recovers it as basal Hadrosauroidea, outside Hadrosauridae.
       - id: abel1919a
         authors: Abel, O.
         year: 1919
@@ -120745,7 +120830,7 @@ genera:
             max: 30
         type_specimen:
           specimen_id:
-            - MPCA-Pv 805
+            - MPCA-PV 805
           specimen_type: holotype
           institution: Museo provincial de Cipolletti "Carlos Ameghino"
           material: Four caudal vertebrae, two hemal arches, right scapula, right ulna, right hand elements, ilium fragment, incomplete left pubis, right and left metatarsals II and III, and left foot elements
@@ -124656,7 +124741,7 @@ genera:
             max: 2
         type_specimen:
           specimen_id:
-            - MPCA-SM-78
+            - MPCA-SM 78
           specimen_type: holotype
           institution: Museo provincial de Cipolletti "Carlos Ameghino"
           material: A cervical half-ring element comprising fused lateral and distal osteoderms
@@ -125719,7 +125804,7 @@ genera:
             - -1.880849
         type_specimen:
           specimen_id:
-            - LH 7777
+            - MCCM-LH 7777
           specimen_type: holotype
           institution: Coleccions de la Conselleria de Cultura de Morella
           material: Articulated anterior half of skeleton, including skull, complete cervical and almost complete dorsal vertebral series, ribs, pectoral girdle, sternum, right forelimb and nearly complete left forelimb.
@@ -125835,7 +125920,7 @@ genera:
             max: 50000
         type_specimen:
           specimen_id:
-            - MPCA 1500
+            - MPCA-PV 1500
           specimen_type: holotype
           institution: Museo provincial de Cipolletti "Carlos Ameghino"
           material: Four dorsal vertebral centra, twenty-six incomplete caudal vertebrae, and an incomplete right femur
@@ -125953,13 +126038,13 @@ genera:
             max: 24
         type_specimen:
           specimen_id:
-            - NHMUK R2544
-            - NHMUK R2545
-            - NHMUK R2546
-            - NHMUK R2547
-            - NHMUK R2548
-            - NHMUK R2549
-            - NHMUK R2550
+            - NHMUK PV R 2544
+            - NHMUK PV R 2545
+            - NHMUK PV R 2546
+            - NHMUK PV R 2547
+            - NHMUK PV R 2548
+            - NHMUK PV R 2549
+            - NHMUK PV R 2550
           specimen_type: syntype
           institution: Natural History Museum
           material: Four proximal caudal vertebrae (R2544-R2547) and three chevrons (R2548-R2550) from Cuckfield; the Isle of Wight material originally included by Owen was subsequently shown to be iguanodontian and removed.
@@ -126696,7 +126781,7 @@ genera:
         erected_in: díaz2025a
         type_specimen:
           specimen_id:
-            - NHMUK R.3853
+            - NHMUK PV R 3853
           specimen_type: lectotype
           institution: Natural History Museum
           material: "Left fibula (paralectotype: left tibia, same number)"
@@ -129555,7 +129640,7 @@ genera:
             - -0.2
         type_specimen:
           specimen_id:
-            - NHMUK 2584
+            - NHMUK PV R 2584
           specimen_type: holotype
           institution: Natural History Museum
         erected_in: nopcsa1928a
@@ -129569,7 +129654,7 @@ genera:
         journal: Proceedings of the Geological Society of London
         volume: "1"
         pages: 410-411
-        notes: First referred the holotype specimen (NHMUK 2584) to Hylaeosaurus; Nopcsa (1928) later made it the type of Polacanthoides.
+        notes: First referred the holotype specimen (NHMUK PV R 2584) to Hylaeosaurus; Nopcsa (1928) later made it the type of Polacanthoides.
       - id: nopcsa1928a
         authors: Nopcsa, B. F.
         year: 1928
@@ -135518,7 +135603,7 @@ genera:
             - -67.294998
         type_specimen:
           specimen_id:
-            - MPCA-Pv-100
+            - MPCA-PV 100
           specimen_type: holotype
           institution: Museo provincial de Cipolletti "Carlos Ameghino"
           material: Distal right femur and complete right tibia
@@ -137350,7 +137435,7 @@ genera:
             - MPLM 30
           specimen_type: lectotype
           institution: Muséum d'histoire naturelle de Marseille
-          material: Fragments of right and left lower jaw, a lumbar vertebra, a sacrum fragment (two fused vertebrae), mid-tail and posterior caudal vertebrae, right humerus, upper half of right femur, and lower portion of right tibia
+          material: Partial left dentary missing the anterior portion
           completeness: partial
         size:
           length_m:
@@ -137824,7 +137909,7 @@ genera:
             - 33.861565
         type_specimen:
           specimen_id:
-            - TsNIGR Museum 5751
+            - CCMGE 5751
           specimen_type: holotype
           institution: F.N. Chernyshev Central Museum of Geological Exploration
           material: Fragmentary left hind limb comprising the distal femur, tibia, astragalus, calcaneus, second and third metatarsals, and proximal phalanx of the second digit, plus the proximal end of a right fibula
@@ -138758,7 +138843,7 @@ genera:
             - -67.534164
         type_specimen:
           specimen_id:
-            - MPCA-Pv 46
+            - MPCA-PV 46
           specimen_type: holotype
           institution: Museo provincial de Cipolletti "Carlos Ameghino"
           material: Cervical centrum and neural arch, two dorsal centra, three dorsal neural arches, two sacral neural arches, middle caudal and middle-posterior caudal vertebrae, two ischia, left pubis, left ilium, fragment of right ilium, left femur
@@ -139077,7 +139162,7 @@ genera:
             - 5.616667
         type_specimen:
           specimen_id:
-            - MNN IGU1
+            - MNBH IGU1
           specimen_type: holotype
           institution: Musée National Boubou Hama
           material: Partial cranium lacking the posterolateral portions of the skull roof and palate
@@ -140586,7 +140671,7 @@ genera:
         synonyms:
           - name: Sarcosaurus andrewsi
             type: junior subjective
-            reason: Erected by von Huene (1932) on NHMUK R3542, a right tibia; Ezcurra et al. (2020) regarded it as a subjective junior synonym of Sarcosaurus woodi.
+            reason: Erected by von Huene (1932) on NHMUK PV R 3542, a right tibia; Ezcurra et al. (2020) regarded it as a subjective junior synonym of Sarcosaurus woodi.
         authors: Andrews, C. W.
         described: 1921
     references:
@@ -142023,6 +142108,13 @@ genera:
           institution: Royal Tyrrell Museum of Paleontology
           material: Associated remains of incomplete skeleton including both frontals, left ectopterygoid, left quadrate, two teeth, two vertebrae, gastralia, rib fragments, metacarpal, phalanges and unguals of left manus.
           completeness: fragmentary
+          former_ids:
+            - from_id: PMAA P74.10.5
+              to_id: TMP 1974.010.0005
+              from_institution: Provincial Museum and Archives of Alberta
+              to_institution: Royal Tyrrell Museum of Paleontology
+              reason: rehoused
+              notes: sues1978a gives the holotype as PMAA P74.10.5; the material later moved to the Royal Tyrrell Museum. No source read so far dates the transfer.
         size:
           length_m:
             min: 1.3
@@ -142415,7 +142507,7 @@ genera:
       - type: type-specimen
         ruling: iczn1994a
         petition: charig1992a
-        notes: Opinion 1788 set aside the inappropriate lectotype (an indeterminate theropod knee joint) and designated NHMUK R.1111, the skull and skeleton, as the replacement lectotype of Scelidosaurus harrisonii.
+        notes: Opinion 1788 set aside the inappropriate lectotype (an indeterminate theropod knee joint) and designated NHMUK PV R 1111, the skull and skeleton, as the replacement lectotype of Scelidosaurus harrisonii.
     species:
       - name: Scelidosaurus harrisonii
         etymology: Named for James Harrison, the quarry owner of Charmouth, Dorset, who discovered and collected the first specimens and donated them to Professor Richard Owen.
@@ -142448,7 +142540,7 @@ genera:
             max: 270
         type_specimen:
           specimen_id:
-            - NHMUK R.1111
+            - NHMUK PV R 1111
           specimen_type: lectotype
           institution: Natural History Museum
           material: A nearly complete skull with an associated, largely articulated postcranial skeleton.
@@ -142523,7 +142615,7 @@ genera:
         issue: "1"
         pages: 1-81
         doi: 10.1093/zoolinnean/zlz074
-        notes: Modern redescription of the lectotype (NHMUK R.1111); source of the holotype material account.
+        notes: Modern redescription of the lectotype (NHMUK PV R 1111); source of the holotype material account.
       - id: jones2026a
         authors: Jones, B.; Viola, E.
         year: 2026
@@ -143013,7 +143105,7 @@ genera:
             max: 2200
         type_specimen:
           specimen_id:
-            - NHMUK PV R.5161
+            - NHMUK PV R 5161
           specimen_type: holotype
           institution: Natural History Museum
           material: Nearly complete postcranial skeleton with dermal armor in situ; skull, part of the tail, and right-side extremities absent
@@ -150533,7 +150625,7 @@ genera:
         erected_in: maidment2021a
         type_specimen:
           specimen_id:
-            - NHMUK PV R37412
+            - NHMUK PV R 37412
           specimen_type: holotype
           institution: Natural History Museum
           material: Partial dorsal rib bearing four co-ossified spines, fused osteoderm on dorsal surface
@@ -151072,7 +151164,7 @@ genera:
     parent: Ceratosauria
     dispute:
       summary: |
-        The ceratosaurian affinities of Spinostropheus rest on the referred specimen MNN TIG6; Rauhut and Carrano (2016) argued that the type material of S. gautieri lacks ceratosaurian synapomorphies and may represent a basal tetanuran, and Hendrickx and colleagues (2024) likewise excluded the type from their analyses.
+        The ceratosaurian affinities of Spinostropheus rest on the referred specimen MNBH TIG6; Rauhut and Carrano (2016) argued that the type material of S. gautieri lacks ceratosaurian synapomorphies and may represent a basal tetanuran, and Hendrickx and colleagues (2024) likewise excluded the type from their analyses.
       history:
         - date: 2026-06-30
           note: |
@@ -151793,7 +151885,7 @@ genera:
     notable_specimens:
       - nickname: Sophie
         specimen_id:
-          - NHMUK PV R36730
+          - NHMUK PV R 36730
         institution: Natural History Museum
         species: Stegosaurus stenops
         category: most-complete
@@ -152479,6 +152571,13 @@ genera:
           institution: Utah Museum of Natural History
           material: Left ilium (220mm long, 11cm deep).
           completeness: fragmentary
+          former_ids:
+            - from_id: UUVP 2938
+              to_id: UMNH VP 7473
+              from_institution: University of Utah Vertebrate Paleontology Collection
+              to_institution: Utah Museum of Natural History
+              reason: rehoused
+              notes: madsen1974a gives the type as "Left ilium, UUVP 2938"; the University of Utah collection was later transferred to the museum. No source read so far dates the transfer.
         erected_in: madsen1974a
         authors: Madsen, J. H.
         described: 1974
@@ -153272,7 +153371,7 @@ genera:
         erected_in: sereno1998b
         type_specimen:
           specimen_id:
-            - MNN GDF500
+            - MNBH GDF500
           specimen_type: holotype
           institution: Musée National Boubou Hama
           material: Partial skeleton lacking the skull
@@ -153365,7 +153464,7 @@ genera:
             - -0.172222
         type_specimen:
           specimen_id:
-            - NHMUK R36536
+            - NHMUK PV R 36536
           specimen_type: holotype
           institution: Natural History Museum
           material: A single tooth; laterally compressed crown with two trenchant edges and longitudinal parallel ridges.
@@ -153394,7 +153493,7 @@ genera:
         volume: "2827"
         pages: 54-68
         doi: 10.11646/zootaxa.2827.1.3
-        notes: Declares Suchosaurus cultridens a nomen dubium — NHMUK R36536 lacks autapomorphies distinguishing it from other baryonychines and rejects Milner's (2003) Baryonyx senior-synonymy proposal.
+        notes: Declares Suchosaurus cultridens a nomen dubium — NHMUK PV R 36536 lacks autapomorphies distinguishing it from other baryonychines and rejects Milner's (2003) Baryonyx senior-synonymy proposal.
       - id: carrano2012a
         authors: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D.
         year: 2012
@@ -156766,7 +156865,7 @@ genera:
     parent: Carcharodontosaurinae
     dispute:
       summary: |
-        Taurovenator violantei is recovered among the giganotosaurine carcharodontosaurids (Aranciaga Rolando et al., 2024), but its validity is disputed: Coria and Currie (2020) considered it a junior synonym of Mapusaurus, while a redescription based on new material (MPCA-Pv 803) defended it as distinct, and other analyses recover it only as an unstable wildcard within Carcharodontosauridae (Cau and Paterna, 2025).
+        Taurovenator violantei is recovered among the giganotosaurine carcharodontosaurids (Aranciaga Rolando et al., 2024), but its validity is disputed: Coria and Currie (2020) considered it a junior synonym of Mapusaurus, while a redescription based on new material (MPCA-PV 803) defended it as distinct, and other analyses recover it only as an unstable wildcard within Carcharodontosauridae (Cau and Paterna, 2025).
       history:
         - date: 2026-07-01
           note: Placed at Carcharodontosaurinae following Aranciaga Rolando et al. (2024); the Mapusaurus synonymy and its phylogenetic instability remain unresolved.
@@ -156820,7 +156919,7 @@ genera:
             - -68.617775
         type_specimen:
           specimen_id:
-            - MPCA-Pv 802
+            - MPCA-PV 802
           specimen_type: holotype
           institution: Museo provincial de Cipolletti "Carlos Ameghino"
           material: Isolated right postorbital with robust postorbital more transversely thicker than other carcharodontosaurids.
@@ -156837,7 +156936,7 @@ genera:
         described: 2016
     notable_specimens:
       - specimen_id:
-          - MPCA-Pv 803
+          - MPCA-PV 803
         institution: Museo provincial de Cipolletti "Carlos Ameghino"
         species: Taurovenator violantei
         category: complementary
@@ -157119,9 +157218,9 @@ genera:
         erected_in: allain2004a
         type_specimen:
           specimen_id:
-            - To 2000-1
+            - SGM To 2000-1
           specimen_type: holotype
-          institution: Tazouda Dinosaur Museum
+          institution: Service Géologique du Maroc, Ministére de l’Energie et des Mines
           material: "Partially articulated skeleton with cranial material: complete left mandible, quadrate, jugal, postorbital, parietal, frontal and exoccipital; ~9 m long."
           completeness: partial
         authors: Allain, R.; Aquesbi, N.; Dejax, J.; Meyer, C.; Monbaron, M.; Montenat, C.; Richir, P.; Rochdy, M.; Russell, D.; Taquet, P.
@@ -159109,7 +159208,7 @@ genera:
           formation: Wessex
         type_specimen:
           specimen_id:
-            - NHMUK PV R181
+            - NHMUK PV R 181
           specimen_type: holotype
           institution: Natural History Museum
           material: Partial cervical vertebra.
@@ -160034,7 +160133,7 @@ genera:
         erected_in: zafaty2024a
         type_specimen:
           specimen_id:
-            - HIIUC-BN00
+            - HIIUC BN00
           specimen_type: holotype
           institution: Hassan II University of Casablanca
           material: Partial postcranial skeleton including 9 dorsal vertebrae, 21 dorsal ribs, and 6 dermal elements
@@ -162905,7 +163004,7 @@ genera:
         erected_in: cerroni2020a
         type_specimen:
           specimen_id:
-            - MPCA-Pv 815
+            - MPCA-PV 815
           specimen_type: holotype
           institution: Museo provincial de Cipolletti "Carlos Ameghino"
           material: Incomplete skeleton of an abelisaurid
@@ -168124,8 +168223,8 @@ genera:
             - -1.404167
         type_specimen:
           specimen_id:
-            - NHMUK R185
-            - NHMUK R186
+            - NHMUK PV R 185
+            - NHMUK PV R 186
           specimen_type: syntype
           institution: Natural History Museum
         size:
@@ -171454,7 +171553,7 @@ genera:
     description: Willinakaqe is a dubious genus of saurolophine hadrosaurid dinosaur described based on fossils from the late Cretaceous (late Campanian-early Maastrichtian stage) of the Río Negro Province of southern Argentina.
     dispute:
       summary: |
-        Cruzado-Caballero and Coria (2016) revised Willinakaqe salitralensis and found that the referred material may represent more than one hadrosaurid taxon, that all characters of the original diagnosis are invalid, and that the holotype right premaxilla (MPCA-Pv SM 8) is itself too weathered and incomplete to support a diagnosis. They termed the species a nomen vanum; because the holotype is simply undiagnostic rather than a chimera, it is treated here as a nomen dubium.
+        Cruzado-Caballero and Coria (2016) revised Willinakaqe salitralensis and found that the referred material may represent more than one hadrosaurid taxon, that all characters of the original diagnosis are invalid, and that the holotype right premaxilla (MPCA-PV SM 8) is itself too weathered and incomplete to support a diagnosis. They termed the species a nomen vanum; because the holotype is simply undiagnostic rather than a chimera, it is treated here as a nomen dubium.
       history:
         - date: 2026-06-27
           note: Placed at Hadrosauridae incertae sedis; nomen vanum/dubium.
@@ -171493,7 +171592,7 @@ genera:
           formation: Allen
         type_specimen:
           specimen_id:
-            - MPCA-Pv SM 8
+            - MPCA-PV SM 8
           specimen_type: holotype
           institution: Museo provincial de Cipolletti "Carlos Ameghino"
           material: Right premaxilla; too weathered and incomplete to be diagnostic
@@ -177323,11 +177422,18 @@ genera:
             max: 4
         type_specimen:
           specimen_id:
-            - IVPP V20
+            - NGMJ 004546
           specimen_type: holotype
-          institution: Institute of Vertebrate Paleontology and Paleoanthropology
+          institution: Nanjing Geological Museum
           material: Skull, lower jaw pair and partly preserved skeletons
           completeness: partial
+          former_ids:
+            - from_id: IVPP V 20
+              to_id: NGMJ 004546
+              from_institution: Institute of Vertebrate Paleontology and Paleoanthropology
+              to_institution: Nanjing Geological Museum
+              reason: rehoused
+              notes: The date of the move is not recorded in any source read so far, and both numbers remain in use; zhang2024a cites the specimen as "IVPP V 20/NJGM 004546".
         erected_in: young1940a
         authors: Young, C.-C.
         described: 1940
