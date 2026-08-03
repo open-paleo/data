@@ -101,6 +101,24 @@
         "described_in": { "type": "string", "description": "Reference id of the authoritative descriptive source; falls back to erected_in." }
       }
     },
+    "former_id_reasons": {
+      "type": "string",
+      "enum": ["renumbered", "rehoused"]
+    },
+    "formerId": {
+      "type": "object",
+      "required": ["from_id", "to_id", "reason"],
+      "description": "One step in a specimen's identifier history. A specimen that moved twice is recorded as two entries (A to B, then B to C), so neither end is called \"current\". Prefix changes caused by an institution being recoded (BMNH to NHMUK) are NOT recorded here; those resolve through the append-only aliases in institutions.yaml.",
+      "properties": {
+        "from_id": { "type": "string", "description": "The catalogue number before the change." },
+        "to_id": { "type": "string", "description": "The catalogue number after the change." },
+        "from_institution": { "type": "string", "description": "Resolved display name of the institution before the change. Present only when reason is 'rehoused'." },
+        "to_institution": { "type": "string", "description": "Resolved display name of the institution after the change. Present only when reason is 'rehoused'." },
+        "reason": { "$ref": "#/$defs/former_id_reasons" },
+        "source": { "type": "string", "description": "Reference id of the work documenting the change -- not the works that merely used the old number. Absent when no publication documents it." },
+        "notes": { "type": "string", "description": "Why the change happened, when that is itself of interest." }
+      }
+    },
     "typeSpecimen": {
       "type": "object",
       "description": "Type-specimen block: the holotype, or a syntype/lectotype/neotype series (see specimen_type).",
@@ -111,6 +129,7 @@
         "material": { "type": "string" },
         "status": { "$ref": "#/$defs/holotype_status" },
         "completeness": { "$ref": "#/$defs/completeness" },
+        "former_ids": { "type": "array", "items": { "$ref": "#/$defs/formerId" }, "description": "Identifier history: numbers this specimen was catalogued under before its current one." },
         "notes": { "type": "string" }
       }
     },
@@ -132,6 +151,7 @@
             "by": { "type": "string" }
           }
         },
+        "former_ids": { "type": "array", "items": { "$ref": "#/$defs/formerId" }, "description": "Identifier history: numbers this specimen was catalogued under before its current one." },
         "references": { "type": "array", "items": { "type": "string" }, "description": "Reference ids resolving within this genus's references." }
       }
     },

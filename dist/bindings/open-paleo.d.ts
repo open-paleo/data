@@ -89,6 +89,7 @@ export type Status = "valid" | "nomen dubium" | "nomen nudum" | "disputed";
 export type Completeness = "complete" | "partial" | "fragmentary";
 export type SpecimenTypes = "holotype" | "syntype" | "lectotype" | "neotype" | "unknown";
 export type HolotypeStatus = "destroyed" | "lost" | "uncatalogued" | "unknown";
+export type FormerIdReasons = "renumbered" | "rehoused";
 export type Periods =
   | "Late Triassic"
   | "Middle Triassic"
@@ -366,6 +367,41 @@ export interface TypeSpecimen {
   material?: string;
   status?: HolotypeStatus;
   completeness?: Completeness;
+  /**
+   * Identifier history: numbers this specimen was catalogued under before its current one.
+   */
+  former_ids?: FormerId[];
+  notes?: string;
+  [k: string]: unknown;
+}
+/**
+ * One step in a specimen's identifier history. A specimen that moved twice is recorded as two entries (A to B, then B to C), so neither end is called "current". Prefix changes caused by an institution being recoded (BMNH to NHMUK) are NOT recorded here; those resolve through the append-only aliases in institutions.yaml.
+ */
+export interface FormerId {
+  /**
+   * The catalogue number before the change.
+   */
+  from_id: string;
+  /**
+   * The catalogue number after the change.
+   */
+  to_id: string;
+  /**
+   * Resolved display name of the institution before the change. Present only when reason is 'rehoused'.
+   */
+  from_institution?: string;
+  /**
+   * Resolved display name of the institution after the change. Present only when reason is 'rehoused'.
+   */
+  to_institution?: string;
+  reason: FormerIdReasons;
+  /**
+   * Reference id of the work documenting the change -- not the works that merely used the old number. Absent when no publication documents it.
+   */
+  source?: string;
+  /**
+   * Why the change happened, when that is itself of interest.
+   */
   notes?: string;
   [k: string]: unknown;
 }
@@ -422,6 +458,10 @@ export interface NotableSpecimen {
     by?: string;
     [k: string]: unknown;
   };
+  /**
+   * Identifier history: numbers this specimen was catalogued under before its current one.
+   */
+  former_ids?: FormerId[];
   /**
    * Reference ids resolving within this genus's references.
    */

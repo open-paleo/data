@@ -24,6 +24,32 @@ class Metadata(BaseModel):
     clade_count: conint(ge=0)
 
 
+class FormerIdReasons(Enum):
+    renumbered = 'renumbered'
+    rehoused = 'rehoused'
+
+
+class FormerId(BaseModel):
+    from_id: str = Field(..., description='The catalogue number before the change.')
+    to_id: str = Field(..., description='The catalogue number after the change.')
+    from_institution: Optional[str] = Field(
+        None,
+        description="Resolved display name of the institution before the change. Present only when reason is 'rehoused'.",
+    )
+    to_institution: Optional[str] = Field(
+        None,
+        description="Resolved display name of the institution after the change. Present only when reason is 'rehoused'.",
+    )
+    reason: FormerIdReasons
+    source: Optional[str] = Field(
+        None,
+        description='Reference id of the work documenting the change -- not the works that merely used the old number. Absent when no publication documents it.',
+    )
+    notes: Optional[str] = Field(
+        None, description='Why the change happened, when that is itself of interest.'
+    )
+
+
 class Discovered(BaseModel):
     year: Optional[int] = None
     by: Optional[str] = None
@@ -325,6 +351,10 @@ class TypeSpecimen(BaseModel):
     material: Optional[str] = None
     status: Optional[HolotypeStatus] = None
     completeness: Optional[Completeness] = None
+    former_ids: Optional[List[FormerId]] = Field(
+        None,
+        description='Identifier history: numbers this specimen was catalogued under before its current one.',
+    )
     notes: Optional[str] = None
 
 
@@ -339,6 +369,10 @@ class NotableSpecimen(BaseModel):
     category: Optional[SpecimenCategories] = None
     significance: str
     discovered: Optional[Discovered] = None
+    former_ids: Optional[List[FormerId]] = Field(
+        None,
+        description='Identifier history: numbers this specimen was catalogued under before its current one.',
+    )
     references: Optional[List[str]] = Field(
         None, description="Reference ids resolving within this genus's references."
     )

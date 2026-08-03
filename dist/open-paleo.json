@@ -1,11 +1,11 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-08-02T23:49:42.035Z",
+    "built_at": "2026-08-02T23:59:59.414Z",
     "clade_count": 188,
     "genus_count": 1401,
     "license": "CC-BY-4.0",
-    "schema_version": "1.0.0",
+    "schema_version": "1.1.0",
     "version": "2026.08"
   },
   "tree": {
@@ -81381,7 +81381,15 @@
             "institution": "Paleontological Museum",
             "material": "A partial skull with lower jaws, an articulated presacral column (axis through the 25th presacral) with cervical ribs, a dorsal rib, and the left femur.",
             "completeness": "partial",
-            "notes": "Formerly catalogued as PMU R 233 (exemplar a). The holotype as originally constituted also included exemplar c, whose accession number and whereabouts are unknown, so it cannot be listed."
+            "former_ids": [
+              {
+                "from_id": "PMU R 233",
+                "to_id": "PMU 24705",
+                "reason": "renumbered",
+                "source": "poropat2013a"
+              }
+            ],
+            "notes": "The holotype as originally constituted also included exemplar c, whose accession number and whereabouts are unknown, so it cannot be listed."
           },
           "erected_in": "romer1956a",
           "described_in": "wilson2009a",
@@ -152713,7 +152721,18 @@
             "specimen_type": "holotype",
             "institution": "Paleontological Center, Mongolian Academy of Sciences",
             "material": "Postcranial skeleton lacking cervicals: 11 presacrals, 6 sacrals, 34 caudals, complete pectoral girdles, fore and hind limbs, sternal plates, and pelvis; an old individual",
-            "completeness": "partial"
+            "completeness": "partial",
+            "former_ids": [
+              {
+                "from_id": "ZPAL MgD-I/48",
+                "to_id": "MPC-D100/404",
+                "from_institution": "Institute of Paleobiology, Polish Academy of Sciences",
+                "to_institution": "Paleontological Center, Mongolian Academy of Sciences",
+                "reason": "rehoused",
+                "source": "jones2026b",
+                "notes": "Collected by the Polish-Mongolian expeditions and later returned to Ulaanbaatar."
+              }
+            ]
           },
           "size": {
             "hip_height_m": {
