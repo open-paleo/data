@@ -107,11 +107,25 @@ tiers warrant different effort:
 
 ## Working a bucket
 
-The approach that worked for the holotype buckets: generate a checklist that
-quotes what the primary says around each competing value, so most items can be
-settled without opening a paper; decide each one; then write the outcomes into
-`adjudicated.yml` and re-run. Checklists are working files — they belong in
-`scratch/`, and anything worth keeping belongs in an issue.
+```
+python3 checklist.py <bucket>          # e.g. holotype, stage, formation
+python3 checklist.py holotype --width 200
+```
+
+Writes `scratch/audit/checklist-<bucket>.md`: one item per finding, quoting what
+the primary says around each competing value, so most can be settled without
+opening a paper. A bucket name that is a prefix matches every section starting
+with it, so `holotype` picks up all three tiers at once.
+
+Decide each item on its `decision:` line, then write the outcomes into
+`adjudicated.yml` with the quotation that closed each, and re-run
+`reconcile.py`. Checklists are working files — they live in `scratch/`, and
+anything worth keeping belongs in an issue.
+
+The quoting is deliberately conservative: it matches on the digit core so it
+finds the specimen whichever institution code the paper used, and refuses cores
+under three digits, because `MG 3` once matched a citation "(3)" and
+`IVPP V20` matched "20 individuals".
 
 ## Related
 
