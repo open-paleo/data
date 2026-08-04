@@ -1,21 +1,40 @@
 genus: Pradhania
-parent: Massospondylidae
+parent: Plateosauria
+placement: incertae sedis
 etymology: Named in honor of Dhuiya Pradhan, a fossil collector at the Indian Statistical Institute who contributed to paleontological work in India
 pronunciation:
   phonetic: prad-han-ee-uh
-description: Pradhania is a genus of massospondylid sauropodomorph dinosaur from
-  the Sinemurian-age (Early Jurassic) Upper Dharmaram Formation of India. It was
-  first named by T. S. Kutty, Sankar Chatterjee, Peter M. Galton and Paul
-  Upchurch in 2007 and the type species is Pradhania gracilis. It was a
-  sauropodomorph of modest size, only about four meters (13 ft) long, and is
-  known from fragmentary remains. It was originally regarded as a basal
-  sauropodomorph but new cladistic analysis performed by Novas et al., 2011
-  suggests that Pradhania is a massospondylid. Pradhania presents two
-  synapomorphies of Massospondylidae recovered in their phylogenetic analysis.
+description: Pradhania is a genus of plateosaurian sauropodomorph dinosaur from
+  the Early Jurassic Dharmaram Formation of India. The genus contains a single
+  species, Pradhania gracilis, known from a partial skeleton that includes skull
+  elements, vertebrae and an incomplete hand.
 locomotion: bipedal
 paleoenvironment:
   - fluvial
 diet: herbivore
+dispute:
+  summary: >
+    The relationships of Pradhania gracilis are unresolved, and its fragmentary
+    holotype has left it unstable in every dataset that includes it. Kutty and
+    others (2007) originally recovered it as a stem sauropodomorph falling below
+    Plateosauria, but at bootstrap support under 50%, and stated that more
+    precise relationships could not be determined from their matrix; Knoll (2010)
+    likewise concluded that the incomplete type material prevents its position
+    from being decided. Reanalysis by Novas and others (2010) moved it into
+    Massopoda and nested it within Massospondylidae on two synapomorphies. Later
+    work instead draws it toward the unaysaurids: Ezcurra and others (2023)
+    identified it as the wildcard taxon responsible for a large polytomy at the
+    base of Plateosauria and recovered it as the earliest-diverging unaysaurid in
+    part of their tree sample, Wang and others (2025) placed it with Macrocollum
+    and Musankwa at the base of Massopoda, and Barrett and others (2026)
+    recovered it within Unaysauridae. Plateosauria is the least-inclusive clade
+    common to every analysis since the original description.
+  history:
+    - date: "2026-08-04"
+      note: Broadened from Massospondylidae to Plateosauria incertae sedis. The
+        massospondylid position rests on a single analysis and is not supported
+        by the later work, which places Pradhania among or beside the
+        unaysaurids without agreeing on where that group sits.
 diagnostic_features:
   - Maxilla with very prominent medial longitudinal ridge overhanging alveolar
     margin
@@ -73,5 +92,19 @@ species:
       completeness: partial
 references:
   - id: kutty2007a
+    notes: Recovered Pradhania as a stem sauropodomorph below Plateosauria at
+      bootstrap support under 50%.
+  - id: knoll2010a
+    notes: Judged the holotype too incomplete to decide the phylogenetic position
+      of Pradhania.
   - id: novas2010a
     notes: Recovered Pradhania as a massospondylid.
+  - id: ezcurra2023a
+    notes: Identified Pradhania as the wildcard taxon behind a large polytomy at
+      the base of Plateosauria, and recovered it as the earliest-diverging
+      unaysaurid in part of the tree sample.
+  - id: wang2025a
+    notes: Recovered Pradhania with Macrocollum and Musankwa at the base of
+      Massopoda.
+  - id: barrett2026a
+    notes: Recovered Pradhania within Unaysauridae.

@@ -1,15 +1,36 @@
 genus: Musankwa
-parent: Massopoda
+parent: Plateosauria
+placement: incertae sedis
 etymology: "Named for the houseboat 'Musankwa' that served as the paleontologists' laboratory and home during fieldwork; 'musankwa' is a Tonga word meaning 'boy close to marriage'."
-description: Musankwa is an extinct genus of massopodan sauropodomorph dinosaurs
-  from the Late Triassic (Norian) Pebbly Arkose Formation of Zimbabwe. The genus
-  contains a single species, Musankwa sanyatiensis, known from an incomplete
-  hindlimb. Musankwa represents the fourth dinosaur genus to be named from
-  Zimbabwe.
+description: Musankwa is an extinct genus of plateosaurian sauropodomorph
+  dinosaurs from the Late Triassic (Norian) Pebbly Arkose Formation of Zimbabwe.
+  The genus contains a single species, Musankwa sanyatiensis, known from an
+  incomplete hindlimb. Musankwa represents the fourth dinosaur genus to be named
+  from Zimbabwe.
 locomotion: bipedal
 paleoenvironment:
   - fluvial
 diet: herbivore
+dispute:
+  summary: >
+    Every analysis to include Musankwa sanyatiensis has placed it differently.
+    Barrett and others (2024) recovered it as the earliest-branching massopodan,
+    sister to Riojasauridae and all later-branching massopodans. Wang and others
+    (2025) instead recovered it in a trichotomy with Macrocollum and Pradhania at
+    the base of Massopoda, and Barrett and others (2026) recovered it as the
+    sister taxon of the sympatric Musango within Unaysauridae, which falls
+    outside Massopoda in their strict consensus but within it in some of their
+    most-parsimonious trees. Support is weak throughout: the Musango–Musankwa
+    pairing rests on a single highly homoplastic astragalar character at a Bremer
+    support of 1, and its describers caution that the relationship is unlikely to
+    prove robust as new material comes to light. Plateosauria is the
+    least-inclusive clade that all three analyses accept.
+  history:
+    - date: "2026-08-04"
+      note: Broadened from Massopoda to Plateosauria incertae sedis. The
+        basal-massopodan position of Barrett and others (2024) is contradicted by
+        both later analyses, which agree in grouping Musankwa with Macrocollum
+        and Pradhania but disagree over whether that group lies inside Massopoda.
 diagnostic_features:
   - prominent posterior tubercle on proximal femur margin
   - proximal femur shaft anteroposteriorly expanded and swollen at anterior
@@ -32,9 +53,8 @@ species:
       name:
         - Late Triassic
       stage:
-        - Carnian
         - Norian
-      from_ma: 237
+      from_ma: 227
       to_ma: 205.7
     location:
       country: ZW
@@ -57,3 +77,9 @@ species:
     erected_in: barrett2024a
 references:
   - id: barrett2024a
+  - id: wang2025a
+    notes: Recovered Musankwa with Macrocollum and Pradhania at the base of
+      Massopoda.
+  - id: barrett2026a
+    notes: Recovered Musankwa as the sister taxon of Musango within
+      Unaysauridae.
