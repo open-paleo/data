@@ -68,6 +68,11 @@ change:
    controlled-vocabulary enums mirror `schema.yml`; the `Output schema sync`
    validator check fails the build if they drift.)
 2. Bump `_metadata.schema_version` in `scripts/build.ts` per the rules above.
+   Note that a change confined to the *source* YAML is not by itself a schema
+   change: `location.region` moved to storing an ISO 3166-2 code, but the build
+   resolves it, so `dist/` still publishes the English name and the release was
+   MINOR (a new `region_code` field) rather than MAJOR. Judge the version by
+   what `dist/` looks like, never by what the source files look like.
 3. Record the change in [`CHANGELOG.md`](../CHANGELOG.md).
 4. Run `npm run validate` and `npm run build`.
 

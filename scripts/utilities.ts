@@ -152,6 +152,19 @@ export function loadInstitutionRegistry(registryPath: string): Record<string, In
 }
 
 /**
+ * Loads the region registry from regions.yaml.
+ *
+ * @param registryPath - Absolute path to regions.yaml.
+ * @returns A record of ISO 3166-2 subdivision codes to English names.
+ */
+export function loadRegionRegistry(registryPath: string): Record<string, string>
+{
+    return parseYamlContent(
+        fs.readFileSync(registryPath, "utf8"),
+    ) as Record<string, string>;
+}
+
+/**
  * Flattens an institution registry into an abbreviation-to-display-name
  * map. Every canonical key and alias maps to the institution's display
  * name (name + city when available). This provides backward

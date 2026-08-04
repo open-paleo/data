@@ -173,6 +173,47 @@ hybrid form:
 The `Citation format` validation check flags `&` between capitalized
 names and `(Author Year)` no-comma single-citation parentheticals.
 
+## Names and Language
+
+Open Paleo is the core dataset, meant to be consumable by everyone, so its
+**prose is American English**. Names are a different matter, and the rule is
+not "translate everything":
+
+> **Prose is English. Names are whatever the English-language literature calls
+> them.**
+
+Translating a name manufactures a form that appears in no paper and no
+registry, which makes the data *harder* to reconcile, not easier. So the test
+for any name is empirical rather than linguistic: **what do English-language
+papers actually print?** When that is unclear, count how many papers in the
+reference literature use each form — independent adoption, not raw
+occurrences, so one paper repeating a name fifty times cannot outvote twenty
+papers.
+
+How that resolves per field:
+
+| Field | Form | Why |
+|---|---|---|
+| `location.formation` | Whatever English-language papers print, which is usually a local proper noun with an English rank word (`Posidonia Shale`, `Solnhofen Limestone`) but is sometimes the native name outright (`Marnes de Dives`, `Obernkirchen Sandstein`) | The unit's name is set by its stratigraphic literature, not by us |
+| `location.region` | An ISO 3166-2 code (`DE-BY`); the build resolves it to the English subdivision name | An external registry settles spelling, rank words and exonyms in one move |
+| `institution` names | **Native form, never translated** (`Bayerische Staatssammlung für Paläontologie und Geologie`) | A registered entity name is not a description; the code is the key and the name is display text |
+| Reference `title` | **Native form, with a bracketed English gloss** — `Gadrozavry Kazakhstana [Hadrosaurs of Kazakhstan]` | A title is a retrieval key: translate it away and the reader cannot find the paper. Brackets marking a supplied translation are the ISO 690 and Crossref convention |
+| Descriptions, notes, dispute prose | American English | These are prose, not identifiers |
+
+**Do not "fix" a native name to an English one without checking.** All eight
+formation names in the dataset that carry a non-English rock-type word were
+tested against the reference literature, and English-language papers use the
+French or German form for **every one of them** — including cases where an
+English rendering exists but is rarer (`Calcaires de Caen` 3 papers vs
+`Caen Limestone` 2; `Marnes d'Auzas` 5 vs `Auzas Marls` 1). Beware false
+positives when counting: "Blue Marls" turns up in two papers, but as a
+description of Isle of Wight beds and as a different unit in the Aude —
+neither is the Sisteron `Marnes bleues`.
+
+Full translations of prose belong in downstream forks (`data-fr`, `data-es`,
+`data-de`), which is precisely why the core carries identifiers rather than
+glosses.
+
 ## Institution Registry
 
 Every `holotype.institution` value must be a key in

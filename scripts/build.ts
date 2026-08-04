@@ -4,7 +4,7 @@ import * as url from "node:url";
 
 import { stringify as stringifyYaml } from "yaml";
 
-import { findYamlFiles, parseYaml, loadInstitutionRegistry } from "./utilities.ts";
+import { findYamlFiles, parseYaml, loadInstitutionRegistry, loadRegionRegistry } from "./utilities.ts";
 
 import type { GenusData, CladeData, TreeNode, Reference, ReferencePointer, InstitutionEntry, Synonym, FormerId } from "./types.ts";
 
@@ -377,6 +377,49 @@ function resolveInstitutionKeys(
 
 resolveInstitutionKeys(genera, institutionRegistry);
 
+// Resolve ISO 3166-2 subdivision codes to English names.
+const regionRegistry = loadRegionRegistry(path.join(root, "regions.yaml"));
+
+/**
+ * Resolves each location's ISO 3166-2 code to its English subdivision name,
+ * keeping the code alongside it as `region_code`.
+ *
+ * The source YAML stores only the code, so that an external registry settles
+ * spelling, rank words and exonyms rather than us. Output consumers get the
+ * readable name they already had in `region` plus a joinable key.
+ *
+ * @param generaMap - The processed genera map.
+ * @param registry - The region registry keyed by ISO 3166-2 code.
+ */
+function resolveRegionCodes(
+    generaMap: Record<string, ProcessedGenus>,
+    registry: Record<string, string>,
+): void
+{
+    for (const genus of Object.values(generaMap))
+    {
+        for (const species of genus.species ?? [ ])
+        {
+            const location = species.location;
+
+            if (!location?.region)
+            {
+                continue;
+            }
+
+            const name = registry[location.region];
+
+            if (name)
+            {
+                location.region_code = location.region;
+                location.region = name;
+            }
+        }
+    }
+}
+
+resolveRegionCodes(genera, regionRegistry);
+
 /**
  * Derives the denormalized author/year onto each species (and the genus) from
  * the `erected_in` reference, for consumers of the built dataset. Source YAML
@@ -468,7 +511,7 @@ const dataset: Dataset = {
         clade_count: Object.keys(clades).length,
         genus_count: Object.keys(genera).length,
         license: "CC-BY-4.0",
-        schema_version: "1.1.0",
+        schema_version: "1.2.0",
         version,
     },
     tree,

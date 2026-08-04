@@ -10,6 +10,14 @@ and this project uses [calendar versioning](https://calver.org/) (YYYY.MM).
 Initial public release, establishing the v1 output schema.
 
 ### Added
+- `location.region_code`, an ISO 3166-2 subdivision code, alongside the
+  existing `location.region`. The source YAML now stores only the code and the
+  build resolves it, so `region` continues to carry a readable English name —
+  `Bavaria`, not `Bayern` — while consumers gain a joinable key. Codes resolve
+  through the new [`regions.yaml`](./regions.yaml) registry, and validation
+  rejects a code that is unknown or whose country prefix disagrees with
+  `location.country`. Countries without subdivisions (Antarctica) carry
+  neither field. Output schema 1.1.0 → 1.2.0.
 - `former_ids` on `species.type_specimen` and on `notable_specimens[]`,
   recording the catalogue numbers a specimen was held under before its current
   one. Each entry pairs `from_id` with `to_id` — a specimen that moved twice is
@@ -49,6 +57,14 @@ Initial public release, establishing the v1 output schema.
   at incertae sedis. The narrative rationale remains in `dispute`.
 
 ### Changed
+- Adopted a repo-wide naming convention: prose is American English, but names
+  take whatever form the English-language literature uses, decided by counting
+  papers rather than by translating. Institution names therefore stay in their
+  native form, non-English reference titles keep the native title with a
+  bracketed English gloss, and formation names follow their own stratigraphic
+  literature — which, tested across the dataset, means every formation carrying
+  a non-English rock-type word keeps it. Documented in
+  [`CONTRIBUTING.md`](./CONTRIBUTING.md).
 - Locked the v1 output schema (#1965): the species type-specimen block is
   `type_specimen` (holds holotype/syntype/lectotype/neotype; its `specimen_type`
   names the category); reference `volume`/`issue` and identifier `id` are always

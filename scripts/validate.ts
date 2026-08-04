@@ -221,6 +221,11 @@ const institutionRegistry = parseYamlContent(
 ) as Record<string, unknown>;
 const allowedInstitutionKeys = new Set(Object.keys(institutionRegistry));
 
+const regionRegistry = parseYamlContent(
+    fs.readFileSync(path.join(root, "regions.yaml"), "utf8"),
+) as Record<string, string>;
+const allowedRegionCodes = new Set(Object.keys(regionRegistry));
+
 const flaggedSources = loadFlaggedSources(path.join(root, "flagged-sources.yml"));
 const flaggedPublishers = buildFlaggedSet(flaggedSources.publishers);
 const flaggedJournals = buildFlaggedSet(flaggedSources.journals);
@@ -1265,6 +1270,47 @@ for (const [filePath, doc] of genusParsed)
                 "Country validation",
                 filePath,
                 `species '${species.name ?? "?"}': country '${species.location.country}' not in schema countries list`);
+        }
+    }
+}
+
+// 14b. Region codes resolve, and agree with the country
+startCheck("Region validation");
+
+for (const [filePath, doc] of genusParsed)
+{
+    if (!doc || !Array.isArray(doc.species))
+    {
+        continue;
+    }
+
+    for (const species of doc.species)
+    {
+        const region = species?.location?.region;
+
+        if (!region)
+        {
+            continue;
+        }
+
+        const label = `species '${species.name ?? "?"}'`;
+
+        if (!allowedRegionCodes.has(region))
+        {
+            checkError(
+                "Region validation",
+                filePath,
+                `${label}: region '${region}' is not a valid ISO 3166-2 code in regions.yaml`);
+        }
+        else if (species.location?.country && !region.startsWith(`${species.location.country}-`))
+        {
+            // A subdivision code whose prefix disagrees with the country is how
+            // Perijasaurus came to sit in a Venezuelan state on a Colombian
+            // record, so this is an error rather than a warning.
+            checkError(
+                "Region validation",
+                filePath,
+                `${label}: region '${region}' does not belong to country '${species.location.country}'`);
         }
     }
 }

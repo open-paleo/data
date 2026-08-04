@@ -1,0 +1,234 @@
+# Region registry: ISO 3166-2 subdivision code -> English name.
+#
+# `location.region` holds the CODE; the build resolves it to the name and emits
+# both (`region` and `region_code`) into dist/. Storing the code lets an
+# external registry settle spelling, rank words and exonyms in one move,
+# instead of us arbitrating Bayern vs Bavaria or Amur vs Amur Oblast.
+#
+# Only codes actually in use are listed, as with institutions.yaml. Add a code
+# here in the same commit that first uses it.
+#
+# Two traps, both of which produced wrong assignments before being caught:
+#
+#   1. SUPERSEDED CODES. France's 2016 reform retired FR-P (Lower Normandy) for
+#      FR-NOR (Normandy), and both are still published in reference data, so one
+#      place can resolve to two codes. Only current codes belong here.
+#   2. RECYCLED CODES. Morocco's 2015 twelve-region reform reused its numbers
+#      for different regions, so the published deprecation data cannot tell the
+#      old MA-05 from the new one. The Moroccan block is pinned by hand, as are
+#      six other codes whose deprecation flags are false positives.
+#
+# Not every country has subdivisions -- Antarctica has none at all -- so
+# `region` stays optional and those records carry only a locality.
+
+AO-NAM: Namibe Province
+AR-A: Salta Province
+AR-F: La Rioja Province
+AR-J: San Juan Province
+AR-L: La Pampa Province
+AR-M: Mendoza Province
+AR-Q: Neuquén Province
+AR-R: Río Negro Province
+AR-U: Chubut Province
+AR-Z: Santa Cruz Province
+AT-3: Lower Austria
+AU-NSW: New South Wales
+AU-QLD: Queensland
+AU-SA: South Australia
+AU-VIC: Victoria
+AU-WA: Western Australia
+BE-WHT: Hainaut
+BE-WNA: Province of Namur
+BR-BA: Bahia
+BR-CE: Ceará
+BR-MA: Maranhão
+BR-MG: Minas Gerais
+BR-MT: Mato Grosso
+BR-PB: Paraíba
+BR-PE: Pernambuco
+BR-PR: Paraná
+BR-RS: Rio Grande do Sul
+BR-SP: São Paulo
+CA-AB: Alberta
+CA-BC: British Columbia
+CA-SK: Saskatchewan
+CH-AG: Canton of Aargau
+CH-BE: Bern
+CH-SH: Canton of Schaffhausen
+CL-AI: Aysén Region
+CL-AN: Antofagasta Region
+CL-AT: Atacama Region
+CL-MA: Magellan and the Chilean Antarctic Region
+CN-AH: Anhui
+CN-CQ: Chongqing
+CN-FJ: Fujian
+CN-GD: Guangdong
+CN-GS: Gansu
+CN-GX: Guangxi
+CN-GZ: Guizhou
+CN-HA: Henan
+CN-HE: Hebei
+CN-HL: Heilongjiang
+CN-JL: Jilin
+CN-JX: Jiangxi
+CN-LN: Liaoning
+CN-NM: Inner Mongolia
+CN-NX: Ningxia
+CN-SC: Sichuan
+CN-SD: Shandong
+CN-SN: Shaanxi
+CN-SX: Shanxi
+CN-XJ: Xinjiang
+CN-XZ: Tibet Autonomous Region
+CN-YN: Yunnan
+CN-ZJ: Zhejiang
+CO-BOY: Boyacá Department
+CO-CES: Cesar Department
+CZ-205: Kutná Hora District
+DE-BW: Baden-Württemberg
+DE-BY: Bavaria
+DE-MV: Mecklenburg-Vorpommern
+DE-NI: Lower Saxony
+DE-NW: North Rhine-Westphalia
+DE-ST: Saxony-Anhalt
+DE-TH: Thuringia
+DK-84: Capital Region of Denmark
+DZ-45: Naama Province
+EC-L: Loja Province
+EG-BA: Red Sea Governorate
+EG-GZ: Giza Governorate
+EG-MT: Matruh Governorate
+EG-WAD: New Valley Governorate
+ES-AR: Aragon
+ES-CL: Castile and León
+ES-CM: Castile–La Mancha
+ES-CS: Castellón
+ES-CT: Catalonia
+ES-L: Province of Lleida
+ES-RI: La Rioja
+ES-V: Province of Valencia
+ES-VC: Valencian Community
+FR-31: Haute-Garonne
+FR-34: Hérault
+FR-76: Seine-Maritime
+FR-BFC: Bourgogne-Franche-Comté
+FR-GES: Grand Est
+FR-HDF: Hauts-de-France
+FR-NOR: Normandy
+FR-OCC: Occitania
+FR-PAC: Provence-Alpes-Côte d'Azur
+GB-BST: City of Bristol
+GB-CAM: Cambridgeshire
+GB-DOR: Dorset
+GB-ENG: England
+GB-ESX: East Sussex
+GB-IOW: Isle of Wight
+GB-KEN: Kent
+GB-NYK: North Yorkshire
+GB-OXF: Oxfordshire
+GB-PTE: City of Peterborough
+GB-WIL: Wiltshire
+GB-WLS: Wales
+GB-WSX: West Sussex
+GL-KU: Kujalleq
+HR-18: Istria County
+HU-VE: Veszprém County
+IN-AP: Andhra Pradesh
+IN-GJ: Gujarat
+IN-MH: Maharashtra
+IN-MP: Madhya Pradesh
+IN-RJ: Rajasthan
+IN-TN: Tamil Nadu
+IN-TS: Telangana
+IT-25: Lombardy
+IT-36: Friuli Venezia Giulia
+IT-72: Campania
+JP-01: Hokkaidō
+JP-17: Ishikawa Prefecture
+JP-18: Fukui Prefecture
+JP-28: Hyōgo Prefecture
+JP-40: Fukuoka Prefecture
+KG-J: Jalal-Abad Region
+KR-41: Gyeonggi Province
+KR-46: South Jeolla
+KR-47: North Gyeongsang
+KR-48: South Gyeongsang
+KZ-23: Atyrau Region
+KZ-43: Kyzylorda Region
+KZ-61: Turkistan Region
+LA-SV: Savannakhet Province
+LS-E: Mafeteng District
+LS-F: Mohale's Hoek District
+LS-H: Qacha's Nek District
+MA-03: Fes-Meknes
+MA-05: Beni Mellal-Khenifra
+MA-06: Casablanca-Settat
+MA-08: Draa-Tafilalet
+MG-D: Antsiranana
+MG-M: Mahajanga
+MN-053: Ömnögovi Province
+MN-055: Övörkhangai Province
+MN-063: Dornogovi Province
+MN-065: Govi-Altai Province
+MN-069: Bayankhongor Province
+MW-N: Northern Region
+MX-BCN: Baja California
+MX-COA: Coahuila
+MX-MIC: Michoacán
+MX-SON: Sonora
+NE-1: Agadez Region
+NL-LI: Limburg
+PK-BA: Balochistan
+PL-16: Opole Voivodeship
+PT-06: Coimbra
+PT-10: Leiria
+PT-11: Lisbon
+RO-HD: Hunedoara County
+RU-AMU: Amur Oblast
+RU-BU: Buryatia
+RU-KEM: Kemerovo Oblast
+RU-KYA: Krasnoyarsk Krai
+RU-SAK: Sakhalin Oblast
+RU-ULY: Ulyanovsk Oblast
+RU-ZAB: Zabaykalsky Krai
+TH-30: Nakhon Ratchasima
+TH-36: Chaiyaphum
+TH-39: Nong Bua Lamphu
+TH-40: Khon Kaen
+TH-46: Kalasin
+TJ-SU: Sughd Province
+TN-83: Tataouine Governorate
+TZ-12: Lindi Region
+TZ-14: Mbeya Region
+UA-43: Autonomous Republic of Crimea
+US-AK: Alaska
+US-AL: Alabama
+US-AR: Arkansas
+US-AZ: Arizona
+US-CA: California
+US-CO: Colorado
+US-CT: Connecticut
+US-KS: Kansas
+US-MA: Massachusetts
+US-MD: Maryland
+US-MO: Missouri
+US-MT: Montana
+US-NJ: New Jersey
+US-NM: New Mexico
+US-NV: Nevada
+US-OK: Oklahoma
+US-SD: South Dakota
+US-TX: Texas
+US-UT: Utah
+US-WY: Wyoming
+UY-PA: Paysandú Department
+UZ-NW: Navoiy Region
+UZ-QR: Karakalpakstan
+VE-S: Táchira
+ZA-EC: Eastern Cape
+ZA-FS: Free State
+ZA-LP: Limpopo
+ZA-WC: Western Cape
+ZW-MC: Mashonaland Central Province
+ZW-MN: Matabeleland North Province
+ZW-MW: Mashonaland West Province

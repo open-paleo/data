@@ -283,9 +283,18 @@ export type Location = {
     country?: string;
 
     /**
-     * State, province, or administrative region.
+     * State, province, or administrative region. In the source YAML this is
+     * an ISO 3166-2 subdivision code (a key of regions.yaml); the build
+     * replaces it with the English subdivision name and moves the code to
+     * `region_code`.
      */
     region?: string;
+
+    /**
+     * ISO 3166-2 subdivision code. Build-derived: present in the output only,
+     * never written in the source YAML.
+     */
+    region_code?: string;
 
     /**
      * Specific locality or site name.
