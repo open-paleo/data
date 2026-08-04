@@ -3,23 +3,33 @@ parent: Troodontidae
 placement: incertae sedis
 dispute:
   summary: >
-    Polyodontosaurus grandis, based on a single troodontid dentary, is widely
-    regarded as a nomen dubium: Currie (1987) referred its material to Troodon, and
-    van der Reest and Currie (2017) confirmed the dentary lacks diagnostic
-    features. It cannot be placed below family level and is retained at Troodontidae
-    incertae sedis.
+    Polyodontosaurus grandis rests on a single troodontid dentary, CMN 8540, and
+    successive workers have folded it into the Dinosaur Park troodontid complex:
+    Carpenter (1982) listed it in the synonymy of Saurornithoides inequalis,
+    Currie (1987) treated the dentary as Troodon material, and Varricchio et al.
+    (2025) carry it in the synonymy of Troodon formosus. Van der Reest and Currie
+    (2017) declared it a nomen dubium on two grounds — troodontid dentary
+    morphology is not variable enough to distinguish taxa, and the reported
+    provenance of CMN 8540 cannot be reconciled with the exposures at the stated
+    locality, so its horizon within the formation is unrecoverable. They raised
+    the possibility that Latenivenatrix mcmasterae represents the same taxon but
+    declined it as untestable, and no synonymy in either direction has been
+    proposed. The genus cannot be placed below family level and is retained at
+    Troodontidae incertae sedis.
   history:
     - date: "2026-07-01"
       note: Moved from Troodontini (tribe dropped) to Troodontidae incertae sedis; nomen dubium, dentary-only holotype (possibly = Troodon).
 pronunciation:
   phonetic: pol-ee-o-DON-to-SAWR-us
-etymology: From Greek polys (many), odon (tooth), and sauros (lizard); meaning
-  "many-toothed lizard".
-description: Polyodontosaurus is a potentially dubious genus of troodontid
-  dinosaur named in 1932 by Charles W. Gilmore for a left dentary from the
-  Dinosaur Park Formation. It had been considered a synonym of Stenonychosaurus
-  or Troodon for a significant time, before being declared a nomen dubium. The
-  only known species is the type, P. grandis.
+etymology: "From Greek 'polys' meaning 'many', 'odon' meaning 'tooth', and
+  'sauros' meaning 'lizard'; meaning 'many-toothed lizard', for the high alveolus
+  count of the type dentary."
+description: Polyodontosaurus is a dubious genus of troodontid dinosaur named in
+  1932 by Charles W. Gilmore for a single left dentary from the Dinosaur Park
+  Formation of Alberta, Canada, which he originally took for a large lizard.
+  Sternberg (1951) recognized the jaw as theropod instead, and later workers
+  referred the specimen to the better-known Dinosaur Park troodontids before it
+  was declared a nomen dubium. The only known species is the type, P. grandis.
 diet: carnivore
 locomotion: bipedal
 paleoenvironment:
@@ -33,42 +43,40 @@ identifiers:
     id: "54469"
   - source: wikidata
     id: Q48834266
-synonyms:
-  - name: Latenivenatrix
-    type: possible subjective
-    reason: Possible junior subjective synonym of Polyodontosaurus; identification
-      is tentative. Per Olshevsky's Dinosaur Genera List.
 species:
-  - name: Troodon formosus
-    etymology: "From Latin 'formosus' meaning 'beautiful' or 'well-formed'."
-    status: valid
+  - name: Polyodontosaurus grandis
+    etymology: "From Latin 'grandis' meaning 'large' or 'great'."
+    status: nomen dubium
     type_species: true
     period:
       name:
         - Late Cretaceous
       stage:
         - Campanian
-        - Maastrichtian
       from_ma: 83.6
-      to_ma: 66
+      to_ma: 72.2
     location:
       country: CA
-      locality: Judith River badlands
+      locality: Railway Cut badlands, Steveville area, reportedly about 3 miles
+        southwest of the mouth of Berry Creek
       region: CA-AB
       formation: Dinosaur Park
-      coordinates:
-        - 47.718712
-        - -109.636551
     type_specimen:
       specimen_id: [ CMN 8540 ]
       specimen_type: holotype
       institution: CMN
-      material: Single left dentary, lacking teeth
+      material: Nearly complete left dentary, edentulous, 117.5 mm long and
+        bearing 35 alveoli
       completeness: fragmentary
     erected_in: gilmore1932a
+    described_in: currie1987a
 references:
   - id: gilmore1932a
-  - id: vanderreest2017a
-    notes: Confirmed Polyodontosaurus material belongs to Troodon, treating it as a nomen dubium
+  - id: carpenter1982a
+    notes: Listed Polyodontosaurus grandis in the synonymy of Saurornithoides inequalis
   - id: currie1987a
-    notes: Bearing on the troodontid identity of Polyodontosaurus.
+    notes: Described and figured the holotype dentary CMN 8540 as material of Troodon
+  - id: vanderreest2017a
+    notes: Declared Polyodontosaurus grandis a nomen dubium on undiagnostic dentary morphology and unrecoverable provenance
+  - id: varricchio2025a
+    notes: Carried Polyodontosaurus grandis in the synonymy of Troodon formosus
