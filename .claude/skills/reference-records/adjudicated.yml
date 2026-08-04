@@ -566,13 +566,25 @@ Aegyptosaurus baharijensis:
     No. 1912 VIII 61)." The reference work's 1912VIII161 inserts a digit.
 
 Centrosaurus apertus:
-  categories: [holotype]
-  source: ryan2005a
-  verdict: ours-correct
-  note: >
-    The emended diagnosis gives "TYPE SPECIMEN: NMC 971: a complete parietal."
-    lambe1905a predates the catalogue number. The reference work's AMNH 3999 is a
-    different specimen entirely.
+  - categories: [holotype]
+    source: ryan2005a
+    verdict: ours-correct
+    note: >
+      The emended diagnosis gives "TYPE SPECIMEN: NMC 971: a complete parietal."
+      lambe1905a predates the catalogue number. The reference work's AMNH 3999 is a
+      different specimen entirely.
+  - categories: [formation]
+    source: ryan2005a
+    verdict: corrected
+    note: >
+      Corrected. ryan2005a, which erected Centrosaurus brinkmani out of the
+      Oldman, states of the type species that "the centrosaurines Centrosaurus
+      apertus and Styracosaurus albertensis are commonly recovered from the
+      Dinosaur Park Formation, where they also appear to be stratigraphically
+      restricted to the lower and upper part of the formation, respectively".
+      Ours read Oldman, which is the underlying formation and the one
+      C. brinkmani comes from. jones2026a was right.
+
 
 Kinnareemimus khonkaenensis:
   categories: [holotype]
@@ -1166,11 +1178,24 @@ Sinosauropteryx prima:
     Museum (specimen #GMV2123)."
 
 Struthiomimus altus:
-  categories: [holotype]
-  source: osborn1916a
-  verdict: ours-correct
-  note: >
-    CMN 930 confirmed; AMNH 5339 is a referred manus figured in the same paper.
+  - categories: [holotype]
+    source: osborn1917a
+    verdict: ours-correct
+    note: >
+      CMN 930 confirmed; AMNH 5339 is a referred manus figured in the same paper.
+  - categories: [formation]
+    source: claessens2016z
+    verdict: ours-correct
+    note: >
+      claessens2016z states it directly while contrasting the two ornithomimid
+      genera: "The genus Struthiomimus, in contrast, is known from the Oldman
+      Formation (which includes the type for S. altus) and spans from 78 to 77 Ma,
+      and from the lower Lance and Horseshoe formations, which span from 69 to
+      67.5 Ma". The reference works give Dinosaur Park, the overlying unit. Note
+      that the sister findings in this cluster went the other way -- Centrosaurus
+      apertus and Rativates evadens were both corrected FROM Oldman TO Dinosaur
+      Park -- so the Park taxa do not share one answer.
+
 
 Vouivria damparisensis:
   categories: [holotype]
@@ -2414,3 +2439,52 @@ Emausaurus ernsti:
       an informal member of the formation jones2026a names, and ours is the finer
       value -- the same shape as Hongtuya within the Wangshi Group. Expressing
       both needs the rank field under discussion in #2012.
+
+Tuebingosaurus maierfritzorum:
+  - categories: [formation]
+    source: fernández2022a
+    verdict: corrected
+    note: >
+      Corrected: the erecting paper is titled "A new massopodan sauropodomorph
+      from Trossingen Formation (Germany) hidden as 'Plateosaurus' for 100 years
+      in the historical Tuebingen collection", and sues2025a gives "Type horizon.
+      'Untere Saurierschicht,' Trossingen Formation, Middle Keuper Subgroup. Age:
+      Late Triassic (Norian: Sevatian)". Ours read Loewenstein, the formation
+      directly beneath. jones2026b was right.
+
+Stegoceras validum:
+  - categories: [formation]
+    source: schott2016a
+    verdict: ours-correct
+    note: >
+      schott2016a places it in the same formation we do: "Although F. brevis and
+      St. validum co-occur within the Dinosaur Park Formation of southern
+      Alberta, presumably within the same palaeoenvironment...". The paper's
+      subject taxon is likewise "from the Upper Campanian Dinosaur Park Formation
+      (Belly River Group) of Alberta". weishampel2004a's Oldman Formation is the
+      underlying unit; jones2026a already agreed with us.
+
+Gravitholus albertae:
+  - categories: [formation]
+    source: ryan2005z
+    verdict: ours-correct
+    note: >
+      ryan2005z, the ornithischian chapter of the Dinosaur Provincial Park
+      volume, is explicit about the holotype dome TMP 72.27.01: "The specimen was
+      collected from the Oldman Formation near the Park (Sullivan 2003)." Both
+      reference works give Dinosaur Park, which is the overlying unit. Note the
+      same passage questions the taxon itself -- "Recent studies have questioned
+      its validity suggesting that G. albertae is probably referable to Stegoceras
+      (Williamson and Carr 2002), or is not diagnostic (Sullivan 2003)" -- which
+      is a separate question from its horizon and is not settled here.
+
+Rativates evadens:
+  - categories: [formation]
+    source: mcfeeters2016a
+    verdict: corrected
+    note: >
+      Corrected against the erecting paper, which was in hand all along:
+      mcfeeters2016a is titled "A new ornithomimid theropod from the Dinosaur Park
+      Formation of Alberta, Canada" and its abstract gives the holotype as "ROM
+      1790, from the lower Dinosaur Park Formation (upper Campanian) of Alberta".
+      Ours read Oldman. jones2026c was right.
