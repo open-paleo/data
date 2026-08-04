@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-08-04T20:37:52.182Z
+  built_at: 2026-08-04T21:18:08.228Z
   clade_count: 188
   genus_count: 1401
   license: CC-BY-4.0
@@ -11099,15 +11099,15 @@ genera:
             - GSM 109051
             - GSM 109052
             - GSM 109053
-            - GSM 109054
             - GSM 109055
             - GSM 109056
             - GSM 109057
-            - GSM 109058
-          specimen_type: holotype
+          specimen_type: syntype
           institution: British Geological Survey
           material: Scutes and spines of dermal armor, three teeth, fragmentary vertebrae, partial skull (basioccipital and basisphenoid), and distal end of a humerus.
           completeness: fragmentary
+          notes: |
+            Huxley (1867) founded the species on a series of 12 specimens and designated no holotype; no lectotype has been designated since. Pereda-Suberbiola & Barrett (1999) exclude GSM 109054 and GSM 109058, two caudal vertebrae added to the type series by Coombs (1978) but not mentioned by Huxley, regarding them as Ankylosauria indeterminate and indeterminate respectively. The syntypes are not demonstrably one individual: Huxley inferred association because the specimens "all came from one small area", but the same assemblage yielded the teeth and sclerotic ring of a large ichthyosaur.
         authors: Huxley, T. H.
         described: 1867
     references:
@@ -11157,7 +11157,7 @@ genera:
         journal: Special Papers in Palaeontology
         volume: "60"
         pages: 177-208
-        notes: Reviewed the Acanthopholis syntypes as composite and non-diagnostic.
+        notes: Reviewed the Acanthopholis syntypes as composite and non-diagnostic, and restricted the type series to the 12 specimens listed by Huxley.
     taxonomy:
       - Life
       - Animalia
@@ -21382,7 +21382,7 @@ genera:
     pronunciation:
       phonetic: an-OP-lo-SAWR-us
     etymology: From Greek 'anoplos' meaning 'unarmed' or 'unarmored' and 'sauros' meaning 'lizard'; meaning 'unarmed lizard'
-    description: Anoplosaurus is an extinct genus of herbivorous nodosaurid dinosaur from the Late Cretaceous (Cenomanian age) Cambridge Greensand of Cambridgeshire, England. It has in the past been classified with either the armored dinosaurs or the ornithopods, but current thought has been in agreement with the "armored dinosaur" interpretation, placing it in the Ankylosauria.
+    description: Anoplosaurus is an extinct genus of herbivorous nodosaurid dinosaur from the Early Cretaceous (late Albian age) of Cambridgeshire, England. It has in the past been classified with either the armored dinosaurs or the ornithopods, but current thought has been in agreement with the "armored dinosaur" interpretation, placing it in the Ankylosauria.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -21412,20 +21412,20 @@ genera:
         type_species: true
         period:
           name:
-            - Late Cretaceous
+            - Early Cretaceous
           stage:
-            - Cenomanian
-          from_ma: 100.5
-          to_ma: 93.9
+            - Albian
+          from_ma: 106.3
+          to_ma: 100.5
         location:
           country: GB
           locality: Reach, Cambridge
-          region: England
-          formation: Upper Greensand
+          region: Cambridgeshire
+          formation: Cambridge Greensand
           coordinates:
-            - 51.946388
-            - -0.651944
-          region_code: GB-ENG
+            - 52.27
+            - 0.3
+          region_code: GB-CAM
         size:
           length_m:
             min: 2
@@ -21433,11 +21433,14 @@ genera:
         erected_in: seeley1879a
         type_specimen:
           specimen_id:
-            - SMC B55731
-          specimen_type: holotype
+            - CAMSM B55731
+          specimen_type: lectotype
           institution: Sedgwick Museum, University of Cambridge
-          material: Cervical vertebrae, dorsal vertebrae and ribs, sacral vertebrae and sacral ribs, caudal vertebrae, neural arches, coracoids, scapula, humerus, femur, tibia, metatarsals, phalanges, and jaw fragment
-          completeness: partial
+          material: Partial right scapula
+          completeness: fragmentary
+          notes: |
+            Seeley (1879) erected the species on a syntype series and designated no holotype. Pereda-Suberbiola & Barrett (1999) designated CAMSM B55731, a partial right scapula, as the lectotype under ICZN Art. 74, chosen because it had been figured previously (Seeley 1879, pl. 35, fig. 3) and possesses a distinctive morphology; the remaining 72 cataloged syntypes (CAMSM B55670-B55742, excluding B55731) became paralectotypes. They comprise a partial left dentary, cervical, dorsal, sacral and caudal centra, neural arches, dorsal and sacral ribs, coracoids, humerus, femur, tibia, a possible metacarpal, possible metatarsals and a phalanx, apparently from a single immature individual about 2 m long, an association exceptional among Cambridge Greensand material. Pereda-Suberbiola & Barrett state 77 syntypes in prose but catalog 73 numbers; the discrepancy is in the source and is not resolvable.
+            The type horizon is uncertain. Pereda-Suberbiola & Barrett give "?Upper Gault Clay or ?Cambridge Greensand, Upper Albian" and favor the Gault on taphonomic grounds, since an associated skeleton would be exceptional for the Cambridge Greensand; Barrett & Bonsor (2020) place the associated skeleton in the Cambridge Greensand Member, whose vertebrate remains are reworked from the underlying Gault. The material is late Albian in age either way.
         authors: Seeley, H. G.
         described: 1879
     references:
@@ -21451,6 +21454,24 @@ genera:
         issue: 1-4
         pages: 591-636
         doi: 10.1144/gsl.jgs.1879.035.01-04.42
+      - id: pereda-suberbiola1999a
+        authors: Pereda-Suberbiola, X.; Barrett, P. M.
+        year: 1999
+        title: A systematic review of ankylosaurian dinosaur remains from the Albian-Cenomanian of England
+        journal: Special Papers in Palaeontology
+        volume: "60"
+        pages: 177-208
+        notes: Lectotype designation (ICZN Art. 74) and redescription; removes the species from Ornithopoda to Nodosauridae.
+      - id: barrett2020a
+        authors: Barrett, P. M.; Bonsor, J. A.
+        year: 2020
+        title: A revision of the non-avian dinosaurs 'Eucercosaurus tanyspondylus' and 'Syngonosaurus macrocercus' from the Cambridge Greensand, UK
+        journal: Cretaceous Research
+        publisher: Elsevier BV
+        volume: "118"
+        pages: "104638"
+        doi: 10.1016/j.cretres.2020.104638
+        notes: Affirms Anoplosaurus curtonotus as the only valid taxon named from the Cambridge Greensand, and dates the Member's vertebrate remains as reworked from the upper Albian Gault Formation.
       - id: jones2026a
         authors: Jones, B.; Viola, E.
         year: 2026
