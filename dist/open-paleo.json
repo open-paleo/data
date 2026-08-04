@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-08-04T16:55:21.235Z",
+    "built_at": "2026-08-04T17:44:41.469Z",
     "clade_count": 188,
     "genus_count": 1401,
     "license": "CC-BY-4.0",
@@ -2541,7 +2541,7 @@
       ]
     },
     "Cetiosauridae": {
-      "description": "Cetiosauridae is a family of basal sauropod dinosaurs from the Jurassic. Traditionally it served as a wastebasket for various unrelated species, but some recent studies find that it may represent a genuine natural group. Alongside Cetiosaurus from the Middle Jurassic of Britain, taxa assigned to the family include Patagosaurus from the late Early to Middle Jurassic of Patagonia and Lapparentosaurus from the Middle Jurassic of Madagascar, which share distinctive features not seen in other eusauropods. At least one study has suggested that the mamenchisaurids form a subgroup within it. Its validity and contents remain debated, with several analyses instead recovering it as a paraphyletic grade of early sauropods rather than a true clade.\n",
+      "description": "Cetiosauridae is a family of basal sauropod dinosaurs from the Jurassic. Traditionally it served as a wastebasket for various unrelated species, and many of the genera once assigned to it are now placed elsewhere among the non-neosauropod eusauropods. In its restricted modern sense it comprises Cetiosaurus from the Middle Jurassic of Britain and Patagosaurus from the late Early to Middle Jurassic of Patagonia, which share a loss of the spinodiapophyseal lamina and pyramid-shaped, non-bifid dorsal neural spines. At least one study has suggested that the mamenchisaurids form a subgroup within it. Its validity and contents remain debated, with several analyses instead recovering it as a paraphyletic grade of early sauropods rather than a true clade.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -54958,7 +54958,17 @@
     },
     "Chebsaurus": {
       "genus": "Chebsaurus",
-      "parent": "Cetiosauridae",
+      "parent": "Eusauropoda",
+      "placement": "incertae sedis",
+      "dispute": {
+        "summary": "Chebsaurus was erected within Cetiosauridae (Mahammed et al., 2005), a referral its describers presented as untested pending a phylogenetic analysis. That analysis (Läng and Mahammed, 2010) recovered Cetiosauridae sensu Bonaparte (1986) as paraphyletic and placed Chebsaurus in an unresolved polytomy with Lapparentosaurus, Ferganasaurus and Cetiosaurus, referring the genus no further than Eusauropoda. Subsequent treatments follow that reading, listing it as a non-neosauropod eusauropod (Mannion et al., 2019) or as a cetiosaurid only conditionally on the family being valid (Jones, 2026). No numerical analysis has recovered it within a monophyletic Cetiosauridae.\n",
+        "history": [
+          {
+            "date": "2026-08-04",
+            "note": "Moved from Cetiosauridae to Eusauropoda incertae sedis, following the redescription that assigns the genus no family and leaves its relationships within non-neosauropod Eusauropoda unresolved.\n"
+          }
+        ]
+      },
       "etymology": "From colloquial Arabic 'cheb' (شاب) meaning 'young man', referring to the juvenile nature of the fossils found, combined with Greek 'sauros' meaning 'lizard'.",
       "pronunciation": {
         "phonetic": "cheb-SOR-us"
@@ -55152,7 +55162,20 @@
           "issue": "1-3",
           "pages": "142-164",
           "doi": "10.1080/08912960903515570",
-          "notes": "New cranial and postcranial material from two juvenile individuals, with an emended diagnosis and a phylogenetic analysis."
+          "notes": "New cranial and postcranial material from two juvenile individuals, with an emended diagnosis and a phylogenetic analysis leaving the genus in an unresolved non-neosauropod eusauropod polytomy."
+        },
+        {
+          "id": "mannion2019a",
+          "authors": "Mannion, P. D.; Upchurch, P.; Schwarz, D.; Wings, O.",
+          "year": 2019,
+          "title": "Taxonomic affinities of the putative titanosaurs from the Late Jurassic Tendaguru Formation of Tanzania: phylogenetic and biogeographic implications for eusauropod dinosaur evolution",
+          "journal": "Zoological Journal of the Linnean Society",
+          "publisher": "Oxford University Press (OUP)",
+          "volume": "185",
+          "issue": "3",
+          "pages": "784-909",
+          "doi": "10.1093/zoolinnean/zly068",
+          "notes": "Lists Chebsaurus among the non-neosauropod eusauropods of the Middle Jurassic of Africa."
         },
         {
           "id": "jones2026b",
@@ -55182,8 +55205,7 @@
         "Sauropodiformes",
         "Sauropoda",
         "Gravisauria",
-        "Eusauropoda",
-        "Cetiosauridae"
+        "Eusauropoda"
       ],
       "authors": "Mahammed, F.; Läng, É.; Mami, L.; Mekahli, L.; Benhamou, M.; Bouterfa, B.; Kacemi, A.; Chérief, S.-A.; Chaouati, H.; Taquet, P.",
       "described": 2005
@@ -121753,13 +121775,18 @@
     },
     "Lapparentosaurus": {
       "genus": "Lapparentosaurus",
-      "parent": "Cetiosauridae",
+      "parent": "Eusauropoda",
+      "placement": "incertae sedis",
       "dispute": {
-        "summary": "Lapparentosaurus has been placed within Brachiosauridae (Upchurch, 1998), as a non-neosauropodan eusauropod, within a restricted or paraphyletic Cetiosauridae (Läng, 2008; Raveloson et al., 2019; Jones, 2026), and within a broadened Turiasauria (Zhang et al., 2026).\n",
+        "summary": "Lapparentosaurus was erected within Cetiosauridae (Bonaparte, 1986), but subsequent analyses have placed it in almost every other position available: within Brachiosauridae (Upchurch, 1998), as Titanosauriformes incertae sedis and too unstable to retain in the consensus (Upchurch et al., 2004), as a non-neosauropod eusauropod in all analyses (Mannion et al., 2013), and within a broadened Turiasauria alongside Jobaria and Atlasaurus (Moore et al., 2020; Zhang et al., 2026). Raveloson et al. (2019) argue for a cetiosaurid position from newly described femoral and neural spine material, but from anatomical comparison rather than a phylogenetic analysis. A position outside Neosauropoda is well supported; the finer placement is not, and the type material is juvenile.\n",
         "history": [
           {
             "date": "2026-06-29",
             "note": "Placed in Cetiosauridae following Raveloson et al. (2019) and Jones (2026); the Turiasauria alternative (Zhang et al., 2026) is unresolved.\n"
+          },
+          {
+            "date": "2026-08-04",
+            "note": "Moved from Cetiosauridae to Eusauropoda incertae sedis; the cetiosaurid position rests on comparative argument alone, while the numerical analyses agree only that the genus lies outside Neosauropoda.\n"
           }
         ]
       },
@@ -121892,7 +121919,42 @@
           "issue": "12",
           "pages": "498",
           "doi": "10.3390/geosciences9120498",
-          "notes": "New neural spine and femur data support placement within a restricted or paraphyletic Cetiosauridae"
+          "notes": "Newly described femoral and neural spine material argued, by anatomical comparison rather than phylogenetic analysis, to support a cetiosaurid position."
+        },
+        {
+          "id": "moore2020a",
+          "authors": "Moore, A. J.; Upchurch, P.; Barrett, P. M.; Clark, J. M.; Xu, X.",
+          "year": 2020,
+          "title": "Osteology of Klamelisaurus gobiensis (Dinosauria, Eusauropoda) and the evolutionary history of Middle-Late Jurassic Chinese sauropods",
+          "journal": "Journal of Systematic Palaeontology",
+          "volume": "18",
+          "issue": "16",
+          "pages": "1299-1393",
+          "doi": "10.1080/14772019.2020.1759706",
+          "notes": "Implied-weights and Bayesian analyses recover Lapparentosaurus as a turiasaurian outside Neosauropoda."
+        },
+        {
+          "id": "mannion2013a",
+          "authors": "Mannion, P. D.; Upchurch, P.; Barnes, R. N.; Mateus, O.",
+          "year": 2013,
+          "title": "Osteology of the Late Jurassic Portuguese sauropod dinosaur Lusotitan atalaiensis (Macronaria) and the evolutionary history of basal titanosauriforms",
+          "journal": "Zoological Journal of the Linnean Society",
+          "publisher": "Oxford University Press (OUP)",
+          "volume": "168",
+          "issue": "1",
+          "pages": "98-206",
+          "doi": "10.1111/zoj.12029",
+          "notes": "Found no support for a titanosauriform position, recovering Lapparentosaurus as a non-neosauropod eusauropod in all analyses."
+        },
+        {
+          "id": "upchurch2004a",
+          "authors": "Upchurch, P.; Barrett, P. M.; Dodson, P.",
+          "year": 2004,
+          "title": "Sauropoda",
+          "book": "The Dinosauria, 2nd edition",
+          "publisher": "University of California Press",
+          "pages": "259-322",
+          "notes": "Recovered Lapparentosaurus as Titanosauriformes incertae sedis and deleted it from the consensus tree as an unstable taxon."
         },
         {
           "id": "upchurch1998a",
@@ -121932,8 +121994,7 @@
         "Sauropodiformes",
         "Sauropoda",
         "Gravisauria",
-        "Eusauropoda",
-        "Cetiosauridae"
+        "Eusauropoda"
       ],
       "authors": "Bonaparte, J. F.",
       "described": 1986
