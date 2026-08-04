@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-08-04T18:27:45.033Z",
+    "built_at": "2026-08-04T19:10:12.804Z",
     "clade_count": 188,
     "genus_count": 1401,
     "license": "CC-BY-4.0",
@@ -95989,7 +95989,7 @@
               "Campanian"
             ],
             "from_ma": 83.6,
-            "to_ma": 72.2
+            "to_ma": 72.1
           },
           "location": {
             "country": "MN",
@@ -96019,7 +96019,7 @@
           "erected_in": "cau2017a",
           "type_specimen": {
             "specimen_id": [
-              "MPC D-102/109"
+              "MPC-D 102/109"
             ],
             "specimen_type": "holotype",
             "institution": "Paleontological Center, Mongolian Academy of Sciences",
@@ -189102,7 +189102,8 @@
       ],
       "appearance": {
         "features": [
-          "sickle claw"
+          "sickle claw",
+          "enlarged manual claws"
         ],
         "integument": "feathered",
         "evidence": "inferred"
@@ -189163,6 +189164,55 @@
           "erected_in": "turner2021a",
           "authors": "Turner, A. H.; Montanari, S.; Norell, M. A.",
           "described": 2021
+        },
+        {
+          "name": "Shri rapax",
+          "etymology": "From Latin rapax, meaning rapacious; refers to the hypertrophied falciform pollex ungual.",
+          "status": "valid",
+          "type_species": false,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Campanian"
+            ],
+            "from_ma": 83.6,
+            "to_ma": 72.1
+          },
+          "location": {
+            "country": "MN",
+            "locality": "Ukhaa Tolgod",
+            "region": "Ömnögovi",
+            "formation": "Djadokhta",
+            "coordinates": [
+              43.664444,
+              100.901947
+            ],
+            "region_code": "MN-053"
+          },
+          "diagnostic_features": [
+            "Middle cervical centra subequal in length (fifth centrum 125% longer than the sixth in S. devi)",
+            "Accessory pleurocoel in the last cervical centrum (absent in S. devi)",
+            "Epipophyses not extended onto the dorsal vertebrae (extending onto the anteriormost dorsals in S. devi)",
+            "First metacarpal and first digit very robust, much broader than the combined second and third manual digits, a condition unique among paravians",
+            "Falciform manual ungual 1 more than 160% longer along its dorsal margin than manual phalanx 1-I, proportionally the largest of any dromaeosaurid",
+            "Pubis forming a 135 degree angle with the long axis of the ilium (155-160 degrees in S. devi)",
+            "Ischium elongate, 66% of pubis length (about 50% in S. devi), and lacking the ischial tuber distal to the pubic peduncle present in S. devi"
+          ],
+          "erected_in": "moutrille2025a",
+          "type_specimen": {
+            "specimen_id": [
+              "MPC-D 102/117"
+            ],
+            "specimen_type": "holotype",
+            "institution": "Paleontological Center, Mongolian Academy of Sciences",
+            "material": "Almost complete articulated skeleton with skull, vertebral series with ribs, both sternal plates, complete gastral series, left scapula, both coracoids, furcula, complete right forelimb and manus, complete pelvis, partial femora",
+            "completeness": "complete",
+            "notes": "The skull and first four cervical vertebrae were separated from the specimen and are now lost; they are known from a 2016 scan, a cast of which accompanies the specimen. The exact locality is unknown because the specimen was poached and passed through private hands before its return to Mongolia, and referral to Ukhaa Tolgod rests on the associated documentation and on sediment matching the structureless sandstone facies of that locality; another Djadokhtan locality such as Bayn Dzak cannot be excluded."
+          },
+          "authors": "Moutrille, L.; Cau, A.; Chinzorig, T.; Escuillié, F.; Tsogtbaatar, K.; Ganzorig, B.; Mallet, C.; Godefroit, P.",
+          "described": 2025
         }
       ],
       "references": [
@@ -189185,6 +189235,18 @@
           "title": "The Princeton Field Guide to Predatory Dinosaurs",
           "publisher": "Princeton University Press",
           "notes": "Source of the appearance features."
+        },
+        {
+          "id": "moutrille2025a",
+          "authors": "Moutrille, L.; Cau, A.; Chinzorig, T.; Escuillié, F.; Tsogtbaatar, K.; Ganzorig, B.; Mallet, C.; Godefroit, P.",
+          "year": 2025,
+          "title": "A new bird-like dinosaur from the Upper Cretaceous of Mongolia with extremely robust hands supports niche partitioning among velociraptorines",
+          "journal": "Historical Biology",
+          "publisher": "Informa UK Limited",
+          "volume": "38",
+          "issue": "6",
+          "pages": "1987-2018",
+          "doi": "10.1080/08912963.2025.2530148"
         }
       ],
       "taxonomy": [
