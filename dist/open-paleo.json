@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-08-04T17:44:41.469Z",
+    "built_at": "2026-08-04T18:27:45.033Z",
     "clade_count": 188,
     "genus_count": 1401,
     "license": "CC-BY-4.0",
@@ -11273,7 +11273,7 @@
       ]
     },
     "Unaysauridae": {
-      "description": "Unaysauridae is a clade of early-branching sauropodomorph dinosaurs from the Late Triassic of Brazil and India, comprising Unaysaurus, Macrocollum, and Jaklapallisaurus. These were small to medium-sized, long-necked bipeds recovered as the sister group to the more derived plateosaurs. Members are united chiefly by a strongly expanded front portion of the inner ankle bone and, where the skull is known, by an extra opening in the upper jaw. The grouping's validity has been questioned, since several of its defining traits cannot be confirmed across all its members owing to their incomplete and fragmentary remains, and some analyses instead place Unaysaurus and Macrocollum among the plateosaurids.\n",
+      "description": "Unaysauridae is a clade of early-branching sauropodomorph dinosaurs from the Late Triassic of Gondwana, erected for the Brazilian Unaysaurus and Macrocollum together with the Indian Jaklapallisaurus. These were small to medium-sized, long-necked bipeds recovered as the sister group to the more derived plateosaurs. Members are united chiefly by a strongly expanded front portion of the inner ankle bone and, where the skull is known, by an extra opening in the upper jaw. Which genera belong is unsettled: later work has added the Indian Pradhania and the Zimbabwean Musango and Musankwa while dropping Jaklapallisaurus, and the grouping's validity has been questioned, since several of its defining traits cannot be confirmed across all its members owing to their incomplete and fragmentary remains, and some analyses instead place Unaysaurus and Macrocollum among the plateosaurids.\n",
       "taxonomy": [
         "Life",
         "Animalia",
@@ -11325,6 +11325,28 @@
           "notes": "Contested the validity of the unaysaurid genera."
         },
         {
+          "id": "ezcurra2023a",
+          "authors": "Ezcurra, M. D.; Müller, R. T.; Novas, F. E.; Chatterjee, S.",
+          "year": 2023,
+          "title": "Osteology of the sauropodomorph dinosaur Jaklapallisaurus asymmetricus from the Late Triassic of central India",
+          "journal": "The Anatomical Record",
+          "publisher": "Wiley",
+          "doi": "10.1002/ar.25359",
+          "notes": "Recovered Unaysauridae sister to Plateosauridae at low resampling support."
+        },
+        {
+          "id": "wang2025a",
+          "authors": "Wang, Y.-M.; Zhang, Q.-N.; Wang, Y.-C.; Xu, H.; Chen, J.; Feng, Z.; Xu, X.; Wang, T.; You, H.-L.",
+          "year": 2025,
+          "title": "A new Early Jurassic dinosaur represents the earliest-diverging and oldest sauropodomorph of East Asia",
+          "journal": "Scientific Reports",
+          "publisher": "Springer Science and Business Media LLC",
+          "volume": "15",
+          "issue": "1",
+          "doi": "10.1038/s41598-025-12185-2",
+          "notes": "Did not recover Unaysauridae, placing Unaysaurus with Plateosaurus."
+        },
+        {
           "id": "jones2026b",
           "authors": "Jones, B.; Viola, E.",
           "year": 2026,
@@ -11332,6 +11354,19 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25023-6",
           "notes": "Placement and assessment in the Princeton Encyclopedia of Dinosaurs."
+        },
+        {
+          "id": "barrett2026a",
+          "authors": "Barrett, P. M.; Botha, J.; Sciscio, L.; Stuart, B. P.; Lovegrove, J.; Munyikwa, D.; Zondo, M.; Broderick, T. J.; Edwards, S. F.; Mbambo, E.; Chapelle, K. E. J.; Dollman, K. N.; Tolan, S.; Choiniere, J. N.",
+          "year": 2026,
+          "title": "A new sauropodomorph dinosaur from the Pebbly Arkose Formation (Upper Triassic: Norian) of Kariba, Zimbabwe",
+          "journal": "Journal of Systematic Palaeontology",
+          "publisher": "Informa UK Limited",
+          "volume": "24",
+          "issue": "2",
+          "pages": "2678610",
+          "doi": "10.1080/14772019.2026.2678610",
+          "notes": "Expanded Unaysauridae to include Pradhania, Musango and Musankwa while excluding Jaklapallisaurus."
         }
       ]
     },
@@ -109564,6 +109599,15 @@
         "fluvial"
       ],
       "diet": "herbivore",
+      "dispute": {
+        "summary": "Jaklapallisaurus asymmetricus was one of the three founding members of Unaysauridae (Müller and others, 2018), and the redescription of its holotype by Ezcurra and others (2023) recovered it as a unaysaurid at the base of Plateosauria, in a clade sister to Plateosauridae. Support for that framework is weak even within the study that provides it: resampling frequencies for Unaysauridae and for the Unaysauridae plus Plateosauridae clade fall below 30%, and Jaklapallisaurus was flagged as one of the unstable terminals, although the Jaklapallisaurus plus Macrocollum pairing itself scored higher. Two later analyses do not recover the taxon as a unaysaurid at all, instead placing it among early-branching sauropodomorphs outside Plateosauria: Wang and others (2025), and Barrett and others (2026), who recover a monophyletic Unaysauridae that excludes it.\n",
+        "history": [
+          {
+            "date": "2026-08-04",
+            "note": "Kept in Unaysauridae following the redescription of Ezcurra and others (2023), the only study dedicated to the taxon; the failure of two later analyses to recover it there is recorded here rather than by attaching the genus to a less resolved parent."
+          }
+        ]
+      },
       "diagnostic_features": [
         "Femur with distal transverse width more than 1.5 times the anteroposterior depth across the medial condyle",
         "Medial distal condyle of the femur sub-triangular in distal view",
@@ -109664,6 +109708,19 @@
           "doi": "10.1017/S1755691011020093"
         },
         {
+          "id": "müller2018a",
+          "authors": "Müller, R. T.; Langer, M. C.; Dias-da-Silva, S.",
+          "year": 2018,
+          "title": "An exceptionally preserved association of complete dinosaur skeletons reveals the oldest long-necked sauropodomorphs",
+          "journal": "Biology Letters",
+          "publisher": "The Royal Society",
+          "volume": "14",
+          "issue": "11",
+          "pages": "20180633",
+          "doi": "10.1098/rsbl.2018.0633",
+          "notes": "Erected Unaysauridae with Jaklapallisaurus as the sister taxon of Macrocollum."
+        },
+        {
           "id": "ezcurra2023a",
           "authors": "Ezcurra, M. D.; Müller, R. T.; Novas, F. E.; Chatterjee, S.",
           "year": 2023,
@@ -109672,6 +109729,31 @@
           "publisher": "Wiley",
           "doi": "10.1002/ar.25359",
           "notes": "Comprehensive osteological redescription of the holotype with an emended diagnosis; recovers Jaklapallisaurus as a unaysaurid at the base of Plateosauria."
+        },
+        {
+          "id": "wang2025a",
+          "authors": "Wang, Y.-M.; Zhang, Q.-N.; Wang, Y.-C.; Xu, H.; Chen, J.; Feng, Z.; Xu, X.; Wang, T.; You, H.-L.",
+          "year": 2025,
+          "title": "A new Early Jurassic dinosaur represents the earliest-diverging and oldest sauropodomorph of East Asia",
+          "journal": "Scientific Reports",
+          "publisher": "Springer Science and Business Media LLC",
+          "volume": "15",
+          "issue": "1",
+          "doi": "10.1038/s41598-025-12185-2",
+          "notes": "Recovered Jaklapallisaurus among early-branching sauropodomorphs outside Plateosauria."
+        },
+        {
+          "id": "barrett2026a",
+          "authors": "Barrett, P. M.; Botha, J.; Sciscio, L.; Stuart, B. P.; Lovegrove, J.; Munyikwa, D.; Zondo, M.; Broderick, T. J.; Edwards, S. F.; Mbambo, E.; Chapelle, K. E. J.; Dollman, K. N.; Tolan, S.; Choiniere, J. N.",
+          "year": 2026,
+          "title": "A new sauropodomorph dinosaur from the Pebbly Arkose Formation (Upper Triassic: Norian) of Kariba, Zimbabwe",
+          "journal": "Journal of Systematic Palaeontology",
+          "publisher": "Informa UK Limited",
+          "volume": "24",
+          "issue": "2",
+          "pages": "2678610",
+          "doi": "10.1080/14772019.2026.2678610",
+          "notes": "Recovered a monophyletic Unaysauridae that excludes Jaklapallisaurus."
         },
         {
           "id": "jones2026b",
@@ -143215,14 +143297,24 @@
     },
     "Musankwa": {
       "genus": "Musankwa",
-      "parent": "Massopoda",
+      "parent": "Plateosauria",
+      "placement": "incertae sedis",
       "etymology": "Named for the houseboat 'Musankwa' that served as the paleontologists' laboratory and home during fieldwork; 'musankwa' is a Tonga word meaning 'boy close to marriage'.",
-      "description": "Musankwa is an extinct genus of massopodan sauropodomorph dinosaurs from the Late Triassic (Norian) Pebbly Arkose Formation of Zimbabwe. The genus contains a single species, Musankwa sanyatiensis, known from an incomplete hindlimb. Musankwa represents the fourth dinosaur genus to be named from Zimbabwe.",
+      "description": "Musankwa is an extinct genus of plateosaurian sauropodomorph dinosaurs from the Late Triassic (Norian) Pebbly Arkose Formation of Zimbabwe. The genus contains a single species, Musankwa sanyatiensis, known from an incomplete hindlimb. Musankwa represents the fourth dinosaur genus to be named from Zimbabwe.",
       "locomotion": "bipedal",
       "paleoenvironment": [
         "fluvial"
       ],
       "diet": "herbivore",
+      "dispute": {
+        "summary": "Every analysis to include Musankwa sanyatiensis has placed it differently. Barrett and others (2024) recovered it as the earliest-branching massopodan, sister to Riojasauridae and all later-branching massopodans. Wang and others (2025) instead recovered it in a trichotomy with Macrocollum and Pradhania at the base of Massopoda, and Barrett and others (2026) recovered it as the sister taxon of the sympatric Musango within Unaysauridae, which falls outside Massopoda in their strict consensus but within it in some of their most-parsimonious trees. Support is weak throughout: the Musango–Musankwa pairing rests on a single highly homoplastic astragalar character at a Bremer support of 1, and its describers caution that the relationship is unlikely to prove robust as new material comes to light. Plateosauria is the least-inclusive clade that all three analyses accept.\n",
+        "history": [
+          {
+            "date": "2026-08-04",
+            "note": "Broadened from Massopoda to Plateosauria incertae sedis. The basal-massopodan position of Barrett and others (2024) is contradicted by both later analyses, which agree in grouping Musankwa with Macrocollum and Pradhania but disagree over whether that group lies inside Massopoda."
+          }
+        ]
+      },
       "diagnostic_features": [
         "prominent posterior tubercle on proximal femur margin",
         "proximal femur shaft anteroposteriorly expanded and swollen at anterior trochanter level",
@@ -143250,10 +143342,9 @@
               "Late Triassic"
             ],
             "stage": [
-              "Carnian",
               "Norian"
             ],
-            "from_ma": 237,
+            "from_ma": 227,
             "to_ma": 205.7
           },
           "location": {
@@ -143297,6 +143388,31 @@
           "publisher": "Polska Akademia Nauk Instytut Paleobiologii (Institute of Paleobiology, Polish Academy of Sciences)",
           "volume": "69",
           "doi": "10.4202/app.01100.2023"
+        },
+        {
+          "id": "wang2025a",
+          "authors": "Wang, Y.-M.; Zhang, Q.-N.; Wang, Y.-C.; Xu, H.; Chen, J.; Feng, Z.; Xu, X.; Wang, T.; You, H.-L.",
+          "year": 2025,
+          "title": "A new Early Jurassic dinosaur represents the earliest-diverging and oldest sauropodomorph of East Asia",
+          "journal": "Scientific Reports",
+          "publisher": "Springer Science and Business Media LLC",
+          "volume": "15",
+          "issue": "1",
+          "doi": "10.1038/s41598-025-12185-2",
+          "notes": "Recovered Musankwa with Macrocollum and Pradhania at the base of Massopoda."
+        },
+        {
+          "id": "barrett2026a",
+          "authors": "Barrett, P. M.; Botha, J.; Sciscio, L.; Stuart, B. P.; Lovegrove, J.; Munyikwa, D.; Zondo, M.; Broderick, T. J.; Edwards, S. F.; Mbambo, E.; Chapelle, K. E. J.; Dollman, K. N.; Tolan, S.; Choiniere, J. N.",
+          "year": 2026,
+          "title": "A new sauropodomorph dinosaur from the Pebbly Arkose Formation (Upper Triassic: Norian) of Kariba, Zimbabwe",
+          "journal": "Journal of Systematic Palaeontology",
+          "publisher": "Informa UK Limited",
+          "volume": "24",
+          "issue": "2",
+          "pages": "2678610",
+          "doi": "10.1080/14772019.2026.2678610",
+          "notes": "Recovered Musankwa as the sister taxon of Musango within Unaysauridae."
         }
       ],
       "taxonomy": [
@@ -143312,8 +143428,7 @@
         "Saurischia",
         "Sauropodomorpha",
         "Bagualosauria",
-        "Plateosauria",
-        "Massopoda"
+        "Plateosauria"
       ],
       "authors": "Barrett, P.; Chapelle, K.; Sciscio, L.; Broderick, T.; Zondo, M.; Munyikwa, D.; Choiniere, J.",
       "described": 2024
@@ -168922,17 +169037,27 @@
     },
     "Pradhania": {
       "genus": "Pradhania",
-      "parent": "Massospondylidae",
+      "parent": "Plateosauria",
+      "placement": "incertae sedis",
       "etymology": "Named in honor of Dhuiya Pradhan, a fossil collector at the Indian Statistical Institute who contributed to paleontological work in India",
       "pronunciation": {
         "phonetic": "prad-han-ee-uh"
       },
-      "description": "Pradhania is a genus of massospondylid sauropodomorph dinosaur from the Sinemurian-age (Early Jurassic) Upper Dharmaram Formation of India. It was first named by T. S. Kutty, Sankar Chatterjee, Peter M. Galton and Paul Upchurch in 2007 and the type species is Pradhania gracilis. It was a sauropodomorph of modest size, only about four meters (13 ft) long, and is known from fragmentary remains. It was originally regarded as a basal sauropodomorph but new cladistic analysis performed by Novas et al., 2011 suggests that Pradhania is a massospondylid. Pradhania presents two synapomorphies of Massospondylidae recovered in their phylogenetic analysis.",
+      "description": "Pradhania is a genus of plateosaurian sauropodomorph dinosaur from the Early Jurassic Dharmaram Formation of India. The genus contains a single species, Pradhania gracilis, known from a partial skeleton that includes skull elements, vertebrae and an incomplete hand.",
       "locomotion": "bipedal",
       "paleoenvironment": [
         "fluvial"
       ],
       "diet": "herbivore",
+      "dispute": {
+        "summary": "The relationships of Pradhania gracilis are unresolved, and its fragmentary holotype has left it unstable in every dataset that includes it. Kutty and others (2007) originally recovered it as a stem sauropodomorph falling below Plateosauria, but at bootstrap support under 50%, and stated that more precise relationships could not be determined from their matrix; Knoll (2010) likewise concluded that the incomplete type material prevents its position from being decided. Reanalysis by Novas and others (2010) moved it into Massopoda and nested it within Massospondylidae on two synapomorphies. Later work instead draws it toward the unaysaurids: Ezcurra and others (2023) identified it as the wildcard taxon responsible for a large polytomy at the base of Plateosauria and recovered it as the earliest-diverging unaysaurid in part of their tree sample, Wang and others (2025) placed it with Macrocollum and Musankwa at the base of Massopoda, and Barrett and others (2026) recovered it within Unaysauridae. Plateosauria is the least-inclusive clade common to every analysis since the original description.\n",
+        "history": [
+          {
+            "date": "2026-08-04",
+            "note": "Broadened from Massospondylidae to Plateosauria incertae sedis. The massospondylid position rests on a single analysis and is not supported by the later work, which places Pradhania among or beside the unaysaurids without agreeing on where that group sits."
+          }
+        ]
+      },
       "diagnostic_features": [
         "Maxilla with very prominent medial longitudinal ridge overhanging alveolar margin",
         "Cranial cervical vertebrae extremely elongated with central length ~4.5 times its height",
@@ -169021,7 +169146,21 @@
           "volume": "81",
           "issue": "6",
           "pages": "1218-1240",
-          "doi": "10.1666/04-074.1"
+          "doi": "10.1666/04-074.1",
+          "notes": "Recovered Pradhania as a stem sauropodomorph below Plateosauria at bootstrap support under 50%."
+        },
+        {
+          "id": "knoll2010a",
+          "authors": "Knoll, F.",
+          "year": 2010,
+          "title": "A primitive sauropodomorph from the upper Elliot Formation of Lesotho",
+          "journal": "Geological Magazine",
+          "publisher": "Cambridge University Press (CUP)",
+          "volume": "147",
+          "issue": "6",
+          "pages": "814-829",
+          "doi": "10.1017/s001675681000018x",
+          "notes": "Judged the holotype too incomplete to decide the phylogenetic position of Pradhania."
         },
         {
           "id": "novas2010a",
@@ -169035,6 +169174,41 @@
           "pages": "333-349",
           "doi": "10.1017/S1755691011020093",
           "notes": "Recovered Pradhania as a massospondylid."
+        },
+        {
+          "id": "ezcurra2023a",
+          "authors": "Ezcurra, M. D.; Müller, R. T.; Novas, F. E.; Chatterjee, S.",
+          "year": 2023,
+          "title": "Osteology of the sauropodomorph dinosaur Jaklapallisaurus asymmetricus from the Late Triassic of central India",
+          "journal": "The Anatomical Record",
+          "publisher": "Wiley",
+          "doi": "10.1002/ar.25359",
+          "notes": "Identified Pradhania as the wildcard taxon behind a large polytomy at the base of Plateosauria, and recovered it as the earliest-diverging unaysaurid in part of the tree sample."
+        },
+        {
+          "id": "wang2025a",
+          "authors": "Wang, Y.-M.; Zhang, Q.-N.; Wang, Y.-C.; Xu, H.; Chen, J.; Feng, Z.; Xu, X.; Wang, T.; You, H.-L.",
+          "year": 2025,
+          "title": "A new Early Jurassic dinosaur represents the earliest-diverging and oldest sauropodomorph of East Asia",
+          "journal": "Scientific Reports",
+          "publisher": "Springer Science and Business Media LLC",
+          "volume": "15",
+          "issue": "1",
+          "doi": "10.1038/s41598-025-12185-2",
+          "notes": "Recovered Pradhania with Macrocollum and Musankwa at the base of Massopoda."
+        },
+        {
+          "id": "barrett2026a",
+          "authors": "Barrett, P. M.; Botha, J.; Sciscio, L.; Stuart, B. P.; Lovegrove, J.; Munyikwa, D.; Zondo, M.; Broderick, T. J.; Edwards, S. F.; Mbambo, E.; Chapelle, K. E. J.; Dollman, K. N.; Tolan, S.; Choiniere, J. N.",
+          "year": 2026,
+          "title": "A new sauropodomorph dinosaur from the Pebbly Arkose Formation (Upper Triassic: Norian) of Kariba, Zimbabwe",
+          "journal": "Journal of Systematic Palaeontology",
+          "publisher": "Informa UK Limited",
+          "volume": "24",
+          "issue": "2",
+          "pages": "2678610",
+          "doi": "10.1080/14772019.2026.2678610",
+          "notes": "Recovered Pradhania within Unaysauridae."
         }
       ],
       "taxonomy": [
@@ -169050,9 +169224,7 @@
         "Saurischia",
         "Sauropodomorpha",
         "Bagualosauria",
-        "Plateosauria",
-        "Massopoda",
-        "Massospondylidae"
+        "Plateosauria"
       ],
       "authors": "Kutty, T. S.; Chatterjee, S.; Galton, P. M.; Upchurch, P.",
       "described": 2007
