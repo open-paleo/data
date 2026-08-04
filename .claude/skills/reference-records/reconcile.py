@@ -196,8 +196,19 @@ def loadAdjudicated():
     if duplicates:
         raise SystemExit(f"adjudicated.yml has duplicate keys: {sorted(duplicates)}")
 
-    return {name: set(entry.get("categories") or [])
-            for name, entry in document.items() if isinstance(entry, dict)}
+    # A binomial may need two adjudications that rest on different papers -- a
+    # holotype settled against its erecting paper, a formation settled against
+    # the stratigraphic literature -- so an entry may be a list of blocks, each
+    # carrying its own source and quotation. Categories union across them.
+    settled = {}
+
+    for name, entry in document.items():
+        blocks = entry if isinstance(entry, list) else [entry]
+        settled[name] = {category
+                         for block in blocks if isinstance(block, dict)
+                         for category in (block.get("categories") or [])}
+
+    return settled
 
 
 def loadInstitutionAliases():

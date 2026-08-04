@@ -9,6 +9,12 @@
 # Keyed by binomial; `categories` lists the finding prefixes to suppress.
 # `verdict: ticketed` means the question is real but out of scope for this pass
 # and tracked as a GitHub issue, so it should not resurface as a finding.
+#
+# An entry may also be a LIST of blocks when one binomial needs adjudications
+# resting on different papers -- a holotype closed against its erecting paper
+# and a formation closed against the stratigraphic literature do not share a
+# source or a quotation. Never write a second top-level block under the same
+# key: YAML keeps the last and discards the first without saying so.
 
 Aviatyrannis jurassica:
   categories: [holotype]
@@ -604,13 +610,25 @@ Pelorosaurus brevis:
     humerus, not the type series.
 
 Plateosaurus engelhardti:
-  categories: [holotype]
-  source: moser2003a
-  verdict: ours-correct
-  note: >
-    "In previous taxonomic discussions the sacrum (UEN 552) received the highest
-    attention and is therefore fixed in this work as the lectotype of Plateosaurus
-    engelhardti MEYER, 1837." meyer1837a fixes no type.
+  - categories: [holotype]
+    source: moser2003a
+    verdict: ours-correct
+    note: >
+      "In previous taxonomic discussions the sacrum (UEN 552) received the highest
+      attention and is therefore fixed in this work as the lectotype of Plateosaurus
+      engelhardti MEYER, 1837." meyer1837a fixes no type.
+  - categories: [formation]
+    source: litholex
+    verdict: corrected
+    note: >
+      Corrected: the formation read Klettgau against a Heroldsberg, Bavaria
+      lectotype whose own locality string says Feuerletten. LithoLex record
+      5000008 lists Feuerletten among the "Synonyme und obsolete Einheiten" of the
+      Trossingen-Formation, and a search returns no Klettgau-Formation in the
+      German lexicon at all -- Klettgau is a Swiss unit, presumably carried over
+      from the Frick material. weishampel2004a's "Feuerletten Formation" was right
+      about the unit and obsolete only in its name; ours now reads Trossingen.
+
 
 Pleurocoelus nanus:
   categories: [holotype]
@@ -683,23 +701,51 @@ Velocipes guerichi:
     fibula." The reference work's BMNH R38058 is Dolichosuchus cristatus.
 
 Yangchuanosaurus shangyouensis:
-  categories: [holotype]
-  source: dong1978a
-  verdict: ours-correct
-  note: >
-    CV 00216 is corroborated across the later literature; the reference work's
-    CV 00215 differs by a digit.
+  - categories: [holotype]
+    source: dong1978a
+    verdict: ours-correct
+    note: >
+      CV 00216 is corroborated across the later literature; the reference work's
+      CV 00215 differs by a digit.
+  - categories: [formation]
+    source: dai2022a
+    verdict: ours-correct
+    note: >
+      Unit-level decision applied to every Shaximiao taxon, not a per-genus
+      reading. Current usage treats Shaximiao as one formation carrying lower and
+      upper members: dai2022a is titled "New stegosaurs from the Middle Jurassic
+      Lower Member of the Shaximiao Formation", moore2020a writes of "beds of the
+      lower Shaximiao Formation" placing "the entirety of the Shaximiao Formation"
+      within the Late Jurassic, and the Sichuan Basin petroleum literature numbers
+      members inside one Shaximiao Formation. Xiashaximiao and Shangshaximiao as
+      coordinate formations is the older Chinese scheme, which xing2015a
+      reproduces from Peng et al. (2005) and which the reference work follows. The
+      member distinction is real and worth recording, but as a rank rather than as
+      a formation name (#2012).
+
 
 Ruehleia bedheimensis:
-  categories: [holotype]
-  source: sues2025a
-  verdict: corrected
-  note: >
-    "Holotype. MB.R. 4718 ('Individual 1'), partial postcranial skeleton
-    comprising cervicals 2 to 10, 15 dorsals, partial sacrum, 19 caudals ...".
-    Ours held the pre-accession field designation HMN MB RvL 1, Galton's
-    Individual 1. The reference work's MB.R.4718-42 appends a range the
-    synopsis does not carry. galton2001a itself is not held.
+  - categories: [holotype]
+    source: sues2025a
+    verdict: corrected
+    note: >
+      "Holotype. MB.R. 4718 ('Individual 1'), partial postcranial skeleton
+      comprising cervicals 2 to 10, 15 dorsals, partial sacrum, 19 caudals ...".
+      Ours held the pre-accession field designation HMN MB RvL 1, Galton's
+      Individual 1. The reference work's MB.R.4718-42 appends a range the
+      synopsis does not carry. galton2001a itself is not held.
+  - categories: [formation]
+    source: litholex
+    verdict: ours-correct
+    note: >
+      LithoLex record 5000008 (current) lists "Synonyme und obsolete Einheiten:
+      Knollenmergel, Knollenmergel-Formation, Feuerletten, Grenzmergel,
+      Zanclodon-Letten". Trossingen-Formation is the valid name and Knollenmergel
+      the obsolete one, so the reference work quotes the superseded form. Erected
+      by SKPT decision of 19.07.1997, ratified in DSK (2005), Stratigraphie von
+      Deutschland IV: Keuper, section 5.8.6.6 "Knollenmergel- (Trossingen-)
+      Formation (km5)".
+
 
 Acrocanthosaurus atokensis:
   categories: [holotype]
@@ -1078,15 +1124,31 @@ Segnosaurus galbinensis:
     explicitly the paratype.
 
 Shunosaurus lii:
-  categories: [holotype]
-  source: dong1984a
-  verdict: ours-correct
-  note: >
-    dong1983a lists only "Specimens:"; dong1984a fixes the type: "The holotype
-    is an incomplete skeleton lacking the skull and caudal vertebrae, fossil
-    number V 9065." The same paper reassigns a pelvic girdle previously
-    attributed to V9065 to Datousaurus, so diagnoses resting on that material do
-    not apply to Shunosaurus.
+  - categories: [holotype]
+    source: dong1984a
+    verdict: ours-correct
+    note: >
+      dong1983a lists only "Specimens:"; dong1984a fixes the type: "The holotype
+      is an incomplete skeleton lacking the skull and caudal vertebrae, fossil
+      number V 9065." The same paper reassigns a pelvic girdle previously
+      attributed to V9065 to Datousaurus, so diagnoses resting on that material do
+      not apply to Shunosaurus.
+  - categories: [formation]
+    source: dai2022a
+    verdict: ours-correct
+    note: >
+      Unit-level decision applied to every Shaximiao taxon, not a per-genus
+      reading. Current usage treats Shaximiao as one formation carrying lower and
+      upper members: dai2022a is titled "New stegosaurs from the Middle Jurassic
+      Lower Member of the Shaximiao Formation", moore2020a writes of "beds of the
+      lower Shaximiao Formation" placing "the entirety of the Shaximiao Formation"
+      within the Late Jurassic, and the Sichuan Basin petroleum literature numbers
+      members inside one Shaximiao Formation. Xiashaximiao and Shangshaximiao as
+      coordinate formations is the older Chinese scheme, which xing2015a
+      reproduces from Peng et al. (2005) and which the reference work follows. The
+      member distinction is real and worth recording, but as a rank rather than as
+      a formation name (#2012).
+
 
 Shuvuuia deserti:
   categories: [holotype]
@@ -1772,13 +1834,29 @@ Yunnanosaurus huangi:
     paper read so far dates the transfer. NGMJ was added to the registry.
 
 Yuzhoulong qurenensis:
-  categories: [holotype]
-  source: dai2022a
-  verdict: ours-correct
-  note: >
-    The erecting paper prints CLGRP V00013 once, but the institution's other
-    five specimens in the dataset all use CLGPR V000##, so ours follows the
-    collection's own convention.
+  - categories: [holotype]
+    source: dai2022a
+    verdict: ours-correct
+    note: >
+      The erecting paper prints CLGRP V00013 once, but the institution's other
+      five specimens in the dataset all use CLGPR V000##, so ours follows the
+      collection's own convention.
+  - categories: [formation]
+    source: dai2022a
+    verdict: ours-correct
+    note: >
+      Unit-level decision applied to every Shaximiao taxon, not a per-genus
+      reading. Current usage treats Shaximiao as one formation carrying lower and
+      upper members: dai2022a is titled "New stegosaurs from the Middle Jurassic
+      Lower Member of the Shaximiao Formation", moore2020a writes of "beds of the
+      lower Shaximiao Formation" placing "the entirety of the Shaximiao Formation"
+      within the Late Jurassic, and the Sichuan Basin petroleum literature numbers
+      members inside one Shaximiao Formation. Xiashaximiao and Shangshaximiao as
+      coordinate formations is the older Chinese scheme, which xing2015a
+      reproduces from Peng et al. (2005) and which the reference work follows. The
+      member distinction is real and worth recording, but as a rank rather than as
+      a formation name (#2012).
+
 
 Afrovenator abakensis:
   categories: [holotype]
@@ -1828,3 +1906,511 @@ Yulong mini:
   verdict: ours-correct
   note: >
     HGM 41HIII-0107 confirmed; molina-pérez2019a's 41HII drops an I.
+
+Agilisaurus louderbacki:
+  - categories: [formation]
+    source: dai2022a
+    verdict: ours-correct
+    note: >
+      Unit-level decision applied to every Shaximiao taxon, not a per-genus
+      reading. Current usage treats Shaximiao as one formation carrying lower and
+      upper members: dai2022a is titled "New stegosaurs from the Middle Jurassic
+      Lower Member of the Shaximiao Formation", moore2020a writes of "beds of the
+      lower Shaximiao Formation" placing "the entirety of the Shaximiao Formation"
+      within the Late Jurassic, and the Sichuan Basin petroleum literature numbers
+      members inside one Shaximiao Formation. Xiashaximiao and Shangshaximiao as
+      coordinate formations is the older Chinese scheme, which xing2015a
+      reproduces from Peng et al. (2005) and which the reference work follows. The
+      member distinction is real and worth recording, but as a rank rather than as
+      a formation name (#2012).
+
+Chialingosaurus kuani:
+  - categories: [formation]
+    source: dai2022a
+    verdict: ours-correct
+    note: >
+      Unit-level decision applied to every Shaximiao taxon, not a per-genus
+      reading. Current usage treats Shaximiao as one formation carrying lower and
+      upper members: dai2022a is titled "New stegosaurs from the Middle Jurassic
+      Lower Member of the Shaximiao Formation", moore2020a writes of "beds of the
+      lower Shaximiao Formation" placing "the entirety of the Shaximiao Formation"
+      within the Late Jurassic, and the Sichuan Basin petroleum literature numbers
+      members inside one Shaximiao Formation. Xiashaximiao and Shangshaximiao as
+      coordinate formations is the older Chinese scheme, which xing2015a
+      reproduces from Peng et al. (2005) and which the reference work follows. The
+      member distinction is real and worth recording, but as a rank rather than as
+      a formation name (#2012).
+
+Chuandongocoelurus primitivus:
+  - categories: [formation]
+    source: dai2022a
+    verdict: ours-correct
+    note: >
+      Unit-level decision applied to every Shaximiao taxon, not a per-genus
+      reading. Current usage treats Shaximiao as one formation carrying lower and
+      upper members: dai2022a is titled "New stegosaurs from the Middle Jurassic
+      Lower Member of the Shaximiao Formation", moore2020a writes of "beds of the
+      lower Shaximiao Formation" placing "the entirety of the Shaximiao Formation"
+      within the Late Jurassic, and the Sichuan Basin petroleum literature numbers
+      members inside one Shaximiao Formation. Xiashaximiao and Shangshaximiao as
+      coordinate formations is the older Chinese scheme, which xing2015a
+      reproduces from Peng et al. (2005) and which the reference work follows. The
+      member distinction is real and worth recording, but as a rank rather than as
+      a formation name (#2012).
+
+Chungkingosaurus jiangbeiensis:
+  - categories: [formation]
+    source: dai2022a
+    verdict: ours-correct
+    note: >
+      Unit-level decision applied to every Shaximiao taxon, not a per-genus
+      reading. Current usage treats Shaximiao as one formation carrying lower and
+      upper members: dai2022a is titled "New stegosaurs from the Middle Jurassic
+      Lower Member of the Shaximiao Formation", moore2020a writes of "beds of the
+      lower Shaximiao Formation" placing "the entirety of the Shaximiao Formation"
+      within the Late Jurassic, and the Sichuan Basin petroleum literature numbers
+      members inside one Shaximiao Formation. Xiashaximiao and Shangshaximiao as
+      coordinate formations is the older Chinese scheme, which xing2015a
+      reproduces from Peng et al. (2005) and which the reference work follows. The
+      member distinction is real and worth recording, but as a rank rather than as
+      a formation name (#2012).
+
+Daanosaurus zhangi:
+  - categories: [formation]
+    source: dai2022a
+    verdict: ours-correct
+    note: >
+      Unit-level decision applied to every Shaximiao taxon, not a per-genus
+      reading. Current usage treats Shaximiao as one formation carrying lower and
+      upper members: dai2022a is titled "New stegosaurs from the Middle Jurassic
+      Lower Member of the Shaximiao Formation", moore2020a writes of "beds of the
+      lower Shaximiao Formation" placing "the entirety of the Shaximiao Formation"
+      within the Late Jurassic, and the Sichuan Basin petroleum literature numbers
+      members inside one Shaximiao Formation. Xiashaximiao and Shangshaximiao as
+      coordinate formations is the older Chinese scheme, which xing2015a
+      reproduces from Peng et al. (2005) and which the reference work follows. The
+      member distinction is real and worth recording, but as a rank rather than as
+      a formation name (#2012).
+  - categories: [stage]
+    source: wang2018z
+    verdict: ours-correct
+    note: >
+      Upper-member taxon, so the Shaximiao redating does not reach it: ours and
+      the reference work both place Daanosaurus in the Late Jurassic and differ
+      only over which stage. wang2018z bounds the LOWER member at a maximum
+      depositional age of 159 +/- 2 Ma, which constrains what lies beneath this
+      horizon rather than the horizon itself. Left as ours until a source dates
+      the upper member directly.
+  
+      The lower-member records took the opposite treatment: rather than being
+      held, their ranges were widened to Bajocian-Oxfordian, the span that stays
+      true under both the traditional Middle Jurassic reading and wang2018z's
+      Late Jurassic one. That follows the same rule the project uses for
+      contested placement -- sit at the position agreed across all hypotheses --
+      and it resolved ten stage findings outright instead of suppressing them.
+
+Dashanpusaurus dongi:
+  - categories: [formation]
+    source: dai2022a
+    verdict: ours-correct
+    note: >
+      Unit-level decision applied to every Shaximiao taxon, not a per-genus
+      reading. Current usage treats Shaximiao as one formation carrying lower and
+      upper members: dai2022a is titled "New stegosaurs from the Middle Jurassic
+      Lower Member of the Shaximiao Formation", moore2020a writes of "beds of the
+      lower Shaximiao Formation" placing "the entirety of the Shaximiao Formation"
+      within the Late Jurassic, and the Sichuan Basin petroleum literature numbers
+      members inside one Shaximiao Formation. Xiashaximiao and Shangshaximiao as
+      coordinate formations is the older Chinese scheme, which xing2015a
+      reproduces from Peng et al. (2005) and which the reference work follows. The
+      member distinction is real and worth recording, but as a rank rather than as
+      a formation name (#2012).
+
+Datousaurus bashanensis:
+  - categories: [formation]
+    source: dai2022a
+    verdict: ours-correct
+    note: >
+      Unit-level decision applied to every Shaximiao taxon, not a per-genus
+      reading. Current usage treats Shaximiao as one formation carrying lower and
+      upper members: dai2022a is titled "New stegosaurs from the Middle Jurassic
+      Lower Member of the Shaximiao Formation", moore2020a writes of "beds of the
+      lower Shaximiao Formation" placing "the entirety of the Shaximiao Formation"
+      within the Late Jurassic, and the Sichuan Basin petroleum literature numbers
+      members inside one Shaximiao Formation. Xiashaximiao and Shangshaximiao as
+      coordinate formations is the older Chinese scheme, which xing2015a
+      reproduces from Peng et al. (2005) and which the reference work follows. The
+      member distinction is real and worth recording, but as a rank rather than as
+      a formation name (#2012).
+
+Gasosaurus constructus:
+  - categories: [formation]
+    source: dai2022a
+    verdict: ours-correct
+    note: >
+      Unit-level decision applied to every Shaximiao taxon, not a per-genus
+      reading. Current usage treats Shaximiao as one formation carrying lower and
+      upper members: dai2022a is titled "New stegosaurs from the Middle Jurassic
+      Lower Member of the Shaximiao Formation", moore2020a writes of "beds of the
+      lower Shaximiao Formation" placing "the entirety of the Shaximiao Formation"
+      within the Late Jurassic, and the Sichuan Basin petroleum literature numbers
+      members inside one Shaximiao Formation. Xiashaximiao and Shangshaximiao as
+      coordinate formations is the older Chinese scheme, which xing2015a
+      reproduces from Peng et al. (2005) and which the reference work follows. The
+      member distinction is real and worth recording, but as a rank rather than as
+      a formation name (#2012).
+
+Gigantspinosaurus sichuanensis:
+  - categories: [formation]
+    source: dai2022a
+    verdict: ours-correct
+    note: >
+      Unit-level decision applied to every Shaximiao taxon, not a per-genus
+      reading. Current usage treats Shaximiao as one formation carrying lower and
+      upper members: dai2022a is titled "New stegosaurs from the Middle Jurassic
+      Lower Member of the Shaximiao Formation", moore2020a writes of "beds of the
+      lower Shaximiao Formation" placing "the entirety of the Shaximiao Formation"
+      within the Late Jurassic, and the Sichuan Basin petroleum literature numbers
+      members inside one Shaximiao Formation. Xiashaximiao and Shangshaximiao as
+      coordinate formations is the older Chinese scheme, which xing2015a
+      reproduces from Peng et al. (2005) and which the reference work follows. The
+      member distinction is real and worth recording, but as a rank rather than as
+      a formation name (#2012).
+
+Hexinlusaurus multidens:
+  - categories: [formation]
+    source: dai2022a
+    verdict: ours-correct
+    note: >
+      Unit-level decision applied to every Shaximiao taxon, not a per-genus
+      reading. Current usage treats Shaximiao as one formation carrying lower and
+      upper members: dai2022a is titled "New stegosaurs from the Middle Jurassic
+      Lower Member of the Shaximiao Formation", moore2020a writes of "beds of the
+      lower Shaximiao Formation" placing "the entirety of the Shaximiao Formation"
+      within the Late Jurassic, and the Sichuan Basin petroleum literature numbers
+      members inside one Shaximiao Formation. Xiashaximiao and Shangshaximiao as
+      coordinate formations is the older Chinese scheme, which xing2015a
+      reproduces from Peng et al. (2005) and which the reference work follows. The
+      member distinction is real and worth recording, but as a rank rather than as
+      a formation name (#2012).
+
+Huayangosaurus taibaii:
+  - categories: [formation]
+    source: dai2022a
+    verdict: ours-correct
+    note: >
+      Unit-level decision applied to every Shaximiao taxon, not a per-genus
+      reading. Current usage treats Shaximiao as one formation carrying lower and
+      upper members: dai2022a is titled "New stegosaurs from the Middle Jurassic
+      Lower Member of the Shaximiao Formation", moore2020a writes of "beds of the
+      lower Shaximiao Formation" placing "the entirety of the Shaximiao Formation"
+      within the Late Jurassic, and the Sichuan Basin petroleum literature numbers
+      members inside one Shaximiao Formation. Xiashaximiao and Shangshaximiao as
+      coordinate formations is the older Chinese scheme, which xing2015a
+      reproduces from Peng et al. (2005) and which the reference work follows. The
+      member distinction is real and worth recording, but as a rank rather than as
+      a formation name (#2012).
+
+Mamenchisaurus constructus:
+  - categories: [formation]
+    source: dai2022a
+    verdict: ours-correct
+    note: >
+      Unit-level decision applied to every Shaximiao taxon, not a per-genus
+      reading. Current usage treats Shaximiao as one formation carrying lower and
+      upper members: dai2022a is titled "New stegosaurs from the Middle Jurassic
+      Lower Member of the Shaximiao Formation", moore2020a writes of "beds of the
+      lower Shaximiao Formation" placing "the entirety of the Shaximiao Formation"
+      within the Late Jurassic, and the Sichuan Basin petroleum literature numbers
+      members inside one Shaximiao Formation. Xiashaximiao and Shangshaximiao as
+      coordinate formations is the older Chinese scheme, which xing2015a
+      reproduces from Peng et al. (2005) and which the reference work follows. The
+      member distinction is real and worth recording, but as a rank rather than as
+      a formation name (#2012).
+
+Protognathosaurus oxyodon:
+  - categories: [formation]
+    source: dai2022a
+    verdict: ours-correct
+    note: >
+      Unit-level decision applied to every Shaximiao taxon, not a per-genus
+      reading. Current usage treats Shaximiao as one formation carrying lower and
+      upper members: dai2022a is titled "New stegosaurs from the Middle Jurassic
+      Lower Member of the Shaximiao Formation", moore2020a writes of "beds of the
+      lower Shaximiao Formation" placing "the entirety of the Shaximiao Formation"
+      within the Late Jurassic, and the Sichuan Basin petroleum literature numbers
+      members inside one Shaximiao Formation. Xiashaximiao and Shangshaximiao as
+      coordinate formations is the older Chinese scheme, which xing2015a
+      reproduces from Peng et al. (2005) and which the reference work follows. The
+      member distinction is real and worth recording, but as a rank rather than as
+      a formation name (#2012).
+
+Tuojiangosaurus multispinus:
+  - categories: [formation]
+    source: dai2022a
+    verdict: ours-correct
+    note: >
+      Unit-level decision applied to every Shaximiao taxon, not a per-genus
+      reading. Current usage treats Shaximiao as one formation carrying lower and
+      upper members: dai2022a is titled "New stegosaurs from the Middle Jurassic
+      Lower Member of the Shaximiao Formation", moore2020a writes of "beds of the
+      lower Shaximiao Formation" placing "the entirety of the Shaximiao Formation"
+      within the Late Jurassic, and the Sichuan Basin petroleum literature numbers
+      members inside one Shaximiao Formation. Xiashaximiao and Shangshaximiao as
+      coordinate formations is the older Chinese scheme, which xing2015a
+      reproduces from Peng et al. (2005) and which the reference work follows. The
+      member distinction is real and worth recording, but as a rank rather than as
+      a formation name (#2012).
+
+Xiaosaurus dashanpensis:
+  - categories: [formation]
+    source: dai2022a
+    verdict: ours-correct
+    note: >
+      Unit-level decision applied to every Shaximiao taxon, not a per-genus
+      reading. Current usage treats Shaximiao as one formation carrying lower and
+      upper members: dai2022a is titled "New stegosaurs from the Middle Jurassic
+      Lower Member of the Shaximiao Formation", moore2020a writes of "beds of the
+      lower Shaximiao Formation" placing "the entirety of the Shaximiao Formation"
+      within the Late Jurassic, and the Sichuan Basin petroleum literature numbers
+      members inside one Shaximiao Formation. Xiashaximiao and Shangshaximiao as
+      coordinate formations is the older Chinese scheme, which xing2015a
+      reproduces from Peng et al. (2005) and which the reference work follows. The
+      member distinction is real and worth recording, but as a rank rather than as
+      a formation name (#2012).
+
+Xuanhanosaurus qilixiaensis:
+  - categories: [formation]
+    source: dai2022a
+    verdict: ours-correct
+    note: >
+      Unit-level decision applied to every Shaximiao taxon, not a per-genus
+      reading. Current usage treats Shaximiao as one formation carrying lower and
+      upper members: dai2022a is titled "New stegosaurs from the Middle Jurassic
+      Lower Member of the Shaximiao Formation", moore2020a writes of "beds of the
+      lower Shaximiao Formation" placing "the entirety of the Shaximiao Formation"
+      within the Late Jurassic, and the Sichuan Basin petroleum literature numbers
+      members inside one Shaximiao Formation. Xiashaximiao and Shangshaximiao as
+      coordinate formations is the older Chinese scheme, which xing2015a
+      reproduces from Peng et al. (2005) and which the reference work follows. The
+      member distinction is real and worth recording, but as a rank rather than as
+      a formation name (#2012).
+
+Yandusaurus hongheensis:
+  - categories: [formation]
+    source: dai2022a
+    verdict: ours-correct
+    note: >
+      Unit-level decision applied to every Shaximiao taxon, not a per-genus
+      reading. Current usage treats Shaximiao as one formation carrying lower and
+      upper members: dai2022a is titled "New stegosaurs from the Middle Jurassic
+      Lower Member of the Shaximiao Formation", moore2020a writes of "beds of the
+      lower Shaximiao Formation" placing "the entirety of the Shaximiao Formation"
+      within the Late Jurassic, and the Sichuan Basin petroleum literature numbers
+      members inside one Shaximiao Formation. Xiashaximiao and Shangshaximiao as
+      coordinate formations is the older Chinese scheme, which xing2015a
+      reproduces from Peng et al. (2005) and which the reference work follows. The
+      member distinction is real and worth recording, but as a rank rather than as
+      a formation name (#2012).
+
+Yingshanosaurus jichuanensis:
+  - categories: [formation]
+    source: dai2022a
+    verdict: ours-correct
+    note: >
+      Unit-level decision applied to every Shaximiao taxon, not a per-genus
+      reading. Current usage treats Shaximiao as one formation carrying lower and
+      upper members: dai2022a is titled "New stegosaurs from the Middle Jurassic
+      Lower Member of the Shaximiao Formation", moore2020a writes of "beds of the
+      lower Shaximiao Formation" placing "the entirety of the Shaximiao Formation"
+      within the Late Jurassic, and the Sichuan Basin petroleum literature numbers
+      members inside one Shaximiao Formation. Xiashaximiao and Shangshaximiao as
+      coordinate formations is the older Chinese scheme, which xing2015a
+      reproduces from Peng et al. (2005) and which the reference work follows. The
+      member distinction is real and worth recording, but as a rank rather than as
+      a formation name (#2012).
+
+Efraasia minor:
+  - categories: [formation]
+    source: litholex
+    verdict: ours-correct
+    note: >
+      LithoLex record 10000112 (the current version; 5000011 is superseded) lists
+      "Synonyme und obsolete Einheiten: Loewensteiner Sandstein, Weisser Sandstein,
+      Stubensandstein, Burgsandstein (ohne 'Heldburgstufe'), Loewenstein-Subfolge
+      (ohne Knollenmergel)". Loewenstein-Formation is the valid name and
+      Stubensandstein the obsolete one, so the reference work quotes the
+      superseded form. Erected by SKPT decision of 19.07.1997, ratified in DSK
+      (2005), Stratigraphie von Deutschland IV: Keuper, section 5.8.6.5
+      "Stubensandstein- (Loewenstein-) Formation (km4)".
+
+Halticosaurus longotarsus:
+  - categories: [formation]
+    source: litholex
+    verdict: ours-correct
+    note: >
+      LithoLex record 10000112 (the current version; 5000011 is superseded) lists
+      "Synonyme und obsolete Einheiten: Loewensteiner Sandstein, Weisser Sandstein,
+      Stubensandstein, Burgsandstein (ohne 'Heldburgstufe'), Loewenstein-Subfolge
+      (ohne Knollenmergel)". Loewenstein-Formation is the valid name and
+      Stubensandstein the obsolete one, so the reference work quotes the
+      superseded form. Erected by SKPT decision of 19.07.1997, ratified in DSK
+      (2005), Stratigraphie von Deutschland IV: Keuper, section 5.8.6.5
+      "Stubensandstein- (Loewenstein-) Formation (km4)".
+
+Liliensternus liliensterni:
+  - categories: [formation]
+    source: litholex
+    verdict: ours-correct
+    note: >
+      LithoLex record 5000008 (current) lists "Synonyme und obsolete Einheiten:
+      Knollenmergel, Knollenmergel-Formation, Feuerletten, Grenzmergel,
+      Zanclodon-Letten". Trossingen-Formation is the valid name and Knollenmergel
+      the obsolete one, so the reference work quotes the superseded form. Erected
+      by SKPT decision of 19.07.1997, ratified in DSK (2005), Stratigraphie von
+      Deutschland IV: Keuper, section 5.8.6.6 "Knollenmergel- (Trossingen-)
+      Formation (km5)".
+
+Procompsognathus triassicus:
+  - categories: [formation]
+    source: litholex
+    verdict: ours-correct
+    note: >
+      LithoLex record 10000112 (the current version; 5000011 is superseded) lists
+      "Synonyme und obsolete Einheiten: Loewensteiner Sandstein, Weisser Sandstein,
+      Stubensandstein, Burgsandstein (ohne 'Heldburgstufe'), Loewenstein-Subfolge
+      (ohne Knollenmergel)". Loewenstein-Formation is the valid name and
+      Stubensandstein the obsolete one, so the reference work quotes the
+      superseded form. Erected by SKPT decision of 19.07.1997, ratified in DSK
+      (2005), Stratigraphie von Deutschland IV: Keuper, section 5.8.6.5
+      "Stubensandstein- (Loewenstein-) Formation (km4)". The same record subdivides the unit
+      into Untere, Mittlere and Obere Loewenstein-Formation, so weishampel2004a's
+      "Middle Stubensandstein" is a subdivision of ours rather than a rival unit.
+
+Archaeopteryx lithographica:
+  - categories: [formation]
+    source: litholex
+    verdict: ours-correct
+    note: >
+      LithoLex record 4012051, Altmuehltal-Formation, valid, defined by Niebuhr in
+      Niebuhr & Puerner (2014) after Krumbeck (1928). Its "Synonyme und obsolete
+      Einheiten" list includes "Solnhofener Schichten", "Solnhofen formation" and
+      "Eichstaetter Schiefer-Serie", so the reference work's Solnhofen Fm. is the
+      obsolete name for the unit we already hold, and our locality is the
+      Blumenberg Quarry at Eichstaett. The alternative it offers, Moernsheim Fm.,
+      is a separate valid formation (record 4012058) overlying the Altmuehltal and
+      yielding other Archaeopteryx specimens, but not this one.
+
+Anomalipes zhaoi:
+  - categories: [formation]
+    source: an2015z
+    verdict: ours-correct
+    note: >
+      Rank, not identity: Hongtuya and Jingangkou are formations WITHIN the
+      Wangshi Group, so the reference work's "Wangshi Grp." is the coarser
+      container of the value we already hold. an2015z treats the two as nested
+      throughout -- "the Hongtuya Formation of the Wangshi Group in the Zhucheng
+      Basin". Ours is the finer and correct value; recording the group as well
+      needs the rank field under discussion in #2012.
+
+Tsintaosaurus spinorhinus:
+  - categories: [formation]
+    source: an2015z
+    verdict: ours-correct
+    note: >
+      Rank, not identity: Hongtuya and Jingangkou are formations WITHIN the
+      Wangshi Group, so the reference work's "Wangshi Grp." is the coarser
+      container of the value we already hold. an2015z treats the two as nested
+      throughout -- "the Hongtuya Formation of the Wangshi Group in the Zhucheng
+      Basin". Ours is the finer and correct value; recording the group as well
+      needs the rank field under discussion in #2012.
+
+Sinoceratops zhuchengensis:
+  - categories: [formation]
+    source: an2015z
+    verdict: ours-correct
+    note: >
+      an2015z, which dated these bone beds, names the taxa directly: "Many
+      dinosaur fossils, only found in the uppermost Upper Cretaceous strata, such
+      as Sinoceratops zhuchengensis, Zhuchengtyrannus magnus, Tsintaosaurus
+      spinorhinus, Tanius chinkankouenssi, and Tanius laiyangensis, have been
+      reported in recent years from the Hongtuya Formation". The paper's whole
+      subject is "the dinosaur bone beds of the Hongtuya Formation in the Zhucheng
+      Basin", dated between 77.3 and 73.5 Ma and so Campanian, which also
+      corroborates our stage. The reference work's Xingezhuang Fm. is the
+      underlying formation of the same group.
+
+Zhuchengtyrannus magnus:
+  - categories: [formation]
+    source: an2015z
+    verdict: ours-correct
+    note: >
+      an2015z, which dated these bone beds, names the taxa directly: "Many
+      dinosaur fossils, only found in the uppermost Upper Cretaceous strata, such
+      as Sinoceratops zhuchengensis, Zhuchengtyrannus magnus, Tsintaosaurus
+      spinorhinus, Tanius chinkankouenssi, and Tanius laiyangensis, have been
+      reported in recent years from the Hongtuya Formation". The paper's whole
+      subject is "the dinosaur bone beds of the Hongtuya Formation in the Zhucheng
+      Basin", dated between 77.3 and 73.5 Ma and so Campanian, which also
+      corroborates our stage. The reference work's Xingezhuang Fm. is the
+      underlying formation of the same group.
+
+Zhuchengceratops inexpectus:
+  - categories: [formation]
+    source: an2015z
+    verdict: ours-correct
+    note: >
+      an2015z, which dated these bone beds, names the taxa directly: "Many
+      dinosaur fossils, only found in the uppermost Upper Cretaceous strata, such
+      as Sinoceratops zhuchengensis, Zhuchengtyrannus magnus, Tsintaosaurus
+      spinorhinus, Tanius chinkankouenssi, and Tanius laiyangensis, have been
+      reported in recent years from the Hongtuya Formation". The paper's whole
+      subject is "the dinosaur bone beds of the Hongtuya Formation in the Zhucheng
+      Basin", dated between 77.3 and 73.5 Ma and so Campanian, which also
+      corroborates our stage. The reference work's Xingezhuang Fm. is the
+      underlying formation of the same group. This taxon is not named in that list, but
+      it comes from the same Zhucheng bone beds the paper is about, so it is
+      covered collectively rather than individually.
+
+Ischioceratops zhuchengensis:
+  - categories: [formation]
+    source: an2015z
+    verdict: ours-correct
+    note: >
+      an2015z, which dated these bone beds, names the taxa directly: "Many
+      dinosaur fossils, only found in the uppermost Upper Cretaceous strata, such
+      as Sinoceratops zhuchengensis, Zhuchengtyrannus magnus, Tsintaosaurus
+      spinorhinus, Tanius chinkankouenssi, and Tanius laiyangensis, have been
+      reported in recent years from the Hongtuya Formation". The paper's whole
+      subject is "the dinosaur bone beds of the Hongtuya Formation in the Zhucheng
+      Basin", dated between 77.3 and 73.5 Ma and so Campanian, which also
+      corroborates our stage. The reference work's Xingezhuang Fm. is the
+      underlying formation of the same group. This taxon is not named in that list, but
+      it comes from the same Zhucheng bone beds the paper is about, so it is
+      covered collectively rather than individually.
+
+Ohmdenosaurus liasicus:
+  - categories: [formation]
+    source: litholex
+    verdict: ours-correct
+    note: >
+      LithoLex record 4012098, Posidonienschiefer-Formation, valid, F. A. Roemer
+      1836, Untertoarcium. Its synonymy is a list of historical German names and
+      does NOT include Sachrang, which is an Alpine unit rather than another name
+      for this one, so jones2026b names a different formation. weishampel2004a's
+      "Posidonienschiefer" is the same unit as ours under its German name;
+      "Posidonia Shale" is the form English-language papers print, which is what
+      CONTRIBUTING.md's naming rule asks for.
+
+Emausaurus ernsti:
+  - categories: [formation]
+    source: litholex
+    verdict: ours-correct
+    note: >
+      Rank, not identity. "Lehmhagen Member" returns nothing in LithoLex, while
+      Ciechocinek-Formation (record 4012021) is valid, Untertoarcium, and covers
+      Mecklenburg-Vorpommern, where the Grimmen clay pit lies; its synonymy even
+      reads "Aequivalente des Posidonienschiefers, unterer Teil". So Lehmhagen is
+      an informal member of the formation jones2026a names, and ours is the finer
+      value -- the same shape as Hongtuya within the Wangshi Group. Expressing
+      both needs the rank field under discussion in #2012.
