@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-08-04T22:57:33.115Z",
+    "built_at": "2026-08-04T23:40:43.870Z",
     "clade_count": 188,
     "genus_count": 1401,
     "license": "CC-BY-4.0",
@@ -168620,7 +168620,7 @@
       "parent": "Troodontidae",
       "placement": "incertae sedis",
       "dispute": {
-        "summary": "Polyodontosaurus grandis, based on a single troodontid dentary, is widely regarded as a nomen dubium: Currie (1987) referred its material to Troodon, and van der Reest and Currie (2017) confirmed the dentary lacks diagnostic features. It cannot be placed below family level and is retained at Troodontidae incertae sedis.\n",
+        "summary": "Polyodontosaurus grandis rests on a single troodontid dentary, CMN 8540, and successive workers have folded it into the Dinosaur Park troodontid complex: Carpenter (1982) listed it in the synonymy of Saurornithoides inequalis, Currie (1987) treated the dentary as Troodon material, and Varricchio et al. (2025) carry it in the synonymy of Troodon formosus. Van der Reest and Currie (2017) declared it a nomen dubium on two grounds — troodontid dentary morphology is not variable enough to distinguish taxa, and the reported provenance of CMN 8540 cannot be reconciled with the exposures at the stated locality, so its horizon within the formation is unrecoverable. They raised the possibility that Latenivenatrix mcmasterae represents the same taxon but declined it as untestable, and no synonymy in either direction has been proposed. The genus cannot be placed below family level and is retained at Troodontidae incertae sedis.\n",
         "history": [
           {
             "date": "2026-07-01",
@@ -168631,8 +168631,8 @@
       "pronunciation": {
         "phonetic": "pol-ee-o-DON-to-SAWR-us"
       },
-      "etymology": "From Greek polys (many), odon (tooth), and sauros (lizard); meaning \"many-toothed lizard\".",
-      "description": "Polyodontosaurus is a potentially dubious genus of troodontid dinosaur named in 1932 by Charles W. Gilmore for a left dentary from the Dinosaur Park Formation. It had been considered a synonym of Stenonychosaurus or Troodon for a significant time, before being declared a nomen dubium. The only known species is the type, P. grandis.",
+      "etymology": "From Greek 'polys' meaning 'many', 'odon' meaning 'tooth', and 'sauros' meaning 'lizard'; meaning 'many-toothed lizard', for the high alveolus count of the type dentary.",
+      "description": "Polyodontosaurus is a dubious genus of troodontid dinosaur named in 1932 by Charles W. Gilmore for a single left dentary from the Dinosaur Park Formation of Alberta, Canada, which he originally took for a large lizard. Sternberg (1951) recognized the jaw as theropod instead, and later workers referred the specimen to the better-known Dinosaur Park troodontids before it was declared a nomen dubium. The only known species is the type, P. grandis.",
       "diet": "carnivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -168653,39 +168653,27 @@
           "id": "Q48834266"
         }
       ],
-      "synonyms": [
-        {
-          "name": "Latenivenatrix",
-          "type": "possible subjective",
-          "reason": "Possible junior subjective synonym of Polyodontosaurus; identification is tentative. Per Olshevsky's Dinosaur Genera List."
-        }
-      ],
       "species": [
         {
-          "name": "Troodon formosus",
-          "etymology": "From Latin 'formosus' meaning 'beautiful' or 'well-formed'.",
-          "status": "valid",
+          "name": "Polyodontosaurus grandis",
+          "etymology": "From Latin 'grandis' meaning 'large' or 'great'.",
+          "status": "nomen dubium",
           "type_species": true,
           "period": {
             "name": [
               "Late Cretaceous"
             ],
             "stage": [
-              "Campanian",
-              "Maastrichtian"
+              "Campanian"
             ],
             "from_ma": 83.6,
-            "to_ma": 66
+            "to_ma": 72.2
           },
           "location": {
             "country": "CA",
-            "locality": "Judith River badlands",
+            "locality": "Railway Cut badlands, Steveville area, reportedly about 3 miles southwest of the mouth of Berry Creek",
             "region": "Alberta",
             "formation": "Dinosaur Park",
-            "coordinates": [
-              47.718712,
-              -109.636551
-            ],
             "region_code": "CA-AB"
           },
           "type_specimen": {
@@ -168694,10 +168682,11 @@
             ],
             "specimen_type": "holotype",
             "institution": "Canadian Museum of Nature",
-            "material": "Single left dentary, lacking teeth",
+            "material": "Nearly complete left dentary, edentulous, 117.5 mm long and bearing 35 alveoli",
             "completeness": "fragmentary"
           },
           "erected_in": "gilmore1932a",
+          "described_in": "currie1987a",
           "authors": "Gilmore, C. W.",
           "described": 1932
         }
@@ -168713,16 +168702,16 @@
           "pages": "117-119"
         },
         {
-          "id": "vanderreest2017a",
-          "authors": "van der Reest, A. J.; Currie, P. J.",
-          "year": 2017,
-          "title": "Troodontids (Theropoda) from the Dinosaur Park Formation, Alberta, with a description of a unique new taxon: implications for deinonychosaur diversity in North America",
-          "journal": "Canadian Journal of Earth Sciences",
-          "volume": "54",
-          "issue": "9",
-          "pages": "919-935",
-          "doi": "10.1139/cjes-2017-0031",
-          "notes": "Confirmed Polyodontosaurus material belongs to Troodon, treating it as a nomen dubium"
+          "id": "carpenter1982a",
+          "authors": "Carpenter, K.",
+          "year": 1982,
+          "title": "Baby dinosaurs from the Late Cretaceous Lance and Hell Creek formations and a description of a new species of theropod",
+          "journal": "Contributions to Geology, University of Wyoming",
+          "volume": "20",
+          "issue": "2",
+          "pages": "123-134",
+          "doi": "10.15468/gcrned",
+          "notes": "Listed Polyodontosaurus grandis in the synonymy of Saurornithoides inequalis"
         },
         {
           "id": "currie1987a",
@@ -168735,7 +168724,32 @@
           "issue": "1",
           "pages": "72-81",
           "doi": "10.1080/02724634.1987.10011638",
-          "notes": "Bearing on the troodontid identity of Polyodontosaurus."
+          "notes": "Described and figured the holotype dentary CMN 8540 as material of Troodon"
+        },
+        {
+          "id": "vanderreest2017a",
+          "authors": "van der Reest, A. J.; Currie, P. J.",
+          "year": 2017,
+          "title": "Troodontids (Theropoda) from the Dinosaur Park Formation, Alberta, with a description of a unique new taxon: implications for deinonychosaur diversity in North America",
+          "journal": "Canadian Journal of Earth Sciences",
+          "volume": "54",
+          "issue": "9",
+          "pages": "919-935",
+          "doi": "10.1139/cjes-2017-0031",
+          "notes": "Declared Polyodontosaurus grandis a nomen dubium on undiagnostic dentary morphology and unrecoverable provenance"
+        },
+        {
+          "id": "varricchio2025a",
+          "authors": "Varricchio, D. J.; Hogan, J. D.; Gardner, J. D.",
+          "year": 2025,
+          "title": "Troodontid specimens from the Cretaceous Two Medicine Formation of Montana (USA) and the validity of Troodon formosus",
+          "journal": "Journal of Paleontology",
+          "publisher": "Cambridge University Press (CUP)",
+          "volume": "99",
+          "issue": "1",
+          "pages": "219-240",
+          "doi": "10.1017/jpa.2024.67",
+          "notes": "Carried Polyodontosaurus grandis in the synonymy of Troodon formosus"
         }
       ],
       "taxonomy": [
