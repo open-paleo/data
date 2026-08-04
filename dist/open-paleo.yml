@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-08-04T03:05:36.919Z
+  built_at: 2026-08-04T04:15:01.474Z
   clade_count: 188
-  genus_count: 1402
+  genus_count: 1401
   license: CC-BY-4.0
   schema_version: 1.2.0
   version: "2026.08"
@@ -73752,118 +73752,6 @@ genera:
       - Microraptorinae
     authors: Xu, X.; Wang, X.-L.
     described: 2004
-  Gravitholus:
-    genus: Gravitholus
-    parent: Pachycephalosauridae
-    pronunciation:
-      phonetic: GRAV-i-THOL-us
-    etymology: From Latin gravis (heavy) and tholus (dome); meaning 'heavy dome', referring to its thick skull roof
-    description: Gravitholus was a genus of pachycephalosaurid dinosaur from the late Cretaceous period (Campanian stage, around 75 million years ago). It was a pachycephalosaur, and like other pachycephalosaurids the skull roof formed a thick dome made of dense bone, which may have been used in head-butting contests over mates or territory. It lived in what is now Alberta, Canada, and was described in 1979 by W. P. Wall and Peter Galton. The type species is Gravitholus albertae.
-    dispute:
-      summary: |
-        The validity of Gravitholus is contested. Dyer et al. (2023) used synchrotron microtomography and morphometrics to argue that Gravitholus albertae is a subjective junior synonym of Stegoceras validum, a conclusion followed by Jones and Viola (2026); its describing-era treatment (Longrich et al., 2010) considered it valid. Pending broad consensus it is retained as a valid basal pachycephalosaurid.
-      history:
-        - date: 2026-06-26
-          note: Placed at Pachycephalosauridae (Stegoceras-grade), kept valid pending consensus although recent work synonymizes it with Stegoceras validum.
-    diet: herbivore
-    locomotion: bipedal
-    paleoenvironment:
-      - fluvial
-      - coastal
-    diagnostic_features:
-      - Skull roof thickened to a very wide dome, larger than any known specimen of Stegoceras.
-      - Parietal contains a large depression and many smaller pits.
-      - Braincase significantly smaller relative to dome size compared even to large specimens of Stegoceras validus (endocranial length/frontoparietal length ratio of 31.3 vs. minimum ~42 for large Stegoceras).
-      - Extreme dome width produces a significantly different width ratio compared to Stegoceras and Pachycephalosaurus.
-      - Node-like ornamentation absent.
-    appearance:
-      integument: scaled
-      evidence: inferred
-    identifiers:
-      - source: pbdb
-        id: "38784"
-      - source: wikidata
-        id: Q134642
-      - source: gbif
-        id: "4823084"
-    species:
-      - name: Gravitholus albertae
-        etymology: From 'Alberta', the Canadian province where the holotype was recovered, with the Latin suffix '-ae' indicating possession.
-        status: disputed
-        type_species: true
-        period:
-          name:
-            - Late Cretaceous
-          stage:
-            - Campanian
-          from_ma: 83.6
-          to_ma: 72.2
-        location:
-          country: CA
-          locality: near Jenner Ferry, Ralston
-          region: Alberta
-          formation: Oldman
-          coordinates:
-            - 50.45
-            - -111.12
-          region_code: CA-AB
-        erected_in: wall1979a
-        type_specimen:
-          specimen_id:
-            - TMP 1972.027.0001
-          specimen_type: holotype
-          institution: Royal Tyrrell Museum of Paleontology
-          material: Frontoparietal dome.
-          completeness: fragmentary
-        authors: Wall, W. P.; Galton, P. M.
-        described: 1979
-    references:
-      - id: wall1979a
-        authors: Wall, W. P.; Galton, P. M.
-        year: 1979
-        title: "Notes on pachycephalosaurid dinosaurs (Reptilia: Ornithischia) from North America, with comments on their status as ornithopods"
-        journal: Canadian Journal of Earth Sciences
-        publisher: Canadian Science Publishing
-        volume: "16"
-        issue: "6"
-        pages: 1176-1186
-        doi: 10.1139/e79-104
-      - id: jones2026a
-        authors: Jones, B.; Viola, E.
-        year: 2026
-        title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
-        publisher: Princeton University Press
-        isbn: 978-0-691-25025-0
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
-      - id: dyer2023a
-        authors: Dyer, A. D.; Powers, M. J.; Currie, P. J.
-        year: 2023
-        title: "Problematic putative pachycephalosaurids: synchrotron microCT imaging shines new light on the anatomy and taxonomic validity of Gravitholus albertae from the Belly River Group (Campanian) of Alberta, Canada"
-        journal: Vertebrate Anatomy Morphology Palaeontology
-        publisher: University of Alberta Libraries
-        volume: "11"
-        pages: 1-33
-        doi: 10.18435/vamp29388
-        notes: Argued Gravitholus albertae is a junior synonym of Stegoceras validum using synchrotron microCT and morphometrics.
-    taxonomy:
-      - Life
-      - Animalia
-      - Chordata
-      - Vertebrata
-      - Sarcopterygii
-      - Tetrapoda
-      - Reptilia
-      - Archosauria
-      - Dinosauria
-      - Ornithischia
-      - Genasauria
-      - Neornithischia
-      - Cerapoda
-      - Marginocephalia
-      - Pachycephalosauria
-      - Pachycephalosauridae
-    authors: Wall, W. P.; Galton, P. M.
-    described: 1979
   Gremlin:
     genus: Gremlin
     parent: Leptoceratopsidae
@@ -152892,6 +152780,9 @@ genera:
       - name: Ornatotholus
         type: junior subjective
         reason: Now generally interpreted as a juvenile Stegoceras.
+      - name: Gravitholus
+        type: junior subjective
+        reason: Dyer and others (2023) re-examined the holotype dome and found it a late-stage growth form of Stegoceras validum, its width and proportions being allometric and its parietal depression pathological; Woodruff and others (2025) agree and exclude it from analysis.
     species:
       - name: Stegoceras validum
         etymology: From Latin 'validus' meaning 'strong' or 'powerful'.
@@ -153000,6 +152891,26 @@ genera:
         issue: "2"
         pages: 25-81
         doi: 10.5281/zenodo.3233762
+      - id: dyer2023a
+        authors: Dyer, A. D.; Powers, M. J.; Currie, P. J.
+        year: 2023
+        title: "Problematic putative pachycephalosaurids: synchrotron microCT imaging shines new light on the anatomy and taxonomic validity of Gravitholus albertae from the Belly River Group (Campanian) of Alberta, Canada"
+        journal: Vertebrate Anatomy Morphology Palaeontology
+        publisher: University of Alberta Libraries
+        volume: "11"
+        pages: 1-33
+        doi: 10.18435/vamp29388
+        notes: Synchrotron microCT and morphometric re-examination of the Gravitholus holotype, sinking that genus and Hanssuesia into Stegoceras validum.
+      - id: woodruff2025a
+        authors: Woodruff, D. C.; Horner, J. R.; Goodwin, M. B.; Evans, D. C.
+        year: 2025
+        title: "The first pachycephalosaurid from the Late Cretaceous Two Medicine Formation: effects of the Western Interior Seaway on North American pachycephalosaurid evolution"
+        journal: Zoological Journal of the Linnean Society
+        publisher: Oxford University Press (OUP)
+        volume: "205"
+        issue: "2"
+        doi: 10.1093/zoolinnean/zlaf087
+        notes: Concurs with the synonymy of Gravitholus, and holds Hanssuesia pending a fuller ontogenetic assessment.
       - id: paul2024a
         authors: Paul, G. S.
         year: 2024
