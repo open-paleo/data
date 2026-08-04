@@ -91,6 +91,35 @@ tiers warrant different effort:
   cross-check**, so a parser artifact there cannot be caught by disagreement.
   Sample a batch before trusting it.
 
+A source id marked **`~`** was joined on a near-epithet match rather than an
+exact one, because that work misspells the binomial. The pairing is listed in
+full under **Fuzzy binomial joins** — check it before trusting a finding that
+rests on one, since a wrong pairing attributes another species' values here.
+
+## Why the join is fuzzy
+
+An exact binomial join drops a misspelled row silently, and drops it from
+*every* bucket at once. `jones2026a` prints *Anoplosaurus **cartonotus*** for
+`curtonotus`; that one letter hid a row carrying the correct Albian age, the
+formation, and the lectotype number, while the record sat on a Cenomanian age
+inherited from the deposit rather than the animal (#2008).
+
+So an exact miss falls back to a same-genus row whose epithet is within one edit
+(under six characters) or two. Three guards keep it from inventing facts:
+
+- **Resolved per reference work, not per species.** Anoplosaurus matched
+  `weishampel2004a` exactly, so a species-level fallback would never have fired
+  and the Jones row would still be invisible. Each work is joined independently.
+- **A row naming one of our species exactly is never a misspelling of a
+  sibling**, so it is excluded as a candidate outright.
+- **Ambiguity is dropped, never guessed.** A candidate within range of two of
+  our species, or one work offering two near spellings, yields no join at all.
+
+This recovers ~40 rows. Every one inspected on introduction was a genuine typo
+(`markwitchelli`, `deegrootorum`, `shijiangoensis`), and it reopened the
+holotype bucket that had been fully cleared — a reference work cannot be
+compared against a row the join never delivered.
+
 ## Known artifact classes
 
 - **Molina-Pérez is the least clean source** — positional parsing, locality

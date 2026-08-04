@@ -8,6 +8,12 @@ and Tier 2 settles it against the describing paper. In particular a mismatch is
 just as likely to be the reference work being wrong, or lagging, as us.
 
 Matching is at species level, since the reference tables are one row per species.
+An exact binomial join drops any row whose epithet the reference work misspells,
+and it drops it silently across every bucket at once -- jones2026a prints
+"Anoplosaurus cartonotus" for curtonotus, taking its correct Albian age and its
+lectotype number with it. So an exact miss falls back to a same-genus,
+near-epithet match, reported separately and marked with `~` so a reader can tell
+a fuzzy join from a clean one.
 
 Country names are mapped to ISO codes by MAJORITY VOTE over the matched pairs
 rather than from a hand-written table: whatever ISO code our data most often
@@ -346,6 +352,110 @@ def loadReferenceRecords():
     return byBinomial
 
 
+def epithetDistance(first, second, ceiling):
+    """Levenshtein distance between two species epithets, bounded for speed.
+
+    @param first: One epithet, lowercased.
+    @param second: The other epithet, lowercased.
+    @param ceiling: Distance above which the exact value stops mattering.
+    @returns: The edit distance, or ceiling + 1 once it is certain to exceed it.
+    """
+    if abs(len(first) - len(second)) > ceiling:
+        return ceiling + 1
+
+    previous = list(range(len(second) + 1))
+
+    for firstIndex, firstCharacter in enumerate(first, 1):
+        current = [firstIndex]
+
+        for secondIndex, secondCharacter in enumerate(second, 1):
+            current.append(min(previous[secondIndex] + 1,
+                               current[secondIndex - 1] + 1,
+                               previous[secondIndex - 1] + (firstCharacter != secondCharacter)))
+
+        if min(current) > ceiling:
+            return ceiling + 1
+
+        previous = current
+
+    return previous[-1]
+
+
+def allowedDistance(epithet):
+    """How far an epithet may differ before the match stops being a typo.
+
+    Two edits on a short epithet rewrites half of it, so the allowance scales
+    with length rather than being flat.
+
+    @param epithet: Our epithet, lowercased.
+    @returns: Maximum edit distance treated as a misspelling of this epithet.
+    """
+    return 1 if len(epithet) < 6 else 2
+
+
+def buildFuzzyIndex(referenceRecords, ourBinomials):
+    """Group reference binomials by genus for the near-epithet fallback.
+
+    Reference keys that already name one of our species exactly are excluded: a
+    row for a species we hold is a real row for that species, never a
+    misspelling of a sibling.
+
+    @param referenceRecords: Dict of lowercased binomial -> list of records.
+    @param ourBinomials: Set of our lowercased binomials.
+    @returns: Dict of lowercased genus -> list of (epithet, referenceKey).
+    """
+    byGenus = collections.defaultdict(list)
+
+    for key in referenceRecords:
+        if key in ourBinomials:
+            continue
+
+        parts = key.split(" ", 1)
+
+        if len(parts) == 2 and parts[1]:
+            byGenus[parts[0]].append((parts[1], key))
+
+    return byGenus
+
+
+def findFuzzyMatches(binomial, fuzzyIndex, ourEpithetsByGenus):
+    """Find reference keys that plausibly misspell this species.
+
+    A candidate close to two of our species in the same genus is dropped rather
+    than guessed at: it tells us nothing about which was meant, and a wrong join
+    is worse than a missing one -- it would attribute another species' holotype
+    and age to this record.
+
+    @param binomial: Our binomial, lowercased.
+    @param fuzzyIndex: Genus -> list of (epithet, referenceKey) candidates.
+    @param ourEpithetsByGenus: Genus -> list of our epithets in that genus.
+    @returns: List of candidate reference keys, possibly empty.
+    """
+    parts = binomial.split(" ", 1)
+
+    if len(parts) != 2 or not parts[1]:
+        return []
+
+    genus, epithet = parts
+    ceiling = allowedDistance(epithet)
+    hits = []
+
+    for candidate, key in fuzzyIndex.get(genus, []):
+        if epithetDistance(epithet, candidate, ceiling) > ceiling:
+            continue
+
+        # The candidate must be nearer to us than to any sibling we also hold,
+        # or it is as likely to be that sibling's row as it is to be ours.
+        rivals = [other for other in ourEpithetsByGenus.get(genus, [])
+                  if other != epithet
+                  and epithetDistance(other, candidate, ceiling) <= ceiling]
+
+        if not rivals:
+            hits.append(key)
+
+    return hits
+
+
 def loadSpeciesRecords():
     """Flatten every genus YAML into per-species records for comparison.
 
@@ -414,10 +524,48 @@ def main():
     referenceRecords = loadReferenceRecords()
     speciesRecords = loadSpeciesRecords()
 
+    ourBinomials = {record["binomial"].lower() for record in speciesRecords}
+    ourEpithetsByGenus = collections.defaultdict(list)
+
+    for binomial in ourBinomials:
+        parts = binomial.split(" ", 1)
+
+        if len(parts) == 2 and parts[1]:
+            ourEpithetsByGenus[parts[0]].append(parts[1])
+
+    fuzzyIndex = buildFuzzyIndex(referenceRecords, ourBinomials)
     matched = []
+    fuzzyJoins = []
 
     for record in speciesRecords:
-        candidates = referenceRecords.get(record["binomial"].lower())
+        binomial = record["binomial"].lower()
+        candidates = list(referenceRecords.get(binomial) or [])
+
+        # Resolved per reference work, not once for the species. A work that
+        # spells the binomial correctly contributes its exact row; a work that
+        # misspells it is otherwise dropped even though the others matched --
+        # which is how jones2026a's "cartonotus" row went unseen while
+        # weishampel2004a's "curtonotus" row matched cleanly.
+        alreadyMatched = {reference["ref_id"] for reference in candidates}
+        bySource = collections.defaultdict(list)
+
+        for key in findFuzzyMatches(binomial, fuzzyIndex, ourEpithetsByGenus):
+            for reference in referenceRecords[key]:
+                if reference["ref_id"] not in alreadyMatched:
+                    bySource[reference["ref_id"]].append((key, reference))
+
+        for refId, entries in bySource.items():
+            # One work offering two near spellings cannot be resolved: either is
+            # as good a candidate as the other, and picking one invents a fact.
+            if len({key for key, _ in entries}) != 1:
+                continue
+
+            for key, reference in entries:
+                # Tagged on the record rather than tracked alongside it, so the
+                # marker survives into every bucket the row feeds without
+                # threading a second value through each comparison.
+                candidates.append(dict(reference, fuzzyBinomial=key))
+                fuzzyJoins.append((record["binomial"], key, refId))
 
         if candidates:
             matched.append((record, candidates))
@@ -482,7 +630,9 @@ def main():
 
     for ours, references in matched:
         settled = adjudicated.get(ours["binomial"], set())
-        sourceIds = ",".join(sorted({reference["ref_id"] for reference in references}))
+        sourceIds = ",".join(sorted({
+            reference["ref_id"] + ("~" if reference.get("fuzzyBinomial") else "")
+            for reference in references}))
         label = f"{ours['binomial']} [{sourceIds}]"
 
         ourSpecimens = {foldSpecimen(value, institutionAliases) for value in ours["specimenIds"]}
@@ -642,6 +792,7 @@ def main():
     print(f"genus species records:      {len(speciesRecords)}")
     print(f"reference binomials:        {len(referenceRecords)}")
     print(f"matched on binomial:        {len(matched)}")
+    print(f"  of those, fuzzy-joined:   {len({join[0] for join in fuzzyJoins})}")
     print(f"country names mapped:       {len(countryMap)}")
     print()
     print("Findings by category:")
@@ -664,12 +815,29 @@ def main():
              "  found to be variant spellings of one unit, not different units. Choosing a",
              "  canonical form is deferred to #2012 (formations registry). A spelling NOT in",
              "  `formation-variants.yml` is new and does need review.", "",
+             "A source id marked `~` was joined on a near-epithet match, not an exact one,",
+             "because the reference work misspells the binomial. Check the pairing in",
+             "\"Fuzzy binomial joins\" below before trusting a finding that rests on one.", "",
              "## Summary", ""]
 
     for category in sorted(findings, key=lambda key: -len(findings[key])):
         lines.append(f"- **{category}**: {len(findings[category])}")
 
     lines.append("")
+
+    if fuzzyJoins:
+        lines.append(f"## Fuzzy binomial joins ({len({join[0] for join in fuzzyJoins})})")
+        lines.append("")
+        lines.append("Our binomial matched no reference row exactly, so it was joined to a")
+        lines.append("same-genus row whose epithet is within one or two edits. Each pairing is")
+        lines.append("a claim that the reference work misspelled the name; a wrong one silently")
+        lines.append("attributes another species' values to this record.")
+        lines.append("")
+
+        for binomial, key, refId in sorted(set(fuzzyJoins)):
+            lines.append(f"- `{binomial}` ← *{key}* ({refId})")
+
+        lines.append("")
 
     for category in sorted(findings, key=lambda key: -len(findings[category])):
         rows = findings[category]
