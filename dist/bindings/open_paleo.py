@@ -93,7 +93,14 @@ class Location(BaseModel):
     country: Optional[constr(pattern=r'^[A-Z]{2}$')] = Field(
         None, description='ISO 3166-1 alpha-2 code (see schema.yml countries).'
     )
-    region: Optional[str] = None
+    region: Optional[str] = Field(
+        None,
+        description='English name of the ISO 3166-2 subdivision, resolved from region_code.',
+    )
+    region_code: Optional[constr(pattern=r'^[A-Z]{2}-[A-Z0-9]{1,3}$')] = Field(
+        None,
+        description='ISO 3166-2 subdivision code (see regions.yaml). Absent where a country has no subdivisions.',
+    )
     locality: Optional[str] = None
     formation: Optional[str] = None
     member: Optional[str] = None

@@ -417,7 +417,14 @@ export interface Location {
    * ISO 3166-1 alpha-2 code (see schema.yml countries).
    */
   country?: string;
+  /**
+   * English name of the ISO 3166-2 subdivision, resolved from region_code.
+   */
   region?: string;
+  /**
+   * ISO 3166-2 subdivision code (see regions.yaml). Absent where a country has no subdivisions.
+   */
+  region_code?: string;
   locality?: string;
   formation?: string;
   member?: string;
