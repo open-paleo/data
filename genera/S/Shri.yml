@@ -3,7 +3,7 @@ parent: Velociraptorinae
 pronunciation:
   ipa: /ʃriː/
   phonetic: shree
-etymology: "Named after Palden Lhamo (Shri Devi), a Buddhist deity."
+etymology: Named after Palden Lhamo (Shri Devi), a Buddhist deity.
 description: Shri is an extinct genus of small dromaeosaurid dinosaurs that
   lived in what is now Mongolia during the Late Cretaceous.
 diet: carnivore
@@ -22,6 +22,7 @@ diagnostic_features:
 appearance:
   features:
     - sickle claw
+    - enlarged manual claws
   integument: feathered
   evidence: inferred
 identifiers:
@@ -36,8 +37,8 @@ synonyms:
       described as Shri devi.
 species:
   - name: Shri devi
-    etymology: "Named for Palden Lhamo, or Shri devi, a Vajrayana Buddhist
-      dharmapala who appears in various forms."
+    etymology: Named for Palden Lhamo, or Shri devi, a Vajrayana Buddhist dharmapala
+      who appears in various forms.
     status: valid
     type_species: true
     period:
@@ -56,14 +57,71 @@ species:
         - 43.488609
         - 101.145554
     type_specimen:
-      specimen_id: [ IGM 100/980 ]
+      specimen_id:
+        - IGM 100/980
       specimen_type: holotype
       institution: MPC
       material: Partial articulated skeleton with 23 presacral vertebrae, pelvis,
         anterior caudal vertebrae, right hind limb, left tibiotarsus
       completeness: partial
     erected_in: turner2021a
+  - name: Shri rapax
+    etymology: From Latin rapax, meaning rapacious; refers to the hypertrophied
+      falciform pollex ungual.
+    status: valid
+    type_species: false
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Campanian
+      from_ma: 83.6
+      to_ma: 72.1
+    location:
+      country: MN
+      locality: Ukhaa Tolgod
+      region: MN-053
+      formation: Djadokhta
+      coordinates:
+        - 43.664444
+        - 100.901947
+    diagnostic_features:
+      - Middle cervical centra subequal in length (fifth centrum 125% longer
+        than the sixth in S. devi)
+      - Accessory pleurocoel in the last cervical centrum (absent in S. devi)
+      - Epipophyses not extended onto the dorsal vertebrae (extending onto the
+        anteriormost dorsals in S. devi)
+      - First metacarpal and first digit very robust, much broader than the
+        combined second and third manual digits, a condition unique among
+        paravians
+      - Falciform manual ungual 1 more than 160% longer along its dorsal margin
+        than manual phalanx 1-I, proportionally the largest of any dromaeosaurid
+      - Pubis forming a 135 degree angle with the long axis of the ilium
+        (155-160 degrees in S. devi)
+      - Ischium elongate, 66% of pubis length (about 50% in S. devi), and
+        lacking the ischial tuber distal to the pubic peduncle present in S.
+        devi
+    erected_in: moutrille2025a
+    type_specimen:
+      specimen_id:
+        - MPC-D 102/117
+      specimen_type: holotype
+      institution: MPC
+      material: Almost complete articulated skeleton with skull, vertebral
+        series with ribs, both sternal plates, complete gastral series, left
+        scapula, both coracoids, furcula, complete right forelimb and manus,
+        complete pelvis, partial femora
+      completeness: complete
+      notes: The skull and first four cervical vertebrae were separated from the
+        specimen and are now lost; they are known from a 2016 scan, a cast of
+        which accompanies the specimen. The exact locality is unknown because
+        the specimen was poached and passed through private hands before its
+        return to Mongolia, and referral to Ukhaa Tolgod rests on the associated
+        documentation and on sediment matching the structureless sandstone
+        facies of that locality; another Djadokhtan locality such as Bayn Dzak
+        cannot be excluded.
 references:
   - id: turner2021a
   - id: paul2024b
     notes: Source of the appearance features.
+  - id: moutrille2025a
