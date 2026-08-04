@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-08-04T05:39:56.912Z
+  built_at: 2026-08-04T05:42:08.189Z
   clade_count: 188
   genus_count: 1401
   license: CC-BY-4.0
@@ -31482,10 +31482,6 @@ genera:
         id: "4822930"
       - source: eol
         id: "4531245"
-    synonyms:
-      - name: Suchosaurus
-        type: possible subjective
-        reason: Possible junior subjective synonym of Baryonyx; identification is tentative. Per Olshevsky's Dinosaur Genera List.
     species:
       - name: Baryonyx walkeri
         etymology: Named for William J. Walker, the amateur fossil collector who discovered the holotype specimen in the Smokejack Clay Pit in Surrey, England in 1983.
@@ -51624,10 +51620,6 @@ genera:
         id: "4433651"
       - source: zoobank
         id: CCD4EA0D-076C-4990-ADE5-BA1F5E329CC4
-    synonyms:
-      - name: Suciasaurus
-        type: possible subjective
-        reason: Possible junior subjective synonym of Daspletosaurus; identification is tentative. Per Olshevsky's Dinosaur Genera List.
     species:
       - name: Daspletosaurus torosus
         etymology: From Latin 'torosus' meaning 'muscular' or 'brawny', a reference to the animal's robust build.
@@ -75190,10 +75182,6 @@ genera:
         id: "38516"
       - source: wikidata
         id: Q28554799
-    synonyms:
-      - name: Tanystrosuchus
-        type: possible subjective
-        reason: Possible junior subjective synonym of Halticosaurus; identification is tentative. Per Olshevsky's Dinosaur Genera List.
     species:
       - name: Halticosaurus longotarsus
         etymology: From Latin 'longus' meaning 'long' and Greek 'tarsos' meaning 'ankle' or 'tarsus', together meaning 'long ankle', in reference to features of the hindlimb.
@@ -94173,7 +94161,7 @@ genera:
         reason: Holds species P. praeceps and P. cranibrevis (originally Tetragonosaurus); both are now interpreted as juveniles of Lambeosaurus lambei.
       - name: Didanodon
         type: possible subjective
-        reason: Possible junior subjective synonym of Lambeosaurus; identification is tentative. Per Olshevsky's Dinosaur Genera List.
+        reason: Horner and others (2004) include Didanodon in Lambeosaurus, while Brett-Surman (1989) holds the name never diagnosed and refers its type material tentatively to Hypacrosaurus instead.
     species:
       - name: Lambeosaurus lambei
         etymology: Named for Lawrence Morris Lambe, a Canadian paleontologist who described numerous Cretaceous dinosaurs from Alberta in the early twentieth century.
@@ -94266,6 +94254,22 @@ genera:
         references:
           - evans2007a
     references:
+      - id: horner2004a
+        authors: Horner, J. R.; Weishampel, D. B.; Forster, C. A.
+        year: 2004
+        title: Hadrosauridae
+        book: The Dinosauria (2nd ed.)
+        publisher: University of California Press
+        pages: 438-463
+        isbn: 0-520-24209-2
+        notes: Includes Didanodon in Lambeosaurus.
+      - id: brett-surman1989a
+        authors: Brett-Surman, M. K.
+        year: 1989
+        title: "A revision of the Hadrosauridae (Reptilia: Ornithischia) and their evolution during the Campanian and Maastrichtian"
+        publisher: The George Washington University
+        pages: 1-272
+        notes: Holds Didanodon never diagnosed, referring its type tentatively to Hypacrosaurus.
       - id: parks1923a
         authors: Parks, W. A.
         year: 1923
@@ -100843,8 +100847,8 @@ genera:
         type: junior subjective
         reason: Now interpreted as juvenile material of Lufengosaurus.
       - name: Lufengocephalus
-        type: junior subjective
-        reason: Treated as a junior subjective synonym of Lufengosaurus in Olshevsky's Dinosaur Genera List.
+        type: possible subjective
+        reason: Olshevsky (1991) treats Lufengocephalus as a senior synonym of Tawasaurus and so a junior synonym of Lufengosaurus, resting that on a personal communication; Tawasaurus is itself regarded as undiagnostic.
     species:
       - name: Lufengosaurus huenei
         etymology: Named for German paleontologist Friedrich von Huene, the tutor of C. C. Young who named the species, honored in the genitive Latin '-i' suffix.
@@ -100893,6 +100897,14 @@ genera:
         authors: Young, C.-C.
         described: 1940
     references:
+      - id: olshevsky1991a
+        authors: Olshevsky, G.
+        year: 1991
+        title: A revision of the parainfraclass Archosauria Cope, 1869, excluding the advanced Crocodylia
+        journal: Mesozoic Meanderings
+        volume: "2"
+        pages: 1-196
+        notes: Source of the Lufengocephalus synonymy, by way of Tawasaurus.
       - id: young1940a
         authors: Young, C.-C.
         year: 1940
@@ -157392,8 +157404,8 @@ genera:
         type: junior subjective
         reason: Erected by Carpenter (1992) for Gorgosaurus novojilovi; now generally interpreted as a juvenile Tarbosaurus.
       - name: Jenghizkhan
-        type: junior subjective
-        reason: Erected by Olshevsky, Ford and Yamamoto (1995) for Tyrannosaurus bataar; now generally recognized as a junior synonym of Tarbosaurus.
+        type: possible subjective
+        reason: Paul (2025) lists Jenghizkhan among the synonyms of Tarbosaurus but marks it doubtful, and offers no supporting discussion; he coined the name himself.
     erected_in: maleev1955a
     species:
       - name: Tarbosaurus bataar
@@ -157468,6 +157480,16 @@ genera:
         references:
           - tsuihiji2011a
     references:
+      - id: paul2025b
+        authors: Paul, G. S.
+        year: 2025
+        title: A presentation of the current data on the exceptionally diverse non-tyrannosaurid eutyrannosaur and Tyrannosaurini genera and species of western North America during the end Cretaceous North American interchange
+        journal: Mesozoic
+        volume: "2"
+        issue: "2"
+        pages: 85-138
+        doi: 10.11646/mesozoic.2.2.1
+        notes: Lists Jenghizkhan among the synonyms of Tarbosaurus, marked doubtful.
       - id: tsuihiji2011a
         authors: Tsuihiji, T.; Watabe, M.; Tsogtbaatar, K.; Tsubamoto, T.; Barsbold, R.; Suzuki, S.; Lee, A. H.; Ridgely, R. C.; Kawahara, Y.; Witmer, L. M.
         year: 2011
