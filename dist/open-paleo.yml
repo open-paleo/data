@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-08-04T23:40:43.870Z
+  built_at: 2026-08-05T00:10:45.673Z
   clade_count: 188
   genus_count: 1401
   license: CC-BY-4.0
@@ -95548,24 +95548,27 @@ genera:
     etymology: From Latin latus (broad) and Greek rhis (nose); meaning "broad nose"
     pronunciation:
       phonetic: la-ti-RIEN-us
-    description: Latirhinus is an extinct genus of lambeosaurine hadrosaurid dinosaur from the Late Cretaceous of Mexico. The type species, Latirhinus uitstlani, was named in 2012 on the basis of a partial skeleton from the Campanian-age Cerro del Pueblo Formation. The specific name uitstlani means "southern" in the Náhuatl language of Mexico, a reference to the species' southern occurrence in the Cretaceous landmass Laramidia.
+    description: Latirhinus is an extinct genus of lambeosaurine hadrosaurid dinosaur from the Late Cretaceous of Mexico. The type species, Latirhinus uitstlani, was named in 2012 on the basis of a partial skeleton from the Campanian-age Cerro del Pueblo Formation. The specific name uitstlani means "southern" in the Náhuatl language of Mexico, a reference to the species' southern occurrence in the Cretaceous landmass Laramidia. The genus name refers to the broad narial region inferred from an arcuate skull fragment identified in the original description as a partial nasal; that element was subsequently reidentified as a fragment of right jugal belonging to a much larger hadrosaurid and removed from the holotype, leaving the skull of Latirhinus effectively unknown.
     dispute:
       summary: |
-        Latirhinus uitstlani is generally placed within Lambeosaurinae, but Prieto-Márquez and others (2019) recovered it at the base of Hadrosauridae in a clade with Aquilarhinus, and its holotype may combine lambeosaurine and saurolophine elements. Placed conservatively within Lambeosaurinae following the prevailing view.
+        Latirhinus uitstlani was originally described as a saurolophine and was later recovered at the base of Hadrosauridae in a clade with Aquilarhinus, but both of those placements rested on an arcuate skull fragment interpreted as a partial nasal, since reidentified as a fragment of right jugal from a much larger hadrosaurid and excluded from the holotype. Ramírez-Velasco and others (2021) reassigned the species to Lambeosaurinae on a rediagnosis of the recomposed holotype, and two independent parsimony analyses published in 2022, one of them co-authored by the original describer, recovered it within Lambeosaurinae. Those two analyses differ on how deeply it nests: Serrano-Brañas and Prieto-Márquez left its relationships within the subfamily unresolved, while Ramírez-Velasco recovered it within Lambeosaurini alongside Magnapaulia and Velafrons. The composition of the holotype itself remains contested, the 2021 and 2022 studies disagreeing over which elements of the bonebed belong to the type individual.
       history:
         - date: 2026-06-27
           note: Placed at Lambeosaurinae following Jones (2026); the original description (Prieto-Márquez et al., 2012) tentatively assigned it to Saurolophinae (no cladistic analysis) and Prieto-Márquez and others (2019) recovered it at the base of Hadrosauridae, neither adopted (P2, P5).
+        - date: 2026-08-04
+          note: Retained at Lambeosaurinae, now on the primary literature rather than a reference work. Serrano-Brañas and Prieto-Márquez (2022) recovered Latirhinus within Lambeosaurinae in a parsimony analysis of 291 characters, and Ramírez-Velasco (2022) recovered it within Lambeosaurini; both follow the reassignment of Ramírez-Velasco and others (2021). The base-of-Hadrosauridae result of Prieto-Márquez and others (2019) was supported by the breadth of the external bony naris, a character of the skull fragment now reidentified as a jugal and excluded from the holotype. Kept at Lambeosaurinae rather than Lambeosaurini because only one of the two analyses resolves the tribe.
     diet: herbivore
     locomotion: facultative
     paleoenvironment:
       - fluvial
       - coastal
     diagnostic_features:
-      - Deep and arcuate dorsal process of the nasal, deeper than all other saurolophines except Gryposaurus
-      - Broader narial foramen than any other known hadrosaurid taxon
-      - Anterodorsally curved deltoid crest of the scapula (convergent with Lambeosaurinae)
-      - Hook-shaped nasal with mediolaterally compressed form
-      - Relatively gracile humeri with deltopectoral crest comprising 55% of total length
+      - Coracoid oval in shape and poorly developed laterally, with an elongate biceps tuberosity
+      - Rounded dorsal margin of the coracoid in medial view (convergent with basally branching hadrosauroids)
+      - Well developed and medially pronounced subcoracoid tuberculum
+      - Low sternal process of the coracoid (convergent with basally branching hadrosauroids)
+      - Rounded, slightly anteroposteriorly compressed bump on the scapular glenoid process
+      - Trapezoid lateroventral corner of the humeral deltopectoral crest, abruptly expanded anteriorly into two lobes protruding medially and laterally
     appearance:
       integument: scaled
       evidence: inferred
@@ -95602,9 +95605,11 @@ genera:
         type_specimen:
           specimen_id:
             - IGM 6583
+            - IGM 12713
+            - IGM 12714
           specimen_type: holotype
           institution: Instituto de Geología, Universidad Nacional Autónoma de México
-          material: Partial right nasal, 10 dorsal and 14 caudal vertebrae, right coracoid, left scapula, both humeri and ulnae, right metacarpals III and IV, preacetabular process of right ilium, iliac peduncle of right ischium, both femora, tibiae, and fibulae, left astragalus, right and left metatarsals III and IV, and proximal phalanges of the right pes
+          material: IGM 6583 in part, comprising 14 caudal vertebrae, left coracoid, proximal fragment of left scapula, both humeri and ulnae, right metacarpals III and IV, left manual phalanx II-1, preacetabular process of left ilium, both femora, tibiae, and fibulae, and left astragalus; IGM 12713, ten associated partial dorsal vertebrae; IGM 12714, left and right metatarsals III and IV, both proximal phalanges III-1, and a left proximal pedal phalanx II-1
           completeness: partial
         size:
           length_m:
@@ -95641,6 +95646,46 @@ genera:
         pages: 461-498
         doi: 10.1080/14772019.2019.1625078
         notes: Described Aquilarhinus as a close relative, uniting both near Hadrosauridae's base.
+      - id: ramírezvelasco2021b
+        authors: Ramírez-Velasco, A. A.; Espinosa-Arrubarrena, L.; Alvarado-Ortega, J.
+        year: 2021
+        title: Review of the taxonomic affinities of Latirhinus uitstlani, an emblematic Mexican hadrosaurid
+        journal: Journal of South American Earth Sciences
+        publisher: Elsevier BV
+        volume: "110"
+        pages: "103391"
+        doi: 10.1016/j.jsames.2021.103391
+        notes: Reidentified the supposed nasal as a jugal, recomposed the holotype and reassigned the species from Saurolophinae to Lambeosaurinae.
+      - id: serrano-brañas2022a
+        authors: Serrano-Brañas, C. I.; Prieto-Márquez, A.
+        year: 2022
+        title: "Taphonomic attributes of the holotype of the lambeosaurine dinosaur Latirhinus uitstlani from the late Campanian of Mexico: implications for its phylogenetic systematics"
+        journal: Journal of South American Earth Sciences
+        publisher: Elsevier BV
+        volume: "114"
+        pages: "103689"
+        doi: 10.1016/j.jsames.2021.103689
+        notes: Revised the holotype composition and diagnosis on taphonomic grounds and recovered the species within Lambeosaurinae in a parsimony analysis.
+      - id: ramírez-velasco2022a
+        authors: Ramírez-Velasco, A. A.
+        year: 2022
+        title: Phylogenetic and biogeography analysis of Mexican hadrosauroids
+        journal: Cretaceous Research
+        publisher: Elsevier BV
+        volume: "138"
+        pages: "105267"
+        doi: 10.1016/j.cretres.2022.105267
+        notes: Recovered the species within Lambeosaurini alongside Magnapaulia and Velafrons.
+      - id: jiménezmoreno2025a
+        authors: Jiménez-Moreno, F. J.; Ramírez-Velasco, A. A.; Ocampo-Cornejo, P.; Velázquez-Castro, J.; Palomino-Merino, R.
+        year: 2025
+        title: "First population analysis in Hadrosauroid dinosaurs (Ornithopoda: Iguanodontia: Hadrosauroidea)"
+        journal: Evolving Earth
+        publisher: Elsevier BV
+        volume: "3"
+        pages: "100072"
+        doi: 10.1016/j.eve.2025.100072
+        notes: Estimated body mass and population density for the species in a comparative analysis of hadrosauroid populations.
       - id: jones2026a
         authors: Jones, B.; Viola, E.
         year: 2026
