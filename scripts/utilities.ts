@@ -1,7 +1,7 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
 import { parse as parseYamlContent, stringify as stringifyYaml } from "yaml";
-import type { FlaggedSignoffs, FlaggedSources, InstitutionEntry, Reference, TreeNode } from "./types.ts";
+import type { FlaggedSignoffs, FlaggedSources, InstitutionEntry, Reference, StageInfo, TreeNode } from "./types.ts";
 
 /**
  * Escapes a string for safe inclusion as a literal in a regular expression.
@@ -162,6 +162,21 @@ export function loadRegionRegistry(registryPath: string): Record<string, string>
     return parseYamlContent(
         fs.readFileSync(registryPath, "utf8"),
     ) as Record<string, string>;
+}
+
+/**
+ * Loads the chronostratigraphic stage table from schema.yml.
+ *
+ * @param schemaPath - Absolute path to schema.yml.
+ * @returns A record of stage name to its period and boundary ages.
+ */
+export function loadStageTable(schemaPath: string): Record<string, StageInfo>
+{
+    const vocabulary = parseYamlContent(
+        fs.readFileSync(schemaPath, "utf8"),
+    ) as { stages?: Record<string, StageInfo> };
+
+    return vocabulary.stages ?? { };
 }
 
 /**

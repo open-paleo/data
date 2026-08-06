@@ -4,9 +4,9 @@ import * as url from "node:url";
 
 import { stringify as stringifyYaml } from "yaml";
 
-import { findYamlFiles, parseYaml, loadInstitutionRegistry, loadRegionRegistry } from "./utilities.ts";
+import { findYamlFiles, parseYaml, loadInstitutionRegistry, loadRegionRegistry, loadStageTable } from "./utilities.ts";
 
-import type { GenusData, CladeData, TreeNode, Reference, ReferencePointer, InstitutionEntry, Synonym, FormerId } from "./types.ts";
+import type { GenusData, CladeData, TreeNode, Reference, ReferencePointer, InstitutionEntry, StageInfo, Synonym, FormerId } from "./types.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
@@ -419,6 +419,56 @@ function resolveRegionCodes(
 }
 
 resolveRegionCodes(genera, regionRegistry);
+
+// Fill in the boundary ages a record leaves to its stages.
+const stageTable = loadStageTable(path.join(root, "schema.yml"));
+
+/**
+ * Derives `from_ma`/`to_ma` from the union of a species' listed stages
+ * wherever the record does not state them itself.
+ *
+ * The source YAML carries an explicit age only when a paper narrows the
+ * interval beyond the stage it names. Everything else is the stage boundary
+ * restated, which is how the records came to hold three different timescales
+ * at once -- some on GTS2012, some on current ICS, a few mixing the two
+ * within one range. Deriving here means one table decides, and an age
+ * surviving in the source is by that fact a published determination.
+ *
+ * @param generaMap - The processed genera map.
+ * @param stages - The stage table keyed by stage name.
+ */
+function deriveStageAges(
+    generaMap: Record<string, ProcessedGenus>,
+    stages: Record<string, StageInfo>,
+): void
+{
+    for (const genus of Object.values(generaMap))
+    {
+        for (const species of genus.species ?? [ ])
+        {
+            const period = species.period;
+
+            if (!period)
+            {
+                continue;
+            }
+
+            const resolved = (period.stage ?? [ ])
+                .map((stageName) => stages[stageName])
+                .filter((info): info is StageInfo => info !== undefined);
+
+            if (resolved.length === 0)
+            {
+                continue;
+            }
+
+            period.from_ma ??= Math.max(...resolved.map((info) => info.from_ma));
+            period.to_ma ??= Math.min(...resolved.map((info) => info.to_ma));
+        }
+    }
+}
+
+deriveStageAges(genera, stageTable);
 
 /**
  * Derives the denormalized author/year onto each species (and the genus) from
