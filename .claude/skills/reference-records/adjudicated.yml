@@ -95,15 +95,23 @@ Indosuchus raptorius:
     writes K 27/690.
 
 Monkonosaurus lawulacus:
-  categories: [formation]
-  source: maidment2006a
-  verdict: ours-correct
-  note: >
-    "Locality and horizon. Upper Jurassic to Lower Cretaceous Loe-ein Formation,
-    Lawulashan, Monko, Qamdo District, eastern Tibet (Dong, 1990)." The
-    redescription names Loe-ein, so the reference works' "Lura" is not adopted.
-    Loe-ein overlies Lura, so the two are not interchangeable and the distinction
-    depends on where in the section the type was collected.
+  - categories: [formation]
+    source: maidment2006a
+    verdict: ours-correct
+    note: >
+      "Locality and horizon. Upper Jurassic to Lower Cretaceous Loe-ein Formation,
+      Lawulashan, Monko, Qamdo District, eastern Tibet (Dong, 1990)." The
+      redescription names Loe-ein, so the reference works' "Lura" is not adopted.
+      Loe-ein overlies Lura, so the two are not interchangeable and the distinction
+      depends on where in the section the type was collected.
+  - categories: [stage]
+    source: corpus-review
+    verdict: ours-correct
+    note: >
+      Kept. The horizon is genuinely unconstrained in the literature, so our wide
+      range is the honest value and the reference work's single Oxfordian asserts
+      a precision nobody has.
+
 
 Sarcosaurus woodi:
   categories: [formation, stage]
@@ -178,14 +186,22 @@ Ornithopsis hulkei:
     rather than two.
 
 Vulcanodon karibaensis:
-  categories: [holotype]
-  source: cooper1984a
-  verdict: corrected
-  note: >
-    The NMZ prefix is dropped. cooper1984a: "The type material ... is now housed
-    in the National Museum of Zimbabwe, Bulawayo, and bears the catalogue number
-    QG24." The institution stays NMZB; the catalogue number itself carries no
-    institutional prefix.
+  - categories: [holotype]
+    source: cooper1984a
+    verdict: corrected
+    note: >
+      The NMZ prefix is dropped. cooper1984a: "The type material ... is now housed
+      in the National Museum of Zimbabwe, Bulawayo, and bears the catalogue number
+      QG24." The institution stays NMZB; the catalogue number itself carries no
+      institutional prefix.
+  - categories: [stage]
+    source: viglietti2018z
+    verdict: ours-correct
+    note: >
+      Sinemurian-Pliensbachian stands. viglietti2018z: "Vulcanodon is likely
+      Sinemurian-Pliensbachian in age, and potentially ~10-15 Ma older than
+      previously thought".
+
 
 Mosaiceratops azumai:
   categories: [holotype]
@@ -318,13 +334,28 @@ Mamenchisaurus youngi:
     work's ZDM 003 drops a digit.
 
 Moabosaurus utahensis:
-  categories: [holotype]
-  source: britt2017a
-  verdict: ours-correct
-  note: >
-    "BYU 14387, the holotype of Moabosaurus utahensis, two articulated, and one
-    closely associated, anterior dorsal vertebrae." The reference work's BYU 7510
-    is the BYU locality number for Dalton Wells Quarry, not a specimen.
+  - categories: [holotype]
+    source: britt2017a
+    verdict: ours-correct
+    note: >
+      "BYU 14387, the holotype of Moabosaurus utahensis, two articulated, and one
+      closely associated, anterior dorsal vertebrae." The reference work's BYU 7510
+      is the BYU locality number for Dalton Wells Quarry, not a specimen.
+  - categories: [stage]
+    source: joeckel2019z
+    verdict: corrected
+    note: >
+      Corrected to Barremian -- NEITHER our Valanginian nor the reference work's Aptian. Dalton Wells sits outside the dated belt.
+
+      Cedar Mountain ages are decided by position relative to Aubrey's (1998)
+      marker calcrete, which separates the lower from the upper Yellow Cat Member.
+      joeckel2023z dates a tephra inside the upper Yellow Cat at 135.10 +/- 0.30
+      Ma and ties a carbon-isotope excursion to the Valanginian Weissert Event, so
+      the lower Yellow Cat is Berriasian into earliest Valanginian and the upper
+      Yellow Cat is Valanginian. Ten of the twelve Cedar Mountain findings reduce
+      to that one question, which formation-level vote counting could never have
+      answered. The member is now recorded so the reasoning survives.
+
 
 Nambalia roychowdhurii:
   categories: [holotype]
@@ -381,13 +412,19 @@ Rajasaurus narmadensis:
     redundant "Type No." dropped.
 
 Rapetosaurus krausei:
-  categories: [holotype]
-  source: curryrogers2001a
-  verdict: ours-correct
-  note: >
-    "Holotype. Universite d'Antananarivo UA 8698, adult skull ..." FMNH PR 2209
-    appears under "Referred specimens", so the reference work folds referred
-    material into the type.
+  - categories: [holotype]
+    source: curryrogers2001a
+    verdict: ours-correct
+    note: >
+      "Holotype. Universite d'Antananarivo UA 8698, adult skull ..." FMNH PR 2209
+      appears under "Referred specimens", so the reference work folds referred
+      material into the type.
+  - categories: [stage]
+    source: corpus-review
+    verdict: ours-correct
+    note: >
+      Maastrichtian stands.
+
 
 Schleitheimia schutzi:
   categories: [holotype]
@@ -595,13 +632,37 @@ Centrosaurus apertus:
 
 
 Kinnareemimus khonkaenensis:
-  categories: [holotype]
-  source: buffetaut2009a
-  verdict: ours-correct
-  note: >
-    "Holotype. An incomplete left third metatarsal, with the distal end and part
-    of the shaft (PW5A-100)." The reference work's "SM-PW5A-100 through 131"
-    spans the whole assemblage.
+  - categories: [holotype]
+    source: buffetaut2009a
+    verdict: ours-correct
+    note: >
+      "Holotype. An incomplete left third metatarsal, with the distal end and part
+      of the shaft (PW5A-100)." The reference work's "SM-PW5A-100 through 131"
+      spans the whole assemblage.
+  - categories: [stage]
+    source: tucker2022z
+    verdict: corrected
+    note: >
+      Corrected from Barremian to Valanginian-Hauterivian, with the whole Sao Khua
+      Formation. tucker2022z is the first radiometric work on the unit and
+      concludes a Valanginian-early Hauterivian age of 133.6-132.1 Ma; the recent
+      literature has followed it. The Barremian it replaces is a citation cascade
+      of sixteen papers resting on one source, tumpeesuwan2010z, whose own chain --
+      a new bivalve species, to its only congener in Korea and Japan, to the
+      Sebayashi faunal association -- does not support the "restricted to late
+      Barremian" it is cited for.
+  
+      TWO CAVEATS, recorded rather than smoothed over. First, the date is a MAXIMUM
+      depositional age, a one-sided bound: it excludes anything OLDER than ~133.8
+      Ma and does not by itself exclude a Barremian Sao Khua, which requires
+      accepting minimal lag between crystallisation and deposition. The paper's own
+      wording inverts the usual sense of an MDA in places. Second, the samples come
+      from the middle and upper formation, not from Phu Wiang or Nong Bua Lamphu,
+      so no taxon here has a horizon-specific date. from_ma is therefore set to the
+      hard bound of 133.8 rather than to the paper's preferred 133.6, and to_ma to
+      the base of the Barremian, so the record states the stage assignment without
+      inheriting the minimal-lag precision.
+
 
 Magnamanus soriaensis:
   categories: [holotype]
@@ -660,16 +721,37 @@ Pleurocoelus nanus:
     centrum". All four held; the reference work's USNM 2263 is not among them.
 
 Rhoetosaurus brownei:
-  categories: [holotype]
-  source: nair2012a
-  verdict: corrected
-  note: >
-    "The syntype series (described in Longman, 1926) plus referred specimens
-    ... are all assigned to QM F1659." Ours read QM F1695, a transposition.
-    One registration number covers both the syntype series and the referred
-    material. Recorded as specimen_type: syntype since #2017 relaxed the
-    two-id rule for a series registered under one number, which the record's
-    notes field explains.
+  - categories: [holotype]
+    source: nair2012a
+    verdict: corrected
+    note: >
+      "The syntype series (described in Longman, 1926) plus referred specimens
+      ... are all assigned to QM F1659." Ours read QM F1695, a transposition.
+      One registration number covers both the syntype series and the referred
+      material. Recorded as specimen_type: syntype since #2017 relaxed the
+      two-id rule for a series registered under one number, which the record's
+      notes field explains.
+  - categories: [stage]
+    source: todd2019z
+    verdict: corrected
+    note: >
+      Corrected to Oxfordian by direct radiometric dating of the holotype's own
+      matrix. todd2019z: "The Rhoetosaurus maximum depositional age determined is
+      162.6 +/- 1.1 Ma, no older than early Oxfordian, demonstrating that the
+      fossils are younger than expected". That outranks the palynological and
+      biostratigraphic votes, which favoured Bathonian-Callovian. jones2026b was
+      right, and right for the right reason.
+  - categories: [formation]
+    source: todd2019z
+    verdict: ours-correct
+    note: >
+      The same paper confirms the formation while overturning the age: the fossils
+      are "definitely recovered from the Walloon Coal Measures", and nair2012a's
+      redescription gives "Walloon Coal Measures... Injune Creek Group, Surat
+      Basin. The material derives from the lowermost section". weishampel2004a's
+      Hutton Sandstone is superseded.
+
+
 
 Sinosaurus triassicus:
   categories: [holotype]
@@ -792,16 +874,22 @@ Alamosaurus sanjuanensis:
     molina-perez2020a's SMP-2104 is referred material.
 
 Anchisaurus polyzelus:
-  categories: [holotype]
-  source: iczn2015a
-  verdict: ours-correct
-  note: >
-    YPM 1883 is right and is now documented. Opinion 2361 "set aside all
-    previous type fixations for the name Megadactylus polyzelus Hitchcock, 1865
-    and designated specimen YPM1883 in the Peabody Museum of Natural History of
-    Yale University as the neotype", the original holotype ACM 41/109 being
-    fragmentary and non-diagnostic. jones2026b's ACM 41/109 is therefore the
-    superseded type. iczn_rulings added, citing galton2012a and iczn2015a.
+  - categories: [holotype]
+    source: iczn2015a
+    verdict: ours-correct
+    note: >
+      YPM 1883 is right and is now documented. Opinion 2361 "set aside all
+      previous type fixations for the name Megadactylus polyzelus Hitchcock, 1865
+      and designated specimen YPM1883 in the Peabody Museum of Natural History of
+      Yale University as the neotype", the original holotype ACM 41/109 being
+      fragmentary and non-diagnostic. jones2026b's ACM 41/109 is therefore the
+      superseded type. iczn_rulings added, citing galton2012a and iczn2015a.
+  - categories: [stage]
+    source: corpus-review
+    verdict: ours-correct
+    note: >
+      Hettangian-Sinemurian stands.
+
 
 Antarctosaurus wichmannianus:
   categories: [holotype]
@@ -893,12 +981,29 @@ Carcharodontosaurus saharicus:
     bears on #2009, which concerns the type fixation.
 
 Ceratonykus oculatus:
-  categories: [holotype]
-  source: alifanov2009a
-  verdict: ours-correct
-  note: >
-    "Holotype. MPC, no. 100/124, incomplete skull including incomplete lower
-    jaw ...". molina-perez2019a drops a digit.
+  - categories: [holotype]
+    source: alifanov2009a
+    verdict: ours-correct
+    note: >
+      "Holotype. MPC, no. 100/124, incomplete skull including incomplete lower
+      jaw ...". molina-perez2019a drops a digit.
+  - categories: [stage]
+    source: corpus-paper-count
+    verdict: ours-correct
+    note: >
+      Unit-level decision for the Baruungoyot Formation, applied to every taxon in
+      it. Counted across the reference literature, 22 papers give the formation a
+      Campanian age alone -- commonly "mid-upper Campanian" or "middle-upper
+      Campanian" -- and 12 allow Campanian-Maastrichtian, while NO paper gives it
+      as Maastrichtian alone. The reference work's Maastrichtian therefore has no
+      independent support, and ours is both the majority position and contained
+      within the wider one.
+  
+      Deliberately NOT widened to Campanian-Maastrichtian. Widening is the right
+      move when two positions each have literature behind them, as with the
+      Shaximiao redating; here it would adopt a 17.6 Myr span that no paper
+      asserts, to accommodate a single unsupported source.
+
 
 Chilantaisaurus tashuikouensis:
   categories: [holotype]
@@ -921,13 +1026,19 @@ Chirostenotes pergracilis:
     TMP.79.30.1 is a referred specimen.
 
 Chubutisaurus insignis:
-  categories: [holotype]
-  source: salgado1993a
-  verdict: corrected
-  note: >
-    Neither suffix is supported: the redescription gives plain MACN 18222. Ours
-    read MACN 18222/30, molina-perez2020a MACN 18222 S. delcorro1975a is not
-    held.
+  - categories: [holotype]
+    source: salgado1993a
+    verdict: corrected
+    note: >
+      Neither suffix is supported: the redescription gives plain MACN 18222. Ours
+      read MACN 18222/30, molina-perez2020a MACN 18222 S. delcorro1975a is not
+      held.
+  - categories: [stage]
+    source: corpus-review
+    verdict: ours-correct
+    note: >
+      Albian, with our Aptian/Albian defensible as the wider published range; the reference work's Cenomanian is not supported.
+
 
 Coelophysis bauri:
   categories: [holotype]
@@ -1101,18 +1212,39 @@ Microraptor zhaoianus:
     slabs."
 
 Mussaurus patagonicus:
-  categories: [holotype]
-  source: bonaparte1979b
-  verdict: ours-correct
-  note: >
-    "Holotype specimen, PVL 4068, composed of most of a skeleton."
+  - categories: [holotype]
+    source: bonaparte1979b
+    verdict: ours-correct
+    note: >
+      "Holotype specimen, PVL 4068, composed of most of a skeleton."
+  - categories: [stage]
+    source: pol2021z
+    verdict: ours-correct
+    note: >
+      Sinemurian stands, confirmed by U-Pb dating.
+
 
 Nedcolbertia justinhofmanni:
-  categories: [holotype]
-  source: kirkland1998c
-  verdict: ours-correct
-  note: >
-    "CEUM 5071, partial associated skeleton of a juvenile specimen".
+  - categories: [holotype]
+    source: kirkland1998c
+    verdict: ours-correct
+    note: >
+      "CEUM 5071, partial associated skeleton of a juvenile specimen".
+  - categories: [stage]
+    source: joeckel2023z
+    verdict: ours-correct
+    note: >
+      Valanginian stands; upper Yellow Cat Member.
+
+      Cedar Mountain ages are decided by position relative to Aubrey's (1998)
+      marker calcrete, which separates the lower from the upper Yellow Cat Member.
+      joeckel2023z dates a tephra inside the upper Yellow Cat at 135.10 +/- 0.30
+      Ma and ties a carbon-isotope excursion to the Valanginian Weissert Event, so
+      the lower Yellow Cat is Berriasian into earliest Valanginian and the upper
+      Yellow Cat is Valanginian. Ten of the twelve Cedar Mountain findings reduce
+      to that one question, which formation-level vote counting could never have
+      answered. The member is now recorded so the reasoning survives.
+
 
 Patagotitan mayorum:
   categories: [holotype]
@@ -1270,13 +1402,30 @@ Camelotia borealis:
     eight numbers, note that R2875 is deliberately absent.
 
 Conchoraptor gracilis:
-  categories: [holotype]
-  source: funston2018a
-  verdict: ours-correct
-  note: >
-    "Holotype MPC-D 100/20; nearly complete skull, partial mandible, and hand".
-    jones2026c's IGM is the superseded institution code, which the
-    redescription does not use.
+  - categories: [holotype]
+    source: funston2018a
+    verdict: ours-correct
+    note: >
+      "Holotype MPC-D 100/20; nearly complete skull, partial mandible, and hand".
+      jones2026c's IGM is the superseded institution code, which the
+      redescription does not use.
+  - categories: [stage]
+    source: corpus-paper-count
+    verdict: ours-correct
+    note: >
+      Unit-level decision for the Baruungoyot Formation, applied to every taxon in
+      it. Counted across the reference literature, 22 papers give the formation a
+      Campanian age alone -- commonly "mid-upper Campanian" or "middle-upper
+      Campanian" -- and 12 allow Campanian-Maastrichtian, while NO paper gives it
+      as Maastrichtian alone. The reference work's Maastrichtian therefore has no
+      independent support, and ours is both the majority position and contained
+      within the wider one.
+  
+      Deliberately NOT widened to Campanian-Maastrichtian. Widening is the right
+      move when two positions each have literature behind them, as with the
+      Shaximiao redating; here it would adopt a 17.6 Myr span that no paper
+      asserts, to accommodate a single unsupported source.
+
 
 Cristatusaurus lapparenti:
   categories: [holotype]
@@ -1304,15 +1453,24 @@ Diamantinasaurus matildae:
     zero; AODF 836 is a later referred specimen.
 
 Euhelopus zdanskyi:
-  categories: [holotype]
-  source: poropat2013a
-  verdict: ours-correct
-  note: >
-    "The holotype specimen of Euhelopus zdanskyi ... was formerly catalogued as
-    PMU R 233 but is now catalogued as PMU 24705." wilson2009a gives the
-    holotype as PMU 233 (exemplar a) plus exemplar c, whose accession number and
-    whereabouts are unknown; exemplar c is therefore recorded in notes rather
-    than as an id. PMU R234 is exemplar b, a referred specimen.
+  - categories: [holotype]
+    source: poropat2013a
+    verdict: ours-correct
+    note: >
+      "The holotype specimen of Euhelopus zdanskyi ... was formerly catalogued as
+      PMU R 233 but is now catalogued as PMU 24705." wilson2009a gives the
+      holotype as PMU 233 (exemplar a) plus exemplar c, whose accession number and
+      whereabouts are unknown; exemplar c is therefore recorded in notes rather
+      than as an id. PMU R234 is exemplar b, a referred specimen.
+  - categories: [stage]
+    source: xu2015z
+    verdict: ours-correct
+    note: >
+      Berriasian-Valanginian stands. xu2015z gives "the lowermost Cretaceous
+      Mengyin Formation" with a youngest zircon cluster at 144.6 +/- 4.1 Ma. Note
+      the 130.7 Ma that moore2020a attributes to this paper does not appear in
+      it.
+
 
 Laplatasaurus araukanicus:
   categories: [holotype]
@@ -1335,16 +1493,22 @@ Magyarosaurus dacus:
     material Huene described but which is not the type.
 
 Majungasaurus crenatissimus:
-  categories: [holotype]
-  source: iczn2011a
-  verdict: corrected
-  note: >
-    Opinion 2269 ruled "that all previous type fixations for the nominal species
-    crenatissimus Deperet, 1896 ... are hereby set aside and the specimen
-    MNHN.MAJ 1 (Museum National d'Histoire Naturelle, Paris) is hereby
-    designated as the neotype." We held FMNH PR 2836, a referred skull.
-    jones2026c's MNHN.MAI 1 is the right specimen misread as I for J.
-    iczn_rulings added, citing carrano2009a and iczn2011a.
+  - categories: [holotype]
+    source: iczn2011a
+    verdict: corrected
+    note: >
+      Opinion 2269 ruled "that all previous type fixations for the nominal species
+      crenatissimus Deperet, 1896 ... are hereby set aside and the specimen
+      MNHN.MAJ 1 (Museum National d'Histoire Naturelle, Paris) is hereby
+      designated as the neotype." We held FMNH PR 2836, a referred skull.
+      jones2026c's MNHN.MAI 1 is the right specimen misread as I for J.
+      iczn_rulings added, citing carrano2009a and iczn2011a.
+  - categories: [stage]
+    source: corpus-review
+    verdict: ours-correct
+    note: >
+      Maastrichtian stands.
+
 
 Melanorosaurus readi:
   categories: [holotype]
@@ -1388,14 +1552,20 @@ Plateosaurus gracilis:
     specimens.
 
 Spinosaurus aegyptiacus:
-  categories: [holotype]
-  source: ibrahim2014a
-  verdict: ours-correct
-  note: >
-    FSAC-KK 11888 is the neotype designated after Stromer's holotype was
-    destroyed in 1944; the designation is contested but stands. jones2026c and
-    molina-perez2019a quote the destroyed holotype under its two institution
-    codes, and MSNM V4047 is a referred rostrum.
+  - categories: [holotype]
+    source: ibrahim2014a
+    verdict: ours-correct
+    note: >
+      FSAC-KK 11888 is the neotype designated after Stromer's holotype was
+      destroyed in 1944; the designation is contested but stands. jones2026c and
+      molina-perez2019a quote the destroyed holotype under its two institution
+      codes, and MSNM V4047 is a referred rostrum.
+  - categories: [stage]
+    source: corpus-review
+    verdict: ours-correct
+    note: >
+      Cenomanian stands.
+
 
 Supersaurus vivianae:
   categories: [holotype]
@@ -1520,14 +1690,26 @@ Hesperosaurus mjosi:
     reference works alone.
 
 Abelisaurus comahuensis:
-  categories: [holotype]
-  source: bonaparte1985b
-  verdict: corrected
-  note: >
-    "HOLOTYPE: Museo de Cipolleti, No. 11098". The number is ours; the prefix
-    was bare MPCA, and Sabaj (2026) gives the current form as MPCA-PV. All 47
-    MPCA ids in the dataset were normalized to that spelling in the same pass.
-    The reference work's "MC 11098" abbreviates the museum differently again.
+  - categories: [holotype]
+    source: bonaparte1985b
+    verdict: corrected
+    note: >
+      "HOLOTYPE: Museo de Cipolleti, No. 11098". The number is ours; the prefix
+      was bare MPCA, and Sabaj (2026) gives the current form as MPCA-PV. All 47
+      MPCA ids in the dataset were normalized to that spelling in the same pass.
+      The reference work's "MC 11098" abbreviates the museum differently again.
+  - categories: [stage]
+    source: corpus-review
+    verdict: corrected
+    note: >
+      Corrected to Campanian, following the formation: the holotype is from the Anacleto, not the Allen.
+  - categories: [formation]
+    source: corpus-review
+    verdict: corrected
+    note: >
+      Allen -> Anacleto, Lago Pellegrini. The stage follows from it.
+
+
 
 Abrictosaurus consors:
   categories: [holotype]
@@ -1636,15 +1818,28 @@ Dolichosuchus cristatus:
     quotes the superseded BMNH form.
 
 Dracopelta zbyszewskii:
-  categories: [holotype]
-  source: russo2021z
-  verdict: corrected
-  note: >
-    Both numbers are the holotype: "MG 5787 (former IGM 5787), a partial rib
-    cage with 12 dorsal vertebrae and articulated proximal ribs, and five
-    different types of dermal armour (Galton, 1980), and MG 3 (IGM 3), an
-    incomplete autopodium". We held only MG 3. The SGP -> IGM -> MG sequence is
-    museum renaming, not renumbering, so it is not a former_ids case.
+  - categories: [holotype]
+    source: russo2021z
+    verdict: corrected
+    note: >
+      Both numbers are the holotype: "MG 5787 (former IGM 5787), a partial rib
+      cage with 12 dorsal vertebrae and articulated proximal ribs, and five
+      different types of dermal armour (Galton, 1980), and MG 3 (IGM 3), an
+      incomplete autopodium". We held only MG 3. The SGP -> IGM -> MG sequence is
+      museum renaming, not renumbering, so it is not a former_ids case.
+  - categories: [formation]
+    source: corpus-review
+    verdict: corrected
+    note: >
+      Freixial -> Lourinha, Assenta Member. The stage (Tithonian) stands; only
+      the unit was stale.
+  - categories: [stage]
+    source: corpus-review
+    verdict: ours-correct
+    note: >
+      Tithonian stands; only the formation was stale, corrected separately to Lourinha, Assenta Member.
+
+
 
 Eomamenchisaurus yuanmouensis:
   categories: [holotype]
@@ -1892,15 +2087,22 @@ Yuzhoulong qurenensis:
 
 
 Afrovenator abakensis:
-  categories: [holotype]
-  source: carrano2012a
-  verdict: corrected
-  note: >
-    "Holotype. MNN TIG1 (= UC OBA 1)." sereno1994a treats UC OBA 1 as a
-    temporary designation for material on loan. MNN is superseded by MNBH per
-    Sabaj, so the id becomes MNBH TIG1 and the change is recorded as a
-    former_ids rehousing sourced to carrano2012a. All nine MNN ids in the
-    dataset were moved to MNBH in the same pass.
+  - categories: [holotype]
+    source: carrano2012a
+    verdict: corrected
+    note: >
+      "Holotype. MNN TIG1 (= UC OBA 1)." sereno1994a treats UC OBA 1 as a
+      temporary designation for material on loan. MNN is superseded by MNBH per
+      Sabaj, so the id becomes MNBH TIG1 and the change is recorded as a
+      former_ids rehousing sourced to carrano2012a. All nine MNN ids in the
+      dataset were moved to MNBH in the same pass.
+  - categories: [stage]
+    source: corpus-review
+    verdict: corrected
+    note: >
+      Corrected to Bathonian-Callovian, which is NEITHER our Oxfordian-Tithonian
+      nor either value the reference works give (Bathonian, Barremian).
+
 
 Ligabuesaurus leanzai:
   categories: [holotype]
@@ -2357,6 +2559,14 @@ Tsintaosaurus spinorhinus:
       throughout -- "the Hongtuya Formation of the Wangshi Group in the Zhucheng
       Basin". Ours is the finer and correct value; recording the group as well
       needs the rank field under discussion in #2012.
+  - categories: [stage]
+    source: corpus-review
+    verdict: ours-correct
+    note: >
+      Campanian stands. The apparent straddle came from counting formation-broad
+      statements about the Wangshi Group against statements about this taxon's own
+      horizon in the Jingangkou Formation.
+
 
 Sinoceratops zhuchengensis:
   - categories: [formation]
@@ -2496,3 +2706,1151 @@ Rativates evadens:
       Formation of Alberta, Canada" and its abstract gives the holotype as "ROM
       1790, from the lower Dinosaur Park Formation (upper Campanian) of Alberta".
       Ours read Oldman. jones2026c was right.
+
+Breviceratops kozlowskii:
+  - categories: [stage]
+    source: corpus-paper-count
+    verdict: ours-correct
+    note: >
+      Unit-level decision for the Baruungoyot Formation, applied to every taxon in
+      it. Counted across the reference literature, 22 papers give the formation a
+      Campanian age alone -- commonly "mid-upper Campanian" or "middle-upper
+      Campanian" -- and 12 allow Campanian-Maastrichtian, while NO paper gives it
+      as Maastrichtian alone. The reference work's Maastrichtian therefore has no
+      independent support, and ours is both the majority position and contained
+      within the wider one.
+  
+      Deliberately NOT widened to Campanian-Maastrichtian. Widening is the right
+      move when two positions each have literature behind them, as with the
+      Shaximiao redating; here it would adopt a 17.6 Myr span that no paper
+      asserts, to accommodate a single unsupported source.
+
+Khulsanurus magnificus:
+  - categories: [stage]
+    source: corpus-paper-count
+    verdict: ours-correct
+    note: >
+      Unit-level decision for the Baruungoyot Formation, applied to every taxon in
+      it. Counted across the reference literature, 22 papers give the formation a
+      Campanian age alone -- commonly "mid-upper Campanian" or "middle-upper
+      Campanian" -- and 12 allow Campanian-Maastrichtian, while NO paper gives it
+      as Maastrichtian alone. The reference work's Maastrichtian therefore has no
+      independent support, and ours is both the majority position and contained
+      within the wider one.
+  
+      Deliberately NOT widened to Campanian-Maastrichtian. Widening is the right
+      move when two positions each have literature behind them, as with the
+      Shaximiao redating; here it would adopt a 17.6 Myr span that no paper
+      asserts, to accommodate a single unsupported source.
+
+Kuru kulla:
+  - categories: [stage]
+    source: corpus-paper-count
+    verdict: ours-correct
+    note: >
+      Unit-level decision for the Baruungoyot Formation, applied to every taxon in
+      it. Counted across the reference literature, 22 papers give the formation a
+      Campanian age alone -- commonly "mid-upper Campanian" or "middle-upper
+      Campanian" -- and 12 allow Campanian-Maastrichtian, while NO paper gives it
+      as Maastrichtian alone. The reference work's Maastrichtian therefore has no
+      independent support, and ours is both the majority position and contained
+      within the wider one.
+  
+      Deliberately NOT widened to Campanian-Maastrichtian. Widening is the right
+      move when two positions each have literature behind them, as with the
+      Shaximiao redating; here it would adopt a 17.6 Myr span that no paper
+      asserts, to accommodate a single unsupported source.
+
+Natovenator polydontus:
+  - categories: [stage]
+    source: corpus-paper-count
+    verdict: ours-correct
+    note: >
+      Unit-level decision for the Baruungoyot Formation, applied to every taxon in
+      it. Counted across the reference literature, 22 papers give the formation a
+      Campanian age alone -- commonly "mid-upper Campanian" or "middle-upper
+      Campanian" -- and 12 allow Campanian-Maastrichtian, while NO paper gives it
+      as Maastrichtian alone. The reference work's Maastrichtian therefore has no
+      independent support, and ours is both the majority position and contained
+      within the wider one.
+  
+      Deliberately NOT widened to Campanian-Maastrichtian. Widening is the right
+      move when two positions each have literature behind them, as with the
+      Shaximiao redating; here it would adopt a 17.6 Myr span that no paper
+      asserts, to accommodate a single unsupported source.
+
+Ondogurvel alifanovi:
+  - categories: [stage]
+    source: corpus-paper-count
+    verdict: ours-correct
+    note: >
+      Unit-level decision for the Baruungoyot Formation, applied to every taxon in
+      it. Counted across the reference literature, 22 papers give the formation a
+      Campanian age alone -- commonly "mid-upper Campanian" or "middle-upper
+      Campanian" -- and 12 allow Campanian-Maastrichtian, while NO paper gives it
+      as Maastrichtian alone. The reference work's Maastrichtian therefore has no
+      independent support, and ours is both the majority position and contained
+      within the wider one.
+  
+      Deliberately NOT widened to Campanian-Maastrichtian. Widening is the right
+      move when two positions each have literature behind them, as with the
+      Shaximiao redating; here it would adopt a 17.6 Myr span that no paper
+      asserts, to accommodate a single unsupported source.
+
+Parvicursor remotus:
+  - categories: [stage]
+    source: corpus-paper-count
+    verdict: ours-correct
+    note: >
+      Unit-level decision for the Baruungoyot Formation, applied to every taxon in
+      it. Counted across the reference literature, 22 papers give the formation a
+      Campanian age alone -- commonly "mid-upper Campanian" or "middle-upper
+      Campanian" -- and 12 allow Campanian-Maastrichtian, while NO paper gives it
+      as Maastrichtian alone. The reference work's Maastrichtian therefore has no
+      independent support, and ours is both the majority position and contained
+      within the wider one.
+  
+      Deliberately NOT widened to Campanian-Maastrichtian. Widening is the right
+      move when two positions each have literature behind them, as with the
+      Shaximiao redating; here it would adopt a 17.6 Myr span that no paper
+      asserts, to accommodate a single unsupported source.
+
+Shri devi:
+  - categories: [stage]
+    source: corpus-paper-count
+    verdict: ours-correct
+    note: >
+      Unit-level decision for the Baruungoyot Formation, applied to every taxon in
+      it. Counted across the reference literature, 22 papers give the formation a
+      Campanian age alone -- commonly "mid-upper Campanian" or "middle-upper
+      Campanian" -- and 12 allow Campanian-Maastrichtian, while NO paper gives it
+      as Maastrichtian alone. The reference work's Maastrichtian therefore has no
+      independent support, and ours is both the majority position and contained
+      within the wider one.
+  
+      Deliberately NOT widened to Campanian-Maastrichtian. Widening is the right
+      move when two positions each have literature behind them, as with the
+      Shaximiao redating; here it would adopt a 17.6 Myr span that no paper
+      asserts, to accommodate a single unsupported source.
+
+Tylocephale gilmorei:
+  - categories: [stage]
+    source: corpus-paper-count
+    verdict: ours-correct
+    note: >
+      Unit-level decision for the Baruungoyot Formation, applied to every taxon in
+      it. Counted across the reference literature, 22 papers give the formation a
+      Campanian age alone -- commonly "mid-upper Campanian" or "middle-upper
+      Campanian" -- and 12 allow Campanian-Maastrichtian, while NO paper gives it
+      as Maastrichtian alone. The reference work's Maastrichtian therefore has no
+      independent support, and ours is both the majority position and contained
+      within the wider one.
+  
+      Deliberately NOT widened to Campanian-Maastrichtian. Widening is the right
+      move when two positions each have literature behind them, as with the
+      Shaximiao redating; here it would adopt a 17.6 Myr span that no paper
+      asserts, to accommodate a single unsupported source.
+
+Oryctodromeus cubicularis:
+  - categories: [stage]
+    source: varricchio2007a
+    verdict: corrected
+    note: >
+      Corrected to Cenomanian. The disagreement is about which part of the
+      Blackleaf Formation: the unit reaches into the Albian, but the Oryctodromeus
+      interval is its Cenomanian top. varricchio2007a, the erecting paper:
+      "Palynomorphs and radiometric dates indicate a Cenomanian age for this
+      portion of the formation". No paper in the reference literature assigns
+      Oryctodromeus itself an Albian age -- every Albian citation concerns the
+      Wayan Formation broadly. avrahami2024a dates penecontemporaneous strata at
+      99.674 to 98.905 Ma, squarely Cenomanian.
+
+Erythrovenator jacuiensis:
+  - categories: [stage]
+    source: müller2020a
+    verdict: corrected
+    note: >
+      Widened to Carnian-Norian. The erecting paper explicitly declines to pick a
+      stage: müller2020a gives "the age of Erythrovenator jacuiensis is estimated
+      between c. 233 Ma to c. 225 Ma (Carnian to early Norian)". Ours held only
+      the older end of that published range. The paper's own reasoning leans
+      younger -- the site is tentatively assigned to the Riograndia AZ and the
+      fauna "seems younger than the Hyperodapedon AZ" -- so Carnian alone was the
+      floor of an uncertainty envelope rather than a conclusion.
+
+Amygdalodon patagonicus:
+  - categories: [stage]
+    source: corpus-paper-count
+    verdict: corrected
+    note: >
+      Corrected to Toarcian on the weight of the reference literature. Ours held
+      Sinemurian-Pliensbachian, which the corpus does not support for this
+      taxon.
+
+Yimenosaurus youngi:
+  - categories: [stage]
+    source: corpus-paper-count
+    verdict: corrected
+    note: >
+      Corrected to Pliensbachian. Ours held Hettangian, which appears once
+      against three papers asserting Pliensbachian alone for the Fengjiahe
+      Formation.
+
+Dongyangosaurus sinensis:
+  - categories: [stage]
+    source: corpus-paper-count
+    verdict: ours-correct
+    note: >
+      Kept. The raw count favours Albian, but the Albian votes are unit-level
+      statements about the Jinhua Formation broadly rather than about this taxon's
+      horizon. Ours stands at Cenomanian-Turonian.
+
+Jiangshanosaurus lixianensis:
+  - categories: [stage]
+    source: corpus-paper-count
+    verdict: ours-correct
+    note: >
+      Kept, on the same reasoning as Dongyangosaurus sinensis from the same
+      formation: the Albian votes are unit-level rather than about this horizon.
+
+Dakotadon lakotaensis:
+  - categories: [stage]
+    source: corpus-paper-count
+    verdict: corrected
+    note: >
+      Widened to late Valanginian - early Barremian. Ours held Valanginian alone,
+      which is the lower bound of the published range rather than the whole of
+      it; the reference work's Barremian is the upper bound.
+
+Isanosaurus attavipachi:
+  - categories: [stage]
+    source: corpus-paper-count
+    verdict: corrected
+    note: >
+      Narrowed to Pliensbachian. Ours held Pliensbachian-Toarcian and the
+      reference work gives Norian-Rhaetian; neither matches, and the literature
+      supports Pliensbachian.
+
+Leyesaurus marayensis:
+  - categories: [stage]
+    source: martínez2015z
+    verdict: corrected
+    note: >
+      Corrected to Rhaetian, now resting on the primary rather than on a range.
+      Ours spanned Hettangian through Toarcian.
+
+Jobaria tiguidensis:
+  - categories: [stage]
+    source: rauhut2009z
+    verdict: corrected
+    note: >
+      Corrected to Bathonian-Callovian, which is NEITHER our value
+      (Oxfordian-Tithonian) nor the reference work's (Hauterivian-Cenomanian).
+      A case where both sides were wrong and a mechanical straddle would have
+      produced a span covering neither the truth nor either claim.
+
+Nhandumirim waldsangae:
+  - categories: [stage]
+    source: langer2018z
+    verdict: corrected
+    note: >
+      Corrected to Carnian, and the formation with it. langer2018z dates the
+      Santa Maria Formation at 233.23 +/- 0.73 Ma and gives 225.42 +/- 0.37 Ma as
+      the maximum age of the Caturrita -- Carnian and early Norian respectively.
+      Ours held Norian on a Caturrita assignment that the horizon does not
+      support; the taxon is from the upper Santa Maria.
+  - categories: [formation]
+    source: langer2018z
+    verdict: corrected
+    note: >
+      Caturrita -> Santa Maria. Fixing the stage alone would have left the fault
+      latent, since the age follows from the unit.
+
+Nanyangosaurus zhugeii:
+  - categories: [stage]
+    source: wang2013z
+    verdict: corrected
+    note: >
+      Narrowed from a four-stage envelope to Coniacian. wang2013z's correlation
+      table sets out the history explicitly: Xu et al. (2000) placed the beds in
+      the Sangping Formation at Albian; this paper places them in the Xiaguan
+      Formation at Coniacian. Our Turonian-Campanian range was the formation
+      envelope rather than the taxon's horizon, and xing2014a is the only source
+      resolving its own bed, in the lower Xiaguan. The reference work's Albian
+      descends from xu2000a, which inferred it phylogenetically -- "the systematic
+      position of Nanyangosaurus suggests that the Sangping Formation MAY
+      represent Albian deposits" -- not stratigraphically.
+  - categories: [formation]
+    source: wang2013z
+    verdict: corrected
+    note: >
+      Majiacun -> Xiaguan. No paper places this taxon in the Majiacun, which is
+      the Xixia Basin unit; Nanyangosaurus is from the neighbouring
+      Xiaguan-Gaoqiu Basin. wang2013z's table shows Majiacun as a separate unit,
+      so ours was a different formation rather than a synonym.
+
+Hoplitosaurus marshi:
+  - categories: [stage]
+    source: boyd2015z
+    verdict: corrected
+    note: >
+      Corrected to Berriasian-Valanginian. The Barremian tradition inverts a
+      ceiling into an age: sohn1979z says "Barremian or older", "pre-Aptian" and
+      "probably not younger than the Barremian", all of which are maxima
+      compatible with Berriasian-Valanginian, and Sohn never resolves the age by
+      member. The holotype is from the Chilson Member, the basal unit, which
+      boyd2015z and farke2014a place at Berriasian-Valanginian.
+
+Osmakasaurus depressus:
+  - categories: [stage]
+    source: boyd2015z
+    verdict: corrected
+    note: >
+      Corrected to Berriasian-Valanginian, matching Hoplitosaurus marshi: the two
+      holotypes came out of the SAME two blocks of rock at Calico Canyon, per
+      lucas1901a and gilmore1909a, so they cannot carry different stages. Ours
+      read Barremian/Aptian, which mcdonald2011a sourced to Tschudy et al. (1984)
+      -- a palynological study of the Cedar Mountain and Burro Canyon formations
+      on the Colorado Plateau, a different region and different units. There is
+      no Lakota data behind that date.
+
+Vectidromeus insularis:
+  - categories: [stage]
+    source: corpus-review
+    verdict: corrected
+    note: >
+      Stage unchanged at Barremian; the Ma range was on GTS2012 (129.4-125.0),
+      which on the current scale sits almost entirely in the Hauterivian and is
+      the likely origin of the reference work's Hauterivian. from_ma is now the
+      ICS base of 125.77, matching the 91 records that already use it. to_ma
+      stays at the GTS2012 value of 125.0 because schema.yml's stage table is
+      itself on GTS2012 and the period-consistency check rejects anything
+      outside it -- the true ICS Barremian top of 121.4 cannot be written until
+      that table is updated.
+
+Lexovisaurus durobrivensis:
+  - categories: [stage]
+    source: corpus-review
+    verdict: ours-correct
+    note: >
+      Callovian stands. Its from_ma of 166.1 was the GTS2012 Bathonian/Callovian
+      boundary, which now falls inside the Bathonian; corrected to 165.3, which
+      also brings it into line with Loricatosaurus priscus from the same
+      formation, which already held 165.3.
+
+Borealopelta markmitchelli:
+  - categories: [stage]
+    source: brown2020z
+    verdict: corrected
+    note: >
+      Corrected to Albian. Our Aptian traced to a single header line; brown2020z
+      confirms the Albian for the horizon. from_ma is the schema's Albian base of
+      113.0 rather than the current ICS 113.2, which the period-consistency check
+      rejects while schema.yml remains on GTS2012 (#2044).
+
+Zephyrosaurus schaffi:
+  - categories: [stage]
+    source: demic2019z
+    verdict: corrected
+    note: >
+      Corrected to Aptian, and the reason is member-level. demic2019z rewrote the
+      Cloverly member ages -- the Little Sheep Mudstone Member becomes ca. 124-109
+      Ma, spanning Barremian to earliest Albian, where farke2014a had it at
+      104-109 Ma and wholly Albian. zanno2023a then places Zephyrosaurus in the
+      MIDDLE of that member at a mean age of ~116.5 Ma, which is Aptian. Under the
+      older framework the member did not matter; under the new one it decides the
+      answer.
+
+Sibirotitan astrosacralis:
+  - categories: [stage]
+    source: corpus-review
+    verdict: corrected
+    note: >
+      Widened to Barremian-Aptian, the two-stage span the primary literature
+      itself asserts for the Ilek horizon. Ours held Aptian alone; the reference
+      work gives Barremian alone. Aptian remains the best single stage if one is
+      ever required.
+
+Ingentia prima:
+  - categories: [stage]
+    source: corpus-review
+    verdict: corrected
+    note: >
+      Widened to Norian-Rhaetian, the span the literature asserts for the Quebrada
+      del Barro horizon. Ours held Norian, the reference work Rhaetian.
+
+Wannanosaurus yansiensis:
+  - categories: [stage]
+    source: butler2009b
+    verdict: corrected
+    note: >
+      Corrected to Campanian. NO source asserts a Maastrichtian age for this
+      taxon: the only Maastrichtian in play is the question-marked tail of
+      butler2009b's "Campanian-?early Maastrichtian", and sullivan2006a's "late
+      Campanian-late Maastrichtian" is about flat-headed pachycephalosaurs as a
+      group rather than this horizon. Everything else converges on Campanian,
+      including chinzorig2025a, where the age is load-bearing to its argument
+      rather than incidental. The erecting paper hou1977a says "early Late
+      Cretaceous", older than either candidate, and has been abandoned since.
+
+Brachytrachelopan mesai:
+  - categories: [stage]
+    source: corpus-review
+    verdict: ours-correct
+    note: >
+      Kimmeridgian-Tithonian stands. The apparent straddle was formation-broad
+      statements about the Canadon Calcareo being counted against taxon-horizon
+      ones.
+
+Albalophosaurus yamaguchiorum:
+  - categories: [stage]
+    source: sano2015z
+    verdict: ours-correct
+    note: >
+      Barremian stands. sano2015z and sano2017z both assign the Kaseki-kabe
+      horizon of the Kuwajima Formation to the Barremian; the earlier reading that
+      our value had no traceable support was an artefact of those papers being
+      absent from the literature scanned.
+
+Rayososaurus agrioensis:
+  - categories: [stage]
+    source: corpus-review
+    verdict: ours-correct
+    note: >
+      Cenomanian stands; the reference work's Aptian belongs to the Rayoso Formation rather than the Candeleros.
+
+Guaibasaurus candelariensis:
+  - categories: [stage]
+    source: langer2018z
+    verdict: ours-correct
+    note: >
+      Early Norian stands. langer2018z gives 225.42 +/- 0.37 Ma as the maximum age
+      of the Caturrita Formation, against 233.23 +/- 0.73 Ma for the Santa Maria --
+      early Norian and Carnian respectively. Contrast Nhandumirim waldsangae, which
+      was corrected the other way because it is from the Santa Maria, not the
+      Caturrita.
+
+Tehuelchesaurus benitezii:
+  - categories: [stage]
+    source: cúneo2013z
+    verdict: ours-correct
+    note: >
+      Oxfordian-Tithonian stands. cúneo2013z dates a tuff in the Canadon Calcareo
+      Formation at 157.449 +/- 0.056 Ma and states that the unit, "once considered
+      to be early Cretaceous in age, is now entirely constrained to the Late
+      Jurassic". The reference work's Toarcian is far outside that.
+
+Venenosaurus dicrocei:
+  - categories: [stage]
+    source: corpus-review
+    verdict: ours-correct
+    note: >
+      Aptian stands. Note the evidence originally cited for it was mis-stated by
+      the paper relaying it; the verdict survives on other grounds.
+
+Dreadnoughtus schrani:
+  - categories: [stage]
+    source: sickmann2018z
+    verdict: ours-correct
+    note: >
+      Campanian stands. sickmann2018z gives the Cerro Fortaleza Formation
+      "maximum depositional ages throughout the Campanian ... EP-13 providing a
+      YC1s MDA of 76.2 +/- 1.6 Ma". The reference works' Cenomanian belongs to the
+      Mata Amarilla Formation, which varela2012z dates at 96.23 +/- 0.71 Ma; the
+      two units were both once called the Pari Aike Formation, which is the source
+      of the confusion.
+
+Orkoraptor burkei:
+  - categories: [stage]
+    source: sickmann2018z
+    verdict: ours-correct
+    note: >
+      Campanian stands. sickmann2018z gives the Cerro Fortaleza Formation
+      "maximum depositional ages throughout the Campanian ... EP-13 providing a
+      YC1s MDA of 76.2 +/- 1.6 Ma". The reference works' Cenomanian belongs to the
+      Mata Amarilla Formation, which varela2012z dates at 96.23 +/- 0.71 Ma; the
+      two units were both once called the Pari Aike Formation, which is the source
+      of the confusion.
+
+Puertasaurus reuili:
+  - categories: [stage]
+    source: sickmann2018z
+    verdict: ours-correct
+    note: >
+      Campanian stands. sickmann2018z gives the Cerro Fortaleza Formation
+      "maximum depositional ages throughout the Campanian ... EP-13 providing a
+      YC1s MDA of 76.2 +/- 1.6 Ma". The reference works' Cenomanian belongs to the
+      Mata Amarilla Formation, which varela2012z dates at 96.23 +/- 0.71 Ma; the
+      two units were both once called the Pari Aike Formation, which is the source
+      of the confusion.
+
+Talenkauen santacrucensis:
+  - categories: [stage]
+    source: sickmann2018z
+    verdict: ours-correct
+    note: >
+      Campanian stands. sickmann2018z gives the Cerro Fortaleza Formation
+      "maximum depositional ages throughout the Campanian ... EP-13 providing a
+      YC1s MDA of 76.2 +/- 1.6 Ma". The reference works' Cenomanian belongs to the
+      Mata Amarilla Formation, which varela2012z dates at 96.23 +/- 0.71 Ma; the
+      two units were both once called the Pari Aike Formation, which is the source
+      of the confusion.
+
+Irisosaurus yimenensis:
+  - categories: [stage]
+    source: huang2005z
+    verdict: ours-correct
+    note: >
+      Pliensbachian stands. huang2005z correlates the upper Lufeng Formation to
+      the upper Toarcian and sites 21-14 to the middle Sinemurian; Pliensbachian
+      sits inside that window, confirming the magnetostratigraphic basis.
+
+Lingyuanosaurus sihedangensis:
+  - categories: [stage]
+    source: he2004z
+    verdict: ours-correct
+    note: >
+      Aptian stands. he2004z dates the Jiufotang Formation at 120.3 +/- 0.7 Ma:
+      "This result confirms an Aptian age for the Jiufotang Formation".
+
+Zhongjianosaurus yangi:
+  - categories: [stage]
+    source: he2004z
+    verdict: ours-correct
+    note: >
+      Aptian stands, on the same Jiufotang date as Lingyuanosaurus
+      sihedangensis.
+
+Tachiraptor admirabilis:
+  - categories: [stage]
+    source: corpus-review
+    verdict: ours-correct
+    note: >
+      Hettangian stands.
+
+Tengrisaurus starkovi:
+  - categories: [stage]
+    source: corpus-review
+    verdict: ours-correct
+    note: >
+      Valanginian stands, but with LOWER confidence than the other rows here:
+      averianov2021z, which was expected to justify the Valanginian, argues
+      Barremian-Aptian instead. Left as ours pending a better source rather than
+      adopted from the reference work, which gives Barremian-Aptian.
+
+Loricatosaurus priscus:
+  - categories: [stage]
+    source: corpus-review
+    verdict: ours-correct
+    note: >
+      Callovian stands, matching Lexovisaurus durobrivensis from the same formation.
+
+Anoplosaurus curtonotus:
+  - categories: [stage]
+    source: corpus-review
+    verdict: ours-correct
+    note: >
+      No disagreement exists. The finding is doubly stale: it reports a YAML value
+      we no longer hold, and weishampel2004a in fact agrees with our Albian.
+
+Losillasaurus giganteus:
+  - categories: [stage]
+    source: campos-soto2019z
+    verdict: ours-correct
+    note: >
+      Kimmeridgian-Tithonian stands. campos-soto2019z: "a Kimmeridgian age has
+      been demonstrated recently at least locally", correlated with "other
+      Kimmeridgian-Tithonian dinosaur-bearing deposits of Iberia".
+
+Phuwiangosaurus sirindhornae:
+  - categories: [stage]
+    source: tucker2022z
+    verdict: corrected
+    note: >
+      Corrected from Barremian to Valanginian-Hauterivian, with the whole Sao Khua
+      Formation. tucker2022z is the first radiometric work on the unit and
+      concludes a Valanginian-early Hauterivian age of 133.6-132.1 Ma; the recent
+      literature has followed it. The Barremian it replaces is a citation cascade
+      of sixteen papers resting on one source, tumpeesuwan2010z, whose own chain --
+      a new bivalve species, to its only congener in Korea and Japan, to the
+      Sebayashi faunal association -- does not support the "restricted to late
+      Barremian" it is cited for.
+  
+      TWO CAVEATS, recorded rather than smoothed over. First, the date is a MAXIMUM
+      depositional age, a one-sided bound: it excludes anything OLDER than ~133.8
+      Ma and does not by itself exclude a Barremian Sao Khua, which requires
+      accepting minimal lag between crystallisation and deposition. The paper's own
+      wording inverts the usual sense of an MDA in places. Second, the samples come
+      from the middle and upper formation, not from Phu Wiang or Nong Bua Lamphu,
+      so no taxon here has a horizon-specific date. from_ma is therefore set to the
+      hard bound of 133.8 rather than to the paper's preferred 133.6, and to_ma to
+      the base of the Barremian, so the record states the stage assignment without
+      inheriting the minimal-lag precision.
+
+Phuwiangvenator yaemniyomi:
+  - categories: [stage]
+    source: tucker2022z
+    verdict: corrected
+    note: >
+      Corrected from Barremian to Valanginian-Hauterivian, with the whole Sao Khua
+      Formation. tucker2022z is the first radiometric work on the unit and
+      concludes a Valanginian-early Hauterivian age of 133.6-132.1 Ma; the recent
+      literature has followed it. The Barremian it replaces is a citation cascade
+      of sixteen papers resting on one source, tumpeesuwan2010z, whose own chain --
+      a new bivalve species, to its only congener in Korea and Japan, to the
+      Sebayashi faunal association -- does not support the "restricted to late
+      Barremian" it is cited for.
+  
+      TWO CAVEATS, recorded rather than smoothed over. First, the date is a MAXIMUM
+      depositional age, a one-sided bound: it excludes anything OLDER than ~133.8
+      Ma and does not by itself exclude a Barremian Sao Khua, which requires
+      accepting minimal lag between crystallisation and deposition. The paper's own
+      wording inverts the usual sense of an MDA in places. Second, the samples come
+      from the middle and upper formation, not from Phu Wiang or Nong Bua Lamphu,
+      so no taxon here has a horizon-specific date. from_ma is therefore set to the
+      hard bound of 133.8 rather than to the paper's preferred 133.6, and to_ma to
+      the base of the Barremian, so the record states the stage assignment without
+      inheriting the minimal-lag precision.
+
+Siamosaurus suteethorni:
+  - categories: [stage]
+    source: tucker2022z
+    verdict: corrected
+    note: >
+      Corrected from Barremian to Valanginian-Hauterivian, with the whole Sao Khua
+      Formation. tucker2022z is the first radiometric work on the unit and
+      concludes a Valanginian-early Hauterivian age of 133.6-132.1 Ma; the recent
+      literature has followed it. The Barremian it replaces is a citation cascade
+      of sixteen papers resting on one source, tumpeesuwan2010z, whose own chain --
+      a new bivalve species, to its only congener in Korea and Japan, to the
+      Sebayashi faunal association -- does not support the "restricted to late
+      Barremian" it is cited for.
+  
+      TWO CAVEATS, recorded rather than smoothed over. First, the date is a MAXIMUM
+      depositional age, a one-sided bound: it excludes anything OLDER than ~133.8
+      Ma and does not by itself exclude a Barremian Sao Khua, which requires
+      accepting minimal lag between crystallisation and deposition. The paper's own
+      wording inverts the usual sense of an MDA in places. Second, the samples come
+      from the middle and upper formation, not from Phu Wiang or Nong Bua Lamphu,
+      so no taxon here has a horizon-specific date. from_ma is therefore set to the
+      hard bound of 133.8 rather than to the paper's preferred 133.6, and to_ma to
+      the base of the Barremian, so the record states the stage assignment without
+      inheriting the minimal-lag precision.
+
+Vayuraptor nongbualamphuensis:
+  - categories: [stage]
+    source: tucker2022z
+    verdict: corrected
+    note: >
+      Corrected from Barremian to Valanginian-Hauterivian, with the whole Sao Khua
+      Formation. tucker2022z is the first radiometric work on the unit and
+      concludes a Valanginian-early Hauterivian age of 133.6-132.1 Ma; the recent
+      literature has followed it. The Barremian it replaces is a citation cascade
+      of sixteen papers resting on one source, tumpeesuwan2010z, whose own chain --
+      a new bivalve species, to its only congener in Korea and Japan, to the
+      Sebayashi faunal association -- does not support the "restricted to late
+      Barremian" it is cited for.
+  
+      TWO CAVEATS, recorded rather than smoothed over. First, the date is a MAXIMUM
+      depositional age, a one-sided bound: it excludes anything OLDER than ~133.8
+      Ma and does not by itself exclude a Barremian Sao Khua, which requires
+      accepting minimal lag between crystallisation and deposition. The paper's own
+      wording inverts the usual sense of an MDA in places. Second, the samples come
+      from the middle and upper formation, not from Phu Wiang or Nong Bua Lamphu,
+      so no taxon here has a horizon-specific date. from_ma is therefore set to the
+      hard bound of 133.8 rather than to the paper's preferred 133.6, and to_ma to
+      the base of the Barremian, so the record states the stage assignment without
+      inheriting the minimal-lag precision.
+
+Shuangmiaosaurus gilmorei:
+  - categories: [stage]
+    source: jiang2006z
+    verdict: corrected
+    note: >
+      Widened to Albian-Cenomanian, which is genuinely unresolved and leans
+      Cenomanian. jiang2006z's late Albian for the Sunjiawan Formation is
+      explicitly tentative and its own K-Ar data permit a Turonian age. Recording
+      a single stage would assert a precision the literature does not have.
+
+Scansoriopteryx heilmanni:
+  - categories: [stage]
+    source: xu2016z
+    verdict: corrected
+    note: >
+      Corrected to Bathonian-Callovian on the Haifanggou, matching Epidexipteryx
+      hui and Pedopenna daohugouensis from the same locality. Our original
+      Barremian/Aptian Yixian age rested only on czerkas2002a, the erecting
+      paper, asserting it for a commercially acquired specimen.
+
+      An intermediate correction to Oxfordian/Tiaojishan was applied and is
+      superseded. It rested on a tally of papers giving "Tiaojishan --
+      Oxfordian", which turns out to measure the LINGLONGTA phase, a different
+      and younger horizon. xu2016z, by a co-author of both scansoriopterygid
+      erecting papers, separates the two -- "the Bathonian-Callovian Daohugou
+      phase (about 168-164 million years ago) and the Oxfordian Linglongta phase
+      (164-159 million years ago)" -- and places Daohugou in the Haifanggou.
+      Every corpus paper naming Scansoriopteryx also names Daohugou; none names
+      Linglongta.
+
+      Region, locality and coordinates moved with the formation: the record
+      previously sat in Liaoning at the Yixian coordinates, which contradicts a
+      Daohugou provenance in Ningcheng, Inner Mongolia. Scansoriopteryx and
+      Epidendrosaurus are very probably the same animal, so they cannot carry
+      different horizons. See also #2006.
+  - categories: [formation]
+    source: xu2016z
+    verdict: corrected
+    note: >
+      Yixian -> Haifanggou, via a superseded intermediate of Tiaojishan; see the
+      stage note. sullivan2014z holds the Jiulongshan-versus-Tiaojishan question
+      for the Daohugou Beds to be unresolved on current data while favouring
+      Jiulongshan/Haifanggou, so this is the better-supported reading rather
+      than a settled one.
+
+
+Aerosteon riocoloradensis:
+  - categories: [stage]
+    source: corpus-review
+    verdict: ours-correct
+    note: >
+      Campanian stands.
+
+Jeholornis prima:
+  - categories: [stage]
+    source: corpus-review
+    verdict: ours-correct
+    note: >
+      Aptian stands.
+
+Sphaerotholus goodwini:
+  - categories: [stage]
+    source: corpus-review
+    verdict: ours-correct
+    note: >
+      Campanian stands; the finding was a false positive rather than a real
+      disagreement.
+
+Nanshiungosaurus brevispinus:
+  - categories: [stage]
+    source: corpus-review
+    verdict: ours-correct
+    note: >
+      Maastrichtian stands. The apparent disagreement is a species mix-up in the
+      reference work rather than a claim about this horizon.
+
+Alaskacephale gangloffi:
+  - categories: [stage]
+    source: corpus-review
+    verdict: ours-correct
+    note: >
+      Maastrichtian stands.
+
+Charonosaurus jiayinensis:
+  - categories: [stage]
+    source: corpus-review
+    verdict: ours-correct
+    note: >
+      Maastrichtian stands; the finding was a false positive rather than a real
+      disagreement.
+
+Epichirostenotes curriei:
+  - categories: [stage]
+    source: corpus-review
+    verdict: ours-correct
+    note: >
+      Campanian stands, now with high confidence.
+
+Dinheirosaurus lourinhanensis:
+  - categories: [stage]
+    source: mannion2011a
+    verdict: corrected
+    note: >
+      Corrected to Kimmeridgian-Tithonian. Nothing we hold asserts Tithonian
+      alone -- not the erecting paper and not the redescription. mannion2011a
+      gives "Amoreira-Porto Novo Member, Lourinha Formation; late
+      Kimmeridgian-early Tithonian", repeated in mannion2019a and mannion2025a.
+      The only Tithonian signal at the type locality is Mohr's 1989 palynology,
+      which bonaparte1999a cites and then rejects.
+
+Muttaburrasaurus langdoni:
+  - categories: [stage]
+    source: herne2026a
+    verdict: corrected
+    note: >
+      Widened to an Albian-Cenomanian straddle. herne2026a is the only work to
+      date the locality -- a detrital-zircon MLA of 96.3 +/- 8.6 Ma at QML1817,
+      with the formal horizon given as "Mackunda Formation, Cenomanian-lower
+      Turonian" -- but the error on that date spans both stages, so Cenomanian
+      alone would record as settled something that is not.
+
+Janenschia robusta:
+  - categories: [stage]
+    source: corpus-review
+    verdict: ours-correct
+    note: >
+      Tithonian stands, now confirmed from the member-defining source.
+
+Tendaguria tanzaniensis:
+  - categories: [stage]
+    source: corpus-review
+    verdict: ours-correct
+    note: >
+      Tithonian stands, confirmed at source.
+
+Epidexipteryx hui:
+  - categories: [stage]
+    source: xu2016z
+    verdict: corrected
+    note: >
+      Widened to Bathonian-Callovian, and the formation corrected with it. The
+      Yanliao Biota has two phases that are routinely conflated: xu2016z, by a
+      co-author of both erecting papers, divides it into "the Bathonian-Callovian
+      Daohugou phase (about 168-164 million years ago) and the Oxfordian
+      Linglongta phase (164-159 million years ago)", and states that "the strata
+      exposed at the Daohugou Locality belong mainly to the Bathonian-Callovian
+      Haifanggou Formation". This taxon is from Daohugou, so jones2026c's
+      Oxfordian is the Linglongta age applied to the wrong phase, and our
+      Tiaojishan was the Linglongta formation.
+  
+      The formation is not fully settled: sullivan2014z holds that whether the
+      Daohugou Beds belong to the Jiulongshan or the Tiaojishan is "linked to, but
+      distinct from" their numerical age and that current data are "insufficient
+      to resolve the problem", while favouring Jiulongshan/Haifanggou. What is
+      firm is that the Daohugou strata are OVERLAIN by the Tiaojishan, so the
+      Tiaojishan assignment belongs to Linglongta.
+  - categories: [formation]
+    source: xu2016z
+    verdict: corrected
+    note: >
+      Tiaojishan -> Haifanggou; see the stage note for the Daohugou/Linglongta distinction.
+
+Pedopenna daohugouensis:
+  - categories: [stage]
+    source: xu2016z
+    verdict: corrected
+    note: >
+      Widened to Bathonian-Callovian, and the formation corrected with it. The
+      Yanliao Biota has two phases that are routinely conflated: xu2016z, by a
+      co-author of both erecting papers, divides it into "the Bathonian-Callovian
+      Daohugou phase (about 168-164 million years ago) and the Oxfordian
+      Linglongta phase (164-159 million years ago)", and states that "the strata
+      exposed at the Daohugou Locality belong mainly to the Bathonian-Callovian
+      Haifanggou Formation". This taxon is from Daohugou, so jones2026c's
+      Oxfordian is the Linglongta age applied to the wrong phase, and our
+      Tiaojishan was the Linglongta formation.
+  
+      The formation is not fully settled: sullivan2014z holds that whether the
+      Daohugou Beds belong to the Jiulongshan or the Tiaojishan is "linked to, but
+      distinct from" their numerical age and that current data are "insufficient
+      to resolve the problem", while favouring Jiulongshan/Haifanggou. What is
+      firm is that the Daohugou strata are OVERLAIN by the Tiaojishan, so the
+      Tiaojishan assignment belongs to Linglongta.
+  - categories: [formation]
+    source: xu2016z
+    verdict: corrected
+    note: >
+      Tiaojishan -> Haifanggou; see the stage note for the Daohugou/Linglongta distinction.
+
+Micropachycephalosaurus hongtuyanensis:
+  - categories: [stage]
+    source: corpus-review
+    verdict: corrected
+    note: >
+      Corrected to Campanian. Our Coniacian-Santonian is not supported; the
+      Jiangjunding horizon is Campanian under either stratigraphic scheme -- early
+      to middle if Jiangjunding sits below the Hongtuya per Hu et al. (2001), late
+      if xu2019z is right to fold it into the Hongtuya. The formation name stays
+      as ours; which scheme is current is unsettled but does not change the
+      stage.
+
+Shaochilong maortuensis:
+  - categories: [stage]
+    source: hao2025a
+    verdict: corrected
+    note: >
+      Corrected to Barremian-Aptian. Three independent lines converge on the older
+      reading: charophytes give Barremian-Aptian, ostracods Barremian-Albian, and
+      palynomorphs Barremian-early Aptian, the last radiometrically calibrated on
+      an overlying basalt at the nearby Tebch site. The source states it directly:
+      "The Barremian age determined on palynological evidence is more accurate,
+      and older, than the Aptian-Albian age based on dinosaur evidence." Our
+      Aptian-Albian rested on the dinosaur evidence it supersedes, and the
+      reference work's Turonian collapses on brusatte2009a's locality reasoning.
+
+Harpymimus okladnikovi:
+  - categories: [stage]
+    source: chinzorig2025a
+    verdict: corrected
+    note: >
+      Corrected to Albian, which follows from the formation rather than from a
+      stage argument. The specimen is from the Khuren Dukh Formation, Lower
+      Member; chinzorig2025a distinguishes that unit from the Khukhteeg Formation
+      on 2022-23 field survey, and the Shinekhudag/Khukhteeg/Khuren Dukh names
+      have been actively disentangled in recent work.
+  - categories: [formation]
+    source: chinzorig2025a
+    verdict: corrected
+    note: >
+      Shinekhudug -> Khuren Dukh; the stage follows from it.
+
+Pendraig milnerae:
+  - categories: [stage]
+    source: corpus-review
+    verdict: corrected
+    note: >
+      Widened to Norian-Rhaetian from Carnian.
+
+Heyuannia huangi:
+  - categories: [stage]
+    source: lü2002a
+    verdict: ours-correct
+    note: >
+      Maastrichtian stands and the recorded conflict does not exist: both cited
+      sources say Maastrichtian in their own species tables. The Campanian is an
+      extraction artifact -- our weishampel2004a record for this taxon reads
+      "Dalangshan Formation People's Republic of China Djadokhta Formation" with a
+      stage of "Late Cretaceous middle Campanian", having run together adjacent
+      rows of a two-column OCR block. Our own sibling species H. yanshini is
+      Campanian on the Barun Goyot, which is a second route by which the value
+      could leak.
+  
+      Note the verdict is unanimous but not well founded: even the erecting paper
+      qualifies it, "Dalangshan Formation, Late Cretaceous, ?Maastrichtian",
+      inherited from a 1988 provincial regional-geology volume rather than from
+      dating work. Nobody has revisited it.
+  - categories: [formation]
+    source: lü2002a
+    verdict: corrected
+    note: >
+      Dongyuan -> Dalangshan. Nothing in the reference literature supports
+      "Dongyuan" for Heyuan -- the only hits for that string are the unrelated
+      ankylosaur Dongyuangopelta -- while the erecting paper and six later works
+      give Dalangshan. The genus description already said Dalangshan, so the
+      record contradicted itself.
+
+Iguanodon bernissartensis:
+  - categories: [stage]
+    source: corpus-review
+    verdict: ours-correct
+    note: >
+      Barremian-Aptian stands; the recorded conflict is spurious, the cited
+      sources agreeing with us in their own species tables.
+
+Quilmesaurus curriei:
+  - categories: [stage]
+    source: corpus-review
+    verdict: corrected
+    note: >
+      Widened to Campanian-Maastrichtian; the holotype is from the lower Allen Formation.
+
+Piatnitzkysaurus floresi:
+  - categories: [stage]
+    source: corpus-review
+    verdict: corrected
+    note: >
+      Corrected to Aalenian, which is NEITHER our Toarcian nor the reference works' Bathonian/Callovian. Mid to upper Canadon Asfalto.
+
+Volkheimeria chubutensis:
+  - categories: [stage]
+    source: corpus-review
+    verdict: corrected
+    note: >
+      Corrected to Aalenian, on the same Canadon Asfalto horizon as Piatnitzkysaurus floresi.
+
+Falcarius utahensis:
+  - categories: [stage]
+    source: joeckel2019z
+    verdict: corrected
+    note: >
+      Corrected to Barremian. This reverses the first-pass reading: joeckel2019z
+      accepts the Aptian dates kirkland2016z rejects and finds the Yellow Cat
+      Member DIACHRONOUS, its "stratigraphic architecture ... probably more
+      complex than earlier conceptions based on lithostratigraphic perspectives".
+      Crystal Geyser sits outside the dated belt, so the member-level framework
+      below does not reach it.
+
+      Cedar Mountain ages are decided by position relative to Aubrey's (1998)
+      marker calcrete, which separates the lower from the upper Yellow Cat Member.
+      joeckel2023z dates a tephra inside the upper Yellow Cat at 135.10 +/- 0.30
+      Ma and ties a carbon-isotope excursion to the Valanginian Weissert Event, so
+      the lower Yellow Cat is Berriasian into earliest Valanginian and the upper
+      Yellow Cat is Valanginian. Ten of the twelve Cedar Mountain findings reduce
+      to that one question, which formation-level vote counting could never have
+      answered. The member is now recorded so the reasoning survives.
+
+Iguanacolossus fortis:
+  - categories: [stage]
+    source: joeckel2023z
+    verdict: corrected
+    note: >
+      Widened to Berriasian-Valanginian; lower Yellow Cat Member.
+
+      Cedar Mountain ages are decided by position relative to Aubrey's (1998)
+      marker calcrete, which separates the lower from the upper Yellow Cat Member.
+      joeckel2023z dates a tephra inside the upper Yellow Cat at 135.10 +/- 0.30
+      Ma and ties a carbon-isotope excursion to the Valanginian Weissert Event, so
+      the lower Yellow Cat is Berriasian into earliest Valanginian and the upper
+      Yellow Cat is Valanginian. Ten of the twelve Cedar Mountain findings reduce
+      to that one question, which formation-level vote counting could never have
+      answered. The member is now recorded so the reasoning survives.
+
+Yurgovuchia doellingi:
+  - categories: [stage]
+    source: joeckel2023z
+    verdict: corrected
+    note: >
+      Widened to Berriasian-Valanginian; lower Yellow Cat Member.
+
+      Cedar Mountain ages are decided by position relative to Aubrey's (1998)
+      marker calcrete, which separates the lower from the upper Yellow Cat Member.
+      joeckel2023z dates a tephra inside the upper Yellow Cat at 135.10 +/- 0.30
+      Ma and ties a carbon-isotope excursion to the Valanginian Weissert Event, so
+      the lower Yellow Cat is Berriasian into earliest Valanginian and the upper
+      Yellow Cat is Valanginian. Ten of the twelve Cedar Mountain findings reduce
+      to that one question, which formation-level vote counting could never have
+      answered. The member is now recorded so the reasoning survives.
+
+Gastonia burgei:
+  - categories: [stage]
+    source: joeckel2023z
+    verdict: ours-correct
+    note: >
+      Valanginian stands; upper Yellow Cat Member, Gaston Quarry. The recorded
+      conflict was partly spurious: weishampel2004a gives Berriasian-Hauterivian,
+      a RANGE that contains our Valanginian, which the reconciler was reading as
+      two disagreeing endpoints until it learned to expand ranges. Only
+      jones2026a's Aptian is a real disagreement.
+
+      Cedar Mountain ages are decided by position relative to Aubrey's (1998)
+      marker calcrete, which separates the lower from the upper Yellow Cat Member.
+      joeckel2023z dates a tephra inside the upper Yellow Cat at 135.10 +/- 0.30
+      Ma and ties a carbon-isotope excursion to the Valanginian Weissert Event, so
+      the lower Yellow Cat is Berriasian into earliest Valanginian and the upper
+      Yellow Cat is Valanginian. Ten of the twelve Cedar Mountain findings reduce
+      to that one question, which formation-level vote counting could never have
+      answered. The member is now recorded so the reasoning survives.
+
+Utahraptor ostrommaysi:
+  - categories: [stage]
+    source: joeckel2023z
+    verdict: ours-correct
+    note: >
+      Valanginian stands; upper Yellow Cat Member. Same spurious range-endpoint conflict as Gastonia burgei.
+
+      Cedar Mountain ages are decided by position relative to Aubrey's (1998)
+      marker calcrete, which separates the lower from the upper Yellow Cat Member.
+      joeckel2023z dates a tephra inside the upper Yellow Cat at 135.10 +/- 0.30
+      Ma and ties a carbon-isotope excursion to the Valanginian Weissert Event, so
+      the lower Yellow Cat is Berriasian into earliest Valanginian and the upper
+      Yellow Cat is Valanginian. Ten of the twelve Cedar Mountain findings reduce
+      to that one question, which formation-level vote counting could never have
+      answered. The member is now recorded so the reasoning survives.
+
+Hippodraco scutodens:
+  - categories: [stage]
+    source: joeckel2023z
+    verdict: ours-correct
+    note: >
+      Valanginian stands; upper Yellow Cat Member.
+
+      Cedar Mountain ages are decided by position relative to Aubrey's (1998)
+      marker calcrete, which separates the lower from the upper Yellow Cat Member.
+      joeckel2023z dates a tephra inside the upper Yellow Cat at 135.10 +/- 0.30
+      Ma and ties a carbon-isotope excursion to the Valanginian Weissert Event, so
+      the lower Yellow Cat is Berriasian into earliest Valanginian and the upper
+      Yellow Cat is Valanginian. Ten of the twelve Cedar Mountain findings reduce
+      to that one question, which formation-level vote counting could never have
+      answered. The member is now recorded so the reasoning survives.
+
+Martharaptor greenriverensis:
+  - categories: [stage]
+    source: joeckel2019z
+    verdict: corrected
+    note: >
+      Corrected to Barremian; Hayden-Corbett site sits outside the dated belt, so the Yellow Cat framework does not reach it.
+
+      Cedar Mountain ages are decided by position relative to Aubrey's (1998)
+      marker calcrete, which separates the lower from the upper Yellow Cat Member.
+      joeckel2023z dates a tephra inside the upper Yellow Cat at 135.10 +/- 0.30
+      Ma and ties a carbon-isotope excursion to the Valanginian Weissert Event, so
+      the lower Yellow Cat is Berriasian into earliest Valanginian and the upper
+      Yellow Cat is Valanginian. Ten of the twelve Cedar Mountain findings reduce
+      to that one question, which formation-level vote counting could never have
+      answered. The member is now recorded so the reasoning survives.
+
+Cedarosaurus weiskopfae:
+  - categories: [stage]
+    source: joeckel2023z
+    verdict: corrected
+    note: >
+      Corrected to Valanginian from Barremian-Aptian; upper Yellow Cat Member.
+
+      Cedar Mountain ages are decided by position relative to Aubrey's (1998)
+      marker calcrete, which separates the lower from the upper Yellow Cat Member.
+      joeckel2023z dates a tephra inside the upper Yellow Cat at 135.10 +/- 0.30
+      Ma and ties a carbon-isotope excursion to the Valanginian Weissert Event, so
+      the lower Yellow Cat is Berriasian into earliest Valanginian and the upper
+      Yellow Cat is Valanginian. Ten of the twelve Cedar Mountain findings reduce
+      to that one question, which formation-level vote counting could never have
+      answered. The member is now recorded so the reasoning survives.
+
+Cedrorestes crichtoni:
+  - categories: [stage]
+    source: corpus-review
+    verdict: corrected
+    note: >
+      Corrected to Aptian, following a reassignment of the specimen to the Poison Strip Member.
+
+Abydosaurus mcintoshi:
+  - categories: [stage]
+    source: corpus-review
+    verdict: corrected
+    note: >
+      Corrected to Albian. The specimen is in the upper Ruby Ranch Member at DNM 16, not the Mussentuchit, per the field guide that maps its quarry.
+
+Velociraptor mongoliensis:
+  - categories: [stage]
+    source: corpus-review
+    verdict: ours-correct
+    note: >
+      Campanian stands; Djadokhta Formation at Bayn Dzak.
+
+Erliansaurus bellamanus:
+  - categories: [stage]
+    source: currie1993z
+    verdict: ours-correct
+    note: >
+      Campanian stands, at moderate confidence. currie1993z and vanitterbeeck2005z
+      show the Iren Dabasu dispute is a genuine vertebrates-versus-microfossils
+      split rather than a citation cascade, and that brochu2003a misreports Currie
+      & Eberth.
+
+Yizhousaurus sunae:
+  - categories: [stage]
+    source: corpus-review
+    verdict: ours-correct
+    note: >
+      Sinemurian stands; Zhangjiacao Member of the Lufeng Formation.
+
+Mononykus olecranus:
+  - categories: [stage]
+    source: corpus-review
+    verdict: ours-correct
+    note: >
+      Maastrichtian stands; Nemegt Formation at Bugin Tsav.
+
+Acantholipan gonzalezi:
+  - categories: [stage]
+    source: rivera-sylva2011z
+    verdict: ours-correct
+    note: >
+      Campanian stands. This REVERSES a first-pass reading that our value had no
+      source: rivera-sylva2011z, the original description of the holotype, gives
+      "Pen Formation (Campanian)".
+
+Sinocephale bexelli:
+  - categories: [stage]
+    source: corpus-review
+    verdict: corrected
+    note: >
+      Corrected to Turonian-Santonian from Campanian-Maastrichtian; lower Ulansuhai Formation.
