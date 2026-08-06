@@ -324,6 +324,11 @@ def extractWeishampel(refId="weishampel2004a"):
     genusPattern = re.compile(r"^([A-Z][a-z]{2,})\s+[A-Z]")
     speciesPattern = re.compile(r"^([A-Z])\.\s*([a-z][a-z-]{2,})\b")
 
+    # Family and higher-rank headings sit in the same column as genera and match
+    # the same shape, so "Allosauridae" was being carried down onto the species
+    # rows beneath it, yielding binomials like "Allosauridae fragilis".
+    higherRankPattern = re.compile(r"(idae|inae|oidea|acea)$")
+
     records = []
     currentGenus = None
     pending = None
@@ -348,7 +353,10 @@ def extractWeishampel(refId="weishampel2004a"):
         if genusMatch and not speciesMatch:
             flush()
             pending = None
-            currentGenus = genusMatch.group(1)
+            # A higher-rank heading is not a genus, and leaving the previous one
+            # standing would attribute its species rows to the wrong taxon, so
+            # clear it and let those rows be skipped instead.
+            currentGenus = None if higherRankPattern.search(genusMatch.group(1)) else genusMatch.group(1)
             continue
         elif speciesMatch and currentGenus and speciesMatch.group(1) == currentGenus[0]:
             flush()
@@ -362,6 +370,19 @@ def extractWeishampel(refId="weishampel2004a"):
                 "stage": age,
                 "material": material,
             }
+            continue
+
+        # A taxon cell that opens with a capital letter starts a new entry, even
+        # when it matched neither pattern above -- a species of a genus whose
+        # header row was missed, or a genus written without its authority.
+        # Treating those as continuations is what let one record swallow the
+        # next: Heyuannia huangi accumulated "Dalangshan Formation People's
+        # Republic of China Djadokhta Formation" across a two-column OCR block.
+        # Genuine wrapped text opens with a bracket, a lower-case word or
+        # nothing at all, so only those may continue a record.
+        if taxonCell[:1].isupper():
+            flush()
+            pending = None
             continue
 
         # Anything else continues the record above it, carrying wrapped text.

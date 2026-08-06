@@ -118,6 +118,20 @@ def normalizeSpecimen(value):
     return unpadded.replace(" ", "")
 
 
+def loadStageOrder():
+    """Return the project's stage names in order, oldest first.
+
+    Needed to expand a range: "Berriasian-Hauterivian" names its endpoints only,
+    and without the stages between them our Valanginian reads as a disagreement
+    with a cell that in fact contains it.
+
+    @returns: Dict of lowercased stage name to its index, oldest first.
+    """
+    schema = yaml.safe_load(open(os.path.join(DATA, "schema.yml"), encoding="utf-8"))
+
+    return {str(name).lower(): index for index, name in enumerate(schema.get("stages") or {})}
+
+
 def loadStageVocabulary():
     """Return the project's own set of valid stage names, lowercased.
 
@@ -133,7 +147,7 @@ def loadStageVocabulary():
     return {str(name).lower() for name in (schema.get("stages") or {})}
 
 
-def splitStages(value, vocabulary):
+def splitStages(value, vocabulary, order=None):
     """Extract the recognised stage names from a reference-work age cell.
 
     The works write ages many ways -- "Hettangian/Sinemurian", "Maastrichtian
@@ -141,16 +155,35 @@ def splitStages(value, vocabulary):
     every plausible separator and only tokens present in the project vocabulary
     are kept. An empty result means "no usable age", never "disagrees".
 
+    A dash between two stages means a RANGE, and the stages between them belong
+    to it: "Berriasian-Hauterivian" covers the Valanginian, so reading only the
+    endpoints turns a source that agrees with us into one that disagrees. Slashes
+    and "or" are left alone -- those offer alternatives rather than a span.
+
     @param value: Raw stage string, or None.
     @param vocabulary: Set of valid lowercased stage names.
+    @param order: Optional stage-name to index map used to expand ranges.
     @returns: Set of recognised lowercased stage names.
     """
     if not value:
         return set()
 
-    tokens = re.split(r"[^A-Za-z]+| or | and | to ", str(value).lower())
+    text = str(value).lower()
+    tokens = re.split(r"[^A-Za-z]+| or | and | to ", text)
+    found = {token for token in tokens if token in vocabulary}
 
-    return {token for token in tokens if token in vocabulary}
+    if order:
+        qualifiers = r"(?:\?|late |early |middle |lower |upper |\s)*"
+        span = re.compile(rf"([a-z]+(?:ian|ium))\s*[-\u2013\u2014]\s*{qualifiers}([a-z]+(?:ian|ium))")
+
+        for match in span.finditer(text):
+            first, second = match.group(1), match.group(2)
+
+            if first in order and second in order:
+                low, high = sorted((order[first], order[second]))
+                found |= {name for name, index in order.items() if low <= index <= high}
+
+    return found
 
 
 def loadFormationVariants():
@@ -521,6 +554,7 @@ def main():
     formationVariants = loadFormationVariants()
     institutionAliases = loadInstitutionAliases()
     stageVocabulary = loadStageVocabulary()
+    stageOrder = loadStageOrder()
     referenceRecords = loadReferenceRecords()
     speciesRecords = loadSpeciesRecords()
 
@@ -771,7 +805,7 @@ def main():
         agreeing, disagreeing, referenceValues, disagreeingKeys = [], [], [], []
 
         for reference in trusted:
-            referenceStages = splitStages(reference.get("stage"), stageVocabulary)
+            referenceStages = splitStages(reference.get("stage"), stageVocabulary, stageOrder)
 
             if not ourStages or not referenceStages:
                 continue
