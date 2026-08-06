@@ -238,23 +238,33 @@ periods:
   - Middle Permian
   - Early Permian
 
+# Chronostratigraphic stages, youngest first, with their boundary ages in
+# millions of years. Boundaries follow the ICS International
+# Chronostratigraphic Chart v2024/12 (Cohen, Finney, Gibbard & Fan). The
+# version is named here deliberately: the table drifted silently from
+# GTS2012 to a mix of scales once before, and a species record that omits
+# from_ma/to_ma takes its interval from this table at build time.
+#
+# Update by re-reading the published chart, not by adjusting single rows to
+# suit a record: a boundary that disagrees with a paper is a disagreement
+# about that paper's scale, not a licence to edit the chart.
 stages:
   Maastrichtian:
     period: Late Cretaceous
-    from_ma: 72.1
+    from_ma: 72.2
     to_ma: 66.0
   Campanian:
     period: Late Cretaceous
     from_ma: 83.6
-    to_ma: 72.1
+    to_ma: 72.2
   Santonian:
     period: Late Cretaceous
-    from_ma: 86.3
+    from_ma: 85.7
     to_ma: 83.6
   Coniacian:
     period: Late Cretaceous
     from_ma: 89.8
-    to_ma: 86.3
+    to_ma: 85.7
   Turonian:
     period: Late Cretaceous
     from_ma: 93.9
@@ -265,128 +275,128 @@ stages:
     to_ma: 93.9
   Albian:
     period: Early Cretaceous
-    from_ma: 113.0
+    from_ma: 113.2
     to_ma: 100.5
   Aptian:
     period: Early Cretaceous
-    from_ma: 125.0
-    to_ma: 113.0
+    from_ma: 121.4
+    to_ma: 113.2
   Barremian:
     period: Early Cretaceous
-    from_ma: 129.4
-    to_ma: 125.0
+    from_ma: 125.77
+    to_ma: 121.4
   Hauterivian:
     period: Early Cretaceous
     from_ma: 132.6
-    to_ma: 129.4
+    to_ma: 125.77
   Valanginian:
     period: Early Cretaceous
-    from_ma: 139.8
+    from_ma: 137.05
     to_ma: 132.6
   Berriasian:
     period: Early Cretaceous
-    from_ma: 145.0
-    to_ma: 139.8
+    from_ma: 143.1
+    to_ma: 137.05
   Tithonian:
     period: Late Jurassic
-    from_ma: 152.1
-    to_ma: 145.0
+    from_ma: 149.2
+    to_ma: 143.1
   Kimmeridgian:
     period: Late Jurassic
-    from_ma: 157.3
-    to_ma: 152.1
+    from_ma: 154.8
+    to_ma: 149.2
   Oxfordian:
     period: Late Jurassic
-    from_ma: 163.5
-    to_ma: 157.3
+    from_ma: 161.5
+    to_ma: 154.8
   Callovian:
     period: Middle Jurassic
-    from_ma: 166.1
-    to_ma: 163.5
+    from_ma: 165.3
+    to_ma: 161.5
   Bathonian:
     period: Middle Jurassic
-    from_ma: 168.3
-    to_ma: 166.1
+    from_ma: 168.2
+    to_ma: 165.3
   Bajocian:
     period: Middle Jurassic
-    from_ma: 170.3
-    to_ma: 168.3
+    from_ma: 170.9
+    to_ma: 168.2
   Aalenian:
     period: Middle Jurassic
-    from_ma: 174.1
-    to_ma: 170.3
+    from_ma: 174.7
+    to_ma: 170.9
   Toarcian:
     period: Early Jurassic
-    from_ma: 182.7
-    to_ma: 174.1
+    from_ma: 184.2
+    to_ma: 174.7
   Pliensbachian:
     period: Early Jurassic
-    from_ma: 190.8
-    to_ma: 182.7
+    from_ma: 192.9
+    to_ma: 184.2
   Sinemurian:
     period: Early Jurassic
-    from_ma: 199.3
-    to_ma: 190.8
+    from_ma: 199.5
+    to_ma: 192.9
   Hettangian:
     period: Early Jurassic
-    from_ma: 201.3
-    to_ma: 199.3
+    from_ma: 201.4
+    to_ma: 199.5
   Rhaetian:
     period: Late Triassic
-    from_ma: 205.5
-    to_ma: 201.3
+    from_ma: 205.7
+    to_ma: 201.4
   Norian:
     period: Late Triassic
-    from_ma: 227.0
-    to_ma: 205.5
+    from_ma: 227.3
+    to_ma: 205.7
   Carnian:
     period: Late Triassic
     from_ma: 237.0
-    to_ma: 227.0
+    to_ma: 227.3
   Ladinian:
     period: Middle Triassic
-    from_ma: 242.0
+    from_ma: 241.464
     to_ma: 237.0
   Anisian:
     period: Middle Triassic
-    from_ma: 247.2
-    to_ma: 242.0
+    from_ma: 246.7
+    to_ma: 241.464
   Olenekian:
     period: Early Triassic
-    from_ma: 251.2
-    to_ma: 247.2
+    from_ma: 249.9
+    to_ma: 246.7
   Induan:
     period: Early Triassic
-    from_ma: 251.9
-    to_ma: 251.2
+    from_ma: 251.902
+    to_ma: 249.9
   Changhsingian:
     period: Late Permian
     from_ma: 254.14
-    to_ma: 251.9
+    to_ma: 251.902
   Wuchiapingian:
     period: Late Permian
     from_ma: 259.51
     to_ma: 254.14
   Capitanian:
     period: Middle Permian
-    from_ma: 265.1
+    from_ma: 264.28
     to_ma: 259.51
   Wordian:
     period: Middle Permian
-    from_ma: 268.8
-    to_ma: 265.1
+    from_ma: 266.9
+    to_ma: 264.28
   Roadian:
     period: Middle Permian
-    from_ma: 272.95
-    to_ma: 268.8
+    from_ma: 274.4
+    to_ma: 266.9
   Kungurian:
     period: Early Permian
-    from_ma: 283.5
-    to_ma: 272.95
+    from_ma: 283.3
+    to_ma: 274.4
   Artinskian:
     period: Early Permian
     from_ma: 290.1
-    to_ma: 283.5
+    to_ma: 283.3
   Sakmarian:
     period: Early Permian
     from_ma: 293.52
