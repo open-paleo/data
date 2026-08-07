@@ -24,12 +24,24 @@ dispute:
     (Santucci and Filippi, 2022), whereas Cerda et al. (2021) instead recovered a
     South American affinity close to Pellegrinisaurus. These placements fall
     within Saltasauridae under some definitions. It is placed at Saltasauridae
-    pending resolution.
+    pending resolution. The content of the genus is separately contested: Paul
+    (2025) argued that the late Maastrichtian Utah material differs from the
+    early Maastrichtian New Mexican type material, made USNM 15560 the holotype
+    of a new genus Utetitan, and would restrict Alamosaurus sanjuanensis to its
+    New Mexican type horizon. That split rests on qualitative scapular and
+    ischial characters, is not supported by a cladistic analysis, and has not
+    been taken up by subsequent work; USNM 15560 is retained here as referred
+    material of A. sanjuanensis, following its long-standing referral
+    (Gilmore, 1946).
   history:
     - date: "2026-06-30"
       note: >
         Placed at Saltasauridae incertae sedis; Laurasian (near Saltasaurinae)
         and South American (near Pellegrinisaurus) affinities remain unresolved.
+    - date: "2026-08-07"
+      note: >
+        Proposed split of USNM 15560 into Utetitan (Paul, 2025) reviewed and
+        not adopted; the genus is recorded as a synonym pending further work.
 diet: herbivore
 locomotion: quadrupedal
 paleoenvironment:
@@ -58,6 +70,13 @@ identifiers:
     id: "4822781"
   - source: eol
     id: "4658371"
+synonyms:
+  - name: Utetitan
+    type: possible subjective
+    reason: Erected by Paul (2025) for USNM 15560, the North Horn Formation
+      skeleton long referred to Alamosaurus sanjuanensis, on qualitative
+      scapular and ischial characters and without a cladistic analysis. The
+      separation has not been adopted by subsequent work.
 species:
   - name: Alamosaurus sanjuanensis
     etymology: "Named for San Juan County, New Mexico, where the first remains were
@@ -95,8 +114,24 @@ species:
       weight_kg:
         min: 30000
         max: 80000
+    synonyms:
+      - name: Utetitan zellaguymondeweyae
+        type: possible subjective
+        reason: Erected on USNM 15560, a specimen referred to Alamosaurus
+          sanjuanensis since Gilmore (1946); the separation proposed by Paul
+          (2025) has not been adopted by subsequent work.
     erected_in: gilmore1922a
 notable_specimens:
+  - specimen_id: [USNM 15560]
+    institution: USNM
+    species: Alamosaurus sanjuanensis
+    category: complementary
+    significance: "A partial postcranial skeleton from the lower North Horn
+      Formation of Utah preserving caudals 1-30, both sternals, the right
+      scapulocoracoid, forelimb, both ischia and an osteoderm, nearly all of it
+      absent from the scapula-only holotype. Paul (2025) made it the holotype
+      of a separate genus."
+    references: [gilmore1946b, paul2025a]
   - specimen_id: [TMM 43621-1]
     institution: TMM
     species: Alamosaurus sanjuanensis
@@ -121,3 +156,9 @@ references:
     notes: Recovered Alamosaurus with South American affinity near Pellegrinisaurus in phylogenetic analysis
   - id: santucci2022a
     notes: Grouped Alamosaurus among Laurasian titanosaurs closely related to Saltasaurinae, in a biogeographic discussion.
+  - id: gilmore1946b
+    notes: Describes USNM 15560 from the North Horn Formation and refers it to
+      Alamosaurus sanjuanensis.
+  - id: paul2025a
+    notes: Makes USNM 15560 the holotype of a separate genus, Utetitan, and
+      would restrict Alamosaurus sanjuanensis to its New Mexican type horizon.
