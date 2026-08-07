@@ -3562,6 +3562,19 @@ Anoplosaurus curtonotus:
       Orthography, not a dispute. The erecting paper writes "Cambridge Greensand"
       closed and never "Green Sand"; pereda-suberbiola1999a and barrett2020a do
       the same across 65 occurrences. Pair added to formation-variants.yml.
+  - categories: [holotype]
+    source: pereda-suberbiola1999a
+    verdict: ours-correct
+    note: >
+      The reference work folds a paralectotype into the type.
+      pereda-suberbiola1999a, which made the designation, separates them:
+      "Designated lectotype. SMC B55731, a partial right scapula. Anoplosaurus
+      curtonotus was erected on the basis of 77 syntypes (Seeley 1879). No
+      holotype specimen was designated by Seeley (1879)." SMC B55670 appears in
+      the very next line under "Paralectotypes. SMC B55670, partial left
+      dentary", alongside roughly seventy other numbers. Our lectotype and its
+      material -- a partial right scapula -- match exactly. SMC is an alias of
+      CAMSM in institutions.yaml, so the prefix difference is already resolved.
 Losillasaurus giganteus:
   - categories: [stage]
     source: campos-soto2019z
@@ -3609,7 +3622,23 @@ Phuwiangosaurus sirindhornae:
       hard bound of 133.8 rather than to the paper's preferred 133.6, and to_ma to
       the base of the Barremian, so the record states the stage assignment without
       inheriting the minimal-lag precision.
-
+  - categories: [holotype]
+    source: suteethorn2009a
+    verdict: corrected
+    note: >
+      The type is a numbered series and we held a single truncated identifier.
+      The reference work is not folding referred material in here -- it is
+      quoting the erecting paper verbatim: martin1994a gives "Type : A partial
+      skeleton n° P.W.1-1 to P.W.1-21". suteethorn2009a gives the modern
+      catalogue form, "Holotype. SM PW1-0001 to SM PW1-0022; partly articulated
+      skeleton including three cervical vertebrae, three dorsal vertebrae,
+      scapulae, left humerus, left ulna, ilia, pubes, ischia, femora, left
+      fibula, coracoid, chevron and rib", and its four-digit padded form matches
+      the other SM specimens in the literature (SM PW1-0002, SM K11-0021). The 22
+      elements are now listed individually rather than as a range. Two residuals
+      recorded rather than acted on: the element count differs between the two
+      papers (21 against 22), and our material field says four dorsal vertebrae
+      where suteethorn2009a says three.
 Phuwiangvenator yaemniyomi:
   - categories: [stage]
     source: tucker2022z
@@ -5249,3 +5278,33 @@ Tarascosaurus salluvicus:
     specimen's entire provenance as a label reading "Crétacé supérieur, Lambeau
     du Beausset", collector unknown, and reasons to the Fuvelian from matrix
     lithology alone.
+
+Jingshanosaurus xinwaensis:
+  categories: [holotype]
+  source: zhang2020a
+  verdict: ours-correct
+  note: >
+    The reference work has printed the FIELD number as the catalogue number.
+    zhang2020a gives both in one line: "Holotype. LFGT-ZLJ0113 (field number:
+    LV003), a well-preserved skeleton (around 9 m in total length)".
+    LFGT-ZLJ0113 occurs seventy times in that paper against one occurrence of
+    LV003, which is the parenthetical above. Ours is the catalogue number and
+    is correct.
+
+Thanatotheristes degrootorum:
+  categories: [holotype]
+  source: voris2020a
+  verdict: corrected
+  note: >
+    Changed TMP 2018.016.0001 to TMP 2010.5.7; we had recorded the REFERRED
+    specimen as the holotype. voris2020a: "Holotype. TMP 2010.5.7, a partial
+    skull from a large subadult individual ... that includes the right maxilla,
+    right jugal, right postorbital", which is our material field almost word
+    for word. The number we held is a zero-padded rendering of TMP 2018.16.1,
+    which that paper introduces two paragraphs later as "Referred specimen. TMP
+    2018.16.1, a partial right maxilla from a subadult individual" found at a
+    different locality. The holotype number occurs forty-one times in the
+    paper; ours occurs nowhere. RTMP is already an alias of TMP, so the prefix
+    was never the disagreement. Recorded fully padded as TMP 2010.005.0007, to
+    match the YYYY.NNN.NNNN form the other Tyrrell numbers here use; the paper
+    writes it TMP 2010.5.7.
