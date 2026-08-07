@@ -30,13 +30,13 @@
 #                NOT listed here is new and does need review
 #   rank_contested  ranks the literature genuinely disagrees on -- kept visible
 #                rather than settled by majority
-#   finest_published  true when a value coarser than a formation is CORRECT
-#                because nothing finer has ever been published for it. Group-rank
-#                entries no longer need this -- `location.group` carries them --
-#                so it survives only where no richer field exists, as for the
-#                informal Toundoute Continental Series.
 #   references   [{id, notes}] -- `id` resolves to a references/ store entry,
 #                the same pointer shape genus and clade files use
+#
+# WHERE A COARSE VALUE IS CORRECT, say so in the notes rather than in a field.
+# A group that is the finest unit anyone has published belongs in
+# `location.group`, which needs no defending; an informally named unit carries
+# `rank: informal`. Neither needs a flag, and a flag with no consumer rots.
 #
 # CANONICAL SPELLINGS. Where the literature is split, the choice and its reason
 # are recorded on the entry. Sânpetru over Sînpetru is the worked example: the
@@ -112,7 +112,6 @@ Bevons:
 
 Dockum:
   rank: group
-  finest_published: true
   references:
     - id: nesbitt2015a
       notes: >
@@ -369,7 +368,6 @@ Sasayama:
 
 "Toundoute Continental Series":
   rank: informal
-  finest_published: true
   references:
     - id: montenat2005a
       notes: >
