@@ -1,5 +1,6 @@
 genus: Cumnoria
-parent: Styracosterna
+parent: Dryomorpha
+placement: incertae sedis
 etymology: Named for Cumnor, a village in Oxfordshire, England, near where the
   fossils were found.
 pronunciation:
@@ -9,10 +10,18 @@ description: Cumnoria is a genus of basal iguanodontian dinosaur that lived
   United Kingdom.
 dispute:
   summary: >
-    Cumnoria prestwichii is usually recovered as a basal styracosternan
-    (Madzia and others, 2021) but has also been placed as a
-    non-ankylopollexian iguanodontian just outside Ankylopollexia
-    (Maidment and others, 2023; Jones, 2026). Its separation from the North
+    The position of Cumnoria prestwichii is unresolved across three
+    incompatible hypotheses. It has been recovered as a basal styracosternan
+    (McDonald, 2011), within a camptosaurid grouping alongside Camptosaurus
+    dispar (Sánchez-Fenollosa and others, 2023; Fonseca and others, 2024;
+    Dieudonné and others, 2026), and outside Ankylopollexia altogether
+    (Maidment and others, 2023; Rotatori and others, 2026; Jones, 2026).
+    Because Camptosauridae and Styracosterna are complementary stem clades
+    defined on Camptosaurus dispar and Iguanodon bernissartensis, the second
+    and third hypotheses both exclude it from Styracosterna. Some analyses
+    cannot place it at all and prune it as an unstable wildcard (Poole, 2022).
+    It is placed at Dryomorpha incertae sedis, the least inclusive clade
+    common to every hypothesis. Its separation from the North
     American Camptosaurus is also contested. Carpenter and Lamanna (2015)
     regarded Cumnoria as a junior subjective synonym of Camptosaurus, holding
     that its sole recognized autapomorphy, a small intramaxillary fossa,
@@ -32,6 +41,11 @@ dispute:
       note: Synonymy with Camptosaurus reviewed and not adopted; the
         proposal rests on a single character and no cladistic analysis,
         against a dedicated redescription that supplies two autapomorphies.
+    - date: "2026-08-07"
+      note: Moved from Styracosterna to Dryomorpha incertae sedis. Madzia and
+        others (2021) list the species in the composition of both Camptosauridae
+        and Styracosterna under different reference phylogenies, so it does not
+        support the narrower placement on its own.
 diet: herbivore
 locomotion: facultative
 paleoenvironment:
@@ -106,7 +120,19 @@ references:
   - id: jones2026a
     notes: Source of the mass and hip height estimates.
   - id: madzia2021a
-    notes: Recovered Cumnoria as a basal styracosternan iguanodontian
+    notes: Lists Cumnoria prestwichii in the composition of both Camptosauridae
+      and Styracosterna, under different reference phylogenies.
+  - id: mcdonald2011a
+    notes: Removes the species from Camptosaurus and recovers it among the most
+      basal members of Styracosterna.
+  - id: fonseca2024a
+    notes: Recovers Cumnoria within Camptosauridae, and reviews the analyses
+      placing it near or outside the root of Ankylopollexia.
+  - id: dieudonné2026a
+    notes: Recovers Cumnoria and Oblitosaurus as sister taxa among the
+      early-diverging ankylopollexians.
+  - id: poole2022a
+    notes: Pruned Cumnoria from the strict consensus as an unstable taxon.
   - id: maidment2023a
     notes: Redescribes the holotype, diagnoses Cumnoria on two autapomorphies
       of the pectoral girdle, and places it as a non-ankylopollexian
