@@ -271,6 +271,16 @@ export type Period = {
      * End of the date range in millions of years ago. Must be <= from_ma.
      */
     to_ma?: number;
+
+    /**
+     * How precisely the age is known. `unit` means no age finer than the
+     * containing lithostratigraphic unit has been published, so the stages
+     * above are that unit's range rather than a determination for this taxon.
+     * Absent means the age is finer than the unit, or has not been checked --
+     * the two are deliberately not distinguished, since only a reading of the
+     * literature can tell them apart.
+     */
+    resolution?: string;
 };
 
 /**

@@ -1419,12 +1419,29 @@ for (const [filePath, doc] of genusParsed)
             range.stages.length >= inheritedSpanThreshold
             && recordStages.length === range.stages.length)
         {
-            checkWarning(
+            // `resolution: unit` is the record saying this IS the unit's range,
+            // because nothing finer has been published. That is an answer, not
+            // an omission, so it settles the finding rather than hiding it.
+            if (species.period?.resolution !== "unit")
+            {
+                checkWarning(
+                    "Stage envelope",
+                    filePath,
+                    `species '${species.name ?? "?"}': stages are exactly the ${range.unit} ` +
+                    `range (${range.stages.join(", ")}) — either narrow them from the ` +
+                    "describing paper, or set period.resolution: unit to record that no " +
+                    "finer age is published");
+            }
+        }
+        else if (species.period?.resolution === "unit")
+        {
+            // Claiming unit resolution while carrying something other than the
+            // unit's range is a contradiction: one of the two is wrong.
+            checkError(
                 "Stage envelope",
                 filePath,
-                `species '${species.name ?? "?"}': stages are exactly the ${range.unit} ` +
-                `range (${range.stages.join(", ")}) — likely inherited from the unit ` +
-                "rather than dated, see #2058");
+                `species '${species.name ?? "?"}': period.resolution is 'unit' but the ` +
+                `stages are not the ${range.unit} range (${range.stages.join(", ")})`);
         }
     }
 }

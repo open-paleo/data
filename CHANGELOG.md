@@ -10,6 +10,17 @@ and this project uses [calendar versioning](https://calver.org/) (YYYY.MM).
 Initial public release, establishing the v1 output schema.
 
 ### Added
+- `period.resolution`, distinguishing an age determined for a taxon from one
+  that is simply its unit's. `resolution: unit` states that no age finer than
+  the containing lithostratigraphic unit has been published, so `stage` carries
+  that unit's range rather than a determination. Absent means the age is finer,
+  or has not been checked — the two are deliberately not distinguished, since
+  only a reading of the literature separates them. Nothing in the output
+  previously told the two apart: *Talarurus* at Cenomanian–Santonian and
+  *Enigmosaurus* at Cenomanian–Turonian look like two ages of different width,
+  but one is the Baynshire Formation's whole range and the other is a horizon
+  its describing paper states. Validation rejects `unit` on a record whose
+  stages are not the unit's range. Output schema 1.5.0 → 1.6.0.
 - `location.notes`, recording why the other location fields are what they are
   where a reader would otherwise take them for a recorded observation. It is
   reserved for provenance caveats — material not collected in situ, a locality
