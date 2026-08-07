@@ -302,6 +302,19 @@ export type Location = {
     locality?: string;
 
     /**
+     * Lithostratigraphic group (or supergroup/subgroup) containing the
+     * occurrence. Populated when the group is the finest unit anyone has
+     * published for it, in which case `formation` is absent -- recording
+     * `formation: "Yezo Group"` instead claims a formation exists. May also
+     * carry context alongside a known formation.
+     *
+     * Rank words are not part of the value: `group: Yezo`, matching
+     * `formation: Morrison` rather than "Morrison Formation". Ranks resolve
+     * through formations.yaml.
+     */
+    group?: string;
+
+    /**
      * Geological formation from which the specimen was recovered.
      */
     formation?: string;

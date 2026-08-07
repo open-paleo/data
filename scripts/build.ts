@@ -449,7 +449,9 @@ function resolvePartTargets(generaMap: Record<string, ProcessedGenus>): void
                 ? "bed"
                 : location.member
                     ? "member"
-                    : "formation";
+                    : location.formation
+                        ? "formation"
+                        : "group";
         }
     }
 }
@@ -597,7 +599,7 @@ const dataset: Dataset = {
         clade_count: Object.keys(clades).length,
         genus_count: Object.keys(genera).length,
         license: "CC-BY-4.0",
-        schema_version: "1.3.0",
+        schema_version: "1.4.0",
         version,
     },
     tree,

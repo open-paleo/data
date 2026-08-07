@@ -226,6 +226,10 @@ const regionRegistry = parseYamlContent(
 ) as Record<string, string>;
 const allowedRegionCodes = new Set(Object.keys(regionRegistry));
 
+const formationRegistry = parseYamlContent(
+    fs.readFileSync(path.join(root, "formations.yaml"), "utf8"),
+) as Record<string, { rank?: string }>;
+
 const flaggedSources = loadFlaggedSources(path.join(root, "flagged-sources.yml"));
 const flaggedPublishers = buildFlaggedSet(flaggedSources.publishers);
 const flaggedJournals = buildFlaggedSet(flaggedSources.journals);
@@ -1269,14 +1273,62 @@ for (const [filePath, doc] of genusParsed)
                 filePath,
                 `species '${species.name ?? "?"}': 'part' must be a string, got ${typeof part} (${JSON.stringify(part)})`);
         }
-        else if (typeof part === "string" && !species?.location?.formation)
+        else if (typeof part === "string"
+            && !species?.location?.bed
+            && !species?.location?.member
+            && !species?.location?.formation
+            && !species?.location?.group)
         {
-            // `part` qualifies the finest unit named above it, so with no
-            // formation there is nothing for it to qualify.
+            // `part` qualifies the finest unit named above it, so with no unit
+            // at any rank there is nothing for it to qualify.
             checkError(
                 "Location completeness",
                 filePath,
-                `species '${species.name ?? "?"}': 'part' is set to '${part}' but no formation is given`);
+                `species '${species.name ?? "?"}': 'part' is set to '${part}' but no group, formation, member or bed is given`);
+        }
+    }
+}
+
+// 13a. A group belongs in `location.group`, not in `location.formation`
+startCheck("Formation rank");
+
+const groupRankWord = /\b(Group|Grp\.?|Subgroup|Supergroup)$/;
+const knownGroups = new Set(
+    Object.entries(formationRegistry)
+        .filter(([, entry]) => entry && (entry.rank === "group" || entry.rank === "subgroup"))
+        .map(([name]) => name.split(" (")[0]));
+
+for (const [filePath, doc] of genusParsed)
+{
+    if (!doc || !Array.isArray(doc.species))
+    {
+        continue;
+    }
+
+    for (const species of doc.species)
+    {
+        const formation = species?.location?.formation;
+
+        if (typeof formation !== "string")
+        {
+            continue;
+        }
+        else if (groupRankWord.test(formation))
+        {
+            checkError(
+                "Formation rank",
+                filePath,
+                `species '${species.name ?? "?"}': formation '${formation}' names a group — put it in 'group' with the rank word dropped`);
+        }
+        else if (knownGroups.has(formation))
+        {
+            // Nothing in a bare name records its rank, which is why the
+            // registry exists: "Morrison" is a formation and "Kem Kem" is a
+            // group, spelled the same way in the same field.
+            checkError(
+                "Formation rank",
+                filePath,
+                `species '${species.name ?? "?"}': formation '${formation}' is a group per formations.yaml — put it in 'group'`);
         }
     }
 }

@@ -10,6 +10,21 @@ and this project uses [calendar versioning](https://calver.org/) (YYYY.MM).
 Initial public release, establishing the v1 output schema.
 
 ### Added
+- `location.group`, holding the lithostratigraphic group containing an
+  occurrence. Populated when the group is the finest unit anyone has published,
+  in which case `formation` is absent — recording `formation: "Yezo Group"`
+  instead claimed a formation existed. Rank words are not part of the value:
+  `group: Yezo`, matching `formation: Morrison` rather than "Morrison
+  Formation". Twenty records moved, and `Bulldog Shale (Marree Subgroup)` split
+  into its formation and its subgroup.
+
+  Ranks resolve through the new [`formations.yaml`](./formations.yaml)
+  registry, which also records variant spellings and the paper each claim was
+  read from. Validation now rejects a group in `formation`, whether it says so
+  (`Yezo Group`) or not (`Kem Kem`, `Tugulu`) — the second case is undetectable
+  without the registry, which is why a group name sat unnoticed in a formation
+  field until a primary was read for another reason. `part` extends upward and
+  can now qualify a group. Output schema 1.3.0 → 1.4.0.
 - `location.part` and `location.bed`, completing the lithostratigraphic
   hierarchy (group, formation, member, bed). `member` now holds a member's
   NAME only; an informal upper/lower division goes in `part`, which qualifies

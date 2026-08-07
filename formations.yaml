@@ -30,9 +30,11 @@
 #                NOT listed here is new and does need review
 #   rank_contested  ranks the literature genuinely disagrees on -- kept visible
 #                rather than settled by majority
-#   finest_published  true when a coarser-than-formation value is CORRECT
-#                because nothing finer has ever been published for it. Retire
-#                these once `location.group` exists (#2012).
+#   finest_published  true when a value coarser than a formation is CORRECT
+#                because nothing finer has ever been published for it. Group-rank
+#                entries no longer need this -- `location.group` carries them --
+#                so it survives only where no richer field exists, as for the
+#                informal Toundoute Continental Series.
 #   references   [{id, notes}] -- `id` resolves to a references/ store entry,
 #                the same pointer shape genus and clade files use
 #
@@ -184,7 +186,6 @@ Hastings:
 
 "Hekou (CN-GS)":
   rank: group
-  finest_published: true
   references:
     - id: yao2026a
       notes: >
@@ -207,7 +208,6 @@ Houcheng:
 Jehol:
   rank: group
   contains: [Yixian, Jiufotang]
-  finest_published: true
   references:
     - id: yao2019a
       notes: >
@@ -299,7 +299,6 @@ Arlington:
 
 Parecis:
   rank: group
-  finest_published: true
   references:
     - id: delcourt2017a
       notes: >
@@ -422,7 +421,6 @@ Wales:
 Wangshi:
   rank: group
   contains: [Xingezhuang, Jingangkou, Hongtuya]
-  finest_published: true
   references:
     - id: an2015a
       notes: Zhucheng.
@@ -448,7 +446,6 @@ Xiagou:
 
 Yezo:
   rank: group
-  finest_published: true
   references:
     - id: suzuki2004a
       notes: >
@@ -463,3 +460,15 @@ Yuliangzi:
 Ziliujing:
   rank: formation
   variants: ["Zilujing Fm."]
+
+Xinminpu:
+  rank: group
+  contains: [Xiagou, Zhonggou]
+  variants: [Xinminbao]
+  references:
+    - id: you2014a
+      notes: >
+        "The Xinminpu Group includes two formations: the lower Xiagou and the
+        upper Zhonggou formations", and elsewhere writes the pair as "the
+        Xinminpu (= Xinminbao) Group", which is why both spellings reached the
+        records.
