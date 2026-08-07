@@ -90,6 +90,7 @@ class Pronunciation(BaseModel):
 
 
 class PartOf(Enum):
+    group = 'group'
     formation = 'formation'
     member = 'member'
     bed = 'bed'
@@ -108,6 +109,10 @@ class Location(BaseModel):
         description='ISO 3166-2 subdivision code (see regions.yaml). Absent where a country has no subdivisions.',
     )
     locality: Optional[str] = None
+    group: Optional[str] = Field(
+        None,
+        description='Lithostratigraphic group containing the occurrence; populated when the group is the finest published unit, in which case formation is absent. No rank word in the value.',
+    )
     formation: Optional[str] = None
     member: Optional[str] = Field(
         None,
@@ -123,7 +128,7 @@ class Location(BaseModel):
     )
     part_of: Optional[PartOf] = Field(
         None,
-        description='Which unit `part` qualifies. Build-derived; always the finest of bed, member and formation that is populated.',
+        description='Which unit `part` qualifies. Build-derived; always the finest of bed, member, formation and group that is populated.',
     )
     coordinates: Optional[List[float]] = Field(
         None,

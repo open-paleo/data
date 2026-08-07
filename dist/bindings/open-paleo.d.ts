@@ -426,6 +426,10 @@ export interface Location {
    */
   region_code?: string;
   locality?: string;
+  /**
+   * Lithostratigraphic group containing the occurrence; populated when the group is the finest published unit, in which case formation is absent. No rank word in the value.
+   */
+  group?: string;
   formation?: string;
   /**
    * Member NAME only; an informal upper/lower division goes in part.
@@ -440,9 +444,9 @@ export interface Location {
    */
   part?: string;
   /**
-   * Which unit `part` qualifies. Build-derived; always the finest of bed, member and formation that is populated.
+   * Which unit `part` qualifies. Build-derived; always the finest of bed, member, formation and group that is populated.
    */
-  part_of?: "formation" | "member" | "bed";
+  part_of?: "group" | "formation" | "member" | "bed";
   /**
    * [latitude, longitude] in decimal degrees.
    *
