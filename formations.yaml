@@ -30,6 +30,20 @@
 #                NOT listed here is new and does need review
 #   rank_contested  ranks the literature genuinely disagrees on -- kept visible
 #                rather than settled by majority
+#   stages       the unit's published age, oldest stage first. An ENVELOPE for
+#                checking records, never a source to derive them from: a taxon
+#                is often dated more finely than its unit (a metre above a
+#                contact, a dated ash), and filling records from here would
+#                flatten exactly that. Recorded as STAGES, never as Ma --
+#                a stage range tracks the chart in schema.yml automatically,
+#                whereas a stated Ma value derives from nothing and so opts out
+#                of maintenance. One record in the dataset proved that by
+#                sitting on GTS2012 numbers through the whole ICS v2024/12
+#                rebuild. Where sources disagree, this is the UNION of what they
+#                publish, not a choice between them -- it is a bound, and
+#                narrowing it to one reading only produces false positives
+#                against records following another. Which source gives which
+#                range goes in the reference notes.
 #   references   [{id, notes}] -- `id` resolves to a references/ store entry,
 #                the same pointer shape genus and clade files use
 #
@@ -51,6 +65,7 @@
 
 Allen:
   rank: formation
+  stages: [Campanian, Maastrichtian]
   parent: Malargüe
   references:
     - id: salgado1996a
@@ -75,6 +90,7 @@ Baharîje:
 
 Baruungoyot:
   rank: formation
+  stages: [Campanian]
   variants: ["Barun Goyot Fm."]
 
 Bauru:
@@ -92,6 +108,7 @@ Bayangobi:
 
 Baynshire:
   rank: formation
+  stages: [Cenomanian, Turonian, Coniacian, Santonian]
   variants: ["Bayan Shireh Fm.", "Bayanshiree Svita"]
 
 Bevons:
@@ -114,6 +131,7 @@ Bevons:
 
 "Cañadón Asfalto":
   rank: formation
+  stages: [Toarcian, Aalenian, Bajocian]
   references:
     - id: cúneo2013a
       notes: >
@@ -170,6 +188,7 @@ Bevons:
 
 Djadokhta:
   rank: formation
+  stages: [Campanian]
   contains: ["Bayn Dzak", Tugrugyin]
   references:
     - id: dashzeveg2005a
@@ -223,6 +242,7 @@ Ganzhou:
 
 "Gara Sbaa":
   rank: formation
+  stages: [Cenomanian]
   parent: Kem Kem
   variants: ["Ifezouane Formation", "Ifezouane Fm."]
   references:
@@ -363,8 +383,23 @@ Jehol:
       notes: >
         Follows the Ibrahim scheme; the Carcharodontosaurus neotype is Douira.
 
+Lianmuqin:
+  rank: formation
+  parent: Tugulu
+  stages: [Barremian, Aptian]
+  references:
+    - id: xu2018c
+      notes: >
+        Dates the upper Tugulu Group, of which the Lianmuqin is the uppermost
+        formation, Barremian-Aptian. Adopted here. The unit's age is genuinely
+        contested: Rauhut and Xu (2005) give "?Valanginian-Albian" after Shen
+        and Mateer (1992), and Sanchez-Fenollosa et al. (2025) late
+        Valanginian-?Barremian. Recording the range once means the four records
+        in this formation stop replicating a disputed number four times.
+
 Lufeng:
   rank: formation
+  stages: [Hettangian, Sinemurian, Pliensbachian, Toarcian]
   contains: [Shawan, "Zhangjia'ao"]
   variants: ["Lower Lufeng Formation", "Lower Lufeng Series"]
   references:
@@ -386,6 +421,11 @@ Lufeng:
         Records that replacing the upper/lower bed names with Shawan and
         Zhangjia'ao remains contested, so both vocabularies stay current in the
         literature.
+    - id: zhang2024a
+      notes: >
+        Magnetostratigraphy gives "Early Jurassic (late Sinemurian-Toarcian)"
+        against the Hettangian and Sinemurian of the bed-based dating. The
+        envelope spans both.
 
 "Magnesian Conglomerate":
   rank: none
@@ -407,6 +447,26 @@ Marree:
     - id: barrett2010b
       notes: >
         "the Marree Subgroup, which was formerly called the Marree Formation".
+
+Miaogou:
+  rank: formation
+  stages: [Aptian, Albian]
+  references:
+    - id: hao2025a
+      notes: >
+        "Miaogou Formation (Aptian-Albian)" for the Maortu locality, which is
+        where the formation's dinosaur record comes from.
+
+Mussentuchit:
+  rank: member
+  parent: Cedar Mountain
+  stages: [Albian, Cenomanian]
+  references:
+    - id: avrahami2024a
+      notes: >
+        Radiometrically "99.674 +0.439/0.197 to 98.905 +0.158/0.183 Myr", a
+        window inside the Cenomanian; Kirkland (1998) gives the member as
+        "latest Albian-basal Cenomanian", so the envelope carries both.
 
 Neuquén:
   rank: group
@@ -447,6 +507,7 @@ Parecis:
 
 "Oxford Clay":
   rank: formation
+  stages: [Callovian, Oxfordian]
   contains: [Peterborough, Stewartby, Weymouth]
   references:
     - id: ruiz-omeñaca2007a
@@ -462,6 +523,16 @@ Parecis:
         Whittlesey"; "Clay pits in the Upper Callovian Stewartby Member ... near
         Oxford yielded the theropod Eustreptospondylus"; and Metriacanthosaurus
         parkeri "from the Weymouth Member (formerly Upper Oxford Clay)".
+
+Pen:
+  rank: formation
+  stages: [Santonian]
+  references:
+    - id: rivera-sylva2018a
+      notes: >
+        "the Pen Formation (Upper Cretaceous, Santonian), at the Los Primos
+        locality". Its one informal member, the McKinney Springs tongue, is a
+        Big Bend unit and does not reach the Coahuila outcrops.
 
 Pawpaw:
   rank: formation
@@ -579,6 +650,7 @@ Ukureyskaya:
 
 "Villar del Arzobispo":
   rank: formation
+  stages: [Kimmeridgian, Tithonian]
   parent: Higueruelas
   references:
     - id: barco2005a
@@ -648,6 +720,18 @@ Wulansuhai:
 Xiagou:
   rank: formation
   variants: ["Xiaogou Fm."]
+
+"Yellow Cat":
+  rank: member
+  parent: Cedar Mountain
+  stages: [Berriasian, Valanginian, Hauterivian, Barremian, Aptian]
+  references:
+    - id: royo-torres2017b
+      notes: >
+        "All of these data suggest a potential age of late Berriasian-early
+        Aptian" for the member. Wide, and genuinely so -- the paper reports a
+        conflict between detrital zircon maxima and the ostracod and charophyte
+        evidence.
 
 Yezo:
   rank: group

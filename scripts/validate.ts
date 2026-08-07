@@ -228,7 +228,7 @@ const allowedRegionCodes = new Set(Object.keys(regionRegistry));
 
 const formationRegistry = parseYamlContent(
     fs.readFileSync(path.join(root, "formations.yaml"), "utf8"),
-) as Record<string, { rank?: string }>;
+) as Record<string, { rank?: string; stages?: Array<string> }>;
 
 const flaggedSources = loadFlaggedSources(path.join(root, "flagged-sources.yml"));
 const flaggedPublishers = buildFlaggedSet(flaggedSources.publishers);
@@ -1329,6 +1329,102 @@ for (const [filePath, doc] of genusParsed)
                 "Formation rank",
                 filePath,
                 `species '${species.name ?? "?"}': formation '${formation}' is a group per formations.yaml — put it in 'group'`);
+        }
+    }
+}
+
+// 13a. A record's stages against its unit's published range (formations.yaml).
+//
+// The registry range is an ENVELOPE, never a source to derive from: a taxon is
+// frequently dated more finely than its unit, from a level above a contact or a
+// dated ash, and that precision is the point. Two things are worth saying about
+// a record that does not sit inside it.
+startCheck("Stage envelope");
+
+/**
+ * Finds the registry entry governing a record, preferring the finest unit the
+ * record populates, so a member's own range wins over its formation's.
+ *
+ * @param location - The species location block under inspection.
+ * @returns The registry stage range and the unit it came from, or null.
+ */
+function unitStageRange(location: {
+    group?: string;
+    formation?: string;
+    member?: string;
+    bed?: string;
+}): { unit: string; stages: Array<string> } | null
+{
+    const candidates = [location.bed, location.member, location.formation, location.group];
+
+    for (const candidate of candidates)
+    {
+        if (typeof candidate !== "string")
+        {
+            continue;
+        }
+
+        const entry = formationRegistry[candidate];
+
+        if (entry && Array.isArray(entry.stages) && entry.stages.length > 0)
+        {
+            return { unit: candidate, stages: entry.stages };
+        }
+    }
+
+    return null;
+}
+
+/**
+ * Width below which an exact match against the unit's range says nothing --
+ * every record in a single-stage unit correctly equals that unit's range.
+ */
+const inheritedSpanThreshold = 3;
+
+for (const [filePath, doc] of genusParsed)
+{
+    if (!doc || !Array.isArray(doc.species))
+    {
+        continue;
+    }
+
+    for (const species of doc.species)
+    {
+        const recordStages = species?.period?.stage;
+
+        if (!Array.isArray(recordStages) || recordStages.length === 0 || !species.location)
+        {
+            continue;
+        }
+
+        const range = unitStageRange(species.location);
+
+        if (!range)
+        {
+            continue;
+        }
+
+        const allowed = new Set(range.stages);
+        const outside = recordStages.filter((stageName: string) => !allowed.has(stageName));
+
+        if (outside.length > 0)
+        {
+            checkWarning(
+                "Stage envelope",
+                filePath,
+                `species '${species.name ?? "?"}': ${outside.join(", ")} lies outside the ` +
+                `${range.unit} range (${range.stages.join(", ")}) in formations.yaml`);
+        }
+        else if (
+            range.stages.length >= inheritedSpanThreshold
+            && recordStages.length === range.stages.length)
+        {
+            checkWarning(
+                "Stage envelope",
+                filePath,
+                `species '${species.name ?? "?"}': stages are exactly the ${range.unit} ` +
+                `range (${range.stages.join(", ")}) — likely inherited from the unit ` +
+                "rather than dated, see #2058");
         }
     }
 }
