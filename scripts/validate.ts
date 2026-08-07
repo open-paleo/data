@@ -2633,6 +2633,11 @@ for (const [filePath, doc] of allParsed)
                 checkAmericanEnglish(filePath, `${speciesLabel}.type_specimen.material`, species.type_specimen.material);
             }
 
+            if (species.location && typeof species.location.notes === "string")
+            {
+                checkAmericanEnglish(filePath, `${speciesLabel}.location.notes`, species.location.notes);
+            }
+
             if (Array.isArray(species.synonyms))
             {
                 for (let synonymIndex = 0; synonymIndex < species.synonyms.length; synonymIndex += 1)
@@ -2864,6 +2869,11 @@ for (const [filePath, doc] of allParsed)
             if (species.type_specimen && typeof species.type_specimen.material === "string")
             {
                 checkCitationFormat(filePath, `${speciesLabel}.type_specimen.material`, species.type_specimen.material);
+            }
+
+            if (species.location && typeof species.location.notes === "string")
+            {
+                checkCitationFormat(filePath, `${speciesLabel}.location.notes`, species.location.notes);
             }
 
             if (Array.isArray(species.synonyms))

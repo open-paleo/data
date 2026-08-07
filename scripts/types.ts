@@ -355,6 +355,16 @@ export type Location = {
      * Geographic coordinates as [latitude, longitude] in decimal degrees.
      */
     coordinates?: [number, number];
+
+    /**
+     * Why the fields above are what they are, where a reader would otherwise
+     * take them for a recorded observation. Reserved for provenance caveats:
+     * material that was not collected in situ, a locality reconstructed after
+     * the fact, a horizon the collector never wrote down. Not a general
+     * comment field -- what the taxon is and where it sits belong in
+     * `description` and `dispute`.
+     */
+    notes?: string;
 };
 
 /**

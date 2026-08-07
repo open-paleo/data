@@ -112,6 +112,31 @@ Bevons:
   rank: formation
   variants: ["Cambridge Green Sand"]
 
+"Cañadón Asfalto":
+  rank: formation
+  references:
+    - id: cúneo2013a
+      notes: >
+        A two-member scheme exists but is not settled and is not used for these
+        dinosaurs: "Some workers have subdivided the formation into a lower
+        lacustrine/tuffaceous (Las Chacritas) member and an upper siliciclastic
+        fluvial (Puesto Almada) member". The members are Cabaleri (2010),
+        published as a symposium abstract. Every other occurrence of either name
+        at member rank in the literature read here is a bibliography line citing
+        that abstract, so `member` stays empty until a paper applies it.
+    - id: rauhut2005b
+      notes: >
+        Why the member names cannot be inferred from a locality: this paper puts
+        Condorraptor at the "Las Chacritas locality, 2.3 km west of Cerro
+        Condor", a canyon, and names no member. Las Chacritas and Puesto Almada
+        are each simultaneously a place and a member named after it, and Puesto
+        Almada as a place lies in the Canadon Calcareo outcrop -- a different
+        formation from the one whose member carries the name.
+    - id: pol2020a
+      notes: >
+        Positional rather than named: Bagualia comes from the "Lower levels of
+        the Canadon Asfalto Formation dated at 179.17 +/- 0.12 Ma".
+
 "Cedar Mountain":
   rank: formation
   contains: [Buckhorn Conglomerate, Yellow Cat, Poison Strip, Ruby Ranch, Mussentuchit]
@@ -254,6 +279,24 @@ Houcheng:
         it: Houcheng is the Hebei name, Tuchengzi the Liaoning one. Which
         applies follows the province the locality sits in.
 
+"Iren Dabasu":
+  rank: formation
+  variants: ["Erlian Formation", "Iren Dabasu Fm.", "Iren Nor Formation",
+    "Iren Debasu Formation", "Elian Formation"]
+  references:
+    - id: xu2006c
+      notes: >
+        Erlian is the Chinese name for the same unit, and these two papers show
+        it directly: this one puts Sonidosaurus at "Saihangaobi, Sonid Zuoqi,
+        Nei Mongol (15 km southwest of Erenhot); Elian Formation".
+    - id: xu2007b
+      notes: >
+        The same locality under the other name -- Gigantoraptor from
+        "Saihangaobi, Sunitezuoqi, Nei Mongol Autonomous Region. Iren Dabasu
+        Formation". Search both names: the Erlian literature is invisible to a
+        search for Iren Dabasu, and it is where the basin's subdivision is
+        discussed.
+
 Jehol:
   rank: group
   contains: [Yixian, Jiufotang]
@@ -378,6 +421,24 @@ Parecis:
         No formation has been published for the Fazenda Roncador locality, so
         group rank is the finest honest value there.
 
+"Oxford Clay":
+  rank: formation
+  contains: [Peterborough, Stewartby, Weymouth]
+  references:
+    - id: ruiz-omeñaca2007a
+      notes: >
+        Gives the equation the older literature has to be read through:
+        "Oxford Clay Formation, Peterborough Member (=lower Oxford Clay)".
+        Middle Oxford Clay is the Stewartby Member and Upper Oxford Clay the
+        Weymouth Member.
+    - id: naish2007a
+      notes: >
+        Assigns all three members: five genera from "the Middle Callovian
+        Peterborough Member ... in clay pits between Yaxley, Peterborough and
+        Whittlesey"; "Clay pits in the Upper Callovian Stewartby Member ... near
+        Oxford yielded the theropod Eustreptospondylus"; and Metriacanthosaurus
+        parkeri "from the Weymouth Member (formerly Upper Oxford Clay)".
+
 Pawpaw:
   rank: formation
   variants: ["Paw Paw Formation"]
@@ -491,6 +552,22 @@ Udurchukan:
 Ukureyskaya:
   rank: formation
   variants: ["Ukurey Fm."]
+
+"Villar del Arzobispo":
+  rank: formation
+  parent: Higueruelas
+  references:
+    - id: barco2005a
+      notes: >
+        No named members: positions here are stated as parts of the formation,
+        as in "Cuesta Lonsal-1 is situated in the lower part of the Villar del
+        Arzobispo Formation".
+    - id: sánchez-fenollosa2023a
+      notes: >
+        A named unit here that is NOT a member: the Barrihonda-El Humero site
+        "is located in the Riodeva Facies Association", a facies association
+        rather than a lithostratigraphic unit. Overlies the Higueruelas
+        Formation and is unconformably overlain by Lower Cretaceous units.
 
 "Vulcanodon Beds":
   rank: none

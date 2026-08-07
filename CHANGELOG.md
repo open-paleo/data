@@ -10,6 +10,17 @@ and this project uses [calendar versioning](https://calver.org/) (YYYY.MM).
 Initial public release, establishing the v1 output schema.
 
 ### Added
+- `location.notes`, recording why the other location fields are what they are
+  where a reader would otherwise take them for a recorded observation. It is
+  reserved for provenance caveats — material not collected in situ, a locality
+  reconstructed after the fact, a horizon the collector never wrote down — and
+  is not a general comment field; what a taxon is and where it sits belong in
+  `description` and `dispute`. Nothing in the other fields can carry this:
+  *Podokesaurus* has coordinates and a formation, but its holotype came out of a
+  glacial erratic that had travelled two or three miles, so the coordinates
+  locate where the boulder stopped rather than where the animal was buried.
+  Also used where a member is deliberately absent despite a describing paper
+  naming one. Output schema 1.4.0 → 1.5.0.
 - `location.group`, holding the lithostratigraphic group containing an
   occurrence. Populated when the group is the finest unit anyone has published,
   in which case `formation` is absent — recording `formation: "Yezo Group"`

@@ -264,7 +264,8 @@
           "minItems": 2,
           "maxItems": 2,
           "items": { "type": "number" }
-        }
+        },
+        "notes": { "type": "string", "description": "Provenance caveat qualifying the fields above: material not collected in situ, a locality reconstructed after the fact, a horizon never recorded. Not a general comment field." }
       }
     },
     "size": {

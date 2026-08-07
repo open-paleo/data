@@ -599,7 +599,7 @@ const dataset: Dataset = {
         clade_count: Object.keys(clades).length,
         genus_count: Object.keys(genera).length,
         license: "CC-BY-4.0",
-        schema_version: "1.4.0",
+        schema_version: "1.5.0",
         version,
     },
     tree,
