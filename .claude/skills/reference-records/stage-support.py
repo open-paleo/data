@@ -31,6 +31,7 @@ import re
 
 import yaml
 
+from _formations import loadVariants
 from _paths import audit_dir, corpus_dir, data_dir
 
 findingPattern = re.compile(
@@ -89,9 +90,7 @@ def buildSupportIndex(formations, stages, window):
     # our spelling undercounts badly: scanning for "Baruungoyot" alone finds 12
     # papers where "Barun Goyot" as well finds 22, which was the difference
     # between "leans ours" and an unopposed majority.
-    variants = yaml.safe_load(
-        open(os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                          "formation-variants.yml"), encoding="utf-8")) or {}
+    variants = loadVariants()
     patterns = {}
 
     for formation in formations:

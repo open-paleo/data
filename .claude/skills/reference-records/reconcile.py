@@ -36,6 +36,7 @@ import unicodedata
 
 import yaml
 
+from _formations import loadVariants
 from _paths import audit_dir, data_dir
 
 DATA = data_dir()
@@ -190,17 +191,13 @@ def loadFormationVariants():
     """Load formation spellings already reviewed as variants of one name.
 
     These stay in the report under their own REVIEWED heading rather than being
-    suppressed, because the canonical form is still undecided (#2012). Reporting
-    them separately means a spelling NOT on the list stands out as new.
+    suppressed: reporting them separately means a spelling NOT on the list
+    stands out as new. Spellings live in the repo-level formations.yaml, which
+    also records each unit's rank.
 
     @returns: Dict of normalized our-form -> set of normalized variant forms.
     """
-    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "formation-variants.yml")
-
-    if not os.path.exists(path):
-        return {}
-
-    document = yaml.safe_load(open(path, encoding="utf-8")) or {}
+    document = loadVariants()
 
     return {normalizeFormation(ours): {normalizeFormation(v) for v in variants}
             for ours, variants in document.items()}
@@ -848,7 +845,7 @@ def main():
              "- `formation-differs-known-spelling-variant-REVIEWED` — compared 2026-07-30 and",
              "  found to be variant spellings of one unit, not different units. Choosing a",
              "  canonical form is deferred to #2012 (formations registry). A spelling NOT in",
-             "  `formation-variants.yml` is new and does need review.", "",
+             "  `formations.yaml` is new and does need review.", "",
              "A source id marked `~` was joined on a near-epithet match, not an exact one,",
              "because the reference work misspells the binomial. Check the pairing in",
              "\"Fuzzy binomial joins\" below before trusting a finding that rests on one.", "",

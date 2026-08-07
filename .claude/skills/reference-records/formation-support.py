@@ -34,6 +34,7 @@ import re
 
 import yaml
 
+from _formations import loadVariants
 from _paths import audit_dir, corpus_dir, data_dir
 
 findingPattern = re.compile(
@@ -48,16 +49,6 @@ rankWords = re.compile(
     r"Sandstone|Sst\.?|Ss\.?|Limestone|Ls\.?|Mudstone|Mst\.?|Siltstone|Shale|Sh\.?|"
     r"Marls?|Clay|Conglomerate|Deposits)$",
     re.I)
-
-
-def loadVariants():
-    """Read the known alternative spellings for each formation.
-
-    @returns: Dict of formation name to a list of alternative spellings.
-    """
-    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "formation-variants.yml")
-
-    return yaml.safe_load(open(path, encoding="utf-8")) or {}
 
 
 def cleanUnit(text):
@@ -344,7 +335,7 @@ def main():
             f"## same unit under two names ({len(sameUnit)})", "",
             "Both sides reduce to one name once rank and lithology words are",
             "stripped, so nobody is disagreeing with us. Add the pair to",
-            "formation-variants.yml and close them.", "",
+            "formations.yaml and close them.", "",
         ]
 
         for binomial, heading, ours, theirs, sources in sameUnit:

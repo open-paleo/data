@@ -1,0 +1,465 @@
+# Formation registry: canonical unit name -> rank, containment, spellings and
+# the papers each of those rests on.
+#
+# WHY THIS EXISTS. `location.formation` is free text, and nothing in a unit's
+# name records its rank: "Morrison" is a formation and "Kem Kem" is a group,
+# spelled the same way in the same field. Without a table there is no way to
+# check that the field holds a formation, and no way to record that two
+# spellings mean one thing. Both were re-litigated on every reconciliation run
+# until this file existed.
+#
+# RULE OF ENTRY. Every entry carries the paper each claim was read from. This
+# file is CURATED, NEVER MINED. A prototype miner over 400 papers produced 119
+# containment claims, but folded leading qualifiers into unit names ("Middle
+# Jurassic Lower" as a child of Shaximiao) and had no basin scoping. A rank
+# inferred from phrasing is a guess, and a guess in a suppression table closes
+# real findings silently. Add a line when a primary you were already reading
+# states the rank, and not otherwise.
+#
+# HOMONYMS ARE KEYED BY COUNTRY. Unit names are reused across basins: the Hekou
+# Group of the Lanzhou-Minhe Basin in Gansu and the Hekou Formation of Jiangxi's
+# Guifeng Group are different units of different ages. A name-keyed registry
+# would merge them. Same trap as the institution-code collisions.
+#
+# FIELDS
+#   rank         group | subgroup | formation | member | bed | informal | none
+#   kind         what the string actually is, when `rank: none`
+#   parent       the unit that contains this one, where a source states it
+#   contains     units inside this one, where a source states them
+#   variants     spellings seen in the literature for the same unit; a variant
+#                NOT listed here is new and does need review
+#   rank_contested  ranks the literature genuinely disagrees on -- kept visible
+#                rather than settled by majority
+#   finest_published  true when a coarser-than-formation value is CORRECT
+#                because nothing finer has ever been published for it. Retire
+#                these once `location.group` exists (#2012).
+#   references   [{id, notes}] -- `id` resolves to a references/ store entry,
+#                the same pointer shape genus and clade files use
+#
+# CANONICAL SPELLINGS. Where the literature is split, the choice and its reason
+# are recorded on the entry. Sânpetru over Sînpetru is the worked example: the
+# 1993 Romanian orthographic reform replaced î with â in this position,
+# weishampel2003a flags it in its own geology section, and all four reference
+# works print â.
+#
+# DELIBERATELY EXCLUDED: Shaximiao vs Xiashaximiao / Shangshaximiao. Xia and
+# shang are Chinese for lower and upper, so those name a subunit rather than a
+# spelling of the same unit -- a substantive difference that must stay in the
+# active findings. Watch for the same trap in other Chinese formation names.
+
+Bahariya:
+  rank: formation
+  variants: ["Baharija Fm."]
+
+Baharîje:
+  rank: formation
+  variants: ["Baharija Fm.", "Baharija Formation"]
+
+Baruungoyot:
+  rank: formation
+  variants: ["Barun Goyot Fm."]
+
+Bauru:
+  rank: group
+  contains: [Adamantina, Marília]
+  references:
+    - id: delcourt2017a
+      notes: >
+        Paraná Basin. The Mato Grosso outcrops formerly assigned here belong to
+        the Parecis Group instead.
+
+Bayangobi:
+  rank: formation
+  variants: ["Bayan Gobi Fm.", "Bayingobi Fm."]
+
+Baynshire:
+  rank: formation
+  variants: ["Bayan Shireh Fm.", "Bayanshiree Svita"]
+
+Bevons:
+  rank: none
+  kind: locality
+  references:
+    - id: accarie1995a
+      notes: >
+        A commune near Sisteron. The erecting paper gives a lithological
+        description rather than a formal unit, which is why the reference works
+        fell back on the place name; the rocks are the Marnes Bleues.
+
+"Calcaires de Caen":
+  rank: formation
+  variants: ["Calcaire de Caen", "Calcaire du Caen"]
+
+"Cambridge Greensand":
+  rank: formation
+  variants: ["Cambridge Green Sand"]
+
+"Cerro Carnerero":
+  rank: formation
+  variants: ["Cerro Carnereo Fm."]
+
+"Chipping Norton Limestone":
+  rank: formation
+  variants: ["Chipping Norton Ls."]
+
+"Cuckfield Stone":
+  rank: member
+  parent: Grinstead Clay
+  references:
+    - id: norman2013a
+
+Dockum:
+  rank: group
+  finest_published: true
+  references:
+    - id: nesbitt2015a
+      notes: >
+        Lepidus. The erecting paper withheld a formation name deliberately;
+        this is the uncontested fallback if Cooper Canyon is judged too
+        contested.
+
+"El Mers":
+  rank: group
+  contains: ["El Mers I", "El Mers II", "El Mers III"]
+  references:
+    - id: maidment2020a
+
+Fuvelian:
+  rank: none
+  kind: local chronostratigraphic stage
+  references:
+    - id: csiki-sava2015a
+      notes: >
+        One of the four Provence local stages (Valdonnian, Fuvelian, Begudian,
+        Rognacian) erected by Matheron 1864 -- a time term, not a rock unit.
+    - id: tortosa2014a
+      notes: >
+        Shows the distinction inside one paper: gives Arcovenator a formation
+        AND a local stage side by side, while placing Tarascosaurus in "the
+        Fuvelian local stage" with no formation.
+
+Ganzhou:
+  rank: group
+  contains: [Maodian, Zhoutian]
+  references:
+    - id: yao2026a
+      notes: Underlies the Guifeng Group.
+
+Gosau:
+  rank: group
+  references:
+    - id: csiki-sava2015a
+      notes: The Grünbach Formation sits in the Lower Gosau Subgroup.
+    - id: bunzel1870a
+      notes: >
+        Its "Gosau formation" is pre-modern usage, from before the Gosau was
+        raised to group rank.
+
+"Grinstead Clay":
+  rank: formation
+  rank_contested: [member, formation]
+  references:
+    - id: norman2013a
+      notes: Treats it as a formation; so do naish2008a and raven2020a.
+    - id: norman2010a
+      notes: >
+        Treats it as a Member of the Tunbridge Wells Sand Formation. Recorded
+        at formation rank with the disagreement kept visible rather than
+        settled by majority.
+
+Guifeng:
+  rank: group
+  contains: [Hekou, Tangbian, Lianhe]
+  references:
+    - id: yao2026a
+      notes: Jiangxi. Its Hekou Formation is NOT the Gansu Hekou Group.
+
+Hastings:
+  rank: group
+  contains: ["Wadhurst Clay", "Tunbridge Wells Sand"]
+  variants: ["Hastings Beds", "Hastings Beds Group"]
+  references:
+    - id: carrano2012a
+      notes: Also treated as a sub-group of the Wealden.
+
+"Hekou (CN-GS)":
+  rank: group
+  finest_published: true
+  references:
+    - id: yao2026a
+      notes: >
+        Lanzhou-Minhe Basin, Lower Cretaceous. NOT the Hekou Formation of the
+        Guifeng Group in Jiangxi -- different unit, different age.
+    - id: you2006a
+      notes: >
+        Daxiatitan, Huanghetitan liujiaxiaensis, Lanzhousaurus, Yongjinglong.
+        No work subdivides the Hekou Group into named formations in this basin.
+
+Houcheng:
+  rank: formation
+  references:
+    - id: zhao2006a
+      notes: >
+        Laterally equivalent to the Tuchengzi Formation and not a spelling of
+        it: Houcheng is the Hebei name, Tuchengzi the Liaoning one. Which
+        applies follows the province the locality sits in.
+
+Jehol:
+  rank: group
+  contains: [Yixian, Jiufotang]
+  finest_published: true
+  references:
+    - id: yao2019a
+      notes: >
+        Lingyuanosaurus, Zhongjianosaurus -- both from the Sihedang locality on
+        identical coordinates. Whether those exposures belong to the Yixian or
+        the overlying Jiufotang is unsettled as of 2026, and this paper declines
+        the question outright: "Resolving this stratigraphic issue is beyond the
+        scope of the present paper." Group rank is the finest unit both readings
+        share.
+
+"Kalahari Deposits":
+  rank: none
+  kind: region name hardened into a unit
+  references:
+    - id: dewit1992a
+      notes: >
+        The only geological investigation of the Kangnas site uses the word
+        "Formation" nowhere and "Kalahari" once, inside a cited reference title;
+        it describes a crater-facies deposit above an olivine-melilitite
+        intrusion.
+    - id: rogers1915a
+      notes: >
+        The companion note to the erecting paper, and the only contemporary
+        account of the well. Uses "Kalahari" purely as a region -- "the southern
+        Kalahari", "the Kalahari region" -- and names no stratigraphic unit.
+        Every later use of "Kalahari Deposits" traces to Cooper 1985.
+
+"Kem Kem":
+  rank: group
+  contains: ["Gara Sbaa", Douira]
+  references:
+    - id: ibrahim2020a
+      notes: >
+        "recognized here as the Kem Kem Group, which is composed of the lower
+        Gara Sbaa and upper Douira formations".
+    - id: kellermann2025a
+      notes: >
+        Follows the Ibrahim scheme; the Carcharodontosaurus neotype is Douira.
+
+"Magnesian Conglomerate":
+  rank: none
+  kind: superseded misassignment
+  references:
+    - id: galton2007a
+      notes: >
+        Asylosaurus, Thecodontosaurus. The erecting paper rejects it outright --
+        the deposit is "a Triassic (Rheatian) dolomitized cave breccia or
+        fissure fill (not in Magnesian/ Dolomitic Conglomerate) in Lower
+        Carboniferous (Dinantian) marine limestone" -- and explains how the name
+        entered circulation: "It was long equated with the Magnesian
+        Conglomerate, which occurs very close by."
+
+Marree:
+  rank: subgroup
+  contains: ["Bulldog Shale"]
+  references:
+    - id: barrett2010b
+      notes: >
+        "the Marree Subgroup, which was formerly called the Marree Formation".
+
+Neuquén:
+  rank: group
+  contains: ["Río Limay"]
+  references:
+    - id: carballido2010a
+      notes: Candeleros and Huincul are formations within the Río Limay Subgroup.
+
+"Amoreira-Porto Novo":
+  rank: member
+  parent: Lourinhã
+  references:
+    - id: mateus2014a
+
+Arlington:
+  rank: member
+  parent: Lewisville
+  references:
+    - id: head1998a
+
+"Pant-y-ffynnon Quarry fissure fill":
+  rank: none
+  kind: fissure fill
+  references:
+    - id: spiekman2021a
+      notes: >
+        Karstic fills in Carboniferous Limestone. The South Wales and Bristol
+        Channel fissure faunas have no formation name in any paper, so this
+        string is the best available value rather than a defect.
+
+Parecis:
+  rank: group
+  finest_published: true
+  references:
+    - id: delcourt2017a
+      notes: >
+        No formation has been published for the Fazenda Roncador locality, so
+        group rank is the finest honest value there.
+
+Pawpaw:
+  rank: formation
+  variants: ["Paw Paw Formation"]
+
+"Râul Mare Beds":
+  rank: informal
+  parent: Sânpetru
+  references:
+    - id: díaz2025a
+      notes: >
+        "a not yet formally defined lithostratigraphical unit that either
+        represents the uppermost part of the Sînpetru Formation ... or is a
+        distinct unit". Also the name of the river beside the outcrop.
+
+"Red Beds of Hermiin Tsav":
+  rank: none
+  kind: locality
+  references:
+    - id: funston2018a
+      notes: >
+        An informal name for the Baruungoyot type locality, not a rival
+        formation: the paper writes "Baruungoyot Formation, Hermiin Tsav".
+
+"Río Limay":
+  rank: subgroup
+  parent: Neuquén
+  contains: [Candeleros, Huincul]
+  references:
+    - id: carballido2010a
+
+Sânpetru:
+  rank: formation
+  variants: ["Sînpetru Fm.", "Sînpetru", "Sanpetru Fm."]
+  references:
+    - id: weishampel2003a
+      notes: >
+        Canonical spelling chosen here. The 1993 Romanian orthographic reform
+        replaced î with â in this position, and this paper flags it in its own
+        geology section -- "among them Sînpetru to Sânpetru". All four reference
+        works print â. The î form is kept as a variant because it survives in
+        later literature, including augustin2022a in 2022.
+
+Santana:
+  rank: group
+  contains: [Crato, Ipubi, Romualdo]
+  references:
+    - id: delcourt2025a
+      notes: >
+        Araripe Basin. The old "Santana Formation" was raised to group rank and
+        its Romualdo Member became the Romualdo Formation, so the two names
+        describe the same rock at different ranks -- but only for the Romualdo,
+        NOT for Crato or Ipubi taxa.
+
+Sasayama:
+  rank: group
+  contains: [Ohyamashimo, Sawada]
+  references:
+    - id: tanaka2024a
+      notes: >
+        "The Sasayama Group, comprising the Ohyamashimo and Sawada formations in
+        ascending order".
+
+"Toundoute Continental Series":
+  rank: informal
+  finest_published: true
+  references:
+    - id: montenat2005a
+      notes: >
+        Berberosaurus, Tazoudasaurus. Erects no formation, dividing the
+        succession into eight explicitly informal units A-H. The lower bone-bed
+        is term F, the upper term G.
+
+Tremp:
+  rank: group
+  contains: ["La Posa", Conques]
+  references:
+    - id: prieto-márquez2021a
+      notes: La Posa is the basal grey unit, Conques the overlying lower red unit.
+
+Tugulu:
+  rank: group
+  contains: [Lianmuqin]
+  references:
+    - id: rauhut2005c
+      notes: Lianmuqin is the uppermost formation of the group.
+
+Udurchukan:
+  rank: formation
+  variants: ["Udurchurkan Fm."]
+
+Ukureyskaya:
+  rank: formation
+  variants: ["Ukurey Fm."]
+
+"Vulcanodon Beds":
+  rank: none
+  kind: informal
+  references:
+    - id: viglietti2018a
+      notes: >
+        Superseded. The type locality lies "within the uppermost Forest
+        Sandstone rather than the interbedded sandstones of the Batoka Basalt
+        Formation".
+
+Wales:
+  rank: none
+  kind: country
+  references:
+    - id: jones2026c
+      notes: >
+        Reached the formation comparison from a reference work's locality
+        column. A reminder that those columns are not stratigraphy.
+
+Wangshi:
+  rank: group
+  contains: [Xingezhuang, Jingangkou, Hongtuya]
+  finest_published: true
+  references:
+    - id: an2015a
+      notes: Zhucheng.
+    - id: buffetaut1995a
+      notes: >
+        Micropachycephalosaurus. "dinosaur remains occur at several distinct
+        levels in the Wangshi Group", and the group's competing subdivision
+        schemes disagree about which subunit the dinosaur beds sit in, so a
+        formation-rank value for an unfigured 1978 locality is not supportable.
+
+Woodbine:
+  rank: group
+  contains: [Lewisville]
+  references:
+    - id: tykoski2023a
+      notes: >
+        Raised to group by Denne and others (2016); the Lewisville is its upper
+        formation, with Arlington and Tarrant as members inside it.
+
+Xiagou:
+  rank: formation
+  variants: ["Xiaogou Fm."]
+
+Yezo:
+  rank: group
+  finest_published: true
+  references:
+    - id: suzuki2004a
+      notes: >
+        Nipponosaurus. "Upper Ammonites Bed; now Upper Yezo Group". No
+        formation-rank unit is recoverable: the Kawakami colliery has been
+        inaccessible since 1945 and the excavation field notes are lost.
+
+Yuliangzi:
+  rank: formation
+  variants: ["Yuliangze Fm.", "Yuliangze Formation"]
+
+Ziliujing:
+  rank: formation
+  variants: ["Zilujing Fm."]

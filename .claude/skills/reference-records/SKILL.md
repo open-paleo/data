@@ -70,10 +70,23 @@ quotation that closed each one. Fully suppressed from future runs. Verdicts:
 > That happened once, cancelling a holotype adjudication with an occurrence one.
 > `loadAdjudicated` now aborts on duplicate keys.
 
-**`formation-variants.yml`** — spellings compared and found to be variants of
-one unit. Reported under a `-REVIEWED` heading rather than suppressed, because
-the canonical form is still undecided (#2012). A spelling *not* in this file is
-new and does need review.
+**`../../../formations.yaml`** — the repo-level formation registry, read here
+through `_formations.py`. It records each unit's **rank** (group, formation,
+member, bed, or none-of-those), what contains it, its known **variant
+spellings**, and the papers each of those claims was read from.
+
+Two things it does for this skill:
+
+- Variant spellings are reported under a `-REVIEWED` heading rather than
+  suppressed, so a spelling *not* in the registry stands out as new.
+- Rank stops a containing group being scored as a rival claim to a formation
+  inside it. That pattern was about a third of the formation findings — a
+  reference work printing "Kem Kem" against our "Gara Sbaa" is naming the
+  group, not disagreeing.
+
+It is **curated, never mined**: add a line when a primary you were already
+reading states the rank, and not otherwise. A rank inferred from phrasing is a
+guess, and a guess in a suppression table closes real findings silently.
 
 ## Reading the report
 
