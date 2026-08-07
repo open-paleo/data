@@ -1,10 +1,10 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-08-07T04:09:32.800Z
+  built_at: 2026-08-07T05:07:51.168Z
   clade_count: 188
   genus_count: 1401
   license: CC-BY-4.0
-  schema_version: 1.4.0
+  schema_version: 1.5.0
   version: "2026.08"
 tree:
   Life:
@@ -23844,7 +23844,7 @@ genera:
       phonetic: AHR-kee-OP-ter-iks
       ipa: /ˌɑːrkiːˈɒptərɪks/
     etymology: From Greek 'archaios' meaning 'ancient' and 'pteryx' meaning 'feather' or 'wing', meaning 'ancient wing'.
-    description: Archaeopteryx , sometimes referred to by its German name, "Urvogel " (lit. 'Primeval Bird') is a genus of bird-like dinosaurs. The genus name derives from the Ancient Greek ἀρχαῖος (archaîos), meaning 'ancient', and πτέρυξ (ptérux), meaning 'feather, wing'. Between the late 19th century and the early 21st century, Archaeopteryx was generally accepted by paleontologists and popular reference books as the oldest known bird (member of the group Avialae). Older potential avialans have since been identified, including Anchiornis, Xiaotingia, Aurornis, and Baminornis.
+    description: Archaeopteryx , sometimes referred to by its German name, "Urvogel" (lit. 'Primeval Bird') is a genus of bird-like dinosaurs. The genus name derives from the Ancient Greek ἀρχαῖος (archaîos), meaning 'ancient', and πτέρυξ (ptérux), meaning 'feather, wing'. Between the late 19th century and the early 21st century, Archaeopteryx was generally accepted by paleontologists and popular reference books as the oldest known bird (member of the group Avialae). Older potential avialans have since been identified, including Anchiornis, Xiaotingia, Aurornis, and Baminornis.
     diet: insectivore
     locomotion: bipedal
     paleoenvironment:
@@ -25724,7 +25724,7 @@ genera:
           to_ma: 168.2
         location:
           country: AR
-          locality: 1.6  km northeast of Cerro Cóndor
+          locality: 1.6 km northeast of Cerro Cóndor
           region: Chubut
           formation: Cañadón Asfalto
           coordinates:
@@ -29470,10 +29470,12 @@ genera:
           locality: Bagual Canyon
           region: Chubut
           formation: Cañadón Asfalto
+          part: lower
           coordinates:
             - -43.450001
             - -69.183334
           region_code: AR-U
+          part_of: formation
         type_specimen:
           specimen_id:
             - MPEF-PV 3301
@@ -38664,6 +38666,7 @@ genera:
           locality: Fletton brick pit, Peterborough
           region: England
           formation: Oxford Clay
+          member: Peterborough
           coordinates:
             - 52.552071
             - -0.241701
@@ -42223,6 +42226,7 @@ genera:
           locality: New Peterborough Brick Company, No. 1 yard
           region: England
           formation: Oxford Clay
+          member: Peterborough
           coordinates:
             - 52.54253
             - -0.240363
@@ -65495,6 +65499,7 @@ genera:
           locality: Summertown Pit, Wolvercote
           region: England
           formation: Oxford Clay
+          member: Stewartby
           coordinates:
             - 51.782223
             - -1.287778
@@ -68772,10 +68777,12 @@ genera:
           locality: Cuesta Lonsal 1, Galve
           region: Aragon
           formation: Villar del Arzobispo
+          part: lower
           coordinates:
             - 40.66296
             - -0.884602
           region_code: ES-AR
+          part_of: formation
         type_specimen:
           specimen_id:
             - CLH-16
@@ -75248,6 +75255,7 @@ genera:
           coordinates:
             - 43.664444
             - 100.901947
+          notes: No member is recorded although the describing paper gives one. Cau et al. (2017) place the holotype in the "Bayn Dzak Member, Djadokhta Formation ..., Ukhaa Tolgod", but that member is erected and mapped in the southern Ulan Nur Basin, whereas Ukhaa Tolgod lies in the Nemegt Basin, so the two statements cannot both hold.
           region_code: MN-053
         size:
           length_m:
@@ -97304,6 +97312,7 @@ genera:
           country: GB
           region: City of Peterborough
           formation: Oxford Clay
+          member: Peterborough
           region_code: GB-PTE
         type_specimen:
           specimen_id:
@@ -100333,6 +100342,7 @@ genera:
           locality: Fletton brick pit, Peterborough
           region: England
           formation: Oxford Clay
+          member: Peterborough
           coordinates:
             - 52.552071
             - -0.241701
@@ -100602,6 +100612,17 @@ genera:
         journal: Paleontologia i Evolucio
         volume: 32-33
         pages: 99-122
+      - id: royo-torres2020a
+        authors: Royo-Torres, R.; Cobos, A.; Mocho, P.; Alcalá, L.
+        year: 2020
+        title: Origin and evolution of turiasaur dinosaurs set by means of a new 'rosetta' specimen from Spain
+        journal: Zoological Journal of the Linnean Society
+        publisher: Oxford University Press (OUP)
+        volume: "191"
+        issue: "1"
+        pages: 201-227
+        doi: 10.1093/zoolinnean/zlaa091
+        notes: Redescribes the genus and states the type horizon the erecting paper left open — "La Cañada site (Valencia), Villar del Arzobispo Formation", dated Kimmeridgian.
       - id: jones2026b
         authors: Jones, B.; Viola, E.
         year: 2026
@@ -108060,6 +108081,7 @@ genera:
           locality: Jordan's Cliff, Weymouth
           region: England
           formation: Oxford Clay
+          member: Weymouth
           coordinates:
             - 50.637501
             - -2.4267
@@ -131034,6 +131056,7 @@ genera:
           coordinates:
             - 42.255
             - -72.582
+          notes: The holotype was not collected in situ. Talbot (1911) found it in a boulder of sandstone that a glacier "carried two or three miles, possibly, and deposited not far from the site of Mount Holyoke College", so the coordinates locate where the boulder came to rest rather than where the animal was buried, and the formation is an inference about the outcrop the boulder was quarried from by the ice.
           region_code: US-MA
         size:
           length_m:
@@ -142373,6 +142396,7 @@ genera:
           locality: Fletton brick pit, Peterborough
           region: England
           formation: Oxford Clay
+          member: Peterborough
           coordinates:
             - 52.552071
             - -0.241701
@@ -143818,6 +143842,7 @@ genera:
           coordinates:
             - 44.13
             - 103.73
+          notes: The coordinates are the site, not the find spot. Norell et al. (2009) record that "the precise locality at the Flaming Cliffs where the specimen was collected was not recorded", the collection dating to 1923.
           region_code: MN-053
         type_specimen:
           specimen_id:
@@ -147449,6 +147474,7 @@ genera:
           coordinates:
             - 43.664444
             - 100.901947
+          notes: The locality is inferred, not recorded. Moutrille et al. (2025) state that "the exact locality of the specimen is unknown" and refer it to Ukhaa Tolgod tentatively, from documentation accompanying the specimen rather than from field data.
           region_code: MN-053
         diagnostic_features:
           - Middle cervical centra subequal in length (fifth centrum 125% longer than the sixth in S. devi)

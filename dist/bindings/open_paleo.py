@@ -136,6 +136,10 @@ class Location(BaseModel):
         max_length=2,
         min_length=2,
     )
+    notes: Optional[str] = Field(
+        None,
+        description='Provenance caveat qualifying the fields above: material not collected in situ, a locality reconstructed after the fact, a horizon never recorded. Not a general comment field.',
+    )
 
 
 class SizeRange(BaseModel):

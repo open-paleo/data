@@ -454,6 +454,10 @@ export interface Location {
    * @maxItems 2
    */
   coordinates?: [number, number];
+  /**
+   * Provenance caveat qualifying the fields above: material not collected in situ, a locality reconstructed after the fact, a horizon never recorded. Not a general comment field.
+   */
+  notes?: string;
   [k: string]: unknown;
 }
 export interface Size {
