@@ -427,7 +427,22 @@ export interface Location {
   region_code?: string;
   locality?: string;
   formation?: string;
+  /**
+   * Member NAME only; an informal upper/lower division goes in part.
+   */
   member?: string;
+  /**
+   * Named bed, the finest lithostratigraphic rank. Published names only.
+   */
+  bed?: string;
+  /**
+   * Informal position within the unit named by part_of. Lowercase, because informal divisions are not formally erected names: upper, middle, lower, or an ordinal.
+   */
+  part?: string;
+  /**
+   * Which unit `part` qualifies. Build-derived; always the finest of bed, member and formation that is populated.
+   */
+  part_of?: "formation" | "member" | "bed";
   /**
    * [latitude, longitude] in decimal degrees.
    *

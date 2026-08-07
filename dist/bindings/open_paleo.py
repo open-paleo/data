@@ -89,6 +89,12 @@ class Pronunciation(BaseModel):
     phonetic: Optional[str] = None
 
 
+class PartOf(Enum):
+    formation = 'formation'
+    member = 'member'
+    bed = 'bed'
+
+
 class Location(BaseModel):
     country: Optional[constr(pattern=r'^[A-Z]{2}$')] = Field(
         None, description='ISO 3166-1 alpha-2 code (see schema.yml countries).'
@@ -103,7 +109,22 @@ class Location(BaseModel):
     )
     locality: Optional[str] = None
     formation: Optional[str] = None
-    member: Optional[str] = None
+    member: Optional[str] = Field(
+        None,
+        description='Member NAME only; an informal upper/lower division goes in part.',
+    )
+    bed: Optional[str] = Field(
+        None,
+        description='Named bed, the finest lithostratigraphic rank. Published names only.',
+    )
+    part: Optional[str] = Field(
+        None,
+        description='Informal position within the unit named by part_of. Lowercase, because informal divisions are not formally erected names: upper, middle, lower, or an ordinal.',
+    )
+    part_of: Optional[PartOf] = Field(
+        None,
+        description='Which unit `part` qualifies. Build-derived; always the finest of bed, member and formation that is populated.',
+    )
     coordinates: Optional[List[float]] = Field(
         None,
         description='[latitude, longitude] in decimal degrees.',

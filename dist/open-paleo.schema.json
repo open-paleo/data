@@ -253,7 +253,10 @@
         "region_code": { "type": "string", "pattern": "^[A-Z]{2}-[A-Z0-9]{1,3}$", "description": "ISO 3166-2 subdivision code (see regions.yaml). Absent where a country has no subdivisions." },
         "locality": { "type": "string" },
         "formation": { "type": "string" },
-        "member": { "type": "string" },
+        "member": { "type": "string", "description": "Member NAME only; an informal upper/lower division goes in part." },
+        "bed": { "type": "string", "description": "Named bed, the finest lithostratigraphic rank. Published names only." },
+        "part": { "type": "string", "description": "Informal position within the unit named by part_of. Lowercase, because informal divisions are not formally erected names: upper, middle, lower, or an ordinal." },
+        "part_of": { "type": "string", "enum": ["formation", "member", "bed"], "description": "Which unit `part` qualifies. Build-derived; always the finest of bed, member and formation that is populated." },
         "coordinates": {
           "type": "array",
           "description": "[latitude, longitude] in decimal degrees.",
