@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-08-07T05:52:17.752Z",
+    "built_at": "2026-08-07T05:58:58.752Z",
     "clade_count": 188,
     "genus_count": 1401,
     "license": "CC-BY-4.0",
@@ -114984,11 +114984,7 @@
             "name": [
               "Late Cretaceous"
             ],
-            "stage": [
-              "Campanian",
-              "Maastrichtian"
-            ],
-            "from_ma": 83.6,
+            "from_ma": 100.5,
             "to_ma": 66
           },
           "location": {
@@ -115026,7 +115022,8 @@
           "volume": "5",
           "issue": "1",
           "pages": "259-264",
-          "doi": "10.1080/00359191509519723"
+          "doi": "10.1080/00359191509519723",
+          "notes": "Original description, giving no age for the material."
         }
       ],
       "taxonomy": [
@@ -194166,11 +194163,20 @@
     "Sinotyrannus": {
       "genus": "Sinotyrannus",
       "parent": "Proceratosauridae",
+      "dispute": {
+        "summary": "Cau and Paterna (2025) proposed Sinotyrannus as the adult morphotype of the coeval compsognathid Huaxiagnathus, which would make Sinotyrannus a junior synonym of the older name, but that hypothesis is single-paper-recent and not yet a community consensus; the genus is treated as valid here.\n",
+        "history": [
+          {
+            "date": "2026-08-06",
+            "note": "Adjudication moved from the description prose into a dispute block; the retain decision and its basis are unchanged."
+          }
+        ]
+      },
       "etymology": "From Latin 'Sinae' (a classical name for the Chinese) and Greek 'tyrannos' (tyrant); meaning 'Chinese tyrant'.",
       "pronunciation": {
         "phonetic": "SIGH-no-tie-RAN-us"
       },
-      "description": "Sinotyrannus is an extinct genus of large proceratosaurid tyrannosauroid theropod from the Aptian (Early Cretaceous) lower Jiufotang Formation of Kazuo County, western Liaoning Province, China — part of the Jehol Biota. The single species, Sinotyrannus kazuoensis, is known from a disarticulated skeleton (KZV-001) including the anterior skull and mandibles, three articulated dorsal vertebrae, ribs, partial ilia, and manual phalanges. Originally placed within Tyrannosauroidea (and tentatively Tyrannosauridae) by Ji et al. (2009), subsequent phylogenetic analyses (Loewen et al. 2013, and others) recovered Sinotyrannus as a basal proceratosaurid. With an estimated body length of ~9-10 m, it is one of the largest known Early Cretaceous tyrannosauroids. Cau and Paterna (2025) proposed Sinotyrannus as the adult morphotype of the coeval compsognathid Huaxiagnathus, but that hypothesis is single-paper-recent and not yet a community consensus; the genus is treated as valid here.",
+      "description": "Sinotyrannus is an extinct genus of large proceratosaurid tyrannosauroid theropod from the Aptian (Early Cretaceous) lower Jiufotang Formation of Kazuo County, western Liaoning Province, China — part of the Jehol Biota. The single species, Sinotyrannus kazuoensis, is known from a disarticulated skeleton (KZV-001) including the anterior skull and mandibles, three articulated dorsal vertebrae, ribs, partial ilia, and manual phalanges. Originally placed within Tyrannosauroidea (and tentatively Tyrannosauridae) by Ji et al. (2009), subsequent phylogenetic analyses (Loewen et al. 2013, and others) recovered Sinotyrannus as a basal proceratosaurid. With an estimated body length of ~9-10 m, it is one of the largest known Early Cretaceous tyrannosauroids.",
       "diet": "carnivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -201231,8 +201237,8 @@
             "name": [
               "Late Jurassic"
             ],
-            "from_ma": 163.5,
-            "to_ma": 145
+            "from_ma": 161.5,
+            "to_ma": 143.1
           },
           "location": {
             "country": "CN",
