@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-08-07T19:18:05.270Z
+  built_at: 2026-08-07T20:00:46.362Z
   clade_count: 188
   genus_count: 1400
   license: CC-BY-4.0
@@ -50342,19 +50342,22 @@ genera:
     described: 1875
   Cumnoria:
     genus: Cumnoria
-    parent: Styracosterna
+    parent: Dryomorpha
+    placement: incertae sedis
     etymology: Named for Cumnor, a village in Oxfordshire, England, near where the fossils were found.
     pronunciation:
       phonetic: kum-NOH-ree-uh
     description: Cumnoria is a genus of basal iguanodontian dinosaur that lived during the Late Jurassic period (Kimmeridgian age) in what is now Oxfordshire, United Kingdom.
     dispute:
       summary: |
-        Cumnoria prestwichii is usually recovered as a basal styracosternan (Madzia and others, 2021) but has also been placed as a non-ankylopollexian iguanodontian just outside Ankylopollexia (Maidment and others, 2023; Jones, 2026). Its separation from the North American Camptosaurus is also contested. Carpenter and Lamanna (2015) regarded Cumnoria as a junior subjective synonym of Camptosaurus, holding that its sole recognized autapomorphy, a small intramaxillary fossa, warranted distinction at the specific rather than the generic level, and Sánchez-Fenollosa and others (2023) followed them. The redescription by Maidment and others (2023) instead diagnosed Cumnoria on two autapomorphies of the pectoral girdle and recovered it outside Ankylopollexia, and subsequent work has continued to treat it as a distinct genus (Rotatori and others, 2026). It is retained as a valid genus.
+        The position of Cumnoria prestwichii is unresolved across three incompatible hypotheses. It has been recovered as a basal styracosternan (McDonald, 2011), within a camptosaurid grouping alongside Camptosaurus dispar (Sánchez-Fenollosa and others, 2023; Fonseca and others, 2024; Dieudonné and others, 2026), and outside Ankylopollexia altogether (Maidment and others, 2023; Rotatori and others, 2026; Jones, 2026). Because Camptosauridae and Styracosterna are complementary stem clades defined on Camptosaurus dispar and Iguanodon bernissartensis, the second and third hypotheses both exclude it from Styracosterna. Some analyses cannot place it at all and prune it as an unstable wildcard (Poole, 2022). It is placed at Dryomorpha incertae sedis, the least inclusive clade common to every hypothesis. Its separation from the North American Camptosaurus is also contested. Carpenter and Lamanna (2015) regarded Cumnoria as a junior subjective synonym of Camptosaurus, holding that its sole recognized autapomorphy, a small intramaxillary fossa, warranted distinction at the specific rather than the generic level, and Sánchez-Fenollosa and others (2023) followed them. The redescription by Maidment and others (2023) instead diagnosed Cumnoria on two autapomorphies of the pectoral girdle and recovered it outside Ankylopollexia, and subsequent work has continued to treat it as a distinct genus (Rotatori and others, 2026). It is retained as a valid genus.
       history:
         - date: 2026-06-27
           note: Placed at Styracosterna following the reference phylogeny (Madzia and others, 2021); the more basal position reflected, not adopted.
         - date: 2026-08-07
           note: Synonymy with Camptosaurus reviewed and not adopted; the proposal rests on a single character and no cladistic analysis, against a dedicated redescription that supplies two autapomorphies.
+        - date: 2026-08-07
+          note: Moved from Styracosterna to Dryomorpha incertae sedis. Madzia and others (2021) list the species in the composition of both Camptosauridae and Styracosterna under different reference phylogenies, so it does not support the narrower placement on its own.
     diet: herbivore
     locomotion: facultative
     paleoenvironment:
@@ -50482,7 +50485,46 @@ genera:
         volume: "9"
         pages: e12362
         doi: 10.7717/peerj.12362
-        notes: Recovered Cumnoria as a basal styracosternan iguanodontian
+        notes: Lists Cumnoria prestwichii in the composition of both Camptosauridae and Styracosterna, under different reference phylogenies.
+      - id: mcdonald2011a
+        authors: McDonald, A. T.
+        year: 2011
+        title: "The taxonomy of species assigned to Camptosaurus (Dinosauria: Ornithopoda)"
+        journal: Zootaxa
+        publisher: Magnolia Press
+        volume: "2783"
+        issue: "1"
+        doi: 10.11646/zootaxa.2783.1.4
+        notes: Removes the species from Camptosaurus and recovers it among the most basal members of Styracosterna.
+      - id: fonseca2024a
+        authors: Fonseca, A. O.; Reid, I. J.; Venner, A.; Duncan, R. J.; Garcia, M. S.; Müller, R. T.
+        year: 2024
+        title: A comprehensive phylogenetic analysis on early ornithischian evolution
+        journal: Journal of Systematic Palaeontology
+        volume: "22"
+        pages: "2346577"
+        doi: 10.1080/14772019.2024.2346577
+        notes: Recovers Cumnoria within Camptosauridae, and reviews the analyses placing it near or outside the root of Ankylopollexia.
+      - id: dieudonné2026a
+        authors: Dieudonné, P.; Becerra, M. G.; Zanesco, T.; Tortosa, T.; Cruzado‐Caballero, P.; Stein, K.; Torcida Fernández‐Baldor, F.
+        year: 2026
+        title: Foskeia pelendonum, a new rhabdodontomorph from the Lower Cretaceous of Salas de los Infantes (Burgos Province, Spain), and a new phylogeny of ornithischian dinosaurs
+        journal: Papers in Palaeontology
+        publisher: Wiley
+        volume: "12"
+        issue: "1"
+        doi: 10.1002/spp2.70057
+        notes: Recovers Cumnoria and Oblitosaurus as sister taxa among the early-diverging ankylopollexians.
+      - id: poole2022a
+        authors: Poole, K. E.
+        year: 2022
+        title: Phylogeny of iguanodontian dinosaurs and the evolution of quadrupedality
+        journal: Palaeontologia Electronica
+        volume: "25"
+        issue: "3"
+        pages: a30
+        doi: 10.26879/702
+        notes: Pruned Cumnoria from the strict consensus as an unstable taxon.
       - id: maidment2023a
         authors: Maidment, S. C. R.; Chapelle, K. E. J.; Bonsor, J. A.; Button, D.; Barrett, P. M.
         year: 2023
@@ -50542,8 +50584,6 @@ genera:
       - Ornithopoda
       - Iguanodontia
       - Dryomorpha
-      - Ankylopollexia
-      - Styracosterna
     authors: Seeley, H. G.
     described: 1888
   Daanosaurus:
@@ -56245,17 +56285,20 @@ genera:
     described: 2024
   Draconyx:
     genus: Draconyx
-    parent: Styracosterna
+    parent: Dryomorpha
+    placement: incertae sedis
     pronunciation:
       phonetic: DRAK-o-niks
     etymology: "From Latin draco (dragon) + Ancient Greek onyx (claw): 'dragon claw'."
     description: Draconyx is a genus of ornithopod dinosaur from the Late Jurassic of what is now Portugal. It was found in the Lourinhã Formation in 1991, and described by Octávio Mateus and Miguel Telles Antunes in 2001.
     dispute:
       summary: |
-        Draconyx loureiroi was originally referred to Camptosauridae (Mateus and Antunes, 2001) but recent analyses place it among basal Styracosterna (Madzia and others, 2021; Jones, 2026).
+        Draconyx loureiroi was originally referred to Camptosauridae (Mateus and Antunes, 2001), and its position has remained unresolved since. It has been recovered among basal Styracosterna (Madzia and others, 2021; Rotatori and others, 2022, reported by Jones, 2026), as the basalmost ankylopollexian alongside Oblitosaurus bunnueli (Sánchez-Fenollosa and others, 2023), and outside Ankylopollexia entirely — Fonseca and others (2024) recover it as a constituent of Dryomorpha rather than of Ankylopollexia, and Rotatori and others (2026) recover it as the sister taxon of Cumnoria prestwichii, diverging before the ankylopollexian node. It is placed at Dryomorpha incertae sedis, the least inclusive clade common to every hypothesis.
       history:
         - date: 2026-06-27
           note: Placed at Styracosterna following recent analyses; the camptosaurid interpretation reflected, not adopted.
+        - date: 2026-08-07
+          note: Moved from Styracosterna to Dryomorpha incertae sedis; the camptosaurid and non-ankylopollexian hypotheses both exclude it from Styracosterna, which is defined to exclude Camptosaurus dispar.
     diet: herbivore
     locomotion: facultative
     paleoenvironment:
@@ -56346,6 +56389,36 @@ genera:
         pages: e12362
         doi: 10.7717/peerj.12362
         notes: Placed Draconyx among basal Styracosterna in an ornithischian phylogenetic nomenclature analysis.
+      - id: sánchez-fenollosa2023a
+        authors: Sánchez-Fenollosa, S.; Verdú, F. J.; Cobos, A.
+        year: 2023
+        title: "The largest ornithopod (Dinosauria: Ornithischia) from the Upper Jurassic of Europe sheds light on the evolutionary history of basal ankylopollexians"
+        journal: Zoological Journal of the Linnean Society
+        publisher: Oxford University Press (OUP)
+        volume: "199"
+        issue: "4"
+        pages: 1013-1033
+        doi: 10.1093/zoolinnean/zlad076
+        notes: Recovers Draconyx as the basalmost member of Ankylopollexia together with Oblitosaurus bunnueli.
+      - id: fonseca2024a
+        authors: Fonseca, A. O.; Reid, I. J.; Venner, A.; Duncan, R. J.; Garcia, M. S.; Müller, R. T.
+        year: 2024
+        title: A comprehensive phylogenetic analysis on early ornithischian evolution
+        journal: Journal of Systematic Palaeontology
+        volume: "22"
+        pages: "2346577"
+        doi: 10.1080/14772019.2024.2346577
+        notes: Recovers Draconyx as a constituent of Dryomorpha outside Ankylopollexia.
+      - id: rotatori2026a
+        authors: Rotatori, F. M.; Chiarenza, A. A.; Fanti, F.; Moreno-Azanza, M.
+        year: 2026
+        title: "The early origin of Iguanodontia: new insights into the macroevolution, diversity and biogeography of the clade"
+        journal: Palaeontology
+        volume: "69"
+        issue: "2"
+        pages: e70057
+        doi: 10.1111/pala.70057
+        notes: Recovers Draconyx as the sister taxon of Cumnoria prestwichii, diverging before the ankylopollexian node.
     taxonomy:
       - Life
       - Animalia
@@ -56363,8 +56436,6 @@ genera:
       - Ornithopoda
       - Iguanodontia
       - Dryomorpha
-      - Ankylopollexia
-      - Styracosterna
     authors: Mateus, O.; Telles Antunes, M.
     described: 2001
   Dracopelta:
@@ -119091,11 +119162,18 @@ genera:
     described: 2025
   Oblitosaurus:
     genus: Oblitosaurus
-    parent: Ankylopollexia
+    parent: Dryomorpha
+    placement: incertae sedis
+    dispute:
+      summary: |
+        The position of Oblitosaurus bunnueli is unresolved. Its describers recovered it as the basalmost member of Ankylopollexia together with Draconyx loureiroi (Sánchez-Fenollosa and others, 2023), a pairing also recovered by Dieudonné and others (2026) among the early-diverging ankylopollexians. Fonseca and others (2024) instead recover it as a constituent of Dryomorpha outside Ankylopollexia, while Rotatori and others (2026) place it more deeply, within Styracosterna. It is placed at Dryomorpha incertae sedis, the least inclusive clade common to every hypothesis.
+      history:
+        - date: 2026-08-07
+          note: Moved from Ankylopollexia to Dryomorpha incertae sedis; recovered positions span from outside Ankylopollexia to within Styracosterna.
     etymology: From Latin 'oblitus' (forgotten or obsolete) and Greek 'sauros' (lizard); meaning 'forgotten lizard', referring to how its fossils were long overlooked.
     pronunciation:
       phonetic: ob-LEE-tow-SOR-us
-    description: Oblitosaurus is a genus of ankylopollexian ornithopod dinosaur from the Late Jurassic Villar del Arzobispo Formation of Spain. The type species is Oblitosaurus bunnueli.
+    description: Oblitosaurus is a genus of iguanodontian ornithopod dinosaur from the Late Jurassic Villar del Arzobispo Formation of Spain. The type species is Oblitosaurus bunnueli.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -119172,6 +119250,36 @@ genera:
         issue: "4"
         pages: 1013-1033
         doi: 10.1093/zoolinnean/zlad076
+        notes: Erects the genus and recovers it as the basalmost ankylopollexian together with Draconyx loureiroi.
+      - id: fonseca2024a
+        authors: Fonseca, A. O.; Reid, I. J.; Venner, A.; Duncan, R. J.; Garcia, M. S.; Müller, R. T.
+        year: 2024
+        title: A comprehensive phylogenetic analysis on early ornithischian evolution
+        journal: Journal of Systematic Palaeontology
+        volume: "22"
+        pages: "2346577"
+        doi: 10.1080/14772019.2024.2346577
+        notes: Recovers Oblitosaurus as a constituent of Dryomorpha outside Ankylopollexia.
+      - id: dieudonné2026a
+        authors: Dieudonné, P.; Becerra, M. G.; Zanesco, T.; Tortosa, T.; Cruzado‐Caballero, P.; Stein, K.; Torcida Fernández‐Baldor, F.
+        year: 2026
+        title: Foskeia pelendonum, a new rhabdodontomorph from the Lower Cretaceous of Salas de los Infantes (Burgos Province, Spain), and a new phylogeny of ornithischian dinosaurs
+        journal: Papers in Palaeontology
+        publisher: Wiley
+        volume: "12"
+        issue: "1"
+        doi: 10.1002/spp2.70057
+        notes: Recovers Oblitosaurus and Cumnoria as sister taxa among the early-diverging ankylopollexians.
+      - id: rotatori2026a
+        authors: Rotatori, F. M.; Chiarenza, A. A.; Fanti, F.; Moreno-Azanza, M.
+        year: 2026
+        title: "The early origin of Iguanodontia: new insights into the macroevolution, diversity and biogeography of the clade"
+        journal: Palaeontology
+        volume: "69"
+        issue: "2"
+        pages: e70057
+        doi: 10.1111/pala.70057
+        notes: Recovers Oblitosaurus within Styracosterna.
     taxonomy:
       - Life
       - Animalia
@@ -119189,7 +119297,6 @@ genera:
       - Ornithopoda
       - Iguanodontia
       - Dryomorpha
-      - Ankylopollexia
     authors: Sánchez-Fenollosa, S.; Verdú, F. J.; Cobos, A.
     described: 2023
   Oceanotitan:
@@ -122825,7 +122932,14 @@ genera:
     described: 1924
   Owenodon:
     genus: Owenodon
-    parent: Ankylopollexia
+    parent: Dryomorpha
+    placement: incertae sedis
+    dispute:
+      summary: |
+        Owenodon hoggii is known from a single partial dentary, and its position is correspondingly unstable. Galton (2009) erected the genus for material he considered more derived than Camptosaurus but outside Styracosterna, and it has since been listed among basal Styracosterna (Madzia and others, 2021). Fonseca and others (2024), reviewing the analyses, report that it falls near the root of Ankylopollexia or outside it, and read the topology of Herne and others (2019) as recovering it outside Ankylopollexia; Jones (2026) likewise reports that analysis as placing it just stemward of Camptosaurus. It is placed at Dryomorpha incertae sedis, the least inclusive clade common to every hypothesis.
+      history:
+        - date: 2026-08-07
+          note: Moved from Ankylopollexia to Dryomorpha incertae sedis; recovered positions span from outside Ankylopollexia to basal Styracosterna.
     etymology: Named for Richard Owen, the British paleontologist who first described the specimen, combined with Greek 'odon' meaning 'tooth'.
     pronunciation:
       phonetic: o-wen-o-don
@@ -122910,7 +123024,36 @@ genera:
         title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
-        notes: Source of the body length estimate.
+        notes: Source of the body length estimate; reports Herne and others (2019) as placing Owenodon just stemward of Camptosaurus.
+      - id: madzia2021a
+        authors: Madzia, D.; Arbour, V. M.; Boyd, C. A.; Farke, A. A.; Cruzado-Caballero, P.; Evans, D. C.
+        year: 2021
+        title: The phylogenetic nomenclature of ornithischian dinosaurs
+        journal: PeerJ
+        volume: "9"
+        pages: e12362
+        doi: 10.7717/peerj.12362
+        notes: Lists Owenodon hoggii in the composition of Styracosterna.
+      - id: fonseca2024a
+        authors: Fonseca, A. O.; Reid, I. J.; Venner, A.; Duncan, R. J.; Garcia, M. S.; Müller, R. T.
+        year: 2024
+        title: A comprehensive phylogenetic analysis on early ornithischian evolution
+        journal: Journal of Systematic Palaeontology
+        volume: "22"
+        pages: "2346577"
+        doi: 10.1080/14772019.2024.2346577
+        notes: Reports that Owenodon falls near the root of Ankylopollexia or outside it, and reads Herne and others (2019) as recovering it outside Ankylopollexia.
+      - id: herne2019a
+        authors: Herne, M. C.; Nair, J. P.; Evans, A. R.; Tait, A. M.
+        year: 2019
+        title: New small-bodied ornithopods (Dinosauria, Neornithischia) from the Early Cretaceous Wonthaggi Formation (Strzelecki Group) of the Australian-Antarctic rift system, with revision of Qantassaurus intrepidus Rich and Vickers-Rich, 1999
+        journal: Journal of Paleontology
+        publisher: Cambridge University Press (CUP)
+        volume: "93"
+        issue: "3"
+        pages: 543-584
+        doi: 10.1017/jpa.2018.95
+        notes: Adds Owenodon hoggii as an operational taxonomic unit in a revision of small-bodied ornithopods.
     taxonomy:
       - Life
       - Animalia
@@ -122928,7 +123071,6 @@ genera:
       - Ornithopoda
       - Iguanodontia
       - Dryomorpha
-      - Ankylopollexia
     authors: Galton, P. M.
     described: 2009
   Ozraptor:
