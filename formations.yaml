@@ -5,16 +5,13 @@
 # name records its rank: "Morrison" is a formation and "Kem Kem" is a group,
 # spelled the same way in the same field. Without a table there is no way to
 # check that the field holds a formation, and no way to record that two
-# spellings mean one thing. Both were re-litigated on every reconciliation run
-# until this file existed.
+# spellings mean one thing.
 #
 # RULE OF ENTRY. Every entry carries the paper each claim was read from. This
-# file is CURATED, NEVER MINED. A prototype miner over 400 papers produced 119
-# containment claims, but folded leading qualifiers into unit names ("Middle
-# Jurassic Lower" as a child of Shaximiao) and had no basin scoping. A rank
-# inferred from phrasing is a guess, and a guess in a suppression table closes
-# real findings silently. Add a line when a primary you were already reading
-# states the rank, and not otherwise.
+# file is CURATED, NEVER MINED: a rank or an age inferred from phrasing is a
+# guess, and text mining reliably folds leading qualifiers into unit names
+# ("Middle Jurassic Lower" as a child of Shaximiao) and ignores basin scoping.
+# Add a line when a primary states the rank, and not otherwise.
 #
 # HOMONYMS ARE KEYED BY COUNTRY. Unit names are reused across basins: the Hekou
 # Group of the Lanzhou-Minhe Basin in Gansu and the Hekou Formation of Jiangxi's
@@ -36,14 +33,11 @@
 #                contact, a dated ash), and filling records from here would
 #                flatten exactly that. Recorded as STAGES, never as Ma --
 #                a stage range tracks the chart in schema.yml automatically,
-#                whereas a stated Ma value derives from nothing and so opts out
-#                of maintenance. One record in the dataset proved that by
-#                sitting on GTS2012 numbers through the whole ICS v2024/12
-#                rebuild. Where sources disagree, this is the UNION of what they
-#                publish, not a choice between them -- it is a bound, and
-#                narrowing it to one reading only produces false positives
-#                against records following another. Which source gives which
-#                range goes in the reference notes.
+#                whereas a stated Ma value derives from nothing and so falls
+#                out of step whenever the chart is revised. Where sources
+#                disagree, this is the UNION of what they publish rather than a
+#                choice between them: it is a bound, not a verdict. Which source
+#                gives which range goes in the reference notes.
 #   references   [{id, notes}] -- `id` resolves to a references/ store entry,
 #                the same pointer shape genus and clade files use
 #
@@ -73,8 +67,7 @@ Allen:
         The subdivision is positional, not named: "Lower member of the Allen
         Formation, Malargue Group" in the horizon line and "Lower Member" in the
         running text of the same paper. There is no upper counterpart with a
-        name either, so a position here belongs in `part` and the `member` field
-        stays empty.
+        name either: the divisions are positional rather than named.
     - id: martinelli2004a
       notes: >
         Places the formation in the Malargue Group. The same site is called the
@@ -139,9 +132,8 @@ Bevons:
         dinosaurs: "Some workers have subdivided the formation into a lower
         lacustrine/tuffaceous (Las Chacritas) member and an upper siliciclastic
         fluvial (Puesto Almada) member". The members are Cabaleri (2010),
-        published as a symposium abstract. Every other occurrence of either name
-        at member rank in the literature read here is a bibliography line citing
-        that abstract, so `member` stays empty until a paper applies it.
+        published as a symposium abstract, and no subsequent description places
+        a taxon in either member.
     - id: rauhut2005b
       notes: >
         Why the member names cannot be inferred from a locality: this paper puts
@@ -167,8 +159,8 @@ Bevons:
         Strip Sandstone, Ruby Ranch Member, and the Mussentuchit Member."
     - id: carpenter1999a
       notes: >
-        The same five-member scheme, and why the member is the operative unit
-        here rather than the formation: the ankylosaurs are stratigraphically
+        The same five-member scheme, and why the member rather than the
+        formation is the operative unit: the ankylosaurs are stratigraphically
         restricted, Gastonia to the Yellow Cat and Animantarx to the
         Mussentuchit.
 
@@ -193,9 +185,9 @@ Bevons:
   references:
     - id: arbour2013a
       notes: >
-        "Dinosaur Park Formation (upper Campanian)". Nearly 200 bracketed age
-        statements for this unit were read here and every one is Campanian; no
-        source extends it into the Santonian or the Maastrichtian.
+        "Dinosaur Park Formation (upper Campanian)". The literature is
+        consistent on this: no source extends the unit into the Santonian or the
+        Maastrichtian.
 
 Djadokhta:
   rank: formation
@@ -238,13 +230,12 @@ Elliot:
       notes: >
         The formation straddles the Triassic-Jurassic boundary and its two
         informal parts carry the split: "lower Elliot Formation (Late Triassic)"
-        against "upper Elliot Formation (Early Jurassic)". Records here divide
-        into the same two cohorts, which is why a wide span across this unit is
-        not by itself a sign of anything.
+        against "upper Elliot Formation (Early Jurassic)". A wide span across
+        this formation is therefore expected rather than anomalous.
     - id: yates2011a
       notes: >
         The younger bound, hedged at source: "Upper Elliot Formation, Early
-        Jurassic, possibly Pliensbachian". Nothing read here reaches the
+        Jurassic, possibly Pliensbachian". No source carries it into the
         Toarcian.
 
 Fuvelian:
@@ -276,9 +267,9 @@ Ganzhou:
   references:
     - id: ibrahim2020a
       notes: >
-        The lower formation of the Kem Kem Group under the scheme adopted here.
-        Ifezouane is the same unit under the earlier Cavin scheme; the names
-        compete, and the repo follows Ibrahim, as the 2025 literature does.
+        Erects the unit as the lower formation of the Kem Kem Group. Ifezouane
+        is the same rock under the earlier scheme of Cavin et al.; the two names
+        compete, and the later literature has largely followed Ibrahim.
 
 Gosau:
   rank: group
@@ -352,9 +343,9 @@ Houcheng:
       notes: >
         The same locality under the other name -- Gigantoraptor from
         "Saihangaobi, Sunitezuoqi, Nei Mongol Autonomous Region. Iren Dabasu
-        Formation". Search both names: the Erlian literature is invisible to a
-        search for Iren Dabasu, and it is where the basin's subdivision is
-        discussed.
+        Formation". Both names must be searched: the Erlian literature, which
+        is where the basin's subdivision is discussed, does not surface under
+        Iren Dabasu.
 
 "Kuangyuan Series":
   rank: informal
@@ -382,10 +373,9 @@ Houcheng:
         carries both.
     - id: brusatte2012b
       notes: >
-        Uses the members. The formation has five and they are well established
-        in the literature -- Horsethief, Morrin, Tolman, Carbon, Strathmore --
-        while every record here sits at formation rank. A member backfill in the
-        shape of #2045 would sharpen 18 records.
+        Uses the five members, which are well established in the literature:
+        Horsethief, Morrin, Tolman, Carbon and Strathmore, in ascending
+        order.
 
 Huincul:
   rank: formation
@@ -394,16 +384,13 @@ Huincul:
   references:
     - id: baiano2020a
       notes: >
-        "Huincul Formation (Cenomanian-Turonian; Upper Cretaceous)", the modern
-        reading and the one ~35 statements here give.
+        "Huincul Formation (Cenomanian-Turonian; Upper Cretaceous)", the
+        prevailing modern reading.
     - id: gallina2005a
       notes: >
-        The Coniacian end, and it rests on this paper alone -- "'La Buitrera',
-        Huincul Formation (Turonian-Coniacian)". Carried because the envelope is
-        the union of what has been published, not a judgement about which
-        readings count. Worth revisiting if nothing else adopts it: even the
-        record erected in this paper, Cathartesaura anaerobica, follows the
-        Cenomanian-Turonian reading.
+        The Coniacian end, on a minority reading -- "'La Buitrera', Huincul
+        Formation (Turonian-Coniacian)". Later work on the same locality
+        generally prefers Cenomanian-Turonian.
 
 Jehol:
   rank: group
@@ -424,12 +411,12 @@ Jehol:
   references:
     - id: arbour2017a
       notes: >
-        "Judith River Formation (Campanian)"; ~130 bracketed ages read here for
-        this unit and every one is Campanian. CAUTION ON THE NAME: the historic
-        "Judith River Formation" of southern ALBERTA is not this Montana unit --
-        it is the Belly River Group, split into the Foremost, Oldman and
-        Dinosaur Park formations. Older papers use the old name, so a Canadian
-        record on Judith River is probably one of those three.
+        "Judith River Formation (Campanian)", consistently through the
+        literature. NAME COLLISION: the historic "Judith River Formation" of
+        southern Alberta is a different unit from this Montana formation. The
+        Alberta usage denotes what is now the Belly River Group, since split
+        into the Foremost, Oldman and Dinosaur Park formations, and papers
+        predating that revision use the old name for all three.
 
 "Kalahari Deposits":
   rank: none
@@ -468,11 +455,10 @@ Lianmuqin:
     - id: xu2018c
       notes: >
         Dates the upper Tugulu Group, of which the Lianmuqin is the uppermost
-        formation, Barremian-Aptian. Adopted here. The unit's age is genuinely
-        contested: Rauhut and Xu (2005) give "?Valanginian-Albian" after Shen
+        formation, Barremian-Aptian. The unit's age is contested: Rauhut and Xu
+        (2005) give "?Valanginian-Albian" after Shen
         and Mateer (1992), and Sanchez-Fenollosa et al. (2025) late
-        Valanginian-?Barremian. Recording the range once means the four records
-        in this formation stop replicating a disputed number four times.
+        Valanginian-?Barremian.
 
 Lufeng:
   rank: formation
@@ -551,13 +537,13 @@ Morrison:
   references:
     - id: carrano2012a
       notes: >
-        "Morrison Formation (Kimmeridgian-Tithonian)", the range 20 papers here
-        give in one bracket and the one most of the formation's records sit in.
+        "Morrison Formation (Kimmeridgian-Tithonian)", the range most of the
+        literature gives.
     - id: tschopp2015a
       notes: >
         The older bound, for material at the formation's base: Dystrophaeus
-        viaemalae is listed as "Oxfordian; low in Morrison Form.". Nothing read
-        here extends the formation into the Berriasian.
+        viaemalae is listed as "Oxfordian; low in Morrison Form.". No source
+        extends the formation into the Berriasian.
 
 Nemegt:
   rank: formation
@@ -566,11 +552,10 @@ Nemegt:
     - id: tsuihiji2011a
       notes: >
         "Nemegt Formation (late Campanian-early Maastrichtian to Maastrichtian)".
-        Most statements read here say Maastrichtian alone, but the Campanian end
-        is genuinely published -- Karczewska and Ziembinska-Tworzydlo (1983)
-        argued the formation down to the early Campanian on charophytes -- so
-        the envelope carries it. No members: 238 papers mentioning the formation
-        name not one of it.
+        Maastrichtian alone is the commoner phrasing, but the Campanian end is
+        published: Karczewska and Ziembinska-Tworzydlo (1983) argued the
+        formation down to the early Campanian on charophyte evidence. No members
+        have been erected for this formation.
 
 Neuquén:
   rank: group
@@ -817,13 +802,10 @@ Wessex:
   references:
     - id: averianov2021b
       notes: >
-        "Wessex Formation (Barremian, Early Cretaceous)". Every one of the ~58
-        bracketed ages read here for this unit is Barremian. The wider spans in
-        the same literature belong to the containing units, not to this
-        formation -- "Wealden Supergroup (Berriasian-Aptian)", "Wealden Group
-        (Cretaceous: Valanginian)" -- so a Wessex record carrying Berriasian,
-        Valanginian, Hauterivian or Aptian has taken its range from a rank up,
-        as Tugulusaurus had taken the Tugulu Group's.
+        "Wessex Formation (Barremian, Early Cretaceous)", consistently through
+        the literature. The wider spans that appear alongside it belong to the
+        containing units rather than to this formation: "Wealden Supergroup
+        (Berriasian-Aptian)" and "Wealden Group (Cretaceous: Valanginian)".
 
 Woodbine:
   rank: group
@@ -842,8 +824,7 @@ Wulansuhai:
       notes: >
         Bayan Mandahu is the LOCALITY, not the formation, and the usual phrasing
         keeps them apart -- "the Upper Cretaceous Wulansuhai Formation of Bayan
-        Mandahu, Inner Mongolia". A record carrying Bayan Mandahu as its
-        formation has the place name in the wrong field.
+        Mandahu, Inner Mongolia".
 
 Xiagou:
   rank: formation
