@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-08-07T22:29:44.434Z",
+    "built_at": "2026-08-07T23:03:46.773Z",
     "clade_count": 188,
-    "genus_count": 1401,
+    "genus_count": 1403,
     "license": "CC-BY-4.0",
     "schema_version": "1.6.0",
     "version": "2026.08"
@@ -32019,7 +32019,8 @@
           "publisher": "Springer Science and Business Media LLC",
           "volume": "9",
           "issue": "1",
-          "doi": "10.1038/s41598-019-53672-7"
+          "doi": "10.1038/s41598-019-53672-7",
+          "notes": "Gives the type locality as lacustrine layers of the Cañadón Asfalto Formation, late Toarcian to Bajocian, citing the basin geochronology rather than a horizon found for this taxon."
         },
         {
           "id": "paul2024a",
@@ -61571,7 +61572,7 @@
           "issue": "3-4",
           "pages": "1267-1275",
           "doi": "10.1016/j.gr.2013.01.010",
-          "notes": "U-Pb geochronology for the Canadon Asfalto Basin, naming this taxon among the fauna it dates."
+          "notes": "Dates the interval overlying the uppermost basalt flow at Cerro Cóndor, which holds this taxon, as Aalenian to probably Bajocian, with a latest Toarcian age not precluded near the basalt."
         },
         {
           "id": "benson2010c",
@@ -78224,23 +78225,20 @@
           "type_species": true,
           "period": {
             "name": [
-              "Early Jurassic"
+              "Middle Jurassic"
             ],
             "stage": [
-              "Toarcian"
+              "Aalenian",
+              "Bajocian"
             ],
-            "from_ma": 184.2,
-            "to_ma": 174.7
+            "from_ma": 174.7,
+            "to_ma": 168.2
           },
           "location": {
             "country": "AR",
             "locality": "Jugo Loco site, near Cerro Cóndor",
             "region": "Chubut",
             "formation": "Cañadón Asfalto",
-            "coordinates": [
-              -43.783333,
-              -71.583336
-            ],
             "region_code": "AR-U"
           },
           "size": {
@@ -78278,7 +78276,21 @@
           "volume": "279",
           "issue": "1741",
           "pages": "3170-3175",
-          "doi": "10.1098/rspb.2012.0660"
+          "doi": "10.1098/rspb.2012.0660",
+          "notes": "Gives the Jugo Loco locality as finely bedded mud-, marl- and limestones of the Cañadón Asfalto Formation, early Middle Jurassic (Aalenian-Bajocian), the source of the age."
+        },
+        {
+          "id": "cúneo2013a",
+          "authors": "Cúneo, R.; Ramezani, J.; Scasso, R.; Pol, D.; Escapa, I.; Zavattieri, A. M.; Bowring, S. A.",
+          "year": 2013,
+          "title": "High-precision U-Pb geochronology and a new chronostratigraphy for the Cañadón Asfalto Basin, Chubut, central Patagonia: implications for terrestrial faunal and floral evolution in Jurassic",
+          "journal": "Gondwana Research",
+          "publisher": "Elsevier BV",
+          "volume": "24",
+          "issue": "3-4",
+          "pages": "1267-1275",
+          "doi": "10.1016/j.gr.2013.01.010",
+          "notes": "Dates the interval overlying the uppermost basalt flow at Cerro Cóndor, which holds this taxon, as Aalenian to probably Bajocian, with a latest Toarcian age not precluded near the basalt."
         },
         {
           "id": "zaher2020a",
@@ -134660,15 +134672,13 @@
           "type_species": true,
           "period": {
             "name": [
-              "Early Jurassic",
-              "Middle Jurassic"
+              "Early Jurassic"
             ],
             "stage": [
-              "Toarcian",
-              "Aalenian"
+              "Toarcian"
             ],
             "from_ma": 184.2,
-            "to_ma": 170.9
+            "to_ma": 174.7
           },
           "location": {
             "country": "AR",
@@ -134721,6 +134731,19 @@
           "issue": "5",
           "pages": "369-379",
           "doi": "10.1007/s00114-011-0780-5"
+        },
+        {
+          "id": "cúneo2013a",
+          "authors": "Cúneo, R.; Ramezani, J.; Scasso, R.; Pol, D.; Escapa, I.; Zavattieri, A. M.; Bowring, S. A.",
+          "year": 2013,
+          "title": "High-precision U-Pb geochronology and a new chronostratigraphy for the Cañadón Asfalto Basin, Chubut, central Patagonia: implications for terrestrial faunal and floral evolution in Jurassic",
+          "journal": "Gondwana Research",
+          "publisher": "Elsevier BV",
+          "volume": "24",
+          "issue": "3-4",
+          "pages": "1267-1275",
+          "doi": "10.1016/j.gr.2013.01.010",
+          "notes": "Places the Queso Rallado assemblage, including this taxon, in the lowermost Cañadón Asfalto Formation or beds transitional with the Lonco Trapial, and dates those strata middle-late Toarcian."
         },
         {
           "id": "jones2026a",
@@ -162725,13 +162748,17 @@
           "type_species": true,
           "period": {
             "name": [
-              "Early Jurassic"
+              "Early Jurassic",
+              "Middle Jurassic"
             ],
             "stage": [
-              "Toarcian"
+              "Toarcian",
+              "Aalenian",
+              "Bajocian"
             ],
+            "resolution": "unit",
             "from_ma": 184.2,
-            "to_ma": 174.7
+            "to_ma": 168.2
           },
           "location": {
             "country": "AR",
@@ -162795,6 +162822,19 @@
           "issue": "3",
           "pages": "247-289",
           "notes": "In French. Full descriptive monograph complementing the brief Bonaparte (1979) announcement; covers Patagosaurus fariasi material in detail."
+        },
+        {
+          "id": "cúneo2013a",
+          "authors": "Cúneo, R.; Ramezani, J.; Scasso, R.; Pol, D.; Escapa, I.; Zavattieri, A. M.; Bowring, S. A.",
+          "year": 2013,
+          "title": "High-precision U-Pb geochronology and a new chronostratigraphy for the Cañadón Asfalto Basin, Chubut, central Patagonia: implications for terrestrial faunal and floral evolution in Jurassic",
+          "journal": "Gondwana Research",
+          "publisher": "Elsevier BV",
+          "volume": "24",
+          "issue": "3-4",
+          "pages": "1267-1275",
+          "doi": "10.1016/j.gr.2013.01.010",
+          "notes": "Dates the interval overlying the uppermost basalt flow at Cerro Cóndor, which holds this taxon, as Aalenian to probably Bajocian, with a latest Toarcian age not precluded near the basalt."
         },
         {
           "id": "jones2026b",
@@ -166333,13 +166373,17 @@
           "type_species": true,
           "period": {
             "name": [
+              "Early Jurassic",
               "Middle Jurassic"
             ],
             "stage": [
-              "Aalenian"
+              "Toarcian",
+              "Aalenian",
+              "Bajocian"
             ],
-            "from_ma": 174.7,
-            "to_ma": 170.9
+            "resolution": "unit",
+            "from_ma": 184.2,
+            "to_ma": 168.2
           },
           "location": {
             "country": "AR",
@@ -166403,6 +166447,19 @@
           "issue": "3",
           "pages": "247-289",
           "notes": "In French. Full descriptive monograph complementing the brief Bonaparte (1979) announcement; covers Piatnitzkysaurus floresi material in detail."
+        },
+        {
+          "id": "cúneo2013a",
+          "authors": "Cúneo, R.; Ramezani, J.; Scasso, R.; Pol, D.; Escapa, I.; Zavattieri, A. M.; Bowring, S. A.",
+          "year": 2013,
+          "title": "High-precision U-Pb geochronology and a new chronostratigraphy for the Cañadón Asfalto Basin, Chubut, central Patagonia: implications for terrestrial faunal and floral evolution in Jurassic",
+          "journal": "Gondwana Research",
+          "publisher": "Elsevier BV",
+          "volume": "24",
+          "issue": "3-4",
+          "pages": "1267-1275",
+          "doi": "10.1016/j.gr.2013.01.010",
+          "notes": "Dates the interval overlying the uppermost basalt flow at Cerro Cóndor, which holds this taxon, as Aalenian to probably Bajocian, with a latest Toarcian age not precluded near the basalt."
         },
         {
           "id": "jones2026c",
@@ -192072,6 +192129,212 @@
       ],
       "authors": "Dalman, S. G.; Lucas, S. G.; Jasinski, S. E.; Longrich, N. R.",
       "described": 2022
+    },
+    "Sigilmassasaurus": {
+      "genus": "Sigilmassasaurus",
+      "parent": "Spinosaurinae",
+      "etymology": "From 'Sigilmassa', the ancient city and former capital of the Tafilalt that was a center of Saharan commerce, and Greek 'sauros' ('lizard'); meaning 'Sigilmassa lizard'.",
+      "pronunciation": {
+        "ipa": "/siːdʒɪlˌmɑːsəˈsɔːrəs/"
+      },
+      "description": "Sigilmassasaurus is a controversial genus of spinosaurid dinosaur that lived approximately 100 to 94 million years ago during the Late Cretaceous Period in what is now northern Africa. Named in 1996 by Canadian paleontologist Dale Russell, it contains a single species, Sigilmassasaurus brevicollis. The identity of the genus has been debated by scientists, with some considering its fossils to represent material from the closely related species Spinosaurus aegyptiacus, while others have classified it as a separate taxon, forming the clade Spinosaurini with Spinosaurus as its sister taxon.",
+      "dispute": {
+        "summary": "The validity of Sigilmassasaurus is actively contested, and the genus is known only from isolated vertebrae that were never found in association. Russell (1996) erected it on a single vertebra he identified as a mid-cervical. Evers and others (2015) reappraised the material, reinterpreted the holotype as a first dorsal, gave the genus an emended diagnosis, and rejected its referral to Spinosaurus aegyptiacus; Chiarenza and Cau (2016) concurred, and Arden and others (2019) recovered it as the sister taxon of Spinosaurus in a clade Spinosaurini. Against this, Ibrahim and others (2020) rebutted the emended diagnosis, reporting the ventral platform character in Spinosaurus aegyptiacus as well, and Smyth and others (2020) rejected every proposed autapomorphy in turn, attributing the variation to axial position and ontogeny within a single taxon and treating the genus as a junior synonym of Spinosaurus aegyptiacus. Rauhut and others (2025) tested that single-taxon hypothesis in a sensitivity analysis. No consensus has emerged, so the species is marked disputed and the genus retained at Spinosaurinae. Which taxon the vertebrae of Spinosaurus maroccanus belong to is contested on the same evidence: Evers and others (2015) refer them to Sigilmassasaurus brevicollis as a different axial position of one animal, whereas Ibrahim and others (2020) reject that referral. This record follows the existing treatment of that name under Spinosaurus.\n",
+        "history": [
+          {
+            "date": "2026-08-07",
+            "note": "Intaken at Spinosaurinae with the species marked disputed. The genus was absent from the dataset entirely after an unsupported synonymy was removed from Spinosaurus; see the orphaned-taxa audit.\n"
+          }
+        ]
+      },
+      "diet": "carnivore",
+      "locomotion": "bipedal",
+      "paleoenvironment": [
+        "fluvial"
+      ],
+      "diagnostic_features": [
+        "Neural spines of cervical vertebrae short, wider transversely than anteroposteriorly long",
+        "Intercentral articulations of cervical vertebrae wider than high, exceeding centrum length in width",
+        "Cervical series strongly arched into a U-shaped curve in lateral aspect",
+        "Parapophyses project ventrolaterally beyond the rim of the intercentral articulations",
+        "Hypapophyses most powerfully developed at the mid-cervical region, diminishing toward the cervico-dorsal transition",
+        "Posterior cervical centrum broad, with posterior width to length ratio of about 1.46, a small pleurocoel, and a greatly enlarged hypapophyseal peduncle",
+        "Mid-cervical vertebrae with an offset, transversely convex, strongly rugose triangular platform at the posterior end of the ventral side, confluent with a ventral keel anteriorly",
+        "Anteriorly broad centroprezygapophyseal lamina with no or strongly reduced centroprezygapophyseal fossa already present in anterior mid-cervical vertebrae",
+        "Reduced neural arch lamination with no or incomplete distinction between anterior and posterior centrodiapophyseal laminae in posterior cervical and first dorsal vertebrae",
+        "Small elongate fossa on either side of the base of the neural spine in the last cervical and first dorsal vertebrae"
+      ],
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "66916"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q18602106"
+        },
+        {
+          "source": "gbif",
+          "id": "4822973"
+        }
+      ],
+      "species": [
+        {
+          "name": "Sigilmassasaurus brevicollis",
+          "etymology": "From Latin 'brevis' ('short') and 'collum' ('neck'), alluding to the shortness of the cervical centra.",
+          "status": "disputed",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Late Cretaceous"
+            ],
+            "stage": [
+              "Cenomanian"
+            ],
+            "from_ma": 100.5,
+            "to_ma": 93.9
+          },
+          "location": {
+            "country": "MA",
+            "locality": "Kem Kem area, probably near Taouz",
+            "region": "Draa-Tafilalet",
+            "group": "Kem Kem",
+            "region_code": "MA-08"
+          },
+          "type_specimen": {
+            "specimen_id": [
+              "CMN 41857"
+            ],
+            "specimen_type": "holotype",
+            "institution": "Canadian Museum of Nature",
+            "material": "Single isolated vertebra with a fairly complete neural arch, lacking part of the right transverse process and the tip of the neural spine.",
+            "completeness": "fragmentary"
+          },
+          "erected_in": "russell1996b",
+          "authors": "Russell, D. A.",
+          "described": 1996
+        }
+      ],
+      "references": [
+        {
+          "id": "russell1996b",
+          "authors": "Russell, D. A.",
+          "year": 1996,
+          "title": "Isolated dinosaur bones from the Middle Cretaceous of the Tafilalt, Morocco",
+          "journal": "Bulletin du Muséum national d'Histoire naturelle, série 4, section C",
+          "publisher": "Muséum national d'Histoire naturelle",
+          "volume": "18",
+          "issue": "2-3",
+          "pages": "349-402",
+          "notes": "Erects the genus and species on an isolated vertebra from the Tafilalt, identified as a mid-cervical."
+        },
+        {
+          "id": "evers2015a",
+          "authors": "Evers, S. W.; Rauhut, O. W. M.; Milner, A. C.; McFeeters, B.; Allain, R.",
+          "year": 2015,
+          "title": "A reappraisal of the morphology and systematic position of the theropod dinosaur Sigilmassasaurus from the \"middle\" Cretaceous of Morocco",
+          "journal": "PeerJ",
+          "publisher": "PeerJ",
+          "volume": "3",
+          "pages": "e1323",
+          "doi": "10.7717/peerj.1323",
+          "notes": "Reappraises the material, reinterprets the holotype as a first dorsal, emends the diagnosis, rejects referral to Spinosaurus aegyptiacus, and gives the type horizon as Ifezouane or Aoufous."
+        },
+        {
+          "id": "smyth2020a",
+          "authors": "Smyth, R. S. H.; Ibrahim, N.; Martill, D. M.",
+          "year": 2020,
+          "title": "Sigilmassasaurus is Spinosaurus: a reappraisal of African spinosaurines",
+          "journal": "Cretaceous Research",
+          "publisher": "Elsevier BV",
+          "volume": "114",
+          "pages": "104520",
+          "doi": "10.1016/j.cretres.2020.104520",
+          "notes": "Rejects every proposed autapomorphy and treats the genus as a junior synonym of Spinosaurus aegyptiacus."
+        },
+        {
+          "id": "ibrahim2020a",
+          "authors": "Ibrahim, N.; Sereno, P. C.; Varricchio, D. J.; Martill, D. M.; Dutheil, D. B.; Unwin, D. M.; Baidder, L.; Larsson, H. C. E.; Zouhri, S.; Kaoukaya, A.",
+          "year": 2020,
+          "title": "Geology and paleontology of the Upper Cretaceous Kem Kem Group of eastern Morocco",
+          "journal": "ZooKeys",
+          "volume": "928",
+          "pages": "1-216",
+          "doi": "10.3897/zookeys.928.47517",
+          "notes": "Rebuts the emended diagnosis, reporting the ventral platform character in Spinosaurus aegyptiacus, and rejects the referral of Spinosaurus maroccanus."
+        },
+        {
+          "id": "arden2019a",
+          "authors": "Arden, T. M. S.; Klein, C. G.; Zouhri, S.; Longrich, N. R.",
+          "year": 2019,
+          "title": "Aquatic adaptation in the skull of carnivorous dinosaurs (Theropoda: Spinosauridae) and the evolution of aquatic habits in spinosaurids",
+          "journal": "Cretaceous Research",
+          "publisher": "Elsevier",
+          "volume": "93",
+          "pages": "275-284",
+          "doi": "10.1016/j.cretres.2018.06.013",
+          "notes": "Recovers the genus as the sister taxon of Spinosaurus in a clade Spinosaurini."
+        },
+        {
+          "id": "chiarenza2016a",
+          "authors": "Chiarenza, A. A.; Cau, A.",
+          "year": 2016,
+          "title": "A large abelisaurid (Dinosauria, Theropoda) from Morocco and comments on the Cenomanian theropods from North Africa",
+          "journal": "PeerJ",
+          "publisher": "PeerJ",
+          "volume": "4",
+          "pages": "e1754",
+          "doi": "10.7717/peerj.1754",
+          "notes": "Concurs that the genus is a distinct spinosaurid rather than referable to Spinosaurus aegyptiacus."
+        },
+        {
+          "id": "rauhut2025a",
+          "authors": "Rauhut, O. W. M.; Canudo, J. I.; Castanera, D.",
+          "year": 2025,
+          "title": "Revision of the theropod dinosaur Camarillasaurus cirugedae from the Early Cretaceous (Barremian) of Teruel province, Spain",
+          "journal": "Palaeontologia Electronica",
+          "volume": "28",
+          "issue": "3",
+          "pages": "1-67",
+          "doi": "10.26879/1543",
+          "notes": "Tests the single-taxon hypothesis for the Kem Kem spinosaurid material in a sensitivity analysis."
+        },
+        {
+          "id": "kellermann2025a",
+          "authors": "Kellermann, M.; Cuesta, E.; Rauhut, O. W. M.",
+          "year": 2025,
+          "title": "Re-evaluation of the Bahariya Formation carcharodontosaurid (Dinosauria: Theropoda) and its implications for allosauroid phylogeny",
+          "journal": "PLOS ONE",
+          "publisher": "Public Library of Science (PLoS)",
+          "volume": "20",
+          "issue": "1",
+          "pages": "e0311096",
+          "doi": "10.1371/journal.pone.0311096",
+          "notes": "Notes the claimed shared occurrence of the genus in the Bahariya Formation and the Kem Kem Group as warranting reexamination."
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Saurischia",
+        "Theropoda",
+        "Neotheropoda",
+        "Averostra",
+        "Tetanurae",
+        "Megalosauroidea",
+        "Megalosauria",
+        "Spinosauridae",
+        "Spinosaurinae"
+      ],
+      "authors": "Russell, D. A.",
+      "described": 1996
     },
     "Siluosaurus": {
       "genus": "Siluosaurus",
@@ -222741,13 +223004,17 @@
           "type_species": true,
           "period": {
             "name": [
+              "Early Jurassic",
               "Middle Jurassic"
             ],
             "stage": [
-              "Aalenian"
+              "Toarcian",
+              "Aalenian",
+              "Bajocian"
             ],
-            "from_ma": 174.7,
-            "to_ma": 170.9
+            "resolution": "unit",
+            "from_ma": 184.2,
+            "to_ma": 168.2
           },
           "location": {
             "country": "AR",
@@ -222796,6 +223063,19 @@
           "issue": "4413",
           "pages": "1377-1379",
           "doi": "10.1126/science.205.4413.1377"
+        },
+        {
+          "id": "cúneo2013a",
+          "authors": "Cúneo, R.; Ramezani, J.; Scasso, R.; Pol, D.; Escapa, I.; Zavattieri, A. M.; Bowring, S. A.",
+          "year": 2013,
+          "title": "High-precision U-Pb geochronology and a new chronostratigraphy for the Cañadón Asfalto Basin, Chubut, central Patagonia: implications for terrestrial faunal and floral evolution in Jurassic",
+          "journal": "Gondwana Research",
+          "publisher": "Elsevier BV",
+          "volume": "24",
+          "issue": "3-4",
+          "pages": "1267-1275",
+          "doi": "10.1016/j.gr.2013.01.010",
+          "notes": "Dates the interval overlying the uppermost basalt flow at Cerro Cóndor, which holds this taxon, as Aalenian to probably Bajocian, with a latest Toarcian age not precluded near the basalt."
         },
         {
           "id": "jones2026b",
@@ -224687,6 +224967,212 @@
       ],
       "authors": "Wang, Y.-M.; Zhang, Q.-N.; Wang, Y.-C.; Xu, H.; Chen, J.; Feng, Z.; Xu, X.; Wang, T.; You, H.-L.",
       "described": 2025
+    },
+    "Wuerhosaurus": {
+      "genus": "Wuerhosaurus",
+      "parent": "Stegosaurinae",
+      "etymology": "From 'Wuerho', the town in Xinjiang near which the fossils were collected, and Greek 'sauros' ('lizard'); meaning 'Wuerho lizard'.",
+      "description": "Wuerhosaurus is an extinct genus of stegosaurine stegosaur dinosaurs from the Early Cretaceous of China. The genus contains two species, Wuerhosaurus homheni, the type species named in 1973, and Wuerhosaurus ordosensis, named in 1993. It is one of the youngest (most recent) known stegosaurs in the fossil record, alongside Mongolostegus and Yanbeilong.",
+      "dispute": {
+        "summary": "The validity of Wuerhosaurus has been contested, though recent work favors retaining it. Maidment and others (2008) found the type species nested among species of Stegosaurus and recombined it as Stegosaurus homheni, treating the genus as invalid. Raven and others (2023) reinstated it, noting the labile phylogenetic position of Hesperosaurus, Stegosaurus and Wuerhosaurus and preferring to recognize the three as distinct genera; Jia and others (2024) likewise count the genus among the few valid Cretaceous stegosaurs, and Sánchez-Fenollosa and others (2025) report tree topologies that challenge the synonymization directly. The genus is retained here. Its diagnosis remains weak, however: Sánchez-Fenollosa and others (2025) undermine the one candidate autapomorphy, so the current case for the genus rests on phylogenetic conservatism rather than on a secure diagnosis.\n",
+        "history": [
+          {
+            "date": "2026-08-07",
+            "note": "Intaken at Stegosaurinae and kept valid. The genus was absent from the dataset entirely after an unsupported synonymy was removed from Stegosaurus; see the orphaned-taxa audit.\n"
+          }
+        ]
+      },
+      "diet": "herbivore",
+      "locomotion": "quadrupedal",
+      "diagnostic_features": [
+        "Dorsal (lumbar) vertebral centrum amphiplatyan, longer than wide, with a weak ventral ridge, high neural arch, and transverse processes angled ~45 degrees to the neural spine.",
+        "Sacrum comprising five fused vertebrae: an anterior reinforced lumbar vertebra plus four true sacrals with enlarged transverse processes forming a solid, flat sacral plate.",
+        "Ilium with a very long anterior process and a short, broad posterior process, in an anterior-to-posterior ratio of about 3:1.",
+        "Scapula and coracoid completely fused into a fan-shaped element with a raised, thickened central portion, thin lateral edges, and a narrow coracoid foramen.",
+        "Pubis slender, with a broad flat anterior process and a club-shaped posterior process with an expanded distal end, meeting at a right angle at the acetabulum.",
+        "Dermal plates chisel-shaped, wide at the base with basal folds for muscle attachment, tapering upward to a sharp-edged upper margin.",
+        "Neural spine of the anterior caudal vertebra has a convex dorsal surface and is three times the height of the centrum",
+        "Fenestrae between the sacral ribs and sacral processes are completely closed",
+        "Ratio of humeral length to iliac length is 1:3",
+        "Anterior processes of the ilia are separated by a wide angle",
+        "Bony plates are large, long, and rather low in profile"
+      ],
+      "appearance": {
+        "integument": "armored"
+      },
+      "identifiers": [
+        {
+          "source": "pbdb",
+          "id": "38815"
+        },
+        {
+          "source": "wikidata",
+          "id": "Q131639"
+        },
+        {
+          "source": "gbif",
+          "id": "4823117"
+        }
+      ],
+      "species": [
+        {
+          "name": "Wuerhosaurus homheni",
+          "etymology": "From 'homhen', referring to the wide and flat form of the sacral region.",
+          "status": "valid",
+          "type_species": true,
+          "period": {
+            "name": [
+              "Early Cretaceous"
+            ],
+            "stage": [
+              "Barremian",
+              "Aptian"
+            ],
+            "from_ma": 125.77,
+            "to_ma": 113.2
+          },
+          "location": {
+            "country": "CN",
+            "locality": "Wuerho",
+            "region": "Xinjiang",
+            "formation": "Lianmuqin",
+            "coordinates": [
+              46.043884,
+              85.792046
+            ],
+            "region_code": "CN-XJ"
+          },
+          "size": {
+            "length_m": {
+              "min": 7,
+              "max": 7
+            },
+            "weight_kg": {
+              "min": 4000,
+              "max": 4000
+            }
+          },
+          "type_specimen": {
+            "specimen_id": [
+              "IVPP V4006"
+            ],
+            "specimen_type": "holotype",
+            "institution": "Institute of Vertebrate Paleontology and Paleoanthropology",
+            "material": "Two vertebrae, complete left scapulocoracoid, both humeri, a portion of the ulna, pubis, ungual phalanx of the pes, and two large bony plates.",
+            "completeness": "partial"
+          },
+          "erected_in": "dong1973a",
+          "authors": "Dong, Z.",
+          "described": 1973
+        }
+      ],
+      "references": [
+        {
+          "id": "dong1973a",
+          "authors": "Dong, Z.",
+          "year": 1973,
+          "title": "[Dinosaurs from Wuerho]",
+          "journal": "Reports of Paleontological Expedition to Sinkiang (II): Pterosaurian Fauna from Wuerho, Sinkiang.  Memoirs of the Institute of Vertebrate Paleontology and Paleoanthropology, Academia Sinica",
+          "volume": "11",
+          "pages": "45-52",
+          "notes": "Erects the genus and type species on an incomplete skeleton from the Wuerho locality."
+        },
+        {
+          "id": "dong1990b",
+          "authors": "Dong, Z.",
+          "year": 1990,
+          "title": "Stegosaurs of Asia",
+          "book": "Dinosaur Systematics",
+          "publisher": "Cambridge University Press",
+          "pages": "255-268",
+          "notes": "Reviews the Asian stegosaurs and gives a fuller account of the holotype material and diagnosis."
+        },
+        {
+          "id": "maidment2008a",
+          "authors": "Maidment, S. C. R.; Norman, D. B.; Barrett, P. M.; Upchurch, P.",
+          "year": 2008,
+          "title": "Systematics and phylogeny of Stegosauria (Dinosauria: Ornithischia)",
+          "journal": "Journal of Systematic Palaeontology",
+          "publisher": "Informa UK Limited",
+          "volume": "6",
+          "issue": "4",
+          "pages": "367-407",
+          "doi": "10.1017/S1477201908002459",
+          "notes": "Recombines the type species as Stegosaurus homheni, treating the genus as invalid, and regards Wuerhosaurus ordosensis as a nomen dubium."
+        },
+        {
+          "id": "raven2023a",
+          "authors": "Raven, T. J.; Barrett, P. M.; Joyce, C. B.; Maidment, S. C. R.",
+          "year": 2023,
+          "title": "The phylogenetic relationships and evolutionary history of the armoured dinosaurs (Ornithischia: Thyreophora)",
+          "journal": "Journal of Systematic Palaeontology",
+          "volume": "21",
+          "issue": "1",
+          "pages": "2205433",
+          "doi": "10.1080/14772019.2023.2205433",
+          "notes": "Reinstates the genus, recognizing Hesperosaurus, Stegosaurus and Wuerhosaurus as distinct given their labile positions."
+        },
+        {
+          "id": "jia2024a",
+          "authors": "Jia, L.; Li, N.; Dong, L.; Shi, J.; Kang, Z.; Wang, S.; Xu, S.; You, H.",
+          "year": 2024,
+          "title": "A new stegosaur from the late Early Cretaceous of Zuoyun, Shanxi Province, China",
+          "journal": "Historical Biology",
+          "publisher": "Informa UK Limited",
+          "volume": "37",
+          "issue": "2",
+          "pages": "420-429",
+          "doi": "10.1080/08912963.2024.2308214",
+          "notes": "Counts the genus among the few valid Cretaceous stegosaurs in the description of Yanbeilong."
+        },
+        {
+          "id": "sánchez-fenollosa2025a",
+          "authors": "Sánchez-Fenollosa, S.; Cobos, A.",
+          "year": 2025,
+          "title": "New insights into the phylogeny and skull evolution of stegosaurian dinosaurs: an extraordinary cranium from the European Late Jurassic (Dinosauria: Stegosauria)",
+          "journal": "Vertebrate Zoology",
+          "volume": "75",
+          "pages": "165-189",
+          "doi": "10.3897/vz.75.e146618",
+          "notes": "Reports topologies that challenge the synonymization with Stegosaurus, while undermining the candidate autapomorphy."
+        },
+        {
+          "id": "carpenter2001b",
+          "authors": "Carpenter, K.; Miles, C. A.; K. Cloward",
+          "year": 2001,
+          "title": "New primitive stegosaur from the Morrison Formation, Wyoming",
+          "journal": "The Armored Dinosaurs. Indiana University Press, Bloomington",
+          "pages": "55-75",
+          "notes": "Compares the genus with Hesperosaurus in the description of that taxon."
+        },
+        {
+          "id": "paul2024a",
+          "authors": "Paul, G. S.",
+          "year": 2024,
+          "title": "The Princeton Field Guide to Dinosaurs (3rd ed.)",
+          "publisher": "Princeton University Press",
+          "notes": "Source of the length and mass estimates."
+        }
+      ],
+      "taxonomy": [
+        "Life",
+        "Animalia",
+        "Chordata",
+        "Vertebrata",
+        "Sarcopterygii",
+        "Tetrapoda",
+        "Reptilia",
+        "Archosauria",
+        "Dinosauria",
+        "Ornithischia",
+        "Genasauria",
+        "Thyreophora",
+        "Stegosauria",
+        "Stegosauridae",
+        "Stegosaurinae"
+      ],
+      "authors": "Dong, Z.",
+      "described": 1973
     },
     "Wulagasaurus": {
       "genus": "Wulagasaurus",
