@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-08-07T02:52:47.428Z
+  built_at: 2026-08-07T03:11:29.144Z
   clade_count: 188
   genus_count: 1401
   license: CC-BY-4.0
@@ -40046,6 +40046,7 @@ genera:
           locality: Kem Kem beds
           region: Draa-Tafilalet
           group: Kem Kem
+          formation: Douira
           coordinates:
             - 30.505667
             - -4.836939
@@ -40132,6 +40133,15 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
         notes: Source of the hip height estimate, and the appearance features.
+      - id: ibrahim2020a
+        authors: Ibrahim, N.; Sereno, P. C.; Varricchio, D. J.; Martill, D. M.; Dutheil, D. B.; Unwin, D. M.; Baidder, L.; Larsson, H. C. E.; Zouhri, S.; Kaoukaya, A.
+        year: 2020
+        title: Geology and paleontology of the Upper Cretaceous Kem Kem Group of eastern Morocco
+        journal: ZooKeys
+        volume: "928"
+        pages: 1-216
+        doi: 10.3897/zookeys.928.47517
+        notes: Recognizes the Kem Kem Group as the lower Gara Sbaa and upper Douira formations, and places the neotype cranium in the Douira Formation.
       - id: cau2025a
         authors: Cau, A.; Paterna, A.
         year: 2025
@@ -63961,9 +63971,9 @@ genera:
           region_code: BR-RS
         type_specimen:
           specimen_id:
-            - UFSM 0157
+            - CAPPA/UFSM 0157
           specimen_type: holotype
-          institution: Laboratório de Estratigrafia e Paleobiologia, Universidade Federal de Santa Maria
+          institution: Centro de Apoio à Pesquisa Paleontológica da Quarta Colônia, Universidade Federal de Santa Maria
           material: Proximal portion of a left femur
           completeness: fragmentary
         size:
@@ -101673,7 +101683,7 @@ genera:
     pronunciation:
       phonetic: LOO-so-ven-AY-tor
     etymology: From Latin Luso- (Portuguese, referring to Lusitania/Portugal) combined with Latin venator (hunter); meaning "Portuguese hunter"
-    description: Lusovenator is a genus of carcharodontosaurian theropod dinosaur from the Late Jurassic (Kimmeridgian) Praia de Amoreira Porto-Novo Member and the Late Jurassic-Early Cretaceous (Tithonian-Berriasian) Assenta Member of the Lourinhã Formation in present-day Portugal. It includes one species, Lusovenator santosi.
+    description: Lusovenator is a genus of carcharodontosaurian theropod dinosaur from the Late Jurassic (Kimmeridgian) Amoreira-Porto Novo Member and the Late Jurassic-Early Cretaceous (Tithonian-Berriasian) Assenta Member of the Lourinhã Formation in present-day Portugal. It includes one species, Lusovenator santosi.
     diet: carnivore
     locomotion: bipedal
     paleoenvironment:
@@ -101712,7 +101722,8 @@ genera:
           country: PT
           locality: cliffs north of Praia de Valmitão
           region: Lisbon
-          formation: Praia da Amoreira-Porto Novo
+          formation: Lourinhã
+          member: Amoreira-Porto Novo
           coordinates:
             - 39.087502
             - -9.404722
@@ -119075,7 +119086,8 @@ genera:
           country: PT
           locality: cliffs north of Praia de Valmitão
           region: Lisbon
-          formation: Praia da Amoreira-Porto Novo
+          formation: Lourinhã
+          member: Amoreira-Porto Novo
           coordinates:
             - 39.201111
             - -9.347222
@@ -143112,7 +143124,7 @@ genera:
         location:
           country: MA
           region: Draa-Tafilalet
-          formation: Ifezouane Formation
+          formation: Ifezouane
           coordinates:
             - 30.883
             - -3.967
