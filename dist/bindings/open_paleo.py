@@ -89,6 +89,10 @@ class Pronunciation(BaseModel):
     phonetic: Optional[str] = None
 
 
+class Resolution(Enum):
+    unit = 'unit'
+
+
 class PartOf(Enum):
     group = 'group'
     formation = 'formation'
@@ -448,6 +452,10 @@ class Period(BaseModel):
     stage: Optional[List[Stages]] = None
     from_ma: Optional[float] = None
     to_ma: Optional[float] = None
+    resolution: Optional[Resolution] = Field(
+        None,
+        description='Present as "unit" when no age finer than the containing lithostratigraphic unit has been published, so `stage` is that unit\'s range rather than a determination for this taxon. Absent means the age is finer, or has not been checked.',
+    )
 
 
 class Size(BaseModel):

@@ -242,7 +242,8 @@
         "name": { "type": "array", "items": { "$ref": "#/$defs/periods" } },
         "stage": { "type": "array", "items": { "$ref": "#/$defs/stages" } },
         "from_ma": { "type": "number" },
-        "to_ma": { "type": "number" }
+        "to_ma": { "type": "number" },
+        "resolution": { "type": "string", "enum": ["unit"], "description": "Present as \"unit\" when no age finer than the containing lithostratigraphic unit has been published, so `stage` is that unit's range rather than a determination for this taxon. Absent means the age is finer, or has not been checked." }
       }
     },
     "location": {

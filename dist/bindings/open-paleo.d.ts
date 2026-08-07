@@ -410,6 +410,10 @@ export interface Period {
   stage?: Stages[];
   from_ma?: number;
   to_ma?: number;
+  /**
+   * Present as "unit" when no age finer than the containing lithostratigraphic unit has been published, so `stage` is that unit's range rather than a determination for this taxon. Absent means the age is finer, or has not been checked.
+   */
+  resolution?: "unit";
   [k: string]: unknown;
 }
 export interface Location {
