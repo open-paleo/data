@@ -1,0 +1,124 @@
+genus: Wuerhosaurus
+parent: Stegosaurinae
+etymology: From 'Wuerho', the town in Xinjiang near which the fossils were
+  collected, and Greek 'sauros' ('lizard'); meaning 'Wuerho lizard'.
+description: Wuerhosaurus is an extinct genus of stegosaurine stegosaur
+  dinosaurs from the Early Cretaceous of China. The genus contains two species,
+  Wuerhosaurus homheni, the type species named in 1973, and Wuerhosaurus
+  ordosensis, named in 1993. It is one of the youngest (most recent) known
+  stegosaurs in the fossil record, alongside Mongolostegus and Yanbeilong.
+dispute:
+  summary: >
+    The validity of Wuerhosaurus has been contested, though recent work favors
+    retaining it. Maidment and others (2008) found the type species nested among
+    species of Stegosaurus and recombined it as Stegosaurus homheni, treating the
+    genus as invalid. Raven and others (2023) reinstated it, noting the labile
+    phylogenetic position of Hesperosaurus, Stegosaurus and Wuerhosaurus and
+    preferring to recognize the three as distinct genera; Jia and others (2024)
+    likewise count the genus among the few valid Cretaceous stegosaurs, and
+    Sánchez-Fenollosa and others (2025) report tree topologies that challenge the
+    synonymization directly. The genus is retained here. Its diagnosis remains
+    weak, however: Sánchez-Fenollosa and others (2025) undermine the one
+    candidate autapomorphy, so the current case for the genus rests on
+    phylogenetic conservatism rather than on a secure diagnosis.
+  history:
+    - date: "2026-08-07"
+      note: >
+        Intaken at Stegosaurinae and kept valid. The genus was absent from the
+        dataset entirely after an unsupported synonymy was removed from
+        Stegosaurus; see the orphaned-taxa audit.
+diet: herbivore
+locomotion: quadrupedal
+diagnostic_features:
+  - Dorsal (lumbar) vertebral centrum amphiplatyan, longer than wide, with a
+    weak ventral ridge, high neural arch, and transverse processes angled ~45
+    degrees to the neural spine.
+  - "Sacrum comprising five fused vertebrae: an anterior reinforced lumbar
+    vertebra plus four true sacrals with enlarged transverse processes forming a
+    solid, flat sacral plate."
+  - Ilium with a very long anterior process and a short, broad posterior
+    process, in an anterior-to-posterior ratio of about 3:1.
+  - Scapula and coracoid completely fused into a fan-shaped element with a
+    raised, thickened central portion, thin lateral edges, and a narrow coracoid
+    foramen.
+  - Pubis slender, with a broad flat anterior process and a club-shaped
+    posterior process with an expanded distal end, meeting at a right angle at
+    the acetabulum.
+  - Dermal plates chisel-shaped, wide at the base with basal folds for muscle
+    attachment, tapering upward to a sharp-edged upper margin.
+  - Neural spine of the anterior caudal vertebra has a convex dorsal surface and
+    is three times the height of the centrum
+  - Fenestrae between the sacral ribs and sacral processes are completely closed
+  - Ratio of humeral length to iliac length is 1:3
+  - Anterior processes of the ilia are separated by a wide angle
+  - Bony plates are large, long, and rather low in profile
+appearance:
+  integument: armored
+identifiers:
+  - source: pbdb
+    id: "38815"
+  - source: wikidata
+    id: Q131639
+  - source: gbif
+    id: "4823117"
+species:
+  - name: Wuerhosaurus homheni
+    etymology: From 'homhen', referring to the wide and flat form of the sacral
+      region.
+    status: valid
+    type_species: true
+    period:
+      name:
+        - Early Cretaceous
+      stage:
+        - Barremian
+        - Aptian
+    location:
+      country: CN
+      locality: Wuerho
+      region: CN-XJ
+      formation: Lianmuqin
+      coordinates:
+        - 46.043884
+        - 85.792046
+    size:
+      length_m:
+        min: 7
+        max: 7
+      weight_kg:
+        min: 4000
+        max: 4000
+    type_specimen:
+      specimen_id:
+        - IVPP V4006
+      specimen_type: holotype
+      institution: IVPP
+      material: Two vertebrae, complete left scapulocoracoid, both humeri, a
+        portion of the ulna, pubis, ungual phalanx of the pes, and two large
+        bony plates.
+      completeness: partial
+    erected_in: dong1973a
+references:
+  - id: dong1973a
+    notes: Erects the genus and type species on an incomplete skeleton from the
+      Wuerho locality.
+  - id: dong1990b
+    notes: Reviews the Asian stegosaurs and gives a fuller account of the
+      holotype material and diagnosis.
+  - id: maidment2008a
+    notes: Recombines the type species as Stegosaurus homheni, treating the genus
+      as invalid, and regards Wuerhosaurus ordosensis as a nomen dubium.
+  - id: raven2023a
+    notes: Reinstates the genus, recognizing Hesperosaurus, Stegosaurus and
+      Wuerhosaurus as distinct given their labile positions.
+  - id: jia2024a
+    notes: Counts the genus among the few valid Cretaceous stegosaurs in the
+      description of Yanbeilong.
+  - id: sánchez-fenollosa2025a
+    notes: Reports topologies that challenge the synonymization with Stegosaurus,
+      while undermining the candidate autapomorphy.
+  - id: carpenter2001b
+    notes: Compares the genus with Hesperosaurus in the description of that
+      taxon.
+  - id: paul2024a
+    notes: Source of the length and mass estimates.
