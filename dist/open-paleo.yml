@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-08-07T03:11:29.144Z
+  built_at: 2026-08-07T04:09:32.800Z
   clade_count: 188
   genus_count: 1401
   license: CC-BY-4.0
@@ -13194,6 +13194,7 @@ genera:
           locality: Tugrikin Shire I
           region: Ömnögovi
           formation: Djadokhta
+          member: Tugrugyin
           coordinates:
             - 44.228333
             - 103.30278
@@ -13564,7 +13565,7 @@ genera:
               to_institution: Musée National Boubou Hama
               reason: rehoused
               source: carrano2012a
-              notes: The erecting paper treats UC OBA 1 as a temporary designation for material held on loan; carrano2012a gives the permanent number as "MNN TIG1 (= UC OBA 1)", MNN being the superseded code for MNBH.
+              notes: The erecting paper treats UC OBA 1 as a temporary designation for material held on loan; Carrano (2012) gives the permanent number as "MNN TIG1 (= UC OBA 1)", MNN being the superseded code for MNBH.
         size:
           length_m:
             min: 9
@@ -17594,7 +17595,6 @@ genera:
             - Early Cretaceous
           stage:
             - Valanginian
-          formation: Wadhurst Clay
           from_ma: 137.05
           to_ma: 132.6
         location:
@@ -20895,6 +20895,7 @@ genera:
           locality: Carol Jones Quarry
           region: Utah
           formation: Cedar Mountain
+          member: Mussentuchit
           coordinates:
             - 39.155956
             - -110.857689
@@ -24158,6 +24159,7 @@ genera:
           locality: Bayn Dzak site
           region: Ömnögovi
           formation: Djadokhta
+          member: Bayn Dzak
           coordinates:
             - 44.156948
             - 103.692329
@@ -28367,7 +28369,7 @@ genera:
           to_ma: 66
         location:
           country: AR
-          locality: Cerro Bonaparte
+          locality: Bajo de Santa Rosa
           region: Río Negro
           formation: Allen
           coordinates:
@@ -29813,6 +29815,7 @@ genera:
           country: MN
           region: Ömnögovi
           formation: Djadokhta
+          member: Bayn Dzak
           locality: Bayn Dzak (Flaming Cliffs)
           coordinates:
             - 44.13
@@ -33428,7 +33431,8 @@ genera:
           country: CN
           region: Yunnan
           formation: Lufeng
-          locality: Dark Red Beds, Lower Lufeng Formation
+          member: Zhangjia'ao
+          locality: Lufeng Basin
           coordinates:
             - 25.15
             - 102.083336
@@ -34245,10 +34249,12 @@ genera:
           locality: Salitral Ojo de Agua
           region: Río Negro
           formation: Allen
+          part: upper
           coordinates:
             - -39.431946
             - -67.294441
           region_code: AR-R
+          part_of: formation
         size:
           hip_height_m:
             min: 1
@@ -34461,7 +34467,7 @@ genera:
           to_ma: 66
         location:
           country: AR
-          locality: Cerro Bonaparte
+          locality: Bajo de Santa Rosa
           region: Río Negro
           formation: Allen
           coordinates:
@@ -36798,10 +36804,13 @@ genera:
           locality: Hotel Mesa East
           region: Utah
           formation: Cedar Mountain
+          member: Ruby Ranch
+          part: upper
           coordinates:
             - 38.831944
             - -109.273613
           region_code: US-UT
+          part_of: member
         size:
           hip_height_m:
             min: 3
@@ -40964,10 +40973,13 @@ genera:
           locality: Price River I site
           region: Utah
           formation: Cedar Mountain
+          member: Ruby Ranch
+          part: upper
           coordinates:
             - 39.179001
             - -110.106003
           region_code: US-UT
+          part_of: member
         type_specimen:
           specimen_id:
             - CEUM 12360
@@ -50245,7 +50257,7 @@ genera:
         title: Index to the fossil remains of Aves, Ornithosauria, and Reptilia, from the Secondary System of Strata, arranged in the Woodwardian Museum of the University of Cambridge
         journal: Cambridge, Deighton, Bell, and Co.
         pages: 1-143
-        notes: Coins the name Cryptosaurus eumerus with a brief shelf-location note but no diagnosis or description — a nomen-nudum precursor to seeley1875b.
+        notes: Coins the name Cryptosaurus eumerus with a brief shelf-location note but no diagnosis or description — a nomen-nudum precursor to the 1875 description.
       - id: geoffroysaint-hilaire1831a
         authors: Geoffroy Saint-Hilaire, É.
         year: 1831
@@ -61791,10 +61803,13 @@ genera:
           locality: Carol Jones Quarry
           region: Utah
           formation: Cedar Mountain
+          member: Mussentuchit
+          part: lower
           coordinates:
             - 38.799999
             - -111.169998
           region_code: US-UT
+          part_of: member
         type_specimen:
           specimen_id:
             - CEUM 9758
@@ -64077,10 +64092,12 @@ genera:
           locality: Eshan
           region: Yunnan
           formation: Lufeng
+          part: lower
           coordinates:
             - 24.173901
             - 102.401901
           region_code: CN-YN
+          part_of: formation
         size:
           length_m:
             min: 2.65
@@ -66296,6 +66313,7 @@ genera:
           locality: Karmic Orodromine locality
           region: Utah
           formation: Cedar Mountain
+          member: Mussentuchit
           coordinates:
             - 38.706299
             - -111.1978
@@ -67587,13 +67605,14 @@ genera:
             - Early Jurassic
           stage:
             - Sinemurian
-          formation: Lufeng
           from_ma: 199.5
           to_ma: 192.9
         location:
           country: CN
           region: Yunnan
           formation: Lufeng
+          member: Zhangjia'ao
+          locality: Ta Ti
           region_code: CN-YN
         type_specimen:
           specimen_id:
@@ -70069,10 +70088,13 @@ genera:
           locality: Suarez Site
           region: Utah
           formation: Cedar Mountain
+          member: Yellow Cat
+          part: lower
           coordinates:
             - 38.90987
             - -110.110764
           region_code: US-UT
+          part_of: member
         size:
           length_m:
             min: 1.5
@@ -81771,10 +81793,13 @@ genera:
           locality: Fortunate Son
           region: Utah
           formation: Cedar Mountain
+          member: Mussentuchit
+          part: lower
           coordinates:
             - 38.720798
             - -111.185402
           region_code: US-UT
+          part_of: member
         type_specimen:
           specimen_id:
             - NCSM 29373
@@ -88041,6 +88066,7 @@ genera:
           locality: Xinwa, Jingshan
           region: Yunnan
           formation: Lufeng
+          member: Shawan
           coordinates:
             - 25.132999
             - 102.083
@@ -90726,10 +90752,12 @@ genera:
           locality: Cerro Matadero, Arriagada Farm
           region: Río Negro
           formation: Allen
+          part: upper
           coordinates:
             - -39.503334
             - -67.371941
           region_code: AR-R
+          part_of: formation
         size:
           length_m:
             min: 8
@@ -94057,7 +94085,7 @@ genera:
               from_institution: Natural History Museum of Los Angeles County
               to_institution: Instituto de Geología, Universidad Nacional Autónoma de México
               reason: rehoused
-              notes: Repatriated to Mexico. molnar1974a figures the quadrate as LACM 20877; no source read so far dates the transfer.
+              notes: Repatriated to Mexico. Molnar (1974) figures the quadrate as LACM 20877; no source read so far dates the transfer.
         size:
           length_m:
             min: 6.3
@@ -99399,6 +99427,7 @@ genera:
           locality: Jiudu Village in Konglongshan Town
           region: Yunnan
           formation: Lufeng
+          member: Shawan
           coordinates:
             - 34.124687
             - 111.972527
@@ -103100,6 +103129,7 @@ genera:
           locality: Tögrögiin Shiree
           region: Ömnögovi
           formation: Djadokhta
+          member: Tugrugyin
           coordinates:
             - 44.216667
             - 103.26667
@@ -104012,7 +104042,6 @@ genera:
             - Turonian
             - Coniacian
             - Santonian
-          formation: Bayan Shireh
           from_ma: 100.5
           to_ma: 83.6
         size:
@@ -108975,10 +109004,13 @@ genera:
           locality: Doelling's Bowl Bonebed
           region: Utah
           formation: Cedar Mountain
+          member: Yellow Cat
+          part: lower
           coordinates:
             - 38.731945
             - -109.592781
           region_code: US-UT
+          part_of: member
         size:
           length_m:
             min: 11.5
@@ -111484,10 +111516,13 @@ genera:
           locality: NCPALEOUT05, Stormy Theropod
           region: Utah
           formation: Cedar Mountain
+          member: Mussentuchit
+          part: lower
           coordinates:
             - 38.644444
             - -111.26889
           region_code: US-UT
+          part_of: member
         size:
           length_m:
             min: 3
@@ -116494,10 +116529,12 @@ genera:
           locality: Arriagada Farm
           region: Río Negro
           formation: Allen
+          part: upper
           coordinates:
             - -39.5075
             - -67.389442
           region_code: AR-R
+          part_of: formation
         type_specimen:
           specimen_id:
             - MPCN-PV-796
@@ -122554,6 +122591,7 @@ genera:
           locality: Shabarakh Usu
           region: Ömnögovi
           formation: Djadokhta
+          member: Bayn Dzak
           coordinates:
             - 43.9
             - 103.73
@@ -124266,6 +124304,7 @@ genera:
           locality: Shawan, Lufeng
           region: Yunnan
           formation: Lufeng
+          member: Shawan
           coordinates:
             - 25.168743
             - 102.084496
@@ -126425,7 +126464,7 @@ genera:
         volume: "72"
         issue: "3"
         pages: 247-289
-        notes: In French. Full descriptive monograph complementing the brief bonaparte1979a announcement; covers Patagosaurus fariasi material in detail.
+        notes: In French. Full descriptive monograph complementing the brief Bonaparte (1979) announcement; covers Patagosaurus fariasi material in detail.
       - id: jones2026b
         authors: Jones, B.; Viola, E.
         year: 2026
@@ -127460,10 +127499,12 @@ genera:
           locality: Cantera de la Pala Mécanica
           region: Río Negro
           formation: Allen
+          part: lower
           coordinates:
             - -38.76173
             - -67.982765
           region_code: AR-R
+          part_of: formation
         size:
           hip_height_m:
             min: 3
@@ -129217,7 +129258,7 @@ genera:
         volume: "72"
         issue: "3"
         pages: 247-289
-        notes: In French. Full descriptive monograph complementing the brief bonaparte1979a announcement; covers Piatnitzkysaurus floresi material in detail.
+        notes: In French. Full descriptive monograph complementing the brief Bonaparte (1979) announcement; covers Piatnitzkysaurus floresi material in detail.
       - id: jones2026c
         authors: Jones, B.; Viola, E.
         year: 2026
@@ -129426,6 +129467,7 @@ genera:
           locality: Bayn Dzak
           region: Ömnögovi
           formation: Djadokhta
+          member: Bayn Dzak
           coordinates:
             - 44.156948
             - 103.692329
@@ -129834,6 +129876,7 @@ genera:
           locality: Tony's Bone Bed
           region: Utah
           formation: Cedar Mountain
+          member: Poison Strip
           coordinates:
             - 38.8293
             - -109.470901
@@ -132417,7 +132460,6 @@ genera:
             - Late Jurassic
           stage:
             - Oxfordian
-          formation: Lower Calcareous Grit
           from_ma: 161.5
           to_ma: 154.8
         location:
@@ -133794,6 +133836,7 @@ genera:
           country: MN
           region: Ömnögovi
           formation: Djadokhta
+          member: Bayn Dzak
           locality: Bayn Dzak (Flaming Cliffs / Shabarakh Usu)
           coordinates:
             - 44.13
@@ -137345,10 +137388,12 @@ genera:
           locality: Salitral Ojo de Agua
           region: Río Negro
           formation: Allen
+          part: lower
           coordinates:
             - -39.433887
             - -67.294998
           region_code: AR-R
+          part_of: formation
         type_specimen:
           specimen_id:
             - MPCA-PV 100
@@ -143766,12 +143811,13 @@ genera:
           to_ma: 66
         location:
           country: MN
-          locality: Granger's Hill, Ukhaa Tolgod
+          locality: Bayn Dzak (Flaming Cliffs / Shabarakh Usu)
           region: Ömnögovi
           formation: Djadokhta
+          member: Bayn Dzak
           coordinates:
-            - 44
-            - 104
+            - 44.13
+            - 103.73
           region_code: MN-053
         type_specimen:
           specimen_id:
@@ -143822,6 +143868,16 @@ genera:
         journal: American Museum Novitates
         volume: "144"
         pages: 1-12
+      - id: norell2009a
+        authors: Norell, M. A.; Makovicky, P. J.; Bever, G. S.; Balanoff, A. M.; Clark, J. M.; Barsbold, R.; Rowe, T.
+        year: 2009
+        title: "A Review of the Mongolian Cretaceous Dinosaur Saurornithoides (Troodontidae: Theropoda)"
+        journal: American Museum Novitates
+        publisher: American Museum of Natural History (BioOne sponsored)
+        volume: "3654"
+        pages: 1-63
+        doi: 10.1206/648.1
+        notes: Redescribes the holotype and fixes its provenance to the Djadokhta Formation at Bayan Zag, noting that the precise spot at the Flaming Cliffs went unrecorded.
       - id: jones2026c
         authors: Jones, B.; Viola, E.
         year: 2026
@@ -143921,7 +143977,7 @@ genera:
               from_institution: Provincial Museum and Archives of Alberta
               to_institution: Royal Tyrrell Museum of Paleontology
               reason: rehoused
-              notes: sues1978a gives the holotype as PMAA P74.10.5; the material later moved to the Royal Tyrrell Museum. No source read so far dates the transfer.
+              notes: Sues (1978) gives the holotype as PMAA P74.10.5; the material later moved to the Royal Tyrrell Museum. No source read so far dates the transfer.
         size:
           length_m:
             min: 1.3
@@ -148573,6 +148629,7 @@ genera:
           locality: Lindsay's Site
           region: Utah
           formation: Cedar Mountain
+          member: Mussentuchit
           coordinates:
             - 38.900002
             - -111.690002
@@ -154581,7 +154638,7 @@ genera:
               from_institution: University of Utah Vertebrate Paleontology Collection
               to_institution: Utah Museum of Natural History
               reason: rehoused
-              notes: madsen1974a gives the type as "Left ilium, UUVP 2938"; the University of Utah collection was later transferred to the museum. No source read so far dates the transfer.
+              notes: Madsen (1974) gives the type as "Left ilium, UUVP 2938"; the University of Utah collection was later transferred to the museum. No source read so far dates the transfer.
         erected_in: madsen1974a
         authors: Madsen, J. H.
         described: 1974
@@ -156133,7 +156190,6 @@ genera:
             - Early Cretaceous
           stage:
             - Albian
-          formation: Cambridge Greensand
           from_ma: 113.2
           to_ma: 100.5
         location:
@@ -158848,6 +158904,8 @@ genera:
           country: CN
           region: Yunnan
           formation: Lufeng
+          member: Zhangjia'ao
+          locality: Ta Ti
           coordinates:
             - 25.172689
             - 102.107323
@@ -171552,6 +171610,7 @@ genera:
           country: MN
           region: Ömnögovi
           formation: Djadokhta
+          member: Bayn Dzak
           locality: Shabarakh Usu (Flaming Cliffs)
           coordinates:
             - 44.13
@@ -171890,6 +171949,7 @@ genera:
           locality: Tony's Bone Bed
           region: Utah
           formation: Cedar Mountain
+          member: Poison Strip
           coordinates:
             - 38.8293
             - -109.470901
@@ -173744,7 +173804,7 @@ genera:
           note: Placed at Hadrosauridae incertae sedis; nomen vanum/dubium.
         - date: 2026-07-03
           note: |
-            Status set to nomen dubium (the schema has no 'nomen vanum'): once the referred material Cruzado-Caballero and Coria (2016) flagged as possibly multi-taxon is set aside, the holotype premaxilla is undiagnostic. Corrected the dispute prose (the holotype is not itself a chimera) and removed the original diagnostic_features, which that revision invalidated. Also dropped the size estimate (paul2024a), which was scaled from the referred, possibly-multi-taxon material. Sourced the revision as cruzado-caballero2016a.
+            Status set to nomen dubium (the schema has no 'nomen vanum'): once the referred material Cruzado-Caballero and Coria (2016) flagged as possibly multi-taxon is set aside, the holotype premaxilla is undiagnostic. Corrected the dispute prose (the holotype is not itself a chimera) and removed the original diagnostic_features, which that revision invalidated. Also dropped the size estimate (Paul, 2024), which was scaled from the referred, possibly-multi-taxon material. Sourced the revision as Cruzado-Caballero (2016).
     diet: herbivore
     locomotion: facultative
     paleoenvironment:
@@ -175704,10 +175764,13 @@ genera:
           locality: near Sankeshu (Three Trees) Village
           region: Yunnan
           formation: Lufeng
+          member: Shawan
+          part: lower
           coordinates:
             - 25.131474
             - 102.073402
           region_code: CN-YN
+          part_of: member
         type_specimen:
           specimen_id:
             - LFGT-D0002
@@ -178494,10 +178557,13 @@ genera:
           locality: Duwafang Village
           region: Yunnan
           formation: Lufeng
+          member: Zhangjia'ao
+          part: upper
           coordinates:
             - 25
             - 102.033333
           region_code: CN-YN
+          part_of: member
         size:
           length_m:
             min: 4.5
@@ -179657,6 +179723,7 @@ genera:
           locality: Huangchiatien, Lufeng
           region: Yunnan
           formation: Lufeng
+          member: Shawan
           coordinates:
             - 25.178595
             - 102.076118
@@ -179684,7 +179751,7 @@ genera:
               from_institution: Institute of Vertebrate Paleontology and Paleoanthropology
               to_institution: Nanjing Geological Museum
               reason: rehoused
-              notes: The date of the move is not recorded in any source read so far, and both numbers remain in use; zhang2024a cites the specimen as "IVPP V 20/NJGM 004546".
+              notes: The date of the move is not recorded in any source read so far, and both numbers remain in use; Zhang (2024) cites the specimen as "IVPP V 20/NJGM 004546".
         erected_in: young1940a
         authors: Young, C.-C.
         described: 1940
