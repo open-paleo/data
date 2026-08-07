@@ -420,6 +420,42 @@ function resolveRegionCodes(
 
 resolveRegionCodes(genera, regionRegistry);
 
+/**
+ * Names the unit that `location.part` qualifies, as `part_of`.
+ *
+ * An informal position is only ever meaningful against the finest unit that
+ * contains the occurrence: where that unit in turn sits inside its parent is a
+ * property of the unit, identical for everything in it, and belongs recorded
+ * once rather than on every record. So the target is always the finest of bed,
+ * member and formation that the record populates -- but that rule is invisible
+ * to anyone reading the source, so the build states it.
+ *
+ * @param generaMap - The processed genera map.
+ */
+function resolvePartTargets(generaMap: Record<string, ProcessedGenus>): void
+{
+    for (const genus of Object.values(generaMap))
+    {
+        for (const species of genus.species ?? [ ])
+        {
+            const location = species.location;
+
+            if (!location?.part)
+            {
+                continue;
+            }
+
+            location.part_of = location.bed
+                ? "bed"
+                : location.member
+                    ? "member"
+                    : "formation";
+        }
+    }
+}
+
+resolvePartTargets(genera);
+
 // Fill in the boundary ages a record leaves to its stages.
 const stageTable = loadStageTable(path.join(root, "schema.yml"));
 
@@ -561,7 +597,7 @@ const dataset: Dataset = {
         clade_count: Object.keys(clades).length,
         genus_count: Object.keys(genera).length,
         license: "CC-BY-4.0",
-        schema_version: "1.2.0",
+        schema_version: "1.3.0",
         version,
     },
     tree,

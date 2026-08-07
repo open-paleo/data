@@ -308,9 +308,35 @@ export type Location = {
 
     /**
      * Stratigraphic member within the formation, when the source resolves the
-     * occurrence to that finer level.
+     * occurrence to that finer level. Holds the member's NAME only: an
+     * informal upper/lower division goes in `part`, so that every occurrence
+     * in one member shares a value regardless of where in it they sit.
      */
     member?: string;
+
+    /**
+     * Named bed within the member, the finest rank of the lithostratigraphic
+     * hierarchy (group, formation, member, bed). Published bed names only --
+     * an individual paper's private lettering for informal units means
+     * nothing without that paper in hand.
+     */
+    bed?: string;
+
+    /**
+     * Informal position within the finest unit named above: "Upper", "Lower",
+     * "Middle", or an ordinal such as "Second". Qualifies the member when one
+     * is present, otherwise the formation, so a record can say `upper part of
+     * the Yellow Cat Member` without the position becoming part of the
+     * member's name.
+     */
+    part?: string;
+
+    /**
+     * Which of `bed`, `member` or `formation` the `part` qualifies -- always
+     * the finest of them the record populates. Build-derived: present in the
+     * output only, never written in the source YAML.
+     */
+    part_of?: string;
 
     /**
      * Geographic coordinates as [latitude, longitude] in decimal degrees.

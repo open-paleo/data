@@ -10,6 +10,14 @@ and this project uses [calendar versioning](https://calver.org/) (YYYY.MM).
 Initial public release, establishing the v1 output schema.
 
 ### Added
+- `location.part` and `location.bed`, completing the lithostratigraphic
+  hierarchy (group, formation, member, bed). `member` now holds a member's
+  NAME only; an informal upper/lower division goes in `part`, which qualifies
+  the member where one is present and the formation otherwise. Previously the
+  two were concatenated, which split a single member across several values —
+  `Ruby Ranch` and `Upper Ruby Ranch` were different strings, so a consumer
+  filtering on the member silently missed half its occurrences. `bed` takes
+  published bed names only. Output schema 1.2.0 → 1.3.0.
 - `location.region_code`, an ISO 3166-2 subdivision code, alongside the
   existing `location.region`. The source YAML now stores only the code and the
   build resolves it, so `region` continues to carry a readable English name —

@@ -1249,6 +1249,84 @@ for (const [filePath, doc] of genusParsed)
                 filePath,
                 `species '${species.name ?? "?"}': 'member' must be a string, got ${typeof member} (${JSON.stringify(member)})`);
         }
+
+        const bed = species?.location?.bed;
+
+        if (bed !== undefined && typeof bed !== "string")
+        {
+            checkError(
+                "Location completeness",
+                filePath,
+                `species '${species.name ?? "?"}': 'bed' must be a string, got ${typeof bed} (${JSON.stringify(bed)})`);
+        }
+
+        const part = species?.location?.part;
+
+        if (part !== undefined && typeof part !== "string")
+        {
+            checkError(
+                "Location completeness",
+                filePath,
+                `species '${species.name ?? "?"}': 'part' must be a string, got ${typeof part} (${JSON.stringify(part)})`);
+        }
+        else if (typeof part === "string" && !species?.location?.formation)
+        {
+            // `part` qualifies the finest unit named above it, so with no
+            // formation there is nothing for it to qualify.
+            checkError(
+                "Location completeness",
+                filePath,
+                `species '${species.name ?? "?"}': 'part' is set to '${part}' but no formation is given`);
+        }
+    }
+}
+
+// 13b. Positional words must live in `part`, not inside a member or bed name
+startCheck("Stratigraphic rank hygiene");
+
+const positionalPrefix = /^(Upper|Lower|Middle|Uppermost|Lowermost|First|Second|Third)\b/;
+
+// Member names that genuinely begin with a positional word, where it is part of
+// the erected name rather than a division of it. The Aguja's members are named
+// for lithology rather than geography -- Lower Shale, Upper Shale, McKinney
+// Springs, Terlingua Creek Sandstone -- so "Upper" here is a name, not a place
+// in the section. Moves to the formations registry when #2012 lands.
+const positionalUnitNames = new Set([ "Upper Shale", "Lower Shale" ]);
+
+for (const [filePath, doc] of genusParsed)
+{
+    if (!doc || !Array.isArray(doc.species))
+    {
+        continue;
+    }
+
+    for (const species of doc.species)
+    {
+        const location = species?.location;
+
+        for (const field of ["member", "bed"] as const)
+        {
+            const value = location?.[field];
+
+            if (typeof value !== "string")
+            {
+                continue;
+            }
+            else if (positionalPrefix.test(value) && !positionalUnitNames.has(value))
+            {
+                checkWarning(
+                    "Stratigraphic rank hygiene",
+                    filePath,
+                    `species '${species.name ?? "?"}': '${field}' is '${value}' — a positional word belongs in 'part' so that every occurrence in one unit shares a value`);
+            }
+            else if (/\b(Formation|Fm\.?|Group|Grp\.?|Member|Mbr\.?|Subgroup)\b/.test(value))
+            {
+                checkWarning(
+                    "Stratigraphic rank hygiene",
+                    filePath,
+                    `species '${species.name ?? "?"}': '${field}' is '${value}' — the rank word is implied by the field and should be dropped`);
+            }
+        }
     }
 }
 
