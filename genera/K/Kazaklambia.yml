@@ -1,10 +1,26 @@
 genus: Kazaklambia
 parent: Lambeosaurinae
+dispute:
+  summary: >
+    The unit holding the holotype is contested, and Nessov (1995) records both
+    readings for the Syuk-Syuk well site. Rozhdestvensky (1964) assigned it to
+    the lower part of the Darbazin Formation; the Stratigraphic Dictionary
+    (1979) assigned it to the Syuk-Syuk Formation. Bell and others (2013)
+    follow the Darbazin reading. The two units are stratigraphically adjacent
+    and both are dated Santonian, so the disagreement is over which name
+    applies to the horizon rather than over the horizon itself.
+  history:
+    - date: "2026-08-06"
+      note: >
+        Darbazin adopted, following the erecting paper. Bell and others (2013)
+        spell it Dabrazinskaya, transposing Darbazinskaya; the svita is named
+        for Darbaza station. The record previously held a further corruption of
+        that spelling, which names no published unit.
 etymology: Named for Kazakhstan, where the fossils were found, combined with the genus name Lambeosaurus (a related lambeosaurine dinosaur), meaning 'Kazakhstan Lambeosaurus'.
 pronunciation:
   phonetic: kah-zak-LAM-bee-uh
 description: Kazaklambia is an extinct genus of herbivorous lambeosaurine
-  dinosaur known from the Late Cretaceous Dabrazinskaya Svita (Santonian stage)
+  dinosaur known from the Late Cretaceous Darbazin Formation (Santonian stage)
   of southern Kazakhstan. It contains a single species, Kazaklambia convincens.
 diet: herbivore
 locomotion: facultative
@@ -30,7 +46,7 @@ identifiers:
     id: Q17126088
 species:
   - name: Kazaklambia convincens
-    etymology: "From Latin 'convincens' meaning 'convincing', as the discovery was considered convincing evidence of the Cretaceous age of the Dabrazinskaya Svita dinosaur beds in Kazakhstan."
+    etymology: "From Latin 'convincens' meaning 'convincing', as the discovery was considered convincing evidence of the Cretaceous age of the Darbazin Formation dinosaur beds in Kazakhstan."
     status: valid
     type_species: true
     period:
@@ -43,7 +59,7 @@ species:
       country: KZ
       locality: Syuk-Syuk
       region: KZ-61
-      formation: Dabrazhin
+      formation: Darbazin
       coordinates:
         - 41.7038
         - 69.390282
@@ -62,5 +78,8 @@ species:
     erected_in: bell2013a
 references:
   - id: bell2013a
+  - id: nessov1995a
+    notes: Catalog of the Syuk-Syuk locality, recording both the Darbazin and
+      Syuk-Syuk assignments for the horizon.
   - id: jones2026a
     notes: Source of the body length estimate, and the appearance features.

@@ -1,0 +1,287 @@
+# Lithostratigraphic rank of the unit names that appear in `location.formation`
+# or in the reference works' formation columns.
+#
+# WHY THIS EXISTS. `location.formation` should hold a FORMATION, `location.member`
+# a MEMBER, and a coarser rank should appear only when it is the finest unit
+# anyone has published for that occurrence. Nothing in a unit's name records its
+# rank, so the field cannot be checked without a table: "Morrison" is a formation
+# and "Kem Kem" is a group, and they sit in the same field spelled the same way.
+#
+# It also stops the reconciliation reporting a rank difference as a
+# disagreement. A reference work printing "Kem Kem" against our "Gara Sbaa" is
+# naming the containing group, not a rival unit -- that pattern accounted for
+# roughly a third of the formation findings triaged in the CORRECT TO THEIRS
+# pass (Kem Kem, Tugulu, Hastings, Gosau, Woodbine, Sasayama, Bauru, Jehol).
+#
+# RULE OF ENTRY. Every line carries the paper it was read from. This file is
+# curated, never mined: a rank inferred from phrasing across a corpus is a guess,
+# and guesses in a suppression table silently close real findings. Entries
+# accumulate as a by-product of working findings -- add one when a primary you
+# were already reading states the rank, and not otherwise.
+#
+# `rank` is the unit's own rank. `parent` is the unit that contains it, where a
+# source states it. `contested` marks units the literature ranks differently,
+# which must stay visible rather than being resolved by majority.
+#
+# HOMONYMS. Unit names are reused across basins. Key such entries by
+# "Name (Country)" and never merge them: the Hekou Group of the Lanzhou-Minhe
+# Basin in Gansu and the Hekou Formation of the Guifeng Group in Jiangxi are
+# different units of different ages. Same trap as the institution-code
+# collisions in institutions.yaml.
+
+groups:
+  Bauru:
+    rank: group
+    source: delcourt2017z
+    note: >
+      Paraná Basin. Adamantina and Marília are formations within it. The Mato
+      Grosso outcrops formerly assigned here belong to the Parecis Group.
+  El Mers:
+    rank: group
+    source: maidment2020a
+    note: El Mers I, II and III are formations of the group.
+  Ganzhou:
+    rank: group
+    source: yao2026a
+    note: Maodian and Zhoutian formations; underlies the Guifeng Group.
+  Gosau:
+    rank: group
+    source: csiki-sava2015a
+    note: >
+      The Grünbach Formation sits in the Lower Gosau Subgroup. bunzel1870a's
+      "Gosau formation" is pre-modern usage.
+  Guifeng:
+    rank: group
+    source: yao2026a
+    note: Hekou, Tangbian and Lianhe formations, Jiangxi.
+  Hastings:
+    rank: group
+    source: carrano2012a
+    note: >
+      Also written Hastings Beds Group and treated as a sub-group of the
+      Wealden. Contains the Wadhurst Clay and Tunbridge Wells Sand formations.
+  "Hekou (CN-GS)":
+    rank: group
+    source: yao2026a
+    note: >
+      Lanzhou-Minhe Basin, Lower Cretaceous. NOT the Hekou Formation of the
+      Guifeng Group in Jiangxi -- different unit, different age.
+  Jehol:
+    rank: group
+    source: yao2019a
+    note: Yixian and Jiufotang formations.
+  "Kem Kem":
+    rank: group
+    source: ibrahim2020a
+    note: >
+      "recognized here as the Kem Kem Group, which is composed of the lower
+      Gara Sbaa and upper Douira formations".
+  Marree:
+    rank: subgroup
+    source: barrett2010z
+    note: >
+      "the Marree Subgroup, which was formerly called the Marree Formation".
+      The opal beds within it are the Bulldog Shale.
+  Neuquén:
+    rank: group
+    source: carballido2010a
+    note: Río Limay Subgroup within it; Candeleros and Huincul are formations.
+  Parecis:
+    rank: group
+    source: delcourt2017z
+    note: >
+      No formation has been published for the Fazenda Roncador locality, so
+      group rank is the finest honest value there.
+  "Río Limay":
+    rank: subgroup
+    parent: Neuquén
+    source: carballido2010a
+  Santana:
+    rank: group
+    source: delcourt2025a
+    note: >
+      Araripe Basin. Crato, Ipubi and Romualdo formations. The old "Santana
+      Formation" was raised to group rank and its Romualdo Member became the
+      Romualdo Formation, so the two names describe the same rock at different
+      ranks -- but only for the Romualdo, NOT for Crato or Ipubi taxa.
+  Sasayama:
+    rank: group
+    source: tanaka2024a
+    note: >
+      "The Sasayama Group, comprising the Ohyamashimo and Sawada formations in
+      ascending order".
+  Tremp:
+    rank: group
+    source: prieto-márquez2021a
+    note: La Posa (basal grey unit) and Conques (overlying lower red unit).
+  Tugulu:
+    rank: group
+    source: rauhut2005c
+    note: Lianmuqin is the uppermost formation of the group.
+  Wangshi:
+    rank: group
+    source: an2015z
+    note: Xingezhuang, Jingangkou and Hongtuya formations, Zhucheng.
+  Woodbine:
+    rank: group
+    source: tykoski2023a
+    note: >
+      Raised to group by Denne and others (2016); the Lewisville is its upper
+      formation, with Arlington and Tarrant as members inside it.
+
+members:
+  Amoreira-Porto Novo:
+    rank: member
+    parent: Lourinhã
+    source: mateus2014a
+  Arlington:
+    rank: member
+    parent: Lewisville
+    source: head1998a
+  "Cuckfield Stone":
+    rank: member
+    parent: Grinstead Clay
+    source: norman2013a
+  "Râul Mare Beds":
+    rank: informal
+    parent: Sânpetru
+    source: díaz2025a
+    note: >
+      "a not yet formally defined lithostratigraphical unit that either
+      represents the uppermost part of the Sînpetru Formation ... or is a
+      distinct unit". Also the name of the river beside the outcrop.
+
+contested:
+  "Grinstead Clay":
+    rank: formation
+    contested: [member, formation]
+    source: norman2013a
+    note: >
+      A Member of the Tunbridge Wells Sand Formation to norman2010a, a Formation
+      to norman2013a, naish2008a and raven2020a. Recorded at formation rank,
+      with the disagreement kept visible rather than settled by majority.
+  Houcheng:
+    rank: formation
+    source: zhao2006a
+    note: >
+      Laterally equivalent to the Tuchengzi Formation and not a spelling of it:
+      Houcheng is the Hebei name, Tuchengzi the Liaoning one. Which applies
+      follows the province the locality sits in.
+
+# Names that reach the formation field or a reference work's formation column
+# without naming a lithostratigraphic unit at all.
+not_a_unit:
+  Bevons:
+    kind: locality
+    source: accarie1995a
+    note: >
+      A commune near Sisteron. accarie1995a gives a lithological description
+      rather than a formal unit, which is why the reference works fell back on
+      the place name; the rocks are the Marnes Bleues.
+  "Pant-y-ffynnon Quarry fissure fill":
+    kind: fissure fill
+    source: spiekman2021a
+    note: >
+      Karstic fills in Carboniferous Limestone. The South Wales and Bristol
+      Channel fissure faunas have no formation name in any paper, so this
+      string is the best available value rather than a defect.
+  "Red Beds of Hermiin Tsav":
+    kind: locality
+    source: funston2018a
+    note: >
+      An informal name for the Baruungoyot type locality, not a rival
+      formation: funston2018a writes "Baruungoyot Formation, Hermiin Tsav".
+  "Vulcanodon Beds":
+    kind: informal
+    source: viglietti2018z
+    note: >
+      Superseded. The type locality lies "within the uppermost Forest Sandstone
+      rather than the interbedded sandstones of the Batoka Basalt Formation".
+  "Fuvelian":
+    kind: local chronostratigraphic stage
+    source: csiki-sava2015a
+    note: >
+      Tarascosaurus. One of the four Provence local stages (Valdonnian,
+      Fuvelian, Begudian, Rognacian) erected by Matheron 1864 -- a time term,
+      not a rock unit. tortosa2014a shows the distinction in one paper, giving
+      Arcovenator a formation AND a local stage while placing Tarascosaurus in
+      the "Fuvelian local stage" with no formation. jones2026c prints it in
+      scare quotes.
+  "Kalahari Deposits":
+    kind: region name hardened into a unit
+    source: dewit1992z
+    note: >
+      Kangnasaurus. The only geological investigation of the site uses the word
+      "Formation" nowhere and "Kalahari" once, inside a cited reference title;
+      it describes a crater-facies deposit above an olivine-melilitite
+      intrusion. rogers1915z, the companion note to the erecting paper, uses
+      "Kalahari" only as a region. Every later use traces to Cooper 1985.
+  "Magnesian Conglomerate":
+    kind: superseded misassignment
+    source: galton2007a
+    note: >
+      Asylosaurus, Thecodontosaurus. The erecting paper rejects it outright --
+      the deposit is "a Triassic (Rheatian) dolomitized cave breccia or fissure
+      fill (not in Magnesian/ Dolomitic Conglomerate) in Lower Carboniferous
+      (Dinantian) marine limestone" -- and explains how the name entered
+      circulation: "It was long equated with the Magnesian Conglomerate, which
+      occurs very close by."
+  Wales:
+    kind: country
+    source: jones2026c
+    note: >
+      Reached the formation comparison from a reference work's locality column.
+      A reminder that those columns are not stratigraphy.
+
+# Coarse values that are the finest unit anyone has published, and are therefore
+# correct rather than defects. Recorded so they stop being re-raised each pass.
+justified_coarse:
+  "Yezo Group":
+    rank: group
+    source: suzuki2004a
+    note: >
+      Nipponosaurus. "Upper Ammonites Bed; now Upper Yezo Group". No
+      formation-rank unit is recoverable: the Kawakami colliery has been
+      inaccessible since 1945 and the excavation field notes are lost.
+  "Parecis Group":
+    rank: group
+    source: delcourt2017z
+    note: Pycnonemosaurus. No formation has been published for Fazenda Roncador.
+  "Toundoute Continental Series":
+    rank: informal
+    source: montenat2005z
+    note: >
+      Berberosaurus, Tazoudasaurus. montenat2005z erects no formation, dividing
+      the succession into eight explicitly informal units A-H. The lower
+      bone-bed is term F, the upper term G.
+  "Wangshi Group":
+    rank: group
+    source: buffetaut1995z
+    note: >
+      Micropachycephalosaurus. "dinosaur remains occur at several distinct
+      levels in the Wangshi Group", and the group's competing subdivision
+      schemes disagree about which subunit the dinosaur beds sit in, so a
+      formation-rank value for an unfigured 1978 locality is not supportable.
+  "Hekou Group (CN-GS)":
+    rank: group
+    source: you2006a
+    note: >
+      Daxiatitan, Huanghetitan liujiaxiaensis, Lanzhousaurus, Yongjinglong.
+      No work subdivides the Hekou Group into named formations in the
+      Lanzhou-Minhe Basin. NOT the Hekou Formation of Jiangxi's Guifeng Group.
+  "Jehol Group":
+    rank: group
+    source: yao2019a
+    note: >
+      Lingyuanosaurus, Zhongjianosaurus -- both from the Sihedang locality,
+      Lingyuan, on identical coordinates. Whether the Sihedang exposures belong
+      to the Yixian or the overlying Jiufotang is unsettled as of 2026
+      (zhou2026a lists five papers per side), and yao2019a declines the question
+      outright: "Resolving this stratigraphic issue is beyond the scope of the
+      present paper." Group rank is the finest unit both readings share.
+  "Dockum":
+    rank: group
+    source: nesbitt2015a
+    note: >
+      Lepidus. The erecting paper withheld a formation name deliberately; this
+      is the uncontested fallback if Cooper Canyon is judged too contested.

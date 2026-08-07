@@ -201,8 +201,16 @@ Vulcanodon karibaensis:
       Sinemurian-Pliensbachian stands. viglietti2018z: "Vulcanodon is likely
       Sinemurian-Pliensbachian in age, and potentially ~10-15 Ma older than
       previously thought".
-
-
+  - categories: [formation]
+    source: viglietti2018z
+    verdict: ours-correct
+    note: >
+      Settled by a paper written to settle it: "Our results show that Vulcanodon
+      is from lower in the stratigraphy than previously documented, lying within
+      the uppermost Forest Sandstone rather than the interbedded sandstones of
+      the Batoka Basalt Formation". The "Vulcanodon Beds" usages in the
+      literature are all pre-2018 and repeat raath1972a. cooper1984a had already
+      put the remains "at the top of the Forest Sandstone".
 Mosaiceratops azumai:
   categories: [holotype]
   source: zheng2015a
@@ -221,14 +229,26 @@ Rocasaurus muniozi:
     centrum ...". The reference work's MCPA-Pv transposes the museum code.
 
 Shidaisaurus jinae:
-  categories: [holotype]
-  source: wu2009a
-  verdict: ours-correct
-  note: >
-    "Holotype: Lufeng Dinosaur Museum-Lufeng Chuanjie A'na (LDM-LCA) 9701-IV, a
-    partial skeleton". The paper expands the code, so LDM is Lufeng Dinosaur
-    Museum and the reference work's DML-LCA is a transposition.
-
+  - categories: [holotype]
+    source: wu2009a
+    verdict: ours-correct
+    note: >
+      "Holotype: Lufeng Dinosaur Museum-Lufeng Chuanjie A'na (LDM-LCA) 9701-IV, a
+      partial skeleton". The paper expands the code, so LDM is Lufeng Dinosaur
+      Museum and the reference work's DML-LCA is a transposition.
+  - categories: [formation]
+    source: zou2025a
+    verdict: ours-correct
+    note: >
+      The erecting paper prints the equivalence itself: wu2009a places the site
+      "within the lower member of the Upper Lufeng Formation ... equivalent to
+      the early Middle Jurassic Chuanjie Formation", and weishampel2004a files
+      the locality under a Chuanjie heading. zou2025a, erecting Yuanmouraptor
+      from the neighbouring sections, states it plainly: "Shidaisaurus (Wu et
+      al., 2009) was found in Chuanjie Formation (Middle Jurassic) in Lufeng
+      City, Yunnan, which is 122 km from the type locality of Yuanmouraptor." The
+      Zhanghe Formation is that Yuanmou unit, in a different county and
+      Aalenian-Bajocian; jones2026c has imported both the wrong unit and its age.
 Sektensaurus sanjuanboscoi:
   categories: [holotype]
   source: ibiricu2019a
@@ -491,13 +511,25 @@ Gonkoken nanoi:
     by a digit.
 
 Goyocephale lattimorei:
-  categories: [holotype]
-  source: perle1982a
-  verdict: ours-correct
-  note: >
-    "Holotype: GI SPS 100/1501, disarticulated skeleton including complete skull
-    roof". The reference work drops the leading 1 of 1501.
-
+  - categories: [holotype]
+    source: perle1982a
+    verdict: ours-correct
+    note: >
+      "Holotype: GI SPS 100/1501, disarticulated skeleton including complete skull
+      roof". The reference work drops the leading 1 of 1501.
+  - categories: [formation]
+    source: perle1982a
+    verdict: corrected
+    note: >
+      Removed Nemegt; no formation recorded. Ours was affirmatively wrong rather
+      than merely unsourced: the erecting paper argues that Goyocephale is "more
+      primitive and probably stratigraphically older than Homalocephale
+      calathocercos known from the Upper Cretaceous Nemegt Formation", and gives
+      the horizon as "red sandstone deposits at Boro Khovil" whose "precise age
+      ... is still undetermined". Boro Khovil is in Övörkhangai, some 550 km from
+      the Nemegt Basin. weishampel2004a records the unit as unnamed. jones2026a's
+      "Boro Khovil Sandstone" is the locality name with a lithology appended, not
+      a published unit, and is not adopted.
 Hualianceratops wucaiwanensis:
   categories: [holotype]
   source: han2015a
@@ -680,16 +712,28 @@ Magnamanus soriaensis:
     holds the Soriatitan golmayensis holotype from the same quarry.
 
 Pelorosaurus brevis:
-  categories: [holotype]
-  source: taylor2007a
-  verdict: ours-correct
-  note: >
-    "Four proximal caudal vertebrae (BMNH R2544-2547) and three chevrons (BMNH
-    R2548-2550) from the Hastings Beds Group of Cuckfield ... were named
-    Cetiosaurus brevis Owen, 1842", and Pelorosaurus conybeari is an objective
-    synonym of 'C.' brevis. The reference work's NHMUK 28626 is the Mantell
-    humerus, not the type series.
-
+  - categories: [holotype]
+    source: taylor2007a
+    verdict: ours-correct
+    note: >
+      "Four proximal caudal vertebrae (BMNH R2544-2547) and three chevrons (BMNH
+      R2548-2550) from the Hastings Beds Group of Cuckfield ... were named
+      Cetiosaurus brevis Owen, 1842", and Pelorosaurus conybeari is an objective
+      synonym of 'C.' brevis. The reference work's NHMUK 28626 is the Mantell
+      humerus, not the type series.
+  - categories: [formation]
+    source: norman2013a
+    verdict: corrected
+    note: >
+      Changed Tunbridge Wells Sand to Grinstead Clay, member Cuckfield Stone --
+      the one entry in this pass where the reference work out-resolves us.
+      norman2013a: the Whiteman's Green (Cuckfield) quarries "exposed Hastings
+      Group Beds of the Grinstead Clay Formation ... upper-middle Valanginian",
+      with the Cuckfield Stone Member named within it; blows1995a, naish2008a and
+      raven2020a agree. Rank is unsettled between authors (norman2010a calls it a
+      Member of the Tunbridge Wells Sand Fm), so our old value was coarser rather
+      than false. Our Hylaeosaurus entry already carried Grinstead Clay from the
+      same quarries.
 Plateosaurus engelhardti:
   - categories: [holotype]
     source: moser2003a
@@ -764,14 +808,28 @@ Sinosaurus triassicus:
     material corrected to match.
 
 Thecodontosaurus antiquus:
-  categories: [holotype]
-  source: galton1985a
-  verdict: ours-correct
-  note: >
-    Both numbers are defensible but ours is the current one: the reference work
-    cites the original holotype, destroyed in 1940, whereas BRSMG C4529/2 is the
-    neotype established by Galton.
-
+  - categories: [holotype]
+    source: galton1985a
+    verdict: ours-correct
+    note: >
+      Both numbers are defensible but ours is the current one: the reference work
+      cites the original holotype, destroyed in 1940, whereas BRSMG C4529/2 is the
+      neotype established by Galton.
+  - categories: [formation]
+    source: galton2007a
+    verdict: corrected
+    note: >
+      Changed Magnesian Conglomerate to Durdham Down fissure fill, on the same
+      evidence as Asylosaurus yalensis and in the same commit -- the two are from
+      one deposit, and galton2007a gives Asylosaurus the horizon "as for types of
+      Thecodontosaurus antiquus". The erecting-era name is rejected by that paper
+      by name: the deposit is "a Triassic (Rheatian [sic]) dolomitized cave
+      breccia or fissure fill (not in Magnesian/ Dolomitic Conglomerate ...) in
+      Lower Carboniferous (Dinantian) marine limestone". foffa2014z corroborates,
+      placing the Durdham Down material in karstic "fissures and cave systems
+      developed in the uplifted and steeply dipping Carboniferous limestones",
+      and notes the exact 1830s quarry cannot now be identified -- which is why
+      the looser locality-level string is preferred over a quarry-exact one.
 Titanosaurus indicus:
   categories: [holotype]
   source: mohabey2013a
@@ -952,14 +1010,26 @@ Bonitasaura salgadoi:
     molina-perez2020a gave the field number HOS 9.
 
 Brasilotitan nemophagus:
-  categories: [holotype]
-  source: machado2013a
-  verdict: ours-correct
-  note: >
-    "Holotype: Right dentary, two cervical vertebrae ... all housed at the Museu
-    de Paleontologia de Marilia (MPM 125R). Casts of the dentary are housed at
-    the Museu Nacional/UFRJ (MN 7371-V)." jones2026b cites the cast.
-
+  - categories: [holotype]
+    source: machado2013a
+    verdict: ours-correct
+    note: >
+      "Holotype: Right dentary, two cervical vertebrae ... all housed at the Museu
+      de Paleontologia de Marilia (MPM 125R). Casts of the dentary are housed at
+      the Museu Nacional/UFRJ (MN 7371-V)." jones2026b cites the cast.
+  - categories: [formation]
+    source: machado2013a
+    verdict: ours-correct
+    note: >
+      A disagreement between nomenclatural schemes rather than about where the
+      bones came from. Fernandes and Coimbra (1996) divide the Bauru Group into
+      Adamantina, Uberaba and Marília; Fernandes (2004) replaces Adamantina with
+      six units including Presidente Prudente. The erecting paper says the
+      holotype was "recovered from a reddish fine-grained sandstone that is part
+      of the Adamantina Formation", and santucci2022a (2022) still writes
+      Adamantina for this taxon, elsewhere giving the pair as "Adamantina
+      Formation (=Presidente Prudente Formation)". Adamantina is also what the
+      other Bauru titanosaurs here carry.
 Brontosaurus excelsus:
   categories: [holotype]
   source: tschopp2015a
@@ -1041,13 +1111,27 @@ Chubutisaurus insignis:
 
 
 Coelophysis bauri:
-  categories: [holotype]
-  source: iczn1996a
-  verdict: ours-correct
-  note: >
-    AMNH 7224 is the neotype fixed by Opinion 1842, already recorded in the
-    genus iczn_rulings. molina-perez2019a's alternatives are referred material.
-
+  - categories: [holotype]
+    source: iczn1996a
+    verdict: ours-correct
+    note: >
+      AMNH 7224 is the neotype fixed by Opinion 1842, already recorded in the
+      genus iczn_rulings. molina-perez2019a's alternatives are referred material.
+  - categories: [formation]
+    source: rinehart2009a
+    verdict: ours-correct
+    note: >
+      The name-bearing type is the neotype AMNH 7224, fixed under plenary power
+      by iczn1996a Opinion 1842, so the type horizon is the Whitaker Quarry
+      horizon at Ghost Ranch. rinehart2009a, the Whitaker Quarry monograph,
+      places it: "The Whitaker quarry lies near the center of the Upper Triassic
+      Rock Point Formation of the Chinle Group". The "Chinle Formation" answer is
+      a rank difference -- Chinle is a Group and Rock Point a Formation to
+      rinehart2009a, while hunt1991a writes "the Rock Point Member of the Chinle
+      Formation" -- so ours is the finer value either way. Do not revert toward
+      the Petrified Forest Formation: that is where Cope's 1881 Baldwin material
+      came from, and the neotype designation is what moved the name to Rock
+      Point.
 Compsognathus longipes:
   categories: [holotype]
   source: ostrom1978a
@@ -1066,13 +1150,23 @@ Daspletosaurus torosus:
     the paratype.
 
 Deltadromeus agilis:
-  categories: [holotype]
-  source: sereno1996a
-  verdict: ours-correct
-  note: >
-    "The holotypic skeleton (SGM-Din 2) is in the collections of the Ministere
-    de l'Energie et des Mines, Rabat, Morocco."
-
+  - categories: [holotype]
+    source: sereno1996a
+    verdict: ours-correct
+    note: >
+      "The holotypic skeleton (SGM-Din 2) is in the collections of the Ministere
+      de l'Energie et des Mines, Rabat, Morocco."
+  - categories: [formation]
+    source: ibrahim2020a
+    verdict: ours-correct
+    note: >
+      ibrahim2020a states it three times, including "discovered weathering from a
+      coarse-grained sandstone in the upper third of the Gara Sbaa Formation",
+      and formally erects the scheme: "recognized here as the Kem Kem Group,
+      which is composed of the lower Gara Sbaa and upper Douira formations". "Kem
+      Kem" is therefore the Group. The Douira assignment in the later literature
+      belongs to the Carcharodontosaurus neotype skull, which is at a different
+      level.
 Dilophosaurus wetherilli:
   categories: [holotype]
   source: marsh2020a
@@ -1165,13 +1259,30 @@ Khaan mckennai:
     100/1002". The reference work cites the referred specimen.
 
 Lepidus praecisio:
-  categories: [holotype]
-  source: nesbitt2015a
-  verdict: ours-correct
-  note: >
-    "Holotype: TMM 41936-1.3 ... Referred material.-TMM 41936-1, fragment of
-    left femoral shaft, TMM 41936-1.1, partial left maxilla."
-
+  - categories: [holotype]
+    source: nesbitt2015a
+    verdict: ours-correct
+    note: >
+      "Holotype: TMM 41936-1.3 ... Referred material.-TMM 41936-1, fragment of
+      left femoral shaft, TMM 41936-1.1, partial left maxilla."
+  - categories: [formation]
+    source: lehman2005z
+    verdict: corrected
+    note: >
+      Changed Colorado City to Cooper Canyon. lehman2005z is the paper
+      nesbitt2015a cites for the mapping of the type beds, and it rejects the
+      rival value by name: "[they] have referred to these strata variously as the
+      Iatan Member or more recently as the Colorado City Member of the Dockum.
+      However, our mapping shows that these strata are actually within the upper
+      part of the Cooper Canyon Formation", with "Otis Chalk ... located in the
+      Cooper Canyon Formation". The apparent support for Colorado City is not
+      independent -- marsh2019a, hunt1998a and baron2018c all descend from Lucas
+      and Anderson (1993), who inferred the unit from the perceived primitiveness
+      of the fauna, which is circular for dating purposes. Martz (2008) and
+      Stocker (2013a) also place Otis Chalk in the Cooper Canyon, differing only
+      on the position within it. The erecting paper deliberately named no
+      formation, so Dockum Group remains the uncontested fallback if the repo
+      prefers not to take sides.
 Lessemsaurus sauropoides:
   categories: [holotype]
   source: bonaparte1999d
@@ -1425,8 +1536,14 @@ Conchoraptor gracilis:
       move when two positions each have literature behind them, as with the
       Shaximiao redating; here it would adopt a 17.6 Myr span that no paper
       asserts, to accommodate a single unsupported source.
-
-
+  - categories: [formation]
+    source: funston2018a
+    verdict: ours-correct
+    note: >
+      funston2018a: "Holotype: MPC-D 100/20 ... Baruungoyot Formation, Hermiin
+      Tsav, Mongolia". "Red Beds of Hermiin Tsav" is an informal locality name
+      for that same type locality, not a rival formation, and "Barun Goyot" is an
+      established spelling variant.
 Cristatusaurus lapparenti:
   categories: [holotype]
   source: taquet1998a
@@ -1483,15 +1600,25 @@ Laplatasaurus araukanicus:
     the museum number that supersedes it.
 
 Magyarosaurus dacus:
-  categories: [holotype]
-  source: diaz2025a
-  verdict: ours-correct
-  note: >
-    The 2025 revision designates a lectotype, "Anterior caudal vertebra (SZTFH
-    Ob.3091, Assemblage A)". Our number matches; MBFSZ and SZTFH are both
-    registered aliases of the same institution. Both reference works cite BMNH
-    material Huene described but which is not the type.
-
+  - categories: [holotype]
+    source: diaz2025a
+    verdict: ours-correct
+    note: >
+      The 2025 revision designates a lectotype, "Anterior caudal vertebra (SZTFH
+      Ob.3091, Assemblage A)". Our number matches; MBFSZ and SZTFH are both
+      registered aliases of the same institution. Both reference works cite BMNH
+      material Huene described but which is not the type.
+  - categories: [formation]
+    source: díaz2025a
+    verdict: ours-correct
+    note: >
+      díaz2025a gives the correct unit and names the source of the wrong one: the
+      type locality "occurs in the lowermost part of the unnamed middle member of
+      the Densuș-Ciula Formation", and "Huene (1932) mistakenly mentioned that
+      SZTFH Ob.3091 came from Sânpetru". The reference works are downstream of
+      Huene. Locality relocated by Botfalvai et al. (2021) from Kadic's
+      rediscovered field map plus REE geochemistry; member populated as the
+      (still formally unnamed) middle member.
 Majungasaurus crenatissimus:
   - categories: [holotype]
     source: iczn2011a
@@ -1519,14 +1646,28 @@ Melanorosaurus readi:
     2024 review treats as the type. NM QR1551 is referred material.
 
 Neuquensaurus australis:
-  categories: [holotype]
-  source: otero2010a
-  verdict: corrected
-  note: >
-    "Holotype: MLP-Ly 1/2/3/4/5/6, caudal vertebrae." Ours held the single
-    string MLP Ly 1-6-V-28-1; expanded to the six caudals. MLP-Ly 17 and
-    MCS-5/28 are referred material described in the same paper.
-
+  - categories: [holotype]
+    source: otero2010a
+    verdict: corrected
+    note: >
+      "Holotype: MLP-Ly 1/2/3/4/5/6, caudal vertebrae." Ours held the single
+      string MLP Ly 1-6-V-28-1; expanded to the six caudals. MLP-Ly 17 and
+      MCS-5/28 are referred material described in the same paper.
+  - categories: [formation]
+    source: otero2010a
+    verdict: corrected
+    note: >
+      Changed Bajo de la Carpa to Anacleto, on a paper the record already cited.
+      otero2010a is the osteology monograph and gives the Anacleto Formation in
+      roughly fifteen figure captions plus the text: the Cinco Saltos material is
+      from the "top of Anacleto Formation, early Campanian". Bajo de la Carpa is
+      downstream of the old undivided Río Colorado Formation -- when that was
+      split, the material went to Anacleto above rather than Bajo de la Carpa
+      below -- and martinelli2004a cites powell1992a for it, which actually wrote
+      Río Colorado. The "Lecho" half of the reference works' value is a cross-row
+      error: Lecho is the Saltasaurus type formation in Salta. Note the holotype
+      provenance is itself referred-material based; Lydekker gave no
+      stratigraphic position.
 Plateosauravus cullingworthi:
   categories: [holotype]
   source: mcphee2015b
@@ -1580,15 +1721,24 @@ Supersaurus vivianae:
     and record the conflict in the record's notes.
 
 Tyrannosaurus rex:
-  categories: [holotype]
-  source: osborn1905a
-  verdict: ours-correct
-  note: >
-    CM 9380 is the current number for the specimen osborn1905a describes as
-    "Amer. Mus. No. 973"; the holotype was sold to the Carnegie Museum in 1941.
-    molina-perez2019a lists seven numbers, of which the rest are referred
-    specimens.
-
+  - categories: [holotype]
+    source: osborn1905a
+    verdict: ours-correct
+    note: >
+      CM 9380 is the current number for the specimen osborn1905a describes as
+      "Amer. Mus. No. 973"; the holotype was sold to the Carnegie Museum in 1941.
+      molina-perez2019a lists seven numbers, of which the rest are referred
+      specimens.
+  - categories: [formation]
+    source: osborn1905a
+    verdict: ours-correct
+    note: >
+      Not a disagreement. "Multiple" is the reference work declining to list a
+      taxon-wide range in a one-line table cell, not a formation name. The two
+      sources answer different questions: location.formation records the type
+      specimen's provenance, and osborn1905a gives AMNH 973 as "from the true
+      Laramie of Hell Creek, Dawson County, Montana", while the reference work is
+      summarising every unit the species has been found in.
 Abrosaurus dongpoi:
   categories: [occurrence]
   source: jones2026b
@@ -1911,13 +2061,21 @@ Jiangxisaurus ganzhouensis:
     normalized to in the same pass.
 
 Kakuru kujani:
-  categories: [holotype]
-  source: molnar1980a
-  verdict: ours-correct
-  note: >
-    "South Australian Museum (SAM) P17926." SAMA is the current code per Sabaj
-    (2026); bare SAM belongs to the South African Museum, a different body.
-
+  - categories: [holotype]
+    source: molnar1980a
+    verdict: ours-correct
+    note: >
+      "South Australian Museum (SAM) P17926." SAMA is the current code per Sabaj
+      (2026); bare SAM belongs to the South African Museum, a different body.
+  - categories: [formation]
+    source: barrett2010z
+    verdict: ours-correct
+    note: >
+      barrett2010z gives the rank history in one sentence: the opal beds are
+      "within the Bulldog Shale (a constituent of the Marree Subgroup, which was
+      formerly called the Marree Formation)". The reference work's "Maree" is
+      therefore the same rock at coarser rank under a superseded rank assignment,
+      and misspelled.
 Kholumolumo ellenbergerorum:
   categories: [holotype]
   source: peyredefabrègues2019a
@@ -1951,13 +2109,27 @@ Mongolostegus exspectabilis:
     keeps it.
 
 Owenodon hoggii:
-  categories: [holotype]
-  source: norman2012a
-  verdict: ours-correct
-  note: >
-    "NHMUK R2998 (the holotype)." Ours carries the PV collection code; see
-    Baryonyx walkeri.
-
+  - categories: [holotype]
+    source: norman2012a
+    verdict: ours-correct
+    note: >
+      "NHMUK R2998 (the holotype)." Ours carries the PV collection code; see
+      Baryonyx walkeri.
+  - categories: [formation]
+    source: clements1993z
+    verdict: corrected
+    note: >
+      Changed Durlston to Lulworth with member Cherty Freshwater. norman2012a
+      gives the formation as Durlston but the horizon as the "Cherty freshwater
+      beds", and clements1993z Table 1 shows those two statements are mutually
+      exclusive: the Cherty Freshwater Member is the topmost member of the
+      Lulworth Formation, the Cinder Member the basal member of the Durlston
+      Formation. The bed-level datum is the more specific claim. galton2009a,
+      which erected the genus, contradicts itself -- Lulworth on p. 92, Durlston
+      on p. 444 -- and naish2008a, paul2008a and mcdonald2012b all give Lulworth.
+      NHMUK R2998 and the Echinodon material came out of the same Beckles
+      workings at Durlston Bay, so holding them in different formations could not
+      have been right whichever way the boundary fell.
 Pelecanimimus polyodon:
   categories: [holotype]
   source: pérez-moreno1994a
@@ -2018,15 +2190,26 @@ Spinops sternbergorum:
     walkeri.
 
 Tazoudasaurus naimi:
-  categories: [holotype]
-  source: allain2004a
-  verdict: corrected
-  note: >
-    "Holotype. To 2000-1, Musée des Sciences de la Terre, Rabat, Morocco." To is
-    the TAZOUDA LOCALITY, not an institution, so it was dropped as an alias; the
-    holder is SGM and the id becomes SGM To 2000-1. jones2026b's CPSGM is the
-    fossil collection within SGM.
-
+  - categories: [holotype]
+    source: allain2004a
+    verdict: corrected
+    note: >
+      "Holotype. To 2000-1, Musée des Sciences de la Terre, Rabat, Morocco." To is
+      the TAZOUDA LOCALITY, not an institution, so it was dropped as an alias; the
+      holder is SGM and the id becomes SGM To 2000-1. jones2026b's CPSGM is the
+      fossil collection within SGM.
+  - categories: [formation]
+    source: montenat2005z
+    verdict: corrected
+    note: >
+      Changed Azilal to Toundoute Continental Series, on the same evidence as
+      Berberosaurus liassicus -- montenat2005z, the paper cited for the Azilal
+      correlation, mentions neither Azilal nor Wazzant anywhere. The erecting
+      paper allain2004a names only the "Toundoute nappe, detrital continental
+      series of the Toarcian". The two holotypes came from bone-beds about 100 m
+      apart at one site, which montenat2005z separates as its informal term F
+      (lower, this taxon) and term G (upper, Berberosaurus), matching our
+      locality A and locality B strings.
 Thyreosaurus atlasicus:
   categories: [holotype]
   source: zafaty2024a
@@ -2112,13 +2295,25 @@ Ligabuesaurus leanzai:
     "the holotype MCF-PVPH-233." jones2026b's MCF-PHV-233 transposes it.
 
 Macrocollum itaquii:
-  categories: [holotype]
-  source: müller2018a
-  verdict: ours-correct
-  note: >
-    CAPPA/UFSM 0001a confirmed; molina-pérez2020a's 0001b is a different
-    specimen of the three-individual assemblage.
-
+  - categories: [holotype]
+    source: müller2018a
+    verdict: ours-correct
+    note: >
+      CAPPA/UFSM 0001a confirmed; molina-pérez2020a's 0001b is a different
+      specimen of the three-individual assemblage.
+  - categories: [formation]
+    source: müller2023a
+    verdict: ours-correct
+    note: >
+      The erecting paper is on the other side, and that does not matter here
+      because the two are the same rocks under different schemes. müller2018a
+      gives "upper portion of the Candelária Sequence" and never says Caturrita;
+      müller himself five years later assigns the taxon explicitly -- "The
+      fossiliferous strata belong to the Caturrita Formation, the upper portion
+      of the Candelária Sequence". Candelária is a sequence, not a formation, so
+      the lithostratigraphic name belongs in a field called `formation`. Note
+      sues2025a prints "the Norian Candelária Formation of Brazil"; no such
+      formation exists.
 Nigersaurus taqueti:
   categories: [holotype]
   source: sereno1999a
@@ -2877,7 +3072,24 @@ Erythrovenator jacuiensis:
       younger -- the site is tentatively assigned to the Riograndia AZ and the
       fauna "seems younger than the Hyperodapedon AZ" -- so Carnian alone was the
       floor of an uncertainty envelope rather than a conclusion.
-
+  - categories: [formation]
+    source: pavanatto2018z
+    verdict: ours-correct
+    note: >
+      Not a co-occurrence artifact in our favour by accident -- the describing
+      paper states the unit twice, once as a formal type horizon: "Type horizon.
+      Santa Maria Supersequence, Candelária Sequence, Paraná Basin." The tally
+      missed it because "Santa Maria" occurs constantly for three unrelated
+      reasons: the city, the institution code (CAPPA/UFSM = Universidade Federal
+      de Santa Maria), and the Supersequence containing the Candelária.
+      pavanatto2018z, which describes the Niemeyer Site itself, closes it at
+      sequence rank by lithology alone and explains why no finer value is
+      available: "no index fossils have been found at the Niemeyer Site
+      precluding a secure assignation of this fauna to any known AZ".
+      Neighbouring sites in the same structural block straddle both assemblage
+      zones. The reference work's "Santa Maria or Caturrita" is the same
+      uncertainty written lithostratigraphically; picking one would fabricate a
+      determination two papers deliberately withheld.
 Amygdalodon patagonicus:
   - categories: [stage]
     source: corpus-paper-count
@@ -3118,7 +3330,16 @@ Rayososaurus agrioensis:
     verdict: ours-correct
     note: >
       Cenomanian stands; the reference work's Aptian belongs to the Rayoso Formation rather than the Candeleros.
-
+  - categories: [formation]
+    source: carballido2010a
+    verdict: ours-correct
+    note: >
+      Settled by a purpose-built relocation study that re-walked the outcrop, cut
+      stratigraphic profiles and matched the matrix still adhering to the
+      holotype bones: "This allows us to rule out for a start the Rayoso
+      Formation as the possible unit of origin of the holotype ... the
+      bone-bearing level corresponds to the upper section of the Candeleros
+      Formation". The reference works are downstream of Bonaparte 1996.
 Guaibasaurus candelariensis:
   - categories: [stage]
     source: langer2018z
@@ -3139,7 +3360,18 @@ Tehuelchesaurus benitezii:
       Formation at 157.449 +/- 0.056 Ma and states that the unit, "once considered
       to be early Cretaceous in age, is now entirely constrained to the Late
       Jurassic". The reference work's Toarcian is far outside that.
-
+  - categories: [formation]
+    source: carballido2011a
+    verdict: ours-correct
+    note: >
+      The redescription of the type says so directly. carballido2011a: the taxon
+      "was described by Rich et al. (1999) based on a partially articulated
+      skeleton, allegedly found in the Middle Jurassic Cañadón Asfalto Formation
+      ... Thus, the type of Tehuelchesaurus comes from the Cañadón Calcáreo
+      Formation sensu Proserpio (1987)", and devotes its Geological Context
+      section to the re-assignment. rauhut2005b independently records the same
+      correction. jones2026b follows the superseded erecting paper and carries
+      its superseded age with it.
 Venenosaurus dicrocei:
   - categories: [stage]
     source: corpus-review
@@ -3159,7 +3391,20 @@ Dreadnoughtus schrani:
       Mata Amarilla Formation, which varela2012z dates at 96.23 +/- 0.71 Ma; the
       two units were both once called the Pari Aike Formation, which is the source
       of the confusion.
-
+  - categories: [formation]
+    source: novas2019a
+    verdict: ours-correct
+    note: >
+      One question with Orkoraptor burkei and Talenkauen santacrucensis -- all
+      three come from the same outcrop around Cerro Los Hornos. The reference
+      works are frozen on a 2012-2013 interlude: varela2012z dated beds near Tres
+      Lagos at 96.2 Ma and called them Mata Amarilla, and Novas and others
+      adopted that in 2013. sickmann2018z overturned it with 13 detrital-zircon
+      maximum depositional ages, all Campanian or younger, noting its Cerro
+      Fortaleza delineation "includes rocks that have sometimes been named Mata
+      Amarilla Formation". novas2019a then places Talenkauen, Orkoraptor,
+      Puertasaurus and Dreadnoughtus in the Cerro Fortaleza beds himself,
+      reserving Mata Amarilla for the Cenomanian beds near the Sheuen River.
 Orkoraptor burkei:
   - categories: [stage]
     source: sickmann2018z
@@ -3171,7 +3416,15 @@ Orkoraptor burkei:
       Mata Amarilla Formation, which varela2012z dates at 96.23 +/- 0.71 Ma; the
       two units were both once called the Pari Aike Formation, which is the source
       of the confusion.
-
+  - categories: [formation]
+    source: novas2019a
+    verdict: ours-correct
+    note: >
+      Shares its reasoning with Dreadnoughtus schrani and Talenkauen
+      santacrucensis. egerton2013a interprets the "Pari Aike Formation" of the
+      erecting paper as the Cerro Fortaleza Formation; aranciagarolando2022a and
+      novas2019a both use Cerro Fortaleza for this taxon specifically. The age
+      remains contested even though the formation is not.
 Puertasaurus reuili:
   - categories: [stage]
     source: sickmann2018z
@@ -3183,7 +3436,19 @@ Puertasaurus reuili:
       Mata Amarilla Formation, which varela2012z dates at 96.23 +/- 0.71 Ma; the
       two units were both once called the Pari Aike Formation, which is the source
       of the confusion.
-
+  - categories: [formation]
+    source: novas2019a
+    verdict: ours-correct
+    note: >
+      "Pari Aike" was abandoned and its outcrops partitioned, which is where the
+      Mata Amarilla answer comes from -- but the Cerro Los Hornos beds went to
+      the Cerro Fortaleza. egerton2013a lists Puertasaurus among the taxa from
+      beds "which we interpret as the Cerro Fortaleza Formation", and novas2019a
+      places Talenkauen, Orkoraptor, Puertasaurus and Dreadnoughtus in the Cerro
+      Fortaleza beds at that site. The reference works applied the right split to
+      the wrong taxon: novas2013a moved Orkoraptor to the Mata Amarilla, not this
+      one. jones2026b also pairs Mata Amarilla with a Cenomanian age, a further
+      15 Myr from the Campanian-Maastrichtian everyone else gives.
 Talenkauen santacrucensis:
   - categories: [stage]
     source: sickmann2018z
@@ -3195,7 +3460,13 @@ Talenkauen santacrucensis:
       Mata Amarilla Formation, which varela2012z dates at 96.23 +/- 0.71 Ma; the
       two units were both once called the Pari Aike Formation, which is the source
       of the confusion.
-
+  - categories: [formation]
+    source: novas2019a
+    verdict: ours-correct
+    note: >
+      Shares its reasoning with Dreadnoughtus schrani and Orkoraptor burkei; see
+      that entry for the Mata Amarilla history. bandeira2024a and novas2019a both
+      give Cerro Fortaleza for this taxon.
 Irisosaurus yimenensis:
   - categories: [stage]
     source: huang2005z
@@ -3212,7 +3483,25 @@ Lingyuanosaurus sihedangensis:
     note: >
       Aptian stands. he2004z dates the Jiufotang Formation at 120.3 +/- 0.7 Ma:
       "This result confirms an Aptian age for the Jiufotang Formation".
-
+  - categories: [formation]
+    source: yao2019a
+    verdict: corrected
+    note: >
+      Changed Jiufotang to Jehol Group; neither side of the finding was
+      supportable. The describing paper declines the question in as many words:
+      "Horizon and Locality: Jehol Group, Lower Cretaceous. Sihedang Locality ...
+      The fossil-bearing strata at Sihedang have been assigned to the Yixian
+      Formation in some studies, but to the Jiufotang Formation in others.
+      Resolving this stratigraphic issue is beyond the scope of the present
+      paper." It is still open in 2026, with zhou2026a listing five papers per
+      side, and neither side ever argued the case -- the founding claims
+      (wang2012z for Jiufotang, zhou2014z for Yixian) both simply assert a
+      formation in a locality line, and zhou2014z's supporting citation is a
+      dating paper that never mentions Sihedang. Note the Jiufotang claim was
+      published first and was never rebutted, so a count over this literature
+      measures publication volume rather than evidence. Our own description field
+      already said the formation is unknown, so the old value contradicted the
+      record.
 Zhongjianosaurus yangi:
   - categories: [stage]
     source: he2004z
@@ -3220,7 +3509,21 @@ Zhongjianosaurus yangi:
     note: >
       Aptian stands, on the same Jiufotang date as Lingyuanosaurus
       sihedangensis.
-
+  - categories: [formation]
+    source: yao2019a
+    verdict: corrected
+    note: >
+      Changed Jiufotang to Jehol Group, matching Lingyuanosaurus sihedangensis.
+      Nothing places this taxon in the Jiufotang, so the old value was unsourced;
+      but the describing paper does not support a flat Yixian either, hedging
+      three times -- "Possibly Yixian Formation" in the horizon line, and "this
+      assignment needs confirmation by additional stratigraphical,
+      paleontological, and chronological data". Both taxa come from the Sihedang
+      locality on identical coordinates, so recording one at formation rank and
+      the other at group rank would assert a stratigraphic difference between two
+      specimens from one outcrop that nobody has claimed. Group rank is the
+      finest unit the two readings share. The age carries the same uncertainty,
+      the Jiufotang overlying the Yixian.
 Tachiraptor admirabilis:
   - categories: [stage]
     source: corpus-review
@@ -3252,7 +3555,13 @@ Anoplosaurus curtonotus:
     note: >
       No disagreement exists. The finding is doubly stale: it reports a YAML value
       we no longer hold, and weishampel2004a in fact agrees with our Albian.
-
+  - categories: [formation]
+    source: seeley1879a
+    verdict: ours-correct
+    note: >
+      Orthography, not a dispute. The erecting paper writes "Cambridge Greensand"
+      closed and never "Green Sand"; pereda-suberbiola1999a and barrett2020a do
+      the same across 65 occurrences. Pair added to formation-variants.yml.
 Losillasaurus giganteus:
   - categories: [stage]
     source: campos-soto2019z
@@ -3261,7 +3570,21 @@ Losillasaurus giganteus:
       Kimmeridgian-Tithonian stands. campos-soto2019z: "a Kimmeridgian age has
       been demonstrated recently at least locally", correlated with "other
       Kimmeridgian-Tithonian dinosaur-bearing deposits of Iberia".
-
+  - categories: [formation]
+    source: royo-torres2020a
+    verdict: ours-correct
+    note: >
+      A stale-reference-work artifact rather than a disagreement. weishampel2004a
+      printed "Unnamed unit" because in 2004 nobody had assigned the site:
+      casanovas2001a gives only "Levels of micaceous arenite". Royo-Torres and
+      others made the assignment in 2006, two years after that work went to
+      press, and the taxon's own 2020 redescription places it "in the same
+      geological unit as Turiasaurus". campos-soto2019z, the dedicated
+      stratigraphic revision, puts the Losilla-Alpuente sites in the Villar del
+      Arzobispo and dates it Kimmeridgian-Tithonian, matching our stages. The
+      2026 reference work agrees with us. Caution: the reference work lists a
+      second, Portuguese unit for this taxon because it folds in referred
+      material; the type locality is Spanish.
 Phuwiangosaurus sirindhornae:
   - categories: [stage]
     source: tucker2022z
@@ -3414,7 +3737,23 @@ Aerosteon riocoloradensis:
     verdict: ours-correct
     note: >
       Campanian stands.
-
+  - categories: [formation]
+    source: agnolín2025a
+    verdict: ours-correct
+    note: >
+      A real dispute, not a bookkeeping one, and the count is a citation cascade
+      off the erecting paper. porfiri2018a sets it out without resolving it:
+      Aerosteon comes "from either the upper Coniacian-lowermost Santonian
+      Plottier Formation ... or the lower Campanian Anacleto Formation". What
+      settles it is who reverted: the Plottier reading originates with Novas's
+      group, and that group has since published Anacleto twice, in
+      aranciagarolando2022a and in agnolín2025a, whose whole subject is a new
+      Anacleto locality yielding this taxon. Note the erecting paper is
+      internally inconsistent -- sereno2008b gives Anacleto but a Santonian age,
+      while its own cited source makes the Anacleto early Campanian. The stage
+      was the error; later workers moved the formation instead. novas2013a should
+      not be cited for either value: it prints "the Santonian Cañadón Amarillo
+      Formation", which is a locality promoted to a unit.
 Jeholornis prima:
   - categories: [stage]
     source: corpus-review
@@ -3437,7 +3776,18 @@ Nanshiungosaurus brevispinus:
     note: >
       Maastrichtian stands. The apparent disagreement is a species mix-up in the
       reference work rather than a claim about this horizon.
-
+  - categories: [formation]
+    source: dong1979a
+    verdict: corrected-source
+    note: >
+      A species conflation rather than a stratigraphic disagreement, so the rival
+      value carries no weight. dong1979a gives the holotype IVPP V4731 as "Upper
+      Cretaceous Nanxiong Fm. at the village of Dapingcun", Guangdong. The
+      Zhonggou Formation is the unit of "Nanshiungosaurus" bohlini, a different
+      animal from Mazongshan in northernmost Gansu, some 2,000 km away and Early
+      Cretaceous, whose generic referral has since been rejected. jones2026c has
+      printed the junior species' formation and its Albian age against the type
+      species.
 Alaskacephale gangloffi:
   - categories: [stage]
     source: corpus-review
@@ -3557,12 +3907,27 @@ Micropachycephalosaurus hongtuyanensis:
     verdict: corrected
     note: >
       Corrected to Campanian. Our Coniacian-Santonian is not supported; the
-      Jiangjunding horizon is Campanian under either stratigraphic scheme -- early
-      to middle if Jiangjunding sits below the Hongtuya per Hu et al. (2001), late
-      if xu2019z is right to fold it into the Hongtuya. The formation name stays
-      as ours; which scheme is current is unsettled but does not change the
-      stage.
-
+      horizon is Campanian under either stratigraphic scheme -- early to middle
+      if Jiangjunding sits below the Hongtuya per Hu et al. (2001), late if
+      xu2019z is right to fold it into the Hongtuya. The stage survives the
+      later demotion of the formation field to Wangshi Group: butler2009b and
+      sullivan2006a both give Campanian at group rank, so the age does not
+      depend on resolving the subdivision.
+  - categories: [formation]
+    source: buffetaut1995z
+    verdict: corrected
+    note: >
+      Changed Jiangjunding to Wangshi Group -- a sourced stop at group rank
+      rather than an unresolved gap. buffetaut1995z, the paper butler2009b cites
+      for this taxon's horizon, states that "dinosaur remains occur at several
+      distinct levels in the Wangshi Group" with this species named among them,
+      and that "its exact position within the Late Cretaceous is uncertain". It
+      also shows why a finer value is unsafe: the group's own subdivision schemes
+      disagree, one placing all dinosaur remains in a third member across an 800
+      m spread. The describing paper gives a section at Hongtuya, the eponym of
+      the Hongtuya Formation, which zhang2019a equates with the Jingangkou -- the
+      unit ABOVE the Jiangjunding -- so the one positional hint available points
+      away from our old value.
 Shaochilong maortuensis:
   - categories: [stage]
     source: hao2025a
@@ -3576,7 +3941,14 @@ Shaochilong maortuensis:
       and older, than the Aptian-Albian age based on dinosaur evidence." Our
       Aptian-Albian rested on the dinosaur evidence it supersedes, and the
       reference work's Turonian collapses on brusatte2009a's locality reasoning.
-
+  - categories: [formation]
+    source: hao2025a
+    verdict: ours-correct
+    note: >
+      Same locality, paper and quotation as Gobisaurus domoculus: hao2025a names
+      brusatte2009a's "Ulansuhai" among the mistaken assignments it corrects, and
+      gives "Locality and horizon. Maortu locality ... Miaogou Formation
+      (Aptian-Albian)".
 Harpymimus okladnikovi:
   - categories: [stage]
     source: chinzorig2025a
@@ -3599,7 +3971,15 @@ Pendraig milnerae:
     verdict: corrected
     note: >
       Widened to Norian-Rhaetian from Carnian.
-
+  - categories: [formation]
+    source: spiekman2021a
+    verdict: ours-correct
+    note: >
+      Not a formation finding: "Wales" is a country. spiekman2021a gives "Fissure
+      fills of Pant-y-ffynnon Quarry, southern Wales" -- karstic fills in
+      Carboniferous Limestone, not a mapped formation. The South Wales fissure
+      fills have no formation name in any paper. Same situation as Pantydraco
+      caducus, and the two carry the same string.
 Heyuannia huangi:
   - categories: [stage]
     source: lü2002a
@@ -3635,7 +4015,19 @@ Iguanodon bernissartensis:
     note: >
       Barremian-Aptian stands; the recorded conflict is spurious, the cited
       sources agreeing with us in their own species tables.
-
+  - categories: [formation]
+    source: norman2012a
+    verdict: ours-correct
+    note: >
+      No rival claim exists. jones2026a's "Numerous localities across Europe" is
+      a distribution string in an occurrence column, not a unit, and
+      weishampel2004a lists the species under many English localities because it
+      is cataloguing the genus. The type material comes from the Sainte-Barbe
+      shaft of the Bernissart colliery -- boulenger1881a: "It was at the
+      Sainte-Barbe shaft of the Bernissart coalmine ... that M. Latinis ...
+      ascertained the existence of numerous bones" -- and norman2012a gives the
+      unit: "The Belgian locality at Bernissart, assigned to the Sainte-Barbe
+      Clays Formation".
 Quilmesaurus curriei:
   - categories: [stage]
     source: corpus-review
@@ -3656,7 +4048,20 @@ Volkheimeria chubutensis:
     verdict: corrected
     note: >
       Corrected to Aalenian, on the same Canadon Asfalto horizon as Piatnitzkysaurus floresi.
-
+  - categories: [formation]
+    source: pol2022a
+    verdict: ours-correct
+    note: >
+      A typo, not a stratigraphic claim. "Cañodon Asfalto" appears in
+      mcintosh1990a's occurrence table in the first edition of The Dinosauria and
+      was carried into the second as weishampel2004a -- the same misspelling in
+      the same table cell, not an independent assertion. Every technical source
+      spells it correctly: pol2022a "Volkheimeria chubutensis was found in the
+      Cañadón Asfalto Formation", and holwerda2018a, rincón2022a and rauhut2009z
+      likewise. The erecting paper bonaparte1979a names no formation at all.
+      Member left empty: cúneo2013z records a Las Chacritas member and the
+      sauropod beds are in the lower lacustrine part, but no source assigns this
+      taxon to a named member, and rauhut2005b uses Las Chacritas as a locality.
 Falcarius utahensis:
   - categories: [stage]
     source: joeckel2019z
@@ -3854,3 +4259,993 @@ Sinocephale bexelli:
     verdict: corrected
     note: >
       Corrected to Turonian-Santonian from Campanian-Maastrichtian; lower Ulansuhai Formation.
+
+Adratiklit boulahfa:
+  categories: [formation]
+  source: maidment2021a
+  verdict: ours-correct
+  note: >
+    maidment2021a is a signed self-correction by the erecting authors at the
+    same site: "Maidment et al. reported the horizon as lying in the El Mers II
+    Formation, but subsequent field observations at the site suggest that it
+    may lie slightly higher in the stratigraphy", under a heading reading "El
+    Mers III Formation ... Boulahfa". zafaty2024a and maidment2025b follow it;
+    jones2026a is downstream of the uncorrected 2020 wording.
+
+Altispinax dunkeri:
+  categories: [formation]
+  source: carrano2012a
+  verdict: ours-correct
+  note: >
+    carrano2012a puts NHMUK R1828 "from the Hastings Beds Group (late
+    Berriasian-Valanginian) of Battle, England", and Battle sits in the
+    Wadhurst Clay outcrop. "Hastings" is the Group that contains the Wadhurst
+    Clay Formation, so this is a rank difference, not a rival claim.
+
+Amurosaurus riabinini:
+  categories: [formation]
+  source: xing2022a
+  verdict: ours-correct
+  note: >
+    xing2022a gives the type locality as the "Blagoveschensk outcrop of the
+    Udurchukan Formation". "Tsagaan/Tsagayan" is the Series the Udurchukan sits
+    in; "Yuliangze" is the Chinese-side correlative that holds referred
+    material only, and becomes relevant solely through the Sahaliyania
+    synonymy. The Udurchurkan spelling is already a known variant.
+
+Arenysaurus ardevoli:
+  categories: [formation]
+  source: prieto-márquez2021a
+  verdict: ours-correct
+  note: >
+    prieto-márquez2021a places the type site in "the Blasi 3.4 locality of the
+    upper Maastrichtian La Posa Formation". jones2026a is off by one unit
+    upward: in the Tremp Group scheme the basal grey unit is the La Posa Fm and
+    the overlying lower red unit is the Conques Fm, whose localities (Basturs
+    Poble, Orcau-1) are different sites. The erecting paper's "lower part of
+    the Tremp Formation" is the same horizon undivided.
+
+Genusaurus sisteronis:
+  categories: [formation]
+  source: accarie1995a
+  verdict: ours-correct
+  note: >
+    Not a formation dispute: Bevons is a commune. accarie1995a uses it
+    throughout as a place name ("4.25 km SW of the village of Sisteron", "the
+    Bevons site") and gives a lithological description -- "greenish clays and
+    glauconitic sands" -- rather than a formal unit, which is why the reference
+    works fell back on the locality. Those are the Aptian-Albian basinal marls
+    of the Vocontian Basin, the Marnes Bleues.
+
+Gobisaurus domoculus:
+  categories: [formation]
+  source: hao2025a
+  verdict: ours-correct
+  note: >
+    hao2025a names the reference work's value as one of the errors it is
+    correcting: the Maortu unit "actually belongs to the Miaogou Formation,
+    which incorporated the formerly abandoned Dashuigou Formation and
+    Wulanhushao Formation". It also shows the real Ulansuhai Fm crops out at
+    Bayan Mandahu and Suhongtu, tens of km north, so applying it at Maortu is a
+    geographic error and not a naming preference.
+
+Heterodontosaurus tucki:
+  categories: [formation]
+  source: norman2011a
+  verdict: ours-correct
+  note: >
+    Holotype-versus-hypodigm conflation. norman2011a gives the holotype
+    SAM-PK-K337 as "Clarens Formation (formerly 'Cave Sandstone', Stormberg
+    Series)" and places the referred SAM-PK-K1332 in the upper Elliot Fm,
+    "stratigraphically lower than the horizon at which the holotype was found".
+    The species is genuinely known from both units; location.formation tracks
+    the type.
+
+Huanansaurus ganzhouensis:
+  categories: [formation]
+  source: lü2015b
+  verdict: corrected
+  note: >
+    Changed Hekou to Nanxiong. lü2015b: "Type locality and horizon. In the
+    vicinity of the Ganzhou Railway Station ...; Nanxiong Formation (Upper
+    Cretaceous)". Nothing in the literature assigns any Ganzhou oviraptorid to
+    the Hekou Fm, and our own description field already said Nanxiong, so the
+    record contradicted itself. The Guifeng Group revision is real but nobody
+    has published which of its formations the Ganzhou-city quarries sit in.
+
+Jaxartosaurus aralensis:
+  categories: [formation]
+  source: godefroit2003a
+  verdict: corrected
+  note: >
+    Changed Dabrazhin to Syuksyuk. Two defects: the string names no real unit
+    -- "Dabrazhin" occurs in no paper, and the Kazakh unit is the Darbazin Fm
+    (Darbazinskaya Svita) -- and Darbazin is the wrong unit for this taxon in
+    any case. godefroit2003a: "Jaxartosaurus aralensis, from the Syuksyuk
+    Formation of Kazakhstan (Santonian)"; nessov1995a puts Kyrkkuduk I in the
+    Syuk-Syuk Fm, Santonian, matching the age we hold. Only the adjacent
+    Kyrkkuduk II site is lower Darbazin.
+
+Kulindadromeus zabaikalicus:
+  categories: [formation]
+  source: godefroit2014a
+  verdict: ours-correct
+  note: >
+    The erecting paper gives "the base of the Ukureyskaya Formation".
+    Ukureyskaya is the Russian adjectival form and the reference work has
+    stripped the ending, exactly as Baruungoyot/Barun Goyot and
+    Udurchukan/Udurchurkan already do. Pair added to formation-variants.yml.
+
+Paludititan nalatzensis:
+  categories: [formation]
+  source: díaz2025a
+  verdict: corrected
+  note: >
+    Changed Râul Mare to Sânpetru, keeping Râul Mare Beds as the member.
+    díaz2025a: the locality "belongs to the 'Râul Mare Beds', a not yet
+    formally defined lithostratigraphical unit that either represents the
+    uppermost part of the Sînpetru Formation ... or is a distinct unit".
+    csiki2010a gives "Type horizon and locality: Sânpetru Formation,
+    Nălaţ-Vad". Râul Mare is also the river the outcrop sits beside, which is
+    the likely route into the formation field.
+
+Protohadros byrdi:
+  categories: [formation]
+  source: tykoski2023a
+  verdict: ours-correct
+  note: >
+    Denne et al. (2016) raised the Woodbine to Group and the Lewisville to
+    Formation, with the erecting paper's Arlington now a member inside it.
+    tykoski2023a: "The Lewisville Formation is the upper formation of the
+    Woodbine Group following recent revision ... which we follow here", and
+    counts Protohadros as a Lewisville taxon. weishampel2004a's "Woodbine" is
+    the pre-2016 rank. Member populated as Arlington from head1998a.
+
+Pycnonemosaurus nevesi:
+  categories: [formation]
+  source: delcourt2017z
+  verdict: corrected
+  note: >
+    Both candidate values were wrong. delcourt2017z, the only full
+    redescription of the holotype: "according to Kellner & Campos (2002), this
+    locality is in the Bauru Group. However, recent work has shown that this
+    locality is actually part of the Parecis Group". That removes Adamantina (a
+    Bauru Group formation of the Paraná Basin) and our Cachoeira do Bom Jardim
+    (a Bauru Group formation of Mato Grosso) together. Delcourt names no
+    formation within the Parecis Group, so group rank is the honest value.
+
+Rebbachisaurus garasbae:
+  categories: [formation]
+  source: wilson2015a
+  verdict: ours-correct
+  note: >
+    The type locality of the formation itself -- epithet, butte and formation
+    share the name. wilson2015a places the quarry "in the lower third of the
+    height" of Gara Sbaa, i.e. the lower (Gara Sbaa) formation of the Kem Kem
+    Group rather than the upper (Douira). "Kem Kem" is the Group. wilson2015a
+    also records that the provenance "has been listed erroneously as 'Tegama
+    Formation'" by weishampel2004a.
+
+Sauroniops pachytholus:
+  categories: [formation]
+  source: cau2013a
+  verdict: ours-correct
+  note: >
+    cau2013a: "Type horizon and locality. Ifezouane Formation (Cenomanian,
+    Upper Cretaceous; Cavin et al., 2010). Southeast region of Taouz". "Kem
+    Kem" is the Group. Note that Ifezouane (Cavin et al. 2010) and Gara Sbaa
+    (Ibrahim et al. 2020) are competing names for the same lower Kem Kem unit
+    and the repo currently uses both; choosing one scheme is held as a separate
+    question.
+
+Struthiosaurus austriacus:
+  categories: [formation]
+  source: csiki-sava2015a
+  verdict: ours-correct
+  note: >
+    bunzel1870a's "Gosau formation" is pre-modern usage; in current Austrian
+    lithostratigraphy the Gosau is a Group. csiki-sava2015a places the Grünbach
+    coal measures "within the Grünbach Formation of the Lower Gosau Subgroup",
+    and czepiński2025a ties the same Bunzel assemblage to "the Grünbach
+    Formation, Muthmannsdorf (Austria)".
+
+Tambatitanis amicitiae:
+  categories: [formation]
+  source: tanaka2024a
+  verdict: ours-correct
+  note: >
+    Ohyamashimo is the modern name for the erecting paper's provisional
+    "'Lower' Formation" -- saegusa2014a's own scare quotes mark a unit awaiting
+    a name. tanaka2024a: "The Sasayama Group, comprising the Ohyamashimo and
+    Sawada formations in ascending order", with Kamitaki as the Tambatitanis
+    locality; kubota2024a calls the Ohyamashimo "the lower unit of the Sasayama
+    Group". "Sasayama" is the Group.
+
+Tongtianlong limosus:
+  categories: [formation]
+  source: lü2016a
+  verdict: corrected
+  note: >
+    Changed Hekou to Nanxiong, identically to Huanansaurus ganzhouensis.
+    lü2016a: "Type locality and horizon. The building site of the No. 3 high
+    school of Ganxian ...; Nanxiong Formation (Maastrichtian, Upper
+    Cretaceous)". Whether the Ganzhou Basin taxa should move to the Guifeng
+    Group scheme is one question for all of them, not eight separate ones, and
+    is not settled here.
+
+Tugulusaurus faciles:
+  categories: [formation]
+  source: rauhut2005c
+  verdict: ours-correct
+  note: >
+    The Lianmuqin is the uppermost formation of the Tugulu Group, so "Tugulu"
+    is a rank difference. The dedicated redescription gives it explicitly:
+    "Locality and Horizon -- Wuerho, Lianmugin [Lianmuqin] Formation, Xinjiang,
+    China". The erecting paper named no formation at all, only field numbers.
+
+Valdoraptor oweni:
+  categories: [formation]
+  source: carrano2012a
+  verdict: ours-correct
+  note: >
+    "Hasting[s]" is the Group, and misspelled. carrano2012a: NHMUK R2559 is
+    "from the Tunbridge Wells Sand Formation (Valanginian) of Cuckfield,
+    Sussex". The type provenance is genuinely weak -- owen1858a records only
+    "the Wealden matrix" and lydekker1889a's only stratigraphic remark is the
+    negative one that the Wadhurst Clay metatarsals are "specifically distinct"
+    from the type -- so carrano2012a's Cuckfield attribution is itself an
+    inference, and the finer Grinstead Clay assignment that Cuckfield would
+    imply is not carried here.
+
+Xuanhuaceratops niei:
+  categories: [formation]
+  source: zhao2006a
+  verdict: corrected
+  note: >
+    Changed Tuchengzi to Houcheng. The two are the same unit under provincial
+    names, and the type locality is Yanjiagou in Hebei, where Houcheng applies.
+    zhao2006a: "Horizon and Locality: Houcheng Formation ... Xuanhua Area,
+    Hebei Province", adding that it "is generally considered to be Late
+    Jurassic in age and laterally equivalent to the Tuchengzi Formation";
+    zhou2017z writes "The Tuchengzi Formation (called Houcheng Formation in
+    Hebei Province)". Not a spelling variant -- laterally equivalent strata
+    under two valid regional names.
+
+Zby atlanticus:
+  categories: [formation]
+  source: mateus2014a
+  verdict: corrected
+  note: >
+    Changed Praia da Amoreira-Porto Novo to Lourinhã with member Amoreira-Porto
+    Novo: a member had been recorded in the formation field. mateus2014a uses
+    both ranks in one sentence -- "top of the Amoreira-Porto Novo Member of the
+    Lourinhã Formation, late Kimmeridgian". Torvosaurus already carries this
+    pair correctly and sets the spelling.
+
+Berberosaurus liassicus:
+  categories: [formation]
+  source: montenat2005z
+  verdict: corrected
+  note: >
+    Changed Azilal to Toundoute Continental Series. The Azilal assignment rests
+    on one sentence in allain2008a -- "It is very likely that the Toundoute
+    continental series ... is a lateral equivalent of the Toarcian Azilal and
+    Wazzant formations (Montenat et al. 2005)" -- and montenat2005z says no
+    such thing: the words Azilal and Wazzant appear nowhere in it, in either
+    the French original or the translation. The correlation is Allain and
+    Aquesbi's own inference, printed with a query mark in their own chart, and
+    holwerda2018a and rincón2022a repeat it as though it were an assignment.
+    montenat2005z divides the succession into "eight informal
+    lithostratigraphic units, designated A to H" and erects no formation, so
+    Toundoute Continental Series is the finest available value. Geography
+    agrees: Azilal is defined in the central High Atlas ~150 km away across the
+    range from Toundoute.
+
+Echinodon becklesii:
+  categories: [formation]
+  source: clements1993z
+  verdict: ours-correct
+  note: >
+    Formation confirmed and member populated. clements1993z is the Purbeck
+    type-section paper, and its Table 1 settles the rank question directly: the
+    Cherty Freshwater Member is the topmost member of the Lulworth Formation
+    and the Cinder Member the basal member of the Durlston Formation.
+    galton1978a places the material in the Dirt Bed (Mammal Bed), which
+    clements1993z numbers DB83, twenty-eight beds below the Cinder Member at
+    DB111. "Middle Purbeck" was never a rival value -- weishampel2004a itself
+    defines it as straddling the two formations, so it cannot decide the
+    question.
+
+Irritator challengeri:
+  categories: [formation]
+  source: delcourt2025a
+  verdict: ours-correct
+  note: >
+    A rank change, not a disagreement about the rock. The Santana Formation was
+    raised to the Santana Group (Crato, Ipubi and Romualdo formations), so
+    martill1996a's "Romualdo Member of the Santana Formation" and the current
+    "Romualdo Formation of the Santana Group" name the same body. Every source
+    writing Santana writes Romualdo in the same breath, so the count was
+    counting one unit twice. Current usage is uniformly Romualdo Formation.
+
+Lingwulong shenqi:
+  categories: [formation]
+  source: ren2023a
+  verdict: ours-correct
+  note: >
+    Zhiluo retained, with lowered confidence. The reassignment from Yan'an
+    traces to a single Chinese-language regional-geology paper (You, Li and Li
+    2019) that is not held. Four later sauropod papers adopt it -- ren2023a:
+    "the bone-bearing stratigraphic unit is revised from Yan'an Formation to
+    Zhiluo Formation" -- but that is a citation cascade off one determination
+    rather than four determinations, and mannion2025a, the 2025 diplodocoid
+    revision, declines to choose. jones2026b prints Yanan in its table while
+    its own body text concedes the Zhiluo revision. Zhiluo is what every worker
+    who has committed since 2019 has committed to. Revisit with the stage field
+    if the source surfaces: Yan'an is Toarcian-Bajocian, Zhiluo
+    Bathonian-Callovian.
+
+Lirainosaurus astibiae:
+  categories: [formation]
+  source: carrano2008a
+  verdict: ours-correct
+  note: >
+    The rival value is a clerical error rather than a stratigraphic opinion.
+    The Marnes Rouges Inférieures Formation is French -- the stratum typicum of
+    Ampelosaurus atacis at Campagne-sur-Aude, Aude -- and jones2026b's own
+    Ampelosaurus row lists it under France while its Lirainosaurus row lists it
+    under Spain: two adjacent rows of one table crossed. Ours is thinly sourced
+    in absolute terms, though: sanz1999a names no unit for the Laño quarry, the
+    Díez Díaz papers work at locality level, and carrano2008a is the only
+    in-corpus attestation tying Laño material to the Vitoria Formation.
+
+Nipponosaurus sachalinensis:
+  categories: [formation]
+  source: suzuki2004a
+  verdict: ours-correct
+  note: >
+    The rival value is self-refuting on its own citation: weishampel2004a gives
+    Ryugase Group citing Suzuki and others 2004, and that paper says "Upper
+    Ammonites Bed; now Upper Yezo Group". takasaki2017a agrees. Those two are
+    the only papers to have re-examined the holotype. Group rank is deliberate
+    and will not sharpen: the Kawakami colliery has been inaccessible since
+    1945 and suzuki2004a records that the excavation field notes are lost.
+
+Argentinosaurus huinculensis:
+  - categories: [formation]
+    source: bonaparte1993a
+    verdict: ours-correct
+    note: >
+      A rank elevation, not a disagreement. bonaparte1993a says "Río Limay
+      Formation, Huincul Member" throughout; modern Neuquén Basin usage raises
+      Río Limay to Subgroup and Huincul to Formation, which every modern paper
+      here follows. weishampel2004a, the only dissenting source, prints the
+      containment in the same line -- "Río Limay Formation ... includes
+      Candeleros, Huincul, and Cerro Lisandro formations" -- so it names ours as
+      a contained unit rather than a rival.
+Cetiosaurus oxoniensis:
+  - categories: [formation]
+    source: upchurch2003a
+    verdict: corrected
+    note: >
+      Changed Rutland to Forest Marble. The record paired the referred Rutland
+      skeleton's unit with the lectotype's locality. upchurch2003a gives the type
+      horizon under its own heading: the Bletchingdon Station specimens "are
+      often stated as being found in the Great Oolite ... Phillips (1871:247-248)
+      noted, however, that the Cetiosaurus bones were actually found in the
+      Forest Marble (Bathonian) sediments immediately above the Great Oolite".
+      phillips1871a records the measured section from the quarry itself, with the
+      bones lying on the bared oolite surface under the Forest Marble, and
+      upchurch2009a -- the ICZN application granted as Opinion 2331 -- repeats
+      it. LCM G468.1968, the Rutland specimen, is from Great Casterton some 200
+      km away and is Bajocian; the record already carries it separately as a
+      notable specimen.
+Dinodocus mackesoni:
+  - categories: [formation]
+    source: woodward1908a
+    verdict: ours-correct
+    note: >
+      Every technical source is on one side. woodward1908a, the only paper to
+      re-examine the material, is titled "Note on Dinodocus Mackesoni, a
+      Cetiosaurian from the Lower Greensand of Kent" and captions the humerus
+      "from the Lower Greensand, near Hythe, Kent". owen1884a's own index reads
+      "from a 'Greensand' formation at Hythe", and upchurch2004a agrees.
+      jones2026b's Atherfield Clay has no trail in the literature and looks like
+      a guess at a finer unit. Group rank is genuinely all that is known: the
+      specimen was collected in 1840 with no recorded horizon.
+Dystrophaeus viaemalae:
+  - categories: [formation]
+    source: foster2016a
+    verdict: ours-correct
+    note: >
+      The Summerville assignment was retracted by the people who made it. It
+      traces to Gillette 1993/1996, who relocated the lost type locality in 1987;
+      Gillette is a co-author on foster2016a, reporting the re-excavation of that
+      same site under the title "Dystrophaeus viaemalae Cope from the basal
+      Morrison Formation of Utah". tschopp2015a independently lists the type as
+      "low in Morrison Form.". The member is left empty deliberately: the lower
+      Morrison there is the Tidwell Member and that is likely the eventual
+      answer, but no source in the literature here says so.
+Gondwanatitan faustoi:
+  - categories: [formation]
+    source: santucci2022a
+    verdict: ours-correct
+    note: >
+      A competing lithostratigraphic scheme rather than a different rock body:
+      santucci2022a writes the equivalence outright, "Adamantina Formation
+      (=Presidente Prudente Formation)". Adamantina is Soares and others (1980);
+      Presidente Prudente is Fernandes and Coimbra's later subdivision of the
+      same interval and the minority usage. santucci2022a's systematic entry
+      gives "Álvares Machado ... Adamantina Formation, Campanian-early
+      Maastrichtian", citing current geochronology rather than repeating the
+      erecting paper. Attested at second hand only: kellner1999a is not held,
+      though four independent works report it as Adamantina.
+Klamelisaurus gobiensis:
+  - categories: [formation]
+    source: moore2020a
+    verdict: ours-correct
+    note: >
+      Wucaiwan is a superseded formation name. moore2020a, the redescription of
+      the holotype, states it: the specimen came from strata "formerly called the
+      'Wucaiwan Formation' and is now considered to constitute the lower beds of
+      the Shishugou Formation (Clark et al. 2006)". weishampel2004a reproduces
+      the erecting paper's usage as a section heading. Member left empty:
+      Wucaiwan is now a locality some 95 km from the holotype site and an
+      abandoned unit name, not a member of the Shishugou, and moore2020a says
+      only "lower beds", which is informal.
+Pachycephalosaurus wyomingensis:
+  - categories: [formation]
+    source: brown1943a
+    verdict: corrected
+    note: >
+      Changed Hell Creek to Lance, with locality and region corrected and the
+      coordinates removed. The record paired the right holotype with the wrong
+      specimen's provenance. brown1943a catalogues it verbatim: "U.S.N.M. No.
+      12031 ... type of this species ... Lance formation, 9 miles southwest of
+      Warren P.O., Buck Creek, Niobrara County, Wyoming." The Ekalaka, Montana
+      data belonged to AMNH 1696, holotype of the junior synonym P. grangeri,
+      which brown1943a erects in the same paper and which this record already
+      lists as a synonym. The species epithet and our own etymology field both
+      said Wyoming while the region field said Montana. Coordinates were
+      Ekalaka's and are removed rather than guessed; Niobrara County needs
+      re-deriving. The Hell Creek count is explained by almost all
+      Pachycephalosaurus material being Hell Creek -- none of it the type.
+Thescelosaurus neglectus:
+  - categories: [formation]
+    source: gilmore1913a
+    verdict: ours-correct
+    note: >
+      The erecting paper is titled "Osteology of Thescelosaurus, an orthopodous
+      dinosaur from the Lance Formation of Wyoming", and its Summary of Known
+      Material gives the type first: "Type, No. 7757, U.S.N.M. ... From Doegie
+      Creek, Niobrara County, Wyoming." The rival values are genus-level
+      distributions across referred material -- jones2026a's occurrence column
+      omits the Lance entirely, which is a defect in it rather than evidence. The
+      Canadian and Montanan material is already represented correctly as separate
+      species in this file: T. assiniboiensis carries Frenchman and T. garbanii
+      carries Hell Creek.
+Unenlagia comahuensis:
+  - categories: [formation]
+    source: porfiri2024a
+    verdict: ours-correct
+    note: >
+      The same rank elevation as Argentinosaurus huinculensis, in the same basin.
+      novas1997a gives "Río Neuquén Formation, Sierra del Portezuelo"; modern
+      usage raises Río Neuquén to Subgroup, containing the Portezuelo and
+      Plottier formations, so ours is the same rock at the current rank -- and
+      the erecting paper's own locality is that formation's type section.
+      porfiri2024a gives "U. comahuensis, U. paynemili, Neuquenraptor argentinus,
+      and Pamparaptor micros from the Turonian-Coniacian ... Portezuelo
+      Formation". The congener U. paynemili already carries Portezuelo here, so
+      changing this would split one genus across two schemes.
+Alioramus remotus:
+  categories: [formation]
+  source: kurzanov1976b
+  verdict: ours-correct
+  note: >
+    Survives, but not on the count -- "Nemegt 13" is inflated by A. altai,
+    which really is Nemegt. Kurzanov divides the Nogon Tsav section in two and
+    places the holotype in the lower half: the lower beds hold "many complete
+    skulls, separate bones of tarbosaurs, ornithomimids, and claws of
+    therizinosaurs", the upper red beds "only scattered fragments", and the
+    type "occurs in the lower gray beds". That lower fauna is the Nemegt
+    assemblage. barsbold1983a, who named the rival unit, puts "Nogon Tsav
+    Svita" on the UPPER, dinosaur-poor half and lists Alioramus in the
+    Nemegtskaya complex -- so the reference works are applying a locality name
+    to the whole exposure. Residual uncertainty is real: brusatte2009b notes
+    the correlation "ha[s] yet to be undertaken" and nobody has since done it,
+    so this rests on faunal fit, not measured section.
+
+Dyslocosaurus polyonychius:
+  categories: [formation]
+  source: mcintosh1992a
+  verdict: ours-correct
+  note: >
+    Kept as a preference, not a determination, and the erecting paper says so:
+    its Distribution line reads "Formation uncertain, probably from the
+    Morrison Formation", and the discussion closes "in absence of more precise
+    data on the collection site we cannot dismiss the possibility that Loomis's
+    stratigraphic determination is correct". The Morrison case is indirect --
+    diplodocids are unknown after the Early Cretaceous in North America, and
+    the preservation matches Morrison material -- while the only documentary
+    evidence, F. B. Loomis's museum entry, says Lance. tschopp2015a adds that
+    at least one pedal phalanx was probably not collected with the rest.
+
+Erectopus superbus:
+  categories: [formation]
+  source: allain2005b
+  verdict: corrected
+  note: >
+    Changed La Penthièvre to La Penthiève -- the unit was right, the spelling
+    wrong by one letter. allain2005b's formal horizon statement reads
+    "Phosphate-bearing beds of La Penthiève, Mammilatum Zone, Lower Cretaceous,
+    lower Albian", and carrano2012a's appendix 3 distinguishes the two words in
+    adjacent columns of one row: the unit is "La Penthiève Beds", the locality
+    "Bois de la Penthière". Note allain2005b is itself inconsistent, writing
+    "La Penthièvre" once in narrative prose about the Pierson collection; the
+    horizon line and the appendix are the places that name the bed, and both
+    give Penthiève. The unit is informal and bed-rank, so jones2026c's "Beds
+    Fm." is a rank collision of its own making, and weishampel2004a's "Unnamed
+    unit" simply predates the lectotype redescription.
+
+Graciliceratops mongoliensis:
+  categories: [formation]
+  source: barsbold1983a
+  verdict: ours-correct
+  note: >
+    Not a disagreement: jones2026a's "Bayan Shireh Fm." is our value under
+    another transliteration. The only genuine rival is weishampel2004a's
+    "Shireegiin Gashuun Formation", the locality name promoted to formation
+    rank -- its own index betrays it with "Bayanshiree Svita. See also
+    Shireegiin [Gashuun Formation]". sereno2000a names no formation at all; the
+    assignment comes from the regional literature, where barsbold1983a
+    correlates the Shiregin Gashun deposits with the Bayanshirenskaya. Carry
+    the caveat that the correlation is not airtight: currie1993z records
+    "little overlap between the faunas of the two areas", and tumanova1987a
+    that the section "includes deposits of several formations".
+
+Machairasaurus leptonychus:
+  categories: [formation]
+  source: longrich2010a
+  verdict: ours-correct
+  note: >
+    Not a disagreement: Bayan Mandahu and Wulansuhai are two names for one
+    unit, the Upper Cretaceous redbeds at Bayan Mandahu, and the literature
+    states the equivalence outright as "Bayan Mandahu Formation ( = Wulansuhai
+    Formation)". The erecting paper is unambiguous on the type horizon:
+    "Horizon and type locality. Bayan Mandahu Formation, Late Cretaceous
+    (Campanian), Bayan Mandahu, Inner Mongolia." Flagged rather than resolved:
+    the repo carries Wulansuhai on six species and Bayan Mandahu on four for
+    the same rock, which is worse than either choice.
+
+Megaraptor namunhuaiquii:
+  categories: [formation]
+  source: calvo2004b
+  verdict: ours-correct
+  note: >
+    A rank change, not a conflict, and the same one as Argentinosaurus
+    huinculensis in the same basin. novas1998a gives "Rio Neuquen Formation,
+    Sierra del Portezuelo"; Río Neuquén was subsequently raised to Subgroup and
+    now contains the Portezuelo below and the Plottier above, so ours is the
+    finer current value and the erecting paper's own locality is that
+    formation's type section. jones2026c prints Portezuelo Fm. and agrees with
+    us.
+
+Protoceratops hellenikorhinus:
+  categories: [formation]
+  source: lambert2001a
+  verdict: ours-correct
+  note: >
+    The erecting paper settles it in its Stratum typicum line: "Bayan Mandahu
+    Formation, ? correlated with the Djadokhta Formation in People's Republic
+    of Mongolia" -- the Djadokhta offered as a correlation and carried with a
+    query by the author who made it. weishampel2004a demotes that hedge into a
+    flat assignment. longrich2010a assembles the case against it: "none of the
+    material found at Bayan Mandahu can be definitively referred to species
+    known from Bayn Dzak", citing this taxon as one of the endemics. Note P.
+    andrewsi correctly stays on Djadokhta; the two species genuinely differ and
+    this must not be "fixed" by unifying them.
+
+Seitaad ruessi:
+  categories: [formation]
+  source: sertich2010a
+  verdict: ours-correct
+  note: >
+    No disagreement existed. The record holds "Navajo Sandstone" and jones2026b
+    prints "Navajo Ss." -- the same unit, which the reconciler failed to reduce
+    because it did not know Ss. abbreviates Sandstone. Fixed in the tooling.
+    sertich2010a fixes the position precisely: the holotype "was preserved in a
+    bed of massive sandstone at the base of the Navajo Sandstone, one meter
+    above an interbedded mudstone and sandstone facies of the Kayenta
+    Formation". The Navajo has no formal members in southern Utah.
+
+Shamosaurus scutatus:
+  categories: [formation]
+  source: arbour2015a
+  verdict: ours-correct
+  note: >
+    The two names sit at different ranks rather than competing. arbour2015a
+    states it for this holotype: "Khamryn-Us ( = Khamareen Us), southeastern
+    Gobi, Mongolia; Zuunbayan ( = Dzun Bayn, Dzunbayn, Dzunbain) Formation
+    (roughly equivalent to the Khukhtyk/Huhteg Svita), Aptian-Albian."
+    tumanova2018a makes the relationship explicit for another taxon from the
+    same locality -- "Khukhtykskii Horizon, Dzunbain Formation" -- so
+    weishampel2004a's "Hühteeg Svita" is the horizon and ours is the formation
+    within it. Tumanova, who erected the taxon, uses the formation name in her
+    1987 monograph.
+
+Shantungosaurus giganteus:
+  categories: [formation]
+  source: an2015z
+  verdict: ours-correct
+  note: >
+    Ours is the finer rank and the erecting paper is consistent with it:
+    hu1973a places the bones "belonging to the middle portion of the Wangshi
+    Group", and the Hongtuya is the middle formation of the Zhucheng
+    succession, between the Xingezhuang below and the Jinggangkou above.
+    an2015z pins it, dating samples logged as K2h from Kugou-Longgujian --
+    hu1973a's Longgujing between Xixiandun and Kugou, which our locality string
+    already records. weishampel2004a's "Shanyang Formation" is not a rival type
+    horizon: the cell reads "Wangshi Group (Shandong), Shanyang Formation
+    (Shaanxi)", a two-province genus distribution of which only the Shandong
+    half bears on the holotype.
+
+Talarurus plicatospineus:
+  categories: [formation]
+  source: park2019a
+  verdict: ours-correct
+  note: >
+    Not a disagreement -- "Bayanshiree Svita" is our unit with the Russian rank
+    term attached. park2019a covers the holotype explicitly: "Holotype and all
+    other materials are from the Upper Cretaceous (Cenomanian-Santonian)
+    Bayanshiree Formation, Bayan Shiree cliffs, eastern Gobi Desert, Mongolia",
+    adding that the new material came from the type section of the formation.
+
+Transylvanosaurus platycephalus:
+  categories: [formation]
+  source: augustin2022a
+  verdict: corrected
+  note: >
+    Changed Sînpetru to Pui Beds; this was misfiled as ours-correct and the
+    reference work is right. augustin2022a places the holotype outside the
+    Sînpetru in three places. Its Type Stratum line: LPB (FGGUB) R.2070 "was
+    recovered ... from the middle part of the uppermost Cretaceous continental
+    succession from the Bărbat River Valley section, informally also referred
+    to as the 'Bărbat Formation' (Therrien, 2005) or the 'Pui Beds'". Its
+    Figure 1 key separates them as different map units -- "3, Sînpetru
+    Formation; 4, Sînpetru Formation-correlative units ('Râul Mare Beds' in the
+    central part of the basin, 'Pui Beds' in the eastern part)". And it records
+    the Sînpetru reading as superseded, held by Nopcsa 1905, Mamulea 1953 and
+    Grigorescu 1992 against the more recent distinct-unit interpretation. Both
+    names are informal; 'Pui Beds' is the more recent and is what the paper
+    uses throughout.
+
+Zalmoxes robustus:
+  categories: [formation]
+  source: weishampel2003a
+  verdict: ours-correct
+  note: >
+    The unit is right and the spelling is held pending a repo-wide decision. On
+    the unit: jones2026a's cell lists two formations because it describes the
+    genus distribution -- its specimen column reads "numerous specimens" --
+    while weishampel2003a separates them, giving the holotype as "Sanpetru,
+    Hunedoara County, Romania. Sanpetru Formation (upper Maastrichtian)" and
+    confining Densuș-Ciula to referred specimens. On the spelling,
+    weishampel2003a flags the orthographic reform in its geology section: "in
+    this post-Ceausescu era, some spellings in the Romanian language have
+    changed, among them Sînpetru to Sânpetru". Sânpetru adopted repo-wide on
+    that basis: the 1993 orthographic reform replaced î with â in this
+    position, and all four reference works print Sânpetru. Eight records were
+    flipped together rather than this one alone, since a single change would
+    have deepened the split (six î against one â) rather than fixed it. The î
+    form survives in some later literature, including augustin2022a in 2022,
+    and is kept as a recognised variant in formation-variants.yml.
+
+Coahuilaceratops magnacuerna:
+  categories: [formation]
+  source: loewen2010a
+  verdict: corrected
+  note: >
+    Changed Cerro Huerta to Cerro del Pueblo, with part: middle. The record had
+    captured the measuring datum instead of the host unit. loewen2010a gives
+    the horizon as "the middle part (approximately 230 m level) of the
+    Campanian Cerro del Pueblo Formation, the basal formation of the Difunta
+    Group", and the Cerro Huerta appears in that paper exactly once, as the
+    OVERLYING unit the sections were measured down from. rivera-sylva2017a,
+    from the holding institution, independently gives Cerro del Pueblo. The
+    Maastrichtian stage is not a defect: the bonebed is dated ~72.0 Ma, which
+    reads as earliest Maastrichtian on the current scale even though
+    loewen2010a calls it late Campanian.
+
+Equijubus normani:
+  categories: [formation]
+  source: you2014a
+  verdict: ours-correct
+  note: >
+    A group-versus-formation rank mismatch: Xinminbao and Xinminpu are the same
+    group and the Zhonggou is a formation inside it. you2014a states both
+    halves -- "The Xinminpu Group includes two formations: the lower Xiagou and
+    the upper Zhonggou formations ... the dinosaur-bearing Xinminpu Group in
+    the Mazongshan area belongs to Zhonggou Formation" and "Both
+    Gongpoquansaurus and Equijubus are from the middle gray unit of the
+    Xinminpu (= Xinminbao) Group in the Gongpoquan Basin". The describing paper
+    predates the formation assignment and gives only the group. part: middle
+    records the informal middle gray unit; you2014a added as the reference
+    carrying the value.
+
+Fusuisaurus zhaoi:
+  categories: [formation]
+  source: mo2016z
+  verdict: ours-correct
+  note: >
+    Napai is the superseded name for the same rock, and the correction comes
+    from the author of the describing paper: mo2016z states that "the name
+    'Xinlong Formation' is more precise and has precedence over 'Napai
+    Formation'". ji2022a records the supersession from outside, listing the
+    pre-2010 users as Hou 1975, Mo 2006, Mo 2010 and Buffetaut 2008 -- so the
+    reference work's "Napai Fm." is the 2006 describing paper unrevised, not
+    independent evidence. Napai survives as the name of the BASIN, which is why
+    the old formation name still appears in modern text. No member or part:
+    mo2016z reviews this basin and does not subdivide the Xinlong at all, and
+    the four-member mapping scheme puts its second member on the northern flank
+    while this holotype came from Liubang in the southeast.
+
+Gojirasaurus quayi:
+  categories: [formation]
+  source: carpenter1997a
+  verdict: corrected
+  note: >
+    Changed Bull Canyon to Cooper Canyon, and recorded as genuinely contested
+    rather than settled. The describing paper devotes a section to adjudicating
+    the two names under the North American Stratigraphic Code and concludes
+    that "the stratum from which the holotype Gojirasaurus quayi was collected
+    should be referred to as the Cooper Canyon Formation of the Dockum Group".
+    The two are laterally equivalent bodies -- nesbitt2007a writes "the Bull
+    Canyon (=Cooper Canyon) Formation" -- so this is a nomenclatural preference
+    between the Lucas-school New Mexico name and the Texas name. Same split as
+    Lepidus praecisio at Otis Chalk and resolved the same way deliberately; the
+    two must not diverge. The count was inflated: most corpus papers naming
+    Cooper Canyon concern Texas localities and never mention this taxon.
+
+Huanghetitan liujiaxiaensis:
+  categories: [formation]
+  source: you2006a
+  verdict: corrected
+  note: >
+    Changed "Upper" to Hekou Group with part: upper. Neither side was right --
+    our value was a stranded qualifier from "upper Hekou Group", not a unit
+    name. you2006a names no formation-rank unit at all, giving "Lower
+    Cretaceous Hekou Group", and li2014a places the Yongjinglong quarry less
+    than a kilometre away in the "upper Hekou Group". No work subdivides the
+    Hekou Group into named formations in this basin. The fix also makes the
+    record consistent with Daxiatitan, Yongjinglong and Lanzhousaurus, which
+    already carry Hekou Group. Not to be merged with the Hekou FORMATION of the
+    Guifeng Group in Jiangxi, some 1,500 km away.
+
+Kelmayisaurus petrolicus:
+  categories: [formation]
+  source: brusatte2012a
+  verdict: ours-correct
+  note: >
+    A rank mismatch: the Lianmuqin is the uppermost formation of the Tugulu
+    Group, so the reference work's group name contains our value rather than
+    contradicting it. The reassessment gives "Type locality: Near Wuerho
+    (Urdo), Junggar Basin, Xinjiang, China" and "Type horizon: Lianmugin
+    Formation, Tugulu Group" -- Lianmugin being a romanisation variant of the
+    pinyin Lianmuqin we hold. The describing paper gives only a field locality
+    number. CAUTION: the corpus file under key brusatte2012a is this
+    Kelmayisaurus reassessment, while the bib entry under that key is a
+    different Brusatte 2012 paper.
+
+Liubangosaurus hei:
+  categories: [formation]
+  source: mo2016z
+  verdict: ours-correct
+  note: >
+    The same quarry and the same question as Fusuisaurus zhaoi -- mo2010a opens
+    by noting that the Liubang quarry yielded both, "a very large one
+    (described as Fusuisaurus zhaoi by Mo et al., 2006) and two smaller ones"
+    -- so whatever unit one carries, the other must. Napai is the superseded
+    name; see the Fusuisaurus entry for the priority statement. mo2016z places
+    both taxa at "the Liubang quarry" in the Xinlong Formation and uses no
+    member-rank subdivision, so member and part stay empty.
+
+Malarguesaurus florenciae:
+  categories: [formation]
+  source: gonzálezriga2013a
+  verdict: ours-correct
+  note: >
+    Ours is the newer value, not the outlier -- the count scored a
+    restratification backwards. Los Bastos is González Riga's own later
+    correction of his 2009 describing paper: gonzálezriga2013a states that
+    "Malarguesaurus was found in strata assigned to Los Bastos Formation
+    (early-middle Coniacian)". bellardini2022a documents the change from
+    outside, which rules out a slip. The reference work reproduces the
+    superseded 2009 Portezuelo value. gonzálezriga2013a added as the reference
+    carrying the value. Flag not acted on: the restratification carries the age
+    with it, so a Turonian stage would need to move to Coniacian.
+
+Megalosaurus bucklandii:
+  categories: [formation]
+  source: benson2010c
+  verdict: ours-correct
+  note: >
+    "Stonesfield Slate" is not a competing formation but the quarrymen's name
+    for one or more horizons inside the Taynton Limestone, which benson2010c
+    prints in scare quotes for that reason: "One or more discrete horizons
+    ('Stonesfield Slate') within the Taynton Limestone Formation (middle
+    Bathonian)". The count measures how often a famous informal horizon name is
+    used, not disagreement about the formation. Not recorded as a member or
+    bed: neither Boneham and Wyatt nor Benson fixes a single horizon, and the
+    name has no formal status.
+
+Proceratosaurus bradleyi:
+  categories: [formation]
+  source: carrano2012a
+  verdict: ours-correct
+  note: >
+    Great Oolite is the group and the White Limestone Formation sits inside it,
+    so this is a rank mismatch. carrano2012a gives "Minchinhampton Reservoir,
+    Gloucestershire, England; White Limestone Formation, Great Oolite Group;
+    middle-late Bathonian", matching our locality exactly. rauhut2010a, the
+    redescription, keeps the older coarse usage rather than contradicting a
+    formation. The count picks up the historical British habit of calling the
+    whole Bathonian limestone succession "the Great Oolite". carrano2012a added
+    as the reference carrying the value.
+
+Scelidosaurus harrisonii:
+  categories: [formation]
+  source: norman2020a
+  verdict: ours-correct
+  note: >
+    Lower Lias is the obsolete name: the Lias Group was formally subdivided by
+    the BGS and the Charmouth Mudstone Formation is the current name for that
+    interval on this coastline, so the count measures the long tail of
+    pre-revision literature. The monograph fixes the member precisely --
+    "Charmouth Mudstone Formation (Upper Sinemurian), Black Ven Marl Member,
+    Asteroceras obtusum Zone" -- now populated. No bed recorded: norman2020a
+    names the nodule beds only through a personal communication and a
+    "perhaps".
+
+Kazaklambia convincens:
+  categories: [formation]
+  source: bell2013a
+  verdict: ours-correct
+  note: >
+    Not moved to Syuksyuk; the tally was a spelling artifact. The literature
+    almost never writes "Darbazin" -- it writes the Russian adjectival form,
+    usually with the r and b transposed as "Dabrazinskaya", which bell2013a
+    uses four times against zero for Darbazin, so a substring search scores the
+    describing paper as unsupported when it is the primary source. The Syuksyuk
+    side of the count is largely the wrong taxon: godefroit2012a separates them
+    in one sentence, giving Jaxartosaurus aralensis "from the Syusyuk Formation
+    ... of the Alimtau range (=Kyrk-Kuduk)" and "the juvenile skeleton named
+    Procheneosaurus convincens from the Dabrazinskaya Svita ... at the
+    Syuk-Syuk Wells site". Since reference works sink P. convincens into
+    Jaxartosaurus, a scorer following synonymy pulls the wrong rows in. The
+    dispute block on the record stands: ours follows the describing papers, the
+    alternative follows a stratigraphic revision, and both units are Santonian
+    and adjacent so nothing turns on the choice.
+
+Olorotitan arharensis:
+  categories: [formation]
+  source: vanitterbeeck2005a
+  verdict: ours-correct
+  note: >
+    Neither alternative is a live reading. "Udurchurkan" is a typo, not a
+    transliteration variant: Udurchukan occurs across 17 papers in the
+    literature here, while Udurchurkan appears in exactly two files, both from
+    one reference work. "Tsagayan Svita" is the superseded name --
+    alifanov2010a, on the same Kundur bonebed, writes "the roof of the
+    Udurchukan Formation (previously referred to as the Tsagayan Formation or
+    Lower Tsagayan Formation)". vanitterbeeck2005a settles it and dissolves the
+    apparent conflict with the describing paper: it heads a section "Exposure
+    18 (Udurchukan Formation)", places the skeleton "3.25 m below the contact
+    with the Bureya Formation", and states that "the dinosaur fossils are
+    restricted to the Udurchukan Formation" -- while noting the Udurchukan IS
+    the lower part of the Tsagayan Group, so godefroit2003a's "top of the basal
+    part of the Tsagayan Formation" is the same statement at group rank. Added
+    as the reference; the record previously cited only two works, both of which
+    say Tsagayan.
+
+Asylosaurus yalensis:
+  categories: [formation]
+  source: galton2007a
+  verdict: corrected
+  note: >
+    Changed Magnesian Conglomerate to Durdham Down fissure fill; the erecting
+    paper rejects the old value by name. galton2007a gives the deposit as "a
+    Triassic (Rheatian [sic]) dolomitized cave breccia or fissure fill (not in
+    Magnesian/ Dolomitic Conglomerate ...) in Lower Carboniferous (Dinantian)
+    marine limestone", and explains how the name entered circulation: "It was
+    long equated with the Magnesian Conglomerate, which occurs very close by."
+    The host rock is Carboniferous limestone and the infill is Rhaetian with no
+    lithostratigraphic name, so the reference work's "Uncertain" was closer to
+    the literature than our named value. The string follows the convention
+    already used for the Welsh equivalent at Pant-y-ffynnon. The record's own
+    description field already said "Avon Fissure Fill" and "cave fill", so the
+    value had been contradicting its own prose.
+
+Chebsaurus algeriensis:
+  categories: [formation]
+  source: läng2010a
+  verdict: ours-correct
+  note: >
+    Positively sourced rather than merely finer than a blank. The
+    redescription, by the erecting author, gives "the Middle Jurassic Aïssa
+    formation of the Naama Province, Algeria", and mannion2019a corroborates
+    independently. Two cautions recorded rather than acted on: the erecting
+    paper mahammed2005a names no formation at all, so a source citation should
+    point at läng2010a rather than at it; and läng2010a contradicts itself, its
+    abstract naming the Aïssa while its formal Locality and horizon paragraph
+    gives only "Detrital continental series of indeterminate Middle Jurassic
+    ... and probably Callovian age". A literal search for "Aïssa" in the corpus
+    markdown fails -- it renders as a dotless i plus spacing diaeresis.
+
+Euronychodon portucalensis:
+  categories: [formation]
+  source: kullberg2012z
+  verdict: corrected
+  note: >
+    Changed Unnamed (Taveiro) to Taveiro: the unit is formally named, so the
+    hedge was wrong in our favour's direction rather than against it.
+    kullberg2012z, the regional lithostratigraphic synthesis, names "the base
+    of the Taveiro Formation filling (Reis, 1983)" and lists this taxon among
+    its fossils, which is a direct taxon-to-unit link rather than an inference.
+    antunes1978z, the stratigraphic study of the type section by the author who
+    later erected the taxon, names no formal formation -- only "deposits of
+    Taveiro" -- which confirms Reis (1983) as the definer. Not Argilas de
+    Aveiro: that is the Aveiro-area unit, and the holotype's TV prefix is the
+    Taveiro series.
+
+Kangnasaurus coetzeei:
+  categories: [formation]
+  source: dewit1992z
+  verdict: corrected
+  note: >
+    Removed Kalahari Deposits; no lithostratigraphic unit exists at this
+    locality. The only geological investigation of the site uses the word
+    "Formation" nowhere at all, and uses "Kalahari" once, inside a cited
+    reference title; it concludes the fossils are "likely to be associated with
+    a crater facies deposit above an olivine-melilitite intrusion of Late
+    Cretaceous age" -- a debris-flow volcaniclastic breccia and laminated
+    mudrock, explicitly not fluvial. rogers1915z, the geological companion to
+    the erecting paper, uses "Kalahari" only as a region ("the southern
+    Kalahari", "the Kalahari region") and says outright that "the age of the
+    bones is not known". haughton1915a names no unit and declines to venture an
+    age. Every later use of "Kalahari Deposits" traces to Cooper 1985, which is
+    not held -- one node, not five workers.
+
+Pantydraco caducus:
+  categories: [formation]
+  source: galton2007b
+  verdict: ours-correct
+  note: >
+    The value is not a stand-in for a formation nobody looked up -- it is what
+    the literature says, nearly verbatim. The erecting paper gives "A Rhaetian
+    (Upper Triassic) or Lower Jurassic fissure fill at the old Pant-y-ffynnon
+    Quarry", and spiekman2021a, the newest paper from the quarry, gives
+    "Fissure fills of Pant-y-ffynnon Quarry, southern Wales". There is no
+    formation to find: the infill is a Rhaetian karst deposit with no
+    lithostratigraphic name, and only the HOST rock is a named formation
+    (whiteside2016z: the Black Rock Limestone Subgroup or Gully Oolite), which
+    is Carboniferous and must not be recorded as the taxon's formation.
+    Pendraig milnerae already carries the identical string for the identical
+    quarry.
+
+Tarascosaurus salluvicus:
+  categories: [formation]
+  source: csiki-sava2015a
+  verdict: corrected
+  note: >
+    Removed Fuvelian Beds: "Fuvelian" is a regional continental
+    chronostratigraphic stage of Provence, one of four erected by Matheron 1864
+    in the series Valdonnian, Fuvelian, Begudian, Rognacian -- a time term, not
+    a rock unit, so it filed an age in a lithostratigraphy field. tortosa2014a
+    demonstrates the distinction within one paper, giving Arcovenator a
+    formation and a local stage side by side while placing this taxon in "the
+    Fuvelian local stage" with no formation; jones2026c prints it in scare
+    quotes. The horizon is itself an inference: leloeuff1991a records the
+    specimen's entire provenance as a label reading "Crétacé supérieur, Lambeau
+    du Beausset", collector unknown, and reasons to the Fuvelian from matrix
+    lithology alone.
