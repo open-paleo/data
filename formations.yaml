@@ -41,13 +41,29 @@
 # CANONICAL SPELLINGS. Where the literature is split, the choice and its reason
 # are recorded on the entry. Sânpetru over Sînpetru is the worked example: the
 # 1993 Romanian orthographic reform replaced î with â in this position,
-# weishampel2003a flags it in its own geology section, and all four reference
+# Weishampel (2003) flags it in its own geology section, and all four reference
 # works print â.
 #
 # DELIBERATELY EXCLUDED: Shaximiao vs Xiashaximiao / Shangshaximiao. Xia and
 # shang are Chinese for lower and upper, so those name a subunit rather than a
 # spelling of the same unit -- a substantive difference that must stay in the
 # active findings. Watch for the same trap in other Chinese formation names.
+
+Allen:
+  rank: formation
+  parent: Malargüe
+  references:
+    - id: salgado1996a
+      notes: >
+        The subdivision is positional, not named: "Lower member of the Allen
+        Formation, Malargue Group" in the horizon line and "Lower Member" in the
+        running text of the same paper. There is no upper counterpart with a
+        name either, so a position here belongs in `part` and the `member` field
+        stays empty.
+    - id: martinelli2004a
+      notes: >
+        Places the formation in the Malargue Group. The same site is called the
+        Neuquen Group by Rozadilla (2021) and Aranciaga Rolando (2021).
 
 Bahariya:
   rank: formation
@@ -96,6 +112,23 @@ Bevons:
   rank: formation
   variants: ["Cambridge Green Sand"]
 
+"Cedar Mountain":
+  rank: formation
+  contains: [Buckhorn Conglomerate, Yellow Cat, Poison Strip, Ruby Ranch, Mussentuchit]
+  references:
+    - id: tidwell2001a
+      notes: >
+        "The basal member of the Cedar Mountain Formation is the Buckhorn
+        Conglomerate (Kirkland et al. 1997). Four additional members established
+        and named by Kirkland et al. (1997) are: the Yellow Cat Member, Poison
+        Strip Sandstone, Ruby Ranch Member, and the Mussentuchit Member."
+    - id: carpenter1999a
+      notes: >
+        The same five-member scheme, and why the member is the operative unit
+        here rather than the formation: the ankylosaurs are stratigraphically
+        restricted, Gastonia to the Yellow Cat and Animantarx to the
+        Mussentuchit.
+
 "Cerro Carnerero":
   rank: formation
   variants: ["Cerro Carnereo Fm."]
@@ -109,6 +142,23 @@ Bevons:
   parent: Grinstead Clay
   references:
     - id: norman2013a
+
+Djadokhta:
+  rank: formation
+  contains: ["Bayn Dzak", Tugrugyin]
+  references:
+    - id: dashzeveg2005a
+      notes: >
+        Erects both members on lithology and maps them at their type localities:
+        the Bayn Dzak Member at Bayn Dzak (the Flaming Cliffs) and the Tugrugyin
+        Member at Tugrugyin Shireh, the second superposed on the first. The
+        subdivision is scoped to the southern Ulan Nur Basin, so it does not
+        reach the Nemegt Basin exposures at Ukhaa Tolgod.
+    - id: arbour2015a
+      notes: >
+        Applies the subdivision to a holotype, and equates the locality names:
+        "Bayan Zag (= Bayn Dzak, Shabarakh Usu, the Flaming Cliffs); Bayn Dzak
+        Member, Djadokhta Formation".
 
 Dockum:
   rank: group
@@ -132,7 +182,7 @@ Fuvelian:
     - id: csiki-sava2015a
       notes: >
         One of the four Provence local stages (Valdonnian, Fuvelian, Begudian,
-        Rognacian) erected by Matheron 1864 -- a time term, not a rock unit.
+        Rognacian) erected by Matheron (1864) -- a time term, not a rock unit.
     - id: tortosa2014a
       notes: >
         Shows the distinction inside one paper: gives Arcovenator a formation
@@ -161,7 +211,7 @@ Gosau:
   rank_contested: [member, formation]
   references:
     - id: norman2013a
-      notes: Treats it as a formation; so do naish2008a and raven2020a.
+      notes: Treats it as a formation; so do Naish (2008) and Raven (2020).
     - id: norman2010a
       notes: >
         Treats it as a Member of the Tunbridge Wells Sand Formation. Recorded
@@ -232,7 +282,7 @@ Jehol:
         The companion note to the erecting paper, and the only contemporary
         account of the well. Uses "Kalahari" purely as a region -- "the southern
         Kalahari", "the Kalahari region" -- and names no stratigraphic unit.
-        Every later use of "Kalahari Deposits" traces to Cooper 1985.
+        Every later use of "Kalahari Deposits" traces to Cooper (1985).
 
 "Kem Kem":
   rank: group
@@ -245,6 +295,30 @@ Jehol:
     - id: kellermann2025a
       notes: >
         Follows the Ibrahim scheme; the Carcharodontosaurus neotype is Douira.
+
+Lufeng:
+  rank: formation
+  contains: [Shawan, "Zhangjia'ao"]
+  variants: ["Lower Lufeng Formation", "Lower Lufeng Series"]
+  references:
+    - id: xing2012b
+      notes: >
+        Ties the modern member names to the colour terms the older literature
+        uses, which is what makes those papers readable: the Zhangjia'ao Member
+        "was originally recognized as the 'Deep Red Beds' of the Upper Member"
+        and the Shawan Member "as the 'Dark Purple Beds' of the Lower Member".
+        Its per-member faunal lists overlap, so they identify a taxon's
+        occurrences and cannot fix a holotype's member on their own.
+    - id: you2014b
+      notes: >
+        States the same equivalence from the other side, "Shawan Member of the
+        Lufeng Formation (Fang et al. 2000). This is equivalent to the Dull
+        Purplish Beds of the Lower Lufeng Formation".
+    - id: sekiya2010a
+      notes: >
+        Records that replacing the upper/lower bed names with Shawan and
+        Zhangjia'ao remains contested, so both vocabularies stay current in the
+        literature.
 
 "Magnesian Conglomerate":
   rank: none
@@ -308,6 +382,27 @@ Pawpaw:
   rank: formation
   variants: ["Paw Paw Formation"]
 
+"Zhangjia'ao":
+  rank: member
+  parent: Lufeng
+  variants: [Zhangjiaao, "Zhangjia'ao Member", "Dark Red Beds", "Deep Red Beds"]
+  references:
+    - id: xing2012b
+      notes: >
+        Apostrophe form. Zhang (2018) prints Zhangjiaao for the same member.
+
+"Poison Strip":
+  rank: member
+  parent: Cedar Mountain
+  variants: ["Poison Strip Sandstone", "Poison Strip Sandstone Member",
+    "Poison Strip Member"]
+  references:
+    - id: tidwell2001a
+      notes: >
+        Erected as the Poison Strip Sandstone, and the same paper's horizon line
+        prints "Poison Strip Member" for the same unit. Recorded without the
+        lithologic term so one string names the member.
+
 "Râul Mare Beds":
   rank: informal
   parent: Sânpetru
@@ -344,7 +439,7 @@ Sânpetru:
         replaced î with â in this position, and this paper flags it in its own
         geology section -- "among them Sînpetru to Sânpetru". All four reference
         works print â. The î form is kept as a variant because it survives in
-        later literature, including augustin2022a in 2022.
+        later literature, including Augustin (2022).
 
 Santana:
   rank: group
