@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-08-07T17:37:09.243Z",
+    "built_at": "2026-08-07T18:02:23.923Z",
     "clade_count": 188,
-    "genus_count": 1401,
+    "genus_count": 1400,
     "license": "CC-BY-4.0",
     "schema_version": "1.5.0",
     "version": "2026.08"
@@ -17871,11 +17871,15 @@
       },
       "description": "Alamosaurus is a genus of titanosaurian sauropod dinosaurs containing a single known species, Alamosaurus sanjuanensis, from the Maastrichtian age of the Late Cretaceous period in what is now southwestern North America. It is one of the few known titanosaurs to have inhabited North America after the nearly 30-million-year absence of sauropods from the North American fossil record (\"sauropod hiatus\") and probably represents an immigrant from South America.",
       "dispute": {
-        "summary": "Placed within Saltasauridae as incertae sedis. Alamosaurus has long resisted precise placement: an early assessment (Lehman, 2002) found it a mosaic of titanosaur features and could not resolve it beyond an indeterminate derived titanosaur. More recent work disagrees over its affinities: Navarro et al. (2022) recovered it within Saltasaurinae as the sister taxon of Baurutitan, and it has been grouped among Laurasian titanosaurs close to Saltasaurinae (Santucci and Filippi, 2022), whereas Cerda et al. (2021) instead recovered a South American affinity close to Pellegrinisaurus. These placements fall within Saltasauridae under some definitions. It is placed at Saltasauridae pending resolution.\n",
+        "summary": "Placed within Saltasauridae as incertae sedis. Alamosaurus has long resisted precise placement: an early assessment (Lehman, 2002) found it a mosaic of titanosaur features and could not resolve it beyond an indeterminate derived titanosaur. More recent work disagrees over its affinities: Navarro et al. (2022) recovered it within Saltasaurinae as the sister taxon of Baurutitan, and it has been grouped among Laurasian titanosaurs close to Saltasaurinae (Santucci and Filippi, 2022), whereas Cerda et al. (2021) instead recovered a South American affinity close to Pellegrinisaurus. These placements fall within Saltasauridae under some definitions. It is placed at Saltasauridae pending resolution. The content of the genus is separately contested: Paul (2025) argued that the late Maastrichtian Utah material differs from the early Maastrichtian New Mexican type material, made USNM 15560 the holotype of a new genus Utetitan, and would restrict Alamosaurus sanjuanensis to its New Mexican type horizon. That split rests on qualitative scapular and ischial characters, is not supported by a cladistic analysis, and has not been taken up by subsequent work; USNM 15560 is retained here as referred material of A. sanjuanensis, following its long-standing referral (Gilmore, 1946).\n",
         "history": [
           {
             "date": "2026-06-30",
             "note": "Placed at Saltasauridae incertae sedis; Laurasian (near Saltasaurinae) and South American (near Pellegrinisaurus) affinities remain unresolved.\n"
+          },
+          {
+            "date": "2026-08-07",
+            "note": "Proposed split of USNM 15560 into Utetitan (Paul, 2025) reviewed and not adopted; the genus is recorded as a synonym pending further work.\n"
           }
         ]
       },
@@ -17911,6 +17915,13 @@
         {
           "source": "eol",
           "id": "4658371"
+        }
+      ],
+      "synonyms": [
+        {
+          "name": "Utetitan",
+          "type": "possible subjective",
+          "reason": "Erected by Paul (2025) for USNM 15560, the North Horn Formation skeleton long referred to Alamosaurus sanjuanensis, on qualitative scapular and ischial characters and without a cladistic analysis. The separation has not been adopted by subsequent work."
         }
       ],
       "species": [
@@ -17964,12 +17975,32 @@
               "max": 80000
             }
           },
+          "synonyms": [
+            {
+              "name": "Utetitan zellaguymondeweyae",
+              "type": "possible subjective",
+              "reason": "Erected on USNM 15560, a specimen referred to Alamosaurus sanjuanensis since Gilmore (1946); the separation proposed by Paul (2025) has not been adopted by subsequent work."
+            }
+          ],
           "erected_in": "gilmore1922a",
           "authors": "Gilmore, C. W.",
           "described": 1922
         }
       ],
       "notable_specimens": [
+        {
+          "specimen_id": [
+            "USNM 15560"
+          ],
+          "institution": "National Museum of Natural History, Smithsonian Institution",
+          "species": "Alamosaurus sanjuanensis",
+          "category": "complementary",
+          "significance": "A partial postcranial skeleton from the lower North Horn Formation of Utah preserving caudals 1-30, both sternals, the right scapulocoracoid, forelimb, both ischia and an osteoderm, nearly all of it absent from the scapula-only holotype. Paul (2025) made it the holotype of a separate genus.",
+          "references": [
+            "gilmore1946b",
+            "paul2025a"
+          ]
+        },
         {
           "specimen_id": [
             "TMM 43621-1"
@@ -18071,6 +18102,30 @@
           "pages": "341-391",
           "doi": "10.1007/978-3-030-95959-3_10",
           "notes": "Grouped Alamosaurus among Laurasian titanosaurs closely related to Saltasaurinae, in a biogeographic discussion."
+        },
+        {
+          "id": "gilmore1946b",
+          "authors": "Gilmore, C. W.",
+          "year": 1946,
+          "title": "Reptilian fauna of the North Horn Formation of central Utah",
+          "journal": "United States Geological Survey Professional Paper",
+          "publisher": "United States Geological Survey",
+          "volume": "210-C",
+          "pages": "29-53",
+          "doi": "10.3133/pp210C",
+          "notes": "Describes USNM 15560 from the North Horn Formation and refers it to Alamosaurus sanjuanensis."
+        },
+        {
+          "id": "paul2025a",
+          "authors": "Paul, G. S.",
+          "year": 2025,
+          "title": "Stratigraphic and anatomical evidence for multiple titanosaurid dinosaur taxa in the Late Cretaceous (Campanian-Maastrichtian) of southwestern North America",
+          "journal": "Geology of the Intermountain West",
+          "publisher": "Utah Geological Association",
+          "volume": "12",
+          "pages": "201-220",
+          "doi": "10.31711/giw.v12.pp201-220",
+          "notes": "Makes USNM 15560 the holotype of a separate genus, Utetitan, and would restrict Alamosaurus sanjuanensis to its New Mexican type horizon."
         }
       ],
       "taxonomy": [
@@ -145395,13 +145450,11 @@
               "Early Cretaceous"
             ],
             "stage": [
-              "Oxfordian",
               "Kimmeridgian",
-              "Tithonian",
-              "Berriasian"
+              "Tithonian"
             ],
-            "from_ma": 161.5,
-            "to_ma": 137.05
+            "from_ma": 154.8,
+            "to_ma": 143.1
           },
           "location": {
             "country": "US",
@@ -218909,126 +218962,6 @@
       ],
       "authors": "Kirkland, J. I.; Burge, D.; R. Gaston",
       "described": 1993
-    },
-    "Utetitan": {
-      "genus": "Utetitan",
-      "parent": "Titanosauria",
-      "etymology": "From 'Ute', honoring the original Ute peoples of central Utah on whose ancestral lands the holotype was recovered, and Greek 'titan' (giant).",
-      "pronunciation": {
-        "phonetic": "YOO-tee-TIE-tuhn"
-      },
-      "description": "Utetitan is an extinct genus of titanosaurian sauropod dinosaur from the late Maastrichtian (Late Cretaceous) of southwestern North America. The single species, Utetitan zellaguymondeweyae, is based on USNM 15560 — a partial postcranial skeleton from the lower North Horn Formation at Joe's Valley on the Wasatch Plateau, Emery County, Utah — formerly the primary referred specimen of Alamosaurus sanjuanensis. Paul (2025) split this material away from Alamosaurus on the basis of scapular and ischial autapomorphies, restricted A. sanjuanensis to its New Mexican type horizon, and erected the new subfamily Utetitaninae for the new genus; that clade-name is single-paper-recent and not adopted as a parent here per the project's taxonomy policy.",
-      "diet": "herbivore",
-      "locomotion": "quadrupedal",
-      "paleoenvironment": [
-        "fluvial"
-      ],
-      "diagnostic_features": [
-        "Acromion process of the scapula strongly prominent.",
-        "Posterior profile of the scapula strongly sinuous, producing a prominent triangular glenoid process.",
-        "Paired tubercles dorsal to the scapular glenoid fairly prominent and widely separated.",
-        "Postero-dorsal edge of the scapular blade flares prominently posteriorly.",
-        "Lateral process of the ischium modest in size.",
-        "Postero-lateral profile of the ischium moderately concave-arced."
-      ],
-      "appearance": {
-        "integument": "armored"
-      },
-      "identifiers": [
-        {
-          "source": "wikidata",
-          "id": "Q136460910"
-        }
-      ],
-      "species": [
-        {
-          "name": "Utetitan zellaguymondeweyae",
-          "etymology": "Honors Zella Guymon Dewey (1901-2002), the author's maternal grandmother, born in Huntington, Utah — approximately 30 km from the USNM 15560 quarry.",
-          "status": "valid",
-          "type_species": true,
-          "period": {
-            "name": [
-              "Late Cretaceous"
-            ],
-            "stage": [
-              "Maastrichtian"
-            ],
-            "from_ma": 72.2,
-            "to_ma": 66
-          },
-          "location": {
-            "country": "US",
-            "region": "Utah",
-            "formation": "North Horn",
-            "locality": "Joe's Valley, Wasatch Plateau, Emery County",
-            "coordinates": [
-              39.3,
-              -111.2
-            ],
-            "region_code": "US-UT"
-          },
-          "size": {
-            "weight_kg": {
-              "min": 16000,
-              "max": 17000
-            }
-          },
-          "type_specimen": {
-            "specimen_id": [
-              "USNM 15560"
-            ],
-            "specimen_type": "holotype",
-            "institution": "National Museum of Natural History, Smithsonian Institution",
-            "material": "Partial postcranial skeleton including dorsal ribs, caudals 1-30, 25 chevrons, both sternals, the right scapulocoracoid, humerus, radius, ulna, metacarpus, both ischia, and an associated osteoderm.",
-            "completeness": "partial"
-          },
-          "erected_in": "paul2025a",
-          "authors": "Paul, G. S.",
-          "described": 2025
-        }
-      ],
-      "references": [
-        {
-          "id": "paul2025a",
-          "authors": "Paul, G. S.",
-          "year": 2025,
-          "title": "Stratigraphic and anatomical evidence for multiple titanosaurid dinosaur taxa in the Late Cretaceous (Campanian-Maastrichtian) of southwestern North America",
-          "journal": "Geology of the Intermountain West",
-          "publisher": "Utah Geological Association",
-          "volume": "12",
-          "pages": "201-220",
-          "doi": "10.31711/giw.v12.pp201-220",
-          "notes": "Splits USNM 15560 from Alamosaurus into the new genus Utetitan; restricts Alamosaurus to its New Mexican type horizon and erects the subfamily Utetitaninae."
-        }
-      ],
-      "taxonomy": [
-        "Life",
-        "Animalia",
-        "Chordata",
-        "Vertebrata",
-        "Sarcopterygii",
-        "Tetrapoda",
-        "Reptilia",
-        "Archosauria",
-        "Dinosauria",
-        "Saurischia",
-        "Sauropodomorpha",
-        "Bagualosauria",
-        "Plateosauria",
-        "Massopoda",
-        "Sauropodiformes",
-        "Sauropoda",
-        "Gravisauria",
-        "Eusauropoda",
-        "Neosauropoda",
-        "Macronaria",
-        "Camarasauromorpha",
-        "Titanosauriformes",
-        "Somphospondyli",
-        "Titanosauria"
-      ],
-      "authors": "Paul, G. S.",
-      "described": 2025
     },
     "Vagaceratops": {
       "genus": "Vagaceratops",
