@@ -47,15 +47,25 @@ def update_reaudit_queue(slice_root, tier0, tier1_results, run_date):
     ref-id, accumulating the loci that depend on each. Append-only per ref-id;
     an entry is meant to be removed by hand once its paper lands and the loci
     re-audit clean. Two reasons: not-in-corpus (paper missing) and
-    source-incomplete (markdown present but truncated/partial)."""
+    source-incomplete (markdown present but truncated/partial).
+
+    A ref-id listed under the top-level `dismissed` map is adjudicated: it is
+    never re-added to `pending`, however many times a slice re-detects it. That
+    is for references whose citation carries no auditable claim — an orthography
+    or name-misprint pointer, say — where fetching the paper would settle
+    nothing. Deleting such an entry from `pending` alone does not hold, because
+    the next run of its slice would simply re-add it."""
     path = reaudit_queue_path()
     os.makedirs(os.path.dirname(path), exist_ok=True)
     queue = {}
     if os.path.exists(path):
         queue = yaml.safe_load(open(path)) or {}
     pending = queue.setdefault("pending", {})
+    dismissed = queue.get("dismissed") or {}
 
     def add(ref_id, reason, loci):
+        if ref_id in dismissed:
+            return
         entry = pending.get(ref_id)
         if entry is None:
             entry = {"reason": reason, "first_seen": run_date, "slices": [], "loci": []}

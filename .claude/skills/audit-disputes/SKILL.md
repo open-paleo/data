@@ -131,6 +131,16 @@ paper and every truncated/incomplete source, it records which loci to re-audit
 when that paper lands or is repaired. This is how a coverage gap becomes a
 tracked, actionable backlog instead of being silently dropped.
 
+The queue has two top-level sections. Entries under `pending` are live; each is
+removed by hand once its paper lands **and** its loci re-audit clean, so a
+`resolution:` line saying the paper arrived does not by itself retire an entry.
+Entries under `dismissed` are adjudicated and are never re-added to `pending`,
+however many times a slice re-detects them — that is for citations carrying no
+auditable claim (an orthography or name-misprint pointer, where fetching the
+paper would settle nothing). Retire such a reference by moving it to
+`dismissed` with a `reason:` and a `note:`; deleting it from `pending` alone
+does not hold, because the next run of its slice re-adds it.
+
 Before presenting, triage the Tier-1 findings by confidence:
 - **Solid** — condensation clearly contradicts the prose (wrong paper for the
   claim; taxon genuinely absent; direction inverted).

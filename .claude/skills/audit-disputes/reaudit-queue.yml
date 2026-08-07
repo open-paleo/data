@@ -1,3 +1,27 @@
+dismissed:
+  lapparent1955a:
+    dismissed_on: '2026-08-06'
+    loci:
+    - Rhoetosaurus
+    reason: no-auditable-claim
+    note: Cited from genera/R/Rhoetosaurus.yml only for an orthography variant — "Rendered the name
+      as Rhaetosaurus in a review of dinosaurs." That is a statement about a spelling, not a
+      systematic or taxonomic claim, so there is nothing for a Tier-1 semantic check to verify and
+      fetching the paper would settle nothing. Re-open only if the citation is ever repurposed to
+      support a substantive claim.
+    slices:
+    - Sauropoda
+  yadagiri1979a:
+    dismissed_on: '2026-08-06'
+    loci:
+    - Rhoetosaurus
+    reason: no-auditable-claim
+    note: 'Cited from genera/R/Rhoetosaurus.yml only for an orthography variant — "Rendered the name
+      as Rheteosaurus in a report on the Kota sauropod." Same rationale as lapparent1955a: a
+      name-misprint pointer carries no auditable claim. Re-open only if the citation is ever
+      repurposed to support a substantive claim.'
+    slices:
+    - Sauropoda
 pending:
   blows2015a:
     first_seen: '2026-07-09'
@@ -42,6 +66,10 @@ pending:
     loci:
     - Scansoriopterygidae
     reason: not-in-corpus
+    resolution: Paper landed. Markdown and a condensation (condensed/czerkas2002a.json) are both
+      present, so the fetch blocker is discharged; the Scansoriopterygidae locus itself has NOT
+      been re-audited against it yet. Cited from clades/Scansoriopterygidae.yml (erected_in plus
+      a references entry) and genera/S/Scansoriopteryx.yml.
     slices:
     - Dinosauria-clades
   fitzinger1843a:
@@ -49,6 +77,8 @@ pending:
     last_seen: '2026-07-28'
     loci:
     - Megalosauroidea
+    note: Pre-DOI historical erecting paper — will not be findable through DOI resolution, so it
+      needs an archive or library route rather than a Crossref/OpenAlex lookup.
     reason: not-in-corpus
     slices:
     - Dinosauria-clades
@@ -65,17 +95,11 @@ pending:
     last_seen: '2026-07-28'
     loci:
     - Heterodontosauridae
+    note: Pre-DOI historical erecting paper — will not be findable through DOI resolution, so it
+      needs an archive or library route rather than a Crossref/OpenAlex lookup.
     reason: not-in-corpus
     slices:
     - Dinosauria-clades
-  lapparent1955a:
-    first_seen: '2026-07-13'
-    last_seen: '2026-07-13'
-    loci:
-    - Rhoetosaurus
-    reason: not-in-corpus
-    slices:
-    - Sauropoda
   läng2008a:
     first_seen: '2026-07-13'
     last_seen: '2026-07-13'
@@ -97,6 +121,9 @@ pending:
       PDF supplied to the corpus; markdown pending. When it lands: condense, verify the nomen-dubium call,
       create the ref and cite it from the Thecocoelurus dispute alongside naish2001a.'
     reason: fetch-pending
+    resolution: Markdown has landed as naish2002b.md, so the fetch is no longer pending; there is no
+      condensation yet and the Thecocoelurus locus has NOT been re-audited. Note the locus stays
+      blocked regardless — naish2011a, the sole pro-validity treatment, is still missing.
     slices:
     - Ornithomimosauria
   naish2011a:
@@ -128,6 +155,9 @@ pending:
     last_seen: '2026-07-13'
     loci:
     - Mandschurosaurus
+    note: Pre-DOI historical erecting paper — will not be findable through DOI resolution, so it
+      needs an archive or library route rather than a Crossref/OpenAlex lookup. The corpus holds
+      several later Riabinin papers (1930, 1931a/b, 1937, 1939, 1945) but not the 1925.
     reason: not-in-corpus
     slices:
     - Hadrosauridae
@@ -136,6 +166,9 @@ pending:
     last_seen: '2026-07-13'
     loci:
     - Tehuelchesaurus
+    note: Still genuinely absent. The corpus does hold rich1999b.md, but that is a different paper
+      (Rich & Vickers-Rich, "The Hypsilophodontidae from southeastern Australia") and is not a
+      substitute for the Tehuelchesaurus erecting paper.
     reason: not-in-corpus
     slices:
     - Sauropoda
@@ -159,19 +192,13 @@ pending:
       MAIN-TEXT ONLY and does not include these supplements.
     slices:
     - Dinosauria-clades
-  yadagiri1979a:
-    first_seen: '2026-07-13'
-    last_seen: '2026-07-13'
-    loci:
-    - Rhoetosaurus
-    reason: not-in-corpus
-    slices:
-    - Sauropoda
   zhao1986a:
     first_seen: '2026-07-12'
     last_seen: '2026-07-12'
     loci:
     - Monkonosaurus
+    note: Pre-DOI historical erecting paper — will not be findable through DOI resolution, so it
+      needs an archive or library route rather than a Crossref/OpenAlex lookup.
     reason: not-in-corpus
     slices:
     - Stegosauria
