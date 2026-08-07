@@ -2308,12 +2308,124 @@ for (const [filePath, doc] of genusParsed)
     }
 }
 
+// Prose-field traversal, shared by checks 24, 25 and 26.
+//
+// One walk reaches every editorial prose field in the dataset, so a prose
+// field added to a record — or a registry that gains a `notes:` — is picked
+// up by all three prose checks at once. The alternative, a hand-written list
+// of field paths per check, is what left `type_specimen.notes`,
+// `former_ids[].notes`, `iczn_rulings[].notes` and the whole formations
+// registry unchecked, and let the two lists drift apart from each other.
+//
+// Prose is identified by the name of the key holding the string, not by its
+// path: `notes` is prose wherever it appears, `specimen_id` never is. Array
+// elements inherit the key of the array they sit in
+// (`diagnostic_features[3]`). Keys absent from this set hold identifiers,
+// catalogue numbers, enum values, taxon names and place names — none of them
+// ours to restyle.
+const proseKeys = new Set([
+    "description",
+    "diagnostic_features",
+    "etymology",
+    "material",
+    "note",
+    "notes",
+    "reason",
+    "significance",
+    "summary",
+]);
+
+type ProseField = {
+    filePath: string;
+    fieldPath: string;
+    text: string;
+};
+
+/**
+ * Recursively collects every prose field under one parsed YAML value.
+ *
+ * @param node - The value to inspect (object, array, or scalar).
+ * @param filePath - Absolute path of the file `node` was parsed from.
+ * @param fieldPath - Dotted path describing `node`'s location in that file.
+ * @param key - Name of the key holding `node`, or null at the document root.
+ * @param collected - Accumulator the matching fields are appended to.
+ */
+function collectProseFields(node: unknown, filePath: string, fieldPath: string, key: string | null, collected: Array<ProseField>): void
+{
+    if (Array.isArray(node))
+    {
+        for (let index = 0; index < node.length; index += 1)
+        {
+            collectProseFields(node[index], filePath, `${fieldPath}[${index}]`, key, collected);
+        }
+    }
+    else if (node && typeof node === "object")
+    {
+        for (const [childKey, value] of Object.entries(node as Record<string, unknown>))
+        {
+            collectProseFields(value, filePath, fieldPath ? `${fieldPath}.${childKey}` : childKey, childKey, collected);
+        }
+    }
+    else if (typeof node === "string" && key !== null && proseKeys.has(key))
+    {
+        collected.push({ filePath, fieldPath, text: node });
+    }
+}
+
+const proseFields: Array<ProseField> = [];
+
+for (const [filePath, doc] of allParsed)
+{
+    collectProseFields(doc, filePath, "", null, proseFields);
+}
+
+for (const [filePath, entry] of referenceStoreParsed)
+{
+    collectProseFields(entry, filePath, "", null, proseFields);
+}
+
+// The registries are keyed by unit name, institution code and region code,
+// so each top-level entry is walked under its own key rather than from the
+// document root. `regions.yaml` maps a code straight to a string and has no
+// prose today; walking it anyway means a `notes:` added there needs no
+// change here.
+const registrySources: Array<[string, Record<string, unknown>]> = [
+    [path.join(root, "formations.yaml"), formationRegistry as Record<string, unknown>],
+    [path.join(root, "institutions.yaml"), institutionRegistry],
+    [path.join(root, "regions.yaml"), regionRegistry as unknown as Record<string, unknown>],
+];
+
+for (const [filePath, registry] of registrySources)
+{
+    for (const [entryKey, entry] of Object.entries(registry ?? {}))
+    {
+        collectProseFields(entry, filePath, entryKey, null, proseFields);
+    }
+}
+
+/**
+ * Removes double-quoted spans from a prose field. Text quoted verbatim from
+ * a source is not ours to restyle — its spelling and its citation form are
+ * the source's — so the American English and Citation format checks run on
+ * what is left. Each span becomes a space so the words on either side cannot
+ * join into a match that is in neither of them. An unpaired quote is left
+ * alone, since there is no span to bound.
+ *
+ * @param text - The field's string value.
+ * @returns The text with every quoted span replaced by a space.
+ */
+function stripQuotedSpans(text: string): string
+{
+    return text.replace(/"[^"]*"/g, " ");
+}
+
 // 24. American English
 //
 // Surfaces British-English spellings in editorial prose fields so they
 // can be converted to American English (project policy). Skipped:
 // reference titles/journals/publishers/authors (proper-noun metadata
-// preserved verbatim) and species/synonym names (taxon authority).
+// preserved verbatim), species/synonym names (taxon authority), and
+// quoted spans (a quotation is reproduced as its source spelled it).
 startCheck("American English");
 
 /**
@@ -2499,6 +2611,7 @@ const protectedProperNouns: Array<RegExp> = [
     /Royal Tyrrell Museum of Palaeontology/g,
     /Australian Opal Centre/g,
     /Palaeontological collection, Department of Mineral/g,
+    /Nanjing Institute of Geology and Palaeontology/g,
 ];
 
 /**
@@ -2511,7 +2624,7 @@ const protectedProperNouns: Array<RegExp> = [
  */
 function checkAmericanEnglish(filePath: string, fieldPath: string, text: string): void
 {
-    let scrubbed = text;
+    let scrubbed = stripQuotedSpans(text);
 
     for (const phrase of protectedProperNouns)
     {
@@ -2549,158 +2662,19 @@ function checkAmericanEnglish(filePath: string, fieldPath: string, text: string)
     }
 }
 
-for (const [filePath, doc] of allParsed)
+for (const field of proseFields)
 {
-    if (!doc)
-    {
-        continue;
-    }
-
-    if (typeof doc.description === "string")
-    {
-        checkAmericanEnglish(filePath, "description", doc.description);
-    }
-
-    const genus = doc as GenusData;
-
-    if (typeof genus.etymology === "string")
-    {
-        checkAmericanEnglish(filePath, "etymology", genus.etymology);
-    }
-
-    if (genus.dispute)
-    {
-        if (typeof genus.dispute.summary === "string")
-        {
-            checkAmericanEnglish(filePath, "dispute.summary", genus.dispute.summary);
-        }
-
-        for (const update of genus.dispute.history ?? [])
-        {
-            if (typeof update.note === "string")
-            {
-                checkAmericanEnglish(filePath, "dispute.history", update.note);
-            }
-        }
-    }
-
-    if (Array.isArray(genus.diagnostic_features))
-    {
-        for (let index = 0; index < genus.diagnostic_features.length; index += 1)
-        {
-            const feature = genus.diagnostic_features[index];
-
-            if (typeof feature === "string")
-            {
-                checkAmericanEnglish(filePath, `diagnostic_features[${index}]`, feature);
-            }
-        }
-    }
-
-    if (Array.isArray(genus.synonyms))
-    {
-        for (let index = 0; index < genus.synonyms.length; index += 1)
-        {
-            const synonym = genus.synonyms[index];
-
-            if (synonym && typeof synonym.reason === "string")
-            {
-                checkAmericanEnglish(filePath, `synonyms[${index}].reason`, synonym.reason);
-            }
-        }
-    }
-
-    if (Array.isArray(genus.species))
-    {
-        for (let speciesIndex = 0; speciesIndex < genus.species.length; speciesIndex += 1)
-        {
-            const species = genus.species[speciesIndex];
-
-            if (!species)
-            {
-                continue;
-            }
-
-            const speciesLabel = `species[${speciesIndex}]`;
-
-            if (typeof species.etymology === "string")
-            {
-                checkAmericanEnglish(filePath, `${speciesLabel}.etymology`, species.etymology);
-            }
-
-            if (species.type_specimen && typeof species.type_specimen.material === "string")
-            {
-                checkAmericanEnglish(filePath, `${speciesLabel}.type_specimen.material`, species.type_specimen.material);
-            }
-
-            if (species.location && typeof species.location.notes === "string")
-            {
-                checkAmericanEnglish(filePath, `${speciesLabel}.location.notes`, species.location.notes);
-            }
-
-            if (Array.isArray(species.synonyms))
-            {
-                for (let synonymIndex = 0; synonymIndex < species.synonyms.length; synonymIndex += 1)
-                {
-                    const synonym = species.synonyms[synonymIndex];
-
-                    if (synonym && typeof synonym.reason === "string")
-                    {
-                        checkAmericanEnglish(filePath, `${speciesLabel}.synonyms[${synonymIndex}].reason`, synonym.reason);
-                    }
-                }
-            }
-
-            if (Array.isArray(species.diagnostic_features))
-            {
-                for (let featureIndex = 0; featureIndex < species.diagnostic_features.length; featureIndex += 1)
-                {
-                    const feature = species.diagnostic_features[featureIndex];
-
-                    if (typeof feature === "string")
-                    {
-                        checkAmericanEnglish(filePath, `${speciesLabel}.diagnostic_features[${featureIndex}]`, feature);
-                    }
-                }
-            }
-        }
-    }
-
-    if (Array.isArray(doc.references))
-    {
-        for (let index = 0; index < doc.references.length; index += 1)
-        {
-            const reference = doc.references[index];
-
-            if (reference && typeof reference.notes === "string")
-            {
-                checkAmericanEnglish(filePath, `references[${index}].notes`, reference.notes);
-            }
-        }
-    }
-
-    const notableSpecimens = (doc as GenusData).notable_specimens;
-
-    if (Array.isArray(notableSpecimens))
-    {
-        for (let index = 0; index < notableSpecimens.length; index += 1)
-        {
-            const specimen = notableSpecimens[index];
-
-            if (specimen && typeof specimen.significance === "string")
-            {
-                checkAmericanEnglish(filePath, `notable_specimens[${index}].significance`, specimen.significance);
-            }
-        }
-    }
+    checkAmericanEnglish(field.filePath, field.fieldPath, field.text);
 }
 
 // 25. Citation format (paleo-journal hybrid: "Smith (1999)" / "(Smith, 1999)" / "and" not "&")
 //
-// Catches the two most common deviations from project policy:
+// Catches the three most common deviations from project policy:
 //   - "Author & Author" between capitalized names (use "and")
 //   - "(Author Year)" no-comma single-citation parenthetical (use "(Author, Year)")
-// Scoped to the same editorial fields as the American English check.
+//   - bare "Author Year" outside parentheses
+// Runs over the shared prose walk, minus quoted spans: the citation form
+// inside a verbatim quotation is the source's, not ours.
 startCheck("Citation format");
 
 const ampersandPattern = /\b[A-Z][a-z]+\s*&\s*[A-Z][\p{L}]+/gu;
@@ -2709,13 +2683,14 @@ const bareYearPattern = /\b([A-Z][a-z]+(?:\s+(?:and|et al\.)\s+[A-Z][a-z]+)?) ([
 
 /**
  * Capitalized words that frequently precede a four-digit number
- * without being an author surname. Skipping them keeps the bare-year
- * citation check usefully signal-heavy.
+ * without being an author surname. Skipping them keeps the year-shaped
+ * checks usefully signal-heavy: an ICZN Opinion number reads exactly
+ * like an unpunctuated parenthetical citation, "(Opinion 2320)".
  */
-const bareYearDenylist = new Set([
+const yearHeadDenylist = new Set([
     "January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December",
-    "In", "On", "By", "From", "Since", "After", "Before", "Until",
+    "The", "In", "On", "By", "From", "Since", "After", "Before", "Until",
     "Opinion", "Case", "Article", "Recommendation",
     "Note", "Figure", "Table", "Plate", "Volume", "Page", "Section", "Chapter",
 ]);
@@ -2730,7 +2705,8 @@ const bareYearDenylist = new Set([
  */
 function checkCitationFormat(filePath: string, fieldPath: string, text: string): void
 {
-    const ampersandMatches = text.match(ampersandPattern);
+    const scrubbed = stripQuotedSpans(text);
+    const ampersandMatches = scrubbed.match(ampersandPattern);
 
     if (ampersandMatches !== null && ampersandMatches.length > 0)
     {
@@ -2745,29 +2721,38 @@ function checkCitationFormat(filePath: string, fieldPath: string, text: string):
         }
     }
 
-    const noCommaMatches = text.match(noCommaCitationPattern);
+    const reportedNoComma = new Set<string>();
 
-    if (noCommaMatches !== null && noCommaMatches.length > 0)
-    {
-        const unique = [...new Set(noCommaMatches)];
-
-        for (const match of unique)
-        {
-            checkWarning(
-                "Citation format",
-                filePath,
-                `${fieldPath}: "${match}" — single-citation parenthetical needs a comma before the year (project policy)`);
-        }
-    }
-
-    const bareYearMatches = [...text.matchAll(bareYearPattern)];
-    const reportedBare = new Set<string>();
-
-    for (const match of bareYearMatches)
+    for (const match of scrubbed.matchAll(noCommaCitationPattern))
     {
         const head = match[1].split(/\s+/)[0];
 
-        if (bareYearDenylist.has(head))
+        if (yearHeadDenylist.has(head))
+        {
+            continue;
+        }
+
+        const full = match[0];
+
+        if (reportedNoComma.has(full))
+        {
+            continue;
+        }
+
+        reportedNoComma.add(full);
+        checkWarning(
+            "Citation format",
+            filePath,
+            `${fieldPath}: "${full}" — single-citation parenthetical needs a comma before the year (project policy)`);
+    }
+
+    const reportedBare = new Set<string>();
+
+    for (const match of scrubbed.matchAll(bareYearPattern))
+    {
+        const head = match[1].split(/\s+/)[0];
+
+        if (yearHeadDenylist.has(head))
         {
             continue;
         }
@@ -2787,138 +2772,53 @@ function checkCitationFormat(filePath: string, fieldPath: string, text: string):
     }
 }
 
-for (const [filePath, doc] of allParsed)
+for (const field of proseFields)
 {
-    if (!doc)
-    {
-        continue;
-    }
+    checkCitationFormat(field.filePath, field.fieldPath, field.text);
+}
 
-    if (typeof doc.description === "string")
-    {
-        checkCitationFormat(filePath, "description", doc.description);
-    }
+// 26. Reference key in prose
+//
+// Reference keys are pointers. They belong in `id`, `erected_in`,
+// `described_in`, `notable_specimens[].references`, `iczn_rulings.petition`,
+// `iczn_rulings.ruling` and `former_ids[].source` — never in a sentence,
+// where the citation reads "Zhang (2018)" or "(Zhang, 2018)". Scoped to the
+// prose walk, so the ~2,150 keys sitting in pointer fields are never seen.
+//
+// Quoted spans are NOT exempt here, unlike the two style checks above: a
+// verbatim quotation of a source cannot contain one of our keys, so a key
+// inside quotes is a leak like any other.
+startCheck("Reference key in prose");
 
-    const genus = doc as GenusData;
+// Surname, year, disambiguating letter — the same shape check 12c enforces
+// on the store, tightened for use mid-sentence. Lowercase Unicode letters
+// rather than a-z, so surnames carrying Latin Extended-A diacritics are
+// caught (ősi2010a, maryańska1975a, niedźwiedzki2012a), and a two-letter
+// surname is allowed (an2015a, hu2018a). The boundaries are spelled out
+// rather than left to \b, which is ASCII-only even under the u flag and so
+// would report ősi2010a as "si2010a".
+const proseReferenceKeyPattern = /(?<![\p{L}\p{N}])\p{Ll}[\p{Ll}\p{M}.'’-]+\d{4}[a-z](?![\p{L}\p{N}])/gu;
 
-    if (typeof genus.etymology === "string")
-    {
-        checkCitationFormat(filePath, "etymology", genus.etymology);
-    }
+for (const field of proseFields)
+{
+    const reported = new Set<string>();
 
-    if (genus.dispute)
+    for (const match of field.text.match(proseReferenceKeyPattern) ?? [])
     {
-        if (typeof genus.dispute.summary === "string")
+        if (reported.has(match))
         {
-            checkCitationFormat(filePath, "dispute.summary", genus.dispute.summary);
+            continue;
         }
 
-        for (const update of genus.dispute.history ?? [])
-        {
-            if (typeof update.note === "string")
-            {
-                checkCitationFormat(filePath, "dispute.history", update.note);
-            }
-        }
-    }
-
-    if (Array.isArray(genus.diagnostic_features))
-    {
-        for (let index = 0; index < genus.diagnostic_features.length; index += 1)
-        {
-            const feature = genus.diagnostic_features[index];
-
-            if (typeof feature === "string")
-            {
-                checkCitationFormat(filePath, `diagnostic_features[${index}]`, feature);
-            }
-        }
-    }
-
-    if (Array.isArray(genus.synonyms))
-    {
-        for (let index = 0; index < genus.synonyms.length; index += 1)
-        {
-            const synonym = genus.synonyms[index];
-
-            if (synonym && typeof synonym.reason === "string")
-            {
-                checkCitationFormat(filePath, `synonyms[${index}].reason`, synonym.reason);
-            }
-        }
-    }
-
-    if (Array.isArray(genus.species))
-    {
-        for (let speciesIndex = 0; speciesIndex < genus.species.length; speciesIndex += 1)
-        {
-            const species = genus.species[speciesIndex];
-
-            if (!species)
-            {
-                continue;
-            }
-
-            const speciesLabel = `species[${speciesIndex}]`;
-
-            if (typeof species.etymology === "string")
-            {
-                checkCitationFormat(filePath, `${speciesLabel}.etymology`, species.etymology);
-            }
-
-            if (species.type_specimen && typeof species.type_specimen.material === "string")
-            {
-                checkCitationFormat(filePath, `${speciesLabel}.type_specimen.material`, species.type_specimen.material);
-            }
-
-            if (species.location && typeof species.location.notes === "string")
-            {
-                checkCitationFormat(filePath, `${speciesLabel}.location.notes`, species.location.notes);
-            }
-
-            if (Array.isArray(species.synonyms))
-            {
-                for (let synonymIndex = 0; synonymIndex < species.synonyms.length; synonymIndex += 1)
-                {
-                    const synonym = species.synonyms[synonymIndex];
-
-                    if (synonym && typeof synonym.reason === "string")
-                    {
-                        checkCitationFormat(filePath, `${speciesLabel}.synonyms[${synonymIndex}].reason`, synonym.reason);
-                    }
-                }
-            }
-
-            if (Array.isArray(species.diagnostic_features))
-            {
-                for (let featureIndex = 0; featureIndex < species.diagnostic_features.length; featureIndex += 1)
-                {
-                    const feature = species.diagnostic_features[featureIndex];
-
-                    if (typeof feature === "string")
-                    {
-                        checkCitationFormat(filePath, `${speciesLabel}.diagnostic_features[${featureIndex}]`, feature);
-                    }
-                }
-            }
-        }
-    }
-
-    if (Array.isArray(doc.references))
-    {
-        for (let index = 0; index < doc.references.length; index += 1)
-        {
-            const reference = doc.references[index];
-
-            if (reference && typeof reference.notes === "string")
-            {
-                checkCitationFormat(filePath, `references[${index}].notes`, reference.notes);
-            }
-        }
+        reported.add(match);
+        checkError(
+            "Reference key in prose",
+            field.filePath,
+            `${field.fieldPath}: "${match}" — reference keys are pointers, not prose; write the citation narratively ("Zhang (2018)") or parenthetically ("(Zhang, 2018)") (project policy)`);
     }
 }
 
-// 26. Output schema sync — the shipped JSON Schema (schemas/open-paleo.schema.json)
+// 27. Output schema sync — the shipped JSON Schema (schemas/open-paleo.schema.json)
 // inlines the controlled-vocabulary enums for consumers, so they must stay in
 // step with schema.yml (the authoritative source). Drift here means the
 // published contract disagrees with what this validator enforces.
