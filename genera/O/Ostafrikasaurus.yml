@@ -1,0 +1,102 @@
+genus: Ostafrikasaurus
+parent: Theropoda
+placement: incertae sedis
+etymology: From 'Deutsch-Ostafrika', the German name for the colony containing
+  Tendaguru, and Greek 'sauros' ('lizard'); meaning 'East Africa lizard'.
+description: Ostafrikasaurus is a potentially dubious genus of theropod dinosaur
+  from the Late Jurassic period of what is now Lindi Region, Tanzania. It is
+  known only from fossil teeth discovered sometime between 1909 and 1912, during
+  an expedition to the Tendaguru Formation by the Natural History Museum of
+  Berlin. Eight teeth were originally attributed to the dubious dinosaur genus
+  Labrosaurus, and later to Ceratosaurus, both known from the North American
+  Morrison Formation. Subsequent studies attributed two of these teeth to a
+  spinosaurid dinosaur, and in 2012, Ostafrikasaurus crassiserratus was named by
+  French paleontologist Eric Buffetaut, with one tooth as the holotype, and the
+  other referred to the same species. The generic name comes from the German
+  word for German East Africa, the former name of the colony in which the
+  fossils were found, while the specific name comes from the Latin words for
+  "thick" and "serrated", in reference to the form of the animal's teeth.
+dispute:
+  summary: >
+    Ostafrikasaurus is a tooth taxon, erected by Buffetaut (2012) on a single
+    isolated crown from Tendaguru with a second crown referred to it, and
+    assigned to Spinosauridae on tooth morphology. Both the referral and the
+    taxon's validity are rejected by later work, and the referral was doubted
+    before the name existed: Rauhut (2011), examining the same tooth under its
+    earlier assignment, found it closer to the Tendaguru material referred to
+    Ceratosaurus than to baryonychine spinosaurids and reported little positive
+    evidence for a spinosaurid referral, while allowing that one remained
+    possible. Smyth and others (2020) regard the species a nomen dubium for want
+    of confirmable spinosaurid features, argue that spinosaurid teeth are
+    diagnostic only at family or subfamily level and so cannot support tooth
+    taxa at all, and note a plausible case for ceratosaurian affinities. Bandeira
+    and others (2024) call the occurrence dubious without ruling on the name. No
+    source since the description defends the taxon, so it is recorded as a nomen
+    dubium and placed at Theropoda incertae sedis rather than in Spinosauridae.
+  history:
+    - date: "2026-08-07"
+      note: >
+        Intaken as a nomen dubium at Theropoda incertae sedis. The genus was
+        absent from the dataset entirely after an unsupported synonymy was
+        removed from Spinosaurus; see the orphaned-taxa audit. Size fields are
+        omitted: the taxon is known from two teeth and no source measures a body
+        dimension.
+diet: carnivore
+diagnostic_features:
+  - Teeth moderately compressed labiolingually
+  - Enamel finely wrinkled, bearing ridges that are more numerous and more
+    pronounced on the lingual face than on the labial face
+  - Anterior and posterior carinae both serrated
+  - Denticles relatively large, at 2 to 4 denticles per mm along the carinae
+identifiers:
+  - source: pbdb
+    id: "265581"
+  - source: wikidata
+    id: Q2671476
+  - source: eol
+    id: "42333247"
+species:
+  - name: Ostafrikasaurus crassiserratus
+    etymology: From Latin 'crassus' ('thick') and 'serratus' ('serrated'),
+      referring to the large serrations on the carinae.
+    status: nomen dubium
+    type_species: true
+    period:
+      name:
+        - Late Jurassic
+      stage:
+        - Tithonian
+    location:
+      country: TZ
+      locality: Tendaguru
+      region: TZ-12
+      formation: Tendaguru
+      coordinates:
+        - -9.704556
+        - 39.22842
+    type_specimen:
+      specimen_id:
+        - MB.R.1084
+      specimen_type: holotype
+      institution: ZMB
+      material: An isolated tooth crown 46 mm in apicobasal height, moderately
+        compressed labiolingually, with serrated mesial and distal carinae and
+        an enamel ornament of apicobasal ridges and fine wrinkling.
+      completeness: fragmentary
+    erected_in: buffetaut2012a
+references:
+  - id: buffetaut2012a
+    notes: Erects the genus and species on an isolated Tendaguru tooth crown and
+      assigns it to Spinosauridae.
+  - id: rauhut2011a
+    notes: Examines the same tooth under its earlier assignment and reports
+      little positive evidence for a spinosaurid referral, finding it closer to
+      the Tendaguru Ceratosaurus material.
+  - id: smyth2020a
+    notes: Regards the species a nomen dubium for want of confirmable
+      spinosaurid features and notes a plausible case for ceratosaurian
+      affinities.
+  - id: bandeira2024a
+    notes: Calls the Tanzanian occurrence dubious without ruling on the name.
+  - id: mannion2019a
+    notes: Lists the species among the named Tendaguru theropods.
