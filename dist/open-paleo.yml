@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-08-07T23:03:46.773Z
+  built_at: 2026-08-08T01:30:42.918Z
   clade_count: 188
-  genus_count: 1403
+  genus_count: 1405
   license: CC-BY-4.0
   schema_version: 1.6.0
   version: "2026.08"
@@ -11078,6 +11078,7 @@ genera:
         location:
           country: GB
           region: England
+          locality: Foreshore between tide-marks near Folkestone
           formation: West Melbury Marly Chalk
           coordinates:
             - 51.083302
@@ -13110,7 +13111,7 @@ genera:
         location:
           country: FR
           region: Provence-Alpes-Côte d'Azur
-          formation: Mont Ventoux
+          locality: Near Bédoin, Mont Ventoux
           coordinates:
             - 44.116699
             - 5.1667
@@ -13133,6 +13134,7 @@ genera:
         publisher: A. Bertrand, Paris
         pages: 1-271
         doi: 10.5962/bhl.title.39473
+        notes: Gives the humerus as from the green sandstones of Mont Ventoux in the Vaucluse, collected near the village of Bédoin. Names no formation.
     taxonomy:
       - Life
       - Animalia
@@ -13678,6 +13680,7 @@ genera:
         location:
           country: US
           region: Wyoming
+          locality: Black Buttes Station, near the Hallville Coal Mines
           formation: Lance
           coordinates:
             - 41.553501
@@ -13872,6 +13875,7 @@ genera:
         location:
           country: GB
           region: England
+          locality: Durdham Down, Clifton, Bristol
           formation: Magnesian Conglomerate
           coordinates:
             - 51.469166
@@ -13902,6 +13906,16 @@ genera:
         issue: 1-4
         pages: 164-165
         doi: 10.1144/gsl.jgs.1891.047.01-04.14
+        notes: Records the type material only from a label reading "Fly, 1844. Jn. Macgillivray, from the N.E. coast of Australia", from a locality the author states was then unnamed.
+      - id: galton2007a
+        authors: Galton, P. M.
+        year: 2007
+        title: Notes on the remains of archosaurian reptiles, mostly basal sauropodomorph dinosaurs, from the 1834 fissure fill (Rhaetian, Upper Triassic) at Clifton in Bristol, southwest England
+        journal: Revue de Paléobiologie
+        volume: "26"
+        issue: "2"
+        pages: 505-591
+        notes: Traces the type material to Durdham Down, Clifton, rather than the northeastern coast of Australia, following Vickers-Rich and colleagues (1999), and refers it to Thecodontosaurus antiquus.
     taxonomy:
       - Life
       - Animalia
@@ -16451,6 +16465,7 @@ genera:
         location:
           country: ZA
           region: Eastern Cape
+          locality: Port Elizabeth Brick and Tile Company quarry, Despatch, near Uitenhage
           formation: Kirkwood
           coordinates:
             - -33.799999
@@ -26398,6 +26413,7 @@ genera:
         location:
           country: US
           region: Maryland
+          locality: Iron ore bed near Bladensburg
           formation: Arundel
           coordinates:
             - 38.875
@@ -27733,6 +27749,172 @@ genera:
       - Neoceratopsia
     authors: You, H.; Li, D.; Ji, Q.; Lamanna, M. C.; Dodson, P.
     described: 2005
+  Aurornis:
+    genus: Aurornis
+    parent: Anchiornithidae
+    etymology: From Latin 'aurora' ('dawn', 'daybreak') and Greek 'ornis' ('bird'); meaning 'dawn bird'.
+    pronunciation:
+      ipa: /aʊˈrɔːrnɪs/
+    description: Aurornis is an extinct genus of anchiornithid theropod dinosaurs from the Jurassic Period of China. The genus Aurornis contains a single known species, Aurornis xui. Aurornis xui may be the most basal ("primitive") avialan dinosaur known to date, and it is one of the earliest avialans found to date. The fossil evidence for the animal pre-dates that of Archaeopteryx lithographica, often considered the earliest bird species, by about 10 million years.
+    dispute:
+      summary: |
+        Aurornis xui was erected from a complete articulated skeleton and recovered as the basal-most avialan, more basal than Archaeopteryx, with Troodontidae as the sister group of Avialae (Godefroit and others, 2013). Its distinctness has since been challenged: Pei and others (2017), followed by Agnolín and others (2019), regard it as a junior synonym of Anchiornis huxleyi, citing the absence of unambiguous characters separating the two and noting that Aurornis rests on a single specimen from the same beds that have yielded more than two hundred specimens of Anchiornis. That synonymy has not been adopted: Pittman and Xu (2020), Pei and others (2020) and Xu and others (2023) all continue to score Aurornis as a distinct terminal taxon, the last recovering it in an Anchiornithidae uniting Anchiornis, Aurornis, Xiaotingia and Eosinopteryx with their interrelationships unresolved. It is retained here as a valid anchiornithid, and placed at Anchiornithidae rather than at the basal avialan position of the describing paper, which subsequent analyses have not upheld.
+      history:
+        - date: 2026-08-07
+          note: |
+            Intaken at Anchiornithidae and kept valid, following the treatment already applied to Serikornis and Eosinopteryx. The genus was absent from the dataset entirely after an unsupported synonymy was removed from Anchiornis; see the orphaned-taxa audit.
+    diet: carnivore
+    locomotion: bipedal
+    diagnostic_features:
+      - Manual phalanx I-1 distinctly more robust than the radius
+      - Robust postacetabular process of ilium not markedly deflected ventrally, with a horizontal dorsal margin
+      - Distal end of ischium dorsoventrally expanded, formed by a hook-like ventral process delimiting a prominent distal obturator notch and by a longer dorsal distal process
+      - Metatarsal I gracile and elongate, about 30% of metatarsal III length
+    appearance:
+      integument: feathered
+      evidence: direct
+    identifiers:
+      - source: pbdb
+        id: "269467"
+      - source: wikidata
+        id: Q13407566
+      - source: gbif
+        id: "8615455"
+      - source: eol
+        id: "47458664"
+    species:
+      - name: Aurornis xui
+        etymology: Honors Xu Xing, for his contributions to the understanding of feathered dinosaur evolution and biology.
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Oxfordian
+          resolution: unit
+          from_ma: 161.5
+          to_ma: 154.8
+        location:
+          country: CN
+          locality: Yaolugou, Jianchang County
+          region: Liaoning
+          formation: Tiaojishan
+          coordinates:
+            - 40.586391
+            - 119.434402
+          region_code: CN-LN
+        size:
+          length_m:
+            min: 0.51
+            max: 0.51
+        type_specimen:
+          specimen_id:
+            - YFGP-T5198
+          specimen_type: holotype
+          institution: Yizhou Fossil and Geology Park
+          material: Complete articulated skeleton with associated integumentary structures.
+          completeness: complete
+        erected_in: godefroit2013b
+        authors: Godefroit, P.; Cau, A.; Hu, D.-Y.; Escuillié, F.; Wu, W.; Dyke, G.
+        described: 2013
+    references:
+      - id: godefroit2013b
+        authors: Godefroit, P.; Cau, A.; Hu, D.-Y.; Escuillié, F.; Wu, W.; Dyke, G.
+        year: 2013
+        title: A Jurassic avialan dinosaur from China resolves the early phylogenetic history of birds
+        journal: Nature
+        publisher: Springer Science and Business Media LLC
+        volume: "498"
+        issue: "7454"
+        pages: 359-362
+        doi: 10.1038/nature12168
+        notes: Erects the genus and species and recovers it as the basal-most avialan, more basal than Archaeopteryx.
+      - id: agnolín2019a
+        authors: Agnolín, F. L.; Motta, M. J.; Brissón Egli, F.; Lo Coco, G.; Novas, F. E.
+        year: 2019
+        title: "Paravian Phylogeny and the Dinosaur-Bird Transition: An Overview"
+        journal: Frontiers in Earth Science
+        volume: "6"
+        pages: "252"
+        doi: 10.3389/feart.2018.00252
+        notes: Considers Aurornis xui a junior synonym of Anchiornis huxleyi, following Pei and others (2017), on the absence of unambiguous distinguishing characters.
+      - id: pittman2020a
+        authors: Pittman, M.; Xu, X.
+        year: 2020
+        title: Pennaraptoran theropod dinosaurs. Past progress and new frontiers
+        journal: Bulletin of the American Museum of Natural History
+        publisher: American Museum of Natural History
+        volume: "440"
+        issue: "1"
+        pages: 1-355
+        doi: 10.1206/0003-0090.440.1.1
+        notes: Gathers Anchiornis, Aurornis, Eosinopteryx and Xiaotingia into a distinct clade of early-branching avialans.
+      - id: pei2020a
+        authors: Pei, R.; Pittman, M.; Goloboff, P. A.; Dececchi, T. A.; Habib, M. B.; Kaye, T. G.; Larsson, H. C. E.; Norell, M. A.; Brusatte, S. L.; Xu, X.
+        year: 2020
+        title: Potential for Powered Flight Neared by Most Close Avialan Relatives, but Few Crossed Its Thresholds
+        journal: Current Biology
+        publisher: Elsevier BV
+        volume: "30"
+        issue: "20"
+        pages: 4033-4046.e8
+        doi: 10.1016/j.cub.2020.06.105
+        notes: Scores Aurornis as a separate terminal and recovers the anchiornithine paravians as the earliest-diverging avialan clade.
+      - id: xu2023a
+        authors: Xu, L.; Wang, M.; Chen, R.; Dong, L.; Lin, M.; Xu, X.; Tang, J.; You, H.; Zhou, G.; Wang, L.; He, W.; Li, Y.; Zhang, C.; Zhou, Z.
+        year: 2023
+        title: A new avialan theropod from an emerging Jurassic terrestrial fauna
+        journal: Nature
+        publisher: Springer Science and Business Media LLC
+        volume: "621"
+        issue: "7978"
+        pages: 336-343
+        doi: 10.1038/s41586-023-06513-7
+        notes: Recovers an Anchiornithidae uniting Anchiornis, Aurornis, Xiaotingia and Eosinopteryx, with their interrelationships unresolved.
+      - id: hu2018a
+        authors: Hu, D.; Clarke, J. A.; Eliason, C. M.; Qiu, R.; Li, Q.; Shawkey, M. D.; Zhao, C.; D'Alba, L.; Jiang, J.; Xu, X.
+        year: 2018
+        title: A bony-crested Jurassic dinosaur with evidence of iridescent plumage highlights complexity in early paravian evolution
+        journal: Nature Communications
+        publisher: Springer Science and Business Media LLC
+        volume: "9"
+        issue: "1"
+        doi: 10.1038/s41467-017-02515-y
+        notes: Distinguishes Caihong juji from Aurornis xui and the other Yanliao paravians, and reports the integument.
+      - id: lefèvre2017a
+        authors: Lefèvre, U.; Cau, A.; Cincotta, A.; Hu, D.; Chinsamy, A.; Escuillié, F.; Godefroit, P.
+        year: 2017
+        title: A new Jurassic theropod from China documents a transitional step in the macrostructure of feathers
+        journal: The Science of Nature
+        publisher: Springer Science and Business Media LLC
+        volume: "104"
+        issue: 9-10
+        doi: 10.1007/s00114-017-1496-y
+        notes: Source of the Oxfordian dating of the Tiaojishan Formation, and comparative caudal counts.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Avetheropoda
+      - Coelurosauria
+      - Maniraptora
+      - Paraves
+      - Eumaniraptora
+      - Anchiornithidae
+    authors: Godefroit, P.; Cau, A.; Hu, D.-Y.; Escuillié, F.; Wu, W.; Dyke, G.
+    described: 2013
   Australodocus:
     genus: Australodocus
     parent: Somphospondyli
@@ -35540,6 +35722,7 @@ genera:
         location:
           country: US
           region: Montana
+          locality: Milk River, Blackfeet Indian Reservation, Teton County
           formation: Two Medicine
           coordinates:
             - 48.9646
@@ -45177,10 +45360,8 @@ genera:
         location:
           country: GB
           region: England
+          locality: Submerged Wealden deposit, south coast of the Isle of Wight
           formation: Wessex
-          coordinates:
-            - 50.639
-            - -1.428
           region_code: GB-ENG
         type_specimen:
           specimen_id:
@@ -46263,9 +46444,6 @@ genera:
           country: US
           region: Colorado
           formation: Laramie
-          coordinates:
-            - 40.285278
-            - -106.860558
           region_code: US-CO
         type_specimen:
           specimen_id:
@@ -46286,13 +46464,14 @@ genera:
         volume: "1"
         issue: "1"
         pages: 9-22
+        notes: Names the species in a footnote, on a collection made by an assistant from strata in Colorado the author correlates with the Great Lignite, without a locality.
       - id: cope1875a
         authors: Cope, E. D.
         year: 1875
         title: Report on the Vertebrate Paleontology of Colorado
         journal: United States Geological Survey of the Territories
         pages: 429-533
-        notes: Fuller redescription of Cionodon arctatus; corrects the original spelling Cinodon (a proofreader's error in Cope, 1874) to Cionodon.
+        notes: Fuller redescription; corrects the original spelling Cinodon (a proofreader's error) to Cionodon. Places the material at one of two localities in Colorado "not many miles apart", neither named.
       - id: riabinin1931b
         authors: Riabinin, A. N.
         year: 1931
@@ -46799,9 +46978,7 @@ genera:
           country: AR
           region: Santa Cruz
           formation: Mata Amarilla
-          coordinates:
-            - -49.583328
-            - -69.566673
+          notes: The erecting paper places the type teeth no more finely than the Cretaceous of Patagonia, in the Guaranitic formation, an obsolete name covering much of the Patagonian Upper Cretaceous. No province, locality or modern formation is published there.
           region_code: AR-Z
         type_specimen:
           specimen_type: syntype
@@ -46809,19 +46986,17 @@ genera:
           institution: Museo de La Plata
           material: Three teeth (one cylindrical crown fragment with root base, one apical crown fragment, and one small nearly complete posterior crown); Huene (1929) figured them as plate 40, figs. 3-5.
           completeness: fragmentary
-        erected_in: ameghino1898a
+        erected_in: ameghino1899b
         described_in: huene1929a
         authors: Ameghino, F.
-        described: 1898
+        described: 1899
     references:
-      - id: ameghino1898a
+      - id: ameghino1899b
         authors: Ameghino, F.
-        year: 1898
-        title: Sinopsis geológico-paleontológica [Geological-paleontological synopsis]
-        book: Segundo Censo de la República Argentina
-        volume: "1"
-        pages: 111-255
-        notes: In Spanish. Establishes Clasmodosaurus spatula on teeth; available under ICZN Article 12 (pre-1931), though widely regarded as a nomen dubium.
+        year: 1899
+        title: Sinopsis geológico-paleontológica. Suplemento (adiciones y correcciones) [Geological-paleontological synopsis. Supplement (additions and corrections)]
+        pages: 1-13
+        notes: In Spanish. Erects Clasmodosaurus spatula (p. 9) with a short diagnosis of the teeth, allying it with Ornithopsis Seeley; available under ICZN Article 12, though widely regarded as a nomen dubium.
       - id: huene1929a
         authors: Huene, F. V.
         year: 1929
@@ -46829,7 +47004,7 @@ genera:
         journal: Anales del Museo de La Plata, series 3
         volume: "3"
         pages: 1-196
-        notes: First detailed description and illustration of Clasmodosaurus spatula (plate 40, figs. 3-5), redescribing the teeth Ameghino named in 1898.
+        notes: First detailed description and illustration of Clasmodosaurus spatula (plate 40, figs. 3-5), redescribing the teeth Ameghino named in 1899.
     taxonomy:
       - Life
       - Animalia
@@ -46848,7 +47023,7 @@ genera:
       - Sauropodiformes
       - Sauropoda
     authors: Ameghino, F.
-    described: 1898
+    described: 1899
   Coahuilaceratops:
     genus: Coahuilaceratops
     parent: Chasmosaurinae
@@ -49250,6 +49425,7 @@ genera:
         location:
           country: BE
           region: Namur
+          locality: Lonzée
           member: Lonzée
           coordinates:
             - 50.55
@@ -49373,10 +49549,8 @@ genera:
         location:
           country: GB
           region: England
+          locality: Potton Sands, near Potton
           formation: Woburn Sand
-          coordinates:
-            - 52.116699
-            - 0.2
           region_code: GB-ENG
         size:
           length_m:
@@ -50284,6 +50458,7 @@ genera:
         location:
           country: GB
           region: Cambridgeshire
+          locality: Great Gransden
           formation: Ampthill Clay
           coordinates:
             - 52.1833
@@ -50310,6 +50485,7 @@ genera:
         issue: 1-4
         pages: 149-151
         doi: 10.1144/gsl.jgs.1875.031.01-04.12
+        notes: Describes the femur as from the Oxford Clay of Great Gransden, the source of the locality.
       - id: seeley1869b
         authors: Seeley, H. G.
         year: 1869
@@ -53194,6 +53370,198 @@ genera:
       - Eudromaeosauria
     authors: Ostrom, J. H.
     described: 1969
+  Delapparentia:
+    genus: Delapparentia
+    parent: Styracosterna
+    placement: incertae sedis
+    etymology: Honors Albert Félix de Lapparent (1905-1975), who first studied this skeleton and pioneered dinosaur paleontology in Spain.
+    description: Delapparentia is a genus of iguanodont dinosaur from the Early Cretaceous period of Galve, Teruel Province, Spain.
+    dispute:
+      summary: |
+        The validity of Delapparentia is contested. Ruiz-Omeñaca (2011) erected the genus for a postcranial skeleton that Lapparent had assigned to Iguanodon bernissartensis in 1960, diagnosing it on three autapomorphies. Norman subsequently treated it as a nomen dubium. Gasca and others (2015) redescribed the holotype, added an axial neural arch and a scapular fragment to it, emended the diagnosis to a single autapomorphy of the axis plus a unique combination of postcranial characters, and argued for validity. Verdú and others (2017) went the other way, reporting that comparison revealed no significant differences from Iguanodon and figuring the holotype material as Iguanodon sp. Rotatori and others (2026) again recover it as a distinct terminal taxon. Its position is unresolved in step with this: Gasca and others (2015) place it in an unresolved polytomy outside Iguanodontoidea alongside Barilium and Lanzhousaurus, whereas Rotatori and others (2026) recover it within Iguanodontidae in an Iberian Barremian clade with 'Iguanodon' galvensis and Magnamanus soriaensis, arguing the resulting paraphyly requires narrowing Iguanodon. It is placed at Styracosterna incertae sedis, the least inclusive clade common to those hypotheses.
+      history:
+        - date: 2026-08-07
+          note: |
+            Intaken at Styracosterna incertae sedis with the species marked disputed. The genus was absent from the dataset entirely after an unsupported synonymy was removed from Iguanodon; see the orphaned-taxa audit. diagnostic_features follow the emended diagnosis of Gasca and others (2015), which supersedes the original.
+    diet: herbivore
+    diagnostic_features:
+      - Axis with a tall neural spine, its height from the base of the postzygapophysis being greater than half the length of the neural arch.
+      - Lateral surface of the preacetabular process of the ilium twists around its long axis toward its anterior end so that it comes to face almost dorsally.
+      - Rim of the sacrodorsal rib facet is visible, in lateral view, in the preacetabular notch of the ilium.
+      - In profile, the dorsal edge of the ilium is practically straight between the anterior end of the preacetabular process and the part dorsal to the ischial peduncle.
+      - Anterior caudal vertebrae have dorsoventrally expanded (higher than wide) centra.
+      - Neural spines of the caudal vertebrae are elongated, posterodorsally inclined and transversely thickened.
+    identifiers:
+      - source: pbdb
+        id: "251719"
+      - source: wikidata
+        id: Q1706554
+      - source: gbif
+        id: "162880132"
+      - source: eol
+        id: "47460210"
+    species:
+      - name: Delapparentia turolensis
+        etymology: Dedicated to Teruel province, Spain, where the holotype was found, and to the journal Teruel, in which the material was first described.
+        status: disputed
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Barremian
+          from_ma: 125.77
+          to_ma: 121.4
+        location:
+          country: ES
+          locality: La Maca 3, Galve
+          region: Aragon
+          formation: Camarillas
+          coordinates:
+            - 40.654675
+            - -0.861015
+          region_code: ES-AR
+        type_specimen:
+          specimen_id:
+            - MPT/I.G.446
+            - MPT/I.G.447
+            - MPT/I.G.448
+            - MPT/I.G.449
+            - MPT/I.G.450
+            - MPT/I.G.450bis
+            - MPT/I.G.451
+            - MPT/I.G.452
+            - MPT/I.G.454
+            - MPT/I.G.455
+            - MPT/I.G.456
+            - MPT/I.G.457
+            - MPT/I.G.458
+            - MPT/I.G.459
+            - MPT/I.G.460
+            - MPT/I.G.461
+            - MPT/I.G.462
+            - MPT/I.G.464
+            - MPT/I.G.465
+            - MPT/I.G.466
+            - MPT/I.G.467
+            - MPT/I.G.468
+            - MPT/I.G.469
+            - MPT/I.G.470
+            - MPT/I.G.471
+            - MPT/I.G.472
+            - MPT/I.G.478
+            - MPT/I.G.481
+            - MPT/I.G.488
+          specimen_type: holotype
+          institution: Museo de Teruel
+          material: "Partial postcranial skeleton of one individual: cervical, dorsal and sacral vertebrae, nine anterior caudals, rib and sternal-rib fragments, chevrons, ossified tendons, and an incomplete left ilium, prepubis and ischium. One further fragment is uncatalogued."
+          completeness: partial
+        erected_in: ruiz-omeñaca2011a
+        authors: Ruiz-Omeñaca, J. I.
+        described: 2011
+    references:
+      - id: ruiz-omeñaca2011a
+        authors: Ruiz-Omeñaca, J. I.
+        year: 2011
+        title: "Delapparentia turolensis nov. gen et sp., un nuevo dinosaurio iguanodontoideo (Ornithischia: Ornithopoda) en el Cretácico Inferior de Galve"
+        journal: Estudios Geológicos
+        publisher: Editorial CSIC
+        volume: "67"
+        issue: "1"
+        pages: 83-110
+        doi: 10.3989/egeol.40276.124
+        notes: Erects the genus for a skeleton Lapparent had assigned to Iguanodon bernissartensis, and enumerates the holotype elements in its appendix.
+      - id: gasca2015a
+        authors: Gasca, J. M.; Moreno-Azanza, M.; Ruiz-Omeñaca, J. I.; Canudo, J. I.
+        year: 2015
+        title: New material and phylogenetic position of the basal iguanodont dinosaur Delapparentia turolensis from the Barremian (Early Cretaceous) of Spain
+        journal: Journal of Iberian Geology
+        publisher: Universidad Complutense de Madrid
+        volume: "41"
+        issue: "1"
+        doi: 10.5209/rev_jige.2015.v41.n1.48655
+        notes: Redescribes the holotype, adds an axial neural arch and scapular fragment, emends the diagnosis, and argues for validity.
+      - id: verdú2017a
+        authors: Verdú, F. J.; Royo-Torres, R.; Cobos, A.; Alcalá, L.
+        year: 2017
+        title: "New systematic and phylogenetic data about the early Barremian Iguanodon galvensis (Ornithopoda: Iguanodontoidea) from Spain"
+        journal: Historical Biology
+        volume: "30"
+        issue: "4"
+        pages: 437-474
+        doi: 10.1080/08912963.2017.1287179
+        notes: Reports no significant differences from Iguanodon and figures the holotype material as Iguanodon sp.
+      - id: rotatori2026a
+        authors: Rotatori, F. M.; Chiarenza, A. A.; Fanti, F.; Moreno-Azanza, M.
+        year: 2026
+        title: "The early origin of Iguanodontia: new insights into the macroevolution, diversity and biogeography of the clade"
+        journal: Palaeontology
+        volume: "69"
+        issue: "2"
+        pages: e70057
+        doi: 10.1111/pala.70057
+        notes: Recovers the genus as a distinct terminal in an Iberian Barremian clade with 'Iguanodon' galvensis and Magnamanus soriaensis.
+      - id: verdú2015a
+        authors: Verdú, F. J.; Royo-Torres, R.; Cobos, A.; Alcalá, L.
+        year: 2015
+        title: "Perinates of a new species of Iguanodon (Ornithischia: Ornithopoda) from the lower Barremian of Galve (Teruel, Spain)"
+        journal: Cretaceous Research
+        volume: "56"
+        pages: 250-264
+        doi: 10.1016/j.cretres.2015.05.010
+        notes: Describes Iguanodon galvensis and compares it directly with Delapparentia.
+      - id: gasulla2015a
+        authors: Gasulla, J. M.; Escaso, F.; Narváez, I.; Ortega, F.; Sanz, J. L.
+        year: 2015
+        title: "A New Sail-Backed Styracosternan (Dinosauria: Ornithopoda) from the Early Cretaceous of Morella, Spain"
+        journal: PLOS ONE
+        publisher: Public Library of Science (PLoS)
+        volume: "10"
+        issue: "12"
+        pages: e0144167
+        doi: 10.1371/journal.pone.0144167
+        notes: Lists the genus among the Iberian styracosternans in the description of Morelladon.
+      - id: santoscubedo2021a
+        authors: Santos-Cubedo, A.; Santisteban, C. D.; B. Poza, S. M.
+        year: 2021
+        title: "A new styracosternan hadrosauroid (Dinosauria: Ornithischia) from the Early Cretaceous of Portell, Spain"
+        journal: PLoS ONE
+        volume: "16"
+        issue: "7"
+        pages: e0253599:1-30
+        doi: 10.1371/journal.pone.0253599
+        notes: Notes that no dentary has been described for the genus, in the description of Portellsaurus.
+      - id: mcdonald2012a
+        authors: McDonald, A. T.; Espílez, E.; Mampel, L.; Kirkland, J. I.; Alcalá, L.
+        year: 2012
+        title: "An unusual new basal iguanodont (Dinosauria: Ornithopoda) from the Lower Cretaceous of Teruel, Spain"
+        journal: Zootaxa
+        publisher: Magnolia Press
+        volume: "3595"
+        issue: "1"
+        doi: 10.11646/zootaxa.3595.1.3
+        notes: Basal iguanodont phylogeny underlying the matrix later used for the genus.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Ornithischia
+      - Genasauria
+      - Neornithischia
+      - Cerapoda
+      - Ornithopoda
+      - Iguanodontia
+      - Dryomorpha
+      - Ankylopollexia
+      - Styracosterna
+    authors: Ruiz-Omeñaca, J. I.
+    described: 2011
   Deltadromeus:
     genus: Deltadromeus
     parent: Averostra
@@ -54021,14 +54389,14 @@ genera:
           name:
             - Late Cretaceous
           stage:
-            - Maastrichtian
-          from_ma: 72.2
-          to_ma: 66
+            - Campanian
+          from_ma: 83.6
+          to_ma: 72.2
         location:
           country: US
           region: Montana
-          formation: Hell Creek
-          notes: The erecting paper locates the holotype no more finely than "the Fort Union Beds of Montana", a nineteenth-century usage that took in strata now separated as the Hell Creek Formation and the Paleocene Fort Union Formation. No locality within Montana is published, so none is recorded.
+          formation: Judith River
+          notes: The erecting paper is titled for "the Fort Union Beds of Montana", but uses that name for the Fort Union bad lands of the Judith River, placing the type material at the locality that also yielded Trachodon mirabilis and Palaeoscincus costatus. No locality within Montana is published, so none is recorded.
           region_code: US-MT
         type_specimen:
           specimen_id:
@@ -54048,7 +54416,7 @@ genera:
         journal: Proceedings of the Academy of Natural Sciences of Philadelphia
         volume: "28"
         pages: 248-261
-        notes: Erects the species on teeth from "the Fort Union Beds of Montana", giving no locality or horizon beyond that.
+        notes: Erects the species on teeth from "the Fort Union Beds of Montana", which the text equates with the bad lands of the Judith River. Gives no locality beyond that.
     taxonomy:
       - Life
       - Animalia
@@ -70673,6 +71041,7 @@ genera:
         location:
           country: ZA
           region: Eastern Cape
+          locality: Road-cutting near the summit of Barkly Pass, near Elliot
           formation: Clarens
           coordinates:
             - -31.450001
@@ -71316,6 +71685,7 @@ genera:
         location:
           country: ZA
           region: Limpopo
+          locality: Haakdoornbult 344, Waterberg District
           formation: Bushveld Sandstone
           coordinates:
             - -23.833332
@@ -74345,13 +74715,11 @@ genera:
           from_ma: 201.4
           to_ma: 192.9
         location:
-          country: ZW
-          region: Matabeleland North
-          formation: Forest Sandstone
-          coordinates:
-            - -19.893801
-            - 28.917299
-          region_code: ZW-MN
+          country: ZA
+          region: Free State
+          locality: Foutani farm, near Fouriesburg
+          formation: Elliot
+          region_code: ZA-FS
         size:
           length_m:
             min: 5
@@ -74377,6 +74745,7 @@ genera:
         volume: "7"
         issue: "4"
         pages: 291-308
+        notes: Records the type material from the farm Foutani, near Fouriesburg in the Orange Free State, and from the Red beds of the Stormberg Series.
       - id: vasconcelos2004a
         authors: Vasconcelos, C. C.; Yates, A. M.
         year: 2004
@@ -78378,6 +78747,7 @@ genera:
         location:
           country: US
           region: Kansas
+          locality: Five miles south of Castle Rock and three miles south of Hackberry Creek
           formation: Niobrara
           coordinates:
             - 38.788891
@@ -81562,12 +81932,10 @@ genera:
           to_ma: 72.2
         location:
           country: US
-          region: New Jersey
-          formation: Marshalltown
-          coordinates:
-            - 40.299999
-            - -74.300003
-          region_code: US-NJ
+          region: North Carolina
+          locality: Marl pits of James King, Sampson County
+          formation: Black Creek
+          region_code: US-NC
         size:
           length_m:
             min: 12
@@ -81632,6 +82000,7 @@ genera:
         journal: Proceedings of the Academy of Natural Sciences of Philadelphia
         volume: "21"
         pages: 191-192
+        notes: Records the type material from Sampson County, North Carolina, of Cretaceous age but intrusive in Miocene beds, without a closer locality.
       - id: gilmore1945a
         authors: Gilmore, C. W.; Stewart, D. R.
         year: 1945
@@ -81660,7 +82029,7 @@ genera:
         volume: "2"
         pages: 1-28
         url: https://www.biodiversitylibrary.org/part/442233
-        notes: Referred Parrosaurus missouriensis to Hypsibema, keeping it separate from H. crassicauda pending better material.
+        notes: Referred Parrosaurus missouriensis to Hypsibema. Traces the type material of H. crassicauda to the marl pits of James King in Sampson County, in the "blue marl", now the Black Creek Formation.
     taxonomy:
       - Life
       - Animalia
@@ -95241,6 +95610,7 @@ genera:
         location:
           country: US
           region: Wyoming
+          locality: Como Bluff
           formation: Morrison
           coordinates:
             - 41.9077
@@ -95267,6 +95637,7 @@ genera:
         issue: "87"
         pages: 241-244
         doi: 10.2475/ajs.s3-15.87.241
+        notes: Gives the provenance only as the Atlantosaurus beds of the Rocky Mountains, naming neither a state nor a locality.
       - id: galton1977a
         authors: Galton, P. M.
         year: 1977
@@ -95284,7 +95655,7 @@ genera:
         journal: Geologica et Palaeontologica
         volume: "17"
         pages: 207-243
-        notes: Gives the Laosaurus celer holotype as YPM 1874 (fragmentary caudal material) and regards the type species as an indeterminate nomen dubium.
+        notes: Gives the holotype as YPM 1874 (fragmentary caudal material) and the type species as an indeterminate nomen dubium. Traces it to Como Bluff, the source of the locality, but not to any quarry there.
     taxonomy:
       - Life
       - Animalia
@@ -100244,10 +100615,8 @@ genera:
         location:
           country: AR
           region: Santa Cruz
+          locality: Río Sehuen
           formation: Mata Amarilla
-          coordinates:
-            - -49.583328
-            - -69.566673
           region_code: AR-Z
         size:
           length_m:
@@ -100271,6 +100640,7 @@ genera:
         journal: Anales de la Sociedad Científica Argentina
         volume: "47"
         pages: 61-62
+        notes: Records the type material as found by Carlos Ameghino in the Guarani formation of the Río Sehuen, in a red sandstone resting on a bed of Ostrea guaranitica, without a closer locality.
       - id: norman2004a
         authors: Norman, D. B.
         year: 2004
@@ -102776,9 +103146,6 @@ genera:
           country: GB
           region: England
           formation: West Melbury Marly Chalk
-          coordinates:
-            - 52.205555
-            - 0.157222
           region_code: GB-ENG
         size:
           length_m:
@@ -102803,6 +103170,7 @@ genera:
         volume: "32"
         pages: 440-444
         doi: 10.1144/GSL.JGS.1876.032.01-04.50
+        notes: Gives the provenance as the Cambridge Upper Greensand, naming the unit but no collecting locality within it.
     taxonomy:
       - Life
       - Animalia
@@ -108615,9 +108983,6 @@ genera:
           country: AR
           region: Neuquén
           formation: Bajo de la Carpa
-          coordinates:
-            - -38.950001
-            - -68.23333
           region_code: AR-Q
         type_specimen:
           specimen_type: holotype
@@ -110524,6 +110889,7 @@ genera:
         location:
           country: AT
           region: Lower Austria
+          locality: Neue Welt, west of Wiener Neustadt
           formation: Grünbach
           coordinates:
             - 47.82
@@ -111695,7 +112061,7 @@ genera:
         location:
           country: FR
           region: Hauts-de-France
-          formation: Unnamed (near Boulogne-sur-Mer, Pas-de-Calais)
+          locality: Boulogne-sur-Mer
           coordinates:
             - 50.769722
             - 1.611667
@@ -111717,6 +112083,7 @@ genera:
         volume: "10"
         issue: "2"
         pages: 1-57
+        notes: Places the type tooth in the upper Jurassic formations of Boulogne, naming no formation and no locality within the area.
     taxonomy:
       - Life
       - Animalia
@@ -115850,6 +116217,7 @@ genera:
         location:
           country: FR
           region: Hauts-de-France
+          locality: Ferruginous sands at Wimille
           formation: Sables et Grès à Trigonia gibbosa
           coordinates:
             - 50.748653
@@ -115880,6 +116248,7 @@ genera:
         journal: Bulletin de la Société Géologique de France, 3e série
         volume: "13"
         pages: 51-54
+        notes: Reports the tooth from the ferruginous sands of Wimille, in a quarry yielding an Upper Portlandian fauna.
       - id: molina-pérez2020a
         authors: Molina-Pérez, R.; Larramendi, A.
         year: 2020
@@ -121842,10 +122211,8 @@ genera:
         location:
           country: ZA
           region: Eastern Cape
+          locality: Stormberg range, about thirty miles from Aliwal North
           formation: Elliot
-          coordinates:
-            - -30.950001
-            - 26.616667
           region_code: ZA-EC
         erected_in: huxley1867b
         type_specimen:
@@ -126337,7 +126704,7 @@ genera:
         id: "4822821"
     species:
       - name: Paronychodon lacustris
-        etymology: From Latin 'lacustris' meaning 'belonging to a lake' or 'lake-dwelling', referencing the marshy, lacustrine environment of the Judith River Formation where the holotype was found.
+        etymology: From Latin 'lacustris' meaning 'belonging to a lake' or 'lake-dwelling', referencing the marshy, lacustrine environment inferred for the beds that yielded the holotype.
         status: nomen dubium
         type_species: true
         period:
@@ -126351,9 +126718,7 @@ genera:
           country: US
           region: Montana
           formation: Judith River
-          coordinates:
-            - 47.7333
-            - -109.6333
+          notes: The erecting paper is titled for "the Fort Union Beds of Montana", but uses that name for the Fort Union bad lands of the Judith River, and later workers likewise place its fauna in the Judithian beds of Montana. No locality within Montana is published, so none is recorded.
           region_code: US-MT
         type_specimen:
           specimen_id:
@@ -126373,6 +126738,18 @@ genera:
         journal: Proceedings of the Academy of Natural Sciences of Philadelphia
         volume: "28"
         pages: 248-261
+        notes: Erects the species on teeth from "the Fort Union Beds of Montana", which the text equates with the bad lands of the Judith River. Gives no locality beyond that.
+      - id: currie2019a
+        authors: Currie, P. J.; Evans, D. C.
+        year: 2019
+        title: Cranial Anatomy of New Specimens of Saurornitholestes langstoni (Dinosauria, Theropoda, Dromaeosauridae) from the Dinosaur Park Formation (Campanian) of Alberta
+        journal: The Anatomical Record
+        publisher: Wiley
+        volume: "303"
+        issue: "4"
+        pages: 691-715
+        doi: 10.1002/ar.24241
+        notes: Places the tooth taxa named in this paper and its companion among species from the Judithian-aged beds of Montana, the source of the formation.
     taxonomy:
       - Life
       - Animalia
@@ -128354,6 +128731,7 @@ genera:
         location:
           country: US
           region: New Mexico
+          locality: Nine miles northeast of Tsaya
           formation: Fruitland
           coordinates:
             - 36.285702
@@ -131664,6 +132042,7 @@ genera:
         location:
           country: GB
           region: England
+          locality: Bolney
           formation: Weald Clay
           coordinates:
             - 50.983299
@@ -132009,9 +132388,6 @@ genera:
           country: US
           region: Colorado
           formation: Laramie
-          coordinates:
-            - 40.285278
-            - -106.860558
           region_code: US-CO
         type_specimen:
           specimen_id:
@@ -132032,13 +132408,14 @@ genera:
         volume: "1"
         issue: "1"
         pages: 9-22
+        notes: Names the species in a footnote, on a collection made by an assistant from strata in Colorado the author correlates with the Great Lignite, without a locality.
       - id: cope1875a
         authors: Cope, E. D.
         year: 1875
         title: Report on the Vertebrate Paleontology of Colorado
         journal: United States Geological Survey of the Territories
         pages: 429-533
-        notes: Provides a fuller description of Polyonax mortuarius than the original 1874 notice.
+        notes: Provides a fuller description of Polyonax mortuarius than the original 1874 notice. Places the material at one of two localities in Colorado "not many miles apart", neither of them named.
       - id: hatcher1907a
         authors: Hatcher, J. B.; Marsh, O. C.; Lull, R. S.
         year: 1907
@@ -132688,10 +133065,8 @@ genera:
         location:
           country: US
           region: Maryland
+          locality: Prince George's County
           formation: Arundel Clay
-          coordinates:
-            - 39.030499
-            - -76.8694
           region_code: US-MD
         type_specimen:
           specimen_id:
@@ -132714,7 +133089,7 @@ genera:
         issue: "205"
         pages: 89-94
         doi: 10.2475/ajs.s3-35.205.89
-        notes: Erected Priconodon crassus on a tooth from the Arundel Formation of Maryland.
+        notes: Erected Priconodon crassus on a tooth, giving the provenance only as the Potomac formation of Prince George County, Maryland, without a closer locality.
       - id: olshevsky1991a
         authors: Olshevsky, G.
         year: 1991
@@ -135353,6 +135728,7 @@ genera:
         location:
           country: DE
           region: Saxony-Anhalt
+          locality: Halberstadt
           formation: Trossingen
           coordinates:
             - 51.897499
@@ -139475,9 +139851,6 @@ genera:
           country: GB
           region: England
           formation: Tunbridge Wells Sand
-          coordinates:
-            - 51.086388
-            - -0.172222
           region_code: GB-ENG
         size:
           length_m:
@@ -139502,6 +139875,7 @@ genera:
         volume: "138"
         pages: 183-202
         doi: 10.1098/rstl.1848.0013
+        notes: Names the species on a jaw found by Captain Lambart Brickenden of Warninglid, Sussex, without recording where the specimen was collected.
       - id: maidment2008a
         authors: Maidment, S. C. R.; Norman, D. B.; Barrett, P. M.; Upchurch, P.
         year: 2008
@@ -160173,7 +160547,7 @@ genera:
         location:
           country: FR
           region: Hauts-de-France
-          formation: Mont-Lambert
+          locality: Boulogne-sur-Mer
           coordinates:
             - 50.766701
             - 1.6333
@@ -160204,6 +160578,7 @@ genera:
         journal: Palaeobiologica
         volume: "1"
         pages: 163-188
+        notes: Introduces the name in a classification of reptile genera, without a description, a horizon or a locality.
       - id: huene1932a
         authors: Huene, F. V.
         year: 1932
@@ -160212,7 +160587,7 @@ genera:
         volume: "4"
         issue: 1-2
         pages: 1-361
-        notes: Names Caudocoelus sauvagei for the same distal caudal vertebra already designated Teinurosaurus by Nopcsa (1928); Caudocoelus is a junior objective synonym.
+        notes: Names Caudocoelus sauvagei for the same vertebra already designated Teinurosaurus by Nopcsa (1928), so a junior objective synonym. Gives it as from the Kimmeridge of Boulogne-sur-Mer.
     taxonomy:
       - Life
       - Animalia
@@ -162124,10 +162499,8 @@ genera:
         location:
           country: GB
           region: England
+          locality: Quarry at Southborough, near Tonbridge
           formation: Hastings Sand
-          coordinates:
-            - 51.150002
-            - 0.15
           region_code: GB-ENG
         erected_in: seeley1882a
         type_specimen:
@@ -162150,6 +162523,7 @@ genera:
         issue: 1-4
         pages: 457-459
         doi: 10.1144/gsl.jgs.1882.038.01-04.47
+        notes: Records the specimen as obtained by Dr. A. C. Horner of Tonbridge from the quarry at Southborough, in the Hastings Sand.
     taxonomy:
       - Life
       - Animalia
@@ -162717,13 +163091,11 @@ genera:
           from_ma: 72.2
           to_ma: 66
         location:
-          country: CA
-          region: Saskatchewan
-          formation: Frenchman
-          coordinates:
-            - 49.036098
-            - -106.596603
-          region_code: CA-SK
+          country: US
+          region: South Dakota
+          locality: Grand River
+          formation: Lance
+          region_code: US-SD
         type_specimen:
           specimen_id:
             - USNM 219
@@ -162744,6 +163116,26 @@ genera:
         journal: Proceedings of the Academy of Natural Sciences of Philadelphia
         volume: "8"
         pages: 311-312
+        notes: Gives the syntypes as from the lowest member of the Lignite formation of Grand River, in what was then Nebraska Territory, without a closer locality.
+      - id: horner2004a
+        authors: Horner, J. R.; Weishampel, D. B.; Forster, C. A.
+        year: 2004
+        title: Hadrosauridae
+        book: The Dinosauria (2nd ed.)
+        publisher: University of California Press
+        pages: 438-463
+        isbn: 0-520-24209-2
+        notes: Places the type material in South Dakota.
+      - id: prieto-márquez2006a
+        authors: Prieto-Márquez, A.; Weishampel, D. B.; Horner, J. R.
+        year: 2006
+        title: The dinosaur Hadrosaurus foulkii, from the Campanian of the East Coast of North America, with a reevaluation of the genus
+        journal: Acta Palaeontologica Polonica
+        publisher: Polska Akademia Nauk Instytut Paleobiologii (Institute of Paleobiology, Polish Academy of Sciences)
+        volume: "51"
+        issue: "1"
+        pages: 77-98
+        notes: Gives the syntypes as two caudal vertebrae and a phalanx from the Lance Formation, the source of the formation.
     taxonomy:
       - Life
       - Animalia
@@ -181604,9 +181996,6 @@ genera:
           country: US
           region: Montana
           formation: Judith River
-          coordinates:
-            - 47.5
-            - -109
           region_code: US-MT
         type_specimen:
           specimen_id:
@@ -181633,7 +182022,7 @@ genera:
         journal: Proceedings of the Academy of Natural Sciences of Philadelphia
         volume: "28"
         pages: 340-359
-        notes: Original description of the genus Zapsalis with type species Z. abradens.
+        notes: Original description of the genus Zapsalis with type species Z. abradens. Gives neither a locality nor a horizon for the type teeth; the paper covers both the Judith River and the Fox Hills beds.
       - id: larson2013a
         authors: Larson, D. W.; Currie, P. J.
         year: 2013
