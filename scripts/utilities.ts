@@ -447,6 +447,78 @@ export function findStoreKeyByDoi(
 }
 
 /**
+ * Collects what each paper said about the taxon's validity and writes it to
+ * `status-evidence.md`, echoing it to stdout.
+ *
+ * `status` is never written into the YAML from an extraction. Which of valid /
+ * disputed / nomen dubium a taxon carries is an editorial judgment the operator
+ * makes at the apply gate across all the papers at once, so the agents supply
+ * the evidence — verbatim, because a paper can adopt a synonymy "for working
+ * purposes" while calling the question open, and a paraphrase loses exactly
+ * that (#2070 §2.1, §2.9).
+ *
+ * @param targetDir - The staging directory for this intake.
+ * @param extractions - Every extraction applied in this run.
+ */
+export function writeStatusEvidence(
+    targetDir: string,
+    extractions: Array<{
+        citation_key: string;
+        is_describing: boolean;
+        status_assessment?: string | null;
+        status_quote?: string | null;
+    }>,
+): void
+{
+    const stated = extractions.filter(
+        (extraction) => extraction.status_assessment
+            && extraction.status_assessment !== "not stated",
+    );
+
+    if (stated.length === 0)
+    {
+        return;
+    }
+
+    const lines = ["# Status evidence", ""];
+    lines.push("No paper's verdict is written into the YAML. Settle `status` here,");
+    lines.push("across all of them, before promoting.");
+    lines.push("");
+
+    for (const extraction of stated)
+    {
+        const role = extraction.is_describing ? "describing" : "supplementary";
+        lines.push(`## ${extraction.citation_key} (${role})`);
+        lines.push("");
+        lines.push(`Reads as: ${extraction.status_assessment}`);
+        lines.push("");
+        lines.push(extraction.status_quote
+            ? `> ${extraction.status_quote}`
+            : "(no verbatim quote supplied — re-read the paper before relying on this)");
+        lines.push("");
+    }
+
+    const evidencePath = path.join(targetDir, "status-evidence.md");
+    fs.writeFileSync(evidencePath, lines.join("\n"), "utf8");
+
+    process.stdout.write(`\nStatus evidence from ${stated.length} paper`
+        + `${stated.length === 1 ? "" : "s"} (${evidencePath}):\n`);
+
+    for (const extraction of stated)
+    {
+        process.stdout.write(`  ${extraction.citation_key}: ${extraction.status_assessment}\n`);
+    }
+}
+
+/**
+ * Character budget for a per-citation `notes` string on a reference pointer.
+ * The field records a paper's role in one line; prose belongs in `description`.
+ * Shared so the intake apply steps warn on the same threshold validate.ts
+ * enforces, instead of letting every genus reach the validator over budget.
+ */
+export const referenceNotesLimit = 200;
+
+/**
  * Lists the `<base><letter>` entries the store already holds, with enough
  * bibliographic detail to recognise one. A DOI match settles a key outright,
  * but pre-DOI papers have no DOI to match on — for those the operator has to

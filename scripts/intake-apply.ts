@@ -44,7 +44,7 @@ import * as url from "node:url";
 import { parse as parseYamlContent, stringify as stringifyYaml } from "yaml";
 
 import type { GenusData } from "./types.ts";
-import { referenceBucket } from "./utilities.ts";
+import { referenceBucket, referenceNotesLimit, writeStatusEvidence } from "./utilities.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
@@ -79,6 +79,8 @@ type IntakeExtraction = {
     size_weight_kg_max?: number | null;
     binomial_in_paper?: string | null;
     paper_quality?: string;
+    status_assessment?: string | null;
+    status_quote?: string | null;
     notes?: string | null;
     empty?: boolean;
 };
@@ -377,6 +379,15 @@ function applyExtraction(
             ? extraction.notes
             : undefined;
 
+        if (localNotes && localNotes.length > referenceNotesLimit)
+        {
+            warnings.push(
+                `Reference ${key}: notes run to ${localNotes.length} characters, over the `
+                + `${referenceNotesLimit}-character budget the validator warns at. Trim to the `
+                + "paper's role in one sentence before promoting.",
+            );
+        }
+
         if (!inStore)
         {
             // No store entry yet, so the paper cannot be cited — a pointer must
@@ -517,6 +528,8 @@ function main(): void
     );
 
     process.stdout.write(`\nWrote ${finalPath}\n`);
+
+    writeStatusEvidence(targetDir, extractions.map((entry) => entry.data));
 
     if (allWarnings.length > 0)
     {

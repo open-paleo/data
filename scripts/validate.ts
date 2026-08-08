@@ -9,7 +9,7 @@ import * as url from "node:url";
 
 import { parse as parseYamlContent } from "yaml";
 
-import { buildFlaggedSet, buildVerifiedSet, findYamlFiles, loadFlaggedSignoffs, loadFlaggedSources, referenceBucket } from "./utilities.ts";
+import { buildFlaggedSet, buildVerifiedSet, findYamlFiles, loadFlaggedSignoffs, loadFlaggedSources, referenceBucket, referenceNotesLimit } from "./utilities.ts";
 
 import type {
     GenusData,
@@ -1144,8 +1144,6 @@ for (const [filePath, reference] of referenceStoreParsed)
 
 // 12c. Reference notes length — keep concise and factual
 startCheck("Reference notes length");
-
-const referenceNotesLimit = 200;
 
 for (const [filePath, doc] of allParsed)
 {

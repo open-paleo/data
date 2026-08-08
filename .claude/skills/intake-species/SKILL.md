@@ -23,6 +23,49 @@ time because the project does not maintain a triage queue for them.
 
 ---
 
+## Outcomes
+
+An intake does not always end in a valid species block, and non-type
+species are exactly where it often does not: a name kept alive in the
+literature as a dubious or sunk combination is one whose validity was
+never settled. Name the expected outcome early and confirm it at the
+apply gate. The set is:
+
+- **valid** — diagnosable against its congeners, and current work
+  treats it as a distinct species.
+- **disputed** — a genuine no-consensus about this species' **own**
+  validity. Not placement, age, or referred-material disagreements, and
+  not a single unadopted reassessment —
+  `feedback_disputed_status_criterion`.
+- **nomen dubium** — validly published, but the type material cannot
+  currently diagnose it. It still gets a species block; the status
+  carries the verdict.
+- **nomen nudum** — the name never met the ICZN's publication
+  requirements.
+- **junior synonym of a species already in this genus** — no new block.
+  The name goes in the senior species' `synonyms:` array at the
+  matching rank (`feedback_synonyms`), and the intake becomes that
+  smaller edit. Say so and stop rather than adding a block.
+- **belongs to a different genus** — the recombination lands elsewhere.
+  Stop and redirect to the correct genus, or to intake-genus if that
+  genus has no file yet.
+
+The bootstrap seeds `status: valid` unconditionally. **That is a
+placeholder, not a finding** — treat it as unset until you settle it at
+Step 4.
+
+### Where the call gets made
+
+Twice:
+
+1. **Provisionally, at Step 1**, before the user fetches anything. If
+   you expect either of the last two outcomes, say so then — neither
+   produces a new species block, so fetching for one is wasted work.
+2. **For real, at the Step 4 apply gate**, from
+   `staging/intake-species/<Genus>-<species>/status-evidence.md`.
+
+---
+
 ## Step 1 — Confirm scope
 
 Verify:
@@ -37,6 +80,11 @@ Verify:
 
 Tell the user which species we are about to add and the existing
 genus's parent / type species, so they can sanity-check the placement.
+
+State the **provisional outcome** from the list above in a sentence or
+two, with what would change it. If you expect the name to end as a
+junior synonym of a species already in this genus, or to belong to a
+different genus entirely, raise it now — neither adds a species block.
 
 ## Step 2 — Bootstrap
 
@@ -70,7 +118,15 @@ After the script returns, **read both `bootstrap.species.yml` and
   locality, age, authority) and which it didn't
 - The proposed describing-paper citation key (or "PBDB has no
   record" — common for post-2020 taxa)
-- Whether that key is already in `dist/references.bib`
+- Whether that key already names a reference-store entry
+- The **"Fields left unseeded"** list, if any. The bootstrap declines to
+  guess a region it cannot resolve to an ISO 3166-2 code, or an interval
+  that is not a stage name; those are yours to fill from the paper at
+  Step 4.
+- Any **sibling store entries** it listed under the proposed key. When
+  no DOI is available to match on, one of those siblings is often the
+  paper being sought — check their titles before the user fetches
+  anything under a fresh key.
 
 ### Verify the bootstrap-proposed key
 
@@ -104,7 +160,29 @@ Wait for the user to respond.
 
 ## Step 3 — Resume (build extraction prompts)
 
-Once the user confirms:
+### First, verify each fetched paper is the paper
+
+For every key the user ticked, grep its markdown for the binomial and,
+when you have one, the holotype number:
+
+```
+grep -ic "<species>" "$OPEN_PALEO_PAPERS_DIR/markdown/<key>.md"
+```
+
+**A paper whose markdown never names the target species is the signature
+of a key collision** — the fetch landed the wrong paper under the right
+key, or the right paper under a key that already meant something else.
+Stop and ask; do not extract from it.
+
+Grep the epithet rather than the full binomial: a paper that erects the
+species will often abbreviate the genus after first mention. And a zero
+on a 19th-century or OCR'd source proves nothing — ligatures and
+scanning noise defeat a literal grep
+(`feedback_search_traps_archaic_sources`); read a few lines instead.
+
+### Then build the prompts
+
+Once the papers check out:
 
 ```
 npm run intake-species-resume -- <Genus> <species>
@@ -125,6 +203,24 @@ After the agents return, verify each
 `staging/intake-species/<Genus>-<species>/extractions/<key>.json`
 exists and check for sentinel-failure markers (`empty: true`).
 
+### Step 3b — Chase the citations the extractions surfaced
+
+Read the extractions' `notes` and `status_quote` fields for papers cited
+**about this species** that are not in the corpus. This matters most for
+a species with a long nomenclatural history, where the paper that
+settles its validity is often neither the original description nor the
+recombining paper, and appears in no corpus bibliography.
+
+For each candidate: resolve it through Crossref or the reference store
+to a real citation — never from recall
+(`feedback_verify_against_corpus`); PaleoDB is the backup for pre-DOI
+work (`reference_paleodb_citation_lookup`). Confirm it is not already
+filed under a different key. Then add it to `papers-needed.md` under
+"Additional papers" as `- [ ]` with the DOI and one line on why.
+
+If any candidate decides validity, surface the list and offer a
+**second fetch round** before applying. **Hard stop** when you do.
+
 ## Step 4 — Apply
 
 Run the apply script:
@@ -142,6 +238,28 @@ block and the existing genus YAML, writing
 Read the proposed YAML and apply the same polish discipline as the
 genus pipeline:
 
+- **Settle `status`.** The seed says `valid` unconditionally; that is a
+  placeholder. Read
+  `staging/intake-species/<Genus>-<species>/status-evidence.md`, which
+  apply writes when any paper ruled on validity. It carries each
+  verdict **quoted verbatim**, because paraphrase flattens exactly the
+  nuance that decides this — a paper can adopt a synonymy "for working
+  purposes" while stating the status "remains in question". Weigh the
+  quotes, pick from the **Outcomes** list at the top of this skill, and
+  set `status` by hand; apply never writes it. Say which quote decided
+  it when you show the diff.
+- **Diagnosis supersession.** When more than one published diagnosis
+  exists, use the most recent **emended** one. Drop characters the
+  retain-side source itself rejects; **keep** characters that only the
+  *sinking* source rejects, since rejecting them is that source's whole
+  case for sinking, and keeping the taxon while adopting its verdicts is
+  incoherent; **keep** characters the sinking source could not evaluate.
+- **Drop supplementary papers that turned out to say nothing.** If an
+  extraction came back empty of anything about this species, remove it
+  from the `references` block rather than citing it. A citation that
+  never mentions the taxon reads downstream as corroboration that does
+  not exist.
+
 - **Missing reference-store entries.** Bibliographic data lives in the
   reference store (`references/<letter>/<key>.yml`); the genus file cites
   each paper with an `{id, notes?}` pointer. For every apply warning
@@ -150,8 +268,10 @@ genus pipeline:
   (`id`, authors, year, title, journal, volume, issue, pages, publisher,
   doi — **no** DOI-pointer `url`, and **no** `notes` in the store file),
   then re-run the apply step. The re-run adds the pointer, carrying the
-  supplementary paper's role as `notes:` (trimmed under 200 chars) from the
-  extraction.
+  supplementary paper's role as `notes:` from the extraction. The prompt
+  caps that at 200 characters, the validator's warning threshold, and
+  apply warns when an agent overshoots anyway; trim any it flags to the
+  paper's role in one sentence rather than letting it reach the validator.
 - **PBDB seed corrections.** The bootstrap copies whatever PBDB
   reports for the species: locality coordinates, formation, age
   range. These are routinely wrong or imprecise for newly-erected
@@ -318,16 +438,23 @@ Follow the project's persistent rules at every gate:
 - Treat each "Wait for the user" as a hard stop —
   `feedback_skill_approval_gates`.
 - No markdown formatting in `notes:` reference fields —
-  `feedback_no_markdown_in_reference_notes`.
+  `project_reference_conventions`.
 - Verify every paper-attributed claim against the corpus when the
   paper exists in `$OPEN_PALEO_PAPERS_DIR/markdown/` — never cite
   from general/Wikipedia recall — `feedback_verify_against_corpus`.
 - PBDB-seeded fields are routinely wrong; correct against the
   paper during step 4b polish — `feedback_pbdb_species_seed`.
+- The seeded `status: valid` is a placeholder. Settle it at the apply
+  gate from the verbatim quotes in `status-evidence.md`; apply never
+  writes it — see **Outcomes**.
+- A `synonyms:` array records names that sink INTO this taxon, never
+  the reverse. If a paper sinks this species into another, that belongs
+  in the status verdict, not in `synonyms:` —
+  `feedback_synonyms`.
 - Wikipedia article cache lives at
   `$OPEN_PALEO_WD_DIR/wikipedia/<Genus>.json` — read it before
   falling back to WebFetch — `reference_wikipedia_cache`.
 - American English in prose fields — `feedback_american_english`.
 - Synonym entries match rank: binomials → species-level
   `synonyms:` nested under the relevant species entry —
-  `feedback_synonym_rank_placement`.
+  `feedback_synonyms`.

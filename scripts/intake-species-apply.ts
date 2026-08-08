@@ -40,7 +40,7 @@ import * as url from "node:url";
 import { parse as parseYamlContent, stringify as stringifyYaml } from "yaml";
 
 import type { GenusData, Species } from "./types.ts";
-import { referenceBucket } from "./utilities.ts";
+import { referenceBucket, referenceNotesLimit, writeStatusEvidence } from "./utilities.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
@@ -82,6 +82,8 @@ type SpeciesExtraction = {
     described_authors?: string | null;
     synonyms?: Array<{ name: string; type: string; reason: string }>;
     paper_quality?: string;
+    status_assessment?: string | null;
+    status_quote?: string | null;
     notes?: string | null;
     empty?: boolean;
 };
@@ -378,6 +380,15 @@ function appendReference(
         ? extraction.notes
         : undefined;
 
+    if (localNotes && localNotes.length > referenceNotesLimit)
+    {
+        warnings.push(
+            `Reference ${key}: notes run to ${localNotes.length} characters, over the `
+            + `${referenceNotesLimit}-character budget the validator warns at. Trim to the `
+            + "paper's role in one sentence before promoting.",
+        );
+    }
+
     if (!inStore)
     {
         // No store entry yet, so the paper cannot be cited (a pointer must
@@ -536,6 +547,8 @@ function main(): void
     );
 
     process.stdout.write(`\nWrote ${path.relative(root, proposedPath)}\n`);
+
+    writeStatusEvidence(targetDir, extractions.map((entry) => entry.data));
 
     if (allWarnings.length > 0)
     {

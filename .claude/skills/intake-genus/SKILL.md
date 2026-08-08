@@ -19,6 +19,53 @@ ready. Bucket C (iconic legacy) remains more complex and out of scope.
 
 ---
 
+## Outcomes
+
+An intake does not always end in a valid genus record. The genera left
+in the queue are disproportionately live taxonomic arguments rather than
+clerical gaps, so name the expected outcome early and confirm it at the
+apply gate. The set is:
+
+- **valid** — diagnosable, and current work treats it as its own genus.
+- **disputed** — a genuine no-consensus about the taxon's **own**
+  validity. Not placement, age, monophyly, or referred-material
+  disagreements, and not a single unadopted reassessment —
+  `feedback_disputed_status_criterion`.
+- **nomen dubium** — validly published, but the type material cannot
+  currently diagnose it.
+- **nomen nudum** — the name never met the ICZN's publication
+  requirements.
+- **junior synonym carried on another genus** — no file here. The name
+  goes in the senior genus's `synonyms:` block at the matching rank
+  (`feedback_synonyms`), and the intake becomes an edit to that genus
+  instead. Say so and stop rather than promoting a stub.
+- **excluded** — an `excluded.yml` entry, and **only** for the two
+  categories that file carries: `non-dinosaurian` (published work
+  concludes the type material cannot be diagnosed to Dinosauria) and
+  `nomen-nudum`.
+
+**A validly published dinosaur name that is merely undiagnosable stays
+in `genera/` with `status: nomen dubium`.** 105 genera already do. Do
+not route one to `excluded.yml`: that file's category vocabulary has no
+term for it, and dropping the record loses the name from the dataset
+entirely. Ostafrikasaurus is the worked example — a nomen dubium at
+Theropoda incertae sedis, kept.
+
+### Where the call gets made
+
+Twice, because for a contested taxon you often cannot judge validity
+until you have read the papers:
+
+1. **Provisionally, at Step 2**, before the user goes and fetches
+   anything. State which outcome you expect and what would change it.
+   If you expect "junior synonym carried on another genus" or
+   "excluded", say so **then** — that redirects the whole job and there
+   is no point fetching papers for a file that will not exist.
+2. **For real, at the Step 4 apply gate**, from
+   `staging/intake/<Genus>/status-evidence.md` — see "Settle `status`".
+
+---
+
 ## Step 1 — Identify the genus
 
 The genus name must be supplied in `$ARGUMENTS`. If it is empty, ask
@@ -52,7 +99,7 @@ to the user:
 
 - How many fields the bootstrap populated
 - The proposed describing-paper citation key
-- Whether that key is already in `dist/references.bib`
+- Whether that key already names a reference-store entry
 - Any supplementary papers your notes mention (e.g. the 2024
   Słowiak reassessment paper for Bagaraatan)
 
@@ -63,41 +110,57 @@ If your notes explicitly call out a supplementary paper, edit
 
 ### Verify the bootstrap-proposed key
 
-The bootstrap script auto-derives a citation key from PBDB's reported
-genus authority (e.g. `marsh1888`). PBDB is wrong **often enough that
-this is a routine check, not an exception**. Common failure modes:
+The bootstrap derives a citation key from the DOI-resolved reference
+when PBDB links one, and otherwise from PBDB's reported genus authority.
+It now settles two of the three failure modes on its own: a DOI already
+in the reference store reuses that key rather than minting a duplicate,
+and the whole surname is kept (`vanderreest2017a`, not `van2017`). What
+it cannot settle is still yours:
 
 - **PBDB tracks a homonym, not the type.** Ex: Titanosaurus Lydekker
   1877 (Indian, valid) vs. Titanosaurus Marsh 1877 (preoccupied
   American name → renamed Atlantosaurus). PBDB returned Marsh as
   authority; the notes and Wikipedia both said Lydekker.
-- **The proposed key already exists in the bib but for a different
-  paper.** Ex: bootstrap proposed `marsh1888` for Ceratops — that
-  key is already in the bib, but it's the Pleurocoelus / Potomac
-  Formation paper, not the Ceratopsidae paper.
-- **The proposed key adds a fresh letter suffix even though the
-  right key exists.** Ex: bootstrap proposed `leidy1856c` /
-  `osborn1924c` / `marsh1877e` when the real describing paper was
-  already filed as `leidy1856b` / `osborn1924a` / `marsh1877a`.
+- **No DOI, so no way to match.** For pre-DOI papers the bootstrap
+  cannot tell a genuinely new paper from one already filed. It prints
+  the existing sibling entries with their titles instead — Wuerhosaurus
+  proposes `dong1973b` while listing `dong1973a — [Dinosaurs from
+  Wuerho]`, which is the paper actually wanted.
+- **A PBDB-only year may be wrong.** With no DOI to check against, the
+  checklist flags the year as unverified. The literature itself can be
+  split — Ostafrikasaurus is cited as both 2012 and 2013 — so confirm
+  against the paper.
 
 Before reporting the proposed key to the user, **always**:
 
 1. Compare the proposed key against your notes' author + year.
    If they disagree, the bootstrap is wrong; flag it and propose the
    notes-aligned key.
-2. If the proposed key is already in the bib, run a quick check
-   (read the bib entry's title) to confirm it matches the paper your
-   notes describe. If the title is from a different paper, the
-   bootstrap has a key collision: mark this as a citation-key
-   disambiguation case (see below).
-3. If the bootstrap proposed a fresh letter suffix (`<key>e`,
-   `<key>c`, etc.), grep for sibling keys (`<key>a`, `<key>b`, …) and
-   confirm none of those is actually the right paper before adding a
-   new suffix.
+2. Read any sibling list the checklist printed and say explicitly
+   whether one of them is the paper being sought. This is the check
+   that catches the pre-DOI collisions.
+3. If the key already names a store entry, confirm that entry's title
+   matches the paper your notes describe. If it is a different paper,
+   treat it as a citation-key disambiguation case (see below).
 
 If the bootstrap is wrong, edit `papers-needed.md` to point at the
 correct key and explain the glitch in the line above the checkbox so
 the user understands why the bootstrap-proposed key was overridden.
+
+The bootstrap now prints a **"Fields left unseeded"** list (also written
+into `papers-needed.md`) for anything it declined to guess at: a region
+it could not resolve to an ISO 3166-2 code, a PBDB parent absent from
+`tree.yml`, a type species whose binomial belongs to another genus, a
+mass implausible against the seeded length. Relay that list — those are
+the fields you must fill from the paper at Step 4.
+
+### State the provisional outcome
+
+Before the hard stop, tell the user which outcome from the list above
+you expect and why (one or two sentences), plus what evidence would
+change it. If you expect the taxon to end as a synonym carried on
+another genus, or in `excluded.yml`, raise it **now**: those outcomes do
+not produce a file here, so fetching papers for them is wasted work.
 
 **Hard stop.** Tell the user:
 
@@ -139,7 +202,32 @@ different paper — every paper is a fresh decision.
 
 ## Step 3 — Resume (build extraction prompts)
 
-Once the user confirms, run:
+### First, verify each fetched paper is the paper
+
+Before running resume, for every key the user ticked, grep its markdown
+in `$OPEN_PALEO_PAPERS_DIR/markdown/<key>.md` for the taxon name and, when
+you have one, the holotype number:
+
+```
+grep -ic "<Genus>" "$OPEN_PALEO_PAPERS_DIR/markdown/<key>.md"
+```
+
+**A paper whose markdown never names the target taxon is the signature
+of a key collision** — the fetch landed the wrong paper under the right
+key, or the right paper under a key that already meant something else.
+Stop and ask; do not extract from it.
+
+Two cautions on reading a zero:
+
+- Check the abbreviated binomial and the genus separately. A paper may
+  use "*S. brevicollis*" throughout after one full mention.
+- A zero on a 19th-century or OCR'd source proves nothing — ligatures
+  and scanning noise defeat a literal grep
+  (`feedback_search_traps_archaic_sources`). Read a few lines instead.
+
+### Then build the prompts
+
+Once the papers check out, run:
 
 ```
 npm run intake-resume -- <Genus>
@@ -170,6 +258,32 @@ After the agents return, verify each
 `staging/intake/<Genus>/extractions/<key>.json` exists. Read each
 back and check for sentinel-failure markers (`empty: true`). If any
 agent failed, surface that to the user and ask how to proceed.
+
+### Step 3b — Chase the citations the extractions surfaced
+
+**Older genera routinely need literature that cannot be enumerated in
+advance.** PBDB does not know it, the bootstrap cannot propose it, and
+it may not appear in any corpus bibliography — the load-bearing validity
+source for *Delapparentia* was a dedicated redescription that surfaced
+only from reading in-text citations in the supplementary papers.
+
+So make it a step rather than an accident. Read the extractions' `notes`
+and `status_quote` fields for papers cited **about this taxon** that are
+not in the corpus. For each candidate:
+
+1. Resolve it through Crossref or the reference store to a real
+   citation — never from recall (`feedback_verify_against_corpus`).
+   PaleoDB is the backup for pre-DOI work
+   (`reference_paleodb_citation_lookup`).
+2. Confirm it is not already filed under a different key.
+3. Add it to `papers-needed.md` under "Additional papers" as `- [ ]`
+   with the resolved DOI and one line on why it matters.
+
+If any candidate is load-bearing — it decides validity, or carries the
+current emended diagnosis — surface the list and offer a **second fetch
+round** before applying. Otherwise note them and continue.
+
+**Hard stop when you offer a second round.** Wait for the user.
 
 ## Step 4 — Apply
 
@@ -221,27 +335,68 @@ pointer in the genus file. Then **re-run** `npm run intake-apply --
 
 For supplementary papers (when the agent's extraction set `is_describing:
 false`), the paper's role is recorded as `notes:` on the genus file's
-pointer — the apply step copies it from the agent's `notes` (trim under
-200 chars, the validator's warning threshold). If the citation was
-skipped, the agent's notes are stashed at
+pointer — the apply step copies it from the agent's `notes`. The prompt
+caps that at 200 characters, the validator's warning threshold, and
+apply warns when an agent overshoots anyway; trim any it flags down to
+the paper's role in one sentence rather than letting it reach the
+validator. If the citation was skipped, the agent's notes are stashed at
 `staging/intake/<Genus>/pending-notes/<key>.txt`; once the store entry
 exists and you re-run apply, the pointer notes are restored from the
 extraction automatically.
 
 Editorial polish at this stage:
 
-- **Description = Wikipedia paragraph 1, verbatim.** The bootstrap
-  already pulls this; just confirm. Strip only: numeric reference
-  markers like `[1]`, hyperlink markup, pronunciation IPA blocks,
-  and the etymological gloss in parentheses immediately after the
-  genus name (those go into the structured `etymology:` and
-  `pronunciation:` fields). Do NOT paraphrase, summarise, or stitch
-  in claims from the agent's notes — `feedback_verify_against_corpus`.
-  Read the cached article first at
+- **Settle `status`.** Read
+  `staging/intake/<Genus>/status-evidence.md`, which apply writes when
+  any paper ruled on validity. It carries each paper's verdict **quoted
+  verbatim**, because paraphrase flattens exactly the nuance that
+  decides this: `varricchio2025a` reads as endorsing the
+  *Latenivenatrix* synonymy in summary, but actually adopts it "for
+  working purposes" while stating the status "remains in question".
+  Weigh the quotes against each other, pick the outcome from the
+  **Outcomes** list at the top of this skill, and set `status` by hand —
+  apply never writes it. State which quote decided it when you show the
+  user `final.yml`. A lone recent reassessment that nobody has adopted
+  is not `disputed` — `feedback_disputed_status_criterion`.
+
+- **Description = Wikipedia paragraph 1, minus a fixed strip-list.**
+  The bootstrap already pulls this; just confirm. Strip **only**:
+  numeric reference markers like `[1]`, hyperlink markup, pronunciation
+  IPA blocks, the etymological gloss in parentheses immediately after
+  the genus name (those go into the structured `etymology:` and
+  `pronunciation:` fields), and **British spellings**, which become
+  American — "palaeontologist" → "paleontologist". The American English
+  policy wins over verbatim reproduction here; the exemption for
+  verbatim quotation applies to quoted spans, and a description is not
+  a quotation (`feedback_american_english`). Beyond that strip-list, do
+  NOT paraphrase, summarize, or stitch in claims from the agent's notes
+  — `feedback_verify_against_corpus`. Read the cached article first at
   `$OPEN_PALEO_WD_DIR/wikipedia/<Genus>.json` (defaults to a sibling
   `../open-paleo-wd/wikipedia/`; parse `text`, paragraph 1 = up to the
   first `\n\n`); WebFetch is the fallback
   when the genus isn't cached.
+
+- **Which diagnosis the record carries.** When more than one published
+  diagnosis exists, use the most recent **emended** one, then:
+  - **Drop** characters the retain-side source itself rejects. Uteodon
+    lost its occipital-condyle character because the braincase carrying
+    it was reassigned to *Dryosaurus*.
+  - **Keep** characters that only the *sinking* source rejects.
+    Adopting a sinker's character verdicts wholesale while marking the
+    taxon `disputed` is incoherent — rejecting the characters *is* its
+    case for sinking. Oxalaia keeps the two characters Smyth rejects
+    but Sales retains, and drops the one Sales rejects.
+  - **Keep** a character the sinking source merely could not evaluate.
+    Latenivenatrix keeps all three pubic characters because Cullen's own
+    verdict records that he could not assess them.
+
+- **Drop supplementary papers that turned out to say nothing.** If an
+  extraction came back empty of anything about this taxon — or the paper
+  never names it — remove it from the `references` block rather than
+  citing it. Citing a paper that does not mention the taxon is padding,
+  and it reads downstream as corroboration that does not exist. Six
+  papers were dropped this way across the eight bucket-A genera. Tell
+  the user which ones you dropped and why.
 - **PBDB seed corrections are routine.** The bootstrap copies
   `species[0].name`, `period`, `location.region/formation/coordinates`
   straight from PBDB; these are wrong often enough that you must
@@ -393,12 +548,12 @@ SHA and issue URL.
 ## Citation key disambiguation
 
 Keys are uniformly `<author><year><letter>` — a fresh describing paper is
-keyed `<author><year>a`. The bootstrap and resume scripts disambiguate by
-**key name only** — they do not inspect DOIs. So if a store entry
-`references/<letter>/<author><year>a.yml` already exists for a *different*
-paper by the same author in the same year, it is silently reused. This
-collision is invisible to the scripts; the user typically catches it by
-recognising the DOI mismatch.
+keyed `<author><year>a`. The bootstrap compares the resolved DOI against
+every existing `<author><year>*` store entry and reuses the matching key,
+so a same-author same-year collision is caught **whenever both papers
+carry a DOI**. When one does not — most pre-DOI literature — the scripts
+still disambiguate by key name alone, and the collision is invisible to
+them; the checklist's sibling list is what surfaces it for you.
 
 Because keys are **append-only** (every key already carries a
 disambiguation letter), a collision means only the **new** paper needs the
@@ -454,9 +609,13 @@ Follow the project's persistent rules at every gate:
 - Treat each "Wait for the user" as a hard stop —
   `feedback_skill_approval_gates`.
 - No markdown formatting in `notes:` reference fields —
-  `feedback_no_markdown_in_reference_notes`.
+  `project_reference_conventions`.
+- A `synonyms:` array records names that sink INTO this taxon, never
+  the reverse. If a paper sinks this genus into another, that belongs
+  in the status verdict and the dispute prose, not in `synonyms:` —
+  `feedback_synonyms`.
 - Run spellcheck before apply where applicable —
-  `feedback_spellcheck_before_apply`. (For intake-apply we have
+  `feedback_intake_pre_apply_steps`. (For intake-apply we have
   built this in: the agent's JSON is plain text and the apply step
   is a structured merge, so no separate spellcheck pass is needed
   — but if you see misspelled tokens in the agent output, fix the
@@ -467,10 +626,18 @@ Follow the project's persistent rules at every gate:
 - The PBDB-seeded species block, period, and location in
   `bootstrap.yml` are routinely wrong; replace them during step 4
   polish — `feedback_pbdb_species_seed`.
-- The bootstrap script may propose a fresh disambiguation suffix
-  when the bib already has the right entry, or an entry under the
-  proposed bare key may be the wrong paper — check sibling keys
-  and bib titles before fetching — `feedback_bootstrap_key_check`.
+- A validly published, undiagnosable dinosaur name is a `genera/`
+  record with `status: nomen dubium`, never an `excluded.yml` entry —
+  see **Outcomes**.
+- `status` is set by hand at the apply gate from the verbatim quotes in
+  `status-evidence.md`; apply never writes it.
+- Description follows the American English policy even though it is
+  otherwise Wikipedia paragraph 1 as written —
+  `feedback_american_english`.
+- The bootstrap reuses a key whose store DOI matches, and lists the
+  existing sibling entries with their titles when it mints a fresh
+  suffix. Read that list: for a pre-DOI paper there is no DOI to match
+  on, so a sibling is often the paper being sought.
 - Wikipedia article cache lives at
   `$OPEN_PALEO_WD_DIR/wikipedia/<Genus>.json` — read it before
   falling back to WebFetch — `reference_wikipedia_cache`.
