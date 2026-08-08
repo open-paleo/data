@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-08-08T22:09:59.765Z
+  built_at: 2026-08-08T22:19:31.914Z
   clade_count: 188
   genus_count: 1408
   license: CC-BY-4.0
@@ -150226,7 +150226,7 @@ genera:
     description: Sigilmassasaurus is a controversial genus of spinosaurid dinosaur that lived approximately 100 to 94 million years ago during the Late Cretaceous Period in what is now northern Africa. Named in 1996 by Canadian paleontologist Dale Russell, it contains a single species, Sigilmassasaurus brevicollis. The identity of the genus has been debated by scientists, with some considering its fossils to represent material from the closely related species Spinosaurus aegyptiacus, while others have classified it as a separate taxon, forming the clade Spinosaurini with Spinosaurus as its sister taxon.
     dispute:
       summary: |
-        The validity of Sigilmassasaurus is actively contested, and the genus is known only from isolated vertebrae that were never found in association. Russell (1996) erected it on a single vertebra he identified as a mid-cervical. Evers and others (2015) reappraised the material, reinterpreted the holotype as a first dorsal, gave the genus an emended diagnosis, and rejected its referral to Spinosaurus aegyptiacus; Chiarenza and Cau (2016) concurred, and Arden and others (2019) recovered it as the sister taxon of Spinosaurus in a clade Spinosaurini. Against this, Ibrahim and others (2020) rebutted the emended diagnosis, reporting the ventral platform character in Spinosaurus aegyptiacus as well, and Smyth and others (2020) rejected every proposed autapomorphy in turn, attributing the variation to axial position and ontogeny within a single taxon and treating the genus as a junior synonym of Spinosaurus aegyptiacus. Rauhut and others (2025) tested that single-taxon hypothesis in a sensitivity analysis. No consensus has emerged, so the species is marked disputed and the genus retained at Spinosaurinae. Which taxon the vertebrae of Spinosaurus maroccanus belong to is contested on the same evidence: Evers and others (2015) refer them to Sigilmassasaurus brevicollis as a different axial position of one animal, whereas Ibrahim and others (2020) reject that referral. This record follows the existing treatment of that name under Spinosaurus.
+        The validity of Sigilmassasaurus is actively contested, and the genus is known only from isolated vertebrae that were never found in association. Russell (1996) erected it on a single vertebra he identified as a mid-cervical. Evers and others (2015) reappraised the material, reinterpreted the holotype as a first dorsal, gave the genus an emended diagnosis, and rejected its referral to Spinosaurus aegyptiacus; Chiarenza and Cau (2016) concurred, and Arden and others (2019) recovered it as the sister taxon of Spinosaurus in a clade Spinosaurini. Against this, Ibrahim and others (2020) rebutted the emended diagnosis, reporting the ventral platform character in Spinosaurus aegyptiacus as well, and Smyth and others (2020) rejected every proposed autapomorphy in turn, attributing the variation to axial position and ontogeny within a single taxon and treating the genus as a junior synonym of Spinosaurus aegyptiacus. Rauhut and others (2025) tested that single-taxon hypothesis in a sensitivity analysis. No consensus has emerged, so the species is marked disputed and the genus retained at Spinosaurinae. Which taxon the vertebrae of Spinosaurus maroccanus belong to is contested on the same evidence: Evers and others (2015) refer them to Sigilmassasaurus brevicollis as a different axial position of one animal, whereas Ibrahim and others (2020) reject that referral and keep the name with Spinosaurus aegyptiacus. The name is therefore carried as a possible synonym of both species, asserting neither destination.
       history:
         - date: 2026-08-07
           note: |
@@ -150278,6 +150278,10 @@ genera:
           institution: Canadian Museum of Nature
           material: Single isolated vertebra with a fairly complete neural arch, lacking part of the right transverse process and the tip of the neural spine.
           completeness: fragmentary
+        synonyms:
+          - name: Spinosaurus maroccanus
+            type: possible subjective
+            reason: Erected by Russell (1996) in the same paper as Sigilmassasaurus brevicollis, on CMN 50791, an isolated mid-cervical vertebra. Evers and others (2015) found a morphological continuum between the two holotypes, listed CMN 50791 among the referred material of Sigilmassasaurus as a mid-cervical of the same animal, and kept brevicollis as the species epithet because neither name has page priority. Ibrahim and others (2020) reject that referral and retain the name under Spinosaurus aegyptiacus, so the destination of the name is contested.
         erected_in: russell1996b
         authors: Russell, D. A.
         described: 1996
@@ -154383,10 +154387,6 @@ genera:
         id: "4531253"
       - source: zoobank
         id: D702D3E3-8A17-450A-AE2A-998C53C58E48
-    synonyms:
-      - name: Spinosaurus maroccanus
-        type: junior subjective
-        reason: Erected by Russell (1996) on Kem Kem cervical vertebrae; synonymised with S. aegyptiacus by Ibrahim et al. (2014) on the basis of associated material from the FSAC-KK 11888 neotype skeleton.
     species:
       - name: Spinosaurus aegyptiacus
         etymology: From Latin aegyptiacus, "of Egypt", after the country where Stromer's original type material was found at Bahariya.
@@ -154426,6 +154426,10 @@ genera:
           material: Partial skeleton including portions of the skull, cervical, dorsal, sacral and caudal vertebrae, ilium, manual phalanges, femur, tibia and pedal elements; subadult.
           completeness: partial
           notes: Designated as neotype by Ibrahim et al. (2014) after the destruction of Stromer's original holotype (BSP 1912 VIII 19, Munich) in 1944. The designation is contested; Evers et al. (2015) argued it does not meet ICZN Article 75 requirements (unverified commercial provenance, a Kem Kem locality far from Stromer's Bahariya type locality, and possible multiple Kem Kem spinosaurid taxa). The ICZN has not ruled, and FSAC-KK 11888 remains in widespread use as the de facto neotype.
+        synonyms:
+          - name: Spinosaurus maroccanus
+            type: possible subjective
+            reason: Erected by Russell (1996) on CMN 50791, an isolated mid-cervical vertebra from the Kem Kem Group diagnosed on centrum proportions alone. Ibrahim and others (2014) synonymized it with Spinosaurus aegyptiacus; Ibrahim and others (2020) reaffirmed that reading on the mid-cervical of the FSAC-KK 11888 neotype, which matches CMN 50791 in proportions and carries the same rugose ventral platform, and Smyth and others (2020) concurred. Evers and others (2015) instead refer CMN 50791 to Sigilmassasaurus brevicollis, so the destination of the name is contested.
         erected_in: stromer1915a
         described_in: ibrahim2014a
         authors: Stromer, E.
@@ -154528,7 +154532,17 @@ genera:
         volume: "928"
         pages: 1-216
         doi: 10.3897/zookeys.928.47517
-        notes: Described Spinosaurus tail material bearing on its aquatic locomotion.
+        notes: Describes Spinosaurus tail material bearing on its aquatic locomotion, and rejects the referral of the Spinosaurus maroccanus holotype to Sigilmassasaurus brevicollis.
+      - id: smyth2020a
+        authors: Smyth, R. S. H.; Ibrahim, N.; Martill, D. M.
+        year: 2020
+        title: "Sigilmassasaurus is Spinosaurus: a reappraisal of African spinosaurines"
+        journal: Cretaceous Research
+        publisher: Elsevier BV
+        volume: "114"
+        pages: "104520"
+        doi: 10.1016/j.cretres.2020.104520
+        notes: Treats Spinosaurus maroccanus and Sigilmassasaurus brevicollis as junior synonyms of Spinosaurus aegyptiacus, attributing their proposed autapomorphies to axial position and intraspecific variation.
     taxonomy:
       - Life
       - Animalia
