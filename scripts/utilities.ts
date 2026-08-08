@@ -180,39 +180,6 @@ export function loadStageTable(schemaPath: string): Record<string, StageInfo>
 }
 
 /**
- * Flattens an institution registry into an abbreviation-to-display-name
- * map. Every canonical key and alias maps to the institution's display
- * name (name + city when available). This provides backward
- * compatibility with code that expects a flat lookup table.
- *
- * @param registry - The structured institution registry.
- * @returns A flat record mapping every abbreviation to a display name.
- */
-export function flattenInstitutionMap(registry: Record<string, InstitutionEntry>): Record<string, string>
-{
-    const result: Record<string, string> = {};
-
-    for (const [key, entry] of Object.entries(registry))
-    {
-        const displayName = entry.location?.city
-            ? `${entry.name}, ${entry.location.city}`
-            : entry.name;
-
-        result[key] = displayName;
-
-        if (entry.aliases)
-        {
-            for (const alias of entry.aliases)
-            {
-                result[alias] = displayName;
-            }
-        }
-    }
-
-    return result;
-}
-
-/**
  * Loads the flagged-sources registry from flagged-sources.yml.
  *
  * @param sourcesPath - Absolute path to flagged-sources.yml.
