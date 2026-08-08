@@ -392,7 +392,7 @@ Houcheng:
 
 "Horseshoe Canyon":
   rank: formation
-  contains: [Horsethief, Morrin, Tolman, Carbon, Strathmore]
+  contains: [Strathmore, Drumheller, Horsethief, Morrin, Tolman, Carbon, Whitemud]
   stages: [Campanian, Maastrichtian]
   references:
     - id: carr2017a
@@ -401,11 +401,14 @@ Houcheng:
         Maastrichtian alone is the commoner phrasing here, but the Campanian end
         is published and the unit's base is late Campanian, so the envelope
         carries both.
-    - id: brusatte2012b
+    - id: eberth2012a
       notes: >
-        Uses the five members, which are well established in the literature:
-        Horsethief, Morrin, Tolman, Carbon and Strathmore, in ascending
-        order.
+        Defines the members: the formation "is divided into seven mappable
+        members: Strathmore, Drumheller, Horsethief, Morrin, Tolman, Carbon, and
+        Whitemud (bottom to top)". The Strathmore Member is the basal one,
+        bounded by the lower and upper tongues of the Bearpaw Formation, and the
+        Strathmore and Drumheller members were elevated here from Hamblin's
+        (2004) informal Strathmore and Hoodoo tongues.
 
 Huincul:
   rank: formation
@@ -681,11 +684,17 @@ Pawpaw:
 "Zhangjia'ao":
   rank: member
   parent: Lufeng
-  variants: [Zhangjiaao, "Zhangjia'ao Member", "Dark Red Beds", "Deep Red Beds"]
+  variants: [Zhangjiaao, "Zhangjia'ao Member", Zhangjiawa, "Zhangjiawa Member",
+    "Dark Red Beds", "Deep Red Beds"]
   references:
     - id: xing2012b
       notes: >
         Apostrophe form. Zhang (2018) prints Zhangjiaao for the same member.
+    - id: irmis2008a
+      notes: >
+        Uses the Zhangjiawa spelling and ties it to the older bed name, "the
+        'deep red beds' (= Zhangjiawa Member of Fang et al. 2000)", which is the
+        same unit the apostrophe form denotes.
 
 "Poison Strip":
   rank: member
@@ -728,7 +737,6 @@ Pawpaw:
 Shaximiao:
   rank: formation
   stages: [Bajocian, Bathonian, Callovian, Oxfordian, Kimmeridgian, Tithonian]
-  variants: [Xiashaximiao, Shangshaximiao]
   references:
     - id: dai2022a
       notes: >
@@ -943,6 +951,18 @@ Xiagou:
         Aptian" for the member. Wide, and genuinely so -- the paper reports a
         conflict between detrital zircon maxima and the ostracod and charophyte
         evidence.
+
+Dakangpu:
+  rank: member
+  parent: Yixian
+  variants: ["Dakangpu Bed", "Dakangpu Member"]
+  references:
+    - id: wu2012a
+      notes: >
+        "Dakangpu Member (equivalent to the Dawangzhangzi Beds) of the middle
+        part of Yixian Formation". The Dawangzhangzi name is reported as an
+        equivalent horizon rather than the same named unit, so it is not carried
+        here as a variant.
 
 Yixian:
   rank: formation
