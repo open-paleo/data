@@ -345,23 +345,203 @@ export function readBibCitationKeys(bibPath: string): Set<string>
 }
 
 /**
- * Resolves a proposed citation key against the existing bib so that
- * a bare key never coexists with biblatex-suffix variants. Mirrors
- * the disambiguation rule enforced by validate.ts check #12c.
+ * Reads every citation key held in the reference store
+ * (`references/<bucket>/<key>.yml`). The store is the committed source of
+ * truth for bibliographic data, so it is authoritative where `dist/references.bib`
+ * — a build output that can lag the working tree — is not.
+ *
+ * @param dataRoot - Repository root containing the `references/` directory.
+ * @returns The set of store citation keys.
+ */
+export function readStoreCitationKeys(dataRoot: string): Set<string>
+{
+    const keys = new Set<string>();
+    const storeDir = path.join(dataRoot, "references");
+
+    if (!fs.existsSync(storeDir))
+    {
+        return keys;
+    }
+
+    for (const bucket of fs.readdirSync(storeDir))
+    {
+        const bucketDir = path.join(storeDir, bucket);
+
+        if (!fs.statSync(bucketDir).isDirectory())
+        {
+            continue;
+        }
+
+        for (const file of fs.readdirSync(bucketDir))
+        {
+            if (file.endsWith(".yml"))
+            {
+                keys.add(file.slice(0, -4));
+            }
+        }
+    }
+
+    return keys;
+}
+
+/**
+ * Normalizes a DOI for comparison: lower-cased, with any resolver prefix
+ * (`https://doi.org/`, `doi:`) stripped. DOIs are case-insensitive, and the
+ * same DOI reaches us in all three forms depending on the source.
+ *
+ * @param doi - The raw DOI string.
+ * @returns The comparable form.
+ */
+function normalizeDoi(doi: string): string
+{
+    return doi
+        .trim()
+        .toLowerCase()
+        .replace(/^https?:\/\/(?:dx\.)?doi\.org\//, "")
+        .replace(/^doi:\s*/, "");
+}
+
+/**
+ * Finds the store key of an existing `<base><letter>` reference whose DOI
+ * matches the one given. Minting a fresh suffix for a DOI the store already
+ * holds files the same paper twice under two keys, which reads downstream as
+ * two independent sources (#2070 §1.2).
+ *
+ * @param dataRoot - Repository root containing the `references/` directory.
+ * @param baseKey - The bare `<author><year>` key, without a suffix letter.
+ * @param doi - The DOI of the paper being filed.
+ * @returns The matching store key, or null when the DOI is new to the store.
+ */
+export function findStoreKeyByDoi(
+    dataRoot: string,
+    baseKey: string,
+    doi: string,
+): string | null
+{
+    const bucketDir = path.join(dataRoot, "references", referenceBucket(baseKey));
+
+    if (!fs.existsSync(bucketDir))
+    {
+        return null;
+    }
+
+    const variantPattern = new RegExp(`^${escapeRegExp(baseKey)}[a-z]\\.yml$`);
+    const wanted = normalizeDoi(doi);
+
+    for (const file of fs.readdirSync(bucketDir).sort())
+    {
+        if (!variantPattern.test(file))
+        {
+            continue;
+        }
+
+        const entry = parseYaml<Reference>(path.join(bucketDir, file));
+
+        if (entry?.doi && normalizeDoi(entry.doi) === wanted)
+        {
+            return file.slice(0, -4);
+        }
+    }
+
+    return null;
+}
+
+/**
+ * Lists the `<base><letter>` entries the store already holds, with enough
+ * bibliographic detail to recognise one. A DOI match settles a key outright,
+ * but pre-DOI papers have no DOI to match on — for those the operator has to
+ * eyeball the siblings, so the checklist prints them (#2070 §1.2).
+ *
+ * @param dataRoot - Repository root containing the `references/` directory.
+ * @param baseKey - The bare `<author><year>` key, without a suffix letter.
+ * @returns One entry per existing sibling, in key order.
+ */
+export function readStoreSiblings(
+    dataRoot: string,
+    baseKey: string,
+): Array<{ id: string; title: string; doi: string | null }>
+{
+    const bucketDir = path.join(dataRoot, "references", referenceBucket(baseKey));
+
+    if (!fs.existsSync(bucketDir))
+    {
+        return new Array<{ id: string; title: string; doi: string | null }>();
+    }
+
+    const variantPattern = new RegExp(`^${escapeRegExp(baseKey)}[a-z]\\.yml$`);
+
+    return fs.readdirSync(bucketDir)
+        .filter((file) => variantPattern.test(file))
+        .sort()
+        .map((file) =>
+        {
+            const entry = parseYaml<Reference>(path.join(bucketDir, file));
+
+            return {
+                id: file.slice(0, -4),
+                title: entry?.title ?? "(no title in store)",
+                doi: entry?.doi ?? null,
+            };
+        });
+}
+
+/**
+ * Author-field tokens that PBDB and Crossref append to a surname but that never
+ * form part of a store citation key. Multi-word surnames themselves are kept
+ * whole and concatenated (`vanderreest`, `torcidafernández-baldor`), so only
+ * these et-al markers and generational suffixes are dropped.
+ */
+const surnameNoiseTokens = new Set([
+    "et", "al", "al.", "and", "others", "jr", "jr.", "sr", "sr.",
+]);
+
+/**
+ * Synthesises a citation key from an author field and a year, following the
+ * store convention: the complete surname concatenated without spaces and
+ * lower-cased, keeping diacritics and hyphens (#1894). "van der Reest, A. J."
+ * 2017 yields `vanderreest2017`; "Torcida Fernández-Baldor, F." 2017 yields
+ * `torcidafernández-baldor2017`. The key is returned bare — pass it through
+ * `resolveCitationKey` to get the disambiguation letter every store key carries.
+ *
+ * @param authors - The authors string (semicolon-separated entries; the surname
+ *     is everything before the first comma of the first entry).
+ * @param year - The publication year as a number or string.
+ * @returns The lower-case bare citation key.
+ */
+export function citationKeyFor(authors: string, year: string | number): string
+{
+    const surnamePart = (authors ?? "").split(";")[0].split(",")[0].trim();
+
+    const surname = surnamePart
+        .split(/\s+/)
+        .filter((token) => token !== "" && !surnameNoiseTokens.has(token.toLowerCase()))
+        .join("");
+
+    // Keep diacritics and hyphens per the reference-key convention (#1894):
+    // "Ősi" -> "ősi", "Prieto-Márquez" -> "prieto-márquez". Only digits and
+    // other punctuation are removed.
+    return `${surname.toLowerCase().replace(/[^\p{L}-]/gu, "")}${year}`;
+}
+
+/**
+ * Resolves a proposed citation key against the existing keys so that every key
+ * carries a disambiguation letter. Mirrors the rule enforced by validate.ts
+ * check #12c.
  *
  * Cases:
  *
- * - Proposed key is already in the bib: no collision (the caller is
+ * - Proposed key is already known: no collision (the caller is
  *   reusing an existing reference). Returns the key unchanged.
  * - Proposed key ends with a single lowercase letter (e.g.
  *   `funston2020c`): treated as already disambiguated. Returns the
  *   key unchanged.
- * - Proposed key is bare (e.g. `funston2020`) and at least one
- *   suffix variant (`funston2020a`, ...) exists in the bib: the
- *   resolved key is `{base}{nextAvailableLetter}`.
+ * - Proposed key is bare (e.g. `funston2020`): resolves to
+ *   `{base}{nextAvailableLetter}`. Suffixing is universal since #1946 —
+ *   every one of the store's keys carries a letter — so a bare key is
+ *   always a collision, whether or not sibling variants exist yet.
  *
  * @param proposedKey - The citation key the caller wants to use.
- * @param existingKeys - Set of citation keys already in the bib.
+ * @param existingKeys - Set of citation keys already in use.
  * @returns Resolution result. When `collided` is true, the caller
  *     should use `resolvedKey` instead of `proposedKey`.
  */
@@ -391,7 +571,12 @@ export function resolveCitationKey(
 
     if (existingVariants.length === 0)
     {
-        return { resolvedKey: proposedKey, collided: false, reason: null };
+        return {
+            resolvedKey: `${proposedKey}a`,
+            collided: true,
+            reason: `bare "${proposedKey}" carries no disambiguation letter; `
+                + "every store key is suffixed",
+        };
     }
 
     const usedLetters = new Set(existingVariants.map((key) => key.slice(-1)));
@@ -403,7 +588,7 @@ export function resolveCitationKey(
             return {
                 resolvedKey: `${proposedKey}${letter}`,
                 collided: true,
-                reason: `bib has ${existingVariants.join(", ")}; bare "${proposedKey}" `
+                reason: `the store has ${existingVariants.join(", ")}; bare "${proposedKey}" `
                     + "would conflict with the disambiguation rule",
             };
         }

@@ -37,19 +37,28 @@ import { parse as parseYamlContent, stringify as stringifyYaml } from "yaml";
 
 import { getWorkingDir } from "./corpus-path.ts";
 import {
+    fetchDoiReference,
     fetchPbdbHolotype,
     fetchPbdbOccurrence,
+    fetchPbdbReferenceDoi,
     fetchPbdbTaxon,
+    matchStage,
+    resolveRegionCode,
 } from "./genus-enrichment.ts";
 import type { GenusData } from "./types.ts";
-import { readBibCitationKeys, resolveCitationKey } from "./utilities.ts";
+import {
+    citationKeyFor,
+    findStoreKeyByDoi,
+    readStoreCitationKeys,
+    readStoreSiblings,
+    resolveCitationKey,
+} from "./utilities.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
 const root = path.join(scriptDir, "..");
 
 const generaDir = path.join(root, "genera");
-const referencesBibPath = path.join(root, "dist", "references.bib");
 const stagingDir = path.join(root, "staging", "intake-species");
 
 /**
@@ -147,30 +156,6 @@ function findGenusYaml(genus: string): string | null
 }
 
 /**
- * Synthesises a citation key from author surname + year following the
- * project convention. Mirrors the helper in intake-bootstrap.ts.
- *
- * @param authors - The authors string.
- * @param year - The publication year.
- * @returns The lower-case citation key.
- */
-function citationKeyFor(authors: string, year: string | number): string
-{
-    const firstAuthor = (authors ?? "").split(";")[0].trim();
-    const surnamePart = firstAuthor.split(",")[0].trim();
-    const surname = surnamePart.split(/\s+/)[0];
-
-    // Keep diacritics and hyphens per the reference-key convention (#1894):
-    // "Ősi" -> "ősi", "Prieto-Márquez" -> "prieto-márquez". Only spaces,
-    // digits, and other punctuation are removed.
-    const normalised = surname
-        .toLowerCase()
-        .replace(/[^\p{L}-]/gu, "");
-
-    return `${normalised}${year}`;
-}
-
-/**
  * Best-effort species seed block derived from PBDB. Each field is
  * optional — the apply step is the source of truth for what actually
  * lands in the YAML.
@@ -182,8 +167,6 @@ type SpeciesSeed = {
     period?: {
         name?: Array<string>;
         stage?: Array<string>;
-        from_ma?: number;
-        to_ma?: number;
     };
     location?: {
         country?: string;
@@ -206,7 +189,12 @@ type SpeciesSeed = {
  * @param species - Species epithet.
  * @param issue - Optional issue number for the header.
  * @param describingKey - Proposed describing-paper citation key (or null).
- * @param alreadyInCorpus - Whether the key already exists in the bib.
+ * @param alreadyInStore - Whether the key already names a reference-store entry.
+ * @param keyNote - A line explaining how the key was settled (DOI reuse,
+ *     disambiguation, unverified year), or null.
+ * @param siblings - Existing `<author><year><letter>` store entries, listed so
+ *     the operator can spot one that is already the paper being sought.
+ * @param warnings - Seed fields the bootstrap declined to write.
  * @returns The Markdown body.
  */
 function buildPapersNeededBody(
@@ -214,7 +202,10 @@ function buildPapersNeededBody(
     species: string,
     issue: number | null,
     describingKey: string | null,
-    alreadyInCorpus: boolean,
+    alreadyInStore: boolean,
+    keyNote: string | null,
+    siblings: Array<{ id: string; title: string; doi: string | null }>,
+    warnings: Array<string>,
 ): string
 {
     const binomial = `${genus} ${species}`;
@@ -250,12 +241,34 @@ function buildPapersNeededBody(
 
     if (describingKey)
     {
-        const status = alreadyInCorpus
-            ? "Already in `dist/references.bib` — confirm the markdown is fetched."
-            : "Not yet in corpus; will need to be added when this paper lands.";
+        const status = alreadyInStore
+            ? "Already in the reference store — confirm the markdown is fetched."
+            : "Not yet in the store; will be added when this paper lands.";
 
         lines.push(`- [ ] **${describingKey}**`);
         lines.push(`  ${status}`);
+
+        if (keyNote)
+        {
+            lines.push(`  ${keyNote}`);
+        }
+
+        // A DOI settles the key on its own, but pre-DOI papers offer nothing
+        // to match on, so the siblings go on the page for the operator to scan.
+        if (siblings.length > 0 && !alreadyInStore)
+        {
+            lines.push("");
+            lines.push(siblings.length === 1
+                ? "  The store already holds this sibling. Check that it is not the paper"
+                : "  The store already holds these siblings. Check that none of them is the paper");
+            lines.push("  being sought before fetching under a fresh key:");
+
+            for (const sibling of siblings)
+            {
+                lines.push(`  - ${sibling.id} — ${sibling.title}`
+                    + (sibling.doi ? ` (doi:${sibling.doi})` : " (no DOI on file)"));
+            }
+        }
     }
     else
     {
@@ -275,6 +288,22 @@ function buildPapersNeededBody(
     lines.push("- [ ] **citation_key** — reason");
     lines.push("  DOI: ...");
     lines.push("");
+
+    if (warnings.length > 0)
+    {
+        lines.push("## Fields left unseeded");
+        lines.push("");
+        lines.push("The bootstrap declined to write these rather than guess. Fill them in");
+        lines.push("from the paper during the apply-step polish.");
+        lines.push("");
+
+        for (const warning of warnings)
+        {
+            lines.push(`- ${warning}`);
+        }
+
+        lines.push("");
+    }
 
     return lines.join("\n");
 }
@@ -298,6 +327,8 @@ async function cacheWikipediaArticle(genus: string): Promise<string | null>
     }
 
     const wikipediaApi = "https://en.wikipedia.org/w/api.php";
+    // Wikimedia's user-agent policy rejects the runtime default with a 429.
+    const wikipediaUserAgent = "open-paleo-data/1.0 (https://github.com/open-paleo/data)";
     const params = new URLSearchParams({
         action: "query",
         titles: genus,
@@ -312,7 +343,9 @@ async function cacheWikipediaArticle(genus: string): Promise<string | null>
 
     try
     {
-        const response = await fetch(`${wikipediaApi}?${params}`);
+        const response = await fetch(`${wikipediaApi}?${params}`, {
+            headers: { "User-Agent": wikipediaUserAgent },
+        });
         const data = await response.json() as {
             query?: {
                 pages?: Record<string, { extract?: string; missing?: string }>;
@@ -440,13 +473,15 @@ async function main(): Promise<void>
         process.stdout.write("    No Wikipedia article found / cache write failed\n");
     }
 
+    const warnings = new Array<string>();
+
     // Synthesise the citation key from PBDB's reported authority.
     // Authority text comes from `taxon_attr` ("Surname year") when
     // PBDB has it. Species-level PBDB records are usually sparse, so
     // this can be null for freshly described post-2020 taxa.
     let describingKey: string | null = null;
-    let describingYear: number | null = null;
-    let describingAuthors: string | null = null;
+    let describingDoi: string | null = null;
+    let keyNote: string | null = null;
 
     if (taxon?.taxon_attr)
     {
@@ -454,50 +489,96 @@ async function main(): Promise<void>
 
         if (authorityMatch !== null)
         {
-            describingAuthors = authorityMatch[1].trim();
-            describingYear = Number.parseInt(authorityMatch[2], 10);
-            describingKey = citationKeyFor(describingAuthors, describingYear);
+            describingKey = citationKeyFor(
+                authorityMatch[1].trim(),
+                Number.parseInt(authorityMatch[2], 10),
+            );
         }
     }
 
-    const bibKeys = readBibCitationKeys(referencesBibPath);
+    // Resolve the DOI when PBDB links a reference. The genus bootstrap has
+    // always done this; without it the checklist carries a bare key with no
+    // title or DOI to check the operator's fetch against (#2070 §1.2).
+    if (taxon?.reference_no)
+    {
+        process.stdout.write("  Resolving PBDB reference...\n");
+        describingDoi = await fetchPbdbReferenceDoi(taxon.reference_no);
+
+        const reference = describingDoi ? await fetchDoiReference(describingDoi) : null;
+
+        if (reference?.authors && reference?.year)
+        {
+            describingKey = citationKeyFor(reference.authors, reference.year);
+            process.stdout.write(`    ${reference.title ?? describingDoi}\n`);
+        }
+    }
+
+    if (describingKey !== null && describingDoi === null)
+    {
+        keyNote = "Note: the year comes from PBDB's authority string with no DOI to "
+            + "check it against; confirm it against the paper.";
+    }
+
+    const storeKeys = readStoreCitationKeys(root);
+    let siblings = new Array<{ id: string; title: string; doi: string | null }>();
 
     if (describingKey !== null)
     {
-        const resolution = resolveCitationKey(describingKey, bibKeys);
+        siblings = readStoreSiblings(root, describingKey);
 
-        if (resolution.collided)
+        // A DOI already in the store settles the key outright (#2070 §1.2).
+        const reusable = describingDoi
+            ? findStoreKeyByDoi(root, describingKey, describingDoi)
+            : null;
+
+        if (reusable)
         {
-            describingKey = resolution.resolvedKey;
+            keyNote = `Note: this DOI is already filed in the store under ${reusable}, `
+                + "so that key is reused rather than a second copy filed.";
+            describingKey = reusable;
+        }
+        else
+        {
+            const resolution = resolveCitationKey(describingKey, storeKeys);
+
+            if (resolution.collided)
+            {
+                describingKey = resolution.resolvedKey;
+                keyNote = `Note: key disambiguated — ${resolution.reason}. `
+                    + `Save the corpus markdown as ${describingKey}.md.`;
+            }
         }
     }
 
-    const alreadyInCorpus = describingKey !== null && bibKeys.has(describingKey);
+    const alreadyInStore = describingKey !== null && storeKeys.has(describingKey);
 
     // Build the species seed block. Fields are added only when we
     // have a confident value — the polish step will fill in anything
-    // PBDB missed.
+    // PBDB missed. `from_ma`/`to_ma` are deliberately not seeded: the build
+    // derives them from the stage, and a seeded pair silently outranks that.
     const seed: SpeciesSeed = {
         name: binomial,
         status: "valid",
         type_species: false,
     };
 
+    // PBDB's `early_interval` is often an epoch or a period rather than a
+    // stage, and `period.stage` takes stage names only (#2070 §3.1).
     if (taxon?.early_interval)
     {
-        const period = { stage: [taxon.early_interval] } as SpeciesSeed["period"];
+        const stage = matchStage(taxon.early_interval);
 
-        if (taxon.firstapp_max_ma)
+        if (stage)
         {
-            period!.from_ma = taxon.firstapp_max_ma;
+            seed.period = { stage: [stage] };
         }
-
-        if (taxon.lastapp_min_ma)
+        else
         {
-            period!.to_ma = taxon.lastapp_min_ma;
+            warnings.push(
+                `period.stage: PBDB reported the interval "${taxon.early_interval}", which is `
+                + "not a stage name; left unseeded",
+            );
         }
-
-        seed.period = period;
     }
 
     if (occurrence?.cc || occurrence?.formation || occurrence?.lat !== undefined)
@@ -509,9 +590,22 @@ async function main(): Promise<void>
             location.country = occurrence.cc;
         }
 
+        // `location.region` holds an ISO 3166-2 code; PBDB reports a plain name.
         if (occurrence.state)
         {
-            location.region = occurrence.state;
+            const regionCode = resolveRegionCode(occurrence.state, occurrence.cc);
+
+            if (regionCode)
+            {
+                location.region = regionCode;
+            }
+            else
+            {
+                warnings.push(
+                    `location.region: PBDB reported "${occurrence.state}", which regions.yaml `
+                    + "does not resolve to a single code; left unseeded",
+                );
+            }
         }
 
         if (occurrence.formation)
@@ -519,9 +613,11 @@ async function main(): Promise<void>
             location.formation = occurrence.formation;
         }
 
+        // PBDB hands back decimal degrees as strings, which serialize as
+        // quoted YAML scalars where the schema wants numbers.
         if (occurrence.lat !== undefined && occurrence.lng !== undefined)
         {
-            location.coordinates = [occurrence.lat, occurrence.lng];
+            location.coordinates = [Number(occurrence.lat), Number(occurrence.lng)];
         }
 
         seed.location = location;
@@ -565,7 +661,10 @@ async function main(): Promise<void>
         species,
         issue,
         describingKey,
-        alreadyInCorpus,
+        alreadyInStore,
+        keyNote,
+        siblings,
+        warnings,
     );
     const papersNeededPath = path.join(targetDir, "papers-needed.md");
     fs.writeFileSync(papersNeededPath, papersNeededBody, "utf8");
@@ -577,7 +676,7 @@ async function main(): Promise<void>
 
     if (describingKey !== null)
     {
-        const tag = alreadyInCorpus ? "already in corpus" : "NEW — to be added";
+        const tag = alreadyInStore ? "already in store" : "NEW — to be added";
         process.stdout.write(`  Describing paper:      ${describingKey} (${tag})\n`);
     }
     else
@@ -585,6 +684,16 @@ async function main(): Promise<void>
         process.stdout.write(
             "  Describing paper:      not found via PBDB — manual lookup needed\n",
         );
+    }
+
+    if (warnings.length > 0)
+    {
+        process.stdout.write(`\nFields left unseeded (${warnings.length}):\n`);
+
+        for (const warning of warnings)
+        {
+            process.stdout.write(`  - ${warning}\n`);
+        }
     }
 }
 

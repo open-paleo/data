@@ -17,11 +17,12 @@
 import * as path from "node:path";
 import * as url from "node:url";
 
-import type { GenusData, Reference, Schema, StageInfo } from "./types.ts";
+import type { GenusData, Reference, Schema, StageInfo, TreeNode } from "./types.ts";
 import {
     parseYaml,
+    collectAllKeys,
     loadInstitutionRegistry,
-    flattenInstitutionMap,
+    loadRegionRegistry,
     writeStoreReference,
 } from "./utilities.ts";
 
@@ -36,11 +37,113 @@ const wikipediaApiBase = "https://en.wikipedia.org/w/api.php";
 const institutionRegistry = loadInstitutionRegistry(
     path.join(root, "institutions.yaml"),
 );
-const museumNames: Record<string, string> = flattenInstitutionMap(
-    institutionRegistry,
-);
 
 const schema = parseYaml<Schema>(path.join(root, "schema.yml"));
+
+/**
+ * Folds a registry label for lookup: diacritics stripped, lower-cased, and
+ * everything but letters and digits removed. Lets "Aragón" match the registry's
+ * "Aragon" and "C.M.N." match "CMN" without curating spelling variants.
+ *
+ * @param label - The raw label from an external source or a registry.
+ * @returns The folded comparison key.
+ */
+function foldLabel(label: string): string
+{
+    return label
+        .normalize("NFD")
+        .replace(/[̀-ͯ]/g, "")
+        .toLowerCase()
+        .replace(/[^a-z0-9]/g, "");
+}
+
+/**
+ * Folded institution label (code, registry name, or alias) to the canonical
+ * registry code. `location.institution` holds the CODE, so an external source
+ * that hands us a spelled-out name has to be resolved back to it (#2070 §1.5).
+ */
+const institutionCodes = new Map<string, string>();
+
+for (const [code, entry] of Object.entries(institutionRegistry))
+{
+    institutionCodes.set(foldLabel(code), code);
+
+    if (entry.name)
+    {
+        institutionCodes.set(foldLabel(entry.name), code);
+    }
+
+    for (const alias of entry.aliases ?? [])
+    {
+        institutionCodes.set(foldLabel(alias), code);
+    }
+}
+
+/**
+ * Folded subdivision name to the ISO 3166-2 codes carrying it. `location.region`
+ * holds the CODE, but PBDB and Wikipedia both report a plain name, and a bare
+ * name is ambiguous across countries ("Georgia"), so the resolver takes the
+ * country as a discriminator (#2070 §1.5).
+ */
+const regionCodesByName = new Map<string, Array<string>>();
+
+for (const [code, name] of Object.entries(loadRegionRegistry(path.join(root, "regions.yaml"))))
+{
+    const folded = foldLabel(name);
+    regionCodesByName.set(folded, [...regionCodesByName.get(folded) ?? [], code]);
+}
+
+/**
+ * Every clade name that exists as a node in `tree.yml`. A genus `parent` must
+ * name one of these, and PBDB's classification chain routinely passes through
+ * ranks the tree does not carry (#2070 §1.5).
+ */
+const treeCladeNames = new Set(
+    collectAllKeys(parseYaml<TreeNode>(path.join(root, "tree.yml"))),
+);
+
+/**
+ * Resolves a subdivision name to its ISO 3166-2 code.
+ *
+ * @param name - The subdivision name as an external source reported it.
+ * @param countryCode - The ISO 3166-1 alpha-2 country code, when known.
+ * @returns The region code, or null when it is unknown or ambiguous.
+ */
+export function resolveRegionCode(
+    name: string,
+    countryCode: string | undefined,
+): string | null
+{
+    const candidates = regionCodesByName.get(foldLabel(name)) ?? [];
+
+    if (countryCode)
+    {
+        const scoped = candidates.filter((code) => code.startsWith(`${countryCode}-`));
+
+        return scoped.length === 1 ? scoped[0] : null;
+    }
+
+    return candidates.length === 1 ? candidates[0] : null;
+}
+
+/**
+ * Resolves an institution code, name, or alias to its canonical registry code.
+ *
+ * @param label - The institution label as an external source reported it.
+ * @returns The registry code, or null when the registry does not carry it.
+ */
+export function resolveInstitutionCode(label: string): string | null
+{
+    return institutionCodes.get(foldLabel(label)) ?? null;
+}
+
+/**
+ * Identifies this tool to the APIs it calls. Wikimedia's user-agent policy
+ * rejects the runtime default, and it does so with a 429 that the retry loop
+ * cannot clear — which reads as "Wikidata has no mass for this genus" rather
+ * than as a failed request, silently dropping seed fields.
+ */
+const userAgent = "open-paleo-data/1.0 (https://github.com/open-paleo/data)";
 
 /**
  * Cache of taxon_no → ancestor chain (leaf-first), populated as
@@ -146,8 +249,6 @@ export type EnrichedGenus = {
     integument?: string;
     period?: string;
     stage?: string;
-    fromMa?: number;
-    toMa?: number;
     country?: string;
     countryCode?: string;
     region?: string;
@@ -168,6 +269,7 @@ export type EnrichedGenus = {
     zoobankId?: string;
     referenceDoi?: string;
     reference?: Record<string, string> | null;
+    warnings: Array<string>;
     fieldsPopulated: number;
     fieldsTotal: number;
 };
@@ -199,7 +301,10 @@ async function fetchJson(fetchUrl: string, options?: RequestInit): Promise<unkno
     {
         try
         {
-            const response = await fetch(fetchUrl, options);
+            const response = await fetch(fetchUrl, {
+                ...options,
+                headers: { "User-Agent": userAgent, ...options?.headers },
+            });
 
             if (!response.ok)
             {
@@ -390,8 +495,12 @@ export async function fetchPbdbHolotype(name: string): Promise<PbdbHolotype | nu
 
     if (record.museum)
     {
-        const abbreviation = record.museum.split(",")[0].trim();
-        result.institution = museumNames[abbreviation] ?? abbreviation;
+        const resolved = resolveInstitutionCode(record.museum.split(",")[0].trim());
+
+        if (resolved)
+        {
+            result.institution = resolved;
+        }
     }
 
     return result.specimenId ?? result.institution ? result : null;
@@ -430,7 +539,10 @@ export async function fetchDoiReference(doi: string): Promise<Record<string, str
         const response = await fetch(
             `https://doi.org/${encodeURIComponent(doi)}`,
             {
-                headers: { "Accept": "application/citeproc+json" },
+                headers: {
+                    "Accept": "application/citeproc+json",
+                    "User-Agent": userAgent,
+                },
                 redirect: "follow",
             },
         );
@@ -564,9 +676,15 @@ function findDisambiguationTarget(wikitext: string, extract: string): string | n
  * taxobox, page summary, and etymology section.
  *
  * @param title - The Wikipedia page title to fetch.
+ * @param genus - The target genus name, carried through redirects and
+ *     disambiguation hops so the holotype scrape can reject a specimen the
+ *     article attributes to another taxon. Defaults to the title.
  * @returns Parsed wikitext data, or null.
  */
-export async function parseWikitext(title: string): Promise<WikitextData | null>
+export async function parseWikitext(
+    title: string,
+    genus: string = title,
+): Promise<WikitextData | null>
 {
     const parseParams = new URLSearchParams({
         action: "parse",
@@ -614,7 +732,7 @@ export async function parseWikitext(title: string): Promise<WikitextData | null>
 
     if (disambiguationTarget)
     {
-        return parseWikitext(disambiguationTarget);
+        return parseWikitext(disambiguationTarget, genus);
     }
 
     const wikitext = rawWikitext;
@@ -622,7 +740,7 @@ export async function parseWikitext(title: string): Promise<WikitextData | null>
 
     if (!taxobox && !title.includes("("))
     {
-        const dinosaurPage = await parseWikitext(title + " (dinosaur)");
+        const dinosaurPage = await parseWikitext(title + " (dinosaur)", genus);
 
         if (dinosaurPage)
         {
@@ -675,7 +793,7 @@ export async function parseWikitext(title: string): Promise<WikitextData | null>
         result.ipa = extractWikitextIpa(wikitext);
     }
 
-    const holotype = extractHolotype(wikitext);
+    const holotype = extractHolotype(wikitext, genus);
 
     if (holotype.specimenId)
     {
@@ -1083,32 +1201,79 @@ function extractWikitextIpa(wikitext: string): string
 }
 
 /**
+ * Reports whether a window of wikitext credits its holotype to a taxon other
+ * than the target genus, as in "the holotype of ''Spinosaurus maroccanus''".
+ *
+ * @param region - The window of text around the word "holotype".
+ * @param genus - The target genus name.
+ * @returns True when the window names a different taxon as the type's owner.
+ */
+function attributesHolotypeElsewhere(region: string, genus: string): boolean
+{
+    for (const match of region.matchAll(/holotype\s+of\s+'{0,5}\[{0,2}([A-Z][A-Za-z]+)/g))
+    {
+        if (match[1] !== genus)
+        {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+/**
  * Extracts holotype specimen ID and institution from the full wikitext
  * body. Searches for the word "holotype" and extracts a nearby specimen
  * code matching common museum catalogue patterns.
  *
  * @param wikitext - The full raw wikitext string.
+ * @param genus - The target genus name, used to reject a specimen the article
+ *     attributes to some other taxon.
  * @returns An object with specimenId and institution, both optional.
  */
-function extractHolotype(wikitext: string): { specimenId?: string; institution?: string }
+function extractHolotype(
+    wikitext: string,
+    genus: string,
+): { specimenId?: string; institution?: string }
 {
+    // The taxobox is a nested template, which the flat `{{...}}` strip below
+    // cannot remove, and its image caption routinely names a DIFFERENT taxon's
+    // holotype — that is how Sigilmassasaurus picked up Spinosaurus
+    // maroccanus's CMN 50791 in place of its own CMN 41857 (#2070 §1.7).
+    // Template parameter lines go wholesale: body prose never begins with a pipe.
     const cleaned = wikitext
+        .split("\n")
+        .filter((line) => !line.trim().startsWith("|"))
+        .join("\n")
         .replace(/<ref[^>]*\/>/gi, "")
         .replace(/<ref[^>]*>[\s\S]*?<\/ref>/gi, "")
+        .replace(/\[\[(?:File|Image):[^\]]*\]\]/gi, "")
         .replace(/\{\{[^}]*\}\}/g, "")
         .replace(/\[\[(?:[^|\]]*\|)?([^\]]*)\]\]/g, "$1");
 
     const specimenPattern = /\b([A-Z]{2,}(?:[-\s][A-Za-z]{1,4})*[-\s]?[A-Z]?\d[\w./–-]*)/g;
 
-    const holotypeRegion = cleaned.match(/holotype[^.]{0,200}/i);
-    const reverseRegion = cleaned.match(/.{0,200}holotype/i);
+    // A window either side of each mention, rather than up to the next period:
+    // abbreviated binomials ("of ''S. brevicollis'', CMN 41857") put a period
+    // between the word and the catalogue number.
+    const windows = [...cleaned.matchAll(/holotype/gi)].map(
+        (match) => cleaned.slice(
+            Math.max(0, match.index - 200),
+            match.index + 200,
+        ),
+    );
 
-    for (const region of [holotypeRegion?.[0], reverseRegion?.[0]])
+    for (const region of windows)
     {
-        if (!region)
+        if (attributesHolotypeElsewhere(region, genus))
         {
             continue;
         }
+
+        // Reset before each scan, not after: `lastIndex` persists on a global
+        // regex, and a leftover offset from a previous window would skip
+        // matches at the start of this one.
+        specimenPattern.lastIndex = 0;
 
         let specimenMatch;
 
@@ -1116,60 +1281,39 @@ function extractHolotype(wikitext: string): { specimenId?: string; institution?:
         {
             const candidate = specimenMatch[1].trim();
 
-            if (candidate.length < 4)
-            {
-                continue;
-            }
-
-            if (/^\d/.test(candidate))
-            {
-                continue;
-            }
-
-            if (/^[A-Z][a-z]/.test(candidate))
+            if (candidate.length < 4 || /^\d/.test(candidate) || /^[A-Z][a-z]/.test(candidate))
             {
                 continue;
             }
 
             return {
                 specimenId: candidate,
-                institution: resolveMuseumAbbreviation(candidate),
+                institution: resolveMuseumAbbreviation(candidate) ?? undefined,
             };
         }
-
-        specimenPattern.lastIndex = 0;
     }
 
     return {};
 }
 
 /**
- * Attempts to resolve a museum institution name from a specimen ID
- * prefix (e.g., "AMNH 5027" resolves to "American Museum of Natural
- * History").
+ * Attempts to resolve a registry institution code from a specimen ID
+ * prefix (e.g., "AMNH 5027" resolves to "AMNH").
  *
  * @param specimenId - The specimen catalogue number.
- * @returns The full institution name, or undefined if not recognized.
+ * @returns The registry code, or null if the registry does not carry it.
  */
-function resolveMuseumAbbreviation(specimenId: string): string | undefined
+function resolveMuseumAbbreviation(specimenId: string): string | null
 {
     const prefix = specimenId.match(/^([A-Z]{2,}(?:[-\s][A-Za-z]{1,4})?)/);
 
     if (!prefix)
     {
-        return undefined;
+        return null;
     }
 
-    const abbreviation = prefix[1].replace(/[-\s]+/g, "").toUpperCase();
-
-    if (museumNames[abbreviation])
-    {
-        return museumNames[abbreviation];
-    }
-
-    const withHyphen = prefix[1].split(/[-\s]+/)[0];
-
-    return museumNames[withHyphen] ?? undefined;
+    return resolveInstitutionCode(prefix[1])
+        ?? resolveInstitutionCode(prefix[1].split(/[-\s]+/)[0]);
 }
 
 /**
@@ -1391,13 +1535,21 @@ function extractQuantity(
 
     if (targetUnit === "kg")
     {
-        if (unit.includes("Q11570"))
+        // Q11570 kilogram, Q191118 tonne, Q100995 pound, Q41803 gram.
+        // Kilogram and tonne used to be transposed here, which read a Wikidata
+        // mass in tonnes as kilograms and one in kilograms as tonnes; gram was
+        // not handled at all (#2070 §1.5).
+        if (unit.includes("Q191118"))
         {
             value = value * 1000;
         }
         else if (unit.includes("Q100995"))
         {
             value = value * 0.453592;
+        }
+        else if (unit.includes("Q41803"))
+        {
+            value = value / 1000;
         }
 
         return String(Math.round(value));
@@ -1539,7 +1691,7 @@ function matchPeriod(range: string): string | null
  * @param range - The temporal range text.
  * @returns The matching schema stage name, or null.
  */
-function matchStage(range: string): string | null
+export function matchStage(range: string): string | null
 {
     const stages = schema.stages ?? {};
     const lowerRange = range.toLowerCase();
@@ -1673,16 +1825,27 @@ export async function enrichGenus(
     taxon: PbdbTaxon | null,
 ): Promise<EnrichedGenus>
 {
-    const parentClade = parentChain.length > 0 ? parentChain[0] : undefined;
-
     const enriched: EnrichedGenus = {
         name,
         pbdbId: 0,
         parentChain,
-        parentClade,
+        warnings: new Array<string>(),
         fieldsPopulated: 0,
         fieldsTotal: 14,
     };
+
+    // `parent` must name a tree.yml node, and PBDB's chain runs through ranks
+    // the tree does not carry (Troodontini, and every Linnaean family the tree
+    // skips), so fall to the nearest ancestor that IS a node (#2070 §1.5).
+    enriched.parentClade = parentChain.find((clade) => treeCladeNames.has(clade));
+
+    if (parentChain.length > 0 && enriched.parentClade !== parentChain[0])
+    {
+        enriched.warnings.push(
+            `parent: PBDB's immediate parent "${parentChain[0]}" is not a tree.yml node; `
+            + `seeded "${enriched.parentClade ?? "(none — assign by hand)"}" instead`,
+        );
+    }
 
     if (taxon)
     {
@@ -1715,15 +1878,9 @@ export async function enrichGenus(
             enriched.period = matchPeriod(intervalText) ?? undefined;
         }
 
-        if (taxon.firstapp_max_ma)
-        {
-            enriched.fromMa = taxon.firstapp_max_ma;
-        }
-
-        if (taxon.lastapp_min_ma)
-        {
-            enriched.toMa = taxon.lastapp_min_ma;
-        }
+        // PBDB's firstapp/lastapp bounds are deliberately not carried: the
+        // build derives `from_ma`/`to_ma` from the stage now, and a seeded
+        // pair silently outranks that (#2070 §1.5).
     }
 
     const [typeSpecies, occurrence, holotype, referenceDoi] = await Promise.allSettled([
@@ -1733,16 +1890,28 @@ export async function enrichGenus(
         taxon?.reference_no ? fetchPbdbReferenceDoi(taxon.reference_no) : Promise.resolve(null),
     ]);
 
+    // PBDB lists the genus's children, which for a genus whose type species has
+    // been recombined is the SUPERSEDED binomial (Uteodon returned
+    // "Camptosaurus aphanoecetes"). Only seed a binomial in this genus.
     if (typeSpecies.status === "fulfilled" && typeSpecies.value)
     {
-        enriched.typeSpecies = typeSpecies.value;
+        if (typeSpecies.value.split(/\s+/)[0] === name)
+        {
+            enriched.typeSpecies = typeSpecies.value;
+        }
+        else
+        {
+            enriched.warnings.push(
+                `type species: PBDB reported "${typeSpecies.value}", which is not a `
+                + `${name} binomial; left unseeded`,
+            );
+        }
     }
 
     if (occurrence.status === "fulfilled" && occurrence.value)
     {
         const occurrenceRecord = occurrence.value;
         enriched.formation = occurrenceRecord.formation ?? undefined;
-        enriched.region = occurrenceRecord.state ?? undefined;
         enriched.latitude = occurrenceRecord.lat ?? undefined;
         enriched.longitude = occurrenceRecord.lng ?? undefined;
 
@@ -1751,6 +1920,23 @@ export async function enrichGenus(
             enriched.countryCode = occurrenceRecord.cc;
             const countries = schema.countries ?? {};
             enriched.country = countries[occurrenceRecord.cc] ?? undefined;
+        }
+
+        // `location.region` holds an ISO 3166-2 code; PBDB reports a plain name.
+        if (occurrenceRecord.state)
+        {
+            enriched.region = resolveRegionCode(
+                occurrenceRecord.state,
+                enriched.countryCode,
+            ) ?? undefined;
+
+            if (!enriched.region)
+            {
+                enriched.warnings.push(
+                    `region: PBDB reported "${occurrenceRecord.state}", which regions.yaml `
+                    + "does not resolve to a single code; left unseeded",
+                );
+            }
         }
     }
 
@@ -1789,7 +1975,8 @@ export async function enrichGenus(
             enriched.ipa = wikitext.ipa;
         }
 
-        if (!enriched.typeSpecies && wikitext.typeSpecies)
+        if (!enriched.typeSpecies && wikitext.typeSpecies
+            && wikitext.typeSpecies.split(/\s+/)[0] === name)
         {
             enriched.typeSpecies = wikitext.typeSpecies;
         }
@@ -1919,13 +2106,30 @@ export async function enrichGenus(
 }
 
 /**
+ * Widest plausible ratio of body mass in kilograms to the cube of body length
+ * in metres across dinosaurs, from the lightest paravians to the heaviest
+ * titanosaurs. Real values sit inside roughly 0.8-12; the bounds here are
+ * deliberately far outside that, because the error being caught is a
+ * thousandfold unit slip, not a modelling disagreement (#2070 §1.6).
+ */
+const massPerLengthCubedBounds = { min: 0.2, max: 50 };
+
+/**
  * Converts an enriched genus record into a GenusData YAML object.
  *
  * @param enriched - The enriched genus data.
  * @param reference - The resolved DOI reference, if available.
+ * @param describingKey - The resolved citation key for the describing paper,
+ *     or null. Passing it in keeps `erected_in` and the `papers-needed.md`
+ *     checklist on one value; minting a second key here produced a YAML that
+ *     silently disagreed with the checklist (#2070 §1.1).
  * @returns A GenusData object ready for YAML serialization.
  */
-export function toGenusYaml(enriched: EnrichedGenus, reference: Record<string, string> | null): GenusData
+export function toGenusYaml(
+    enriched: EnrichedGenus,
+    reference: Record<string, string> | null,
+    describingKey: string | null,
+): GenusData
 {
     const genus: GenusData = {
         genus: enriched.name,
@@ -2016,7 +2220,7 @@ export function toGenusYaml(enriched: EnrichedGenus, reference: Record<string, s
     species.status = "valid";
     species.type_species = true;
 
-    if (enriched.period ?? enriched.stage ?? enriched.fromMa ?? enriched.toMa)
+    if (enriched.period ?? enriched.stage)
     {
         const period: Record<string, unknown> = {};
 
@@ -2028,16 +2232,6 @@ export function toGenusYaml(enriched: EnrichedGenus, reference: Record<string, s
         if (enriched.stage)
         {
             period.stage = [enriched.stage];
-        }
-
-        if (enriched.fromMa)
-        {
-            period.from_ma = enriched.fromMa;
-        }
-
-        if (enriched.toMa)
-        {
-            period.to_ma = enriched.toMa;
         }
 
         species.period = period;
@@ -2094,17 +2288,30 @@ export function toGenusYaml(enriched: EnrichedGenus, reference: Record<string, s
     if (enriched.mass ?? enriched.bodyLength ?? enriched.hipHeight)
     {
         const size: Record<string, unknown> = {};
+        const bodyLength = enriched.bodyLength ? parseFloat(enriched.bodyLength) : null;
 
-        if (enriched.bodyLength)
+        if (bodyLength)
         {
-            const value = parseFloat(enriched.bodyLength);
-            size.length_m = { min: value, max: value };
+            size.length_m = { min: bodyLength, max: bodyLength };
         }
 
         if (enriched.mass)
         {
-            const value = parseInt(enriched.mass, 10);
-            size.weight_kg = { min: value, max: value };
+            const mass = parseInt(enriched.mass, 10);
+            const ratio = bodyLength ? mass / (bodyLength ** 3) : null;
+
+            if (ratio !== null
+                && (ratio < massPerLengthCubedBounds.min || ratio > massPerLengthCubedBounds.max))
+            {
+                enriched.warnings.push(
+                    `size: mass ${mass} kg is implausible beside length ${bodyLength} m `
+                    + "(likely a Wikidata unit slip); left unseeded",
+                );
+            }
+            else
+            {
+                size.weight_kg = { min: mass, max: mass };
+            }
         }
 
         if (enriched.hipHeight)
@@ -2118,16 +2325,10 @@ export function toGenusYaml(enriched: EnrichedGenus, reference: Record<string, s
 
     genus.species = [species] as GenusData["species"];
 
-    if (reference && reference.authors && reference.year && reference.title)
+    if (describingKey && reference && reference.authors && reference.year && reference.title)
     {
-        const surname = (reference.authors ?? "")
-            .split(",")[0].trim().toLowerCase().replace(/\s+/g, "");
-        // Universal `a`-suffixing: a fresh describing paper starts at `a`.
-        // Collisions are resolved manually (citation-key disambiguation policy).
-        const referenceId = `${surname}${reference.year}a`;
-
         const storeEntry: Reference = {
-            id: referenceId,
+            id: describingKey,
             authors: reference.authors,
             year: parseInt(reference.year, 10),
             title: reference.title,
@@ -2165,8 +2366,8 @@ export function toGenusYaml(enriched: EnrichedGenus, reference: Record<string, s
 
         writeStoreReference(root, storeEntry);
 
-        genus.references = [{ id: referenceId }] as GenusData["references"];
-        (species as Record<string, unknown>).erected_in = referenceId;
+        genus.references = [{ id: describingKey }] as GenusData["references"];
+        (species as Record<string, unknown>).erected_in = describingKey;
     }
 
     return genus;

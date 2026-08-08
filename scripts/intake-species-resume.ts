@@ -197,7 +197,7 @@ function buildSpeciesPromptString(
         '  "period_from_ma": "number|null",',
         '  "period_to_ma": "number|null",',
         '  "location_country": "string|null — ISO 3166-1 alpha-2 code preferred",',
-        '  "location_region": "string|null — state/province/oblast",',
+        '  "location_region": "string|null — ISO 3166-2 subdivision CODE (e.g. \\"CN-LN\\" for Liaoning, \\"US-MT\\" for Montana), never the plain name. Leave null rather than guessing a code.",',
         '  "location_formation": "string|null",',
         '  "location_locality": "string|null — quarry, site, hamlet, etc.",',
         '  "location_coordinates": "[lat, lng] | null — decimal degrees, only when the paper gives coordinates",',

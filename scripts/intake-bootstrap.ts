@@ -29,76 +29,109 @@ import {
     walkParentChain,
 } from "./genus-enrichment.ts";
 import { toGenusYaml } from "./genus-enrichment.ts";
-import { readBibCitationKeys, resolveCitationKey } from "./utilities.ts";
+import {
+    citationKeyFor,
+    findStoreKeyByDoi,
+    readStoreCitationKeys,
+    readStoreSiblings,
+    resolveCitationKey,
+} from "./utilities.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
 const root = path.join(scriptDir, "..");
 
-const referencesBibPath = path.join(root, "dist", "references.bib");
 const stagingIntakeDir = path.join(root, "staging", "intake");
 
 /**
- * Synthesises a citation key from author surname + year following the
- * project convention (e.g. "Osmólska, H." 1996 → "osmolska1996"). Strips
- * diacritics and non-alphabetic characters.
- *
- * @param authors - The authors string (semicolon-separated entries).
- * @param year - The publication year as a number or string.
- * @returns The lower-case citation key.
+ * The describing paper as the bootstrap resolved it.
  */
-function citationKeyFor(authors: string, year: string | number): string
-{
-    const firstAuthor = (authors ?? "").split(";")[0].trim();
+type DescribingPaper = {
+    /**
+     * Resolved citation key, or null when PBDB gave nothing to key from.
+     * This is the ONE key the run uses — it is written into `erected_in`
+     * and printed on the checklist, so the two can never disagree.
+     */
+    key: string | null;
 
-    // Take only the first whitespace-delimited token before any
-    // comma — this collapses cases like "Lovelace et al." down to
-    // "Lovelace", and "Smith Jr." down to "Smith". Stops at a comma
-    // so "Osmólska, H." still yields "Osmólska".
-    const surnamePart = firstAuthor.split(",")[0].trim();
-    const surname = surnamePart.split(/\s+/)[0];
+    /**
+     * DOI of the paper, or null when unresolved.
+     */
+    doi: string | null;
 
-    // Keep diacritics and hyphens per the reference-key convention (#1894):
-    // "Ősi" -> "ősi", "Prieto-Márquez" -> "prieto-márquez". Only spaces,
-    // digits, and other punctuation are removed.
-    const normalised = surname
-        .toLowerCase()
-        .replace(/[^\p{L}-]/gu, "");
+    /**
+     * Title of the paper, or null when unresolved.
+     */
+    title: string | null;
 
-    return `${normalised}${year}`;
-}
+    /**
+     * Journal of the paper, or null when unresolved.
+     */
+    journal: string | null;
+
+    /**
+     * Whether the key already names an entry in the reference store.
+     */
+    alreadyInStore: boolean;
+
+    /**
+     * Whether DOI/title/journal are still missing because PBDB had no
+     * linked reference_no.
+     */
+    needsMetadata: boolean;
+
+    /**
+     * Non-null when the bare proposed key was bumped to a suffix letter.
+     */
+    disambiguationReason: string | null;
+
+    /**
+     * Set when the paper's DOI already sits in the store under this key, so
+     * the run reused it rather than minting a fresh suffix for the same paper.
+     */
+    doiReusedKey: string | null;
+
+    /**
+     * Whether the year in the key came from PBDB's authority string alone,
+     * with no DOI to check it against.
+     */
+    yearUnverified: boolean;
+
+    /**
+     * Sibling `<author><year><letter>` entries already in the store, listed
+     * whenever a fresh suffix was minted so the operator can see whether one
+     * of them is in fact the paper being sought.
+     */
+    siblings: Array<{ id: string; title: string; doi: string | null }>;
+};
 
 /**
  * Builds the `papers-needed.md` checklist body.
  *
  * @param genus - The genus name.
  * @param notes - Verbatim --notes context, or null.
- * @param describingKey - Citation key of the describing paper, or null
- *     when not yet known.
- * @param describingDoi - DOI of the describing paper, or null.
- * @param describingTitle - Title of the describing paper, or null.
- * @param describingJournal - Journal of the describing paper, or null.
- * @param alreadyInCorpus - Whether the citation key is present in
- *     `dist/references.bib`.
- * @param describingNeedsMetadata - Whether the describing paper has
- *     no DOI/title/journal yet (PBDB had no reference_no).
- * @param disambiguationReason - Non-null when the proposed key
- *     collided with existing biblatex-suffix variants in the bib
- *     and was bumped to the next free letter (e.g. `funston2020c`).
+ * @param describing - The resolved describing paper.
+ * @param warnings - Seed fields the enrichment declined to write, for the
+ *     operator to fill in from the paper.
  * @returns The Markdown body, ready to write.
  */
 function buildPapersNeededBody(
     genus: string,
     notes: string | null,
-    describingKey: string | null,
-    describingDoi: string | null,
-    describingTitle: string | null,
-    describingJournal: string | null,
-    alreadyInCorpus: boolean,
-    describingNeedsMetadata: boolean,
-    disambiguationReason: string | null,
+    describing: DescribingPaper,
+    warnings: Array<string>,
 ): string
 {
+    const {
+        key: describingKey,
+        doi: describingDoi,
+        title: describingTitle,
+        journal: describingJournal,
+        alreadyInStore,
+        needsMetadata: describingNeedsMetadata,
+        disambiguationReason,
+    } = describing;
+
     const lines = new Array<string>();
 
     lines.push(`# ${genus} — Papers Needed`);
@@ -133,17 +166,24 @@ function buildPapersNeededBody(
             lines.push(`  Note: key disambiguated — ${disambiguationReason}.`);
             lines.push(`  Save the corpus markdown as ${describingKey}.md.`);
         }
-        else if (alreadyInCorpus)
+        else if (alreadyInStore)
         {
-            lines.push("  Note: this citation key is already present in");
-            lines.push("  `dist/references.bib` — confirm it is the right paper.");
+            lines.push("  Note: this citation key is already in the reference");
+            lines.push("  store — confirm it is the right paper.");
+        }
+
+        if (describing.yearUnverified)
+        {
+            lines.push("  Note: the year comes from PBDB's authority string with no DOI to");
+            lines.push("  check it against, and PBDB carries the wrong year often enough to");
+            lines.push("  be worth confirming against the paper before the markdown is saved.");
         }
     }
     else if (describingKey)
     {
-        const status = alreadyInCorpus
-            ? "Already in corpus (`dist/references.bib`); confirm the markdown is fetched."
-            : "Not yet in corpus; will need to be added when this paper lands.";
+        const status = alreadyInStore
+            ? "Already in the reference store; confirm the markdown is fetched."
+            : "Not yet in the store; will be added when this paper lands.";
 
         lines.push(`- [ ] **${describingKey}**`);
 
@@ -162,7 +202,13 @@ function buildPapersNeededBody(
             lines.push(`  DOI: ${describingDoi}`);
         }
 
-        if (disambiguationReason)
+        if (describing.doiReusedKey)
+        {
+            lines.push("  Note: this DOI is already filed in the reference store under");
+            lines.push(`  ${describing.doiReusedKey}, so that key is reused rather than a fresh`);
+            lines.push("  suffix minted for a second copy of the same paper.");
+        }
+        else if (disambiguationReason)
         {
             lines.push(`  Note: key disambiguated — ${disambiguationReason}.`);
             lines.push(`  Save the corpus markdown as ${describingKey}.md.`);
@@ -170,12 +216,29 @@ function buildPapersNeededBody(
 
         lines.push(`  ${status}`);
     }
-    else
+    else if (!describingKey)
     {
         lines.push("- [ ] **Describing paper unknown** — PBDB has no record");
         lines.push("  (common for post-2020 taxa). Identify the original");
         lines.push("  description manually and fill in citation_key, DOI,");
         lines.push("  authors, year, title, journal.");
+    }
+
+    // A DOI settles the key on its own, but pre-DOI papers offer nothing to
+    // match on, so the siblings go on the page for the operator to scan.
+    if (describing.siblings.length > 0 && !describing.doiReusedKey && !alreadyInStore)
+    {
+        lines.push("");
+        lines.push(describing.siblings.length === 1
+            ? "  The store already holds this sibling. Check that it is not the paper"
+            : "  The store already holds these siblings. Check that none of them is the paper");
+        lines.push("  being sought before fetching under a fresh key:");
+
+        for (const sibling of describing.siblings)
+        {
+            lines.push(`  - ${sibling.id} — ${sibling.title}`
+                + (sibling.doi ? ` (doi:${sibling.doi})` : " (no DOI on file)"));
+        }
     }
 
     lines.push("");
@@ -188,6 +251,22 @@ function buildPapersNeededBody(
     lines.push("- [ ] **citation_key** — reason");
     lines.push("  DOI: ...");
     lines.push("");
+
+    if (warnings.length > 0)
+    {
+        lines.push("## Fields left unseeded");
+        lines.push("");
+        lines.push("The bootstrap declined to write these rather than guess. Fill them in");
+        lines.push("from the paper during the apply-step polish.");
+        lines.push("");
+
+        for (const warning of warnings)
+        {
+            lines.push(`- ${warning}`);
+        }
+
+        lines.push("");
+    }
 
     if (notes)
     {
@@ -265,7 +344,76 @@ async function main(): Promise<void>
         `    Fields populated: ${enriched.fieldsPopulated}/${enriched.fieldsTotal}\n`,
     );
 
-    const genusYaml = toGenusYaml(enriched, enriched.reference ?? null);
+    const reference = enriched.reference ?? null;
+
+    // Prefer the resolved DOI reference when present; otherwise fall
+    // back to the bare author + year that PBDB attaches at the taxon
+    // level. The fallback is common for older genera where PBDB has no
+    // linked reference_no.
+    const describing: DescribingPaper = {
+        key: null,
+        doi: null,
+        title: null,
+        journal: null,
+        alreadyInStore: false,
+        needsMetadata: false,
+        disambiguationReason: null,
+        doiReusedKey: null,
+        yearUnverified: false,
+        siblings: new Array<{ id: string; title: string; doi: string | null }>(),
+    };
+
+    if (reference?.authors && reference?.year)
+    {
+        describing.key = citationKeyFor(reference.authors, reference.year);
+        describing.doi = reference.doi ?? null;
+        describing.title = reference.title ?? null;
+        describing.journal = reference.journal ?? null;
+    }
+    else if (enriched.authors && enriched.year)
+    {
+        describing.key = citationKeyFor(enriched.authors, enriched.year);
+        describing.needsMetadata = true;
+        describing.yearUnverified = true;
+    }
+
+    // The store is the source of truth for what keys exist; dist/references.bib
+    // is a build output that can lag the working tree.
+    const storeKeys = readStoreCitationKeys(root);
+
+    if (describing.key)
+    {
+        describing.siblings = readStoreSiblings(root, describing.key);
+
+        // A DOI already in the store settles the key outright. Minting a fresh
+        // suffix for it would file one paper twice, which reads downstream as
+        // two independent sources (#2070 §1.2).
+        const reusable = describing.doi
+            ? findStoreKeyByDoi(root, describing.key, describing.doi)
+            : null;
+
+        if (reusable)
+        {
+            describing.doiReusedKey = reusable;
+            describing.key = reusable;
+        }
+        else
+        {
+            const resolution = resolveCitationKey(describing.key, storeKeys);
+
+            if (resolution.collided)
+            {
+                describing.key = resolution.resolvedKey;
+                describing.disambiguationReason = resolution.reason;
+            }
+        }
+
+        describing.alreadyInStore = storeKeys.has(describing.key);
+    }
+
+    // Built only once the key is settled: `erected_in` and the checklist must
+    // name the same paper (#2070 §1.1).
+    const genusYaml = toGenusYaml(enriched, reference, describing.key);
 
     fs.mkdirSync(targetDir, { recursive: true });
 
@@ -276,57 +424,11 @@ async function main(): Promise<void>
         "utf8",
     );
 
-    const reference = enriched.reference ?? null;
-
-    // Prefer the resolved DOI reference when present; otherwise fall
-    // back to the bare author + year that PBDB attaches at the taxon
-    // level. The fallback is common for older genera where PBDB has no
-    // linked reference_no.
-    let describingKey: string | null = null;
-    let describingDoi: string | null = null;
-    let describingTitle: string | null = null;
-    let describingJournal: string | null = null;
-    let describingNeedsMetadata = false;
-    let disambiguationReason: string | null = null;
-
-    if (reference?.authors && reference?.year)
-    {
-        describingKey = citationKeyFor(reference.authors, reference.year);
-        describingDoi = reference.doi ?? null;
-        describingTitle = reference.title ?? null;
-        describingJournal = reference.journal ?? null;
-    }
-    else if (enriched.authors && enriched.year)
-    {
-        describingKey = citationKeyFor(enriched.authors, enriched.year);
-        describingNeedsMetadata = true;
-    }
-
-    const bibKeys = readBibCitationKeys(referencesBibPath);
-
-    if (describingKey)
-    {
-        const resolution = resolveCitationKey(describingKey, bibKeys);
-
-        if (resolution.collided)
-        {
-            describingKey = resolution.resolvedKey;
-            disambiguationReason = resolution.reason;
-        }
-    }
-
-    const alreadyInCorpus = describingKey ? bibKeys.has(describingKey) : false;
-
     const papersNeededBody = buildPapersNeededBody(
         genus,
         notes,
-        describingKey,
-        describingDoi,
-        describingTitle,
-        describingJournal,
-        alreadyInCorpus,
-        describingNeedsMetadata,
-        disambiguationReason,
+        describing,
+        enriched.warnings,
     );
 
     const papersNeededPath = path.join(targetDir, "papers-needed.md");
@@ -346,23 +448,34 @@ async function main(): Promise<void>
     process.stdout.write(`  bootstrap.yml:    ${bootstrapPath}\n`);
     process.stdout.write(`  papers-needed.md: ${papersNeededPath}\n`);
 
-    if (describingKey && describingNeedsMetadata)
+    if (describing.key && describing.needsMetadata)
     {
         process.stdout.write(
-            `  Describing paper: ${describingKey} (key only — DOI/metadata `
+            `  Describing paper: ${describing.key} (key only — DOI/metadata `
             + "must be supplied manually)\n",
         );
     }
-    else if (describingKey)
+    else if (describing.key)
     {
-        process.stdout.write(
-            `  Describing paper: ${describingKey}`
-            + (alreadyInCorpus ? " (already in corpus)\n" : " (NEW — to be added)\n"),
-        );
+        const tag = describing.doiReusedKey
+            ? "already in store, matched by DOI"
+            : (describing.alreadyInStore ? "already in store" : "NEW — to be added");
+
+        process.stdout.write(`  Describing paper: ${describing.key} (${tag})\n`);
     }
     else
     {
         process.stdout.write("  Describing paper: not found via PBDB — manual lookup needed\n");
+    }
+
+    if (enriched.warnings.length > 0)
+    {
+        process.stdout.write(`\nFields left unseeded (${enriched.warnings.length}):\n`);
+
+        for (const warning of enriched.warnings)
+        {
+            process.stdout.write(`  - ${warning}\n`);
+        }
     }
 }
 
