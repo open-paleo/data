@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-08-08T02:11:14.034Z
+  built_at: 2026-08-08T04:04:17.050Z
   clade_count: 188
-  genus_count: 1406
+  genus_count: 1408
   license: CC-BY-4.0
   schema_version: 1.6.0
   version: "2026.08"
@@ -96277,6 +96277,141 @@ genera:
       - Ornithischia
     authors: Barrett, P. M.; Butler, R. J.; Mundil, R.; Scheyer, T. M.; Irmis, R. B.; Sánchez-Villagra, M. R.
     described: 2014
+  Latenivenatrix:
+    genus: Latenivenatrix
+    parent: Troodontinae
+    etymology: From Latin 'latens' ('hiding') and 'venatrix' ('huntress'); the name alludes both to a predator hiding in cover and to the taxon having lain unrecognized in museum collections for about a century.
+    description: Latenivenatrix, meaning "hiding huntress", is a genus of large troodontid known from a single species, L. mcmasterae. Along with the contemporary Stenonychosaurus, it is known from non-tooth fossils that were formerly assigned to the now potentially dubious genus Troodon. Although described as separate, it has been considered a junior synonym of Stenonychosaurus.
+    dispute:
+      summary: |
+        The validity of Latenivenatrix is contested. Van der Reest and Currie (2017) erected it for large Dinosaur Park Formation troodontid material previously assigned to Troodon formosus, diagnosing it on three characters of the pubis and treating Stenonychosaurus inequalis as a separate, stratigraphically lower taxon. Cullen and others (2021) found extensive overlap between the two in frontal morphospace and in stratigraphic range, judged the putatively autapomorphic frontal and metatarsal characters variable, and concluded that Latenivenatrix mcmasterae is a subjective junior synonym of Stenonychosaurus inequalis; they could not assess the pubic characters, reporting a lack of overlapping material. Varricchio and others (2025) adopt that taxonomy for working purposes while stating that the status of the taxon remains in question, and note that their new material lends some support to its validity. Rivera-Sylva and others (2026) recover Stenonychosaurus and Latenivenatrix as a distinct sister pair and report that variation among Dinosaur Park frontals is consistent with more than one species, while cautioning that the holotypes do not overlap. The species is marked disputed and the genus retained at Troodontinae.
+      history:
+        - date: 2026-08-07
+          note: |
+            Intaken at Troodontinae with the species marked disputed. The genus was absent from the dataset entirely after an unsupported synonymy was removed from Polyodontosaurus; see the orphaned-taxa audit. The three pubic autapomorphies are retained because the paper proposing the synonymy reports it could not evaluate them.
+    diet: carnivore
+    locomotion: bipedal
+    diagnostic_features:
+      - Pubis retroverted approximately 17 degrees relative to the pubic peduncle of the ilium
+      - Pubic shaft curves anteriorly as it extends distally
+      - Large, moderately pronounced muscle scar on the lateral surface of the pubic shaft, slightly proximal to the pubic boot
+    identifiers:
+      - source: pbdb
+        id: "379273"
+      - source: wikidata
+        id: Q35626945
+    species:
+      - name: Latenivenatrix mcmasterae
+        etymology: Honors Lynne McMaster van der Reest, the late mother of the first author.
+        status: disputed
+        type_species: true
+        period:
+          name:
+            - Late Cretaceous
+          stage:
+            - Campanian
+          from_ma: 83.6
+          to_ma: 72.2
+        location:
+          country: CA
+          region: Alberta
+          formation: Dinosaur Park
+          coordinates:
+            - 50.809383
+            - -111.327057
+          region_code: CA-AB
+        size:
+          length_m:
+            min: 3
+            max: 3.5
+        type_specimen:
+          specimen_id:
+            - CMN 12340
+          specimen_type: holotype
+          institution: Canadian Museum of Nature
+          material: "Partial skeleton: paired frontals and parietals, postorbital, basioccipital, basisphenoid, dorsal and caudal vertebrae, chevrons, ribs, gastralia, ulnae, radius, carpals, manus, femur shaft, astragalocalcanea and partial pedes."
+          completeness: partial
+        erected_in: vanderreest2017a
+        authors: van der Reest, A. J.; Currie, P. J.
+        described: 2017
+    references:
+      - id: vanderreest2017a
+        authors: van der Reest, A. J.; Currie, P. J.
+        year: 2017
+        title: "Troodontids (Theropoda) from the Dinosaur Park Formation, Alberta, with a description of a unique new taxon: implications for deinonychosaur diversity in North America"
+        journal: Canadian Journal of Earth Sciences
+        volume: "54"
+        issue: "9"
+        pages: 919-935
+        doi: 10.1139/cjes-2017-0031
+        notes: Erects the genus for large Dinosaur Park troodontid material and diagnoses it on three characters of the pubis.
+      - id: cullen2021a
+        authors: Cullen, T. M.; Zanno, L.; Larson, D. W.; Todd, E.; Currie, P. J.; Evans, D. C.
+        year: 2021
+        title: Anatomical, morphometric, and stratigraphic analyses of theropod biodiversity in the Upper Cretaceous (Campanian) Dinosaur Park Formation
+        journal: Canadian Journal of Earth Sciences
+        publisher: Canadian Science Publishing
+        volume: "58"
+        issue: "9"
+        pages: 870-884
+        doi: 10.1139/cjes-2020-0145
+        notes: Finds extensive frontal and stratigraphic overlap with Stenonychosaurus and treats the species as a subjective junior synonym of Stenonychosaurus inequalis.
+      - id: varricchio2025a
+        authors: Varricchio, D. J.; Hogan, J. D.; Gardner, J. D.
+        year: 2025
+        title: Troodontid specimens from the Cretaceous Two Medicine Formation of Montana (USA) and the validity of Troodon formosus
+        journal: Journal of Paleontology
+        publisher: Cambridge University Press (CUP)
+        volume: "99"
+        issue: "1"
+        pages: 219-240
+        doi: 10.1017/jpa.2024.67
+        notes: Adopts that synonymy for working purposes while stating the taxon's status remains in question, and reports material lending some support to its validity.
+      - id: rivera-sylva2026a
+        authors: Rivera-Sylva, H. E.; Aguillón-Martinez, M. C.; Flores-Ventura, J.; Sánchez-Uribe, I. E.; Guzmán-Gutiérrez, J. R.; Longrich, N. R.
+        year: 2026
+        title: A Thick-Skulled Troodontid Theropod from the Late Cretaceous of Mexico
+        journal: Diversity
+        publisher: MDPI AG
+        volume: "18"
+        issue: "1"
+        doi: 10.3390/d18010038
+        notes: Recovers Stenonychosaurus and Latenivenatrix as a sister pair and finds Dinosaur Park frontal variation consistent with more than one species.
+      - id: jasinski2026a
+        authors: Jasinski, S. E.; Sullivan, R. M.
+        year: 2026
+        title: Dinevenator, a New Genus of Troodontid Dinosaur from the Late Cretaceous of New Mexico
+        journal: Fossil Studies
+        publisher: MDPI AG
+        volume: "4"
+        issue: "3"
+        doi: 10.3390/fossils4030021
+        notes: Notes the species may be conspecific with Stenonychosaurus inequalis.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Avetheropoda
+      - Coelurosauria
+      - Maniraptora
+      - Paraves
+      - Eumaniraptora
+      - Deinonychosauria
+      - Troodontidae
+      - Troodontinae
+    authors: van der Reest, A. J.; Currie, P. J.
+    described: 2017
   Latirhinus:
     genus: Latirhinus
     parent: Lambeosaurinae
@@ -122783,6 +122918,126 @@ genera:
       - Ankylopollexia
     authors: McDonald, A. T.
     described: 2011
+  Ostafrikasaurus:
+    genus: Ostafrikasaurus
+    parent: Theropoda
+    placement: incertae sedis
+    etymology: From 'Deutsch-Ostafrika', the German name for the colony containing Tendaguru, and Greek 'sauros' ('lizard'); meaning 'East Africa lizard'.
+    description: Ostafrikasaurus is a potentially dubious genus of theropod dinosaur from the Late Jurassic period of what is now Lindi Region, Tanzania. It is known only from fossil teeth discovered sometime between 1909 and 1912, during an expedition to the Tendaguru Formation by the Natural History Museum of Berlin. Eight teeth were originally attributed to the dubious dinosaur genus Labrosaurus, and later to Ceratosaurus, both known from the North American Morrison Formation. Subsequent studies attributed two of these teeth to a spinosaurid dinosaur, and in 2012, Ostafrikasaurus crassiserratus was named by French paleontologist Eric Buffetaut, with one tooth as the holotype, and the other referred to the same species. The generic name comes from the German word for German East Africa, the former name of the colony in which the fossils were found, while the specific name comes from the Latin words for "thick" and "serrated", in reference to the form of the animal's teeth.
+    dispute:
+      summary: |
+        Ostafrikasaurus is a tooth taxon, erected by Buffetaut (2012) on a single isolated crown from Tendaguru with a second crown referred to it, and assigned to Spinosauridae on tooth morphology. Both the referral and the taxon's validity are rejected by later work, and the referral was doubted before the name existed: Rauhut (2011), examining the same tooth under its earlier assignment, found it closer to the Tendaguru material referred to Ceratosaurus than to baryonychine spinosaurids and reported little positive evidence for a spinosaurid referral, while allowing that one remained possible. Smyth and others (2020) regard the species a nomen dubium for want of confirmable spinosaurid features, argue that spinosaurid teeth are diagnostic only at family or subfamily level and so cannot support tooth taxa at all, and note a plausible case for ceratosaurian affinities. Bandeira and others (2024) call the occurrence dubious without ruling on the name. No source since the description defends the taxon, so it is recorded as a nomen dubium and placed at Theropoda incertae sedis rather than in Spinosauridae.
+      history:
+        - date: 2026-08-07
+          note: |
+            Intaken as a nomen dubium at Theropoda incertae sedis. The genus was absent from the dataset entirely after an unsupported synonymy was removed from Spinosaurus; see the orphaned-taxa audit. Size fields are omitted: the taxon is known from two teeth and no source measures a body dimension.
+    diet: carnivore
+    diagnostic_features:
+      - Teeth moderately compressed labiolingually
+      - Enamel finely wrinkled, bearing ridges that are more numerous and more pronounced on the lingual face than on the labial face
+      - Anterior and posterior carinae both serrated
+      - Denticles relatively large, at 2 to 4 denticles per mm along the carinae
+    identifiers:
+      - source: pbdb
+        id: "265581"
+      - source: wikidata
+        id: Q2671476
+      - source: eol
+        id: "42333247"
+    species:
+      - name: Ostafrikasaurus crassiserratus
+        etymology: From Latin 'crassus' ('thick') and 'serratus' ('serrated'), referring to the large serrations on the carinae.
+        status: nomen dubium
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Tithonian
+          from_ma: 149.2
+          to_ma: 143.1
+        location:
+          country: TZ
+          locality: Tendaguru
+          region: Lindi
+          formation: Tendaguru
+          coordinates:
+            - -9.704556
+            - 39.22842
+          region_code: TZ-12
+        type_specimen:
+          specimen_id:
+            - MB.R.1084
+          specimen_type: holotype
+          institution: Museum für Naturkunde, Berlin
+          material: An isolated tooth crown 46 mm in apicobasal height, moderately compressed labiolingually, with serrated mesial and distal carinae and an enamel ornament of apicobasal ridges and fine wrinkling.
+          completeness: fragmentary
+        erected_in: buffetaut2012a
+        authors: Buffetaut, E.
+        described: 2012
+    references:
+      - id: buffetaut2012a
+        authors: Buffetaut, E.
+        year: 2012
+        title: An early spinosaurid dinosaur from the Late Jurassic of Tendaguru (Tanzania) and the evolution of the spinosaurid dentition
+        journal: Oryctos
+        volume: "10"
+        pages: 1-8
+        notes: Erects the genus and species on an isolated Tendaguru tooth crown and assigns it to Spinosauridae.
+      - id: rauhut2011a
+        authors: Rauhut, O. W. M.
+        year: 2011
+        title: Theropod dinosaurs from the Late Jurassic of Tendaguru (Tanzania)
+        journal: Special Papers in Palaeontology
+        volume: "86"
+        pages: 195-239
+        notes: Examines the same tooth under its earlier assignment and reports little positive evidence for a spinosaurid referral, finding it closer to the Tendaguru Ceratosaurus material.
+      - id: smyth2020a
+        authors: Smyth, R. S. H.; Ibrahim, N.; Martill, D. M.
+        year: 2020
+        title: "Sigilmassasaurus is Spinosaurus: a reappraisal of African spinosaurines"
+        journal: Cretaceous Research
+        publisher: Elsevier BV
+        volume: "114"
+        pages: "104520"
+        doi: 10.1016/j.cretres.2020.104520
+        notes: Regards the species a nomen dubium for want of confirmable spinosaurid features and notes a plausible case for ceratosaurian affinities.
+      - id: bandeira2024a
+        authors: Bandeira, K. L. N.; Navarro, B. A.; Pêgas, R. V.; Brilhante, N. S.; Brum, A. S.; de Souza, L. G.; da Silva, R. C.; Gallo, V.
+        year: 2024
+        title: A reassessment of the historical fossil findings from Bahia State (Northeast Brazil) reveals a diversified dinosaur fauna in the Lower Cretaceous of South America
+        journal: Historical Biology
+        publisher: Informa UK Limited
+        volume: "37"
+        issue: "3"
+        pages: 548-589
+        doi: 10.1080/08912963.2024.2318406
+        notes: Calls the Tanzanian occurrence dubious without ruling on the name.
+      - id: mannion2019a
+        authors: Mannion, P. D.; Upchurch, P.; Schwarz, D.; Wings, O.
+        year: 2019
+        title: "Taxonomic affinities of the putative titanosaurs from the Late Jurassic Tendaguru Formation of Tanzania: phylogenetic and biogeographic implications for eusauropod dinosaur evolution"
+        journal: Zoological Journal of the Linnean Society
+        publisher: Oxford University Press (OUP)
+        volume: "185"
+        issue: "3"
+        pages: 784-909
+        doi: 10.1093/zoolinnean/zly068
+        notes: Lists the species among the named Tendaguru theropods.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+    authors: Buffetaut, E.
+    described: 2012
   Ostromia:
     genus: Ostromia
     parent: Anchiornithidae
@@ -155379,10 +155634,12 @@ genera:
     parent: Troodontinae
     dispute:
       summary: |
-        Stenonychosaurus inequalis was resurrected as a valid genus by van der Reest and Currie (2017), who treated Troodon formosus as a nomen dubium and referred the diagnostic Dinosaur Park Formation troodontid material to it; Cullen et al. (2021) synonymized Latenivenatrix into it. Whether Stenonychosaurus is valid or a junior synonym of Troodon remains contested (Varricchio et al., 2025). It is recovered as a derived troodontine.
+        Stenonychosaurus inequalis was resurrected as a valid genus by van der Reest and Currie (2017), who treated Troodon formosus as a nomen dubium and referred the diagnostic Dinosaur Park Formation troodontid material to it. Cullen et al. (2021) synonymized Latenivenatrix into it, on extensive overlap in frontal morphospace and stratigraphic range, though they could not assess that taxon's pubic autapomorphies for want of overlapping material. That synonymy is not settled: Varricchio et al. (2025) adopt it for working purposes while stating the status of Latenivenatrix remains in question and reporting material that lends some support to its validity, and Rivera-Sylva et al. (2026) recover the two as a sister pair and find Dinosaur Park frontal variation consistent with more than one species. Whether Stenonychosaurus is itself valid or a junior synonym of Troodon likewise remains contested (Varricchio et al., 2025). It is recovered as a derived troodontine.
       history:
         - date: 2026-07-01
           note: Moved from Troodontini (tribe dropped) to Troodontinae; validity versus Troodon synonymy unresolved.
+        - date: 2026-08-07
+          note: Latenivenatrix intaken as a separate disputed genus; the Cullen synonymy is reported here as contested rather than settled.
     etymology: From Greek 'stenos' meaning 'narrow', 'onyx/onychos' meaning 'claw', and 'sauros' meaning 'lizard'; meaning 'narrow claw lizard', referring to the narrow enlarged claw on the second toe.
     description: Stenonychosaurus is a disputed genus of troodontid dinosaur from the Late Cretaceous Dinosaur Park Formation of Alberta, Canada, as well as possibly the Two Medicine Formation. The type and only species, S. inequalis, was named by Charles Mortram Sternberg in 1932, based on a foot, fragments of a hand, and some caudal vertebrae from the Late Cretaceous of Alberta. S. inequalis was reassigned in 1987 by Phil Currie to the genus Troodon, which was reverted by the recognition of Stenonychosaurus as a separate genus from the possibly dubious Troodon in 2017 by Evans et al. and also later in the same year by Van der Reest and Currie.
     diet: carnivore
@@ -155495,7 +155752,7 @@ genera:
         issue: "1"
         pages: 219-240
         doi: 10.1017/jpa.2024.67
-        notes: Assessed whether Stenonychosaurus is valid or a junior synonym of Troodon.
+        notes: Assessed whether Stenonychosaurus is valid or a junior synonym of Troodon, and reported material lending some support to the validity of Latenivenatrix.
       - id: cullen2021a
         authors: Cullen, T. M.; Zanno, L.; Larson, D. W.; Todd, E.; Currie, P. J.; Evans, D. C.
         year: 2021
@@ -155506,7 +155763,17 @@ genera:
         issue: "9"
         pages: 870-884
         doi: 10.1139/cjes-2020-0145
-        notes: Synonymized Latenivenatrix into Stenonychosaurus.
+        notes: Synonymized Latenivenatrix into Stenonychosaurus, without being able to assess that taxon's pubic autapomorphies.
+      - id: rivera-sylva2026a
+        authors: Rivera-Sylva, H. E.; Aguillón-Martinez, M. C.; Flores-Ventura, J.; Sánchez-Uribe, I. E.; Guzmán-Gutiérrez, J. R.; Longrich, N. R.
+        year: 2026
+        title: A Thick-Skulled Troodontid Theropod from the Late Cretaceous of Mexico
+        journal: Diversity
+        publisher: MDPI AG
+        volume: "18"
+        issue: "1"
+        doi: 10.3390/d18010038
+        notes: Recovers Stenonychosaurus and Latenivenatrix as a sister pair and finds Dinosaur Park frontal variation consistent with more than one species.
     taxonomy:
       - Life
       - Animalia
