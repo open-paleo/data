@@ -1,0 +1,106 @@
+genus: Oxalaia
+parent: Spinosaurinae
+etymology: From 'Oxalá', the most respected masculine deity of the African
+  pantheon, whose worship was brought to Brazil during slavery, with Latin
+  '-ia'.
+description: Oxalaia is a genus of spinosaurid dinosaur that lived in what is
+  now the Northeast Region of Brazil during the Cenomanian stage of the Late
+  Cretaceous period, sometime between 100.5 and 93.9 million years ago. Its
+  fossils were found in 1999 on Cajual Island in the rocks of the Alcântara
+  Formation, which is known for its abundance of fragmentary, isolated fossil
+  specimens. The remains of Oxalaia were described in 2011 by Brazilian
+  paleontologist Alexander Kellner and colleagues, who assigned the specimens
+  to a new genus containing one species, Oxalaia quilombensis. The species name
+  refers to the Brazilian quilombo settlements. Oxalaia quilombensis is the
+  eighth officially named theropod species from Brazil and the largest
+  carnivorous dinosaur discovered there. One study suggested that this taxon is
+  a junior synonym of the closely related African genus Spinosaurus, but some
+  subsequent studies consider the genus to be diagnostic.
+dispute:
+  summary: >
+    The validity of Oxalaia is contested, and the argument runs through its
+    diagnosis rather than through phylogeny. Kellner and others (2011) erected
+    the genus on fused premaxillae with four proposed autapomorphies. Sales and
+    Schultz (2017) reassessed those characters individually, rejected the thin
+    anteromedial maxillary processes as not distinguishable from other
+    spinosaurids once ontogeny is allowed for, and issued a revised diagnosis
+    retaining two: the paired replacement teeth at the third premaxillary
+    alveolus and the strongly sculptured palatal surface, both held tentatively
+    against the possibility that they are intraspecific variation. Smyth and
+    others (2020) rejected every proposed character — noting that the maximum
+    premaxillary expansion varies between the left and right sides of the
+    holotype itself — and concluded that Oxalaia quilombensis is a junior
+    synonym of Spinosaurus aegyptiacus pending more diagnostic material. Lacerda
+    and others (2022) rejected that synonymy in turn, finding no overlapping
+    structures that would allow the direct comparison it requires and treating
+    the genus as a valid name-bearing taxon. The species is marked disputed and
+    the genus retained at Spinosaurinae.
+  history:
+    - date: "2026-08-07"
+      note: >
+        Intaken at Spinosaurinae with the species marked disputed. The genus was
+        absent from the dataset entirely after an unsupported synonymy was
+        removed from Spinosaurus; see the orphaned-taxa audit.
+        diagnostic_features follow the revised diagnosis of Sales and Schultz
+        (2017); the two characters they rejected are omitted.
+diet: carnivore
+locomotion: bipedal
+diagnostic_features:
+  - Two replacement teeth associated with the functional third premaxillary
+    alveolus
+  - Palatal portion of the fused premaxillae bears a strongly sculptured surface
+    forming a convex secondary palate
+identifiers:
+  - source: pbdb
+    id: "180307"
+  - source: wikidata
+    id: Q1930368
+  - source: gbif
+    id: "8707877"
+  - source: eol
+    id: "42333234"
+species:
+  - name: Oxalaia quilombensis
+    etymology: From Portuguese 'quilombo', a settlement founded by escaped
+      slaves; Cajual Island, where the specimens were collected, was one such
+      place.
+    status: disputed
+    type_species: true
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Cenomanian
+    location:
+      country: BR
+      locality: Laje do Coringa, Cajual Island
+      region: BR-MA
+      formation: Alcântara
+      coordinates:
+        - -2.4781
+        - -44.461399
+    size:
+      length_m:
+        min: 12
+        max: 14
+    type_specimen:
+      specimen_id:
+        - MN 6117-V
+      specimen_type: holotype
+      institution: MNRJ
+      material: Fused premaxillae of a very large individual.
+      completeness: fragmentary
+    erected_in: kellner2011b
+references:
+  - id: kellner2011b
+    notes: Erects the genus and species on fused premaxillae and proposes four
+      autapomorphies.
+  - id: sales2017a
+    notes: Reassesses the proposed autapomorphies individually and issues a
+      revised diagnosis retaining two of them.
+  - id: smyth2020a
+    notes: Rejects every proposed autapomorphy and treats the species as a junior
+      synonym of Spinosaurus aegyptiacus.
+  - id: lacerda2022a
+    notes: Rejects that synonymy and treats the species as a valid name-bearing
+      taxon.
