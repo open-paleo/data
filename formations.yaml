@@ -82,6 +82,21 @@ Allen:
         Places the formation in the Malargue Group. The same site is called the
         Neuquen Group by Rozadilla (2021) and Aranciaga Rolando (2021).
 
+Araçatuba:
+  rank: formation
+  parent: Bauru
+  references:
+    - id: fernandes2000a
+      notes: >
+        Bauru Basin. Rests directly on the Serra Geral basalts and "laterally,
+        it interdigitates with the Vale do Rio do Peixe Formation, which
+        regionally overlies it", the two being partly contemporaneous. The name
+        was used before this revision for a lithofacies by Suguio and others
+        (1977) and at formation rank by Suguio (1981), in both cases for parts
+        of what are now the Santo Anastácio and Vale do Rio do Peixe, and
+        Barcelos (1984) proposed its first type section as a member of the
+        Adamantina.
+
 Bahariya:
   rank: formation
   variants: [Baharija]
@@ -89,6 +104,21 @@ Bahariya:
 Baharîje:
   rank: formation
   variants: [Baharija]
+
+Barbalha:
+  rank: formation
+  parent: Santana
+  stages: [Aptian]
+  variants: ["Rio da Batateira"]
+  references:
+    - id: arai2020a
+      notes: >
+        Araripe Basin, the basal formation of the group. The psammitic section
+        it names "has been termed the Barbalha Formation (Assine, 1990, 1992)
+        and the Rio da Batateira Formation (Ponte and Appi, 1990)", so both
+        names are in print for one unit. Aptian on the presence of Sergipea
+        variverrucata; the Albian extension in the older literature followed
+        from ages attributed to the Romualdo rather than from this unit.
 
 Baruungoyot:
   rank: formation
@@ -98,7 +128,7 @@ Baruungoyot:
 Bauru:
   rank: group
   contains: [Uberaba, "Vale do Rio do Peixe", Araçatuba, "São José do Rio Preto",
-             "Presidente Prudente", Marília]
+             "Presidente Prudente", Marília, "Serra da Galga"]
   references:
     - id: fernandes2000a
       notes: >
@@ -111,6 +141,11 @@ Bauru:
         the Bauru Group, especially the Adamantina Formation" -- while the
         Marília is retained in the sense of those authors, subdivided into the
         Echaporã, Serra da Galga and Ponte Alta members.
+    - id: silvajunior2022a
+      notes: >
+        Why the group carries a seventh formation: Soares and others (2021)
+        raised the Serra da Galga from a member of the Marília to a formation of
+        the Bauru Group, the usage this paper works in throughout.
     - id: delcourt2017a
       notes: >
         Paraná Basin. The Mato Grosso outcrops formerly assigned here belong to
@@ -119,6 +154,23 @@ Bauru:
 Bayangobi:
   rank: formation
   variants: ["Bayan Gobi", Bayingobi]
+
+"Bayn Dzak":
+  rank: member
+  parent: Djadokhta
+  variants: ["Bayan Zag"]
+  references:
+    - id: dashzeveg2005a
+      notes: >
+        The lower of the formation's two members, "dominated by moderate
+        reddish orange sands with subordinate mudstone units" and cropping out
+        only along the southern edge of the basin, with its type section at the
+        Flaming Cliffs. The same locality is written Bayan Zag by Benton (2000)
+        and was worked by the Central Asiatic Expeditions under the name
+        Shabarakh Usu.
+    - id: arbour2015a
+      notes: >
+        Assigns a holotype to it: "Bayn Dzak Member, Djadokhta Formation".
 
 Baynshire:
   rank: formation
@@ -159,6 +211,35 @@ Bevons:
         description rather than a formal unit, which is why the reference works
         fell back on the place name.
 
+"Buckhorn Conglomerate":
+  rank: member
+  parent: "Cedar Mountain"
+  references:
+    - id: tidwell2001a
+      notes: >
+        "The basal member of the Cedar Mountain Formation is the Buckhorn
+        Conglomerate (Kirkland et al. 1997)."
+    - id: carpenter1999a
+      notes: >
+        Records what the unit is laterally: present in the San Rafael Swell and
+        "believed to be equivalent to the Yellow Cat and Poison Strip Sandstone
+        of the Paradox Basin", so the same interval carries different names in
+        the two areas.
+
+"Bulldog Shale":
+  rank: member
+  parent: Marree
+  stages: [Aptian, Albian]
+  references:
+    - id: barrett2010b
+      notes: >
+        South Australia. "Detailed lithostratigraphic evaluation has now firmly
+        placed the Coober Pedy and Andamooka opaliferous beds within the Bulldog
+        Shale (a constituent of the Marree Subgroup, which was formerly called
+        the Marree Formation)", superseding Molnar's (1980) three candidate
+        source units. "Microfossils suggest an Aptian-lower Albian age", while
+        molluscan remains are usually read as Aptian alone.
+
 "Calcaires de Caen":
   rank: formation
   variants: ["Calcaire de Caen"]
@@ -195,6 +276,52 @@ Bevons:
         U-Pb geochronology for the basin, giving "a mid-late Toarcian to
         Aalenian (-Bajocian?) age" for the formation.
 
+Candeleros:
+  rank: formation
+  parent: "Río Limay"
+  stages: [Albian, Cenomanian, Turonian]
+  references:
+    - id: carballido2010a
+      notes: >
+        Neuquén Basin. Places the unit in the "Neuquén Group, Río Limay
+        Subgroup", below the Huincul Formation, "with an age estimated at early
+        Cenomanian". Also moves the Rayososaurus agrioensis holotype into its
+        upper part.
+    - id: gallina2005a
+      notes: >
+        Gives the wider reading the envelope has to hold: "the upper member of
+        the Candeleros Formation (Cenomanian-Turonian)". That upper member is
+        described informally and carries no name.
+    - id: martinelli2004a
+      notes: >
+        Dates the Giganotosaurus carolinii horizon Albian-Cenomanian while
+        giving other occurrences in the same unit as Cenomanian, which is the
+        other end of the published spread.
+    - id: carrano2012a
+      notes: >
+        "?late Cenomanian, Late Cretaceous" for the same subgroup placement.
+
+Carbon:
+  rank: member
+  parent: "Horseshoe Canyon"
+  stages: [Maastrichtian]
+  references:
+    - id: eberth2012a
+      notes: >
+        The sixth of the formation's seven members, its base "marked by the
+        first occurrence of clean sandstone, coal, or carbonaceous shale in the
+        #11-12 coal zone" above the Tolman and its top at the first white
+        sandstones of the Whitemud, which this paper explicitly excludes from
+        it. Equivalent to the "member C" of Ower (1960), the "Coaly Member" of
+        Srivastava (1968) and the "Carbon-Thompson Coal Zone" of McCabe and
+        others (1989). Magnetostratigraphy puts it in the upper 31n to lowermost
+        30n magnetochrons, about 68.4-67.5 Ma.
+    - id: arbour2013a
+      notes: >
+        Applies the member scheme in the field: "the Morrin, Tolman and Carbon
+        members ... of the Horseshoe Canyon Formation crop out in this region of
+        the Red Deer River".
+
 "Cedar Mountain":
   rank: formation
   contains: [Buckhorn Conglomerate, Yellow Cat, Poison Strip, Ruby Ranch, Mussentuchit]
@@ -215,8 +342,36 @@ Bevons:
 "Cerro Carnerero":
   rank: formation
 
+Changwangpu:
+  rank: formation
+  parent: Wangshi
+  references:
+    - id: zhang2019a
+      notes: >
+        Named as one of the group's four formations, "the Late Cretaceous
+        Wangshi Group, which comprises the Xingezhuang, Jiangjunding,
+        Jingangkou, and Changwangpu formations", with no order stated.
+
 "Chipping Norton Limestone":
   rank: formation
+
+Crato:
+  rank: formation
+  parent: Santana
+  stages: [Aptian]
+  references:
+    - id: arai2020a
+      notes: >
+        Araripe Basin. One of Beurlen's (1971) four members, raised to
+        formation rank within the Santana Group. Aptian on the presence of
+        Sergipea variverrucata. Where the Aptian-Albian boundary falls has moved
+        repeatedly across this unit -- Pons and others (1990, 1996) and Arai and
+        others (2004) placed it inside the Crato -- and this paper concludes it
+        lies above the group entirely.
+    - id: delcourt2025a
+      notes: >
+        Uses formation rank throughout: the Araripe Plateau borders "where the
+        Crato, Ipubi, and Romualdo formations are exposed".
 
 "Cuckfield Stone":
   rank: bed
@@ -277,11 +432,115 @@ Dockum:
         this is the uncontested fallback if Cooper Canyon is judged too
         contested.
 
+Douira:
+  rank: formation
+  parent: "Kem Kem"
+  stages: [Cenomanian]
+  references:
+    - id: ibrahim2020a
+      notes: >
+        Erected here, "with stratotype at the locality Douira", as the upper of
+        the group's two formations. It "rests conformably on the Gara Sbaa
+        Formation" and is capped by the massive fossiliferous limestone at the
+        base of the Akrabou. The shift to finer-grained sedimentation at its
+        base is tied to the Mid Cenomanian Event at about 96.0 Ma.
+    - id: kellermann2025a
+      notes: >
+        Follows the scheme; the Carcharodontosaurus neotype is from this
+        formation.
+
+Drumheller:
+  rank: member
+  parent: "Horseshoe Canyon"
+  stages: [Campanian]
+  references:
+    - id: eberth2012a
+      notes: >
+        The second of the formation's seven members, elevated here from
+        Hamblin's (2004) informal Hoodoo tongue and correlative with
+        Srivastava's (1968) Coaly Member. Its base "interfingers with or rests
+        sharply on marine shales and sandstones of the Bearpaw Formation" to the
+        east and south and conformably overlies the Strathmore to the north and
+        west; its top is the Drumheller bentonite zone in well logs, or the top
+        of the #6-7 coal zone in outcrop. Within the uppermost 33n to lower 32n
+        magnetochrons, about 73.2-71.5 Ma.
+
+Echaporã:
+  rank: member
+  parent: Marília
+  references:
+    - id: fernandes2000a
+      notes: >
+        Bauru Basin, one of the three members Barcelos and Suguio (1987)
+        defined in the formation. It "has gradational and interdigitated
+        contacts with the Vale do Rio do Peixe Formation", rests directly on the
+        Serra Geral basalts along the eastern border in São Paulo, and in Goiás
+        oversteps the basalts onto older units. Soares and others (1980) had
+        treated its type areas as the Marília Formation itself.
+
+"El Carrizo":
+  rank: formation
+  parent: Malargüe
+  references:
+    - id: martinelli2004a
+      notes: >
+        Neuquén Basin. The uppermost unit of the group's southeastern sequence,
+        "from the base to the top respectively ... the Allen, Jagüel, Roca, and
+        El Carrizo formations". Nothing further is said about it.
+
 "El Mers":
   rank: group
   contains: ["El Mers I", "El Mers II", "El Mers III"]
   references:
     - id: maidment2020a
+
+"El Mers I":
+  rank: formation
+  parent: "El Mers"
+  stages: [Bathonian]
+  references:
+    - id: maidment2020a
+      notes: >
+        Middle Atlas, Morocco. The lowest of the group's three formations, which
+        "comprises varicoloured mudstones and interbedded, laterally restricted
+        sandstones", terrestrial, and "is dated as middle Bathonian on the basis
+        of ammonite biostratigraphy of the surrounding marine intervals".
+        Dinosaur bones have been reported from it since Termier and others
+        (1940).
+
+"El Mers II":
+  rank: formation
+  parent: "El Mers"
+  stages: [Bathonian]
+  references:
+    - id: maidment2020a
+      notes: >
+        The middle formation, correlated from the nearby Skoura syncline; the
+        Adratiklit locality is placed in it only tentatively, as outcrops that
+        "may correspond to the El Mers II Formation".
+    - id: maidment2021a
+      notes: >
+        Withdraws that placement: the same authors "reported the horizon as
+        lying in the El Mers II Formation, but subsequent field observations at
+        the site suggest that it may lie slightly higher in the stratigraphy",
+        which moves the Boulahfa material to the El Mers III.
+
+"El Mers III":
+  rank: formation
+  parent: "El Mers"
+  stages: [Bathonian, Callovian]
+  references:
+    - id: maidment2021a
+      notes: >
+        Gives the horizon as the "El Mers III Formation (Upper
+        Bathonian/Callovian, Middle Jurassic: 168.3-163.5 million years ago)"
+        at Boulahfa, and places both Spicomellus and Adratiklit in it.
+    - id: zafaty2024a
+      notes: >
+        The fullest description of the unit: "a series of many tens of meters
+        (~60 m) of fine friable gray marls, green pinkish marls and siltstones
+        interspersed with calcareous marls", Bathonian-?Callovian, cut at its
+        top by the paleochannel sandstones of the Oued El Atchane Formation.
 
 Elliot:
   rank: formation
@@ -311,6 +570,25 @@ Elliot:
       notes: >
         The younger bound, hedged at source: "Upper Elliot Formation, Early
         Jurassic, possibly Pliensbachian".
+
+Foremost:
+  rank: formation
+  parent: "Belly River"
+  stages: [Campanian]
+  references:
+    - id: eberth2005a
+      notes: >
+        Southern Alberta, the lowest of the group's three formations, 170 m
+        thick at Dinosaur Provincial Park. It "gradationally overlies marine
+        shales of the Pakowki (Claggett) Formation" and "includes the McKay and
+        Taber coal zones at the bottom and top, respectively, and an extensive
+        sandy zone overlying the Taber Coal Zone referred to here as the
+        Herronton Sandstone Zone" -- coal and sandstone zones rather than named
+        members, and the Herronton was moved inside this formation here. Its
+        base is nearly coincident with the 33n-33r chron boundary, in the
+        Baculites asperiformis biozone at an estimated 80 Ma, but is "strongly
+        diachronous, becoming progressively older to the west". Absent in
+        Montana, which is part of why the nomenclature of the wedge is tangled.
 
 Fuvelian:
   rank: none
@@ -372,7 +650,7 @@ Gosau:
 
 Guifeng:
   rank: group
-  contains: [Hekou, Tangbian, Lianhe]
+  contains: ["Hekou (CN-JX)", Tangbian, Lianhe]
   references:
     - id: yao2026a
       notes: Jiangxi. Its Hekou Formation is not the Gansu Hekou Group.
@@ -407,6 +685,35 @@ Hastings:
         Daxiatitan, Huanghetitan liujiaxiaensis, Lanzhousaurus, Yongjinglong.
         No work subdivides the Hekou Group into named formations in this basin.
 
+"Hekou (CN-JX)":
+  rank: formation
+  parent: Guifeng
+  references:
+    - id: yao2026a
+      notes: >
+        Jiangxi, the lowest formation of "the upper Guifeng Group consisting of
+        the Hekou, Tangbian and Lianhe formations in ascending order". Not the
+        Hekou Group of the Lanzhou-Minhe Basin in Gansu -- a different unit of a
+        different age.
+
+Horsethief:
+  rank: member
+  parent: "Horseshoe Canyon"
+  stages: [Campanian]
+  references:
+    - id: eberth2012a
+      notes: >
+        The third of the formation's seven members, running from the base of the
+        Drumheller bentonite zone (or the top of the #6-7 coal zone) to "the top
+        of the uppermost subbituminous coal in the #8-9 coal zone". Correlative
+        with the lower half of Hamblin's (2004) Midland tongue. Within the 32n
+        magnetochron, about 71.5-71.0 Ma.
+    - id: arbour2013a
+      notes: >
+        Ties the formal member to the informal scheme it replaces: material "in
+        the upper part of Unit 1 of the Horseshoe Canyon Formation, now defined
+        as the Horsethief Member".
+
 Houcheng:
   rank: formation
   references:
@@ -415,6 +722,33 @@ Houcheng:
         Laterally equivalent to the Tuchengzi Formation and not a spelling of
         it: Houcheng is the Hebei name, Tuchengzi the Liaoning one. Which
         applies follows the province the locality sits in.
+
+Hutubihe:
+  rank: formation
+  parent: Tugulu
+  stages: [Valanginian]
+  references:
+    - id: zheng2023a
+      notes: >
+        Junggar Basin, the second formation of the group. Valanginian in this
+        paper's age model for the group, consistent with the
+        Toroisporis-Densoisporites-Classopollis-Piceaepollenites sporopollen
+        assemblage reported by Yu and others (1986).
+
+Ipubi:
+  rank: formation
+  parent: Santana
+  stages: [Aptian]
+  references:
+    - id: arai2020a
+      notes: >
+        Araripe Basin. One of Beurlen's (1971) four members, raised to formation
+        rank within the Santana Group, and Aptian on the presence of Sergipea
+        variverrucata. The Aptian-Albian reading of Arai and others (1997),
+        maintained into the 2000s, is superseded here.
+    - id: delcourt2025a
+      notes: >
+        Uses formation rank for it alongside the Crato and Romualdo.
 
 "Iren Dabasu":
   rank: formation
@@ -432,6 +766,64 @@ Houcheng:
         Formation". Both names must be searched: the Erlian literature, which
         is where the basin's subdivision is discussed, does not surface under
         Iren Dabasu.
+
+Jagüel:
+  rank: formation
+  parent: Malargüe
+  stages: [Maastrichtian, Danian]
+  references:
+    - id: martinelli2004a
+      notes: >
+        Neuquén Basin, present in both the southeastern and northwestern
+        sequences of the group. Fully marine, overlying the Allen at Bajo de
+        Santa Rosa and, with it, resting discordantly on the Bajo de la Carpa
+        Formation. "The age inferred for the Jagüel Formation is Late
+        Maastrichtian-Early Danian", and the Cretaceous-Paleogene boundary is
+        recognized in its upper part.
+
+Jiangjunding:
+  rank: formation
+  parent: Wangshi
+  references:
+    - id: zhang2019a
+      notes: >
+        Named as one of the group's four formations, "the Late Cretaceous
+        Wangshi Group, which comprises the Xingezhuang, Jiangjunding,
+        Jingangkou, and Changwangpu formations", with no order stated.
+
+Jingangkou:
+  rank: formation
+  parent: Wangshi
+  stages: [Campanian, Maastrichtian]
+  variants: [Hongtuya]
+  references:
+    - id: zhang2019a
+      notes: >
+        Laiyang, Shandong. One of the group's four formations, and the source of
+        the equation the older literature has to be read through: Yan and Chen
+        (2005) "obtained an isotope age of 73 Ma for the Jingangkou Formation
+        (which they called the Hongtuya Formation)".
+    - id: yao2026a
+      notes: >
+        "Jingangkou Formation, late Campanian to early Maastrichtian."
+
+Jiufotang:
+  rank: formation
+  parent: Jehol
+  stages: [Aptian]
+  references:
+    - id: arbour2015a
+      notes: >
+        "Jiufotang Formation, Aptian."
+    - id: zheng2023a
+      notes: >
+        Dates it about 122-115.5 Ma and identifies it as the host of the
+        late-stage Jehol Biota assemblage.
+    - id: yao2019a
+      notes: >
+        Places it above the Yixian, and records that whether the Sihedang
+        exposures belong to one or the other is unsettled -- an issue that paper
+        declines to resolve.
 
 "Kuangyuan Series":
   rank: informal
@@ -565,6 +957,30 @@ Lameta:
         infratrappean Lameta sediments at Rahioli, Gujarat, which lie below the
         Deccan Trap flood basalts.
 
+Lewisville:
+  rank: formation
+  parent: Woodbine
+  contains: [Arlington, Tarrant]
+  stages: [Cenomanian]
+  references:
+    - id: tykoski2023a
+      notes: >
+        North Texas. "The Lewisville Formation is the upper formation of the
+        Woodbine Group following recent revision of Woodbine stratigraphy and
+        nomenclature by Denne et al. (2016)", with the Arlington and Tarrant as
+        its members. Uppermost lower to lower middle Cenomanian, about 96 Ma.
+
+Lianhe:
+  rank: formation
+  parent: Guifeng
+  stages: [Maastrichtian]
+  references:
+    - id: yao2026a
+      notes: >
+        Jiangxi, the uppermost formation of the group; it "displays conformable
+        contact with the lower Tangbian Formation" and "can be dated to the
+        Maastrichtian according to the spore and pollen assemblages".
+
 Lianmuqin:
   rank: formation
   parent: Tugulu
@@ -589,6 +1005,44 @@ Lianmuqin:
     - id: maidment2008a
       notes: >
         Also ranks the unit a formation, and gives a Valanginian-Albian age.
+
+Loncoche:
+  rank: formation
+  parent: Malargüe
+  stages: [Campanian, Maastrichtian]
+  references:
+    - id: martinelli2004a
+      notes: >
+        Neuquén Basin, the basal unit of the group's northwestern sequence.
+        "The Loncoche Formation (Late Campanian-Early Maastrichtian) extends
+        over southern Mendoza Province and the west of La Pampa Province", and
+        with the Allen it "represents the transition between the fully
+        continental Neuquén Group and the fully marine Jagüel Formation".
+
+Lourinhã:
+  rank: formation
+  rank_contested: [formation, group]
+  contains: ["Amoreira-Porto Novo", Sobral]
+  stages: [Kimmeridgian, Tithonian]
+  references:
+    - id: mateus2014a
+      notes: >
+        Lusitanian Basin, west-central Portugal. "The Lourinha Formation ... is
+        early Kimmeridgian-late Tithonian in age."
+    - id: tschopp2015a
+      notes: >
+        Gives the members used for horizons: "Amoreira-Porto Novo Member,
+        Lourinha Formation", with the Sobral Member above it.
+    - id: carrano2012a
+      notes: >
+        Uses the alternative member vocabulary for the same succession,
+        "Alcobaça and Porto Novo Members, Lourinha Formation; late
+        Kimmeridgian-Tithonian".
+    - id: maidment2008a
+      notes: >
+        Group rank for the same unit, "the Upper Jurassic Lourinha Group of
+        Portugal (Escaso et al. 2007)". Recorded at formation rank, which is the
+        prevailing usage, with the disagreement kept visible.
 
 Lufeng:
   rank: formation
@@ -633,6 +1087,55 @@ Lufeng:
         entered circulation: "It was long equated with the Magnesian
         Conglomerate, which occurs very close by."
 
+Malargüe:
+  rank: group
+  contains: [Allen, Jagüel, Roca, "El Carrizo", Loncoche, Pircala]
+  stages: [Campanian, Maastrichtian, Danian]
+  references:
+    - id: martinelli2004a
+      notes: >
+        Neuquén Basin, "Late Campanian-Early Paleocene sensu Legarreta &
+        Gulisano, 1989". Its constituent formations "vary according to their
+        position in the basin": in the southeast, "from the base to the top
+        respectively ... the Allen, Jagüel, Roca, and El Carrizo formations"; in
+        the northwest, "Loncoche, Jagüel, Roca, and Pircala formations", the
+        latter list with no direction stated. The contained units are the union
+        of the two sequences, not a single ascending order.
+
+Maodian:
+  rank: formation
+  parent: Ganzhou
+  stages: [Cenomanian, Turonian, Coniacian, Santonian]
+  references:
+    - id: yao2026a
+      notes: >
+        Jiangxi, the lower formation of the group and the only one in it with
+        absolute ages: a K-Ar age of 85.9 Ma from Ling (1996) against quartz
+        electron spin resonance dating "between 96.5 and 87.5 Ma
+        (Cenomanian-Coniacian)" from Zhong and others (2002). The envelope
+        spans both.
+
+Marília:
+  rank: formation
+  parent: Bauru
+  contains: ["Ponte Alta", Echaporã]
+  stages: [Maastrichtian]
+  references:
+    - id: fernandes2000a
+      notes: >
+        Bauru Basin. Retained from Soares and others (1980) unchanged by this
+        revision, and "divided into three members: Serra da Galga, Ponte Alta,
+        and Echaporã" after Barcelos and Suguio (1987).
+    - id: silvajunior2022a
+      notes: >
+        Why only two of those three members are recorded here: Soares and
+        others (2021) raised the Serra da Galga to formation rank within the
+        Bauru Group, the usage this paper follows throughout, which takes it out
+        of the Marília.
+    - id: martinelli2004a
+      notes: >
+        Gives its age as Late Maastrichtian.
+
 Marree:
   rank: subgroup
   contains: ["Bulldog Shale"]
@@ -649,6 +1152,24 @@ Miaogou:
       notes: >
         "Miaogou Formation (Aptian-Albian)" for the Maortu locality, which is
         where the formation's dinosaur record comes from.
+
+Morrin:
+  rank: member
+  parent: "Horseshoe Canyon"
+  stages: [Campanian, Maastrichtian]
+  references:
+    - id: eberth2012a
+      notes: >
+        The fourth of the formation's seven members, from the top of the #8-9
+        coal zone up to the maximum flooding surface of the Drumheller Marine
+        Tongue just above the #10 coal. It "includes the Campanian-Maastrichtian
+        boundary (70.6 Ma)", which is why the envelope carries both stages;
+        about 71.0-70.5 Ma in Drumheller outcrop.
+    - id: arbour2013a
+      notes: >
+        Ties the formal member to the informal scheme it replaces, constraining
+        material "to Unit 2 (Morrin Member sensu [Eberth and Braman]) of the
+        Horseshoe Canyon Formation".
 
 Mussentuchit:
   rank: member
@@ -718,6 +1239,19 @@ Arlington:
         formation of the Woodbine Group" and the Arlington and Tarrant are its
         members.
 
+Ohyamashimo:
+  rank: formation
+  parent: Sasayama
+  stages: [Albian]
+  references:
+    - id: tanaka2024a
+      notes: >
+        Hyogo Prefecture, southwest Japan, the lower of the group's two
+        formations, "mainly composed of terrestrial conglomerate, sandstones and
+        siltstones, with intercalated rhyolitic tuff beds in its lower part",
+        early Albian at about 112 Ma. The Miyada bonebeds lie in that lower
+        part, for which no member is named.
+
 "Pant-y-ffynnon Quarry fissure fill":
   rank: none
   kind: fissure fill
@@ -783,6 +1317,417 @@ Oldman:
 Pawpaw:
   rank: formation
   variants: ["Paw Paw"]
+
+Peterborough:
+  rank: member
+  parent: "Oxford Clay"
+  stages: [Callovian]
+  references:
+    - id: ruiz-omeñaca2007a
+      notes: >
+        The lowest of the formation's three members and the equation the older
+        literature has to be read through: "Cox et al. (1992) renamed the lower
+        Oxford Clay the Peterborough Member of the Oxford Clay Formation."
+        Middle Callovian, probably the Jason Zone; the upper Callovian and
+        middle-upper Callovian ages given for the same material by Galton
+        (1977b, 1980b) and Weishampel (1992) come from the older informal
+        usage.
+    - id: naish2007a
+      notes: >
+        "the Middle Callovian Peterborough Member of the Oxford Clay Formation
+        in clay pits between Yaxley, Peterborough and Whittlesey".
+
+Pircala:
+  rank: formation
+  parent: Malargüe
+  references:
+    - id: martinelli2004a
+      notes: >
+        Neuquén Basin. The uppermost unit of the group's northwestern sequence,
+        "Loncoche, Jagüel, Roca, and Pircala formations". Nothing further is
+        said about it.
+
+"Ponte Alta":
+  rank: member
+  parent: Marília
+  references:
+    - id: fernandes2000a
+      notes: >
+        Bauru Basin, one of the three members Barcelos and Suguio (1987)
+        defined in the formation, and a diagenetic body rather than a
+        depositional one: it "constitutes interior nuclei or tabular zones of
+        the Serra da Galga Member, created by post-depositional cementation",
+        with an interdigitated, complex and irregular contact against it.
+        Generally taken to overlie the Uberaba Formation.
+
+"Presidente Prudente":
+  rank: formation
+  parent: Bauru
+  references:
+    - id: fernandes2000a
+      notes: >
+        Bauru Basin, erected by Fernandes (1998) and one of the six formations
+        of the group as revised here. It "occurs at the highest elevations of
+        the regional interfluvial areas, below which the Vale do Rio do Peixe
+        Formation crops out", the two interdigitating as the fluvial system
+        replaced the eolian one.
+
+Qingshuihe:
+  rank: formation
+  parent: Tugulu
+  stages: [Berriasian]
+  references:
+    - id: zheng2023a
+      notes: >
+        Junggar Basin, the basal formation of the group, but only in the south:
+        "the Qingshuihe Formation does not occur in the NW Junggar Basin".
+        Berriasian in this paper's age model, consistent with the clam shrimp,
+        ostracod and sporopollen evidence.
+
+Roca:
+  rank: formation
+  parent: Malargüe
+  references:
+    - id: martinelli2004a
+      notes: >
+        Neuquén Basin, present in both the southeastern and northwestern
+        sequences of the group, above the Jagüel in each. Nothing further is
+        said about it.
+
+Romualdo:
+  rank: formation
+  parent: Santana
+  stages: [Aptian, Albian]
+  references:
+    - id: arai2020a
+      notes: >
+        Araripe Basin, the uppermost formation of the group, overlying the
+        Barbalha, Crato and Ipubi. Concludes it is Aptian throughout: "a large
+        portion of the Romualdo Formation (from its base to the level of sample
+        49) is Aptian in age. It is very likely that the whole regressive
+        section at the top of the unit is also Aptian." The Albian age carried
+        by much of the literature is rejected on the ground that "indisputably
+        Albian palynomorphs ... have not been reported thus far in any published
+        work from the Romualdo Formation".
+    - id: sues2002a
+      notes: >
+        The other end of the envelope, and why it is recorded rather than
+        settled: reviewing the same question two decades earlier, "the
+        concretion-bearing horizon of the Romualdo Member is probably younger
+        than early Albian", with Berthou (1990) putting the concretions in the
+        mid to late Albian. Much of the vertebrate literature dates the unit
+        from this reading.
+    - id: delcourt2025a
+      notes: >
+        Aptian, and works in formation rather than member rank. Distinguishes
+        informal upper and lower carbonate concretion levels within the unit; no
+        member is named for either.
+    - id: carrano2012a
+      notes: >
+        Uses the older member rank, "Romualdo Member, Santana Formation".
+
+"Ruby Ranch":
+  rank: member
+  parent: "Cedar Mountain"
+  references:
+    - id: carpenter1999a
+      notes: >
+        One of the four members Kirkland and others (1997) established above the
+        Buckhorn Conglomerate. No stage is given: "the few taxa known suggest
+        that the Ruby Ranch correlates with the Cloverly Formation of Montana
+        and Wyoming".
+    - id: tidwell2001a
+      notes: >
+        Places it above the Yellow Cat and Poison Strip interval.
+
+"São José do Rio Preto":
+  rank: formation
+  parent: Bauru
+  references:
+    - id: fernandes2000a
+      notes: >
+        Bauru Basin. "It overlies the Vale do Rio do Peixe Formation, with
+        transitional contact, locally erosive (diastems)." The name has been
+        applied at three different scopes -- a facies association of the old
+        Bauru Formation for Suguio and others (1977), a formation of the Bauru
+        Group for Suguio (1981), and a member of the Adamantina for Soares and
+        others (1980) and Barcelos (1984) -- and as used here it "corresponds to
+        a restricted part of the unit previously mapped with this name".
+
+Sawada:
+  rank: formation
+  parent: Sasayama
+  stages: [Albian]
+  references:
+    - id: tanaka2024a
+      notes: >
+        Hyogo Prefecture, the upper of the group's two formations, "mainly
+        composed of andesite, andesitic pyroclastic rocks and tuffaceous
+        sandstones and mudstones". Its andesite gives a zircon age of 106.4 ±
+        0.4 Ma, early Albian, which bounds the Ohyamashimo bonebeds from above.
+
+"Serra da Galga":
+  rank: formation
+  rank_contested: [member, formation]
+  parent: Bauru
+  stages: [Maastrichtian]
+  references:
+    - id: silvajunior2022a
+      notes: >
+        Uberaba, Minas Gerais. Uses the unit at formation rank within the Bauru
+        Group -- "the Serra da Galga Formation (Bauru Group, Late Cretaceous)",
+        Maastrichtian -- following Soares and others (2021), who erected it as a
+        new lithostratigraphic unit out of what had been a member of the
+        Marília. Uberabatitan, Trigonosaurus and Baurutitan all come from it.
+    - id: fernandes2000a
+      notes: >
+        The earlier rank, as one of the Marília Formation's three members. It
+        overlies the Uberaba Formation with slightly erosive contacts, has an
+        interdigitated contact with the Ponte Alta Member, and is presumed to
+        pass westward into the Echaporã Member.
+
+Shawan:
+  rank: member
+  parent: Lufeng
+  variants: ["Dark Purple Beds", "Dull Purplish Beds"]
+  references:
+    - id: xing2012b
+      notes: >
+        The lowermost member of the formation, which "was originally recognized
+        as the 'Dark Purple Beds' of the Lower Member of the Lower Lufeng
+        Formation". Conformable below the Zhangjia'ao Member and unconformable
+        on the Proterozoic Etouchang Formation. Hettangian in the Fang and
+        others (2000) scheme.
+    - id: you2014b
+      notes: >
+        States the same equivalence from the other side: the "Shawan Member of
+        the Lufeng Formation (Fang et al. 2000) ... is equivalent to the Dull
+        Purplish Beds of the Lower Lufeng Formation (Series) as defined by Bien
+        (1940)".
+    - id: zhang2024a
+      notes: >
+        No stage envelope is recorded because the two published ages are for
+        different things: the Hettangian belongs to the member in the Fang and
+        others (2000) scheme, while the late Sinemurian-Toarcian of the
+        magnetostratigraphy is a formation-wide result.
+    - id: irmis2008a
+      notes: >
+        Records the formalization: "the 'dull purple beds' and 'dark red beds'
+        were formalized as the Shawan and Zhangjiawa members respectively".
+
+Shengjinkou:
+  rank: formation
+  parent: Tugulu
+  stages: [Valanginian]
+  references:
+    - id: zheng2023a
+      notes: >
+        Junggar Basin, the third formation of the group. "Our ca. 135.2 Ma U-Pb
+        age places the upper Shengjinkou Formation within the Valanginian
+        Stage", against an Early Cretaceous biostratigraphic age from its clam
+        shrimp, sporopollen and siyuichthyid fish.
+
+Sobral:
+  rank: member
+  rank_contested: [member, formation]
+  parent: Lourinhã
+  stages: [Kimmeridgian, Tithonian]
+  references:
+    - id: tschopp2015a
+      notes: >
+        Lusitanian Basin. Member rank, above the Amoreira-Porto Novo:
+        "Kimmeridgian/Tithonian; Sobral Member, Lourinha Form."
+    - id: carrano2012a
+      notes: >
+        Uses formation rank for the same unit, "Sobral Formation; late
+        Kimmeridgian-early Tithonian, Late Jurassic".
+
+Stewartby:
+  rank: member
+  parent: "Oxford Clay"
+  stages: [Callovian]
+  references:
+    - id: naish2007a
+      notes: >
+        The middle of the formation's three members: "Clay pits in the Upper
+        Callovian Stewartby Member of the Oxford Clay Formation near Oxford
+        yielded the theropod Eustreptospondylus."
+
+Strathmore:
+  rank: member
+  parent: "Horseshoe Canyon"
+  stages: [Campanian]
+  references:
+    - id: eberth2012a
+      notes: >
+        The basal member, "formally elevated ... to member status on the basis
+        of its widespread and mappable distribution in the subsurface" from
+        Hamblin's (2004) informal Strathmore tongue. It "is bounded by the lower
+        and upper tongues of the Bearpaw Formation and their correlative
+        flooding surfaces", and to the north and west amalgamates with the
+        Drumheller above and the Dinosaur Park Formation below. Within the 33n
+        magnetochron, about 74.0-73.2 Ma.
+
+Tangbian:
+  rank: formation
+  parent: Guifeng
+  references:
+    - id: yao2026a
+      notes: >
+        Jiangxi, the middle formation of "the upper Guifeng Group consisting of
+        the Hekou, Tangbian and Lianhe formations in ascending order", and with
+        the Hekou one of the two that have produced vertebrates.
+
+Tarrant:
+  rank: member
+  parent: Lewisville
+  stages: [Cenomanian]
+  references:
+    - id: tykoski2023a
+      notes: >
+        North Texas. A member of the Lewisville Formation, with the Arlington,
+        in the Woodbine stratigraphy of Denne and others (2016).
+    - id: head1998a
+      notes: >
+        The classification current before that revision, in which it is "the
+        Tarrant Member of the Eagleford Group", capping the Arlington Member of
+        the Woodbine Formation. Dated to the Conlinoceras tarrantense ammonite
+        zone, at the base of the middle Cenomanian.
+
+Tolman:
+  rank: member
+  parent: "Horseshoe Canyon"
+  stages: [Maastrichtian]
+  references:
+    - id: eberth2012a
+      notes: >
+        The fifth of the formation's seven members, from the bentonite-rich
+        mudstone marking the maximum flooding surface of the Drumheller Marine
+        Tongue up to the return of organic-rich shales and paleochannel
+        sandstones at the base of the Carbon. Modified from Hamblin's (2004)
+        Tolman tongue. Spans most of 31r and the lower half of 31n, about
+        70.4-68.4 Ma.
+    - id: arbour2013a
+      notes: >
+        Applies the member scheme in the field, with the Morrin and Carbon, on
+        the Red Deer River.
+
+Tugrugyin:
+  rank: member
+  parent: Djadokhta
+  references:
+    - id: dashzeveg2005a
+      notes: >
+        The upper of the formation's two members, "composed of pale orange to
+        light gray sands", with its key section at Tugrugyin Shireh. "The
+        Tugrugyin Member overlies the Bayn Dzak Member, making it somewhat
+        younger."
+
+"Tunbridge Wells Sand":
+  rank: formation
+  parent: Hastings
+  stages: [Valanginian]
+  variants: ["Tunbridge Wells Sandstone"]
+  references:
+    - id: norman2010a
+      notes: >
+        The Weald. "the Tunbridge Wells Sand Formation (which represents the
+        uppermost part of the Hastings Sub-Group)", above the Wadhurst Clay; the
+        same paragraph also prints Tunbridge Wells Sandstone Formation for it.
+        With the Wadhurst Clay it corresponds "to the entire Valanginian stage
+        (141-137 Ma) in more recent correlation tables".
+    - id: carrano2012a
+      notes: >
+        "the Tunbridge Wells Sand Formation (Valanginian) of Cuckfield, Sussex".
+
+Uberaba:
+  rank: formation
+  parent: Bauru
+  references:
+    - id: fernandes2000a
+      notes: >
+        Bauru Basin. Retained "as defined by Hasui (1968)" unchanged by this
+        revision. Its lower contact "corresponds to an unconformity with basalts
+        of the Serra Geral Formation, associated with a basal breccia", and it
+        is overlain by the Serra da Galga Member of the Marília Formation.
+
+"Vale do Rio do Peixe":
+  rank: formation
+  parent: Bauru
+  references:
+    - id: fernandes2000a
+      notes: >
+        Bauru Basin, and the unit that carries this revision's main change: it
+        "corresponds to much of the former Adamantina Formation defined by
+        Soares et al. (1980)". The unit of greatest areal extent in the eastern
+        part of the basin, resting directly on the Serra Geral basalts, passing
+        west and southwest into the Santo Anastácio, surrounding the Araçatuba,
+        and passing at its top into the Echaporã Member with diastemic contacts
+        against the Presidente Prudente and São José do Rio Preto.
+
+"Wadhurst Clay":
+  rank: formation
+  parent: Hastings
+  stages: [Valanginian]
+  references:
+    - id: norman2010a
+      notes: >
+        The Weald. "Underlying the Tunbridge Wells Sandstone Formation is the
+        Wadhurst Clay Formation", both within the "Hastings Sub-Group", and the
+        two together correspond to the whole of the Valanginian.
+    - id: norman2013a
+      notes: >
+        Uses group rank for the parent instead, and dates the dinosaur-bearing
+        material middle Valanginian, about 137-138 Ma, including the Barilium
+        dawsoni holotype from Shornden quarry.
+
+Weymouth:
+  rank: member
+  parent: "Oxford Clay"
+  stages: [Oxfordian]
+  references:
+    - id: naish2007a
+      notes: >
+        The uppermost of the formation's three members and the only Oxfordian
+        one: Metriacanthosaurus parkeri comes "from the Weymouth Member
+        (formerly Upper Oxford Clay) of Weymouth, Dorset".
+    - id: carrano2012a
+      notes: >
+        Prints the older wording for the same horizon, "Weymouth Member, Upper
+        Oxford Clay".
+
+Whitemud:
+  rank: member
+  rank_contested: [member, formation]
+  parent: "Horseshoe Canyon"
+  stages: [Maastrichtian]
+  references:
+    - id: eberth2012a
+      notes: >
+        The uppermost of the formation's seven members, and the one whose rank
+        depends on where you stand: in the Red Deer River valley "we include it
+        here as the Whitemud Member of the HCFm", while "it also occurs in
+        southeastern Alberta and southern Saskatchewan, where it is justifiably
+        treated as a formation", the rank it was erected at by Irish and Havard
+        (1968). Srivastava's (1968) earlier member proposal is rejected for
+        lacking a description or measured section. Its base is the first white
+        or light-colored fine sandstone above the Carbon, its top an
+        unconformity below the Battle Formation; within the lower 30n
+        magnetochron, about 67.5-67.0 Ma.
+    - id: brown2011a
+      notes: >
+        Uses formation rank in the Saskatchewan sense, listing "the terrestrial
+        Eastend, Whitemud, and Battle formations" below the Frenchman.
+
+Xingezhuang:
+  rank: formation
+  parent: Wangshi
+  references:
+    - id: zhang2019a
+      notes: >
+        Named as one of the group's four formations, "the Late Cretaceous
+        Wangshi Group, which comprises the Xingezhuang, Jiangjunding,
+        Jingangkou, and Changwangpu formations", with no order stated.
 
 "Zhangjia'ao":
   rank: member
@@ -1121,6 +2066,38 @@ Yezo:
 Yuliangzi:
   rank: formation
   variants: [Yuliangze]
+
+Zhonggou:
+  rank: formation
+  parent: Xinminpu
+  stages: [Albian]
+  references:
+    - id: you2014a
+      notes: >
+        Gansu. The upper of the group's two formations -- "the lower Xiagou and
+        the upper Zhonggou formations" -- separated from the Xiagou by andesites
+        dated at 113.7 Ma in the Hanxia Section, and "most likely of Albian
+        age". Field work in 2010 and 2011 refined the Mazongshan dinosaur
+        localities from the group to this formation specifically.
+    - id: zheng2023a
+      notes: >
+        Corroborates the Albian reading from the angiosperm pollen of the
+        Jiuquan Basin.
+    - id: tanaka2024a
+      notes: >
+        Gives Archaeoceratops oshimai as lower Albian in this formation.
+
+Zhoutian:
+  rank: formation
+  parent: Ganzhou
+  references:
+    - id: yao2026a
+      notes: >
+        Jiangxi, the upper formation of the group and the one that has produced
+        most of its vertebrates. It "developed a terrestrial facies lake basin
+        ... composed of finegrained siltstones and mudstones, interbedded with
+        several gypsum layers" and rests conformably on the Maodian. No absolute
+        age is available for it.
 
 Ziliujing:
   rank: formation
