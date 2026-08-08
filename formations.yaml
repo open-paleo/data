@@ -23,8 +23,17 @@
 #   kind         what the string actually is, when `rank: none`
 #   parent       the unit that contains this one, where a source states it
 #   contains     units inside this one, where a source states them
-#   variants     spellings seen in the literature for the same unit; a variant
-#                NOT listed here is new and does need review
+#   variants     ALTERNATE AND LEGACY NAMES a publication actually prints for
+#                this unit -- Erlian for Iren Dabasu, Red Beds for Elliot,
+#                Wucaiwan for Shishugou. The test is whether some paper uses the
+#                string AS THIS UNIT'S NAME. Four things are therefore NOT
+#                variants and do not belong here: a rank word appended to the
+#                key ("Iren Dabasu Fm."), a diacritic or spacing form
+#                ("Zhangjiaao", "Cambridge Green Sand"), a rank CLAIM
+#                ("Hastings Beds Group" -- that is `rank_contested`), and a
+#                string attested only in a reference work, which renders names
+#                rather than establishing them. Abbreviations and folded
+#                diacritics are the matcher's job, not the registry's.
 #   rank_contested  ranks the literature genuinely disagrees on -- kept visible
 #                rather than settled by majority
 #   stages       the unit's published age, oldest stage first. An ENVELOPE for
@@ -48,9 +57,9 @@
 #
 # CANONICAL SPELLINGS. Where the literature is split, the choice and its reason
 # are recorded on the entry. Sânpetru over Sînpetru is the worked example: the
-# 1993 Romanian orthographic reform replaced î with â in this position,
-# Weishampel (2003) flags it in its own geology section, and all four reference
-# works print â.
+# post-Ceauşescu Romanian orthographic reform replaced î with â in this
+# position, Weishampel (2003) flags it in its own geology section, and all four
+# reference works print â.
 #
 # DELIBERATELY EXCLUDED: Shaximiao vs Xiashaximiao / Shangshaximiao. Xia and
 # shang are Chinese for lower and upper, so those name a subunit rather than a
@@ -75,21 +84,33 @@ Allen:
 
 Bahariya:
   rank: formation
-  variants: ["Baharija Fm."]
+  variants: [Baharija]
 
 Baharîje:
   rank: formation
-  variants: ["Baharija Fm.", "Baharija Formation"]
+  variants: [Baharija]
 
 Baruungoyot:
   rank: formation
   stages: [Campanian]
-  variants: ["Barun Goyot Fm."]
+  variants: ["Barun Goyot"]
 
 Bauru:
   rank: group
-  contains: [Adamantina, Marília]
+  contains: [Uberaba, "Vale do Rio do Peixe", Araçatuba, "São José do Rio Preto",
+             "Presidente Prudente", Marília]
   references:
+    - id: fernandes2000a
+      notes: >
+        The Upper Cretaceous sequence of the Bauru Basin "is now divided in two
+        groups, partially contemporaneous: Caiuá Group ... and Bauru Group", the
+        latter "composed of the Uberaba, Vale do Rio do Peixe, Araçatuba, São
+        José do Rio Preto, Presidente Prudente and Marília formations", with no
+        order stated. This revision supersedes the Adamantina Formation of
+        Soares et al. (1980) -- "the most important change presented concerns
+        the Bauru Group, especially the Adamantina Formation" -- while the
+        Marília is retained in the sense of those authors, subdivided into the
+        Echaporã, Serra da Galga and Ponte Alta members.
     - id: delcourt2017a
       notes: >
         Paraná Basin. The Mato Grosso outcrops formerly assigned here belong to
@@ -97,7 +118,7 @@ Bauru:
 
 Bayangobi:
   rank: formation
-  variants: ["Bayan Gobi Fm.", "Bayingobi Fm."]
+  variants: ["Bayan Gobi", Bayingobi]
 
 Baynshire:
   rank: formation
@@ -108,7 +129,25 @@ Baynshire:
         Gives "Cenomanian-Turonian" for individual holotypes from this
         formation, which is a narrower reading for those taxa rather than a
         competing range for the unit.
-  variants: ["Bayan Shireh Fm.", "Bayanshiree Svita"]
+  variants: ["Bayan Shireh", Bayanshiree]
+
+"Belly River":
+  rank: group
+  contains: [Foremost, Oldman, "Dinosaur Park"]
+  references:
+    - id: eberth2005a
+      notes: >
+        Southern Alberta plains. At Dinosaur Provincial Park the complete group
+        "is approximately 280 m thick and consists of the Foremost (170 m),
+        Oldman (40 m), and Dinosaur Park (70 m) formations", bounded by the
+        Pakowki and Bearpaw marine shales. The redefined group "is synonymous
+        with the long-standing informal usage of 'Belly River', McLean's 'Judith
+        River Formation', and Eberth and Hamblin's 'Judith River Group'": the
+        three constituent formations were separated out of McLean's single
+        Judith River Formation by Eberth and Hamblin (1993), who accepted
+        Russell and Landes's (1940) Foremost, redefined the Oldman, and erected
+        the Dinosaur Park Formation for the uppermost beds.
+  variants: ["Belly River Series"]
 
 Bevons:
   rank: none
@@ -118,15 +157,14 @@ Bevons:
       notes: >
         A commune near Sisteron. The erecting paper gives a lithological
         description rather than a formal unit, which is why the reference works
-        fell back on the place name; the rocks are the Marnes Bleues.
+        fell back on the place name.
 
 "Calcaires de Caen":
   rank: formation
-  variants: ["Calcaire de Caen", "Calcaire du Caen"]
+  variants: ["Calcaire de Caen"]
 
 "Cambridge Greensand":
   rank: formation
-  variants: ["Cambridge Green Sand"]
 
 "Cañadón Asfalto":
   rank: formation
@@ -176,17 +214,24 @@ Bevons:
 
 "Cerro Carnerero":
   rank: formation
-  variants: ["Cerro Carnereo Fm."]
 
 "Chipping Norton Limestone":
   rank: formation
-  variants: ["Chipping Norton Ls."]
 
 "Cuckfield Stone":
-  rank: member
+  rank: bed
   parent: Grinstead Clay
   references:
+    - id: young1988a
+      notes: >
+        Ranked a bed rather than a member: "the Cuckfield Stone is a lenticular
+        bed of sandstone, calcareous in part, that separates the Lower Grinstead
+        Clay from the Upper Grinstead Clay", and "is apparently a channel-fill
+        deposit".
     - id: norman2013a
+      notes: >
+        Places dinosaur material "embedded in Cuckfield Stone (Grinstead Clay
+        Member, upper middle Valanginian)".
 
 "Dinosaur Park":
   rank: formation
@@ -195,9 +240,15 @@ Bevons:
   references:
     - id: arbour2013a
       notes: >
-        "Dinosaur Park Formation (upper Campanian)". The literature is
-        consistent on this: no source extends the unit into the Santonian or the
-        Maastrichtian.
+        Dates the top of the formation at 74.9 Ma and places its deposition
+        within the Campanian; no source extends the unit into the Santonian or
+        the Maastrichtian.
+    - id: eberth2005a
+      notes: >
+        The uppermost of the Belly River Group's three formations, 70 m thick at
+        Dinosaur Provincial Park. Erected by Eberth and Hamblin (1993) for "the
+        upper most beds in the package" they separated out of McLean's Judith
+        River Formation.
 
 Djadokhta:
   rank: formation
@@ -234,26 +285,32 @@ Dockum:
 
 Elliot:
   rank: formation
-  variants: ["Red Beds", "Red beds"]
+  variants: ["Red Beds"]
   stages: [Norian, Rhaetian, Hettangian, Sinemurian, Pliensbachian]
   references:
     - id: peyredefabrègues2016a
       notes: >
         Gives the historical names: the Elliot and Clarens Formations were
         called the "Red Beds" and the "Cave Sandstone" respectively, and the
-        Lower Red Beds are the equivalent of the lower Elliot Formation.
-    - id: andrzejewski2019a
+        Lower Red Beds are the equivalent of the lower Elliot Formation. The
+        formation straddles the Triassic-Jurassic boundary and its two informal
+        parts carry the split, material being "found in the lower Elliot
+        Formation (Late Triassic) or in the upper Elliot Formation (Early
+        Jurassic)". A wide span across this formation is therefore expected
+        rather than anomalous.
+    - id: barrett2019a
       notes: >
-        The formation straddles the Triassic-Jurassic boundary and its two
-        informal parts carry the split: "lower Elliot Formation (Late Triassic)"
-        against "upper Elliot Formation (Early Jurassic)". A wide span across
-        this formation is therefore expected rather than anomalous.
+        Sets out the published age framework: the lower Elliot is "regarded as
+        Late Triassic (potentially Norian/Rhaetian) in age, whereas the upper
+        Elliot Formation has been considered to be Early Jurassic
+        (Hettangian-Sinemurian)". Magnetostratigraphy across the main Karoo
+        Basin subsequently moved the Triassic-Jurassic boundary up into the
+        upper Elliot, so that "the lower part of the upper Elliot is Rhaetian in
+        age, while its upper part is Early Jurassic (Hettangian-Sinemurian)".
     - id: yates2011a
       notes: >
         The younger bound, hedged at source: "Upper Elliot Formation, Early
-        Jurassic, possibly Pliensbachian". A Toarcian reading of the upper
-        Elliot has been proposed but is superseded by the magnetostratigraphy,
-        which places that part in the Hettangian and early Sinemurian.
+        Jurassic, possibly Pliensbachian".
 
 Fuvelian:
   rank: none
@@ -261,8 +318,11 @@ Fuvelian:
   references:
     - id: csiki-sava2015a
       notes: >
-        One of the four Provence local stages (Valdonnian, Fuvelian, Begudian,
-        Rognacian) erected by Matheron (1864) -- a time term, not a rock unit.
+        A time term, not a rock unit: "Several local stage names were proposed
+        during the nineteenth century to subdivide the Upper Cretaceous
+        continental series of Provence, notably by Matheron (1864: Valdonnian
+        and Fuvelian) and Villot", the latter contributing the Begudian and
+        Rognacian. Gives the Fuvelian as upper Santonian to lower Campanian.
     - id: tortosa2014a
       notes: >
         Shows the distinction inside one paper: gives Arcovenator a formation
@@ -280,13 +340,13 @@ Ganzhou:
   rank: formation
   stages: [Cenomanian]
   parent: Kem Kem
-  variants: ["Ifezouane Formation", "Ifezouane Fm."]
   references:
     - id: ibrahim2020a
       notes: >
-        Erects the unit as the lower formation of the Kem Kem Group. Ifezouane
-        is the same rock under the earlier scheme of Cavin et al.; the two names
-        compete, and the later literature has largely followed Ibrahim.
+        Erects the unit as the lower formation of the Kem Kem Group. Not a
+        spelling of Ifezouane: this paper treats the Ifezouane as a laterally
+        correlative unit of a different region and explicitly rejects Cavin et
+        al.'s (2010) application of that name to the Kem Kem strata.
 
 Gosau:
   rank: group
@@ -319,11 +379,20 @@ Guifeng:
 
 Hastings:
   rank: group
+  rank_contested: [group, subgroup]
   contains: ["Wadhurst Clay", "Tunbridge Wells Sand"]
-  variants: ["Hastings Beds", "Hastings Beds Group"]
+  variants: ["Hastings Beds"]
   references:
-    - id: carrano2012a
-      notes: Also treated as a sub-group of the Wealden.
+    - id: norman2010a
+      notes: >
+        Contains the Wadhurst Clay Formation below and the Tunbridge Wells Sand
+        Formation as its uppermost part; the two together "correspond to the
+        entire Valanginian stage". Treated here at sub-group rank within the
+        Wealden, as the "Hastings Sub-Group".
+    - id: norman2013a
+      notes: >
+        Uses group rank for the same unit, placing the Wadhurst Clay and Lower
+        Tunbridge Wells Sand formations within the "Hastings Group".
 
 "Hekou (CN-GS)":
   rank: group
@@ -349,8 +418,7 @@ Houcheng:
 
 "Iren Dabasu":
   rank: formation
-  variants: ["Erlian Formation", "Iren Dabasu Fm.", "Iren Nor Formation",
-    "Iren Debasu Formation", "Elian Formation"]
+  variants: [Erlian, "Iren Nor", "Iren Debasu"]
   references:
     - id: xu2006c
       notes: >
@@ -384,23 +452,16 @@ Houcheng:
   references:
     - id: brown2011a
       notes: >
-        "Hell Creek Formation (Maastrichtian)", and elsewhere "uppermost
-        Maastrichtian"; the unit is terminal Cretaceous, capped by the K-Pg
-        boundary. Nineteenth-century work refers material now placed here to
-        the "Fort Union Beds" of Montana, a usage predating the separation of
-        the Paleocene Fort Union Formation.
+        Dates the unit by correlation rather than directly: the Frenchman
+        Formation of Saskatchewan is "contemporary with the youngest part of the
+        Hell Creek Formation of Montana", and the Frenchman "was deposited in
+        the last one-half million years of the Maastrichtian".
 
 "Horseshoe Canyon":
   rank: formation
   contains: [Strathmore, Drumheller, Horsethief, Morrin, Tolman, Carbon, Whitemud]
   stages: [Campanian, Maastrichtian]
   references:
-    - id: carr2017a
-      notes: >
-        "Horseshoe Canyon Formation (Campanian-Maastrichtian, Late Cretaceous)".
-        Maastrichtian alone is the commoner phrasing here, but the Campanian end
-        is published and the unit's base is late Campanian, so the envelope
-        carries both.
     - id: eberth2012a
       notes: >
         Defines the members: the formation "is divided into seven mappable
@@ -408,7 +469,10 @@ Houcheng:
         Whitemud (bottom to top)". The Strathmore Member is the basal one,
         bounded by the lower and upper tongues of the Bearpaw Formation, and the
         Strathmore and Drumheller members were elevated here from Hamblin's
-        (2004) informal Strathmore and Hoodoo tongues.
+        (2004) informal Strathmore and Hoodoo tongues. The formation "spans
+        approximately 7 million years, ranging from late Campanian (~74.0 Ma;
+        magnetochron 33n) to late Maastrichtian (~67 Ma; magnetochron 30n)",
+        which is why the envelope carries both stages.
 
 Huincul:
   rank: formation
@@ -417,8 +481,13 @@ Huincul:
   references:
     - id: baiano2020a
       notes: >
-        "Huincul Formation (Cenomanian-Turonian; Upper Cretaceous)", the
-        prevailing modern reading.
+        "Huincul Formation (Cenomanian-Turonian)", the prevailing modern
+        reading.
+    - id: carballido2010a
+      notes: >
+        Places the formation in the "Río Limay Subgroup, Neuquén Group", and
+        gives the Limaysaurus tessonei-bearing levels of the Candeleros and
+        Huincul formations as Cenomanian.
     - id: gallina2005a
       notes: >
         The Coniacian end, on a minority reading -- "'La Buitrera', Huincul
@@ -444,12 +513,18 @@ Jehol:
   references:
     - id: arbour2017a
       notes: >
-        "Judith River Formation (Campanian)", consistently through the
-        literature. The historic "Judith River Formation" of southern Alberta
-        is a different unit from this Montana formation: the Alberta usage
-        denotes what is now the Belly River Group, since split into the
-        Foremost, Oldman and Dinosaur Park formations, and papers predating
-        that revision use the old name for all three.
+        A northern Montana unit "deposited over an approximately 4 Myr interval
+        during a Campanian transgressive-regressive cycle of the Western
+        Interior Seaway".
+    - id: eberth2005a
+      notes: >
+        The historic "Judith River Formation" of southern Alberta is a different
+        unit from the Montana formation: the redefined Belly River Group "is
+        synonymous with the long-standing informal usage of 'Belly River',
+        McLean's 'Judith River Formation', and Eberth and Hamblin's 'Judith
+        River Group'", and Eberth and Hamblin (1993) subdivided that single
+        Alberta unit into the Foremost, Oldman and Dinosaur Park formations, so
+        papers predating the revision use the old name for all three.
 
 "Kalahari Deposits":
   rank: none
@@ -484,31 +559,42 @@ Lameta:
   rank: formation
   stages: [Maastrichtian]
   references:
-    - id: agnolín2021a
+    - id: wilson2003a
       notes: >
-        "Lameta Formation (Cretaceous, Maastrichtian)", consistently through the
-        literature; one source narrows it further to "upper Maastrichtian, ca.
-        69-66 Ma". The unit is central Indian, principally Madhya Pradesh and
-        Maharashtra.
+        Ranks the unit as a formation and dates it Maastrichtian, on the
+        infratrappean Lameta sediments at Rahioli, Gujarat, which lie below the
+        Deccan Trap flood basalts.
 
 Lianmuqin:
   rank: formation
   parent: Tugulu
-  stages: [Barremian, Aptian]
+  stages: [Valanginian, Hauterivian, Barremian, Aptian, Albian]
   references:
-    - id: xu2018c
+    - id: zheng2023a
       notes: >
-        Dates the upper Tugulu Group, of which the Lianmuqin is the uppermost
-        formation, Barremian-Aptian. The unit's age is contested: Rauhut and Xu
-        (2005) give "?Valanginian-Albian" after Shen
-        and Mateer (1992), and Sanchez-Fenollosa et al. (2025) late
-        Valanginian-?Barremian.
+        Places the unit as the uppermost formation of the Tugulu Group, which
+        "consists (in ascending order) of the Qingshuihe, Hutubihe, Shengjinkou,
+        and Lianmuqin Formations". Concludes that "the paleontological evidence
+        thus indicates an Aptian-Albian age for the Lianmuqin Formation of the
+        southern Junggar Basin", but carries the older bound down on its own
+        radioisotopic evidence: "our isotopic age from the top of the
+        Shengjinkou Formation indicates that the Lianmuqin Formation could have
+        been deposited as early as the Valanginian". A white tuffaceous
+        siltstone marker bed separates the Shengjinkou and Lianmuqin formations
+        in the northwestern Junggar Basin.
+    - id: rauhut2005c
+      notes: >
+        The older reading, hedged at source: "Age-?Valanginian-Albian (Shen and
+        Mateer, 1992)". Prints the unit name as "Lianmugin".
+    - id: maidment2008a
+      notes: >
+        Also ranks the unit a formation, and gives a Valanginian-Albian age.
 
 Lufeng:
   rank: formation
   stages: [Hettangian, Sinemurian, Pliensbachian, Toarcian]
   contains: [Shawan, "Zhangjia'ao"]
-  variants: ["Lower Lufeng Formation", "Lower Lufeng Series"]
+  variants: ["Lower Lufeng"]
   references:
     - id: xing2012b
       notes: >
@@ -542,7 +628,7 @@ Lufeng:
       notes: >
         Asylosaurus, Thecodontosaurus. The erecting paper rejects it outright --
         the deposit is "a Triassic (Rheatian) dolomitized cave breccia or
-        fissure fill (not in Magnesian/ Dolomitic Conglomerate) in Lower
+        fissure fill (not in Magnesian/ Dolomitic Conglomerate ...) in Lower
         Carboniferous (Dinantian) marine limestone" -- and explains how the name
         entered circulation: "It was long equated with the Magnesian
         Conglomerate, which occurs very close by."
@@ -571,9 +657,13 @@ Mussentuchit:
   references:
     - id: avrahami2024a
       notes: >
-        Radiometrically "99.674 +0.439/0.197 to 98.905 +0.158/0.183 Myr", a
-        window inside the Cenomanian; Kirkland (1998) gives the member as
-        "latest Albian-basal Cenomanian", so the envelope carries both.
+        The younger bound: a radiometrically dated member-wide span of "99.674
+        +0.439/-0.197 to 98.905 +0.158/-0.183 Ma", a window inside the
+        Cenomanian.
+    - id: carpenter1999a
+      notes: >
+        The older bound: gives the member as "Late Albian or Early Cenomanian"
+        on faunal grounds, supported by a radiometric date of 98.39 +/- 0.07 Ma.
 
 Morrison:
   rank: formation
@@ -619,6 +709,14 @@ Arlington:
   parent: Lewisville
   references:
     - id: head1998a
+      notes: >
+        Places the unit under the Woodbine Formation, in the classification
+        current before the Woodbine was raised to group rank.
+    - id: tykoski2023a
+      notes: >
+        Reflects the later scheme, in which the Lewisville is "the upper
+        formation of the Woodbine Group" and the Arlington and Tarrant are its
+        members.
 
 "Pant-y-ffynnon Quarry fissure fill":
   rank: none
@@ -647,8 +745,6 @@ Parecis:
       notes: >
         Gives the equation the older literature has to be read through:
         "Oxford Clay Formation, Peterborough Member (=lower Oxford Clay)".
-        Middle Oxford Clay is the Stewartby Member and Upper Oxford Clay the
-        Weymouth Member.
     - id: naish2007a
       notes: >
         Assigns all three members: five genera from "the Middle Callovian
@@ -664,8 +760,7 @@ Pen:
     - id: rivera-sylva2018a
       notes: >
         "the Pen Formation (Upper Cretaceous, Santonian), at the Los Primos
-        locality". Its one informal member, the McKinney Springs tongue, is a
-        Big Bend unit and does not reach the Coahuila outcrops.
+        locality".
 
 Oldman:
   rank: formation
@@ -674,18 +769,25 @@ Oldman:
   references:
     - id: arbour2017a
       notes: >
-        "Oldman Formation (Campanian)". One of the three formations the historic
-        Judith River Formation of southern Alberta was split into.
+        Treats the unit as broadly contemporaneous with the Judith River
+        Formation of Montana, its uppermost part correlating with the lowest
+        Dinosaur Park Formation.
+    - id: eberth2005a
+      notes: >
+        One of the Belly River Group's three formations, 40 m thick at Dinosaur
+        Provincial Park, where the exposed succession runs "in ascending order"
+        from the upper 20 m of this formation into the complete Dinosaur Park
+        Formation. Its stratigraphic extent was redefined by Eberth and Hamblin
+        (1993) when they subdivided McLean's Judith River Formation.
 
 Pawpaw:
   rank: formation
-  variants: ["Paw Paw Formation"]
+  variants: ["Paw Paw"]
 
 "Zhangjia'ao":
   rank: member
   parent: Lufeng
-  variants: [Zhangjiaao, "Zhangjia'ao Member", Zhangjiawa, "Zhangjiawa Member",
-    "Dark Red Beds", "Deep Red Beds"]
+  variants: [Zhangjiaao, Zhangjiawa, "Dark Red Beds", "Deep Red Beds"]
   references:
     - id: xing2012b
       notes: >
@@ -699,8 +801,7 @@ Pawpaw:
 "Poison Strip":
   rank: member
   parent: Cedar Mountain
-  variants: ["Poison Strip Sandstone", "Poison Strip Sandstone Member",
-    "Poison Strip Member"]
+  variants: ["Poison Strip Sandstone"]
   references:
     - id: tidwell2001a
       notes: >
@@ -772,31 +873,42 @@ Shishugou:
         Formation belongs to the lower part of this unit.
     - id: choiniere2010a
       notes: >
-        "Shishugou Formation (Oxfordian)" for the upper part, dated at Wucaiwan
-        by 40Ar/39Ar on feldspars from intercalated tuffs.
+        The younger bound: gives the upper part of the formation as Oxfordian on
+        a radiometric date, placing its holotype in informal "lower orange
+        mudstone beds in the upper part" of the unit.
 
 Sânpetru:
   rank: formation
-  variants: ["Sînpetru Fm.", "Sînpetru", "Sanpetru Fm."]
+  variants: [Sînpetru]
   references:
     - id: weishampel2003a
       notes: >
-        Canonical spelling chosen here. The 1993 Romanian orthographic reform
-        replaced î with â in this position, and this paper flags it in its own
-        geology section -- "among them Sînpetru to Sânpetru". All four reference
-        works print â. The î form is kept as a variant because it survives in
-        later literature, including Augustin (2022).
+        Canonical spelling chosen here. This paper flags the change in its own
+        geology section: "in this post-Ceausescu era, some spellings in the
+        Romanian language have changed, among them Sînpetru to Sânpetru". All
+        four reference works print â. The î form is kept as a variant because it
+        survives in later literature, including Augustin (2022).
 
 Santana:
   rank: group
-  contains: [Crato, Ipubi, Romualdo]
+  contains: [Barbalha, Crato, Ipubi, Romualdo]
   references:
+    - id: arai2020a
+      notes: >
+        Araripe Basin. Gives the nomenclatural history: formalized as the Santana
+        Formation by Beurlen (1963) and subdivided by Beurlen (1971) into the
+        Crato, Ipubi and Romualdo members, the Barbalha being introduced later;
+        Assine et al. (2014) and Neumann and Assine (2015) then raised these to
+        formational status as the Santana Group, "in ascending order ... the
+        Barbalha, Crato, Ipubi and Romualdo formations". That nomenclature is the
+        one used here. Concludes on palynology that "the entire Santana Group is
+        of Aptian age because of the conspicuous presence of Sergipea
+        variverrucata and the absence of indisputably Albian forms".
     - id: delcourt2025a
       notes: >
-        Araripe Basin. The old "Santana Formation" was raised to group rank and
-        its Romualdo Member became the Romualdo Formation, so the two names
-        describe the same rock at different ranks -- but only for the Romualdo,
-        not for Crato or Ipubi taxa.
+        Names the Crato, Ipubi and Romualdo each as formations, and works
+        throughout in the Romualdo Formation rather than the older member
+        wording.
 
 Sasayama:
   rank: group
@@ -831,31 +943,40 @@ Sasayama:
         Medicine Formation, Upper Cretaceous (? Late Campanian)".
 
 Tremp:
-  rank: group
-  contains: ["La Posa", Conques]
+  rank: formation
   references:
     - id: prieto-márquez2021a
-      notes: La Posa is the basal grey unit, Conques the overlying lower red unit.
+      notes: >
+        Ranks the unit a formation, "informally subdivided into a lower part and
+        a middle part" with no formal member names published.
+    - id: csiki-sava2015a
+      notes: >
+        Also treats it as a formation, recognizing informal intervals rather
+        than named members -- a "lower Tremp Formation" interval near Aren and
+        an informal "lower red unit" at Sant Roma d'Abella. Laterally related to
+        and diachronous with the Aren Sandstone.
 
 Tugulu:
   rank: group
-  contains: [Lianmuqin]
+  contains: [Qingshuihe, Hutubihe, Shengjinkou, Lianmuqin]
   references:
-    - id: rauhut2005c
-      notes: Lianmuqin is the uppermost formation of the group.
+    - id: zheng2023a
+      notes: >
+        The group "consists (in ascending order) of the Qingshuihe, Hutubihe,
+        Shengjinkou, and Lianmuqin Formations", so the Lianmuqin is its
+        uppermost formation. The Qingshuihe Formation does not occur in the
+        northwestern Junggar Basin.
 
 Udurchukan:
   rank: formation
-  variants: ["Udurchurkan Fm."]
 
 Ukureyskaya:
   rank: formation
-  variants: ["Ukurey Fm."]
+  variants: [Ukurey]
 
 "Villar del Arzobispo":
   rank: formation
   stages: [Kimmeridgian, Tithonian]
-  parent: Higueruelas
   references:
     - id: barco2005a
       notes: >
@@ -875,9 +996,10 @@ Ukureyskaya:
   references:
     - id: viglietti2018a
       notes: >
-        Superseded. The type locality lies "within the uppermost Forest
-        Sandstone rather than the interbedded sandstones of the Batoka Basalt
-        Formation".
+        Superseded. The type locality is reassessed: "Vulcanodon was found in
+        the uppermost Forest Sandstone, and not within interbedded sandstones of
+        the Batoka Basalt Formation contrary to the descriptions of Bond et al.
+        (1970) and Raath (1972)".
 
 Wales:
   rank: none
@@ -890,10 +1012,21 @@ Wales:
 
 Wangshi:
   rank: group
-  contains: [Xingezhuang, Jingangkou, Hongtuya]
+  contains: [Xingezhuang, Jiangjunding, Jingangkou, Changwangpu]
   references:
+    - id: zhang2019a
+      notes: >
+        Gives the group's constituent formations: "the Late Cretaceous Wangshi
+        Group, which comprises the Xingezhuang, Jiangjunding, Jingangkou, and
+        Changwangpu formations", with no order stated. Also records that Yan and
+        Chen (2005) obtained an isotope age of 73 Ma "for the Jingangkou
+        Formation (which they called the Hongtuya Formation)", so the two names
+        have been applied to one unit.
     - id: an2015a
-      notes: Zhucheng.
+      notes: >
+        Zhucheng. Works in "the lower Hongtuya Formation of the Wangshi Group",
+        dating its dinosaur bone beds between 77.3 and 73.5 Ma and putting the
+        formation's upper boundary at 73 Ma.
     - id: buffetaut1995a
       notes: >
         Micropachycephalosaurus. "dinosaur remains occur at several distinct
@@ -912,10 +1045,8 @@ Wessex:
         exposed succession on the Isle of Wight as earliest Barremian.
     - id: averianov2021b
       notes: >
-        "Wessex Formation (Barremian, Early Cretaceous)", consistently through
-        the literature. The wider spans that appear alongside it belong to the
-        containing units rather than to this formation: "Wealden Supergroup
-        (Berriasian-Aptian)" and "Wealden Group (Cretaceous: Valanginian)".
+        Gives the unit as "the Lower Cretaceous (Barremian) Wessex Formation of
+        the Isle of Wight, United Kingdom".
 
 Woodbine:
   rank: group
@@ -928,7 +1059,6 @@ Woodbine:
 
 Wulansuhai:
   rank: formation
-  variants: ["Bayan Mandahu Formation"]
   references:
     - id: xu2011c
       notes: >
@@ -938,7 +1068,6 @@ Wulansuhai:
 
 Xiagou:
   rank: formation
-  variants: ["Xiaogou Fm."]
 
 "Yellow Cat":
   rank: member
@@ -955,7 +1084,6 @@ Xiagou:
 Dakangpu:
   rank: member
   parent: Yixian
-  variants: ["Dakangpu Bed", "Dakangpu Member"]
   references:
     - id: wu2012a
       notes: >
@@ -971,13 +1099,15 @@ Yixian:
   references:
     - id: zhou2006b
       notes: >
-        "Yixian Formation (Hauterivian, Early Cretaceous)", the older bound and
-        the commonest phrasing.
-    - id: fowler2011b
+        The older bound, from the base of the formation: the Lujiatun beds are
+        "the lowest part of the Yixian Formation (Hauterivian, Early
+        Cretaceous)", their age put at "Hauterivian (132.0-127.0 Ma)".
+    - id: wu2012a
       notes: >
-        The younger bound, from the formation's uppermost beds: "the Lujiatun
-        Beds of the Yixian Formation, Jehol Group; Lower Cretaceous
-        (Barremian-Aptian), ca. 125 Ma". The envelope spans both readings.
+        The younger bound, from the middle of the formation: the "Dakangpu
+        Member (equivalent to the Dawangzhangzi Beds) of the middle part of
+        Yixian Formation, Late Barremian-Early Aptian". The envelope spans both
+        readings.
 
 Yezo:
   rank: group
@@ -990,11 +1120,11 @@ Yezo:
 
 Yuliangzi:
   rank: formation
-  variants: ["Yuliangze Fm.", "Yuliangze Formation"]
+  variants: [Yuliangze]
 
 Ziliujing:
   rank: formation
-  variants: ["Zilujing Fm."]
+  variants: [Zilujing]
 
 Xinminpu:
   rank: group

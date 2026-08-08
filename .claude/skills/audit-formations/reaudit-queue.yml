@@ -1,0 +1,11 @@
+# Durable re-audit backlog for the formations.yaml citation audit (#2069).
+# `pending` entries are live: remove one by hand once its source is
+# repaired AND its units re-audit clean. `dismissed` entries are
+# adjudicated and are never re-added by a later run.
+pending:
+  jones2026c:
+    first_seen: '2026-08-07'
+    last_seen: '2026-08-07'
+    reason: reference-work
+    units:
+    - Wales
