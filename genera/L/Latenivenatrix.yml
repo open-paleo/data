@@ -1,0 +1,102 @@
+genus: Latenivenatrix
+parent: Troodontinae
+etymology: From Latin 'latens' ('hiding') and 'venatrix' ('huntress'); the name
+  alludes both to a predator hiding in cover and to the taxon having lain
+  unrecognized in museum collections for about a century.
+description: Latenivenatrix, meaning "hiding huntress", is a genus of large
+  troodontid known from a single species, L. mcmasterae. Along with the
+  contemporary Stenonychosaurus, it is known from non-tooth fossils that were
+  formerly assigned to the now potentially dubious genus Troodon. Although
+  described as separate, it has been considered a junior synonym of
+  Stenonychosaurus.
+dispute:
+  summary: >
+    The validity of Latenivenatrix is contested. Van der Reest and Currie (2017)
+    erected it for large Dinosaur Park Formation troodontid material previously
+    assigned to Troodon formosus, diagnosing it on three characters of the pubis
+    and treating Stenonychosaurus inequalis as a separate, stratigraphically
+    lower taxon. Cullen and others (2021) found extensive overlap between the two
+    in frontal morphospace and in stratigraphic range, judged the putatively
+    autapomorphic frontal and metatarsal characters variable, and concluded that
+    Latenivenatrix mcmasterae is a subjective junior synonym of Stenonychosaurus
+    inequalis; they could not assess the pubic characters, reporting a lack of
+    overlapping material. Varricchio and others (2025) adopt that taxonomy for
+    working purposes while stating that the status of the taxon remains in
+    question, and note that their new material lends some support to its
+    validity. Rivera-Sylva and others (2026) recover Stenonychosaurus and
+    Latenivenatrix as a distinct sister pair and report that variation among
+    Dinosaur Park frontals is consistent with more than one species, while
+    cautioning that the holotypes do not overlap. The species is marked disputed
+    and the genus retained at Troodontinae.
+  history:
+    - date: "2026-08-07"
+      note: >
+        Intaken at Troodontinae with the species marked disputed. The genus was
+        absent from the dataset entirely after an unsupported synonymy was
+        removed from Polyodontosaurus; see the orphaned-taxa audit. The three
+        pubic autapomorphies are retained because the paper proposing the
+        synonymy reports it could not evaluate them.
+diet: carnivore
+locomotion: bipedal
+diagnostic_features:
+  - Pubis retroverted approximately 17 degrees relative to the pubic peduncle of
+    the ilium
+  - Pubic shaft curves anteriorly as it extends distally
+  - Large, moderately pronounced muscle scar on the lateral surface of the pubic
+    shaft, slightly proximal to the pubic boot
+identifiers:
+  - source: pbdb
+    id: "379273"
+  - source: wikidata
+    id: Q35626945
+species:
+  - name: Latenivenatrix mcmasterae
+    etymology: Honors Lynne McMaster van der Reest, the late mother of the first
+      author.
+    status: disputed
+    type_species: true
+    period:
+      name:
+        - Late Cretaceous
+      stage:
+        - Campanian
+    location:
+      country: CA
+      region: CA-AB
+      formation: Dinosaur Park
+      coordinates:
+        - 50.809383
+        - -111.327057
+    size:
+      length_m:
+        min: 3.0
+        max: 3.5
+    type_specimen:
+      specimen_id:
+        - CMN 12340
+      specimen_type: holotype
+      institution: CMN
+      material: "Partial skeleton: paired frontals and parietals, postorbital,
+        basioccipital, basisphenoid, dorsal and caudal vertebrae, chevrons,
+        ribs, gastralia, ulnae, radius, carpals, manus, femur shaft,
+        astragalocalcanea and partial pedes."
+      completeness: partial
+    erected_in: vanderreest2017a
+references:
+  - id: vanderreest2017a
+    notes: Erects the genus for large Dinosaur Park troodontid material and
+      diagnoses it on three characters of the pubis.
+  - id: cullen2021a
+    notes: Finds extensive frontal and stratigraphic overlap with
+      Stenonychosaurus and treats the species as a subjective junior synonym of
+      Stenonychosaurus inequalis.
+  - id: varricchio2025a
+    notes: Adopts that synonymy for working purposes while stating the taxon's
+      status remains in question, and reports material lending some support to
+      its validity.
+  - id: rivera-sylva2026a
+    notes: Recovers Stenonychosaurus and Latenivenatrix as a sister pair and
+      finds Dinosaur Park frontal variation consistent with more than one
+      species.
+  - id: jasinski2026a
+    notes: Notes the species may be conspecific with Stenonychosaurus inequalis.
