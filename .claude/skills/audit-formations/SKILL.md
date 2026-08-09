@@ -67,11 +67,18 @@ anything structural about, so a record built here answers a future run's questio
 
 - `assemble.py` — Phase A. Registry → loci (entries carrying `references:`) →
   pointers → papers, classified and hashed. `--unit NAME` (repeatable) restricts
-  to one entry for a pilot. Writes `scratch/audit-formations/manifest.json`.
+  to one entry for a pilot. Writes `scratch/audit-formations/manifest.json` AND
+  one Tier-1 input file per entry under `scratch/audit-formations/loci/`,
+  clearing that directory first. **Never hand-build those files.** They went
+  stale behind a round of note edits once and an agent audited wording that had
+  already been replaced; it caught the mismatch and read the live registry, but
+  only by luck. Re-run `assemble.py` then `tier0.py` after ANY registry edit.
 - `source_quality.py` — the extraction preflight. Not a checker of the registry:
   it decides whether Tier-0 *can* answer its own questions on a given paper, and
   names the papers whose extraction has to be repaired in the CORPUS.
-- `tier0.py` — the four deterministic checks. Writes `tier0.json`.
+- `tier0.py` — the four deterministic checks. Writes `tier0.json`, and folds
+  each unit's flags into its locus file so the Tier-1 agent gets the slice for
+  the entry in front of it rather than a whole file to skim.
 - `report.py --date YYYY-MM-DD` — assembles the findings report AND updates the
   durable re-audit queue.
 - `condense-instructions.md`, `tier1-instructions.md` — agent instruction files;

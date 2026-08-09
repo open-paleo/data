@@ -53,6 +53,28 @@ def audit_dir():
     return os.path.join(data_dir(), "scratch", "audit-formations")
 
 
+def loci_dir():
+    """Where the per-entry Tier-1 input files are written.
+
+    One file per registry entry, holding its structural fields, its pointers
+    with their notes, and the Tier-0 slice for that unit. Written by
+    `assemble.py` and topped up by `tier0.py` so it cannot drift from the
+    registry: a hand-built locus set went stale behind a round of note edits
+    once, and the agent reading it was handed the wording those edits had
+    already replaced.
+    """
+    return os.path.join(audit_dir(), "loci")
+
+
+def locus_slug(unit):
+    """Filename stem for a registry entry.
+
+    @param {str} unit - the registry key
+    @returns {str} the stem, with path-hostile characters replaced
+    """
+    return unit.replace("/", "-").replace(" ", "_")
+
+
 def reaudit_queue_path():
     """Durable, committed backlog of pointers to re-audit when a degraded or
     missing source is repaired. Owned by this skill, which is the only thing

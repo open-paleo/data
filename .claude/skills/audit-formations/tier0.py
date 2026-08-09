@@ -35,7 +35,7 @@ import unicodedata
 
 import source_quality
 
-from _paths import audit_dir, corpus_dir, resolve_markdown
+from _paths import audit_dir, corpus_dir, loci_dir, locus_slug, resolve_markdown
 
 CORPUS = corpus_dir()
 
@@ -321,6 +321,49 @@ def survey_sources(papers, cache, rescued_quotes):
     return degraded
 
 
+def annotate_loci(findings):
+    """Fold each unit's Tier-0 flags into its locus file.
+
+    The Tier-1 agent gets the whole `tier0.json` path anyway, but handing it the
+    slice for the entry in front of it is what makes the flags get read rather
+    than skimmed. Written here rather than in `assemble.py` only because Tier-0
+    has to have run first.
+
+    @param {dict} findings - the Tier-0 accumulator
+    @returns {int} the number of locus files annotated
+    """
+    buckets = (
+        "title",
+        "quote_absent",
+        "quote_bibliography_only",
+        "unit_absent",
+        "no_markdown",
+        "reference_work",
+        "quote_matched_through_line_numbers",
+        "checks_degraded",
+    )
+    by_unit = {}
+    for bucket in buckets:
+        for flag in findings.get(bucket) or []:
+            by_unit.setdefault(flag["unit"], {}).setdefault(bucket, []).append(flag)
+
+    annotated = 0
+    out_dir = loci_dir()
+    if not os.path.isdir(out_dir):
+        return 0
+    for name in sorted(os.listdir(out_dir)):
+        if not name.endswith(".json"):
+            continue
+        path = os.path.join(out_dir, name)
+        with open(path) as handle:
+            locus = json.load(handle)
+        locus["tier0"] = by_unit.get(locus["unit"], {})
+        with open(path, "w") as handle:
+            json.dump(locus, handle, indent=2, ensure_ascii=False)
+        annotated += 1
+    return annotated
+
+
 def main():
     """Run Tier-0 over the manifest and write tier0.json."""
     parser = argparse.ArgumentParser(description="Tier-0 checks for the formations audit")
@@ -387,6 +430,7 @@ def main():
             f"{degraded} pointer(s) checked against an inferred body boundary"
         )
     print(f"\ntier0 -> {out}")
+    print(f"loci annotated with their Tier-0 slice: {annotate_loci(findings)}")
 
 
 if __name__ == "__main__":

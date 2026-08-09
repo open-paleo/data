@@ -30,6 +30,8 @@ from _paths import (
     audit_dir,
     corpus_dir,
     data_dir,
+    loci_dir,
+    locus_slug,
     resolve_markdown,
     strat_condensed_dir,
 )
@@ -129,6 +131,31 @@ def collect_loci(formations, wanted_units):
                 if isinstance(pointer, dict) and pointer.get("id")
             ],
         }
+
+
+def write_loci(loci):
+    """Write one Tier-1 input file per locus, replacing whatever was there.
+
+    The directory is cleared first, deliberately. A locus file left behind from
+    an earlier, wider run is worse than a missing one: it looks current, and an
+    agent handed it audits registry text that no longer exists. `tier0.py` adds
+    its per-unit slice to these afterwards, so running assemble then tier0
+    leaves the set consistent with the registry as it stands right now.
+
+    @param {list[dict]} loci - the manifest loci
+    @returns {str} the directory written to
+    """
+    out_dir = loci_dir()
+    if os.path.isdir(out_dir):
+        for name in os.listdir(out_dir):
+            if name.endswith(".json"):
+                os.remove(os.path.join(out_dir, name))
+    os.makedirs(out_dir, exist_ok=True)
+    for locus in loci:
+        path = os.path.join(out_dir, f"{locus_slug(locus['unit'])}.json")
+        with open(path, "w") as handle:
+            json.dump(locus, handle, indent=2, ensure_ascii=False)
+    return out_dir
 
 
 def main():
@@ -258,6 +285,7 @@ def main():
     with open(out, "w") as handle:
         json.dump(manifest, handle, indent=2, ensure_ascii=False)
     print(f"\nmanifest -> {out}")
+    print(f"loci ({len(loci)}) -> {write_loci(loci)}")
 
 
 if __name__ == "__main__":

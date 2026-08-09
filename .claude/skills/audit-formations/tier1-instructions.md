@@ -96,6 +96,17 @@ uncertain, say so in the finding rather than asserting absence.
   "Kirkland (1998) gives the member as …" inside a pointer to a different paper
   is honest sourcing, at most a modeling smell. It IS a finding when the note
   reads as though the cited paper said it.
+
+  **Before filing this, read the `verbatim` and ask whose sentence it is.** A
+  paper that states something in its own voice and names its support at the end
+  — "In Goiás it oversteps the basalts and overlies the Botucatu (Fúlfaro et
+  al. 1994)" — is ASSERTING with a citation, which condense-instructions rule 3
+  says is `asserted`. Extractors mislabel that as `attributed` often enough to
+  matter: it produced a `misattributed` finding against a correct Echaporã note,
+  and would have produced it again on every future run. If the verbatim reads as
+  the paper's own sentence, the defect is in the condensation's `attribution`
+  field, not in the registry — say so in `evidence` and file nothing against the
+  entry.
 - `direction-inverted` (high) — the note's ordering runs opposite to the paper's,
   or its containment is upside down (a member made the parent, a basal member
   described as the highest).
