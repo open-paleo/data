@@ -50,6 +50,15 @@
 #   references   [{id, notes}] -- `id` resolves to a references/ store entry,
 #                the same pointer shape genus and clade files use
 #
+# QUOTATION MARKS MEAN THE CITED PAPER'S OWN WORDS, transcribed from the paper
+# itself and left as it prints them -- OCR damage, archaic spelling and all.
+# Never quote a summary, an extraction record, a reference work's rendering or
+# any other derived text: those are paraphrase, and paraphrase inside quotation
+# marks is a fabricated quotation however faithful its sense. The failure is
+# invisible on reading, because a good paraphrase is exactly what a real quote
+# looks like. Elide with `...` rather than silently dropping words, including
+# dropped inline citations. Where the wording is ours, drop the marks.
+#
 # WHERE A COARSE VALUE IS CORRECT, say so in the notes rather than in a field.
 # A group that is the finest unit anyone has published belongs in
 # `location.group`, which needs no defending; an informally named unit carries
@@ -66,6 +75,30 @@
 # spelling of the same unit -- a substantive difference that must stay in the
 # active findings. Watch for the same trap in other Chinese formation names.
 
+Adamantina:
+  rank: formation
+  parent: Bauru
+  references:
+    - id: fernandes2000a
+      notes: >
+        Superseded by this revision, whose "most important change presented
+        concerns the Bauru Group, especially the Adamantina Formation": its
+        ground is redistributed, the Vale do Rio do Peixe Formation taking the
+        bulk of it -- "It corresponds to much of the former Adamantina Formation
+        defined by Soares et al. (1980)" -- and the Araçatuba, São José do Rio
+        Preto and Presidente Prudente taking the rest, all three having been
+        members or arenaceous variants of it under Barcelos (1984).
+    - id: soares2020a
+      notes: >
+        Kept in use two decades after that supersession, as one of the four
+        formations of the "vertically superposed Araçatuba, Uberaba, Adamantina,
+        and Marília formations".
+    - id: cavalcanti2026a
+      notes: >
+        Still in use for the Triângulo Mineiro region, where "the Bauru Group is
+        divided into the Adamantina, Uberaba, Marília, and Serra da Galga
+        formations". The paper names it once and says nothing further about it.
+
 Allen:
   rank: formation
   stages: [Campanian, Maastrichtian]
@@ -81,6 +114,22 @@ Allen:
       notes: >
         Places the formation in the Malargue Group. The same site is called the
         Neuquen Group by Rozadilla (2021) and Aranciaga Rolando (2021).
+
+"Ashdown Beds":
+  rank: formation
+  parent: Hastings
+  stages: [Berriasian]
+  references:
+    - id: galton2009a
+      notes: >
+        The basal unit of the Hastings Beds, closing the succession given "in
+        descending order the Upper Tunbridge Wells Sands, Grinstead Clay, Lower
+        Tunbridge Wells Sands, Wadhurst Clay, Ashdown Beds".
+    - id: norman2013a
+      notes: >
+        Formation rank and the age: the Weald Sub-basin succession runs "from
+        the upper Berriasian (Ashdown Beds Formation) to the top of the
+        Barremian".
 
 Araçatuba:
   rank: formation
@@ -128,28 +177,48 @@ Baruungoyot:
 Bauru:
   rank: group
   contains: [Uberaba, "Vale do Rio do Peixe", Araçatuba, "São José do Rio Preto",
-             "Presidente Prudente", Marília, "Serra da Galga"]
+             "Presidente Prudente", Adamantina, Marília, "Serra da Galga"]
   references:
     - id: fernandes2000a
       notes: >
         The Upper Cretaceous sequence of the Bauru Basin "is now divided in two
         groups, partially contemporaneous: Caiuá Group ... and Bauru Group", the
-        latter "composed of the Uberaba, Vale do Rio do Peixe, Araçatuba, São
-        José do Rio Preto, Presidente Prudente and Marília formations", with no
-        order stated. This revision supersedes the Adamantina Formation of
-        Soares et al. (1980) -- "the most important change presented concerns
-        the Bauru Group, especially the Adamantina Formation" -- while the
-        Marília is retained in the sense of those authors, subdivided into the
-        Echaporã, Serra da Galga and Ponte Alta members.
+        latter composed of the Uberaba, Vale do Rio do Peixe, Araçatuba, São
+        José do Rio Preto, Presidente Prudente and Marília formations, each
+        credited to its own author, with no order stated. This revision
+        supersedes the Adamantina Formation of Soares et al. (1980) -- "the most
+        important change presented concerns the Bauru Group, especially the
+        Adamantina Formation" -- while the Marília is retained in the sense of
+        those authors, subdivided into the Echaporã, Serra da Galga and Ponte
+        Alta members.
     - id: silvajunior2022a
       notes: >
-        Why the group carries a seventh formation: Soares and others (2021)
-        raised the Serra da Galga from a member of the Marília to a formation of
-        the Bauru Group, the usage this paper works in throughout.
+        Soares and others (2021) raised the Serra da Galga from a member of the
+        Marília to a formation of the Bauru Group, the usage this paper works in
+        throughout.
+    - id: soares2020a
+      notes: >
+        A competing subdivision that keeps the name Fernandes and Coimbra (2000)
+        superseded: "The Bauru Group is formed by the vertically superposed
+        Araçatuba, Uberaba, Adamantina, and Marília formations" -- stacked
+        rather than laterally equivalent. The list itself states no direction,
+        but the paper elsewhere calls the Marília "the uppermost unit of the
+        Bauru Group". Its Adamantina spans the same interval as the Vale do Rio
+        do Peixe, São José do Rio Preto and Presidente Prudente of that
+        revision, so the units listed here are the union of the two schemes
+        rather than eight coexisting formations.
+    - id: cavalcanti2026a
+      notes: >
+        Keeps the Adamantina as well, for the Triângulo Mineiro region: "the
+        Bauru Group is divided into the Adamantina, Uberaba, Marília, and Serra
+        da Galga formations".
     - id: delcourt2017a
       notes: >
-        Paraná Basin. The Mato Grosso outcrops formerly assigned here belong to
-        the Parecis Group instead.
+        The Mato Grosso outcrops formerly assigned here belong to the Parecis
+        Group instead. Pycnonemosaurus was collected at Fazenda Roncador, where
+        Kellner and Campos (2002) had it that "this locality is in the Bauru
+        Group", but "recent work has shown that this locality is actually part
+        of the Parecis Group".
 
 Bayangobi:
   rank: formation
@@ -181,6 +250,15 @@ Baynshire:
         Gives "Cenomanian-Turonian" for individual holotypes from this
         formation, which is a narrower reading for those taxa rather than a
         competing range for the unit.
+    - id: averianov2020a
+      notes: Prints the unit as the "Bayan Shireh Formation".
+    - id: arbour2015a
+      notes: >
+        Prints the name as the "Bayanshiree Formation", and carries the younger
+        end of the envelope: it reports Jerzykiewicz (2000) as dating the unit
+        late Cenomanian-Coniacian to ?early Santonian, and a
+        magnetostratigraphical and palynological analysis as placing the
+        sediments no later than the latest Santonian.
   variants: ["Bayan Shireh", Bayanshiree]
 
 "Belly River":
@@ -273,8 +351,10 @@ Bevons:
         the Canadon Asfalto Formation dated at 179.17 +/- 0.12 Ma".
     - id: cúneo2013a
       notes: >
-        U-Pb geochronology for the basin, giving "a mid-late Toarcian to
-        Aalenian (-Bajocian?) age" for the formation.
+        U-Pb geochronology for the basin. Deposition begins "at ca. 179 Ma
+        (early-mid Toarcian)" and "most probably continued into the early Middle
+        Jurassic (Aalenian or Bajocian)", though "the exact age of the upper
+        Cañadón Asfalto Formation is poorly constrained".
 
 Candeleros:
   rank: formation
@@ -334,10 +414,13 @@ Carbon:
         Strip Sandstone, Ruby Ranch Member, and the Mussentuchit Member."
     - id: carpenter1999a
       notes: >
-        The same five-member scheme, and why the member rather than the
-        formation is the operative unit: the ankylosaurs are stratigraphically
-        restricted, Gastonia to the Yellow Cat and Animantarx to the
-        Mussentuchit.
+        Gives four members rather than five -- "The Cedar Mountain Formation has
+        recently been divided into several members (Kirkland and others 1997):
+        Yellow Cat Member, Poison Strip Sandstone, Ruby Ranch Member, and
+        Mussentuchit Member" -- with the Buckhorn Conglomerate a lateral
+        equivalent rather than a fifth. Why the member rather than the formation
+        is the operative unit: the ankylosaurs are stratigraphically restricted,
+        Gastonia to the Yellow Cat and Animantarx to the Mussentuchit.
 
 "Cerro Carnerero":
   rank: formation
@@ -419,9 +502,9 @@ Djadokhta:
         reach the Nemegt Basin exposures at Ukhaa Tolgod.
     - id: arbour2015a
       notes: >
-        Applies the subdivision to a holotype, and equates the locality names:
-        "Bayan Zag (= Bayn Dzak, Shabarakh Usu, the Flaming Cliffs); Bayn Dzak
-        Member, Djadokhta Formation".
+        Applies the subdivision to a holotype, equating "Bayan Zag" with Bayn
+        Dzak, Shabarakh Usu and the Flaming Cliffs, and placing it in the "Bayn
+        Dzak Member, Djadokhta Formation".
 
 Dockum:
   rank: group
@@ -477,6 +560,12 @@ Echaporã:
         Serra Geral basalts along the eastern border in São Paulo, and in Goiás
         oversteps the basalts onto older units. Soares and others (1980) had
         treated its type areas as the Marília Formation itself.
+    - id: soares2020a
+      notes: >
+        Restricts the Marília Formation to "the southeastern and northwestern
+        parts of the Bauru Basin", the deposits this member covers, so that
+        under that revision the formation and this member describe the same
+        rocks. The member name is not itself withdrawn.
 
 "El Carrizo":
   rank: formation
@@ -493,6 +582,19 @@ Echaporã:
   contains: ["El Mers I", "El Mers II", "El Mers III"]
   references:
     - id: maidment2020a
+      notes: >
+        Middle Atlas, Morocco. Group rank, "divided into three formations known
+        as El Mers I-III" after Oukassou and others (2015), and "dated as
+        Bathonian-Callovian based on echinoderm, brachiopod and ammonite
+        biostratigraphy". Overlain unconformably by a Barremian sequence, the
+        area having been emergent until the Cretaceous.
+    - id: maidment2021a
+      notes: >
+        Places the El Mers III above the El Mers II, the only ordering any
+        source states for the three: the Boulahfa horizon, first reported from
+        the El Mers II, is moved up because "subsequent field observations at
+        the site suggest that it may lie slightly higher in the stratigraphy".
+        The numbering itself is not given as a stratigraphic sequence anywhere.
 
 "El Mers I":
   rank: formation
@@ -501,12 +603,12 @@ Echaporã:
   references:
     - id: maidment2020a
       notes: >
-        Middle Atlas, Morocco. The lowest of the group's three formations, which
-        "comprises varicoloured mudstones and interbedded, laterally restricted
-        sandstones", terrestrial, and "is dated as middle Bathonian on the basis
-        of ammonite biostratigraphy of the surrounding marine intervals".
-        Dinosaur bones have been reported from it since Termier and others
-        (1940).
+        Middle Atlas, Morocco. One of the group's three formations and the
+        oldest dated of them, which "comprises varicoloured mudstones and
+        interbedded, laterally restricted sandstones", terrestrial, and "is
+        dated as middle Bathonian on the basis of ammonite biostratigraphy of
+        the surrounding marine intervals". Dinosaur bones have been reported
+        from it since Termier and others (1940).
 
 "El Mers II":
   rank: formation
@@ -515,9 +617,10 @@ Echaporã:
   references:
     - id: maidment2020a
       notes: >
-        The middle formation, correlated from the nearby Skoura syncline; the
-        Adratiklit locality is placed in it only tentatively, as outcrops that
-        "may correspond to the El Mers II Formation".
+        The second of the group's three formations, correlated from the nearby
+        Skoura syncline; the Adratiklit locality is placed in it only
+        tentatively, as outcrops that "may correspond to the El Mers II
+        Formation".
     - id: maidment2021a
       notes: >
         Withdraws that placement: the same authors "reported the horizon as
@@ -639,7 +742,14 @@ Gosau:
 "Grinstead Clay":
   rank: formation
   rank_contested: [member, formation]
+  parent: Hastings
   references:
+    - id: galton2009a
+      notes: >
+        Places it within the Hastings Beds, between the Upper and Lower
+        Tunbridge Wells Sands: "in descending order the Upper Tunbridge Wells
+        Sands, Grinstead Clay, Lower Tunbridge Wells Sands, Wadhurst Clay,
+        Ashdown Beds".
     - id: norman2013a
       notes: Treats it as a formation; so do Naish (2008) and Raven (2020).
     - id: norman2010a
@@ -658,7 +768,8 @@ Guifeng:
 Hastings:
   rank: group
   rank_contested: [group, subgroup]
-  contains: ["Wadhurst Clay", "Tunbridge Wells Sand"]
+  contains: ["Ashdown Beds", "Wadhurst Clay", "Tunbridge Wells Sand",
+             "Grinstead Clay"]
   variants: ["Hastings Beds"]
   references:
     - id: norman2010a
@@ -671,6 +782,16 @@ Hastings:
       notes: >
         Uses group rank for the same unit, placing the Wadhurst Clay and Lower
         Tunbridge Wells Sand formations within the "Hastings Group".
+    - id: galton2009a
+      notes: >
+        Uses the bare legacy name for the unit, giving the "Lower Weald
+        Clay/Hastings Beds boundary" in Sussex, and the fullest constituent list
+        of any source here: "Hastings Beds: in descending order the Upper
+        Tunbridge Wells Sands, Grinstead Clay, Lower Tunbridge Wells Sands,
+        Wadhurst Clay, Ashdown Beds". The Tunbridge Wells Sand appears twice in
+        that succession, as an upper and a lower division with the Grinstead
+        Clay between them, so the units listed here are not a single ascending
+        sequence.
 
 "Hekou (CN-GS)":
   rank: group
@@ -752,7 +873,7 @@ Ipubi:
 
 "Iren Dabasu":
   rank: formation
-  variants: [Erlian, "Iren Nor", "Iren Debasu"]
+  variants: [Erlian, "Iren Debasu"]
   references:
     - id: xu2006c
       notes: >
@@ -766,6 +887,8 @@ Ipubi:
         Formation". Both names must be searched: the Erlian literature, which
         is where the basin's subdivision is discussed, does not surface under
         Iren Dabasu.
+    - id: brett-surman1979a
+      notes: Prints the unit as the "Iren Debasu Formation" in its horizon line.
 
 Jagüel:
   rank: formation
@@ -805,7 +928,9 @@ Jingangkou:
         (which they called the Hongtuya Formation)".
     - id: yao2026a
       notes: >
-        "Jingangkou Formation, late Campanian to early Maastrichtian."
+        Tabulates the unit as late Campanian to early Maastrichtian in its
+        summary of China's formally named hadrosaurids, giving it as the horizon
+        for Tsintaosaurus and Laiyangosaurus at Laiyang.
 
 Jiufotang:
   rank: formation
@@ -1013,7 +1138,9 @@ Loncoche:
   references:
     - id: martinelli2004a
       notes: >
-        Neuquén Basin, the basal unit of the group's northwestern sequence.
+        Neuquén Basin, the lowest unit of the group's northwestern sequence --
+        the paper lists that sequence without stating a direction, but places
+        this formation between the Neuquén Group below and the Jagüel above.
         "The Loncoche Formation (Late Campanian-Early Maastrichtian) extends
         over southern Mendoza Province and the west of La Pampa Province", and
         with the Allen it "represents the transition between the fully
@@ -1032,7 +1159,8 @@ Lourinhã:
     - id: tschopp2015a
       notes: >
         Gives the members used for horizons: "Amoreira-Porto Novo Member,
-        Lourinha Formation", with the Sobral Member above it.
+        Lourinha Formation, Late Kimmeridgian" and the Sobral Member, without
+        stating their order.
     - id: carrano2012a
       notes: >
         Uses the alternative member vocabulary for the same succession,
@@ -1096,11 +1224,11 @@ Malargüe:
       notes: >
         Neuquén Basin, "Late Campanian-Early Paleocene sensu Legarreta &
         Gulisano, 1989". Its constituent formations "vary according to their
-        position in the basin": in the southeast, "from the base to the top
-        respectively ... the Allen, Jagüel, Roca, and El Carrizo formations"; in
-        the northwest, "Loncoche, Jagüel, Roca, and Pircala formations", the
-        latter list with no direction stated. The contained units are the union
-        of the two sequences, not a single ascending order.
+        position in the Neuquén basin": in the southeast, "from the base to the
+        top respectively ... the Allen, Jagüel, Roca, and El Carrizo
+        formations"; in the northwest, "Loncoche, Jagüel, Roca, and Pircala
+        formations", the latter list with no direction stated. The contained
+        units are the union of the two sequences, not a single ascending order.
 
 Maodian:
   rank: formation
@@ -1118,7 +1246,7 @@ Maodian:
 Marília:
   rank: formation
   parent: Bauru
-  contains: ["Ponte Alta", Echaporã]
+  contains: [Echaporã]
   stages: [Maastrichtian]
   references:
     - id: fernandes2000a
@@ -1126,12 +1254,15 @@ Marília:
         Bauru Basin. Retained from Soares and others (1980) unchanged by this
         revision, and "divided into three members: Serra da Galga, Ponte Alta,
         and Echaporã" after Barcelos and Suguio (1987).
-    - id: silvajunior2022a
+    - id: soares2020a
       notes: >
-        Why only two of those three members are recorded here: Soares and
-        others (2021) raised the Serra da Galga to formation rank within the
-        Bauru Group, the usage this paper follows throughout, which takes it out
-        of the Marília.
+        Restricts the formation: "the use of the term Marília Formation is here
+        restricted to the southeastern and northwestern parts of the Bauru
+        Basin", the deposits traditionally treated as the Echaporã Member. The
+        same revision reclassifies and elevates the Serra da Galga succession,
+        "previously referred to in the literature as a member", to formation
+        rank, and deprecates the Ponte Alta Member, referring its calcretes to
+        "undifferentiated bodies of the Serra da Galga Formation".
     - id: martinelli2004a
       notes: >
         Gives its age as Late Maastrichtian.
@@ -1168,8 +1299,8 @@ Morrin:
     - id: arbour2013a
       notes: >
         Ties the formal member to the informal scheme it replaces, constraining
-        material "to Unit 2 (Morrin Member sensu [Eberth and Braman]) of the
-        Horseshoe Canyon Formation".
+        material to "Unit 2 (Morrin Member ...) of the Horseshoe Canyon
+        Formation", with the members taken "sensu Eberth and Braman".
 
 Mussentuchit:
   rank: member
@@ -1178,8 +1309,8 @@ Mussentuchit:
   references:
     - id: avrahami2024a
       notes: >
-        The younger bound: a radiometrically dated member-wide span of "99.674
-        +0.439/-0.197 to 98.905 +0.158/-0.183 Ma", a window inside the
+        The younger bound: a radiometrically dated member-wide span of 99.674
+        +0.439/-0.197 to 98.905 +0.158/-0.183 Ma, a window inside the
         Cenomanian.
     - id: carpenter1999a
       notes: >
@@ -1304,8 +1435,12 @@ Oldman:
     - id: arbour2017a
       notes: >
         Treats the unit as broadly contemporaneous with the Judith River
-        Formation of Montana, its uppermost part correlating with the lowest
-        Dinosaur Park Formation.
+        Formation of Montana -- the Oldman and Dinosaur Park "were deposited
+        penecontemporaneously and under similar geological controls and
+        palaeoenvironmental conditions as the Judith River Formation" -- with
+        its "upper muddy unit (unit 3)" lithostratigraphically and
+        chronostratigraphically correlative with that formation's Coal Ridge
+        Member.
     - id: eberth2005a
       notes: >
         One of the Belly River Group's three formations, 40 m thick at Dinosaur
@@ -1343,13 +1478,15 @@ Pircala:
   references:
     - id: martinelli2004a
       notes: >
-        Neuquén Basin. The uppermost unit of the group's northwestern sequence,
-        "Loncoche, Jagüel, Roca, and Pircala formations". Nothing further is
-        said about it.
+        Neuquén Basin. Listed last in the group's northwestern sequence,
+        "Loncoche, Jagüel, Roca, and Pircala formations", which the paper gives
+        without stating a direction. Nothing further is said about it.
 
 "Ponte Alta":
-  rank: member
-  parent: Marília
+  rank: none
+  kind: deprecated member
+  rank_contested: [member, none]
+  parent: "Serra da Galga"
   references:
     - id: fernandes2000a
       notes: >
@@ -1359,6 +1496,24 @@ Pircala:
         the Serra da Galga Member, created by post-depositional cementation",
         with an interdigitated, complex and irregular contact against it.
         Generally taken to overlie the Uberaba Formation.
+    - id: soares2020a
+      notes: >
+        Deprecates the name. This revision proposes "to deprecate the Ponte Alta
+        Member classification and to refer the groundwater calcrete beds as
+        undifferentiated bodies of the Serra da Galga Formation", the beds
+        failing the code's mappability test: "The Ponte Alta Member is
+        discontinued, and its strata are considered instead, as part of the
+        Serra da Galga Formation, in view of their poor traceability and
+        suitability for regional geological mapping."
+    - id: cavalcanti2026a
+      notes: >
+        Follows that reassignment without adopting the member name: at the Ponte
+        Alta Quarry the egg-bearing paleosol lies "just above the limestone
+        belonging to the Serra da Galga Formation", and Ponte Alta is absent
+        from this paper's list of the Bauru Group's formations. It is otherwise
+        a quarry and geosite name here; the one use of "Ponte Alta Member"
+        relays a fossil association credited to Dias-Brito and others (2001)
+        rather than this paper's own nomenclature.
 
 "Presidente Prudente":
   rank: formation
@@ -1391,8 +1546,8 @@ Roca:
     - id: martinelli2004a
       notes: >
         Neuquén Basin, present in both the southeastern and northwestern
-        sequences of the group, above the Jagüel in each. Nothing further is
-        said about it.
+        sequences of the group, above the Jagüel in the southeastern, which is
+        the sequence given base to top. Nothing further is said about it.
 
 Romualdo:
   rank: formation
@@ -1432,10 +1587,9 @@ Romualdo:
   references:
     - id: carpenter1999a
       notes: >
-        One of the four members Kirkland and others (1997) established above the
-        Buckhorn Conglomerate. No stage is given: "the few taxa known suggest
-        that the Ruby Ranch correlates with the Cloverly Formation of Montana
-        and Wyoming".
+        One of the four members Kirkland and others (1997) established. No stage
+        is given: "the few taxa known suggest that the Ruby Ranch correlates
+        with the Cloverly Formation of Montana and Wyoming".
     - id: tidwell2001a
       notes: >
         Places it above the Yellow Cat and Poison Strip interval.
@@ -1535,8 +1689,9 @@ Sobral:
   references:
     - id: tschopp2015a
       notes: >
-        Lusitanian Basin. Member rank, above the Amoreira-Porto Novo:
-        "Kimmeridgian/Tithonian; Sobral Member, Lourinha Form."
+        Lusitanian Basin. Member rank within the Lourinhã, dated
+        "Kimmeridgian/Tithonian". The paper states no order relative to the
+        Amoreira-Porto Novo.
     - id: carrano2012a
       notes: >
         Uses formation rank for the same unit, "Sobral Formation; late
@@ -1892,8 +2047,8 @@ Tremp:
   references:
     - id: prieto-márquez2021a
       notes: >
-        Ranks the unit a formation, "informally subdivided into a lower part and
-        a middle part" with no formal member names published.
+        Ranks the unit a formation, referring to "the lower and middle part of
+        the Tremp Formation" with no formal member names published.
     - id: csiki-sava2015a
       notes: >
         Also treats it as a formation, recognizing informal intervals rather
