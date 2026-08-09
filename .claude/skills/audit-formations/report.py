@@ -83,6 +83,14 @@ def update_reaudit_queue(results, run_date):
     ref-id under the top-level `dismissed` map is adjudicated and is never
     re-added, however many times a run re-detects it.
 
+    A `reference-work` pointer is NOT a gap and never enters the queue. Those
+    papers are skipped at assembly by policy rather than by accident, so there
+    is nothing to repair and no state in which the entry could be removed --
+    `jones2026c` sat in `pending` doing nothing until this was fixed. Where a
+    reference work is the only support for a FIELD, that is a Tier-1
+    `field-unsupported` finding against the entry, which is a claim about the
+    registry rather than a request to fetch anything.
+
     @param {list[dict]} results - the per-entry Tier-1 results
     @param {str} run_date - the run date, stamped into the queue
     @returns {int} the number of pending entries after the merge
@@ -98,7 +106,7 @@ def update_reaudit_queue(results, run_date):
     for result in results:
         for pointer in result.get("unverifiable_pointers", []):
             ref_id = pointer["ref_id"]
-            if ref_id in dismissed:
+            if ref_id in dismissed or pointer["reason"] == "reference-work":
                 continue
             entry = pending.get(ref_id)
             if entry is None:
