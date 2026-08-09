@@ -155,6 +155,57 @@ def render_tier0(tier0, lines):
         lines.append("")
 
 
+def render_source_quality(tier0, lines):
+    """Append the source-quality section to the report.
+
+    Deliberately its own section, ahead of the findings. These are defects in
+    the CORPUS: nothing here is answered by editing `formations.yaml`, and
+    filing them among the registry findings invites exactly that. Each one also
+    says which direction it bends the audit, because the two defects fail in
+    opposite ways -- a missing reference-list heading hides real findings, an
+    interleaved line-number gutter invents them.
+
+    @param {dict} tier0 - the parsed tier0.json
+    @param {list[str]} lines - the report accumulator, mutated in place
+    @returns {None}
+    """
+    degraded = tier0.get("source_quality") or []
+    lines.append("## Source quality — route to the papers repository\n")
+    if not degraded:
+        lines.append("*No cited paper's extraction degrades a Tier-0 check.*\n")
+        return
+    lines.append(
+        f"{len(degraded)} cited paper(s) carry an extraction defect that changes "
+        "what Tier-0 can conclude. These are not registry findings and must not "
+        "be fixed in `formations.yaml`.\n"
+    )
+    lines.append("| paper | defect | bends the audit toward | affected checks |")
+    lines.append("|---|---|---|---|")
+    for record in degraded:
+        for degradation in record["degradations"]:
+            lines.append(
+                f"| `{record['ref_id']}` | {degradation['kind']} | "
+                f"{degradation['direction']}s | "
+                f"{', '.join(f'`{check}`' for check in degradation['affects'])} |"
+            )
+    lines.append("")
+    for record in degraded:
+        for degradation in record["degradations"]:
+            lines.append(f"- **`{record['ref_id']}`** — {degradation['detail']}")
+    lines.append("")
+
+    degraded_pointers = tier0.get("checks_degraded") or []
+    if degraded_pointers:
+        lines.append(
+            f"{len(degraded_pointers)} pointer(s) were checked against an "
+            "INFERRED body/bibliography boundary rather than a read one. A pass "
+            "on these is weaker than a pass elsewhere:\n"
+        )
+        for flag in degraded_pointers:
+            lines.append(f"- {flag['unit']} — `{flag['ref_id']}`")
+        lines.append("")
+
+
 def render_tier1(results, findings, lines):
     """Append the Tier-1 sections to the report, grouped by severity.
 
@@ -261,6 +312,7 @@ def main():
             + ", ".join(f"`{paper['ref_id']}` = `{paper['filed_under']}`" for paper in misfiled)
             + ".\n"
         )
+    render_source_quality(tier0, lines)
     render_tier0(tier0, lines)
     render_tier1(results, findings, lines)
 

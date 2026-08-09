@@ -68,6 +68,9 @@ anything structural about, so a record built here answers a future run's questio
 - `assemble.py` — Phase A. Registry → loci (entries carrying `references:`) →
   pointers → papers, classified and hashed. `--unit NAME` (repeatable) restricts
   to one entry for a pilot. Writes `scratch/audit-formations/manifest.json`.
+- `source_quality.py` — the extraction preflight. Not a checker of the registry:
+  it decides whether Tier-0 *can* answer its own questions on a given paper, and
+  names the papers whose extraction has to be repaired in the CORPUS.
 - `tier0.py` — the four deterministic checks. Writes `tier0.json`.
 - `report.py --date YYYY-MM-DD` — assembles the findings report AND updates the
   durable re-audit queue.
@@ -91,6 +94,31 @@ skipped, coverage gaps, and papers **filed under a reverse-suffixed twin**. That
 last line is not a gap: `eberth2012a` is a properly minted dataset key whose
 corpus file is still `eberth2012z.md`. Resolve and audit it; never rename a
 corpus markdown file to fix it.
+
+The last line, **extraction degraded**, is a different kind of thing from every
+other line in the summary: it names papers whose MARKDOWN is defective, and no
+edit to `formations.yaml` answers any of them. Route them to the papers
+repository. They are surfaced here, before a single agent runs, precisely so
+they are found proactively rather than arriving later disguised as a finding
+against an entry that is correct.
+
+Two defects are detected, and they bend the audit in OPPOSITE directions:
+
+- **`reference-list-heading-missing`** → *false negatives.* Checks C and D both
+  ask "is this only in the reference list?", so they need the body/bibliography
+  boundary. When no heading is found the boundary is inferred from citation
+  shape, and both checks get weaker — before this preflight existed the boundary
+  silently became "end of document" and both checks quietly passed everything.
+  That is how a `paper-does-not-name-unit` on Marília went unseen by Tier-0 in
+  the 2026-08-08 run while Tier-1 caught it. A pass on a pointer listed under
+  `checks_degraded` is worth less than a pass elsewhere.
+- **`interleaved-line-numbers`** → *false positives.* A line-number gutter puts
+  integers between the words of every sentence, so an honest quotation fails an
+  exact match and Tier-0 reports a quote that is plainly on the page.
+
+A paper with **no reference list at all** — a 19th-century notice, a one-page
+description — is neither of these and is not reported: nothing can be
+bibliography-only in a paper that cites nothing, so checks C and D are sound.
 
 ## Phase 1 — Condense each paper ONCE (firewall, Sonnet)
 
@@ -121,7 +149,20 @@ mind, both seen in the pilot:
 
 - **A failed exact match on a scanned or pre-1990 source proves nothing.**
   `2Æ3 km` for `2.3 km`, `(D` for `(=`, `S^ınpetru` for `Sânpetru`, `Rheatian`
-  for `Rhaetian` — all real, all clean on inspection.
+  for `Rhaetian` — all real, all clean on inspection. Markdown link markup
+  (`[\(Assine, 1990,](#page-10-6)`), `<br>` inside a table cell, and a figure
+  caption dropped into the middle of a sentence all do the same thing.
+- **Quotes that matched only through a line-number gutter are already sorted
+  out of `quote_absent`** and reported under source quality instead. Do not
+  re-report them as findings; the paper needs repairing, the entry does not.
+- **Spacing diacritics are repaired automatically** and are no longer a source
+  of flags. Extraction renders a precomposed glyph as base letter plus a
+  spacing character — `Ferna´ndez`, `Echapor~a`, `Alcobac¸a`, `Lourinha˜` — in
+  487 of 2354 corpus files. Unicode normalization does not touch these, so
+  folding used to split one word into two and report a unit as absent from a
+  paper that names it repeatedly. `fold` now strips them first. A flag that
+  survives is therefore a real mismatch, not a diacritic artifact. The
+  exception is `S^ınpetru`, where the base letter itself was substituted.
 - **The unit-absent check fires correctly on honest notes.** Several entries
   exist to record that a paper names no formal unit, and their notes say exactly
   that. Read the note before calling it a finding.
@@ -150,6 +191,16 @@ Enforce the guardrails from the instructions, above all:
   registry header and must not be relitigated.
 - **Verify BOTH directions.** A clean entry is a good result; do not manufacture
   a discrepancy to have something to report.
+
+**A Tier-1 `clean` is softer evidence than a Tier-1 finding.** In the
+2026-08-08 run one batch was dispatched twice by accident: same entries, same
+condensations, same instructions. The second pass reproduced every finding and
+found one more — that `Baynshire`'s `variants` are attested by no cited paper.
+Nothing was missing from the evidence; the first agent simply enumerated the
+entry's fields less completely. Direction 2 is where this bites, because it asks
+an open question ("which fields does no paper support?") rather than checking a
+given claim. Treat a clean sweep as *this pass found nothing*, and re-run a
+batch when a clean result is load-bearing.
 
 ## Phase 4 — Report + re-audit queue
 
@@ -203,6 +254,14 @@ edits; don't commit or push unless told.
   quotation marks (`"mid-late Toarcian"` for a paper's *early-mid* Toarcian), the
   fix may be the wording, not the source — but check the paraphrase did not also
   shift the value.
+- **Requote from the paper, never from the condensation.** A note whose quoted
+  span reproduces a condensation's `value` was written from the extraction
+  record rather than the source; `value` is the extractor's paraphrase and is
+  never quotable, only `verbatim` is. Tremp was exactly this. When rewriting a
+  note, take the words from the paper (or from `verbatim`, which is copied from
+  it) — and reach for the markdown directly whenever the wording carries the
+  claim. The registry header states the rule for every writer, not just this
+  skill's agents.
 - **Correct the structural field, not just the prose.** The Horseshoe Canyon note
   was wrong *and* the members it named were wrong. Fixing the citation alone
   would have left the error in place.

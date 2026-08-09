@@ -70,6 +70,26 @@ uncertain, say so in the finding rather than asserting absence.
 - `quote-not-in-paper` (high) — a span the note sets in quotation marks does not
   occur in the paper. Defers to Tier-0 for the string check; your contribution is
   whether the underlying claim survives without the quote.
+
+  **Check the condensation's `value` fields before you clear one of these.** If
+  the note's quoted span reproduces a `value` rather than a `verbatim`, the note
+  was written from the extraction record instead of the paper, and the quotation
+  is fabricated even where its sense is right — that is this verdict, not a
+  formatting artifact. It is the one failure mode you cannot catch by reading
+  the note, because a good paraphrase reads exactly like a real quote. Say so
+  explicitly in `evidence` when you find it: the fix is to requote from
+  `verbatim`, not to reword.
+
+  **CLAIM BOUNDARIES ARE THE EXTRACTOR'S, NOT THE PAPER'S.** Never infer from
+  two claims that the source text is in two places. One sentence routinely
+  becomes several claims — a locality-and-horizon line yields a variant claim
+  and a parent claim — and a note quoting straight across it is quoting one
+  contiguous span, not splicing. Djadokhta was reported as "two claims stitched
+  together with a semicolon" when the semicolon is the paper's own and the two
+  `verbatim` fields sit sixty characters apart in one sentence; the only real
+  defect there was a normalized `=` for the paper's OCR-rendered `D`. If your
+  finding depends on where the source text breaks, you cannot settle it from the
+  condensation — say so in `evidence` and let the human check the paper.
 - `misattributed` (high) — the condensation shows `attribution: attributed` or
   `reported-and-rejected`, but the note presents the claim as the cited paper's
   own finding. **Not a finding when the note itself names the third party** —

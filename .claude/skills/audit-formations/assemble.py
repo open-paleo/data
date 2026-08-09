@@ -24,6 +24,8 @@ import sys
 
 import yaml
 
+import source_quality
+
 from _paths import (
     audit_dir,
     corpus_dir,
@@ -182,6 +184,11 @@ def main():
                 paper["source_file"] = os.path.relpath(path, CORPUS)
                 paper["source_sha256"] = sha256(path)
                 paper["filed_under"] = filed if filed != ref_id else None
+                if paper["classification"] != "reference-work":
+                    with open(path, encoding="utf-8", errors="replace") as handle:
+                        quality = source_quality.assess(handle.read())
+                    paper["bibliography"] = quality["bibliography"]
+                    paper["degradations"] = quality["degradations"]
             paper["condensed"] = os.path.exists(
                 os.path.join(condensed, f"{ref_id}.json")
             )
@@ -236,6 +243,15 @@ def main():
             else ""
         )
     )
+
+    degraded = [paper for paper in manifest["papers"] if paper.get("degradations")]
+    print(f"  extraction degraded (fix in the CORPUS, not here): {len(degraded)}")
+    for paper in degraded:
+        for degradation in paper["degradations"]:
+            print(
+                f"      {paper['ref_id']:22} {degradation['kind']:32} "
+                f"-> {degradation['direction']}s in {', '.join(degradation['affects'])}"
+            )
 
     out = args.out or os.path.join(audit_dir(), "manifest.json")
     os.makedirs(os.path.dirname(out), exist_ok=True)

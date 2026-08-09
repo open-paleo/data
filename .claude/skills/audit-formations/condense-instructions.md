@@ -75,8 +75,32 @@ the path you were given.
   even to tidy up a mistake you just made. If you wrote to the wrong place, say
   where in your return message and leave it; the caller will clean it up.
 - **Never edit the source markdown, the reference store, or `formations.yaml`.**
+- **Do this extraction YOURSELF. Do not delegate it to a subagent.** You may not
+  spawn an agent to read the paper, to write the JSON, or to repair what you
+  wrote. Handing the task on costs a whole relay layer that reads nothing, and
+  it makes your return message a summary of work you did not do — in the
+  2026-08-08 run, three of four delegating agents passed the entire job
+  through, and one then reported a claim count that did not match the file it
+  had shipped. The checklist below replaces the repair passes that delegation
+  was being used for.
 
 A run of this skill that deletes a path is a defect regardless of what was in it.
+
+## Before you write: check your own work
+
+Delegating agents were using follow-up passes to catch these, so catch them
+yourself instead. Confirm all four, and fix anything that fails BEFORE writing:
+
+1. **`source_sha256`** is the digest you computed with `shasum -a 256` on the
+   file you actually read — 64 hex characters, not a paraphrase of one.
+2. **`extracted_at`** is the run date you were given, not today's date guessed
+   or the paper's publication year.
+3. **You have actually read the reference list**, and
+   `units_in_bibliography_only` reflects it. An empty list must mean you looked
+   and found none, not that you skipped it — see rule 2. If the paper has no
+   reference list, say so in `flags` so the empty field is explained.
+4. **Every `verbatim` is a span you can still find in the source**, copied
+   rather than reconstructed.
 
 ## Rules
 
@@ -158,6 +182,18 @@ A run of this skill that deletes a path is a defect regardless of what was in it
    If OCR has garbled it, copy the garbled text as-is; the audit is used to
    reading through `2Æ3 km` and `S^ınpetru`. A `verbatim` you had to reconstruct
    is worse than useless — flag it instead.
+
+   **`value` is YOUR paraphrase; `verbatim` is the paper's words.** Keep the
+   line between them absolute, because downstream they are read differently:
+   `verbatim` is quotable in a registry note, `value` never is. A note that
+   quotes a `value` has fabricated a quotation, and nobody can see it by
+   reading — the Tremp entry quoted `"informally subdivided into a lower part
+   and a middle part"` for a paper that says only "the lower and middle part of
+   the Tremp Formation". Do not smuggle the paper's phrasing into `value` to
+   make it sound authoritative, and never repair a garbled `verbatim` into
+   clean prose: a line-number gutter once put `Bond et al. 208 (1970)` mid-
+   sentence and the extraction silently deleted the `208`, writing a span that
+   existed nowhere.
 
 9. **Do NOT invent.** No DOI → `""`. Field genuinely absent → `""` or `[]`. Never
    fill bibliography from memory — read it off the paper. If the paper turns out

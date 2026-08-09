@@ -33,14 +33,11 @@ import os
 import re
 import unicodedata
 
+import source_quality
+
 from _paths import audit_dir, corpus_dir, resolve_markdown
 
 CORPUS = corpus_dir()
-
-BIBLIOGRAPHY_HEADING = re.compile(
-    r"^#{0,6}\s*\**\s*(references|literature cited|bibliography|references cited)\b",
-    re.IGNORECASE | re.MULTILINE,
-)
 
 # Rank words stripped only from the END of a unit name, so "Red Beds of Hermiin
 # Tsav" keeps its internal "Beds".
@@ -59,30 +56,44 @@ TITLE_OVERLAP_THRESHOLD = 0.7
 def fold(text):
     """Fold a string for tolerant comparison.
 
+    Two extraction artifacts are removed BEFORE normalization. Markdown anchor
+    targets sit inside sentences and would fold into stray `page 11 5` tokens;
+    spacing diacritics are not combining marks and would collapse into spaces,
+    splitting `Echapor~a` into two words that match nothing. Both make an
+    honest quotation unmatchable.
+
     @param {str} text - the raw string
     @returns {str} unicode-normalized, lowercased, punctuation-collapsed text
     """
-    folded = unicodedata.normalize("NFKD", text or "")
+    repaired = source_quality.strip_anchor_targets(text or "")
+    repaired = source_quality.recompose_spacing_diacritics(repaired)
+    folded = unicodedata.normalize("NFKD", repaired)
     folded = "".join(char for char in folded if not unicodedata.combining(char))
     return re.sub(r"[^a-z0-9]+", " ", folded.lower())
 
 
 def load_paper(path):
-    """Read a paper and mark where its reference list starts.
+    """Read a paper, mark where its reference list starts, and record how well
+    that boundary could be established.
+
+    The boundary is not a detail. Checks C and D both ask "is this only in the
+    reference list?", so a paper whose boundary is unknown cannot answer them --
+    and, before the source-quality preflight existed, silently answered "no".
 
     @param {str} path - absolute path to the corpus markdown
-    @returns {dict} raw text, folded text, folded body, and the bibliography cut
+    @returns {dict} raw text, folded text, folded body, the cut, and the quality
     """
     with open(path, encoding="utf-8", errors="replace") as handle:
         raw = handle.read()
-    headings = list(BIBLIOGRAPHY_HEADING.finditer(raw))
-    cut = headings[-1].start() if headings else len(raw)
+    quality = source_quality.assess(raw)
+    cut = quality["cut"]
     return {
         "raw": raw,
         "full": fold(raw),
         "body": fold(raw[:cut]),
         "cut": cut,
-        "has_bibliography": bool(headings),
+        "has_bibliography": quality["bibliography"] != "none",
+        "quality": quality,
     }
 
 
@@ -209,13 +220,30 @@ def check_locus(locus, papers, cache, findings):
                 }
             )
 
+        quality = paper["quality"]
+        if quality["bibliography"] == "unheaded-list":
+            findings["checks_degraded"].append(
+                {
+                    "unit": unit,
+                    "ref_id": ref_id,
+                    "file": file_name,
+                    "kind": "reference-list-heading-missing",
+                    "affects": ["quote_bibliography_only", "unit_absent"],
+                }
+            )
+
         for span in quoted_spans(pointer["notes"]):
-            if fold(span) not in paper["full"]:
-                findings["quote_absent"].append(
+            if fold(span) in paper["full"]:
+                if only_in_bibliography(paper, span):
+                    findings["quote_bibliography_only"].append(
+                        {"unit": unit, "ref_id": ref_id, "file": file_name, "quote": span}
+                    )
+            elif source_quality.matches_through_line_numbers(paper["full"], fold(span)):
+                findings["quote_matched_through_line_numbers"].append(
                     {"unit": unit, "ref_id": ref_id, "file": file_name, "quote": span}
                 )
-            elif only_in_bibliography(paper, span):
-                findings["quote_bibliography_only"].append(
+            else:
+                findings["quote_absent"].append(
                     {"unit": unit, "ref_id": ref_id, "file": file_name, "quote": span}
                 )
 
@@ -231,6 +259,66 @@ def check_locus(locus, papers, cache, findings):
                     ),
                 }
             )
+
+
+def survey_sources(papers, cache, rescued_quotes):
+    """Report every cited paper whose extraction degrades a Tier-0 check.
+
+    These are defects in the CORPUS, not in the registry, and no edit to
+    `formations.yaml` can answer them. Reporting them up front is the point:
+    they are found proactively and routed to the papers repository, instead of
+    surfacing later as a finding against an entry that is actually correct.
+
+    Two sources feed this. A structural scan of each paper finds what can be
+    seen without reference to any claim, and the quotes that matched only once
+    line numbers were allowed between their words supply the rest -- a gutter
+    collapsed into prose is invisible structurally but unmistakable the moment
+    it breaks a quotation.
+
+    @param {dict} papers - manifest papers keyed by ref-id
+    @param {dict} cache - load_paper results keyed by path
+    @param {list} rescued_quotes - quotes that matched only through line numbers
+    @returns {list} one record per degraded paper
+    """
+    by_symptom = {}
+    for flag in rescued_quotes:
+        by_symptom.setdefault(flag["ref_id"], []).append(flag["unit"])
+
+    degraded = []
+    for ref_id in sorted(papers):
+        record = papers[ref_id]
+        if record.get("classification") == "reference-work":
+            continue
+        path = resolve_markdown(ref_id)
+        if not path:
+            continue
+        if path not in cache:
+            cache[path] = load_paper(path)
+        degradations = list(cache[path]["quality"]["degradations"])
+        if ref_id in by_symptom:
+            units = sorted(set(by_symptom[ref_id]))
+            degradations.append(
+                {
+                    "kind": "interleaved-line-numbers",
+                    "affects": ["quote_absent"],
+                    "direction": "false-positive",
+                    "detail": (
+                        f"{len(by_symptom[ref_id])} quoted span(s) match only "
+                        "once line numbers are allowed between their words "
+                        f"({', '.join(units)}); the gutter is still in the text"
+                    ),
+                }
+            )
+        if degradations:
+            degraded.append(
+                {
+                    "ref_id": ref_id,
+                    "file": os.path.relpath(path, CORPUS),
+                    "bibliography": cache[path]["quality"]["bibliography"],
+                    "degradations": degradations,
+                }
+            )
+    return degraded
 
 
 def main():
@@ -250,10 +338,16 @@ def main():
         "unit_absent": [],
         "no_markdown": [],
         "reference_work": [],
+        "quote_matched_through_line_numbers": [],
+        "checks_degraded": [],
     }
     cache = {}
     for locus in manifest["loci"]:
         check_locus(locus, papers, cache, findings)
+
+    findings["source_quality"] = survey_sources(
+        papers, cache, findings["quote_matched_through_line_numbers"]
+    )
 
     findings["counts"] = {
         key: len(value) for key, value in findings.items() if isinstance(value, list)
@@ -276,6 +370,22 @@ def main():
             if flag.get("in_bibliography_only"):
                 detail += "  [bibliography only]"
             print(f"{label:6} {flag['unit'][:28]:30} {flag['ref_id']:22} {detail[:74]}")
+
+    if findings["source_quality"]:
+        print("\nSOURCE DEFECTS -- corpus repository, not the registry:")
+        for record in findings["source_quality"]:
+            for degradation in record["degradations"]:
+                print(
+                    f"  {record['ref_id']:22} {degradation['kind']:32} "
+                    f"{degradation['direction']}"
+                )
+                print(f"      {degradation['detail']}")
+        rescued = len(findings["quote_matched_through_line_numbers"])
+        degraded = len(findings["checks_degraded"])
+        print(
+            f"  -> {rescued} quote(s) matched only through line numbers; "
+            f"{degraded} pointer(s) checked against an inferred body boundary"
+        )
     print(f"\ntier0 -> {out}")
 
 
