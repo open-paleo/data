@@ -38,13 +38,6 @@ identifiers:
     id: Q277277
   - source: gbif
     id: "4822872"
-synonyms:
-  - name: Syntarsus rhodesiensis
-    type: preoccupied
-    reason: Original combination Syntarsus rhodesiensis (Raath, 1969); the
-      genus name Syntarsus was preoccupied by a beetle (Syntarsus
-      Fairmaire, 1869), and Ivie, Ślipiński and Węgrzynowicz (2001)
-      provided the replacement name Megapnosaurus.
 species:
   - name: Megapnosaurus rhodesiensis
     etymology: "Named for Rhodesia (former name of Zimbabwe), where the
@@ -82,6 +75,13 @@ species:
       weight_kg:
         min: 13
         max: 13
+    synonyms:
+      - name: Syntarsus rhodesiensis
+        type: preoccupied
+        reason: Original combination Syntarsus rhodesiensis (Raath, 1969); the
+          genus name Syntarsus was preoccupied by a beetle (Syntarsus
+          Fairmaire, 1869), and Ivie, Ślipiński and Węgrzynowicz (2001)
+          provided the replacement name Megapnosaurus.
     erected_in: raath1969a
 references:
   - id: raath1969a

@@ -49,25 +49,6 @@ identifiers:
     id: Q133863
   - source: gbif
     id: "4823119"
-synonyms:
-  - name: Omosaurus durobrivensis
-    type: reassigned
-    reason: Original combination established by Hulke (1887) for
-      BMNH R1989-R1992 from the Lower Oxford Clay of Fletton.
-      Omosaurus Owen, 1875 was later found to be preoccupied (by
-      Omosaurus Leidy, 1856) and the species was first moved to
-      the genus Dacentrurus Lucas (1902) by Hennig (1915) and
-      then to the new genus Lexovisaurus by Hoffstetter
-      (1957).
-  - name: Stegosaurus priscus
-    type: junior subjective
-    reason: Nopcsa (1911) erected Stegosaurus priscus for
-      BMNH R3167 (a partial skeleton from the Callovian of
-      Cambridgeshire). Hoffstetter (1957) regarded it as a
-      junior synonym of Lexovisaurus durobrivensis. Maidment
-      et al. (2008) later removed BMNH R3167 from Lexovisaurus
-      and made it the holotype of a separate new genus,
-      Loricatosaurus priscus.
 species:
   - name: Lexovisaurus durobrivensis
     etymology: From Durobrivae (the Roman name for the area
@@ -105,6 +86,16 @@ species:
       weight_kg:
         min: 2500
         max: 2500
+    synonyms:
+      - name: Omosaurus durobrivensis
+        type: reassigned
+        reason: Original combination established by Hulke (1887) for
+          BMNH R1989-R1992 from the Lower Oxford Clay of Fletton.
+          Omosaurus Owen, 1875 was later found to be preoccupied (by
+          Omosaurus Leidy, 1856) and the species was first moved to
+          the genus Dacentrurus Lucas (1902) by Hennig (1915) and
+          then to the new genus Lexovisaurus by Hoffstetter
+          (1957).
     erected_in: hoffstetter1957a
 references:
   - id: hulke1887a
