@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-08-08T22:19:31.914Z
+  built_at: 2026-08-09T02:14:24.213Z
   clade_count: 188
   genus_count: 1408
   license: CC-BY-4.0
@@ -16080,10 +16080,6 @@ genera:
     locomotion: quadrupedal
     paleoenvironment:
       - fluvial
-    synonyms:
-      - name: Natronasaurus longispinus
-        type: nomen nudum
-        reason: Proposed by Roman Ulansky (2014) for "Stegosaurus" longispinus Gilmore, 1914 in a self-published electronic publication that was not archived by an independent organization and lacked an ISSN; the name is therefore ICZN-invalid under Article 8.5.3. Galton and Carpenter (2016) provided the valid replacement genus Alcovasaurus for the same material.
     diagnostic_features:
       - All caudal vertebrae bear transverse processes, continuing to the distal caudal vertebrae
       - Distal caudal centra anteroposteriorly short, with height exceeding length
@@ -16141,6 +16137,10 @@ genera:
           weight_kg:
             min: 3500
             max: 5000
+        synonyms:
+          - name: Natronasaurus longispinus
+            type: nomen nudum
+            reason: Proposed by Roman Ulansky (2014) for "Stegosaurus" longispinus Gilmore, 1914 in a self-published electronic publication that was not archived by an independent organization and lacked an ISSN; the name is therefore ICZN-invalid under Article 8.5.3. Galton and Carpenter (2016) provided the valid replacement genus Alcovasaurus for the same material.
         erected_in: galton2016a
         authors: Galton, P. M.; Carpenter, K.
         described: 2016
@@ -31283,6 +31283,9 @@ genera:
             max: 8
         erected_in: norman2010a
         synonyms:
+          - name: Iguanodon dawsoni
+            type: reassigned
+            reason: Original combination established by Lydekker (1888); reassigned to the new genus Barilium by Norman (2010).
           - name: Torilion
             type: junior objective
             reason: Iguanodon dawsoni was first reassigned to Barilium dawsoni and then independently re-erected as Torilion dawsoni; Torilion is now treated as a junior synonym of Barilium.
@@ -41942,10 +41945,6 @@ genera:
         id: "4823135"
       - source: eol
         id: "4531607"
-    synonyms:
-      - name: Proceratops montanus
-        type: junior subjective
-        reason: Replacement name proposed by Lull (1906) on the mistaken belief that Ceratops Marsh, 1888 was preoccupied by Ceratops Rafinesque, 1815; the Rafinesque name was a nomen nudum, leaving Ceratops Marsh available, so Proceratops is treated as a junior synonym.
     species:
       - name: Ceratops montanus
         etymology: From Latin montanus ("of Montana"), referring to the type-locality state.
@@ -41974,6 +41973,10 @@ genera:
           institution: National Museum of Natural History, Smithsonian Institution
           material: A pair of supraorbital horn-cores (~22 cm long) and an elongated basioccipital forming the occipital condyle.
           completeness: fragmentary
+        synonyms:
+          - name: Proceratops montanus
+            type: junior objective
+            reason: Replacement name proposed by Lull (1906) on the mistaken belief that Ceratops Marsh, 1888 was preoccupied by Ceratops Rafinesque, 1815; the Rafinesque name was a nomen nudum, leaving Ceratops Marsh available. As an unnecessary replacement name it carries the same type, so it is an objective synonym.
         erected_in: marsh1888b
         authors: Marsh, O. C.
         described: 1888
@@ -42048,10 +42051,6 @@ genera:
         id: "4818607"
       - source: eol
         id: "4531431"
-    synonyms:
-      - name: Megalosaurus nasicornis
-        type: junior subjective
-        reason: Cope (1892) referred Ceratosaurus nasicornis to Megalosaurus; Gilmore (1920) rejected the referral and reaffirmed Ceratosaurus as a valid genus distinct from Megalosaurus.
     species:
       - name: Ceratosaurus nasicornis
         etymology: From Latin 'nasus' (nose) and 'cornu' (horn); meaning 'nose-horned', referring to the median nasal horn core.
@@ -42092,6 +42091,10 @@ genera:
           institution: National Museum of Natural History, Smithsonian Institution
           material: Near-complete skeleton including the skull and lower jaws, atlas-axis complex, seven cervical and 12 (mostly fragmentary) dorsal vertebrae, sacrum, ~50 caudal vertebrae with chevrons, the coossified pelvis, both femora, the right tibia, fibula, and pes, plus dorsal-midline dermal ossicles.
           completeness: complete
+        synonyms:
+          - name: Megalosaurus nasicornis
+            type: reassigned
+            reason: Cope (1892) referred Ceratosaurus nasicornis to Megalosaurus; Gilmore (1920) rejected the referral and reaffirmed Ceratosaurus as a valid genus distinct from Megalosaurus.
         erected_in: marsh1884a
         described_in: gilmore1920a
         authors: Marsh, O. C.
@@ -46967,10 +46970,6 @@ genera:
         id: Q1768702
       - source: gbif
         id: "4823416"
-    synonyms:
-      - name: Clasmodon spatula
-        type: informal
-        reason: The label placed by Ameghino on the original specimens read "Clasmodon spatula"; Huene (1929) noted this as a labeling variant rather than a formally published name.
     species:
       - name: Clasmodosaurus spatula
         etymology: From Latin 'spatula' (small flat blade), likely referring to the shape of the type teeth.
@@ -46991,6 +46990,10 @@ genera:
           institution: Museo de La Plata
           material: Three teeth (one cylindrical crown fragment with root base, one apical crown fragment, and one small nearly complete posterior crown); Huene (1929) figured them as plate 40, figs. 3-5.
           completeness: fragmentary
+        synonyms:
+          - name: Clasmodon spatula
+            type: informal
+            reason: The label placed by Ameghino on the original specimens read "Clasmodon spatula"; Huene (1929) noted this as a labeling variant rather than a formally published name.
         erected_in: ameghino1899b
         described_in: huene1929a
         authors: Ameghino, F.
@@ -47294,9 +47297,6 @@ genera:
       - source: gbif
         id: "4822867"
     synonyms:
-      - name: Rioarribasaurus colberti
-        type: junior objective
-        reason: Hunt and Lucas (1991) erected Rioarribasaurus colberti for the Whitaker Quarry skeleton AMNH 7224. ICZN Opinion 1842 (1996) simultaneously designated AMNH 7224 as the neotype of Coelophysis bauri (under plenary powers, setting aside Cope's diagnostically inadequate syntypes), making Rioarribasaurus a junior objective synonym of Coelophysis and colberti a junior objective synonym of bauri. Both were placed on the Official Index of Rejected and Invalid Names.
       - name: Longosaurus longicollis
         type: junior subjective
         reason: Welles (1984) erected Longosaurus as a replacement genus for "Coelurus" longicollis Cope, 1887 (a Ghost Ranch coelophysoid). Subsequent work treats the material as referable to Coelophysis, making Longosaurus a junior synonym.
@@ -47341,6 +47341,10 @@ genera:
           institution: American Museum of Natural History
           material: Articulated complete skeleton of an adult robust-morph individual.
           completeness: complete
+        synonyms:
+          - name: Rioarribasaurus colberti
+            type: junior objective
+            reason: Hunt and Lucas (1991) erected Rioarribasaurus colberti for the Whitaker Quarry skeleton AMNH 7224. ICZN Opinion 1842 (1996) simultaneously designated AMNH 7224 as the neotype of Coelophysis bauri (under plenary powers, setting aside Cope's diagnostically inadequate syntypes), making Rioarribasaurus a junior objective synonym of Coelophysis and colberti a junior objective synonym of bauri. Both were placed on the Official Index of Rejected and Invalid Names.
         erected_in: cope1889b
         described_in: rinehart2009a
         authors: Cope, E. D.
@@ -50460,10 +50464,6 @@ genera:
         id: Q18578567
       - source: gbif
         id: "4575739"
-    synonyms:
-      - name: Cryptodraco eumerus
-        type: junior objective
-        reason: Lydekker (1889) proposed Cryptodraco as a replacement name for Cryptosaurus, believing the latter to be preoccupied by an earlier reptile name. The perceived senior homonym was actually a misspelling of Cystosaurus (Geoffroy Saint-Hilaire, 1831) in the French Bibliothèque universelle, so Cryptosaurus was never preoccupied and Cryptodraco is an unnecessary replacement name.
     species:
       - name: Cryptosaurus eumerus
         etymology: From Greek 'eu' (well) and 'merus' (thigh); meaning 'well-formed thigh', in reference to the stout build of the holotype femur.
@@ -50492,6 +50492,10 @@ genera:
           institution: Sedgwick Museum, University of Cambridge
           material: A single right femur, approximately 31 cm long, with a slight antero-posterior flexure in the lower third of the shaft; articular ends lack epiphyses.
           completeness: fragmentary
+        synonyms:
+          - name: Cryptodraco eumerus
+            type: junior objective
+            reason: Lydekker (1889) proposed Cryptodraco as a replacement name for Cryptosaurus, believing the latter to be preoccupied by an earlier reptile name. The perceived senior homonym was actually a misspelling of Cystosaurus (Geoffroy Saint-Hilaire, 1831) in the French Bibliothèque universelle, so Cryptosaurus was never preoccupied and Cryptodraco is an unnecessary replacement name.
         erected_in: seeley1875b
         authors: Seeley, H. G.
         described: 1875
@@ -51366,6 +51370,10 @@ genera:
             min: 1000
             max: 1000
         erected_in: paul2008a
+        synonyms:
+          - name: Iguanodon lakotaensis
+            type: reassigned
+            reason: Original combination established by Weishampel and Bjork (1989); reassigned to the new genus Dakotadon by Paul (2008).
         type_specimen:
           specimen_id:
             - SDSM 8656
@@ -56615,10 +56623,6 @@ genera:
         id: Q988566
       - source: zoobank
         id: 3B28DA22-65E6-4D78-B572-299C01B87195
-    synonyms:
-      - name: Merosaurus newmani
-        type: nomen nudum
-        reason: Welles, Powell and Pickering coined the informal name "Merosaurus newmani" in an unpublished 1995 manuscript for the Lower Lias theropod material later named Dornraptor; the name was never validly published.
     species:
       - name: Dornraptor normani
         etymology: Honors David B. Norman, the Cambridge paleontologist whose work on UK Jurassic dinosaurs included extensive study of Scelidosaurus harrisonii — the genus the holotype was originally misattributed to.
@@ -56652,6 +56656,10 @@ genera:
           length_m:
             min: 6.5
             max: 6.5
+        synonyms:
+          - name: Merosaurus newmani
+            type: nomen nudum
+            reason: Welles, Powell and Pickering coined the informal name "Merosaurus newmani" in an unpublished 1995 manuscript for the Lower Lias theropod material later named Dornraptor; the name was never validly published.
         erected_in: baron2024a
         authors: Baron, M. G.
         described: 2024
@@ -63985,13 +63993,6 @@ genera:
         id: Q2342517
       - source: gbif
         id: "4822680"
-    synonyms:
-      - name: Megalosaurus superbus
-        type: junior subjective
-        reason: Original combination by Sauvage (1882); transferred to the new genus Erectopus by von Huene (1923).
-      - name: Erectopus sauvagei
-        type: junior subjective
-        reason: Erected by Huene (1932) on referred material; Allain (2005) synonymised it into E. superbus and designated MNHN 2001-4 as the lectotype of the senior name.
     species:
       - name: Erectopus superbus
         etymology: From Latin 'superbus' (proud, magnificent); a name proposed by Sauvage (1882) when the species was originally combined with Megalosaurus.
@@ -64028,6 +64029,13 @@ genera:
           material: Anterior part of the left maxilla.
           completeness: fragmentary
           notes: Sauvage's original syntypes (femur, tibia, metatarsal II, manual phalanges, dorsal centra) were destroyed at the MNHN during World War II.
+        synonyms:
+          - name: Megalosaurus superbus
+            type: junior subjective
+            reason: Original combination by Sauvage (1882); transferred to the new genus Erectopus by von Huene (1923).
+          - name: Erectopus sauvagei
+            type: junior subjective
+            reason: Erected by Huene (1932) on referred material; Allain (2005) synonymised it into E. superbus and designated MNHN 2001-4 as the lectotype of the senior name.
         erected_in: huene1923a
         described_in: allain2005b
         authors: Huene, F. V.
@@ -76172,13 +76180,6 @@ genera:
         id: "4823074"
       - source: eol
         id: "47460084"
-    synonyms:
-      - name: Troodon sternbergi
-        type: reassigned
-        reason: Original combination (Brown and Schlaikjer, 1943) on NMC 8817; later moved to Stegoceras and then to the new genus Hanssuesia by Sullivan (2003).
-      - name: Stegoceras sternbergi
-        type: reassigned
-        reason: Interim combination after the species was moved out of Troodon and before Sullivan (2003) erected Hanssuesia.
     species:
       - name: Hanssuesia sternbergi
         etymology: Named for Charles Mortram Sternberg, the Canadian paleontologist who found the holotype dome near Steveville, Alberta, in 1928.
@@ -76203,6 +76204,13 @@ genera:
           institution: Canadian Museum of Nature
           material: Nearly complete frontoparietal dome with peripheral skull elements
           completeness: fragmentary
+        synonyms:
+          - name: Troodon sternbergi
+            type: reassigned
+            reason: Original combination (Brown and Schlaikjer, 1943) on NMC 8817; later moved to Stegoceras and then to the new genus Hanssuesia by Sullivan (2003).
+          - name: Stegoceras sternbergi
+            type: reassigned
+            reason: Interim combination after the species was moved out of Troodon and before Sullivan (2003) erected Hanssuesia.
         erected_in: sullivan2003a
         authors: Sullivan, R. M.
         described: 2003
@@ -81868,6 +81876,12 @@ genera:
             max: 6
         erected_in: norman2010a
         synonyms:
+          - name: Iguanodon fittoni
+            type: reassigned
+            reason: Original combination established by Lydekker (1889); reassigned to the new genus Hypselospinus by Norman (2010).
+          - name: Iguanodon hollingtoniensis
+            type: junior subjective
+            reason: Treated as a junior synonym of Hypselospinus fittoni by Norman (2010).
           - name: Wadhurstia
             type: junior objective
             reason: Originally described as Iguanodon fittoni and then re-erected as Wadhurstia; the material is now placed in Hypselospinus fittoni, with Wadhurstia treated as a junior synonym.
@@ -83284,21 +83298,6 @@ genera:
       - name: Iguanodon anglicus
         type: nomen rejectum
         reason: The original 1825 type species, based on isolated and diagnostically inadequate teeth from Tilgate Forest. ICZN Opinion 1947 (2000) set aside all prior type-species fixations under plenary power, replacing it with I. bernissartensis. Not formally placed on the Official Index, but its type-species status is fully superseded.
-      - name: Iguanodon atherfieldensis
-        type: junior subjective
-        reason: Reassigned to the new genus Mantellisaurus by Paul (2008) and formally synonymised out of Iguanodon by Norman (2010).
-      - name: Iguanodon dawsoni
-        type: junior subjective
-        reason: Reassigned to the new genus Barilium by Norman (2010).
-      - name: Iguanodon fittoni
-        type: junior subjective
-        reason: Reassigned to the new genus Hypselospinus by Norman (2010).
-      - name: Iguanodon hollingtoniensis
-        type: junior subjective
-        reason: Treated as a junior synonym of Hypselospinus fittoni by Norman (2010).
-      - name: Iguanodon lakotaensis
-        type: junior subjective
-        reason: Reassigned to the new genus Dakotadon by Paul (2008).
     erected_in: mantell1825a
     iczn_rulings:
       - type: type-species
@@ -98060,13 +98059,6 @@ genera:
         id: Q133863
       - source: gbif
         id: "4823119"
-    synonyms:
-      - name: Omosaurus durobrivensis
-        type: reassigned
-        reason: Original combination established by Hulke (1887) for BMNH R1989-R1992 from the Lower Oxford Clay of Fletton. Omosaurus Owen, 1875 was later found to be preoccupied (by Omosaurus Leidy, 1856) and the species was first moved to the genus Dacentrurus Lucas (1902) by Hennig (1915) and then to the new genus Lexovisaurus by Hoffstetter (1957).
-      - name: Stegosaurus priscus
-        type: junior subjective
-        reason: Nopcsa (1911) erected Stegosaurus priscus for BMNH R3167 (a partial skeleton from the Callovian of Cambridgeshire). Hoffstetter (1957) regarded it as a junior synonym of Lexovisaurus durobrivensis. Maidment et al. (2008) later removed BMNH R3167 from Lexovisaurus and made it the holotype of a separate new genus, Loricatosaurus priscus.
     species:
       - name: Lexovisaurus durobrivensis
         etymology: From Durobrivae (the Roman name for the area around Water Newton near Peterborough), referring to the provenance of the type material from the Lower Oxford Clay of nearby Fletton.
@@ -98102,6 +98094,10 @@ genera:
           weight_kg:
             min: 2500
             max: 2500
+        synonyms:
+          - name: Omosaurus durobrivensis
+            type: reassigned
+            reason: Original combination established by Hulke (1887) for BMNH R1989-R1992 from the Lower Oxford Clay of Fletton. Omosaurus Owen, 1875 was later found to be preoccupied (by Omosaurus Leidy, 1856) and the species was first moved to the genus Dacentrurus Lucas (1902) by Hennig (1915) and then to the new genus Lexovisaurus by Hoffstetter (1957).
         erected_in: hoffstetter1957a
         authors: Hoffstetter, R.
         described: 1957
@@ -101143,6 +101139,10 @@ genera:
           hip_height_m:
             min: 1.7
             max: 1.7
+        synonyms:
+          - name: Stegosaurus priscus
+            type: reassigned
+            reason: Original combination established by Nopcsa (1911) for BMNH R3167, a partial skeleton from the Callovian of Cambridgeshire. Hoffstetter (1957) regarded it as a junior synonym of Lexovisaurus durobrivensis; Maidment and others (2008) removed the specimen from Lexovisaurus and made it the holotype of the new genus Loricatosaurus.
         erected_in: maidment2008a
         authors: Maidment, S. C. R.; Norman, D. B.; Barrett, P. M.; Upchurch, P.
         described: 2008
@@ -106026,6 +106026,9 @@ genera:
             min: 750
             max: 750
         synonyms:
+          - name: Iguanodon atherfieldensis
+            type: reassigned
+            reason: Original combination established by Hooley (1925) for the gracile Wealden iguanodontian. Paul (2007) placed the species in the new genus Mantellisaurus, and Norman (2010) formally removed it from Iguanodon.
           - name: Mantellodon
             type: junior subjective
             reason: M. carpenteri is now considered referable to Mantellisaurus atherfieldensis.
@@ -106802,9 +106805,6 @@ genera:
       - name: Leptospondylus
         type: junior subjective
         reason: Historically grouped with Pachyspondylus; both are now considered referable to Massospondylus.
-      - name: Gyposaurus capensis
-        type: junior subjective
-        reason: G. capensis is generally accepted as referable to Massospondylus.
       - name: Aetonyx
         type: junior subjective
         reason: Barrett and others (2019) record Aetonyx palustris as a junior synonym of Massospondylus carinatus, following Cooper (1981); a minority view instead holds it undiagnostic.
@@ -106857,6 +106857,10 @@ genera:
           material: Partially complete, articulated skeleton including an almost complete skull, but lacking most of the hind limbs and tail; an adult individual.
           completeness: partial
           notes: The original syntype series (five cervical vertebrae) was destroyed in the 19 May 1941 bombing of the Hunterian Museum of the Royal College of Surgeons, London, leaving only casts and illustrations. As casts cannot serve as types, Yates and Barrett (2010) formally designated BP/1/4934 as the neotype under ICZN Article 75, following earlier suggestions by Sues et al. (2004) and Barrett (2009).
+        synonyms:
+          - name: Gyposaurus capensis
+            type: junior subjective
+            reason: Erected by Broom (1911) on SAM-PK-K990, a partial skeleton lacking the skull, from near Ladybrand, South Africa. Barrett and others (2019) record it as a junior subjective synonym of Massospondylus carinatus following Cooper (1981) and Galton (1990); a minority view instead holds it undiagnostic.
         erected_in: owen1854a
         described_in: barrett2019a
         authors: Owen, R.
@@ -107618,10 +107622,6 @@ genera:
         id: Q277277
       - source: gbif
         id: "4822872"
-    synonyms:
-      - name: Syntarsus rhodesiensis
-        type: preoccupied
-        reason: Original combination Syntarsus rhodesiensis (Raath, 1969); the genus name Syntarsus was preoccupied by a beetle (Syntarsus Fairmaire, 1869), and Ivie, Ślipiński and Węgrzynowicz (2001) provided the replacement name Megapnosaurus.
     species:
       - name: Megapnosaurus rhodesiensis
         etymology: Named for Rhodesia (former name of Zimbabwe), where the holotype was found.
@@ -107660,6 +107660,10 @@ genera:
           weight_kg:
             min: 13
             max: 13
+        synonyms:
+          - name: Syntarsus rhodesiensis
+            type: preoccupied
+            reason: Original combination Syntarsus rhodesiensis (Raath, 1969); the genus name Syntarsus was preoccupied by a beetle (Syntarsus Fairmaire, 1869), and Ivie, Ślipiński and Węgrzynowicz (2001) provided the replacement name Megapnosaurus.
         erected_in: raath1969a
         authors: Raath, M. A.
         described: 1969
@@ -114213,9 +114217,6 @@ genera:
       - source: eol
         id: "4433653"
     synonyms:
-      - name: Gorgosaurus lancensis
-        type: reassigned
-        reason: Original combination established by Gilmore (1946) for CMNH 7541, based on apparent affinities with G. sternbergi and G. libratus. Bakker, Williams and Currie (1988) reassigned the species to a new genus Nanotyrannus, yielding Nanotyrannus lancensis (Gilmore, 1946).
       - name: Clevelanotyrannus
         type: nomen nudum
         reason: Unpublished manuscript name for CMNH 7541 that predated the formal description; the published 1988 paper (Bakker, Williams and Currie) used Nanotyrannus instead, so Clevelanotyrannus was never validly published.
@@ -114247,6 +114248,10 @@ genera:
           institution: Cleveland Museum of Natural History
           material: A nearly complete skull with tightly articulated lower jaws (~57 cm premaxilla-to-quadrate); the right squamosal, postfrontal, quadratojugal and upper half of the right quadrate are missing, and many teeth are incomplete.
           completeness: partial
+        synonyms:
+          - name: Gorgosaurus lancensis
+            type: reassigned
+            reason: Original combination established by Gilmore (1946) for CMNH 7541, based on apparent affinities with G. sternbergi and G. libratus. Bakker, Williams and Currie (1988) reassigned the species to a new genus Nanotyrannus, yielding Nanotyrannus lancensis (Gilmore, 1946).
         erected_in: bakker1988b
         authors: Bakker, R. T.; Williams, M.; Currie, P. J.
         described: 1988
@@ -122101,10 +122106,6 @@ genera:
     locomotion: quadrupedal
     paleoenvironment:
       - fluvial
-    synonyms:
-      - name: Bothriospondylus magnus
-        type: junior objective
-        reason: Owen (1874) coined Bothriospondylus magnus on the subjects of his Plates VIII and IX, which Owen himself identified as among the specimens (Plates VII-IX) Seeley (1870) had previously used to erect Ornithopsis hulkei. Blows (1995) treats NHMUK PV R 28632 as the lectotype of O. hulkei from that same syntype series, making B. magnus a junior objective synonym based on the shared physical specimen.
     diagnostic_features:
       - Enormous pneumatic foramina 3-4 inches long, approximating pterodactyl size rather than avian
       - Vertically ovate posterior articular surface, well cupped and concave in lateral view
@@ -122160,6 +122161,10 @@ genera:
           institution: Natural History Museum
           material: A dorsal vertebral centrum from the Wealden of the Isle of Wight.
           completeness: fragmentary
+        synonyms:
+          - name: Bothriospondylus magnus
+            type: junior objective
+            reason: Owen (1874) coined Bothriospondylus magnus on the subjects of his Plates VIII and IX, which Owen himself identified as among the specimens (Plates VII-IX) Seeley (1870) had previously used to erect Ornithopsis hulkei. Blows (1995) treats NHMUK PV R 28632 as the lectotype of O. hulkei from that same syntype series, making B. magnus a junior objective synonym based on the shared physical specimen.
         erected_in: seeley1870a
         authors: Seeley, H. G.
         described: 1870
@@ -122884,13 +122889,13 @@ genera:
           institution: National Museum of Natural History, Smithsonian Institution
           material: Fragmentary postcranium including left and right ilia
           completeness: fragmentary
+        synonyms:
+          - name: Camptosaurus depressus
+            type: reassigned
+            reason: Originally described as Camptosaurus depressus by Gilmore (1909); reassigned to the new genus Osmakasaurus by McDonald (2011).
         erected_in: mcdonald2011a
         authors: McDonald, A. T.
         described: 2011
-    synonyms:
-      - name: Camptosaurus depressus
-        type: reassigned
-        reason: Originally described as Camptosaurus depressus by Gilmore (1909); reassigned to the new genus Osmakasaurus by McDonald (2011).
     references:
       - id: gilmore1909a
         authors: Gilmore, C. W.
@@ -127809,10 +127814,6 @@ genera:
         id: "519177"
       - source: wikidata
         id: Q137442744
-    synonyms:
-      - name: Iguanodon galvensis
-        type: reassigned
-        reason: Originally described as Iguanodon galvensis by Verdú et al. (2015) and revised by Verdú et al. (2017); reassigned to a new genus Paulodon by Sancarlo, Mandorlo and Ford (2025) on autapomorphies of the manus, pollex, femur, ischium, and dentary plus a stratigraphic gap (early Barremian vs. late-Barremian-early-Aptian Iguanodon bernissartensis).
     species:
       - name: Paulodon galvensis
         etymology: From galvensis ("of Galve"), referring to Galve in Teruel Province, Aragón, Spain — the locality of the type material.
@@ -127841,6 +127842,10 @@ genera:
           institution: Museo de la Fundación Conjunto Paleontológico de Teruel-Dinópolis
           material: Adult specimen with disarticulated cranial and postcranial elements — premaxilla, dentary, postorbital, quadrate, maxillary teeth, atlas arch, cervical and sacral vertebrae, ribs, coracoid, scapula, pubes, ischia, and right femur.
           completeness: partial
+        synonyms:
+          - name: Iguanodon galvensis
+            type: reassigned
+            reason: Originally described as Iguanodon galvensis by Verdú et al. (2015) and revised by Verdú et al. (2017); reassigned to a new genus Paulodon by Sancarlo, Mandorlo and Ford (2025) on autapomorphies of the manus, pollex, femur, ischium, and dentary plus a stratigraphic gap (early Barremian vs. late-Barremian-early-Aptian Iguanodon bernissartensis).
         erected_in: sancarlo2025a
         authors: Sancarlo, F.; Mandorlo, D.; Ford, T. L.
         described: 2025
@@ -135521,24 +135526,9 @@ genera:
       - source: eol
         id: "4532049"
     synonyms:
-      - name: Protiguanodon mongoliense
-        type: junior subjective
-        reason: Erected by Osborn (1923) in the same paper as Psittacosaurus mongoliensis on AMNH 6253 from the Ondai Sair Formation; synonymised with P. mongoliensis by Sereno (1990) after reexamination of both type skeletons, and confirmed in Sereno (2010).
       - name: Hongshanosaurus houi
         type: junior subjective
-        reason: Erected by You et al. (2003) on an immature, dorsoventrally crushed skull from the Yixian Formation; the genus was sunk into Psittacosaurus by Sereno (2010), who treated the holotype itself as a nomen dubium (too crushed and immature to diagnose) and suggested that the referred adult skull likely pertains to P. lujiatunensis.
-      - name: Psittacosaurus osborni
-        type: junior subjective
-        reason: Sereno (1990) found the distinguishing characters (small size, tooth-ridge morphology) fall within the growth series of P. mongoliensis. Sereno (2010) reaffirmed the synonymy as tentative pending more material.
-      - name: Psittacosaurus tingi
-        type: junior subjective
-        reason: Treated by Young (1958) as a junior synonym of P. osborni and by Sereno (1990, 2010) as a junior synonym of P. mongoliensis.
-      - name: Psittacosaurus guyangensis
-        type: junior subjective
-        reason: Sereno (1990) found all distinguishing characteristics fall within the growth series of P. mongoliensis; tentatively reaffirmed by Sereno (2010).
-      - name: Psittacosaurus youngi
-        type: junior subjective
-        reason: Sereno (1990) found P. youngi indistinguishable from P. sinensis; specific distinction can no longer be justified.
+        reason: Erected by You and others (2003) on an immature, dorsoventrally crushed skull from the Yixian Formation; the genus was sunk into Psittacosaurus by Sereno (2010), who treated the species itself as a nomen dubium (too crushed and immature to diagnose) and suggested that the referred adult skull likely pertains to P. lujiatunensis. The name therefore attaches to the genus rather than to any one species.
     species:
       - name: Psittacosaurus mongoliensis
         etymology: From mongoliensis ("of Mongolia"), referring to the country of origin of the holotype.
@@ -135578,6 +135568,19 @@ genera:
           institution: American Museum of Natural History
           material: Nearly complete adult skull and jaws plus articulated partial postcranial skeleton (vertebrae, most of the limb elements).
           completeness: partial
+        synonyms:
+          - name: Protiguanodon mongoliense
+            type: junior subjective
+            reason: Erected by Osborn (1923) in the same paper as Psittacosaurus mongoliensis on AMNH 6253 from the Ondai Sair Formation; synonymized with P. mongoliensis by Sereno (1990) after reexamination of both type skeletons, and confirmed in Sereno (2010).
+          - name: Psittacosaurus osborni
+            type: junior subjective
+            reason: Sereno (1990) found the distinguishing characters (small size, tooth-ridge morphology) fall within the growth series of P. mongoliensis. Sereno (2010) reaffirmed the synonymy as tentative pending more material.
+          - name: Psittacosaurus tingi
+            type: junior subjective
+            reason: Treated by Young (1958) as a junior synonym of P. osborni, and by Sereno (1990) as indistinguishable from P. mongoliensis. Sereno (2010) lists it in the synonymy of P. mongoliensis while also regarding it as a nomen dubium, its holotype being two small dentaries.
+          - name: Psittacosaurus guyangensis
+            type: junior subjective
+            reason: Sereno (1990) found all distinguishing characteristics fall within the growth series of P. mongoliensis; tentatively reaffirmed by Sereno (2010).
         erected_in: osborn1923b
         authors: Osborn, H. F.
         described: 1923
@@ -135615,7 +135618,7 @@ genera:
         synonyms:
           - name: Psittacosaurus youngi
             type: junior subjective
-            reason: Based on a partial skeleton and well-preserved skull (BNHM BPV149) from the same beds and localities as the P. sinensis holotype; its diagnosis included no autapomorphies distinguishing it, so it is now referred to P. sinensis.
+            reason: Based on a partial skeleton and well-preserved skull (BNHM BPV149) from the same beds and localities as the P. sinensis holotype; its diagnosis included no autapomorphies distinguishing it. Sereno (1990) found it indistinguishable from P. sinensis, to which it is now referred.
         erected_in: young1958a
         described_in: sereno2010a
         authors: Young, C.-C.
@@ -155226,7 +155229,7 @@ genera:
     synonyms:
       - name: Diracodon laticeps
         type: junior subjective
-        reason: Erected by Marsh (1881) on jaw fragments from Como Bluff, Wyoming; Gilmore (1914) argued the type was juvenile Stegosaurus material and referred its caudal vertebrae and spines to S. stenops, treating the genus as invalid.
+        reason: Erected by Marsh (1881) on two imperfect maxillae from Como Bluff, Wyoming (YPM 1885). Gilmore (1914) found the genus to rest entirely on teeth and maxillary characters that agree with Stegosaurus, and the carpal and tarsal characters Marsh added later to be features of immaturity. The caudal vertebrae and spines Marsh figured under the name in 1887 were referred to S. stenops, but Gilmore expressly excluded the 1881 name from that species synonymy, so the binomial attaches to the genus rather than to any one species.
     erected_in: marsh1877a
     iczn_rulings:
       - type: type-species
@@ -162820,10 +162823,6 @@ genera:
         id: "4578166"
       - source: eol
         id: "52571685"
-    synonyms:
-      - name: Thecodontosaurus cylindrodon
-        type: junior subjective
-        reason: Treated by Huene (1908) as a separate species on tooth morphology; sunk into T. antiquus by Galton (1973) and reaffirmed by Galton (2007), who attributed gracile vs. robust morphs to within-population variation rather than two species.
     species:
       - name: Thecodontosaurus antiquus
         etymology: From Latin antiquus ("ancient"), referring to the great geological age of the Magnesian Conglomerate fauna relative to other reptiles known to Riley and Stutchbury in 1836.
@@ -162859,6 +162858,10 @@ genera:
           institution: Bristol City Museum and Art Gallery
           material: Left dentary with teeth.
           completeness: fragmentary
+        synonyms:
+          - name: Thecodontosaurus cylindrodon
+            type: junior subjective
+            reason: Treated by Huene (1908) as a separate species on tooth morphology; sunk into T. antiquus by Galton (1973) and reaffirmed by Galton (2007), who attributed gracile vs. robust morphs to within-population variation rather than two species.
         erected_in: riley1836a
         authors: Riley, H.; Stutchbury, S.
         described: 1836
@@ -164282,10 +164285,6 @@ genera:
         id: "4823323"
       - source: eol
         id: "4530868"
-    synonyms:
-      - name: Shanxia tianzhenensis
-        type: junior subjective
-        reason: Per Arbour and Currie (2015), no features distinguish Shanxia from Tianzhenosaurus; both from the same formation with similar squamosal horn morphology, and Tianzhenosaurus youngi has nomenclatural priority by date of publication (1 June vs 15 June 1998).
     species:
       - name: Tianzhenosaurus youngi
         etymology: Dedicated to the late Professor C. C. Young (Yang Zhongjian), founder of vertebrate paleontology in China, in memory of his 100th birthday, per Pang and Cheng (1998).
@@ -164314,6 +164313,10 @@ genera:
           institution: Geoscience Museum, Shijiazhuang University of Economics
           material: Nearly complete skull.
           completeness: partial
+        synonyms:
+          - name: Shanxia tianzhenensis
+            type: junior subjective
+            reason: Per Arbour and Currie (2015), no features distinguish Shanxia from Tianzhenosaurus; both from the same formation with similar squamosal horn morphology, and Tianzhenosaurus youngi has nomenclatural priority by date of publication (1 June vs 15 June 1998).
         erected_in: pang1998a
         authors: Pang, Q.; Cheng, Z.
         described: 1998
@@ -169237,13 +169240,6 @@ genera:
         id: "4433634"
       - source: zoobank
         id: FBBAFFFB-40AB-4429-AD28-C9DCC0FE6BEC
-    synonyms:
-      - name: Dynamosaurus imperiosus
-        type: junior subjective
-        reason: Erected by Osborn (1905) in the same paper as T. rex on AMNH 5866 from Wyoming; formally synonymised with T. rex by Osborn (1906) after direct comparison of the two type specimens.
-      - name: Manospondylus gigas
-        type: nomen oblitum
-        reason: Erected by Cope (1892) on two dorsal vertebrae from the Hell Creek Formation of South Dakota; treated as indeterminate by Osborn (1916). The name is technically senior to Tyrannosaurus rex but, having been used in fewer than 25 publications since 1899, is suppressed under ICZN Article 23.9 in favor of Tyrannosaurus rex (nomen protectum).
     species:
       - name: Tyrannosaurus rex
         etymology: From Latin rex, "king", chosen by Osborn to evoke the animal's standing as the largest carnivorous land vertebrate then known.
@@ -169282,6 +169278,13 @@ genera:
           institution: Carnegie Museum of Natural History
           material: Partial skeleton with both jaws and portions of the skull, vertebrae, ribs, scapula, humerus, ilium, pubis, ischium, and metapodials.
           completeness: partial
+        synonyms:
+          - name: Dynamosaurus imperiosus
+            type: junior subjective
+            reason: Erected by Osborn (1905) in the same paper as T. rex on AMNH 5866 from Wyoming; formally synonymised with T. rex by Osborn (1906) after direct comparison of the two type specimens.
+          - name: Manospondylus gigas
+            type: nomen oblitum
+            reason: Erected by Cope (1892) on two dorsal vertebrae from the Hell Creek Formation of South Dakota; treated as indeterminate by Osborn (1916). The name is technically senior to Tyrannosaurus rex but, having been used in fewer than 25 publications since 1899, is suppressed under ICZN Article 23.9 in favor of Tyrannosaurus rex (nomen protectum).
         erected_in: osborn1905a
         authors: Osborn, H. F.
         described: 1905
