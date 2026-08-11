@@ -226,9 +226,10 @@ const regionRegistry = parseYamlContent(
 ) as Record<string, string>;
 const allowedRegionCodes = new Set(Object.keys(regionRegistry));
 
-const formationRegistry = parseYamlContent(
-    fs.readFileSync(path.join(root, "formations.yaml"), "utf8"),
-) as Record<string, { rank?: string; stages?: Array<string> }>;
+// `formations.yaml` is deliberately not read here. The registry is being
+// rebuilt from scratch (#2075), so every check that resolved a record against
+// it was removed rather than left to fail against a table nobody trusts. The
+// checks return once the rebuilt registry lands.
 
 const flaggedSources = loadFlaggedSources(path.join(root, "flagged-sources.yml"));
 const flaggedPublishers = buildFlaggedSet(flaggedSources.publishers);
@@ -1288,13 +1289,14 @@ for (const [filePath, doc] of genusParsed)
 }
 
 // 13a. A group belongs in `location.group`, not in `location.formation`
+//
+// Only the spelled-out rank word is caught here. A bare name carries no rank --
+// "Morrison" is a formation and "Kem Kem" is a group, spelled the same way in
+// the same field -- so telling those apart needs the registry, and that half of
+// the check is gone until the rebuilt `formations.yaml` lands (#2075).
 startCheck("Formation rank");
 
 const groupRankWord = /\b(Group|Grp\.?|Subgroup|Supergroup)$/;
-const knownGroups = new Set(
-    Object.entries(formationRegistry)
-        .filter(([, entry]) => entry && (entry.rank === "group" || entry.rank === "subgroup"))
-        .map(([name]) => name.split(" (")[0]));
 
 for (const [filePath, doc] of genusParsed)
 {
@@ -1317,129 +1319,6 @@ for (const [filePath, doc] of genusParsed)
                 "Formation rank",
                 filePath,
                 `species '${species.name ?? "?"}': formation '${formation}' names a group — put it in 'group' with the rank word dropped`);
-        }
-        else if (knownGroups.has(formation))
-        {
-            // Nothing in a bare name records its rank, which is why the
-            // registry exists: "Morrison" is a formation and "Kem Kem" is a
-            // group, spelled the same way in the same field.
-            checkError(
-                "Formation rank",
-                filePath,
-                `species '${species.name ?? "?"}': formation '${formation}' is a group per formations.yaml — put it in 'group'`);
-        }
-    }
-}
-
-// 13a. A record's stages against its unit's published range (formations.yaml).
-//
-// The registry range is an ENVELOPE, never a source to derive from: a taxon is
-// frequently dated more finely than its unit, from a level above a contact or a
-// dated ash, and that precision is the point. Two things are worth saying about
-// a record that does not sit inside it.
-startCheck("Stage envelope");
-
-/**
- * Finds the registry entry governing a record, preferring the finest unit the
- * record populates, so a member's own range wins over its formation's.
- *
- * @param location - The species location block under inspection.
- * @returns The registry stage range and the unit it came from, or null.
- */
-function unitStageRange(location: {
-    group?: string;
-    formation?: string;
-    member?: string;
-    bed?: string;
-}): { unit: string; stages: Array<string> } | null
-{
-    const candidates = [location.bed, location.member, location.formation, location.group];
-
-    for (const candidate of candidates)
-    {
-        if (typeof candidate !== "string")
-        {
-            continue;
-        }
-
-        const entry = formationRegistry[candidate];
-
-        if (entry && Array.isArray(entry.stages) && entry.stages.length > 0)
-        {
-            return { unit: candidate, stages: entry.stages };
-        }
-    }
-
-    return null;
-}
-
-/**
- * Width below which an exact match against the unit's range says nothing --
- * every record in a single-stage unit correctly equals that unit's range.
- */
-const inheritedSpanThreshold = 3;
-
-for (const [filePath, doc] of genusParsed)
-{
-    if (!doc || !Array.isArray(doc.species))
-    {
-        continue;
-    }
-
-    for (const species of doc.species)
-    {
-        const recordStages = species?.period?.stage;
-
-        if (!Array.isArray(recordStages) || recordStages.length === 0 || !species.location)
-        {
-            continue;
-        }
-
-        const range = unitStageRange(species.location);
-
-        if (!range)
-        {
-            continue;
-        }
-
-        const allowed = new Set(range.stages);
-        const outside = recordStages.filter((stageName: string) => !allowed.has(stageName));
-
-        if (outside.length > 0)
-        {
-            checkWarning(
-                "Stage envelope",
-                filePath,
-                `species '${species.name ?? "?"}': ${outside.join(", ")} lies outside the ` +
-                `${range.unit} range (${range.stages.join(", ")}) in formations.yaml`);
-        }
-        else if (
-            range.stages.length >= inheritedSpanThreshold
-            && recordStages.length === range.stages.length)
-        {
-            // `resolution: unit` is the record saying this IS the unit's range,
-            // because nothing finer has been published. That is an answer, not
-            // an omission, so it settles the finding rather than hiding it.
-            if (species.period?.resolution !== "unit")
-            {
-                checkWarning(
-                    "Stage envelope",
-                    filePath,
-                    `species '${species.name ?? "?"}': stages are exactly the ${range.unit} ` +
-                    `range (${range.stages.join(", ")}) — either narrow them from the ` +
-                    "describing paper, or set period.resolution: unit to record that no " +
-                    "finer age is published");
-            }
-        }
-        else if (species.period?.resolution === "unit")
-        {
-            // Claiming unit resolution while carrying something other than the
-            // unit's range is a contradiction: one of the two is wrong.
-            checkError(
-                "Stage envelope",
-                filePath,
-                `species '${species.name ?? "?"}': period.resolution is 'unit' but the ` +
-                `stages are not the ${range.unit} range (${range.stages.join(", ")})`);
         }
     }
 }
@@ -2425,8 +2304,8 @@ for (const [filePath, doc] of genusParsed)
 // field added to a record — or a registry that gains a `notes:` — is picked
 // up by all three prose checks at once. The alternative, a hand-written list
 // of field paths per check, is what left `type_specimen.notes`,
-// `former_ids[].notes`, `iczn_rulings[].notes` and the whole formations
-// registry unchecked, and let the two lists drift apart from each other.
+// `former_ids[].notes`, `iczn_rulings[].notes` and whole registries
+// unchecked, and let the two lists drift apart from each other.
 //
 // Prose is identified by the name of the key holding the string, not by its
 // path: `notes` is prose wherever it appears, `specimen_id` never is. Array
@@ -2495,13 +2374,12 @@ for (const [filePath, entry] of referenceStoreParsed)
     collectProseFields(entry, filePath, "", null, proseFields);
 }
 
-// The registries are keyed by unit name, institution code and region code,
-// so each top-level entry is walked under its own key rather than from the
-// document root. `regions.yaml` maps a code straight to a string and has no
-// prose today; walking it anyway means a `notes:` added there needs no
-// change here.
+// The registries are keyed by institution code and region code, so each
+// top-level entry is walked under its own key rather than from the document
+// root. `regions.yaml` maps a code straight to a string and has no prose
+// today; walking it anyway means a `notes:` added there needs no change here.
+// `formations.yaml` is absent while it is being rebuilt (#2075).
 const registrySources: Array<[string, Record<string, unknown>]> = [
-    [path.join(root, "formations.yaml"), formationRegistry as Record<string, unknown>],
     [path.join(root, "institutions.yaml"), institutionRegistry],
     [path.join(root, "regions.yaml"), regionRegistry as unknown as Record<string, unknown>],
 ];
