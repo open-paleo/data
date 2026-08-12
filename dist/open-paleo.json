@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-08-11T03:15:12.546Z",
+    "built_at": "2026-08-12T00:43:31.717Z",
     "clade_count": 188,
     "genus_count": 1421,
     "license": "CC-BY-4.0",
@@ -11595,11 +11595,9 @@
             "locality": "Marc's Quarry, farm Spion Kop 932",
             "region": "Free State",
             "formation": "Elliot",
-            "coordinates": [
-              -28.466389,
-              27.824444
-            ],
-            "region_code": "ZA-FS"
+            "part": "upper",
+            "region_code": "ZA-FS",
+            "part_of": "formation"
           },
           "size": {
             "hip_height_m": {
@@ -11746,10 +11744,6 @@
             "locality": "Abdrant Nuru",
             "region": "Ömnögovi",
             "formation": "Alagteeg",
-            "coordinates": [
-              44.523335,
-              103.154999
-            ],
             "region_code": "MN-053"
           },
           "size": {
@@ -11908,14 +11902,16 @@
           },
           "location": {
             "country": "ES",
-            "locality": "Orcau-1 (Isona)",
+            "locality": "Orcau-1",
             "region": "Catalonia",
             "formation": "Conques",
+            "part": "lower",
             "coordinates": [
-              42.159443,
-              0.973056
+              42.159484,
+              0.972953
             ],
-            "region_code": "ES-CT"
+            "region_code": "ES-CT",
+            "part_of": "formation"
           },
           "size": {
             "hip_height_m": {
@@ -12118,14 +12114,13 @@
           },
           "location": {
             "country": "AR",
-            "locality": "Cantera de la Pala Mécanica",
+            "locality": "Lago Pellegrini stone quarries",
             "region": "Río Negro",
-            "formation": "Anacleto",
-            "coordinates": [
-              -38.76173,
-              -67.982765
-            ],
-            "region_code": "AR-R"
+            "formation": "Allen",
+            "part": "lower",
+            "notes": "Where the holotype came from is unsettled. Bonaparte and Novas (1985) placed it in the lower Allen Formation at the Lago Pellegrini quarries. Heredia and Salgado (1999) reassigned the Pellegrini dinosaur beds, and Leanza and colleagues (2004) followed them, which is where the Anacleto attribution comes from. Gianechini and colleagues (2015) return the specimen to the Allen Formation and go further, reporting from local testimony that it came from the Sr. Fernandez field near Salitral Moreno rather than Pellegrini at all, while cautioning that \"no witnesses are alive and no field notes were taken\". Aranciaga Rolando and colleagues (2021) note a further referral to the lower member of the Allen Formation and treat the position as uncertain pending published evidence.",
+            "region_code": "AR-R",
+            "part_of": "formation"
           },
           "type_specimen": {
             "specimen_id": [
@@ -12174,6 +12169,51 @@
           "volume": "21",
           "pages": "259-265",
           "notes": "In Spanish."
+        },
+        {
+          "id": "heredia1999a",
+          "authors": "Heredia, S.; Salgado, L.",
+          "year": 1999,
+          "title": "Posición estratigráfica de los estratos supracretácicos portadores de dinosaurios en el Lago Pellegrini, Patagonia septentrional, Argentina",
+          "journal": "Ameghiniana",
+          "volume": "36",
+          "issue": "2",
+          "pages": "229-234",
+          "notes": "Reassigned the Lago Pellegrini dinosaur beds, the origin of the Anacleto attribution. In Spanish."
+        },
+        {
+          "id": "leanza2004a",
+          "authors": "Leanza, H. A.; Apesteguía, S.; Novas, F. E.; de la Fuente, M. S.",
+          "year": 2004,
+          "title": "Cretaceous terrestrial beds from the Neuquén Basin (Argentina) and their tetrapod assemblages",
+          "journal": "Cretaceous Research",
+          "publisher": "Elsevier BV",
+          "volume": "25",
+          "issue": "1",
+          "pages": "61-87",
+          "notes": "Follows Heredia and Salgado in placing the holotype in the Anacleto Formation."
+        },
+        {
+          "id": "gianechini2015a",
+          "authors": "Gianechini, F. A.; Apesteguía, S.; Landini, W.; Finotti, F.; Juárez Valieri, R. D.; Zandonai, F.",
+          "year": 2015,
+          "title": "New abelisaurid remains from the Anacleto Formation (Upper Cretaceous), Patagonia, Argentina",
+          "journal": "Cretaceous Research",
+          "publisher": "Elsevier BV",
+          "volume": "54",
+          "pages": "1-16",
+          "notes": "Returns the holotype to the Allen Formation and questions the Lago Pellegrini provenance."
+        },
+        {
+          "id": "aranciagarolando2021a",
+          "authors": "Aranciaga Rolando, M.; Cerroni, M. A.; Garcia Marsà, J. A.; Agnolín, F. L.; Motta, M. J.; Rozadilla, S.; Brisson Eglí, F.; Novas, F. E.",
+          "year": 2021,
+          "title": "A new medium-sized abelisaurid (Theropoda, Dinosauria) from the late cretaceous (Maastrichtian) Allen Formation of Northern Patagonia, Argentina",
+          "journal": "Journal of South American Earth Sciences",
+          "publisher": "Elsevier BV",
+          "volume": "105",
+          "doi": "10.1016/j.jsames.2020.102915",
+          "notes": "Reviews the competing referrals and treats the stratigraphic position as uncertain."
         },
         {
           "id": "jones2026c",
@@ -12322,11 +12362,9 @@
             "locality": "Noosi",
             "region": "Qacha's Nek",
             "formation": "Elliot",
-            "coordinates": [
-              -30.049999,
-              28.533333
-            ],
-            "region_code": "LS-H"
+            "part": "upper",
+            "region_code": "LS-H",
+            "part_of": "formation"
           },
           "type_specimen": {
             "specimen_id": [
@@ -12384,6 +12422,18 @@
           "journal": "South African Journal of Science",
           "volume": "71",
           "pages": "302-305"
+        },
+        {
+          "id": "bordy2015a",
+          "authors": "Bordy, E. M.; Eriksson, P.",
+          "year": 2015,
+          "title": "Lithostratigraphy of the Elliot Formation (Karoo Supergroup), South Africa",
+          "journal": "South African Journal of Geology",
+          "volume": "118",
+          "issue": "3",
+          "pages": "311-316",
+          "doi": "10.2113/gssajg.118.3.311",
+          "notes": "Records that Thulborn's \"Red Beds\" were formally renamed the Elliot Formation, accepted by SACS in 1980."
         },
         {
           "id": "jones2026a",
@@ -12481,10 +12531,6 @@
             "region": "Sichuan",
             "formation": "Shaximiao",
             "part": "lower",
-            "coordinates": [
-              29.411388,
-              104.852501
-            ],
             "region_code": "CN-SC",
             "part_of": "formation"
           },
@@ -12624,16 +12670,11 @@
           },
           "location": {
             "country": "US",
+            "locality": "DNM 16",
             "region": "Utah",
             "formation": "Cedar Mountain",
-            "member": "Ruby Ranch",
-            "part": "upper",
-            "coordinates": [
-              40.440887,
-              -109.305244
-            ],
-            "region_code": "US-UT",
-            "part_of": "member"
+            "member": "Mussentuchit",
+            "region_code": "US-UT"
           },
           "size": {
             "weight_kg": {
@@ -12772,8 +12813,8 @@
             "region": "Coahuila",
             "formation": "Pen",
             "coordinates": [
-              28.637777,
-              -102.948608
+              28.637778,
+              -102.948611
             ],
             "region_code": "MX-COA"
           },
@@ -12813,6 +12854,17 @@
           "issue": "1",
           "pages": "83-93",
           "doi": "10.1007/s13358-018-0153-1"
+        },
+        {
+          "id": "rivera-sylva2011a",
+          "authors": "Rivera-Sylva, H. E.; Carpenter, K.; Aranda-Manteca, F. J.",
+          "year": 2011,
+          "title": "Late Cretaceous nodosaurids (Ankylosauria: Ornithischia) from Mexico",
+          "journal": "Revista Mexicana de Ciencias Geológicas",
+          "volume": "28",
+          "issue": "3",
+          "pages": "271-278",
+          "notes": "First description of the holotype, and the source of the type locality coordinates, which Rivera-Sylva and colleagues (2018) withhold."
         },
         {
           "id": "jones2026a",
@@ -12915,12 +12967,8 @@
           "location": {
             "country": "GB",
             "region": "England",
-            "locality": "Foreshore between tide-marks near Folkestone",
+            "locality": "East of Copt Point, near Folkestone",
             "formation": "West Melbury Marly Chalk",
-            "coordinates": [
-              51.083302,
-              1.1833
-            ],
             "region_code": "GB-ENG"
           },
           "size": {
@@ -12960,6 +13008,16 @@
         }
       ],
       "references": [
+        {
+          "id": "hopson2005a",
+          "authors": "Hopson, P. M.",
+          "year": 2005,
+          "title": "A stratigraphical framework for the Upper Cretaceous Chalk of England and Scotland, with statements on the Chalk of Northern Ireland and the UK Offshore Sector",
+          "journal": "British Geological Survey Research Report",
+          "publisher": "British Geological Survey",
+          "volume": "RR/05/01",
+          "notes": "Defines the West Melbury Marly Chalk Formation and names Copt Point among its primary reference sections."
+        },
         {
           "id": "vickaryous2004a",
           "authors": "Vickaryous, M. K.; Maryańska, T.; Weishampel, D. B.",
@@ -13104,10 +13162,6 @@
             "locality": "Landslide Butte Field Area",
             "region": "Montana",
             "formation": "Two Medicine",
-            "coordinates": [
-              48.970821,
-              -112.642014
-            ],
             "region_code": "US-MT"
           },
           "size": {
@@ -13262,10 +13316,6 @@
             "locality": "45 km southwest of Jordan",
             "region": "Montana",
             "formation": "Hell Creek",
-            "coordinates": [
-              47.053055,
-              -107.350281
-            ],
             "region_code": "US-MT"
           },
           "size": {
@@ -13434,13 +13484,9 @@
           },
           "location": {
             "country": "AR",
-            "locality": "Paso Córdova (Bajo de la Carpa)",
+            "locality": "Paso Córdova",
             "region": "Río Negro",
             "formation": "Bajo de la Carpa",
-            "coordinates": [
-              -39.117699,
-              -67.632301
-            ],
             "region_code": "AR-R"
           },
           "type_specimen": {
@@ -13579,10 +13625,6 @@
             "locality": "Burkhant",
             "region": "Dornogovi",
             "formation": "Baynshire",
-            "coordinates": [
-              44.34,
-              109.858887
-            ],
             "region_code": "MN-063"
           },
           "type_specimen": {
@@ -13766,13 +13808,12 @@
           },
           "location": {
             "country": "US",
+            "locality": "Museum of the Rockies locality TM-281",
             "region": "Montana",
             "formation": "Two Medicine",
-            "coordinates": [
-              47.720959,
-              -112.329094
-            ],
-            "region_code": "US-MT"
+            "part": "lower",
+            "region_code": "US-MT",
+            "part_of": "formation"
           },
           "type_specimen": {
             "specimen_id": [
@@ -13942,10 +13983,6 @@
             "locality": "Cochran farm",
             "region": "Oklahoma",
             "formation": "Antlers",
-            "coordinates": [
-              33.895557,
-              -94.826385
-            ],
             "region_code": "US-OK"
           },
           "type_specimen": {
@@ -14180,13 +14217,10 @@
           },
           "location": {
             "country": "CA",
-            "locality": "Black Coulee",
+            "locality": "Roy Audet's ranch, 1.5 km east of Writing-On-Stone Provincial Park",
             "region": "Alberta",
             "formation": "Milk River",
-            "coordinates": [
-              49.083698,
-              -111.436096
-            ],
+            "member": "Deadhorse Coulee",
             "region_code": "CA-AB"
           },
           "erected_in": "evans2013b",
@@ -14300,13 +14334,9 @@
           },
           "location": {
             "country": "BR",
-            "locality": "Pacaembú Cut no. 45",
+            "locality": "near Flórida Paulista, on the railway between Adamantina and Irapurú",
             "region": "São Paulo",
             "formation": "Adamantina",
-            "coordinates": [
-              -21.5667,
-              -51.283298
-            ],
             "region_code": "BR-SP"
           },
           "size": {
@@ -14454,14 +14484,10 @@
           },
           "location": {
             "country": "MN",
-            "locality": "Bugin Tsav",
-            "region": "Ömnögovi",
+            "locality": "Bügiin Tsav",
+            "region": "Bayankhongor",
             "formation": "Nemegt",
-            "coordinates": [
-              43.540001,
-              99.599998
-            ],
-            "region_code": "MN-053"
+            "region_code": "MN-069"
           },
           "type_specimen": {
             "specimen_id": [
@@ -14636,13 +14662,13 @@
           },
           "location": {
             "country": "US",
+            "locality": "UCMP locality V98173",
             "region": "Utah",
             "formation": "Wahweap",
-            "coordinates": [
-              37.599998,
-              -111.900002
-            ],
-            "region_code": "US-UT"
+            "member": "Coyote Point",
+            "part": "lower",
+            "region_code": "US-UT",
+            "part_of": "member"
           },
           "size": {
             "length_m": {
@@ -14673,6 +14699,27 @@
           "journal": "Hadrosaurs",
           "publisher": "Indiana University Press",
           "pages": "156-173"
+        },
+        {
+          "id": "holroyd2016a",
+          "authors": "Holroyd, P. A.; Hutchison, J. H.",
+          "year": 2016,
+          "title": "Fauna and setting of the Adelolophus hutchisoni type locality in the Upper Cretaceous (Campanian) Wahweap Formation of Utah",
+          "journal": "PaleoBios",
+          "volume": "33",
+          "notes": "Fixes the type locality as UCMP V98173 (= USGS D815) and places it low in the upper member."
+        },
+        {
+          "id": "beveridge2022a",
+          "authors": "Beveridge, T. L.; Roberts, E. M.; Ramezani, J.; Titus, A. L.; Eaton, J. G.; Irmis, R. B.; Sertich, J. J. W.",
+          "year": 2022,
+          "title": "Refined geochronology and revised stratigraphic nomenclature of the Upper Cretaceous Wahweap Formation, Utah, U.S.A. and the age of early Campanian vertebrates from southern Laramidia",
+          "journal": "Palaeogeography, Palaeoclimatology, Palaeoecology",
+          "publisher": "Elsevier BV",
+          "volume": "591",
+          "pages": "110876",
+          "doi": "10.1016/j.palaeo.2022.110876",
+          "notes": "Formalizes the Wahweap's informal upper member as the Coyote Point Member."
         },
         {
           "id": "jones2026a",
@@ -14773,14 +14820,12 @@
           },
           "location": {
             "country": "AR",
-            "locality": "Sierra de Mogna (148 m)",
+            "locality": "southwestern Sierra de Mogna",
             "region": "San Juan",
-            "formation": "Cañon del Colorado",
-            "coordinates": [
-              -30.5,
-              -68.5
-            ],
-            "region_code": "AR-J"
+            "formation": "Cañón del Colorado",
+            "part": "upper",
+            "region_code": "AR-J",
+            "part_of": "formation"
           },
           "size": {
             "length_m": {
