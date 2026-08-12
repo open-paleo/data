@@ -53,12 +53,10 @@ species:
         - Campanian
     location:
       country: US
-      locality: WPA Quarry L3
+      locality: WPA-1
       region: US-TX
       formation: Aguja
-      coordinates:
-        - 29.134722
-        - -103.203613
+      member: Alto Shale
     size:
       hip_height_m:
         min: 1.8
@@ -92,7 +90,7 @@ species:
       country: US
       region: US-TX
       formation: Aguja
-      member: Upper Shale
+      member: Alto Shale
       locality: Rattlesnake Mountain
     type_specimen:
       specimen_id:
@@ -116,4 +114,7 @@ references:
   - id: lucas2006a
   - id: jones2026a
     notes: Source of the hip height estimate, and the appearance features.
+  - id: lehman2024a
+    notes: Formally recognizes the Aguja's informal upper shale member as
+      the Alto Shale Member.
   - id: lehman2016b

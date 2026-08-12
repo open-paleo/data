@@ -1328,12 +1328,15 @@ startCheck("Stratigraphic rank hygiene");
 
 const positionalPrefix = /^(Upper|Lower|Middle|Uppermost|Lowermost|First|Second|Third)\b/;
 
-// Member names that genuinely begin with a positional word, where it is part of
-// the erected name rather than a division of it. The Aguja's members are named
-// for lithology rather than geography -- Lower Shale, Upper Shale, McKinney
-// Springs, Terlingua Creek Sandstone -- so "Upper" here is a name, not a place
-// in the section. Moves to the formations registry when #2012 lands.
-const positionalUnitNames = new Set([ "Upper Shale", "Lower Shale" ]);
+// Member names that genuinely begin with a positional word, where it is part
+// of the erected name rather than a division of it. Empty today: the entries
+// were the Aguja's "Upper Shale" and "Lower Shale", which Lehman (2024)
+// formalised as the Alto Shale and Bajo Shale members, so no record needs the
+// exemption any more. The set stays because the case recurs -- a formation
+// whose members are named for lithology rather than geography can put a
+// positional word inside a proper name. Moves to the formations registry when
+// #2012 lands.
+const positionalUnitNames = new Set<string>([]);
 
 for (const [filePath, doc] of genusParsed)
 {
