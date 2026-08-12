@@ -53,11 +53,11 @@ species:
         - Campanian
     location:
       country: US
+      locality: UCMP locality V98173
       region: US-UT
       formation: Wahweap
-      coordinates:
-        - 37.599998
-        - -111.900002
+      member: Coyote Point
+      part: lower
     size:
       length_m:
         min: 8.2
@@ -71,5 +71,11 @@ species:
     erected_in: gates2014b
 references:
   - id: gates2014b
+  - id: holroyd2016a
+    notes: Fixes the type locality as UCMP V98173 (= USGS D815) and places
+      it low in the upper member.
+  - id: beveridge2022a
+    notes: Formalizes the Wahweap's informal upper member as the Coyote
+      Point Member.
   - id: jones2026a
     notes: Source of the body length estimate.

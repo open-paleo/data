@@ -141,11 +141,22 @@ for (const file of findYamlFiles(path.join(root, "genera")))
                 }
             }
 
-            if (species.location && typeof species.location.formation === "string")
+            // Every rank, not just the formation: a member or bed name is
+            // drawn from the same curated stratigraphic vocabulary, and the
+            // location audit populates those fields far more often than it
+            // adds a new formation. `locality` is deliberately left out --
+            // it is free text naming a quarry, a farm or a road cutting,
+            // which is not vocabulary the dictionary should carry.
+            for (const field of ["group", "formation", "member", "bed"] as const)
             {
-                for (const word of species.location.formation.split(/\s+/))
+                const unit = species.location?.[field];
+
+                if (typeof unit === "string")
                 {
-                    words.add(word);
+                    for (const word of unit.split(/\s+/))
+                    {
+                        words.add(word);
+                    }
                 }
             }
         }
