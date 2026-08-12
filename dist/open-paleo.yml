@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-08-12T20:22:58.253Z
+  built_at: 2026-08-12T22:42:18.491Z
   clade_count: 188
   genus_count: 1421
   license: CC-BY-4.0
@@ -20161,12 +20161,10 @@ genera:
           to_ma: 149.2
         location:
           country: CN
-          locality: Daxishan, Linglongta
+          locality: Yaolugou
           region: Liaoning
           formation: Tiaojishan
-          coordinates:
-            - 40.916668
-            - 119.650002
+          notes: The formation is the referred specimen's. Xu and colleagues (2008) place the holotype at Yaolugou in lacustrine deposits they date only as uncertainly Jurassic to Cretaceous, naming no unit; Hu and colleagues (2009) give the Tiaojishan Formation for the referred specimen from Daxishan, a nearby site.
           region_code: CN-LN
         size:
           hip_height_m:
@@ -20332,13 +20330,12 @@ genera:
           to_ma: 192.9
         location:
           country: US
-          locality: Wolcott Quarry, Manchester
+          locality: Manchester
           region: Connecticut
           formation: Portland
-          coordinates:
-            - 41.809765
-            - -72.550735
+          part: upper
           region_code: US-CT
+          part_of: formation
         size:
           hip_height_m:
             min: 0.6
@@ -20392,6 +20389,14 @@ genera:
         journal: American Journal of Science
         volume: "29"
         pages: "169"
+      - id: yates2004a
+        authors: Yates, A. M.
+        year: 2004
+        title: "Anchisaurus polyzelus (Hitchcock): the smallest known sauropod dinosaur and the evolution of gigantism among sauropodomorph dinosaurs"
+        journal: Postilla
+        volume: "230"
+        pages: 1-57
+        notes: Source of the Portland Formation assignment for the neotype.
       - id: marsh1889b
         authors: Marsh, O. C.
         year: 1889
@@ -20490,13 +20495,12 @@ genera:
           to_ma: 93.9
         location:
           country: AR
-          locality: Villa El Chocón, 5 km southwest
+          locality: El Chocón, 5 km southeast
           region: Neuquén
           formation: Candeleros
-          coordinates:
-            - -39.2803
-            - -68.756302
+          part: lower
           region_code: AR-Q
+          part_of: formation
         size:
           hip_height_m:
             min: 3.5
@@ -20601,13 +20605,11 @@ genera:
           to_ma: 85.7
         location:
           country: AO
-          region: Namibe
-          locality: Iembe, Tadi (PaleoAngola collection)
+          region: Bengo
+          locality: Tadi
           formation: Itombe
-          coordinates:
-            - -8.285
-            - 13.345
-          region_code: AO-NAM
+          bed: Tadi
+          region_code: AO-BGO
         type_specimen:
           specimen_id:
             - MGUAN-PA-003
@@ -20716,13 +20718,13 @@ genera:
           to_ma: 72.2
         location:
           country: US
-          locality: Big Bend
+          locality: Dawson Creek
           region: Texas
           formation: Aguja
-          coordinates:
-            - 29.301561
-            - -103.504128
+          member: Alto Shale
+          part: middle
           region_code: US-TX
+          part_of: member
         size:
           length_m:
             min: 7
@@ -20822,13 +20824,12 @@ genera:
           to_ma: 161.5
         location:
           country: CN
-          locality: Jimushan, Hengguan Village
+          locality: Jimushan
           region: Anhui
           formation: Hongqin
-          coordinates:
-            - 29.7925
-            - 118.450554
+          part: lower
           region_code: CN-AH
+          part_of: formation
         type_specimen:
           specimen_id:
             - AGB 5822
@@ -20910,13 +20911,12 @@ genera:
           to_ma: 89.8
         location:
           country: AR
-          locality: Cañadón Las Horquetas, estancia Laguna Palacios
+          locality: Laguna Palacios ranch
           region: Chubut
           formation: Bajo Barreal
-          coordinates:
-            - -44.76667
-            - -69.183334
+          part: lower
           region_code: AR-U
+          part_of: formation
         size:
           length_m:
             min: 2
@@ -21013,13 +21013,10 @@ genera:
           to_ma: 100.5
         location:
           country: US
-          locality: Carol Jones Quarry
+          locality: Carol Site
           region: Utah
           formation: Cedar Mountain
           member: Mussentuchit
-          coordinates:
-            - 39.155956
-            - -110.857689
           region_code: US-UT
         size:
           weight_kg:
@@ -21131,10 +21128,7 @@ genera:
           country: US
           region: Montana
           formation: Hell Creek
-          locality: near Gilbert Creek, ~120 mi north of Miles City
-          coordinates:
-            - 47.5
-            - -106.5
+          locality: Gilbert Creek
           region_code: US-MT
         size:
           weight_kg:
@@ -21305,13 +21299,13 @@ genera:
           to_ma: 66
         location:
           country: CA
-          locality: 8 miles southwest of Morrin (90 ft level)
+          locality: 8 miles southwest of Morrin, along the Red Deer River
           region: Alberta
           formation: Horseshoe Canyon
-          coordinates:
-            - 51.630001
-            - -112.934799
+          member: Horsethief
+          part: upper
           region_code: CA-AB
+          part_of: member
         type_specimen:
           specimen_id:
             - CMN 8530
@@ -21348,7 +21342,9 @@ genera:
           region: Alberta
           formation: Dinosaur Park
           locality: Near Hilda
+          part: middle
           region_code: CA-AB
+          part_of: formation
         type_specimen:
           specimen_id:
             - TMP 1997.132.0001
@@ -21451,12 +21447,9 @@ genera:
           to_ma: 72.2
         location:
           country: CN
-          locality: Kugou Quarry, Zhucheng
+          locality: Kugou
           region: Shandong
-          formation: Hongtuya
-          coordinates:
-            - 35.995598
-            - 119.409943
+          group: Wangshi
           region_code: CN-SD
         type_specimen:
           specimen_id:
@@ -21544,12 +21537,10 @@ genera:
           to_ma: 100.5
         location:
           country: GB
-          locality: Reach, Cambridge
+          locality: Reach
           region: Cambridgeshire
-          formation: Cambridge Greensand
-          coordinates:
-            - 52.27
-            - 0.3
+          group: Chalk
+          notes: Which unit the syntypes came from is unresolved. Pereda-Suberbiola and Barrett (1999) place them in either the Cambridge Greensand or the underlying Upper Gault Clay without deciding, and the Cambridge Greensand is itself a remanié deposit whose fossils are reworked from older beds. The group is recorded because it contains both candidates.
           region_code: GB-CAM
         size:
           length_m:
@@ -21661,13 +21652,10 @@ genera:
           to_ma: 66
         location:
           country: MN
-          locality: Bugin Tsav
-          region: Ömnögovi
+          locality: Bügiin Tsav
+          region: Bayankhongor
           formation: Nemegt
-          coordinates:
-            - 43.540001
-            - 99.599998
-          region_code: MN-053
+          region_code: MN-069
         type_specimen:
           specimen_id:
             - IGM 100/300
@@ -21768,11 +21756,11 @@ genera:
           to_ma: 72.2
         location:
           country: AQ
-          locality: DG6-1, Santa Marta Cove
+          locality: D6-1, Santa Marta Cove
           formation: Snow Hill Island
-          coordinates:
-            - -63.926666
-            - -57.814167
+          member: Gamma
+          part: lower
+          part_of: member
         size:
           hip_height_m:
             min: 1.2
@@ -21886,12 +21874,9 @@ genera:
           to_ma: 66
         location:
           country: AR
-          locality: right bank, Rio Negro
+          locality: opposite General Roca
           region: Río Negro
           formation: Anacleto
-          coordinates:
-            - -39.119301
-            - -67.650002
           region_code: AR-R
         type_specimen:
           specimen_id:
@@ -22004,13 +21989,16 @@ genera:
           to_ma: 227.3
         location:
           country: AR
-          locality: North of Agua de la Peña
+          locality: Ischigualasto Provincial Park, Hoyada de Ischigualasto
           region: San Juan
           formation: Ischigualasto
+          member: Cancha de Bochas
+          part: lower
           coordinates:
-            - -30.066668
-            - -67.933334
+            - -30.066667
+            - -67.933333
           region_code: AR-J
+          part_of: member
         type_specimen:
           specimen_id:
             - PVSJ 1085
@@ -22092,10 +22080,12 @@ genera:
           locality: Welbedacht (611)/Edelweiss (698)
           region: Free State
           formation: Elliot
+          part: lower
           coordinates:
             - -29.106667
-            - 27.319445
+            - 27.319444
           region_code: ZA-FS
+          part_of: formation
         size:
           length_m:
             min: 8
@@ -22194,12 +22184,9 @@ genera:
           to_ma: 66
         location:
           country: US
-          locality: Sandy Site, KJ9536
+          locality: approximately 23 km southwest of Buffalo
           region: South Dakota
           formation: Hell Creek
-          coordinates:
-            - 45.873333
-            - -103.787224
           region_code: US-SD
         size:
           length_m:
@@ -22303,8 +22290,8 @@ genera:
           region: Río Negro
           formation: Huincul
           coordinates:
-            - -39.397778
-            - -68.617775
+            - -39.397881
+            - -68.617861
           region_code: AR-R
         size:
           length_m:
@@ -22426,13 +22413,12 @@ genera:
           to_ma: 161.5
         location:
           country: CN
-          locality: Aorun locality
+          locality: Wucaiwan
           region: Xinjiang
           formation: Shishugou
-          coordinates:
-            - 45.191288
-            - 88.919884
+          part: lower
           region_code: CN-XJ
+          part_of: formation
         type_specimen:
           specimen_id:
             - IVPP V15709
