@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-08-12T04:50:06.845Z",
+    "built_at": "2026-08-12T06:18:28.510Z",
     "clade_count": 188,
     "genus_count": 1421,
     "license": "CC-BY-4.0",
@@ -18031,13 +18031,10 @@
           },
           "location": {
             "country": "US",
-            "locality": "Barrel Springs arroyo",
+            "locality": "Barrel Spring Arroyo",
             "region": "New Mexico",
             "formation": "Ojo Alamo",
-            "coordinates": [
-              36.3148,
-              -108.030701
-            ],
+            "member": "Naashoibito",
             "region_code": "US-NM"
           },
           "type_specimen": {
@@ -18126,6 +18123,16 @@
           "volume": "72",
           "issue": "34",
           "pages": "1-9"
+        },
+        {
+          "id": "sullivan2006c",
+          "authors": "Sullivan, R. M.; Lucas, S. G.",
+          "year": 2006,
+          "title": "The Kirtlandian land-vertebrate \"age\" — faunal composition, temporal position and biostratigraphic correlation in the nonmarine Upper Cretaceous of western North America",
+          "journal": "New Mexico Museum of Natural History and Science Bulletin",
+          "volume": "35",
+          "pages": "7-29",
+          "notes": "Places the Naashoibito Member in the Ojo Alamo Formation."
         },
         {
           "id": "lehman2002a",
@@ -18310,10 +18317,6 @@
             "locality": "W side Colville River",
             "region": "Alaska",
             "formation": "Prince Creek",
-            "coordinates": [
-              69.91745,
-              -151.194565
-            ],
             "region_code": "US-AK"
           },
           "size": {
@@ -18442,10 +18445,6 @@
             "locality": "Kaseki-kabe (facies III), Shiramine",
             "region": "Ishikawa",
             "formation": "Kuwajima",
-            "coordinates": [
-              36.166668,
-              136.633331
-            ],
             "region_code": "JP-17"
           },
           "type_specimen": {
@@ -18598,11 +18597,13 @@
             "locality": "Pinhorn Grazing Reserve",
             "region": "Alberta",
             "formation": "Oldman",
+            "part": "lower",
             "coordinates": [
               49.120899,
               -110.862686
             ],
-            "region_code": "CA-AB"
+            "region_code": "CA-AB",
+            "part_of": "formation"
           },
           "type_specimen": {
             "specimen_id": [
@@ -18747,11 +18748,9 @@
             "locality": "Canal Creek",
             "region": "Alberta",
             "formation": "Oldman",
-            "coordinates": [
-              49.179443,
-              -110.682777
-            ],
-            "region_code": "CA-AB"
+            "part": "upper",
+            "region_code": "CA-AB",
+            "part_of": "formation"
           },
           "type_specimen": {
             "specimen_id": [
@@ -18891,10 +18890,7 @@
             "locality": "25 m northeast of Bleriot Ferry bonebed",
             "region": "Alberta",
             "formation": "Horseshoe Canyon",
-            "coordinates": [
-              51.538891,
-              -112.878609
-            ],
+            "member": "Horsethief",
             "region_code": "CA-AB"
           },
           "size": {
@@ -18929,6 +18925,19 @@
           "issue": "8",
           "pages": "813-826",
           "doi": "10.1139/cjes-2017-0034"
+        },
+        {
+          "id": "eberth2012a",
+          "authors": "Eberth, D. A.; Braman, D. R.",
+          "year": 2012,
+          "title": "A revised stratigraphy and depositional history for the Horseshoe Canyon Formation (Upper Cretaceous), southern Alberta plains",
+          "journal": "Canadian Journal of Earth Sciences",
+          "publisher": "Canadian Science Publishing",
+          "volume": "49",
+          "issue": "9",
+          "pages": "1053-1086",
+          "doi": "10.1139/e2012-035",
+          "notes": "Source of the Horsethief Member."
         },
         {
           "id": "jones2026c",
@@ -19047,10 +19056,7 @@
             "locality": "Albertosaurus Bonebed, Dry Island Buffalo Jump",
             "region": "Alberta",
             "formation": "Horseshoe Canyon",
-            "coordinates": [
-              51.995834,
-              -112.883331
-            ],
+            "member": "Tolman",
             "region_code": "CA-AB"
           },
           "type_specimen": {
@@ -19093,6 +19099,29 @@
           "issue": "1",
           "pages": "239-252",
           "doi": "10.1016/j.cretres.2008.07.005"
+        },
+        {
+          "id": "larson2010a",
+          "authors": "Larson, D. W.; Brinkman, D. B.; Bell, P. R.",
+          "year": 2010,
+          "title": "Faunal assemblages from the upper Horseshoe Canyon Formation, an early Maastrichtian cool-climate assemblage from Alberta, with special reference to the Albertosaurus sarcophagus bonebed",
+          "journal": "Canadian Journal of Earth Sciences",
+          "volume": "47",
+          "issue": "9",
+          "notes": "Places the Albertosaurus bonebed at the top of unit 4."
+        },
+        {
+          "id": "eberth2012a",
+          "authors": "Eberth, D. A.; Braman, D. R.",
+          "year": 2012,
+          "title": "A revised stratigraphy and depositional history for the Horseshoe Canyon Formation (Upper Cretaceous), southern Alberta plains",
+          "journal": "Canadian Journal of Earth Sciences",
+          "publisher": "Canadian Science Publishing",
+          "volume": "49",
+          "issue": "9",
+          "pages": "1053-1086",
+          "doi": "10.1139/e2012-035",
+          "notes": "Source of the Tolman Member, unit 4 of the revised Horseshoe Canyon stratigraphy."
         },
         {
           "id": "jones2026c",
@@ -19196,13 +19225,9 @@
           },
           "location": {
             "country": "CA",
-            "locality": "2.5 miles above Bleriot ferry, Red Deer River",
+            "locality": "Knee Hills Creek, Red Deer River",
             "region": "Alberta",
             "formation": "Horseshoe Canyon",
-            "coordinates": [
-              51.8046,
-              -112.981903
-            ],
             "region_code": "CA-AB"
           },
           "type_specimen": {
@@ -19369,10 +19394,6 @@
             "locality": "Khugenetjavkhlant",
             "region": "Dornogovi",
             "formation": "Javkhlant",
-            "coordinates": [
-              44.393677,
-              109.35318
-            ],
             "region_code": "MN-063"
           },
           "size": {
@@ -19523,10 +19544,6 @@
             "region": "Wyoming",
             "locality": "Alcova Quarry, Natrona County",
             "formation": "Morrison",
-            "coordinates": [
-              41.967098,
-              -106.291
-            ],
             "region_code": "US-WY"
           },
           "type_specimen": {
@@ -19708,10 +19725,6 @@
             "locality": "Quarry 136, Iren Dabasu",
             "region": "Inner Mongolia",
             "formation": "Iren Dabasu",
-            "coordinates": [
-              43.733334,
-              112.01667
-            ],
             "region_code": "CN-NM"
           },
           "size": {
@@ -19856,10 +19869,6 @@
             "locality": "Carlsbad Ankylosaur",
             "region": "California",
             "formation": "Point Loma",
-            "coordinates": [
-              33.130001,
-              -117.29528
-            ],
             "region_code": "US-CA"
           },
           "size": {
@@ -19989,10 +19998,6 @@
             "region": "Eastern Cape",
             "locality": "Port Elizabeth Brick and Tile Company quarry, Despatch, near Uitenhage",
             "formation": "Kirkwood",
-            "coordinates": [
-              -33.799999,
-              25.466667
-            ],
             "region_code": "ZA-EC"
           },
           "size": {
@@ -20027,6 +20032,17 @@
           "issue": "9",
           "pages": "445-447",
           "doi": "10.1017/s0016756800123891"
+        },
+        {
+          "id": "mcphee2016b",
+          "authors": "McPhee, B. W.; Mannion, P. D.; de Klerk, W. J.; Choiniere, J. N.",
+          "year": 2016,
+          "title": "High diversity in the sauropod dinosaur fauna of the Lower Cretaceous Kirkwood Formation of South Africa: implications for the Jurassic-Cretaceous transition",
+          "journal": "Cretaceous Research",
+          "publisher": "Elsevier BV",
+          "volume": "59",
+          "pages": "228-248",
+          "notes": "Assigns the holotype to the Kirkwood Formation, which Broom (1904) names only as Cretaceous beds."
         }
       ],
       "taxonomy": [
@@ -20120,11 +20136,9 @@
             "locality": "Nogon Tsav",
             "region": "Bayankhongor",
             "formation": "Nemegt",
-            "coordinates": [
-              43,
-              99
-            ],
-            "region_code": "MN-069"
+            "part": "lower",
+            "region_code": "MN-069",
+            "part_of": "formation"
           },
           "type_specimen": {
             "specimen_id": [
@@ -20371,14 +20385,11 @@
           },
           "location": {
             "country": "US",
-            "locality": "Quarry 1, Como Bluff",
-            "region": "Wyoming",
+            "locality": "Felch Quarry 1, Garden Park",
+            "region": "Colorado",
             "formation": "Morrison",
-            "coordinates": [
-              41.893101,
-              -106.041
-            ],
-            "region_code": "US-WY"
+            "member": "Brushy Basin",
+            "region_code": "US-CO"
           },
           "type_specimen": {
             "specimen_id": [
@@ -20704,11 +20715,7 @@
             "country": "MN",
             "locality": "Ukhaa Tolgod",
             "region": "Ömnögovi",
-            "formation": "Djadokhta",
-            "coordinates": [
-              43.664444,
-              100.901947
-            ],
+            "formation": "Djadochta",
             "region_code": "MN-053"
           },
           "type_specimen": {
@@ -20877,11 +20884,9 @@
             "locality": "La Buitrera (Hoyada de los esfenodontes)",
             "region": "Río Negro",
             "formation": "Candeleros",
-            "coordinates": [
-              -39.628613,
-              -68.700836
-            ],
-            "region_code": "AR-R"
+            "part": "upper",
+            "region_code": "AR-R",
+            "part_of": "formation"
           },
           "size": {
             "length_m": {
@@ -21163,11 +21168,13 @@
             "locality": "FTU-1, Uurusai Valley",
             "region": "Jalal-Abad",
             "formation": "Balabansai",
+            "part": "upper",
             "coordinates": [
-              41.340557,
-              72.191391
+              41.340417,
+              72.19125
             ],
-            "region_code": "KG-J"
+            "region_code": "KG-J",
+            "part_of": "formation"
           },
           "size": {
             "length_m": {
@@ -21334,10 +21341,6 @@
             "locality": "Khuren-Dukh",
             "region": "Dornogovi",
             "formation": "Khuren Dukh",
-            "coordinates": [
-              45.845833,
-              108.398613
-            ],
             "region_code": "MN-063"
           },
           "size": {
