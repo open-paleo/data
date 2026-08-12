@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-08-12T06:18:28.510Z
+  built_at: 2026-08-12T20:22:58.253Z
   clade_count: 188
   genus_count: 1421
   license: CC-BY-4.0
@@ -17853,9 +17853,6 @@ genera:
           locality: Boca del Sapo, Universidad Nacional del Comahue
           region: Neuquén
           formation: Bajo de la Carpa
-          coordinates:
-            - -38.953888
-            - -68.234169
           region_code: AR-Q
         type_specimen:
           specimen_id:
@@ -17959,7 +17956,7 @@ genera:
           country: CN
           locality: Elesitai
           region: Inner Mongolia
-          formation: Bayangobi
+          formation: Bayin-Gobi
           coordinates:
             - 41.166668
             - 106.083336
@@ -18069,10 +18066,12 @@ genera:
           locality: Basse Montagne Quarry, Moutier
           region: Bern
           formation: Reuchenette
+          part: lower
           coordinates:
-            - 47.288612
-            - 7.377222
+            - 47.288622
+            - 7.377128
           region_code: CH-BE
+          part_of: formation
         size:
           length_m:
             min: 10
@@ -18239,13 +18238,12 @@ genera:
           to_ma: 121.4
         location:
           country: AR
-          locality: La Amarga (main site)
+          locality: 2.5 km southeast of the La Amarga Arroyo bridge on National Route 40
           region: Neuquén
           formation: La Amarga
-          coordinates:
-            - -39.481979
-            - -70.194786
+          part: lower
           region_code: AR-Q
+          part_of: formation
         type_specimen:
           specimen_id:
             - MACN-N 15
@@ -18363,12 +18361,10 @@ genera:
           to_ma: 121.4
         location:
           country: AR
-          locality: La Amarga Creek, Catan Lil Department
+          locality: La Amarga Creek
           region: Neuquén
           formation: La Amarga
-          coordinates:
-            - -39.481979
-            - -70.194786
+          member: Puesto Antigual
           region_code: AR-Q
         size:
           length_m:
@@ -18469,9 +18465,7 @@ genera:
           locality: La Amarga (site 1)
           region: Neuquén
           formation: La Amarga
-          coordinates:
-            - -39.481079
-            - -70.192703
+          member: Puesto Antigual
           region_code: AR-Q
         size:
           hip_height_m:
@@ -18504,6 +18498,14 @@ genera:
         issue: "4"
         pages: 533-546
         doi: 10.1016/j.gr.2007.04.007
+      - id: gallina2016a
+        authors: Gallina, P. A.
+        year: 2016
+        title: Reappraisal of the Early Cretaceous sauropod dinosaur Amargatitanis macni (Apesteguía, 2007), from northwestern Patagonia, Argentina
+        journal: Cretaceous Research
+        publisher: Elsevier BV
+        doi: 10.1016/j.cretres.2016.04.002
+        notes: Redefines the holotype as MACN PV N53 and places it in the Puesto Antigual Member.
       - id: jones2026b
         authors: Jones, B.; Viola, E.
         year: 2026
@@ -18580,12 +18582,9 @@ genera:
           to_ma: 100.5
         location:
           country: BR
-          locality: Mata locality, Itapecuru-Mirim
+          locality: Mata
           region: Maranhão
           formation: Itapecuru
-          coordinates:
-            - -3.402652
-            - -44.360516
           region_code: BR-MA
         size:
           length_m:
@@ -18701,9 +18700,6 @@ genera:
           locality: Wubaiding Village
           region: Liaoning
           formation: Haifanggou
-          coordinates:
-            - 41.233334
-            - 119.400002
           region_code: CN-LN
         size:
           length_m:
@@ -18814,12 +18810,9 @@ genera:
           to_ma: 93.9
         location:
           country: US
-          locality: Grapevine Lake Dam Spillway
+          locality: Grapevine Lake emergency spillway
           region: Texas
           formation: Lewisville
-          coordinates:
-            - 32.980507
-            - -97.057213
           region_code: US-TX
         size:
           length_m:
@@ -18935,12 +18928,10 @@ genera:
           to_ma: 66
         location:
           country: FR
-          locality: Bellevue, locality C3 (C III)
+          locality: Bellevue
           region: Occitania
           formation: Marnes Rouges Inférieures
-          coordinates:
-            - 42.9137
-            - 2.2
+          member: Marnes de la Maurine
           region_code: FR-OCC
         type_specimen:
           specimen_id:
@@ -19101,10 +19092,10 @@ genera:
           locality: Cope Quarry XII
           region: Colorado
           formation: Morrison
-          coordinates:
-            - 38.5527
-            - -105.2397
+          member: Brushy Basin
+          part: upper
           region_code: US-CO
+          part_of: member
         size:
           hip_height_m:
             min: 4
@@ -19235,10 +19226,7 @@ genera:
           country: MN
           locality: Amtgai
           region: Ömnögovi
-          formation: Baynshire
-          coordinates:
-            - 43.564167
-            - 107.911667
+          formation: Bayanshiree
           region_code: MN-053
         size:
           length_m:
@@ -19345,10 +19333,7 @@ genera:
           country: MN
           region: Ömnögovi
           locality: Amtgai
-          formation: Baynshire
-          coordinates:
-            - 43.144169
-            - 107.518059
+          formation: Bayanshiree
           region_code: MN-053
         type_specimen:
           specimen_id:
@@ -19451,10 +19436,12 @@ genera:
           locality: Blagoveschensk
           region: Amur
           formation: Udurchukan
+          part: upper
           coordinates:
-            - 50.27
-            - 127.47583
+            - 50.26879
+            - 127.48062
           region_code: RU-AMU
+          part_of: formation
         size:
           length_m:
             min: 8
@@ -19564,12 +19551,9 @@ genera:
           to_ma: 174.7
         location:
           country: AR
-          locality: East Slope, Sierra Pampa de Agnía
+          locality: Eastern slope of the Pampa de Agnía range
           region: Chubut
           formation: Cerro Carnerero
-          coordinates:
-            - -43.966667
-            - -69.51667
           region_code: AR-U
         size:
           length_m:
@@ -19687,12 +19671,9 @@ genera:
           to_ma: 89.8
         location:
           country: AR
-          locality: Cerro Bayo Mesa, NF2
+          locality: Cerro Bayo Mesa
           region: Neuquén
           formation: Cerro Lisandro
-          coordinates:
-            - -39.07045
-            - -69.15123
           region_code: AR-Q
         type_specimen:
           specimen_id:
@@ -19793,10 +19774,9 @@ genera:
           locality: Quarry 1, Lao Chang Qing
           region: Yunnan
           formation: Chuanjie
-          coordinates:
-            - 24.9725
-            - 102.076111
+          part: lower
           region_code: CN-YN
+          part_of: formation
         size:
           length_m:
             min: 16.7
@@ -19901,12 +19881,10 @@ genera:
           to_ma: 72.2
         location:
           country: US
-          locality: Betonnie Tstosie Wash
+          locality: Betonnie Tsosie Wash
           region: New Mexico
           formation: Kirtland
-          coordinates:
-            - 36.1548
-            - -107.816597
+          member: Farmington
           region_code: US-NM
         size:
           length_m:
@@ -19933,6 +19911,12 @@ genera:
         journal: New Mexico Museum of Natural History and Science Bulletin
         volume: "2"
         pages: 77-91
+      - id: lucas2006b
+        authors: Lucas, S. G.; Spielmann, J. A.; Sullivan, R. M.; Hunt, A. P.; Gates, T.
+        year: 2006
+        title: Anasazisaurus, a hadrosaurian dinosaur from the Upper Cretaceous of New Mexico
+        journal: New Mexico Museum of Natural History and Science Bulletin
+        notes: Source of the Farmington Member assignment and the Betonnie Tsosie Wash locality.
       - id: prieto-márquez2013c
         authors: Prieto-Márquez, A.
         year: 2013
@@ -20030,12 +20014,9 @@ genera:
           to_ma: 66
         location:
           country: CA
-          locality: 12 miles north of Morrin (70 ft level)
+          locality: 7 miles below Tolman Ferry, Red Deer River
           region: Alberta
           formation: Horseshoe Canyon
-          coordinates:
-            - 51.840279
-            - -112.783333
           region_code: CA-AB
         type_specimen:
           specimen_id:
