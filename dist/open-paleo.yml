@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-08-12T22:42:18.491Z
+  built_at: 2026-08-13T01:37:35.023Z
   clade_count: 188
   genus_count: 1421
   license: CC-BY-4.0
@@ -15966,6 +15966,7 @@ genera:
           locality: Knee Hills Creek, Red Deer River
           region: Alberta
           formation: Horseshoe Canyon
+          notes: No member is recorded because none can be sourced. Russell (1970) places the holotype in Member A of the Edmonton Formation, following the informal zonation of Russell and Chamney (1967), and no paper correlates that member with the seven named members Eberth and Braman (2012) erected in its place. The Albertosaurus bonebed at Dry Island Buffalo Jump does sit in the Tolman Member, but that is referred material from well above the type locality.
           region_code: CA-AB
         type_specimen:
           specimen_id:
@@ -22547,10 +22548,8 @@ genera:
             - Late Jurassic
         location:
           country: US
-          region: Colorado
           locality: Rocky Mountain region
-          formation: Morrison
-          region_code: US-CO
+          notes: Where the type came from was never recorded. Marsh (1877) gives only the Rocky Mountain region and a horizon of Lower Cretaceous or Jurassic, and Chure (2000) reports the holotype lost and repeats the same phrase. The Morrison Formation and a Colorado attribution appear in later compilations without stated support.
         type_specimen:
           specimen_type: holotype
           status: lost
@@ -22655,12 +22654,13 @@ genera:
           to_ma: 66
         location:
           country: CA
-          locality: 3 km west of RTMP
+          locality: 3 km west of the Royal Tyrrell Museum of Palaeontology
           region: Alberta
           formation: Horseshoe Canyon
+          member: Horsethief
           coordinates:
-            - 51.490768
-            - -112.806282
+            - 51.490773
+            - -112.806287
           region_code: CA-AB
         size:
           length_m:
@@ -22773,12 +22773,12 @@ genera:
         location:
           country: US
           region: Colorado
-          locality: Como Bluff
+          locality: Lakes' Quarry 10, Morrison
           formation: Morrison
-          coordinates:
-            - 39.653423
-            - -105.187332
+          member: Brushy Basin
+          part: upper
           region_code: US-CO
+          part_of: member
         type_specimen:
           specimen_id:
             - YPM 1860
@@ -22813,11 +22813,8 @@ genera:
         location:
           country: US
           region: Utah
-          locality: Carnegie Quarry, Dinosaur National Monument
+          locality: Carnegie Quarry, near Jensen
           formation: Morrison
-          coordinates:
-            - 40.439722
-            - -109.302778
           region_code: US-UT
         type_specimen:
           specimen_id:
@@ -22965,12 +22962,9 @@ genera:
           to_ma: 66
         location:
           country: US
-          locality: Turnipseed Dinosaur Site
+          locality: Turnipseed Dinosaur site
           region: Alabama
-          formation: Demopolis Chalk
-          coordinates:
-            - 32.36
-            - -86.3
+          formation: Demopolis
           region_code: US-AL
         size:
           hip_height_m:
@@ -23078,12 +23072,10 @@ genera:
           to_ma: 72.2
         location:
           country: US
-          locality: TxVP 42452
+          locality: western flank of Rattlesnake Mountain
           region: Texas
           formation: Aguja
-          coordinates:
-            - 29.239721
-            - -103.614166
+          member: Abajo Shale
           region_code: US-TX
         type_specimen:
           specimen_id:
@@ -23191,12 +23183,16 @@ genera:
           to_ma: 100.5
         location:
           country: US
+          locality: OMNH locality V1057
           region: Montana
           formation: Cloverly
+          member: Himes
+          part: lower
           coordinates:
             - 45
             - -109
           region_code: US-MT
+          part_of: member
         size:
           hip_height_m:
             min: 0.15
@@ -23302,12 +23298,9 @@ genera:
           to_ma: 66
         location:
           country: CL
-          locality: Quebrada La Higuera
+          locality: La Higuera ravine
           region: Atacama
           formation: Hornitos
-          coordinates:
-            - -27.99
-            - -70.239998
           region_code: CL-AT
         size:
           weight_kg:
@@ -23425,9 +23418,7 @@ genera:
           locality: Las Zabacheras
           region: Aragon
           formation: Villar del Arzobispo
-          coordinates:
-            - 40.661667
-            - -0.87934
+          notes: The unit is disputed. Sanz and colleagues (1987) name no formation, placing Las Zabacheras in an informal Unit 3. Later work splits three ways. Aurell and colleagues (2016) erect the Galve Formation for that unit, while Campos-Soto and colleagues (2019) keep it in the Villar del Arzobispo Formation in the broad sense, which is the reading recorded here and the one Jones (2026) follows. Weishampel and colleagues (2004) instead give the Castellar Formation.
           region_code: ES-AR
         type_specimen:
           specimen_id:
@@ -23524,12 +23515,9 @@ genera:
           to_ma: 72.2
         location:
           country: KZ
-          locality: Shakh-Shakh (lower)
+          locality: Shakh-Shakh
           region: Kyzylorda
           formation: Bostobe
-          coordinates:
-            - 45.950001
-            - 64.650002
           region_code: KZ-43
         size:
           length_m:
@@ -23628,13 +23616,12 @@ genera:
           to_ma: 100.5
         location:
           country: BR
-          locality: Mina Pedra Branca (black shale layer)
+          locality: Mina Pedra Branca
           region: Ceará
           formation: Romualdo
-          coordinates:
-            - -7.125556
-            - -39.435001
+          part: lower
           region_code: BR-CE
+          part_of: formation
         size:
           length_m:
             min: 3.1
@@ -23724,11 +23711,9 @@ genera:
           to_ma: 100.5
         location:
           country: CN
+          locality: Gongpoquan Basin
           region: Gansu
           formation: Zhonggou
-          coordinates:
-            - 41.575001
-            - 97.583336
           region_code: CN-GS
         type_specimen:
           specimen_id:
@@ -23762,8 +23747,8 @@ genera:
         location:
           country: CN
           region: Gansu
-          group: Xinminpu
           locality: Yujingzi Basin, Mazongshan area
+          formation: Xiagou
           region_code: CN-GS
         type_specimen:
           specimen_id:
@@ -23878,12 +23863,13 @@ genera:
           to_ma: 184.2
         location:
           country: CN
-          locality: Xiantao Street
+          locality: near Congyansi subway station
           region: Chongqing
           formation: Ziliujing
+          member: Dongyuemiao
           coordinates:
-            - 29.749166
-            - 106.582497
+            - 29.749167
+            - 106.5825
           region_code: CN-CQ
         size:
           length_m:
@@ -23978,12 +23964,9 @@ genera:
           to_ma: 165.3
         location:
           country: MG
-          locality: west of Ambondromamy
+          locality: vicinity of Ambondromamy
           region: Mahajanga
           formation: Isalo IIIb
-          coordinates:
-            - -16.416668
-            - 47.133331
           region_code: MG-M
         erected_in: buffetaut2005a
         type_specimen:
@@ -24090,12 +24073,9 @@ genera:
           to_ma: 143.1
         location:
           country: DE
-          locality: Blumenberg Quarry, Eichstätt
+          locality: Ottmann quarry, Langenaltheimer Haardt
           region: Bavaria
           formation: Altmühltal
-          coordinates:
-            - 48.993889
-            - 11.203056
           region_code: DE-BY
         size:
           hip_height_m:
@@ -24350,13 +24330,11 @@ genera:
           to_ma: 72.2
         location:
           country: MN
-          locality: Bayn Dzak site
+          locality: Bayn Dzak
           region: Ömnögovi
-          formation: Djadokhta
+          formation: Djadochta
           member: Bayn Dzak
-          coordinates:
-            - 44.156948
-            - 103.692329
+          notes: Dashzeveg and colleagues (2005) list this genus under the Tugrugyin Shireh fauna in their Table 2, against their own body text and against Elzanowski and Wellnhofer (1992), who place the holotype at Bayn Dzak. The table appears to be in error.
           region_code: MN-053
         type_specimen:
           specimen_id:
@@ -24465,13 +24443,12 @@ genera:
           to_ma: 72.2
         location:
           country: CN
-          locality: Kaisen Quarry, Iren Dabasu
+          locality: Kaisen Quarry
           region: Inner Mongolia
           formation: Iren Dabasu
-          coordinates:
-            - 43.83139
-            - 112.427498
+          part: upper
           region_code: CN-NM
+          part_of: formation
         size:
           hip_height_m:
             min: 0.9
@@ -24607,13 +24584,12 @@ genera:
           to_ma: 72.2
         location:
           country: FR
-          locality: A8 motorway, Pourrières
+          locality: Jas Neuf Sud
           region: Provence-Alpes-Côte d'Azur
-          formation: Argiles rutilantes
-          coordinates:
-            - 43.458698
-            - 5.7914
+          formation: Argiles Rutilantes
+          part: lower
           region_code: FR-PAC
+          part_of: formation
         size:
           weight_kg:
             min: 900
@@ -24730,10 +24706,12 @@ genera:
           locality: Sauropod Quarry, farm Spion Kop 932
           region: Free State
           formation: Elliot
+          part: upper
           coordinates:
-            - -28.466667
-            - 27.825277
+            - -28.4667
+            - 27.825383
           region_code: ZA-FS
+          part_of: formation
         size:
           length_m:
             min: 2.3
@@ -24826,8 +24804,8 @@ genera:
           region: Wyoming
           formation: Morrison
           coordinates:
-            - 44.650002
-            - -107.816666
+            - 44.65
+            - -107.816667
           region_code: US-WY
         size:
           length_m:
@@ -24937,11 +24915,10 @@ genera:
           country: ES
           locality: Blasi 3, Arén
           region: Aragon
-          formation: La Posa
-          coordinates:
-            - 42.26667
-            - 0.73333
+          formation: Tremp
+          part: lower
           region_code: ES-AR
+          part_of: formation
         type_specimen:
           specimen_id:
             - MPZ2008/1
