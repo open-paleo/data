@@ -1329,14 +1329,13 @@ startCheck("Stratigraphic rank hygiene");
 const positionalPrefix = /^(Upper|Lower|Middle|Uppermost|Lowermost|First|Second|Third)\b/;
 
 // Member names that genuinely begin with a positional word, where it is part
-// of the erected name rather than a division of it. Empty today: the entries
-// were the Aguja's "Upper Shale" and "Lower Shale", which Lehman (2024)
-// formalised as the Alto Shale and Bajo Shale members, so no record needs the
-// exemption any more. The set stays because the case recurs -- a formation
-// whose members are named for lithology rather than geography can put a
-// positional word inside a proper name. Moves to the formations registry when
-// #2012 lands.
-const positionalUnitNames = new Set<string>([]);
+// of the erected name rather than a division of it. Bussert and colleagues
+// (2009) raised the Tendaguru Beds to formation rank and named six members in
+// a series -- Lower Dinosaur, Middle Dinosaur, Upper Dinosaur -- so "Upper"
+// there is a name, not a place in the section. The Aguja's "Upper Shale" and
+// "Lower Shale" sat here until Lehman (2024) formalised them as the Alto and
+// Abajo Shale members. Moves to the formations registry when #2012 lands.
+const positionalUnitNames = new Set<string>([ "Upper Dinosaur" ]);
 
 for (const [filePath, doc] of genusParsed)
 {
