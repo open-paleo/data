@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-08-14T05:03:26.505Z",
+    "built_at": "2026-08-14T18:12:44.360Z",
     "clade_count": 188,
     "genus_count": 1421,
     "license": "CC-BY-4.0",
@@ -43019,11 +43019,9 @@
             "locality": "Blasi 1, Arén",
             "region": "Aragon",
             "formation": "Arén",
-            "coordinates": [
-              42.26667,
-              0.73333
-            ],
-            "region_code": "ES-AR"
+            "part": "upper",
+            "region_code": "ES-AR",
+            "part_of": "formation"
           },
           "type_specimen": {
             "specimen_id": [
@@ -43169,14 +43167,12 @@
           },
           "location": {
             "country": "ZA",
-            "locality": "Blikana Mountain, Transkei (zone A/4)",
+            "locality": "1.6 km northeast of Blikana Trading Store, Herschel district",
             "region": "Eastern Cape",
             "formation": "Elliot",
-            "coordinates": [
-              -30.566668,
-              27.616667
-            ],
-            "region_code": "ZA-EC"
+            "part": "lower",
+            "region_code": "ZA-EC",
+            "part_of": "formation"
           },
           "type_specimen": {
             "specimen_id": [
@@ -43339,14 +43335,17 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Bataigou, Toutai, Yixian",
+            "locality": "Bataigou",
             "region": "Liaoning",
             "formation": "Yixian",
+            "member": "Dakangpu",
+            "part": "middle",
             "coordinates": [
-              41.601944,
-              121.128609
+              41.601886,
+              121.128639
             ],
-            "region_code": "CN-LN"
+            "region_code": "CN-LN",
+            "part_of": "member"
           },
           "type_specimen": {
             "specimen_id": [
@@ -43521,10 +43520,6 @@
             "region": "Río Negro",
             "formation": "Allen",
             "part": "upper",
-            "coordinates": [
-              -39.431946,
-              -67.294441
-            ],
             "region_code": "AR-R",
             "part_of": "formation"
           },
@@ -43663,11 +43658,9 @@
             "locality": "Salitral Moreno",
             "region": "Río Negro",
             "formation": "Allen",
-            "coordinates": [
-              -39.296665,
-              -67.534164
-            ],
-            "region_code": "AR-R"
+            "part": "lower",
+            "region_code": "AR-R",
+            "part_of": "formation"
           },
           "size": {
             "length_m": {
@@ -43806,11 +43799,9 @@
             "locality": "Bajo de Santa Rosa",
             "region": "Río Negro",
             "formation": "Allen",
-            "coordinates": [
-              -40.057777,
-              -66.800835
-            ],
-            "region_code": "AR-R"
+            "part": "lower",
+            "region_code": "AR-R",
+            "part_of": "formation"
           },
           "type_specimen": {
             "specimen_id": [
@@ -43958,14 +43949,12 @@
           },
           "location": {
             "country": "AR",
-            "locality": "La Bonita Hill Quarry",
+            "locality": "La Bonita hill fossil quarry",
             "region": "Río Negro",
             "formation": "Bajo de la Carpa",
-            "coordinates": [
-              -39.633331,
-              -68.349998
-            ],
-            "region_code": "AR-R"
+            "part": "upper",
+            "region_code": "AR-R",
+            "part_of": "formation"
           },
           "size": {
             "weight_kg": {
@@ -44116,9 +44105,10 @@
             "locality": "Suncor Millennium Mine",
             "region": "Alberta",
             "formation": "Clearwater",
+            "member": "Wabiskaw",
             "coordinates": [
-              56.746944,
-              -111.374443
+              56.980076,
+              -111.354622
             ],
             "region_code": "CA-AB"
           },
@@ -44171,6 +44161,19 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25025-0",
           "notes": "Source of the hip height estimate, and the appearance features."
+        },
+        {
+          "id": "brown2020b",
+          "authors": "Brown, C. M.; Greenwood, D. R.; Kalyniuk, J. E.; Braman, D. R.; Henderson, D. M.; Greenwood, C. L.; Basinger, J. F.",
+          "year": 2020,
+          "title": "Dietary palaeoecology of an Early Cretaceous armoured dinosaur (Ornithischia; Nodosauridae) based on floral analysis of stomach contents",
+          "journal": "Royal Society Open Science",
+          "publisher": "The Royal Society",
+          "volume": "7",
+          "issue": "6",
+          "pages": "200305",
+          "doi": "10.1098/rsos.200305",
+          "notes": "Prints the holotype's UTM position in the Suncor Millennium Mine, and places it in the Wabiskaw Member."
         }
       ],
       "taxonomy": [
@@ -44251,10 +44254,6 @@
             "locality": "Shuangmiao, Beipiao",
             "region": "Liaoning",
             "formation": "Sunjiawan",
-            "coordinates": [
-              41.772778,
-              120.792221
-            ],
             "region_code": "CN-LN"
           },
           "size": {
@@ -44400,13 +44399,9 @@
           },
           "location": {
             "country": "CA",
-            "locality": "Pipestone Creek Bonebed",
+            "locality": "Pipestone Creek",
             "region": "Alberta",
             "formation": "Wapiti",
-            "coordinates": [
-              55.0639,
-              -119.108101
-            ],
             "region_code": "CA-AB"
           },
           "type_specimen": {
@@ -44560,14 +44555,12 @@
           },
           "location": {
             "country": "MN",
-            "locality": "Altan Ula IV",
+            "locality": "Altan Uul IV",
             "region": "Ömnögovi",
             "formation": "Nemegt",
-            "coordinates": [
-              43.601665,
-              100.456665
-            ],
-            "region_code": "MN-053"
+            "part": "lower",
+            "region_code": "MN-053",
+            "part_of": "formation"
           },
           "type_specimen": {
             "specimen_id": [
@@ -44735,14 +44728,10 @@
           },
           "location": {
             "country": "GB",
-            "region": "England",
+            "region": "Wiltshire",
             "formation": "Kimmeridge Clay",
-            "locality": "Swindon Brick and Tile Company quarry, Wiltshire",
-            "coordinates": [
-              51.55,
-              -1.78
-            ],
-            "region_code": "GB-ENG"
+            "locality": "Swindon Brick and Tile Company's Works",
+            "region_code": "GB-WIL"
           },
           "type_specimen": {
             "specimen_id": [
@@ -44899,11 +44888,7 @@
             "country": "US",
             "region": "Colorado",
             "formation": "Morrison",
-            "locality": "Riggs Quarry No. 13, Grand River valley near Grand Junction",
-            "coordinates": [
-              39.1,
-              -108.6
-            ],
+            "locality": "Grand River valley",
             "region_code": "US-CO"
           },
           "size": {
@@ -45133,13 +45118,11 @@
           "location": {
             "country": "US",
             "region": "Montana",
-            "locality": "Milk River, Blackfeet Indian Reservation, Teton County",
+            "locality": "Milk River, Blackfeet Indian Reservation",
             "formation": "Two Medicine",
-            "coordinates": [
-              48.9646,
-              -112.664398
-            ],
-            "region_code": "US-MT"
+            "part": "upper",
+            "region_code": "US-MT",
+            "part_of": "formation"
           },
           "size": {
             "skull_length_m": {
@@ -45311,10 +45294,6 @@
             "locality": "Little Sandhill Creek, near Steveville",
             "region": "Alberta",
             "formation": "Oldman",
-            "coordinates": [
-              50.76,
-              -111.5
-            ],
             "region_code": "CA-AB"
           },
           "type_specimen": {
@@ -45551,10 +45530,6 @@
             "region": "Madhya Pradesh",
             "locality": "Chota Simla Hill, near Jabalpur",
             "formation": "Lameta",
-            "coordinates": [
-              23.16,
-              79.95
-            ],
             "region_code": "IN-MP"
           },
           "type_specimen": {
@@ -45703,13 +45678,9 @@
           },
           "location": {
             "country": "AR",
-            "locality": "Cerro Cóndor NE sauropod site",
+            "locality": "Hill summit 25 km north-northeast of Cerro Cóndor",
             "region": "Chubut",
             "formation": "Cañadón Calcáreo",
-            "coordinates": [
-              -43.688889,
-              -71.583336
-            ],
             "region_code": "AR-U"
           },
           "type_specimen": {
@@ -45843,12 +45814,9 @@
           },
           "location": {
             "country": "RO",
+            "locality": "Szentpeterfalva, Hătszeg",
             "region": "Hunedoara",
             "formation": "Sânpetru",
-            "coordinates": [
-              45.549999,
-              22.916668
-            ],
             "region_code": "RO-HD"
           },
           "type_specimen": {
@@ -45966,7 +45934,7 @@
             "country": "BR",
             "locality": "Raposo Tavares state road, km 571",
             "region": "São Paulo",
-            "formation": "Adamantina",
+            "formation": "Presidente Prudente",
             "coordinates": [
               -22.117779,
               -51.442501
@@ -46093,13 +46061,9 @@
           },
           "location": {
             "country": "AR",
-            "locality": "Quebrada de Santo Domingo (lower section: 34 m bed)",
+            "locality": "Quebrada de Santo Domingo",
             "region": "La Rioja",
             "formation": "Ciénaga del Río Huaco",
-            "coordinates": [
-              -28.5,
-              -68.75
-            ],
             "region_code": "AR-F"
           },
           "type_specimen": {
