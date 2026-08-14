@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-08-14T21:56:40.631Z
+  built_at: 2026-08-14T22:06:16.615Z
   clade_count: 188
   genus_count: 1421
   license: CC-BY-4.0
@@ -34930,11 +34930,14 @@ genera:
     paleoenvironment:
       - fluvial
     diagnostic_features:
-      - Longitudinal groove on the suture between parietals continuing posteriorly over the supraoccipital to the foramen magnum
-      - Basisphenoid tubera long and narrow, more than twice as long as wide
+      - Small paired pits on the frontals
+      - Basisphenoid tubera long and narrow, slightly more than twice as long as wide
       - Dorsal to middle caudal vertebrae with deep oval to circular pits on both sides of the prespinal lamina
-      - Anterior caudal vertebra with an accessory sub-horizontal lamina extending from the antero-ventral portion of the postzygapophysis to the mid-portion of the spino-prezygapophysial lamina
+      - Anterior caudal vertebra with spino-postzygapophyseal and spino-prezygapophyseal laminae
+      - Neural arch of anterior caudals with deep interzygapophyseal fossae with numerous pits
+      - Anterior caudal vertebra with an accessory sub-horizontal lamina extending from the anteroventral portion of the postzygapophysis to the mid-portion of the spino-prezygapophyseal lamina
       - Anterior caudal vertebra with a prominent axial crest on the ventral surface of the centrum
+      - Posterior ridge on metacarpal IV
     appearance:
       integument: scaled
       evidence: inferred
@@ -34972,8 +34975,9 @@ genera:
             - MACN-PV RN 821
           specimen_type: holotype
           institution: Museo Argentino de Ciencias Naturales ‘Bernardino Rivadavia’
-          material: Complete braincase, middle dorsal vertebra, anterior caudal vertebra, middle caudal neural arch, left humerus, fragment of metacarpal, both femora, both tibiae, left fibula, left calcaneous, left metatarsal I, and some fragmentary elements
-          completeness: partial
+          material: Braincase, the better preserved of the two known for the species
+          completeness: fragmentary
+          notes: Salgado and colleagues restricted the holotype to the braincase under ICZN Article 73.1.5, having found that the elements originally cataloged together came from three individuals of different sizes; the remaining bones became referred material.
         size:
           length_m:
             min: 6
@@ -34985,8 +34989,19 @@ genera:
             min: 1.5
             max: 1.5
         erected_in: martinelli2004a
+        described_in: salgado2014a
         authors: Martinelli, A.; Forasiepi, A.
         described: 2004
+    notable_specimens:
+      - specimen_id:
+          - MACN-PV RN 821
+          - MACN-PV RN 1061
+        institution: Museo Argentino de Ciencias Naturales ‘Bernardino Rivadavia’
+        species: Bonatitan reigi
+        category: complementary
+        significance: Referred material representing four individuals, preserving a second braincase and nearly all known postcranial anatomy of the species, including previously undescribed metacarpals, astragali, sacral ribs, haemal arches and metatarsals.
+        references:
+          - salgado2014a
     references:
       - id: martinelli2004a
         authors: Martinelli, A.; Forasiepi, A.
@@ -34997,6 +35012,17 @@ genera:
         volume: "6"
         pages: 257-265
         doi: 10.22179/revmacn.6.88
+      - id: salgado2014a
+        authors: Salgado, L.; Gallina, P. A.; Paulina-Carabajal, A.
+        year: 2014
+        title: "Redescription of Bonatitan reigi (Sauropoda: Titanosauria), from the Campanian–Maastrichtian of the Río Negro Province (Argentina)"
+        journal: Historical Biology
+        publisher: Informa UK Limited
+        volume: "27"
+        issue: "5"
+        pages: 525-548
+        doi: 10.1080/08912963.2014.894038
+        notes: Reorganized the material into five individuals and recovered Bonatitan outside Saltasaurinae.
       - id: jones2026b
         authors: Jones, B.; Viola, E.
         year: 2026
