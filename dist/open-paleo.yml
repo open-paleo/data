@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-08-15T03:29:18.313Z
+  built_at: 2026-08-15T20:50:04.606Z
   clade_count: 188
   genus_count: 1421
   license: CC-BY-4.0
@@ -31267,7 +31267,6 @@ genera:
           locality: Baotianman Nature Reserve
           region: Henan
           formation: Xiaguan
-          notes: The describing paper places the holotype in the Gaogou Formation. Wang and colleagues (2013), citing this find among their reasons for measuring the sections, established the Xiaguan Formation at formation rank for the same red beds, which had been referred variously to the Gaogou, Majiayuan and Sangping Formations without a measured type section. Not all later work has followed; Han and colleagues (2024) still list the horizon as Gaogou.
           region_code: CN-HA
         size:
           length_m:
@@ -40923,13 +40922,12 @@ genera:
           to_ma: 66
         location:
           country: AR
-          locality: Estancia Pocho Sastre, 8th Paleontological Expedition
+          locality: Estancia Pocho Sastre, Bajada Moreno
           region: Chubut
           formation: La Colonia
-          coordinates:
-            - -43
-            - -67.547501
+          part: lower
           region_code: AR-U
+          part_of: formation
         type_specimen:
           specimen_id:
             - MACN-CH 894
@@ -41027,12 +41025,8 @@ genera:
           to_ma: 205.7
         location:
           country: US
-          locality: west bank of Blanco River, northern breaks
           region: Texas
           formation: Tecovas
-          coordinates:
-            - 33.6
-            - -101.3
           region_code: US-TX
         size:
           length_m:
@@ -41127,13 +41121,12 @@ genera:
           to_ma: 89.8
         location:
           country: AR
-          locality: La Buitrera (upper)
+          locality: La Buitrera
           region: Río Negro
           formation: Huincul
-          coordinates:
-            - -39.628613
-            - -69.184166
+          part: lower
           region_code: AR-R
+          part_of: formation
         type_specimen:
           specimen_id:
             - MPCA-PV 232
@@ -41235,12 +41228,11 @@ genera:
           to_ma: 113.2
         location:
           country: CN
-          locality: Sihetun, Yixian Member 3
+          locality: Sihetun
           region: Liaoning
           formation: Yixian
-          coordinates:
-            - 41.799999
-            - 120.73333
+          member: Jianshangou
+          bed: Anjiagou
           region_code: CN-LN
         type_specimen:
           specimen_id:
@@ -41278,7 +41270,7 @@ genera:
           country: CN
           region: Liaoning
           formation: Yixian
-          locality: Zhangjiagou, Beipiao
+          locality: Zhangjiagou
           region_code: CN-LN
         type_specimen:
           specimen_id:
@@ -41329,6 +41321,13 @@ genera:
         issue: "6687"
         pages: 753-761
         doi: 10.1038/31635
+      - id: wang2016a
+        authors: Wang, Y.; Olsen, P. E.; Sha, J.; Yao, X.; Liao, H.; Pan, Y.; Kinney, S.; Zhang, X.; Rao, X.
+        year: 2016
+        title: Stratigraphy, correlation, depositional environments, and cyclicity of the Early Cretaceous Yixian and ?Jurassic-Cretaceous Tuchengzi formations in the Sihetun area (NE China) based on three continuous cores
+        journal: Palaeogeography, Palaeoclimatology, Palaeoecology
+        publisher: Elsevier BV
+        notes: Treats the Chaomidianzi Formation as a junior synonym of the Jianshangou Member of the Yixian, and proposes the Anjiagou Bed in place of Jiulongsong.
       - id: zhou2000a
         authors: Zhou, Z.; Wang, X.; Zhang, F.; Xu, X.
         year: 2000
@@ -41441,9 +41440,6 @@ genera:
           formation: Cedar Mountain
           member: Yellow Cat
           part: upper
-          coordinates:
-            - 38.845818
-            - -109.555984
           region_code: US-UT
           part_of: member
         size:
@@ -41554,14 +41550,11 @@ genera:
           to_ma: 100.5
         location:
           country: US
-          locality: Price River I site
+          locality: Price River 1
           region: Utah
           formation: Cedar Mountain
           member: Ruby Ranch
           part: upper
-          coordinates:
-            - 39.179001
-            - -110.106003
           region_code: US-UT
           part_of: member
         type_specimen:
@@ -41665,9 +41658,6 @@ genera:
           region: Utah
           formation: Cedar Mountain
           member: Poison Strip
-          coordinates:
-            - 38.895531
-            - -109.545151
           region_code: US-UT
         type_specimen:
           specimen_id:
@@ -41764,13 +41754,12 @@ genera:
           to_ma: 72.2
         location:
           country: CA
-          locality: north fork, Sand Creek (50 ft level)
+          locality: Red Deer River
           region: Alberta
           formation: Dinosaur Park
-          coordinates:
-            - 50.737297
-            - -111.528931
+          part: lower
           region_code: CA-AB
+          part_of: formation
         type_specimen:
           specimen_id:
             - CMN 971
@@ -41876,10 +41865,9 @@ genera:
           locality: Red Rocks Site, MOR TM-012
           region: Montana
           formation: Two Medicine
-          coordinates:
-            - 48.463612
-            - -112.470001
+          part: lower
           region_code: US-MT
+          part_of: formation
         type_specimen:
           specimen_id:
             - MOR 300
@@ -42005,7 +41993,6 @@ genera:
           locality: Amrapar
           region: Gujarat
           formation: Kaladongar
-          member: Mouwana Variegated
           region_code: IN-GJ
         size:
           length_m:
@@ -42156,12 +42143,9 @@ genera:
           to_ma: 72.2
         location:
           country: MN
-          locality: Khermin Tsav, Red Beds
+          locality: Khermeen Tsav
           region: Ömnögovi
           formation: Baruungoyot
-          coordinates:
-            - 43.150002
-            - 99.449997
           region_code: MN-053
         type_specimen:
           specimen_id:
@@ -42307,13 +42291,12 @@ genera:
           to_ma: 72.2
         location:
           country: US
+          locality: Cow Creek
           region: Montana
           formation: Judith River
-          locality: Near Cow Creek, Blaine County (uppermost Judith River Formation; "Laramie deposits" in Marsh's nineteenth-century usage)
-          coordinates:
-            - 48.5
-            - -109
+          part: upper
           region_code: US-MT
+          part_of: formation
         type_specimen:
           specimen_id:
             - USNM 2411
@@ -42417,10 +42400,7 @@ genera:
           region: Colorado
           formation: Morrison
           member: Brushy Basin
-          locality: Felch Quarry No. 1, Garden Park, near Cañon City
-          coordinates:
-            - 38.42
-            - -105.3
+          locality: Felch Quarry No. 1
           region_code: US-CO
         size:
           hip_height_m:
@@ -42637,13 +42617,10 @@ genera:
           to_ma: 121.4
         location:
           country: GB
-          locality: Chilton Chine foreshore, near Brighstone
-          region: England
+          locality: Chilton Chine, near Brighstone
+          region: Isle of Wight
           formation: Wessex
-          coordinates:
-            - 50.640491
-            - -1.433957
-          region_code: GB-ENG
+          region_code: GB-IOW
         type_specimen:
           specimen_id:
             - IWCMS 2014.95.1
@@ -42805,14 +42782,11 @@ genera:
           to_ma: 161.5
         location:
           country: GB
-          locality: New Peterborough Brick Company, No. 1 yard
-          region: England
+          locality: Peterborough brick-pit
+          region: City of Peterborough
           formation: Oxford Clay
           member: Peterborough
-          coordinates:
-            - 52.54253
-            - -0.240363
-          region_code: GB-ENG
+          region_code: GB-PTE
         size:
           hip_height_m:
             min: 3.3
@@ -43005,13 +42979,13 @@ genera:
           to_ma: 165.3
         location:
           country: GB
-          locality: Bletchington Station
-          region: England
+          locality: Bletchingdon Station
+          region: Oxfordshire
           formation: Forest Marble
           coordinates:
-            - 52.633331
-            - -0.666667
-          region_code: GB-ENG
+            - 51.860302
+            - -1.30004
+          region_code: GB-OXF
         size:
           hip_height_m:
             min: 3.7
@@ -43168,8 +43142,8 @@ genera:
           region: Río Negro
           formation: Anacleto
           coordinates:
-            - -39.378613
-            - -67.690002
+            - -39.378833
+            - -67.690028
           region_code: AR-R
         size:
           hip_height_m:
@@ -43279,7 +43253,7 @@ genera:
           to_ma: 89.8
         location:
           country: AR
-          locality: Violante farm
+          locality: Pueblo Blanco Natural Reserve
           region: Río Negro
           formation: Huincul
           coordinates:
@@ -43389,13 +43363,12 @@ genera:
           to_ma: 100.5
         location:
           country: CN
-          locality: Shanqian, Liufangzi, Gongzhuling Quarry
+          locality: Shanqian
           region: Jilin
           formation: Quantou
-          coordinates:
-            - 43.585079
-            - 124.894295
+          part: upper
           region_code: CN-JL
+          part_of: formation
         type_specimen:
           specimen_id:
             - JLUM L0403-j-Zn2
@@ -43502,12 +43475,9 @@ genera:
           to_ma: 113.2
         location:
           country: CN
-          locality: Lujiatun village, Shangyuan
+          locality: Lujiatun, Shangyuan, Beipiao City
           region: Liaoning
           formation: Yixian
-          coordinates:
-            - 41.783817
-            - 120.764221
           region_code: CN-LN
         type_specimen:
           specimen_id:
