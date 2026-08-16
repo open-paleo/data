@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-08-15T21:32:29.490Z
+  built_at: 2026-08-16T03:13:00.422Z
   clade_count: 188
   genus_count: 1421
   license: CC-BY-4.0
@@ -43594,9 +43594,6 @@ genera:
           locality: Xijianchang
           region: Liaoning
           formation: Yixian
-          coordinates:
-            - 40.643055
-            - 119.641113
           region_code: CN-LN
         type_specimen:
           specimen_id:
@@ -43711,7 +43708,7 @@ genera:
           to_ma: 113.2
         location:
           country: CN
-          locality: Lamadong, Jianchang
+          locality: Lamadong
           region: Liaoning
           formation: Jiufotang
           region_code: CN-LN
@@ -43806,12 +43803,9 @@ genera:
           to_ma: 132.6
         location:
           country: CN
-          locality: Ershijiazi, Chaoyang
+          locality: Ershijiazi
           region: Liaoning
           formation: Tuchengzi
-          coordinates:
-            - 42.9333
-            - 123.966698
           region_code: CN-LN
         type_specimen:
           specimen_id:
@@ -43908,12 +43902,12 @@ genera:
           to_ma: 66
         location:
           country: CN
-          locality: Jiayin
+          locality: Longgushan
           region: Heilongjiang
           formation: Yuliangzi
           coordinates:
-            - 48.857498
-            - 130.243607
+            - 48.883333
+            - 130.45
           region_code: CN-HL
         type_specimen:
           specimen_id:
@@ -44032,9 +44026,6 @@ genera:
           locality: Berry Creek
           region: Alberta
           formation: Dinosaur Park
-          coordinates:
-            - 50.734207
-            - -111.513893
           region_code: CA-AB
         type_specimen:
           specimen_id:
@@ -44072,8 +44063,10 @@ genera:
           country: CA
           region: Alberta
           formation: Dinosaur Park
-          locality: Near Manyberries
+          locality: near the Onefour Research Station, about 33 km southeast of Manyberries
+          part: middle
           region_code: CA-AB
+          part_of: formation
         type_specimen:
           specimen_id:
             - NMC 8800
@@ -44187,12 +44180,9 @@ genera:
           to_ma: 161.5
         location:
           country: DZ
-          locality: Rouis El Djir, High Atlas
+          locality: Rouis El Djir
           region: Naama
           formation: Aïssa
-          coordinates:
-            - 32.739723
-            - -1.072222
           region_code: DZ-45
         size:
           weight_kg:
@@ -44392,13 +44382,12 @@ genera:
           to_ma: 66
         location:
           country: MA
-          locality: Sidi Chennane (Middle Couche III)
+          locality: Sidi Chennane
           region: Beni Mellal-Khenifra
-          formation: Couche III
-          coordinates:
-            - 32.866699
-            - -6.5667
+          bed: Couche III
+          part: upper
           region_code: MA-05
+          part_of: bed
         size:
           length_m:
             min: 7
@@ -44498,12 +44487,10 @@ genera:
           to_ma: 154.8
         location:
           country: CN
+          locality: Taipingtsai
           region: Sichuan
           formation: Shaximiao
           part: upper
-          coordinates:
-            - 29.4333
-            - 103.599998
           region_code: CN-SC
           part_of: formation
         type_specimen:
@@ -44613,11 +44600,8 @@ genera:
         location:
           country: CN
           region: Gansu
-          formation: Xinminbao
-          locality: Hui-hui-p'u area
-          coordinates:
-            - 40.5
-            - 96
+          locality: Chia-yü-kuan badlands
+          group: Xinminbao
           region_code: CN-GS
         type_specimen:
           specimen_type: holotype
@@ -44695,13 +44679,10 @@ genera:
           to_ma: 143.1
         location:
           country: CN
+          locality: Locality 47 (Chentsianyen escarpment), south of Kuangyuan
           region: Sichuan
-          formation: Kuangyuan Series
+          formation: Shaximiao
           part: upper
-          notes: The erecting paper's own horizon, "the rich shell-bearing layer at the top of the Kuangyuan Series". Which modern formation that layer corresponds to has not been settled — Penglaizhen and Suining have both been proposed — so the historical unit is held rather than one of them, as for Szechuanosaurus from the same beds.
-          coordinates:
-            - 32.403481
-            - 105.805908
           region_code: CN-SC
           part_of: formation
         type_specimen:
@@ -45106,9 +45087,7 @@ genera:
           locality: Dinosaur Hollow
           region: Arizona
           formation: Chinle
-          coordinates:
-            - 35.087502
-            - -109.794441
+          member: Petrified Forest
           region_code: US-AZ
         size:
           length_m:
@@ -45238,10 +45217,7 @@ genera:
           country: CN
           locality: Laiyang
           region: Shandong
-          formation: Jingangkou
-          coordinates:
-            - 36.886539
-            - 120.658951
+          group: Wangshi
           region_code: CN-SD
         type_specimen:
           specimen_id:
@@ -45327,13 +45303,12 @@ genera:
           to_ma: 199.5
         location:
           country: CN
-          locality: Zhonghe, Yungyin County
+          locality: Zhonghe
           region: Yunnan
           formation: Fengjiahe
-          coordinates:
-            - 26.1667
-            - 101.416702
+          part: lower
           region_code: CN-YN
+          part_of: formation
         type_specimen:
           specimen_id:
             - IVPP V14474
@@ -45461,12 +45436,9 @@ genera:
           to_ma: 72.2
         location:
           country: CA
-          locality: 2 miles northeast of mouth, Little Sandhill Creek
+          locality: 2 miles northeast of the mouth of Little Sandhill Creek, Red Deer River
           region: Alberta
           formation: Dinosaur Park
-          coordinates:
-            - 50.786098
-            - -111.477402
           region_code: CA-AB
         type_specimen:
           specimen_id:
@@ -45582,10 +45554,12 @@ genera:
           locality: La Antena
           region: Neuquén
           formation: Huincul
+          part: lower
           coordinates:
-            - -39.256668
-            - -68.780281
+            - -39.256667
+            - -68.780278
           region_code: AR-Q
+          part_of: formation
         type_specimen:
           specimen_id:
             - MMCH-Pv 44/10
@@ -45693,10 +45667,9 @@ genera:
           to_ma: 121.4
         location:
           country: GB
-          region: England
-          locality: Submerged Wealden deposit, south coast of the Isle of Wight
+          region: Isle of Wight
           formation: Wessex
-          region_code: GB-ENG
+          region_code: GB-IOW
         type_specimen:
           specimen_id:
             - BMNH 46869
@@ -45787,13 +45760,12 @@ genera:
           to_ma: 100.5
         location:
           country: MN
-          locality: Khuren Dukh I
+          locality: Khuren Dukh
           region: Dornogovi
           formation: Khuren Dukh
-          coordinates:
-            - 45.849724
-            - 108.397499
+          part: lower
           region_code: MN-063
+          part_of: formation
         type_specimen:
           specimen_id:
             - MPC-D 100/801
@@ -45892,13 +45864,13 @@ genera:
           to_ma: 227.3
         location:
           country: AR
-          locality: Cancha de Bochas, Valle Pintado
+          locality: Valle Pintado
           region: San Juan
           formation: Ischigualasto
-          coordinates:
-            - -30.116928
-            - -67.90126
+          member: Cancha de Bochas
+          part: lower
           region_code: AR-J
+          part_of: member
         type_specimen:
           specimen_id:
             - PVSJ 845
