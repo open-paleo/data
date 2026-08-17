@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-08-16T03:13:00.422Z",
+    "built_at": "2026-08-17T03:31:49.813Z",
     "clade_count": 188,
     "genus_count": 1421,
     "license": "CC-BY-4.0",
@@ -58001,14 +58001,12 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Dashanpu Dinosaur Quarry (Lower)",
+            "locality": "Chuandong",
             "region": "Sichuan",
             "formation": "Shaximiao",
-            "coordinates": [
-              29.411388,
-              104.852501
-            ],
-            "region_code": "CN-SC"
+            "part": "lower",
+            "region_code": "CN-SC",
+            "part_of": "formation"
           },
           "type_specimen": {
             "specimen_id": [
@@ -58112,13 +58110,9 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Quarry 1, Lao Chang Qing",
+            "locality": "Laochangqing",
             "region": "Yunnan",
             "formation": "Chuanjie",
-            "coordinates": [
-              24.9725,
-              102.076111
-            ],
             "region_code": "CN-YN"
           },
           "size": {
@@ -58261,13 +58255,9 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Baishizui village, Goumenzi",
+            "locality": "Baishizui Village",
             "region": "Liaoning",
             "formation": "Jiufotang",
-            "coordinates": [
-              40.884399,
-              119.47155
-            ],
             "region_code": "CN-LN"
           },
           "size": {
@@ -58402,9 +58392,10 @@
             "locality": "10 km east-northeast of Cerro Barcino",
             "region": "Chubut",
             "formation": "Cerro Barcino",
+            "member": "Bayo Overo",
             "coordinates": [
-              -43.403889,
-              -68.291664
+              -43.5,
+              -68.333333
             ],
             "region_code": "AR-U"
           },
@@ -58549,12 +58540,12 @@
           },
           "location": {
             "country": "AR",
-            "locality": "Violante farm",
+            "locality": "Pueblo Blanco Natural Reserve",
             "region": "Río Negro",
             "formation": "Huincul",
             "coordinates": [
-              -39.397778,
-              -68.617775
+              -39.397881,
+              -68.617861
             ],
             "region_code": "AR-R"
           },
@@ -58710,15 +58701,11 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Maoershi, Jiangbei",
-            "region": "Sichuan",
+            "locality": "Maoershi",
+            "region": "Chongqing",
             "formation": "Shaximiao",
             "part": "upper",
-            "coordinates": [
-              27.793056,
-              105.294167
-            ],
-            "region_code": "CN-SC",
+            "region_code": "CN-CQ",
             "part_of": "formation"
           },
           "type_specimen": {
@@ -58893,11 +58880,13 @@
             "locality": "La Antena",
             "region": "Neuquén",
             "formation": "Huincul",
+            "part": "lower",
             "coordinates": [
-              -39.256668,
-              -68.780281
+              -39.256667,
+              -68.780278
             ],
-            "region_code": "AR-Q"
+            "region_code": "AR-Q",
+            "part_of": "formation"
           },
           "type_specimen": {
             "specimen_id": [
@@ -59019,7 +59008,7 @@
           "location": {
             "country": "US",
             "region": "Colorado",
-            "formation": "Laramie",
+            "notes": "Where the holotype came from is unknown. Cope names no locality and no horizon beyond \"the Laramie\", and says only that his material came from two Colorado localities not many miles apart. Carpenter and Young (2002) file it under the Laramie Formation but state that it may equally have come from the Denver Formation exposed along another drainage. The \"Lodge Pole Creek\" locality repeated in later compilations is an error introduced by Lull and Wright (1942), who took it from the opening section of Cope's paper, which describes Pliocene beds, and attached it to his Cretaceous footnote.",
             "region_code": "US-CO"
           },
           "type_specimen": {
@@ -59037,6 +59026,17 @@
         }
       ],
       "references": [
+        {
+          "id": "carpenter2002a",
+          "authors": "Carpenter, K.; Young, D. B.",
+          "year": 2002,
+          "title": "Late Cretaceous dinosaurs from the Denver Basin, Colorado",
+          "journal": "Rocky Mountain Geology",
+          "volume": "37",
+          "issue": "2",
+          "pages": "237-254",
+          "notes": "Reviews the Denver Basin fauna, files the holotype under the Laramie Formation while leaving the Denver Formation open, and rejects the Lodge Pole Creek locality on stratigraphic grounds."
+        },
         {
           "id": "cope1874a",
           "authors": "Cope, E. D.",
@@ -59164,11 +59164,7 @@
             "country": "MN",
             "locality": "Ankylosaur Flats, Ukhaa Tolgod",
             "region": "Ömnögovi",
-            "formation": "Djadokhta",
-            "coordinates": [
-              43.664444,
-              100.901947
-            ],
+            "formation": "Djadochta",
             "region_code": "MN-053"
           },
           "type_specimen": {
@@ -59384,10 +59380,6 @@
             "locality": "Little Sandhill Creek",
             "region": "Alberta",
             "formation": "Dinosaur Park",
-            "coordinates": [
-              50.734207,
-              -111.513893
-            ],
             "region_code": "CA-AB"
           },
           "size": {
@@ -59514,7 +59506,8 @@
             ]
           },
           "location": {
-            "country": "US"
+            "country": "US",
+            "notes": "Neither the locality nor the horizon was recorded. Cope gives no locality and no horizon beyond \"the Laramie\", and Hatcher said as much in 1902 before offering South Dakota as a guess. Two candidates circulate, neither settled. Lull and Wright (1942) give a hedged \"?Judith River\" in Montana, which later work repeats while dropping their question mark and adding a county that has no source. The other two taxa Cope named in the same paper are both Lancian and traceable to South Dakota, and he records this material as found a few hundred yards from one of them, which would place it in the Hell Creek Formation instead."
           },
           "type_specimen": {
             "specimen_id": [
@@ -59697,10 +59690,7 @@
             "locality": "Smoky Hill River",
             "region": "Kansas",
             "formation": "Niobrara",
-            "coordinates": [
-              38.893333,
-              -101.102776
-            ],
+            "member": "Smoky Hill Chalk",
             "region_code": "US-KS"
           },
           "size": {
@@ -59994,14 +59984,10 @@
           },
           "location": {
             "country": "MX",
-            "locality": "Ejido Porvenir de Jalpa",
+            "locality": "Porvenir de Jalpa",
             "region": "Coahuila",
             "formation": "Cerro del Pueblo",
             "part": "middle",
-            "coordinates": [
-              25.5,
-              -101.699997
-            ],
             "region_code": "MX-COA",
             "part_of": "formation"
           },
@@ -60135,14 +60121,12 @@
           },
           "location": {
             "country": "MX",
-            "locality": "Ejido Presa de San Antonio (Coah 14)",
+            "locality": "1 km north of Presa de San Antonio",
             "region": "Coahuila",
             "formation": "Cerro del Pueblo",
-            "coordinates": [
-              25.470833,
-              -101.699997
-            ],
-            "region_code": "MX-COA"
+            "part": "lower",
+            "region_code": "MX-COA",
+            "part_of": "formation"
           },
           "size": {
             "length_m": {
@@ -60289,11 +60273,7 @@
             "country": "US",
             "region": "New Mexico",
             "formation": "Rock Point",
-            "locality": "Whitaker Quarry, Ghost Ranch (Rio Arriba County)",
-            "coordinates": [
-              36.34,
-              -106.49
-            ],
+            "locality": "Whitaker Quarry, Ghost Ranch",
             "region_code": "US-NM"
           },
           "size": {
@@ -60563,12 +60543,10 @@
           },
           "location": {
             "country": "IN",
+            "locality": "Bara Simla",
             "region": "Madhya Pradesh",
             "formation": "Lameta",
-            "coordinates": [
-              23.168694,
-              79.972282
-            ],
+            "bed": "Carnosaur",
             "region_code": "IN-MP"
           },
           "type_specimen": {
@@ -60745,11 +60723,7 @@
             "country": "US",
             "region": "Wyoming",
             "formation": "Morrison",
-            "locality": "Como Bluff",
-            "coordinates": [
-              41.6,
-              -106.2
-            ],
+            "locality": "Quarry 13 East",
             "region_code": "US-WY"
           },
           "type_specimen": {
@@ -60975,13 +60949,9 @@
           },
           "location": {
             "country": "CA",
-            "locality": "Bow Island Ferry",
+            "locality": "South Saskatchewan River, 4.8 km below Bow Island Ferry",
             "region": "Alberta",
             "formation": "Foremost",
-            "coordinates": [
-              49.482777,
-              -111.374168
-            ],
             "region_code": "CA-AB"
           },
           "type_specimen": {
@@ -61131,14 +61101,12 @@
           },
           "location": {
             "country": "AR",
-            "locality": "E of Cerro Rajado",
+            "locality": "La Esquina",
             "region": "La Rioja",
             "formation": "Los Colorados",
-            "coordinates": [
-              -29.733334,
-              -68.216667
-            ],
-            "region_code": "AR-F"
+            "part": "upper",
+            "region_code": "AR-F",
+            "part_of": "formation"
           },
           "type_specimen": {
             "specimen_id": [
