@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-08-18T00:06:51.974Z",
+    "built_at": "2026-08-18T06:01:57.032Z",
     "clade_count": 188,
     "genus_count": 1421,
     "license": "CC-BY-4.0",
@@ -64734,14 +64734,10 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Yongan, Yantan",
+            "locality": "Yongan Town",
             "region": "Sichuan",
             "formation": "Shaximiao",
             "part": "upper",
-            "coordinates": [
-              29.219999,
-              104.769997
-            ],
             "region_code": "CN-SC",
             "part_of": "formation"
           },
@@ -64899,14 +64895,12 @@
           },
           "location": {
             "country": "GB",
-            "locality": "Swindon Brick and Tile Company brick pit",
-            "region": "England",
+            "locality": "Swindon Brick and Tile Company clay pit",
+            "region": "Wiltshire",
             "formation": "Kimmeridge Clay",
-            "coordinates": [
-              51.558,
-              -1.785
-            ],
-            "region_code": "GB-ENG"
+            "part": "lower",
+            "region_code": "GB-WIL",
+            "part_of": "formation"
           },
           "type_specimen": {
             "specimen_id": [
@@ -64966,6 +64960,30 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25025-0",
           "notes": "Source of the appearance features."
+        },
+        {
+          "id": "maidment2008a",
+          "authors": "Maidment, S. C. R.; Norman, D. B.; Barrett, P. M.; Upchurch, P.",
+          "year": 2008,
+          "title": "Systematics and phylogeny of Stegosauria (Dinosauria: Ornithischia)",
+          "journal": "Journal of Systematic Palaeontology",
+          "publisher": "Informa UK Limited",
+          "volume": "6",
+          "issue": "4",
+          "pages": "367-407",
+          "doi": "10.1017/S1477201908002459",
+          "notes": "Gives the holotype's locality as the Swindon Brick and Tile Company's clay pit, Swindon, Wiltshire."
+        },
+        {
+          "id": "sánchez-fenollosa2025a",
+          "authors": "Sánchez-Fenollosa, S.; Cobos, A.",
+          "year": 2025,
+          "title": "New insights into the phylogeny and skull evolution of stegosaurian dinosaurs: an extraordinary cranium from the European Late Jurassic (Dinosauria: Stegosauria)",
+          "journal": "Vertebrate Zoology",
+          "volume": "75",
+          "pages": "165-189",
+          "doi": "10.3897/vz.75.e146618",
+          "notes": "Places the holotype in the lower part of the Kimmeridge Clay Formation."
         }
       ],
       "taxonomy": [
@@ -65066,12 +65084,12 @@
           },
           "location": {
             "country": "US",
-            "locality": "Ghost Ranch Quarry",
+            "locality": "Coelophysis Quarry",
             "region": "New Mexico",
             "formation": "Chinle",
             "coordinates": [
-              36.331699,
-              -106.473099
+              36.333333,
+              -106.458333
             ],
             "region_code": "US-NM"
           },
@@ -65114,7 +65132,8 @@
           "volume": "278",
           "issue": "1723",
           "pages": "3459-3464",
-          "doi": "10.1098/rspb.2011.0410"
+          "doi": "10.1098/rspb.2011.0410",
+          "notes": "Prints the holotype's coordinates with an eastern longitude, which is impossible for a New Mexico locality and is read here as western."
         },
         {
           "id": "jones2026c",
@@ -65245,11 +65264,9 @@
             "locality": "near Ampandriambengy",
             "region": "Antsiranana",
             "formation": "Ambolafotsy",
-            "coordinates": [
-              -13.771667,
-              49.528057
-            ],
-            "region_code": "MG-D"
+            "part": "middle",
+            "region_code": "MG-D",
+            "part_of": "formation"
           },
           "size": {
             "length_m": {
@@ -65388,14 +65405,13 @@
           },
           "location": {
             "country": "US",
-            "locality": "near Whitewood",
+            "locality": "SDSM V 2015-1",
             "region": "South Dakota",
             "formation": "Lakota",
-            "coordinates": [
-              44.474701,
-              -103.621002
-            ],
-            "region_code": "US-SD"
+            "member": "Fuson",
+            "part": "lower",
+            "region_code": "US-SD",
+            "part_of": "member"
           },
           "size": {
             "hip_height_m": {
@@ -65444,6 +65460,18 @@
           "issue": "2",
           "pages": "192-216",
           "doi": "10.1016/j.cretres.2007.04.009"
+        },
+        {
+          "id": "boyd2015b",
+          "authors": "Boyd, C. A.; Pagnac, D. C.",
+          "year": 2015,
+          "title": "Insight on the anatomy, systematic relationships, and age of the Early Cretaceous ankylopollexian dinosaur Dakotadon lakotaensis",
+          "journal": "PeerJ",
+          "publisher": "PeerJ",
+          "volume": "3",
+          "pages": "e1263",
+          "doi": "10.7717/peerj.1263",
+          "notes": "Relocated the type locality in the field, recording it as museum locality SDSM V 2015-1 in Lawrence County and its horizon as unit L2, the lower Fuson Member equivalent."
         },
         {
           "id": "jones2026a",
@@ -65575,14 +65603,12 @@
           },
           "location": {
             "country": "US",
-            "locality": "Dakotaraptor Quarry, Bone Butte",
+            "locality": "Bone Butte",
             "region": "South Dakota",
             "formation": "Hell Creek",
-            "coordinates": [
-              45.233196,
-              -103.20755
-            ],
-            "region_code": "US-SD"
+            "part": "upper",
+            "region_code": "US-SD",
+            "part_of": "formation"
           },
           "size": {
             "hip_height_m": {
@@ -65623,6 +65649,19 @@
           "volume": "14",
           "pages": "1-16",
           "doi": "10.17161/paleo.1808.18764"
+        },
+        {
+          "id": "pittman2020a",
+          "authors": "Pittman, M.; Xu, X.",
+          "year": 2020,
+          "title": "Pennaraptoran theropod dinosaurs. Past progress and new frontiers",
+          "journal": "Bulletin of the American Museum of Natural History",
+          "publisher": "American Museum of Natural History",
+          "volume": "440",
+          "issue": "1",
+          "pages": "1-355",
+          "doi": "10.1206/0003-0090.440.1.1",
+          "notes": "Names Bone Butte as the holotype's locality, which the description gives only to county level."
         },
         {
           "id": "arbour2015b",
@@ -65778,13 +65817,9 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Lujiatun village, Shangyuan",
+            "locality": "Lujiatun",
             "region": "Liaoning",
             "formation": "Yixian",
-            "coordinates": [
-              41.783817,
-              120.764221
-            ],
             "region_code": "CN-LN"
           },
           "type_specimen": {
@@ -65941,12 +65976,9 @@
           },
           "location": {
             "country": "IN",
+            "locality": "5 km west of Yamanpalli",
             "region": "Telangana",
             "formation": "Kota",
-            "coordinates": [
-              19.106924,
-              79.845581
-            ],
             "region_code": "IN-TS"
           },
           "size": {
@@ -66076,14 +66108,10 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Dashanpu Dinosaur Quarry (Lower)",
+            "locality": "Dashanpu Quarry",
             "region": "Sichuan",
             "formation": "Shaximiao",
             "part": "lower",
-            "coordinates": [
-              29.411388,
-              104.852501
-            ],
             "region_code": "CN-SC",
             "part_of": "formation"
           },
@@ -66211,12 +66239,14 @@
             "country": "BR",
             "region": "Maranhão",
             "formation": "Itapecuru",
-            "locality": "Davinopolis",
+            "locality": "Davinópolis",
+            "part": "lower",
             "coordinates": [
               -5.557,
               -47.431
             ],
-            "region_code": "BR-MA"
+            "region_code": "BR-MA",
+            "part_of": "formation"
           },
           "type_specimen": {
             "specimen_id": [
@@ -66349,13 +66379,9 @@
           },
           "location": {
             "country": "CA",
-            "locality": "Quarry 72, Steveville",
+            "locality": "Quarry 88",
             "region": "Alberta",
             "formation": "Oldman",
-            "coordinates": [
-              50.751526,
-              -111.485008
-            ],
             "region_code": "CA-AB"
           },
           "type_specimen": {
@@ -66408,8 +66434,9 @@
             "country": "US",
             "region": "Montana",
             "formation": "Two Medicine",
-            "locality": "Upper Two Medicine Formation",
-            "region_code": "US-MT"
+            "part": "upper",
+            "region_code": "US-MT",
+            "part_of": "formation"
           },
           "type_specimen": {
             "specimen_id": [
@@ -66450,7 +66477,7 @@
             "country": "US",
             "region": "Montana",
             "formation": "Judith River",
-            "locality": "Jack's B2 site, near Glasgow, Valley County",
+            "locality": "Jack's B2",
             "region_code": "US-MT"
           },
           "type_specimen": {
@@ -66692,14 +66719,16 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Mazhou Site",
+            "locality": "Mazhou",
             "region": "Jiangxi",
             "formation": "Zhoutian",
+            "part": "upper",
             "coordinates": [
-              25.506945,
-              115.775833
+              25.507183,
+              115.776108
             ],
-            "region_code": "CN-JX"
+            "region_code": "CN-JX",
+            "part_of": "formation"
           },
           "size": {
             "skull_length_m": {
@@ -66820,13 +66849,9 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Nazao village, Datang",
+            "locality": "Nazao village",
             "region": "Guangxi",
             "formation": "Xinlong",
-            "coordinates": [
-              22.243889,
-              108.194725
-            ],
             "region_code": "CN-GX"
           },
           "size": {
@@ -66978,13 +67003,9 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Kangdailiang Quarry, Zhaojiagou",
+            "locality": "Kangdailiang Quarry",
             "region": "Shanxi",
             "formation": "Huiquanpu",
-            "coordinates": [
-              40.189999,
-              114.0439
-            ],
             "region_code": "CN-SX"
           },
           "type_specimen": {
@@ -67126,14 +67147,10 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Dashanpu Dinosaur Quarry (Lower)",
+            "locality": "Dashanpu Quarry",
             "region": "Sichuan",
             "formation": "Shaximiao",
             "part": "lower",
-            "coordinates": [
-              29.411388,
-              104.852501
-            ],
             "region_code": "CN-SC",
             "part_of": "formation"
           },
@@ -67255,12 +67272,12 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Pigeon Hill, near Taipingqiao village",
+            "locality": "Pigeon Hill",
             "region": "Inner Mongolia",
             "formation": "Longjiang",
             "coordinates": [
-              48.601112,
-              123.980835
+              48.661322,
+              123.878097
             ],
             "region_code": "CN-NM"
           },
@@ -67417,14 +67434,12 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Daxia, Lanzhou Basin",
+            "locality": "Zhongpu",
             "region": "Gansu",
             "group": "Hekou",
-            "coordinates": [
-              35.728329,
-              103.218102
-            ],
-            "region_code": "CN-GS"
+            "part": "upper",
+            "region_code": "CN-GS",
+            "part_of": "group"
           },
           "size": {
             "hip_height_m": {
@@ -67464,6 +67479,19 @@
           "volume": "17",
           "issue": "4",
           "pages": "1-10"
+        },
+        {
+          "id": "li2014a",
+          "authors": "Li, L.-G.; Li, D.-Q.; You, H.-L.; Dodson, P.",
+          "year": 2014,
+          "title": "A New Titanosaurian Sauropod from the Hekou Group (Lower Cretaceous) of the Lanzhou-Minhe Basin, Gansu Province, China",
+          "journal": "PLoS ONE",
+          "publisher": "Public Library of Science (PLoS)",
+          "volume": "9",
+          "issue": "1",
+          "pages": "e85979",
+          "doi": "10.1371/journal.pone.0085979",
+          "notes": "Places the quarry that yielded Daxiatitan near the town of Zhongpu, in the upper Hekou Group."
         },
         {
           "id": "jones2026b",
@@ -67610,13 +67638,9 @@
           },
           "location": {
             "country": "MN",
-            "locality": "Altan Ula III, site 2",
+            "locality": "Altan Uul III",
             "region": "Ömnögovi",
             "formation": "Nemegt",
-            "coordinates": [
-              43.566387,
-              100.48278
-            ],
             "region_code": "MN-053"
           },
           "type_specimen": {
@@ -67784,7 +67808,6 @@
           "location": {
             "country": "US",
             "region": "Montana",
-            "locality": "Judith River badlands",
             "formation": "Judith River",
             "region_code": "US-MT"
           },
@@ -68031,13 +68054,13 @@
           },
           "location": {
             "country": "US",
+            "locality": "YPM 64-75",
             "region": "Montana",
             "formation": "Cloverly",
-            "coordinates": [
-              45.438999,
-              -108.162003
-            ],
-            "region_code": "US-MT"
+            "member": "Himes",
+            "part": "upper",
+            "region_code": "US-MT",
+            "part_of": "member"
           },
           "type_specimen": {
             "specimen_id": [
@@ -68115,6 +68138,16 @@
           "journal": "Postilla",
           "volume": "128",
           "pages": "1-17"
+        },
+        {
+          "id": "ostrom1970a",
+          "authors": "Ostrom, J. H.",
+          "year": 1970,
+          "title": "Stratigraphy and paleontology of the Cloverly Formation (Lower Cretaceous) of the Bighorn Basin area, Wyoming and Montana",
+          "journal": "Peabody Museum Bulletin",
+          "volume": "35",
+          "pages": "1-234",
+          "notes": "Names the holotype's type locality YPM 64-75 in Carbon County and equates its horizon, Unit VII, with the upper part of the Himes Member."
         },
         {
           "id": "ostrom1969b",
