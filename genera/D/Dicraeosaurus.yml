@@ -71,12 +71,10 @@ species:
         - Tithonian
     location:
       country: TZ
-      locality: Tendaguru Quarry m, Kindope
+      locality: Kindope
       region: TZ-12
       formation: Tendaguru
-      coordinates:
-        - -9.696665
-        - 39.228008
+      member: Middle Dinosaur
     type_specimen:
       specimen_id:
         - MB.R.4886
@@ -110,10 +108,8 @@ species:
       country: TZ
       region: TZ-12
       formation: Tendaguru
-      locality: Upper Saurian Bed, Tendaguru
-      coordinates:
-        - -9.696665
-        - 39.228008
+      locality: Locality M
+      member: Upper Dinosaur
     diagnostic_features:
       - Trunk vertebrae more slender and lightly built, with a smaller, less
         massive centrum.
@@ -130,6 +126,10 @@ species:
     described_in: janensch1929a
 references:
   - id: janensch1914a
+  - id: bussert2009a
+    notes: Renames the Saurian Beds as a series of six members, listing
+      Dicraeosaurus hansemanni from the Middle Dinosaur Member and D. sattleri
+      from the Upper Dinosaur Member.
   - id: jones2026b
     notes: Source of the hip height estimate, and the appearance features.
   - id: janensch1929a

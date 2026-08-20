@@ -1335,7 +1335,7 @@ const positionalPrefix = /^(Upper|Lower|Middle|Uppermost|Lowermost|First|Second|
 // there is a name, not a place in the section. The Aguja's "Upper Shale" and
 // "Lower Shale" sat here until Lehman (2024) formalised them as the Alto and
 // Abajo Shale members. Moves to the formations registry when #2012 lands.
-const positionalUnitNames = new Set<string>([ "Upper Dinosaur" ]);
+const positionalUnitNames = new Set<string>([ "Middle Dinosaur", "Upper Dinosaur" ]);
 
 for (const [filePath, doc] of genusParsed)
 {
