@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-08-23T23:31:07.051Z",
+    "built_at": "2026-08-25T04:24:14.190Z",
     "clade_count": 188,
     "genus_count": 1422,
     "license": "CC-BY-4.0",
@@ -20183,7 +20183,7 @@
             "country": "MN",
             "region": "Ömnögovi",
             "formation": "Nemegt",
-            "locality": "Tsagaan Khushu",
+            "locality": "Tsagaan Khushuu",
             "region_code": "MN-053"
           },
           "type_specimen": {
@@ -30068,7 +30068,7 @@
           },
           "location": {
             "country": "MN",
-            "locality": "Bayn Dzak",
+            "locality": "Bayan Zag",
             "region": "Ömnögovi",
             "formation": "Djadochta",
             "member": "Bayn Dzak",
@@ -37828,7 +37828,7 @@
             "country": "MN",
             "region": "Ömnögovi",
             "formation": "Djadochta",
-            "locality": "Bayn Dzak (Flaming Cliffs)",
+            "locality": "Bayan Zag (Flaming Cliffs)",
             "region_code": "MN-053"
           },
           "size": {
@@ -82784,7 +82784,7 @@
           },
           "location": {
             "country": "MN",
-            "locality": "Bayshin Tsav",
+            "locality": "Baishin Tsav",
             "region": "Ömnögovi",
             "formation": "Bayanshiree",
             "region_code": "MN-053"
@@ -88037,7 +88037,7 @@
             "locality": "Lightning Ridge",
             "region": "New South Wales",
             "formation": "Griman Creek",
-            "notes": "Huene (1932) records the holotype as coming from Lightning Ridge and names no mine or opal field, where the district's other described specimens each carry a named field.",
+            "notes": "Huene (1932) records no mine or opal field for the holotype, where the district's other described specimens each carry one.",
             "region_code": "AU-NSW"
           },
           "size": {
@@ -88286,7 +88286,7 @@
             "country": "CN",
             "region": "Xinjiang",
             "formation": "Shishugou",
-            "notes": "Wang and colleagues (2019) place the holotype about 20 km northeast of Jiangjunmiao, in Qitai County, and name no site.",
+            "notes": "Wang and colleagues (2019) place the holotype about 20 km northeast of Jiangjunmiao, in Qitai County.",
             "region_code": "CN-XJ"
           },
           "size": {
@@ -88828,14 +88828,12 @@
           },
           "location": {
             "country": "US",
-            "locality": "Red Fork Powder River Quarry A",
+            "locality": "Quarry A, Red Fork of the Powder River",
             "region": "Wyoming",
             "formation": "Morrison",
-            "coordinates": [
-              43.649166,
-              -106.780556
-            ],
-            "region_code": "US-WY"
+            "part": "lower",
+            "region_code": "US-WY",
+            "part_of": "formation"
           },
           "size": {
             "length_m": {
@@ -88884,7 +88882,7 @@
             "country": "US",
             "region": "Wyoming",
             "formation": "Morrison",
-            "locality": "Howe-Scott Quarry, Bighorn Basin",
+            "locality": "Howe-Scott Quarry",
             "region_code": "US-WY"
           },
           "type_specimen": {
@@ -89047,12 +89045,12 @@
           },
           "location": {
             "country": "AU",
-            "locality": "Flat Rocks, Bunurong Marine Park",
+            "locality": "Flat Rocks",
             "region": "Victoria",
-            "formation": "\"Wonthaggi\"",
+            "formation": "Wonthaggi",
             "coordinates": [
-              -38.66111,
-              145.681107
+              -38.660792,
+              145.681009
             ],
             "region_code": "AU-VIC"
           },
@@ -89177,13 +89175,10 @@
           },
           "location": {
             "country": "MN",
-            "locality": "Tsagan Hushu, site 3",
+            "locality": "Tsagaan Khushuu",
             "region": "Ömnögovi",
             "formation": "Nemegt",
-            "coordinates": [
-              43.601665,
-              100.456665
-            ],
+            "notes": "Osmolska and colleagues (1972) refer further material from Nemegt, Altan Uul IV and Naran Bulak, none of it from the holotype's locality.",
             "region_code": "MN-053"
           },
           "type_specimen": {
@@ -89284,6 +89279,16 @@
           "volume": "494",
           "pages": "160-167",
           "doi": "10.1016/j.palaeo.2017.10.020"
+        },
+        {
+          "id": "gradziński1974a",
+          "authors": "Gradziński, R.; Jerzykiewicz, T.",
+          "year": 1974,
+          "title": "Sedimentation of the Barun Goyot Formation",
+          "journal": "Palaeontologia Polonica",
+          "volume": "30",
+          "pages": "111-146",
+          "notes": "Formalizes the Nemegt Formation, with Tsagaan Khushuu among its type sections, superseding the Upper Nemegt Beds of the describing paper."
         }
       ],
       "taxonomy": [
@@ -89389,15 +89394,11 @@
           },
           "location": {
             "country": "ES",
-            "locality": "Cuesta Lonsal 1, Galve",
-            "region": "Aragon",
+            "locality": "Cuesta Lonsal-1",
+            "region": "Teruel",
             "formation": "Villar del Arzobispo",
             "part": "lower",
-            "coordinates": [
-              40.66296,
-              -0.884602
-            ],
-            "region_code": "ES-AR",
+            "region_code": "ES-TE",
             "part_of": "formation"
           },
           "type_specimen": {
@@ -89589,11 +89590,9 @@
             "locality": "100 m north of Shiziyan Road, Datangkeng",
             "region": "Jiangxi",
             "formation": "Zhoutian",
-            "coordinates": [
-              25.797501,
-              114.897781
-            ],
-            "region_code": "CN-JX"
+            "part": "upper",
+            "region_code": "CN-JX",
+            "part_of": "formation"
           },
           "size": {
             "length_m": {
@@ -89721,13 +89720,9 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Longling Town, Nankang",
+            "locality": "Longling Town",
             "region": "Jiangxi",
             "formation": "Nanxiong",
-            "coordinates": [
-              25.729168,
-              114.806389
-            ],
             "region_code": "CN-JX"
           },
           "size": {
@@ -89770,6 +89765,19 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25023-6",
           "notes": "Placement and assessment in the Princeton Encyclopedia of Dinosaurs."
+        },
+        {
+          "id": "mo2023a",
+          "authors": "Mo, J.-Y.; Fu, Q.-Y.; Yu, Y.-L.; Xu, X.",
+          "year": 2023,
+          "title": "A New Titanosaurian Sauropod from the Upper Cretaceous of Jiangxi Province, Southern China",
+          "journal": "Historical Biology",
+          "publisher": "Informa UK Limited",
+          "volume": "36",
+          "issue": "11",
+          "pages": "2443-2457",
+          "doi": "10.1080/08912963.2023.2259413",
+          "notes": "Places the Jiangxititan holotype at Tankou Town in Nankang, about five kilometers from Longling Town, separating the two localities."
         }
       ],
       "taxonomy": [
@@ -89862,13 +89870,9 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Ganzhou City",
             "region": "Jiangxi",
             "formation": "Nanxiong",
-            "coordinates": [
-              25.816668,
-              114.933334
-            ],
+            "notes": "Wang and colleagues (2013) bought the holotype from a fossil dealer and record that the precise locality is not clear, placing it only in Nankang County within Ganzhou City.",
             "region_code": "CN-JX"
           },
           "size": {
@@ -90018,11 +90022,10 @@
             "locality": "Bone Cabin Quarry West",
             "region": "Wyoming",
             "formation": "Morrison",
-            "coordinates": [
-              41.967098,
-              -106.291
-            ],
-            "region_code": "US-WY"
+            "part": "upper",
+            "notes": "Carpenter and colleagues (1998) give the site as Bone Cabin Quarry; the narrower Bone Cabin Quarry West comes from Carpenter's 2013 account of the same specimen.",
+            "region_code": "US-WY",
+            "part_of": "formation"
           },
           "size": {
             "hip_height_m": {
@@ -90073,6 +90076,18 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25025-0",
           "notes": "Source of the hip height estimate, and the appearance features."
+        },
+        {
+          "id": "carpenter2013a",
+          "authors": "Carpenter, K.; DiCroce, T.; Kinneer, B.; Simon, R.",
+          "year": 2013,
+          "title": "Pelvis of Gargoyleosaurus (Dinosauria: Ankylosauria) and the origin and evolution of the ankylosaur pelvis",
+          "journal": "PLOS ONE",
+          "volume": "8",
+          "issue": "11",
+          "pages": "e79887",
+          "doi": "10.1371/journal.pone.0079887",
+          "notes": "Gives the holotype's site as Bone Cabin Quarry West, narrower than the Bone Cabin Quarry of the original description."
         }
       ],
       "taxonomy": [
@@ -90150,13 +90165,10 @@
           },
           "location": {
             "country": "FR",
-            "locality": "Fox-Amphoux-La Bastide Neuve",
+            "locality": "Velaux-La Bastide Neuve",
             "region": "Provence-Alpes-Côte d'Azur",
-            "formation": "Grès à Reptiles",
-            "coordinates": [
-              43.606697,
-              6.106141
-            ],
+            "formation": "Argiles et Grès à Reptiles",
+            "notes": "Díez Díaz and colleagues (2020) place the holotype in level B3 of the Velaux-La Bastide Neuve section, an informal level rather than a named bed, and date the horizon by the Begudian local stage.",
             "region_code": "FR-PAC"
           },
           "size": {
@@ -90305,13 +90317,9 @@
           },
           "location": {
             "country": "MN",
-            "locality": "Bayshin-Tsav",
+            "locality": "Baishin Tsav",
             "region": "Ömnögovi",
-            "formation": "Baynshire",
-            "coordinates": [
-              43.144169,
-              107.518059
-            ],
+            "formation": "Bayanshiree",
             "region_code": "MN-053"
           },
           "type_specimen": {
@@ -90458,11 +90466,9 @@
             "locality": "Sant Antoni de la Vespa",
             "region": "Castellón",
             "formation": "Arcillas de Morella",
-            "coordinates": [
-              40.596615,
-              -0.179591
-            ],
-            "region_code": "ES-CS"
+            "part": "middle",
+            "region_code": "ES-CS",
+            "part_of": "formation"
           },
           "erected_in": "mocho2023a",
           "type_specimen": {
@@ -90597,14 +90603,10 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Dashanpu Dinosaur Quarry (Lower)",
+            "locality": "Dashanpu",
             "region": "Sichuan",
             "formation": "Shaximiao",
             "part": "lower",
-            "coordinates": [
-              29.411388,
-              104.852501
-            ],
             "region_code": "CN-SC",
             "part_of": "formation"
           },
@@ -90737,13 +90739,10 @@
           },
           "location": {
             "country": "AR",
-            "locality": "2 km southeast of Cinco Saltos cemetery, facies 2",
+            "locality": "2 km southeast of Cinco Saltos City",
             "region": "Río Negro",
             "formation": "Anacleto",
-            "coordinates": [
-              -38.844536,
-              -68.030663
-            ],
+            "notes": "Coria and Salgado (1996) name the horizon the Anacleto Member of the Rio Colorado Formation; Leanza and colleagues (2004) raise Anacleto to formation rank within the Rio Colorado Subgroup. Heredia and Salgado (1999) place the ornithopod-bearing beds at Cinco Saltos in an informal facies 2, recognized in earlier work on the unit.",
             "region_code": "AR-R"
           },
           "size": {
@@ -90795,6 +90794,18 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25025-0",
           "notes": "Source of the hip height estimate."
+        },
+        {
+          "id": "leanza2004a",
+          "authors": "Leanza, H. A.; Apesteguía, S.; Novas, F. E.; de la Fuente, M. S.",
+          "year": 2004,
+          "title": "Cretaceous terrestrial beds from the Neuquén Basin (Argentina) and their tetrapod assemblages",
+          "journal": "Cretaceous Research",
+          "publisher": "Elsevier BV",
+          "volume": "25",
+          "issue": "1",
+          "pages": "61-87",
+          "notes": "Raises Anacleto from a member of the Rio Colorado Formation to a formation within the Rio Colorado Subgroup."
         }
       ],
       "taxonomy": [
@@ -90876,15 +90887,11 @@
           },
           "location": {
             "country": "US",
-            "locality": "Robert Gaston Quarry",
+            "locality": "Yellow Cat Quarry",
             "region": "Utah",
             "formation": "Cedar Mountain",
             "member": "Yellow Cat",
             "part": "upper",
-            "coordinates": [
-              38.826099,
-              -109.567902
-            ],
             "region_code": "US-UT",
             "part_of": "member"
           },
@@ -90935,8 +90942,11 @@
             "region": "Utah",
             "formation": "Cedar Mountain",
             "member": "Ruby Ranch",
-            "locality": "Lorrie's Site (DMNH Locality 2183), Grand County",
-            "region_code": "US-UT"
+            "locality": "Lorrie's Site",
+            "part": "lower",
+            "notes": "Kinneer and colleagues (2016) catalog the site as DMNH locality 2183 and place its bone bed in the lower Ruby Ranch Member, noting that Doelling and Kuehne had instead correlated it with the upper Poison Strip Member.",
+            "region_code": "US-UT",
+            "part_of": "member"
           },
           "type_specimen": {
             "specimen_id": [
@@ -91089,10 +91099,6 @@
             "formation": "Cedar Mountain",
             "member": "Yellow Cat",
             "part": "lower",
-            "coordinates": [
-              38.90987,
-              -110.110764
-            ],
             "region_code": "US-UT",
             "part_of": "member"
           },
@@ -91257,13 +91263,9 @@
           },
           "location": {
             "country": "FR",
-            "locality": "Sisteron, Bevons",
+            "locality": "Bevons",
             "region": "Provence-Alpes-Côte d'Azur",
-            "formation": "Marnes bleues",
-            "coordinates": [
-              44.183331,
-              5.9
-            ],
+            "notes": "Accarie and colleagues (1995) describe the type stratum as greenish clays and glauconitic sands within an undifferentiated middle Albian marl series and name no formal unit for it. Bevons is the commune where the holotype was found, 4.25 km southwest of Sisteron, the town the species is named for.",
             "region_code": "FR-PAC"
           },
           "size": {
@@ -91442,13 +91444,10 @@
           },
           "location": {
             "country": "AR",
-            "locality": "Cañadón Grande, Rio Chubút",
+            "locality": "Cañadón Grande",
             "region": "Chubut",
             "formation": "Cerro Barcino",
-            "coordinates": [
-              -44.48333,
-              -70.0093
-            ],
+            "notes": "Rauhut (2004) narrows the horizon no further than the Cerro Barcino Formation, calling the Cerro Castaño Member the most likely candidate rather than a stated fact. Huene's account placing the site on the Rio Chubut near Gaiman is rejected there, no Mesozoic sediments cropping out within some 50 km of that town.",
             "region_code": "AR-U"
           },
           "size": {
@@ -91590,13 +91589,16 @@
           "location": {
             "country": "ZA",
             "region": "Eastern Cape",
-            "locality": "Road-cutting near the summit of Barkly Pass, near Elliot",
+            "locality": "road-cutting near the summit of Barkly Pass, Farm Tulloch, Elliot",
             "formation": "Clarens",
+            "part": "lower",
             "coordinates": [
               -31.450001,
               27.85
             ],
-            "region_code": "ZA-EC"
+            "notes": "The coordinate is the road-cutting's, published by Kitching and Raath in 1984 and reprinted by Norman and colleagues (2011), who also place the exposure on Farm Tulloch. Broom (1911) names the unit only as the Cave sandstone of the Stormberg Series.",
+            "region_code": "ZA-EC",
+            "part_of": "formation"
           },
           "size": {
             "length_m": {
@@ -91649,6 +91651,16 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25025-0",
           "notes": "Placement and assessment in the Princeton Encyclopedia of Dinosaurs."
+        },
+        {
+          "id": "norman2011a",
+          "authors": "Norman, D. B.; Crompton, A. W.; Butler, R. J.; Porro, L. B.; Charig, A. J.",
+          "year": 2011,
+          "title": "The Lower Jurassic ornithischian dinosaur Heterodontosaurus tucki Crompton & Charig, 1962: cranial anatomy, functional morphology, taxonomy, and relationships",
+          "journal": "Zoological Journal of the Linnean Society",
+          "pages": "182-276",
+          "doi": "10.1111/j.1096-3642.2011.00697.x",
+          "notes": "Places the type locality on Farm Tulloch at Barkly Pass and reprints the coordinate Kitching and Raath published in 1984."
         }
       ],
       "taxonomy": [
@@ -91727,14 +91739,12 @@
           },
           "location": {
             "country": "ES",
-            "locality": "Poyales Barranco Hondo, PBCH (Galve syncline)",
-            "region": "Aragon",
+            "locality": "Poyales",
+            "region": "Teruel",
             "formation": "Camarillas",
-            "coordinates": [
-              40.647625,
-              -0.883291
-            ],
-            "region_code": "ES-AR"
+            "part": "upper",
+            "region_code": "ES-TE",
+            "part_of": "formation"
           },
           "erected_in": "ruiz-omeñaca2012a",
           "type_specimen": {
@@ -91883,10 +91893,7 @@
             "locality": "Villa El Chocón, 15 km south",
             "region": "Neuquén",
             "formation": "Candeleros",
-            "coordinates": [
-              -39.516388,
-              -68.75
-            ],
+            "notes": "Coria and Salgado (1995) name the horizon the Candeleros Member of the Rio Limay Formation; Leanza and colleagues (2004) treat the Rio Limay as a subgroup and raise Candeleros to formation rank.",
             "region_code": "AR-Q"
           },
           "type_specimen": {
@@ -91985,6 +91992,18 @@
           "journal": "National Science Museum Monographs",
           "volume": "15",
           "pages": "13-45"
+        },
+        {
+          "id": "leanza2004a",
+          "authors": "Leanza, H. A.; Apesteguía, S.; Novas, F. E.; de la Fuente, M. S.",
+          "year": 2004,
+          "title": "Cretaceous terrestrial beds from the Neuquén Basin (Argentina) and their tetrapod assemblages",
+          "journal": "Cretaceous Research",
+          "publisher": "Elsevier BV",
+          "volume": "25",
+          "issue": "1",
+          "pages": "61-87",
+          "notes": "Raises Candeleros from a member of the Rio Limay Formation to a formation within the Neuquen Group."
         }
       ],
       "taxonomy": [
@@ -92082,13 +92101,9 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Saihangaobi, Sonid Zuoqi",
+            "locality": "Saihangaobi",
             "region": "Inner Mongolia",
             "formation": "Iren Dabasu",
-            "coordinates": [
-              43.548889,
-              111.870834
-            ],
             "region_code": "CN-NM"
           },
           "type_specimen": {
@@ -92274,14 +92289,11 @@
           },
           "location": {
             "country": "GB",
-            "region": "England",
+            "region": "Cambridgeshire",
             "formation": "Kimmeridge Clay",
-            "locality": "Ely district, Cambridgeshire (Stretham, Cottenham, Ely)",
-            "coordinates": [
-              52.4,
-              0.25
-            ],
-            "region_code": "GB-ENG"
+            "locality": "Stretham, Cottenham, Ely",
+            "notes": "Seeley (1869) catalogs the syntypes from three separate Cambridgeshire sites, and Lydekker (1888) places the fibula at Ely.",
+            "region_code": "GB-CAM"
           },
           "type_specimen": {
             "specimen_id": [
@@ -92422,12 +92434,8 @@
           "location": {
             "country": "ZA",
             "region": "Limpopo",
-            "locality": "Haakdoornbult 344, Waterberg District",
+            "locality": "Haakdoornbult 344",
             "formation": "Bushveld Sandstone",
-            "coordinates": [
-              -23.833332,
-              28.25
-            ],
             "region_code": "ZA-LP"
           },
           "type_specimen": {
@@ -92550,14 +92558,11 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Yinhe, Zhongquan",
+            "locality": "Pengtang",
             "region": "Sichuan",
             "formation": "Shaximiao",
             "part": "upper",
-            "coordinates": [
-              29.218168,
-              104.707771
-            ],
+            "notes": "Peng and colleagues (2005) place the holotype at Pengtang in Zhongquan Township, where Maidment and colleagues (2006), paraphrasing Ouyang, give the containing division as Jinquan.",
             "region_code": "CN-SC",
             "part_of": "formation"
           },
@@ -92708,13 +92713,10 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Quarry 149, Iren Dabasu",
+            "locality": "Quarry 149",
             "region": "Inner Mongolia",
             "formation": "Iren Dabasu",
-            "coordinates": [
-              43.772221,
-              111.929169
-            ],
+            "notes": "Quarry 149 was opened by the Central Asiatic Expeditions decades before the genus was named.",
             "region_code": "CN-NM"
           },
           "size": {
@@ -92908,13 +92910,11 @@
           },
           "location": {
             "country": "TZ",
-            "locality": "Tendaguru Quarry S",
+            "locality": "Site S",
             "region": "Lindi",
             "formation": "Tendaguru",
-            "coordinates": [
-              -9.695653,
-              39.231327
-            ],
+            "member": "Middle Dinosaur",
+            "notes": "Bussert and colleagues (2009) raised Tendaguru to formation rank and renamed its Middle Saurian Bed the Middle Dinosaur Member, placing Site S within it. Taylor (2009) gives only a species-wide range across the Middle and Upper members.",
             "region_code": "TZ-12"
           },
           "type_specimen": {
@@ -93009,6 +93009,18 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25023-6",
           "notes": "Source of the hip height estimate, and the appearance features."
+        },
+        {
+          "id": "bussert2009a",
+          "authors": "Bussert, R.; Heinrich, W.-D.; Aberhan, M.",
+          "year": 2009,
+          "title": "The Tendaguru Formation (Late Jurassic to Early Cretaceous, southern Tanzania): definition, palaeoenvironments, and sequence stratigraphy",
+          "journal": "Fossil Record",
+          "volume": "12",
+          "issue": "2",
+          "pages": "141-174",
+          "doi": "10.5194/fr-12-141-2009",
+          "notes": "Raises Tendaguru to formation rank and places Site S, which yielded the lectotype, in its Middle Dinosaur Member."
         }
       ],
       "taxonomy": [
@@ -93102,12 +93114,10 @@
           },
           "location": {
             "country": "AQ",
-            "locality": "Mt. Kirkpatrick, Beardmore Glacier",
+            "locality": "Mt. Kirkpatrick, Beardmore Glacier region, Central Transantarctic Mountains",
             "formation": "Hanson",
-            "coordinates": [
-              -84.333336,
-              166.449997
-            ]
+            "part": "lower",
+            "part_of": "formation"
           },
           "size": {
             "weight_kg": {
@@ -93238,12 +93248,10 @@
           },
           "location": {
             "country": "US",
+            "locality": "South Milk River, 30 miles west of Sweetgrass",
             "region": "Montana",
             "formation": "Two Medicine",
-            "coordinates": [
-              48.937965,
-              -112.650658
-            ],
+            "notes": "Brown, Kaisen and Johnson collected the holotype around 1915, and Campione and colleagues (2012) record that its exact locality is unknown.",
             "region_code": "US-MT"
           },
           "erected_in": "prieto-márquez2010a",
@@ -93388,13 +93396,11 @@
           },
           "location": {
             "country": "US",
-            "locality": "1 mile southwest of Ojo Alamo Store",
+            "locality": "Barrel Springs Arroyo",
             "region": "New Mexico",
             "formation": "Ojo Alamo",
-            "coordinates": [
-              36.236942,
-              -108.892502
-            ],
+            "member": "Naashoibito",
+            "notes": "Barrel Springs Arroyo is also called De-na-zin Wash, and lies about 1.5 km southwest of the Ojo Alamo Store. Ford (2000) assigns the holotype to the Kirtland Shale, where later work places the Naashoibito in the Ojo Alamo.",
             "region_code": "US-NM"
           },
           "type_specimen": {
@@ -93431,7 +93437,7 @@
           "issue": "4",
           "pages": "1102–1109",
           "doi": "10.1671/0272-4634-28.4.1102",
-          "notes": "Recognized Glyptodontopelta as valid within Ankylosauria."
+          "notes": "Recognized Glyptodontopelta as valid within Ankylosauria, and gives its type locality as Barrel Springs Arroyo in the Naashoibito Member."
         },
         {
           "id": "vickaryous2004a",
@@ -93518,12 +93524,12 @@
           },
           "location": {
             "country": "BR",
-            "locality": "Marchezan, São João do Polêsine",
+            "locality": "Marchezan site",
             "region": "Rio Grande do Sul",
             "formation": "Santa Maria",
             "coordinates": [
               -29.631111,
-              -53.450558
+              -53.450556
             ],
             "region_code": "BR-RS"
           },
@@ -93639,13 +93645,9 @@
           },
           "location": {
             "country": "MN",
-            "locality": "Bayshin Tsav I",
+            "locality": "Baishin Tsav I",
             "region": "Ömnögovi",
-            "formation": "Baynshire",
-            "coordinates": [
-              43.504166,
-              107.762497
-            ],
+            "formation": "Bayanshiree",
             "region_code": "MN-053"
           },
           "size": {
@@ -93833,13 +93835,9 @@
           },
           "location": {
             "country": "MN",
-            "locality": "Altan Ula III",
+            "locality": "Altan Uul III",
             "region": "Ömnögovi",
             "formation": "Nemegt",
-            "coordinates": [
-              43.5,
-              100.333336
-            ],
             "region_code": "MN-053"
           },
           "size": {
@@ -93986,10 +93984,7 @@
             "locality": "Maortu",
             "region": "Inner Mongolia",
             "formation": "Miaogou",
-            "coordinates": [
-              40.301338,
-              105.943283
-            ],
+            "notes": "Vickaryous and colleagues (2001) give the horizon as the Ulanhushao, and Hao and colleagues (2025) place the Maortu strata in the Miaogou Formation instead.",
             "region_code": "CN-NM"
           },
           "type_specimen": {
@@ -94053,6 +94048,19 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25025-0",
           "notes": "Source of the hip height estimate, and the appearance features."
+        },
+        {
+          "id": "hao2025a",
+          "authors": "Hao, M.; Li, Z.; Wang, Z.; Wang, S.; Ma, F.; Qinggele; Logan King, J.; Pei, R.; Zhao, Q.; Xu, X.",
+          "year": 2025,
+          "title": "A new oviraptorosaur from the Lower Cretaceous Miaogou Formation of western Inner Mongolia, China",
+          "journal": "Cretaceous Research",
+          "publisher": "Elsevier BV",
+          "volume": "167",
+          "issue": "78",
+          "pages": "106023",
+          "doi": "10.1016/j.cretres.2024.106023",
+          "notes": "Places the Maortu strata in the Miaogou Formation, superseding the Ulanhushao of the describing paper."
         }
       ],
       "taxonomy": [
@@ -94133,14 +94141,13 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Mazongshan",
+            "locality": "Gongpoquan Basin",
             "region": "Gansu",
             "formation": "Zhonggou",
-            "coordinates": [
-              41.509445,
-              97.616669
-            ],
-            "region_code": "CN-GS"
+            "part": "middle",
+            "notes": "You and colleagues (2003) name no formation, giving only the middle gray unit of the Xinminbao Group; the Zhonggou assignment follows their 2014 revision of the same horizon in the same basin.",
+            "region_code": "CN-GS",
+            "part_of": "formation"
           },
           "size": {
             "hip_height_m": {
@@ -94190,6 +94197,16 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25023-6",
           "notes": "Source of the hip height estimate, and the appearance features."
+        },
+        {
+          "id": "you2014a",
+          "authors": "You, H.-L.; Li, D.-Q.; P. Dodson",
+          "year": 2014,
+          "title": "Gongpoquansaurus mazongshanensis (Lü, 1997) comb. nov. (Ornithischia: Hadrosauroidea) from the Early Cretaceous of Gansu Province, northwestern China",
+          "journal": "Hadrosaurs",
+          "publisher": "Indiana University Press",
+          "pages": "73-76",
+          "notes": "Assigns the Gongpoquan Basin middle gray unit to the Zhonggou Formation."
         }
       ],
       "taxonomy": [
@@ -94287,13 +94304,9 @@
           },
           "location": {
             "country": "MN",
-            "locality": "Dzamin Khond",
+            "locality": "Zamyn Khond",
             "region": "Ömnögovi",
-            "formation": "Djadokhta",
-            "coordinates": [
-              44.051388,
-              102.82222
-            ],
+            "formation": "Djadochta",
             "region_code": "MN-053"
           },
           "size": {
@@ -94476,13 +94489,10 @@
           },
           "location": {
             "country": "US",
-            "locality": "Revuelto Creek",
+            "locality": "UCM Loc. 82021",
             "region": "New Mexico",
-            "formation": "Cooper Canyon",
-            "coordinates": [
-              35.365276,
-              -103.379997
-            ],
+            "formation": "Bull Canyon",
+            "notes": "Carpenter (1997) assigns the holotype to the Cooper Canyon Formation and Nesbitt and colleagues (2007) to the Bull Canyon. The two are not synonyms. Martz and colleagues (2013) showed that the correlation equating them rested on a misidentified sandstone, and current usage is geographic, Cooper Canyon naming the western Texas unit and Bull Canyon its New Mexico counterpart, which matches only the upper third of it. UCM Loc. 82021 sits on the eastern side of the Revuelto Creek drainage.",
             "region_code": "US-NM"
           },
           "size": {
@@ -94546,6 +94556,32 @@
           "pages": "113-149",
           "doi": "10.1093/zoolinnean/zlaa054",
           "notes": "Neotheropod phylogenetic analysis (revising Sarcosaurus) that recovered Gojirasaurus on the stem lineage to Averostra."
+        },
+        {
+          "id": "martz2013a",
+          "authors": "Martz, J. W.; Mueller, B.; Nesbitt, S. J.; Stocker, M. R.; Parker, W. G.; Atanassov, M.; Fraser, N.; Weinbaum, J.; Lehane, J. R.",
+          "year": 2013,
+          "title": "A taxonomic and biostratigraphic re-evaluation of the Post Quarry vertebrate assemblage from the Cooper Canyon Formation (Dockum Group, Upper Triassic) of southern Garza County, western Texas",
+          "journal": "Earth and Environmental Science Transactions of the Royal Society of Edinburgh",
+          "publisher": "Cambridge University Press",
+          "volume": "103",
+          "issue": "3-4",
+          "pages": "339-364",
+          "doi": "10.1017/s1755691013000376",
+          "notes": "Shows that the correlation equating the Cooper Canyon and Bull Canyon formations rested on a misidentified sandstone, and restricts Cooper Canyon to western Texas."
+        },
+        {
+          "id": "cather2013a",
+          "authors": "Cather, S. M.; Zeigler, K. E.; Mack, G. H.; Kelley, S. A.",
+          "year": 2013,
+          "title": "Toward standardization of Phanerozoic stratigraphic nomenclature in New Mexico",
+          "journal": "Rocky Mountain Geology",
+          "publisher": "Geological Society of America",
+          "volume": "48",
+          "issue": "2",
+          "pages": "101-124",
+          "doi": "10.2113/gsrocky.48.2.101",
+          "notes": "Endorses the Cooper Canyon and Bull Canyon distinction from outside the authors' own circle, recording that Lehman conceded the miscorrelation."
         }
       ],
       "taxonomy": [
@@ -94620,13 +94656,10 @@
           },
           "location": {
             "country": "BR",
-            "locality": "Sítio Myzobuchi, Álvares Machado (mudstone)",
+            "locality": "Sítio Myzobuchi",
             "region": "São Paulo",
             "formation": "Adamantina",
-            "coordinates": [
-              -21.944166,
-              -51.373055
-            ],
+            "notes": "The site is the farm of Yoshitoshi Myzobuchi, where the holotype was found in 1983.",
             "region_code": "BR-SP"
           },
           "type_specimen": {
@@ -94781,14 +94814,10 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Duxin, Rongxian",
+            "locality": "Huangtong Elementary School, Duxin Commune",
             "region": "Sichuan",
             "formation": "Shaximiao",
             "part": "upper",
-            "coordinates": [
-              29.483299,
-              104.366699
-            ],
             "region_code": "CN-SC",
             "part_of": "formation"
           },
@@ -94903,13 +94932,13 @@
           },
           "location": {
             "country": "CN",
+            "locality": "Gongpoquan Basin",
             "region": "Gansu",
             "formation": "Zhonggou",
-            "coordinates": [
-              41.575001,
-              97.583336
-            ],
-            "region_code": "CN-GS"
+            "part": "middle",
+            "notes": "The Zhonggou Formation's middle gray unit is an informal lithologic subdivision, not a named member.",
+            "region_code": "CN-GS",
+            "part_of": "formation"
           },
           "type_specimen": {
             "specimen_id": [
@@ -94933,7 +94962,8 @@
           "title": "Gongpoquansaurus mazongshanensis (Lü, 1997) comb. nov. (Ornithischia: Hadrosauroidea) from the Early Cretaceous of Gansu Province, northwestern China",
           "journal": "Hadrosaurs",
           "publisher": "Indiana University Press",
-          "pages": "73-76"
+          "pages": "73-76",
+          "notes": "Erects the genus and places the holotype in the middle gray unit of the Zhonggou Formation, in the Gongpoquan Basin."
         }
       ],
       "taxonomy": [
@@ -95009,13 +95039,12 @@
           "location": {
             "country": "CN",
             "region": "Jiangxi",
-            "locality": "Shahe, Ganzhou",
+            "locality": "Zhutongkeng",
             "formation": "Lianhe",
-            "coordinates": [
-              25.8193,
-              114.9674
-            ],
-            "region_code": "CN-JX"
+            "part": "middle",
+            "notes": "The Lianhe Formation belongs to the Guifeng Group, and older work on the Ganzhou Basin lumped its fine-grained units into the upper Nanxiong Formation.",
+            "region_code": "CN-JX",
+            "part_of": "formation"
           },
           "size": {
             "length_m": {
@@ -95154,13 +95183,11 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Shibei, Hongshacun",
+            "locality": "Hongshacun",
             "region": "Sichuan",
             "formation": "Ziliujing",
-            "coordinates": [
-              28.35,
-              104.783302
-            ],
+            "member": "Dongyuemiao",
+            "notes": "He and colleagues (1998) put the holotype's level in the middle to upper Dongyuemiao Member, straddling two positions, and place Hongshacun within Shibei Township.",
             "region_code": "CN-SC"
           },
           "size": {
@@ -95327,11 +95354,13 @@
             "locality": "Loma Koken, El Puesto",
             "region": "Magellan and the Chilean Antarctic",
             "formation": "Dorotea",
+            "part": "upper",
             "coordinates": [
               -50.711666,
               -72.541389
             ],
-            "region_code": "CL-MA"
+            "region_code": "CL-MA",
+            "part_of": "formation"
           },
           "size": {
             "weight_kg": {
@@ -95472,13 +95501,10 @@
           },
           "location": {
             "country": "CA",
-            "locality": "Quarry 6, Sand Creek",
+            "locality": "3.5 miles below the mouth of Berry Creek, south side of the Red Deer River",
             "region": "Alberta",
             "formation": "Dinosaur Park",
-            "coordinates": [
-              50.740726,
-              -111.528732
-            ],
+            "notes": "Lambe (1914) names only the Belly River formation, which predates its division; Brochu (2003) places the holotype in the Dinosaur Park Formation. Russell (1970) gives the site as Sternberg's quarry 36, the only quarry number published for this specimen.",
             "region_code": "CA-AB"
           },
           "type_specimen": {
@@ -95589,6 +95615,27 @@
           "book": "Mesozoic Vertebrate Life",
           "publisher": "Indiana University Press",
           "pages": "331-336"
+        },
+        {
+          "id": "brochu2003a",
+          "authors": "Brochu, C. R.",
+          "year": 2003,
+          "title": "Osteology of Tyrannosaurus rex: insights from a nearly complete skeleton and high-resolution computed tomographic analysis of the skull",
+          "journal": "Society of Vertebrate Paleontology Memoirs",
+          "volume": "7",
+          "pages": "1-138",
+          "doi": "10.2307/3889334",
+          "notes": "Places the holotype in the Dinosaur Park Formation, the assignment the describing paper predates."
+        },
+        {
+          "id": "olshevsky1995a",
+          "authors": "Olshevsky, G.; Ford, T. L.; Yamamoto, S.",
+          "year": 1995,
+          "title": "The origin and evolution of the tyrannosaurids (Part 1)",
+          "journal": "Kyoryugaku Saizensen",
+          "volume": "9",
+          "pages": "92-119",
+          "notes": "Places the quarry high at prairie level on the south bank of the Red Deer River, 3.5 miles below the mouth of Berry Creek."
         }
       ],
       "taxonomy": [
@@ -95683,12 +95730,9 @@
           },
           "location": {
             "country": "MN",
-            "locality": "Boro Khovil",
+            "locality": "Bor Khovil",
             "region": "Ömnögovi",
-            "coordinates": [
-              48.583332,
-              102.066666
-            ],
+            "notes": "Perle and colleagues (1982) describe the horizon as red sandstones.",
             "region_code": "MN-053"
           },
           "type_specimen": {
@@ -95828,14 +95872,10 @@
           },
           "location": {
             "country": "MN",
-            "locality": "Shiregin Gashun",
+            "locality": "Shireegiin Gashuun",
             "region": "Ömnögovi",
-            "formation": "Baynshire",
-            "coordinates": [
-              43.938889,
-              101.331947
-            ],
-            "notes": "No age has been published for this taxon independently of its formation. Shiregin Gashun lies roughly 600 km west of the main Bayan Shireh outcrops and is only \"often included as a western extension\" of them; Currie and Eberth (1993) report \"little overlap between the faunas of the two areas, indicating that the Shiregin Gashun sites were temporally and/or environmentally distinct\". No section has been published at the locality.",
+            "formation": "Bayanshiree",
+            "notes": "Maryanska and Osmolska (1975) name the beds only as an informal Sheeregeen Gashoon formation, and Maryanska (1977) then assigns them to the Bayn Shireh svita. Jerzykiewicz and Russell (1991) list the locality among the formation's own, and Currie and Eberth (1993) keep it in a separate faunal column, finding little overlap between the two areas' faunas. Averianov and Sues (2020) still write of Sheeregeen Gashoon beds in quotation marks. No age has been published for this taxon independently of its formation.",
             "region_code": "MN-053"
           },
           "size": {
@@ -95902,6 +95942,42 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25025-0",
           "notes": "Source of the appearance features."
+        },
+        {
+          "id": "jerzykiewicz1991a",
+          "authors": "Jerzykiewicz, T.; Russell, D. A.",
+          "year": 1991,
+          "title": "Late Mesozoic stratigraphy and vertebrates of the Gobi Basin",
+          "journal": "Cretaceous Research",
+          "publisher": "Elsevier",
+          "volume": "12",
+          "issue": "4",
+          "pages": "345-377",
+          "doi": "10.1016/0195-6671(91)90015-5",
+          "notes": "Lists Shiregin Gashun among the Bayn Shiren Formation's localities, and reports the unit from the Shiregin Gashun depression."
+        },
+        {
+          "id": "maryańska1977a",
+          "authors": "Maryańska, T.",
+          "year": 1977,
+          "title": "Ankylosauridae (Dinosauria) from Mongolia",
+          "journal": "Palaeontologia Polonica",
+          "volume": "37",
+          "pages": "85-151",
+          "notes": "Assigns the Sheeregeen Gashoon sediments to the Bayn Shireh svita, two years after co-coining the informal name for them."
+        },
+        {
+          "id": "averianov2020a",
+          "authors": "Averianov, A. O.; Lopatin, A. V.",
+          "year": 2020,
+          "title": "An unusual new sauropod dinosaur from the Late Cretaceous of Mongolia",
+          "journal": "Journal of Systematic Palaeontology",
+          "publisher": "Informa UK Limited",
+          "volume": "18",
+          "issue": "12",
+          "pages": "1009-1032",
+          "doi": "10.1080/14772019.2020.1716402",
+          "notes": "Still treats the beds as an informal Sheeregeen Gashoon unit rather than assigning them to a formation."
         }
       ],
       "taxonomy": [
@@ -95992,14 +96068,13 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Lujiatun village, Shangyuan",
+            "locality": "Lujiatun",
             "region": "Liaoning",
             "formation": "Yixian",
-            "coordinates": [
-              41.603352,
-              120.913269
-            ],
-            "region_code": "CN-LN"
+            "member": "Lujiatun",
+            "part": "lower",
+            "region_code": "CN-LN",
+            "part_of": "member"
           },
           "size": {
             "hip_height_m": {
@@ -96038,7 +96113,8 @@
           "journal": "Vertebrata PalAsiatica",
           "volume": "42",
           "issue": "2",
-          "pages": "111-119"
+          "pages": "111-119",
+          "notes": "Calls the holotype's horizon the Lujiatun bed, the lowest member of the Yixian Formation."
         },
         {
           "id": "jones2026c",
@@ -96129,14 +96205,17 @@
           },
           "location": {
             "country": "CA",
-            "locality": "site, Pinhorn Grazing Reserve",
+            "locality": "South Pinhorn Grazing Reserve",
             "region": "Alberta",
             "formation": "Oldman",
+            "part": "lower",
             "coordinates": [
-              49.078609,
+              49.078611,
               -110.855278
             ],
-            "region_code": "CA-AB"
+            "notes": "The Oldman Formation's three units are informal, the lower lying below the Comrey Sandstone.",
+            "region_code": "CA-AB",
+            "part_of": "formation"
           },
           "size": {
             "length_m": {
@@ -96263,10 +96342,8 @@
             "locality": "Black Coulee",
             "region": "Alberta",
             "formation": "Milk River",
-            "coordinates": [
-              49.083698,
-              -111.436096
-            ],
+            "member": "Deadhorse Coulee",
+            "notes": "Ryan and colleagues (2012) hold the detailed locality on record at the Royal Ontario Museum rather than publishing it.",
             "region_code": "CA-AB"
           },
           "erected_in": "ryan2012b",
@@ -96390,7 +96467,10 @@
             "region": "Free State",
             "locality": "Foutani farm, near Fouriesburg",
             "formation": "Elliot",
-            "region_code": "ZA-FS"
+            "part": "upper",
+            "notes": "Broom (1911) names the unit only as the Red beds, and Haughton (1924) places the holotype about half-way up that sequence at Fouriesburg. Haughton spells the farm Foutanie, against Broom's Foutani.",
+            "region_code": "ZA-FS",
+            "part_of": "formation"
           },
           "size": {
             "length_m": {
@@ -96535,13 +96615,9 @@
           },
           "location": {
             "country": "CA",
-            "locality": "Sandhill Creek (116 ft)",
             "region": "Alberta",
             "formation": "Dinosaur Park",
-            "coordinates": [
-              50.751602,
-              -111.476532
-            ],
+            "notes": "Lambe (1914) names no site beyond the Belly River formation on the Red Deer River. Lull and Wright (1942) give Sandhill Creek for the Kritosaurus incurvimanus holotype, a different specimen.",
             "region_code": "CA-AB"
           },
           "size": {
@@ -96590,8 +96666,10 @@
             "country": "US",
             "region": "Utah",
             "formation": "Kaiparowits",
-            "locality": "Grand Staircase-Escalante National Monument",
-            "region_code": "US-UT"
+            "part": "middle",
+            "notes": "The Kaiparowits Formation's middle unit is informal, and Gates and Sampson (2007) place the holotype no more precisely than within the Grand Staircase-Escalante National Monument.",
+            "region_code": "US-UT",
+            "part_of": "formation"
           },
           "type_specimen": {
             "specimen_id": [
@@ -96738,13 +96816,10 @@
           },
           "location": {
             "country": "BR",
-            "locality": "Botucarai Hill, BR-287 road",
+            "locality": "Sesmaria do Pinhal 2",
             "region": "Rio Grande do Sul",
             "formation": "Caturrita",
-            "coordinates": [
-              -29.5625,
-              -53.446667
-            ],
+            "notes": "Bonaparte and colleagues (1999) place the holotype 100 m south of highway RS-287, some 7.5 km west of Candelaria, without naming the site; Novas and colleagues (2021) call it Sesmaria do Pinhal 2.",
             "region_code": "BR-RS"
           },
           "type_specimen": {
@@ -96819,6 +96894,17 @@
           "pages": "333-349",
           "doi": "10.1017/S1755691011020093",
           "notes": "Recovered Guaibasaurus as basal sauropodomorph within Guaibasauridae."
+        },
+        {
+          "id": "novas2021a",
+          "authors": "Novas, F. E.; Agnolín, F. L.; Ezcurra, M. D.; Müller, R. T.; Martinelli, A. G.; Langer, M. C.",
+          "year": 2021,
+          "title": "Review of the fossil record of early dinosaurs from South America, and its phylogenetic implications",
+          "journal": "Journal of South American Earth Sciences",
+          "volume": "110",
+          "pages": "103341",
+          "doi": "10.1016/j.jsames.2021.103341",
+          "notes": "Names the holotype site Sesmaria do Pinhal 2."
         }
       ],
       "taxonomy": [
@@ -96914,11 +97000,14 @@
             "locality": "Violante farm",
             "region": "Río Negro",
             "formation": "Huincul",
+            "part": "lower",
             "coordinates": [
-              -39.397778,
-              -68.617775
+              -39.397881,
+              -68.617861
             ],
-            "region_code": "AR-R"
+            "notes": "Apesteguia and colleagues (2016) withhold the coordinate, holding it on file; Cerroni and colleagues (2020) publish it.",
+            "region_code": "AR-R",
+            "part_of": "formation"
           },
           "size": {
             "length_m": {
@@ -96985,6 +97074,17 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25021-2",
           "notes": "Placement and assessment in the Princeton Encyclopedia of Dinosaurs."
+        },
+        {
+          "id": "cerroni2020a",
+          "authors": "Cerroni, M. A.; Motta, M. J.; Agnolín, F. L.; Aranciaga Rolando, A. M.; Brissón Egli, F.; Novas, F. E.",
+          "year": 2020,
+          "title": "A new abelisaurid from the Huincul Formation (Cenomanian-Turonian; Upper Cretaceous) of Río Negro province, Argentina",
+          "journal": "Journal of South American Earth Sciences",
+          "publisher": "Elsevier BV",
+          "volume": "98",
+          "doi": "10.1016/j.jsames.2019.102445",
+          "notes": "Publishes the type locality coordinate the describing paper withholds."
         }
       ],
       "taxonomy": [
@@ -97067,14 +97167,12 @@
           },
           "location": {
             "country": "CN",
-            "locality": "TBB2002, Wucaiwan",
+            "locality": "Wucaiwan",
             "region": "Xinjiang",
             "formation": "Shishugou",
-            "coordinates": [
-              45.171223,
-              88.9217
-            ],
-            "region_code": "CN-XJ"
+            "part": "upper",
+            "region_code": "CN-XJ",
+            "part_of": "formation"
           },
           "type_specimen": {
             "specimen_id": [
@@ -97210,12 +97308,12 @@
           },
           "location": {
             "country": "AR",
-            "locality": "south part, Amblayo Valley",
+            "locality": "south part of the Amblayo valley, close to Amblayo town",
             "region": "Salta",
             "formation": "Los Blanquitos",
             "coordinates": [
-              -24.838888,
-              -65.386665
+              -24.838889,
+              -65.386667
             ],
             "region_code": "AR-A"
           },
