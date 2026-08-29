@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-08-29T06:32:53.167Z
+  built_at: 2026-08-29T18:48:29.908Z
   clade_count: 188
   genus_count: 1422
   license: CC-BY-4.0
@@ -95839,12 +95839,9 @@ genera:
           to_ma: 72.2
         location:
           country: MX
-          locality: Arroyo El Rosario
+          locality: LACM Locality 7257
           region: Baja California
           formation: La Bocana Roja
-          coordinates:
-            - 30.0333
-            - -115.733299
           region_code: MX-BCN
         type_specimen:
           specimen_id:
@@ -95946,12 +95943,10 @@ genera:
           to_ma: 66
         location:
           country: IN
-          locality: Bara Simla, Jabalpur (Carnosaur Bed)
+          locality: Bara Simla, Jabalpur
           region: Madhya Pradesh
           formation: Lameta
-          coordinates:
-            - 23.168694
-            - 79.972282
+          bed: Carnosaur
           region_code: IN-MP
         size:
           length_m:
@@ -96041,12 +96036,10 @@ genera:
           to_ma: 72.2
         location:
           country: CN
-          locality: Jingangkou Locality 2, Laiyang
+          locality: Locality 2, Jingangkou, Laiyang
           region: Shandong
+          group: Wangshi
           formation: Jingangkou
-          coordinates:
-            - 36.886501
-            - 120.658997
           region_code: CN-SD
         size:
           length_m:
@@ -96158,8 +96151,8 @@ genera:
           region: Neuquén
           formation: Mulichinco
           coordinates:
-            - -38.5
-            - -70.264168
+            - -38.499861
+            - -70.264194
           region_code: AR-Q
         size:
           length_m:
@@ -96167,7 +96160,7 @@ genera:
             max: 3.5
         type_specimen:
           specimen_id:
-            - MLL-Pv-007
+            - MLL-PV-005
           specimen_type: holotype
           institution: Museo Municipal de Las Lajas
           material: Partial skeleton including premaxilla and maxilla with teeth, dentaries, four cervical and first dorsal vertebrae with ribs, dorsal centra, sacral and caudal vertebrae, and pelvic elements
@@ -96275,12 +96268,9 @@ genera:
           to_ma: 72.2
         location:
           country: CA
-          locality: Quarry 45, Sand Creek
+          locality: 4 miles southwest of the mouth of Little Sandhill Creek
           region: Alberta
           formation: Dinosaur Park
-          coordinates:
-            - 50.791084
-            - -111.609741
           region_code: CA-AB
         type_specimen:
           specimen_id:
@@ -96315,8 +96305,13 @@ genera:
           country: CA
           region: Alberta
           formation: Dinosaur Park
-          locality: Dinosaur Provincial Park
+          locality: RTMP Quarry 108, Dinosaur Provincial Park
+          part: upper
+          coordinates:
+            - 50.744976
+            - -111.559208
           region_code: CA-AB
+          part_of: formation
         type_specimen:
           specimen_id:
             - CMN 8705
@@ -96483,12 +96478,10 @@ genera:
           to_ma: 66
         location:
           country: IN
-          locality: Bara Simla, Jabalpur (Carnosaur Bed)
+          locality: Bara Simla, Jabalpur
           region: Madhya Pradesh
           formation: Lameta
-          coordinates:
-            - 23.168694
-            - 79.972282
+          bed: Carnosaur
           region_code: IN-MP
         type_specimen:
           specimen_type: syntype
@@ -96506,6 +96499,15 @@ genera:
         volume: "55"
         issue: "2"
         pages: 105-109
+      - id: huene1933a
+        authors: Huene, F. V.; Matley, C. A.
+        year: 1933
+        title: The Cretaceous Saurischia and Ornithischia of the Central Provinces of India
+        journal: Palaeontologica Indica (New Series), Memoirs of the Geological Survey of India
+        volume: "21"
+        issue: "1"
+        pages: 1-74
+        notes: Names the Carnosaur bed and places it at the top of the greensand zone, immediately under the Main Limestone.
     taxonomy:
       - Life
       - Animalia
@@ -96570,13 +96572,15 @@ genera:
           to_ma: 192.9
         location:
           country: IN
-          locality: Krishnapur north
-          region: Andhra Pradesh
+          locality: North of Krishnapur village
+          region: Telangana
           formation: Dharmaram
+          part: upper
           coordinates:
             - 19.25
             - 79.533333
-          region_code: IN-AP
+          region_code: IN-TS
+          part_of: formation
         type_specimen:
           specimen_id:
             - ISIR 257
@@ -96683,9 +96687,6 @@ genera:
           locality: Zhongpu, Lintao
           region: Gansu
           group: Hekou
-          coordinates:
-            - 36.700001
-            - 103.900002
           region_code: CN-GS
         size:
           length_m:
@@ -96787,9 +96788,6 @@ genera:
           region: Wyoming
           locality: Como Bluff
           formation: Morrison
-          coordinates:
-            - 41.9077
-            - -105.963402
           region_code: US-WY
         type_specimen:
           specimen_id:
@@ -96831,6 +96829,17 @@ genera:
         volume: "17"
         pages: 207-243
         notes: Gives the holotype as YPM 1874 (fragmentary caudal material) and the type species as an indeterminate nomen dubium. Traces it to Como Bluff, the source of the locality, but not to any quarry there.
+      - id: barrett2025a
+        authors: Barrett, P. M.; Maidment, S. C. R.
+        year: 2025
+        title: A review of Nanosaurus agilis Marsh and other small-bodied Morrison Formation ornithopods
+        journal: Bulletin of the Peabody Museum of Natural History
+        publisher: Bulletin of the Peabody Museum of Natural History
+        volume: "66"
+        issue: "1"
+        pages: 25-50
+        doi: 10.3374/014.066.0102
+        notes: Re-examines the holotype at first hand and gives its quarry as unknown, the Peabody Museum records having never tied it to one.
     taxonomy:
       - Life
       - Animalia
@@ -96893,13 +96902,15 @@ genera:
           to_ma: 66
         location:
           country: AR
-          locality: Islas Malvinas
+          locality: Islas Malvinas bentonite quarry
           region: La Pampa
           formation: Allen
+          part: lower
           coordinates:
             - -38.033333
             - -67.816666
           region_code: AR-L
+          part_of: formation
         erected_in: coria2012a
         type_specimen:
           specimen_id:
@@ -96969,21 +96980,15 @@ genera:
     pronunciation:
       phonetic: lah-PLAHT-a-SAWR-us
     etymology: Named for La Plata, Argentina, combined with Greek 'sauros' meaning 'lizard', hence 'La Plata lizard'. The species name refers to the Araucanos (Mapuche) people.
-    description: Laplatasaurus is a genus of titanosaurian sauropod dinosaur that lived during the Late Cretaceous in South America, with the holotype and only known specimen found in the Anacleto Formation.
+    description: Laplatasaurus is a genus of titanosaurian sauropod dinosaur that lived during the Late Cretaceous in what is now Argentina. Huene erected it in 1929 for material from several Patagonian localities together with fossils from Uruguay, Madagascar and India, but never designated a type specimen; Bonaparte and Gasparini supplied a lectotype fifty years later. A 2015 reassessment found none of the remaining material diagnostically referable and restricted the genus to that lectotype alone, reassigning the rest to indeterminate titanosaurs and the Rancho de Ávila sample to a form comparable to Bonitasaura.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
       - fluvial
     diagnostic_features:
-      - Caudal vertebrae with narrow flattening and shallow groove on lower face of body instead of prominent separated haemal facets as in Titanosaurus
-      - Caudal vertebrae with high and pointed articular cones posteriorly, with very little wedge-shaped tapering of the vertebral body downward
-      - Very long and slender prezygapophyses extending notably anteriorly past the preceding vertebra
-      - Humerus markedly more slender than in Titanosaurus and Argyrosaurus, with a distinctly elevated bent lateral process forming a corner above it
-      - Fibula with enormous double muscular insertion (peroneal muscle in two distinct tumescences) in upper third of external side, unlike Titanosaurus (one) or Antarctosaurus (two shallower ridges)
-      - Scapula with anterior longitudinal edge forming a single homogeneous concave arc, not composed of two opposing curves as in Titanosaurus
-    appearance:
-      integument: armored
-      evidence: direct
+      - Slender tibia with a deep cnemial fossa extending more than one-third the length of the shaft
+      - Fibula with an extremely developed anterior fossa on the proximal end, laterally delimited by a thick margin
+      - Fibula with a well-developed lateral tuberosity
     identifiers:
       - source: pbdb
         id: "38690"
@@ -97007,35 +97012,36 @@ genera:
           to_ma: 72.2
         location:
           country: AR
-          locality: Cinco Saltos, Angostura Colorada
+          locality: Cinco Saltos
           region: Río Negro
           formation: Anacleto
-          coordinates:
-            - -38.837898
-            - -68.035698
+          notes: Which unit the lectotype came from is unresolved. Bonaparte and Gasparini (1979), who designated it, and Powell (1986) place it in the Allen Formation. Gallina and Otero (2015) put it at the top of the Anacleto Formation and mark that reading as contrary to both, but reach it by correlating Huene's unspecific 'bed d' to a section measured for Neuquensaurus rather than by new work on the lectotype.
           region_code: AR-R
         size:
           weight_kg:
-            min: 11000
-            max: 11000
+            min: 5000
+            max: 5000
           hip_height_m:
             min: 1.8
             max: 1.8
           length_m:
-            min: 18
-            max: 18
+            min: 10
+            max: 10
         synonyms:
           - name: Titanosaurus araukanicus
             type: reassigned
-            reason: Originally described as Titanosaurus araukanicus; the genus name was preoccupied, and the species was reassigned to Laplatasaurus.
+            reason: Huene erected the species in Laplatasaurus in 1929. Powell (1986, 2003) sank the genus into Titanosaurus and used this combination, which Wilson and Upchurch (2003) reversed in restoring Laplatasaurus for the lectotype.
         type_specimen:
           specimen_id:
-            - MLP 26-306
+            - MLP-CS 1128
+            - MLP-CS 1127
           specimen_type: lectotype
           institution: Museo de La Plata
-          material: A right tibia and a right fibula of the same individual.
+          material: A complete right tibia and a right fibula, found in articulation and belonging to one individual
           completeness: fragmentary
+          notes: Bonaparte and Gasparini (1979) cataloged the pair as MLP 26-306, giving the Cinco Saltos numbers 1128 for the tibia and 1127 for the fibula.
         erected_in: huene1929a
+        described_in: gallina2015a
         authors: Huene, F. V.
         described: 1929
     references:
@@ -97062,20 +97068,48 @@ genera:
         journal: Actas del VII Congreso Geológico Argentino
         volume: "2"
         pages: 393-406
-        notes: In Spanish. Designated MLP 26-306 (a right tibia and right fibula) as the lectotype of Laplatasaurus araukanicus; source of the holotype material.
+        notes: In Spanish. Designated MLP 26-306 (a right tibia and right fibula) as the lectotype of Laplatasaurus araukanicus; source of the type material.
+      - id: powell1986a
+        authors: Powell, J. E.
+        year: 1986
+        title: Revisión de los titanosáuridos de América del Sur
+        publisher: Universidad Nacional de Tucumán, Tucumán, Argentina
+        notes: Places the lectotype in the Allen Formation, and sinks the genus into Titanosaurus as Titanosaurus araukanicus.
+      - id: wilson2003b
+        authors: Wilson, J. A.; Upchurch, P.
+        year: 2003
+        title: A revision of Titanosaurus Lydekker (Dinosauria - Sauropoda), the first dinosaur genus with a 'Gondwanan' distribution
+        journal: Journal of Systematic Palaeontology
+        publisher: Informa UK Limited
+        volume: "1"
+        issue: "3"
+        pages: 125-160
+        doi: 10.1017/S1477201903001044
+        notes: Revision of Titanosaurus. Removed araukanicus from that genus and restored Laplatasaurus for the lectotype tibia and fibula.
+      - id: gallina2015a
+        authors: Gallina, P. A.; Otero, A.
+        year: 2015
+        title: "Reassessment of Laplatasaurus araukanicus (Sauropoda: Titanosauria) from the Upper Cretaceous of Patagonia, Argentina"
+        journal: Ameghiniana
+        publisher: Asociacion Paleontologica Argentina
+        volume: "52"
+        issue: "5"
+        pages: 487-501
+        doi: 10.5710/AMGH.08.06.2015.2911
+        notes: Restricts the species to the lectotype and reassigns all other referred material. Places the lectotype at the top of the Anacleto Formation, at the INDUPA quarry about 3 km west of Cinco Saltos.
       - id: paul2024a
         authors: Paul, G. S.
         year: 2024
         title: The Princeton Field Guide to Dinosaurs (3rd ed.)
         publisher: Princeton University Press
-        notes: Source of the mass estimate.
+        notes: Gives 18 m and 11 tonnes, but describes neck anatomy and a minority of several skeletons, so its figures rest on material the 2015 reassessment removed from the species.
       - id: jones2026b
         authors: Jones, B.; Viola, E.
         year: 2026
         title: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
-        notes: Source of the hip height estimate.
+        notes: Source of the size estimates, which are drawn on the restricted hypodigm of a tibia and fibula.
     taxonomy:
       - Life
       - Animalia
@@ -97152,12 +97186,9 @@ genera:
           to_ma: 165.3
         location:
           country: MG
-          locality: Andranomamy, Tsinjorano
+          locality: Andranomamy
           region: Mahajanga
           formation: Isalo III
-          coordinates:
-            - -16.5
-            - 47.12722
           region_code: MG-M
         type_specimen:
           specimen_id:
@@ -97329,12 +97360,9 @@ genera:
           to_ma: 199.5
         location:
           country: VE
-          locality: Rio La Grita
+          locality: Road-cut between La Grita and Seboruco
           region: Táchira
           formation: La Quinta
-          coordinates:
-            - 8.137222
-            - -71.985558
           region_code: VE-S
         size:
           weight_kg:
@@ -97460,12 +97488,12 @@ genera:
           to_ma: 72.2
         location:
           country: CA
+          locality: 3.1 km north-northeast of the northeastern corner of Dinosaur Provincial Park
           region: Alberta
           formation: Dinosaur Park
-          coordinates:
-            - 50.809383
-            - -111.327057
+          part: upper
           region_code: CA-AB
+          part_of: formation
         size:
           length_m:
             min: 3
@@ -97611,12 +97639,9 @@ genera:
           to_ma: 72.2
         location:
           country: MX
-          locality: Ejido Presa de San Antonio (Coah 14)
+          locality: Ejido Presa San Antonio
           region: Coahuila
           formation: Cerro del Pueblo
-          coordinates:
-            - 25.470833
-            - -101.699997
           region_code: MX-COA
         type_specimen:
           specimen_id:
@@ -97780,13 +97805,13 @@ genera:
           to_ma: 100.5
         location:
           country: AR
-          locality: 3 km south of Agrio del Medio
+          locality: Agrio del Medio
           region: Neuquén
           formation: Rayoso
-          coordinates:
-            - -38.352779
-            - -69.915833
+          member: Pichi Neuquén
+          part: middle
           region_code: AR-Q
+          part_of: member
         size:
           length_m:
             min: 10.2
@@ -97893,8 +97918,8 @@ genera:
           region: Victoria
           formation: Eumeralla
           coordinates:
-            - -36.698055
-            - 143.40416
+            - -38.781667
+            - 143.404167
           region_code: AU-VIC
         size:
           weight_kg:
@@ -97991,10 +98016,9 @@ genera:
           locality: Beginsel farm
           region: Free State
           formation: Elliot
-          coordinates:
-            - -28.621944
-            - 28.411388
+          part: upper
           region_code: ZA-FS
+          part_of: formation
         size:
           length_m:
             min: 10.8
@@ -98089,12 +98113,9 @@ genera:
           to_ma: 132.6
         location:
           country: AR
-          locality: Bajada Colorada locality (main)
+          locality: 40 km south of Picún Leufú on National Route 237
           region: Neuquén
           formation: Bajada Colorada
-          coordinates:
-            - -39.817501
-            - -69.674164
           region_code: AR-Q
         size:
           weight_kg:
@@ -98213,10 +98234,9 @@ genera:
           locality: Cañadón Las Leoneras
           region: Chubut
           formation: Las Leoneras
-          coordinates:
-            - -42.834061
-            - -69.432693
+          part: upper
           region_code: AR-U
+          part_of: formation
         size:
           hip_height_m:
             min: 0.7
