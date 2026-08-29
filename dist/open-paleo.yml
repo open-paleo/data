@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-08-29T04:39:27.114Z
+  built_at: 2026-08-29T04:55:43.296Z
   clade_count: 188
   genus_count: 1422
   license: CC-BY-4.0
@@ -57313,7 +57313,7 @@ genera:
     description: Draconyx is a genus of ornithopod dinosaur from the Late Jurassic of what is now Portugal. It was found in the Lourinhã Formation in 1991, and described by Octávio Mateus and Miguel Telles Antunes in 2001.
     dispute:
       summary: |
-        Draconyx loureiroi was originally referred to Camptosauridae (Mateus and Antunes, 2001), and its position has remained unresolved since. It has been recovered among basal Styracosterna (Madzia and others, 2021; Rotatori and others, 2022, reported by Jones, 2026), as the basalmost ankylopollexian alongside Oblitosaurus bunnueli (Sánchez-Fenollosa and others, 2023), and outside Ankylopollexia entirely — Fonseca and others (2024) recover it as a constituent of Dryomorpha rather than of Ankylopollexia, and Rotatori and others (2026) recover it as the sister taxon of Cumnoria prestwichii, diverging before the ankylopollexian node. It is placed at Dryomorpha incertae sedis, the least inclusive clade common to every hypothesis.
+        Draconyx loureiroi was originally referred to Camptosauridae (Mateus and Antunes, 2001), and its position has remained unresolved since. It has been recovered among basal Styracosterna (Madzia and others, 2021; Rotatori and others, 2022), as the basalmost ankylopollexian alongside Oblitosaurus bunnueli (Sánchez-Fenollosa and others, 2023), and outside Ankylopollexia entirely — Fonseca and others (2024) recover it as a constituent of Dryomorpha rather than of Ankylopollexia, and Rotatori and others (2026) recover it as the sister taxon of Cumnoria prestwichii, diverging before the ankylopollexian node. It is placed at Dryomorpha incertae sedis, the least inclusive clade common to every hypothesis.
       history:
         - date: 2026-06-27
           note: Placed at Styracosterna following recent analyses; the camptosaurid interpretation reflected, not adopted.
@@ -57325,12 +57325,12 @@ genera:
       - fluvial
       - coastal
     diagnostic_features:
-      - Maxillary teeth with strong primary ridge with five tertiary ridges at the mesial side; enamel on labial surface lower distally than mesially.
-      - Manual ungual phalanges higher than broad.
-      - Tibial condyle of femur without lateral projection into the flexor groove.
-      - Fibular condyle of femur shorter anteroposteriorly than wide mediolaterally.
-      - Astragalus fused to calcaneum; distal tarsal II present; lateral distal tarsal overlaps the medial distal tarsal.
-      - Metatarsal V absent.
+      - Carpus unfused and non-interlocked.
+      - No sharp crest running from the medial condyle of the femur toward the lesser trochanter.
+      - Extensor groove on the distal epiphysis of the femur fully open and U-shaped; flexor groove fully open and V-shaped, without overhangs.
+      - Medial margin of the proximal epiphysis of the tibia concave.
+      - Fibular condyle of the tibia pointing caudally.
+      - Metatarsal I splint-like.
     appearance:
       integument: scaled
       evidence: inferred
@@ -57365,19 +57365,20 @@ genera:
             - ML357
           specimen_type: holotype
           institution: Museu da Lourinhã
-          material: Two maxillary teeth, three mid-anterior caudal centra, one chevron, distal epiphysis of right humerus, one manual phalanx, three manual ungual phalanges, distal epiphysis of right femur, epiphyses of tibia and fibula, astragalus, calcaneum, three tarsals, four metatarsals, pedal phalanges.
+          material: Two maxillary teeth, three proximal caudal vertebrae, one chevron, distal end of right humerus, carpals, two metacarpal distal ends, four manual phalanges, five manual unguals, distal epiphysis of right femur, epiphyses of tibia and fibula, astragalus, calcaneum, two distal tarsals, four metatarsals, five pedal phalanges, two pedal unguals.
           completeness: fragmentary
         size:
           hip_height_m:
             min: 1
             max: 1
           length_m:
-            min: 3.5
-            max: 3.5
+            min: 2.9
+            max: 3.9
           weight_kg:
             min: 150
             max: 150
         erected_in: mateus2001a
+        described_in: rotatori2022a
         authors: Mateus, O.; Telles Antunes, M.
         described: 2001
     references:
@@ -57446,7 +57447,7 @@ genera:
         issue: "1"
         pages: 125-156
         doi: 10.1093/zoolinnean/zlab113
-        notes: Redescription of the holotype, placing it in the Praia Azul Member of the Lourinhã Formation at Vale Frades.
+        notes: Emended diagnosis and redescription of the holotype with newly reported manual material; places it in the Praia Azul Member at Vale Frades and reassigns the referred femur to Ankylopollexia indet.
     taxonomy:
       - Life
       - Animalia
@@ -93368,10 +93369,9 @@ genera:
           locality: Berezovsk Quarry
           region: Krasnoyarsk
           formation: Itat
-          coordinates:
-            - 55.650002
-            - 89.183334
+          part: upper
           region_code: RU-KYA
+          part_of: formation
         type_specimen:
           specimen_id:
             - ZIN PH 5/117
@@ -93476,9 +93476,6 @@ genera:
           locality: Phu Wiang 5A
           region: Khon Kaen
           formation: Sao Khua
-          coordinates:
-            - 16.683332
-            - 102.25
           region_code: TH-40
         size:
           length_m:
@@ -93597,12 +93594,12 @@ genera:
           to_ma: 113.2
         location:
           country: RU
-          locality: Shestakovo-1
+          locality: Shestakovo 1
           region: Kemerovo
           formation: Ilek
           coordinates:
-            - 55.903332
-            - 87.957779
+            - 55.9
+            - 87.933333
           region_code: RU-KEM
         size:
           length_m:
@@ -93691,13 +93688,12 @@ genera:
           to_ma: 161.5
         location:
           country: CN
-          locality: Kelamaili, 35 km N of Jiangjunmiao
+          locality: Jiangjun Gebi, 35 km north of Jiangjunmiao
           region: Xinjiang
           formation: Shishugou
-          coordinates:
-            - 44.837215
-            - 90.064598
+          part: lower
           region_code: CN-XJ
+          part_of: formation
         size:
           hip_height_m:
             min: 3.3
@@ -93816,10 +93812,7 @@ genera:
           country: MN
           locality: Ankylosaur Flats, Ukhaa Tolgod
           region: Ömnögovi
-          formation: Djadokhta
-          coordinates:
-            - 43.664444
-            - 100.901947
+          formation: Djadochta
           region_code: MN-053
         size:
           length_m:
@@ -93925,13 +93918,12 @@ genera:
           to_ma: 66
         location:
           country: AR
-          locality: Norte de Cerro Bayo 1 (3 meters)
+          locality: Cerro Bayo Norte
           region: Chubut
           formation: La Colonia
-          coordinates:
-            - -42.960835
-            - -67.554726
+          part: lower
           region_code: AR-U
+          part_of: formation
         size:
           weight_kg:
             min: 520
@@ -94036,12 +94028,13 @@ genera:
           to_ma: 143.1
         location:
           country: US
+          locality: DNM 94
           region: Utah
           formation: Morrison
-          coordinates:
-            - 40.423611
-            - -109.205833
+          member: Brushy Basin
+          part: upper
           region_code: US-UT
+          part_of: member
         type_specimen:
           specimen_id:
             - DINO 3353
@@ -94128,12 +94121,9 @@ genera:
           to_ma: 100.5
         location:
           country: KR
-          locality: Tando/Buldo Quarries
+          locality: Tando embankment dam
           region: Gyeonggi
-          formation: Tando beds
-          coordinates:
-            - 37.177914
-            - 126.65641
+          notes: Lee and colleagues (2010) give the horizon as the Tando beds, which no one has erected as a formation.
           region_code: KR-41
         type_specimen:
           specimen_id:
@@ -94243,12 +94233,9 @@ genera:
           to_ma: 72.2
         location:
           country: KR
-          locality: Boseong Bibong-ri Dinosaur Egg Site 5
+          locality: Site 5
           region: South Jeolla
           formation: Seonso Conglomerate
-          coordinates:
-            - 34.706188
-            - 127.197456
           region_code: KR-46
         size:
           length_m:
@@ -94340,12 +94327,10 @@ genera:
           to_ma: 113.2
         location:
           country: JP
-          locality: Kitadani Dinosaur Quarry (middle, BB IV)
+          locality: Kitadani Quarry
           region: Fukui
           formation: Kitadani
-          coordinates:
-            - 36.116669
-            - 136.550003
+          bed: BB IV
           region_code: JP-18
         size:
           length_m:
@@ -94472,11 +94457,9 @@ genera:
           to_ma: 72.2
         location:
           country: US
+          locality: UMNH VP locality 890
           region: Utah
           formation: Kaiparowits
-          coordinates:
-            - 37.532001
-            - -111.700996
           region_code: US-UT
         size:
           hip_height_m:
@@ -94612,12 +94595,9 @@ genera:
           to_ma: 184.2
         location:
           country: IN
-          locality: Yamanpalli bonebed, Kota
+          locality: Yamanpalli
           region: Telangana
           formation: Kota
-          coordinates:
-            - 19.106924
-            - 79.845581
           region_code: IN-TS
         size:
           hip_height_m:
@@ -94652,6 +94632,17 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
         notes: Source of the hip height estimate, and the appearance features.
+      - id: yadagiri2001a
+        authors: Yadagiri, P.
+        year: 2001
+        title: The osteology of Kotasaurus yamanpalliensis, a sauropod dinosaur from the Early Jurassic Kota Formation of India
+        journal: Journal of Vertebrate Paleontology
+        publisher: Informa UK Limited
+        volume: "21"
+        issue: "2"
+        pages: 242-252
+        doi: 10.1671/0272-4634(2001)021[0242:TOOKYA]2.0.CO;2
+        notes: Names Yamanpalli as the excavation and places it 40 km north of the Barapasaurus type locality.
     taxonomy:
       - Life
       - Animalia
@@ -94721,9 +94712,7 @@ genera:
           locality: west of Chaco Canyon, Ojo Alamo
           region: New Mexico
           formation: Kirtland
-          coordinates:
-            - 36.269444
-            - -108.166946
+          member: De-Na-Zin
           region_code: US-NM
         size:
           length_m:
@@ -94833,11 +94822,8 @@ genera:
         location:
           country: RO
           region: Hunedoara
-          locality: Fântânele-3 site, Hațeg Basin
+          locality: Fântânele-3
           formation: Densuș-Ciula
-          coordinates:
-            - 45.621868
-            - 22.79283
           region_code: RO-HD
         type_specimen:
           specimen_id:
@@ -94937,7 +94923,7 @@ genera:
           to_ma: 100.5
         location:
           country: NE
-          locality: Gadoufaoua, G138
+          locality: Gadoufaoua, G88
           region: Agadez
           formation: Elrhaz
           coordinates:
@@ -95055,12 +95041,10 @@ genera:
           to_ma: 100.5
         location:
           country: UZ
-          region: Navoiy
+          locality: SH-21
+          region: Karakalpakstan
           formation: Khodzhakul
-          coordinates:
-            - 40.099998
-            - 65.800003
-          region_code: UZ-NW
+          region_code: UZ-QR
         type_specimen:
           specimen_id:
             - CCMGE 495/12457
@@ -95151,13 +95135,12 @@ genera:
           to_ma: 165.3
         location:
           country: RU
-          locality: Kulinda (trench 3)
+          locality: Kulinda
           region: Zabaykalsky
           formation: Ukureyskaya
-          coordinates:
-            - 52.519722
-            - 116.715836
+          part: lower
           region_code: RU-ZAB
+          part_of: formation
         type_specimen:
           specimen_id:
             - INREC K3/109
@@ -95266,12 +95249,10 @@ genera:
           to_ma: 100.5
         location:
           country: AU
-          locality: Marathon Station, Flinders River
+          locality: Marathon Station
           region: Queensland
-          formation: Toolebuc
-          coordinates:
-            - -20.866667
-            - 143.583328
+          formation: Allaru Mudstone
+          notes: Leahey and colleagues (2015) give the Allaru Mudstone for the holotype and the Toolebuc Formation for other specimens they discuss.
           region_code: AU-QLD
         size:
           weight_kg:
@@ -95379,8 +95360,12 @@ genera:
         erected_in: godefroit2012b
         location:
           country: RU
+          locality: Kundur
           region: Amur
           formation: Udurchukan
+          coordinates:
+            - 49.0826
+            - 130.8595
           region_code: RU-AMU
         type_specimen:
           specimen_id:
@@ -95498,9 +95483,6 @@ genera:
           locality: Khulsan
           region: Ömnögovi
           formation: Baruungoyot
-          coordinates:
-            - 43.488609
-            - 101.145554
           region_code: MN-053
         size:
           length_m:
@@ -95614,10 +95596,11 @@ genera:
           country: BR
           locality: Gaviões's Paleontological Site
           region: São Paulo
+          group: Bauru
           formation: Marília
           coordinates:
-            - -21.294167
-            - -48.519444
+            - -21.294139
+            - -48.519417
           region_code: BR-SP
         erected_in: iori2021a
         type_specimen:
@@ -95717,12 +95700,9 @@ genera:
           to_ma: 89.8
         location:
           country: UZ
-          locality: CBI-52, Dzharakuduk II
+          locality: Dzharakuduk II
           region: Navoiy
           formation: Bissekty
-          coordinates:
-            - 42.117294
-            - 62.655315
           region_code: UZ-NW
         type_specimen:
           specimen_id:
