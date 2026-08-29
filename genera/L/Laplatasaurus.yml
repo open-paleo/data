@@ -6,29 +6,24 @@ etymology: "Named for La Plata, Argentina, combined with Greek 'sauros' meaning
   'lizard', hence 'La Plata lizard'. The species name refers to the Araucanos
   (Mapuche) people."
 description: Laplatasaurus is a genus of titanosaurian sauropod dinosaur that
-  lived during the Late Cretaceous in South America, with the holotype and only
-  known specimen found in the Anacleto Formation.
+  lived during the Late Cretaceous in what is now Argentina. Huene erected it in
+  1929 for material from several Patagonian localities together with fossils
+  from Uruguay, Madagascar and India, but never designated a type specimen;
+  Bonaparte and Gasparini supplied a lectotype fifty years later. A 2015
+  reassessment found none of the remaining material diagnostically referable and
+  restricted the genus to that lectotype alone, reassigning the rest to
+  indeterminate titanosaurs and the Rancho de Ávila sample to a form comparable
+  to Bonitasaura.
 diet: herbivore
 locomotion: quadrupedal
 paleoenvironment:
   - fluvial
 diagnostic_features:
-  - Caudal vertebrae with narrow flattening and shallow groove on lower face of
-    body instead of prominent separated haemal facets as in Titanosaurus
-  - Caudal vertebrae with high and pointed articular cones posteriorly, with
-    very little wedge-shaped tapering of the vertebral body downward
-  - Very long and slender prezygapophyses extending notably anteriorly past the
-    preceding vertebra
-  - Humerus markedly more slender than in Titanosaurus and Argyrosaurus, with a
-    distinctly elevated bent lateral process forming a corner above it
-  - Fibula with enormous double muscular insertion (peroneal muscle in two
-    distinct tumescences) in upper third of external side, unlike Titanosaurus
-    (one) or Antarctosaurus (two shallower ridges)
-  - Scapula with anterior longitudinal edge forming a single homogeneous concave
-    arc, not composed of two opposing curves as in Titanosaurus
-appearance:
-  integument: armored
-  evidence: direct
+  - Slender tibia with a deep cnemial fossa extending more than one-third the
+    length of the shaft
+  - Fibula with an extremely developed anterior fossa on the proximal end,
+    laterally delimited by a thick margin
+  - Fibula with a well-developed lateral tuberosity
 identifiers:
   - source: pbdb
     id: "38690"
@@ -64,26 +59,35 @@ species:
         lectotype.
     size:
       weight_kg:
-        min: 11000
-        max: 11000
+        min: 5000
+        max: 5000
       hip_height_m:
         min: 1.8
         max: 1.8
       length_m:
-        min: 18.0
-        max: 18.0
+        min: 10.0
+        max: 10.0
     synonyms:
       - name: Titanosaurus araukanicus
         type: reassigned
-        reason: Originally described as Titanosaurus araukanicus; the genus name was
-          preoccupied, and the species was reassigned to Laplatasaurus.
+        reason: Huene erected the species in Laplatasaurus in 1929. Powell (1986,
+          2003) sank the genus into Titanosaurus and used this combination, which
+          Wilson and Upchurch (2003) reversed in restoring Laplatasaurus for the
+          lectotype.
     type_specimen:
-      specimen_id: [ MLP 26-306 ]
+      specimen_id:
+        - MLP-CS 1128
+        - MLP-CS 1127
       specimen_type: lectotype
       institution: MLP
-      material: A right tibia and a right fibula of the same individual.
+      material: A complete right tibia and a right fibula, found in articulation
+        and belonging to one individual
       completeness: fragmentary
+      notes: Bonaparte and Gasparini (1979) cataloged the pair as MLP 26-306,
+        giving the Cinco Saltos numbers 1128 for the tibia and 1127 for the
+        fibula.
     erected_in: huene1929a
+    described_in: gallina2015a
 references:
   - id: huene1927c
     notes: In German. First paper in which the genus name Laplatasaurus appears.
@@ -91,15 +95,21 @@ references:
     notes: In Spanish. First formal description of Laplatasaurus.
   - id: bonaparte1979c
     notes: In Spanish. Designated MLP 26-306 (a right tibia and right fibula) as
-      the lectotype of Laplatasaurus araukanicus; source of the holotype
-      material.
+      the lectotype of Laplatasaurus araukanicus; source of the type material.
   - id: powell1986a
-    notes: Places the lectotype in the Allen Formation.
+    notes: Places the lectotype in the Allen Formation, and sinks the genus into
+      Titanosaurus as Titanosaurus araukanicus.
+  - id: wilson2003b
+    notes: Revision of Titanosaurus. Removed araukanicus from that genus and
+      restored Laplatasaurus for the lectotype tibia and fibula.
   - id: gallina2015a
-    notes: Reassessment of the taxon. Places the lectotype at the top of the
-      Anacleto Formation, and gives its site as the INDUPA quarry, about 3 km
-      west of Cinco Saltos.
+    notes: Restricts the species to the lectotype and reassigns all other
+      referred material. Places the lectotype at the top of the Anacleto
+      Formation, at the INDUPA quarry about 3 km west of Cinco Saltos.
   - id: paul2024a
-    notes: Source of the mass estimate.
+    notes: Gives 18 m and 11 tonnes, but describes neck anatomy and a minority of
+      several skeletons, so its figures rest on material the 2015 reassessment
+      removed from the species.
   - id: jones2026b
-    notes: Source of the hip height estimate.
+    notes: Source of the size estimates, which are drawn on the restricted
+      hypodigm of a tibia and fibula.
