@@ -6,28 +6,36 @@ etymology: "Named in honor of Don Lessem, a writer of popular science books
   about dinosaurs, combined with Greek 'sauros' meaning 'lizard'; the specific
   name sauropoides means 'sauropod-like', referencing its sauropodiform
   affinities."
-description: Lessemsaurus is an extinct genus of sauropodiform dinosaur that
-  lived in the Norian-aged (Upper Triassic) Los Colorados Formation of what is
-  now Argentina.
+description: Lessemsaurus is an extinct genus of sauropodiform dinosaur from the
+  Late Triassic of what is now Argentina. Bonaparte erected it in 1999 on eight
+  presacral neural arches, part of a disarticulated assemblage collected in 1971
+  that also yielded vertebrae, girdles and limb bones. Because nothing in the lot
+  is articulated, a 2007 redescription restricted the type to those arches alone
+  and referred the remaining elements, which come from at least three
+  individuals, to the species separately. Most of what is known of the skeleton
+  rests on that referred material.
 diet: herbivore
 locomotion: quadrupedal
 paleoenvironment:
   - fluvial
   - arid
 diagnostic_features:
-  - Mid and posterior cervical vertebrae with strong transverse
-    infrapostzygapophyseal constriction
-  - High neural arches in mid and posterior cervicals and dorsals, with centrum
-    to neural arch height ratio of 1:2
-  - Neural spines higher than wide in mid and posterior dorsals, with ratio of
-    1.5-2 (height) to 1 (width)
-  - Deep postspinal fossa in posterior cervicals with marked, high postspinal
-    laminae
-  - Neural spine extension in mid-posterior dorsals greater than 90% of
-    vertebral centrum length
-  - Tall neural arches in posterior cervicals positioned far from neural
-    arch-centrum junction
-  - Well-developed hyposphenes on postzygapophyses of mid and posterior dorsals
+  - Dorsal and middle to posterior cervical vertebrae with high neural arches
+  - Strong neural arch constriction below the postzygapophyses
+  - Deep postspinal fossa
+  - Dorsoventrally high infrapostzygapophyseal depression
+  - Middle and posterior dorsals with neural spines higher than long, the height
+    to length ratio being 1.5 to 2
+  - Robust scapula with a markedly expanded blade
+  - Metacarpal I extremely short, its proximal end lateromedially wider than the
+    length of the metacarpal
+  - Acute lateral process on the proximolateral corner of metacarpal II
+  - Pubic peduncle of the ilium with a medial flange forming a narrow, marginal
+    medial wall of the acetabulum
+  - Brevis crest extending from the base of the ischial peduncle to the posterior
+    tip of the postacetabular process
+  - Distal tibia subrectangular in cross-section, its major axis lateromedial and
+    twice its anteroposterior extension
 appearance:
   integument: scaled
   evidence: inferred
@@ -57,19 +65,30 @@ species:
         min: 2.5
         max: 2.5
       length_m:
-        min: 10.0
-        max: 12.0
+        min: 9.0
+        max: 10.3
       weight_kg:
-        min: 7000
-        max: 10000
+        min: 2000
+        max: 2900
     type_specimen:
       specimen_id: [ PVL 4822-1 ]
       specimen_type: holotype
       institution: PVL
-      material: Partial skeleton.
-      completeness: partial
+      material: Eight presacral neural arches
+      completeness: fragmentary
+      notes: Nothing in the assemblage is articulated, so Pol and Powell (2007)
+        restricted the holotype to the eight arches Bonaparte described,
+        individually numbered PVL 4822-1/1, /2, /3, /4, /5, /6, /7 and /10. They
+        renumbered the rest of the lot as referred material from at least three
+        individuals.
     erected_in: bonaparte1999d
+    described_in: pol2007a
 references:
   - id: bonaparte1999d
+  - id: pol2007a
+    notes: Describes the postcranial material and restricts the holotype to the
+      eight presacral neural arches of the original description.
+  - id: paul2024a
+    notes: Source of the lower length and mass estimates.
   - id: jones2026b
-    notes: Source of the hip height estimate.
+    notes: Source of the hip height, and of the upper length and mass estimates.
