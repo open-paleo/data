@@ -19,13 +19,25 @@ diagnostic_features:
   - Ascending process of maxilla homogeneously wide rostrocaudally
   - Maxillary horizontal ramus dorsoventrally deep with subparallel dorsal and
     ventral margins
-  - Maxilla/jugal contact subvertical
-  - 19 maxillary teeth (more than other abelisaurids)
-  - Lacrimal rostrally projected with well-developed suborbital process
-  - Quadratojugal with pronounced caudal notch
-  - Dentary caudoventral process bifurcated to receive angular
-  - Angular with rostral end dorsoventrally deep to fit between splenial and
-    prearticular
+  - 19 maxillary teeth, the highest maxillary tooth count of any abelisaurid
+  - Angular with rostral end dorsoventrally deep, fitting between the splenial
+    and prearticular
+  - Antorbital fossa restricted to the maxilla, absent from the nasal and
+    lacrimal
+  - Double dorsal protuberances over each frontal
+  - Quadratojugal with a thick jugal process, rounded in cross-section,
+    laterally procumbent and covered by strong external rugosities
+  - 21 dentary teeth, the highest dentary tooth count of any abelisaurid
+  - Retroarticular fossa of the articular anteroposteriorly longer than
+    lateromedially wide, divided by a strongly oblique crest
+  - Dorsal margin of the central iliac blade convex in lateral view
+  - Preacetabular blade subrectangular in lateral contour
+  - Subvertically oriented swelling of the iliac blade at the level of the
+    acetabulum
+  - Tibial lateral condyle one-third wider than the medial condyle, with a
+    flattened caudal margin in proximal view
+  - Rounded, deep pit on the proximolateral surface of pedal digit IV phalanges
+    1-3
 appearance:
   features:
     - cranial bosses
@@ -70,13 +82,35 @@ species:
         min: 891
         max: 900
     erected_in: canale2008a
+    described_in: canale2026a
     type_specimen:
-      specimen_id: [MMCH-Pv 48K]
+      specimen_id: [MMCH-Pv 48]
       specimen_type: holotype
       institution: MMCH
-      material: Nearly complete skull and partial postcranial skeleton
+      material: Almost complete articulated skeleton lacking both pectoral
+        girdles, the forelimbs, and the distal two-thirds of the tail; skull
+        nearly complete with the jaws articulated in occlusion
       completeness: partial
+notable_specimens:
+  - specimen_id: [MMCH-Pv 255]
+    institution: MMCH
+    species: Skorpiovenator bustingorryi
+    category: complementary
+    significance: "The proximal end of a right tibia from a larger individual,
+      found 2 kilometers west of the holotype at almost the same stratigraphic
+      level. It preserves a complete hatchet-shaped cnemial crest, which both
+      holotype tibiae lack, and shares the autapomorphic lateral condyle."
+    references: [cerroni2022a, canale2026a]
 references:
   - id: canale2008a
+  - id: cerroni2020b
+    notes: Documented the nasal and skull roof neurovascular canal system from CT
+      scans, reading the sculptured nasal surface as a bony correlate for a
+      scaled epidermal cover.
+  - id: cerroni2022a
+    notes: Described the appendicular skeleton, added five appendicular
+      autapomorphies to the diagnosis, and referred the larger proximal tibia
+      MMCH-Pv 255 to the species.
+  - id: canale2026a
   - id: jones2026c
     notes: Source of the hip height estimate, and the appearance features.
