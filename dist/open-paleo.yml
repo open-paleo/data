@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-08-29T18:48:29.908Z
+  built_at: 2026-08-29T21:06:02.336Z
   clade_count: 188
   genus_count: 1422
   license: CC-BY-4.0
@@ -98341,12 +98341,10 @@ genera:
           to_ma: 205.7
         location:
           country: US
-          locality: Dockum Site 7
+          locality: Dockum Site 7 General
           region: Texas
-          formation: Cooper Canyon
-          coordinates:
-            - 32.180401
-            - -101.321587
+          group: Dockum
+          formation: Colorado City
           region_code: US-TX
         size:
           length_m:
@@ -98416,6 +98414,17 @@ genera:
         pages: 2238-2247
         doi: 10.1038/s41559-025-02868-4
         notes: New Carnian theropod analysis bearing on Lepidus's basal neotheropod placement.
+      - id: lovelace2025a
+        authors: Lovelace, D. M.; Kufner, A. M.; Fitch, A. J.; Curry Rogers, K.; Schmitz, M.; Schwartz, D. M.; LeClair-Diaz, A.; St.Clair, L.; Mann, J.; Teran, R.
+        year: 2025
+        title: "Rethinking dinosaur origins: oldest known equatorial dinosaur-bearing assemblage (mid-late Carnian Popo Agie FM, Wyoming, USA)"
+        journal: Zoological Journal of the Linnean Society
+        publisher: Oxford University Press
+        volume: "203"
+        issue: "1"
+        pages: zlae153
+        doi: 10.1093/zoolinnean/zlae153
+        notes: Names the unit at the Otis Chalk localities as the Colorado City Formation, within the lower Dockum Group.
     taxonomy:
       - Life
       - Animalia
@@ -98478,12 +98487,9 @@ genera:
           to_ma: 66
         location:
           country: CA
-          locality: 3 miles above Tolman Ferry (190 ft level)
+          locality: Three miles above Tolman Ferry
           region: Alberta
           formation: Scollard
-          coordinates:
-            - 51.819099
-            - -112.981903
           region_code: CA-AB
         type_specimen:
           specimen_id:
@@ -98627,10 +98633,10 @@ genera:
           locality: Terlingua area
           region: Texas
           formation: Aguja
-          coordinates:
-            - 29.316668
-            - -103.51667
+          member: Alto Shale
+          part: lower
           region_code: US-TX
+          part_of: member
         erected_in: longrich2013a
         type_specimen:
           specimen_id:
@@ -98652,6 +98658,17 @@ genera:
         issue: "1"
         pages: 23-49
         doi: 10.3374/014.054.0102
+      - id: lehman2024a
+        authors: Lehman, T. M.; Wick, S. L.; Macon, C. C.; Wagner, J. R.; Waggoner, K. J.; Brink, A. A.; Shiller, T. A., II
+        year: 2024
+        title: Stratigraphy and depositional history of the Aguja Formation (Upper Cretaceous, Campanian) of West Texas, southwestern USA
+        journal: Geosphere
+        publisher: Geological Society of America
+        volume: "20"
+        issue: "3"
+        pages: 825-879
+        doi: 10.1130/GES02662.1
+        notes: Formally erects the Alto Shale Member for the interval previously called the upper shale, and places this species in its lower part.
     taxonomy:
       - Life
       - Animalia
@@ -98723,13 +98740,13 @@ genera:
           to_ma: 154.8
         location:
           country: CN
-          locality: Xiaogu, Qianwei
+          locality: Yuanbaoshan, Tongyi Village, Xiaogu, Qianwei
           region: Sichuan
           formation: Shaximiao
           part: upper
           coordinates:
-            - 29.093945
-            - 104.052391
+            - 29.089167
+            - 104.055
           region_code: CN-SC
           part_of: formation
         type_specimen:
@@ -98840,13 +98857,12 @@ genera:
           to_ma: 192.9
         location:
           country: LS
-          locality: north flank, Likhoele Mountain
+          locality: Likhoele Mountain
           region: Mafeteng
           formation: Elliot
-          coordinates:
-            - -29.85
-            - 27.25
+          part: upper
           region_code: LS-E
+          part_of: formation
         type_specimen:
           specimen_id:
             - NHMUK PV RU B 17
@@ -98983,20 +98999,24 @@ genera:
     pronunciation:
       phonetic: LES-uhm-SAWR-us
     etymology: Named in honor of Don Lessem, a writer of popular science books about dinosaurs, combined with Greek 'sauros' meaning 'lizard'; the specific name sauropoides means 'sauropod-like', referencing its sauropodiform affinities.
-    description: Lessemsaurus is an extinct genus of sauropodiform dinosaur that lived in the Norian-aged (Upper Triassic) Los Colorados Formation of what is now Argentina.
+    description: Lessemsaurus is an extinct genus of sauropodiform dinosaur from the Late Triassic of what is now Argentina. Bonaparte erected it in 1999 on eight presacral neural arches, part of a disarticulated assemblage collected in 1971 that also yielded vertebrae, girdles and limb bones. Because nothing in the lot is articulated, a 2007 redescription restricted the type to those arches alone and referred the remaining elements, which come from at least three individuals, to the species separately. Most of what is known of the skeleton rests on that referred material.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
       - fluvial
       - arid
     diagnostic_features:
-      - Mid and posterior cervical vertebrae with strong transverse infrapostzygapophyseal constriction
-      - High neural arches in mid and posterior cervicals and dorsals, with centrum to neural arch height ratio of 1:2
-      - Neural spines higher than wide in mid and posterior dorsals, with ratio of 1.5-2 (height) to 1 (width)
-      - Deep postspinal fossa in posterior cervicals with marked, high postspinal laminae
-      - Neural spine extension in mid-posterior dorsals greater than 90% of vertebral centrum length
-      - Tall neural arches in posterior cervicals positioned far from neural arch-centrum junction
-      - Well-developed hyposphenes on postzygapophyses of mid and posterior dorsals
+      - Dorsal and middle to posterior cervical vertebrae with high neural arches
+      - Strong neural arch constriction below the postzygapophyses
+      - Deep postspinal fossa
+      - Dorsoventrally high infrapostzygapophyseal depression
+      - Middle and posterior dorsals with neural spines higher than long, the height to length ratio being 1.5 to 2
+      - Robust scapula with a markedly expanded blade
+      - Metacarpal I extremely short, its proximal end lateromedially wider than the length of the metacarpal
+      - Acute lateral process on the proximolateral corner of metacarpal II
+      - Pubic peduncle of the ilium with a medial flange forming a narrow, marginal medial wall of the acetabulum
+      - Brevis crest extending from the base of the ischial peduncle to the posterior tip of the postacetabular process
+      - Distal tibia subrectangular in cross-section, its major axis lateromedial and twice its anteroposterior extension
     appearance:
       integument: scaled
       evidence: inferred
@@ -99020,28 +99040,29 @@ genera:
           locality: Paraje La Esquina
           region: La Rioja
           formation: Los Colorados
-          coordinates:
-            - -30.4167
-            - -66.083298
+          part: upper
           region_code: AR-F
+          part_of: formation
         size:
           hip_height_m:
             min: 2.5
             max: 2.5
           length_m:
-            min: 10
-            max: 12
+            min: 9
+            max: 10.3
           weight_kg:
-            min: 7000
-            max: 10000
+            min: 2000
+            max: 2900
         type_specimen:
           specimen_id:
             - PVL 4822-1
           specimen_type: holotype
           institution: Colección de Paleontologia de Vertebrados de la Fundación Instituto Miguel Lillo
-          material: Partial skeleton.
-          completeness: partial
+          material: Eight presacral neural arches
+          completeness: fragmentary
+          notes: Nothing in the assemblage is articulated, so Pol and Powell (2007) restricted the holotype to the eight arches Bonaparte described, individually numbered PVL 4822-1/1, /2, /3, /4, /5, /6, /7 and /10. They renumbered the rest of the lot as referred material from at least three individuals.
         erected_in: bonaparte1999d
+        described_in: pol2007a
         authors: Bonaparte, J. F.
         described: 1999
     references:
@@ -99053,13 +99074,27 @@ genera:
         volume: "36"
         issue: "2"
         pages: 115-187
+      - id: pol2007a
+        authors: Pol, D.; Powell, J. E.
+        year: 2007
+        title: "New information on Lessemsaurus sauropoides (Dinosauria: Sauropodomorpha) from the Upper Triassic of Argentina"
+        journal: Special Papers in Palaeontology
+        volume: "77"
+        pages: 223-243
+        notes: Describes the postcranial material and restricts the holotype to the eight presacral neural arches of the original description.
+      - id: paul2024a
+        authors: Paul, G. S.
+        year: 2024
+        title: The Princeton Field Guide to Dinosaurs (3rd ed.)
+        publisher: Princeton University Press
+        notes: Source of the lower length and mass estimates.
       - id: jones2026b
         authors: Jones, B.; Viola, E.
         year: 2026
         title: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
-        notes: Source of the hip height estimate.
+        notes: Source of the hip height, and of the upper length and mass estimates.
     taxonomy:
       - Life
       - Animalia
@@ -99124,12 +99159,9 @@ genera:
           to_ma: 89.8
         location:
           country: UZ
-          locality: CDZh-17a, Dzharakuduk II, Kulbeke
+          locality: Dzharakuduk
           region: Navoiy
           formation: Bissekty
-          coordinates:
-            - 42.117294
-            - 62.655315
           region_code: UZ-NW
         erected_in: sues2009a
         type_specimen:
@@ -99229,6 +99261,7 @@ genera:
           to_ma: 161.5
         location:
           country: GB
+          locality: Fletton
           region: City of Peterborough
           formation: Oxford Clay
           member: Peterborough
@@ -99293,6 +99326,14 @@ genera:
         pages: 367-407
         doi: 10.1017/S1477201908002459
         notes: Declares L. durobrivensis a nomen dubium after refuting Galton's proposed autapomorphies, and erects the new genus Loricatosaurus priscus for BMNH R3167 (previously referred to Lexovisaurus).
+      - id: barron2012a
+        authors: Barron, A. J. M.; Lott, G. K.; Riding, J. B.
+        year: 2012
+        title: Stratigraphical framework for the Middle Jurassic strata of Great Britain and the adjoining continental shelf
+        journal: British Geological Survey Research Report
+        publisher: British Geological Survey
+        volume: RR/11/06
+        notes: Gives the Peterborough Member as the Lower Oxford Clay of traditional usage, the interval this taxon's descriptions name. It does not itself discuss Lexovisaurus.
       - id: paul2024a
         authors: Paul, G. S.
         year: 2024
@@ -99408,10 +99449,7 @@ genera:
           country: AR
           locality: Balde de Leyes
           region: San Juan
-          formation: Quebrada del Barro
-          coordinates:
-            - -31.6
-            - -67.400002
+          formation: Balde de Leyes
           region_code: AR-J
         size:
           weight_kg:
@@ -99447,6 +99485,16 @@ genera:
         issue: "11"
         pages: e26964
         doi: 10.1371/journal.pone.0026964
+      - id: colombi2015a
+        authors: Colombi, C. E.; Santi Malnis, P.; Correa, G. A.; Martínez, R. N.; Fernández, E.; Abelín, D.; Praderio, A.; Apaldetti, C. G.; Alcober, O.; Drovandi, J.
+        year: 2015
+        title: La Formación Balde de Leyes (nov. Nom.), una nueva unidad estratigráfica de la cuenca triásica de Marayes-El Carrizal [The Balde de Leyes Formation, a new stratigraphic unit from the Triassic Marayes-El Carrizal Basin, San Juan]
+        journal: Revista de la Asociación Geológica Argentina
+        publisher: Asociación Geológica Argentina
+        volume: "72"
+        issue: "4"
+        pages: 445-455
+        notes: Erects the Balde de Leyes Formation for the top of the succession and gives its vertebrate fauna as this species alone.
       - id: paul2024a
         authors: Paul, G. S.
         year: 2024
@@ -99523,13 +99571,12 @@ genera:
           to_ma: 113.2
         location:
           country: CN
-          locality: Yanzigou, Shanyuan
+          locality: Yanzigou and Lujiatun, Shangyuan
           region: Liaoning
           formation: Yixian
-          coordinates:
-            - 41.366402
-            - 124.683601
+          part: lower
           region_code: CN-LN
+          part_of: formation
         type_specimen:
           specimen_id:
             - IVPP V12738
@@ -99635,9 +99682,7 @@ genera:
           locality: Wangjiagou
           region: Liaoning
           formation: Yixian
-          coordinates:
-            - 39.878601
-            - 123.438904
+          member: Dawangzhangzi
           region_code: CN-LN
         type_specimen:
           specimen_id:
@@ -99717,6 +99762,17 @@ genera:
         issue: "3"
         pages: 1-7
         doi: 10.16452/j.cnki.sdkjzk.2022.03.001
+      - id: arbour2015a
+        authors: Arbour, V. M.; Currie, P. J.
+        year: 2015
+        title: Systematics, phylogeny and palaeobiogeography of the ankylosaurid dinosaurs
+        journal: Journal of Systematic Palaeontology
+        publisher: Informa UK Limited
+        volume: "14"
+        issue: "5"
+        pages: 385-444
+        doi: 10.1080/14772019.2015.1059985
+        notes: Places the holotype in the Dawangzhangzi Bed.
     taxonomy:
       - Life
       - Animalia
@@ -99784,12 +99840,9 @@ genera:
           to_ma: 113.2
         location:
           country: CN
-          locality: Xiaobeigoucun, Beipiao
+          locality: Xiaobeigou Village
           region: Liaoning
           formation: Yixian
-          coordinates:
-            - 41.479301
-            - 125.313004
           region_code: CN-LN
         size:
           weight_kg:
@@ -99912,13 +99965,12 @@ genera:
           to_ma: 113.2
         location:
           country: CN
-          locality: Lujiatun village, Shangyuan
+          locality: Lujiatun, Shangyuan, Beipiao City
           region: Liaoning
           formation: Yixian
-          coordinates:
-            - 41.783817
-            - 120.764221
+          part: lower
           region_code: CN-LN
+          part_of: formation
         size:
           length_m:
             min: 0.9
@@ -100053,9 +100105,7 @@ genera:
           locality: La Amarga
           region: Neuquén
           formation: La Amarga
-          coordinates:
-            - -39.508701
-            - -70.066704
+          member: Puesto Antigual
           region_code: AR-Q
         size:
           length_m:
@@ -100087,6 +100137,16 @@ genera:
         pages: zlae150
         doi: 10.1093/zoolinnean/zlae150
         notes: Recovered Ligabueino as sister to the Berthasauridae + Abelisauroidea clade (pruned topology).
+      - id: leanza2004a
+        authors: Leanza, H. A.; Apesteguía, S.; Novas, F. E.; de la Fuente, M. S.
+        year: 2004
+        title: Cretaceous terrestrial beds from the Neuquén Basin (Argentina) and their tetrapod assemblages
+        journal: Cretaceous Research
+        publisher: Elsevier BV
+        volume: "25"
+        issue: "1"
+        pages: 61-87
+        notes: Places the holotype in the Puesto Antigual Member.
     taxonomy:
       - Life
       - Animalia
@@ -100146,13 +100206,13 @@ genera:
           to_ma: 100.5
         location:
           country: AR
-          locality: Cerro de los Leones, level 2
+          locality: Cerro de los Leones, quarry no. 4
           region: Neuquén
           formation: Lohan Cura
-          coordinates:
-            - -39.59222
-            - -69.396942
+          member: Cullín Grande
+          part: lower
           region_code: AR-Q
+          part_of: member
         type_specimen:
           specimen_id:
             - MCF-PVPH 233
@@ -100280,13 +100340,12 @@ genera:
           to_ma: 205.7
         location:
           country: DE
-          locality: Grossen Gleichberg, Römhild
+          locality: Grosser Gleichberg
           region: Thuringia
-          formation: Trossingen
-          coordinates:
-            - 50.383301
-            - 10.55
+          formation: Arnstadt
+          part: upper
           region_code: DE-TH
+          part_of: formation
         size:
           length_m:
             min: 5
@@ -100363,6 +100422,17 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
         notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+      - id: sues2025a
+        authors: Sues, H.-D.; Schoch, R. R.
+        year: 2025
+        title: Synopsis of the Triassic reptiles from Germany
+        journal: Fossil Record
+        publisher: Pensoft Publishers
+        volume: "28"
+        issue: "2"
+        pages: 411-483
+        doi: 10.3897/fr.28.164405
+        notes: Gives the type horizon as the top of the Arnstadt Formation, correlating the nodular marls of the older literature.
     taxonomy:
       - Life
       - Animalia
@@ -100427,12 +100497,9 @@ genera:
           to_ma: 89.8
         location:
           country: AR
-          locality: Villa El Chocón, 10 km southwest
+          locality: 5 km southwest of El Chocón
           region: Neuquén
           formation: Candeleros
-          coordinates:
-            - -39.311401
-            - -68.796501
           region_code: AR-Q
         size:
           length_m:
@@ -100541,9 +100608,6 @@ genera:
           locality: TBB2005, Wucaiwan
           region: Xinjiang
           formation: Shishugou
-          coordinates:
-            - 45.147804
-            - 88.900627
           region_code: CN-XJ
         type_specimen:
           specimen_id:
@@ -100583,6 +100647,17 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
         notes: Source of the hip height estimate, and the appearance features.
+      - id: eberth2010a
+        authors: Eberth, D. A.; Xu, X.; Clark, J. M.
+        year: 2010
+        title: Dinosaur death pits from the Jurassic of China
+        journal: PALAIOS
+        publisher: Society for Sedimentary Geology
+        volume: "25"
+        issue: "2"
+        pages: 112-125
+        doi: 10.2110/palo.2009.p09-028r
+        notes: Reports the holotype from the TBB2005 bonebed, one of three in the upper half of the formation at Wucaiwan.
     taxonomy:
       - Life
       - Animalia
@@ -100651,12 +100726,10 @@ genera:
           to_ma: 161.5
         location:
           country: CN
-          locality: Lingwu Geopark
+          locality: Quarry II, Lingwu Geopark
           region: Ningxia
           formation: Zhiluo
-          coordinates:
-            - 38.049999
-            - 106.683334
+          notes: Xu and colleagues (2018) assign the type locality to the Yan'an Formation. The Zhiluo assignment recorded here follows later work and is not settled.
           region_code: CN-NX
         type_specimen:
           specimen_id:
@@ -100781,9 +100854,6 @@ genera:
           locality: Sihedang, Lingyuan
           region: Liaoning
           group: Jehol
-          coordinates:
-            - 40.912777
-            - 119.495834
           region_code: CN-LN
         size:
           length_m:
