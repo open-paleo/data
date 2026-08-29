@@ -10,11 +10,11 @@ description: Draconyx is a genus of ornithopod dinosaur from the Late Jurassic
 dispute:
   summary: >
     Draconyx loureiroi was originally referred to Camptosauridae (Mateus and
-    Antunes, 2001), and its position has remained unresolved since. It has been
-    recovered among basal Styracosterna (Madzia and others, 2021; Rotatori and
-    others, 2022, reported by Jones, 2026), as the basalmost ankylopollexian
-    alongside Oblitosaurus bunnueli (Sánchez-Fenollosa and others, 2023), and
-    outside Ankylopollexia entirely — Fonseca and others (2024) recover it as a
+    Antunes, 2001), and its position has remained unresolved since. It has
+    been recovered among basal Styracosterna (Madzia and others, 2021;
+    Rotatori and others, 2022), as the basalmost ankylopollexian alongside
+    Oblitosaurus bunnueli (Sánchez-Fenollosa and others, 2023), and outside
+    Ankylopollexia entirely — Fonseca and others (2024) recover it as a
     constituent of Dryomorpha rather than of Ankylopollexia, and Rotatori and
     others (2026) recover it as the sister taxon of Cumnoria prestwichii,
     diverging before the ankylopollexian node. It is placed at Dryomorpha
@@ -33,14 +33,14 @@ paleoenvironment:
   - fluvial
   - coastal
 diagnostic_features:
-  - Maxillary teeth with strong primary ridge with five tertiary ridges at the
-    mesial side; enamel on labial surface lower distally than mesially.
-  - Manual ungual phalanges higher than broad.
-  - Tibial condyle of femur without lateral projection into the flexor groove.
-  - Fibular condyle of femur shorter anteroposteriorly than wide mediolaterally.
-  - Astragalus fused to calcaneum; distal tarsal II present; lateral distal
-    tarsal overlaps the medial distal tarsal.
-  - Metatarsal V absent.
+  - Carpus unfused and non-interlocked.
+  - No sharp crest running from the medial condyle of the femur toward the
+    lesser trochanter.
+  - Extensor groove on the distal epiphysis of the femur fully open and
+    U-shaped; flexor groove fully open and V-shaped, without overhangs.
+  - Medial margin of the proximal epiphysis of the tibia concave.
+  - Fibular condyle of the tibia pointing caudally.
+  - Metatarsal I splint-like.
 appearance:
   integument: scaled
   evidence: inferred
@@ -71,22 +71,24 @@ species:
       specimen_id: [ML357]
       specimen_type: holotype
       institution: ML
-      material: Two maxillary teeth, three mid-anterior caudal centra, one chevron,
-        distal epiphysis of right humerus, one manual phalanx, three manual ungual
-        phalanges, distal epiphysis of right femur, epiphyses of tibia and fibula,
-        astragalus, calcaneum, three tarsals, four metatarsals, pedal phalanges.
+      material: Two maxillary teeth, three proximal caudal vertebrae, one chevron,
+        distal end of right humerus, carpals, two metacarpal distal ends, four
+        manual phalanges, five manual unguals, distal epiphysis of right femur,
+        epiphyses of tibia and fibula, astragalus, calcaneum, two distal tarsals,
+        four metatarsals, five pedal phalanges, two pedal unguals.
       completeness: fragmentary
     size:
       hip_height_m:
         min: 1
         max: 1
       length_m:
-        min: 3.5
-        max: 3.5
+        min: 2.9
+        max: 3.9
       weight_kg:
         min: 150
         max: 150
     erected_in: mateus2001a
+    described_in: rotatori2022a
 references:
   - id: mateus2001a
   - id: jones2026a
@@ -103,5 +105,6 @@ references:
     notes: Recovers Draconyx as the sister taxon of Cumnoria prestwichii,
       diverging before the ankylopollexian node.
   - id: rotatori2022a
-    notes: Redescription of the holotype, placing it in the Praia Azul
-      Member of the Lourinhã Formation at Vale Frades.
+    notes: Emended diagnosis and redescription of the holotype with newly
+      reported manual material; places it in the Praia Azul Member at Vale
+      Frades and reassigns the referred femur to Ankylopollexia indet.
