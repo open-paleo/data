@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-08-29T05:57:53.965Z",
+    "built_at": "2026-08-29T06:32:53.167Z",
     "clade_count": 188,
     "genus_count": 1422,
     "license": "CC-BY-4.0",
@@ -1686,7 +1686,7 @@
         "Abelisauridae",
         "Brachyrostra"
       ],
-      "described": 2008,
+      "described": 2009,
       "authors": "Canale, J. I.; Scanferla, C. A.; Agnolín, F. L.; Novas, F. E.",
       "diagnostic_features": [
         "Proportionally shortened, deep snout",
@@ -1698,7 +1698,7 @@
         {
           "id": "canale2008a",
           "authors": "Canale, J. I.; Scanferla, C. A.; Agnolín, F. L.; Novas, F. E.",
-          "year": 2008,
+          "year": 2009,
           "title": "New carnivorous dinosaur from the Late Cretaceous of NW Patagonia and the evolution of abelisaurid theropods",
           "journal": "Naturwissenschaften",
           "publisher": "Springer Science and Business Media LLC",
@@ -197991,12 +197991,18 @@
       "diagnostic_features": [
         "Ascending process of maxilla homogeneously wide rostrocaudally",
         "Maxillary horizontal ramus dorsoventrally deep with subparallel dorsal and ventral margins",
-        "Maxilla/jugal contact subvertical",
-        "19 maxillary teeth (more than other abelisaurids)",
-        "Lacrimal rostrally projected with well-developed suborbital process",
-        "Quadratojugal with pronounced caudal notch",
-        "Dentary caudoventral process bifurcated to receive angular",
-        "Angular with rostral end dorsoventrally deep to fit between splenial and prearticular"
+        "19 maxillary teeth, the highest maxillary tooth count of any abelisaurid",
+        "Angular with rostral end dorsoventrally deep, fitting between the splenial and prearticular",
+        "Antorbital fossa restricted to the maxilla, absent from the nasal and lacrimal",
+        "Double dorsal protuberances over each frontal",
+        "Quadratojugal with a thick jugal process, rounded in cross-section, laterally procumbent and covered by strong external rugosities",
+        "21 dentary teeth, the highest dentary tooth count of any abelisaurid",
+        "Retroarticular fossa of the articular anteroposteriorly longer than lateromedially wide, divided by a strongly oblique crest",
+        "Dorsal margin of the central iliac blade convex in lateral view",
+        "Preacetabular blade subrectangular in lateral contour",
+        "Subvertically oriented swelling of the iliac blade at the level of the acetabulum",
+        "Tibial lateral condyle one-third wider than the medial condyle, with a flattened caudal margin in proximal view",
+        "Rounded, deep pit on the proximolateral surface of pedal digit IV phalanges 1-3"
       ],
       "appearance": {
         "features": [
@@ -198066,24 +198072,40 @@
             }
           },
           "erected_in": "canale2008a",
+          "described_in": "canale2026a",
           "type_specimen": {
             "specimen_id": [
-              "MMCH-Pv 48K"
+              "MMCH-Pv 48"
             ],
             "specimen_type": "holotype",
             "institution": "Museo Municipal ‘Ernesto Bachman’, Villa El Chocón",
-            "material": "Nearly complete skull and partial postcranial skeleton",
+            "material": "Almost complete articulated skeleton lacking both pectoral girdles, the forelimbs, and the distal two-thirds of the tail; skull nearly complete with the jaws articulated in occlusion",
             "completeness": "partial"
           },
           "authors": "Canale, J. I.; Scanferla, C. A.; Agnolín, F. L.; Novas, F. E.",
-          "described": 2008
+          "described": 2009
+        }
+      ],
+      "notable_specimens": [
+        {
+          "specimen_id": [
+            "MMCH-Pv 255"
+          ],
+          "institution": "Museo Municipal ‘Ernesto Bachman’, Villa El Chocón",
+          "species": "Skorpiovenator bustingorryi",
+          "category": "complementary",
+          "significance": "The proximal end of a right tibia from a larger individual, found 2 kilometers west of the holotype at almost the same stratigraphic level. It preserves a complete hatchet-shaped cnemial crest, which both holotype tibiae lack, and shares the autapomorphic lateral condyle.",
+          "references": [
+            "cerroni2022a",
+            "canale2026a"
+          ]
         }
       ],
       "references": [
         {
           "id": "canale2008a",
           "authors": "Canale, J. I.; Scanferla, C. A.; Agnolín, F. L.; Novas, F. E.",
-          "year": 2008,
+          "year": 2009,
           "title": "New carnivorous dinosaur from the Late Cretaceous of NW Patagonia and the evolution of abelisaurid theropods",
           "journal": "Naturwissenschaften",
           "publisher": "Springer Science and Business Media LLC",
@@ -198091,6 +198113,41 @@
           "issue": "3",
           "pages": "409-414",
           "doi": "10.1007/s00114-008-0487-4"
+        },
+        {
+          "id": "cerroni2020b",
+          "authors": "Cerroni, M. A.; Canale, J. I.; Novas, F. E.; Paulina-Carabajal, A.",
+          "year": 2022,
+          "title": "An exceptional neurovascular system in abelisaurid theropod skull: New evidence from Skorpiovenator bustingorryi",
+          "journal": "Journal of Anatomy",
+          "publisher": "Wiley",
+          "volume": "240",
+          "issue": "4",
+          "pages": "612-626",
+          "doi": "10.1111/joa.13258",
+          "notes": "Documented the nasal and skull roof neurovascular canal system from CT scans, reading the sculptured nasal surface as a bony correlate for a scaled epidermal cover."
+        },
+        {
+          "id": "cerroni2022a",
+          "authors": "Cerroni, M. A.; Baiano, M. A.; Canale, J. I.; Agnolín, F. L.; Otero, A.; Novas, F. E.",
+          "year": 2022,
+          "title": "Appendicular osteology of Skorpiovenator bustingorryi (Theropoda, Abelisauridae) with comments on phylogenetic features of abelisaurids",
+          "journal": "Journal of Systematic Palaeontology",
+          "publisher": "Informa UK Limited",
+          "volume": "20",
+          "issue": "1",
+          "pages": "1-32",
+          "doi": "10.1080/14772019.2022.2093661",
+          "notes": "Described the appendicular skeleton, added five appendicular autapomorphies to the diagnosis, and referred the larger proximal tibia MMCH-Pv 255 to the species."
+        },
+        {
+          "id": "canale2026a",
+          "authors": "Canale, J. I.; Cerroni, M. A.; Baiano, M. A.; Meso, J. G.; Palombi, D.; Paulina Carabajal, A.",
+          "year": 2026,
+          "title": "The Skull Beneath the Skin: Cranial Osteology of Skorpiovenator bustingorryi (Dinosauria, Theropoda, Abelisauridae) from the Late Cretaceous of Patagonia, Argentina",
+          "journal": "Ameghiniana",
+          "publisher": "Asociacion Paleontologica Argentina",
+          "doi": "10.5710/amgh.20.08.2026.3665"
         },
         {
           "id": "jones2026c",
@@ -198122,7 +198179,7 @@
         "Brachyrostra"
       ],
       "authors": "Canale, J. I.; Scanferla, C. A.; Agnolín, F. L.; Novas, F. E.",
-      "described": 2008
+      "described": 2009
     },
     "Smitanosaurus": {
       "genus": "Smitanosaurus",
