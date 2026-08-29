@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-08-29T04:55:43.296Z",
+    "built_at": "2026-08-29T05:14:14.182Z",
     "clade_count": 188,
     "genus_count": 1422,
     "license": "CC-BY-4.0",
@@ -120671,15 +120671,24 @@
         "phonetic": "KOH-tuh-SOR-uhs",
         "ipa": "/ˌkoʊtəˈsɔːrəs/"
       },
-      "description": "Kotasaurus is a genus of sauropod dinosaur from the Early Jurassic period (Sinemurian-Pliensbachian). The only known species is Kotasaurus yamanpalliensis. It was discovered in the Kota Formation of Telangana, India and shared its habitat with the related Barapasaurus. So far the remains of at least 12 individuals are known. The greater part of the skeleton is known, but the skull is missing, with the exception of two teeth. Like some sauropods, it had a tail club that would have been used for intraspecific combat or interspecific defense.",
+      "description": "Kotasaurus is a genus of sauropod dinosaur from the Early Jurassic period (Sinemurian-Pliensbachian). The only known species is Kotasaurus yamanpalliensis. It was discovered in the Kota Formation of Telangana, India and shared its habitat with the related Barapasaurus. So far the remains of at least 12 individuals are known. The greater part of the skeleton is known, but the skull is missing, with the exception of two teeth. Four tail clubs, each formed of at least two co-ossified distal caudal vertebrae, were collected with the Yamanpalli material and referred to Kotasaurus on that association; comparable clubs are known in Shunosaurus and Omeisaurus, and are interpreted as weapons for intraspecific combat or defense.",
       "diet": "herbivore",
       "locomotion": "quadrupedal",
       "paleoenvironment": [
         "fluvial"
       ],
+      "diagnostic_features": [
+        "Dorsal neural spines simple, without spinal laminae.",
+        "No pneumatocoel at the base of the neural arch opening into the neural canal.",
+        "Iliac blade low.",
+        "Proximal surface of the scapula narrow.",
+        "Limb bones relatively slender, with the femur retaining the lesser trochanter.",
+        "Chevrons V-shaped, with well-developed articular facets on the dorsolateral corners."
+      ],
       "appearance": {
         "features": [
-          "elongate neck"
+          "elongate neck",
+          "tail club"
         ],
         "integument": "scaled",
         "evidence": "inferred"
@@ -120745,9 +120754,11 @@
               "21/SR/PAL"
             ],
             "specimen_type": "holotype",
-            "institution": "Geological Survey of India"
+            "institution": "Geological Survey of India",
+            "material": "An ilium."
           },
           "erected_in": "yadagiri1988a",
+          "described_in": "yadagiri2001a",
           "authors": "Yadagiri, P.",
           "described": 1988
         }
@@ -120769,7 +120780,7 @@
           "title": "The Princeton Encyclopedia of Dinosaurs: Sauropods",
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25023-6",
-          "notes": "Source of the hip height estimate, and the appearance features."
+          "notes": "Source of the hip height estimate and of the elongate neck."
         },
         {
           "id": "yadagiri2001a",
@@ -120782,7 +120793,20 @@
           "issue": "2",
           "pages": "242-252",
           "doi": "10.1671/0272-4634(2001)021[0242:TOOKYA]2.0.CO;2",
-          "notes": "Names Yamanpalli as the excavation and places it 40 km north of the Barapasaurus type locality."
+          "notes": "Emended diagnosis and osteological description drawn from at least twelve individuals; names Yamanpalli as the excavation and places it 40 km north of the Barapasaurus type locality."
+        },
+        {
+          "id": "kareem2024a",
+          "authors": "Kareem, T. A.; Chakraborty, S.; Wilson Mantilla, J. A.",
+          "year": 2024,
+          "title": "Sauropod tail clubs from the Kota Formation (Lower to Middle Jurassic) of India and their implications for early sauropod evolution",
+          "journal": "Journal of Vertebrate Paleontology",
+          "publisher": "Informa UK Limited",
+          "volume": "44",
+          "issue": "1",
+          "pages": "e2396814",
+          "doi": "10.1080/02724634.2024.2396814",
+          "notes": "Describes four tail clubs of co-ossified distal caudal vertebrae, referred to Kotasaurus because they were collected with the rest of the Yamanpalli material; treats that attribution as unresolved."
         }
       ],
       "taxonomy": [
