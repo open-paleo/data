@@ -1184,7 +1184,7 @@ Loncoche:
 Lourinhã:
   rank: formation
   rank_contested: [formation, group]
-  contains: ["Amoreira-Porto Novo", "Praia Azul"]
+  contains: ["Praia da Amoreira-Porto Novo", "Praia Azul"]
   stages: [Kimmeridgian, Tithonian]
   references:
     - id: mateus2014a
@@ -1385,11 +1385,19 @@ Neuquén:
     - id: carballido2010a
       notes: Candeleros and Huincul are formations within the Río Limay Subgroup.
 
-"Amoreira-Porto Novo":
+"Praia da Amoreira-Porto Novo":
   rank: member
   parent: Lourinhã
+  variants: ["Amoreira-Porto Novo", "Porto Novo"]
   references:
     - id: mateus2014a
+    - id: mateus2017a
+      notes: >
+        Hill (1988, 1989) erected Praia da Amoreira and Porto Novo as two
+        superposed members; Manuppella and others (1999) mapped them as one
+        body, which this paper treats as a single member under the combined
+        name. Papers shorten it to either constituent, so a bare "Porto Novo
+        Member" is usually this unit rather than Hill's upper one.
 
 Arlington:
   rank: member
