@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-08-29T21:06:02.336Z
+  built_at: 2026-08-30T02:54:01.923Z
   clade_count: 188
   genus_count: 1422
   license: CC-BY-4.0
@@ -55929,7 +55929,7 @@ genera:
           locality: Praia de Porto Dinheiro
           region: Lisbon
           formation: Lourinhã
-          member: Amoreira-Porto Novo
+          member: Praia da Amoreira-Porto Novo
           region_code: PT-11
         type_specimen:
           specimen_id:
@@ -64158,7 +64158,7 @@ genera:
           locality: Porto das Barcas
           region: Lisbon
           formation: Lourinhã
-          member: Amoreira-Porto Novo
+          member: Praia da Amoreira-Porto Novo
           region_code: PT-11
         size:
           weight_kg:
@@ -78901,7 +78901,7 @@ genera:
           locality: Praia de Porto Dinheiro
           region: Lisbon
           formation: Lourinhã
-          member: Porto Novo
+          member: Praia da Amoreira-Porto Novo
           region_code: PT-11
         size:
           length_m:
@@ -100958,9 +100958,9 @@ genera:
           to_ma: 72.2
         location:
           country: CN
-          locality: Nuchidaba, Bayan Mandahu
+          locality: Gate Locality, Bayan Mandahu
           region: Inner Mongolia
-          formation: Wulansuhai
+          formation: Ulansuhai
           coordinates:
             - 41.743919
             - 106.744362
@@ -100996,6 +100996,14 @@ genera:
         issue: "6"
         pages: 2338-2342
         doi: 10.1073/pnas.1011052108
+      - id: xu2011e
+        authors: Xu, X.; Upchurch, P.; Ma, Q.; Pittman, M.; Choiniere, J.; Sullivan, C.; Hone, D. W. E.; Tan, Q.; Tan, L.; Xiao, D.; Han, F.
+        year: 2011
+        title: Osteology of the alvarezsauroid Linhenykus monodactylus from the Upper Cretaceous Wulansuhai Formation of Inner Mongolia, China, and comments on alvarezsauroid biogeography
+        journal: Acta Palaeontologica Polonica
+        publisher: Institute of Paleobiology, Polish Academy of Sciences
+        doi: 10.4202/app.2011.0083
+        notes: Osteology. Gives the holotype's coordinate and names the site the Gate Locality.
       - id: jones2026c
         authors: Jones, B.; Viola, E.
         year: 2026
@@ -101075,12 +101083,9 @@ genera:
           to_ma: 72.2
         location:
           country: CN
-          locality: Nuchidaba, Bayan Mandahu
+          locality: Gate Locality, Bayan Mandahu
           region: Inner Mongolia
-          formation: Wulansuhai
-          coordinates:
-            - 41.743919
-            - 106.744362
+          formation: Ulansuhai
           region_code: CN-NM
         type_specimen:
           specimen_id:
@@ -101202,10 +101207,7 @@ genera:
           country: CN
           locality: North Canyon locality, Bayan Mandahu
           region: Inner Mongolia
-          formation: Wulansuhai
-          coordinates:
-            - 40.756111
-            - 107.426666
+          formation: Ulansuhai
           region_code: CN-NM
         size:
           hip_height_m:
@@ -101318,12 +101320,8 @@ genera:
           to_ma: 66
         location:
           country: ES
-          locality: Laño L1A
+          locality: Laño quarry
           region: Castile and León
-          formation: Vitoria
-          coordinates:
-            - 42.664555
-            - -2.634513
           region_code: ES-CL
         size:
           hip_height_m:
@@ -101439,9 +101437,6 @@ genera:
           region: Yunnan
           formation: Lufeng
           member: Shawan
-          coordinates:
-            - 34.124687
-            - 111.972527
           region_code: CN-YN
         size:
           weight_kg:
@@ -101543,12 +101538,9 @@ genera:
           to_ma: 113.2
         location:
           country: CN
-          locality: Liubangcun, Fusui
+          locality: Liubang village
           region: Guangxi
           formation: Xinlong
-          coordinates:
-            - 22.639444
-            - 107.907501
           region_code: CN-GX
         size:
           hip_height_m:
@@ -101580,6 +101572,16 @@ genera:
         issue: "6"
         pages: 1328-1335
         doi: 10.1111/j.1755-6724.2010.00331.x
+      - id: mo2016a
+        authors: Mo, J.; Buffetaut, E.; Tong, H.; Amiot, R.; Cavin, L.; Cuny, G.; Suteethorn, V.; Suteethorn, S.; Jiang, S.
+        year: 2016
+        title: "Early Cretaceous vertebrates from the Xinlong Formation of Guangxi (southern China): a review"
+        journal: Geological Magazine
+        volume: "153"
+        issue: "1"
+        pages: 143-159
+        doi: 10.1017/S0016756815000394
+        notes: Establishes that Xinlong has precedence over Napai for this unit.
       - id: jones2026b
         authors: Jones, B.; Viola, E.
         year: 2026
@@ -101651,12 +101653,9 @@ genera:
           to_ma: 83.6
         location:
           country: AR
-          locality: La Invernada (Bajo de la Carpa)
+          locality: La Invernada fossil area
           region: Neuquén
           formation: Bajo de la Carpa
-          coordinates:
-            - -37.593056
-            - -69.315559
           region_code: AR-Q
         size:
           weight_kg:
@@ -101769,13 +101768,13 @@ genera:
           to_ma: 66
         location:
           country: ES
-          locality: Lo Hueco, Fuentes (G1)
+          locality: Lo Hueco, Fuentes
           region: Castile–La Mancha
           formation: Villalba de la Sierra
-          coordinates:
-            - 39.950359
-            - -2.021356
+          bed: G1
+          part: upper
           region_code: ES-CM
+          part_of: bed
         type_specimen:
           specimen_id:
             - HUE-EC-01
@@ -101898,10 +101897,10 @@ genera:
           locality: Loki Quarry, Kennedy Coulee
           region: Montana
           formation: Judith River
-          coordinates:
-            - 48.887001
-            - -110.742996
+          member: McClelland Ferry
+          part: lower
           region_code: US-MT
+          part_of: member
         type_specimen:
           specimen_id:
             - EMK 0012
@@ -102014,7 +102013,7 @@ genera:
         location:
           country: AR
           region: Santa Cruz
-          locality: Río Sehuen
+          locality: Cerro Pari Aike
           formation: Mata Amarilla
           region_code: AR-Z
         size:
@@ -102040,6 +102039,16 @@ genera:
         volume: "47"
         pages: 61-62
         notes: Records the type material as found by Carlos Ameghino in the Guarani formation of the Río Sehuen, in a red sandstone resting on a bed of Ostrea guaranitica, without a closer locality.
+      - id: varela2012a
+        authors: Varela, A. N.; Poiré, D. G.; Martin, T.; Gerdes, A.; Goin, F. J.; Gelfo, J. N.; Hoffmann, S.
+        year: 2012
+        title: "U-Pb zircon constraints on the age of the Cretaceous Mata Amarilla Formation, Southern Patagonia, Argentina: its relationship with the evolution of the Austral Basin"
+        journal: Andean Geology
+        publisher: Pontificia Universidad Católica de Valparaíso
+        volume: "39"
+        issue: "3"
+        doi: 10.5027/andgeoV39n3-a01
+        notes: Ties the type locality at Cerro Pari Aike to the Mata Amarilla Formation, which neither Ameghino nor Huene names.
       - id: norman2004a
         authors: Norman, D. B.
         year: 2004
@@ -102115,10 +102124,12 @@ genera:
           locality: Site 9, Moore Brothers' Farm
           region: Alabama
           formation: Mooreville Chalk
+          part: lower
           coordinates:
             - 32.41888
             - -87.184708
           region_code: US-AL
+          part_of: formation
         size:
           length_m:
             min: 4.5
@@ -102144,6 +102155,17 @@ genera:
         issue: "5"
         pages: 315-359
         doi: 10.5962/bhl.title.5344
+      - id: gates2021a
+        authors: Gates, T. A.; Lamb, J. P.
+        year: 2021
+        title: "A redescription of Lophorhothon atopus (Ornithopoda: Dinosauria) from the Late Cretaceous of Alabama based on new material"
+        journal: Canadian Journal of Earth Sciences
+        publisher: Canadian Science Publishing
+        volume: "58"
+        issue: "9"
+        pages: 918-935
+        doi: 10.1139/cjes-2020-0173
+        notes: Prints a field-checked coordinate for site 9 and places the holotype 22 m above the Eutaw contact.
       - id: paul2024a
         authors: Paul, G. S.
         year: 2024
@@ -102246,9 +102268,6 @@ genera:
           locality: Airel Quarry
           region: Normandy
           formation: Moon-Airel
-          coordinates:
-            - 49.216667
-            - 1.083333
           region_code: FR-NOR
         size:
           length_m:
@@ -102340,14 +102359,11 @@ genera:
           to_ma: 161.5
         location:
           country: GB
-          locality: Fletton brick pit, Peterborough
-          region: England
+          locality: Fletton
+          region: City of Peterborough
           formation: Oxford Clay
           member: Peterborough
-          coordinates:
-            - 52.552071
-            - -0.241701
-          region_code: GB-ENG
+          region_code: GB-PTE
         type_specimen:
           specimen_id:
             - NHMUK PV R 3167
@@ -102383,6 +102399,14 @@ genera:
         issue: "4"
         pages: 367-407
         doi: 10.1017/S1477201908002459
+      - id: barron2012a
+        authors: Barron, A. J. M.; Lott, G. K.; Riding, J. B.
+        year: 2012
+        title: Stratigraphical framework for the Middle Jurassic strata of Great Britain and the adjoining continental shelf
+        journal: British Geological Survey Research Report
+        publisher: British Geological Survey
+        volume: RR/11/06
+        notes: Gives the Peterborough Member as the Lower Oxford Clay of traditional usage, the interval this taxon's sources name. It does not itself discuss Loricatosaurus.
       - id: jones2026a
         authors: Jones, B.; Viola, E.
         year: 2026
@@ -102449,10 +102473,7 @@ genera:
           country: AR
           locality: Cinco Saltos
           region: Río Negro
-          formation: Allen
-          coordinates:
-            - -38.837898
-            - -68.035698
+          formation: Anacleto
           region_code: AR-R
         type_specimen:
           specimen_id:
@@ -102508,6 +102529,15 @@ genera:
         title: The Dinosauria, Second Edition
         publisher: University of California Press, Berkeley
         notes: Sauropoda chapter (Upchurch, Barrett and Dodson); treats Loricosaurus scutatus as a questioned junior synonym of Saltasaurus and Neuquensaurus, with the armor reinterpreted as titanosaurian.
+      - id: santucci2022a
+        authors: Santucci, R. M.; Filippi, L. S.
+        year: 2022
+        title: "Last titans: Titanosaurs from the Campanian–Maastrichtian age"
+        book: "South American Sauropodomorph Dinosaurs: Record, Diversity and Evolution"
+        publisher: Springer International Publishing
+        pages: 341-391
+        doi: 10.1007/978-3-030-95959-3_10
+        notes: Assigns the Cinco Saltos dinosaur beds to the Anacleto Formation.
     taxonomy:
       - Life
       - Animalia
@@ -102582,12 +102612,9 @@ genera:
           to_ma: 143.1
         location:
           country: ES
-          locality: La Cañada, Barranco de Escáiz
+          locality: La Cañada
           region: Valencia
           formation: Villar del Arzobispo
-          coordinates:
-            - 38.666698
-            - -0.8167
           region_code: ES-V
         size:
           hip_height_m:
@@ -102711,9 +102738,7 @@ genera:
           locality: Peralta
           region: Lisbon
           formation: Lourinhã
-          coordinates:
-            - 39.139999
-            - -9.19
+          member: Praia Azul
           region_code: PT-11
         size:
           hip_height_m:
@@ -102755,6 +102780,16 @@ genera:
         journal: Memórias da Academia de Ciências de Lisboa
         volume: "37"
         pages: 111-124
+      - id: mateus2017a
+        authors: Mateus, O.; Dinis, J.; Cunha, P. P.
+        year: 2017
+        title: "The Lourinhã Formation: the Upper Jurassic to lowermost Cretaceous of the Lusitanian Basin, Portugal - landscapes where dinosaurs walked"
+        journal: Ciências da Terra - Earth Sciences Journal
+        volume: "19"
+        issue: "1"
+        pages: 75-97
+        doi: 10.21695/cterra/esj.v19i1.355
+        notes: Names the holotype's horizon the Praia Azul Member, the unit the describing paper called the Sobral unit.
       - id: jones2026c
         authors: Jones, B.; Viola, E.
         year: 2026
@@ -102875,10 +102910,8 @@ genera:
           country: PT
           locality: Moinho do Carmo, Alenquer
           region: Lisbon
-          formation: Lourinhã
-          coordinates:
-            - 39.043056
-            - -9.008611
+          formation: Farta Pão
+          member: Sobral
           region_code: PT-11
         size:
           hip_height_m:
@@ -102950,6 +102983,16 @@ genera:
         pages: 875-916
         doi: 10.1111/zoj.12113
         notes: Reassessment restricting Lourinhasaurus to the Moinho do Carmo lectotype; provides a 13-autapomorphy emended diagnosis and recovers it within Camarasauridae.
+      - id: mateus2017a
+        authors: Mateus, O.; Dinis, J.; Cunha, P. P.
+        year: 2017
+        title: "The Lourinhã Formation: the Upper Jurassic to lowermost Cretaceous of the Lusitanian Basin, Portugal - landscapes where dinosaurs walked"
+        journal: Ciências da Terra - Earth Sciences Journal
+        volume: "19"
+        issue: "1"
+        pages: 75-97
+        doi: 10.21695/cterra/esj.v19i1.355
+        notes: Places the Sobral Member in the Farta Pão Formation.
       - id: jones2026b
         authors: Jones, B.; Viola, E.
         year: 2026
@@ -103033,12 +103076,8 @@ genera:
           to_ma: 66
         location:
           country: CN
-          locality: Qiupa, Luanchuan Basin
           region: Henan
           formation: Qiupa
-          coordinates:
-            - 34.016666
-            - 111.650002
           region_code: CN-HA
         size:
           length_m:
@@ -103164,10 +103203,9 @@ genera:
           locality: Quebrada del Puma
           region: San Juan
           formation: Quebrada del Barro
-          coordinates:
-            - -31.633333
-            - -67.26667
+          part: upper
           region_code: AR-J
+          part_of: formation
         type_specimen:
           specimen_id:
             - PVSJ 906
@@ -103290,12 +103328,10 @@ genera:
           to_ma: 192.9
         location:
           country: CN
-          locality: Shawan, Lufeng
+          locality: Shawan
           region: Yunnan
           formation: Lufeng
-          coordinates:
-            - 25.168743
-            - 102.084496
+          member: Shawan
           region_code: CN-YN
         size:
           hip_height_m:
@@ -103358,6 +103394,13 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
         notes: Source of the hip height estimate.
+      - id: fang2000a
+        authors: Fang, X.; Pang; Lü, J.; Zhang, Y.; Pan; Wang, X.; Li; Cheng
+        year: 2000
+        title: "[Lower, Middle, and Upper Jurassic divisions of the Lufeng region of Yunnan province]"
+        journal: Proceedings of the Third National Stratigraphical Conference of China. Geological Publishing House, Beijing
+        pages: 208-214
+        notes: Defines the Shawan Member, with its type section at Shawan village, as the lower of the two members of the Lufeng Formation.
     taxonomy:
       - Life
       - Animalia
@@ -103429,9 +103472,6 @@ genera:
           locality: Shijiagou Quarry, Liudian
           region: Henan
           formation: Haoling
-          coordinates:
-            - 34.112
-            - 112.589302
           region_code: CN-HA
         size:
           length_m:
@@ -103459,6 +103499,16 @@ genera:
         volume: "25"
         issue: "1"
         pages: 43-56
+      - id: lü2013b
+        authors: Lü, J.; Xu, L.; Pu, H.; Zhang, X.; Zhang, Y.; Jia, S.; Chang, H.; Zhang, J.; Wei, X.
+        year: 2013
+        title: A new sauropod dinosaur (Dinosauria, Sauropoda) from the late Early Cretaceous of the Ruyang Basin (central China)
+        journal: Cretaceous Research
+        publisher: Elsevier BV
+        volume: "44"
+        pages: 202-213
+        doi: 10.1016/j.cretres.2013.04.009
+        notes: Places the holotype in the Haoling Formation, a name that postdates the original description.
     taxonomy:
       - Life
       - Animalia
@@ -103536,10 +103586,12 @@ genera:
           locality: Camp des deux arbres, Gadoufaoua
           region: Agadez
           formation: Elrhaz
+          part: upper
           coordinates:
             - 16.700001
             - 9.333333
           region_code: NE-1
+          part_of: formation
         type_specimen:
           specimen_id:
             - MNHN GDF 1700
@@ -103613,18 +103665,15 @@ genera:
       - fluvial
       - coastal
     diagnostic_features:
-      - Brachiosaurid with prominent deltopectoral crest of humerus and elongated humerus
-      - Mid-dorsals with very large pleurocoels
-      - Anterior caudals with well-developed transverse processes
-      - Mid-caudal neural spine inclined almost vertically
-      - Posterior caudal centra with convex anterior face
-      - Mid- and posterior caudal centra wider than high
-      - Slender pelvis with notch at posterodorsal margin of ilium
-      - Postacetabular process of ilium bulky without notch between process and ischial peduncle
-      - Obturator foramen of pubis closed
-      - Distal end of pubis anteroposteriorly expanded
-      - Tibia bowed laterally
-      - Proximal end of fibula angular not rounded
+      - Small lateral projection of the spinopostzygapophyseal lamina at midheight of the anteriormost sacral neural spine
+      - Transversely elongated or T-shaped pits in the middle caudal vertebrae
+      - Circular depressions on the ventral face of the middle to posterior caudals, anterior to the posterior chevron facets
+      - Pubic peduncle of the ischium constricted in anterior view
+      - Tibia strongly bowed laterally
+      - No vertical groove running up the tibial shaft between the lateral and medial malleoli
+      - Cnemial crest ventrally directed
+      - Acute lateral margin of the tibia, bordered by smooth dorsoventral grooves
+      - Abrupt transition between the dorsal surface of the articular surface of the ascending process and the lateral surface of the tibial shaft
     appearance:
       integument: scaled
       evidence: inferred
@@ -103655,9 +103704,7 @@ genera:
           locality: Atalaia, near Peralta
           region: Lisbon
           formation: Lourinhã
-          coordinates:
-            - 39.235832
-            - -9.34
+          member: Praia Azul
           region_code: PT-11
         size:
           hip_height_m:
@@ -103665,18 +103712,41 @@ genera:
             max: 4
           length_m:
             min: 21
-            max: 21
+            max: 24
           weight_kg:
             min: 25000
-            max: 30000
+            max: 34000
         erected_in: antunes2003a
+        described_in: mocho2016a
         type_specimen:
           specimen_id:
-            - MIGM 4798
+            - MG 4798
+            - MG 4801
+            - MG 4803
+            - MG 4805
+            - MG 4806
+            - MG 4807
+            - MG 4808
+            - MG 4809
+            - MG 4810
+            - MG 4944
+            - MG 4950
+            - MG 4952
+            - MG 4958
+            - MG 4964
+            - MG 4965
+            - MG 4966
+            - MG 4981
+            - MG 4982
+            - MG 4985
+            - MG 8793
+            - MG 8795
+            - MG 8807
           specimen_type: lectotype
           institution: Museu Geológico do Instituto Geológico e Mineiro
-          material: 28 vertebrae (cervical, dorsal, and mostly caudal), 12 chevrons, fragmentary ribs, both humeri, proximal left ulna, radius, partial ilium, left ischium and pubis, left tibia, proximal right fibula, and right astragalus
+          material: A dorsal vertebra, rib fragments, a sacral centrum, spines and rib, 19 caudals, 12 or more chevrons, both humeri and radii, and the left ulna, pubis, ischium, tibia, fibula and astragalus
           completeness: partial
+          notes: Antunes and Mateus (2003) designated the lectotype, Lapparent and Zbyszewski having fixed no type. Mocho and colleagues (2017) revised its contents, dropping MG 4802 and MG 4804 as coming from other localities and MG 4938 as an indeterminate fragment rather than the ilium earlier accounts took it for.
         authors: Antunes, M. T.; Mateus, O.
         described: 2003
     pronunciation:
@@ -103692,13 +103762,41 @@ genera:
         issue: "1"
         pages: 77-95
         doi: 10.1016/s1631-0683(03)00003-4
+      - id: mannion2013a
+        authors: Mannion, P. D.; Upchurch, P.; Barnes, R. N.; Mateus, O.
+        year: 2013
+        title: Osteology of the Late Jurassic Portuguese sauropod dinosaur Lusotitan atalaiensis (Macronaria) and the evolutionary history of basal titanosauriforms
+        journal: Zoological Journal of the Linnean Society
+        publisher: Oxford University Press (OUP)
+        volume: "168"
+        issue: "1"
+        pages: 98-206
+        doi: 10.1111/zoj.12029
+        notes: Full osteological redescription of the lectotype, diagnosing the taxon on six autapomorphies. Reported several elements as missing from the collections, most of which were later relocated.
+      - id: mocho2016a
+        authors: Mocho, P.; Royo-Torres, R.; Ortega, F.
+        year: 2017
+        title: New data of the Portuguese brachiosaurid Lusotitan atalaiensis (Sobral Formation, Upper Jurassic)
+        journal: Historical Biology
+        publisher: Informa UK Limited
+        volume: "29"
+        issue: "6"
+        pages: 789-817
+        doi: 10.1080/08912963.2016.1247447
+        notes: Redescribes the lectotype and places the Peralta quarry in the Bombarral Sub-basin, the older name for the Consolação.
+      - id: paul2024a
+        authors: Paul, G. S.
+        year: 2024
+        title: The Princeton Field Guide to Dinosaurs (3rd ed.)
+        publisher: Princeton University Press
+        notes: Source of the lower length and mass estimates.
       - id: jones2026b
         authors: Jones, B.; Viola, E.
         year: 2026
         title: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
-        notes: Source of the hip height estimate.
+        notes: Source of the hip height, and of the upper length and mass estimates.
     taxonomy:
       - Life
       - Animalia
@@ -103775,13 +103873,10 @@ genera:
           to_ma: 143.1
         location:
           country: PT
-          locality: cliffs north of Praia de Valmitão
+          locality: Praia de Valmitão
           region: Lisbon
           formation: Lourinhã
-          member: Amoreira-Porto Novo
-          coordinates:
-            - 39.087502
-            - -9.404722
+          member: Praia da Amoreira-Porto Novo
           region_code: PT-11
         size:
           length_m:
@@ -103901,13 +103996,15 @@ genera:
           to_ma: 192.9
         location:
           country: ZA
-          locality: Buck Camp, Golden Gate Highlands NP
-          region: Free State
+          locality: Paballong
+          region: Eastern Cape
           formation: Elliot
+          part: upper
           coordinates:
-            - -28.5
-            - 28.616667
-          region_code: ZA-FS
+            - -30.433333
+            - 28.516667
+          region_code: ZA-EC
+          part_of: formation
         type_specimen:
           specimen_id:
             - SAM 3606
@@ -103964,6 +104061,14 @@ genera:
         volume: "226"
         pages: 1-225
         doi: 10.3897/zookeys.226.2840
+      - id: norman2011a
+        authors: Norman, D. B.; Crompton, A. W.; Butler, R. J.; Porro, L. B.; Charig, A. J.
+        year: 2011
+        title: "The Lower Jurassic ornithischian dinosaur Heterodontosaurus tucki Crompton & Charig, 1962: cranial anatomy, functional morphology, taxonomy, and relationships"
+        journal: Zoological Journal of the Linnean Society
+        pages: 182-276
+        doi: 10.1111/j.1096-3642.2011.00697.x
+        notes: Gives the holotype's locality as Paballong and its horizon as the upper Elliot, distinguishing it from the Golden Gate material.
     taxonomy:
       - Life
       - Animalia
@@ -104028,10 +104133,9 @@ genera:
           locality: Nipple Butte
           region: Utah
           formation: Wahweap
-          coordinates:
-            - 37.191113
-            - -111.646667
+          part: middle
           region_code: US-UT
+          part_of: formation
         size:
           hip_height_m:
             min: 2.1
@@ -104063,6 +104167,16 @@ genera:
         issue: "11"
         pages: e79420
         doi: 10.1371/journal.pone.0079420
+      - id: beveridge2022a
+        authors: Beveridge, T. L.; Roberts, E. M.; Ramezani, J.; Titus, A. L.; Eaton, J. G.; Irmis, R. B.; Sertich, J. J. W.
+        year: 2022
+        title: Refined geochronology and revised stratigraphic nomenclature of the Upper Cretaceous Wahweap Formation, Utah, U.S.A. and the age of early Campanian vertebrates from southern Laramidia
+        journal: Palaeogeography, Palaeoclimatology, Palaeoecology
+        publisher: Elsevier BV
+        volume: "591"
+        pages: "110876"
+        doi: 10.1016/j.palaeo.2022.110876
+        notes: Formalizes the Wahweap members and places the holotype quarry in the lower Reynolds Point Member.
       - id: jones2026c
         authors: Jones, B.; Viola, E.
         year: 2026
@@ -121299,7 +121413,7 @@ genera:
           locality: cliffs north of Praia de Valmitão
           region: Lisbon
           formation: Lourinhã
-          member: Amoreira-Porto Novo
+          member: Praia da Amoreira-Porto Novo
           coordinates:
             - 39.201111
             - -9.347222
@@ -168366,7 +168480,7 @@ genera:
           country: PT
           region: Lisbon
           formation: Lourinhã
-          member: Amoreira-Porto Novo
+          member: Praia da Amoreira-Porto Novo
           locality: Praia da Vermelha, Lourinhã
           region_code: PT-11
         type_specimen:
@@ -184943,7 +185057,7 @@ genera:
           locality: Vale de Pombas
           region: Lisbon
           formation: Lourinhã
-          member: Amoreira-Porto Novo
+          member: Praia da Amoreira-Porto Novo
           coordinates:
             - 39.169998
             - -9.2
