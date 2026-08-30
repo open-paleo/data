@@ -679,6 +679,17 @@ Elliot:
         The younger bound, hedged at source: "Upper Elliot Formation, Early
         Jurassic, possibly Pliensbachian".
 
+"Farta Pão":
+  rank: formation
+  contains: [Sobral]
+  stages: [Kimmeridgian, Tithonian]
+  references:
+    - id: mateus2017a
+      notes: >
+        Lusitanian Basin, west-central Portugal. Unites the Sobral, Arranhó I,
+        Arranhó II and Freixial members, the Sobral having also been treated as
+        a formation in its own right and as a member of the Lourinhã.
+
 Foremost:
   rank: formation
   parent: "Belly River"
@@ -1173,7 +1184,7 @@ Loncoche:
 Lourinhã:
   rank: formation
   rank_contested: [formation, group]
-  contains: ["Amoreira-Porto Novo", Sobral]
+  contains: ["Amoreira-Porto Novo", "Praia Azul"]
   stages: [Kimmeridgian, Tithonian]
   references:
     - id: mateus2014a
@@ -1539,6 +1550,17 @@ Pircala:
         relays a fossil association credited to Dias-Brito and others (2001)
         rather than this paper's own nomenclature.
 
+"Praia Azul":
+  rank: member
+  parent: Lourinhã
+  stages: [Kimmeridgian, Tithonian]
+  references:
+    - id: mateus2017a
+      notes: >
+        The Consolação sub-basin package named the Praia Azul Member by Hill
+        (1989), corresponding to the Sobral unit of Manuppella and others
+        (1999) — a different body from the Sobral of the Arruda sub-basin.
+
 "Presidente Prudente":
   rank: formation
   parent: Bauru
@@ -1708,9 +1730,13 @@ Shengjinkou:
 Sobral:
   rank: member
   rank_contested: [member, formation]
-  parent: Lourinhã
+  parent: "Farta Pão"
   stages: [Kimmeridgian, Tithonian]
   references:
+    - id: mateus2017a
+      notes: >
+        Places the Sobral as a member of the Farta Pão Formation, alongside the
+        Arranhó I, Arranhó II and Freixial members, in the Arruda sub-basin.
     - id: tschopp2015a
       notes: >
         Lusitanian Basin. Member rank within the Lourinhã, dated
