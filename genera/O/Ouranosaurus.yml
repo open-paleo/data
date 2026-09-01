@@ -2,9 +2,9 @@ genus: Ouranosaurus
 parent: Styracosterna
 pronunciation:
   phonetic: oo-RAHN-o-SAWR-us
-etymology: "From Tuareg 'ouranou' meaning 'brave' or 'valiant' (the local name
-  for the monitor lizard) and Greek 'sauros' meaning 'lizard', giving the
-  meaning 'brave lizard' or 'valiant lizard'."
+etymology: "From 'ourane', an Arabic word for valor, courage, or recklessness
+  that the Tuareg of Niger and the Berbers of Algeria use as the name for the
+  sand monitor, and Greek 'sauros' meaning 'lizard'."
 description: Ouranosaurus is a genus of herbivorous basal hadrosauriform
   dinosaur that lived during the Aptian stage of the Early Cretaceous of
   modern-day Niger and Cameroon. Ouranosaurus measured about 7-8.3 meters (23-27
@@ -30,6 +30,18 @@ appearance:
     - nasal crest
   integument: scaled
   evidence: inferred
+diagnostic_features:
+  - rounded dorsal boss on the nasals, the only iguanodontid with a domed
+    cranial roof at this level
+  - long, low, duck-billed skull with extremely elongated straight premaxillae
+    separating the nasals from the maxillae posteriorly
+  - external nares readily visible in dorsal view, with the orifice of
+    convergence between the nasal canals set very far posteriorly
+  - dorsal neural spines extremely elongated, reaching 3.9 times centrum height,
+    the greatest elongation known among ornithopods
+  - fifth metacarpal reduced to a small bony spur that is not directed laterally
+  - long, straight ischium with a very narrow obturator canal and a very
+    proximally placed obturator process
 identifiers:
   - source: pbdb
     id: "38751"
@@ -62,6 +74,9 @@ species:
       specimen_id: [ MNHN GDF 300 ]
       specimen_type: holotype
       institution: MNHN
+      material: Nearly complete skeleton with skull, missing most of both femora, the
+        left tibia and hindfoot, the last caudal vertebrae, some chevrons, and several
+        skull bones including the left maxilla
     size:
       hip_height_m:
         min: 2.2
@@ -75,8 +90,9 @@ species:
     erected_in: taquet1976a
 references:
   - id: taquet1972a
-    notes: Published the name without a diagnosis; Taquet's 1976 monograph
-      treats this and two other 1972 usages as nomina nuda.
+    notes: Carried a photograph of the skeleton but no diagnosis; Taquet's 1976
+      monograph records this and two earlier 1972 appearances of the name as
+      published without one.
   - id: jones2026a
     notes: Source of the hip height estimate, and the appearance features.
   - id: taquet1976a
