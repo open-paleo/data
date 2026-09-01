@@ -52,23 +52,25 @@ species:
         - Oxfordian
     location:
       country: CN
-      locality: Hsikuashan, Junghsien
+      locality: Wujiaba Dam, Zigong
       region: CN-SC
       formation: Shaximiao
-      part: lower
-      coordinates:
-        - 29.48333
-        - 104.366699
+      part: upper
     type_specimen:
       specimen_id:
-        - IVPP V930
-      specimen_type: holotype
-      institution: IVPP
-      material: Left femur, sacrum, four cervical vertebrae, three presacral
-        vertebrae, thirteen sacral and post-sacral vertebrae, eight ribs, left
-        scapula and coracoid, complete left humerus, two ilia, two ischia, left
-        pubis, and left fibula
+        - CV 001
+      specimen_type: neotype
+      institution: CFEC
+      material: Skull, the most complete cranial element recovered from the
+        Wujiaba quarry
       completeness: partial
+      notes: >-
+        Young (1939) named the species on postcranial material from Junghsien
+        that carried no catalog number and was mostly lost in transport during
+        the Second World War. Dong and colleagues (1983) selected CV 001 as the
+        neotype and CV 002 as paratype, both from the Wujiaba quarry at Zigong.
+        IVPP V930, sometimes cited for this species, is the type of
+        Omeisaurus changshouensis Young, 1958.
     size:
       hip_height_m:
         min: 3
@@ -142,6 +144,9 @@ species:
       formation: Shaximiao
       part: lower
       locality: Dashanpu, Zigong
+      coordinates:
+        - 29.399722
+        - 104.826667
     type_specimen:
       specimen_id:
         - ZDM 5050
@@ -186,7 +191,7 @@ species:
       region: CN-CQ
       formation: Shaximiao
       part: lower
-      locality: Pu'an Town, Yunyang County
+      locality: Laojun Village, Pu'an Town, Yunyang County
     type_specimen:
       specimen_id:
         - CLGPR V00005
@@ -222,3 +227,4 @@ references:
   - id: tan2020a
     notes: Erects Omeisaurus puxiani on holotype CLGPR V00005 from the lower
       Shaximiao Formation of Yunyang, Chongqing.
+  - id: dong1983a
