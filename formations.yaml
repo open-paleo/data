@@ -440,6 +440,41 @@ Changwangpu:
 "Chipping Norton Limestone":
   rank: formation
 
+Conques:
+  rank: formation
+  parent: Tremp
+  stages: [Maastrichtian]
+  contains: [Basturs]
+  references:
+    - id: párraga2019a
+      notes: >
+        Eastern Tremp Syncline, south-central Pyrenees; the lower of the group's
+        two red-bed formations. "The Basturs Poble bonebed occurs in the upper
+        lower Maastrichtian section of the Conques Formation (Tremp Group;
+        Cuevas, 1992)", and for the informal equivalent, "This formation is part
+        of the 'Lower Red Garumnian' facies (the "Tremp Formation" of authors;
+        Rosell et al. 2001; Riera et al. 2009; Fondevilla et al. 2016)."
+    - id: prieto-márquez2019a
+      notes: >
+        Costa de les Solanes "lies in the lower Maastrichtian Conques Formation
+        (Tremp Group; Cuevas, 1992)", below "lacustrine limestones of the
+        Basturs Member (Cuevas, 1992)". Separated from the Talarn above by a
+        gap, not a contact: "The hadrosaurid-bearing localities of the Talarn
+        Formation are temporally separated from the above-discussed localities
+        of the Conques Formation by a 3.85 Ma time lapse".
+    - id: vila2022a
+      notes: >
+        Orcau-1, "Lower portion of the Tremp Group, basalmost strata of the
+        Conques Formation" -- group rank for the parent, formation for this.
+    - id: augustin2023a
+      notes: >
+        The only member-rank usage found, "the Upper Cretaceous (lower
+        Maastrichtian) Conques Member of the Tremp Formation", for the same
+        Basturs Poble horizon that its own cited source (Párraga and
+        Prieto-Márquez 2019) calls a formation. Not recorded as
+        `rank_contested`: the paper describes an ornithopod and does not define
+        the unit, so it states no rank in the sense this file collects.
+
 Crato:
   rank: formation
   parent: Santana
@@ -689,6 +724,47 @@ Elliot:
         Lusitanian Basin, west-central Portugal. Unites the Sobral, Arranhó I,
         Arranhó II and Freixial members, the Sobral having also been treated as
         a formation in its own right and as a member of the Lourinhã.
+
+Figuerola:
+  rank: formation
+  parent: Fontllonga
+  stages: [Maastrichtian, Danian]
+  references:
+    - id: fondevilla2019a
+      notes: >
+        Places the unit in the Àger Syncline's OWN group, not the Tremp Group:
+        "Colombo and Cuevas (1993) did the same for the Àger Syncline, replacing
+        the Tremp Fm by the Fontllonga Group. In this case, the La Maçana Fm
+        replaces the "Grey Garumnian"; the Figuerola Fm is equivalent to the
+        "Lower Red Garumnian"; the Millà Fm is equivalent to the "Vallcebre
+        limestones"; and the Perauba Complex can be related to the "Upper Red
+        Garumnian"." So the Figuerola is the Àger counterpart of the Conques
+        plus Talarn, and is not a synonym of either.
+    - id: prieto-márquez2021a
+      notes: >
+        Àger Syncline, NOT the Tremp Syncline -- the distinction matters because
+        the two synclines carry different formation names for coeval strata. The
+        Fylax type horizon at Fontllonga-R is "Rocks corresponding to chron C29r
+        within the Figuerola Formation", and "The Figuerola Formation spans
+        chrons C31n through C29n and consists of alternating brown, ochre, and
+        reddish marl with sandstone that have been interpreted as fluvial
+        deposits". Not a synonym of the Talarn: the same paper uses Talarn for
+        the Tremp-Syncline unit of the same chron, "Pararhabdodon isonensis from
+        the Talarn Formation of the eastern Tremp syncline".
+
+Fontllonga:
+  rank: group
+  contains: ["La Maçana", Figuerola, "Millà"]
+  stages: [Maastrichtian, Danian]
+  references:
+    - id: fondevilla2019a
+      notes: >
+        The Àger Syncline's counterpart to the Tremp Group, erected by the same
+        move at the same time: "Colombo and Cuevas (1993) did the same for the
+        Àger Syncline, replacing the Tremp Fm by the Fontllonga Group." Its
+        formations answer one-for-one to the Tremp Group's, so a locality in the
+        Àger Syncline takes a Fontllonga-Group formation and never a
+        Tremp-Syncline one.
 
 Foremost:
   rank: formation
@@ -1106,6 +1182,18 @@ Jehol:
     - id: kellermann2025a
       notes: >
         Follows the Ibrahim scheme; the Carcharodontosaurus neotype is Douira.
+
+"La Posa":
+  rank: formation
+  parent: Tremp
+  stages: [Maastrichtian]
+  references:
+    - id: dallavecchia2020a
+      notes: >
+        The lowest formation of the group, below the red beds: "the Els Nerets
+        site of the La Posa Formation, which is referred to the magnetochron
+        C31r and dated to the early Maastrichtian". Corresponds to the informal
+        'grey unit' / 'Grey Garumnian'.
 
 Lameta:
   rank: formation
@@ -1781,6 +1869,62 @@ Strathmore:
         Drumheller above and the Dinosaur Park Formation below. Within the 33n
         magnetochron, about 74.0-73.2 Ma.
 
+Talarn:
+  rank: formation
+  parent: Tremp
+  stages: [Maastrichtian, Danian]
+  references:
+    - id: serrano2021a
+      notes: >
+        The strongest source for the unit carrying the Pararhabdodon holotype,
+        which it states in the formal horizon line of the emended diagnosis:
+        "Sant Romà d'Abella at Tossal de la Doba Hill, near the town of Isona i
+        Conca Dellà, Lleida Province, eastern Tremp Syncline, northeastern
+        Spain. This locality corresponds to the upper Maastrichtian (C29r chron)
+        strata of the Talarn Formation." Also names the rank history:
+        "Stratigraphically, Sant Romà d'Abella corresponds to the Talarn
+        Formation of the Tremp Group, a redefinition by Cuevas (1992) of the
+        "Tremp Formation" of Mey et al. (1968)". Restricts the species to this
+        one formation -- "P. isonensis is restricted to the upper Maastrichtian
+        Talarn Formation" -- dropping the Serrat del Rostiar 1 referral that put
+        earlier accounts in the Conques as well.
+    - id: fondevilla2019a
+      notes: >
+        The chronostratigraphic synthesis the C29r calibration rests on, and the
+        source of the informal crosswalk: "the La Posa Fm represents the "Grey
+        Garumnian"; the Conques and Talarn formations are equivalent to the
+        "Lower Red Garumnian"". Because the pair share one informal unit, an
+        attribution to the "Lower Red Garumnian" alone does not resolve to
+        either -- that needs the chron.
+    - id: sellés2021a
+      notes: >
+        Eastern Tremp Syncline; the unit carrying the latest-Maastrichtian
+        dinosaur sites, including the Pararhabdodon type locality. "the Sant
+        Romà d'Abella site falls within the upper part of the fluvial Talarn
+        Formation of the Tremp Group", and "the Sant Romà d'Abella site falls
+        within the C29r magnetochron (latest Maastrichtian), thus placing the
+        site within the final 200 ka before the K-Pg boundary".
+    - id: prieto-márquez2022a
+      notes: >
+        Same unit and chron at a second locality: "Masia de Ramón falls within
+        the upper part of the fluvial Talarn Formation of the Tremp Group and
+        isotopic, magnetostratigraphic, and biochronological calibrations
+        indicate that the locality correlates with the middle part of the C29r
+        magnetochron (latest Maastrichtian)".
+    - id: prieto-márquez2013a
+      notes: >
+        Predates the formation-rank usage and maps the unit onto the informal
+        scheme instead, which is why the unit STRADDLES the K/Pg and why an
+        informal attribution alone does not resolve to it: the "'lower red unit'
+        (or 'lower red Garumnian', corresponding to the Conques Formation and
+        the Cretaceous portion of the Talarn Formation in Cuevas [20])", and the
+        "'upper red unit' (or 'upper red Garumnian', corresponding to the
+        Paleogene portion of the Talarn Formation, the Esplugafreda Formation,
+        and the Claret Formation in Cuevas [20])". Places the Pararhabdodon type
+        locality by the coarse scheme only, "The Sant Romà d'Abella locality
+        occurs in the upper section of the 'lower red unit' of the Tremp
+        Formation".
+
 Tangbian:
   rank: formation
   parent: Guifeng
@@ -2101,18 +2245,72 @@ Sasayama:
         Medicine Formation, Upper Cretaceous (? Late Campanian)".
 
 Tremp:
-  rank: formation
+  rank: group
+  rank_contested: [group, formation]
+  contains: ["La Posa", Conques, Talarn]
+  stages: [Maastrichtian, Danian]
   references:
+    - id: fondevilla2019a
+      notes: >
+        States the rank change and its authors: "For the Tremp Syncline, Cuevas
+        (1992) and Pujalte and Schmitz (2006) redefined the Tremp Fm as Tremp
+        Group, and divided it into different formations that are more or less
+        equivalent to the informal "Garumnian" units of Rosell et al. (2001)."
+        And, in the same paragraph, why both ranks are still in print: "Despite
+        these formal lithostratigraphic divisions, the terms 'Garumnian',
+        'Garumnian facies' and Tremp Fm were widely used by researchers until
+        recently".
+    - id: prieto-márquez2019a
+      notes: >
+        Group rank with the Cuevas (1992) formations inside it, the prevailing
+        usage in the eastern Tremp Syncline: Costa de les Solanes "lies in the
+        lower Maastrichtian Conques Formation (Tremp Group; Cuevas, 1992),
+        included in the 'Lower Red Garumnian' facies (the "Tremp Formation" of
+        authors; Rosell et al., 2001; Riera et al., 2009; Fondevilla et al.,
+        2016)" -- i.e. names the formation-rank usage as the older convention
+        for the same rocks.
+    - id: sellés2021a
+      notes: >
+        Group rank, "the upper part of the fluvial Talarn Formation of the Tremp
+        Group".
+    - id: vila2022a
+      notes: >
+        Group rank, "Lower portion of the Tremp Group, basalmost strata of the
+        Conques Formation".
+    - id: prieto-márquez2013a
+      notes: >
+        Formation rank, explicitly chosen over the group scheme and with the
+        subdivisions left informal: "Here, we follow the division scheme by
+        [22], where the Tremp Formation (equivalent to the 'Garumnian' in
+        Leymerie [23] and the Tremp Group in Cuevas [20] is composed of four
+        informal units." Same rocks at a coarser resolution, not a rival
+        correlation -- an older Tremp Formation attribution does not conflict
+        with a newer Conques or Talarn one and must not be recorded as a
+        dispute.
     - id: prieto-márquez2021a
       notes: >
-        Ranks the unit a formation, referring to "the lower and middle part of
-        the Tremp Formation" with no formal member names published.
+        Formation rank, "the lower and middle part of the Tremp Formation" with
+        no formal member names published.
     - id: csiki-sava2015a
       notes: >
-        Also treats it as a formation, recognizing informal intervals rather
-        than named members -- a "lower Tremp Formation" interval near Aren and
-        an informal "lower red unit" at Sant Roma d'Abella. Laterally related to
-        and diachronous with the Aren Sandstone.
+        Formation rank, recognizing informal intervals rather than named members
+        -- a "lower Tremp Formation" interval near Aren and an informal "lower
+        red unit" at Sant Roma d'Abella. Laterally related to and diachronous
+        with the Aren Sandstone.
+    - id: peredasuberbiola2009a
+      notes: >
+        Formation rank in the WESTERN (Aragonese) Tremp Syncline, where the
+        group's internal formations are not applied: the Arenysaurus type
+        horizon is "Blasi 3 site in Aren (Huesca, Spain); lower part of the
+        Tremp Formation". Coarse is correct there -- see the Talarn entry.
+    - id: prieto-márquez2006b
+      notes: >
+        The informal three-part scheme the older literature uses, and the source
+        of the group's Paleogene top: "The Garumnian red-beds are divided into
+        three sections: the Grey Garumnian, followed by a Lower Red Garumnian,
+        both of Maastrichtian age, and an Upper Red Garumnian of Danian age
+        (Tertiary) (Rosell et al., 2001)." Places the Pararhabdodon sites in the
+        Lower Red Garumnian without naming a formation.
 
 Tugulu:
   rank: group
