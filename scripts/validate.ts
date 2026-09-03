@@ -2998,6 +2998,81 @@ for (const [key, occurrences] of specimenOccurrences)
     }
 }
 
+// 29. Catalog number shape — some institutions number specimens to a fixed
+// pattern, and an id that does not match it is normally a number recorded only
+// in part. The Royal Tyrrell numbers as "TMP year.location.specimen" with the
+// last two fields zero-padded to three and four digits; papers routinely print
+// the padding-stripped form (Ryan 2007 writes TMP 2001.26.1), but the catalog
+// form is what we store.
+startCheck("Catalog number shape");
+
+const catalogNumberShapes = new Map<string, RegExp>([
+    ["TMP", /^TMP \d{4}\.\d{3}\.\d{4}$/],
+]);
+
+/**
+ * Reports a specimen id whose institution has a known catalog pattern that the
+ * id does not match. Ids carrying a "sensu" qualifier are tested on the part
+ * before it, which is the catalog number itself.
+ *
+ * @param filePath - Absolute path to the YAML file the id appears in.
+ * @param label - Human-readable description of the field it came from.
+ * @param specimenId - The raw specimen_id string.
+ * @returns Nothing.
+ */
+function checkCatalogNumberShape(filePath: string, label: string, specimenId: string): void
+{
+    const [base] = specimenId.split(sensuQualifier);
+    const [prefix] = base.trim().split(/[\s-]/);
+    const shape = catalogNumberShapes.get(prefix);
+
+    if (shape !== undefined && !shape.test(base.trim()))
+    {
+        checkError(
+            "Catalog number shape",
+            filePath,
+            `${label}: specimen id "${base.trim()}" does not match the ${prefix} catalog pattern ${shape.source}`);
+    }
+}
+
+for (const [filePath, doc] of genusParsed)
+{
+    if (!doc)
+    {
+        continue;
+    }
+
+    for (const species of doc.species ?? [])
+    {
+        const typeSpecimenIds = species?.type_specimen?.specimen_id;
+        if (Array.isArray(typeSpecimenIds))
+        {
+            for (const specimenId of typeSpecimenIds)
+            {
+                if (typeof specimenId === "string")
+                {
+                    checkCatalogNumberShape(filePath, `${species.name ?? "?"} type_specimen`, specimenId);
+                }
+            }
+        }
+    }
+
+    for (const specimen of doc.notable_specimens ?? [])
+    {
+        const notableSpecimenIds = specimen?.specimen_id;
+        if (Array.isArray(notableSpecimenIds))
+        {
+            for (const specimenId of notableSpecimenIds)
+            {
+                if (typeof specimenId === "string")
+                {
+                    checkCatalogNumberShape(filePath, "notable_specimens", specimenId);
+                }
+            }
+        }
+    }
+}
+
 // Output
 
 console.log("Validating Open Paleo data...\n");
