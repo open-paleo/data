@@ -21,6 +21,17 @@ paleoenvironment:
 appearance:
   integument: feathered
   evidence: inferred
+diagnostic_features:
+  - postzygapophyses of the dorsal vertebrae with a ventrally curved,
+    tongue-shaped lateral margin
+  - dorsal, sacral and caudal vertebrae with a bulge on the caudal base of
+    the neural arch
+  - coracoid with a transversely narrow humeral articular facet
+  - internal tuberosity of the humerus subcylindrical, wider at its extremity
+    than at its base
+  - humeral entepicondyle conical and strongly projecting medially
+  - first phalanx of manual digit I with proximomedial hook-like processes
+  - ectocondylar tuber of the femur rectangular in distal view
 identifiers:
   - source: pbdb
     id: "64772"
@@ -50,17 +61,11 @@ species:
       specimen_id: [ MCF-PVPH 37 ]
       specimen_type: holotype
       institution: MCF
-    size:
-      hip_height_m:
-        min: 0.8
-        max: 0.8
-      length_m:
-        min: 1.0
-        max: 1.0
-      weight_kg:
-        min: 4
-        max: 4
+      material: Partial postcranial skeleton comprising dorsal, sacral and caudal
+        vertebrae, both coracoids and humeri, forelimb elements including manual
+        digit I, pelvic fragments, and partial hind limbs.
     erected_in: novas1996a
+    described_in: novas1997b
 references:
   - id: novas1996a
     notes: Erects Patagonykus puertai with a diagnosis, designated holotype and
@@ -74,5 +79,3 @@ references:
     notes: Source of the formation rank followed here, in which Portezuelo is a
       formation within the Rio Neuquen Subgroup; names Patagonykus puertai from
       it directly.
-  - id: jones2026c
-    notes: Source of the hip height estimate.
