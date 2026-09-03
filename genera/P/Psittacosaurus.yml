@@ -82,12 +82,10 @@ species:
         - Albian
     location:
       country: MN
-      region: MN-053
-      formation: Ashile
-      locality: Artsa Bogdo basin (Önder Sair / Red Mesa)
-      coordinates:
-        - 44.5
-        - 100.5
+      region: MN-055
+      formation: Öösh
+      locality: Red Mesa
+      member: Cannonball
     size:
       hip_height_m:
         min: 0.6
@@ -145,6 +143,7 @@ species:
     location:
       country: CN
       region: CN-SD
+      group: Qingshan
       formation: Doushan
       locality: Doushan village, 5 km northwest of Laiyang
     type_specimen:
@@ -228,7 +227,8 @@ species:
       country: CN
       region: CN-LN
       formation: Jiufotang
-      locality: Meileyingzi Beds, near Beipiao
+      locality: Meileyingzi
+      bed: Meileyingzi
     type_specimen:
       specimen_id:
         - IVPP V7705
@@ -263,7 +263,7 @@ species:
       country: CN
       region: CN-NM
       formation: Ejinhoro
-      locality: 80 km west of Dongshen, Ordos Basin
+      locality: 1 km southeast of Yangpo village, 80 km west of Dongsheng
     type_specimen:
       specimen_id:
         - IVPP 12-0888-2
@@ -300,6 +300,7 @@ species:
       formation: Yixian
       member: Lujiatun
       locality: Lujiatun, near Beipiao
+      part: lower
     type_specimen:
       specimen_id:
         - ZMNH M8137
@@ -330,8 +331,11 @@ species:
     location:
       country: CN
       region: CN-NM
-      formation: Bayan Gobi
-      locality: Southwest of Suhongtu, western Gobi Desert
+      formation: Bayin-Gobi
+      locality: southwest of Suhongtu
+      coordinates:
+        - 40.9951
+        - 104.0649
     type_specimen:
       specimen_id:
         - LH PV2
@@ -413,6 +417,9 @@ species:
       region: RU-KEM
       formation: Ilek
       locality: Shestakovo 3, Chebula District
+      coordinates:
+        - 55.8833
+        - 87.9833
     type_specimen:
       specimen_id:
         - PM TGU 16/4-20
@@ -479,3 +486,11 @@ references:
   - id: averianov2006a
     notes: Full redescription of Psittacosaurus sibiricus on holotype PM TGU
       16/4-20 from the Ilek Formation (Shestakovo) of West Siberia.
+  - id: andres2005a
+    notes: Places the Psittacosaurus mongoliensis holotype in the cannonball
+      beds at the base of the Öösh Formation, and gives Övörkhangai for the
+      locality.
+  - id: rougier2001a
+    notes: Ranks the Cannonball a member of the Öösh Formation and traces
+      the locality's naming from Osborn's Ashile through the Oshih of Berkey
+      and Morris.
