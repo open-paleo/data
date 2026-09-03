@@ -46,9 +46,9 @@ species:
       locality: Cañadón Río Seco
       region: AR-Q
       formation: Bajo de la Carpa
-      coordinates:
-        - -37.383331
-        - -68.900002
+      notes: The site's bearing from Rincón de los Sauces reverses between sources,
+        two kilometers north in Calvo and González Riga (2003) and two
+        kilometers south in Pérez-Moreno and colleagues (2023).
     size:
       hip_height_m:
         min: 2.2
@@ -69,5 +69,10 @@ species:
       completeness: partial
 references:
   - id: calvo2003a
+    notes: Erects the species and assigns the type locality to the Río Neuquén
+      Formation of the Neuquén Group.
   - id: jones2026b
     notes: Source of the hip height estimate.
+  - id: pérezmoreno2023a
+    notes: Reports the fossiliferous horizon as the base of the Bajo de la Carpa
+      Formation.

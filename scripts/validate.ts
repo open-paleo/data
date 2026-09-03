@@ -1225,7 +1225,25 @@ for (const [filePath, doc] of genusParsed)
 
     for (const species of doc.species)
     {
-        if (species && species.location && !species.location.country)
+        // A record whose provenance is genuinely unknown carries a location
+        // block holding nothing but the note that explains why -- Raptorex,
+        // whose holotype reached science through the fossil trade with no
+        // collection record. Any other field means a place is being claimed,
+        // and a claim needs a country.
+        const locationKeys = Object.keys(species?.location ?? {});
+        const notesOnly = locationKeys.length === 1 && locationKeys[0] === "notes";
+
+        // An empty `location:` parses as null, which is falsy, so the country
+        // check below skipped it and the block said nothing at all.
+        if (species && "location" in species && !species.location)
+        {
+            checkError(
+                "Location completeness",
+                filePath,
+                `species '${species.name ?? "?"}': empty 'location' block`);
+        }
+
+        if (species && species.location && !species.location.country && !notesOnly)
         {
             checkError(
                 "Location completeness",
