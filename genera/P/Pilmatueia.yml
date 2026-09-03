@@ -62,14 +62,18 @@ species:
         min: 12.0
         max: 12.0
     type_specimen:
-      specimen_id: [MLL Pv-005]
+      specimen_id: [MLL-Pv 005 sensu Coria 2019]
       specimen_type: holotype
       institution: MLL
       material: Almost complete posterior dorsal vertebra.
       completeness: fragmentary
+      notes: Coria et al. (2020) gave the same catalog number for the
+        holotype of the carcharodontosaurid Lajasvenator ascheriae, collected
+        from the same locality and formation. Windholz et al. (2022) restate
+        the number for this vertebra.
     erected_in: coria2019a
 notable_specimens:
-  - specimen_id: [MLL-Pv-010]
+  - specimen_id: [MLL-Pv 010]
     institution: MLL
     species: Pilmatueia faundezi
     category: complementary
@@ -78,6 +82,9 @@ notable_specimens:
 references:
   - id: windholz2022a
   - id: coria2019a
+  - id: coria2020a
+    notes: Names Lajasvenator ascheriae on a holotype carrying the same
+      catalog number as this one.
   - id: jones2026b
     notes: Source of the mass and hip height estimates, and the appearance
       features.

@@ -2882,6 +2882,104 @@ if (outputSchema)
     checkEnumSync("stages", Object.keys(stages));
 }
 
+// 28. Specimen number collisions — one specimen cannot be the type of two taxa,
+// so two type_specimen blocks carrying one catalog number mean at least one of
+// them is wrong, and a difference of case or separator must not be allowed to
+// hide that. A " sensu <author> <year>" qualifier marks a number the literature
+// genuinely applies to more than one specimen, so a group is only reported when
+// at least one of its occurrences lacks that qualifier. Only type specimens are
+// compared: notable_specimens legitimately re-list a type from elsewhere, as
+// Euoplocephalus does for the Scolosaurus holotype ROM 1930.
+startCheck("Specimen number collisions");
+
+type SpecimenOccurrence =
+    {
+        filePath: string;
+        label: string;
+        raw: string;
+        qualified: boolean;
+    };
+
+const sensuQualifier = /\s+sensu\s+/i;
+const specimenOccurrences = new Map<string, Array<SpecimenOccurrence>>();
+
+/**
+ * Reduces a catalog string to a comparable key by dropping any "sensu"
+ * qualifier and every separator, so that "MLL Pv-005", "MLL-PV-005" and
+ * "MLL-Pv 005" all compare equal.
+ *
+ * @param specimenId - The raw specimen_id string as written in the YAML.
+ * @returns The normalized comparison key.
+ */
+function normalizeSpecimenNumber(specimenId: string): string
+{
+    const [base] = specimenId.split(sensuQualifier);
+    return base.replace(/[\s\-_.]/g, "").toUpperCase();
+}
+
+/**
+ * Records one specimen_id occurrence against its normalized key.
+ *
+ * @param filePath - Absolute path to the YAML file the id appears in.
+ * @param label - Human-readable description of the field it came from.
+ * @param specimenId - The raw specimen_id string.
+ * @returns Nothing.
+ */
+function recordSpecimenOccurrence(filePath: string, label: string, specimenId: string): void
+{
+    const key = normalizeSpecimenNumber(specimenId);
+    if (key.length === 0)
+    {
+        return;
+    }
+
+    const occurrences = specimenOccurrences.get(key) ?? new Array<SpecimenOccurrence>();
+    occurrences.push({
+        filePath,
+        label,
+        raw: specimenId,
+        qualified: sensuQualifier.test(specimenId),
+    });
+    specimenOccurrences.set(key, occurrences);
+}
+
+for (const [filePath, doc] of genusParsed)
+{
+    if (!doc)
+    {
+        continue;
+    }
+
+    for (const species of doc.species ?? [])
+    {
+        const typeSpecimenIds = species?.type_specimen?.specimen_id;
+        if (Array.isArray(typeSpecimenIds))
+        {
+            for (const specimenId of typeSpecimenIds)
+            {
+                if (typeof specimenId === "string")
+                {
+                    recordSpecimenOccurrence(filePath, `${species.name ?? "?"} type_specimen`, specimenId);
+                }
+            }
+        }
+    }
+}
+
+for (const [key, occurrences] of specimenOccurrences)
+{
+    if (occurrences.length > 1 && !occurrences.every(occurrence => occurrence.qualified))
+    {
+        const rendered = occurrences
+            .map(occurrence => `${relPath(occurrence.filePath)} (${occurrence.label}, "${occurrence.raw}")`)
+            .join("; ");
+        checkError(
+            "Specimen number collisions",
+            null,
+            `catalog number ${key} is claimed by ${occurrences.length} records: ${rendered}`);
+    }
+}
+
 // Output
 
 console.log("Validating Open Paleo data...\n");
