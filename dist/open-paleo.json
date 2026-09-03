@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-09-03T05:41:57.299Z",
+    "built_at": "2026-09-03T23:54:13.779Z",
     "clade_count": 188,
     "genus_count": 1422,
     "license": "CC-BY-4.0",
@@ -18608,7 +18608,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "TMP 2001"
+              "TMP 2001.026.0001"
             ],
             "specimen_type": "holotype",
             "institution": "Royal Tyrrell Museum of Paleontology",
@@ -18755,7 +18755,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "TMP 2009"
+              "TMP 2009.037.0044"
             ],
             "specimen_type": "holotype",
             "institution": "Royal Tyrrell Museum of Paleontology",
@@ -30417,7 +30417,12 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "MHNA-PV-2011"
+              "MHNA-PV-2011.12.1",
+              "MHNA-PV-2011.12.2",
+              "MHNA-PV-2011.12.3",
+              "MHNA-PV-2011.12.4",
+              "MHNA-PV-2011.12.5",
+              "MHNA-PV-2011.12.15"
             ],
             "specimen_type": "holotype",
             "institution": "Muséum d'Histoire Naturelle d'Aix-en-Provence",
@@ -49125,7 +49130,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "MHNH 2024"
+              "MHNH 2024.1.1"
             ],
             "specimen_type": "holotype",
             "institution": "Muséum d’Histoire Naturelle du Havre",
@@ -61666,7 +61671,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "IWCMS 2014"
+              "IWCMS 2014.80"
             ],
             "specimen_type": "holotype",
             "institution": "Dinosaur Isle Museum",
@@ -105597,12 +105602,21 @@
               "max": 14500
             }
           },
-          "erected_in": "matheron1869a",
+          "erected_in": "matheron1869b",
           "authors": "Matheron, P.",
           "described": 1869
         }
       ],
       "references": [
+        {
+          "id": "matheron1869b",
+          "authors": "Matheron, P.",
+          "year": 1869,
+          "title": "Note sur les reptiles fossiles des dépôts fluvio-lacustres crétacés du bassin à lignite de Fuveau [Note on the fossil reptiles from the Cretaceous fluvio-lacustrine deposits of the lignitic Fuveau Basin]",
+          "journal": "Bulletin de la Société Géologique de France, series 2",
+          "volume": "26",
+          "pages": "781-795"
+        },
         {
           "id": "matheron1869a",
           "authors": "Matheron, P.",
@@ -105610,7 +105624,8 @@
           "title": "Notice sur les reptiles fossiles des dépôts fluvio-lacustres crétacés du bassin à lignite de Fuveau [Notice on the fossil reptiles from the Cretaceous fluvio-lacustrine deposits of the lignitic Fuveau Basin]",
           "journal": "Mémoires de l'Académie des Sciences, Belles-Lettres, et Arts de Marseille",
           "volume": "1868-1869",
-          "pages": "345-379"
+          "pages": "345-379",
+          "notes": "The companion memoir, which erects the genus in near-identical terms. Opinion 1483 finds it was still in press when the Bulletin note appeared."
         },
         {
           "id": "weishampel2004a",
@@ -143445,14 +143460,14 @@
           "location": {
             "country": "TZ",
             "locality": "RRBP 2004-06",
-            "region": "Mbeya",
+            "region": "Songwe",
             "formation": "Galula",
             "member": "Mtuka",
             "coordinates": [
               -8.566667,
               32.566666
             ],
-            "region_code": "TZ-14"
+            "region_code": "TZ-31"
           },
           "type_specimen": {
             "specimen_id": [
@@ -153645,7 +153660,18 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "MHNH-2013"
+              "MHNH 2013.2.1.1",
+              "MHNH 2013.2.1.2",
+              "MHNH 2013.2.1.3",
+              "MHNH 2013.2.1.4",
+              "MHNH 2013.2.1.5",
+              "MHNH 2013.2.1.6",
+              "MHNH 2013.2.1.7",
+              "MHNH 2013.2.1.8",
+              "MHNH 2013.2.1.9",
+              "MHNH 2013.2.1.10",
+              "MHNH 2013.2.1.11",
+              "MHNH 2013.2.1.12"
             ],
             "specimen_type": "holotype",
             "institution": "Muséum d’Histoire Naturelle du Havre",
@@ -172856,10 +172882,10 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "TCM 2003"
+              "TCMI 2003.1.1"
             ],
             "specimen_type": "holotype",
-            "institution": "Muzeul Țării Crișurilor",
+            "institution": "The Children's Museum of Indianapolis",
             "material": "Surangular fused with articular",
             "completeness": "fragmentary"
           },
@@ -179778,13 +179804,14 @@
           },
           "location": {
             "country": "IN",
-            "locality": "Rahioli Village",
+            "locality": "Rahioli village",
             "region": "Gujarat",
             "formation": "Lameta",
             "coordinates": [
-              23.057222,
-              73.341942
+              23.057278,
+              73.341889
             ],
+            "notes": "The coordinate Novas and colleagues (2010) print here is the figure Wilson and colleagues (2003) give for Temple Hill, which Novas places 400 meters northwest of this quarry.",
             "region_code": "IN-GJ"
           },
           "type_specimen": {
@@ -179874,6 +179901,17 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25021-2",
           "notes": "Source of the hip height estimate, and the appearance features."
+        },
+        {
+          "id": "wilson2003a",
+          "authors": "Wilson, J. A.; Sereno, P. C.; Srivastava, S.; Bhatt, D. K.; Khosla, A.; Sahni, A.",
+          "year": 2003,
+          "title": "A new abelisaurid (Dinosauria, Theropoda) from the Lameta Formation (Cretaceous, Maastrichtian) of India",
+          "journal": "Contributions from the Museum of Paleontology, University of Michigan",
+          "volume": "31",
+          "issue": "1",
+          "pages": "1-42",
+          "notes": "Source of the Temple Hill coordinate."
         }
       ],
       "taxonomy": [
@@ -179986,12 +180024,9 @@
           },
           "location": {
             "country": "MG",
+            "locality": "MAD 93-18",
             "region": "Mahajanga",
             "formation": "Maevarano",
-            "coordinates": [
-              -15.9,
-              46.583332
-            ],
             "region_code": "MG-M"
           },
           "type_specimen": {
@@ -180213,12 +180248,12 @@
           },
           "location": {
             "country": "IN",
-            "locality": "Temple Hill, Rahioli (cgl)",
+            "locality": "Temple Hill, near Rahioli",
             "region": "Gujarat",
             "formation": "Lameta",
             "coordinates": [
-              23.057222,
-              73.341942
+              23.057278,
+              73.341889
             ],
             "region_code": "IN-GJ"
           },
@@ -180383,10 +180418,6 @@
             "locality": "Lightning Ridge",
             "region": "New South Wales",
             "formation": "Griman Creek",
-            "coordinates": [
-              -29.4333,
-              147.983307
-            ],
             "region_code": "AU-NSW"
           },
           "size": {
@@ -180540,12 +180571,10 @@
           },
           "location": {
             "country": "MG",
+            "locality": "MAD 96-02",
             "region": "Mahajanga",
             "formation": "Maevarano",
-            "coordinates": [
-              -15.9,
-              46.583328
-            ],
+            "member": "Anembalemba",
             "region_code": "MG-M"
           },
           "type_specimen": {
@@ -180735,14 +180764,7 @@
             "to_ma": 66
           },
           "location": {
-            "country": "CN",
-            "region": "Inner Mongolia",
-            "formation": "Unknown (provenance uncertain)",
-            "coordinates": [
-              41.333332,
-              119.666664
-            ],
-            "region_code": "CN-NM"
+            "notes": "The holotype reached science through the fossil trade with no collection record. Sereno and colleagues (2009) place it in the Lujiatun Beds of the Yixian Formation at the Liaoning-Nei Mongol border, near 41°20′N 119°40′E, resting the age on a fish centrum they call cf. Lycoptera. Fowler and colleagues (2011) show that centrum is an ellimmichthyiform rather than Lycoptera, and report from both seller and buyer that the specimen was sold as a Mongolian juvenile Tarbosaurus. They conclude the provenance is unknown."
           },
           "type_specimen": {
             "specimen_id": [
@@ -180895,13 +180917,9 @@
           },
           "location": {
             "country": "TH",
-            "locality": "Ban Pong Malaengwan",
+            "locality": "Khok Kruat Subdistrict",
             "region": "Nakhon Ratchasima",
             "formation": "Khok Kruat",
-            "coordinates": [
-              14.8873,
-              101.973801
-            ],
             "region_code": "TH-30"
           },
           "type_specimen": {
@@ -181041,14 +181059,12 @@
           },
           "location": {
             "country": "CA",
-            "locality": "Quarry 28, Steveville",
+            "locality": "Quarry Q028",
             "region": "Alberta",
             "formation": "Dinosaur Park",
-            "coordinates": [
-              50.8064,
-              -111.626389
-            ],
-            "region_code": "CA-AB"
+            "part": "lower",
+            "region_code": "CA-AB",
+            "part_of": "formation"
           },
           "type_specimen": {
             "specimen_id": [
@@ -181198,14 +181214,17 @@
           },
           "location": {
             "country": "AR",
-            "locality": "3 km south of Agrio del Medio",
+            "locality": "Agrio del Medio",
             "region": "Neuquén",
             "formation": "Candeleros",
+            "part": "upper",
             "coordinates": [
-              -38.352779,
+              -38.352778,
               -69.915833
             ],
-            "region_code": "AR-Q"
+            "notes": "The genus is named for the Rayoso Formation, which Bonaparte (1996) gave as the holotype's unit. Carballido and colleagues (2010) relocated the excavation site and matched the matrix adhering to the bones to the Candeleros on grain size, sorting and muddy matrix, ruling the Rayoso out.",
+            "region_code": "AR-Q",
+            "part_of": "formation"
           },
           "type_specimen": {
             "specimen_id": [
@@ -181381,13 +181400,10 @@
           },
           "location": {
             "country": "MA",
-            "locality": "southwest foot of Gara Sbâa",
+            "locality": "southwest foot of Gara Sbaa",
             "region": "Draa-Tafilalet",
+            "group": "Kem Kem",
             "formation": "Gara Sbaa",
-            "coordinates": [
-              30.505667,
-              -4.836939
-            ],
             "region_code": "MA-08"
           },
           "size": {
@@ -181542,15 +181558,13 @@
             "locality": "Waldron Flats",
             "region": "Alberta",
             "formation": "St. Mary River",
-            "coordinates": [
-              49.616112,
-              -114.106667
-            ],
-            "region_code": "CA-AB"
+            "part": "upper",
+            "region_code": "CA-AB",
+            "part_of": "formation"
           },
           "type_specimen": {
             "specimen_id": [
-              "TMP 2005"
+              "TMP 2005.055.0001"
             ],
             "specimen_type": "holotype",
             "institution": "Royal Tyrrell Museum of Paleontology",
@@ -181688,9 +181702,11 @@
           },
           "location": {
             "country": "GB",
-            "region": "England",
+            "locality": "Cuckfield",
+            "region": "West Sussex",
             "formation": "Tunbridge Wells Sand",
-            "region_code": "GB-ENG"
+            "member": "Grinstead Clay",
+            "region_code": "GB-WSX"
           },
           "size": {
             "length_m": {
@@ -181745,6 +181761,30 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25025-0",
           "notes": "Placement and assessment in the Princeton Encyclopedia of Dinosaurs."
+        },
+        {
+          "id": "naish2008a",
+          "authors": "Naish, D.; Martill, D. M.",
+          "year": 2008,
+          "title": "Dinosaurs of Great Britain and the role of the Geological Society of London in their discovery: Ornithischia",
+          "journal": "Journal of the Geological Society",
+          "publisher": "Geological Society of London",
+          "volume": "165",
+          "issue": "3",
+          "pages": "613-623",
+          "doi": "10.1144/0016-76492007-154",
+          "notes": "Places the dentary at Cuckfield and assigns it to the Grinstead Clay, while noting the exact horizon is unknown."
+        },
+        {
+          "id": "galton2009a",
+          "authors": "Galton, P. M.",
+          "year": 2009,
+          "title": "Notes on Neocomian (Lower Cretaceous) ornithopod dinosaurs from England - Hypsilophodon, Valdosaurus, \"Camptosaurus\", \"Iguanodon\" - and referred specimens from Romania and elsewhere",
+          "journal": "Revue de Paléobiologie, Genève",
+          "volume": "28",
+          "issue": "1",
+          "pages": "211-273",
+          "notes": "Gives Cuckfield for the same material and corrects the county to West Sussex."
         }
       ],
       "taxonomy": [
@@ -181814,6 +181854,14 @@
           "id": "47460199"
         }
       ],
+      "iczn_rulings": [
+        {
+          "type": "name-conservation",
+          "ruling": "iczn1988a",
+          "petition": "brinkmann1986a",
+          "notes": "Opinion 1483 used the plenary powers to suppress Rhabdodon Fleischmann, 1831, a snake genus and the senior homonym, for both priority and homonymy, and placed Rhabdodon Matheron, 1869 on the Official List of Generic Names in Zoology with Rhabdodon priscus as its type species by monotypy, the epithet corrected from the original priscum."
+        }
+      ],
       "synonyms": [
         {
           "name": "Oligosaurus",
@@ -181846,12 +181894,9 @@
           "location": {
             "country": "FR",
             "locality": "Tunnel de la Nerthe",
-            "region": "Provence-Alpes-Côte d'Azur",
-            "coordinates": [
-              43.3833,
-              5.3
-            ],
-            "region_code": "FR-PAC"
+            "region": "Bouches-du-Rhône",
+            "notes": "The units Norman (2004) and Weishampel and colleagues (2004) list for the species are genus-level distribution lists covering its other localities, not statements about the type locality.",
+            "region_code": "FR-13"
           },
           "type_specimen": {
             "specimen_id": [
@@ -181872,12 +181917,21 @@
               "max": 250
             }
           },
-          "erected_in": "matheron1869a",
+          "erected_in": "matheron1869b",
           "authors": "Matheron, P.",
           "described": 1869
         }
       ],
       "references": [
+        {
+          "id": "matheron1869b",
+          "authors": "Matheron, P.",
+          "year": 1869,
+          "title": "Note sur les reptiles fossiles des dépôts fluvio-lacustres crétacés du bassin à lignite de Fuveau [Note on the fossil reptiles from the Cretaceous fluvio-lacustrine deposits of the lignitic Fuveau Basin]",
+          "journal": "Bulletin de la Société Géologique de France, series 2",
+          "volume": "26",
+          "pages": "781-795"
+        },
         {
           "id": "matheron1869a",
           "authors": "Matheron, P.",
@@ -181885,7 +181939,28 @@
           "title": "Notice sur les reptiles fossiles des dépôts fluvio-lacustres crétacés du bassin à lignite de Fuveau [Notice on the fossil reptiles from the Cretaceous fluvio-lacustrine deposits of the lignitic Fuveau Basin]",
           "journal": "Mémoires de l'Académie des Sciences, Belles-Lettres, et Arts de Marseille",
           "volume": "1868-1869",
-          "pages": "345-379"
+          "pages": "345-379",
+          "notes": "The companion memoir, which spells the genus Rabdodon in its text. Opinion 1483 finds it was still in press when the Bulletin note appeared."
+        },
+        {
+          "id": "iczn1988a",
+          "authors": "International Commission on Zoological Nomenclature",
+          "year": 1988,
+          "title": "Opinion 1483. Rhabdodon Matheron, 1869 (Reptilia, Ornithischia): conserved",
+          "journal": "Bulletin of Zoological Nomenclature",
+          "volume": "45",
+          "pages": "85-86"
+        },
+        {
+          "id": "brinkmann1986a",
+          "authors": "Brinkmann, W.",
+          "year": 1986,
+          "title": "Rhabdodon Matheron, 1869 (Reptilia, Ornithischia): proposed conservation by suppression of Rhabdodon Fleischmann, 1831 (Reptilia, Serpentes)",
+          "journal": "Bulletin of Zoological Nomenclature",
+          "volume": "43",
+          "pages": "269-272",
+          "doi": "10.5962/bhl.part.447",
+          "notes": "Applied for the conservation, showing the senior homonym had been used once and was already a synonym of the Montpellier snake."
         },
         {
           "id": "norman2004a",
@@ -181904,6 +181979,26 @@
           "title": "The Princeton Field Guide to Dinosaurs (3rd ed.)",
           "publisher": "Princeton University Press",
           "notes": "Source of the appearance features."
+        },
+        {
+          "id": "czepiński2025a",
+          "authors": "Czepiński, Ł.; Madzia, D.",
+          "year": 2025,
+          "title": "Exploring the diversity and disparity of rhabdodontomorph ornithopods from the Late Cretaceous European archipelago",
+          "journal": "Scientific Reports",
+          "publisher": "Springer Science and Business Media LLC",
+          "volume": "15",
+          "issue": "1",
+          "doi": "10.1038/s41598-025-98083-z",
+          "notes": "Places the lectotype in the Lower Rognacian lacustrine marls at the Tunnel de la Nerthe, and gives the department as Bouches-du-Rhône."
+        },
+        {
+          "id": "weishampel2004a",
+          "authors": "Weishampel, D. B.; Dodson, P.; Osmólska, H.",
+          "year": 2004,
+          "title": "The Dinosauria, Second Edition",
+          "publisher": "University of California Press, Berkeley",
+          "notes": "Lists the species' occurrences by department, naming the Marnes Rouges Inférieures for the Aude and the Grès à Reptiles for Bouches-du-Rhône."
         }
       ],
       "taxonomy": [
@@ -181997,12 +182092,9 @@
           },
           "location": {
             "country": "US",
+            "locality": "Thompson Canyon",
             "region": "Utah",
             "formation": "Neslen",
-            "coordinates": [
-              38.963001,
-              -109.926003
-            ],
             "region_code": "US-UT"
           },
           "type_specimen": {
@@ -182145,13 +182237,10 @@
           },
           "location": {
             "country": "AU",
-            "locality": "Eurombah Creek, Durham Downs",
+            "locality": "Eurombah Creek, Taloona Station",
             "region": "Queensland",
-            "formation": "Walloon Coal Measures",
-            "coordinates": [
-              -26.083332,
-              149.050003
-            ],
+            "group": "Walloon Coal Measures",
+            "notes": "The type locality lay on Durham Downs Station when the holotype was collected and now lies on Taloona Station, the property having since been subdivided.",
             "region_code": "AU-QLD"
           },
           "size": {
@@ -182326,18 +182415,16 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Qiektai (Hudiesaurus referred forelimb locality)",
+            "locality": "Qiketai",
             "region": "Xinjiang",
             "formation": "Kalazha",
-            "coordinates": [
-              42.866669,
-              90.166672
-            ],
-            "region_code": "CN-XJ"
+            "part": "lower",
+            "region_code": "CN-XJ",
+            "part_of": "formation"
           },
           "type_specimen": {
             "specimen_id": [
-              "IVPP-V11121-1"
+              "IVPP V11121-1"
             ],
             "specimen_type": "holotype",
             "institution": "Institute of Vertebrate Paleontology and Paleoanthropology",
@@ -182479,13 +182566,8 @@
           },
           "location": {
             "country": "UA",
-            "locality": "Mt. Besh-Kosh, Crimea",
+            "locality": "summit of Besh-Kosh Mountain, east of Bakhchisaray",
             "region": "Autonomous Republic of Crimea",
-            "formation": "Unnamed (Bakhchysarai, Crimea)",
-            "coordinates": [
-              44.74609,
-              33.861565
-            ],
             "region_code": "UA-43"
           },
           "type_specimen": {
@@ -182675,8 +182757,8 @@
             "country": "CA",
             "locality": "Dinosaur Provincial Park",
             "region": "Alberta",
-            "formation": "Oldman",
-            "notes": "The Maastrichtian records of the genus are referred teeth, not the holotype; Currie et al. (1990) distinguish them explicitly, diagnosing the species \"in contrast with Maastrictian teeth of Richardoestesia\". Coordinates are not carried because the erecting paper locates the holotype only to a township section.",
+            "formation": "Dinosaur Park",
+            "notes": "Currie and colleagues (1990) locate the holotype only to a township section.",
             "region_code": "CA-AB"
           },
           "type_specimen": {
@@ -182771,6 +182853,19 @@
           "pages": "208-215",
           "doi": "10.1666/0022-3360(2001)075<0208:LCSDAF>2.0.CO;2",
           "notes": "Erects Richardoestesia isosceles on an isolated tooth (LSUMG 489:6238) from the Aguja Formation of Big Bend, Texas."
+        },
+        {
+          "id": "averianov2019b",
+          "authors": "Averianov, A. O.; Sues, H. D.",
+          "year": 2019,
+          "title": "Morphometric analysis of the teeth and taxonomy of the enigmatic theropod Richardoestesia from the Upper Cretaceous of Uzbekistan",
+          "journal": "Journal of Vertebrate Paleontology",
+          "publisher": "Informa UK Limited",
+          "volume": "39",
+          "issue": "3",
+          "pages": "e1614941",
+          "doi": "10.1080/02724634.2019.1614941",
+          "notes": "Places the holotype in the Campanian Dinosaur Park Formation."
         }
       ],
       "taxonomy": [
@@ -182856,18 +182951,14 @@
           },
           "location": {
             "country": "MN",
-            "locality": "Altan Ula II",
+            "locality": "Altan Uul II",
             "region": "Ömnögovi",
             "formation": "Nemegt",
-            "coordinates": [
-              43.572224,
-              100.477776
-            ],
             "region_code": "MN-053"
           },
           "type_specimen": {
             "specimen_id": [
-              "GI 100/32A"
+              "MPC-D 100/32-A"
             ],
             "specimen_type": "holotype",
             "institution": "Paleontological Center, Mongolian Academy of Sciences",
@@ -183029,10 +183120,7 @@
             "locality": "Cañadón Río Seco",
             "region": "Neuquén",
             "formation": "Bajo de la Carpa",
-            "coordinates": [
-              -37.383331,
-              -68.900002
-            ],
+            "notes": "The site's bearing from Rincón de los Sauces reverses between sources, two kilometers north in Calvo and González Riga (2003) and two kilometers south in Pérez-Moreno and colleagues (2023).",
             "region_code": "AR-Q"
           },
           "size": {
@@ -183052,12 +183140,13 @@
           "erected_in": "calvo2003a",
           "type_specimen": {
             "specimen_id": [
-              "MRS-Pv 26"
+              "MAU-Pv-CRS-26"
             ],
             "specimen_type": "holotype",
             "institution": "Museo Argentino Urquiza, Rincón de los Sauces",
-            "material": "13 articulated anterior-middle and middle-posterior caudal vertebrae and two ilia",
-            "completeness": "partial"
+            "material": "Eight articulated anterior and middle caudal vertebrae, six articulated posterior caudal vertebrae, and a right ilium",
+            "completeness": "partial",
+            "notes": "The right ilium was relabeled MAU-Pv-CRS-275/2 after publication and now carries both numbers, and a left ilium labeled MAU-Pv-CRS-275/1 was added to the material, neither change reported in print. Pérez-Moreno and colleagues (2023) cite the right ilium under its original number and keep it as the holotype's only ilium, treating the left one as a paratype, the original left ilium being unaccounted for. They present this as provisional until the history of the ilia is established."
           },
           "authors": "Calvo, J. O.; González Riga, B. J.",
           "described": 2003
@@ -183073,7 +183162,8 @@
           "publisher": "SciELO Agencia Nacional de Investigacion y Desarrollo (ANID)",
           "volume": "30",
           "issue": "2",
-          "doi": "10.4067/s0716-02082003000200011"
+          "doi": "10.4067/s0716-02082003000200011",
+          "notes": "Erects the species and assigns the type locality to the Río Neuquén Formation of the Neuquén Group."
         },
         {
           "id": "jones2026b",
@@ -183083,6 +183173,18 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25023-6",
           "notes": "Source of the hip height estimate."
+        },
+        {
+          "id": "pérezmoreno2023a",
+          "authors": "Pérez-Moreno, A.; Otero, A.; Carballido, J. L.; Salgado, L.; Calvo, J. O.",
+          "year": 2023,
+          "title": "The appendicular skeleton of Rinconsaurus caudamirus (Sauropoda: Titanosauria) from the Upper Cretaceous of Patagonia, Argentina",
+          "journal": "Cretaceous Research",
+          "publisher": "Elsevier BV",
+          "volume": "142",
+          "pages": "105389",
+          "doi": "10.1016/j.cretres.2022.105389",
+          "notes": "Reports the horizon as the base of the Bajo de la Carpa Formation, and revises the type series, excluding the supposed prefrontal as a notosuchian ilium."
         }
       ],
       "taxonomy": [
@@ -183186,14 +183288,11 @@
           },
           "location": {
             "country": "AR",
-            "locality": "ruta 26, Los Colorados",
             "region": "La Rioja",
             "formation": "Los Colorados",
-            "coordinates": [
-              -29.783501,
-              -67.933327
-            ],
-            "region_code": "AR-F"
+            "part": "upper",
+            "region_code": "AR-F",
+            "part_of": "formation"
           },
           "type_specimen": {
             "specimen_id": [
@@ -183334,14 +183433,10 @@
           },
           "location": {
             "country": "ES",
-            "locality": "Virgen del Villar-1, Igea",
+            "locality": "Virgen del Villar-1",
             "region": "La Rioja",
             "group": "Enciso",
-            "coordinates": [
-              42.048691,
-              -2.02641
-            ],
-            "region_code": "ES-RI"
+            "region_code": "ES-LO"
           },
           "size": {
             "length_m": {
@@ -183519,22 +183614,23 @@
           "location": {
             "country": "GB",
             "locality": "east of Chilton Chine",
-            "region": "England",
+            "region": "Isle of Wight",
             "formation": "Wessex",
-            "coordinates": [
-              50.640491,
-              -1.433957
-            ],
-            "region_code": "GB-ENG"
+            "region_code": "GB-IOW"
           },
           "erected_in": "barker2021a",
           "type_specimen": {
             "specimen_id": [
-              "IWCMS 2014.95.6"
+              "IWCMS 2014.95.6",
+              "IWCMS 2014.96.1",
+              "IWCMS 2014.96.2",
+              "IWCMS 2014.96.3",
+              "IWCMS 2020.448.1",
+              "IWCMS 2020.448.2"
             ],
             "specimen_type": "holotype",
             "institution": "Dinosaur Isle Museum",
-            "material": "Partial skull",
+            "material": "Associated premaxillary bodies, a disarticulated braincase, and a left preorbital fragment preserving partial lacrimal and prefrontal.",
             "completeness": "partial"
           },
           "authors": "Barker, C. T.; Hone, D. W. E.; Naish, D.; Cau, A.; Lockwood, J. A. F.; Foster, B.; Clarkin, C. E.; Schneider, P.; Gostling, N. J.",
@@ -183703,11 +183799,9 @@
             "locality": "Salitral Moreno",
             "region": "Río Negro",
             "formation": "Allen",
-            "coordinates": [
-              -39.296665,
-              -67.534164
-            ],
-            "region_code": "AR-R"
+            "part": "lower",
+            "region_code": "AR-R",
+            "part_of": "formation"
           },
           "type_specimen": {
             "specimen_id": [
@@ -183839,14 +183933,12 @@
           },
           "location": {
             "country": "DE",
-            "locality": "Grossen Gleichberg, Römhild",
+            "locality": "Grosser Gleichberg, near Römhild",
             "region": "Thuringia",
-            "formation": "Trossingen",
-            "coordinates": [
-              50.383301,
-              10.55
-            ],
-            "region_code": "DE-TH"
+            "formation": "Arnstadt",
+            "part": "upper",
+            "region_code": "DE-TH",
+            "part_of": "formation"
           },
           "size": {
             "length_m": {
@@ -183983,12 +184075,10 @@
           },
           "location": {
             "country": "US",
+            "locality": "Middle Dome",
             "region": "Montana",
             "formation": "Cloverly",
-            "coordinates": [
-              46.298439,
-              -109.712097
-            ],
+            "member": "Himes",
             "region_code": "US-MT"
           },
           "size": {
@@ -184120,10 +184210,6 @@
             "locality": "Iguidi",
             "region": "Agadez",
             "formation": "Echkar",
-            "coordinates": [
-              17.933332,
-              5.616667
-            ],
             "region_code": "NE-1"
           },
           "type_specimen": {
@@ -184273,10 +184359,6 @@
             "locality": "Batuyingzi, Beipiao",
             "region": "Liaoning",
             "formation": "Yixian",
-            "coordinates": [
-              41.469719,
-              120.756104
-            ],
             "region_code": "CN-LN"
           },
           "size": {
@@ -184425,13 +184507,10 @@
           "location": {
             "country": "TZ",
             "locality": "Namba 2",
-            "region": "Mbeya",
+            "region": "Songwe",
             "formation": "Galula",
-            "coordinates": [
-              -8.7,
-              32.700001
-            ],
-            "region_code": "TZ-14"
+            "member": "Namba",
+            "region_code": "TZ-31"
           },
           "size": {
             "weight_kg": {
@@ -184584,10 +184663,6 @@
             "locality": "Shengshuigou, Shaping village",
             "region": "Henan",
             "formation": "Haoling",
-            "coordinates": [
-              34.112,
-              112.589302
-            ],
             "region_code": "CN-HA"
           },
           "size": {
@@ -184628,7 +184703,8 @@
           "journal": "Geological Bulletin of China",
           "volume": "28",
           "issue": "1",
-          "pages": "1-10"
+          "pages": "1-10",
+          "notes": "Erects the species and gives the unit as the Mangchuan Formation."
         },
         {
           "id": "jones2026b",
@@ -184650,6 +184726,18 @@
           "pages": "191057",
           "doi": "10.1098/rsos.191057",
           "notes": "Rescored Ruyangosaurus; recovered as a 'basal' titanosaur under equal weights and a non-titanosaurian euhelopodid under implied weighting."
+        },
+        {
+          "id": "lü2013b",
+          "authors": "Lü, J.; Xu, L.; Pu, H.; Zhang, X.; Zhang, Y.; Jia, S.; Chang, H.; Zhang, J.; Wei, X.",
+          "year": 2013,
+          "title": "A new sauropod dinosaur (Dinosauria, Sauropoda) from the late Early Cretaceous of the Ruyang Basin (central China)",
+          "journal": "Cretaceous Research",
+          "publisher": "Elsevier BV",
+          "volume": "44",
+          "pages": "202-213",
+          "doi": "10.1016/j.cretres.2013.04.009",
+          "notes": "Reports the Mangchuan Formation subdivided into the Xiahedong, Haoling and Shangdonggou formations, and places the Ruyang Basin dinosaurs, this species among them, in the Haoling."
         }
       ],
       "taxonomy": [
@@ -224350,7 +224438,9 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "IWCMS 2020"
+              "IWCMS 2019.84",
+              "IWCMS 2020.400",
+              "IWCMS 2020.407"
             ],
             "specimen_type": "holotype",
             "institution": "Dinosaur Isle Museum",
@@ -224477,7 +224567,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "IWCMS 2023"
+              "IWCMS 2023.102"
             ],
             "specimen_type": "holotype",
             "institution": "Dinosaur Isle Museum",
