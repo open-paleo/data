@@ -3073,6 +3073,51 @@ for (const [filePath, doc] of genusParsed)
     }
 }
 
+// 30. Comment-eaten scalars — YAML starts a comment at a space followed by "#",
+// so an unquoted plain scalar containing " #" silently loses everything from
+// there on. The loss happens at parse time, which is why no other check sees
+// it: they all read the parsed document, where the tail is already gone. Five
+// localities shipped truncated this way before it was noticed -- Emiliasaura
+// reached dist/ as the single word "Quarry" where the file says
+// "Quarry #1, Paraje Pilmatue". The fix is always to quote the value.
+startCheck("Comment-eaten scalars");
+
+// A plain scalar is one that does not open with a quote or a block indicator.
+const commentEatenScalar = /^(\s*)([a-z_]+): (?![-"'|>&*!#])(.*\s#.*)$/;
+
+for (const filePath of [...genusFiles, ...cladeFiles, ...referenceStoreFiles])
+{
+    let lines: Array<string>;
+
+    try
+    {
+        lines = fs.readFileSync(filePath, "utf8").split("\n");
+    }
+    catch
+    {
+        continue;
+    }
+
+    for (const [index, line] of lines.entries())
+    {
+        const match = commentEatenScalar.exec(line);
+
+        if (match === null)
+        {
+            continue;
+        }
+
+        const [, , key, value] = match;
+        const kept = value.split(/\s#/)[0];
+
+        checkError(
+            "Comment-eaten scalars",
+            filePath,
+            `line ${index + 1}: '${key}' loses everything from " #" onward — ` +
+            `YAML reads it as "${kept}". Quote the value.`);
+    }
+}
+
 // Output
 
 console.log("Validating Open Paleo data...\n");
