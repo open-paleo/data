@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-09-04T03:35:05.222Z
+  built_at: 2026-09-07T02:36:06.183Z
   clade_count: 188
   genus_count: 1422
   license: CC-BY-4.0
@@ -62311,7 +62311,7 @@ genera:
           to_ma: 132.6
         location:
           country: AR
-          locality: Quarry
+          locality: "Quarry #1, Paraje Pilmatué"
           region: Neuquén
           formation: Mulichinco
           coordinates:
@@ -146819,12 +146819,9 @@ genera:
           to_ma: 72.2
         location:
           country: CA
-          locality: Quarry 140, Steveville
+          locality: Quarry 140
           region: Alberta
           formation: Dinosaur Park
-          coordinates:
-            - 50.748589
-            - -111.406532
           region_code: CA-AB
         type_specimen:
           specimen_id:
@@ -146869,7 +146866,7 @@ genera:
           region: New Mexico
           formation: Kirtland
           member: De-na-zin
-          locality: Hunter Wash (SMP locality 311), San Juan Basin
+          locality: Hunter Wash (SMP locality 311)
           region_code: US-NM
         type_specimen:
           specimen_id:
@@ -146984,12 +146981,12 @@ genera:
           to_ma: 89.8
         location:
           country: AU
+          locality: AODL 82, Ho-Hum Site, Belmont Station
           region: Queensland
           formation: Winton
-          coordinates:
-            - -22.348333
-            - 143.089172
+          part: upper
           region_code: AU-QLD
+          part_of: formation
         size:
           hip_height_m:
             min: 2.9
@@ -147128,13 +147125,9 @@ genera:
           to_ma: 161.5
         location:
           country: CN
-          locality: Daohugou
-          region: Inner Mongolia
-          formation: Haifanggou
-          coordinates:
-            - 41.316387
-            - 119.238609
-          region_code: CN-NM
+          region: Liaoning
+          notes: The holotype reached science through private fossil dealers who recorded no geological data. Czerkas and Yuan (2002) report it from the Dawangzhanzi site near Lingyuan in western Liaoning, in the basal Yixian Formation, while later work places the taxon at Daohugou in Inner Mongolia or in the Tiaojishan. The Daohugou attribution matches the locality of Epidendrosaurus, a specimen often treated as the same taxon but cataloged separately.
+          region_code: CN-LN
         type_specimen:
           specimen_id:
             - CAGS02-IG-gausa-1
@@ -147252,14 +147245,11 @@ genera:
           to_ma: 192.9
         location:
           country: GB
-          locality: Scelidosaurus juvenile, Charmouth beach
-          region: England
+          locality: The Spittles-Black Ven, between Charmouth and Lyme Regis
+          region: Dorset
           formation: Charmouth Mudstone
           member: Black Ven Marl
-          coordinates:
-            - 50.75
-            - -2.916667
-          region_code: GB-ENG
+          region_code: GB-DOR
         size:
           hip_height_m:
             min: 0.8
@@ -147449,8 +147439,9 @@ genera:
           locality: Santierge, Schleitheim
           region: Schaffhausen
           formation: Klettgau
+          member: Gruhalde
           coordinates:
-            - 47.741669
+            - 47.741667
             - 8.486944
           region_code: CH-SH
         type_specimen:
@@ -147557,13 +147548,12 @@ genera:
           to_ma: 100.5
         location:
           country: IT
-          locality: La Cavere, Pietraroja
-          region: Campania
-          formation: Pietraroja
+          locality: Le Cavere quarry, Pietraroja
+          region: Benevento
           coordinates:
-            - 41.347778
-            - 14.548056
-          region_code: IT-72
+            - 41.347828
+            - 14.548147
+          region_code: IT-BN
         type_specimen:
           specimen_id:
             - SBA-SA 163760
@@ -147695,9 +147685,6 @@ genera:
           locality: Rygol Quarry, Painten
           region: Bavaria
           formation: Torleite
-          coordinates:
-            - 49.007839
-            - 11.826369
           region_code: DE-BY
         type_specimen:
           specimen_id:
@@ -147822,13 +147809,15 @@ genera:
           to_ma: 72.2
         location:
           country: CA
-          locality: Quarry 80, Deadlodge Canyon
+          locality: Dead Lodge Canyon
           region: Alberta
           formation: Dinosaur Park
+          part: lower
           coordinates:
-            - 50.748589
-            - -111.406532
+            - 50.751968
+            - -111.405922
           region_code: CA-AB
+          part_of: formation
         size:
           hip_height_m:
             min: 1.3
@@ -147863,10 +147852,12 @@ genera:
           to_ma: 72.2
         location:
           country: CA
+          locality: Sternberg Quarry 112, Red Deer River
           region: Alberta
           formation: Dinosaur Park
-          locality: Sternberg Quarry 112, Red Deer River (~40 m above the Oldman contact)
+          part: upper
           region_code: CA-AB
+          part_of: formation
         type_specimen:
           specimen_id:
             - ROM 1930
@@ -147981,12 +147972,8 @@ genera:
           to_ma: 184.2
         location:
           country: US
-          locality: West Moenkopi Plateau
           region: Arizona
           formation: Kayenta
-          coordinates:
-            - 35.679169
-            - -111.027779
           region_code: US-AZ
         size:
           hip_height_m:
@@ -148078,12 +148065,9 @@ genera:
           to_ma: 66
         location:
           country: AR
-          locality: Lago Colhue Huapi, Rio Chico
+          locality: Río Chico
           region: Chubut
           formation: Lago Colhué Huapi
-          coordinates:
-            - -45.61972
-            - -68.50972
           region_code: AR-U
         size:
           weight_kg:
@@ -148123,6 +148107,15 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
         notes: Source of the mass and hip height estimates.
+      - id: casal2015a
+        authors: Casal, G. A.; Allard, J. O.; Foix, N.
+        year: 2015
+        title: "Análisis estratigráfico y paleontológico de afloramientos del Cretácico Superior en la cuenca del Golfo San Jorge: propuesta de nueva unidad litoestratigráfica para el Grupo Chubut"
+        journal: Revista de la Asociación Geológica Argentina
+        volume: "72"
+        issue: "1"
+        pages: 81-99
+        notes: Erects the Lago Colhué Huapi Formation for the headwaters-of-the-Río-Chico strata that produced the holotype, and places the site about 4 km from the mouth of the Río Chico.
     taxonomy:
       - Life
       - Animalia
@@ -148195,12 +148188,9 @@ genera:
           to_ma: 199.5
         location:
           country: ZA
-          locality: Zastron
+          locality: near the town of Zastron
           region: Free State
           formation: Elliot
-          coordinates:
-            - -30.299999
-            - 27.083332
           region_code: ZA-FS
         size:
           length_m:
@@ -148307,7 +148297,7 @@ genera:
           to_ma: 174.7
         location:
           country: US
-          locality: Keet Seel, Segi Canyon
+          locality: UCMP locality V338
           region: Arizona
           formation: Navajo Sandstone
           coordinates:
@@ -148414,12 +148404,9 @@ genera:
           to_ma: 89.8
         location:
           country: MN
-          locality: Amtgay
+          locality: Amtgai
           region: Ömnögovi
-          formation: Baynshire
-          coordinates:
-            - 43.144169
-            - 107.518059
+          formation: Bayanshiree
           region_code: MN-053
         type_specimen:
           specimen_id:
@@ -148537,13 +148524,12 @@ genera:
           to_ma: 174.7
         location:
           country: US
-          locality: Eagle's Nest
+          locality: UMNH VP Locality 191
           region: Utah
           formation: Navajo Sandstone
-          coordinates:
-            - 37.366669
-            - -109.633331
+          part: lower
           region_code: US-UT
+          part_of: formation
         type_specimen:
           specimen_id:
             - UMNH VP 18040
@@ -148673,7 +148659,7 @@ genera:
           formation: Lago Colhué Huapi
           coordinates:
             - -45.597778
-            - -68.622223
+            - -68.622222
           region_code: AR-U
         type_specimen:
           specimen_id:
@@ -148778,12 +148764,12 @@ genera:
           to_ma: 113.2
         location:
           country: AU
-          locality: The Arch, Kilcunda
+          locality: The Arch
           region: Victoria
-          formation: '"Wonthaggi"'
+          formation: Wonthaggi
           coordinates:
-            - -38.548332
-            - 145.457779
+            - -38.548333
+            - 145.458056
           region_code: AU-VIC
         type_specimen:
           specimen_id:
@@ -148869,12 +148855,9 @@ genera:
           to_ma: 154.8
         location:
           country: CN
-          locality: Daxishan
+          locality: Daxishan village, Linglongta
           region: Liaoning
           formation: Tiaojishan
-          coordinates:
-            - 40.916668
-            - 119.650002
           region_code: CN-LN
         size:
           length_m:
@@ -148996,12 +148979,9 @@ genera:
           to_ma: 100.5
         location:
           country: MN
-          locality: Chamrin-Us
+          locality: Khamryn-Us
           region: Dornogovi
-          formation: Dzunbain
-          coordinates:
-            - 43.883999
-            - 111.431
+          formation: Zuunbayan
           region_code: MN-063
         size:
           hip_height_m:
@@ -149037,6 +149017,17 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
         notes: Source of the hip height estimate, and the appearance features.
+      - id: arbour2015a
+        authors: Arbour, V. M.; Currie, P. J.
+        year: 2015
+        title: Systematics, phylogeny and palaeobiogeography of the ankylosaurid dinosaurs
+        journal: Journal of Systematic Palaeontology
+        publisher: Informa UK Limited
+        volume: "14"
+        issue: "5"
+        pages: 385-444
+        doi: 10.1080/14772019.2015.1059985
+        notes: Gives the holotype locality as Khamryn-Us and treats Dzunbain as an older transliteration of the Zuunbayan Formation.
     taxonomy:
       - Life
       - Animalia
@@ -149103,12 +149094,9 @@ genera:
           to_ma: 121.4
         location:
           country: MN
-          locality: northeastern end, Öösh locality
+          locality: Öösh
           region: Övörkhangai
           formation: Öösh
-          coordinates:
-            - 44.241501
-            - 102.733299
           region_code: MN-055
         type_specimen:
           specimen_id:
@@ -149243,13 +149231,12 @@ genera:
           to_ma: 66
         location:
           country: CN
-          locality: Longgujian Quarry (Location
+          locality: Longgujian
           region: Shandong
           formation: Hongtuya
-          coordinates:
-            - 35.956108
-            - 119.326942
+          part: lower
           region_code: CN-SD
+          part_of: formation
         size:
           hip_height_m:
             min: 4.6
@@ -149370,10 +149357,9 @@ genera:
           locality: Niupanggou
           region: Shaanxi
           formation: Shanyang
-          coordinates:
-            - 33.65221
-            - 109.901367
+          part: upper
           region_code: CN-SN
+          part_of: formation
         type_specimen:
           specimen_id:
             - NWUV 1111
@@ -149499,9 +149485,6 @@ genera:
           locality: Maortu
           region: Inner Mongolia
           formation: Miaogou
-          coordinates:
-            - 40.301338
-            - 105.943283
           region_code: CN-NM
         size:
           hip_height_m:
@@ -149653,13 +149636,12 @@ genera:
           to_ma: 113.2
         location:
           country: CN
-          locality: Sihetun, lower Yixian
+          locality: Sihetun
           region: Liaoning
           formation: Yixian
-          coordinates:
-            - 41.601398
-            - 120.8722
+          part: lower
           region_code: CN-LN
+          part_of: formation
         type_specimen:
           specimen_id:
             - NGMC 97-4-002
@@ -149780,12 +149762,9 @@ genera:
           to_ma: 168.2
         location:
           country: CN
-          locality: Quarry 1, Lao Chang Qing
+          locality: Quarry 1, Laochangjing
           region: Yunnan
           formation: Chuanjie
-          coordinates:
-            - 24.9725
-            - 102.076111
           region_code: CN-YN
         type_specimen:
           specimen_id:
@@ -149910,13 +149889,14 @@ genera:
           to_ma: 72.2
         location:
           country: TZ
-          locality: TZ-07, Rukwa Valley
-          region: Mbeya
+          locality: TZ-07
+          region: Songwe
           formation: Galula
+          member: Namba
           coordinates:
             - -8.933333
-            - 33.200001
-          region_code: TZ-14
+            - 33.2
+          region_code: TZ-31
         size:
           weight_kg:
             min: 3000
@@ -150036,12 +150016,9 @@ genera:
           to_ma: 154.8
         location:
           country: CN
-          locality: Shishugounykus site, Wucaiwan
+          locality: Wucaiwan
           region: Xinjiang
           formation: Shishugou
-          coordinates:
-            - 45.171223
-            - 88.9217
           region_code: CN-XJ
         size:
           length_m:
@@ -150171,12 +150148,9 @@ genera:
           to_ma: 66
         location:
           country: CN
-          locality: Luyuan, Shixing
+          locality: Luyuan
           region: Guangdong
           formation: Pingling
-          coordinates:
-            - 24.950001
-            - 114.066704
           region_code: CN-GD
         size:
           length_m:
@@ -150296,9 +150270,6 @@ genera:
           locality: Khulsan
           region: Ömnögovi
           formation: Baruungoyot
-          coordinates:
-            - 43.488609
-            - 101.145554
           region_code: MN-053
         type_specimen:
           specimen_id:
@@ -150325,11 +150296,8 @@ genera:
           country: MN
           locality: Ukhaa Tolgod
           region: Ömnögovi
-          formation: Djadokhta
-          coordinates:
-            - 43.664444
-            - 100.901947
-          notes: The locality is inferred, not recorded. Moutrille et al. (2025) state that "the exact locality of the specimen is unknown" and refer it to Ukhaa Tolgod tentatively, from documentation accompanying the specimen rather than from field data.
+          formation: Djadochta
+          notes: Moutrille and colleagues (2025) state that "the exact locality of the specimen is unknown" and refer it to Ukhaa Tolgod tentatively, from documentation accompanying the specimen rather than from field data; they name Bayan Zag as an alternative Djadochtan locality it may have come from.
           region_code: MN-053
         diagnostic_features:
           - Middle cervical centra subequal in length (fifth centrum 125% longer than the sixth in S. devi)
@@ -150456,10 +150424,9 @@ genera:
           region: Yunnan
           locality: Liuna Village, Anlongbao Town
           formation: Fengjiahe
-          coordinates:
-            - 24.686272
-            - 101.63839
+          part: lower
           region_code: CN-YN
+          part_of: formation
         size:
           skull_length_m:
             min: 0.54
@@ -150566,12 +150533,12 @@ genera:
           to_ma: 93.9
         location:
           country: CN
-          locality: Shuangmiao, Beipiao
+          locality: Shuangmiao Village, Beipiao
           region: Liaoning
           formation: Sunjiawan
           coordinates:
-            - 41.772778
-            - 120.792221
+            - 41.711111
+            - 120.713611
           region_code: CN-LN
         type_specimen:
           specimen_id:
@@ -150611,6 +150578,15 @@ genera:
         pages: "104334"
         doi: 10.1016/j.cretres.2019.104334
         notes: Recovered Shuangmiaosaurus as a successive outgroup near Hadrosauridae in one of two analytical runs.
+      - id: dong2002a
+        authors: Dong, Z.
+        year: 2002
+        title: A new armored dinosaur (Ankylosauria) from Beipiao Basin, Liaoning Province, northeastern China
+        journal: Vertebrata PalAsiatica
+        volume: "40"
+        issue: "4"
+        pages: 276-285
+        notes: Gives a GPS fix for the Shuangmiao locality, and places it in Xiafu Township, Beipiao City.
     taxonomy:
       - Life
       - Animalia
@@ -150687,13 +150663,10 @@ genera:
           to_ma: 154.8
         location:
           country: CN
-          locality: Dashanpu Dinosaur Quarry (Lower)
+          locality: Dashanpu
           region: Sichuan
           formation: Shaximiao
           part: lower
-          coordinates:
-            - 29.411388
-            - 104.852501
           region_code: CN-SC
           part_of: formation
         type_specimen:
@@ -150808,10 +150781,7 @@ genera:
           country: MN
           locality: Ukhaa Tolgod
           region: Ömnögovi
-          formation: Djadokhta
-          coordinates:
-            - 43.664444
-            - 100.901947
+          formation: Djadochta
           region_code: MN-053
         type_specimen:
           specimen_id:
@@ -150946,9 +150916,7 @@ genera:
           locality: Ban Saphan Hin
           region: Nakhon Ratchasima
           formation: Khok Kruat
-          coordinates:
-            - 14.866667
-            - 102.733299
+          notes: Shibata and colleagues (2015) record that Jintasakul, a co-author, holds the site to be Ban Nong Rangka in the adjacent subdistrict rather than Ban Saphan Hin.
           region_code: TH-30
         type_specimen:
           specimen_id:
@@ -150991,6 +150959,17 @@ genera:
         pages: 92-189
         doi: 10.1111/zoj.12193
         notes: Considered Siamodon a nomen dubium pending more material.
+      - id: shibata2015a
+        authors: Shibata, M.; Jintasakul, P.; Azuma, Y.; You, H. L.
+        year: 2015
+        title: A New Basal Hadrosauroid Dinosaur from the Lower Cretaceous Khok Kruat Formation in Nakhon Ratchasima Province, Northeastern Thailand
+        journal: PLOS ONE
+        publisher: Public Library of Science (PLoS)
+        volume: "10"
+        issue: "12"
+        pages: e0145904
+        doi: 10.1371/journal.pone.0145904
+        notes: Records a co-author's dispute over the type locality, holding it to be Ban Nong Rangka rather than Ban Saphan Hin.
     taxonomy:
       - Life
       - Animalia
@@ -151058,11 +151037,9 @@ genera:
           to_ma: 125.77
         location:
           country: TH
+          locality: Phu Wiang
           region: Khon Kaen
           formation: Sao Khua
-          coordinates:
-            - 16.683332
-            - 102.25
           region_code: TH-40
         size:
           length_m:
@@ -151244,7 +151221,7 @@ genera:
           region: Khon Kaen
           formation: Sao Khua
           coordinates:
-            - 16.700001
+            - 16.666667
             - 102.25
           region_code: TH-40
         size:
@@ -151383,12 +151360,9 @@ genera:
           to_ma: 113.2
         location:
           country: TH
-          locality: Ban Pong Malaengwan
+          locality: Ban Saphan Hin
           region: Nakhon Ratchasima
           formation: Khok Kruat
-          coordinates:
-            - 14.8873
-            - 101.973801
           region_code: TH-30
         type_specimen:
           specimen_id:
@@ -151509,13 +151483,10 @@ genera:
           to_ma: 93.9
         location:
           country: US
-          locality: Lindsay's Site
+          locality: Emery County
           region: Utah
           formation: Cedar Mountain
           member: Mussentuchit
-          coordinates:
-            - 38.900002
-            - -111.690002
           region_code: US-UT
         type_specimen:
           specimen_id:
@@ -151633,12 +151604,12 @@ genera:
           to_ma: 113.2
         location:
           country: RU
-          locality: Shestakovo-1
+          locality: Shestakovo 1
           region: Kemerovo
           formation: Ilek
           coordinates:
-            - 55.903332
-            - 87.957779
+            - 55.908194
+            - 87.951806
           region_code: RU-KEM
         type_specimen:
           specimen_id:
@@ -151749,10 +151720,9 @@ genera:
           locality: Barda Atravesada de Las Campanas
           region: Neuquén
           formation: Huincul
-          coordinates:
-            - -39.319721
-            - -68.948059
+          part: lower
           region_code: AR-Q
+          part_of: formation
         size:
           length_m:
             min: 18
@@ -151847,12 +151817,9 @@ genera:
           to_ma: 66
         location:
           country: US
-          locality: Armendaris Ranch
+          locality: NMMNH Locality 3650, Armendaris Ranch
           region: New Mexico
           formation: Hall Lake
-          coordinates:
-            - 33.154167
-            - -107.192223
           region_code: US-NM
         type_specimen:
           specimen_id:
@@ -151958,7 +151925,7 @@ genera:
           to_ma: 93.9
         location:
           country: MA
-          locality: Kem Kem area, probably near Taouz
+          locality: Taouz
           region: Draa-Tafilalet
           group: Kem Kem
           region_code: MA-08
@@ -152125,9 +152092,7 @@ genera:
           country: CN
           region: Gansu
           formation: Zhonggou
-          coordinates:
-            - 41.575001
-            - 97.583336
+          notes: You and colleagues (2014) report that fieldwork in 2010 and 2011 confirmed the dinosaur-bearing Xinminpu Group of the Mazongshan area to be the Zhonggou Formation, citing a personal communication rather than a published section. Tang and colleagues (2001) instead divide the same strata into three informal units and place the area's hypsilophodontid material in the upper part of the Lower Red Unit.
           region_code: CN-GS
         type_specimen:
           specimen_id:
@@ -152178,6 +152143,14 @@ genera:
         pages: "2346577"
         doi: 10.1080/14772019.2024.2346577
         notes: Found the teeth comparable to both ornithopods and ceratopsians and placed Siluosaurus no more precisely than Cerapoda indeterminate.
+      - id: you2014a
+        authors: You, H. L.; Li, D. Q.; Dodson, P.
+        year: 2014
+        title: "Gongpoquansaurus mazongshanensis (Lü, 1997) comb. nov. (Ornithischia: Hadrosauroidea) from the Early Cretaceous of Gansu Province, northwestern China"
+        journal: Hadrosaurs
+        publisher: Indiana University Press
+        pages: 73-76
+        notes: Reports fieldwork in 2010 and 2011 confirming the dinosaur-bearing Xinminpu Group of the Mazongshan area as the Zhonggou Formation.
     taxonomy:
       - Life
       - Animalia
@@ -152232,12 +152205,9 @@ genera:
           to_ma: 132.6
         location:
           country: CN
-          locality: Hami (locality)
+          locality: Hami
           region: Xinjiang
           formation: Shengjinkou
-          coordinates:
-            - 42.75
-            - 92.5
           region_code: CN-XJ
         type_specimen:
           specimen_id:
@@ -152352,12 +152322,10 @@ genera:
           to_ma: 100.5
         location:
           country: US
-          locality: Condray Farm nodosaur
+          locality: Condray's farm, ten miles south of Miltonvale
           region: Kansas
           formation: Dakota
-          coordinates:
-            - 39.198002
-            - -97.454498
+          member: Terra Cotta
           region_code: US-KS
         type_specimen:
           specimen_id:
@@ -152461,12 +152429,9 @@ genera:
           to_ma: 113.2
         location:
           country: CN
-          locality: Xierhuqiao, Yixian
+          locality: Xierhuqiao
           region: Liaoning
           formation: Jiufotang
-          coordinates:
-            - 41.533611
-            - 121.2481
           region_code: CN-LN
         type_specimen:
           specimen_id:
@@ -152558,13 +152523,12 @@ genera:
           to_ma: 72.2
         location:
           country: CN
-          locality: Zangjiazhuang Quarry (Location
+          locality: Zangjiazhuang
           region: Shandong
           formation: Hongtuya
-          coordinates:
-            - 37.465832
-            - 120.984718
+          part: lower
           region_code: CN-SD
+          part_of: formation
         type_specimen:
           specimen_id:
             - ZJZ-183
@@ -152666,9 +152630,7 @@ genera:
           locality: Hengdaozi, Sihetun
           region: Liaoning
           formation: Yixian
-          coordinates:
-            - 41.599007
-            - 120.840065
+          member: Jianshangou
           region_code: CN-LN
         size:
           weight_kg:
@@ -152821,12 +152783,9 @@ genera:
           to_ma: 83.6
         location:
           country: CN
-          locality: Tsondolein-Khuduk 2
+          locality: Tsondolein-Khuduk
           region: Inner Mongolia
           formation: Ulansuhai
-          coordinates:
-            - 41.433701
-            - 103.538498
           region_code: CN-NM
         type_specimen:
           specimen_type: holotype
@@ -152915,12 +152874,9 @@ genera:
           to_ma: 72.2
         location:
           country: CN
-          locality: Zangjiazhuang Quarry (Location
+          locality: Zangjiazhuang
           region: Shandong
           formation: Hongtuya
-          coordinates:
-            - 37.465832
-            - 120.984718
           region_code: CN-SD
         type_specimen:
           specimen_id:
@@ -152963,6 +152919,16 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
         notes: Source of the hip height estimate, and the appearance features.
+      - id: an2015a
+        authors: An, W.; Kuang, H. W.; Liu, Y. Q.; Peng, N.; Xu, K. M.; Xu, H.; Zhang, P.; Wang, K. B.; Chen, S. Q.; Zhang, Y. X.
+        year: 2015
+        title: Detrital zircon dating and tracing the provenance of dinosaur bone beds from the Late Cretaceous Wangshi Group in Zhucheng, Shandong, East China
+        journal: Journal of Palaeogeography
+        volume: "5"
+        issue: "1"
+        pages: 72-99
+        doi: 10.1016/j.jop.2015.11.002
+        notes: Reports this species from the Hongtuya Formation, resolving the describing paper's bare Wangshi Group.
     taxonomy:
       - Life
       - Animalia
@@ -153030,11 +152996,9 @@ genera:
           to_ma: 143.1
         location:
           country: CN
+          locality: Locality 47
           region: Sichuan
-          formation: Unnamed (Weiyuan/Guangyuan, Sichuan Basin)
-          coordinates:
-            - 32.403481
-            - 105.805908
+          notes: Young (1942) collected the teeth from a shell-bearing layer at the top of the Kuangyuan Series, an old rank term with no modern equivalent settled. Dong and colleagues (1983) propose the Qianfoya Formation in one passage and the Chungking Group in another; the Penglaizhen, Suining and Shaximiao formations have each been suggested elsewhere. Weiyuan, some 200 km away, is a separate area Young compares against this one.
           region_code: CN-SC
         erected_in: young1942a
         type_specimen:
@@ -153059,6 +153023,15 @@ genera:
         issue: 3-4
         pages: 293-309
         doi: 10.1111/j.1755-6724.1942.mp223-4016.x
+      - id: dong1983a
+        authors: Dong, Z.; Zhou, S.; Zhang, H.
+        year: 1983
+        title: "[Dinosaurs from the Jurassic of Sichuan]"
+        journal: Palaeontologica Sinica, New Series C, Whole Number
+        volume: "162"
+        issue: "23"
+        pages: 1-136
+        notes: Proposes the Qianfoya Formation for this material in discussion, while its own header gives the Chungking (Guangyuan) Group.
     taxonomy:
       - Life
       - Animalia
@@ -153126,6 +153099,7 @@ genera:
           to_ma: 192.9
         location:
           country: CN
+          locality: Hei Koa Peng
           region: Yunnan
           formation: Lufeng
           member: Zhangjiawa
@@ -153254,12 +153228,12 @@ genera:
           to_ma: 100.5
         location:
           country: CN
-          locality: Huamuxiao, Ordos Basin
+          locality: 0.7 km west of Huamuxiao Village
           region: Inner Mongolia
           formation: Ejinhoro
           coordinates:
-            - 39.360001
-            - 108.410004
+            - 39.6
+            - 108.683333
           region_code: CN-NM
         type_specimen:
           specimen_id:
@@ -153396,7 +153370,7 @@ genera:
           to_ma: 89.8
         location:
           country: CN
-          locality: Suhongtu, Ulan Suhai
+          locality: Ulan Suhai
           region: Inner Mongolia
           formation: Ulansuhai
           coordinates:
@@ -153520,12 +153494,10 @@ genera:
           to_ma: 113.2
         location:
           country: CN
-          locality: Sihetun, lower Yixian
+          locality: Sihetun
           region: Liaoning
           formation: Yixian
-          coordinates:
-            - 41.601398
-            - 120.8722
+          member: Jianshangou
           region_code: CN-LN
         type_specimen:
           specimen_id:
@@ -153588,6 +153560,13 @@ genera:
         title: The Princeton Field Guide to Dinosaurs (3rd ed.)
         publisher: Princeton University Press
         notes: Source of the appearance features.
+      - id: wang2016a
+        authors: Wang, Y.; Olsen, P. E.; Sha, J.; Yao, X.; Liao, H.; Pan, Y.; Kinney, S.; Zhang, X.; Rao, X.
+        year: 2016
+        title: Stratigraphy, correlation, depositional environments, and cyclicity of the Early Cretaceous Yixian and ?Jurassic-Cretaceous Tuchengzi formations in the Sihetun area (NE China) based on three continuous cores
+        journal: Palaeogeography, Palaeoclimatology, Palaeoecology
+        publisher: Elsevier BV
+        notes: Establishes Chaomidianzi as a junior synonym of the Jianshangou bed, and raises it to member rank.
     taxonomy:
       - Life
       - Animalia
@@ -153660,12 +153639,11 @@ genera:
           to_ma: 113.2
         location:
           country: CN
-          locality: Sihetun, Yixian bed 6 (28)
+          locality: Jianshangou-Sihetun area
           region: Liaoning
           formation: Yixian
-          coordinates:
-            - 41.601398
-            - 120.8722
+          member: Jianshangou
+          bed: Anjiagou
           region_code: CN-LN
         type_specimen:
           specimen_id:
@@ -153722,6 +153700,13 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
         notes: Source of the hip height estimate, and the appearance features.
+      - id: wang2016a
+        authors: Wang, Y.; Olsen, P. E.; Sha, J.; Yao, X.; Liao, H.; Pan, Y.; Kinney, S.; Zhang, X.; Rao, X.
+        year: 2016
+        title: Stratigraphy, correlation, depositional environments, and cyclicity of the Early Cretaceous Yixian and ?Jurassic-Cretaceous Tuchengzi formations in the Sihetun area (NE China) based on three continuous cores
+        journal: Palaeogeography, Palaeoclimatology, Palaeoecology
+        publisher: Elsevier BV
+        notes: Raises the Jianshangou bed to member rank and places the holotype in its Anjiagou Bed.
     taxonomy:
       - Life
       - Animalia
@@ -153795,12 +153780,10 @@ genera:
           to_ma: 192.9
         location:
           country: CN
-          locality: Qinglongshan, Muchulang village
+          locality: Huangchiatien
           region: Yunnan
           formation: Lufeng
-          coordinates:
-            - 24.671667
-            - 102.591942
+          notes: Young (1948) gives the holotype's horizon only as the Red beds of Huangchiatien, where he specifies the Dark Red Beds for Lukousaurus from the same village. Xing and colleagues (2012) place the species in the Shawan Member, but their locality table assigns IVPP V30 and V31 to this site when Young reports them from Mahuangching, about 60 km west. The member is therefore unresolved.
           region_code: CN-YN
         type_specimen:
           specimen_id:
@@ -153988,11 +153971,10 @@ genera:
           country: CN
           region: Liaoning
           formation: Jiufotang
-          locality: Dachengzi, Kazuo County
-          coordinates:
-            - 41.123329
-            - 119.741699
+          locality: Dachengzi town
+          part: lower
           region_code: CN-LN
+          part_of: formation
         type_specimen:
           specimen_id:
             - KZV-001
@@ -154123,13 +154105,12 @@ genera:
           to_ma: 113.2
         location:
           country: CN
-          locality: Lujiatun village, Shangyuan
+          locality: Lujiatun and Yanzigou
           region: Liaoning
           formation: Yixian
-          coordinates:
-            - 41.603352
-            - 120.913269
+          part: lower
           region_code: CN-LN
+          part_of: formation
         type_specimen:
           specimen_id:
             - IVPP V12615
@@ -154246,12 +154227,9 @@ genera:
           to_ma: 154.8
         location:
           country: CN
-          locality: Jiangjunmiao NE
+          locality: 25 km northeast of Jiangjunmiao
           region: Xinjiang
           formation: Shishugou
-          coordinates:
-            - 44.802925
-            - 90.046516
           region_code: CN-XJ
         size:
           hip_height_m:
@@ -154396,12 +154374,9 @@ genera:
           to_ma: 113.2
         location:
           country: CN
-          locality: Lujiatun village, Shangyuan
+          locality: Lujiatun, Beipiao
           region: Liaoning
           formation: Yixian
-          coordinates:
-            - 41.603352
-            - 120.913269
           region_code: CN-LN
         type_specimen:
           specimen_id:
@@ -154532,9 +154507,6 @@ genera:
           locality: Ban Saphan Hin
           region: Nakhon Ratchasima
           formation: Khok Kruat
-          coordinates:
-            - 14.866667
-            - 102.733299
           region_code: TH-30
         type_specimen:
           specimen_id:
@@ -154638,10 +154610,9 @@ genera:
           locality: Bustingorry's farm
           region: Neuquén
           formation: Huincul
-          coordinates:
-            - -39.245201
-            - -68.801598
+          part: lower
           region_code: AR-Q
+          part_of: formation
         size:
           hip_height_m:
             min: 2.1
@@ -154785,9 +154756,6 @@ genera:
           locality: Felch Quarry 1, Garden Park
           region: Colorado
           formation: Morrison
-          coordinates:
-            - 38.539501
-            - -105.224701
           region_code: US-CO
         type_specimen:
           specimen_id:
@@ -154898,12 +154866,9 @@ genera:
           to_ma: 72.2
         location:
           country: CN
-          locality: Saihangaobi, Sonid Zuoqi
+          locality: Saihangaobi
           region: Inner Mongolia
           formation: Iren Dabasu
-          coordinates:
-            - 43.548889
-            - 111.870834
           region_code: CN-NM
         size:
           length_m:
@@ -155018,12 +154983,9 @@ genera:
           to_ma: 93.9
         location:
           country: US
-          locality: Sonorasaurus site, Whetstone Mountains
+          locality: Sonorasaurus quarry
           region: Arizona
           formation: Turney Ranch
-          coordinates:
-            - 31.81139
-            - -110.418053
           region_code: US-AZ
         type_specimen:
           specimen_id:
@@ -155130,13 +155092,13 @@ genera:
           to_ma: 121.4
         location:
           country: ES
-          locality: Zorralbo 1, Golmayo
-          region: Castile and León
+          locality: Zorralbo I
+          region: Soria
           formation: Golmayo
           coordinates:
             - 41.766701
             - -2.5333
-          region_code: ES-CL
+          region_code: ES-SO
         size:
           hip_height_m:
             min: 2.2
@@ -155265,12 +155227,9 @@ genera:
           to_ma: 113.2
         location:
           country: BR
-          locality: Embira-Branca hills, Coração de Jesus
+          locality: Embira Branca Range
           region: Minas Gerais
           formation: Quiricó
-          coordinates:
-            - -16.684441
-            - -44.360279
           region_code: BR-MG
         size:
           weight_kg:
@@ -155373,9 +155332,7 @@ genera:
           locality: Willow Wash
           region: New Mexico
           formation: Kirtland
-          coordinates:
-            - 36.269444
-            - -108.166946
+          member: De-na-zin
           region_code: US-NM
         size:
           length_m:
@@ -155409,8 +155366,10 @@ genera:
           country: US
           region: Montana
           formation: Hell Creek
-          locality: Western Carter County
+          locality: SE 1/4, Sec. 5, T1S, R55E
+          part: upper
           region_code: US-MT
+          part_of: formation
         type_specimen:
           specimen_id:
             - TMP 1987.113.0003
@@ -155441,7 +155400,7 @@ genera:
           country: CA
           region: Alberta
           formation: Horseshoe Canyon
-          locality: Red Deer River, below Scollard Ferry
+          locality: opposite the mouth of Big Valley Creek, below Scollard ferry, Red Deer River
           region_code: CA-AB
         type_specimen:
           specimen_id:
@@ -155474,8 +155433,10 @@ genera:
           country: CA
           region: Alberta
           formation: Dinosaur Park
-          locality: Dinosaur Provincial Park, near the base of the Lethbridge Coal Zone
+          locality: north side of the Red Deer River, in the northeast region of Dinosaur Provincial Park
+          part: upper
           region_code: CA-AB
+          part_of: formation
         type_specimen:
           specimen_id:
             - TMP 2002.012.0063
@@ -155594,6 +155555,7 @@ genera:
           country: GB
           region: Isle of Wight
           locality: Brook, Isle of Wight
+          notes: Seeley (1883) records no provenance for the holotype, R142, in the Fox Collection; he suspects many of its vertebrae belonged to the same individual as the Brook material he founded the genus on, and that inference is what places it at Brook. Norman (2013) maps the upper Wessex Formation against the base of the Vectis Formation along this stretch of coast, so the unit would be the Wessex if the attribution holds.
           region_code: GB-IOW
         type_specimen:
           specimen_id:
@@ -155732,10 +155694,10 @@ genera:
           locality: 8 km west-southwest of Winifred
           region: Montana
           formation: Judith River
-          coordinates:
-            - 47.527
-            - -109.497803
+          member: Coal Ridge
+          part: lower
           region_code: US-MT
+          part_of: member
         type_specimen:
           specimen_id:
             - CMN 57081
@@ -155847,12 +155809,9 @@ genera:
         location:
           country: MA
           locality: Boulahfa
-          region: Fes-Meknes
+          region: Boulemane
           formation: El Mers III
-          coordinates:
-            - 33.150002
-            - -5.11667
-          region_code: MA-03
+          region_code: MA-BOM
         size:
           length_m:
             min: 3
@@ -155975,12 +155934,9 @@ genera:
           to_ma: 165.3
         location:
           country: NE
-          locality: Azenak, Aderbissinat
+          locality: north of the Rural Community of Aderbissinat, about 30 km north of the Falaise de Tiguidit
           region: Agadez
-          formation: Irhazer II
-          coordinates:
-            - 16.681801
-            - 7.7444
+          group: Irhazer
           region_code: NE-1
         size:
           hip_height_m:
@@ -156128,12 +156084,9 @@ genera:
           to_ma: 72.2
         location:
           country: CA
-          locality: Berry Creek
+          locality: one mile below the mouth of Berry Creek
           region: Alberta
-          formation: Oldman
-          coordinates:
-            - 50.758659
-            - -111.393066
+          notes: Farke and colleagues (2011) place the quarry in either the upper Oldman Formation or the lower Dinosaur Park Formation, reading the palynology as consistent with the uppermost few meters of the Oldman or with any level in the Dinosaur Park. The quarry has not been relocated.
           region_code: CA-AB
         type_specimen:
           specimen_id:
@@ -156250,14 +156203,16 @@ genera:
           from_ma: 100.5
           to_ma: 93.9
         location:
-          country: EG
-          region: Matruh
-          formation: Bahariya
-          locality: Gebel el Dist
+          country: MA
+          region: Draa-Tafilalet
+          formation: Gara Sbaa
+          locality: Zrigat
+          part: upper
           coordinates:
-            - 28.43
-            - 28.91
-          region_code: EG-MT
+            - 31.617
+            - -4.267
+          region_code: MA-08
+          part_of: formation
         size:
           hip_height_m:
             min: 2.5
@@ -156300,9 +156255,6 @@ genera:
           region: Agadez
           formation: Farak
           locality: Sirig Taghat, Jenguebi area
-          coordinates:
-            - 16.97349
-            - 8.06629
           region_code: NE-1
         type_specimen:
           specimen_id:
@@ -156466,12 +156418,9 @@ genera:
           to_ma: 154.8
         location:
           country: NE
-          locality: Oued Timmersöi, west of In Tedreft
+          locality: eastern side of the Oued Timmersoï, approximately 15 km west of the In Tedreft well
           region: Agadez
           formation: Tiourarén
-          coordinates:
-            - 19.317499
-            - 6.381111
           region_code: NE-1
         type_specimen:
           specimen_id:
@@ -156595,12 +156544,10 @@ genera:
           to_ma: 227.3
         location:
           country: BR
-          locality: Alemõa, Sanga Baixo
+          locality: Sanga Grande
           region: Rio Grande do Sul
           formation: Santa Maria
-          coordinates:
-            - -29.683001
-            - -53.799999
+          member: Alemoa
           region_code: BR-RS
         type_specimen:
           specimen_id:
@@ -156631,6 +156578,17 @@ genera:
         journal: American Museum Novitates
         volume: "2405"
         pages: 1-39
+      - id: bittencourt2009a
+        authors: Bittencourt, J. S.; Kellner, A. W. A.
+        year: 2009
+        title: The anatomy and phylogenetic position of the Triassic dinosaur Staurikosaurus pricei Colbert, 1970
+        journal: Zootaxa
+        publisher: Magnolia Press
+        volume: "2079"
+        issue: "1"
+        pages: 1-56
+        doi: 10.11646/zootaxa.2079.1.1
+        notes: Redescribes the holotype and gives the type locality as Sanga Grande, an outcrop of the Alemoa Member of the Santa Maria Formation.
     taxonomy:
       - Life
       - Animalia
@@ -156697,12 +156655,9 @@ genera:
           to_ma: 72.2
         location:
           country: CA
-          locality: 1 mile below Steveville (75 ft level)
+          locality: East side of the Red Deer River below the mouth of Berry Creek
           region: Alberta
           formation: Dinosaur Park
-          coordinates:
-            - 50.77
-            - -111.55
           region_code: CA-AB
         type_specimen:
           specimen_id:
@@ -156883,13 +156838,13 @@ genera:
           to_ma: 93.9
         location:
           country: US
-          locality: Conant Creek, Lander
+          locality: Conant Creek
           region: Wyoming
           formation: Frontier
-          coordinates:
-            - 42.832222
-            - -108.023613
+          member: Belle Fourche
+          part: lower
           region_code: US-WY
+          part_of: member
         type_specimen:
           specimen_id:
             - FMNH UR88
@@ -156990,11 +156945,9 @@ genera:
           to_ma: 113.2
         location:
           country: CN
+          locality: Hui-hui-p'u
           region: Gansu
           group: Xinminpu
-          coordinates:
-            - 39.816799
-            - 98.299797
           region_code: CN-GS
         type_specimen:
           specimen_type: holotype
@@ -157099,10 +157052,7 @@ genera:
           country: US
           region: Colorado
           formation: Morrison
-          locality: Garden Park (Felch Quarry No. 1)
-          coordinates:
-            - 38.66
-            - -105.22
+          locality: Felch Quarry 1, Garden Park
           region_code: US-CO
         size:
           length_m:
@@ -157137,7 +157087,7 @@ genera:
           country: US
           region: Wyoming
           formation: Morrison
-          locality: Como Bluff (Quarry 12/13, near Robber's Roost)
+          locality: Quarry 12, Como Bluff
           region_code: US-WY
         type_specimen:
           specimen_id:
@@ -186245,7 +186195,7 @@ genera:
           to_ma: 72.2
         location:
           country: CN
-          locality: Zangjiazhuang Quarry (Location
+          locality: "Zangjiazhuang Quarry (Location #090413)"
           region: Shandong
           formation: Hongtuya
           coordinates:
@@ -186348,7 +186298,7 @@ genera:
           to_ma: 72.2
         location:
           country: CN
-          locality: Zangjiazhuang Quarry (Location
+          locality: "Zangjiazhuang Quarry (Location #090413)"
           region: Shandong
           formation: Hongtuya
           coordinates:
