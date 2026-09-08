@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-09-08T16:48:09.293Z
+  built_at: 2026-09-08T18:43:30.829Z
   clade_count: 188
   genus_count: 1422
   license: CC-BY-4.0
@@ -159960,12 +159960,12 @@ genera:
           to_ma: 199.5
         location:
           country: VE
-          locality: road cut northwest of La Grita
+          locality: secondary road about 4 km northwest of La Grita, next to the north of the type-section
           region: Táchira
           formation: La Quinta
           coordinates:
-            - 8.150833
-            - -72.018608
+            - 8.150964
+            - -72.0185
           region_code: VE-S
         size:
           length_m:
@@ -160055,12 +160055,9 @@ genera:
           to_ma: 83.6
         location:
           country: MN
-          locality: Bayn Shire
+          locality: Bayan Shiree cliffs
           region: Dornogovi
-          formation: Baynshire
-          coordinates:
-            - 44.34
-            - 109.858887
+          formation: Bayanshiree
           region_code: MN-063
         type_specimen:
           specimen_id:
@@ -160186,12 +160183,12 @@ genera:
           to_ma: 72.2
         location:
           country: AR
-          locality: Cerro Los Hornos (Talenkauen locality)
+          locality: Los Hornos Hill
           region: Santa Cruz
           formation: Cerro Fortaleza
           coordinates:
-            - -49.854443
-            - -72.107224
+            - -49.8545
+            - -72.107306
           region_code: AR-Z
         size:
           hip_height_m:
@@ -160305,14 +160302,12 @@ genera:
           to_ma: 66
         location:
           country: MA
-          region: Casablanca-Settat
-          formation: Phosphates of Morocco
+          region: Khouribga
           bed: Couche III
-          locality: Sidi Chennane mines, Oulad Abdoun Basin
-          coordinates:
-            - 32.83
-            - -6.43
-          region_code: MA-06
+          locality: Sidi Chennane
+          part: upper
+          region_code: MA-KHO
+          part_of: bed
         type_specimen:
           specimen_id:
             - MHNM.KH.1557
@@ -160416,10 +160411,9 @@ genera:
           locality: The Blues
           region: Utah
           formation: Kaiparowits
-          coordinates:
-            - 37.647072
-            - -111.862358
+          part: middle
           region_code: US-UT
+          part_of: formation
         type_specimen:
           specimen_id:
             - UMNH VP 19479
@@ -160560,12 +160554,11 @@ genera:
         location:
           country: ES
           locality: Sant Romà d'Abella
-          region: Catalonia
+          region: Lleida
           formation: Talarn
-          coordinates:
-            - 42.155483
-            - 1.055002
-          region_code: ES-CT
+          part: upper
+          region_code: ES-L
+          part_of: formation
         size:
           length_m:
             min: 1.3
@@ -160673,12 +160666,9 @@ genera:
           to_ma: 100.5
         location:
           country: JP
-          locality: Kamitaki Bonebed Quarry, Tamba City
+          locality: Kamitaki Quarry
           region: Hyōgo
           formation: Ohyamashimo
-          coordinates:
-            - 35.082222
-            - 135.10527
           region_code: JP-28
         type_specimen:
           specimen_id:
@@ -160798,12 +160788,9 @@ genera:
           to_ma: 93.9
         location:
           country: EG
-          locality: western slope, Gebel Harra
+          locality: two kilometers from Ain Gedid on the western foot of the Gebel Harra
           region: Giza
           formation: Bahariya
-          coordinates:
-            - 28.33333
-            - 29.116669
           region_code: EG-GZ
         size:
           length_m:
@@ -160910,12 +160897,9 @@ genera:
           to_ma: 100.5
         location:
           country: LA
-          locality: Ban Tâng Vai 2
+          locality: Tang Vay 4
           region: Savannakhet
           formation: Grès supérieurs
-          coordinates:
-            - 16.4
-            - 105.650002
           region_code: LA-SV
         size:
           weight_kg:
@@ -161056,12 +161040,9 @@ genera:
           to_ma: 72.2
         location:
           country: CN
-          locality: 0.6 mi. southwest of Chiangchingting
+          locality: about 500 m (one li) southwest of Jiangjundingcun
           region: Shandong
           formation: Jiangjunding
-          coordinates:
-            - 36.920399
-            - 120.622902
           region_code: CN-SD
         size:
           hip_height_m:
@@ -161097,6 +161078,17 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
         notes: Source of the hip height estimate.
+      - id: borinder2021a
+        authors: Borinder, N. H.; Poropat, S. F.; Campione, N. E.; Wigren, T.; Kear, B. P.
+        year: 2021
+        title: Postcranial osteology of the basally branching hadrosauroid dinosaur Tanius sinensis from the Upper Cretaceous Wangshi Group of Shandong, China
+        journal: Journal of Vertebrate Paleontology
+        publisher: Taylor and Francis
+        volume: "41"
+        issue: "1"
+        pages: e1914642
+        doi: 10.1080/02724634.2021.1914642
+        notes: Redescribes the holotype and gives its provenance as about 500 m southwest of Jiangjundingcun, most likely from the Jiangjunding Formation.
     taxonomy:
       - Life
       - Animalia
@@ -161174,9 +161166,6 @@ genera:
           locality: Bone Cabin Quarry West
           region: Wyoming
           formation: Morrison
-          coordinates:
-            - 42.017776
-            - -106.048615
           region_code: US-WY
         size:
           hip_height_m:
@@ -161415,13 +161404,12 @@ genera:
           to_ma: 113.2
         location:
           country: CN
-          locality: Guanmengou No. 4 bonebed
+          locality: the border area of Yongjing and Lintao counties, eastern Lanzhou-Minhe Basin
           region: Gansu
-          formation: Lanzhou-Minhe Basin
-          coordinates:
-            - 35.809723
-            - 103.771942
+          group: Hekou
+          part: middle
           region_code: CN-GS
+          part_of: group
         type_specimen:
           specimen_id:
             - GSDM 00021
@@ -161510,12 +161498,9 @@ genera:
           to_ma: 113.2
         location:
           country: BR
-          locality: Embira-Branca hills, Coração de Jesus
+          locality: Embira-Branca Hills, near Coração de Jesus
           region: Minas Gerais
           formation: Quiricó
-          coordinates:
-            - -16.684441
-            - -44.360279
           region_code: BR-MG
         size:
           length_m:
@@ -161648,12 +161633,10 @@ genera:
           to_ma: 72.2
         location:
           country: FR
-          locality: Lambeau de Beausset
-          region: Provence-Alpes-Côte d'Azur
-          coordinates:
-            - 43.200001
-            - 5.8
-          region_code: FR-PAC
+          locality: Lambeau du Beausset
+          region: Var
+          notes: The holotype carries no field data at all. It reached the Lyon collections labeled only "Upper Cretaceous, Lambeau du Beausset", and its collector is unknown. Le Loeuff and Buffetaut (1991) place it in the Fuvelian on the grayish limestone matrix alone, that lithology occurring nowhere else in the syncline. The Lambeau du Beausset is itself a Triassic klippe thrust over those Cretaceous beds, so the locality names a structure rather than the rock the bones came from.
+          region_code: FR-83
         type_specimen:
           specimen_id:
             - PSL 330201
@@ -161795,9 +161778,6 @@ genera:
           locality: Nemegt
           region: Ömnögovi
           formation: Nemegt
-          coordinates:
-            - 43.5
-            - 101.05
           region_code: MN-053
         type_specimen:
           specimen_id:
@@ -161992,12 +161972,9 @@ genera:
           to_ma: 72.2
         location:
           country: MN
-          locality: Khulsan, Central Cliffs, site 6
+          locality: Khulsan, site 6
           region: Ömnögovi
           formation: Baruungoyot
-          coordinates:
-            - 43.50032
-            - 101.130188
           region_code: MN-053
         type_specimen:
           specimen_id:
@@ -162189,13 +162166,13 @@ genera:
           to_ma: 113.2
         location:
           country: ES
-          locality: Arsis-1, Peñarroya de Tastavins
-          region: Aragon
+          locality: Arsis 1, Peñarroya de Tastavins
+          region: Teruel
           formation: Xert
           coordinates:
-            - 40.706944
-            - 0.059722
-          region_code: ES-AR
+            - 40.6975
+            - 0.0492
+          region_code: ES-TE
         size:
           hip_height_m:
             min: 3
@@ -162333,11 +162310,10 @@ genera:
           to_ma: 100.5
         location:
           country: US
+          locality: Middle Dome region
           region: Montana
           formation: Cloverly
-          coordinates:
-            - 46.298439
-            - -109.712097
+          member: Himes
           region_code: US-MT
         size:
           weight_kg:
@@ -162441,7 +162417,7 @@ genera:
         location:
           country: US
           region: South Dakota
-          locality: Niemi Ranch, Harding County
+          locality: Niemi Ranch
           formation: Hell Creek
           region_code: US-SD
         size:
