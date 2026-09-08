@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-09-08T19:40:37.933Z
+  built_at: 2026-09-08T21:27:43.966Z
   clade_count: 188
   genus_count: 1422
   license: CC-BY-4.0
@@ -162564,9 +162564,7 @@ genera:
           locality: Jebel El Mra
           region: Tataouine
           formation: Aïn el Guettar
-          coordinates:
-            - 32.676388
-            - 10.172222
+          member: Oum ed Diab
           region_code: TN-83
         size:
           weight_kg:
@@ -162720,9 +162718,6 @@ genera:
           formation: Lufeng
           member: Zhangjiawa
           locality: Ta Ti
-          coordinates:
-            - 25.172689
-            - 102.107323
           region_code: CN-YN
         type_specimen:
           specimen_id:
@@ -162839,8 +162834,8 @@ genera:
           region: Río Negro
           formation: Huincul
           coordinates:
-            - -39.397778
-            - -68.617775
+            - -39.397881
+            - -68.617861
           region_code: AR-R
         type_specimen:
           specimen_id:
@@ -162988,13 +162983,13 @@ genera:
           to_ma: 205.7
         location:
           country: US
-          locality: Hayden Quarry, Ghost Ranch (site 2)
+          locality: Hayden Quarry Site 2, Ghost Ranch
           region: New Mexico
           formation: Chinle
-          coordinates:
-            - 36.323849
-            - -106.47506
+          member: Petrified Forest
+          part: lower
           region_code: US-NM
+          part_of: member
         type_specimen:
           specimen_id:
             - GR 241
@@ -163125,13 +163120,10 @@ genera:
           to_ma: 174.7
         location:
           country: MA
-          locality: Douar of Tazouda, locality A
-          region: Draa-Tafilalet
-          formation: Toundoute Continental Series
-          coordinates:
-            - 31.2647
-            - -6.5908
-          region_code: MA-08
+          locality: Douar of Tazouda, locality B
+          region: Ouarzazate
+          notes: The Toundoute continental series is an informal succession about 300 m thick that is not subdivided into formal stratigraphic units. Allain and colleagues (2008) suggest it is laterally equivalent to the Toarcian Azilal and Wazzant formations, a hypothesis rather than an assignment.
+          region_code: MA-OUA
         size:
           hip_height_m:
             min: 2.7
@@ -163254,7 +163246,7 @@ genera:
           region: Chubut
           formation: Cañadón Calcáreo
           coordinates:
-            - -43.1675
+            - -43.16667
             - -69.25
           region_code: AR-U
         size:
@@ -163431,12 +163423,9 @@ genera:
           to_ma: 143.1
         location:
           country: FR
-          region: Hauts-de-France
+          region: Pas-de-Calais
           locality: Boulogne-sur-Mer
-          coordinates:
-            - 50.766701
-            - 1.6333
-          region_code: FR-HDF
+          region_code: FR-62
         size:
           length_m:
             min: 11.4
@@ -163550,12 +163539,9 @@ genera:
           to_ma: 66
         location:
           country: RO
-          locality: Szentpéterfalva, Hateg Basin
+          locality: Bonebed 1, along the Sibişel Valley near the village of Sânpetru
           region: Hunedoara
           formation: Sânpetru
-          coordinates:
-            - 45.603615
-            - 22.845142
           region_code: RO-HD
         size:
           length_m:
@@ -163738,12 +163724,11 @@ genera:
           to_ma: 143.1
         location:
           country: TZ
-          locality: Tendaguru Quarry NB
+          locality: Nambango (site NB)
           region: Lindi
           formation: Tendaguru
-          coordinates:
-            - -9.704556
-            - 39.22842
+          member: Upper Dinosaur
+          notes: Mannion and colleagues (2019) place the holotype in the Upper Dinosaur Member only "probably", the member resting on their correlation of the Nambango site rather than on a measured section through it.
           region_code: TZ-12
         size:
           length_m:
@@ -163861,12 +163846,10 @@ genera:
           to_ma: 132.6
         location:
           country: RU
-          locality: Mogoito, Promoina Klevenskogo
+          locality: Mogoito
           region: Buryatia
           formation: Murtoi
-          coordinates:
-            - 51.195557
-            - 106.274719
+          notes: The holotype and the two other original caudals came from Promoina Klevenskogo, a ravine within the Mogoito locality exposing 5 to 6 m of section. Averianov and Skutschas (2017) name it in their remarks and Nesov (1995) had already used it for Mogoito sauropod material.
           region_code: RU-BU
         type_specimen:
           specimen_id:
@@ -164010,12 +163993,10 @@ genera:
           to_ma: 93.9
         location:
           country: US
-          locality: site, AMNH 3040
+          locality: AMNH 33-1
           region: Montana
           formation: Cloverly
-          coordinates:
-            - 46.337502
-            - -109.685501
+          member: Himes
           region_code: US-MT
         type_specimen:
           specimen_id:
@@ -164052,7 +164033,7 @@ genera:
           country: US
           region: Texas
           formation: Twin Mountains
-          locality: Doss Ranch, Parker County
+          locality: Doss Ranch
           region_code: US-TX
         type_specimen:
           specimen_id:
@@ -164215,13 +164196,12 @@ genera:
           to_ma: 72.2
         location:
           country: US
-          locality: The Blues, BYU-locality
+          locality: The Blues
           region: Utah
           formation: Kaiparowits
-          coordinates:
-            - 37.451607
-            - -111.53196
+          part: middle
           region_code: US-UT
+          part_of: formation
         size:
           length_m:
             min: 6
@@ -164340,12 +164320,13 @@ genera:
           to_ma: 72.2
         location:
           country: US
+          locality: NMMNH L-3503
           region: New Mexico
           formation: Kirtland
-          coordinates:
-            - 36.2925
-            - -108.549721
+          member: Hunter Wash
+          part: middle
           region_code: US-NM
+          part_of: member
         size:
           length_m:
             min: 6
@@ -164455,12 +164436,14 @@ genera:
         location:
           country: IT
           locality: Villaggio del Pescatore
-          region: Friuli Venezia Giulia
-          formation: Aurisina
+          region: Trieste
+          formation: Liburnian
+          part: lower
           coordinates:
-            - 45.77861
-            - 13.588611
-          region_code: IT-36
+            - 45.8
+            - 13.6
+          region_code: IT-TS
+          part_of: formation
         size:
           hip_height_m:
             min: 1.2
@@ -164608,12 +164591,13 @@ genera:
           to_ma: 72.2
         location:
           country: US
+          locality: WPA-1
           region: Texas
           formation: Aguja
-          coordinates:
-            - 29.138056
-            - -103.196945
+          member: Alto Shale
+          part: lower
           region_code: US-TX
+          part_of: member
         erected_in: longrich2010b
         type_specimen:
           specimen_id:
@@ -164716,12 +164700,12 @@ genera:
           to_ma: 100.5
         location:
           country: US
-          locality: Blue Mound nodosaur site
+          locality: 5 miles south of Haslet, within the limits of the town of Blue Mound, north of Fort Worth
           region: Texas
-          formation: Pawpaw
+          formation: Paw Paw
           coordinates:
-            - 32.725277
-            - -97.320831
+            - 32.933333
+            - -97.333333
           region_code: US-TX
         erected_in: coombs1995a
         type_specimen:
@@ -164801,12 +164785,9 @@ genera:
           to_ma: 72.2
         location:
           country: CA
-          locality: Eastern shore of the Bow River
+          locality: base of a steep cliff on the eastern shore of the Bow River, about 0.5 km upstream of the confluence with the Oldman River
           region: Alberta
           formation: Foremost
-          coordinates:
-            - 49.943333
-            - -111.690834
           region_code: CA-AB
         size:
           length_m:
@@ -164896,12 +164877,12 @@ genera:
           to_ma: 72.2
         location:
           country: BR
-          locality: North of Ibirá (near the farm of Sérgio Luis Simonatto)
+          locality: property near the farm of Sérgio Luis Simonatto
           region: São Paulo
           formation: São José do Rio Preto
           coordinates:
-            - -21.034721
-            - -49.211109
+            - -21.016383
+            - -49.21755
           region_code: BR-SP
         size:
           length_m:
@@ -165019,11 +165000,10 @@ genera:
           to_ma: 165.3
         location:
           country: IN
+          locality: Jethwai village
           region: Rajasthan
           formation: Jaisalmer
-          coordinates:
-            - 27.010279
-            - 70.949165
+          member: Fort
           region_code: IN-RJ
         size:
           length_m:
@@ -165146,9 +165126,9 @@ genera:
           to_ma: 121.4
         location:
           country: GB
-          region: England
+          region: Isle of Wight
           formation: Wessex
-          region_code: GB-ENG
+          region_code: GB-IOW
         type_specimen:
           specimen_id:
             - NHMUK PV R 181
