@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-09-07T02:36:06.183Z
+  built_at: 2026-09-08T03:47:44.289Z
   clade_count: 188
   genus_count: 1422
   license: CC-BY-4.0
@@ -157283,13 +157283,15 @@ genera:
           to_ma: 66
         location:
           country: CL
-          locality: SP-17, Saurópodo sector
+          locality: SP17
           region: Magellan and the Chilean Antarctic
           formation: Dorotea
+          part: lower
           coordinates:
-            - -50.711945
-            - -72.541389
+            - -50.711867
+            - -72.541411
           region_code: CL-MA
+          part_of: formation
         size:
           weight_kg:
             min: 80
@@ -157394,13 +157396,12 @@ genera:
           to_ma: 72.2
         location:
           country: US
-          locality: Landslide Butte Field Area
+          locality: Landslide Butte area
           region: Montana
           formation: Two Medicine
-          coordinates:
-            - 48.970821
-            - -112.642014
+          part: upper
           region_code: US-MT
+          part_of: formation
         type_specimen:
           specimen_id:
             - MOR 492
@@ -157505,13 +157506,12 @@ genera:
           to_ma: 72.2
         location:
           country: CA
-          locality: 1.5 miles southwest of mouth, Berry Creek
+          locality: about 2½ miles southwest of the mouth of Berry Creek, Steveville
           region: Alberta
           formation: Dinosaur Park
-          coordinates:
-            - 50.800598
-            - -111.603897
+          part: lower
           region_code: CA-AB
+          part_of: formation
         type_specimen:
           specimen_id:
             - CMN 8539
@@ -157678,13 +157678,18 @@ genera:
           to_ma: 132.6
         location:
           country: DE
-          locality: Harrl Quarry, Bückeburg
+          locality: Bückeburg/Hexenteich quarry
           region: Lower Saxony
-          formation: Obernkirchen Sandstein
+          formation: Bückeberg
+          member: Obernkirchen
+          bed: Obernkirchen Sandstein
+          part: upper
           coordinates:
-            - 52.252357
-            - 9.066053
+            - 52.250322
+            - 9.068783
+          notes: Hornung and colleagues (2012) place the type quarry in the upper Obernkirchen Sandstone, but caution in the same paper that correlating the beds at Harrl hill with those of the central Bückeberge is weakly supported. The bed is theirs and is recorded as they give it, no more firmly.
           region_code: DE-NI
+          part_of: bed
         type_specimen:
           specimen_id:
             - GZG 741/2
@@ -157735,6 +157740,17 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
         notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+      - id: hornung2012a
+        authors: Hornung, J. J.; Böhme, A.; van der Lubbe, T.; Reich, M.; Richter, A.
+        year: 2012
+        title: Vertebrate tracksites in the Obernkirchen Sandstone (late Berriasian, Early Cretaceous) of northwest Germany — their stratigraphical, palaeogeographical, palaeoecological, and historical context
+        journal: Paläontologische Zeitschrift
+        publisher: Springer
+        volume: "86"
+        issue: "3"
+        pages: 231-267
+        doi: 10.1007/s12542-012-0131-7
+        notes: Places the type quarry at Bückeburg/Hexenteich in the upper Obernkirchen Sandstone, and sets that bed within the Obernkirchen Member of the Bückeberg Formation.
     taxonomy:
       - Life
       - Animalia
@@ -157778,7 +157794,9 @@ genera:
         location:
           country: CA
           region: Alberta
-          locality: Red Deer River
+          locality: Red Deer River district
+          group: Belly River
+          notes: No source assigns the type to one of the three formations the Belly River series was later split into, and the material was collected across a long stretch of river rather than at a recorded site. Lambe (1902) does note that in the Red Deer River district the upper beds of the series are represented, with probably the upper part of the lower beds, which leans toward the upper part of the group without settling it.
           region_code: CA-AB
         type_specimen:
           specimen_id:
@@ -157849,6 +157867,16 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
         notes: Records that the skull fragments included in the description were later found to come from different animals.
+      - id: lambe1902a
+        authors: Lambe, L. M.
+        year: 1902
+        title: New genera and species from the Belly River Series (mid-Cretaceous)
+        journal: Geological Survey of Canada Contributions to Canadian Palaeontology
+        volume: "3"
+        issue: "2"
+        pages: 25-81
+        doi: 10.5281/zenodo.3233762
+        notes: Reports that the Red Deer River district exposes the upper beds of the Belly River series, with probably the upper part of the lower beds.
     taxonomy:
       - Life
       - Animalia
@@ -157921,9 +157949,10 @@ genera:
           locality: Cleveland-Lloyd Dinosaur Quarry
           region: Utah
           formation: Morrison
+          member: Brushy Basin
           coordinates:
-            - 39.33
-            - -110.67
+            - 39.317
+            - -110.688
           region_code: US-UT
         size:
           hip_height_m:
@@ -158039,13 +158068,10 @@ genera:
           to_ma: 154.8
         location:
           country: FR
-          locality: Vaches Noires, near Honfleur
-          region: Normandy
+          locality: Falaises des Vaches Noires, near Honfleur
+          region: Calvados
           formation: Marnes de Dives
-          coordinates:
-            - 49.416698
-            - 0.2333
-          region_code: FR-NOR
+          region_code: FR-14
         size:
           hip_height_m:
             min: 1.9
@@ -158219,10 +158245,7 @@ genera:
           country: CA
           locality: below Berry Creek, Steveville
           region: Alberta
-          formation: Oldman
-          coordinates:
-            - 50.783333
-            - -111.533333
+          formation: Dinosaur Park
           region_code: CA-AB
         type_specimen:
           specimen_id:
@@ -158272,6 +158295,17 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
         notes: Source of the appearance features.
+      - id: mcfeeters2016a
+        authors: McFeeters, B.; Ryan, M. J.; Schröder-Adams, C.; Cullen, T. M.
+        year: 2016
+        title: A new ornithomimid theropod from the Dinosaur Park Formation of Alberta, Canada
+        journal: Journal of Vertebrate Paleontology
+        publisher: Informa UK Limited
+        volume: "36"
+        issue: "6"
+        pages: e1221415
+        doi: 10.1080/02724634.2016.1221415
+        notes: Separates the restricted Oldman Formation from the overlying Dinosaur Park Formation and reports Struthiomimus altus from the latter.
     taxonomy:
       - Life
       - Animalia
@@ -158365,9 +158399,6 @@ genera:
           locality: Muthmannsdorf
           region: Lower Austria
           formation: Grünbach
-          coordinates:
-            - 47.82
-            - 16.24
           region_code: AT-3
         type_specimen:
           specimen_id:
@@ -158407,7 +158438,7 @@ genera:
           country: RO
           region: Hunedoara
           formation: Sânpetru
-          locality: Sânpetru (Szentpéterfalva), Hațeg Basin
+          locality: Sânpetru
           region_code: RO-HD
         type_specimen:
           specimen_id:
@@ -158437,7 +158468,8 @@ genera:
         location:
           country: FR
           region: Hérault
-          locality: L'Olivet Quarry, Villeveyrac-Mèze Basin
+          locality: L'Olivet Quarry, Villeveyrac
+          notes: No lithostratigraphic unit has been published for this species. Garcia and Pereda Suberbiola (2003) give the type horizon as lignite-bearing gray clays of the lower Campanian, using the Provencal continental stage name Fuvelian in scare quotes; that is a chronostratigraphic label borrowed from a basin some 200 km east.
           region_code: FR-34
         type_specimen:
           specimen_id:
@@ -158493,6 +158525,12 @@ genera:
         pages: 156-165
         doi: 10.1671/0272-4634(2003)23[156:ANSOSD]2.0.CO;2
         notes: Erects Struthiosaurus languedocensis on synsacrum UM2 OLV-D50 from the Campanian of Villeveyrac, southern France.
+      - id: weishampel2004a
+        authors: Weishampel, D. B.; Dodson, P.; Osmólska, H.
+        year: 2004
+        title: The Dinosauria, Second Edition
+        publisher: University of California Press, Berkeley
+        notes: Lists Struthiosaurus languedocensis under an unnamed unit, an explicit abstention rather than an omission.
     taxonomy:
       - Life
       - Animalia
@@ -158542,8 +158580,9 @@ genera:
         location:
           country: US
           region: Montana
-          locality: F. S. McKeever Ranch near Jordan, Garfield County
+          locality: F. S. McKeever Ranch
           formation: Hell Creek
+          notes: The specimen's collecting site is recorded under two different ranch names. Molnar (1978), who described it, gives the F. S. McKeever Ranch with a legal land description and a museum locality number; Olshevsky (1995) instead places it on the Engdahl ranch, the property that produced the Tyrannosaurus rex holotype, and Paul (2025) follows him in tying it to that same ranch. The describer's name is recorded here.
           region_code: US-MT
         type_specimen:
           specimen_id:
@@ -158738,13 +158777,15 @@ genera:
           to_ma: 72.2
         location:
           country: CA
-          locality: Quarry 105, Sand Creek
+          locality: Quarry 016, Dinosaur Provincial Park
           region: Alberta
           formation: Dinosaur Park
+          part: upper
           coordinates:
-            - 50.742214
-            - -111.565781
+            - 50.751206
+            - -111.394535
           region_code: CA-AB
+          part_of: formation
         type_specimen:
           specimen_id:
             - CMN 344
@@ -158910,8 +158951,8 @@ genera:
           region: Agadez
           formation: Elrhaz
           coordinates:
-            - 16.416668
-            - 9.1
+            - 16.416667
+            - 9.116667
           region_code: NE-1
         size:
           length_m:
@@ -159009,12 +159050,9 @@ genera:
         location:
           country: GB
           locality: Tilgate Forest, near Cuckfield
-          region: England
-          formation: Tunbridge Wells Sand
-          coordinates:
-            - 51.086388
-            - -0.172222
-          region_code: GB-ENG
+          region: West Sussex
+          formation: Grinstead Clay
+          region_code: GB-WSX
         type_specimen:
           specimen_id:
             - NHMUK PV R 36536
@@ -159058,6 +159096,16 @@ genera:
         pages: 211-300
         doi: 10.1080/14772019.2011.630927
         notes: Referred Suchosaurus material to Baryonychinae but regarded it as a nomen dubium.
+      - id: barker2021a
+        authors: Barker, C. T.; Hone, D. W. E.; Naish, D.; Cau, A.; Lockwood, J. A. F.; Foster, B.; Clarkin, C. E.; Schneider, P.; Gostling, N. J.
+        year: 2021
+        title: New spinosaurids from the Wessex Formation (Early Cretaceous, UK) and the European origins of Spinosauridae
+        journal: Scientific Reports
+        publisher: Springer Science and Business Media LLC
+        volume: "11"
+        issue: "1"
+        doi: 10.1038/s41598-021-97870-8
+        notes: Assigns the holotype tooth to the Grinstead Clay Formation.
     taxonomy:
       - Life
       - Animalia
@@ -159141,10 +159189,10 @@ genera:
           locality: Dry Mesa Quarry
           region: Colorado
           formation: Morrison
-          coordinates:
-            - 38.583099
-            - -108.397202
+          member: Brushy Basin
+          part: lower
           region_code: US-CO
+          part_of: member
         type_specimen:
           specimen_id:
             - BYU 9025
@@ -159321,10 +159369,9 @@ genera:
           locality: Mirror Mesa
           region: New Mexico
           formation: Moreno Hill
-          coordinates:
-            - 35.066666
-            - -108.849998
+          part: lower
           region_code: US-NM
+          part_of: formation
         size:
           length_m:
             min: 3
@@ -159432,9 +159479,6 @@ genera:
           locality: Rattlesnake Ridge Quarry
           region: Montana
           formation: Morrison
-          coordinates:
-            - 45.25
-            - -108.75
           region_code: US-MT
         size:
           hip_height_m:
@@ -159550,13 +159594,12 @@ genera:
           to_ma: 100.5
         location:
           country: CN
-          locality: Jiuquan, Yujingzi Basin
+          locality: Yujingzi Basin
           region: Gansu
           formation: Xiagou
-          coordinates:
-            - 39.928898
-            - 98.500786
+          part: upper
           region_code: CN-GS
+          part_of: formation
         type_specimen:
           specimen_id:
             - FRDC-GSJB-99
@@ -159614,6 +159657,17 @@ genera:
         issue: "1"
         doi: 10.1038/s41598-022-11063-5
         notes: New therizinosaurid description underpinning broader Therizinosaurus-anchored clade definition.
+      - id: you2018a
+        authors: You, H.; Morschhauser, E. M.; Li, D.; Dodson, P.
+        year: 2018
+        title: Introducing the Mazongshan Dinosaur Fauna
+        journal: Journal of Vertebrate Paleontology
+        publisher: Taylor and Francis
+        volume: "38"
+        issue: sup1
+        pages: 1-11
+        doi: 10.1080/02724634.2017.1396995
+        notes: Places the holotype in the gray-variegated beds of the Yujingzi Basin and correlates those beds with the upper Xiagou Formation.
     taxonomy:
       - Life
       - Animalia
@@ -159679,7 +159733,8 @@ genera:
         location:
           country: GB
           region: Cambridgeshire
-          formation: Cambridge Greensand
+          formation: West Melbury Marly Chalk
+          member: Cambridge Greensand
           region_code: GB-CAM
         type_specimen:
           specimen_id:
@@ -159800,6 +159855,24 @@ genera:
         pages: 211-300
         doi: 10.1080/14772019.2011.630927
         notes: Tetanurae phylogeny supporting reassignment of Szechuanosaurus material to Yangchuanosaurus.
+      - id: dong1983a
+        authors: Dong, Z.; Zhou, S.; Zhang, H.
+        year: 1983
+        title: "[Dinosaurs from the Jurassic of Sichuan]"
+        journal: Palaeontologica Sinica, New Series C, Whole Number
+        volume: "162"
+        issue: "23"
+        pages: 1-136
+        notes: Restates the type specimens' position as the Chungking Group and uses the modern spelling Guangyuan for the city and unit.
+      - id: molnar1974a
+        authors: Molnar, R. E.
+        year: 1974
+        title: A distinctive theropod dinosaur from the Upper Cretaceous of Baja California (Mexico)
+        journal: Journal of Paleontology
+        volume: "48"
+        issue: "5"
+        pages: 1009-1017
+        notes: Independently gives the type locality's unit as the Kuangyuan Series, at series rank.
     species:
       - name: Szechuanosaurus campi
         etymology: Honors paleontologist Charles Lewis Camp, who first described a carnivorous dinosaur from the Red Basin of Szechuan
@@ -159813,11 +159886,8 @@ genera:
         location:
           country: CN
           region: Sichuan
-          coordinates:
-            - 32.403481
-            - 105.805908
-          formation: Kuangyuan Series
           locality: Locality 47 (Chentsianyen escarpment), south of Kuangyuan city
+          notes: Young (1942) assigns the type teeth to the Kuangyuan Series, an old rank term with no modern equivalent settled; he and Molnar (1974) both write Series, never Formation. Dong and colleagues (1983) restate the same specimens' position as the Chungking Group, using the modern spelling Guangyuan for the city and unit.
           region_code: CN-SC
         type_specimen:
           specimen_id:
