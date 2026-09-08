@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-09-08T21:27:43.966Z
+  built_at: 2026-09-08T23:48:16.123Z
   clade_count: 188
   genus_count: 1422
   license: CC-BY-4.0
@@ -165237,11 +165237,10 @@ genera:
         location:
           country: GB
           region: City of Bristol
-          formation: Durdham Down fissure fill
-          locality: Quarry Steps Quarry, Clifton, Bristol
+          locality: Quarry Steps Quarry, Clifton
           coordinates:
-            - 51.46
-            - -2.61
+            - 51.4696
+            - -2.6176
           region_code: GB-BST
         size:
           length_m:
@@ -165363,10 +165362,10 @@ genera:
           to_ma: 132.6
         location:
           country: GB
-          region: England
-          locality: Quarry at Southborough, near Tonbridge
-          formation: Hastings Sand
-          region_code: GB-ENG
+          region: Kent
+          locality: Quarry at Southborough
+          group: Hastings Beds
+          region_code: GB-KEN
         erected_in: seeley1882a
         type_specimen:
           specimen_id:
@@ -165450,13 +165449,13 @@ genera:
           to_ma: 100.5
         location:
           country: US
-          locality: Garden of the Gods
+          locality: the ridge extending south towards Colorado City, about 550 m south of the opening between Gateway Rocks
           region: Colorado
           formation: Purgatoire
-          coordinates:
-            - 38.870712
-            - -104.874298
+          member: Lytle
+          part: lower
           region_code: US-CO
+          part_of: member
         size:
           length_m:
             min: 5
@@ -165557,12 +165556,9 @@ genera:
           to_ma: 66
         location:
           country: MN
-          locality: Nemegt
+          locality: fifth quarry, Nemegt
           region: Ömnögovi
           formation: Nemegt
-          coordinates:
-            - 43.491669
-            - 101.275002
           region_code: MN-053
         size:
           hip_height_m:
@@ -165708,12 +165704,9 @@ genera:
           to_ma: 66
         location:
           country: US
-          locality: Dogie Creek
+          locality: Doegie Creek
           region: Wyoming
           formation: Lance
-          coordinates:
-            - 43.299999
-            - -104.366669
           region_code: US-WY
         type_specimen:
           specimen_id:
@@ -165780,7 +165773,7 @@ genera:
           country: US
           region: Montana
           formation: Hell Creek
-          locality: Garfield County (LACM Locality V3152)
+          locality: LACM V3152
           region_code: US-MT
         type_specimen:
           specimen_id:
@@ -166069,12 +166062,12 @@ genera:
         location:
           country: MA
           locality: Boulahfa North
-          region: Fes-Meknes
+          region: Boulemane
           formation: El Mers III
           coordinates:
             - 33.320518
             - -4.712273
-          region_code: MA-03
+          region_code: MA-BOM
         size:
           length_m:
             min: 6
@@ -166164,12 +166157,8 @@ genera:
           to_ma: 93.9
         location:
           country: BR
-          locality: Limoeiro do Norte
           region: Ceará
           formation: Açu
-          coordinates:
-            - -5.155
-            - -38.103001
           region_code: BR-CE
         type_specimen:
           specimen_id:
@@ -166311,9 +166300,12 @@ genera:
             max: 3
         location:
           country: CN
+          locality: Sangonghe Valley
           region: Xinjiang
           formation: Toutunhe
+          part: upper
           region_code: CN-XJ
+          part_of: formation
         type_specimen:
           specimen_id:
             - IVPP V. 10614
@@ -166419,10 +166411,8 @@ genera:
           country: CN
           region: Liaoning
           formation: Tiaojishan
-          locality: Jianchang County
-          coordinates:
-            - 40.868057
-            - 119.991112
+          locality: Yaolugou
+          notes: The describing paper gives only the Jehol Group and an Early Cretaceous age, naming no formation. Liu and colleagues (2012) date a dacite overlying the bed the holotype came from at 158.5 Ma and correlate that bed with their measured Yaolugou section, which is what places the taxon in the Tiaojishan. The tie is a correlation rather than an observation in place, and Yaolugou exposes the Yixian as well, so the assignment is not beyond question.
           region_code: CN-LN
         type_specimen:
           specimen_id:
@@ -166469,6 +166459,16 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
         notes: Source of the hip height estimate, and the appearance features.
+      - id: liu2012a
+        authors: Liu, Y.-Q.; Kuang, H.-W.; Jiang, X.-J.; Peng, N.; Xu, H.; Sun, H.-Y.
+        year: 2012
+        title: Timing of the earliest known feathered dinosaurs and transitional pterosaurs older than the Jehol Biota
+        journal: Palaeogeography, Palaeoclimatology, Palaeoecology
+        publisher: Elsevier
+        volume: 323-325
+        pages: 1-12
+        doi: 10.1016/j.palaeo.2012.01.017
+        notes: Dates a dacite overlying the holotype's bed at 158.5 Ma and correlates it with the Yaolugou section, placing the taxon in the Tiaojishan rather than the Jehol Group.
     taxonomy:
       - Life
       - Animalia
@@ -166538,9 +166538,6 @@ genera:
           locality: Dawangzhangzi
           region: Liaoning
           formation: Yixian
-          coordinates:
-            - 41.366669
-            - 121.416664
           region_code: CN-LN
         size:
           length_m:
@@ -166699,12 +166696,12 @@ genera:
           to_ma: 66
         location:
           country: CN
+          locality: Kangdailiang near Zhaojiagou Village
           region: Shanxi
           formation: Huiquanpu
-          coordinates:
-            - 40.42
-            - 114.09
+          part: upper
           region_code: CN-SX
+          part_of: formation
         type_specimen:
           specimen_id:
             - HBV-10001
@@ -166732,10 +166729,12 @@ genera:
           to_ma: 66
         location:
           country: CN
-          locality: Kangdailiang, Zhaojia Gou Township
+          locality: Kangdailiang, Zhaojiagou Township
           region: Shanxi
           formation: Huiquanpu
+          part: upper
           region_code: CN-SX
+          part_of: formation
         type_specimen:
           specimen_id:
             - HBV-10004
@@ -166852,9 +166851,12 @@ genera:
           to_ma: 143.1
         location:
           country: US
+          locality: near Canyon City
           region: Colorado
           formation: Morrison
+          part: upper
           region_code: US-CO
+          part_of: formation
         type_specimen:
           specimen_id:
             - AMNH 5770
@@ -166935,11 +166937,9 @@ genera:
           to_ma: 154.8
         location:
           country: CN
+          locality: Paikushan
           region: Xinjiang
           formation: Shishugou
-          coordinates:
-            - 45.264999
-            - 89.496002
           region_code: CN-XJ
         type_specimen:
           specimen_id:
@@ -167023,9 +167023,6 @@ genera:
           locality: beach near Plataforma Station
           region: Bahia
           formation: Marfim
-          coordinates:
-            - -12.901111
-            - -38.485558
           region_code: BR-BA
         erected_in: bandeira2024a
         type_specimen:
@@ -167117,8 +167114,8 @@ genera:
           region: Victoria
           formation: Eumeralla
           coordinates:
-            - -38.781387
-            - 143.403885
+            - -38.781389
+            - 143.403889
           region_code: AU-VIC
         size:
           length_m:
@@ -167204,9 +167201,6 @@ genera:
           locality: Dzharakuduk
           region: Navoiy
           formation: Bissekty
-          coordinates:
-            - 42.117294
-            - 62.655315
           region_code: UZ-NW
         size:
           hip_height_m:
@@ -167320,9 +167314,6 @@ genera:
           locality: 5 miles south of Wood Ranch
           region: New Mexico
           formation: Fruitland
-          coordinates:
-            - 36.213001
-            - -108.084198
           region_code: US-NM
         type_specimen:
           specimen_id:
@@ -167456,13 +167447,12 @@ genera:
           to_ma: 66
         location:
           country: AR
-          locality: Norte de Cerro Bayo 2 (10 meters)
+          locality: Norte de Cerro Bayo
           region: Chubut
           formation: La Colonia
-          coordinates:
-            - -42.96389
-            - -67.539169
+          part: middle
           region_code: AR-U
+          part_of: formation
         size:
           length_m:
             min: 6
@@ -167569,9 +167559,7 @@ genera:
           region: Madhya Pradesh
           formation: Lameta
           locality: Bara Simla Hill, near Jabalpur
-          coordinates:
-            - 23.168694
-            - 79.972282
+          bed: Sauropod
           region_code: IN-MP
         type_specimen:
           specimen_id:
