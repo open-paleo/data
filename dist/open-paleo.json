@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-09-09T05:56:27.178Z",
+    "built_at": "2026-09-09T06:45:30.515Z",
     "clade_count": 188,
     "genus_count": 1422,
     "license": "CC-BY-4.0",
@@ -221958,14 +221958,22 @@
     },
     "Unquillosaurus": {
       "genus": "Unquillosaurus",
-      "parent": "Maniraptora",
+      "parent": "Avetheropoda",
       "placement": "incertae sedis",
       "dispute": {
-        "summary": "Unquillosaurus ceibalii is known only from a single pubis and has been placed variously as a carnosaur, a carcharodontosaurid (Carrano et al., 2012), and a maniraptoran; the prevailing recent view treats it as a maniraptoran, possibly a member of Averaptora or Unenlagiinae (Novas and Agnolín, 2004; Agnolín and Novas, 2013). It is a probable nomen dubium and is placed conservatively at Maniraptora incertae sedis.\n",
+        "summary": "Unquillosaurus ceibalii is known only from a single pubis, and its affinities have moved with each rereading of that bone. Powell (1979) took it for a carnosaur; Novas and Agnolín (2004) emended the diagnosis and argued from the pubis for a position within Metornithes, close to Paraves; Carrano et al. (2012) recovered it as a carcharodontosaurid; and Agnolín and Novas (2013), rejecting that referral, judged it probably a very large averaptoran, from comparison rather than a scored analysis. What is contested is where it belongs, not whether the bone is diagnosable. It sits at Avetheropoda incertae sedis, the nearest node all four readings share.\n",
         "history": [
           {
             "date": "2026-07-01",
             "note": "Moved from Carcharodontosauridae to Maniraptora incertae sedis following the prevailing maniraptoran interpretation; a nomen dubium."
+          },
+          {
+            "date": "2026-09-08",
+            "note": "Moved from Maniraptora to Avetheropoda incertae sedis. The carcharodontosaurid reading places it in Allosauroidea, outside Coelurosauria, so Maniraptora took one side of the dispute rather than sitting above it."
+          },
+          {
+            "date": "2026-09-08",
+            "note": "Status changed from nomen dubium to valid. The only work calling it doubtful is a reference-work table tag; the primary treatments each argue a placement from autapomorphies of the pubis, and Novas and Agnolín emend its diagnosis."
           }
         ]
       },
@@ -221973,11 +221981,19 @@
         "phonetic": "oong-KEE-yo-SAWR-us"
       },
       "etymology": "Named for the Unquillo River of Salta Province, Argentina, combined with Greek 'sauros' meaning 'lizard'.",
-      "description": "Unquillosaurus is a genus of large theropod dinosaur from the Late Cretaceous Los Blanquitos Formation of Salta Province, Argentina. Its precise classification is uncertain, but most researchers consider it as a maniraptoran. The genus contains a single species, U. ceibalii, known only from a single fossilized pubis (a pelvic bone).",
+      "description": "Unquillosaurus is a genus of large theropod dinosaur from the Late Cretaceous Los Blanquitos Formation of Salta Province, Argentina. Its precise classification is uncertain, but most researchers consider it as a maniraptoran, though a carcharodontosaurid position has also been argued from the same bone. The genus contains a single species, U. ceibalii, known only from a single fossilized pubis (a pelvic bone).",
       "diet": "carnivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
         "fluvial"
+      ],
+      "diagnostic_features": [
+        "Pubis proportionally long and slender, and at 51.4 cm longer than in basal maniraptorans such as Deinonychus and Unenlagia",
+        "Pubic shaft craniocaudally compressed over its proximal three quarters rather than rod-like, raising a prominent longitudinal ridge on the external surface",
+        "Compression of the proximal shaft giving way to craniocaudal expansion distally, twisting the bone along its length, where most theropods have nearly parallel shaft margins",
+        "Margins of the pelvic canal medially convex, against the medially concave margins of most theropods",
+        "Pubic shaft without an apron and lacking a medial symphysis, contact with the opposite bone reduced to a medially flattened distal end that bears no articular marks",
+        "Apex of the caudal process of the pubic foot curved dorsally, a condition absent in other theropods"
       ],
       "appearance": {
         "integument": "scaled",
@@ -222005,17 +222021,18 @@
         {
           "name": "Unquillosaurus ceibalii",
           "etymology": "Named for the town El Ceibal, near the site where the holotype was found.",
-          "status": "nomen dubium",
+          "status": "valid",
           "type_species": true,
           "period": {
             "name": [
               "Late Cretaceous"
             ],
             "stage": [
-              "Campanian"
+              "Campanian",
+              "Maastrichtian"
             ],
             "from_ma": 83.6,
-            "to_ma": 72.2
+            "to_ma": 66
           },
           "location": {
             "country": "AR",
@@ -222032,7 +222049,7 @@
             ],
             "specimen_type": "holotype",
             "institution": "Colección de Paleontologia de Vertebrados de la Fundación Instituto Miguel Lillo",
-            "material": "Left pubis: long and slender with proximal expansion cut by canal in anterolateral part; obturator foramen open; external shaft crossed by prominent longitudinal crest; pubic foot without anterior projection",
+            "material": "Almost complete left pubis, with a broken fragment of the ilium's pubic pedicle adhered to the external surface of its proximal end.",
             "completeness": "fragmentary"
           },
           "size": {
@@ -222042,6 +222059,7 @@
             }
           },
           "erected_in": "powell1979a",
+          "described_in": "novas2004c",
           "authors": "Powell, J. E.",
           "described": 1979
         }
@@ -222089,7 +222107,7 @@
           "issue": "1",
           "pages": "61–66",
           "doi": "10.22179/REVMACN.6.73",
-          "notes": "Treated Unquillosaurus as a giant maniraptoran possibly belonging to Averaptora or Unenlagiinae"
+          "notes": "Emends the diagnosis from the holotype pubis and argues from its characters for a position within Metornithes, close to Paraves, against Powell's reading of the bone as a carnosaur's."
         },
         {
           "id": "agnolín2013a",
@@ -222099,7 +222117,7 @@
           "book": "SpringerBriefs in Earth System Sciences",
           "publisher": "Springer Netherlands",
           "doi": "10.1007/978-94-007-5637-3",
-          "notes": "Treated Unquillosaurus as a maniraptoran, possibly within Averaptora or Unenlagiinae."
+          "notes": "Rejects the carcharodontosaurid referral and judges Unquillosaurus probably a very large averaptoran, from comparison rather than a scored analysis."
         }
       ],
       "taxonomy": [
@@ -222117,9 +222135,7 @@
         "Neotheropoda",
         "Averostra",
         "Tetanurae",
-        "Avetheropoda",
-        "Coelurosauria",
-        "Maniraptora"
+        "Avetheropoda"
       ],
       "authors": "Powell, J. E.",
       "described": 1979
