@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-09-08T23:48:16.123Z
+  built_at: 2026-09-09T03:57:12.969Z
   clade_count: 188
   genus_count: 1422
   license: CC-BY-4.0
@@ -167805,12 +167805,9 @@ genera:
           to_ma: 66
         location:
           country: MN
-          locality: Nemegt locality
+          locality: Nemegt
           region: Ömnögovi
           formation: Nemegt
-          coordinates:
-            - 43.491669
-            - 101.275002
           region_code: MN-053
         type_specimen:
           specimen_id:
@@ -167916,12 +167913,9 @@ genera:
           to_ma: 174.7
         location:
           country: CN
-          locality: Tongbao village, Tong'an
+          locality: Tong'an
           region: Sichuan
           formation: Yimen
-          coordinates:
-            - 26.343056
-            - 102.144447
           region_code: CN-SC
         size:
           weight_kg:
@@ -168023,13 +168017,15 @@ genera:
           to_ma: 143.1
         location:
           country: CN
-          locality: Dafo Street, Tongnan
+          locality: building site of Dafo Street
           region: Chongqing
           formation: Suining
+          part: lower
           coordinates:
-            - 30.178888
-            - 105.804726
+            - 30.178889
+            - 105.804722
           region_code: CN-CQ
+          part_of: formation
         size:
           length_m:
             min: 25
@@ -168120,9 +168116,6 @@ genera:
           locality: No. 3 high school of Ganxian
           region: Jiangxi
           formation: Nanxiong
-          coordinates:
-            - 25.86861
-            - 115
           region_code: CN-JX
         size:
           length_m:
@@ -168243,9 +168236,7 @@ genera:
           locality: Tendaguru Quarry A
           region: Lindi
           formation: Tendaguru
-          coordinates:
-            - -9.710123
-            - 39.228096
+          member: Upper Dinosaur
           region_code: TZ-12
         size:
           hip_height_m:
@@ -168310,6 +168301,17 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
         notes: Source of the hip height estimate, and the appearance features.
+      - id: remes2006a
+        authors: Remes, K.
+        year: 2006
+        title: Revision of the Tendaguru sauropod dinosaur Tornieria africana (Fraas) and its relevance for sauropod paleobiogeography
+        journal: Journal of Vertebrate Paleontology
+        publisher: Taylor and Francis
+        volume: "26"
+        issue: "3"
+        pages: 651-669
+        doi: 10.1671/0272-4634(2006)26[651:ROTTSD]2.0.CO;2
+        notes: Revises the genus and places the holotype in the Upper Saurian Beds, the former name of the Upper Dinosaur Member.
     taxonomy:
       - Life
       - Animalia
@@ -168390,12 +168392,9 @@ genera:
           to_ma: 66
         location:
           country: US
-          locality: north side, Lightning Creek
+          locality: north side of Lightning Creek, about 2 miles above the mouth of that stream
           region: Wyoming
           formation: Lance
-          coordinates:
-            - 43.230537
-            - -104.649361
           region_code: US-WY
         type_specimen:
           specimen_id:
@@ -168576,10 +168575,10 @@ genera:
           locality: Dry Mesa Quarry
           region: Colorado
           formation: Morrison
-          coordinates:
-            - 38.583099
-            - -108.397202
+          member: Brushy Basin
+          part: lower
           region_code: US-CO
+          part_of: member
         type_specimen:
           specimen_id:
             - BYU 2002
@@ -168614,7 +168613,7 @@ genera:
           region: Lisbon
           formation: Lourinhã
           member: Praia da Amoreira-Porto Novo
-          locality: Praia da Vermelha, Lourinhã
+          locality: Praia da Vermelha
           region_code: PT-11
         type_specimen:
           specimen_id:
@@ -168738,12 +168737,9 @@ genera:
           to_ma: 72.2
         location:
           country: MX
-          locality: Rancho Corral de Enmedio
+          locality: 1 km east-southeast of Rancho Corral de Enmedio
           region: Sonora
           formation: Packard Shale
-          coordinates:
-            - 31.263472
-            - -110.357841
           region_code: MX-SON
         type_specimen:
           specimen_id:
@@ -168857,10 +168853,7 @@ genera:
           country: US
           region: Montana
           formation: Judith River
-          locality: Bad lands of the Judith River, Nebraska Territory (modern Montana)
-          coordinates:
-            - 47.5
-            - -109.5
+          locality: the mouth of the Judith River where it enters the Missouri
           region_code: US-MT
         type_specimen:
           specimen_id:
@@ -168950,10 +168943,12 @@ genera:
           locality: Violante farm
           region: Río Negro
           formation: Huincul
+          part: upper
           coordinates:
-            - -39.397778
-            - -68.617775
+            - -39.397881
+            - -68.617861
           region_code: AR-R
+          part_of: formation
         size:
           length_m:
             min: 4
@@ -169058,12 +169053,9 @@ genera:
           to_ma: 66
         location:
           country: RO
-          locality: Bărbat River, Pui (2007)
+          locality: Bărbat River Valley, near Pui
           region: Hunedoara
-          formation: Pui Beds
-          coordinates:
-            - 45.493622
-            - 23.092192
+          notes: The unit is known informally as the Pui Beds, a name Augustin and colleagues (2022) keep in scare quotes because it has never been formally erected; Therrien (2005) calls the same rock the Barbat Formation, equally informally. Earlier work assigned these deposits to the Sanpetru Formation.
           region_code: RO-HD
         erected_in: augustin2022a
         type_specimen:
@@ -169163,11 +169155,9 @@ genera:
           to_ma: 83.6
         location:
           country: AR
+          locality: Los Pilares-Tratayén
           region: Neuquén
           formation: Bajo de la Carpa
-          coordinates:
-            - -38.434921
-            - -68.615379
           region_code: AR-Q
         size:
           length_m:
@@ -169255,13 +169245,12 @@ genera:
           to_ma: 83.6
         location:
           country: AR
-          locality: Sitio Trauku, Loma de la Lata
+          locality: Sitio Trauku
           region: Neuquén
           formation: Bajo de la Carpa
-          coordinates:
-            - -38.49762
-            - -68.709045
+          part: lower
           region_code: AR-Q
+          part_of: formation
         size:
           length_m:
             min: 24
@@ -169381,10 +169370,7 @@ genera:
           country: US
           region: Wyoming
           formation: Lance
-          locality: Niobrara County
-          coordinates:
-            - 43.3
-            - -104.6
+          locality: the canyon entering Buck Creek from the west, about 100 yards above Hatchers Springs, at the Johnson Brothers' sheep ranch
           region_code: US-WY
         size:
           length_m:
@@ -169437,8 +169423,10 @@ genera:
           country: US
           region: Wyoming
           formation: Lance
-          locality: Niobrara County
+          locality: north side of Dry Creek, about 3 miles above its mouth into Lance Creek, about 100 yards above the site of YPM 1823
+          part: middle
           region_code: US-WY
+          part_of: formation
         type_specimen:
           specimen_id:
             - YPM 1822
@@ -169694,11 +169682,9 @@ genera:
           to_ma: 66
         location:
           country: US
+          locality: HC-557
           region: Montana
           formation: Hell Creek
-          coordinates:
-            - 47.646389
-            - -106.379166
           region_code: US-MT
         type_specimen:
           specimen_id:
@@ -169794,11 +169780,9 @@ genera:
           to_ma: 66
         location:
           country: BR
+          locality: Caieira
           region: Minas Gerais
           formation: Serra da Galga
-          coordinates:
-            - -19.601944
-            - -47.615833
           region_code: BR-MG
         type_specimen:
           specimen_id:
@@ -169920,11 +169904,10 @@ genera:
           to_ma: 149.2
         location:
           country: PT
+          locality: Porto Dinheiro
           region: Lisbon
           formation: Lourinhã
-          coordinates:
-            - 39.216393
-            - -9.343696
+          member: Praia da Amoreira-Porto Novo
           region_code: PT-11
         size:
           length_m:
@@ -170033,11 +170016,9 @@ genera:
           to_ma: 72.2
         location:
           country: AQ
-          locality: DG6-1, Santa Marta Cove
+          locality: Santa Marta Cove
           formation: Snow Hill Island
-          coordinates:
-            - -63.926666
-            - -57.814167
+          member: Gamma
         size:
           weight_kg:
             min: 21
@@ -170143,11 +170124,12 @@ genera:
           to_ma: 125.77
         location:
           country: BR
+          locality: Areias Farm
           region: Paraíba
           formation: Rio Piranhas
           coordinates:
             - -6.698056
-            - -38.540279
+            - -38.540278
           region_code: BR-PB
         type_specimen:
           specimen_id:
