@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-09-09T18:29:18.912Z",
+    "built_at": "2026-09-09T20:03:44.669Z",
     "clade_count": 188,
     "genus_count": 1422,
     "license": "CC-BY-4.0",
@@ -102475,7 +102475,7 @@
             "country": "GB",
             "region": "West Sussex",
             "locality": "Rudgwick Brickworks Company quarry",
-            "group": "Weald Clay",
+            "formation": "Weald Clay",
             "coordinates": [
               51.0978,
               -0.4519
@@ -226920,8 +226920,14 @@
           },
           "location": {
             "country": "JP",
+            "locality": "Sengokukyo",
             "region": "Fukuoka",
+            "group": "Kwanmon",
             "formation": "Sengoku",
+            "coordinates": [
+              33.695833,
+              130.641389
+            ],
             "region_code": "JP-40"
           },
           "type_specimen": {
@@ -227026,10 +227032,7 @@
             "region": "New South Wales",
             "locality": "Lightning Ridge, near Walgett",
             "formation": "Griman Creek",
-            "coordinates": [
-              -29.4333,
-              147.983307
-            ],
+            "member": "Wallangulla Sandstone",
             "region_code": "AU-NSW"
           },
           "type_specimen": {
@@ -227141,13 +227144,10 @@
           },
           "location": {
             "country": "TZ",
-            "locality": "Tendaguru Quarry G",
+            "locality": "Quarry G",
             "region": "Lindi",
             "formation": "Tendaguru",
-            "coordinates": [
-              -9.708957,
-              39.228508
-            ],
+            "member": "Upper Dinosaur",
             "region_code": "TZ-12"
           },
           "type_specimen": {
@@ -227323,14 +227323,12 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Yansi, Jingxian",
+            "locality": "Yansi",
             "region": "Anhui",
             "formation": "Xiaoyan",
-            "coordinates": [
-              29.821943,
-              118.337502
-            ],
-            "region_code": "CN-AH"
+            "part": "upper",
+            "region_code": "CN-AH",
+            "part_of": "formation"
           },
           "size": {
             "length_m": {
@@ -227468,13 +227466,10 @@
           },
           "location": {
             "country": "AU",
-            "locality": "Wee Warra mine",
+            "locality": "Wee Warra",
             "region": "New South Wales",
             "formation": "Griman Creek",
-            "coordinates": [
-              -29.742399,
-              147.719299
-            ],
+            "member": "Wallangulla Sandstone",
             "region_code": "AU-NSW"
           },
           "erected_in": "bell2018a",
@@ -227590,13 +227585,12 @@
           "location": {
             "country": "DE",
             "region": "Bavaria",
-            "locality": "Eichstätt",
-            "formation": "Solnhofen Limestone",
-            "coordinates": [
-              48.892,
-              11.184
-            ],
-            "region_code": "DE-BY"
+            "locality": "Altmühl Valley",
+            "formation": "Solnhofen Lithographic Limestone",
+            "part": "upper",
+            "notes": "Elzanowski (2001) gives the type horizon as unknown and this unit only as a probable one, and Wellnhofer (1993) confirms that precise formation and locality data were never recorded for the specimen. Foth and colleagues (2025) place the lithology in the Altmühltal Formation, which is divided into an Eichstätt and a Solnhofen member.",
+            "region_code": "DE-BY",
+            "part_of": "formation"
           },
           "type_specimen": {
             "specimen_type": "holotype",
@@ -227738,14 +227732,12 @@
           },
           "location": {
             "country": "CA",
-            "locality": "Pinhorn Provincial Grazing Reserve",
+            "locality": "South Side Ceratopsian bonebed",
             "region": "Alberta",
             "formation": "Oldman",
-            "coordinates": [
-              49.120899,
-              -110.862686
-            ],
-            "region_code": "CA-AB"
+            "part": "lower",
+            "region_code": "CA-AB",
+            "part_of": "formation"
           },
           "size": {
             "length_m": {
@@ -227875,14 +227867,12 @@
           },
           "location": {
             "country": "DE",
-            "locality": "Pott Quarry, Lutternsche Egge",
+            "locality": "Pott quarry, Lutternsche Egge",
             "region": "North Rhine-Westphalia",
             "formation": "Ornatenton",
-            "coordinates": [
-              52.25861,
-              8.814444
-            ],
-            "region_code": "DE-NW"
+            "part": "middle",
+            "region_code": "DE-NW",
+            "part_of": "formation"
           },
           "size": {
             "length_m": {
@@ -228005,9 +227995,12 @@
           },
           "location": {
             "country": "AR",
+            "locality": "Salitral Moreno",
             "region": "Río Negro",
             "formation": "Allen",
-            "region_code": "AR-R"
+            "part": "lower",
+            "region_code": "AR-R",
+            "part_of": "formation"
           },
           "type_specimen": {
             "specimen_id": [
@@ -228145,11 +228138,13 @@
             "locality": "Triangle Paddock, Elderslie Station",
             "region": "Queensland",
             "formation": "Winton",
+            "part": "lower",
             "coordinates": [
-              -22.25,
-              142.483337
+              -22.290561,
+              142.471897
             ],
-            "region_code": "AU-QLD"
+            "region_code": "AU-QLD",
+            "part_of": "formation"
           },
           "type_specimen": {
             "specimen_id": [
@@ -228319,11 +228314,7 @@
             "country": "CN",
             "region": "Yunnan",
             "formation": "Yubacun",
-            "locality": "Wande Town, Wuding County",
-            "coordinates": [
-              26.00127,
-              102.172684
-            ],
+            "locality": "Wande Town",
             "region_code": "CN-YN"
           },
           "type_specimen": {
@@ -228438,14 +228429,13 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Wuerho",
+            "locality": "Wuerho, field locality 64043-5",
             "region": "Xinjiang",
+            "group": "Tugulu",
             "formation": "Lianmuqin",
-            "coordinates": [
-              46.043884,
-              85.792046
-            ],
-            "region_code": "CN-XJ"
+            "part": "lower",
+            "region_code": "CN-XJ",
+            "part_of": "formation"
           },
           "size": {
             "length_m": {
@@ -228640,14 +228630,16 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Wulaga bonebed",
+            "locality": "Western hill adjacent to the grain depot of Wulaga Town",
             "region": "Heilongjiang",
             "formation": "Yuliangzi",
+            "part": "upper",
             "coordinates": [
-              48.394722,
-              130.145828
+              48.394694,
+              130.145722
             ],
-            "region_code": "CN-HL"
+            "region_code": "CN-HL",
+            "part_of": "formation"
           },
           "size": {
             "length_m": {
@@ -228785,12 +228777,12 @@
           },
           "location": {
             "country": "CN",
-            "locality": "The Gate, Bayan Mandahu",
+            "locality": "The Gate",
             "region": "Inner Mongolia",
-            "formation": "Wulansuhai",
+            "formation": "Bayan Mandahu",
             "coordinates": [
-              41.741943,
-              106.745003
+              41.7439,
+              106.7444
             ],
             "region_code": "CN-NM"
           },
@@ -228940,10 +228932,6 @@
             "locality": "Shangheshou",
             "region": "Liaoning",
             "formation": "Jiufotang",
-            "coordinates": [
-              43.636063,
-              120.427139
-            ],
             "region_code": "CN-LN"
           },
           "size": {
@@ -229081,13 +229069,11 @@
           },
           "location": {
             "country": "GB",
-            "region": "England",
+            "locality": "Henfield",
+            "region": "West Sussex",
             "formation": "Weald Clay",
-            "coordinates": [
-              50.929722,
-              -0.269444
-            ],
-            "region_code": "GB-ENG"
+            "notes": "Harrison and Walker (1973) described a specimen J. F. Wyley had already collected and reported his account of where it came from. Their placement of it some 500 to 600 feet below the top of the formation rests on a regional ostracod correlation rather than on a record of the find point.",
+            "region_code": "GB-WSX"
           },
           "type_specimen": {
             "specimen_id": [
