@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-09-09T04:50:08.471Z
+  built_at: 2026-09-09T04:53:43.925Z
   clade_count: 188
   genus_count: 1422
   license: CC-BY-4.0
@@ -170275,10 +170275,7 @@ genera:
           country: US
           locality: Judith River badlands
           region: Montana
-          formation: Two Medicine
-          coordinates:
-            - 48.633301
-            - -113.75
+          formation: Judith River
           region_code: US-MT
         size:
           length_m:
@@ -170421,10 +170418,7 @@ genera:
           country: MN
           locality: Xanadu, Ukhaa Tolgod
           region: Ömnögovi
-          formation: Djadokhta
-          coordinates:
-            - 43.664444
-            - 100.901947
+          formation: Djadochta
           region_code: MN-053
         type_specimen:
           specimen_id:
@@ -170534,12 +170528,9 @@ genera:
           to_ma: 83.6
         location:
           country: MN
-          locality: Tsagan-Teg
+          locality: Tsagaan Teeg
           region: Dornogovi
-          formation: Baynshire
-          coordinates:
-            - 44.483299
-            - 110.033302
+          formation: Bayanshiree
           region_code: MN-063
         size:
           length_m:
@@ -170572,6 +170563,17 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
         notes: Source of the appearance features.
+      - id: arbour2015a
+        authors: Arbour, V. M.; Currie, P. J.
+        year: 2015
+        title: Systematics, phylogeny and palaeobiogeography of the ankylosaurid dinosaurs
+        journal: Journal of Systematic Palaeontology
+        publisher: Informa UK Limited
+        volume: "14"
+        issue: "5"
+        pages: 385-444
+        doi: 10.1080/14772019.2015.1059985
+        notes: Reproduces the holotype's locality and age, giving the site as Tsagan-Teg in the southeastern Gobi.
     taxonomy:
       - Life
       - Animalia
@@ -170629,12 +170631,9 @@ genera:
           to_ma: 72.2
         location:
           country: CN
-          locality: Hsikou, Chinkangkou, Laiyang
+          locality: Chingkankou
           region: Shandong
           formation: Jingangkou
-          coordinates:
-            - 36.886501
-            - 120.658997
           region_code: CN-SD
         size:
           length_m:
@@ -170750,11 +170749,9 @@ genera:
           to_ma: 205.7
         location:
           country: DE
+          locality: Obere Mühle
           region: Baden-Württemberg
           formation: Trossingen
-          coordinates:
-            - 48.066669
-            - 8.65
           region_code: DE-BW
         type_specimen:
           specimen_id:
@@ -170856,12 +170853,9 @@ genera:
           to_ma: 113.2
         location:
           country: CN
-          locality: Wuerho, IVPP site 64041
+          locality: Wuerho, field locality 64041-2
           region: Xinjiang
           formation: Lianmuqin
-          coordinates:
-            - 46.043884
-            - 85.792046
           region_code: CN-XJ
         type_specimen:
           specimen_id:
@@ -171004,13 +170998,10 @@ genera:
           to_ma: 154.8
         location:
           country: CN
-          locality: Wujiaba Dam Quarry, Zigong
+          locality: Wujiaba
           region: Sichuan
           formation: Shaximiao
           part: upper
-          coordinates:
-            - 28.351944
-            - 104.781944
           region_code: CN-SC
           part_of: formation
         type_specimen:
@@ -171129,10 +171120,9 @@ genera:
           locality: CBI-27, Dzharakuduk II
           region: Navoiy
           formation: Bissekty
-          coordinates:
-            - 42.117294
-            - 62.655315
+          part: lower
           region_code: UZ-NW
+          part_of: formation
         size:
           hip_height_m:
             min: 0.9
@@ -171276,12 +171266,12 @@ genera:
         location:
           country: ES
           locality: Barrihonda-El Humero, RD-10
-          region: Aragon
+          region: Teruel
           formation: Villar del Arzobispo
           coordinates:
             - 40.12727
             - -1.133307
-          region_code: ES-AR
+          region_code: ES-TE
         size:
           hip_height_m:
             min: 6.7
@@ -171404,9 +171394,6 @@ genera:
           locality: Khulsan, Central Cliffs, site 10
           region: Ömnögovi
           formation: Baruungoyot
-          coordinates:
-            - 43.50032
-            - 101.130188
           region_code: MN-053
         size:
           length_m:
@@ -171509,12 +171496,13 @@ genera:
           to_ma: 113.2
         location:
           country: JP
-          locality: Kitadani Dinosaur Quarry (lower, BB I)
+          locality: Kitadani Dinosaur Quarry
           region: Fukui
           formation: Kitadani
+          bed: Bonebed I
           coordinates:
-            - 36.121387
-            - 136.544724
+            - 36.121639
+            - 136.544833
           region_code: JP-18
         type_specimen:
           specimen_id:
@@ -171630,10 +171618,7 @@ genera:
           country: US
           region: Montana
           formation: Hell Creek
-          locality: Dawson County
-          coordinates:
-            - 47.5
-            - -106.4
+          locality: Quarry No. 1, near Jordan
           region_code: US-MT
         size:
           hip_height_m:
@@ -171937,12 +171922,9 @@ genera:
           to_ma: 100.5
         location:
           country: AR
-          locality: La Juanita Estancia, Pablo site
+          locality: La Juanita farm
           region: Chubut
           formation: Cerro Barcino
-          coordinates:
-            - -43.783333
-            - -68.833336
           region_code: AR-U
         type_specimen:
           specimen_id:
