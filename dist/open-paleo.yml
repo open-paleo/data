@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-09-09T04:53:43.925Z
+  built_at: 2026-09-09T05:38:35.995Z
   clade_count: 188
   genus_count: 1422
   license: CC-BY-4.0
@@ -172032,10 +172032,12 @@ genera:
           locality: BR-050 B (km 153)
           region: Minas Gerais
           formation: Serra da Galga
+          part: upper
           coordinates:
-            - -19.592501
-            - -48.028332
+            - -19.5925
+            - -48.028333
           region_code: BR-MG
+          part_of: formation
         size:
           weight_kg:
             min: 20000
@@ -172202,12 +172204,9 @@ genera:
           to_ma: 72.2
         location:
           country: MN
-          locality: Udan-Sayr
+          locality: Üüden Sair
           region: Ömnögovi
-          formation: Djadokhta
-          coordinates:
-            - 42.083332
-            - 102.166664
+          formation: Djadochta
           region_code: MN-053
         size:
           length_m:
@@ -172309,12 +172308,9 @@ genera:
           to_ma: 83.6
         location:
           country: UY
-          locality: 20 km SE of Quebracho town
+          locality: Araújo
           region: Paysandú Department
           formation: Guichón
-          coordinates:
-            - -31.974722
-            - -57.733612
           region_code: UY-PA
         type_specimen:
           specimen_id:
@@ -172434,11 +172430,10 @@ genera:
           country: KR
           region: North Gyeongsang
           formation: Gugyedong
-          locality: Roadside cliff near Bongam pass, ~1.6 km SW of Tabri station, Euiseong-gun (Hayang Group)
-          coordinates:
-            - 36.4
-            - 128.8
+          locality: roadside cliff near Bongam pass, 1.6 km southwest of Tabri station, Geumseong-myeon, Euiseong-gun
+          part: lower
           region_code: KR-47
+          part_of: formation
         type_specimen:
           specimen_id:
             - DGBU-1973
@@ -172533,9 +172528,6 @@ genera:
           locality: Dzharakuduk
           region: Navoiy
           formation: Bissekty
-          coordinates:
-            - 42.117294
-            - 62.655315
           region_code: UZ-NW
         size:
           hip_height_m:
@@ -172681,8 +172673,8 @@ genera:
           region: Rio Grande do Sul
           formation: Caturrita
           coordinates:
-            - -29.601389
-            - -53.856945
+            - -29.601556
+            - -53.857028
           region_code: BR-RS
         type_specimen:
           specimen_id:
@@ -172806,9 +172798,6 @@ genera:
           locality: Sierra del Portezuelo
           region: Neuquén
           formation: Portezuelo
-          coordinates:
-            - -38.453194
-            - -68.724556
           region_code: AR-Q
         type_specimen:
           specimen_id:
@@ -172846,8 +172835,10 @@ genera:
           country: AR
           region: Neuquén
           formation: Portezuelo
-          locality: Futalognko site, Lago Barreales
+          locality: Futalognko site
+          part: upper
           region_code: AR-Q
+          part_of: formation
         type_specimen:
           specimen_id:
             - MUCPv-349
@@ -172963,10 +172954,9 @@ genera:
           locality: Bonebed 55
           region: Alberta
           formation: Dinosaur Park
-          coordinates:
-            - 50.814602
-            - -111.574997
+          part: middle
           region_code: CA-AB
+          part_of: formation
         size:
           length_m:
             min: 1
@@ -173059,13 +173049,12 @@ genera:
           to_ma: 72.2
         location:
           country: AR
-          locality: Arroyo El Morterito
+          locality: Arroyo Morterito
           region: Salta
           formation: Los Blanquitos
-          coordinates:
-            - -24.299999
-            - -65.26667
+          part: upper
           region_code: AR-A
+          part_of: formation
         type_specimen:
           specimen_id:
             - PVL 3670-11
@@ -173181,10 +173170,12 @@ genera:
           locality: Phu Noi
           region: Kalasin
           formation: Phu Kradung
+          part: lower
           coordinates:
-            - 16.65
-            - 102.25
+            - 16.93298
+            - 103.72327
           region_code: TH-46
+          part_of: formation
         type_specimen:
           specimen_id:
             - PRC 460
@@ -173394,13 +173385,12 @@ genera:
           to_ma: 66
         location:
           country: RO
-          locality: Site VI, Pareu Buduron, Valióra
+          locality: Locality VI of Kadić
           region: Hunedoara
           formation: Densuș-Ciula
-          coordinates:
-            - 45.616669
-            - 22.783331
+          part: middle
           region_code: RO-HD
+          part_of: formation
         size:
           length_m:
             min: 8.8
@@ -173507,9 +173497,6 @@ genera:
           country: US
           region: Utah
           formation: Kaiparowits
-          coordinates:
-            - 37.629166
-            - -111.860275
           region_code: US-UT
         size:
           length_m:
@@ -173614,14 +173601,11 @@ genera:
           to_ma: 132.6
         location:
           country: US
-          locality: Robert Gaston Quarry
+          locality: Gaston Quarry
           region: Utah
           formation: Cedar Mountain
           member: Yellow Cat
           part: upper
-          coordinates:
-            - 38.826099
-            - -109.567902
           region_code: US-UT
           part_of: member
         type_specimen:
@@ -173673,6 +173657,16 @@ genera:
         title: The Princeton Field Guide to Dinosaurs (3rd ed.)
         publisher: Princeton University Press
         notes: Source of the appearance features.
+      - id: kirkland2016a
+        authors: Kirkland, J. I.; Suarez, M.; Suarez, C.; Hunt-Foster, R.
+        year: 2016
+        title: The Lower Cretaceous in east-central Utah — the Cedar Mountain Formation and its bounding strata
+        journal: Geology of the Intermountain West
+        publisher: Utah Geological Association
+        volume: "3"
+        pages: 101-228
+        doi: 10.31711/giw.v3.pp101-228
+        notes: Places the Gaston Quarry in the medial upper Yellow Cat Member, which the 1993 description predates by four years.
     taxonomy:
       - Life
       - Animalia
