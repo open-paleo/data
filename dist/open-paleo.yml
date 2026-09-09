@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-09-09T06:45:30.515Z
+  built_at: 2026-09-09T16:11:25.117Z
   clade_count: 188
   genus_count: 1422
   license: CC-BY-4.0
@@ -173413,13 +173413,17 @@ genera:
         type_specimen:
           specimen_id:
             - SZTFH Ob.3090B
+            - SZTFH Ob.3090D
+            - SZTFH Ob.3090G
+            - SZTFH Ob.3090H
             - SZTFH Ob.3104
             - SZTFH Ob.3103
             - SZTFH Ob.3095
-          specimen_type: syntype
+          specimen_type: holotype
           institution: Hungarian Geological Survey
-          material: Four posterior-distal caudal vertebrae, incomplete right humerus, incomplete right and left femur, left metatarsal I.
+          material: Four posterior-distal caudal vertebrae, an incomplete right humerus, an incomplete right femur with a fragment of the left, and a left metatarsal I.
           completeness: fragmentary
+          notes: Eight vertebrae were collected from the caudal series and four are now missing; the four that remain preserve only the centra and the bases of the neural arches.
         authors: Díaz, V. D.; Mannion, P. D.; Csiki-Sava, Z.; Upchurch, P.
         described: 2025
     references:
@@ -173910,13 +173914,12 @@ genera:
           to_ma: 72.2
         location:
           country: CA
-          locality: Southwest of Irvine
+          locality: 4.2 km southwest of Irvine
           region: Alberta
           formation: Dinosaur Park
-          coordinates:
-            - 49.950001
-            - -110.26667
+          part: upper
           region_code: CA-AB
+          part_of: formation
         size:
           length_m:
             min: 4.5
@@ -174027,11 +174030,13 @@ genera:
           to_ma: 66
         location:
           country: MG
+          locality: MAD 96-07
           region: Mahajanga
           formation: Maevarano
+          member: Anembalemba
           coordinates:
-            - -15.9
-            - 46.583332
+            - -15.915667
+            - 46.595306
           region_code: MG-M
         size:
           length_m:
@@ -174137,13 +174142,10 @@ genera:
           to_ma: 132.6
         location:
           country: GB
-          locality: near Cuckfield
-          region: England
-          formation: Tunbridge Wells Sand
-          coordinates:
-            - 51.086388
-            - -0.172222
-          region_code: GB-ENG
+          locality: Cuckfield
+          region: West Sussex
+          formation: Grinstead Clay
+          region_code: GB-WSX
         type_specimen:
           specimen_id:
             - BMNH R2559
@@ -174273,13 +174275,11 @@ genera:
           to_ma: 121.4
         location:
           country: GB
-          locality: Hypsilophodon Bed, Cowleaze Chine
-          region: England
+          locality: Cowleaze Chine
+          region: Isle of Wight
           formation: Wessex
-          coordinates:
-            - 50.630554
-            - -1.404167
-          region_code: GB-ENG
+          bed: Hypsilophodon
+          region_code: GB-IOW
         type_specimen:
           specimen_id:
             - NHMUK PV R 185
@@ -174422,13 +174422,10 @@ genera:
           to_ma: 121.4
         location:
           country: ES
-          locality: Santa Agueda, Vallibona
-          region: Valencian Community
+          locality: Santa Agueda
+          region: Castellón
           formation: Arcillas de Morella
-          coordinates:
-            - 40.583359
-            - 0.033417
-          region_code: ES-VC
+          region_code: ES-CS
         erected_in: malafaia2020b
         type_specimen:
           specimen_id:
@@ -174586,12 +174583,9 @@ genera:
         location:
           country: FR
           locality: Fox-Amphoux-La Bastide Neuve
-          region: Provence-Alpes-Côte d'Azur
+          region: Var
           formation: Grès à Reptiles
-          coordinates:
-            - 43.606697
-            - 6.106141
-          region_code: FR-PAC
+          region_code: FR-83
         size:
           length_m:
             min: 1.6
@@ -174711,9 +174705,6 @@ genera:
           locality: Phu Wat Site A1
           region: Nong Bua Lamphu
           formation: Sao Khua
-          coordinates:
-            - 16.9
-            - 102.541115
           region_code: TH-39
         size:
           weight_kg:
@@ -174820,12 +174811,9 @@ genera:
         location:
           country: GB
           locality: Knock Cliff
-          region: England
+          region: Isle of Wight
           formation: Ferruginous Sands
-          coordinates:
-            - 50.622398
-            - -1.175
-          region_code: GB-ENG
+          region_code: GB-IOW
         size:
           weight_kg:
             min: 200
@@ -174929,13 +174917,16 @@ genera:
           to_ma: 121.4
         location:
           country: GB
-          region: England
-          locality: Isle of Wight
+          region: Isle of Wight
+          locality: Sudmoor Point
           formation: Wessex
+          bed: Sudmoor Point Sandstone
+          part: lower
           coordinates:
-            - 50.666668
-            - -1.333333
-          region_code: GB-ENG
+            - 50.632056
+            - -1.477028
+          region_code: GB-IOW
+          part_of: bed
         type_specimen:
           specimen_id:
             - IWCMS 2023.102
@@ -175017,13 +175008,11 @@ genera:
           to_ma: 121.4
         location:
           country: GB
-          locality: foreshore, Chilton Chine
-          region: England
+          locality: 50 m west of Chilton Chine
+          region: Isle of Wight
           formation: Wessex
-          coordinates:
-            - 50.633999
-            - -1.418
-          region_code: GB-ENG
+          bed: L5
+          region_code: GB-IOW
         type_specimen:
           specimen_id:
             - IWCMS 1996.153
@@ -175123,12 +175112,14 @@ genera:
         location:
           country: GB
           locality: Compton Bay foreshore
-          region: England
+          region: Isle of Wight
           formation: Wessex
+          part: upper
           coordinates:
-            - 50.66
-            - -1.473889
-          region_code: GB-ENG
+            - 50.6602
+            - -1.474028
+          region_code: GB-IOW
+          part_of: formation
         size:
           weight_kg:
             min: 90
@@ -175237,12 +175228,9 @@ genera:
           to_ma: 72.2
         location:
           country: MX
-          locality: Cerro de los Dinosaurios, 7A Quarry
+          locality: 7A Quarry, Cerro de los Dinosaurios
           region: Coahuila
           formation: Cerro del Pueblo
-          coordinates:
-            - 25.5
-            - -101.400276
           region_code: MX-COA
         type_specimen:
           specimen_id:
@@ -175349,10 +175337,7 @@ genera:
           country: PL
           locality: Kocury
           region: Opole Voivodeship
-          formation: Lissauer Breccia
-          coordinates:
-            - 50.775135
-            - 18.420881
+          notes: Huene (1932) took the holotype from the Lissauer Breccia at Kocury, an informal name for a set of breccia horizons at several stratigraphic levels rather than a single erected unit; Skawinski and colleagues (2017) call it the Lisow Breccia and reach no formal name for it either.
           region_code: PL-16
         size:
           length_m:
@@ -175459,12 +175444,9 @@ genera:
         location:
           country: MN
           region: Ömnögovi
-          formation: Djadokhta
+          formation: Djadochta
           member: Bayn Dzak
           locality: Shabarakh Usu (Flaming Cliffs)
-          coordinates:
-            - 44.13
-            - 103.73
           region_code: MN-053
         size:
           hip_height_m:
@@ -175500,8 +175482,8 @@ genera:
         location:
           country: CN
           region: Inner Mongolia
-          formation: Wulansuhai
-          locality: Bayan Mandahu, Urad Houqi
+          formation: Bayan Mandahu
+          locality: quarry SBDE 99BM-III, 15 km north of Bayan Mandahu village
           coordinates:
             - 41.7881
             - 106.7239
@@ -175704,12 +175686,9 @@ genera:
           to_ma: 83.6
         location:
           country: AR
-          locality: Universidad Nacional del Comahue (W)
+          locality: Neuquén city
           region: Neuquén
           formation: Bajo de la Carpa
-          coordinates:
-            - -38.941151
-            - -68.058479
           region_code: AR-Q
         size:
           length_m:
@@ -175800,9 +175779,6 @@ genera:
           region: Utah
           formation: Cedar Mountain
           member: Poison Strip
-          coordinates:
-            - 38.8293
-            - -109.470901
           region_code: US-UT
         type_specimen:
           specimen_id:
@@ -175916,8 +175892,8 @@ genera:
           region: Paraná
           formation: Rio Paraná
           coordinates:
-            - -26.776112
-            - -53.06472
+            - -26.759444
+            - -53.064722
           region_code: BR-PR
         size:
           hip_height_m:
@@ -176022,12 +175998,10 @@ genera:
           to_ma: 149.2
         location:
           country: TZ
-          locality: Tendaguru Quarry St
+          locality: Locality St (EH) of the German Tendaguru Expeditions
           region: Lindi
           formation: Tendaguru
-          coordinates:
-            - -9.679919
-            - 39.213799
+          member: Middle Dinosaur
           region_code: TZ-12
         size:
           hip_height_m:
@@ -176153,12 +176127,9 @@ genera:
           to_ma: 83.6
         location:
           country: AR
-          locality: La Invernada (Bajo de la Carpa)
+          locality: La Invernada
           region: Neuquén
           formation: Bajo de la Carpa
-          coordinates:
-            - -37.593056
-            - -69.315559
           region_code: AR-Q
         size:
           weight_kg:
@@ -176256,9 +176227,6 @@ genera:
           locality: Colozacán Valley
           region: La Rioja
           formation: Los Llanos
-          coordinates:
-            - -30.549999
-            - -66.525002
           region_code: AR-F
         type_specimen:
           specimen_id:
