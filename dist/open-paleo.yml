@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-09-09T20:03:44.669Z
+  built_at: 2026-09-09T23:06:35.045Z
   clade_count: 188
   genus_count: 1422
   license: CC-BY-4.0
@@ -33165,10 +33165,10 @@ genera:
           country: CN
           locality: White Ghost Castle
           region: Gansu
-          group: Xinminpu
-          part: lower
+          formation: Xiagou
+          part: upper
           region_code: CN-GS
-          part_of: group
+          part_of: formation
         type_specimen:
           specimen_id:
             - FRDC-GS GJ (06) 01-18
@@ -33226,6 +33226,16 @@ genera:
         volume: "101"
         doi: 10.1016/j.jsames.2020.102610
         notes: Description of Paraxenisaurus recovered Beishanlong as a basal ornithomimosaur outside Deinocheiridae.
+      - id: suarez2019a
+        authors: Suarez, M. B.; Milder, T.; Peng, N.; Suarez, C. A.; You, H.; Li, D.; Dodson, P.
+        year: 2019
+        title: Chemostratigraphy of the Lower Cretaceous dinosaur-bearing Xiagou and Zhonggou formations, Yujingzi Basin, northwest China
+        journal: Journal of Vertebrate Paleontology
+        volume: "38"
+        issue: sup1
+        pages: 12-21
+        doi: 10.1080/02724634.2018.1510412
+        notes: Assigns the gray-variegated beds of the Yujingzi Basin to the uppermost Xiagou Formation.
     taxonomy:
       - Life
       - Animalia
@@ -90003,8 +90013,10 @@ genera:
           country: CN
           locality: Yujingzi Basin
           region: Gansu
-          group: Xinminpu
+          formation: Xiagou
+          part: upper
           region_code: CN-GS
+          part_of: formation
         size:
           length_m:
             min: 7.8
@@ -90073,6 +90085,16 @@ genera:
         issue: "5"
         doi: 10.1002/spp2.1587
         notes: Assigns Archaeoceratops yujingziensis, from the same basin, to the Xiagou Formation.
+      - id: suarez2019a
+        authors: Suarez, M. B.; Milder, T.; Peng, N.; Suarez, C. A.; You, H.; Li, D.; Dodson, P.
+        year: 2019
+        title: Chemostratigraphy of the Lower Cretaceous dinosaur-bearing Xiagou and Zhonggou formations, Yujingzi Basin, northwest China
+        journal: Journal of Vertebrate Paleontology
+        volume: "38"
+        issue: sup1
+        pages: 12-21
+        doi: 10.1080/02724634.2018.1510412
+        notes: Assigns the gray-variegated beds of the Yujingzi Basin to the uppermost Xiagou Formation.
     taxonomy:
       - Life
       - Animalia
@@ -139318,12 +139340,12 @@ genera:
           to_ma: 113.2
         location:
           country: CN
-          locality: Yujingzi Basin, Jiuquan area
+          locality: Yujingzi Basin
           region: Gansu
-          group: Xinminpu
-          part: middle
+          formation: Xiagou
+          part: upper
           region_code: CN-GS
-          part_of: group
+          part_of: formation
         size:
           hip_height_m:
             min: 2.9
@@ -139362,6 +139384,16 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
         notes: Source of the hip height estimate, and the appearance features.
+      - id: suarez2019a
+        authors: Suarez, M. B.; Milder, T.; Peng, N.; Suarez, C. A.; You, H.; Li, D.; Dodson, P.
+        year: 2019
+        title: Chemostratigraphy of the Lower Cretaceous dinosaur-bearing Xiagou and Zhonggou formations, Yujingzi Basin, northwest China
+        journal: Journal of Vertebrate Paleontology
+        volume: "38"
+        issue: sup1
+        pages: 12-21
+        doi: 10.1080/02724634.2018.1510412
+        notes: Assigns the gray-variegated beds of the Yujingzi Basin to the uppermost Xiagou Formation.
     taxonomy:
       - Life
       - Animalia
@@ -159615,6 +159647,7 @@ genera:
           region: Gansu
           formation: Xiagou
           part: upper
+          notes: The holotype is from the gray-variegated beds and a second specimen from the overlying red beds, so sources that list this genus among the Zhonggou fauna are describing the referred material. Li and colleagues (2007) put the type site in white to grey sandy shale.
           region_code: CN-GS
           part_of: formation
         type_specimen:
@@ -159685,6 +159718,16 @@ genera:
         pages: 1-11
         doi: 10.1080/02724634.2017.1396995
         notes: Places the holotype in the gray-variegated beds of the Yujingzi Basin and correlates those beds with the upper Xiagou Formation.
+      - id: suarez2019a
+        authors: Suarez, M. B.; Milder, T.; Peng, N.; Suarez, C. A.; You, H.; Li, D.; Dodson, P.
+        year: 2019
+        title: Chemostratigraphy of the Lower Cretaceous dinosaur-bearing Xiagou and Zhonggou formations, Yujingzi Basin, northwest China
+        journal: Journal of Vertebrate Paleontology
+        volume: "38"
+        issue: sup1
+        pages: 12-21
+        doi: 10.1080/02724634.2018.1510412
+        notes: Characterizes the Zhonggou fauna as including this genus, which reflects the referred red-beds specimen rather than the holotype.
     taxonomy:
       - Life
       - Animalia
@@ -176871,7 +176914,6 @@ genera:
           country: JP
           locality: Sengokukyo
           region: Fukuoka
-          group: Kwanmon
           formation: Sengoku
           coordinates:
             - 33.695833
@@ -178052,7 +178094,6 @@ genera:
           country: CN
           locality: Wuerho, field locality 64043-5
           region: Xinjiang
-          group: Tugulu
           formation: Lianmuqin
           part: lower
           region_code: CN-XJ
@@ -178648,12 +178689,9 @@ genera:
           to_ma: 72.2
         location:
           country: CA
-          locality: Chin Coulee Site No. 2 (Wann Langston Jr. 1958)
+          locality: Chin Coulee Site No. 2
           region: Alberta
           formation: Foremost
-          coordinates:
-            - 49.507221
-            - -111.356941
           region_code: CA-AB
         size:
           length_m:
@@ -178776,12 +178814,9 @@ genera:
         location:
           country: GB
           locality: Ecclesbourne Glen
-          region: England
+          region: East Sussex
           formation: Ashdown
-          coordinates:
-            - 50.860706
-            - 0.609229
-          region_code: GB-ENG
+          region_code: GB-ESX
         size:
           hip_height_m:
             min: 3.1
@@ -178907,13 +178942,12 @@ genera:
           to_ma: 89.8
         location:
           country: AR
-          locality: 6 km north of Estancia "Ocho Hermanos"
+          locality: 6 km north of the main buildings of Estancia Ocho Hermanos
           region: Chubut
           formation: Bajo Barreal
-          coordinates:
-            - -45.316669
-            - -69.616669
+          part: lower
           region_code: AR-U
+          part_of: formation
         type_specimen:
           specimen_id:
             - UNPSJB-PV 184
@@ -179044,9 +179078,6 @@ genera:
           locality: La Parrita
           region: Coahuila
           formation: Cerro del Pueblo
-          coordinates:
-            - 25.541889
-            - -101.358788
           region_code: MX-COA
         type_specimen:
           specimen_id:
@@ -179136,10 +179167,7 @@ genera:
           country: CN
           region: Yunnan
           formation: Fengjiahe
-          locality: Daaonai, Xiangyun County
-          coordinates:
-            - 25.328779
-            - 100.760818
+          locality: Daaonai
           region_code: CN-YN
         type_specimen:
           specimen_id:
@@ -179270,12 +179298,9 @@ genera:
           to_ma: 100.5
         location:
           country: CN
-          locality: Haoling Village, Liudian Town
+          locality: Shijiagou Quarry
           region: Henan
           formation: Haoling
-          coordinates:
-            - 34.112
-            - 112.589302
           region_code: CN-HA
         size:
           length_m:
@@ -179416,13 +179441,10 @@ genera:
           to_ma: 154.8
         location:
           country: CN
-          locality: Dashanpu Dinosaur Quarry (Lower)
+          locality: Dashanpu
           region: Sichuan
           formation: Shaximiao
           part: lower
-          coordinates:
-            - 29.411388
-            - 104.852501
           region_code: CN-SC
           part_of: formation
         size:
@@ -179529,12 +179551,10 @@ genera:
           to_ma: 149.2
         location:
           country: CN
-          locality: Daxishan, Linglongta
+          locality: Linglongta
           region: Liaoning
           formation: Tiaojishan
-          coordinates:
-            - 40.868057
-            - 119.991112
+          notes: The holotype was bought from a dealer who could not name the quarry it came from, so Xu and colleagues (2011) place it here by matching the slab's lithology against better-studied exposures, noting that Tiaojishan and Yixian shale slabs cannot be told apart on macro-sedimentary features alone.
           region_code: CN-LN
         type_specimen:
           specimen_id:
@@ -179703,9 +179723,7 @@ genera:
           locality: Wangjiagou
           region: Liaoning
           formation: Yixian
-          coordinates:
-            - 39.878601
-            - 123.438904
+          member: Dawangzhangzi
           region_code: CN-LN
         erected_in: qiu2019a
         type_specimen:
@@ -179804,9 +179822,6 @@ genera:
           formation: Lufeng
           member: Shawan
           part: lower
-          coordinates:
-            - 25.131474
-            - 102.073402
           region_code: CN-YN
           part_of: member
         type_specimen:
@@ -179921,12 +179936,9 @@ genera:
           to_ma: 113.2
         location:
           country: CN
-          locality: Wuerho
+          locality: Wuerho, field locality 64041-9
           region: Xinjiang
           formation: Lianmuqin
-          coordinates:
-            - 46.099998
-            - 85.666664
           region_code: CN-XJ
         type_specimen:
           specimen_id:
@@ -180030,12 +180042,12 @@ genera:
           to_ma: 161.5
         location:
           country: CN
-          locality: Shanshan, Piqan
+          locality: about 8 km south of Qiketai Town
           region: Xinjiang
           formation: Qiketai
           coordinates:
-            - 42.963055
-            - 90.573891
+            - 42.963083
+            - 90.574028
           region_code: CN-XJ
         size:
           length_m:
@@ -180140,10 +180152,9 @@ genera:
           locality: White Ghost Castle
           region: Gansu
           formation: Xiagou
-          coordinates:
-            - 40.478401
-            - 98.111702
+          part: upper
           region_code: CN-GS
+          part_of: formation
         type_specimen:
           specimen_id:
             - FRDC-GS JB16-2-1
@@ -180182,6 +180193,16 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
         notes: Source of the hip height estimate, and the appearance features.
+      - id: suarez2019a
+        authors: Suarez, M. B.; Milder, T.; Peng, N.; Suarez, C. A.; You, H.; Li, D.; Dodson, P.
+        year: 2019
+        title: Chemostratigraphy of the Lower Cretaceous dinosaur-bearing Xiagou and Zhonggou formations, Yujingzi Basin, northwest China
+        journal: Journal of Vertebrate Paleontology
+        volume: "38"
+        issue: sup1
+        pages: 12-21
+        doi: 10.1080/02724634.2018.1510412
+        notes: Assigns the gray-variegated beds to the uppermost Xiagou Formation by carbon-isotope chemostratigraphy, confirming the correlation earlier work had offered as a working hypothesis.
     taxonomy:
       - Life
       - Animalia
@@ -180256,9 +180277,6 @@ genera:
           locality: Zhoujiagou, Yangcheng
           region: Henan
           formation: Majiacun
-          coordinates:
-            - 33.289169
-            - 111.474403
           region_code: CN-HA
         type_specimen:
           specimen_id:
@@ -180375,9 +180393,6 @@ genera:
           locality: Songgou, Zhangying
           region: Henan
           formation: Majiacun
-          coordinates:
-            - 33.384434
-            - 111.66555
           region_code: CN-HA
         size:
           length_m:
@@ -180489,12 +180504,9 @@ genera:
           to_ma: 192.9
         location:
           country: CN
-          locality: Xixipo, Lufeng
+          locality: Xixipo
           region: Yunnan
           formation: Lufeng
-          coordinates:
-            - 25.592993
-            - 102.320404
           region_code: CN-YN
         type_specimen:
           specimen_id:
@@ -180585,12 +180597,12 @@ genera:
           to_ma: 132.6
         location:
           country: CN
+          locality: Wucaiwan area
           region: Xinjiang
-          formation: Shengjinkou
-          coordinates:
-            - 45.171223
-            - 88.9217
+          group: Tugulu
+          part: upper
           region_code: CN-XJ
+          part_of: group
         size:
           length_m:
             min: 2.1
@@ -180707,13 +180719,10 @@ genera:
           to_ma: 154.8
         location:
           country: CN
-          locality: Xuanhan
+          locality: south limb of Qilixi anticline
           region: Sichuan
           formation: Shaximiao
           part: lower
-          coordinates:
-            - 31.416668
-            - 107.633331
           region_code: CN-SC
           part_of: formation
         type_specimen:
@@ -180860,13 +180869,12 @@ genera:
           to_ma: 132.6
         location:
           country: CN
-          locality: Yanjiagou, Xuanhua
+          locality: Yanjiagou
           region: Hebei
           formation: Houcheng
-          coordinates:
-            - 40.25222
-            - 115.637497
+          part: middle
           region_code: CN-HE
+          part_of: formation
         size:
           length_m:
             min: 1
@@ -180963,12 +180971,10 @@ genera:
           to_ma: 125.77
         location:
           country: CN
-          locality: Fengning County
+          locality: Sichakou Basin
           region: Hebei
           formation: Huajiying
-          coordinates:
-            - 41.200001
-            - 116.650002
+          member: Sichakou
           region_code: CN-HE
         size:
           weight_kg:
@@ -181077,13 +181083,13 @@ genera:
           to_ma: 113.2
         location:
           country: CN
-          locality: Jiuquan area
+          locality: Yujingzi Basin
           region: Gansu
           formation: Xiagou
-          coordinates:
-            - 40.27861
-            - 98.143608
+          part: upper
+          notes: You and colleagues (2014) assigned the Yujingzi hadrosauroids to the Zhonggou Formation on a personal communication. Suarez and colleagues (2019) supersede that, placing the gray-variegated beds that yield this specimen in the uppermost Xiagou on carbon-isotope chemostratigraphy across 450 samples.
           region_code: CN-GS
+          part_of: formation
         type_specimen:
           specimen_id:
             - GSGM F00001
@@ -181117,6 +181123,16 @@ genera:
         title: The Princeton Field Guide to Dinosaurs (3rd ed.)
         publisher: Princeton University Press
         notes: Source of the body length and mass estimates, and the appearance features.
+      - id: suarez2019a
+        authors: Suarez, M. B.; Milder, T.; Peng, N.; Suarez, C. A.; You, H.; Li, D.; Dodson, P.
+        year: 2019
+        title: Chemostratigraphy of the Lower Cretaceous dinosaur-bearing Xiagou and Zhonggou formations, Yujingzi Basin, northwest China
+        journal: Journal of Vertebrate Paleontology
+        volume: "38"
+        issue: sup1
+        pages: 12-21
+        doi: 10.1080/02724634.2018.1510412
+        notes: Places the gray-variegated beds in the uppermost Xiagou Formation and the overlying red beds in the lower Zhonggou, dating the former to the upper Aptian.
     taxonomy:
       - Life
       - Animalia
