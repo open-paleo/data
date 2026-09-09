@@ -53,7 +53,6 @@ species:
       name:
         - Late Jurassic
       stage:
-        - Kimmeridgian
         - Tithonian
     location:
       country: TZ
@@ -78,18 +77,21 @@ species:
         - SMNS 12142
         - SMNS 12143
         - SMNS 12145a
-      specimen_type: syntype
+      specimen_type: holotype
       institution: SMNS
-      material: Femur 1.45 m long; sauropod skeleton largely in articulation. Estimated
-        animal length 14-15 m, height 3.50-3.75 m.
+      material: Right femur 1.42 m long, right fibula, right ischium, the centrum of
+        the second caudal vertebra, and a rib fragment, all of one individual.
       completeness: partial
+      notes: Remes (2006) removed a distal caudal vertebra from the type series,
+        referring it to Brachiosaurus brancai. Elements of the same individual the
+        later German expedition recovered are not type material.
     synonyms:
       - name: Gigantosaurus africanus
         type: reassigned
         reason: Originally described as Gigantosaurus africanus; the genus name was
           preoccupied, and the species was reassigned to Tornieria.
     erected_in: fraas1908a
-    described_in: tschopp2015a
+    described_in: remes2006a
 references:
   - id: fraas1908a
     notes: In German. Original description of the material as Gigantosaurus
@@ -99,10 +101,11 @@ references:
     notes: Coins the replacement genus Tornieria for the preoccupied Gigantosaurus
       Fraas, 1908.
   - id: tschopp2015a
-    notes: Specimen-level revision providing a revised diagnosis of Tornieria
-      and confirming its generic distinction from Barosaurus.
+    notes: Source of the diagnostic features; a specimen-level revision that
+      provides a revised diagnosis and holds the genus distinct from Barosaurus.
   - id: jones2026b
     notes: Source of the hip height estimate, and the appearance features.
   - id: remes2006a
-    notes: Revises the genus and places the holotype in the Upper Saurian Beds,
-      the former name of the Upper Dinosaur Member.
+    notes: Redescribes the holotype and a referred partial skeleton, and places
+      the type material in the Upper Saurian Beds, the former name of the Upper
+      Dinosaur Member, of Tithonian age.
