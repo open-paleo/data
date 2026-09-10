@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-09-10T03:28:13.019Z
+  built_at: 2026-09-10T04:27:35.907Z
   clade_count: 188
   genus_count: 1422
   license: CC-BY-4.0
@@ -181317,13 +181317,13 @@ genera:
     genus: Yamanasaurus
     parent: Saltasaurinae
     etymology: Named after the locality of Yamana in southern Ecuador where the fossils were found, combined with Greek sauros meaning 'lizard'; translates as 'Yamana lizard'
-    description: Yamanasaurus is an extinct genus of saltasaurine titanosaurian dinosaur from the Río Playas Formation of Ecuador, which dates to the Campanian-Maastrichtian of the late Cretaceous period (approximately 75-70 million years ago). The type and only species is Yamanasaurus lojaensis, representing the first non-avian dinosaur described from Ecuador. The holotype, consisting of fragments of a humerus, ulna, tibia, two sacral vertebrae and a single caudal, was discovered in 2017.
+    description: Yamanasaurus is an extinct genus of saltasaurine titanosaurian dinosaur from the Río Playas Formation of Ecuador, which dates to the Campanian-Maastrichtian of the late Cretaceous period (approximately 75-70 million years ago). The type and only species is Yamanasaurus lojaensis, representing the first non-avian dinosaur described from Ecuador. The holotype, consisting of fragments of a humerus, radius, tibia, two sacral vertebrae and a single caudal, was discovered in 2017.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
       - fluvial
     diagnostic_features:
-      - Anterior to mid-caudal vertebrae with dorsoventrally compressed condyle and posterior tip elevated respect to midline
+      - Anterior to mid-caudal vertebrae with a dorsoventrally compressed condyle, the posterior tip raised relative to the midline, and no longitudinal ventral ridge
       - Spongy inner structure with absence of internal cavities (camellate bone) in anterior-mid caudal vertebrae
       - Last sacral centrum as long as tall with small ovoid shallow blind fossa on lateral side
       - Radius robust with flattened diaphysis and marked neck under epiphysis with heptagonal proximal articular surface
@@ -181355,16 +181355,27 @@ genera:
           region_code: EC-L
         size:
           length_m:
-            min: 6
-            max: 6
+            min: 7
+            max: 7
+          hip_height_m:
+            min: 2.5
+            max: 2.5
+          weight_kg:
+            min: 1500
+            max: 1500
         erected_in: apesteguía2020a
         type_specimen:
           specimen_id:
-            - YM-UTPL 002
+            - YM-INPC-014
+            - YM-INPC-015
+            - YM-INPC-016
+            - YM-INPC-017
+            - YM-UTPL_002
           specimen_type: holotype
-          institution: Universidad Técnica Particular de Loja
+          institution: Instituto Nacional de Patrimonio Cultural
           material: Two conjoined sacral vertebrae, posterior half of a mid-caudal procoelous vertebra, proximal half of a left humerus, proximal half of a radius, and an eroded fragment possibly of a proximal tibia
           completeness: fragmentary
+          notes: The sacrum is at the Universidad Técnica Particular de Loja, the other four elements at the Instituto Nacional de Patrimonio Cultural. Apesteguía and colleagues judge them to probably belong to one animal.
         authors: Apesteguía, S.; Soto Luzuriaga, J. E.; Gallina, P. A.; Granda, J. T.; Guamán Jaramillo, G. A.
         described: 2020
     references:
@@ -181376,6 +181387,13 @@ genera:
         publisher: Elsevier BV
         volume: "108"
         doi: 10.1016/j.cretres.2019.104345
+      - id: jones2026b
+        authors: Jones, B.; Viola, E.
+        year: 2026
+        title: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
+        publisher: Princeton University Press
+        isbn: 978-0-691-25023-6
+        notes: Source of the body length, hip height and weight estimates.
     taxonomy:
       - Life
       - Animalia
@@ -181779,7 +181797,7 @@ genera:
           part_of: formation
         type_specimen:
           specimen_id:
-            - CV00216
+            - CV00215
           specimen_type: holotype
           institution: Chongqing Museum of Natural History
           material: Nearly complete skeleton (lacking forelimbs and some posterior caudal vertebrae), including a perfectly preserved skull.
@@ -181798,6 +181816,7 @@ genera:
             min: 0.8
             max: 1.1
         erected_in: dong1978a
+        described_in: dong1983a
         authors: Dong, Z.; Zhang, Y.; Li, X.; Zhou, S.
         described: 1978
     references:
@@ -181809,6 +181828,15 @@ genera:
         volume: "23"
         issue: "5"
         pages: 302-304
+      - id: dong1983a
+        authors: Dong, Z.; Zhou, S.; Zhang, H.
+        year: 1983
+        title: "[Dinosaurs from the Jurassic of Sichuan]"
+        journal: Palaeontologica Sinica, New Series C, Whole Number
+        volume: "162"
+        issue: "23"
+        pages: 1-136
+        notes: Describes the holotype skeleton in full, and gives CV00216 to the separate Yangchuanosaurus magnus, from another site.
       - id: jones2026c
         authors: Jones, B.; Viola, E.
         year: 2026
@@ -182061,6 +182089,14 @@ genera:
     paleoenvironment:
       - fluvial
       - arid
+    diagnostic_features:
+      - Subcircular fossa on the anterolateral border of the postzygapophysis of the second dorsal vertebra in anterior view, bounded laterally by the postzygodiapophyseal lamina and medially by an accessory medial lamina
+      - Prezygapophyseal centrodiapophyseal and centrodiapophyseal fossae of the fourth dorsal vertebra subdivided by accessory laminae that meet the paradiapophyseal lamina medially, enclosing small pneumatic cavities
+      - Centrodiapophyseal lamina of the fifth through eighth dorsal vertebrae split into anterior and posterior branches with a dorsoventral groove between them
+      - Spinoprezygapophyseal lamina well developed in the middle and posterior dorsal vertebrae
+      - Subelliptical pneumatic fossa in the tenth dorsal vertebra, between the anterior and posterior spinodiapophyseal laminae
+      - Acute spinoprezygapophyseal lamina in the anterior caudal vertebra, projecting laterally over the anterolateral border of the neural spine toward its distal end and forming a deep spinoprezygapophyseal fossa with the prespinal lamina
+      - Medial aspect of the acetabulum formed almost entirely by the third sacral rib, with only a small contribution from the second and fourth
     appearance:
       integument: scaled
       evidence: inferred
@@ -182089,9 +182125,12 @@ genera:
           region_code: AR-Q
         type_specimen:
           specimen_id:
-            - MAU-Pv-LI-538/1-30
+            - MAU-Pv-LI-538
           specimen_type: holotype
           institution: Museo Argentino Urquiza, Rincón de los Sauces
+          material: Six cervical, ten dorsal and one anterior caudal vertebra, the sacrum, both ilia, and several dorsal ribs, disarticulated but associated.
+          completeness: partial
+          notes: The thirty elements are numbered as parts of the one accession. A right ilium collected nearby, MAU-Pv-LI-539, is referred only as cf. Yeneen houssayi.
         erected_in: filippi2026a
         authors: Filippi, L. S.; Bellardini, F.; Carballido, J. L.; Méndez, A. H.; Garrido, A. C.
         described: 2026
