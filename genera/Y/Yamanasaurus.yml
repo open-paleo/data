@@ -6,15 +6,16 @@ description: Yamanasaurus is an extinct genus of saltasaurine titanosaurian
   Campanian-Maastrichtian of the late Cretaceous period (approximately 75-70
   million years ago). The type and only species is Yamanasaurus lojaensis,
   representing the first non-avian dinosaur described from Ecuador. The
-  holotype, consisting of fragments of a humerus, ulna, tibia, two sacral
+  holotype, consisting of fragments of a humerus, radius, tibia, two sacral
   vertebrae and a single caudal, was discovered in 2017.
 diet: herbivore
 locomotion: quadrupedal
 paleoenvironment:
   - fluvial
 diagnostic_features:
-  - Anterior to mid-caudal vertebrae with dorsoventrally compressed condyle and
-    posterior tip elevated respect to midline
+  - Anterior to mid-caudal vertebrae with a dorsoventrally compressed condyle,
+    the posterior tip raised relative to the midline, and no longitudinal ventral
+    ridge
   - Spongy inner structure with absence of internal cavities (camellate bone) in
     anterior-mid caudal vertebrae
   - Last sacral centrum as long as tall with small ovoid shallow blind fossa on
@@ -46,16 +47,32 @@ species:
       formation: Río Playas
     size:
       length_m:
-        min: 6.0
-        max: 6.0
+        min: 7.0
+        max: 7.0
+      hip_height_m:
+        min: 2.5
+        max: 2.5
+      weight_kg:
+        min: 1500
+        max: 1500
     erected_in: apesteguía2020a
     type_specimen:
-      specimen_id: [YM-UTPL 002]
+      specimen_id:
+        - YM-INPC-014
+        - YM-INPC-015
+        - YM-INPC-016
+        - YM-INPC-017
+        - YM-UTPL_002
       specimen_type: holotype
-      institution: UTPL
+      institution: INPC
       material: Two conjoined sacral vertebrae, posterior half of a mid-caudal
         procoelous vertebra, proximal half of a left humerus, proximal half of a
         radius, and an eroded fragment possibly of a proximal tibia
       completeness: fragmentary
+      notes: The sacrum is at the Universidad Técnica Particular de Loja, the
+        other four elements at the Instituto Nacional de Patrimonio Cultural.
+        Apesteguía and colleagues judge them to probably belong to one animal.
 references:
   - id: apesteguía2020a
+  - id: jones2026b
+    notes: Source of the body length, hip height and weight estimates.
