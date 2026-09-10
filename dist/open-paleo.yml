@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-09-10T00:10:40.022Z
+  built_at: 2026-09-10T03:28:13.019Z
   clade_count: 188
   genus_count: 1422
   license: CC-BY-4.0
@@ -181231,9 +181231,6 @@ genera:
           locality: Khugenetjavkhlant
           region: Dornogovi
           formation: Javkhlant
-          coordinates:
-            - 44.393677
-            - 109.35318
           region_code: MN-063
         size:
           length_m:
@@ -181288,6 +181285,15 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
         notes: Source of the appearance features.
+      - id: eberth2009a
+        authors: Eberth, D. A.; Kobayashi, Y.; Lee, Y.-N.; Mateus, O.; Therrien, F.; Zelenitsky, D. K.; Norell, M. A.
+        year: 2009
+        title: Assignment of Yamaceratops dorngobiensis and associated redbeds at Shine Us Khudag (eastern Gobi, Dorngobi Province, Mongolia) to the redescribed Javkhlant Formation (Upper Cretaceous)
+        journal: Journal of Vertebrate Paleontology
+        volume: "29"
+        issue: "1"
+        pages: 295-302
+        notes: Erects the Javkhlant Formation and assigns the holotype's redbeds to it, placing the site within the Shine Us Khudag exposure.
     taxonomy:
       - Life
       - Animalia
@@ -181346,9 +181352,6 @@ genera:
           locality: Yamana
           region: Loja
           formation: Río Playas
-          coordinates:
-            - -4.17
-            - -79.667
           region_code: EC-L
         size:
           length_m:
@@ -181448,13 +181451,12 @@ genera:
           to_ma: 66
         location:
           country: JP
-          locality: Aw14, Mitsugawa
+          locality: Aw14, Yura Town
           region: Hyōgo
           formation: Kita-ama
-          coordinates:
-            - 34.313
-            - 134.910004
+          part: upper
           region_code: JP-28
+          part_of: formation
         size:
           length_m:
             min: 7.6
@@ -181553,13 +181555,12 @@ genera:
           to_ma: 100.5
         location:
           country: CN
-          locality: Madaotou Township, Zuoyun
+          locality: Madaotou Township
           region: Shanxi
           formation: Zuoyun
-          coordinates:
-            - 39.886944
-            - 112.762497
+          part: lower
           region_code: CN-SX
+          part_of: formation
         type_specimen:
           specimen_id:
             - SXMG V 00006
@@ -181661,13 +181662,13 @@ genera:
           to_ma: 154.8
         location:
           country: CN
-          locality: Honghe Dam, Hongheba
+          locality: Hongheba, Zigong
           region: Sichuan
           formation: Shaximiao
-          coordinates:
-            - 29.4
-            - 104.783302
+          part: upper
+          notes: Li and colleagues (2011), reviewing the Shaximiao's dinosaur assemblages, place this species in the upper member at Hongheba, apart from the Dashanpu taxa of the lower member. Weishampel and colleagues (2004) and Jones (2026) instead file it under the lower Shaximiao, in faunal lists that group the Sichuan taxa together.
           region_code: CN-SC
+          part_of: formation
         type_specimen:
           specimen_id:
             - GCC V20501
@@ -181771,13 +181772,10 @@ genera:
         location:
           country: CN
           locality: Shangyou Reservoir
-          region: Sichuan
+          region: Chongqing
           formation: Shaximiao
           part: upper
-          coordinates:
-            - 29.411388
-            - 104.852501
-          region_code: CN-SC
+          region_code: CN-CQ
           part_of: formation
         type_specimen:
           specimen_id:
@@ -181889,11 +181887,10 @@ genera:
           country: CN
           region: Yunnan
           formation: Zhanghe
-          locality: Zhongbanjing Village, Yuanmou County
-          coordinates:
-            - 25.7
-            - 101.87
+          locality: Zhongbanjing Village
+          part: middle
           region_code: CN-YN
+          part_of: formation
         type_specimen:
           specimen_id:
             - LFGT-ZLJ0073
@@ -181981,10 +181978,12 @@ genera:
           locality: La Salada
           region: Coahuila
           formation: Aguja
+          part: upper
           coordinates:
-            - 28.83
-            - -103.300003
+            - 28.774111
+            - -103.331028
           region_code: MX-COA
+          part_of: formation
         type_specimen:
           specimen_id:
             - CPC 274
@@ -182016,6 +182015,16 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
         notes: Source of the appearance features.
+      - id: rivera-sylva2016a
+        authors: Rivera-Sylva, H. E.; Hedrick, B. P.; Dodson, P.
+        year: 2016
+        title: "A centrosaurine (Dinosauria: Ceratopsia) from the Aguja Formation (Late Campanian) of northern Coahuila, Mexico"
+        journal: PLOS ONE
+        volume: "11"
+        issue: "4"
+        pages: e0150529
+        doi: 10.1371/journal.pone.0150529
+        notes: Original description of the holotype. Places it in the basal portion of the upper member of the Aguja Formation and prints the site's GPS coordinates.
     taxonomy:
       - Life
       - Animalia
@@ -182074,12 +182083,9 @@ genera:
           to_ma: 83.6
         location:
           country: AR
-          locality: La Invernada (Bajo de la Carpa)
+          locality: La Invernada
           region: Neuquén
           formation: Bajo de la Carpa
-          coordinates:
-            - -37.593056
-            - -69.315559
           region_code: AR-Q
         type_specimen:
           specimen_id:
@@ -182184,9 +182190,6 @@ genera:
           locality: Jiaojiadian
           region: Yunnan
           formation: Fengjiahe
-          coordinates:
-            - 24.355
-            - 102.542198
           region_code: CN-YN
         size:
           length_m:
@@ -182285,13 +182288,10 @@ genera:
           to_ma: 154.8
         location:
           country: CN
-          locality: Yunchuan, Jichuan
+          locality: Jichuan
           region: Sichuan
           formation: Shaximiao
           part: upper
-          coordinates:
-            - 31.07843
-            - 106.619347
           region_code: CN-SC
           part_of: formation
         type_specimen:
@@ -182385,13 +182385,12 @@ genera:
           to_ma: 154.8
         location:
           country: CN
-          locality: Wucaiwan ceratopsian 1
+          locality: Wucaiwan
           region: Xinjiang
           formation: Shishugou
-          coordinates:
-            - 45.191288
-            - 88.919884
+          part: upper
           region_code: CN-XJ
+          part_of: formation
         type_specimen:
           specimen_id:
             - IVPP V14530
@@ -182509,10 +182508,9 @@ genera:
           locality: Wangjiagou
           region: Liaoning
           formation: Yixian
-          coordinates:
-            - 39.878601
-            - 123.438904
+          part: lower
           region_code: CN-LN
+          part_of: formation
         type_specimen:
           specimen_id:
             - IVPP V12638
@@ -182655,9 +182653,6 @@ genera:
           formation: Lufeng
           member: Zhangjiawa
           part: upper
-          coordinates:
-            - 25
-            - 102.033333
           region_code: CN-YN
           part_of: member
         size:
@@ -182775,13 +182770,12 @@ genera:
           to_ma: 113.2
         location:
           country: CN
-          locality: Guanmengou No. 4 bonebed
+          locality: beside the G75 Highway, near the town of Zhongpu, less than a kilometer from the quarries that produced Daxiatitan and Huanghetitan liujiaxiaensis
           region: Gansu
           group: Hekou
-          coordinates:
-            - 35.809723
-            - 103.771942
+          part: upper
           region_code: CN-GS
+          part_of: group
         size:
           length_m:
             min: 15
@@ -182915,12 +182909,12 @@ genera:
           to_ma: 66
         location:
           country: BR
-          locality: Price Quarry 1 (Caieira Quarry)
+          locality: Caieira
           region: Minas Gerais
           formation: Serra da Galga
           coordinates:
-            - -19.720278
-            - -47.738335
+            - -19.724136
+            - -47.746514
           region_code: BR-MG
         type_specimen:
           specimen_id:
@@ -182948,6 +182942,17 @@ genera:
         issue: "4"
         pages: 2075-2099
         doi: 10.1002/spp2.1375
+      - id: soares2020a
+        authors: Soares, M. V. T.; Basilici, G.; Marinho, T. S.; Martinelli, A. G.; Marconato, A.; Mountney, N. P.; Colombera, L.; Mesquita, Á. F.; Vasques, J. T.; Abrantes Junior, F. R.; Ribeiro, L. C. B.
+        year: 2021
+        title: "Sedimentology of a distributive fluvial system: the Serra da Galga Formation, a new lithostratigraphic unit (Upper Cretaceous, Bauru Basin, Brazil)"
+        journal: Geological Journal
+        publisher: Wiley
+        volume: "56"
+        issue: "2"
+        pages: 951-975
+        doi: 10.1002/gj.3987
+        notes: Erects the Serra da Galga Formation with its type section at this locality, and prints the coordinates recorded here.
       - id: jones2026c
         authors: Jones, B.; Viola, E.
         year: 2026
@@ -183022,10 +183027,7 @@ genera:
           country: CN
           region: Yunnan
           formation: Zhanghe
-          locality: Xiabanjing Village, Yuanmou County
-          coordinates:
-            - 26
-            - 101.86
+          locality: Xiabanjing Village, Jiangyi Township
           region_code: CN-YN
         size:
           skull_length_m:
@@ -183122,9 +183124,6 @@ genera:
           locality: Banqing Houshanliangzi, Jiangyi
           region: Yunnan
           formation: Zhanghe
-          coordinates:
-            - 25.947222
-            - 101.90889
           region_code: CN-YN
         size:
           weight_kg:
@@ -183237,8 +183236,8 @@ genera:
           region: Inner Mongolia
           formation: Miaogou
           coordinates:
-            - 40.271702
-            - 105.75
+            - 40.2
+            - 105.733333
           region_code: CN-NM
         type_specimen:
           specimen_id:
@@ -183346,12 +183345,9 @@ genera:
           to_ma: 93.9
         location:
           country: CN
-          locality: Construction site, G15w Expressway (Shangsan)
+          locality: Construction site of the G15W (Shangsan) Expressway beside the factory of Zhejiang InBev Shiliang Beer Co. Ltd.
           region: Zhejiang
           formation: Liangtoutang
-          coordinates:
-            - 29.152113
-            - 121.027649
           region_code: CN-ZJ
         size:
           length_m:
