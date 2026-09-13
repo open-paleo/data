@@ -173,6 +173,50 @@ hybrid form:
 The `Citation format` validation check flags `&` between capitalized
 names and `(Author Year)` no-comma single-citation parentheticals.
 
+## Reference Keys and Years
+
+Full details for each paper live in `references/{letter}/{key}.yml`, one file
+per paper, and records cite them by key. A key is the first author's surname
+in lowercase, then the year, then a letter: `osborn1905a`, `royo-torres2020a`.
+Keep diacritics and hyphens (`maryańska1975a`, `prieto-márquez2023a`), and
+remove the spaces from a multi-word surname (`geoffroysaint-hilaire1825a`).
+Letters are handed out in the order entries were added, so `a` is not
+necessarily that author's first paper of the year. The `year` field inside the
+file has to match the year in the key.
+
+For the year itself:
+
+> **Use the year the work was published — when it first became available to
+> read. Online release counts.**
+
+Old papers often print the date they were read to a society, modern ones the
+date they were accepted, and issue labels are unreliable in both directions.
+Publication date is the only one available for every entry, and it is what
+`erected_in` needs, since a name is not available until its paper is out.
+
+A few examples. A paper released online in 2013 and printed in 2014 is keyed
+2013. An article that appeared in May 2025, in an issue labeled 2024, is keyed
+2025. Rauhut and Hungerbühler's review of European Triassic theropods carries
+the 1998 cover date of *Gaia* 15, but the volume was not published until 2000,
+so its key is `rauhut2000a`. Broom read a paper to the society in 1909 and it
+asks to be cited as 1910, but it appeared in a collected volume that cannot
+have been issued before 1912, so its key is `broom1912a`.
+
+Publishers and the wider literature often disagree about a year. **When they
+do, follow what other papers print** — a key is only useful if a reader can
+match a citation in our prose to an entry in our references. To check, count
+how secondary literature cites the work in its reference lists, where author,
+year and title sit together; passing mentions in running text pick up
+neighboring citations and will mislead you. Norman's *Hypselospinus* monograph
+carries a 2014 volume date, for instance, but later papers overwhelmingly cite
+it as 2015, so its key is `norman2015a`. Where no year clearly dominates,
+leave the key alone and correct the prose that disagrees with it instead.
+
+If you do rename a key, **rewrite every sentence that cites it in the same
+commit.** The old key is gone, not aliased. Grep `genera/` and `clades/` for
+it, and check the prose of each record you find as well as its `references`
+list — a citation left on the old year is the mismatch you were trying to fix.
+
 ## Names and Language
 
 Open Paleo is the core dataset, meant to be consumable by everyone, so its
