@@ -16,29 +16,27 @@ pronunciation:
 etymology: "From Quechua supay meaning 'devil' and Greek sauros (σαυρος) meaning
   'lizard'; thus 'devil lizard'"
 description: Zupaysaurus is an extinct genus of early theropod dinosaur living
-  during the Norian stage of the Late Triassic in what is now Argentina. Fossils
-  of the dinosaur were found in the Los Colorados Formation of the
+  during the Norian stage of the Late Triassic in what is now Argentina.
+  Fossils of the dinosaur were found in the Los Colorados Formation of the
   Ischigualasto-Villa Unión Basin in northwestern Argentina. Although a full
   skeleton has not yet been discovered, Zupaysaurus can be considered a bipedal
-  predator, up to 4 meters (13 ft) long. It may have had two parallel crests
-  running the length of its snout.
+  predator, up to 4 meters (13 ft) long. A pair of parasagittal crests reported
+  on its snout proved to be a displaced nasal bone.
 diet: carnivore
 locomotion: bipedal
 paleoenvironment:
   - fluvial
   - arid
 diagnostic_features:
-  - Oval, anteroventrally oriented antorbital fenestra
-  - Two parasagittal crests on snout formed by nasals
-  - Maxilla with parallel dorsal and ventral borders (unlike most other
-    theropods)
-  - Tibial-astragalar articulation locked medioposteriorly by astragalar process
-    in posteriorly open tibial notch
-  - Transversely expanded distal end of tibia with wide postfibular wing
-  - Tooth row ending anterior to orbit (tetanuran trait)
+  - Maxillary-jugal ventral margin describing an obtuse angle in lateral view
+  - Horizontal ramus of the maxilla with parallel dorsal and ventral margins
+  - Notch on the dorsal margin of the ascending process of the maxilla
+  - Sigmoid ventral process of the squamosal
+  - Strongly ventrally curved rostral process of the lacrimal
+  - Cnemial crest poorly developed
+  - Tibia with a very deep, caudally open notch receiving an astragalar caudal
+    process
 appearance:
-  features:
-    - nasal crest
   integument: scaled
   evidence: inferred
 identifiers:
@@ -63,16 +61,18 @@ species:
       country: AR
       locality: Quebrada de los Jachaleros, 7 km West of National Route 126
       region: AR-F
+      group: Agua de la Peña
       formation: Los Colorados
       part: upper
     type_specimen:
       specimen_id: [ PULR 076 ]
       specimen_type: holotype
       institution: PULR
-      material: Skull lacking premaxillae, articulated posterior cervical and anterior
-        dorsal vertebrae, two incomplete fused sacral vertebrae, right scapula and
-        coracoid proximal ends, right tibia and fibula distal ends, fused right
-        astragalus and calcaneum, proximal parts of two pedal unguals
+      material: Skull and jaws lacking both premaxillae, atlas, axis, postaxial
+        cervical, dorsal, sacral and distal caudal vertebrae, left
+        scapulocoracoid, isolated manual unguals, distal ends of both femora,
+        proximal left tibia, distal right tibia and fibula, and right
+        astragalocalcaneum
       completeness: partial
     size:
       length_m:
@@ -85,11 +85,24 @@ species:
         min: 0.5
         max: 0.5
     erected_in: arcucci2003a
+    described_in: ezcurra2007b
 references:
   - id: arcucci2003a
   - id: paul2024a
-    notes: Source of the appearance features.
+    notes: Source of the upper size estimates. Reconstructs the snout with
+      well-developed paired crests, which is not followed here.
   - id: ezcurra2017a
     notes: Described new coelophysoid, part of recent analyses on Zupaysaurus's neotheropod position.
   - id: ezcurra2020a
     notes: Revised Sarcosaurus, part of recent analyses on Zupaysaurus's early neotheropod position.
+  - id: ezcurra2007b
+    notes: Cranial redescription. Shows that the parasagittal snout crests are
+      the displaced right nasal, the true ornament being two low lateral
+      ridges, and adds the squamosal and lacrimal autapomorphies.
+  - id: ezcurra2007c
+    notes: Emends the diagnosis, keeping three of the original characters and
+      adding five, and refers the associated scapulocoracoid, femora and tibia
+      to the genus.
+  - id: paulina-carabajal2019a
+    notes: Braincase and endocast from computed tomography. Finds one
+      hypoglossal foramen where the cranial redescription reported two.
