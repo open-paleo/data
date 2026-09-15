@@ -178,8 +178,24 @@ names and `(Author Year)` no-comma single-citation parentheticals.
 Full details for each paper live in `references/{letter}/{key}.yml`, one file
 per paper, and records cite them by key. A key is the first author's surname
 in lowercase, then the year, then a letter: `osborn1905a`, `royo-torres2020a`.
-Keep diacritics and hyphens (`maryańska1975a`, `prieto-márquez2023a`), and
-remove the spaces from a multi-word surname (`geoffroysaint-hilaire1825a`).
+
+**Lowercasing the surname and removing its spaces are the only changes it
+gets.** Every other character the author writes belongs in the key: diacritics
+(`maryańska1975a`, `prieto-márquez2023a`), special letters such as `ł`, `ø`
+and `æ` (`słowiak2020a`), hyphens (`pereda-suberbiola2009a`) and apostrophes
+(`d'emic2012b`, `o'connor2005a`). A multi-word surname has its spaces removed
+but keeps any hyphen it already carries (`geoffroysaint-hilaire1825a`,
+`aranciagarolando2024a`). However many authors a paper has, only the first
+one's surname goes in the key.
+
+When the author is an organization rather than a person, the key is the
+abbreviation it publishes under, not its name spelled out: `iczn2023a` for the
+International Commission on Zoological Nomenclature, `rom2007a` for the Royal
+Ontario Museum.
+
+The `{letter}` directory is the key's first character folded to plain ASCII,
+so `ősi2010a` files under `o/` and `słowiak2020a` under `s/`.
+
 Letters are handed out in the order entries were added, so `a` is not
 necessarily that author's first paper of the year. The `year` field inside the
 file has to match the year in the key.
