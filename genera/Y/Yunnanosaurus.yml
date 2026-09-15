@@ -34,7 +34,18 @@ paleoenvironment:
   - fluvial
   - lacustrine
 diagnostic_features:
-  - Teeth subcylindrical and sharply pointed
+  - Small external naris, about 10% of maximum skull length
+  - Robust, rostrocaudally expanded nasal process of the premaxilla
+  - Ventral projection from the caudal margin of the ascending maxillary
+    process
+  - Nutritive foramina absent from the lateral surface of the maxilla
+  - Shallow, subcircular fossa on the lateral surface of the ventral lachrymal
+    process
+  - Midline boss near the rostral end of the frontals
+  - Prominent midline boss on the parietals
+  - Rostrolateral process of the parietal rostrocaudally expanded relative to
+    the width of the caudolateral process
+  - Maxillary teeth mesiodistally narrow and lacking denticles
 appearance:
   integument: scaled
   evidence: inferred
@@ -81,18 +92,30 @@ species:
         - NGMJ 004546
       specimen_type: holotype
       institution: NGMJ
-      material: Skull, lower jaw pair and partly preserved skeletons
+      material: Almost complete skeleton with skull, atlas and axis, further
+        cervical, dorsal and caudal vertebrae, haemal arches, left scapula,
+        sternum, both humeri, right ulna, partial left manus, pelvic girdle,
+        hindlimbs and two metatarsals
       completeness: partial
       former_ids:
         - from_id: IVPP V 20
-          to_id: NGMJ 004546
+          to_id: NGMJ V0116
           from_institution: IVPP
           to_institution: NGMJ
           reason: rehoused
-          notes: No source cited here records the date of the move, and both
-            numbers remain in use; Zhang (2024) cites the specimen as "IVPP V
-            20/NJGM 004546".
+          source: barrett2007a
+          notes: No source cited here records the date of the move, and the
+            original number remains in use; Zhang (2024) cites the specimen as
+            "IVPP V 20/NJGM 004546".
+        - from_id: NGMJ V0116
+          to_id: NGMJ 004546
+          reason: renumbered
+          source: barrett2007a
+          notes: NGMJ V0116 is the number carried on the display-case label.
+            Barrett and colleagues (2007) give NGMJ 004546 as the correct
+            accession number.
     erected_in: young1940a
+    described_in: barrett2007a
   - name: Yunnanosaurus youngi
     etymology: Honors Professor C. C. Young, who first studied the Lufeng Basin
       dinosaurs and erected the family Yunnanosauridae.
@@ -162,9 +185,12 @@ references:
       Jurassic Zhanghe Formation of Yuanmou, Yunnan.
   - id: zhang2024a
   - id: barrett2007a
-    notes: Redescribes the skull of the holotype and gives the type locality as
-      Huangchiatien village, Lufeng County, in the Dark Red Beds of the Lower
-      Lufeng Formation.
+    notes: Redescribes the holotype skull and emends the diagnosis on cranial
+      characters alone. Gives the type locality as Huangchiatien village, in
+      the Dark Red Beds of the Lower Lufeng Formation.
+  - id: young1942b
+    notes: Young's full description of the genus and species, which later work
+      cites as the original description.
   - id: norman2007a
     notes: Records that the Dull Purplish Beds and Dark Red Beds were formally
       designated the Shawan and Zhangjiawa members.
