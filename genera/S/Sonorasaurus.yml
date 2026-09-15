@@ -15,16 +15,10 @@ diet: herbivore
 locomotion: quadrupedal
 paleoenvironment:
   - fluvial
+  - forested
 diagnostic_features:
-  - Slender, splayed fibula distinctive in lateral profile
-  - Tibia with broad triangular proximal end and robust distal end
-  - Long slender metacarpals with gracile proportions
-  - Reduced claws present only on pedal phalanges I and II
-  - Dorsal vertebrae with curled postzygapophysis and deep lateral pleurocoels
-  - Caudal vertebrae lacking pleurocoels with posteriorly angled transverse
-    processes
-  - Caudal neural spines simple without ligament-accommodating fork
-  - Medium-sized sauropod estimated 15 m long and 8 m tall
+  - Ulnar condyle of the humerus extended posteriorly into a triangular process
+  - Funnel-shaped but gracile metatarsal V, proximal breadth 0.6 of its length
 appearance:
   integument: scaled
   evidence: inferred
@@ -63,10 +57,10 @@ species:
       specimen_id: [ ASDM 500 ]
       specimen_type: holotype
       institution: ASDM
-      material: Left tibia, right tibia proximal, left radius, right radius, left
-        ulna, complete metacarpals I-IV, partial ilium, ischium, pubis, femur distal,
-        fibula, metatarsals I-II and IV-V, phalanges, dorsal and caudal vertebrae,
-        dorsal and cervical ribs, gastroliths
+      material: Five posterior dorsal and ten mid-posterior caudal vertebrae,
+        dorsal rib and scapular fragments, right humerus, right ulna, both
+        radii, right metacarpals I-IV, partial left ilium, right tibia and
+        fibula, right metatarsals I, II, IV and V, phalanges and unguals
       completeness: partial
     size:
       hip_height_m:
@@ -76,14 +70,15 @@ species:
         min: 15.0
         max: 15.0
       weight_kg:
-        min: 10000
-        max: 10000
+        min: 17000
+        max: 17000
     erected_in: ratkevich1998a
+    described_in: d'emic2016a
 references:
   - id: ratkevich1998a
   - id: jones2026b
     notes: Source of the hip height estimate.
   - id: d'emic2016a
-    notes: Redescription; places the holotype in the Turney Ranch Formation of
-      the Bisbee Group in Mattie Canyon, near the Whetstone Mountains, and
-      dates the quarry from detrital zircons.
+    notes: Redescription and source of the subadult holotype's mass estimate.
+      Places it in the Turney Ranch Formation of the Bisbee Group in Mattie
+      Canyon, and dates the quarry from detrital zircons.
