@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-09-15T02:17:15.618Z",
+    "built_at": "2026-09-15T20:44:51.082Z",
     "clade_count": 188,
     "genus_count": 1422,
     "license": "CC-BY-4.0",
@@ -12970,7 +12970,10 @@
             "region": "Kent",
             "locality": "East of Copt Point, near Folkestone",
             "formation": "West Melbury Marly Chalk",
-            "region_code": "GB-KEN"
+            "part": "lower",
+            "notes": "Etheridge (1867) placed the remains in the lower part of the Chalk Marl, about eight feet above the Upper Greensand, and fixed them to the lower part of the Grey Chalk series on an associated fauna of some forty species, among them Ammonites varians and Holaster subglobosus.",
+            "region_code": "GB-KEN",
+            "part_of": "formation"
           },
           "size": {
             "length_m": {
@@ -13085,6 +13088,19 @@
           "volume": "21",
           "issue": "1",
           "pages": "143-170"
+        },
+        {
+          "id": "etheridge1867a",
+          "authors": "Etheridge, R.",
+          "year": 1867,
+          "title": "V.-On the Stratigraphical Position of Acanthopholis Horridus (Huxley)",
+          "journal": "Geological Magazine",
+          "publisher": "Cambridge University Press (CUP)",
+          "volume": "4",
+          "issue": "32",
+          "pages": "67-69",
+          "doi": "10.1017/s0016756800171031",
+          "notes": "Fixes the horizon to the lower Chalk Marl about eight feet above the Upper Greensand, on an associated fauna of some forty species."
         }
       ],
       "taxonomy": [
@@ -18364,6 +18380,7 @@
             "locality": "west side of the Colville River",
             "region": "Alaska",
             "formation": "Prince Creek",
+            "notes": "The holotype was collected as talus from the beach below the bluffs, so its level within the formation is inferred from the exposures above rather than observed in place. Gangloff and colleagues (2005) put the site 24 river km southeast of Ocean Point and 4 river km south of the hadrosaur bone beds.",
             "region_code": "US-AK"
           },
           "size": {
@@ -18399,6 +18416,19 @@
           "journal": "Late Cretaceous Vertebrates from the Western Interior. New Mexico Museum of Natural History and Science Bulletin",
           "volume": "35",
           "pages": "348-365"
+        },
+        {
+          "id": "gangloff2005a",
+          "authors": "Gangloff, R. A.; Fiorillo, A. R.; Norton, D. W.",
+          "year": 2005,
+          "title": "The first pachycephalosaurine (Dinosauria) from the Paleo-Arctic of Alaska and its paleogeographic implications",
+          "journal": "Journal of Paleontology",
+          "publisher": "Cambridge University Press (CUP)",
+          "volume": "79",
+          "issue": "5",
+          "pages": "997-1001",
+          "doi": "10.1666/0022-3360(2005)079[0997:tfpdft]2.0.co;2",
+          "notes": "Describes the holotype squamosal, UAM AK-493-V-001, and its Colville River site; assigns a late Campanian age from tephra dates on the nearby bone beds."
         }
       ],
       "taxonomy": [
@@ -21418,10 +21448,10 @@
           },
           "location": {
             "country": "MN",
-            "locality": "Khuren-Dukh",
-            "region": "Dornogovi",
+            "locality": "Khuren Dukh",
+            "region": "Dundgovi",
             "formation": "Khuren Dukh",
-            "region_code": "MN-063"
+            "region_code": "MN-059"
           },
           "size": {
             "hip_height_m": {
@@ -26874,6 +26904,17 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25025-0",
           "notes": "Source of the hip height estimate, and the appearance features."
+        },
+        {
+          "id": "coria2011a",
+          "authors": "Coria, R. A.; Salgado, L.; Gasparini, Z.; Moly, J. J.",
+          "year": 2011,
+          "title": "Nuevos materiales del ejemplar holotipo de Antarctopelta oliveroi Salgado y Gasparini (Dinosauria, Ornithischia, Ankylosauria) del Cretácico superior de Antártida [New materials from the holotype specimen of Antarctopelta oliveroi Salgado and Gasparini (Dinosauria, Ornithischia, Ankylosauria) from the Upper Cretaceous of Antarctica]",
+          "journal": "Ameghiniana",
+          "volume": "48",
+          "issue": "4",
+          "pages": "R10",
+          "notes": "Reports the 2009 relocation of the holotype site and the first GPS fix for it, and refers further material from the site to the holotype individual."
         }
       ],
       "taxonomy": [
@@ -29027,6 +29068,19 @@
           "year": 2004,
           "title": "The Dinosauria, Second Edition",
           "publisher": "University of California Press, Berkeley"
+        },
+        {
+          "id": "royo-torres2014a",
+          "authors": "Royo-Torres, R.; Upchurch, P.; Mannion, P. D.; Mas, R.; Cobos, A.; Gascó, F.; Alcalá, L.; Sanz, J. L.",
+          "year": 2014,
+          "title": "The anatomy, phylogenetic relationships, and stratigraphic position of the Tithonian-Berriasian Spanish sauropod dinosaur Aragosaurus ischiaticus",
+          "journal": "Zoological Journal of the Linnean Society",
+          "publisher": "Oxford University Press (OUP)",
+          "volume": "171",
+          "issue": "3",
+          "pages": "623-655",
+          "doi": "10.1111/zoj.12144",
+          "notes": "Redescription; gives the type locality and horizon as the Las Zabacheras site in the Villar del Arzobispo Formation, upper Tithonian to lower Berriasian."
         }
       ],
       "taxonomy": [
@@ -29377,6 +29431,7 @@
             "locality": "Gongpoquan Basin",
             "region": "Gansu",
             "formation": "Zhonggou",
+            "notes": "Suarez et al. (2018) measured no sections in the Gongpoquan Basin, and You et al. (2018) find the Mazongshan and Jiuquan beds cannot be easily correlated, so the unit is a working hypothesis.",
             "region_code": "CN-GS"
           },
           "type_specimen": {
@@ -29423,7 +29478,9 @@
             "region": "Gansu",
             "locality": "Yujingzi Basin, Mazongshan area",
             "formation": "Xiagou",
-            "region_code": "CN-GS"
+            "part": "upper",
+            "region_code": "CN-GS",
+            "part_of": "formation"
           },
           "type_specimen": {
             "specimen_id": [
@@ -29487,6 +29544,29 @@
           "book": "New Perspectives on Horned Dinosaurs: The Royal Tyrrell Museum Ceratopsian Symposium",
           "publisher": "Indiana University Press",
           "pages": "59-67"
+        },
+        {
+          "id": "suarez2018a",
+          "authors": "Suarez, M. B.; Milder, T.; Peng, N.; Suarez, C. A.; You, H.; Li, D.; Dodson, P.",
+          "year": 2018,
+          "title": "Chemostratigraphy of the Lower Cretaceous dinosaur-bearing Xiagou and Zhonggou formations, Yujingzi Basin, northwest China",
+          "journal": "Journal of Vertebrate Paleontology",
+          "volume": "38",
+          "issue": "sup1",
+          "pages": "12-21",
+          "doi": "10.1080/02724634.2018.1510412"
+        },
+        {
+          "id": "you2018a",
+          "authors": "You, H.; Morschhauser, E. M.; Li, D.; Dodson, P.",
+          "year": 2018,
+          "title": "Introducing the Mazongshan Dinosaur Fauna",
+          "journal": "Journal of Vertebrate Paleontology",
+          "publisher": "Taylor and Francis",
+          "volume": "38",
+          "issue": "sup1",
+          "pages": "1-11",
+          "doi": "10.1080/02724634.2017.1396995"
         }
       ],
       "taxonomy": [
@@ -32083,6 +32163,7 @@
             "locality": "Akkurgan",
             "region": "Kyzylorda",
             "formation": "Bostobe",
+            "notes": "Shilin and Suslov (1982) assigned the beds to the Bostobinskaya Svita on a general similarity of lithofacies with other outcrops in the region rather than on a traced correlation, and Norman and Kurzanov (1997) note that a svita and a formation are not quite the same kind of unit. The holotype came from a greenish-grey shale 1.5 to 2 m below the overlying red beds.",
             "region_code": "KZ-43"
           },
           "type_specimen": {
@@ -33798,10 +33879,6 @@
           {
             "date": "2026-07-02",
             "note": "Confirmed placement at Eusauropoda incertae sedis; the outside-Neosauropoda, basal-macronarian, and brachiosaurid hypotheses remain unresolved.\n"
-          },
-          {
-            "date": "2026-07-09",
-            "note": "Placement unchanged; dispute citations corrected — A previously cited paper, \"Royo-Torres et al. (2020)\" does not include Atlasaurus, and the D'Emic (2012) result is a non-neosauropod eusauropod, not a basal macronarian.\n"
           }
         ]
       },
@@ -34990,6 +35067,7 @@
             "locality": "Gongpoquan Basin",
             "region": "Gansu",
             "group": "Xinminpu",
+            "notes": "You et al. (2018) find the Mazongshan and Jiuquan beds cannot be easily correlated, so no unit more granular than a group can be asserted for the holotype.",
             "region_code": "CN-GS"
           },
           "type_specimen": {
@@ -35034,6 +35112,18 @@
           "volume": "79",
           "issue": "5",
           "pages": "593-597"
+        },
+        {
+          "id": "you2018a",
+          "authors": "You, H.; Morschhauser, E. M.; Li, D.; Dodson, P.",
+          "year": 2018,
+          "title": "Introducing the Mazongshan Dinosaur Fauna",
+          "journal": "Journal of Vertebrate Paleontology",
+          "publisher": "Taylor and Francis",
+          "volume": "38",
+          "issue": "sup1",
+          "pages": "1-11",
+          "doi": "10.1080/02724634.2017.1396995"
         }
       ],
       "taxonomy": [
@@ -40454,7 +40544,7 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Laojun Village, Pu'an Township",
+            "locality": "Laojun Village, Pu'an Township, Yunyang County",
             "region": "Chongqing",
             "formation": "Shaximiao",
             "part": "lower",
@@ -41730,9 +41820,9 @@
           "notes": "Description of Paraxenisaurus recovered Beishanlong as a basal ornithomimosaur outside Deinocheiridae."
         },
         {
-          "id": "suarez2019a",
+          "id": "suarez2018a",
           "authors": "Suarez, M. B.; Milder, T.; Peng, N.; Suarez, C. A.; You, H.; Li, D.; Dodson, P.",
-          "year": 2019,
+          "year": 2018,
           "title": "Chemostratigraphy of the Lower Cretaceous dinosaur-bearing Xiagou and Zhonggou formations, Yujingzi Basin, northwest China",
           "journal": "Journal of Vertebrate Paleontology",
           "volume": "38",
@@ -54812,8 +54902,8 @@
             "region": "Río Negro",
             "formation": "Huincul",
             "coordinates": [
-              -39.397778,
-              -68.617775
+              -39.397881,
+              -68.617861
             ],
             "region_code": "AR-R"
           },
@@ -58010,10 +58100,10 @@
           "location": {
             "country": "MN",
             "locality": "Khuren Dukh",
-            "region": "Dornogovi",
+            "region": "Dundgovi",
             "formation": "Khuren Dukh",
             "part": "lower",
-            "region_code": "MN-063",
+            "region_code": "MN-059",
             "part_of": "formation"
           },
           "type_specimen": {
@@ -82583,6 +82673,7 @@
             "region": "Gansu",
             "formation": "Zhonggou",
             "part": "middle",
+            "notes": "Suarez et al. (2018) measured no sections in the Gongpoquan Basin, and You et al. (2018) find the Mazongshan and Jiuquan beds cannot be easily correlated, so the unit is a working hypothesis.",
             "region_code": "CN-GS",
             "part_of": "formation"
           },
@@ -82643,6 +82734,29 @@
           "title": "The Princeton Field Guide to Dinosaurs (3rd ed.)",
           "publisher": "Princeton University Press",
           "notes": "Source of the appearance features."
+        },
+        {
+          "id": "suarez2018a",
+          "authors": "Suarez, M. B.; Milder, T.; Peng, N.; Suarez, C. A.; You, H.; Li, D.; Dodson, P.",
+          "year": 2018,
+          "title": "Chemostratigraphy of the Lower Cretaceous dinosaur-bearing Xiagou and Zhonggou formations, Yujingzi Basin, northwest China",
+          "journal": "Journal of Vertebrate Paleontology",
+          "volume": "38",
+          "issue": "sup1",
+          "pages": "12-21",
+          "doi": "10.1080/02724634.2018.1510412"
+        },
+        {
+          "id": "you2018a",
+          "authors": "You, H.; Morschhauser, E. M.; Li, D.; Dodson, P.",
+          "year": 2018,
+          "title": "Introducing the Mazongshan Dinosaur Fauna",
+          "journal": "Journal of Vertebrate Paleontology",
+          "publisher": "Taylor and Francis",
+          "volume": "38",
+          "issue": "sup1",
+          "pages": "1-11",
+          "doi": "10.1080/02724634.2017.1396995"
         }
       ],
       "taxonomy": [
@@ -95518,7 +95632,7 @@
             "region": "Gansu",
             "formation": "Zhonggou",
             "part": "middle",
-            "notes": "The Zhonggou Formation's middle gray unit is an informal lithologic subdivision, not a named member.",
+            "notes": "The Zhonggou Formation's middle gray unit is an informal lithologic subdivision, not a named member. The unit itself is a working hypothesis, the beds being uncorrelated with Yujingzi.",
             "region_code": "CN-GS",
             "part_of": "formation"
           },
@@ -95546,6 +95660,18 @@
           "publisher": "Indiana University Press",
           "pages": "73-76",
           "notes": "Erects the genus and places the holotype in the middle gray unit of the Zhonggou Formation, in the Gongpoquan Basin."
+        },
+        {
+          "id": "you2018a",
+          "authors": "You, H.; Morschhauser, E. M.; Li, D.; Dodson, P.",
+          "year": 2018,
+          "title": "Introducing the Mazongshan Dinosaur Fauna",
+          "journal": "Journal of Vertebrate Paleontology",
+          "publisher": "Taylor and Francis",
+          "volume": "38",
+          "issue": "sup1",
+          "pages": "1-11",
+          "doi": "10.1080/02724634.2017.1396995"
         }
       ],
       "taxonomy": [
@@ -99865,6 +99991,7 @@
           },
           "location": {
             "country": "MN",
+            "locality": "Khuren Dukh",
             "region": "Dundgovi",
             "formation": "Khuren Dukh",
             "notes": "Kobayashi and Barsbold (2005) name the unit the Shinekhudug Formation, which Ito and colleagues (2006) renamed the Khuren Dukh for its type locality. Neither paper gives the holotype's own site.",
@@ -99975,6 +100102,18 @@
           "issue": "2",
           "pages": "226-240",
           "doi": "10.1016/j.cretres.2005.11.005"
+        },
+        {
+          "id": "gates2018a",
+          "authors": "Gates, T. A.; Tsogtbaatar, K.; Zanno, L. E.; Chinzorig, T.; Watabe, M.",
+          "year": 2018,
+          "title": "A new iguanodontian (Dinosauria: Ornithopoda) from the Early Cretaceous of Mongolia",
+          "journal": "PeerJ",
+          "publisher": "PeerJ",
+          "volume": "6",
+          "pages": "e5300",
+          "doi": "10.7717/peerj.5300",
+          "notes": "Places the Harpymimus type material in the same Khuren Dukh beds as Altirhinus."
         }
       ],
       "taxonomy": [
@@ -115552,9 +115691,9 @@
           "notes": "Assigns Archaeoceratops yujingziensis, from the same basin, to the Xiagou Formation."
         },
         {
-          "id": "suarez2019a",
+          "id": "suarez2018a",
           "authors": "Suarez, M. B.; Milder, T.; Peng, N.; Suarez, C. A.; You, H.; Li, D.; Dodson, P.",
-          "year": 2019,
+          "year": 2018,
           "title": "Chemostratigraphy of the Lower Cretaceous dinosaur-bearing Xiagou and Zhonggou formations, Yujingzi Basin, northwest China",
           "journal": "Journal of Vertebrate Paleontology",
           "volume": "38",
@@ -118415,15 +118554,6 @@
     "Kazaklambia": {
       "genus": "Kazaklambia",
       "parent": "Lambeosaurinae",
-      "dispute": {
-        "summary": "The unit holding the holotype is contested, and Nessov (1995) records both readings for the Syuk-Syuk well site. Rozhdestvensky (1964) assigned it to the lower part of the Darbazin Formation; the Stratigraphic Dictionary of the USSR, edited by Vereshchagin (1979), assigned it to the Syuk-Syuk Formation. Bell and others (2013) follow the Darbazin reading. The two units are stratigraphically adjacent and both are dated Santonian, so the disagreement is over which name applies to the horizon rather than over the horizon itself.\n",
-        "history": [
-          {
-            "date": "2026-08-06",
-            "note": "Darbazin adopted, following the erecting paper. Bell and others (2013) spell it Dabrazinskaya, transposing Darbazinskaya; the svita is named for Darbaza station. The record previously held a further corruption of that spelling, which names no published unit.\n"
-          }
-        ]
-      },
       "etymology": "Named for Kazakhstan, where the fossils were found, combined with the genus name Lambeosaurus (a related lambeosaurine dinosaur), meaning 'Kazakhstan Lambeosaurus'.",
       "pronunciation": {
         "phonetic": "kah-zak-LAM-bee-uh"
@@ -118480,6 +118610,7 @@
             "locality": "Syuk-Syuk",
             "region": "Turkistan",
             "formation": "Darbazin",
+            "notes": "Which unit name applies to the horizon is contested rather than the horizon itself. Rozhdestvensky (1964) assigned the holotype to the lower part of the Darbazin Formation and the Stratigraphic Dictionary of the USSR, edited by Vereshchagin (1979), to the Syuk-Syuk Formation, with Nessov (1995) recording both readings for the Syuk-Syuk well site. The two units are stratigraphically adjacent and both Santonian. Bell and others (2013) follow the Darbazin reading, which is adopted here.",
             "region_code": "KZ-61"
           },
           "type_specimen": {
@@ -147239,6 +147370,7 @@
             "region": "Queensland",
             "formation": "Mackunda",
             "part": "lower",
+            "notes": "Herne and colleagues (2026) infer the lower half from a 1970 Bureau of Mineral Resources map section rather than from a measured section at the locality.",
             "region_code": "AU-QLD",
             "part_of": "formation"
           },
@@ -153796,7 +153928,7 @@
           },
           "location": {
             "country": "AR",
-            "locality": "El Brete Estancia",
+            "locality": "El Brete",
             "region": "Salta",
             "formation": "Lecho",
             "part": "middle",
@@ -157395,7 +157527,7 @@
             "region": "Chongqing",
             "formation": "Shaximiao",
             "part": "lower",
-            "locality": "Laojun Village, Pu'an Town, Yunyang County",
+            "locality": "Laojun Village, Pu'an Township, Yunyang County",
             "region_code": "CN-CQ",
             "part_of": "formation"
           },
@@ -179439,9 +179571,9 @@
           "notes": "Source of the hip height estimate, and the appearance features."
         },
         {
-          "id": "suarez2019a",
+          "id": "suarez2018a",
           "authors": "Suarez, M. B.; Milder, T.; Peng, N.; Suarez, C. A.; You, H.; Li, D.; Dodson, P.",
-          "year": 2019,
+          "year": 2018,
           "title": "Chemostratigraphy of the Lower Cretaceous dinosaur-bearing Xiagou and Zhonggou formations, Yujingzi Basin, northwest China",
           "journal": "Journal of Vertebrate Paleontology",
           "volume": "38",
@@ -186030,7 +186162,14 @@
             "locality": "El Brete",
             "region": "Salta",
             "formation": "Lecho",
-            "region_code": "AR-A"
+            "part": "middle",
+            "coordinates": [
+              -26.039444,
+              -65.335
+            ],
+            "notes": "All described material comes from a single quarry about 36 m² in area. Hendrickx and colleagues (2024) place it 2.6 km south of the El Brete Estancia, but their own coordinate, their figure caption and the 3 km they give to the border with Tucumán to the south all put the site north of the estancia.",
+            "region_code": "AR-A",
+            "part_of": "formation"
           },
           "type_specimen": {
             "specimen_id": [
@@ -186067,6 +186206,18 @@
           "journal": "Mémoires de la Société Géologique de France, Nouvelle Série",
           "volume": "139",
           "pages": "19-28"
+        },
+        {
+          "id": "hendrickx2024a",
+          "authors": "Hendrickx, C.; Cerroni, M. A.; Agnolín, F. L.; Catalano, S.; Ribeiro, C. F.; Delcourt, R.",
+          "year": 2024,
+          "title": "Osteology, relationship, and feeding ecology of the theropod dinosaur Noasaurus leali, from the Late Cretaceous of North-Western Argentina",
+          "journal": "Zoological Journal of the Linnean Society",
+          "volume": "202",
+          "issue": "4",
+          "pages": "zlae150",
+          "doi": "10.1093/zoolinnean/zlae150",
+          "notes": "Source of the quarry coordinate; places the El Brete bone bed 22 m above the base of the Lecho Formation."
         },
         {
           "id": "jones2026b",
@@ -186716,7 +186867,7 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Laojun Village",
+            "locality": "Laojun Village, Pu'an Township, Yunyang County",
             "region": "Chongqing",
             "formation": "Xintiangou",
             "part": "upper",
@@ -197659,7 +197810,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "IVPP-V11797-10"
+              "IVPP V11797-10"
             ],
             "specimen_type": "holotype",
             "institution": "Institute of Vertebrate Paleontology and Paleoanthropology",
@@ -199734,7 +199885,7 @@
           },
           "location": {
             "country": "US",
-            "locality": "Sonorasaurus quarry",
+            "locality": "Mattie Canyon, Whetstone Mountains",
             "region": "Arizona",
             "formation": "Turney Ranch",
             "region_code": "US-AZ"
@@ -199786,6 +199937,19 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25023-6",
           "notes": "Source of the hip height estimate."
+        },
+        {
+          "id": "demic2016a",
+          "authors": "D'Emic, M. D.; Foreman, B. Z.; Jud, N. A.",
+          "year": 2016,
+          "title": "Anatomy, systematics, paleoenvironment, growth, and age of the sauropod dinosaur Sonorasaurus thompsoni from the Cretaceous of Arizona, USA",
+          "journal": "Journal of Paleontology",
+          "publisher": "Cambridge University Press (CUP)",
+          "volume": "90",
+          "issue": "1",
+          "pages": "102-132",
+          "doi": "10.1017/jpa.2015.67",
+          "notes": "Redescription; places the holotype in the Turney Ranch Formation of the Bisbee Group in Mattie Canyon, near the Whetstone Mountains, and dates the quarry from detrital zircons."
         }
       ],
       "taxonomy": [
@@ -205089,6 +205253,18 @@
           "title": "Fish-eating theropods: a short review of the systematics, biology and palaeobiogeography of spinosaurs",
           "book": "Actas de las II Jornadas Internacionales sobre Paleontología de Dinosaurios y su Entorno",
           "pages": "129-138"
+        },
+        {
+          "id": "barker2023a",
+          "authors": "Barker, C. T.; Naish, D.; Gostling, N. J.",
+          "year": 2023,
+          "title": "Isolated tooth reveals hidden spinosaurid dinosaur diversity in the British Wealden Supergroup (Lower Cretaceous)",
+          "journal": "PeerJ",
+          "publisher": "PeerJ",
+          "volume": "11",
+          "pages": "e15453",
+          "doi": "10.7717/peerj.15453",
+          "notes": "Records that the Grinstead Clay, source of the type specimen, is ranked as a formation in some schemes and as a member of the Tunbridge Wells Sand in others."
         }
       ],
       "taxonomy": [
@@ -205824,9 +206000,9 @@
           "notes": "Places the holotype in the gray-variegated beds of the Yujingzi Basin and correlates those beds with the upper Xiagou Formation."
         },
         {
-          "id": "suarez2019a",
+          "id": "suarez2018a",
           "authors": "Suarez, M. B.; Milder, T.; Peng, N.; Suarez, C. A.; You, H.; Li, D.; Dodson, P.",
-          "year": 2019,
+          "year": 2018,
           "title": "Chemostratigraphy of the Lower Cretaceous dinosaur-bearing Xiagou and Zhonggou formations, Yujingzi Basin, northwest China",
           "journal": "Journal of Vertebrate Paleontology",
           "volume": "38",
@@ -208862,7 +209038,7 @@
           },
           "location": {
             "country": "MN",
-            "locality": "Khulsan, site 6",
+            "locality": "Khulsan, Central Cliffs, site 6",
             "region": "Ömnögovi",
             "formation": "Baruungoyot",
             "region_code": "MN-053"
@@ -209954,7 +210130,7 @@
           },
           "location": {
             "country": "AR",
-            "locality": "Violante farm",
+            "locality": "Pueblo Blanco Natural Reserve",
             "region": "Río Negro",
             "formation": "Huincul",
             "coordinates": [
@@ -217891,7 +218067,7 @@
           },
           "location": {
             "country": "AR",
-            "locality": "Violante farm",
+            "locality": "Pueblo Blanco Natural Reserve",
             "region": "Río Negro",
             "formation": "Huincul",
             "part": "upper",
@@ -219882,6 +220058,19 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25021-2",
           "notes": "Source of the hip height estimate."
+        },
+        {
+          "id": "dingus2008a",
+          "authors": "Dingus, L.; Loope, D. B.; Dashzeveg, D.; Swisher, C. C.; Minjin, C.; Novacek, M. J.; Norell, M. A.",
+          "year": 2008,
+          "title": "The Geology of Ukhaa Tolgod (Djadokhta Formation, Upper Cretaceous, Nemegt Basin, Mongolia)",
+          "journal": "American Museum Novitates",
+          "publisher": "American Museum of Natural History (BioOne sponsored)",
+          "volume": "3616",
+          "issue": "1",
+          "pages": "1-40",
+          "doi": "10.1206/442.1",
+          "notes": "Maps Xanadu as one of twelve named collecting areas in the Ukhaa Tolgod drainage basin and describes the eolian and interdune facies exposed there."
         }
       ],
       "taxonomy": [
@@ -221808,6 +221997,7 @@
             "locality": "La Juanita farm",
             "region": "Chubut",
             "formation": "Cerro Barcino",
+            "member": "Cerro Castaño",
             "region_code": "AR-U"
           },
           "type_specimen": {
@@ -221859,6 +222049,19 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25021-2",
           "notes": "Source of the hip height estimate, and the appearance features."
+        },
+        {
+          "id": "canale2014a",
+          "authors": "Canale, J. I.; Novas, F. E.; Pol, D.",
+          "year": 2014,
+          "title": "Osteology and phylogenetic relationships of Tyrannotitan chubutensis Novas, de Valais, Vickers-Rich and Rich, 2005 (Theropoda: Carcharodontosauridae) from the Lower Cretaceous of Patagonia, Argentina",
+          "journal": "Historical Biology",
+          "publisher": "Informa UK Limited",
+          "volume": "27",
+          "issue": "1",
+          "pages": "1-32",
+          "doi": "10.1080/08912963.2013.861830",
+          "notes": "Gives the type locality and horizon as the La Juanita farm, 28 km northwest of Paso de Indios, in the Cerro Castaño Member; GPS data are held at the MPEF and released on request."
         }
       ],
       "taxonomy": [
@@ -228432,7 +228635,7 @@
           },
           "location": {
             "country": "TZ",
-            "locality": "Quarry G",
+            "locality": "Tendaguru Quarry G",
             "region": "Lindi",
             "formation": "Tendaguru",
             "member": "Upper Dinosaur",
@@ -232468,9 +232671,9 @@
           "notes": "Source of the hip height estimate, and the appearance features."
         },
         {
-          "id": "suarez2019a",
+          "id": "suarez2018a",
           "authors": "Suarez, M. B.; Milder, T.; Peng, N.; Suarez, C. A.; You, H.; Li, D.; Dodson, P.",
-          "year": 2019,
+          "year": 2018,
           "title": "Chemostratigraphy of the Lower Cretaceous dinosaur-bearing Xiagou and Zhonggou formations, Yujingzi Basin, northwest China",
           "journal": "Journal of Vertebrate Paleontology",
           "volume": "38",
@@ -233630,7 +233833,7 @@
             "region": "Gansu",
             "formation": "Xiagou",
             "part": "upper",
-            "notes": "You and colleagues (2014) assigned the Yujingzi hadrosauroids to the Zhonggou Formation on a personal communication. Suarez and colleagues (2019) supersede that, placing the gray-variegated beds that yield this specimen in the uppermost Xiagou on carbon-isotope chemostratigraphy across 450 samples.",
+            "notes": "You and colleagues (2014) assigned the Yujingzi hadrosauroids to the Zhonggou Formation on a personal communication. Suarez and colleagues (2018) supersede that, placing the gray-variegated beds that yield this specimen in the uppermost Xiagou on carbon-isotope chemostratigraphy across 450 samples.",
             "region_code": "CN-GS",
             "part_of": "formation"
           },
@@ -233679,9 +233882,9 @@
           "notes": "Source of the body length and mass estimates, and the appearance features."
         },
         {
-          "id": "suarez2019a",
+          "id": "suarez2018a",
           "authors": "Suarez, M. B.; Milder, T.; Peng, N.; Suarez, C. A.; You, H.; Li, D.; Dodson, P.",
-          "year": 2019,
+          "year": 2018,
           "title": "Chemostratigraphy of the Lower Cretaceous dinosaur-bearing Xiagou and Zhonggou formations, Yujingzi Basin, northwest China",
           "journal": "Journal of Vertebrate Paleontology",
           "volume": "38",
@@ -237179,6 +237382,9 @@
             "country": "CN",
             "region": "Yunnan",
             "formation": "Lufeng",
+            "locality": "Huangchiatien",
+            "member": "Zhangjiawa",
+            "notes": "Barrett and colleagues (2007) give the Dark Red Beds of the Lower Lufeng Formation, which Norman and colleagues (2007) and Zhang and colleagues (2018) equate with the Zhangjiawa Member.",
             "region_code": "CN-YN"
           },
           "size": {
@@ -237365,6 +237571,30 @@
           "volume": "12",
           "pages": "e18629",
           "doi": "10.7717/peerj.18629"
+        },
+        {
+          "id": "barrett2007a",
+          "authors": "Barrett, P. M.; Upchurch, P.; Zhou, X. D.; Wang, X. L.",
+          "year": 2007,
+          "title": "The skull of Yunnanosaurus huangi Young, 1942 (Dinosauria: Prosauropoda) from the Lower Lufeng Formation (Lower Jurassic) of Yunnan, China",
+          "journal": "Zoological Journal of the Linnean Society",
+          "volume": "150",
+          "issue": "2",
+          "pages": "319-341",
+          "doi": "10.1111/j.1096-3642.2007.00290.x",
+          "notes": "Redescribes the skull of the holotype and gives the type locality as Huangchiatien village, Lufeng County, in the Dark Red Beds of the Lower Lufeng Formation."
+        },
+        {
+          "id": "norman2007a",
+          "authors": "Norman, D. B.; Butler, R. J.; Maidment, S. C. R.",
+          "year": 2007,
+          "title": "Reconsidering the status and affinities of the ornithischian dinosaur Tatisaurus oehleri Simmons, 1965",
+          "journal": "Zoological Journal of the Linnean Society",
+          "volume": "150",
+          "issue": "4",
+          "pages": "865-874",
+          "doi": "10.1111/j.1096-3642.2007.00301.x",
+          "notes": "Records that the Dull Purplish Beds and Dark Red Beds were formally designated the Shawan and Zhangjiawa members."
         }
       ],
       "taxonomy": [
@@ -237452,7 +237682,7 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Laojun Village, Puan Township",
+            "locality": "Laojun Village, Pu'an Township, Yunyang County",
             "region": "Chongqing",
             "formation": "Xintiangou",
             "part": "upper",
@@ -237735,6 +237965,7 @@
             "locality": "Batuyingzi, Beipiao",
             "region": "Liaoning",
             "formation": "Yixian",
+            "notes": "Both specimens were bought from a fossil dealer, who reported the quarry as Batuyingzi. Xu and colleagues (2012) infer the Yixian Formation from the shale lithology and preservation rather than from a stated horizon; most exposures in the area are Tuchengzi.",
             "region_code": "CN-LN"
           },
           "type_specimen": {
@@ -237995,7 +238226,7 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Laojun Village, Pu'an Town",
+            "locality": "Laojun Village, Pu'an Township, Yunyang County",
             "region": "Chongqing",
             "formation": "Shaximiao",
             "part": "lower",
@@ -239642,7 +239873,7 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Sihedang",
+            "locality": "Sihedang, Lingyuan",
             "region": "Liaoning",
             "formation": "Yixian",
             "region_code": "CN-LN"
@@ -239788,7 +240019,7 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Sihedang",
+            "locality": "Sihedang, Lingyuan",
             "region": "Liaoning",
             "formation": "Yixian",
             "notes": "Xu (2017) gives the horizon as possibly the Yixian Formation and states that the assignment needs confirmation.",
@@ -240345,10 +240576,6 @@
             "region": "Shandong",
             "formation": "Hongtuya",
             "part": "lower",
-            "coordinates": [
-              35.943333,
-              119.333333
-            ],
             "region_code": "CN-SD",
             "part_of": "formation"
           },
@@ -240477,10 +240704,6 @@
             "locality": "Zangjiazhuang",
             "region": "Shandong",
             "formation": "Hongtuya",
-            "coordinates": [
-              35.943333,
-              119.333333
-            ],
             "region_code": "CN-SD"
           },
           "size": {
@@ -240742,10 +240965,11 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Wujiaba Dam",
+            "locality": "Wujiaba, Ziliujing District, Zigong",
             "region": "Sichuan",
             "formation": "Shaximiao",
             "part": "upper",
+            "notes": "Hou and colleagues (1976) give only Zigong City and spring 1974, naming the species for the Fuxi River. Dong and colleagues (1977, 1978) place the same fauna at Wujiaba, 10 to 15 m above the conchostracan shale.",
             "region_code": "CN-SC",
             "part_of": "formation"
           },
@@ -240784,6 +241008,28 @@
           "issue": "23",
           "pages": "1-136",
           "notes": "Transfers the species to Omeisaurus and gives its material as a basioccipital, a maxilla, a left dentary and an axis under CV00267."
+        },
+        {
+          "id": "dong1977a",
+          "authors": "Dong, Z.; Li, X.; Zhou, S.; Zhang, Y.",
+          "year": 1977,
+          "title": "On the stegosaurian remains from Zigong (Tzekung), Szechuan province",
+          "journal": "Vertebrata PalAsiatica",
+          "volume": "15",
+          "issue": "4",
+          "pages": "307-312",
+          "notes": "Reports the Wujiaba dinosaur fauna of Zigong, noting that its sauropods had already been described, and that Tuojiangosaurus occurs alongside Zigongosaurus."
+        },
+        {
+          "id": "dong1978a",
+          "authors": "Dong, Z.; Zhang, Y.; Li, X.; Zhou, S.",
+          "year": 1978,
+          "title": "[A new carnosaur from Yongchuan County, Sichuan Province]",
+          "journal": "Ke Xue Tong Bao [Science Newsletter]",
+          "volume": "23",
+          "issue": "5",
+          "pages": "302-304",
+          "notes": "Lists Zigongosaurus fuxiensis in the Wujiaba (Zigong) fauna, 10 to 15 m above the conchostracan shale marker bed."
         }
       ],
       "taxonomy": [
