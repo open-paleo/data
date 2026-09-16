@@ -30,7 +30,17 @@ export type Placement = "incertae sedis";
 export type Diet = "herbivore" | "carnivore" | "omnivore" | "insectivore" | "piscivore";
 export type Locomotion = "bipedal" | "quadrupedal" | "facultative";
 export type Paleoenvironments =
-  "fluvial" | "lacustrine" | "coastal" | "deltaic" | "arid" | "forested" | "wetland" | "marine" | "polar";
+  | "fluvial"
+  | "lacustrine"
+  | "coastal"
+  | "estuarine"
+  | "deltaic"
+  | "arid"
+  | "semiarid"
+  | "forested"
+  | "wetland"
+  | "marine"
+  | "polar";
 export type Integument = "feathered" | "scaled" | "armored" | "unknown";
 export type IntegumentEvidence = "direct" | "inferred";
 export type AppearanceFeatures =
