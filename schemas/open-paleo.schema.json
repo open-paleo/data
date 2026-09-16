@@ -303,7 +303,7 @@
     "iczn_ruling_types": { "type": "string", "enum": ["type-species", "type-specimen", "name-conservation", "name-suppression", "priority-reversal", "spelling-emendation"] },
     "integument": { "type": "string", "enum": ["feathered", "scaled", "armored", "unknown"] },
     "integument_evidence": { "type": "string", "enum": ["direct", "inferred"] },
-    "paleoenvironments": { "type": "string", "enum": ["fluvial", "lacustrine", "coastal", "deltaic", "arid", "forested", "wetland", "marine", "polar"] },
+    "paleoenvironments": { "type": "string", "enum": ["fluvial", "lacustrine", "coastal", "estuarine", "deltaic", "arid", "semiarid", "forested", "wetland", "marine", "polar"] },
     "identifier_sources": { "type": "string", "enum": ["zoobank", "wikidata", "gbif", "pbdb", "eol"] },
     "periods": { "type": "string", "enum": ["Late Triassic", "Middle Triassic", "Early Triassic", "Late Jurassic", "Middle Jurassic", "Early Jurassic", "Late Cretaceous", "Early Cretaceous", "Late Permian", "Middle Permian", "Early Permian"] },
     "stages": { "type": "string", "enum": ["Maastrichtian", "Campanian", "Santonian", "Coniacian", "Turonian", "Cenomanian", "Albian", "Aptian", "Barremian", "Hauterivian", "Valanginian", "Berriasian", "Tithonian", "Kimmeridgian", "Oxfordian", "Callovian", "Bathonian", "Bajocian", "Aalenian", "Toarcian", "Pliensbachian", "Sinemurian", "Hettangian", "Rhaetian", "Norian", "Carnian", "Ladinian", "Anisian", "Olenekian", "Induan", "Changhsingian", "Wuchiapingian", "Capitanian", "Wordian", "Roadian", "Kungurian", "Artinskian", "Sakmarian", "Asselian"] },
