@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-09-15T23:20:33.760Z",
+    "built_at": "2026-09-16T00:20:07.455Z",
     "clade_count": 188,
     "genus_count": 1422,
     "license": "CC-BY-4.0",
@@ -229267,7 +229267,6 @@
       ],
       "diagnostic_features": [
         "Epiparietals at loci ep 2 and ep 3 developed as broad-based, pachyostotic processes that are procurved anterodorsally to overhang the posterior and lateral parietal rami",
-        "Ischium with a broad, rectangular distal terminus",
         "Large, upright nasal horncore positioned close to the orbits"
       ],
       "appearance": {
@@ -229319,6 +229318,7 @@
             "region": "Alberta",
             "formation": "Oldman",
             "part": "lower",
+            "notes": "The quarry sits in a single mudstone unit in the lower Oldman Formation, about 15 m above the Taber Coal Zone, a position Scott and colleagues (2022) remeasured. The bonebed lithosome can be traced some 50 m eastward along the outcrop.",
             "region_code": "CA-AB",
             "part_of": "formation"
           },
@@ -229366,6 +229366,19 @@
           "title": "The Princeton Field Guide to Dinosaurs (3rd ed.)",
           "publisher": "Princeton University Press",
           "notes": "Source of the appearance features."
+        },
+        {
+          "id": "scott2022a",
+          "authors": "Scott, S. H. W.; Ryan, M. J.; Evans, D. C.",
+          "year": 2022,
+          "title": "Postcranial description of Wendiceratops pinhornensis and a taphonomic analysis of the oldest monodominant ceratopsid bonebed",
+          "journal": "The Anatomical Record",
+          "publisher": "Wiley",
+          "volume": "306",
+          "issue": "7",
+          "pages": "1824-1841",
+          "doi": "10.1002/ar.25045",
+          "notes": "Describes the postcranium from the type bonebed and reinterprets the rectangular distal ischium as a possible basal centrosaurine synapomorphy rather than an autapomorphy of this genus."
         }
       ],
       "taxonomy": [
@@ -229702,16 +229715,18 @@
         "fluvial"
       ],
       "diagnostic_features": [
-        "Dorsal vertebrae with camellate pneumatic cavities, deep eye-shaped pleurocoels, prespinal and postspinal laminae along entire neural spine length",
-        "Incipient spinoprezygapophyseal lamina on dorsal neural spines",
-        "Dorsal ribs large and plank-like with pneumatic cavities in proximal third",
-        "Approximately 35 caudal vertebrae all with solid internal structure; posterior caudals with incipient biconvexity",
-        "Scapula long with broad acromial blade and mid-scapular blade ridge",
-        "Humerus gracile with low narrow deltopectoral crest terminating proximal to mid-shaft"
+        "Unbifurcated middle to posterior dorsal neural spine summit with a rounded median ridge linking the pre- and postspinal laminae",
+        "Anterior and anterior-middle caudal centra with a horizontal ridge at about mid-height projecting as far laterally as the articular surfaces",
+        "Anterior chevrons whose proximal articular ends are anteroposteriorly narrower in lateral view than the proximal rami at mid-height of the haemal canal",
+        "Scapular blade with a fossa on the medial surface close to the acromion-blade junction",
+        "Radius with a subcircular proximal end bearing a medially directed projection",
+        "Metacarpus with a deep fossa on the proximal surface at the intersection of metacarpals I, II and III",
+        "Metacarpal III with the distal end more transversely expanded than the proximal end",
+        "Metacarpal IV with a medially projecting bulge on the dorsal surface near mid-shaft"
       ],
       "appearance": {
-        "integument": "armored",
-        "evidence": "direct"
+        "integument": "scaled",
+        "evidence": "inferred"
       },
       "identifiers": [
         {
@@ -229754,16 +229769,17 @@
               -22.290561,
               142.471897
             ],
+            "notes": "The type locality is registered as Queensland Museum locality QM L313, the Triangle Paddock Site on Elderslie Sheep Station, about 60 km north-west of Winton and west of the Cork Fault. The coordinates are those of Beeston and colleagues (2024).",
             "region_code": "AU-QLD",
             "part_of": "formation"
           },
           "type_specimen": {
             "specimen_id": [
-              "QMF 7292"
+              "QM F7292"
             ],
             "specimen_type": "holotype",
             "institution": "Queensland Museum, Centre for Biodiversity",
-            "material": "Left scapula, partial humeri, radii and ulnae, complete metacarpus, dorsal and sacral vertebrae, caudal series, chevrons, ilium, ischium",
+            "material": "Partial postcranial skeleton with a fragmentary dorsal centrum and three neural arches, dorsal rib fragments, two coossified sacral vertebrae, 25 caudal vertebrae, five chevrons, an incomplete left scapula, both humeri and ulnae, both radii, the left metacarpus, a partial left ilium and the left ischium",
             "completeness": "partial"
           },
           "size": {
@@ -229781,6 +229797,7 @@
             }
           },
           "erected_in": "hocknull2009a",
+          "described_in": "poropat2015a",
           "authors": "Hocknull, S. A.; White, M. A.; Tischler, T. R.; Cook, A. G.; Calleja, N. D.; Sloan, T.; Elliott, D. A.",
           "described": 2009
         }
@@ -229838,6 +229855,19 @@
           "pages": "e17180",
           "doi": "10.7717/peerj.17180",
           "notes": "Recovered Wintonotitan as a member of Diamantinasauria."
+        },
+        {
+          "id": "poropat2015a",
+          "authors": "Poropat, S. F.; Mannion, P. D.; Upchurch, P.; Hocknull, S. A.; Kear, B. P.; Elliott, D. A.",
+          "year": 2015,
+          "title": "Reassessment of the non-titanosaurian somphospondylan Wintonotitan wattsi (Dinosauria: Sauropoda: Titanosauriformes) from the mid-Cretaceous Winton Formation, Queensland, Australia",
+          "journal": "Papers in Palaeontology",
+          "publisher": "Wiley",
+          "volume": "1",
+          "issue": "1",
+          "pages": "59-106",
+          "doi": "10.1002/spp2.1004",
+          "notes": "Osteological redescription. Replaces the original diagnosis with eight autapomorphies, keeps the genus outside Diamantinasauria, and shows the reported osteoderms to be its own neural spines."
         }
       ],
       "taxonomy": [
@@ -237402,7 +237432,15 @@
         "lacustrine"
       ],
       "diagnostic_features": [
-        "Teeth subcylindrical and sharply pointed"
+        "Small external naris, about 10% of maximum skull length",
+        "Robust, rostrocaudally expanded nasal process of the premaxilla",
+        "Ventral projection from the caudal margin of the ascending maxillary process",
+        "Nutritive foramina absent from the lateral surface of the maxilla",
+        "Shallow, subcircular fossa on the lateral surface of the ventral lachrymal process",
+        "Midline boss near the rostral end of the frontals",
+        "Prominent midline boss on the parietals",
+        "Rostrolateral process of the parietal rostrocaudally expanded relative to the width of the caudolateral process",
+        "Maxillary teeth mesiodistally narrow and lacking denticles"
       ],
       "appearance": {
         "integument": "scaled",
@@ -237468,20 +237506,29 @@
             ],
             "specimen_type": "holotype",
             "institution": "Nanjing Geological Museum",
-            "material": "Skull, lower jaw pair and partly preserved skeletons",
+            "material": "Almost complete skeleton with skull, atlas and axis, further cervical, dorsal and caudal vertebrae, haemal arches, left scapula, sternum, both humeri, right ulna, partial left manus, pelvic girdle, hindlimbs and two metatarsals",
             "completeness": "partial",
             "former_ids": [
               {
                 "from_id": "IVPP V 20",
-                "to_id": "NGMJ 004546",
+                "to_id": "NGMJ V0116",
                 "from_institution": "Institute of Vertebrate Paleontology and Paleoanthropology",
                 "to_institution": "Nanjing Geological Museum",
                 "reason": "rehoused",
-                "notes": "No source cited here records the date of the move, and both numbers remain in use; Zhang (2024) cites the specimen as \"IVPP V 20/NJGM 004546\"."
+                "source": "barrett2007a",
+                "notes": "No source cited here records the date of the move, and the original number remains in use; Zhang (2024) cites the specimen as \"IVPP V 20/NJGM 004546\"."
+              },
+              {
+                "from_id": "NGMJ V0116",
+                "to_id": "NGMJ 004546",
+                "reason": "renumbered",
+                "source": "barrett2007a",
+                "notes": "NGMJ V0116 is the number carried on the display-case label. Barrett and colleagues (2007) give NGMJ 004546 as the correct accession number."
               }
             ]
           },
           "erected_in": "young1940a",
+          "described_in": "barrett2007a",
           "authors": "Young, C. C.",
           "described": 1940
         },
@@ -237643,7 +237690,20 @@
           "issue": "2",
           "pages": "319-341",
           "doi": "10.1111/j.1096-3642.2007.00290.x",
-          "notes": "Redescribes the skull of the holotype and gives the type locality as Huangchiatien village, Lufeng County, in the Dark Red Beds of the Lower Lufeng Formation."
+          "notes": "Redescribes the holotype skull and emends the diagnosis on cranial characters alone. Gives the type locality as Huangchiatien village, in the Dark Red Beds of the Lower Lufeng Formation."
+        },
+        {
+          "id": "young1942b",
+          "authors": "Young, C. C.",
+          "year": 1942,
+          "title": "Yunnanosaurus huangi Young (gen. et sp. nov.), a New Prosauropoda from the Red Beds at Lufeng, Yunnan",
+          "journal": "Bulletin of the Geological Society of China",
+          "publisher": "Wiley",
+          "volume": "22",
+          "issue": "1-2",
+          "pages": "63-104",
+          "doi": "10.1111/j.1755-6724.1942.mp221-2005.x",
+          "notes": "Young's full description of the genus and species, which later work cites as the original description."
         },
         {
           "id": "norman2007a",
@@ -241731,7 +241791,7 @@
         "phonetic": "ZOO-pay-SAWR-us"
       },
       "etymology": "From Quechua supay meaning 'devil' and Greek sauros (σαυρος) meaning 'lizard'; thus 'devil lizard'",
-      "description": "Zupaysaurus is an extinct genus of early theropod dinosaur living during the Norian stage of the Late Triassic in what is now Argentina. Fossils of the dinosaur were found in the Los Colorados Formation of the Ischigualasto-Villa Unión Basin in northwestern Argentina. Although a full skeleton has not yet been discovered, Zupaysaurus can be considered a bipedal predator, up to 4 meters (13 ft) long. It may have had two parallel crests running the length of its snout.",
+      "description": "Zupaysaurus is an extinct genus of early theropod dinosaur living during the Norian stage of the Late Triassic in what is now Argentina. Fossils of the dinosaur were found in the Los Colorados Formation of the Ischigualasto-Villa Unión Basin in northwestern Argentina. Although a full skeleton has not yet been discovered, Zupaysaurus can be considered a bipedal predator, up to 4 meters (13 ft) long. A pair of parasagittal crests reported on its snout proved to be a displaced nasal bone.",
       "diet": "carnivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -241739,17 +241799,15 @@
         "arid"
       ],
       "diagnostic_features": [
-        "Oval, anteroventrally oriented antorbital fenestra",
-        "Two parasagittal crests on snout formed by nasals",
-        "Maxilla with parallel dorsal and ventral borders (unlike most other theropods)",
-        "Tibial-astragalar articulation locked medioposteriorly by astragalar process in posteriorly open tibial notch",
-        "Transversely expanded distal end of tibia with wide postfibular wing",
-        "Tooth row ending anterior to orbit (tetanuran trait)"
+        "Maxillary-jugal ventral margin describing an obtuse angle in lateral view",
+        "Horizontal ramus of the maxilla with parallel dorsal and ventral margins",
+        "Notch on the dorsal margin of the ascending process of the maxilla",
+        "Sigmoid ventral process of the squamosal",
+        "Strongly ventrally curved rostral process of the lacrimal",
+        "Cnemial crest poorly developed",
+        "Tibia with a very deep, caudally open notch receiving an astragalar caudal process"
       ],
       "appearance": {
-        "features": [
-          "nasal crest"
-        ],
         "integument": "scaled",
         "evidence": "inferred"
       },
@@ -241787,6 +241845,7 @@
             "country": "AR",
             "locality": "Quebrada de los Jachaleros, 7 km West of National Route 126",
             "region": "La Rioja",
+            "group": "Agua de la Peña",
             "formation": "Los Colorados",
             "part": "upper",
             "region_code": "AR-F",
@@ -241798,7 +241857,7 @@
             ],
             "specimen_type": "holotype",
             "institution": "Museo de Ciencias Naturales, Universidad Nacional de La Rioja (UNLaR)",
-            "material": "Skull lacking premaxillae, articulated posterior cervical and anterior dorsal vertebrae, two incomplete fused sacral vertebrae, right scapula and coracoid proximal ends, right tibia and fibula distal ends, fused right astragalus and calcaneum, proximal parts of two pedal unguals",
+            "material": "Skull and jaws lacking both premaxillae, atlas, axis, postaxial cervical, dorsal, sacral and distal caudal vertebrae, left scapulocoracoid, isolated manual unguals, distal ends of both femora, proximal left tibia, distal right tibia and fibula, and right astragalocalcaneum",
             "completeness": "partial"
           },
           "size": {
@@ -241816,6 +241875,7 @@
             }
           },
           "erected_in": "arcucci2003a",
+          "described_in": "ezcurra2007b",
           "authors": "Arcucci, A. B.; Coria, R. A.",
           "described": 2003
         }
@@ -241837,7 +241897,7 @@
           "year": 2024,
           "title": "The Princeton Field Guide to Dinosaurs (3rd ed.)",
           "publisher": "Princeton University Press",
-          "notes": "Source of the appearance features."
+          "notes": "Source of the upper size estimates. Reconstructs the snout with well-developed paired crests, which is not followed here."
         },
         {
           "id": "ezcurra2017a",
@@ -241863,6 +241923,45 @@
           "pages": "113-149",
           "doi": "10.1093/zoolinnean/zlaa054",
           "notes": "Revised Sarcosaurus, part of recent analyses on Zupaysaurus's early neotheropod position."
+        },
+        {
+          "id": "ezcurra2007b",
+          "authors": "Ezcurra, M. D.",
+          "year": 2007,
+          "title": "The cranial anatomy of the coelophysoid theropod Zupaysaurus rougieri from the Upper Triassic of Argentina",
+          "journal": "Historical Biology",
+          "publisher": "Informa UK Limited",
+          "volume": "19",
+          "issue": "2",
+          "pages": "185-202",
+          "doi": "10.1080/08912960600861467",
+          "notes": "Cranial redescription. Shows that the parasagittal snout crests are the displaced right nasal, the true ornament being two low lateral ridges, and adds the squamosal and lacrimal autapomorphies."
+        },
+        {
+          "id": "ezcurra2007c",
+          "authors": "Ezcurra, M. D.; Novas, F. E.",
+          "year": 2007,
+          "title": "Phylogenetic relationships of the Triassic theropod Zupaysaurus rougieri from NW Argentina",
+          "journal": "Historical Biology",
+          "publisher": "Informa UK Limited",
+          "volume": "19",
+          "issue": "1",
+          "pages": "35-72",
+          "doi": "10.1080/08912960600845791",
+          "notes": "Emends the diagnosis, keeping three of the original characters and adding five, and refers the associated scapulocoracoid, femora and tibia to the genus."
+        },
+        {
+          "id": "paulina-carabajal2019a",
+          "authors": "Paulina-Carabajal, A.; Ezcurra, M. D.; Novas, F. E.",
+          "year": 2019,
+          "title": "New information on the braincase and endocranial morphology of the Late Triassic neotheropod Zupaysaurus rougieri using computed tomography data",
+          "journal": "Journal of Vertebrate Paleontology",
+          "publisher": "Informa UK Limited",
+          "volume": "39",
+          "issue": "3",
+          "article_number": "e1630421",
+          "doi": "10.1080/02724634.2019.1630421",
+          "notes": "Braincase and endocast from computed tomography. Finds one hypoglossal foramen where the cranial redescription reported two."
         }
       ],
       "taxonomy": [
