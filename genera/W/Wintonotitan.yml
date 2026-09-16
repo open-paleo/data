@@ -22,19 +22,26 @@ locomotion: quadrupedal
 paleoenvironment:
   - fluvial
 diagnostic_features:
-  - Dorsal vertebrae with camellate pneumatic cavities, deep eye-shaped
-    pleurocoels, prespinal and postspinal laminae along entire neural spine
-    length
-  - Incipient spinoprezygapophyseal lamina on dorsal neural spines
-  - Dorsal ribs large and plank-like with pneumatic cavities in proximal third
-  - Approximately 35 caudal vertebrae all with solid internal structure;
-    posterior caudals with incipient biconvexity
-  - Scapula long with broad acromial blade and mid-scapular blade ridge
-  - Humerus gracile with low narrow deltopectoral crest terminating proximal to
+  - Unbifurcated middle to posterior dorsal neural spine summit with a rounded
+    median ridge linking the pre- and postspinal laminae
+  - Anterior and anterior-middle caudal centra with a horizontal ridge at about
+    mid-height projecting as far laterally as the articular surfaces
+  - Anterior chevrons whose proximal articular ends are anteroposteriorly
+    narrower in lateral view than the proximal rami at mid-height of the haemal
+    canal
+  - Scapular blade with a fossa on the medial surface close to the
+    acromion-blade junction
+  - Radius with a subcircular proximal end bearing a medially directed
+    projection
+  - Metacarpus with a deep fossa on the proximal surface at the intersection of
+    metacarpals I, II and III
+  - Metacarpal III with the distal end more transversely expanded than the
+    proximal end
+  - Metacarpal IV with a medially projecting bulge on the dorsal surface near
     mid-shaft
 appearance:
-  integument: armored
-  evidence: direct
+  integument: scaled
+  evidence: inferred
 identifiers:
   - source: pbdb
     id: "148970"
@@ -62,12 +69,19 @@ species:
       coordinates:
         - -22.290561
         - 142.471897
+      notes: The type locality is registered as Queensland Museum locality QM
+        L313, the Triangle Paddock Site on Elderslie Sheep Station, about 60 km
+        north-west of Winton and west of the Cork Fault. The coordinates are
+        those of Beeston and colleagues (2024).
     type_specimen:
-      specimen_id: [QMF 7292]
+      specimen_id: [QM F7292]
       specimen_type: holotype
       institution: QM
-      material: Left scapula, partial humeri, radii and ulnae, complete metacarpus,
-        dorsal and sacral vertebrae, caudal series, chevrons, ilium, ischium
+      material: Partial postcranial skeleton with a fragmentary dorsal centrum
+        and three neural arches, dorsal rib fragments, two coossified sacral
+        vertebrae, 25 caudal vertebrae, five chevrons, an incomplete left
+        scapula, both humeri and ulnae, both radii, the left metacarpus, a
+        partial left ilium and the left ischium
       completeness: partial
     size:
       length_m:
@@ -80,6 +94,7 @@ species:
         min: 3.5
         max: 3.5
     erected_in: hocknull2009a
+    described_in: poropat2015a
 references:
   - id: hocknull2009a
   - id: paul2024a
@@ -90,3 +105,7 @@ references:
     notes: Revised Diamantinasaurus and recovered Wintonotitan as a non-titanosaurian somphospondylan outside Diamantinasauria
   - id: beeston2024a
     notes: Recovered Wintonotitan as a member of Diamantinasauria.
+  - id: poropat2015a
+    notes: Osteological redescription. Replaces the original diagnosis with
+      eight autapomorphies, keeps the genus outside Diamantinasauria, and shows
+      the reported osteoderms to be its own neural spines.
