@@ -1028,6 +1028,65 @@ for (const [filePath, entry] of referenceStoreParsed)
     // recorded via `publisher` (and `url`/`notes` where applicable).
 }
 
+// 11a. Stray files in the reference store
+//
+// Every other store check reads what `findYamlFiles` returns, and that skips
+// anything not ending `.yml` or `.yaml` -- so a file the store scan never sees
+// is a file no check can complain about. Six such files sat in `references/`
+// for two days: a shell redirection with an unbalanced quote wrote heredoc
+// delimiter lines to paths ending `.yml"`, which shadowed nothing and were
+// invisible to validation. This check walks the directory itself rather than
+// the scan's results, so a misdirected write is loud on the next run.
+startCheck("Reference store files");
+
+// A key is a lowercase author name, a four-digit year, and an optional
+// disambiguating letter. Names keep their diacritics and hyphens, and eleven
+// keys carry an apostrophe (`d'emic2019a`), so the letter classes are Unicode
+// rather than ASCII.
+const referenceFileName = /^\p{L}[\p{L}\p{M}\p{N}'-]*\d{4}[a-z]?\.yml$/u;
+
+const referencesDirectory = path.join(root, "references");
+
+for (const bucket of fs.readdirSync(referencesDirectory, { withFileTypes: true }))
+{
+    // Dotfiles are the platform's, not the store's -- `.DS_Store` is ignored
+    // by git and is not a misdirected write.
+    if (bucket.name.startsWith("."))
+    {
+        continue;
+    }
+    else if (!bucket.isDirectory())
+    {
+        checkError(
+            "Reference store files",
+            path.join(referencesDirectory, bucket.name),
+            `'${bucket.name}' sits beside the letter buckets; the store holds one file per reference under references/<letter>/`);
+        continue;
+    }
+
+    for (const entry of fs.readdirSync(path.join(referencesDirectory, bucket.name), { withFileTypes: true }))
+    {
+        if (entry.name.startsWith("."))
+        {
+            continue;
+        }
+        else if (!entry.isFile())
+        {
+            checkError(
+                "Reference store files",
+                path.join(referencesDirectory, bucket.name, entry.name),
+                `'${entry.name}' is not a file; the letter buckets hold reference entries only`);
+        }
+        else if (!referenceFileName.test(entry.name))
+        {
+            checkError(
+                "Reference store files",
+                path.join(referencesDirectory, bucket.name, entry.name),
+                `'${entry.name}' is not named <key>.yml, so no store check reads it — a stray write, or an entry that needs renaming`);
+        }
+    }
+}
+
 // 11b. Redundant DOI-pointer URLs — a reference `url` that merely points at
 // the reference's own DOI (e.g. http://dx.doi.org/{doi}) carries no extra
 // information, since any consumer can regenerate it from the `doi` field.
