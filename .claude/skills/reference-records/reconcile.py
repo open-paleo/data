@@ -192,7 +192,7 @@ def loadFormationVariants():
 
     These stay in the report under their own REVIEWED heading rather than being
     suppressed: reporting them separately means a spelling NOT on the list
-    stands out as new. Spellings live in the repo-level formations.yaml, which
+    stands out as new. Spellings live in the repo-level stratigraphy.yaml, which
     also records each unit's rank.
 
     @returns: Dict of normalized our-form -> set of normalized variant forms.
@@ -845,7 +845,7 @@ def main():
              "- `formation-differs-known-spelling-variant-REVIEWED` — compared 2026-07-30 and",
              "  found to be variant spellings of one unit, not different units. Choosing a",
              "  canonical form is deferred to #2012 (formations registry). A spelling NOT in",
-             "  `formations.yaml` is new and does need review.", "",
+             "  `stratigraphy.yaml` is new and does need review.", "",
              "A source id marked `~` was joined on a near-epithet match, not an exact one,",
              "because the reference work misspells the binomial. Check the pairing in",
              "\"Fuzzy binomial joins\" below before trusting a finding that rests on one.", "",

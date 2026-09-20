@@ -1,6 +1,6 @@
-"""Read the repo-level formation registry.
+"""Read the repo-level stratigraphic registry.
 
-`formations.yaml` at the repo root replaced this skill's own
+`stratigraphy.yaml` at the repo root replaced this skill's own
 `formation-variants.yml` and `formation-ranks.yml`: what a unit is called and
 what rank it holds are answered from the same read, so they were being recorded
 together in practice long before they shared a file.
@@ -17,11 +17,11 @@ from _paths import data_dir
 
 
 def loadRegistry():
-    """Read the whole formation registry.
+    """Read the whole stratigraphic registry.
 
     @returns: Dict of canonical unit name to its entry.
     """
-    path = os.path.join(data_dir(), "formations.yaml")
+    path = os.path.join(data_dir(), "stratigraphy.yaml")
 
     return yaml.safe_load(open(path, encoding="utf-8")) or {}
 

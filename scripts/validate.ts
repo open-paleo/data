@@ -19,6 +19,7 @@ import type {
     Reference,
     Size,
     StageInfo,
+    StratigraphicUnit,
     TreeNode,
     ValidationMessage,
     CheckResult,
@@ -226,10 +227,27 @@ const regionRegistry = parseYamlContent(
 ) as Record<string, string>;
 const allowedRegionCodes = new Set(Object.keys(regionRegistry));
 
-// `formations.yaml` is deliberately not read here. The registry is being
-// rebuilt from scratch (#2075), so every check that resolved a record against
-// it was removed rather than left to fail against a table nobody trusts. The
-// checks return once the rebuilt registry lands.
+// The stratigraphic registry, keyed by unit name. A record names a unit by its
+// headword or by any spelling in `variants`, so both are needed to resolve one.
+const stratigraphyPath = path.join(root, "stratigraphy.yaml");
+const stratigraphy = parseYamlContent(fs.readFileSync(stratigraphyPath, "utf8")) as Record<string, StratigraphicUnit | null>;
+
+const unitByName = new Map<string, string>();
+
+for (const [unitName, unit] of Object.entries(stratigraphy ?? {}))
+{
+    unitByName.set(unitName, unitName);
+
+    for (const variant of unit?.variants ?? [])
+    {
+        // A headword always wins: a variant of one unit may be another unit's
+        // own name, and the entry that owns the name is the right answer.
+        if (!unitByName.has(variant))
+        {
+            unitByName.set(variant, unitName);
+        }
+    }
+}
 
 const flaggedSources = loadFlaggedSources(path.join(root, "flagged-sources.yml"));
 const flaggedPublishers = buildFlaggedSet(flaggedSources.publishers);
@@ -719,6 +737,46 @@ for (const [filePath, doc] of cladeParsed)
             "Clade reference integrity",
             filePath,
             `described_in '${doc.described_in}' does not resolve to a store entry`);
+    }
+}
+
+// 10a-bis. Registry reference integrity — every citation in the stratigraphic
+// registry resolves to a store entry. The registry is where a unit's age and
+// containment are sourced, so a dangling id there leaves every record that
+// names the unit resting on a citation the build cannot print.
+startCheck("Registry reference integrity");
+
+for (const [unitName, unit] of Object.entries(stratigraphy ?? {}))
+{
+    for (const reference of unit?.references ?? [])
+    {
+        if (reference && reference.id && !referenceStoreIds.has(reference.id))
+        {
+            checkError(
+                "Registry reference integrity",
+                stratigraphyPath,
+                `${unitName}: reference '${reference.id}' does not resolve to a store entry (references/${reference.id[0]}/${reference.id}.yml)`);
+        }
+    }
+}
+
+// 10a-ter. Registry containment — a `parent` names another entry
+//
+// Containment is stored only on the child, so a parent nobody has an entry for
+// is a break in the chain: the child's rank and age cannot be read against
+// anything. Standing rule — every unit named as a parent gets its own entry.
+startCheck("Registry containment");
+
+for (const [unitName, unit] of Object.entries(stratigraphy ?? {}))
+{
+    const parent = unit?.parent;
+
+    if (typeof parent === "string" && !unitByName.has(parent))
+    {
+        checkError(
+            "Registry containment",
+            stratigraphyPath,
+            `${unitName}: parent '${parent}' has no entry of its own`);
     }
 }
 
@@ -1306,15 +1364,26 @@ for (const [filePath, doc] of genusParsed)
     }
 }
 
-// 13a. A group belongs in `location.group`, not in `location.formation`
+// 13a. Every unit a record names must have a registry entry, at the rank the
+// field it sits in implies
 //
-// Only the spelled-out rank word is caught here. A bare name carries no rank --
-// "Morrison" is a formation and "Kem Kem" is a group, spelled the same way in
-// the same field -- so telling those apart needs the registry, and that half of
-// the check is gone until the rebuilt `formations.yaml` lands (#2075).
+// Two defects, one pass over the same values. A name absent from the registry
+// is either a spelling nobody has reconciled or a unit nobody has described;
+// either way the record's age and containment rest on nothing. A name present
+// at the wrong rank is in the wrong field: "Morrison" is a formation and
+// "Kem Kem" is a group, spelled the same way in the same field, so only the
+// registry tells them apart. The spelled-out rank word is caught separately,
+// because a value like "Yezo Group" never reaches the registry to be ranked.
 startCheck("Formation rank");
 
 const groupRankWord = /\b(Group|Grp\.?|Subgroup|Supergroup)$/;
+
+const ranksForField: Record<string, Set<string>> = {
+    group: new Set([ "group", "subgroup", "supergroup" ]),
+    formation: new Set([ "formation" ]),
+    member: new Set([ "member" ]),
+    bed: new Set([ "bed" ]),
+};
 
 for (const [filePath, doc] of genusParsed)
 {
@@ -1325,18 +1394,46 @@ for (const [filePath, doc] of genusParsed)
 
     for (const species of doc.species)
     {
-        const formation = species?.location?.formation;
+        const location = species?.location;
 
-        if (typeof formation !== "string")
+        for (const field of ["group", "formation", "member", "bed"] as const)
         {
-            continue;
-        }
-        else if (groupRankWord.test(formation))
-        {
-            checkError(
-                "Formation rank",
-                filePath,
-                `species '${species.name ?? "?"}': formation '${formation}' names a group — put it in 'group' with the rank word dropped`);
+            const value = location?.[field];
+
+            if (typeof value !== "string")
+            {
+                continue;
+            }
+            else if (field === "formation" && groupRankWord.test(value))
+            {
+                checkError(
+                    "Formation rank",
+                    filePath,
+                    `species '${species.name ?? "?"}': formation '${value}' names a group — put it in 'group' with the rank word dropped`);
+                continue;
+            }
+
+            const unitName = unitByName.get(value);
+
+            if (unitName === undefined)
+            {
+                checkError(
+                    "Formation rank",
+                    filePath,
+                    `species '${species.name ?? "?"}': ${field} '${value}' has no entry in stratigraphy.yaml — add one, or spell it as an existing entry's name or variant`);
+                continue;
+            }
+
+            const rank = stratigraphy[unitName]?.rank;
+
+            // A unit nobody has assigned a rank to cannot contradict a field.
+            if (rank !== undefined && !ranksForField[field].has(rank))
+            {
+                checkError(
+                    "Formation rank",
+                    filePath,
+                    `species '${species.name ?? "?"}': ${field} '${value}' is recorded in stratigraphy.yaml as a ${rank} — move it to '${rank === "subgroup" || rank === "supergroup" ? "group" : rank}'`);
+            }
         }
     }
 }
@@ -1388,6 +1485,51 @@ for (const [filePath, doc] of genusParsed)
                     filePath,
                     `species '${species.name ?? "?"}': '${field}' is '${value}' — the rank word is implied by the field and should be dropped`);
             }
+        }
+    }
+}
+
+// 13c. Every stratigraphic unit carries a period, and its stages refine it
+//
+// `period` is required on each `stratigraphy.yaml` entry. `stages` is optional
+// and narrows it: every stage listed must belong to one of the entry's periods.
+// An empty or absent `stages` means no source published the age at stage
+// resolution, never that the unit is undated. Records are not checked against
+// these envelopes yet; that waits on the taxon age audit (#2074).
+startCheck("Stratigraphic unit ages");
+
+for (const [unitName, unit] of Object.entries(stratigraphy ?? {}))
+{
+    const periods = unit?.period;
+
+    if (!Array.isArray(periods) || periods.length === 0)
+    {
+        checkError("Stratigraphic unit ages", stratigraphyPath, `unit '${unitName}': no period`);
+        continue;
+    }
+
+    for (const periodName of periods)
+    {
+        if (!allowedPeriods.has(periodName))
+        {
+            checkError("Stratigraphic unit ages", stratigraphyPath, `unit '${unitName}': unknown period '${periodName}'`);
+        }
+    }
+
+    for (const stageName of unit?.stages ?? [])
+    {
+        const stageInfo = stages[stageName];
+
+        if (!stageInfo)
+        {
+            checkError("Stratigraphic unit ages", stratigraphyPath, `unit '${unitName}': unknown stage '${stageName}'`);
+        }
+        else if (!periods.includes(stageInfo.period))
+        {
+            checkError(
+                "Stratigraphic unit ages",
+                stratigraphyPath,
+                `unit '${unitName}': stage '${stageName}' belongs to '${stageInfo.period}', which is not among its periods`);
         }
     }
 }
@@ -2398,10 +2540,10 @@ for (const [filePath, entry] of referenceStoreParsed)
 // top-level entry is walked under its own key rather than from the document
 // root. `regions.yaml` maps a code straight to a string and has no prose
 // today; walking it anyway means a `notes:` added there needs no change here.
-// `formations.yaml` is absent while it is being rebuilt (#2075).
 const registrySources: Array<[string, Record<string, unknown>]> = [
     [path.join(root, "institutions.yaml"), institutionRegistry],
     [path.join(root, "regions.yaml"), regionRegistry as unknown as Record<string, unknown>],
+    [stratigraphyPath, stratigraphy as unknown as Record<string, unknown>],
 ];
 
 for (const [filePath, registry] of registrySources)

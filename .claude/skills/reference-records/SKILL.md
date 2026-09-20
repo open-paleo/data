@@ -70,7 +70,7 @@ quotation that closed each one. Fully suppressed from future runs. Verdicts:
 > That happened once, cancelling a holotype adjudication with an occurrence one.
 > `loadAdjudicated` now aborts on duplicate keys.
 
-**`../../../formations.yaml`** — the repo-level formation registry, read here
+**`../../../stratigraphy.yaml`** — the repo-level stratigraphic registry, read here
 through `_formations.py`. It records each unit's **rank** (group, formation,
 member, bed, or none-of-those), what contains it, its known **variant
 spellings**, and the papers each of those claims was read from.

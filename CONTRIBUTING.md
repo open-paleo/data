@@ -306,6 +306,67 @@ institution-type fragment (e.g. hypothetical `MNCN-ES-MAD` vs
 `MNCN-ES-BCN`). Colocate disambiguated entries in `institutions.yaml`
 so the collision is visible at the source.
 
+## Stratigraphic Registry
+
+Every lithostratigraphic unit named in a record's `location` (`group`,
+`formation`, `member`, `bed`) has an entry in
+[`stratigraphy.yaml`](./stratigraphy.yaml). The key is the unit's name with
+the rank word dropped and any lithology word kept: `Morrison`,
+`Navajo Sandstone`. Where two different units share a name, the key takes a
+country suffix in parentheses.
+
+An entry records what the primary literature says about the unit. Every value
+cites the paper it came from, and the reference note quotes that paper's own
+words, in English translation where the paper is not written in English:
+
+- `rank`: supergroup, group, subgroup, formation, member or bed. Omitted when
+  no source states one.
+- `informal`: true when the unit was established informally.
+- `parent`: the containing unit. Containment is stored only on the child.
+- `variants`: other names papers print for the unit. Not spellings, rank
+  words or rank claims.
+- `period` and `stages`: the unit's age, described below.
+- `dispute`: disagreement that is still live in the literature. A superseded
+  name or dating is not a dispute; the older paper belongs in the reference
+  notes.
+
+### Age: `period` and `stages`
+
+`period` is required: the epoch or epochs the unit spans, oldest first, from
+the `periods` vocabulary in `schema.yml`. `stages` is optional and refines
+it: the stages the unit spans, oldest first and contiguous, each one inside
+one of the unit's epochs. **An empty or absent `stages` means no source gives
+the age at stage resolution. It does not mean the unit is undated.**
+
+Both fields hold the union of what the sources publish: a bound, not a choice
+between readings. If one paper dates a unit Cenomanian and another
+Cenomanian–Turonian, the unit spans both stages, and a newer, narrower dating
+adds to the older readings rather than replacing them. A stated range covers
+every stage inside it: "Coniacian–Campanian" includes the Santonian.
+
+- A source that names only an epoch gives `period` alone.
+- A source that names stages gives `stages`, and `period` is the epochs those
+  stages fall in.
+- When the sources name both, both come from the literature. If the epochs the
+  sources name do not contain the epochs of the unit's stages, that conflict is
+  recorded as a `dispute` rather than resolved by choosing a side.
+- A paper's own undecided dating ("late Barremian or earliest Albian")
+  contributes every alternative it allows.
+- A dated child widens its parent: the age of a member is an age inside its
+  formation.
+- A unit that no source dates directly takes its parent's `period`, but never
+  its `stages`.
+
+These do not date a unit: the age of a different unit (a correlative, or a
+unit of the same name elsewhere), a taxon occurrence table that lists one age
+across several units, the title of a cited paper, a numeric age in millions of
+years with no stage or epoch named, and any age reached by your own
+correlation.
+
+Validation requires `period` on every entry and checks each stage against it.
+A record's own age is a separate finding: it must fall within its unit's
+range, not copy it.
+
 ## Image Requirements
 
 > **AI-generated art is not accepted.** Open Paleo values the skill and

@@ -320,7 +320,7 @@ export type Location = {
      *
      * Rank words are not part of the value: `group: Yezo`, matching
      * `formation: Morrison` rather than "Morrison Formation". Ranks resolve
-     * through formations.yaml.
+     * through stratigraphy.yaml.
      */
     group?: string;
 
@@ -884,6 +884,60 @@ export type Dispute = {
          */
         note: string;
     }>;
+};
+
+/**
+ * A lithostratigraphic unit in `stratigraphy.yaml`, keyed by the unit's name.
+ * Every value traces to a primary paper cited in `references`.
+ */
+export type StratigraphicUnit = {
+    /**
+     * Rank of the unit. Omitted when no source states one; absence is not a
+     * claim.
+     */
+    rank?: "supergroup" | "group" | "subgroup" | "formation" | "member" | "bed";
+
+    /**
+     * True when the unit is established informally, at whatever rank.
+     */
+    informal?: boolean;
+
+    /**
+     * Name of the containing unit. Containment is stored only on the child.
+     */
+    parent?: string;
+
+    /**
+     * Alternate and legacy names a paper prints for this unit. Not rank words,
+     * spellings, or rank claims.
+     */
+    variants?: Array<string>;
+
+    /**
+     * Epoch(s) the unit spans (e.g. ["Late Triassic", "Early Jurassic"]),
+     * oldest first. Required. Taken from the literature where a source names
+     * an epoch, otherwise derived from `stages`.
+     */
+    period: Array<string>;
+
+    /**
+     * Stage(s) the unit spans, oldest first and contiguous: the union of the
+     * published readings, a bound rather than a verdict. Refines `period`, so
+     * every stage belongs to one of its epochs. Empty or absent means no source
+     * gives the age at stage resolution, never that the unit is undated.
+     */
+    stages?: Array<string>;
+
+    /**
+     * Live disagreement in the literature over the unit's rank, naming,
+     * containment or age.
+     */
+    dispute?: Dispute;
+
+    /**
+     * Papers the entry's values come from.
+     */
+    references?: Array<ReferencePointer>;
 };
 
 /**

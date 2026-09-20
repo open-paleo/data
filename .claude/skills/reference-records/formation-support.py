@@ -335,7 +335,7 @@ def main():
             f"## same unit under two names ({len(sameUnit)})", "",
             "Both sides reduce to one name once rank and lithology words are",
             "stripped, so nobody is disagreeing with us. Add the pair to",
-            "formations.yaml and close them.", "",
+            "stratigraphy.yaml and close them.", "",
         ]
 
         for binomial, heading, ours, theirs, sources in sameUnit:
