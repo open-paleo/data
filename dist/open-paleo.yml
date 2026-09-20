@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-09-20T00:30:17.454Z
+  built_at: 2026-09-20T22:49:26.198Z
   clade_count: 188
   genus_count: 1422
   license: CC-BY-4.0
@@ -14285,7 +14285,7 @@ genera:
           locality: Cerro de los Leones
           region: Neuquén
           formation: Lohan Cura
-          member: Cullin Grande
+          member: Cullín Grande
           region_code: AR-Q
         size:
           length_m:
@@ -25399,10 +25399,9 @@ genera:
           country: AR
           locality: near Pampa Pelada, northeast of Lago Colhué Huapi
           region: Chubut
-          formation: Bajo Barreal
-          part: upper
+          formation: Lago Colhué Huapi
+          notes: The horizon is inferred from the locality, not from a collection record. Lydekker (1893) gives only that the forelimb was procured "on the Rio Chubut"; the site was refined to Pampa Pelada 36 years later, and successive workers hedged the unit -- "possibly", "unspecified levels", and Mannion and Otero's (2012) "probably upper member of the Bajo Barreal Formation", made before the Lago Colhué Huapi Formation was erected above that member. Santucci and colleagues (2022) give the modern assignment for this locality.
           region_code: AR-U
-          part_of: formation
         size:
           hip_height_m:
             min: 3.7
@@ -25424,6 +25423,15 @@ genera:
         authors: Lydekker, R.
         described: 1893
     references:
+      - id: santucci2022a
+        authors: Santucci, R. M.; Filippi, L. S.
+        year: 2022
+        title: "Last titans: Titanosaurs from the Campanian–Maastrichtian age"
+        book: "South American Sauropodomorph Dinosaurs: Record, Diversity and Evolution"
+        publisher: Springer International Publishing
+        pages: 341-391
+        doi: 10.1007/978-3-030-95959-3_10
+        notes: Gives the holotype horizon for the Pampa Pelada locality as the Lago Colhué Huapi Formation, Campanian-Maastrichtian.
       - id: lydekker1893a
         authors: Lydekker, R.
         year: 1893
@@ -25431,6 +25439,7 @@ genera:
         journal: Anales del Museo de La Plata. Paleontología Argentina
         volume: "2"
         pages: 1-16
+        notes: The original description, which places the forelimb only "on the Rio Chubut in the Territory of Chubut" and names no unit.
       - id: jones2026b
         authors: Jones, B.; Viola, E.
         year: 2026
@@ -27858,6 +27867,15 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
         notes: Source of the hip height estimate.
+      - id: díezdíaz2018a
+        authors: Díez Díaz, V.; Garcia, G.; Pereda-Suberbiola, X.; Jentgen-Ceschino, B.; Stein, K.; Godefroit, P.; Valentin, X.
+        year: 2018
+        title: The titanosaurian dinosaur Atsinganosaurus velauciensis (Sauropoda) from the Upper Cretaceous of southern France. New material, phylogenetic affinities, and palaeobiogeographical implications
+        journal: Cretaceous Research
+        volume: "91"
+        pages: 429-456
+        doi: 10.1016/j.cretres.2018.06.015
+        notes: Assigns the type locality, Velaux-La Bastide Neuve, to the Argiles et Grès à Reptiles Formation of the Aix-en-Provence Basin, which the describing paper does not name.
     taxonomy:
       - Life
       - Animalia
@@ -32418,7 +32436,8 @@ genera:
           country: GB
           locality: Smokejacks Brickworks
           region: Surrey
-          formation: Weald Clay
+          group: Weald Clay
+          formation: Upper Weald Clay
           coordinates:
             - 51.1242
             - -0.411
@@ -34729,7 +34748,7 @@ genera:
           country: ES
           locality: Blasi 1, Arén
           region: Huesca
-          formation: Arén
+          formation: Arén Sandstone
           part: upper
           region_code: ES-HU
           part_of: formation
@@ -38287,7 +38306,7 @@ genera:
           locality: Nová Lhota near Mezholezy
           region: Kutná Hora
           formation: Peruc-Korycany
-          member: Korycany
+          notes: No member is recorded. Madzia and colleagues (2017) refine the horizon to the Korycany Beds, but Fejfar and colleagues (2005), whose stratigraphy they follow, place the remains at formation rank and no finer, and describe the Peruc and Korycany Beds as partly isochronous facies of the local column whose irregular boundary is why the combined formation was adopted.
           region_code: CZ-205
         erected_in: madzia2017a
         type_specimen:
@@ -38310,6 +38329,15 @@ genera:
         issue: "11"
         pages: 967-979
         doi: 10.1080/14772019.2017.1371258
+      - id: fejfar2005a
+        authors: Fejfar, O.; Košťák, M.; Kvaček, J.; Mazuch, M.; Moučka, M.
+        year: 2005
+        title: First Cenomanian dinosaur from Central Europe (Czech Republic)
+        journal: Acta Palaeontologica Polonica
+        volume: "50"
+        issue: "2"
+        pages: 295-300
+        notes: The stratigraphy Madzia follows. Places the dinosaur remains in the near-shore marine sediments of the Peruc-Korycany Formation, at formation rank only.
     taxonomy:
       - Life
       - Animalia
@@ -42033,7 +42061,7 @@ genera:
           locality: Dave's Camp Site
           region: Utah
           formation: Cedar Mountain
-          member: Poison Strip
+          member: Poison Strip Sandstone
           region_code: US-UT
         type_specimen:
           specimen_id:
@@ -44955,7 +44983,7 @@ genera:
           country: CN
           region: Gansu
           locality: Chia-yü-kuan badlands
-          group: Xinminbao
+          group: Xinminpu
           region_code: CN-GS
         type_specimen:
           specimen_type: holotype
@@ -47670,7 +47698,7 @@ genera:
           country: US
           locality: Smoky Hill River
           region: Kansas
-          formation: Niobrara
+          formation: Niobrara Chalk
           member: Smoky Hill Chalk
           region_code: US-KS
         size:
@@ -48121,8 +48149,9 @@ genera:
         location:
           country: US
           region: New Mexico
-          formation: Rock Point
+          formation: Chinle
           locality: Whitaker Quarry, Ghost Ranch
+          notes: The quarry lies in the informal 'siltstone member' of the Chinle Formation, whose correlation with the formation's named subdivisions is unresolved. Nesbitt and colleagues (2020) record that it "remains contentious", listing a Petrified Forest Member correlation after Schwartz and Gillette (1994) against a Rock Point Member one after Lucas and Hunt (1993), with magnetostratigraphy telling against the latter; Cather and colleagues (2013) favor reverting to the siltstone member outright. No member is recorded while that stands.
           region_code: US-NM
         size:
           length_m:
@@ -49285,7 +49314,7 @@ genera:
         - date: 2026-07-01
           note: Retained at Carcharodontosauridae incertae sedis; the basal-Carcharodontosauria and metriacanthosaurid alternatives are unresolved.
     etymology: From Latin Conca, an old name for Cuenca (the Spanish city near the discovery site), + Latin venator ('hunter'), meaning 'Cuenca hunter'.
-    description: Concavenator is a genus of carcharodontosaurian dinosaur that lived in Spain during the Early Cretaceous epoch, about 125 million years ago. The genus contains a single species, Concavenator corcovatus, named and described in 2010 from a nearly complete skeleton collected from the Las Hoyas fossil site of the La Huérguina Formation.
+    description: Concavenator is a genus of carcharodontosaurian dinosaur that lived in Spain during the Early Cretaceous epoch, about 125 million years ago. The genus contains a single species, Concavenator corcovatus, named and described in 2010 from a nearly complete skeleton collected from the Las Hoyas fossil site of the Calizas de La Huérguina Formation.
     diet: carnivore
     locomotion: bipedal
     paleoenvironment:
@@ -49328,7 +49357,7 @@ genera:
           country: ES
           locality: Las Hoyas
           region: Cuenca
-          formation: La Huérguina
+          formation: Calizas de La Huérguina
           region_code: ES-CU
         type_specimen:
           specimen_id:
@@ -50718,10 +50747,10 @@ genera:
           to_ma: 113.2
         location:
           country: NE
-          locality: Gadoufaoua, GAD 5
+          locality: Gadoufaoua, niveau des Innocents
           region: Agadez
           formation: Elrhaz
-          bed: Innocents
+          bed: GAD 5
           region_code: NE-1
         size:
           length_m:
@@ -58911,6 +58940,7 @@ genera:
         issue: "1"
         pages: 1-14
         doi: 10.4072/rbp.2011.1.01
+        notes: The original description. Notes the horizon lies above the levels the Cenomanian-Turonian age was read from, which are in the Lower Member.
       - id: jones2026b
         authors: Jones, B.; Viola, E.
         year: 2026
@@ -58926,7 +58956,7 @@ genera:
         volume: "72"
         issue: "1"
         pages: 81-99
-        notes: Erects the Lago Colhué Huapi Formation for the Bajo Barreal's informal upper member, while keeping this taxon in the Bajo Barreal.
+        notes: Places the Lago Colhué Huapi Formation above the Bajo Barreal's Upper Member rather than in place of it, and keeps this taxon in that member.
     taxonomy:
       - Life
       - Animalia
@@ -71581,6 +71611,15 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
         notes: Source of the hip height estimate.
+      - id: díezdíaz2018a
+        authors: Díez Díaz, V.; Garcia, G.; Pereda-Suberbiola, X.; Jentgen-Ceschino, B.; Stein, K.; Godefroit, P.; Valentin, X.
+        year: 2018
+        title: The titanosaurian dinosaur Atsinganosaurus velauciensis (Sauropoda) from the Upper Cretaceous of southern France. New material, phylogenetic affinities, and palaeobiogeographical implications
+        journal: Cretaceous Research
+        volume: "91"
+        pages: 429-456
+        doi: 10.1016/j.cretres.2018.06.015
+        notes: Assigns Velaux-La Bastide Neuve to the Argiles et Grès à Reptiles Formation of the Aix-en-Provence Basin, which the describing paper does not name.
     taxonomy:
       - Life
       - Animalia
@@ -74619,7 +74658,7 @@ genera:
           region: Gansu
           formation: Zhonggou
           part: middle
-          notes: You and colleagues (2003) name no formation, giving only the middle gray unit of the Xinminbao Group; the Zhonggou assignment follows their 2014 revision of the same horizon in the same basin.
+          notes: You and colleagues (2003) name no formation, giving only the middle gray unit of the Xinminpu Group; the Zhonggou assignment follows their 2014 revision of the same horizon in the same basin.
           region_code: CN-GS
           part_of: formation
         size:
@@ -77591,7 +77630,7 @@ genera:
           region: Ömnögovi
           formation: Djadokhta
           member: Bayn Dzak
-          notes: The holotype was poached and left Mongolia illegally, so its provenance is reconstructed from the specimen and its matrix rather than recorded in the field. Cau and colleagues (2017) give Ukhaa Tolgod, and later work reading them allows another Djadokhta locality such as Bayan Zag.
+          notes: The holotype was poached and left Mongolia illegally, so its provenance is reconstructed from the specimen and its matrix rather than recorded in the field. Cau and colleagues (2017) give the Bayn Dzak Member at Ukhaa Tolgod, which is not the locality the member is named for. Moutrille and colleagues (2025), comparing the matrix of a second poached skeleton with this one, hold that a different Djadokhta locality such as Bayan Zag cannot be excluded.
           region_code: MN-053
         size:
           length_m:
@@ -77631,6 +77670,17 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
         notes: Source of the body length, mass, and hip height estimates, and the appearance features.
+      - id: moutrille2025a
+        authors: Moutrille, L.; Cau, A.; Chinzorig, T.; Escuillié, F.; Tsogtbaatar, K.; Ganzorig, B.; Mallet, C.; Godefroit, P.
+        year: 2025
+        title: A new bird-like dinosaur from the Upper Cretaceous of Mongolia with extremely robust hands supports niche partitioning among velociraptorines
+        journal: Historical Biology
+        publisher: Informa UK Limited
+        volume: "38"
+        issue: "6"
+        pages: 1987-2018
+        doi: 10.1080/08912963.2025.2530148
+        notes: Holds that the holotype may have come from a Djadokhta locality other than Ukhaa Tolgod, such as Bayan Zag.
     taxonomy:
       - Life
       - Animalia
@@ -78945,7 +78995,7 @@ genera:
           country: CN
           locality: Chia-yü-kuan
           region: Gansu
-          notes: Bohlin (1953) places the holotype northwest of Chia-yu-kuan and names no unit for it. Weishampel and colleagues (2004) give the Minhe Formation on a personal communication, where Dong (2002) assigns the same locality to the Xinminbao Group.
+          notes: Bohlin (1953) places the holotype northwest of Chia-yu-kuan and names no unit for it. Weishampel and colleagues (2004) give the Minhe Formation on a personal communication, where Dong (2002) assigns the same locality to the Xinminpu Group.
           region_code: CN-GS
         type_specimen:
           specimen_type: holotype
@@ -80496,7 +80546,7 @@ genera:
     pronunciation:
       phonetic: HY-er-oh-SAWR-us
     etymology: From Greek 'hieros' meaning 'sacred' and 'sauros' meaning 'lizard', hence 'sacred lizard'.
-    description: Hierosaurus is an extinct genus of nodosaurid ankylosaur which lived during the Late Cretaceous 87 to 82 million years ago. Its fossils were found in the Smoky Hill Chalk Member of the Niobrara Formation, in western Kansas, which would have been near the middle of the Western Interior Sea during the Late Cretaceous. It was a nodosaurid, an ankylosaur without a clubbed tail.
+    description: Hierosaurus is an extinct genus of nodosaurid ankylosaur which lived during the Late Cretaceous 87 to 82 million years ago. Its fossils were found in the Smoky Hill Chalk Member of the Niobrara Chalk, in western Kansas, which would have been near the middle of the Western Interior Sea during the Late Cretaceous. It was a nodosaurid, an ankylosaur without a clubbed tail.
     dispute:
       summary: |
         Hierosaurus is a nomen dubium based on osteoderms; H. coleii was reassigned to Niobrarasaurus. It is retained at Ankylosauria incertae sedis.
@@ -80537,7 +80587,7 @@ genera:
           country: US
           region: Kansas
           locality: Five miles south of Castle Rock and three miles south of Hackberry Creek
-          formation: Niobrara
+          formation: Niobrara Chalk
           member: Smoky Hill Chalk
           region_code: US-KS
         type_specimen:
@@ -81082,7 +81132,7 @@ genera:
           country: GB
           region: West Sussex
           locality: Rudgwick Brickworks Company quarry
-          formation: Weald Clay
+          group: Weald Clay
           coordinates:
             - 51.0978
             - -0.4519
@@ -81587,6 +81637,8 @@ genera:
         year: 1986
         title: Revisión de los titanosáuridos de América del Sur
         publisher: Universidad Nacional de Tucumán, Tucumán, Argentina
+        notes: |
+          Unpublished doctoral thesis, 493 pp., as cited in Powell's own 2003 revision of it. The two are separate works: this thesis is in Spanish, while the revision published on it, Powell (2003), is in English. The thesis is retained here because the literature cites it as the first mention of several names, which as a thesis it did not make available.
     taxonomy:
       - Life
       - Animalia
@@ -87440,7 +87492,7 @@ genera:
           locality: 100 m east of Grange Chine
           region: Isle of Wight
           formation: Wessex
-          bed: Black Band
+          bed: L11
           coordinates:
             - 50.63354
             - -1.40654
@@ -95160,7 +95212,7 @@ genera:
           locality: Kitadani Quarry
           region: Fukui
           formation: Kitadani
-          bed: BB IV
+          bed: Bonebed IV
           region_code: JP-18
         size:
           length_m:
@@ -95563,7 +95615,7 @@ genera:
           locality: west of Chaco Canyon, Ojo Alamo
           region: New Mexico
           formation: Kirtland
-          member: De-Na-Zin
+          member: De-na-zin
           region_code: US-NM
         size:
           length_m:
@@ -105873,10 +105925,10 @@ genera:
           country: GB
           locality: Nethercombe
           region: Dorset
-          formation: Inferior Oolite
+          group: Inferior Oolite
           part: middle
           region_code: GB-DOR
-          part_of: formation
+          part_of: group
         size:
           length_m:
             min: 4
@@ -107741,7 +107793,7 @@ genera:
           country: CN
           locality: Belye Kruchi
           region: Heilongjiang
-          formation: Yuliangze
+          formation: Yuliangzi
           region_code: CN-HL
         size:
           length_m:
@@ -113469,8 +113521,10 @@ genera:
         publisher: Geological Society of London
         volume: "37"
         issue: 1-4
-        pages: 620-706
+        pages: 620-707
         doi: 10.1144/gsl.jgs.1881.037.01-04.49
+        notes: |
+          The article runs to p. 707, where the discussion closes; p. 708 begins a different paper. Pages 704-706 carry the explanation of plates XXVII-XXXI and 706-707 a synopsis of the figured bones arranged by species. Suess's note on the Gosau beds is an appendix within this range and is separately registered.
       - id: jones2026a
         authors: Jones, B.; Viola, E.
         year: 2026
@@ -113651,7 +113705,7 @@ genera:
     etymology: From 'Mongol' (Mongolia, where it was found) and Greek 'stegos' (roof); meaning 'Mongolian roof', referencing Mongolia and its classification as a stegosaur.
     pronunciation:
       phonetic: mon-GO-lo-STEG-us
-    description: Mongolostegus is an extinct genus of stegosaurian dinosaurs from the Early Cretaceous (Aptian-Albian ages) Dzunbain Formation of Mongolia. The genus contains a single species, Mongolostegus exspectabilis, known from a fragmentary single specimen representing the first stegosaur named from Mongolia. It is one of the youngest known stegosaurs, along with Yanbeilong and an unnamed species from the Hekou Group of China. In contrast to these taxa, which are members of the late-diverging stegosaur subfamily Stegosaurinae, Mongolostegus may have affinities to more basal taxa such as the Huayangosauridae.
+    description: Mongolostegus is an extinct genus of stegosaurian dinosaurs from the Early Cretaceous (Aptian-Albian ages) Zuunbayan Formation of Mongolia. The genus contains a single species, Mongolostegus exspectabilis, known from a fragmentary single specimen representing the first stegosaur named from Mongolia. It is one of the youngest known stegosaurs, along with Yanbeilong and an unnamed species from the Hekou Group of China. In contrast to these taxa, which are members of the late-diverging stegosaur subfamily Stegosaurinae, Mongolostegus may have affinities to more basal taxa such as the Huayangosauridae.
     dispute:
       summary: |
         Mongolostegus is known from very fragmentary material and behaves as a rogue taxon; Sánchez-Fenollosa and Cobos (2025) recover it as either a huayangosaurid or an early-diverging stegosaurid and exclude it from their primary analysis. It is placed at Stegosauria incertae sedis.
@@ -113698,7 +113752,7 @@ genera:
           country: MN
           locality: Khamaryn Us
           region: Dornogovi
-          formation: Dzunbain
+          formation: Zuunbayan
           region_code: MN-063
         type_specimen:
           specimen_id:
@@ -119778,12 +119832,10 @@ genera:
           region: Agadez
           formation: Elrhaz
           bed: GAD 5
-          part: upper
           coordinates:
             - 16.450001
             - 9.133333
           region_code: NE-1
-          part_of: bed
         type_specimen:
           specimen_id:
             - MNBH GAD512
@@ -120141,7 +120193,7 @@ genera:
           country: US
           locality: tributary of Smoky Hill River
           region: Kansas
-          formation: Niobrara
+          formation: Niobrara Chalk
           member: Smoky Hill Chalk
           part: lower
           region_code: US-KS
@@ -125851,12 +125903,10 @@ genera:
           region: Agadez
           formation: Elrhaz
           bed: GAD 5
-          part: upper
           coordinates:
             - 16.7
             - 9.333333
           region_code: NE-1
-          part_of: bed
         type_specimen:
           specimen_id:
             - MNHN GDF 300
@@ -131172,7 +131222,7 @@ genera:
           country: ES
           locality: Las Hoyas
           region: Cuenca
-          formation: La Huérguina
+          formation: Calizas de La Huérguina
           region_code: ES-CU
         type_specimen:
           specimen_id:
@@ -133671,7 +133721,7 @@ genera:
           locality: Tony's Bone Bed
           region: Utah
           formation: Cedar Mountain
-          member: Poison Strip
+          member: Poison Strip Sandstone
           region_code: US-UT
         size:
           hip_height_m:
@@ -139715,6 +139765,33 @@ genera:
         volume: "134"
         doi: 10.1016/j.cretres.2021.105123
         notes: Suggested Pyroraptor had unenlagiine-like foot morphology.
+      - id: allain2003a
+        authors: Allain, R.; Pereda-Suberbiola, X.
+        year: 2003
+        title: Dinosaurs of France
+        journal: Comptes Rendus Palevol
+        publisher: Elsevier BV
+        volume: "2"
+        issue: "1"
+        pages: 27-44
+        doi: 10.1016/S1631-0683(03)00002-2
+        notes: Places La Boucharde in the Aix-en-Provence Basin, the step that carries the formation, since the describing paper names none.
+      - id: díezdíaz2018a
+        authors: Díez Díaz, V.; Garcia, G.; Pereda-Suberbiola, X.; Jentgen-Ceschino, B.; Stein, K.; Godefroit, P.; Valentin, X.
+        year: 2018
+        title: The titanosaurian dinosaur Atsinganosaurus velauciensis (Sauropoda) from the Upper Cretaceous of southern France. New material, phylogenetic affinities, and palaeobiogeographical implications
+        journal: Cretaceous Research
+        volume: "91"
+        pages: 429-456
+        doi: 10.1016/j.cretres.2018.06.015
+        notes: Names the Argiles et Grès à Reptiles as the basin's upper Campanian formation.
+      - id: jones2026c
+        authors: Jones, B.; Viola, E.
+        year: 2026
+        title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
+        publisher: Princeton University Press
+        isbn: 978-0-691-25021-2
+        notes: Ties this genus to that formation by name.
     taxonomy:
       - Life
       - Animalia
@@ -143154,8 +143231,10 @@ genera:
         publisher: Geological Society of London
         volume: "37"
         issue: 1-4
-        pages: 620-706
+        pages: 620-707
         doi: 10.1144/gsl.jgs.1881.037.01-04.49
+        notes: |
+          The article runs to p. 707, where the discussion closes; p. 708 begins a different paper. Pages 704-706 carry the explanation of plates XXVII-XXXI and 706-707 a synopsis of the figured bones arranged by species. Suess's note on the Gosau beds is an appendix within this range and is separately registered.
     taxonomy:
       - Life
       - Animalia
@@ -153088,7 +153167,7 @@ genera:
     placement: incertae sedis
     pronunciation:
       phonetic: suh-LOO-o-SAWR-us
-    description: Siluosaurus is a genus of ornithischian dinosaur from the Early Cretaceous (Barremian-Albian) Xinminbao Group of Gansu, China, founded on two small teeth. The type species is S. zhanggiani.
+    description: Siluosaurus is a genus of ornithischian dinosaur from the Early Cretaceous (Barremian-Albian) Xinminpu Group of Gansu, China, founded on two small teeth. The type species is S. zhanggiani.
     etymology: Named for the Silk Road (Chinese 'Silu'), referencing the discovery location in Gansu, China, along the historic Silk Road corridor, combined with Greek 'sauros' meaning 'lizard'; meaning 'Silk Road lizard.'
     dispute:
       summary: |
@@ -153149,7 +153228,7 @@ genera:
         title: A small ornithopod from Mazongshan area, Gansu Province, China
         journal: Sino-Japanese Silk Road Dinosaur Expedition. China Ocean Press, Beijing
         pages: 24-26
-        notes: Original description of Siluosaurus zhanggiani as a hypsilophodontid, based on two teeth from the Xinminbao Group.
+        notes: Original description of Siluosaurus zhanggiani as a hypsilophodontid, based on two teeth from the Xinminpu Group.
       - id: butler2008b
         authors: Butler, R. J.; Upchurch, P.; Norman, D. B.
         year: 2008
@@ -157966,7 +158045,7 @@ genera:
     etymology: From 'Stegosaurus' and Greek '-ides' meaning 'resembling' or 'shaped like'; meaning 'Stegosaurus-shaped', referencing its similarity in armoring to Stegosaurus.
     pronunciation:
       phonetic: STEG-oh-suh-RYE-deez
-    description: Stegosaurides is a genus of herbivorous thyreophoran (perhaps ankylosaurid or possibly stegosaurian) dinosaur. It lived during the Cretaceous. Its fossils were found in the Xinminbao Group near Heishan in Gansu Province in China. These fossils consist of fragmentary material, including dermal spine elements. The genus is occasionally misspelled as "Stegosauroides".
+    description: Stegosaurides is a genus of herbivorous thyreophoran (perhaps ankylosaurid or possibly stegosaurian) dinosaur. It lived during the Cretaceous. Its fossils were found in the Xinminpu Group near Heishan in Gansu Province in China. These fossils consist of fragmentary material, including dermal spine elements. The genus is occasionally misspelled as "Stegosauroides".
     dispute:
       summary: |
         Stegosaurides is a nomen dubium based on fragmentary thyreophoran remains from the Cretaceous of China that cannot be assigned to either Stegosauria or Ankylosauria with confidence (Jones, 2026).
@@ -160635,7 +160714,7 @@ genera:
     pronunciation:
       phonetic: soo-JOH-SAWR-us
     etymology: Named after Suzhou (a region in Gansu Province, China) where the fossils were found, combined with Greek sauros, "lizard" - means "Suzhou lizard"
-    description: Suzhousaurus is an extinct genus of large therizinosaurs from the Early Cretaceous of China. The genus is known from two specimens discovered in the Xiagou and Zhonggou Formations, both part of the Xinminbao Group. These findings were made during fieldwork in 1999 and 2004.
+    description: Suzhousaurus is an extinct genus of large therizinosaurs from the Early Cretaceous of China. The genus is known from two specimens discovered in the Xiagou and Zhonggou Formations, both part of the Xinminpu Group. These findings were made during fieldwork in 1999 and 2004.
     dispute:
       summary: |
         Suzhousaurus is a large, latest-diverging intermediate therizinosaur whose family-level assignment depends on how Therizinosauridae is defined. Zanno (2010) recovers it just outside Therizinosauridae as the most derived therizinosauroid, a result followed by the Princeton Encyclopedia (Jones, 2026); under the broader Therizinosaurus-anchored definition of Kobayashi et al. (2022, 2025) it is drawn into Therizinosauridae, within a derived subclade alongside Therizinosaurus and Paralitherizinosaurus. It is placed conservatively in Therizinosauroidea.
@@ -177037,7 +177116,7 @@ genera:
     pronunciation:
       ipa: /vɛˌnɛnoʊˈsɔːrəs/
       phonetic: ven-EN-o-SOR-uhs
-    etymology: From the Poison Strip Member of the Cedar Mountain Formation (Latin venenum, 'poison') where the fossils were found, plus Greek sauros ('lizard'), meaning 'poison lizard'
+    etymology: From the Poison Strip Sandstone Member of the Cedar Mountain Formation (Latin venenum, 'poison') where the fossils were found, plus Greek sauros ('lizard'), meaning 'poison lizard'
     description: Venenosaurus is a genus of sauropod dinosaur that lived in what is now Utah during the Early Cretaceous. Its type and only species is Venenosaurus dicrocei. Fossils of Venenosaurus were first discovered in 1998, by Denver Museum of Natural History volunteer Anthony DiCroce, and described as a new genus and species in 2001 by Virginia Tidwell and colleagues, who named the species for DiCroce. Venenosaurus was a relatively small sauropod, and was similar to Cedarosaurus, another sauropod from the Early Cretaceous of Utah.
     diet: herbivore
     locomotion: quadrupedal
@@ -177078,7 +177157,7 @@ genera:
           locality: Tony's Bone Bed
           region: Utah
           formation: Cedar Mountain
-          member: Poison Strip
+          member: Poison Strip Sandstone
           region_code: US-UT
         type_specimen:
           specimen_id:
@@ -179897,8 +179976,8 @@ genera:
           country: GB
           locality: Henfield
           region: West Sussex
-          formation: Weald Clay
-          notes: Harrison and Walker (1973) described a specimen J. F. Wyley had already collected and reported his account of where it came from. Their placement of it some 500 to 600 feet below the top of the formation rests on a regional ostracod correlation rather than on a record of the find point.
+          group: Weald Clay
+          notes: Harrison and Walker (1973) described a specimen J. F. Wyley had already collected and reported his account of where it came from. Their placement of it some 500 to 600 feet below the top of the group rests on a regional ostracod correlation rather than on a record of the find point.
           region_code: GB-WSX
         type_specimen:
           specimen_id:
@@ -182366,7 +182445,7 @@ genera:
     pronunciation:
       phonetic: shoo-WOO-long
     etymology: Named after pioneering Gansu Province geologist Wang Yue-lun, known by his courtesy name 'Xu-wu', combined with Chinese 'long' meaning 'dragon'
-    description: Xuwulong is a genus of hadrosauroid dinosaur from the Early Cretaceous period of what is now Yujingzi Basin in the Jiuquan area, Gansu Province of northwestern China. It is known from the holotype, GSGM F00001, an articulated specimen including a complete cranium, almost complete axial skeleton, and complete left pelvic girdle recovered from the Xinminbao Group. Xuwulong was named by You Hailu, Li Daqing, and Liu Weichang in 2011, and the type species is Xuwulong yueluni; the binomial name as a whole refers to Professor Wang Yue-lun; "Xu-wu" is his courtesy name.
+    description: Xuwulong is a genus of hadrosauroid dinosaur from the Early Cretaceous period of what is now Yujingzi Basin in the Jiuquan area, Gansu Province of northwestern China. It is known from the holotype, GSGM F00001, an articulated specimen including a complete cranium, almost complete axial skeleton, and complete left pelvic girdle recovered from the Xinminpu Group. Xuwulong was named by You Hailu, Li Daqing, and Liu Weichang in 2011, and the type species is Xuwulong yueluni; the binomial name as a whole refers to Professor Wang Yue-lun; "Xu-wu" is his courtesy name.
     diet: herbivore
     locomotion: facultative
     paleoenvironment:
@@ -186605,7 +186684,7 @@ genera:
           locality: Vale Pombas
           region: Lisbon
           formation: Lourinhã
-          member: Porto Novo
+          member: Praia da Amoreira-Porto Novo
           part: upper
           coordinates:
             - 39.283333
