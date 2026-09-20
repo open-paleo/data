@@ -320,7 +320,7 @@ export type Location = {
      *
      * Rank words are not part of the value: `group: Yezo`, matching
      * `formation: Morrison` rather than "Morrison Formation". Ranks resolve
-     * through stratigraphy.yaml.
+     * through the stratigraphic registry.
      */
     group?: string;
 
@@ -887,10 +887,16 @@ export type Dispute = {
 };
 
 /**
- * A lithostratigraphic unit in `stratigraphy.yaml`, keyed by the unit's name.
+ * A lithostratigraphic unit, one per file under `stratigraphy/<letter>/`.
  * Every value traces to a primary paper cited in `references`.
  */
 export type StratigraphicUnit = {
+    /**
+     * The unit's name, and its identity across the dataset: what a record's
+     * `location` names it, and what the file it lives in is named after.
+     */
+    name: string;
+
     /**
      * Rank of the unit. Omitted when no source states one; absence is not a
      * claim.

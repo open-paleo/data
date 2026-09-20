@@ -227,10 +227,76 @@ const regionRegistry = parseYamlContent(
 ) as Record<string, string>;
 const allowedRegionCodes = new Set(Object.keys(regionRegistry));
 
-// The stratigraphic registry, keyed by unit name. A record names a unit by its
+// The stratigraphic registry: one file per unit under stratigraphy/<letter>/,
+// the same layout the reference store uses. A record names a unit by its
 // headword or by any spelling in `variants`, so both are needed to resolve one.
-const stratigraphyPath = path.join(root, "stratigraphy.yaml");
-const stratigraphy = parseYamlContent(fs.readFileSync(stratigraphyPath, "utf8")) as Record<string, StratigraphicUnit | null>;
+const stratigraphyDirectory = path.join(root, "stratigraphy");
+const stratigraphy: Record<string, StratigraphicUnit> = {};
+
+// Where each unit came from, so a finding points at the unit's own file rather
+// than at the directory.
+const stratigraphyFiles = new Map<string, string>();
+
+// Layout problems found while loading. They are reported by their own check
+// below, because checkError needs a check to be open before it can record one.
+const stratigraphyLayout: Array<[string, string]> = [];
+
+/**
+ * Filename stem for a unit, mirroring the name-to-file rule the registry uses.
+ * Diacritics fold to their base letter and every other run of characters
+ * becomes a single hyphen, so `Argiles et Grès à Reptiles` files as
+ * `argiles-et-gres-a-reptiles`.
+ *
+ * @param unitName - The unit's name as the entry spells it.
+ * @returns The expected filename stem, without the extension.
+ */
+function stratigraphySlug(unitName: string): string
+{
+    return unitName
+        .normalize("NFKD")
+        .replace(/\p{M}/gu, "")
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-|-$/g, "");
+}
+
+for (const filePath of findYamlFiles(stratigraphyDirectory))
+{
+    const unit = parseYamlContent(fs.readFileSync(filePath, "utf8")) as StratigraphicUnit | null;
+    const unitName = unit?.name;
+
+    if (!unitName)
+    {
+        stratigraphyLayout.push([filePath, "entry has no 'name'; the name is the unit's identity and the filename is derived from it"]);
+        continue;
+    }
+    else if (stratigraphyFiles.has(unitName))
+    {
+        stratigraphyLayout.push([filePath, `unit '${unitName}' is also defined in ${path.relative(root, stratigraphyFiles.get(unitName) ?? "")}`]);
+        continue;
+    }
+
+    const expected = path.join(stratigraphyDirectory, referenceBucket(unitName), `${stratigraphySlug(unitName)}.yml`);
+
+    if (filePath !== expected)
+    {
+        stratigraphyLayout.push([filePath, `unit '${unitName}' belongs in ${path.relative(root, expected)}`]);
+    }
+
+    stratigraphy[unitName] = unit as StratigraphicUnit;
+    stratigraphyFiles.set(unitName, filePath);
+}
+
+/**
+ * The file a unit was read from, for reporting.
+ *
+ * @param unitName - The unit's name.
+ * @returns Its file path, falling back to the registry directory.
+ */
+function stratigraphyFile(unitName: string): string
+{
+    return stratigraphyFiles.get(unitName) ?? stratigraphyDirectory;
+}
 
 const unitByName = new Map<string, string>();
 
@@ -754,7 +820,7 @@ for (const [unitName, unit] of Object.entries(stratigraphy ?? {}))
         {
             checkError(
                 "Registry reference integrity",
-                stratigraphyPath,
+                stratigraphyFile(unitName),
                 `${unitName}: reference '${reference.id}' does not resolve to a store entry (references/${reference.id[0]}/${reference.id}.yml)`);
         }
     }
@@ -775,8 +841,51 @@ for (const [unitName, unit] of Object.entries(stratigraphy ?? {}))
     {
         checkError(
             "Registry containment",
-            stratigraphyPath,
+            stratigraphyFile(unitName),
             `${unitName}: parent '${parent}' has no entry of its own`);
+    }
+}
+
+// 10a-quater. Registry file layout — one unit per file, named after the unit
+//
+// The registry is a directory rather than one document, so the filename is how
+// a unit is found and the `name` field is what it is called. They have to
+// agree, or a unit is unreachable by the name everything else uses for it.
+startCheck("Registry file layout");
+
+for (const [filePath, problem] of stratigraphyLayout)
+{
+    checkError("Registry file layout", filePath, problem);
+}
+
+for (const bucket of fs.readdirSync(stratigraphyDirectory, { withFileTypes: true }))
+{
+    if (bucket.name.startsWith("."))
+    {
+        continue;
+    }
+    else if (!bucket.isDirectory())
+    {
+        checkError(
+            "Registry file layout",
+            path.join(stratigraphyDirectory, bucket.name),
+            `'${bucket.name}' sits beside the letter directories; the registry holds one file per unit under stratigraphy/<letter>/`);
+        continue;
+    }
+
+    for (const entry of fs.readdirSync(path.join(stratigraphyDirectory, bucket.name), { withFileTypes: true }))
+    {
+        if (entry.name.startsWith("."))
+        {
+            continue;
+        }
+        else if (!entry.isFile() || !entry.name.endsWith(".yml"))
+        {
+            checkError(
+                "Registry file layout",
+                path.join(stratigraphyDirectory, bucket.name, entry.name),
+                `'${entry.name}' is not a .yml file, so no registry check reads it`);
+        }
     }
 }
 
@@ -1479,7 +1588,7 @@ for (const [filePath, doc] of genusParsed)
                 checkError(
                     "Formation rank",
                     filePath,
-                    `species '${species.name ?? "?"}': ${field} '${value}' has no entry in stratigraphy.yaml — add one, or spell it as an existing entry's name or variant`);
+                    `species '${species.name ?? "?"}': ${field} '${value}' has no entry in the stratigraphic registry — add one, or spell it as an existing entry's name or variant`);
                 continue;
             }
 
@@ -1491,7 +1600,7 @@ for (const [filePath, doc] of genusParsed)
                 checkError(
                     "Formation rank",
                     filePath,
-                    `species '${species.name ?? "?"}': ${field} '${value}' is recorded in stratigraphy.yaml as a ${rank} — move it to '${rank === "subgroup" || rank === "supergroup" ? "group" : rank}'`);
+                    `species '${species.name ?? "?"}': ${field} '${value}' is recorded in the stratigraphic registry as a ${rank} — move it to '${rank === "subgroup" || rank === "supergroup" ? "group" : rank}'`);
             }
         }
     }
@@ -1550,7 +1659,7 @@ for (const [filePath, doc] of genusParsed)
 
 // 13c. Every stratigraphic unit carries a period, and its stages refine it
 //
-// `period` is required on each `stratigraphy.yaml` entry. `stages` is optional
+// `period` is required on each registry entry. `stages` is optional
 // and narrows it: every stage listed must belong to one of the entry's periods.
 // An empty or absent `stages` means no source published the age at stage
 // resolution, never that the unit is undated. Records are not checked against
@@ -1563,7 +1672,7 @@ for (const [unitName, unit] of Object.entries(stratigraphy ?? {}))
 
     if (!Array.isArray(periods) || periods.length === 0)
     {
-        checkError("Stratigraphic unit ages", stratigraphyPath, `unit '${unitName}': no period`);
+        checkError("Stratigraphic unit ages", stratigraphyFile(unitName), `unit '${unitName}': no period`);
         continue;
     }
 
@@ -1571,7 +1680,7 @@ for (const [unitName, unit] of Object.entries(stratigraphy ?? {}))
     {
         if (!allowedPeriods.has(periodName))
         {
-            checkError("Stratigraphic unit ages", stratigraphyPath, `unit '${unitName}': unknown period '${periodName}'`);
+            checkError("Stratigraphic unit ages", stratigraphyFile(unitName), `unit '${unitName}': unknown period '${periodName}'`);
         }
     }
 
@@ -1581,13 +1690,13 @@ for (const [unitName, unit] of Object.entries(stratigraphy ?? {}))
 
         if (!stageInfo)
         {
-            checkError("Stratigraphic unit ages", stratigraphyPath, `unit '${unitName}': unknown stage '${stageName}'`);
+            checkError("Stratigraphic unit ages", stratigraphyFile(unitName), `unit '${unitName}': unknown stage '${stageName}'`);
         }
         else if (!periods.includes(stageInfo.period))
         {
             checkError(
                 "Stratigraphic unit ages",
-                stratigraphyPath,
+                stratigraphyFile(unitName),
                 `unit '${unitName}': stage '${stageName}' belongs to '${stageInfo.period}', which is not among its periods`);
         }
     }
@@ -2602,8 +2711,14 @@ for (const [filePath, entry] of referenceStoreParsed)
 const registrySources: Array<[string, Record<string, unknown>]> = [
     [path.join(root, "institutions.yaml"), institutionRegistry],
     [path.join(root, "regions.yaml"), regionRegistry as unknown as Record<string, unknown>],
-    [stratigraphyPath, stratigraphy as unknown as Record<string, unknown>],
 ];
+
+// The registry is walked separately: each unit is its own file, so the prose
+// findings point at that file rather than at one path shared by 532 entries.
+for (const [unitName, unit] of Object.entries(stratigraphy))
+{
+    collectProseFields(unit, stratigraphyFile(unitName), unitName, null, proseFields);
+}
 
 for (const [filePath, registry] of registrySources)
 {

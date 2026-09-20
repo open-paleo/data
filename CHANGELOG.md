@@ -10,17 +10,19 @@ and this project uses [calendar versioning](https://calver.org/) (YYYY.MM).
 Initial public release, establishing the v1 output schema.
 
 ### Added
-- The stratigraphic registry ([`stratigraphy.yaml`](./stratigraphy.yaml)),
-  replacing the earlier `formations.yaml`. Every unit a record names at any
-  rank now has an entry giving its rank, containing unit, alternate names,
-  age and the papers each value comes from, and the age is the union of what
+- The stratigraphic registry ([`stratigraphy/`](./stratigraphy)),
+  replacing the earlier `formations.yaml`. One file per unit under a letter
+  directory, named after the unit and carrying its name in a `name` field,
+  matching the layout of the reference store. Every unit a record names at
+  any rank now has an entry giving its rank, containing unit, alternate
+  names, age and the papers each value comes from, and the age is the union of what
   those papers publish rather than a choice between them. Validation resolves
   every `group`, `formation`, `member` and `bed` on a record against it,
   rejects a unit recorded at a rank the registry contradicts, and holds the
   registry's own prose and citations to the same rules as the rest of the
   dataset.
 - `period` on every unit in the stratigraphic registry
-  ([`stratigraphy.yaml`](./stratigraphy.yaml)), giving the epoch or epochs
+  ([`stratigraphy/`](./stratigraphy)), giving the epoch or epochs
   the unit spans. `stages` now refines `period` rather than standing alone:
   every stage must fall within one of the unit's epochs, and an empty
   `stages` means no source gives the unit's age at stage resolution, not
@@ -42,7 +44,7 @@ Initial public release, establishing the v1 output schema.
   occurrence. Populated when the group is the finest unit published, in
   which case `formation` is absent. Rank words are not part of the value
   (`group: Yezo`). Ranks resolve through the new
-  [`stratigraphy.yaml`](./stratigraphy.yaml) registry, which also records
+  [`stratigraphy/`](./stratigraphy) registry, which also records
   variant spellings and the source of each claim. Validation rejects a group
   in `formation`. `part` can now qualify a group. Output schema 1.3.0 → 1.4.0.
 - `location.part` and `location.bed`, completing the lithostratigraphic

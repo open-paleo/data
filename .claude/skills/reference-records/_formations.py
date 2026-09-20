@@ -1,6 +1,6 @@
 """Read the repo-level stratigraphic registry.
 
-`stratigraphy.yaml` at the repo root replaced this skill's own
+`stratigraphy/` at the repo root replaced this skill's own
 `formation-variants.yml` and `formation-ranks.yml`: what a unit is called and
 what rank it holds are answered from the same read, so they were being recorded
 together in practice long before they shared a file.
@@ -21,9 +21,22 @@ def loadRegistry():
 
     @returns: Dict of canonical unit name to its entry.
     """
-    path = os.path.join(data_dir(), "stratigraphy.yaml")
+    root = os.path.join(data_dir(), "stratigraphy")
+    registry = {}
 
-    return yaml.safe_load(open(path, encoding="utf-8")) or {}
+    for bucket in sorted(os.listdir(root)):
+        directory = os.path.join(root, bucket)
+        if not os.path.isdir(directory):
+            continue
+        for fileName in sorted(os.listdir(directory)):
+            if not fileName.endswith(".yml"):
+                continue
+            entry = yaml.safe_load(open(os.path.join(directory, fileName), encoding="utf-8")) or {}
+            name = entry.pop("name", None)
+            if name is not None:
+                registry[name] = entry
+
+    return registry
 
 
 def loadVariants(registry=None):

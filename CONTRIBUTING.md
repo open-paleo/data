@@ -310,7 +310,8 @@ so the collision is visible at the source.
 
 Every lithostratigraphic unit named in a record's `location` (`group`,
 `formation`, `member`, `bed`) has an entry in
-[`stratigraphy.yaml`](./stratigraphy.yaml). The key is the unit's name with
+[`stratigraphy/`](./stratigraphy), one file per unit under a letter
+directory, named after the unit. The `name` field is the unit's name with
 the rank word dropped and any lithology word kept: `Morrison`,
 `Navajo Sandstone`. Where two different units share a name, the key takes a
 country suffix in parentheses.
