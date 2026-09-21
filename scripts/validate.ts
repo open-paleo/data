@@ -243,9 +243,11 @@ const stratigraphyLayout: Array<[string, string]> = [];
 
 /**
  * Filename stem for a unit, mirroring the name-to-file rule the registry uses.
- * Diacritics fold to their base letter and every other run of characters
- * becomes a single hyphen, so `Argiles et Grès à Reptiles` files as
- * `argiles-et-gres-a-reptiles`.
+ * Letters keep their diacritics, as the reference store's keys do, and every
+ * run of other characters becomes a single hyphen: `Argiles et Grès à
+ * Reptiles` files as `argiles-et-grès-à-reptiles` and `Öösh` as `öösh`. The
+ * directory letter folds separately, through `referenceBucket`, so `Öösh`
+ * still lives under `o/`.
  *
  * @param unitName - The unit's name as the entry spells it.
  * @returns The expected filename stem, without the extension.
@@ -253,10 +255,9 @@ const stratigraphyLayout: Array<[string, string]> = [];
 function stratigraphySlug(unitName: string): string
 {
     return unitName
-        .normalize("NFKD")
-        .replace(/\p{M}/gu, "")
+        .normalize("NFC")
         .toLowerCase()
-        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/[^\p{L}\p{N}]+/gu, "-")
         .replace(/^-|-$/g, "");
 }
 
