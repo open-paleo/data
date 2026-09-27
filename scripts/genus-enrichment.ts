@@ -1251,7 +1251,10 @@ function extractHolotype(
         .replace(/\{\{[^}]*\}\}/g, "")
         .replace(/\[\[(?:[^|\]]*\|)?([^\]]*)\]\]/g, "$1");
 
-    const specimenPattern = /\b([A-Z]{2,}(?:[-\s][A-Za-z]{1,4})*[-\s]?[A-Z]?\d[\w./–-]*)/g;
+    // The optional tail keeps year–register–number catalogues whole: Munich
+    // numbers such as "SNSB-BSPG 2017 I 133" were cut at the first space,
+    // seeding "SNSB-BSPG 2017" (#2163).
+    const specimenPattern = /\b([A-Z]{2,}(?:[-\s][A-Za-z]{1,4})*[-\s]?[A-Z]?\d[\w./–-]*(?:\s[IVXL]+\s\d[\w./–-]*)?)/g;
 
     // A window either side of each mention, rather than up to the next period:
     // abbreviated binomials ("of ''S. brevicollis'', CMN 41857") put a period
