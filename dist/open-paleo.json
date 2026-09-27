@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-09-27T06:15:33.295Z",
+    "built_at": "2026-09-27T18:08:02.286Z",
     "clade_count": 188,
-    "genus_count": 1423,
+    "genus_count": 1422,
     "license": "CC-BY-4.0",
     "schema_version": "1.7.0",
     "version": "2026.09"
@@ -29935,8 +29935,20 @@
         "coastal"
       ],
       "diagnostic_features": [
-        "True petrification preserved in lithographic shale, fully consistent with a bird feather",
-        "Nearly complete skeleton covered with feathers, differing in several respects from living birds"
+        "Jugal with a longitudinal groove on the medial side of the suborbital process.",
+        "Infratemporal fenestra with a sharply angled incision at its anteroventral margin, separating the quadratojugal and postorbital processes of the jugal.",
+        "Quadratojugal process of the jugal very slender, less than half the minimum height of the suborbital process.",
+        "Depressed rim around the posterior margin of the trigeminal foramen in the prootic.",
+        "Mandibular fenestra absent.",
+        "Maxilla with only eight to nine tooth positions.",
+        "10 to 12 dentary teeth.",
+        "Premaxillary and anteriormost dentary teeth with a straight basal part and a bulbous, strongly recurved apical part.",
+        "Nine cervical and 14 dorsal vertebrae.",
+        "Fewer than 25 caudal vertebrae.",
+        "Pubic obturator foramen opens ventrally.",
+        "Pubic apron divided along parts of the shaft.",
+        "Ischium with a well-developed intermediate process posteriorly at about mid-shaft.",
+        "Metatarsal III with a smooth distal end."
       ],
       "appearance": {
         "features": [
@@ -29985,6 +29997,11 @@
           "name": "Archaeornis",
           "type": "junior subjective",
           "reason": "Originally described as a separate genus for the Berlin specimen; subsequent review treated it as another species of Archaeopteryx (A. siemensii)."
+        },
+        {
+          "name": "Wellnhoferia",
+          "type": "junior subjective",
+          "reason": "Erected by Elżanowski (2001) for the Solnhofen specimen on the basis of a shortened tail and a four-phalanx fourth pedal digit. Mayr et al. (2007) found the specimen not convincingly distinct from the London specimen, and the specimen-based phylogeny of Foth and Rauhut (2026) recovers it within Archaeopteryx."
         }
       ],
       "species": [
@@ -30038,6 +30055,11 @@
               "name": "Jurapteryx",
               "type": "junior subjective",
               "reason": "Senter (2007) demonstrated that the proposed diagnostic features could be explained by ontogenetic variation, treating it as a junior synonym of Archaeopteryx lithographica."
+            },
+            {
+              "name": "Wellnhoferia grandis",
+              "type": "junior subjective",
+              "reason": "Named by Elżanowski (2001) on the Solnhofen specimen, which Mayr et al. (2007) concluded had not been convincingly shown to differ from the London specimen of A. lithographica. Foth and Rauhut (2026) place it within Archaeopteryx but leave species-level taxonomy unresolved."
             }
           ],
           "erected_in": "meyer1861a",
@@ -30088,14 +30110,20 @@
         },
         {
           "nickname": "Solnhofen specimen",
+          "specimen_id": [
+            "BMMS 500"
+          ],
           "institution": "Bürgermeister-Müller-Museum",
           "category": "largest-individual",
-          "significance": "The largest known specimen, missing only portions of the neck, tail, backbone, and head. Originally misidentified as Compsognathus, it has been proposed as a separate genus and species, Wellnhoferia grandis.",
+          "significance": "The largest known specimen, missing only portions of the neck, tail, backbone, and head. Originally misidentified as Compsognathus, it became the holotype of a separate genus and species, Wellnhoferia grandis (Elżanowski, 2001), now treated as a junior synonym of Archaeopteryx.",
           "discovered": {
             "by": "Friedrich Müller"
           },
           "references": [
-            "elżanowski2001a"
+            "wellnhofer1988a",
+            "elżanowski2001a",
+            "mayr2007a",
+            "foth2026a"
           ]
         },
         {
@@ -30256,6 +30284,57 @@
           "issue": "4",
           "pages": "429-463",
           "doi": "10.1017/S1477201907002143"
+        },
+        {
+          "id": "wellnhofer1988a",
+          "authors": "Wellnhofer, P.",
+          "year": 1988,
+          "title": "A new specimen of Archaeopteryx",
+          "journal": "Science",
+          "publisher": "American Association for the Advancement of Science",
+          "volume": "240",
+          "issue": "4860",
+          "pages": "1790-1792",
+          "doi": "10.1126/science.240.4860.1790",
+          "notes": "Original description of the Solnhofen specimen, then the largest of six known skeletons."
+        },
+        {
+          "id": "mayr2007a",
+          "authors": "Mayr, G.; Pohl, B.; Hartman, S.; Peters, D. S.",
+          "year": 2007,
+          "title": "The tenth skeletal specimen of Archaeopteryx",
+          "journal": "Zoological Journal of the Linnean Society",
+          "publisher": "Oxford University Press (OUP)",
+          "volume": "149",
+          "issue": "1",
+          "pages": "97-116",
+          "doi": "10.1111/j.1096-3642.2006.00245.x",
+          "notes": "Found the Solnhofen specimen, holotype of Wellnhoferia grandis, not convincingly distinct from the London specimen."
+        },
+        {
+          "id": "foth2026a",
+          "authors": "Foth, C.; Rauhut, O. W. M.",
+          "year": 2026,
+          "title": "Considerations on the taxonomy of Late Jurassic Avialae (Theropoda) from the Solnhofen Archipelago",
+          "journal": "Fossil Record",
+          "publisher": "Pensoft Publishers",
+          "volume": "29",
+          "issue": "2",
+          "pages": "731-758",
+          "doi": "10.3897/fr.29.200245",
+          "notes": "Source of the revised generic diagnosis; its specimen-based phylogeny recovers the Solnhofen specimen within Archaeopteryx."
+        },
+        {
+          "id": "o'connor2026a",
+          "authors": "O'Connor, J.; Marugán-Lobón, J.",
+          "year": 2026,
+          "title": "Evaluating variation in Solnhofen avialans",
+          "journal": "Biology Letters",
+          "volume": "22",
+          "issue": "3",
+          "pages": "20250601",
+          "doi": "10.1098/rsbl.2025.0601",
+          "notes": "Morphometrics of all 15 Solnhofen avialans suggest a single taxon along a growth curve, referring the Haarlem specimen and Alcmonavis to Archaeopteryx."
         }
       ],
       "taxonomy": [
@@ -160910,12 +160989,13 @@
     },
     "Ostromia": {
       "genus": "Ostromia",
-      "parent": "Anchiornithidae",
+      "parent": "Avialae",
+      "placement": "incertae sedis",
       "etymology": "Named in honor of John Ostrom, the influential American paleontologist who identified the holotype specimen as an Archaeopteryx",
       "pronunciation": {
         "phonetic": "Oss-trom-ee-uh"
       },
-      "description": "Ostromia is a genus of anchiornithid theropod dinosaur containing a single species, Ostromia crassipes. Recovered from the Late Jurassic Painten Formation of Germany, it was named by Christian Foth and Oliver Rauhut in 2017.",
+      "description": "Ostromia is a genus of feathered theropod dinosaur containing a single species, Ostromia crassipes, based on the Haarlem specimen. Recovered from the Late Jurassic Painten Formation of Germany, it was named by Christian Foth and Oliver Rauhut in 2017.",
       "diet": "carnivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -160923,7 +161003,6 @@
         "coastal"
       ],
       "diagnostic_features": [
-        "Longitudinal furrows on both sides of all preserved manual phalanges and at least metacarpal III",
         "Unusually small first manual ungual relative to metacarpal I (ungual I:metacarpal I ratio of 0.9 vs 1.26 in Anchiornis)",
         "Relative length of metacarpal III compared to metacarpal I of 2.21 vs 2.46 in Anchiornis",
         "Tibiotarsus to metatarsus length ratio of 1.67 vs 1.93 in Anchiornis"
@@ -160954,7 +161033,7 @@
         {
           "name": "Ostromia crassipes",
           "etymology": "From Latin 'crassipes' meaning 'thick-footed', combining 'crassus' ('thick') and 'pes' ('foot'), derived from the original name Pterodactylus crassipes given in 1857.",
-          "status": "valid",
+          "status": "nomen dubium",
           "type_species": true,
           "period": {
             "name": [
@@ -161014,6 +161093,31 @@
           "doi": "10.1186/s12862-017-1076-y"
         },
         {
+          "id": "foth2026a",
+          "authors": "Foth, C.; Rauhut, O. W. M.",
+          "year": 2026,
+          "title": "Considerations on the taxonomy of Late Jurassic Avialae (Theropoda) from the Solnhofen Archipelago",
+          "journal": "Fossil Record",
+          "publisher": "Pensoft Publishers",
+          "volume": "29",
+          "issue": "2",
+          "pages": "731-758",
+          "doi": "10.3897/fr.29.200245",
+          "notes": "The describing authors now classify the Haarlem specimen as Avialae indet., as it lacks any indisputable diagnostic features."
+        },
+        {
+          "id": "o'connor2026a",
+          "authors": "O'Connor, J.; Marugán-Lobón, J.",
+          "year": 2026,
+          "title": "Evaluating variation in Solnhofen avialans",
+          "journal": "Biology Letters",
+          "volume": "22",
+          "issue": "3",
+          "pages": "20250601",
+          "doi": "10.1098/rsbl.2025.0601",
+          "notes": "Morphometrics cluster the Haarlem specimen with Archaeopteryx rather than Anchiornis; the case for a distinct genus is called equivocal."
+        },
+        {
           "id": "paul2024a",
           "authors": "Paul, G. S.",
           "year": 2024,
@@ -161051,7 +161155,7 @@
         "Maniraptora",
         "Paraves",
         "Eumaniraptora",
-        "Anchiornithidae"
+        "Avialae"
       ],
       "authors": "Foth, C.; Rauhut, O. W. M.",
       "described": 2017
@@ -229300,187 +229404,6 @@
       ],
       "authors": "Bell, P. R.; Herne, M. C.; Brougham, T.; Smith, E. T.",
       "described": 2018
-    },
-    "Wellnhoferia": {
-      "genus": "Wellnhoferia",
-      "parent": "Avialae",
-      "placement": "incertae sedis",
-      "dispute": {
-        "summary": "The validity of Wellnhoferia grandis is disputed. Elżanowski (2001) erected it for the Solnhofen specimen on the basis of a shortened tail and a four-phalanx fourth pedal digit, and Senter and Robins (2003) supported its distinctness, but Mayr et al. (2007) and Jones et al. (2026) regard it as a junior synonym of Archaeopteryx lithographica. It is retained here as a valid genus pending revision.\n",
-        "history": [
-          {
-            "date": "2026-07-01",
-            "note": "Placed at Avialae incertae sedis; validity relative to Archaeopteryx lithographica is uncertain."
-          }
-        ]
-      },
-      "etymology": "Named after German paleontologist Peter Wellnhofer, who described the Solnhofen specimen of Archaeopteryx in 1988",
-      "pronunciation": {
-        "phonetic": "WEL-un-hoh-FEE-ree-a"
-      },
-      "description": "Wellnhoferia is a genus of early prehistoric bird-like theropod dinosaur closely related to Archaeopteryx. It is known from a single species, W. grandis, that lived in what is now Germany, during the Late Jurassic. While Wellnhoferia was similar to Archaeopteryx, it had a shorter tail and its fourth toe was shorter than that of Archaeopteryx. Andrzej Elżanowski (2001) of the Institute of Zoology of the University of Wrocław, Poland, determined the differences resulted from a \"phylogenetic reduction rather than individual variation.\"",
-      "diet": "carnivore",
-      "locomotion": "bipedal",
-      "paleoenvironment": [
-        "marine"
-      ],
-      "diagnostic_features": [
-        "Short tail with estimated 16-17 caudal vertebrae versus 21-23 in Archaeopteryx",
-        "Pedal digit IV composed of only four phalanges with long ungual lacking pronounced ventral curvature and widely separated flexor tubercle",
-        "Nearly symmetric pattern of pedal rays II-IV with metatarsals II and IV of equal length",
-        "Manual digit I ungual approximately one-third length of basal phalanx",
-        "Pedal digit II relatively longer and pedal digit IV relatively shorter than in Archaeopteryx, conferring greater symmetry to foot"
-      ],
-      "appearance": {
-        "integument": "feathered",
-        "evidence": "inferred"
-      },
-      "identifiers": [
-        {
-          "source": "pbdb",
-          "id": "68521"
-        },
-        {
-          "source": "wikidata",
-          "id": "Q138070"
-        },
-        {
-          "source": "gbif",
-          "id": "4847901"
-        }
-      ],
-      "species": [
-        {
-          "name": "Wellnhoferia grandis",
-          "etymology": "From Latin 'grandis' meaning 'large/great', per Elżanowski (2001).",
-          "status": "disputed",
-          "type_species": true,
-          "period": {
-            "name": [
-              "Late Jurassic"
-            ],
-            "stage": [
-              "Tithonian"
-            ],
-            "from_ma": 149.2,
-            "to_ma": 143.1
-          },
-          "location": {
-            "country": "DE",
-            "region": "Bavaria",
-            "locality": "Altmühl Valley",
-            "formation": "Solnhofen Lithographic Limestone",
-            "part": "upper",
-            "notes": "Elżanowski (2001) gives the type horizon as unknown and this unit only as a probable one, and Wellnhofer (1988) confirms that precise formation and locality data were never recorded for the specimen. Foth and colleagues (2025) place the lithology in the Altmühltal Formation, which is divided into an Eichstätt and a Solnhofen member.",
-            "region_code": "DE-BY",
-            "part_of": "formation"
-          },
-          "type_specimen": {
-            "specimen_type": "holotype",
-            "institution": "Bürgermeister-Müller-Museum",
-            "status": "uncatalogued",
-            "material": "Nearly complete postcranial skeleton with incomplete skull.",
-            "completeness": "partial",
-            "notes": "The Solnhofen specimen bears no catalog number; it was initially misidentified as Compsognathus and held in a private collection before being recognized as a further specimen of Archaeopteryx."
-          },
-          "erected_in": "elżanowski2001a",
-          "authors": "Elżanowski, A.",
-          "described": 2001
-        }
-      ],
-      "references": [
-        {
-          "id": "elżanowski2001a",
-          "authors": "Elżanowski, A.",
-          "year": 2001,
-          "title": "A new genus and species for the largest specimen of Archaeopteryx",
-          "journal": "Acta Palaeontologica Polonica",
-          "volume": "46",
-          "issue": "4",
-          "pages": "519-532"
-        },
-        {
-          "id": "senter2003a",
-          "authors": "Senter, P.; Robins, J. H.",
-          "year": 2003,
-          "title": "Taxonomic status of the specimens of Archaeopteryx",
-          "journal": "Journal of Vertebrate Paleontology",
-          "publisher": "Informa UK Limited",
-          "volume": "23",
-          "issue": "4",
-          "pages": "961-965",
-          "doi": "10.1671/22",
-          "notes": "Assessed the taxonomic status of the specimens attributed to Wellnhoferia and Archaeopteryx."
-        },
-        {
-          "id": "mayr2007a",
-          "authors": "Mayr, G.; Pohl, B.; Hartman, S.; Peters, D. S.",
-          "year": 2007,
-          "title": "The tenth skeletal specimen of Archaeopteryx",
-          "journal": "Zoological Journal of the Linnean Society",
-          "publisher": "Oxford University Press (OUP)",
-          "volume": "149",
-          "issue": "1",
-          "pages": "97-116",
-          "doi": "10.1111/j.1096-3642.2006.00245.x",
-          "notes": "Described the tenth Archaeopteryx skeleton, bearing on the validity of Wellnhoferia."
-        },
-        {
-          "id": "wellnhofer1988a",
-          "authors": "Wellnhofer, P.",
-          "year": 1988,
-          "title": "A new specimen of Archaeopteryx",
-          "journal": "Science",
-          "publisher": "American Association for the Advancement of Science",
-          "volume": "240",
-          "issue": "4860",
-          "pages": "1790-1792",
-          "doi": "10.1126/science.240.4860.1790"
-        },
-        {
-          "id": "foth2025a",
-          "authors": "Foth, C.; van de Kamp, T.; Tischlinger, H.; Kantelis, T.; Carney, R. M.; Zuber, M.; Hamann, E.; Wallaard, J. J. W.; Lenz, N.; Rauhut, O. W. M.; Frey, E.",
-          "year": 2025,
-          "title": "A new Archaeopteryx from the lower Tithonian Mörnsheim Formation at Mühlheim (Late Jurassic)",
-          "journal": "Fossil Record",
-          "volume": "28",
-          "issue": "1",
-          "pages": "17-43",
-          "doi": "10.3897/fr.28.131671"
-        },
-        {
-          "id": "jones2026c",
-          "authors": "Jones, B.; Viola, E.",
-          "year": 2026,
-          "title": "The Princeton Encyclopedia of Dinosaurs: Theropods",
-          "publisher": "Princeton University Press",
-          "isbn": "978-0-691-25021-2"
-        }
-      ],
-      "taxonomy": [
-        "Life",
-        "Animalia",
-        "Chordata",
-        "Vertebrata",
-        "Sarcopterygii",
-        "Tetrapoda",
-        "Reptilia",
-        "Archosauria",
-        "Dinosauria",
-        "Saurischia",
-        "Theropoda",
-        "Neotheropoda",
-        "Averostra",
-        "Tetanurae",
-        "Avetheropoda",
-        "Coelurosauria",
-        "Maniraptora",
-        "Paraves",
-        "Eumaniraptora",
-        "Avialae"
-      ],
-      "authors": "Elżanowski, A.",
-      "described": 2001
     },
     "Wendiceratops": {
       "genus": "Wendiceratops",
