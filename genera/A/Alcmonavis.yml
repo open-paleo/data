@@ -1,0 +1,83 @@
+genus: Alcmonavis
+parent: Avialae
+placement: incertae sedis
+dispute:
+  summary: >
+    The validity of Alcmonavis is disputed. Rauhut, Tischlinger and Foth (2019)
+    erected it for an isolated right wing from the Mörnsheim Formation,
+    distinguishing it from Archaeopteryx and recovering it in a more crownward
+    position. O'Connor and Marugán-Lobón (2026) argue that its diagnostic
+    characters are taphonomic artifacts or ontogenetic, and that all known
+    Solnhofen avialans represent Archaeopteryx. Foth and Rauhut (2026) accept
+    some of those objections but retain a revised diagnosis and again recover
+    the specimen outside Archaeopteryx.
+  history:
+    - date: "2026-09-27"
+      note: Placed at Avialae incertae sedis, the placement shared by both hypotheses (a specimen of Archaeopteryx, or a more crownward avialan).
+etymology: From Alcmona, the old Celtic name of the Altmühl River, and 'avis'
+  (bird).
+description: Alcmonavis is a basal genus of avialan dinosaur that during the
+  Late Jurassic lived in the area of present Germany. The only named species in
+  the genus is Alcmonavis poeschli. Its only known fossil was originally
+  reported as a specimen of Archaeopteryx.
+locomotion: bipedal
+paleoenvironment:
+  - marine
+diagnostic_features:
+  - Proximal part of the humerus angled at approximately 38° to the humeral
+    shaft.
+  - Facet for the attachment of m. deltopectoralis on the deltopectoral crest of
+    the humerus.
+  - Ulna with a well-defined, single, oval, concave proximal cotyle and a small
+    lateral tubercle.
+  - Slender radius, with a diameter less than 0.5 times that of the ulna.
+  - Large, crest-like biceps tubercle on the proximal radius.
+  - Manual unguals with strongly developed, palmarly and transversely expanded
+    flexor tubercles positioned close to the articular surface.
+  - Dorsal margin of manual ungual I arching higher than the proximal articular
+    surface.
+  - Dorsal margin of manual ungual II level with the proximal articular surface.
+identifiers:
+  - source: pbdb
+    id: "392820"
+  - source: wikidata
+    id: Q63859148
+  - source: gbif
+    id: "11122823"
+species:
+  - name: Alcmonavis poeschli
+    etymology: Honors Roland Pöschl, who leads the excavations at the Schaudiberg
+      and found the specimen.
+    status: disputed
+    type_species: true
+    period:
+      name:
+        - Late Jurassic
+      stage:
+        - Tithonian
+    location:
+      country: DE
+      region: DE-BY
+      locality: Old Schöpfel Quarry, Schaudiberg, Mühlheim
+      formation: Mörnsheim
+      coordinates:
+        - 48.856838
+        - 10.97406
+    type_specimen:
+      specimen_id:
+        - SNSB-BSPG 2017 I 133
+      specimen_type: holotype
+      institution: BSPG
+      material: Almost complete, partly disarticulated skeleton of the right
+        wing.
+      completeness: partial
+    erected_in: rauhut2019b
+references:
+  - id: rauhut2019b
+  - id: foth2026a
+    notes: Specimen-based phylogeny and morphometrics keep Alcmonavis distinct from
+      Archaeopteryx; source of the revised diagnosis.
+  - id: o'connor2026a
+    notes: Morphometric reassessment arguing the diagnostic characters are
+      taphonomic or ontogenetic, and that all Solnhofen avialans represent
+      Archaeopteryx.
