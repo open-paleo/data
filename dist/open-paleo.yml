@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-09-27T18:08:02.286Z
+  built_at: 2026-09-27T18:46:05.267Z
   clade_count: 188
-  genus_count: 1422
+  genus_count: 1423
   license: CC-BY-4.0
   schema_version: 1.7.0
   version: "2026.09"
@@ -16260,6 +16260,122 @@ genera:
       - Parvicursorinae
     authors: Nesbitt, S. J.; Clarke, J. A.; Turner, A. H.; Norell, M. A.
     described: 2011
+  Alcmonavis:
+    genus: Alcmonavis
+    parent: Avialae
+    placement: incertae sedis
+    dispute:
+      summary: |
+        The validity of Alcmonavis is disputed. Rauhut, Tischlinger and Foth (2019) erected it for an isolated right wing from the Mörnsheim Formation, distinguishing it from Archaeopteryx and recovering it in a more crownward position. O'Connor and Marugán-Lobón (2026) argue that its diagnostic characters are taphonomic artifacts or ontogenetic, and that all known Solnhofen avialans represent Archaeopteryx. Foth and Rauhut (2026) accept some of those objections but retain a revised diagnosis and again recover the specimen outside Archaeopteryx.
+      history:
+        - date: 2026-09-27
+          note: Placed at Avialae incertae sedis, the placement shared by both hypotheses (a specimen of Archaeopteryx, or a more crownward avialan).
+    etymology: From Alcmona, the old Celtic name of the Altmühl River, and 'avis' (bird).
+    description: Alcmonavis is a basal genus of avialan dinosaur that during the Late Jurassic lived in the area of present Germany. The only named species in the genus is Alcmonavis poeschli. Its only known fossil was originally reported as a specimen of Archaeopteryx.
+    locomotion: bipedal
+    paleoenvironment:
+      - marine
+    diagnostic_features:
+      - Proximal part of the humerus angled at approximately 38° to the humeral shaft.
+      - Facet for the attachment of m. deltopectoralis on the deltopectoral crest of the humerus.
+      - Ulna with a well-defined, single, oval, concave proximal cotyle and a small lateral tubercle.
+      - Slender radius, with a diameter less than 0.5 times that of the ulna.
+      - Large, crest-like biceps tubercle on the proximal radius.
+      - Manual unguals with strongly developed, palmarly and transversely expanded flexor tubercles positioned close to the articular surface.
+      - Dorsal margin of manual ungual I arching higher than the proximal articular surface.
+      - Dorsal margin of manual ungual II level with the proximal articular surface.
+    identifiers:
+      - source: pbdb
+        id: "392820"
+      - source: wikidata
+        id: Q63859148
+      - source: gbif
+        id: "11122823"
+    species:
+      - name: Alcmonavis poeschli
+        etymology: Honors Roland Pöschl, who leads the excavations at the Schaudiberg and found the specimen.
+        status: disputed
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Tithonian
+          from_ma: 149.2
+          to_ma: 143.1
+        location:
+          country: DE
+          region: Bavaria
+          locality: Old Schöpfel Quarry, Schaudiberg, Mühlheim
+          formation: Mörnsheim
+          coordinates:
+            - 48.856838
+            - 10.97406
+          region_code: DE-BY
+        type_specimen:
+          specimen_id:
+            - SNSB-BSPG 2017 I 133
+          specimen_type: holotype
+          institution: Bayerische Staatssammlung für Paläontologie und Geologie
+          material: Almost complete, partly disarticulated skeleton of the right wing.
+          completeness: partial
+        erected_in: rauhut2019b
+        authors: Rauhut, O. W. M.; Tischlinger, H.; Foth, C.
+        described: 2019
+    references:
+      - id: rauhut2019b
+        authors: Rauhut, O. W. M.; Tischlinger, H.; Foth, C.
+        year: 2019
+        title: A non-archaeopterygid avialan theropod from the Late Jurassic of southern Germany
+        journal: eLife
+        publisher: eLife Sciences Publications, Ltd
+        volume: "8"
+        pages: e43789
+        doi: 10.7554/elife.43789
+      - id: foth2026a
+        authors: Foth, C.; Rauhut, O. W. M.
+        year: 2026
+        title: Considerations on the taxonomy of Late Jurassic Avialae (Theropoda) from the Solnhofen Archipelago
+        journal: Fossil Record
+        publisher: Pensoft Publishers
+        volume: "29"
+        issue: "2"
+        pages: 731-758
+        doi: 10.3897/fr.29.200245
+        notes: Specimen-based phylogeny and morphometrics keep Alcmonavis distinct from Archaeopteryx; source of the revised diagnosis.
+      - id: o'connor2026a
+        authors: O'Connor, J.; Marugán-Lobón, J.
+        year: 2026
+        title: Evaluating variation in Solnhofen avialans
+        journal: Biology Letters
+        volume: "22"
+        issue: "3"
+        pages: "20250601"
+        doi: 10.1098/rsbl.2025.0601
+        notes: Morphometric reassessment arguing the diagnostic characters are taphonomic or ontogenetic, and that all Solnhofen avialans represent Archaeopteryx.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Avetheropoda
+      - Coelurosauria
+      - Maniraptora
+      - Paraves
+      - Eumaniraptora
+      - Avialae
+    authors: Rauhut, O. W. M.; Tischlinger, H.; Foth, C.
+    described: 2019
   Alcovasaurus:
     genus: Alcovasaurus
     parent: Stegosauridae
