@@ -1,20 +1,19 @@
 genus: Ostromia
-parent: Anchiornithidae
+parent: Avialae
+placement: incertae sedis
 etymology: Named in honor of John Ostrom, the influential American paleontologist who identified the holotype specimen as an Archaeopteryx
 pronunciation:
   phonetic: Oss-trom-ee-uh
-description: Ostromia is a genus of anchiornithid theropod dinosaur containing a
-  single species, Ostromia crassipes. Recovered from the Late Jurassic Painten
-  Formation of Germany, it was named by Christian Foth and Oliver Rauhut in
-  2017.
+description: Ostromia is a genus of feathered theropod dinosaur containing a
+  single species, Ostromia crassipes, based on the Haarlem specimen. Recovered
+  from the Late Jurassic Painten Formation of Germany, it was named by Christian
+  Foth and Oliver Rauhut in 2017.
 diet: carnivore
 locomotion: bipedal
 paleoenvironment:
   - marine
   - coastal
 diagnostic_features:
-  - Longitudinal furrows on both sides of all preserved manual phalanges and at
-    least metacarpal III
   - Unusually small first manual ungual relative to metacarpal I (ungual
     I:metacarpal I ratio of 0.9 vs 1.26 in Anchiornis)
   - Relative length of metacarpal III compared to metacarpal I of 2.21 vs 2.46
@@ -35,7 +34,7 @@ identifiers:
 species:
   - name: Ostromia crassipes
     etymology: "From Latin 'crassipes' meaning 'thick-footed', combining 'crassus' ('thick') and 'pes' ('foot'), derived from the original name Pterodactylus crassipes given in 1857."
-    status: valid
+    status: nomen dubium
     type_species: true
     period:
       name:
@@ -66,6 +65,12 @@ species:
       completeness: partial
 references:
   - id: foth2017a
+  - id: foth2026a
+    notes: The describing authors now classify the Haarlem specimen as Avialae
+      indet., as it lacks any indisputable diagnostic features.
+  - id: o'connor2026a
+    notes: Morphometrics cluster the Haarlem specimen with Archaeopteryx rather
+      than Anchiornis; the case for a distinct genus is called equivocal.
   - id: paul2024a
     notes: Source of the body length and mass estimates.
   - id: jones2026c

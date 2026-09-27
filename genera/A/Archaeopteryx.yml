@@ -29,10 +29,26 @@ paleoenvironment:
   - marine
   - coastal
 diagnostic_features:
-  - True petrification preserved in lithographic shale, fully consistent with a
-    bird feather
-  - Nearly complete skeleton covered with feathers, differing in several
-    respects from living birds
+  - Jugal with a longitudinal groove on the medial side of the suborbital
+    process.
+  - Infratemporal fenestra with a sharply angled incision at its anteroventral
+    margin, separating the quadratojugal and postorbital processes of the jugal.
+  - Quadratojugal process of the jugal very slender, less than half the minimum
+    height of the suborbital process.
+  - Depressed rim around the posterior margin of the trigeminal foramen in the
+    prootic.
+  - Mandibular fenestra absent.
+  - Maxilla with only eight to nine tooth positions.
+  - 10 to 12 dentary teeth.
+  - Premaxillary and anteriormost dentary teeth with a straight basal part and a
+    bulbous, strongly recurved apical part.
+  - Nine cervical and 14 dorsal vertebrae.
+  - Fewer than 25 caudal vertebrae.
+  - Pubic obturator foramen opens ventrally.
+  - Pubic apron divided along parts of the shaft.
+  - Ischium with a well-developed intermediate process posteriorly at about
+    mid-shaft.
+  - Metatarsal III with a smooth distal end.
 appearance:
   features:
     - feathered wings
@@ -64,6 +80,13 @@ synonyms:
     reason: Originally described as a separate genus for the Berlin specimen;
       subsequent review treated it as another species of Archaeopteryx (A.
       siemensii).
+  - name: Wellnhoferia
+    type: junior subjective
+    reason: Erected by Elżanowski (2001) for the Solnhofen specimen on the basis
+      of a shortened tail and a four-phalanx fourth pedal digit. Mayr et al.
+      (2007) found the specimen not convincingly distinct from the London
+      specimen, and the specimen-based phylogeny of Foth and Rauhut (2026)
+      recovers it within Archaeopteryx.
 species:
   - name: Archaeopteryx lithographica
     etymology: "Named for the lithographic limestone of the Solnhofen deposits in
@@ -103,6 +126,12 @@ species:
         reason: Senter (2007) demonstrated that the proposed diagnostic features could
           be explained by ontogenetic variation, treating it as a junior synonym
           of Archaeopteryx lithographica.
+      - name: Wellnhoferia grandis
+        type: junior subjective
+        reason: Named by Elżanowski (2001) on the Solnhofen specimen, which Mayr
+          et al. (2007) concluded had not been convincingly shown to differ from
+          the London specimen of A. lithographica. Foth and Rauhut (2026) place
+          it within Archaeopteryx but leave species-level taxonomy unresolved.
     erected_in: meyer1861a
 notable_specimens:
   - nickname: "Thermopolis specimen"
@@ -127,12 +156,13 @@ notable_specimens:
     significance: "The fourteenth specimen, described in 2025 by O'Connor and colleagues, preserving the first known tertials and other novel features. A 2026 CT study reported avian-like soft-tissue correlates including oral papillae and a mobile tongue."
     references: [o'connor2025a]
   - nickname: "Solnhofen specimen"
+    specimen_id: [BMMS 500]
     institution: BMMS
     category: largest-individual
-    significance: "The largest known specimen, missing only portions of the neck, tail, backbone, and head. Originally misidentified as Compsognathus, it has been proposed as a separate genus and species, Wellnhoferia grandis."
+    significance: "The largest known specimen, missing only portions of the neck, tail, backbone, and head. Originally misidentified as Compsognathus, it became the holotype of a separate genus and species, Wellnhoferia grandis (Elżanowski, 2001), now treated as a junior synonym of Archaeopteryx."
     discovered:
       by: "Friedrich Müller"
-    references: [elżanowski2001a]
+    references: [wellnhofer1988a, elżanowski2001a, mayr2007a, foth2026a]
   - nickname: "Munich specimen"
     specimen_id: [BSP 1999 I 50]
     institution: BSPG
@@ -161,3 +191,14 @@ references:
   - id: xu2011d
     notes: Phylogenetic analysis shifted Archaeopteryx into Deinonychosauria near anchiornithids and troodontids.
   - id: senter2007a
+  - id: wellnhofer1988a
+    notes: Original description of the Solnhofen specimen, then the largest of six known skeletons.
+  - id: mayr2007a
+    notes: Found the Solnhofen specimen, holotype of Wellnhoferia grandis, not
+      convincingly distinct from the London specimen.
+  - id: foth2026a
+    notes: Source of the revised generic diagnosis; its specimen-based phylogeny
+      recovers the Solnhofen specimen within Archaeopteryx.
+  - id: o'connor2026a
+    notes: Morphometrics of all 15 Solnhofen avialans suggest a single taxon along
+      a growth curve, referring the Haarlem specimen and Alcmonavis to Archaeopteryx.
