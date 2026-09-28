@@ -72,6 +72,7 @@ export type AppearanceFeatures =
   | "neck spines"
   | "cervical half rings"
   | "dorsal sail"
+  | "tall neural spines"
   | "dorsal spines"
   | "midline spike row"
   | "dermal plates"

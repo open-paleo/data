@@ -359,6 +359,7 @@ class AppearanceFeatures(Enum):
     neck_spines = 'neck spines'
     cervical_half_rings = 'cervical half rings'
     dorsal_sail = 'dorsal sail'
+    tall_neural_spines = 'tall neural spines'
     dorsal_spines = 'dorsal spines'
     midline_spike_row = 'midline spike row'
     dermal_plates = 'dermal plates'
