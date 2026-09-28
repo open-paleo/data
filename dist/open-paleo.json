@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-09-28T18:11:41.540Z",
+    "built_at": "2026-09-28T20:06:19.421Z",
     "clade_count": 188,
     "genus_count": 1423,
     "license": "CC-BY-4.0",
@@ -213696,13 +213696,18 @@
     },
     "Thecocoelurus": {
       "genus": "Thecocoelurus",
-      "parent": "Ornithomimosauria",
+      "parent": "Coelurosauria",
+      "placement": "incertae sedis",
       "dispute": {
-        "summary": "Thecocoelurus is a nomen dubium of contested affinity, based on a partial cervical vertebra from the Early Cretaceous of England. It has been referred to Ornithomimosauria (Allain et al., 2014), but the holotype was earlier reidentified as an oviraptorosaur and it is widely treated as a nomen dubium (Naish and others, 2001). It is placed conservatively at Ornithomimosauria following the most recent assessment.\n",
+        "summary": "Thecocoelurus is based on half of a cervical vertebra that lacks diagnostic characters, and its affinity is contested. Naish and Martill (2002, 2007) found it most similar to caenagnathid oviraptorosaurs. Allain et al. (2014) referred the holotype to Ornithomimosauria on a pneumatic recess shared with the Angeac-Charente theropod, a character they note also occurs in modified form in the noasaurid Masiakasaurus. Cau and Paterna (2025) have since recovered the Angeac-Charente theropod within Abelisauroidea.\n",
         "history": [
           {
             "date": "2026-06-30",
             "note": "Retained at Ornithomimosauria following Allain et al. (2014); the oviraptorosaur reidentification and its status as a nomen dubium are recorded as unresolved.\n"
+          },
+          {
+            "date": "2026-09-28",
+            "note": "Moved to Coelurosauria incertae sedis, the nearest node spanning the oviraptorosaur (Naish and Martill, 2002, 2007) and ornithomimosaur (Allain et al., 2014) referrals; status set to nomen dubium, the verdict of all three.\n"
           }
         ]
       },
@@ -213710,7 +213715,7 @@
         "phonetic": "THEE-ko-see-LOO-rus"
       },
       "etymology": "A contraction of the genus names Thecospondylus and Coelurus, translating to 'sheathed hollow form', reflecting the specimen's dual taxonomic history under those two genera",
-      "description": "Thecocoelurus is a genus of theropod dinosaur from the early Cretaceous period of England. Its type specimen was discovered in strata from the Wessex Formation on the Isle of Wight by the Reverend William Fox, and after his death, it, alongside the rest of his collection, became the property of the British Museum of Natural History. The specimen was named in 1888 by Harry Govier Seeley, who assigned it to the genus Thecospondylus . In 1901, it was reassigned by Baron Franz Nopcsa to Coelurus. In 1923, the specimen was removed from either genus by Friedrich von Huene, who assigned it to a genus of its own. Thecocoelurus currently consists of one species, T. daviesi. The validity of the genus has been questioned, with a 2001 publication finding it to be a nomen dubium, although this treatment has not been maintained.",
+      "description": "Thecocoelurus is a genus of theropod dinosaur from the early Cretaceous period of England. Its type specimen was discovered in strata from the Wessex Formation on the Isle of Wight by the Reverend William Fox, and after his death, it, alongside the rest of his collection, became the property of the British Museum of Natural History. The specimen was named in 1888 by Harry Govier Seeley, who assigned it to the genus Thecospondylus . In 1901, it was reassigned by Baron Franz Nopcsa to Coelurus. In 1923, the specimen was removed from either genus by Friedrich von Huene, who assigned it to a genus of its own. Thecocoelurus currently consists of one species, T. daviesi. The validity of the genus has been questioned, with a 2001 publication finding it to be a nomen dubium.",
       "diet": "herbivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -213738,7 +213743,7 @@
         {
           "name": "Thecocoelurus daviesi",
           "etymology": "Named in honor of William Davies (1814-1891), a paleontologist at the British Museum (Natural History).",
-          "status": "valid",
+          "status": "nomen dubium",
           "type_species": true,
           "period": {
             "name": [
@@ -213791,7 +213796,7 @@
           "issue": "2",
           "pages": "127-135",
           "doi": "10.1344/105.000002083",
-          "notes": "Links isolated Wealden bones to the Angeac ornithomimosaur but treats them as nomina dubia"
+          "notes": "Treats Thecocoelurus as a nomen dubium but refers the holotype to Ornithomimosauria on comparison with the Angeac-Charente theropod."
         },
         {
           "id": "naish2001a",
@@ -213802,6 +213807,56 @@
           "publisher": "The Palaeontological Association",
           "pages": "296-300",
           "notes": "Regarded Thecocoelurus as a nomen dubium given its fragmentary remains."
+        },
+        {
+          "id": "naish2002b",
+          "authors": "Naish, D.; Martill, D. M.",
+          "year": 2002,
+          "title": "A reappraisal of Thecocoelurus daviesi (Dinosauria: Theropoda) from the Early Cretaceous of the Isle of Wight",
+          "journal": "Proceedings of the Geologists' Association",
+          "publisher": "Elsevier BV",
+          "volume": "113",
+          "issue": "1",
+          "pages": "23-30",
+          "doi": "10.1016/S0016-7878(02)80003-7",
+          "notes": "Finds the holotype undiagnostic, making the name a nomen dubium, and most similar to the cervical vertebrae of caenagnathid oviraptorosaurs."
+        },
+        {
+          "id": "naish2007a",
+          "authors": "Naish, D.; Martill, D. M.",
+          "year": 2007,
+          "title": "Dinosaurs of Great Britain and the role of the Geological Society of London in their discovery: basal Dinosauria and Saurischia",
+          "journal": "Journal of the Geological Society",
+          "volume": "164",
+          "issue": "3",
+          "pages": "493-510",
+          "doi": "10.1144/0016-76492006-032",
+          "notes": "Holds that, lacking autapomorphies, T. daviesi should not be regarded as a valid taxon, though it indicates caenagnathid-like oviraptorosaurs in the English Lower Cretaceous."
+        },
+        {
+          "id": "allain2022a",
+          "authors": "Allain, R.; Vullo, R.; Rozada, L.; Anquetin, J.; Bourgeais, R.; Goedert, J.; Lasseron, M.; Martin, J. E.; Pérez-García, A.; Peyre de Fabrègues, C.; Royo-Torres, R.; Augier, D.; Bailly, G.; Cazes, L.; Despres, Y.; Gailliègue, A.; Gomez, B.; Goussard, F.; Lenglet, T.; Vacant, R.; Mazan; Tournepiche, J.-F.",
+          "year": 2022,
+          "title": "Vertebrate paleobiodiversity of the Early Cretaceous (Berriasian) Angeac-Charente Lagerstätte (southwestern France): implications for continental faunal turnover at the J/K boundary",
+          "journal": "Geodiversitas",
+          "publisher": "Muséum national d'Histoire naturelle",
+          "volume": "44",
+          "issue": "25",
+          "pages": "683-752",
+          "doi": "10.5252/geodiversitas2022v44a25",
+          "notes": "Retains the Angeac-Charente theropod in Ornithomimosauria on an anatomical survey, without a phylogenetic analysis."
+        },
+        {
+          "id": "cau2025a",
+          "authors": "Cau, A.; Paterna, A.",
+          "year": 2025,
+          "title": "Beyond the Stromer's Riddle: the impact of lumping and splitting hypotheses on the systematics of the giant predatory dinosaurs from northern Africa",
+          "journal": "Italian Journal of Geosciences",
+          "volume": "144",
+          "issue": "2",
+          "pages": "162-185",
+          "doi": "10.3301/IJG.2025.10",
+          "notes": "Recovers the Angeac-Charente theropod, the comparison material for the ornithomimosaur referral, within Abelisauroidea."
         }
       ],
       "taxonomy": [
@@ -213820,10 +213875,7 @@
         "Averostra",
         "Tetanurae",
         "Avetheropoda",
-        "Coelurosauria",
-        "Maniraptoriformes",
-        "Arctometatarsalia",
-        "Ornithomimosauria"
+        "Coelurosauria"
       ],
       "authors": "Huene, F. V.",
       "described": 1923
@@ -225442,13 +225494,18 @@
     },
     "Valdoraptor": {
       "genus": "Valdoraptor",
-      "parent": "Ornithomimosauria",
+      "parent": "Tetanurae",
+      "placement": "incertae sedis",
       "dispute": {
-        "summary": "Valdoraptor is a nomen dubium based on a partial metatarsus from the Early Cretaceous of England, and its affinity is contested. It is most often referred to Ornithomimosauria (Allain et al., 2014), where it would rank among the oldest known members of the clade, but some workers favor a noasaurid ceratosaur affinity, and its diagnostic characters are regarded as homoplastic. It is placed conservatively at Ornithomimosauria.\n",
+        "summary": "Valdoraptor is based on a partial metatarsus, and its affinity is contested. Naish and Martill (2007) regarded the metatarsus as diagnostic and discussed it among possible Wealden allosauroids. Allain et al. (2014) found its diagnostic characters homoplastic, including a compressed metatarsal II also seen in noasaurids, and treated it as a nomen dubium while referring it to Ornithomimosauria on comparison with the Angeac-Charente theropod. Cau and Paterna (2025) have since recovered that theropod within Abelisauroidea.\n",
         "history": [
           {
             "date": "2026-06-30",
             "note": "Retained at Ornithomimosauria following Allain et al. (2014); its status as a nomen dubium and the alternative noasaurid affinity are recorded as unresolved.\n"
+          },
+          {
+            "date": "2026-09-28",
+            "note": "Moved to Tetanurae incertae sedis, the nearest node spanning the allosauroid (Naish and Martill, 2007) and ornithomimosaur (Allain et al., 2014) referrals; status set to nomen dubium following Allain et al. (2014).\n"
           }
         ]
       },
@@ -225456,7 +225513,7 @@
       "pronunciation": {
         "phonetic": "VALD-o-RAP-tor"
       },
-      "description": "Valdoraptor is a genus of ornithomimosaurian theropod dinosaur from the Early Cretaceous of England. It is known only from bones of the feet. The holotype, BMNH R2559 (incorrectly given by Owen as BMNH R2556), was found near Cuckfield in layers of the Grinstead Clay Formation dating from the late Valanginian. The specimen is damaged, lacking parts of the upper and lower ends. It has a conserved length of 21.5 centimeters (8.5 in) and an estimated total length of 24 centimeters (9.4 in). This genus is paleontologically significant for being the first ornithomimosaur specimen known from England and represents the earliest record of ornithomimosaurs.\n",
+      "description": "Valdoraptor is a genus of theropod dinosaur from the Early Cretaceous of England. It is known only from bones of the feet. The holotype, BMNH R2559 (incorrectly given by Owen as BMNH R2556), was found near Cuckfield in layers of the Grinstead Clay Formation dating from the late Valanginian. The specimen is damaged, lacking parts of the upper and lower ends. It has a conserved length of 21.5 centimeters (8.5 in) and an estimated total length of 24 centimeters (9.4 in). If an ornithomimosaur, it would be the first known from England and the earliest record of the group.\n",
       "diet": "herbivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -225488,7 +225545,7 @@
         {
           "name": "Valdoraptor oweni",
           "etymology": "Named in honor of Sir Richard Owen, who first described the type metatarsus material (as belonging to Hylaeosaurus sp.).",
-          "status": "valid",
+          "status": "nomen dubium",
           "type_species": true,
           "period": {
             "name": [
@@ -225573,7 +225630,7 @@
           "issue": "3",
           "pages": "493-510",
           "doi": "10.1144/0016-76492006-032",
-          "notes": "Identifies two autapomorphies of metatarsal II that establish Valdoraptor oweni as a valid taxon distinct from Neovenator and Eotyrannus, placing it as Tetanurae indet."
+          "notes": "Calls the metatarsus, with a compressed, dorsolaterally ridged metatarsal II, diagnostic, and lists Valdoraptor among possible Wealden allosauroids."
         },
         {
           "id": "allain2014a",
@@ -225585,7 +225642,7 @@
           "issue": "2",
           "pages": "127-135",
           "doi": "10.1344/105.000002083",
-          "notes": "Refers Valdoraptor to Ornithomimosauria as among the oldest known members of the clade"
+          "notes": "Finds the diagnostic characters homoplastic and treats Valdoraptor as a nomen dubium, but refers the holotype to Ornithomimosauria on comparison with Angeac-Charente metatarsals."
         },
         {
           "id": "huene1923a",
@@ -225597,6 +225654,31 @@
           "pages": "449-458",
           "doi": "10.1130/gsab-34-449",
           "notes": "Reassigned Megalosaurus oweni to Altispinax."
+        },
+        {
+          "id": "allain2022a",
+          "authors": "Allain, R.; Vullo, R.; Rozada, L.; Anquetin, J.; Bourgeais, R.; Goedert, J.; Lasseron, M.; Martin, J. E.; Pérez-García, A.; Peyre de Fabrègues, C.; Royo-Torres, R.; Augier, D.; Bailly, G.; Cazes, L.; Despres, Y.; Gailliègue, A.; Gomez, B.; Goussard, F.; Lenglet, T.; Vacant, R.; Mazan; Tournepiche, J.-F.",
+          "year": 2022,
+          "title": "Vertebrate paleobiodiversity of the Early Cretaceous (Berriasian) Angeac-Charente Lagerstätte (southwestern France): implications for continental faunal turnover at the J/K boundary",
+          "journal": "Geodiversitas",
+          "publisher": "Muséum national d'Histoire naturelle",
+          "volume": "44",
+          "issue": "25",
+          "pages": "683-752",
+          "doi": "10.5252/geodiversitas2022v44a25",
+          "notes": "Retains the Angeac-Charente theropod in Ornithomimosauria on an anatomical survey, without a phylogenetic analysis."
+        },
+        {
+          "id": "cau2025a",
+          "authors": "Cau, A.; Paterna, A.",
+          "year": 2025,
+          "title": "Beyond the Stromer's Riddle: the impact of lumping and splitting hypotheses on the systematics of the giant predatory dinosaurs from northern Africa",
+          "journal": "Italian Journal of Geosciences",
+          "volume": "144",
+          "issue": "2",
+          "pages": "162-185",
+          "doi": "10.3301/IJG.2025.10",
+          "notes": "Recovers the Angeac-Charente theropod, the comparison material for the ornithomimosaur referral, within Abelisauroidea."
         }
       ],
       "taxonomy": [
@@ -225613,12 +225695,7 @@
         "Theropoda",
         "Neotheropoda",
         "Averostra",
-        "Tetanurae",
-        "Avetheropoda",
-        "Coelurosauria",
-        "Maniraptoriformes",
-        "Arctometatarsalia",
-        "Ornithomimosauria"
+        "Tetanurae"
       ],
       "authors": "Olshevsky, G.",
       "described": 1991
