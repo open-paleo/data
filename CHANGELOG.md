@@ -34,6 +34,10 @@ Initial public release, establishing the v1 output schema.
   for keratinous structures preserved as soft tissue that `tail spikes` (bony
   tail weapons) and `dorsal spines` could not express. Output schema 1.7.0 →
   1.8.0.
+- `tall neural spines` in the `appearance_features` vocabulary, and
+  `dorsal spines` narrowed to bony dermal spines along the back. Four
+  sauropod and theropod records whose tall vertebral spines had been tagged
+  `dorsal spines` now use the new tag. Output schema 1.8.0 → 1.9.0.
 - `period.resolution`, distinguishing an age determined for a taxon from one
   that is simply its unit's. `resolution: unit` states that `stage` carries
   the containing lithostratigraphic unit's range rather than a
