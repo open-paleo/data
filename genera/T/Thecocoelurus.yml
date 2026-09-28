@@ -1,19 +1,27 @@
 genus: Thecocoelurus
-parent: Ornithomimosauria
+parent: Coelurosauria
+placement: incertae sedis
 dispute:
   summary: >
-    Thecocoelurus is a nomen dubium of contested affinity, based on a partial
-    cervical vertebra from the Early Cretaceous of England. It has been referred
-    to Ornithomimosauria (Allain et al., 2014), but the holotype was earlier
-    reidentified as an oviraptorosaur and it is widely treated as a nomen dubium
-    (Naish and others, 2001). It is placed conservatively at Ornithomimosauria
-    following the most recent assessment.
+    Thecocoelurus is based on half of a cervical vertebra that lacks diagnostic
+    characters, and its affinity is contested. Naish and Martill (2002, 2007)
+    found it most similar to caenagnathid oviraptorosaurs. Allain et al. (2014)
+    referred the holotype to Ornithomimosauria on a pneumatic recess shared with
+    the Angeac-Charente theropod, a character they note also occurs in modified
+    form in the noasaurid Masiakasaurus. Cau and Paterna (2025) have since
+    recovered the Angeac-Charente theropod within Abelisauroidea.
   history:
     - date: "2026-06-30"
       note: >
         Retained at Ornithomimosauria following Allain et al. (2014); the
         oviraptorosaur reidentification and its status as a nomen dubium are
         recorded as unresolved.
+    - date: "2026-09-28"
+      note: >
+        Moved to Coelurosauria incertae sedis, the nearest node spanning the
+        oviraptorosaur (Naish and Martill, 2002, 2007) and ornithomimosaur
+        (Allain et al., 2014) referrals; status set to nomen dubium, the verdict
+        of all three.
 pronunciation:
   phonetic: THEE-ko-see-LOO-rus
 etymology: "A contraction of the genus names Thecospondylus and Coelurus,
@@ -29,7 +37,7 @@ description: Thecocoelurus is a genus of theropod dinosaur from the early
   removed from either genus by Friedrich von Huene, who assigned it to a genus
   of its own. Thecocoelurus currently consists of one species, T. daviesi. The
   validity of the genus has been questioned, with a 2001 publication finding it
-  to be a nomen dubium, although this treatment has not been maintained.
+  to be a nomen dubium.
 diet: herbivore
 locomotion: bipedal
 paleoenvironment:
@@ -48,7 +56,7 @@ species:
   - name: Thecocoelurus daviesi
     etymology: "Named in honor of William Davies (1814-1891), a paleontologist at
       the British Museum (Natural History)."
-    status: valid
+    status: nomen dubium
     type_species: true
     period:
       name:
@@ -69,6 +77,20 @@ species:
 references:
   - id: huene1923a
   - id: allain2014a
-    notes: Links isolated Wealden bones to the Angeac ornithomimosaur but treats them as nomina dubia
+    notes: Treats Thecocoelurus as a nomen dubium but refers the holotype to
+      Ornithomimosauria on comparison with the Angeac-Charente theropod.
   - id: naish2001a
     notes: Regarded Thecocoelurus as a nomen dubium given its fragmentary remains.
+  - id: naish2002b
+    notes: Finds the holotype undiagnostic, making the name a nomen dubium, and
+      most similar to the cervical vertebrae of caenagnathid oviraptorosaurs.
+  - id: naish2007a
+    notes: Holds that, lacking autapomorphies, T. daviesi should not be regarded as
+      a valid taxon, though it indicates caenagnathid-like oviraptorosaurs in
+      the English Lower Cretaceous.
+  - id: allain2022a
+    notes: Retains the Angeac-Charente theropod in Ornithomimosauria on an
+      anatomical survey, without a phylogenetic analysis.
+  - id: cau2025a
+    notes: Recovers the Angeac-Charente theropod, the comparison material for the
+      ornithomimosaur referral, within Abelisauroidea.

@@ -1,35 +1,42 @@
 genus: Valdoraptor
-parent: Ornithomimosauria
+parent: Tetanurae
+placement: incertae sedis
 dispute:
   summary: >
-    Valdoraptor is a nomen dubium based on a partial metatarsus from the Early
-    Cretaceous of England, and its affinity is contested. It is most often
-    referred to Ornithomimosauria (Allain et al., 2014), where it would rank among
-    the oldest known members of the clade, but some workers favor a noasaurid
-    ceratosaur affinity, and its diagnostic characters are regarded as homoplastic.
-    It is placed conservatively at Ornithomimosauria.
+    Valdoraptor is based on a partial metatarsus, and its affinity is contested.
+    Naish and Martill (2007) regarded the metatarsus as diagnostic and discussed
+    it among possible Wealden allosauroids. Allain et al. (2014) found its
+    diagnostic characters homoplastic, including a compressed metatarsal II also
+    seen in noasaurids, and treated it as a nomen dubium while referring it to
+    Ornithomimosauria on comparison with the Angeac-Charente theropod. Cau and
+    Paterna (2025) have since recovered that theropod within Abelisauroidea.
   history:
     - date: "2026-06-30"
       note: >
         Retained at Ornithomimosauria following Allain et al. (2014); its status as
         a nomen dubium and the alternative noasaurid affinity are recorded as
         unresolved.
+    - date: "2026-09-28"
+      note: >
+        Moved to Tetanurae incertae sedis, the nearest node spanning the
+        allosauroid (Naish and Martill, 2007) and ornithomimosaur (Allain et
+        al., 2014) referrals; status set to nomen dubium following Allain et al.
+        (2014).
 etymology: From Latin 'Valdus' (Wealden, referring to the Wealden Group) and
   'raptor' (plunderer); meaning 'Wealden plunderer'.
 pronunciation:
   phonetic: VALD-o-RAP-tor
 description: >
-  Valdoraptor is a genus of ornithomimosaurian theropod dinosaur
+  Valdoraptor is a genus of theropod dinosaur
   from the Early Cretaceous of England. It is known only from bones
   of the feet. The holotype, BMNH R2559 (incorrectly given by Owen
   as BMNH R2556), was found near Cuckfield in layers of the
   Grinstead Clay Formation dating from the late Valanginian.
   The specimen is damaged, lacking parts of the upper and lower
   ends. It has a conserved length of 21.5 centimeters (8.5 in) and
-  an estimated total length of 24 centimeters (9.4 in). This genus
-  is paleontologically significant for being the first
-  ornithomimosaur specimen known from England and represents the
-  earliest record of ornithomimosaurs.
+  an estimated total length of 24 centimeters (9.4 in). If an
+  ornithomimosaur, it would be the first known from England and the
+  earliest record of the group.
 diet: herbivore
 locomotion: bipedal
 paleoenvironment:
@@ -51,7 +58,7 @@ species:
   - name: Valdoraptor oweni
     etymology: Named in honor of Sir Richard Owen, who first described the
       type metatarsus material (as belonging to Hylaeosaurus sp.).
-    status: valid
+    status: nomen dubium
     type_species: true
     period:
       name:
@@ -99,10 +106,18 @@ references:
       removing it from both Megalosaurus and von Huene's Altispinax; tentatively
       places it in Allosauridae pending further study.
   - id: naish2007a
-    notes: Identifies two autapomorphies of metatarsal II that establish
-      Valdoraptor oweni as a valid taxon distinct from Neovenator and
-      Eotyrannus, placing it as Tetanurae indet.
+    notes: Calls the metatarsus, with a compressed, dorsolaterally ridged
+      metatarsal II, diagnostic, and lists Valdoraptor among possible Wealden
+      allosauroids.
   - id: allain2014a
-    notes: Refers Valdoraptor to Ornithomimosauria as among the oldest known members of the clade
+    notes: Finds the diagnostic characters homoplastic and treats Valdoraptor as a
+      nomen dubium, but refers the holotype to Ornithomimosauria on comparison
+      with Angeac-Charente metatarsals.
   - id: huene1923a
     notes: Reassigned Megalosaurus oweni to Altispinax.
+  - id: allain2022a
+    notes: Retains the Angeac-Charente theropod in Ornithomimosauria on an
+      anatomical survey, without a phylogenetic analysis.
+  - id: cau2025a
+    notes: Recovers the Angeac-Charente theropod, the comparison material for the
+      ornithomimosaur referral, within Abelisauroidea.
