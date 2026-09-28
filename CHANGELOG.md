@@ -30,6 +30,10 @@ Initial public release, establishing the v1 output schema.
   rejects a stage outside it.
 - `semiarid` and `estuarine` in the `paleoenvironment` vocabulary. Output
   schema 1.6.0 → 1.7.0.
+- `midline spike row` and `hooves` in the `appearance_features` vocabulary,
+  for keratinous structures preserved as soft tissue that `tail spikes` (bony
+  tail weapons) and `dorsal spines` could not express. Output schema 1.7.0 →
+  1.8.0.
 - `period.resolution`, distinguishing an age determined for a taxon from one
   that is simply its unit's. `resolution: unit` states that `stage` carries
   the containing lithostratigraphic unit's range rather than a
