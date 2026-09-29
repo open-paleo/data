@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-09-29T07:00:37.919Z
+  built_at: 2026-09-29T18:01:38.541Z
   clade_count: 188
-  genus_count: 1423
+  genus_count: 1424
   license: CC-BY-4.0
   schema_version: 1.9.0
   version: "2026.09"
@@ -121568,6 +121568,94 @@ genera:
       - Rebbachisauridae
     authors: Apesteguía, S.
     described: 2007
+  Norellraptor:
+    genus: Norellraptor
+    parent: Microraptorinae
+    etymology: Named in honor of the American paleontologist Mark Allen Norell, with Latin 'raptor' (robber), a frequent suffix in dromaeosaurid names.
+    description: Norellraptor is an extinct monotypic genus of dromaeosaurid that lived in East Asia during the Early Cretaceous epoch.
+    locomotion: bipedal
+    diagnostic_features:
+      - Premaxilla with the length of the prenarial part half the depth of the subnarial body.
+      - Large promaxillary fenestra occupying the whole rostral third of the antorbital fossa, with its long axis inclined 35 degrees caudodorsally.
+      - Pila promaxillaris narrower than the pila interfenestralis, both narrower than half the diameter of the maxillary fenestra.
+      - Pubis gently curved caudoventrally, with a small foot whose posterior projection is less than the diameter of the pubic shaft.
+    appearance:
+      features:
+        - hindlimb feathers
+        - feathered tail
+      integument: feathered
+      evidence: direct
+    species:
+      - name: Norellraptor barsboldi
+        etymology: Named in honor of the Mongolian paleontologist Rinchen Barsbold.
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Aptian
+            - Albian
+          resolution: unit
+          from_ma: 121.4
+          to_ma: 100.5
+        location:
+          country: CN
+          locality: Lamadong Town, Jianchang County
+          region: Liaoning
+          formation: Jiufotang
+          notes: Found by a local farmer and donated to the museum of Hebei GEO University in 2023; the describing authors report checking the original fossil locality.
+          region_code: CN-LN
+        size:
+          length_m:
+            min: 0.57
+            max: 0.57
+        type_specimen:
+          specimen_id:
+            - 130108-MHGU-F4281
+          specimen_type: holotype
+          institution: Geoscience Museum, Shijiazhuang University of Economics
+          material: Complete, largely articulated skeleton including the skull, vertebral column, pectoral girdle, forelimbs, pelvis and hindlimbs, with partial plumage imprints.
+          completeness: complete
+        erected_in: wang2026b
+        authors: Wang, X.; Ji, Y.; Cau, A.; Kundrát, M.; Liu, Y.; Wang, Y.; Ji, Q.
+        described: 2026
+    references:
+      - id: wang2026b
+        authors: Wang, X.; Ji, Y.; Cau, A.; Kundrát, M.; Liu, Y.; Wang, Y.; Ji, Q.
+        year: 2026
+        title: Independent assembly of the flight apparatus in a non-avian dinosaur clade
+        journal: Nature Communications
+        publisher: Springer Science and Business Media LLC
+        volume: "17"
+        issue: "1"
+        pages: "10074"
+        doi: 10.1038/s41467-026-77804-6
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Avetheropoda
+      - Coelurosauria
+      - Maniraptora
+      - Paraves
+      - Eumaniraptora
+      - Deinonychosauria
+      - Dromaeosauridae
+      - Microraptorinae
+    authors: Wang, X.; Ji, Y.; Cau, A.; Kundrát, M.; Liu, Y.; Wang, Y.; Ji, Q.
+    described: 2026
   Normanniasaurus:
     genus: Normanniasaurus
     parent: Titanosauria
