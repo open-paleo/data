@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-09-29T00:32:27.413Z
+  built_at: 2026-09-29T03:01:24.108Z
   clade_count: 188
   genus_count: 1423
   license: CC-BY-4.0
@@ -185366,6 +185366,7 @@ genera:
           locality: Qiupa Town
           region: Henan
           formation: Qiupa
+          notes: Wei et al. (2022) give Yankan Village, Qiupa Town, for a referred subadult, but map the holotype's site separately.
           region_code: CN-HA
         size:
           length_m:
@@ -185388,6 +185389,14 @@ genera:
           notes: HGM 41HIII-0108 to -0111 are referred specimens (additional juvenile skulls and postcrania from nearby quarries), not part of the holotype.
         authors: Lü, J.; Currie, P. J.; Xu, L.; Zhang, X.; Pu, H.; Jia, S.
         described: 2013
+    notable_specimens:
+      - specimen_id:
+          - HGM 41HIII-0706
+        institution: Henan Geological Museum
+        category: ontogeny
+        significance: The first non-hatchling specimen of Yulong mini, a subadult about five or six years old by radius histology, preserving dorsal and caudal vertebrae, partial pectoral girdles and forelimbs; from Yankan Village, Qiupa Town.
+        references:
+          - wei2022a
     references:
       - id: lü2013d
         authors: Lü, J.; Currie, P. J.; Xu, L.; Zhang, X.; Pu, H.; Jia, S.
@@ -185406,6 +185415,16 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
         notes: Source of the body length, mass, and hip height estimates, and the appearance features.
+      - id: wei2022a
+        authors: Wei, X.; Kundrát, M.; Xu, L.; Ma, W.; Wu, Y.; Chang, H.; Zhang, J.; Zhou, X.
+        year: 2022
+        title: "A new subadult specimen of oviraptorid Yulong mini (Theropoda: Oviraptorosauria) from the Upper Cretaceous Qiupa Formation of Luanchuan, central China"
+        journal: Cretaceous Research
+        publisher: Elsevier BV
+        volume: "138"
+        pages: "105261"
+        doi: 10.1016/j.cretres.2022.105261
+        notes: Describes the subadult HGM 41HIII-0706, the first non-hatchling specimen, with a revised diagnosis and bone histology.
     taxonomy:
       - Life
       - Animalia
