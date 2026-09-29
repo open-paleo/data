@@ -49,6 +49,8 @@ species:
       locality: Qiupa Town
       region: CN-HA
       formation: Qiupa
+      notes: Wei et al. (2022) give Yankan Village, Qiupa Town, for a referred
+        subadult, but map the holotype's site separately.
     size:
       length_m:
         min: 0.5
@@ -69,8 +71,20 @@ species:
       completeness: partial
       notes: HGM 41HIII-0108 to -0111 are referred specimens (additional juvenile
         skulls and postcrania from nearby quarries), not part of the holotype.
+notable_specimens:
+  - specimen_id: [HGM 41HIII-0706]
+    institution: HGM
+    category: ontogeny
+    significance: The first non-hatchling specimen of Yulong mini, a subadult about
+      five or six years old by radius histology, preserving dorsal and caudal
+      vertebrae, partial pectoral girdles and forelimbs; from Yankan Village,
+      Qiupa Town.
+    references: [wei2022a]
 references:
   - id: lü2013d
   - id: jones2026c
     notes: Source of the body length, mass, and hip height estimates, and the
       appearance features.
+  - id: wei2022a
+    notes: Describes the subadult HGM 41HIII-0706, the first non-hatchling
+      specimen, with a revised diagnosis and bone histology.
