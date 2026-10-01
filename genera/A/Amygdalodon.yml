@@ -22,9 +22,9 @@ etymology: "From Greek 'amygdale' meaning 'almond' and 'odon' meaning 'tooth',
   meaning 'almond tooth', referring to the almond-shaped teeth."
 description: Amygdalodon is an extinct genus of basal sauropod from the Early
   Jurassic of Argentina. The type species is Amygdalodon patagonicus. Fossils of
-  Amygdalodon have been found in the Toarcian-aged Cerro Carnerero Formation
-  (about 180-172 million years ago). Very little is known about it, but it is
-  one of the few Jurassic dinosaurs from South America found thus far.
+  Amygdalodon have been found in the Cerro Carnerero Member of the Lonco Trapial
+  Formation. Very little is known about it, but it is one of the few Jurassic
+  dinosaurs from South America found thus far.
 diet: herbivore
 locomotion: quadrupedal
 paleoenvironment:
@@ -47,19 +47,26 @@ identifiers:
 species:
   - name: Amygdalodon patagonicus
     etymology: "Named for Patagonia, the region of Argentina where the fossils were
-      discovered in the Cerro Carnerero Formation."
+      discovered in the Cerro Carnerero Member."
     status: valid
     type_species: true
     period:
       name:
         - Early Jurassic
       stage:
+        - Pliensbachian
         - Toarcian
     location:
       country: AR
       locality: Eastern slope of the Pampa de Agnía range
       region: AR-U
-      formation: Cerro Carnerero
+      formation: Lonco Trapial
+      member: Cerro Carnerero
+      notes: >
+        Described from the "Cerro Carnerero Formation", which Nullo and
+        Proserpio (1975) made a member of the Lonco Trapial Formation. Pol and
+        colleagues (2022) conclude it "was deposited at some point during the
+        Pliensbachian or the early Toarcian".
     size:
       length_m:
         min: 15.0
@@ -83,3 +90,5 @@ references:
     notes: Recovered Amygdalodon near the base of Sauropoda in a polytomy with Gongxianosaurus outside Eusauropoda
   - id: jones2026b
     notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+  - id: nullo1975a
+    notes: Reduces the Cerro Carnerero Formation to a member of the Lonco Trapial Formation.
