@@ -1,12 +1,12 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-09-30T23:03:54.462Z",
+    "built_at": "2026-10-01T23:40:57.257Z",
     "clade_count": 188,
     "genus_count": 1424,
     "license": "CC-BY-4.0",
     "schema_version": "1.9.0",
-    "version": "2026.09"
+    "version": "2026.10"
   },
   "tree": {
     "Life": {
@@ -24095,7 +24095,7 @@
         "ipa": "/əmɪɡˈdælədɒn/"
       },
       "etymology": "From Greek 'amygdale' meaning 'almond' and 'odon' meaning 'tooth', meaning 'almond tooth', referring to the almond-shaped teeth.",
-      "description": "Amygdalodon is an extinct genus of basal sauropod from the Early Jurassic of Argentina. The type species is Amygdalodon patagonicus. Fossils of Amygdalodon have been found in the Toarcian-aged Cerro Carnerero Formation (about 180-172 million years ago). Very little is known about it, but it is one of the few Jurassic dinosaurs from South America found thus far.",
+      "description": "Amygdalodon is an extinct genus of basal sauropod from the Early Jurassic of Argentina. The type species is Amygdalodon patagonicus. Fossils of Amygdalodon have been found in the Cerro Carnerero Member of the Lonco Trapial Formation. Very little is known about it, but it is one of the few Jurassic dinosaurs from South America found thus far.",
       "diet": "herbivore",
       "locomotion": "quadrupedal",
       "paleoenvironment": [
@@ -24126,7 +24126,7 @@
       "species": [
         {
           "name": "Amygdalodon patagonicus",
-          "etymology": "Named for Patagonia, the region of Argentina where the fossils were discovered in the Cerro Carnerero Formation.",
+          "etymology": "Named for Patagonia, the region of Argentina where the fossils were discovered in the Cerro Carnerero Member.",
           "status": "valid",
           "type_species": true,
           "period": {
@@ -24134,16 +24134,19 @@
               "Early Jurassic"
             ],
             "stage": [
+              "Pliensbachian",
               "Toarcian"
             ],
-            "from_ma": 184.2,
+            "from_ma": 192.9,
             "to_ma": 174.7
           },
           "location": {
             "country": "AR",
             "locality": "Eastern slope of the Pampa de Agnía range",
             "region": "Chubut",
-            "formation": "Cerro Carnerero",
+            "formation": "Lonco Trapial",
+            "member": "Cerro Carnerero",
+            "notes": "Described from the \"Cerro Carnerero Formation\", which Nullo and Proserpio (1975) made a member of the Lonco Trapial Formation. Pol and colleagues (2022) conclude it \"was deposited at some point during the Pliensbachian or the early Toarcian\".\n",
             "region_code": "AR-U"
           },
           "size": {
@@ -24212,6 +24215,17 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25023-6",
           "notes": "Placement and assessment in the Princeton Encyclopedia of Dinosaurs."
+        },
+        {
+          "id": "nullo1975a",
+          "authors": "Nullo, F.; Proserpio, C.",
+          "year": 1975,
+          "title": "La Formación Taquetrén en Cañadón del Zaino (Chubut) y sus relaciones estratigráficas en el ámbito de la Patagonia, de acuerdo a la flora, República Argentina [The Taquetrén Formation at Cañadón del Zaino (Chubut) and its stratigraphic relationships within Patagonia, according to the flora, Argentina]",
+          "journal": "Revista de la Asociación Geológica Argentina",
+          "volume": "30",
+          "issue": "2",
+          "pages": "133-150",
+          "notes": "Reduces the Cerro Carnerero Formation to a member of the Lonco Trapial Formation."
         }
       ],
       "taxonomy": [
@@ -27438,11 +27452,12 @@
             "locality": "Welbedacht (611)/Edelweiss (698)",
             "region": "Free State",
             "formation": "Elliot",
-            "part": "lower",
+            "part": "upper",
             "coordinates": [
               -29.106667,
               27.319444
             ],
+            "notes": "Yates and Kitching (2003) described it from \"the Upper Triassic (Norian) sediments of South Africa\"; McPhee and colleagues (2018) treat it as an upper Elliot Formation taxon, among the Early Jurassic sauropodomorphs.\n",
             "region_code": "ZA-FS",
             "part_of": "formation"
           },
@@ -27486,6 +27501,19 @@
           "issue": "1525",
           "pages": "1753-1758",
           "doi": "10.1098/rspb.2003.2417"
+        },
+        {
+          "id": "mcphee2018a",
+          "authors": "McPhee, B. W.; Benson, R. B. J.; Botha-Brink, J.; Bordy, E. M.; Choiniere, J. N.",
+          "year": 2018,
+          "title": "A Giant Dinosaur from the Earliest Jurassic of South Africa and the Transition to Quadrupedality in Early Sauropodomorphs",
+          "journal": "Current Biology",
+          "publisher": "Elsevier BV",
+          "volume": "28",
+          "issue": "19",
+          "pages": "3143-3151.e7",
+          "doi": "10.1016/j.cub.2018.07.063",
+          "notes": "Treats Antetonitrus as an upper Elliot Formation taxon, sister to Ledumahadi."
         }
       ],
       "taxonomy": [
@@ -38127,11 +38155,10 @@
               "Late Triassic"
             ],
             "stage": [
-              "Carnian",
-              "Norian"
+              "Carnian"
             ],
             "from_ma": 237,
-            "to_ma": 205.7
+            "to_ma": 227.3
           },
           "location": {
             "country": "BR",
@@ -38143,6 +38170,7 @@
               -29.653025,
               -53.292833
             ],
+            "notes": "Pretto and colleagues (2018) correlate the Janner site with the \"Hyperodapedon Assemblage Zone, part of the Candelária Sequence of the Santa Maria Formation\". Langer and colleagues (2018) date the bone bed near the top of the formation at no older than 233.23 ± 0.73 Ma, \"consistent with a late Carnian (Tuvalian) age\", and correlate the zone with the Scaphonyx-Exaeretodon-Herrerasaurus biozone of the Ischigualasto Formation; the Norian beds of the supersequence are in the overlying Caturrita Formation.\n",
             "region_code": "BR-RS"
           },
           "type_specimen": {
@@ -38201,6 +38229,17 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25023-6",
           "notes": "Source of the hip height estimate."
+        },
+        {
+          "id": "langer2018a",
+          "authors": "Langer, M. C.; Ramezani, J.; Da Rosa, Á. A. S.",
+          "year": 2018,
+          "title": "U-Pb age constraints on dinosaur rise from south Brazil",
+          "journal": "Gondwana Research",
+          "volume": "57",
+          "pages": "133-140",
+          "doi": "10.1016/j.gr.2018.01.005",
+          "notes": "Dates the Alemoa bone bed near the top of the Santa Maria Formation at no older than 233.23 Ma, late Carnian."
         }
       ],
       "taxonomy": [
@@ -55552,11 +55591,10 @@
               "Early Cretaceous"
             ],
             "stage": [
-              "Barremian",
-              "Aptian"
+              "Barremian"
             ],
             "from_ma": 125.77,
-            "to_ma": 113.2
+            "to_ma": 121.4
           },
           "location": {
             "country": "CN",
@@ -55623,6 +55661,29 @@
           "title": "The Princeton Field Guide to Dinosaurs (3rd ed.)",
           "publisher": "Princeton University Press",
           "notes": "Source of the body length and mass estimates, and the appearance features."
+        },
+        {
+          "id": "zhong2021a",
+          "authors": "Zhong, Y.; Huyskens, M. H.; Yin, Q. Z.; Wang, Y.; Ma, Q.; Xu, Y. G.",
+          "year": 2021,
+          "title": "High-precision geochronological constraints on the duration of 'Dinosaur Pompeii' and the Yixian Formation",
+          "journal": "National Science Review",
+          "volume": "8",
+          "issue": "6",
+          "pages": "nwab063",
+          "doi": "10.1093/nsr/nwab063",
+          "notes": "Dates the base of the Yixian Formation, the Lujiatun Unit that yielded the holotype, to 125.755 Ma: late Barremian on GTS2020."
+        },
+        {
+          "id": "gale2020a",
+          "authors": "Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R.",
+          "year": 2020,
+          "title": "The Cretaceous Period",
+          "book": "Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)",
+          "publisher": "Elsevier",
+          "pages": "1023-1086",
+          "doi": "10.1016/B978-0-12-824360-2.00027-9",
+          "notes": "Source of the GTS2020 Barremian span, 126.5 to 121.4 Ma."
         }
       ],
       "taxonomy": [
@@ -56407,19 +56468,23 @@
           "type_species": true,
           "period": {
             "name": [
-              "Middle Jurassic"
+              "Middle Jurassic",
+              "Late Jurassic"
             ],
             "stage": [
-              "Callovian"
+              "Callovian",
+              "Oxfordian",
+              "Kimmeridgian"
             ],
             "from_ma": 165.3,
-            "to_ma": 161.5
+            "to_ma": 149.2
           },
           "location": {
             "country": "DZ",
             "locality": "Rouis El Djir",
             "region": "Naama",
             "formation": "Aïssa",
+            "notes": "Kacemi and colleagues (2026) place the bones in the informal Member of the Rouis el Djir Alternations (MI), the lower member of the formation, in unit E3 at levels 73 to 78: \"These same bioturbated greenish clays yielded the bones of Chebsaurus\". The Djara Formation lies beneath the Aïssa in the same syncline.\n",
             "region_code": "DZ-45"
           },
           "size": {
@@ -56585,6 +56650,27 @@
           "volume": "72",
           "issue": "3",
           "pages": "247-289"
+        },
+        {
+          "id": "kacemi2026a",
+          "authors": "Kacemi, A.; Benhamou, M.; Boucif, A.; Benramdane, H.; Hebib, H.",
+          "year": 2026,
+          "title": "Évolution des milieux de dépôt et traces des dinosauriens du Jurassique supérieur dans les Monts des Ksour (Atlas saharien, Algérie) [Evolution of depositional environments and dinosaur tracks of the Upper Jurassic in the Ksour Mountains (Saharan Atlas, Algeria)]",
+          "journal": "Estudios Geológicos",
+          "volume": "82",
+          "issue": "2",
+          "pages": "e1154",
+          "doi": "10.3989/egeol.45894.1154",
+          "notes": "Places the bones in the Aïssa Formation and dates their dinosaur biotope \"Callovian-Kimmeridgian\", the bracket this record follows.\n"
+        },
+        {
+          "id": "benddine2022a",
+          "authors": "Benddine, A.; Benaouda, S.",
+          "year": 2022,
+          "title": "Lithostratigraphie et paléo environnement de la « Formation de Aïssa », coupes de Rouis El Djir et Djebel Larouia, Sillon pré-atlasique – Monts des Ksour (Atlas saharien) [Lithostratigraphy and paleoenvironment of the 'Aïssa Formation', Rouis El Djir and Djebel Larouia sections, pre-Atlas trough, Ksour Mountains (Saharan Atlas)]",
+          "publisher": "Université Abou Bekr Belkaïd, Tlemcen",
+          "notes": "Supervised by Kacemi; puts the find at the same level and holds that \"the Kimmeridgian age is much more probable\".\n",
+          "url": "https://dspace.univ-tlemcen.dz/handle/112/19392"
         }
       ],
       "taxonomy": [
@@ -63948,7 +64034,7 @@
       "pronunciation": {
         "phonetic": "KRAY-tuh-ro-SOR-us"
       },
-      "description": "Craterosaurus is a dubious genus of stegosaurian dinosaur that lived during the Early Cretaceous (possibly Aptian stage) of the Woburn Sands Formation of England. Estimated to measure around 4 m (13 ft) in length and weighing approximately 560 kg (1,230 lb), Craterosaurus may actually be a junior synonym of Regnosaurus, but only one fossil, a partial vertebra, was recovered.",
+      "description": "Craterosaurus is a dubious genus of stegosaurian dinosaur that lived during the Early Cretaceous of England, known from a fossil reworked into the Woburn Sands Formation. Estimated to measure around 4 m (13 ft) in length and weighing approximately 560 kg (1,230 lb), Craterosaurus may actually be a junior synonym of Regnosaurus, but only one fossil, a partial vertebra, was recovered.",
       "dispute": {
         "summary": "Craterosaurus is a nomen dubium based on a single partial vertebra whose features are now known to be widespread in Stegosauria (Maidment et al., 2008). It is retained at Stegosauria incertae sedis.\n",
         "history": [
@@ -63999,16 +64085,19 @@
               "Early Cretaceous"
             ],
             "stage": [
-              "Aptian"
+              "Berriasian",
+              "Valanginian",
+              "Hauterivian"
             ],
-            "from_ma": 121.4,
-            "to_ma": 113.2
+            "from_ma": 143.1,
+            "to_ma": 125.77
           },
           "location": {
             "country": "GB",
             "region": "Central Bedfordshire",
             "locality": "Potton Sands, near Potton",
             "formation": "Woburn Sands",
+            "notes": "The specimen is reworked. Galton (1985) gives it from the Potton Nodule Bed \"in upper part of Woburn Sands (Lower Cretaceous, probably reworked from beds of Neocomian age; Casey, 1961)\", so it carries the age of its source beds, the Neocomian, which GTS2020 resolves into the Berriasian, Valanginian and Hauterivian. The nodule bed itself was deposited in the late Aptian to early Albian, as Galton (2009) gives it.\n",
             "region_code": "GB-CBF"
           },
           "size": {
@@ -64060,6 +64149,40 @@
           "pages": "367-407",
           "doi": "10.1017/S1477201908002459",
           "notes": "Stegosauria systematics work showed Craterosaurus features are widespread, supporting nomen dubium status."
+        },
+        {
+          "id": "galton1985d",
+          "authors": "Galton, P. M.",
+          "year": 1985,
+          "title": "British plated dinosaurs (Ornithischia, Stegosauridae)",
+          "journal": "Journal of Vertebrate Paleontology",
+          "volume": "5",
+          "issue": "3",
+          "pages": "211-254",
+          "doi": "10.1080/02724634.1985.10011859",
+          "notes": "Gives the horizon as the Potton Nodule Bed, \"probably reworked from beds of Neocomian age\"."
+        },
+        {
+          "id": "galton2009a",
+          "authors": "Galton, P. M.",
+          "year": 2009,
+          "title": "Notes on Neocomian (Lower Cretaceous) ornithopod dinosaurs from England - Hypsilophodon, Valdosaurus, \"Camptosaurus\", \"Iguanodon\" - and referred specimens from Romania and elsewhere",
+          "journal": "Revue de Paléobiologie, Genève",
+          "volume": "28",
+          "issue": "1",
+          "pages": "211-273",
+          "notes": "Dates the Potton Nodule Bed as \"reworked into late Aptian-early Albian\"."
+        },
+        {
+          "id": "gale2020a",
+          "authors": "Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R.",
+          "year": 2020,
+          "title": "The Cretaceous Period",
+          "book": "Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)",
+          "publisher": "Elsevier",
+          "pages": "1023-1086",
+          "doi": "10.1016/B978-0-12-824360-2.00027-9",
+          "notes": "Resolves the Neocomian into the Berriasian, Valanginian and Hauterivian."
         }
       ],
       "taxonomy": [
@@ -70954,11 +71077,10 @@
               "Early Cretaceous"
             ],
             "stage": [
-              "Barremian",
-              "Aptian"
+              "Barremian"
             ],
             "from_ma": 125.77,
-            "to_ma": 113.2
+            "to_ma": 121.4
           },
           "location": {
             "country": "CN",
@@ -71029,6 +71151,29 @@
           "title": "The Princeton Field Guide to Dinosaurs (3rd ed.)",
           "publisher": "Princeton University Press",
           "notes": "Source of the appearance features."
+        },
+        {
+          "id": "zhong2021a",
+          "authors": "Zhong, Y.; Huyskens, M. H.; Yin, Q. Z.; Wang, Y.; Ma, Q.; Xu, Y. G.",
+          "year": 2021,
+          "title": "High-precision geochronological constraints on the duration of 'Dinosaur Pompeii' and the Yixian Formation",
+          "journal": "National Science Review",
+          "volume": "8",
+          "issue": "6",
+          "pages": "nwab063",
+          "doi": "10.1093/nsr/nwab063",
+          "notes": "Dates the base of the Yixian Formation, the Lujiatun Unit that yielded the holotype, to 125.755 Ma: late Barremian on GTS2020."
+        },
+        {
+          "id": "gale2020a",
+          "authors": "Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R.",
+          "year": 2020,
+          "title": "The Cretaceous Period",
+          "book": "Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)",
+          "publisher": "Elsevier",
+          "pages": "1023-1086",
+          "doi": "10.1016/B978-0-12-824360-2.00027-9",
+          "notes": "Source of the GTS2020 Barremian span, 126.5 to 121.4 Ma."
         }
       ],
       "taxonomy": [
@@ -80942,7 +81087,8 @@
             "locality": "Damplaats Farm",
             "region": "Free State",
             "formation": "Elliot",
-            "part": "lower",
+            "part": "upper",
+            "notes": "Butler and colleagues (2007) described it from \"the Late Triassic (?Norian) Lower Elliot Formation\"; Bordy and colleagues (2020) record that it \"has recently been reinterpreted as coming from the uEF\", the upper Elliot.\n",
             "region_code": "ZA-FS",
             "part_of": "formation"
           },
@@ -81043,6 +81189,17 @@
           "pages": "e1523",
           "doi": "10.7717/peerj.1523",
           "notes": "Its matrix underlies analyses placing Eocursor within Heterodontosauridae."
+        },
+        {
+          "id": "bordy2020a",
+          "authors": "Bordy, E. M.; Abrahams, M.; Sharman, G. R.; Viglietti, P. A.; Benson, R. B. J.; McPhee, B. W.; Barrett, P. M.; Sciscio, L.; Condon, D.; Mundil, R.; Rademan, Z.; Jinnah, Z.; Clark, J. M.; Suarez, C. A.; Chapelle, K. E. J.; Choiniere, J. N.",
+          "year": 2020,
+          "title": "A chronostratigraphic framework for the upper Stormberg Group: implications for the Triassic-Jurassic boundary in southern Africa",
+          "journal": "Earth-Science Reviews",
+          "volume": "203",
+          "pages": "103120",
+          "doi": "10.1016/j.earscirev.2020.103120",
+          "notes": "Records Eocursor's reassignment from the lower to the upper Elliot Formation."
         }
       ],
       "taxonomy": [
@@ -92915,10 +93072,11 @@
               "Early Jurassic"
             ],
             "stage": [
-              "Sinemurian"
+              "Sinemurian",
+              "Pliensbachian"
             ],
             "from_ma": 199.5,
-            "to_ma": 192.9
+            "to_ma": 184.2
           },
           "location": {
             "country": "ZA",
@@ -92995,6 +93153,17 @@
           "pages": "182-276",
           "doi": "10.1111/j.1096-3642.2011.00697.x",
           "notes": "Places the type locality on Farm Tulloch at Barkly Pass and reprints the coordinate Kitching and Raath published in 1984."
+        },
+        {
+          "id": "bordy2020a",
+          "authors": "Bordy, E. M.; Abrahams, M.; Sharman, G. R.; Viglietti, P. A.; Benson, R. B. J.; McPhee, B. W.; Barrett, P. M.; Sciscio, L.; Condon, D.; Mundil, R.; Rademan, Z.; Jinnah, Z.; Clark, J. M.; Suarez, C. A.; Chapelle, K. E. J.; Choiniere, J. N.",
+          "year": 2020,
+          "title": "A chronostratigraphic framework for the upper Stormberg Group: implications for the Triassic-Jurassic boundary in southern Africa",
+          "journal": "Earth-Science Reviews",
+          "volume": "203",
+          "pages": "103120",
+          "doi": "10.1016/j.earscirev.2020.103120",
+          "notes": "Dates the Clarens to a mainly Pliensbachian age on detrital zircons."
         }
       ],
       "taxonomy": [
@@ -97436,11 +97605,10 @@
               "Early Cretaceous"
             ],
             "stage": [
-              "Barremian",
-              "Aptian"
+              "Barremian"
             ],
             "from_ma": 125.77,
-            "to_ma": 113.2
+            "to_ma": 121.4
           },
           "location": {
             "country": "CN",
@@ -97500,6 +97668,29 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25021-2",
           "notes": "Source of the hip height estimate, and the appearance features."
+        },
+        {
+          "id": "zhong2021a",
+          "authors": "Zhong, Y.; Huyskens, M. H.; Yin, Q. Z.; Wang, Y.; Ma, Q.; Xu, Y. G.",
+          "year": 2021,
+          "title": "High-precision geochronological constraints on the duration of 'Dinosaur Pompeii' and the Yixian Formation",
+          "journal": "National Science Review",
+          "volume": "8",
+          "issue": "6",
+          "pages": "nwab063",
+          "doi": "10.1093/nsr/nwab063",
+          "notes": "Dates the base of the Yixian Formation, the Lujiatun Unit that yielded the holotype, to 125.755 Ma: late Barremian on GTS2020."
+        },
+        {
+          "id": "gale2020a",
+          "authors": "Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R.",
+          "year": 2020,
+          "title": "The Cretaceous Period",
+          "book": "Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)",
+          "publisher": "Elsevier",
+          "pages": "1023-1086",
+          "doi": "10.1016/B978-0-12-824360-2.00027-9",
+          "notes": "Source of the GTS2020 Barremian span, 126.5 to 121.4 Ma."
         }
       ],
       "taxonomy": [
@@ -102535,22 +102726,25 @@
             ],
             "stage": [
               "Hettangian",
-              "Sinemurian"
+              "Sinemurian",
+              "Pliensbachian"
             ],
             "from_ma": 201.4,
-            "to_ma": 192.9
+            "to_ma": 184.2
           },
           "location": {
             "country": "ZA",
             "locality": "Tyindini trading store",
             "region": "Eastern Cape",
             "formation": "Clarens",
+            "part": "lower",
             "coordinates": [
               -30.533333,
               27.533333
             ],
-            "notes": "Kitching and Raath published the coordinate in 1984, and Norman and colleagues (2011) reprint it. They also supply the Clarens name for what Crompton and Charig (1962) call the Cave Sandstone.",
-            "region_code": "ZA-EC"
+            "notes": "Kitching and Raath published the coordinate in 1984, and Norman and colleagues (2011) reprint it. They also supply the Clarens name for what Crompton and Charig (1962) call the Cave Sandstone. Sereno (2012) places the holotype in \"lower levels\" of the Clarens, which is Sinemurian to Pliensbachian below its topmost beds. The referred skeleton SAM-PK-K1332 comes from \"the upper part of the Elliot Formation\" at Voyizane, \"stratigraphically lower than the horizon at which the holotype was found\" (Norman and colleagues 2011), dated Hettangian to Sinemurian by Bordy and colleagues (2020); the stages span both horizons.",
+            "region_code": "ZA-EC",
+            "part_of": "formation"
           },
           "type_specimen": {
             "specimen_id": [
@@ -102695,6 +102889,29 @@
           "pages": "702-711",
           "doi": "10.1671/0272-4634(2008)28[702:AJSOTP]2.0.CO;2",
           "notes": "Described the juvenile skull SAM-PK-K10487 and referred it to Heterodontosaurus tucki on shared autapomorphies."
+        },
+        {
+          "id": "sereno2012a",
+          "authors": "Sereno, P. C.",
+          "year": 2012,
+          "title": "Taxonomy, morphology, masticatory function and phylogeny of heterodontosaurid dinosaurs",
+          "journal": "ZooKeys",
+          "publisher": "Pensoft Publishers",
+          "volume": "226",
+          "pages": "1-225",
+          "doi": "10.3897/zookeys.226.2840",
+          "notes": "Places the holotype in \"lower levels\" of the Clarens Formation."
+        },
+        {
+          "id": "bordy2020a",
+          "authors": "Bordy, E. M.; Abrahams, M.; Sharman, G. R.; Viglietti, P. A.; Benson, R. B. J.; McPhee, B. W.; Barrett, P. M.; Sciscio, L.; Condon, D.; Mundil, R.; Rademan, Z.; Jinnah, Z.; Clark, J. M.; Suarez, C. A.; Chapelle, K. E. J.; Choiniere, J. N.",
+          "year": 2020,
+          "title": "A chronostratigraphic framework for the upper Stormberg Group: implications for the Triassic-Jurassic boundary in southern Africa",
+          "journal": "Earth-Science Reviews",
+          "volume": "203",
+          "pages": "103120",
+          "doi": "10.1016/j.earscirev.2020.103120",
+          "notes": "Dates the upper Elliot Formation, source of SAM-PK-K1332, to the Hettangian–Sinemurian and the Clarens to a mainly Pliensbachian age."
         }
       ],
       "taxonomy": [
@@ -110079,11 +110296,10 @@
               "Early Cretaceous"
             ],
             "stage": [
-              "Barremian",
-              "Aptian"
+              "Barremian"
             ],
             "from_ma": 125.77,
-            "to_ma": 113.2
+            "to_ma": 121.4
           },
           "location": {
             "country": "CN",
@@ -110126,6 +110342,29 @@
           "issue": "6904",
           "pages": "291-293",
           "doi": "10.1038/nature00966"
+        },
+        {
+          "id": "zhong2021a",
+          "authors": "Zhong, Y.; Huyskens, M. H.; Yin, Q. Z.; Wang, Y.; Ma, Q.; Xu, Y. G.",
+          "year": 2021,
+          "title": "High-precision geochronological constraints on the duration of 'Dinosaur Pompeii' and the Yixian Formation",
+          "journal": "National Science Review",
+          "volume": "8",
+          "issue": "6",
+          "pages": "nwab063",
+          "doi": "10.1093/nsr/nwab063",
+          "notes": "Dates the base of the Yixian Formation, the Lujiatun Unit that yielded the holotype, to 125.755 Ma: late Barremian on GTS2020."
+        },
+        {
+          "id": "gale2020a",
+          "authors": "Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R.",
+          "year": 2020,
+          "title": "The Cretaceous Period",
+          "book": "Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)",
+          "publisher": "Elsevier",
+          "pages": "1023-1086",
+          "doi": "10.1016/B978-0-12-824360-2.00027-9",
+          "notes": "Source of the GTS2020 Barremian span, 126.5 to 121.4 Ma."
         }
       ],
       "taxonomy": [
@@ -129524,11 +129763,10 @@
               "Early Cretaceous"
             ],
             "stage": [
-              "Barremian",
-              "Aptian"
+              "Barremian"
             ],
             "from_ma": 125.77,
-            "to_ma": 113.2
+            "to_ma": 121.4
           },
           "location": {
             "country": "CN",
@@ -129619,6 +129857,29 @@
           "pages": "e7247",
           "doi": "10.7717/peerj.7247",
           "notes": "Recovered Liaoningvenator near the base of Troodontinae."
+        },
+        {
+          "id": "zhong2021a",
+          "authors": "Zhong, Y.; Huyskens, M. H.; Yin, Q. Z.; Wang, Y.; Ma, Q.; Xu, Y. G.",
+          "year": 2021,
+          "title": "High-precision geochronological constraints on the duration of 'Dinosaur Pompeii' and the Yixian Formation",
+          "journal": "National Science Review",
+          "volume": "8",
+          "issue": "6",
+          "pages": "nwab063",
+          "doi": "10.1093/nsr/nwab063",
+          "notes": "Dates the base of the Yixian Formation, the Lujiatun Unit that yielded the holotype, to 125.755 Ma: late Barremian on GTS2020."
+        },
+        {
+          "id": "gale2020a",
+          "authors": "Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R.",
+          "year": 2020,
+          "title": "The Cretaceous Period",
+          "book": "Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)",
+          "publisher": "Elsevier",
+          "pages": "1023-1086",
+          "doi": "10.1016/B978-0-12-824360-2.00027-9",
+          "notes": "Source of the GTS2020 Barremian span, 126.5 to 121.4 Ma."
         }
       ],
       "taxonomy": [
@@ -129699,11 +129960,10 @@
               "Early Cretaceous"
             ],
             "stage": [
-              "Barremian",
-              "Aptian"
+              "Barremian"
             ],
             "from_ma": 125.77,
-            "to_ma": 113.2
+            "to_ma": 121.4
           },
           "location": {
             "country": "AR",
@@ -129764,6 +130024,17 @@
           "issue": "1",
           "pages": "61-87",
           "notes": "Places the holotype in the Puesto Antigual Member."
+        },
+        {
+          "id": "leanza1995a",
+          "authors": "Leanza, H. A.; Hugo, C. A.",
+          "year": 1995,
+          "title": "Revisión estratigráfica del Cretácico inferior continental en el ámbito sudoriental de la Cuenca Neuquina [Stratigraphic revision of the continental Lower Cretaceous in the southeastern Neuquén Basin]",
+          "journal": "Revista de la Asociación Geológica Argentina",
+          "volume": "50",
+          "issue": "1-4",
+          "pages": "30-32",
+          "notes": "Names the Puesto Antigual Member and places it in the Barremian on its stratigraphic chart."
         },
         {
           "id": "carrano2011a",
@@ -131403,7 +131674,7 @@
       "pronunciation": {
         "phonetic": "lih-SHOO-long"
       },
-      "description": "Lishulong is a genus of sauropodiform dinosaur from the Early Jurassic (Sinemurian-Toarcian) Lufeng Formation of China. The type and only species is Lishulong wangi.",
+      "description": "Lishulong is a genus of sauropodiform dinosaur from the Early Jurassic Lufeng Formation of China. The type and only species is Lishulong wangi.",
       "locomotion": "facultative",
       "paleoenvironment": [
         "fluvial",
@@ -131447,12 +131718,11 @@
               "Early Jurassic"
             ],
             "stage": [
-              "Sinemurian",
-              "Pliensbachian",
-              "Toarcian"
+              "Hettangian",
+              "Sinemurian"
             ],
-            "from_ma": 199.5,
-            "to_ma": 174.7
+            "from_ma": 201.4,
+            "to_ma": 192.9
           },
           "location": {
             "country": "CN",
@@ -131460,6 +131730,7 @@
             "region": "Yunnan",
             "formation": "Lufeng",
             "member": "Shawan",
+            "notes": "Zhang and colleagues (2024) give the horizon as \"the upper-middle part of the Shawan Member of the Lufeng\" Formation, so the species takes the member's Hettangian to Sinemurian rather than the range of the whole formation.\n",
             "region_code": "CN-YN"
           },
           "size": {
@@ -131500,7 +131771,8 @@
           "publisher": "PeerJ",
           "volume": "12",
           "pages": "e18629",
-          "doi": "10.7717/peerj.18629"
+          "doi": "10.7717/peerj.18629",
+          "notes": "Places the holotype in the upper-middle part of the Shawan Member."
         },
         {
           "id": "jones2026b",
@@ -131510,6 +131782,26 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25023-6",
           "notes": "Source of the mass and hip height estimates."
+        },
+        {
+          "id": "chen2026a",
+          "authors": "Chen, J.; Niu, Y. N.; Ma, R.; Zhou, Y. L.; Liu, W. J.; Wang, Y. M.; You, H. L.; Xu, X.; Shen, S. Z.; Feng, Z.",
+          "year": 2026,
+          "title": "Triassic–Jurassic environmental instability on the subtropical eastern Tethyan margin linked to low-latitude dinosaur dispersal",
+          "journal": "Communications Earth & Environment",
+          "volume": "7",
+          "pages": 91,
+          "doi": "10.1038/s43247-025-03083-6",
+          "notes": "Dates the base of the Lufeng Formation, where it overlies the Yubacun, to about 200.1 Ma, Hettangian on GTS2020."
+        },
+        {
+          "id": "fang2000a",
+          "authors": "Fang, X.; Long, Q.; Lu, L.; Zhang, Z.; Pan, S.; Wang, Y.; Li, X.; Cheng, Z.",
+          "year": 2000,
+          "title": "[Lower, Middle, and Upper Jurassic divisions of the Lufeng region of Yunnan province]",
+          "journal": "Proceedings of the Third National Stratigraphical Conference of China. Geological Publishing House, Beijing",
+          "pages": "208-214",
+          "notes": "Gives the Shawan Member's thickness and its unconformable base at the type section."
         }
       ],
       "taxonomy": [
@@ -141636,11 +141928,10 @@
               "Early Cretaceous"
             ],
             "stage": [
-              "Barremian",
-              "Aptian"
+              "Barremian"
             ],
             "from_ma": 125.77,
-            "to_ma": 113.2
+            "to_ma": 121.4
           },
           "location": {
             "country": "CN",
@@ -141709,6 +142000,29 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25021-2",
           "notes": "Source of the hip height estimate."
+        },
+        {
+          "id": "zhong2021a",
+          "authors": "Zhong, Y.; Huyskens, M. H.; Yin, Q. Z.; Wang, Y.; Ma, Q.; Xu, Y. G.",
+          "year": 2021,
+          "title": "High-precision geochronological constraints on the duration of 'Dinosaur Pompeii' and the Yixian Formation",
+          "journal": "National Science Review",
+          "volume": "8",
+          "issue": "6",
+          "pages": "nwab063",
+          "doi": "10.1093/nsr/nwab063",
+          "notes": "Dates the base of the Yixian Formation, the Lujiatun Unit that yielded the holotype, to 125.755 Ma: late Barremian on GTS2020."
+        },
+        {
+          "id": "gale2020a",
+          "authors": "Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R.",
+          "year": 2020,
+          "title": "The Cretaceous Period",
+          "book": "Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)",
+          "publisher": "Elsevier",
+          "pages": "1023-1086",
+          "doi": "10.1016/B978-0-12-824360-2.00027-9",
+          "notes": "Source of the GTS2020 Barremian span, 126.5 to 121.4 Ma."
         }
       ],
       "taxonomy": [
@@ -143150,11 +143464,11 @@
               "Late Cretaceous"
             ],
             "stage": [
-              "Campanian",
-              "Maastrichtian"
+              "Santonian",
+              "Campanian"
             ],
-            "from_ma": 83.6,
-            "to_ma": 66
+            "from_ma": 85.7,
+            "to_ma": 72.2
           },
           "size": {
             "length_m": {
@@ -143168,6 +143482,7 @@
             "region": "Inner Mongolia",
             "formation": "Ulansuhai",
             "part": "lower",
+            "notes": "Evans and colleagues (2021) find it \"likely that fossils from Tsondolien-Khuduk are from the lower part of the Ulansuhai Formation and below the Bayan Mandahu fossil horizon\", consistent with the suggestion that the assemblage, on \"Microceratops\" (=Microceratus), is \"similar in age to either Baynshirenian or Barungoyotian (i.e., Santonian–Campanian)\", \"or perhaps older\". The formation itself runs no later than the Campanian.\n",
             "region_code": "CN-NM",
             "part_of": "formation"
           },
@@ -144591,11 +144906,9 @@
               "Early Cretaceous"
             ],
             "stage": [
-              "Hauterivian",
-              "Barremian",
               "Aptian"
             ],
-            "from_ma": 132.6,
+            "from_ma": 121.4,
             "to_ma": 113.2
           },
           "location": {
@@ -144680,6 +144993,24 @@
           "pages": "385-444",
           "doi": "10.1080/14772019.2015.1059985",
           "notes": "Regarded Minmi paravertebra as a nomen dubium."
+        },
+        {
+          "id": "exon1976a",
+          "authors": "Exon, N. F.",
+          "year": 1976,
+          "title": "Geology of the Surat Basin in Queensland",
+          "journal": "Bureau of Mineral Resources, Geology and Geophysics, Australia, Bulletin",
+          "volume": "166",
+          "notes": "Dates the Minmi Member of the Bungil Formation as early Aptian from its pelecypods, belemnite and foraminifera."
+        },
+        {
+          "id": "burger1980a",
+          "authors": "Burger, D.",
+          "year": 1980,
+          "title": "Palynological studies in the Lower Cretaceous of the Surat Basin, Australia",
+          "journal": "Bureau of Mineral Resources, Geology and Geophysics, Australia, Bulletin",
+          "volume": "189",
+          "notes": "Gives the Minmi Member as \"dated as lower Aptian\"."
         }
       ],
       "taxonomy": [
@@ -153155,17 +153486,17 @@
             ],
             "stage": [
               "Santonian",
-              "Campanian",
-              "Maastrichtian"
+              "Campanian"
             ],
             "from_ma": 85.7,
-            "to_ma": 66
+            "to_ma": 72.2
           },
           "location": {
             "country": "AR",
-            "locality": "Sierra Roca",
+            "locality": "Right bank of the Río Neuquén, 2 to 4 km from the railway bridge near Neuquén",
             "region": "Neuquén",
             "formation": "Bajo de la Carpa",
+            "notes": "Bonaparte and Gasparini (1979) quote Huene for the type caudals' provenance, \"in the elevated right cliff of the Río Neuquén, some kilometers (2-4) from the railway bridge\", and give it as \"possibly Bajo de la Carpa Member\" of the Río Colorado Formation. Much of the referred material comes from Cinco Saltos and General Roca in Río Negro, which Otero (2010) places in the Anacleto Formation, the Cinco Saltos specimens at the \"top of Anacleto Formation, early Campanian\". The stages span both units.\n",
             "region_code": "AR-Q"
           },
           "type_specimen": {
@@ -153268,6 +153599,16 @@
           "issue": "1",
           "pages": "61-87",
           "notes": "Places the Bajo de la Carpa at formation rank within the Río Colorado Subgroup, above the member rank Powell used."
+        },
+        {
+          "id": "bonaparte1979c",
+          "authors": "Bonaparte, J. F.; Gasparini, Z.",
+          "year": 1979,
+          "title": "Los saurópodos de los grupos Neuquén y Chubut, y sus relaciones cronológicas [The Sauropods of the Neuquén and Chubut Groups and their Chronological Relations]",
+          "journal": "Actas del VII Congreso Geológico Argentino",
+          "volume": "2",
+          "pages": "393-406",
+          "notes": "Gives Huene's provenance for the type caudals on the right bank of the Río Neuquén, \"possibly Bajo de la Carpa Member\"."
         }
       ],
       "taxonomy": [
@@ -153617,10 +153958,11 @@
             ],
             "stage": [
               "Hettangian",
-              "Sinemurian"
+              "Sinemurian",
+              "Pliensbachian"
             ],
             "from_ma": 201.4,
-            "to_ma": 192.9
+            "to_ma": 184.2
           },
           "location": {
             "country": "ZA",
@@ -153628,6 +153970,7 @@
             "region": "Free State",
             "formation": "Elliot",
             "part": "upper",
+            "notes": "Chapelle and colleagues (2019) place the holotype in the \"Uppermost upper Elliot Formation\", which they label \"?Hettangian–? Sinemurian\". The youngest dated upper Elliot sample, under 191.9 ± 1.5 Ma (Bordy and colleagues 2020), is Pliensbachian on GTS2020, so the top of the member may reach that stage.\n",
             "region_code": "ZA-FS",
             "part_of": "formation"
           },
@@ -153679,6 +154022,28 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25023-6",
           "notes": "Source of the body length, mass, and hip height estimates."
+        },
+        {
+          "id": "bordy2020a",
+          "authors": "Bordy, E. M.; Abrahams, M.; Sharman, G. R.; Viglietti, P. A.; Benson, R. B. J.; McPhee, B. W.; Barrett, P. M.; Sciscio, L.; Condon, D.; Mundil, R.; Rademan, Z.; Jinnah, Z.; Clark, J. M.; Suarez, C. A.; Chapelle, K. E. J.; Choiniere, J. N.",
+          "year": 2020,
+          "title": "A chronostratigraphic framework for the upper Stormberg Group: implications for the Triassic-Jurassic boundary in southern Africa",
+          "journal": "Earth-Science Reviews",
+          "volume": "203",
+          "pages": "103120",
+          "doi": "10.1016/j.earscirev.2020.103120",
+          "notes": "Gives the youngest upper Elliot maximum depositional age, under 191.9 Ma, which falls in the Pliensbachian on GTS2020."
+        },
+        {
+          "id": "hesselbo2020a",
+          "authors": "Hesselbo, S. P.; Ogg, J. G.; Ruhl, M.; Hinnov, L. A.; Huang, C. J.",
+          "year": 2020,
+          "title": "The Jurassic Period",
+          "book": "Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)",
+          "publisher": "Elsevier",
+          "pages": "955-1021",
+          "doi": "10.1016/B978-0-12-824360-2.00026-7",
+          "notes": "Puts the base of the Pliensbachian at 192.9 Ma."
         }
       ],
       "taxonomy": [
@@ -164316,11 +164681,10 @@
               "Late Triassic"
             ],
             "stage": [
-              "Carnian",
-              "Norian"
+              "Carnian"
             ],
             "from_ma": 237,
-            "to_ma": 205.7
+            "to_ma": 227.3
           },
           "location": {
             "country": "BR",
@@ -164333,6 +164697,7 @@
               -29.653025,
               -53.292833
             ],
+            "notes": "Cabreira and colleagues (2011) give the \"Reddish mudstones of the Alemoa Member, Santa Maria Formation\" at the Janner or Várzea do Agudo site, in \"the upper portions of the Hyperodapedon Assemblage Zone\". Langer and colleagues (2018) date the bone bed near the top of the formation at no older than 233.23 ± 0.73 Ma, \"consistent with a late Carnian (Tuvalian) age\", and correlate the zone with the Scaphonyx-Exaeretodon-Herrerasaurus biozone of the Ischigualasto Formation; the Norian beds of the supersequence are in the overlying Caturrita Formation.\n",
             "region_code": "BR-RS",
             "part_of": "member"
           },
@@ -164402,6 +164767,17 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25023-6",
           "notes": "Placement and assessment in the Princeton Encyclopedia of Dinosaurs."
+        },
+        {
+          "id": "langer2018a",
+          "authors": "Langer, M. C.; Ramezani, J.; Da Rosa, Á. A. S.",
+          "year": 2018,
+          "title": "U-Pb age constraints on dinosaur rise from south Brazil",
+          "journal": "Gondwana Research",
+          "volume": "57",
+          "pages": "133-140",
+          "doi": "10.1016/j.gr.2018.01.005",
+          "notes": "Dates the Alemoa bone bed near the top of the Santa Maria Formation at no older than 233.23 Ma, late Carnian."
         }
       ],
       "taxonomy": [
@@ -178158,14 +178534,13 @@
           "type_species": false,
           "period": {
             "stage": [
-              "Barremian",
-              "Aptian"
+              "Barremian"
             ],
             "name": [
               "Early Cretaceous"
             ],
             "from_ma": 125.77,
-            "to_ma": 113.2
+            "to_ma": 121.4
           },
           "location": {
             "country": "CN",
@@ -178524,6 +178899,29 @@
           "issue": "1",
           "pages": "15-20",
           "doi": "10.1111/j.1755-6724.2003.tb00105.x"
+        },
+        {
+          "id": "zhong2021a",
+          "authors": "Zhong, Y.; Huyskens, M. H.; Yin, Q. Z.; Wang, Y.; Ma, Q.; Xu, Y. G.",
+          "year": 2021,
+          "title": "High-precision geochronological constraints on the duration of 'Dinosaur Pompeii' and the Yixian Formation",
+          "journal": "National Science Review",
+          "volume": "8",
+          "issue": "6",
+          "pages": "nwab063",
+          "doi": "10.1093/nsr/nwab063",
+          "notes": "Dates the base of the Yixian Formation, the Lujiatun Unit that yielded P. lujiatunensis, to 125.755 Ma: late Barremian on GTS2020."
+        },
+        {
+          "id": "gale2020a",
+          "authors": "Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R.",
+          "year": 2020,
+          "title": "The Cretaceous Period",
+          "book": "Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)",
+          "publisher": "Elsevier",
+          "pages": "1023-1086",
+          "doi": "10.1016/B978-0-12-824360-2.00027-9",
+          "notes": "Source of the GTS2020 Barremian span, 126.5 to 121.4 Ma."
         }
       ],
       "taxonomy": [
@@ -181110,18 +181508,14 @@
           "period": {
             "name": [
               "Late Cretaceous"
-            ],
-            "stage": [
-              "Maastrichtian"
-            ],
-            "from_ma": 72.2,
-            "to_ma": 66
+            ]
           },
           "location": {
             "country": "CN",
             "locality": "Hongtuling",
             "region": "Shaanxi",
             "formation": "Hongtuling",
+            "notes": "Xue and colleagues (1996) give \"Hongtuling, Luonan, Shaanxi; Upper Cretaceous Hongtuling Formation\", with no stage. Weishampel and colleagues (2004) list it in the Shanyang Formation fauna, against that horizon, and give that fauna only a Late Cretaceous age.\n",
             "region_code": "CN-SN"
           },
           "type_specimen": {
@@ -181146,6 +181540,17 @@
           "title": "The development and environmental changes of the intermontane basins in the eastern part of Qinling Mountains",
           "publisher": "Geological Publishing House",
           "isbn": "978-7-116-02125-9"
+        },
+        {
+          "id": "weishampel2004b",
+          "authors": "Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R.",
+          "year": 2004,
+          "title": "Dinosaur distribution",
+          "book": "The Dinosauria, 2nd edition",
+          "publisher": "University of California Press",
+          "pages": "517-606",
+          "doi": "10.1525/california/9780520242098.003.0027",
+          "notes": "Lists Qinlingosaurus under the Shanyang Formation fauna, at \"Late Cretaceous\"."
         }
       ],
       "taxonomy": [
@@ -189000,11 +189405,10 @@
               "Late Triassic"
             ],
             "stage": [
-              "Carnian",
-              "Norian"
+              "Carnian"
             ],
             "from_ma": 237,
-            "to_ma": 205.7
+            "to_ma": 227.3
           },
           "location": {
             "country": "BR",
@@ -189016,6 +189420,7 @@
               -29.666667,
               -53.75
             ],
+            "notes": "Langer and colleagues (1999) give \"the typical red mudstone of the Alemoa Member, Santa Maria Formation\", assigned to the Rhynchosaur Zone. Langer and colleagues (2018) date the bone bed near the top of the formation at no older than 233.23 ± 0.73 Ma, \"consistent with a late Carnian (Tuvalian) age\", and correlate the zone with the Scaphonyx-Exaeretodon-Herrerasaurus biozone of the Ischigualasto Formation; the Norian beds of the supersequence are in the overlying Caturrita Formation.\n",
             "region_code": "BR-RS"
           },
           "size": {
@@ -189075,6 +189480,17 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25023-6",
           "notes": "Source of the hip height estimate."
+        },
+        {
+          "id": "langer2018a",
+          "authors": "Langer, M. C.; Ramezani, J.; Da Rosa, Á. A. S.",
+          "year": 2018,
+          "title": "U-Pb age constraints on dinosaur rise from south Brazil",
+          "journal": "Gondwana Research",
+          "volume": "57",
+          "pages": "133-140",
+          "doi": "10.1016/j.gr.2018.01.005",
+          "notes": "Dates the Alemoa bone bed near the top of the Santa Maria Formation at no older than 233.23 Ma, late Carnian."
         }
       ],
       "taxonomy": [
@@ -193760,7 +194176,7 @@
         "phonetic": "shahn-yahng-o-SAWR-us"
       },
       "etymology": "Named after the Shanyang Formation (Shanyang County, Shaanxi, China) where it was found, combined with Greek sauros, \"lizard\" - means \"Shanyang lizard\"",
-      "description": "Shanyangosaurus is a genus of theropod dinosaur found in Shaanxi, China, and known only from a partial sacrum, partial scapula, humeri, femur, tibia, metatarsals, and phalanges found in the Maastrichtian aged Shanyang Formation. The bones are reportedly hollow; this, along with other features of the femur and known foot bones, suggest it is a member of the coelurosauria, but a specific family cannot be determined without more material. Holtz et al. assigned Shanyangosaurus to Avetheropoda.",
+      "description": "Shanyangosaurus is a genus of theropod dinosaur found in Shaanxi, China, and known only from a partial sacrum, partial scapula, humeri, femur, tibia, metatarsals, and phalanges found in the Late Cretaceous Shanyang Formation. The bones are reportedly hollow; this, along with other features of the femur and known foot bones, suggest it is a member of the coelurosauria, but a specific family cannot be determined without more material. Holtz et al. assigned Shanyangosaurus to Avetheropoda.",
       "diet": "carnivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -193800,12 +194216,7 @@
           "period": {
             "name": [
               "Late Cretaceous"
-            ],
-            "stage": [
-              "Maastrichtian"
-            ],
-            "from_ma": 72.2,
-            "to_ma": 66
+            ]
           },
           "location": {
             "country": "CN",
@@ -193813,6 +194224,7 @@
             "region": "Shaanxi",
             "formation": "Shanyang",
             "part": "upper",
+            "notes": "Xue and colleagues (1996) give only \"Niupanggou, Shanyang, Shaanxi; Late Cretaceous\". The Maastrichtian appears only in reference works, Holtz and colleagues (2004) placing the genus \"from the Maastrichtian\", and not in the naming paper.\n",
             "region_code": "CN-SN",
             "part_of": "formation"
           },
@@ -199960,11 +200372,10 @@
               "Early Cretaceous"
             ],
             "stage": [
-              "Barremian",
-              "Aptian"
+              "Barremian"
             ],
             "from_ma": 125.77,
-            "to_ma": 113.2
+            "to_ma": 121.4
           },
           "location": {
             "country": "CN",
@@ -200035,6 +200446,29 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25021-2",
           "notes": "Source of the hip height estimate."
+        },
+        {
+          "id": "zhong2021a",
+          "authors": "Zhong, Y.; Huyskens, M. H.; Yin, Q. Z.; Wang, Y.; Ma, Q.; Xu, Y. G.",
+          "year": 2021,
+          "title": "High-precision geochronological constraints on the duration of 'Dinosaur Pompeii' and the Yixian Formation",
+          "journal": "National Science Review",
+          "volume": "8",
+          "issue": "6",
+          "pages": "nwab063",
+          "doi": "10.1093/nsr/nwab063",
+          "notes": "Dates the base of the Yixian Formation, the Lujiatun Unit that yielded the holotype, to 125.755 Ma: late Barremian on GTS2020."
+        },
+        {
+          "id": "gale2020a",
+          "authors": "Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R.",
+          "year": 2020,
+          "title": "The Cretaceous Period",
+          "book": "Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)",
+          "publisher": "Elsevier",
+          "pages": "1023-1086",
+          "doi": "10.1016/B978-0-12-824360-2.00027-9",
+          "notes": "Source of the GTS2020 Barremian span, 126.5 to 121.4 Ma."
         }
       ],
       "taxonomy": [
@@ -210506,9 +210940,10 @@
               "Early Cretaceous"
             ],
             "stage": [
+              "Barremian",
               "Aptian"
             ],
-            "from_ma": 121.4,
+            "from_ma": 125.77,
             "to_ma": 113.2
           },
           "location": {
@@ -210516,6 +210951,7 @@
             "locality": "Arsis 1, Peñarroya de Tastavins",
             "region": "Teruel",
             "formation": "Xert",
+            "notes": "Canudo and colleagues (2008) recovered the holotype \"at the base of the marine Xert Formation\", the level Bover-Arnal and colleagues (2016) date by an ammonite of the lower Martelites sarasini Subzone: latest Barremian on the ammonite zonation, earliest Aptian on the GTS2020 magnetochron M0r definition. Mocho and colleagues (2023) give Tastavinsaurus as \"late Barremian–early Aptian\".\n",
             "coordinates": [
               40.6975,
               0.0492
@@ -210562,6 +210998,27 @@
           "issue": "3",
           "pages": "712-731",
           "doi": "10.1671/0272-4634(2008)28[712:anstsg]2.0.co;2"
+        },
+        {
+          "id": "bover-arnal2016a",
+          "authors": "Bover-Arnal, T.; Moreno-Bedmar, J. A.; Frijia, G.; Pascual-Cebrian, E.; Salas, R.",
+          "year": 2016,
+          "title": "Chronostratigraphy of the Barremian–Early Albian of the Maestrat Basin (E Iberian Peninsula): integrating strontium-isotope stratigraphy and ammonoid biostratigraphy",
+          "journal": "Newsletters on Stratigraphy",
+          "volume": "49",
+          "pages": "41-68",
+          "notes": "Dates the lower Xert Formation, the holotype horizon, by a lower Martelites sarasini Subzone ammonite."
+        },
+        {
+          "id": "gale2020a",
+          "authors": "Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R.",
+          "year": 2020,
+          "title": "The Cretaceous Period",
+          "book": "Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)",
+          "publisher": "Elsevier",
+          "pages": "1023-1086",
+          "doi": "10.1016/B978-0-12-824360-2.00027-9",
+          "notes": "Source of the base-of-M0r definition of the Aptian."
         },
         {
           "id": "jones2026b",
@@ -234384,10 +234841,11 @@
               "Early Cretaceous"
             ],
             "stage": [
-              "Valanginian"
+              "Barremian",
+              "Aptian"
             ],
-            "from_ma": 137.05,
-            "to_ma": 132.6
+            "from_ma": 125.77,
+            "to_ma": 113.2
           },
           "location": {
             "country": "CN",
@@ -234395,6 +234853,7 @@
             "region": "Xinjiang",
             "group": "Tugulu",
             "part": "upper",
+            "notes": "Xu and colleagues (2018) give the horizon as \"Upper Cretaceous (Barremian-Aptian?) upper part of the Tugulu Group\"; both stages are Lower Cretaceous, so \"Upper Cretaceous\" is a slip. The Valanginian dates for the Tugulu Group concern its lower formations in the northwest of the Junggar Basin, not the upper part at Wucaiwan.\n",
             "region_code": "CN-XJ",
             "part_of": "group"
           },
@@ -234437,7 +234896,32 @@
           "volume": "28",
           "issue": "17",
           "pages": "2853-2860.e3",
-          "doi": "10.1016/j.cub.2018.07.057"
+          "doi": "10.1016/j.cub.2018.07.057",
+          "notes": "Gives the holotype horizon as the upper Tugulu Group at Wucaiwan, \"(Barremian-Aptian?)\"."
+        },
+        {
+          "id": "fowler2020b",
+          "authors": "Fowler, D. W.; Wilson, J. P.; Freedman Fowler, E. A.; Noto, C. R.; Anduza, D.; Horner, J. R.",
+          "year": 2020,
+          "title": "Trierarchuncus prairiensis gen. et sp. nov., the last alvarezsaurid: Hell Creek Formation (uppermost Maastrichtian), Montana",
+          "journal": "Cretaceous Research",
+          "publisher": "Elsevier BV",
+          "volume": "116",
+          "doi": "10.1016/j.cretres.2020.104560",
+          "notes": "Lists Xiyunykus from the Tugulu Group at \"~Barremian–Aptian\"."
+        },
+        {
+          "id": "meso2024a",
+          "authors": "Meso, J. G.; Pol, D.; Chiappe, L.; Qin, Z.; Díaz-Martínez, I.; Gianechini, F.; Apesteguía, S.; Makovicky, P. J.; Pittman, M.",
+          "year": 2024,
+          "title": "Body size and evolutionary rate analyses reveal complex evolutionary history of Alvarezsauria",
+          "journal": "Cladistics",
+          "publisher": "Wiley",
+          "volume": "41",
+          "issue": "2",
+          "pages": "135-155",
+          "doi": "10.1111/cla.12600",
+          "notes": "Places Xiyunykus \"from the upper section of the Barremian–Aptian Tugulu Group\"."
         },
         {
           "id": "jones2026c",
