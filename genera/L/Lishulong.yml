@@ -4,8 +4,8 @@ etymology: "From Mandarin Chinese '栗樹' (lìshù) meaning 'chestnut tree', af
 pronunciation:
   phonetic: lih-SHOO-long
 description: Lishulong is a genus of sauropodiform dinosaur from the Early
-  Jurassic (Sinemurian-Toarcian) Lufeng Formation of China. The type and only
-  species is Lishulong wangi.
+  Jurassic Lufeng Formation of China. The type and only species is Lishulong
+  wangi.
 locomotion: facultative
 paleoenvironment:
   - fluvial
@@ -40,15 +40,19 @@ species:
       name:
         - Early Jurassic
       stage:
+        - Hettangian
         - Sinemurian
-        - Pliensbachian
-        - Toarcian
     location:
       country: CN
       locality: Jiudu Village in Konglongshan Town
       region: CN-YN
       formation: Lufeng
       member: Shawan
+      notes: >
+        Zhang and colleagues (2024) give the horizon as "the upper-middle part
+        of the Shawan Member of the Lufeng" Formation, so the species takes
+        the member's Hettangian to Sinemurian rather than the range of the
+        whole formation.
     size:
       weight_kg:
         min: 2900
@@ -69,5 +73,10 @@ species:
       completeness: partial
 references:
   - id: zhang2024a
+    notes: Places the holotype in the upper-middle part of the Shawan Member.
   - id: jones2026b
     notes: Source of the mass and hip height estimates.
+  - id: chen2026a
+    notes: Dates the base of the Lufeng Formation, where it overlies the Yubacun, to about 200.1 Ma, Hettangian on GTS2020.
+  - id: fang2000a
+    notes: Gives the Shawan Member's thickness and its unconformable base at the type section.
