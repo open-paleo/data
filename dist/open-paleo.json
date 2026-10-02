@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-10-01T23:40:57.257Z",
+    "built_at": "2026-10-02T01:58:48.900Z",
     "clade_count": 188,
     "genus_count": 1424,
     "license": "CC-BY-4.0",
@@ -111631,19 +111631,35 @@
           "type_species": true,
           "period": {
             "name": [
-              "Early Jurassic"
+              "Late Triassic",
+              "Early Jurassic",
+              "Middle Jurassic",
+              "Late Jurassic"
             ],
             "stage": [
-              "Pliensbachian"
+              "Norian",
+              "Rhaetian",
+              "Hettangian",
+              "Sinemurian",
+              "Pliensbachian",
+              "Toarcian",
+              "Aalenian",
+              "Bajocian",
+              "Bathonian",
+              "Callovian",
+              "Oxfordian",
+              "Kimmeridgian",
+              "Tithonian"
             ],
-            "from_ma": 192.9,
-            "to_ma": 184.2
+            "from_ma": 227.3,
+            "to_ma": 143.1
           },
           "location": {
             "country": "TH",
             "locality": "Phu Nok Khian hill",
             "region": "Chaiyaphum",
             "formation": "Nam Phong",
+            "notes": "No paper places the Phu Nok Khian site in either part of the Nam Phong. Buffetaut and colleagues (2000) give \"dark red sandstones of the Nam Phong Formation\", which outcrop palynology dates late Norian to Rhaetian. Hanta and colleagues (2023) call the type locality's beds \"likely the Upper Nam Phong Formation\" from their lithology, the Upper Nam Phong being no older than Pliensbachian and probably Late Jurassic. Rauhut and colleagues (2020) state that \"the Upper Nam Phong Formation that has yielded Isanosaurus has recently been dated as Early Jurassic\", citing Racey and Goodall (2009), who do not mention the genus. Racey and Goodall (2009) caution that the boundary \"would be difficult to detect at outcrop\", so the stages span both readings.\n",
             "region_code": "TH-36"
           },
           "size": {
@@ -111717,6 +111733,29 @@
           "pages": "131-163",
           "doi": "10.1007/978-3-030-95959-3_4",
           "notes": "Recovered Isanosaurus outside Eusauropoda, grouped with Gongxianosaurus and vulcanodontids."
+        },
+        {
+          "id": "racey2009b",
+          "authors": "Racey, A.; Goodall, J. G. S.",
+          "year": 2009,
+          "title": "Palynology and stratigraphy of the Mesozoic Khorat Group red bed sequences from Thailand",
+          "journal": "Geological Society, London, Special Publications",
+          "volume": "315",
+          "pages": "69-83",
+          "doi": "10.1144/SP315.6",
+          "notes": "Splits the Nam Phong into a Late Triassic lower part and an Upper part no older than Pliensbachian, by seismic and well data."
+        },
+        {
+          "id": "hanta2023a",
+          "authors": "Hanta, R.; Sekiya, T.; Shibata, M.; Naksri, W.; Tucker, R. T.",
+          "year": 2023,
+          "title": "Hatchling and early juvenile of early sauropod from the early Middle Jurassic Nam Phong Formation, Chaiyaphum Province, northeastern Thailand",
+          "journal": "Paleontological Research",
+          "volume": "28",
+          "issue": "3",
+          "pages": "222-239",
+          "doi": "10.2517/pr230002",
+          "notes": "Assigns the type locality's beds to the Upper Nam Phong Formation on their lithology."
         }
       ],
       "taxonomy": [
@@ -124414,10 +124453,9 @@
               "Late Cretaceous"
             ],
             "stage": [
-              "Santonian",
               "Campanian"
             ],
-            "from_ma": 85.7,
+            "from_ma": 83.6,
             "to_ma": 72.2
           },
           "location": {
@@ -124425,6 +124463,7 @@
             "locality": "LACM Locality 7257",
             "region": "Baja California",
             "formation": "La Bocana Roja",
+            "notes": "Molnar (1974) places the type locality in the La Bocana Roja Formation. Rivera-Sylva and Longrich (2024) report that the locality data \"are conflicting\": LACM records merge site 6755, listed as \"El Gallo Fm. (El Diseado [sic] member)\", into it, and if the material comes from the El Disecado Member it would date between 75.84 Ma and 71.9 ± 1.7 Ma. The formation's own age is disputed between Turonian and Campanian.\n",
             "region_code": "MX-BCN"
           },
           "type_specimen": {
@@ -124471,6 +124510,29 @@
           "volume": "48",
           "issue": "5",
           "pages": "1009-1017"
+        },
+        {
+          "id": "rivera-sylva2024a",
+          "authors": "Rivera-Sylva, H. E.; Longrich, N. R.",
+          "year": 2024,
+          "title": "A new tyrant dinosaur from the Late Campanian of Mexico reveals a tribe of southern tyrannosaurs",
+          "journal": "Fossil Studies",
+          "volume": "2",
+          "issue": "4",
+          "pages": "245-272",
+          "doi": "10.3390/fossils2040012",
+          "notes": "Reports that the type locality's records conflict, part of it listed as El Gallo Formation (El Disecado Member)."
+        },
+        {
+          "id": "kane2022a",
+          "authors": "Kane, I. A.; Hodgson, D. M.; Hubbard, S. M.; McArthur, A. D.; Poyatos-Moré, M.; Soutter, E. L.; Flint, S. S.; Matthews, W.",
+          "year": 2022,
+          "title": "Deep-water tectono-stratigraphy at a plate boundary constrained by large n-detrital zircon and micropaleontological approaches: Peninsular Ranges forearc, Baja California, Mexico",
+          "journal": "The Sedimentary Record",
+          "volume": "20",
+          "issue": "1",
+          "doi": "10.2110/001c.37652",
+          "notes": "Dates the upper La Bocana Roja Formation to a maximum of 93.6 Ma (Turonian), against the Campanian age taken from Labocania."
         }
       ],
       "taxonomy": [
@@ -148444,7 +148506,7 @@
         "phonetic": "moo-SAWR-us"
       },
       "etymology": "From Latin 'mus' (mouse) and Greek 'sauros' (lizard); meaning 'mouse lizard', named for the small size of juvenile specimens originally known.",
-      "description": "Mussaurus is a genus of herbivorous sauropodomorph dinosaur that lived in southern Argentina during the Sinemurian stage of the Early Jurassic. It receives its name from the small size of the skeletons of juvenile and infant individuals, which were once the only known specimens of the genus. However, since Mussaurus is now known from adult specimens, the name is something of a misnomer.",
+      "description": "Mussaurus is a genus of herbivorous sauropodomorph dinosaur that lived in southern Argentina during the Early Jurassic. It receives its name from the small size of the skeletons of juvenile and infant individuals, which were once the only known specimens of the genus. However, since Mussaurus is now known from adult specimens, the name is something of a misnomer.",
       "diet": "herbivore",
       "locomotion": "facultative",
       "paleoenvironment": [
@@ -148492,10 +148554,11 @@
               "Early Jurassic"
             ],
             "stage": [
-              "Sinemurian"
+              "Sinemurian",
+              "Pliensbachian"
             ],
             "from_ma": 199.5,
-            "to_ma": 192.9
+            "to_ma": 184.2
           },
           "location": {
             "country": "AR",
@@ -148566,6 +148629,17 @@
           "pages": "20023",
           "doi": "10.1038/s41598-021-99176-1",
           "notes": "The unit Bonaparte and Vince described as the El Tranquillo Formation."
+        },
+        {
+          "id": "hesselbo2020a",
+          "authors": "Hesselbo, S. P.; Ogg, J. G.; Ruhl, M.; Hinnov, L. A.; Huang, C. J.",
+          "year": 2020,
+          "title": "The Jurassic Period",
+          "book": "Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)",
+          "publisher": "Elsevier",
+          "pages": "955-1021",
+          "doi": "10.1016/B978-0-12-824360-2.00026-7",
+          "notes": "Puts the base of the Pliensbachian at 192.9 Ma, so the 192.7 Ma maximum age of the Mussaurus beds falls at the Sinemurian–Pliensbachian boundary."
         }
       ],
       "taxonomy": [
