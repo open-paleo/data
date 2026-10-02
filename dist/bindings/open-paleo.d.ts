@@ -258,6 +258,14 @@ export interface Reference {
   journal?: string;
   book?: string;
   series?: string;
+  /**
+   * Degree the work was submitted for, when it is a thesis.
+   */
+  thesis?: "doctoral" | "masters" | "habilitation" | "dissertation-abstract";
+  /**
+   * Awarding institution of a thesis.
+   */
+  school?: string;
   publisher?: string;
   volume?: string;
   issue?: string;

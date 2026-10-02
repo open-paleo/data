@@ -29,6 +29,13 @@ class FormerIdReasons(Enum):
     rehoused = 'rehoused'
 
 
+class ThesisTypes(Enum):
+    doctoral = 'doctoral'
+    masters = 'masters'
+    habilitation = 'habilitation'
+    dissertation_abstract = 'dissertation-abstract'
+
+
 class FormerId(BaseModel):
     from_id: str = Field(..., description='The catalogue number before the change.')
     to_id: str = Field(..., description='The catalogue number after the change.')
@@ -63,6 +70,10 @@ class Reference(BaseModel):
     journal: Optional[str] = None
     book: Optional[str] = None
     series: Optional[str] = None
+    thesis: Optional[ThesisTypes] = Field(
+        None, description='Degree the work was submitted for, when it is a thesis.'
+    )
+    school: Optional[str] = Field(None, description='Awarding institution of a thesis.')
     publisher: Optional[str] = None
     volume: Optional[str] = None
     issue: Optional[str] = None
