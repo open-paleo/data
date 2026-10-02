@@ -353,8 +353,17 @@ every stage inside it: "Coniacian–Campanian" includes the Santonian.
   recorded as a `dispute` rather than resolved by choosing a side.
 - A paper's own undecided dating ("late Barremian or earliest Albian")
   contributes every alternative it allows.
-- A dated child widens its parent: the age of a member is an age inside its
-  formation.
+- A parent is dated from its own sources, never from the children recorded
+  here. The registry holds only the units our records name, so the children
+  it carries are a sample of the parent's, and their union says nothing about
+  the parent's span. A group or formation takes its age from, in order of
+  preference: a source that dates it directly; a source that dates it by way
+  of its members; or, where neither exists, the union of the ages of every
+  member a published scheme lists, each member's age from its own source, with
+  the note naming the scheme and each of those sources.
+- A child is checked against its parent, not used to widen it. A child whose
+  stages fall outside its parent's is a finding to resolve by reading: either
+  the child's dating or the parent's sources are wrong or incomplete.
 - A unit that no source dates directly takes its parent's `period`, but never
   its `stages`.
 
