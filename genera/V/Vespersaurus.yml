@@ -43,10 +43,10 @@ species:
     type_species: true
     period:
       name:
-        - Late Cretaceous
+        - Early Cretaceous
       stage:
-        - Turonian
-        - Coniacian
+        - Aptian
+        - Albian
     location:
       country: BR
       locality: Cemitério dos Pterossauros Quarry
@@ -55,6 +55,12 @@ species:
       coordinates:
         - -26.759444
         - -53.064722
+      notes: >
+        Langer and colleagues (2019) give the horizon as "Dark red sandstones
+        of the likely early Late Cretaceous Rio Paraná Formation", without a
+        stage. Arai and Dias-Brito (2023) date the formation Aptian to Albian
+        from the pterosaurs and noasaurid of the interdigitated Goioerê
+        Formation.
     size:
       hip_height_m:
         min: 0.4
@@ -78,3 +84,5 @@ references:
   - id: langer2019a
   - id: jones2026c
     notes: Source of the hip height estimate, and the appearance features.
+  - id: arai2023a
+    notes: Dates the Caiuá Group, the Rio Paraná included, Aptian to Albian from pterosaurs and a noasaurid of the interdigitated Goioerê Formation.
