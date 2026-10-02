@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-10-02T22:47:10.020Z",
+    "built_at": "2026-10-02T23:35:22.351Z",
     "clade_count": 188,
     "genus_count": 1424,
     "license": "CC-BY-4.0",
@@ -12674,7 +12674,7 @@
             "locality": "DNM 16",
             "region": "Utah",
             "formation": "Cedar Mountain",
-            "member": "Mussentuchit",
+            "notes": "Chure and colleagues (2010) place the bone bed \"near the base of the Mussentuchit Member\" and date it by zircon to \"no older than the mid-Albian\", with the Cenomanian Dakota Formation above. Sprinkel and colleagues (2012) hold that the Mussentuchit name \"should not be applied to the uppermost part of the Cedar Mountain Formation in northeastern Utah\", the Mussentuchit of central Utah being \"time equivalent to the Mowry Shale in northeast Utah\", and date a bentonite in the overlying Dakota there at 101.4 Ma, late Albian on GTS2020.\n",
             "region_code": "US-UT"
           },
           "size": {
@@ -12726,6 +12726,16 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25023-6",
           "notes": "Source of the mass and hip height estimates."
+        },
+        {
+          "id": "sprinkel2012a",
+          "authors": "Sprinkel, D. A.; Madsen, S. K.; Kirkland, J. I.; Waanders, G. L.; Hunt, G. J.",
+          "year": 2012,
+          "title": "Cedar Mountain and Dakota Formations around Dinosaur National Monument—evidence of the first incursion of the Cretaceous Western Interior Seaway into Utah",
+          "journal": "Utah Geological Survey Special Study",
+          "volume": "143",
+          "pages": "1-21",
+          "notes": "Limits the Mussentuchit Member to central Utah and dates a bentonite in the overlying Dakota of northeastern Utah at 101.4 Ma."
         }
       ],
       "taxonomy": [
@@ -26048,13 +26058,13 @@
           "type_species": true,
           "period": {
             "name": [
-              "Early Cretaceous"
+              "Late Cretaceous"
             ],
             "stage": [
-              "Albian"
+              "Cenomanian"
             ],
-            "from_ma": 113.2,
-            "to_ma": 100.5
+            "from_ma": 100.5,
+            "to_ma": 93.9
           },
           "location": {
             "country": "US",
@@ -26100,7 +26110,8 @@
           "title": "Ankylosaurs (Dinosauria: Ornithischia) of the Cedar Mountain Formation, Utah, and their stratigraphic distribution",
           "journal": "Vertebrate Paleontology in Utah, D. D. Gillette (ed.), Utah Geological Survey Miscellaneous Publication",
           "volume": "99-1",
-          "pages": "243-251"
+          "pages": "243-251",
+          "notes": "Dates the member by a radiometric age of 98.39 Ma, early Cenomanian on GTS2020, though it reads the fauna as Late Albian or Early Cenomanian."
         },
         {
           "id": "paul2024a",
@@ -81469,14 +81480,12 @@
           "type_species": true,
           "period": {
             "name": [
-              "Early Cretaceous",
               "Late Cretaceous"
             ],
             "stage": [
-              "Albian",
               "Cenomanian"
             ],
-            "from_ma": 113.2,
+            "from_ma": 100.5,
             "to_ma": 93.9
           },
           "location": {
@@ -161075,7 +161084,6 @@
             "country": "US",
             "region": "New Jersey",
             "locality": "Union, 2½ miles east of Keyport",
-            "formation": "Monmouth",
             "region_code": "US-NJ"
           },
           "type_specimen": {
@@ -161086,7 +161094,7 @@
             "institution": "Yale Peabody Museum of Natural History",
             "material": "Articulated left distal tibia, astragalus and calcaneum, with a fragment of the distal fibula.",
             "completeness": "fragmentary",
-            "notes": "Collected by Samuel Lockwood on the shores of Raritan Bay at Keyport. The formation is given four different ways in the literature, as Monmouth by White (1973) and Prieto-Marquez and others (2006), as Woodbury by Jones (2026) and as Merchantville elsewhere, so none is recorded here. Cope took the beds to be Lower Cretaceous."
+            "notes": "Collected by Samuel Lockwood on the shores of Raritan Bay at Keyport. White (1973) and Prieto-Márquez and colleagues (2006) give the formation as the Monmouth, Horner and colleagues (2004) list the material among the Campanian Merchantville, Woodbury and Marshalltown formations, and Jones (2026) gives the Woodbury. Cope took the beds to be Lower Cretaceous.\n"
           },
           "erected_in": "cope1869c",
           "authors": "Cope, E. D.",
@@ -198181,13 +198189,13 @@
           "type_species": true,
           "period": {
             "name": [
-              "Early Cretaceous"
+              "Late Cretaceous"
             ],
             "stage": [
-              "Albian"
+              "Cenomanian"
             ],
-            "from_ma": 113.2,
-            "to_ma": 100.5
+            "from_ma": 100.5,
+            "to_ma": 93.9
           },
           "location": {
             "country": "US",
@@ -229171,14 +229179,14 @@
           "type_species": true,
           "period": {
             "name": [
-              "Late Cretaceous"
+              "Early Cretaceous"
             ],
             "stage": [
-              "Turonian",
-              "Coniacian"
+              "Aptian",
+              "Albian"
             ],
-            "from_ma": 93.9,
-            "to_ma": 85.7
+            "from_ma": 121.4,
+            "to_ma": 100.5
           },
           "location": {
             "country": "BR",
@@ -229189,6 +229197,7 @@
               -26.759444,
               -53.064722
             ],
+            "notes": "Langer and colleagues (2019) give the horizon as \"Dark red sandstones of the likely early Late Cretaceous Rio Paraná Formation\", without a stage. Arai and Dias-Brito (2023) date the formation Aptian to Albian from the pterosaurs and noasaurid of the interdigitated Goioerê Formation.\n",
             "region_code": "BR-PR"
           },
           "size": {
@@ -229239,6 +229248,17 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25021-2",
           "notes": "Source of the hip height estimate, and the appearance features."
+        },
+        {
+          "id": "arai2023a",
+          "authors": "Arai, M.; Dias-Brito, D.",
+          "year": 2023,
+          "title": "Supersequência Bauru (Cretáceo da Bacia do Paraná): revisão estratigráfica com base em dados paleontológicos recentes [The Bauru Supersequence (Cretaceous of the Paraná Basin): stratigraphic revision based on recent paleontological data]",
+          "journal": "Derbyana",
+          "volume": "44",
+          "pages": "e800",
+          "doi": "10.14295/derb.v44.800",
+          "notes": "Dates the Caiuá Group, the Rio Paraná included, Aptian to Albian from pterosaurs and a noasaurid of the interdigitated Goioerê Formation."
         }
       ],
       "taxonomy": [
