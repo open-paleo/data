@@ -316,6 +316,17 @@ the rank word dropped and any lithology word kept: `Morrison`,
 `Navajo Sandstone`. Where two different units share a name, the key takes a
 country suffix in parentheses.
 
+Beds are the exception: a bed is listed in the `beds` of its nearest
+containing unit, not in a file of its own. A bed's label usually means
+something only within one section, quarry or numbering scheme (`83` is a
+bed of one measured section at Langenberg, `L9` one of Stewart's numbered
+plant debris beds in the Wessex), so it is identified by its parent plus its
+name and is printed exactly as the literature gives it. A nested bed takes
+the same fields as any entry except `rank` and `parent`, which its position
+implies. A record's `bed` resolves among the beds of its member, or of its
+formation or group where it names no member. A bed that no source places in a
+larger unit keeps a file of its own, with `rank: bed` and no `parent`.
+
 An entry records what the primary literature says about the unit. Every value
 cites the paper it came from, and the reference note quotes that paper's own
 words, in English translation where the paper is not written in English:
@@ -363,7 +374,8 @@ every stage inside it: "Coniacian–Campanian" includes the Santonian.
   the note naming the scheme and each of those sources.
 - A child is checked against its parent, not used to widen it. A child whose
   stages fall outside its parent's is a finding to resolve by reading: either
-  the child's dating or the parent's sources are wrong or incomplete.
+  the child's dating or the parent's sources are wrong or incomplete. For a
+  nested bed the validator makes this check.
 - A unit that no source dates directly takes its parent's `period`, but never
   its `stages`.
 

@@ -341,7 +341,8 @@ export type Location = {
      * Named bed within the member, the finest rank of the lithostratigraphic
      * hierarchy (group, formation, member, bed). Published bed names only --
      * an individual paper's private lettering for informal units means
-     * nothing without that paper in hand.
+     * nothing without that paper in hand. Resolved among the `beds` of the
+     * record's member, or of its formation or group where no member is named.
      */
     bed?: string;
 
@@ -899,6 +900,15 @@ export type Dispute = {
 };
 
 /**
+ * A bed, stored inside the entry of its nearest containing unit rather than in
+ * a file of its own. A bed's label usually means something only within one
+ * section, quarry or numbering scheme ("83", "L9", "Bonebed IV"), so its
+ * identity is its parent plus its name, and it carries no `rank` or `parent`
+ * of its own.
+ */
+export type StratigraphicBed = Omit<StratigraphicUnit, "rank" | "parent" | "beds">;
+
+/**
  * A lithostratigraphic unit, one per file under `stratigraphy/<letter>/`.
  * Every value traces to a primary paper cited in `references`.
  */
@@ -911,7 +921,8 @@ export type StratigraphicUnit = {
 
     /**
      * Rank of the unit. Omitted when no source states one; absence is not a
-     * claim.
+     * claim. A bed with a containing unit lives in that unit's `beds`, so
+     * `bed` appears here only on a bed no source places in a larger unit.
      */
     rank?: "supergroup" | "group" | "subgroup" | "formation" | "member" | "bed";
 
@@ -956,6 +967,13 @@ export type StratigraphicUnit = {
      * Papers the entry's values come from.
      */
     references?: Array<ReferencePointer>;
+
+    /**
+     * Beds within this unit, each named as the literature prints it. A record's
+     * `bed` resolves among the beds of its member, or of its formation or group
+     * where it names no member.
+     */
+    beds?: Array<StratigraphicBed>;
 };
 
 /**

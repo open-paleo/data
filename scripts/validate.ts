@@ -19,6 +19,7 @@ import type {
     Reference,
     Size,
     StageInfo,
+    StratigraphicBed,
     StratigraphicUnit,
     TreeNode,
     ValidationMessage,
@@ -314,6 +315,71 @@ for (const [unitName, unit] of Object.entries(stratigraphy ?? {}))
         {
             unitByName.set(variant, unitName);
         }
+    }
+}
+
+// Beds live inside the entry of their nearest containing unit, so a bed is
+// identified by that unit plus its own name or variant. "83" means a bed of the
+// Süntel's Langenberg section and nothing else; another section's bed 83 would
+// be a different bed under a different parent.
+const bedsByParent = new Map<string, Map<string, StratigraphicBed>>();
+
+// Every entry the per-entry checks read, nested beds included, each with the
+// label a finding reports it by.
+const registryEntries: Array<{ label: string; entry: StratigraphicUnit | StratigraphicBed; filePath: string }> = [];
+
+for (const [unitName, unit] of Object.entries(stratigraphy ?? {}))
+{
+    registryEntries.push({ label: unitName, entry: unit, filePath: stratigraphyFile(unitName) });
+
+    const beds = new Map<string, StratigraphicBed>();
+
+    for (const bed of unit?.beds ?? [])
+    {
+        const bedName = bed?.name;
+
+        if (!bedName)
+        {
+            stratigraphyLayout.push([stratigraphyFile(unitName), `unit '${unitName}': a bed has no 'name'`]);
+            continue;
+        }
+        else if (beds.has(bedName))
+        {
+            stratigraphyLayout.push([stratigraphyFile(unitName), `unit '${unitName}': bed '${bedName}' is listed twice, or shares its name with another bed's variant`]);
+            continue;
+        }
+
+        for (const field of ["rank", "parent", "beds"])
+        {
+            if (field in (bed as Record<string, unknown>))
+            {
+                stratigraphyLayout.push([stratigraphyFile(unitName), `unit '${unitName}': bed '${bedName}' carries '${field}', which the containing entry already implies`]);
+            }
+        }
+
+        beds.set(bedName, bed);
+
+        for (const variant of bed.variants ?? [])
+        {
+            if (!beds.has(variant))
+            {
+                beds.set(variant, bed);
+            }
+        }
+
+        registryEntries.push({ label: `${unitName} › ${bedName}`, entry: bed, filePath: stratigraphyFile(unitName) });
+    }
+
+    if (beds.size > 0)
+    {
+        bedsByParent.set(unitName, beds);
+    }
+
+    // A bed with a containing unit is stored in that unit. The one standing
+    // file is a bed no source places in anything larger.
+    if (unit?.rank === "bed" && typeof unit.parent === "string")
+    {
+        stratigraphyLayout.push([stratigraphyFile(unitName), `bed '${unitName}' has a parent; move it into the 'beds' of '${unit.parent}' and delete this file`]);
     }
 }
 
@@ -814,16 +880,16 @@ for (const [filePath, doc] of cladeParsed)
 // names the unit resting on a citation the build cannot print.
 startCheck("Registry reference integrity");
 
-for (const [unitName, unit] of Object.entries(stratigraphy ?? {}))
+for (const { label, entry, filePath } of registryEntries)
 {
-    for (const reference of unit?.references ?? [])
+    for (const reference of entry?.references ?? [])
     {
         if (reference && reference.id && !referenceStoreIds.has(reference.id))
         {
             checkError(
                 "Registry reference integrity",
-                stratigraphyFile(unitName),
-                `${unitName}: reference '${reference.id}' does not resolve to a store entry (references/${reference.id[0]}/${reference.id}.yml)`);
+                filePath,
+                `${label}: reference '${reference.id}' does not resolve to a store entry (references/${reference.id[0]}/${reference.id}.yml)`);
         }
     }
 }
@@ -1582,6 +1648,54 @@ startCheck("Formation rank");
 
 const groupRankWord = /\b(Group|Grp\.?|Subgroup|Supergroup)$/;
 
+/**
+ * Checks that a record's `bed` is a bed of the unit the record places it in.
+ * A bed is looked for among the beds of the record's member, then its
+ * formation, then its group, nearest first, since a bed label means something
+ * only inside its own section. A record naming none of those can still name a
+ * bed no source places in a larger unit, which is the one kind kept as its own
+ * entry.
+ *
+ * @param filePath - Genus file the record is in, for reporting.
+ * @param speciesName - The record's species, for reporting.
+ * @param location - The record's location block.
+ * @param bedName - The bed the record names.
+ */
+function checkBedResolution(filePath: string, speciesName: string, location: Species["location"], bedName: string): void
+{
+    const containers = (["member", "formation", "group"] as const)
+        .map((field) => location?.[field])
+        .filter((value): value is string => typeof value === "string")
+        .map((value) => unitByName.get(value))
+        .filter((unitName): unitName is string => unitName !== undefined);
+
+    if (containers.some((unitName) => bedsByParent.get(unitName)?.has(bedName)))
+    {
+        return;
+    }
+
+    const standing = unitByName.get(bedName);
+
+    if (standing !== undefined && stratigraphy[standing]?.rank === "bed" && stratigraphy[standing]?.parent === undefined)
+    {
+        return;
+    }
+    else if (containers.length === 0)
+    {
+        checkError(
+            "Formation rank",
+            filePath,
+            `species '${speciesName}': bed '${bedName}' names no containing unit — give the record the member or formation the bed belongs to`);
+    }
+    else
+    {
+        checkError(
+            "Formation rank",
+            filePath,
+            `species '${speciesName}': bed '${bedName}' is not among the beds of ${containers.map((unitName) => `'${unitName}'`).join(" or ")} — add it to the right entry's 'beds', or correct the record's member or formation`);
+    }
+}
+
 const ranksForField: Record<string, Set<string>> = {
     group: new Set([ "group", "subgroup", "supergroup" ]),
     formation: new Set([ "formation" ]),
@@ -1614,6 +1728,12 @@ for (const [filePath, doc] of genusParsed)
                     "Formation rank",
                     filePath,
                     `species '${species.name ?? "?"}': formation '${value}' names a group — put it in 'group' with the rank word dropped`);
+                continue;
+            }
+
+            if (field === "bed")
+            {
+                checkBedResolution(filePath, species.name ?? "?", location, value);
                 continue;
             }
 
@@ -1702,13 +1822,13 @@ for (const [filePath, doc] of genusParsed)
 // these envelopes yet; that waits on the taxon age audit (#2074).
 startCheck("Stratigraphic unit ages");
 
-for (const [unitName, unit] of Object.entries(stratigraphy ?? {}))
+for (const { label, entry, filePath } of registryEntries)
 {
-    const periods = unit?.period;
+    const periods = entry?.period;
 
     if (!Array.isArray(periods) || periods.length === 0)
     {
-        checkError("Stratigraphic unit ages", stratigraphyFile(unitName), `unit '${unitName}': no period`);
+        checkError("Stratigraphic unit ages", filePath, `unit '${label}': no period`);
         continue;
     }
 
@@ -1716,24 +1836,50 @@ for (const [unitName, unit] of Object.entries(stratigraphy ?? {}))
     {
         if (!allowedPeriods.has(periodName))
         {
-            checkError("Stratigraphic unit ages", stratigraphyFile(unitName), `unit '${unitName}': unknown period '${periodName}'`);
+            checkError("Stratigraphic unit ages", filePath, `unit '${label}': unknown period '${periodName}'`);
         }
     }
 
-    for (const stageName of unit?.stages ?? [])
+    for (const stageName of entry?.stages ?? [])
     {
         const stageInfo = stages[stageName];
 
         if (!stageInfo)
         {
-            checkError("Stratigraphic unit ages", stratigraphyFile(unitName), `unit '${unitName}': unknown stage '${stageName}'`);
+            checkError("Stratigraphic unit ages", filePath, `unit '${label}': unknown stage '${stageName}'`);
         }
         else if (!periods.includes(stageInfo.period))
         {
             checkError(
                 "Stratigraphic unit ages",
+                filePath,
+                `unit '${label}': stage '${stageName}' belongs to '${stageInfo.period}', which is not among its periods`);
+        }
+    }
+}
+
+// A bed sits inside its parent, so a stage the bed carries and the parent does
+// not is a finding to resolve by reading: either the bed's dating or the
+// parent's sources are wrong or incomplete.
+for (const [unitName, beds] of bedsByParent)
+{
+    const parentStages = stratigraphy[unitName]?.stages ?? [];
+
+    if (parentStages.length === 0)
+    {
+        continue;
+    }
+
+    for (const bed of new Set(beds.values()))
+    {
+        const outside = (bed.stages ?? []).filter((stageName) => !parentStages.includes(stageName));
+
+        if (outside.length > 0)
+        {
+            checkError(
+                "Stratigraphic unit ages",
                 stratigraphyFile(unitName),
-                `unit '${unitName}': stage '${stageName}' belongs to '${stageInfo.period}', which is not among its periods`);
+                `bed '${unitName} › ${bed.name}': stage${outside.length > 1 ? "s" : ""} ${outside.join(", ")} fall${outside.length > 1 ? "" : "s"} outside its parent's stages`);
         }
     }
 }
