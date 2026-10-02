@@ -38,6 +38,16 @@ Initial public release, establishing the v1 output schema.
   `dorsal spines` narrowed to bony dermal spines along the back. Four
   sauropod and theropod records whose tall vertebral spines had been tagged
   `dorsal spines` now use the new tag. Output schema 1.8.0 → 1.9.0.
+- `thesis` and `school` on reference records, with a `thesis_types`
+  vocabulary (`doctoral`, `masters`, `habilitation`,
+  `dissertation-abstract`). Theses had no field of their own and were
+  recorded as a university `publisher` with a note, or with the degree
+  written into `book`; 13 now carry the fields. Output schema 1.9.0 → 1.10.0.
+- `references.bib` exports each reference with its proper BibTeX type:
+  `@phdthesis` and `@mastersthesis` with `school`, `@book` for a standalone
+  work with a publisher, and `@misc` for one without. Standalone books had
+  been exported as journal-less `@article` entries, and `publisher` was
+  never written; books and chapters now carry it.
 - `period.resolution`, distinguishing an age determined for a taxon from one
   that is simply its unit's. `resolution: unit` states that `stage` carries
   the containing lithostratigraphic unit's range rather than a

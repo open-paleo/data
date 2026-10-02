@@ -645,6 +645,18 @@ export type Reference = {
     series?: string;
 
     /**
+     * Degree the work was submitted for, when it is a thesis ("doctoral",
+     * "masters", "habilitation", "dissertation-abstract"). A thesis carries
+     * `school` and neither `journal` nor `book`.
+     */
+    thesis?: string;
+
+    /**
+     * Awarding institution of a thesis.
+     */
+    school?: string;
+
+    /**
      * Publisher name, if applicable.
      */
     publisher?: string;
@@ -1079,6 +1091,11 @@ export type Schema = {
      * `notable_specimens[]`.
      */
     former_id_reasons?: Array<string>;
+
+    /**
+     * Allowed thesis degrees (applied to the reference store's `thesis`).
+     */
+    thesis_types?: Array<string>;
 
     /**
      * Allowed reasons a non-type specimen is notable. Applied to

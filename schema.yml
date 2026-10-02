@@ -71,6 +71,21 @@ former_id_reasons:
   # transfer, a collection being absorbed. Both institutions are recorded.
   - rehoused
 
+# The degree a thesis was submitted for (reference store `thesis`). A thesis
+# entry names its awarding institution in `school` and carries no `journal`
+# or `book`.
+thesis_types:
+  # A PhD or other doctoral thesis.
+  - doctoral
+  # A master's thesis, including master's-level degrees such as the
+  # Algerian Magistère.
+  - masters
+  # A post-doctoral qualifying thesis, such as the German Habilitation or
+  # the Brazilian livre-docência.
+  - habilitation
+  # A published summary of a dissertation, such as the Soviet avtoreferat.
+  - dissertation-abstract
+
 # Why a non-type specimen qualifies as notable (notable_specimens[].category).
 # category is OPTIONAL: omit it when no value genuinely fits rather than
 # forcing the nearest label. One specimen gets the single best-fit category.

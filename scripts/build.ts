@@ -599,7 +599,7 @@ const dataset: Dataset = {
         clade_count: Object.keys(clades).length,
         genus_count: Object.keys(genera).length,
         license: "CC-BY-4.0",
-        schema_version: "1.9.0",
+        schema_version: "1.10.0",
         version,
     },
     tree,
@@ -647,9 +647,48 @@ let bib = `% Open Paleo — CC BY 4.0
 
 `;
 
+/**
+ * Chooses the BibTeX entry type for a store reference. A thesis takes its
+ * type from the degree; otherwise a `journal` makes an article, a `book` a
+ * chapter, and a work with neither is a book when it names a publisher and a
+ * miscellaneous item when it does not.
+ *
+ * @param reference - The store reference to classify.
+ * @returns The BibTeX entry type, without the leading "@".
+ */
+function bibEntryType(reference: Reference): string
+{
+    if (reference.thesis === "doctoral" || reference.thesis === "habilitation")
+    {
+        return "phdthesis";
+    }
+    else if (reference.thesis === "masters")
+    {
+        return "mastersthesis";
+    }
+    else if (reference.thesis === "dissertation-abstract")
+    {
+        return "misc";
+    }
+    else if (reference.journal)
+    {
+        return "article";
+    }
+    else if (reference.book)
+    {
+        return "incollection";
+    }
+    else if (reference.publisher)
+    {
+        return "book";
+    }
+
+    return "misc";
+}
+
 for (const reference of [...referenceStore.values()].sort((first, second) => (first.id ?? "").localeCompare(second.id ?? "")))
 {
-    const entryType = reference.book ? "incollection" : "article";
+    const entryType = bibEntryType(reference);
     const fields = new Array<string>();
 
     if (reference.authors)
@@ -675,6 +714,29 @@ for (const reference of [...referenceStore.values()].sort((first, second) => (fi
     if (reference.book)
     {
         fields.push(`  booktitle = {${reference.book}}`);
+    }
+
+    if (reference.school && (entryType === "phdthesis" || entryType === "mastersthesis"))
+    {
+        fields.push(`  school = {${reference.school}}`);
+    }
+
+    if (reference.thesis === "habilitation")
+    {
+        fields.push("  type = {Habilitation thesis}");
+    }
+    else if (reference.thesis === "dissertation-abstract")
+    {
+        // @misc has no school field, so the awarding institution travels in
+        // howpublished alongside the kind of work.
+        const institution = reference.school ? `, ${reference.school}` : "";
+
+        fields.push(`  howpublished = {Dissertation abstract${institution}}`);
+    }
+
+    if (reference.publisher && (entryType === "book" || entryType === "incollection"))
+    {
+        fields.push(`  publisher = {${reference.publisher}}`);
     }
 
     if (reference.volume)

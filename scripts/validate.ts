@@ -205,6 +205,7 @@ const allowedCompleteness = new Set(schema.completeness ?? []);
 const allowedHolotypeStatus = new Set(schema.holotype_status ?? []);
 const allowedSpecimenTypes = new Set(schema.specimen_types ?? []);
 const allowedFormerIdReasons = new Set(schema.former_id_reasons ?? []);
+const allowedThesisTypes = new Set(schema.thesis_types ?? []);
 const allowedSpecimenCategories = new Set(schema.specimen_categories ?? []);
 const allowedIcznRulingTypes = new Set(schema.iczn_ruling_types ?? []);
 const allowedIntegument = new Set(schema.integument ?? []);
@@ -1134,8 +1135,42 @@ for (const [filePath, entry] of referenceStoreParsed)
 
     // journal/book are optional: an article carries `journal`, a chapter
     // carries `book` (its containing volume), and a standalone book,
-    // monograph, thesis, or press release carries neither — its venue is
-    // recorded via `publisher` (and `url`/`notes` where applicable).
+    // monograph, or press release carries neither — its venue is recorded
+    // via `publisher` (and `url`/`notes` where applicable). A thesis carries
+    // neither either, and names its awarding institution in `school`.
+    if (entry.thesis !== undefined)
+    {
+        if (!allowedThesisTypes.has(entry.thesis))
+        {
+            checkError(
+                "Reference store integrity",
+                filePath,
+                `reference '${entry.id ?? baseName}': thesis '${entry.thesis}' is not one of ${[...allowedThesisTypes].join(", ")}`);
+        }
+
+        if (!entry.school)
+        {
+            checkError(
+                "Reference store integrity",
+                filePath,
+                `reference '${entry.id ?? baseName}': a thesis must name its awarding institution in 'school'`);
+        }
+
+        if (entry.journal || entry.book)
+        {
+            checkError(
+                "Reference store integrity",
+                filePath,
+                `reference '${entry.id ?? baseName}': a thesis carries neither 'journal' nor 'book'`);
+        }
+    }
+    else if (entry.school)
+    {
+        checkError(
+            "Reference store integrity",
+            filePath,
+            `reference '${entry.id ?? baseName}': 'school' is only for a thesis; add 'thesis' or use 'publisher'`);
+    }
 }
 
 // 11a. Stray files in the reference store
@@ -3202,7 +3237,7 @@ if (outputSchema)
 
     const enumDefNames: Array<string> = [
         "status", "placement", "synonym_types", "diet", "locomotion", "completeness",
-        "holotype_status", "specimen_types", "former_id_reasons",
+        "holotype_status", "specimen_types", "former_id_reasons", "thesis_types",
         "specimen_categories",
         "iczn_ruling_types", "integument", "integument_evidence",
         "paleoenvironments", "identifier_sources", "periods",

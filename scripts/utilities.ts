@@ -49,7 +49,7 @@ export function referenceBucket(key: string): string
  */
 const referenceFieldOrder: Array<keyof Reference> = [
     "id", "authors", "year", "title", "journal", "book", "series",
-    "publisher", "volume", "issue", "pages", "article_number", "doi",
+    "thesis", "school", "publisher", "volume", "issue", "pages", "article_number", "doi",
     "isbn", "url",
 ];
 
