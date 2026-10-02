@@ -385,6 +385,15 @@ across several units, the title of a cited paper, a numeric age in millions of
 years with no stage or epoch named, and any age reached by your own
 correlation.
 
+A range printed in impossible order does not date a unit either, because its
+author did not check it against a chart. That covers a range written youngest
+first ("Albian–Aptian"), and a boundary hedge whose two stages are not
+adjacent ("late Barremian or earliest Albian", with the whole Aptian between):
+the wording claims a boundary the stages do not share. Quote such a phrase as
+printed, but do not let it add a stage. A plain either-or between two
+readings ("Kimmeridgian or Neocomian") is different: it is a paper's own
+undecided dating, and contributes both readings and every stage between them.
+
 Validation requires `period` on every entry and checks each stage against it.
 A record's own age is a separate finding: it must fall within its unit's
 range, not copy it.
