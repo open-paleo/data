@@ -1751,12 +1751,16 @@ for (const [filePath, doc] of genusParsed)
             const rank = stratigraphy[unitName]?.rank;
 
             // A unit nobody has assigned a rank to cannot contradict a field.
+            // A mismatch is either the wrong field or a different unit that
+            // shares the name -- the Hekou Group of Gansu and the Hekou
+            // Formation of Jiangxi are unrelated -- so the message offers both
+            // rather than steering a record onto the wrong unit.
             if (rank !== undefined && !ranksForField[field].has(rank))
             {
                 checkError(
                     "Formation rank",
                     filePath,
-                    `species '${species.name ?? "?"}': ${field} '${value}' is recorded in the stratigraphic registry as a ${rank} — move it to '${rank === "subgroup" || rank === "supergroup" ? "group" : rank}'`);
+                    `species '${species.name ?? "?"}': ${field} '${value}' is recorded in the stratigraphic registry as a ${rank} — move it to '${rank === "subgroup" || rank === "supergroup" ? "group" : rank}', or, if the record's unit is a different one of the same name, give each its own entry with a country suffix`);
             }
         }
     }
