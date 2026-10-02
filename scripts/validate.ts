@@ -219,6 +219,13 @@ const allowedCountries = new Set(Object.keys(schema.countries ?? {}));
 const allowedPeriods = new Set(schema.periods ?? []);
 const stages: Record<string, StageInfo> = schema.stages ?? {};
 
+// Every stage oldest first, by its base age, and each stage's place in that
+// order, so a list of stages can be checked for order and gaps.
+const stageOrder = Object.entries(stages)
+    .sort(([, first], [, second]) => second.from_ma - first.from_ma)
+    .map(([stageName]) => stageName);
+const stagePosition = new Map(stageOrder.map((stageName, position) => [stageName, position]));
+
 const institutionRegistry = parseYamlContent(
     fs.readFileSync(path.join(root, "institutions.yaml"), "utf8"),
 ) as Record<string, unknown>;
@@ -1858,6 +1865,34 @@ for (const { label, entry, filePath } of registryEntries)
                 "Stratigraphic unit ages",
                 filePath,
                 `unit '${label}': stage '${stageName}' belongs to '${stageInfo.period}', which is not among its periods`);
+        }
+    }
+
+    // Stages are a span, so they run oldest first with nothing skipped. A gap
+    // would claim two disjoint intervals, which no single unit records; a
+    // range that leaves out a stage inside it is written in full instead.
+    const positions = (entry?.stages ?? [])
+        .map((stageName) => stagePosition.get(stageName))
+        .filter((position): position is number => position !== undefined);
+
+    for (let index = 1; index < positions.length; index += 1)
+    {
+        if (positions[index] <= positions[index - 1])
+        {
+            checkError(
+                "Stratigraphic unit ages",
+                filePath,
+                `unit '${label}': stages are not oldest first — '${stageOrder[positions[index]]}' follows '${stageOrder[positions[index - 1]]}'`);
+            break;
+        }
+        else if (positions[index] !== positions[index - 1] + 1)
+        {
+            const missing = stageOrder.slice(positions[index - 1] + 1, positions[index]);
+
+            checkError(
+                "Stratigraphic unit ages",
+                filePath,
+                `unit '${label}': stages skip ${missing.join(", ")} between '${stageOrder[positions[index - 1]]}' and '${stageOrder[positions[index]]}' — list every stage the span covers`);
         }
     }
 }
