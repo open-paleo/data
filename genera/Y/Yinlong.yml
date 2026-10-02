@@ -43,8 +43,10 @@ species:
     type_species: true
     period:
       name:
+        - Middle Jurassic
         - Late Jurassic
       stage:
+        - Callovian
         - Oxfordian
     location:
       country: CN
@@ -52,6 +54,11 @@ species:
       region: CN-XJ
       formation: Shishugou
       part: upper
+      notes: >
+        Xu and colleagues (2006) place the holotype in the upper Shishugou and
+        correlate it with the Oxfordian. Han and colleagues (2015) put the
+        same part of the formation between tuffs dated 162.2 and 159.7 Ma,
+        which on GTS2020 straddle the base of the Oxfordian.
     type_specimen:
       specimen_id: [ IVPP V14530 ]
       specimen_type: holotype
@@ -75,3 +82,5 @@ references:
   - id: xu2006a
   - id: jones2026a
     notes: Source of the hip height estimate, and the appearance features.
+  - id: han2015a
+    notes: Places Hualianceratops in the same part of the Shishugou as Yinlong, between tuffs dated 162.2 and 159.7 Ma.

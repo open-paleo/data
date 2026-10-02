@@ -29,14 +29,22 @@ species:
     type_species: true
     period:
       name:
+        - Middle Jurassic
         - Late Jurassic
       stage:
+        - Bathonian
+        - Callovian
         - Oxfordian
     location:
       country: CN
       locality: Paikushan
       region: CN-XJ
       formation: Shishugou
+      notes: >
+        Young (1937) names no formation: the bones came from a hill of
+        sandstone "overlying immediately upon a Jurassic plant-bearing layer"
+        about 250 li north of Chitai. Dai and colleagues (2025) list the
+        species from the Shishugou, with no level within it.
     type_specimen:
       specimen_id: [ IVPP AS 40002-3 ]
       specimen_type: holotype
@@ -44,3 +52,5 @@ species:
     erected_in: young1937a
 references:
   - id: young1937a
+  - id: dai2025b
+    notes: Lists Tienshanosaurus chitaiensis among the species of the Callovian–Oxfordian Shishugou Formation.
