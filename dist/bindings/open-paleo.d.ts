@@ -114,8 +114,14 @@ export type Periods =
   | "Early Cretaceous"
   | "Late Permian"
   | "Middle Permian"
-  | "Early Permian";
+  | "Early Permian"
+  | "Paleocene"
+  | "Eocene";
 export type Stages =
+  | "Ypresian"
+  | "Thanetian"
+  | "Selandian"
+  | "Danian"
   | "Maastrichtian"
   | "Campanian"
   | "Santonian"

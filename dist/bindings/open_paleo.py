@@ -297,9 +297,15 @@ class Periods(Enum):
     Late_Permian = 'Late Permian'
     Middle_Permian = 'Middle Permian'
     Early_Permian = 'Early Permian'
+    Paleocene = 'Paleocene'
+    Eocene = 'Eocene'
 
 
 class Stages(Enum):
+    Ypresian = 'Ypresian'
+    Thanetian = 'Thanetian'
+    Selandian = 'Selandian'
+    Danian = 'Danian'
     Maastrichtian = 'Maastrichtian'
     Campanian = 'Campanian'
     Santonian = 'Santonian'
