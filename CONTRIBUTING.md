@@ -466,7 +466,10 @@ quoted, a conversion is only worth adding when it changes the result.
 
 Validation requires `period` on every entry and checks each stage against it.
 A record's own age is a separate finding: it must fall within its unit's
-range, not copy it.
+range, not copy it. A species' `period` and `stages` describe the horizon its
+type specimen came from, not every horizon the species is known from. Referred
+material from older or younger beds goes in the location notes, and it does not
+widen the stages.
 
 ## Image Requirements
 
