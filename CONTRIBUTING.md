@@ -395,9 +395,9 @@ every stage inside it: "Coniacian–Campanian" includes the Santonian.
 
 These do not date a unit: the age of a different unit (a correlative, or a
 unit of the same name elsewhere), a taxon occurrence table that lists one age
-across several units, the title of a cited paper, a numeric age in millions of
-years with no stage or epoch named, and any age reached by your own
-correlation.
+across several units, the title of a cited paper, and any age reached by your
+own correlation. A numeric age in millions of years dates a unit only as
+described under [Reading ages on the chart](#reading-ages-on-the-chart).
 
 A range printed in impossible order does not date a unit either, because its
 author did not check it against a chart. That covers a range written youngest
@@ -407,6 +407,57 @@ the wording claims a boundary the stages do not share. Quote such a phrase as
 printed, but do not let it add a stage. A plain either-or between two
 readings ("Kimmeridgian or Neocomian") is different: it is a paper's own
 undecided dating, and contributes both readings and every stage between them.
+
+### Reading ages on the chart
+
+We use the stage boundaries of the ICS International Chronostratigraphic
+Chart v2024/12, which are the base ages listed in `schema.yml`. Papers date
+rocks against whichever chart was current when they were written, and some
+boundaries have moved since. The base of the Barremian, for example, is
+126.5 million years ago in GTS2020 but 125.77 in the current ICS chart, so
+"126 million years old" means Barremian on one chart and Hauterivian on the
+other. When you place a numeric age on a stage, use the current chart and say
+so in the note.
+
+Most of the time a paper names a stage and the number is only there to help
+the reader ("a Cenomanian age ... about 93 million years ago"). Go by the
+stage the paper names, even if the number falls in a neighboring stage on
+today's chart, and mention the difference in the note. The stage was usually
+worked out from fossils, magnetic reversals or the units above and below, and
+that evidence does not change when a chart does.
+
+Sometimes it is the other way around: the paper had a radiometric date and
+looked up its stage on the chart of its day. A paper that writes "122 Ma
+(early Aptian)" was right in 1999, but 122 million years ago is late
+Barremian on today's chart. In that case go by the number, and say in the
+note that the paper's stage came from an older chart.
+
+A few more cases come up often:
+
+- **Uncertainties.** Place a date by its central value, and say in the note
+  if its error range reaches into the next stage.
+- **Recalibrated dates.** Radiometric dates are sometimes recalculated
+  against newer standards. Use the newer figure and mention the older one.
+  Also watch for old boundary ages quoted as if they were dates: a range
+  ending at "65.5 Ma" is using an older age for the end of the Cretaceous
+  (66.0 today), not dating the rock.
+- **Limits are not ages.** A maximum depositional age from detrital zircons,
+  or the date of a lava flow above or below the unit, tells you how old or
+  young the unit can be, not when it formed. Do not add a stage from it. If
+  it rules out a stage that another source gives, record the disagreement as
+  a `dispute`.
+- **Second-hand dates.** If a paper reports a date from someone else's work,
+  read that original work before the date adds a stage. Until then, the note
+  can mention it as reported.
+
+Some papers date units only in regional or obsolete stages (Neocomian,
+Senonian, Rhaetic, Volgian, land-vertebrate faunachrons, North American land
+mammal ages). Convert these using the GTS2020 period chapters, or a published
+regional correlation where those chapters give none, and quote the conversion
+rather than doing it from memory. Cite the correlation on the unit, and put
+the sentence about the conversion in the note on the paper being converted.
+If the unit already has international stages and the regional term is just
+quoted, a conversion is only worth adding when it changes the result.
 
 Validation requires `period` on every entry and checks each stage against it.
 A record's own age is a separate finding: it must fall within its unit's
