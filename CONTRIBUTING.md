@@ -145,6 +145,17 @@ taken from the literature rather than from a taxobox.
   validation check enforces this on editorial fields and ignores
   metadata fields.
 - **English only.** All text content (descriptions, notes, commit messages, issues) should be in English for consistency.
+- **Write about the literature, not the files.** Editorial prose states what
+  sources say about a taxon or unit. It does not describe the dataset itself:
+  not "recorded here", "the arrangement adopted here" or "this entry", but
+  the placement and its source ("placed within Lithostrotia following
+  Carballido and colleagues (2022)"). A claim that no source says something
+  is scoped to the works cited ("none of the works cited for this taxon").
+- **No gendered pronouns for people.** Name the person, use "they", or
+  restructure the sentence, so prose never assigns a gender its source does
+  not state. A quotation keeps its source's wording.
+- **One dash style.** A dash in prose is a spaced em dash ( — ); a range
+  takes an unspaced en dash (Aptian–Albian, 163–145 Ma).
 
 ## Inline Reference Format
 
