@@ -266,6 +266,10 @@ periods:
   - Late Permian
   - Middle Permian
   - Early Permian
+  # Paleocene before Eocene: period matching is by substring, and
+  # "paleocene" contains "eocene".
+  - Paleocene
+  - Eocene
 
 # Chronostratigraphic stages, youngest first, with their boundary ages in
 # millions of years. Boundaries follow the ICS International
@@ -278,6 +282,22 @@ periods:
 # suit a record: a boundary that disagrees with a paper is a disagreement
 # about that paper's scale, not a licence to edit the chart.
 stages:
+  Ypresian:
+    period: Eocene
+    from_ma: 56.0
+    to_ma: 48.07
+  Thanetian:
+    period: Paleocene
+    from_ma: 59.24
+    to_ma: 56.0
+  Selandian:
+    period: Paleocene
+    from_ma: 61.66
+    to_ma: 59.24
+  Danian:
+    period: Paleocene
+    from_ma: 66.0
+    to_ma: 61.66
   Maastrichtian:
     period: Late Cretaceous
     from_ma: 72.2

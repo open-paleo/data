@@ -43,6 +43,14 @@ Initial public release, establishing the v1 output schema.
   `dissertation-abstract`). Theses had no field of their own and were
   recorded as a university `publisher` with a note, or with the degree
   written into `book`; 13 now carry the fields. Output schema 1.9.0 → 1.10.0.
+- Paleogene ages: `Paleocene` and `Eocene` in the `periods` vocabulary, and
+  the Danian, Selandian, Thanetian and Ypresian stages, with boundaries from
+  the ICS chart v2024/12 the stage table already follows. Four registry units
+  continue past the Cretaceous (the Prince Creek, the Yezo Group, the
+  Shanyang and the Phosphates of the Oulad Abdoun Basin), and their younger
+  part could only be recorded in a note. The tree is not rooted at
+  Dinosauria, so further periods are added as records need them. Output
+  schema 1.10.0 → 1.11.0.
 - `references.bib` exports each reference with its proper BibTeX type:
   `@phdthesis` and `@mastersthesis` with `school`, `@book` for a standalone
   work with a publisher, and `@misc` for one without. Standalone books had
