@@ -370,7 +370,12 @@ Cenomanian–Turonian, the unit spans both stages, and a newer, narrower dating
 adds to the older readings rather than replacing them. A stated range covers
 every stage inside it: "Coniacian–Campanian" includes the Santonian.
 
-- A source that names only an epoch gives `period` alone.
+- A source that names only an epoch gives `period` alone. The exception is
+  a source that places the boundary between two epochs inside the unit, as
+  with the end of the Cretaceous within the Scollard Formation: the beds just
+  above that boundary belong to the first stage of the later epoch, so the
+  unit takes that stage. A span alone ("late Campanian to Paleocene") is not
+  enough, because the unit may have a gap at the boundary.
 - A source that names stages gives `stages`, and `period` is the epochs those
   stages fall in.
 - When the sources name both, both come from the literature. If the epochs the
