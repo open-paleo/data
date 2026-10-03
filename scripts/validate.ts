@@ -702,6 +702,11 @@ for (const [filePath, doc] of genusParsed)
 // 9. Stage-period agreement
 startCheck("Stage-period agreement");
 
+// The values `period.resolution` takes. `reworked` and `horizon` let a record's
+// stages leave its unit's, so each must be explained in the location notes.
+const periodResolutions = new Set([ "unit", "reworked", "horizon" ]);
+const outsideUnitResolutions = new Set([ "reworked", "horizon" ]);
+
 for (const [filePath, doc] of genusParsed)
 {
     if (!doc || !Array.isArray(doc.species))
@@ -754,6 +759,25 @@ for (const [filePath, doc] of genusParsed)
                         `species '${speciesLabel}': stage '${stageName}' belongs to '${stageInfo.period}', not listed in period names`);
                 }
             }
+        }
+
+        if (period.resolution === undefined)
+        {
+            continue;
+        }
+        else if (!periodResolutions.has(period.resolution))
+        {
+            checkError(
+                "Stage-period agreement",
+                filePath,
+                `species '${speciesLabel}': unknown resolution '${period.resolution}' — use ${[ ...periodResolutions ].map((value) => `'${value}'`).join(", ")}`);
+        }
+        else if (outsideUnitResolutions.has(period.resolution) && !species.location?.notes?.trim())
+        {
+            checkError(
+                "Stage-period agreement",
+                filePath,
+                `species '${speciesLabel}': resolution '${period.resolution}' needs location notes saying why the stages leave the unit`);
         }
     }
 }
@@ -1829,8 +1853,8 @@ for (const [filePath, doc] of genusParsed)
 // `period` is required on each registry entry. `stages` is optional
 // and narrows it: every stage listed must belong to one of the entry's periods.
 // An empty or absent `stages` means no source published the age at stage
-// resolution, never that the unit is undated. Records are not checked against
-// these envelopes yet; that waits on the taxon age audit (#2074).
+// resolution, never that the unit is undated. Records are held to these stages
+// in 13d.
 startCheck("Stratigraphic unit ages");
 
 for (const { label, entry, filePath } of registryEntries)
@@ -1920,6 +1944,96 @@ for (const [unitName, beds] of bedsByParent)
                 stratigraphyFile(unitName),
                 `bed '${unitName} › ${bed.name}': stage${outside.length > 1 ? "s" : ""} ${outside.join(", ")} fall${outside.length > 1 ? "" : "s"} outside its parent's stages`);
         }
+    }
+}
+
+// 13d. A record's stages fall within those of the unit it names
+//
+// A record is dated by the horizon of its type specimen, which lies inside the
+// finest unit the record names, so its stages cannot reach past that unit's.
+// A stage outside is a finding to resolve by reading the papers the record
+// cites, never a reason to widen the unit. The two exceptions are a type
+// reworked from older beds and a type whose bed is uncertain; each is declared
+// in `period.resolution` and explained in the location notes.
+startCheck("Record stages");
+
+/**
+ * Finds the finest registry unit a record names and the stages it carries.
+ * A bed is looked for among the beds of the record's member, formation and
+ * group, nearest first, then as a standing entry; otherwise the member,
+ * formation and group are tried in turn.
+ *
+ * @param location - The record's location block.
+ * @returns The unit's label and stages, or undefined when the record names no
+ *     registry unit.
+ */
+function recordUnit(location: Species["location"]): { label: string; stages: Array<string> } | undefined
+{
+    const containers = (["member", "formation", "group"] as const)
+        .map((field) => location?.[field])
+        .filter((value): value is string => typeof value === "string")
+        .map((value) => unitByName.get(value))
+        .filter((unitName): unitName is string => unitName !== undefined);
+    const bedName = location?.bed;
+
+    if (typeof bedName === "string")
+    {
+        for (const unitName of containers)
+        {
+            const bed = bedsByParent.get(unitName)?.get(bedName);
+
+            if (bed)
+            {
+                return { label: `${unitName} › ${bed.name}`, stages: bed.stages ?? [] };
+            }
+        }
+
+        const standing = unitByName.get(bedName);
+
+        if (standing !== undefined && stratigraphy[standing]?.rank === "bed")
+        {
+            return { label: standing, stages: stratigraphy[standing]?.stages ?? [] };
+        }
+    }
+
+    const unitName = containers[0];
+
+    return unitName === undefined ? undefined : { label: unitName, stages: stratigraphy[unitName]?.stages ?? [] };
+}
+
+for (const [filePath, doc] of genusParsed)
+{
+    if (!doc || !Array.isArray(doc.species))
+    {
+        continue;
+    }
+
+    for (const species of doc.species)
+    {
+        const recordStages = species?.period?.stage ?? [];
+        const unit = recordUnit(species?.location);
+
+        if (recordStages.length === 0 || unit === undefined || unit.stages.length === 0)
+        {
+            continue;
+        }
+
+        const outside = recordStages.filter((stageName) => !unit.stages.includes(stageName));
+        const resolution = species.period?.resolution;
+
+        if (outside.length === 0)
+        {
+            continue;
+        }
+        else if (resolution !== undefined && outsideUnitResolutions.has(resolution))
+        {
+            continue;
+        }
+
+        checkError(
+            "Record stages",
+            filePath,
+            `species '${species.name ?? "?"}': stage${outside.length > 1 ? "s" : ""} ${outside.join(", ")} fall${outside.length > 1 ? "" : "s"} outside '${unit.label}' (${unit.stages.join(", ")}) — narrow the record to what its papers give for the type horizon, or, for a reworked type or an uncertain bed, set period.resolution to 'reworked' or 'horizon' and say why in the location notes`);
     }
 }
 

@@ -273,9 +273,19 @@ export type Period = {
     to_ma?: number;
 
     /**
-     * How precisely the age is known. `unit` means no age finer than the
-     * containing lithostratigraphic unit has been published, so the stages
-     * above are that unit's range rather than a determination for this taxon.
+     * How the stages relate to the unit the record names.
+     *
+     * - `unit`: no age finer than the containing lithostratigraphic unit has
+     *   been published, so the stages are that unit's range rather than a
+     *   determination for this taxon.
+     * - `reworked`: the type specimen was reworked from older beds, so the
+     *   stages are the age of those beds and fall outside the unit it was
+     *   found in.
+     * - `horizon`: which bed yielded the type specimen is uncertain, so the
+     *   stages cover every candidate bed and reach outside the named unit.
+     *
+     * `reworked` and `horizon` are the only ways a record's stages may fall
+     * outside its unit's, and each needs the location notes to say why.
      * Absent means the age is finer than the unit, or has not been checked --
      * the two are deliberately not distinguished, since only a reading of the
      * literature can tell them apart.

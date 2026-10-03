@@ -60,8 +60,15 @@ Initial public release, establishing the v1 output schema.
   that is simply its unit's. `resolution: unit` states that `stage` carries
   the containing lithostratigraphic unit's range rather than a
   determination; absent means the age is finer, or has not been checked.
-  Validation rejects `unit` on a record whose stages are not the unit's
-  range. Output schema 1.5.0 → 1.6.0.
+  Output schema 1.5.0 → 1.6.0.
+- `reworked` and `horizon` values for `period.resolution`, and validation
+  that holds a record's stages within those of the finest unit it names (bed,
+  member, formation or group). A record is dated by its type specimen's
+  horizon, so a stage outside its unit is an error unless the record declares
+  one of the two exceptions and explains it in the location notes: a type
+  reworked from older beds takes their age (`reworked`), and a type whose bed
+  is uncertain takes the stages of every candidate bed (`horizon`). Output
+  schema 1.11.0 → 1.12.0.
 - `location.notes`, holding provenance caveats on the other location fields
   — material not collected in situ, a locality reconstructed after the fact,
   an unrecorded horizon, or a member deliberately omitted. Not a general

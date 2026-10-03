@@ -469,7 +469,12 @@ A record's own age is a separate finding: it must fall within its unit's
 range, not copy it. A species' `period` and `stages` describe the horizon its
 type specimen came from, not every horizon the species is known from. Referred
 material from older or younger beds goes in the location notes, and it does not
-widen the stages.
+widen the stages. Two kinds of record may reach outside their unit, and each
+says so in `period.resolution` and explains why in the location notes: a type
+specimen reworked from older beds (`reworked`) takes the age of the beds it was
+reworked from, and a type whose bed is uncertain (`horizon`) takes the stages of
+every bed it may have come from. Validation reports any other record whose
+stages fall outside its unit's.
 
 ## Image Requirements
 
