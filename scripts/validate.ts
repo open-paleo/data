@@ -3267,6 +3267,16 @@ function checkCitationFormat(filePath: string, fieldPath: string, text: string):
         }
     }
 
+    // Three or more authors are "and colleagues" in our prose; "et al." and
+    // "and others (Year)" survive only inside a quotation of a source.
+    for (const match of new Set(scrubbed.match(/\bet al\.|\band others(?=,? \(?\d{4})/g) ?? []))
+    {
+        checkWarning(
+            "Citation format",
+            filePath,
+            `${fieldPath}: "${match}" — write "and colleagues" for three or more authors (project policy)`);
+    }
+
     const reportedNoComma = new Set<string>();
 
     for (const match of scrubbed.matchAll(noCommaCitationPattern))

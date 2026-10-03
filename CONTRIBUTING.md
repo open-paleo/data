@@ -156,12 +156,14 @@ hybrid form:
 - **Narrative**, when the author is the grammatical subject:
   - `Smith (1999)` — single author
   - `Smith and Jones (1999)` — two authors
-  - `Smith et al. (1999)` — three or more
+  - `Smith and colleagues (1999)` — three or more
 - **Parenthetical**, when the citation is an aside:
   - `(Smith, 1999)` — comma before the year
   - `(Smith and Jones, 1999)`
-  - `(Smith et al., 1999)`
-- Use `and` (not `&`) between author names in both forms.
+  - `(Smith and colleagues, 1999)`
+- Use `and` (not `&`) between author names in both forms, and `and
+  colleagues` (not `et al.` or `and others`) for three or more. A quotation
+  keeps its source's own wording.
 - For lists inside a single set of parentheses, separate with `;` and
   drop the inner commas: `(Smith 1999; Jones 2000)`.
 - Give authority+year only on first mention of each binomial in a
@@ -171,7 +173,8 @@ hybrid form:
   when the species has been moved from its original genus.
 
 The `Citation format` validation check flags `&` between capitalized
-names and `(Author Year)` no-comma single-citation parentheticals.
+names, `(Author Year)` no-comma single-citation parentheticals, and `et al.`
+or `and others (Year)` outside quotations.
 
 ## Reference Keys and Years
 
