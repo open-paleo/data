@@ -74,7 +74,11 @@ topics.
 `research/methods.md` holds the general rules that decide record values and
 belong to no single record: how a maximum depositional age bears on stages, or
 when a dated number is re-placed on the current chart. Read it before working
-on any record. A rule entry takes this form:
+on any record. The house rules for contributors are in
+[CONTRIBUTING.md](../CONTRIBUTING.md), which governs where the two differ;
+`methods.md` holds only rules it does not state, and points to it, with worked
+cases, for those it does. A rule never lives in both. A rule entry takes this
+form:
 
 ```markdown
 ## <The rule, stated as a rule>

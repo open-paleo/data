@@ -55,7 +55,8 @@ and style guide are in [`research/README.md`](research/README.md).
 - **Read before working on a record.** Run `npm run research -- <record path>`
   for every genus, clade, unit or reference-store entry in scope, and read
   [`research/methods.md`](research/methods.md), whose rules decide record
-  values across the dataset. Do not re-propose a reading a note lists under
+  values across the dataset. `CONTRIBUTING.md` states the house rules and
+  governs where the two differ; `methods.md` holds only what it does not. Do not re-propose a reading a note lists under
   **Ruled out** without new evidence; if the work reaches one, stop and raise
   it with the user.
 - **Agents stay on the paper.** Extraction agents read only the paper, so

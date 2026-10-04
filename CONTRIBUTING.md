@@ -381,8 +381,8 @@ every stage inside it: "Coniacian–Campanian" includes the Santonian.
 - When the sources name both, both come from the literature. If the epochs the
   sources name do not contain the epochs of the unit's stages, that conflict is
   recorded as a `dispute` rather than resolved by choosing a side.
-- A paper's own undecided dating ("late Barremian or earliest Albian")
-  contributes every alternative it allows.
+- A paper's own undecided dating between two readings ("Kimmeridgian or
+  Neocomian") contributes every alternative it allows.
 - A parent is dated from its own sources, never from the children recorded
   here. The registry holds only the units our records name, so the children
   it carries are a sample of the parent's, and their union says nothing about
