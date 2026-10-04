@@ -35,18 +35,23 @@ species:
     period:
       name:
         - Early Jurassic
-        - Middle Jurassic
       stage:
         - Toarcian
-        - Aalenian
-        - Bajocian
-      resolution: unit
     location:
       country: AR
       locality: Cerro Cóndor South
       region: AR-U
       formation: Cañadón Asfalto
       part: lower
+      notes: >
+        Pol and colleagues (2022) report that "The base of the Cañadón
+        Asfalto Formation was dated at 179.17 ± 0.12 Ma, and the
+        uppermost levels of this unit were dated at 178.07 ± 0.21 Ma",
+        and that "The locality where Volkheimeria and Patagosaurus were
+        found is stratigraphically bracketed between the horizons of
+        these two dates", placing them "into the middle Toarcian (ca
+        179–178 Ma)". That replaces the early Middle Jurassic age Cúneo
+        and colleagues (2013) gave these sauropods.
     type_specimen:
       specimen_id: [PVL 4077]
       specimen_type: holotype
@@ -69,3 +74,7 @@ references:
       latest Toarcian age not precluded near the basalt.
   - id: jones2026b
     notes: Source of the body length and hip height estimates.
+  - id: pol2022a
+    notes: Brackets the type locality between U-Pb dates in the middle Toarcian.
+  - id: pol2020a
+    notes: Source of the U-Pb dates for the base and top of the formation.
