@@ -9,7 +9,8 @@ has already been ruled out.
 
 ## Before working on a record
 
-Read its research file, and every topic note that links to it:
+Read its research file, and every other note that links to the record or to
+its research file:
 
 ```
 npm run research -- genera/W/Wulatelong.yml

@@ -11,6 +11,7 @@
     "lint": "eslint scripts/ .github/scripts/",
     "lint:fix": "eslint scripts/ .github/scripts/ --fix",
     "typecheck": "tsc --noEmit",
+    "research": "node --experimental-strip-types scripts/research.ts",
     "report-missing-fields": "node --experimental-strip-types scripts/report-missing-fields.ts",
     "audit-dois": "node --experimental-strip-types scripts/audit-dois.ts",
     "verify-data-integrity": "node --experimental-strip-types scripts/verify-data-integrity.ts",

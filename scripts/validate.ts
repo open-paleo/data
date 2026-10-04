@@ -9,7 +9,22 @@ import * as url from "node:url";
 
 import { parse as parseYamlContent } from "yaml";
 
-import { buildFlaggedSet, buildVerifiedSet, findYamlFiles, loadFlaggedSignoffs, loadFlaggedSources, referenceBucket, referenceNotesLimit } from "./utilities.ts";
+import {
+    buildFlaggedSet,
+    buildResearchReferences,
+    buildVerifiedSet,
+    findMarkdownFiles,
+    findYamlFiles,
+    loadFlaggedSignoffs,
+    loadFlaggedSources,
+    markdownLinkTargets,
+    recordFileFor,
+    referenceBucket,
+    referenceNotesLimit,
+    researchCitedIds,
+    researchTopicDirectory,
+    splitResearchNote,
+} from "./utilities.ts";
 
 import type {
     GenusData,
@@ -3786,6 +3801,62 @@ for (const filePath of [...genusFiles, ...cladeFiles, ...referenceStoreFiles])
             filePath,
             `line ${index + 1}: '${key}' loses everything from " #" onward — ` +
             `YAML reads it as "${kept}". Quote the value.`);
+    }
+}
+
+startCheck("Research notes");
+
+// research/README.md documents the format and quotes example citations, so it
+// is the one file under research/ that is not itself a note.
+const researchDirectory = path.join(root, "research");
+
+for (const notePath of findMarkdownFiles(researchDirectory))
+{
+    if (notePath === path.join(researchDirectory, "README.md"))
+    {
+        continue;
+    }
+
+    const recordPath = recordFileFor(root, notePath);
+    const topLevel = path.relative(researchDirectory, notePath).split(path.sep)[0];
+
+    if (recordPath === null && topLevel !== researchTopicDirectory)
+    {
+        checkError("Research notes", notePath, "is neither a record's research file nor under research/topics/");
+    }
+    else if (recordPath !== null && !fs.existsSync(recordPath))
+    {
+        checkError(
+            "Research notes",
+            notePath,
+            `mirrors ${relPath(recordPath)}, which does not exist; move the note with its record`);
+    }
+
+    const note = fs.readFileSync(notePath, "utf8");
+
+    for (const target of markdownLinkTargets(note))
+    {
+        if (!fs.existsSync(path.resolve(path.dirname(notePath), target)))
+        {
+            checkError("Research notes", notePath, `link '${target}' does not resolve`);
+        }
+    }
+
+    const { body, references } = splitResearchNote(note);
+    const { section, missing } = buildResearchReferences(root, researchCitedIds(body));
+
+    for (const id of missing)
+    {
+        checkError("Research notes", notePath, `cites '${id}', which has no entry in references/`);
+    }
+
+    if (missing.length === 0 && (references ?? "").trimEnd() !== (section ?? "").trimEnd())
+    {
+        checkError(
+            "Research notes",
+            notePath,
+            "References section does not match the ids cited and the store; "
+            + `run npm run research -- --references ${relPath(notePath)}`);
     }
 }
 

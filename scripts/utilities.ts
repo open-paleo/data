@@ -637,3 +637,239 @@ export function resolveCitationKey(
         `No available letter suffix for ${proposedKey}; all 26 are taken in the bib.`,
     );
 }
+
+/**
+ * Data directories whose records may carry a research file at the mirrored
+ * path under `research/`.
+ */
+export const researchRecordDirectories = ["genera", "clades", "stratigraphy"];
+
+/**
+ * Research directory for notes that span several records.
+ */
+export const researchTopicDirectory = "topics";
+
+/**
+ * Recursively finds all Markdown files in a directory tree.
+ *
+ * @param dir - The root directory to search.
+ * @returns An array of absolute paths to .md files.
+ */
+export function findMarkdownFiles(dir: string): Array<string>
+{
+    const results = new Array<string>();
+
+    if (!fs.existsSync(dir))
+    {
+        return results;
+    }
+
+    for (const entry of fs.readdirSync(dir, { withFileTypes: true }))
+    {
+        const full = path.join(dir, entry.name);
+
+        if (entry.isDirectory())
+        {
+            results.push(...findMarkdownFiles(full));
+        }
+        else if (entry.name.endsWith(".md"))
+        {
+            results.push(full);
+        }
+    }
+
+    return results;
+}
+
+/**
+ * Returns the research file that mirrors a data record: the record's path with
+ * `research/` in front and `.md` in place of `.yml`. The file need not exist.
+ *
+ * @param dataRoot - Repository root.
+ * @param recordPath - Absolute path of a record under genera/, clades/ or stratigraphy/.
+ * @returns The absolute path of the record's research file.
+ */
+export function researchFileFor(dataRoot: string, recordPath: string): string
+{
+    const relative = path.relative(dataRoot, recordPath).replace(/\.ya?ml$/, ".md");
+
+    return path.join(dataRoot, "research", relative);
+}
+
+/**
+ * Returns the data record a per-record research file mirrors, or null for a
+ * topic note or any other file that mirrors no record directory. The record
+ * need not exist.
+ *
+ * @param dataRoot - Repository root.
+ * @param researchPath - Absolute path of a file under research/.
+ * @returns The absolute path of the mirrored record, or null.
+ */
+export function recordFileFor(dataRoot: string, researchPath: string): string | null
+{
+    const relative = path.relative(path.join(dataRoot, "research"), researchPath);
+    const directory = relative.split(path.sep)[0];
+
+    if (!researchRecordDirectories.includes(directory))
+    {
+        return null;
+    }
+
+    return path.join(dataRoot, relative.replace(/\.md$/, ".yml"));
+}
+
+/**
+ * A research note split at its generated `# References` heading.
+ */
+export type ResearchNoteParts = {
+    /**
+     * Everything before the `# References` heading, which is what cites.
+     */
+    body: string;
+
+    /**
+     * The References section from its heading to the end, or null when the
+     * note has none.
+     */
+    references: string | null;
+};
+
+/**
+ * Splits a research note into its body and its `# References` section.
+ *
+ * @param text - The note's full text.
+ * @returns The two parts.
+ */
+export function splitResearchNote(text: string): ResearchNoteParts
+{
+    const match = /^# References[ \t]*$/m.exec(text);
+
+    if (match === null)
+    {
+        return { body: text, references: null };
+    }
+
+    return { body: text.slice(0, match.index), references: text.slice(match.index) };
+}
+
+/**
+ * Removes fenced code blocks, which hold examples rather than citations or links.
+ *
+ * @param text - Markdown text.
+ * @returns The text without its fenced blocks.
+ */
+function stripCodeFences(text: string): string
+{
+    return text.replace(/^```[\s\S]*?^```[ \t]*$/gm, "");
+}
+
+/**
+ * Returns the local targets of a note's Markdown links, without any `#`
+ * fragment. External links (any scheme) and same-file anchors are skipped.
+ *
+ * @param text - Markdown text.
+ * @returns Each local link target as written.
+ */
+export function markdownLinkTargets(text: string): Array<string>
+{
+    const targets = new Array<string>();
+
+    for (const match of stripCodeFences(text).matchAll(/\]\(([^)\s]+)(?:\s+"[^"]*")?\)/g))
+    {
+        const target = match[1].split("#")[0];
+
+        if (target !== "" && !/^[a-z][a-z0-9+.-]*:/i.test(target))
+        {
+            targets.push(decodeURI(target));
+        }
+    }
+
+    return targets;
+}
+
+/**
+ * Returns the reference ids a note's body cites: tokens of the store's key
+ * form (lowercase surname letters, apostrophes or hyphens, a four-digit year,
+ * one suffix letter). Link targets and fenced code are ignored.
+ *
+ * @param body - The note's body, without its References section.
+ * @returns The distinct ids in order of first citation.
+ */
+export function researchCitedIds(body: string): Array<string>
+{
+    const prose = stripCodeFences(body).replace(/\]\([^)]*\)/g, "]");
+    const keyPattern = /(?<![\p{L}\p{N}'’-])\p{Ll}[\p{Ll}'’-]*\d{4}[a-z](?![\p{L}\p{N}])/gu;
+
+    return [...new Set([...prose.matchAll(keyPattern)].map((match) => match[0]))];
+}
+
+/**
+ * Formats one store entry as a line of a research note's References section.
+ *
+ * @param entry - The store reference.
+ * @returns The Markdown list item, without a trailing newline.
+ */
+export function formatResearchReference(entry: Reference): string
+{
+    const title = (entry.title ?? "").replace(/\s+/g, " ").trim().replace(/\.$/, "");
+    const parts = [`- \`${entry.id}\`: ${entry.authors ?? ""} (${entry.year ?? "n.d."}). ${title}.`];
+
+    if (entry.journal)
+    {
+        const volume = entry.volume ? ` ${entry.volume}${entry.issue ? `(${entry.issue})` : ""}` : "";
+        const locator = entry.pages ?? entry.article_number;
+
+        parts.push(`*${entry.journal}*${volume}${locator ? `: ${locator}` : ""}.`);
+    }
+    else if (entry.book)
+    {
+        parts.push(`In *${entry.book}*${entry.pages ? `, pp. ${entry.pages}` : ""}.`);
+    }
+    else if (entry.school)
+    {
+        parts.push(`${entry.thesis ? `${entry.thesis[0].toUpperCase()}${entry.thesis.slice(1)} thesis` : "Thesis"}, ${entry.school}.`);
+    }
+
+    if (entry.publisher && !entry.journal)
+    {
+        parts.push(`${entry.publisher}.`);
+    }
+
+    if (entry.doi)
+    {
+        parts.push(`doi:${entry.doi}`);
+    }
+
+    return parts.join(" ");
+}
+
+/**
+ * Builds a research note's References section from the store: one line per
+ * id the body cites, in order of first citation.
+ *
+ * @param dataRoot - Repository root containing the `references/` directory.
+ * @param ids - The ids the body cites.
+ * @returns The section text, or null when no id is cited. Ids with no store
+ *     entry are returned in `missing` and omitted from the section.
+ */
+export function buildResearchReferences(dataRoot: string, ids: Array<string>): { section: string | null; missing: Array<string> }
+{
+    const lines = new Array<string>();
+    const missing = new Array<string>();
+
+    for (const id of ids)
+    {
+        const filePath = path.join(dataRoot, "references", referenceBucket(id), `${id}.yml`);
+
+        if (fs.existsSync(filePath))
+        {
+            lines.push(formatResearchReference(parseYaml<Reference>(filePath)));
+        }
+        else
+        {
+            missing.push(id);
+        }
+    }
+
+    return { section: lines.length > 0 ? `# References\n\n${lines.join("\n")}\n` : null, missing };
+}
