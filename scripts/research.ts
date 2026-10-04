@@ -5,7 +5,8 @@
 //   npm run research -- genera/W/Wulatelong.yml
 //
 // That is the record's own research file plus every other note that links to
-// the record or to its research file, and a pointer to research/methods.md. With --references, regenerates each
+// the record or to its research file, the notes on the references it cites,
+// and a pointer to research/methods.md. With --references, regenerates each
 // named note's References section from the reference store instead:
 //
 //   npm run research -- --references research/topics/lago-pellegrini-quarries.md
@@ -18,6 +19,7 @@ import {
     buildResearchReferences,
     findMarkdownFiles,
     markdownLinkTargets,
+    referenceBucket,
     researchCitedIds,
     researchFileFor,
     researchMethodsFile,
@@ -60,7 +62,25 @@ function findLinkingNotes(targets: Set<string>, exclude: string): Array<string>
 }
 
 /**
- * Prints a record's research file and every note that links to the record.
+ * Finds the research notes on the reference-store entries a record cites, so
+ * that whoever works on the record sees why each cited entry reads as it does.
+ *
+ * @param recordPath - Absolute path of a genus, clade or stratigraphy record.
+ * @returns The absolute paths of the existing reference notes, in citation order.
+ */
+function citedReferenceNotes(recordPath: string): Array<string>
+{
+    const ids = [...fs.readFileSync(recordPath, "utf8").matchAll(/^\s*-?\s*id:\s*["']?([^"'\s]+)["']?\s*$/gm)]
+        .map((match) => match[1]);
+
+    return [...new Set(ids)]
+        .map((id) => path.join(researchDirectory, "references", referenceBucket(id), `${id}.md`))
+        .filter((notePath) => fs.existsSync(notePath));
+}
+
+/**
+ * Prints a record's research file, every note that links to the record, and
+ * the notes on the references it cites.
  *
  * @param recordArgument - The record's path, relative to the repository root or absolute.
  * @returns The process exit code.
@@ -77,10 +97,11 @@ function printNotes(recordArgument: string): number
     }
 
     const ownNote = researchFileFor(root, recordPath);
-    const notes = [
+    const notes = [...new Set([
         ...(fs.existsSync(ownNote) ? [ownNote] : []),
         ...findLinkingNotes(new Set([recordPath, ownNote]), ownNote),
-    ];
+        ...citedReferenceNotes(recordPath),
+    ])];
 
     if (notes.length === 0)
     {

@@ -120,6 +120,16 @@
 
 **Exceptions.** None.
 
+## Count an edited book and its chapters as one source
+
+*2026-10-04*
+
+**Rule.** When the reference store has an entry for an edited book and separate entries for its chapters, a statement found in both is one source, dated to the book. Cite the chapter, which names the authors who made the statement. This applies the rule "Weigh age evidence by kind, not by count" to a book cited both whole and in parts. Decides `stages`, `stage` and `dispute` where a count of sources includes such a book.
+
+**Why.** weishampel2004a is the whole of *The Dinosauria* (2nd edition), and eleven of its chapters have their own entries, among them upchurch2004a and weishampel2004b (the distribution chapter). The Tiourarén Hauterivian–Barremian age of *Jobaria* appears in Upchurch and colleagues' Table 13.1 and in the distribution chapter. Counting the book's entry and each chapter's entry finds it four times, but it is one 2004 statement. A compilation row is also weak evidence for each unit in it: Galton and Upchurch's Table 12.1 gives *Massospondylus* the single age "Hettangian–Pliensbachian" across eight unit entries in three countries (galton2004a, p. 235), a range for the taxon, not a date for each unit.
+
+**Exceptions.** None.
+
 ## A matrix identification can give a formation, never a locality
 
 *2026-09-30*
@@ -194,5 +204,9 @@
 
 - `wang2019c`: Wang, J.; Norell, M. A.; Pei, R.; Ye, Y.; Chang, S. C. (2019). Surprisingly young age for the mamenchisaurid sauropods in South China. *Cretaceous Research* 104: 104176. doi:10.1016/j.cretres.2019.07.006
 - `takashima2004a`: Takashima, R.; Kawabe, F.; Nishi, H.; Moriya, K.; Wani, R.; Ando, H. (2004). Geology and stratigraphy of forearc basin sediments in Hokkaido, Japan: Cretaceous environmental events on the north-west Pacific margin. *Cretaceous Research* 25: 365-390. doi:10.1016/j.cretres.2004.02.004
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, 2nd edition*, pp. 259-322. University of California Press.
+- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, 2nd edition*, pp. 517-606. University of California Press. doi:10.1525/california/9780520242098.003.0027
+- `galton2004a`: Galton, P. M.; Upchurch, P. (2004). Prosauropoda. In *The Dinosauria, 2nd edition*, pp. 232-258. University of California Press.
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.
 - `molina-pérez2019a`: Molina-Pérez, R.; Larramendi, A. (2019). Dinosaur Facts and Figures: The Theropods and Other Dinosauriformes. Princeton University Press.

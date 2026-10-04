@@ -9,8 +9,8 @@ has already been ruled out.
 
 ## Before working on a record
 
-Read its research file, and every other note that links to the record or to
-its research file:
+Read its research file, every other note that links to the record or to its
+research file, and the notes on the references it cites:
 
 ```
 npm run research -- genera/W/Wulatelong.yml
@@ -30,6 +30,7 @@ in place of `.yml`:
 | `genera/A/Aardonyx.yml` | `research/genera/A/Aardonyx.md` |
 | `clades/Abelisauridae.yml` | `research/clades/Abelisauridae.md` |
 | `stratigraphy/a/argiles-et-grès-à-reptiles.yml` | `research/stratigraphy/a/argiles-et-grès-à-reptiles.md` |
+| `references/m/matheron1869b.yml` | `research/references/m/matheron1869b.md` |
 
 Stratigraphy filenames follow the registry's rule: lowercase, diacritics kept,
 and every run of other characters becomes one hyphen. The directory letter
@@ -39,6 +40,20 @@ A record gets a file only when there is something to say that the record
 itself does not: a conflict among sources, a rejected reading, a source that
 was hard to find or easy to misread. A restatement of the record's values is
 not a research note.
+
+### Reference notes
+
+A note on a reference-store entry explains why the entry reads as it does
+where the reason is not obvious and a later reader might "correct" it: a venue
+that a citing paper gives differently, two papers with near-identical titles,
+key letters that run against another authority's, a year that differs from the
+one usually cited. Its title is the narrative citation, as `# Matheron
+(1869)`. Where a paper is a ghost (a citation that matches no real
+publication), the note goes on the paper that cites it.
+
+Where a name or claim first appears (the paper that erects a taxon, the
+source of an age) is a question about the taxon or unit, and goes in that
+record's note, not here.
 
 ### Topic notes
 

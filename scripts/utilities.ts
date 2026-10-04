@@ -640,9 +640,10 @@ export function resolveCitationKey(
 
 /**
  * Data directories whose records may carry a research file at the mirrored
- * path under `research/`.
+ * path under `research/`. Reference-store entries count: a note there explains
+ * why the entry reads as it does.
  */
-export const researchRecordDirectories = ["genera", "clades", "stratigraphy"];
+export const researchRecordDirectories = ["genera", "clades", "stratigraphy", "references"];
 
 /**
  * Research directory for notes that span several records.
