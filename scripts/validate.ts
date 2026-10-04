@@ -22,6 +22,7 @@ import {
     referenceBucket,
     referenceNotesLimit,
     researchCitedIds,
+    researchMethodsFile,
     researchTopicDirectory,
     splitResearchNote,
 } from "./utilities.ts";
@@ -3820,9 +3821,9 @@ for (const notePath of findMarkdownFiles(researchDirectory))
     const recordPath = recordFileFor(root, notePath);
     const topLevel = path.relative(researchDirectory, notePath).split(path.sep)[0];
 
-    if (recordPath === null && topLevel !== researchTopicDirectory)
+    if (recordPath === null && topLevel !== researchTopicDirectory && topLevel !== researchMethodsFile)
     {
-        checkError("Research notes", notePath, "is neither a record's research file nor under research/topics/");
+        checkError("Research notes", notePath, "is neither a record's research file, research/methods.md, nor under research/topics/");
     }
     else if (recordPath !== null && !fs.existsSync(recordPath))
     {

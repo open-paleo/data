@@ -650,6 +650,12 @@ export const researchRecordDirectories = ["genera", "clades", "stratigraphy"];
 export const researchTopicDirectory = "topics";
 
 /**
+ * Research file for the general rules that decide record values, which belong
+ * to no single record or topic.
+ */
+export const researchMethodsFile = "methods.md";
+
+/**
  * Recursively finds all Markdown files in a directory tree.
  *
  * @param dir - The root directory to search.

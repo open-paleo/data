@@ -54,6 +54,30 @@ links are the only list of affected records, so a record that a topic bears on
 but never links will not find it. Per-record files need not link back to
 topics.
 
+### Methods
+
+`research/methods.md` holds the general rules that decide record values and
+belong to no single record: how a maximum depositional age bears on stages, or
+when a dated number is re-placed on the current chart. Read it before working
+on any record. A rule entry takes this form:
+
+```markdown
+## <The rule, stated as a rule>
+
+*<YYYY-MM-DD>*
+
+**Rule.** <What to do, and the fields it decides.>
+
+**Why.** <The reasoning, and the case that showed the rule was needed, with a
+link to that record or note.>
+
+**Exceptions.** <When the rule does not apply; or "None.">
+```
+
+A rule that is later changed follows the supersede rule below. A rule about
+one record or one group of records is not a method; it belongs in that
+record's file or a topic note.
+
 ## Entries
 
 A file opens with a single `#` title: the record's name (a genus in italics,

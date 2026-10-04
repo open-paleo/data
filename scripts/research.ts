@@ -5,7 +5,7 @@
 //   npm run research -- genera/W/Wulatelong.yml
 //
 // That is the record's own research file plus every other note that links to
-// the record or to its research file. With --references, regenerates each
+// the record or to its research file, and a pointer to research/methods.md. With --references, regenerates each
 // named note's References section from the reference store instead:
 //
 //   npm run research -- --references research/topics/lago-pellegrini-quarries.md
@@ -20,6 +20,7 @@ import {
     markdownLinkTargets,
     researchCitedIds,
     researchFileFor,
+    researchMethodsFile,
     splitResearchNote,
 } from "./utilities.ts";
 
@@ -84,8 +85,6 @@ function printNotes(recordArgument: string): number
     if (notes.length === 0)
     {
         console.log(`No research notes for ${path.relative(root, recordPath)}.`);
-
-        return 0;
     }
 
     for (const notePath of notes)
@@ -93,6 +92,11 @@ function printNotes(recordArgument: string): number
         console.log(`==> ${path.relative(root, notePath)} <==\n`);
         console.log(splitResearchNote(fs.readFileSync(notePath, "utf8")).body.trimEnd());
         console.log("");
+    }
+
+    if (fs.existsSync(path.join(researchDirectory, researchMethodsFile)))
+    {
+        console.log(`The general rules in research/${researchMethodsFile} apply to every record.`);
     }
 
     return 0;
