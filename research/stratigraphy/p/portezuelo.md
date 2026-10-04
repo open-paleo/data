@@ -1,3 +1,5 @@
+# Portezuelo
+
 ## What is the age of the Portezuelo Formation?
 
 *2026-10-01*
@@ -15,7 +17,7 @@
 
 **Open.** Nothing. No radiometric date exists for the formation; Garrido (2010, p. 143) says so outright.
 
-# References
+## References
 
 - `garrido2010a`: Garrido, A. C. (2010). Estratigrafía del Grupo Neuquén, Cretácico Superior de la Cuenca Neuquina (Argentina): nueva propuesta de ordenamiento litoestratigráfico [Stratigraphy of the Neuquén Group, Upper Cretaceous of the Neuquén Basin (Argentina): a new proposal for lithostratigraphic arrangement]. *Revista del Museo Argentino de Ciencias Naturales, Nueva Serie* 12(2): 121-177. doi:10.22179/REVMACN.12.239
 - `calvo2004b`: Calvo, J. O.; Porfiri, J. D.; Veralli, C.; Novas, F. E.; Poblete, F. (2004). Phylogenetic status of Megaraptor namunhuaiquii Novas based on a new specimen from Neuquén, Patagonia, Argentina. *Ameghiniana* 41: 565-575.

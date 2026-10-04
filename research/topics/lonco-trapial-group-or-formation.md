@@ -1,3 +1,5 @@
+# Lonco Trapial: group or formation
+
 ## Is Lonco Trapial a group or a formation, and what rank is Cerro Carnerero?
 
 *2026-10-01*
@@ -20,7 +22,7 @@
 
 **Open.** Cúneo and colleagues (2013, p. 1269) also place the Taquetrén Formation in their "Lonco Trapial Group", while Nullo and Proserpio (1975, p. 133) treat the Taquetrén as a separate, younger unit. Not examined further.
 
-# References
+## References
 
 - `nullo1975a`: Nullo, F.; Proserpio, C. (1975). La Formación Taquetrén en Cañadón del Zaino (Chubut) y sus relaciones estratigráficas en el ámbito de la Patagonia, de acuerdo a la flora, República Argentina [The Taquetrén Formation at Cañadón del Zaino (Chubut) and its stratigraphic relationships within Patagonia, according to the flora, Argentina]. *Revista de la Asociación Geológica Argentina* 30(2): 133-150.
 - `cúneo2013a`: Cúneo, R.; Ramezani, J.; Scasso, R.; Pol, D.; Escapa, I.; Zavattieri, A. M.; Bowring, S. A. (2013). High-precision U-Pb geochronology and a new chronostratigraphy for the Cañadón Asfalto Basin, Chubut, central Patagonia: implications for terrestrial faunal and floral evolution in Jurassic. *Gondwana Research* 24(3-4): 1267-1275. doi:10.1016/j.gr.2013.01.010

@@ -1,3 +1,5 @@
+# *Leyesaurus*
+
 ## Which unit and age is the Leyesaurus holotype from?
 
 *2026-10-03*
@@ -15,7 +17,7 @@
 
 **Open.** The Early Jurassic age rests on correlation and on *Leyesaurus* itself (Martínez and colleagues 2015, p. 382), which is circular for this record. No stage has been proposed.
 
-# References
+## References
 
 - `martínez2015a`: Martínez, R. N.; Apaldetti, C.; Correa, G.; Colombi, C. E.; Fernández, E.; Santi Malnis, P.; Praderio, A.; Abelín, D.; Benegas, L. G.; Aguilar-Cameo, A.; Alcober, O. A. (2015). A new Late Triassic vertebrate assemblage from northwestern Argentina. *Ameghiniana* 52: 379-390. doi:10.5710/AMGH.27.04.2015.2889
 - `colombi2015a`: Colombi, C. E.; Santi Malnis, P.; Correa, G. A.; Martínez, R. N.; Fernández, E.; Abelín, D.; Praderio, A.; Apaldetti, C. G.; Alcober, O.; Drovandi, J. (2015). La Formación Balde de Leyes (nov. Nom.), una nueva unidad estratigráfica de la cuenca triásica de Marayes-El Carrizal [The Balde de Leyes Formation, a new stratigraphic unit from the Triassic Marayes-El Carrizal Basin, San Juan]. *Revista de la Asociación Geológica Argentina* 72(4): 445-455.

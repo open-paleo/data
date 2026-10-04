@@ -1,3 +1,5 @@
+# Plottier
+
 ## What is the age of the Plottier Formation?
 
 *2026-10-01*
@@ -16,7 +18,7 @@
 
 **Open.** No radiometric date exists for the formation. Garrido's Plottier section mentions none, while his sections on the Portezuelo and Bajo de la Carpa say outright that none exists; that the Plottier has none is an inference from that silence.
 
-# References
+## References
 
 - `garrido2010a`: Garrido, A. C. (2010). Estratigrafía del Grupo Neuquén, Cretácico Superior de la Cuenca Neuquina (Argentina): nueva propuesta de ordenamiento litoestratigráfico [Stratigraphy of the Neuquén Group, Upper Cretaceous of the Neuquén Basin (Argentina): a new proposal for lithostratigraphic arrangement]. *Revista del Museo Argentino de Ciencias Naturales, Nueva Serie* 12(2): 121-177. doi:10.22179/REVMACN.12.239
 - `gonzálezriga2016a`: González Riga, B. J.; Lamanna, M. C.; Ortiz David, L. D.; Calvo, J. O.; Coria, J. P. (2016). A gigantic new dinosaur from Argentina and the evolution of the sauropod hind foot. *Scientific Reports* 6(1). doi:10.1038/srep19165

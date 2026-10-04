@@ -719,11 +719,11 @@ export function recordFileFor(dataRoot: string, researchPath: string): string | 
 }
 
 /**
- * A research note split at its generated `# References` heading.
+ * A research note split at its generated `## References` heading.
  */
 export type ResearchNoteParts = {
     /**
-     * Everything before the `# References` heading, which is what cites.
+     * Everything before the `## References` heading, which is what cites.
      */
     body: string;
 
@@ -735,14 +735,14 @@ export type ResearchNoteParts = {
 };
 
 /**
- * Splits a research note into its body and its `# References` section.
+ * Splits a research note into its body and its `## References` section.
  *
  * @param text - The note's full text.
  * @returns The two parts.
  */
 export function splitResearchNote(text: string): ResearchNoteParts
 {
-    const match = /^# References[ \t]*$/m.exec(text);
+    const match = /^## References[ \t]*$/m.exec(text);
 
     if (match === null)
     {
@@ -871,5 +871,5 @@ export function buildResearchReferences(dataRoot: string, ids: Array<string>): {
         }
     }
 
-    return { section: lines.length > 0 ? `# References\n\n${lines.join("\n")}\n` : null, missing };
+    return { section: lines.length > 0 ? `## References\n\n${lines.join("\n")}\n` : null, missing };
 }

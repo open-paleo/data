@@ -1,3 +1,5 @@
+# Puesto Antigual
+
 ## Is the Puesto Antigual Member Barremian, or Barremian–early Aptian?
 
 *2026-10-01*
@@ -17,7 +19,7 @@
 
 **Open.** Leanza and colleagues (2004, p. 65) cite Leanza and Hugo (1995) for "Barremian–Early Aptian", but the 1995 text gives the formation as "Hauteriviano tardío / Barremiano" ("late Hauterivian/Barremian", translated; leanza1995a, p. 30) and its chart has no Aptian member. The formation's own range is not settled by this note. The top member, the Piedra Parada (*Zapalasaurus*), does carry an Aptian assignment of its own: "Barremian-lower Aptian" (salgado2006b, p. 695, abstract), given as "Barremiano superior – Aptiano inferior" on p. 699.
 
-# References
+## References
 
 - `leanza1995a`: Leanza, H. A.; Hugo, C. A. (1995). Revisión estratigráfica del Cretácico inferior continental en el ámbito sudoriental de la Cuenca Neuquina [Stratigraphic revision of the continental Lower Cretaceous in the southeastern Neuquén Basin]. *Revista de la Asociación Geológica Argentina* 50(1-4): 30-32.
 - `leanza2003a`: Leanza, H. A. (2003). Las sedimentitas huitrinianas y rayosianas (Cretácico Inferior) en el ámbito central y meridional de la cuenca Neuquina, Argentina [The Huitrinian and Rayosian sedimentary rocks (Lower Cretaceous) in the central and southern Neuquén Basin, Argentina]. *Servicio Geológico Minero Argentino, Serie Contribuciones Técnicas, Geología* 2: 1-31.

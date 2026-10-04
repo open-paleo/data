@@ -1,3 +1,5 @@
+# Lago Pellegrini quarries
+
 ## Which formation are the Lago Pellegrini quarry dinosaurs from, and what stage does that give them?
 
 *2026-10-03*
@@ -21,7 +23,7 @@
 
 **Open.** Which formation. Heredia and Salgado (1999) and the 2017 abstract that disputes them have not been read for this note; either would show what evidence each side has for the quarry beds. Gianechini and colleagues (2015) also raise a separate question for *Abelisaurus* alone: whether it came from Lago Pellegrini at all. Their source is local testimony with no field notes.
 
-# References
+## References
 
 - `bonaparte1985b`: Bonaparte, J. F.; Novas, F. E. (1985). Abelisaurus comahuensis, n.g., n.sp., Carnosauria del Crétacico Tardio de Patagonia [Abelisaurus comahuensis, n.g., n.sp., Carnosauria from the Late Cretaceous of Patagonia]. *Ameghiniana* 21: 259-265.
 - `leanza2004a`: Leanza, H. A.; Apesteguía, S.; Novas, F. E.; de la Fuente, M. S. (2004). Cretaceous terrestrial beds from the Neuquén Basin (Argentina) and their tetrapod assemblages. *Cretaceous Research* 25(1): 61-87.

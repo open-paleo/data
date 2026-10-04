@@ -1,3 +1,5 @@
+# Lonco Trapial
+
 ## What is the age of the Lonco Trapial Formation?
 
 *2026-10-01*
@@ -16,7 +18,7 @@
 
 **Open.** Nothing.
 
-# References
+## References
 
 - `cúneo2013a`: Cúneo, R.; Ramezani, J.; Scasso, R.; Pol, D.; Escapa, I.; Zavattieri, A. M.; Bowring, S. A. (2013). High-precision U-Pb geochronology and a new chronostratigraphy for the Cañadón Asfalto Basin, Chubut, central Patagonia: implications for terrestrial faunal and floral evolution in Jurassic. *Gondwana Research* 24(3-4): 1267-1275. doi:10.1016/j.gr.2013.01.010
 - `pol2020a`: Pol, D.; Ramezani, J.; Gomez, K.; Carballido, J. L.; Carabajal, A. P.; Rauhut, O. W. M.; Escapa, I. H.; Cúneo, N. R. (2020). Extinction of herbivorous dinosaurs linked to Early Jurassic global warming event. *Proceedings of the Royal Society B: Biological Sciences* 287(1939): 20202310. doi:10.1098/rspb.2020.2310

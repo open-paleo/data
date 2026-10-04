@@ -56,11 +56,14 @@ topics.
 
 ## Entries
 
-A file is a sequence of dated entries, newest first, followed by a
-`# References` section. Each entry is a `##` heading that states the question,
-then these parts:
+A file opens with a single `#` title: the record's name (a genus in italics,
+as `# *Leyesaurus*`), or for a topic note a short name for its subject. Dated
+entries follow, newest first, and then a `## References` section. Each entry is
+a `##` heading that states the question, then these parts:
 
 ```markdown
+# <Record name, or the topic's subject>
+
 ## <The question, as a question>
 
 *<YYYY-MM-DD>*
@@ -133,7 +136,7 @@ passage by searching its own copy. Keep it to the words that carry the claim.
 A non-English source is quoted in English and marked `(translated)`; give the
 page of the original so the passage can be found there.
 
-The `# References` section lists every id cited in the file, one per line,
+The `## References` section lists every id cited in the file, one per line,
 with authors, year and title as the reference store gives them. It is
 generated from the store by `npm run research -- --references <file>` and is
 never written by hand, because a bibliography typed from memory is the error
@@ -163,7 +166,7 @@ The notes follow the same prose rules as the records.
   missing or about to be explained.
 - In sentences, cite people in narrative form: "Xu and colleagues (2013)", not
   "Xu et al." and not a bare reference id. Ids appear in **Evidence** lines and
-  in `# References`.
+  in `## References`.
 - American English. Institution and unit names stay as their owners spell them.
 - State the specific thing. Avoid stock phrasing that stands in for a claim:
   "load-bearing", "smoking gun", "blast radius", "the shape of the argument",

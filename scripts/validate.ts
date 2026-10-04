@@ -3833,6 +3833,12 @@ for (const notePath of findMarkdownFiles(researchDirectory))
     }
 
     const note = fs.readFileSync(notePath, "utf8");
+    const titles = note.match(/^# .*$/gm) ?? [];
+
+    if (!note.startsWith("# ") || titles.length !== 1)
+    {
+        checkError("Research notes", notePath, "must open with a single '# ' title; entries and References are '##'");
+    }
 
     for (const target of markdownLinkTargets(note))
     {

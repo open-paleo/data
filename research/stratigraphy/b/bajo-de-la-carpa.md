@@ -1,3 +1,5 @@
+# Bajo de la Carpa
+
 ## What is the age of the Bajo de la Carpa Formation?
 
 *2026-10-01*
@@ -16,7 +18,7 @@
 
 **Open.** The Campanian end rests on thin support: Filippi (2015) as reported by Pérez-Moreno and colleagues (2023), who give it two different ways in the same paper, and an unsourced phrase in Coria and colleagues (2013). Filippi (2015) itself would settle whether it argues for a Campanian top.
 
-# References
+## References
 
 - `garrido2010a`: Garrido, A. C. (2010). Estratigrafía del Grupo Neuquén, Cretácico Superior de la Cuenca Neuquina (Argentina): nueva propuesta de ordenamiento litoestratigráfico [Stratigraphy of the Neuquén Group, Upper Cretaceous of the Neuquén Basin (Argentina): a new proposal for lithostratigraphic arrangement]. *Revista del Museo Argentino de Ciencias Naturales, Nueva Serie* 12(2): 121-177. doi:10.22179/REVMACN.12.239
 - `porfiri2018a`: Porfiri, J. D.; Juárez Valieri, R. D.; Santos, D. D. D.; Lamanna, M. C. (2018). A new megaraptoran theropod dinosaur from the Upper Cretaceous Bajo de la Carpa Formation of northwestern Patagonia. *Cretaceous Research* 89: 302-319. doi:10.1016/j.cretres.2018.03.014
