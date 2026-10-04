@@ -9,7 +9,7 @@ has already been ruled out.
 
 ## Before working on a record
 
-Read its research file, and every topic note that lists it:
+Read its research file, and every topic note that links to it:
 
 ```
 npm run research -- genera/W/Wulatelong.yml
@@ -45,19 +45,13 @@ A question whose answer concerns the relationship between several records goes
 in `research/topics/<slug>.md`, with the slug built by the same rule. Examples
 are which unit the Maortu beds belong to, and why the "Grès à Reptiles" of
 three basins are separate units. The reasoning is written once, in the topic
-note, and not copied onto each record it affects. The note lists those records
-in frontmatter, and the lookup finds it from any of them:
+note, and not copied onto each record it affects.
 
-```yaml
----
-records:
-  - stratigraphy/u/ulansuhai.yml
-  - stratigraphy/m/miaogou.yml
-  - genera/W/Wulatelong.yml
----
-```
-
-Per-record files do not link back to topics.
+A topic note links every record it affects, normally in the **Conclusion**'s
+"Governs" clause, and the lookup finds the note from any record it links. The
+links are the only list of affected records, so a record that a topic bears on
+but never links will not find it. Per-record files need not link back to
+topics.
 
 ## Entries
 
@@ -71,7 +65,7 @@ then these parts:
 *<YYYY-MM-DD>*
 
 **Conclusion.** <The reading adopted.> Governs <the field or value, e.g.
-`location.formation`, on the records it applies to>.
+`location.formation`> on <a link to each record it applies to>.
 
 **Evidence.**
 - <id>, p. <page>: "<the words that carry the claim>".
@@ -92,6 +86,21 @@ then these parts:
   has not been read may be named here, as the paper that would settle the
   question. It is never cited as evidence until someone has read it.
 
+## Links
+
+Link another file by its path relative to the note, as ordinary Markdown:
+
+- another research file, where the prose refers to it: "see
+  [Bajo de la Carpa](../../stratigraphy/b/bajo-de-la-carpa.md)"
+- a data record, where the note concerns its current value:
+  "[*Leyesaurus marayensis*](../../../genera/L/Leyesaurus.yml)"
+
+Link a data record rather than its research file when the research file may
+not exist. A link must resolve; a broken link is an error, as an unresolved
+reference id is.
+
+## Superseded entries
+
 When a later entry overturns an earlier one, it says so in its first line
 ("Supersedes the 2026-08-12 entry: …") and the earlier entry stays. The wrong
 turn is part of what a reader needs to see.
@@ -99,7 +108,8 @@ turn is part of what a reader needs to see.
 ## Citing sources
 
 Every reference id must resolve to a file in `references/`. A paper with no
-entry in the store yet gets one minted before it is cited. Confirm an id
+entry in the store yet gets one minted before it is cited, and the note uses
+that entry's id. Never write a placeholder in place of an id. Confirm an id
 against the entry's title before citing it: an `a` and a `b` by the same
 author and year are different papers.
 
