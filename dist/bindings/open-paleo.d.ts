@@ -438,9 +438,9 @@ export interface Period {
   from_ma?: number;
   to_ma?: number;
   /**
-   * Present as "unit" when no age finer than the containing lithostratigraphic unit has been published, so `stage` is that unit's range rather than a determination for this taxon. Absent means the age is finer, or has not been checked.
+   * How `stage` relates to the record's stratigraphic unit. "unit": no age finer than the containing lithostratigraphic unit has been published, so `stage` is that unit's range rather than a determination for this taxon. "reworked": the type specimen was reworked from older beds, so `stage` is the age of those beds and falls outside the unit it was found in. "horizon": which bed yielded the type specimen is uncertain, so `stage` covers every candidate bed and reaches outside the named unit. Absent means the age is finer than the unit, or has not been checked.
    */
-  resolution?: "unit";
+  resolution?: "unit" | "reworked" | "horizon";
   [k: string]: unknown;
 }
 export interface Location {

@@ -1,10 +1,10 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-10-03T21:03:11.717Z
+  built_at: 2026-10-04T00:46:25.343Z
   clade_count: 188
   genus_count: 1425
   license: CC-BY-4.0
-  schema_version: 1.11.0
+  schema_version: 1.12.0
   version: "2026.10"
 tree:
   Life:
@@ -10147,9 +10147,8 @@ genera:
           name:
             - Late Cretaceous
           stage:
-            - Santonian
             - Campanian
-          from_ma: 85.7
+          from_ma: 83.6
           to_ma: 72.2
         location:
           country: MN
@@ -10902,7 +10901,7 @@ genera:
           region: Utah
           formation: Cedar Mountain
           notes: |
-            Chure and colleagues (2010) place the bone bed "near the base of the Mussentuchit Member" and date it by zircon to "no older than the mid-Albian", with the Cenomanian Dakota Formation above. Sprinkel and colleagues (2012) hold that the Mussentuchit name "should not be applied to the uppermost part of the Cedar Mountain Formation in northeastern Utah", the Mussentuchit of central Utah being "time equivalent to the Mowry Shale in northeast Utah", and date a bentonite in the overlying Dakota there at 101.4 Ma, late Albian on GTS2020.
+            Chure and colleagues (2010) place the bone bed "near the base of the Mussentuchit Member" and date it by zircon to "no older than the mid-Albian", with the Cenomanian Dakota Formation above. Sprinkel and colleagues (2012) hold that the Mussentuchit name "should not be applied to the uppermost part of the Cedar Mountain Formation in northeastern Utah", the Mussentuchit of central Utah being "time equivalent to the Mowry Shale in northeast Utah", and date a bentonite in the overlying Dakota there at 101.4 Ma, late Albian on the ICS chart v2024/12.
           region_code: US-UT
         size:
           weight_kg:
@@ -11951,13 +11950,11 @@ genera:
         period:
           name:
             - Early Cretaceous
-            - Late Cretaceous
           stage:
             - Aptian
             - Albian
-            - Cenomanian
           from_ma: 121.4
-          to_ma: 93.9
+          to_ma: 100.5
         location:
           country: US
           locality: Cochran farm
@@ -15124,9 +15121,8 @@ genera:
           name:
             - Late Cretaceous
           stage:
-            - Campanian
             - Maastrichtian
-          from_ma: 83.6
+          from_ma: 72.2
           to_ma: 66
         location:
           country: US
@@ -16433,8 +16429,9 @@ genera:
           name:
             - Late Jurassic
           stage:
+            - Kimmeridgian
             - Tithonian
-          from_ma: 149.2
+          from_ma: 154.8
           to_ma: 143.1
         location:
           country: US
@@ -17583,14 +17580,18 @@ genera:
         period:
           name:
             - Middle Jurassic
+            - Late Jurassic
           stage:
             - Callovian
+            - Oxfordian
           from_ma: 165.3
-          to_ma: 161.5
+          to_ma: 154.8
         location:
           country: PT
           region: Leiria
           formation: Cabaços
+          notes: |
+            Thulborn (1973) writes that "The Pedrógão horizon is probably of Callovian age", and Mateus and Milàn (2009) give it as Oxfordian, after Azerêdo and colleagues (2002).
           region_code: PT-10
         type_specimen:
           specimen_id:
@@ -18930,13 +18931,13 @@ genera:
         type_species: true
         period:
           name:
+            - Middle Jurassic
             - Late Jurassic
           stage:
+            - Callovian
             - Oxfordian
-            - Kimmeridgian
-            - Tithonian
-          from_ma: 161.5
-          to_ma: 143.1
+          from_ma: 165.3
+          to_ma: 154.8
         location:
           country: CN
           locality: Wubaiding Village
@@ -19326,8 +19327,9 @@ genera:
           name:
             - Late Jurassic
           stage:
+            - Kimmeridgian
             - Tithonian
-          from_ma: 149.2
+          from_ma: 154.8
           to_ma: 143.1
         location:
           country: US
@@ -19336,6 +19338,8 @@ genera:
           formation: Morrison
           member: Brushy Basin
           part: upper
+          notes: |
+            Mannion and colleagues (2021) give the quarry as "150.44–149.21 Ma, lower Tithonian", and Tschopp and colleagues (2015) as "Kimmeridgian/Tithonian". On the ICS chart v2024/12 the dated range is Kimmeridgian, ending at the base of the Tithonian, so the stages take both.
           region_code: US-CO
           part_of: member
         size:
@@ -20408,18 +20412,18 @@ genera:
             - Middle Jurassic
             - Late Jurassic
           stage:
-            - Bathonian
             - Callovian
             - Oxfordian
             - Kimmeridgian
-          from_ma: 168.2
+          from_ma: 165.3
           to_ma: 149.2
         location:
           country: CN
           locality: Yaolugou
           region: Liaoning
           formation: Tiaojishan
-          notes: The formation is the referred specimen's. Xu and colleagues (2008) place the holotype at Yaolugou in lacustrine deposits they date only as uncertainly Jurassic to Cretaceous, naming no unit; Hu and colleagues (2009) give the Tiaojishan Formation for the referred specimen from Daxishan, a nearby site.
+          notes: |
+            Xu and colleagues (2008) place the holotype at Yaolugou in lacustrine deposits they date only as uncertainly Jurassic to Cretaceous, naming no unit. Godefroit and colleagues (2013) give the same locality as "Yaolugou, Jianchang, western Liaoning, China; Middle-Late Jurassic Tiaojishan Formation", noting that "The Tiaojishan formation is widely exposed in this area", and Hu and colleagues (2009) give the Tiaojishan for a referred specimen from nearby Daxishan.
           region_code: CN-LN
         size:
           hip_height_m:
@@ -20522,6 +20526,16 @@ genera:
         issue: "7264"
         pages: 640-643
         doi: 10.1038/nature08322
+      - id: godefroit2013a
+        authors: Godefroit, P.; Demuynck, H.; Dyke, G.; Hu, D.; Escuillié, F.; Claeys, P.
+        year: 2013
+        title: Reduced plumage and flight ability of a new Jurassic paravian theropod from China
+        journal: Nature Communications
+        publisher: Springer Science and Business Media LLC
+        volume: "4"
+        issue: "1"
+        doi: 10.1038/ncomms2389
+        notes: Places the Yaolugou locality in the Tiaojishan Formation.
     taxonomy:
       - Life
       - Animalia
@@ -21311,7 +21325,7 @@ genera:
         journal: Vertebrate Paleontology in Utah, D. D. Gillette (ed.), Utah Geological Survey Miscellaneous Publication
         volume: 99-1
         pages: 243-251
-        notes: Dates the member by a radiometric age of 98.39 Ma, early Cenomanian on GTS2020, though it reads the fauna as Late Albian or Early Cenomanian.
+        notes: Dates the member by a radiometric age of 98.39 Ma, early Cenomanian on the ICS chart v2024/12, though it reads the fauna as Late Albian or Early Cenomanian.
       - id: paul2024a
         authors: Paul, G. S.
         year: 2024
@@ -21805,8 +21819,8 @@ genera:
           country: GB
           locality: Reach
           region: Cambridgeshire
-          group: Chalk
-          notes: Which unit the syntypes came from is unresolved. Pereda-Suberbiola and Barrett (1999) place them in either the Cambridge Greensand or the underlying Upper Gault Clay without deciding, and the Cambridge Greensand is itself a remanié deposit whose fossils are reworked from older beds. The group is recorded because it contains both candidates.
+          notes: |
+            Which unit the syntypes came from is unresolved. Pereda-Suberbiola and Barrett (1999) place them in either the Cambridge Greensand or the underlying Gault Clay, upper Albian in either case, and suggest the associated material "may have been recovered from the phosphate beds of the uppermost Gault Clay rather than from the Cambridge Greensand". The Cambridge Greensand is itself a remanié deposit whose fossils are reworked from older beds.
           region_code: GB-CAM
         size:
           length_m:
@@ -22144,9 +22158,8 @@ genera:
             - Late Cretaceous
           stage:
             - Campanian
-            - Maastrichtian
           from_ma: 83.6
-          to_ma: 66
+          to_ma: 72.2
         location:
           country: AR
           locality: opposite General Roca
@@ -23243,11 +23256,9 @@ genera:
           name:
             - Late Cretaceous
           stage:
-            - Santonian
             - Campanian
-            - Maastrichtian
-          from_ma: 85.7
-          to_ma: 66
+          from_ma: 83.6
+          to_ma: 72.2
         location:
           country: US
           locality: Turnipseed Dinosaur site
@@ -26375,7 +26386,6 @@ genera:
             - Toarcian
             - Aalenian
             - Bajocian
-          resolution: unit
           from_ma: 184.2
           to_ma: 168.2
         location:
@@ -28642,17 +28652,22 @@ genera:
         type_species: true
         period:
           name:
+            - Middle Jurassic
             - Late Jurassic
           stage:
+            - Callovian
             - Oxfordian
+            - Kimmeridgian
           resolution: unit
-          from_ma: 161.5
-          to_ma: 154.8
+          from_ma: 165.3
+          to_ma: 149.2
         location:
           country: CN
           locality: Yaolugou, Jianchang
           region: Liaoning
           formation: Tiaojishan
+          notes: |
+            No finer age is published for the Yaolugou horizon, so the stages are the formation's. The Oxfordian that Lefèvre and colleagues (2017) give is for the formation at Daxishan, another locality.
           region_code: CN-LN
         size:
           length_m:
@@ -32134,10 +32149,8 @@ genera:
             - Early Cretaceous
           stage:
             - Valanginian
-            - Hauterivian
-            - Barremian
           from_ma: 137.05
-          to_ma: 121.4
+          to_ma: 132.6
         location:
           country: GB
           locality: Shornden Quarry
@@ -32438,11 +32451,8 @@ genera:
           name:
             - Late Cretaceous
           stage:
-            - Turonian
-            - Coniacian
-            - Santonian
             - Campanian
-          from_ma: 93.9
+          from_ma: 83.6
           to_ma: 72.2
         location:
           country: AR
@@ -33881,7 +33891,7 @@ genera:
           formation: Shishugou
           part: upper
           notes: |
-            Moore and colleagues (2018) place the quarry at the base of the upper beds, correlated to a level between the T-1 and T-BW tuffs, which on GTS2020 straddle the base of the Oxfordian.
+            Moore and colleagues (2018) place the quarry at the base of the upper beds, correlated to a level between the T-1 and T-BW tuffs, which on the ICS chart v2024/12 straddle the base of the Oxfordian.
           region_code: CN-XJ
           part_of: formation
         type_specimen:
@@ -37862,9 +37872,8 @@ genera:
             - Late Jurassic
           stage:
             - Kimmeridgian
-            - Tithonian
           from_ma: 154.8
-          to_ma: 143.1
+          to_ma: 149.2
         location:
           country: PK
           region: Balochistan
@@ -40870,15 +40879,17 @@ genera:
           name:
             - Late Jurassic
           stage:
-            - Tithonian
-          from_ma: 149.2
-          to_ma: 143.1
+            - Kimmeridgian
+          from_ma: 154.8
+          to_ma: 149.2
         location:
           country: US
           locality: Quarry 13, Como Bluff
           region: Wyoming
           formation: Morrison
           member: Salt Wash
+          notes: |
+            McDonald (2011) places "material from Como Bluff Quarry 13 in the Upper Jurassic Salt Wash Member of the Morrison Formation".
           region_code: US-WY
         type_specimen:
           specimen_id:
@@ -40925,6 +40936,16 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
         notes: Source of the hip height estimate.
+      - id: mcdonald2011a
+        authors: McDonald, A. T.
+        year: 2011
+        title: "The taxonomy of species assigned to Camptosaurus (Dinosauria: Ornithopoda)"
+        journal: Zootaxa
+        publisher: Magnolia Press
+        volume: "2783"
+        issue: "1"
+        doi: 10.11646/zootaxa.2783.1.4
+        notes: Places the Quarry 13 material in the Salt Wash Member of the Morrison Formation.
     taxonomy:
       - Life
       - Animalia
@@ -44226,7 +44247,7 @@ genera:
         issue: "6"
         pages: nwab063
         doi: 10.1093/nsr/nwab063
-        notes: "Dates the base of the Yixian Formation, the Lujiatun Unit that yielded the holotype, to 125.755 Ma: Barremian on GTS2020."
+        notes: "Dates the base of the Yixian Formation, the Lujiatun Unit that yielded the holotype, to 125.755 Ma: Barremian on the ICS chart v2024/12 at its central value; its error reaches the Hauterivian."
       - id: gale2020a
         authors: Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R.
         year: 2020
@@ -44235,7 +44256,7 @@ genera:
         publisher: Elsevier
         pages: 1023-1086
         doi: 10.1016/B978-0-12-824360-2.00027-9
-        notes: Source of the GTS2020 Barremian span, 126.5 to 121.4 Ma.
+        notes: Gives the GTS2020 Barremian span, 126.5 to 121.4 Ma; the ICS chart v2024/12 starts the stage at 125.77 Ma.
     taxonomy:
       - Life
       - Animalia
@@ -44504,12 +44525,10 @@ genera:
             - Late Jurassic
             - Early Cretaceous
           stage:
-            - Kimmeridgian
             - Tithonian
             - Berriasian
-            - Valanginian
-          from_ma: 154.8
-          to_ma: 132.6
+          from_ma: 149.2
+          to_ma: 137.05
         location:
           country: CN
           locality: Ershijiazi
@@ -45486,17 +45505,19 @@ genera:
         type_species: true
         period:
           name:
-            - Late Cretaceous
+            - Early Cretaceous
           stage:
-            - Turonian
-          from_ma: 93.9
-          to_ma: 89.8
+            - Aptian
+            - Albian
+          from_ma: 121.4
+          to_ma: 100.5
         location:
           country: CN
           locality: Tashuikou
           region: Inner Mongolia
           formation: Miaogou
-          notes: Hu (1964) gives the type locality as Dashuigou, which Carrano and colleagues (2012) identify with Tashuikou. Hao and colleagues (2025) discontinued the Dashuigou Formation and placed its strata in the Miaogou Formation, so the horizon follows; none of the works cited for this taxon states that combination outright. The Ulansuhai assignment rests on a radiometric date from basalts some 200 km away and is not followed.
+          notes: |
+            Hu (1964) gives the type locality as Dashuigou, which Carrano and colleagues (2012) identify with Tashuikou. Hao and colleagues (2025) discontinued the Dashuigou Formation and placed its strata in the Miaogou Formation, so the horizon follows; none of the works cited for this taxon states that combination outright. The Ulansuhai assignment rests on a radiometric date from basalts some 200 km away and is not followed. The Turonian goes with it: Benson and colleagues (2009) give "Ulansuhai Formation (?Turonian, Late Cretaceous)" after Hu (1964), while Hao and colleagues (2025) date the Miaogou "Aptian-Albian".
           region_code: CN-NM
         type_specimen:
           specimen_id:
@@ -47006,9 +47027,8 @@ genera:
           name:
             - Early Cretaceous
           stage:
-            - Aptian
             - Albian
-          from_ma: 121.4
+          from_ma: 113.2
           to_ma: 100.5
         location:
           country: AR
@@ -49991,15 +50011,15 @@ genera:
           stage:
             - Toarcian
             - Aalenian
-            - Bajocian
-          resolution: unit
           from_ma: 184.2
-          to_ma: 168.2
+          to_ma: 170.9
         location:
           country: AR
           locality: Las Chacritas
           region: Chubut
           formation: Cañadón Asfalto
+          notes: |
+            Cúneo and colleagues (2013) place it among the theropods of the Cerro Cóndor area, whose ages are "now constrained essentially to the Toarcian–Aalenian boundary interval". The "Middle Jurassic (Callovian)" of Rauhut (2005) is the older age of the whole formation.
           region_code: AR-U
         size:
           length_m:
@@ -50783,6 +50803,7 @@ genera:
             - Berriasian
             - Valanginian
             - Hauterivian
+          resolution: reworked
           from_ma: 143.1
           to_ma: 125.77
         location:
@@ -50792,7 +50813,7 @@ genera:
           formation: Woburn Sands
           bed: Potton Nodule Bed
           notes: |
-            The specimen is reworked. Galton (1985) gives it from the Potton Nodule Bed "in upper part of Woburn Sands (Lower Cretaceous, probably reworked from beds of Neocomian age; Casey, 1961)", so it carries the age of its source beds, the Neocomian, which GTS2020 resolves into the Berriasian, Valanginian and Hauterivian. The nodule bed itself was deposited in the late Aptian to early Albian, as Galton (2009) gives it.
+            The specimen is reworked. Galton (1985) gives it from the Potton Nodule Bed "in upper part of Woburn Sands (Lower Cretaceous, probably reworked from beds of Neocomian age; Casey, 1961)", so it carries the age of its source beds, the Neocomian, an interval that Gale and colleagues (2020) describe as "subdivided into three stages—the Berriasian, Valanginian and Hauterivian". The nodule bed itself was deposited in the late Aptian to early Albian, as Galton (2009) gives it.
           region_code: GB-CBF
         size:
           length_m:
@@ -53646,9 +53667,8 @@ genera:
             - Late Cretaceous
           stage:
             - Turonian
-            - Coniacian
           from_ma: 93.9
-          to_ma: 85.7
+          to_ma: 89.8
         location:
           country: CN
           locality: Mazhou
@@ -54697,10 +54717,9 @@ genera:
             - Early Cretaceous
             - Late Cretaceous
           stage:
-            - Aptian
             - Albian
             - Cenomanian
-          from_ma: 121.4
+          from_ma: 113.2
           to_ma: 93.9
         location:
           country: US
@@ -56060,10 +56079,9 @@ genera:
           name:
             - Late Jurassic
           stage:
-            - Oxfordian
             - Kimmeridgian
             - Tithonian
-          from_ma: 161.5
+          from_ma: 154.8
           to_ma: 143.1
         location:
           country: TZ
@@ -56290,7 +56308,7 @@ genera:
         issue: "6"
         pages: nwab063
         doi: 10.1093/nsr/nwab063
-        notes: "Dates the base of the Yixian Formation, the Lujiatun Unit that yielded the holotype, to 125.755 Ma: Barremian on GTS2020."
+        notes: "Dates the base of the Yixian Formation, the Lujiatun Unit that yielded the holotype, to 125.755 Ma: Barremian on the ICS chart v2024/12 at its central value; its error reaches the Hauterivian."
       - id: gale2020a
         authors: Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R.
         year: 2020
@@ -56299,7 +56317,7 @@ genera:
         publisher: Elsevier
         pages: 1023-1086
         doi: 10.1016/B978-0-12-824360-2.00027-9
-        notes: Source of the GTS2020 Barremian span, 126.5 to 121.4 Ma.
+        notes: Gives the GTS2020 Barremian span, 126.5 to 121.4 Ma; the ICS chart v2024/12 starts the stage at 125.77 Ma.
     taxonomy:
       - Life
       - Animalia
@@ -59011,9 +59029,8 @@ genera:
             - Early Cretaceous
           stage:
             - Berriasian
-            - Valanginian
           from_ma: 143.1
-          to_ma: 132.6
+          to_ma: 137.05
         location:
           country: DK
           locality: Carl Nielsen's sandpit
@@ -59021,6 +59038,8 @@ genera:
           formation: Jydegaard
           member: Tornhöj
           part: lower
+          notes: |
+            Lindgren and colleagues (2008) date the beds as "deposited during late Berriasian time". Christiansen and Bonde (2003) give "Late Berriasian to ?Early Valanginian", with the Valanginian queried.
           region_code: DK-84
           part_of: member
         type_specimen:
@@ -59835,9 +59854,8 @@ genera:
           name:
             - Late Cretaceous
           stage:
-            - Campanian
             - Maastrichtian
-          from_ma: 83.6
+          from_ma: 72.2
           to_ma: 66
         location:
           country: US
@@ -61049,9 +61067,8 @@ genera:
             - Late Jurassic
           stage:
             - Oxfordian
-            - Kimmeridgian
           from_ma: 161.5
-          to_ma: 149.2
+          to_ma: 154.8
         location:
           country: US
           locality: East Canyon Quarry
@@ -64376,9 +64393,8 @@ genera:
             - Aalenian
             - Bajocian
             - Bathonian
-            - Callovian
           from_ma: 174.7
-          to_ma: 161.5
+          to_ma: 165.3
         location:
           country: CN
           locality: Banqing Houshanliangzi
@@ -64799,11 +64815,10 @@ genera:
             - Middle Jurassic
             - Late Jurassic
           stage:
-            - Bathonian
             - Callovian
             - Oxfordian
             - Kimmeridgian
-          from_ma: 168.2
+          from_ma: 165.3
           to_ma: 149.2
         location:
           country: CN
@@ -69564,9 +69579,9 @@ genera:
           name:
             - Late Jurassic
           stage:
-            - Tithonian
-          from_ma: 149.2
-          to_ma: 143.1
+            - Kimmeridgian
+          from_ma: 154.8
+          to_ma: 149.2
         location:
           country: US
           locality: Fruita Paleontological Area
@@ -69574,6 +69589,8 @@ genera:
           formation: Morrison
           member: Brushy Basin
           part: lower
+          notes: |
+            Butler and colleagues (2009) place the holotype at "The base of the Brushy Basin Member of the Morrison Formation (Late Jurassic: early Tithonian)" in the Fruita Paleontological Area. Sombathy and colleagues (2025) date that area at "ca. 152–150 Ma", and Chure and Loewen (2020) the base of the Brushy Basin at a recalibrated 152.77 ± 0.3 Ma, both Kimmeridgian on the ICS chart v2024/12.
           region_code: US-CO
           part_of: member
         type_specimen:
@@ -69604,6 +69621,25 @@ genera:
         issue: "1680"
         pages: 375-381
         doi: 10.1098/rspb.2009.1494
+      - id: sombathy2025a
+        authors: Sombathy, R.; O'Connor, P. M.; D'Emic, M. D.
+        year: 2025
+        title: Osteohistology of the unusually fast-growing theropod dinosaur Ceratosaurus
+        journal: Journal of Anatomy
+        volume: "247"
+        issue: 3-4
+        pages: 765-789
+        doi: 10.1111/joa.14186
+        notes: Dates the Fruita Paleontological Area at about 152 to 150 Ma.
+      - id: chure2020a
+        authors: Chure, D. J.; Loewen, M. A.
+        year: 2020
+        title: Cranial anatomy of Allosaurus jimmadseni, a new species from the lower part of the Morrison Formation (Upper Jurassic) of Western North America
+        journal: PeerJ
+        volume: "8"
+        pages: e7803
+        doi: 10.7717/peerj.7803
+        notes: Gives a recalibrated 152.77 Ma for the base of the Brushy Basin Member.
     taxonomy:
       - Life
       - Animalia
@@ -69657,15 +69693,16 @@ genera:
             - Late Jurassic
           stage:
             - Kimmeridgian
-            - Tithonian
           from_ma: 154.8
-          to_ma: 143.1
+          to_ma: 149.2
         location:
           country: CN
           locality: near Yangyuan Village, Zhenghe
           region: Fujian
           formation: Nanyuan
           part: lower
+          notes: |
+            Xu and colleagues (2023) bracket the fossil-bearing layers with zircon ages of 150.2 ± 1.1 Ma below and 149.9 ± 1.1 Ma above, both Kimmeridgian on the ICS chart v2024/12 at their central values; the paper's "Tithonian stage" belongs to an older chart.
           region_code: CN-FJ
           part_of: formation
         type_specimen:
@@ -73540,9 +73577,8 @@ genera:
             - Late Cretaceous
           stage:
             - Cenomanian
-            - Turonian
           from_ma: 100.5
-          to_ma: 89.8
+          to_ma: 93.9
         location:
           country: AR
           locality: Villa El Chocón, 15 km south
@@ -74321,10 +74357,9 @@ genera:
           name:
             - Late Jurassic
           stage:
-            - Oxfordian
             - Kimmeridgian
             - Tithonian
-          from_ma: 161.5
+          from_ma: 154.8
           to_ma: 143.1
         location:
           country: TZ
@@ -74696,9 +74731,8 @@ genera:
           name:
             - Late Cretaceous
           stage:
-            - Campanian
             - Maastrichtian
-          from_ma: 83.6
+          from_ma: 72.2
           to_ma: 66
         location:
           country: US
@@ -76851,7 +76885,7 @@ genera:
         issue: "6"
         pages: nwab063
         doi: 10.1093/nsr/nwab063
-        notes: "Dates the base of the Yixian Formation, the Lujiatun Unit that yielded the holotype, to 125.755 Ma: Barremian on GTS2020."
+        notes: "Dates the base of the Yixian Formation, the Lujiatun Unit that yielded the holotype, to 125.755 Ma: Barremian on the ICS chart v2024/12 at its central value; its error reaches the Hauterivian."
       - id: gale2020a
         authors: Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R.
         year: 2020
@@ -76860,7 +76894,7 @@ genera:
         publisher: Elsevier
         pages: 1023-1086
         doi: 10.1016/B978-0-12-824360-2.00027-9
-        notes: Source of the GTS2020 Barremian span, 126.5 to 121.4 Ma.
+        notes: Gives the GTS2020 Barremian span, 126.5 to 121.4 Ma; the ICS chart v2024/12 starts the stage at 125.77 Ma.
     taxonomy:
       - Life
       - Animalia
@@ -77794,7 +77828,7 @@ genera:
           formation: Shishugou
           part: upper
           notes: |
-            Xu and colleagues (2006) give the horizon as the "Oxfordian upper part of the Shishugou Formation" without tying it to the dated tuffs, which on GTS2020 straddle the base of the Oxfordian.
+            Xu and colleagues (2006) give the horizon as the "Oxfordian upper part of the Shishugou Formation" without tying it to the dated tuffs, which on the ICS chart v2024/12 straddle the base of the Oxfordian.
           region_code: CN-XJ
           part_of: formation
         type_specimen:
@@ -78977,10 +79011,15 @@ genera:
         period:
           name:
             - Late Jurassic
+            - Early Cretaceous
           stage:
+            - Oxfordian
+            - Kimmeridgian
             - Tithonian
-          from_ma: 149.2
-          to_ma: 143.1
+            - Berriasian
+          resolution: unit
+          from_ma: 161.5
+          to_ma: 137.05
         location:
           country: US
           region: Colorado
@@ -79136,7 +79175,7 @@ genera:
           formation: Shishugou
           part: middle
           notes: |
-            Choiniere and colleagues (2010) gave the horizon as "Lower orange mudstone beds in the upper part of the Shishugou Formation"; their 2014 redescription places it in the "Middle beds", between tuffs dated 162.2 and 159.7 Ma, which on GTS2020 straddle the base of the Oxfordian. Qin and colleagues (2019) put it about 40 m above the lower tuff.
+            Choiniere and colleagues (2010) gave the horizon as "Lower orange mudstone beds in the upper part of the Shishugou Formation"; their 2014 redescription places it in the "Middle beds", between tuffs dated 162.2 and 159.7 Ma, which on the ICS chart v2024/12 straddle the base of the Oxfordian. Qin and colleagues (2019) put it about 40 m above the lower tuff.
           region_code: CN-XJ
           part_of: formation
         size:
@@ -80639,19 +80678,25 @@ genera:
         period:
           name:
             - Late Jurassic
+            - Early Cretaceous
           stage:
             - Oxfordian
             - Kimmeridgian
             - Tithonian
+            - Berriasian
           resolution: unit
           from_ma: 161.5
-          to_ma: 143.1
+          to_ma: 137.05
         location:
           country: US
           locality: S. B. Smith Ranch
           region: Wyoming
           formation: Morrison
+          part: lower
+          notes: |
+            Carpenter and colleagues (2001) give the holotype locality as "Five meters above base (Weege, personal communication), Morrison Formation, S. B. Smith Ranch, Johnson County, Wyoming". No finer age is published, so the stages are the formation's.
           region_code: US-WY
+          part_of: formation
         size:
           hip_height_m:
             min: 2.3
@@ -80771,10 +80816,9 @@ genera:
           name:
             - Early Jurassic
           stage:
-            - Hettangian
             - Sinemurian
             - Pliensbachian
-          from_ma: 201.4
+          from_ma: 199.5
           to_ma: 184.2
         location:
           country: ZA
@@ -80786,7 +80830,7 @@ genera:
             - -30.533333
             - 27.533333
           notes: |
-            Kitching and Raath published the coordinate in 1984, and Norman and colleagues (2011) reprint it. They also supply the Clarens name for what Crompton and Charig (1962) call the Cave Sandstone. Sereno (2012) places the holotype in "lower levels" of the Clarens, which is Sinemurian to Pliensbachian below its topmost beds. The referred skeleton SAM-PK-K1332 comes from "the upper part of the Elliot Formation" at Voyizane, "stratigraphically lower than the horizon at which the holotype was found" (Norman and colleagues 2011), dated Hettangian to Sinemurian by Bordy and colleagues (2020). The species is thus known from both horizons.
+            Kitching and Raath published the coordinate in 1984, and Norman and colleagues (2011) reprint it. They also supply the Clarens name for what Crompton and Charig (1962) call the Cave Sandstone. Sereno (2012) places the holotype in "lower levels" of the Clarens, which is Sinemurian to Pliensbachian below its topmost beds. The referred skeleton SAM-PK-K1332 comes from "the upper part of the Elliot Formation" at Voyizane, "stratigraphically lower than the horizon at which the holotype was found" (Norman and colleagues 2011), dated Hettangian to Sinemurian by Bordy and colleagues (2020). The stages follow the holotype's horizon, not this older one.
           region_code: ZA-EC
           part_of: formation
         type_specimen:
@@ -82269,7 +82313,7 @@ genera:
           formation: Shishugou
           part: upper
           notes: |
-            Han and colleagues (2015) place the holotype in the same part of the Shishugou as Yinlong, between tuffs dated 162.2 and 159.7 Ma, which on GTS2020 straddle the base of the Oxfordian.
+            Han and colleagues (2015) place the holotype in the same part of the Shishugou as Yinlong, between tuffs dated 162.2 and 159.7 Ma, which on the ICS chart v2024/12 straddle the base of the Oxfordian.
           region_code: CN-XJ
           part_of: formation
         type_specimen:
@@ -83308,9 +83352,8 @@ genera:
             - Late Triassic
           stage:
             - Carnian
-            - Norian
           from_ma: 237
-          to_ma: 205.7
+          to_ma: 227.3
         location:
           country: AR
           locality: Quebrada Santo Domingo
@@ -84954,10 +84997,15 @@ genera:
         period:
           name:
             - Late Jurassic
+            - Early Cretaceous
           stage:
+            - Oxfordian
+            - Kimmeridgian
             - Tithonian
-          from_ma: 149.2
-          to_ma: 143.1
+            - Berriasian
+          resolution: unit
+          from_ma: 161.5
+          to_ma: 137.05
         location:
           country: US
           region: Colorado
@@ -86681,7 +86729,7 @@ genera:
         issue: "6"
         pages: nwab063
         doi: 10.1093/nsr/nwab063
-        notes: "Dates the base of the Yixian Formation, the Lujiatun Unit that yielded the holotype, to 125.755 Ma: Barremian on GTS2020."
+        notes: "Dates the base of the Yixian Formation, the Lujiatun Unit that yielded the holotype, to 125.755 Ma: Barremian on the ICS chart v2024/12 at its central value; its error reaches the Hauterivian."
       - id: gale2020a
         authors: Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R.
         year: 2020
@@ -86690,7 +86738,7 @@ genera:
         publisher: Elsevier
         pages: 1023-1086
         doi: 10.1016/B978-0-12-824360-2.00027-9
-        notes: Source of the GTS2020 Barremian span, 126.5 to 121.4 Ma.
+        notes: Gives the GTS2020 Barremian span, 126.5 to 121.4 Ma; the ICS chart v2024/12 starts the stage at 125.77 Ma.
     taxonomy:
       - Life
       - Animalia
@@ -89740,7 +89788,7 @@ genera:
           formation: Yixian
           member: Dawangzhangzi
           notes: |
-            Lefèvre and colleagues (2014) give the horizon as the "Dakangpu Member (equivalent to the Dawangzhangzi Beds) of the Yixian Formation, lower Aptian", while dating the formation at "124.6 ± 0.3 Mya using U-Pb SHRIMP dating", which is Barremian on GTS2020.
+            Lefèvre and colleagues (2014) give the horizon as the "Dakangpu Member (equivalent to the Dawangzhangzi Beds) of the Yixian Formation, lower Aptian", while dating the formation at "124.6 ± 0.3 Mya using U-Pb SHRIMP dating", which is Barremian on the ICS chart v2024/12.
           region_code: CN-LN
         type_specimen:
           specimen_id:
@@ -90437,7 +90485,7 @@ genera:
           formation: Shishugou
           part: upper
           notes: |
-            Jia and colleagues (2007) give the horizon as the upper section of the Shishugou, Oxfordian, without tying it to the dated tuffs, which on GTS2020 straddle the base of the Oxfordian.
+            Jia and colleagues (2007) give the horizon as the upper section of the Shishugou, Oxfordian, without tying it to the dated tuffs, which on the ICS chart v2024/12 straddle the base of the Oxfordian.
           region_code: CN-XJ
           part_of: formation
         type_specimen:
@@ -94427,10 +94475,9 @@ genera:
           name:
             - Late Jurassic
           stage:
-            - Oxfordian
             - Kimmeridgian
             - Tithonian
-          from_ma: 161.5
+          from_ma: 154.8
           to_ma: 143.1
         location:
           country: TZ
@@ -95848,8 +95895,10 @@ genera:
           name:
             - Late Jurassic
           stage:
+            - Kimmeridgian
             - Tithonian
-          from_ma: 149.2
+          resolution: unit
+          from_ma: 154.8
           to_ma: 143.1
         location:
           country: US
@@ -101901,7 +101950,7 @@ genera:
         issue: "6"
         pages: nwab063
         doi: 10.1093/nsr/nwab063
-        notes: "Dates the base of the Yixian Formation, the Lujiatun Unit that yielded the holotype, to 125.755 Ma: Barremian on GTS2020."
+        notes: "Dates the base of the Yixian Formation, the Lujiatun Unit that yielded the holotype, to 125.755 Ma: Barremian on the ICS chart v2024/12 at its central value; its error reaches the Hauterivian."
       - id: gale2020a
         authors: Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R.
         year: 2020
@@ -101910,7 +101959,7 @@ genera:
         publisher: Elsevier
         pages: 1023-1086
         doi: 10.1016/B978-0-12-824360-2.00027-9
-        notes: Source of the GTS2020 Barremian span, 126.5 to 121.4 Ma.
+        notes: Gives the GTS2020 Barremian span, 126.5 to 121.4 Ma; the ICS chart v2024/12 starts the stage at 125.77 Ma.
     taxonomy:
       - Life
       - Animalia
@@ -102393,9 +102442,8 @@ genera:
             - Late Cretaceous
           stage:
             - Cenomanian
-            - Turonian
           from_ma: 100.5
-          to_ma: 89.8
+          to_ma: 93.9
         location:
           country: AR
           locality: 5 km southwest of El Chocón
@@ -102512,7 +102560,7 @@ genera:
           region: Xinjiang
           formation: Shishugou
           notes: |
-            Xu and colleagues (2009) give the horizon as the "Oxfordian upper part of the Shishugou Formation" without tying it to the dated tuffs, which on GTS2020 straddle the base of the Oxfordian.
+            Xu and colleagues (2009) give the horizon as the "Oxfordian upper part of the Shishugou Formation" without tying it to the dated tuffs, which on the ICS chart v2024/12 straddle the base of the Oxfordian.
           region_code: CN-XJ
         type_specimen:
           specimen_id:
@@ -103406,7 +103454,7 @@ genera:
         volume: "7"
         pages: 91
         doi: 10.1038/s43247-025-03083-6
-        notes: Dates the base of the Lufeng Formation, where it overlies the Yubacun, to about 200.1 Ma, Hettangian on GTS2020.
+        notes: Dates the base of the Lufeng Formation, where it overlies the Yubacun, to about 200.1 Ma, Hettangian on the ICS chart v2024/12.
       - id: fang2000a
         authors: Fang, X.; Long, Q.; Lu, L.; Zhang, Z.; Pan, S.; Wang, Y.; Li, X.; Cheng, Z.
         year: 2000
@@ -104422,9 +104470,9 @@ genera:
           name:
             - Late Cretaceous
           stage:
-            - Maastrichtian
-          from_ma: 72.2
-          to_ma: 66
+            - Campanian
+          from_ma: 83.6
+          to_ma: 72.2
         location:
           country: AR
           locality: Cinco Saltos
@@ -108528,7 +108576,7 @@ genera:
             - 90.0483
           locality: 22 km north of Jiangjunmiao
           notes: |
-            Moore and colleagues (2023) place the holotype 3 m above a tuff at Jiangjunmiao that is probably equivalent to the T-1 tuff at Wucaiwan, making it "no older than 162.4 Ma", a floor below the GTS2020 base of the Oxfordian.
+            Moore and colleagues (2023) place the holotype 3 m above a tuff at Jiangjunmiao that is probably equivalent to the T-1 tuff at Wucaiwan, making it "no older than 162.4 Ma", a floor below the base of the Oxfordian on the ICS chart v2024/12.
           region_code: CN-XJ
           part_of: formation
         type_specimen:
@@ -109626,8 +109674,9 @@ genera:
           name:
             - Late Jurassic
           stage:
+            - Kimmeridgian
             - Tithonian
-          from_ma: 149.2
+          from_ma: 154.8
           to_ma: 143.1
         location:
           country: US
@@ -111348,7 +111397,7 @@ genera:
         issue: "6"
         pages: nwab063
         doi: 10.1093/nsr/nwab063
-        notes: "Dates the base of the Yixian Formation, the Lujiatun Unit that yielded the holotype, to 125.755 Ma: Barremian on GTS2020."
+        notes: "Dates the base of the Yixian Formation, the Lujiatun Unit that yielded the holotype, to 125.755 Ma: Barremian on the ICS chart v2024/12 at its central value; its error reaches the Hauterivian."
       - id: gale2020a
         authors: Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R.
         year: 2020
@@ -111357,7 +111406,7 @@ genera:
         publisher: Elsevier
         pages: 1023-1086
         doi: 10.1016/B978-0-12-824360-2.00027-9
-        notes: Source of the GTS2020 Barremian span, 126.5 to 121.4 Ma.
+        notes: Gives the GTS2020 Barremian span, 126.5 to 121.4 Ma; the ICS chart v2024/12 starts the stage at 125.77 Ma.
     taxonomy:
       - Life
       - Animalia
@@ -113152,10 +113201,9 @@ genera:
             - Early Cretaceous
             - Late Cretaceous
           stage:
-            - Aptian
             - Albian
             - Cenomanian
-          from_ma: 121.4
+          from_ma: 113.2
           to_ma: 93.9
         location:
           country: US
@@ -114544,9 +114592,8 @@ genera:
             - Late Cretaceous
           stage:
             - Campanian
-            - Maastrichtian
           from_ma: 83.6
-          to_ma: 66
+          to_ma: 72.2
         location:
           country: AT
           region: Lower Austria
@@ -120643,7 +120690,7 @@ genera:
           formation: Elliot
           part: upper
           notes: |
-            Chapelle and colleagues (2019) place the holotype in the "Uppermost upper Elliot Formation", which they label "?Hettangian–? Sinemurian". The youngest dated upper Elliot sample, under 191.9 ± 1.5 Ma (Bordy and colleagues 2020), is Pliensbachian on GTS2020, so the top of the member may reach that stage.
+            Chapelle and colleagues (2019) place the holotype in the "Uppermost upper Elliot Formation", which they label "?Hettangian–? Sinemurian". The youngest dated upper Elliot sample, under 191.9 ± 1.5 Ma (Bordy and colleagues 2020), is Pliensbachian on the ICS chart v2024/12, so the top of the member may reach that stage.
           region_code: ZA-FS
           part_of: formation
         size:
@@ -120691,7 +120738,7 @@ genera:
         volume: "203"
         pages: "103120"
         doi: 10.1016/j.earscirev.2020.103120
-        notes: Gives the youngest upper Elliot maximum depositional age, under 191.9 Ma, which falls in the Pliensbachian on GTS2020.
+        notes: Gives the youngest upper Elliot maximum depositional age, under 191.9 Ma, which falls in the Pliensbachian on the ICS chart v2024/12.
       - id: hesselbo2020a
         authors: Hesselbo, S. P.; Ogg, J. G.; Ruhl, M.; Hinnov, L. A.; Huang, C. J.
         year: 2020
@@ -127958,9 +128005,8 @@ genera:
           name:
             - Middle Jurassic
           stage:
-            - Aalenian
             - Bajocian
-          from_ma: 174.7
+          from_ma: 170.9
           to_ma: 168.2
         location:
           country: AU
@@ -128055,9 +128101,8 @@ genera:
           name:
             - Late Cretaceous
           stage:
-            - Campanian
             - Maastrichtian
-          from_ma: 83.6
+          from_ma: 72.2
           to_ma: 66
         location:
           country: US
@@ -131538,20 +131583,18 @@ genera:
         period:
           name:
             - Early Jurassic
-            - Middle Jurassic
           stage:
             - Toarcian
-            - Aalenian
-            - Bajocian
-          resolution: unit
           from_ma: 184.2
-          to_ma: 168.2
+          to_ma: 174.7
         location:
           country: AR
           locality: Cerro Cóndor North
           region: Chubut
           formation: Cañadón Asfalto
           part: lower
+          notes: |
+            Pol and colleagues (2022) report that "The base of the Cañadón Asfalto Formation was dated at 179.17 ± 0.12 Ma, and the uppermost levels of this unit were dated at 178.07 ± 0.21 Ma", and that "The locality where Volkheimeria and Patagosaurus were found is stratigraphically bracketed between the horizons of these two dates", placing them "into the middle Toarcian (ca 179–178 Ma)". That replaces the early Middle Jurassic age Cúneo and colleagues (2013) gave these sauropods.
           region_code: AR-U
           part_of: formation
         type_specimen:
@@ -131612,6 +131655,25 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
         notes: Source of the hip height estimate.
+      - id: pol2022a
+        authors: Pol, D.; Gomez, K.; Holwerda, F. M.; Rauhut, O. W. M.; Carballido, J. L.
+        year: 2022
+        title: Sauropods from the Early Jurassic of South America and the Radiation of Eusauropoda
+        journal: South American Sauropodomorph Dinosaurs (Springer Earth System Sciences)
+        pages: 131-163
+        doi: 10.1007/978-3-030-95959-3_4
+        notes: Brackets the type locality between U-Pb dates in the middle Toarcian.
+      - id: pol2020a
+        authors: Pol, D.; Ramezani, J.; Gomez, K.; Carballido, J. L.; Carabajal, A. P.; Rauhut, O. W. M.; Escapa, I. H.; Cúneo, N. R.
+        year: 2020
+        title: Extinction of herbivorous dinosaurs linked to Early Jurassic global warming event
+        journal: "Proceedings of the Royal Society B: Biological Sciences"
+        publisher: The Royal Society
+        volume: "287"
+        issue: "1939"
+        pages: "20202310"
+        doi: 10.1098/rspb.2020.2310
+        notes: Source of the U-Pb dates for the base and top of the formation.
     taxonomy:
       - Life
       - Animalia
@@ -132421,12 +132483,13 @@ genera:
         type_species: true
         period:
           name:
-            - Late Cretaceous
+            - Early Cretaceous
           stage:
-            - Campanian
-            - Maastrichtian
-          from_ma: 83.6
-          to_ma: 66
+            - Barremian
+            - Aptian
+            - Albian
+          from_ma: 125.77
+          to_ma: 100.5
         location:
           country: CN
           locality: Ehr-chia-wu-tung
@@ -132624,15 +132687,20 @@ genera:
           name:
             - Late Cretaceous
           stage:
+            - Campanian
             - Maastrichtian
-          from_ma: 72.2
+          from_ma: 83.6
           to_ma: 66
         location:
           country: AR
           locality: Cantera de la Pala Mecánica
           region: Río Negro
-          formation: Anacleto
+          formation: Allen
+          part: lower
+          notes: |
+            Salgado (1996) gives the horizon as the "Lower member of the Allen Formation, Malargüe Group", at Lago Pellegrini.
           region_code: AR-R
+          part_of: formation
         size:
           hip_height_m:
             min: 3
@@ -132746,9 +132814,8 @@ genera:
             - Early Cretaceous
           stage:
             - Valanginian
-            - Hauterivian
           from_ma: 137.05
-          to_ma: 125.77
+          to_ma: 132.6
         location:
           country: GB
           region: West Sussex
@@ -133133,9 +133200,8 @@ genera:
             - Late Cretaceous
           stage:
             - Campanian
-            - Maastrichtian
           from_ma: 83.6
-          to_ma: 66
+          to_ma: 72.2
         location:
           country: US
           region: New Mexico
@@ -134337,15 +134403,15 @@ genera:
           stage:
             - Toarcian
             - Aalenian
-            - Bajocian
-          resolution: unit
           from_ma: 184.2
-          to_ma: 168.2
+          to_ma: 170.9
         location:
           country: AR
           locality: Cerro Cóndor South
           region: Chubut
           formation: Cañadón Asfalto
+          notes: |
+            Cúneo and colleagues (2013) place it among the theropods of the Cerro Cóndor area, whose ages are "now constrained essentially to the Toarcian–Aalenian boundary interval".
           region_code: AR-U
         type_specimen:
           specimen_id:
@@ -135768,9 +135834,8 @@ genera:
           name:
             - Late Cretaceous
           stage:
-            - Santonian
             - Campanian
-          from_ma: 85.7
+          from_ma: 83.6
           to_ma: 72.2
         location:
           country: MN
@@ -139533,13 +139598,12 @@ genera:
         status: valid
         type_species: false
         period:
-          stage:
-            - Aptian
-            - Albian
           name:
             - Early Cretaceous
+          stage:
+            - Aptian
           from_ma: 121.4
-          to_ma: 100.5
+          to_ma: 113.2
         location:
           country: CN
           region: Shandong
@@ -139979,7 +140043,7 @@ genera:
         issue: "6"
         pages: nwab063
         doi: 10.1093/nsr/nwab063
-        notes: "Dates the base of the Yixian Formation, the Lujiatun Unit that yielded P. lujiatunensis, to 125.755 Ma: Barremian on GTS2020."
+        notes: "Dates the base of the Yixian Formation, the Lujiatun Unit that yielded P. lujiatunensis, to 125.755 Ma: Barremian on the ICS chart v2024/12 at its central value; its error reaches the Hauterivian."
       - id: gale2020a
         authors: Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R.
         year: 2020
@@ -139988,7 +140052,7 @@ genera:
         publisher: Elsevier
         pages: 1023-1086
         doi: 10.1016/B978-0-12-824360-2.00027-9
-        notes: Source of the GTS2020 Barremian span, 126.5 to 121.4 Ma.
+        notes: Gives the GTS2020 Barremian span, 126.5 to 121.4 Ma; the ICS chart v2024/12 starts the stage at 125.77 Ma.
     taxonomy:
       - Life
       - Animalia
@@ -141803,12 +141867,6 @@ genera:
         period:
           name:
             - Late Jurassic
-          stage:
-            - Oxfordian
-            - Kimmeridgian
-            - Tithonian
-          from_ma: 161.5
-          to_ma: 143.1
         location:
           country: CN
           locality: Beidu site
@@ -146506,12 +146564,10 @@ genera:
         type_species: true
         period:
           name:
-            - Early Cretaceous
             - Late Cretaceous
           stage:
-            - Albian
             - Cenomanian
-          from_ma: 113.2
+          from_ma: 100.5
           to_ma: 93.9
         location:
           country: TZ
@@ -149008,13 +149064,11 @@ genera:
         period:
           name:
             - Early Cretaceous
-            - Late Cretaceous
           stage:
             - Aptian
             - Albian
-            - Cenomanian
           from_ma: 121.4
-          to_ma: 93.9
+          to_ma: 100.5
         location:
           country: US
           locality: OMNH V821
@@ -151697,9 +151751,8 @@ genera:
             - Late Cretaceous
           stage:
             - Campanian
-            - Maastrichtian
           from_ma: 83.6
-          to_ma: 66
+          to_ma: 72.2
         location:
           country: CN
           locality: Longgujian
@@ -152490,7 +152543,7 @@ genera:
           region: Xinjiang
           formation: Shishugou
           notes: |
-            Qin and colleagues (2019) place the holotype between two tuffs, dated 161.2 and 158.7 Ma on the older calibration, which on GTS2020 straddle the base of the Oxfordian.
+            Qin and colleagues (2019) place the holotype between two tuffs, dated 161.2 and 158.7 Ma on the older calibration, which on the ICS chart v2024/12 straddle the base of the Oxfordian.
           region_code: CN-XJ
         size:
           length_m:
@@ -156665,7 +156718,7 @@ genera:
         issue: "6"
         pages: nwab063
         doi: 10.1093/nsr/nwab063
-        notes: "Dates the base of the Yixian Formation, the Lujiatun Unit that yielded the holotype, to 125.755 Ma: Barremian on GTS2020."
+        notes: "Dates the base of the Yixian Formation, the Lujiatun Unit that yielded the holotype, to 125.755 Ma: Barremian on the ICS chart v2024/12 at its central value; its error reaches the Hauterivian."
       - id: gale2020a
         authors: Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R.
         year: 2020
@@ -156674,7 +156727,7 @@ genera:
         publisher: Elsevier
         pages: 1023-1086
         doi: 10.1016/B978-0-12-824360-2.00027-9
-        notes: Source of the GTS2020 Barremian span, 126.5 to 121.4 Ma.
+        notes: Gives the GTS2020 Barremian span, 126.5 to 121.4 Ma; the ICS chart v2024/12 starts the stage at 125.77 Ma.
     taxonomy:
       - Life
       - Animalia
@@ -156751,7 +156804,7 @@ genera:
           region: Xinjiang
           formation: Shishugou
           notes: |
-            Currie and Zhao (1993) place the holotype about 65 m above the contact with the Wucaiwan Formation, and Carrano and colleagues (2012) in the Oxfordian upper part, neither tied to the dated tuffs, which on GTS2020 straddle the base of the Oxfordian.
+            Currie and Zhao (1993) place the holotype about 65 m above the contact with the Wucaiwan Formation, and Carrano and colleagues (2012) in the Oxfordian upper part, neither tied to the dated tuffs, which on the ICS chart v2024/12 straddle the base of the Oxfordian.
           region_code: CN-XJ
         size:
           hip_height_m:
@@ -160220,6 +160273,7 @@ genera:
           stage:
             - Berriasian
             - Valanginian
+          resolution: horizon
           from_ma: 143.1
           to_ma: 132.6
         location:
@@ -160233,7 +160287,8 @@ genera:
           coordinates:
             - 52.250322
             - 9.068783
-          notes: Hornung and colleagues (2012) place the type quarry in the upper Obernkirchen Sandstone, but caution in the same paper that correlating the beds at Harrl hill with those of the central Bückeberge is weakly supported. The bed is theirs and is recorded as they give it, no more firmly.
+          notes: |
+            Hornung and colleagues (2012) place the type quarry in the upper Obernkirchen Sandstone, but caution in the same paper that correlating the beds at Harrl hill with those of the central Bückeberge is weakly supported. The stages follow the whole Bückeberg, which the same paper gives as "middle Berriasian through early Valanginian", rather than the bed alone.
           region_code: DE-NI
           part_of: bed
         type_specimen:
@@ -160611,6 +160666,7 @@ genera:
           stage:
             - Callovian
             - Oxfordian
+          resolution: horizon
           from_ma: 165.3
           to_ma: 154.8
         location:
@@ -160618,6 +160674,8 @@ genera:
           locality: Falaises des Vaches Noires, near Honfleur
           region: Calvados
           formation: Marnes de Dives
+          notes: |
+            Carrano and colleagues (2012) give the horizon as "Marnes de Dives; late Callovian–early Oxfordian", and Allain (2001) dates the material only to "the Callovo-Oxfordian of the Vaches Noires". The Marnes de Dives itself is Callovian: Lebrun and Courville (2013) note that "only the final 6-7 m (out of 20 m) of the Marnes de Dives are 'visible' at the Vaches-Noires", all upper Callovian, beneath the Marnes de Villers, which "represent all or part of the basal Oxfordian (Mariae Zone)". The Oxfordian in those two works most likely reflects uncertainty over which of the cliff's beds yielded the material, rather than an Oxfordian Marnes de Dives.
           region_code: FR-14
         size:
           hip_height_m:
@@ -160728,6 +160786,14 @@ genera:
         journal: Mémoires du Muséum national d'Histoire naturelle
         volume: "12"
         pages: 97-155
+      - id: lebrun2013a
+        authors: Lebrun, P.; Courville, P.
+        year: 2013
+        title: Le Jurassique des falaises des Vaches-Noires [The Jurassic of the Vaches-Noires cliffs]
+        journal: Fossiles
+        series: hors-série IV
+        pages: 16-33
+        notes: Shows that only the uppermost, upper Callovian Marnes de Dives crops out at the Vaches Noires, beneath the basal Oxfordian Marnes de Villers.
     taxonomy:
       - Life
       - Animalia
@@ -160945,9 +161011,8 @@ genera:
             - Late Cretaceous
           stage:
             - Campanian
-            - Maastrichtian
           from_ma: 83.6
-          to_ma: 66
+          to_ma: 72.2
         location:
           country: AT
           locality: Muthmannsdorf
@@ -163639,11 +163704,10 @@ genera:
           name:
             - Late Cretaceous
           stage:
-            - Coniacian
-            - Santonian
             - Campanian
-          from_ma: 89.8
-          to_ma: 72.2
+            - Maastrichtian
+          from_ma: 83.6
+          to_ma: 66
         location:
           country: CN
           locality: about 500 m (one li) southwest of Jiangjundingcun
@@ -166216,9 +166280,8 @@ genera:
           name:
             - Late Cretaceous
           stage:
-            - Campanian
             - Maastrichtian
-          from_ma: 83.6
+          from_ma: 72.2
           to_ma: 66
         location:
           country: RO
@@ -166682,10 +166745,9 @@ genera:
             - Early Cretaceous
             - Late Cretaceous
           stage:
-            - Aptian
             - Albian
             - Cenomanian
-          from_ma: 121.4
+          from_ma: 113.2
           to_ma: 93.9
         location:
           country: US
@@ -168435,9 +168497,8 @@ genera:
           name:
             - Late Cretaceous
           stage:
-            - Campanian
             - Maastrichtian
-          from_ma: 83.6
+          from_ma: 72.2
           to_ma: 66
         location:
           country: US
@@ -169427,9 +169488,8 @@ genera:
             - Late Cretaceous
           stage:
             - Campanian
-            - Maastrichtian
           from_ma: 83.6
-          to_ma: 66
+          to_ma: 72.2
         location:
           country: CN
           locality: Kangdailiang near Zhaojiagou Village
@@ -169460,9 +169520,8 @@ genera:
             - Late Cretaceous
           stage:
             - Campanian
-            - Maastrichtian
           from_ma: 83.6
-          to_ma: 66
+          to_ma: 72.2
         location:
           country: CN
           locality: Kangdailiang, Zhaojiagou Township
@@ -170761,12 +170820,6 @@ genera:
         period:
           name:
             - Late Jurassic
-          stage:
-            - Oxfordian
-            - Kimmeridgian
-            - Tithonian
-          from_ma: 161.5
-          to_ma: 143.1
         location:
           country: CN
           locality: building site of Dafo Street
@@ -179467,20 +179520,18 @@ genera:
         period:
           name:
             - Early Jurassic
-            - Middle Jurassic
           stage:
             - Toarcian
-            - Aalenian
-            - Bajocian
-          resolution: unit
           from_ma: 184.2
-          to_ma: 168.2
+          to_ma: 174.7
         location:
           country: AR
           locality: Cerro Cóndor South
           region: Chubut
           formation: Cañadón Asfalto
           part: lower
+          notes: |
+            Pol and colleagues (2022) report that "The base of the Cañadón Asfalto Formation was dated at 179.17 ± 0.12 Ma, and the uppermost levels of this unit were dated at 178.07 ± 0.21 Ma", and that "The locality where Volkheimeria and Patagosaurus were found is stratigraphically bracketed between the horizons of these two dates", placing them "into the middle Toarcian (ca 179–178 Ma)". That replaces the early Middle Jurassic age Cúneo and colleagues (2013) gave these sauropods.
           region_code: AR-U
           part_of: formation
         type_specimen:
@@ -179529,6 +179580,25 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
         notes: Source of the body length and hip height estimates.
+      - id: pol2022a
+        authors: Pol, D.; Gomez, K.; Holwerda, F. M.; Rauhut, O. W. M.; Carballido, J. L.
+        year: 2022
+        title: Sauropods from the Early Jurassic of South America and the Radiation of Eusauropoda
+        journal: South American Sauropodomorph Dinosaurs (Springer Earth System Sciences)
+        pages: 131-163
+        doi: 10.1007/978-3-030-95959-3_4
+        notes: Brackets the type locality between U-Pb dates in the middle Toarcian.
+      - id: pol2020a
+        authors: Pol, D.; Ramezani, J.; Gomez, K.; Carballido, J. L.; Carabajal, A. P.; Rauhut, O. W. M.; Escapa, I. H.; Cúneo, N. R.
+        year: 2020
+        title: Extinction of herbivorous dinosaurs linked to Early Jurassic global warming event
+        journal: "Proceedings of the Royal Society B: Biological Sciences"
+        publisher: The Royal Society
+        volume: "287"
+        issue: "1939"
+        pages: "20202310"
+        doi: 10.1098/rspb.2020.2310
+        notes: Source of the U-Pb dates for the base and top of the formation.
     taxonomy:
       - Life
       - Animalia
@@ -181716,7 +181786,7 @@ genera:
           region: East Sussex
           formation: Ashdown
           notes: |
-            Taylor and Naish (2007) give the locality as "probably Ecclesbourne Glen", the "Precise locality and stratigraphic information" having been lost or never recorded, and the horizon as the "probably Berriasian part of the Ashdown Beds Formation", since the part exposed there is Berriasian. Taylor (2018) likewise puts it at around 140 million years, Berriasian on GTS2020.
+            Taylor and Naish (2007) give the locality as "probably Ecclesbourne Glen", the "Precise locality and stratigraphic information" having been lost or never recorded, and the horizon as the "probably Berriasian part of the Ashdown Beds Formation", since the part exposed there is Berriasian. Taylor (2018) likewise puts it at around 140 million years, Berriasian on the ICS chart v2024/12.
           region_code: GB-ESX
         size:
           hip_height_m:
@@ -182444,11 +182514,10 @@ genera:
             - Middle Jurassic
             - Late Jurassic
           stage:
-            - Bathonian
             - Callovian
             - Oxfordian
             - Kimmeridgian
-          from_ma: 168.2
+          from_ma: 165.3
           to_ma: 149.2
         location:
           country: CN
@@ -183799,14 +183868,10 @@ genera:
         period:
           name:
             - Late Jurassic
-            - Early Cretaceous
           stage:
-            - Kimmeridgian
             - Tithonian
-            - Berriasian
-            - Valanginian
-          from_ma: 154.8
-          to_ma: 132.6
+          from_ma: 149.2
+          to_ma: 143.1
         location:
           country: CN
           locality: Yanjiagou
@@ -184838,14 +184903,12 @@ genera:
         type_species: true
         period:
           name:
-            - Early Jurassic
             - Middle Jurassic
           stage:
-            - Toarcian
             - Aalenian
             - Bajocian
             - Bathonian
-          from_ma: 184.2
+          from_ma: 174.7
           to_ma: 165.3
         location:
           country: CN
@@ -184853,6 +184916,8 @@ genera:
           formation: Zhanghe
           locality: Zhongbanjing Village
           part: middle
+          notes: |
+            Zhang and colleagues (2026) give "Zhanghe Formation, Middle Jurassic". They also relay a correlation of the Zhanghe with the Chuanjie Formation, which Huang and colleagues (2021) place in "the Middle Jurassic, including the top of Toarcian to Bathonian"; the Toarcian rests only on that relayed correlation.
           region_code: CN-YN
           part_of: formation
         type_specimen:
@@ -185367,7 +185432,7 @@ genera:
           formation: Shishugou
           part: upper
           notes: |
-            Xu and colleagues (2006) place the holotype in the upper Shishugou and correlate it with the Oxfordian. Han and colleagues (2015) put the same part of the formation between tuffs dated 162.2 and 159.7 Ma, which on GTS2020 straddle the base of the Oxfordian.
+            Xu and colleagues (2006) place the holotype in the upper Shishugou and correlate it with the Oxfordian. Han and colleagues (2015) put the same part of the formation between tuffs dated 162.2 and 159.7 Ma, which on the ICS chart v2024/12 straddle the base of the Oxfordian.
           region_code: CN-XJ
           part_of: formation
         type_specimen:
@@ -186105,9 +186170,8 @@ genera:
             - Aalenian
             - Bajocian
             - Bathonian
-            - Callovian
           from_ma: 174.7
-          to_ma: 161.5
+          to_ma: 165.3
         location:
           country: CN
           locality: Banqing Houshanliangzi, Jiangyi
@@ -187605,9 +187669,8 @@ genera:
           name:
             - Late Cretaceous
           stage:
-            - Campanian
             - Maastrichtian
-          from_ma: 83.6
+          from_ma: 72.2
           to_ma: 66
         location:
           country: RO
@@ -188575,6 +188638,8 @@ genera:
           coordinates:
             - 28.476778
             - 119.865083
+          notes: |
+            Lü and colleagues (2007) give only "the Upper Cretaceous Chaochuan Formation of Lishui"; the Cenomanian is the formation's only Late Cretaceous stage. The 118 ± 1 Ma tuff that Ma and colleagues (2016) date in the Chaochuan is not tied to this locality.
           region_code: CN-ZJ
         type_specimen:
           specimen_id:
@@ -188892,7 +188957,7 @@ genera:
           region: Liaoning
           formation: Yixian
           notes: |
-            Xu and Qin (2017) give the horizon as "Possibly Yixian Formation, Aptian, Cretaceous" and state that the Yixian assignment of the Sihedang exposures "needs confirmation by additional stratigraphical, paleontological, and chronological data". Their Aptian follows an older placement of the stage base; the Yixian is Barremian on GTS2020.
+            Xu and Qin (2017) give the horizon as "Possibly Yixian Formation, Aptian, Cretaceous" and state that the Yixian assignment of the Sihedang exposures "needs confirmation by additional stratigraphical, paleontological, and chronological data". Their Aptian follows an older placement of the stage base; the Yixian is Barremian on the ICS chart v2024/12.
           region_code: CN-LN
         size:
           length_m:

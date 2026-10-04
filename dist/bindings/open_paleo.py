@@ -102,6 +102,8 @@ class Pronunciation(BaseModel):
 
 class Resolution(Enum):
     unit = 'unit'
+    reworked = 'reworked'
+    horizon = 'horizon'
 
 
 class PartOf(Enum):
@@ -476,7 +478,7 @@ class Period(BaseModel):
     to_ma: Optional[float] = None
     resolution: Optional[Resolution] = Field(
         None,
-        description='Present as "unit" when no age finer than the containing lithostratigraphic unit has been published, so `stage` is that unit\'s range rather than a determination for this taxon. Absent means the age is finer, or has not been checked.',
+        description='How `stage` relates to the record\'s stratigraphic unit. "unit": no age finer than the containing lithostratigraphic unit has been published, so `stage` is that unit\'s range rather than a determination for this taxon. "reworked": the type specimen was reworked from older beds, so `stage` is the age of those beds and falls outside the unit it was found in. "horizon": which bed yielded the type specimen is uncertain, so `stage` covers every candidate bed and reaches outside the named unit. Absent means the age is finer than the unit, or has not been checked.',
     )
 
 
