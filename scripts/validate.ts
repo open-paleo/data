@@ -2021,7 +2021,17 @@ for (const [filePath, doc] of genusParsed)
         const outside = recordStages.filter((stageName) => !unit.stages.includes(stageName));
         const resolution = species.period?.resolution;
 
-        if (outside.length === 0)
+        // `unit` says the record's stages ARE its unit's range, so they must
+        // match it exactly; a narrower or wider list is a reading of its own.
+        if (resolution === "unit" && recordStages.join() !== unit.stages.join())
+        {
+            checkError(
+                "Record stages",
+                filePath,
+                `species '${species.name ?? "?"}': resolution 'unit' but the stages (${recordStages.join(", ")}) are not those of '${unit.label}' (${unit.stages.join(", ")}) — take the unit's stages, or drop 'unit' if a paper the record cites gives the type horizon its own reading`);
+            continue;
+        }
+        else if (outside.length === 0)
         {
             continue;
         }
