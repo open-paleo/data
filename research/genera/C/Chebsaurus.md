@@ -1,5 +1,22 @@
 # *Chebsaurus*
 
+## Where is the Chebsaurus holotype held?
+
+*2026-10-04*
+
+**Conclusion.** Temporarily at the Centre de Recherche et Développement of Sonatrach, Boumerdès, Algeria; no permanent repository has been named. Governs `type_specimen.institution` and `specimen_id` (D001-01 to D001-78) on *Chebsaurus algeriensis*.
+
+**Evidence.**
+- mahammed2005a, p. 709: "Holotype. D001–01 to 78 (Fig. 2), temporarily in Sonatrach CRD, Boumerdès, Algeria"; p. 708: "temporairement conservé au CRD de Sonatrach".
+- läng2010a, p. 144: "Holotype: D001-1–D001-78, temporarily housed at the Centre de Recherche et Développement of the SONATRACH Company (Boumerdès, Algeria)"; "Referred material: D001-79–D001-118, housed with the holotype; partial juvenile skeleton", a second individual (p. 142: "belongs to two juvenile individuals").
+
+**Ruled out.**
+- *A museum repository.* Sonatrach "decided to create its 'Musée de la Géologie et des Hydrocarbures' in Alger", and a separate site museum at Naâma housed the preparation lab (läng2010a, p. 143); neither is given as the holotype's repository.
+- *D001-01–78 for Lapparentosaurus.* A table in Molina-Pérez and Larramendi (2020) prints the number against *Lapparentosaurus madagascariensis* (molina-pérez2020a, p. 254) as well as *Chebsaurus* (p. 250); for *Lapparentosaurus* it is an error (our reading).
+
+**Open.** Where the material is now held.
+
+
 ## Which formation and age is the Chebsaurus holotype from?
 
 *2026-09-30*
@@ -20,8 +37,9 @@
 
 ## References
 
+- `mahammed2005a`: Mahammed, F.; Läng, É.; Mami, L.; Mekahli, L.; Benhamou, M.; Bouterfa, B.; Kacemi, A.; Chérief, S. A.; Chaouati, H.; Taquet, P. (2005). The 'Giant of Ksour', a Middle Jurassic sauropod dinosaur from Algeria. *Comptes Rendus Palevol* 4(8): 707-714. doi:10.1016/j.crpv.2005.07.001
+- `läng2010a`: Läng, É.; Mahammed, F. (2010). New anatomical data and phylogenetic relationships of Chebsaurus algeriensis (Dinosauria, Sauropoda) from the Middle Jurassic of Algeria. *Historical Biology* 22(1-3): 142-164. doi:10.1080/08912960903515570
+- `molina-pérez2020a`: Molina-Pérez, R.; Larramendi, A. (2020). Dinosaur Facts and Figures: The Sauropods and Other Sauropodomorphs. Princeton University Press.
 - `kacemi2026a`: Kacemi, A.; Benhamou, M.; Boucif, A.; Benramdane, H.; Hebib, H. (2026). Évolution des milieux de dépôt et traces des dinosauriens du Jurassique supérieur dans les Monts des Ksour (Atlas saharien, Algérie) [Evolution of depositional environments and dinosaur tracks of the Upper Jurassic in the Ksour Mountains (Saharan Atlas, Algeria)]. *Estudios Geológicos* 82(2): e1154. doi:10.3989/egeol.45894.1154
 - `benddine2022a`: Benddine, A.; Benaouda, S. (2022). Lithostratigraphie et paléo environnement de la « Formation de Aïssa », coupes de Rouis El Djir et Djebel Larouia, Sillon pré-atlasique – Monts des Ksour (Atlas saharien) [Lithostratigraphy and paleoenvironment of the 'Aïssa Formation', Rouis El Djir and Djebel Larouia sections, pre-Atlas trough, Ksour Mountains (Saharan Atlas)]. Masters thesis, Université Abou Bekr Belkaïd, Tlemcen.
 - `mannion2019a`: Mannion, P. D.; Upchurch, P.; Schwarz, D.; Wings, O. (2019). Taxonomic affinities of the putative titanosaurs from the Late Jurassic Tendaguru Formation of Tanzania: phylogenetic and biogeographic implications for eusauropod dinosaur evolution. *Zoological Journal of the Linnean Society* 185(3): 784-909. doi:10.1093/zoolinnean/zly068
-- `läng2010a`: Läng, É.; Mahammed, F. (2010). New anatomical data and phylogenetic relationships of Chebsaurus algeriensis (Dinosauria, Sauropoda) from the Middle Jurassic of Algeria. *Historical Biology* 22(1-3): 142-164. doi:10.1080/08912960903515570
-- `mahammed2005a`: Mahammed, F.; Läng, É.; Mami, L.; Mekahli, L.; Benhamou, M.; Bouterfa, B.; Kacemi, A.; Chérief, S. A.; Chaouati, H.; Taquet, P. (2005). The 'Giant of Ksour', a Middle Jurassic sauropod dinosaur from Algeria. *Comptes Rendus Palevol* 4(8): 707-714. doi:10.1016/j.crpv.2005.07.001

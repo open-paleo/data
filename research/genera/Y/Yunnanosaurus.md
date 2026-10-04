@@ -1,5 +1,22 @@
 # *Yunnanosaurus*
 
+## What is the Yunnanosaurus huangi holotype's current number?
+
+*2026-10-04*
+
+**Conclusion.** NGMJ 004546, Nanjing Geological Museum; the same skull was earlier V20 and then NGMJ V0116. Governs `type_specimen.specimen_id: NGMJ 004546`, `institution` and the former numbers on *Yunnanosaurus huangi*.
+
+**Evidence.**
+- barrett2007a, p. 321: "Young (1942) designated this specimen with the catalogue number V20. This number was later changed to NGMJ V0116 (as indicated on the label within the display case), but the correct accession number is now NGMJ 004546"; "Holotype: NGMJ 004546".
+- barrett2005b, p. 808: "NGMJ 004546; Young (1942)", in a table of material the authors examined firsthand; "NGMJ, Nanjing Geological Museum".
+
+**Ruled out.**
+- *IVPP V 20 as the current number.* Zhang and colleagues give "Yunnanosaurus (IVPP V 20/NJGM 004546)" (zhang2024a, p. 7), pairing the old and current numbers, with the museum abbreviated NJGM.
+- *A number in the naming note.* Young (1940) gives none: "Skull, lower jaw pair and partly preserved skeletons" (young1940a, p. 237).
+
+**Open.** Why the number changed; Barrett and colleagues say only that it "was later changed".
+
+
 ## Is Huangchiatien a real locality for the Yunnanosaurus huangi holotype, and which beds is it from?
 
 *2026-09-30*
@@ -21,12 +38,15 @@
 
 ## References
 
+- `barrett2007a`: Barrett, P. M.; Upchurch, P.; Zhou, X. D.; Wang, X. L. (2007). The skull of Yunnanosaurus huangi Young, 1942 (Dinosauria: Prosauropoda) from the Lower Lufeng Formation (Lower Jurassic) of Yunnan, China. *Zoological Journal of the Linnean Society* 150(2): 319-341. doi:10.1111/j.1096-3642.2007.00290.x
+- `barrett2005b`: Barrett, P. M.; Upchurch, P.; Wang, X. L. (2005). Cranial osteology of Lufengosaurus huenei Young (Dinosauria: Prosauropoda) from the Lower Jurassic of Yunnan, People's Republic of China. *Journal of Vertebrate Paleontology* 25(4): 806-822. doi:10.1671/0272-4634(2005)025[0806:COOLHY]2.0.CO;2
+- `zhang2024a`: Zhang, Q. N.; Jia, L.; Wang, T.; Zhang, Y. G.; You, H. L. (2024). The largest sauropodomorph skull from the Lower Jurassic Lufeng Formation of China. *PeerJ* 12: e18629. doi:10.7717/peerj.18629
+- `young1940a`: Young, C. C. (1940). Preliminary notes on the Lufeng vertebrate fossils. *Bulletin of the Geological Society of China* 20(3-4): 235-239. doi:10.1111/j.1755-6724.1940.mp203-4003.x
 - `young1942b`: Young, C. C. (1942). Yunnanosaurus huangi Young (gen. et sp. nov.), a New Prosauropoda from the Red Beds at Lufeng, Yunnan. *Bulletin of the Geological Society of China* 22(1-2): 63-104. doi:10.1111/j.1755-6724.1942.mp221-2005.x
 - `simmons1965a`: Simmons, D. J.; Nash, E. G. (1965). The non-therapsid reptiles of the Lufeng Basin, Yunnan, China. Chicago Natural History Museum Press. doi:10.5962/bhl.title.5426
 - `young1948a`: Young, C. C. (1948). On two new saurischians from Lufeng, Yunnan. *Bulletin of the Geological Society of China* 28(1-2): 75-90. doi:10.1111/j.1755-6724.1948.mp281-2007.x
 - `luo1994a`: Luo, Z.; Wu, X. C. (1994). The small tetrapods of the Lower Lufeng Formation, Yunnan, China. In *In the Shadow of the Dinosaurs: Early Mesozoic Tetrapods*, pp. 251-270. Cambridge University Press.
 - `barrett2012a`: Barrett, P. M.; Xu, X. (2012). The enigmatic reptile Pachysuchus imperfectus Young, 1951 from the Lower Lufeng Formation (Lower Jurassic) of Yunnan, China. *Vertebrata PalAsiatica* 50(2): 151-159.
-- `young1940a`: Young, C. C. (1940). Preliminary notes on the Lufeng vertebrate fossils. *Bulletin of the Geological Society of China* 20(3-4): 235-239. doi:10.1111/j.1755-6724.1940.mp203-4003.x
 - `galton2004a`: Galton, P. M.; Upchurch, P. (2004). Prosauropoda. In *The Dinosauria, 2nd edition*, pp. 232-258. University of California Press.
 - `peyredefabrègues2015a`: Peyre de Fabrègues, C.; Allain, R.; Barriel, V. (2015). Root causes of phylogenetic incongruence observed within basal sauropodomorph interrelationships. *Zoological Journal of the Linnean Society* 175(3): 569-586. doi:10.1111/zoj.12290
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.

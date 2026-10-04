@@ -140,6 +140,36 @@
 
 **Exceptions.** None.
 
+## Take a type specimen's number from the designating paper, not a compilation
+
+*2026-10-04*
+
+**Rule.** Take `type_specimen.specimen_id` from the paper that designates the type, or from a later paper that states a renumbering, and never from a compilation's specimen table or list (for example jones2026a/b/c or molina-pérez2019a/2020a). A compilation that disagrees goes under Ruled out, not into the record. Decides `type_specimen.specimen_id`.
+
+**Why.** The compilations carry errors that no primary source has: "IVPP 3" for *Mamenchisaurus hochuanensis* ([Mamenchisaurus](genera/M/Mamenchisaurus.md)), "MT 65" and "TrM 65" for *Gigantoscelus* ([Gigantoscelus](genera/G/Gigantoscelus.md)), "IVPP V88402a/b" for *Alxasaurus* ([Alxasaurus](genera/A/Alxasaurus.md)), and an element number given as the *Ruehleia* specimen ([Ruehleia](genera/R/Ruehleia.md)).
+
+**Exceptions.** When the designating paper gives no number (*Antarctosaurus*, *Mamenchisaurus hochuanensis*), use the earliest primary paper that does, and say so in the note.
+
+## `institution` is the registry key for the collection that holds the type
+
+*2026-10-04*
+
+**Rule.** Set `type_specimen.institution` to the key in `institutions.yaml` for the collection that holds the type. Choose the key by the prefix that dinosaur specimens from that collection actually carry, checked against the describing paper's repository statement and the fossil's locality. Sabaj's (2020) list of collection codes seeds the registry and settles a genuine collision (one abbreviation, two institutions), but it is not the authority on which code to use. A paper's variant or obsolete code is mapped through the registry's aliases, not adopted as the key. Decides `type_specimen.institution`, and the keys and `aliases` in `institutions.yaml`.
+
+**Why.** Sabaj's list is built for ichthyology and herpetology collections, and a museum's code for fishes or reptiles is often not the one its fossil catalogue uses. Following a code to the letter misfiles specimens: `GSM` once aliased to the Georgian National Museum filed British [*Acanthopholis*](../genera/A/Acanthopholis.yml) in Tbilisi until the alias moved to the British Geological Survey, the only GSM in the data. The same collision runs the other way for [*Magnamanus*](genera/M/Magnamanus.md), whose MNS is the Museo Numantino de Soria, not Stuttgart.
+
+**Exceptions.** A prefix that names a site or excavation (ANA, To, LH) is not an institution code ([Protathlitis](genera/P/Protathlitis.md), [Tazoudasaurus](genera/T/Tazoudasaurus.md)); if the paper names no repository, `institution` is UNKNOWN.
+
+## A `specimen_id` takes the registry's prefix and the institution's established form
+
+*2026-10-04*
+
+**Rule.** Write a `specimen_id` as the collection prefix that `institutions.yaml` records for the institution, then the number. Take the separator and padding from the form already established for that institution in the data, not from the describing paper's punctuation, and when one record's id is normalized, normalize every id with that prefix together. Each catalogue number is listed on its own, never as a range. When the literature applies one number to two different specimens, keep both and qualify each as `<id> sensu <first author> <year>`. Decides `type_specimen.specimen_id`.
+
+**Why.** Papers punctuate one collection's numbers inconsistently, sometimes within a single article: the MLL number of *Pilmatueia* and *Lajasvenator* is printed MLL-PV-005, MLL-Pv-005 and MLL-PV-Pv-005 (see [MLL-Pv 005](topics/mll-pv-005.md)), which is also the contested-number case. Older papers print Royal Tyrrell numbers unpadded, as TMP 2001.26.1 for [*Albertaceratops*](../genera/A/Albertaceratops.yml); the number is the same as the stored TMP 2001.026.0001. [*Saurolophus*](genera/S/Saurolophus.md) carries the first `sensu` pair.
+
+**Exceptions.** A different number, not a different format of the same number, is a change of specimen and needs the designating paper (see the rule above on taking a type's number from the designating paper).
+
 ## The registry lists only units a record or another unit names
 
 *2026-10-04*
@@ -164,3 +194,5 @@
 
 - `wang2019c`: Wang, J.; Norell, M. A.; Pei, R.; Ye, Y.; Chang, S. C. (2019). Surprisingly young age for the mamenchisaurid sauropods in South China. *Cretaceous Research* 104: 104176. doi:10.1016/j.cretres.2019.07.006
 - `takashima2004a`: Takashima, R.; Kawabe, F.; Nishi, H.; Moriya, K.; Wani, R.; Ando, H. (2004). Geology and stratigraphy of forearc basin sediments in Hokkaido, Japan: Cretaceous environmental events on the north-west Pacific margin. *Cretaceous Research* 25: 365-390. doi:10.1016/j.cretres.2004.02.004
+- `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.
+- `molina-pérez2019a`: Molina-Pérez, R.; Larramendi, A. (2019). Dinosaur Facts and Figures: The Theropods and Other Dinosauriformes. Princeton University Press.
