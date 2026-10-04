@@ -139,6 +139,196 @@
 
 **Exceptions.** A bed named in `location.bed` passes the same test, but its entry goes in the `beds` list of its nearest containing unit rather than in a file of its own, because a bed's label ("83", "L9", "Bonebed I") usually means something only within one section or quarry. A variant spelling is not a unit and follows the rule on variant spellings.
 
+## A coordinate is recorded only when a source prints it for this specimen
+
+*2026-09-01*
+
+**Rule.** `location.coordinates` holds a position only when a source prints it for the holotype's site: in the text, a table, an appendix, a supplement, or as a printed label tied to the site in a figure. Before deleting a stored pair, read every source on the specimen, not only the describing paper. A dot on a locator map, a reference point near the site, a settlement's center, a basin centroid or another specimen's site is not the specimen's position. Decides `location.coordinates`.
+
+**Why.** Most stored pairs were seeded from collection databases rather than papers, and a large share were wrong rather than merely unsourced: [*Abydosaurus*](../genera/A/Abydosaurus.yml) carried the Carnegie Quarry visitor center, printed in a caption as a landmark 375 m from the locality. The chase matters as much as the deletion. [*Acantholipan*](../genera/A/Acantholipan.yml)'s coordinates are real and printed in a 2011 paper, while its 2018 describing paper withholds them, and [*Linhenykus*](../genera/L/Linhenykus.yml)'s appear in its later osteology though the describing paper offers them only on request.
+
+**Exceptions.** A paper that withholds the position ("on file at the repository", or restricted by law) does not supply a coordinate, and a coarse pair it offers in place of the real one is never recorded: "General coordinates for Udan Sayr are 43 deg N, 103 deg E" refuses a position rather than giving one. A shared, round or unevenly precise pair is a reason to read the sources, never a verdict on its own.
+
+## A coordinate no source can be found for is deleted, not held
+
+*2026-09-01*
+
+**Rule.** When no source read for the specimen prints a stored value, the value comes out, even if the describing paper is not available to read. Restoring it waits for the source. Decides `location.coordinates`, and any other value that rests on no source.
+
+**Why.** An unsourced coordinate is not a neutral placeholder. Enough stored pairs proved to be geocodes, centroids or another specimen's site that an unverified one is more likely wrong than right, and it reads to every consumer as sourced. An empty field is honestly unknown. Units, localities and regions usually survive a missing describing paper, because later work restates them; coordinates rarely do, because they are seldom reprinted.
+
+**Exceptions.** None. A specific, obtainable source that would settle the value does not keep it in place meanwhile.
+
+## A degraded copy of a printed coordinate is corrected, not deleted
+
+*2026-09-03*
+
+**Rule.** When a stored pair is a damaged copy of a value a source prints, correct it to the printed value. Convert the printed degrees, minutes and seconds yourself and compare. Decides `location.coordinates`.
+
+**Why.** A stored pair is often neither published nor invented but a real value that lost precision on the way in, and deleting it throws away a real position. [*Sinornithoides*](../genera/S/Sinornithoides.yml) stored the arcminutes as decimals (39°36' as 39.36, about 35 km out), [*Vouivria*](../genera/V/Vouivria.yml) had its seconds truncated, and [*Daemonosaurus*](../genera/D/Daemonosaurus.yml)'s source prints an eastern longitude for a New Mexico site, a typesetting error read as west. A scan that drops the degree marks ("1650 46.92ʺS") still holds a convertible value.
+
+**Exceptions.** Where a correction would mean choosing which of several printed digits is wrong, the value is not repaired.
+
+## A survey description or an area range is not converted into a point
+
+*2026-08-14*
+
+**Rule.** Never compute a coordinate from a Public Land Survey section, a township and range, a map-sheet square, a bounding range for a collecting area, or the endpoints of a measured section. Record the site's own designation in `locality` where it is one. A six-figure national grid reference resolves to about 100 m and is a printed coordinate. Decides `location.coordinates`, `location.locality`.
+
+**Why.** The center of a square mile or a valley is a plausible-looking pair with no owner. [*Zuul*](../genera/Z/Zuul.yml)'s stored pair was the center of the survey section its paper gives in place of a position, in the same sentence that says the GPS point is held at the Royal Ontario Museum. [*Xiaotingia*](../genera/X/Xiaotingia.yml)'s was the midpoint of another author's measured section of the right formation. [*Dracoraptor*](../genera/D/Dracoraptor.yml)'s Ordnance Survey reference, printed twice, converts.
+
+**Exceptions.** The test is the size of what the source names, not whether the notation looks technical: a grid reference to 100 m converts, a survey section does not.
+
+## Every `location` value is the holotype's
+
+*2026-09-03*
+
+**Rule.** Tie each locality, horizon and coordinate to a specimen number before taking it. A value a paper gives for a paratype, a referred specimen or another taxon at the same site does not go in the record's `location`. A code or site name is a locality only when a paper prints it for this holotype. Decides every field in `location`.
+
+**Why.** Locality strings migrate between records at one site as coordinates do, and are harder to catch because a place name reads as evidence. [*Yuxisaurus*](../genera/Y/Yuxisaurus.yml) carried the locality sentence of the *Irisosaurus* holotype; [*Zuniceratops*](../genera/Z/Zuniceratops.yml) carried its own paratype's bone bed; [*Kryptops*](../genera/K/Kryptops.yml) carried G138, which its paper's figure caption assigns to *Eocarcharia*; [*Acrotholus*](../genera/A/Acrotholus.yml) carried the paratype's site, 8 km from the holotype's. A finer-sounding designation deserves more suspicion, not less.
+
+**Exceptions.** None.
+
+## A locality names the site and nothing else
+
+*2026-08-31*
+
+**Rule.** `locality` holds the site's name. A specimen number, a formation, a stratigraphic height or a bed goes in its own field, and a county, province or district goes in `region`. A site paired with a containing property or a reference point is a good locality ("Rock Hole, Rosebery Downs Station"). Where no site name exists, a bearing is written out in full ("10 km east-northeast of Cerro Barcino"). An institution's name is a locality only as a museum locality number or a landmark in a bearing; on its own it is where the specimen is kept. Decides `location.locality`.
+
+**Why.** Records folded other fields into the string ("Paso Córdova (Bajo de la Carpa)", "Sierra de Mogna (148 m)"), and [*Velocisaurus*](genera/V/Velocisaurus.md) carried its university with a coordinate on the museum, geocoded from where the specimen is kept.
+
+**Exceptions.** Where the source names no site, an administrative division is the finest available and stays, particularly in China, where `regions.yaml` stops at the province: [*Baiyinosaurus*](../genera/B/Baiyinosaurus.yml)'s paper gives a district and a coordinate but no site name.
+
+## A name echoing the genus is not evidence of the site
+
+*2026-09-03*
+
+**Rule.** Check a locality that echoes the genus or species name against the type-locality line, and a genus named for a place against the sources on where the holotype came from. Decides `location.locality`.
+
+**Why.** A name-source migrates into the locality field without ever having been a site. [*Daxiatitan*](../genera/D/Daxiatitan.yml)'s "Daxia" is the river it is named for, and its quarry is over 60 km away; the etymology paragraph and the type-locality line are usually different sentences saying different things. In the other direction, *Itemirus* is named for Itemir and did not come from there.
+
+**Exceptions.** None.
+
+## A region may be derived from the locality, checked against today's boundaries
+
+*2026-09-08*
+
+**Rule.** Keep a `region` code that follows from the named site even when no paper prints the subdivision, since where a place lies is geography rather than a claim. Check the code against the current subdivision, not against one that merely exists, and check a nineteenth- or early-twentieth-century county against later splits. Decides `location.region`.
+
+**Why.** [*Ajnabia*](../genera/A/Ajnabia.yml) carried the code of a neighboring Moroccan province rather than Khouribga's, the recycled-code trap `regions.yaml` warns about. [*Torosaurus*](../genera/T/Torosaurus.yml)'s Converse County was right when written and the site now lies in Niobrara County after a split.
+
+**Exceptions.** None.
+
+## A stored value has no standing a new one lacks
+
+*2026-08-31*
+
+**Rule.** Keeping a value already in a record is the same decision as adding it, and needs the same sourcing. Decides any field.
+
+**Why.** The records were seeded rather than sourced, so a stored value was also put there by someone and carries no presumption in its favor. For [*Ischioceratops*](../genera/I/Ischioceratops.yml), keeping a neighboring taxon's formation had been treated as a lighter call than inferring one from the same kind of evidence; it is not.
+
+**Exceptions.** None.
+
+## `group` only when no formation is given
+
+*2026-09-03*
+
+**Rule.** Record `group` when the sources stop at group rank, and not alongside a `formation`. Decides `location.group`.
+
+**Why.** Records drift into carrying both, one at a time, each looking reasonable alone. [*Sauroniops*](../genera/S/Sauroniops.yml) is the legitimate shape: no source places its holotype in the Gara Sbaa, so its formation came out and the Kem Kem at group rank remained.
+
+**Exceptions.** None.
+
+## `formation` holds the modern name, with a source for it
+
+*2026-09-10*
+
+**Rule.** Record the unit's current name where a source gives it, and leave its old names to the unit's registry entry. A describing paper that uses a superseded name is not a rival reading: find the revising paper and take its name. Where no primary source gives the modern name, keep the current value and say what would settle it. A live argument in the primary literature over which unit holds the type is a dispute, and the record stays at the describing paper's assignment with the argument in the notes. Decides `location.formation`, `location.notes`.
+
+**Why.** Older papers use names later redefined under them: Russell's (1972) "Oldman Formation" for Dinosaur Provincial Park predates the split that put those exposures in the Dinosaur Park Formation, so [*Stegoceras*](../genera/S/Stegoceras.yml) and [*Richardoestesia*](../genera/R/Richardoestesia.yml) carry Dinosaur Park. [*Agathaumas*](../genera/A/Agathaumas.yml) keeps its value because its modern assignment rests only on a compilation. [*Aerosteon*](../genera/A/Aerosteon.yml)'s Anacleto-or-Plottier argument is live, so it stays a note.
+
+**Exceptions.** None.
+
+## A value in `formation` must be a formation, and the right one for the site
+
+*2026-09-03*
+
+**Rule.** Check that someone erected the value as a lithostratigraphic unit, at formation rank, and that the unit's outcrop reaches the type locality. An age term with a lithology, a sequence, an informal local name or a numbered subdivision nobody erects empties the field, with what the source does say in the notes. Decides `location.formation`.
+
+**Why.** [*Embasaurus*](../genera/E/Embasaurus.yml)'s "Neocomian Sands" is an age term and a lithology. [*Stenopelix*](../genera/S/Stenopelix.yml)'s "Obernkirchen Sandstein" is real rock under its real name two ranks below a formation, so the question that catches it is "at what rank". [*Chilantaisaurus*](../genera/C/Chilantaisaurus.yml)'s Ulansuhai was a real formation that does not reach its locality (see [Maortu and Dashuigou](topics/maortu-and-dashuigou-miaogou.md)): an age that disagrees with itself across one unit is the sign of two rock bodies under one name.
+
+**Exceptions.** None.
+
+## A member takes a formal name; a position goes in `part`
+
+*2026-09-01*
+
+**Rule.** `member` holds a proper name. "The upper member" is `part: upper`. A descriptive phrase ("layer m", "fossiliferous level 3") is not a name and is not recorded. A queried member ("?Upper Member") goes in the notes. Lower, middle and upper are never part of a formal name however many papers print the combined form, so "Lower Shaximiao Formation" is `formation: Shaximiao`, `part: lower`. Decides `location.member`, `location.part`.
+
+**Why.** Consistent printing is not formality: three papers writing "Lower Shaximiao Formation" are three papers using an informal convention. A word that only looks positional is still formal (Alto Shale), a positional word attached to the age ("Upper Maastrichtian") gives no `part`, and a word that is part of a place name is not a position: *Bajo* in Bajo de la Carpa is never "Lower La Carpa".
+
+**Exceptions.** None.
+
+## `part` attaches to the finest named unit
+
+*2026-09-03*
+
+**Rule.** Before adding a `part`, find which unit the source's positional word attaches to, and add it only when that unit is the finest one the record names. Decides `location.part`.
+
+**Why.** [*Iguanacolossus*](../genera/I/Iguanacolossus.yml) keeps `part: lower` because its paper places the holotype in "the lower Yellow Cat" and the Yellow Cat is its finest unit. [*Invictarx*](../genera/I/Invictarx.yml) does not get one: "Juans Lake Beds, upper part of the Allison Member" locates the beds, which are that upper part, so with the bed recorded `part: upper` would assert a position inside the bed that no source gives.
+
+**Exceptions.** None.
+
+## A different spelling of a unit is not evidence of different rock
+
+*2026-09-03*
+
+**Rule.** Before treating an unfamiliar or shortened unit name as a different unit, find the authority the source cites for it and whether that authority combines or separates the bodies of rock. A paper writing a name "sensu" an author follows that author's scheme. Decides `location.formation`, `location.member`.
+
+**Why.** "Wulansuhai" is the spelling Bayan Mandahu papers print for the Ulansuhai; "Bombarral Sub-basin" is the Consolação under an older name; a bare "Porto Novo Member" usually means the combined Praia da Amoreira-Porto Novo (see [Lusitanian Basin members](topics/lusitanian-basin-members.md)). Each was once misread as a different unit.
+
+**Exceptions.** None.
+
+## A house spelling governs place names, and never the name a unit was erected under
+
+*2026-09-10*
+
+**Rule.** Where a site or unit name has several transliterations, the dataset uses one form everywhere, applied to every record at once when it is settled. Mongolian place names follow the gazetteer of Benton and colleagues (2000) (benton2000c). A unit keeps the name it was erected under, even where the gazetteer changes the place name it was built from. Decides `location.locality`, `location.formation`, `location.member`.
+
+**Why.** The Djadokhta Formation's lower member was erected as the Bayn Dzak Member, so [*Velociraptor*](../genera/V/Velociraptor.yml) keeps `member: Bayn Dzak` while the site is Bayan Zag; an earlier sweep had wrongly moved four members to the locality form. Reading the gazetteer whole matters: the dataset once enforced "Djadochta", and Benton's preamble names Djadokhta among the names that "do not change". A corpus count tells which spelling is common, not which is right: [*Yamaceratops*](../genera/Y/Yamaceratops.yml)'s "Khugenetslavkant" outnumbers the correct Khugenetjavkhlant because nine papers copied the describing paper's typo.
+
+**Exceptions.** None.
+
+## A record's note carries what no field and no reference note holds
+
+*2026-09-03*
+
+**Rule.** Before writing a location note, say in one line what it carries that no field and no reference note in the record holds: a superseded name and who replaced it, a number no field takes, a value that belongs to another specimen, a measured position, a straddle the schema cannot express. If nothing, write no note. A reference note says what one paper holds; a location note says what no single paper's note can, such as a conflict between sources. A note does not open by announcing an empty field, does not depend on the value the field used to hold, does not explain how we derived a value, and does not state a practice common across the dataset. Decides `location.notes` and the other notes fields.
+
+**Why.** Notes written without this test were cut by the dozen: one said only that the paper names no bed, which the empty field already shows; another parsed only against the locality the field had before it was corrected; two recorded that a US paper gives a survey section instead of a coordinate, which US papers of that era routinely do.
+
+**Exceptions.** A note about the literature failing to record something is a finding and belongs: "Where the type came from was never recorded" opens a note correctly.
+
+## A unit's naming history belongs to the unit
+
+*2026-08-24*
+
+**Rule.** When a unit has been renamed, synonymized or re-ranked, that history goes in the unit's registry entry, and a genus record carries the current value with a reference to the paper behind it. Decides `location.notes`.
+
+**Why.** A history written on one genus would have to be repeated on every other in the same unit. [*Caudipteryx*](../genera/C/Caudipteryx.yml)'s note tracing Chaomidianzi to the Jianshangou Member was true and useful, and was moved for that reason.
+
+**Exceptions.** A note on why this specimen cannot be placed belongs on the record.
+
+## Every author cited in a note is in the record's references
+
+*2026-09-02*
+
+**Rule.** Each author and year a note cites must appear in the record's `references`, and must be a paper that has been read. A paper that has been read but is missing from the list is added; one that has not been read is cut from the note, and the sentence rests on a source that has. Decides notes prose, `references`.
+
+**Why.** Prose names people rather than keys, so nothing else checks it. [*Polyonax*](../genera/P/Polyonax.yml) cited Carpenter and Young without either in its references; a *Parasaurolophus* note cited a paper nobody had read, and now rests on two that endorse the same reading.
+
+**Exceptions.** None.
+
 ## References
 
 - `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
@@ -147,3 +337,4 @@
 - `galton2004a`: Galton, P. M.; Upchurch, P. (2004). Prosauropoda. In *The Dinosauria, 2nd edition*, pp. 232-258. University of California Press.
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.
 - `molina-pérez2019a`: Molina-Pérez, R.; Larramendi, A. (2019). Dinosaur Facts and Figures: The Theropods and Other Dinosauriformes. Princeton University Press.
+- `benton2000c`: Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N. (2000). Mongolian place names and stratigraphic terms. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds)*, pp. xxii-xxviii. Cambridge University Press, Cambridge.
