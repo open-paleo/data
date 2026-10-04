@@ -140,6 +140,16 @@
 
 **Exceptions.** None.
 
+## The registry lists only units a record or another unit names
+
+*2026-10-04*
+
+**Rule.** A stratigraphic unit gets an entry in `stratigraphy/` when a taxon record names it in `location` (formation, member, group and the other unit ranks), or when another entry names it in `parent` or `contains`. A unit that appears only in the literature, or only in a research note weighing the evidence, gets no entry. The one addition is a unit needed to settle a dispute, or one that adopting a reading would make a record or parent name. Decides which entries exist in `stratigraphy/`, and whether a `parent` may be set.
+
+**Why.** An entry no record uses is never checked against a fossil's horizon, and the regional literature names far more units than the dataset needs. A `parent` or `contains` value with no entry behind it cannot be checked for rank or age, so a unit named that way is listed even when no taxon record uses it. The Calcaire de Rognac is the worked addition: it is what separates the Lower from the Upper Argiles Rutilantes, so placing a taxon in either one forces it (see [Grès à Reptiles](topics/grès-à-reptiles.md)).
+
+**Exceptions.** Beds and quarry levels named only in `location.bed` (Bonebed I, the Hypsilophodon Bed) need no entry. A variant spelling is not a unit and follows the next rule.
+
 ## A variant spelling must be printed in the literature
 
 *2026-09-19*
