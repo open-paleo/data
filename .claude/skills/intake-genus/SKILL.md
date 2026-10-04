@@ -285,6 +285,10 @@ round** before applying. Otherwise note them and continue.
 
 **Hard stop when you offer a second round.** Wait for the user.
 
+### Read the research notes before applying
+
+Run `npm run research -- <path>` for each record the new genus will name (its formation, member and group in `stratigraphy/`) and each reference-store entry it will cite (`references/<letter>/<key>.yml`), and read `research/methods.md`. The extraction agents read only the paper, by design; this is where their output meets what is already known. Do not apply a value that contradicts a note's **Conclusion** or repeats one of its **Ruled out** readings: present it to the user with the note, since it either supersedes the note (with new evidence) or is the error the note exists to prevent. If this intake settles a question that was not obvious or rejects a reading, add a dated entry to the record's research file (format in `research/README.md`).
+
 ## Step 4 — Apply
 
 Run the apply script:

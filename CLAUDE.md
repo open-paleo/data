@@ -46,6 +46,27 @@ The one exception is state a skill itself reads and writes, which lives beside
 that skill's scripts — for example
 `.claude/skills/audit-disputes/reaudit-queue.yml`.
 
+## Research Notes
+
+`research/` holds the reasoning behind records: what the sources say, which
+reading was adopted, and which readings were weighed and rejected. Its rules
+and style guide are in [`research/README.md`](research/README.md).
+
+- **Read before working on a record.** Run `npm run research -- <record path>`
+  for every genus, clade, unit or reference-store entry in scope, and read
+  [`research/methods.md`](research/methods.md), whose rules decide record
+  values across the dataset. Do not re-propose a reading a note lists under
+  **Ruled out** without new evidence; if the work reaches one, stop and raise
+  it with the user.
+- **Agents stay on the paper.** Extraction agents read only the paper, so
+  their output reports what it says. Compare that output with the notes at
+  the review gate, before anything is applied, not in the agent prompt.
+- **Write after settling something.** When a session settles a question that
+  was not obvious, or rejects a candidate reading, add a dated entry to the
+  record's research file, or to a topic note when several records share the
+  reasoning. Never edit a committed entry; a later entry says what it
+  supersedes.
+
 ## Build & Verify
 
 ```

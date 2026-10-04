@@ -159,6 +159,12 @@ the primary says around each competing value, so most can be settled without
 opening a paper. A bucket name that is a prefix matches every section starting
 with it, so `holotype` picks up all three tiers at once.
 
+Before deciding an item, run `npm run research -- <record path>` for its genus.
+A specimen or stratigraphy note often already answers the question with the
+primary quotation, and its Ruled out list names the reference-work readings that
+were rejected. Read `research/methods.md` too: the rule that a type's number comes
+from the designating paper, never a compilation, governs every holotype item.
+
 Decide each item on its `decision:` line, then write the outcomes into
 `adjudicated.yml` with the quotation that closed each, and re-run
 `reconcile.py`. Checklists are working files — they live in `scratch/`, and

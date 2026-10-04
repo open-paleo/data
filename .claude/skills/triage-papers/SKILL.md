@@ -121,6 +121,11 @@ actually track — the classifier reads only the paper and does not know our
 dataset. **The watcher only matches genera already in `genera/`, so a
 "new-taxon" it surfaced is usually already present** (the paper is that
 genus's describing source, reached via a comparative mention of a relative).
+
+Where a result touches a genus or unit we track, run `npm run research -- <record path>`:
+a note may show the paper was already weighed (for example as a rejected reading),
+which changes its bucket. Triage itself never writes notes.
+
 For each result:
 
 - **new-taxon** → check `genera/<Letter>/<new_genus>.yml`.

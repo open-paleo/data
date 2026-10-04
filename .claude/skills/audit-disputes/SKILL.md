@@ -165,6 +165,12 @@ determine the disposition, present the evidence + a recommended disposition, and
 act only on the user's call. Then `npm run validate` (expect 0/0) after the
 data-repo edits; don't commit/push unless told.
 
+**Before deciding a finding, read the research notes** for the locus record and
+the cited references: `npm run research -- <record path>`, plus `research/methods.md`.
+A note may already settle the finding, or show that the "fix" it suggests is a
+reading that was weighed and rejected. A disposition that settles a non-obvious
+question or rejects a reading gets a dated entry in the record's research file.
+
 **A finding is not always a YAML edit.** Most resolve into one of these
 dispositions (each seen in the Ankylosauria pilot):
 

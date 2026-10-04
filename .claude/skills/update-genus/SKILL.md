@@ -63,6 +63,12 @@ file together with the genus file when committing.
    missing or wrong, log it in the corpus repo's
    `corpus-paper-report.md` and stop.
 
+   Run `npm run research -- genera/<Letter>/<Genus>.yml` and read the
+   output and `research/methods.md` before reviewing the extraction (the
+   agent itself reads only the paper). A specimen note can show that the
+   recorded number is a field number or that a compilation's form was
+   rejected.
+
 2. **Dispatch a Sonnet extraction agent** that reads ONLY that markdown
    and writes JSON to `scratch/extractions/<Letter>/<Genus>.json` with
    this schema (it is gitignored scratch):
@@ -83,6 +89,8 @@ file together with the genus file when committing.
    - Diagnosis bullets are autapomorphies, not clade-shared traits;
      condense to 3–6; American English (e.g. armour→armor).
    - Spot-read the markdown if anything looks off.
+   - Nothing contradicts a research note's Conclusion or repeats a Ruled
+     out reading. If it does, raise it with the user rather than applying.
 
 4. **Spellcheck the JSONs before apply** (catches typos + AE early):
    ```
