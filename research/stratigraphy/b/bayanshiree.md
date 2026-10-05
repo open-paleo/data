@@ -1,5 +1,20 @@
 # Bayanshiree
 
+## Why is the formation spelled Bayanshiree?
+
+*2026-10-04*
+
+**Conclusion.** Bayanshiree is Benton's (2000) form: the place name Bayan Shiree in his transliteration, written as one word because it names a formation. The older forms Bayn Shire, Bayn Shireh and Baynshire are transliterations of the same name. Governs `name` and `variants` on [Bayanshiree](../../../stratigraphy/b/bayanshiree.yml) and `location.formation` on the records that name it.
+
+**Evidence.**
+- benton2000c, p. xxiii: "When these are converted into names of svitas or formations, the names are rendered as a single word"; "Bain Chire (= Bayan Shiree)"; p. xxiv: "Bayanshiree Formation/ Svita", "Bayn Shire (= Bayan Shiree)".
+- jerzykiewicz2000a, p. 283, Fig. 15.3 caption: "Mongolian formation names are given traditional spellings (Barun Goyot = Baruungoyot; Bayn Shire = Bayanshiree; …".
+
+**Ruled out.**
+- *Baynshire.* Not a form Benton gives; it runs together the older transliteration.
+
+**Open.** The erecting work. Jerzykiewicz and Russell credit Vasil'ev and colleagues (1959) with the "Bayn Shire Formation" (jerzykiewicz1991a, p. 352), but Gradziński and colleagues say that Vasil'ev and colleagues used a "Bayn Shireh Formation" "established previously in the Eastern Gobi" (gradziński1974a, p. 114). Vasil'ev and colleagues (1959) has not been read.
+
 ## Does the Bayanshiree Formation reach the Campanian?
 
 *2026-10-03*
@@ -20,10 +35,12 @@
 
 ## References
 
+- `benton2000c`: Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N. (2000). Mongolian place names and stratigraphic terms. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds)*, pp. xxii-xxviii. Cambridge University Press, Cambridge.
 - `jerzykiewicz2000a`: Jerzykiewicz, T. (2000). Lithostratigraphy and sedimentary settings of the Cretaceous dinosaur beds of Mongolia. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds)*, pp. 279-296. Cambridge University Press, Cambridge.
+- `jerzykiewicz1991a`: Jerzykiewicz, T.; Russell, D. A. (1991). Late Mesozoic stratigraphy and vertebrates of the Gobi Basin. *Cretaceous Research* 12(4): 345-377. doi:10.1016/0195-6671(91)90015-5
+- `gradziński1974a`: Gradziński, R.; Jerzykiewicz, T. (1974). Sedimentation of the Barun Goyot Formation. *Palaeontologia Polonica* 30: 111-146.
 - `shuvalov2000a`: Shuvalov, V. F. (2000). The Cretaceous stratigraphy and palaeobiogeography of Mongolia. In *The Age of Dinosaurs in Russia and Mongolia (eds. Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N.), Cambridge University Press, Cambridge*, pp. 256-278.
 - `hicks1999a`: Hicks, J. F.; Brinkman, D. L.; Nichols, D. J.; Watabe, M. (1999). Paleomagnetic and palynologic analyses of Albian to Santonian strata at Bayn Shireh, Burkhant, and Khuren Dukh, eastern Gobi Desert, Mongolia. *Cretaceous Research* 20(6): 829-850. doi:10.1006/cres.1999.0188
-- `jerzykiewicz1991a`: Jerzykiewicz, T.; Russell, D. A. (1991). Late Mesozoic stratigraphy and vertebrates of the Gobi Basin. *Cretaceous Research* 12(4): 345-377. doi:10.1016/0195-6671(91)90015-5
 - `maryańska1977a`: Maryańska, T. (1977). Ankylosauridae (Dinosauria) from Mongolia. *Palaeontologia Polonica* 37: 85-151.
 - `jin2012a`: Jin, L.; Chen, J.; Godefroit, P. (2012). A new basal ornithomimosaur (Dinosauria: Theropoda) from the Early Cretaceous Yixian Formation, northeast China. *Bernissart Dinosaurs and Early Cretaceous Terrestrial Ecosystems*: 466-487.
 - `makovicky2004a`: Makovicky, P. J.; Kobayashi, Y.; Currie, P. J. (2004). Ornithomimosauria. In *The Dinosauria, 2nd edition*, pp. 137-150. University of California Press. doi:10.1525/california/9780520242098.003.0008

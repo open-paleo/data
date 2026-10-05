@@ -1,5 +1,20 @@
 # Yixian
 
+## Are the Yixian's subdivisions members or beds?
+
+*2026-10-04*
+
+**Conclusion.** Members, following Wang and colleagues (2016), who formally raise the Lujiatun, Jianshangou and other beds to member rank. No later source argues against the rank: Chang and colleagues (2017) dispute Wang and colleagues' column, not the rank, and most vertebrate papers simply keep the older word "Bed". Dakangpu and Dawangzhangzi are one horizon (see [Dawangzhangzi](../d/dawangzhangzi.md)). Governs `rank: member` on [Lujiatun](../../../stratigraphy/l/lujiatun.yml), [Jianshangou](../../../stratigraphy/j/jianshangou.yml) and [Dawangzhangzi](../../../stratigraphy/d/dawangzhangzi.yml), and `location.member` on Yixian species records.
+
+**Evidence.**
+- wang2016a, p. 113: they "raise the rank of several units traditionally called "beds" to formal member rank"; p. 114: "raise bed names with priority to member rank where they correspond to defensible lithologic units"; p. 115: "We propose to raise the rank of the Lujiatun bed to member"; p. 117, for the Jianshangou: "formally designate it a member", noting that their use "closely corresponds to the use of that name in Wang et al. (2004)".
+- yang2020a, p. 1: "reported from the Lujiatun Beds (Yixian Fm, Lower Cretaceous)"; bell2022a, p. 13: "most likely from the Jianshangou Bed, Yixian Formation"; qiu2025a, p. 2: "The Dawangzhangzi bed of Yixian Formation". These keep the older rank word without discussing it.
+
+**Ruled out.**
+- *Chang and colleagues (2017) as contesting the rank.* Their objection is to the order of the units: "we disagreed with the new stratigraphic column proposed by Wang et al. (2016), which renamed the Lower Lava Unit as the Xiatulaigou Member and still kept the Lujiatun as the lowest part of the Yixian Formation. The new age data clearly indicate that the Jiangshangou and Lujiatun units were deposited at the same time" (chang2017a, accepted manuscript, p. 12). They write "Unit" throughout without arguing for it.
+
+**Open.** Whether the Lujiatun lies below the Jianshangou or beside it, which Chang and colleagues' dates bear on; that affects the members' order, not their rank.
+
 ## Is the Yixian Formation Barremian, or does it reach the Aptian?
 
 *2026-10-01*
@@ -18,6 +33,11 @@
 
 ## References
 
+- `wang2016a`: Wang, Y.; Olsen, P. E.; Sha, J.; Yao, X.; Liao, H.; Pan, Y.; Kinney, S.; Zhang, X.; Rao, X. (2016). Stratigraphy, correlation, depositional environments, and cyclicity of the Early Cretaceous Yixian and ?Jurassic-Cretaceous Tuchengzi formations in the Sihetun area (NE China) based on three continuous cores. *Palaeogeography, Palaeoclimatology, Palaeoecology*.
+- `yang2020a`: Yang, Y.; Wu, W.; Dieudonné, P. E.; Godefroit, P. (2020). A new basal ornithopod dinosaur from the Lower Cretaceous of China. *PeerJ* 8: e9832. doi:10.7717/peerj.9832
+- `bell2022a`: Bell, P. R.; Hendrickx, C.; Pittman, M.; Kaye, T. G.; Mayr, G. (2022). The exquisitely preserved integument of Psittacosaurus and the scaly skin of ceratopsian dinosaurs. *Communications Biology* 5(1): 809. doi:10.1038/s42003-022-03749-3
+- `qiu2025a`: Qiu, R.; Wang, X.; Jiang, S.; Meng, J.; Zhou, Z. (2025). Two new compsognathid-like theropods show diversified predation strategies in theropod dinosaurs. *National Science Review* 12(5). doi:10.1093/nsr/nwaf068
+- `chang2017a`: Chang, S. C.; Gao, K. Q.; Zhou, C. F.; Jourdan, F. (2017). New chronostratigraphic constraints on the Yixian Formation with implications for the Jehol Biota. *Palaeogeography, Palaeoclimatology, Palaeoecology*. doi:10.1016/j.palaeo.2017.09.026
 - `zhong2021a`: Zhong, Y.; Huyskens, M. H.; Yin, Q. Z.; Wang, Y.; Ma, Q.; Xu, Y. G. (2021). High-precision geochronological constraints on the duration of 'Dinosaur Pompeii' and the Yixian Formation. *National Science Review* 8(6): nwab063. doi:10.1093/nsr/nwab063
 - `lefèvre2014a`: Lefèvre, U.; Hu, D.; Escuillié, F.; Dyke, G.; Godefroit, P. (2014). A new long-tailed basal bird from the Lower Cretaceous of north-eastern China. *Biological Journal of the Linnean Society* 113(3): 790-804. doi:10.1111/bij.12343
 - `xu2017a`: Xu, X.; Qin, Z. C. (2017). A new tiny dromaeosaurid dinosaur from the Lower Cretaceous Jehol Group of western Liaoning and niche differentiation among the Jehol dromaeosaurids. *Vertebrata PalAsiatica* 55(2): 129-144.
