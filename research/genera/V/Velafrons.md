@@ -18,4 +18,4 @@
 ## References
 
 - `gates2007a`: Gates, T. A.; Sampson, S. D.; De Jesús, C. R. D.; Zanno, L. E.; Eberth, D.; Hernández-Rivera, R.; Martínez, M. C. A.; Kirkland, J. I. (2007). Velafrons coahuilensis, a new lambeosaurine hadrosaurid (Dinosauria: Ornithopoda) from the late Campanian Cerro del Pueblo Formation, Coahuila, Mexico. *Journal of Vertebrate Paleontology* 27(4): 917-930. doi:10.1671/0272-4634(2007)27[917:vcanlh]2.0.co;2
-- `kirkland2006a`: Kirkland, J. I.; Hernández-Rivera, R.; Gates, T.; Paul, G. S.; Nesbitt, S.; Serrano-Brañas, C. I.; Garcia-de la Garza, J. P. (2006). Large hadrosaurine dinosaurs from the latest Campanian of Coahuila, Mexico. *New Mexico Museum of Natural History and Science Bulletin* 35: 299-315.
+- `kirkland2006a`: Kirkland, J. I.; Hernández-Rivera, R.; Gates, T.; Paul, G. S.; Nesbitt, S.; Serrano-Brañas, C. I.; Garcia-de la Garza, J. P. (2006). Large hadrosaurine dinosaurs from the latest Campanian of Coahuila, Mexico. In *Late Cretaceous Vertebrates from the Western Interior*, pp. 299-315.
