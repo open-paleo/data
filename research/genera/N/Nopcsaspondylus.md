@@ -11,7 +11,7 @@
 - huene1929a, p. 4 (translated): "Alarcón, on the left bank of the Limay River; a beautiful complete vertebra was found by Major Zapalowicz".
 - calvo1995a, p. 27: "Nopcsa's vertebra was collected in the Alarcon Barda, 80 km southwest of Neuquén City".
 - apesteguía2007a, p. 544: "coarse sandy levels of the lower section of the Candeleros Formation (presumably), Coniacian (Leanza and Hugo, 1997); Barda Alarcón, NE from Picún Leufú town".
-- canale2023a, abstract (translated): the discovery area "is close to the present-day Villa El Chocón, possibly in the area called Barda Aquebeque"; the material was taken "40 meters below the maximum height of the barda", and since the Huincul Formation crops out in the upper thirds of the bardas there, "it can be presumed that *Nopcsaspondylus* comes from the basal section of this lithostratigraphic unit".
+- canale2024a, abstract (translated): the discovery area "is close to the present-day Villa El Chocón, possibly in the area called Barda Aquebeque"; the material was taken "40 meters below the maximum height of the barda", and since the Huincul Formation crops out in the upper thirds of the bardas there, "it can be presumed that *Nopcsaspondylus* comes from the basal section of this lithostratigraphic unit".
 
 **Ruled out.**
 - *Barda Alarcón.* The name is not on the label as Nopcsa (1902) reports it. "Alarcón" first appears in Huene (1929) and "Barda Alarcón" in Calvo and Salgado (1995), and Canale and colleagues place the find elsewhere from the collector's own account.
@@ -25,4 +25,4 @@
 - `huene1929a`: Huene, F. V. (1929). Los saurisquios y ornitisquios del Cretáceo Argentino [The Saurischians and Ornithischians of the Argentine Cretaceous]. *Anales del Museo de La Plata, series 2* 3: 1-196.
 - `calvo1995a`: Calvo, J. O.; Salgado, L. (1995). Rebbachisaurus tessonei sp. nov. a new Sauropoda from the Albian-Cenomanian of Argentina; new evidence on the origin of the Diplodocidae. *Gaia* 11: 13-33.
 - `apesteguía2007a`: Apesteguía, S. (2007). The sauropod diversity of the La Amarga Formation (Barremian), Neuquén (Argentina). *Gondwana Research* 12(4): 533-546. doi:10.1016/j.gr.2007.04.007
-- `canale2023a`: Canale, J. I.; Garrido, A. C.; Lerzo, L. N. (2023). Sobre la procedencia geográfica y estratigráfica de Nopcsaspondylus alarconensis (Sauropoda, Diplodocoidea, Rebbachisauridae). *Publicación Electrónica de la Asociación Paleontológica Argentina*: 29-30.
+- `canale2024a`: Canale, J. I.; Garrido, A. C.; Lerzo, L. N. (2024). Sobre la procedencia geográfica y estratigráfica de Nopcaondylus [sic] alarconensis (Sauropoda, Diplodocoidea, Rebbachisauridae). *Publicación Electrónica de la Asociación Paleontológica Argentina* 24(R3): R34. doi:10.5710/PEAPA.04.04.2024.502
