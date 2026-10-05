@@ -20,7 +20,7 @@
 
 - `lehman2005a`: Lehman, T.; Chatterjee, S. (2005). Depositional setting and vertebrate biostratigraphy of the Triassic Dockum Group of Texas.
 - `nesbitt2015a`: Nesbitt, S.; Ezcurra, M. (2015). The early fossil record of dinosaurs in North America: A new neotheropod from the base of the Upper Triassic Dockum Group of Texas. *Acta Palaeontologica Polonica* 60. doi:10.4202/app.00143.2014
-- `lucas1993c`: Lucas, S. G.; Anderson, O. J. (1993). Triassic stratigraphy in southeastern New Mexico and southwestern Texas. *New Mexico Geological Society Guidebook* 44: 231-235. doi:10.56577/FFC-44.231
+- `lucas1993c`: Lucas, S. G.; Anderson, O. J. (1993). Triassic stratigraphy in southeastern New Mexico and southwestern Texas. In *Carlsbad Region (New Mexico and West Texas) (Love, D. W.; Hawley, J. W.; Kues, B. S.; Austin, G. S.; Lucas, S. G., eds.)*, pp. 231-235. doi:10.56577/FFC-44.231
 - `lucas1995a`: Lucas, S. G.; Anderson, O. J. (1995). Dockum (Upper Triassic) stratigraphy and nomenclature. *West Texas Geological Society Bulletin* 34(7): 5-11.
 - `hunt1998a`: Hunt, A. P.; Lucas, S. G.; Heckert, A. B.; Sullivan, R. M.; Lockley, M. G. (1998). Late Triassic dinosaurs from the western United States. *Geobios* 31(4): 511-531. doi:10.1016/s0016-6995(98)80123-x
 - `baron2018c`: Baron, M. G.; Williams, M. E. (2018). A re-evaluation of the enigmatic dinosauriform Caseosaurus crosbyensis from the Late Triassic of Texas, USA and its implications for early dinosaur evolution. *Acta Palaeontologica Polonica* 63(1): 129-145. doi:10.4202/app.00372.2017

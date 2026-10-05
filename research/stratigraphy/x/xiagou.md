@@ -31,7 +31,7 @@
 
 ## References
 
-- `suarez2013a`: Suarez, M. B.; Ludvigson, G. A.; González, L. A.; Al-Suwaidi, A. H.; You, H. L. (2013). Stable isotope chemostratigraphy in lacustrine strata of the Xiagou Formation, Gansu Province, NW China. *Geological Society, London, Special Publications* 382: 143-155. doi:10.1144/SP382.1
+- `suarez2013a`: Suarez, M. B.; Ludvigson, G. A.; González, L. A.; Al-Suwaidi, A. H.; You, H. L. (2013). Stable isotope chemostratigraphy in lacustrine strata of the Xiagou Formation, Gansu Province, NW China. In *Isotopic Studies in Cretaceous Research (Bojar, A. V.; Melinte-Dobrinescu, M. C.; Smit, J., eds)*, pp. 143-155. doi:10.1144/SP382.1
 - `suarez2018a`: Suarez, M. B.; Milder, T.; Peng, N.; Suarez, C. A.; You, H.; Li, D.; Dodson, P. (2018). Chemostratigraphy of the Lower Cretaceous dinosaur-bearing Xiagou and Zhonggou formations, Yujingzi Basin, northwest China. *Journal of Vertebrate Paleontology* 38(sup1): 12-21. doi:10.1080/02724634.2018.1510412
 - `you2018a`: You, H.; Morschhauser, E. M.; Li, D.; Dodson, P. (2018). Introducing the Mazongshan Dinosaur Fauna. *Journal of Vertebrate Paleontology* 38(sup1): 1-11. doi:10.1080/02724634.2017.1396995
 - `you2014a`: You, H. L.; Li, D. Q.; Dodson, P. (2014). Gongpoquansaurus mazongshanensis (Lü, 1997) comb. nov. (Ornithischia: Hadrosauroidea) from the Early Cretaceous of Gansu Province, northwestern China. *Hadrosaurs*: 73-76.

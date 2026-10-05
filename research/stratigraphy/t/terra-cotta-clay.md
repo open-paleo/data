@@ -19,7 +19,7 @@
 
 ## References
 
-- `hamilton1994a`: Hamilton, V. (1994). Sequence stratigraphy of Cretaceous Albian and Cenomanian strata in Kansas. *Geological Society of America Special Paper* 287: 79-96. doi:10.1130/SPE287-p79
+- `hamilton1994a`: Hamilton, V. (1994). Sequence stratigraphy of Cretaceous Albian and Cenomanian strata in Kansas. In *Perspectives on the Eastern Margin of the Cretaceous Western Interior Basin (Shurr, G. W.; Ludvigson, G. A.; Hammond, R. H., eds.)*, pp. 79-96. doi:10.1130/SPE287-p79
 - `eaton1960a`: Eaton, T. H., Jr. (1960). A new armored dinosaur from the Cretaceous of Kansas. *The University of Kansas Paleontological Contributions: Vertebrata* 8: 1-24.
 - `carpenter1998c`: Carpenter, K.; Kirkland, J. I. (1998). Review of Lower and Middle Cretaceous ankylosaurs from North America. In *Lower and Middle Cretaceous Terrestrial Ecosystems (Lucas, S. G.; Kirkland, J. I.; Estep, J. W., eds.)*, pp. 249-270.
 - `carpenter1999a`: Carpenter, K.; Kirkland, J. I.; Burge, D.; Bird, J. (1999). Ankylosaurs (Dinosauria: Ornithischia) of the Cedar Mountain Formation, Utah, and their stratigraphic distribution. In *Vertebrate Paleontology in Utah (Gillette, D. D., ed.)*, pp. 243-251.

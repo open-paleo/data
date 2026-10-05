@@ -1500,6 +1500,23 @@ for (const [filePath, entry] of referenceStoreParsed)
     }
 }
 
+// 12e. Chapter without a journal — a chapter names its volume in `book`; a
+// numbered series the volume belongs to goes in `series`, never `journal`
+// (CONTRIBUTING, "Books, Chapters and Series").
+startCheck("Chapter without a journal");
+
+for (const [filePath, entry] of referenceStoreParsed)
+{
+    if (entry && entry.book && entry.journal)
+    {
+        checkError(
+            "Chapter without a journal",
+            filePath,
+            `reference '${entry.id}': has both book and journal ('${entry.journal}'); a chapter's series goes in series, with its number in volume`,
+        );
+    }
+}
+
 // 12b. Flagged publication sources — references citing publishers or
 // journals on flagged-sources.yml emit a warning for reviewer sign-off.
 startCheck("Flagged publication sources");
