@@ -32,6 +32,20 @@
 
 **Open.** Whether to record the Sedano Formation. Isasmendi and colleagues' (2022) "equivalent materials to the Sedano Formation" has not been read, and the late Campanian age's numerical bracket rests on Corral and colleagues (2016), also unread.
 
+## Is Laño in Burgos or in Álava?
+
+*2026-09-10*
+
+**Conclusion.** Burgos. The Condado de Treviño, which contains the Laño quarry, is an exclave of the province of Burgos (Castilla y León) entirely surrounded by Álava. Governs `location.region: ES-BU` on [*Lirainosaurus astibiae*](../../../genera/L/Lirainosaurus.yml).
+
+**Evidence.**
+- csiki-sava2015a, p. 47: "Laño in the Condado de Treviño, an enclave of Alava administered by the province of Burgos".
+
+**Ruled out.**
+- *Álava (ES-VI).* The describing paper's type locality reads "Laño quarry, Condado de Treviño (within Alava Province)" (sanz1999a, p. 237), and Csiki-Sava and colleagues also write "Condado de Treviño within Alava" (csiki-sava2015a, p. 47). Both phrases describe where the enclave lies. They do not say which province governs it, and Csiki-Sava and colleagues name Burgos on the same page as the province that does.
+
+**Open.** Nothing.
+
 ## References
 
 - `sanz1999a`: Sanz, J. L.; Powell, J. E.; Le Loeuff, J.; Martínez, R.; Pereda-Suberbiola, X. (1999). Sauropod remains from the Upper Cretaceous of Laño (northcentral Spain). Titanosaur phylogenetic relationships. *Estudios del Museo de Ciencias Naturales de Alava* 14(especial 1): 235-255.

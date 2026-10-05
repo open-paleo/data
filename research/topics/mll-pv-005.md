@@ -16,6 +16,23 @@
 
 **Open.** Which number is correct for each specimen. Both localities are "Pilmatué, 9 km northeast of Las Lajas"; only the museum (Museo Municipal de Las Lajas) could settle it.
 
+## Which specimen does the GPS position printed for MLL-PV-005 belong to?
+
+*2026-08-28*
+
+**Conclusion.** The *Lajasvenator* holotype. Coria and colleagues (2020) print GPS positions for their two theropod specimens; the *Pilmatueia* paper gives no position for its holotype and offers one on request. The shared catalog number does not carry the theropod's position over to the sauropod. Governs `location.coordinates` on [*Lajasvenator*](../../genera/L/Lajasvenator.yml) and the empty `location.coordinates` on [*Pilmatueia*](../../genera/P/Pilmatueia.yml).
+
+**Evidence.**
+- coria2020a, pre-proof, Systematic Paleontology, Locality and horizon: "GPS positions: MLL-PV-005, S38° 29' 59.5", W70° 15' 51.1", Elevation 732 masl; MLL-PV-007, S38° 29' 59.6", W70° 15' 48.0", same elevation as MLL-PV-005."
+- coria2020a, pre-proof, Introduction: "A second, less complete specimen (MLL-Pv-007) was recovered 50 meters southeast from the same stratigraphic level".
+- coria2019a, accepted manuscript, §4.5: "Type Locality: Pilmatué, 9 km northeast of Las Lajas, Neuquén Province, Argentina (GPS coordinates are available upon request from the senior author RAC)".
+
+**Ruled out.**
+- *The MLL-PV-007 position for* Lajasvenator. It belongs to the referred specimen, printed 3.1″ of longitude east of the holotype.
+- *The MLL-PV-005 position for* Pilmatueia. It is printed in the theropod paper, for the theropod; the sauropod's own paper withholds its position, and a withheld position supplies none.
+
+**Open.** Nothing.
+
 ## References
 
 - `coria2019a`: Coria, R. A.; Windholz, G. J.; Ortega, F.; Currie, P. J. (2019). A new dicraeosaurid sauropod from the Lower Cretaceous (Mulichinco Formation, Valanginian, Neuquén Basin) of Argentina. *Cretaceous Research* 93: 33-48. doi:10.1016/j.cretres.2018.08.019
