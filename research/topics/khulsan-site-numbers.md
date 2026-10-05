@@ -16,6 +16,21 @@
 
 **Open.** Nothing.
 
+## Which part of Khulsan is the *Saichania chulsanensis* holotype from?
+
+*2026-09-03*
+
+**Conclusion.** The Northern Cliffs. Maryańska (1977) places GI SPS 100/151 by number on the same map of Gradziński and Jerzykiewicz (1972) as the two holotypes below: site 11, whose caption entry is "a skeleton with skull of an ankylosaurid dinosaur". On the map, 11 stands alone just below the "Northern Cliffs" label, away from the Central Cliffs group (7, 6, 10, 8 and 9) and the group around the 1971 camp. Governs `location.locality` on [*Saichania chulsanensis*](../../genera/S/Saichania.yml), which would read `Khulsan, Northern Cliffs, site 11` on the pattern of the entry below.
+
+**Evidence.**
+- maryańska1977a, p. 94, *Saichania chulsanensis*: "GI SPS 100/151 – skull and anterior part of postcranial skeleton … Khulsan, Mongolia, Upper Cretaceous, Barun Goyot Formation … (GRADZINSKI & JERZYKIEWICZ 1972, text-fig. 4, no 11)."
+- gradziński1972a, p. 24, Fig. 4: "11 — a skeleton with skull of an ankylosaurid dinosaur". The "Northern Cliffs" label is printed on the map, not in the caption.
+
+**Ruled out.**
+- *Khulsan with no finer site.* Maryańska's own type line gives the number. The "Khulsan (5)" in her table of Mongolian ankylosaur occurrences (maryańska1977a, p. 88) is the locality's number on a map of the whole region, not a site within Khulsan.
+
+**Open.** Nothing.
+
 ## References
 
 - `maryańska1977a`: Maryańska, T. (1977). Ankylosauridae (Dinosauria) from Mongolia. *Palaeontologia Polonica* 37: 85-151.

@@ -17,6 +17,21 @@
 
 **Open.** Which svita assignment is right. Rougier and colleagues (2001) relay a Tevsh placement and give "a Valanginian–Neocomian age" (rougier2001a, pp. 3, 7); Jerzykiewicz and Russell (1991) list "Oshi Nur (Oshih)" under the Tsagantsabian (jerzykiewicz1991a, p. 363) and note that "The name Oshih Formation of Berkey & Morris (1927) is no longer in use" (p. 352).
 
+## Is Öösh in Övörkhangai or Ömnögovi?
+
+*2026-09-03*
+
+**Conclusion.** Övörkhangai (MN-055). The papers on the Öösh collections give Övörkhangai in their own type-locality and distribution statements, and one table that gives Ömnögovi sits in a paper whose text gives Övörkhangai. Governs `location.region: MN-055` on [*Shanag ashile*](../../../genera/S/Shanag.yml), [*Psittacosaurus mongoliensis*](../../../genera/P/Psittacosaurus.yml) and the other records at Öösh.
+
+**Evidence.**
+- turner2012a, p. 35: *Shanag ashile*, "DISTRIBUTION: Berriasian–Barremian; Öösh Formation, Öösh locality, Ovorkhangai Aimag, Mongolia."
+- andres2005a, p. 3: "Altai region, Övörkhangai Aimag, central Mongolia"; p. 1, title: "Öösh (Övörkhangai; Mongolia)".
+
+**Ruled out.**
+- *Ömnögovi.* Turner and colleagues' Table 2 gives *Shanag ashile* as "Omnogov, Mongolia" (turner2012a, p. 20); their own species account gives Ovorkhangai (p. 35).
+
+**Open.** Nothing.
+
 ## References
 
 - `osborn1923b`: Osborn, H. F. (1923). Two Lower Cretaceous dinosaurs of Mongolia. *American Museum Novitates* 95: 1-10.
@@ -29,3 +44,4 @@
 - `turner2007b`: Turner, A. H.; Hwang, S. H.; Norell, M. A. (2007). A Small Derived Theropod from Öösh, Early Cretaceous, Baykhangor Mongolia. *American Museum Novitates* 3557(1). doi:10.1206/0003-0082(2007)3557[1:asdtfs]2.0.co;2
 - `rougier2001a`: Rougier, G. W.; Novacek, M. J.; McKenna, M. C.; Wible, J. R. (2001). Gobiconodonts from the Early Cretaceous of Oshih (Ashile), Mongolia. *American Museum Novitates* 3348: 1-30.
 - `jerzykiewicz1991a`: Jerzykiewicz, T.; Russell, D. A. (1991). Late Mesozoic stratigraphy and vertebrates of the Gobi Basin. *Cretaceous Research* 12(4): 345-377. doi:10.1016/0195-6671(91)90015-5
+- `turner2012a`: Turner, A. H.; Makovicky, P. J.; Norell, M. A. (2012). A Review of Dromaeosaurid Systematics and Paravian Phylogeny. *Bulletin of the American Museum of Natural History* 371: 1-206. doi:10.1206/748.1
