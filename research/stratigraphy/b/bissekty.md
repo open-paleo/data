@@ -19,5 +19,5 @@
 
 ## References
 
-- `nessov1989a`: Nessov, L. A.; Kaznyshkina, L. F.; Cherepanov, G. O. (1989). [Mesozoic ceratopsian dinosaurs and crocodiles of central Asia]. *In Bogdanova and Khozatskii (eds.), Theoretical and Applied Aspects of Modern Palaeontology*: 144-154.
+- `nessov1989a`: Nessov, L. A.; Kaznyshkina, L. F.; Cherepanov, G. O. (1989). [Mesozoic ceratopsian dinosaurs and crocodiles of central Asia]. In *Theoretical and Applied Aspects of Modern Paleontology (Bogdanova, T. N.; Khozatsky, L. I., eds.)*, pp. 144-154. Nauka, Leningrad.
 - `nessov1995a`: Nessov, L. A. (1995). Dinozavri severnoi Yevrazii: Novye dannye o sostave kompleksov, ekologii i paleobiogeografii [Dinosaurs of northern Eurasia: new data about assemblages, ecology, and paleobiogeography]. *Institute for Scientific Research on the Earth's Crust, St. Petersburg State University, St. Petersburg*: 1-156.
