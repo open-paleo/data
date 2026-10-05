@@ -16,9 +16,26 @@
 
 **Open.** Which form to record: the 2004 number with the SGM code ("SGM To 2000-1", which neither paper prints) or the 2008 element numbers.
 
+## Which Toundoute locality is the *Tazoudasaurus* holotype from?
+
+*2026-09-08*
+
+**Conclusion.** Fossil locality B of Allain and colleagues (2004), the upper bone bed, at the Douar of Tazouda. Allain and Aquesbi (2008) gloss locality A as the lower bone bed (To2) and B as the upper (To1/Pt), and every holotype element they list is numbered CPSGM To1. Governs `location.locality: Douar of Tazouda, locality B` on [*Tazoudasaurus naimi*](../../../genera/T/Tazoudasaurus.yml).
+
+**Evidence.**
+- allain2008a, p. 351, Horizon and locality: "Douar of Tazouda, near the village of Toundoute in the Province of Ouarzazate, High Atlas of Morocco. Lower and upper bone-beds ('Fossil locality A (or To2) and B (or To1/Pt)' of Allain et al. 2004 …)"; Holotype: "left mandible (CPSGM To1-275) … left metatarsal II (CPSGM To1-265)".
+- allain2004a, p. 203: "Douar of Tazouda near Toundoute village in the Province of Ouarzazate, High Atlas of Morocco".
+- montenat2005a, p. 261: "The dinosaur deposits of the douar of Tabia, about 3 km NE of Toundoute (province of Ouarzazate)" (translated).
+
+**Ruled out.**
+- *Locality A.* The lower bone bed, To2. No holotype element carries a To2 number; the To2 material Allain and Aquesbi describe, such as the manus MHNM To2-112, belongs to other individuals.
+
+**Open.** Whether the douar of Tabia, where Montenat and colleagues (2005) put the dinosaur deposits, is the Douar of Tazouda under another name. Montenat and colleagues, whose authors include Allain, describe the same upper bone bed but never name Tazouda, and Benvenuti and colleagues (2024) name a Tabia River valley and a Tazouda museum as different places in the area (benvenuti2024a, p. 4, Fig. 3). A map that names both would settle it.
+
 ## References
 
 - `allain2004a`: Allain, R.; Aquesbi, N.; Dejax, J.; Meyer, C.; Monbaron, M.; Montenat, C.; Richir, P.; Rochdy, M.; Russell, D.; Taquet, P. (2004). A basal sauropod dinosaur from the Early Jurassic of Morocco. *Comptes Rendus Palevol* 3(3): 199-208. doi:10.1016/j.crpv.2004.03.001
 - `allain2008a`: Allain, R.; Aquesbi, N. (2008). Anatomy and phylogenetic relationships of Tazoudasaurus naimi (Dinosauria, Sauropoda) from the late Early Jurassic of Morocco. *Geodiversitas* 30(2): 345-424.
 - `sabaj2020a`: Sabaj, M. H. (2020). Codes for natural history collections in ichthyology and herpetology. *Copeia* 108(3): 593-669. doi:10.1643/ASIHCODONS2020
 - `benvenuti2024a`: Benvenuti, M.; Nesi, J.; Papini, M.; Risaliti, G.; Sani, F.; Moratti, G. (2024). Geology of the Toundoute Region (South Morocco): a window on the Early Jurassic-Cretaceous tectono-sedimentary evolution of the Central High Atlas. *Journal of Maps* 20(1): 2419456. doi:10.1080/17445647.2024.2419456
+- `montenat2005a`: Montenat, C.; Monbaron, M.; Allain, R.; Aquesbi, N.; Dejax, J.; Hernandez, J.; Russell, D.; Taquet, P. (2005). Stratigraphie et paléoenvironnement des dépôts volcano-détritiques à dinosauriens du Jurassique inférieur de Toundoute (Province de Ouarzazate, Haut-Atlas — Maroc). *Eclogae Geologicae Helvetiae* 98(2): 261-270. doi:10.1007/s00015-005-1161-x
