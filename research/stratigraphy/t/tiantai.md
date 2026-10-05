@@ -18,6 +18,6 @@
 
 ## References
 
-- `xi2018a`: Xi, D. P.; Wan, X. Q.; Li, G. B.; Li, G. (2019). Cretaceous integrative stratigraphy and timescale of China. *Science China Earth Sciences* 62(1): 256-286. doi:10.1007/s11430-017-9262-y
+- `xi2018a`: Xi, D. P.; Wan, X. Q.; Li, G. B.; Li, G. (2018). Cretaceous integrative stratigraphy and timescale of China. *Science China Earth Sciences* 62(1): 256-286. doi:10.1007/s11430-017-9262-y
 - `yu2010a`: Yu, Y.; Jin, X.; Wu, X.; Zhang, Z. (2010). 浙江恐龙和蛋化石的时代 [The age of dinosaur and dinosaur egg fossils in Zhejiang]. *Geology in China* 37(1): 94-100.
 - `xi2021a`: Xi, D. P.; Sun, L. X.; Qin, Z. H.; Li, G. B.; Li, G.; Wan, X. Q. (2021). Lithostratigraphic subdivision and correlation of the Cretaceous in China. *Journal of Stratigraphy* 45(3): 375-401. doi:10.19839/j.cnki.dcxzz.2021.0030

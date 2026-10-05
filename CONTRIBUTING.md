@@ -234,6 +234,16 @@ so its key is `rauhut2000a`. Broom read a paper to the society in 1909 and it
 asks to be cited as 1910, but it appeared in a collected volume that cannot
 have been issued before 1912, so its key is `broom1912a`.
 
+A paper that names taxa is keyed by the year its names became available
+under the ICZN, because the build takes each taxon's authority year from the
+entry. An online release counts only from 2012, and only for a work that
+states its ZooBank registration (Article 8.5); before that, or without the
+registration, the names date from the printed issue. Canale and colleagues'
+*Skorpiovenator* paper went online in December 2008 and was printed in 2009,
+so its key is `canale2009a`. Sánchez-Hernández and Benton's *Camarillasaurus*
+paper went online in 2012 with no ZooBank registration and was printed in
+2014, so its key is `sánchez-hernández2014a`.
+
 Publishers and the wider literature often disagree about a year. A
 publisher's label does not settle it, and neither does a count of citations:
 **the year is still the year the work first became available.** How the

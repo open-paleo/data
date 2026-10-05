@@ -14,7 +14,7 @@
 **Ruled out.**
 - *Cenomanian.* The pre-1993 view that Currie and Eberth (1993) overturned. Jones (2026) still gives "Late Cretaceous, Cenomanian" for *Erliansaurus* in a specimen table (jones2026c, p. 505), while giving Campanian or Maastrichtian for the other Iren Dabasu taxa.
 - *Campanian as Currie and Eberth's result.* Brochu (2003) writes that "more recent work indicates a Campanian age for the Iren Dabasu beds … (Eberth and Currie, 1993)" (brochu2003a, p. 2). Currie and Eberth say only that it "may ultimately prove to be as young as Campanian".
-- *Coniacian–Campanian.* Carr (2022) gives "Coniacian–Campanian, or 89.8–83.6 million years in age (Gilmore, 1933; Currie and Eberth, 1993)" (carr2023a, p. 1). The figures span Coniacian–Santonian, since 83.6 Ma is the base of the Campanian (our reading).
+- *Coniacian–Campanian.* Carr (2023) gives "Coniacian–Campanian, or 89.8–83.6 million years in age (Gilmore, 1933; Currie and Eberth, 1993)" (carr2023a, p. 1). The figures span Coniacian–Santonian, since 83.6 Ma is the base of the Campanian (our reading).
 
 **Open.** The formation's full range. Zanno (2010) reports micropaleontology giving Campanian–Maastrichtian and macrovertebrates giving "Cenomanian-early Campanian"; these were not re-examined for this note.
 
@@ -25,4 +25,4 @@
 - `bonnetti2014a`: Bonnetti, C.; Malartre, F.; Huault, V.; Cuney, M.; Bourlange, S.; Liu, X.; Peng, Y. (2014). Sedimentology, stratigraphy and palynological occurrences of the late Cretaceous Erlian Formation, Erlian Basin, Inner Mongolia, People's Republic of China. *Cretaceous Research* 48: 177-192. doi:10.1016/j.cretres.2013.09.013
 - `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
 - `brochu2003a`: Brochu, C. R. (2003). Osteology of Tyrannosaurus rex: insights from a nearly complete skeleton and high-resolution computed tomographic analysis of the skull. *Society of Vertebrate Paleontology Memoirs* 7: 1-138. doi:10.2307/3889334
-- `carr2023a`: Carr, T. D. (2022). A reappraisal of tyrannosauroid fossils from the Iren Dabasu Formation (Coniacian–Campanian), Inner Mongolia, People's Republic of China. *Journal of Vertebrate Paleontology* 42(5): e2199817. doi:10.1080/02724634.2023.2199817
+- `carr2023a`: Carr, T. D. (2023). A reappraisal of tyrannosauroid fossils from the Iren Dabasu Formation (Coniacian–Campanian), Inner Mongolia, People's Republic of China. *Journal of Vertebrate Paleontology* 42(5): e2199817. doi:10.1080/02724634.2023.2199817

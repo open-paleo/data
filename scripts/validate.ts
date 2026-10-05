@@ -1481,6 +1481,25 @@ for (const referenceId of referenceStoreIds)
     }
 }
 
+// 12d. Reference key year — an entry carries one year, the year the work
+// first became available, and its key and `year` field both give it
+// (CONTRIBUTING, "Reference Keys and Years").
+startCheck("Reference key year");
+
+for (const [filePath, entry] of referenceStoreParsed)
+{
+    const keyYear = entry?.id?.match(/(\d{4})[a-z]$/)?.[1];
+
+    if (keyYear && entry && String(entry.year) !== keyYear)
+    {
+        checkError(
+            "Reference key year",
+            filePath,
+            `reference '${entry.id}': year ${entry.year ?? "(missing)"} does not match the key's year ${keyYear}; key and year are both the year the work first became available`,
+        );
+    }
+}
+
 // 12b. Flagged publication sources — references citing publishers or
 // journals on flagged-sources.yml emit a warning for reviewer sign-off.
 startCheck("Flagged publication sources");

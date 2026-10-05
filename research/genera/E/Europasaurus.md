@@ -19,6 +19,6 @@
 ## References
 
 - `evers2020a`: Evers, S. W.; Wings, O. (2020). Late Jurassic theropod dinosaur bones from the Langenberg Quarry (Lower Saxony, Germany) provide evidence for several theropod lineages in the central European archipelago. *PeerJ* 8: e8437. doi:10.7717/peerj.8437
-- `zuo2017a`: Zuo, F.; Heimhofer, U.; Huck, S.; Luppold, F. W.; Wings, O.; Erbacher, J. (2018). Sedimentology and depositional sequences of a Kimmeridgian carbonate ramp system, Lower Saxony Basin, Northern Germany. *Facies* 64(1). doi:10.1007/s10347-017-0513-0
+- `zuo2017a`: Zuo, F.; Heimhofer, U.; Huck, S.; Luppold, F. W.; Wings, O.; Erbacher, J. (2017). Sedimentology and depositional sequences of a Kimmeridgian carbonate ramp system, Lower Saxony Basin, Northern Germany. *Facies* 64(1). doi:10.1007/s10347-017-0513-0
 - `sander2006a`: Sander, P. M.; Mateus, O.; Laven, T.; Knötschke, N. (2006). Bone histology indicates insular dwarfism in a new Late Jurassic sauropod dinosaur. *Nature* 441: 739-741. doi:10.1038/nature04633
 - `carballido2013a`: Carballido, J. L.; Sander, M. P. (2013). Postcranial axial skeleton of Europasaurus holgeri (Dinosauria, Sauropoda) from the Upper Jurassic of Germany: implications for sauropod ontogeny and phylogenetic relationships of basal Macronaria. *Journal of Systematic Palaeontology* 12(3): 335–387. doi:10.1080/14772019.2013.764935

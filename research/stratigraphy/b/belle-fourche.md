@@ -18,7 +18,7 @@
 
 ## References
 
-- `singer2020a`: Singer, B. S.; Jicha, B. R.; Sawyer, D. A.; Walaszczyk, I.; Buchwaldt, R.; Mutterlose, J. (2021). Geochronology of late Albian–Cenomanian strata in the U.S. Western Interior. *Geological Society of America Bulletin* 133(7-8): 1665-1678. doi:10.1130/B35794.1
+- `singer2020a`: Singer, B. S.; Jicha, B. R.; Sawyer, D. A.; Walaszczyk, I.; Buchwaldt, R.; Mutterlose, J. (2020). Geochronology of late Albian–Cenomanian strata in the U.S. Western Interior. *Geological Society of America Bulletin* 133(7-8): 1665-1678. doi:10.1130/B35794.1
 - `cobban1990a`: Cobban, W. A. (1990). Ammonites and some characteristic bivalves from the Upper Cretaceous Frontier Formation, Natrona County, Wyoming. *U.S. Geological Survey Bulletin* 1917-B. doi:10.3133/b1917b
 - `carpenter1998c`: Carpenter, K.; Kirkland, J. I. (1998). Review of Lower and Middle Cretaceous ankylosaurs from North America. *Lower and Middle Cretaceous Terrestrial Ecosystems. New Mexico Museum of Natural History and Science Bulletin* 14: 249-270.
 - `merewether1984a`: Merewether, E. A.; Blackmon, P. D.; Webb, J. C. (1984). The mid-Cretaceous Frontier Formation near the Moxa Arch, southwestern Wyoming. *United States Geological Survey Professional Paper* 1290. doi:10.3133/pp1290
