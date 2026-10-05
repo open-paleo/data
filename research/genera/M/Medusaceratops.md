@@ -20,4 +20,4 @@
 ## References
 
 - `chiba2018a`: Chiba, K.; Ryan, M. J.; Fanti, F.; Loewen, M. A.; Evans, D. C. (2018). New material and systematic re-evaluation of Medusaceratops lokii (Dinosauria, Ceratopsidae) from the Judith River Formation (Campanian, Montana). *Journal of Paleontology* 92(2): 272-288. doi:10.1017/jpa.2017.62
-- `ryan2010a`: Ryan, M. J.; Russell, A. P.; Hartman, S. (2010). A new chasmosaurine ceratopsid from the Judith River Formation, Montana. *New Perspectives on Horned Dinosaurs: The Royal Tyrrell Museum Ceratopsian Symposium. Indiana University Press, Bloomington*: 181-188.
+- `ryan2010a`: Ryan, M. J.; Russell, A. P.; Hartman, S. (2010). A new chasmosaurine ceratopsid from the Judith River Formation, Montana. In *New Perspectives on Horned Dinosaurs: The Royal Tyrrell Museum Ceratopsian Symposium (Ryan, M. J.; Chinnery-Allgeier, B. J.; Eberth, D. A., eds.)*, pp. 181-188. Indiana University Press, Bloomington.

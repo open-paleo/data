@@ -262,6 +262,24 @@ commit.** The old key is gone, not aliased. Grep `genera/` and `clades/` for
 it, and check the prose of each record you find as well as its `references`
 list — a citation left on the old year is the mismatch you were trying to fix.
 
+## Books, Chapters and Series
+
+A chapter in an edited volume names the volume in `book`, with its editors in
+parentheses after the title, written like `authors` and followed by `ed.` or
+`eds.`:
+
+```yaml
+book: "Mesozoic Vertebrate Life: New Research Inspired by the Paleontology of Philip J. Currie (Tanke, D. H.; Carpenter, K., eds.)"
+publisher: "Indiana University Press, Bloomington"
+pages: 237-242
+```
+
+Each part has its own field. The publisher, with its city where known, goes in
+`publisher`; a numbered series such as a museum bulletin goes in `series`, with
+the number in `volume`. A chapter has no `journal`. A standalone book has a
+`title` and a `publisher` and no `book`. Every chapter of one volume gives the
+volume in the same words.
+
 ## Names and Language
 
 Open Paleo is the core dataset, meant to be consumable by everyone, so its

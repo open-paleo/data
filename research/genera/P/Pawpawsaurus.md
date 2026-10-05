@@ -19,4 +19,4 @@
 ## References
 
 - `lee1996a`: Lee, Y. N. (1996). A new nodosaurid ankylosaur (Dinosauria: Ornithischia) from the Paw Paw Formation (Late Albian) of Texas. *Journal of Vertebrate Paleontology* 16(2): 232-245. doi:10.1080/02724634.1996.10011311
-- `carpenter1998c`: Carpenter, K.; Kirkland, J. I. (1998). Review of Lower and Middle Cretaceous ankylosaurs from North America. *Lower and Middle Cretaceous Terrestrial Ecosystems. New Mexico Museum of Natural History and Science Bulletin* 14: 249-270.
+- `carpenter1998c`: Carpenter, K.; Kirkland, J. I. (1998). Review of Lower and Middle Cretaceous ankylosaurs from North America. In *Lower and Middle Cretaceous Terrestrial Ecosystems (Lucas, S. G.; Kirkland, J. I.; Estep, J. W., eds.)*, pp. 249-270.

@@ -17,4 +17,4 @@
 
 ## References
 
-- `fiorillo2010a`: Fiorillo, A. R.; McCarthy, P. J.; Flaig, P. P.; Brandlen, E.; Norton, D. W.; Zippi, P.; Jacobs, L.; Gangloff, R. A. (2010). Paleontology and paleoenvironmental interpretation of the Kikak-Tegoseak Quarry (Prince Creek Formation: Late Cretaceous), northern Alaska: a multi-disciplinary study of a high-latitude ceratopsian dinosaur bonebed. *New Perspectives on Horned Dinosaurs: The Royal Tyrrell Museum Ceratopsian Symposium (Ryan, M.J., Chinnery-Allgeier, B.J. and Eberth, D.A., eds.)*: 456-477.
+- `fiorillo2010a`: Fiorillo, A. R.; McCarthy, P. J.; Flaig, P. P.; Brandlen, E.; Norton, D. W.; Zippi, P.; Jacobs, L.; Gangloff, R. A. (2010). Paleontology and paleoenvironmental interpretation of the Kikak-Tegoseak Quarry (Prince Creek Formation: Late Cretaceous), northern Alaska: a multi-disciplinary study of a high-latitude ceratopsian dinosaur bonebed. In *New Perspectives on Horned Dinosaurs: The Royal Tyrrell Museum Ceratopsian Symposium (Ryan, M. J.; Chinnery-Allgeier, B. J.; Eberth, D. A., eds.)*, pp. 456-477. Indiana University Press, Bloomington.

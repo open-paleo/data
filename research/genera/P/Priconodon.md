@@ -18,5 +18,5 @@
 
 ## References
 
-- `carpenter1998c`: Carpenter, K.; Kirkland, J. I. (1998). Review of Lower and Middle Cretaceous ankylosaurs from North America. *Lower and Middle Cretaceous Terrestrial Ecosystems. New Mexico Museum of Natural History and Science Bulletin* 14: 249-270.
+- `carpenter1998c`: Carpenter, K.; Kirkland, J. I. (1998). Review of Lower and Middle Cretaceous ankylosaurs from North America. In *Lower and Middle Cretaceous Terrestrial Ecosystems (Lucas, S. G.; Kirkland, J. I.; Estep, J. W., eds.)*, pp. 249-270.
 - `marsh1888a`: Marsh, O. C. (1888). Notice of a new genus of Sauropoda and other new dinosaurs from the Potomac Formation. *American Journal of Science* s3-35(205): 89-94. doi:10.2475/ajs.s3-35.205.89
