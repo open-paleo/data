@@ -45,8 +45,8 @@
 - `young1942b`: Young, C. C. (1942). Yunnanosaurus huangi Young (gen. et sp. nov.), a New Prosauropoda from the Red Beds at Lufeng, Yunnan. *Bulletin of the Geological Society of China* 22(1-2): 63-104. doi:10.1111/j.1755-6724.1942.mp221-2005.x
 - `simmons1965a`: Simmons, D. J.; Nash, E. G. (1965). The non-therapsid reptiles of the Lufeng Basin, Yunnan, China. Chicago Natural History Museum Press. doi:10.5962/bhl.title.5426
 - `young1948a`: Young, C. C. (1948). On two new saurischians from Lufeng, Yunnan. *Bulletin of the Geological Society of China* 28(1-2): 75-90. doi:10.1111/j.1755-6724.1948.mp281-2007.x
-- `luo1994a`: Luo, Z.; Wu, X. C. (1994). The small tetrapods of the Lower Lufeng Formation, Yunnan, China. In *In the Shadow of the Dinosaurs: Early Mesozoic Tetrapods*, pp. 251-270. Cambridge University Press.
+- `luo1994a`: Luo, Z.; Wu, X. C. (1994). The small tetrapods of the Lower Lufeng Formation, Yunnan, China. In *In the Shadow of the Dinosaurs: Early Mesozoic Tetrapods*, pp. 251-270. Cambridge University Press, Cambridge.
 - `barrett2012a`: Barrett, P. M.; Xu, X. (2012). The enigmatic reptile Pachysuchus imperfectus Young, 1951 from the Lower Lufeng Formation (Lower Jurassic) of Yunnan, China. *Vertebrata PalAsiatica* 50(2): 151-159.
-- `galton2004a`: Galton, P. M.; Upchurch, P. (2004). Prosauropoda. In *The Dinosauria, 2nd edition*, pp. 232-258. University of California Press.
+- `galton2004a`: Galton, P. M.; Upchurch, P. (2004). Prosauropoda. In *The Dinosauria, 2nd edition*, pp. 232-258. University of California Press, Berkeley.
 - `peyredefabrègues2015a`: Peyre de Fabrègues, C.; Allain, R.; Barriel, V. (2015). Root causes of phylogenetic incongruence observed within basal sauropodomorph interrelationships. *Zoological Journal of the Linnean Society* 175(3): 569-586. doi:10.1111/zoj.12290
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.

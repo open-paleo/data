@@ -274,11 +274,12 @@ publisher: "Indiana University Press, Bloomington"
 pages: 237-242
 ```
 
-Each part has its own field. The publisher, with its city where known, goes in
-`publisher`; a numbered series such as a museum bulletin goes in `series`, with
-the number in `volume`. A chapter has no `journal`. A standalone book has a
-`title` and a `publisher` and no `book`. Every chapter of one volume gives the
-volume in the same words.
+Each part has its own field. The publisher goes in `publisher`, followed by
+its city where known (`Indiana University Press, Bloomington`); a journal
+article's publisher takes no city. A numbered series such as a museum bulletin
+goes in `series`, with the number in `volume`. A chapter has no `journal`. A
+standalone book has a `title` and a `publisher` and no `book`. Every chapter of
+one volume gives the volume in the same words.
 
 ## Names and Language
 

@@ -19,5 +19,5 @@
 ## References
 
 - `sampson2010a`: Sampson, S. D.; Loewen, M. A.; Farke, A. A.; Roberts, E. M.; Forster, C. A.; Smith, J. A.; Titus, A. L. (2010). New Horned Dinosaurs from Utah Provide Evidence for Intracontinental Dinosaur Endemism. *PLoS ONE* 5(9): e12292. doi:10.1371/journal.pone.0012292
-- `loewen2013b`: Loewen, M.; Farke, A. A.; Sampson, S. D.; Getty, M. A.; Lund, E. K.; O'Connor, P. M. (2013). Ceratopsid dinosaurs from the Grand Staircase of Southern Utah. In *At the Top of the Grand Staircase: The Late Cretaceous of Southern Utah*, pp. 488-503. Indiana University Press.
+- `loewen2013b`: Loewen, M.; Farke, A. A.; Sampson, S. D.; Getty, M. A.; Lund, E. K.; O'Connor, P. M. (2013). Ceratopsid dinosaurs from the Grand Staircase of Southern Utah. In *At the Top of the Grand Staircase: The Late Cretaceous of Southern Utah*, pp. 488-503. Indiana University Press, Bloomington.
 - `levitt2013a`: Levitt, C. G. (2013). Bone histology and growth of chasmosaurine ceratopsid dinosaurs from the late Campanian Kaiparowits Formation, Southern Utah. Masters thesis, University of Utah.

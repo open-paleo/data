@@ -22,7 +22,7 @@
 
 - `bordy2020a`: Bordy, E. M.; Abrahams, M.; Sharman, G. R.; Viglietti, P. A.; Benson, R. B. J.; McPhee, B. W.; Barrett, P. M.; Sciscio, L.; Condon, D.; Mundil, R.; Rademan, Z.; Jinnah, Z.; Clark, J. M.; Suarez, C. A.; Chapelle, K. E. J.; Choiniere, J. N. (2020). A chronostratigraphic framework for the upper Stormberg Group: implications for the Triassic-Jurassic boundary in southern Africa. *Earth-Science Reviews* 203: 103120. doi:10.1016/j.earscirev.2020.103120
 - `sciscio2017a`: Sciscio, L.; de Kock, M.; Bordy, E. M.; Knoll, F. (2017). Magnetostratigraphy across the Triassic-Jurassic boundary in the main Karoo Basin. *Gondwana Research* 51: 177-192. doi:10.1016/j.gr.2017.07.009
-- `hesselbo2020a`: Hesselbo, S. P.; Ogg, J. G.; Ruhl, M.; Hinnov, L. A.; Huang, C. J. (2020). The Jurassic Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 955-1021. Elsevier. doi:10.1016/B978-0-12-824360-2.00026-7
+- `hesselbo2020a`: Hesselbo, S. P.; Ogg, J. G.; Ruhl, M.; Hinnov, L. A.; Huang, C. J. (2020). The Jurassic Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 955-1021. Elsevier, Amsterdam. doi:10.1016/B978-0-12-824360-2.00026-7
 - `sereno2012a`: Sereno, P. C. (2012). Taxonomy, morphology, masticatory function and phylogeny of heterodontosaurid dinosaurs. *ZooKeys* 226: 1-225. doi:10.3897/zookeys.226.2840
 - `haughton1924a`: Haughton, S. H. (1924). The fauna and stratigraphy of the Stormberg Series. *Annals of the South African Museum* 12: 323-497.
 - `crompton1962a`: Crompton, A. W.; Charig, A. J. (1962). A new Ornithischian from the Upper Triassic of South Africa. *Nature* 196(4859): 1074-1077. doi:10.1038/1961074a0

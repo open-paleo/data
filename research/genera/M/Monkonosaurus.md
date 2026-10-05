@@ -17,6 +17,6 @@
 
 ## References
 
-- `dong1990b`: Dong, Z. (1990). Stegosaurs of Asia. In *Dinosaur Systematics: Perspectives and Approaches (Carpenter, K.; Currie, P. J., eds.)*, pp. 255-268. Cambridge University Press.
+- `dong1990b`: Dong, Z. (1990). Stegosaurs of Asia. In *Dinosaur Systematics: Perspectives and Approaches (Carpenter, K.; Currie, P. J., eds.)*, pp. 255-268. Cambridge University Press, Cambridge.
 - `maidment2006a`: Maidment, S. C. R.; Wei, G. (2006). A review of the Late Jurassic stegosaurs (Dinosauria, Stegosauria) from the People's Republic of China. *Geological Magazine* 143(5): 621-634. doi:10.1017/s0016756806002500
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.

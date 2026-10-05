@@ -35,6 +35,6 @@
 ## References
 
 - `riabinin1930a`: Riabinin, A. N. (1930). Mandschurosaurus amurensis nov. gen. nov. sp., verkhnemelovoy dinozavr s. r. Amura [Mandschurosaurus amurensis nov. gen, nov. sp., a hadrosaurian dinosaur from the Upper Cretaceous of the Amur River]. *Monografii Russkogo Paleontologicheskogo Obshchestva* 2: 1-36.
-- `bolotsky2014a`: Bolotsky, Y. L.; Godefroit, P.; Bolotsky, I. Y.; Atuchin, A. (2014). Hadrosaurs from the Far East: historical perspective and new Amurosaurus material from Blagoveschensk (Amur Region, Russia). In *Hadrosaurs*. Indiana University Press.
+- `bolotsky2014a`: Bolotsky, Y. L.; Godefroit, P.; Bolotsky, I. Y.; Atuchin, A. (2014). Hadrosaurs from the Far East: historical perspective and new Amurosaurus material from Blagoveschensk (Amur Region, Russia). In *Hadrosaurs*. Indiana University Press, Bloomington.
 - `godefroit2000a`: Godefroit, P.; Zan, S.; Jin, L. (2000). Charonosaurus jiayinensis n.g., n.sp.,a lambeosaurine dinosaur from the Late Maastrichtian of northeastern China. *Comptes Rendus de l'Académie des Sciences - Series IIA - Earth and Planetary Science* 330(12): 875-882. doi:10.1016/s1251-8050(00)00214-7
 - `godefroit2011a`: Godefroit, P.; Lauters, P.; Van Itterbeeck, J.; Bolotsky, Yu. L.; Dong, Z.; Jin, L.; Wu, W.; Bolotsky, I. Y.; Hai, S.; Yu, T. (2011). Recent advances on study of hadrosaurid dinosaurs in Heilongjiang (Amur) River area between China and Russia. *Global Geology* 14(3): 160-191. doi:10.3969/j.issn.1673-9736.2011.03.03

@@ -18,5 +18,5 @@
 ## References
 
 - `prieto-márquez2006b`: Prieto-Márquez, A.; Gaete, R.; Rivas, G.; Galobart, À.; Boada, M. (2006). Hadrosauroid dinosaurs from the Late Cretaceous of Spain: Pararhabdodon isonensis revisited and Koutalisaurus kohlerorum, gen. et sp. nov. *Journal of Vertebrate Paleontology* 26(4): 929-943.
-- `dallavecchia2014a`: Dalla Vecchia, F. M.; Gaete, R.; Riera, V.; Oms, O.; Prieto-Márquez, A.; Vila, B.; Garcia Sellés, A.; Galobart, À. (2014). The hadrosauroid record in the Maastrichtian of the eastern Tremp Syncline (northern Spain). In *Hadrosaurs*, pp. 298-314. Indiana University Press.
+- `dallavecchia2014a`: Dalla Vecchia, F. M.; Gaete, R.; Riera, V.; Oms, O.; Prieto-Márquez, A.; Vila, B.; Garcia Sellés, A.; Galobart, À. (2014). The hadrosauroid record in the Maastrichtian of the eastern Tremp Syncline (northern Spain). In *Hadrosaurs*, pp. 298-314. Indiana University Press, Bloomington.
 - `dallavecchia2020a`: Dalla Vecchia, F. M. (2020). The unusual tail of Tethyshadros insularis (Dinosauria, Hadrosauroidea) from the Adriatic island of the European archipelago. *Rivista Italiana di Paleontologia e Stratigrafia* 126(3). doi:10.13130/2039-4942/14075

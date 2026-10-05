@@ -22,7 +22,7 @@
 ## References
 
 - `zhong2021a`: Zhong, Y.; Huyskens, M. H.; Yin, Q. Z.; Wang, Y.; Ma, Q.; Xu, Y. G. (2021). High-precision geochronological constraints on the duration of 'Dinosaur Pompeii' and the Yixian Formation. *National Science Review* 8(6): nwab063. doi:10.1093/nsr/nwab063
-- `gale2020a`: Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R. (2020). The Cretaceous Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 1023-1086. Elsevier. doi:10.1016/B978-0-12-824360-2.00027-9
+- `gale2020a`: Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R. (2020). The Cretaceous Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 1023-1086. Elsevier, Amsterdam. doi:10.1016/B978-0-12-824360-2.00027-9
 - `chang2017a`: Chang, S. C.; Gao, K. Q.; Zhou, C. F.; Jourdan, F. (2017). New chronostratigraphic constraints on the Yixian Formation with implications for the Jehol Biota. *Palaeogeography, Palaeoclimatology, Palaeoecology*. doi:10.1016/j.palaeo.2017.09.026
 - `sereno2010a`: Sereno, P. C. (2010). Taxonomy, cranial morphology, and relationships of parrot-beaked dinosaurs (Ceratopsia: Psittacosaurus). In *New Perspectives on Horned Dinosaurs: The Royal Tyrrell Museum Ceratopsian Symposium (Ryan, M. J.; Chinnery-Allgeier, B. J.; Eberth, D. A., eds.)*, pp. 21-58. Indiana University Press, Bloomington.
 - `sereno2009a`: Sereno, P. C.; Tan, L.; Brusatte, S. L.; Kriegstein, H. J.; Zhao, X.; Cloward, K. (2009). Tyrannosaurid Skeletal Design First Evolved at Small Body Size. *Science* 326(5951): 418-422. doi:10.1126/science.1177428

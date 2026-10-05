@@ -19,5 +19,5 @@
 ## References
 
 - `panaiotu2010a`: Panaiotu, C. G.; Panaiotu, C. E. (2010). Palaeomagnetism of the Upper Cretaceous Sânpetru Formation (Haţeg Basin, South Carpathians). *Palaeogeography, Palaeoclimatology, Palaeoecology* 293(3-4): 343-352. doi:10.1016/j.palaeo.2009.11.017
-- `gale2020a`: Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R. (2020). The Cretaceous Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 1023-1086. Elsevier. doi:10.1016/B978-0-12-824360-2.00027-9
+- `gale2020a`: Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R. (2020). The Cretaceous Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 1023-1086. Elsevier, Amsterdam. doi:10.1016/B978-0-12-824360-2.00027-9
 - `csiki-sava2016a`: Csiki-Sava, Z.; Vremir, M.; Vasile, Ş.; Brusatte, S. L.; Dyke, G.; Naish, D.; Norell, M. A.; Totoianu, R. (2016). The East Side Story – The Transylvanian latest Cretaceous continental vertebrate record and its implications for understanding Cretaceous-Paleogene boundary events. *Cretaceous Research* 57: 662-698. doi:10.1016/j.cretres.2015.09.003

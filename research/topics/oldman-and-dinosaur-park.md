@@ -23,7 +23,7 @@
 
 - `russell1972a`: Russell, D. A. (1972). Ostrich Dinosaurs from the Late Cretaceous of Western Canada. *Canadian Journal of Earth Sciences* 9(4): 375-402. doi:10.1139/e72-031
 - `eberth1993b`: Eberth, D. A.; Hamblin, A. P. (1993). Tectonic, stratigraphic, and sedimentologic significance of a regional discontinuity in the upper Judith River Group (Belly River wedge) of southern Alberta, Saskatchewan, and northern Montana. *Canadian Journal of Earth Sciences* 30(1): 174-200. doi:10.1139/e93-016
-- `eberth2005a`: Eberth, D. A. (2005). The geology. In *Dinosaur Provincial Park: A Spectacular Ancient Ecosystem Revealed*, pp. 54-82. Indiana University Press.
+- `eberth2005a`: Eberth, D. A. (2005). The geology. In *Dinosaur Provincial Park: A Spectacular Ancient Ecosystem Revealed*, pp. 54-82. Indiana University Press, Bloomington.
 - `ryan2005a`: Ryan, M. J.; Russell, A. P. (2005). A new centrosaurine ceratopsid from the Oldman Formation of Alberta and its implications for centrosaurine taxonomy and systematics. *Canadian Journal of Earth Sciences* 42(7): 1369. doi:10.1139/e05-029
 - `schott2011a`: Schott, R. K.; Evans, D. C.; Goodwin, M. B.; Horner, J. R.; Brown, C. M.; Longrich, N. R. (2011). Cranial ontogeny in Stegoceras validum (Dinosauria: Pachycephalosauria): a quantitative model of pachycephalosaur dome growth and variation. *PLOS ONE* 6(6): e21092. doi:10.1371/journal.pone.0021092
 - `vanderreest2017a`: van der Reest, A. J.; Currie, P. J. (2017). Troodontids (Theropoda) from the Dinosaur Park Formation, Alberta, with a description of a unique new taxon: implications for deinonychosaur diversity in North America. *Canadian Journal of Earth Sciences* 54(9): 919-935. doi:10.1139/cjes-2017-0031

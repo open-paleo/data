@@ -19,6 +19,6 @@
 ## References
 
 - `todd2019a`: Todd, C. N.; Roberts, E. M.; Knutsen, E. M.; Rozefelds, A. C.; Huang, H. Q.; Spandler, C. (2019). Refined age and geological context of two of Australia's most important Jurassic vertebrate taxa (Rhoetosaurus brownei and Siderops kehli), Queensland. *Gondwana Research* 76: 19-25. doi:10.1016/j.gr.2019.05.008
-- `hesselbo2020a`: Hesselbo, S. P.; Ogg, J. G.; Ruhl, M.; Hinnov, L. A.; Huang, C. J. (2020). The Jurassic Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 955-1021. Elsevier. doi:10.1016/B978-0-12-824360-2.00026-7
+- `hesselbo2020a`: Hesselbo, S. P.; Ogg, J. G.; Ruhl, M.; Hinnov, L. A.; Huang, C. J. (2020). The Jurassic Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 955-1021. Elsevier, Amsterdam. doi:10.1016/B978-0-12-824360-2.00026-7
 - `nair2012a`: Nair, J. P.; Salisbury, S. W. (2012). New anatomical information on Rhoetosaurus brownei Longman, 1926, a gravisaurian sauropodomorph dinosaur from the Middle Jurassic of Queensland, Australia. *Journal of Vertebrate Paleontology* 32(2): 369-394. doi:10.1080/02724634.2012.622324
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.

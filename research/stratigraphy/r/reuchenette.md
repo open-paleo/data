@@ -22,4 +22,4 @@
 - `schwarz2020a`: Schwarz, D.; Mannion, P. D.; Wings, O.; Meyer, C. A. (2020). Re-description of the sauropod dinosaur Amanzia ("Ornithopsis/Cetiosauriscus") greppini n. gen. and other vertebrate remains from the Kimmeridgian (Late Jurassic) Reuchenette Formation of Moutier, Switzerland. *Swiss Journal of Geosciences* 113(1). doi:10.1186/s00015-020-00355-5
 - `jank2006a`: Jank, M.; Wetzel, A.; Meyer, C. A. (2006). A calibrated composite section for the Late Jurassic Reuchenette Formation in northwestern Switzerland (?Oxfordian, Kimmeridgian sensu gallico, Ajoie-Region). *Eclogae Geologicae Helvetiae* 99: 175-191. doi:10.1007/s00015-006-1187-8
 - `chure2000a`: Chure, D. J. (2000). A new species of Allosaurus from the Morrison Formation of Dinosaur National Monument (UT-CO) and a revision of the theropod family Allosauridae. Doctoral thesis, Columbia University.
-- `mcintosh1990a`: McIntosh, J. S. (1990). Sauropoda. In *The Dinosauria, 1st edition*, pp. 345-401. University of California Press.
+- `mcintosh1990a`: McIntosh, J. S. (1990). Sauropoda. In *The Dinosauria, 1st edition*, pp. 345-401. University of California Press, Berkeley.

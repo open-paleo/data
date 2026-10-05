@@ -21,4 +21,4 @@
 - `carpenter2002a`: Carpenter, K.; Young, D. B. (2002). Late Cretaceous dinosaurs from the Denver Basin, Colorado. *Rocky Mountain Geology* 37(2): 237-254.
 - `lull1942a`: Lull, R. S.; Wright, N. E. (1942). Hadrosaurian Dinosaurs of North America. *Geological Society of America Special Papers* 40: 1-272. doi:10.1130/spe40-p1
 - `white1973a`: White, T. E. (1973). Catalogue of the genera of dinosaurs. *Annals of Carnegie Museum* 44: 117-155. doi:10.5962/p.243870
-- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, 2nd edition*, pp. 517-606. University of California Press. doi:10.1525/california/9780520242098.003.0027
+- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, 2nd edition*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027

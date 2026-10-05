@@ -16,5 +16,5 @@
 ## References
 
 - `nopcsa1915a`: Nopcsa, B. F. (1915). Die Dinosaurier der siebenbürgischen Landesteile Ungarns [The Dinosaurs of the Transylvanian Territories of Hungary]. *Mitteilungen aus dem Jahrbuche der Königlich Ungarischen Geologischen Reichsanstalt* 23: 1-26.
-- `vickaryous2004a`: Vickaryous, M. K.; Maryańska, T.; Weishampel, D. B. (2004). Ankylosauria. In *The Dinosauria, 2nd edition*, pp. 363-392. University of California Press.
+- `vickaryous2004a`: Vickaryous, M. K.; Maryańska, T.; Weishampel, D. B. (2004). Ankylosauria. In *The Dinosauria, 2nd edition*, pp. 363-392. University of California Press, Berkeley.
 - `csiki-sava2015a`: Csiki-Sava, Z.; Buffetaut, E.; Ősi, A.; Pereda-Suberbiola, X.; Brusatte, S. L. (2015). Island life in the Cretaceous — faunal composition, biogeography, evolution, and extinction of land-living vertebrates on the Late Cretaceous European archipelago. *ZooKeys* 469: 1-161. doi:10.3897/zookeys.469.8439

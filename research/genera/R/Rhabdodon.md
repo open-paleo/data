@@ -34,5 +34,5 @@
 
 - `czepiński2025a`: Czepiński, Ł.; Madzia, D. (2025). Exploring the diversity and disparity of rhabdodontomorph ornithopods from the Late Cretaceous European archipelago. *Scientific Reports* 15(1). doi:10.1038/s41598-025-98083-z
 - `garcia1999a`: Garcia, G.; Pincemaille, M.; Vianey-Liaud, M.; Marandat, B.; Lorenz, E.; Cheylan, G.; Cappetta, H.; Michaux, J.; Sudre, J. (1999). Discovery of an almost complete skeleton of Rhabdodon priscus (Dinosauria, Ornithopoda) in the Early Maastrichtian of Provence. *Comptes Rendus de l'Académie des Sciences - Series IIA - Earth and Planetary Science* 328(6): 415-421. doi:10.1016/S1251-8050(99)80108-6
-- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, 2nd edition*, pp. 517-606. University of California Press. doi:10.1525/california/9780520242098.003.0027
-- `norman2004a`: Norman, D. B. (2004). Basal Iguanodontia. In *The Dinosauria, 2nd edition*, pp. 413-437. University of California Press.
+- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, 2nd edition*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027
+- `norman2004a`: Norman, D. B. (2004). Basal Iguanodontia. In *The Dinosauria, 2nd edition*, pp. 413-437. University of California Press, Berkeley.

@@ -24,4 +24,4 @@
 - `cope1869c`: Cope, E. D. (1869). [Remarks on Holops brevispinus, Ornithotarsus immanis, and Macrosaurus proriger]. *Proceedings of the Academy of Natural Sciences of Philadelphia* 21: 123.
 - `lull1942a`: Lull, R. S.; Wright, N. E. (1942). Hadrosaurian Dinosaurs of North America. *Geological Society of America Special Papers* 40: 1-272. doi:10.1130/spe40-p1
 - `prieto-márquez2006a`: Prieto-Márquez, A.; Weishampel, D. B.; Horner, J. R. (2006). The dinosaur Hadrosaurus foulkii, from the Campanian of the East Coast of North America, with a reevaluation of the genus. *Acta Palaeontologica Polonica* 51(1): 77-98.
-- `horner2004a`: Horner, J. R.; Weishampel, D. B.; Forster, C. A. (2004). Hadrosauridae. In *The Dinosauria (2nd ed.)*, pp. 438-463. University of California Press.
+- `horner2004a`: Horner, J. R.; Weishampel, D. B.; Forster, C. A. (2004). Hadrosauridae. In *The Dinosauria (2nd ed.)*, pp. 438-463. University of California Press, Berkeley.

@@ -34,5 +34,5 @@
 
 - `dong1977a`: Dong, Z.; Li, X.; Zhou, S.; Zhang, Y. (1977). On the stegosaurian remains from Zigong (Tzekung), Szechuan province. *Vertebrata PalAsiatica* 15(4): 307-312.
 - `dong1983a`: Dong, Z.; Zhou, S.; Zhang, H. (1983). [Dinosaurs from the Jurassic of Sichuan]. *Palaeontologica Sinica, New Series C, Whole Number* 162(23): 1-136.
-- `mcintosh1990a`: McIntosh, J. S. (1990). Sauropoda. In *The Dinosauria, 1st edition*, pp. 345-401. University of California Press.
-- `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, 2nd edition*, pp. 259-322. University of California Press.
+- `mcintosh1990a`: McIntosh, J. S. (1990). Sauropoda. In *The Dinosauria, 1st edition*, pp. 345-401. University of California Press, Berkeley.
+- `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, 2nd edition*, pp. 259-322. University of California Press, Berkeley.

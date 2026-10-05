@@ -19,4 +19,4 @@
 
 - `harrison1973a`: Harrison, C. J. O.; Walker, C. A. (1973). Wyleyia: a new bird humerus from the Lower Cretaceous of England. *Palaeontology* 16(4): 721-728.
 - `naish2007a`: Naish, D.; Martill, D. M. (2007). Dinosaurs of Great Britain and the role of the Geological Society of London in their discovery: basal Dinosauria and Saurischia. *Journal of the Geological Society* 164(3): 493-510. doi:10.1144/0016-76492006-032
-- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, 2nd edition*, pp. 517-606. University of California Press. doi:10.1525/california/9780520242098.003.0027
+- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, 2nd edition*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027
