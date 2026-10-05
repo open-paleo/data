@@ -20,4 +20,4 @@
 
 - `thulborn1973a`: Thulborn, R. A. (1973). Teeth of ornithischian dinosaurs from the Upper Jurassic of Portugal, with description of a hypsilophodontid (Phyllodon henkeli gen. et sp. nov.) from the Guimarota lignite. *Memórias dos Serviços Geológicos de Portugal* 22: 89-134.
 - `bonaparte1999a`: Bonaparte, J. F.; Mateus, O. (1999). A new diplodocid, Dinheirosaurus lourinhanensis gen. et sp. nov., from the Late Jurassic beds of Portugal. *Revista del Museo Argentino de Ciencias Naturales "Bernardino Rivadavia" e Instituto Nacional de Investigación de las Ciencias Naturales, Paleontología* 5(2): 13-29.
-- `mateus2009b`: Mateus, O.; Milàn, J. (2009). A diverse Upper Jurassic dinosaur ichnofauna from central-west Portugal. *Lethaia* 43: 245-257.
+- `mateus2009b`: Mateus, O.; Milàn, J. (2009). A diverse Upper Jurassic dinosaur ichnofauna from central-west Portugal. *Lethaia* 43: 245-257. doi:10.1111/j.1502-3931.2009.00190.x

@@ -195,7 +195,7 @@ in lowercase, then the year, then a letter: `osborn1905a`, `royo-torres2020a`.
 
 **Lowercasing the surname and removing its spaces are the only changes it
 gets.** Every other character the author writes belongs in the key: diacritics
-(`maryańska1975a`, `prieto-márquez2023a`), special letters such as `ł`, `ø`
+(`maryańska1975a`, `prieto-márquez2022b`), special letters such as `ł`, `ø`
 and `æ` (`słowiak2020a`), hyphens (`pereda-suberbiola2009a`) and apostrophes
 (`d'emic2012b`, `o'connor2005a`). A multi-word surname has its spaces removed
 but keeps any hyphen it already carries (`geoffroysaint-hilaire1825a`,
