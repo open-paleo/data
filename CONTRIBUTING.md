@@ -211,13 +211,15 @@ The `{letter}` directory is the key's first character folded to plain ASCII,
 so `ősi2010a` files under `o/` and `słowiak2020a` under `s/`.
 
 Letters are handed out in the order entries were added, so `a` is not
-necessarily that author's first paper of the year. The `year` field inside the
-file has to match the year in the key.
+necessarily that author's first paper of the year.
 
 For the year itself:
 
-> **Use the year the work was published — when it first became available to
-> read. Online release counts.**
+> **Key by the year the work first became available to read, online release
+> included. The `year` field inside the file is always that same year.**
+
+There is no separate print year or citation year: an entry carries one year,
+and the key and the `year` field never differ.
 
 Old papers often print the date they were read to a society, modern ones the
 date they were accepted, and issue labels are unreliable in both directions.
@@ -232,15 +234,18 @@ so its key is `rauhut2000a`. Broom read a paper to the society in 1909 and it
 asks to be cited as 1910, but it appeared in a collected volume that cannot
 have been issued before 1912, so its key is `broom1912a`.
 
-Publishers and the wider literature often disagree about a year. **When they
-do, follow what other papers print** — a key is only useful if a reader can
-match a citation in our prose to an entry in our references. To check, count
-how secondary literature cites the work in its reference lists, where author,
-year and title sit together; passing mentions in running text pick up
+Publishers and the wider literature often disagree about a year. A
+publisher's label does not settle it, and neither does a count of citations:
+**the year is still the year the work first became available.** How the
+secondary literature cites a work is evidence of that, often the best there
+is, because a volume dated one year and issued the next is cited under the
+year it actually appeared. Count the citations in reference lists, where
+author, year and title sit together; passing mentions in running text pick up
 neighboring citations and will mislead you. Norman's *Hypselospinus* monograph
-carries a 2014 volume date, for instance, but later papers overwhelmingly cite
-it as 2015, so its key is `norman2015a`. Where no year clearly dominates,
-leave the key alone and correct the prose that disagrees with it instead.
+carries a 2014 volume date, but later papers overwhelmingly cite it as 2015,
+which is read as the year the volume was issued, so its key is `norman2015a`.
+Where the evidence does not settle when a work first appeared, leave the key
+alone and correct the prose that disagrees with it instead.
 
 If you do rename a key, **rewrite every sentence that cites it in the same
 commit.** The old key is gone, not aliased. Grep `genera/` and `clades/` for
