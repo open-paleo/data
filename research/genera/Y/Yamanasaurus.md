@@ -16,6 +16,21 @@
 
 **Open.** The stage. The describing paper gives three: "Campanian-Maastrichtian" (p. 3), "late Campanian to early Maastrichtian" (p. 4) and "late Maastrichtian" (p. 6). Santucci and Filippi (2022) relay "late Maastrichtian" (santucci2022a, p. 369); Jones (2026) gives Campanian/Maastrichtian in a table (jones2026b, p. 386). Neither repeats 66.9 Ma. Hungerbühler and colleagues (2001), the source of the date, have not been read.
 
+## Is YM-INPC-016 a humerus or an ulna, and is YM-INPC-017 a tibia?
+
+*2026-09-09*
+
+**Conclusion.** A left humerus and a probable tibia, as the Holotype paragraph gives them. Governs `type_specimen.material` on [*Yamanasaurus lojaensis*](../../../genera/Y/Yamanasaurus.yml).
+
+**Evidence.**
+- apesteguía2020a, pre-proof, p. 6, Holotype: "the proximal half of a left humerus", and "a very eroded fragment possibly the proximal part of a tibia (YM- INPC-017)".
+- apesteguía2020a, pre-proof, p. 12: "5.1.3. Humerus (YM-016, Fig. 4A-G)", "The material includes the eroded proximal half of a left humerus"; p. 13: "5.1.5. Tibia (YM-017, Fig. 4N-S)"; p. 25, Fig. 4: "Left humerus in anterior (A)".
+
+**Ruled out.**
+- *An ulna for YM-INPC-016, and "a tibia or an ulna" for YM-INPC-017.* Both appear only in the Material section: "the proximal half of a left ulna (YM- INPC-016)" and "a very eroded fragment possibly part of a tibia or an ulna (YM- INPC-017)" (p. 7). The Holotype paragraph, the description and the figure caption name a humerus and a tibia.
+
+**Open.** Which reading the authors intended; the paper does not reconcile the two. A correction to the paper, or a later study of the INPC elements, would settle it.
+
 ## References
 
 - `apesteguía2020a`: Apesteguía, S.; Soto Luzuriaga, J. E.; Gallina, P. A.; Granda, J. T.; Guamán Jaramillo, G. A. (2020). The first dinosaur remains from the Cretaceous of Ecuador. *Cretaceous Research* 108. doi:10.1016/j.cretres.2019.104345
