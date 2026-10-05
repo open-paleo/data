@@ -19,7 +19,7 @@
 
 ## References
 
-- `motta2016a`: Motta, M. J.; Aranciaga Rolando, A. M.; Rozadilla, S.; Agnolín, F. L.; Chimento, N. R.; Brissón Egli, F.; Novas, F. E. (2016). New theropod fauna from the Upper Cretaceous (Huincul Formation) of northwestern Patagonia, Argentina. *Cretaceous Period: Biotic Diversity and Biogeography. New Mexico Museum of Natural History and Science Bulletin* 71: 231-253.
+- `motta2016a`: Motta, M. J.; Aranciaga Rolando, A. M.; Rozadilla, S.; Agnolín, F. L.; Chimento, N. R.; Brissón Egli, F.; Novas, F. E. (2016). New theropod fauna from the Upper Cretaceous (Huincul Formation) of northwestern Patagonia, Argentina. In *Cretaceous Period: Biotic Diversity and Biogeography*, pp. 231-253. New Mexico Museum of Natural History and Science.
 - `cerroni2020a`: Cerroni, M. A.; Motta, M. J.; Agnolín, F. L.; Aranciaga Rolando, A. M.; Brissón Egli, F.; Novas, F. E. (2020). A new abelisaurid from the Huincul Formation (Cenomanian-Turonian; Upper Cretaceous) of Río Negro province, Argentina. *Journal of South American Earth Sciences* 98. doi:10.1016/j.jsames.2019.102445
 - `agnolín2023a`: Agnolín, F. L.; González Riga, B. J.; Aranciaga Rolando, A. M.; Rozadilla, S.; Motta, M. J.; Chimento, N. R.; Novas, F. E. (2023). A new giant titanosaur (Dinosauria, Sauropoda) from the Upper Cretaceous of Northwestern Patagonia, Argentina. *Cretaceous Research* 146. doi:10.1016/j.cretres.2023.105487
 - `nogueira2024a`: Nogueira, R. A.; Rozadilla, S.; Agnolín, F. L.; García Marsà, J. A.; Motta, M. J.; Novas, F. E. (2024). A new ornithopod from the Upper Cretaceous (Huincul Formation) of northwestern Patagonia, Argentina: Implications on elasmarian postcranial anatomy. *Cretaceous Research* 159. doi:10.1016/j.cretres.2024.105874

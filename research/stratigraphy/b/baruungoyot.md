@@ -18,7 +18,7 @@
 
 ## References
 
-- `benton2000c`: Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N. (2000). Mongolian place names and stratigraphic terms. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds)*, pp. xxii-xxviii. Cambridge University Press, Cambridge.
+- `benton2000c`: Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N. (2000). Mongolian place names and stratigraphic terms. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds.)*, pp. xxii-xxviii. Cambridge University Press, Cambridge.
 - `czepiński2019a`: Czepiński, Ł. (2019). Ontogeny and variation of a protoceratopsid dinosaur Bagaceratops rozhdestvenskyi from the Late Cretaceous of the Gobi Desert. *Historical Biology* 32: 1394-1421. doi:10.1080/08912963.2019.1593404
 - `gradziński1974a`: Gradziński, R.; Jerzykiewicz, T. (1974). Sedimentation of the Barun Goyot Formation. *Palaeontologia Polonica* 30: 111-146.
 - `maryańska1975a`: Maryańska, T.; Osmólska, H. (1975). Protoceratopsidae (Dinosauria) of Asia. *Palaeontologia Polonica* 33: 133-182.

@@ -22,5 +22,5 @@
 - `zhang2002a`: Zhang, F.; Zhou, Z.; Xu, X.; Wang, X. (2002). A juvenile coelurosaurian theropod from China indicates arboreal habits. *Naturwissenschaften* 89(9): 394-398. doi:10.1007/s00114-002-0353-8
 - `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
 - `xu2016b`: Xu, X.; Zhou, Z.; Sullivan, C.; Wang, Y.; Ren, D. (2016). An updated review of the Middle-Late Jurassic Yanliao Biota: chronology, taphonomy, paleontology and paleoecology. *Acta Geologica Sinica (English Edition)* 90(6): 2229-2243. doi:10.1111/1755-6724.13033
-- `czerkas2002a`: Czerkas, S. A.; Yuan, C. (2002). An arboreal maniraptoran from northeastern China. *Feathered Dinosaurs and the Origin of Flight. The Dinosaur Museum Journal 1. The Dinosaur Museum, Blanding, UT*: 63-95.
+- `czerkas2002a`: Czerkas, S. A.; Yuan, C. (2002). An arboreal maniraptoran from northeastern China. In *Feathered Dinosaurs and the Origin of Flight*, pp. 63-95. The Dinosaur Museum, Blanding, UT.
 - `molina-pérez2019a`: Molina-Pérez, R.; Larramendi, A. (2019). Dinosaur Facts and Figures: The Theropods and Other Dinosauriformes. Princeton University Press.

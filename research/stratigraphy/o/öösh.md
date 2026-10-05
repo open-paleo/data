@@ -35,9 +35,9 @@
 ## References
 
 - `osborn1923b`: Osborn, H. F. (1923). Two Lower Cretaceous dinosaurs of Mongolia. *American Museum Novitates* 95: 1-10.
-- `berkey1927a`: Berkey, C. P.; Morris, F. K. (1927). Geology of Mongolia. In *Natural History of Central Asia (New York: American Museum of Natural History)*, pp. i–xxxi, 1–475.
+- `berkey1927a`: Berkey, C. P.; Morris, F. K. (1927). Geology of Mongolia. American Museum of Natural History, New York.
 - `andres2005a`: Andres, B.; Norell, M. A. (2005). The first record of a pterosaur from the Early Cretaceous strata of Öösh (Övörkhangai; Mongolia). *American Museum Novitates* 3472: 1-6.
-- `benton2000c`: Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N. (2000). Mongolian place names and stratigraphic terms. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds)*, pp. xxii-xxviii. Cambridge University Press, Cambridge.
+- `benton2000c`: Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N. (2000). Mongolian place names and stratigraphic terms. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds.)*, pp. xxii-xxviii. Cambridge University Press, Cambridge.
 - `napoli2019a`: Napoli, J. G.; Hunt, T.; Erickson, G. M.; Norell, M. A. (2019). Psittacosaurus amitabha, a new species of ceratopsian dinosaur from the Ondai Sayr Locality, Central Mongolia. *American Museum Novitates* 3932: 1-36. doi:10.1206/3932.1
 - `sereno2010a`: Sereno, P. C. (2010). Taxonomy, cranial morphology, and relationships of parrot-beaked dinosaurs (Ceratopsia: Psittacosaurus). In *New Perspectives on Horned Dinosaurs: The Royal Tyrrell Museum Ceratopsian Symposium (Ryan, M. J.; Chinnery-Allgeier, B. J.; Eberth, D. A., eds.)*, pp. 21-58. Indiana University Press, Bloomington.
 - `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, 2nd edition*, pp. 517-606. University of California Press. doi:10.1525/california/9780520242098.003.0027

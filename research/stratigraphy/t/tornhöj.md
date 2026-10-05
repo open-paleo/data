@@ -19,4 +19,4 @@
 ## References
 
 - `christiansen2003a`: Christiansen, P.; Bonde, N. (2003). The first dinosaur from Denmark. *Neues Jahrbuch für Geologie und Paläontologie - Abhandlungen* 227(2): 287-299. doi:10.1127/njgpa/227/2003/287
-- `bonde2012a`: Bonde, N. (2012). Danish Dinosaurs: A Review. In *Bernissart Dinosaurs*, pp. 435-449. Indiana University Press.
+- `bonde2012a`: Bonde, N. (2012). Danish Dinosaurs: A Review. In *Bernissart Dinosaurs and Early Cretaceous Terrestrial Ecosystems (Godefroit, P., ed.)*, pp. 435-449. Indiana University Press, Bloomington.

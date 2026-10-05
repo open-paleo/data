@@ -37,9 +37,9 @@
 ## References
 
 - `granger1923a`: Granger, W.; Gregory, W. K. (1923). Protoceratops andrewsi, a pre-ceratopsian dinosaur from Mongolia. *American Museum Novitates* 72: 1-9.
-- `berkey1927a`: Berkey, C. P.; Morris, F. K. (1927). Geology of Mongolia. In *Natural History of Central Asia (New York: American Museum of Natural History)*, pp. i–xxxi, 1–475.
+- `berkey1927a`: Berkey, C. P.; Morris, F. K. (1927). Geology of Mongolia. American Museum of Natural History, New York.
 - `gradziński1977a`: Gradziński, R.; Kielan-Jaworowska, Z.; Maryańska, T. (1977). Upper Cretaceous Djadokhta, Barun Goyot and Nemegt formations of Mongolia, including remarks on previous subdivisions. *Acta Geologica Polonica* 27(3): 281-318.
-- `benton2000c`: Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N. (2000). Mongolian place names and stratigraphic terms. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds)*, pp. xxii-xxviii. Cambridge University Press, Cambridge.
+- `benton2000c`: Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N. (2000). Mongolian place names and stratigraphic terms. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds.)*, pp. xxii-xxviii. Cambridge University Press, Cambridge.
 - `khand2000a`: Khand, Y.; Badamgarav, D.; Ariunchimeg, Y.; Barsbold, R. (2000). Cretaceous System in Mongolia and its depositional environments. In *Cretaceous Environments of Asia (Okada, H.; Mateer, N. J., eds). Developments in Palaeontology and Stratigraphy 17*, pp. 49-79. Elsevier, Amsterdam.
 - `dashzeveg2005a`: Dashzeveg, D.; Dingus, L.; Loope, D. B.; Swisher, C. C., III; Dulam, T.; Sweeney, M. R. (2005). New stratigraphic subdivision, depositional environment, and age estimate for the Upper Cretaceous Djadokhta Formation, southern Ulan Nur Basin, Mongolia. *American Museum Novitates* 3498: 1-31. doi:10.1206/0003-0082(2005)498[0001:NSSDEA]2.0.CO;2
 - `gale2020a`: Gale, A. S.; Mutterlose, J.; Batenburg, S.; Gradstein, F. M.; Agterberg, F. P.; Ogg, J. G.; Petrizzo, M. R. (2020). The Cretaceous Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 1023-1086. Elsevier. doi:10.1016/B978-0-12-824360-2.00027-9

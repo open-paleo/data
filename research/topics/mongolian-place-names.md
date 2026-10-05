@@ -24,7 +24,7 @@
 
 ## References
 
-- `benton2000c`: Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N. (2000). Mongolian place names and stratigraphic terms. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds)*, pp. xxii-xxviii. Cambridge University Press, Cambridge.
+- `benton2000c`: Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N. (2000). Mongolian place names and stratigraphic terms. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds.)*, pp. xxii-xxviii. Cambridge University Press, Cambridge.
 - `gradziński1969a`: Gradziński, R.; Kaźmierczak, J.; Lefeld, J. (1969). Geographical and geological data from the Polish-Mongolian Palaeontological Expeditions. *Palaeontologia Polonica* 19: 33-82.
 - `son2022a`: Son, M.; Lee, Y. M.; Zorigt, B.; Kobayashi, Y.; Park, J. Y.; Lee, S.; Kim, S. H.; Lee, K. Y. (2022). A new juvenile Yamaceratops (Dinosauria, Ceratopsia) from the Javkhlant Formation (Upper Cretaceous) of Mongolia. *PeerJ* 10: e13176. doi:10.7717/peerj.13176
 - `makovicky2006a`: Makovicky, P. J.; Norell, M. A. (2006). Yamaceratops Dorngobiensis, a New Primitive Ceratopsian (Dinosauria: Ornithischia) from the Cretaceous of Mongolia. *American Museum Novitates* 3530(1). doi:10.1206/0003-0082(2006)3530[1:ydanpc]2.0.co;2

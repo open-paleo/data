@@ -19,6 +19,6 @@
 
 ## References
 
-- `pol2022a`: Pol, D.; Gomez, K.; Holwerda, F. M.; Rauhut, O. W. M.; Carballido, J. L. (2022). Sauropods from the Early Jurassic of South America and the Radiation of Eusauropoda. *South American Sauropodomorph Dinosaurs (Springer Earth System Sciences)*: 131-163. doi:10.1007/978-3-030-95959-3_4
+- `pol2022a`: Pol, D.; Gomez, K.; Holwerda, F. M.; Rauhut, O. W. M.; Carballido, J. L. (2022). Sauropods from the Early Jurassic of South America and the Radiation of Eusauropoda. In *South American Sauropodomorph Dinosaurs: Record, Diversity and Evolution*, pp. 131-163. Springer International Publishing. doi:10.1007/978-3-030-95959-3_4
 - `cúneo2013a`: Cúneo, R.; Ramezani, J.; Scasso, R.; Pol, D.; Escapa, I.; Zavattieri, A. M.; Bowring, S. A. (2013). High-precision U-Pb geochronology and a new chronostratigraphy for the Cañadón Asfalto Basin, Chubut, central Patagonia: implications for terrestrial faunal and floral evolution in Jurassic. *Gondwana Research* 24(3-4): 1267-1275. doi:10.1016/j.gr.2013.01.010
 - `rauhut2005b`: Rauhut, O. W. M. (2005). Osteology and relationships of a new theropod dinosaur from the Middle Jurassic of Patagonia. *Palaeontology* 48(1): 87-110. doi:10.1111/j.1475-4983.2004.00436.x

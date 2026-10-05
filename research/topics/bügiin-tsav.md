@@ -17,7 +17,7 @@
 ## References
 
 - `barsbold2000a`: Barsbold, R.; Osmólska, H.; Watabe, M.; Currie, P. J.; Tsogtbaatar, K. (2000). A new oviraptorosaur (Dinosauria, Theropoda) from Mongolia: the first dinosaur with a pygostyle. *Acta Palaeontologica Polonica* 45(2): 97-106.
-- `benton2000c`: Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N. (2000). Mongolian place names and stratigraphic terms. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds)*, pp. xxii-xxviii. Cambridge University Press, Cambridge.
+- `benton2000c`: Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N. (2000). Mongolian place names and stratigraphic terms. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds.)*, pp. xxii-xxviii. Cambridge University Press, Cambridge.
 - `norell2009a`: Norell, M. A.; Makovicky, P. J.; Bever, G. S.; Balanoff, A. M.; Clark, J. M.; Barsbold, R.; Rowe, T. (2009). A Review of the Mongolian Cretaceous Dinosaur Saurornithoides (Troodontidae: Theropoda). *American Museum Novitates* 3654: 1-63. doi:10.1206/648.1
 - `lee2018a`: Lee, H. J.; Lee, Y. N.; Adams, T. L.; Currie, P. J.; Kobayashi, Y.; Jacobs, L. L.; Koppelhus, E. B. (2018). Theropod trackways associated with a Gallimimus foot skeleton from the Nemegt Formation, Mongolia. *Palaeogeography, Palaeoclimatology, Palaeoecology* 494: 160-167. doi:10.1016/j.palaeo.2017.10.020
 - `pittman2020a`: Pittman, M.; Xu, X. (2020). Pennaraptoran theropod dinosaurs. Past progress and new frontiers. *Bulletin of the American Museum of Natural History* 440(1): 1-355. doi:10.1206/0003-0090.440.1.1

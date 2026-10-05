@@ -19,5 +19,5 @@
 ## References
 
 - `chinzorig2025a`: Chinzorig, T.; Takasaki, R.; Yoshida, J.; Tucker, R. T.; Buyantegsh, B.; Mainbayar, B.; Tsogtbaatar, K.; Zanno, L. E. (2025). A domed pachycephalosaur from the early Cretaceous of Mongolia. *Nature* 646(8087): 1138-1145. doi:10.1038/s41586-025-09213-6
-- `benton2000c`: Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N. (2000). Mongolian place names and stratigraphic terms. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds)*, pp. xxii-xxviii. Cambridge University Press, Cambridge.
+- `benton2000c`: Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N. (2000). Mongolian place names and stratigraphic terms. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds.)*, pp. xxii-xxviii. Cambridge University Press, Cambridge.
 - `gates2018a`: Gates, T. A.; Tsogtbaatar, K.; Zanno, L. E.; Chinzorig, T.; Watabe, M. (2018). A new iguanodontian (Dinosauria: Ornithopoda) from the Early Cretaceous of Mongolia. *PeerJ* 6: e5300. doi:10.7717/peerj.5300

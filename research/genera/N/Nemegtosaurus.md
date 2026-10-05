@@ -22,4 +22,4 @@ Currie, Wilson, Fanti, Mainbayar and Tsogtbaatar (2018), "Rediscovery of the typ
 
 - `nowinski1971a`: Nowinski, A. (1971). Nemegtosaurus mongoliensis n. gen., n. sp. (Sauropoda) from the uppermost Cretaceous of Mongolia. *Palaeontologia Polonica* 25: 57-81.
 - `gradziński1969a`: Gradziński, R.; Kaźmierczak, J.; Lefeld, J. (1969). Geographical and geological data from the Polish-Mongolian Palaeontological Expeditions. *Palaeontologia Polonica* 19: 33-82.
-- `carballido2022a`: Carballido, J. L.; Otero, A.; Mannion, P. D.; Salgado, L.; Pérez Moreno, A. P. (2022). Titanosauria: a critical reappraisal of its systematics and the relevance of the South American record. In *South American Sauropodomorph Dinosaurs*, pp. 269-298. Springer. doi:10.1007/978-3-030-95959-3_8
+- `carballido2022a`: Carballido, J. L.; Otero, A.; Mannion, P. D.; Salgado, L.; Pérez Moreno, A. P. (2022). Titanosauria: a critical reappraisal of its systematics and the relevance of the South American record. In *South American Sauropodomorph Dinosaurs: Record, Diversity and Evolution*, pp. 269-298. Springer International Publishing. doi:10.1007/978-3-030-95959-3_8
