@@ -18,5 +18,5 @@
 
 ## References
 
-- `brusatte2008a`: Brusatte, S. L.; Benson, R. B. J.; Hutt, S. (2008). The osteology of Neovenator salerii (Dinosauria: Theropoda) from the Wealden Group (Barremian) of the Isle of Wight. *Monograph of the Palaeontographical Society* 162(631): 1-166. doi:10.1080/25761900.2008.12452864
+- `brusatte2008a`: Brusatte, S. L.; Benson, R. B. J.; Hutt, S. (2008). The osteology of Neovenator salerii (Dinosauria: Theropoda) from the Wealden Group (Barremian) of the Isle of Wight. *Monographs of the Palaeontographical Society* 162(631): 1-166. doi:10.1080/25761900.2008.12452864
 - `hutt1996a`: Hutt, S.; Martill, D. M.; Barker, M. J. (1996). The first European allosaurid dinosaur (Lower Cretaceous, Wealden Group, England). *Neues Jahrbuch für Geologie und Paläontologie - Monatshefte* 1996(10): 635-644. doi:10.1127/njgpm/1996/1996/635

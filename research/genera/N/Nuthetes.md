@@ -20,4 +20,4 @@
 ## References
 
 - `owen1854b`: Owen, R. (1854). On some Fossil Reptilian and Mammalian Remains from the Purbecks. *Quarterly Journal of the Geological Society* 10(1-2): 420-433. doi:10.1144/GSL.JGS.1854.010.01-02.48
-- `owen1861a`: Owen, R. (1861). Monograph on the fossil Reptilia of the Wealden and Purbeck formations. Part V. Lacertilia (Nuthetes, etc.). [Purbeck]. *The Palaeontological Society, London* 1858: 31-39.
+- `owen1861a`: Owen, R. (1861). Monograph on the fossil Reptilia of the Wealden and Purbeck formations. Part V. Lacertilia (Nuthetes, etc.). [Purbeck]. *Monographs of the Palaeontographical Society* 1858: 31-39.

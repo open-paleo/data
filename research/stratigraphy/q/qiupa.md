@@ -20,7 +20,7 @@
 
 ## References
 
-- `dong1979a`: Dong, Z. (1979). Cretaceous dinosaurs of Hunan, China. *Mesozoic and Cenozoic Red Beds of South China: Selected Papers from the "Cretaceous-Tertiary Workshop", Institute of Vertebrate Paleontology and Paleoanthropology & Nanjing Institute of Paleontology (eds.), Science Press, Nanxiong, China*: 342-350.
+- `dong1979a`: Dong, Z. (1979). Dinosaurs from the Cretaceous of South China. In *Mesozoic and Cenozoic Red Beds of South China: Selected Papers from the "Cretaceous-Tertiary Workshop," Nanxiong, Guangdong Province (Institute of Vertebrate Paleontology and Paleoanthropology; Nanjing Institute of Paleontology, eds.)*, pp. 342-350. Science Press, Beijing.
 - `xu2011b`: Xu, L.; Kobayashi, Y.; Lü, J.; Lee, Y. N.; Liu, Y.; Tanaka, K.; Zhang, X.; Jia, S.; Zhang, J. (2011). A new ornithomimid dinosaur with North American affinities from the Late Cretaceous Qiupa Formation in Henan Province of China. *Cretaceous Research* 32(2): 213-222. doi:10.1016/j.cretres.2010.12.004
 - `lü2015b`: Lü, J.; Pu, H.; Kobayashi, Y.; Xu, L.; Chang, H.; Shang, Y.; Liu, D.; Lee, Y. N.; Kundrát, M.; Shen, C. (2015). A New Oviraptorid Dinosaur (Dinosauria: Oviraptorosauria) from the Late Cretaceous of Southern China and Its Paleobiogeographical Implications. *Scientific Reports* 5(1). doi:10.1038/srep11490
 - `lü2018a`: Lü, J.; Xu, L.; Chang, H.; Jia, S.; Zhang, J.; Gao, D.; Zhang, Y.; Zhang, C.; Ding, F. (2018). A new alvarezsaurid dinosaur from the Late Cretaceous Qiupa Formation of Luanchuan, Henan Province, central China. *China Geology* 1(1): 28-35. doi:10.31035/cg2018005

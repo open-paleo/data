@@ -19,7 +19,7 @@
 
 ## References
 
-- `owen1858a`: Owen, R. (1858). Monograph on the fossil Reptilia of the Wealden and Purbeck Formations. Part IV. Dinosauria (Hylaeosaurus). *The Palaeontological Society Monographs*: 8-26.
+- `owen1858a`: Owen, R. (1858). Monograph on the fossil Reptilia of the Wealden and Purbeck Formations. Part IV. Dinosauria (Hylaeosaurus). *Monographs of the Palaeontographical Society*: 8-26.
 - `olshevsky1991a`: Olshevsky, G. (1991). A revision of the parainfraclass Archosauria Cope, 1869, excluding the advanced Crocodylia. *Mesozoic Meanderings* 2: 1-196.
 - `tucker2022a`: Tucker, R. T.; Hyland, E. G.; Gates, T. A.; King, M. R.; Roberts, E. M.; Foley, E. K.; Berndt, D.; Hanta, R.; Khansubha, S.; Aswasereelert, W.; Zanno, L. E. (2022). Age, depositional history, and paleoclimatic setting of Early Cretaceous dinosaur assemblages from the Sao Khua Formation (Khorat Group), Thailand. *Palaeogeography, Palaeoclimatology, Palaeoecology* 601: 111107. doi:10.1016/j.palaeo.2022.111107
 - `allain2014a`: Allain, R.; Vullo, R.; Le Loeuff, J.; Tournepiche, J. F. (2014). European ornithomimosaurs (Dinosauria, Theropoda): an undetected record. *Geologica Acta* 12(2): 127-135. doi:10.1344/105.000002083
