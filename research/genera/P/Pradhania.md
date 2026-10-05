@@ -16,6 +16,20 @@
 
 **Open.** Whether the Hettangian applies. Bandyopadhyay and colleagues (2010) give *Lamplughsaura*, from the same horizon, "the upper part of the early Early Jurassic (Hettangian) Dharmaram Formation" (bandyopadhyay2010a, p. 534) and do not name *Pradhania*; extending it to *Pradhania* is an inference. Later papers that give Sinemurian (knoll2010a, p. 826; rincón2022a, p. 13; novas2010a, p. 342, which Kutty co-authored) repeat Kutty and colleagues and are not independent.
 
+## Which of Kutty and colleagues' Krishnapur positions belongs to the Pradhania holotype?
+
+*2026-09-02*
+
+**Conclusion.** "Northwest of Krishnapur village (79°30′, 19°15′)", the line printed for ISI R265. Converted, it gives 19.25, 79.5, to the whole arcminute. Governs `location.locality: Northwest of Krishnapur village` and `location.coordinates` on [*Pradhania gracilis*](../../../genera/P/Pradhania.yml).
+
+**Evidence.**
+- kutty2007a, p. 1232: "ISI R265 … Upper Dharmaram Formation, Lower Jurassic. Northwest of Krishnapur village (79°30′, 19°15′), Adilabad District, Andhra Pradesh, India."
+
+**Ruled out.**
+- *"North of Krishnapur village (79°32′, 19°15′)".* The same paper prints it for the *Lamplughsaura dharmaramensis* holotype, ISI R257 (kutty2007a, p. 1220), a different specimen and genus from the same beds.
+
+**Open.** Nothing.
+
 ## References
 
 - `kutty2007a`: Kutty, T. S.; Chatterjee, S.; Galton, P. M.; Upchurch, P. (2007). Basal sauropodomorphs (Dinosauria: Saurischia) from the Lower Jurassic of India: their anatomy and relationships. *Journal of Paleontology* 81(6): 1218-1240. doi:10.1666/04-074.1
