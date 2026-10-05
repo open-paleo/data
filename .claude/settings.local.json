@@ -20,7 +20,21 @@
       "Skill(batch-import)",
       "WebFetch(domain:en.wikipedia.org)",
       "WebFetch(domain:paleobiodb.org)",
-      "WebFetch(domain:www.wikidata.org)"
+      "WebFetch(domain:www.wikidata.org)",
+      "Bash(npm run research -- genera/*)",
+      "Bash(npm run research -- clades/*)",
+      "Bash(npm run research -- stratigraphy/*)",
+      "Bash(npm run research -- references/*)",
+      "Bash(npm run -s research -- genera/*)",
+      "Bash(npm run -s research -- clades/*)",
+      "Bash(npm run -s research -- stratigraphy/*)",
+      "Bash(npm run -s research -- references/*)"
+    ]
+  },
+  "autoMode": {
+    "allow": [
+      "$defaults",
+      "In the open-paleo data repository, `npm run research -- <record path>` (with or without `-s`, and when preceded by `cd` into the repository) is a read-only lookup that prints research notes; it modifies nothing. Only its `--references` form writes files, and that form is used on files in a private /private/tmp drafts directory or on research notes under review."
     ]
   }
 }
