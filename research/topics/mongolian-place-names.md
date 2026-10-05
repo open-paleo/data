@@ -22,6 +22,21 @@
 
 **Open.** Whether Ulaan Sair and Üüden Sair are one site: Benton equates them, but Gradziński and colleagues gloss "Ulan Sayr" as Улаан Сайр (gradziński1969a, p. 82), a different word ("red") from *üüden*.
 
+## Which form does the *Gobivenator* locality take?
+
+*2026-08-24*
+
+**Conclusion.** Zamyn Khond, Benton's (2000) form. The describing paper prints "Dzamin Khond", which Benton's list does not contain; it gives "Dzamyn Khond" as a cross-reference to Zamyn Khond. Governs `location.locality: Zamyn Khond` on [*Gobivenator mongoliensis*](../../genera/G/Gobivenator.yml).
+
+**Evidence.**
+- benton2000c, p. xxiv: "Dzamyn Khond (= Zamyn Khond)"; p. xxviii: "Zamyn Khond [locality]".
+- tsuihiji2014a, Type locality and age: "Dzamin Khond, Ömnögovi Aimag, Mongolia"; "This locality previously produced the specimen MPC-D 100/42, referred to Oviraptor".
+
+**Ruled out.**
+- *Dzamin Khond.* The describing paper's transcription. That it is a variant of Benton's Dzamyn Khond, differing by one vowel, is our reading; Benton does not list it.
+
+**Open.** Nothing.
+
 ## References
 
 - `benton2000c`: Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N. (2000). Mongolian place names and stratigraphic terms. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds.)*, pp. xxii-xxviii. Cambridge University Press, Cambridge.
@@ -29,3 +44,4 @@
 - `son2022a`: Son, M.; Lee, Y. M.; Zorigt, B.; Kobayashi, Y.; Park, J. Y.; Lee, S.; Kim, S. H.; Lee, K. Y. (2022). A new juvenile Yamaceratops (Dinosauria, Ceratopsia) from the Javkhlant Formation (Upper Cretaceous) of Mongolia. *PeerJ* 10: e13176. doi:10.7717/peerj.13176
 - `makovicky2006a`: Makovicky, P. J.; Norell, M. A. (2006). Yamaceratops Dorngobiensis, a New Primitive Ceratopsian (Dinosauria: Ornithischia) from the Cretaceous of Mongolia. *American Museum Novitates* 3530(1). doi:10.1206/0003-0082(2006)3530[1:ydanpc]2.0.co;2
 - `eberth2009a`: Eberth, D. A.; Kobayashi, Y.; Lee, Y. N.; Mateus, O.; Therrien, F.; Zelenitsky, D. K.; Norell, M. A. (2009). Assignment of Yamaceratops dorngobiensis and associated redbeds at Shine Us Khudag (eastern Gobi, Dorngobi Province, Mongolia) to the redescribed Javkhlant Formation (Upper Cretaceous). *Journal of Vertebrate Paleontology* 29(1): 295-302.
+- `tsuihiji2014a`: Tsuihiji, T.; Barsbold, R.; Watabe, M.; Tsogtbaatar, K.; Chinzorig, T.; Fujiyama, Y.; Suzuki, S. (2014). An exquisitely preserved troodontid theropod with new information on the palatal structure from the Upper Cretaceous of Mongolia. *Naturwissenschaften* 101(2): 131-142. doi:10.1007/s00114-014-1143-9
