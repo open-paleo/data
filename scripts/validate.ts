@@ -13,13 +13,16 @@ import {
     buildFlaggedSet,
     buildResearchTail,
     buildVerifiedSet,
+    citationMatchesId,
     findMarkdownFiles,
     findYamlFiles,
     loadFlaggedSignoffs,
     loadFlaggedSources,
     markdownLinkTargets,
+    narrativeCitations,
     recordFileFor,
     referenceBucket,
+    referenceIdentity,
     referenceNotesLimit,
     researchMethodsFile,
     researchTopicDirectory,
@@ -1513,6 +1516,53 @@ for (const [filePath, entry] of referenceStoreParsed)
             filePath,
             `reference '${entry.id}': has both book and journal ('${entry.journal}'); a chapter's series goes in series, with its number in volume`,
         );
+    }
+}
+
+// 12f. Duplicate references — one work, one entry. Two entries with the same
+// DOI are one work. So are two with the same title and the same volume and
+// pages, whatever year or venue spelling each carries: the duplicates minted
+// so far were the same paper keyed under its volume date and its issue date,
+// with the journal written two ways.
+startCheck("Duplicate references");
+
+const referencesByDoi = new Map<string, string>();
+const referencesByIdentity = new Map<string, string>();
+
+for (const [filePath, entry] of referenceStoreParsed)
+{
+    if (!entry || !entry.id)
+    {
+        continue;
+    }
+
+    const doi = entry.doi ? String(entry.doi).trim().toLowerCase() : null;
+    const identity = referenceIdentity(entry);
+
+    if (doi !== null && referencesByDoi.has(doi))
+    {
+        checkError(
+            "Duplicate references",
+            filePath,
+            `reference '${entry.id}': DOI ${doi} is already the DOI of '${referencesByDoi.get(doi)}'; one work takes one entry`,
+        );
+    }
+    else if (doi !== null)
+    {
+        referencesByDoi.set(doi, entry.id);
+    }
+
+    if (identity !== null && referencesByIdentity.has(identity))
+    {
+        checkError(
+            "Duplicate references",
+            filePath,
+            `reference '${entry.id}': same title, volume and pages as '${referencesByIdentity.get(identity)}'; one work takes one entry, keyed by the year it first became available`,
+        );
+    }
+    else if (identity !== null)
+    {
+        referencesByIdentity.set(identity, entry.id);
     }
 }
 
@@ -3802,6 +3852,230 @@ for (const [filePath, doc] of genusParsed)
 // localities shipped truncated this way before it was noticed -- Emiliasaura
 // reached dist/ as the single word "Quarry" where the file says
 // "Quarry #1, Paraje Pilmatue". The fix is always to quote the value.
+// Uncited narrative citations — every author and year a record's prose names
+// is in that record's own references, read or not (research/methods.md,
+// "Every work cited is in the record's references"), so a reader who meets
+// "Smith (2000)" can find the work. Prose names people rather than keys, so
+// this is the only check on it. Names inside quotations are not yet checked.
+startCheck("Uncited narrative citations");
+
+/**
+ * Collects the prose strings of a record, skipping reference ids, the history
+ * of edits (which often records a source's removal), and nested beds, which
+ * are checked against their own references.
+ *
+ * @param node - The parsed record or part of it.
+ * @param found - Receives each prose string.
+ */
+function collectProse(node: unknown, found: Array<string>): void
+{
+    if (typeof node === "string")
+    {
+        found.push(node.replace(/\s+/g, " "));
+    }
+    else if (Array.isArray(node))
+    {
+        for (const item of node)
+        {
+            collectProse(item, found);
+        }
+    }
+    else if (node && typeof node === "object")
+    {
+        for (const [key, value] of Object.entries(node))
+        {
+            if (key !== "id" && key !== "history" && key !== "beds")
+            {
+                collectProse(value, found);
+            }
+        }
+    }
+}
+
+/**
+ * Reports each citation in a record's prose that none of its reference ids
+ * can be.
+ *
+ * @param label - How the finding names the record.
+ * @param filePath - The record's file.
+ * @param record - The parsed record.
+ */
+function checkNarrativeCitations(label: string, filePath: string, record: unknown): void
+{
+    const prose = new Array<string>();
+
+    collectProse(record, prose);
+
+    const pointers = (record as { references?: Array<{ id?: string } | string> }).references ?? [];
+    const ids = pointers.map((pointer) => (typeof pointer === "string" ? pointer : pointer?.id ?? "")).filter((id) => id.length > 0);
+    const uncited = new Array<string>();
+
+    for (const citation of narrativeCitations(prose.join(" ")))
+    {
+        const cited = ids.some((id) =>
+        {
+            const storeYear = referenceStoreById.get(id)?.year;
+
+            return citationMatchesId(citation, id, storeYear === undefined ? null : String(storeYear));
+        });
+
+        if (!cited)
+        {
+            uncited.push(`${citation.surname} (${citation.year})`);
+        }
+    }
+
+    if (uncited.length > 0)
+    {
+        checkError(
+            "Uncited narrative citations",
+            filePath,
+            `${label}: names ${uncited.join(", ")} but its references hold no matching entry; add the work's id to references, minting it first if the store lacks it`);
+    }
+}
+
+for (const [filePath, genus] of genusParsed)
+{
+    checkNarrativeCitations(path.basename(filePath, ".yml"), filePath, genus);
+}
+
+for (const [filePath, clade] of cladeParsed)
+{
+    checkNarrativeCitations(path.basename(filePath, ".yml"), filePath, clade);
+}
+
+for (const { label, entry, filePath } of registryEntries)
+{
+    checkNarrativeCitations(label, filePath, entry);
+}
+
+// Unbalanced quotation — a quotation cut short. A quote mark left open, a
+// closing quote inside a word, or a parenthesis opened inside a quotation and
+// never closed there are each the sign of a passage copied to the end of what
+// a search printed rather than to the end of the source's sentence.
+startCheck("Unbalanced quotation");
+
+// "either 1) ... or 2)" and "a) ... b)" enumerate; their closing parenthesis
+// has no opening one.
+const enumeratorParenthesis = /(^|[\s(])(?:\d{1,2}|[a-z])\)/g;
+
+/**
+ * Counts the parentheses in a string that do not pair. Surplus closing
+ * parentheses are forgiven up to the number of enumerators such as "1)",
+ * since "(OBA 1)" closes an ordinary parenthesis while "either 1) ... or 2)"
+ * opens none.
+ *
+ * @param text - The text to check.
+ * @returns The number of opening parentheses minus the number of closing ones,
+ *     after forgiving enumerators.
+ */
+function parenthesisBalance(text: string): number
+{
+    const balance = (text.match(/\(/g) ?? []).length - (text.match(/\)/g) ?? []).length;
+
+    if (balance >= 0)
+    {
+        return balance;
+    }
+
+    const enumerators = (text.match(enumeratorParenthesis) ?? []).length;
+
+    return Math.min(0, balance + enumerators);
+}
+
+/**
+ * Collects every string in a parsed YAML value, with the path of keys and
+ * list ids that leads to it.
+ *
+ * @param node - The parsed value.
+ * @param trail - The path so far.
+ * @param found - Receives each string with its path.
+ */
+function collectStrings(node: unknown, trail: string, found: Array<{ trail: string; text: string }>): void
+{
+    if (typeof node === "string")
+    {
+        found.push({ trail, text: node.replace(/\s+/g, " ") });
+    }
+    else if (Array.isArray(node))
+    {
+        for (const [index, item] of node.entries())
+        {
+            const itemId = item && typeof item === "object" && "id" in item ? String((item as { id: unknown }).id) : String(index);
+
+            collectStrings(item, `${trail}[${itemId}]`, found);
+        }
+    }
+    else if (node && typeof node === "object")
+    {
+        for (const [key, value] of Object.entries(node))
+        {
+            collectStrings(value, trail ? `${trail}.${key}` : key, found);
+        }
+    }
+}
+
+const quotationFiles = [
+    ...genusFiles,
+    ...cladeFiles,
+    ...findYamlFiles(path.join(root, "stratigraphy")),
+    ...referenceStoreFiles,
+];
+
+for (const filePath of quotationFiles)
+{
+    let parsed: unknown;
+
+    try
+    {
+        parsed = parseYamlContent(fs.readFileSync(filePath, "utf8"));
+    }
+    catch
+    {
+        continue;
+    }
+
+    const strings = new Array<{ trail: string; text: string }>();
+
+    collectStrings(parsed, "", strings);
+
+    for (const { trail, text } of strings)
+    {
+        const quoteMarks = (text.match(/"/g) ?? []).length;
+        const midWord = /[A-Za-z]"[A-Za-z]/.exec(text);
+
+        if (quoteMarks % 2 !== 0)
+        {
+            checkError("Unbalanced quotation", filePath, `${trail}: a quotation is opened and never closed`);
+        }
+        else if (midWord !== null)
+        {
+            checkError(
+                "Unbalanced quotation",
+                filePath,
+                `${trail}: a quote mark sits inside a word ('${text.slice(Math.max(0, midWord.index - 30), midWord.index + 10)}'); a quotation was probably cut short`);
+        }
+        else
+        {
+            for (const quotation of text.match(/"[^"]*"/g) ?? [])
+            {
+                if (parenthesisBalance(quotation) !== 0)
+                {
+                    checkError(
+                        "Unbalanced quotation",
+                        filePath,
+                        `${trail}: parentheses do not pair inside the quotation ${quotation.slice(0, 80)}${quotation.length > 80 ? "…" : ""}`);
+                }
+            }
+        }
+
+        if (parenthesisBalance(text) !== 0)
+        {
+            checkError("Unbalanced quotation", filePath, `${trail}: parentheses do not pair`);
+        }
+    }
+}
+
 startCheck("Comment-eaten scalars");
 
 // A plain scalar is one that does not open with a quote or a block indicator.

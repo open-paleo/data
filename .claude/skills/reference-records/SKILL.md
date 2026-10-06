@@ -182,6 +182,29 @@ finds the specimen whichever institution code the paper used, and refuses cores
 under three digits, because `MG 3` once matched a citation "(3)" and
 `IVPP V20` matched "20 individuals".
 
+## Checking quotations against their papers
+
+```
+python3 verify-quotes.py                     # everything
+python3 verify-quotes.py <file> [<file> ...] # just the files you touched
+```
+
+Matches every quotation in a reference note (genera, clades, the registry and
+its nested beds) and on a research note's Evidence lines against the corpus
+markdown of the paper it cites. It catches a quotation cut short, one
+attributed to the wrong paper, and one typed from memory. Run it on the files
+you touched before the review gate, and on everything before closing a batch.
+It writes `scratch/audit/quote-check.md`.
+
+It needs the corpus, which is why it is here and not in `npm run validate`.
+Words are matched in order with bounded gaps for elided citations, an
+ellipsis splits a quotation into parts matched separately, and a quotation
+marked "(translated)" is skipped. On 2026-10-06 it matched 6,486 of 6,882
+quotations. Most of the 396 misses are table rows the conversion scrambled,
+OCR damage ("Cañadón" as "Caiiadh"), and sentences the markdown dropped; read
+the paper, or the PDF where the markdown is silent, before changing a
+quotation. A miss is a question, not a finding.
+
 ## Related
 
 #2022 (umbrella) · #2023 formation buckets · #2024 stage buckets · #2025

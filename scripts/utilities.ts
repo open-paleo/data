@@ -838,6 +838,212 @@ export function researchCitedIds(body: string): Array<string>
 }
 
 /**
+ * One narrative citation found in prose: an author's surname and a year.
+ */
+export type NarrativeCitation = {
+    /**
+     * The surname, or the surname run the citation opens with
+     * ("Gradziński, Kielan-Jaworowska").
+     */
+    surname: string;
+
+    /**
+     * The four-digit year.
+     */
+    year: string;
+};
+
+const citationName = String.raw`\p{Lu}[\p{L}\p{N}'’-]+(?:\s+(?:de|da|dos|das|du|des|di|van|von|der|del|la|le)?\s*\p{Lu}[\p{L}\p{N}'’-]+)?`;
+const citationNames = String.raw`(?:${citationName},\s+)*${citationName}`;
+const citationParticle = String.raw`(?:(?:van|von|de|da|dos|das|du|des|di|der|del|la|le)\s+)?`;
+const citationPartner = String.raw`(?:\s+(?:and|&)\s+(?:colleagues|others|(${citationParticle}${citationName}))|\s+et\s+al\.)?`;
+const narrativeCitationPattern = new RegExp(String.raw`(?<![\p{L}])(${citationNames})${citationPartner}\s+\((\d{4}[a-z]?(?:[,:;][^)]*)?)\)`, "gu");
+const parentheticalPattern = /\(([^()]*\d{4}[^()]*)\)/g;
+const parentheticalItemPattern = new RegExp(String.raw`^\s*(${citationName})${citationPartner},?\s+(\d{4})[a-z]?\b`, "u");
+
+// Capitalized words the name pattern takes for an author but that are not one.
+// Add a word only after reading the sentence that produced it.
+const notCitationNames = new Set(["Nemegt Formation", "Ankylosauridae", "Tanystrophaeus", "Pachysauriscus", "Syntarsus Fairmaire"]);
+
+// Words that precede a citation and are swallowed into the name: "Campanian
+// Miller (1991)", "Follows Behrensmeyer's (2007)", "The Zhou (2007)".
+const leadingNonNames = new Set(["The", "Follows", "Campanian", "Maastrichtian", "Cretaceous", "Jurassic", "Triassic", "After", "See", "As", "In", "And"]);
+
+// Catalog numbers ("AMNH (5895)") and ICZN Opinions ("Opinion (2486)") have
+// the shape of a citation but are not one.
+const notCitationPattern = /^(?:[A-Z]{2,}(?:\s+[A-Z]{2,})?|Opinion)$/u;
+
+/**
+ * Drops leading words that are not part of a surname, such as "The" in "The
+ * Zhou (2007)", and a possessive ending.
+ *
+ * @param name - The matched name.
+ * @returns The surname as a citation would give it.
+ */
+function cleanCitationName(name: string): string
+{
+    const words = name.split(/\s+/);
+
+    while (words.length > 1 && leadingNonNames.has(words[0]))
+    {
+        words.shift();
+    }
+
+    return words.join(" ").replace(/['’]s$/u, "");
+}
+
+/**
+ * Finds every narrative and parenthetical citation in a prose string: "Smith
+ * (2000)", "Smith and colleagues (2000, p. 12)", "(Smith, 2000; Jones, 2001)".
+ * Text inside double quotation marks is skipped, because a name inside a
+ * quotation is the quoted source's wording, and a personal communication is
+ * not a citation of a work.
+ *
+ * @param text - The prose.
+ * @returns The citations found, without duplicates.
+ */
+export function narrativeCitations(text: string): Array<NarrativeCitation>
+{
+    const prose = text.replace(/"[^"]*"/g, " ");
+    const found = new Map<string, NarrativeCitation>();
+    const add = (name: string, year: string): void =>
+    {
+        const surname = cleanCitationName(name);
+
+        if (!notCitationNames.has(surname) && !notCitationPattern.test(surname))
+        {
+            found.set(`${surname}|${year}`, { surname, year });
+        }
+    };
+
+    for (const match of prose.matchAll(narrativeCitationPattern))
+    {
+        const [, name, partner, inside] = match;
+
+        if (/personal\s+comm/i.test(inside))
+        {
+            continue;
+        }
+
+        const lead = notCitationNames.has(name) && partner ? partner : name;
+
+        for (const year of inside.match(/(?<![\d.])(?:1[6-9]\d\d|20[0-3]\d)(?!\d)/g) ?? [])
+        {
+            add(lead, year);
+        }
+    }
+
+    for (const group of prose.matchAll(parentheticalPattern))
+    {
+        for (const item of group[1].split(";"))
+        {
+            const match = parentheticalItemPattern.exec(item);
+
+            if (match !== null)
+            {
+                add(notCitationNames.has(match[1]) && match[2] ? match[2] : match[1], match[3]);
+            }
+        }
+    }
+
+    return [...found.values()];
+}
+
+/**
+ * Folds a surname or key stem so spellings of one name compare equal: accents,
+ * hyphens, apostrophes and spaces dropped.
+ *
+ * @param text - The surname or key stem.
+ * @returns The folded letters.
+ */
+function foldSurname(text: string): string
+{
+    return text
+        .replace(/ı/g, "i")
+        .replace(/ł/g, "l")
+        .normalize("NFKD")
+        .replace(/\p{M}/gu, "")
+        .toLowerCase()
+        .replace(/[^a-z]/g, "");
+}
+
+/**
+ * Tells whether a reference id is the work a citation names: the id's
+ * surname stem matches the citation's surname, or any one of its words (so
+ * "Díez Díaz" matches `díezdíaz` and "Gradziński, Kielan-Jaworowska" matches
+ * `gradziński`), and the year matches the entry's year or the key's.
+ *
+ * @param citation - The citation.
+ * @param id - The reference id.
+ * @param storeYear - The store entry's `year`, when the store holds the id.
+ * @returns True when the id can be the cited work.
+ */
+export function citationMatchesId(citation: NarrativeCitation, id: string, storeYear: string | null): boolean
+{
+    const keyMatch = /^(.*?)(\d{4})[a-z]$/u.exec(id);
+
+    if (keyMatch === null || (citation.year !== keyMatch[2] && citation.year !== storeYear))
+    {
+        return false;
+    }
+
+    const stem = foldSurname(keyMatch[1]);
+    const words = [citation.surname, ...citation.surname.split(/[\s,]+/)].map(foldSurname);
+
+    return words.some((word) => word.length > 1 && (stem === word || (word.length >= 4 && stem.endsWith(word))));
+}
+
+/**
+ * Folds text for comparing two spellings of one string: accents dropped,
+ * lowercased, and everything but letters and digits removed.
+ *
+ * @param text - The text to fold.
+ * @returns The folded text.
+ */
+function foldForComparison(text: string): string
+{
+    return text
+        .normalize("NFKD")
+        .replace(/\p{M}/gu, "")
+        .toLowerCase()
+        .replace(/[^a-z0-9]/g, "");
+}
+
+/**
+ * Builds the key that identifies the work a store entry describes, so two
+ * entries for one work can be found whatever year or venue spelling each
+ * carries. The key is the title, without any bracketed translation, folded and
+ * cut to its first 60 characters, with the volume and the pages or article
+ * number. An entry with no pages or article number is identified by its title,
+ * volume and venue (journal, book or publisher) instead.
+ *
+ * @param entry - The store entry.
+ * @returns The identity key, or null when the title is too short to identify
+ *     a work.
+ */
+export function referenceIdentity(entry: Reference): string | null
+{
+    const title = foldForComparison((entry.title ?? "").replace(/\[.*?\]/g, "")).slice(0, 60);
+
+    if (title.length <= 15)
+    {
+        return null;
+    }
+
+    const volume = foldForComparison(String(entry.volume ?? ""));
+    const locator = foldForComparison(String(entry.pages ?? entry.article_number ?? ""));
+
+    if (locator.length > 0)
+    {
+        return `${title}|${volume}|${locator}`;
+    }
+
+    const venue = foldForComparison(entry.journal ?? entry.book ?? entry.publisher ?? "").slice(0, 40);
+
+    return `${title}|${volume}||${venue}`;
+}
+
+/**
  * Formats one store entry as a line of a research note's References section.
  *
  * @param entry - The store reference.
