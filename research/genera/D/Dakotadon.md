@@ -15,6 +15,22 @@
 
 **Open.** The member assignment is an interpretation by correlation, not a measured section through the quarry.
 
+## Which locality number does the *Dakotadon* type site take, and was it ever placed in the Chilson Member?
+
+*2026-08-17*
+
+**Conclusion.** SDSM V 2015-1, the number Boyd and Pagnac (2015) gave when they relocated the site. The describing paper's SDSM V751 had already been allocated to another site. Governs `location.locality: SDSM V 2015-1` on [*Dakotadon lakotaensis*](../../../genera/D/Dakotadon.yml); the member and its age are decided in the 2026-09-30 entry.
+
+**Evidence.**
+- weishampel1989a, p. 57: "Type Locality--SDSM V751, Lawrence County, South Dakota."
+- boyd2015b, p. 8: "The type locality was originally identified as SDSM V 751 in Weishampel & Bjork (1989: p. 57). However, that number was already allocated to another location that does not match the township and range information recorded on the specimen card for SDSM 8656", and "a new locality number, SDSM V 2015-1, was designated".
+
+**Ruled out.**
+- *SDSM V751.* Weishampel and Bjork's number belongs to another SDSM site, by Boyd and Pagnac's check against the specimen card.
+- *Chilson Member.* Boyd and Pagnac report that Carpenter and Ishida (2010) placed the type in the Chilson Member, "although no supporting information was given for that referral" (boyd2015b, p. 7), and they put the quarry section in unit L2, "corresponding to the lower Fuson Member". Unit L1 corresponds to the Chilson (boyd2015b, p. 7).
+
+**Open.** Nothing.
+
 ## References
 
 - `boyd2015b`: Boyd, C. A.; Pagnac, D. C. (2015). Insight on the anatomy, systematic relationships, and age of the Early Cretaceous ankylopollexian dinosaur Dakotadon lakotaensis. *PeerJ* 3: e1263. doi:10.7717/peerj.1263
