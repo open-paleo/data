@@ -18,6 +18,21 @@
 
 **Open.** Aptian or Albian. Neither side presents dating of its own beyond biostratigraphic comparison. A third reading, "早白垩世瓦兰今期—欧特里夫期" ("Early Cretaceous Valanginian–Hauterivian", translated; xi2021a, p. 391), rests on zircon dates from volcanics reported by earlier work, and was not examined.
 
+## Does the 125–100.5 Ma range in Pittman and Xu's volume add the Barremian?
+
+*2026-09-20*
+
+**Conclusion.** No. The range is a compiled interval whose endpoints are stage boundaries on an older chart, and the same volume names the stages as Aptian–Albian. Governs `stages: [Aptian, Albian]` on [Bayin-Gobi](../../../stratigraphy/b/bayin-gobi.yml), which takes no Barremian.
+
+**Evidence.**
+- pittman2020a, p. 151, Appendix to Ding and colleagues' chapter: *Alxasaurus elesitaiensis*, "Bayan Gobi Formation (125–100.5 Ma)"; p. 154 repeats the range for IVPP V22530.
+- pittman2020a, p. 50, Pittman and colleagues' chapter: "IVPP V22530 is from the younger Aptian-Albian Bayan Gobi Formation of Nei Mongol, northern China (Pittman et al., 2015)"; p. 45, Table 3: "Bayan Gobi Formation … Early … Aptian-Albian".
+
+**Ruled out.**
+- *Barremian, from the 125 Ma endpoint.* On the current chart 125 Ma falls 0.77 Myr above the base of the Barremian (125.77 Ma), so a plain conversion yields Barremian, Aptian and Albian. The appendix is not a measurement: its ranges recur as fixed pairs, among them "(83.6–72.1 Ma)", "(72.1–66.0 Ma)" and "(129.4–125 Ma)" (pp. 151–157), and 100.5, 83.6, 72.1 and 66.0 are stage bases. Reading 125 as the base of the Aptian on the chart the chapter used is our inference; the volume's own stage, Aptian–Albian, is what the range stands for. A stated stage is carried over ([CONTRIBUTING](../../../CONTRIBUTING.md#reading-ages-on-the-chart)).
+
+**Open.** Nothing.
+
 ## References
 
 - `russell1993b`: Russell, D. A.; Dong, Z. M. (1993). The affinities of a new theropod from the Alxa Desert, Inner Mongolia, People's Republic of China. *Canadian Journal of Earth Sciences* 30(10): 2107-2127. doi:10.1139/e93-183
@@ -30,3 +45,4 @@
 - `wu2012a`: Wu, W. H.; Godefroit, P. (2012). Anatomy and relationships of Bolong yixianensis, an Early Cretaceous iguanodontoid dinosaur from western Liaoning, China. In *Bernissart Dinosaurs and Early Cretaceous Terrestrial Ecosystems (Godefroit, P., ed.)*. Indiana University Press, Bloomington.
 - `fowler2020b`: Fowler, D. W.; Wilson, J. P.; Freedman Fowler, E. A.; Noto, C. R.; Anduza, D.; Horner, J. R. (2020). Trierarchuncus prairiensis gen. et sp. nov., the last alvarezsaurid: Hell Creek Formation (uppermost Maastrichtian), Montana. *Cretaceous Research* 116. doi:10.1016/j.cretres.2020.104560
 - `xi2021a`: Xi, D. P.; Sun, L. X.; Qin, Z. H.; Li, G. B.; Li, G.; Wan, X. Q. (2021). Lithostratigraphic subdivision and correlation of the Cretaceous in China. *Journal of Stratigraphy* 45(3): 375-401. doi:10.19839/j.cnki.dcxzz.2021.0030
+- `pittman2020a`: Pittman, M.; Xu, X. (2020). Pennaraptoran theropod dinosaurs. Past progress and new frontiers. *Bulletin of the American Museum of Natural History* 440(1): 1-355. doi:10.1206/0003-0090.440.1.1

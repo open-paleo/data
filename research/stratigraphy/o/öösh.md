@@ -17,6 +17,22 @@
 
 **Open.** Which svita assignment is right. Rougier and colleagues (2001) relay a Tevsh placement and give "a Valanginian–Neocomian age" (rougier2001a, pp. 3, 7); Jerzykiewicz and Russell (1991) list "Oshi Nur (Oshih)" under the Tsagantsabian (jerzykiewicz1991a, p. 363) and note that "The name Oshih Formation of Berkey & Morris (1927) is no longer in use" (p. 352).
 
+## Does Young (1937) date the Öösh as Late Cretaceous?
+
+*2026-09-21*
+
+**Conclusion.** No. Young's "Upper Cretaceous beds of Oshih" is a clause about another sauropod, credited to Osborn (1924), whose paper on that animal places the beds in the Lower Cretaceous. Governs `period: [Early Cretaceous]` on [Öösh](../../../stratigraphy/o/öösh.yml).
+
+**Evidence.**
+- young1937a, Comparison and Determination, "N. B." paragraph: "*Asiatosaurus mongolicus* Osborn (Osborn, 1924) from the Upper Cretaceous beds of Oshih".
+- osborn1924a, p. 1, title: "Sauropoda and Theropoda of the Lower Cretaceous of Mongolia"; p. 2: "HORIZON.—Oshih (Ashile) formation, Psittacosaurus mongoliensis life zone, Mongolia".
+- andres2005a, p. 2: "an approximately 600-m-thick Early Cretaceous succession".
+
+**Ruled out.**
+- *Late Cretaceous.* Young's clause explains why *Asiatosaurus* is unrelated to his own animal. It names no formation, gives no stage and offers no evidence, and the work it credits gives the opposite epoch. It is a relayed locality label, not a dating of the beds.
+
+**Open.** Nothing.
+
 ## Is Öösh in Övörkhangai or Ömnögovi?
 
 *2026-09-03*
@@ -44,4 +60,6 @@
 - `turner2007b`: Turner, A. H.; Hwang, S. H.; Norell, M. A. (2007). A Small Derived Theropod from Öösh, Early Cretaceous, Baykhangor Mongolia. *American Museum Novitates* 3557(1). doi:10.1206/0003-0082(2007)3557[1:asdtfs]2.0.co;2
 - `rougier2001a`: Rougier, G. W.; Novacek, M. J.; McKenna, M. C.; Wible, J. R. (2001). Gobiconodonts from the Early Cretaceous of Oshih (Ashile), Mongolia. *American Museum Novitates* 3348: 1-30.
 - `jerzykiewicz1991a`: Jerzykiewicz, T.; Russell, D. A. (1991). Late Mesozoic stratigraphy and vertebrates of the Gobi Basin. *Cretaceous Research* 12(4): 345-377. doi:10.1016/0195-6671(91)90015-5
+- `young1937a`: Young, C. C. (1937). A new dinosaurian from Sinkiang. *Palaeontologia Sinica, New Series C, Whole Series No. 132* 213: 1-29.
+- `osborn1924a`: Osborn, H. F. (1924). Sauropoda and Theropoda of the Lower Cretaceous of Mongolia. *American Museum Novitates* 128: 1-16.
 - `turner2012a`: Turner, A. H.; Makovicky, P. J.; Norell, M. A. (2012). A Review of Dromaeosaurid Systematics and Paravian Phylogeny. *Bulletin of the American Museum of Natural History* 371: 1-206. doi:10.1206/748.1

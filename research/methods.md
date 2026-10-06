@@ -89,6 +89,56 @@
 
 **Exceptions.** None.
 
+## A thesis never carries a value alone
+
+*2026-10-05*
+
+**Rule.** A thesis is gray literature. Where a published version exists, cite that instead. A thesis never sole-sources a name, rank, containment or age, and it cannot perform a nomenclatural act under either the zoological or the stratigraphic codes. It may contribute an observation alongside a published source, and its store entry records that it is a thesis, so a reader can see its standing. Decides every field a source can support.
+
+**Why.** For the [Reuchenette](../stratigraphy/r/reuchenette.yml), the thesis asserts a late Oxfordian to late Kimmeridgian age, while the published version by Jank and colleagues (2006) hedges the Oxfordian in its own title, "?Oxfordian, Kimmeridgian *sensu gallico*" (jank2006a, title). Citing the thesis would have taken the stronger claim with its hedge stripped off (see [Reuchenette](stratigraphy/r/reuchenette.md)).
+
+**Exceptions.** None.
+
+## A personal communication is not a published determination
+
+*2026-10-05*
+
+**Rule.** An age, unit or placement that a paper attributes to a personal communication, its own or one it relays, does not count as a reading. It can weigh in a live debate between published readings, and the reference note says so, but it never adds a stage or a value on its own. Decides `stages`, `stage`, `dispute` and `location` fields.
+
+**Why.** For the [Kota](../stratigraphy/k/kota.yml), Buffetaut (2000) writes that the formation "may in fact be as recent as Early Cretaceous on the basis of palynology; G. V. R. Prasad, personal communication" (buffetaut2000a, main text). Counting it would have stretched the unit from the Jurassic into the Early Cretaceous on a determination nobody has published.
+
+**Exceptions.** None.
+
+## A reference work corroborates but almost never carries a value alone
+
+*2026-10-05*
+
+**Rule.** A reference work or catalogue, such as *The Dinosauria* distribution chapter, an encyclopedia or a stratigraphic lexicon, is used to check a reading and to find the literature behind it. It extends a range a primary source establishes, and its note says so. It does not carry a value no primary source gives. Follow its citations to the primary, which is where the value is decided. Decides every field a source can support.
+
+**Why.** Most reference works cite their sources, so they are good for smell tests and leads, but a compilation row repeats a reading rather than making one. White's (1973) catalogue lists *Gigantoscelus* from the "Upper Triassic, Stormberg Series, Bushveld Sandstone" (white1973a, Alphabetical Listing of Genera), and it was once the only source cited for the [Bushveld Sandstone](../stratigraphy/b/bushveld-sandstone.yml)'s Late Triassic. It was dropped as a source, and the unit's age now rests on other readings.
+
+**Exceptions.** A reference work that makes an original observation or argument of its own, rather than compiling, counts for that observation as a primary source would. This is rare, and the reference note names what the work adds.
+
+## A slip that its own document contradicts is not a reading
+
+*2026-10-05*
+
+**Rule.** When a paper states a value that the same document contradicts, whether in its own table, its bibliography or the same sentence, and the error is plainly typographical or a passing slip, read the paper by what it clearly means. Exclude the slip without needing outside evidence, and say in the note why it was excluded where a later reader might count it. Apply the rule by its intent, not its letter: it covers a misprinted stage or epoch, not a considered statement that disagrees with the paper's own table. Decides `stages`, `stage`, `period` and `dispute`.
+
+**Why.** For the [Wessex](../stratigraphy/w/wessex.yml), Carrano and colleagues (2012) report a specimen "from the Wessex Formation (Berriasian) of the Isle of Wight" (carrano2012a, Fragmentary occurrences), while their own bibliography gives the title of the paper they relay as "A new large basal tetanuran (Dinosauria: Theropoda) from the Wessex Formation (Barremian) of the Isle of Wight" (carrano2012a, References). One occurrence of each, inside one document, settles it.
+
+**Exceptions.** None.
+
+## A stage boundary inside a unit gives the far stage only as a lower bound
+
+*2026-10-05*
+
+**Rule.** A source stating that a stage boundary falls inside a unit licenses both stages it names. When it names only one side ("the base of the Aptian passes through the unit"), the unit takes the older stage as a minimum extent, not as its full extent: the unit reaches below the boundary, and the source doesn't say how far. Neither close the list at that stage, nor truncate a range that another source carries deeper. Decides `stages` on registry units. This refines CONTRIBUTING's rule for a span that crosses an epoch boundary ([Age](../CONTRIBUTING.md#age-period-and-stages)).
+
+**Why.** Bonsor and colleagues (2023) write that "the base of the Aptian passes through the unit" for the [Vectis](../stratigraphy/v/vectis.yml)'s youngest member (bonsor2023a, Stratigraphy), naming only the Aptian. Treating the boundary as fixing the unit's base would have cut it at the Barremian–Aptian boundary. The Vectis's Barremian rests instead on Barker and colleagues (2020), who give "Vectis Formation (Barremian to lower Aptian)" directly (barker2020a, introduction).
+
+**Exceptions.** None.
+
 ## A matrix identification can give a formation, never a locality
 
 *2026-09-30*
@@ -319,6 +369,16 @@
 
 **Exceptions.** A note on why this specimen cannot be placed belongs on the record.
 
+## Every work cited is in the record's references, whether or not it has been read
+
+*2026-10-05*
+
+**Rule.** Supersedes the 2026-09-02 entry, which had an unread paper cut from the note. Every author and year that appears in a record, whether in a note, a description, a dispute or a quotation that itself cites a work, has a matching entry in that record's `references`, read or not. The rule applies to registry units as well as genera and clades. A claim is still decided on sources that have been read; a cited but unread work is a pointer, not evidence. Decides `references` and notes prose.
+
+**Why.** A reader who sees "Author (Year)" needs to find the work it names. Keeping the work in the references also lets the record be checked again once the paper is obtained, which a cut citation does not. Dropping an unread citation lost both and left the sentence pointing at nothing.
+
+**Exceptions.** None.
+
 ## Every author cited in a note is in the record's references
 
 *2026-09-02*
@@ -335,6 +395,12 @@
 - `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, 2nd edition*, pp. 259-322. University of California Press, Berkeley.
 - `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, 2nd edition*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027
 - `galton2004a`: Galton, P. M.; Upchurch, P. (2004). Prosauropoda. In *The Dinosauria, 2nd edition*, pp. 232-258. University of California Press, Berkeley.
+- `jank2006a`: Jank, M.; Wetzel, A.; Meyer, C. A. (2006). A calibrated composite section for the Late Jurassic Reuchenette Formation in northwestern Switzerland (?Oxfordian, Kimmeridgian sensu gallico, Ajoie-Region). *Eclogae Geologicae Helvetiae* 99: 175-191. doi:10.1007/s00015-006-1187-8
+- `buffetaut2000a`: Buffetaut, E.; Suteethorn, V.; Cuny, G.; Tong, H.; Le Loeuff, J.; Khansubha, S.; Jongautchariyakul, S. (2000). The earliest known sauropod dinosaur. *Nature* 407(6800): 72-74. doi:10.1038/35024060
+- `white1973a`: White, T. E. (1973). Catalogue of the genera of dinosaurs. *Annals of Carnegie Museum* 44: 117-155. doi:10.5962/p.243870
+- `carrano2012a`: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D. (2012). The phylogeny of Tetanurae (Dinosauria: Theropoda). *Journal of Systematic Palaeontology* 10(2): 211-300. doi:10.1080/14772019.2011.630927
+- `bonsor2023a`: Bonsor, J. A.; Lockwood, J. A. F.; Leite, J. V.; Scott-Murray, A.; Maidment, S. C. R. (2023). The osteology of the holotype of the British iguanodontian dinosaur Mantellisaurus atherfieldensis. *Monographs of the Palaeontographical Society* 177(665): 1-63. doi:10.1080/02693445.2023.2234156
+- `barker2020a`: Barker, C. T.; Naish, D.; Clarkin, C. E.; Farrell, P.; Hullmann, G.; Lockyer, J.; Schneider, P.; Ward, R. K. C.; Gostling, N. J. (2020). A highly pneumatic middle Cretaceous theropod from the British Lower Greensand. *Papers in Palaeontology* 6(4): 661-679. doi:10.1002/spp2.1338
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.
 - `molina-pérez2019a`: Molina-Pérez, R.; Larramendi, A. (2019). Dinosaur Facts and Figures: The Theropods and Other Dinosauriformes. Princeton University Press.
 - `benton2000c`: Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N. (2000). Mongolian place names and stratigraphic terms. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds.)*, pp. xxii-xxviii. Cambridge University Press, Cambridge.
