@@ -17,7 +17,7 @@
 
 ## References
 
-- `albert2025a`: Albert, G.; Budai, S.; Csiki-Sava, Z.; Makadi, L.; Ţabara, D.; Arvai, V.; Balc, R.; Bindiu-Haitonic, R.; Ducea, M. N.; Botfalvai, G. (2025). Age and palaeoenvironmental constraints on the earliest dinosaur-bearing strata of the Densuş-Ciula Formation (Haţeg Basin, Romania): Evidence of their late Campanian-early Maastrichtian syntectonic deposition. *Cretaceous Research* 170: 106095. doi:10.1016/j.cretres.2025.106095
+- `albert2025a`: Albert, G.; Budai, S.; Csiki-Sava, Z.; Makádi, L.; Ţabară, D.; Árvai, V.; Bălc, R.; Bindiu-Haitonic, R.; Ducea, M. N.; Botfalvai, G. (2025). Age and palaeoenvironmental constraints on the earliest dinosaur-bearing strata of the Densuș-Ciula Formation (Hațeg Basin, Romania): Evidence of their late Campanian-early Maastrichtian syntectonic deposition. *Cretaceous Research* 170: 106095. doi:10.1016/j.cretres.2025.106095
 - `magyar2026a`: Magyar, J.; Ősi, A.; Csiki-Sava, Z.; Budai, S.; Botfalvai, G. (2026). New early Maastrichtian 'duck-billed' dinosaur from Hațeg Basin (Densuș-Ciula Formation, Romania) documents an endemic clade of non-hadrosaurid hadrosauroids in the south-eastern Late Cretaceous European Archipelago. *Journal of Systematic Palaeontology* 24(1): 2607800. doi:10.1080/14772019.2025.2607800
 - `norman2004a`: Norman, D. B. (2004). Basal Iguanodontia. In *The Dinosauria, 2nd edition*, pp. 413-437. University of California Press, Berkeley.
 - `ősi2012a`: Ősi, A.; Prondvai, E.; Butler, R.; Weishampel, D. B. (2012). Phylogeny, histology and inferred body size evolution in a new rhabdodontid dinosaur from the Late Cretaceous of Hungary. *PLoS ONE* 7(9): e44318. doi:10.1371/journal.pone.0044318
