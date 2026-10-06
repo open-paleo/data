@@ -35,3 +35,7 @@
 - `kerth1988a`: Kerth, M.; Hailwood, E. A. (1988). Magnetostratigraphy of the Lower Cretaceous Vectis Formation (Wealden Group) on the Isle of Wight, southern England. *Journal of the Geological Society* 145(2): 351-360. doi:10.1144/gsjgs.145.2.0351
 - `carrano2012a`: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D. (2012). The phylogeny of Tetanurae (Dinosauria: Theropoda). *Journal of Systematic Palaeontology* 10(2): 211-300. doi:10.1080/14772019.2011.630927
 - `pittman2020a`: Pittman, M.; Xu, X. (2020). Pennaraptoran theropod dinosaurs. Past progress and new frontiers. *Bulletin of the American Museum of Natural History* 440(1): 1-355. doi:10.1206/0003-0090.440.1.1
+
+## Other references
+
+- `benson2009a`: Benson, R. B. J.; Brusatte, S. L.; Hutt, S.; Naish, D. (2009). A new large basal tetanuran (Dinosauria: Theropoda) from the Wessex Formation (Barremian) of the Isle of Wight, England. *Journal of Vertebrate Paleontology* 29(2): 612-615. doi:10.1671/039.029.0202

@@ -16,11 +16,10 @@ import * as path from "node:path";
 import * as url from "node:url";
 
 import {
-    buildResearchReferences,
+    buildResearchTail,
     findMarkdownFiles,
     markdownLinkTargets,
     referenceBucket,
-    researchCitedIds,
     researchFileFor,
     researchMethodsFile,
     splitResearchNote,
@@ -124,8 +123,10 @@ function printNotes(recordArgument: string): number
 }
 
 /**
- * Rewrites the References section of each note from the store. A note citing
- * an id the store does not hold is left unchanged and reported.
+ * Rewrites the References and Other references sections of each note from
+ * the store. Other references keeps the ids already listed there and
+ * regenerates their lines. A note citing or listing an id the store does not
+ * hold is left unchanged and reported.
  *
  * @param noteArguments - Note paths, relative to the repository root or absolute.
  * @returns The process exit code.
@@ -137,8 +138,8 @@ function writeReferences(noteArguments: Array<string>): number
     for (const noteArgument of noteArguments)
     {
         const notePath = path.resolve(root, noteArgument);
-        const { body } = splitResearchNote(fs.readFileSync(notePath, "utf8"));
-        const { section, missing } = buildResearchReferences(root, researchCitedIds(body));
+        const { body, otherIds } = splitResearchNote(fs.readFileSync(notePath, "utf8"));
+        const { tail, missing, duplicates } = buildResearchTail(root, body, otherIds);
 
         if (missing.length > 0)
         {
@@ -147,7 +148,13 @@ function writeReferences(noteArguments: Array<string>): number
         }
         else
         {
-            fs.writeFileSync(notePath, section === null ? `${body.trimEnd()}\n` : `${body.trimEnd()}\n\n${section}`);
+            fs.writeFileSync(notePath, tail === null ? `${body.trimEnd()}\n` : `${body.trimEnd()}\n\n${tail}`);
+
+            if (duplicates.length > 0)
+            {
+                console.log(`${path.relative(root, notePath)}: ${duplicates.join(", ")} cited in the text, so moved to References.`);
+            }
+
             console.log(`${path.relative(root, notePath)}: References written.`);
         }
     }

@@ -101,7 +101,8 @@ record's file or a topic note.
 
 A file opens with a single `#` title: the record's name (a genus in italics,
 as `# *Leyesaurus*`), or for a topic note a short name for its subject. Dated
-entries follow, newest first, and then a `## References` section. Each entry is
+entries follow, newest first, then a `## References` section and, where the
+prose names a work it doesn't cite by id, `## Other references`. Each entry is
 a `##` heading that states the question, then these parts:
 
 ```markdown
@@ -184,6 +185,16 @@ with authors, year and title as the reference store gives them. It is
 generated from the store by `npm run research -- --references <file>` and is
 never written by hand, because a bibliography typed from memory is the error
 this project has made most often.
+
+A work the note names in prose without citing it by id, usually one that has
+not been read and so cannot appear on an Evidence line, goes under
+`## Other references`, after References. Every work a note names is listed in
+one of the two sections, so a reader who meets "Simms and colleagues (2004)"
+can find the work it means. Write only the id, as ``- `simms2004a` ``, mint
+a store entry first if there is none, and run the same command: it keeps the
+ids listed there and fills in each line from the store. An id the text cites
+belongs under References only, and the validator reports one listed under
+both.
 
 ## What belongs here
 

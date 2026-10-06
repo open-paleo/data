@@ -19,3 +19,8 @@
 
 - `andrzejewski2019a`: Andrzejewski, K. A.; Winkler, D. A.; Jacobs, L. L. (2019). A new basal ornithopod (Dinosauria: Ornithischia) from the Early Cretaceous of Texas. *PLOS ONE* 14(3): e0207935. doi:10.1371/journal.pone.0207935
 - `d'emic2012c`: D'Emic, M. D. (2012). Revision of the sauropod dinosaurs of the Lower Cretaceous Trinity Group, southern USA, with the description of a new genus. *Journal of Systematic Palaeontology* 11(6): 707-726. doi:10.1080/14772019.2012.667446
+
+## Other references
+
+- `myers2007a`: Myers, T. S.; Storrs, G. W. (2007). Taphonomy of the Mother's Day Quarry, Upper Jurassic Morrison Formation, south-central Montana, USA. *PALAIOS* 22(6): 651-666. doi:10.2110/palo.2005.p05-123r
+- `winkler2000a`: Winkler, D. A.; Gomani, E. M.; Jacobs, L. L. (2000). Comparative taphonomy of an Early Cretaceous sauropod quarry, Malawi, Africa. *Paleontological Society of Korea Special Publication* 4: 99-114.

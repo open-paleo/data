@@ -11,7 +11,7 @@ import { parse as parseYamlContent } from "yaml";
 
 import {
     buildFlaggedSet,
-    buildResearchReferences,
+    buildResearchTail,
     buildVerifiedSet,
     findMarkdownFiles,
     findYamlFiles,
@@ -21,7 +21,6 @@ import {
     recordFileFor,
     referenceBucket,
     referenceNotesLimit,
-    researchCitedIds,
     researchMethodsFile,
     researchTopicDirectory,
     splitResearchNote,
@@ -3885,20 +3884,30 @@ for (const notePath of findMarkdownFiles(researchDirectory))
         }
     }
 
-    const { body, references } = splitResearchNote(note);
-    const { section, missing } = buildResearchReferences(root, researchCitedIds(body));
+    const { body, tail, otherIds } = splitResearchNote(note);
+    const expected = buildResearchTail(root, body, otherIds);
 
-    for (const id of missing)
+    for (const id of expected.missing)
     {
         checkError("Research notes", notePath, `cites '${id}', which has no entry in references/`);
     }
 
-    if (missing.length === 0 && (references ?? "").trimEnd() !== (section ?? "").trimEnd())
+    for (const id of expected.duplicates)
     {
         checkError(
             "Research notes",
             notePath,
-            "References section does not match the ids cited and the store; "
+            `lists '${id}' under Other references, but the text cites it by id; it belongs under References only`);
+    }
+
+    if (expected.missing.length === 0
+        && expected.duplicates.length === 0
+        && (tail ?? "").trimEnd() !== (expected.tail ?? "").trimEnd())
+    {
+        checkError(
+            "Research notes",
+            notePath,
+            "References sections do not match the ids cited, the ids listed under Other references, and the store; "
             + `run npm run research -- --references ${relPath(notePath)}`);
     }
 }

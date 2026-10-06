@@ -22,3 +22,7 @@
 - `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, 2nd edition*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027
 - `buffetaut2000a`: Buffetaut, E.; Suteethorn, V.; Cuny, G.; Tong, H.; Le Loeuff, J.; Khansubha, S.; Jongautchariyakul, S. (2000). The earliest known sauropod dinosaur. *Nature* 407(6800): 72-74. doi:10.1038/35024060
 - `rincón2022a`: Rincón, A. F.; Raad Pájaro, D. A.; Jiménez Velandia, H. F.; Ezcurra, M. D.; Wilson Mantilla, J. A. (2022). A sauropod from the Lower Jurassic La Quinta Formation (Dept. Cesar, Colombia) and the initial diversification of eusauropods at low latitudes. *Journal of Vertebrate Paleontology* 42(1). doi:10.1080/02724634.2021.2077112
+
+## Other references
+
+- `chinnappa2019a`: Chinnappa, C.; Rajanikanth, A.; Pauline Sabina, K. (2019). Palaeofloras from the Kota Formation, India: palaeodiversity and ecological implications. *Volumina Jurassica* 17: 1-16.

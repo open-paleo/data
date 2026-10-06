@@ -726,37 +726,64 @@ export function recordFileFor(dataRoot: string, researchPath: string): string | 
 }
 
 /**
- * A research note split at its generated `## References` heading.
+ * A research note split at its generated reference sections.
  */
 export type ResearchNoteParts = {
     /**
-     * Everything before the `## References` heading, which is what cites.
+     * Everything before the first of `## References` and `## Other
+     * references`, which is what cites.
      */
     body: string;
 
     /**
-     * The References section from its heading to the end, or null when the
-     * note has none.
+     * Everything from the first reference heading to the end: the
+     * References section, the Other references section, or both. Null when
+     * the note has neither.
      */
-    references: string | null;
+    tail: string | null;
+
+    /**
+     * The ids listed under `## Other references`: works the note names in
+     * prose without citing them by id. Empty when the note has no such
+     * section.
+     */
+    otherIds: Array<string>;
 };
 
 /**
- * Splits a research note into its body and its `## References` section.
+ * Splits a research note into its body and its reference sections.
  *
  * @param text - The note's full text.
- * @returns The two parts.
+ * @returns The body, the reference sections, and the ids listed under
+ *     Other references.
  */
 export function splitResearchNote(text: string): ResearchNoteParts
 {
-    const match = /^## References[ \t]*$/m.exec(text);
+    const referencesMatch = /^## References[ \t]*$/m.exec(text);
+    const otherMatch = /^## Other references[ \t]*$/m.exec(text);
+    const starts = [referencesMatch, otherMatch]
+        .filter((match): match is RegExpExecArray => match !== null)
+        .map((match) => match.index);
 
-    if (match === null)
+    if (starts.length === 0)
     {
-        return { body: text, references: null };
+        return { body: text, tail: null, otherIds: [] };
     }
 
-    return { body: text.slice(0, match.index), references: text.slice(match.index) };
+    const bodyEnd = Math.min(...starts);
+    let otherIds = new Array<string>();
+
+    if (otherMatch !== null)
+    {
+        const sectionEnd = referencesMatch !== null && referencesMatch.index > otherMatch.index
+            ? referencesMatch.index
+            : text.length;
+        const section = text.slice(otherMatch.index, sectionEnd);
+
+        otherIds = [...section.matchAll(/^- `([^`]+)`/gm)].map((match) => match[1]);
+    }
+
+    return { body: text.slice(0, bodyEnd), tail: text.slice(bodyEnd), otherIds };
 }
 
 /**
@@ -851,15 +878,19 @@ export function formatResearchReference(entry: Reference): string
 }
 
 /**
- * Builds a research note's References section from the store: one line per
- * id the body cites, in order of first citation.
+ * Builds one reference section of a research note from the store: one line
+ * per id, in the order given.
  *
  * @param dataRoot - Repository root containing the `references/` directory.
- * @param ids - The ids the body cites.
- * @returns The section text, or null when no id is cited. Ids with no store
- *     entry are returned in `missing` and omitted from the section.
+ * @param ids - The ids to list.
+ * @param heading - The section heading, without its `## ` prefix.
+ * @returns The section text, or null when there are no ids. Ids with no
+ *     store entry are returned in `missing` and omitted from the section.
  */
-export function buildResearchReferences(dataRoot: string, ids: Array<string>): { section: string | null; missing: Array<string> }
+export function buildResearchReferences(
+    dataRoot: string,
+    ids: Array<string>,
+    heading = "References"): { section: string | null; missing: Array<string> }
 {
     const lines = new Array<string>();
     const missing = new Array<string>();
@@ -878,5 +909,37 @@ export function buildResearchReferences(dataRoot: string, ids: Array<string>): {
         }
     }
 
-    return { section: lines.length > 0 ? `## References\n\n${lines.join("\n")}\n` : null, missing };
+    return { section: lines.length > 0 ? `## ${heading}\n\n${lines.join("\n")}\n` : null, missing };
+}
+
+/**
+ * Builds everything after a research note's body: the References section
+ * for the ids the body cites, then the Other references section for works
+ * the note names in prose without citing them by id. An Other references id
+ * that the body also cites is dropped from that section, since it is
+ * already listed under References.
+ *
+ * @param dataRoot - Repository root containing the `references/` directory.
+ * @param body - The note's body.
+ * @param otherIds - The ids the note lists under Other references.
+ * @returns The sections joined, or null when there is neither; ids with no
+ *     store entry; and Other references ids the body also cites.
+ */
+export function buildResearchTail(
+    dataRoot: string,
+    body: string,
+    otherIds: Array<string>): { tail: string | null; missing: Array<string>; duplicates: Array<string> }
+{
+    const citedIds = researchCitedIds(body);
+    const duplicates = otherIds.filter((id) => citedIds.includes(id));
+    const uncitedIds = [...new Set(otherIds.filter((id) => !citedIds.includes(id)))];
+    const references = buildResearchReferences(dataRoot, citedIds);
+    const others = buildResearchReferences(dataRoot, uncitedIds, "Other references");
+    const sections = [references.section, others.section].filter((section): section is string => section !== null);
+
+    return {
+        tail: sections.length > 0 ? sections.join("\n") : null,
+        missing: [...references.missing, ...others.missing],
+        duplicates,
+    };
 }

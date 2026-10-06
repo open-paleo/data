@@ -20,3 +20,8 @@
 
 - `baron2024a`: Baron, M. G. (2024). A new name for old bones: A reassessment of Early Jurassic theropod remains from Dorset, England. *Palaeontologia Electronica* 27(1): 1-12. doi:10.26879/1346
 - `martill2016a`: Martill, D. M.; Vidovic, S. U.; Howells, C.; Nudds, J. R. (2016). The Oldest Jurassic Dinosaur: A Basal Neotheropod from the Hettangian of Great Britain. *PLOS ONE* 11(1): e0145713. doi:10.1371/journal.pone.0145713
+
+## Other references
+
+- `simms2004a`: Simms, M. J.; Chidlaw, N.; Morton, N.; Page, K. N. (2004). British Lower Jurassic Stratigraphy. Joint Nature Conservation Committee, Peterborough.
+- `hillebrandt2013a`: Hillebrandt, A. von; Krystyn, L.; Kürschner, W. M.; Bonis, N. R.; Ruhl, M.; Richoz, S.; Schobben, M. A. N.; Urlichs, M.; Bown, P. R.; Kment, K.; McRoberts, C. A.; Simms, M.; Tomašových, A. (2013). The Global Stratotype Sections and Point (GSSP) for the base of the Jurassic System at Kuhjoch (Karwendel Mountains, Northern Calcareous Alps, Tyrol, Austria). *Episodes* 36(3): 162-198. doi:10.18814/epiiugs/2013/v36i3/001

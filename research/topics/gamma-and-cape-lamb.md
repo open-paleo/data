@@ -23,3 +23,7 @@
 - `soto-acuña2024a`: Soto-Acuña, S.; Vargas, A. O.; Kaluza, J. (2024). A new look at the first dinosaur discovered in Antarctica: reappraisal of Antarctopelta oliveroi (Ankylosauria: Parankylosauria). *Advances in Polar Science* 35(1): 78-107. doi:10.12429/j.advps.2023.0036
 - `ely2019a`: Ely, R. C.; Case, J. A. (2019). Phylogeny of a new gigantic paravian (Theropoda; Coelurosauria; Maniraptora) from the Upper Cretaceous of James Ross Island, Antarctica. *Cretaceous Research* 101: 1-16. doi:10.1016/j.cretres.2019.04.003
 - `salgado2006a`: Salgado, L.; Gasparini, Z. (2006). Reappraisal of an ankylosaurian dinosaur from the Upper Cretaceous of James Ross Island (Antarctica). *Geodiversitas* 28(1): 119-135. doi:10.5281/zenodo.5376155
+
+## Other references
+
+- `pirrie1997a`: Pirrie, D.; Crame, J. A.; Lomas, S. A.; Riding, J. B. (1997). Late Cretaceous stratigraphy of the Admiralty Sound region, James Ross Basin, Antarctica. *Cretaceous Research* 18(1): 109-137. doi:10.1006/cres.1996.0052
