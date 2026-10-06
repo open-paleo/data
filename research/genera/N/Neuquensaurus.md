@@ -1,5 +1,21 @@
 # *Neuquensaurus*
 
+## Does *Neuquensaurus australis* reach the Campanian?
+
+*2026-10-06*
+
+**Conclusion.** No. No source dates the holotype's horizon, so the record takes the Bajo de la Carpa's range, under the rule that a taxon without a horizon statement takes its unit's range, and that range is Santonian. Governs `stage: [Santonian]` on *Neuquensaurus australis*. Supersedes the **Open** line of the 2026-10-03 entry on the referred material: the record's Campanian came from neither the holotype nor the unit, and the Campanian of the Anacleto hypodigm stays in the notes.
+
+**Evidence.**
+- otero2010a, p. 401: "Lydekker did not give… the specific stratigraphic position" of the holotype.
+- bonaparte1979c, p. 396: the formation itself is conditional, "If this provenance is correct… possibly Bajo de la Carpa Member"; no stage is given for the type beds.
+- The Bajo de la Carpa is Santonian; see [Bajo de la Carpa](../../stratigraphy/b/bajo-de-la-carpa.md), where Filippi (2015) settled the Campanian top the earlier entry left open.
+
+**Ruled out.**
+- *Santonian and Campanian.* The record's earlier value. Its Campanian rested on the formation's former range or on the referred material from the Anacleto, and neither dates the type caudals.
+
+**Open.** Nothing.
+
 ## Which formation is the Neuquensaurus australis holotype from?
 
 *2026-10-03*
@@ -68,6 +84,7 @@
 
 ## References
 
+- `otero2010a`: Otero, A. (2010). The appendicular skeleton of Neuquensaurus, a Late Cretaceous saltasaurine sauropod from Patagonia, Argentina. *Acta Palaeontologica Polonica* 55(3): 399-426.
 - `bonaparte1979c`: Bonaparte, J. F.; Gasparini, Z. (1979). Los saurópodos de los grupos Neuquén y Chubut, y sus relaciones cronológicas [The Sauropods of the Neuquén and Chubut Groups and their Chronological Relations]. *Actas del VII Congreso Geológico Argentino* 2: 393-406.
 - `powell2003a`: Powell, J. E. (2003). Revision of South American Titanosaurid dinosaurs: palaeobiological, palaeobiogeographical and phylogenetic aspects. *Records of the Queen Victoria Museum* 111: 1-173.
 - `huene1929a`: Huene, F. V. (1929). Los saurisquios y ornitisquios del Cretáceo Argentino [The Saurischians and Ornithischians of the Argentine Cretaceous]. *Anales del Museo de La Plata, series 2* 3: 1-196.
@@ -75,7 +92,6 @@
 - `d'emic2011a`: D'Emic, M. D.; Wilson, J. A. (2011). New remains attributable to the holotype of the sauropod dinosaur Neuquensaurus australis, with implications for saltasaurine systematics. *Acta Palaeontologica Polonica* 56(1): 61-73. doi:10.4202/app.2009.0149
 - `santucci2022a`: Santucci, R. M.; Filippi, L. S. (2022). Last titans: Titanosaurs from the Campanian–Maastrichtian age. In *South American Sauropodomorph Dinosaurs: Record, Diversity and Evolution*, pp. 341-391. Springer International Publishing. doi:10.1007/978-3-030-95959-3_10
 - `gallina2015a`: Gallina, P. A.; Otero, A. (2015). Reassessment of Laplatasaurus araukanicus (Sauropoda: Titanosauria) from the Upper Cretaceous of Patagonia, Argentina. *Ameghiniana* 52(5): 487-501. doi:10.5710/AMGH.08.06.2015.2911
-- `otero2010a`: Otero, A. (2010). The appendicular skeleton of Neuquensaurus, a Late Cretaceous saltasaurine sauropod from Patagonia, Argentina. *Acta Palaeontologica Polonica* 55(3): 399-426.
 - `dingus2000a`: Dingus, L.; Clarke, J.; Scott, G. R.; Swisher, C. C., III; Chiappe, L. M.; Coria, R. A. (2000). Stratigraphy and magnetostratigraphic/faunal constraints for the age of sauropod embryo-bearing rocks in the Neuquén Group (Late Cretaceous, Neuquén Province, Argentina). *American Museum Novitates* 3290: 1-11.
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.
 - `molina-pérez2020a`: Molina-Pérez, R.; Larramendi, A. (2020). Dinosaur Facts and Figures: The Sauropods and Other Sauropodomorphs. Princeton University Press.
