@@ -16,6 +16,22 @@
 
 **Open.** The blocks were "not found *in situ*", and Evers and Wings (2020, p. 3) consider another bed "possible, although very unlikely".
 
+## Do Zuo and colleagues' Langenberg coordinates, or "Rohstoffbetriebe Oker", locate the *Europasaurus* holotype?
+
+*2026-08-23*
+
+**Conclusion.** Neither is recorded. Zuo and colleagues (2018) print a position for their logged Langenberg section, not for DFMMh/FV 291, and the record holds no coordinate. Rohstoffbetriebe Oker is the company that works the Langenberg Quarry, not the site. Governs `location.locality: Langenberg Quarry` and the empty `location.coordinates` on [*Europasaurus holgeri*](../../../genera/E/Europasaurus.yml).
+
+**Evidence.**
+- zuo2017a, p. 3, Materials and methods: "The Langenberg section (51°54′6.74″N, 10°30′27.73″E) is accessible in an active quarry about 5 km east of Goslar"; p. 5, Fig. 3a caption: the section view marks "strata where the dinosaur (*Europasaurus holgeri*) was discovered (yellow star)".
+- evers2020a, p. 19, Acknowledgements: thanks to the family "at the Rohstoffbetriebe Oker GmbH & Co. KG for the permission to access the Langenberg Quarry".
+
+**Ruled out.**
+- *51.901872, 10.507703 (Zuo and colleagues' pair, our conversion) as the holotype's position.* The pair is the reference point of the logged section. The figure ties the *Europasaurus* strata to the section, not to the point.
+- *"Rohstoffbetriebe Oker Quarry" as the locality.* The name is the operating company's.
+
+**Open.** Whether the section's reference point is close enough to the excavation to stand as the quarry's position. Wings and Sander (2012), on the Langenberg vertebrate assemblage, has not been read and may give the site's own position.
+
 ## References
 
 - `evers2020a`: Evers, S. W.; Wings, O. (2020). Late Jurassic theropod dinosaur bones from the Langenberg Quarry (Lower Saxony, Germany) provide evidence for several theropod lineages in the central European archipelago. *PeerJ* 8: e8437. doi:10.7717/peerj.8437
