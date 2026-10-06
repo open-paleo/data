@@ -17,8 +17,24 @@
 
 **Open.** Nothing.
 
+## Is TMP 95.12.6 a different number from the stored *Unescoceratops* holotype?
+
+*2026-08-03*
+
+**Conclusion.** No. TMP 95.12.6, as Ryan and colleagues (2012) print it, is the same number as the stored TMP 1995.012.0006, written in the Royal Tyrrell Museum's padded form. Governs `type_specimen.specimen_id: [TMP 1995.012.0006]` on [*Unescoceratops koppelhusae*](../../../genera/U/Unescoceratops.yml).
+
+**Evidence.**
+- ryan2012b, p. 70: "Holotype. TMP 95.12.6, a partial left dentary (Fig. 1)."
+- ryan2023a, Introduction: "the holotype dentary (TMP 1995.012.0006) collected from Bonebed 55".
+
+**Ruled out.**
+- *A separate specimen TMP 95.12.6.* Jones (2026) prints "TMP 95.12.6—partial jaw; TMP 74.10.31—partial jaw" (jones2026a, Euceratopsia table). Its first number is the holotype unpadded; the second is referred material.
+
+**Open.** Nothing.
+
 ## References
 
 - `ryan2012b`: Ryan, M. J.; Evans, D. C.; Currie, P. J.; Brown, C. M.; Brinkman, D. (2012). New leptoceratopsids from the Upper Cretaceous of Alberta, Canada. *Cretaceous Research* 35: 69-80. doi:10.1016/j.cretres.2011.11.018
 - `ryan2023a`: Ryan, M. J.; Micucci, L.; Rizo, H.; Sullivan, C.; Lee, Y. N.; Evans, D. C. (2023). A new Late Cretaceous leptoceratopsid (Dinosauria: Ceratopsia) from the Oldman Formation (Campanian) of Alberta, Canada. *Windows into Sauropsid and Synapsid Evolution: Essays in Honor of Prof. Louis L. Jacobs*: 151-165.
 - `arbour2019a`: Arbour, V. M.; Evans, D. C. (2019). A new leptoceratopsid dinosaur from Maastrichtian-aged deposits of the Sustut Basin, northern British Columbia, Canada. *PeerJ* 7: e7926. doi:10.7717/peerj.7926
+- `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.

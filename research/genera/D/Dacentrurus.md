@@ -17,7 +17,24 @@
 
 **Open.** Whether SU 142838 marks the pit or the west end of the hill above it: the parenthesis follows "Old Swindon Hill", and the grid reference is qualified "at about". Davies (1876), on the excavation, has not been read and would settle both the spot and the level.
 
+## Is the *Dacentrurus armatus* holotype NHMUK PV OR 46013?
+
+*2026-08-03*
+
+**Conclusion.** Yes. Galton (1985) gives the holotype as BMNH 46013, and Sánchez-Fenollosa and Cobos (2025) as NHMUK PV OR46013: the same number under the museum's older and current codes, in the OR register that Sánchez-Fenollosa and Cobos print. Governs `type_specimen.specimen_id: [NHMUK PV OR 46013]` on [*Dacentrurus armatus*](../../../genera/D/Dacentrurus.yml).
+
+**Evidence.**
+- galton1985d, p. 213: "Holotype—BMNH 46013, a postcranial skeleton with parts of three cervical vertebrae and fourteen dorsal vertebrae".
+- sánchez-fenollosa2025a, p. 170: "Holotype. NHMUK PV OR46013 (Owen 1875; Galton 1985)."
+
+**Ruled out.**
+- *BMNH 46013 as a different id.* Jones (2026) gives "BMNH 46013—partial skeleton" (jones2026a, Stegosauria table). The number is the same; BMNH is the museum's older code (see [NHMUK catalogue prefixes](../../topics/nhmuk-catalogue-prefixes.md)).
+- *NHMUK PV R 46013.* No source read prints the R register for this specimen.
+
+**Open.** Nothing.
+
 ## References
 
 - `galton1985d`: Galton, P. M. (1985). British plated dinosaurs (Ornithischia, Stegosauridae). *Journal of Vertebrate Paleontology* 5(3): 211-254. doi:10.1080/02724634.1985.10011859
 - `sánchez-fenollosa2025a`: Sánchez-Fenollosa, S.; Cobos, A. (2025). New insights into the phylogeny and skull evolution of stegosaurian dinosaurs: an extraordinary cranium from the European Late Jurassic (Dinosauria: Stegosauria). *Vertebrate Zoology* 75: 165-189. doi:10.3897/vz.75.e146618
+- `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.

@@ -16,6 +16,21 @@
 
 **Open.** Kitching and Raath (1984), cited for "locality details" (barrett2019a, p. 118), have not been read and may record where on the farm the neotype was dug.
 
+## Which specimen is the *Massospondylus carinatus* type?
+
+*2026-08-01*
+
+**Conclusion.** The neotype BP/1/4934. Owen's syntypes were destroyed, and Yates and Barrett (2010) proposed BP/1/4934 in their place. Governs `type_specimen.specimen_id: [BP/1/4934]` and `specimen_type: neotype` on [*Massospondylus carinatus*](../../../genera/M/Massospondylus.yml).
+
+**Evidence.**
+- barrett2019a, p. 117: "as the original specimens were no longer accessible, Yates & Barrett (2010) formally proposed BP/1/4934 as a neotype for M. carinatus, following the earlier suggestions of Sues et al. (2004) and Barrett (2009)."
+
+**Ruled out.**
+- *BMNH R.8171, MT 124 and BP/1/5347A.* Molina-Pérez and Larramendi use these for *M. carinatus* in their speed tables: "Massospondylus carinatus (M. harriesi) BMNH R.8171" and "(M. browni) MT 124" (molina-pérez2020a, p. 167), and the embryo BP/1/5347A (p. 168). They are referred specimens, two of them filed under junior synonyms, not the type.
+
+**Open.** Nothing.
+
 ## References
 
 - `barrett2019a`: Barrett, P. M.; Chapelle, K. E. J.; Staunton, C. K.; Botha, J.; Choiniere, J. N. (2019). Postcranial osteology of the neotype specimen of Massospondylus carinatus Owen, 1854 (Dinosauria: Sauropodomorpha) from the upper Elliot Formation of South Africa. *Palaeontologia Africana* 53: 114-178.
+- `molina-pérez2020a`: Molina-Pérez, R.; Larramendi, A. (2020). Dinosaur Facts and Figures: The Sauropods and Other Sauropodomorphs. Princeton University Press.

@@ -60,9 +60,14 @@ record the outcome (see below). Two traps that cost real time:
 
 ## The two suppression files — they are not interchangeable
 
-**`adjudicated.yml`** — findings settled against a PRIMARY, storing the
-quotation that closed each one. Fully suppressed from future runs. Verdicts:
-`ours-correct`, `corrected`, `ticketed`.
+**`adjudicated.yml`** — findings settled against a PRIMARY. Fully suppressed
+from future runs. Verdicts: `ours-correct`, `corrected`, `ticketed`. Each block
+keeps `categories`, `source` and `verdict`, which the suppression needs, and a
+`research:` path to the research note that holds the quotation and the reasoning:
+the record's value and its primary under Evidence, and the reference work's
+reading under Ruled out. The reasoning is written there, not in this file, so
+sessions that never run this skill still see it. `loadAdjudicated` aborts on a
+`research:` path that does not exist.
 
 > **One entry per binomial, with several categories** —
 > `categories: [holotype, occurrence]`. A second block under the same key
@@ -165,9 +170,11 @@ primary quotation, and its Ruled out list names the reference-work readings that
 were rejected. Read `research/methods.md` too: the rule that a type's number comes
 from the designating paper, never a compilation, governs every holotype item.
 
-Decide each item on its `decision:` line, then write the outcomes into
-`adjudicated.yml` with the quotation that closed each, and re-run
-`reconcile.py`. Checklists are working files — they live in `scratch/`, and
+Decide each item on its `decision:` line. For each outcome, write a dated entry
+in the record's research file (`research/README.md` gives the form), run
+`npm run research -- --references` on it, then add a block to `adjudicated.yml`
+with `categories`, `source`, `verdict` and `research:` pointing at that file, and
+re-run `reconcile.py`. Checklists are working files — they live in `scratch/`, and
 anything worth keeping belongs in an issue.
 
 The quoting is deliberately conservative: it matches on the digit core so it

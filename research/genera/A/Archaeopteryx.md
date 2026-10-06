@@ -35,6 +35,24 @@
 
 **Open.** A member. Wellnhofer (1993) places the site in the Upper Solnhofen layers (Malm zeta 2b), and no source read equates those layers with the Solnhofen Member of the Altmühltal Formation.
 
+## Is the London neotype from the Altmühltal, the Solnhofen or the Mörnsheim Formation?
+
+*2026-08-03*
+
+**Conclusion.** The Altmühltal Formation. Niebuhr and Pürner (2014) defined it for the plattenkalks formerly called the "Solnhofener Schichten", and Wellnhofer (1993) places the London specimen in the Upper Solnhofen layers. Governs `location.formation: Altmühltal` on [*Archaeopteryx lithographica*](../../../genera/A/Archaeopteryx.yml), whose neotype is the London specimen, BMNH 37001.
+
+**Evidence.**
+- niebuhr2014a, p. 7, Abstract: "The Altmühltal Formation contains the typical lithographic plattenkalks of the western Southern Franconian Alb, which formerly has been termed 'Solnhofener Schichten'".
+- foth2025a, p. 18: "the 'Solnhofen limestone' *sensu stricto* is part of the Altmühltal Formation"; "The geologically younger Mörnsheim Formation lies on top of both these formations".
+- wellnhofer1993a, p. 5 (translated): "The London specimen thus comes from the deepest layers of the Upper Solnhofen layers".
+- jones2026c, p. 508: "Mörnsheim Fm.; Solnhofen Fm., Germany".
+
+**Ruled out.**
+- *Solnhofen Formation.* Jones (2026) uses the former name of the beds that Niebuhr and Pürner (2014) put in the Altmühltal Formation.
+- *Mörnsheim Formation.* Jones (2026) gives it for the species as a whole. It overlies the Altmühltal and yields other specimens, but the London specimen comes from the Upper Solnhofen layers.
+
+**Open.** Nothing.
+
 ## References
 
 - `wellnhofer1988a`: Wellnhofer, P. (1988). A new specimen of Archaeopteryx. *Science* 240(4860): 1790-1792. doi:10.1126/science.240.4860.1790
@@ -42,3 +60,5 @@
 - `foth2025a`: Foth, C.; van de Kamp, T.; Tischlinger, H.; Kantelis, T.; Carney, R. M.; Zuber, M.; Hamann, E.; Wallaard, J. J. W.; Lenz, N.; Rauhut, O. W. M.; Frey, E. (2025). A new Archaeopteryx from the lower Tithonian Mörnsheim Formation at Mühlheim (Late Jurassic). *Fossil Record* 28(1): 17-43. doi:10.3897/fr.28.131671
 - `wellnhofer1993a`: Wellnhofer, P. (1993). Das siebte Exemplar von Archaeopteryx aus den Solnhofener Schichten [The Seventh Specimen of Archaeopteryx from the Solnhofen Layers]. *Archaeopteryx* 11: 1-48.
 - `dames1884a`: Dames, W. (1884). Ueber Archaeopteryx. *Palaeontologische Abhandlungen* 2(3): 119-196.
+- `niebuhr2014a`: Niebuhr, B.; Pürner, T. (2014). Plattenkalk und Frankendolomit – Lithostratigraphie der Weißjura-Gruppe der Frankenalb (außeralpiner Oberjura, Bayern) [Plattenkalk and Franconian dolomite: lithostratigraphy of the White Jura Group of the Franconian Alb (extra-Alpine Upper Jurassic, Bavaria)]. *Schriftenreihe der Deutschen Gesellschaft für Geowissenschaften* 83: 5-72. doi:10.1127/sdgg/83/2014/5
+- `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.

@@ -16,6 +16,20 @@
 
 **Open.** Nothing.
 
+## What is the *Shidaisaurus jinae* holotype's museum code?
+
+*2026-07-30*
+
+**Conclusion.** LDM-LCA 9701-IV. LDM is the Lufeng Dinosaur Museum, and the paper writes the code out in full. Governs `type_specimen.specimen_id: [LDM-LCA 9701-IV]` on [*Shidaisaurus jinae*](../../../genera/S/Shidaisaurus.yml).
+
+**Evidence.**
+- wu2009a, p. 10: "Holotype: Lufeng Dinosaur Museum–Lufeng Chuanjie A'na (LDM–LCA) 9701-IV, a partial skeleton".
+
+**Ruled out.**
+- *DML-LCA 9701-IV.* Jones (2026) gives "DML-LCA 9701-IV" (jones2026c, p. 498), which swaps the letters of the code the paper spells out.
+
+**Open.** Nothing.
+
 ## References
 
 - `wu2009a`: Wu, X.; Currie, P. J.; Dong, Z.; Pan, S.; Wang, T. (2009). A New Theropod Dinosaur from the Middle Jurassic of Lufeng, Yunnan, China. *Acta Geologica Sinica (English Edition)* 83(1): 9-24. doi:10.1111/j.1755-6724.2009.00002.x

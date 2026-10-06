@@ -16,7 +16,26 @@
 
 **Open.** The exact site. Lavocat's three meters is a height above a river, not a stratigraphic level.
 
+## Which specimen is the *Majungasaurus* type?
+
+*2026-08-01*
+
+**Conclusion.** The neotype MNHN.MAJ 1, the dentary Lavocat (1955) described, set by the International Commission in Opinion 2269. Governs `type_specimen.specimen_id: [MNHN.MAJ 1]` and `specimen_type: neotype` on [*Majungasaurus crenatissimus*](../../../genera/M/Majungasaurus.yml).
+
+**Evidence.**
+- iczn2011a, p. 89: "all previous type fixations for the nominal species crenatissimus Depéret, 1896 ... are hereby set aside and the specimen MNHN.MAJ 1 (Muséum National d'Histoire Naturelle, Paris) is hereby designated as the neotype."
+
+**Ruled out.**
+- *FMNH PR 2836.* The record's earlier value, a referred specimen.
+- *FMNH PR 2778.* Molina-Pérez and Larramendi give it in a table of running speeds (molina-pérez2019a, p. 175).
+- *MNHN.MAI 1 as a different specimen.* Jones (2026) prints "MNHN.MAI 1—partial jaw (Lavocat, 1955)" (jones2026c, p. 496): the neotype, with J read as I.
+
+**Open.** Nothing.
+
 ## References
 
 - `lavocat1955a`: Lavocat, R. (1955). Sur une portion de mandibule de théropode provenant du Crétacé supérieur de Madagascar [On a portion of theropod mandible from the Upper Cretaceous of Madagascar]. *Bulletin du Muséum National d'Histoire Naturelle, Paris, 2e série* 27(3): 256-259.
 - `krause2007a`: Krause, D. W.; Sampson, S. D.; Carrano, M. T.; O'Connor, P. M. (2007). Overview of the history of discovery, taxonomy, phylogeny, and biogeography of Majungasaurus crenatissimus (Theropoda: Abelisauridae) from the Late Cretaceous of Madagascar. *Journal of Vertebrate Paleontology* 27. doi:10.1671/0272-4634(2007)27[1:OOTHOD]2.0.CO;2
+- `iczn2011a`: International Commission on Zoological Nomenclature (2011). Opinion 2269 (Case 3487). Megalosaurus crenatissimus Depéret, 1896 (currently Majungasaurus crenatissimus; Dinosauria, Theropoda): designation of a neotype. *Bulletin of Zoological Nomenclature* 68(1): 89-90. doi:10.21805/bzn.v68i1.a7
+- `molina-pérez2019a`: Molina-Pérez, R.; Larramendi, A. (2019). Dinosaur Facts and Figures: The Theropods and Other Dinosauriformes. Princeton University Press.
+- `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.

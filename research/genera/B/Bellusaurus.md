@@ -30,8 +30,25 @@
 
 **Open.** Nothing.
 
+## Is the *Bellusaurus* type IVPP V8299 or IVPP V17768?
+
+*2026-08-01*
+
+**Conclusion.** IVPP V8299. Dong (1990) designates it as the type, with V8300 as a referred composite skeleton. Moore and colleagues (2018) number individual elements from the same quarry in a series IVPP V17768. Governs `type_specimen.specimen_id: [IVPP V8299]` on [*Bellusaurus sui*](../../../genera/B/Bellusaurus.yml).
+
+**Evidence.**
+- dong1990a, *Bellusaurus sui* sp. nov. (translated): "Type (IVPP V8299) includes fragmentary cranial elements and teeth. Referred specimen (V8300) consists of a composite skeleton".
+- moore2018a, p. 3: "two maxillae (IVPP V17768.1 and IVPP V17768.3) and the parabasisphenoid (IVPP 8299.2)".
+
+**Ruled out.**
+- *IVPP V17768.* Molina-Pérez and Larramendi (2020) give it, as a juvenile, in their speed table for quadrupedal sauropodomorphs (molina-pérez2020a). Jones (2026) lists "IVPP V 8299" first and "IVPP V17768 series—multiple juvenile skeletons (Moore et al., 2018)" among the other material (jones2026b, p. 376).
+
+**Open.** Nothing.
+
 ## References
 
 - `dong1990a`: Dong, Z. (1990). Sauropoda from the Kelamaili region of the Junggar Basin, Xinjiang Autonomous Region. *Vertebrata PalAsiatica* 28(1): 43-58.
 - `moore2018a`: Moore, A. J.; Mo, J.; Clark, J. M.; Xu, X. (2018). Cranial anatomy of Bellusaurus sui (Dinosauria: Eusauropoda) from the Middle-Late Jurassic Shishugou Formation of northwest China and a review of sauropod cranial ontogeny. *PeerJ* 6. doi:10.7717/peerj.4881
 - `moore2023a`: Moore, A. J.; Barrett, P. M.; Upchurch, P.; Liao, C. C.; Ye, Y.; Hao, B.; Xu, X. (2023). Re-assessment of the Late Jurassic eusauropod Mamenchisaurus sinocanadorum Russell and Zheng, 1993, and the evolution of exceptionally long necks in mamenchisaurids. *Journal of Systematic Palaeontology* 21(1). doi:10.1080/14772019.2023.2171818
+- `molina-pérez2020a`: Molina-Pérez, R.; Larramendi, A. (2020). Dinosaur Facts and Figures: The Sauropods and Other Sauropodomorphs. Princeton University Press.
+- `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.

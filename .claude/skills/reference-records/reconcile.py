@@ -237,12 +237,25 @@ def loadAdjudicated():
     # the stratigraphic literature -- so an entry may be a list of blocks, each
     # carrying its own source and quotation. Categories union across them.
     settled = {}
+    unresolved = []
 
     for name, entry in document.items():
         blocks = entry if isinstance(entry, list) else [entry]
         settled[name] = {category
                          for block in blocks if isinstance(block, dict)
                          for category in (block.get("categories") or [])}
+
+        # The reasoning behind each block lives in research/, and the block
+        # points at it. A pointer that no longer resolves means the note moved
+        # or was never written, and the suppression has lost its evidence.
+        for block in blocks:
+            pointer = block.get("research") if isinstance(block, dict) else None
+
+            if pointer and not os.path.exists(os.path.join(DATA, pointer)):
+                unresolved.append(f"{name}: {pointer}")
+
+    if unresolved:
+        raise SystemExit("adjudicated.yml points at research notes that do not exist:\n  " + "\n  ".join(unresolved))
 
     return settled
 
@@ -841,7 +854,7 @@ def main():
              "Categories ending **-REVIEWED** have already been looked at and need no",
              "re-triage; they remain listed only because a decision is pending elsewhere.",
              "Findings settled against a primary paper are suppressed entirely via",
-             "`adjudicated.yml`, which records the quotation that closed each one.", "",
+             "`adjudicated.yml`, whose blocks point at the research note that holds each quotation.", "",
              "- `formation-differs-known-spelling-variant-REVIEWED` — compared 2026-07-30 and",
              "  found to be variant spellings of one unit, not different units. Choosing a",
              "  canonical form is deferred to #2012 (formations registry). A spelling NOT in",

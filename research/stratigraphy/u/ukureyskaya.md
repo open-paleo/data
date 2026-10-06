@@ -15,8 +15,25 @@
 
 **Open.** The age of the rest of the formation. Its Late Jurassic rests partly on radiometric dates: "K-Ar radiometric analyses on basalts and rhyolites from the base of the Ukurey Fm proposed ages between 153–157 Ma (Kimmeridgian) and 147–165 Ma (Callovian-Berriasian)" (cincotta2019a, p. 2, after Sinitsa 2011) and other studies "with no clear location" (p. 13); the Early Cretaceous rests on "Palaeo entomological and microfaunal comparisons" (p. 2). Godefroit and colleagues' "Middle to Late Jurassic" (godefroit2014a, p. 452) cites their own supplementary material, which has not been read.
 
+## Are the Ukurey and Ukureyskaya formations one unit?
+
+*2026-08-06*
+
+**Conclusion.** Yes. Godefroit and colleagues (2014) and Cincotta and colleagues (2019) place the same Kulinda beds at the base of the unit, one writing the Russian adjectival form, Ukureyskaya, and the other Ukurey. Governs the variant Ukurey on [Ukureyskaya](../../../stratigraphy/u/ukureyskaya.yml) and `location.formation: Ukureyskaya` on [*Kulindadromeus zabaikalicus*](../../../genera/K/Kulindadromeus.yml).
+
+**Evidence.**
+- godefroit2014a, p. 452: the Kulinda locality, "from the base of the Ukureyskaya Formation, dated as Middle to Late Jurassic".
+- cincotta2019a, p. 2: "The stratigraphic section at Kulinda belongs to the base of the Ukurey Formation in the Olov Depression".
+- jones2026a, Ornithischia table: *Kulindadromeus zabaikalicus*, "Ukurey Fm., Russia".
+
+**Ruled out.**
+- *A different unit.* Jones (2026) writes Ukurey, the form Cincotta and colleagues use for the same section.
+
+**Open.** Nothing.
+
 ## References
 
 - `cincotta2019a`: Cincotta, A.; Pestchevitskaya, E. B.; Sinitsa, S. M.; Markevich, V. S.; Debaille, V.; Reshetova, S. A.; Mashchuk, I. M.; Frolov, A. O.; Gerdes, A.; Yans, J.; Godefroit, P. (2019). The rise of feathered dinosaurs: Kulindadromeus zabaikalicus, the oldest dinosaur with 'feather-like' structures. *PeerJ* 7: e6239. doi:10.7717/peerj.6239
 - `hattori2023a`: Hattori, S.; Shibata, M.; Kawabe, S.; Imai, T.; Nishi, H.; Azuma, Y. (2023). New theropod dinosaur from the Lower Cretaceous of Japan provides critical implications for the early evolution of ornithomimosaurs. *Scientific Reports* 13(1). doi:10.1038/s41598-023-40804-3
 - `godefroit2014a`: Godefroit, P.; Sinitsa, S. M.; Dhouailly, D.; Bolotsky, Y. L.; Sizov, A. V.; McNamara, M. E.; Benton, M. J.; Spagna, P. (2014). A Jurassic ornithischian dinosaur from Siberia with both feathers and scales. *Science* 345(6195): 451-455. doi:10.1126/science.1253351
+- `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.

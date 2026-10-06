@@ -31,8 +31,25 @@
 
 **Open.** Nothing.
 
+## Is *Dakotadon lakotaensis* Valanginian, or Barremian as the reference works give it?
+
+*2026-08-05*
+
+**Conclusion.** Neither alone. The specimen's member gives late Valanginian to early Barremian, which spans both readings. Governs `stage: [Valanginian, Hauterivian, Barremian]` on [*Dakotadon lakotaensis*](../../../genera/D/Dakotadon.yml); the member is decided in the 2026-09-30 entry.
+
+**Evidence.**
+- boyd2015b, p. 8: the "lower Fuson Member, suggests a late Valanginian to early Barremian age (Cifelli, Davis & Sames, 2014). This is slightly older than the Barremian (Weishampel & Bjork, 1989; DiCroce & Carpenter, 2001; Norman, 2004; Paul, 2008; You & Li, 2009) or Aptian (Norman, 1998) ages previously reported".
+
+**Ruled out.**
+- *Barremian alone.* Norman (2004) gives "Lakota Formation (South Dakota), United States" and "Barremian" (norman2004a, p. 416, Table 19.1), and Jones (2026) gives "Early Cretaceous, Barremian" (jones2026a, p. 405). Both repeat Weishampel and Bjork's "possibly Barremian", which Boyd and Pagnac list among the ages their member assignment supersedes.
+- *Valanginian alone.* The record once held only the lower bound of Boyd and Pagnac's range. Carpenter and Ishida (2010) "did assign a Valanginian age to this taxon" (boyd2015b, p. 8), with the Chilson Member placement that the 2026-08-17 entry rules out.
+
+**Open.** Nothing beyond the member correlation noted in the 2026-09-30 entry.
+
 ## References
 
 - `boyd2015b`: Boyd, C. A.; Pagnac, D. C. (2015). Insight on the anatomy, systematic relationships, and age of the Early Cretaceous ankylopollexian dinosaur Dakotadon lakotaensis. *PeerJ* 3: e1263. doi:10.7717/peerj.1263
 - `weishampel1989a`: Weishampel, D. B.; Bjork, P. R. (1989). The first indisputable remains of Iguanodon (Ornithischia: Ornithopoda) from North America: Iguanodon lakotaensis, sp. nov. *Journal of Vertebrate Paleontology* 9(1): 56-66. doi:10.1080/02724634.1989.10011738
 - `sohn1979a`: Sohn, I. G. (1979). Nonmarine ostracodes in the Lakota Formation (Lower Cretaceous) from South Dakota and Wyoming. *United States Geological Survey Professional Paper* 1069: 1-24.
+- `norman2004a`: Norman, D. B. (2004). Basal Iguanodontia. In *The Dinosauria, 2nd edition*, pp. 413-437. University of California Press, Berkeley.
+- `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.

@@ -8,8 +8,8 @@ quotes the surrounding text. Most items can then be settled without opening
 anything.
 
 Output lands in scratch/audit/ alongside the report and is gitignored. Write the
-outcome on each `decision:` line, then record the settled ones in
-adjudicated.yml with the quotation that closed them.
+outcome on each `decision:` line, then write each settled one as a research
+entry on the record and point an adjudicated.yml block at it.
 
 Usage:
     python3 checklist.py holotype-differs-single-source
@@ -249,8 +249,8 @@ def main():
               "Generated from `scratch/audit/reference-reconciliation.md`. Each entry",
               "quotes what the describing paper (preferred) or erecting paper says around",
               "each competing value, so most can be settled without opening anything.",
-              "Write the outcome on `decision:` and tick the box; then record the settled",
-              "ones in `adjudicated.yml` with the quotation that closed them.", "",
+              "Write the outcome on `decision:` and tick the box; then write each settled",
+              "one as a research entry on the record, and point an `adjudicated.yml` block at it.", "",
               "**A reference work disagreeing with us is not evidence that we are wrong.**",
               "Of 58 number-differing holotype findings triaged this way, 22 were",
               "corrections to our data and 36 confirmed us.", "",

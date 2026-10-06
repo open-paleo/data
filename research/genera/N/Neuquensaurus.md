@@ -50,6 +50,22 @@
 
 **Open.** Nothing.
 
+## What are the *Neuquensaurus australis* holotype's numbers?
+
+*2026-08-01*
+
+**Conclusion.** Six caudal vertebrae, MLP-Ly 1 to MLP-Ly 6, each under its own number. Governs `type_specimen.specimen_id: [MLP-Ly 1, MLP-Ly 2, MLP-Ly 3, MLP-Ly 4, MLP-Ly 5, MLP-Ly 6]` on [*Neuquensaurus australis*](../../../genera/N/Neuquensaurus.yml).
+
+**Evidence.**
+- otero2010a, p. 401: "Holotype: MLP-Ly 1/2/3/4/5/6, caudal vertebrae."
+
+**Ruled out.**
+- *MLP Ly 1-6-V-28-1 as one number.* The record's earlier value, a single string for the six caudals.
+- *MLP Ly 1-7.* Jones (2026) gives "MLP Ly 1-7—vertebrae" (jones2026b, p. 385), one more than the holotype line lists.
+- *MCS-5/28.* Molina-Pérez and Larramendi give "Neuquensaurus australis MCS-5/28 ... Femur - Salgado et al. 2005" (molina-pérez2020a, p. 269), a femur, not the caudals the holotype line lists.
+
+**Open.** Nothing.
+
 ## References
 
 - `bonaparte1979c`: Bonaparte, J. F.; Gasparini, Z. (1979). Los saurópodos de los grupos Neuquén y Chubut, y sus relaciones cronológicas [The Sauropods of the Neuquén and Chubut Groups and their Chronological Relations]. *Actas del VII Congreso Geológico Argentino* 2: 393-406.
@@ -61,3 +77,5 @@
 - `gallina2015a`: Gallina, P. A.; Otero, A. (2015). Reassessment of Laplatasaurus araukanicus (Sauropoda: Titanosauria) from the Upper Cretaceous of Patagonia, Argentina. *Ameghiniana* 52(5): 487-501. doi:10.5710/AMGH.08.06.2015.2911
 - `otero2010a`: Otero, A. (2010). The appendicular skeleton of Neuquensaurus, a Late Cretaceous saltasaurine sauropod from Patagonia, Argentina. *Acta Palaeontologica Polonica* 55(3): 399-426.
 - `dingus2000a`: Dingus, L.; Clarke, J.; Scott, G. R.; Swisher, C. C., III; Chiappe, L. M.; Coria, R. A. (2000). Stratigraphy and magnetostratigraphic/faunal constraints for the age of sauropod embryo-bearing rocks in the Neuquén Group (Late Cretaceous, Neuquén Province, Argentina). *American Museum Novitates* 3290: 1-11.
+- `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.
+- `molina-pérez2020a`: Molina-Pérez, R.; Larramendi, A. (2020). Dinosaur Facts and Figures: The Sauropods and Other Sauropodomorphs. Princeton University Press.

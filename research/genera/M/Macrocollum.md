@@ -15,7 +15,22 @@
 
 **Open.** Nothing.
 
+## Which of the three Wachholz skeletons is the *Macrocollum* holotype?
+
+*2026-08-03*
+
+**Conclusion.** CAPPA/UFSM 0001a. The other two skeletons are paratypes. Governs `type_specimen.specimen_id: [CAPPA/UFSM 0001a]` on [*Macrocollum itaquii*](../../../genera/M/Macrocollum.yml).
+
+**Evidence.**
+- müller2018a, p. 2: "Holotype CAPPA/UFSM (Centro de Apoio à Pesquisa Paleontológica da Quarta Colônia) 0001a"; under Paratypes, "CAPPA/UFSM 0001b. An almost complete and partially articulated skeleton. CAPPA/UFSM 0001c."
+
+**Ruled out.**
+- *CAPPA/UFSM 0001b.* Molina-Pérez and Larramendi give 0001b for the species in a table of neck lengths (molina-pérez2020a, p. 160), a paratype.
+
+**Open.** Nothing.
+
 ## References
 
 - `müller2018a`: Müller, R. T.; Langer, M. C.; Dias-da-Silva, S. (2018). An exceptionally preserved association of complete dinosaur skeletons reveals the oldest long-necked sauropodomorphs. *Biology Letters* 14(11): 20180633. doi:10.1098/rsbl.2018.0633
 - `müller2023a`: Müller, R. T.; Garcia, M. S.; Bem, F. P.; Damke, L. V. S.; Fonseca, A. O.; Da Rosa, Á. A. S. (2023). On a skeletally immature individual of Unaysaurus tolentinoi (Dinosauria: Sauropodomorpha) from the Upper Triassic of southern Brazil. *The Anatomical Record* 307(4): 1071-1083. doi:10.1002/ar.25285
+- `molina-pérez2020a`: Molina-Pérez, R.; Larramendi, A. (2020). Dinosaur Facts and Figures: The Sauropods and Other Sauropodomorphs. Princeton University Press.

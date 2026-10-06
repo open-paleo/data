@@ -15,7 +15,24 @@
 
 **Open.** Nothing.
 
+## Is the *Charonosaurus* holotype Maastrichtian or Turonian?
+
+*2026-08-05*
+
+**Conclusion.** Maastrichtian. Godefroit and colleagues (2000) give the type stratum as Late Maastrichtian, on palynology. Governs `stage: [Maastrichtian]` on [*Charonosaurus jiayinensis*](../../../genera/C/Charonosaurus.yml).
+
+**Evidence.**
+- godefroit2000a, p. 878: "*Stratum typicum*. Yuliangze Formation (Late Maastrichtian, Late Cretaceous)."
+- godefroit2000a, p. 877: "A Late Maastrichtian age is proposed for the Yuliangze Formation because *Wodehouseia spinata* is considered an excellent biostratigraphic marker for Late Maastrichtian".
+
+**Ruled out.**
+- *Turonian.* Weishampel and colleagues (2004) give "Yuliangze Formation (Heilongjiang) … Turonian" (weishampel2004a, p. 441, Table 20.1). No source read dates the formation to the Turonian (see [Yuliangzi](../../../stratigraphy/y/yuliangzi.yml)). Jones (2026) gives "Yuliangze Fm., China, Late Cretaceous, Maastrichtian" (jones2026a, p. 409).
+
+**Open.** Nothing.
+
 ## References
 
 - `godefroit2000a`: Godefroit, P.; Zan, S.; Jin, L. (2000). Charonosaurus jiayinensis n.g., n.sp.,a lambeosaurine dinosaur from the Late Maastrichtian of northeastern China. *Comptes Rendus de l'Académie des Sciences - Series IIA - Earth and Planetary Science* 330(12): 875-882. doi:10.1016/s1251-8050(00)00214-7
 - `xing2022a`: Xing, H.; Gu, W.; Hai, S.; Yu, T.; Han, D.; Zhang, Y.; Zhang, S. (2022). Osteological and taxonomic reassessments of Sahaliyania elunchunorum (Dinosauria, Hadrosauridae) from the Upper Cretaceous Yuliangzi Formation, northeast China. *Journal of Vertebrate Paleontology* 41(6): e2085111. doi:10.1080/02724634.2021.2085111
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.

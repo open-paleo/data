@@ -16,9 +16,40 @@
 
 **Open.** How far above the maximum age the true age lies. Todd and colleagues argue it is close; a date from above the horizon would settle it. Jones (2026) gives "Late Jurassic, Oxfordian" in a specimen table (jones2026b, p. 375) without citing Todd and colleagues; that it derives from them is an inference.
 
+## Is the *Rhoetosaurus brownei* holotype from the Walloon Coal Measures or the Hutton Sandstone?
+
+*2026-08-05*
+
+**Conclusion.** The lowermost Walloon Coal Measures. Governs `location.group: Walloon Coal Measures` on [*Rhoetosaurus brownei*](../../../genera/R/Rhoetosaurus.yml).
+
+**Evidence.**
+- nair2012a, p. 371: "The material derives from the lowermost section of the Walloon Coal Measures".
+- todd2019a, accepted manuscript, p. 2: the fossils "are younger than expected, and definitely recovered from the Walloon Coal Measures".
+
+**Ruled out.**
+- *Hutton Sandstone, Bajocian.* Upchurch and colleagues (2004) give "Hutton Sandstone Formation (Queensland) | Bajocian" (upchurch2004a, p. 261, Table 13.1). Todd and colleagues trace the Hutton Sandstone to a 1991 review, where "no explanation was provided", and list Upchurch and colleagues among the reviews that repeated it (todd2019a, accepted manuscript, pp. 3–4). Jones (2026) gives "Walloon Coal Measures, Australia" (jones2026b, p. 375).
+
+**Open.** Nothing.
+
+## What is the *Rhoetosaurus brownei* type's registration number?
+
+*2026-08-01*
+
+**Conclusion.** QM F1659, a single registration number that covers the syntype series and the referred material. Governs `type_specimen.specimen_id: [QM F1659]` and `specimen_type: syntype` on [*Rhoetosaurus brownei*](../../../genera/R/Rhoetosaurus.yml).
+
+**Evidence.**
+- nair2012a, p. 370: "The syntype series (described in Longman, 1926) plus referred specimens (Longman, 1927a; Rich and Vickers-Rich, 2003) are all assigned to QM F1659."
+
+**Ruled out.**
+- *QM F1695.* The record's earlier value, which transposes two digits. Jones (2026) and Molina-Pérez and Larramendi (2020) both give QM F1659 (jones2026b, p. 375; molina-pérez2020a, p. 250).
+
+**Open.** Nothing.
+
 ## References
 
 - `todd2019a`: Todd, C. N.; Roberts, E. M.; Knutsen, E. M.; Rozefelds, A. C.; Huang, H. Q.; Spandler, C. (2019). Refined age and geological context of two of Australia's most important Jurassic vertebrate taxa (Rhoetosaurus brownei and Siderops kehli), Queensland. *Gondwana Research* 76: 19-25. doi:10.1016/j.gr.2019.05.008
 - `hesselbo2020a`: Hesselbo, S. P.; Ogg, J. G.; Ruhl, M.; Hinnov, L. A.; Huang, C. J. (2020). The Jurassic Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 955-1021. Elsevier, Amsterdam. doi:10.1016/B978-0-12-824360-2.00026-7
 - `nair2012a`: Nair, J. P.; Salisbury, S. W. (2012). New anatomical information on Rhoetosaurus brownei Longman, 1926, a gravisaurian sauropodomorph dinosaur from the Middle Jurassic of Queensland, Australia. *Journal of Vertebrate Paleontology* 32(2): 369-394. doi:10.1080/02724634.2012.622324
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.
+- `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, 2nd edition*, pp. 259-322. University of California Press, Berkeley.
+- `molina-pérez2020a`: Molina-Pérez, R.; Larramendi, A. (2020). Dinosaur Facts and Figures: The Sauropods and Other Sauropodomorphs. Princeton University Press.

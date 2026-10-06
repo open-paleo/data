@@ -16,8 +16,24 @@
 
 **Open.** Nothing.
 
+## Which specimen is the *Thecodontosaurus antiquus* type?
+
+*2026-08-01*
+
+**Conclusion.** The neotype, the left dentary BRSMG C4529/2, which Galton designated because the holotype right dentary was destroyed in 1940. Governs `type_specimen.specimen_id: [BRSMG C4529/2]` and `type_specimen.specimen_type: neotype` on [*Thecodontosaurus antiquus*](../../../genera/T/Thecodontosaurus.yml).
+
+**Evidence.**
+- galton2007a, p. 560: "Neotype : left dentary with teeth, BRSMG C4529/2 (Figs 4G-T), designated by Galton (1985b, p. 15)."
+- galton2007a, p. 518: "A left dentary (BRSMG C4529/2) was described by Huxley (1870) and Huene (1908a) ..., who both mistakenly thought it was the holotype ... prior to designating it as the neotype (Galton, 1985b), an action necessitated by destruction of the holotype in 1940."
+
+**Ruled out.**
+- *BRSMG Ca7465.* Jones (2026) lists "BRSMG Ca7465—right dentary (Benton et al., 2000); BRSMG C4529—left dentary (Galton, 1985)" (jones2026b, Fossil Specimens table). Ca7465 is the number Galton gives the holotype right dentary (galton2007a, Fig. 4), which the neotype replaced, and the C4529 entry drops the "/2".
+
+**Open.** Nothing.
+
 ## References
 
 - `benton2000b`: Benton, M. J.; Juul, L.; Storrs, G. W.; Galton, P. M. (2000). Anatomy and systematics of the prosauropod dinosaur Thecodontosaurus antiquus from the Upper Triassic of southwest England. *Journal of Vertebrate Paleontology* 20(1): 77-108. doi:10.1671/0272-4634(2000)020[0077:AASOTP]2.0.CO;2
 - `galton2007a`: Galton, P. M. (2007). Notes on the remains of archosaurian reptiles, mostly basal sauropodomorph dinosaurs, from the 1834 fissure fill (Rhaetian, Upper Triassic) at Clifton in Bristol, southwest England. *Revue de Paléobiologie* 26(2): 505-591.
 - `riley1836a`: Riley, H.; Stutchbury, S. (1836). A description of various fossil remains of three distinct saurian animals discovered in the autumn of 1834 in the Magnesian Conglomerate on Durdham-Down, near Bristol. *Proceedings of the Geological Society of London* 2: 397-399.
+- `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.

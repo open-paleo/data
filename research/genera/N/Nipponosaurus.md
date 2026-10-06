@@ -15,8 +15,27 @@
 
 **Open.** Nothing.
 
+## Which group is the *Nipponosaurus* holotype from?
+
+*2026-08-06*
+
+**Conclusion.** The upper Yezo Group. Nagao's (1936) "Upper Ammonites Bed" is now the Upper Yezo Group, as Suzuki and colleagues (2004) and Takasaki and colleagues (2017) give it. The record stops at group rank because no finer horizon can be recovered. Governs `location.group: Yezo` and `location.part: upper` on [*Nipponosaurus sachalinensis*](../../../genera/N/Nipponosaurus.yml).
+
+**Evidence.**
+- suzuki2004a, p. 146, Locality and Age: "Upper Ammonites Bed; now Upper Yezo Group"; under Comments, "it is presently impossible for additional geological research to be conducted at the Kawakami colliery by Japanese researchers", and "field notes made at the time of the excavation are missing".
+- takasaki2017a, p. 5: "Upper Ammonite Bed; now Upper Yezo Group."
+
+**Ruled out.**
+- *Ryugase Group.* Jones (2026) gives "Ryugase Grp., Russia" (jones2026a, p. 409), and *The Dinosauria* gives "Ryugase Group" (horner2004a, p. 442, Table 20.1). Its distribution chapter cites Nagao (1936) and Suzuki and colleagues (2004) for the name (weishampel2004b, p. 593), but Nagao gives only the "Upper Ammonites Bed" and Suzuki and colleagues give the Upper Yezo Group.
+
+**Open.** Nothing.
+
 ## References
 
 - `matsumoto1979a`: Matsumoto, T.; Obata, I. (1979). Evaluation of ammonites and other fossils from the Cretaceous of Japan for interregional correlation. *Kaseki (Fossils)* 29: 43-58.
 - `suzuki2004a`: Suzuki, D.; Weishampel, D. B.; Minoura, N. (2004). Nipponosaurus sachalinensis (Dinosauria; Ornithopoda): anatomy and systematic position within Hadrosauridae. *Journal of Vertebrate Paleontology* 24(1): 145-164. doi:10.1671/A1034-11
 - `nagao1936a`: Nagao, T. (1936). Nipponosaurus sachalinensis: a new genus and species of trachodont dinosaur from Japanese Saghalien. *Journal of the Faculty of Science, Hokkaido Imperial University, series 4, Geology and Mineralogy* 3(2): 185-220.
+- `takasaki2017a`: Takasaki, R.; Chiba, K.; Kobayashi, Y.; Currie, P. J.; Fiorillo, A. R. (2017). Reanalysis of the phylogenetic status of Nipponosaurus sachalinensis (Ornithopoda: Dinosauria) from the Late Cretaceous of Southern Sakhalin. *Historical Biology* 30(5): 1-18. doi:10.1080/08912963.2017.1317766
+- `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.
+- `horner2004a`: Horner, J. R.; Weishampel, D. B.; Forster, C. A. (2004). Hadrosauridae. In *The Dinosauria (2nd ed.)*, pp. 438-463. University of California Press, Berkeley.
+- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, 2nd edition*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027

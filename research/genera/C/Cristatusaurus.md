@@ -17,9 +17,26 @@
 
 **Open.** Taquet's fig. 7, the map Galton and Taquet cite, is not in the translated pages held here. This entry answers the Open question in [*Elrhazosaurus*](../E/Elrhazosaurus.md) on whether the name is a site: it is.
 
+## Is the *Cristatusaurus* holotype MNHN GDF 366?
+
+*2026-08-01*
+
+**Conclusion.** Yes: GDF 366 alone, with GDF 365 and the dorsal vertebrae as referred specimens. Governs `type_specimen.specimen_id: [MNHN GDF 366]` on [*Cristatusaurus lapparenti*](../../../genera/C/Cristatusaurus.yml).
+
+**Evidence.**
+- taquet1998a, p. 350: "Type specimen: (figure, f-h) MNHN GDF 366, both premaxillae, portion of right maxilla and dentary"; "Referred specimens (figure, e, i, j) MNHN GDF 365 fused premaxillae; dorsal vertebrae 357-359, 361."
+
+**Ruled out.**
+- *GDF 500.* Molina-Pérez and Larramendi (2019) give "MNN GDF500" in their theropod speed table, in a row headed "*Cristatusaurus lapparenti (Suchomimus)*" (molina-pérez2019a). Jones (2026) gives MNN GDF500 as the *Suchomimus tenerensis* type (jones2026c, p. 498).
+- *GDF 366 with 357, 358, 359, 361 and 365.* Jones (2026) lists all six as the type (jones2026c, p. 497). Taquet and Russell refer all but 366.
+
+**Open.** Nothing.
+
 ## References
 
 - `taquet1998a`: Taquet, P.; Russell, D. A. (1998). New data on spinosaurid dinosaurs from the early cretaceous of the Sahara. *Comptes Rendus de l'Académie des Sciences - Series IIA - Earth and Planetary Science* 327(5): 347-353. doi:10.1016/s1251-8050(98)80054-2
 - `galton1982a`: Galton, P. M.; Taquet, P. (1982). Valdosaurus, a hypsilophodontid dinosaur from the Lower Cretaceous of Europe and Africa. *Geobios* 15(2): 147-159.
 - `sereno1999a`: Sereno, P. C.; Beck, A. L.; Dutheil, D. B.; Larsson, H. C. E.; Lyon, G. H.; Moussa, B.; Sadleir, R. W.; Sidor, C. A.; Varricchio, D. J.; Wilson, G. P.; Wilson, J. A. (1999). Cretaceous Sauropods from the Sahara and the Uneven Rate of Skeletal Evolution Among Dinosaurs. *Science* 286(5443): 1342-1347. doi:10.1126/science.286.5443.1342
 - `taquet1976a`: Taquet, P. (1976). Géologie et paléontologie du gisement de Gadoufaoua (Aptien du Niger). *Cahiers de Paléontologie*.
+- `molina-pérez2019a`: Molina-Pérez, R.; Larramendi, A. (2019). Dinosaur Facts and Figures: The Theropods and Other Dinosauriformes. Princeton University Press.
+- `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.

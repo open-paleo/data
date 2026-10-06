@@ -17,6 +17,37 @@
 
 **Open.** No source read names the aimag outright; "South Gobi" may be the aimag's English name or a description of the region. A map or gazetteer entry for Boro Khovil would settle it.
 
+## Is the *Goyocephale* holotype from the Nemegt Formation?
+
+*2026-08-06*
+
+**Conclusion.** No. The describing paper sets the species apart from the Nemegt Formation's *Homalocephale* as probably older, and gives the type horizon only as red sandstones of undetermined age at Boro Khovil. Governs the empty `location.formation` on [*Goyocephale lattimorei*](../../../genera/G/Goyocephale.yml), alongside the 2026-08-24 entry.
+
+**Evidence.**
+- perle1982a, p. 115: the new species "is more primitive and probably stratigraphically older than *Homalocephale calathocercos* known from the Upper Cretaceous Nemegt Formation of the Gobi Desert".
+- perle1982a, p. 115: "The precise age of the red sandstone deposits at Boro Khovil is still undetermined."
+- perle1982a, p. 117: "Type horizon: Upper Cretaceous, red sandstones; no precise age determination."
+
+**Ruled out.**
+- *Nemegt Formation.* The value the record held before. The Nemegt appears in Perle and colleagues (1982) only as the unit of *Homalocephale*, which they treat as younger.
+
+**Open.** Nothing.
+
+## Is the *Goyocephale lattimorei* holotype GI SPS 100/1501?
+
+*2026-08-01*
+
+**Conclusion.** Yes, as Perle and colleagues (1982) designate it; Sullivan (2006) repeats the number. Governs `type_specimen.specimen_id: [GI SPS 100/1501]` on [*Goyocephale lattimorei*](../../../genera/G/Goyocephale.yml).
+
+**Evidence.**
+- perle1982a, p. 117: "Holotype: GI SPS 100/1501, disarticulated skeleton including complete skull roof".
+- sullivan2006a, p. 353: "Holotype—GI SPS 100/1501, incomplete skull, mandibles with teeth and incomplete postcranial skeleton."
+
+**Ruled out.**
+- *GI SPS 100/501.* Jones (2026) gives "GI SPS 100/501—partial skull and skeleton (Sullivan, 2006)" (jones2026a, p. 413). The paper it cites prints 100/1501, so the row drops a digit.
+
+**Open.** Nothing.
+
 ## References
 
 - `perle1982a`: Perle, A.; Maryańska, T.; Osmólska, H. (1982). Goyocephale lattimorei gen. et sp. n., a new flat-headed pachycephalosaur (Ornithischia, Dinosauria) from the Upper Cretaceous of Mongolia. *Acta Palaeontologica Polonica* 27(1-4): 115-127.

@@ -31,9 +31,26 @@
 
 **Open.** Cunha and colleagues (1987), which would settle the spelling and the page range, has not been read.
 
+## Does the Presidente Prudente Formation assignment reach the *Gondwanatitan* holotype?
+
+*2026-08-06*
+
+**Conclusion.** Not on any source read. The record stays in the Adamantina. The two works that give the Presidente Prudente for this taxon give no reason tied to the Álvares Machado site. Governs `location.formation: Adamantina` on [*Gondwanatitan faustoi*](../../../genera/G/Gondwanatitan.yml).
+
+**Evidence.**
+- santucci2022a, p. 380: "Álvares Machado, southeastern São Paulo State, Brazil … Adamantina Formation, Campanian–early Maastrichtian".
+- santucci2022a, p. 355: "Adamantina Formation (=Presidente Prudente Formation)", written for the *Austroposeidon* site in the city of Presidente Prudente.
+
+**Ruled out.**
+- *Presidente Prudente Formation, on Jones (2026).* The systematics table gives "Presidente Prudente Fm., Brazil" (jones2026b, p. 384) with no stratigraphic source.
+- *Presidente Prudente Formation, on Bandeira and colleagues (2016).* They write that the unit "has also revealed the presence of two other titanosaurs: *Brasilotitan nemophagus* [7] and *Gondwanatitan faustoi* [32]" (bandeira2016a, p. 17). Their reference 32 is the describing paper, cited for the taxon. The sentence names no locality, section or reason.
+
+**Open.** The same as the 2026-08-24 entry: which of Fernandes and Coimbra's units holds the site. [*Brasilotitan nemophagus*](../../../genera/B/Brasilotitan.yml) takes the Presidente Prudente on the same sentence of Bandeira and colleagues. Applying that sentence to one taxon and not the other is a choice a reader should be able to see.
+
 ## References
 
 - `santucci2022a`: Santucci, R. M.; Filippi, L. S. (2022). Last titans: Titanosaurs from the Campanian–Maastrichtian age. In *South American Sauropodomorph Dinosaurs: Record, Diversity and Evolution*, pp. 341-391. Springer International Publishing. doi:10.1007/978-3-030-95959-3_10
 - `fernandes2000a`: Fernandes, L. A.; Coimbra, A. M. (2000). Revisão estratigráfica da parte oriental da Bacia Bauru (Neocretáceo) [Stratigraphic review of the eastern portion of the Bauru Basin (Neocretaceous)]. *Revista Brasileira de Geociências* 30(4): 717-728. doi:10.25249/0375-7536.2000304717728
 - `santucci2001a`: Santucci, R. M.; Bertini, R. J. (2001). Distribuição paleogeográfica e biocronológica dos titanossauros (Saurischia, Sauropoda) do Grupo Bauru, Cretáceo Superior do Sudeste Brasileiro [Paleogeographical and biochronological distributions of the Bauru Group titanosaurids (Saurischia, Sauropoda), Upper Cretaceous of southeastern Brazil]. *Revista Brasileira de Geociências* 31(3): 307-314. doi:10.25249/0375-7536.2001313307314
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.
+- `bandeira2016a`: Bandeira, K. L. N.; Medeiros Simbras, F.; Batista Machado, E.; de Almeida Campos, D.; Oliveira, G. R.; Kellner, A. W. A. (2016). A New Giant Titanosauria (Dinosauria: Sauropoda) from the Late Cretaceous Bauru Group, Brazil. *PLOS ONE* 11(10): e0163373. doi:10.1371/journal.pone.0163373

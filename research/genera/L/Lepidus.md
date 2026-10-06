@@ -16,6 +16,23 @@
 
 **Open.** Which formation. Lehman and Chatterjee describe Lucas and colleagues' older placement as based on the "supposedly 'primitive' elements of the Otis Chalk fauna" (p. 346); Lucas and Anderson also argue from lithology (lucas1993c, p. 233). Later papers using Colorado City include Hunt (1998, hunt1998a, p. 513), Baron and Williams (2018, baron2018c, p. 129) and Marsh and Rowe (2019, marsh2019a, p. 17), and the record also cites Lovelace and colleagues (2025), which was not re-examined for this note. Nesbitt and colleagues' "probably at least older than 223 Ma, or at the youngest, lower Norian" (p. 515) rests on *Paleorhinus* and *Leptosuchus* biostratigraphy.
 
+## What is the *Lepidus* holotype?
+
+*2026-08-01*
+
+**Conclusion.** TMM 41936-1.3, from Nesbitt and Ezcurra (2015). Governs `type_specimen.specimen_id: [TMM 41936-1.3]` on [*Lepidus praecisio*](../../../genera/L/Lepidus.yml).
+
+**Evidence.**
+- nesbitt2015a, p. 515: "Holotype: TMM 41936-1.3, articulated distal ends of the left tibia and fibula and a left astragalocalcaneum"; "Referred material.—TMM 41936-1, fragment of left femoral shaft (Fig. 3), TMM 41936-1.1, partial left maxilla (Fig. 4)."
+- jones2026c, p. 493: "TMM 41936—fragments of skull and skeleton".
+- molina-pérez2019a, List of Theropods, Theropoda: "TMM 41936-1.1 Adult".
+
+**Ruled out.**
+- *TMM 41936.* Jones (2026) gives the base number, which covers the holotype and both referred specimens.
+- *TMM 41936-1.1.* Molina-Pérez and Larramendi (2019) give the referred maxilla.
+
+**Open.** Nothing.
+
 ## References
 
 - `lehman2005a`: Lehman, T.; Chatterjee, S. (2005). Depositional setting and vertebrate biostratigraphy of the Triassic Dockum Group of Texas.
@@ -25,3 +42,5 @@
 - `hunt1998a`: Hunt, A. P.; Lucas, S. G.; Heckert, A. B.; Sullivan, R. M.; Lockley, M. G. (1998). Late Triassic dinosaurs from the western United States. *Geobios* 31(4): 511-531. doi:10.1016/s0016-6995(98)80123-x
 - `baron2018c`: Baron, M. G.; Williams, M. E. (2018). A re-evaluation of the enigmatic dinosauriform Caseosaurus crosbyensis from the Late Triassic of Texas, USA and its implications for early dinosaur evolution. *Acta Palaeontologica Polonica* 63(1): 129-145. doi:10.4202/app.00372.2017
 - `marsh2019a`: Marsh, A. D.; Parker, W. G.; Langer, M. C.; Nesbitt, S. J. (2019). Redescription of the holotype specimen of Chindesaurus bryansmalli Long and Murry, 1995 (Dinosauria, Theropoda), from Petrified Forest National Park, Arizona. *Journal of Vertebrate Paleontology* 39(3): e1645682. doi:10.1080/02724634.2019.1645682
+- `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
+- `molina-pérez2019a`: Molina-Pérez, R.; Larramendi, A. (2019). Dinosaur Facts and Figures: The Theropods and Other Dinosauriformes. Princeton University Press.

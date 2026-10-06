@@ -17,8 +17,23 @@
 
 **Open.** Paulina-Carabajal and colleagues (2021), on whom Warner-Cowgill and colleagues rest the Oldman placement, have not been read; nor has Sternberg's 1950 map, which would give quarry 88's position.
 
+## Is the *Daspletosaurus torosus* holotype NMC 8506 or AMNH 5438?
+
+*2026-08-01*
+
+**Conclusion.** NMC 8506, the skull and skeleton Russell (1970) designates as the type; AMNH 5438 is his paratype. Governs `type_specimen.specimen_id: [NMC 8506]` on [*Daspletosaurus torosus*](../../../genera/D/Daspletosaurus.yml).
+
+**Evidence.**
+- russell1970a, p. 14: "Type NMC 8506 skull and skeleton, lacking hind limbs (quarry 88 of Sternberg 1905)"; "Paratype AMNH 5438 sacrum and adjacent thoracic and caudal vertebrae, pelvis, right femur, left tibia and second metatarsal (Little Sandhill Creek basin)."
+
+**Ruled out.**
+- *AMNH 5438.* Molina-Pérez and Larramendi (2019) list "*Daspletosaurus torosus* | AMNH 5438" in their theropod speed table (molina-pérez2019a, Biology: Biomechanics: Locomotion). It is the paratype, and the same book's record table gives "CMN 8506" for the species.
+
+**Open.** Nothing.
+
 ## References
 
 - `russell1970a`: Russell, D. A. (1970). Tyrannosaurs from the Late Cretaceous of western Canada. *Publications in Palaeontology* 1. doi:10.5281/zenodo.1040973
 - `carr2017a`: Carr, T. D.; Varricchio, D. J.; Sedlmayr, J. C.; Roberts, E. M.; Moore, J. R. (2017). A new tyrannosaur with evidence for anagenesis and crocodile-like facial sensory system. *Scientific Reports* 7: 44942. doi:10.1038/srep44942
 - `warner-cowgill2025a`: Warner-Cowgill, E.; Storrs, G. W.; Rogers, R. R.; Maltese, A. E. (2025). Cranial anatomy and stratigraphy of a new specimen of the tyrannosaurine dinosaur Daspletosaurus from the Judith River Formation of Central Montana, USA. *Acta Palaeontologica Polonica* 70(1): 159-174. doi:10.4202/app.01143.2024
+- `molina-pérez2019a`: Molina-Pérez, R.; Larramendi, A. (2019). Dinosaur Facts and Figures: The Theropods and Other Dinosauriformes. Princeton University Press.

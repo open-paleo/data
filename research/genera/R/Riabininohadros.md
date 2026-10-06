@@ -15,8 +15,23 @@
 
 **Open.** The revising papers, Naidin (1960) and Jeletzky, have not been read, so the Maastrichtian is known here as Averianov and Lopatin report it. Averianov and Lopatin's bibliography dates Jeletzky's paper to 1962 (*Journal of Paleontology* 36), and Ulansky (2015) to 1963 (vol. 37); the paper itself would settle the year.
 
+## What institution code does the *Riabininohadros weberae* holotype take?
+
+*2026-08-03*
+
+**Conclusion.** CCMGE 5751. Averianov and Lopatin (2019) give the museum by name, and CCMGE is its current code, with TsNIGR and ZGTM kept as aliases. Governs `type_specimen.specimen_id: [CCMGE 5751]` and `institution: CCMGE` on [*Riabininohadros weberae*](../../../genera/R/Riabininohadros.yml).
+
+**Evidence.**
+- averianov2019a, p. 399: "Chernyshev Central Research Museum of Geology and Exploration (TsNIGR Museum) 5751, fragmentary skeleton".
+
+**Ruled out.**
+- *"CGTL (ZGTM) 5751".* Jones (2026) gives "CGTL (ZGTM) 5751—partial leg" (jones2026a, p. 404). It is the same number under other renderings of the museum's name. "TsNIGR Museum" in the describing paper is an older rendering of the same museum.
+
+**Open.** Nothing.
+
 ## References
 
 - `averianov2019a`: Averianov, A. O.; Lopatin, A. V. (2019). Dinosaur Fossils from the Upper Cretaceous of Crimea. *Paleontological Journal* 53(4): 398-410. doi:10.1134/S0031030119040026
 - `lopatin2020a`: Lopatin, A. V.; Averianov, A. O. (2020). Riabininohadros, a New Genus for the Ornithischian Dinosaur Orthomerus weberae (Ornithopoda, Iguanodontia) from the Late Cretaceous of Crimea. *Paleontological Journal* 54(3): 320-322. doi:10.1134/S0031030120030089
 - `riabinin1945a`: Riabinin, A. N. (1945). Dinosaur remains in the Upper Cretaceous of Crimea. *Paleontologiya i Stratigrafiya*: 4-10.
+- `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.

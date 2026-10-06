@@ -17,9 +17,25 @@
 
 **Open.** What moved the specimen across the contact. Kirkland and Madsen (2007) state the Poison Strip placement without discussing it; a measured section through Dave's Camp Site would settle it.
 
+## Which stage is the *Cedrorestes* holotype?
+
+*2026-08-05*
+
+**Conclusion.** Aptian, the age given for the Poison Strip Sandstone Member, to which later papers reassign the specimen (see the 2026-08-15 entry). Governs `stage: [Aptian]` on [*Cedrorestes crichtoni*](../../../genera/C/Cedrorestes.yml).
+
+**Evidence.**
+- sprinkel2012a, p. 2: the lower members "were initially assigned tentative ages based on dinosaur biostratigraphy: Barremian for the Yellow Cat Member in the northern Paradox Basin, Aptian for the Poison Strip Member, and Aptian to middle Albian for the Ruby Ranch Member".
+
+**Ruled out.**
+- *Valanginian.* The record carried it until 2026-08-05. It followed the describing paper's placement near the top of the Yellow Cat Member, which later papers replace with the Poison Strip. Jones (2026) gives "Cedar Mt. Fm., Utah USA, Early Cretaceous, Aptian" (jones2026a, p. 405).
+
+**Open.** The Aptian is a tentative age for the whole member from dinosaur biostratigraphy, not a date for Dave's Camp Site. Other readings of the member run from Hauterivian to Albian (see [Poison Strip Sandstone](../../../stratigraphy/p/poison-strip-sandstone.yml)). A date for the site would settle the stage.
+
 ## References
 
 - `gilpin2007a`: Gilpin, D.; DiCroce, T.; Carpenter, K. (2007). A possible new basal hadrosaur from the Lower Cretaceous Cedar Mountain Formation of eastern Utah. In *Horns and Beaks: Ceratopsian and Ornithopod Dinosaurs*, pp. 79-89. Indiana University Press, Bloomington. doi:10.2307/j.ctt1zxz1md.10
 - `kirkland2007a`: Kirkland, J. I.; Madsen, S. K. (2007). The Lower Cretaceous Cedar Mountain Formation, eastern Utah: the view up an always interesting learning curve. In *Field Guide to Geological Excursions in Southern Utah (Geological Society of America Rocky Mountain Section 2007 Annual Meeting)*, pp. 1-108.
 - `mcdonald2010b`: McDonald, A. T.; Kirkland, J. I.; DeBlieux, D. D.; Madsen, S. K.; Cavin, J.; Milner, A. R. C.; Panzarin, L. (2010). New Basal Iguanodonts from the Cedar Mountain Formation of Utah and the Evolution of Thumb-Spiked Dinosaurs. *PLoS ONE* 5(11): e14075. doi:10.1371/journal.pone.0014075
 - `kirkland2016a`: Kirkland, J. I.; Suarez, M.; Suarez, C.; Hunt-Foster, R. (2016). The Lower Cretaceous in east-central Utah — the Cedar Mountain Formation and its bounding strata. *Geology of the Intermountain West* 3: 101-228. doi:10.31711/giw.v3.pp101-228
+- `sprinkel2012a`: Sprinkel, D. A.; Madsen, S. K.; Kirkland, J. I.; Waanders, G. L.; Hunt, G. J. (2012). Cedar Mountain and Dakota Formations around Dinosaur National Monument—evidence of the first incursion of the Cretaceous Western Interior Seaway into Utah. *Utah Geological Survey Special Study* 143: 1-21.
+- `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.

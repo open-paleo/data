@@ -17,9 +17,25 @@
 
 **Open.** A coordinate. Antunes and Pais (1978) print Portuguese military grid coordinates for their measured section in the Cerâmica do Mondego clay pit, on sheet 240 (Montemor-o-Velho) of the 1:25,000 map. Converting that grid reference, and confirming that the 1991 teeth came from that section, would give the position.
 
+## Are the Taveiro beds an unnamed unit?
+
+*2026-08-06*
+
+**Conclusion.** No. The clays and sands of Taveiro that yield the type tooth are the Taveiro Formation, which Kullberg and colleagues (2013) attribute to Reis (1983). Kullberg and colleagues name *Euronychodon* among its fossils. The describing paper gives the beds only descriptively. Governs `location.formation: Taveiro` on [*Euronychodon portucalensis*](../../../genera/E/Euronychodon.yml).
+
+**Evidence.**
+- antunes1991a, p. 117: "*Formation et âge :* Argiles et sables de Taveiro" ("Clays and sands of Taveiro", translated).
+- kullberg2013a, Chapter III.3, second filling stage: "the base of the Taveiro Formation filling (Reis, 1983)", whose mudstones yield "remains of small vertebrates (such as the dinosaurs *Taveirosaurus*" and *Euronychodon* (translated).
+
+**Ruled out.**
+- *An unnamed unit.* The distribution chapter of *The Dinosauria* lists the species under "16.3. DISTRITO DO COIMBRA, PORTUGAL … 2. Unnamed unit (Antunes and Sigogneau-Russell 1991, 1992; Galton 1996)" (weishampel2004b, p. 592), and the record once held "Unnamed (Taveiro)". Both follow the describing paper's descriptive wording, and the unit has had a formal name since Reis (1983).
+
+**Open.** Nothing.
+
 ## References
 
 - `antunes1991a`: Antunes, M. T.; Sigogneau-Russell, D. (1991). Nouvelles données sur les dinosaures du Crétacé supérieur du Portugal [New Data on the Dinosaurs of the Upper Cretaceous of Portugal]. *Comptes Rendus de l'Académie des Sciences, Paris, Série II* 313: 113-119.
 - `kullberg2013a`: Kullberg, J. C.; Rocha, R. B.; Soares, A. F.; Rey, J.; Terrinha, P.; Azerêdo, A. C.; Callapez, P.; Duarte, L. V.; Kullberg, M. C.; Martins, L.; Miranda, R.; Alves, C.; Mata, J.; Madeira, J.; Mateus, O.; Moreira, M.; Nogueira, C. R. (2013). A Bacia Lusitaniana: Estratigrafia, Paleogeografia e Tectónica [The Lusitanian Basin: stratigraphy, paleogeography and tectonics]. In *Geologia de Portugal, Volume II – Geologia Meso-cenozóica de Portugal*, pp. 989-1141. Escolar Editora, Lisboa.
 - `antunes2003a`: Antunes, M. T.; Mateus, O. (2003). Dinosaurs of Portugal. *Comptes Rendus Palevol* 2(1): 77-95. doi:10.1016/s1631-0683(03)00003-4
 - `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
+- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, 2nd edition*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027

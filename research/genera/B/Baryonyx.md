@@ -15,6 +15,22 @@
 
 **Open.** Nothing.
 
+## How is the *Baryonyx walkeri* holotype number written?
+
+*2026-08-03*
+
+**Conclusion.** NHMUK PV R 9951. Charig and Milner (1986) number the holotype R.9951. It belongs to the R series of the Natural History Museum's palaeontological vertebrate collection, PV (see [NHMUK catalogue prefixes](../../topics/nhmuk-catalogue-prefixes.md)). Governs `type_specimen.specimen_id: [NHMUK PV R 9951]` on [*Baryonyx walkeri*](../../../genera/B/Baryonyx.yml).
+
+**Evidence.**
+- charig1986a, Fig. 1 caption: "*Baryonyx walkeri* holotype, no. R.9951".
+
+**Ruled out.**
+- *NHMUK VP R9951.* The record carried it until 2026-08-03. VP is a misprint for PV, as the topic note records for this same number.
+- *NHMUK R9951.* Jones (2026) gives the same number without the collection letters (jones2026c, p. 497).
+
+**Open.** Nothing.
+
 ## References
 
 - `charig1986a`: Charig, A. J.; Milner, A. C. (1986). Baryonyx, a remarkable new theropod dinosaur. *Nature* 324(6095): 359-361. doi:10.1038/324359a0
+- `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.

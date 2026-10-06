@@ -47,6 +47,51 @@
 
 **Open.** The museum's catalogue would confirm it. Huene's (1905) list of new names gives the specimen only as "Skeleton, Stuttgart" (translated).
 
+## Is the P. engelhardti lectotype from the Trossingen, Feuerletten or Klettgau Formation?
+
+*2026-08-03*
+
+**Conclusion.** The Trossingen Formation. "Feuerletten" is the Bavarian name for the same beds, and Klettgau is a Swiss unit. Governs `location.formation: Trossingen` on [*Plateosaurus engelhardti*](../../../genera/P/Plateosaurus.yml).
+
+**Evidence.**
+- sues2025a, p. 462: the lectotype UEN 552 is "from the Feuerletten (Trossingen Formation) of Heroldsberg near Nürnberg, Bavaria".
+- moser2003a, title: "*Plateosaurus engelhardti* Meyer, 1837 … aus dem Feuerletten (Mittelkeuper; Obertrias) von Bayern".
+
+**Ruled out.**
+- *Klettgau.* The record held it until 2026-08-03. Jones (2026) lists "Klettgau Fm., Switzerland" among the occurrences of *P. trossingensis* (jones2026b, p. 372); the Heroldsberg lectotype is from Bavaria. That the value came from the Swiss material is an inference.
+- *Feuerletten Formation as a separate unit.* Weishampel and colleagues (2004) give "Feuerletten Formation (Bayern), Germany" (weishampel2004a, p. 236, Table 12.1). Sues and Schoch (2025) equate it with the Trossingen Formation, so this is the unit's older regional name, not a rival reading.
+
+**Open.** Nothing.
+
+## Which specimen is the P. engelhardti type?
+
+*2026-08-01*
+
+**Conclusion.** The sacrum UEN 552, as lectotype. Meyer (1837) named the species on a series of bones and fixed no type; Moser (2003) chose the lectotype from it. Governs `type_specimen.specimen_id: [UEN 552]` and `specimen_type: lectotype` on [*Plateosaurus engelhardti*](../../../genera/P/Plateosaurus.yml).
+
+**Evidence.**
+- moser2003a, p. 161: "Of the prevailing 11 syntypes of *Plateosaurus engelhardti* MEYER, 1837 … the sacrum (UEN 552) received the highest attention and is therefore fixed in this work as the lectotype".
+
+**Ruled out.**
+- *POL 76.* Molina-Pérez and Larramendi list "*Plateosaurus engelhardti* POL 76" and note that "It was known as *Dimodosaurus poligniensis*" (molina-pérez2020a, table "Chronology of the largest early sauropodomorphs in history"). It is a French skeleton referred to the species, not part of Meyer's series.
+
+**Open.** Nothing.
+
+## Are SMNS 17928 or SMNS 11838 the P. gracilis holotype?
+
+*2026-08-01*
+
+**Conclusion.** Neither; the holotype is SMNS 5715 (see the entry on its number). Both are specimens of the old *Sellosaurus gracilis* hypodigm that Yates (2003) moves to *Efraasia minor*. Governs `type_specimen.specimen_id: [SMNS 5715]` on [*Plateosaurus gracilis*](../../../genera/P/Plateosaurus.yml).
+
+**Evidence.**
+- yates2003b, p. 329, *Efraasia minor*: "Holotype. SMNS 11838, incomplete adult postcranium"; "Referred material. SMNS 12188–92 … 12684, 17928".
+- galton1985c, p. 12: "Holotype: SMNS 5715, a partial postcranial skeleton".
+
+**Ruled out.**
+- *SMNS 17928 and SMNS 11838.* Molina-Pérez and Larramendi give both under *Plateosaurus gracilis* (molina-pérez2020a, table "Sauropod speed"; SMNS 17928 also in its size table, "Partial skeleton - Galton 1985"). SMNS 11838 is the holotype of *Teratosaurus minor*, now *Efraasia minor*, and 17928 is referred to that species.
+
+**Open.** Nothing.
+
 ## References
 
 - `sues2025a`: Sues, H. D.; Schoch, R. R. (2025). Synopsis of the Triassic reptiles from Germany. *Fossil Record* 28(2): 411-483. doi:10.3897/fr.28.164405
@@ -54,3 +99,6 @@
 - `yates2003b`: Yates, A. M. (2003). The species taxonomy of the sauropodomorph dinosaurs from the Löwenstein Formation (Norian, Late Triassic) of Germany. *Palaeontology* 46(2): 317-337. doi:10.1111/j.0031-0239.2003.00301.x
 - `moser2003a`: Moser, M. (2003). Plateosaurus engelhardti Meyer, 1837 (Dinosauria: Sauropodomorpha) aus dem Feuerletten (Mittelkeuper; Obertrias) von Bayern. *Zitteliana Reihe B* 24: 3-186.
 - `galton1985c`: Galton, P. M. (1985). The poposaurid thecodontian Teratosaurus suevicus v. Meyer, plus referred specimens mostly based on prosauropod dinosaurs, from the Middle Stubensandstein (Upper Triassic) of Nordwürttemberg. *Stuttgarter Beiträge zur Naturkunde, Serie B (Geologie und Paläontologie)* 116: 1-29.
+- `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `molina-pérez2020a`: Molina-Pérez, R.; Larramendi, A. (2020). Dinosaur Facts and Figures: The Sauropods and Other Sauropodomorphs. Princeton University Press.

@@ -15,6 +15,27 @@
 
 **Open.** Wilkinson and colleagues (2020), the palynological source, has not been read.
 
+## What stage is the *Sphaerotholus goodwini* holotype?
+
+*2026-08-05*
+
+**Conclusion.** Late Campanian. The species is known only from the holotype and one referred specimen from the same De-na-zin site, so the describing authors' statement about the species dates the holotype. Governs `stage: [Campanian]` on *Sphaerotholus goodwini* ([*Sphaerotholus*](../../../genera/S/Sphaerotholus.yml)).
+
+**Evidence.**
+- williamson2003a, p. 780: "The holotype and only referred specimen are from the head of Willow Wash … De-na-zin Member, Kirtland Formation, NMMNH locality L-3921."
+- williamson2003a, p. 799: "*S. goodwini*, from the upper Campanian Kirtland Formation of New Mexico, and *S. buchholtzae* from the late Maastrichtian of the Hell Creek Formation of Montana".
+- longrich2010b, p. 280: "the late Campanian *Sphaerotholus goodwini*".
+
+**Ruled out.**
+- *Hell Creek Formation, late Maastrichtian.* Weishampel and colleagues (2004) give *S. goodwini* the same row as *S. buchholtzae*, "Hell Creek Formation (Montana), United States | late Maastrichtian" (weishampel2004a, p. 465, Table 21.1). Williamson and Carr give that unit and age to *S. buchholtzae* only.
+- *Campanian–Maastrichtian.* Jones (2026) gives "USA and Canada *Late Cretaceous, Campanian/Maastrichtian*" (jones2026a, p. 414), a range across the specimens it lists, not a date for the holotype's horizon.
+
+**Open.** One reading carries the De-na-zin Member into the lowermost Maastrichtian. A measured level for locality L-3921 would show whether the holotype sits that high.
+
 ## References
 
 - `woodruff2023a`: Woodruff, D. C.; Schott, R. K.; Evans, D. C. (2023). Two new species of small-bodied pachycephalosaurine (Dinosauria, Marginocephalia) from the uppermost Cretaceous of North America suggest hidden diversity in well-sampled formations. *Papers in Palaeontology* 9(6): e1535. doi:10.1002/spp2.1535
+- `williamson2003a`: Williamson, T. E.; Carr, T. D. (2003). A new genus of derived pachycephalosaurian from western North America. *Journal of Vertebrate Paleontology* 22(4): 779-801. doi:10.1671/0272-4634(2002)022[0779:angodp]2.0.co;2
+- `longrich2010b`: Longrich, N. R.; Sankey, J.; Tanke, D. (2010). Texacephale langstoni, a new genus of pachycephalosaurid (Dinosauria: Ornithischia) from the upper Campanian Aguja Formation, southern Texas, USA. *Cretaceous Research* 31(2): 274-284. doi:10.1016/j.cretres.2009.12.002
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.

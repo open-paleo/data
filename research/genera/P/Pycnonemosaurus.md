@@ -18,6 +18,22 @@
 
 **Open.** Which group. Iori and colleagues (2021) cite both Kellner and Campos and Bittencourt and Langer and still write that *Pycnonemosaurus* is "probably correlated to the Bauru Group (Kellner and Campos, 2002; Sales et al., 2018)" (iori2021a, p. 2). Sales and colleagues (2018), not read, would show what that correlation rests on.
 
+## Is the *Pycnonemosaurus* holotype from the Cachoeira do Bom Jardim Formation?
+
+*2026-08-06*
+
+**Conclusion.** No source read places it there. The redescription assigns the site to the Parecis Group and names no formation within it, so the record carries the group alone. Governs `location.group: Parecis` and the empty `location.formation` on [*Pycnonemosaurus nevesi*](../../../genera/P/Pycnonemosaurus.yml).
+
+**Evidence.**
+- kellner2002a, p. 164: "a red conglomeratic sandstone, which is referred to the Bauru Group".
+- delcourt2017a, p. 2: "recent work has shown that this locality is actually part of the Parecis Group".
+- weska2006a, p. 79: the Cachoeira do Bom Jardim is one of the formations "encompassed in the Parecis Group" (translated).
+
+**Ruled out.**
+- *Cachoeira do Bom Jardim Formation.* The record's earlier value, and still the unit its description names. It is a formation of Weska's Parecis Group, so it does not contradict the group, but neither Kellner and Campos (2002) nor Delcourt (2017) puts Fazenda Roncador in it, and Weska names neither the site nor the taxon.
+
+**Open.** Which Parecis formation, if any, holds the site; see the entry above for whether the group is Parecis at all.
+
 ## References
 
 - `kellner2002a`: Kellner, A. W. A.; Campos, D. D. A. (2002). On a theropod dinosaur (Abelisauria) from the continental Cretaceous of Brazil. *Arquivos do Museu Nacional, Rio de Janeiro* 60(3): 163-170. doi:10.5281/zenodo.13660782

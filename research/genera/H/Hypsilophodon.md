@@ -18,9 +18,25 @@
 
 **Open.** Nothing.
 
+## What is the *Hypsilophodon foxii* holotype's number?
+
+*2026-08-03*
+
+**Conclusion.** NHMUK PV R 197, the skull Galton (1974) identifies as the holotype; Huxley (1870) gives no number. Governs `type_specimen.specimen_id: [NHMUK PV R 197]` on [*Hypsilophodon foxii*](../../../genera/H/Hypsilophodon.yml); the prefix follows [NHMUK catalogue prefixes](../../topics/nhmuk-catalogue-prefixes.md).
+
+**Evidence.**
+- galton1974a, p. 7: "R197. The holotype, a skull of a small individual plus a partial atlas, a cervical vertebra and a dorsal centrum."
+- jones2026a, Ornithopoda table: "NHMUK R197—skull and fragments".
+
+**Ruled out.**
+- *A different number.* Jones (2026) gives the same number without the collection code PV.
+
+**Open.** Nothing.
+
 ## References
 
 - `galton1974a`: Galton, P. M. (1974). The ornithischian dinosaur Hypsilophodon from the Wealden of the Isle of Wight. *Bulletin of the British Museum (Natural History), Geology* 25: 1-152.
 - `galton2009a`: Galton, P. M. (2009). Notes on Neocomian (Lower Cretaceous) ornithopod dinosaurs from England - Hypsilophodon, Valdosaurus, "Camptosaurus", "Iguanodon" - and referred specimens from Romania and elsewhere. *Revue de Paléobiologie, Genève* 28(1): 211-273.
 - `huxley1870a`: Huxley, T. H. (1870). On Hypsilophodon Foxii, a new Dinosaurian from the Wealden of the Isle of Wight. *Quarterly Journal of the Geological Society of London* 26(1-2): 3-12. doi:10.1144/gsl.jgs.1870.026.01-02.07
 - `bonsor2023a`: Bonsor, J. A.; Lockwood, J. A. F.; Leite, J. V.; Scott-Murray, A.; Maidment, S. C. R. (2023). The osteology of the holotype of the British iguanodontian dinosaur Mantellisaurus atherfieldensis. *Monographs of the Palaeontographical Society* 177(665): 1-63. doi:10.1080/02693445.2023.2234156
+- `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.

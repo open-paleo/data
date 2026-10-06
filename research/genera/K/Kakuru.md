@@ -18,7 +18,26 @@
 
 **Open.** Nothing.
 
+## What is the *Kakuru* type specimen, and which institution code does it take?
+
+*2026-08-03*
+
+**Conclusion.** SAMA P17926, the South Australian Museum's plastoholotype cast; Molnar and Pledge (1980) report the holotype itself lost. SAMA is the South Australian Museum's code; the paper's SAM is the South African Museum's. Governs `type_specimen.specimen_id: [SAMA P17926]` and `type_specimen.institution: SAMA` on [*Kakuru kujani*](../../../genera/K/Kakuru.yml).
+
+**Evidence.**
+- molnar1980a, p. 281: "Holotype. Lost; plastoholotype cast (from the Australian Museum mould) South Australian Museum (SAM) P17926. Incomplete right tibia."
+- jones2026c, Coelurosauria table: "SAM P17926—tibia and fibula fragments; SAM P18010—toe".
+- molina-pérez2019a, List of Theropods, Tyrannosauroidea: "SAM P17926".
+
+**Ruled out.**
+- *SAM P17926.* The paper's own abbreviation, which Jones (2026) and Molina-Pérez and Larramendi (2019) repeat, collides with the South African Museum.
+- *SAM P18010 as part of the type.* Jones (2026) lists the pedal phalanx in the same cell. Molnar and Pledge (1980) designate only the tibia.
+
+**Open.** Nothing.
+
 ## References
 
 - `molnar1980a`: Molnar, R. E.; Pledge, N. S. (1980). A new theropod dinosaur from South Australia. *Alcheringa: An Australasian Journal of Palaeontology* 4(4): 281-287. doi:10.1080/03115518008558972
 - `barrett2010b`: Barrett, P. M.; Kear, B. P.; Benson, R. B. J. (2010). Opalized archosaur remains from the Bulldog Shale (Aptian: Lower Cretaceous) of South Australia. *Alcheringa: An Australasian Journal of Palaeontology* 34(3): 293-301. doi:10.1080/03115511003664440
+- `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
+- `molina-pérez2019a`: Molina-Pérez, R.; Larramendi, A. (2019). Dinosaur Facts and Figures: The Theropods and Other Dinosauriformes. Princeton University Press.

@@ -15,7 +15,22 @@
 
 **Open.** The site's own position within the mapped area, which neither paper prints.
 
+## Is the *Prenocephale* holotype ZPAL MgD-I/104 or "Z. Pal. No. MgD-I/104"?
+
+*2026-08-03*
+
+**Conclusion.** ZPAL MgD-I/104. Maryańska and Osmólska (1974) print the number as "Z. Pal. No. MgD-I/104"; ZPAL is the current form of the same code, and "No." is not part of the number. Governs `type_specimen.specimen_id: [ZPAL MgD-I/104]` on [*Prenocephale prenes*](../../../genera/P/Prenocephale.yml).
+
+**Evidence.**
+- maryańska1974a, p. 53: "*Type specimen:* One specimen (Z. Pal. No. MgD-I/104) including perfectly preserved skull with dentition, without mandibles".
+
+**Ruled out.**
+- *"Z. Pal. No. MgD-I/104" as the stored form.* Jones (2026) copies the describing paper's printing (jones2026a, *Prenocephale prenes* table row). It is the same specimen under the older form of the collection code.
+
+**Open.** Nothing.
+
 ## References
 
 - `maryańska1974a`: Maryańska, T.; Osmólska, H. (1974). Pachycephalosauria, a new suborder of ornithischian dinosaurs. *Palaeontologia Polonica* 30: 45-102.
 - `gradziński1972a`: Gradziński, R.; Jerzykiewicz, T. (1972). Additional geographical and geological data from the Polish-Mongolian Palaeontological Expeditions. *Palaeontologia Polonica* 27: 17-30.
+- `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.

@@ -32,6 +32,20 @@
 
 **Open.** Dong and colleagues are not in the record's `references`. The site lies about 300 m from the ferry the locality is named for.
 
+## What is the *Mamenchisaurus youngi* holotype's number?
+
+*2026-08-01*
+
+**Conclusion.** ZDM 0083, from the describing paper. Governs `type_specimen.specimen_id: [ZDM 0083]` on [*Mamenchisaurus youngi*](../../../genera/M/Mamenchisaurus.yml).
+
+**Evidence.**
+- pi1996a, English translation, under Specimen: "Specimen No ZDM0083 is housed at the Zigong Dinosaur Museum."
+
+**Ruled out.**
+- *ZDM 003.* Molina-Pérez and Larramendi give "ZDM 003" in a table of estimated running speeds (molina-pérez2020a, p. 168), one digit short.
+
+**Open.** The Chinese original has not been read; the number is from the translation.
+
 ## References
 
 - `ksepka2006a`: Ksepka, D. T.; Norell, M. A. (2006). Erketu Ellisoni, a Long-necked Sauropod from Bor Guvé (Dornogov Aimag, Mongolia). *American Museum Novitates* 3508(1). doi:10.1206/0003-0082(2006)3508[1:eealsf]2.0.co;2
@@ -40,3 +54,4 @@
 - `molina-pérez2020a`: Molina-Pérez, R.; Larramendi, A. (2020). Dinosaur Facts and Figures: The Sauropods and Other Sauropodomorphs. Princeton University Press.
 - `dong1983a`: Dong, Z.; Zhou, S.; Zhang, H. (1983). [Dinosaurs from the Jurassic of Sichuan]. *Palaeontologica Sinica, New Series C, Whole Number* 162(23): 1-136.
 - `young1954a`: Young, C. C. (1954). On a new sauropod from Yiping, Szechuan, China. *Acta Paleontologica Sinica* 2(4): 355-369.
+- `pi1996a`: Pi, L.; Ou, Y.; Ye, Y. (1996). A new species of sauropod from Zigong, Sichuan, Mamenchisaurus youngi. In *Papers on Geosciences Contributed to the 30th International Geological Congress*, pp. 87-91.

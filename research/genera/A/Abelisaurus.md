@@ -16,8 +16,28 @@
 
 **Open.** Whether the holotype is from the Pala Mecánica quarry. Powell's "this locality" follows the sentence naming that quarry but sits under a heading for the whole Lago Pellegrini area, whose sites he describes as several. A collection record of the Museo de Cipolletti, or a paper naming the quarry for MPCA-PV 11098, would settle it.
 
+## How is the *Abelisaurus comahuensis* holotype number written?
+
+*2026-08-03*
+
+**Conclusion.** MPCA-PV 11098: the number the describing paper gives, with the Cipolletti museum's current fossil prefix. Governs `type_specimen.specimen_id: [MPCA-PV 11098]` on [*Abelisaurus comahuensis*](../../../genera/A/Abelisaurus.yml).
+
+**Evidence.**
+- bonaparte1985b (read in English translation, without the original folios), *Abelisaurus comahuensis* sp. nov.: "HOLOTYPE: Museo de Cipolleti, No. 11098".
+- sabaj2020a, p. 604: "MPCA: Museo provincial de Cipolletti "Carlos Ameghino", Cipolletti. Current as: MPCA-PV (fossils)."
+- jones2026c, p. 495: "MC 11098—partial skull"; molina-pérez2019a, List of Theropods, Abelisauridae: "MC 11098 Undetermined age".
+
+**Ruled out.**
+- *MC 11098.* Both reference works use an abbreviation of the museum that the registry does not use. The number is the same.
+- *MPCA 11098.* The record once held this form. It is the institution code without the collection code that Sabaj gives for fossils.
+
+**Open.** Nothing.
+
 ## References
 
 - `bonaparte1985b`: Bonaparte, J. F.; Novas, F. E. (1985). Abelisaurus comahuensis, n.g., n.sp., Carnosauria del Crétacico Tardio de Patagonia [Abelisaurus comahuensis, n.g., n.sp., Carnosauria from the Late Cretaceous of Patagonia]. *Ameghiniana* 21: 259-265.
 - `powell2003a`: Powell, J. E. (2003). Revision of South American Titanosaurid dinosaurs: palaeobiological, palaeobiogeographical and phylogenetic aspects. *Records of the Queen Victoria Museum* 111: 1-173.
 - `cerda2021a`: Cerda, I.; Zurriaguz, V. L.; Carballido, J. L.; González, R.; Salgado, L. (2021). Osteology, paleohistology and phylogenetic relationships of Pellegrinisaurus powelli (Dinosauria: Sauropoda) from the Upper Cretaceous of Argentinean Patagonia. *Cretaceous Research* 128. doi:10.1016/j.cretres.2021.104957
+- `sabaj2020a`: Sabaj, M. H. (2020). Codes for natural history collections in ichthyology and herpetology. *Copeia* 108(3): 593-669. doi:10.1643/ASIHCODONS2020
+- `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
+- `molina-pérez2019a`: Molina-Pérez, R.; Larramendi, A. (2019). Dinosaur Facts and Figures: The Theropods and Other Dinosauriformes. Princeton University Press.

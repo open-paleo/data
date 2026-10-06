@@ -32,9 +32,24 @@
 
 **Open.** Whether the section's reference point is close enough to the excavation to stand as the quarry's position. Wings and Sander (2012), on the Langenberg vertebrate assemblage, has not been read and may give the site's own position.
 
+## Is the *Europasaurus holgeri* holotype one number or a series?
+
+*2026-07-30*
+
+**Conclusion.** One number, DFMMh/FV 291, which covers the disarticulated skull and vertebral elements of one individual. Governs `type_specimen.specimen_id: [DFMMh/FV 291]` on [*Europasaurus holgeri*](../../../genera/E/Europasaurus.yml).
+
+**Evidence.**
+- sander2006a, systematic section: "Holotype. DFMMh/FV 291: disarticulated left premaxilla; right maxilla; right quadratojugal; … cervical and sacral vertebrae; and cervical and dorsal ribs of one individual".
+
+**Ruled out.**
+- *A "DFMMh/FV 291 series".* Jones (2026) prints "DFMMh/FV 291 series—partial skull and skeleton (Sander et al. 2006)" (jones2026b, p. 379). The paper it cites gives a single catalogue number for the many elements, so no series of numbers stands behind the phrase.
+
+**Open.** Nothing.
+
 ## References
 
 - `evers2020a`: Evers, S. W.; Wings, O. (2020). Late Jurassic theropod dinosaur bones from the Langenberg Quarry (Lower Saxony, Germany) provide evidence for several theropod lineages in the central European archipelago. *PeerJ* 8: e8437. doi:10.7717/peerj.8437
 - `zuo2017a`: Zuo, F.; Heimhofer, U.; Huck, S.; Luppold, F. W.; Wings, O.; Erbacher, J. (2017). Sedimentology and depositional sequences of a Kimmeridgian carbonate ramp system, Lower Saxony Basin, Northern Germany. *Facies* 64(1). doi:10.1007/s10347-017-0513-0
 - `sander2006a`: Sander, P. M.; Mateus, O.; Laven, T.; Knötschke, N. (2006). Bone histology indicates insular dwarfism in a new Late Jurassic sauropod dinosaur. *Nature* 441: 739-741. doi:10.1038/nature04633
 - `carballido2013a`: Carballido, J. L.; Sander, M. P. (2013). Postcranial axial skeleton of Europasaurus holgeri (Dinosauria, Sauropoda) from the Upper Jurassic of Germany: implications for sauropod ontogeny and phylogenetic relationships of basal Macronaria. *Journal of Systematic Palaeontology* 12(3): 335–387. doi:10.1080/14772019.2013.764935
+- `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.

@@ -17,8 +17,25 @@
 
 **Open.** The tie between the printed point and the holotype runs through the site's names, Caieira and Ponto 1, not through a statement about the specimen, and Soares and colleagues give the point for a geological type section, not a quarry. A position printed for the Caieira quarry itself would confirm it.
 
+## Is MCT 1719-R part of the *Trigonosaurus pricei* holotype?
+
+*2026-07-30*
+
+**Conclusion.** No. The holotype is MCT 1488-R alone; Campos and colleagues (2005) designate the ten caudals MCT 1719-R as the paratype. Governs `type_specimen.specimen_id: [MCT 1488-R]` on [*Trigonosaurus pricei*](../../../genera/T/Trigonosaurus.yml).
+
+**Evidence.**
+- campos2005a, p. 567: "Holotype – incomplete vertebral column formed by five cervical vertebrae, ten dorsals (last cervical and all dorsals articulated), sacrum and ilium (MCT 1488-R)".
+- campos2005a, p. 567: "Paratype – ten caudals (MCT 1719-R)".
+
+**Ruled out.**
+- *MCT 1488-R with MCT 1719-R as the type.* It folds the paratype into the holotype. Jones (2026) gives MCT 1719-R as the holotype of a different species, *Caieiria allocaudata* (jones2026b, Rinconsauria table), and lists MCT 1488-R under *Baurutitan britoi*. Molina-Pérez and Larramendi (2020) give "MCT 1488-R" alone (molina-pérez2020a, List of Sauropods).
+
+**Open.** Nothing.
+
 ## References
 
 - `soares2020a`: Soares, M. V. T.; Basilici, G.; Marinho, T. S.; Martinelli, A. G.; Marconato, A.; Mountney, N. P.; Colombera, L.; Mesquita, Á. F.; Vasques, J. T.; Abrantes Junior, F. R.; Ribeiro, L. C. B. (2020). Sedimentology of a distributive fluvial system: the Serra da Galga Formation, a new lithostratigraphic unit (Upper Cretaceous, Bauru Basin, Brazil). *Geological Journal* 56(2): 951-975. doi:10.1002/gj.3987
 - `campos2005a`: Campos, D. A.; Kellner, A. W. A.; Bertini, R. J.; Santucci, R. M. (2005). On a titanosaurid (Dinosauria, Sauropoda) vertebral column from the Bauru Group, Late Cretaceous of Brazil. *Arquivos do Museu Nacional, Rio de Janeiro* 63(3): 565-593.
 - `silvajunior2022a`: Silva Junior, J. C. G.; Martinelli, A. G.; Marinho, T. S.; da Silva, J. I.; Langer, M. C. (2022). New specimens of Baurutitan britoi and a taxonomic reassessment of the titanosaur dinosaur fauna (Sauropoda) from the Serra da Galga Formation (Late Cretaceous) of Brazil. *PeerJ* 10: e14333. doi:10.7717/peerj.14333
+- `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.
+- `molina-pérez2020a`: Molina-Pérez, R.; Larramendi, A. (2020). Dinosaur Facts and Figures: The Sauropods and Other Sauropodomorphs. Princeton University Press.

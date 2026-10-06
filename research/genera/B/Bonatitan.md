@@ -16,8 +16,24 @@
 
 **Open.** Nothing.
 
+## Is the *Bonatitan* holotype number MACN-PV RN 821?
+
+*2026-08-01*
+
+**Conclusion.** Yes, as Martinelli and Forasiepi (2004) give it. Governs `type_specimen.specimen_id: [MACN-PV RN 821]` on [*Bonatitan reigi*](../../../genera/B/Bonatitan.yml).
+
+**Evidence.**
+- martinelli2004a, p. 274: "*Holotype.* MACN-PV RN 821: complete braincase, middle dorsal vertebra, anterior caudal vertebra".
+
+**Ruled out.**
+- *MACN RN 821, MACN 821 RN 821, MACN-RN 821.* Molina-Pérez and Larramendi (2020) print these three forms in their neck table, their sauropod speed table and a brain-size table (molina-pérez2020a). Each is the same number with the PV collection letters dropped or the number repeated. Jones (2026) gives "MACN-PV RN 821" (jones2026b, p. 385).
+
+**Open.** Nothing.
+
 ## References
 
 - `martinelli2004a`: Martinelli, A.; Forasiepi, A. (2004). Late Cretaceous vertebrates from bajo de Santa Rosa (Allen Formation), Río Negro province, Argentina, with the description of a new sauropod dinosaur (Titanosauridae). *Revista del Museo Argentino de Ciencias Naturales* 6: 257-265. doi:10.22179/revmacn.6.88
 - `salgado2014a`: Salgado, L.; Gallina, P. A.; Paulina-Carabajal, A. (2014). Redescription of Bonatitan reigi (Sauropoda: Titanosauria), from the Campanian–Maastrichtian of the Río Negro Province (Argentina). *Historical Biology* 27(5): 525-548. doi:10.1080/08912963.2014.894038
 - `novas2009a`: Novas, F. E.; Pol, D.; Canale, J. I.; Porfiri, J. D.; Calvo, J. O. (2009). A bizarre Cretaceous theropod dinosaur from Patagonia and the evolution of Gondwanan dromaeosaurids. *Proceedings of the Royal Society B: Biological Sciences* 276(1659): 1101-1107. doi:10.1098/rspb.2008.1554
+- `molina-pérez2020a`: Molina-Pérez, R.; Larramendi, A. (2020). Dinosaur Facts and Figures: The Sauropods and Other Sauropodomorphs. Princeton University Press.
+- `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.

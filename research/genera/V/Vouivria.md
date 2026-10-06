@@ -17,6 +17,21 @@
 
 **Open.** The member. The Tidalites de Mouchard rests on the quartz content alone, an argument the authors themselves qualify, and nothing else read for this note excludes the lower member, the Calcaires de l'Isle-sur-le-Doubs. A finer position for the Damparis bed within the Calcaires de Clerval would settle it.
 
+## Is the *Vouivria damparisensis* holotype one number or a series?
+
+*2026-08-01*
+
+**Conclusion.** A series of 42 numbers, MNHN.F.1934.6 DAM 1 to DAM 42, for the elements of one associated skeleton, each listed on its own. Governs `type_specimen.specimen_id` on [*Vouivria damparisensis*](../../../genera/V/Vouivria.yml).
+
+**Evidence.**
+- mannion2017a, p. 17, Systematic palaeontology: "Holotype: MNHN.F.1934.6 DAM 1 to DAM 42 comprising an associated skeleton of a single individual, preserving: five teeth (DAM 1–DAM 5 ...); a middle–posterior cervical vertebra (DAM 6 ...)".
+
+**Ruled out.**
+- *"MNHN.F.1934.6 DAM 1-42" as one id.* The record once held the range as a single string; a range is not a catalogue number. Jones (2026) gives the series without the element numbers, "MNHN.F.1934.6 DAM—partial skeleton" (jones2026b, Macronaria table), which agrees with the describing paper.
+
+**Open.** Nothing.
+
 ## References
 
 - `mannion2017a`: Mannion, P. D.; Allain, R.; Moine, O. (2017). The earliest known titanosauriform sauropod dinosaur and the evolution of Brachiosauridae. *PeerJ* 5: e3217. doi:10.7717/peerj.3217
+- `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.

@@ -17,8 +17,26 @@
 
 **Open.** The English Wikipedia article on *Lexovisaurus* puts the find at a brick pit at Tanholt, near Eye, and says Fletton was later assumed in error; no paper cited here says so. E. T. Leeds's 1956 catalog of the Leeds collection, cited by Galton (1985), has not been read and may record where the type was dug.
 
+## Is the *Lexovisaurus* holotype Callovian or Oxfordian?
+
+*2026-08-05*
+
+**Conclusion.** Callovian: the Lower Oxford Clay at Fletton. Governs `period.stage: [Callovian]` on [*Lexovisaurus durobrivensis*](../../../genera/L/Lexovisaurus.yml), with the same reading for [*Loricatosaurus priscus*](../../../genera/L/Loricatosaurus.yml) from the same pits.
+
+**Evidence.**
+- galton1985d, p. 211: the horizon "was originally given as Kimmeridge Clay, but Woodward and Sherborn (1890) noted that it was Oxford Clay (Callovian, Middle Jurassic)"; the abstract places *Lexovisaurus* in "the Lower Oxford Clay (middle Callovian, Middle Jurassic)".
+- maidment2008a, p. 383: BMNH R1989–1992 "was recovered from the Lower Oxford Clay (Callovian) of Fletton, near Peterborough".
+- jones2026a, Stegosauria table: "Oxford Clay Fm., United Kingdom *Middle Jurassic, Oxfordian*".
+
+**Ruled out.**
+- *Oxfordian.* Jones (2026) gives the stage the formation's name suggests. The Lower Oxford Clay is Callovian in both papers above.
+
+**Open.** Nothing.
+
 ## References
 
 - `hulke1887a`: Hulke, J. W. (1887). Note on some dinosaurian remains in the collection of A. Leeds, Esq, of Eyebury, Northamptonshire. *Quarterly Journal of the Geological Society of London* 43: 695-702.
 - `hoffstetter1957a`: Hoffstetter, R. (1957). Quelques observations sur les Stégosaurinés [Some Observations on the Stegosaurinae]. *Bulletin du Muséum National d'Histoire Naturelle, Paris, 2nde série* 29: 537-547.
 - `galton1985d`: Galton, P. M. (1985). British plated dinosaurs (Ornithischia, Stegosauridae). *Journal of Vertebrate Paleontology* 5(3): 211-254. doi:10.1080/02724634.1985.10011859
+- `maidment2008a`: Maidment, S. C. R.; Norman, D. B.; Barrett, P. M.; Upchurch, P. (2008). Systematics and phylogeny of Stegosauria (Dinosauria: Ornithischia). *Journal of Systematic Palaeontology* 6(4): 367-407. doi:10.1017/S1477201908002459
+- `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.

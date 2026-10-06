@@ -1,5 +1,20 @@
 # *Heyuannia*
 
+## What age is the *Heyuannia huangi* holotype?
+
+*2026-08-05*
+
+**Conclusion.** Maastrichtian, queried, as Lü (2002) gives it. Governs `period.stage: [Maastrichtian]` on *Heyuannia huangi* in [*Heyuannia*](../../../genera/H/Heyuannia.yml).
+
+**Evidence.**
+- lü2002a, p. 871: "Dalangshan Formation, Late Cretaceous, ? Maastrichtian (Bureau of Geology and Mineral Resources of Guangdong Province, 1988)".
+- jones2026c, Oviraptoridae table: "*Late Cretaceous, Maastrichtian*".
+
+**Ruled out.**
+- *Campanian.* No source read gives it for *H. huangi*; it is the age of the genus's other species, *H. yanshini*, from the Baruungoyot.
+
+**Open.** The age rests on a 1988 regional geology that Lü cites and that has not been read. No dating work on the Heyuan beds has been found.
+
 ## Which formation is the *Heyuannia huangi* holotype from?
 
 *2026-08-05*
@@ -18,8 +33,8 @@
 ## References
 
 - `lü2002a`: Lü, J. (2002). A new oviraptorosaurid (Theropoda: Oviraptorosauria) from the Late Cretaceous of southern China. *Journal of Vertebrate Paleontology* 22(4): 871-875. doi:10.1671/0272-4634(2002)022[0871:anotof]2.0.co;2
+- `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
 - `zhang2009b`: Zhang, S. (ed.) (2009). Geological Formation Names of China (1866–2000). Higher Education Press, Beijing; Springer, Berlin. doi:10.1007/978-3-540-93824-8
 - `fanti2012a`: Fanti, F.; Currie, P. J.; Badamgarav, D.; Lalueza-Fox, C. (2012). New specimens of Nemegtomaia from the Baruungoyot and Nemegt Formations (Late Cretaceous) of Mongolia. *PLOS ONE* 7(2): e31330. doi:10.1371/journal.pone.0031330
 - `lü2005a`: Lü, J. C.; Zhang, B. K. (2005). A new oviraptorid (theropod: Oviraptorosauria) from the Upper Cretaceous of the Nanxiong Basin, Guangdong province of southern China. *Acta Palaeontologica Sinica* 44(3): 412-422.
-- `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
 - `xing2024b`: Xing, L.; Liang, Z.; Zhang, K.; Wang, D.; Zhang, X.; Persons, W. S., IV; Ren, Z.; Liang, Z.; Xian, M.; Zeng, Q. (2024). Large theropod teeth from the Upper Cretaceous of Guangdong Province, Southern China. *Cretaceous Research* 161: 105914. doi:10.1016/j.cretres.2024.105914

@@ -16,7 +16,23 @@
 
 **Open.** Nothing.
 
+## Is the *Cetiosaurus oxoniensis* lectotype from Rutland?
+
+*2026-08-06*
+
+**Conclusion.** No. The Rutland material is a referred skeleton, LCM G468.1968 from Great Casterton. The lectotype is from the Forest Marble near Bletchingdon Station (see the 2026-08-15 entry). Governs `location.formation: Forest Marble` on [*Cetiosaurus oxoniensis*](../../../genera/C/Cetiosaurus.yml).
+
+**Evidence.**
+- upchurch2003a, p. 216: "Referred Material—A partial skeleton (LCM G468.1968) from Great Casterton, Rutland, U.K."
+
+**Ruled out.**
+- *Rutland Formation.* The record carried it until 2026-08-06. The only Rutland material in the sources read is the referred skeleton, so the record had paired that specimen's unit with the lectotype's locality (our reading). Weishampel and colleagues (2004) list the species from "Forest Marble Formation (Oxfordshire), "Rutland Clay" (Rutland)" (weishampel2004a, p. 263, Table 13.1), a line that covers both specimens. Jones (2026) gives "Forest Marble, United Kingdom" (jones2026b, p. 375).
+
+**Open.** Nothing.
+
 ## References
 
 - `upchurch2003a`: Upchurch, P.; Martin, J. (2003). The anatomy and taxonomy of Cetiosaurus (Saurischia, Sauropoda) from the Middle Jurassic of England. *Journal of Vertebrate Paleontology* 23(1): 208-231. doi:10.1671/0272-4634(2003)23[208:TAATOC]2.0.CO;2
 - `phillips1871a`: Phillips, J. (1871). Geology of Oxford and the Valley of the Thames. Clarendon Press.
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.

@@ -35,6 +35,21 @@
 
 **Open.** The age. The older end rests on Lophinae, which are oysters, "dans le membre MI" ("in member MI", translated), "Jurassique moyen (Bajocien à Callovien) (Kacemi, 2005)" (kacemi2026a, p. 9): a relay, about the whole member, not the bone level. The ostracods at levels 73–78 are given no age. The younger end is a regional correlation, "Jurassique supérieur (Kimméridgien-Portlandien) (Bassoullet, 1973)" (p. 14), made for the Atlas trough, where "toute datation relative reste impossible en l'absence de fossiles" ("all relative dating remains impossible in the absence of fossils", translated). The paper's own English abstract (p. 1) says "Oxfordian-Kimmeridgian", against "Callovien-Kimméridgien" in its discussion (p. 18), and Benddine (2022, p. 26) finds "l'âge Kimméridgien … beaucoup plus probable" ("the Kimmeridgian age … much more probable", translated).
 
+## Is the *Chebsaurus* horizon a named formation?
+
+*2026-08-06*
+
+**Conclusion.** Yes, the Aïssa Formation (see the 2026-09-30 entry for its placement in the section). The describing paper names no formation, and the redescription names the Aïssa in its abstract but not in its horizon paragraph. Governs `location.formation: Aïssa` on [*Chebsaurus algeriensis*](../../../genera/C/Chebsaurus.yml).
+
+**Evidence.**
+- läng2010a, p. 142, abstract: "*Chebsaurus algeriensis* from the Middle Jurassic Aïssa formation of the Naama Province, Algeria".
+- mannion2019a, p. 865: "the Callovian Aïssa Formation".
+
+**Ruled out.**
+- *Unnamed.* Jones (2026) gives "Unnamed, Algeria" (jones2026b, p. 375). Both lines a compiler would read for the horizon lack a formation: the describing paper gives only "Middle Jurassic" (mahammed2005a, p. 709), and the redescription's horizon paragraph gives "Detrital continental series of indeterminate Middle Jurassic … and probably Callovian age" (läng2010a, p. 144).
+
+**Open.** Nothing.
+
 ## References
 
 - `mahammed2005a`: Mahammed, F.; Läng, É.; Mami, L.; Mekahli, L.; Benhamou, M.; Bouterfa, B.; Kacemi, A.; Chérief, S. A.; Chaouati, H.; Taquet, P. (2005). The 'Giant of Ksour', a Middle Jurassic sauropod dinosaur from Algeria. *Comptes Rendus Palevol* 4(8): 707-714. doi:10.1016/j.crpv.2005.07.001
@@ -43,3 +58,4 @@
 - `kacemi2026a`: Kacemi, A.; Benhamou, M.; Boucif, A.; Benramdane, H.; Hebib, H. (2026). Évolution des milieux de dépôt et traces des dinosauriens du Jurassique supérieur dans les Monts des Ksour (Atlas saharien, Algérie) [Evolution of depositional environments and dinosaur tracks of the Upper Jurassic in the Ksour Mountains (Saharan Atlas, Algeria)]. *Estudios Geológicos* 82(2): e1154. doi:10.3989/egeol.45894.1154
 - `benddine2022a`: Benddine, A.; Benaouda, S. (2022). Lithostratigraphie et paléo environnement de la « Formation de Aïssa », coupes de Rouis El Djir et Djebel Larouia, Sillon pré-atlasique – Monts des Ksour (Atlas saharien) [Lithostratigraphy and paleoenvironment of the 'Aïssa Formation', Rouis El Djir and Djebel Larouia sections, pre-Atlas trough, Ksour Mountains (Saharan Atlas)]. Masters thesis, Université Abou Bekr Belkaïd, Tlemcen.
 - `mannion2019a`: Mannion, P. D.; Upchurch, P.; Schwarz, D.; Wings, O. (2019). Taxonomic affinities of the putative titanosaurs from the Late Jurassic Tendaguru Formation of Tanzania: phylogenetic and biogeographic implications for eusauropod dinosaur evolution. *Zoological Journal of the Linnean Society* 185(3): 784-909. doi:10.1093/zoolinnean/zly068
+- `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.

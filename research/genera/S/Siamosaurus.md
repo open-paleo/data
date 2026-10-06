@@ -15,6 +15,22 @@
 
 **Open.** Which Phu Wiang site the teeth came from. Other Phu Wiang taxa have numbered sites, such as Phu Wiang 9 for *Siamotyrannus*. Buffetaut and Ingavat (1986), whose title names Phu Wiang, would settle it.
 
+## What stage is the *Siamosaurus suteethorni* holotype?
+
+*2026-08-05*
+
+**Conclusion.** Valanginian–Hauterivian, the age of the Sao Khua Formation (see [Sao Khua](../../stratigraphy/s/sao-khua.md)). Governs `stage: [Valanginian, Hauterivian]` on [*Siamosaurus suteethorni*](../../../genera/S/Siamosaurus.yml).
+
+**Evidence.**
+- tucker2022a, p. 15: "a tightly constrained late Valanginian–early Hauterivian age of 133.6–132.1 Ma for Sao Khua Formation".
+
+**Ruled out.**
+- *Barremian.* The record's earlier value. Carrano and colleagues give the type teeth as "from the Sao Khua Formation (Barremian–Aptian)" (carrano2012a, p. 255), and the late-Barremian dating of the formation traces to one bivalve correlation (see [Sao Khua](../../stratigraphy/s/sao-khua.md)). Jones (2026) gives "Valanginian/Hauterivian" (jones2026c, p. 498).
+
+**Open.** Whether the formation reaches younger stages, as the Sao Khua note records. No date comes from the Phu Wiang beds themselves.
+
 ## References
 
 - `carrano2012a`: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D. (2012). The phylogeny of Tetanurae (Dinosauria: Theropoda). *Journal of Systematic Palaeontology* 10(2): 211-300. doi:10.1080/14772019.2011.630927
+- `tucker2022a`: Tucker, R. T.; Hyland, E. G.; Gates, T. A.; King, M. R.; Roberts, E. M.; Foley, E. K.; Berndt, D.; Hanta, R.; Khansubha, S.; Aswasereelert, W.; Zanno, L. E. (2022). Age, depositional history, and paleoclimatic setting of Early Cretaceous dinosaur assemblages from the Sao Khua Formation (Khorat Group), Thailand. *Palaeogeography, Palaeoclimatology, Palaeoecology* 601: 111107. doi:10.1016/j.palaeo.2022.111107
+- `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.

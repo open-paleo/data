@@ -17,8 +17,27 @@
 
 **Open.** Nothing.
 
+## Which catalogue numbers make up the *Lourinhasaurus* lectotype?
+
+*2026-08-01*
+
+**Conclusion.** The thirty MG numbers Mocho and colleagues (2014) list for the lectotype. Governs `type_specimen.specimen_id` (MG 2 through MG 30388 as listed, thirty ids) and `type_specimen.institution: MG` on [*Lourinhasaurus alenquerensis*](../../../genera/L/Lourinhasaurus.yml).
+
+**Evidence.**
+- mocho2014a, p. 879: "Lectotype: Partial skeleton (Fig. 2D) housed in MG LNEG composed by: cervical vertebrae remains (MG4956, MG30373, MG30377, and MG30379), 12 dorsal vertebrae and several neurapophyses fragments (MG4956: 11 dorsal centra; MG30378 …)".
+- jones2026b, p. 380: "MG LNEG—partial skeleton (Mocho et al., 2014)".
+- molina-pérez2020a, List of Sauropods, Macronaria: "MIGM".
+
+**Ruled out.**
+- *MIGM 4956 alone.* The record once held this, one of the thirty numbers, under the older MIGM prefix. Jones (2026) names the collection, citing Mocho and colleagues, and Molina-Pérez and Larramendi (2020) give only "MIGM"; neither gives a single number.
+
+**Open.** Nothing.
+
 ## References
 
 - `dantas1998a`: Dantas, P.; Sanz, J. L.; da Silva, C. M.; Ortega, F.; dos Santos, V. F.; Cachão, M. (1998). Lourinhasaurus n. gen. Novo dinossáurio saurópode do Juássico superior (Kimeridgiano superior-Titoniano inferior) de Portugal [Lourinhasaurus n. gen. New sauropod dinosaur from the Upper Jurassic (upper Kimmeridgian-lower Tithonian) of Portugal]. *Actas do V Congresso Nacional de Geologia (Resumos Alargados). Comunicações del Instituto Geológico e Mineiro* 84(1): A91-A94.
 - `mannion2011a`: Mannion, P. D.; Upchurch, P.; Mateus, O.; Barnes, R. N.; Jones, M. E. H. (2011). New information on the anatomy and systematic position of Dinheirosaurus lourinhanensis (Sauropoda: Diplodocoidea) from the Late Jurassic of Portugal, with a review of European diplodocoids. *Journal of Systematic Palaeontology* 10(3): 521-551. doi:10.1080/14772019.2011.595432
 - `tschopp2015a`: Tschopp, E.; Mateus, O.; Benson, R. B. J. (2015). A specimen-level phylogenetic analysis and taxonomic revision of Diplodocidae (Dinosauria, Sauropoda). *PeerJ* 3: e857. doi:10.7717/peerj.857
+- `mocho2014a`: Mocho, P.; Royo-Torres, R.; Ortega, F. (2014). Phylogenetic reassessment of Lourinhasaurus alenquerensis, a basal Macronaria (Sauropoda) from the Upper Jurassic of Portugal. *Zoological Journal of the Linnean Society* 170(4): 875-916. doi:10.1111/zoj.12113
+- `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.
+- `molina-pérez2020a`: Molina-Pérez, R.; Larramendi, A. (2020). Dinosaur Facts and Figures: The Sauropods and Other Sauropodomorphs. Princeton University Press.

@@ -20,9 +20,26 @@
 
 **Open.** Whether V34 came from the dark red (Zhangjiawa) beds or the dull purplish (Shawan) beds. Young's upper-level teeth include Huangchiatien specimens, which favors the Zhangjiawa, but they were picked up from the surface and do not date the holotype. A record of the level at which V34 was collected would settle it.
 
+## Which specimen is the *Sinosaurus triassicus* holotype?
+
+*2026-08-01*
+
+**Conclusion.** IVPP V34: the jaw fragments and teeth Young (1948) describes under the species. Governs `type_specimen.specimen_id: [IVPP V34]` and `institution: IVPP` on [*Sinosaurus triassicus*](../../../genera/S/Sinosaurus.yml).
+
+**Evidence.**
+- young1948a, p. 79: "Material. A left fragment of maxilla with four teeth, two other jaw fragments and three isolated teeth. Cat. no. V34."
+
+**Ruled out.**
+- *KMV 8701.* The record's earlier value. It is the Qinglongshan skeleton described as "*Dilophosaurus*" *sinensis* and later referred to *Sinosaurus* (see the 2026-09-05 entry), not the type. Jones (2026) gives "IVPP V34" as the type and lists KMV 8701 after it (jones2026c, p. 493).
+- *IVPP V48.* Molina-Pérez and Larramendi (2019) give "IVPP V48 … Tooth" for the species (molina-pérez2019a, p. 254). Young lists V48 among isolated teeth "collected from the surface" (young1948a, p. 83).
+
+**Open.** Nothing.
+
 ## References
 
 - `young1948a`: Young, C. C. (1948). On two new saurischians from Lufeng, Yunnan. *Bulletin of the Geological Society of China* 28(1-2): 75-90. doi:10.1111/j.1755-6724.1948.mp281-2007.x
 - `carrano2012a`: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D. (2012). The phylogeny of Tetanurae (Dinosauria: Theropoda). *Journal of Systematic Palaeontology* 10(2): 211-300. doi:10.1080/14772019.2011.630927
 - `wang2017b`: Wang, G. F.; You, H. L.; Pan, S. G.; Wang, T. (2017). A new crested theropod dinosaur from the Early Jurassic of Yunnan Province, China. *Vertebrata PalAsiatica* 55(2): 177-186.
 - `xing2012b`: Xing, L. D. (2012). Sinosaurus from Southwestern China. Masters thesis, University of Alberta. doi:10.7939/R3HP8F
+- `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
+- `molina-pérez2019a`: Molina-Pérez, R.; Larramendi, A. (2019). Dinosaur Facts and Figures: The Theropods and Other Dinosauriformes. Princeton University Press.

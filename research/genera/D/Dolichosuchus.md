@@ -31,8 +31,24 @@
 
 **Open.** Nothing.
 
+## Is the *Dolichosuchus* holotype in the OR or the R register?
+
+*2026-08-03*
+
+**Conclusion.** OR. Sues and Schoch (2025) give NHMUK PV OR 38058, and Huene (1932) gives only the number. Governs `type_specimen.specimen_id: [NHMUK PV OR 38058]` on [*Dolichosuchus cristatus*](../../../genera/D/Dolichosuchus.yml).
+
+**Evidence.**
+- sues2025a, p. 465: "Holotype. NHMUK PV OR 38058, nearly complete left tibia."
+- huene1932a, p. 31: "The left tibia No. 38 058 in the British Museum (Nat. Hist.), London" (translated).
+
+**Ruled out.**
+- *BMNH R38058.* Molina-Pérez and Larramendi (2019) give "BMNH R38058" (molina-pérez2019a, Theropods similar to *Liliensternus* table). BMNH is the museum's older code (see [NHMUK catalogue prefixes](../../topics/nhmuk-catalogue-prefixes.md)), and no paper read puts the tibia in the R register. The neighboring row of the same work gives the identical "BMNH R38058" for the *Velocipes guerichi* fibula from Poland.
+
+**Open.** Nothing.
+
 ## References
 
 - `rauhut2000a`: Rauhut, O. W. M.; Hungerbühler, A. (2000). A review of European Triassic theropods. *Gaia* 15: 75-88.
 - `sues2025a`: Sues, H. D.; Schoch, R. R. (2025). Synopsis of the Triassic reptiles from Germany. *Fossil Record* 28(2): 411-483. doi:10.3897/fr.28.164405
 - `huene1932a`: Huene, F. V. (1932). Die fossile Reptil-Ordnung Saurischia, ihre Entwicklung und Geschichte [The fossil reptile order Saurischia, their development and history]. *Monographien zur Geologie und Palaeontologie, serie 1* 4(1-2): 1-361.
+- `molina-pérez2019a`: Molina-Pérez, R.; Larramendi, A. (2019). Dinosaur Facts and Figures: The Theropods and Other Dinosauriformes. Princeton University Press.

@@ -16,8 +16,24 @@
 
 **Open.** Nothing.
 
+## What is the *Nigersaurus* holotype's number?
+
+*2026-08-03*
+
+**Conclusion.** GAD512, from the holotype note of the describing paper, under the Niamey museum's current code. Governs `type_specimen.specimen_id: [MNBH GAD512]` on [*Nigersaurus taqueti*](../../../genera/N/Nigersaurus.yml).
+
+**Evidence.**
+- sereno1999a, p. 1346, note 11: the holotype is "cataloged in the collections of the Musee National du Niger (MNN GAD512), Niamey".
+- sereno1999a, p. 1344, Fig. 2 caption: "Nigersaurus taqueti (MNN GDF512)".
+
+**Ruled out.**
+- *MNN CDF512.* Jones (2026) gives "MNN CDF512—skull and skeleton" (jones2026b, p. 378), a misreading of the caption's GDF512, which itself differs from the holotype note's GAD512.
+
+**Open.** Nothing.
+
 ## References
 
 - `sereno1999a`: Sereno, P. C.; Beck, A. L.; Dutheil, D. B.; Larsson, H. C. E.; Lyon, G. H.; Moussa, B.; Sadleir, R. W.; Sidor, C. A.; Varricchio, D. J.; Wilson, G. P.; Wilson, J. A. (1999). Cretaceous Sauropods from the Sahara and the Uneven Rate of Skeletal Evolution Among Dinosaurs. *Science* 286(5443): 1342-1347. doi:10.1126/science.286.5443.1342
 - `taquet1999a`: Taquet, P.; Russell, D. A. (1999). A massively-constructed iguanodont from Gadoufaoua, lower Cretaceous of Niger. *Annales de Paléontologie* 85(1): 85-96. doi:10.1016/s0753-3969(99)80009-3
 - `wilson2015a`: Wilson, J. A.; Allain, R. (2015). Osteology of Rebbachisaurus garasbae Lavocat, 1954, a diplodocoid (Dinosauria, Sauropoda) from the early Late Cretaceous-aged Kem Kem beds of southeastern Morocco. *Journal of Vertebrate Paleontology* 35(4): e1000701. doi:10.1080/02724634.2014.1000701
+- `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.

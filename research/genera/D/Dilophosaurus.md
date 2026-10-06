@@ -16,7 +16,23 @@
 
 **Open.** Nothing.
 
+## Is the *Dilophosaurus wetherilli* holotype UCMP 37302 or UCMP 77270?
+
+*2026-08-01*
+
+**Conclusion.** UCMP 37302, one of the 1942 juveniles. UCMP 77270 is the adult Welles found in 1964 and placed in the hypodigm. Governs `type_specimen.specimen_id: [UCMP 37302]` on [*Dilophosaurus wetherilli*](../../../genera/D/Dilophosaurus.yml).
+
+**Evidence.**
+- welles1970a, p. 989: "Type.-UCMP 37302, a juvenile represented by a nearly complete skeleton"; "Hypodigm.-Type and UCMP 37303 … and UCMP 77270, the adult collected in 1964".
+- marsh2020a, Systematic paleontology: "Holotype.—UCMP 37302 (Welles, 1954)."
+
+**Ruled out.**
+- *UCMP 77270.* Molina-Pérez and Larramendi (2019) list "*Dilophosaurus wetherilli* | UCMP 77270" in their theropod speed table (molina-pérez2019a, Biology: Biomechanics: Locomotion). It is the 1964 referred adult, not the type.
+
+**Open.** Nothing.
+
 ## References
 
 - `welles1970a`: Welles, S. P. (1970). Dilophosaurus (Reptilia: Saurischia), a new name for a dinosaur. *Journal of Paleontology* 44(5): 989.
 - `marsh2020a`: Marsh, A. D.; Rowe, T. B. (2020). A comprehensive anatomical and phylogenetic evaluation of Dilophosaurus wetherilli (Dinosauria, Theropoda) with descriptions of new specimens from the Kayenta Formation of northern Arizona. *Journal of Paleontology* 94(S78): 1-103. doi:10.1017/jpa.2020.14
+- `molina-pérez2019a`: Molina-Pérez, R.; Larramendi, A. (2019). Dinosaur Facts and Figures: The Theropods and Other Dinosauriformes. Princeton University Press.

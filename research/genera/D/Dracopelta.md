@@ -35,9 +35,42 @@
 
 **Open.** Nothing.
 
+## Is the *Dracopelta* holotype Tithonian or Kimmeridgian?
+
+*2026-08-05*
+
+**Conclusion.** Tithonian. Russo and Mateus (2021) relocated the type section in the Assenta Member and adopt an uppermost lower to upper Tithonian age for it, well above the Kimmeridgian–Tithonian boundary. Jones (2026) gives the same stage. Governs `period.stage: [Tithonian]` on [*Dracopelta zbyszewskii*](../../../genera/D/Dracopelta.yml).
+
+**Evidence.**
+- russo2021a, p. 32: "we agree with the uppermost lower Tithonian-upper Tithonian age of D. zbyszewskii. This specimen is much higher than the Kimmeridgian/Tithonian boundary seen in the outcrops to the North".
+- jones2026a, Thyreophora table: "Lourinhã Fm., Portugal *Late Jurassic, Tithonian*".
+
+**Ruled out.**
+- *Kimmeridgian.* Vickaryous and colleagues (2004) give "Kimmeridgian" (vickaryous2004a, p. 366, Table 17.1), Galton's (1980) age for a locality that rested on a "Ribamar" label (see the 2026-08-20 entry).
+
+**Open.** Nothing.
+
+## Is the *Dracopelta* holotype from the Lourinhã Formation or the Freixial?
+
+*2026-08-05*
+
+**Conclusion.** The Lourinhã Formation, in its Assenta Member, where Russo and Mateus (2021) place the relocated type section. Jones (2026) gives the same formation. Governs `location.formation: Lourinhã` and `location.member: Assenta` on [*Dracopelta zbyszewskii*](../../../genera/D/Dracopelta.yml).
+
+**Evidence.**
+- russo2021a, p. 32: the type section matches "the uppermost part of the Lourinhã Formation, the Assenta Member (Mateus et al., 2017)".
+- jones2026a, Thyreophora table: "Lourinhã Fm., Portugal".
+
+**Ruled out.**
+- *Freixial Formation.* Mateus and Milàn give "MG5787, Freixial Fm., Tithonian" in a table of the Portuguese dinosaur fauna (mateus2009b, p. 254, Table 1). Russo and Mateus (2021), with Mateus an author of both, place the site in the Assenta Member after visiting it. Schneider and colleagues (2009) treat the Freixial as a member of the Farta Pão Formation (see [Farta Pão](../../stratigraphy/f/farta-pão.md)).
+- *An unnamed unit.* Vickaryous and colleagues (2004) list "Unnamed unit (Lisboa), Portugal" (vickaryous2004a, p. 366, Table 17.1). Galton (1980) names no unit, and the site was not relocated until 2021.
+
+**Open.** Nothing.
+
 ## References
 
 - `galton1980b`: Galton, P. M. (1980). Partial skeleton of Dracopelta zbyszewskii N. Gen. And N. SP., an ankylosaurian dinosaur from the Upper Jurassic of Portugal. *Geobios* 13(3): 451-457. doi:10.1016/s0016-6995(80)80081-7
 - `russo2021a`: Russo, J.; Mateus, O. (2021). History of the discovery of the ankylosaur Dracopelta zbyszewskii (Upper Jurassic), with new data about the type specimen and its locality. *Comunicações Geológicas* 108(1): 27-34.
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.
 - `antunes2003a`: Antunes, M. T.; Mateus, O. (2003). Dinosaurs of Portugal. *Comptes Rendus Palevol* 2(1): 77-95. doi:10.1016/s1631-0683(03)00003-4
+- `vickaryous2004a`: Vickaryous, M. K.; Maryańska, T.; Weishampel, D. B. (2004). Ankylosauria. In *The Dinosauria, 2nd edition*, pp. 363-392. University of California Press, Berkeley.
+- `mateus2009b`: Mateus, O.; Milàn, J. (2009). A diverse Upper Jurassic dinosaur ichnofauna from central-west Portugal. *Lethaia* 43: 245-257. doi:10.1111/j.1502-3931.2009.00190.x

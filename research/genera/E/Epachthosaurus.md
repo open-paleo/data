@@ -16,8 +16,23 @@
 
 **Open.** Nothing.
 
+## Is the *Epachthosaurus* holotype MACN-CH 1317 or UNPSJB-PV 920?
+
+*2026-08-01*
+
+**Conclusion.** MACN-CH 1317, an incomplete posterior dorsal vertebra. UNPSJB-PV 920 is the articulated skeleton Martínez and colleagues (2004) refer to the species. Governs `type_specimen.specimen_id: [MACN-CH 1317]` on [*Epachthosaurus sciuttoi*](../../../genera/E/Epachthosaurus.yml).
+
+**Evidence.**
+- martínez2004a, p. 108: "Holotype MACN-CH 1317, an incomplete caudal dorsal vertebra"; "Referred Specimen UNPSJB-PV 920, an articulated skeleton lacking the skull, neck, four or five cranial dorsal and extreme distal caudal vertebrae".
+
+**Ruled out.**
+- *UNPSJB-PV 920.* Molina-Pérez and Larramendi (2020) list "*Epachthosaurus sciuttoi* … UNPSJB-PV 920" (molina-pérez2020a, List of Sauropods, Saltasauroidea; also the Sauropod speed table). It is the referred skeleton.
+
+**Open.** Nothing.
+
 ## References
 
 - `martínez2004a`: Martínez, R. D.; Giménez, O.; Rodríguez, J.; Luna, M.; Lamanna, M. C. (2004). An articulated specimen of the basal titanosaurian (Dinosauria: Sauropoda) Epachthosaurus sciuttoi from the early Late Cretaceous Bajo Barreal Formation of Chubut Province, Argentina. *Journal of Vertebrate Paleontology* 24(1): 107-120. doi:10.1671/9.1
 - `casal2015a`: Casal, G. A.; Allard, J. O.; Foix, N. (2015). Análisis estratigráfico y paleontológico de afloramientos del Cretácico Superior en la cuenca del Golfo San Jorge: propuesta de nueva unidad litoestratigráfica para el Grupo Chubut. *Revista de la Asociación Geológica Argentina* 72(1): 81-99.
 - `powell1990a`: Powell, J. E. (1990). Epachthosaurus sciuttoi (gen. et sp. nov.), un dinosaurio sauropodo del Cretácico de Patagonia (Provincia de Chubut, Argentina) [Epachthosaurus sciuttoi (gen. et sp. nov.), a sauropod dinosaur from the Cretaceous of Patagonia (Chubut province, Argentina)]. *Actas del V Congreso Argentino de Paleontologia y Bioestratigrafia, Tucumán, Argentina* 1: 123-128.
+- `molina-pérez2020a`: Molina-Pérez, R.; Larramendi, A. (2020). Dinosaur Facts and Figures: The Sauropods and Other Sauropodomorphs. Princeton University Press.

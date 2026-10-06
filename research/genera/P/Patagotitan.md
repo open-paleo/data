@@ -16,6 +16,22 @@
 
 **Open.** A printed position for the quarry.
 
+## Is the Patagotitan holotype MPEF-PV 3400 or 3399?
+
+*2026-08-01*
+
+**Conclusion.** MPEF-PV 3400. MPEF-PV 3399 is a paratype. Governs `type_specimen.specimen_id: [MPEF-PV 3400]` on [*Patagotitan mayorum*](../../../genera/P/Patagotitan.yml).
+
+**Evidence.**
+- carballido2017a, p. 2, Holotype: "MPEF-PV (Museo Paleontológico Egidio Feruglio, Trelew, Argentina) 3400. A single individual".
+- carballido2017a, p. 2, Paratypes: "One of the paratypic specimens corresponds to a partially associated specimen (MPEF-PV 3399)".
+
+**Ruled out.**
+- *MPEF PV 3399.* Molina-Pérez and Larramendi give it in their size tables, as "*Patagotitan mayorum* MPEF PV 3399" (molina-pérez2020a, table "Chronology of the largest sauropods throughout history"). It is the specimen they measured, and Carballido and colleagues (2017) make it a paratype.
+
+**Open.** Nothing.
+
 ## References
 
 - `carballido2017a`: Carballido, J. L.; Pol, D.; Otero, A.; Cerda, I. A.; Salgado, L.; Garrido, A. C.; Ramezani, J.; Cúneo, N. R.; Krause, J. M. (2017). A new giant titanosaur sheds light on body mass evolution among sauropod dinosaurs. *Proceedings of the Royal Society B: Biological Sciences* 284(1860): 20171219. doi:10.1098/rspb.2017.1219
+- `molina-pérez2020a`: Molina-Pérez, R.; Larramendi, A. (2020). Dinosaur Facts and Figures: The Sauropods and Other Sauropodomorphs. Princeton University Press.

@@ -20,6 +20,21 @@
 
 **Open.** The site, and with it the age within Late Kimmeridgian to Early Tithonian. Mäuser (1984), which Reisdorf and Wuttke cite on the locality question, has not been read.
 
+## Is the *Compsognathus longipes* holotype AS I 563?
+
+*2026-08-01*
+
+**Conclusion.** Yes, AS I 563 of the Bavarian State Collection, as Ostrom (1978) gives it. The forms with BSP and with SNSB-BSPG are the same collection's older and current prefixes, and the registry lists both under BSPG. Governs `type_specimen.specimen_id: [SNSB-BSPG AS I 563]` on [*Compsognathus longipes*](../../../genera/C/Compsognathus.yml).
+
+**Evidence.**
+- ostrom1978a, p. 75: "Wagner, 1861, holotype specimen: B. S. P. A. S. I 563".
+
+**Ruled out.**
+- *BSP AS I 563 as another specimen.* Jones (2026) writes "BSP AS I 563" (jones2026c, p. 500), the older prefix for the same number.
+- *BSP AS I 536.* Molina-Pérez and Larramendi (2019) give this in their chronology of the smallest theropods and in their text (molina-pérez2019a). It transposes the last two digits of Ostrom's number.
+
+**Open.** Nothing.
+
 ## References
 
 - `wagner1861a`: Wagner, J. A. (1861). Neue Beiträge zur Kenntniss der urweltlichen Fauna des lithographischen Schiefers [New contributions to the knowledge of the ancient fauna of the lithographic slates]. *Abhandlungen der königlichen bayerische Akademie der Wissenschaft, II Classe* 9(1): 65-124.
@@ -29,3 +44,5 @@
 - `foth2025a`: Foth, C.; van de Kamp, T.; Tischlinger, H.; Kantelis, T.; Carney, R. M.; Zuber, M.; Hamann, E.; Wallaard, J. J. W.; Lenz, N.; Rauhut, O. W. M.; Frey, E. (2025). A new Archaeopteryx from the lower Tithonian Mörnsheim Formation at Mühlheim (Late Jurassic). *Fossil Record* 28(1): 17-43. doi:10.3897/fr.28.131671
 - `pittman2020a`: Pittman, M.; Xu, X. (2020). Pennaraptoran theropod dinosaurs. Past progress and new frontiers. *Bulletin of the American Museum of Natural History* 440(1): 1-355. doi:10.1206/0003-0090.440.1.1
 - `holtz2004a`: Holtz, T. R.; Molnar, R. E.; Currie, P. J. (2004). Basal Tetanurae. In *The Dinosauria, 2nd edition*, pp. 71-110. University of California Press, Berkeley.
+- `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
+- `molina-pérez2019a`: Molina-Pérez, R.; Larramendi, A. (2019). Dinosaur Facts and Figures: The Theropods and Other Dinosauriformes. Princeton University Press.

@@ -17,8 +17,25 @@
 
 **Open.** Whether "Burrer'schen Quarry" is another name for the Weisser Steinbruch or a neighboring quarry at Pfaffenhofen. Galton does not use the name Weisser Steinbruch. Yates and Sues and Schoch place SMNS 12667 at the same type locality as SMNS 11838, which makes the two names one quarry, but that is our inference from their wording. Hungerbühler (1998), whom Yates cites for the locality, has not been read.
 
+## Is the *Efraasia* holotype from the Löwenstein Formation or a "Stubensandstein Formation"?
+
+*2026-08-03*
+
+**Conclusion.** The Löwenstein Formation. Stubensandstein is the older name for the same rock, and Sues and Schoch (2025) keep it only for the informal subdivisions S1 to S4 within the Löwenstein. Governs `location.formation: Löwenstein` on [*Efraasia minor*](../../../genera/E/Efraasia.yml).
+
+**Evidence.**
+- sues2025a, p. 461: "Type horizon. Middle Stubensandstein (S2), Löwenstein Formation (equivalent of Arnstadt Formation in the basin), Middle Keuper Subgroup".
+- yates2003b, p. 317: "the Löwenstein Formation (formerly the Stubensandstein; Bachman *et al*. 1999)".
+- sues2025a, p. 469: "the Löwenstein (Stubensandstein) and Trossingen (Knollenmergel) formations".
+
+**Ruled out.**
+- *Stubensandstein Formation.* Jones (2026) gives "Stubensandstein Fm., Germany" (jones2026b, p. 372). That is the superseded name with a formation rank attached, not a different unit.
+
+**Open.** Nothing.
+
 ## References
 
 - `yates2003b`: Yates, A. M. (2003). The species taxonomy of the sauropodomorph dinosaurs from the Löwenstein Formation (Norian, Late Triassic) of Germany. *Palaeontology* 46(2): 317-337. doi:10.1111/j.0031-0239.2003.00301.x
 - `sues2025a`: Sues, H. D.; Schoch, R. R. (2025). Synopsis of the Triassic reptiles from Germany. *Fossil Record* 28(2): 411-483. doi:10.3897/fr.28.164405
 - `galton1973a`: Galton, P. M. (1973). On the anatomy and relationships of Efraasia diagnostica (Huene) n. gen., a prosauropod dinosaur (Reptilia: Saurischia) from the Upper Triassic of Germany. *Paläontologische Zeitschrift* 47(3-4): 229-255. doi:10.1007/bf02985709
+- `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.

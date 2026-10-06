@@ -17,8 +17,25 @@
 
 **Open.** Nothing.
 
+## Is the "Fuvelian" a formation for *Tarascosaurus*?
+
+*2026-08-06*
+
+**Conclusion.** No. The Fuvelian is one of the local continental stages of Provence, a unit of time, and no source read names a rock unit for the holotype. The describing paper places the bones in the Fuvelian on the lithology of their matrix alone. Governs the absence of `location.formation` on [*Tarascosaurus salluvicus*](../../../genera/T/Tarascosaurus.yml).
+
+**Evidence.**
+- leloeuff1991a, p. 588: "Type horizon - Lower Campanian (Fuvélian)" (translated); p. 587: "grayish limestones exist only in the Fuvélian, and it is therefore certainly from this level that the remains studied here originate" (translated).
+- csiki-sava2015a, p. 40: "Several local stage names were proposed during the nineteenth century to subdivide the Upper Cretaceous continental series of Provence ... in ascending order, the Valdonnian, Fuvelian, Begudian, and Rognacian".
+- csiki-sava2015a, p. 44: "'Fuvelian' (lower Campanian) deposits of Le Beausset (Var), which were described by Le Loeuff and Buffetaut (1991) as the new taxon Tarascosaurus salluvicus".
+
+**Ruled out.**
+- *"Fuvelian Beds" as the formation.* The record once held it, and Jones (2026) prints ""Fuvelian Beds," France" in quotation marks (jones2026c, Abelisauridae and Brachyrostra table). It records an age in a rock-unit field.
+
+**Open.** The horizon itself rests on the matrix: the label reads only "Upper Cretaceous, Lambeau du Beausset" and the collector is unknown (leloeuff1991a, p. 587). A unit name would need a source that ties the specimen to a mapped bed.
+
 ## References
 
 - `leloeuff1991a`: Le Loeuff, J.; Buffetaut, E. (1991). Tarascosaurus salluvicus nov. gen., nov. sp., dinosaure théropode du Crétacé supérieur du sud de la France [Tarascosaurus salluvicus nov. gen., nov. sp., a theropod dinosaur from the Upper Cretaceous of southern France]. *Géobios* 25(5): 585-594. doi:10.1016/0016-6995(91)80022-r
 - `tortosa2014a`: Tortosa, T.; Buffetaut, E.; Vialle, N.; Dutour, Y.; Turini, E.; Cheylan, G. (2014). A new abelisaurid dinosaur from the Late Cretaceous of southern France: Palaeobiogeographical implications. *Annales de Paléontologie* 100(1): 63-86. doi:10.1016/j.annpal.2013.10.003
 - `csiki-sava2015a`: Csiki-Sava, Z.; Buffetaut, E.; Ősi, A.; Pereda-Suberbiola, X.; Brusatte, S. L. (2015). Island life in the Cretaceous — faunal composition, biogeography, evolution, and extinction of land-living vertebrates on the Late Cretaceous European archipelago. *ZooKeys* 469: 1-161. doi:10.3897/zookeys.469.8439
+- `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.

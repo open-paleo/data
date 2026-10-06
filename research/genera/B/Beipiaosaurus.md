@@ -16,7 +16,23 @@
 
 **Open.** The bed. The Anjiagou Bed is the likeliest, as the main tetrapod-bearing bed and the one exposed at the Sihetun excavations, but no source read places this specimen in it, and the member holds three other beds. Xu and colleagues (2003), on further holotype material, reportedly give the "Jianshangou Beds"; that paper has not been read.
 
+## Is the *Beipiaosaurus* holotype IVPP V11559 or IVPP 11559?
+
+*2026-07-30*
+
+**Conclusion.** IVPP V11559, the number Xu and colleagues (1999) give when they designate the holotype. Governs `type_specimen.specimen_id: [IVPP V11559]` on [*Beipiaosaurus inexpectus*](../../../genera/B/Beipiaosaurus.yml).
+
+**Evidence.**
+- xu1999b, p. 351, Holotype: "IVPP V11559 (Institute of Vertebrate Paleontology & Paleoanthropology, Beijing, China; see Fig. 1)".
+
+**Ruled out.**
+- *IVPP 11559.* Jones (2026) prints "IVPP 11559—partial skull and skeleton (Xu et al., 1999)" (jones2026c, p. 505). Molina-Pérez and Larramendi (2019) give the same form in their theropod speed table and their list of theropods (molina-pérez2019a). Both drop the V that the designating paper prints.
+
+**Open.** Nothing.
+
 ## References
 
 - `xu1999b`: Xu, X.; Tang, Z. L.; Wang, X. L. (1999). A therizinosauroid dinosaur with integumentary structures from China. *Nature* 399(6734): 350-354. doi:10.1038/20670
 - `wang2016a`: Wang, Y.; Olsen, P. E.; Sha, J.; Yao, X.; Liao, H.; Pan, Y.; Kinney, S.; Zhang, X.; Rao, X. (2016). Stratigraphy, correlation, depositional environments, and cyclicity of the Early Cretaceous Yixian and ?Jurassic-Cretaceous Tuchengzi formations in the Sihetun area (NE China) based on three continuous cores. *Palaeogeography, Palaeoclimatology, Palaeoecology*.
+- `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
+- `molina-pérez2019a`: Molina-Pérez, R.; Larramendi, A. (2019). Dinosaur Facts and Figures: The Theropods and Other Dinosauriformes. Princeton University Press.

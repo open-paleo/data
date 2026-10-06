@@ -30,9 +30,28 @@
 
 **Open.** A correlation of the Nogon Tsav section with the Nemegt Formation would decide both the formation and whether the lower gray beds are lower Nemegt.
 
+## Is "Beds of Nogon Tsav" a rival to the Nemegt for *Alioramus remotus*?
+
+*2026-08-06*
+
+**Conclusion.** No. Barsbold (1983), who named the Nogon Tsav Svita, applies the name to the upper, dinosaur-poor part of the section and lists *Alioramus* in the Nemegt complex. Kurzanov (1976) puts the holotype in the lower, gray beds with the Nemegt-type fauna. The reference works use the locality name for the whole exposure. Governs `location.formation: Nemegt` on [*Alioramus remotus*](../../../genera/A/Alioramus.yml). The grounds for the Nemegt itself are in the 2026-08-11 entry.
+
+**Evidence.**
+- kurzanov1976b, introduction (translated): "The upper red-colored beds are characterized only by scattered fragments of skulls"; *Alioramus remotus* "occurs in the lower gray beds".
+- barsbold1983a (translated), Nemegtskaya Horizon: "The theropod complex consists of tyrannosaurids (*Tarbosaurus, Alioramus*)"; "The upper part is represented by deposits of a somewhat different origin, and is considerably poor with regard to dinosaur remains. A similar thickness has exposures partly in the Nogon Tsav location (here identified under the name Nogon Tsav Svita".
+- jones2026c, p. 502: "Beds of Nogon Tsav, Mongolia"; weishampel2004a, pp. 112–113: "Beds of Nogoon Tsav (Bayankhongor), Mongolia".
+
+**Ruled out.**
+- *The Nogon Tsav beds as the holotype's unit.* Both reference works use the name, but Barsbold gives it to the upper beds, not the lower gray beds that yielded the holotype.
+
+**Open.** The correlation with the Nemegt rests on the fauna, not a measured section (see the 2026-08-11 entry).
+
 ## References
 
 - `kurzanov1976b`: Kurzanov, S. M. (1976). Noviy pozdnemelovoy karnozavr is Nogon-Tsava, Mongoliya [A new late Mesozoic carnosaur from Nogon-Tsav, Mongolia]. *Paleontology and Biostratigraphy of Mongolia. The Joint Soviet-Mongolian Paleontological Expedition, Transactions* 3: 93-104.
 - `brusatte2012b`: Brusatte, S. L.; Carr, T. D.; Norell, M. A. (2012). The Osteology of Alioramus, A Gracile and Long-Snouted Tyrannosaurid (Dinosauria: Theropoda) from the Late Cretaceous of Mongolia. *Bulletin of the American Museum of Natural History* 366: 1-197. doi:10.1206/770.1
 - `benton2000c`: Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N. (2000). Mongolian place names and stratigraphic terms. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds.)*, pp. xxii-xxviii. Cambridge University Press, Cambridge.
 - `brusatte2009b`: Brusatte, S. L.; Carr, T. D.; Erickson, G. M.; Bever, G. S.; Norell, M. A. (2009). A long-snouted, multihorned tyrannosaurid from the Late Cretaceous of Mongolia. *Proceedings of the National Academy of Sciences* 106(41): 17261-17266. doi:10.1073/pnas.0906911106
+- `barsbold1983a`: Barsbold, R. (1983). Khishchnye dinozavry mela Mongolii [Carnivorous dinosaurs from the Cretaceous of Mongolia]. *Trudy - Sovmestnaya Sovetsko-Mongol'skaya Paleontologicheskaya Ekspeditsiya* 19: 1-117.
+- `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.

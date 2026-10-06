@@ -17,9 +17,28 @@
 
 **Open.** The holotype's number. Rauhut and Hungerbühler state that the fragments are "all bearing the collection number SMNS 12353" (rauhut2000a, p. 78), and the record follows them; Galton's Plate 4 caption and Sues and Schoch's holotype line give "SMNS 11839" (sues2025a, p. 464), while Sues and Schoch keep SMNS 12353b for the *Apatosuchus* skull from the same lot. The Staatliches Museum für Naturkunde Stuttgart catalogue would settle which number the *Halticosaurus* bones carry.
 
+## Is the *Halticosaurus* holotype from the Stubensandstein or the Löwenstein Formation?
+
+*2026-08-03*
+
+**Conclusion.** The Löwenstein Formation, the current formation name for the Stubensandstein that Huene (1908) gives. Governs `location.formation: Löwenstein` on [*Halticosaurus longotarsus*](../../../genera/H/Halticosaurus.yml).
+
+**Evidence.**
+- huene1908a, p. 231: the remains came from "einem mergeligen Zwischenlager des Stubensandsteins" ("a marly interlayer of the Stubensandstein", translated).
+- sues2025a, p. 464, *Halticosaurus longotarsus*: "Type horizon. Middle Stubensandstein (S2), Löwenstein Formation, Middle Keuper Subgroup".
+- jordan2016a, p. 277: "the German Löwenstein Formation (previously «Stubensandstein»)".
+- jones2026c, p. 493: "Stubensandstein, Germany *Late Triassic, Norian (middle)*".
+
+**Ruled out.**
+- *Stubensandstein as the formation.* Jones (2026) gives the older name. Sues and Schoch (2025) use Stubensandstein for subdivisions inside the Löwenstein Formation, and Jordan and colleagues (2016) treat it as the formation's former name.
+
+**Open.** Nothing.
+
 ## References
 
 - `huene1908a`: Huene, F. V. (1908). Die Dinosaurier der Europäischen Triasformation mit berücksichtigung der Ausseuropäischen vorkommnisse [The dinosaurs of the European Triassic formations with consideration of occurrences outside Europe]. *Geologische und Palaeontologische Abhandlungen* Suppl. 1(1): 1-419.
 - `galton1985c`: Galton, P. M. (1985). The poposaurid thecodontian Teratosaurus suevicus v. Meyer, plus referred specimens mostly based on prosauropod dinosaurs, from the Middle Stubensandstein (Upper Triassic) of Nordwürttemberg. *Stuttgarter Beiträge zur Naturkunde, Serie B (Geologie und Paläontologie)* 116: 1-29.
 - `rauhut2000a`: Rauhut, O. W. M.; Hungerbühler, A. (2000). A review of European Triassic theropods. *Gaia* 15: 75-88.
 - `sues2025a`: Sues, H. D.; Schoch, R. R. (2025). Synopsis of the Triassic reptiles from Germany. *Fossil Record* 28(2): 411-483. doi:10.3897/fr.28.164405
+- `jordan2016a`: Jordan, P.; Pietsch, J. S.; Bläsi, H.; Furrer, H.; Kündig, N.; Looser, N.; Wetzel, A.; Deplazes, G. (2016). The middle to late Triassic Bänkerjoch and Klettgau formations of northern Switzerland. *Swiss Journal of Geosciences* 109: 257-284.
+- `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
