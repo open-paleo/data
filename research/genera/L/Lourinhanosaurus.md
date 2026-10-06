@@ -1,5 +1,20 @@
 # *Lourinhanosaurus*
 
+## On which datum is Mateus's grid reference recorded?
+
+*2026-10-06*
+
+**Conclusion.** WGS84. The record carries 39.247975, -9.338978, the nominal reading of the grid reference MD707443 in UTM zone 29 on WGS84 (our conversion). The paper names no datum; read on the European Datum 1950 it would lie about 240 m to the southwest, at 39.246128, -9.340371, within the uncertainty a six-figure reference already carries. Governs `location.coordinates` on [*Lourinhanosaurus antunesi*](../../../genera/L/Lourinhanosaurus.yml).
+
+**Evidence.**
+- mateus1998a, p. 114, Locality and age: "The dinosaur was discovered at Peralta, about 75 Km NW of Lisbon (Portugal), near Lourinhã (UTM coordinates: MD707443)".
+
+**Ruled out.**
+- *No position printed.* The coordinate was deleted although the describing paper prints a grid reference, which converts as a printed coordinate (see [methods](../../methods.md#a-survey-description-or-an-area-range-is-not-converted-into-a-point)).
+- *The deleted pair, 39.14, -9.19.* It lies about 17.6 km from the grid reference and no source read prints it.
+
+**Open.** The datum. A source naming the map series or datum the reference was read from would settle the 240 m.
+
 ## Was the *Lourinhanosaurus* holotype found at Peralta or at Vale Bravo, and where is the site?
 
 *2026-08-29*

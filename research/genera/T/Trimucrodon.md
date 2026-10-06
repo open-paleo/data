@@ -1,5 +1,21 @@
 # *Trimucrodon*
 
+## Can Thulborn's map reference for Porto Pinheiro be converted to a coordinate?
+
+*2026-10-06*
+
+**Conclusion.** Not yet. Thulborn (1973) prints "0° 13′ W., 39° 13′ N." from the Carta Militar de Portugal but does not say which meridian his longitudes are measured from, and his other two map references cannot be measured from Greenwich. Converting the reference needs that meridian's offset from a source. The record carries no coordinate meanwhile. Governs the empty `location.coordinates` on [*Trimucrodon cuneatus*](../../../genera/T/Trimucrodon.yml).
+
+**Evidence.**
+- thulborn1973a, p. 118, The Porto Pinheiro ornithischians: "Map reference: Carta Militar de Portugal, Sheet 349 (Lourinhã), 0° 13′ W., 39° 13′ N."
+- thulborn1973a, p. 90: Pedrógão at "Carta Militar de Portugal, Sheet 272 (Vieira de Leiria), 0° 11' E., 39° 55' N."; p. 108: Guimarota at "Sheet 297 (Leiria), 0° 20' E., 39° 44' N."
+
+**Ruled out.**
+- *A Greenwich reading.* The earlier deletion tested the reference against Greenwich and found no match. Pedrógão and Guimarota both lie in western Portugal, so their eastern longitudes show the references are measured from a meridian other than Greenwich (our inference).
+- *A conversion from a remembered offset.* The meridian the Carta Militar used, and its offset from Greenwich, are not stated in any source read.
+
+**Open.** The meridian. A source stating the Carta Militar's prime meridian and its offset would let the reference convert, to arc-minute precision. The deleted pair, 39.216393, -9.343696, lies about 420 m from a reading of the reference against the Lisbon meridian, which suggests it was a converted copy of it (our inference).
+
 ## Is Thulborn's "Porto Pinheiro" the same site as Porto Dinheiro?
 
 *2026-09-08*
