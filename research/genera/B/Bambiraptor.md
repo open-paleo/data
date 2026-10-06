@@ -16,6 +16,21 @@
 
 **Open.** The epithet: Turner and colleagues argue "the correct spelling should be 'feinbergorum'" (turner2012a, p. 56).
 
+## What is the *Bambiraptor* site called, and where is it?
+
+*2026-08-13*
+
+**Conclusion.** The Jones Ranch, the name Burnham (2004) gives the property; the describing paper names no site. The two papers disagree on the site's bearing from Bynum, and the locality string carries no bearing for that reason. Governs `location.locality: Jones Ranch` on [*Bambiraptor feinbergi*](../../../genera/B/Bambiraptor.yml).
+
+**Evidence.**
+- burnham2000a, p. 10: "*Locality.*—The site is about 19 km west of the city of Bynum, Teton County, Montana, USA."
+- burnham2004a, p. 70: the specimens "were collected from a single locality", an outcrop "along the northern edge of Blackleaf Creek (S 18, T 26 N, R 7 W) about 11 miles north of Bynum, Montana on the Jones (Tee Six, Inc.) Ranch".
+
+**Ruled out.**
+- *Jones' Site.* The record carried it until 2026-08-13. The form appears in the title of Brandvold and colleagues' (1996) abstract, "Taphonomy of the Jones' site", as Burnham and colleagues (2000) list it; neither paper read for this note uses it in its own text.
+
+**Open.** The bearing: about 19 km west (Burnham and colleagues 2000) or about 11 miles north (Burnham 2004) of Bynum. The survey section Burnham (2004) prints, read on a map, would show which is right.
+
 ## References
 
 - `burnham2000a`: Burnham, D. A.; Derstler, K. L.; Currie, P. J.; Bakker, R. T.; Zhou, Z.; Ostrom, J. H. (2000). Remarkable new birdlike dinosaur (Theropoda: Maniraptora) from the Upper Cretaceous of Montana. *University of Kansas Paleontological Contributions* 13: 1-14. doi:10.17161/pcns.1808.3761
