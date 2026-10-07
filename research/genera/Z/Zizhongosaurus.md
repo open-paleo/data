@@ -1,5 +1,19 @@
 # *Zizhongosaurus*
 
+## Which stages does the *Zizhongosaurus* holotype take?
+
+*2026-10-06*
+
+**Conclusion.** The [Xintiangou](../../../stratigraphy/x/xintiangou.yml)'s range, Toarcian to Bajocian: no source read dates the horizon to a stage, and the describing paper weighs both an Early and a Middle Jurassic age for it. Governs `stage: [Toarcian, Aalenian, Bajocian]` and `period: [Early Jurassic, Middle Jurassic]` on [*Zizhongosaurus chuanchengensis*](../../../genera/Z/Zizhongosaurus.yml), and records `location.formation: Xintiangou` as the 2026-09-30 entry governs it. Settles that entry's **Open** line for the record.
+
+**Evidence.**
+- dong1983a, English translation, p. 6: the Xintiangou is Middle Jurassic; p. 19: the fossil's "primitive characters" imply "an Early Jurassic chronology" for "the purple sediments overlying the Daanzhai Limestone".
+
+**Ruled out.**
+- *Aalenian–Bajocian.* The record's earlier stages, which no source read for this note gives for the horizon.
+
+**Open.** Nothing for the record. McPhee and colleagues' (2016) Daanzhai Member placement stands unexamined.
+
 ## Which formation is the Zizhongosaurus holotype from?
 
 *2026-09-30*

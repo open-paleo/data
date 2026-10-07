@@ -1,10 +1,25 @@
 # *Lingwulong*
 
+## Which unit and stages does the *Lingwulong* record carry while the horizon is disputed?
+
+*2026-10-06*
+
+**Conclusion.** The describing paper's: the upper [Yan'an Formation](../../../stratigraphy/y/yan-an.yml), late Toarcian to Bajocian, with You and colleagues' Zhiluo placement set out in the location notes. Under the rule that a record stays at the describing paper's assignment while the primary literature argues over the unit, the earlier `formation: Zhiluo` and `stage: [Bathonian, Callovian]` are replaced. Governs `location.formation: Yan'an`, `location.part: upper`, `location.notes`, `stage: [Toarcian, Aalenian, Bajocian]` and `period: [Early Jurassic, Middle Jurassic]` on [*Lingwulong shenqi*](../../../genera/L/Lingwulong.yml). The 2026-09-30 entry's **Open** question, which formation, stands.
+
+**Evidence.**
+- xu2018b, Supplementary Note 2, p. 4: "The member yielding the *Lingwulong* specimens is currently uncertain"; the only member "described as having mudstones overlying coal beds is member 4", so "we provisionally suggest that *Lingwulong* comes from the upper part of the Yanan Formation"; p. 5: "we conservatively and provisionally regard the age of *Lingwulong* as somewhere within the late Toarcian–Bajocian", a range drawn from estimates for the formation as a whole.
+- you2019a, p. 31: the fossils occur "at the top of Member 2 of the Middle Jurassic Zhiluo Formation" (translated), from outcrop, a measured section and a borehole; the host rock is lithic quartz sandstone, where Xu and colleagues describe massive mudstones.
+
+**Ruled out.**
+- *Bathonian–Callovian.* Attributed to You and colleagues (2019) by later papers; their paper names no stage (see the 2026-09-30 entry).
+
+**Open.** Which formation, as before.
+
 ## Is the Lingwulong holotype from the Yan'an or the Zhiluo Formation?
 
 *2026-09-30*
 
-**Conclusion.** Disputed. The describing paper says Yan'an Formation, late Toarcian–Bajocian; a later dedicated field study puts the quarry at the top of Member 2 of the overlying [Zhiluo Formation](../../../stratigraphy/z/zhiluo.yml), which would make *Lingwulong* younger. Governs `location.formation` and `stage` on *Lingwulong shenqi*, and requires a dispute note on both.
+**Conclusion.** Disputed. The describing paper says Yan'an Formation, late Toarcian–Bajocian; a later dedicated field study puts the quarry at the top of Member 2 of the overlying Zhiluo Formation, which would make *Lingwulong* younger. Governs `location.formation` and `stage` on *Lingwulong shenqi*, and requires a dispute note on both.
 
 **Evidence.**
 - xu2018b, p. 2, Horizon and locality: "Yanan Formation, late Early to early Middle Jurassic (late Toarcian–Bajocian)".

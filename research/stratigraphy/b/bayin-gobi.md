@@ -1,5 +1,21 @@
 # Bayin-Gobi
 
+## Which stage do *Alxasaurus* and *Penelopognathus* take?
+
+*2026-10-06*
+
+**Conclusion.** *Alxasaurus* takes the Albian its describing paper gives for its own beds; *Penelopognathus* takes the formation's Aptian–Albian, because its Albian is the formation's age copied onto its horizon. Governs `stage: [Albian]` on [*Alxasaurus elesitaiensis*](../../../genera/A/Alxasaurus.yml) and `stage: [Aptian, Albian]` on [*Penelopognathus weishampeli*](../../../genera/P/Penelopognathus.yml), replacing `[Aptian]` on both.
+
+**Evidence.**
+- russell1993b, p. 2107: "lacustrine strata of Albian age"; p. 2108: the champsosaurs, turtles, *Psittacosaurus* and mammals "found in proximity to the *Alxasaurus* sites" are "suggestive of an Albian age".
+- godefroit2005a, p. 700: the formation "had already yielded an abundant vertebrate fauna in the Alxa Desert area … Such a fauna suggests an Albian age", citing Russell and Dong (1993) and Jerzykiewicz and Russell; the Qiriga beds are not sampled or traced to the Elesitai section.
+
+**Ruled out.**
+- *Aptian for either holotype.* Neither describing paper mentions the Aptian; the formation's Aptian comes from other localities.
+- *Albian for Penelopognathus.* It is a statement about the formation, borrowed from the *Alxasaurus* sites at Elesitai, not a statement about the Qiriga horizon.
+
+**Open.** Nothing.
+
 ## How is the formation's name spelled, and is it Aptian or Albian?
 
 *2026-09-30*

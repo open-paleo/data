@@ -47,17 +47,28 @@ species:
     type_species: true
     period:
       name:
+        - Early Jurassic
         - Middle Jurassic
       stage:
-        - Bathonian
-        - Callovian
+        - Toarcian
+        - Aalenian
+        - Bajocian
     location:
       country: CN
       locality: Quarry II, Lingwu Geopark
       region: CN-NX
-      formation: Zhiluo
-      notes: Xu and colleagues (2018) assign the type locality to the Yan'an
-        Formation. The Zhiluo assignment follows later work and is not settled.
+      formation: Yan'an
+      part: upper
+      notes: >
+        Xu and colleagues (2018) place the specimens in the Yanan Formation,
+        provisionally in its upper part, in "yellowish-grey and greyish-brown
+        massive mudstones" overlying coal beds, and "conservatively and
+        provisionally" date them late Toarcian to Bajocian. You and colleagues
+        (2019), from a measured section and a borehole beside the quarry, put
+        the fossils instead "at the top of Member 2 of the Middle Jurassic
+        Zhiluo Formation", in lithic quartz sandstones, and give no stage. The
+        Bathonian-Callovian later attributed to that placement does not appear
+        in their paper.
     type_specimen:
       specimen_id: [LM V001a]
       specimen_type: holotype
@@ -78,6 +89,9 @@ species:
     erected_in: xu2018b
 references:
   - id: xu2018b
+  - id: you2019a
+    notes: Places the quarry at the top of Member 2 of the Zhiluo Formation from
+      a measured section and borehole; gives the formation as Middle Jurassic.
   - id: mannion2025a
     notes: States the two candidate horizons and their ages, the Aalenian
       Yan'an Formation or the Bathonian-Callovian Zhiluo Formation.
