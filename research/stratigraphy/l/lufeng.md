@@ -1,5 +1,20 @@
 # Lufeng
 
+## Does the upper member keep the headword Zhangjiawa?
+
+*2026-10-06*
+
+**Conclusion.** Yes. "Zhangjiawa" is the name the English-language vertebrate literature prints for the member, and the registry follows English usage. Zhangjia'ao, the romanization of 张家坳, and Zhangjiaao stay as variants. Governs the headword and `variants` of [Zhangjiawa](../../../stratigraphy/z/zhangjiawa.yml). Settles the **Open** line of the entry on the member's name, whose "appears once" covered only the sources read for that note.
+
+**Evidence.**
+- irmis2004a, p. 11: "Zhangjiawa Member"; norman2007a, p. 865: "Zhangjiawa Member (Fang et al., 2000)". The name also appears in luo1994a, lucas2001b, irmis2008a, barrett2005b, zhang2009b and zhang2026b, and once in the translation of fang2000a.
+- zhang2018a, p. 1: "the Zhangjiaao Member (upper Dark Red Beds)"; hu2026a, p. 3: "Zhangjiaao Member".
+
+**Ruled out.**
+- *Renaming to Zhangjia'ao.* It matches the characters, but fewer English papers use it than "Zhangjiawa", and the records' unit names follow what English-language papers print.
+
+**Open.** Nothing.
+
 ## Is the Lufeng Formation Hettangian–Toarcian, with no Triassic?
 
 *2026-10-01*
@@ -37,11 +52,20 @@
 
 ## References
 
+- `irmis2004a`: Irmis, R. B. (2004). First report of Megapnosaurus (Theropoda: Coelophysoidea) from China. *PaleoBios* 24(3): 11-18.
+- `norman2007a`: Norman, D. B.; Butler, R. J.; Maidment, S. C. R. (2007). Reconsidering the status and affinities of the ornithischian dinosaur Tatisaurus oehleri Simmons, 1965. *Zoological Journal of the Linnean Society* 150(4): 865-874. doi:10.1111/j.1096-3642.2007.00301.x
+- `luo1994a`: Luo, Z.; Wu, X. C. (1994). The small tetrapods of the Lower Lufeng Formation, Yunnan, China. In *In the Shadow of the Dinosaurs: Early Mesozoic Tetrapods*, pp. 251-270. Cambridge University Press, Cambridge.
+- `lucas2001b`: Lucas, S. G. (2001). Chinese Fossil Vertebrates. Columbia University Press, New York. doi:10.7312/luca08482
+- `irmis2008a`: Irmis, R. B.; Knoll, F. (2008). New ornithischian dinosaur material from the Lower Jurassic Lufeng Formation of China. *Neues Jahrbuch für Geologie und Paläontologie - Abhandlungen* 247(1): 117-128. doi:10.1127/0077-7749/2008/0247-0117
+- `barrett2005b`: Barrett, P. M.; Upchurch, P.; Wang, X. L. (2005). Cranial osteology of Lufengosaurus huenei Young (Dinosauria: Prosauropoda) from the Lower Jurassic of Yunnan, People's Republic of China. *Journal of Vertebrate Paleontology* 25(4): 806-822. doi:10.1671/0272-4634(2005)025[0806:COOLHY]2.0.CO;2
+- `zhang2009b`: Zhang, S. (ed.) (2009). Geological Formation Names of China (1866–2000). Higher Education Press, Beijing; Springer, Berlin. doi:10.1007/978-3-540-93824-8
+- `zhang2026b`: Zhang, Z.; Dong, Q.; Wang, T.; You, H. L.; Wang, X. (2026). Redescription of the osteology and the systematics of Panguraptor lufengensis (Neotheropoda, Coelophysoidea). *Swiss Journal of Palaeontology* 145: 723-750. doi:10.3897/sjp.145.185485
+- `fang2000a`: Fang, X.; Long, Q.; Lu, L.; Zhang, Z.; Pan, S.; Wang, Y.; Li, X.; Cheng, Z. (2000). [Lower, Middle, and Upper Jurassic divisions of the Lufeng region of Yunnan province]. In *Proceedings of the Third National Stratigraphical Congress of China*, pp. 208-214. Geological Publishing House, Beijing.
+- `zhang2018a`: Zhang, Q. N.; You, H. L.; Wang, T.; Chatterjee, S. (2018). A new sauropodiform dinosaur with a 'sauropodan' skull from the Lower Jurassic Lufeng Formation of Yunnan Province, China. *Scientific Reports* 8(1). doi:10.1038/s41598-018-31874-9
+- `hu2026a`: Hu, S. B.; Wang, Y. C.; Mo, X.; Zhang, X. Q.; Zeng, W. T.; Wang, T.; Sun, Z. B.; Dong, Q. X.; Guan, Q.; Liu, Y. H.; Zhang, Y. S.; Bing, Y.; Wang, Y. M.; You, H. L. (2026). A new sauropodomorph dinosaur from the Lower Jurassic Fengjiahe Formation of Dali of Yunnan Province, China. *Royal Society Open Science* 13(3). doi:10.1098/rsos.252219
 - `pang2002a`: Pang, Q. Q.; Fang, X. S.; Zhang, Z. X.; Li, Y. A.; Li, P. X.; Cheng, Z. W. (2002). 滇中鱼坝村组的建立及陆相侏罗系底界 [Establishment of the Yubacun Formation in central Yunnan and the base of the continental Jurassic]. *Geological Review* 48(1): 1-8. doi:10.16509/j.georeview.2002.01.001
 - `chen2026a`: Chen, J.; Niu, Y. N.; Ma, R.; Zhou, Y. L.; Liu, W. J.; Wang, Y. M.; You, H. L.; Xu, X.; Shen, S. Z.; Feng, Z. (2026). Triassic–Jurassic environmental instability on the subtropical eastern Tethyan margin linked to low-latitude dinosaur dispersal. *Communications Earth & Environment* 7: 91. doi:10.1038/s43247-025-03083-6
 - `hesselbo2020a`: Hesselbo, S. P.; Ogg, J. G.; Ruhl, M.; Hinnov, L. A.; Huang, C. J. (2020). The Jurassic Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 955-1021. Elsevier, Amsterdam. doi:10.1016/B978-0-12-824360-2.00026-7
 - `wang2025a`: Wang, Y. M.; Zhang, Q. N.; Wang, Y. C.; Xu, H.; Chen, J.; Feng, Z.; Xu, X.; Wang, T.; You, H. L. (2025). A new Early Jurassic dinosaur represents the earliest-diverging and oldest sauropodomorph of East Asia. *Scientific Reports* 15(1). doi:10.1038/s41598-025-12185-2
-- `zhang2009b`: Zhang, S. (ed.) (2009). Geological Formation Names of China (1866–2000). Higher Education Press, Beijing; Springer, Berlin. doi:10.1007/978-3-540-93824-8
 - `huang2005a`: Huang, B. C.; Li, Y. A.; Fang, X. S.; Sun, D. J.; Pang, Q. Q.; Cheng, Z. W.; Li, P. X. (2005). Magnetostratigraphy of the Jurassic in Lufeng, central Yunnan. *Geological Bulletin of China* 24(4): 322-328.
 - `liang2024a`: Liang, Q.; Falkingham, P. L.; Xing, L. (2024). Virtual skeleton and body mass for revealing the life strategies of Sinosaurus. *Historical Biology*: 1-15. doi:10.1080/08912963.2024.2385615
-- `fang2000a`: Fang, X.; Long, Q.; Lu, L.; Zhang, Z.; Pan, S.; Wang, Y.; Li, X.; Cheng, Z. (2000). [Lower, Middle, and Upper Jurassic divisions of the Lufeng region of Yunnan province]. In *Proceedings of the Third National Stratigraphical Congress of China*, pp. 208-214. Geological Publishing House, Beijing.

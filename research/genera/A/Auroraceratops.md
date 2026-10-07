@@ -1,5 +1,20 @@
 # *Auroraceratops*
 
+## Does the *Auroraceratops* holotype take the Zhonggou Formation?
+
+*2026-10-06*
+
+**Conclusion.** Yes, as a working hypothesis. You and colleagues (2018) name the holotype's own beds, the Gongpoquan red beds, as the base of the Zhonggou, and the record follows them, as [*Archaeoceratops oshimai*](../../../genera/A/Archaeoceratops.yml) from the same red beds already does. Governs `location.formation: Zhonggou`, in place of `location.group: Xinminpu`, on [*Auroraceratops rugosus*](../../../genera/A/Auroraceratops.yml). Supersedes the 2026-09-15 entry's conclusion; its **Open** question, whether a measured section bears the hypothesis out, stands.
+
+**Evidence.**
+- you2018a, p. 6: "the *Auroraceratops rugosus* holotype-bearing red beds underlie the gray beds that yielded most of the dinosaur taxa"; "the red beds in both the Yujingzi and Gongpoquan basins represent the beginning of the Zhonggou Formation with an early Albian age".
+- you2018a, p. 8: "The ceratopsians *Archaeoceratops oshimai* and *Auroraceratops rugosus* were recovered from the red beds in the Gongpoquan Basin".
+
+**Ruled out.**
+- *Stopping at the group because the occurrence lines do.* You and colleagues (2005) and Morschhauser and colleagues (2018) give the Xinminpu Group, a less specific placement rather than a contrary one, and You and colleagues (2018) state the formation for this holotype's beds by name. Holding *Auroraceratops* at the group while *Archaeoceratops oshimai* from the same red beds takes the Zhonggou recorded one source two ways.
+
+**Open.** Whether a measured section or chemostratigraphic profile in the Gongpoquan Basin bears out the correlation.
+
 ## Why does the *Auroraceratops* holotype stop at the Xinminpu Group?
 
 *2026-09-15*
@@ -32,7 +47,7 @@
 
 ## References
 
+- `you2018a`: You, H.; Morschhauser, E. M.; Li, D.; Dodson, P. (2018). Introducing the Mazongshan Dinosaur Fauna. *Journal of Vertebrate Paleontology* 38(sup1): 1-11. doi:10.1080/02724634.2017.1396995
 - `you2005b`: You, H.; Li, D.; Ji, Q.; Lamanna, M. C.; Dodson, P. (2005). On a new genus of basal neoceratopsian dinosaur from the Early Cretaceous of Gansu Province, China. *Acta Geologica Sinica* 79(5): 593-597.
 - `morschhauser2018a`: Morschhauser, E. M.; You, H.; Li, D.; Dodson, P. (2018). Phylogenetic history of Auroraceratops rugosus (Ceratopsia: Ornithischia) from the Lower Cretaceous of Gansu Province, China. *Journal of Vertebrate Paleontology* 38(sup1): 117-147. doi:10.1080/02724634.2018.1509866
-- `you2018a`: You, H.; Morschhauser, E. M.; Li, D.; Dodson, P. (2018). Introducing the Mazongshan Dinosaur Fauna. *Journal of Vertebrate Paleontology* 38(sup1): 1-11. doi:10.1080/02724634.2017.1396995
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.

@@ -1,5 +1,20 @@
 # *Rhoetosaurus*
 
+## Does the *Rhoetosaurus* holotype take the Callovian, the Oxfordian, or both?
+
+*2026-10-06*
+
+**Conclusion.** Both. Todd and colleagues' date is a maximum: the beds are no older than the late Callovian and may be younger, and their own reading, made on the older chart, was early Oxfordian. Governs `stage: [Callovian, Oxfordian]` and `period: [Middle Jurassic, Late Jurassic]` on *Rhoetosaurus brownei*. Settles the choice the 2026-10-03 entry left between Callovian and Callovian–Oxfordian.
+
+**Evidence.**
+- todd2019a, accepted manuscript, p. 2: "The *Rhoetosaurus* maximum depositional age determined is 162.6 ± 1.1 Ma, no older than early Oxfordian".
+- hesselbo2020a: base of the Oxfordian at 161.5 ± 1.0 Ma, within the error of that date.
+
+**Ruled out.**
+- *Callovian alone.* It reads the maximum age as the true age. Todd and colleagues argue the two are close (accepted manuscript, p. 9), but a maximum does not exclude the younger stage that the date's error reaches.
+
+**Open.** Nothing.
+
 ## What stage is the Rhoetosaurus holotype?
 
 *2026-10-03*

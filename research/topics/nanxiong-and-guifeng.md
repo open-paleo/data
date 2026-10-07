@@ -1,5 +1,22 @@
 # Nanxiong Formation and the Ganzhou Basin
 
+## Does Yao and colleagues' Zhoutian list move *Jiangxisaurus* or *Gannansaurus*?
+
+*2026-10-06*
+
+**Conclusion.** No. Their Zhoutian placement rests on citations of the describing papers, not on section data, and the describing paper of *Jiangxisaurus* gives the Nanxiong. The record keeps `formation: Nanxiong` and its Maastrichtian, and notes the Zhoutian reading. *Gannansaurus* is not among the papers they cite. Governs `location.formation` and `location.notes` on [*Jiangxisaurus ganzhouensis*](../../genera/J/Jiangxisaurus.yml), and `location.formation` on [*Gannansaurus sinensis*](../../genera/G/Gannansaurus.yml). Narrows the 2026-09-30 entry's **Open** line, which stands for the wider question.
+
+**Evidence.**
+- yao2026a, p. 3: the Zhoutian "is exposed in the north-east part of Ganxian district and Longling town", and its vertebrates include "Sauropoda (Han et al., 2024; T. Li et al., 2017; Lu et al., 2013) and Oviraptoridae (T. Li et al., 2017; Wei et al., 2013)". The same page gives the Maastrichtian upper unit as the source of "most vertebrate fossils".
+- yao2026a, reference list: its only Lü 2013 is "A new oviraptorosaur (Dinosauria: Oviraptorosauria) from the Late Cretaceous of southern China", *PLoS ONE* 8: e80557, which is lü2013a, the [*Nankangia*](../../genera/N/Nankangia.yml) paper, not lü2013c on *Gannansaurus*. Its Han 2024 is *Gandititan*, which [its record](../../genera/G/Gandititan.yml) already places in the Zhoutian on han2024a.
+- wei2013a, Type locality and horizon: "Longling, Nankang of Ganzhou City, Jiangxi Province; Red sandstones of Upper Cretaceous Nanxiong Formation".
+
+**Ruled out.**
+- *Zhoutian for Jiangxisaurus now.* A placement by citation that contradicts the cited paper, in one 2026 paper; under the taxonomy policy it waits for a source with section data or wider use.
+- *Zhoutian for Gannansaurus.* Yao and colleagues do not cite its describing paper. Their "Lu et al., 2013" under Sauropoda resolves in their bibliography to the *Nankangia* paper, an oviraptorosaur, so what it was meant to cite is unclear.
+
+**Open.** Whether *Nankangia*, also from Longling, is meant by that citation.
+
 ## Is "Nanxiong Formation" the right unit for Ganzhou Basin dinosaurs?
 
 *2026-09-30*
@@ -21,10 +38,14 @@
 
 ## References
 
+- `yao2026a`: Yao, H.; Qiu, W.; Yu, J.; Yang, L.; Wang, H.; Cao, S.; Zhao, K.; Xu, M.; Shi, G.; Lou, F.; Zeng, C.; Lu, P.; Wu, R.; Xu, X.; Han, F.; Xing, H. (2026). A new saurolophine hadrosaurid (Dinosauria: Ornithopoda) from the Upper Cretaceous of South China, providing further support for the possible Asian origin of Brachylophosaurini. *Journal of Systematic Palaeontology* 24(1): 2635569. doi:10.1080/14772019.2026.2635569
+- `lü2013a`: Lü, J.; Yi, L.; Zhong, H.; Wei, X. (2013). A New Oviraptorosaur (Dinosauria: Oviraptorosauria) from the Late Cretaceous of Southern China and Its Paleoecological Implications. *PLoS ONE* 8(11): e80557. doi:10.1371/journal.pone.0080557
+- `lü2013c`: Lü, J.; Yi, L.; Zhong, H.; Wei, X. (2013). A new somphospondylan sauropod (Dinosauria, Titanosauriformes) from the Late Cretaceous of Ganzhou, Jiangxi Province of southern China. *Acta Geologica Sinica (English Edition)* 87(3): 678-685. doi:10.1111/1755-6724.12079
+- `han2024a`: Han, F.; Yang, L.; Lou, F.; Sullivan, C.; Xu, X.; Qiu, W.; Liu, H.; Yu, J.; Wu, R.; Ke, Y.; Xu, M.; Hu, J.; Lu, P. (2024). A new titanosaurian sauropod, Gandititan cavocaudatus gen. et sp. nov., from the Late Cretaceous of southern China. *Journal of Systematic Palaeontology* 22(1): 2293038. doi:10.1080/14772019.2023.2293038
+- `wei2013a`: Wei, X.; Pu, H.; Xu, L.; Liu, D.; Lü, J. (2013). A new oviraptorid dinosaur (Theropoda: Oviraptorosauria) from the Late Cretaceous of Jiangxi Province, southern China. *Acta Geologica Sinica (English Edition)* 87(4): 899-904. doi:10.1111/1755-6724.12098
 - `zhao1991a`: Zhao, Z. K.; Ye, J.; Li, H. M.; Zhao, Z. H.; Yan, Z. (1991). Extinction of the dinosaurs across the Cretaceous-Tertiary boundary in Nanxiong Basin, Guangdong Province. *Vertebrata PalAsiatica* 29(1): 1-20.
 - `xing2016a`: Xing, L.; Lockley, M. G.; Li, D.; Klein, H.; Ye, Y.; Persons, W. S., IV; Ran, H. (2016). Late Cretaceous ornithopod-dominated, theropod, and pterosaur track assemblages from the Nanxiong Basin, China: new discoveries, ichnotaxonomy, and paleoecology. *Palaeogeography, Palaeoclimatology, Palaeoecology* 466: 303-313. doi:10.1016/j.palaeo.2016.11.035
 - `xing2024a`: Xing, L.; Niu, K.; Mallon, J.; Miyashita, T. (2024). A new armored dinosaur with double cheek horns from the early Late Cretaceous of southeastern China. *Vertebrate Anatomy Morphology Palaeontology* 11. doi:10.18435/vamp29396
-- `yao2026a`: Yao, H.; Qiu, W.; Yu, J.; Yang, L.; Wang, H.; Cao, S.; Zhao, K.; Xu, M.; Shi, G.; Lou, F.; Zeng, C.; Lu, P.; Wu, R.; Xu, X.; Han, F.; Xing, H. (2026). A new saurolophine hadrosaurid (Dinosauria: Ornithopoda) from the Upper Cretaceous of South China, providing further support for the possible Asian origin of Brachylophosaurini. *Journal of Systematic Palaeontology* 24(1): 2635569. doi:10.1080/14772019.2026.2635569
 - `jin2022a`: Jin, X.; Mao, F.; Du, T.; Yang, Y.; Meng, J. (2022). A new multituberculate from the latest Cretaceous of central China and its implications for multituberculate tooth homologies and occlusion. *Journal of Mammalian Evolution*. doi:10.1007/s10914-022-09636-2
 - `paul2024a`: Paul, G. S. (2024). The Princeton Field Guide to Dinosaurs (3rd ed.). Princeton University Press.
 - `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, 2nd edition*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027

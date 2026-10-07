@@ -289,6 +289,16 @@
 
 **Exceptions.** None.
 
+## `group` holds the nearest group-rank unit, whatever its rank word
+
+*2026-10-06*
+
+**Rule.** `location.group` takes the nearest unit above formation rank that suits the taxon, whether the registry ranks it a group, subgroup or supergroup; the field does not distinguish them. It is still recorded only when the sources give no finer unit, with one exception: a record keeps its group beside a `formation` when that formation's name belongs to units in two separate groups, so that the group says which one is meant. Decides `location.group`. Refines the rule above, whose exceptions it replaces.
+
+**Why.** [*Rhoetosaurus*](../genera/R/Rhoetosaurus.yml) records the Walloon Coal Measures in `group` though the registry ranks it a subgroup (user ruling, 2026-10-06). Adding a `subgroup` field would split one role across two fields for no gain in what a record says.
+
+**Exceptions.** The shared-name case above.
+
 ## `formation` holds the modern name, with a source for it
 
 *2026-09-10*
