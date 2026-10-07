@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-10-07T21:59:39.793Z
+  built_at: 2026-10-07T22:48:22.411Z
   clade_count: 188
   genus_count: 1425
   license: CC-BY-4.0
@@ -34057,7 +34057,7 @@ genera:
     etymology: From Berber (referring to the Berber people of Morocco, near where the fossils were found) + Greek sauros (σαῦρος) meaning 'lizard'; overall meaning 'Berber lizard'.
     pronunciation:
       phonetic: BUHR-buh-SOR-us
-    description: Berberosaurus is a genus of neotheropod dinosaur, possibly a ceratosaur, from the Toarcian-age (Lower Jurassic) "Toundoute Continental Series" (Azilal Formation) found in the Central High Atlas of Toundoute, Ouarzazate, Morocco. The type species of the genus Berberosaurus is B. liassicus, in reference to the Lias epoch. Berberosaurus might be the oldest known ceratosaur, and is based on partial postcranial remains. This genus represents the oldest formally identified theropod from the North of Africa, as well one of the few from the region in the Early Jurassic.
+    description: Berberosaurus is a genus of neotheropod dinosaur, possibly a ceratosaur, from the Lower Jurassic "Toundoute Continental Series" found in the Central High Atlas of Toundoute, Ouarzazate, Morocco. The type species of the genus Berberosaurus is B. liassicus, in reference to the Lias epoch. Berberosaurus might be the oldest known ceratosaur, and is based on partial postcranial remains. This genus represents the oldest formally identified theropod from the North of Africa, as well one of the few from the region in the Early Jurassic.
     diet: carnivore
     locomotion: bipedal
     paleoenvironment:
@@ -34096,7 +34096,7 @@ genera:
           country: MA
           locality: Tazouda
           region: Ouarzazate
-          notes: The type material comes from beds the literature calls the Toundoute Continental Series, which is a descriptive name rather than a formally erected unit. The succession sits on an allochthonous thrust sheet detached in Triassic evaporites at the southern edge of the High Atlas, so it cannot be traced laterally into the type area of any named unit, and no lithostratigraphic correlation has been published.
+          notes: The type material comes from beds the literature calls the Toundoute Continental Series, which is a descriptive name rather than a formally erected unit. The succession sits on an allochthonous thrust sheet detached in Triassic evaporites at the southern edge of the High Atlas, so it cannot be traced laterally into the type area of any named unit. Allain and Aquesbi (2008) correlate it with the Toarcian Azilal and Wazzant formations, while Benvenuti and colleagues (2024) map it as part of the Upper Jurassic-Lower Cretaceous Iouridane Formation.
           region_code: MA-OUA
         type_specimen:
           specimen_id:
@@ -34126,6 +34126,25 @@ genera:
         issue: "3"
         pages: 610-624
         doi: 10.1671/0272-4634(2007)27[610:aadtft]2.0.co;2
+      - id: allain2008a
+        authors: Allain, R.; Aquesbi, N.
+        year: 2008
+        title: Anatomy and phylogenetic relationships of Tazoudasaurus naimi (Dinosauria, Sauropoda) from the late Early Jurassic of Morocco
+        journal: Geodiversitas
+        volume: "30"
+        issue: "2"
+        pages: 345-424
+        notes: Correlates the Toundoute series with the Toarcian Azilal and Wazzant formations.
+      - id: benvenuti2024a
+        authors: Benvenuti, M.; Nesi, J.; Papini, M.; Risaliti, G.; Sani, F.; Moratti, G.
+        year: 2024
+        title: "Geology of the Toundoute Region (South Morocco): a window on the Early Jurassic-Cretaceous tectono-sedimentary evolution of the Central High Atlas"
+        journal: Journal of Maps
+        volume: "20"
+        issue: "1"
+        article_number: "2419456"
+        doi: 10.1080/17445647.2024.2419456
+        notes: Maps the bone-bearing beds as tentatively the Iouridane Formation.
     taxonomy:
       - Life
       - Animalia
@@ -47990,7 +48009,7 @@ genera:
             - Late Cretaceous
         location:
           country: US
-          notes: Cope gives no locality and no horizon beyond "the Laramie", and Hatcher said as much in 1902 before offering South Dakota as a guess. Lull and Wright (1942) give a hedged "?Judith River" in Montana, which later work repeats while dropping their question mark and adding a county that none of them sources. The other two taxa Cope named in the same paper are both Lancian and traceable to South Dakota, and Cope records this material as found a few hundred yards from one of them, which would place it in the Hell Creek Formation instead.
+          notes: Cope gives no locality and no horizon beyond "the Laramie", and Hatcher (1902) records the type as "locality and horizon not given". Lull and Wright (1942) give a hedged "?Judith River" in Montana, which later work repeats while dropping their question mark and adding a county that none of them sources.
         type_specimen:
           specimen_id:
             - AMNH 3978
@@ -48014,6 +48033,26 @@ genera:
         pages: 756-758
         doi: 10.1086/275585
         notes: Erects the genus on beak bones found with fragments of a supratemporal, referring it to the ceratopsian family Agathaumidae.
+      - id: hatcher1902a
+        authors: Hatcher, J. B.
+        year: 1902
+        title: The genera and species of the Trachodontidae (Hadrosauridae, Claosauridae) Marsh
+        journal: Annals of the Carnegie Museum
+        volume: "1"
+        issue: "3"
+        pages: 377-386
+        doi: 10.5962/p.331063
+        notes: Records the type's "locality and horizon not given", and supposes from Cope's description that it is a trachodontid.
+      - id: lull1942a
+        authors: Lull, R. S.; Wright, N. E.
+        year: 1942
+        title: Hadrosaurian Dinosaurs of North America
+        journal: Geological Society of America Special Papers
+        publisher: Geological Society of America
+        volume: "40"
+        pages: 1-272
+        doi: 10.1130/spe40-p1
+        notes: Gives the provenance as "?Judith River", Montana, with the query.
       - id: hatcher1907a
         authors: Hatcher, J. B.; Marsh, O. C.; Lull, R. S.
         year: 1907
@@ -48064,15 +48103,6 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
         notes: Records that the genus has been considered both hadrosaurid and ceratopsid, and treats it as an indeterminate hadrosaurid.
-      - id: lull1942a
-        authors: Lull, R. S.; Wright, N. E.
-        year: 1942
-        title: Hadrosaurian Dinosaurs of North America
-        journal: Geological Society of America Special Papers
-        publisher: Geological Society of America
-        volume: "40"
-        pages: 1-272
-        doi: 10.1130/spe40-p1
     taxonomy:
       - Life
       - Animalia
@@ -48594,7 +48624,7 @@ genera:
           region: New Mexico
           formation: Chinle
           locality: Whitaker Quarry, Ghost Ranch
-          notes: The quarry lies in the informal 'siltstone member' of the Chinle Formation, whose correlation with the formation's named subdivisions is unresolved. Nesbitt and Sues (2020) record that it "remains contentious", listing a Petrified Forest Member correlation after Schwartz and Gillette (1994) against a Rock Point Member one after Lucas and Hunt (1993), with magnetostratigraphy telling against the latter; Cather and colleagues (2013) favor reverting to the siltstone member outright. No member is recorded while that stands.
+          notes: The quarry lies in the informal 'siltstone member' of the Chinle Formation, whose correlation with the formation's named subdivisions is unresolved. Nesbitt and Sues (2020) record that it "remains contentious", listing a Petrified Forest Member correlation after Schwartz and Gillette (1994) against a Rock Point Member one after Lucas and Hunt (1993). Cather and colleagues (2013) note that magnetostratigraphic analysis "has called into question" the Rock Point correlation and favor reverting to the siltstone member. No member is recorded while that stands.
           region_code: US-NM
         size:
           length_m:
@@ -50911,7 +50941,7 @@ genera:
             - SMC B.28814
           specimen_type: holotype
           institution: Sedgwick Museum, University of Cambridge
-          material: Ankylosed basioccipital and basisphenoid bones.
+          material: Incomplete neural arch of a dorsal vertebra.
           completeness: fragmentary
         authors: Seeley, H. G.
         described: 1874
@@ -68629,7 +68659,7 @@ genera:
     etymology: From Hungarian 'Ferenc' (Francis), the birth name of paleontologist Franz Nopcsa von Felső-Szilvás (1877-1933), who first reported dinosaur remains from the Haţeg Basin, and Greek 'keras/keratos' (horn) and 'ops' (face).
     pronunciation:
       phonetic: feh-ren-seh-ruh-tops
-    description: Ferenceratops is an extinct genus of basal ceratopsian dinosaur from the Maastrichtian Sânpetru and Densuș-Ciula Formations of the Haţeg Basin, western Romania. The single species, Ferenceratops shqiperorum, was originally described by Weishampel and colleagues (2003) as a second species of the rhabdodontid ornithopod Zalmoxes; Maidment and colleagues (2026) reanalysed the holotype postcrania and recovered it as a ceratopsian, erecting a new genus and arguing that 'Zalmoxes' shqiperorum belongs to a previously unrecognised European ceratopsian lineage that also includes Ajkaceratops from Hungary.
+    description: Ferenceratops is an extinct genus of basal ceratopsian dinosaur from the Maastrichtian Sânpetru Formation of the Haţeg Basin, western Romania. The single species, Ferenceratops shqiperorum, was originally described by Weishampel and colleagues (2003) as a second species of the rhabdodontid ornithopod Zalmoxes; Maidment and colleagues (2026) reanalysed the holotype postcrania and recovered it as a ceratopsian, erecting a new genus and arguing that 'Zalmoxes' shqiperorum belongs to a previously unrecognised European ceratopsian lineage that also includes Ajkaceratops from Hungary.
     dispute:
       summary: |
         Ferenceratops shqiperorum was erected by Maidment and colleagues (2026) for material formerly assigned to the ornithopod Zalmoxes shqiperorum, which they recovered as a European ceratopsian near the Ceratopsoidea. Its affinities within Ceratopsia are not yet corroborated by other analyses.
@@ -87222,7 +87252,7 @@ genera:
         - date: 2026-07-14
           note: Moved to Theropoda incertae sedis; none of the sources cited for this taxon supports a placement below Theropoda for the fragmentary, now-lost vertebrae.
     etymology: Named after In Tedreft, the locality in Niger where the holotype was collected; meaning "In Tedreft lizard"
-    description: Inosaurus is a dubious genus of extinct theropod dinosaur from the Early Cretaceous age "Continental intercalaire" and Echkar Formation of Niger and possibly from the Late Cretaceous age Baharija Formation of Egypt. The type, and only species, is I. tedreftensis.
+    description: Inosaurus is a dubious genus of extinct theropod dinosaur from the "Continental intercalaire" of Niger, the type material from the Tiourarén Formation at In Tedreft, and possibly from the Late Cretaceous Baharija Formation of Egypt. The type, and only species, is I. tedreftensis.
     diet: carnivore
     locomotion: bipedal
     paleoenvironment:
@@ -105160,7 +105190,7 @@ genera:
         issue: "4"
         pages: 875-916
         doi: 10.1111/zoj.12113
-        notes: Reassessment restricting Lourinhasaurus to the Moinho do Carmo lectotype; provides a 13-autapomorphy emended diagnosis and recovers it within Camarasauridae.
+        notes: Restricts Lourinhasaurus to the Moinho do Carmo lectotype, from the Sobral Member of the Farta Pão Formation, with a 13-autapomorphy diagnosis; recovers it in Camarasauridae.
       - id: mateus2017a
         authors: Mateus, O.; Dinis, J.; Cunha, P. P.
         year: 2017
@@ -105170,7 +105200,7 @@ genera:
         issue: "1"
         pages: 75-97
         doi: 10.21695/cterra/esj.v19i1.355
-        notes: Places the Sobral Member in the Farta Pão Formation.
+        notes: Lists Lourinhasaurus alenquerensis in the dinosaur fauna of the Praia da Amoreira-Porto Novo members of the Lourinhã Formation, without naming the Moinho do Carmo locality.
       - id: jones2026b
         authors: Jones, B.
         year: 2026
@@ -109896,6 +109926,15 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
         notes: Source of the hip height estimate.
+      - id: mannion2021a
+        authors: Mannion, P. D.; Tschopp, E.; Whitlock, J. A.
+        year: 2021
+        title: Anatomy and systematics of the diplodocoid Amphicoelias altus supports high sauropod dinosaur diversity in the Upper Jurassic Morrison Formation of the USA
+        journal: Royal Society Open Science
+        volume: "8"
+        pages: "210377"
+        doi: 10.1098/rsos.210377
+        notes: Gives the holotype's locality as Cope Quarry III.
     taxonomy:
       - Life
       - Animalia
@@ -136698,7 +136737,7 @@ genera:
           region_code: GB-WSX
         type_specimen:
           specimen_id:
-            - NHMUK PV R 2584
+            - NHMUK PV OR 2584
           specimen_type: holotype
           institution: Natural History Museum
         erected_in: nopcsa1928a
@@ -136712,7 +136751,7 @@ genera:
         journal: Proceedings of the Geological Society of London
         volume: "1"
         pages: 410-411
-        notes: First referred the holotype specimen (NHMUK PV R 2584) to Hylaeosaurus; Nopcsa (1928) later made it the type of Polacanthoides.
+        notes: First referred the holotype specimen (NHMUK PV OR 2584) to Hylaeosaurus; Nopcsa (1928) later made it the type of Polacanthoides.
       - id: nopcsa1928a
         authors: Nopcsa, B. F.
         year: 1928
@@ -136722,7 +136761,7 @@ genera:
         issue: "1"
         pages: 1-84
         publisher: Institutum Regni Hungariae Geologicum
-        notes: Erects Polacanthoides ponderosus on scapula, humerus, and tibia from Bolney as a brief note, deferring the full description to a later paper.
+        notes: Erects Polacanthoides ponderosus on a scapula, humerus and tibia as a brief note, deferring the full description to a later paper.
       - id: raven2020a
         authors: Raven, T. J.; Barrett, P. M.; Pond, S. B.; Maidment, S. C. R.
         year: 2020
@@ -137882,7 +137921,7 @@ genera:
           country: GB
           region: North Yorkshire
           formation: Calcareous Grit
-          notes: The unit is a matrix identification, not a collection record. The specimen reached Cambridge in 1861 from a private collection with no field data, and Seeley could trace no history for it in 1875 or 1893. Judd and Etheridge proposed the Calcareous Grit from the matrix and a Pecten in the block, while offering the Coral Rag as an alternative and Sussex as an alternative to Yorkshire. Naish and Martill (2008) leave that choice open.
+          notes: The unit is a matrix identification, not a collection record. The specimen reached Cambridge in 1861 from a private collection with no field data, and Seeley could trace no history for it in 1875 or 1893. Judd and Etheridge proposed the Calcareous Grit from the matrix and a Pecten in the block, while offering the Coral Rag as an alternative and the shore at Hastings as an alternative to the Yorkshire coast. Naish and Martill (2008) leave that choice open.
           region_code: GB-NYK
         type_specimen:
           specimen_id:
@@ -154710,7 +154749,7 @@ genera:
         volume: "18"
         issue: 2-3
         pages: 349-402
-        notes: Erects the genus and species on an isolated vertebra from the Tafilalt, identified as a mid-cervical.
+        notes: Erects the genus and species on an isolated vertebra from the Tafilalt, identified as a posterior cervical.
       - id: evers2015a
         authors: Evers, S. W.; Rauhut, O. W. M.; Milner, A. C.; McFeeters, B.; Allain, R.
         year: 2015
@@ -159209,7 +159248,7 @@ genera:
     etymology: From Latin spina ('spine') and Greek stropheus ('vertebra'), referring to the epipophyseal processes of the vertebrae
     pronunciation:
       phonetic: SPY-no-STROH-fee-us
-    description: Spinostropheus is a genus of theropod dinosaur from the Tiourarén Formation of Niger. The type and only species is S. gautieri. Its age has been disputed, with estimates ranging from the Berriasian to the Cenomanian.
+    description: Spinostropheus is a genus of theropod dinosaur from the Tiourarén Formation of Niger. The type and only species is S. gautieri.
     diet: carnivore
     locomotion: bipedal
     paleoenvironment:
@@ -166049,7 +166088,7 @@ genera:
     etymology: Named after Tazouda, one of the fossil localities near Toundoute in the High Atlas Mountains of Morocco, combined with Greek 'sauros' meaning 'lizard'
     pronunciation:
       phonetic: tuh-ZOO-duh-SOR-us
-    description: Tazoudasaurus is a genus of gravisaurian (probably vulcanodontid) sauropod dinosaurs from the late Early Jurassic (Toarcian). It was recovered in the "Toundoute Continental Series" (Azilal Formation), located in the High Atlas Mountains of Morocco in North Africa. Along with Patagosaurus, Volkheimeria, Bagualia, and Perijasaurus (perhaps Barapasaurus and Kotasaurus as well), it represents one of the few sauropods named from this stage on Gondwana, as well as the only one from Africa.
+    description: Tazoudasaurus is a genus of gravisaurian (probably vulcanodontid) sauropod dinosaurs from the Early Jurassic. It was recovered in the "Toundoute Continental Series", located in the High Atlas Mountains of Morocco in North Africa. Along with Patagosaurus, Volkheimeria, Bagualia, and Perijasaurus (perhaps Barapasaurus and Kotasaurus as well), it represents one of the few sauropods named from this interval on Gondwana, as well as the only one from Africa.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -177427,7 +177466,7 @@ genera:
         title: Monograph on the fossil Reptilia of the Wealden and Purbeck Formations. Part IV. Dinosauria (Hylaeosaurus)
         journal: Monographs of the Palaeontographical Society
         pages: 8-26
-        notes: Refers three Cuckfield metatarsals to Hylaeosaurus sp.; a mirrored lithograph caused over a century of confusion about which foot was preserved, and the catalog number Owen gave (2556) is incorrect.
+        notes: Refers three metatarsals to Hylaeosaurus sp.; a mirrored lithograph caused over a century of confusion about which foot was preserved, and the catalog number Owen gave (2556) is incorrect.
       - id: lydekker1889a
         authors: Lydekker, R.
         year: 1889
@@ -177435,7 +177474,7 @@ genera:
         journal: Geological Magazine
         volume: "6"
         pages: 325-326
-        notes: Names Megalosaurus oweni for the Cuckfield metatarsus Owen had referred to Hylaeosaurus, separating it from M. dunkeri on size; later reassigned through Altispinax to Valdoraptor.
+        notes: Names Megalosaurus oweni for the metatarsus Owen had referred to Hylaeosaurus, separating it from M. dunkeri on size; later reassigned through Altispinax to Valdoraptor.
       - id: olshevsky1991a
         authors: Olshevsky, G.
         year: 1991
