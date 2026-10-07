@@ -41,9 +41,12 @@ species:
       country: MW
       locality: Mwakasyunguti area
       region: MW-KR
-      notes: The Dinosaur Beds that reference works give as this taxon's
-        formation is a working label for the fossiliferous Karoo-aged beds
-        of northern Malawi, not a unit anyone erected.
+      formation: Dinosaur Beds
+      part: upper
+      notes: Gomani (2005) gives the specimens as from "the same area of the
+        Dinosaur Beds" near Mwakasyunguti, the holotype dentary from quarry
+        CD-9; Winkler and colleagues (2000) place CD-9 in the upper member,
+        above quarries "near the base of the upper member".
     size:
       length_m:
         min: 9.5
@@ -57,5 +60,8 @@ species:
     erected_in: gomani2005a
 references:
   - id: gomani2005a
+  - id: winkler2000a
+    notes: Places quarry CD-9, the holotype's quarry, in the upper member of the
+      Dinosaur Beds.
   - id: jones2026b
     notes: Source of the body length estimate.
