@@ -359,6 +359,16 @@
 
 **Exceptions.** None.
 
+## A variant changes the romanization; a fold changes only the typography
+
+*2026-10-07*
+
+**Rule.** A form counts as a unit's variant when a paper prints it as that unit's name and it romanizes the name differently: another transliteration ("Hüren Dukh" for Khuren Dukh, "Ondai Sayr" for Ondai Sair, "Bayan Gobi" for Bayin-Gobi), or a pinyin form without the apostrophe that marks a syllable break ("Zhangjiaao" for Zhangjia'ao, "Yanan" for Yan'an). A form that differs only in spacing, hyphenation, case or diacritics is a fold, not a variant ("Bayingobi" for Bayin Gobi, "Ondaisair" for Ondai Sair, "Ulaanöösh" for Ulaanoosh). A spelling printed only for the locality is not a variant of the unit. Decides `variants` on registry entries. Refines the summary rule that a variant is never a spelling.
+
+**Why.** Romanizations were being treated inconsistently, some added and some refused. In pinyin the apostrophe separates syllables where the next begins with a vowel, so dropping it gives a different romanization, while a space or hyphen only joins or splits the same syllables (user ruling, 2026-10-07). "Khoren Dukh" and "Khooren Dukh" were refused because the papers that print them list localities (jerzykiewicz1991a, p. 364; averianov2000a).
+
+**Exceptions.** None.
+
 ## A record's note carries what no field and no reference note holds
 
 *2026-09-03*
@@ -414,3 +424,5 @@
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.
 - `molina-pérez2019a`: Molina-Pérez, R.; Larramendi, A. (2019). Dinosaur Facts and Figures: The Theropods and Other Dinosauriformes. Princeton University Press.
 - `benton2000c`: Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N. (2000). Mongolian place names and stratigraphic terms. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds.)*, pp. xxii-xxviii. Cambridge University Press, Cambridge.
+- `jerzykiewicz1991a`: Jerzykiewicz, T.; Russell, D. A. (1991). Late Mesozoic stratigraphy and vertebrates of the Gobi Basin. *Cretaceous Research* 12(4): 345-377. doi:10.1016/0195-6671(91)90015-5
+- `averianov2000a`: Averianov, A. O.; Skutschas, P. P. (2000). A eutherian mammal from the Early Cretaceous of Russia and biostratigraphy of the Asian Early Cretaceous vertebrate assemblages. *Lethaia* 33: 330-340.
