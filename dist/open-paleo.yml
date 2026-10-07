@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-10-07T17:43:49.640Z
+  built_at: 2026-10-07T21:59:39.793Z
   clade_count: 188
   genus_count: 1425
   license: CC-BY-4.0
@@ -12372,9 +12372,9 @@ genera:
         location:
           country: MN
           locality: Bügiin Tsav
-          region: Bayankhongor
+          region: Ömnögovi
           formation: Nemegt
-          region_code: MN-069
+          region_code: MN-053
         type_specimen:
           specimen_id:
             - IGM 100/20
@@ -17375,6 +17375,7 @@ genera:
           locality: Ukhaa Tolgod
           region: Ömnögovi
           formation: Djadokhta
+          member: Bayn Dzak
           region_code: MN-053
         type_specimen:
           specimen_id:
@@ -21993,9 +21994,9 @@ genera:
         location:
           country: MN
           locality: Bügiin Tsav
-          region: Bayankhongor
+          region: Ömnögovi
           formation: Nemegt
-          region_code: MN-069
+          region_code: MN-053
         type_specimen:
           specimen_id:
             - IGM 100/300
@@ -30999,6 +31000,7 @@ genera:
           country: MN
           region: Ömnögovi
           formation: Djadokhta
+          member: Bayn Dzak
           locality: Bayan Zag (Flaming Cliffs)
           region_code: MN-053
         size:
@@ -38659,7 +38661,8 @@ genera:
           locality: Nová Lhota near Mezholezy
           region: Kutná Hora
           formation: Peruc-Korycany
-          notes: No member is recorded. Madzia and colleagues (2017) refine the horizon to the Korycany Beds, but Fejfar and colleagues (2005), whose stratigraphy they follow, place the remains at formation rank and no finer, and describe the Peruc and Korycany Beds as partly isochronous facies of the local column whose irregular boundary is why the combined formation was adopted.
+          member: Korycany
+          notes: Madzia and colleagues (2017) give the horizon as the "Korycany Beds of the Peruc-Korycany Formation", and Fejfar and colleagues (2005) plot the femur at the level of the Korycany Beds in near-shore marine sediments of late Cenomanian age.
           region_code: CZ-205
         erected_in: madzia2017a
         type_specimen:
@@ -38690,7 +38693,7 @@ genera:
         volume: "50"
         issue: "2"
         pages: 295-300
-        notes: The stratigraphy Madzia follows. Places the dinosaur remains in the near-shore marine sediments of the Peruc-Korycany Formation, at formation rank only.
+        notes: The stratigraphy Madzia follows. Places the dinosaur remains in the near-shore marine sediments of the Peruc-Korycany Formation, its Fig. 2 at the level of the Korycany Beds.
     taxonomy:
       - Life
       - Animalia
@@ -39009,6 +39012,7 @@ genera:
           locality: Ankylosaur Flats, Ukhaa Tolgod
           region: Ömnögovi
           formation: Djadokhta
+          member: Bayn Dzak
           region_code: MN-053
         type_specimen:
           specimen_id:
@@ -47724,6 +47728,7 @@ genera:
           locality: Ankylosaur Flats, Ukhaa Tolgod
           region: Ömnögovi
           formation: Djadokhta
+          member: Bayn Dzak
           region_code: MN-053
         type_specimen:
           specimen_id:
@@ -93783,8 +93788,11 @@ genera:
           country: MW
           locality: Mwakasyunguti area
           region: Karonga
-          notes: The Dinosaur Beds that reference works give as this taxon's formation is a working label for the fossiliferous Karoo-aged beds of northern Malawi, not a unit anyone erected.
+          formation: Dinosaur Beds
+          part: upper
+          notes: Gomani (2005) gives the specimens as from "the same area of the Dinosaur Beds" near Mwakasyunguti, the holotype dentary from quarry CD-9; Winkler and colleagues (2000) place CD-9 in the upper member, above quarries "near the base of the upper member".
           region_code: MW-KR
+          part_of: formation
         size:
           length_m:
             min: 9.5
@@ -93808,6 +93816,14 @@ genera:
         volume: "8"
         issue: "1"
         pages: 1-37
+      - id: winkler2000a
+        authors: Winkler, D. A.; Gomani, E. M.; Jacobs, L. L.
+        year: 2000
+        title: Comparative taphonomy of an Early Cretaceous sauropod quarry, Malawi, Africa
+        journal: Paleontological Society of Korea Special Publication
+        volume: "4"
+        pages: 99-114
+        notes: Places quarry CD-9, the holotype's quarry, in the upper member of the Dinosaur Beds.
       - id: jones2026b
         authors: Jones, B.
         year: 2026
@@ -94925,6 +94941,7 @@ genera:
           locality: Mark's Second Egg, Ukhaa Tolgod
           region: Ömnögovi
           formation: Djadokhta
+          member: Bayn Dzak
           region_code: MN-053
         type_specimen:
           specimen_id:
@@ -95810,6 +95827,7 @@ genera:
           locality: Ankylosaur Flats, Ukhaa Tolgod
           region: Ömnögovi
           formation: Djadokhta
+          member: Bayn Dzak
           region_code: MN-053
         size:
           length_m:
@@ -97820,8 +97838,12 @@ genera:
           name:
             - Late Cretaceous
           stage:
+            - Cenomanian
+            - Turonian
+            - Coniacian
+            - Santonian
             - Campanian
-          from_ma: 83.6
+          from_ma: 100.5
           to_ma: 72.2
         location:
           country: MX
@@ -115545,9 +115567,9 @@ genera:
         location:
           country: MN
           locality: Bügiin Tsav
-          region: Bayankhongor
+          region: Ömnögovi
           formation: Nemegt
-          region_code: MN-069
+          region_code: MN-053
         type_specimen:
           specimen_id:
             - IGM N107/6
@@ -122248,12 +122270,12 @@ genera:
         location:
           country: MN
           locality: Bügiin Tsav
-          region: Bayankhongor
+          region: Ömnögovi
           formation: Nemegt
           coordinates:
             - 43.86695
             - 100.0118
-          region_code: MN-069
+          region_code: MN-053
         type_specimen:
           specimen_id:
             - GIN 100/119
@@ -134856,6 +134878,7 @@ genera:
           locality: Bayan Zag
           region: Ömnögovi
           formation: Djadokhta
+          member: Bayn Dzak
           region_code: MN-053
         size:
           hip_height_m:
@@ -134906,6 +134929,7 @@ genera:
           locality: Ukhaa Tolgod
           region: Ömnögovi
           formation: Djadokhta
+          member: Bayn Dzak
           region_code: MN-053
         type_specimen:
           specimen_id:
@@ -139216,6 +139240,7 @@ genera:
           country: MN
           region: Ömnögovi
           formation: Djadokhta
+          member: Bayn Dzak
           locality: Bayan Zag
           region_code: MN-053
         size:
@@ -153027,6 +153052,7 @@ genera:
           locality: Ukhaa Tolgod
           region: Ömnögovi
           formation: Djadokhta
+          member: Bayn Dzak
           notes: Moutrille and colleagues (2025) state that "the exact locality of the specimen is unknown" and refer it to Ukhaa Tolgod tentatively, from documentation accompanying the specimen rather than from field data; they name Bayan Zag as an alternative Djadokhtan locality it may have come from.
           region_code: MN-053
         diagnostic_features:
@@ -153512,6 +153538,7 @@ genera:
           locality: Ukhaa Tolgod
           region: Ömnögovi
           formation: Djadokhta
+          member: Bayn Dzak
           region_code: MN-053
         type_specimen:
           specimen_id:
@@ -173568,6 +173595,7 @@ genera:
           locality: Xanadu, Ukhaa Tolgod
           region: Ömnögovi
           formation: Djadokhta
+          member: Bayn Dzak
           region_code: MN-053
         type_specimen:
           specimen_id:
@@ -188038,9 +188066,9 @@ genera:
         location:
           country: MN
           locality: Bügiin Tsav
-          region: Bayankhongor
+          region: Ömnögovi
           formation: Nemegt
-          region_code: MN-069
+          region_code: MN-053
         type_specimen:
           specimen_id:
             - IGM 100/1
