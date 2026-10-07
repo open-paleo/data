@@ -345,7 +345,7 @@
 
 **Rule.** Before treating an unfamiliar or shortened unit name as a different unit, find the authority the source cites for it and whether that authority combines or separates the bodies of rock. A paper writing a name "sensu" an author follows that author's scheme. Decides `location.formation`, `location.member`.
 
-**Why.** "Wulansuhai" is the spelling Bayan Mandahu papers print for the Ulansuhai; "Bombarral Sub-basin" is the Consolação under an older name; a bare "Porto Novo Member" usually means the combined Praia da Amoreira-Porto Novo (see [Lusitanian Basin members](topics/lusitanian-basin-members.md)). Each was once misread as a different unit.
+**Why.** "Wulansuhai" is another romanization of the Ulansuhai, not a separate unit (whether the beds at Bayan Mandahu that some papers call Wulansuhai belong to it is a separate question; see [Bayan Mandahu](stratigraphy/b/bayan-mandahu.md)); "Bombarral Sub-basin" is the Consolação under an older name; a bare "Porto Novo Member" usually means the combined Praia da Amoreira-Porto Novo (see [Lusitanian Basin members](topics/lusitanian-basin-members.md)). Each was once misread as a different unit.
 
 **Exceptions.** None.
 

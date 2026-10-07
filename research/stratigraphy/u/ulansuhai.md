@@ -1,5 +1,20 @@
 # Ulansuhai
 
+## Does the Ulansuhai Formation include the beds at Bayan Mandahu?
+
+*2026-10-06*
+
+**Conclusion.** Not established, so the registry keeps Bayan Mandahu as a separate, informal unit, and the Bayan Mandahu papers that print "Wulansuhai" no longer date this unit. Settles the 2026-09-30 entry's **Open** line: "Bayan Mandahu Formation" is informal; see [Bayan Mandahu](../b/bayan-mandahu.md). Governs the `xu2013a`, `xu2011c` and `hao2024a` notes on [Ulansuhai](../../../stratigraphy/u/ulansuhai.yml). Its `stages` stand on the type area's post-92 Ma constraint and on the Tsondolein-Khuduk assemblage.
+
+**Evidence.**
+- hao2024a, p. 2: "Sedimentology outcrops of the Ulansuhai Formation appear north of the Maortu locality, which emerges in Bayan Mandahu (Tan, 2016) and Suhongtu (Kobayashi and Lü, 2003)".
+- evans2021a: "Based on proximity and lithology, one could hypothesise a correlation with the red beds exposed at Bayan Mandahu (Ulansuhai Formation)".
+
+**Ruled out.**
+- *Bayan Mandahu as the Ulansuhai's eastern outcrop, stated as fact.* The two statements above are the only ones linking the beds to this unit, one resting on an unpublished thesis and the other a hypothesis.
+
+**Open.** Whether the Bayan Mandahu beds belong to this unit; see [Bayan Mandahu](../b/bayan-mandahu.md).
+
 ## What is the Ulansuhai Formation, and how old is it?
 
 *2026-09-30*
@@ -19,6 +34,13 @@
 
 ## References
 
+- `xu2013a`: Xu, X.; Tan, Q. W.; Wang, S.; Sullivan, C.; Hone, D. W. E.; Han, F. L.; Ma, Q. Y.; Tan, L.; Xiao, D. (2013). A new oviraptorid from the Upper Cretaceous of Nei Mongol, China, and its stratigraphic implications. *Vertebrata PalAsiatica* 51(2): 85-101.
+- `xu2011c`: Xu, X.; Tan, Q.; Sullivan, C.; Han, F.; Xiao, D. (2011). A Short-Armed Troodontid Dinosaur from the Upper Cretaceous of Inner Mongolia and Its Implications for Troodontid Evolution. *PLoS ONE* 6(9): e22916. doi:10.1371/journal.pone.0022916
+- `hao2024a`: Hao, M.; Li, Z.; Wang, Z.; Wang, S.; Ma, F.; Qinggele; Logan King, J.; Pei, R.; Zhao, Q.; Xu, X. (2024). A new oviraptorosaur from the Lower Cretaceous Miaogou Formation of western Inner Mongolia, China. *Cretaceous Research* 167(78): 106023. doi:10.1016/j.cretres.2024.106023
+- `evans2021a`: Evans, D. C.; Brown, C. M.; You, H.; Campione, N. E. (2021). Description and revised diagnosis of Asia's first recorded pachycephalosaurid, Sinocephale bexelli gen. nov., from the Upper Cretaceous of Inner Mongolia, China. *Canadian Journal of Earth Sciences* 58(10): 981-992. doi:10.1139/cjes-2020-0190
 - `zhang2009b`: Zhang, S. (ed.) (2009). Geological Formation Names of China (1866–2000). Higher Education Press, Beijing; Springer, Berlin. doi:10.1007/978-3-540-93824-8
 - `kobayashi2003b`: Kobayashi, Y.; Lü, J. (2003). A new ornithomimid dinosaur with gregarious habits from the Late Cretaceous of China. *Acta Palaeontologica Polonica* 48(2): 235-259. doi:10.5281/zenodo.13315375
-- `hao2024a`: Hao, M.; Li, Z.; Wang, Z.; Wang, S.; Ma, F.; Qinggele; Logan King, J.; Pei, R.; Zhao, Q.; Xu, X. (2024). A new oviraptorosaur from the Lower Cretaceous Miaogou Formation of western Inner Mongolia, China. *Cretaceous Research* 167(78): 106023. doi:10.1016/j.cretres.2024.106023
+
+## Other references
+
+- `tan2016a`: Tan, Q. (2016). Research on dinosaur fauna and contemporary sedimentary environment in Bayan Mandahu, Inner Mongolia. Masters thesis, China University of Geosciences, Beijing.
