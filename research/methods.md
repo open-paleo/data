@@ -409,6 +409,16 @@
 
 **Exceptions.** None.
 
+## An institution's own published catalog form governs its specimen numbers
+
+*2026-10-07*
+
+**Rule.** Where an institution publishes its catalog numbers in a fixed form, in an online catalog or its own publications, write `specimen_id` as the registry prefix followed by that form, padding and department prefix included. Refines the rule that a `specimen_id` takes the institution's established form in the data, which applies where the institution publishes none. Decides `type_specimen.specimen_id` and `notable_specimens[].specimen_id`.
+
+**Why.** The Oxford ids in the data were in four forms, none of them the museum's. Its online catalog writes every number as "PAL-J." with six digits, so the *Megalosaurus* lectotype is `OUMNH PAL-J.013505` (see [OUMNH catalogue numbers](topics/oumnh-catalogue-numbers.md)). Royal Tyrrell numbers already followed this, stored padded as the museum writes them.
+
+**Exceptions.** A different number, not a different form of the same number, still needs the designating paper.
+
 ## References
 
 - `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
