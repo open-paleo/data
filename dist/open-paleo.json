@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-10-09T17:19:25.775Z",
+    "built_at": "2026-10-09T19:55:13.832Z",
     "clade_count": 188,
     "genus_count": 1425,
     "license": "CC-BY-4.0",
@@ -95101,6 +95101,10 @@
           {
             "date": "2026-06-26",
             "note": "Placed at Ankylosauria incertae sedis, armor-based and not placeable to family."
+          },
+          {
+            "date": "2026-10-09",
+            "note": "Status confirmed valid, following Burns (2008) and Arbour and Currie (2015)."
           }
         ]
       },
@@ -110673,6 +110677,10 @@
           {
             "date": "2026-06-30",
             "note": "Placed at Majungasaurinae following Tortosa and colleagues (2014).\n"
+          },
+          {
+            "date": "2026-10-09",
+            "note": "Status confirmed disputed; a nomen dubium for Novas and colleagues (2010), kept as a majungasaurine in the analyses of Tortosa and colleagues (2014)."
           }
         ]
       },
@@ -118522,6 +118530,10 @@
           {
             "date": "2026-07-20",
             "note": "Status set to disputed and the dispute expanded — Rauhut (2003) regards it as a nomen dubium, Carrano and colleagues (2012) treat it as a fragmentary taxon needing restudy, and Paul (2024) suggests synonymy with Gasosaurus."
+          },
+          {
+            "date": "2026-10-09",
+            "note": "Status confirmed disputed; a nomen dubium for Rauhut (2003), possibly valid and in need of restudy for Carrano and colleagues (2012)."
           }
         ]
       },
@@ -120222,6 +120234,10 @@
           {
             "date": "2026-07-01",
             "note": "Placed at Carcharodontosauridae incertae sedis following Brusatte and colleagues (2012); fragmentary material and unstable support are noted."
+          },
+          {
+            "date": "2026-10-09",
+            "note": "Status confirmed valid; diagnostic features added from the emended diagnosis of Brusatte and colleagues (2012), whose paper is now cited under its own key."
           }
         ]
       },
@@ -120239,6 +120255,12 @@
         "integument": "scaled",
         "evidence": "inferred"
       },
+      "diagnostic_features": [
+        "Deeply inset, dorsally concave groove on the anterior part of the lateral surface of the dentary",
+        "Maxillary interdental plates more than twice as tall dorsoventrally as they are broad anteroposteriorly",
+        "Prominent anterior process of the maxilla",
+        "No anteroventral chin-like process on the dentary"
+      ],
       "identifiers": [
         {
           "source": "pbdb",
@@ -120338,16 +120360,16 @@
           "notes": "Re-evaluated Bahariya carcharodontosaurid material, finding unstable allosauroid position for Kelmayisaurus."
         },
         {
-          "id": "brusatte2012a",
-          "authors": "Brusatte, S. L.; Benson, R. B. J.",
+          "id": "brusatte2012c",
+          "authors": "Brusatte, S. L.; Benson, R. B. J.; Xu, X.",
           "year": 2012,
-          "title": "The systematics of Late Jurassic tyrannosauroid theropods from Europe and North America",
+          "title": "A reassessment of Kelmayisaurus petrolicus, a large theropod dinosaur from the Early Cretaceous of China",
           "journal": "Acta Palaeontologica Polonica",
-          "volume": "58",
+          "volume": "57",
           "issue": "1",
-          "pages": "47-54",
-          "doi": "10.4202/app.2011.0141",
-          "notes": "Revalidated Kelmayisaurus as a basal carcharodontosaurid."
+          "pages": "65-72",
+          "doi": "10.4202/app.2010.0125",
+          "notes": "Revalidated Kelmayisaurus as a basal carcharodontosaurid, on one dentary autapomorphy and a unique combination of maxillary and dentary characters."
         }
       ],
       "taxonomy": [
@@ -145293,11 +145315,15 @@
       "etymology": "Named for Minmi Crossing, a location in Queensland, Australia near where it was found; the Wikipedia article retrieved is about a Japanese musician, not the dinosaur.",
       "description": "Minmi is a genus of small herbivorous ankylosaurian dinosaur that lived during the early Cretaceous Period of Australia, about 120 to 112 million years ago.",
       "dispute": {
-        "summary": "Both the validity and placement of Minmi are contested. Arbour and Currie (2015) regarded Minmi paravertebra as a nomen dubium, while others uphold it; phylogenetic analyses recover it as an unstable wildcard, even outside Eurypoda in the preferred tree of Raven and colleagues (2023). It is retained at Ankylosauria incertae sedis.\n",
+        "summary": "Minmi paravertebra is a nomen dubium. Arbour and Currie (2015) found none of Molnar's diagnostic characters unique to the holotype, the paravertebrae being ordinary ossified tendons; Leahey and colleagues (2015) kept the genus pending a redescription that has not appeared. The skeleton long known as Minmi sp. is Kunbarrasaurus ieversi, and the phylogenetic results reported for Minmi mostly rest on that specimen. It is retained at Ankylosauria incertae sedis.\n",
         "history": [
           {
             "date": "2026-06-26",
             "note": "Placed at Ankylosauria incertae sedis, validity and placement both unresolved."
+          },
+          {
+            "date": "2026-10-09",
+            "note": "Type species set to nomen dubium and diagnostic features removed, following Arbour and Currie (2015); the species name corrected to Molnar's spelling, paravertebra."
           }
         ]
       },
@@ -145305,14 +145331,6 @@
       "locomotion": "quadrupedal",
       "paleoenvironment": [
         "fluvial"
-      ],
-      "diagnostic_features": [
-        "Small ankylosaur with paravertebral elements present alongside neural spines of dorsal vertebrae",
-        "Ventral armor formed by pavement of small ossicles (6-8 mm diameter, cushion-shaped, hexagonal to square)",
-        "Dorsal vertebrae amphiplatyan without notochordal knobs",
-        "Transverse processes slender and triangular (not T-shaped) in cross-section",
-        "Neural canal broad (breadth to height ratio 0.76-1.02)",
-        "Posterior intervertebral notch shallow"
       ],
       "appearance": {
         "features": [
@@ -145342,9 +145360,9 @@
       ],
       "species": [
         {
-          "name": "Minmi paravertebrata",
+          "name": "Minmi paravertebra",
           "etymology": "Referring to unusual bone elements found along the vertebrae, for which Molnar coined the designation 'paravertebrae'.",
-          "status": "disputed",
+          "status": "nomen dubium",
           "type_species": true,
           "period": {
             "name": [
@@ -145456,6 +145474,18 @@
           "journal": "Bureau of Mineral Resources, Geology and Geophysics, Australia, Bulletin",
           "volume": "189",
           "notes": "Gives the Minmi Member as \"dated as lower Aptian\"."
+        },
+        {
+          "id": "leahey2015a",
+          "authors": "Leahey, L. G.; Molnar, R. E.; Carpenter, K.; Witmer, L. M.; Salisbury, S. W.",
+          "year": 2015,
+          "title": "Cranial osteology of the ankylosaurian dinosaur formerly known as Minmi sp. (Ornithischia: Thyreophora) from the Lower Cretaceous Allaru Mudstone of Richmond, Queensland, Australia",
+          "journal": "PeerJ",
+          "publisher": "PeerJ",
+          "volume": "3",
+          "pages": "e1475",
+          "doi": "10.7717/peerj.1475",
+          "notes": "Names Kunbarrasaurus ieversi for the skeleton formerly called Minmi sp., and keeps Minmi paravertebra as distinct pending a redescription."
         }
       ],
       "taxonomy": [
@@ -150414,6 +150444,10 @@
           {
             "date": "2026-06-29",
             "note": "Retained at Neornithischia incertae sedis following Fonseca and colleagues (2024) and Jones (2026); the nomen dubium assessment of Boyd (2015) and Barrett and Maidment (2025) is recorded."
+          },
+          {
+            "date": "2026-10-09",
+            "note": "Status confirmed disputed; valid for Carpenter and Galton (2018), invalid for Barrett and Maidment (2025) after examining the holotype."
           }
         ]
       },
