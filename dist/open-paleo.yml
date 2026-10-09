@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-10-09T02:24:34.336Z
+  built_at: 2026-10-09T02:32:45.005Z
   clade_count: 188
   genus_count: 1425
   license: CC-BY-4.0
@@ -70361,22 +70361,17 @@ genera:
     description: Fulengia is a dubious genus of basal sauropodomorph dinosaur from the Early Jurassic Lufeng Formation of China. The type species, F. youngi, was described by Carroll and Galton in 1977. It is a nomen dubium and may be the same animal as Lufengosaurus (from which it is anagramized). It was originally thought to be a lizard.
     dispute:
       summary: |
-        Fulengia youngi is a nomen dubium based on a tiny skull, possibly a juvenile Lufengosaurus, and was originally described as a lizard (Galton and Upchurch, 2004).
+        Fulengia youngi was described as a lizard on a tiny skull that Sereno (1991) referred to Prosauropoda indet., making the name a nomen dubium; Galton and Upchurch (2004) list it among the prosauropod nomina dubia.
       history:
         - date: 2026-06-29
           note: Placed at Massospondylidae incertae sedis; nomen dubium, possibly a juvenile Lufengosaurus.
+        - date: 2026-10-08
+          note: Type species set to nomen dubium and diagnostic features removed, following Sereno (1991).
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
       - fluvial
       - lacustrine
-    diagnostic_features:
-      - Median (unpaired) frontal
-      - Paired premaxillae with long nasal processes
-      - Large upper temporal opening with margin partially formed by the postfrontal
-      - Postorbital triradiate and nearly vertical
-      - Lacrimal absent
-      - Teeth fully pleurodont, closely resembling those of modern Iguana iguana, with tooth cusps whose anterior margin is angled toward the midline
     appearance:
       integument: scaled
       evidence: inferred
@@ -70390,7 +70385,7 @@ genera:
     species:
       - name: Fulengia youngi
         etymology: Named in honor of Dr. C. C. Young (Yang Zhongjian) for work in the Lufeng Basin.
-        status: valid
+        status: nomen dubium
         type_species: true
         period:
           name:
@@ -70437,6 +70432,16 @@ genera:
         issue: "5599"
         pages: 252-255
         doi: 10.1038/266252a0
+      - id: sereno1991a
+        authors: Sereno, P. C.
+        year: 1991
+        title: Lesothosaurus, 'fabrosaurids,' and the early evolution of Ornithischia
+        journal: Journal of Vertebrate Paleontology
+        volume: "11"
+        issue: "2"
+        pages: 168-197
+        doi: 10.1080/02724634.1991.10011386
+        notes: Refers the Fulengia skull to Prosauropoda indet. and treats the name as a nomen dubium.
       - id: galton2004a
         authors: Galton, P. M.; Upchurch, P.
         year: 2004
@@ -73295,20 +73300,16 @@ genera:
     description: Geranosaurus is a genus of heterodontosaurid ornithischian dinosaur that lived during the Early Jurassic, between 191.1 and 187.5 million years ago. It is known from a single species, G. atavus, that was named in 1911 by Robert Broom for partial jaws found during road-cutting in South Africa. The genus name is likely derived from the word for "crane" in reference to the bird-like limb bones, while the species name means "ancestor" likely in reference to its position as an early ornithischian. The limited material and poor preservation of Geranosaurus have rendered it difficult to diagnose, with authors accepting it as a dubious name though differentiable from its relative Heterodontosaurus, the only other heterodontosaurid known from the Clarens Formation.
     dispute:
       summary: |
-        Geranosaurus is a nomen dubium based on fragmentary jaw material from the Early Jurassic of South Africa; it shows heterodontosaurid features but most analyses conclude the remains lack sufficient diagnostic characters (Sereno, 2012; Jones, 2026).
+        Geranosaurus is a nomen dubium based on fragmentary jaw material from the Early Jurassic of South Africa; it shows heterodontosaurid features, but they are not diagnosable (Norman and colleagues, 2011), and Sereno (2012) judges them inadequate for taxonomic recognition.
       history:
         - date: 2026-06-29
           note: Retained at Heterodontosauridae incertae sedis; nomen dubium, a heterodontosaurid by anatomy but not diagnosable.
+        - date: 2026-10-08
+          note: Type species set to nomen dubium and diagnostic features removed, following Norman and colleagues (2011).
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
       - arid
-    diagnostic_features:
-      - Predentary present, with concave upper surface and sharp outer/anterior edges forming a horny beak
-      - Most anterior mandibular tooth enlarged (canine-like), diameter 5 mm vs 3-4 mm for remaining teeth
-      - Mandibular teeth with rounded roots in sockets; maxillary teeth with flat chisel-shaped crowns and feebly ridged outer face
-      - Dentary bears 9 teeth in anterior half only, total dental series length 35 mm over 73 mm jaw length
-      - Earliest known member of the Predentata (ornithischians) from the Lower Jurassic Cave Sandstone of the Stormberg
     appearance:
       integument: scaled
       evidence: inferred
@@ -73322,7 +73323,7 @@ genera:
     species:
       - name: Geranosaurus atavus
         etymology: From Latin 'atavus' meaning 'ancestor', likely referencing its position as one of the earliest known ornithischian dinosaurs.
-        status: valid
+        status: nomen dubium
         type_species: true
         period:
           name:
@@ -73959,14 +73960,10 @@ genera:
       history:
         - date: 2026-06-29
           note: Reparented from the deprecated Prosauropoda to Sauropodomorpha incertae sedis; fragmentary nomen dubium.
+        - date: 2026-10-08
+          note: Type species set to nomen dubium and diagnostic features removed; no work since Van Heerden (1979) finds the femur diagnostic.
     diet: herbivore
     locomotion: bipedal
-    diagnostic_features:
-      - Femur distal width of 20 cm, substantially larger than Massospondylus but smaller than Euskelosaurus
-      - Inner condyle broad and convex, terminating upward with a high ridge as in Euskelosaurus
-      - Outer condyle narrow, projecting further backward than the inner condyle, with a ridge along the posterior-outer side that projects slightly over the outer surface
-      - Intercondyloid groove 3.5 cm deep and 3 cm wide between the two condyles
-      - Distal articular surface slightly convex and weakly concave in the extension of the intercondyloid groove, sloping slightly forward relative to the limb axis
     paleoenvironment:
       - arid
       - fluvial
@@ -73983,7 +73980,7 @@ genera:
     species:
       - name: Gigantoscelus molengraaffi
         etymology: Honors Prof. Gustaaf Molengraaff, Dutch geologist, whose investigations of the Transvaal Karroo beds led to important stratigraphic results, per van Hoepen (1916).
-        status: valid
+        status: nomen dubium
         type_species: true
         period:
           name:
@@ -81362,14 +81359,12 @@ genera:
       history:
         - date: 2026-06-26
           note: Placed at Ankylosauria incertae sedis, nomen dubium based on undiagnostic armor.
+        - date: 2026-10-08
+          note: Type species set to nomen dubium and diagnostic features removed, following Carpenter and colleagues (1995).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
       - marine
-    diagnostic_features:
-      - Dermal scutes with median ridge sharp and running entire length, 1-1.5 cm height, terminating as sharp backwardly projecting slightly upturned spur
-      - System of hornshields indicated by heavy sulci, at least as large as keeled plates
-      - Lumbar-hip carapace with fused large scales and organized bone-hornshield system comparable to Dermochelys
     appearance:
       integument: armored
       evidence: direct
@@ -81383,7 +81378,7 @@ genera:
     species:
       - name: Hierosaurus sternbergii
         etymology: Named for Charles Hazelius Sternberg, who collected the fossil material on which the species is based.
-        status: valid
+        status: nomen dubium
         type_species: true
         period:
           name:
@@ -84636,14 +84631,13 @@ genera:
       history:
         - date: 2026-06-27
           note: Placed at Hadrosauridae incertae sedis; nomen dubium.
+        - date: 2026-10-08
+          note: Type species H. crassicauda set to nomen dubium and diagnostic features removed; the status of H. missouriensis is left open.
     diet: herbivore
     locomotion: facultative
     paleoenvironment:
       - marine
       - coastal
-    diagnostic_features:
-      - Caudal vertebra elongate, depressed and angulate; resembled Hylaeosaurus form but minus diapophyses
-      - Distinguished from Hadrosaurus by various anatomical features
     appearance:
       integument: scaled
       evidence: inferred
@@ -84666,7 +84660,7 @@ genera:
     species:
       - name: Hypsibema crassicauda
         etymology: From Latin 'crassus' meaning 'thick' or 'fat' and 'cauda' meaning 'tail', together meaning 'with a fat tail', in reference to the massively constructed tail of the species.
-        status: valid
+        status: nomen dubium
         type_species: true
         period:
           name:
@@ -108194,16 +108188,12 @@ genera:
       history:
         - date: 2026-06-26
           note: Placed at Ankylosauridae, kept as a probable ankylosaurid although the genus is a nomen dubium.
+        - date: 2026-10-08
+          note: Type species set to nomen dubium and diagnostic features removed, following Arbour and Currie (2015).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
       - fluvial
-    diagnostic_features:
-      - Anterior maxillary shelf weakly developed and originating near start of tooth row
-      - Maxillary teeth with 'w'-shaped cingulum
-      - Occipital condyle almost hemispherical and ventrally directed
-      - Basicranium ventral surface bears two weakly expressed longitudinal ridges diverging anteriorly
-      - Fundus of brain cavity almost level
     appearance:
       integument: armored
       evidence: inferred
@@ -108221,7 +108211,7 @@ genera:
     species:
       - name: Maleevus disparoserratus
         etymology: From Latin 'dispar' meaning 'unequal' and 'serratus' meaning 'serrated', referring to the unequal serrations observed on the teeth of the holotype jaw bones.
-        status: valid
+        status: nomen dubium
         type_species: true
         period:
           name:
@@ -115166,24 +115156,17 @@ genera:
     description: Monoclonius is an extinct dubious genus of herbivorous ceratopsian dinosaur found in the Late Cretaceous layers of the Judith River Formation in Montana, United States, and the uppermost rock layers of the Dinosaur Park Formation in Alberta, Canada dated to between 75 and 74.6 million years ago.
     dispute:
       summary: |
-        Monoclonius is a nomen dubium; Ryan (2006) reaffirmed M. crassus as undiagnostic and reassessed the referred M. lowei as a subadult centrosaurine. Although a centrosaurine, it is not reliably placeable below family level and is retained at Ceratopsidae incertae sedis.
+        Monoclonius is a nomen dubium; Ryan and Russell (2006) reaffirmed M. crassus as undiagnostic and reassessed the referred M. lowei as a subadult centrosaurine. Although a centrosaurine, it is not reliably placeable below family level and is retained at Ceratopsidae incertae sedis.
       history:
         - date: 2026-06-26
           note: Moved from Centrosaurinae to Ceratopsidae incertae sedis, most specimens reassigned to Centrosaurus.
+        - date: 2026-10-08
+          note: Type species set to nomen dubium and diagnostic features removed, following Sampson and colleagues (1997) and Ryan and Russell (2006).
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
       - fluvial
       - coastal
-    diagnostic_features:
-      - Teeth with obliquely truncate face and distinct root, grooved for successional tooth on front
-      - No external cementum layer on tooth back
-      - Caudal vertebrae biconcave with narrow brim
-      - Fore limbs large and massive
-      - Teeth faces acuminate oval, divided by elevated keel (median above, turns to one side at base)
-      - Tooth margin crenate with grooves extending onto back
-      - Sacrum with ten vertebrae, last centrum compressed
-      - Three anterior dorsal vertebrae coossified
     appearance:
       integument: scaled
       evidence: inferred
@@ -115199,7 +115182,7 @@ genera:
     species:
       - name: Monoclonius crassus
         etymology: From Latin 'crassus' meaning 'fat' or 'thick', though the precise anatomical referent is unclear given the composite nature of the original type material.
-        status: valid
+        status: nomen dubium
         type_species: true
         period:
           name:
@@ -115234,8 +115217,18 @@ genera:
         journal: Proceedings of the Academy of Natural Sciences of Philadelphia
         volume: "28"
         pages: 248-261
+      - id: sampson1997a
+        authors: Sampson, S. D.; Ryan, M. J.; Tanke, D. H.
+        year: 1997
+        title: "Craniofacial ontogeny in centrosaurine dinosaurs (Ornithischia: Ceratopsidae): taphonomic and behavioral implications"
+        journal: Zoological Journal of the Linnean Society
+        publisher: Oxford University Press (OUP)
+        volume: "121"
+        pages: 293-337
+        doi: 10.1111/j.1096-3642.1997.tb00340.x
+        notes: Declares Monoclonius crassus a nomen dubium, its type a composite of immature individuals lacking diagnostic adult ornamentation.
       - id: ryan2006a
-        authors: Ryan, M. J.
+        authors: Ryan, M. J.; Russell, A. P.
         year: 2006
         title: "The status of the problematic taxon Monoclonius (Ornithischia: Ceratopsidae) and the recognition of adult-sized dinosaur taxa"
         journal: Geological Society of America Abstracts with Programs
