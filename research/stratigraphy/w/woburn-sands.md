@@ -1,5 +1,18 @@
 # Woburn Sands
 
+## What is the Woburn Sands' parent?
+
+*2026-10-08*
+
+**Conclusion.** The Lower Greensand. Casey treats the Woburn or Potton Sands as the Lower Greensand of Bedfordshire. Governs `parent: Lower Greensand` on [Woburn Sands](../../../stratigraphy/w/woburn-sands.yml).
+
+**Evidence.**
+- casey1961a, p. 566: north of Aylesbury "the Lower Greensand reappears in Bedfordshire, forming a thickness of 200 feet of predominantly yellow sands in the Woburn and Leighton Buzzard districts. These deposits are known as the Woburn or Potton Sands"; p. 491: "Derived fossils in the Lower Greensand Woburn ( = Potton) Sands".
+
+**Ruled out.** Nothing.
+
+**Open.** The source age of the reworked vertebrates in the Potton nodule bed. Casey lists "blocks of Neocomian sandstone, bones of Iguanodon" among the derived material (p. 566), but holds that worn bones are no proof of a Wealden origin: "Iguanodon was still living in Aptian times and worn fossils are commonplace in contemporary Lower Greensand deposits" (p. 491).
+
 ## What is the age of the Woburn Sands and its Potton fossils?
 
 *2026-09-30*
@@ -19,6 +32,7 @@
 
 ## References
 
+- `casey1961a`: Casey, R. (1961). The stratigraphical palaeontology of the Lower Greensand. *Palaeontology* 3: 487-621.
 - `galton1985d`: Galton, P. M. (1985). British plated dinosaurs (Ornithischia, Stegosauridae). *Journal of Vertebrate Paleontology* 5(3): 211-254. doi:10.1080/02724634.1985.10011859
 - `galton2009a`: Galton, P. M. (2009). Notes on Neocomian (Lower Cretaceous) ornithopod dinosaurs from England - Hypsilophodon, Valdosaurus, "Camptosaurus", "Iguanodon" - and referred specimens from Romania and elsewhere. *Revue de Paléobiologie, Genève* 28(1): 211-273.
 - `naish2007a`: Naish, D.; Martill, D. M. (2007). Dinosaurs of Great Britain and the role of the Geological Society of London in their discovery: basal Dinosauria and Saurischia. *Journal of the Geological Society* 164(3): 493-510. doi:10.1144/0016-76492006-032
