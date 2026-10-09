@@ -1,5 +1,5 @@
 genus: Sinankylosaurus
-parent: Ankylosauria
+parent: Dinosauria
 placement: incertae sedis
 pronunciation:
   phonetic: sin-AN-ky-lo-SAWR-us
@@ -14,22 +14,22 @@ description: Sinankylosaurus is a dubious dinosaur genus known from the Late
   anatomical characters uniting Sinankylosaurus with this group.
 dispute:
   summary: >
-    Sinankylosaurus has been argued to lack ankylosaur diagnostic features (Zheng and colleagues, 2021) and is treated as a nomen dubium. It is retained at Ankylosauria incertae sedis.
+    Sinankylosaurus zhuchengensis was named as an ankylosaur on a partial
+    ilium (Wang and colleagues, 2020). Zheng and colleagues (2021) find no
+    ankylosaur features in it, as the supposed acetabulum lacks a cuplike
+    structure and peduncles and there is no preacetabular ridge, and consider
+    it a nomen dubium and not an ankylosaur, without proposing another
+    identity. It is placed at Dinosauria incertae sedis.
   history:
     - date: "2026-06-26"
       note: Placed at Ankylosauria incertae sedis, nomen dubium of uncertain diagnosability.
+    - date: "2026-10-09"
+      note: Type species set to nomen dubium and diagnostic features removed, following Zheng and colleagues (2021), and reparented from Ankylosauria to Dinosauria incertae sedis, the nearest parent both readings accept. The citation for that study now points to the right paper.
 diet: herbivore
 locomotion: quadrupedal
 paleoenvironment:
   - fluvial
   - lacustrine
-diagnostic_features:
-  - Dorsal surface of ilium smooth and relatively flat on lateral edge
-  - Preacetabular process develops wide twisted 'wing' extending anteriorly
-  - Preacetabular process length exceeds 2/3 of entire ilium length
-  - Distal end of preacetabular process wide (~40 cm) with strong constriction
-    toward proximal end (~15 cm)
-  - Wide gap between anterior and posterior widths of preacetabular process
 appearance:
   integument: armored
   evidence: inferred
@@ -44,7 +44,7 @@ species:
   - name: Sinankylosaurus zhuchengensis
     etymology: "Named for Zhucheng, the city in Shandong Province, China, where the
       holotype ilium was discovered."
-    status: valid
+    status: nomen dubium
     type_species: true
     period:
       name:
@@ -66,5 +66,6 @@ species:
     erected_in: wang2020a
 references:
   - id: wang2020a
-  - id: zheng2021a
-    notes: Argued Sinankylosaurus lacks ankylosaur diagnostic features, a nomen dubium.
+  - id: zheng2021b
+    notes: Finds no ankylosaur diagnostic features in the holotype ilium and
+      considers Sinankylosaurus a nomen dubium and not an ankylosaur.
