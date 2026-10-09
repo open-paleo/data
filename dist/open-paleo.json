@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-10-09T03:08:58.548Z",
+    "built_at": "2026-10-09T16:49:55.768Z",
     "clade_count": 188,
     "genus_count": 1425,
     "license": "CC-BY-4.0",
@@ -16391,7 +16391,7 @@
           },
           {
             "date": "2026-10-08",
-            "note": "Type species set to nomen dubium and diagnostic features removed; Olshevsky (1991), Dodson and colleagues (2004) and Jones (2026) treat it as undiagnostic."
+            "note": "Type species set to nomen dubium and diagnostic features removed; Olshevsky (1991), The Dinosauria (Weishampel and colleagues, 2004) and Jones (2026) treat it as undiagnostic."
           }
         ]
       },
@@ -16463,6 +16463,33 @@
           "title": "On the existence of Dinosauria in the transition beds of Wyoming",
           "journal": "Proceedings of the American Philosophical Society (separate)",
           "pages": "1-2"
+        },
+        {
+          "id": "olshevsky1991a",
+          "authors": "Olshevsky, G.",
+          "year": 1991,
+          "title": "A revision of the parainfraclass Archosauria Cope, 1869, excluding the advanced Crocodylia",
+          "journal": "Mesozoic Meanderings",
+          "volume": "2",
+          "pages": "1-196",
+          "notes": "Lists Agathaumas as a nomen dubium."
+        },
+        {
+          "id": "weishampel2004a",
+          "authors": "Weishampel, D. B.; Dodson, P.; Osmólska, H.",
+          "year": 2004,
+          "title": "The Dinosauria, Second Edition",
+          "publisher": "University of California Press, Berkeley",
+          "notes": "Lists Agathaumas sylvestris among the ceratopsid nomina dubia."
+        },
+        {
+          "id": "jones2026a",
+          "authors": "Jones, B.",
+          "year": 2026,
+          "title": "The Princeton Encyclopedia of Dinosaurs: Ornithischians",
+          "publisher": "Princeton University Press",
+          "isbn": "978-0-691-25025-0",
+          "notes": "Treats Agathaumas as a nomen dubium on undiagnostic postcranial remains."
         }
       ],
       "taxonomy": [
@@ -32850,6 +32877,10 @@
           {
             "date": "2026-06-27",
             "note": "Placed at Neoceratopsia (basal); nomen dubium."
+          },
+          {
+            "date": "2026-10-09",
+            "note": "Status confirmed disputed; Sereno (2000) calls it a nomen dubium, while later analyses include it provisionally on its referred material."
           }
         ]
       },
@@ -32937,6 +32968,16 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25025-0",
           "notes": "Source of the body length estimate."
+        },
+        {
+          "id": "sereno2000a",
+          "authors": "Sereno, P. C.",
+          "year": 2000,
+          "title": "The fossil record, systematics and evolution of pachycephalosaurs and ceratopsians from Asia",
+          "book": "The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds.)",
+          "publisher": "Cambridge University Press, Cambridge",
+          "pages": "480-516",
+          "notes": "Finds no autapomorphies in the holotype maxilla or referred material and regards Asiaceratops as a nomen dubium."
         }
       ],
       "taxonomy": [
@@ -33755,11 +33796,15 @@
       },
       "description": "Asylosaurus is a genus of basal sauropodomorph dinosaur from the Late Triassic Avon Fissure Fill of England. It is based on partial remains, discovered in the autumn of 1834, described in 1836 by Henry Riley and Samuel Stutchbury as pertaining to Thecodontosaurus, that Othniel Charles Marsh brought to Yale University between 1888 and 1890. These remains thus escaped destruction by a bombardment in 1940 during World War II, unlike the original holotype of Thecodontosaurus. Asylosaurus was described in 2007 by Peter Galton. The type species is A. yalensis, referring to Yale. The bones originally came from a Rhaetian-age cave fill at Durdham Down, Clifton, Bristol.",
       "dispute": {
-        "summary": "Asylosaurus yalensis is a basal sauropodomorph from the Late Triassic of England, closely comparable to Thecodontosaurus; Jones (2026) regards it as a probable nomen dubium whose material cannot be confidently distinguished from Thecodontosaurus.\n",
+        "summary": "Asylosaurus yalensis is a basal sauropodomorph from the Late Triassic of England, closely comparable to Thecodontosaurus. Galton (2007) named it on three autapomorphies; Ballell and colleagues (2020) find none of them diagnostic, since the deltopectoral crest is incomplete or distorted in the comparison humeri, the manual phalangeal formula is unknown in Thecodontosaurus, and the ischia were referred without evidence, and consider it a taxon of highly questionable validity.\n",
         "history": [
           {
             "date": "2026-06-29",
             "note": "Placed at Sauropodomorpha incertae sedis; possible nomen dubium close to Thecodontosaurus."
+          },
+          {
+            "date": "2026-10-09",
+            "note": "Type species set to disputed, following the reassessment of Ballell and colleagues (2020); diagnostic features kept."
           }
         ]
       },
@@ -33795,7 +33840,7 @@
         {
           "name": "Asylosaurus yalensis",
           "etymology": "Named for Yale University, where the bones were brought by Othniel Charles Marsh between 1888 and 1890 and where they were preserved.",
-          "status": "valid",
+          "status": "disputed",
           "type_species": true,
           "period": {
             "name": [
@@ -33855,6 +33900,18 @@
           "volume": "26",
           "issue": "2",
           "pages": "505-591"
+        },
+        {
+          "id": "ballell2020a",
+          "authors": "Ballell, A.; Rayfield, E. J.; Benton, M. J.",
+          "year": 2020,
+          "title": "Osteological redescription of the Late Triassic sauropodomorph dinosaur Thecodontosaurus antiquus based on new material from Tytherington, southwestern England",
+          "journal": "Journal of Vertebrate Paleontology",
+          "volume": "40",
+          "issue": "2",
+          "article_number": "e1770774",
+          "doi": "10.1080/02724634.2020.1770774",
+          "notes": "Rejects each of the three autapomorphies proposed for Asylosaurus and considers it a taxon of highly questionable validity."
         },
         {
           "id": "jones2026b",
@@ -34499,6 +34556,10 @@
           {
             "date": "2026-06-29",
             "note": "Placed at Elasmaria following recent analyses; nomen dubium."
+          },
+          {
+            "date": "2026-10-09",
+            "note": "Status confirmed disputed; a nomen dubium for Agnolín and colleagues (2010), diagnosably distinct for Boyd (2015)."
           }
         ]
       },
@@ -34613,6 +34674,19 @@
           "pages": "e1523",
           "doi": "10.7717/peerj.1523",
           "notes": "Ornithischian analysis bearing on the placement of Atlascopcosaurus."
+        },
+        {
+          "id": "agnolín2010a",
+          "authors": "Agnolín, F. L.; Ezcurra, M. D.; Pais, D. F.; Salisbury, S. W.",
+          "year": 2010,
+          "title": "A reappraisal of the Cretaceous non-avian dinosaur faunas from Australia and New Zealand: evidence for their Gondwanan affinities",
+          "journal": "Journal of Systematic Palaeontology",
+          "publisher": "Informa UK Limited",
+          "volume": "8",
+          "issue": "2",
+          "pages": "257-300",
+          "doi": "10.1080/14772011003594870",
+          "notes": "Lists Atlascopcosaurus loadsi as a non-dryomorph ornithopod nomen dubium."
         }
       ],
       "taxonomy": [
@@ -52462,6 +52536,10 @@
           {
             "date": "2026-06-30",
             "note": "Placed at Herrerasauria, the least-inclusive clade its describers support.\n"
+          },
+          {
+            "date": "2026-10-09",
+            "note": "Status confirmed disputed; valid for Baron and Williams (2018), a nomen dubium for Marsh and colleagues (2019) and Novas and colleagues (2021)."
           }
         ]
       },
@@ -52563,6 +52641,29 @@
           "pages": "129-145",
           "doi": "10.4202/app.00372.2017",
           "notes": "Re-evaluated Caseosaurus as a herrerasaurian with an emended diagnosis."
+        },
+        {
+          "id": "marsh2019a",
+          "authors": "Marsh, A. D.; Parker, W. G.; Langer, M. C.; Nesbitt, S. J.",
+          "year": 2019,
+          "title": "Redescription of the holotype specimen of Chindesaurus bryansmalli Long and Murry, 1995 (Dinosauria, Theropoda), from Petrified Forest National Park, Arizona",
+          "journal": "Journal of Vertebrate Paleontology",
+          "volume": "39",
+          "issue": "3",
+          "pages": "e1645682",
+          "doi": "10.1080/02724634.2019.1645682",
+          "notes": "Treats Caseosaurus crosbyensis as a nomen dubium, following the apomorphy-based identification of its holotype to Dinosauriformes."
+        },
+        {
+          "id": "novas2021a",
+          "authors": "Novas, F. E.; Agnolín, F. L.; Ezcurra, M. D.; Müller, R. T.; Martinelli, A. G.; Langer, M. C.",
+          "year": 2021,
+          "title": "Review of the fossil record of early dinosaurs from South America, and its phylogenetic implications",
+          "journal": "Journal of South American Earth Sciences",
+          "volume": "110",
+          "pages": "103341",
+          "doi": "10.1016/j.jsames.2021.103341",
+          "notes": "Follows the nomen dubium reading while accepting herrerasaur affinity for the material."
         }
       ],
       "taxonomy": [
@@ -57044,6 +57145,19 @@
           "pages": "621-634",
           "doi": "10.1017/s0016756806002500",
           "notes": "Found no autapomorphies for Chialingosaurus, treating it as a nomen dubium."
+        },
+        {
+          "id": "maidment2008a",
+          "authors": "Maidment, S. C. R.; Norman, D. B.; Barrett, P. M.; Upchurch, P.",
+          "year": 2008,
+          "title": "Systematics and phylogeny of Stegosauria (Dinosauria: Ornithischia)",
+          "journal": "Journal of Systematic Palaeontology",
+          "publisher": "Informa UK Limited",
+          "volume": "6",
+          "issue": "4",
+          "pages": "367-407",
+          "doi": "10.1017/S1477201908002459",
+          "notes": "Maintains Maidment and Wei's (2006) verdict that Chialingosaurus is a nomen dubium."
         }
       ],
       "taxonomy": [
@@ -69480,6 +69594,10 @@
           {
             "date": "2026-08-07",
             "note": "Intaken at Styracosterna incertae sedis with the species marked disputed. The genus was absent from the dataset entirely after an unsupported synonymy was removed from Iguanodon; see the orphaned-taxa audit. diagnostic_features follow the emended diagnosis of Gasca and colleagues (2015), which supersedes the original.\n"
+          },
+          {
+            "date": "2026-10-09",
+            "note": "Status confirmed disputed; valid for Gasca and colleagues (2015) and Rotatori and colleagues (2026), indistinguishable from Iguanodon or Barilium for Verdú and colleagues (2017) and Poole (2022)."
           }
         ]
       },
@@ -69674,6 +69792,18 @@
           "issue": "1",
           "doi": "10.11646/zootaxa.3595.1.3",
           "notes": "Basal iguanodont phylogeny underlying the matrix later used for the genus."
+        },
+        {
+          "id": "poole2022a",
+          "authors": "Poole, K. E.",
+          "year": 2022,
+          "title": "Phylogeny of iguanodontian dinosaurs and the evolution of quadrupedality",
+          "journal": "Palaeontologia Electronica",
+          "volume": "25",
+          "issue": "3",
+          "pages": "a30",
+          "doi": "10.26879/702",
+          "notes": "Finds the species inadequately diagnosed, its sole autapomorphy resting on a broken axial spine, and the material close to Barilium."
         }
       ],
       "taxonomy": [
@@ -71805,11 +71935,15 @@
       "etymology": "From Navajo 'Diné', the name of the Navajo people, combined with Latin 'venator' meaning 'hunter'; meaning 'Diné hunter'.",
       "description": "Dinevenator is an extinct genus of troodontid theropod dinosaur known from the Late Cretaceous (Campanian age) Kirtland Formation of New Mexico, United States. The type species of the genus, Dinevenator robustus, is known from a nearly complete frontal bone (a skull roof bone). Previous work had assigned it to the genera Saurornitholestes and Xenovenator.",
       "dispute": {
-        "summary": "Dinevenator is recovered within the tribe Troodontini of Rivera-Sylva and colleagues (2026), as the basalmost member and the sister taxon to Albertavenator plus Xenovenator. That tribe is not adopted as a node, so the genus is placed in Troodontinae alongside them. The holotype frontal was formerly held to be undiagnostic: Evans and colleagues (2014) treated the species as a nomen dubium referable only to an indeterminate troodontid, while Rivera-Sylva and colleagues (2026) and Jasinski and Sullivan (2026) both rediagnosed it as a valid species. Those two disagree on its generic assignment, the former tentatively referring it to Xenovenator as the sister taxon to Xenovenator espinosai, and the latter erecting Dinevenator for it later the same year.\n",
+        "summary": "Dinevenator is recovered within the tribe Troodontini of Rivera-Sylva and colleagues (2026), as the basalmost member and the sister taxon to Albertavenator plus Xenovenator. That tribe is not adopted as a node, so the genus is placed in Troodontinae alongside them. Its validity is contested. Turner and colleagues (2012) found the holotype frontal too weathered to diagnose and called the species a nomen dubium, and Evans and colleagues (2014) referred it only to an indeterminate troodontid, while Rivera-Sylva and colleagues (2026) and Jasinski and Sullivan (2026) both rediagnosed it as a valid species. Those two disagree on its generic assignment, the former tentatively referring it to Xenovenator as the sister taxon to Xenovenator espinosai, and the latter erecting Dinevenator for it later the same year. No later work has yet assessed the revalidation.\n",
         "history": [
           {
             "date": "2026-08-03",
             "note": "Intake; placed at Troodontinae rather than the unadopted tribe Troodontini, following the treatment of Albertavenator and Xenovenator."
+          },
+          {
+            "date": "2026-10-09",
+            "note": "Type species set to disputed; the 2026 revalidation of a species Turner and colleagues (2012) and Evans and colleagues (2014) rejected has not yet been taken up by other work."
           }
         ]
       },
@@ -71837,7 +71971,7 @@
         {
           "name": "Dinevenator robustus",
           "etymology": "From Latin 'robustus' meaning 'robust' or 'strong'.",
-          "status": "valid",
+          "status": "disputed",
           "type_species": true,
           "period": {
             "name": [
@@ -71895,6 +72029,17 @@
           "volume": "35",
           "pages": "253-256",
           "notes": "Original description of the species as Saurornitholestes robustus, founded on the holotype frontal."
+        },
+        {
+          "id": "turner2012a",
+          "authors": "Turner, A. H.; Makovicky, P. J.; Norell, M. A.",
+          "year": 2012,
+          "title": "A Review of Dromaeosaurid Systematics and Paravian Phylogeny",
+          "journal": "Bulletin of the American Museum of Natural History",
+          "volume": "371",
+          "pages": "1-206",
+          "doi": "10.1206/748.1",
+          "notes": "Finds the holotype frontal damaged and weathered, lacking even dromaeosaurid synapomorphies, and treats Saurornitholestes robustus as a nomen dubium."
         },
         {
           "id": "evans2014a",
@@ -94058,6 +94203,16 @@
           "publisher": "University of California Press, Berkeley",
           "pages": "232-258",
           "notes": "Treated Gigantoscelus as a nomen dubium."
+        },
+        {
+          "id": "vanheerden1979a",
+          "authors": "Van Heerden, J.",
+          "year": 1979,
+          "title": "The morphology and taxonomy of Euskelosaurus (Reptilia: Saurischia; Late Triassic) from South Africa",
+          "journal": "Navorsinge van die Nasionale Museum",
+          "volume": "4",
+          "pages": "21-84",
+          "notes": "Finds no diagnostic features in the type and refers it to Euskelosaurus as an indeterminate species."
         }
       ],
       "taxonomy": [
@@ -161628,6 +161783,16 @@
           "pages": "352-356",
           "doi": "10.1017/S0016756800176587",
           "notes": "Addressed Orosaurus (Orinosaurus) capensis in a note on dinosaurian remains."
+        },
+        {
+          "id": "vanheerden1979a",
+          "authors": "Van Heerden, J.",
+          "year": 1979,
+          "title": "The morphology and taxonomy of Euskelosaurus (Reptilia: Saurischia; Late Triassic) from South Africa",
+          "journal": "Navorsinge van die Nasionale Museum",
+          "volume": "4",
+          "pages": "21-84",
+          "notes": "Finds no diagnostic features in the type and refers it to Euskelosaurus as an indeterminate species."
         }
       ],
       "taxonomy": [
@@ -169510,6 +169675,19 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25025-0",
           "notes": "Placement and assessment in the Princeton Encyclopedia of Dinosaurs."
+        },
+        {
+          "id": "arbour2015a",
+          "authors": "Arbour, V. M.; Currie, P. J.",
+          "year": 2015,
+          "title": "Systematics, phylogeny and palaeobiogeography of the ankylosaurid dinosaurs",
+          "journal": "Journal of Systematic Palaeontology",
+          "publisher": "Informa UK Limited",
+          "volume": "14",
+          "issue": "5",
+          "pages": "385-444",
+          "doi": "10.1080/14772019.2015.1059985",
+          "notes": "Finds it impossible to confirm from the figures that the type is ankylosaurian; no diagnosis was ever given."
         }
       ],
       "taxonomy": [
@@ -179381,6 +179559,17 @@
           "school": "The George Washington University",
           "pages": "1-272",
           "notes": "Suggested the Pteropelyx type material is from Corythosaurus, making Pteropelyx a senior synonym."
+        },
+        {
+          "id": "horner2004a",
+          "authors": "Horner, J. R.; Weishampel, D. B.; Forster, C. A.",
+          "year": 2004,
+          "title": "Hadrosauridae",
+          "book": "The Dinosauria (2nd ed.)",
+          "publisher": "University of California Press, Berkeley",
+          "isbn": "0-520-24209-2",
+          "pages": "438-463",
+          "notes": "Lists Pteropelyx grallipes among the hadrosaurid nomina dubia."
         }
       ],
       "taxonomy": [
@@ -215616,6 +215805,19 @@
           "pages": "457-459",
           "doi": "10.1144/gsl.jgs.1882.038.01-04.47",
           "notes": "Records the specimen as obtained by Dr. A. C. Horner of Tonbridge from the quarry at Southborough, in the Hastings Sand."
+        },
+        {
+          "id": "naish2002b",
+          "authors": "Naish, D.; Martill, D. M.",
+          "year": 2002,
+          "title": "A reappraisal of Thecocoelurus daviesi (Dinosauria: Theropoda) from the Early Cretaceous of the Isle of Wight",
+          "journal": "Proceedings of the Geologists' Association",
+          "publisher": "Elsevier BV",
+          "volume": "113",
+          "issue": "1",
+          "pages": "23-30",
+          "doi": "10.1016/S0016-7878(02)80003-7",
+          "notes": "Regards Thecospondylus horneri as a nomen dubium and the sacral cast as belonging to a large dinosaur."
         }
       ],
       "taxonomy": [
@@ -216409,6 +216611,16 @@
           "issue": "1",
           "pages": "77-98",
           "notes": "Gives the syntypes as two caudal vertebrae and a phalanx from the Lance Formation, the source of the formation."
+        },
+        {
+          "id": "brett-surman1989a",
+          "authors": "Brett-Surman, M. K.",
+          "year": 1989,
+          "title": "A revision of the Hadrosauridae (Reptilia: Ornithischia) and their evolution during the Campanian and Maastrichtian",
+          "thesis": "doctoral",
+          "school": "The George Washington University",
+          "pages": "1-272",
+          "notes": "Finds the type caudal vertebrae and phalanx undiagnostic even at subfamily level and the name a nomen dubium."
         }
       ],
       "taxonomy": [
