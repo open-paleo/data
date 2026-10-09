@@ -11,13 +11,17 @@ description: Xiaosaurus is a genus of small herbivorous ornithischian dinosaur
   what is now the Sichuan Basin of China.
 dispute:
   summary: >
-    Xiaosaurus is a small ornithischian from the Middle Jurassic of China
-    usually regarded as a nomen dubium, its fragmentary material lacking
-    sufficient diagnostic features for a more precise placement (Jones,
-    2026). It was formerly placed in the deprecated Fabrosauridae.
+    Xiaosaurus is a small ornithischian from the Middle Jurassic of China.
+    Long treated as a nomen dubium, it was provisionally accepted as valid by
+    Barrett and colleagues (2005) on a single humeral autapomorphy, a reading
+    later works follow; the type material is of unknown whereabouts, and the
+    fragmentary remains do not support a placement below Ornithischia. It was
+    formerly placed in the deprecated Fabrosauridae.
   history:
     - date: "2026-06-29"
       note: Reparented from the deprecated Fabrosauridae to Ornithischia incertae sedis; nomen dubium.
+    - date: "2026-10-08"
+      note: Status kept valid; diagnostic features replaced by the emended diagnosis of Barrett and colleagues (2005).
 diet: herbivore
 locomotion: bipedal
 paleoenvironment:
@@ -27,13 +31,8 @@ appearance:
   integument: scaled
   evidence: inferred
 diagnostic_features:
-  - Teeth asymmetrical on the inner and outer surfaces, with thin dentine on both
-    sides, lacking a rasp-like wear facet and longitudinal crown ridges
-  - Cingulum between crown and root poorly developed, only rudimentary
-  - Femoral lesser trochanter ear-shaped, lower than the greater trochanter,
-    separated from the shaft by a vertical longitudinal groove
-  - Tibia about 1.16 times femoral length; metatarsal III about 42% of tibia
-    length
+  - Humerus proximally straight, lacking the medial curvature seen in all other
+    basal ornithischians
 identifiers:
   - source: pbdb
     id: "53226"
@@ -78,3 +77,12 @@ references:
   - id: dong1983b
   - id: jones2026a
     notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+  - id: barrett2005a
+    notes: Emends the diagnosis to a single humeral autapomorphy and provisionally
+      accepts Xiaosaurus as valid.
+  - id: butler2008b
+    notes: Accepts the humeral autapomorphy but leaves Xiaosaurus out of its
+      analysis, the type material being of unknown whereabouts.
+  - id: boyd2015a
+    notes: Treats Xiaosaurus as valid on the humeral autapomorphy but too
+      fragmentary for phylogenetic analysis.
