@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-10-09T20:56:32.509Z
+  built_at: 2026-10-09T22:14:42.535Z
   clade_count: 188
   genus_count: 1425
   license: CC-BY-4.0
@@ -144082,12 +144082,14 @@ genera:
     description: Ratchasimasaurus is a genus of iguanodontian ornithopod dinosaur from Early Cretaceous (Aptian stage) Khok Kruat Formation of Nakhon Ratchasima province in northeastern Thailand. The type and only species is R. suranareae, named after Thao Suranari, a 19th-century war heroine. It is diagnosed by a uniquely elongated, dorsoventrally compressed dentary ramus, though one study regarded the genus as a nomen dubium on the grounds that its characters are widespread in Styracosterna.
     dispute:
       summary: |
-        Ratchasimasaurus suranareae is diagnosed by a uniquely elongated, dorsoventrally compressed dentary ramus (Jones, 2026); its position is debated between basal Styracosterna (Jones, 2026) and basal Hadrosauroidea (Madzia and colleagues, 2021), and a minority view has treated it as a nomen dubium.
+        Ratchasimasaurus suranareae is diagnosed by an elongate, dorsoventrally compressed dentary ramus (Shibata and colleagues, 2011). Its position is debated between basal Styracosterna (Jones, 2026) and basal Hadrosauroidea (Madzia and colleagues, 2021).
       history:
         - date: 2026-06-27
           note: Placed at Styracosterna, the least-inclusive clade these results agree on; nomen dubium.
         - date: 2026-07-14
           note: Retained as valid; the dentary autapomorphy is upheld by recent literature (Jones, 2026), with the nomen dubium view treated as a minority opinion.
+        - date: 2026-10-09
+          note: Status confirmed valid; the summary credits the diagnosis to Shibata and colleagues (2011) and drops an unsourced minority nomen dubium view.
     diet: herbivore
     locomotion: facultative
     paleoenvironment:
@@ -145568,10 +145570,12 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        Richardoestesia is a jaw- and tooth-based taxon most often treated as a form taxon or nomen dubium; its describers assigned it only to Maniraptora, family unknown (Currie and colleagues, 1990), and it is used across many formations to denote a general tooth morphology rather than a natural taxon (Larson and Currie, 2013). Its referral to Dromaeosauridae is uncertain; it is retained provisionally at Dromaeosauridae incertae sedis.
+        The type species, Richardoestesia gilmorei, rests on a pair of dentaries and is treated as valid (Currie and colleagues, 1990; Averianov and Sues, 2019). The isolated teeth referred to Richardoestesia across many formations and a long span of time probably represent several taxa (Larson and Currie, 2013; Averianov and Sues, 2019), so the name serves largely as a tooth form taxon. Its describers assigned it only to Maniraptora, family unknown, and it is retained provisionally at Dromaeosauridae incertae sedis.
       history:
         - date: 2026-07-01
           note: Retained at Dromaeosauridae incertae sedis; tooth/form taxon, formally Maniraptora family-unknown, dromaeosaurid affinity uncertain.
+        - date: 2026-10-09
+          note: Status of the type species confirmed valid; the summary separates the jaw-based type species from the tooth-based referrals.
     pronunciation:
       phonetic: ri-KARD-o-es-TEE-zee-a
     etymology: Named in honor of paleontologist Richard Estes, with the Latinised possessive form 'Richardoestesia' combining the first name Richard with the surname Estes.
@@ -148907,10 +148911,12 @@ genera:
       Sauroniops is a controversial genus of carnivorous carcharodontosaurid theropod dinosaurs known from the Late Cretaceous (Cenomanian stage) of Morocco. It is known from the Gara Sbaa Formation of the Kem Kem beds and contains a single species, S. pachytholus.
     dispute:
       summary: |
-        The validity of Sauroniops is actively contested. Ibrahim and colleagues (2020) argued that S. pachytholus is a junior synonym of Carcharodontosaurus saharicus, interpreting the holotype as an immature C. saharicus frontal and finding the diagnostic characters unconvincing. Paterna and Cau (2022) rebutted this, reaffirming the diagnosis and reporting additional Kem Kem carcharodontosaurid material distinct from C. saharicus. Kellermann, Cuesta and Rauhut (2025) declined the synonymy but treated Sauroniops as a nomen dubium, holding that erecting a taxon on a single frontal is inappropriate pending more material.
+        The validity of Sauroniops is actively contested. Ibrahim and colleagues (2020) argued that S. pachytholus is a junior synonym of Carcharodontosaurus saharicus, interpreting the holotype as an immature C. saharicus frontal and finding the diagnostic characters unconvincing. Paterna and Cau (2022) rebutted this, reaffirming the diagnosis and reporting additional Kem Kem carcharodontosaurid material distinct from C. saharicus. Kellermann, Cuesta and Rauhut (2025) declined the synonymy but treated Sauroniops as a nomen dubium, holding that erecting a taxon on a single frontal is inappropriate pending more material. Cau and Paterna (2025) report a further specimen that they take to support its validity.
       history:
         - date: 2026-07-01
           note: Retained at Carcharodontosauridae incertae sedis; validity (nomen dubium per Kellermann and colleagues, 2025) and the proposed synonymy with Carcharodontosaurus remain unresolved.
+        - date: 2026-10-09
+          note: Status confirmed disputed; the summary adds Cau and Paterna (2025).
     diet: carnivore
     locomotion: bipedal
     paleoenvironment:
@@ -149009,6 +149015,16 @@ genera:
         pages: e0311096
         doi: 10.1371/journal.pone.0311096
         notes: In discussing Kem Kem carcharodontosaurid diversity, treats Sauroniops as a nomen dubium, holding that erecting a taxon on a single frontal is inappropriate.
+      - id: cau2025a
+        authors: Cau, A.; Paterna, A.
+        year: 2025
+        title: "Beyond the Stromer's Riddle: the impact of lumping and splitting hypotheses on the systematics of the giant predatory dinosaurs from northern Africa"
+        journal: Italian Journal of Geosciences
+        volume: "144"
+        issue: "2"
+        pages: 162-185
+        doi: 10.3301/IJG.2025.10
+        notes: Refers a new specimen to Sauroniops and takes it to support the genus's validity and distinction from other carcharodontosaurids.
     taxonomy:
       - Life
       - Animalia
@@ -149186,6 +149202,8 @@ genera:
       history:
         - date: 2026-07-02
           note: Retained at Allosauridae; the chimera and nomen dubium argument of Danison and colleagues (2024), and the proposed transfer of the valid theropod material to Allosaurus anax, are noted but not yet adopted.
+        - date: 2026-10-09
+          note: Status confirmed disputed; Danison and colleagues (2024) call it a nomen dubium, and no later work read rebuts them.
     pronunciation:
       phonetic: SAWR-o-FAG-a-naks
     etymology: From Greek 'sauros' meaning 'lizard', 'phagein' meaning 'to eat', and 'anax' meaning 'ruler' or 'lord'; meaning 'lord of lizard-eaters.'
@@ -153818,6 +153836,8 @@ genera:
           note: Placed at Hadrosauroidea; nomen dubium.
         - date: 2026-07-14
           note: Retained as valid; the maxillary diagnosis is upheld by recent literature (Jones, 2026), with Norman's (2015) nomen dubium view treated as a minority opinion.
+        - date: 2026-10-09
+          note: Status confirmed disputed; a nomen dubium for Norman (2015), distinguished from other Thai iguanodontians by Shibata and colleagues (2015).
     diet: herbivore
     locomotion: facultative
     paleoenvironment:
@@ -155459,7 +155479,7 @@ genera:
     described: 2008
   Sinankylosaurus:
     genus: Sinankylosaurus
-    parent: Ankylosauria
+    parent: Dinosauria
     placement: incertae sedis
     pronunciation:
       phonetic: sin-AN-ky-lo-SAWR-us
@@ -155467,21 +155487,17 @@ genera:
     description: Sinankylosaurus is a dubious dinosaur genus known from the Late Cretaceous Hongtuya Formation of China. The genus contains a single species, Sinankylosaurus zhuchengensis, known from a partial right ilium (a pelvic bone). This specimen was originally described as belonging to an ankylosaur, although later research has disputed this identification, noting the lack of anatomical characters uniting Sinankylosaurus with this group.
     dispute:
       summary: |
-        Sinankylosaurus has been argued to lack ankylosaur diagnostic features (Zheng and colleagues, 2021) and is treated as a nomen dubium. It is retained at Ankylosauria incertae sedis.
+        Sinankylosaurus zhuchengensis was named as an ankylosaur on a partial ilium (Wang and colleagues, 2020). Zheng and colleagues (2021) find no ankylosaur features in it, as the supposed acetabulum lacks a cuplike structure and peduncles and there is no preacetabular ridge, and consider it a nomen dubium and not an ankylosaur, without proposing another identity. It is placed at Dinosauria incertae sedis.
       history:
         - date: 2026-06-26
           note: Placed at Ankylosauria incertae sedis, nomen dubium of uncertain diagnosability.
+        - date: 2026-10-09
+          note: Type species set to nomen dubium and diagnostic features removed, following Zheng and colleagues (2021), and reparented from Ankylosauria to Dinosauria incertae sedis, the nearest parent both readings accept. The citation for that study now points to the right paper.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
       - fluvial
       - lacustrine
-    diagnostic_features:
-      - Dorsal surface of ilium smooth and relatively flat on lateral edge
-      - Preacetabular process develops wide twisted 'wing' extending anteriorly
-      - Preacetabular process length exceeds 2/3 of entire ilium length
-      - Distal end of preacetabular process wide (~40 cm) with strong constriction toward proximal end (~15 cm)
-      - Wide gap between anterior and posterior widths of preacetabular process
     appearance:
       integument: armored
       evidence: inferred
@@ -155495,7 +155511,7 @@ genera:
     species:
       - name: Sinankylosaurus zhuchengensis
         etymology: Named for Zhucheng, the city in Shandong Province, China, where the holotype ilium was discovered.
-        status: valid
+        status: nomen dubium
         type_species: true
         period:
           name:
@@ -155532,16 +155548,15 @@ genera:
         issue: "7"
         pages: 958-962
         doi: 10.12097/gbc.dztb-39-7-958
-      - id: zheng2021a
-        authors: Zheng, X.; Bailleul, A. M.; Li, Z.; Zhou, Z.
+      - id: zheng2021b
+        authors: Zheng, W.; Shibata, M.; Liao, C.-C.; Hattori, S.; Jin, D.; Jin, C.; Xu, X.
         year: 2021
-        title: Nuclear preservation in the cartilage of the Jehol dinosaur Caudipteryx
-        journal: Communications Biology
-        volume: "4"
-        issue: "1125"
-        pages: "1125"
-        doi: 10.1038/s42003-021-02627-8
-        notes: Argued Sinankylosaurus lacks ankylosaur diagnostic features, a nomen dubium.
+        title: First definitive ankylosaurian dinosaur from the Cretaceous of Jilin Province, northeastern China
+        journal: Cretaceous Research
+        volume: "127"
+        article_number: "104953"
+        doi: 10.1016/j.cretres.2021.104953
+        notes: Finds no ankylosaur diagnostic features in the holotype ilium and considers Sinankylosaurus a nomen dubium and not an ankylosaur.
     taxonomy:
       - Life
       - Animalia
@@ -155552,10 +155567,6 @@ genera:
       - Reptilia
       - Archosauria
       - Dinosauria
-      - Ornithischia
-      - Genasauria
-      - Thyreophora
-      - Ankylosauria
     authors: Wang, K. B.; Zhang, Y. X.; Chen, J.; Chen, S. Q.; Wang, P. Y.
     described: 2020
   Sinocalliopteryx:
@@ -160501,6 +160512,8 @@ genera:
           note: Moved from Troodontini (tribe dropped) to Troodontinae; validity versus Troodon synonymy unresolved.
         - date: 2026-08-07
           note: Latenivenatrix is kept as a separate disputed genus; the Cullen synonymy is reported as contested rather than settled.
+        - date: 2026-10-09
+          note: Status confirmed disputed, alongside Troodon; the valid name for van der Reest and Currie (2017), a junior synonym of Troodon formosus for Varricchio and colleagues (2025).
     etymology: From Greek 'stenos' meaning 'narrow', 'onyx/onychos' meaning 'claw', and 'sauros' meaning 'lizard'; meaning 'narrow claw lizard', referring to the narrow enlarged claw on the second toe.
     description: Stenonychosaurus is a disputed genus of troodontid dinosaur from the Late Cretaceous Dinosaur Park Formation of Alberta, Canada, as well as possibly the Two Medicine Formation. The type and only species, S. inequalis, was named by Charles Mortram Sternberg in 1932, based on a foot, fragments of a hand, and some caudal vertebrae from the Late Cretaceous of Alberta. S. inequalis was reassigned in 1987 by Phil Currie to the genus Troodon, which was reverted by the recognition of Stenonychosaurus as a separate genus from the possibly dubious Troodon in 2017 by Evans and colleagues and also later in the same year by Van der Reest and Currie.
     diet: carnivore
