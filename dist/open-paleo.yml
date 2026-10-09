@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-10-09T22:14:42.535Z
+  built_at: 2026-10-09T23:15:23.409Z
   clade_count: 188
   genus_count: 1425
   license: CC-BY-4.0
@@ -161623,6 +161623,9 @@ genera:
     dispute:
       summary: |
         Molnar (1978) described LACM 28471 as a new theropod, Paul (1988) named it Aublysodon molnari, and Olshevsky, Ford and Yamamoto (1995) moved it to a genus of its own. Against that, Brochu (2003) regarded the specimen as an immature Tyrannosaurus rex, holding that the features distinguishing it are the same ones claimed for Nanotyrannus; Currie and colleagues (2003) reached the same conclusion, Carr and colleagues (2005) listed the genus among invalid taxa, and Carr (2020) treats the specimen as a two-year-old juvenile referable to T. rex. More recent work has reopened the question rather than closing it. Longrich and Saitta (2024) find the type differs from Nanotyrannus lancensis in the antorbital fossa, the maxilla and the tip of the mandible, raising the possibility of two distinct lineages while stating that further work and more fossils are needed. Paul (2025) gives the genus a systematic entry among the small gracile tyrannosaurs but calls its diagnosis provisional and the data insufficient. Zanno and Napoli (2025) instead regard it as a nomen dubium, impossible to assign to either Tyrannosaurus or Nanotyrannus. Placed at Eutyrannosauria incertae sedis, the least inclusive clade common to these readings.
+      history:
+        - date: 2026-10-09
+          note: Status confirmed disputed; a juvenile Tyrannosaurus rex for Brochu (2003) and Carr (2020), a nomen dubium for Zanno and Napoli (2025), and valid for Paul (2025).
     diet: carnivore
     identifiers:
       - source: pbdb
@@ -164729,11 +164732,13 @@ genera:
     parent: Abelisauridae
     dispute:
       summary: |
-        The validity of Tarascosaurus is contested: originally described as an abelisaurid, it was later regarded as a nomen dubium (Allain and Pereda- Suberbiola, 2003; Rauhut, 2003), then reaffirmed as a valid abelisaurid by subsequent studies. Its position within the family is unresolved.
+        The validity of Tarascosaurus is contested. Originally described as an abelisaurid, it was regarded as a nomen dubium by Allain and Pereda-Suberbiola (2003) and Rauhut (2003). Carrano and Sampson (2008) kept the name as probably an abelisauroid, and Tortosa and colleagues (2014) recognized it as a distinct basal abelisaurid by comparison with Genusaurus, without identifying autapomorphies. Its position within the family is unresolved.
       history:
         - date: 2026-06-30
           note: |
             Placed at Abelisauridae.
+        - date: 2026-10-09
+          note: Status confirmed disputed; the summary names the work that keeps the genus after 2003 in place of a general claim that it was reaffirmed.
     etymology: Named after the Tarasque, a legendary monster from Provencal folklore (France), combined with Greek sauros, "lizard" — means "Tarasque lizard"
     pronunciation:
       phonetic: ta-RASS-ko-SOR-us
@@ -164837,6 +164842,27 @@ genera:
         pages: 27-44
         doi: 10.1016/S1631-0683(03)00002-2
         notes: Regarded Tarascosaurus as a nomen dubium.
+      - id: carrano2008a
+        authors: Carrano, M. T.; Sampson, S. D.
+        year: 2008
+        title: "The Phylogeny of Ceratosauria (Dinosauria: Theropoda)"
+        journal: Journal of Systematic Palaeontology
+        volume: "6"
+        issue: "2"
+        pages: 183-236
+        doi: 10.1017/S1477201907002246
+        notes: Keeps Tarascosaurus salluvicus as probably an abelisauroid, without autapomorphies.
+      - id: tortosa2014a
+        authors: Tortosa, T.; Buffetaut, E.; Vialle, N.; Dutour, Y.; Turini, E.; Cheylan, G.
+        year: 2014
+        title: "A new abelisaurid dinosaur from the Late Cretaceous of southern France: Palaeobiogeographical implications"
+        journal: Annales de Paléontologie
+        publisher: Elsevier BV
+        volume: "100"
+        issue: "1"
+        pages: 63-86
+        doi: 10.1016/j.annpal.2013.10.003
+        notes: Recognizes Tarascosaurus as a distinct basal abelisaurid, separated from Genusaurus by features of the proximal femur.
     taxonomy:
       - Life
       - Animalia
@@ -168155,6 +168181,8 @@ genera:
         - date: 2026-06-29
           note: |
             Placed at Eusauropoda incertae sedis following the primary reassessment (Mannion and Moore, 2025) over the reference-work treatment; the dicraeosaurid alternative (Bajpai and colleagues, 2023; Jones, 2026) is recorded.
+        - date: 2026-10-09
+          note: Status confirmed disputed; diagnosed by Bajpai and colleagues (2023), a nomen dubium for Mannion and Moore (2025).
     etymology: Named for the Thar Desert of Rajasthan, India, where the holotype was found, combined with Greek 'sauros' meaning 'lizard'.
     pronunciation:
       phonetic: THAR-oh-SOR-us
@@ -174201,6 +174229,8 @@ genera:
       history:
         - date: 2026-07-01
           note: Placed at Alvarezsauroidea following Xu and colleagues (2018) and Meso and colleagues (2024); the referral rests on a single matrix lineage and the earlier uncertain-coelurosaur interpretation is noted.
+        - date: 2026-10-09
+          note: Status confirmed valid, following Rauhut and Xu (2005).
     pronunciation:
       phonetic: too-GOO-loo-SAWR-us
     etymology: Named for the Tugulu Group geological formation of Xinjiang, China, where the fossils were found, combined with Greek 'sauros' meaning 'lizard'.
@@ -178025,10 +178055,12 @@ genera:
     placement: incertae sedis
     dispute:
       summary: |
-        The validity of Variraptor mechinorum is contested. It was erected as a French dromaeosaurid on vertebrae and a humerus (Le Loeuff and Buffetaut, 1998), but Allain and Taquet (2000) argued the holotype lacks distinguishing features and treated it as a nomen dubium, a view others have disputed. Where analyzed it has been placed as a basal dromaeosaurid (Cau and Madzia, 2021). It is retained provisionally at Dromaeosauridae incertae sedis.
+        Variraptor mechinorum was erected as a French dromaeosaurid on vertebrae and a humerus (Le Loeuff and Buffetaut, 1998). Allain and Taquet (2000) found no distinguishing features on the holotype and noted that most of the diagnosis rests on a vertebra from another locality, and treated it as a nomen dubium; Turner and colleagues (2012) agree. Moutrille and colleagues (2025) find the sacral features non-autapomorphic and the referred material possibly from more than one taxon. It is retained provisionally at Dromaeosauridae incertae sedis.
       history:
         - date: 2026-07-01
           note: Retained at Dromaeosauridae incertae sedis; validity contested (possible nomen dubium, possible synonym of Pyroraptor).
+        - date: 2026-10-09
+          note: Type species set to nomen dubium and diagnostic features removed, following Allain and Taquet (2000) and Turner and colleagues (2012). A citation for a basal dromaeosaurid placement was removed, as the paper cited does not discuss Variraptor; the placement is left for a separate review.
     pronunciation:
       phonetic: VARR-i-rap-tor
       ipa: /ˈværɪræptər/
@@ -178038,12 +178070,6 @@ genera:
     locomotion: bipedal
     paleoenvironment:
       - fluvial
-    diagnostic_features:
-      - Cervico-dorsal vertebrae bear two pleurocoels
-      - Humerus with strongly developed medial tubercle, more prominent than in Deinonychus
-      - Sacrum consists of five coossified sacral vertebrae
-      - Well-developed deltopectoral crest and internal tubercle on humerus
-      - Sacrocaudal vertebra has trapezoidal centrum with aliform transverse processes
     appearance:
       integument: feathered
       evidence: direct
@@ -178059,7 +178085,7 @@ genera:
     species:
       - name: Variraptor mechinorum
         etymology: Named for Patrick Méchain and Annie Méchain-Salessy, the couple who discovered and recovered the fossil remains.
-        status: disputed
+        status: nomen dubium
         type_species: true
         period:
           name:
@@ -178105,16 +178131,6 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
         notes: Source of the body length estimate.
-      - id: cau2021a
-        authors: Cau, A.; Madzia, D.
-        year: 2021
-        title: The phylogenetic affinities and morphological peculiarities of the bird-like dinosaur Borogovia gracilicrus from the Upper Cretaceous of Mongolia
-        journal: PeerJ
-        publisher: PeerJ
-        volume: "9"
-        pages: e12640
-        doi: 10.7717/peerj.12640
-        notes: Placed Variraptor as a basal dromaeosaurid.
       - id: allain2000a
         authors: Allain, R.; Taquet, P.
         year: 2000
@@ -178126,6 +178142,26 @@ genera:
         pages: 404-407
         doi: 10.1671/0272-4634(2000)020[0404:angodd]2.0.co;2
         notes: Argued the Variraptor holotype lacks distinguishing features.
+      - id: turner2012a
+        authors: Turner, A. H.; Makovicky, P. J.; Norell, M. A.
+        year: 2012
+        title: A Review of Dromaeosaurid Systematics and Paravian Phylogeny
+        journal: Bulletin of the American Museum of Natural History
+        volume: "371"
+        pages: 1-206
+        doi: 10.1206/748.1
+        notes: Agrees with Allain and Taquet (2000) that the holotype is nondiagnostic and treats Variraptor mechinorum as a nomen dubium.
+      - id: moutrille2025a
+        authors: Moutrille, L.; Cau, A.; Chinzorig, T.; Escuillié, F.; Tsogtbaatar, K.; Ganzorig, B.; Mallet, C.; Godefroit, P.
+        year: 2025
+        title: A new bird-like dinosaur from the Upper Cretaceous of Mongolia with extremely robust hands supports niche partitioning among velociraptorines
+        journal: Historical Biology
+        publisher: Informa UK Limited
+        volume: "38"
+        issue: "6"
+        pages: 1987-2018
+        doi: 10.1080/08912963.2025.2530148
+        notes: Finds the sacral features of Variraptor non-autapomorphic and the referred material possibly from two or more taxa.
     taxonomy:
       - Life
       - Animalia
@@ -182253,11 +182289,13 @@ genera:
     parent: Rebbachisauridae
     dispute:
       summary: |
-        Originally described as a neosauropod of uncertain affinity (Taylor and Naish, 2007) and later treated as a nomen dubium by some, Xenoposeidon was reinterpreted as the earliest known rebbachisaurid on the basis of a shared neural-arch lamina arrangement (Taylor, 2018), a placement resting on morphological argument rather than a numerical analysis. A competing titanosaur interpretation has also been raised.
+        Originally described as a neosauropod of uncertain affinity (Taylor and Naish, 2007). D'Emic (2012) judged its distinguishing features to be damage or widespread among sauropods, regarded it as a nomen dubium, and took its camellate pneumaticity to indicate a titanosauriform. Taylor (2018) rebutted this point by point, rediagnosed it on five characters, and reinterpreted it as the earliest known rebbachisaurid on the basis of a shared neural-arch lamina arrangement, a placement resting on morphological argument rather than a numerical analysis.
       history:
         - date: 2026-06-30
           note: |
             Placed at Rebbachisauridae following Taylor (2018) and the Princeton Encyclopedia (Jones, 2026); the assignment rests on a single shared character and has not yet been tested in a quantitative analysis.
+        - date: 2026-10-09
+          note: Status confirmed valid; the summary names D'Emic (2012) as the nomen dubium reading that Taylor (2018) answered.
     etymology: From Greek xenos meaning 'strange' or 'alien' and Poseidon (the Greek god of the sea), in allusion to the sauropod genus Sauroposeidon; translates as 'strange Poseidon'
     pronunciation:
       phonetic: ZEE-no-puh-SYE-don
@@ -182350,6 +182388,15 @@ genera:
         pages: e5212
         doi: 10.7717/peerj.5212
         notes: Reinterpreted Xenoposeidon as the earliest known rebbachisaurid based on shared vertebral lamina arrangement with Rebbachisaurus
+      - id: d'emic2012b
+        authors: D'Emic, M. D.
+        year: 2012
+        title: The early evolution of titanosauriform sauropod dinosaurs
+        journal: Zoological Journal of the Linnean Society
+        volume: "166"
+        pages: 624-671
+        doi: 10.1111/j.1096-3642.2012.00853.x
+        notes: Regards Xenoposeidon as a nomen dubium and suggests from its camellate pneumaticity that it is a titanosauriform.
     taxonomy:
       - Life
       - Animalia
@@ -183413,6 +183460,8 @@ genera:
       history:
         - date: 2026-07-01
           note: Placed at Coelurosauria incertae sedis (least-inclusive uncontested clade); weakly supported maniraptoran versus tyrannosauroid/megaraptoran signals, fragmentary holotype.
+        - date: 2026-10-09
+          note: Status confirmed valid, following Rauhut and Xu (2005); the nomen dubium named in the summary is Phaedrolosaurus, not this genus.
     etymology: Named after Xinjiang, the autonomous region of China where it was found, combined with Latin venator meaning 'hunter'; translates as 'Xinjiang hunter'
     pronunciation:
       phonetic: SHEEN-JEE-yon-go-VEN-uh-tuh
