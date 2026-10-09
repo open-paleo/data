@@ -1,5 +1,20 @@
 # *Bradycneme*
 
+## Which form does the *Bradycneme* locality take?
+
+*2026-10-07*
+
+**Conclusion.** The modern Romanian name, Sânpetru, as other Hațeg records give it; the describing paper's Hungarian form goes in the location notes. Governs `location.locality: Sânpetru` on [*Bradycneme draculae*](../../../genera/B/Bradycneme.yml), replacing "Szentpeterfalva, Hătszeg", a misreading of the printed form.
+
+**Evidence.**
+- harrison1975a, p. 565, as printed: "Szèntpeterfalva, Hàtszeg, Transylvania, Romania".
+- csiki1998a: Andrews's material, including BMNH A.1588, is from the Sinpetru Formation of the Sibișel Valley; the 2026-09-30 entry equates Szentpéterfalva with Sânpetru.
+
+**Ruled out.**
+- *"Szentpeterfalva, Hătszeg".* The record's earlier string, a transcription of the printed page with the wrong diacritics.
+
+**Open.** Nothing.
+
 ## Is the Bradycneme holotype (BMNH A 1588) from the Sânpetru Formation?
 
 *2026-09-30*

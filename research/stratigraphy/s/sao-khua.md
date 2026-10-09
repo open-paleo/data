@@ -1,5 +1,19 @@
 # Sao Khua
 
+## Does the Sao Khua Formation take the Barremian?
+
+*2026-10-07*
+
+**Conclusion.** No. The 2026-09-30 entry's conclusion governs the unit as well as its taxa: Tucker and colleagues' late Valanginian–early Hauterivian, with the late Barremian ruled out. That a maximum depositional age leaves a younger age open is a possibility, not a reading, and adds no stage. Governs `stages: [Valanginian, Hauterivian]` on [Sao Khua](../../../stratigraphy/s/sao-khua.yml), replacing `[Valanginian, Hauterivian, Barremian]`, and matches the stages of its six taxa.
+
+**Evidence.**
+- tucker2022a, p. 15: "a tightly constrained late Valanginian–early Hauterivian age of 133.6–132.1 Ma for Sao Khua Formation".
+
+**Ruled out.**
+- *Barremian from the open upper bound.* A maximum age does not exclude younger stages, but no source read gives the formation a Barremian on evidence other than the bivalve correlation the 2026-09-30 entry rules out.
+
+**Open.** As in the 2026-09-30 entry: how young the formation can be.
+
 ## What is the age of the Sao Khua Formation?
 
 *2026-09-30*

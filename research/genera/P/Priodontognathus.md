@@ -1,5 +1,19 @@
 # *Priodontognathus*
 
+## Does the *Priodontognathus* record keep a Yorkshire region?
+
+*2026-10-07*
+
+**Conclusion.** Yes. The region follows the formation the record already takes from the matrix, the Calcareous Grit of Yorkshire; Etheridge's alternative, the shore at Hastings, would mean a Lower Cretaceous rock, which the matrix identification argues against. Governs `location.region: GB-NYK` on [*Priodontognathus phillipsii*](../../../genera/P/Priodontognathus.yml).
+
+**Evidence.**
+- seeley1875a, p. 443: Etheridge "thought that the block containing the fossil was either Calcareous Grit or Coral Rag", probably "a fragment on the sea-shore", in which case "there were only two points from which it could have come, namely, the Yorkshire coast and Hastings".
+
+**Ruled out.**
+- *No region.* Dropping it would leave the record naming a Yorkshire formation with no region, half-committed rather than cautious.
+
+**Open.** The locality, as before.
+
 ## Where is the Priodontognathus holotype from?
 
 *2026-09-30*

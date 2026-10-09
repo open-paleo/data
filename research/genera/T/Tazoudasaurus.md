@@ -1,5 +1,19 @@
 # *Tazoudasaurus*
 
+## Which form of the *Tazoudasaurus* holotype number does the record carry?
+
+*2026-10-08*
+
+**Conclusion.** The describing paper's specimen number under the SGM code, "SGM To 2000-1", with the redescription's element numbers in the type-specimen notes. The 2008 numbers catalog the same individual element by element, and two of them carry only the locality code. Settles the 2026-10-04 entry's **Open** question. Governs `type_specimen.specimen_id` and its notes on [*Tazoudasaurus naimi*](../../../genera/T/Tazoudasaurus.yml).
+
+**Evidence.**
+- allain2008a, p. 351: the holotype is the "Material figured in the original publication (Allain *et al.* 2004) and belonging to a single individual", listed as "left mandible (CPSGM To1-275); left postorbital (CPSGM To1); right quadrate (CPSGM To1)" and seven further numbered elements.
+
+**Ruled out.**
+- *The element numbers as `specimen_id`.* They would drop the describer's number and leave the postorbital and quadrate unnumbered; listing both forms would read as nine specimens.
+
+**Open.** Nothing.
+
 ## What is the Tazoudasaurus holotype's number and repository?
 
 *2026-10-04*
@@ -51,8 +65,8 @@
 
 ## References
 
-- `allain2004a`: Allain, R.; Aquesbi, N.; Dejax, J.; Meyer, C.; Monbaron, M.; Montenat, C.; Richir, P.; Rochdy, M.; Russell, D.; Taquet, P. (2004). A basal sauropod dinosaur from the Early Jurassic of Morocco. *Comptes Rendus Palevol* 3(3): 199-208. doi:10.1016/j.crpv.2004.03.001
 - `allain2008a`: Allain, R.; Aquesbi, N. (2008). Anatomy and phylogenetic relationships of Tazoudasaurus naimi (Dinosauria, Sauropoda) from the late Early Jurassic of Morocco. *Geodiversitas* 30(2): 345-424.
+- `allain2004a`: Allain, R.; Aquesbi, N.; Dejax, J.; Meyer, C.; Monbaron, M.; Montenat, C.; Richir, P.; Rochdy, M.; Russell, D.; Taquet, P. (2004). A basal sauropod dinosaur from the Early Jurassic of Morocco. *Comptes Rendus Palevol* 3(3): 199-208. doi:10.1016/j.crpv.2004.03.001
 - `sabaj2020a`: Sabaj, M. H. (2020). Codes for natural history collections in ichthyology and herpetology. *Copeia* 108(3): 593-669. doi:10.1643/ASIHCODONS2020
 - `benvenuti2024a`: Benvenuti, M.; Nesi, J.; Papini, M.; Risaliti, G.; Sani, F.; Moratti, G. (2024). Geology of the Toundoute Region (South Morocco): a window on the Early Jurassic-Cretaceous tectono-sedimentary evolution of the Central High Atlas. *Journal of Maps* 20(1): 2419456. doi:10.1080/17445647.2024.2419456
 - `montenat2005a`: Montenat, C.; Monbaron, M.; Allain, R.; Aquesbi, N.; Dejax, J.; Hernandez, J.; Russell, D.; Taquet, P. (2005). Stratigraphie et paléoenvironnement des dépôts volcano-détritiques à dinosauriens du Jurassique inférieur de Toundoute (Province de Ouarzazate, Haut-Atlas — Maroc). *Eclogae Geologicae Helvetiae* 98(2): 261-270. doi:10.1007/s00015-005-1161-x

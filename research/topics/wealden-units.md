@@ -1,5 +1,20 @@
 # Wealden units
 
+## Does the registry follow the BGS ranks for the Wealden?
+
+*2026-10-08*
+
+**Conclusion.** No. The registry keeps the scheme of the papers that describe the Wealden taxa: a Wealden Supergroup holding the Hastings Beds and Weald Clay groups in the Weald Sub-basin, with a Grinstead Clay Formation in the Hastings Beds. The Weald Clay takes the Wealden as its parent, which it lacked. Settles the 2026-09-30 entry's **Open** question on the BGS ranks. Governs `parent: Wealden` on [Weald Clay](../../stratigraphy/w/weald-clay.yml), and the ranks and parents on [Hastings Beds](../../stratigraphy/h/hastings-beds.yml) and [Grinstead Clay](../../stratigraphy/g/grinstead-clay.yml).
+
+**Evidence.**
+- raven2020a, p. 23: "The Lower Cretaceous Wealden Supergroup consists of … strata that were deposited in the Weald Sub-basin … and in the Wessex Sub-basin"; "The Weald Sub-basin contains the Hastings Beds Group …, and the Weald Clay Group".
+
+**Ruled out.**
+- *The BGS scheme* (a Wealden Group, Hastings Beds obsolete, a Weald Clay Formation and a Grinstead Clay Member of the Tunbridge Wells Sand Formation). It is the national survey's, but the papers cited for the taxa use the formation ranks above.
+- *A Tunbridge Wells Sand parent for the Grinstead Clay.* Drew (1861) has the clay dividing the sand, but Raven and colleagues and Austen and Batten (2018) set the Grinstead Clay Formation above the Lower Tunbridge Wells Sand formation as its sibling, so placing it inside would mix the two schemes.
+
+**Open.** Nothing.
+
 ## How are the Wealden units ranked, and is the Grinstead Clay a formation or a member?
 
 *2026-09-30*

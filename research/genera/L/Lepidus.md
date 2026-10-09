@@ -1,10 +1,27 @@
 # *Lepidus*
 
+## Which unit and stages does the *Lepidus* record carry while its formation is disputed?
+
+*2026-10-07*
+
+**Conclusion.** The describing paper's Dockum Group, with no formation, and Carnian to Norian. The formation is disputed between the Cooper Canyon and the Colorado City, so under the rule that a record stays at the describing paper's assignment during a live argument over its unit, the record names the group and sets out both readings in its notes. Both horizon-level age statements allow the Carnian. Governs `location.group: Dockum`, the empty `location.formation`, the location notes and `stage: [Carnian, Norian]` on [*Lepidus praecisio*](../../../genera/L/Lepidus.yml). Settles the 2026-09-30 entry's **Open** line on Lovelace and colleagues, and replaces `formation: Colorado City` and `[Norian]`.
+
+**Evidence.**
+- nesbitt2015a, p. 514: "Type horizon: Otis Chalk area, Dockum Group, Upper Triassic"; p. 515: the Otis Chalk localities are "probably at least older than 223 Ma, or at the youngest, lower Norian", and their age "could be older".
+- lovelace2025a: "the classic Otis Chalk localities, including the early-diverging neotheropod *Lepidus* from the Colorado City Formation (lower Dockum Group), can be restricted to somewhere between the late Carnian (c. 231 Mya; this study) to no younger than early Norian", by correlating them with the base of the Popo Agie Formation through detrital zircons and shared fauna.
+- lehman2005a, p. 346: "our mapping shows that these strata are actually within the upper part of the Cooper Canyon Formation".
+
+**Ruled out.**
+- *Colorado City as the record's formation.* It is one side of a live dispute; Lehman and Chatterjee's mapping and Martz's correlation (as Nesbitt and Ezcurra report it) put the beds in the Cooper Canyon.
+- *Norian alone.* Both statements about the horizon reach into the Carnian.
+
+**Open.** Which formation holds the Otis Chalk beds.
+
 ## Are the Otis Chalk beds Colorado City or Cooper Canyon Formation?
 
 *2026-09-30*
 
-**Conclusion.** Disputed. Lehman and Chatterjee's (2005) mapping places the Otis Chalk strata in the upper [Cooper Canyon Formation](../../../stratigraphy/c/cooper-canyon.yml); the [Colorado City](../../../stratigraphy/c/colorado-city.yml) assignment rests on Lucas and colleagues' scheme. Governs `location.formation` on *Lepidus praecisio*, which currently follows the Colorado City reading.
+**Conclusion.** Disputed. Lehman and Chatterjee's (2005) mapping places the Otis Chalk strata in the upper [Cooper Canyon Formation](../../../stratigraphy/c/cooper-canyon.yml); the Colorado City assignment rests on Lucas and colleagues' scheme. Governs `location.formation` on *Lepidus praecisio*, which currently follows the Colorado City reading.
 
 **Evidence.**
 - lehman2005a, p. 346: "our mapping shows that these strata are actually within the upper part of the Cooper Canyon Formation"; p. 347: "the Otischalkian biochron cannot be supported on the basis of available tetrapod evidence".
@@ -35,8 +52,9 @@
 
 ## References
 
-- `lehman2005a`: Lehman, T.; Chatterjee, S. (2005). Depositional setting and vertebrate biostratigraphy of the Triassic Dockum Group of Texas.
 - `nesbitt2015a`: Nesbitt, S.; Ezcurra, M. (2015). The early fossil record of dinosaurs in North America: A new neotheropod from the base of the Upper Triassic Dockum Group of Texas. *Acta Palaeontologica Polonica* 60. doi:10.4202/app.00143.2014
+- `lovelace2025a`: Lovelace, D. M.; Kufner, A. M.; Fitch, A. J.; Curry Rogers, K.; Schmitz, M.; Schwartz, D. M.; LeClair-Diaz, A.; St.Clair, L.; Mann, J.; Teran, R. (2025). Rethinking dinosaur origins: oldest known equatorial dinosaur-bearing assemblage (mid-late Carnian Popo Agie FM, Wyoming, USA). *Zoological Journal of the Linnean Society* 203(1): zlae153. doi:10.1093/zoolinnean/zlae153
+- `lehman2005a`: Lehman, T.; Chatterjee, S. (2005). Depositional setting and vertebrate biostratigraphy of the Triassic Dockum Group of Texas.
 - `lucas1993c`: Lucas, S. G.; Anderson, O. J. (1993). Triassic stratigraphy in southeastern New Mexico and southwestern Texas. In *Carlsbad Region (New Mexico and West Texas) (Love, D. W.; Hawley, J. W.; Kues, B. S.; Austin, G. S.; Lucas, S. G., eds.)*, pp. 231-235. doi:10.56577/FFC-44.231
 - `lucas1995a`: Lucas, S. G.; Anderson, O. J. (1995). Dockum (Upper Triassic) stratigraphy and nomenclature. *West Texas Geological Society Bulletin* 34(7): 5-11.
 - `hunt1998a`: Hunt, A. P.; Lucas, S. G.; Heckert, A. B.; Sullivan, R. M.; Lockley, M. G. (1998). Late Triassic dinosaurs from the western United States. *Geobios* 31(4): 511-531. doi:10.1016/s0016-6995(98)80123-x

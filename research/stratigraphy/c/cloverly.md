@@ -1,5 +1,19 @@
 # Cloverly
 
+## Does the Cloverly Formation begin in the Berriasian?
+
+*2026-10-07*
+
+**Conclusion.** No. D'Emic and colleagues name the Valanginian as the formation's lowest stage; their "ca. 140 Ma" is an approximate bound inferred from other work, not a dated sample, so the stage they name governs. Governs the Valanginian start of `stages` on [Cloverly](../../../stratigraphy/c/cloverly.yml).
+
+**Evidence.**
+- d'emic2019a, abstract: deposition "spanned the Valanginian–Cenomanian stages (ca. 140 Ma–98 Ma)"; the lowest dated sample, CL-7 at the base of the Little Sheep Mudstone Member about 2.5 m above the Pryor Conglomerate, gives 129.4 ± 3.4 Ma (Table 3).
+
+**Ruled out.**
+- *Berriasian from "ca. 140 Ma".* On the current chart 140 Ma is late Berriasian, but the figure rests on the absence of younger zircons in Pryor equivalents, a lull in arc magmatism and Berriasian–Hauterivian palynology from beds below the Pryor, not on a date from the Cloverly; CONTRIBUTING's rule on reading ages on the chart follows the stage a paper names when its number is not a measured date.
+
+**Open.** Nothing.
+
 ## How should a Cloverly taxon be dated?
 
 *2026-09-30*

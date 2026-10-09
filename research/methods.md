@@ -39,6 +39,16 @@
 
 **Exceptions.** None.
 
+## A 97–99.5 Ma "Albian" is re-placed only when the number was measured
+
+*2026-10-07*
+
+**Rule.** Treat a date of roughly 97–99.5 Ma described as Albian, or as "at the Albian–Cenomanian boundary", as an old-chart label, and place it in the Cenomanian, only when the number is a radiometric date. A number that a paper estimated by hanging an age on a biostratigraphic level is that level's stage given a figure: carry the stage over and do not re-place the number. Before re-placing, trace the number to the source that produced it. Decides `stages` on mid-Cretaceous units of the Western Interior and elsewhere. Supersedes the 2026-10-02 rule, which did not separate the two.
+
+**Why.** The [Terra Cotta Clay](stratigraphy/t/terra-cotta-clay.md) lost its Albian on the 2026-10-02 rule, through Hamilton's (1994) "maximum age … of 97 Ma (Weimer, 1984)" for the Dakota. Weimer (1986), the version of that work we hold, gives the unconformity as "Albian, ~97 m.y.", among dates that "are estimated", whose accuracy is limited "because of problems in accurately defining the biostratigraphic level of the breaks and in the precision of radiometric dates". The stage is the placement and the number is fitted to it; palynology dates the lower Terra Cotta late Albian.
+
+**Exceptions.** A unit whose own bed is dated older than 100.5 Ma keeps the Albian (*Abydosaurus*: a maximum of 104.46 Ma below and Dakota at 101.4 Ma above).
+
 ## A numeric age of about 97–99.5 Ma labelled Albian is an old-chart label
 
 *2026-10-02*

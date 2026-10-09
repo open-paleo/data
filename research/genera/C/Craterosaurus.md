@@ -1,5 +1,20 @@
 # *Craterosaurus*
 
+## Does *Craterosaurus* carry diagnostic features?
+
+*2026-10-07*
+
+**Conclusion.** No. The features once listed came from Seeley's reading of the type as a skull; it is a partial dorsal neural arch, and the genus is a nomen dubium. Governs the absence of `diagnostic_features` on [*Craterosaurus*](../../../genera/C/Craterosaurus.yml).
+
+**Evidence.**
+- galton1985d: Nopcsa (1912) "reinterpreted it as the incomplete neural arch of a stegosaurian dorsal vertebra"; the one diagnostic feature is "a very deep depression in the top of the arch posterior to the prezygapophyses".
+- maidment2008a: "originally described by Seeley (1874) as a partial skull, but Nopcsa (1912) correctly identified it as the neural arch of a dorsal vertebra".
+
+**Ruled out.**
+- *Galton's depression as a diagnostic feature.* The record treats the genus as a nomen dubium whose features are widespread in stegosaurs (Maidment and colleagues, 2008); Galton's feature is kept in his reference note.
+
+**Open.** Nothing.
+
 ## Is "Potton Sands" the *Craterosaurus* locality or its unit?
 
 *2026-10-02*
@@ -18,6 +33,7 @@
 
 ## References
 
-- `seeley1874a`: Seeley, H. G. (1874). On the Base of a large Lacertian Cranium from the Potton Sands, presumably Dinosaurian. *Quarterly Journal of the Geological Society of London* 30(1-4): 690-692. doi:10.1144/gsl.jgs.1874.030.01-04.62
 - `galton1985d`: Galton, P. M. (1985). British plated dinosaurs (Ornithischia, Stegosauridae). *Journal of Vertebrate Paleontology* 5(3): 211-254. doi:10.1080/02724634.1985.10011859
+- `maidment2008a`: Maidment, S. C. R.; Norman, D. B.; Barrett, P. M.; Upchurch, P. (2008). Systematics and phylogeny of Stegosauria (Dinosauria: Ornithischia). *Journal of Systematic Palaeontology* 6(4): 367-407. doi:10.1017/S1477201908002459
+- `seeley1874a`: Seeley, H. G. (1874). On the Base of a large Lacertian Cranium from the Potton Sands, presumably Dinosaurian. *Quarterly Journal of the Geological Society of London* 30(1-4): 690-692. doi:10.1144/gsl.jgs.1874.030.01-04.62
 - `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, 2nd edition*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027

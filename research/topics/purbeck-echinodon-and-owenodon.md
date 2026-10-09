@@ -4,7 +4,7 @@
 
 *2026-09-30*
 
-**Conclusion.** Both are from the upper [Lulworth Formation](../../stratigraphy/l/lulworth.yml), Berriasian: *Echinodon* from the Marly or Cherty Freshwater beds, *Owenodon* from the "Cherty freshwater beds", which mark the top of the Lulworth. Neither is from the [Durlston Formation](../../stratigraphy/d/durlston.yml). Governs `location.formation: Lulworth` on [*Echinodon becklesii*](../../genera/E/Echinodon.yml) and [*Owenodon hoggii*](../../genera/O/Owenodon.yml), whose record has Durlston.
+**Conclusion.** Both are from the upper [Lulworth Formation](../../stratigraphy/l/lulworth.yml), Berriasian: *Echinodon* from the Marly or Cherty Freshwater beds, *Owenodon* from the "Cherty freshwater beds", which mark the top of the Lulworth. Neither is from the Durlston Formation. Governs `location.formation: Lulworth` on [*Echinodon becklesii*](../../genera/E/Echinodon.yml) and [*Owenodon hoggii*](../../genera/O/Owenodon.yml), whose record has Durlston.
 
 **Evidence.**
 - clements1993a, p. 182, Table 1: the Lulworth Formation's members, with the Cherty Freshwater Member topmost, below the Durlston Formation's basal Cinder Member (bed DB111, p. 204).

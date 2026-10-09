@@ -1,5 +1,20 @@
 # Elliot
 
+## Is sample Q6's maximum age 191.9 or 191.1 Ma?
+
+*2026-10-07*
+
+**Conclusion.** 191.9 ± 1.5 Ma. The 191.1 in Table 1's preferred-MDA column is a slip: it matches none of the table's metrics, and the paper's stated preferred metric, YC2σ(2+), gives 191.9, the figure its text uses. Either value is Pliensbachian on the current chart. Governs the Q6 figure quoted on [Elliot](../../../stratigraphy/e/elliot.yml), [Clarens](../../../stratigraphy/c/clarens.yml) and [*Ngwevu intloko*](../../../genera/N/Ngwevu.yml).
+
+**Evidence.**
+- bordy2020a, p. 10: "Our preferred method for estimating the MDA (Table 1) is the weighted mean of the youngest cluster comprised of two or more grains overlapping with the youngest one at 2σ internal error (YC2σ[2+])"; Table 1, Q6: preferred MDA 191.1 ± 1.5, YSG 190 ± 2.4, YC1σ(2+) 193.4 ± 1.2, YC2σ(2+) 191.9 ± 1.5, YC2σ(3+) 467.4 ± 2.5, YPP 193.
+- bordy2020a, p. 17: "Q6: <191.9 Ma".
+
+**Ruled out.**
+- *191.1 Ma.* In every other row the preferred value equals one of the metric columns, usually YC2σ(2+); Q6's 191.1 equals none, and reads as 191.9 with two digits transposed.
+
+**Open.** Nothing.
+
 ## What stages does the Elliot Formation span?
 
 *2026-09-30*
