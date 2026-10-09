@@ -11,7 +11,7 @@ description: Monoclonius is an extinct dubious genus of herbivorous ceratopsian
   Formation in Alberta, Canada dated to between 75 and 74.6 million years ago.
 dispute:
   summary: >
-    Monoclonius is a nomen dubium; Ryan (2006) reaffirmed M. crassus as
+    Monoclonius is a nomen dubium; Ryan and Russell (2006) reaffirmed M. crassus as
     undiagnostic and reassessed the referred M. lowei as a subadult
     centrosaurine. Although a centrosaurine, it is not
     reliably placeable below family level and is retained at Ceratopsidae
@@ -19,22 +19,13 @@ dispute:
   history:
     - date: "2026-06-26"
       note: Moved from Centrosaurinae to Ceratopsidae incertae sedis, most specimens reassigned to Centrosaurus.
+    - date: "2026-10-08"
+      note: Type species set to nomen dubium and diagnostic features removed, following Sampson and colleagues (1997) and Ryan and Russell (2006).
 diet: herbivore
 locomotion: quadrupedal
 paleoenvironment:
   - fluvial
   - coastal
-diagnostic_features:
-  - Teeth with obliquely truncate face and distinct root, grooved for
-    successional tooth on front
-  - No external cementum layer on tooth back
-  - Caudal vertebrae biconcave with narrow brim
-  - Fore limbs large and massive
-  - Teeth faces acuminate oval, divided by elevated keel (median above, turns to
-    one side at base)
-  - Tooth margin crenate with grooves extending onto back
-  - Sacrum with ten vertebrae, last centrum compressed
-  - Three anterior dorsal vertebrae coossified
 appearance:
   integument: scaled
   evidence: inferred
@@ -52,7 +43,7 @@ species:
     etymology: "From Latin 'crassus' meaning 'fat' or 'thick', though the precise
       anatomical referent is unclear given the composite nature of the original
       type material."
-    status: valid
+    status: nomen dubium
     type_species: true
     period:
       name:
@@ -75,5 +66,8 @@ species:
     erected_in: cope1876a
 references:
   - id: cope1876a
+  - id: sampson1997a
+    notes: Declares Monoclonius crassus a nomen dubium, its type a composite of
+      immature individuals lacking diagnostic adult ornamentation.
   - id: ryan2006a
     notes: Assessed the status of Monoclonius and the recognition of adult-sized taxa (conference abstract).

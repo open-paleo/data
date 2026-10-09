@@ -11,25 +11,19 @@ description: Fulengia is a dubious genus of basal sauropodomorph dinosaur from
   thought to be a lizard.
 dispute:
   summary: >
-    Fulengia youngi is a nomen dubium based on a tiny skull, possibly a
-    juvenile Lufengosaurus, and was originally described as a lizard
-    (Galton and Upchurch, 2004).
+    Fulengia youngi was described as a lizard on a tiny skull that Sereno
+    (1991) referred to Prosauropoda indet., making the name a nomen dubium;
+    Galton and Upchurch (2004) list it among the prosauropod nomina dubia.
   history:
     - date: "2026-06-29"
       note: Placed at Massospondylidae incertae sedis; nomen dubium, possibly a juvenile Lufengosaurus.
+    - date: "2026-10-08"
+      note: Type species set to nomen dubium and diagnostic features removed, following Sereno (1991).
 diet: herbivore
 locomotion: bipedal
 paleoenvironment:
   - fluvial
   - lacustrine
-diagnostic_features:
-  - Median (unpaired) frontal
-  - Paired premaxillae with long nasal processes
-  - Large upper temporal opening with margin partially formed by the postfrontal
-  - Postorbital triradiate and nearly vertical
-  - Lacrimal absent
-  - Teeth fully pleurodont, closely resembling those of modern Iguana iguana,
-    with tooth cusps whose anterior margin is angled toward the midline
 appearance:
   integument: scaled
   evidence: inferred
@@ -43,7 +37,7 @@ identifiers:
 species:
   - name: Fulengia youngi
     etymology: "Named in honor of Dr. C. C. Young (Yang Zhongjian) for work in the Lufeng Basin."
-    status: valid
+    status: nomen dubium
     type_species: true
     period:
       name:
@@ -75,6 +69,9 @@ species:
     erected_in: carroll1977a
 references:
   - id: carroll1977a
+  - id: sereno1991a
+    notes: Refers the Fulengia skull to Prosauropoda indet. and treats the name
+      as a nomen dubium.
   - id: galton2004a
     notes: Assessed Fulengia among basal sauropodomorphs.
   - id: irmis2008a
