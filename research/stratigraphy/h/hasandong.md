@@ -1,5 +1,18 @@
 # Hasandong
 
+## Who reads the Hasandong as Aptian–Albian in yun2020a?
+
+*2026-10-08*
+
+**Conclusion.** Yun alone; the paper has a single author. Corrects "Yun and colleagues" in the 2026-09-30 entry's **Open** line; the reading and its weight are unchanged. Governs nothing on [Hasandong](../../../stratigraphy/h/hasandong.yml) beyond the yun2020a note.
+
+**Evidence.**
+- yun2020a: authored by Yun, giving "Aptian-Albian" (p. 2), on a relayed "118.0 ± 2.6 Ma (Upper Aptian)" U-Pb age and molluscan faunas (p. 4).
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## Is the Hasandong Formation Hauterivian–Barremian or Aptian–Albian?
 
 *2026-10-03*
@@ -16,9 +29,9 @@
 
 ## References
 
+- `yun2020a`: Yun, C. G. (2020). A carcharodontosaurid tooth from the Hasandong Formation (Lower Cretaceous) of South Korea. *Mongolian Geoscientist* 50: 2-10. doi:10.5564/mgs.v50i0.1325
 - `lee2010b`: Lee, Y. I.; Choi, T.; Lim, H. S.; Orihashi, Y. (2010). Detrital zircon geochronology of the Cretaceous Sindong Group, Southeast Korea: implications for depositional age and Early Cretaceous igneous activity. *Island Arc* 19(4): 647-658. doi:10.1111/j.1440-1738.2010.00717.x
 - `dong2001a`: Dong, Z.; Paik, I. S.; Kim, H. J. (2001). A preliminary report on a sauropod from the Hasandong Formation (Lower Cretaceous), Korea. *Proceedings of the Eighth Annual Meeting of the Chinese Society of Vertebrate Paleontology*: 41-53.
 - `barrett2002a`: Barrett, P. M.; Hasegawa, Y.; Manabe, M.; Isaji, S.; Matsuoka, H. (2002). Sauropod dinosaurs from the Lower Cretaceous of eastern Asia: taxonomic and biogeographical implications. *Palaeontology* 45(6): 1197-1217. doi:10.1111/1475-4983.00282
 - `wilson2009a`: Wilson, J. A.; Upchurch, P. (2009). Redescription and reassessment of the phylogenetic affinities of Euhelopus zdanskyi (Dinosauria: Sauropoda) from the Early Cretaceous of China. *Journal of Systematic Palaeontology* 7(2): 199-239. doi:10.1017/S1477201908002691
 - `sha2007a`: Sha, J. (2007). Cretaceous trigonioidid (non-marine Bivalvia) assemblages and biostratigraphy in Asia with special remarks on the classification of Trigonioidacea. *Journal of Asian Earth Sciences* 29: 62-83. doi:10.1016/j.jseaes.2006.01.003
-- `yun2020a`: Yun, C. G. (2020). A carcharodontosaurid tooth from the Hasandong Formation (Lower Cretaceous) of South Korea. *Mongolian Geoscientist* 50: 2-10. doi:10.5564/mgs.v50i0.1325
