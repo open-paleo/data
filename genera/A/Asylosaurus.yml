@@ -20,12 +20,17 @@ description: Asylosaurus is a genus of basal sauropodomorph dinosaur from the
 dispute:
   summary: >
     Asylosaurus yalensis is a basal sauropodomorph from the Late Triassic
-    of England, closely comparable to Thecodontosaurus; Jones (2026)
-    regards it as a probable nomen dubium whose material cannot be
-    confidently distinguished from Thecodontosaurus.
+    of England, closely comparable to Thecodontosaurus. Galton (2007) named
+    it on three autapomorphies; Ballell and colleagues (2020) find none of
+    them diagnostic, since the deltopectoral crest is incomplete or distorted
+    in the comparison humeri, the manual phalangeal formula is unknown in
+    Thecodontosaurus, and the ischia were referred without evidence, and
+    consider it a taxon of highly questionable validity.
   history:
     - date: "2026-06-29"
       note: Placed at Sauropodomorpha incertae sedis; possible nomen dubium close to Thecodontosaurus.
+    - date: "2026-10-09"
+      note: Type species set to disputed, following the reassessment of Ballell and colleagues (2020); diagnostic features kept.
 locomotion: bipedal
 paleoenvironment:
   - fluvial
@@ -50,7 +55,7 @@ species:
   - name: Asylosaurus yalensis
     etymology: "Named for Yale University, where the bones were brought by Othniel
       Charles Marsh between 1888 and 1890 and where they were preserved."
-    status: valid
+    status: disputed
     type_species: true
     period:
       name:
@@ -85,5 +90,8 @@ species:
     erected_in: galton2007a
 references:
   - id: galton2007a
+  - id: ballell2020a
+    notes: Rejects each of the three autapomorphies proposed for Asylosaurus and
+      considers it a taxon of highly questionable validity.
   - id: jones2026b
     notes: Source of the hip height estimate.

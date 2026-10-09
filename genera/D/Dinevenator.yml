@@ -11,18 +11,22 @@ dispute:
   summary: >
     Dinevenator is recovered within the tribe Troodontini of Rivera-Sylva and colleagues (2026), as the basalmost member and the sister taxon to
     Albertavenator plus Xenovenator. That tribe is not adopted as a node, so the
-    genus is placed in Troodontinae alongside them. The holotype frontal
-    was formerly held to be undiagnostic: Evans and colleagues (2014) treated the
-    species as a nomen dubium referable only to an indeterminate troodontid,
+    genus is placed in Troodontinae alongside them. Its validity is
+    contested. Turner and colleagues (2012) found the holotype frontal too
+    weathered to diagnose and called the species a nomen dubium, and Evans
+    and colleagues (2014) referred it only to an indeterminate troodontid,
     while Rivera-Sylva and colleagues (2026) and Jasinski and Sullivan (2026) both
     rediagnosed it as a valid species. Those two disagree on its generic
     assignment, the former tentatively referring it to Xenovenator as the
     sister taxon to Xenovenator espinosai, and the latter erecting Dinevenator
-    for it later the same year.
+    for it later the same year. No later work has yet assessed the
+    revalidation.
   history:
     - date: "2026-08-03"
       note: Intake; placed at Troodontinae rather than the unadopted tribe
         Troodontini, following the treatment of Albertavenator and Xenovenator.
+    - date: "2026-10-09"
+      note: Type species set to disputed; the 2026 revalidation of a species Turner and colleagues (2012) and Evans and colleagues (2014) rejected has not yet been taken up by other work.
 diet: carnivore
 locomotion: bipedal
 paleoenvironment:
@@ -45,7 +49,7 @@ erected_in: jasinski2026a
 species:
   - name: Dinevenator robustus
     etymology: "From Latin 'robustus' meaning 'robust' or 'strong'."
-    status: valid
+    status: disputed
     type_species: true
     period:
       name:
@@ -82,6 +86,10 @@ references:
   - id: sullivan2006b
     notes: Original description of the species as Saurornitholestes robustus,
       founded on the holotype frontal.
+  - id: turner2012a
+    notes: Finds the holotype frontal damaged and weathered, lacking even
+      dromaeosaurid synapomorphies, and treats Saurornitholestes robustus as a
+      nomen dubium.
   - id: evans2014a
     notes: Reidentified the holotype frontal as troodontid rather than
       dromaeosaurid, and treated the species as a nomen dubium.
