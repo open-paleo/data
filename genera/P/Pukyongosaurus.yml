@@ -3,14 +3,19 @@ parent: Somphospondyli
 dispute:
   summary: >
     Pukyongosaurus is based on fragmentary remains and was originally referred
-    to Euhelopodidae (Dong and colleagues, 2001). It is widely regarded as a nomen
-    dubium and is otherwise placed only as an indeterminate titanosauriform or
-    basal somphospondylan (D'Emic, 2012; Jones, 2026).
+    to Euhelopodidae (Dong and colleagues, 2001). It is a nomen dubium:
+    Upchurch and colleagues (2004) list it as one, and Mannion and colleagues
+    (2013) find no diagnostic features and regard it as an indeterminate
+    titanosauriform. D'Emic (2012) places it among the basal somphospondylans
+    but leaves it out of analysis because its validity could not be
+    substantiated.
   history:
     - date: "2026-06-30"
       note: >
         Placed conservatively at Somphospondyli; the genus is widely treated
         as a nomen dubium.
+    - date: "2026-10-09"
+      note: Type species set to nomen dubium and diagnostic features removed, following Upchurch and colleagues (2004) and Mannion and colleagues (2013).
 etymology: Named after Pukyong National University in South Korea, combined with
   Greek sauros (lizard); meaning "Pukyong lizard".
 pronunciation:
@@ -27,16 +32,6 @@ locomotion: quadrupedal
 paleoenvironment:
   - fluvial
   - lacustrine
-diagnostic_features:
-  - Medium-sized sauropod with somphospondylous vertebrae.
-  - Neural spine of cervical vertebrae raised high and anteriorly positioned on
-    the arch.
-  - Parapophyses situated on the lateroventral edge of the centrum just
-    posterior to the articular condyle.
-  - Ventral side of cervical centrum slightly bent, either flat, with a narrow
-    ventral ridge located on the posterior part.
-  - Centrum of dorsal vertebra opisthocoelous with long and deep pleurocoel.
-  - Haemal canal of chevron open and not bridged over dorsally.
 appearance:
   integument: scaled
   evidence: inferred
@@ -52,7 +47,7 @@ species:
     etymology: "From Latin 'millennium' meaning 'a thousand years', referring to the
       year 2000 around which the fossil material was described, marking the turn
       of the millennium."
-    status: valid
+    status: nomen dubium
     type_species: true
     period:
       name:
@@ -98,3 +93,8 @@ references:
     notes: Source of the body length, mass, and hip height estimates.
   - id: d'emic2012b
     notes: Placed Pukyongosaurus as an indeterminate titanosauriform or basal somphospondylan.
+  - id: upchurch2004a
+    notes: Lists Pukyongosaurus millenniumi among the sauropod nomina dubia.
+  - id: mannion2013a
+    notes: Regards Pukyongosaurus as an indeterminate titanosauriform, lacking
+      diagnostic features.
