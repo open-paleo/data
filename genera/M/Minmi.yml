@@ -11,23 +11,22 @@ description: Minmi is a genus of small herbivorous ankylosaurian dinosaur that
   million years ago.
 dispute:
   summary: >
-    Both the validity and placement of Minmi are contested. Arbour and Currie (2015) regarded Minmi paravertebra as a nomen dubium, while others uphold it; phylogenetic analyses recover it as an unstable wildcard, even outside Eurypoda in the preferred tree of Raven and colleagues (2023). It is retained at Ankylosauria incertae sedis.
+    Minmi paravertebra is a nomen dubium. Arbour and Currie (2015) found none
+    of Molnar's diagnostic characters unique to the holotype, the
+    paravertebrae being ordinary ossified tendons; Leahey and colleagues
+    (2015) kept the genus pending a redescription that has not appeared. The
+    skeleton long known as Minmi sp. is Kunbarrasaurus ieversi, and the
+    phylogenetic results reported for Minmi mostly rest on that specimen. It
+    is retained at Ankylosauria incertae sedis.
   history:
     - date: "2026-06-26"
       note: Placed at Ankylosauria incertae sedis, validity and placement both unresolved.
+    - date: "2026-10-09"
+      note: Type species set to nomen dubium and diagnostic features removed, following Arbour and Currie (2015); the species name corrected to Molnar's spelling, paravertebra.
 diet: herbivore
 locomotion: quadrupedal
 paleoenvironment:
   - fluvial
-diagnostic_features:
-  - Small ankylosaur with paravertebral elements present alongside neural spines
-    of dorsal vertebrae
-  - Ventral armor formed by pavement of small ossicles (6-8 mm diameter,
-    cushion-shaped, hexagonal to square)
-  - Dorsal vertebrae amphiplatyan without notochordal knobs
-  - Transverse processes slender and triangular (not T-shaped) in cross-section
-  - Neural canal broad (breadth to height ratio 0.76-1.02)
-  - Posterior intervertebral notch shallow
 appearance:
   features:
     - body armor
@@ -44,10 +43,10 @@ identifiers:
   - source: eol
     id: "4530847"
 species:
-  - name: Minmi paravertebrata
+  - name: Minmi paravertebra
     etymology: "Referring to unusual bone elements found along the vertebrae, for
       which Molnar coined the designation 'paravertebrae'."
-    status: disputed
+    status: nomen dubium
     type_species: true
     period:
       name:
@@ -93,3 +92,6 @@ references:
     notes: Dates the Minmi Member of the Bungil Formation as early Aptian from its pelecypods, belemnite and foraminifera.
   - id: burger1980a
     notes: Gives the Minmi Member as "dated as lower Aptian".
+  - id: leahey2015a
+    notes: Names Kunbarrasaurus ieversi for the skeleton formerly called Minmi
+      sp., and keeps Minmi paravertebra as distinct pending a redescription.
