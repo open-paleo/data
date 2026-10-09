@@ -10,10 +10,16 @@ description: Priodontognathus is a genus of ankylosaurian dinosaur possibly from
   mixed up with iguanodonts and stegosaurs.
 dispute:
   summary: >
-    Priodontognathus is a nomen dubium based on a single maxilla with a long history of misidentification. It is retained at Ankylosauria incertae sedis.
+    Priodontognathus is based on a single maxilla with a long history of
+    misidentification. Vickaryous and colleagues (2004) list it as a nomen
+    dubium, while Naish and Martill (2008) call that status probably unjust,
+    pointing to its unusual teeth. It is retained at Ankylosauria incertae
+    sedis.
   history:
     - date: "2026-06-26"
       note: Placed at Ankylosauria incertae sedis, undiagnostic single-element nomen dubium.
+    - date: "2026-10-08"
+      note: Type species set to disputed; listed as a nomen dubium in compilations but argued distinct by Naish and Martill (2008), so diagnostic features are kept.
 diet: herbivore
 locomotion: quadrupedal
 paleoenvironment:
@@ -46,7 +52,7 @@ identifiers:
 species:
   - name: Priodontognathus phillipsii
     etymology: "Named for John Phillips, a geology professor, honored when Harry Govier Seeley originally described the specimen as Iguanodon phillipsii."
-    status: valid
+    status: disputed
     type_species: true
     period:
       name:
@@ -75,6 +81,8 @@ species:
     erected_in: seeley1875a
 references:
   - id: seeley1875a
+  - id: vickaryous2004a
+    notes: Lists Priodontognathus phillipsii among the ankylosaur nomina dubia.
   - id: naish2008a
     notes: Leaves the horizon open between the Upper Jurassic of Yorkshire
       and the Lower Cretaceous of Sussex, the same alternative Etheridge
