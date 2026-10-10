@@ -1,5 +1,21 @@
 # *Magnamanus*
 
+## Which registry entry holds the Museo Numantino de Soria?
+
+*2026-10-09*
+
+**Conclusion.** A new entry, `MNS-ES`. The Soria museum is absent from Sabaj, so its code comes from the describing literature, and because Sabaj records MNS as an obsolete code of the Stuttgart museum (SMNS), the new entry takes the country suffix. Governs `institution: MNS-ES` on [*Magnamanus soriaensis*](../../../genera/M/Magnamanus.yml) and [*Soriatitan golmayensis*](../../../genera/S/Soriatitan.yml), whose specimen numbers keep the printed MNS prefix.
+
+**Evidence.**
+- fuentesvidarte2016a, p. 410: "MNS, Museo Numantino de Soria, España".
+- sabaj2020a: "SMNS: Staatliches Museum für Naturkunde [Stuttgart State Museum of Natural History], Stuttgart. *Obsolete as*: MNS."
+
+**Ruled out.**
+- *Filing the Soria specimens under SMNS.* The MNS alias resolves the Stuttgart museum's old prefix; the Soria holotypes are not in Stuttgart.
+- *Dropping MNS from Stuttgart's aliases.* Superseded codes stay as aliases under CONTRIBUTING's Institution Registry section.
+
+**Open.** Nothing.
+
 ## Does the Magnamanus holotype have a single number, and where is it held?
 
 *2026-10-04*
@@ -34,6 +50,7 @@
 ## References
 
 - `fuentesvidarte2016a`: Fuentes Vidarte, C.; Meijide Calvo, M.; Meijide Fuentes, F.; Meijide Fuentes, M. (2016). Un nuevo dinosaurio estiracosterno (Ornithopoda: Ankylopollexia) del Cretácico Inferior de España [A new styracosternan dinosaur (Ornithopoda: Ankylopollexia) from the Lower Cretaceous of Spain]. *Spanish Journal of Palaeontology* 31(2): 407-446. doi:10.7203/sjp.31.2.17163
+- `sabaj2020a`: Sabaj, M. H. (2020). Codes for natural history collections in ichthyology and herpetology. *Copeia* 108(3): 593-669. doi:10.1643/ASIHCODONS2020
 - `sánchez-fenollosa2023a`: Sánchez-Fenollosa, S.; Verdú, F. J.; Cobos, A. (2023). The largest ornithopod (Dinosauria: Ornithischia) from the Upper Jurassic of Europe sheds light on the evolutionary history of basal ankylopollexians. *Zoological Journal of the Linnean Society* 199(4): 1013-1033. doi:10.1093/zoolinnean/zlad076
 - `royo-torres2017a`: Royo-Torres, R.; Fuentes, C.; Meijide, M.; Meijide Fuentes, F.; Meijide Fuentes, M. (2017). A new Brachiosauridae Sauropod dinosaur from the lower Cretaceous of Europe (Soria Province, Spain). *Cretaceous Research* 80: 38-55. doi:10.1016/j.cretres.2017.08.012
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.

@@ -109,7 +109,6 @@ BHU:
     country: IN
     city: Varanasi
 MBAL:
-  aliases: [WN]
   name: Museum of Bale
   location:
     country: HR
@@ -624,7 +623,13 @@ ZMB:
   location:
     country: DE
     city: Berlin
-  aliases: [MB, HMB, HMN, MfN, HMNB, MB.R., HM]
+  aliases: [HMB, HMN, MfN, HMNB]
+  collections: [MB, MB.R.]
+HM:
+  name: Hami Museum
+  location:
+    country: CN
+    city: Hami
 HMG:
   name: Hobetsu Museum
   location:
@@ -1001,7 +1006,7 @@ MHNC:
 MHND:
   name: Muséum d’Histoire Naturelle de Toulouse
   collections: [MHNDPal]
-MHNM:
+MHNM-CA:
   name: "Musée d'histoire naturelle de Miguasha"
   location:
     country: CA
@@ -1571,7 +1576,18 @@ DNMNH:
   location:
     country: ZA
     city: Pretoria
-  aliases: [TrM, TM, TMH, TSMHN]
+  aliases: [TM, TMP, TMSA]
+FIP:
+  name: Florida Institute of Paleontology
+  location:
+    country: US
+    city: Dania Beach
+TM-NL:
+  name: Teylers Museum
+  location:
+    country: NL
+    city: Haarlem
+  aliases: [TMH, TSMHN]
 TNM:
   name: Tongnan Museum
   location:
@@ -1815,6 +1831,12 @@ SMNS:
     country: DE
     city: Stuttgart
   aliases: [SMNS-P, MNS, SMNHS]
+
+MNS-ES:
+  name: Museo Numantino de Soria
+  location:
+    country: ES
+    city: Soria
 
 GPIH:
   aliases: [GPIM]

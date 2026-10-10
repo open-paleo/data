@@ -1,5 +1,23 @@
 # *Plateosauravus*
 
+## Which numbers are Haughton's co-types of Plateosauravus cullingworthi?
+
+*2026-10-09*
+
+**Conclusion.** The thirteen catalogue numbers his description of the species gives: SAM-PK-3341 to 3345, 3345a, 3347, 3348, 3350, 3351, 3356, 3602 and 3603. This settles the Open line of the 2026-10-04 entry and supersedes the 2026-08-01 entry's adoption of McPhee and colleagues' full run. Governs `type_specimen.specimen_id`, `material` and `notes` on [*Plateosauravus cullingworthi*](../../../genera/P/Plateosauravus.yml).
+
+**Evidence.**
+- haughton1924a, p. 416: "*Co-types.* Portions of two animals in South African Museum. Catalogue numbers as in description."
+- haughton1924a, pp. 408–414, the description: Cat. Nos. 3345, 3345a and 3356; 3348; 3342 and 3350 (the larger and smaller humeri); 3347 and 3351; Nos. 3602 and 3603; 3341; 3343 and 3344.
+- haughton1924a, p. 427: the heavier animal's bones are the type of *Euskelosaurus africanus*, "(S. Af. Mus. Cat. No. 3608.)".
+- mcphee2015b, p. 20: "the 'type' series (SAM-PK-3341–3356, 3602–3603, 3607–3609)".
+
+**Ruled out.**
+- *McPhee and colleagues' run as the co-types.* It adds 3346, 3349 and 3352–3355, which Haughton's description does not name, and 3607–3609, the heavier animal he placed in another species.
+- *Haughton's references to 3350 and 3603 under the Lady Grey bones as further co-types.* They cross-refer the Lady Grey material to the type bones already listed.
+
+**Open.** Nothing.
+
 ## What is the type material of Plateosauravus cullingworthi?
 
 *2026-10-04*

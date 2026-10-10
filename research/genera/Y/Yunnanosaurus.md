@@ -1,5 +1,20 @@
 # *Yunnanosaurus*
 
+## Was the *Yunnanosaurus huangi* holotype rehoused or renumbered?
+
+*2026-10-09*
+
+**Conclusion.** Renumbered, as far as the sources say. Barrett and colleagues (2007), the only work that describes the change, record that Young's number V20 "was later changed" to NGMJ V0116; they name no institution for V20 and no move. The record gives V20 without an institution prefix. This supersedes the 2026-10-04 entry's reading of the first change as a rehousing from the IVPP. Governs the first `former_ids` entry on [*Yunnanosaurus huangi*](../../../genera/Y/Yunnanosaurus.yml).
+
+**Evidence.**
+- barrett2007a, Comments: "Young (1942) designated this specimen with the catalogue number V20. This number was later changed to NGMJ V0116 (as indicated on the label within the display case), but the correct accession number is now NGMJ 004546."
+- zhang2024a: the specimen as "IVPP V 20/NJGM 004546", two numbers for one specimen with no statement of a change.
+
+**Ruled out.**
+- *Rehoused from IVPP to NGMJ.* The IVPP prefix comes from a later citation of the old number, and no work cited describes a transfer.
+
+**Open.** Which collection V20 belonged to when Young assigned it.
+
 ## What is the Yunnanosaurus huangi holotype's current number?
 
 *2026-10-04*
@@ -39,8 +54,8 @@
 ## References
 
 - `barrett2007a`: Barrett, P. M.; Upchurch, P.; Zhou, X. D.; Wang, X. L. (2007). The skull of Yunnanosaurus huangi Young, 1942 (Dinosauria: Prosauropoda) from the Lower Lufeng Formation (Lower Jurassic) of Yunnan, China. *Zoological Journal of the Linnean Society* 150(2): 319-341. doi:10.1111/j.1096-3642.2007.00290.x
-- `barrett2005b`: Barrett, P. M.; Upchurch, P.; Wang, X. L. (2005). Cranial osteology of Lufengosaurus huenei Young (Dinosauria: Prosauropoda) from the Lower Jurassic of Yunnan, People's Republic of China. *Journal of Vertebrate Paleontology* 25(4): 806-822. doi:10.1671/0272-4634(2005)025[0806:COOLHY]2.0.CO;2
 - `zhang2024a`: Zhang, Q. N.; Jia, L.; Wang, T.; Zhang, Y. G.; You, H. L. (2024). The largest sauropodomorph skull from the Lower Jurassic Lufeng Formation of China. *PeerJ* 12: e18629. doi:10.7717/peerj.18629
+- `barrett2005b`: Barrett, P. M.; Upchurch, P.; Wang, X. L. (2005). Cranial osteology of Lufengosaurus huenei Young (Dinosauria: Prosauropoda) from the Lower Jurassic of Yunnan, People's Republic of China. *Journal of Vertebrate Paleontology* 25(4): 806-822. doi:10.1671/0272-4634(2005)025[0806:COOLHY]2.0.CO;2
 - `young1940a`: Young, C. C. (1940). Preliminary notes on the Lufeng vertebrate fossils. *Bulletin of the Geological Society of China* 20(3-4): 235-239. doi:10.1111/j.1755-6724.1940.mp203-4003.x
 - `young1942b`: Young, C. C. (1942). Yunnanosaurus huangi Young (gen. et sp. nov.), a New Prosauropoda from the Red Beds at Lufeng, Yunnan. *Bulletin of the Geological Society of China* 22(1-2): 63-104. doi:10.1111/j.1755-6724.1942.mp221-2005.x
 - `simmons1965a`: Simmons, D. J.; Nash, E. G. (1965). The non-therapsid reptiles of the Lufeng Basin, Yunnan, China. Chicago Natural History Museum Press. doi:10.5962/bhl.title.5426
