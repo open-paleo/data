@@ -244,13 +244,20 @@ class SpecimenCategories(Enum):
     individual_variation = 'individual-variation'
 
 
-class IcznRulingTypes(Enum):
+class IcznCaseTypes(Enum):
     type_species = 'type-species'
     type_specimen = 'type-specimen'
     name_conservation = 'name-conservation'
     name_suppression = 'name-suppression'
     priority_reversal = 'priority-reversal'
     spelling_emendation = 'spelling-emendation'
+
+
+class IcznCaseStatuses(Enum):
+    opinion = 'opinion'
+    open = 'open'
+    closed = 'closed'
+    withdrawn = 'withdrawn'
 
 
 class Integument(Enum):
@@ -454,13 +461,20 @@ class Synonym(BaseModel):
     reason: Optional[str] = None
 
 
-class IcznRuling(BaseModel):
-    type: Optional[IcznRulingTypes] = None
+class IcznCase(BaseModel):
+    type: IcznCaseTypes
+    status: IcznCaseStatuses
+    case: Optional[str] = Field(None, description="The Commission's case number.")
     ruling: Optional[str] = Field(
-        None, description='Reference id of the published Opinion.'
+        None,
+        description='Reference id of the published Opinion; present only when status is opinion.',
     )
     petition: Optional[str] = Field(
         None, description='Reference id of the Case/application.'
+    )
+    notices: Optional[List[str]] = Field(
+        None,
+        description="Reference ids of the Commission's published notices about the case (receipt, closure).",
     )
     notes: Optional[str] = None
 
@@ -560,7 +574,7 @@ class Genus(BaseModel):
     species: List[Species] = Field(..., min_length=1)
     notable_specimens: Optional[List[NotableSpecimen]] = None
     references: Optional[List[Reference]] = None
-    iczn_rulings: Optional[List[IcznRuling]] = None
+    iczn_cases: Optional[List[IcznCase]] = None
     described: Optional[int] = Field(
         None, description='Year the genus was erected (derived from its authority).'
     )

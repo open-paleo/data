@@ -177,13 +177,14 @@ export type SpecimenCategories =
   | "trace-association"
   | "physiology"
   | "individual-variation";
-export type IcznRulingTypes =
+export type IcznCaseTypes =
   | "type-species"
   | "type-specimen"
   | "name-conservation"
   | "name-suppression"
   | "priority-reversal"
   | "spelling-emendation";
+export type IcznCaseStatuses = "opinion" | "open" | "closed" | "withdrawn";
 
 /**
  * Schema for the built Open Paleo dataset (dist/open-paleo.json and dist/open-paleo.yml). This describes the STABLE output contract, versioned by _metadata.schema_version. The source YAML under genera/, clades/, and references/ is an editing format and is NOT covered by this schema. Objects intentionally allow additional properties so that future additive (minor-version) fields validate against a pinned v1 schema. Controlled-vocabulary enums under $defs mirror schema.yml, which remains the authoritative source (a validator check keeps them in sync).
@@ -308,7 +309,7 @@ export interface Genus {
   species: [Species, ...Species[]];
   notable_specimens?: NotableSpecimen[];
   references?: Reference[];
-  iczn_rulings?: IcznRuling[];
+  iczn_cases?: IcznCase[];
   /**
    * Year the genus was erected (derived from its authority).
    */
@@ -529,16 +530,25 @@ export interface NotableSpecimen {
   references?: string[];
   [k: string]: unknown;
 }
-export interface IcznRuling {
-  type?: IcznRulingTypes;
+export interface IcznCase {
+  type: IcznCaseTypes;
+  status: IcznCaseStatuses;
   /**
-   * Reference id of the published Opinion.
+   * The Commission's case number.
+   */
+  case?: string;
+  /**
+   * Reference id of the published Opinion; present only when status is opinion.
    */
   ruling?: string;
   /**
    * Reference id of the Case/application.
    */
   petition?: string;
+  /**
+   * Reference ids of the Commission's published notices about the case (receipt, closure).
+   */
+  notices?: string[];
   notes?: string;
   [k: string]: unknown;
 }

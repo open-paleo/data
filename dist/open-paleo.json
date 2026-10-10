@@ -1,11 +1,11 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-10-10T07:12:51.844Z",
+    "built_at": "2026-10-10T07:15:28.538Z",
     "clade_count": 188,
     "genus_count": 1424,
     "license": "CC-BY-4.0",
-    "schema_version": "1.12.0",
+    "schema_version": "2.0.0",
     "version": "2026.10"
   },
   "tree": {
@@ -20726,9 +20726,10 @@
           "reason": "Informal name; never met ICZN requirements for formal publication and is treated as referable to Allosaurus. Per Olshevsky's Dinosaur Genera List."
         }
       ],
-      "iczn_rulings": [
+      "iczn_cases": [
         {
           "type": "type-specimen",
+          "status": "opinion",
           "ruling": "iczn2023a",
           "petition": "paul2010a",
           "notes": "Designated USNM 4734 as the neotype of Allosaurus fragilis, conserving usage (Opinion 2486, Case 3506); replaces the non-diagnostic original syntype YPM 1930."
@@ -25271,9 +25272,10 @@
       },
       "etymology": "From Greek 'anchi' meaning 'near' or 'close to' and 'sauros' meaning 'lizard', referring to its placement near the base of the sauropodomorph family tree.",
       "description": "Anchisaurus is a genus of basal sauropodomorph dinosaur. It lived during the Early Jurassic Period, and its fossils have been found in the red sandstone of the Upper Portland Formation, Northeastern United States, which was deposited from the Hettangian age into the Sinemurian age, between about 200 and 192 million years ago. Until recently it was classed as a member of Prosauropoda. The genus name Anchisaurus comes from the Greek αγχι (agkhi) anchi-; \"near, close\" + Greek σαυρος (sauros); \"lizard\". Anchisaurus was coined as a replacement name for \"Amphisaurus\", which was itself a replacement name for Hitchcock's \"Megadactylus\", both of which had already been used for other animals.",
-      "iczn_rulings": [
+      "iczn_cases": [
         {
           "type": "type-specimen",
+          "status": "opinion",
           "ruling": "iczn2015a",
           "petition": "galton2012a",
           "notes": "Opinion 2361 set aside all previous type fixations for Megadactylus polyzelus under the plenary power and designated YPM 1883, the almost complete skull and skeleton that is the holotype of Anchisaurus colurus Marsh, 1891, as the neotype, the original holotype being fragmentary and non-diagnostic. Anchisaurus was placed on the Official List of Generic Names and polyzelus on the Official List of Specific Names."
@@ -54793,9 +54795,10 @@
         }
       ],
       "erected_in": "huene1927c",
-      "iczn_rulings": [
+      "iczn_cases": [
         {
           "type": "type-species",
+          "status": "opinion",
           "ruling": "iczn1995a",
           "petition": "charig1993a",
           "notes": "Designated Cetiosauriscus stewarti as the type species under the plenary power, replacing the original type C. leedsi (poor material)."
@@ -55044,9 +55047,10 @@
         }
       ],
       "erected_in": "owen1841a",
-      "iczn_rulings": [
+      "iczn_cases": [
         {
           "type": "type-species",
+          "status": "opinion",
           "ruling": "iczn2014a",
           "petition": "upchurch2009a",
           "notes": "Designated Cetiosaurus oxoniensis as the type species (Opinion 2331), conserving usage of Cetiosaurus."
@@ -61262,9 +61266,10 @@
           "reason": "Welles (1984) erected Longosaurus as a replacement genus for \"Coelurus\" longicollis Cope, 1887 (a Ghost Ranch coelophysoid). Subsequent work treats the material as referable to Coelophysis, making Longosaurus a junior synonym."
         }
       ],
-      "iczn_rulings": [
+      "iczn_cases": [
         {
           "type": "type-specimen",
+          "status": "opinion",
           "ruling": "iczn1996a",
           "petition": "colbert1992a",
           "notes": "Opinion 1842 designated the articulated Whitaker Quarry skeleton AMNH 7224 as the neotype of Coelophysis bauri under the plenary powers, setting aside Cope's diagnostically inadequate syntypes and rejecting Rioarribasaurus colberti as a junior objective synonym."
@@ -109811,9 +109816,10 @@
         }
       ],
       "erected_in": "mantell1825a",
-      "iczn_rulings": [
+      "iczn_cases": [
         {
           "type": "type-species",
+          "status": "opinion",
           "ruling": "iczn2000a",
           "notes": "Designated Iguanodon bernissartensis as the type species (Opinion 1947), replacing the original type I. anglicus (nondiagnostic)."
         }
@@ -123741,6 +123747,18 @@
           "id": "4532805"
         }
       ],
+      "iczn_cases": [
+        {
+          "type": "type-specimen",
+          "status": "closed",
+          "case": "3795",
+          "notices": [
+            "iczn2019a",
+            "iczn2019b"
+          ],
+          "notes": "An application by Yun proposed conserving usage of Kryptops palaios by designating a lectotype. The Commission acknowledged it in April 2019 and closed the case in August 2019 without publishing it or issuing an Opinion.\n"
+        }
+      ],
       "species": [
         {
           "name": "Kryptops palaios",
@@ -123852,6 +123870,30 @@
           "pages": "546-610",
           "doi": "10.1111/zoj.12425",
           "notes": "Codes Kryptops on the maxilla only, referring it to Abelisauridae on its rugose surface and reduced antorbital fossa, and treats the pelvic girdle as tetanuran."
+        },
+        {
+          "id": "iczn2019a",
+          "authors": "International Commission on Zoological Nomenclature",
+          "year": 2019,
+          "title": "Notice of New Applications to the Commission (Cases 3788–3796)",
+          "journal": "Bulletin of Zoological Nomenclature",
+          "volume": "76",
+          "issue": "1",
+          "pages": "2",
+          "doi": "10.21805/bzn.v76.a002",
+          "notes": "Acknowledges receipt of Case 3795."
+        },
+        {
+          "id": "iczn2019b",
+          "authors": "International Commission on Zoological Nomenclature",
+          "year": 2019,
+          "title": "Closure of Cases (3773, 3795, 3811)",
+          "journal": "Bulletin of Zoological Nomenclature",
+          "volume": "76",
+          "issue": "1",
+          "pages": "165",
+          "doi": "10.21805/bzn.v76.a051",
+          "notes": "Closes Case 3795, recording that the case was not published."
         },
         {
           "id": "cau2025a",
@@ -137814,9 +137856,10 @@
           "reason": "Initially erected as a separate genus due to the lack of overlapping material; subsequently recognized as referable to Majungasaurus."
         }
       ],
-      "iczn_rulings": [
+      "iczn_cases": [
         {
           "type": "type-specimen",
+          "status": "opinion",
           "ruling": "iczn2011a",
           "petition": "carrano2009a",
           "notes": "Opinion 2269 set aside all previous type fixations for Megalosaurus crenatissimus under the plenary power and designated MNHN.MAJ 1, the right dentary Depéret described, as the neotype, the original material being non-diagnostic. Majungasaurus was placed on the Official List of Generic Names and crenatissimus on the Official List of Specific Names."
@@ -185472,9 +185515,10 @@
           "id": "47460199"
         }
       ],
-      "iczn_rulings": [
+      "iczn_cases": [
         {
           "type": "name-conservation",
+          "status": "opinion",
           "ruling": "iczn1988a",
           "petition": "brinkmann1986a",
           "notes": "Opinion 1483 used the plenary powers to suppress Rhabdodon Fleischmann, 1831, a snake genus and the senior homonym, for both priority and homonymy, and placed Rhabdodon Matheron, 1869 on the Official List of Generic Names in Zoology with Rhabdodon priscus as its type species by monotypy, the epithet corrected from the original priscum."
@@ -192400,9 +192444,10 @@
           "id": "52571895"
         }
       ],
-      "iczn_rulings": [
+      "iczn_cases": [
         {
           "type": "type-specimen",
+          "status": "opinion",
           "ruling": "iczn1994a",
           "petition": "charig1992a",
           "notes": "Opinion 1788 set aside the inappropriate lectotype (an indeterminate theropod knee joint) and designated NHMUK PV R 1111, the skull and skeleton, as the replacement lectotype of Scelidosaurus harrisonii."
@@ -205188,9 +205233,10 @@
         }
       ],
       "erected_in": "marsh1877a",
-      "iczn_rulings": [
+      "iczn_cases": [
         {
           "type": "type-species",
+          "status": "opinion",
           "ruling": "iczn2013a",
           "notes": "Designated Stegosaurus stenops as the type species (Opinion 2320), replacing the original type S. armatus (nondiagnostic)."
         }
