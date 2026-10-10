@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-10-10T00:30:24.959Z
+  built_at: 2026-10-10T00:41:48.992Z
   clade_count: 188
   genus_count: 1425
   license: CC-BY-4.0
@@ -13712,7 +13712,7 @@ genera:
               to_institution: Musée National Boubou Hama
               reason: rehoused
               source: carrano2012a
-              notes: The erecting paper treats UC OBA 1 as a temporary designation for material held on loan; Carrano (2012) gives the permanent number as "MNN TIG1 (= UC OBA 1)", MNN being the superseded code for MNBH.
+              notes: The erecting paper gives the holotype as "temporarily catalogued as UC OBA 1 at the University of Chicago"; Carrano and colleagues (2012) give it as "MNN TIG1 (= UC OBA 1)", MNN being the superseded code for MNBH.
         size:
           length_m:
             min: 9
@@ -18295,12 +18295,18 @@ genera:
             max: 1.5
         type_specimen:
           specimen_id:
-            - IVPP 88402
+            - IVPP RV 93001
           specimen_type: holotype
           institution: Institute of Vertebrate Paleontology and Paleoanthropology
           material: "Largely disarticulated skeleton: dentary, cervicals, dorsals, sacrum, caudal series, scapula, coracoid, humerus, radius, ulna, carpals, metacarpals, manual phalanges, ilium, ischium, femur."
           completeness: partial
-          notes: The erecting paper designates "the larger individual" of two sharing this number, the smaller being referred material. Later work often writes the two as IVPP 88402a and 88402b, but no such suffixes were assigned; many elements were never marked with the accession number at all.
+          former_ids:
+            - from_id: IVPP 88402
+              to_id: IVPP RV 93001
+              reason: renumbered
+              source: zhao2008a
+              notes: IVPP 88402 is the field number, which the erecting paper used for both individuals. Zhao and colleagues (2008) give the smaller individual as IVPP RV 93002 and the referred skeleton 88501 as IVPP RV 93003.
+          notes: The erecting paper designates "the larger individual" of two sharing field number 88402, the smaller being referred material. Later work often writes the two as IVPP 88402a and 88402b, but no such suffixes were assigned; many elements were never marked with the accession number at all.
         erected_in: russell1993b
         authors: Russell, D. A.; Dong, Z. M.
         described: 1993
@@ -18315,6 +18321,14 @@ genera:
         issue: "10"
         pages: 2107-2127
         doi: 10.1139/e93-183
+      - id: zhao2008a
+        authors: Zhao, Q.; Xu, X.; Jia, C.; Dong, Z.
+        year: 2008
+        title: Order Saurischia
+        book: The Chinese Fossil Reptiles and Their Kin (Li, J.; Wu, X.; Zhang, F., eds.)
+        publisher: Science Press, Beijing
+        pages: 279–335
+        notes: Gives the holotype as "IVPP RV 93001 (field No 88402)", the catalog numbers the IVPP applied to the material after its description.
     taxonomy:
       - Life
       - Animalia
@@ -49915,7 +49929,7 @@ genera:
           specimen_id:
             - MCCM-LH 6666
           specimen_type: holotype
-          institution: Coleccions de la Conselleria de Cultura de Morella
+          institution: Museo de las Ciencias de Castilla-La Mancha
           material: Nearly complete and articulated skeleton, nearly complete skull, forelimbs, pelvis, hindlimbs, and tail with integumentary impressions.
           completeness: complete
         size:
@@ -104144,7 +104158,7 @@ genera:
           specimen_id:
             - HUE-EC-01
           specimen_type: holotype
-          institution: Coleccions de la Conselleria de Cultura de Morella
+          institution: Museo de las Ciencias de Castilla-La Mancha
           material: Partial skeleton comprising cervical, dorsal, sacral and caudal vertebrae, haemal arches, ulna, ischia, pubis, femur, fibula, tibia, and ribs
           completeness: partial
         size:
@@ -130333,7 +130347,7 @@ genera:
           region_code: GB-VGL
         type_specimen:
           specimen_id:
-            - NHMUK PV RUP 24
+            - NHMUK PV RU P 24
           specimen_type: holotype
           institution: Natural History Museum
           material: Nearly complete but disarticulated skull, both mandibular rami, complete series of cervical vertebrae, both coracoids, proximal part of both humeri, incomplete right ischium
@@ -133094,7 +133108,7 @@ genera:
           specimen_id:
             - MCCM-LH 7777
           specimen_type: holotype
-          institution: Coleccions de la Conselleria de Cultura de Morella
+          institution: Museo de las Ciencias de Castilla-La Mancha
           material: Articulated anterior half of skeleton, including skull, complete cervical and almost complete dorsal vertebral series, ribs, pectoral girdle, sternum, right forelimb and nearly complete left forelimb.
           completeness: partial
         size:
@@ -143292,7 +143306,7 @@ genera:
           specimen_id:
             - HUE-EC-04
           specimen_type: holotype
-          institution: Coleccions de la Conselleria de Cultura de Morella
+          institution: Museo de las Ciencias de Castilla-La Mancha
           material: Partial skeleton with posterior cervical neural spine, 10 articulated-to-associated dorsal vertebrae, dorsal ribs, 6 fused sacral vertebrae, 11 anterior caudal vertebrae, 1 middle caudal vertebra, partial right ulna, fragmentary metacarpal, complete pelvic girdle, femur, right fibula
           completeness: partial
         authors: Mocho, P.; Escaso, F.; Marcos-Fernández, F.; Páramo, A.; Sanz, J. L.; Vidal, D.; Ortega, F.
@@ -147281,7 +147295,7 @@ genera:
           institution: Henan Geological Museum
           material: Nearly complete posterior cervical vertebra, nearly complete posterior dorsal vertebra, posterior cervical rib, anterior dorsal rib, proximal portion of right femur, complete right tibia.
           completeness: fragmentary
-          notes: The describing paper prints the catalog number as 41HIII-0002, which is the number of the Zhongyuansaurus luoyangensis holotype; the number inscribed on the specimen ends in 3.
+          notes: The describing paper prints the catalog number as 41HIII-0002, which is the number of the Zhongyuansaurus luoyangensis holotype printed two years earlier. A photograph Nair (2026) posted shows 41HIII-0003 inscribed on the material, an inscription absent from the describing paper's figure and so probably added after 2009.
         erected_in: lü2009a
         authors: Lü, J. C.; Xu, L.; Jia, S. H.; Zhang, X. L.; Zhang, J. M.; Yang, L. L.; You, H. L.; Ji, Q.
         described: 2009
@@ -147302,6 +147316,13 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
         notes: Source of the hip height estimate.
+      - id: nair2026a
+        authors: Nair, J.
+        year: 2026
+        title: Z. luoyangensis vs. R. giganteus holotype specimen numbers
+        publisher: Dinosaur Mailing Group
+        url: https://groups.google.com/g/dinosaurmailinggroup/c/jDmAAvNjIzw/m/Dm2O6a17AwAJ
+        notes: Posts a photograph of the material showing the inscribed number HGM 41HIII-0003, and judges that the correct number "probably is HGM 41HIII-0003, not "0002"".
       - id: mannion2019b
         authors: Mannion, P. D.; Upchurch, P.; Jin, X.; Zheng, W.
         year: 2019
@@ -161513,6 +161534,16 @@ genera:
         volume: "35"
         issue: "43"
         pages: 733-771
+      - id: lambe1902a
+        authors: Lambe, L. M.
+        year: 1902
+        title: New genera and species from the Belly River Series (mid-Cretaceous)
+        journal: Geological Survey of Canada Contributions to Canadian Palaeontology
+        volume: "3"
+        issue: "2"
+        pages: 25-81
+        doi: 10.5281/zenodo.3233762
+        notes: Names the species as Ornithomimus altus, on a partial right hind limb.
       - id: jones2026c
         authors: Jones, B.
         year: 2026
@@ -161780,7 +161811,7 @@ genera:
     description: Stygivenator, also known as the "Jordan theropod", is a dubious genus of tyrannosauroid dinosaur from the Hell Creek Formation; the type species is Stygivenator molnari. Originally considered a species of Aublysodon, another dubious genus, and then a juvenile of Tyrannosaurus, its specific identity cannot presently be determined because its poor preservation makes it impossible to rule out an identity as either a specimen of Tyrannosaurus or Nanotyrannus.
     dispute:
       summary: |
-        Molnar (1978) described LACM 28471 as a new theropod, Paul (1988) named it Aublysodon molnari, and Olshevsky, Ford and Yamamoto (1995) moved it to a genus of its own. Against that, Brochu (2003) regarded the specimen as an immature Tyrannosaurus rex, holding that the features distinguishing it are the same ones claimed for Nanotyrannus; Currie and colleagues (2003) reached the same conclusion, Carr and colleagues (2005) listed the genus among invalid taxa, and Carr (2020) treats the specimen as a two-year-old juvenile referable to T. rex. More recent work has reopened the question rather than closing it. Longrich and Saitta (2024) find the type differs from Nanotyrannus lancensis in the antorbital fossa, the maxilla and the tip of the mandible, raising the possibility of two distinct lineages while stating that further work and more fossils are needed. Paul (2025) gives the genus a systematic entry among the small gracile tyrannosaurs but calls its diagnosis provisional and the data insufficient. Zanno and Napoli (2025) instead regard it as a nomen dubium, impossible to assign to either Tyrannosaurus or Nanotyrannus. Placed at Eutyrannosauria incertae sedis, the least inclusive clade common to these readings.
+        Molnar (1978) described LACM 28471 as a new theropod, Paul (1988) named it Aublysodon molnaris, and Olshevsky, Ford and Yamamoto (1995) moved it to a genus of its own. Against that, Brochu (2003) regarded the specimen as an immature Tyrannosaurus rex, holding that the features distinguishing it are the same ones claimed for Nanotyrannus; Currie and colleagues (2003) reached the same conclusion, Carr and colleagues (2005) listed the genus among invalid taxa, and Carr (2020) treats the specimen as a two-year-old juvenile referable to T. rex. More recent work has reopened the question rather than closing it. Longrich and Saitta (2024) find the type differs from Nanotyrannus lancensis in the antorbital fossa, the maxilla and the tip of the mandible, raising the possibility of two distinct lineages while stating that further work and more fossils are needed. Paul (2025) gives the genus a systematic entry among the small gracile tyrannosaurs but calls its diagnosis provisional and the data insufficient. Zanno and Napoli (2025) instead regard it as a nomen dubium, impossible to assign to either Tyrannosaurus or Nanotyrannus. Placed at Eutyrannosauria incertae sedis, the least inclusive clade common to these readings.
       history:
         - date: 2026-10-09
           note: Status confirmed disputed; a juvenile Tyrannosaurus rex for Brochu (2003) and Carr (2020), a nomen dubium for Zanno and Napoli (2025), and valid for Paul (2025).
@@ -161818,11 +161849,11 @@ genera:
           institution: Natural History Museum of Los Angeles County
           material: Both maxillae with teeth, nasals, frontals and anteromedial fragments of the parietal, the anterior dentaries, a fragment of the surangular, and a partial endocranial mold taken from the frontals and parietals.
           completeness: fragmentary
-          notes: Collected in 1966 by Harley Garbani. Described by Molnar (1978) without a name, given the epithet molnari by Paul (1988) under Aublysodon, and made the type of this genus by Olshevsky, Ford and Yamamoto (1995).
+          notes: Collected in 1966 by Harley Garbani. Described by Molnar (1978) without a name, given the epithet molnaris by Paul (1988) under Aublysodon, and made the type of this genus by Olshevsky, Ford and Yamamoto (1995), who spell the epithet molnari.
         synonyms:
-          - name: Aublysodon molnari
+          - name: Aublysodon molnaris
             type: reassigned
-            reason: The original combination, published by Paul (1988) for the specimen Molnar had described in 1978. Olshevsky, Ford and Yamamoto (1995) moved the species to a genus of its own.
+            reason: The original combination, published by Paul (1988) for the specimen Molnar had described in 1978, with the epithet spelled molnaris. Olshevsky, Ford and Yamamoto (1995) moved the species to a genus of its own.
         erected_in: olshevsky1995a
         authors: Olshevsky, G.; Ford, T. L.; Yamamoto, S.
         described: 1995
@@ -161835,7 +161866,7 @@ genera:
         journal: Kyoryugaku Saizensen
         volume: "9"
         pages: 92-119
-        notes: Erects the genus for Aublysodon molnari.
+        notes: Erects the genus for Aublysodon molnaris, spelling the epithet molnari.
       - id: molnar1978a
         authors: Molnar, R. E.
         year: 1978
@@ -161852,7 +161883,7 @@ genera:
         title: Predatory Dinosaurs of the World
         journal: Simon & Schuster, New York
         pages: 1-464
-        notes: Names the species Aublysodon molnari for the specimen Molnar had described.
+        notes: Names the species Aublysodon molnaris for the specimen Molnar had described.
       - id: brochu2003a
         authors: Brochu, C. R.
         year: 2003
@@ -162438,7 +162469,7 @@ genera:
           institution: Earth Sciences Museum, Brigham Young University
           material: Scapulocoracoid.
           completeness: fragmentary
-          notes: Which scapulocoracoid bears the name is unsettled. The erecting paper gives BYU 5500, renumbered BYU 9025, and calls it a right scapulocoracoid; later work identifies BYU 9025 as the left and treats BYU 12962 as the holotype, while using BYU 9025 in its own figures and tables. The number follows the erecting paper.
+          notes: 'Which scapulocoracoid bears the name is unsettled. The erecting paper gives BYU 5500, renumbered BYU 9025, and calls it a right scapulocoracoid. Lovelace and colleagues (2008) contradict themselves: their text gives the holotype as BYU 12962, "a large diplodocid left scapulocoracoid", their Table 1 lists BYU 9025 as the left scapulocoracoid and holotype with BYU 12962 as its right mate, and their Fig. 10 shows BYU 9025 as a right scapulocoracoid. The number follows the erecting paper.'
         size:
           weight_kg:
             min: 7000
