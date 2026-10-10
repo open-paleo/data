@@ -39,7 +39,7 @@
 - `powell2003a`: Powell, J. E. (2003). Revision of South American Titanosaurid dinosaurs: palaeobiological, palaeobiogeographical and phylogenetic aspects. *Records of the Queen Victoria Museum* 111: 1-173.
 - `pittman2020a`: Pittman, M.; Xu, X. (2020). Pennaraptoran theropod dinosaurs. Past progress and new frontiers. *Bulletin of the American Museum of Natural History* 440(1): 1-355. doi:10.1206/0003-0090.440.1.1
 - `rauhut2003b`: Rauhut, O. W. M. (2003). The interrelationships and evolution of basal theropod dinosaurs. *Special Papers in Palaeontology* 69: 1-213.
-- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
 - `paul2024a`: Paul, G. S. (2024). The Princeton Field Guide to Dinosaurs (3rd ed.). Princeton University Press.
 - `garrido2010a`: Garrido, A. C. (2010). Estratigrafía del Grupo Neuquén, Cretácico Superior de la Cuenca Neuquina (Argentina): nueva propuesta de ordenamiento litoestratigráfico [Stratigraphy of the Neuquén Group, Upper Cretaceous of the Neuquén Basin (Argentina): a new proposal for lithostratigraphic arrangement]. *Revista del Museo Argentino de Ciencias Naturales, Nueva Serie* 12(2): 121-177. doi:10.22179/REVMACN.12.239
 - `leanza2004a`: Leanza, H. A.; Apesteguía, S.; Novas, F. E.; de la Fuente, M. S. (2004). Cretaceous terrestrial beds from the Neuquén Basin (Argentina) and their tetrapod assemblages. *Cretaceous Research* 25(1): 61-87.

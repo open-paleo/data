@@ -49,5 +49,5 @@
 - `dong1990b`: Dong, Z. (1990). Stegosaurs of Asia. In *Dinosaur Systematics: Perspectives and Approaches (Carpenter, K.; Currie, P. J., eds.)*, pp. 255-268. Cambridge University Press, Cambridge.
 - `maidment2006a`: Maidment, S. C. R.; Wei, G. (2006). A review of the Late Jurassic stegosaurs (Dinosauria, Stegosauria) from the People's Republic of China. *Geological Magazine* 143(5): 621-634. doi:10.1017/s0016756806002500
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.
-- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
-- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, 2nd edition*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027

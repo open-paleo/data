@@ -19,5 +19,5 @@
 
 - `vickers-rich1999a`: Vickers-Rich, P.; Rich, T. H.; McNamara, G. C.; Milner, A. (1999). Is Agrosaurus macgillivrayi Australia's oldest dinosaur?. *Records of the Western Australian Museum*: 191-200.
 - `galton2007a`: Galton, P. M. (2007). Notes on the remains of archosaurian reptiles, mostly basal sauropodomorph dinosaurs, from the 1834 fissure fill (Rhaetian, Upper Triassic) at Clifton in Bristol, southwest England. *Revue de Paléobiologie* 26(2): 505-591.
-- `galton1990a`: Galton, P. M. (1990). Basal Sauropodomorpha-Prosauropoda. In *The Dinosauria*, pp. 320-344. University of California Press, Berkeley.
+- `galton1990a`: Galton, P. M. (1990). Basal Sauropodomorpha-Prosauropoda. In *The Dinosauria (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 320-344. University of California Press, Berkeley.
 - `peyredefabrègues2015a`: Peyre de Fabrègues, C.; Allain, R.; Barriel, V. (2015). Root causes of phylogenetic incongruence observed within basal sauropodomorph interrelationships. *Zoological Journal of the Linnean Society* 175(3): 569-586. doi:10.1111/zoj.12290

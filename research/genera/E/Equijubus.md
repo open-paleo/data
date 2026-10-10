@@ -19,5 +19,5 @@
 
 - `you2003c`: You, H. L.; Luo, Z. X.; Shubin, N. H.; Witmer, L. M.; Tang, Z. L.; Tang, F. (2003). The earliest-known duck-billed dinosaur from deposits of late Early Cretaceous age in northwest China and hadrosaur evolution. *Cretaceous Research* 24(3): 347-355. doi:10.1016/s0195-6671(03)00048-x
 - `you2014a`: You, H. L.; Li, D. Q.; Dodson, P. (2014). Gongpoquansaurus mazongshanensis (Lü, 1997) comb. nov. (Ornithischia: Hadrosauroidea) from the Early Cretaceous of Gansu Province, northwestern China. *Hadrosaurs*: 73-76.
-- `norman2004a`: Norman, D. B. (2004). Basal Iguanodontia. In *The Dinosauria, 2nd edition*, pp. 413-437. University of California Press, Berkeley.
-- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, 2nd edition*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027
+- `norman2004a`: Norman, D. B. (2004). Basal Iguanodontia. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 413-437. University of California Press, Berkeley.
+- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027

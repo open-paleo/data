@@ -48,7 +48,7 @@
 - `molina-pérez2019a`: Molina-Pérez, R.; Larramendi, A. (2019). Dinosaur Facts and Figures: The Theropods and Other Dinosauriformes. Princeton University Press.
 - `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
 - `larson2013a`: Larson, D. W.; Currie, P. J. (2013). Multivariate Analyses of Small Theropod Dinosaur Teeth and Implications for Paleoecological Turnover through Time. *PLOS ONE* 8(1): e54329. doi:10.1371/journal.pone.0054329
-- `holtz2004a`: Holtz, T. R.; Molnar, R. E.; Currie, P. J. (2004). Basal Tetanurae. In *The Dinosauria, 2nd edition*, pp. 71-110. University of California Press, Berkeley.
+- `holtz2004a`: Holtz, T. R.; Molnar, R. E.; Currie, P. J. (2004). Basal Tetanurae. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 71-110. University of California Press, Berkeley.
 
 ## Other references
 

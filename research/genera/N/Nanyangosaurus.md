@@ -21,4 +21,4 @@
 - `wang2013c`: Wang, D. Y.; Cao, X. Q.; Zhao, H. Y.; Cao, M. Z.; Fu, G. H.; Yan, F. C.; Qiang, W. G.; Wang, Y. Q. (2013). Discovery of invertebrate zoolite in the Xiaguan Formation of Xiaguan-Gaoqiu Basin, Henan, China, and its importance for stratigraphic subdivision comparison. *Acta Geologica Sinica* 87(8): 1049-1058.
 - `xing2014a`: Xing, H.; Wang, D.; Han, F.; Sullivan, C.; Ma, Q.; He, Y.; Hone, D. W. E.; Yan, R.; Du, F.; Xu, X. (2014). A New Basal Hadrosauroid Dinosaur (Dinosauria: Ornithopoda) with Transitional Features from the Late Cretaceous of Henan Province, China. *PLoS ONE* 9(6): e98821. doi:10.1371/journal.pone.0098821
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.
-- `norman2004a`: Norman, D. B. (2004). Basal Iguanodontia. In *The Dinosauria, 2nd edition*, pp. 413-437. University of California Press, Berkeley.
+- `norman2004a`: Norman, D. B. (2004). Basal Iguanodontia. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 413-437. University of California Press, Berkeley.

@@ -34,5 +34,5 @@
 
 - `carballido2010a`: Carballido, J. L.; Garrido, A. C.; Canudo, J. I.; Salgado, L. (2010). Redescription of Rayososaurus agrioensis Bonaparte (Sauropoda, Diplodocoidea), a rebbachisaurid from the early Late Cretaceous of Neuquén. *Geobios* 43(5): 493-502. doi:10.1016/j.geobios.2010.01.004
 - `garrido2010a`: Garrido, A. C. (2010). Estratigrafía del Grupo Neuquén, Cretácico Superior de la Cuenca Neuquina (Argentina): nueva propuesta de ordenamiento litoestratigráfico [Stratigraphy of the Neuquén Group, Upper Cretaceous of the Neuquén Basin (Argentina): a new proposal for lithostratigraphic arrangement]. *Revista del Museo Argentino de Ciencias Naturales, Nueva Serie* 12(2): 121-177. doi:10.22179/REVMACN.12.239
-- `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, 2nd edition*, pp. 259-322. University of California Press, Berkeley.
+- `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 259-322. University of California Press, Berkeley.
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.

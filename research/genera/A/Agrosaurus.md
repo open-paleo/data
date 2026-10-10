@@ -42,4 +42,4 @@
 - `galton2007a`: Galton, P. M. (2007). Notes on the remains of archosaurian reptiles, mostly basal sauropodomorph dinosaurs, from the 1834 fissure fill (Rhaetian, Upper Triassic) at Clifton in Bristol, southwest England. *Revue de Paléobiologie* 26(2): 505-591.
 - `white1973a`: White, T. E. (1973). Catalogue of the genera of dinosaurs. *Annals of Carnegie Museum* 44: 117-155. doi:10.5962/p.243870
 - `olshevsky1991a`: Olshevsky, G. (1991). A revision of the parainfraclass Archosauria Cope, 1869, excluding the advanced Crocodylia. *Mesozoic Meanderings* 2: 1-196.
-- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.

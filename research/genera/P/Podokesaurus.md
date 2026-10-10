@@ -18,7 +18,7 @@
 ## References
 
 - `talbot1911a`: Talbot, M. (1911). Podokesaurus holyokensis, a new dinosaur from the Triassic of the Connecticut Valley. *American Journal of Science* s4-31(186): 469-479. doi:10.2475/ajs.s4-31.186.469
-- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, 2nd edition*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027
-- `tykoski2004a`: Tykoski, R. S.; Rowe, T. (2004). Ceratosauria. In *The Dinosauria, 2nd edition*, pp. 47-70. University of California Press, Berkeley.
+- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027
+- `tykoski2004a`: Tykoski, R. S.; Rowe, T. (2004). Ceratosauria. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 47-70. University of California Press, Berkeley.
 - `paul2024a`: Paul, G. S. (2024). The Princeton Field Guide to Dinosaurs (3rd ed.). Princeton University Press.
 - `white1973a`: White, T. E. (1973). Catalogue of the genera of dinosaurs. *Annals of Carnegie Museum* 44: 117-155. doi:10.5962/p.243870

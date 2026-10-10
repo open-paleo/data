@@ -55,6 +55,6 @@
 - `wiman1929a`: Wiman, C. (1929). Die Kreide-Dinosaurier aus Shantung [The Cretaceous dinosaurs from Shantung]. *Palaeontologia Sinica, Series C* 6(1): 1-67.
 - `wilson2009a`: Wilson, J. A.; Upchurch, P. (2009). Redescription and reassessment of the phylogenetic affinities of Euhelopus zdanskyi (Dinosauria: Sauropoda) from the Early Cretaceous of China. *Journal of Systematic Palaeontology* 7(2): 199-239. doi:10.1017/S1477201908002691
 - `xu2015b`: Xu, J.; Li, Z. (2015). Middle–Late Mesozoic sedimentary provenances of the Luxi and Jiaolai areas: implications for tectonic evolution of the North China Block. *Journal of Asian Earth Sciences* 111: 284-301. doi:10.1016/j.jseaes.2015.07.008
-- `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, 2nd edition*, pp. 259-322. University of California Press, Berkeley.
+- `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 259-322. University of California Press, Berkeley.
 - `poropat2013a`: Poropat, S. F.; Kear, B. P. (2013). Photographic Atlas and Three-Dimensional Reconstruction of the Holotype Skull of Euhelopus zdanskyi with Description of Additional Cranial Elements. *PLoS ONE* 8(11): e79932. doi:10.1371/journal.pone.0079932
 - `molina-pérez2020a`: Molina-Pérez, R.; Larramendi, A. (2020). Dinosaur Facts and Figures: The Sauropods and Other Sauropodomorphs. Princeton University Press.

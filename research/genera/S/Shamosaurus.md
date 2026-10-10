@@ -50,5 +50,5 @@
 - `tumanova1987a`: Tumanova, T. A. (1987). Pantsirnyye dinozavry Mongolii [The armored dinosaurs of Mongolia]. *Trudy Sovmestnaya Sovetsko-Mongol'skaya Paleontologicheskaya Ekspeditsiya* 32: 1-80.
 - `arbour2015a`: Arbour, V. M.; Currie, P. J. (2015). Systematics, phylogeny and palaeobiogeography of the ankylosaurid dinosaurs. *Journal of Systematic Palaeontology* 14(5): 385-444. doi:10.1080/14772019.2015.1059985
 - `tumanova2018a`: Tumanova, T. A.; Alifanov, V. R. (2018). First Record of Stegosaur (Ornithischia, Dinosauria) from the Aptian-Albian of Mongolia. *Paleontological Journal* 52(14): 1771-1779. doi:10.1134/s0031030118140186
-- `vickaryous2004a`: Vickaryous, M. K.; Maryańska, T.; Weishampel, D. B. (2004). Ankylosauria. In *The Dinosauria, 2nd edition*, pp. 363-392. University of California Press, Berkeley.
+- `vickaryous2004a`: Vickaryous, M. K.; Maryańska, T.; Weishampel, D. B. (2004). Ankylosauria. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 363-392. University of California Press, Berkeley.
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.

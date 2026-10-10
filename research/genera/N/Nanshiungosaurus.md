@@ -21,4 +21,4 @@
 - `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
 - `li2007a`: Li, D.; Peng, C.; You, H.; Lamanna, M. C.; Harris, J. D.; Lacovara, K. J.; Zhang, J. (2007). A large therizinosauroid (Dinosauria: Theropoda) from the Early Cretaceous of northwestern China. *Acta Geologica Sinica (English Edition)* 81(4): 539-549. doi:10.1111/j.1755-6724.2007.tb00977.x
 - `you2014a`: You, H. L.; Li, D. Q.; Dodson, P. (2014). Gongpoquansaurus mazongshanensis (Lü, 1997) comb. nov. (Ornithischia: Hadrosauroidea) from the Early Cretaceous of Gansu Province, northwestern China. *Hadrosaurs*: 73-76.
-- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.

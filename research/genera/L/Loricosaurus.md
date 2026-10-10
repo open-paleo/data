@@ -21,5 +21,5 @@
 - `huene1929a`: Huene, F. V. (1929). Los saurisquios y ornitisquios del Cretáceo Argentino [The Saurischians and Ornithischians of the Argentine Cretaceous]. *Anales del Museo de La Plata, series 2* 3: 1-196.
 - `leanza2004a`: Leanza, H. A.; Apesteguía, S.; Novas, F. E.; de la Fuente, M. S. (2004). Cretaceous terrestrial beds from the Neuquén Basin (Argentina) and their tetrapod assemblages. *Cretaceous Research* 25(1): 61-87.
 - `santucci2022a`: Santucci, R. M.; Filippi, L. S. (2022). Last titans: Titanosaurs from the Campanian–Maastrichtian age. In *South American Sauropodomorph Dinosaurs: Record, Diversity and Evolution*, pp. 341-391. Springer International Publishing. doi:10.1007/978-3-030-95959-3_10
-- `mcintosh1990a`: McIntosh, J. S. (1990). Sauropoda. In *The Dinosauria, 1st edition*, pp. 345-401. University of California Press, Berkeley.
-- `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, 2nd edition*, pp. 259-322. University of California Press, Berkeley.
+- `mcintosh1990a`: McIntosh, J. S. (1990). Sauropoda. In *The Dinosauria (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 345-401. University of California Press, Berkeley.
+- `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 259-322. University of California Press, Berkeley.

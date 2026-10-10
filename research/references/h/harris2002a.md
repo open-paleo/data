@@ -19,4 +19,4 @@
 
 - `harris2002a`: Harris, S. K.; Heckert, A. B.; Lucas, S. G.; Hunt, A. P. (2002). The oldest North American prosauropod, from the Upper Triassic Tecovas Formation of the Chinle Group (Adamanian: latest Carnian), west Texas. In *Upper Triassic Stratigraphy and Paleontology (Heckert, A. B.; Lucas, S. G., eds.)*, pp. 249-252.
 - `nesbitt2007a`: Nesbitt, S. J.; Irmis, R. B.; Parker, W. G. (2007). A critical re-evaluation of the Late Triassic dinosaur taxa of North America. *Journal of Systematic Palaeontology* 5(2): 209-243. doi:10.1017/S1477201907002040
-- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.

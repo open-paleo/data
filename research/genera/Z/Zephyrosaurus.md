@@ -21,5 +21,5 @@
 - `d'emic2019a`: D'Emic, M. D.; Foreman, B. Z.; Jud, N. A.; Britt, B. B.; Schmitz, M.; Crowley, J. L. (2019). Chronostratigraphic revision of the Cloverly Formation (Lower Cretaceous, Western Interior, USA). *Bulletin of the Peabody Museum of Natural History* 60(1): 3-40. doi:10.3374/014.060.0101
 - `zanno2023a`: Zanno, L. E.; Gates, T. A.; Avrahami, H. M.; Tucker, R. T.; Makovicky, P. J. (2023). An early-diverging iguanodontian (Dinosauria: Rhabdodontomorpha) from the Late Cretaceous of North America. *PLOS ONE* 18(6): e0286042. doi:10.1371/journal.pone.0286042
 - `farke2014a`: Farke, A. A.; Maxwell, W. D.; Cifelli, R. L.; Wedel, M. J. (2014). A Ceratopsian Dinosaur from the Lower Cretaceous of Western North America, and the Biogeography of Neoceratopsia. *PLoS ONE* 9(12): e112055. doi:10.1371/journal.pone.0112055
-- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.

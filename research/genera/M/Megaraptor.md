@@ -36,7 +36,7 @@
 
 - `novas1998a`: Novas, F. E. (1998). Megaraptor namunhuaiquii, gen. et sp. nov., a large-clawed, Late Cretaceous theropod from Patagonia. *Journal of Vertebrate Paleontology* 18(1): 4-9. doi:10.1080/02724634.1998.10011030
 - `calvo2004b`: Calvo, J. O.; Porfiri, J. D.; Veralli, C.; Novas, F. E.; Poblete, F. (2004). Phylogenetic status of Megaraptor namunhuaiquii Novas based on a new specimen from Neuquén, Patagonia, Argentina. *Ameghiniana* 41: 565-575.
-- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
 - `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
 - `paulina-carabajal2025a`: Paulina-Carabajal, A.; Porfiri, J. D. (2025). Novel information on the braincase of Megaraptor namunhuaiquii (Dinosauria: Theropoda) using X-ray tomography: pneumaticity, paleoneurology, and their paleobiological implications. *Ameghiniana* 63(1): 16–32. doi:10.5710/AMGH.18.10.2025.3657
 - `porfiri2014a`: Porfiri, J. D.; Novas, F. E.; Calvo, J. O.; Agnolín, F. L.; Ezcurra, M. D.; Cerda, I. A. (2014). Juvenile specimen of Megaraptor (Dinosauria, Theropoda) sheds light about tyrannosauroid radiation. *Cretaceous Research* 51: 35–55. doi:10.1016/j.cretres.2014.04.007

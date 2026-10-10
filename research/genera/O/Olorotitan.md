@@ -43,5 +43,5 @@
 - `vanitterbeeck2005a`: Van Itterbeeck, J.; Bolotsky, Y.; Bultynck, P.; Godefroit, P. (2005). Stratigraphy, sedimentology and palaeoecology of the dinosaur-bearing Kundur section (Zeya-Bureya Basin, Amur Region, Far Eastern Russia). *Geological Magazine* 142(6): 735-750. doi:10.1017/S0016756805001226
 - `alifanov2010a`: Alifanov, V. R.; Bolotsky, Y. (2010). Arkharavia heterocoelica gen. et sp. nov., a new sauropod dinosaur from the Upper Cretaceous of the Far East of Russia. *Paleontological Journal* 44(1): 84-91. doi:10.1134/S0031030110010119
 - `godefroit2003a`: Godefroit, P.; Bolotsky, Y.; Alifanov, V. (2003). A remarkable hollow-crested hadrosaur from Russia: an Asian origin for lambeosaurines. *Comptes Rendus Palevol* 2(2): 143-151. doi:10.1016/s1631-0683(03)00017-4
-- `horner2004a`: Horner, J. R.; Weishampel, D. B.; Forster, C. A. (2004). Hadrosauridae. In *The Dinosauria (2nd ed.)*, pp. 438-463. University of California Press, Berkeley.
+- `horner2004a`: Horner, J. R.; Weishampel, D. B.; Forster, C. A. (2004). Hadrosauridae. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 438-463. University of California Press, Berkeley.
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.

@@ -25,4 +25,4 @@
 - `smith1993a`: Smith, R. M. H.; Eriksson, P. G.; Botha, W. J. (1993). A review of the stratigraphy and sedimentary environments of the Karoo-aged basins of Southern Africa. *Journal of African Earth Sciences* 16: 143-169.
 - `haughton1924a`: Haughton, S. H. (1924). The fauna and stratigraphy of the Stormberg Series. *Annals of the South African Museum* 12: 323-497.
 - `bordy2015a`: Bordy, E. M.; Eriksson, P. (2015). Lithostratigraphy of the Elliot Formation (Karoo Supergroup), South Africa. *South African Journal of Geology* 118(3): 311-316. doi:10.2113/gssajg.118.3.311
-- `galton2004a`: Galton, P. M.; Upchurch, P. (2004). Prosauropoda. In *The Dinosauria, 2nd edition*, pp. 232-258. University of California Press, Berkeley.
+- `galton2004a`: Galton, P. M.; Upchurch, P. (2004). Prosauropoda. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 232-258. University of California Press, Berkeley.

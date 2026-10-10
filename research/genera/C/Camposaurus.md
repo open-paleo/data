@@ -23,5 +23,5 @@
 - `hunt1998a`: Hunt, A. P.; Lucas, S. G.; Heckert, A. B.; Sullivan, R. M.; Lockley, M. G. (1998). Late Triassic dinosaurs from the western United States. *Geobios* 31(4): 511-531. doi:10.1016/s0016-6995(98)80123-x
 - `nesbitt2007a`: Nesbitt, S. J.; Irmis, R. B.; Parker, W. G. (2007). A critical re-evaluation of the Late Triassic dinosaur taxa of North America. *Journal of Systematic Palaeontology* 5(2): 209-243. doi:10.1017/S1477201907002040
 - `long1995a`: Long, R. A.; Murry, P. A. (1995). Late Triassic (Carnian and Norian) Tetrapods from the Southwestern United States. *New Mexico Museum of Natural History and Science Bulletin* 4: 1-254.
-- `tykoski2004a`: Tykoski, R. S.; Rowe, T. (2004). Ceratosauria. In *The Dinosauria, 2nd edition*, pp. 47-70. University of California Press, Berkeley.
+- `tykoski2004a`: Tykoski, R. S.; Rowe, T. (2004). Ceratosauria. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 47-70. University of California Press, Berkeley.
 - `novas2021a`: Novas, F. E.; Agnolín, F. L.; Ezcurra, M. D.; Müller, R. T.; Martinelli, A. G.; Langer, M. C. (2021). Review of the fossil record of early dinosaurs from South America, and its phylogenetic implications. *Journal of South American Earth Sciences* 110: 103341. doi:10.1016/j.jsames.2021.103341

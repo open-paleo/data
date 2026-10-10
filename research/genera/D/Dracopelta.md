@@ -72,5 +72,5 @@
 - `russo2021a`: Russo, J.; Mateus, O. (2021). History of the discovery of the ankylosaur Dracopelta zbyszewskii (Upper Jurassic), with new data about the type specimen and its locality. *Comunicações Geológicas* 108(1): 27-34.
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.
 - `antunes2003a`: Antunes, M. T.; Mateus, O. (2003). Dinosaurs of Portugal. *Comptes Rendus Palevol* 2(1): 77-95. doi:10.1016/s1631-0683(03)00003-4
-- `vickaryous2004a`: Vickaryous, M. K.; Maryańska, T.; Weishampel, D. B. (2004). Ankylosauria. In *The Dinosauria, 2nd edition*, pp. 363-392. University of California Press, Berkeley.
+- `vickaryous2004a`: Vickaryous, M. K.; Maryańska, T.; Weishampel, D. B. (2004). Ankylosauria. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 363-392. University of California Press, Berkeley.
 - `mateus2009b`: Mateus, O.; Milàn, J. (2009). A diverse Upper Jurassic dinosaur ichnofauna from central-west Portugal. *Lethaia* 43: 245-257. doi:10.1111/j.1502-3931.2009.00190.x

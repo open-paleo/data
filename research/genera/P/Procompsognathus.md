@@ -37,4 +37,4 @@
 - `sues2025a`: Sues, H. D.; Schoch, R. R. (2025). Synopsis of the Triassic reptiles from Germany. *Fossil Record* 28(2): 411-483. doi:10.3897/fr.28.164405
 - `fraas1913a`: Fraas, E. (1913). Die neuesten Dinosaurierfunde in der schwäbischen Trias [The latest dinosaur finds in the Swabian Triassic]. *Naturwissenschaften* 1(45): 1097-1100. doi:10.1007/BF01493265
 - `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
-- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.

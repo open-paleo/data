@@ -19,5 +19,5 @@
 
 - `tidwell2001a`: Tidwell, V.; Carpenter, K.; Meyer, S. (2001). A new titanosauriform (Sauropoda) from the Poison Strip Member of the Cedar Mountain Formation (Lower Cretaceous), Utah. In *Mesozoic Vertebrate Life: New Research Inspired by the Paleontology of Philip J. Currie (Tanke, D. H.; Carpenter, K., eds.)*, pp. 139-165. Indiana University Press, Bloomington.
 - `kirkland2016a`: Kirkland, J. I.; Suarez, M.; Suarez, C.; Hunt-Foster, R. (2016). The Lower Cretaceous in east-central Utah — the Cedar Mountain Formation and its bounding strata. *Geology of the Intermountain West* 3: 101-228. doi:10.31711/giw.v3.pp101-228
-- `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, 2nd edition*, pp. 259-322. University of California Press, Berkeley.
+- `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 259-322. University of California Press, Berkeley.
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.

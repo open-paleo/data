@@ -38,4 +38,4 @@
 - `boulenger1881a`: Boulenger, G. A. (1881). Sur l'arc pelvien chez les dinosauriens de Bernissart [On the pelvic arch in the dinosaurs of Bernissart]. *Bulletins de l'Académie Royale de Belgique* 1(5): 1-11.
 - `norman2012a`: Norman, D. B. (2012). Iguanodontian taxa (Dinosauria: Ornithischia) from the Lower Cretaceous of England and Belgium. In *Bernissart Dinosaurs and Early Cretaceous Terrestrial Ecosystems (Godefroit, P., ed.)*, pp. 175-212. Indiana University Press, Bloomington.
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.
-- `norman2004a`: Norman, D. B. (2004). Basal Iguanodontia. In *The Dinosauria, 2nd edition*, pp. 413-437. University of California Press, Berkeley.
+- `norman2004a`: Norman, D. B. (2004). Basal Iguanodontia. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 413-437. University of California Press, Berkeley.

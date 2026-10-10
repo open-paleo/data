@@ -21,4 +21,4 @@
 
 - `ouyang1989a`: Ouyang, H. (1989). [A new sauropod from Dashanpu, Zigong Co., Sichuan Province (Abrosaurus dongpoensis gen. et sp. nov.)]. *Zigong Dinosaur Museum Newsletter* 2: 10-14.
 - `lucas2001b`: Lucas, S. G. (2001). Chinese Fossil Vertebrates. Columbia University Press, New York. doi:10.7312/luca08482
-- `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, 2nd edition*, pp. 259-322. University of California Press, Berkeley.
+- `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 259-322. University of California Press, Berkeley.

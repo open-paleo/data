@@ -20,4 +20,4 @@
 
 - `seeley1875b`: Seeley, H. G. (1875). On the femur of Cryptosaurus eumerus, Seeley, a Dinosaur from the Oxford Clay of Great Gransden. *Quarterly Journal of the Geological Society of London* 31(1-4): 149-151. doi:10.1144/gsl.jgs.1875.031.01-04.12
 - `galton1980a`: Galton, P. M. (1980). European Jurassic ornithopod dinosaurs of the families Hypsilophodontidae and Camptosauridae. *Neues Jahrbuch für Geologie und Paläontologie - Abhandlungen* 160(1): 73-95. doi:10.1127/njgpa/160/1980/73
-- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, 2nd edition*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027
+- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027

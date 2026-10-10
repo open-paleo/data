@@ -66,6 +66,6 @@
 
 - `viglietti2018a`: Viglietti, P. A.; Barrett, P. M.; Broderick, T. J.; Munyikwa, D.; MacNiven, R.; Broderick, L.; Chapelle, K.; Glynn, D.; Edwards, S.; Zondo, M.; Broderick, P.; Choiniere, J. N. (2018). Stratigraphy of the Vulcanodon type locality and its implications for regional correlations within the Karoo Supergroup. *Journal of African Earth Sciences* 137: 149-156. doi:10.1016/j.jafrearsci.2017.10.015
 - `cooper1984a`: Cooper, M. R. (1984). A reassessment of Vulcanodon karibaensis Raath (Dinosauria: Saurischia) and the origin of the Sauropoda. *Palaeontologia Africana* 25: 203-231.
-- `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, 2nd edition*, pp. 259-322. University of California Press, Berkeley.
+- `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 259-322. University of California Press, Berkeley.
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.
 - `molina-pérez2020a`: Molina-Pérez, R.; Larramendi, A. (2020). Dinosaur Facts and Figures: The Sauropods and Other Sauropodomorphs. Princeton University Press.

@@ -100,5 +100,5 @@
 - `moser2003a`: Moser, M. (2003). Plateosaurus engelhardti Meyer, 1837 (Dinosauria: Sauropodomorpha) aus dem Feuerletten (Mittelkeuper; Obertrias) von Bayern. *Zitteliana Reihe B* 24: 3-186.
 - `galton1985c`: Galton, P. M. (1985). The poposaurid thecodontian Teratosaurus suevicus v. Meyer, plus referred specimens mostly based on prosauropod dinosaurs, from the Middle Stubensandstein (Upper Triassic) of Nordwürttemberg. *Stuttgarter Beiträge zur Naturkunde, Serie B (Geologie und Paläontologie)* 116: 1-29.
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.
-- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
 - `molina-pérez2020a`: Molina-Pérez, R.; Larramendi, A. (2020). Dinosaur Facts and Figures: The Sauropods and Other Sauropodomorphs. Princeton University Press.

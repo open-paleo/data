@@ -18,5 +18,5 @@
 ## References
 
 - `gilmore1909a`: Gilmore, C. W. (1909). Osteology of the Jurassic reptile Camptosaurus, with a revision of the species of the genus, and description of two new species. *Proceedings of the U.S. National Museum* 36: 197-332.
-- `norman2004a`: Norman, D. B. (2004). Basal Iguanodontia. In *The Dinosauria, 2nd edition*, pp. 413-437. University of California Press, Berkeley.
+- `norman2004a`: Norman, D. B. (2004). Basal Iguanodontia. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 413-437. University of California Press, Berkeley.
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.

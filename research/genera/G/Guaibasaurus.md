@@ -38,5 +38,5 @@
 - `bonaparte1999b`: Bonaparte, J. F.; Ferigolo, J.; Ribeiro, A. M. (1999). A new early Late Triassic saurischian dinosaur from Rio Grande do Sol state, Brazil. *Proceedings of the Second Gondwanan Dinosaur Symposium, National Science Museum Monographs* 15: 89-109.
 - `novas2021a`: Novas, F. E.; Agnolín, F. L.; Ezcurra, M. D.; Müller, R. T.; Martinelli, A. G.; Langer, M. C. (2021). Review of the fossil record of early dinosaurs from South America, and its phylogenetic implications. *Journal of South American Earth Sciences* 110: 103341. doi:10.1016/j.jsames.2021.103341
 - `langer2018a`: Langer, M. C.; Ramezani, J.; Da Rosa, Á. A. S. (2018). U-Pb age constraints on dinosaur rise from south Brazil. *Gondwana Research* 57: 133-140. doi:10.1016/j.gr.2018.01.005
-- `langer2004a`: Langer, M. C. (2004). Basal Saurischia. In *The Dinosauria, second edition*, pp. 25-46. doi:10.1525/california/9780520242098.003.0004
+- `langer2004a`: Langer, M. C. (2004). Basal Saurischia. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 25-46. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0004
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.

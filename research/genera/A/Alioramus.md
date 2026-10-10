@@ -54,4 +54,4 @@
 - `brusatte2009b`: Brusatte, S. L.; Carr, T. D.; Erickson, G. M.; Bever, G. S.; Norell, M. A. (2009). A long-snouted, multihorned tyrannosaurid from the Late Cretaceous of Mongolia. *Proceedings of the National Academy of Sciences* 106(41): 17261-17266. doi:10.1073/pnas.0906911106
 - `barsbold1983a`: Barsbold, R. (1983). Khishchnye dinozavry mela Mongolii [Carnivorous dinosaurs from the Cretaceous of Mongolia]. *Trudy - Sovmestnaya Sovetsko-Mongol'skaya Paleontologicheskaya Ekspeditsiya* 19: 1-117.
 - `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
-- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.

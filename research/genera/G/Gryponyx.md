@@ -20,4 +20,4 @@
 
 - `broom1911a`: Broom, R. (1911). On the dinosaurs of the Stormberg, South Africa. *Annals of the South African Museum* 7(4): 291-308.
 - `haughton1924a`: Haughton, S. H. (1924). The fauna and stratigraphy of the Stormberg Series. *Annals of the South African Museum* 12: 323-497.
-- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, 2nd edition*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027
+- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027

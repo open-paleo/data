@@ -19,6 +19,6 @@
 
 - `bussert2009a`: Bussert, R.; Heinrich, W. D.; Aberhan, M. (2009). The Tendaguru Formation (Late Jurassic to Early Cretaceous, southern Tanzania): definition, palaeoenvironments, and sequence stratigraphy. *Fossil Record* 12(2): 141-174. doi:10.5194/fr-12-141-2009
 - `mannion2019a`: Mannion, P. D.; Upchurch, P.; Schwarz, D.; Wings, O. (2019). Taxonomic affinities of the putative titanosaurs from the Late Jurassic Tendaguru Formation of Tanzania: phylogenetic and biogeographic implications for eusauropod dinosaur evolution. *Zoological Journal of the Linnean Society* 185(3): 784-909. doi:10.1093/zoolinnean/zly068
-- `mcintosh1990a`: McIntosh, J. S. (1990). Sauropoda. In *The Dinosauria, 1st edition*, pp. 345-401. University of California Press, Berkeley.
-- `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, 2nd edition*, pp. 259-322. University of California Press, Berkeley.
+- `mcintosh1990a`: McIntosh, J. S. (1990). Sauropoda. In *The Dinosauria (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 345-401. University of California Press, Berkeley.
+- `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 259-322. University of California Press, Berkeley.
 - `carrano2012a`: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D. (2012). The phylogeny of Tetanurae (Dinosauria: Theropoda). *Journal of Systematic Palaeontology* 10(2): 211-300. doi:10.1080/14772019.2011.630927

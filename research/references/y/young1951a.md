@@ -18,4 +18,4 @@ Nothing.
 ## References
 
 - `moser2003a`: Moser, M. (2003). Plateosaurus engelhardti Meyer, 1837 (Dinosauria: Sauropodomorpha) aus dem Feuerletten (Mittelkeuper; Obertrias) von Bayern. *Zitteliana Reihe B* 24: 3-186.
-- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.

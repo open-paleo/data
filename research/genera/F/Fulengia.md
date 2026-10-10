@@ -18,4 +18,4 @@
 ## References
 
 - `sereno1991a`: Sereno, P. C. (1991). Lesothosaurus, 'fabrosaurids,' and the early evolution of Ornithischia. *Journal of Vertebrate Paleontology* 11(2): 168-197. doi:10.1080/02724634.1991.10011386
-- `galton2004a`: Galton, P. M.; Upchurch, P. (2004). Prosauropoda. In *The Dinosauria, 2nd edition*, pp. 232-258. University of California Press, Berkeley.
+- `galton2004a`: Galton, P. M.; Upchurch, P. (2004). Prosauropoda. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 232-258. University of California Press, Berkeley.

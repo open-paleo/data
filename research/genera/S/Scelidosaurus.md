@@ -18,5 +18,5 @@
 ## References
 
 - `norman2020a`: Norman, D. B. (2020). Scelidosaurus harrisonii from the Early Jurassic of Dorset, England: the dermal skeleton. *Zoological Journal of the Linnean Society* 190(1): 1–53. doi:10.1093/zoolinnean/zlz085
-- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.

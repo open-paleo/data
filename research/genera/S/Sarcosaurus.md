@@ -35,5 +35,5 @@
 
 - `ezcurra2020a`: Ezcurra, M. D.; Butler, R. J.; Maidment, S. C. R.; Sansom, I. J.; Meade, L. E.; Radley, J. D. (2020). A revision of the early neotheropod genus Sarcosaurus from the Early Jurassic (Hettangian-Sinemurian) of central England. *Zoological Journal of the Linnean Society* 191: 113-149. doi:10.1093/zoolinnean/zlaa054
 - `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
-- `tykoski2004a`: Tykoski, R. S.; Rowe, T. (2004). Ceratosauria. In *The Dinosauria, 2nd edition*, pp. 47-70. University of California Press, Berkeley.
+- `tykoski2004a`: Tykoski, R. S.; Rowe, T. (2004). Ceratosauria. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 47-70. University of California Press, Berkeley.
 - `andrews1921a`: Andrews, C. W. (1921). LVI.—On some remains of a Theropodous dinosaur from the Lower Lias of Barrow-on-Soa. *Annals and Magazine of Natural History* 8(47): 570-576. doi:10.1080/00222932108632620

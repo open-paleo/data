@@ -38,7 +38,7 @@
 ## References
 
 - `benson2010c`: Benson, R. B. J. (2010). A description of Megalosaurus bucklandii (Dinosauria: Theropoda) from the Bathonian of the UK and the relationships of Middle Jurassic theropods. *Zoological Journal of the Linnean Society* 158(4): 882-935. doi:10.1111/j.1096-3642.2009.00569.x
-- `holtz2004a`: Holtz, T. R.; Molnar, R. E.; Currie, P. J. (2004). Basal Tetanurae. In *The Dinosauria, 2nd edition*, pp. 71-110. University of California Press, Berkeley.
+- `holtz2004a`: Holtz, T. R.; Molnar, R. E.; Currie, P. J. (2004). Basal Tetanurae. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 71-110. University of California Press, Berkeley.
 - `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
 - `benson2008c`: Benson, R. B. J.; Barrett, P. M.; Powell, H. P.; Norman, D. B. (2008). The taxonomic status of Megalosaurus bucklandii (Dinosauria, Theropoda) from the Middle Jurassic of Oxfordshire, UK. *Palaeontology* 51(2): 419–424. doi:10.1111/j.1475-4983.2008.00751.x
 - `nicholls2025a`: Nicholls, E. L.; Newell, S. M.; Howlett, E. A. (2025). History of the Megalosaurus type material on public display. *Earth Sciences History* 44(1): 267–292. doi:10.17704/1944-6187-44.1.267

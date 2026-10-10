@@ -21,5 +21,5 @@
 
 - `bohlin1953a`: Bohlin, B. (1953). VI. Vertebrate Palaeontology 6. Fossil reptiles from Mongolia and Kansu. *Reports from the Scientific Expedition to the North-western Provinces of China under Leadership of Dr. Sven Hedin. The Sino-Swedish Expedition Publication* 37: 1-113.
 - `maryańska1975a`: Maryańska, T.; Osmólska, H. (1975). Protoceratopsidae (Dinosauria) of Asia. *Palaeontologia Polonica* 33: 133-182.
-- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, 2nd edition*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027
+- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027
 - `dong2002a`: Dong, Z. (2002). A new armored dinosaur (Ankylosauria) from Beipiao Basin, Liaoning Province, northeastern China. *Vertebrata PalAsiatica* 40(4): 276-285.

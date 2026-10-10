@@ -25,5 +25,5 @@
 - `rogers1915a`: Rogers, A. W. (1915). The occurrence of dinosaurs in Bushmanland. *Transactions of the Royal Society of South Africa* 5(1): 265-272. doi:10.1080/00359191509519724
 - `haughton1915a`: Haughton, S. H. (1915). On some dinosaur remains from Bushmanland. *Transactions of the Royal Society of South Africa* 5(1): 259-264. doi:10.1080/00359191509519723
 - `cooper1985a`: Cooper, M. R. (1985). A revision of the ornithischian dinosaur Kangnasaurus coetzeei Haughton, with a classification of the Ornithischia. *Annals of the South African Museum* 95: 281-317.
-- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, 2nd edition*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027
+- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.

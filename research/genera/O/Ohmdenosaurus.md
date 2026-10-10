@@ -19,4 +19,4 @@
 
 - `wild1978a`: Wild, R. (1978). Ein Sauropoden-Rest (Reptilia, Saurischia) aus dem Posidonienschiefer (Lias, Toarcium) von Holzmaden [A new sauropod (Reptilia, Saurischia) from the Posidonienschiefer (Lias, Toarcian) of Holzmaden]. *Stuttgarter Beiträge zur Naturkunde, Serie B (Geologie und Paläontologie)* 41: 1-15.
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.
-- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.

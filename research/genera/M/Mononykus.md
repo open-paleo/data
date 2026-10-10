@@ -17,4 +17,4 @@
 ## References
 
 - `perle1993a`: Perle, A.; Norell, M. A.; Chiappe, L. M.; Clark, J. M. (1993). Flightless bird from the Cretaceous of Mongolia. *Nature* 362: 623-626. doi:10.1038/362623a0
-- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.

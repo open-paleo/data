@@ -38,5 +38,5 @@
 - `wall1979a`: Wall, W. P.; Galton, P. M. (1979). Notes on pachycephalosaurid dinosaurs (Reptilia: Ornithischia) from North America, with comments on their status as ornithopods. *Canadian Journal of Earth Sciences* 16(6): 1176-1186. doi:10.1139/e79-104
 - `jasinski2011a`: Jasinski, S. E.; Sullivan, R. M. (2011). Re-evaluation of pachycephalosaurids from the Fruitland-Kirtland transition (Kirtlandian, late Campanian), San Juan Basin, New Mexico, with a description of a new species of Stegoceras and a reassessment of Texacephale langstoni. *New Mexico Museum of Natural History and Science Bulletin* 53: 202-215.
 - `ryan2005b`: Ryan, M. J.; Evans, D. C. (2005). Ornithischian dinosaurs. In *Dinosaur Provincial Park: A Spectacular Ancient Ecosystem Revealed*, pp. 312-348. Indiana University Press, Bloomington.
-- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.

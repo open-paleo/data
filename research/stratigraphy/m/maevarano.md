@@ -21,5 +21,5 @@
 
 - `rogers2000a`: Rogers, R. R.; Hartman, J. H.; Krause, D. W. (2000). Stratigraphic analysis of Upper Cretaceous rocks in the Mahajanga Basin, northwestern Madagascar: implications for ancient and modern faunas. *The Journal of Geology* 108(3): 275-301. doi:10.1086/314403
 - `krause2007a`: Krause, D. W.; Sampson, S. D.; Carrano, M. T.; O'Connor, P. M. (2007). Overview of the history of discovery, taxonomy, phylogeny, and biogeography of Majungasaurus crenatissimus (Theropoda: Abelisauridae) from the Late Cretaceous of Madagascar. *Journal of Vertebrate Paleontology* 27. doi:10.1671/0272-4634(2007)27[1:OOTHOD]2.0.CO;2
-- `tykoski2004a`: Tykoski, R. S.; Rowe, T. (2004). Ceratosauria. In *The Dinosauria, 2nd edition*, pp. 47-70. University of California Press, Berkeley.
+- `tykoski2004a`: Tykoski, R. S.; Rowe, T. (2004). Ceratosauria. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 47-70. University of California Press, Berkeley.
 - `huene1929a`: Huene, F. V. (1929). Los saurisquios y ornitisquios del Cretáceo Argentino [The Saurischians and Ornithischians of the Argentine Cretaceous]. *Anales del Museo de La Plata, series 2* 3: 1-196.

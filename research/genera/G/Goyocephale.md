@@ -52,5 +52,5 @@
 
 - `perle1982a`: Perle, A.; Maryańska, T.; Osmólska, H. (1982). Goyocephale lattimorei gen. et sp. n., a new flat-headed pachycephalosaur (Ornithischia, Dinosauria) from the Upper Cretaceous of Mongolia. *Acta Palaeontologica Polonica* 27(1-4): 115-127.
 - `sullivan2006a`: Sullivan, R. M. (2006). A taxonomic review of the Pachycephalosauridae (Dinosauria: Ornithischia). In *Late Cretaceous Vertebrates from the Western Interior*, pp. 348-365.
-- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, 2nd edition*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027
+- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.

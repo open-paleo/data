@@ -18,5 +18,5 @@
 ## References
 
 - `sues2016a`: Sues, H. D.; Averianov, A. (2016). Therizinosauroidea (Dinosauria: Theropoda) from the Upper Cretaceous of Uzbekistan. *Cretaceous Research* 59: 155-178. doi:10.1016/j.cretres.2015.11.003
-- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
 - `nessov1995a`: Nessov, L. A. (1995). Dinozavri severnoi Yevrazii: Novye dannye o sostave kompleksov, ekologii i paleobiogeografii [Dinosaurs of northern Eurasia: new data about assemblages, ecology, and paleobiogeography]. *Institute for Scientific Research on the Earth's Crust, St. Petersburg State University, St. Petersburg*: 1-156.

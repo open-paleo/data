@@ -51,5 +51,5 @@
 - `boyd2015b`: Boyd, C. A.; Pagnac, D. C. (2015). Insight on the anatomy, systematic relationships, and age of the Early Cretaceous ankylopollexian dinosaur Dakotadon lakotaensis. *PeerJ* 3: e1263. doi:10.7717/peerj.1263
 - `weishampel1989a`: Weishampel, D. B.; Bjork, P. R. (1989). The first indisputable remains of Iguanodon (Ornithischia: Ornithopoda) from North America: Iguanodon lakotaensis, sp. nov. *Journal of Vertebrate Paleontology* 9(1): 56-66. doi:10.1080/02724634.1989.10011738
 - `sohn1979a`: Sohn, I. G. (1979). Nonmarine ostracodes in the Lakota Formation (Lower Cretaceous) from South Dakota and Wyoming. *United States Geological Survey Professional Paper* 1069: 1-24.
-- `norman2004a`: Norman, D. B. (2004). Basal Iguanodontia. In *The Dinosauria, 2nd edition*, pp. 413-437. University of California Press, Berkeley.
+- `norman2004a`: Norman, D. B. (2004). Basal Iguanodontia. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 413-437. University of California Press, Berkeley.
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.

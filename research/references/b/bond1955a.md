@@ -19,4 +19,4 @@
 
 - `barrett2024a`: Barrett, P.; Chapelle, K.; Sciscio, L.; Broderick, T.; Zondo, M.; Munyikwa, D.; Choiniere, J. (2024). A new sauropodomorph dinosaur from the Late Triassic of the Mid-Zambezi Basin, Zimbabwe. *Acta Palaeontologica Polonica* 69. doi:10.4202/app.01100.2023
 - `barrett2026a`: Barrett, P. M.; Botha, J.; Sciscio, L.; Stuart, B. P.; Lovegrove, J.; Munyikwa, D.; Zondo, M.; Broderick, T. J.; Edwards, S. F.; Mbambo, E.; Chapelle, K. E. J.; Dollman, K. N.; Tolan, S.; Choiniere, J. N. (2026). A new sauropodomorph dinosaur from the Pebbly Arkose Formation (Upper Triassic: Norian) of Kariba, Zimbabwe. *Journal of Systematic Palaeontology* 24(2): 2678610. doi:10.1080/14772019.2026.2678610
-- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.

@@ -20,6 +20,6 @@
 ## References
 
 - `matsumoto1979a`: Matsumoto, T.; Obata, I. (1979). Evaluation of ammonites and other fossils from the Cretaceous of Japan for interregional correlation. *Kaseki (Fossils)* 29: 43-58.
-- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
 - `suzuki2004a`: Suzuki, D.; Weishampel, D. B.; Minoura, N. (2004). Nipponosaurus sachalinensis (Dinosauria; Ornithopoda): anatomy and systematic position within Hadrosauridae. *Journal of Vertebrate Paleontology* 24(1): 145-164. doi:10.1671/A1034-11
 - `takasaki2017a`: Takasaki, R.; Chiba, K.; Kobayashi, Y.; Currie, P. J.; Fiorillo, A. R. (2017). Reanalysis of the phylogenetic status of Nipponosaurus sachalinensis (Ornithopoda: Dinosauria) from the Late Cretaceous of Southern Sakhalin. *Historical Biology* 30(5): 1-18. doi:10.1080/08912963.2017.1317766

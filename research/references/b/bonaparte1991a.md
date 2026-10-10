@@ -17,5 +17,5 @@ Nothing.
 
 ## References
 
-- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
 - `carrano2008a`: Carrano, M. T.; Sampson, S. D. (2008). The Phylogeny of Ceratosauria (Dinosauria: Theropoda). *Journal of Systematic Palaeontology* 6(2): 183-236. doi:10.1017/S1477201907002246

@@ -19,4 +19,4 @@
 
 - `lambert2001a`: Lambert, O.; Godefroit, P.; Li, H.; Shang, C. Y.; Dong, Z. M. (2001). A new species of Protoceratops (Dinosauria, Neoceratopsia) from the Late Cretaceous of Inner Mongolia (P. R. China). *Bulletin de l'Institut Royal des Sciences Naturelles de Belgique, Sciences de la Terre* 71(supplement): 5-28.
 - `longrich2010a`: Longrich, N. R.; Currie, P. J.; Zhi-Ming, D. (2010). A new oviraptorid (Dinosauria: Theropoda) from the Upper Cretaceous of Bayan Mandahu, Inner Mongolia. *Palaeontology* 53(5): 945-960. doi:10.1111/j.1475-4983.2010.00968.x
-- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.

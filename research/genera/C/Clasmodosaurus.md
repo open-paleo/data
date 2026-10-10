@@ -1,5 +1,24 @@
 # *Clasmodosaurus*
 
+## What did Huene finally make of the teeth, and which Powell paper does the record follow?
+
+*2026-10-10*
+
+**Conclusion.** Huene's final judgment was coelurosaurian. He prints "telurosaurio", which we read as a slip for "celurosaurio", not as a teleosaur. The Powell content in the record is Powell (2003), the published revision; his 1986 thesis has not been read. Huene places the locality on the eastern slope of the tributary; Powell (2003) prints "Western slope" while citing Huene. Governs the description, the location notes and the `powell2003a` reference on [*Clasmodosaurus spatula*](../../../genera/C/Clasmodosaurus.yml).
+
+**Evidence.**
+- huene1929a, p. 146: "Los dientes de Clasmodosaurus spatula pertenecen, por lo anteriormente expuesto, con mucha probabilidad a un telurosaurio, que no es posible definir con mayor exactitud" ("the teeth of Clasmodosaurus spatula belong, from the above, very probably to a telurosaurio that cannot be defined more exactly", translated); the same page spells "celurosaurio" for *Loncosaurus*.
+- huene1929a, p. 141: the teeth come closest to those of *Labrosaurus (?) stechowi*, in a distant relationship to the coelurosaurs.
+- huene1929a, p. 17: the fossils come from "la vertiente oriental de un afluente austral del río Seluén".
+- powell2003a, p. 17: "Western slope of the southern tributary of the Río Sehuen, 50 km east of Lago Viedma and 30 km south of Mata Amarilla (Huene 1929a)"; the teeth were "later considered both sauropod (Huene 1929a, pp. 17, 140) and coelurosaurid (Huene 1929a, p. 141)".
+- powell2003a: "Dinosaur dental morphology by itself can't be considered as a reliable diagnostic character."
+
+**Ruled out.**
+- *A teleosaur.* Nothing in Huene's discussion compares the teeth with crocodyliforms; the reading rests on the misprinted word alone.
+- *The western slope.* Powell cites Huene for it, and Huene prints the eastern.
+
+**Open.** Powell (1986), the thesis behind the 2003 revision.
+
 ## Where was Clasmodosaurus spatula named, and was it described?
 
 *2026-10-04*
@@ -17,5 +36,6 @@
 
 ## References
 
-- `ameghino1899b`: Ameghino, F. (1899). Sinopsis geológico-paleontológica. Suplemento (adiciones y correcciones) [Geological-paleontological synopsis. Supplement (additions and corrections)].
+- `powell2003a`: Powell, J. E. (2003). Revision of South American Titanosaurid dinosaurs: palaeobiological, palaeobiogeographical and phylogenetic aspects. *Records of the Queen Victoria Museum* 111: 1-173.
 - `huene1929a`: Huene, F. V. (1929). Los saurisquios y ornitisquios del Cretáceo Argentino [The Saurischians and Ornithischians of the Argentine Cretaceous]. *Anales del Museo de La Plata, series 2* 3: 1-196.
+- `ameghino1899b`: Ameghino, F. (1899). Sinopsis geológico-paleontológica. Suplemento (adiciones y correcciones) [Geological-paleontological synopsis. Supplement (additions and corrections)].

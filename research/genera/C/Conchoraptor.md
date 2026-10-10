@@ -33,6 +33,6 @@
 ## References
 
 - `funston2018a`: Funston, G. F.; Mendonca, S. E.; Currie, P. J.; Barsbold, R. (2018). Oviraptorosaur anatomy, diversity and ecology in the Nemegt Basin. *Palaeogeography, Palaeoclimatology, Palaeoecology* 494: 101-120. doi:10.1016/j.palaeo.2017.10.023
-- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
 - `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
 - `molina-pérez2019a`: Molina-Pérez, R.; Larramendi, A. (2019). Dinosaur Facts and Figures: The Theropods and Other Dinosauriformes. Princeton University Press.

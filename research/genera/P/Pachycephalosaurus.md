@@ -21,4 +21,4 @@
 
 - `brown1943a`: Brown, B.; Schlaikjer, E. M. (1943). A study of the troödont dinosaurs with the description of a new genus and four new species. *Bulletin of the American Museum of Natural History* 82(5): 115-150.
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.
-- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.

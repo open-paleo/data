@@ -19,4 +19,4 @@
 
 - `osmólska1987a`: Osmólska, H. (1987). Borogovia gracilicrus gen. et sp. n., a new troodontid dinosaur from the Late Cretaceous of Mongolia. *Acta Palaeontologica Polonica* 32(1-2): 133-150.
 - `cau2021a`: Cau, A.; Madzia, D. (2021). The phylogenetic affinities and morphological peculiarities of the bird-like dinosaur Borogovia gracilicrus from the Upper Cretaceous of Mongolia. *PeerJ* 9: e12640. doi:10.7717/peerj.12640
-- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.

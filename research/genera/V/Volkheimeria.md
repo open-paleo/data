@@ -18,5 +18,5 @@
 ## References
 
 - `pol2022a`: Pol, D.; Gomez, K.; Holwerda, F. M.; Rauhut, O. W. M.; Carballido, J. L. (2022). Sauropods from the Early Jurassic of South America and the Radiation of Eusauropoda. In *South American Sauropodomorph Dinosaurs: Record, Diversity and Evolution*, pp. 131-163. Springer International Publishing. doi:10.1007/978-3-030-95959-3_4
-- `mcintosh1990a`: McIntosh, J. S. (1990). Sauropoda. In *The Dinosauria, 1st edition*, pp. 345-401. University of California Press, Berkeley.
-- `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, 2nd edition*, pp. 259-322. University of California Press, Berkeley.
+- `mcintosh1990a`: McIntosh, J. S. (1990). Sauropoda. In *The Dinosauria (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 345-401. University of California Press, Berkeley.
+- `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 259-322. University of California Press, Berkeley.

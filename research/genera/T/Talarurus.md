@@ -20,4 +20,4 @@
 
 - `park2019a`: Park, J. Y.; Lee, Y. N.; Currie, P. J.; Kobayashi, Y.; Koppelhus, E.; Barsbold, R.; Mateus, O.; Lee, S.; Kim, S. H. (2019). Additional skulls of Talarurus plicatospineus (Dinosauria: Ankylosauridae) and implications for paleobiogeography and paleoecology of armored dinosaurs. *Cretaceous Research* 108: 104340. doi:10.1016/j.cretres.2019.104340
 - `benton2000c`: Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N. (2000). Mongolian place names and stratigraphic terms. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds.)*, pp. xxii-xxviii. Cambridge University Press, Cambridge.
-- `vickaryous2004a`: Vickaryous, M. K.; Maryańska, T.; Weishampel, D. B. (2004). Ankylosauria. In *The Dinosauria, 2nd edition*, pp. 363-392. University of California Press, Berkeley.
+- `vickaryous2004a`: Vickaryous, M. K.; Maryańska, T.; Weishampel, D. B. (2004). Ankylosauria. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 363-392. University of California Press, Berkeley.

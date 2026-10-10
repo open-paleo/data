@@ -37,5 +37,5 @@
 - `woodruff2023a`: Woodruff, D. C.; Schott, R. K.; Evans, D. C. (2023). Two new species of small-bodied pachycephalosaurine (Dinosauria, Marginocephalia) from the uppermost Cretaceous of North America suggest hidden diversity in well-sampled formations. *Papers in Palaeontology* 9(6): e1535. doi:10.1002/spp2.1535
 - `williamson2003a`: Williamson, T. E.; Carr, T. D. (2003). A new genus of derived pachycephalosaurian from western North America. *Journal of Vertebrate Paleontology* 22(4): 779-801. doi:10.1671/0272-4634(2002)022[0779:angodp]2.0.co;2
 - `longrich2010b`: Longrich, N. R.; Sankey, J.; Tanke, D. (2010). Texacephale langstoni, a new genus of pachycephalosaurid (Dinosauria: Ornithischia) from the upper Campanian Aguja Formation, southern Texas, USA. *Cretaceous Research* 31(2): 274-284. doi:10.1016/j.cretres.2009.12.002
-- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.

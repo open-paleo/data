@@ -34,5 +34,5 @@
 
 - `upchurch2003a`: Upchurch, P.; Martin, J. (2003). The anatomy and taxonomy of Cetiosaurus (Saurischia, Sauropoda) from the Middle Jurassic of England. *Journal of Vertebrate Paleontology* 23(1): 208-231. doi:10.1671/0272-4634(2003)23[208:TAATOC]2.0.CO;2
 - `phillips1871a`: Phillips, J. (1871). Geology of Oxford and the Valley of the Thames. Clarendon Press.
-- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.

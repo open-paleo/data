@@ -20,5 +20,5 @@
 
 - `kirkland2016a`: Kirkland, J. I.; Suarez, M.; Suarez, C.; Hunt-Foster, R. (2016). The Lower Cretaceous in east-central Utah — the Cedar Mountain Formation and its bounding strata. *Geology of the Intermountain West* 3: 101-228. doi:10.31711/giw.v3.pp101-228
 - `joeckel2023a`: Joeckel, R. M.; Suarez, C. A.; McLean, N. M.; Möller, A.; Ludvigson, G. A.; Suarez, M. B.; Kirkland, J. I.; Andrew, J.; Kiessling, S.; Hatzell, G. A. (2023). Berriasian–Valanginian geochronology and carbon-isotope stratigraphy of the Yellow Cat Member, Cedar Mountain Formation, eastern Utah, USA. *Geosciences* 13(2): 32. doi:10.3390/geosciences13020032
-- `vickaryous2004a`: Vickaryous, M. K.; Maryańska, T.; Weishampel, D. B. (2004). Ankylosauria. In *The Dinosauria, 2nd edition*, pp. 363-392. University of California Press, Berkeley.
+- `vickaryous2004a`: Vickaryous, M. K.; Maryańska, T.; Weishampel, D. B. (2004). Ankylosauria. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 363-392. University of California Press, Berkeley.
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.

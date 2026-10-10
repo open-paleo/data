@@ -38,4 +38,4 @@
 - `sampson1997a`: Sampson, S. D.; Ryan, M. J.; Tanke, D. H. (1997). Craniofacial ontogeny in centrosaurine dinosaurs (Ornithischia: Ceratopsidae): taphonomic and behavioral implications. *Zoological Journal of the Linnean Society* 121: 293-337. doi:10.1111/j.1096-3642.1997.tb00340.x
 - `ryan2006a`: Ryan, M. J.; Russell, A. P. (2006). The status of the problematic taxon Monoclonius (Ornithischia: Ceratopsidae) and the recognition of adult-sized dinosaur taxa. *Geological Society of America Abstracts with Programs* 38(4): 62.
 - `ishikawa2023a`: Ishikawa, H.; Tsuihiji, T.; Manabe, M. (2023). Furcatoceratops elucidans, a new centrosaurine (Ornithischia: Ceratopsidae) from the upper Campanian Judith River Formation, Montana, USA. *Cretaceous Research* 151. doi:10.1016/j.cretres.2023.105660
-- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.

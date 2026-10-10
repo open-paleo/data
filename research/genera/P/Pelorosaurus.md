@@ -53,6 +53,6 @@
 - `norman2013a`: Norman, D. B. (2013). On the taxonomy and diversity of Wealden iguanodontian dinosaurs (Ornithischia: Ornithopoda). *Revue de Paléobiologie, Genève* 32(2): 385-404.
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.
 - `norman2010a`: Norman, D. B. (2010). A taxonomy of iguanodontians (Dinosauria: Ornithopoda) from the lower Wealden Group (Cretaceous: Valanginian) of southern England. *Zootaxa* 2489(1): 47-66. doi:10.11646/zootaxa.2489.1.3
-- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
 - `taylor2007a`: Taylor, M. P.; Naish, D. (2007). An unusual new neosauropod dinosaur from the Lower Cretaceous Hastings Beds Group of East Sussex, England. *Palaeontology* 50(6): 1547-1564. doi:10.1111/j.1475-4983.2007.00728.x
 - `molina-pérez2020a`: Molina-Pérez, R.; Larramendi, A. (2020). Dinosaur Facts and Figures: The Sauropods and Other Sauropodomorphs. Princeton University Press.

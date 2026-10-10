@@ -20,4 +20,4 @@
 
 - `head1998a`: Head, J. J. (1998). A new species of basal hadrosaurid (Dinosauria, Ornithischia) from the Cenomanian of Texas. *Journal of Vertebrate Paleontology* 18(4): 718-738. doi:10.1080/02724634.1998.10011101
 - `tykoski2023a`: Tykoski, R. S.; Contreras, D. L.; Noto, C. (2023). The first small-bodied ornithopod dinosaur from the Lewisville Formation (middle Cenomanian) of Texas. *Journal of Vertebrate Paleontology* 43(2). doi:10.1080/02724634.2023.2257238
-- `norman2004a`: Norman, D. B. (2004). Basal Iguanodontia. In *The Dinosauria, 2nd edition*, pp. 413-437. University of California Press, Berkeley.
+- `norman2004a`: Norman, D. B. (2004). Basal Iguanodontia. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 413-437. University of California Press, Berkeley.

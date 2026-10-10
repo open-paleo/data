@@ -55,4 +55,4 @@
 - `hopson2005a`: Hopson, P. M. (2005). A stratigraphical framework for the Upper Cretaceous Chalk of England and Scotland, with statements on the Chalk of Northern Ireland and the UK Offshore Sector. *British Geological Survey Research Report* RR/05/01.
 - `seeley1879a`: Seeley, H. G. (1879). On the Dinosauria of the Cambridge Greensand. *Quarterly Journal of the Geological Society of London* 35(1-4): 591-636. doi:10.1144/gsl.jgs.1879.035.01-04.42
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.
-- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.

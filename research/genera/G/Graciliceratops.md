@@ -21,6 +21,6 @@
 
 - `maryańska1977a`: Maryańska, T. (1977). Ankylosauridae (Dinosauria) from Mongolia. *Palaeontologia Polonica* 37: 85-151.
 - `jerzykiewicz1991a`: Jerzykiewicz, T.; Russell, D. A. (1991). Late Mesozoic stratigraphy and vertebrates of the Gobi Basin. *Cretaceous Research* 12(4): 345-377. doi:10.1016/0195-6671(91)90015-5
-- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, 2nd edition*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027
+- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027
 - `benton2000c`: Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N. (2000). Mongolian place names and stratigraphic terms. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds.)*, pp. xxii-xxviii. Cambridge University Press, Cambridge.
 - `currie1993d`: Currie, P. J.; Eberth, D. A. (1993). Palaeontology, sedimentology and palaeoecology of the Iren Dabasu Formation (Upper Cretaceous), Inner Mongolia, People's Republic of China. *Cretaceous Research* 14(2): 127-144. doi:10.1006/cres.1993.1011

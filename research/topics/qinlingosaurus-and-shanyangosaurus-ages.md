@@ -22,9 +22,9 @@
 ## References
 
 - `xue1996a`: Xue, X.; Zhang, Y.; Bi, Y.; Yue, L.; Chen, D. (1996). The development and environmental changes of the intermontane basins in the eastern part of Qinling Mountains. Geological Publishing House, Beijing.
-- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, 2nd edition*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027
-- `holtz2004a`: Holtz, T. R.; Molnar, R. E.; Currie, P. J. (2004). Basal Tetanurae. In *The Dinosauria, 2nd edition*, pp. 71-110. University of California Press, Berkeley.
+- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027
+- `holtz2004a`: Holtz, T. R.; Molnar, R. E.; Currie, P. J. (2004). Basal Tetanurae. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 71-110. University of California Press, Berkeley.
 - `lucas1998a`: Lucas, S. G.; Estep, J. W. (1998). Vertebrate biostratigraphy and biochronology of the Cretaceous of China. In *Lower and Middle Cretaceous Terrestrial Ecosystems (Lucas, S. G.; Kirkland, J. I.; Estep, J. W., eds.)*, pp. 1-20.
-- `horner2004a`: Horner, J. R.; Weishampel, D. B.; Forster, C. A. (2004). Hadrosauridae. In *The Dinosauria (2nd ed.)*, pp. 438-463. University of California Press, Berkeley.
+- `horner2004a`: Horner, J. R.; Weishampel, D. B.; Forster, C. A. (2004). Hadrosauridae. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 438-463. University of California Press, Berkeley.
 - `zhao2008a`: Zhao, Q.; Xu, X.; Jia, C.; Dong, Z. (2008). Order Saurischia. In *The Chinese Fossil Reptiles and Their Kin (Li, J.; Wu, X.; Zhang, F., eds.)*, pp. 279–335. Science Press, Beijing.
 - `zhang2009b`: Zhang, S. (ed.) (2009). Geological Formation Names of China (1866–2000). Higher Education Press, Beijing; Springer, Berlin. doi:10.1007/978-3-540-93824-8

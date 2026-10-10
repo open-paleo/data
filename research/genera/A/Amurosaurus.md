@@ -21,4 +21,4 @@
 
 - `xing2022a`: Xing, H.; Gu, W.; Hai, S.; Yu, T.; Han, D.; Zhang, Y.; Zhang, S. (2022). Osteological and taxonomic reassessments of Sahaliyania elunchunorum (Dinosauria, Hadrosauridae) from the Upper Cretaceous Yuliangzi Formation, northeast China. *Journal of Vertebrate Paleontology* 41(6): e2085111. doi:10.1080/02724634.2021.2085111
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.
-- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.

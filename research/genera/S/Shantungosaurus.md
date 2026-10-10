@@ -20,5 +20,5 @@
 
 - `hu1973a`: Hu, C. C. (1973). [A new hadrosaur from the Cretaceous of Chucheng, Shantung]. *Acta Geologica Sinica* 1973(2): 179-206.
 - `an2015a`: An, W.; Kuang, H. W.; Liu, Y. Q.; Peng, N.; Xu, K. M.; Xu, H.; Zhang, P.; Wang, K. B.; Chen, S. Q.; Zhang, Y. X. (2015). Detrital zircon dating and tracing the provenance of dinosaur bone beds from the Late Cretaceous Wangshi Group in Zhucheng, Shandong, East China. *Journal of Palaeogeography* 5(1): 72-99. doi:10.1016/j.jop.2015.11.002
-- `horner2004a`: Horner, J. R.; Weishampel, D. B.; Forster, C. A. (2004). Hadrosauridae. In *The Dinosauria (2nd ed.)*, pp. 438-463. University of California Press, Berkeley.
+- `horner2004a`: Horner, J. R.; Weishampel, D. B.; Forster, C. A. (2004). Hadrosauridae. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 438-463. University of California Press, Berkeley.
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.

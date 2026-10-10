@@ -19,5 +19,5 @@
 ## References
 
 - `stromer1934a`: Stromer, E. (1934). Ergebnisse der Forschungsreisen Prof. E. Stromers in den Wüsten Ägyptens. II. Wirbeltierreste der Baharîje-Stufe (unterstes Cenoman). 13. Dinosauria [Results of the expeditions of Professor E. Stromer in the Egyptian deserts. II. Vertebrate animal remains from the Baharîje bed (lowest Cenomanian). 13. Dinosauria]. *Abhandlungen der Bayerischen Akademie der Wissenschaften Mathematisch-naturwissenschaftliche Abteilung, Neue Folge* 22: 1-79.
-- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, 2nd edition*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027
-- `holtz2004a`: Holtz, T. R.; Molnar, R. E.; Currie, P. J. (2004). Basal Tetanurae. In *The Dinosauria, 2nd edition*, pp. 71-110. University of California Press, Berkeley.
+- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027
+- `holtz2004a`: Holtz, T. R.; Molnar, R. E.; Currie, P. J. (2004). Basal Tetanurae. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 71-110. University of California Press, Berkeley.

@@ -34,6 +34,6 @@
 
 - `rogers2000a`: Rogers, R. R.; Hartman, J. H.; Krause, D. W. (2000). Stratigraphic analysis of Upper Cretaceous rocks in the Mahajanga Basin, northwestern Madagascar: implications for ancient and modern faunas. *The Journal of Geology* 108(3): 275-301. doi:10.1086/314403
 - `curryrogers2001a`: Curry Rogers, K. A.; Forster, C. A. (2001). The last of the dinosaur titans: a new sauropod from Madagascar. *Nature* 412: 530-534. doi:10.1038/35087566
-- `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, 2nd edition*, pp. 259-322. University of California Press, Berkeley.
+- `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 259-322. University of California Press, Berkeley.
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.
 - `molina-pérez2020a`: Molina-Pérez, R.; Larramendi, A. (2020). Dinosaur Facts and Figures: The Sauropods and Other Sauropodomorphs. Princeton University Press.

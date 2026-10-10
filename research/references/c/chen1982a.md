@@ -18,4 +18,4 @@
 ## References
 
 - `chen1994a`: Chen, P. J.; Chang, Z. L. (1994). Nonmarine Cretaceous stratigraphy of eastern China. *Cretaceous Research* 15(3): 245-257. doi:10.1006/cres.1994.1015
-- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.

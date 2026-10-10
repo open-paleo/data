@@ -34,8 +34,8 @@
 ## References
 
 - `thulborn1973a`: Thulborn, R. A. (1973). Teeth of ornithischian dinosaurs from the Upper Jurassic of Portugal, with description of a hypsilophodontid (Phyllodon henkeli gen. et sp. nov.) from the Guimarota lignite. *Memórias dos Serviços Geológicos de Portugal* 22: 89-134.
-- `norman2004a`: Norman, D. B. (2004). Basal Iguanodontia. In *The Dinosauria, 2nd edition*, pp. 413-437. University of California Press, Berkeley.
-- `norman2004b`: Norman, D. B.; Sues, H.-D.; Witmer, L. M.; Coria, R. A. (2004). Basal Ornithopoda. In *The Dinosauria, 2nd edition*, pp. 393-412. University of California Press, Berkeley.
-- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `norman2004a`: Norman, D. B. (2004). Basal Iguanodontia. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 413-437. University of California Press, Berkeley.
+- `norman2004b`: Norman, D. B.; Sues, H.-D.; Witmer, L. M.; Coria, R. A. (2004). Basal Ornithopoda. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 393-412. University of California Press, Berkeley.
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
 - `sánchez-fenollosa2023a`: Sánchez-Fenollosa, S.; Verdú, F. J.; Cobos, A. (2023). The largest ornithopod (Dinosauria: Ornithischia) from the Upper Jurassic of Europe sheds light on the evolutionary history of basal ankylopollexians. *Zoological Journal of the Linnean Society* 199(4): 1013-1033. doi:10.1093/zoolinnean/zlad076
 - `butler2008b`: Butler, R. J.; Upchurch, P.; Norman, D. B. (2008). The phylogeny of the ornithischian dinosaurs. *Journal of Systematic Palaeontology* 6(1): 1-40. doi:10.1017/S1477201907002271

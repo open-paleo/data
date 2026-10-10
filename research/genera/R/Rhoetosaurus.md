@@ -66,5 +66,5 @@
 - `hesselbo2020a`: Hesselbo, S. P.; Ogg, J. G.; Ruhl, M.; Hinnov, L. A.; Huang, C. J. (2020). The Jurassic Period. In *Geologic Time Scale 2020 (Gradstein, F. M.; Ogg, J. G.; Schmitz, M. D.; Ogg, G. M., eds)*, pp. 955-1021. Elsevier, Amsterdam. doi:10.1016/B978-0-12-824360-2.00026-7
 - `nair2012a`: Nair, J. P.; Salisbury, S. W. (2012). New anatomical information on Rhoetosaurus brownei Longman, 1926, a gravisaurian sauropodomorph dinosaur from the Middle Jurassic of Queensland, Australia. *Journal of Vertebrate Paleontology* 32(2): 369-394. doi:10.1080/02724634.2012.622324
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.
-- `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, 2nd edition*, pp. 259-322. University of California Press, Berkeley.
+- `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 259-322. University of California Press, Berkeley.
 - `molina-pérez2020a`: Molina-Pérez, R.; Larramendi, A. (2020). Dinosaur Facts and Figures: The Sauropods and Other Sauropodomorphs. Princeton University Press.

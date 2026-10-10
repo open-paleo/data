@@ -19,5 +19,5 @@
 ## References
 
 - `brusatte2012c`: Brusatte, S. L.; Benson, R. B. J.; Xu, X. (2012). A reassessment of Kelmayisaurus petrolicus, a large theropod dinosaur from the Early Cretaceous of China. *Acta Palaeontologica Polonica* 57(1): 65-72. doi:10.4202/app.2010.0125
-- `holtz2004a`: Holtz, T. R.; Molnar, R. E.; Currie, P. J. (2004). Basal Tetanurae. In *The Dinosauria, 2nd edition*, pp. 71-110. University of California Press, Berkeley.
+- `holtz2004a`: Holtz, T. R.; Molnar, R. E.; Currie, P. J. (2004). Basal Tetanurae. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 71-110. University of California Press, Berkeley.
 - `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.

@@ -21,4 +21,4 @@
 - `cope1866a`: Cope, E. D. (1866). Discovery of a gigantic dinosaur in the Cretaceous of New Jersey. *Proceedings of the Academy of Natural Sciences of Philadelphia* 18: 275-279.
 - `baird1979a`: Baird, D.; Horner, J. R. (1979). Cretaceous dinosaurs of North Carolina. *Brimleyana* 2: 1-28.
 - `gallagher1993a`: Gallagher, W. B. (1993). The Cretaceous/Tertiary mass extinction event in the northern Atlantic Coastal Plain. *The Mosasaur* 5: 75-154.
-- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, 2nd edition*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027
+- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027

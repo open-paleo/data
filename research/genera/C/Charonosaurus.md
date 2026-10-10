@@ -34,5 +34,5 @@
 
 - `godefroit2000a`: Godefroit, P.; Zan, S.; Jin, L. (2000). Charonosaurus jiayinensis n.g., n.sp.,a lambeosaurine dinosaur from the Late Maastrichtian of northeastern China. *Comptes Rendus de l'Académie des Sciences - Series IIA - Earth and Planetary Science* 330(12): 875-882. doi:10.1016/s1251-8050(00)00214-7
 - `xing2022a`: Xing, H.; Gu, W.; Hai, S.; Yu, T.; Han, D.; Zhang, Y.; Zhang, S. (2022). Osteological and taxonomic reassessments of Sahaliyania elunchunorum (Dinosauria, Hadrosauridae) from the Upper Cretaceous Yuliangzi Formation, northeast China. *Journal of Vertebrate Paleontology* 41(6): e2085111. doi:10.1080/02724634.2021.2085111
-- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.

@@ -20,5 +20,5 @@
 ## References
 
 - `moore2020a`: Moore, A. J.; Upchurch, P.; Barrett, P. M.; Clark, J. M.; Xu, X. (2020). Osteology of Klamelisaurus gobiensis (Dinosauria, Eusauropoda) and the evolutionary history of Middle-Late Jurassic Chinese sauropods. *Journal of Systematic Palaeontology* 18(16): 1299-1393. doi:10.1080/14772019.2020.1759706
-- `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, 2nd edition*, pp. 259-322. University of California Press, Berkeley.
+- `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 259-322. University of California Press, Berkeley.
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.
