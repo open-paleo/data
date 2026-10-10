@@ -8,7 +8,7 @@
 
 **Evidence.**
 - madsen1974a, p. 27: "Type.-Left ilium, UUVP 2938".
-- brusatte2012a, p. 49, figure caption: "Left ilium of *Stokesosaurus clevelandi*, Madsen 1974 (UMNH VP 7473), Morrison Formation, Utah, USA".
+- brusatte2013b, p. 49, figure caption: "Left ilium of *Stokesosaurus clevelandi*, Madsen 1974 (UMNH VP 7473), Morrison Formation, Utah, USA".
 
 **Ruled out.**
 - *UUVP 2938 as the current number.* Jones (2026) gives "UUVP 2938—ilium" (jones2026c, p. 502). This is the number before the University of Utah collection moved to the museum.
@@ -19,6 +19,6 @@
 ## References
 
 - `madsen1974a`: Madsen, J. H. (1974). A new theropod dinosaur from the Upper Jurassic of Utah. *Journal of Paleontology* 48(1): 27-31.
-- `brusatte2012a`: Brusatte, S. L.; Benson, R. B. J. (2012). The systematics of Late Jurassic tyrannosauroid theropods from Europe and North America. *Acta Palaeontologica Polonica* 58(1): 47-54. doi:10.4202/app.2011.0141
+- `brusatte2013b`: Brusatte, S. L.; Benson, R. B. J. (2013). The systematics of Late Jurassic tyrannosauroid theropods from Europe and North America. *Acta Palaeontologica Polonica* 58(1): 47-54. doi:10.4202/app.2011.0141
 - `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
 - `molina-pérez2019a`: Molina-Pérez, R.; Larramendi, A. (2019). Dinosaur Facts and Figures: The Theropods and Other Dinosauriformes. Princeton University Press.
