@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-10-10T03:44:28.959Z",
+    "built_at": "2026-10-10T07:12:51.844Z",
     "clade_count": 188,
     "genus_count": 1424,
     "license": "CC-BY-4.0",
@@ -17903,7 +17903,7 @@
               "MHNM KHG 222"
             ],
             "specimen_type": "holotype",
-            "institution": "Musée d'histoire naturelle de Miguasha",
+            "institution": "Muséum d'Histoire Naturelle de Marrakech",
             "material": "Partial left maxilla with teeth, fragments of right maxilla, partial left dentary",
             "completeness": "fragmentary"
           },
@@ -39244,7 +39244,17 @@
             "specimen_type": "holotype",
             "institution": "American Museum of Natural History",
             "material": "Nearly complete skeleton (~90%) of a subadult individual.",
-            "completeness": "complete"
+            "completeness": "complete",
+            "former_ids": [
+              {
+                "from_id": "FIP 001",
+                "to_id": "AMNH FR 30556",
+                "from_institution": "Florida Institute of Paleontology",
+                "to_institution": "American Museum of Natural History",
+                "reason": "rehoused",
+                "notes": "The erecting paper gives the holotype as FIP 001, at the Florida Institute of Paleontology; later papers, among them Turner and colleagues (2012), give the AMNH number. None of the works cited records the transfer."
+              }
+            ]
           },
           "size": {
             "length_m": {
@@ -74230,7 +74240,8 @@
             "specimen_type": "holotype",
             "institution": "Museu Geológico do Instituto Geológico e Mineiro",
             "material": "Partial rib cage with twelve dorsal vertebrae and articulated proximal ribs, five different types of dermal armor, and an incomplete autopodium with three metapodials and digits II, III and IV.",
-            "completeness": "partial"
+            "completeness": "partial",
+            "notes": "Galton (1980) described the rib cage and armor, now MG 5787, and printed no number. Russo and Mateus (2021) treat the autopodium, MG 3, as part of the same individual, the museum having numbered material by cabinet rather than by skeleton, and recommend \"the lowest number (MG 3) for the entire holotype specimen\"."
           },
           "size": {
             "hip_height_m": {
@@ -74282,7 +74293,7 @@
           "volume": "108",
           "issue": "1",
           "pages": "27-34",
-          "notes": "Field revisit that fixes the type locality at Praia da Assenta Sul and prints its coordinates."
+          "notes": "Field revisit that fixes the type locality at Praia da Assenta Sul and prints its coordinates. Assigns MG 5787 and MG 3 to one individual and recommends a single number, MG 3, for the holotype."
         }
       ],
       "taxonomy": [
@@ -85290,7 +85301,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "TrM 119"
+              "TM 119"
             ],
             "specimen_type": "holotype",
             "institution": "Ditsong National Museum of Natural History",
@@ -95379,10 +95390,10 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "UFSM 0009"
+              "CAPPA/UFSM 0009"
             ],
             "specimen_type": "holotype",
-            "institution": "Laboratório de Estratigrafia e Paleobiologia, Universidade Federal de Santa Maria",
+            "institution": "Centro de Apoio à Pesquisa Paleontológica da Quarta Colônia, Universidade Federal de Santa Maria",
             "material": "Almost complete and partially articulated skeleton (lacking only part of the left shoulder girdle and part of the left forelimb).",
             "completeness": "complete"
           },
@@ -100276,7 +100287,7 @@
               "HM V22"
             ],
             "specimen_type": "holotype",
-            "institution": "Museum für Naturkunde, Berlin",
+            "institution": "Hami Museum",
             "material": "Articulated series of seven anterior to middle caudal vertebrae with proximal portions of three chevrons.",
             "completeness": "fragmentary"
           },
@@ -102090,13 +102101,13 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "BMNH A4359",
-              "BMNH A1528"
+              "BMNH A4359"
             ],
-            "specimen_type": "syntype",
+            "specimen_type": "holotype",
             "institution": "Natural History Museum",
-            "material": "Two tibiotarsi",
-            "completeness": "fragmentary"
+            "material": "Distal end of a left tibiotarsus.",
+            "completeness": "fragmentary",
+            "notes": "Harrison and Walker (1975) designate a second distal left tibiotarsus, A 1528, as the paratype."
           },
           "erected_in": "harrison1975a",
           "authors": "Harrison, C. J. O.; Walker, C. A.",
@@ -104106,7 +104117,8 @@
             "specimen_type": "holotype",
             "institution": "Museum of Bale",
             "material": "Posterior dorsal vertebra.",
-            "completeness": "fragmentary"
+            "completeness": "fragmentary",
+            "notes": "WN-V6 is the number the specimen carried during preparation; it is still awaiting accession at the Museum of Bale, and \"WN\" stands for \"without number\" (Van der Linden and colleagues, 2025)."
           },
           "erected_in": "dallavecchia1998a",
           "authors": "Dalla Vecchia, F. M.",
@@ -104123,6 +104135,18 @@
           "volume": "51",
           "issue": "2",
           "pages": "105-134"
+        },
+        {
+          "id": "vanderlinden2025a",
+          "authors": "van der Linden, T. T. P.; Taylor, M. P.; Campbell, A.; Curtice, B. D.; Dederichs, R.; Lerzo, L. N.; Whitlock, J. A.; Woodruff, D. C.; Tschopp, E.",
+          "year": 2025,
+          "title": "Introduction to Diplodocoidea",
+          "journal": "Palaeontologia Electronica",
+          "volume": "28",
+          "issue": "2",
+          "pages": "a27",
+          "doi": "10.26879/1506",
+          "notes": "Defines WN as \"'without number,' an informal designation for specimens awaiting accession\", and reports the holotype extant."
         }
       ],
       "taxonomy": [
@@ -108200,6 +108224,17 @@
           "pages": "1-28",
           "url": "https://www.biodiversitylibrary.org/part/442233",
           "notes": "Referred Parrosaurus missouriensis to Hypsibema. Traces the type material of H. crassicauda to the marl pits of James King in Sampson County, in the \"blue marl\", now the Black Creek Formation."
+        },
+        {
+          "id": "horner1979b",
+          "authors": "Horner, J. R.",
+          "year": 1979,
+          "title": "Upper Cretaceous dinosaurs from the Bearpaw Shale (marine) of south-central Montana with a checklist of Upper Cretaceous dinosaur remains from marine sediments in North America",
+          "journal": "Journal of Paleontology",
+          "volume": "53",
+          "issue": "3",
+          "pages": "566-577",
+          "notes": "Lists the type of Parrosaurus missouriensis, now this genus's second species, as USNM 16733; Gilmore (1945) prints U.S.N.M. 16735."
         }
       ],
       "taxonomy": [
@@ -136617,7 +136652,7 @@
               "MNS 2003/69.506"
             ],
             "specimen_type": "holotype",
-            "institution": "Staatliches Museum für Naturkunde",
+            "institution": "Museo Numantino de Soria",
             "material": "Partial skeleton comprising maxillary fragments, fragments of the left predentary, left dentary and right surangular, hyoids, alveolar parapets, sixty-two maxillary and thirty-six mandibular teeth, proatlas, one cervical and four dorsal vertebral centra, thirty-seven sacral fragments, thirty-two caudal vertebral centra, rib and chevron fragments with three complete chevrons, ossified tendon fragments, right scapula, both coracoids, both humeri, right radius, ulna, carpus and hand, left ilium fragment, both prepubes, right femur and tibia fragments, and right metatarsals II and IV",
             "completeness": "partial",
             "notes": "The holotype is one adult individual, but no single catalog number was ever assigned to it: its material was accessioned across five lots, MNS 2000/132, 2001/122, 2002/95, 2003/69 and 2004/54. The describing paper states that only remains providing relevant anatomical or taxonomic information were described, so most elements carry no number at all. The ids listed are those the paper ties explicitly to a holotype element and are therefore a subset, not the whole animal; the teeth, sacral fragments, chevrons and rib fragments are largely unnumbered. The lot numbers are deliberately not listed as ids, because lot MNS 2001/122 also holds the Soriatitan golmayensis holotype from the same quarry."
@@ -138952,7 +138987,7 @@
             ],
             "specimen_type": "holotype",
             "institution": "Chengdu University of Technology",
-            "material": "Nearly complete vertebral column (cervical-caudal series), ilium, ischium, partial pubis, tibia, fibula, astragali, partial pes, fragmentary sternum, and proximal humerus"
+            "material": "Nearly complete vertebral column (cervical-caudal series), ilium, ischium, partial pubis, tibia, fibula, right distal femur, astragali, partial pes, fragmentary sternum, and proximal humerus"
           },
           "size": {
             "length_m": {
@@ -162872,10 +162907,11 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "TM 6928"
+              "TM 6928",
+              "TM 6929"
             ],
             "specimen_type": "holotype",
-            "institution": "Ditsong National Museum of Natural History",
+            "institution": "Teylers Museum",
             "material": "Slab and counterslab of partial skeleton with feather impressions.",
             "completeness": "partial"
           },
@@ -173391,27 +173427,19 @@
               "SAM-PK-3343",
               "SAM-PK-3344",
               "SAM-PK-3345",
-              "SAM-PK-3346",
+              "SAM-PK-3345a",
               "SAM-PK-3347",
               "SAM-PK-3348",
-              "SAM-PK-3349",
               "SAM-PK-3350",
               "SAM-PK-3351",
-              "SAM-PK-3352",
-              "SAM-PK-3353",
-              "SAM-PK-3354",
-              "SAM-PK-3355",
               "SAM-PK-3356",
               "SAM-PK-3602",
-              "SAM-PK-3603",
-              "SAM-PK-3607",
-              "SAM-PK-3608",
-              "SAM-PK-3609"
+              "SAM-PK-3603"
             ],
             "specimen_type": "syntype",
             "institution": "Iziko South African Museum",
-            "material": "A large assemblage from a single bone pocket representing three or more moderately sized individuals plus a considerably more massive animal known from dorsal and sacral vertebrae and an almost complete pair of ischia.",
-            "notes": "The delimitation of the type series is unsettled. SAM-PK-3607 to 3609, the larger animal, was originally made the type material of Euskelosaurus africanus, and its conspecificity with the remainder is still doubted. The assemblage has been referred in turn to Plateosaurus, Plateosauravus, Euskelosaurus and back to Plateosauravus."
+            "material": "Isolated bones of two individuals, a larger and a smaller, from a single bone pocket.",
+            "notes": "Haughton (1924) names as co-types \"Portions of two animals in South African Museum. Catalogue numbers as in description\", and the numbers are those his description gives. McPhee and colleagues (2015) give a wider \"type\" series, SAM-PK-3341 to 3356, 3602, 3603 and 3607 to 3609, which adds the bones of a more massive animal; Haughton made No. 3608 of that animal the type of Euskelosaurus africanus. The assemblage has been referred in turn to Plateosaurus, Plateosauravus, Euskelosaurus and back to Plateosauravus."
           },
           "erected_in": "huene1932a",
           "authors": "Huene, F. V.",
@@ -173439,6 +173467,19 @@
           "issue": "1-2",
           "pages": "1-361",
           "notes": "Erects the genus Plateosauravus for Plateosaurus cullingworthi."
+        },
+        {
+          "id": "mcphee2015b",
+          "authors": "McPhee, B. W.; Choiniere, J. N.; Yates, A. M.; Viglietti, P. A.",
+          "year": 2015,
+          "title": "A second species of Eucnemesaurus Van Hoepen, 1920 (Dinosauria, Sauropodomorpha): new information on the diversity and evolution of the sauropodomorph fauna of South Africa's lower Elliot Formation (latest Triassic)",
+          "journal": "Journal of Vertebrate Paleontology",
+          "publisher": "Informa UK Limited",
+          "volume": "35",
+          "issue": "5",
+          "pages": "e980504",
+          "doi": "10.1080/02724634.2015.980504",
+          "notes": "Gives the \"type\" series as SAM-PK-3341 to 3356, 3602, 3603 and 3607 to 3609, the last of them the heavier animal Haughton made the type of Euskelosaurus africanus."
         },
         {
           "id": "paul2024a",
@@ -202691,7 +202732,7 @@
               "MNS 2001/122.1240"
             ],
             "specimen_type": "holotype",
-            "institution": "Staatliches Museum für Naturkunde",
+            "institution": "Museo Numantino de Soria",
             "material": "One tooth, three dorsal vertebrae with ribs, three sacral fragments, five caudal centra, two caudal vertebral spines, one chevron, humerus, radius, ulna, two ilia, two ischia, pubis fragment, femur",
             "completeness": "partial",
             "notes": "The teeth belong to the holotype but were never given a sub-number; the describing paper cites them under the bare accession lot MNS 2001/122, which also covers material of other taxa from the same quarry, so they have no individual numbers of their own."
@@ -240570,13 +240611,11 @@
             "completeness": "partial",
             "former_ids": [
               {
-                "from_id": "IVPP V 20",
+                "from_id": "V 20",
                 "to_id": "NGMJ V0116",
-                "from_institution": "Institute of Vertebrate Paleontology and Paleoanthropology",
-                "to_institution": "Nanjing Geological Museum",
-                "reason": "rehoused",
+                "reason": "renumbered",
                 "source": "barrett2007a",
-                "notes": "None of the works cited records the date of the move, and the original number remains in use; Zhang (2024) cites the specimen as \"IVPP V 20/NJGM 004546\"."
+                "notes": "Barrett and colleagues (2007) record that Young's catalog number V20 \"was later changed to NGMJ V0116 (as indicated on the label within the display case)\". The original number remains in use; Zhang (2024) cites the specimen as \"IVPP V 20/NJGM 004546\"."
               },
               {
                 "from_id": "NGMJ V0116",
