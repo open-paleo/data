@@ -19,7 +19,7 @@
 
 ## References
 
-- `kurzanov1976b`: Kurzanov, S. M. (1976). Noviy pozdnemelovoy karnozavr is Nogon-Tsava, Mongoliya [A new late Mesozoic carnosaur from Nogon-Tsav, Mongolia]. *Paleontology and Biostratigraphy of Mongolia. The Joint Soviet-Mongolian Paleontological Expedition, Transactions* 3: 93-104.
+- `kurzanov1976b`: Kurzanov, S. M. (1976). Noviy pozdnemelovoy karnozavr is Nogon-Tsava, Mongoliya [A new Late Cretaceous carnosaur from Nogon-Tsav, Mongolia]. *Paleontology and Biostratigraphy of Mongolia. The Joint Soviet-Mongolian Paleontological Expedition, Transactions* 3: 93-104.
 - `barsbold1976a`: Barsbold, R. (1976). Novyye dannyye o terizinozavre (Therizinosauridae, Theropoda) [New data on Therizinosaurus (Therizinosauridae, Theropoda)]. In *Paleontology and Biostratigraphy of Mongolia*, pp. 76-92. Nauka Press.
 - `maryańska1974a`: Maryańska, T.; Osmólska, H. (1974). Pachycephalosauria, a new suborder of ornithischian dinosaurs. *Palaeontologia Polonica* 30: 45-102.
 - `tumanova1987a`: Tumanova, T. A. (1987). Pantsirnyye dinozavry Mongolii [The armored dinosaurs of Mongolia]. *Trudy Sovmestnaya Sovetsko-Mongol'skaya Paleontologicheskaya Ekspeditsiya* 32: 1-80.

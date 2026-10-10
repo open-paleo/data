@@ -18,6 +18,6 @@
 
 ## References
 
-- `seeley1881a`: Seeley, H. G. (1881). The Reptile Fauna of the Gosau Formation preserved in the Geological Museum of the University of Vienna. *Quarterly Journal of the Geological Society of London* 37(1-4): 620-707. doi:10.1144/gsl.jgs.1881.037.01-04.49
+- `seeley1881a`: Seeley, H. G. (1881). The Reptile Fauna of the Gosau Formation preserved in the Geological Museum of the University of Vienna. *Quarterly Journal of the Geological Society of London* 37(1-4): 620-707. doi:10.1144/GSL.JGS.1881.037.01-04.49
 - `suess1881a`: Suess, E. (1881). Note on the Gosau Beds of the Neue Welt, west of Wiener Neustadt. *Quarterly Journal of the Geological Society of London* 37(1-4): 702-703. doi:10.1144/GSL.JGS.1881.037.01-04.50
 - `maryańska1975a`: Maryańska, T.; Osmólska, H. (1975). Protoceratopsidae (Dinosauria) of Asia. *Palaeontologia Polonica* 33: 133-182.

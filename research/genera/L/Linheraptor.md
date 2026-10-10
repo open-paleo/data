@@ -30,7 +30,7 @@
 
 ## References
 
-- `xu2010b`: Xu, X.; Choiniere, J. N.; Pittman, M.; Tan, Q.; Xiao, D.; Li, Z.; Tan, L.; Clark, J. M.; Norell, M. A.; Hone, D. W. E.; Sullivan, C. (2010). A new dromaeosaurid (Dinosauria: Theropoda) from the Upper Cretaceous Wulansuhai Formation of Inner Mongolia, China. *Zootaxa* 2403(1). doi:10.11646/zootaxa.2403.1.1
+- `xu2010b`: Xu, X.; Choiniere, J. N.; Pittman, M.; Tan, Q.; Xiao, D.; Li, Z.; Tan, L.; Clark, J. M.; Norell, M. A.; Hone, D. W. E.; Sullivan, C. (2010). A new dromaeosaurid (Dinosauria: Theropoda) from the Upper Cretaceous Wulansuhai Formation of Inner Mongolia, China. *Zootaxa* 2403(1): 1-9. doi:10.11646/zootaxa.2403.1.1
 - `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
 
 ## Other references

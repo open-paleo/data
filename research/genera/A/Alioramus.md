@@ -48,7 +48,7 @@
 
 ## References
 
-- `kurzanov1976b`: Kurzanov, S. M. (1976). Noviy pozdnemelovoy karnozavr is Nogon-Tsava, Mongoliya [A new late Mesozoic carnosaur from Nogon-Tsav, Mongolia]. *Paleontology and Biostratigraphy of Mongolia. The Joint Soviet-Mongolian Paleontological Expedition, Transactions* 3: 93-104.
+- `kurzanov1976b`: Kurzanov, S. M. (1976). Noviy pozdnemelovoy karnozavr is Nogon-Tsava, Mongoliya [A new Late Cretaceous carnosaur from Nogon-Tsav, Mongolia]. *Paleontology and Biostratigraphy of Mongolia. The Joint Soviet-Mongolian Paleontological Expedition, Transactions* 3: 93-104.
 - `brusatte2012b`: Brusatte, S. L.; Carr, T. D.; Norell, M. A. (2012). The Osteology of Alioramus, A Gracile and Long-Snouted Tyrannosaurid (Dinosauria: Theropoda) from the Late Cretaceous of Mongolia. *Bulletin of the American Museum of Natural History* 366: 1-197. doi:10.1206/770.1
 - `benton2000c`: Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N. (2000). Mongolian place names and stratigraphic terms. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds.)*, pp. xxii-xxviii. Cambridge University Press, Cambridge.
 - `brusatte2009b`: Brusatte, S. L.; Carr, T. D.; Erickson, G. M.; Bever, G. S.; Norell, M. A. (2009). A long-snouted, multihorned tyrannosaurid from the Late Cretaceous of Mongolia. *Proceedings of the National Academy of Sciences* 106(41): 17261-17266. doi:10.1073/pnas.0906911106
