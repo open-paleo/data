@@ -1,5 +1,21 @@
 # Dawangzhangzi
 
+## Whose statement is it that the Dakangpu Bed is the Dawangzhangzi Bed?
+
+*2026-10-10*
+
+**Conclusion.** Wang and colleagues (2001) state only a comparison in their own horizon line; their "the same as" is relayed from Wang and colleagues (2000). The equivalence still holds, since Qiu and colleagues (2019), Wu and Godefroit (2012) and Lefèvre and colleagues (2014) all give it, so the 2026-09-30 conclusion stands; this corrects how that entry's evidence reads Wang and colleagues (2001). Governs the `wang2001a` note on [Dawangzhangzi](../../../stratigraphy/d/dawangzhangzi.yml).
+
+**Evidence.**
+- wang2001a, p. 1669: "Dakangpu member, the middle part of the Yixian Formation (comparable to Dawangzhangzi Bed)".
+- wang2001a, p. 1672: "The Dakangpu Bed is the same as the Dawangzhangzi Bed of the middle Yixian Formation[20]", reference 20 being "Wang, X. L., Wang, Y. Q., Zhou, Z. H. et al., Vertebrate faunas and biostratigraphy of the Jehol Group in western Liaoning, China, Vert. PalAsiat., 2000".
+- wu2012a, p. 296: "Dakangpu Member (equivalent to the Dawangzhangzi Beds)", the same pairing as Lefèvre and colleagues.
+
+**Ruled out.**
+- *Wang and colleagues (2001) as an independent statement of identity.* The sentence carries a citation, and their own horizon line says "comparable to".
+
+**Open.** Wang and colleagues (2000) has not been read.
+
 ## Is the Dakangpu Bed the Dawangzhangzi Bed?
 
 *2026-09-30*
@@ -37,10 +53,10 @@
 
 ## References
 
-- `qiu2019a`: Qiu, R.; Wang, X.; Wang, Q.; Li, N.; Zhang, J.; Ma, Y. (2019). A new caudipterid from the Lower Cretaceous of China with information on the evolution of the manus of Oviraptorosauria. *Scientific Reports* 9(1). doi:10.1038/s41598-019-42547-6
 - `wang2001a`: Wang, X.; Xu, X. (2001). A new iguanodontid (Jinzhousaurus yangi gen. et sp. nov.) from the Yixian Formation of western Liaoning, China. *Chinese Science Bulletin* 46(19): 1669-1672. doi:10.1007/bf02900633
-- `lefèvre2014a`: Lefèvre, U.; Hu, D.; Escuillié, F.; Dyke, G.; Godefroit, P. (2014). A new long-tailed basal bird from the Lower Cretaceous of north-eastern China. *Biological Journal of the Linnean Society* 113(3): 790-804. doi:10.1111/bij.12343
 - `wu2012a`: Wu, W. H.; Godefroit, P. (2012). Anatomy and relationships of Bolong yixianensis, an Early Cretaceous iguanodontoid dinosaur from western Liaoning, China. In *Bernissart Dinosaurs and Early Cretaceous Terrestrial Ecosystems (Godefroit, P., ed.)*. Indiana University Press, Bloomington.
+- `qiu2019a`: Qiu, R.; Wang, X.; Wang, Q.; Li, N.; Zhang, J.; Ma, Y. (2019). A new caudipterid from the Lower Cretaceous of China with information on the evolution of the manus of Oviraptorosauria. *Scientific Reports* 9(1). doi:10.1038/s41598-019-42547-6
+- `lefèvre2014a`: Lefèvre, U.; Hu, D.; Escuillié, F.; Dyke, G.; Godefroit, P. (2014). A new long-tailed basal bird from the Lower Cretaceous of north-eastern China. *Biological Journal of the Linnean Society* 113(3): 790-804. doi:10.1111/bij.12343
 - `mcdonald2010b`: McDonald, A. T.; Kirkland, J. I.; DeBlieux, D. D.; Madsen, S. K.; Cavin, J.; Milner, A. R. C.; Panzarin, L. (2010). New Basal Iguanodonts from the Cedar Mountain Formation of Utah and the Evolution of Thumb-Spiked Dinosaurs. *PLoS ONE* 5(11): e14075. doi:10.1371/journal.pone.0014075
 - `ji2016a`: Ji, Q.; Wu, X.; Cheng, Y.; Ten, F.; Ji, Y. (2016). Fish-hunting ankylosaurs (Dinosauria, Ornithischia) from the Cretaceous of China. *Journal of Geology* 40(2): 183-190. doi:10.3969/j.issn.1674-3636.2016.02.183
 - `arbour2015a`: Arbour, V. M.; Currie, P. J. (2015). Systematics, phylogeny and palaeobiogeography of the ankylosaurid dinosaurs. *Journal of Systematic Palaeontology* 14(5): 385-444. doi:10.1080/14772019.2015.1059985

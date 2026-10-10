@@ -48,7 +48,7 @@
 
 ## References
 
-- `makovicky2006a`: Makovicky, P. J.; Norell, M. A. (2006). Yamaceratops Dorngobiensis, a New Primitive Ceratopsian (Dinosauria: Ornithischia) from the Cretaceous of Mongolia. *American Museum Novitates* 3530(1). doi:10.1206/0003-0082(2006)3530[1:ydanpc]2.0.co;2
+- `makovicky2006a`: Makovicky, P. J.; Norell, M. A. (2006). Yamaceratops dorngobiensis, a New Primitive Ceratopsian (Dinosauria: Ornithischia) from the Cretaceous of Mongolia. *American Museum Novitates* 3530: 1-42. doi:10.1206/0003-0082(2006)3530[1:ydanpc]2.0.co;2
 - `shuvalov2000a`: Shuvalov, V. F. (2000). The Cretaceous stratigraphy and palaeobiogeography of Mongolia. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds.)*, pp. 256-278. Cambridge University Press, Cambridge.
 - `hicks1999a`: Hicks, J. F.; Brinkman, D. L.; Nichols, D. J.; Watabe, M. (1999). Paleomagnetic and palynologic analyses of Albian to Santonian strata at Bayn Shireh, Burkhant, and Khuren Dukh, eastern Gobi Desert, Mongolia. *Cretaceous Research* 20(6): 829-850. doi:10.1006/cres.1999.0188
 - `gates2018a`: Gates, T. A.; Tsogtbaatar, K.; Zanno, L. E.; Chinzorig, T.; Watabe, M. (2018). A new iguanodontian (Dinosauria: Ornithopoda) from the Early Cretaceous of Mongolia. *PeerJ* 6: e5300. doi:10.7717/peerj.5300

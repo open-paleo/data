@@ -1,5 +1,19 @@
 # *Alioramus*
 
+## How is the *Alioramus remotus* locality spelled?
+
+*2026-10-10*
+
+**Conclusion.** Nogoon Tsav, Benton's (2000) form, under the place-names rule in [Mongolian place names](../../topics/mongolian-place-names.md). This changes only the spelling of the locality the 2026-08-11 entry identifies; Kurzanov's "Nogon-Tsav" and Brusatte and colleagues' "Nogon Tsav" are the older transcription. Governs `location.locality: Nogoon Tsav` on [*Alioramus remotus*](../../../genera/A/Alioramus.yml).
+
+**Evidence.**
+- benton2000c, p. xxvi: "Nogon (= Nogoon)" and "Nogoon Tsav gorge [locality]".
+
+**Ruled out.**
+- *Nogon Tsav.* Benton cross-refers it to Nogoon.
+
+**Open.** As in the 2026-08-11 entry.
+
 ## Where was the *Alioramus remotus* holotype collected?
 
 *2026-08-11*
@@ -48,9 +62,9 @@
 
 ## References
 
+- `benton2000c`: Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N. (2000). Mongolian place names and stratigraphic terms. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds.)*, pp. xxii-xxviii. Cambridge University Press, Cambridge.
 - `kurzanov1976b`: Kurzanov, S. M. (1976). Noviy pozdnemelovoy karnozavr is Nogon-Tsava, Mongoliya [A new Late Cretaceous carnosaur from Nogon-Tsav, Mongolia]. *Paleontology and Biostratigraphy of Mongolia. The Joint Soviet-Mongolian Paleontological Expedition, Transactions* 3: 93-104.
 - `brusatte2012b`: Brusatte, S. L.; Carr, T. D.; Norell, M. A. (2012). The Osteology of Alioramus, A Gracile and Long-Snouted Tyrannosaurid (Dinosauria: Theropoda) from the Late Cretaceous of Mongolia. *Bulletin of the American Museum of Natural History* 366: 1-197. doi:10.1206/770.1
-- `benton2000c`: Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N. (2000). Mongolian place names and stratigraphic terms. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds.)*, pp. xxii-xxviii. Cambridge University Press, Cambridge.
 - `brusatte2009b`: Brusatte, S. L.; Carr, T. D.; Erickson, G. M.; Bever, G. S.; Norell, M. A. (2009). A long-snouted, multihorned tyrannosaurid from the Late Cretaceous of Mongolia. *Proceedings of the National Academy of Sciences* 106(41): 17261-17266. doi:10.1073/pnas.0906911106
 - `barsbold1983a`: Barsbold, R. (1983). Khishchnye dinozavry mela Mongolii [Carnivorous dinosaurs from the Cretaceous of Mongolia]. *Trudy - Sovmestnaya Sovetsko-Mongol'skaya Paleontologicheskaya Ekspeditsiya* 19: 1-117.
 - `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.

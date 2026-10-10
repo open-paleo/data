@@ -20,6 +20,6 @@
 ## References
 
 - `eberth2009a`: Eberth, D. A.; Kobayashi, Y.; Lee, Y. N.; Mateus, O.; Therrien, F.; Zelenitsky, D. K.; Norell, M. A. (2009). Assignment of Yamaceratops dorngobiensis and associated redbeds at Shine Us Khudag (eastern Gobi, Dorngobi Province, Mongolia) to the redescribed Javkhlant Formation (Upper Cretaceous). *Journal of Vertebrate Paleontology* 29(1): 295-302.
-- `makovicky2006a`: Makovicky, P. J.; Norell, M. A. (2006). Yamaceratops Dorngobiensis, a New Primitive Ceratopsian (Dinosauria: Ornithischia) from the Cretaceous of Mongolia. *American Museum Novitates* 3530(1). doi:10.1206/0003-0082(2006)3530[1:ydanpc]2.0.co;2
-- `son2022a`: Son, M.; Lee, Y. M.; Zorigt, B.; Kobayashi, Y.; Park, J. Y.; Lee, S.; Kim, S. H.; Lee, K. Y. (2022). A new juvenile Yamaceratops (Dinosauria, Ceratopsia) from the Javkhlant Formation (Upper Cretaceous) of Mongolia. *PeerJ* 10: e13176. doi:10.7717/peerj.13176
+- `makovicky2006a`: Makovicky, P. J.; Norell, M. A. (2006). Yamaceratops dorngobiensis, a New Primitive Ceratopsian (Dinosauria: Ornithischia) from the Cretaceous of Mongolia. *American Museum Novitates* 3530: 1-42. doi:10.1206/0003-0082(2006)3530[1:ydanpc]2.0.co;2
+- `son2022a`: Son, M.; Lee, Y. N.; Zorigt, B.; Kobayashi, Y.; Park, J. Y.; Lee, S.; Kim, S. H.; Lee, K. Y. (2022). A new juvenile Yamaceratops (Dinosauria, Ceratopsia) from the Javkhlant Formation (Upper Cretaceous) of Mongolia. *PeerJ* 10: e13176. doi:10.7717/peerj.13176
 - `makovicky2011a`: Makovicky, P. J.; Kilbourne, B. M.; Sadleir, R. W.; Norell, M. A. (2011). A new basal ornithopod (Dinosauria, Ornithischia) from the Late Cretaceous of Mongolia. *Journal of Vertebrate Paleontology* 31(3): 626-640. doi:10.1080/02724634.2011.557114
