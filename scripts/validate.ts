@@ -3992,7 +3992,7 @@ function checkNarrativeCitations(label: string, filePath: string, record: unknow
 
         if (!cited)
         {
-            uncited.push(`${citation.surname} (${citation.year})`);
+            uncited.push(`${citation.surname} (${citation.year}${citation.letter ?? ""})`);
         }
     }
 

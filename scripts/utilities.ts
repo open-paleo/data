@@ -838,7 +838,8 @@ export function researchCitedIds(body: string): Array<string>
 }
 
 /**
- * One narrative citation found in prose: an author's surname and a year.
+ * One narrative citation found in prose: an author's surname, a year, and the
+ * letter after the year when the prose gives one.
  */
 export type NarrativeCitation = {
     /**
@@ -851,6 +852,12 @@ export type NarrativeCitation = {
      * The four-digit year.
      */
     year: string;
+
+    /**
+     * The letter printed after the year ("2026b" gives "b"), which names one
+     * of an author's works of that year; null when the year has none.
+     */
+    letter: string | null;
 };
 
 const citationName = String.raw`\p{Lu}[\p{L}\p{N}'’-]+(?:\s+(?:de|da|dos|das|du|des|di|van|von|der|del|la|le)?\s*\p{Lu}[\p{L}\p{N}'’-]+)?`;
@@ -859,7 +866,7 @@ const citationParticle = String.raw`(?:(?:van|von|de|da|dos|das|du|des|di|der|de
 const citationPartner = String.raw`(?:\s+(?:and|&)\s+(?:colleagues|others|(${citationParticle}${citationName}))|\s+et\s+al\.)?`;
 const narrativeCitationPattern = new RegExp(String.raw`(?<![\p{L}])(${citationNames})${citationPartner}\s+\((\d{4}[a-z]?(?:[,:;][^)]*)?)\)`, "gu");
 const parentheticalPattern = /\(([^()]*\d{4}[^()]*)\)/g;
-const parentheticalItemPattern = new RegExp(String.raw`^\s*(${citationName})${citationPartner},?\s+(\d{4})[a-z]?\b`, "u");
+const parentheticalItemPattern = new RegExp(String.raw`^\s*(${citationName})${citationPartner},?\s+(\d{4})([a-z])?\b`, "u");
 
 // Capitalized words the name pattern takes for an author but that are not one.
 // Add a word only after reading the sentence that produced it.
@@ -895,6 +902,8 @@ function cleanCitationName(name: string): string
 /**
  * Finds every narrative and parenthetical citation in a prose string: "Smith
  * (2000)", "Smith and colleagues (2000, p. 12)", "(Smith, 2000; Jones, 2001)".
+ * A letter after a year is kept, so "Smith (2000a, 2000b)" gives two
+ * citations.
  * Text inside double quotation marks is skipped, because a name inside a
  * quotation is the quoted source's wording, and a personal communication is
  * not a citation of a work.
@@ -906,13 +915,13 @@ export function narrativeCitations(text: string): Array<NarrativeCitation>
 {
     const prose = text.replace(/"[^"]*"/g, " ");
     const found = new Map<string, NarrativeCitation>();
-    const add = (name: string, year: string): void =>
+    const add = (name: string, year: string, letter: string | null): void =>
     {
         const surname = cleanCitationName(name);
 
         if (!notCitationNames.has(surname) && !notCitationPattern.test(surname))
         {
-            found.set(`${surname}|${year}`, { surname, year });
+            found.set(`${surname}|${year}${letter ?? ""}`, { surname, year, letter });
         }
     };
 
@@ -927,9 +936,9 @@ export function narrativeCitations(text: string): Array<NarrativeCitation>
 
         const lead = notCitationNames.has(name) && partner ? partner : name;
 
-        for (const year of inside.match(/(?<![\d.])(?:1[6-9]\d\d|20[0-3]\d)(?!\d)/g) ?? [])
+        for (const yearMatch of inside.matchAll(/(?<![\d.])(1[6-9]\d\d|20[0-3]\d)([a-z])?(?![\d\p{L}])/gu))
         {
-            add(lead, year);
+            add(lead, yearMatch[1], yearMatch[2] ?? null);
         }
     }
 
@@ -941,7 +950,7 @@ export function narrativeCitations(text: string): Array<NarrativeCitation>
 
             if (match !== null)
             {
-                add(notCitationNames.has(match[1]) && match[2] ? match[2] : match[1], match[3]);
+                add(notCitationNames.has(match[1]) && match[2] ? match[2] : match[1], match[3], match[4] ?? null);
             }
         }
     }
@@ -971,7 +980,10 @@ function foldSurname(text: string): string
  * Tells whether a reference id is the work a citation names: the id's
  * surname stem matches the citation's surname, or any one of its words (so
  * "Díez Díaz" matches `díezdíaz` and "Gradziński, Kielan-Jaworowska" matches
- * `gradziński`), and the year matches the entry's year or the key's.
+ * `gradziński`), and the year matches the entry's year or the key's. A
+ * citation that gives a letter after the key's year names that key's letter
+ * only; one matched through the entry's year, where the key was dated
+ * differently, is not held to the key's letter.
  *
  * @param citation - The citation.
  * @param id - The reference id.
@@ -980,9 +992,13 @@ function foldSurname(text: string): string
  */
 export function citationMatchesId(citation: NarrativeCitation, id: string, storeYear: string | null): boolean
 {
-    const keyMatch = /^(.*?)(\d{4})[a-z]$/u.exec(id);
+    const keyMatch = /^(.*?)(\d{4})([a-z])$/u.exec(id);
 
     if (keyMatch === null || (citation.year !== keyMatch[2] && citation.year !== storeYear))
+    {
+        return false;
+    }
+    else if (citation.letter !== null && citation.year === keyMatch[2] && citation.letter !== keyMatch[3])
     {
         return false;
     }
