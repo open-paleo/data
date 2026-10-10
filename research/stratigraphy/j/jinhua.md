@@ -1,5 +1,19 @@
 # Jinhua
 
+## Does the Jinhua take the Albian and drop the Coniacian?
+
+*2026-10-08*
+
+**Conclusion.** Yes to both, applying the 2026-10-04 entry: the formation is Albian to Turonian. The Albian rests on Yu and colleagues' dated lower basalt and their Albian-to-early-Late-Cretaceous range for the dinosaur beds; the Coniacian rests only on a passing, unsourced label. Neither taxon has a horizon dated more finely than the lower Jinhua, so both take the unit's range. Governs `period: [Early Cretaceous, Late Cretaceous]` and `stages: [Albian, Cenomanian, Turonian]` on [Jinhua](../../../stratigraphy/j/jinhua.yml), and the same on [*Jiangshanosaurus lixianensis*](../../../genera/J/Jiangshanosaurus.yml) and [*Dongyangosaurus sinensis*](../../../genera/D/Dongyangosaurus.yml).
+
+**Evidence.**
+- yu2010a, p. 98: the lower Jinhua basalt is "(101.8±3.2) Ma"; p. 99: the dinosaur- and egg-bearing strata range "早白垩世晚期 albian 期至晚白垩世早期" ("from the late Early Cretaceous Albian to the early Late Cretaceous", translated).
+
+**Ruled out.**
+- *The Coniacian.* Mayer and colleagues' "Turonian-Coniacian Jinhua Formation" (mayer2026a, p. 26) gives no source, and a passing label is not a reading.
+
+**Open.** Nothing.
+
 ## What is the age of the Jinhua Formation?
 
 *2026-10-04*
@@ -19,6 +33,6 @@
 ## References
 
 - `yu2010a`: Yu, Y.; Jin, X.; Wu, X.; Zhang, Z. (2010). 浙江恐龙和蛋化石的时代 [The age of dinosaur and dinosaur egg fossils in Zhejiang]. *Geology in China* 37(1): 94-100.
+- `mayer2026a`: Mayer, E. L.; Silva Junior, J. C. G.; Kerber, L.; Navarro, B. A.; Bandeira, K. L. N.; Cisneros, J. C.; Sousa, E. P.; Pereira, A. A.; Medeiros, M. A.; Lindoso, R. M.; Cavalcanti Neto, F. P.; Ghilardi, A. M.; Aureliano, T.; Godoy, P. L.; Ferreira, G. S.; Langer, M. C. (2026). A new titanosauriform with European affinities in the Early Cretaceous of Brazil: insights on Somphospondyli phylogeny, histology and biogeography. *Journal of Systematic Palaeontology* 24: 2601579. doi:10.1080/14772019.2025.2601579
 - `tang2001a`: Tang, F.; Kang, X. M.; Jin, Z. S.; Wei, F.; Wu, W. T. (2001). A new sauropod dinosaur of Cretaceous from Jingshan, Zhejiang province. *Vertebrata PalAsiatica* 39(4): 272-281.
 - `wilson2005a`: Wilson, J. A. (2005). Redescription of the Mongolian sauropod Nemegtosaurus mongoliensis Nowinski (Dinosauria: Saurischia) and comments on Late Cretaceous sauropod diversity. *Journal of Systematic Palaeontology* 3(3): 283-318. doi:10.1017/s1477201905001628
-- `mayer2026a`: Mayer, E. L.; Silva Junior, J. C. G.; Kerber, L.; Navarro, B. A.; Bandeira, K. L. N.; Cisneros, J. C.; Sousa, E. P.; Pereira, A. A.; Medeiros, M. A.; Lindoso, R. M.; Cavalcanti Neto, F. P.; Ghilardi, A. M.; Aureliano, T.; Godoy, P. L.; Ferreira, G. S.; Langer, M. C. (2026). A new titanosauriform with European affinities in the Early Cretaceous of Brazil: insights on Somphospondyli phylogeny, histology and biogeography. *Journal of Systematic Palaeontology* 24: 2601579. doi:10.1080/14772019.2025.2601579

@@ -1,5 +1,21 @@
 # *Ornithotarsus*
 
+## What stages does *Ornithotarsus* take while its formation is open?
+
+*2026-10-09*
+
+**Conclusion.** Campanian and Maastrichtian, the stages of the two open readings of the horizon taken together. This supersedes nothing in the 2026-10-02 entry, which left the formation open; it settles the stage that entry's Open line said the two readings imply. Governs `stage: [Campanian, Maastrichtian]` on [*Ornithotarsus immanis*](../../../genera/O/Ornithotarsus.yml).
+
+**Evidence.**
+- prieto-márquez2006a, p. 91: Colbert (1948) questionably assigned the taxon "to the Campanian Woodbury Formation".
+- prieto-márquez2006a, p. 92: the Navesink, Lull and Wright's horizon for the type (lull1942a, p. 9), is "Maastrichtian".
+
+**Ruled out.**
+- *Campanian alone.* It takes the Woodbury side of an open question, and matches the Horner and colleagues (2004) row for *Hadrosaurus foulkii*, already ruled out as a reading for this taxon.
+- *Period alone.* Both open readings agree that the horizon is Campanian or Maastrichtian; dropping the stages would discard that.
+
+**Open.** As in the 2026-10-02 entry: Weller (1907) and Colbert (1948).
+
 ## Which formation is the *Ornithotarsus* holotype from?
 
 *2026-10-02*
@@ -21,7 +37,7 @@
 
 ## References
 
-- `cope1869c`: Cope, E. D. (1869). [Remarks on Holops brevispinus, Ornithotarsus immanis, and Macrosaurus proriger]. *Proceedings of the Academy of Natural Sciences of Philadelphia* 21: 123.
-- `lull1942a`: Lull, R. S.; Wright, N. E. (1942). Hadrosaurian Dinosaurs of North America. *Geological Society of America Special Papers* 40: 1-272. doi:10.1130/spe40-p1
 - `prieto-márquez2006a`: Prieto-Márquez, A.; Weishampel, D. B.; Horner, J. R. (2006). The dinosaur Hadrosaurus foulkii, from the Campanian of the East Coast of North America, with a reevaluation of the genus. *Acta Palaeontologica Polonica* 51(1): 77-98.
+- `lull1942a`: Lull, R. S.; Wright, N. E. (1942). Hadrosaurian Dinosaurs of North America. *Geological Society of America Special Papers* 40: 1-272. doi:10.1130/spe40-p1
+- `cope1869c`: Cope, E. D. (1869). [Remarks on Holops brevispinus, Ornithotarsus immanis, and Macrosaurus proriger]. *Proceedings of the Academy of Natural Sciences of Philadelphia* 21: 123.
 - `horner2004a`: Horner, J. R.; Weishampel, D. B.; Forster, C. A. (2004). Hadrosauridae. In *The Dinosauria (2nd ed.)*, pp. 438-463. University of California Press, Berkeley.

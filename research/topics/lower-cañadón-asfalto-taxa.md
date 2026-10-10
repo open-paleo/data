@@ -1,5 +1,20 @@
 # Lower Cañadón Asfalto taxa
 
+## What stages do Piatnitzkysaurus and Condorraptor take?
+
+*2026-10-09*
+
+**Conclusion.** Aalenian and Bajocian, under the Middle Jurassic. This settles the Open question of the 2026-10-03 entry, which it supersedes for these two taxa. Governs `stage` and `period` on [*Piatnitzkysaurus floresi*](../../genera/P/Piatnitzkysaurus.yml) and [*Condorraptor currumili*](../../genera/C/Condorraptor.yml).
+
+**Evidence.**
+- cúneo2013a, p. 1273: "The middle to upper sections of the Cañadón Asfalto Formation, the interval that overlies its uppermost basalt flow in the Cerro Cóndor area (Fig. 1), can now be considered essentially early Middle Jurassic in age (Aalenian to probably Bajocian) based on the new geochronologic results." "Probably" hedges the upper end of a stated interval, so the interval is taken whole.
+
+**Ruled out.**
+- *Latest Toarcian.* "However, the presently available data do not preclude a latest Toarcian age for the strata closest to the basalt horizons" (cúneo2013a, p. 1273). Not precluding an age is a possibility, not a reading.
+- *Callovian–Oxfordian for Piatnitzkysaurus.* Bonaparte (1979) recorded the assemblage "in the Callovian-Oxfordian beds of Patagonia" (bonaparte1979a, p. 1377), the formation's traditional age, which the dating of Cúneo and colleagues replaces.
+
+**Open.** Nothing for these records.
+
 ## What stages do the lower Cañadón Asfalto dinosaurs take?
 
 *2026-10-03*
@@ -19,6 +34,7 @@
 
 ## References
 
-- `pol2022a`: Pol, D.; Gomez, K.; Holwerda, F. M.; Rauhut, O. W. M.; Carballido, J. L. (2022). Sauropods from the Early Jurassic of South America and the Radiation of Eusauropoda. In *South American Sauropodomorph Dinosaurs: Record, Diversity and Evolution*, pp. 131-163. Springer International Publishing. doi:10.1007/978-3-030-95959-3_4
 - `cúneo2013a`: Cúneo, R.; Ramezani, J.; Scasso, R.; Pol, D.; Escapa, I.; Zavattieri, A. M.; Bowring, S. A. (2013). High-precision U-Pb geochronology and a new chronostratigraphy for the Cañadón Asfalto Basin, Chubut, central Patagonia: implications for terrestrial faunal and floral evolution in Jurassic. *Gondwana Research* 24(3-4): 1267-1275. doi:10.1016/j.gr.2013.01.010
+- `bonaparte1979a`: Bonaparte, J. F. (1979). Dinosaurs: A Jurassic Assemblage from Patagonia. *Science* 205(4413): 1377-1379. doi:10.1126/science.205.4413.1377
+- `pol2022a`: Pol, D.; Gomez, K.; Holwerda, F. M.; Rauhut, O. W. M.; Carballido, J. L. (2022). Sauropods from the Early Jurassic of South America and the Radiation of Eusauropoda. In *South American Sauropodomorph Dinosaurs: Record, Diversity and Evolution*, pp. 131-163. Springer International Publishing. doi:10.1007/978-3-030-95959-3_4
 - `rauhut2005b`: Rauhut, O. W. M. (2005). Osteology and relationships of a new theropod dinosaur from the Middle Jurassic of Patagonia. *Palaeontology* 48(1): 87-110. doi:10.1111/j.1475-4983.2004.00436.x

@@ -1,5 +1,19 @@
 # Gugyedong
 
+## Does Choi and Kwon's zircon work bracket the Gugyedong at 106–100 Ma?
+
+*2026-10-09*
+
+**Conclusion.** No. The member stays Albian on the basis given for its formation in the [Hupyeongdong](../h/hupyeongdong.md) entry of 2026-10-03, which rules the bracket out: the ages from the units above are maximum depositional ages and do not bound the Hupyeongdong from above. Governs the `choi2019a` note on Gugyedong and the location and `choi2019a` notes on [*Ultrasaurus tabriensis*](../../../genera/U/Ultrasaurus.yml).
+
+**Evidence.**
+- choi2019a, as quoted in the Hupyeongdong entry: maximum depositional ages of 104.9, 99.8 and 96 Ma for the Jeomgok, Sagok and Banyawol formations, and none from the Hupyeongdong.
+
+**Ruled out.**
+- *About 106 to 100 Ma, late Albian.* As in the Hupyeongdong entry.
+
+**Open.** Nothing.
+
 ## Is the Gugyedong Aptian, and is it a formation?
 
 *2026-09-30*

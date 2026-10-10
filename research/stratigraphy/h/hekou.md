@@ -1,5 +1,20 @@
 # Hekou
 
+## Does the Hekou Group begin in the Berriasian?
+
+*2026-10-09*
+
+**Conclusion.** Yes. Xi and colleagues relay a magnetostratigraphic range of 138–106 Ma, and 138 Ma is latest Berriasian on the ICS chart v2024/12, whose Valanginian begins at 137.05 Ma. Under the union rule the group's stages run Berriasian–Albian. Governs `stages` on [Hekou](../../../stratigraphy/h/hekou.yml); the Hekou taxa take Barremian–Aptian from their own sources and do not change.
+
+**Evidence.**
+- xi2018a, p. 277: "Magnetic evaluations were performed for the early Cretaceous strata in the Xining-Lanzhou and Liupanshan Basins, showing that the Hekou and Liupanshan Groups date to 138–106 and 127–110 Ma, respectively".
+- oyabu2026a: "the Hekou Group (Valanginian–Albian … )", taken from Xi and colleagues (2018).
+
+**Ruled out.**
+- *A Valanginian start.* Oyabu's stage label rests on Xi and colleagues' number, which states no stage; a bare number is placed on the current chart.
+
+**Open.** The magnetostratigraphic studies Xi and colleagues relay have not been read.
+
 ## Is every "Hekou" in the literature this unit?
 
 *2026-09-30*
@@ -18,6 +33,8 @@
 
 ## References
 
+- `xi2018a`: Xi, D. P.; Wan, X. Q.; Li, G. B.; Li, G. (2018). Cretaceous integrative stratigraphy and timescale of China. *Science China Earth Sciences* 62(1): 256-286. doi:10.1007/s11430-017-9262-y
+- `oyabu2026a`: Oyabu, S.; Kobayashi, Y.; Zelenitsky, D. K.; Fiorillo, A. R.; Kano, M. (2026). A new nodosaurid ankylosaur (Dinosauria: Ornithischia) from the Upper Cretaceous Hikagenosawa Formation in Japan reveals dispersal pattern of Asian nodosaurid ankylosaurs. *Cretaceous Research*: 106477. doi:10.1016/j.cretres.2026.106477
 - `li2014a`: Li, L. G.; Li, D. Q.; You, H. L.; Dodson, P. (2014). A New Titanosaurian Sauropod from the Hekou Group (Lower Cretaceous) of the Lanzhou-Minhe Basin, Gansu Province, China. *PLoS ONE* 9(1): e85979. doi:10.1371/journal.pone.0085979
 - `you2008a`: You, H. L.; Li, D. Q.; Zhou, L. Q.; Ji, Q. (2008). Daxiatitan binglingi: a giant sauropod dinosaur from the Early Cretaceous of China. *Gansu Geology* 17(4): 1-10.
 - `xing2024a`: Xing, L.; Niu, K.; Mallon, J.; Miyashita, T. (2024). A new armored dinosaur with double cheek horns from the early Late Cretaceous of southeastern China. *Vertebrate Anatomy Morphology Palaeontology* 11. doi:10.18435/vamp29396
