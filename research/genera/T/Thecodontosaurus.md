@@ -1,5 +1,22 @@
 # *Thecodontosaurus*
 
+## Which diagnosis does *Thecodontosaurus antiquus* take?
+
+*2026-10-09*
+
+**Conclusion.** The diagnosis of Ballell and colleagues (2020), which they present as revised: a combination of eight characters, three of them autapomorphies, drawn from over 1,000 Tytherington bones. It replaces a list built from the erecting paper and earlier emended diagnoses, whose dental and caudal characters the redescription finds variable or shared with other early sauropodomorphs. The paper does not restudy the type specimens, but it is a full redescription of the species with a new diagnosis, so it is the species' `described_in`. Governs `diagnostic_features` and `described_in` on [*Thecodontosaurus antiquus*](../../../genera/T/Thecodontosaurus.yml).
+
+**Evidence.**
+- ballell2020a, p. e1770774-1: "we provide a revised diagnosis of this taxon".
+- ballell2020a, p. e1770774-2, Diagnosis: "A sauropodomorph dinosaur distinguished from other basal sauropodomorphs by the following combination of characters (autapomorphies indicated with an asterisk)", listing the absent postorbital flange, unrecurved coarsely serrated tooth crowns, the scapular triceps scar*, the humeral cuboid fossa*, the reduced brevis fossa and shelf, the incompletely perforated acetabulum, the absent trochanteric shelf and the tibial posterolateral process*.
+- ballell2020a, p. e1770774-20: the subquadratic postacetabular process of the original species diagnosis is "a poor diagnostic trait"; of the posterior caudal neural spines and the reduced caudal ventral groove, "these two traits have poor diagnostic power", the first failing "to discriminate *Thecodontosaurus* from other basal sauropodomorphs" and the second "highly variable at both intra- and interspecific levels".
+
+**Ruled out.**
+- *Keeping the earlier list.* The redescription rejects its reduced caudal ventral furrow as variable, and its revised diagnosis has unrecurved crowns where the list had recurved ones. The list's keyhole neural canal and mid-caudal ridge are not discussed by the paper and appear in no diagnosis it accepts; that they lapse with the list is our reading, not the paper's statement.
+- *No described_in because the types were not restudied.* The holotype was destroyed in 1940 and the paper gives the neotype only as a reference; its diagnosis and description rest on referred material, which is the basis any modern account of the species must use.
+
+**Open.** Ballell and colleagues suggest *Pantydraco caducus* "might represent a juvenile" of the species (p. e1770774-1) without a formal synonymy; the *Pantydraco* record notes it.
+
 ## What deposit and site is the *Thecodontosaurus* type material from?
 
 *2026-09-08*
@@ -33,6 +50,7 @@
 
 ## References
 
+- `ballell2020a`: Ballell, A.; Rayfield, E. J.; Benton, M. J. (2020). Osteological redescription of the Late Triassic sauropodomorph dinosaur Thecodontosaurus antiquus based on new material from Tytherington, southwestern England. *Journal of Vertebrate Paleontology* 40(2): e1770774. doi:10.1080/02724634.2020.1770774
 - `benton2000b`: Benton, M. J.; Juul, L.; Storrs, G. W.; Galton, P. M. (2000). Anatomy and systematics of the prosauropod dinosaur Thecodontosaurus antiquus from the Upper Triassic of southwest England. *Journal of Vertebrate Paleontology* 20(1): 77-108. doi:10.1671/0272-4634(2000)020[0077:AASOTP]2.0.CO;2
 - `galton2007a`: Galton, P. M. (2007). Notes on the remains of archosaurian reptiles, mostly basal sauropodomorph dinosaurs, from the 1834 fissure fill (Rhaetian, Upper Triassic) at Clifton in Bristol, southwest England. *Revue de Paléobiologie* 26(2): 505-591.
 - `riley1836a`: Riley, H.; Stutchbury, S. (1836). A description of various fossil remains of three distinct saurian animals discovered in the autumn of 1834 in the Magnesian Conglomerate on Durdham-Down, near Bristol. *Proceedings of the Geological Society of London* 2: 397-399.
