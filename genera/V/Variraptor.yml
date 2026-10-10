@@ -1,36 +1,45 @@
 genus: Variraptor
-parent: Dromaeosauridae
+parent: Paraves
 placement: incertae sedis
 dispute:
   summary: >
-    Variraptor mechinorum was erected as a French dromaeosaurid on vertebrae
-    and a humerus (Le Loeuff and Buffetaut, 1998). Allain and Taquet (2000)
-    found no distinguishing features on the holotype and noted that most of
-    the diagnosis rests on a vertebra from another locality, and treated it as
-    a nomen dubium; Turner and colleagues (2012) agree. Moutrille and colleagues
-    (2025) find the sacral features non-autapomorphic and the referred material
-    possibly from more than one taxon. It is retained provisionally at
-    Dromaeosauridae incertae sedis.
+    Le Loeuff and Buffetaut (1998) erected Variraptor mechinorum as a
+    dromaeosaurid on a sacrum and last dorsal vertebra, referring a humerus, a
+    femur and vertebrae partly from another locality. Hartman and colleagues (2019)
+    recover it beside Bambiraptor among early microraptorians, and Cau and
+    Madzia (2021) among unenlagiines. Allain and Pereda-Suberbiola (2003) find
+    its dromaeosaurid identity far from certain, Senter and colleagues (2004)
+    could not confirm it as a deinonychosaur, and Turner and colleagues (2012)
+    find no characters diagnostic of Dromaeosauridae. Moutrille and colleagues
+    (2025) compare a referred cervicodorsal with the eudromaeosaur Shri and the
+    type-locality ilium with early dromaeosaurids and avialans. Placed at
+    Paraves incertae sedis, the node common to these readings.
   history:
     - date: "2026-07-01"
       note: Retained at Dromaeosauridae incertae sedis; validity contested (possible nomen dubium, possible synonym of Pyroraptor).
     - date: "2026-10-09"
       note: Type species set to nomen dubium and diagnostic features removed, following Allain and Taquet (2000) and Turner and colleagues (2012). A citation for a basal dromaeosaurid placement was removed, as the paper cited does not discuss Variraptor; the placement is left for a separate review.
+    - date: "2026-10-09"
+      note: >
+        Moved from Dromaeosauridae to Paraves incertae sedis, since the
+        holotype cannot be shown to be a dromaeosaurid. The Cau and Madzia
+        (2021) citation is restored, as Variraptor appears in that paper's
+        tree figure.
 pronunciation:
   phonetic: VARR-i-rap-tor
   ipa: /ˈværɪræptər/
 etymology: "From Latin Varus (referring to the Var River in the Alpes-Maritimes
   of southern France where it was found) and Latin raptor ('thief' or
   'plunderer'), meaning 'Var thief'"
-description: Variraptor is a possibly dubious and potentially chimaeric genus of
-  dromaeosaurid theropod dinosaur from the Late Cretaceous of France.
+description: Variraptor is a dubious and possibly chimeric genus of paravian
+  theropod dinosaur from the Late Cretaceous of France.
 diet: carnivore
 locomotion: bipedal
 paleoenvironment:
   - fluvial
 appearance:
   integument: feathered
-  evidence: direct
+  evidence: inferred
 identifiers:
   - source: pbdb
     id: "65135"
@@ -79,6 +88,17 @@ references:
   - id: turner2012a
     notes: Agrees with Allain and Taquet (2000) that the holotype is
       nondiagnostic and treats Variraptor mechinorum as a nomen dubium.
+  - id: allain2003a
+    notes: Finds the dromaeosaurid identity of the holotype far from certain
+      and the referred material's association very doubtful.
+  - id: senter2004a
+    notes: Could neither confirm nor rule out deinonychosaurian status.
+  - id: hartman2019a
+    notes: Recovers Variraptor as sister to Bambiraptor among early
+      microraptorians; it joins Unenlagiinae in three more steps.
+  - id: cau2021a
+    notes: Includes Variraptor as a pruned terminal ("k" in Fig. 6) whose
+      alternative positions all fall within Unenlagiinae.
   - id: moutrille2025a
     notes: Finds the sacral features of Variraptor non-autapomorphic and the
       referred material possibly from two or more taxa.
