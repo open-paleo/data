@@ -319,6 +319,16 @@
 
 **Exceptions.** None.
 
+## A value in `formation` must be a unit in use, and the right one for the site
+
+*2026-10-09*
+
+**Rule.** Supersedes the 2026-09-03 entry below, which emptied the field for any informal local name or numbered subdivision nobody erected. Check that the value names a body of rock at formation rank, or used at that rank, and that the unit's outcrop reaches the type locality. A unit nobody formally erected still fills the field when it is in wide use as the name of that rock: printed independently by several sources, whether in paleontology or in other geological work such as mapping, mining or petroleum exploration. Its registry entry then carries `informal: true`. An age term with a lithology empties the field, and so does a local name or numbered level that only one paper prints; what the source does say goes in the notes. Decides `location.formation`, and whether an informal unit gets a registry entry.
+
+**Why.** The test is whether the unit is useful to carry: whether a reader meeting the name in the literature needs it to resolve. A single paper's label for its own level is not, and admitting such labels would give the registry one unit per paper. Isalo III and Isalo IIIb were never formally erected, but have named Madagascar's Middle Jurassic dinosaur horizons across several decades of independent papers and the regional geology, so [*Archaeodontosaurus*](../genera/A/Archaeodontosaurus.yml), [*Lapparentosaurus*](../genera/L/Lapparentosaurus.yml) and [*Narindasaurus*](../genera/N/Narindasaurus.yml) keep them (see [Isalo IIIb](stratigraphy/i/isalo-iiib.md)). The cases of the earlier entry still hold: [*Embasaurus*](../genera/E/Embasaurus.yml)'s "Neocomian Sands" is an age term and a lithology, [*Stenopelix*](../genera/S/Stenopelix.yml)'s "Obernkirchen Sandstein" fails on rank, and [*Chilantaisaurus*](../genera/C/Chilantaisaurus.yml)'s Ulansuhai does not reach its locality.
+
+**Exceptions.** None.
+
 ## A value in `formation` must be a formation, and the right one for the site
 
 *2026-09-03*
