@@ -1,5 +1,24 @@
 # Yixian
 
+## Which Lujiatun-locality species take `member: Lujiatun`?
+
+*2026-10-10*
+
+**Conclusion.** Only *Mei long*, whose describing paper places the specimen in the Lujiatun beds as a unit. The other six name Lujiatun only as a place, with the horizon given as the lowest, basal or lower part of the Yixian Formation or the formation alone, and under the rule applied for [*Dilong*](../../genera/D/Dilong.md) and [*Liaoceratops*](../../genera/L/Liaoceratops.md) a place name matching the unit name is not a member assignment. Governs `location.member` on [*Mei long*](../../../genera/M/Mei.yml) and its absence on [*Incisivosaurus gauthieri*](../../../genera/I/Incisivosaurus.yml), [*Sinovenator changii*](../../../genera/S/Sinovenator.yml), [*Sinusonasus magnodens*](../../../genera/S/Sinusonasus.yml), [*Liaoningvenator curriei*](../../../genera/L/Liaoningvenator.yml), [*Daliansaurus liaoningensis*](../../../genera/D/Daliansaurus.yml) and [*Dilong paradoxus*](../../../genera/D/Dilong.yml).
+
+**Evidence.**
+- xu2004c, p. 838: "Lujiatun, Shangyuan, Beipiao City, western Liaoning, China; lowest more fluvial, volcaniclastic beds of Yixian Formation"; p. 840: "Exceptionally well-preserved vertebrate specimens have been collected from the Lujiatun beds over the last few years".
+- xu2002d, p. 291: "Lujiatun, Shangyuan, Beipiao City, Liaoning, China; lowest part of Yixian Formation".
+- xu2002a, p. 780: "Lujiatun and Yanzigou, Shanyuan, western Liaoning, China; lowest part of Yixian Formation".
+- shen2017a, p. 360: "Lujiatun, Shangyuan, Beipiao City, Liaoning Province, China; fluvial and volcaniclastic beds of the basal Yixian Formation".
+- xu2004d, p. 680: "Lujiatun, Beipiao, western Liaoning; … fine sand beds of the lower part of the Yixian Formation".
+- xu2004b, p. 22: "Lujiatun locality, Beipiao, Liaoning Province, China; Yixian Formation"; shen2017b: "Lujiatun, Beipiao City, Liaoning Province; Yixian Formation, Lower Cretaceous".
+
+**Ruled out.**
+- *`member: Lujiatun` on all seven.* For six of them the only link to the unit is the place name.
+
+**Open.** Whether *Graciliraptor* and *Jeholosaurus*, which already carry the member, have a source placing them in the Lujiatun beds.
+
 ## Are the Yixian's subdivisions members or beds?
 
 *2026-10-04*
@@ -33,6 +52,13 @@
 
 ## References
 
+- `xu2004c`: Xu, X.; Norell, M. A. (2004). A new troodontid dinosaur from China with avian-like sleeping posture. *Nature* 431(7010): 838-841. doi:10.1038/nature02898
+- `xu2002d`: Xu, X.; Cheng, Y. N.; Wang, X. L.; Chang, C. H. (2002). An unusual oviraptorosaurian dinosaur from China. *Nature* 419(6904): 291-293. doi:10.1038/nature00966
+- `xu2002a`: Xu, X.; Norell, M. A.; Wang, X. L.; Makovicky, P. J.; Wu, X. C. (2002). A basal troodontid from the Early Cretaceous of China. *Nature* 415(6873): 780-784. doi:10.1038/415780a
+- `shen2017a`: Shen, C. Z.; Zhao, B.; Gao, C. L.; Lü, J. C.; Kundrát, M. (2017). A new troodontid dinosaur (Liaoningvenator curriei gen. et sp. nov.) from the Early Cretaceous Yixian Formation in western Liaoning Province. *Acta Geoscientica Sinica* 38(3): 359-371. doi:10.3975/cagsb.2017.03.06
+- `xu2004d`: Xu, X.; Norell, M. A.; Kuang, X.; Wang, X.; Zhao, Q.; Jia, C. (2004). Basal tyrannosauroids from China and evidence for protofeathers in tyrannosauroids. *Nature* 431(7009): 680-684. doi:10.1038/nature02855
+- `xu2004b`: Xu, X.; Wang, X. (2004). A new troodontid (Theropoda: Troodontidae) from the Lower Cretaceous Yixian Formation of western Liaoning, China. *Acta Geologica Sinica (English Edition)* 78(1): 22-26. doi:10.1111/j.1755-6724.2004.tb00671.x
+- `shen2017b`: Shen, C.; Lü, J.; Liu, S.; Kundrát, M.; Brusatte, S. L.; Gao, H. (2017). A New Troodontid Dinosaur from the Lower Cretaceous Yixian Formation of Liaoning Province, China. *Acta Geologica Sinica (English Edition)* 91(3): 763-780. doi:10.1111/1755-6724.13307
 - `wang2016a`: Wang, Y.; Olsen, P. E.; Sha, J.; Yao, X.; Liao, H.; Pan, Y.; Kinney, S.; Zhang, X.; Rao, X. (2016). Stratigraphy, correlation, depositional environments, and cyclicity of the Early Cretaceous Yixian and ?Jurassic-Cretaceous Tuchengzi formations in the Sihetun area (NE China) based on three continuous cores. *Palaeogeography, Palaeoclimatology, Palaeoecology*.
 - `yang2020a`: Yang, Y.; Wu, W.; Dieudonné, P. E.; Godefroit, P. (2020). A new basal ornithopod dinosaur from the Lower Cretaceous of China. *PeerJ* 8: e9832. doi:10.7717/peerj.9832
 - `bell2022a`: Bell, P. R.; Hendrickx, C.; Pittman, M.; Kaye, T. G.; Mayr, G. (2022). The exquisitely preserved integument of Psittacosaurus and the scaly skin of ceratopsian dinosaurs. *Communications Biology* 5(1): 809. doi:10.1038/s42003-022-03749-3

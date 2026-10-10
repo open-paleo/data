@@ -1,5 +1,38 @@
 # Oldman and Dinosaur Park
 
+## Are the three Oldman holotypes in Dinosaur Provincial Park placed below the contact?
+
+*2026-10-10*
+
+**Conclusion.** Yes. Each has a post-1993 source that places its holotype below the Oldman–Dinosaur Park contact by the specimen's own position, so all three keep `formation: Oldman`. Governs `location.formation` and `location.notes` on [*Daspletosaurus torosus*](../../genera/D/Daspletosaurus.yml), [*Brachylophosaurus canadensis*](../../genera/B/Brachylophosaurus.yml) and [*Tromerosaurus solumons*](../../genera/T/Tromerosaurus.yml).
+
+**Evidence.**
+- powers2026a, Type Locality: *Tromerosaurus* from "Oldman Formation … 4 meters below the nearest measured Oldman-Dinosaur Park Formation contact, from eastern Dinosaur Provincial Park, quarry Q258"; Table 2 lists CMN 8506 (*Daspletosaurus torosus*) at quarry Q072, 3.867 m below the nearest contact, and calls Q072 "the type locality for Daspletosaurus torosus".
+- cuthbertson2010a, p. 374: the *Brachylophosaurus* type locality is in the "Oldman Formation of Belly River Group … 7.5 m below the Dinosaur Park Formation-Oldman Formation contact (David Evans, pers. comm.)".
+- russell1970a: the *Daspletosaurus* type is "NMC 8506 … (quarry 88 of Sternberg 1905)".
+
+**Ruled out.**
+- *Dinosaur Park Formation for any of the three.* No source read places them above the contact.
+
+**Open.** Whether Sternberg's quarry 88 and Powers and colleagues' Q072 are one site; neither paper equates the two numbers.
+
+## Which formation holds the *Struthiomimus altus* holotype?
+
+*2026-10-10*
+
+**Conclusion.** The Oldman Formation, on Claessens and Loewen (2016), who place the type there in the modern sense of the name. This settles the Struthiomimus part of the 2026-10-04 entry's Open line. Governs `location.formation: Oldman` on [*Struthiomimus altus*](../../genera/S/Struthiomimus.yml).
+
+**Evidence.**
+- claessens2016a: "The genus Struthiomimus, in contrast, is known from the Oldman Formation (which includes the type for S. altus) and spans from 78 to 77 Ma"; the same passage gives *Ornithomimus edmontonicus* from the "Dinosaur Park Formation", so the paper uses the post-1993 split. Its Fig. 12 takes stratigraphic positions "after Raynolds et al. (2007), Cullen et al. (2013), Eberth et al. (2013), and Roberts et al. (2013)".
+- lambe1902a, p. 53: "Belly River series, Red Deer river … The right hind limb with the phalanges of the left foot, were found in 1901, below Berry creek."
+- russell1972a, p. 383: "Type NMC 930 … (Oldman Formation, probably near Steveville ferry crossing, Dinosaur Provincial Park)", a pre-1993 use of the name.
+
+**Ruled out.**
+- *Dinosaur Park Formation.* No source read places CMN 930 there. McFeeters and colleagues (2016) put an *S. altus* specimen, UCMZ 1980.1, in the lowest Dinosaur Park on a personal communication, not the holotype.
+- *Russell's "Oldman" alone.* It predates the split, so it does not choose between the two formations.
+
+**Open.** Which of the works behind Claessens and Loewen's Fig. 12 measures the holotype's position.
+
 ## When an older paper puts a Dinosaur Provincial Park specimen in the "Oldman Formation", which formation does the record take?
 
 *2026-10-04*
@@ -21,6 +54,11 @@
 
 ## References
 
+- `powers2026a`: Powers, M. J.; Napoli, J. G.; Coppock, C. C.; Sharpe, H. S.; Garros, C. W.; Demers-Potvin, A. V.; Raun, G. S.; Stock, J. C.; Miyashita, T.; Currie, P. J. (2026). A new albertosaurine from the Oldman Formation, Alberta, Canada, illuminates ambiguity between albertosaurine and tyrannosaurine characteristics. *Journal of Vertebrate Paleontology*: e2728669. doi:10.1080/02724634.2026.2728669
+- `cuthbertson2010a`: Cuthbertson, R. S.; Holmes, R. B. (2010). The first complete description of the holotype of Brachylophosaurus canadensis Sternberg, 1953 (Dinosauria: Hadrosauridae) with comments on intraspecific variation. *Zoological Journal of the Linnean Society* 159(2): 373-397. doi:10.1111/j.1096-3642.2009.00612.x
+- `russell1970a`: Russell, D. A. (1970). Tyrannosaurs from the Late Cretaceous of western Canada. *Publications in Palaeontology* 1. doi:10.5281/zenodo.1040973
+- `claessens2016a`: Claessens, L. P. A. M.; Loewen, M. A. (2016). A redescription of Ornithomimus velox Marsh, 1890 (Dinosauria, Theropoda). *Journal of Vertebrate Paleontology* 36(1): e1034593. doi:10.1080/02724634.2015.1034593
+- `lambe1902a`: Lambe, L. M. (1902). New genera and species from the Belly River Series (mid-Cretaceous). *Geological Survey of Canada Contributions to Canadian Palaeontology* 3(2): 25-81. doi:10.5281/zenodo.3233762
 - `russell1972a`: Russell, D. A. (1972). Ostrich Dinosaurs from the Late Cretaceous of Western Canada. *Canadian Journal of Earth Sciences* 9(4): 375-402. doi:10.1139/e72-031
 - `eberth1993b`: Eberth, D. A.; Hamblin, A. P. (1993). Tectonic, stratigraphic, and sedimentologic significance of a regional discontinuity in the upper Judith River Group (Belly River wedge) of southern Alberta, Saskatchewan, and northern Montana. *Canadian Journal of Earth Sciences* 30(1): 174-200. doi:10.1139/e93-016
 - `eberth2005a`: Eberth, D. A. (2005). The geology. In *Dinosaur Provincial Park: A Spectacular Ancient Ecosystem Revealed*, pp. 54-82. Indiana University Press, Bloomington.
