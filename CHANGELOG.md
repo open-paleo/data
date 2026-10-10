@@ -130,6 +130,17 @@ Initial public release, establishing the v1 output schema.
   rationale remains in `dispute`.
 
 ### Changed
+- Genus-level `iczn_rulings` renamed `iczn_cases`, and its `type`
+  vocabulary renamed from `iczn_ruling_types` to `iczn_case_types`. Each
+  entry now carries a required `status` from a new `iczn_case_statuses`
+  vocabulary (`opinion`, `open`, `closed`, `withdrawn`) and an optional
+  `case` number, so a case the Commission closed without an Opinion, or
+  one still before it, can be recorded. An optional `notices` list cites
+  the Commission's published notices about a case, such as its receipt
+  and closure. `ruling` is required for, and only allowed on,
+  `status: opinion`; any other status needs a `case`, a `petition` or a
+  notice. The ten existing entries are all `opinion`, and *Kryptops* gains
+  the closed Case 3795 with its two notices. Output schema 1.12.0 → 2.0.0.
 - Repo-wide naming convention: prose is American English, while names take
   the form used by the English-language literature. Institution names stay
   in their native form, non-English reference titles keep the native title

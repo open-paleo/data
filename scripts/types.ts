@@ -568,19 +568,32 @@ export type Appearance = {
 };
 
 /**
- * A formal ICZN ruling affecting a genus's nomenclature (e.g. a
- * plenary-power designation of the type species). Genus-scoped.
+ * An ICZN case affecting a genus's nomenclature (e.g. an application for a
+ * plenary-power designation of the type species), whether or not the
+ * Commission ruled on it. Genus-scoped.
  */
-export type IcznRuling = {
+export type IcznCase = {
     /**
-     * The kind of ruling, from schema.yml `iczn_ruling_types`
-     * (e.g. "type-species", "name-conservation").
+     * The kind of action sought or ruled on, from schema.yml
+     * `iczn_case_types` (e.g. "type-species", "name-conservation").
      */
     type?: string;
 
     /**
-     * Reference ID (resolved against the reference store) of the published Opinion that
-     * issued the ruling.
+     * Where the case stands, from schema.yml `iczn_case_statuses`
+     * ("opinion", "open", "closed", "withdrawn").
+     */
+    status?: string;
+
+    /**
+     * The Commission's case number (e.g. "3795").
+     */
+    case?: string;
+
+    /**
+     * Reference ID (resolved against the reference store) of the published
+     * Opinion that ruled on the case. Present only when `status` is
+     * "opinion".
      */
     ruling?: string;
 
@@ -589,6 +602,13 @@ export type IcznRuling = {
      * petitioned for the ruling, when cited.
      */
     petition?: string;
+
+    /**
+     * Reference IDs (resolved against the reference store) of the Commission's
+     * published notices about the case, such as its acknowledgement of
+     * receipt and its notice of closure.
+     */
+    notices?: Array<string>;
 
     /**
      * Plain-text explanation of what the ruling did and why.
@@ -862,10 +882,10 @@ export type GenusData = {
     erected_in?: string;
 
     /**
-     * Formal ICZN rulings affecting this genus's nomenclature (e.g. a
-     * plenary-power type-species designation).
+     * ICZN cases affecting this genus's nomenclature (e.g. a plenary-power
+     * type-species designation), ruled on or not.
      */
-    iczn_rulings?: Array<IcznRuling>;
+    iczn_cases?: Array<IcznCase>;
 
     /**
      * Year the genus was erected. DERIVED during build from the genus
@@ -1132,9 +1152,14 @@ export type Schema = {
     specimen_categories?: Array<string>;
 
     /**
-     * Allowed kinds of ICZN ruling (applied to `iczn_rulings[].type`).
+     * Allowed kinds of ICZN case (applied to `iczn_cases[].type`).
      */
-    iczn_ruling_types?: Array<string>;
+    iczn_case_types?: Array<string>;
+
+    /**
+     * Allowed ICZN case statuses (applied to `iczn_cases[].status`).
+     */
+    iczn_case_statuses?: Array<string>;
 
     /**
      * Allowed integument types.

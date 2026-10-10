@@ -226,7 +226,8 @@ const allowedSpecimenTypes = new Set(schema.specimen_types ?? []);
 const allowedFormerIdReasons = new Set(schema.former_id_reasons ?? []);
 const allowedThesisTypes = new Set(schema.thesis_types ?? []);
 const allowedSpecimenCategories = new Set(schema.specimen_categories ?? []);
-const allowedIcznRulingTypes = new Set(schema.iczn_ruling_types ?? []);
+const allowedIcznCaseTypes = new Set(schema.iczn_case_types ?? []);
+const allowedIcznCaseStatuses = new Set(schema.iczn_case_statuses ?? []);
 const allowedIntegument = new Set(schema.integument ?? []);
 const allowedIntegumentEvidence = new Set(schema.integument_evidence ?? []);
 const allowedFeatures = new Set(Object.values(schema.appearance_features ?? {}).flat());
@@ -834,25 +835,36 @@ for (const [filePath, doc] of genusParsed)
             `erected_in '${doc.erected_in}' does not resolve to a store entry`);
     }
 
-    // Check genus-level ICZN ruling references.
-    if (Array.isArray(doc.iczn_rulings))
+    // Check genus-level ICZN case references.
+    if (Array.isArray(doc.iczn_cases))
     {
-        for (const ruling of doc.iczn_rulings)
+        for (const icznCase of doc.iczn_cases)
         {
-            if (ruling && ruling.ruling && !referenceStoreIds.has(ruling.ruling))
+            if (icznCase && icznCase.ruling && !referenceStoreIds.has(icznCase.ruling))
             {
                 checkError(
                     "Reference integrity",
                     filePath,
-                    `iczn_rulings: ruling '${ruling.ruling}' does not resolve to a store entry`);
+                    `iczn_cases: ruling '${icznCase.ruling}' does not resolve to a store entry`);
             }
 
-            if (ruling && ruling.petition && !referenceStoreIds.has(ruling.petition))
+            if (icznCase && icznCase.petition && !referenceStoreIds.has(icznCase.petition))
             {
                 checkError(
                     "Reference integrity",
                     filePath,
-                    `iczn_rulings: petition '${ruling.petition}' does not resolve to a store entry`);
+                    `iczn_cases: petition '${icznCase.petition}' does not resolve to a store entry`);
+            }
+
+            for (const notice of Array.isArray(icznCase?.notices) ? icznCase.notices : [])
+            {
+                if (!referenceStoreIds.has(notice))
+                {
+                    checkError(
+                        "Reference integrity",
+                        filePath,
+                        `iczn_cases: notice '${notice}' does not resolve to a store entry`);
+                }
             }
         }
     }
@@ -1006,44 +1018,98 @@ for (const bucket of fs.readdirSync(stratigraphyDirectory, { withFileTypes: true
     }
 }
 
-// 10b. ICZN ruling compliance — each ruling needs a known type and an Opinion
-startCheck("ICZN ruling compliance");
+// 10b. ICZN case compliance — each case needs a known type and status; a case
+// the Commission ruled on cites its Opinion, and any other case carries a case
+// number, a petition or a notice so the entry points somewhere
+startCheck("ICZN case compliance");
 
 for (const [filePath, doc] of genusParsed)
 {
-    if (!doc || !Array.isArray(doc.iczn_rulings))
+    if (doc && "iczn_rulings" in doc)
+    {
+        checkError(
+            "ICZN case compliance",
+            filePath,
+            "legacy 'iczn_rulings' field present (renamed 'iczn_cases')");
+    }
+
+    if (!doc || !Array.isArray(doc.iczn_cases))
     {
         continue;
     }
 
-    for (const ruling of doc.iczn_rulings)
+    for (const icznCase of doc.iczn_cases)
     {
-        if (!ruling)
+        if (!icznCase)
         {
             continue;
         }
 
-        if (!ruling.type)
+        if (!icznCase.type)
         {
             checkError(
-                "ICZN ruling compliance",
+                "ICZN case compliance",
                 filePath,
-                "iczn_rulings: entry missing required 'type'");
+                "iczn_cases: entry missing required 'type'");
         }
-        else if (!allowedIcznRulingTypes.has(ruling.type))
+        else if (!allowedIcznCaseTypes.has(icznCase.type))
         {
             checkError(
-                "ICZN ruling compliance",
+                "ICZN case compliance",
                 filePath,
-                `iczn_rulings: invalid type '${ruling.type}' (must be one of: ${[...allowedIcznRulingTypes].join(", ")})`);
+                `iczn_cases: invalid type '${icznCase.type}' (must be one of: ${[...allowedIcznCaseTypes].join(", ")})`);
         }
 
-        if (!ruling.ruling)
+        if (icznCase.notices !== undefined && !Array.isArray(icznCase.notices))
         {
             checkError(
-                "ICZN ruling compliance",
+                "ICZN case compliance",
                 filePath,
-                `iczn_rulings: entry of type '${ruling.type ?? "?"}' missing required 'ruling' (the Opinion reference)`);
+                "iczn_cases: 'notices' must be a list of reference ids");
+        }
+
+        if (icznCase.case !== undefined && (typeof icznCase.case !== "string" || !/^\d+$/.test(icznCase.case)))
+        {
+            checkError(
+                "ICZN case compliance",
+                filePath,
+                `iczn_cases: case '${icznCase.case}' is not a case number (digits only, quoted as a string)`);
+        }
+
+        if (!icznCase.status)
+        {
+            checkError(
+                "ICZN case compliance",
+                filePath,
+                "iczn_cases: entry missing required 'status'");
+        }
+        else if (!allowedIcznCaseStatuses.has(icznCase.status))
+        {
+            checkError(
+                "ICZN case compliance",
+                filePath,
+                `iczn_cases: invalid status '${icznCase.status}' (must be one of: ${[...allowedIcznCaseStatuses].join(", ")})`);
+        }
+        else if (icznCase.status === "opinion" && !icznCase.ruling)
+        {
+            checkError(
+                "ICZN case compliance",
+                filePath,
+                `iczn_cases: entry of type '${icznCase.type ?? "?"}' with status 'opinion' missing required 'ruling' (the Opinion reference)`);
+        }
+        else if (icznCase.status !== "opinion" && icznCase.ruling)
+        {
+            checkError(
+                "ICZN case compliance",
+                filePath,
+                `iczn_cases: entry with status '${icznCase.status}' has a 'ruling'; only a case closed by an Opinion cites one`);
+        }
+        else if (icznCase.status !== "opinion" && !icznCase.case && !icznCase.petition && !icznCase.notices?.length)
+        {
+            checkError(
+                "ICZN case compliance",
+                filePath,
+                `iczn_cases: entry with status '${icznCase.status}' needs a 'case' number, a 'petition' or a 'notices' reference`);
         }
     }
 }
@@ -1093,7 +1159,7 @@ for (const [filePath, doc] of genusParsed)
 }
 
 // 10d. Self-contained references — every reference pointer within a genus or
-// clade (erected_in, described_in, iczn_rulings.ruling/petition) must also
+// clade (erected_in, described_in, iczn_cases.ruling/petition/notices) must also
 // appear in that file's own `references` block, so a consumer can resolve any
 // citation from the single inflated record without a separate lookup. The
 // build inflates only the `references` list, so a pointer absent from it would
@@ -1151,15 +1217,20 @@ for (const [filePath, doc] of genusParsed)
         pointers.push([`species '${speciesLabel}': described_in`, species.described_in]);
     }
 
-    for (const ruling of doc.iczn_rulings ?? [])
+    for (const icznCase of doc.iczn_cases ?? [])
     {
-        if (!ruling)
+        if (!icznCase)
         {
             continue;
         }
 
-        pointers.push(["iczn_rulings: ruling", ruling.ruling]);
-        pointers.push(["iczn_rulings: petition", ruling.petition]);
+        pointers.push(["iczn_cases: ruling", icznCase.ruling]);
+        pointers.push(["iczn_cases: petition", icznCase.petition]);
+
+        for (const notice of Array.isArray(icznCase.notices) ? icznCase.notices : [])
+        {
+            pointers.push(["iczn_cases: notice", notice]);
+        }
     }
 
     checkSelfContainedReferences(filePath, localIds, pointers);
@@ -3080,7 +3151,7 @@ for (const [filePath, doc] of genusParsed)
 // field added to a record — or a registry that gains a `notes:` — is picked
 // up by all three prose checks at once. The alternative, a hand-written list
 // of field paths per check, is what left `type_specimen.notes`,
-// `former_ids[].notes`, `iczn_rulings[].notes` and whole registries
+// `former_ids[].notes`, `iczn_cases[].notes` and whole registries
 // unchecked, and let the two lists drift apart from each other.
 //
 // Prose is identified by the name of the key holding the string, not by its
@@ -3561,8 +3632,8 @@ for (const field of proseFields)
 // 26. Reference key in prose
 //
 // Reference keys are pointers. They belong in `id`, `erected_in`,
-// `described_in`, `notable_specimens[].references`, `iczn_rulings.petition`,
-// `iczn_rulings.ruling` and `former_ids[].source` — never in a sentence,
+// `described_in`, `notable_specimens[].references`, `iczn_cases.petition`,
+// `iczn_cases.ruling`, `iczn_cases.notices` and `former_ids[].source` — never in a sentence,
 // where the citation reads "Zhang (2018)" or "(Zhang, 2018)". Scoped to the
 // prose walk, so the ~2,150 keys sitting in pointer fields are never seen.
 //
@@ -3659,7 +3730,7 @@ if (outputSchema)
         "status", "placement", "synonym_types", "diet", "locomotion", "completeness",
         "holotype_status", "specimen_types", "former_id_reasons", "thesis_types",
         "specimen_categories",
-        "iczn_ruling_types", "integument", "integument_evidence",
+        "iczn_case_types", "iczn_case_statuses", "integument", "integument_evidence",
         "paleoenvironments", "identifier_sources", "periods",
     ];
 
