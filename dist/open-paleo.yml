@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-10-10T00:17:49.007Z
+  built_at: 2026-10-10T00:30:24.959Z
   clade_count: 188
   genus_count: 1425
   license: CC-BY-4.0
@@ -206,7 +206,7 @@ tree:
 clades:
   Abelisauridae:
     description: |
-      Abelisauridae is a family of ceratosaurian theropod dinosaurs that were among the dominant large predators of the southern supercontinent Gondwana during the Cretaceous. Like most theropods they were carnivorous bipeds, but they are distinguished by short, tall skulls whose bones are heavily ornamented with grooves, pits, and protrusions, often bearing horns or brow ridges above the eyes, and by dramatically reduced, vestigial forelimbs set on stocky hind limbs. Most known members ranged from about 5 to 9 meters in length. Their fossils are found across Africa, South America, and western Europe, as well as the Indian subcontinent and Madagascar. A grade of more basal forms such as Rugops and Eoabelisaurus gives way to two derived branches: the Indo-Madagascan and European Majungasaurinae and the mostly South American Brachyrostra, the latter including well-known genera such as Carnotaurus and Aucasaurus.
+      Abelisauridae is a family of ceratosaurian theropod dinosaurs that were among the dominant large predators of the southern supercontinent Gondwana during the Cretaceous. Like most theropods they were carnivorous bipeds, but they are distinguished by short, tall skulls whose bones are heavily ornamented with grooves, pits, and protrusions, often bearing horns or brow ridges above the eyes, and by dramatically reduced, vestigial forelimbs set on stocky hind limbs. Most known members ranged from about 5 to 9 meters in length. Their fossils are found across Africa, South America, and western Europe, as well as the Indian subcontinent and Madagascar. A grade of more basal forms such as Rugops gives way to two derived branches: the Indo-Madagascan and European Majungasaurinae and the mostly South American Brachyrostra, the latter including well-known genera such as Carnotaurus and Aucasaurus.
     taxonomy:
       - Life
       - Animalia
@@ -63857,19 +63857,23 @@ genera:
     described: 1983
   Eoabelisaurus:
     genus: Eoabelisaurus
-    parent: Abelisauridae
+    parent: Ceratosauria
+    placement: incertae sedis
     dispute:
       summary: |
-        Eoabelisaurus is recovered as the basalmost abelisaurid by its describers (Pol and Rauhut, 2012) and by Zaher and colleagues (2020), but several analyses instead place it outside Abelisauridae as a basal abelisauroid, and one hypothesis allies it with Ceratosauridae.
+        Pol and Rauhut (2012) and Zaher and colleagues (2020) recovered Eoabelisaurus as the basalmost abelisaurid, and Pol and colleagues (2024) placed it among the basal branches of Abelisauridae by parsimony but outside Abelisauroidea in their Bayesian analysis. Tortosa and colleagues (2014), Filippi and colleagues (2016) and Delcourt (2017) recovered it as the basalmost abelisauroid, while Farke and Sertich (2013), Cerroni and colleagues (2020) and Aranciaga Rolando and colleagues (2020) placed it just outside Abelisauroidea. Wang and colleagues (2016) recovered it as the basalmost ceratosaurid, and Hendrickx and colleagues (2024) as a neoceratosaur outside both Ceratosauridae and Abelisauroidea. Placed at Ceratosauria incertae sedis, the least inclusive clade common to these readings.
       history:
         - date: 2026-06-30
           note: |
             Placed at Abelisauridae following the describing analysis and Zaher and colleagues (2020).
+        - date: 2026-10-09
+          note: |
+            Moved from Abelisauridae to Ceratosauria incertae sedis, since independent analyses place it outside Abelisauroidea.
     pronunciation:
       ipa: /ˈioʊəˌbɛlɪˈsɔːrəs/
       phonetic: EE-o-ah-BEL-i-SOR-us
     etymology: From Greek 'eos' (ἠώς) meaning 'dawn' combined with the genus name Abelisaurus, indicating it is an early (dawn) relative of Abelisaurus.
-    description: Eoabelisaurus is a genus of abelisauroid theropod dinosaur from the Lower Jurassic Cañadón Asfalto Formation of the Cañadón Asfalto Basin in Argentina, South America. The generic name combines a Greek ἠώς, (eos), "dawn", with the name Abelisaurus, in reference to the fact it represents an early relative of the latter. Only one species is currently recognized, E. mefi; the specific name honors the MEF, the Museo Paleontológico "Egidio Feruglio", where discoverer Diego Pol is active. It is characterized by reduced forelimb proportions that show primitive characteristics of the Abelisauridae family.
+    description: Eoabelisaurus is a genus of ceratosaurian theropod dinosaur from the Lower Jurassic Cañadón Asfalto Formation of the Cañadón Asfalto Basin in Argentina, South America. The generic name combines a Greek ἠώς, (eos), "dawn", with the name Abelisaurus, in reference to the fact it represents an early relative of the latter. Only one species is currently recognized, E. mefi; the specific name honors the MEF, the Museo Paleontológico "Egidio Feruglio", where discoverer Diego Pol is active. Its forelimb combines an unreduced humerus with a shortened forearm and a short, robust hand, which its describers read as an early stage of the forelimb reduction seen in abelisaurids.
     diet: carnivore
     locomotion: bipedal
     paleoenvironment:
@@ -63958,6 +63962,97 @@ genera:
         issue: "6"
         doi: 10.5852/cr-palevol2020v19a6
         notes: Recovered Eoabelisaurus as the most basal member within Abelisauridae.
+      - id: pol2024a
+        authors: Pol, D.; Baiano, M. A.; Černý, D.; Novas, F. E.; Cerda, I. A.; Pittman, M.
+        year: 2024
+        title: A new abelisaurid dinosaur from the end Cretaceous of Patagonia and evolutionary rates among the Ceratosauria
+        journal: Cladistics
+        publisher: Wiley
+        volume: "40"
+        issue: "3"
+        pages: 307-356
+        doi: 10.1111/cla.12583
+        notes: Recovered Eoabelisaurus among the basal branches of Abelisauridae by parsimony, but outside Abelisauroidea, as sister to Xenotarsosaurus, in a Bayesian analysis; both results are weakly supported.
+      - id: farke2013a
+        authors: Farke, A. A.; Sertich, J. J. W.
+        year: 2013
+        title: An Abelisauroid Theropod Dinosaur from the Turonian of Madagascar
+        journal: PLoS ONE
+        publisher: Public Library of Science (PLoS)
+        volume: "8"
+        issue: "4"
+        pages: e62047
+        doi: 10.1371/journal.pone.0062047
+        notes: Recovered Eoabelisaurus as a non-abelisauroid ceratosaur, sister to Abelisauroidea, with two extra steps needed to force it into Abelisauridae.
+      - id: tortosa2014a
+        authors: Tortosa, T.; Buffetaut, E.; Vialle, N.; Dutour, Y.; Turini, E.; Cheylan, G.
+        year: 2014
+        title: "A new abelisaurid dinosaur from the Late Cretaceous of southern France: Palaeobiogeographical implications"
+        journal: Annales de Paléontologie
+        publisher: Elsevier BV
+        volume: "100"
+        issue: "1"
+        pages: 63-86
+        doi: 10.1016/j.annpal.2013.10.003
+        notes: Recovered Eoabelisaurus with Berberosaurus as the basalmost members of Abelisauroidea, outside Abelisauridae.
+      - id: filippi2016a
+        authors: Filippi, L. S.; Méndez, A. H.; Juárez Valieri, R. D.; Garrido, A. C.
+        year: 2016
+        title: A new brachyrostran with hypertrophied axial structures reveals an unexpected radiation of latest Cretaceous abelisaurids
+        journal: Cretaceous Research
+        publisher: Elsevier BV
+        volume: "61"
+        pages: 209-219
+        doi: 10.1016/j.cretres.2015.12.018
+        notes: Recovered Eoabelisaurus as the basalmost abelisauroid, extending the Tortosa and colleagues (2014) dataset.
+      - id: delcourt2017a
+        authors: Delcourt, R.
+        year: 2017
+        title: "Revised morphology of Pycnonemosaurus nevesi Kellner & Campos, 2002 (Theropoda: Abelisauridae) and its phylogenetic relationships"
+        journal: Zootaxa
+        volume: "4276"
+        issue: "1"
+        pages: 1-45
+        doi: 10.11646/zootaxa.4276.1.1
+        notes: Recovered Eoabelisaurus as the basalmost abelisauroid on a modified Filippi and colleagues (2016) dataset.
+      - id: cerroni2020a
+        authors: Cerroni, M. A.; Motta, M. J.; Agnolín, F. L.; Aranciaga Rolando, A. M.; Brissón Egli, F.; Novas, F. E.
+        year: 2020
+        title: A new abelisaurid from the Huincul Formation (Cenomanian-Turonian; Upper Cretaceous) of Río Negro province, Argentina
+        journal: Journal of South American Earth Sciences
+        publisher: Elsevier BV
+        volume: "98"
+        doi: 10.1016/j.jsames.2019.102445
+        notes: Recovered Eoabelisaurus as the sister taxon of Abelisauroidea on the Filippi and colleagues (2016) dataset.
+      - id: aranciagarolando2020a
+        authors: Aranciaga Rolando, M.; Cerroni, M. A.; García Marsà, J. A.; Agnolín, F. L.; Motta, M. J.; Rozadilla, S.; Brissón Egli, F.; Novas, F. E.
+        year: 2020
+        title: A new medium-sized abelisaurid (Theropoda, Dinosauria) from the late cretaceous (Maastrichtian) Allen Formation of Northern Patagonia, Argentina
+        journal: Journal of South American Earth Sciences
+        publisher: Elsevier BV
+        volume: "105"
+        doi: 10.1016/j.jsames.2020.102915
+        notes: Recovered Eoabelisaurus as the sister taxon of Ligabueino plus Abelisauroidea on the Filippi and colleagues (2016) dataset.
+      - id: wang2016b
+        authors: Wang, S.; Stiegler, J.; Amiot, R.; Wang, X.; Du, G. H.; Clark, J. M.; Xu, X.
+        year: 2016
+        title: Extreme Ontogenetic Changes in a Ceratosaurian Theropod
+        journal: Current Biology
+        volume: "27"
+        issue: "1"
+        pages: 144-148
+        doi: 10.1016/j.cub.2016.10.043
+        notes: Recovered Eoabelisaurus as the basalmost member of Ceratosauridae, a clade this analysis nests within Abelisauridae.
+      - id: hendrickx2024a
+        authors: Hendrickx, C.; Cerroni, M. A.; Agnolín, F. L.; Catalano, S.; Ribeiro, C. F.; Delcourt, R.
+        year: 2024
+        title: Osteology, relationship, and feeding ecology of the theropod dinosaur Noasaurus leali, from the Late Cretaceous of North-Western Argentina
+        journal: Zoological Journal of the Linnean Society
+        volume: "202"
+        issue: "4"
+        pages: zlae150
+        doi: 10.1093/zoolinnean/zlae150
+        notes: Recovered Eoabelisaurus on two revised datasets, as a neoceratosaur between Ceratosauridae and Abelisauroidea in one and as the sister taxon of Ceratosauridae plus Abelisauridae in the other.
     taxonomy:
       - Life
       - Animalia
@@ -63973,8 +64068,6 @@ genera:
       - Neotheropoda
       - Averostra
       - Ceratosauria
-      - Abelisauroidea
-      - Abelisauridae
     authors: Pol, D.; Rauhut, O. W. M.
     described: 2012
   Eocarcharia:
