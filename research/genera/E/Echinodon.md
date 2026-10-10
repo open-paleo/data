@@ -1,5 +1,22 @@
 # *Echinodon*
 
+## Does the *Echinodon* lectotype take the R register letter?
+
+*2026-10-09*
+
+**Conclusion.** No. The lectotype is NHMUK 48209 and NHMUK 48210, one individual under two numbers, written without a register letter. The R that a 2026 prefix normalization added to 48209 was a judgement made for bare numbers in general, not a transcription, and the describing paper rules it out for this series. Governs `type_specimen.specimen_id` on [*Echinodon becklesii*](../../../genera/E/Echinodon.yml).
+
+**Evidence.**
+- norman2002a, p. 172: "Designated lectotype. BMNH 48209 ... and BMNH 48210 (incorrectly listed as BMNH R48210 by Sereno 1991)"; "Paralectotypes. BMNH 48211 (incorrectly listed as BMNH R4821 1 by Sereno 1991)".
+- norman2002a, p. 173: "the lectotype of Echinodon becklesii consists of the remains of a single individual that bears two catalogue numbers (BMNH 48209 and BMNH 48210)".
+- sereno2012a, p. 6, table: "NHMUK 48209, 48210 ... (lectotypes)".
+
+**Ruled out.**
+- *NHMUK PV R 48209.* No source read prints an R for 48209, and Norman and Barrett (2002) correct the R form for its companion numbers. Adding the letter would assert a register no source gives.
+- *48209 alone.* Norman and Barrett designate both numbers as the lectotype, and Sereno (2012) lists both.
+
+**Open.** Whether the other bare NHMUK numbers that gained R in the same normalization are in the R register has not been checked here.
+
 ## Is the *Echinodon* type material from the Upper Building Stones?
 
 *2026-08-22*
@@ -18,6 +35,11 @@
 
 ## References
 
-- `thulborn1973a`: Thulborn, R. A. (1973). Teeth of ornithischian dinosaurs from the Upper Jurassic of Portugal, with description of a hypsilophodontid (Phyllodon henkeli gen. et sp. nov.) from the Guimarota lignite. *Memórias dos Serviços Geológicos de Portugal* 22: 89-134.
+- `norman2002a`: Norman, D. B.; Barrett, P. M. (2002). Ornithischian dinosaurs from the Lower Cretaceous (Berriasian) of England. *Special Papers in Palaeontology* 68: 161-189.
 - `sereno2012a`: Sereno, P. C. (2012). Taxonomy, morphology, masticatory function and phylogeny of heterodontosaurid dinosaurs. *ZooKeys* 226: 1-225. doi:10.3897/zookeys.226.2840
+- `thulborn1973a`: Thulborn, R. A. (1973). Teeth of ornithischian dinosaurs from the Upper Jurassic of Portugal, with description of a hypsilophodontid (Phyllodon henkeli gen. et sp. nov.) from the Guimarota lignite. *Memórias dos Serviços Geológicos de Portugal* 22: 89-134.
 - `clements1993a`: Clements, R. G. (1993). Type-section of the Purbeck Limestone Group, Durlston Bay, Swanage, Dorset. *Proceedings of the Dorset Natural History and Archaeological Society* 114: 181-206.
+
+## Other references
+
+- `sereno1991a`: Sereno, P. C. (1991). Lesothosaurus, 'fabrosaurids,' and the early evolution of Ornithischia. *Journal of Vertebrate Paleontology* 11(2): 168-197. doi:10.1080/02724634.1991.10011386

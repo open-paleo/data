@@ -19,19 +19,7 @@ paleoenvironment:
   - coastal
   - lacustrine
 diagnostic_features:
-  - Teeth thecodont (implanted in sockets with cross partitions forming
-    alveoli), distinguishing Echinodon from pleurodont genera such as Macellodon
-  - Crown lamelliform with marginal serrations on apical half that increase in
-    size toward the base, terminating in two large basal spine-like points
-  - Basal half of crown has thickened fore and hind borders forming two ridges
-    that converge at an acute angle, causing an undulated transverse surface
-    between them and the median rising
-  - Crown suddenly expands both transversely and antero-posteriorly above the
-    subcylindrical fang, then contracts to a sharp apex; outer and inner sides
-    converge in almost a straight line to the apex
-  - Anterior teeth laniariform (subcompressed, slightly recurved, sharp-pointed
-    canine-like), contrasting with typical expanded posterior molar-like teeth
-    in the same jaw
+  - One or possibly two caniniform teeth at the anterior end of the maxilla
 appearance:
   features:
     - enlarged caniniform teeth
@@ -88,17 +76,26 @@ species:
         min: 0.15
         max: 0.15
     type_specimen:
-      specimen_id: [ NHMUK PV R 48209 ]
+      specimen_id: [ NHMUK 48209, NHMUK 48210 ]
       specimen_type: lectotype
       institution: NHMUK
-      material: Premaxillae.
+      material: Left and right premaxillae, the left maxilla in two parts with
+        natural molds of maxillary and dentary teeth, the left pterygoid, and a
+        possible jugal and palatine.
       completeness: fragmentary
+      notes: >
+        Norman and Barrett (2002) designated the lectotype from Owen's syntype
+        series. Its two numbers are one individual, the maxillary fragment of
+        48210 fitting the mold preserved with 48209; the other syntypes are
+        paralectotypes.
     erected_in: owen1861a
+    described_in: norman2002a
 references:
   - id: owen1861a
   - id: norman2002a
-    notes: Redescription of the Echinodon material from the Lower Cretaceous of
-      England.
+    notes: Redescribes the Echinodon material, designates the lectotype, revises
+      the diagnosis, and finds the genus probably a late-surviving
+      heterodontosaurid.
   - id: jones2026a
     notes: Source of the body length, mass, and hip height estimates, and the
       appearance features.
