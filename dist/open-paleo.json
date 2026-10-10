@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-10-10T02:40:38.468Z",
+    "built_at": "2026-10-10T03:05:40.149Z",
     "clade_count": 188,
     "genus_count": 1424,
     "license": "CC-BY-4.0",
@@ -228352,10 +228352,10 @@
     },
     "Variraptor": {
       "genus": "Variraptor",
-      "parent": "Dromaeosauridae",
+      "parent": "Paraves",
       "placement": "incertae sedis",
       "dispute": {
-        "summary": "Variraptor mechinorum was erected as a French dromaeosaurid on vertebrae and a humerus (Le Loeuff and Buffetaut, 1998). Allain and Taquet (2000) found no distinguishing features on the holotype and noted that most of the diagnosis rests on a vertebra from another locality, and treated it as a nomen dubium; Turner and colleagues (2012) agree. Moutrille and colleagues (2025) find the sacral features non-autapomorphic and the referred material possibly from more than one taxon. It is retained provisionally at Dromaeosauridae incertae sedis.\n",
+        "summary": "Le Loeuff and Buffetaut (1998) erected Variraptor mechinorum as a dromaeosaurid on a sacrum and last dorsal vertebra, referring a humerus, a femur and vertebrae partly from another locality. Hartman and colleagues (2019) recover it beside Bambiraptor among early microraptorians, and Cau and Madzia (2021) among unenlagiines. Allain and Pereda-Suberbiola (2003) find its dromaeosaurid identity far from certain, Senter and colleagues (2004) could not confirm it as a deinonychosaur, and Turner and colleagues (2012) find no characters diagnostic of Dromaeosauridae. Moutrille and colleagues (2025) compare a referred cervicodorsal with the eudromaeosaur Shri and the type-locality ilium with early dromaeosaurids and avialans. Placed at Paraves incertae sedis, the node common to these readings.\n",
         "history": [
           {
             "date": "2026-07-01",
@@ -228364,6 +228364,10 @@
           {
             "date": "2026-10-09",
             "note": "Type species set to nomen dubium and diagnostic features removed, following Allain and Taquet (2000) and Turner and colleagues (2012). A citation for a basal dromaeosaurid placement was removed, as the paper cited does not discuss Variraptor; the placement is left for a separate review."
+          },
+          {
+            "date": "2026-10-09",
+            "note": "Moved from Dromaeosauridae to Paraves incertae sedis, since the holotype cannot be shown to be a dromaeosaurid. The Cau and Madzia (2021) citation is restored, as Variraptor appears in that paper's tree figure.\n"
           }
         ]
       },
@@ -228372,7 +228376,7 @@
         "ipa": "/ˈværɪræptər/"
       },
       "etymology": "From Latin Varus (referring to the Var River in the Alpes-Maritimes of southern France where it was found) and Latin raptor ('thief' or 'plunderer'), meaning 'Var thief'",
-      "description": "Variraptor is a possibly dubious and potentially chimaeric genus of dromaeosaurid theropod dinosaur from the Late Cretaceous of France.",
+      "description": "Variraptor is a dubious and possibly chimeric genus of paravian theropod dinosaur from the Late Cretaceous of France.",
       "diet": "carnivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -228380,7 +228384,7 @@
       ],
       "appearance": {
         "integument": "feathered",
-        "evidence": "direct"
+        "evidence": "inferred"
       },
       "identifiers": [
         {
@@ -228489,6 +228493,53 @@
           "notes": "Agrees with Allain and Taquet (2000) that the holotype is nondiagnostic and treats Variraptor mechinorum as a nomen dubium."
         },
         {
+          "id": "allain2003a",
+          "authors": "Allain, R.; Pereda-Suberbiola, X.",
+          "year": 2003,
+          "title": "Dinosaurs of France",
+          "journal": "Comptes Rendus Palevol",
+          "publisher": "Elsevier BV",
+          "volume": "2",
+          "issue": "1",
+          "pages": "27-44",
+          "doi": "10.1016/S1631-0683(03)00002-2",
+          "notes": "Finds the dromaeosaurid identity of the holotype far from certain and the referred material's association very doubtful."
+        },
+        {
+          "id": "senter2004a",
+          "authors": "Senter, P.; Barsbold, R.; Britt, B. B.; Burnham, D. A.",
+          "year": 2004,
+          "title": "Systematics and evolution of Dromaeosauridae (Dinosauria, Theropoda)",
+          "journal": "Bulletin of the Gunma Museum of Natural History",
+          "volume": "8",
+          "pages": "1-20",
+          "notes": "Could neither confirm nor rule out deinonychosaurian status."
+        },
+        {
+          "id": "hartman2019a",
+          "authors": "Hartman, S.; Mortimer, M.; Wahl, W. R.; Lomax, D. R.; Lippincott, J.; Lovelace, D. M.",
+          "year": 2019,
+          "title": "A new paravian dinosaur from the Late Jurassic of North America supports a late acquisition of avian flight",
+          "journal": "PeerJ",
+          "publisher": "PeerJ",
+          "volume": "7",
+          "pages": "e7247",
+          "doi": "10.7717/peerj.7247",
+          "notes": "Recovers Variraptor as sister to Bambiraptor among early microraptorians; it joins Unenlagiinae in three more steps."
+        },
+        {
+          "id": "cau2021a",
+          "authors": "Cau, A.; Madzia, D.",
+          "year": 2021,
+          "title": "The phylogenetic affinities and morphological peculiarities of the bird-like dinosaur Borogovia gracilicrus from the Upper Cretaceous of Mongolia",
+          "journal": "PeerJ",
+          "publisher": "PeerJ",
+          "volume": "9",
+          "pages": "e12640",
+          "doi": "10.7717/peerj.12640",
+          "notes": "Includes Variraptor as a pruned terminal (\"k\" in Fig. 6) whose alternative positions all fall within Unenlagiinae."
+        },
+        {
           "id": "moutrille2025a",
           "authors": "Moutrille, L.; Cau, A.; Chinzorig, T.; Escuillié, F.; Tsogtbaatar, K.; Ganzorig, B.; Mallet, C.; Godefroit, P.",
           "year": 2025,
@@ -228520,10 +228571,7 @@
         "Avetheropoda",
         "Coelurosauria",
         "Maniraptora",
-        "Paraves",
-        "Eumaniraptora",
-        "Deinonychosauria",
-        "Dromaeosauridae"
+        "Paraves"
       ],
       "authors": "Le Loeuff, J.; Buffetaut, E.",
       "described": 1998
