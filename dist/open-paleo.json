@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-10-10T20:28:41.483Z",
+    "built_at": "2026-10-10T21:29:54.074Z",
     "clade_count": 188,
     "genus_count": 1424,
     "license": "CC-BY-4.0",
@@ -46181,6 +46181,7 @@
             "locality": "Little Sandhill Creek, near Steveville",
             "region": "Alberta",
             "formation": "Oldman",
+            "notes": "Sternberg (1953) gives quarry No. 58, \"60 feet above the level of Red Deer River\". Cuthbertson and Holmes (2010) place the type locality \"7.5 m below the Dinosaur Park Formation-Oldman Formation contact\", on a personal communication from David Evans.",
             "region_code": "CA-AB"
           },
           "type_specimen": {
@@ -67619,6 +67620,7 @@
             "locality": "Quarry 88",
             "region": "Alberta",
             "formation": "Oldman",
+            "notes": "Russell (1970) gives the type as from \"quarry 88 of Sternberg 1905\", under a pre-1993 Oldman Formation. Powers and colleagues (2026) list CMN 8506 at their quarry Q072, which they call the type locality, 3.867 m below the nearest Oldman-Dinosaur Park Formation contact.",
             "region_code": "CA-AB"
           },
           "type_specimen": {
@@ -67800,6 +67802,17 @@
           "publisher": "National Museum of Natural Sciences, Ottawa",
           "volume": "1",
           "doi": "10.5281/zenodo.1040973"
+        },
+        {
+          "id": "powers2026a",
+          "authors": "Powers, M. J.; Napoli, J. G.; Coppock, C. C.; Sharpe, H. S.; Garros, C. W.; Demers-Potvin, A. V.; Raun, G. S.; Stock, J. C.; Miyashita, T.; Currie, P. J.",
+          "year": 2026,
+          "title": "A new albertosaurine from the Oldman Formation, Alberta, Canada, illuminates ambiguity between albertosaurine and tyrannosaurine characteristics",
+          "journal": "Journal of Vertebrate Paleontology",
+          "publisher": "Informa UK Limited",
+          "pages": "e2728669",
+          "doi": "10.1080/02724634.2026.2728669",
+          "notes": "Lists the holotype CMN 8506 at quarry Q072, 3.867 m below the nearest Oldman-Dinosaur Park Formation contact."
         },
         {
           "id": "paul2024a",
@@ -142691,9 +142704,9 @@
             "locality": "Lujiatun, Shangyuan, Beipiao City",
             "region": "Liaoning",
             "formation": "Yixian",
-            "part": "lower",
-            "region_code": "CN-LN",
-            "part_of": "formation"
+            "member": "Lujiatun",
+            "notes": "The describing paper gives the horizon as the \"lowest more fluvial, volcaniclastic beds of Yixian Formation\" and discusses the specimen's burial among the vertebrates \"collected from the Lujiatun beds\".",
+            "region_code": "CN-LN"
           },
           "type_specimen": {
             "specimen_id": [
@@ -206922,7 +206935,8 @@
             "country": "CA",
             "locality": "below Berry Creek, Steveville",
             "region": "Alberta",
-            "formation": "Dinosaur Park",
+            "formation": "Oldman",
+            "notes": "Lambe (1902) records the hind limb \"found in 1901, below Berry creek\" in the Belly River series, and Russell (1972) gives \"Oldman Formation, probably near Steveville ferry crossing\", a name that then still covered the beds now in the Dinosaur Park Formation. Claessens and Loewen (2016), using the modern split, place the type in the Oldman Formation, at 78 to 77 Ma.",
             "region_code": "CA-AB"
           },
           "type_specimen": {
@@ -207002,6 +207016,31 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25021-2",
           "notes": "Source of the appearance features."
+        },
+        {
+          "id": "claessens2016a",
+          "authors": "Claessens, L. P. A. M.; Loewen, M. A.",
+          "year": 2016,
+          "title": "A redescription of Ornithomimus velox Marsh, 1890 (Dinosauria, Theropoda)",
+          "journal": "Journal of Vertebrate Paleontology",
+          "publisher": "Informa UK Limited",
+          "volume": "36",
+          "issue": "1",
+          "pages": "e1034593",
+          "doi": "10.1080/02724634.2015.1034593",
+          "notes": "Places the Struthiomimus altus type in the Oldman Formation, dated 78 to 77 Ma."
+        },
+        {
+          "id": "russell1972a",
+          "authors": "Russell, D. A.",
+          "year": 1972,
+          "title": "Ostrich Dinosaurs from the Late Cretaceous of Western Canada",
+          "journal": "Canadian Journal of Earth Sciences",
+          "publisher": "Canadian Science Publishing",
+          "volume": "9",
+          "issue": "4",
+          "pages": "375-402",
+          "doi": "10.1139/e72-031"
         },
         {
           "id": "mcfeeters2016a",
@@ -222786,6 +222825,7 @@
             "locality": "Quarry Q258, Dinosaur Provincial Park",
             "region": "Alberta",
             "formation": "Oldman",
+            "notes": "The describing paper places the quarry \"4 meters below the nearest measured Oldman-Dinosaur Park Formation contact\", in a massive yellow-stained sandstone below the field station bentonite.",
             "region_code": "CA-AB"
           },
           "type_specimen": {
