@@ -1,5 +1,18 @@
 # Dawangzhangzi
 
+## Which records does the Dakangpu equivalence govern?
+
+*2026-10-10*
+
+**Conclusion.** It also governs [*Xingtianosaurus ganqi*](../../../genera/X/Xingtianosaurus.yml), whose describing paper gives the Dakangpu Bed and states its equivalence to the Dawangzhangzi Bed; the 2026-09-30 entry did not link it. Governs `location.member: Dawangzhangzi` on *Xingtianosaurus ganqi*.
+
+**Evidence.**
+- qiu2019a, p. 2: "The Dakangpu Bed (same horizon to Dawangzhangzi Bed) of Yixian Formation", for the *Xingtianosaurus* locality.
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## Whose statement is it that the Dakangpu Bed is the Dawangzhangzi Bed?
 
 *2026-10-10*
@@ -53,9 +66,9 @@
 
 ## References
 
+- `qiu2019a`: Qiu, R.; Wang, X.; Wang, Q.; Li, N.; Zhang, J.; Ma, Y. (2019). A new caudipterid from the Lower Cretaceous of China with information on the evolution of the manus of Oviraptorosauria. *Scientific Reports* 9(1). doi:10.1038/s41598-019-42547-6
 - `wang2001a`: Wang, X.; Xu, X. (2001). A new iguanodontid (Jinzhousaurus yangi gen. et sp. nov.) from the Yixian Formation of western Liaoning, China. *Chinese Science Bulletin* 46(19): 1669-1672. doi:10.1007/bf02900633
 - `wu2012a`: Wu, W. H.; Godefroit, P. (2012). Anatomy and relationships of Bolong yixianensis, an Early Cretaceous iguanodontoid dinosaur from western Liaoning, China. In *Bernissart Dinosaurs and Early Cretaceous Terrestrial Ecosystems (Godefroit, P., ed.)*. Indiana University Press, Bloomington.
-- `qiu2019a`: Qiu, R.; Wang, X.; Wang, Q.; Li, N.; Zhang, J.; Ma, Y. (2019). A new caudipterid from the Lower Cretaceous of China with information on the evolution of the manus of Oviraptorosauria. *Scientific Reports* 9(1). doi:10.1038/s41598-019-42547-6
 - `lefèvre2014a`: Lefèvre, U.; Hu, D.; Escuillié, F.; Dyke, G.; Godefroit, P. (2014). A new long-tailed basal bird from the Lower Cretaceous of north-eastern China. *Biological Journal of the Linnean Society* 113(3): 790-804. doi:10.1111/bij.12343
 - `mcdonald2010b`: McDonald, A. T.; Kirkland, J. I.; DeBlieux, D. D.; Madsen, S. K.; Cavin, J.; Milner, A. R. C.; Panzarin, L. (2010). New Basal Iguanodonts from the Cedar Mountain Formation of Utah and the Evolution of Thumb-Spiked Dinosaurs. *PLoS ONE* 5(11): e14075. doi:10.1371/journal.pone.0014075
 - `ji2016a`: Ji, Q.; Wu, X.; Cheng, Y.; Ten, F.; Ji, Y. (2016). Fish-hunting ankylosaurs (Dinosauria, Ornithischia) from the Cretaceous of China. *Journal of Geology* 40(2): 183-190. doi:10.3969/j.issn.1674-3636.2016.02.183

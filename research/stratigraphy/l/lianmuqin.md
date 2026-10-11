@@ -1,5 +1,21 @@
 # Lianmuqin
 
+## What stages do the Wuerho Lianmuqin taxa take?
+
+*2026-10-10*
+
+**Conclusion.** Valanginian to Albian, the only range stated for their horizon and, as the 2026-09-30 entry has it, the formation's own range. The Barremian–Aptian these records carried came from a reading of Xu and colleagues (2018) that the paper does not support: its "(Barremian-Aptian?)" is the *Xiyunykus* horizon at Wucaiwan. Governs `stage` on [*Xinjiangovenator parvus*](../../../genera/X/Xinjiangovenator.yml), [*Tugulusaurus faciles*](../../../genera/T/Tugulusaurus.yml), [*Phaedrolosaurus ilikensis*](../../../genera/P/Phaedrolosaurus.yml) and [*Kelmayisaurus petrolicus*](../../../genera/K/Kelmayisaurus.yml).
+
+**Evidence.**
+- rauhut2005c, for *Tugulusaurus*, *Phaedrolosaurus* and *Xinjiangovenator*: "Locality and Horizon-Wuerho, Lianmugin Formation, Xinjiang, China. Age-?Valanginian-Albian (Shen and Mateer, 1992)".
+- brusatte2012c: "Lianmugin Formation, Tugulu Group (Early Cretaceous: ?Valanginian-Albian)"; the age "is not known with certainty, but falls somewhere within the Valanginian to the Albian".
+- xu2018c, p. 2853, for *Xiyunykus*: "Wucaiwan area, Junggar Basin, Xinjiang, China; Upper Cretaceous (Barremian-Aptian?) upper part of the Tugulu Group".
+
+**Ruled out.**
+- *Barremian–Aptian for the Wuerho taxa.* Xu and colleagues give it only for the Wucaiwan horizon; Fowler and Hall (2020) relay it for *Tugulusaurus* from the same paper.
+
+**Open.** Shen and Mateer (1992), the source Rauhut and Xu and the Dinosauria tables give for "?Valanginian-Albian", has not been read; nor has Zhao (1980), which Zheng and colleagues use for the position of the vertebrate layer in the lower Lianmuqin.
+
 ## Is the Lianmuqin Formation Valanginian?
 
 *2026-09-30*
@@ -19,11 +35,13 @@
 
 ## References
 
+- `rauhut2005c`: Rauhut, O. W. M.; Xu, X. (2005). The small theropod dinosaurs Tugulusaurus and Phaedrolosaurus from the early Cretaceous of Xinjiang, China. *Journal of Vertebrate Paleontology* 25(1): 107-118. doi:10.1671/0272-4634(2005)025[0107:tstdta]2.0.co;2
+- `brusatte2012c`: Brusatte, S. L.; Benson, R. B. J.; Xu, X. (2012). A reassessment of Kelmayisaurus petrolicus, a large theropod dinosaur from the Early Cretaceous of China. *Acta Palaeontologica Polonica* 57(1): 65-72. doi:10.4202/app.2010.0125
+- `xu2018c`: Xu, X.; Choiniere, J.; Tan, Q.; Benson, R. B. J.; Clark, J.; Sullivan, C.; Zhao, Q.; Han, F.; Ma, Q.; He, Y.; Wang, S.; Xing, H.; Tan, L. (2018). Two Early Cretaceous Fossils Document Transitional Stages in Alvarezsaurian Dinosaur Evolution. *Current Biology* 28(17): 2853-2860.e3. doi:10.1016/j.cub.2018.07.057
 - `zheng2023a`: Zheng, D.; Chang, S. C.; Ramezani, J.; Xu, X.; Xu, H.; Wang, H.; Pei, R.; Fang, Y.; Wang, J.; Wang, B.; Zhang, H. (2023). Calibrating the Early Cretaceous Urho Pterosaur Fauna in Junggar Basin and implications for the evolution of the Jehol Biota. *Geological Society of America Bulletin*. doi:10.1130/B36795.1
 - `paul2024a`: Paul, G. S. (2024). The Princeton Field Guide to Dinosaurs (3rd ed.). Princeton University Press.
 - `paul2024b`: Paul, G. S. (2024). The Princeton Field Guide to Predatory Dinosaurs. Princeton University Press.
 - `jia2024a`: Jia, L.; Li, N.; Dong, L.; Shi, J.; Kang, Z.; Wang, S.; Xu, S.; You, H. (2024). A new stegosaur from the late Early Cretaceous of Zuoyun, Shanxi Province, China. *Historical Biology* 37(2): 420-429. doi:10.1080/08912963.2024.2308214
-- `xu2018c`: Xu, X.; Choiniere, J.; Tan, Q.; Benson, R. B. J.; Clark, J.; Sullivan, C.; Zhao, Q.; Han, F.; Ma, Q.; He, Y.; Wang, S.; Xing, H.; Tan, L. (2018). Two Early Cretaceous Fossils Document Transitional Stages in Alvarezsaurian Dinosaur Evolution. *Current Biology* 28(17): 2853-2860.e3. doi:10.1016/j.cub.2018.07.057
 - `tucker2022a`: Tucker, R. T.; Hyland, E. G.; Gates, T. A.; King, M. R.; Roberts, E. M.; Foley, E. K.; Berndt, D.; Hanta, R.; Khansubha, S.; Aswasereelert, W.; Zanno, L. E. (2022). Age, depositional history, and paleoclimatic setting of Early Cretaceous dinosaur assemblages from the Sao Khua Formation (Khorat Group), Thailand. *Palaeogeography, Palaeoclimatology, Palaeoecology* 601: 111107. doi:10.1016/j.palaeo.2022.111107
 - `fowler2020b`: Fowler, D. W.; Wilson, J. P.; Freedman Fowler, E. A.; Noto, C. R.; Anduza, D.; Horner, J. R. (2020). Trierarchuncus prairiensis gen. et sp. nov., the last alvarezsaurid: Hell Creek Formation (uppermost Maastrichtian), Montana. *Cretaceous Research* 116. doi:10.1016/j.cretres.2020.104560
 - `meso2024a`: Meso, J. G.; Pol, D.; Chiappe, L.; Qin, Z.; Díaz-Martínez, I.; Gianechini, F.; Apesteguía, S.; Makovicky, P. J.; Pittman, M. (2024). Body size and evolutionary rate analyses reveal complex evolutionary history of Alvarezsauria. *Cladistics* 41(2): 135-155. doi:10.1111/cla.12600
