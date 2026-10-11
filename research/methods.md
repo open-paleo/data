@@ -249,6 +249,16 @@
 
 **Exceptions.** None.
 
+## A locality may name its containing division where `region` is too coarse
+
+*2026-10-10*
+
+**Rule.** Where `region` cannot hold the division that identifies a site, because `regions.yaml` stops above it, `locality` may follow the site name with that containing division ("Sihedang, Lingyuan"; "Lujiatun, Shangyuan, Beipiao City"). This supersedes the 2026-08-31 entry's "a county, province or district goes in `region`" for those countries; where `region` can hold the division, it still goes there. Decides `location.locality`.
+
+**Why.** In China `region` stops at the province, so a county such as Lingyuan has nowhere structured to go, and dropping it loses the division that locates the site (see [Sihedang](topics/sihedang.md)). The same holds in any country whose region codes are broad relative to its named sites. Folding a formation, bed or specimen number into `locality` stays wrong; the containing division is part of the place name.
+
+**Exceptions.** None.
+
 ## A locality names the site and nothing else
 
 *2026-08-31*
