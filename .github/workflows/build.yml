@@ -7,6 +7,12 @@ on:
 permissions:
   contents: write
 
+# Builds run one at a time: two pushes close together would otherwise build in
+# parallel and the second build's push would be rejected.
+concurrency:
+  group: build-main
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -73,5 +79,16 @@ jobs:
           git add -f dist/ dictionaries/
           if [ -n "$(git status --porcelain dist/ dictionaries/)" ]; then
             git commit -m "build: update output files"
-            git push
+            # A data commit can land on main while this build runs. On a
+            # rejected push, deepen the shallow checkout enough to find the
+            # merge base, rebase the build commit onto main and try again.
+            for attempt in 1 2 3; do
+              if git push; then
+                exit 0
+              fi
+              git fetch --deepen=50 origin main
+              git rebase origin/main
+            done
+            echo "Push still rejected after three attempts" >&2
+            exit 1
           fi

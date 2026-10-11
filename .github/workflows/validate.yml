@@ -33,7 +33,10 @@ jobs:
       - name: Lint
         run: npm run lint
 
+      # shell: bash makes GitHub add pipefail; without it the step's status is
+      # tee's, and a failing validate run would pass.
       - name: Validate data
+        shell: bash
         run: npm run validate | tee /tmp/validate-output.txt
 
       - name: Post flagged-references PR comment
