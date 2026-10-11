@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-10-11T17:32:04.173Z
+  built_at: 2026-10-11T18:19:14.924Z
   clade_count: 188
   genus_count: 1425
   license: CC-BY-4.0
@@ -22720,7 +22720,7 @@ genera:
           to_ma: 89.8
         location:
           country: AR
-          locality: Violante farm
+          locality: Pueblo Blanco Natural Reserve
           region: Río Negro
           formation: Huincul
           coordinates:
@@ -77994,14 +77994,14 @@ genera:
           to_ma: 89.8
         location:
           country: AR
-          locality: Violante farm
+          locality: Pueblo Blanco Natural Reserve
           region: Río Negro
           formation: Huincul
           part: lower
           coordinates:
             - -39.397881
             - -68.617861
-          notes: Apesteguia and colleagues (2016) withhold the coordinate, holding it on file; Cerroni and colleagues (2020) publish it.
+          notes: Apesteguía and colleagues (2016) place the holotype on the northern flank of the Meseta de la Rentería and withhold the exact site, holding it on file; Cerroni and colleagues (2020) give Gualicho as described from the Violante farm, whose position they print.
           region_code: AR-R
           part_of: formation
         size:
@@ -127993,7 +127993,7 @@ genera:
           to_ma: 89.8
         location:
           country: AR
-          locality: Violante farm
+          locality: Pueblo Blanco Natural Reserve
           region: Río Negro
           formation: Huincul
           coordinates:
@@ -165246,9 +165246,9 @@ genera:
           region_code: FR-83
         type_specimen:
           specimen_id:
-            - PSL 330201
+            - FSL 330201
           specimen_type: holotype
-          institution: Collections de la Faculté des Sciences de Lyon
+          institution: Université Claude Bernard Lyon 1
           material: Proximal half of left femur, 22 cm preserved length.
           completeness: fragmentary
         size:
@@ -166913,10 +166913,13 @@ genera:
           locality: Estancia Fernández
           region: Chubut
           formation: Cañadón Calcáreo
+          part: lower
           coordinates:
             - -43.16667
             - -69.25
+          notes: Carballido and colleagues (2011) place the holotype in a lacustrine silt-sandstone at the base of the formation, "some 15–20 m above the discordant contact" with the Lonco Trapial Formation, and note that Rich and colleagues' (1999) figured section was a composite. Cúneo and colleagues (2013) call its host the "middle lacustrine section", citing Carballido and colleagues.
           region_code: AR-U
+          part_of: formation
         size:
           weight_kg:
             min: 18000
@@ -166939,6 +166942,17 @@ genera:
         authors: Rich, T. H.; Vickers-Rich, P.; Giménez, O.; Cúneo, R.; Puerta, P.; Vacca, R.
         described: 1999
     references:
+      - id: cúneo2013a
+        authors: Cúneo, R.; Ramezani, J.; Scasso, R.; Pol, D.; Escapa, I.; Zavattieri, A. M.; Bowring, S. A.
+        year: 2013
+        title: "High-precision U-Pb geochronology and a new chronostratigraphy for the Cañadón Asfalto Basin, Chubut, central Patagonia: implications for terrestrial faunal and floral evolution in Jurassic"
+        journal: Gondwana Research
+        publisher: Elsevier BV
+        volume: "24"
+        issue: 3-4
+        pages: 1267-1275
+        doi: 10.1016/j.gr.2013.01.010
+        notes: Places Tehuelchesaurus in the "middle lacustrine section" of the formation, citing Rich and colleagues (1999) and Carballido and colleagues (2011).
       - id: rich1999a
         authors: Rich, T. H.; Vickers-Rich, P.; Giménez, O.; Cúneo, R.; Puerta, P.; Vacca, R.
         year: 1999
@@ -167086,13 +167100,15 @@ genera:
           name:
             - Late Jurassic
           stage:
-            - Tithonian
-          from_ma: 149.2
-          to_ma: 143.1
+            - Kimmeridgian
+          from_ma: 154.8
+          to_ma: 149.2
         location:
           country: FR
           region: Pas-de-Calais
           locality: Boulogne-sur-Mer
+          notes: |
+            Huene (1932) gives the vertebra as "aus dem oberen Malm der Gegend von Boulogne-sur-mer" (from the upper Malm of the Boulogne-sur-mer area, translated), and his figure caption as "aus dem Kimmeridge von Boulogne-sur-mer. Nach Sauvage" (from the Kimmeridge of Boulogne-sur-mer, after Sauvage, translated).
           region_code: FR-62
         size:
           length_m:
@@ -167531,7 +167547,7 @@ genera:
           locality: Mogoito
           region: Buryatia
           formation: Murtoi
-          notes: The holotype and the two other original caudals came from Promoina Klevenskogo, a ravine within the Mogoito locality exposing 5 to 6 m of section. Averianov and Skutschas (2017) name it in their remarks and Nessov (1995) had already used it for Mogoito sauropod material.
+          notes: The holotype and the two other original caudals came from Promoina Klevenskogo, a ravine within the Mogoito locality, from a small outcrop 5 to 6 m in length. Averianov and Skutschas (2017) name it in their remarks and Nessov (1995) had already used it for Mogoito sauropod material.
           region_code: RU-BU
         type_specimen:
           specimen_id:
@@ -168971,8 +168987,8 @@ genera:
           region: City of Bristol
           locality: Quarry Steps Quarry, Clifton
           coordinates:
-            - 51.4696
-            - -2.6176
+            - 51.470091
+            - -2.616854
           region_code: GB-BST
         size:
           length_m:
@@ -171669,6 +171685,8 @@ genera:
           locality: Tong'an
           region: Sichuan
           formation: Yimen
+          notes: |
+            Li and colleagues (2010) place the site, from field section tracing and the 1:200,000 geological map, in "下侏罗统益门组中上部，岩性为紫红色粉砂质泥岩" (the middle to upper part of the Lower Jurassic Yimen Formation, purplish-red silty mudstone, translated).
           region_code: CN-SC
         size:
           weight_kg:
@@ -172176,6 +172194,15 @@ genera:
         references:
           - cantrell2025a
     references:
+      - id: hatcher1907a
+        authors: Hatcher, J. B.; Marsh, O. C.; Lull, R. S.
+        year: 1907
+        title: The Ceratopsia
+        journal: Monographs of the United States Geological Survey
+        publisher: United States Geological Survey
+        volume: "49"
+        pages: 1-300
+        notes: Places the type on "the north side of Lightning Creek, about 2 miles above the mouth of that stream", in what it calls the Laramie.
       - id: cantrell2025a
         authors: Cantrell, A. K.; Suazo, T. L.
         year: 2025
@@ -172617,6 +172644,16 @@ genera:
         authors: Leidy, J.
         described: 1856
     references:
+      - id: lull1942a
+        authors: Lull, R. S.; Wright, N. E.
+        year: 1942
+        title: Hadrosaurian Dinosaurs of North America
+        journal: Geological Society of America Special Papers
+        publisher: Geological Society of America
+        volume: "40"
+        pages: 1-272
+        doi: 10.1130/spe40-p1
+        notes: Gives the holotype teeth, ANSP 9260, as collected "at the mouth of the Judith River where it enters the Missouri", in the Judith River formation.
       - id: leidy1856b
         authors: Leidy, J.
         year: 1856
@@ -172721,6 +172758,15 @@ genera:
         authors: Cerroni, M. A.; Motta, M. J.; Agnolín, F. L.; Aranciaga Rolando, A. M.; Brissón Egli, F.; Novas, F. E.
         described: 2020
     references:
+      - id: agnolín2023a
+        authors: Agnolín, F. L.; González Riga, B. J.; Aranciaga Rolando, A. M.; Rozadilla, S.; Motta, M. J.; Chimento, N. R.; Novas, F. E.
+        year: 2023
+        title: A new giant titanosaur (Dinosauria, Sauropoda) from the Upper Cretaceous of Northwestern Patagonia, Argentina
+        journal: Cretaceous Research
+        publisher: Elsevier BV
+        volume: "146"
+        doi: 10.1016/j.cretres.2023.105487
+        notes: Gives the site as "the Pueblo Blanco Natural Reserve (ex Violante farm)" and lists Tralkasaurus among the taxa described from it.
       - id: cerroni2020a
         authors: Cerroni, M. A.; Motta, M. J.; Agnolín, F. L.; Aranciaga Rolando, A. M.; Brissón Egli, F.; Novas, F. E.
         year: 2020
@@ -173719,6 +173765,15 @@ genera:
         authors: Thulborn, R. A.
         described: 1973
     references:
+      - id: mateus2009b
+        authors: Mateus, O.; Milàn, J.
+        year: 2009
+        title: A diverse Upper Jurassic dinosaur ichnofauna from central-west Portugal
+        journal: Lethaia
+        volume: "43"
+        pages: 245-257
+        doi: 10.1111/j.1502-3931.2009.00190.x
+        notes: Names Porto Dinheiro as the stratotype of Trimucrodon cuneatus, in the Lourinhã Formation.
       - id: thulborn1973a
         authors: Thulborn, R. A.
         year: 1973
@@ -175306,6 +175361,14 @@ genera:
         authors: Maryańska, T.; Osmólska, H.
         described: 1974
     references:
+      - id: gradziński1972a
+        authors: Gradziński, R.; Jerzykiewicz, T.
+        year: 1972
+        title: Additional geographical and geological data from the Polish-Mongolian Palaeontological Expeditions
+        journal: Palaeontologia Polonica
+        volume: "27"
+        pages: 17-30
+        notes: Maps the Khulsan finds, numbering a pachycephalosaurid skull 10, and calls the beds there the Lower Nemegt Beds.
       - id: maryańska1974a
         authors: Maryańska, T.; Osmólska, H.
         year: 1974
@@ -175418,6 +175481,16 @@ genera:
         authors: Hattori, S.; Shibata, M.; Kawabe, S.; Imai, T.; Nishi, H.; Azuma, Y.
         described: 2023
     references:
+      - id: azuma2016a
+        authors: Azuma, Y.; Xu, X.; Shibata, M.; Kawabe, S.; Miyata, K.; Imai, T.
+        year: 2016
+        title: A bizarre theropod from the Early Cretaceous of Japan highlighting mosaic evolution among coelurosaurians
+        journal: Scientific Reports
+        publisher: Springer Science and Business Media LLC
+        volume: "6"
+        issue: "1"
+        doi: 10.1038/srep20478
+        notes: Prints the Kitadani Dinosaur Quarry coordinate to the second, for a different taxon from the same quarry.
       - id: hattori2023a
         authors: Hattori, S.; Shibata, M.; Kawabe, S.; Imai, T.; Nishi, H.; Azuma, Y.
         year: 2023
@@ -175611,6 +175684,14 @@ genera:
         references:
           - carpenter2001c
     references:
+      - id: larson2008a
+        authors: Larson, N. L.
+        year: 2008
+        title: "One Hundred Years of Tyrannosaurus rex: The Skeletons"
+        book: Tyrannosaurus rex, the Tyrant King (Larson, P.; Carpenter, K., eds.)
+        publisher: Indiana University Press, Bloomington
+        pages: 1-55
+        notes: Gives the holotype as "From Quarry No. 1, near Jordan, Garfield County, MT (Osborn 1905)".
       - id: brochu2003a
         authors: Brochu, C. R.
         year: 2003
