@@ -509,7 +509,7 @@ says so in `period.resolution` and explains why in the location notes: a type
 specimen reworked from older beds (`reworked`) takes the age of the beds it was
 reworked from, and a type whose bed is uncertain (`horizon`) takes the stages of
 every bed it may have come from. Validation reports any other record whose
-stages fall outside its unit's.
+epochs or stages fall outside its unit's.
 
 ## Image Requirements
 

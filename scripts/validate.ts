@@ -2130,16 +2130,16 @@ for (const [unitName, beds] of bedsByParent)
 startCheck("Record stages");
 
 /**
- * Finds the finest registry unit a record names and the stages it carries.
- * A bed is looked for among the beds of the record's member, formation and
- * group, nearest first, then as a standing entry; otherwise the member,
- * formation and group are tried in turn.
+ * Finds the finest registry unit a record names, with the epochs and stages it
+ * carries. A bed is looked for among the beds of the record's member,
+ * formation and group, nearest first, then as a standing entry; otherwise the
+ * member, formation and group are tried in turn.
  *
  * @param location - The record's location block.
- * @returns The unit's label and stages, or undefined when the record names no
- *     registry unit.
+ * @returns The unit's label, epochs and stages, or undefined when the record
+ *     names no registry unit.
  */
-function recordUnit(location: Species["location"]): { label: string; stages: Array<string> } | undefined
+function recordUnit(location: Species["location"]): { label: string; periods: Array<string>; stages: Array<string> } | undefined
 {
     const containers = (["member", "formation", "group"] as const)
         .map((field) => location?.[field])
@@ -2156,7 +2156,7 @@ function recordUnit(location: Species["location"]): { label: string; stages: Arr
 
             if (bed)
             {
-                return { label: `${unitName} › ${bed.name}`, stages: bed.stages ?? [] };
+                return { label: `${unitName} › ${bed.name}`, periods: bed.period ?? [], stages: bed.stages ?? [] };
             }
         }
 
@@ -2164,13 +2164,15 @@ function recordUnit(location: Species["location"]): { label: string; stages: Arr
 
         if (standing !== undefined && stratigraphy[standing]?.rank === "bed")
         {
-            return { label: standing, stages: stratigraphy[standing]?.stages ?? [] };
+            return { label: standing, periods: stratigraphy[standing]?.period ?? [], stages: stratigraphy[standing]?.stages ?? [] };
         }
     }
 
     const unitName = containers[0];
 
-    return unitName === undefined ? undefined : { label: unitName, stages: stratigraphy[unitName]?.stages ?? [] };
+    return unitName === undefined
+        ? undefined
+        : { label: unitName, periods: stratigraphy[unitName]?.period ?? [], stages: stratigraphy[unitName]?.stages ?? [] };
 }
 
 for (const [filePath, doc] of genusParsed)
@@ -2216,6 +2218,48 @@ for (const [filePath, doc] of genusParsed)
             "Record stages",
             filePath,
             `species '${species.name ?? "?"}': stage${outside.length > 1 ? "s" : ""} ${outside.join(", ")} fall${outside.length > 1 ? "" : "s"} outside '${unit.label}' (${unit.stages.join(", ")}) — narrow the record to what its papers give for the type horizon, or, for a reworked type or an uncertain bed, set period.resolution to 'reworked' or 'horizon' and say why in the location notes`);
+    }
+}
+
+// 13e. A record's epochs fall within those of the unit it names
+//
+// The stage check above passes over a record or unit that has no stages, so a
+// record whose epoch contradicts its unit's (Late Triassic in an Early
+// Jurassic unit) would go unseen. Every unit carries `period`, so this check
+// covers every record that names one. The same two resolutions are exempt.
+startCheck("Record periods");
+
+for (const [filePath, doc] of genusParsed)
+{
+    if (!doc || !Array.isArray(doc.species))
+    {
+        continue;
+    }
+
+    for (const species of doc.species)
+    {
+        const recordPeriods = species?.period?.name ?? [];
+        const unit = recordUnit(species?.location);
+        const resolution = species?.period?.resolution;
+
+        if (recordPeriods.length === 0 || unit === undefined || unit.periods.length === 0)
+        {
+            continue;
+        }
+        else if (resolution !== undefined && outsideUnitResolutions.has(resolution))
+        {
+            continue;
+        }
+
+        const outside = recordPeriods.filter((periodName) => !unit.periods.includes(periodName));
+
+        if (outside.length > 0)
+        {
+            checkError(
+                "Record periods",
+                filePath,
+                `species '${species.name ?? "?"}': period${outside.length > 1 ? "s" : ""} ${outside.join(", ")} fall${outside.length > 1 ? "" : "s"} outside '${unit.label}' (${unit.periods.join(", ")}) — narrow the record to what its papers give for the type horizon, or, for a reworked type or an uncertain bed, set period.resolution to 'reworked' or 'horizon' and say why in the location notes`);
+        }
     }
 }
 
