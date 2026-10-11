@@ -491,7 +491,7 @@ function deriveStageAges(
                 continue;
             }
 
-            const resolved = (period.stage ?? [ ])
+            const resolved = (Array.isArray(period.stage) ? period.stage : [ ])
                 .map((stageName) => stages[stageName])
                 .filter((info): info is StageInfo => info !== undefined);
 

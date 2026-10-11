@@ -672,10 +672,11 @@ for (const [filePath, doc] of genusParsed)
     }
     else
     {
-        for (const species of doc.species)
+        for (const [index, species] of doc.species.entries())
         {
             if (!species)
             {
+                checkError("Required fields", filePath, `species[${index}] is an empty list item`);
                 continue;
             }
 
@@ -742,6 +743,22 @@ for (const [filePath, doc] of genusParsed)
 
         const period = species.period;
         const speciesLabel = species.name ?? "?";
+
+        if (period.name !== undefined && !Array.isArray(period.name))
+        {
+            checkError(
+                "Stage-period agreement",
+                filePath,
+                `species '${speciesLabel}': period.name must be a list, as in 'name: [Late Cretaceous]'`);
+        }
+
+        if (period.stage !== undefined && !Array.isArray(period.stage))
+        {
+            checkError(
+                "Stage-period agreement",
+                filePath,
+                `species '${speciesLabel}': period.stage must be a list, as in 'stage: [Campanian]'`);
+        }
 
         if (Array.isArray(period.name))
         {
@@ -2184,7 +2201,7 @@ for (const [filePath, doc] of genusParsed)
 
     for (const species of doc.species)
     {
-        const recordStages = species?.period?.stage ?? [];
+        const recordStages = Array.isArray(species?.period?.stage) ? species.period.stage : [];
         const unit = recordUnit(species?.location);
 
         if (recordStages.length === 0 || unit === undefined || unit.stages.length === 0)
@@ -2238,7 +2255,7 @@ for (const [filePath, doc] of genusParsed)
 
     for (const species of doc.species)
     {
-        const recordPeriods = species?.period?.name ?? [];
+        const recordPeriods = Array.isArray(species?.period?.name) ? species.period.name : [];
         const unit = recordUnit(species?.location);
         const resolution = species?.period?.resolution;
 
@@ -2900,7 +2917,7 @@ for (const [filePath, doc] of genusParsed)
 
     const speciesNames = new Set(
         (doc.species ?? [])
-            .map((species) => species.name)
+            .map((species) => species?.name)
             .filter((name): name is string => typeof name === "string"));
     const referenceIds = new Set(
         (doc.references ?? [])
