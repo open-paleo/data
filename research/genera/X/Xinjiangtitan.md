@@ -1,5 +1,19 @@
 # *Xinjiangtitan*
 
+## Do Upchurch and colleagues (2021) give the Qiketai for *Xinjiangtitan*?
+
+*2026-10-10*
+
+**Conclusion.** Yes, as a relay of Maisch and Matzke (2019). This corrects the earlier 2026-10-10 entry, which ruled them out as a Qiketai source; they add no independent evidence, so its conclusion, the Qigu, stands. Governs the `upchurch2021a` reference on [*Xinjiangtitan shanshanesis*](../../../genera/X/Xinjiangtitan.yml).
+
+**Evidence.**
+- upchurch2021a: "the fact that Xinjiangtitan was recovered from the Qiketai Formation (Maisch et al., 2019) while Hudiesaurus was found in the overlying Kalazha Formation, lends additional support to the retention of their taxonomic separation."
+
+**Ruled out.**
+- *Upchurch and colleagues as an independent Qiketai reading.* They cite Maisch and Matzke for it.
+
+**Open.** As in the earlier entry: the stage.
+
 ## Which formation holds the *Xinjiangtitan* holotype?
 
 *2026-10-10*
@@ -20,8 +34,8 @@
 
 ## References
 
+- `upchurch2021a`: Upchurch, P.; Mannion, P. D.; Xu, X.; Barrett, P. M. (2021). Re-assessment of the Late Jurassic eusauropod dinosaur Hudiesaurus sinojapanorum Dong, 1997, from the Turpan Basin, China, and the evolution of hyper-robust antebrachia in sauropods. *Journal of Vertebrate Paleontology* 41(4). doi:10.1080/02724634.2021.1994414
 - `wu2013a`: Wu, W. H.; Zhou, C. F.; Wings, O.; Sekiya, T.; Dong, Z. M. (2013). A new gigantic sauropod dinosaur from the Middle Jurassic of Shanshan, Xinjiang. *Global Geology* 32(3): 437-446. doi:10.3969/j.issn.1004-5589.2013.03.002
 - `zhang2018b`: Zhang, X. Q.; Li, D. Q.; Xie, Y.; You, H. L. (2018). Redescription of the cervical vertebrae of the Mamenchisaurid Sauropod Xinjiangtitan shanshanesis Wu et al. 2013. *Historical Biology*. doi:10.1080/08912963.2018.1539970
 - `zhang2022a`: Zhang, X. Q.; Li, N.; Xie, Y.; Li, D. Q.; You, H. L. (2022). Redescription of the dorsal vertebrae of the mamenchisaurid sauropod Xinjiangtitan shanshanesis Wu et al. 2013. *Historical Biology* 36(1): 49-75. doi:10.1080/08912963.2022.2147428
 - `maisch2019a`: Maisch, M. W.; Matzke, A. T. (2019). First record of a eusauropod (Dinosauria; Sauropoda) from the Upper Jurassic Qigu-Formation (southern Junggar Basin, China), and a reconsideration of Late Jurassic sauropod diversity in Xinjiang.
-- `upchurch2021a`: Upchurch, P.; Mannion, P. D.; Xu, X.; Barrett, P. M. (2021). Re-assessment of the Late Jurassic eusauropod dinosaur Hudiesaurus sinojapanorum Dong, 1997, from the Turpan Basin, China, and the evolution of hyper-robust antebrachia in sauropods. *Journal of Vertebrate Paleontology* 41(4). doi:10.1080/02724634.2021.1994414
