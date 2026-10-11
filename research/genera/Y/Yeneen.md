@@ -17,4 +17,4 @@
 
 ## References
 
-- `filippi2026a`: Filippi, L. S.; Bellardini, F.; Carballido, J. L.; Méndez, A. H.; Garrido, A. C. (2026). Yeneen houssayi gen. et sp. nov. and an overview of the sauropod titanosaurian diversity from Cerro Overo – La Invernada area (Bajo de la Carpa Formation, Santonian), North Patagonia, Argentina. *Historical Biology*: 1-37. doi:10.1080/08912963.2025.2584707
+- `filippi2026a`: Filippi, L. S.; Bellardini, F.; Carballido, J. L.; Méndez, A. H.; Garrido, A. C. (2026). Yeneen houssayi gen. et sp. nov. and an overview of the sauropod titanosaurian diversity from Cerro Overo – La Invernada area (Bajo de la Carpa Formation, Santonian), North Patagonia, Argentina. *Historical Biology* 38(8): 2652-2688. doi:10.1080/08912963.2025.2584707

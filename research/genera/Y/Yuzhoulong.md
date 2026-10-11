@@ -1,5 +1,19 @@
 # *Yuzhoulong*
 
+## Does the *Yuzhoulong* record carry a coordinate?
+
+*2026-10-10*
+
+**Conclusion.** No. No source read prints one for the holotype locality, and the describing paper gives none. Governs the absence of `location.coordinates` on [*Yuzhoulong qurenensis*](../../../genera/Y/Yuzhoulong.yml).
+
+**Evidence.**
+- dai2022a: the locality is given as "Laojun Village, Pu'an Town, Yunyang Country", with no coordinate.
+
+**Ruled out.**
+- *A coordinate without a source.* A position must trace to a source that prints it.
+
+**Open.** Nothing.
+
 ## Is the *Yuzhoulong* holotype CLGPR V00013, or CLGRP V00013 as the describing paper prints it?
 
 *2026-08-03*

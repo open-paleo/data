@@ -1,5 +1,19 @@
 # Marília and Serra da Galga formations
 
+## Does the Marília ruling govern *Ypupiara*?
+
+*2026-10-10*
+
+**Conclusion.** Yes. *Ypupiara* comes from Peirópolis, Uberaba, one of the northeastern localities the 2026-10-01 entry assigns to the Serra da Galga Formation, so its describing paper's "Marília Formation" is the Serra da Galga. Governs `location.formation: Serra da Galga` on [*Ypupiara lopai*](../../genera/Y/Ypupiara.yml), which the 2026-10-01 entry did not list.
+
+**Evidence.**
+- brum2021a, Locality and horizon: "The specimen was found at the Caiera site, also known as Ponto 1 do Price, in Serra do Veadinho, close to Peiropolis, a rural district of Uberaba … In this locality, the Marılia Formation crops out (Maastrichtian".
+
+**Ruled out.**
+- *The Marília Formation in its restricted sense.* That name now covers only the southeastern and northwestern outcrops.
+
+**Open.** Nothing.
+
 ## Which unit is "Marília Formation" in a given paper, and how old are the Marília and Serra da Galga formations?
 
 *2026-10-01*
@@ -24,6 +38,7 @@
 
 ## References
 
+- `brum2021a`: Brum, A. S.; Pêgas, R. V.; Bandeira, K. L. N.; Souza, L. G.; Campos, D. A.; Kellner, A. W. A. (2021). A new unenlagiine (Theropoda, Dromaeosauridae) from the Upper Cretaceous of Brazil. *Papers in Palaeontology* 7(4): 2075-2099. doi:10.1002/spp2.1375
 - `soares2020a`: Soares, M. V. T.; Basilici, G.; Marinho, T. S.; Martinelli, A. G.; Marconato, A.; Mountney, N. P.; Colombera, L.; Mesquita, Á. F.; Vasques, J. T.; Abrantes Junior, F. R.; Ribeiro, L. C. B. (2020). Sedimentology of a distributive fluvial system: the Serra da Galga Formation, a new lithostratigraphic unit (Upper Cretaceous, Bauru Basin, Brazil). *Geological Journal* 56(2): 951-975. doi:10.1002/gj.3987
 - `iori2021a`: Iori, F. V.; de Araújo-Júnior, H. I. de; Tavares, S. A. S.; Marinho, T. da S.; Martinelli, A. G. (2021). New theropod dinosaur from the Late Cretaceous of Brazil improves abelisaurid diversity. *Journal of South American Earth Sciences* 112. doi:10.1016/j.jsames.2021.103551
 - `arai2023a`: Arai, M.; Dias-Brito, D. (2023). Supersequência Bauru (Cretáceo da Bacia do Paraná): revisão estratigráfica com base em dados paleontológicos recentes [The Bauru Supersequence (Cretaceous of the Paraná Basin): stratigraphic revision based on recent paleontological data]. *Derbyana* 44: e800. doi:10.14295/derb.v44.800
