@@ -1,5 +1,20 @@
 # Wallangulla Sandstone
 
+## Does Agnolín and colleagues' "Sandstone Member" give *Rapator* the Wallangulla Sandstone?
+
+*2026-10-11*
+
+**Conclusion.** Yes, as it does for *Walgettosuchus*: the two horizon lines are identical, and the Lightning Ridge fossils come from the Wallangulla Sandstone. Governs `location.member: Wallangulla Sandstone` on [*Rapator ornitholestoides*](../../../genera/R/Rapator.yml).
+
+**Evidence.**
+- agnolín2010a, p. 281, *Rapator*, and p. 278, *Walgettosuchus*: "Sandstone Member of the Griman Creek Formation (Albian: late Early Cretaceous; Byrnes 1977), Lightning Ridge"; p. 276: "Wallangulla Sandstone Member".
+- bell2018a, p. 8: the fossils come from "the claystone lenses (informally referred to as the 'Finch clay facies') within the Wallangulla Sandstone".
+
+**Ruled out.**
+- *"Sandstone Member" as a descriptive label only.* The same paper names the Wallangulla Sandstone Member, and the record that shares the line already carries it.
+
+**Open.** Nothing.
+
 ## Is the Wallangulla Sandstone a formal member, and how is it named?
 
 *2026-09-30*
@@ -34,7 +49,7 @@
 
 ## References
 
-- `bell2019b`: Bell, P. R.; Fanti, F.; Hart, L. J.; Milan, L. A.; Craven, S. J.; Birch, S. A.; Smith, E. T. (2019). Revised geology, age, and vertebrate diversity of the dinosaur-bearing Griman Creek Formation (Cenomanian), Lightning Ridge, New South Wales, Australia. *Palaeogeography, Palaeoclimatology, Palaeoecology* 514: 655-671. doi:10.1016/j.palaeo.2018.11.020
-- `bell2018a`: Bell, P. R.; Herne, M. C.; Brougham, T.; Smith, E. T. (2018). Ornithopod diversity in the Griman Creek Formation (Cenomanian), New South Wales, Australia. *PeerJ* 6: e6008. doi:10.7717/peerj.6008
 - `agnolín2010a`: Agnolín, F. L.; Ezcurra, M. D.; Pais, D. F.; Salisbury, S. W. (2010). A reappraisal of the Cretaceous non-avian dinosaur faunas from Australia and New Zealand: evidence for their Gondwanan affinities. *Journal of Systematic Palaeontology* 8(2): 257-300. doi:10.1080/14772011003594870
+- `bell2018a`: Bell, P. R.; Herne, M. C.; Brougham, T.; Smith, E. T. (2018). Ornithopod diversity in the Griman Creek Formation (Cenomanian), New South Wales, Australia. *PeerJ* 6: e6008. doi:10.7717/peerj.6008
+- `bell2019b`: Bell, P. R.; Fanti, F.; Hart, L. J.; Milan, L. A.; Craven, S. J.; Birch, S. A.; Smith, E. T. (2019). Revised geology, age, and vertebrate diversity of the dinosaur-bearing Griman Creek Formation (Cenomanian), Lightning Ridge, New South Wales, Australia. *Palaeogeography, Palaeoclimatology, Palaeoecology* 514: 655-671. doi:10.1016/j.palaeo.2018.11.020
 - `boyd2015a`: Boyd, C. A. (2015). The systematic relationships and biogeographic history of ornithischian dinosaurs. *PeerJ* 3: e1523. doi:10.7717/peerj.1523

@@ -1,5 +1,19 @@
 # *Ruehleia*
 
+## Which registry key holds the *Ruehleia* holotype's institution?
+
+*2026-10-11*
+
+**Conclusion.** `ZMB`, with `MB` and `MB.R.` as the fossil collection prefixes. The registry keeps Sabaj's entry code for the Museum für Naturkunde and lists MB, Sabaj's current code for its fossils, under `collections`. This supersedes the 2026-10-04 entry's "MB, not ZMB" for `institution`; the specimen number MB.R. 4718 is unchanged. Governs `type_specimen.institution: ZMB` on [*Ruehleia bedheimensis*](../../../genera/R/Ruehleia.yml).
+
+**Evidence.**
+- sabaj2020a: "ZMB: Museum für Naturkunde (MfN) … *Current as*: MB (fossils), ZMB (fishes, herps)".
+
+**Ruled out.**
+- *`institution: MB`.* MB is the code of one collection of the institution, and Sabaj also uses bare MB for the Museo Blochiano.
+
+**Open.** Nothing.
+
 ## What is the Ruehleia holotype's number, and which institution code applies?
 
 *2026-10-04*
@@ -31,6 +45,7 @@
 
 ## References
 
+- `sabaj2020a`: Sabaj, M. H. (2020). Codes for natural history collections in ichthyology and herpetology. *Copeia* 108(3): 593-669. doi:10.1643/ASIHCODONS2020
 - `sues2025a`: Sues, H. D.; Schoch, R. R. (2025). Synopsis of the Triassic reptiles from Germany. *Fossil Record* 28(2): 411-483. doi:10.3897/fr.28.164405
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.
 - `moser2003a`: Moser, M. (2003). Plateosaurus engelhardti Meyer, 1837 (Dinosauria: Sauropodomorpha) aus dem Feuerletten (Mittelkeuper; Obertrias) von Bayern. *Zitteliana Reihe B* 24: 3-186.
