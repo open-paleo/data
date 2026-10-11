@@ -1,5 +1,18 @@
 # Woburn Sands
 
+## Are the Potton dinosaur bones reworked from Neocomian beds?
+
+*2026-10-10*
+
+**Conclusion.** Not established. Supersedes the 2026-09-30 entry's statement that the bones "are reworked from older, Neocomian beds"; the formation's own Aptian–Albian age stands. The reasoning is in the [*Craterosaurus*](../../genera/C/Craterosaurus.md) entry of the same date, which gives the holotype every stage from the Berriasian to the Aptian. Governs nothing on this unit.
+
+**Evidence.**
+- casey1961a, p. 491: "Iguanodon was still living in Aptian times and worn fossils are commonplace in contemporary Lower Greensand deposits".
+
+**Ruled out.** Nothing.
+
+**Open.** The same as the open item of the 2026-09-30 entry.
+
 ## What is the Woburn Sands' parent?
 
 *2026-10-08*
