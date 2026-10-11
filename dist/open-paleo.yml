@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-10-11T18:19:14.924Z
+  built_at: 2026-10-11T22:44:49.614Z
   clade_count: 188
   genus_count: 1425
   license: CC-BY-4.0
@@ -107317,8 +107317,9 @@ genera:
           region: Soria
           formation: Golmayo
           coordinates:
-            - 41.766701
-            - -2.5333
+            - 41.765506
+            - -2.525391
+          notes: Fuentes Vidarte and colleagues (2016) give the site as "UTM coordinates 30TWM394238"; the coordinate is the center of that 100 m square.
           region_code: ES-SO
         type_specimen:
           specimen_id:
@@ -147651,7 +147652,7 @@ genera:
           to_ma: 72.2
         location:
           country: MN
-          locality: Khulsan
+          locality: Khulsan, site 11
           region: Ömnögovi
           formation: Baruungoyot
           region_code: MN-053
@@ -147676,6 +147677,14 @@ genera:
         authors: Maryańska, T.
         described: 1977
     references:
+      - id: gradziński1972a
+        authors: Gradziński, R.; Jerzykiewicz, T.
+        year: 1972
+        title: Additional geographical and geological data from the Polish-Mongolian Palaeontological Expeditions
+        journal: Palaeontologia Polonica
+        volume: "27"
+        pages: 17-30
+        notes: Numbers the find on its Khulsan map, item 11, "a skeleton with skull of an ankylosaurid dinosaur", which Maryańska (1977) cites for the holotype.
       - id: maryańska1977a
         authors: Maryańska, T.
         year: 1977
@@ -148085,6 +148094,16 @@ genera:
         authors: Young, C. C.
         described: 1944
     references:
+      - id: mcphee2016a
+        authors: McPhee, B. W.; Upchurch, P.; Mannion, P. D.; Sullivan, C.; Butler, R. J.; Barrett, P. M.
+        year: 2016
+        title: A revision of Sanpasaurus yaoi Young, 1944 from the Early Jurassic of China, and its relevance to the early evolution of Sauropoda (Dinosauria)
+        journal: PeerJ
+        publisher: PeerJ
+        volume: "4"
+        pages: e2578
+        doi: 10.7717/peerj.2578
+        notes: Revises the species, whose material Young collected from quarries in the Maanshan Member of the Ziliujing Formation.
       - id: young1944a
         authors: Young, C. C.
         year: 1944
@@ -151088,6 +151107,23 @@ genera:
         authors: Rauhut, O. W. M.; Foth, C.; Tischlinger, H.; Norell, M. A.
         described: 2012
     references:
+      - id: foth2020a
+        authors: Foth, C.; Haug, C.; Haug, J. T.; Tischlinger, H.; Rauhut, O. W. M.
+        year: 2020
+        title: "Two of a Feather: A Comparison of the Preserved Integument in the Juvenile Theropod Dinosaurs Sciurumimus and Juravenator from the Kimmeridgian Torleite Formation of Southern Germany"
+        book: "The Evolution of Feathers: From Their Origin to the Present"
+        pages: 79-101
+        doi: 10.1007/978-3-030-27223-4_6
+        notes: Places the holotype in the Torleite Formation.
+      - id: niebuhr2014a
+        authors: Niebuhr, B.; Pürner, T.
+        year: 2014
+        title: "Plattenkalk und Frankendolomit – Lithostratigraphie der Weißjura-Gruppe der Frankenalb (außeralpiner Oberjura, Bayern) [Plattenkalk and Franconian dolomite: lithostratigraphy of the White Jura Group of the Franconian Alb (extra-Alpine Upper Jurassic, Bavaria)]"
+        journal: Schriftenreihe der Deutschen Gesellschaft für Geowissenschaften
+        volume: "83"
+        pages: 5-72
+        doi: 10.1127/sdgg/83/2014/5
+        notes: Sets out the lithostratigraphy of the Weißjura Group of the Franconian Alb, including the Torleite Formation.
       - id: rauhut2012a
         authors: Rauhut, O. W. M.; Foth, C.; Tischlinger, H.; Norell, M. A.
         year: 2012
@@ -151255,6 +151291,16 @@ genera:
         authors: Penkalski, P.
         described: 2018
     references:
+      - id: arbour2013a
+        authors: Arbour, V. M.; Currie, P. J.
+        year: 2013
+        title: Euoplocephalus tutus and the diversity of ankylosaurid dinosaurs in the Late Cretaceous of Alberta, Canada, and Montana, USA
+        journal: PLOS ONE
+        volume: "8"
+        issue: "5"
+        pages: e62421
+        doi: 10.1371/journal.pone.0062421
+        notes: Gives the holotype locality as Quarry Q080 with a UTM position, the source of the coordinate, noting uncertainty over the quarry.
       - id: nopcsa1928a
         authors: Nopcsa, B. F.
         year: 1928
@@ -153918,9 +153964,7 @@ genera:
           locality: Shuangmiao Village, Beipiao
           region: Liaoning
           formation: Sunjiawan
-          coordinates:
-            - 41.711111
-            - 120.713611
+          notes: The only printed position near the site is Dong's (2002) GPS fix for the Shuangmiao fossil site of the batch he identified as Crichtonsaurus; You and colleagues (2003) give the holotype only as from the Sunjiawan Formation "near Shuangmiao Village", and no source ties it to that point.
           region_code: CN-LN
         type_specimen:
           specimen_id:
@@ -155437,7 +155481,7 @@ genera:
     placement: incertae sedis
     pronunciation:
       phonetic: suh-LOO-o-SAWR-us
-    description: Siluosaurus is a genus of ornithischian dinosaur from the Early Cretaceous (Barremian-Albian) Xinminpu Group of Gansu, China, founded on two small teeth. The type species is S. zhanggiani.
+    description: Siluosaurus is a genus of ornithischian dinosaur from the Early Cretaceous (Barremian-Albian) Xinminpu Group of Gansu, China, founded on two small teeth. The type species is S. zhangqiani.
     etymology: Named for the Silk Road (Chinese 'Silu'), referencing the discovery location in Gansu, China, along the historic Silk Road corridor, combined with Greek 'sauros' meaning 'lizard'; meaning 'Silk Road lizard.'
     dispute:
       summary: |
@@ -155463,7 +155507,7 @@ genera:
       - source: gbif
         id: "4578174"
     species:
-      - name: Siluosaurus zhanggiani
+      - name: Siluosaurus zhangqiani
         etymology: Named in honor of Zhang Qian, a Chinese diplomat of the second century B.C. who pioneered the opening of the Silk Road trade route.
         status: nomen dubium
         type_species: true
@@ -155499,7 +155543,7 @@ genera:
         book: Sino-Japanese Silk Road Dinosaur Expedition
         publisher: China Ocean Press, Beijing
         pages: 24-26
-        notes: Original description of Siluosaurus zhanggiani as a hypsilophodontid, based on two teeth from the Xinminpu Group.
+        notes: Original description of Siluosaurus zhangqiani as a hypsilophodontid, based on two teeth from the Xinminpu Group.
       - id: butler2008b
         authors: Butler, R. J.; Upchurch, P.; Norman, D. B.
         year: 2008
@@ -155729,7 +155773,7 @@ genera:
           region_code: US-KS
         type_specimen:
           specimen_id:
-            - UKMNH 10296
+            - KUVP 10296
           specimen_type: holotype
           institution: University of Kansas Biodiversity Institute
           material: Partial skeleton including skull.
@@ -157206,7 +157250,7 @@ genera:
           locality: Huangchiatien
           region: Yunnan
           formation: Lufeng
-          notes: Young (1948) gives the holotype's horizon only as the Red beds of Huangchiatien, while specifying the Dark Red Beds for Lukousaurus from the same village. Xing and colleagues (2012) place the species in the Shawan Member, but their locality table assigns IVPP V30 and V31 to this site when Young reports them from Mahuangching, about 60 km west. The member is therefore unresolved.
+          notes: Young (1948) gives the holotype's horizon only as the Red beds of Huangchiatien, while specifying the Dark Red Beds for Lukousaurus from the same village. Xing (2012) places the species in the Shawan Member, but his locality table assigns IVPP V30 and V31 to this site when Young reports them from Mahuangching, about 60 km west. The member is therefore unresolved.
           region_code: CN-YN
         type_specimen:
           specimen_id:
@@ -157268,7 +157312,7 @@ genera:
         thesis: masters
         school: University of Alberta
         doi: 10.7939/R3HP8F
-        notes: PhD thesis.
+        notes: Master's thesis.
       - id: liang2024a
         authors: Liang, Q.; Falkingham, P. L.; Xing, L.
         year: 2024
@@ -157528,10 +157572,11 @@ genera:
           to_ma: 121.4
         location:
           country: CN
-          locality: Lujiatun, Shangyuan
+          locality: Lujiatun and Yanzigou, Shangyuan
           region: Liaoning
           formation: Yixian
           part: lower
+          notes: Xu and colleagues (2002) give "Lujiatun and Yanzigou, Shanyuan, western Liaoning" in one locality line for the holotype and the referred IVPP V12583 together, without saying which site yielded which.
           region_code: CN-LN
           part_of: formation
         type_specimen:
@@ -158552,8 +158597,9 @@ genera:
           region: Soria
           formation: Golmayo
           coordinates:
-            - 41.766701
-            - -2.5333
+            - 41.765506
+            - -2.525391
+          notes: Royo-Torres and colleagues (2017) give the site as "UTM coordinates 30TWM394238"; the coordinate is the center of that 100 m square.
           region_code: ES-SO
         size:
           hip_height_m:
@@ -159021,7 +159067,7 @@ genera:
           material: Series of six incomplete dorsal vertebrae, the centra strongly compressed laterally and the neural arches depressed.
           completeness: fragmentary
           notes: Seeley (1883) founded the genus on a series of six vertebrae in the Woodwardian Museum at Cambridge and declined to name a species, writing of refraining from doing so pending the question of whether the material belonged with Iguanodon seelyi. Lydekker (1888) added the epithet gracilis, and White (1973) and McDonald (2012) both give the type of that species as the London specimen.
-        erected_in: lydekker1888a
+        erected_in: lydekker1888b
         authors: Lydekker, R.
         described: 1888
     erected_in: seeley1883b
@@ -159035,13 +159081,23 @@ genera:
         volume: "39"
         pages: 55-61
         notes: Erects the genus on six dorsal vertebrae from the Wealden of Brook, Isle of Wight, without naming a species.
+      - id: lydekker1888b
+        authors: Lydekker, R.
+        year: 1888
+        title: Note on a new Wealden iguanodont and other dinosaurs
+        journal: Quarterly Journal of the Geological Society of London
+        volume: "44"
+        issue: "173"
+        pages: 46-61
+        doi: 10.1144/gsl.jgs.1888.044.01-04.08
+        notes: Proposes the species epithet gracilis for Seeley's genus, since Seeley "has not applied a specific name to the type".
       - id: lydekker1888a
         authors: Lydekker, R.
         year: 1888
         title: Catalogue of the Fossil Reptilia and Amphibia in the British Museum (Natural History). Part I
         journal: British Museum (Natural History), London
         pages: 1-309
-        notes: Adds the species epithet gracilis to Seeley's genus.
+        notes: Catalogs the species, citing the Quarterly Journal note for the name.
       - id: norman1986a
         authors: Norman, D. B.
         year: 1986
@@ -159663,12 +159719,13 @@ genera:
         location:
           country: MA
           region: Errachidia
-          formation: Gara Sbaa
+          formation: Douira
           locality: Zrigat
-          part: upper
+          part: lower
           coordinates:
             - 31.617
             - -4.267
+          notes: Ibrahim and colleagues (2014), designating the neotype, place it "at the base of the upper unit of the Kem Kem beds", 18 km northeast of Erfoud, and Ibrahim and colleagues (2020) confirm "its origin in the Douira Formation" at Zrigat, with the section measured at the nearby Al Gualb Mesa. Smyth and colleagues (2020), citing the 2014 paper, give "Towards top of Ifezouane Formation", the lower unit. The coordinate is theirs; neither Ibrahim paper prints one.
           region_code: MA-ERR
           part_of: formation
         size:
@@ -160128,10 +160185,11 @@ genera:
         type_specimen:
           specimen_id:
             - CMN 515
-          specimen_type: holotype
+          specimen_type: lectotype
           institution: Canadian Museum of Nature
-          material: Two symmetrical, compact bones with dome-shaped upper surface, divided transversely by sutures into anterior and posterior halves, with nodose rugosity on anterior end and lateral surfaces
+          material: Nearly complete frontoparietal.
           completeness: fragmentary
+          notes: Lambe (1902) named the species on three frontoparietals without naming a type. Hatcher and colleagues (1907) list CMN 515 and 1423 as the type, and Sullivan (2003) gives CMN 515 as the lectotype.
         size:
           length_m:
             min: 2
@@ -160167,6 +160225,15 @@ genera:
           - goodwin1998a
           - schott2011a
     references:
+      - id: hatcher1907a
+        authors: Hatcher, J. B.; Marsh, O. C.; Lull, R. S.
+        year: 1907
+        title: The Ceratopsia
+        journal: Monographs of the United States Geological Survey
+        publisher: United States Geological Survey
+        volume: "49"
+        pages: 1-300
+        notes: Records that Lambe "failed to designate any one of these remains as the type", and lists CMN 515 and 1423 as the type.
       - id: gilmore1924c
         authors: Gilmore, C. W.
         year: 1924
@@ -160401,8 +160468,9 @@ genera:
           stage:
             - Barremian
             - Aptian
+            - Albian
           from_ma: 125.77
-          to_ma: 113.2
+          to_ma: 100.5
         location:
           country: CN
           locality: Hui-hui-p'u
@@ -160548,15 +160616,17 @@ genera:
           country: US
           region: Wyoming
           formation: Morrison
-          locality: Quarry 12, Como Bluff
+          locality: Quarries 11 and 12, Como Bluff
           region_code: US-WY
         type_specimen:
           specimen_id:
             - YPM 1853
-          specimen_type: holotype
+            - YPM 1858
+          specimen_type: syntype
           institution: Yale Peabody Museum of Natural History
           material: Partial skull, several vertebrae, an ischium, partial limbs, several dermal plates, and four tail spikes (thagomizers).
           completeness: partial
+          notes: Marsh (1879) named the species without designating a type, and Gilmore (1914) calls YPM 1853, from Quarry 12, and YPM 1858, from Quarry 11, its cotypes. Galton (2010) calls them syntypes and YPM 1853 "The paralectotype", but no work read designates a lectotype. YPM 1858 is also the type of Stegosaurus duplex.
         size:
           length_m:
             min: 7
@@ -160592,6 +160662,17 @@ genera:
         references:
           - maidment2015a
     references:
+      - id: galton2010a
+        authors: Galton, P. M.
+        year: 2010
+        title: "Species of plated dinosaur Stegosaurus (Morrison Formation, Late Jurassic) of western USA: new type species designation needed"
+        journal: Swiss Journal of Geosciences
+        publisher: Springer Science and Business Media LLC
+        volume: "103"
+        issue: "2"
+        pages: 187-198
+        doi: 10.1007/s00015-010-0022-4
+        notes: Gives Stegosaurus ungulatus as "based upon two syntypes", YPM 1853 from Quarry 12 and YPM 1858 from Quarry 11.
       - id: maidment2015a
         authors: Maidment, S. C. R.; Brassey, C.; Barrett, P. M.
         year: 2015
@@ -160632,7 +160713,7 @@ genera:
         issue: "108"
         pages: 501-505
         doi: 10.2475/ajs.s3-18.108.501
-        notes: Erects Stegosaurus ungulatus on YPM 1853 from the Morrison Formation of Como Bluff, Wyoming.
+        notes: Erects Stegosaurus ungulatus from the Morrison Formation of Como Bluff, Wyoming, without numbering or designating a type.
       - id: gilmore1914b
         authors: Gilmore, C. W.
         year: 1914
@@ -163011,13 +163092,15 @@ genera:
             - Late Jurassic
           stage:
             - Kimmeridgian
+            - Tithonian
           from_ma: 154.8
-          to_ma: 149.2
+          to_ma: 143.1
         location:
           country: US
           locality: Rattlesnake Ridge Quarry
           region: Montana
           formation: Morrison
+          notes: Harris and Dodson (2004) give the horizon as "?Tithonian", and Tschopp and colleagues (2015) as "Late Kimmeridgian"; neither states a basis.
           region_code: US-MT
         size:
           hip_height_m:
@@ -163040,6 +163123,16 @@ genera:
         authors: Harris, J. D.; Dodson, P.
         described: 2004
     references:
+      - id: tschopp2015a
+        authors: Tschopp, E.; Mateus, O.; Benson, R. B. J.
+        year: 2015
+        title: A specimen-level phylogenetic analysis and taxonomic revision of Diplodocidae (Dinosauria, Sauropoda)
+        journal: PeerJ
+        publisher: PeerJ
+        volume: "3"
+        pages: e857
+        doi: 10.7717/peerj.857
+        notes: Lists the holotype from Rattlesnake Ridge Quarry as "Late Kimmeridgian; Lower Morrison Form.".
       - id: harris2004a
         authors: Harris, J. D.; Dodson, P.
         year: 2004
