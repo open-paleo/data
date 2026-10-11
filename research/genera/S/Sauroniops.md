@@ -1,5 +1,20 @@
 # *Sauroniops*
 
+## Is Taouz in Errachidia Province?
+
+*2026-10-11*
+
+**Conclusion.** Yes; two papers print it so, which answers the caution against narrowing the region to Errachidia without a source for Taouz itself. Governs `location.region: MA-ERR` on [*Sauroniops pachytholus*](../../../genera/S/Sauroniops.yml).
+
+**Evidence.**
+- paterna2022a: material "collected in a locality located southeast of Taouz (Errachidia Province, Morocco)".
+- chiarenza2016a: a specimen "collected nearby the Moroccan-Algerian boundary just south of Taouz (Errachidia Province, Meknès−Tafilalet Region), Morocco".
+
+**Ruled out.**
+- *The wider MA-08.* The province is printed for Taouz.
+
+**Open.** Nothing.
+
 ## Which unit of the Kem Kem Group is the *Sauroniops* holotype from?
 
 *2026-09-03*
@@ -18,6 +33,8 @@
 
 ## References
 
+- `paterna2022a`: Paterna, A.; Cau, A. (2022). New giant theropod material from the Kem Kem Compound Assemblage (Morocco) with implications on the diversity of the mid-Cretaceous carcharodontosaurids from North Africa. *Historical Biology* 35(11): 1-9. doi:10.1080/08912963.2022.2131406
+- `chiarenza2016a`: Chiarenza, A. A.; Cau, A. (2016). A large abelisaurid (Dinosauria, Theropoda) from Morocco and comments on the Cenomanian theropods from North Africa. *PeerJ* 4: e1754. doi:10.7717/peerj.1754
 - `cau2012a`: Cau, A.; Dalla Vecchia, F. M.; Fabbri, M. (2012). A thick-skulled theropod (Dinosauria, Saurischia) from the Upper Cretaceous of Morocco with implications for carcharodontosaurid cranial evolution. *Cretaceous Research* 40: 251-260. doi:10.1016/j.cretres.2012.09.002
 - `cau2025a`: Cau, A.; Paterna, A. (2025). Beyond the Stromer's Riddle: the impact of lumping and splitting hypotheses on the systematics of the giant predatory dinosaurs from northern Africa. *Italian Journal of Geosciences* 144(2): 162-185. doi:10.3301/IJG.2025.10
 - `ibrahim2020a`: Ibrahim, N.; Sereno, P. C.; Varricchio, D. J.; Martill, D. M.; Dutheil, D. B.; Unwin, D. M.; Baidder, L.; Larsson, H. C. E.; Zouhri, S.; Kaoukaya, A. (2020). Geology and paleontology of the Upper Cretaceous Kem Kem Group of eastern Morocco. *ZooKeys* 928: 1-216. doi:10.3897/zookeys.928.47517

@@ -1,5 +1,21 @@
 # *Suuwassea*
 
+## What stages does *Suuwassea* take?
+
+*2026-10-11*
+
+**Conclusion.** Kimmeridgian and Tithonian, the two readings given for the holotype's horizon taken together. The describing paper's queried Tithonian counts as its own reading; the Kimmeridgian rests on a table row with no stated basis. Governs `stage: [Kimmeridgian, Tithonian]` on [*Suuwassea emilieae*](../../../genera/S/Suuwassea.yml).
+
+**Evidence.**
+- harris2004a, p. 199: "Morrison Formation (?Brushy Basin Member equivalent), ?Tithonian".
+- tschopp2015a, Table 2: "Rattlesnake Ridge Quarry, Carbon County, MT, USA | Late Kimmeridgian; Lower Morrison Form.".
+- whitlock2025a, p. 9: "the Kimmeridgian *S. emilieae*", citing Myers and Storrs (2007), whose paper does not mention the taxon.
+
+**Ruled out.**
+- *Kimmeridgian alone.* It drops the describing paper's reading in favor of an unsourced table row.
+
+**Open.** A dating of the Rattlesnake Ridge Quarry.
+
 ## Where does the name Rattlesnake Ridge Quarry come from, and which part of the Morrison is the Suuwassea holotype from?
 
 *2026-09-15*

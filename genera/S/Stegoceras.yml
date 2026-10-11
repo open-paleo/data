@@ -63,12 +63,13 @@ species:
       formation: Dinosaur Park
     type_specimen:
       specimen_id: [ CMN 515 ]
-      specimen_type: holotype
+      specimen_type: lectotype
       institution: CMN
-      material: Two symmetrical, compact bones with dome-shaped upper surface, divided
-        transversely by sutures into anterior and posterior halves, with nodose
-        rugosity on anterior end and lateral surfaces
+      material: Nearly complete frontoparietal.
       completeness: fragmentary
+      notes: Lambe (1902) named the species on three frontoparietals without
+        naming a type. Hatcher and colleagues (1907) list CMN 515 and 1423 as
+        the type, and Sullivan (2003) gives CMN 515 as the lectotype.
     size:
       length_m:
         min: 2.0
@@ -96,6 +97,9 @@ notable_specimens:
       by: "Barnum Brown"
     references: [goodwin1998a, schott2011a]
 references:
+  - id: hatcher1907a
+    notes: Records that Lambe "failed to designate any one of these remains as
+      the type", and lists CMN 515 and 1423 as the type.
   - id: gilmore1924c
   - id: sullivan2003b
   - id: goodwin1998a

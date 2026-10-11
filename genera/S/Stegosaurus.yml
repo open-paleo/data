@@ -136,15 +136,21 @@ species:
       country: US
       region: US-WY
       formation: Morrison
-      locality: Quarry 12, Como Bluff
+      locality: Quarries 11 and 12, Como Bluff
     type_specimen:
       specimen_id:
         - YPM 1853
-      specimen_type: holotype
+        - YPM 1858
+      specimen_type: syntype
       institution: YPM
       material: Partial skull, several vertebrae, an ischium, partial limbs, several
         dermal plates, and four tail spikes (thagomizers).
       completeness: partial
+      notes: Marsh (1879) named the species without designating a type, and
+        Gilmore (1914) calls YPM 1853, from Quarry 12, and YPM 1858, from
+        Quarry 11, its cotypes. Galton (2010) calls them syntypes and YPM 1853
+        "The paralectotype", but no work read designates a lectotype. YPM 1858
+        is also the type of Stegosaurus duplex.
     size:
       length_m:
         min: 7
@@ -186,6 +192,9 @@ notable_specimens:
     references:
       - maidment2015a
 references:
+  - id: galton2010a
+    notes: Gives Stegosaurus ungulatus as "based upon two syntypes", YPM 1853
+      from Quarry 12 and YPM 1858 from Quarry 11.
   - id: maidment2015a
   - id: marsh1877a
     notes: Erects the genus Stegosaurus and the order Stegosauria on a partial
@@ -195,8 +204,8 @@ references:
     notes: Erects Stegosaurus stenops on USNM 4934, later designated the type
       species of Stegosaurus under ICZN Opinion 2320.
   - id: marsh1879a
-    notes: Erects Stegosaurus ungulatus on YPM 1853 from the Morrison Formation
-      of Como Bluff, Wyoming.
+    notes: Erects Stegosaurus ungulatus from the Morrison Formation of Como
+      Bluff, Wyoming, without numbering or designating a type.
   - id: gilmore1914b
     notes: Foundational monograph on USNM 4934 (the future neotype- equivalent
       holotype of S. stenops). Establishes the alternating plate arrangement and

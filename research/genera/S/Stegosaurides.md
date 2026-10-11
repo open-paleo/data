@@ -1,5 +1,19 @@
 # *Stegosaurides*
 
+## What stages does *Stegosaurides* take?
+
+*2026-10-11*
+
+**Conclusion.** Barremian to Albian, the range of the Xinminpu Group, since no source dates the Hui-hui-p'u beds. The narrower Barremian–Aptian came with the record's import and has no source, as with [*Peishansaurus*](../P/Peishansaurus.md). Governs `stage: [Barremian, Aptian, Albian]` on [*Stegosaurides excavatus*](../../../genera/S/Stegosaurides.yml).
+
+**Evidence.**
+- bohlin1953a: the region's "badlands of Late Mesozoic age", and the Hui-hui-p'u deposit "is evidently not contemporaneous with the badlands" at Chia-yü-kuan; no age is given for the species.
+
+**Ruled out.**
+- *Barremian–Aptian.* No source read narrows the group's range for this locality.
+
+**Open.** A dating of the Hui-hui-p'u beds.
+
 ## Is the Stegosaurides type from the Xinminpu Group?
 
 *2026-09-06*

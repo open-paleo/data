@@ -1,5 +1,21 @@
 # *Stegoceras*
 
+## Is CMN 515 the holotype or a lectotype of *Stegoceras validum*?
+
+*2026-10-11*
+
+**Conclusion.** A lectotype. Lambe named the species on three syntypes without naming a type, and Sullivan (2003) gives CMN 515 as the lectotype, a reading later works follow. Governs `type_specimen.specimen_type: lectotype`, `material` and the type-specimen note on *Stegoceras validum* in [*Stegoceras*](../../../genera/S/Stegoceras.yml).
+
+**Evidence.**
+- lambe1902a: describes three specimens, two "found separately" and "a third specimen … collected in 1901", and "For these bones the name *Stegoceras validus* is proposed", naming none as type.
+- hatcher1907a: "Unfortunately Lambe failed to designate any one of these remains as the type of the genus or species"; "Type (Nos. 515 and 1423, Geol. Surv. Canada) consists of two cranial fragments".
+- sullivan2003b: the species was "based on three frontoparietals (syntypes) … Hatcher … designated CMN 515 as the type (lectotype)"; "Lectotype-CMN (formerly NMC and previously GSC) 515, nearly complete frontoparietal".
+
+**Ruled out.**
+- *Holotype.* The species was founded on syntypes, so it has none.
+
+**Open.** Whether Hatcher and colleagues' two-specimen "Type" is itself a lectotype designation; Sullivan's explicit one fixes CMN 515 either way.
+
 ## Which locality and formation is the Stegoceras validum lectotype, CMN 515, from?
 
 *2026-09-06*
@@ -34,6 +50,8 @@
 
 ## References
 
+- `lambe1902a`: Lambe, L. M. (1902). New genera and species from the Belly River Series (mid-Cretaceous). *Geological Survey of Canada Contributions to Canadian Palaeontology* 3(2): 25-81. doi:10.5281/zenodo.3233762
+- `hatcher1907a`: Hatcher, J. B.; Marsh, O. C.; Lull, R. S. (1907). The Ceratopsia. *Monographs of the United States Geological Survey* 49: 1-300.
 - `sullivan2003b`: Sullivan, R. M. (2003). Revision of the dinosaur Stegoceras Lambe (Ornithischia, Pachycephalosauridae). *Journal of Vertebrate Paleontology* 23(1): 181-207. doi:10.1671/0272-4634(2003)23[181:rotdsl]2.0.co;2
 - `wall1979a`: Wall, W. P.; Galton, P. M. (1979). Notes on pachycephalosaurid dinosaurs (Reptilia: Ornithischia) from North America, with comments on their status as ornithopods. *Canadian Journal of Earth Sciences* 16(6): 1176-1186. doi:10.1139/e79-104
 - `jasinski2011a`: Jasinski, S. E.; Sullivan, R. M. (2011). Re-evaluation of pachycephalosaurids from the Fruitland-Kirtland transition (Kirtlandian, late Campanian), San Juan Basin, New Mexico, with a description of a new species of Stegoceras and a reassessment of Texacephale langstoni. *New Mexico Museum of Natural History and Science Bulletin* 53: 202-215.
