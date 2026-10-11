@@ -1,5 +1,20 @@
 # *Wyleyia*
 
+## What stage does *Wyleyia* take?
+
+*2026-10-11*
+
+**Conclusion.** Barremian, the describing paper's placement of the horizon itself. Governs `stage: [Barremian]` on [*Wyleyia valdensis*](../../../genera/W/Wyleyia.yml).
+
+**Evidence.**
+- harrison1973a, Occurrence: "The ostracods in the Henfield deposits indicate that they lie about 500–600 feet below the top of the Weald Clay. This would establish the horizon as being in the middle of the Reeves Group II, in the Barremian Substage of the Neocomian Stage."
+
+**Ruled out.**
+- *Hauterivian.* It came with the record's import and has no source.
+- *Valanginian.* Molina-Pérez and Larramendi (2019) give "Valanginian, approx" in a compilation, with no basis.
+
+**Open.** A later study of the Henfield section that revises the ostracod correlation.
+
 ## Is the *Wyleyia* humerus from the Hastings Beds?
 
 *2026-09-09*

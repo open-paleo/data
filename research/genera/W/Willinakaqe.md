@@ -18,5 +18,5 @@
 
 ## References
 
-- `juárezvalieri2010a`: Juárez Valieri, R. D.; Haro, J. A.; Fiorelli, L. E.; Calvo, J. O. (2010). A new hadrosauroid (Dinosauria: Ornithopoda) from the Allen Formation (Late Cretaceous) of Patagonia, Argentina. *Revista del Museo Argentino de Ciencias Naturales, neuvo serie* 12(2): 217-231. doi:10.22179/revmacn.12.242
-- `cruzado-caballero2016a`: Cruzado-Caballero, P.; Coria, R. A. (2016). Revisiting the hadrosaurid diversity of the Allen Fm.: Re-evaluation of the taxonomic validity of Willinakaqe salitralensis (Ornithopoda, Hadrosauridae) from Salitral Moreno, Río Negro Province, Argentina. *Ameghiniana* 53(2): 231-237. doi:10.5710/AMGH.25.09.2015.2943
+- `juárezvalieri2010a`: Juárez Valieri, R. D.; Haro, J. A.; Fiorelli, L. E.; Calvo, J. O. (2010). A new hadrosauroid (Dinosauria: Ornithopoda) from the Allen Formation (Late Cretaceous) of Patagonia, Argentina. *Revista del Museo Argentino de Ciencias Naturales, nueva serie* 12(2): 217-231. doi:10.22179/revmacn.12.242
+- `cruzado-caballero2016a`: Cruzado-Caballero, P.; Coria, R. A. (2016). Revisiting the hadrosaurid (Dinosauria: Ornithopoda) diversity of the Allen Formation: a re-evaluation of Willinakaqe salitralensis from Salitral Moreno, Río Negro Province, Argentina. *Ameghiniana* 53(2): 231-237. doi:10.5710/AMGH.25.09.2015.2943

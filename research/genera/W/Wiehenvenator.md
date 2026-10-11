@@ -17,4 +17,4 @@
 
 ## References
 
-- `rauhut2016a`: Rauhut, O. M.; Hübner, T.; Lanser, K. (2016). A new megalosaurid theropod dinosaur from the late Middle Jurassic (Callovian) of north-western Germany: Implications for theropod evolution and faunal turnover in the Jurassic. *Palaeontologia Electronica*. doi:10.26879/654
+- `rauhut2016a`: Rauhut, O. M.; Hübner, T.; Lanser, K. (2016). A new megalosaurid theropod dinosaur from the late Middle Jurassic (Callovian) of north-western Germany: Implications for theropod evolution and faunal turnover in the Jurassic. *Palaeontologia Electronica* 19(2): 26A. doi:10.26879/654

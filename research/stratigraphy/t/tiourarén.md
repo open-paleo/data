@@ -18,7 +18,7 @@
 ## References
 
 - `rauhut2009a`: Rauhut, O. W. M.; López-Arbarello, A. (2009). Considerations on the age of the Tiouaren Formation (Iullemmeden Basin, Niger, Africa): Implications for Gondwanan Mesozoic terrestrial vertebrate faunas. *Palaeogeography, Palaeoclimatology, Palaeoecology* 271: 259-267. doi:10.1016/j.palaeo.2008.10.019
-- `rauhut2016a`: Rauhut, O. M.; Hübner, T.; Lanser, K. (2016). A new megalosaurid theropod dinosaur from the late Middle Jurassic (Callovian) of north-western Germany: Implications for theropod evolution and faunal turnover in the Jurassic. *Palaeontologia Electronica*. doi:10.26879/654
+- `rauhut2016a`: Rauhut, O. M.; Hübner, T.; Lanser, K. (2016). A new megalosaurid theropod dinosaur from the late Middle Jurassic (Callovian) of north-western Germany: Implications for theropod evolution and faunal turnover in the Jurassic. *Palaeontologia Electronica* 19(2): 26A. doi:10.26879/654
 - `sánchez-hernández2014a`: Sánchez-Hernández, B.; Benton, M. J. (2014). Filling the ceratosaur gap: A new ceratosaurian theropod from the Early Cretaceous of Spain. *Acta Palaeontologica Polonica* 59(3): 581-600. doi:10.4202/app.2011.0144
 - `mannion2025a`: Mannion, P. D.; Moore, A. J. (2025). Critical reappraisal of a putative dicraeosaurid sauropod dinosaur from the Middle Jurassic of Gondwana and a revised view of diplodocoid evolutionary relationships and biogeography. *Journal of Systematic Palaeontology* 23(1): 2550760. doi:10.1080/14772019.2025.2550760
 - `devries2022a`: DeVries, R. P.; Sereno, P. C.; Vidal, D.; Baumgart, S. L. (2022). Reproducible digital restoration of fossils using Blender. *Frontiers in Earth Science* 10: 833379. doi:10.3389/feart.2022.833379

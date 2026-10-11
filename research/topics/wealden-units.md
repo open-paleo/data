@@ -1,5 +1,18 @@
 # Wealden units
 
+## Does the Weald Clay group rank govern *Wyleyia*?
+
+*2026-10-11*
+
+**Conclusion.** Yes. *Wyleyia* is recorded at `group: Weald Clay`, the group rank the 2026-09-30 and 2026-10-08 entries give the Weald Clay in the Weald Sub-basin; neither entry linked it. Governs `location.group: Weald Clay` on [*Wyleyia valdensis*](../../genera/W/Wyleyia.yml).
+
+**Evidence.**
+- harrison1973a: "Weald Clay, Lower Cretaceous, Henfield, Sussex".
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## Does the registry follow the BGS ranks for the Wealden?
 
 *2026-10-08*
@@ -34,6 +47,7 @@
 
 ## References
 
+- `harrison1973a`: Harrison, C. J. O.; Walker, C. A. (1973). Wyleyia: a new bird humerus from the Lower Cretaceous of England. *Palaeontology* 16(4): 721-728.
 - `raven2020a`: Raven, T. J.; Barrett, P. M.; Pond, S. B.; Maidment, S. C. R. (2020). Osteology and taxonomy of British Wealden Supergroup (Berriasian-Aptian) ankylosaurs (Ornithischia, Ankylosauria). *Journal of Vertebrate Paleontology*. doi:10.1080/02724634.2020.1826956
 - `austen2018a`: Austen, P. A.; Batten, D. J. (2018). English Wealden fossils: an update. *Proceedings of the Geologists' Association* 129(2): 171-201. doi:10.1016/j.pgeola.2018.02.007
 - `nopcsa1928a`: Nopcsa, B. F. (1928). Palaeontological notes on reptiles. *Geologica Hungarica, Series Palaeontologica* 1(1): 1-84.

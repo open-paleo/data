@@ -21,7 +21,7 @@
 
 - `xu2016b`: Xu, X.; Zhou, Z.; Sullivan, C.; Wang, Y.; Ren, D. (2016). An updated review of the Middle-Late Jurassic Yanliao Biota: chronology, taphonomy, paleontology and paleoecology. *Acta Geologica Sinica (English Edition)* 90(6): 2229-2243. doi:10.1111/1755-6724.13033
 - `sullivan2014a`: Sullivan, C.; Wang, Y.; Hone, D. W. E.; Wang, Y. Q.; Xu, X.; Zhang, F. (2014). The vertebrates of the Jurassic Daohugou Biota of northeastern China. *Journal of Vertebrate Paleontology* 34(2): 243-280. doi:10.1080/02724634.2013.787316
-- `rauhut2016a`: Rauhut, O. M.; Hübner, T.; Lanser, K. (2016). A new megalosaurid theropod dinosaur from the late Middle Jurassic (Callovian) of north-western Germany: Implications for theropod evolution and faunal turnover in the Jurassic. *Palaeontologia Electronica*. doi:10.26879/654
+- `rauhut2016a`: Rauhut, O. M.; Hübner, T.; Lanser, K. (2016). A new megalosaurid theropod dinosaur from the late Middle Jurassic (Callovian) of north-western Germany: Implications for theropod evolution and faunal turnover in the Jurassic. *Palaeontologia Electronica* 19(2): 26A. doi:10.26879/654
 - `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
 - `turner2012a`: Turner, A. H.; Makovicky, P. J.; Norell, M. A. (2012). A Review of Dromaeosaurid Systematics and Paravian Phylogeny. *Bulletin of the American Museum of Natural History* 371: 1-206. doi:10.1206/748.1
 - `xu2005a`: Xu, X.; Zhang, F. (2005). A new maniraptoran dinosaur from China with long feathers on the metatarsus. *Naturwissenschaften* 92(4): 173-177. doi:10.1007/s00114-004-0604-y
