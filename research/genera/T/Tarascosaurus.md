@@ -1,5 +1,20 @@
 # *Tarascosaurus*
 
+## Which institution and number does the *Tarascosaurus* holotype carry?
+
+*2026-10-11*
+
+**Conclusion.** FSL 330201, at the Université Claude Bernard Lyon 1 (UCBL), which holds the former collections of the Faculté des Sciences de Lyon. The record had read PSL 330201, a prefix no source prints. Governs `type_specimen.specimen_id: [FSL 330201]` and `institution: UCBL` on [*Tarascosaurus salluvicus*](../../../genera/T/Tarascosaurus.yml), and the UCBL entry in the institution registry.
+
+**Evidence.**
+- leloeuff1991a: "Holotype - Proximal half of a left femur (Collections of the Faculty of Sciences of Lyon, FSL 330201)".
+- sabaj2020a: "UCBL: Université Claude Bernard Lyon 1, paleontology collection, Villeurbanne … includes fossils formerly in Faculté des Sciences de Lyon (FSL) at UCBL … *Current as*: UCBL-FSL (fossils). *Also as*: CPS-UL, FSL (fossils)."
+
+**Ruled out.**
+- *PSL.* No source read prints it.
+
+**Open.** Nothing.
+
 ## Is the *Tarascosaurus* holotype from the Var or the Bouches-du-Rhône?
 
 *2026-09-08*
@@ -36,6 +51,7 @@
 ## References
 
 - `leloeuff1991a`: Le Loeuff, J.; Buffetaut, E. (1991). Tarascosaurus salluvicus nov. gen., nov. sp., dinosaure théropode du Crétacé supérieur du sud de la France [Tarascosaurus salluvicus nov. gen., nov. sp., a theropod dinosaur from the Upper Cretaceous of southern France]. *Géobios* 25(5): 585-594. doi:10.1016/0016-6995(91)80022-r
+- `sabaj2020a`: Sabaj, M. H. (2020). Codes for natural history collections in ichthyology and herpetology. *Copeia* 108(3): 593-669. doi:10.1643/ASIHCODONS2020
 - `tortosa2014a`: Tortosa, T.; Buffetaut, E.; Vialle, N.; Dutour, Y.; Turini, E.; Cheylan, G. (2014). A new abelisaurid dinosaur from the Late Cretaceous of southern France: Palaeobiogeographical implications. *Annales de Paléontologie* 100(1): 63-86. doi:10.1016/j.annpal.2013.10.003
 - `csiki-sava2015a`: Csiki-Sava, Z.; Buffetaut, E.; Ősi, A.; Pereda-Suberbiola, X.; Brusatte, S. L. (2015). Island life in the Cretaceous — faunal composition, biogeography, evolution, and extinction of land-living vertebrates on the Late Cretaceous European archipelago. *ZooKeys* 469: 1-161. doi:10.3897/zookeys.469.8439
 - `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.

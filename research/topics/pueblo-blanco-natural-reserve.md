@@ -1,5 +1,22 @@
 # Pueblo Blanco Natural Reserve
 
+## Which other records come from the Violante farm?
+
+*2026-10-11*
+
+**Conclusion.** [*Aoniraptor libertatem*](../../genera/A/Aoniraptor.yml), [*Overoraptor chimentoi*](../../genera/O/Overoraptor.yml) and [*Gualicho shinyae*](../../genera/G/Gualicho.yml) also come from the site, so they take the same locality name as the other four records. Governs `location.locality: Pueblo Blanco Natural Reserve` on those three.
+
+**Evidence.**
+- motta2016a, p. 231: "The Violante farm (39°23'52.37"S, 68°37'4.30"W)", for the *Aoniraptor* material.
+- motta2020a, Locality and horizon: the *Overoraptor* specimen comes from beds "cropping out at 39°23′52.37″ S, 68°37′4.30″ W … (the fossil locality is historically known as "Violante farm")".
+- apesteguía2016a, Provenance: the *Gualicho* holotype came from the Huincul Formation "exposed along the northern flank of the Meseta de la Rentería"; "Exact locality data are on file with the authors"; its introduction describes the expedition's exposures as "informally dubbed 'Violante's field'".
+- cerroni2020a, Introduction: "The megaraptorids *Gualicho shinyae* and *Aoniraptor libertatem* … were recently described for the Violante Farm".
+
+**Ruled out.**
+- *The Meseta de la Rentería as a separate site for Gualicho.* Its paper names the escarpment the exposures lie on, and Cerroni and colleagues place the taxon at the farm.
+
+**Open.** Nothing.
+
 ## Is the Pueblo Blanco Natural Reserve a different site from the Violante farm?
 
 *2026-09-15*
@@ -20,6 +37,8 @@
 ## References
 
 - `motta2016a`: Motta, M. J.; Aranciaga Rolando, A. M.; Rozadilla, S.; Agnolín, F. L.; Chimento, N. R.; Brissón Egli, F.; Novas, F. E. (2016). New theropod fauna from the Upper Cretaceous (Huincul Formation) of northwestern Patagonia, Argentina. In *Cretaceous Period: Biotic Diversity and Biogeography*, pp. 231-253. New Mexico Museum of Natural History and Science.
+- `motta2020a`: Motta, M. J.; Agnolín, F. L.; Brissón Egli, F.; Novas, F. E. (2020). New theropod dinosaur from the Upper Cretaceous of Patagonia sheds light on the paravian radiation in Gondwana. *The Science of Nature* 107(3). doi:10.1007/s00114-020-01682-1
+- `apesteguía2016a`: Apesteguía, S.; Smith, N. D.; Juárez Valieri, R. D.; Makovicky, P. J. (2016). An Unusual New Theropod with a Didactyl Manus from the Upper Cretaceous of Patagonia, Argentina. *PLOS ONE* 11(7): e0157793. doi:10.1371/journal.pone.0157793
 - `cerroni2020a`: Cerroni, M. A.; Motta, M. J.; Agnolín, F. L.; Aranciaga Rolando, A. M.; Brissón Egli, F.; Novas, F. E. (2020). A new abelisaurid from the Huincul Formation (Cenomanian-Turonian; Upper Cretaceous) of Río Negro province, Argentina. *Journal of South American Earth Sciences* 98. doi:10.1016/j.jsames.2019.102445
 - `agnolín2023a`: Agnolín, F. L.; González Riga, B. J.; Aranciaga Rolando, A. M.; Rozadilla, S.; Motta, M. J.; Chimento, N. R.; Novas, F. E. (2023). A new giant titanosaur (Dinosauria, Sauropoda) from the Upper Cretaceous of Northwestern Patagonia, Argentina. *Cretaceous Research* 146. doi:10.1016/j.cretres.2023.105487
 - `nogueira2024a`: Nogueira, R. A.; Rozadilla, S.; Agnolín, F. L.; García Marsà, J. A.; Motta, M. J.; Novas, F. E. (2024). A new ornithopod from the Upper Cretaceous (Huincul Formation) of northwestern Patagonia, Argentina: Implications on elasmarian postcranial anatomy. *Cretaceous Research* 159. doi:10.1016/j.cretres.2024.105874

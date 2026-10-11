@@ -1,5 +1,20 @@
 # *Thecodontosaurus*
 
+## Which point of ST 572747 does the record carry?
+
+*2026-10-11*
+
+**Conclusion.** The centre of the 100 m square the grid reference names, 51.470091, -2.616854, converted from the British National Grid. The record had held the square's south-west corner, about 70 m away; the centre is the usual single point for a grid reference. Governs `location.coordinates` on [*Thecodontosaurus antiquus*](../../../genera/T/Thecodontosaurus.yml).
+
+**Evidence.**
+- benton2000b: the site's Ordnance Survey reference is ST 572747.
+- ST 572747 is the square from 357200 E, 174700 N to 357300 E, 174800 N; its centre, 357250 E, 174750 N, converts to 51.470091, -2.616854, and its south-west corner to 51.469638, -2.617568 (our conversion).
+
+**Ruled out.**
+- *The south-west corner.* It lies within the square, but it is an edge of the area the reference names, not its middle.
+
+**Open.** Nothing.
+
 ## Which diagnosis does *Thecodontosaurus antiquus* take?
 
 *2026-10-09*
@@ -50,8 +65,8 @@
 
 ## References
 
-- `ballell2020a`: Ballell, A.; Rayfield, E. J.; Benton, M. J. (2020). Osteological redescription of the Late Triassic sauropodomorph dinosaur Thecodontosaurus antiquus based on new material from Tytherington, southwestern England. *Journal of Vertebrate Paleontology* 40(2): e1770774. doi:10.1080/02724634.2020.1770774
 - `benton2000b`: Benton, M. J.; Juul, L.; Storrs, G. W.; Galton, P. M. (2000). Anatomy and systematics of the prosauropod dinosaur Thecodontosaurus antiquus from the Upper Triassic of southwest England. *Journal of Vertebrate Paleontology* 20(1): 77-108. doi:10.1671/0272-4634(2000)020[0077:AASOTP]2.0.CO;2
+- `ballell2020a`: Ballell, A.; Rayfield, E. J.; Benton, M. J. (2020). Osteological redescription of the Late Triassic sauropodomorph dinosaur Thecodontosaurus antiquus based on new material from Tytherington, southwestern England. *Journal of Vertebrate Paleontology* 40(2): e1770774. doi:10.1080/02724634.2020.1770774
 - `galton2007a`: Galton, P. M. (2007). Notes on the remains of archosaurian reptiles, mostly basal sauropodomorph dinosaurs, from the 1834 fissure fill (Rhaetian, Upper Triassic) at Clifton in Bristol, southwest England. *Revue de Paléobiologie* 26(2): 505-591.
 - `riley1836a`: Riley, H.; Stutchbury, S. (1836). A description of various fossil remains of three distinct saurian animals discovered in the autumn of 1834 in the Magnesian Conglomerate on Durdham-Down, near Bristol. *Proceedings of the Geological Society of London* 2: 397-399.
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.

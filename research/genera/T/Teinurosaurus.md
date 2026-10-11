@@ -1,5 +1,21 @@
 # *Teinurosaurus*
 
+## What stage does *Teinurosaurus* take?
+
+*2026-10-11*
+
+**Conclusion.** Kimmeridgian, the one stage a source states for the vertebra. Huene's "upper Malm" is an epoch-level phrase and adds no stage. Governs `stage: [Kimmeridgian]` on [*Teinurosaurus sauvagei*](../../../genera/T/Teinurosaurus.yml).
+
+**Evidence.**
+- huene1932a: "einen distalen Schwanzwirbel eines Coelurosauriers aus dem oberen Malm der Gegend von Boulogne-sur-mer" ("a distal caudal vertebra of a coelurosaur from the upper Malm of the Boulogne-sur-mer area", translated); Fig. 6 caption: "aus dem Kimmeridge von Boulogne-sur-mer. Nach Sauvage" ("from the Kimmeridge of Boulogne-sur-mer. After Sauvage", translated).
+- nopcsa1928c, p. 188, and white1973a give no age.
+
+**Ruled out.**
+- *Tithonian.* It matches only the "145 MYA" of Jones (2026), a compilation figure with no source.
+- *Kimmeridgian and Tithonian, on an older, wider "Kimmeridge".* Reading Huene's word as covering beds now called lower Tithonian would be our inference.
+
+**Open.** Sauvage (1897–98), the source of Huene's Kimmeridge, has not been read.
+
 ## Is the *Teinurosaurus* holotype from the Mont-Lambert Formation?
 
 *2026-09-08*
@@ -18,8 +34,9 @@
 
 ## References
 
-- `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
 - `huene1932a`: Huene, F. V. (1932). Die fossile Reptil-Ordnung Saurischia, ihre Entwicklung und Geschichte [The fossil reptile order Saurischia, their development and history]. *Monographien zur Geologie und Palaeontologie, serie 1* 4(1-2): 1-361.
+- `nopcsa1928c`: Nopcsa, B. F. (1928). The genera of reptiles. *Palaeobiologica* 1: 163-188.
+- `white1973a`: White, T. E. (1973). Catalogue of the genera of dinosaurs. *Annals of Carnegie Museum* 44: 117-155. doi:10.5962/p.243870
+- `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
 - `galton1980c`: Galton, P. M.; Powell, H. P. (1980). The ornithischian dinosaur Camptosaurus prestwichii from the Upper Jurassic of England. *Palaeontology* 23: 411-443.
 - `sauvage1874a`: Sauvage, H. E. (1874). Mémoire sur les dinosauriens et les crocodiliens des terrains jurassiques de Boulogne-sur-Mer [Memoir on the dinosaurs and crocodilians of the Jurassic deposits of Boulogne-sur-mer]. *Mémoires de la Société Géologique de France, série 2* 10(2): 1-57.
-- `white1973a`: White, T. E. (1973). Catalogue of the genera of dinosaurs. *Annals of Carnegie Museum* 44: 117-155. doi:10.5962/p.243870

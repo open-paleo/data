@@ -1,5 +1,20 @@
 # *Tehuelchesaurus*
 
+## Where in the Cañadón Calcáreo Formation is the *Tehuelchesaurus* holotype?
+
+*2026-10-11*
+
+**Conclusion.** Its lower part, at the base of the formation, on Carballido and colleagues' (2011) measured position. Cúneo and colleagues' (2013) "middle lacustrine section" cites Carballido and colleagues and gives no position of its own. Governs `location.part: lower` on [*Tehuelchesaurus benitezii*](../../../genera/T/Tehuelchesaurus.yml).
+
+**Evidence.**
+- carballido2011a, p. 607: "The holotype of *Tehuelchesaurus* was found as a partial articulated skeleton in a lacustrine silt–sandstone at the base of the Cañadón Calcáreo Formation, some 15–20 m above the discordant contact with the volcanic and volcanoclastic rocks of the Lonco Trapial Formation [note that the stratigraphic section figured by Rich *et al*. (1999: fig. 3) represented a composite sequence with the assumed stratigraphic position of *Tehuelchesaurus*]".
+- cúneo2013a, p. 7: "The middle lacustrine section of the formation is host to the neosauropod dinosaur *Tehuelchesaurus benitezii* recovered from the Estancia Fernández locality (Fig. 1; Rich et al., 1999; Carballido et al., 2011)".
+
+**Ruled out.**
+- *The middle of the formation.* Cúneo and colleagues cite Carballido and colleagues for it, who place the holotype at the base.
+
+**Open.** Rich and colleagues (1999), the describing paper, has not been read.
+
 ## Is the *Tehuelchesaurus benitezii* type from the Cañadón Asfalto or the Cañadón Calcáreo?
 
 *2026-08-06*
