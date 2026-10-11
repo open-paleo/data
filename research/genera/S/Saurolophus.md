@@ -1,5 +1,23 @@
 # *Saurolophus*
 
+## Are PIN 551/8 and PIN 551/356 the same *Saurolophus angustirostris* holotype?
+
+*2026-10-10*
+
+**Conclusion.** Yes. Supersedes the 2026-09-03 entry, which kept PIN 551/8 but ruled out PIN 551/356 as a different specimen. Bell and colleagues (2017) equate the two numbers, Bell (2011) labels each the holotype, and the reason given for separating them, Dewaele and colleagues (2015) listing PIN 551/356 among the subadults, matches Bell's own description of the holotype as a subadult. `specimen_id` stays PIN 551/8, the form most sources give, and the other number is recorded in the block's notes rather than as a `former_ids` hop, because no source read says which number came first or which the collection uses now. Governs `type_specimen.notes` on *Saurolophus angustirostris* in [*Saurolophus*](../../../genera/S/Saurolophus.yml).
+
+**Evidence.**
+- bell2017b, p. 81: "the complete holotype skeleton (PIN 551–8, =PIN 551/ 356) was used as a comparative standard".
+- bell2017b, p. 77, Fig. 3: "B, PIN 551-356 (holotype)"; the text adds that "Rozhdestvensky (1952) chose the best of those specimens (PIN 551/ 356)".
+- bell2011a, p. 705: "PIN 551/8 (holotype; sub− adult skull and skeleton)"; p. 704, Table 1: "PIN 551/356 (holotype)".
+- dewaele2015a, Results: the frontal is "progressively larger in subadults (PIN 551/356) and adults".
+
+**Ruled out.**
+- *PIN 551/356 as a different specimen.* The 2026-09-03 entry read Dewaele's "subadults (PIN 551/356)" as excluding the holotype, but the holotype is itself a subadult.
+- *A `former_ids` entry.* It needs a direction and a reason; Bell and colleagues (2017) tie PIN 551/356 to Rozhdestvensky's choice, which suggests it is the older form, but they do not state a renumbering.
+
+**Open.** Which number is current at the Paleontological Institute, and when the second came into use. Rozhdestvensky (1952), who designated the holotype, and the later monographic descriptions of its skull and postcranium are the likely sources; none is held.
+
 ## Do later sources or figures settle which specimen is MPC-D 100/764?
 
 *2026-10-10*
@@ -52,10 +70,14 @@
 
 ## References
 
+- `bell2017b`: Bell, P. R.; Evans, D. C.; Eberth, D. A.; Fanti, F.; Tsogtbaatar, K.; Ryan, M. J. (2017). Sedimentological and taphonomic observations on the "Dragon's Tomb" Saurolophus (Hadrosauridae) bonebed, Nemegt Formation (Upper Cretaceous), Mongolia. *Palaeogeography, Palaeoclimatology, Palaeoecology* 494: 75-90. doi:10.1016/j.palaeo.2017.11.034
 - `bell2011a`: Bell, P. R. (2011). Cranial osteology and ontogeny of Saurolophus angustirostris from the Late Cretaceous of Mongolia. *Acta Palaeontologica Polonica* 56(4): 703-722. doi:10.4202/app.2010.0061
-- `hone2010a`: Hone, D. W. E.; Watabe, M. (2010). New information on scavenging and selective feeding behaviour of tyrannosaurids. *Acta Palaeontologica Polonica* 55(4): 627-634. doi:10.4202/app.2009.0133
 - `dewaele2015a`: Dewaele, L.; Tsogtbaatar, K.; Barsbold, R.; Garcia, G.; Stein, K.; Escuillié, F.; Godefroit, P. (2015). Perinatal specimens of Saurolophus angustirostris (Dinosauria: Hadrosauridae), from the Upper Cretaceous of Mongolia. *PLOS ONE* 10(10): e0138806. doi:10.1371/journal.pone.0138806
+- `hone2010a`: Hone, D. W. E.; Watabe, M. (2010). New information on scavenging and selective feeding behaviour of tyrannosaurids. *Acta Palaeontologica Polonica* 55(4): 627-634. doi:10.4202/app.2009.0133
 - `suzuki2000a`: Suzuki, S.; Watabe, M. (2000). Report on the Japan–Mongolia Joint Paleontological Expedition to the Gobi desert, 1998. *Hayashibara Museum of Natural Sciences Research Bulletin* 1: 83-98.
 - `watabe2010a`: Watabe, M.; Tsogtbaatar, K.; Suzuki, S.; Saneyoshi, M. (2010). Geology of dinosaur-fossil-bearing localities (Jurassic and Cretaceous: Mesozoic) in the Gobi Desert: Results of the HMNS-MPC Joint Paleontological Expedition. *Hayashibara Museum of Natural Sciences Research Bulletin* 3: 41-118.
-- `bell2017b`: Bell, P. R.; Evans, D. C.; Eberth, D. A.; Fanti, F.; Tsogtbaatar, K.; Ryan, M. J. (2017). Sedimentological and taphonomic observations on the "Dragon's Tomb" Saurolophus (Hadrosauridae) bonebed, Nemegt Formation (Upper Cretaceous), Mongolia. *Palaeogeography, Palaeoclimatology, Palaeoecology* 494: 75-90. doi:10.1016/j.palaeo.2017.11.034
 - `słowiak2020a`: Słowiak, J.; Szczygielski, T.; Ginter, M.; Fostowicz-Frelik, Ł. (2020). Uninterrupted growth in a non-polar hadrosaur explains the gigantism among duck-billed dinosaurs. *Palaeontology* 63(4): 579-599. doi:10.1111/pala.12473
+
+## Other references
+
+- `rozhdestvensky1952a`: Rozhdestvensky, A. K. (1952). Novyi predstavitel' utkonosykh dinozavrov iz verkhnemelovykh otlozhenii Mongolii [A new representative of the duck-billed dinosaurs from the Upper Cretaceous of Mongolia]. *Doklady Akademii Nauk SSSR* 86(2): 405-408.
