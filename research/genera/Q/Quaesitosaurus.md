@@ -1,5 +1,20 @@
 # *Quaesitosaurus*
 
+## How is the *Quaesitosaurus* locality spelled?
+
+*2026-10-11*
+
+**Conclusion.** Shar Tsav, Benton's (2000) form, under the rule in [Mongolian place names](../../topics/mongolian-place-names.md); Kurzanov and Bannikov's "Shara-Tsav" is the describing paper's transliteration. Governs `location.locality: Shar Tsav` on [*Quaesitosaurus orientalis*](../../../genera/Q/Quaesitosaurus.yml).
+
+**Evidence.**
+- benton2000c, p. xxvi: "Shar Tsav [locality]".
+- averianov2020a: "Quaesitosaurus orientalis from the Shar Tsav locality, Barun Goyot Formation, Campanian (Kurzanov & Bannikov 1983)".
+
+**Ruled out.**
+- *Shara-Tsav.* An older transliteration of the same locality, which Averianov and Lopatin tie to the same taxon.
+
+**Open.** Nothing.
+
 ## Are the Shara-Tsav beds Barungoyot or Nemegt?
 
 *2026-09-02*
@@ -18,6 +33,8 @@
 
 ## References
 
+- `benton2000c`: Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N. (2000). Mongolian place names and stratigraphic terms. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds.)*, pp. xxii-xxviii. Cambridge University Press, Cambridge.
+- `averianov2020a`: Averianov, A. O.; Lopatin, A. V. (2020). An unusual new sauropod dinosaur from the Late Cretaceous of Mongolia. *Journal of Systematic Palaeontology* 18(12): 1009-1032. doi:10.1080/14772019.2020.1716402
 - `kurzanov1983a`: Kurzanov, S. M.; Bannikov, A. F. (1983). Nouviy sauropod ys uerchnego mela MNR [New sauropod from the Upper Cretaceous of Mongolia]. *Paleontologicheskii Zhurnal* 1983(2): 90-96.
 - `jerzykiewicz1991a`: Jerzykiewicz, T.; Russell, D. A. (1991). Late Mesozoic stratigraphy and vertebrates of the Gobi Basin. *Cretaceous Research* 12(4): 345-377. doi:10.1016/0195-6671(91)90015-5
 - `kurzanov1981a`: Kurzanov, S. M. (1981). O neobuchnykh teropodakh iz verkhnego mela MNR [An unusual theropod from the Upper Cretaceous of Mongolia]. *Fossil Reptiles of Mongolia. Sovmestnaya Sovetsko-Mongol'skaya Paleontologicheskaya Ekspeditsiya, Trudy [The Joint Soviet-Mongolian Paleontological Expedition, Transactions]* 24: 39-50.
