@@ -1,5 +1,20 @@
 # *Jianianhualong*
 
+## How is the *Jianianhualong* locality written?
+
+*2026-10-11*
+
+**Conclusion.** "Baicaigou", the closed-up form used for the same place on [*Jinzhousaurus*](../../../genera/J/Jinzhousaurus.yml) and in the notes on the site; the dataset writes one form for a place. Governs `location.locality: Baicaigou` on [*Jianianhualong tengi*](../../../genera/J/Jianianhualong.yml).
+
+**Evidence.**
+- xu2017b, p. 2: the holotype is from "Baicai Gou".
+- wang2001a, p. 1669: the *Jinzhousaurus* holotype is from Baicaigou.
+
+**Ruled out.**
+- *"Baicai Gou".* It is one paper's spacing of the same name.
+
+**Open.** Nothing.
+
 ## Does *Jianianhualong* take the member of the *Jinzhousaurus* site at Baicaigou?
 
 *2026-08-27*

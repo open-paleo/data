@@ -1,5 +1,22 @@
 # *Jaxartosaurus*
 
+## What is the *Jaxartosaurus* type, and where is it kept?
+
+*2026-10-11*
+
+**Conclusion.** A lectotype, the skull No. 1/5009, at the Chernyshev Central Museum of Geological Exploration (CCMGE). Riabinin founded the species on a series of bones from several individuals, and Rozhdestvensky (1968) designated the skull as lectotype, naming the museum of the Central Science and Research Institute for Geological Exploration (TsNIGRI), which the registry holds as CCMGE. Bell and Brink's (2013) "PIN 1/5009" gives no basis for the Paleontological Institute. Governs `type_specimen.specimen_id: [CCMGE 1/5009]`, `specimen_type: lectotype`, `institution: CCMGE` and `material` on [*Jaxartosaurus aralensis*](../../../genera/J/Jaxartosaurus.yml).
+
+**Evidence.**
+- riabinin1939a: "Type. Posterior part of skull, dentale, supraangulare, 4 cervical vertebrae, two dorsal, ischium, femur, tibia, humerus (coll. № 5009, specimen numbers 1, 2, 3, 5, 6–9, 11, 12, 23, 24, 25–28, 29)"; the remains "were represented not by one, but probably by many identical individuals" (translated).
+- rozhdestvensky1968a: "Lectotype. The Museum of the Central Science and Research Institute for Geological Exploration (Leningrad), No. 1/5009: incomplete skull with no maxillofacial region" (translated).
+- bell2013a, pp. 271–272: "*Jaxartosaurus aralensis* (PIN 1/5009)"; "Only the skull is currently available for study, the remaining elements having been lost".
+
+**Ruled out.**
+- *Holotype.* Riabinin's type is a series.
+- *PIN as the repository.* Only Bell and Brink give it, without a basis; the designating paper names the TsNIGRI museum.
+
+**Open.** Whether the skull has since moved to PIN. A collection record or a paper stating a transfer would settle it.
+
 ## Which unit, and which of the two Kyrkkuduk sites, is the *Jaxartosaurus* type material from?
 
 *2026-08-27*
@@ -23,7 +40,7 @@
 
 - `riabinin1939a`: Riabinin, A. N. (1939). Fauna pozvonochnykh iz verkhnego mela yuzhnogo Kazakhstana. I. Reptilia. Chast' 1. 1. Ornithischia [The Upper Cretaceous vertebrate fauna of South Kazakhstan. I. Reptilia. Part 1. 1. Ornithischia]. *Transactions of the Central Geological and Prospecting Institute* 118: 1-39.
 - `rozhdestvensky1968a`: Rozhdestvensky, A. K. (1968). Gadrozavry Kazakhstana [Hadrosaurs of Kazakhstan]. *[Upper Paleozoic and Mesozoic Amphibians and Reptiles]. Akademia Naul SSSR, Moscow*: 97-141.
+- `bell2013a`: Bell, P. R.; Brink, K. S. (2013). Kazaklambia convincens comb. nov., a primitive juvenile lambeosaurine from the Santonian of Kazakhstan. *Cretaceous Research* 45: 265-274. doi:10.1016/j.cretres.2013.05.003
 - `nessov1995a`: Nessov, L. A. (1995). Dinozavri severnoi Yevrazii: Novye dannye o sostave kompleksov, ekologii i paleobiogeografii [Dinosaurs of northern Eurasia: new data about assemblages, ecology, and paleobiogeography]. *Institute for Scientific Research on the Earth's Crust, St. Petersburg State University, St. Petersburg*: 1-156.
 - `vereshchagin1979a`: Vereshchagin, V. N. (chief editor) (1979). Stratigraficheskii slovar' SSSR: Trias, Yura, Mel [Stratigraphic Dictionary of the USSR: Triassic, Jurassic, Cretaceous]. Nedra, Leningrad.
 - `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027
-- `bell2013a`: Bell, P. R.; Brink, K. S. (2013). Kazaklambia convincens comb. nov., a primitive juvenile lambeosaurine from the Santonian of Kazakhstan. *Cretaceous Research* 45: 265-274. doi:10.1016/j.cretres.2013.05.003

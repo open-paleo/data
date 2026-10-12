@@ -1,5 +1,19 @@
 # *Jinyunpelta*
 
+## What stages does *Jinyunpelta* take?
+
+*2026-10-11*
+
+**Conclusion.** Albian and Cenomanian, as the describing paper gives the holotype's horizon; no source read narrows it. Governs `period: [Early Cretaceous, Late Cretaceous]` and `stage: [Albian, Cenomanian]` on [*Jinyunpelta sinensis*](../../../genera/J/Jinyunpelta.yml).
+
+**Evidence.**
+- zheng2018a, p. 3: "Stratigraphic horizon: Liangtoutang Formation, later Early to early Late Cretaceous (Albian–Cenomanian)."
+
+**Ruled out.**
+- *Albian alone.* No source read gives it.
+
+**Open.** Nothing.
+
 ## Is the *Jinyunpelta* holotype from a quarry at Shuhong?
 
 *2026-08-27*
