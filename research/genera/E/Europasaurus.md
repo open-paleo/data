@@ -1,5 +1,19 @@
 # *Europasaurus*
 
+## Does the Kitadani precedent bring Zuo and colleagues' Langenberg position into the record?
+
+*2026-10-12*
+
+**Conclusion.** No. At [Kitadani](../../topics/kitadani-dinosaur-quarry.md) the papers print the pair for the quarry that is the type locality, so it is the site's position. Zuo and colleagues print theirs for the logged section, a point on the face of an active quarry, and the yellow star of their Fig. 3a, which the 2026-08-23 entry already weighs, marks the strata that yielded *Europasaurus*, not the place of the 1998 excavation. Governs the empty `location.coordinates` on [*Europasaurus holgeri*](../../../genera/E/Europasaurus.yml), confirming the 2026-08-23 entry.
+
+**Evidence.**
+- zuo2017a, Materials and methods: "The Langenberg section (51°54′6.74″N, 10°30′27.73″E) is accessible in an active quarry about 5 km east of Goslar".
+
+**Ruled out.**
+- *The section's position by analogy with Kitadani.* The two pairs are printed for different things.
+
+**Open.** Nothing beyond the 2026-08-23 entry.
+
 ## Which bed at Langenberg is the Europasaurus material from?
 
 *2026-09-30*
@@ -48,8 +62,8 @@
 
 ## References
 
-- `evers2020a`: Evers, S. W.; Wings, O. (2020). Late Jurassic theropod dinosaur bones from the Langenberg Quarry (Lower Saxony, Germany) provide evidence for several theropod lineages in the central European archipelago. *PeerJ* 8: e8437. doi:10.7717/peerj.8437
 - `zuo2017a`: Zuo, F.; Heimhofer, U.; Huck, S.; Luppold, F. W.; Wings, O.; Erbacher, J. (2017). Sedimentology and depositional sequences of a Kimmeridgian carbonate ramp system, Lower Saxony Basin, Northern Germany. *Facies* 64(1). doi:10.1007/s10347-017-0513-0
+- `evers2020a`: Evers, S. W.; Wings, O. (2020). Late Jurassic theropod dinosaur bones from the Langenberg Quarry (Lower Saxony, Germany) provide evidence for several theropod lineages in the central European archipelago. *PeerJ* 8: e8437. doi:10.7717/peerj.8437
 - `sander2006a`: Sander, P. M.; Mateus, O.; Laven, T.; Knötschke, N. (2006). Bone histology indicates insular dwarfism in a new Late Jurassic sauropod dinosaur. *Nature* 441: 739-741. doi:10.1038/nature04633
 - `carballido2013a`: Carballido, J. L.; Sander, M. P. (2013). Postcranial axial skeleton of Europasaurus holgeri (Dinosauria, Sauropoda) from the Upper Jurassic of Germany: implications for sauropod ontogeny and phylogenetic relationships of basal Macronaria. *Journal of Systematic Palaeontology* 12(3): 335–387. doi:10.1080/14772019.2013.764935
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.

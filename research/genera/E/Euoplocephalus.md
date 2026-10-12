@@ -1,5 +1,19 @@
 # *Euoplocephalus*
 
+## How is the *Euoplocephalus* locality written?
+
+*2026-10-12*
+
+**Conclusion.** "CMN locality P-189704, east side of the mouth of Berry Creek", the museum locality number and site Vickaryous and Russell (2002) give for the holotype. Governs `location.locality` on [*Euoplocephalus tutus*](../../../genera/E/Euoplocephalus.yml).
+
+**Evidence.**
+- vickaryous2002a, p. 159: "*Type locality.* Canadian Museum of Nature (formerly the National Museum of Canada) locality number P-189704, Upper Cretaceous, Dinosaur Park Formation (formerly the Oldman Formation), East side of mouth of Berry Creek at the Red Deer River, Alberta, Canada."
+
+**Ruled out.**
+- *"near mouth of Berry Creek".* It drops the locality number and the side of the creek the source gives.
+
+**Open.** Nothing.
+
 ## At what level of the Dinosaur Park Formation was the *Euoplocephalus* holotype found?
 
 *2026-08-23*
@@ -19,7 +33,7 @@
 
 ## References
 
-- `lambe1902a`: Lambe, L. M. (1902). New genera and species from the Belly River Series (mid-Cretaceous). *Geological Survey of Canada Contributions to Canadian Palaeontology* 3(2): 25-81. doi:10.5281/zenodo.3233762
 - `vickaryous2002a`: Vickaryous, M. K.; Russell, A. P. (2002). A redescription of the skull of Euoplocephalus tutus (Archosauria: Ornithischia): a foundation for comparative and systematic studies of ankylosaurian dinosaurs. *Zoological Journal of the Linnean Society* 137(1): 157-186. doi:10.1046/j.1096-3642.2003.00045.x
+- `lambe1902a`: Lambe, L. M. (1902). New genera and species from the Belly River Series (mid-Cretaceous). *Geological Survey of Canada Contributions to Canadian Palaeontology* 3(2): 25-81. doi:10.5281/zenodo.3233762
 - `arbour2013a`: Arbour, V. M.; Currie, P. J. (2013). Euoplocephalus tutus and the diversity of ankylosaurid dinosaurs in the Late Cretaceous of Alberta, Canada, and Montana, USA. *PLOS ONE* 8(5): e62421. doi:10.1371/journal.pone.0062421
 - `penkalski2018a`: Penkalski, P. (2018). Revised systematics of the armoured dinosaur Euoplocephalus and its allies. *Neues Jahrbuch für Geologie und Paläontologie - Abhandlungen* 287(3): 261-306. doi:10.1127/njgpa/2018/0717

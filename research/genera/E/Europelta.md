@@ -1,5 +1,19 @@
 # *Europelta*
 
+## How is the AR-1 locality written?
+
+*2026-10-12*
+
+**Conclusion.** "AR-1, Santa María coal mine, Ariño", on [*Europelta carbonensis*](../../../genera/E/Europelta.yml) and on [*Proa valdearinnoensis*](../../../genera/P/Proa.yml), whose holotypes come from the same site. The site code leads, as in the data's other coded localities. Governs `location.locality` on both records.
+
+**Evidence.**
+- kirkland2013a, Fig. 1: "Santa María Coal Mine near Ariño, Teruel Province, Aragón, Spain with new dinosaur locality AR-1".
+
+**Ruled out.**
+- *Two forms for one site.*
+
+**Open.** Nothing.
+
 ## Is the *Europelta* holotype CPT AR-1/10?
 
 *2026-08-03*

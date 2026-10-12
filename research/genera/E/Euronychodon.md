@@ -1,5 +1,19 @@
 # *Euronychodon*
 
+## Does Antunes and Pais's grid reference give the *Euronychodon* coordinate?
+
+*2026-10-12*
+
+**Conclusion.** No. A six-figure grid reference is a printed coordinate, but for the place it is printed for, the 1978 measured section in the Cerâmica do Mondego clay pit; no source ties the type tooth TV 20 to that section, and its tie to the pit is our reading of an etymology. The conversion also needs the Portuguese military grid's datum and origin, which no source read states, as for [*Trimucrodon*](../T/Trimucrodon.md). Governs the empty `location.coordinates` on [*Euronychodon portucalensis*](../../../genera/E/Euronychodon.yml).
+
+**Evidence.**
+- antunes1991a, p. 116: Taveiro, "où se situe la carrière « Cerâmica do Mondego, Lda » qui a fourni les échantillons" ("where the Cerâmica do Mondego, Lda quarry, which furnished the samples, is located", translated), in the etymology of *Taveirosaurus*.
+
+**Ruled out.**
+- *The section's grid reference as the holotype's position.* It is printed for the section, not for TV 20.
+
+**Open.** As the 2026-08-23 entry sets out.
+
 ## Which unit and site is the *Euronychodon* type tooth from?
 
 *2026-08-23*

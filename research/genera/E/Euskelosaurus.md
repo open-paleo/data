@@ -1,5 +1,19 @@
 # *Euskelosaurus*
 
+## Does the *Euskelosaurus* locality name the Stormberg range?
+
+*2026-10-12*
+
+**Conclusion.** Yes. Brown's letter places the consignment "in the Stormberg range of mountains", the mountain range and not the geological group named after it, and [*Orosaurus*](../../../genera/O/Orosaurus.yml), from the same consignment, already records it. Governs `location.locality` on [*Euskelosaurus browni*](../../../genera/E/Euskelosaurus.yml).
+
+**Evidence.**
+- huxley1867b, p. 4: "in the Stormberg range of mountains in the division of Aliwal North, and about thirty miles from the town of Aliwal North".
+
+**Ruled out.**
+- *Dropping "Stormberg range" as the group's name.* The letter says range of mountains.
+
+**Open.** Nothing.
+
 ## Is BMNH R1625 the holotype or a lectotype of Euskelosaurus browni, and who designated it?
 
 *2026-10-04*
@@ -33,9 +47,9 @@
 
 ## References
 
+- `huxley1867b`: Huxley, T. H. (1867). On some Remains of large Dinosaurian Reptiles from the Stormberg Mountains, South Africa. *Quarterly Journal of the Geological Society of London* 23(1-2): 1-6. doi:10.1144/gsl.jgs.1867.023.01-02.07
 - `galton1985c`: Galton, P. M. (1985). The poposaurid thecodontian Teratosaurus suevicus v. Meyer, plus referred specimens mostly based on prosauropod dinosaurs, from the Middle Stubensandstein (Upper Triassic) of Nordwürttemberg. *Stuttgarter Beiträge zur Naturkunde, Serie B (Geologie und Paläontologie)* 116: 1-29.
 - `galton1985a`: Galton, P. M. (1985). Notes on the Melanorosauridae, a family of large Prosauropod Dinosaurs (Saurischia: Sauropodomorpha). *Geobios* 18(5): 671-676. doi:10.1016/s0016-6995(85)80065-6
 - `yates2003c`: Yates, A. M. (2003). A definite prosauropod dinosaur from the Lower Elliot Formation (Norian: Upper Triassic) of South Africa. *Palaeontologia africana* 39: 63-68.
 - `vanheerden1979a`: Van Heerden, J. (1979). The morphology and taxonomy of Euskelosaurus (Reptilia: Saurischia; Late Triassic) from South Africa. *Navorsinge van die Nasionale Museum* 4: 21-84.
-- `huxley1867b`: Huxley, T. H. (1867). On some Remains of large Dinosaurian Reptiles from the Stormberg Mountains, South Africa. *Quarterly Journal of the Geological Society of London* 23(1-2): 1-6. doi:10.1144/gsl.jgs.1867.023.01-02.07
 - `haughton1924a`: Haughton, S. H. (1924). The fauna and stratigraphy of the Stormberg Series. *Annals of the South African Museum* 12: 323-497.

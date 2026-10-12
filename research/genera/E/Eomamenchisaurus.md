@@ -1,5 +1,19 @@
 # *Eomamenchisaurus*
 
+## How is the *Eomamenchisaurus* holotype's number written?
+
+*2026-10-12*
+
+**Conclusion.** CXMVZA 165, as the describing paper prints it, with the institution resolved to the Chuxiong Prefectural Museum (`CPM`), whose registry entry lists CXMVZA as an alias. The prefix is the museum's catalogue prefix as cited, as [*Yunnanosaurus youngi*](../../../genera/Y/Yunnanosaurus.yml) carries CXMVZA 185. Governs `type_specimen.specimen_id: [CXMVZA 165]` on [*Eomamenchisaurus yuanmouensis*](../../../genera/E/Eomamenchisaurus.yml).
+
+**Evidence.**
+- lü2008a: "Holotype: CXMVZA 165 consisting of eight dorsal vertebrae, a partial sacrum, a right ilium, a right complete pubis, two incomplete ischia, one complete right tibia, and both femora. The specimen is stored in the Chuxiong Museum".
+
+**Ruled out.**
+- *CPM 165.* No paper prints the number under the registry key.
+
+**Open.** Nothing.
+
 ## Is the *Eomamenchisaurus* holotype CPM 165?
 
 *2026-08-03*

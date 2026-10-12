@@ -1,5 +1,19 @@
 # *Elrhazosaurus*
 
+## Does *Elrhazosaurus* take level GAD 5?
+
+*2026-10-12*
+
+**Conclusion.** Yes. Galton and Taquet (1982) name the level, GAD 5, and the record carries it as the bed, as [*Ouranosaurus*](../../../genera/O/Ouranosaurus.yml) and [*Lurdusaurus*](../../../genera/L/Lurdusaurus.yml) do; `part: upper` gives way to the finer unit. "Niveau des Innocents" stays in the location note until Taquet (1976) shows whether it names a site. Governs `location.bed: GAD 5` on [*Elrhazosaurus nigeriensis*](../../../genera/E/Elrhazosaurus.yml), superseding the `part: upper` of the 2026-08-22 entry.
+
+**Evidence.**
+- galton1982a, p. 153: "Gadoufaoua, the region of niveau des Innocents (see Taquet, 1976, fig. 7)"; horizon "GAD 5, upper part of El Rhaz formation".
+
+**Ruled out.**
+- *`part: upper`.* The level is named.
+
+**Open.** Whether "niveau des Innocents" is a site, as the 2026-08-22 entry sets out.
+
 ## Where at Gadoufaoua is the *Elrhazosaurus* holotype from?
 
 *2026-08-22*

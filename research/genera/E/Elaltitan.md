@@ -1,5 +1,20 @@
 # *Elaltitan*
 
+## What stages does *Elaltitan* take?
+
+*2026-10-12*
+
+**Conclusion.** The Lago Colhué Huapi Formation's range, Coniacian to Maastrichtian. No source read gives the level of PVL 4628 within the formation, so the taxon takes the unit's stages. The Coniacian alone was Casal and colleagues' bound for another specimen at another site. Governs `stage: [Coniacian, Santonian, Campanian, Maastrichtian]` on [*Elaltitan lilloi*](../../../genera/E/Elaltitan.yml).
+
+**Evidence.**
+- casal2015a, p. 89: "at most to the Coniacian", for UNPSJB-Pv 1011 at Ocho Hermanos.
+
+**Ruled out.**
+- *Coniacian alone.* It is given for another specimen.
+- *Cenomanian–Turonian.* It is the age of the Bajo Barreal, which the 2026-08-22 entry rules out as the holotype's unit.
+
+**Open.** The holotype's level within the formation.
+
 ## Is the *Elaltitan* holotype from the Bajo Barreal or the Lago Colhué Huapi Formation?
 
 *2026-08-22*
