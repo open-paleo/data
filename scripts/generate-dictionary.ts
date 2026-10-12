@@ -166,11 +166,6 @@ for (const file of findYamlFiles(path.join(root, "genera")))
             }
         }
     }
-
-    if (data.authors)
-    {
-        extractAuthorSurnames(data.authors);
-    }
 }
 
 // Author surnames come from the canonical reference store, where the

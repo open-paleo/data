@@ -9,7 +9,7 @@ import * as url from "node:url";
 import { getCorpusDir } from "./corpus-path.ts";
 import type { GenusData } from "./types.ts";
 import {
-    readBibCitationKeys,
+    readStoreCitationKeys,
     referenceNotesLimit,
     resolveCitationKey,
     storeReferencePath,
@@ -18,7 +18,6 @@ import {
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
 const root = path.join(scriptDir, "..");
-const referencesBibPath = path.join(root, "dist", "references.bib");
 
 /**
  * Parsed papers-needed.md: the citation keys the user has marked fetched, in
@@ -186,10 +185,11 @@ export function prepareResume(
     }
 
     // A pasted bare key (`funston2020`) collides with the store's
-    // disambiguated ones (`funston2020a`, `funston2020b`).
-    const bibKeys = readBibCitationKeys(referencesBibPath);
+    // disambiguated ones (`funston2020a`, `funston2020b`). The store, not the
+    // built references.bib, is checked: the build lags main.
+    const storeKeys = readStoreCitationKeys(root);
     const collisions = papers.fetched
-        .map((paper) => ({ key: paper.key, resolution: resolveCitationKey(paper.key, bibKeys) }))
+        .map((paper) => ({ key: paper.key, resolution: resolveCitationKey(paper.key, storeKeys) }))
         .filter(({ resolution }) => resolution.collided);
 
     if (collisions.length > 0)

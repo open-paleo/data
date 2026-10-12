@@ -364,33 +364,6 @@ export function findTreePath(tree: TreeNode, target: string, accumulated = new A
 }
 
 /**
- * Reads `dist/references.bib` and returns the set of citation keys
- * present (e.g. `osmolska1996`, `funston2020a`, `funston2020b`).
- * Returns an empty set when the file is missing.
- *
- * @param bibPath - Absolute path to references.bib.
- * @returns Set of citation keys.
- */
-export function readBibCitationKeys(bibPath: string): Set<string>
-{
-    const keys = new Set<string>();
-
-    if (!fs.existsSync(bibPath))
-    {
-        return keys;
-    }
-
-    const content = fs.readFileSync(bibPath, "utf8");
-
-    for (const match of content.matchAll(/^@\w+\{([^,]+),/gm))
-    {
-        keys.add(match[1].trim());
-    }
-
-    return keys;
-}
-
-/**
  * Reads every citation key held in the reference store
  * (`references/<bucket>/<key>.yml`). The store is the committed source of
  * truth for bibliographic data, so it is authoritative where `dist/references.bib`
