@@ -18,6 +18,7 @@ import {
     findYamlFiles,
     loadFlaggedSignoffs,
     loadFlaggedSources,
+    loadStratigraphyRegistry,
     markdownLinkTargets,
     narrativeCitations,
     normalizeDoi,
@@ -38,8 +39,6 @@ import type {
     Reference,
     Size,
     StageInfo,
-    StratigraphicBed,
-    StratigraphicUnit,
     TreeNode,
     ValidationMessage,
     CheckResult,
@@ -305,62 +304,16 @@ function parseDataFile(filePath: string): unknown
 }
 
 const stratigraphyDirectory = path.join(root, "stratigraphy");
-const stratigraphy: Record<string, StratigraphicUnit> = {};
-
-// Where each unit came from, so a finding points at the unit's own file rather
-// than at the directory.
-const stratigraphyFiles = new Map<string, string>();
-
-// Layout problems found while loading. They are reported by their own check
-// below, because checkError needs a check to be open before it can record one.
-const stratigraphyLayout: Array<[string, string]> = [];
-
-/**
- * Filename stem for a unit, mirroring the name-to-file rule the registry uses.
- * Letters keep their diacritics, as the reference store's keys do, and every
- * run of other characters becomes a single hyphen: `Argiles et Grès à
- * Reptiles` files as `argiles-et-grès-à-reptiles` and `Öösh` as `öösh`. The
- * directory letter folds separately, through `referenceBucket`, so `Öösh`
- * still lives under `o/`.
- *
- * @param unitName - The unit's name as the entry spells it.
- * @returns The expected filename stem, without the extension.
- */
-function stratigraphySlug(unitName: string): string
-{
-    return unitName
-        .normalize("NFC")
-        .toLowerCase()
-        .replace(/[^\p{L}\p{N}]+/gu, "-")
-        .replace(/^-|-$/g, "");
-}
-
-for (const filePath of findYamlFiles(stratigraphyDirectory))
-{
-    const unit = parseDataFile(filePath) as StratigraphicUnit | null;
-    const unitName = unit?.name;
-
-    if (!unitName)
-    {
-        stratigraphyLayout.push([filePath, "entry has no 'name'; the name is the unit's identity and the filename is derived from it"]);
-        continue;
-    }
-    else if (stratigraphyFiles.has(unitName))
-    {
-        stratigraphyLayout.push([filePath, `unit '${unitName}' is also defined in ${path.relative(root, stratigraphyFiles.get(unitName) ?? "")}`]);
-        continue;
-    }
-
-    const expected = path.join(stratigraphyDirectory, referenceBucket(unitName), `${stratigraphySlug(unitName)}.yml`);
-
-    if (filePath !== expected)
-    {
-        stratigraphyLayout.push([filePath, `unit '${unitName}' belongs in ${path.relative(root, expected)}`]);
-    }
-
-    stratigraphy[unitName] = unit as StratigraphicUnit;
-    stratigraphyFiles.set(unitName, filePath);
-}
+// Layout problems found while loading are reported by their own check below,
+// because checkError needs a check to be open before it can record one.
+const {
+    units: stratigraphy,
+    files: stratigraphyFiles,
+    unitByName,
+    bedsByParent,
+    entries: registryEntries,
+    layoutProblems: stratigraphyLayout,
+} = loadStratigraphyRegistry(root, parseDataFile);
 
 /**
  * The file a unit was read from, for reporting.
@@ -371,88 +324,6 @@ for (const filePath of findYamlFiles(stratigraphyDirectory))
 function stratigraphyFile(unitName: string): string
 {
     return stratigraphyFiles.get(unitName) ?? stratigraphyDirectory;
-}
-
-const unitByName = new Map<string, string>();
-
-for (const [unitName, unit] of Object.entries(stratigraphy ?? {}))
-{
-    unitByName.set(unitName, unitName);
-
-    for (const variant of unit?.variants ?? [])
-    {
-        // A headword always wins: a variant of one unit may be another unit's
-        // own name, and the entry that owns the name is the right answer.
-        if (!unitByName.has(variant))
-        {
-            unitByName.set(variant, unitName);
-        }
-    }
-}
-
-// Beds live inside the entry of their nearest containing unit, so a bed is
-// identified by that unit plus its own name or variant. "83" means a bed of the
-// Süntel's Langenberg section and nothing else; another section's bed 83 would
-// be a different bed under a different parent.
-const bedsByParent = new Map<string, Map<string, StratigraphicBed>>();
-
-// Every entry the per-entry checks read, nested beds included, each with the
-// label a finding reports it by.
-const registryEntries: Array<{ label: string; entry: StratigraphicUnit | StratigraphicBed; filePath: string }> = [];
-
-for (const [unitName, unit] of Object.entries(stratigraphy ?? {}))
-{
-    registryEntries.push({ label: unitName, entry: unit, filePath: stratigraphyFile(unitName) });
-
-    const beds = new Map<string, StratigraphicBed>();
-
-    for (const bed of unit?.beds ?? [])
-    {
-        const bedName = bed?.name;
-
-        if (!bedName)
-        {
-            stratigraphyLayout.push([stratigraphyFile(unitName), `unit '${unitName}': a bed has no 'name'`]);
-            continue;
-        }
-        else if (beds.has(bedName))
-        {
-            stratigraphyLayout.push([stratigraphyFile(unitName), `unit '${unitName}': bed '${bedName}' is listed twice, or shares its name with another bed's variant`]);
-            continue;
-        }
-
-        for (const field of ["rank", "parent", "beds"])
-        {
-            if (field in (bed as Record<string, unknown>))
-            {
-                stratigraphyLayout.push([stratigraphyFile(unitName), `unit '${unitName}': bed '${bedName}' carries '${field}', which the containing entry already implies`]);
-            }
-        }
-
-        beds.set(bedName, bed);
-
-        for (const variant of bed.variants ?? [])
-        {
-            if (!beds.has(variant))
-            {
-                beds.set(variant, bed);
-            }
-        }
-
-        registryEntries.push({ label: `${unitName} › ${bedName}`, entry: bed, filePath: stratigraphyFile(unitName) });
-    }
-
-    if (beds.size > 0)
-    {
-        bedsByParent.set(unitName, beds);
-    }
-
-    // A bed with a containing unit is stored in that unit. The one standing
-    // file is a bed no source places in anything larger.
-    if (unit?.rank === "bed" && typeof unit.parent === "string")
-    {
-        stratigraphyLayout.push([stratigraphyFile(unitName), `bed '${unitName}' has a parent; move it into the 'beds' of '${unit.parent}' and delete this file`]);
-    }
 }
 
 const flaggedSources = loadFlaggedSources(path.join(root, "flagged-sources.yml"));
