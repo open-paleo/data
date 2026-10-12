@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-10-12T03:07:26.247Z
+  built_at: 2026-10-12T03:34:45.868Z
   clade_count: 188
   genus_count: 1425
   license: CC-BY-4.0
@@ -107217,14 +107217,23 @@ genera:
         type_specimen:
           specimen_id:
             - CAMSM B55630
-          specimen_type: holotype
+          specimen_type: lectotype
           institution: Sedgwick Museum, University of Cambridge
-          material: Series of approximately 40 associated caudal vertebrae
+          material: The first procoelous caudal vertebra of the Coldham Common series.
           completeness: fragmentary
+          notes: Seeley (1876) founded the species on two series of caudal vertebrae, about 25 from Coldham Common and 15 from Barton. Le Loeuff (1993) designated the first procoelous caudal of the Coldham Common series as the lectotype.
         erected_in: seeley1876a
         authors: Seeley, H. G.
         described: 1876
     references:
+      - id: leloeuff1993a
+        authors: Le Loeuff, J.
+        year: 1993
+        title: European titanosaurids
+        journal: Revue de Paléobiologie, Volume Spéciale
+        volume: "7"
+        pages: 105-117
+        notes: Designates CAMSM B55630, the first procoelous caudal of the Coldham Common series, as the lectotype.
       - id: seeley1876a
         authors: Seeley, H. G.
         year: 1876
@@ -107233,7 +107242,7 @@ genera:
         volume: "32"
         pages: 440-444
         doi: 10.1144/GSL.JGS.1876.032.01-04.50
-        notes: Gives the provenance as the Cambridge Upper Greensand, naming the unit but no collecting locality within it.
+        notes: Founds the species on two series of caudal vertebrae from phosphate workings in the Cambridge Upper Greensand, at Coldham Common, Barnwell, and at Barton.
       - id: hopson2005a
         authors: Hopson, P. M.
         year: 2005
@@ -112419,8 +112428,9 @@ genera:
           region: Río Negro
           formation: Allen
           coordinates:
-            - -39.503334
-            - -67.371941
+            - -39.507522
+            - -67.389481
+          notes: Rolando and colleagues (2021) print 39°30′27.08″S, 67°23′22.13″W for the Cerro Matadero site. Rozadilla and colleagues (2021) print 39°30′12″S, 67°22′19″W for Matadero Hill, where the Kelumapusaura paratypes lay with Menucocelsior bones; the two positions are about 1.6 km apart.
           region_code: AR-R
         size:
           weight_kg:
@@ -113260,8 +113270,11 @@ genera:
           locality: Right bank of the Río Neuquén, 2 to 4 km upstream from the railroad bridge
           region: Neuquén
           formation: Bajo de la Carpa
+          notes: Powell (2003) gives the horizon as "Rio Colorado Formation, Bajo de La Carpa Member?" and the age as "Campanian (Uliana & Dellapa 1981)", a dating of the unit from regional geological maps.
           region_code: AR-Q
         type_specimen:
+          specimen_id:
+            - MLP Ly 23
           specimen_type: holotype
           status: unknown
           institution: Museo de La Plata
@@ -113271,6 +113284,15 @@ genera:
         authors: Lydekker, R.
         described: 1893
     references:
+      - id: powell2003a
+        authors: Powell, J. E.
+        year: 2003
+        title: "Revision of South American Titanosaurid dinosaurs: palaeobiological, palaeobiogeographical and phylogenetic aspects"
+        journal: Records of the Queen Victoria Museum
+        series: new series
+        volume: "111"
+        pages: 1-173
+        notes: Gives the holotype as "MLP Ly 23. An incomplete anterior dorsal vertebra".
       - id: lydekker1893a
         authors: Lydekker, R.
         year: 1893
@@ -114601,7 +114623,7 @@ genera:
   Miragaia:
     genus: Miragaia
     parent: Dacentrurinae
-    etymology: Named for Miragaia, a parish in Porto, Portugal near where the fossil was discovered; the Wikipedia article retrieved is about the Portuguese locality itself.
+    etymology: Named for the village of Miragaia, in Lourinhã, Portugal, and the geological unit of the same name. The stem can also be read as Latin mira, wonderful, and Gaia, the Greek goddess of the Earth.
     pronunciation:
       phonetic: MEE-ruh-GAH-yuh
     description: Miragaia is a genus of long-necked stegosaurid dinosaur. Its fossils have been found in Upper Jurassic rocks in Portugal (Lourinhã Formation, Sobral Unit) and possibly also Wyoming and Utah, United States (Morrison Formation). Miragaia has the longest neck known for any stegosaurian, which included at least seventeen vertebrae. Some researchers consider this taxon to be a junior synonym of Dacentrurus.
@@ -115182,7 +115204,7 @@ genera:
         reason: Based on rhabdodontid material from the Late Cretaceous of Austria; now treated as a junior synonym of Mochlodon.
     species:
       - name: Mochlodon suessi
-        etymology: Named for Eduard Suess, the geologist who led the team that excavated the type material from the Gute Hoffnung mine at Muthmannsdorf, Austria.
+        etymology: Named for Eduard Suess, the geologist who directed the excavations that recovered the type material at Muthmannsdorf, Austria.
         status: valid
         type_species: true
         period:
@@ -115210,7 +115232,7 @@ genera:
             max: 0.6
         type_specimen:
           specimen_id:
-            - PIUW 2349
+            - PIUW 2349/2
           specimen_type: lectotype
           institution: Paläontologisches Institut und Museum der Universität Wien
           material: Right dentary bone, ~7.5 cm long with tooth-bearing part 17-18 mm; small parietal bone; scapula fragment also referred
@@ -115234,6 +115256,9 @@ genera:
           region: Veszprém
           formation: Csehbánya
           locality: Iharkút
+          coordinates:
+            - 47.231111
+            - 17.650278
           region_code: HU-VE
         type_specimen:
           specimen_id:
@@ -115253,6 +115278,15 @@ genera:
         authors: Ősi, A.; Prondvai, E.; Butler, R.; Weishampel, D. B.
         described: 2012
     references:
+      - id: csiki-sava2015a
+        authors: Csiki-Sava, Z.; Buffetaut, E.; Ősi, A.; Pereda-Suberbiola, X.; Brusatte, S. L.
+        year: 2015
+        title: Island life in the Cretaceous — faunal composition, biogeography, evolution, and extinction of land-living vertebrates on the Late Cretaceous European archipelago
+        journal: ZooKeys
+        volume: "469"
+        pages: 1-161
+        doi: 10.3897/zookeys.469.8439
+        notes: Gives the position of the Iharkút open-pit mine, the M. vorosi type locality, as 47°13'52"N, 17°39'01"E.
       - id: seeley1881a
         authors: Seeley, H. G.
         year: 1881
@@ -116545,7 +116579,7 @@ genera:
             - -57.504166
         type_specimen:
           specimen_id:
-            - MACN Pv 197
+            - MACN Pv 19777
           specimen_type: holotype
           institution: Museo Argentino de Ciencias Naturales ‘Bernardino Rivadavia’
           material: "Right hind limb: proximal and distal femur, proximal and distal tibia, fibula proximal end, metatarsals II-IV proximal ends, phalanx 1-III"
