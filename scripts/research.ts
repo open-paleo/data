@@ -23,11 +23,13 @@ import {
     researchFileFor,
     researchMethodsFile,
     splitResearchNote,
+    storeFileLookup,
 } from "./utilities.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
 const root = path.join(scriptDir, "..");
+const storeLookup = storeFileLookup(root);
 const researchDirectory = path.join(root, "research");
 
 /**
@@ -139,7 +141,7 @@ function writeReferences(noteArguments: Array<string>): number
     {
         const notePath = path.resolve(root, noteArgument);
         const { body, otherIds } = splitResearchNote(fs.readFileSync(notePath, "utf8"));
-        const { tail, missing, duplicates } = buildResearchTail(root, body, otherIds);
+        const { tail, missing, duplicates } = buildResearchTail(storeLookup, body, otherIds);
 
         if (missing.length > 0)
         {

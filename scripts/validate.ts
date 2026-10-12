@@ -4378,6 +4378,23 @@ for (const filePath of commentCheckedFiles)
 
 startCheck("Research notes");
 
+// Research notes resolve their citations against the store as loaded above,
+// keyed by file name as the store files are, rather than re-reading a file per
+// citation.
+const storeEntriesByFileName = new Map(
+    [...referenceStoreParsed].map(([filePath, entry]) => [path.basename(filePath, ".yml"), entry]));
+
+/**
+ * Looks up a parsed store entry by its key.
+ *
+ * @param id - The reference key.
+ * @returns The entry, or undefined when the store has no file for the key.
+ */
+function storeEntryByFileName(id: string): Reference | undefined
+{
+    return storeEntriesByFileName.get(id) ?? undefined;
+}
+
 // research/README.md documents the format and quotes example citations, so it
 // is the one file under research/ that is not itself a note.
 const researchDirectory = path.join(root, "research");
@@ -4421,7 +4438,7 @@ for (const notePath of findMarkdownFiles(researchDirectory))
     }
 
     const { body, tail, otherIds } = splitResearchNote(note);
-    const expected = buildResearchTail(root, body, otherIds);
+    const expected = buildResearchTail(storeEntryByFileName, body, otherIds);
 
     for (const id of expected.missing)
     {

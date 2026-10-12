@@ -1106,17 +1106,35 @@ export function formatResearchReference(entry: Reference): string
 }
 
 /**
+ * Returns a store lookup that reads `references/<bucket>/<id>.yml` on each
+ * call, for a caller that has not loaded the store.
+ *
+ * @param dataRoot - Repository root containing the `references/` directory.
+ * @returns A function from a reference id to its store entry, or undefined
+ *     when the store has no file for that id.
+ */
+export function storeFileLookup(dataRoot: string): (id: string) => Reference | undefined
+{
+    return (id) =>
+    {
+        const filePath = path.join(dataRoot, "references", referenceBucket(id), `${id}.yml`);
+
+        return fs.existsSync(filePath) ? parseYaml<Reference>(filePath) : undefined;
+    };
+}
+
+/**
  * Builds one reference section of a research note from the store: one line
  * per id, in the order given.
  *
- * @param dataRoot - Repository root containing the `references/` directory.
+ * @param lookup - Resolves a reference id to its store entry.
  * @param ids - The ids to list.
  * @param heading - The section heading, without its `## ` prefix.
  * @returns The section text, or null when there are no ids. Ids with no
  *     store entry are returned in `missing` and omitted from the section.
  */
 export function buildResearchReferences(
-    dataRoot: string,
+    lookup: (id: string) => Reference | undefined,
     ids: Array<string>,
     heading = "References"): { section: string | null; missing: Array<string> }
 {
@@ -1125,11 +1143,11 @@ export function buildResearchReferences(
 
     for (const id of ids)
     {
-        const filePath = path.join(dataRoot, "references", referenceBucket(id), `${id}.yml`);
+        const entry = lookup(id);
 
-        if (fs.existsSync(filePath))
+        if (entry !== undefined)
         {
-            lines.push(formatResearchReference(parseYaml<Reference>(filePath)));
+            lines.push(formatResearchReference(entry));
         }
         else
         {
@@ -1147,22 +1165,22 @@ export function buildResearchReferences(
  * that the body also cites is dropped from that section, since it is
  * already listed under References.
  *
- * @param dataRoot - Repository root containing the `references/` directory.
+ * @param lookup - Resolves a reference id to its store entry.
  * @param body - The note's body.
  * @param otherIds - The ids the note lists under Other references.
  * @returns The sections joined, or null when there is neither; ids with no
  *     store entry; and Other references ids the body also cites.
  */
 export function buildResearchTail(
-    dataRoot: string,
+    lookup: (id: string) => Reference | undefined,
     body: string,
     otherIds: Array<string>): { tail: string | null; missing: Array<string>; duplicates: Array<string> }
 {
     const citedIds = researchCitedIds(body);
     const duplicates = otherIds.filter((id) => citedIds.includes(id));
     const uncitedIds = [...new Set(otherIds.filter((id) => !citedIds.includes(id)))];
-    const references = buildResearchReferences(dataRoot, citedIds);
-    const others = buildResearchReferences(dataRoot, uncitedIds, "Other references");
+    const references = buildResearchReferences(lookup, citedIds);
+    const others = buildResearchReferences(lookup, uncitedIds, "Other references");
     const sections = [references.section, others.section].filter((section): section is string => section !== null);
 
     return {
