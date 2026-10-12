@@ -2,10 +2,9 @@
 // Encapsulates all PBDB, Wikipedia, and Wikidata fetching plus the
 // schema-shape conversion to `GenusData`.
 //
-// The functions in this module rely on module-level state for the
-// schema, institution registry, and parent-chain cache. Importing
-// this module triggers reads of `schema.yml` and
-// `institutions.yaml`.
+// The functions in this module share the registries in an enrichment
+// context (schema.yml, institutions.yaml, regions.yaml, tree.yml),
+// loaded on first use rather than at import, and a parent-chain cache.
 //
 // To produce a stub YAML for a single genus from external sources:
 //
@@ -33,12 +32,6 @@ const pbdbApiBase = "https://paleobiodb.org/data1.2";
 const wikidataApiBase = "https://www.wikidata.org";
 const wikipediaApiBase = "https://en.wikipedia.org/w/api.php";
 
-const institutionRegistry = loadInstitutionRegistry(
-    path.join(root, "institutions.yaml"),
-);
-
-const schema = parseYaml<Schema>(path.join(root, "schema.yml"));
-
 /**
  * Folds a registry label for lookup: diacritics stripped, lower-cased, and
  * everything but letters and digits removed. Lets "Aragón" match the registry's
@@ -57,49 +50,92 @@ function foldLabel(label: string): string
 }
 
 /**
- * Folded institution label (code, registry name, or alias) to the canonical
- * registry code. `location.institution` holds the CODE, so an external source
- * that hands us a spelled-out name has to be resolved back to it (#2070 §1.5).
+ * The registries the enrichment resolves external values against. Built on
+ * first use by `enrichmentContext`, so importing this module reads no files.
  */
-const institutionCodes = new Map<string, string>();
+type EnrichmentContext = {
+    /** schema.yml: the diet, period, stage and country vocabularies. */
+    schema: Schema;
 
-for (const [code, entry] of Object.entries(institutionRegistry))
-{
-    institutionCodes.set(foldLabel(code), code);
+    /**
+     * Folded institution label (code, registry name, or alias) to the canonical
+     * registry code. `location.institution` holds the CODE, so an external
+     * source that hands us a spelled-out name has to be resolved back to it
+     * (#2070 §1.5).
+     */
+    institutionCodes: Map<string, string>;
 
-    if (entry.name)
-    {
-        institutionCodes.set(foldLabel(entry.name), code);
-    }
+    /**
+     * Folded subdivision name to the ISO 3166-2 codes carrying it.
+     * `location.region` holds the CODE, but PBDB and Wikipedia both report a
+     * plain name, and a bare name is ambiguous across countries ("Georgia"), so
+     * the resolver takes the country as a discriminator (#2070 §1.5).
+     */
+    regionCodesByName: Map<string, Array<string>>;
 
-    for (const alias of entry.aliases ?? [])
-    {
-        institutionCodes.set(foldLabel(alias), code);
-    }
-}
+    /**
+     * Every clade name that exists as a node in `tree.yml`. A genus `parent`
+     * must name one of these, and PBDB's classification chain routinely passes
+     * through ranks the tree does not carry (#2070 §1.5).
+     */
+    treeCladeNames: Set<string>;
+};
 
 /**
- * Folded subdivision name to the ISO 3166-2 codes carrying it. `location.region`
- * holds the CODE, but PBDB and Wikipedia both report a plain name, and a bare
- * name is ambiguous across countries ("Georgia"), so the resolver takes the
- * country as a discriminator (#2070 §1.5).
+ * Loads the registries the enrichment needs from a data root.
+ *
+ * @param dataRoot - Repository root holding schema.yml, institutions.yaml,
+ *     regions.yaml and tree.yml.
+ * @returns The loaded context.
  */
-const regionCodesByName = new Map<string, Array<string>>();
-
-for (const [code, name] of Object.entries(loadRegionRegistry(path.join(root, "regions.yaml"))))
+export function createEnrichmentContext(dataRoot: string): EnrichmentContext
 {
-    const folded = foldLabel(name);
-    regionCodesByName.set(folded, [...regionCodesByName.get(folded) ?? [], code]);
+    const institutionCodes = new Map<string, string>();
+
+    for (const [code, entry] of Object.entries(loadInstitutionRegistry(path.join(dataRoot, "institutions.yaml"))))
+    {
+        institutionCodes.set(foldLabel(code), code);
+
+        if (entry.name)
+        {
+            institutionCodes.set(foldLabel(entry.name), code);
+        }
+
+        for (const alias of entry.aliases ?? [])
+        {
+            institutionCodes.set(foldLabel(alias), code);
+        }
+    }
+
+    const regionCodesByName = new Map<string, Array<string>>();
+
+    for (const [code, name] of Object.entries(loadRegionRegistry(path.join(dataRoot, "regions.yaml"))))
+    {
+        const folded = foldLabel(name);
+        regionCodesByName.set(folded, [...regionCodesByName.get(folded) ?? [], code]);
+    }
+
+    return {
+        schema: parseYaml<Schema>(path.join(dataRoot, "schema.yml")),
+        institutionCodes,
+        regionCodesByName,
+        treeCladeNames: new Set(collectAllKeys(parseYaml<TreeNode>(path.join(dataRoot, "tree.yml")))),
+    };
 }
 
+let loadedContext: EnrichmentContext | null = null;
+
 /**
- * Every clade name that exists as a node in `tree.yml`. A genus `parent` must
- * name one of these, and PBDB's classification chain routinely passes through
- * ranks the tree does not carry (#2070 §1.5).
+ * Returns this repository's enrichment context, loading it on the first call.
+ *
+ * @returns The context for the repository this script belongs to.
  */
-const treeCladeNames = new Set(
-    collectAllKeys(parseYaml<TreeNode>(path.join(root, "tree.yml"))),
-);
+function enrichmentContext(): EnrichmentContext
+{
+    loadedContext ??= createEnrichmentContext(root);
+
+    return loadedContext;
+}
 
 /**
  * Resolves a subdivision name to its ISO 3166-2 code.
@@ -113,7 +149,7 @@ export function resolveRegionCode(
     countryCode: string | undefined,
 ): string | null
 {
-    const candidates = regionCodesByName.get(foldLabel(name)) ?? [];
+    const candidates = enrichmentContext().regionCodesByName.get(foldLabel(name)) ?? [];
 
     if (countryCode)
     {
@@ -133,7 +169,7 @@ export function resolveRegionCode(
  */
 export function resolveInstitutionCode(label: string): string | null
 {
-    return institutionCodes.get(foldLabel(label)) ?? null;
+    return enrichmentContext().institutionCodes.get(foldLabel(label)) ?? null;
 }
 
 /**
@@ -1682,7 +1718,7 @@ export function parseAuthority(authority: string): { authors: string; year: stri
 function matchDiet(diet: string): string | null
 {
     const lowerDiet = diet.toLowerCase();
-    const dietValues = schema.diet ?? [];
+    const dietValues = enrichmentContext().schema.diet ?? [];
 
     for (const value of dietValues)
     {
@@ -1711,7 +1747,7 @@ function matchDiet(diet: string): string | null
  */
 function matchPeriod(range: string): string | null
 {
-    const periods = schema.periods ?? [];
+    const periods = enrichmentContext().schema.periods ?? [];
     const lowerRange = range.toLowerCase();
 
     for (const period of periods)
@@ -1733,7 +1769,7 @@ function matchPeriod(range: string): string | null
  */
 export function matchStage(range: string): string | null
 {
-    const stages = schema.stages ?? {};
+    const stages = enrichmentContext().schema.stages ?? {};
     const lowerRange = range.toLowerCase();
 
     for (const stage of Object.keys(stages))
@@ -1755,7 +1791,7 @@ export function matchStage(range: string): string | null
  */
 function getPeriodForStage(stageName: string): string | null
 {
-    const stages = schema.stages ?? {};
+    const stages = enrichmentContext().schema.stages ?? {};
     const stageInfo = stages[stageName] as StageInfo | undefined;
 
     return stageInfo?.period ?? null;
@@ -1877,7 +1913,7 @@ export async function enrichGenus(
     // `parent` must name a tree.yml node, and PBDB's chain runs through ranks
     // the tree does not carry (Troodontini, and every Linnaean family the tree
     // skips), so fall to the nearest ancestor that IS a node (#2070 §1.5).
-    enriched.parentClade = parentChain.find((clade) => treeCladeNames.has(clade));
+    enriched.parentClade = parentChain.find((clade) => enrichmentContext().treeCladeNames.has(clade));
 
     if (parentChain.length > 0 && enriched.parentClade !== parentChain[0])
     {
@@ -1958,7 +1994,7 @@ export async function enrichGenus(
         if (occurrenceRecord.cc)
         {
             enriched.countryCode = occurrenceRecord.cc;
-            const countries = schema.countries ?? {};
+            const countries = enrichmentContext().schema.countries ?? {};
             enriched.country = countries[occurrenceRecord.cc] ?? undefined;
         }
 
@@ -2061,7 +2097,7 @@ export async function enrichGenus(
 
         if (!enriched.country && wikitext.country)
         {
-            const countries = schema.countries ?? {};
+            const countries = enrichmentContext().schema.countries ?? {};
             const lowerCountry = wikitext.country.toLowerCase();
 
             for (const [code, countryName] of Object.entries(countries))
