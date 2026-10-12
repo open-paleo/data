@@ -259,6 +259,51 @@ const allowedRegionCodes = new Set(Object.keys(regionRegistry));
 // The stratigraphic registry: one file per unit under stratigraphy/<letter>/,
 // the same layout the reference store uses. A record names a unit by its
 // headword or by any spelling in `variants`, so both are needed to resolve one.
+// Each data file is read and parsed once here, and the checks that need its
+// raw text or its whole document later take them from these maps instead of
+// reading the file again.
+const dataFileTexts = new Map<string, string>();
+
+// Every successfully parsed genus, clade, store and stratigraphy document, by
+// path. A file that failed to parse is absent.
+const parsedDocuments = new Map<string, unknown>();
+
+/**
+ * Reads a data file's text, from disk the first time and from
+ * `dataFileTexts` after that.
+ *
+ * @param filePath - The file to read.
+ * @returns The file's UTF-8 text.
+ */
+function readDataFile(filePath: string): string
+{
+    let text = dataFileTexts.get(filePath);
+
+    if (text === undefined)
+    {
+        text = fs.readFileSync(filePath, "utf8");
+        dataFileTexts.set(filePath, text);
+    }
+
+    return text;
+}
+
+/**
+ * Parses a data file through `readDataFile` and records the document in
+ * `parsedDocuments`. A parse error propagates to the caller.
+ *
+ * @param filePath - The file to parse.
+ * @returns The parsed document.
+ */
+function parseDataFile(filePath: string): unknown
+{
+    const document = parseYamlContent(readDataFile(filePath)) as unknown;
+
+    parsedDocuments.set(filePath, document);
+
+    return document;
+}
+
 const stratigraphyDirectory = path.join(root, "stratigraphy");
 const stratigraphy: Record<string, StratigraphicUnit> = {};
 
@@ -292,7 +337,7 @@ function stratigraphySlug(unitName: string): string
 
 for (const filePath of findYamlFiles(stratigraphyDirectory))
 {
-    const unit = parseYamlContent(fs.readFileSync(filePath, "utf8")) as StratigraphicUnit | null;
+    const unit = parseDataFile(filePath) as StratigraphicUnit | null;
     const unitName = unit?.name;
 
     if (!unitName)
@@ -427,7 +472,7 @@ for (const filePath of referenceStoreFiles)
 {
     try
     {
-        const entry = parseYamlContent(fs.readFileSync(filePath, "utf8")) as Reference;
+        const entry = parseDataFile(filePath) as Reference;
         referenceStoreParsed.set(filePath, entry);
 
         if (entry && entry.id && !referenceStoreById.has(entry.id))
@@ -465,7 +510,7 @@ for (const filePath of genusFiles)
 {
     try
     {
-        const doc = parseYamlContent(fs.readFileSync(filePath, "utf8")) as GenusData;
+        const doc = parseDataFile(filePath) as GenusData;
         genusParsed.set(filePath, doc);
     }
     catch (error: unknown)
@@ -479,7 +524,7 @@ for (const filePath of cladeFiles)
 {
     try
     {
-        const doc = parseYamlContent(fs.readFileSync(filePath, "utf8")) as CladeData;
+        const doc = parseDataFile(filePath) as CladeData;
         cladeParsed.set(filePath, doc);
     }
     catch (error: unknown)
@@ -1471,7 +1516,7 @@ for (const filePath of citingTextFiles)
 
     try
     {
-        text = fs.readFileSync(filePath, "utf8");
+        text = readDataFile(filePath);
     }
     catch
     {
@@ -4228,17 +4273,12 @@ const quotationFiles = [
 
 for (const filePath of quotationFiles)
 {
-    let parsed: unknown;
-
-    try
-    {
-        parsed = parseYamlContent(fs.readFileSync(filePath, "utf8"));
-    }
-    catch
+    if (!parsedDocuments.has(filePath))
     {
         continue;
     }
 
+    const parsed = parsedDocuments.get(filePath);
     const strings = new Array<{ trail: string; text: string }>();
 
     collectStrings(parsed, "", strings);
@@ -4301,7 +4341,7 @@ for (const filePath of curlyQuoteCheckedFiles)
 
     try
     {
-        lines = fs.readFileSync(filePath, "utf8").split("\n");
+        lines = readDataFile(filePath).split("\n");
     }
     catch
     {
@@ -4340,7 +4380,7 @@ for (const filePath of commentCheckedFiles)
 
     try
     {
-        text = fs.readFileSync(filePath, "utf8");
+        text = readDataFile(filePath);
     }
     catch
     {
