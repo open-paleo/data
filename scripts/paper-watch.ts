@@ -176,6 +176,17 @@ function parseOptions(argv: Array<string>): Options
     const days = daysFlag !== null ? Number(daysFlag) : null;
     let since = flag("--since");
 
+    if (days !== null && (!Number.isInteger(days) || days < 0))
+    {
+        console.error(`--days takes a whole number of days, not '${daysFlag}'`);
+        process.exit(2);
+    }
+    else if (since !== null && !/^\d{4}-\d{2}-\d{2}$/.test(since))
+    {
+        console.error(`--since takes a date as YYYY-MM-DD, not '${since}'`);
+        process.exit(2);
+    }
+
     if (!since && days !== null)
     {
         const start = new Date();

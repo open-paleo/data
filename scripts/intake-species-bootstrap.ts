@@ -45,6 +45,7 @@ import {
     matchStage,
     parseAuthority,
     resolveRegionCode,
+    takeFetchFailures,
 } from "./genus-enrichment.ts";
 import type { GenusData } from "./types.ts";
 import {
@@ -653,6 +654,13 @@ async function main(): Promise<void>
 
     const genusCurrentPath = path.join(targetDir, "genus-current.yml");
     fs.writeFileSync(genusCurrentPath, genusYamlContent, "utf8");
+
+    // A failed request leaves fields empty that the source may well hold, so
+    // it is listed with the fields left unseeded.
+    for (const failure of takeFetchFailures())
+    {
+        warnings.push(`Request failed, so its fields may be missing: ${failure}`);
+    }
 
     const papersNeededBody = buildPapersNeededBody(
         genus,

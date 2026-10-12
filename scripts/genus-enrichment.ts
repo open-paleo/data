@@ -288,7 +288,27 @@ export function sleep(milliseconds: number): Promise<void>
 }
 
 /**
- * Fetches JSON from a URL with basic error handling and retries.
+ * Requests that failed outright: a network error, or a rate limit or server
+ * error that outlasted the retries. The fetch helpers return null for these
+ * just as they do for "no record", so the bootstraps drain this list with
+ * `takeFetchFailures` and report it; otherwise an outage reads as missing data.
+ */
+const fetchFailures = new Array<string>();
+
+/**
+ * Returns the requests that have failed since the last call, and clears the
+ * list.
+ *
+ * @returns One line per failed request, naming the URL and the failure.
+ */
+export function takeFetchFailures(): Array<string>
+{
+    return fetchFailures.splice(0, fetchFailures.length);
+}
+
+/**
+ * Fetches JSON from a URL with basic error handling and retries. A request
+ * that fails outright is recorded for `takeFetchFailures`.
  *
  * @param fetchUrl - The URL to fetch.
  * @param options - Optional fetch options.
@@ -296,6 +316,8 @@ export function sleep(milliseconds: number): Promise<void>
  */
 async function fetchJson(fetchUrl: string, options?: RequestInit): Promise<unknown>
 {
+    let lastFailure = "";
+
     for (let attempt = 0; attempt < 3; attempt++)
     {
         try
@@ -309,6 +331,7 @@ async function fetchJson(fetchUrl: string, options?: RequestInit): Promise<unkno
             {
                 if (response.status === 429 || response.status >= 500)
                 {
+                    lastFailure = `HTTP ${response.status}`;
                     await sleep(2000 * (attempt + 1));
                     continue;
                 }
@@ -318,14 +341,18 @@ async function fetchJson(fetchUrl: string, options?: RequestInit): Promise<unkno
 
             return await response.json();
         }
-        catch
+        catch (error)
         {
+            lastFailure = error instanceof Error ? error.message : String(error);
+
             if (attempt < 2)
             {
                 await sleep(2000 * (attempt + 1));
             }
         }
     }
+
+    fetchFailures.push(`${fetchUrl} failed after 3 attempts (${lastFailure})`);
 
     return null;
 }
@@ -548,6 +575,11 @@ export async function fetchDoiReference(doi: string): Promise<Record<string, str
 
         if (!response.ok)
         {
+            if (response.status === 429 || response.status >= 500)
+            {
+                fetchFailures.push(`DOI ${doi} failed (HTTP ${response.status})`);
+            }
+
             return null;
         }
 
@@ -615,8 +647,10 @@ export async function fetchDoiReference(doi: string): Promise<Record<string, str
 
         return reference;
     }
-    catch
+    catch (error)
     {
+        fetchFailures.push(`DOI ${doi} failed (${error instanceof Error ? error.message : String(error)})`);
+
         return null;
     }
 }

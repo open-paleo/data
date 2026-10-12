@@ -27,6 +27,7 @@ import {
     describingStoreEntry,
     enrichGenus,
     fetchPbdbTaxon,
+    takeFetchFailures,
     toGenusYaml,
     walkParentChain,
 } from "./genus-enrichment.ts";
@@ -435,6 +436,13 @@ async function main(): Promise<void>
     if (storeEntry !== null && !describing.alreadyInStore)
     {
         writeStoreReference(targetDir, storeEntry);
+    }
+
+    // A failed request leaves fields empty that the source may well hold, so
+    // it is listed with the fields left unseeded.
+    for (const failure of takeFetchFailures())
+    {
+        enriched.warnings.push(`Request failed, so its fields may be missing: ${failure}`);
     }
 
     const papersNeededBody = buildPapersNeededBody(
