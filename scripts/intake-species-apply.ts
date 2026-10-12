@@ -319,7 +319,9 @@ function main(): void
             process.stderr.write(`    WARN: ${warning}\n`);
         }
 
-        for (const warning of appendReferencePointer(genusData, data, targetDir))
+        // An empty extraction is a paper the agent could not read, so it is
+        // not cited, as the genus apply does.
+        for (const warning of data.empty ? [] : appendReferencePointer(genusData, data, targetDir))
         {
             allWarnings.push(warning);
             process.stderr.write(`    WARN: ${warning}\n`);
