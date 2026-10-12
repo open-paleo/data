@@ -42,7 +42,7 @@ import re
 
 import yaml
 
-from _paths import audit_dir, data_dir
+from _paths import audit_dir, data_dir, store_path
 
 DATA = data_dir()
 
@@ -67,7 +67,7 @@ def refStorePath(refId):
     @param refId - the citation key, e.g. "brown1908a"
     @returns absolute path to references/{letter}/{refId}.yml
     """
-    return os.path.join(DATA, "references", refId[0].lower(), f"{refId}.yml")
+    return store_path(refId)
 
 
 def refYear(refId):

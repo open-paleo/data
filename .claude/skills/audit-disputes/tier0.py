@@ -23,7 +23,7 @@ import re
 
 import yaml
 
-from _paths import data_dir, condensed_dir
+from _paths import data_dir, condensed_dir, store_path
 
 DATA = data_dir()
 CONDENSED = condensed_dir()
@@ -53,8 +53,7 @@ def title_containment(left, right):
 
 def load_ref_store(ref_id):
     """Load references/{letter}/{ref_id}.yml, or None if absent."""
-    letter = ref_id[0].lower()
-    path = os.path.join(DATA, "references", letter, f"{ref_id}.yml")
+    path = store_path(ref_id)
     if os.path.exists(path):
         return yaml.safe_load(open(path))
     return None
