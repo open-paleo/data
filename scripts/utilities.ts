@@ -543,13 +543,19 @@ const surnameNoiseTokens = new Set([
  * `resolveCitationKey` to get the disambiguation letter every store key carries.
  *
  * @param authors - The authors string (semicolon-separated entries; the surname
- *     is everything before the first comma of the first entry).
+ *     is everything before the first comma, "and" or "&" of the first entry).
  * @param year - The publication year as a number or string.
  * @returns The lower-case bare citation key.
  */
 export function citationKeyFor(authors: string, year: string | number): string
 {
-    const surnamePart = (authors ?? "").split(";")[0].split(",")[0].trim();
+    // PBDB authorities name two authors as "Galton and Jensen" or "Smith & Jones",
+    // with no comma or semicolon, so the first author also ends at "and" or "&".
+    const surnamePart = (authors ?? "")
+        .split(";")[0]
+        .split(/\s+(?:and|&)\s+/)[0]
+        .split(",")[0]
+        .trim();
 
     const surname = surnamePart
         .split(/\s+/)
