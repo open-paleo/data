@@ -1,5 +1,20 @@
 # *Coahuilaceratops*
 
+## What stage does *Coahuilaceratops* take?
+
+*2026-10-12*
+
+**Conclusion.** Campanian and Maastrichtian. The describing paper calls the formation Campanian and estimates the holotype at about 72.0 Ma, the midpoint of the formation's 72.5 to 71.4 Ma. On the current chart the Maastrichtian begins at 72.1 Ma, so the estimate and its range span the boundary, and the stage takes both. Governs `stage: [Campanian, Maastrichtian]` on [*Coahuilaceratops magnacuerna*](../../../genera/C/Coahuilaceratops.yml).
+
+**Evidence.**
+- loewen2010a, Horizon: "the middle part (approximately 230 m level) of the Campanian Cerro del Pueblo Formation"; "Given that the Cerro del Pueblo Formation dates to between approximately 72.5 and 71.4 Ma, we estimate the age of these remains at about 72.0 Ma."
+
+**Ruled out.**
+- *Maastrichtian alone.* It converts a midpoint estimate 0.1 Myr from the boundary and drops the paper's own stage.
+- *Campanian alone.* The paper's numbers reach into the Maastrichtian on the current chart.
+
+**Open.** Barrera Guevara and colleagues (2024), who are reported to move the holotype to the Cerro Huerta Formation, have not been read.
+
 ## Is the *Coahuilaceratops* holotype from the Cerro del Pueblo or the Cerro Huerta?
 
 *2026-08-06*

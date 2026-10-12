@@ -1,5 +1,20 @@
 # *Centrosaurus*
 
+## Does the *Centrosaurus apertus* holotype take a formation?
+
+*2026-10-12*
+
+**Conclusion.** No. The 2026-08-03 and 2026-08-15 entries took the Dinosaur Park Formation and its lower part from the species' range, while saying no source places this holotype. The later [Oldman and Dinosaur Park](../../topics/oldman-and-dinosaur-park.md) ruling has the record take the formation a source places the specimen in, so the record takes the Belly River Group the early sources give, as [*Corythosaurus*](../C/Corythosaurus.md) does. The stage stays Campanian, since both formations the Park exposes are Campanian. Governs `location.group: Belly River`, the empty `location.formation` and `location.part` on [*Centrosaurus apertus*](../../../genera/C/Centrosaurus.yml). Supersedes the formation and part of the two earlier entries.
+
+**Evidence.**
+- hatcher1907a: "The type was found in the Belly River (Judith River) series of Red Deer River, Alberta."
+- ryan2005a: "DISTRIBUTION: Lower 30 m of the Dinosaur Provincial Park Formation", for the species.
+
+**Ruled out.**
+- *Dinosaur Park, lower part.* It is the species' range, not the holotype's placement.
+
+**Open.** Lambe (1904), the original description, has not been read; a source placing CMN 971 relative to the Oldman–Dinosaur Park contact would settle it.
+
 ## Where on the Red Deer River was the *Centrosaurus* holotype found, and in which formation?
 
 *2026-08-15*
@@ -46,8 +61,9 @@
 
 ## References
 
-- `lambe1902a`: Lambe, L. M. (1902). New genera and species from the Belly River Series (mid-Cretaceous). *Geological Survey of Canada Contributions to Canadian Palaeontology* 3(2): 25-81. doi:10.5281/zenodo.3233762
+- `hatcher1907a`: Hatcher, J. B.; Marsh, O. C.; Lull, R. S. (1907). The Ceratopsia. *Monographs of the United States Geological Survey* 49: 1-300.
 - `ryan2005a`: Ryan, M. J.; Russell, A. P. (2005). A new centrosaurine ceratopsid from the Oldman Formation of Alberta and its implications for centrosaurine taxonomy and systematics. *Canadian Journal of Earth Sciences* 42(7): 1369. doi:10.1139/e05-029
+- `lambe1902a`: Lambe, L. M. (1902). New genera and species from the Belly River Series (mid-Cretaceous). *Geological Survey of Canada Contributions to Canadian Palaeontology* 3(2): 25-81. doi:10.5281/zenodo.3233762
 - `brown1916a`: Brown, B. (1916). A new crested trachodont dinosaur, Prosaurolophus maximus. *Bulletin of the American Museum of Natural History* 35(37): 701-708.
 - `sternberg1940b`: Sternberg, C. M. (1940). Ceratopsidae from Alberta. *Journal of Paleontology* 14: 468-480.
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.

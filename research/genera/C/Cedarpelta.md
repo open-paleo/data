@@ -1,5 +1,21 @@
 # *Cedarpelta*
 
+## Which site is the *Cedarpelta* holotype from?
+
+*2026-10-12*
+
+**Conclusion.** The CEM site near the Price River, Utah locality Em419v. The describing paper names the type locality as the CEM site and lists it apart from PR-1 and PR-2, and Kirkland and colleagues (2016) give the holotype skull from the same site, spelled KEM as it is pronounced, across the valley from the Price River quarries. Governs `location.locality` on [*Cedarpelta bilbeyhallorum*](../../../genera/C/Cedarpelta.yml), and settles the site question in the earlier entry's **Open** line.
+
+**Evidence.**
+- carpenter2001a: "The type locality near the Price River is known as the CEM (pronounced "kim") site"; the Mussentuchit sandstone "caps the ridge above the CEM, PR-l, and PR-2 localities".
+- kirkland2016a: "Type partial juvenile skull of *Cedarpelta* in dorsal view from the KEM site (Utah Em419v) in the upper Ruby Ranch Member at same horizon but across the valley from main Price River Quarries".
+
+**Ruled out.**
+- *Price River 1.* The describing paper lists PR-1 as a separate site.
+- *"KEM" as a different site.* It spells CEM as the describing paper says it is pronounced, and Kirkland and colleagues give the holotype from it.
+
+**Open.** The Mussentuchit question in the earlier entry.
+
 ## Which member is the *Cedarpelta* holotype from?
 
 *2026-08-15*
@@ -21,5 +37,5 @@
 ## References
 
 - `carpenter2001a`: Carpenter, K.; Kirkland, J. I.; Burge, D. L.; Bird, J. (2001). Disarticulated skull of a new primitive ankylosaurid from the Lower Cretaceous of eastern Utah. In *The Armored Dinosaurs*, pp. 211-238. Indiana University Press, Bloomington.
-- `kirkland2007a`: Kirkland, J. I.; Madsen, S. K. (2007). The Lower Cretaceous Cedar Mountain Formation, eastern Utah: the view up an always interesting learning curve. In *Field Guide to Geological Excursions in Southern Utah (Geological Society of America Rocky Mountain Section 2007 Annual Meeting)*, pp. 1-108.
 - `kirkland2016a`: Kirkland, J. I.; Suarez, M.; Suarez, C.; Hunt-Foster, R. (2016). The Lower Cretaceous in east-central Utah — the Cedar Mountain Formation and its bounding strata. *Geology of the Intermountain West* 3: 101-228. doi:10.31711/giw.v3.pp101-228
+- `kirkland2007a`: Kirkland, J. I.; Madsen, S. K. (2007). The Lower Cretaceous Cedar Mountain Formation, eastern Utah: the view up an always interesting learning curve. In *Field Guide to Geological Excursions in Southern Utah (Geological Society of America Rocky Mountain Section 2007 Annual Meeting)*, pp. 1-108.

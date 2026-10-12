@@ -78,18 +78,20 @@ species:
         - Campanian
     location:
       country: CA
-      locality: Berry Creek
+      locality: Red Deer River, between Berry Creek and Dead Lodge Cañon
       region: CA-AB
-      formation: Dinosaur Park
+      group: Belly River
+      notes: Lambe (1902) gives the type only as "from Red Deer river", from
+        collections made in the Belly River series between Berry Creek and Dead
+        Lodge Cañon; no source read places it in the Oldman or the Dinosaur
+        Park Formation.
     type_specimen:
       specimen_id:
         - NMC 491
       specimen_type: holotype
       institution: CMN
-      material: Fairly complete skeleton with skull, including skin impressions; skull
-        dorsal surface preserved with large squamoso-parietal frill intact;
-        front of skull weathered away
-      completeness: complete
+      material: Part of the coalesced parietals of the frill.
+      completeness: fragmentary
     size:
       length_m:
         min: 4.3
@@ -104,6 +106,9 @@ species:
           preoccupied, and the species was reassigned to Chasmosaurus.
     erected_in: lambe1914b
 references:
+  - id: lambe1902a
+    notes: Names the species, as Monoclonius belli, on the coalesced parietals
+      of a frill from the Red Deer River.
   - id: lambe1914b
   - id: paul2024a
     notes: Source of the appearance features.
