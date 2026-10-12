@@ -1,5 +1,20 @@
 # *Karongasaurus*
 
+## Does the *Karongasaurus* locality name quarry CD-9?
+
+*2026-10-11*
+
+**Conclusion.** Yes. The describing paper prints CD-9 for the holotype dentary, and a site code printed for a holotype is its locality. The quarry also yielded [*Malawisaurus*](../../../genera/M/Malawisaurus.yml), and a shared quarry is recorded on each taxon from it. Governs `location.locality: CD-9, Mwakasyunguti` on [*Karongasaurus gittelmani*](../../../genera/K/Karongasaurus.yml).
+
+**Evidence.**
+- gomani2005a, p. 4, Table 1, "Specimens and specimen localities of sauropods from the Mwakasyunguti area": "Karongasaurus | Dentary | Mal-175 | CD-9".
+
+**Ruled out.**
+- *"Mwakasyunguti area".* It names the collecting area the table covers, not the holotype's quarry.
+- *Leaving CD-9 to* Malawisaurus. The code is printed for both taxa.
+
+**Open.** Nothing.
+
 ## Which unit and part is the *Karongasaurus* holotype from?
 
 *2026-10-07*
