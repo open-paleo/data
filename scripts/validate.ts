@@ -3400,175 +3400,175 @@ function stripQuotedSpans(text: string): string
 startCheck("American English");
 
 /**
- * Curated map of British spellings to their American equivalents.
- * Each entry is a word-boundary, case-insensitive regex paired with
- * the suggested American replacement. Entries are deliberately
+ * Curated map of British spellings to their American equivalents: each
+ * entry is a lowercase British word, matched whole and case-insensitively,
+ * paired with the suggested American replacement. Entries are deliberately
  * conservative: only words that are unambiguously British (no
  * homographs with valid American words — "analyses" the noun plural
  * of "analysis" is omitted on purpose).
  */
-const britishToAmerican: Array<[RegExp, string]> = [
-    [/\bcolour\b/gi, "color"],
-    [/\bcolours\b/gi, "colors"],
-    [/\bcoloured\b/gi, "colored"],
-    [/\bcolouring\b/gi, "coloring"],
-    [/\bcolouration\b/gi, "coloration"],
-    [/\bcolourful\b/gi, "colorful"],
-    [/\barmour\b/gi, "armor"],
-    [/\barmours\b/gi, "armors"],
-    [/\barmoured\b/gi, "armored"],
-    [/\bbehaviour\b/gi, "behavior"],
-    [/\bbehaviours\b/gi, "behaviors"],
-    [/\bbehavioural\b/gi, "behavioral"],
-    [/\bfavour\b/gi, "favor"],
-    [/\bfavours\b/gi, "favors"],
-    [/\bfavoured\b/gi, "favored"],
-    [/\bfavouring\b/gi, "favoring"],
-    [/\bfavourite\b/gi, "favorite"],
-    [/\bhonour\b/gi, "honor"],
-    [/\bhonours\b/gi, "honors"],
-    [/\bhonoured\b/gi, "honored"],
-    [/\bhonouring\b/gi, "honoring"],
-    [/\bhonourable\b/gi, "honorable"],
-    [/\bharbour\b/gi, "harbor"],
-    [/\bharbours\b/gi, "harbors"],
-    [/\bharboured\b/gi, "harbored"],
-    [/\blabour\b/gi, "labor"],
-    [/\blabours\b/gi, "labors"],
-    [/\blaboured\b/gi, "labored"],
-    [/\bneighbour\b/gi, "neighbor"],
-    [/\bneighbours\b/gi, "neighbors"],
-    [/\bneighbouring\b/gi, "neighboring"],
-    [/\bneighbourhood\b/gi, "neighborhood"],
-    [/\brumour\b/gi, "rumor"],
-    [/\bvigour\b/gi, "vigor"],
-    [/\bsavour\b/gi, "savor"],
-    [/\bcentre\b/gi, "center"],
-    [/\bcentres\b/gi, "centers"],
-    [/\bcentred\b/gi, "centered"],
-    [/\bcentring\b/gi, "centering"],
-    [/\btheatre\b/gi, "theater"],
-    [/\bspectre\b/gi, "specter"],
-    [/\bsceptre\b/gi, "scepter"],
-    [/\bmetre\b/gi, "meter"],
-    [/\bmetres\b/gi, "meters"],
-    [/\bkilometre\b/gi, "kilometer"],
-    [/\bkilometres\b/gi, "kilometers"],
-    [/\bmillimetre\b/gi, "millimeter"],
-    [/\bmillimetres\b/gi, "millimeters"],
-    [/\bcentimetre\b/gi, "centimeter"],
-    [/\bcentimetres\b/gi, "centimeters"],
-    [/\bfibre\b/gi, "fiber"],
-    [/\bfibres\b/gi, "fibers"],
-    [/\bmanoeuvre\b/gi, "maneuver"],
-    [/\bmanoeuvres\b/gi, "maneuvers"],
-    [/\bmanoeuvred\b/gi, "maneuvered"],
-    [/\bmanoeuvring\b/gi, "maneuvering"],
-    [/\bdefence\b/gi, "defense"],
-    [/\bdefences\b/gi, "defenses"],
-    [/\boffence\b/gi, "offense"],
-    [/\boffences\b/gi, "offenses"],
-    [/\bpretence\b/gi, "pretense"],
-    [/\blicence\b/gi, "license"],
-    [/\blicences\b/gi, "licenses"],
-    [/\blicenced\b/gi, "licensed"],
-    [/\bcatalogue\b/gi, "catalog"],
-    [/\bcatalogues\b/gi, "catalogs"],
-    [/\bcatalogued\b/gi, "cataloged"],
-    [/\bcataloguing\b/gi, "cataloging"],
-    [/\bdialogue\b/gi, "dialog"],
-    [/\bdialogues\b/gi, "dialogs"],
-    [/\banalyse\b/gi, "analyze"],
-    [/\banalysed\b/gi, "analyzed"],
-    [/\banalysing\b/gi, "analyzing"],
-    [/\borganise\b/gi, "organize"],
-    [/\borganised\b/gi, "organized"],
-    [/\borganises\b/gi, "organizes"],
-    [/\borganising\b/gi, "organizing"],
-    [/\borganisation\b/gi, "organization"],
-    [/\borganisations\b/gi, "organizations"],
-    [/\borganisational\b/gi, "organizational"],
-    [/\bsynthesise\b/gi, "synthesize"],
-    [/\bsynthesised\b/gi, "synthesized"],
-    [/\bsynthesising\b/gi, "synthesizing"],
-    [/\bsynthesises\b/gi, "synthesizes"],
-    [/\brecognise\b/gi, "recognize"],
-    [/\brecognised\b/gi, "recognized"],
-    [/\brecognises\b/gi, "recognizes"],
-    [/\brecognising\b/gi, "recognizing"],
-    [/\brecognisable\b/gi, "recognizable"],
-    [/\bspecialise\b/gi, "specialize"],
-    [/\bspecialised\b/gi, "specialized"],
-    [/\bspecialises\b/gi, "specializes"],
-    [/\bspecialising\b/gi, "specializing"],
-    [/\bspecialisation\b/gi, "specialization"],
-    [/\bcharacterise\b/gi, "characterize"],
-    [/\bcharacterised\b/gi, "characterized"],
-    [/\bcharacterises\b/gi, "characterizes"],
-    [/\bcharacterising\b/gi, "characterizing"],
-    [/\bemphasise\b/gi, "emphasize"],
-    [/\bemphasised\b/gi, "emphasized"],
-    [/\bemphasises\b/gi, "emphasizes"],
-    [/\bemphasising\b/gi, "emphasizing"],
-    [/\brealise\b/gi, "realize"],
-    [/\brealised\b/gi, "realized"],
-    [/\brealises\b/gi, "realizes"],
-    [/\brealising\b/gi, "realizing"],
-    [/\brealisation\b/gi, "realization"],
-    [/\butilise\b/gi, "utilize"],
-    [/\butilised\b/gi, "utilized"],
-    [/\butilises\b/gi, "utilizes"],
-    [/\butilising\b/gi, "utilizing"],
-    [/\butilisation\b/gi, "utilization"],
-    [/\bcivilisation\b/gi, "civilization"],
-    [/\bcivilisations\b/gi, "civilizations"],
-    [/\bcolonisation\b/gi, "colonization"],
-    [/\bhypothesise\b/gi, "hypothesize"],
-    [/\bhypothesised\b/gi, "hypothesized"],
-    [/\bprioritise\b/gi, "prioritize"],
-    [/\bprioritised\b/gi, "prioritized"],
-    [/\bwhilst\b/gi, "while"],
-    [/\bamongst\b/gi, "among"],
-    [/\btravelled\b/gi, "traveled"],
-    [/\btravelling\b/gi, "traveling"],
-    [/\btraveller\b/gi, "traveler"],
-    [/\btravellers\b/gi, "travelers"],
-    [/\bmodelled\b/gi, "modeled"],
-    [/\bmodelling\b/gi, "modeling"],
-    [/\blabelled\b/gi, "labeled"],
-    [/\blabelling\b/gi, "labeling"],
-    [/\bsignalled\b/gi, "signaled"],
-    [/\bsignalling\b/gi, "signaling"],
-    [/\bcancelled\b/gi, "canceled"],
-    [/\bcancelling\b/gi, "canceling"],
-    [/\bfuelled\b/gi, "fueled"],
-    [/\bfuelling\b/gi, "fueling"],
-    [/\bfocussed\b/gi, "focused"],
-    [/\bfocussing\b/gi, "focusing"],
-    [/\bsulphur\b/gi, "sulfur"],
-    [/\bsulphuric\b/gi, "sulfuric"],
-    [/\baluminium\b/gi, "aluminum"],
-    [/\bmoulting\b/gi, "molting"],
-    [/\bmoulted\b/gi, "molted"],
-    [/\bmoult\b/gi, "molt"],
-    [/\bmoults\b/gi, "molts"],
-    [/\bmould\b/gi, "mold"],
-    [/\bmoulds\b/gi, "molds"],
-    [/\bmoulded\b/gi, "molded"],
-    [/\bmoulding\b/gi, "molding"],
-    [/\bpalaeontology\b/gi, "paleontology"],
-    [/\bpalaeontologist\b/gi, "paleontologist"],
-    [/\bpalaeontologists\b/gi, "paleontologists"],
-    [/\bpalaeontological\b/gi, "paleontological"],
-    [/\bpalaeozoic\b/gi, "paleozoic"],
-    [/\bpalaeocene\b/gi, "paleocene"],
-    [/\bhaematology\b/gi, "hematology"],
-    [/\boesophagus\b/gi, "esophagus"],
-    [/\bfoetus\b/gi, "fetus"],
-    [/\bfoetal\b/gi, "fetal"],
-    [/\bmediaeval\b/gi, "medieval"],
-    [/\bencyclopaedia\b/gi, "encyclopedia"],
-    [/\borthopaedic\b/gi, "orthopedic"],
+const britishToAmerican: Array<[string, string]> = [
+    ["colour", "color"],
+    ["colours", "colors"],
+    ["coloured", "colored"],
+    ["colouring", "coloring"],
+    ["colouration", "coloration"],
+    ["colourful", "colorful"],
+    ["armour", "armor"],
+    ["armours", "armors"],
+    ["armoured", "armored"],
+    ["behaviour", "behavior"],
+    ["behaviours", "behaviors"],
+    ["behavioural", "behavioral"],
+    ["favour", "favor"],
+    ["favours", "favors"],
+    ["favoured", "favored"],
+    ["favouring", "favoring"],
+    ["favourite", "favorite"],
+    ["honour", "honor"],
+    ["honours", "honors"],
+    ["honoured", "honored"],
+    ["honouring", "honoring"],
+    ["honourable", "honorable"],
+    ["harbour", "harbor"],
+    ["harbours", "harbors"],
+    ["harboured", "harbored"],
+    ["labour", "labor"],
+    ["labours", "labors"],
+    ["laboured", "labored"],
+    ["neighbour", "neighbor"],
+    ["neighbours", "neighbors"],
+    ["neighbouring", "neighboring"],
+    ["neighbourhood", "neighborhood"],
+    ["rumour", "rumor"],
+    ["vigour", "vigor"],
+    ["savour", "savor"],
+    ["centre", "center"],
+    ["centres", "centers"],
+    ["centred", "centered"],
+    ["centring", "centering"],
+    ["theatre", "theater"],
+    ["spectre", "specter"],
+    ["sceptre", "scepter"],
+    ["metre", "meter"],
+    ["metres", "meters"],
+    ["kilometre", "kilometer"],
+    ["kilometres", "kilometers"],
+    ["millimetre", "millimeter"],
+    ["millimetres", "millimeters"],
+    ["centimetre", "centimeter"],
+    ["centimetres", "centimeters"],
+    ["fibre", "fiber"],
+    ["fibres", "fibers"],
+    ["manoeuvre", "maneuver"],
+    ["manoeuvres", "maneuvers"],
+    ["manoeuvred", "maneuvered"],
+    ["manoeuvring", "maneuvering"],
+    ["defence", "defense"],
+    ["defences", "defenses"],
+    ["offence", "offense"],
+    ["offences", "offenses"],
+    ["pretence", "pretense"],
+    ["licence", "license"],
+    ["licences", "licenses"],
+    ["licenced", "licensed"],
+    ["catalogue", "catalog"],
+    ["catalogues", "catalogs"],
+    ["catalogued", "cataloged"],
+    ["cataloguing", "cataloging"],
+    ["dialogue", "dialog"],
+    ["dialogues", "dialogs"],
+    ["analyse", "analyze"],
+    ["analysed", "analyzed"],
+    ["analysing", "analyzing"],
+    ["organise", "organize"],
+    ["organised", "organized"],
+    ["organises", "organizes"],
+    ["organising", "organizing"],
+    ["organisation", "organization"],
+    ["organisations", "organizations"],
+    ["organisational", "organizational"],
+    ["synthesise", "synthesize"],
+    ["synthesised", "synthesized"],
+    ["synthesising", "synthesizing"],
+    ["synthesises", "synthesizes"],
+    ["recognise", "recognize"],
+    ["recognised", "recognized"],
+    ["recognises", "recognizes"],
+    ["recognising", "recognizing"],
+    ["recognisable", "recognizable"],
+    ["specialise", "specialize"],
+    ["specialised", "specialized"],
+    ["specialises", "specializes"],
+    ["specialising", "specializing"],
+    ["specialisation", "specialization"],
+    ["characterise", "characterize"],
+    ["characterised", "characterized"],
+    ["characterises", "characterizes"],
+    ["characterising", "characterizing"],
+    ["emphasise", "emphasize"],
+    ["emphasised", "emphasized"],
+    ["emphasises", "emphasizes"],
+    ["emphasising", "emphasizing"],
+    ["realise", "realize"],
+    ["realised", "realized"],
+    ["realises", "realizes"],
+    ["realising", "realizing"],
+    ["realisation", "realization"],
+    ["utilise", "utilize"],
+    ["utilised", "utilized"],
+    ["utilises", "utilizes"],
+    ["utilising", "utilizing"],
+    ["utilisation", "utilization"],
+    ["civilisation", "civilization"],
+    ["civilisations", "civilizations"],
+    ["colonisation", "colonization"],
+    ["hypothesise", "hypothesize"],
+    ["hypothesised", "hypothesized"],
+    ["prioritise", "prioritize"],
+    ["prioritised", "prioritized"],
+    ["whilst", "while"],
+    ["amongst", "among"],
+    ["travelled", "traveled"],
+    ["travelling", "traveling"],
+    ["traveller", "traveler"],
+    ["travellers", "travelers"],
+    ["modelled", "modeled"],
+    ["modelling", "modeling"],
+    ["labelled", "labeled"],
+    ["labelling", "labeling"],
+    ["signalled", "signaled"],
+    ["signalling", "signaling"],
+    ["cancelled", "canceled"],
+    ["cancelling", "canceling"],
+    ["fuelled", "fueled"],
+    ["fuelling", "fueling"],
+    ["focussed", "focused"],
+    ["focussing", "focusing"],
+    ["sulphur", "sulfur"],
+    ["sulphuric", "sulfuric"],
+    ["aluminium", "aluminum"],
+    ["moulting", "molting"],
+    ["moulted", "molted"],
+    ["moult", "molt"],
+    ["moults", "molts"],
+    ["mould", "mold"],
+    ["moulds", "molds"],
+    ["moulded", "molded"],
+    ["moulding", "molding"],
+    ["palaeontology", "paleontology"],
+    ["palaeontologist", "paleontologist"],
+    ["palaeontologists", "paleontologists"],
+    ["palaeontological", "paleontological"],
+    ["palaeozoic", "paleozoic"],
+    ["palaeocene", "paleocene"],
+    ["haematology", "hematology"],
+    ["oesophagus", "esophagus"],
+    ["foetus", "fetus"],
+    ["foetal", "fetal"],
+    ["mediaeval", "medieval"],
+    ["encyclopaedia", "encyclopedia"],
+    ["orthopaedic", "orthopedic"],
 ];
 
 /**
@@ -3586,8 +3586,21 @@ const protectedProperNouns: Array<RegExp> = [
 ];
 
 /**
+ * The British words of `britishToAmerican`, keyed lowercase, with each one's
+ * position in the table and its American replacement.
+ */
+const americanSpellings = new Map(
+    britishToAmerican.map(([british, american], index) => [british, { index, american }]));
+
+/**
+ * Every British word of `britishToAmerican` as one whole-word alternation, so
+ * a field is scanned once rather than once per word.
+ */
+const britishSpellingPattern = new RegExp(`\\b(?:${britishToAmerican.map(([british]) => british).join("|")})\\b`, "gi");
+
+/**
  * Scans a single string field for British-English spellings and
- * emits one warning per distinct word found.
+ * emits one warning per distinct word found, in table order.
  *
  * @param filePath - Absolute path to the YAML file under inspection.
  * @param fieldPath - Dotted path describing the field's location.
@@ -3602,34 +3615,25 @@ function checkAmericanEnglish(filePath: string, fieldPath: string, text: string)
         scrubbed = scrubbed.replace(phrase, "");
     }
 
-    const seen = new Set<string>();
+    const found = new Map<string, { index: number; match: string; american: string }>();
 
-    for (const [pattern, replacement] of britishToAmerican)
+    for (const [match] of scrubbed.matchAll(britishSpellingPattern))
     {
-        pattern.lastIndex = 0;
-        const matches = scrubbed.match(pattern);
+        const lowered = match.toLowerCase();
+        const spelling = americanSpellings.get(lowered);
 
-        if (matches === null || matches.length === 0)
+        if (spelling !== undefined && !found.has(lowered))
         {
-            continue;
+            found.set(lowered, { index: spelling.index, match, american: spelling.american });
         }
+    }
 
-        for (const match of matches)
-        {
-            const lowered = match.toLowerCase();
-            const key = `${lowered}|${replacement}`;
-
-            if (seen.has(key))
-            {
-                continue;
-            }
-
-            seen.add(key);
-            checkWarning(
-                "American English",
-                filePath,
-                `${fieldPath}: "${match}" → use "${replacement}" (American English; project policy)`);
-        }
+    for (const { match, american } of [...found.values()].sort((first, second) => first.index - second.index))
+    {
+        checkWarning(
+            "American English",
+            filePath,
+            `${fieldPath}: "${match}" → use "${american}" (American English; project policy)`);
     }
 }
 
