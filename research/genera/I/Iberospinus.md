@@ -1,5 +1,20 @@
 # *Iberospinus*
 
+## Does *Iberospinus* keep its one-decimal coordinate?
+
+*2026-10-11*
+
+**Conclusion.** Yes. The describing paper prints the pair in its type-locality line, so it is printed for the holotype's site, at the precision the authors chose. The exception for coarse pairs covers a pair offered in place of a position the authors withhold, and this paper withholds nothing. Governs `location.coordinates: [38.4, -9.2]` on [*Iberospinus natarioi*](../../../genera/I/Iberospinus.yml).
+
+**Evidence.**
+- mateus2022a, p. 8: "Type locality and horizon: Praia de Aguncheiras (Also known as Praia do Guincho), in the municipality of Sesimbra, Setúbal district, Portugal (38.4˚ N, 9.2˚ W; paleocoordinates: 31.8˚ N, 1.3˚ E)".
+- mateus2022a, p. 4: "The Papo Seco Formation outcrops are located in Cabo Espichel … (38.4˚ N, 9.2˚ W; paleocoordinates: 31.8˚ N, 1.3˚ E, Fig 1)".
+
+**Ruled out.**
+- *No coordinate, reading the pair as an area position.* Its use for the outcrops as well does not unmake its use in the type-locality line.
+
+**Open.** A finer position for the Praia de Aguncheiras site.
+
 ## Which district is the *Iberospinus* type locality in, and what position do the describers print for it?
 
 *2026-08-27*
