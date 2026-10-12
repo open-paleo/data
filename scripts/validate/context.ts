@@ -419,8 +419,19 @@ export function loadValidationContext()
     ]);
 
     type ProseField = {
+        /**
+         * File the field is in.
+         */
         filePath: string;
+
+        /**
+         * Dotted path to the field.
+         */
         fieldPath: string;
+
+        /**
+         * The field's text.
+         */
         text: string;
     };
 

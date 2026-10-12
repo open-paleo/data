@@ -21,26 +21,19 @@ function parseFlaggedWarnings(output)
 
     for (const line of lines)
     {
+        const match = line.match(/^\s{2}(\S.+?):\s(.+)$/);
+
         if (/^[⚠✓✗].*Flagged publication sources/.test(line))
         {
             inFlaggedBlock = true;
-            continue;
         }
-
-        if (inFlaggedBlock)
+        else if (inFlaggedBlock && match)
         {
-            const match = line.match(/^\s{2}(\S.+?):\s(.+)$/);
-
-            if (match)
-            {
-                warnings.push({ file: match[1], message: match[2] });
-                continue;
-            }
-
-            if (line.trim() === "" || /^[⚠✓✗]/.test(line) || /^Summary:/.test(line))
-            {
-                inFlaggedBlock = false;
-            }
+            warnings.push({ file: match[1], message: match[2] });
+        }
+        else if (inFlaggedBlock && (line.trim() === "" || /^[⚠✓✗]/.test(line) || /^Summary:/.test(line)))
+        {
+            inFlaggedBlock = false;
         }
     }
 

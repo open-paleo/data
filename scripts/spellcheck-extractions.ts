@@ -70,14 +70,25 @@ if (!fs.existsSync(extractionsDir))
 }
 
 type Snippet = {
+    /**
+     * Genus the extraction is for.
+     */
     genus: string;
+
+    /**
+     * Extraction field the text came from.
+     */
     field: "holotype_material" | "diagnostic_features";
+
+    /**
+     * The field's text.
+     */
     text: string;
 };
 
 const snippets: Array<Snippet> = [];
 
-for (const name of fs.readdirSync(extractionsDir).filter((n) => n.endsWith(".json")).sort())
+for (const name of fs.readdirSync(extractionsDir).filter((entry) => entry.endsWith(".json")).sort())
 {
     const parsed = JSON.parse(fs.readFileSync(path.join(extractionsDir, name), "utf8")) as Record<string, unknown>;
     const notes = typeof parsed.notes === "string" ? parsed.notes : null;
@@ -128,8 +139,19 @@ if (result.status !== 0 && result.status !== 1)
 const stdout = result.stdout;
 
 type Unknown = {
+    /**
+     * The word the dictionaries do not know.
+     */
     word: string;
+
+    /**
+     * How often it appears.
+     */
     occurrences: number;
+
+    /**
+     * Genera whose extractions use it.
+     */
     genera: Set<string>;
 };
 
@@ -221,8 +243,18 @@ function looksSuspicious(word: string): boolean
     return false;
 }
 
+/**
+ * Where an unknown word is reported: a likely typo or shape problem, or a
+ * likely genuine term for the dictionary.
+ */
 type Bucket = "suspicious" | "term";
 
+/**
+ * Sorts an unknown word into its report bucket.
+ *
+ * @param unknown - The unknown word.
+ * @returns "suspicious" when the word looks malformed, else "term".
+ */
 function classify(unknown: Unknown): Bucket
 {
     return looksSuspicious(unknown.word) ? "suspicious" : "term";

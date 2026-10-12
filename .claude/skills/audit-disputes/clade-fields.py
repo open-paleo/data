@@ -59,7 +59,7 @@ def loadYaml(path):
     """
     if not os.path.exists(path):
         return {}
-    return yaml.safe_load(open(path)) or {}
+    return yaml.safe_load(open(path, encoding="utf-8")) or {}
 
 
 def refStorePath(refId):
@@ -288,7 +288,7 @@ def main():
 
     out = arguments.out or os.path.join(audit_dir(), "Dinosauria-clades", "clade-fields.json")
     os.makedirs(os.path.dirname(out), exist_ok=True)
-    json.dump(findings, open(out, "w"), indent=2, ensure_ascii=False)
+    json.dump(findings, open(out, "w", encoding="utf-8"), indent=2, ensure_ascii=False)
     print(f"\nclade-fields -> {out}")
 
 

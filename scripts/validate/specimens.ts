@@ -26,9 +26,24 @@ export function checkSpecimenNumberCollisions(context: ValidationContext): void
 
     type SpecimenOccurrence =
         {
+            /**
+             * File the number is in.
+             */
             filePath: string;
+
+            /**
+             * Which field it came from, for the report.
+             */
             label: string;
+
+            /**
+             * The number as written.
+             */
             raw: string;
+
+            /**
+             * Whether it carries a "sensu" qualifier.
+             */
             qualified: boolean;
         };
 

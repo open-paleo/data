@@ -393,7 +393,14 @@ export type Location = {
  * When the value is a single known estimate, min and max are equal.
  */
 export type SizeRange = {
+    /**
+     * Lower bound.
+     */
     min: number;
+
+    /**
+     * Upper bound; equal to min for a single estimate.
+     */
     max: number;
 };
 
@@ -1210,6 +1217,9 @@ export type Schema = {
  * (leaf clades with no sub-clades defined).
  */
 export type TreeNode = {
+    /**
+     * A child clade, by name.
+     */
     [clade: string]: TreeNode | Record<string, never>;
 };
 

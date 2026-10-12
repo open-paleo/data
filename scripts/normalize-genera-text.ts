@@ -36,8 +36,19 @@ const generaDir = path.join(root, "genera");
 const reportsDir = path.join(root, "scratch");
 
 type Replacement = {
+    /**
+     * The character replaced.
+     */
     from: string;
+
+    /**
+     * Its ASCII replacement.
+     */
     to: string;
+
+    /**
+     * Name of the rule in the report.
+     */
     label: string;
 };
 
@@ -136,8 +147,19 @@ function parseArguments(argv: Array<string>): { apply: boolean }
 const { apply } = parseArguments(process.argv.slice(2));
 
 type FileChange = {
+    /**
+     * The file, relative to the repository root.
+     */
     relativePath: string;
+
+    /**
+     * Replacements made, by rule label.
+     */
     counts: Map<string, number>;
+
+    /**
+     * A few changed spots with context, for the report.
+     */
     samples: Array<{ label: string; context: string }>;
 };
 

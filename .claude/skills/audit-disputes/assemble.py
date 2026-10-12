@@ -62,7 +62,7 @@ def load_tree_slice(slice_root, excludes=()):
     Each entry in `excludes` is a clade node whose entire subtree (the node and
     all descendants) is removed — this lets a large slice be partitioned into
     disjoint sub-slices without overlap (e.g. Ornithopoda --exclude Hadrosauroidea)."""
-    tree = yaml.safe_load(open(os.path.join(DATA, "tree.yml")))
+    tree = yaml.safe_load(open(os.path.join(DATA, "tree.yml"), encoding="utf-8"))
     names = subtree_names(tree, slice_root)
     if names is None:
         sys.exit(f"slice root {slice_root!r} not found in tree.yml")
@@ -107,19 +107,19 @@ def collect_loci(clade_names, clades_only=False):
     """
     if not clades_only:
         for path in sorted(glob.glob(os.path.join(DATA, "genera", "*", "*.yml"))):
-            record = yaml.safe_load(open(path))
+            record = yaml.safe_load(open(path, encoding="utf-8"))
             if not isinstance(record, dict) or "genus" not in record:
                 continue
             if record.get("parent") in clade_names and "dispute" in record:
-                refs = [r.get("id") for r in (record.get("references") or []) if isinstance(r, dict) and r.get("id")]
+                refs = [reference.get("id") for reference in (record.get("references") or []) if isinstance(reference, dict) and reference.get("id")]
                 yield ("genus", record["genus"], os.path.relpath(path, DATA), refs)
     for name in sorted(clade_names):
         path = os.path.join(DATA, "clades", f"{name}.yml")
         if not os.path.exists(path):
             continue
-        record = yaml.safe_load(open(path))
+        record = yaml.safe_load(open(path, encoding="utf-8"))
         if isinstance(record, dict) and "dispute" in record:
-            refs = [r.get("id") for r in (record.get("references") or []) if isinstance(r, dict) and r.get("id")]
+            refs = [reference.get("id") for reference in (record.get("references") or []) if isinstance(reference, dict) and reference.get("id")]
             yield ("clade", name, os.path.relpath(path, DATA), refs)
 
 
@@ -160,29 +160,29 @@ def main():
         "slice_root": args.slice_root,
         "excluded": list(args.exclude),
         "clades_only": args.clades_only,
-        "loci": [{"kind": k, "name": n, "file": f, "refs": r} for k, n, f, r in loci],
-        "papers": sorted(papers.values(), key=lambda p: p["ref_id"]),
+        "loci": [{"kind": kind, "name": name, "file": file_path, "refs": refs} for kind, name, file_path, refs in loci],
+        "papers": sorted(papers.values(), key=lambda paper: paper["ref_id"]),
     }
 
-    to_condense = [p for p in manifest["papers"] if p["in_corpus"] and p["classification"] != "reference-work"]
-    ref_works = [p for p in manifest["papers"] if p["classification"] == "reference-work"]
-    not_in_corpus = [p for p in manifest["papers"] if not p["in_corpus"] and p["classification"] != "reference-work"]
+    to_condense = [paper for paper in manifest["papers"] if paper["in_corpus"] and paper["classification"] != "reference-work"]
+    ref_works = [paper for paper in manifest["papers"] if paper["classification"] == "reference-work"]
+    not_in_corpus = [paper for paper in manifest["papers"] if not paper["in_corpus"] and paper["classification"] != "reference-work"]
 
     print(f"slice: {args.slice_root}"
           + (f" (excluding {', '.join(args.exclude)})" if args.exclude else "")
           + (" [clades only]" if args.clades_only else ""))
-    print(f"loci with dispute blocks: {len(loci)} ({sum(1 for l in loci if l[0]=='genus')} genera, {sum(1 for l in loci if l[0]=='clade')} clades)")
+    print(f"loci with dispute blocks: {len(loci)} ({sum(1 for locus in loci if locus[0]=='genus')} genera, {sum(1 for locus in loci if locus[0]=='clade')} clades)")
     print(f"distinct papers cited: {len(manifest['papers'])}")
     print(f"  to condense (in-corpus primary/monograph): {len(to_condense)}")
-    print(f"  reference-works (skip extraction): {len(ref_works)}  -> {', '.join(p['ref_id'] for p in ref_works)}")
-    print(f"  NOT in corpus (coverage gap): {len(not_in_corpus)}  -> {', '.join(p['ref_id'] for p in not_in_corpus)}")
+    print(f"  reference-works (skip extraction): {len(ref_works)}  -> {', '.join(paper['ref_id'] for paper in ref_works)}")
+    print(f"  NOT in corpus (coverage gap): {len(not_in_corpus)}  -> {', '.join(paper['ref_id'] for paper in not_in_corpus)}")
 
     # A clades-only run gets its own work directory so it never overwrites the
     # full-slice outputs for the same root.
     work_dir = args.slice_root + ("-clades" if args.clades_only else "")
     out = args.out or os.path.join(audit_dir(), work_dir, "manifest.json")
     os.makedirs(os.path.dirname(out), exist_ok=True)
-    json.dump(manifest, open(out, "w"), indent=2, ensure_ascii=False)
+    json.dump(manifest, open(out, "w", encoding="utf-8"), indent=2, ensure_ascii=False)
     print(f"\nmanifest -> {out}")
     print(f"papers to condense -> {out.replace('manifest.json', '')} (run the condensation agents next)")
 

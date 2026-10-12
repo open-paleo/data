@@ -55,7 +55,7 @@ def load_ref_store(ref_id):
     """Load references/{letter}/{ref_id}.yml, or None if absent."""
     path = store_path(ref_id)
     if os.path.exists(path):
-        return yaml.safe_load(open(path))
+        return yaml.safe_load(open(path, encoding="utf-8"))
     return None
 
 
@@ -65,7 +65,7 @@ def main():
     parser.add_argument("--out", default=None)
     args = parser.parse_args()
 
-    manifest = json.load(open(args.manifest))
+    manifest = json.load(open(args.manifest, encoding="utf-8"))
     findings = []
 
     for paper in manifest["papers"]:
@@ -88,7 +88,7 @@ def main():
             })
             continue
 
-        condensation = json.load(open(condensed_path))
+        condensation = json.load(open(condensed_path, encoding="utf-8"))
         bibliography = condensation.get("bibliography", {})
         store = load_ref_store(ref_id)
         if store is None:
@@ -132,14 +132,14 @@ def main():
         # else: title matches well enough — any year difference is treated as the
         # expected online/print / key-naming artifact and is NOT reported.
 
-    findings.sort(key=lambda f: ({"high": 0, "medium": 1, "low": 2}[f["severity"]], f["ref_id"]))
-    print(f"Tier-0 checked {sum(1 for p in manifest['papers'] if p['classification']!='reference-work')} non-reference-work papers")
+    findings.sort(key=lambda finding: ({"high": 0, "medium": 1, "low": 2}[finding["severity"]], finding["ref_id"]))
+    print(f"Tier-0 checked {sum(1 for paper in manifest['papers'] if paper['classification']!='reference-work')} non-reference-work papers")
     print(f"findings: {len(findings)}")
     for finding in findings:
         print(f"  [{finding['severity'].upper():6s}] class{finding['problem_class']} {finding['ref_id']}: {finding['detail'][:140]}")
 
     out = args.out or os.path.join(os.path.dirname(args.manifest), "tier0.json")
-    json.dump(findings, open(out, "w"), indent=2, ensure_ascii=False)
+    json.dump(findings, open(out, "w", encoding="utf-8"), indent=2, ensure_ascii=False)
     print(f"\ntier0 -> {out}")
 
 

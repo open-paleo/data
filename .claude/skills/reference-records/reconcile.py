@@ -715,7 +715,7 @@ def main():
         if disagreeing:
             if "holotype" not in settled:
                 findings[classify("holotype", disagreeing, agreeing, disagreeingKeys)].append(
-                agreementNote(agreeing) + 
+                agreementNote(agreeing) +
                 f"{label}: ours {ours['specimenIds'][:4]} vs {' | '.join(referenceValues)}")
 
         # A country that contradicts ours means the occurrence cell belongs to
@@ -803,7 +803,7 @@ def main():
 
             if "formation" not in settled:
                 findings[category].append(
-                agreementNote(agreeing) + 
+                agreementNote(agreeing) +
                 f"{label}: ours '{ours['formation']}' vs {' | '.join(referenceValues)}")
 
         ourStages = {stage.strip().lower() for stage in ours["stages"] if stage} & stageVocabulary
@@ -825,7 +825,7 @@ def main():
         if disagreeing:
             if "stage" not in settled:
                 findings[classify("stage", disagreeing, agreeing, disagreeingKeys)].append(
-                agreementNote(agreeing) + 
+                agreementNote(agreeing) +
                 f"{label}: ours {sorted(ourStages)} vs {' | '.join(referenceValues)}")
 
     print(f"genus species records:      {len(speciesRecords)}")

@@ -18,7 +18,12 @@ const referencesDir = path.join(root, "references");
 const reportPath = path.join(root, "scratch", "doi-audit.md");
 const cachePath = path.join(root, "scratch", "doi-audit-cache.json");
 
-const contactEmail = "sarah@bot2k3.net";
+// Crossref's polite pool asks for a contact address. It comes from the
+// environment (or .env), never from this file: CROSSREF_MAILTO, else the
+// OPENALEX_MAILTO paper-watch uses, else the project's no-reply address.
+const contactEmail = process.env.CROSSREF_MAILTO
+    ?? process.env.OPENALEX_MAILTO
+    ?? "open-paleo@users.noreply.github.com";
 const userAgent = `open-paleo-data DOI audit (mailto:${contactEmail})`;
 const requestDelayMs = 1100;
 

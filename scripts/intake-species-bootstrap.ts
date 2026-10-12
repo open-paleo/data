@@ -164,24 +164,84 @@ function findGenusYaml(genus: string): string | null
  * lands in the YAML.
  */
 type SpeciesSeed = {
+    /**
+     * Species binomial.
+     */
     name: string;
+
+    /**
+     * Validity status; always "valid" in a seed.
+     */
     status: string;
+
+    /**
+     * Always false: a species intake adds a non-type species.
+     */
     type_species: false;
+
+    /**
+     * Period and stages from PBDB.
+     */
     period?: {
+        /**
+         * Period names.
+         */
         name?: Array<string>;
+
+        /**
+         * Stage names.
+         */
         stage?: Array<string>;
     };
+
+    /**
+     * Locality from PBDB.
+     */
     location?: {
+        /**
+         * ISO 3166-1 alpha-2 country code.
+         */
         country?: string;
+
+        /**
+         * ISO 3166-2 region code.
+         */
         region?: string;
+
+        /**
+         * Formation name.
+         */
         formation?: string;
+
+        /**
+         * Latitude and longitude in decimal degrees.
+         */
         coordinates?: Array<number>;
     };
+
+    /**
+     * Type specimen from PBDB.
+     */
     type_specimen?: {
+        /**
+         * Catalog numbers.
+         */
         specimen_id?: Array<string>;
+
+        /**
+         * holotype, syntype, lectotype or neotype.
+         */
         specimen_type?: string;
+
+        /**
+         * Holding institution code.
+         */
         institution?: string;
     };
+
+    /**
+     * Citation key of the paper that named the species.
+     */
     erected_in?: string;
 };
 

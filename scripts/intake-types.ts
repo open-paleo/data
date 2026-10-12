@@ -7,83 +7,352 @@
  * Shape of one per-paper extraction JSON written by the genus intake agent.
  */
 export type IntakeExtraction = {
+    /**
+     * Genus name.
+     */
     genus: string;
+
+    /**
+     * Citation key of the paper read.
+     */
     citation_key: string;
+
+    /**
+     * Whether the paper is the describing paper rather than a supplementary one.
+     */
     is_describing: boolean;
+
+    /**
+     * Type species binomial as the paper writes it.
+     */
     type_species?: string | null;
+
+    /**
+     * Etymology of the genus name.
+     */
     etymology_genus?: string | null;
+
+    /**
+     * Etymology of the specific epithet.
+     */
     etymology_species?: string | null;
+
+    /**
+     * IPA pronunciation with its slashes, when the paper gives one.
+     */
     pronunciation_ipa?: string | null;
+
+    /**
+     * Phonetic respelling, when the paper gives one.
+     */
     pronunciation_phonetic?: string | null;
+
+    /**
+     * Holotype catalog number.
+     */
     holotype_specimen_id?: string | null;
+
+    /**
+     * Holding institution, preferably as its code.
+     */
     holotype_institution?: string | null;
+
+    /**
+     * holotype, syntype, lectotype or neotype.
+     */
     holotype_specimen_type?: string | null;
+
+    /**
+     * Anatomical inventory of the type specimen, without catalog numbers.
+     */
     holotype_material?: string | null;
+
+    /**
+     * Diagnostic characters, each one standing on its own.
+     */
     diagnostic_features?: Array<string>;
+
+    /**
+     * Paleoenvironment values from the schema vocabulary.
+     */
     paleoenvironment?: Array<string>;
+
+    /**
+     * Names the paper sinks into this taxon, with their kind and reason.
+     */
     synonyms?: Array<{ name: string; type: string; reason: string }>;
+
+    /**
+     * bipedal, quadrupedal or facultative.
+     */
     locomotion?: string | null;
+
+    /**
+     * feathered, armored or scaled.
+     */
     integument?: string | null;
+
+    /**
+     * Shortest length estimate, in m.
+     */
     size_length_m_min?: number | null;
+
+    /**
+     * Longest length estimate, in m.
+     */
     size_length_m_max?: number | null;
+
+    /**
+     * Lightest mass estimate, in kg.
+     */
     size_weight_kg_min?: number | null;
+
+    /**
+     * Heaviest mass estimate, in kg.
+     */
     size_weight_kg_max?: number | null;
+
+    /**
+     * The binomial the paper uses, when it differs from ours.
+     */
     binomial_in_paper?: string | null;
+
+    /**
+     * primary, review, popular, translation or other.
+     */
     paper_quality?: string;
+
+    /**
+     * The paper's ruling on the taxon's validity, or "not stated".
+     */
     status_assessment?: string | null;
+
+    /**
+     * The paper's ruling, quoted verbatim.
+     */
     status_quote?: string | null;
+
+    /**
+     * Anything unusual; for a supplementary paper, its role, which becomes the citation's note.
+     */
     notes?: string | null;
+
+    /**
+     * Set when the markdown was empty or boilerplate and nothing was extracted.
+     */
     empty?: boolean;
 };
 /**
  * Shape of one per-paper extraction JSON written by the species intake agent.
  */
 export type SpeciesExtraction = {
+    /**
+     * Genus name.
+     */
     genus: string;
+
+    /**
+     * Species epithet.
+     */
     species: string;
+
+    /**
+     * Citation key of the paper read.
+     */
     citation_key: string;
+
+    /**
+     * Whether the paper is the describing paper rather than a supplementary one.
+     */
     is_describing: boolean;
+
+    /**
+     * The binomial the paper uses, when it differs from ours.
+     */
     binomial_in_paper?: string | null;
+
+    /**
+     * Etymology of the specific epithet.
+     */
     etymology_species?: string | null;
+
+    /**
+     * Holotype catalog number.
+     */
     holotype_specimen_id?: string | null;
+
+    /**
+     * Holding institution, preferably as its code.
+     */
     holotype_institution?: string | null;
+
+    /**
+     * holotype, syntype, lectotype or neotype.
+     */
     holotype_specimen_type?: string | null;
+
+    /**
+     * Anatomical inventory of the type specimen, without catalog numbers.
+     */
     holotype_material?: string | null;
+
+    /**
+     * Diagnostic characters, each one standing on its own.
+     */
     diagnostic_features?: Array<string>;
+
+    /**
+     * Paleoenvironment values from the schema vocabulary.
+     */
     paleoenvironment?: Array<string>;
+
+    /**
+     * Period names the paper gives.
+     */
     period_name?: Array<string>;
+
+    /**
+     * Stage names the paper gives.
+     */
     period_stage?: Array<string>;
+
+    /**
+     * Older bound of the age, in Ma.
+     */
     period_from_ma?: number | null;
+
+    /**
+     * Younger bound of the age, in Ma.
+     */
     period_to_ma?: number | null;
+
+    /**
+     * ISO 3166-1 alpha-2 country code.
+     */
     location_country?: string | null;
+
+    /**
+     * ISO 3166-2 region code.
+     */
     location_region?: string | null;
+
+    /**
+     * Formation name.
+     */
     location_formation?: string | null;
+
+    /**
+     * Quarry, site or other locality.
+     */
     location_locality?: string | null;
+
+    /**
+     * Latitude and longitude in decimal degrees, when the paper gives them.
+     */
     location_coordinates?: Array<number> | null;
+
+    /**
+     * Shortest length estimate, in m.
+     */
     size_length_m_min?: number | null;
+
+    /**
+     * Longest length estimate, in m.
+     */
     size_length_m_max?: number | null;
+
+    /**
+     * Lightest mass estimate, in kg.
+     */
     size_weight_kg_min?: number | null;
+
+    /**
+     * Heaviest mass estimate, in kg.
+     */
     size_weight_kg_max?: number | null;
+
+    /**
+     * Year the species was named.
+     */
     described_year?: number | null;
+
+    /**
+     * Surnames of the species' authors.
+     */
     described_authors?: string | null;
+
+    /**
+     * Names the paper sinks into this taxon, with their kind and reason.
+     */
     synonyms?: Array<{ name: string; type: string; reason: string }>;
+
+    /**
+     * primary, review, popular, translation or other.
+     */
     paper_quality?: string;
+
+    /**
+     * The paper's ruling on the taxon's validity, or "not stated".
+     */
     status_assessment?: string | null;
+
+    /**
+     * The paper's ruling, quoted verbatim.
+     */
     status_quote?: string | null;
+
+    /**
+     * Anything unusual; for a supplementary paper, its role, which becomes the citation's note.
+     */
     notes?: string | null;
+
+    /**
+     * Set when the markdown was empty or boilerplate and nothing was extracted.
+     */
     empty?: boolean;
 };
 /**
  * Shape of one extraction JSON written by the update-genus agent.
  */
 export type PaperFieldExtraction = {
+    /**
+     * Genus name.
+     */
     genus: string;
+
+    /**
+     * Type species binomial.
+     */
     species: string;
+
+    /**
+     * Citation key of the paper read: the type species' `described_in`, else its `erected_in`.
+     */
     described_in: string;
+
+    /**
+     * Anatomical inventory of the type specimen, without catalog numbers.
+     */
     holotype_material: string | null;
+
+    /**
+     * Diagnostic characters, each one standing on its own.
+     */
     diagnostic_features: Array<string>;
+
+    /**
+     * The binomial the paper uses, when it differs from ours.
+     */
     binomial_in_paper: string | null;
+
+    /**
+     * primary, review, popular, translation or other.
+     */
     paper_quality: string;
+
+    /**
+     * Anything unusual about the paper or the extraction.
+     */
     notes: string | null;
 };
 /**

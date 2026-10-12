@@ -143,16 +143,59 @@ type WatchState = {
  * Parsed command-line options.
  */
 type Options = {
+    /**
+     * Earliest publication date searched, YYYY-MM-DD.
+     */
     since: string;
+
+    /**
+     * The --days window, when given.
+     */
     days: number | null;
+
+    /**
+     * Whether clade-name matches are reported.
+     */
     includeClades: boolean;
+
+    /**
+     * Most OpenAlex result pages fetched.
+     */
     maxPages: number;
+
+    /**
+     * OpenAlex topic ids searched.
+     */
     topicIds: Array<string>;
+
+    /**
+     * Contact address for OpenAlex's polite pool.
+     */
     mailto: string;
+
+    /**
+     * OpenAlex API key, when set.
+     */
     apiKey: string | null;
+
+    /**
+     * Whether the run records its hits as seen.
+     */
     writeState: boolean;
+
+    /**
+     * Where to write the hits as JSON.
+     */
     jsonPath: string | null;
+
+    /**
+     * Where to write the issue's checklist.
+     */
     issueItemsPath: string | null;
+
+    /**
+     * Whether the short-name homonym guard is turned off, for auditing.
+     */
     allShort: boolean;
 };
 

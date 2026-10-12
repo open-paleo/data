@@ -4,19 +4,21 @@ on:
   pull_request:
     branches: [main]
 
+# The job only reads the repository; it writes nothing but the
+# flagged-references comment on the pull request.
 permissions:
-  contents: write
+  contents: read
   pull-requests: write
 
 jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
+      # The default ref is the pull request's merge commit, which also exists
+      # for a pull request from a fork; head_ref names a branch only the fork
+      # has.
       - name: Checkout
         uses: actions/checkout@v6
-        with:
-          ref: ${{ github.head_ref }}
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v6

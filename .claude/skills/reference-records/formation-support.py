@@ -32,10 +32,8 @@ import glob
 import os
 import re
 
-import yaml
-
 from _formations import loadVariants
-from _paths import audit_dir, corpus_dir, data_dir
+from _paths import audit_dir, corpus_dir
 
 findingPattern = re.compile(
     r"^- (?:\[CONFIRMED BY (?P<confirmed>[^\]]+)\] )?(?P<binomial>[A-Z][a-z]+ [a-zë\-]+) "

@@ -47,6 +47,7 @@ import {
     mergeHolotype,
     mergeSize,
     mergeUnique,
+    orderSpeciesKeys,
     readExtractions,
 } from "./intake-shared.ts";
 
@@ -55,53 +56,6 @@ const scriptDir = path.dirname(scriptPath);
 const root = path.join(scriptDir, "..");
 
 const stagingDir = path.join(root, "staging", "intake-species");
-
-/**
- * Returns the species block in the project's canonical key order. Any
- * non-canonical keys are appended afterward.
- *
- * @param species - The species block to reorder.
- * @returns A new object with stable key order.
- */
-function reorderSpecies(species: Record<string, unknown>): Record<string, unknown>
-{
-    const order = [
-        "name",
-        "etymology",
-        "status",
-        "type_species",
-        "period",
-        "location",
-        "holotype",
-        "size",
-        "diagnostic_features",
-        "paleoenvironment",
-        "synonyms",
-        "described",
-        "authors",
-        "described_in",
-    ];
-
-    const ordered: Record<string, unknown> = {};
-
-    for (const key of order)
-    {
-        if (key in species && species[key] !== undefined)
-        {
-            ordered[key] = species[key];
-        }
-    }
-
-    for (const key of Object.keys(species))
-    {
-        if (!(key in ordered))
-        {
-            ordered[key] = species[key];
-        }
-    }
-
-    return ordered;
-}
 
 /**
  * Applies a single extraction onto the in-progress species block.
@@ -333,7 +287,7 @@ function main(): void
     const existingSpecies = Array.isArray(genusData.species) ? genusData.species : [];
     genusData.species = [
         ...existingSpecies,
-        reorderSpecies(speciesBlock) as Species,
+        orderSpeciesKeys(speciesBlock) as Species,
     ];
 
     const proposedPath = path.join(targetDir, "genus-proposed.yml");

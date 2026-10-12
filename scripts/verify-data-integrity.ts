@@ -36,9 +36,24 @@ const root = path.join(scriptDir, "..");
  */
 type BoundingBox =
     {
+        /**
+         * Southern edge.
+         */
         minLat: number;
+
+        /**
+         * Northern edge.
+         */
         maxLat: number;
+
+        /**
+         * Western edge.
+         */
         minLon: number;
+
+        /**
+         * Eastern edge.
+         */
         maxLon: number;
     };
 
@@ -111,9 +126,24 @@ const countryBoundingBoxes: Record<string, BoundingBox> =
  */
 type Finding =
     {
+        /**
+         * Name of the check that raised it.
+         */
         check: string;
+
+        /**
+         * Genus it concerns.
+         */
         genus: string;
+
+        /**
+         * Species it concerns, or "-" for the genus.
+         */
         species: string;
+
+        /**
+         * What was found.
+         */
         detail: string;
     };
 
@@ -292,15 +322,54 @@ const genusFiles = findYamlFiles(path.join(root, "genera"));
  */
 type SpeciesRecord =
     {
+        /**
+         * Genus name.
+         */
         genus: string;
+
+        /**
+         * Species binomial.
+         */
         species: string;
+
+        /**
+         * ISO 3166-1 alpha-2 country code.
+         */
         country?: string;
+
+        /**
+         * Formation name.
+         */
         formation?: string;
+
+        /**
+         * Latitude and longitude in decimal degrees.
+         */
         coordinates?: [number, number];
+
+        /**
+         * Stage names.
+         */
         stageList: Array<string>;
+
+        /**
+         * Older bound of the age, in Ma.
+         */
         fromMa?: number;
+
+        /**
+         * Younger bound of the age, in Ma.
+         */
         toMa?: number;
+
+        /**
+         * Type specimen catalog numbers.
+         */
         specimenIds: Array<string>;
+
+        /**
+         * Type specimen institution code.
+         */
         institution?: string;
     };
 
@@ -563,9 +632,9 @@ for (const group of formationGroups.values())
     // Age intervals, precomputed for the stage-distance test.
     const intervals = group.map((record) => maInterval(record));
 
-    for (let i = 0; i < group.length; i++)
+    for (let index = 0; index < group.length; index++)
     {
-        const record = group[i];
+        const record = group[index];
 
         if (majorityCountry && majorityCount >= 2 && record.country && !acceptableCountries.has(record.country))
         {
@@ -576,17 +645,17 @@ for (const group of formationGroups.values())
         // Stage outlier: flagged only when the member's age is far (> gap
         // threshold) from every other genus in the formation. Adjacent or
         // overlapping stages between siblings produce no gap.
-        const interval = intervals[i];
+        const interval = intervals[index];
 
         if (interval && !isFissureFill)
         {
             let minGap = Infinity;
 
-            for (let j = 0; j < group.length; j++)
+            for (let otherIndex = 0; otherIndex < group.length; otherIndex++)
             {
-                const other = intervals[j];
+                const other = intervals[otherIndex];
 
-                if (j !== i && group[j].genus !== record.genus && other)
+                if (otherIndex !== index && group[otherIndex].genus !== record.genus && other)
                 {
                     minGap = Math.min(minGap, intervalGap(interval, other));
                 }
@@ -729,8 +798,8 @@ for (const finding of findings)
     byCheck.set(finding.check, group);
 }
 
-const orderedChecks = [...byCheck.keys()].sort((a, b) =>
-    (byCheck.get(b)?.length ?? 0) - (byCheck.get(a)?.length ?? 0));
+const orderedChecks = [...byCheck.keys()].sort((first, second) =>
+    (byCheck.get(second)?.length ?? 0) - (byCheck.get(first)?.length ?? 0));
 
 const reportLines = new Array<string>();
 
@@ -755,7 +824,7 @@ for (const check of orderedChecks)
     reportLines.push(`## ${check} (${group.length})`);
     reportLines.push("");
 
-    for (const finding of group.sort((a, b) => a.genus.localeCompare(b.genus)))
+    for (const finding of group.sort((first, second) => first.genus.localeCompare(second.genus)))
     {
         const label = finding.species === "-" ? finding.genus : `${finding.genus} — ${finding.species}`;
 

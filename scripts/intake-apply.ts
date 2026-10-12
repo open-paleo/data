@@ -51,6 +51,7 @@ import {
     mergeHolotype,
     mergeSize,
     mergeUnique,
+    orderGenusKeys,
     readExtractions,
 } from "./intake-shared.ts";
 
@@ -59,97 +60,6 @@ const scriptDir = path.dirname(scriptPath);
 const root = path.join(scriptDir, "..");
 
 const stagingIntakeDir = path.join(root, "staging", "intake");
-
-/**
- * Returns a new GenusData object with top-level keys arranged in the
- * project's canonical order. Keys not in the canonical list are
- * appended afterward. Species blocks are also reordered field-wise.
- *
- * @param genus - Source genus data.
- * @returns Genus data with stable, human-readable key order.
- */
-function reorderGenus(genus: GenusData): GenusData
-{
-    const topLevelOrder = [
-        "genus",
-        "parent",
-        "etymology",
-        "pronunciation",
-        "description",
-        "diet",
-        "locomotion",
-        "paleoenvironment",
-        "diagnostic_features",
-        "appearance",
-        "identifiers",
-        "synonyms",
-        "species",
-        "references",
-    ];
-
-    const speciesOrder = [
-        "name",
-        "etymology",
-        "status",
-        "type_species",
-        "period",
-        "location",
-        "holotype",
-        "size",
-        "described",
-        "authors",
-        "described_in",
-    ];
-
-    const ordered: Record<string, unknown> = {};
-    const source = genus as Record<string, unknown>;
-
-    for (const key of topLevelOrder)
-    {
-        if (key in source && source[key] !== undefined)
-        {
-            ordered[key] = source[key];
-        }
-    }
-
-    for (const key of Object.keys(source))
-    {
-        if (!(key in ordered))
-        {
-            ordered[key] = source[key];
-        }
-    }
-
-    if (Array.isArray(ordered.species))
-    {
-        ordered.species = (ordered.species as Array<Record<string, unknown>>).map(
-            (species) =>
-            {
-                const orderedSpecies: Record<string, unknown> = {};
-
-                for (const key of speciesOrder)
-                {
-                    if (key in species && species[key] !== undefined)
-                    {
-                        orderedSpecies[key] = species[key];
-                    }
-                }
-
-                for (const key of Object.keys(species))
-                {
-                    if (!(key in orderedSpecies))
-                    {
-                        orderedSpecies[key] = species[key];
-                    }
-                }
-
-                return orderedSpecies;
-            },
-        );
-    }
-
-    return ordered as GenusData;
-}
 
 /**
  * Applies one extraction record onto the genus data in place. The
@@ -232,13 +142,9 @@ function applyExtraction(
             genus.paleoenvironment = extraction.paleoenvironment;
         }
 
-        if (extraction.locomotion && !genus.locomotion)
+        // Paper-derived value beats bootstrap inference.
+        if (extraction.locomotion)
         {
-            genus.locomotion = extraction.locomotion;
-        }
-        else if (extraction.locomotion && extraction.locomotion !== genus.locomotion)
-        {
-            // Paper-derived value beats bootstrap inference.
             genus.locomotion = extraction.locomotion;
         }
 
@@ -351,7 +257,7 @@ function main(): void
     const finalPath = path.join(targetDir, "final.yml");
     fs.writeFileSync(
         finalPath,
-        stringifyYaml(reorderGenus(bootstrap), { lineWidth: 80 }),
+        stringifyYaml(orderGenusKeys(bootstrap), { lineWidth: 80 }),
         "utf8",
     );
 

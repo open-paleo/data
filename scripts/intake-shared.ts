@@ -286,9 +286,24 @@ export function readExtractions<Extraction extends { is_describing: boolean }>(
  * The holotype fields an intake extraction carries.
  */
 type HolotypeFields = {
+    /**
+     * Holotype catalog number.
+     */
     holotype_specimen_id?: string | null;
+
+    /**
+     * holotype, syntype, lectotype or neotype.
+     */
     holotype_specimen_type?: string | null;
+
+    /**
+     * Holding institution.
+     */
     holotype_institution?: string | null;
+
+    /**
+     * Anatomical inventory of the type specimen.
+     */
     holotype_material?: string | null;
 };
 
@@ -335,9 +350,24 @@ export function mergeHolotype(species: Record<string, unknown>, extraction: Holo
  * The size fields an intake extraction carries.
  */
 type SizeFields = {
+    /**
+     * Shortest length estimate, in m.
+     */
     size_length_m_min?: number | null;
+
+    /**
+     * Longest length estimate, in m.
+     */
     size_length_m_max?: number | null;
+
+    /**
+     * Lightest mass estimate, in kg.
+     */
     size_weight_kg_min?: number | null;
+
+    /**
+     * Heaviest mass estimate, in kg.
+     */
     size_weight_kg_max?: number | null;
 };
 
@@ -477,4 +507,112 @@ export function appendReferencePointer(
     }
 
     return warnings;
+}
+
+/**
+ * Top-level genus keys in the order most genus files write them. Keys not
+ * listed follow, in their existing order.
+ */
+const genusKeyOrder = [
+    "genus",
+    "parent",
+    "placement",
+    "dispute",
+    "etymology",
+    "pronunciation",
+    "description",
+    "diet",
+    "locomotion",
+    "paleoenvironment",
+    "diagnostic_features",
+    "appearance",
+    "status",
+    "identifiers",
+    "erected_in",
+    "synonyms",
+    "iczn_cases",
+    "species",
+    "notable_specimens",
+    "references",
+];
+
+/**
+ * Species keys in the order most genus files write them. Keys not listed
+ * follow, in their existing order.
+ */
+const speciesKeyOrder = [
+    "name",
+    "etymology",
+    "status",
+    "type_species",
+    "period",
+    "location",
+    "size",
+    "type_specimen",
+    "diagnostic_features",
+    "paleoenvironment",
+    "synonyms",
+    "erected_in",
+    "described_in",
+];
+
+/**
+ * Copies a record with its keys in a given order; keys the order does not
+ * list follow in their existing order.
+ *
+ * @param record - The record to reorder.
+ * @param order - The keys to put first, in order.
+ * @returns The reordered copy.
+ */
+function orderKeys(record: Record<string, unknown>, order: Array<string>): Record<string, unknown>
+{
+    const ordered: Record<string, unknown> = {};
+
+    for (const key of order)
+    {
+        if (key in record && record[key] !== undefined)
+        {
+            ordered[key] = record[key];
+        }
+    }
+
+    for (const key of Object.keys(record))
+    {
+        if (!(key in ordered))
+        {
+            ordered[key] = record[key];
+        }
+    }
+
+    return ordered;
+}
+
+/**
+ * Returns a species block in the house key order.
+ *
+ * @param species - The species block.
+ * @returns The reordered copy.
+ */
+export function orderSpeciesKeys(species: Record<string, unknown>): Record<string, unknown>
+{
+    return orderKeys(species, speciesKeyOrder);
+}
+
+/**
+ * Returns a genus record in the house key order, its species blocks
+ * included.
+ *
+ * @param genus - The genus record.
+ * @returns The reordered copy.
+ */
+export function orderGenusKeys(genus: GenusData): GenusData
+{
+    const ordered = orderKeys(genus as Record<string, unknown>, genusKeyOrder);
+
+    if (Array.isArray(ordered.species))
+    {
+        ordered.species = (ordered.species as Array<Record<string, unknown>>).map(orderSpeciesKeys);
+    }
+
+    return ordered as GenusData;
 }

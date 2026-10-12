@@ -179,17 +179,64 @@ const parentChainCache = new Map<number, Array<string>>();
  * Subset of a PBDB taxa/single record relevant to genus enrichment.
  */
 export type PbdbTaxon = {
+    /**
+     * PBDB taxon number.
+     */
     taxon_no?: number;
+
+    /**
+     * Name as PBDB records it.
+     */
     taxon_name?: string;
+
+    /**
+     * Authority string, e.g. "Osborn 1905" or "(Haughton 1928)".
+     */
     taxon_attr?: string;
+
+    /**
+     * Taxon number of the PBDB parent.
+     */
     parent_no?: number;
+
+    /**
+     * PBDB diet label.
+     */
     diet?: string;
+
+    /**
+     * Oldest interval PBDB gives for the taxon.
+     */
     early_interval?: string;
+
+    /**
+     * Youngest interval PBDB gives for the taxon.
+     */
     late_interval?: string;
+
+    /**
+     * Maximum age of the first appearance, in Ma.
+     */
     firstapp_max_ma?: number;
+
+    /**
+     * Minimum age of the first appearance, in Ma.
+     */
     firstapp_min_ma?: number;
+
+    /**
+     * Maximum age of the last appearance, in Ma.
+     */
     lastapp_max_ma?: number;
+
+    /**
+     * Minimum age of the last appearance, in Ma.
+     */
     lastapp_min_ma?: number;
+
+    /**
+     * PBDB reference number of the taxon's authority.
+     */
     reference_no?: number;
 };
 
@@ -197,10 +244,29 @@ export type PbdbTaxon = {
  * Subset of a PBDB occs/list record relevant to a genus's first locality.
  */
 export type PbdbOccurrence = {
+    /**
+     * Formation the occurrence is from.
+     */
     formation?: string;
+
+    /**
+     * ISO 3166-1 alpha-2 country code.
+     */
     cc?: string;
+
+    /**
+     * State or province, as a plain name.
+     */
     state?: string;
+
+    /**
+     * Latitude in decimal degrees.
+     */
     lat?: number;
+
+    /**
+     * Longitude in decimal degrees.
+     */
     lng?: number;
 };
 
@@ -208,7 +274,14 @@ export type PbdbOccurrence = {
  * Holotype data extracted from PBDB or wikitext.
  */
 export type PbdbHolotype = {
+    /**
+     * Holotype catalog number.
+     */
     specimenId?: string;
+
+    /**
+     * Holding institution, as the source names it.
+     */
     institution?: string;
 };
 
@@ -216,15 +289,54 @@ export type PbdbHolotype = {
  * Subset of a parsed Wikipedia article relevant to genus enrichment.
  */
 export type WikitextData = {
+    /**
+     * Type species binomial from the taxobox.
+     */
     typeSpecies?: string;
+
+    /**
+     * The taxobox's fossil range text.
+     */
     temporalRange?: string;
+
+    /**
+     * Genus authority from the taxobox.
+     */
     authority?: string;
+
+    /**
+     * Formation named in the article.
+     */
     formation?: string;
+
+    /**
+     * Country named in the article.
+     */
     country?: string;
+
+    /**
+     * The article's first paragraph, without markup.
+     */
     summary?: string;
+
+    /**
+     * Etymology section text.
+     */
     etymology?: string;
+
+    /**
+     * IPA pronunciation from the article's lead.
+     */
     ipa?: string;
+
+    /**
+     * Holotype catalog number from the article.
+     */
     holotypeSpecimenId?: string;
+
+    /**
+     * Holotype institution from the article.
+     */
     holotypeInstitution?: string;
 };
 
@@ -232,23 +344,79 @@ export type WikitextData = {
  * Subset of Wikidata properties relevant to genus enrichment.
  */
 export type WikidataData = {
+    /**
+     * Wikidata item id.
+     */
     qid?: string;
+
+    /**
+     * Label of the parent taxon (P171).
+     */
     parentTaxon?: string | null;
+
+    /**
+     * Label of the type species (P427).
+     */
     typeSpecies?: string | null;
+
+    /**
+     * Diet label (P1034).
+     */
     diet?: string | null;
+
+    /**
+     * Mass in kg, as text (P2067).
+     */
     mass?: string | null;
+
+    /**
+     * Length in m, as text (P2043).
+     */
     length?: string | null;
+
+    /**
+     * Hip height in m, as text (P2048).
+     */
     hipHeight?: string | null;
+
+    /**
+     * GBIF taxon id (P846).
+     */
     gbifId?: string | null;
+
+    /**
+     * Encyclopedia of Life id (P830).
+     */
     eolId?: string | null;
+
+    /**
+     * ZooBank id (P1746).
+     */
     zoobankId?: string | null;
 };
 
 type WikidataClaim = {
+    /**
+     * The claim's main value.
+     */
     mainsnak?: {
+        /**
+         * "value" when the claim carries a value.
+         */
         snaktype?: string;
+
+        /**
+         * The value and its type.
+         */
         datavalue?: {
+            /**
+             * Wikidata value type, e.g. "quantity" or "wikibase-entityid".
+             */
             type?: string;
+
+            /**
+             * The value itself, shaped by its type.
+             */
             value?: Record<string, unknown>;
         };
     };
@@ -260,39 +428,174 @@ type WikidataClaims = Record<string, Array<WikidataClaim>>;
  * Result of `enrichGenus()`.
  */
 export type EnrichedGenus = {
+    /**
+     * Genus name.
+     */
     name: string;
+
+    /**
+     * PBDB taxon number, 0 when PBDB has no record.
+     */
     pbdbId: number;
+
+    /**
+     * PBDB ancestors, nearest first.
+     */
     parentChain: Array<string>;
+
+    /**
+     * Nearest ancestor that is a node in tree.yml.
+     */
     parentClade?: string;
+
+    /**
+     * Authority authors from PBDB.
+     */
     authors?: string;
+
+    /**
+     * Authority year from PBDB.
+     */
     year?: number;
+
+    /**
+     * Diet, from the schema vocabulary.
+     */
     diet?: string;
+
+    /**
+     * Locomotion inferred from the Wikipedia summary.
+     */
     locomotion?: string;
+
+    /**
+     * Integument inferred from the Wikipedia summary.
+     */
     integument?: string;
+
+    /**
+     * Period, from the schema vocabulary.
+     */
     period?: string;
+
+    /**
+     * Stage, from the schema vocabulary.
+     */
     stage?: string;
+
+    /**
+     * Country name.
+     */
     country?: string;
+
+    /**
+     * ISO 3166-1 alpha-2 country code.
+     */
     countryCode?: string;
+
+    /**
+     * ISO 3166-2 region code, when the name resolved to one.
+     */
     region?: string;
+
+    /**
+     * Formation of the first occurrence.
+     */
     formation?: string;
+
+    /**
+     * Latitude of the first occurrence.
+     */
     latitude?: number;
+
+    /**
+     * Longitude of the first occurrence.
+     */
     longitude?: number;
+
+    /**
+     * Type species binomial.
+     */
     typeSpecies?: string;
+
+    /**
+     * Etymology text from Wikipedia.
+     */
     etymology?: string;
+
+    /**
+     * Wikipedia's first paragraph.
+     */
     description?: string;
+
+    /**
+     * IPA pronunciation from Wikipedia.
+     */
     ipa?: string;
+
+    /**
+     * Holotype number and institution.
+     */
     holotype?: PbdbHolotype;
+
+    /**
+     * Mass in kg from Wikidata, as text.
+     */
     mass?: string;
+
+    /**
+     * Length in m from Wikidata, as text.
+     */
     bodyLength?: string;
+
+    /**
+     * Hip height in m from Wikidata, as text.
+     */
     hipHeight?: string;
+
+    /**
+     * Wikidata item id.
+     */
     wikidataQid?: string;
+
+    /**
+     * GBIF taxon id.
+     */
     gbifId?: string;
+
+    /**
+     * Encyclopedia of Life id.
+     */
     eolId?: string;
+
+    /**
+     * ZooBank id.
+     */
     zoobankId?: string;
+
+    /**
+     * DOI of the authority reference PBDB links.
+     */
     referenceDoi?: string;
+
+    /**
+     * Citation metadata resolved from that DOI.
+     */
     reference?: Record<string, string> | null;
+
+    /**
+     * Seed fields left unseeded, and requests that failed, with why.
+     */
     warnings: Array<string>;
+
+    /**
+     * How many of the tracked fields were filled.
+     */
     fieldsPopulated: number;
+
+    /**
+     * How many fields are tracked.
+     */
     fieldsTotal: number;
 };
 

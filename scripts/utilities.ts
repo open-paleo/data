@@ -1239,11 +1239,34 @@ export function buildResearchTail(
  * met while loading.
  */
 export type StratigraphyRegistry = {
+    /**
+     * Each unit by name.
+     */
     units: Record<string, StratigraphicUnit>;
+
+    /**
+     * The file each unit was read from, by name.
+     */
     files: Map<string, string>;
+
+    /**
+     * Unit name for each name or variant.
+     */
     unitByName: Map<string, string>;
+
+    /**
+     * Each unit's nested beds, by bed name or variant.
+     */
     bedsByParent: Map<string, Map<string, StratigraphicBed>>;
+
+    /**
+     * Every unit and nested bed, with the label a finding reports it by and its file.
+     */
     entries: Array<{ label: string; entry: StratigraphicUnit | StratigraphicBed; filePath: string }>;
+
+    /**
+     * File and message for each layout problem met while loading.
+     */
     layoutProblems: Array<[string, string]>;
 };
 

@@ -31,7 +31,7 @@ def load_tier1(work_dir):
     """Return (loci_results, findings) from the per-locus Tier-1 JSON files."""
     results, findings = [], []
     for path in sorted(glob.glob(os.path.join(work_dir, "tier1", "*.json"))):
-        result = json.load(open(path))
+        result = json.load(open(path, encoding="utf-8"))
         results.append(result)
         for finding in result.get("findings", []):
             finding = dict(finding)
@@ -59,7 +59,7 @@ def update_reaudit_queue(slice_root, tier0, tier1_results, run_date):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     queue = {}
     if os.path.exists(path):
-        queue = yaml.safe_load(open(path)) or {}
+        queue = yaml.safe_load(open(path, encoding="utf-8")) or {}
     pending = queue.setdefault("pending", {})
     dismissed = queue.get("dismissed") or {}
 
@@ -91,20 +91,20 @@ def update_reaudit_queue(slice_root, tier0, tier1_results, run_date):
             if "truncat" in evidence or "incomplete" in evidence or "partial source" in evidence:
                 add(finding.get("ref_id"), "source-incomplete", [result["locus"]])
 
-    yaml.safe_dump(queue, open(path, "w"), allow_unicode=True, sort_keys=True, default_flow_style=False)
+    yaml.safe_dump(queue, open(path, "w", encoding="utf-8"), allow_unicode=True, sort_keys=True, default_flow_style=False)
     return path, pending
 
 
 def render(slice_root, manifest, tier0, tier1_results, findings, queue_pending):
     papers = manifest["papers"]
-    condensed = [p for p in papers if p["in_corpus"] and p["classification"] != "reference-work"]
-    ref_works = [p for p in papers if p["classification"] == "reference-work"]
-    not_in_corpus = [p for p in papers if not p["in_corpus"] and p["classification"] != "reference-work"]
-    total_taxa = sum(len(json.load(open(os.path.join(condensed_dir(), f"{p['ref_id']}.json"))).get("taxa_treated", []))
-                     for p in condensed if os.path.exists(os.path.join(condensed_dir(), f"{p['ref_id']}.json")))
-    total_claims = sum(r.get("claims_checked", 0) for r in tier1_results)
-    clean = sum(1 for r in tier1_results if not r.get("findings"))
-    findings.sort(key=lambda f: SEVERITY_ORDER.get(f.get("severity", "low"), 3))
+    condensed = [paper for paper in papers if paper["in_corpus"] and paper["classification"] != "reference-work"]
+    ref_works = [paper for paper in papers if paper["classification"] == "reference-work"]
+    not_in_corpus = [paper for paper in papers if not paper["in_corpus"] and paper["classification"] != "reference-work"]
+    total_taxa = sum(len(json.load(open(os.path.join(condensed_dir(), f"{paper['ref_id']}.json"), encoding="utf-8")).get("taxa_treated", []))
+                     for paper in condensed if os.path.exists(os.path.join(condensed_dir(), f"{paper['ref_id']}.json")))
+    total_claims = sum(result.get("claims_checked", 0) for result in tier1_results)
+    clean = sum(1 for result in tier1_results if not result.get("findings"))
+    findings.sort(key=lambda finding: SEVERITY_ORDER.get(finding.get("severity", "low"), 3))
 
     lines = []
     lines.append(f"# Dispute/description citation audit — {slice_root}")
@@ -120,8 +120,8 @@ def render(slice_root, manifest, tier0, tier1_results, findings, queue_pending):
     lines.append(f"| Loci audited | {len(tier1_results)} |")
     lines.append(f"| Distinct papers cited | {len(papers)} |")
     lines.append(f"| Condensed (in-corpus primary) | {len(condensed)} — {total_taxa} taxon positions |")
-    lines.append(f"| Reference-works (not condensed) | {len(ref_works)} — {', '.join(p['ref_id'] for p in ref_works) or '—'} |")
-    lines.append(f"| Cited but not in corpus | {len(not_in_corpus)} — {', '.join(p['ref_id'] for p in not_in_corpus) or '—'} |")
+    lines.append(f"| Reference-works (not condensed) | {len(ref_works)} — {', '.join(paper['ref_id'] for paper in ref_works) or '—'} |")
+    lines.append(f"| Cited but not in corpus | {len(not_in_corpus)} — {', '.join(paper['ref_id'] for paper in not_in_corpus) or '—'} |")
     lines.append(f"| Load-bearing claims checked (Tier-1) | {total_claims} |")
     lines.append(f"| Loci clean | {clean} / {len(tier1_results)} |")
     lines.append(f"| Findings | {len(tier0) + len(findings)} ({len(tier0)} Tier-0 + {len(findings)} Tier-1) |")
@@ -173,8 +173,8 @@ def main():
     parser.add_argument("--date", required=True, help="run date YYYY-MM-DD (pass explicitly; scripts have no clock)")
     args = parser.parse_args()
 
-    manifest = json.load(open(os.path.join(args.work_dir, "manifest.json")))
-    tier0 = json.load(open(os.path.join(args.work_dir, "tier0.json")))
+    manifest = json.load(open(os.path.join(args.work_dir, "manifest.json"), encoding="utf-8"))
+    tier0 = json.load(open(os.path.join(args.work_dir, "tier0.json"), encoding="utf-8"))
     tier1_results, findings = load_tier1(args.work_dir)
     # A clades-only run shares its slice_root with the full-subtree run, so the
     # report and the queue's slice labels key off the WORK DIR name instead —
@@ -187,9 +187,9 @@ def main():
 
     report_path = os.path.join(audit_dir(), f"{slice_root}.md")
     os.makedirs(os.path.dirname(report_path), exist_ok=True)
-    open(report_path, "w").write(report_text)
+    open(report_path, "w", encoding="utf-8").write(report_text)
     print(f"report -> {report_path}")
-    print(f"re-audit queue -> {queue_path} ({len([e for e in pending.values() if slice_root in e.get('slices', [])])} entries for this slice)")
+    print(f"re-audit queue -> {queue_path} ({len([entry for entry in pending.values() if slice_root in entry.get('slices', [])])} entries for this slice)")
     print(f"findings: {len(tier0)} Tier-0 + {len(findings)} Tier-1")
 
 

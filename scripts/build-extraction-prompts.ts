@@ -107,15 +107,53 @@ type PromptEntry = {
  * the existing letter-A aggregate so downstream tooling can read both.
  */
 type QueueSummary = {
+    /**
+     * The genus letter the queue was built for.
+     */
     letter: string;
+
+    /**
+     * ISO timestamp of the run.
+     */
     generated_at: string;
+
+    /**
+     * The corpus root the markdown paths point into.
+     */
     corpus_dir: string;
+
+    /**
+     * Genus files under the letter.
+     */
     total_genera_in_letter: number;
+
+    /**
+     * Genera given a prompt.
+     */
     queued: number;
+
+    /**
+     * Genera given no prompt, by reason.
+     */
     skipped: {
+        /**
+         * Genera whose type species names no `described_in` or `erected_in` paper.
+         */
         no_describing_paper: Array<string>;
+
+        /**
+         * Genera with no type species name to extract for.
+         */
         no_species_name: Array<string>;
+
+        /**
+         * Genera whose describing paper has no markdown in the corpus.
+         */
         no_corpus_markdown: Array<string>;
+
+        /**
+         * Genera that already have holotype material and diagnostic features.
+         */
         both_fields_filled: Array<string>;
     };
 };
