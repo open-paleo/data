@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-10-12T04:15:11.836Z",
+    "built_at": "2026-10-12T04:57:28.832Z",
     "clade_count": 188,
     "genus_count": 1425,
     "license": "CC-BY-4.0",
@@ -114686,11 +114686,12 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "PIN 1/5009"
+              "CCMGE 1/5009"
             ],
-            "specimen_type": "holotype",
-            "institution": "Paleontological Institute, Russian Academy of Sciences",
-            "material": "Posterior part of the skull, dentary, surangular, four cervical and two dorsal vertebrae, ischium, femur, tibia, and humerus."
+            "specimen_type": "lectotype",
+            "institution": "F.N. Chernyshev Central Museum of Geological Exploration",
+            "material": "Incomplete skull lacking the snout.",
+            "notes": "Riabinin (1939) founded the species on a series from collection 5009: the posterior part of a skull, a dentary, a surangular, vertebrae and limb bones. Rozhdestvensky (1968) designated the skull, No. 1/5009, at the museum of the Central Science and Research Institute for Geological Exploration in Leningrad, as the lectotype. Bell and Brink (2013) write it as PIN 1/5009 and report the other elements lost."
           },
           "erected_in": "riabinin1937a",
           "described_in": "riabinin1939a",
@@ -114699,6 +114700,27 @@
         }
       ],
       "references": [
+        {
+          "id": "rozhdestvensky1968a",
+          "authors": "Rozhdestvensky, A. K.",
+          "year": 1968,
+          "title": "Gadrozavry Kazakhstana [Hadrosaurs of Kazakhstan]",
+          "journal": "[Upper Paleozoic and Mesozoic Amphibians and Reptiles]. Akademia Naul SSSR, Moscow",
+          "pages": "97-141",
+          "notes": "Designates the skull No. 1/5009 as the lectotype, at \"The Museum of the Central Science and Research Institute for Geological Exploration (Leningrad)\"."
+        },
+        {
+          "id": "bell2013a",
+          "authors": "Bell, P. R.; Brink, K. S.",
+          "year": 2013,
+          "title": "Kazaklambia convincens comb. nov., a primitive juvenile lambeosaurine from the Santonian of Kazakhstan",
+          "journal": "Cretaceous Research",
+          "publisher": "Elsevier BV",
+          "volume": "45",
+          "pages": "265-274",
+          "doi": "10.1016/j.cretres.2013.05.003",
+          "notes": "Gives the specimen as PIN 1/5009, of which \"Only the skull is currently available for study\"."
+        },
         {
           "id": "riabinin1937a",
           "authors": "Riabinin, A. N.",
@@ -114899,11 +114921,10 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Yizhou Fossil and Geology Park",
             "region": "Liaoning",
             "formation": "Yixian",
             "member": "Dawangzhangzi",
-            "notes": "Lefèvre and colleagues (2014) give the horizon as the \"Dakangpu Member (equivalent to the Dawangzhangzi Beds) of the Yixian Formation, lower Aptian\", while dating the formation at \"124.6 ± 0.3 Mya using U-Pb SHRIMP dating\", which is Barremian on the ICS chart v2024/12.\n",
+            "notes": "Lefèvre and colleagues (2014) give the horizon as the \"Dakangpu Member (equivalent to the Dawangzhangzi Beds) of the Yixian Formation, lower Aptian\", while dating the formation at \"124.6 ± 0.3 Mya using U-Pb SHRIMP dating\", which is Barremian on the ICS chart v2024/12. They give the type locality as \"Yizhou Fossil and Geology Park, Liaoning Province\", the name of the institution that holds the holotype.\n",
             "region_code": "CN-LN"
           },
           "type_specimen": {
@@ -116399,7 +116420,7 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Baicai Gou",
+            "locality": "Baicaigou",
             "region": "Liaoning",
             "formation": "Yixian",
             "region_code": "CN-LN"
@@ -117151,7 +117172,7 @@
       "species": [
         {
           "name": "Jingshanosaurus xinwaensis",
-          "etymology": "Named for Xinwa Village, about 6 km from Jingshan Town in northeast Lufeng, Yunnan Province, China.",
+          "etymology": "Named for Xinwa Village, about 6 km from Jinshan Town in northeast Lufeng, Yunnan Province, China.",
           "status": "valid",
           "type_species": true,
           "period": {
@@ -117503,13 +117524,15 @@
           "type_species": true,
           "period": {
             "name": [
-              "Early Cretaceous"
+              "Early Cretaceous",
+              "Late Cretaceous"
             ],
             "stage": [
-              "Albian"
+              "Albian",
+              "Cenomanian"
             ],
             "from_ma": 113.2,
-            "to_ma": 100.5
+            "to_ma": 93.9
           },
           "location": {
             "country": "CN",
