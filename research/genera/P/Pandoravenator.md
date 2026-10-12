@@ -1,5 +1,21 @@
 # *Pandoravenator*
 
+## What stages does *Pandoravenator* take?
+
+*2026-10-11*
+
+**Conclusion.** Oxfordian and Kimmeridgian, from the describing paper's type-horizon line; the Tithonian belongs only to its statement of the formation's range. Governs `stage: [Oxfordian, Kimmeridgian]` on [*Pandoravenator fernandezorum*](../../../genera/P/Pandoravenator.yml).
+
+**Evidence.**
+- rauhut2017a, p. 542, Type locality and horizon: "a section of lacustrine and fluvial silt to sandstones that can be referred to the basal part of the Cañadón Calcáreo Formation, latest Oxfordian to Kimmeridgian".
+- rauhut2017a, Geology: "A tuff at the top of the lacustrine section at Puesto Almada has recently been dated at 157 Ma (latest Oxfordian; Cúneo et al., 2013)"; "the age of this locality probably very closely corresponds to the radiometric date".
+- rauhut2017a, Abstract: the "Late Jurassic (Oxfordian–Tithonian) Cañadón Calcáreo Formation".
+
+**Ruled out.**
+- *Oxfordian to Tithonian.* It is the formation's range, not the horizon's.
+
+**Open.** Nothing.
+
 ## Is the Pandoravenator holotype from the Puesto Almada Member of the Cañadón Asfalto Formation?
 
 *2026-09-01*
