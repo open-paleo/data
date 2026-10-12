@@ -1601,26 +1601,30 @@ function extractStringClaim(
 }
 
 /**
- * Parses an authority string into separate authors and year.
+ * Parses an authority string into separate authors and year. PBDB wraps a
+ * recombined species' authority in parentheses, "(Haughton 1928)"; those are
+ * dropped.
  *
  * @param authority - The authority string (e.g., "Osborn 1905").
  * @returns An object with authors and year properties.
  */
-function parseAuthority(authority: string): { authors: string; year: string }
+export function parseAuthority(authority: string): { authors: string; year: string }
 {
     const result = { authors: "", year: "" };
 
-    if (!authority)
+    const bare = (authority ?? "").replace(/^\s*\(\s*|\s*\)\s*$/g, "");
+
+    if (!bare)
     {
         return result;
     }
 
-    const yearMatch = authority.match(/\b(1[89]\d{2}|20[0-2]\d)\b/);
+    const yearMatch = bare.match(/\b(1[89]\d{2}|20[0-2]\d)\b/);
 
     if (yearMatch)
     {
         result.year = yearMatch[1];
-        const authorPart = authority.slice(0, yearMatch.index).replace(/[,\s]+$/, "").trim();
+        const authorPart = bare.slice(0, yearMatch.index).replace(/[,\s]+$/, "").trim();
 
         if (authorPart)
         {
@@ -1629,7 +1633,7 @@ function parseAuthority(authority: string): { authors: string; year: string }
     }
     else
     {
-        result.authors = authority;
+        result.authors = bare;
     }
 
     return result;

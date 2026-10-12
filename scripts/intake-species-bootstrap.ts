@@ -43,6 +43,7 @@ import {
     fetchPbdbReferenceDoi,
     fetchPbdbTaxon,
     matchStage,
+    parseAuthority,
     resolveRegionCode,
 } from "./genus-enrichment.ts";
 import type { GenusData } from "./types.ts";
@@ -485,14 +486,11 @@ async function main(): Promise<void>
 
     if (taxon?.taxon_attr)
     {
-        const authorityMatch = taxon.taxon_attr.match(/^(.+?)\s+(\d{4})$/);
+        const authority = parseAuthority(taxon.taxon_attr);
 
-        if (authorityMatch !== null)
+        if (authority.authors && authority.year)
         {
-            describingKey = citationKeyFor(
-                authorityMatch[1].trim(),
-                Number.parseInt(authorityMatch[2], 10),
-            );
+            describingKey = citationKeyFor(authority.authors, authority.year);
         }
     }
 
