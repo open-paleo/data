@@ -45,45 +45,13 @@ import { parse as parseYamlContent, stringify as stringifyYaml } from "yaml";
 
 import type { GenusData } from "./types.ts";
 import { referenceBucket, referenceNotesLimit, writeStatusEvidence } from "./utilities.ts";
+import type { IntakeExtraction } from "./intake-types.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
 const root = path.join(scriptDir, "..");
 
 const stagingIntakeDir = path.join(root, "staging", "intake");
-
-/**
- * Shape of one per-paper extraction JSON written by the intake agent.
- */
-type IntakeExtraction = {
-    genus: string;
-    citation_key: string;
-    is_describing: boolean;
-    type_species?: string | null;
-    etymology_genus?: string | null;
-    etymology_species?: string | null;
-    pronunciation_ipa?: string | null;
-    pronunciation_phonetic?: string | null;
-    holotype_specimen_id?: string | null;
-    holotype_institution?: string | null;
-    holotype_specimen_type?: string | null;
-    holotype_material?: string | null;
-    diagnostic_features?: Array<string>;
-    paleoenvironment?: Array<string>;
-    synonyms?: Array<{ name: string; type: string; reason: string }>;
-    locomotion?: string | null;
-    integument?: string | null;
-    size_length_m_min?: number | null;
-    size_length_m_max?: number | null;
-    size_weight_kg_min?: number | null;
-    size_weight_kg_max?: number | null;
-    binomial_in_paper?: string | null;
-    paper_quality?: string;
-    status_assessment?: string | null;
-    status_quote?: string | null;
-    notes?: string | null;
-    empty?: boolean;
-};
 
 /**
  * Returns a new GenusData object with top-level keys arranged in the

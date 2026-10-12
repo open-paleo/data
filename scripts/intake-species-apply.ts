@@ -41,52 +41,13 @@ import { parse as parseYamlContent, stringify as stringifyYaml } from "yaml";
 
 import type { GenusData, Species } from "./types.ts";
 import { referenceBucket, referenceNotesLimit, writeStatusEvidence } from "./utilities.ts";
+import type { SpeciesExtraction } from "./intake-types.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
 const root = path.join(scriptDir, "..");
 
 const stagingDir = path.join(root, "staging", "intake-species");
-
-/**
- * Shape of one per-paper extraction JSON written by the species
- * intake agent.
- */
-type SpeciesExtraction = {
-    genus: string;
-    species: string;
-    citation_key: string;
-    is_describing: boolean;
-    binomial_in_paper?: string | null;
-    etymology_species?: string | null;
-    holotype_specimen_id?: string | null;
-    holotype_institution?: string | null;
-    holotype_specimen_type?: string | null;
-    holotype_material?: string | null;
-    diagnostic_features?: Array<string>;
-    paleoenvironment?: Array<string>;
-    period_name?: Array<string>;
-    period_stage?: Array<string>;
-    period_from_ma?: number | null;
-    period_to_ma?: number | null;
-    location_country?: string | null;
-    location_region?: string | null;
-    location_formation?: string | null;
-    location_locality?: string | null;
-    location_coordinates?: Array<number> | null;
-    size_length_m_min?: number | null;
-    size_length_m_max?: number | null;
-    size_weight_kg_min?: number | null;
-    size_weight_kg_max?: number | null;
-    described_year?: number | null;
-    described_authors?: string | null;
-    synonyms?: Array<{ name: string; type: string; reason: string }>;
-    paper_quality?: string;
-    status_assessment?: string | null;
-    status_quote?: string | null;
-    notes?: string | null;
-    empty?: boolean;
-};
 
 /**
  * Returns the species block in the project's canonical key order. Any

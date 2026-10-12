@@ -41,22 +41,13 @@ import * as url from "node:url";
 import { isMap, isSeq, parseDocument, stringify as yamlStringify } from "yaml";
 import type { Node, YAMLMap } from "yaml";
 
+import type { PaperFieldExtraction } from "./intake-types.ts";
+
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
 const root = path.join(scriptDir, "..");
 const generaDir = path.join(root, "genera");
 const reportsDir = path.join(root, "scratch");
-
-type Extraction = {
-    genus: string;
-    species: string;
-    described_in: string;
-    holotype_material: string | null;
-    diagnostic_features: Array<string>;
-    binomial_in_paper: string | null;
-    paper_quality: string;
-    notes: string | null;
-};
 
 /**
  * Finds the type species's `type_specimen` map in a parsed genus file: the
@@ -326,7 +317,7 @@ const failedInsertion = new Array<{ genus: string; field: string }>();
 for (const name of fs.readdirSync(extractionsDir).filter((entry) => entry.endsWith(".json")).sort())
 {
     const extractionPath = path.join(extractionsDir, name);
-    const extraction = JSON.parse(fs.readFileSync(extractionPath, "utf8")) as Extraction;
+    const extraction = JSON.parse(fs.readFileSync(extractionPath, "utf8")) as PaperFieldExtraction;
     const notes = extraction.notes ?? "";
 
     if (notes.includes("EXTRACTION FAILED"))

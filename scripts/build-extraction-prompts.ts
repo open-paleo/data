@@ -28,6 +28,7 @@ import * as url from "node:url";
 import { getCorpusDir } from "./corpus-path.ts";
 import type { GenusData, Species } from "./types.ts";
 import { findYamlFiles, parseYaml } from "./utilities.ts";
+import { paperFieldExtractionFields, renderSchemaLine } from "./intake-types.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
@@ -197,7 +198,9 @@ function buildPromptString(entry: Omit<PromptEntry, "prompt">): string
         `If the file is empty, fewer than ~50 lines of substantive prose, or just publisher boilerplate, write a sentinel JSON to ${entry.output_path} with ${sentinelJson} and STOP. No further tool calls.`,
         "",
         "Otherwise, write JSON to that path with this exact schema:",
-        `{"genus":"${entry.genus}","species":"${entry.species}","described_in":"${entry.described_in}","holotype_material":"string|null (≤200 chars from the paper's Holotype subsection, drop catalog numbers)","diagnostic_features":["3-6 standalone autapomorphy bullets ≤200 chars each, NO comparative-only bullets, NO clade-shared traits"],"binomial_in_paper":"string|null (only if differs from above)","paper_quality":"primary|review|popular|translation|other","notes":"string|null (flag anything unusual)"}`,
+        renderSchemaLine(
+            { genus: entry.genus, species: entry.species, described_in: entry.described_in },
+            paperFieldExtractionFields),
         "",
         "Do NOT invent material/characters. null/[] when absent. Focus only on the target taxon if the paper covers multiple new taxa. Return ONLY the output path as confirmation, nothing else.",
     ].join("\n");

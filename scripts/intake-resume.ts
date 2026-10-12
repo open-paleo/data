@@ -27,6 +27,7 @@ import * as url from "node:url";
 
 import { getCorpusDir } from "./corpus-path.ts";
 import { readBibCitationKeys, resolveCitationKey } from "./utilities.ts";
+import { intakeExtractionFields, renderSchemaLines } from "./intake-types.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
@@ -183,34 +184,10 @@ function buildIntakePromptString(entry: Omit<IntakePromptEntry, "prompt">): stri
         "",
         `Otherwise, write JSON to ${entry.output_path} with this schema:`,
         "",
-        "{",
-        `  "genus": "${entry.genus}",`,
-        `  "citation_key": "${entry.citation_key}",`,
-        `  "is_describing": ${entry.is_describing},`,
-        '  "type_species": "binomial as it appears in the paper, or null",',
-        '  "etymology_genus": "string|null — concise (~150 chars) etymology of the genus name",',
-        '  "etymology_species": "string|null — concise etymology of the specific epithet",',
-        '  "pronunciation_ipa": "string|null — IPA pronunciation including the leading and trailing slashes (e.g. \\"/ˌbrɒntoʊˈθoʊləs/\\"). Only fill in if the paper explicitly gives an IPA transcription.",',
-        '  "pronunciation_phonetic": "string|null — informal phonetic respelling guide (e.g. \\"BRON-toh-THOH-luhs\\"). Only fill in if the paper explicitly gives one.",',
-        '  "holotype_specimen_id": "string|null — single catalog number, e.g. \\"ZPAL MgD-I/108\\"",',
-        '  "holotype_institution": "string|null — full institution name or known abbreviation",',
-        '  "holotype_specimen_type": "holotype|syntype|lectotype|neotype|null",',
-        '  "holotype_material": "string|null — concise (≤200 chars) anatomical inventory from the paper, drop catalog numbers from the prose",',
-        '  "diagnostic_features": ["3-6 standalone autapomorphy bullets ≤200 chars each, NO comparative-only bullets, NO clade-shared traits"],',
-        '  "paleoenvironment": ["zero or more values from this exact enum (others will fail validation): fluvial, lacustrine, coastal, deltaic, arid, forested, wetland, marine, polar. Map paludal/swamp/marsh → wetland; estuarine/lagoonal → coastal; eolian/desert → arid."],',
-        '  "synonyms": [{"name": "string", "type": "junior subjective|junior objective|preoccupied|nomen nudum|nomen rejectum|informal", "reason": "string"}],',
-        '  "locomotion": "bipedal|quadrupedal|facultative|null",',
-        '  "integument": "feathered|armored|scaled|null",',
-        '  "size_length_m_min": "number|null",',
-        '  "size_length_m_max": "number|null",',
-        '  "size_weight_kg_min": "number|null",',
-        '  "size_weight_kg_max": "number|null",',
-        '  "binomial_in_paper": "string|null (only if differs from above)",',
-        '  "paper_quality": "primary|review|popular|translation|other",',
-        `  "status_assessment": "valid|nomen dubium|nomen nudum|disputed|not stated — the position THIS paper takes on whether ${entry.genus} is a valid genus. Use \\"not stated\\" unless the paper actually rules on it.",`,
-        '  "status_quote": "string|null — the paper\'s verdict QUOTED VERBATIM, sentence(s) copied exactly, no paraphrase. null when status_assessment is \\"not stated\\".",',
-        '  "notes": "string|null — ≤200 characters. For a supplementary paper this becomes the citation\'s role note in the dataset, so state what the paper contributes in one sentence. Flag anything unusual."',
-        "}",
+        ...renderSchemaLines(
+            { genus: entry.genus, citation_key: entry.citation_key, is_describing: entry.is_describing },
+            intakeExtractionFields,
+            entry.genus),
         "",
         "Rules:",
         "- Do NOT invent material/characters. null/[] when absent.",
