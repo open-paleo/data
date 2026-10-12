@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-10-12T08:36:35.029Z
+  built_at: 2026-10-12T20:04:27.282Z
   clade_count: 188
   genus_count: 1425
   license: CC-BY-4.0
@@ -20158,7 +20158,7 @@ genera:
           to_ma: 168.2
         location:
           country: CN
-          locality: Quarry 1, Lao Chang Qing
+          locality: Laochangqing
           region: Yunnan
           formation: Chuanjie
           part: lower
@@ -39290,6 +39290,16 @@ genera:
         authors: Sternberg, R. M.
         described: 1940
     references:
+      - id: funston2020b
+        authors: Funston, G.
+        year: 2020
+        title: "Caenagnathids of the Dinosaur Park Formation (Campanian) of Alberta, Canada: anatomy, osteohistology, taxonomy, and evolution"
+        journal: Vertebrate Anatomy Morphology Palaeontology
+        publisher: University of Alberta Libraries
+        volume: "8"
+        pages: 105-153
+        doi: 10.18435/vamp29362
+        notes: Gives the horizon as "Upper Cretaceous (Campanian) Dinosaur Park Formation".
       - id: sternberg1940a
         authors: Sternberg, R. M.
         year: 1940
@@ -40225,15 +40235,16 @@ genera:
           name:
             - Late Jurassic
           stage:
+            - Oxfordian
             - Kimmeridgian
-            - Tithonian
-          from_ma: 154.8
-          to_ma: 143.1
+          from_ma: 161.5
+          to_ma: 149.2
         location:
           country: US
           region: Wyoming
           formation: Morrison
           locality: Quarry 13, Como Bluff
+          notes: Carpenter and Wilson (2008) date Quarry 13 "latest Oxfordian-earliest Kimmeridgian".
           region_code: US-WY
         type_specimen:
           specimen_id:
@@ -40333,6 +40344,27 @@ genera:
         references:
           - mcintosh1996a
     references:
+      - id: carpenter2008a
+        authors: Carpenter, K.; Wilson, Y.
+        year: 2008
+        title: "A new species of Camptosaurus (Ornithopoda: Dinosauria) from the Morrison Formation (Upper Jurassic) of Dinosaur National Monument, Utah, and a biomechanical analysis of its forelimb"
+        journal: Annals of Carnegie Museum
+        publisher: Carnegie Museum of Natural History
+        volume: "76"
+        issue: "4"
+        pages: 227-263
+        doi: 10.2992/0097-4463(2008)76[227:ANSOCO]2.0.CO;2
+        notes: Dates Quarry 13 "latest Oxfordian-earliest Kimmeridgian" from regional correlations with dated horizons.
+      - id: mcintosh1975a
+        authors: McIntosh, J. S.; Berman, D. S.
+        year: 1975
+        title: "Description of the palate and lower jaw of the sauropod dinosaur Diplodocus (Reptilia: Saurischia) with remarks on the nature of the skull of Apatosaurus"
+        journal: Journal of Paleontology
+        publisher: Cambridge University Press (CUP)
+        volume: "49"
+        issue: "1"
+        pages: 187-199
+        notes: Lists YPM 1910, "type of 'Morosaurus' lentus", among the sauropods from Quarry 13.
       - id: cope1877b
         authors: Cope, E. D.
         year: 1877
@@ -40864,8 +40896,9 @@ genera:
           name:
             - Late Triassic
           stage:
+            - Carnian
             - Norian
-          from_ma: 227.3
+          from_ma: 237
           to_ma: 205.7
         location:
           country: US
@@ -40873,6 +40906,7 @@ genera:
           region: Arizona
           formation: Chinle
           member: Mesa Redondo
+          notes: Hunt and colleagues (1998) place the taxon in the Adamanian, which they call late Tuvalian (late Carnian); Novas and colleagues (2021) date the Placerias Quarry to about 219 Ma, which is Norian.
           region_code: US-AZ
         type_specimen:
           specimen_id:
@@ -40885,6 +40919,15 @@ genera:
         authors: Hunt, A. P.; Lucas, S. G.; Heckert, A. B.; Sullivan, R. M.; Lockley, M. G.
         described: 1998
     references:
+      - id: novas2021a
+        authors: Novas, F. E.; Agnolín, F. L.; Ezcurra, M. D.; Müller, R. T.; Martinelli, A. G.; Langer, M. C.
+        year: 2021
+        title: Review of the fossil record of early dinosaurs from South America, and its phylogenetic implications
+        journal: Journal of South American Earth Sciences
+        volume: "110"
+        pages: "103341"
+        doi: 10.1016/j.jsames.2021.103341
+        notes: Gives the Placerias Quarry as "ca. 219 Ma".
       - id: hunt1998a
         authors: Hunt, A. P.; Lucas, S. G.; Heckert, A. B.; Sullivan, R. M.; Lockley, M. G.
         year: 1998
@@ -40962,8 +41005,9 @@ genera:
           name:
             - Late Jurassic
           stage:
+            - Oxfordian
             - Kimmeridgian
-          from_ma: 154.8
+          from_ma: 161.5
           to_ma: 149.2
         location:
           country: US
@@ -40972,7 +41016,7 @@ genera:
           formation: Morrison
           member: Salt Wash
           notes: |
-            McDonald (2011) places "material from Como Bluff Quarry 13 in the Upper Jurassic Salt Wash Member of the Morrison Formation".
+            McDonald (2011) places "material from Como Bluff Quarry 13 in the Upper Jurassic Salt Wash Member of the Morrison Formation". Carpenter and Wilson (2008) date the quarry "latest Oxfordian-earliest Kimmeridgian".
           region_code: US-WY
         type_specimen:
           specimen_id:
@@ -40995,6 +41039,17 @@ genera:
         authors: Marsh, O. C.
         described: 1885
     references:
+      - id: carpenter2008a
+        authors: Carpenter, K.; Wilson, Y.
+        year: 2008
+        title: "A new species of Camptosaurus (Ornithopoda: Dinosauria) from the Morrison Formation (Upper Jurassic) of Dinosaur National Monument, Utah, and a biomechanical analysis of its forelimb"
+        journal: Annals of Carnegie Museum
+        publisher: Carnegie Museum of Natural History
+        volume: "76"
+        issue: "4"
+        pages: 227-263
+        doi: 10.2992/0097-4463(2008)76[227:ANSOCO]2.0.CO;2
+        notes: Dates Quarry 13 "latest Oxfordian-earliest Kimmeridgian" from regional correlations with dated horizons.
       - id: marsh1879a
         authors: Marsh, O. C.
         year: 1879
@@ -41343,6 +41398,7 @@ genera:
           region: Agadez
           formation: Echkar
           locality: Iguidi, west of In Abangharit
+          notes: Sereno and colleagues (2026), after revisiting the type sections of the Echkar and Farak, conclude that the Iguidi (In Abangharit) area exposes the Farak Formation.
           region_code: NE-1
         type_specimen:
           specimen_id:
@@ -41361,6 +41417,15 @@ genera:
         authors: Brusatte, S. L.; Sereno, P. C.
         described: 2007
     references:
+      - id: sereno2026a
+        authors: Sereno, P. C.; Vidal, D.; Myhrvold, N. P.; Johnson-Ransom, E.; Ciudad Real, M.; Baumgart, S. L.; Sánchez Fontela, N.; Green, T. L.; Saitta, E. T.; Adamou, B.; Bop, L. L.; Keillor, T. M.; Fitzgerald, E. C.; Dutheil, D. B.; Laroche, R. A. S.; Demers-Potvin, A. V.; Simarro, Á.; Gascó-Lluna, F.; Lázaro, A.; Gamonal, A.; Beightol, C. V.; Reneleau, V.; Vautrin, R.; Bertozzo, F.; Granados, A.; Kinney-Broderick, G.; Mallon, J. C.; Lindoso, R. M.; Ramezani, J.
+        year: 2026
+        title: Scimitar-crested Spinosaurus species from the Sahara caps stepwise spinosaurid radiation
+        journal: Science
+        volume: "391"
+        pages: eadx5486
+        doi: 10.1126/science.adx5486
+        notes: Concludes that "both the Jenguebi and Iguidi (In Abangharit) fossil areas represent exposures of the Farak Formation".
       - id: stromer1931a
         authors: Stromer, E.
         year: 1931
@@ -42350,7 +42415,7 @@ genera:
           to_ma: 100.5
         location:
           country: US
-          locality: Price River 1
+          locality: CEM site, Utah locality Em419v, near the Price River
           region: Utah
           formation: Cedar Mountain
           member: Ruby Ranch
@@ -42382,6 +42447,16 @@ genera:
         authors: Carpenter, K.; Kirkland, J. I.; Burge, D. L.; Bird, J.
         described: 2001
     references:
+      - id: kirkland2016a
+        authors: Kirkland, J. I.; Suarez, M.; Suarez, C.; Hunt-Foster, R.
+        year: 2016
+        title: The Lower Cretaceous in east-central Utah — the Cedar Mountain Formation and its bounding strata
+        journal: Geology of the Intermountain West
+        publisher: Utah Geological Association
+        volume: "3"
+        pages: 101-228
+        doi: 10.31711/giw.v3.pp101-228
+        notes: Gives the holotype skull as from "the KEM site (Utah Em419v) in the upper Ruby Ranch Member".
       - id: carpenter2001a
         authors: Carpenter, K.; Kirkland, J. I.; Burge, D. L.; Bird, J.
         year: 2001
@@ -42557,10 +42632,9 @@ genera:
           country: CA
           locality: Red Deer River
           region: Alberta
-          formation: Dinosaur Park
-          part: lower
+          group: Belly River
+          notes: Hatcher and colleagues (1907) give the type as found "in the Belly River (Judith River) series of Red Deer River"; no source read places it in the Oldman or the Dinosaur Park Formation.
           region_code: CA-AB
-          part_of: formation
         type_specimen:
           specimen_id:
             - CMN 971
@@ -42579,6 +42653,15 @@ genera:
         authors: Lambe, L. M.
         described: 1905
     references:
+      - id: hatcher1907a
+        authors: Hatcher, J. B.; Marsh, O. C.; Lull, R. S.
+        year: 1907
+        title: The Ceratopsia
+        journal: Monographs of the United States Geological Survey
+        publisher: United States Geological Survey
+        volume: "49"
+        pages: 1-300
+        notes: Gives the type as found "in the Belly River (Judith River) series of Red Deer River, Alberta".
       - id: lambe1905a
         authors: Lambe, L. M.
         year: 1905
@@ -43205,6 +43288,7 @@ genera:
           formation: Morrison
           member: Brushy Basin
           locality: Felch Quarry No. 1
+          notes: Chure (2000) places Felch Quarry 1 in the Brushy Basin Member, "47.9 m above the J5 unconformity", for two other types from the quarry.
           region_code: US-CO
         size:
           hip_height_m:
@@ -43265,6 +43349,13 @@ genera:
         references:
           - mateus2000a
     references:
+      - id: chure2000a
+        authors: Chure, D. J.
+        year: 2000
+        title: A new species of Allosaurus from the Morrison Formation of Dinosaur National Monument (UT-CO) and a revision of the theropod family Allosauridae
+        thesis: doctoral
+        school: Columbia University
+        notes: Gives the Felch Quarry 1 horizon as "Brushy Basin Mbr., 47.9 m above the J5 unconformity".
       - id: marsh1884a
         authors: Marsh, O. C.
         year: 1884
@@ -44852,17 +44943,18 @@ genera:
           to_ma: 72.2
         location:
           country: CA
-          locality: Berry Creek
+          locality: Red Deer River, between Berry Creek and Dead Lodge Cañon
           region: Alberta
-          formation: Dinosaur Park
+          group: Belly River
+          notes: Lambe (1902) gives the type only as "from Red Deer river", from collections made in the Belly River series between Berry Creek and Dead Lodge Cañon; no source read places it in the Oldman or the Dinosaur Park Formation.
           region_code: CA-AB
         type_specimen:
           specimen_id:
             - NMC 491
           specimen_type: holotype
           institution: Canadian Museum of Nature
-          material: Fairly complete skeleton with skull, including skin impressions; skull dorsal surface preserved with large squamoso-parietal frill intact; front of skull weathered away
-          completeness: complete
+          material: Part of the coalesced parietals of the frill.
+          completeness: fragmentary
         size:
           length_m:
             min: 4.3
@@ -44878,6 +44970,16 @@ genera:
         authors: Lambe, L. M.
         described: 1914
     references:
+      - id: lambe1902a
+        authors: Lambe, L. M.
+        year: 1902
+        title: New genera and species from the Belly River Series (mid-Cretaceous)
+        journal: Geological Survey of Canada Contributions to Canadian Palaeontology
+        volume: "3"
+        issue: "2"
+        pages: 25-81
+        doi: 10.5281/zenodo.3233762
+        notes: Names the species, as Monoclonius belli, on the coalesced parietals of a frill from the Red Deer River.
       - id: lambe1914b
         authors: Lambe, L. M.
         year: 1914
@@ -45434,6 +45536,15 @@ genera:
         authors: Bohlin, B.
         described: 1953
     references:
+      - id: dong2002a
+        authors: Dong, Z.
+        year: 2002
+        title: A new armored dinosaur (Ankylosauria) from Beipiao Basin, Liaoning Province, northeastern China
+        journal: Vertebrata PalAsiatica
+        volume: "40"
+        issue: "4"
+        pages: 276-285
+        notes: Places the Lower Cretaceous beds north of Jiayuguan in the Xinminpu Group.
       - id: bohlin1953a
         authors: Bohlin, B.
         year: 1953
@@ -45441,7 +45552,7 @@ genera:
         journal: Reports from the Scientific Expedition to the North-western Provinces of China under Leadership of Dr. Sven Hedin. The Sino-Swedish Expedition Publication
         volume: "37"
         pages: 1-113
-        notes: Erects Chiayüsaurus lacustris on an isolated tooth from the Lower Cretaceous of Hui-hui-p'u, Kansu (Gansu); original genus spelling later corrected to Chiayusaurus under ICZN.
+        notes: Erects Chiayüsaurus lacustris on an isolated tooth from the Chia-yü-kuan section, Kansu (Gansu); original genus spelling later corrected to Chiayusaurus under ICZN.
     taxonomy:
       - Life
       - Animalia
@@ -45803,9 +45914,6 @@ genera:
           locality: Aysén
           region: Aysén
           formation: Toqui
-          coordinates:
-            - -46.650002
-            - -72.383331
           region_code: CL-AI
         size:
           weight_kg:
@@ -46031,7 +46139,7 @@ genera:
     parent: Tyrannosauroidea
     pronunciation:
       phonetic: Jin-gang-kou
-    etymology: "Named after Ch'ing-kang-kou (Wade-Giles romanization; pinyin: Jin-gang-kou, meaning 'diamond port', Chinese: 金刚口), the village in Shandong Province, China where it was found, combined with Greek sauros meaning 'lizard'. Full meaning: 'Chingkangkou lizard'."
+    etymology: "Named after Ch'ing-kang-kou (Wade-Giles romanization; pinyin: Jin-gang-kou, meaning 'diamond port', Chinese: 金刚口), a village in Shandong Province, China, combined with Greek sauros meaning 'lizard'. Full meaning: 'Chingkangkou lizard'."
     description: Chingkankousaurus is a genus of theropod dinosaur containing the single species Chingkankousaurus fragilis. C. fragilis is known only from a single fossilized bone fragment (specimen number IVPP V 836) from the late Cretaceous Period Wangshi Series of Shandong province in eastern China.
     dispute:
       summary: |
@@ -47135,7 +47243,7 @@ genera:
           to_ma: 100.5
         location:
           country: AR
-          locality: 10 km east-northeast of Cerro Barcino
+          locality: Cerro Barcino, 50 km north of Los Altares
           region: Chubut
           formation: Cerro Barcino
           member: Bayo Overo
@@ -47908,7 +48016,7 @@ genera:
           to_ma: 72.2
         location:
           country: CA
-          locality: Little Sandhill Creek
+          locality: Dinosaur Provincial Park
           region: Alberta
           formation: Dinosaur Park
           region_code: CA-AB
@@ -48163,14 +48271,16 @@ genera:
           stage:
             - Coniacian
             - Santonian
+            - Campanian
           from_ma: 89.8
-          to_ma: 83.6
+          to_ma: 72.2
         location:
           country: US
           locality: Smoky Hill River
           region: Kansas
           formation: Niobrara Chalk
           member: Smoky Hill Chalk
+          notes: Carpenter and colleagues (1995) date the Smoky Hill Chalk along the Smoky Hill River in Logan County "near the Santonian–Campanian boundary"; Prieto-Márquez (2011) gives the holotype's beds as late Coniacian.
           region_code: US-KS
         size:
           length_m:
@@ -48193,6 +48303,28 @@ genera:
         authors: Marsh, O. C.
         described: 1890
     references:
+      - id: carpenter1995a
+        authors: Carpenter, K.; Dilkes, D.; Weishampel, D. B.
+        year: 1995
+        title: The Dinosaurs of the Niobrara Chalk Formation (Upper Cretaceous, Kansas)
+        journal: Journal of Vertebrate Paleontology
+        publisher: Informa UK Limited
+        volume: "15"
+        issue: "2"
+        pages: 275-297
+        doi: 10.1080/02724634.1995.10011230
+        notes: Gives the holotype as collected on the north side of the Smoky Hill River, 26 miles east of Fort Wallace, in the Smoky Hill Chalk Member.
+      - id: prieto-márquez2011b
+        authors: Prieto-Márquez, A.
+        year: 2011
+        title: "Revised diagnoses of Hadrosaurus foulkii Leidy, 1858 (the type genus and species of Hadrosauridae Cope, 1869) and Claosaurus agilis Marsh, 1872 (Dinosauria: Ornithopoda) from the Late Cretaceous of North America"
+        journal: Zootaxa
+        publisher: Magnolia Press
+        volume: "2765"
+        issue: "1"
+        pages: 61-68
+        doi: 10.11646/zootaxa.2765.1.6
+        notes: Gives the holotype's beds as "Late Coniacian in age according to Everhart and Ewell (2006)".
       - id: marsh1890a
         authors: Marsh, O. C.
         year: 1890
@@ -48279,7 +48411,7 @@ genera:
           country: AR
           region: Santa Cruz
           locality: Río Sehuen
-          notes: The erecting paper places the type teeth no more finely than the Cretaceous of Patagonia, in the Guaranitic formation, an obsolete name covering much of the Patagonian Upper Cretaceous. Huene (1929) fixes the locality from Carlos Ameghino's account, on the eastern slope of a southern tributary of the Río Sehuen, about 50 km east of Lago Viedma and 30 km south of the settlement of Mata Amarilla, in the area Ameghino called Par Aik; Powell (2003), citing Huene, prints "Western slope". Powell refers that locality only tentatively to the Cardiel Formation and gives its age as Late Cretaceous, reporting both Coniacian and Maastrichtian estimates for the unit. Successive workers have circumscribed the Upper Cretaceous units of this part of the Austral Basin differently — the Cerro Fortaleza Formation has also been treated as the Pari Aike, Chorrillo and Mata Amarilla formations — and no unqualified formation assignment has been published for these teeth.
+          notes: The erecting paper places the type teeth no more finely than the Cretaceous of Patagonia, in the Guaranitic formation, an obsolete name covering much of the Patagonian Upper Cretaceous. Huene (1929) fixes the locality from Carlos Ameghino's account, on the eastern slope of a southern tributary of the Río Sehuen, about 50 km east of Lago Viedma and 30 km south of the settlement of Mata Amarilla, in the area Ameghino called Par Aik; Powell (2003), citing Huene, prints "Western slope". Powell refers that locality only tentatively to the Cardiel Formation and gives its age as Late Cretaceous, reporting both Coniacian and Maastrichtian estimates for the unit. Successive workers have circumscribed the Upper Cretaceous units of this part of the Austral Basin differently — the Cerro Fortaleza Formation has also been treated as the Pari Aike, Chorrillo and Mata Amarilla formations — and none of the works cited here assigns these teeth to a formation without qualification.
           region_code: AR-Z
         type_specimen:
           specimen_type: syntype
@@ -48362,7 +48494,7 @@ genera:
     etymology: Named after Coahuila, the state in northern Mexico where the fossils were found, + Greek ceratops ('horned face'), meaning 'horned face from Coahuila'.
     pronunciation:
       phonetic: co-wah-WEE-lah-SEH-ruh-tops
-    description: Coahuilaceratops is a genus of chasmosaurine ceratopsian dinosaur that lived during the early Maastrichtian age of the Late Cretaceous epoch, about 71.5 to 70.5 million years ago in what is now northern Mexico. It contains a single species, Coahuilaceratops magnacuerna.
+    description: Coahuilaceratops is a genus of chasmosaurine ceratopsian dinosaur that lived during the Late Cretaceous in what is now northern Mexico. It contains a single species, Coahuilaceratops magnacuerna.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -48397,8 +48529,9 @@ genera:
           name:
             - Late Cretaceous
           stage:
+            - Campanian
             - Maastrichtian
-          from_ma: 72.2
+          from_ma: 83.6
           to_ma: 66
         location:
           country: MX
@@ -48406,6 +48539,7 @@ genera:
           region: Coahuila
           formation: Cerro del Pueblo
           part: middle
+          notes: Loewen and colleagues (2010) place the holotype at about the 230 m level of the "Campanian Cerro del Pueblo Formation" and estimate its age at about 72.0 Ma, within the formation's 72.5 to 71.4 Ma.
           region_code: MX-COA
           part_of: formation
         size:
@@ -48509,10 +48643,13 @@ genera:
           to_ma: 72.2
         location:
           country: MX
-          locality: 1 km north of Presa de San Antonio
+          locality: Presa San Antonio
           region: Coahuila
           formation: Cerro del Pueblo
           part: lower
+          coordinates:
+            - 25.459167
+            - -101.705
           region_code: MX-COA
           part_of: formation
         size:
@@ -48542,6 +48679,7 @@ genera:
         volume: "16"
         issue: "9"
         doi: 10.3390/d16090531
+        notes: Gives IGM 6685 as from Presa San Antonio, "25◦27′33′′ N and 101◦42′18′′ W (Serrano-Brañas, 2006; pers. com. Hernández-Rivera)".
     taxonomy:
       - Life
       - Animalia
@@ -50652,7 +50790,8 @@ genera:
           country: CA
           locality: near Steveville, Red Deer River
           region: Alberta
-          formation: Dinosaur Park
+          group: Belly River
+          notes: Brown (1914) gives the horizon as "Belly River Beds, 300 feet below top of formation", before the Oldman and Dinosaur Park formations were divided; no source read places the holotype in either.
           region_code: CA-AB
         type_specimen:
           specimen_id:
@@ -50688,8 +50827,9 @@ genera:
         location:
           country: CA
           region: Alberta
-          formation: Dinosaur Park
+          group: Belly River
           locality: 1.5 miles south of the river and 2 miles above Happy Jack ferry
+          notes: Parks (1923) gives the holotype from "the badlands of the Belly River formation", at "an elevation of 175 feet (aneroid) above the river"; no source read places it in the Oldman or the Dinosaur Park.
           region_code: CA-AB
         type_specimen:
           specimen_id:
@@ -50932,7 +51072,7 @@ genera:
         erected_in: seeley1874a
         type_specimen:
           specimen_id:
-            - SMC B.28814
+            - CAMSM B.28814
           specimen_type: holotype
           institution: Sedgwick Museum, University of Cambridge
           material: Incomplete neural arch of a dorsal vertebra.
@@ -51054,9 +51194,8 @@ genera:
           stage:
             - Albian
             - Cenomanian
-            - Turonian
           from_ma: 113.2
-          to_ma: 89.8
+          to_ma: 93.9
         location:
           country: CN
           region: Liaoning
@@ -51167,12 +51306,13 @@ genera:
         type_species: true
         period:
           name:
+            - Early Cretaceous
             - Late Cretaceous
           stage:
+            - Albian
             - Cenomanian
-            - Turonian
-          from_ma: 100.5
-          to_ma: 89.8
+          from_ma: 113.2
+          to_ma: 93.9
         location:
           country: CN
           locality: Shuangmiao village, Xiafu Township, Beipiao City
@@ -147549,6 +147689,7 @@ genera:
           locality: Iguidi
           region: Agadez
           formation: Echkar
+          notes: Sereno and colleagues (2026), after revisiting the type sections of the Echkar and Farak, conclude that the Iguidi (In Abangharit) area exposes the Farak Formation.
           region_code: NE-1
         type_specimen:
           specimen_id:
@@ -147573,6 +147714,15 @@ genera:
     pronunciation:
       phonetic: roo-gops
     references:
+      - id: sereno2026a
+        authors: Sereno, P. C.; Vidal, D.; Myhrvold, N. P.; Johnson-Ransom, E.; Ciudad Real, M.; Baumgart, S. L.; Sánchez Fontela, N.; Green, T. L.; Saitta, E. T.; Adamou, B.; Bop, L. L.; Keillor, T. M.; Fitzgerald, E. C.; Dutheil, D. B.; Laroche, R. A. S.; Demers-Potvin, A. V.; Simarro, Á.; Gascó-Lluna, F.; Lázaro, A.; Gamonal, A.; Beightol, C. V.; Reneleau, V.; Vautrin, R.; Bertozzo, F.; Granados, A.; Kinney-Broderick, G.; Mallon, J. C.; Lindoso, R. M.; Ramezani, J.
+        year: 2026
+        title: Scimitar-crested Spinosaurus species from the Sahara caps stepwise spinosaurid radiation
+        journal: Science
+        volume: "391"
+        pages: eadx5486
+        doi: 10.1126/science.adx5486
+        notes: Concludes that "both the Jenguebi and Iguidi (In Abangharit) fossil areas represent exposures of the Farak Formation".
       - id: sereno2004a
         authors: Sereno, P. C.; Wilson, J. A.; Conrad, J. L.
         year: 2004
@@ -153577,7 +153727,7 @@ genera:
           to_ma: 168.2
         location:
           country: CN
-          locality: Quarry 1, Laochangjing
+          locality: Quarry 1, Laochangqing
           region: Yunnan
           formation: Chuanjie
           region_code: CN-YN
