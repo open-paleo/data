@@ -1,5 +1,21 @@
 # *Leaellynasaura*
 
+## What stages does *Leaellynasaura* take?
+
+*2026-10-11*
+
+**Conclusion.** Aptian and Albian. The describing paper dates the Otway Basin coastal sites, Dinosaur Cove among them, "latest Aptian–early Albian"; the record's Albian alone dropped its Aptian. Herne and colleagues (2019) give two values that contradict each other and add nothing outside that span. Governs `stage: [Aptian, Albian]` on [*Leaellynasaura amicagraphica*](../../../genera/L/Leaellynasaura.yml).
+
+**Evidence.**
+- rich1989a: "Wagstaff & McEwen Mason (this volume, p. 54) have palynologically dated most of the tetrapod-bearing sites in the Otway and Gippsland Basins. Accordingly, the Otway Basin coastal sites are latest Aptian–early Albian".
+- herne2019a, p. 575: *Leaellynasaura amicagraphica* is "from the younger, early Albian Eumeralla Formation"; p. 577, Table 5: "Eumeralla Formation, Otway Group, Otway Basin (lower Aptian)", printed for every Dinosaur Cove taxon.
+
+**Ruled out.**
+- *Albian alone.* No source read gives it for the horizon.
+- *Lower Aptian, from Herne and colleagues' Table 5.* Their own text says early Albian.
+
+**Open.** Nothing.
+
 ## Which formation is the *Leaellynasaura* holotype from, when its describing paper names only the Otway Group?
 
 *2026-08-28*

@@ -1,5 +1,24 @@
 # *Loricosaurus*
 
+## Which numbers make up the *Loricosaurus* syntype series?
+
+*2026-10-11*
+
+**Conclusion.** The twenty-six plates Huene (1929) lists by number. Three of the five numbers the record also carried, C.S. 1222 to 1224, are foot phalanges Huene describes elsewhere in the same paper; C.S. 1225 appears in no source read, and C.S. 1227 only in a later figure caption that credits it to Huene. Governs `type_specimen.specimen_id` (twenty-six ids) on [*Loricosaurus scutatus*](../../../genera/L/Loricosaurus.yml).
+
+**Evidence.**
+- huene1929a, *Loricosaurus scutatus*: "Twenty-six cutaneous ossifications and skin plates have been found at Cinco Saltos. They are the following numbers", then 1210, 1213–1215, 1218–1221, 1226, 1228–1232, 1235, 1237, 1470–1477, 2006 and 2010 (translated).
+- huene1929a, on the titanosaur foot: "there are only three phalanges of the middle digits, C. S. 1222 (plate 12, 14), 1223 (plate 12, 13), 1224 (plate 12, 15)" (translated).
+- otero2010a: "Some pedal phalanges (MLP−CS 1202, 1204, 1206, 1222, 1223, 1224) were erroneously drawn as belonging to the manus by Huene (1929: pl. 12: 13–15)".
+- d'emic2009a, Figure 7 caption: "V, C.S. 1227 (Huene, 1929)", among the osteoderms.
+
+**Ruled out.**
+- *C.S. 1222, 1223 and 1224.* They are limb bones, not armor.
+- *C.S. 1225.* No source read gives it.
+- *C.S. 1227.* The designating paper does not list it.
+
+**Open.** Which of Huene's plates D'Emic and colleagues figure as C.S. 1227.
+
 ## Are the Cinco Saltos syntypes from the Anacleto or the Allen Formation?
 
 *2026-08-29*
@@ -19,6 +38,8 @@
 ## References
 
 - `huene1929a`: Huene, F. V. (1929). Los saurisquios y ornitisquios del Cretáceo Argentino [The Saurischians and Ornithischians of the Argentine Cretaceous]. *Anales del Museo de La Plata, series 2* 3: 1-196.
+- `otero2010a`: Otero, A. (2010). The appendicular skeleton of Neuquensaurus, a Late Cretaceous saltasaurine sauropod from Patagonia, Argentina. *Acta Palaeontologica Polonica* 55(3): 399-426.
+- `d'emic2009a`: D'Emic, M. D.; Wilson, J. A.; Chatterjee, S. (2009). The titanosaur (Dinosauria: Sauropoda) osteoderm record: review and first definitive specimen from India. *Journal of Vertebrate Paleontology* 29(1): 165-177. doi:10.1671/039.029.0131
 - `leanza2004a`: Leanza, H. A.; Apesteguía, S.; Novas, F. E.; de la Fuente, M. S. (2004). Cretaceous terrestrial beds from the Neuquén Basin (Argentina) and their tetrapod assemblages. *Cretaceous Research* 25(1): 61-87.
 - `santucci2022a`: Santucci, R. M.; Filippi, L. S. (2022). Last titans: Titanosaurs from the Campanian–Maastrichtian age. In *South American Sauropodomorph Dinosaurs: Record, Diversity and Evolution*, pp. 341-391. Springer International Publishing. doi:10.1007/978-3-030-95959-3_10
 - `mcintosh1990a`: McIntosh, J. S. (1990). Sauropoda. In *The Dinosauria (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 345-401. University of California Press, Berkeley.

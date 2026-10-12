@@ -1,5 +1,21 @@
 # *Lourinhasaurus*
 
+## Does the *Lourinhasaurus* lectotype include MG 4980?
+
+*2026-10-11*
+
+**Conclusion.** Yes. The designating paper lists "4979-80", and Tschopp and colleagues (2015) repeat it; Mocho and colleagues (2014), whose list the record follows, give MG 4979 for both the radius and the ulna and never MG 4980, which reads as a slip for one of the two. The lectotype is thirty-one numbers. Governs `type_specimen.specimen_id` on [*Lourinhasaurus alenquerensis*](../../../genera/L/Lourinhasaurus.yml). Supersedes the count of thirty in the 2026-08-01 entry.
+
+**Evidence.**
+- antunes2003a, p. 82: "a lectotype is here determined as *Lourinhasaurus alenquerensis,* the specimen from Moinho do Carmo (MIGM 4956-7, 4970, 4975, 4979-80, 4983-4 and 5780-1) … Despite all the different numbers, all the bones are from only one individual."
+- tschopp2015a, p. 7, Table 2: "MIGM 2, 4931, 4956-57, 4970, 4975, 4979-80, 4983-84, 5780-81, 30370-88 (lectotype)".
+- mocho2014a, p. 879: "left radius (MG4979), left ulna (MG4979)"; Figure 16: "Left radius and ulna (MG4979)".
+
+**Ruled out.**
+- *Thirty numbers without MG 4980.* It drops a number the designating paper lists.
+
+**Open.** Which of the radius and ulna is MG 4980.
+
 ## Does the Lourinhã Formation in the erecting paper apply to the *Lourinhasaurus* lectotype?
 
 *2026-08-29*
@@ -35,9 +51,10 @@
 
 ## References
 
-- `dantas1998a`: Dantas, P.; Sanz, J. L.; da Silva, C. M.; Ortega, F.; dos Santos, V. F.; Cachão, M. (1998). Lourinhasaurus n. gen. Novo dinossáurio saurópode do Juássico superior (Kimeridgiano superior-Titoniano inferior) de Portugal [Lourinhasaurus n. gen. New sauropod dinosaur from the Upper Jurassic (upper Kimmeridgian-lower Tithonian) of Portugal]. *Actas do V Congresso Nacional de Geologia (Resumos Alargados). Comunicações del Instituto Geológico e Mineiro* 84(1): A91-A94.
-- `mannion2011a`: Mannion, P. D.; Upchurch, P.; Mateus, O.; Barnes, R. N.; Jones, M. E. H. (2011). New information on the anatomy and systematic position of Dinheirosaurus lourinhanensis (Sauropoda: Diplodocoidea) from the Late Jurassic of Portugal, with a review of European diplodocoids. *Journal of Systematic Palaeontology* 10(3): 521-551. doi:10.1080/14772019.2011.595432
+- `antunes2003a`: Antunes, M. T.; Mateus, O. (2003). Dinosaurs of Portugal. *Comptes Rendus Palevol* 2(1): 77-95. doi:10.1016/s1631-0683(03)00003-4
 - `tschopp2015a`: Tschopp, E.; Mateus, O.; Benson, R. B. J. (2015). A specimen-level phylogenetic analysis and taxonomic revision of Diplodocidae (Dinosauria, Sauropoda). *PeerJ* 3: e857. doi:10.7717/peerj.857
 - `mocho2014a`: Mocho, P.; Royo-Torres, R.; Ortega, F. (2014). Phylogenetic reassessment of Lourinhasaurus alenquerensis, a basal Macronaria (Sauropoda) from the Upper Jurassic of Portugal. *Zoological Journal of the Linnean Society* 170(4): 875-916. doi:10.1111/zoj.12113
+- `dantas1998a`: Dantas, P.; Sanz, J. L.; da Silva, C. M.; Ortega, F.; dos Santos, V. F.; Cachão, M. (1998). Lourinhasaurus n. gen. Novo dinossáurio saurópode do Juássico superior (Kimeridgiano superior-Titoniano inferior) de Portugal [Lourinhasaurus n. gen. New sauropod dinosaur from the Upper Jurassic (upper Kimmeridgian-lower Tithonian) of Portugal]. *Actas do V Congresso Nacional de Geologia (Resumos Alargados). Comunicações del Instituto Geológico e Mineiro* 84(1): A91-A94.
+- `mannion2011a`: Mannion, P. D.; Upchurch, P.; Mateus, O.; Barnes, R. N.; Jones, M. E. H. (2011). New information on the anatomy and systematic position of Dinheirosaurus lourinhanensis (Sauropoda: Diplodocoidea) from the Late Jurassic of Portugal, with a review of European diplodocoids. *Journal of Systematic Palaeontology* 10(3): 521-551. doi:10.1080/14772019.2011.595432
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.
 - `molina-pérez2020a`: Molina-Pérez, R.; Larramendi, A. (2020). Dinosaur Facts and Figures: The Sauropods and Other Sauropodomorphs. Princeton University Press.
