@@ -1,5 +1,19 @@
 # *Garrigatitan*
 
+## What is the *Garrigatitan* holotype's number?
+
+*2026-10-11*
+
+**Conclusion.** MMS/VBN.09.170, as the describing paper prints it at every mention. Governs `type_specimen.specimen_id` on [*Garrigatitan meridionalis*](../../../genera/G/Garrigatitan.yml).
+
+**Evidence.**
+- díezdíaz2021a, Fig. 3: "Sacrum (MMS/VBN.09.170), holotype of the titanosaur *Garrigatitan meridionalis* from the Late Cretaceous Velaux-La Bastide Neuve site (France)".
+
+**Ruled out.**
+- *MMS / VBN.09.17.* No source read prints it; it drops the final digit.
+
+**Open.** Nothing.
+
 ## Which La Bastide Neuve is the *Garrigatitan* type locality?
 
 *2026-08-24*
