@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-10-12T01:50:53.415Z
+  built_at: 2026-10-12T01:53:09.887Z
   clade_count: 188
   genus_count: 1425
   license: CC-BY-4.0
@@ -130003,15 +130003,15 @@ genera:
           stage:
             - Oxfordian
             - Kimmeridgian
-            - Tithonian
           from_ma: 161.5
-          to_ma: 143.1
+          to_ma: 149.2
         location:
           country: AR
           locality: Caja de Pandora
           region: Chubut
           formation: Cañadón Calcáreo
           part: lower
+          notes: Rauhut and Pol (2017) refer the beds to "the basal part of the Cañadón Calcáreo Formation, latest Oxfordian to Kimmeridgian", close to a tuff dated 157 Ma at nearby Puesto Almada; the bones were surface finds whose exact level was not identified.
           region_code: AR-U
           part_of: formation
         erected_in: rauhut2017a
@@ -130489,6 +130489,7 @@ genera:
         period:
           name:
             - Late Triassic
+            - Early Jurassic
           stage:
             - Rhaetian
           from_ma: 205.7
@@ -130500,6 +130501,7 @@ genera:
           coordinates:
             - 51.45829
             - -3.37235
+          notes: Galton and colleagues (2007) give the holotype from "A Rhaetian (Upper Triassic) or Lower Jurassic fissure fill", noting the Welsh fissure may be Early Jurassic rather than Late Triassic.
           region_code: GB-VGL
         type_specimen:
           specimen_id:
@@ -130964,7 +130966,9 @@ genera:
           locality: Bushmans River, Woodbury Farm
           region: Eastern Cape
           formation: Kirkwood
+          part: upper
           region_code: ZA-EC
+          part_of: formation
         size:
           hip_height_m:
             min: 2
@@ -130987,6 +130991,16 @@ genera:
         authors: Nopcsa, B. F.
         described: 1929
     references:
+      - id: raven2018a
+        authors: Raven, T. J.; Maidment, S. C. R.
+        year: 2018
+        title: The systematic position of the enigmatic thyreophoran dinosaur Paranthodon africanus, and the use of basal exemplifiers in phylogenetic analysis
+        journal: PeerJ
+        publisher: PeerJ
+        volume: "6"
+        pages: e4529
+        doi: 10.7717/peerj.4529
+        notes: Gives the occurrence as the "Upper Kirkwood Formation" at Bushmans River.
       - id: broom1912a
         authors: Broom, R.
         year: 1912
@@ -131685,6 +131699,25 @@ genera:
         authors: Sternberg, C. M.
         described: 1937
     references:
+      - id: larson2010a
+        authors: Larson, D. W.; Brinkman, D. B.; Bell, P. R.
+        year: 2010
+        title: Faunal assemblages from the upper Horseshoe Canyon Formation, an early Maastrichtian cool-climate assemblage from Alberta, with special reference to the Albertosaurus sarcophagus bonebed
+        journal: Canadian Journal of Earth Sciences
+        volume: "47"
+        issue: "9"
+        notes: Places the type in unit 4 of the upper Horseshoe Canyon Formation.
+      - id: eberth2012a
+        authors: Eberth, D. A.; Braman, D. R.
+        year: 2012
+        title: A revised stratigraphy and depositional history for the Horseshoe Canyon Formation (Upper Cretaceous), southern Alberta plains
+        journal: Canadian Journal of Earth Sciences
+        publisher: Canadian Science Publishing
+        volume: "49"
+        issue: "9"
+        pages: 1053-1086
+        doi: 10.1139/e2012-035
+        notes: Defines the Tolman Member as the combined units 3 and 4 of the Horseshoe Canyon Formation.
       - id: parks1926b
         authors: Parks, W. A.
         year: 1926
@@ -132687,6 +132720,15 @@ genera:
         authors: Lee, Y. N.
         described: 1996
     references:
+      - id: carpenter1998c
+        authors: Carpenter, K.; Kirkland, J. I.
+        year: 1998
+        title: Review of Lower and Middle Cretaceous ankylosaurs from North America
+        book: Lower and Middle Cretaceous Terrestrial Ecosystems (Lucas, S. G.; Kirkland, J. I.; Estep, J. W., eds.)
+        series: New Mexico Museum of Natural History and Science Bulletin
+        volume: "14"
+        pages: 249-270
+        notes: Gives the type horizon and locality as "Paw Paw Formation (late Albian ...), ~32°52'N, ~97°18'W, Tarrant County, Texas".
       - id: lee1996a
         authors: Lee, Y. N.
         year: 1996
@@ -133084,6 +133126,14 @@ genera:
         authors: Sereno, P. C.
         described: 2012
     references:
+      - id: kitching1984a
+        authors: Kitching, J. W.; Raath, M. A.
+        year: 1984
+        title: Fossils from the Elliot and Clarens formations (Karoo Sequence) of the northeastern Cape, Orange Free State and Lesotho, and a suggested biozonation based on tetrapods
+        journal: Palaeontologia africana
+        volume: "25"
+        pages: 111-125
+        notes: Lists "Voisana" (Voyizane, Foisani) at 30°34'S 27°26'E, the table Sereno (2012) cites for the type locality.
       - id: sereno2012a
         authors: Sereno, P. C.
         year: 2012
@@ -133269,6 +133319,7 @@ genera:
           locality: Las Hoyas
           region: Cuenca
           formation: Calizas de La Huérguina
+          notes: Pérez-Moreno and colleagues (1994) give the Las Hoyas horizon as "Upper Hauterivian–Lower Barremian"; Ortega and colleagues (2010), two of whose authors wrote the 1994 paper, date the same site "Upper Barremian".
           region_code: ES-CU
         type_specimen:
           specimen_id:
@@ -133291,6 +133342,17 @@ genera:
         authors: Pérez-Moreno, B. P.; Luis Sanz, J.; Buscalioni, A. D.; Moratalla, J. J.; Ortega, F.; Rasskin-Gutman, D.
         described: 1994
     references:
+      - id: ortega2010a
+        authors: Ortega, F.; Escaso, F.; Sanz, J. L.
+        year: 2010
+        title: A bizarre, humped Carcharodontosauria (Theropoda) from the Lower Cretaceous of Spain
+        journal: Nature
+        publisher: Springer Science and Business Media LLC
+        volume: "467"
+        issue: "7312"
+        pages: 203-206
+        doi: 10.1038/nature09181
+        notes: Dates the Las Hoyas site "Upper Barremian".
       - id: pérez-moreno1994a
         authors: Pérez-Moreno, B. P.; Luis Sanz, J.; Buscalioni, A. D.; Moratalla, J. J.; Ortega, F.; Rasskin-Gutman, D.
         year: 1994
@@ -133866,7 +133928,7 @@ genera:
         id: "4531630"
     species:
       - name: Pentaceratops sternbergii
-        etymology: Named for Charles Hazelius Sternberg, who discovered the holotype skull in the Kirtland Formation of New Mexico in 1922.
+        etymology: Named for Charles Hazelius Sternberg, who discovered the holotype skull in the Fruitland Formation of New Mexico in 1922.
         status: valid
         type_species: true
         period:
@@ -135135,7 +135197,7 @@ genera:
         volume: "72"
         issue: "3"
         pages: 247-289
-        notes: In French. Full descriptive monograph complementing the brief Bonaparte (1979) announcement; covers Piatnitzkysaurus floresi material in detail.
+        notes: In French. Monograph on the carnosaurs and cetiosaurid sauropods of Cerro Cóndor, following the brief Bonaparte (1979) announcement.
       - id: cúneo2013a
         authors: Cúneo, R.; Ramezani, J.; Scasso, R.; Pol, D.; Escapa, I.; Zavattieri, A. M.; Bowring, S. A.
         year: 2013
@@ -136072,7 +136134,7 @@ genera:
             max: 4000
         type_specimen:
           specimen_id:
-            - SMNS 132000
+            - SMNS 13200
           specimen_type: holotype
           institution: Staatliches Museum für Naturkunde
           material: Complete skeleton 5.75 m long, including well-preserved skull, neck with 10 vertebrae, forelimbs with grasping hands, trunk, hind limbs, and broad tail. Found in natural articulation in rock.
@@ -136919,7 +136981,7 @@ genera:
           to_ma: 192.9
         location:
           country: US
-          locality: near Mount Holyoke College, Connecticut Valley
+          locality: near Mount Holyoke College
           region: Massachusetts
           formation: Portland
           notes: Talbot (1911) found the holotype in a boulder of sandstone that a glacier "carried two or three miles, possibly, and deposited not far from the site of Mount Holyoke College", so the locality is where the boulder came to rest rather than where the animal was buried, and the formation is an inference about the outcrop the ice quarried it from.
@@ -138842,6 +138904,7 @@ genera:
           locality: Minchinhampton reservoir
           region: Gloucestershire
           group: Great Oolite
+          notes: Huene (1926) and Rauhut and colleagues (2010) give the horizon only as the Great Oolite of Minchinhampton. Carrano and colleagues (2012) assign it to the White Limestone Formation and Naish and Cau (2022) to the Taynton Limestone Formation, neither stating a basis.
           region_code: GB-GLS
         type_specimen:
           specimen_id:
@@ -138867,6 +138930,26 @@ genera:
         authors: Huene, F. V.
         described: 1926
     references:
+      - id: rauhut2010a
+        authors: Rauhut, O. W. M.; Milner, A. C.; Moore-Fay, S.
+        year: 2010
+        title: Cranial osteology and phylogenetic position of the theropod dinosaur Proceratosaurus bradleyi (Woodward, 1910) from the Middle Jurassic of England
+        journal: Zoological Journal of the Linnean Society
+        volume: "158"
+        issue: "1"
+        pages: 155-195
+        doi: 10.1111/j.1096-3642.2009.00591.x
+        notes: Redescribes the holotype and gives the horizon as "Great Oolite, Late Bathonian, Middle Jurassic".
+      - id: naish2022a
+        authors: Naish, D.; Cau, A.
+        year: 2022
+        title: The osteology and affinities of Eotyrannus lengi, a tyrannosauroid theropod from the Wealden Supergroup of southern England
+        journal: PeerJ
+        publisher: PeerJ
+        volume: "10"
+        pages: e12727
+        doi: 10.7717/peerj.12727
+        notes: Places the taxon in "the Bathonian Taynton Limestone Formation", citing Rauhut and colleagues (2010).
       - id: huene1926a
         authors: Huene, F. V.
         year: 1926
@@ -140832,15 +140915,26 @@ genera:
           region_code: US-MT
         type_specimen:
           specimen_id:
-            - AMNH 3791
+            - AMNH 3971
           specimen_type: holotype
           institution: American Museum of Natural History
           material: Greater part of skeleton; right half of pelvis nearly completely preserved; long bones solid.
           completeness: partial
+          notes: Cope (1889) gives no number. Lull and Wright (1942) give the holotype as AMNH 3971, as does Brett-Surman's (1989) specimen table; his text's "AMNH 3791" transposes the digits.
         erected_in: cope1889a
         authors: Cope, E. D.
         described: 1889
     references:
+      - id: lull1942a
+        authors: Lull, R. S.; Wright, N. E.
+        year: 1942
+        title: Hadrosaurian Dinosaurs of North America
+        journal: Geological Society of America Special Papers
+        publisher: Geological Society of America
+        volume: "40"
+        pages: 1-272
+        doi: 10.1130/spe40-p1
+        notes: Gives the holotype as "No. 3971 A.M.N.H. Greater part of skeleton, without skull or teeth".
       - id: cope1889a
         authors: Cope, E. D.
         year: 1889
@@ -140932,15 +141026,16 @@ genera:
           name:
             - Late Triassic
           stage:
-            - Rhaetian
-          from_ma: 205.7
-          to_ma: 201.4
+            - Norian
+          from_ma: 227.3
+          to_ma: 205.7
         location:
           country: DE
           region: Saxony-Anhalt
           locality: Baerecke-Limpricht clay pit
           formation: Arnstadt
           part: upper
+          notes: 'Sues and Schoch (2025) give the type horizon as the top of the Arnstadt Formation, "Norian: Sevatian". Huene (1932) had placed it in the "uppermost (Rhaetic) layers", but Rauhut and Hungerbühler (2000) argue that the holotype, found inside a turtle carapace, came from the lower claystone with the turtle remains, "of Late Norian age, rather than Rhaetian".'
           region_code: DE-ST
           part_of: formation
         type_specimen:
@@ -140954,6 +141049,26 @@ genera:
         authors: Jaekel, O.
         described: 1914
     references:
+      - id: sues2025a
+        authors: Sues, H. D.; Schoch, R. R.
+        year: 2025
+        title: Synopsis of the Triassic reptiles from Germany
+        journal: Fossil Record
+        publisher: Pensoft Publishers
+        volume: "28"
+        issue: "2"
+        pages: 411-483
+        doi: 10.3897/fr.28.164405
+        notes: 'Gives the type horizon as "Top of Arnstadt Formation, Middle Keuper Subgroup. Age: Late Triassic (Norian: Sevatian)".'
+      - id: huene1932a
+        authors: Huene, F. V.
+        year: 1932
+        title: Die fossile Reptil-Ordnung Saurischia, ihre Entwicklung und Geschichte [The fossil reptile order Saurischia, their development and history]
+        journal: Monographien zur Geologie und Palaeontologie, serie 1
+        volume: "4"
+        issue: 1-2
+        pages: 1-361
+        notes: Places the holotype in the "uppermost (Rhaetic) layers near Halberstadt".
       - id: jaekel1914a
         authors: Jaekel, O.
         year: 1914
