@@ -138,15 +138,17 @@ async function ensureLabel(github, repo)
 }
 
 /**
- * Finds an open paper-watch issue with a matching title (so a same-day
- * re-run updates the existing issue instead of opening a duplicate).
+ * Finds the open paper-watch issue for a date, so a same-day re-run updates
+ * it instead of opening a duplicate. Matches on the title's date prefix: the
+ * paper count that follows it changes when the re-run finds more papers.
  *
  * @param {object} github - Octokit instance.
  * @param {{ owner: string, repo: string }} repo - Repository coordinates.
- * @param {string} title - The candidate issue title.
+ * @param {string} titlePrefix - The title up to the paper count,
+ *     "Paper watch — <date> (".
  * @returns {Promise<number | null>} The issue number, or null if none.
  */
-async function findExistingIssue(github, repo, title)
+async function findExistingIssue(github, repo, titlePrefix)
 {
     const issues = await github.paginate(github.rest.issues.listForRepo, {
         owner: repo.owner,
@@ -156,7 +158,7 @@ async function findExistingIssue(github, repo, title)
         per_page: 100,
     });
 
-    const existing = issues.find((issue) => issue.title === title);
+    const existing = issues.find((issue) => issue.title.startsWith(titlePrefix));
 
     return existing ? existing.number : null;
 }
@@ -191,7 +193,8 @@ async function run({ github, context, jsonPath })
     // evening-Pacific runs past midnight UTC, filing the issue off-by-one.
     // en-CA yields ISO yyyy-mm-dd; timeZone handles DST automatically.
     const date = new Date().toLocaleDateString("en-CA", { timeZone: "America/Los_Angeles" });
-    const title = `Paper watch — ${date} (${hits.length} new paper${hits.length === 1 ? "" : "s"})`;
+    const titlePrefix = `Paper watch — ${date} (`;
+    const title = `${titlePrefix}${hits.length} new paper${hits.length === 1 ? "" : "s"})`;
 
     // Two notification paths, both optional and configured via repo variables
     // so nothing is hardcoded. Assignees must be individual users (GitHub does
@@ -207,7 +210,7 @@ async function run({ github, context, jsonPath })
 
     await ensureLabel(github, repo);
 
-    const existingNumber = await findExistingIssue(github, repo, title);
+    const existingNumber = await findExistingIssue(github, repo, titlePrefix);
 
     if (existingNumber)
     {
@@ -215,6 +218,7 @@ async function run({ github, context, jsonPath })
             owner: repo.owner,
             repo: repo.repo,
             issue_number: existingNumber,
+            title,
             body,
         });
         console.log(`Updated paper-watch issue #${existingNumber} (${hits.length} papers).`);
