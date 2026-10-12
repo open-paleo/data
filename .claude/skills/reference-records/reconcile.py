@@ -32,12 +32,11 @@ import glob
 import json
 import os
 import re
-import unicodedata
 
 import yaml
 
 from _formations import loadVariants
-from _paths import audit_dir, data_dir
+from _paths import audit_dir, data_dir, fold_letters
 from skill_schema import stage_order, stage_table  # on the path _paths adds
 
 DATA = data_dir()
@@ -58,8 +57,7 @@ def normalizeFormation(name):
 
     # Fold accents first: the reference works print "Tiouraren" where we print
     # "Tiourarén", and that is a spelling variant, not a different formation.
-    decomposed = unicodedata.normalize("NFKD", str(name))
-    cleaned = "".join(ch for ch in decomposed if not unicodedata.combining(ch)).lower()
+    cleaned = fold_letters(name)
 
     # Expand the abbreviations the reference works use, before rank words are
     # dropped, so "Cedar Mt. Fm." and "Cedar Mountain Formation" converge.

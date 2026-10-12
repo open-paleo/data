@@ -16,6 +16,7 @@ import {
 } from "../utilities.ts";
 import { checkError, checkWarning } from "./report.ts";
 import type { ValidationContext } from "./context.ts";
+import { walkStrings } from "./walk.ts";
 
 /**
  * The "Reference integrity" check.
@@ -1038,6 +1039,8 @@ export function checkUncitedNarrativeCitations(context: ValidationContext): void
         registryEntries,
     } = context;
 
+    const narrativeSkippedKeys = new Set(["id", "history", "beds"]);
+
     /**
      * Collects the prose strings of a record, skipping reference ids, the history
      * of edits (which often records a source's removal), and nested beds, which
@@ -1048,27 +1051,10 @@ export function checkUncitedNarrativeCitations(context: ValidationContext): void
      */
     function collectProse(node: unknown, found: Array<string>): void
     {
-        if (typeof node === "string")
+        walkStrings(node, (text) =>
         {
-            found.push(node.replace(/\s+/g, " "));
-        }
-        else if (Array.isArray(node))
-        {
-            for (const item of node)
-            {
-                collectProse(item, found);
-            }
-        }
-        else if (node && typeof node === "object")
-        {
-            for (const [key, value] of Object.entries(node))
-            {
-                if (key !== "id" && key !== "history" && key !== "beds")
-                {
-                    collectProse(value, found);
-                }
-            }
-        }
+            found.push(text.replace(/\s+/g, " "));
+        }, { skipKeys: narrativeSkippedKeys });
     }
 
     /**

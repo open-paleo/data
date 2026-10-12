@@ -5,6 +5,7 @@ import * as url from "node:url";
 import type { Reference } from "./types.ts";
 import {
     findYamlFiles,
+    foldLetters,
     normalizeDoi,
     parseYaml,
     sleep,
@@ -125,15 +126,14 @@ type CacheEntry = {
  */
 function normalizeTitle(title: string): string
 {
-    return title
+    const decoded = title
         .replace(/<[^>]+>/g, " ")
         .replace(/&amp;/g, "&")
         .replace(/&lt;/g, "<")
         .replace(/&gt;/g, ">")
-        .replace(/&[a-z]+;/gi, " ")
-        .normalize("NFKD")
-        .replace(/[̀-ͯ]/g, "")
-        .toLowerCase()
+        .replace(/&[a-z]+;/gi, " ");
+
+    return foldLetters(decoded)
         .replace(/[^a-z0-9]+/g, " ")
         .trim();
 }

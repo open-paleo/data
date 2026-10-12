@@ -49,20 +49,36 @@ export function escapeRegExp(value: string): string
 }
 
 /**
- * Latin letters with no canonical NFD decomposition to a base ASCII letter.
- * Folding them keeps every reference key inside the 26 `a`–`z` buckets instead
- * of spawning a stray directory for a Polish `ł`, Nordic `ø`, or similar.
+ * Latin letters with no canonical decomposition to base ASCII letters, with
+ * the letters each is written as when folded.
  */
 const nonDecomposingLetterFolds: Record<string, string> = {
-    "ł": "l", "ø": "o", "đ": "d", "ð": "d", "þ": "t", "ß": "s",
-    "ı": "i", "ħ": "h", "ĸ": "k", "ŋ": "n", "œ": "o", "æ": "a",
+    "ł": "l", "ø": "o", "đ": "d", "ð": "d", "þ": "th", "ß": "ss",
+    "ı": "i", "ħ": "h", "ĸ": "k", "ŋ": "n", "œ": "oe", "æ": "ae",
 };
 
 /**
- * Returns the store directory bucket for a reference key: the folded, lowercase
- * first character. Diacritics are stripped via NFD (so `ősi2010a` buckets to
- * `o`) and the non-decomposing Latin letters above fold to their base letter,
- * so every key lands in one of the 26 `a`–`z` buckets — mirroring the
+ * Folds text for comparison and filing: compatibility-decomposed, accents
+ * dropped, lowercased, and the Latin letters with no decomposition (a Polish
+ * `ł`, a Nordic `ø`, a German `ß`) written as their base letters. Callers
+ * filter what is left to the characters they compare.
+ *
+ * @param text - The text to fold.
+ * @returns The folded text.
+ */
+export function foldLetters(text: string): string
+{
+    return text
+        .normalize("NFKD")
+        .replace(/\p{M}/gu, "")
+        .toLowerCase()
+        .replace(/[łøđðþßıħĸŋœæ]/g, (letter) => nonDecomposingLetterFolds[letter]);
+}
+
+/**
+ * Returns the store directory bucket for a reference key: the first letter of
+ * the folded key, so `ősi2010a` buckets to `o` and `łuczak2000a` to `l`, and
+ * every key lands in one of the 26 `a`–`z` buckets, mirroring the
  * `genera/<Letter>/` layout. Anything that still does not fold to `a`–`z`
  * (e.g. a non-Latin script) falls back to `_`, keeping the mapping total and
  * deterministic.
@@ -72,10 +88,9 @@ const nonDecomposingLetterFolds: Record<string, string> = {
  */
 export function referenceBucket(key: string): string
 {
-    const first = key.normalize("NFD").replace(/[̀-ͯ]/g, "")[0]?.toLowerCase() ?? "";
-    const folded = nonDecomposingLetterFolds[first] ?? first;
+    const first = foldLetters(key)[0] ?? "";
 
-    return /^[a-z]$/.test(folded) ? folded : "_";
+    return /^[a-z]$/.test(first) ? first : "_";
 }
 
 /**
@@ -315,6 +330,37 @@ export function collectAllKeys(node: TreeNode): Array<string>
     }
 
     return keys;
+}
+
+/**
+ * Searches the tree for a target clade and returns the path from root.
+ *
+ * @param tree - The tree node to search within.
+ * @param target - The clade name to find.
+ * @param path - Accumulated path (used internally during recursion).
+ * @returns The path as an array of clade names, or null if not found.
+ */
+export function findTreePath(tree: TreeNode, target: string, accumulated = new Array<string>()): Array<string> | null
+{
+    for (const [key, children] of Object.entries(tree))
+    {
+        const path = [...accumulated, key];
+
+        if (key === target)
+        {
+            return path;
+        }
+        else if (children && typeof children === "object" && Object.keys(children).length > 0)
+        {
+            const found = findTreePath(children as TreeNode, target, path);
+            if (found)
+            {
+                return found;
+            }
+        }
+    }
+
+    return null;
 }
 
 /**
@@ -1006,13 +1052,7 @@ export function narrativeCitations(text: string): Array<NarrativeCitation>
  */
 function foldSurname(text: string): string
 {
-    return text
-        .replace(/ı/g, "i")
-        .replace(/ł/g, "l")
-        .normalize("NFKD")
-        .replace(/\p{M}/gu, "")
-        .toLowerCase()
-        .replace(/[^a-z]/g, "");
+    return foldLetters(text).replace(/[^a-z]/g, "");
 }
 
 /**
@@ -1057,11 +1097,7 @@ export function citationMatchesId(citation: NarrativeCitation, id: string, store
  */
 function foldForComparison(text: string): string
 {
-    return text
-        .normalize("NFKD")
-        .replace(/\p{M}/gu, "")
-        .toLowerCase()
-        .replace(/[^a-z0-9]/g, "");
+    return foldLetters(text).replace(/[^a-z0-9]/g, "");
 }
 
 /**
@@ -1476,4 +1512,68 @@ export function stageOrdering(stages: Record<string, StageInfo>): { order: Array
         .map(([stageName]) => stageName);
 
     return { order, position: new Map(order.map((stageName, index) => [stageName, index])) };
+}
+
+/**
+ * One label an institution registry entry answers to.
+ */
+export type InstitutionLabel = {
+    /**
+     * The label as the registry writes it.
+     */
+    label: string;
+
+    /**
+     * The registry code the label belongs to.
+     */
+    code: string;
+
+    /**
+     * Which field the label comes from. A `stem` is a code's part before its
+     * first hyphen, for codes that carry a country or city suffix (`MOR-US`).
+     */
+    kind: "code" | "stem" | "name" | "alias" | "collection";
+};
+
+/**
+ * Lists every label each registry entry answers to, entry by entry: its code,
+ * the code's bare stem when it has a suffix, its name, its aliases and its
+ * collection codes. Each resolver keeps the kinds it wants and normalizes the
+ * labels its own way.
+ *
+ * @param registry - The parsed institutions.yaml.
+ * @returns The labels, in registry order.
+ */
+export function institutionLabels(registry: Record<string, InstitutionEntry>): Array<InstitutionLabel>
+{
+    const labels = new Array<InstitutionLabel>();
+
+    for (const [code, entry] of Object.entries(registry))
+    {
+        labels.push({ label: code, code, kind: "code" });
+
+        const stem = code.split("-")[0];
+
+        if (stem !== code)
+        {
+            labels.push({ label: stem, code, kind: "stem" });
+        }
+
+        if (entry?.name)
+        {
+            labels.push({ label: entry.name, code, kind: "name" });
+        }
+
+        for (const alias of entry?.aliases ?? [])
+        {
+            labels.push({ label: String(alias), code, kind: "alias" });
+        }
+
+        for (const collection of entry?.collections ?? [])
+        {
+            labels.push({ label: String(collection), code, kind: "collection" });
+        }
+    }
+
+    return labels;
 }

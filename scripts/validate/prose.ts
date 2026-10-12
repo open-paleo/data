@@ -7,6 +7,7 @@ import { CST, Lexer } from "yaml";
 import { findYamlFiles } from "../utilities.ts";
 import { checkError, checkWarning } from "./report.ts";
 import type { ValidationContext } from "./context.ts";
+import { walkStrings } from "./walk.ts";
 
 /**
  * The "Identifier compliance" check.
@@ -575,26 +576,10 @@ export function checkUnbalancedQuotation(context: ValidationContext): void
      */
     function collectStrings(node: unknown, trail: string, found: Array<{ trail: string; text: string }>): void
     {
-        if (typeof node === "string")
+        walkStrings(node, (text, _, stringTrail) =>
         {
-            found.push({ trail, text: node.replace(/\s+/g, " ") });
-        }
-        else if (Array.isArray(node))
-        {
-            for (const [index, item] of node.entries())
-            {
-                const itemId = item && typeof item === "object" && "id" in item ? String((item as { id: unknown }).id) : String(index);
-
-                collectStrings(item, `${trail}[${itemId}]`, found);
-            }
-        }
-        else if (node && typeof node === "object")
-        {
-            for (const [key, value] of Object.entries(node))
-            {
-                collectStrings(value, trail ? `${trail}.${key}` : key, found);
-            }
-        }
+            found.push({ trail: stringTrail, text: text.replace(/\s+/g, " ") });
+        }, { listLabel: (item, index) => (item && typeof item === "object" && "id" in item ? String((item as { id: unknown }).id) : String(index)) }, trail);
     }
 
     const quotationFiles = [

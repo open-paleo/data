@@ -51,7 +51,7 @@ jobs:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
           SINCE: ${{ github.event.inputs.since }}
         run: |
-          args=(--write-state --json scratch/paper-watch.json)
+          args=(--write-state --json scratch/paper-watch.json --issue-items scratch/paper-watch-items.md)
           if [ -n "$SINCE" ]; then
             args+=(--since "$SINCE")
           fi
@@ -72,6 +72,7 @@ jobs:
           path: |
             scratch/paper-watch.md
             scratch/paper-watch.json
+            scratch/paper-watch-items.md
           retention-days: 30
           if-no-files-found: ignore
 
@@ -83,4 +84,4 @@ jobs:
         with:
           script: |
             const script = require('./.github/scripts/paper-watch-issue.cjs');
-            await script({ github, context, jsonPath: 'scratch/paper-watch.json' });
+            await script({ github, context, jsonPath: 'scratch/paper-watch.json', itemsPath: 'scratch/paper-watch-items.md' });

@@ -43,6 +43,7 @@ import re
 import yaml
 
 from _paths import audit_dir, data_dir, store_path
+from skill_tree import subtree_names  # on the path _paths adds
 
 DATA = data_dir()
 
@@ -116,50 +117,6 @@ def genusPath(genus):
     @returns absolute path to genera/{Letter}/{genus}.yml
     """
     return os.path.join(DATA, "genera", genus[0].upper(), f"{genus}.yml")
-
-
-def findNode(node, target):
-    """Depth-first search for a named node in the clade tree.
-
-    @param node - the current tree mapping
-    @param target - the clade name to find
-    @returns the target's subtree mapping, or None when absent
-    """
-    if isinstance(node, dict):
-        for key, value in node.items():
-            if key == target:
-                return value
-            found = findNode(value, target)
-            if found is not None:
-                return found
-    return None
-
-
-def nodeNames(node):
-    """Collect every clade name at or below a tree node.
-
-    @param node - the tree mapping to walk
-    @returns a set of clade names
-    """
-    names = set()
-    if isinstance(node, dict):
-        for key, value in node.items():
-            names.add(key)
-            names |= nodeNames(value)
-    return names
-
-
-def subtreeNames(tree, root):
-    """Return the root plus every clade below it.
-
-    @param tree - the whole parsed tree.yml mapping
-    @param root - the clade name to root the subtree at
-    @returns a set of clade names, or None when the root is absent
-    """
-    subtree = findNode(tree, root)
-    if subtree is None:
-        return None
-    return nodeNames(subtree) | {root}
 
 
 def stemOf(name):
@@ -266,7 +223,7 @@ def checkClade(path, tree, findings):
         else:
             genusRecord = loadYaml(genusPath(typeGenus))
             parent = genusRecord.get("parent")
-            names = subtreeNames(tree, name)
+            names = subtree_names(tree, name)
             if names is None:
                 add("clade-not-in-tree", "high",
                     f"{name} has a clade file but no node in tree.yml.")

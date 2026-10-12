@@ -4,7 +4,14 @@ import * as url from "node:url";
 
 import { stringify as stringifyYaml } from "yaml";
 
-import { findYamlFiles, parseYaml, loadInstitutionRegistry, loadRegionRegistry, loadSchema } from "./utilities.ts";
+import {
+    findTreePath,
+    findYamlFiles,
+    loadInstitutionRegistry,
+    loadRegionRegistry,
+    loadSchema,
+    parseYaml,
+} from "./utilities.ts";
 
 import type { GenusData, CladeData, TreeNode, Reference, ReferencePointer, InstitutionEntry, StageInfo, Synonym, FormerId } from "./types.ts";
 
@@ -144,37 +151,6 @@ type Dataset = {
 };
 
 /**
- * Searches the tree for a target clade and returns the path from root.
- *
- * @param tree - The tree node to search within.
- * @param target - The clade name to find.
- * @param path - Accumulated path (used internally during recursion).
- * @returns The path as an array of clade names, or null if not found.
- */
-function findPath(tree: TreeNode, target: string, accumulated = new Array<string>()): Array<string> | null
-{
-    for (const [key, children] of Object.entries(tree))
-    {
-        const path = [...accumulated, key];
-
-        if (key === target)
-        {
-            return path;
-        }
-        else if (children && typeof children === "object" && Object.keys(children).length > 0)
-        {
-            const found = findPath(children as TreeNode, target, path);
-            if (found)
-            {
-                return found;
-            }
-        }
-    }
-
-    return null;
-}
-
-/**
  * Converts a phylogenetic tree to Newick notation.
  *
  * @param tree - The tree node to convert.
@@ -294,7 +270,7 @@ for (const file of findYamlFiles(path.join(root, "genera")))
         genera[data.genus] = {
             ...data,
             references: inflateReferences(data.references),
-            taxonomy: findPath(tree, data.parent ?? "") ?? [ ],
+            taxonomy: findTreePath(tree, data.parent ?? "") ?? [ ],
         };
     }
 }
@@ -573,7 +549,7 @@ for (const file of findYamlFiles(path.join(root, "clades")))
 
         clades[data.clade] = {
             description: data.description,
-            taxonomy: findPath(tree, data.clade) ?? [ ],
+            taxonomy: findTreePath(tree, data.clade) ?? [ ],
             type_genus: data.type_genus,
             described,
             authors,

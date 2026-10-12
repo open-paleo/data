@@ -41,28 +41,40 @@ def audit_dir():
     return os.path.join(data_dir(), "scratch", "audit")
 
 
-# Latin letters with no canonical NFD decomposition to a base ASCII letter,
-# mirroring nonDecomposingLetterFolds in scripts/utilities.ts.
+# Latin letters with no canonical decomposition to base ASCII letters, with the
+# letters each is written as when folded; nonDecomposingLetterFolds in
+# scripts/utilities.ts.
 _NON_DECOMPOSING_FOLDS = {
-    "ł": "l", "ø": "o", "đ": "d", "ð": "d", "þ": "t", "ß": "s",
-    "ı": "i", "ħ": "h", "ĸ": "k", "ŋ": "n", "œ": "o", "æ": "a",
+    "ł": "l", "ø": "o", "đ": "d", "ð": "d", "þ": "th", "ß": "ss",
+    "ı": "i", "ħ": "h", "ĸ": "k", "ŋ": "n", "œ": "oe", "æ": "ae",
 }
+
+
+def fold_letters(text):
+    """Fold text for comparison and filing, as foldLetters in
+    scripts/utilities.ts does: compatibility-decomposed, accents dropped,
+    lowercased, and the Latin letters with no decomposition written as their
+    base letters. Callers filter what is left to the characters they compare.
+
+    @param text - the text to fold
+    @returns the folded text
+    """
+    decomposed = unicodedata.normalize("NFKD", str(text))
+    stripped = "".join(character for character in decomposed if not unicodedata.combining(character)).lower()
+    return "".join(_NON_DECOMPOSING_FOLDS.get(character, character) for character in stripped)
 
 
 def reference_bucket(reference_id):
     """Store directory bucket for a reference key, as referenceBucket in
-    scripts/utilities.ts computes it: the first character with diacritics
-    stripped and non-decomposing letters folded, lowercased, or "_" when it
-    does not fold to a-z. So "ősi2010a" is under "o" and "čech1980a" under "c".
+    scripts/utilities.ts computes it: the first letter of the folded key, or
+    "_" when it does not fold to a-z. So "ősi2010a" is under "o" and
+    "čech1980a" under "c".
 
     @param reference_id - the reference key, e.g. "ősi2010a"
     @returns the single-character bucket name
     """
-    decomposed = unicodedata.normalize("NFD", reference_id)
-    stripped = "".join(character for character in decomposed if not unicodedata.combining(character))
-    first = stripped[:1].lower()
-    folded = _NON_DECOMPOSING_FOLDS.get(first, first)
-    return folded if len(folded) == 1 and "a" <= folded <= "z" else "_"
+    first = fold_letters(reference_id)[:1]
+    return first if len(first) == 1 and "a" <= first <= "z" else "_"
 
 
 def store_path(reference_id):

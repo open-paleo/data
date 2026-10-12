@@ -15,7 +15,13 @@ import * as url from "node:url";
 
 import { parse as parseYamlContent } from "yaml";
 
-import { findYamlFiles, loadInstitutionRegistry, loadSchema } from "./utilities.ts";
+import {
+    findYamlFiles,
+    foldLetters,
+    institutionLabels,
+    loadInstitutionRegistry,
+    loadSchema,
+} from "./utilities.ts";
 
 import type { GenusData, InstitutionEntry, StageInfo } from "./types.ts";
 
@@ -154,10 +160,7 @@ function specimenPrefix(specimenId: string): string | null
  */
 function normalizeInstitutionName(name: string): string
 {
-    return name
-        .normalize("NFKD")
-        .replace(/[\u0300-\u036f]/g, "")
-        .toLowerCase()
+    return foldLetters(name)
         .replace(/\([^)]*\)/g, " ")
         .replace(/\bformerly\b.*/g, " ")
         .replace(/[^a-z0-9]+/g, " ")
@@ -262,46 +265,18 @@ function buildCodeResolver(institutions: Record<string, InstitutionEntry>): Map<
 {
     const resolver = new Map<string, Set<string>>();
 
-    /**
-     * Adds a code → canonical mapping to the resolver.
-     *
-     * @param code - The code or alias.
-     * @param canonical - The canonical key it resolves to.
-     * @returns Nothing.
-     */
-    function add(code: string, canonical: string): void
+    // A canonical key may itself carry an ISO/city suffix (e.g. MOR-US), so its
+    // bare stem resolves too and a bare literature prefix matches. A collection
+    // code names a part of this institution rather than the institution
+    // itself, but for resolution it points here too: "ISIR 335/1" is held by
+    // ISI.
+    for (const { label, code, kind } of institutionLabels(institutions))
     {
-        const key = code.trim();
-        const existing = resolver.get(key) ?? new Set<string>();
-
-        existing.add(canonical);
-        resolver.set(key, existing);
-    }
-
-    for (const [canonical, entry] of Object.entries(institutions))
-    {
-        add(canonical, canonical);
-
-        // A canonical key may itself carry an ISO/city suffix (e.g. MOR-US);
-        // let the bare stem resolve too so a bare literature prefix matches.
-        const bareStem = canonical.split("-")[0];
-
-        if (bareStem !== canonical)
+        if (kind !== "name")
         {
-            add(bareStem, canonical);
-        }
+            const key = label.trim();
 
-        for (const alias of entry.aliases ?? [])
-        {
-            add(alias, canonical);
-        }
-
-        // A collection code names a part of this institution rather than the
-        // institution itself, but for resolution purposes it points here too:
-        // "ISIR 335/1" is held by ISI.
-        for (const collection of entry.collections ?? [])
-        {
-            add(collection, canonical);
+            resolver.set(key, (resolver.get(key) ?? new Set<string>()).add(code));
         }
     }
 

@@ -26,11 +26,10 @@ import glob
 import os
 import re
 import sys
-import unicodedata
 
 import yaml
 
-from _paths import audit_dir, corpus_dir, data_dir
+from _paths import audit_dir, corpus_dir, data_dir, fold_letters
 
 DATA = data_dir()
 MARKDOWN = os.path.join(corpus_dir(), "markdown")
@@ -47,9 +46,6 @@ maximumGap = 14
 evidenceLine = re.compile(r"^- ([a-zÀ-ɏ'’-]+\d{4}[a-z]),[^\n]*$", re.M)
 
 
-letterMap = str.maketrans({"ı": "i", "ł": "l", "Ł": "L", "ø": "o", "Ø": "O", "đ": "d", "ß": "ss", "æ": "ae", "œ": "oe"})
-
-
 def words(text):
     """Reduce a string to comparable words.
 
@@ -58,13 +54,10 @@ def words(text):
     """
     stripped = re.sub(r"<[^>]{0,40}>", " ", text)
     # Rejoin words the conversion broke across lines ("un-\nknown"), and map the
-    # letters NFKD does not decompose, such as the dotless ı that renders "Río"
-    # as "Ŕıo" in some converted papers.
+    # letters NFKD does not decompose (fold_letters), such as the dotless ı that
+    # renders "Río" as "Ŕıo" in some converted papers.
     stripped = re.sub(r"(\w)[-\u00ad]\s*\n\s*(\w)", r"\1\2", stripped).replace("\u00ad", "")
-    stripped = stripped.translate(letterMap)
-    folded = unicodedata.normalize("NFKD", stripped)
-    folded = "".join(character for character in folded if not unicodedata.combining(character))
-    return re.findall(r"[a-z0-9]+", folded.lower())
+    return re.findall(r"[a-z0-9]+", fold_letters(stripped))
 
 
 sourceCache = {}

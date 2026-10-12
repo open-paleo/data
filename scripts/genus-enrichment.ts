@@ -20,7 +20,9 @@ import type { GenusData, Reference, Schema, StageInfo, TreeNode } from "./types.
 import {
     collectAllKeys,
     escapeRegExp,
+    foldLetters,
     httpUserAgent,
+    institutionLabels,
     loadInstitutionRegistry,
     loadRegionRegistry,
     loadSchema,
@@ -46,11 +48,7 @@ const wikipediaApiBase = "https://en.wikipedia.org/w/api.php";
  */
 function foldLabel(label: string): string
 {
-    return label
-        .normalize("NFD")
-        .replace(/[̀-ͯ]/g, "")
-        .toLowerCase()
-        .replace(/[^a-z0-9]/g, "");
+    return foldLetters(label).replace(/[^a-z0-9]/g, "");
 }
 
 /**
@@ -96,18 +94,11 @@ export function createEnrichmentContext(dataRoot: string): EnrichmentContext
 {
     const institutionCodes = new Map<string, string>();
 
-    for (const [code, entry] of Object.entries(loadInstitutionRegistry(path.join(dataRoot, "institutions.yaml"))))
+    for (const { label, code, kind } of institutionLabels(loadInstitutionRegistry(path.join(dataRoot, "institutions.yaml"))))
     {
-        institutionCodes.set(foldLabel(code), code);
-
-        if (entry.name)
+        if (kind === "code" || kind === "name" || kind === "alias")
         {
-            institutionCodes.set(foldLabel(entry.name), code);
-        }
-
-        for (const alias of entry.aliases ?? [])
-        {
-            institutionCodes.set(foldLabel(alias), code);
+            institutionCodes.set(foldLabel(label), code);
         }
     }
 

@@ -7,6 +7,7 @@ import {
     collectAllKeys,
     escapeRegExp,
     findYamlFiles,
+    foldLetters,
     normalizeDoi,
     parseYaml,
 } from "./utilities.ts";
@@ -151,6 +152,7 @@ type Options = {
     apiKey: string | null;
     writeState: boolean;
     jsonPath: string | null;
+    issueItemsPath: string | null;
     allShort: boolean;
 };
 
@@ -220,6 +222,7 @@ function parseOptions(argv: Array<string>): Options
         apiKey: flag("--api-key") ?? process.env.OPENALEX_API_KEY ?? null,
         writeState: argv.includes("--write-state"),
         jsonPath: flag("--json"),
+        issueItemsPath: flag("--issue-items"),
         allShort: argv.includes("--all-short"),
     };
 }
@@ -377,7 +380,7 @@ function dedupDoi(doi: string): string
  */
 function normalizeTitle(title: string): string
 {
-    return stripTags(title).toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+    return foldLetters(stripTags(title)).replace(/[^a-z0-9]+/g, " ").trim();
 }
 
 /**
@@ -750,19 +753,22 @@ function formatHit(hit: WatchHit): string
     // locate an item's checkbox by DOI to tick it.
     const anchor = ` <!-- doi:${hit.doi ?? hit.openAlexId} -->`;
 
-    return `- [ ] ${hit.publicationDate} — ${hit.title}${anchor}${venueLine}\n  ${link}${access}`;
+    const date = hit.publicationDate ? `${hit.publicationDate} — ` : "";
+
+    return `- [ ] ${date}${hit.title}${anchor}${venueLine}\n  ${link}${access}`;
 }
 
 /**
- * Renders the hits as a markdown digest grouped by the exact set of genera a
- * paper mentions, so a multi-genus paper appears once under a combined
- * "Genus A, Genus B" heading rather than repeated under each genus.
+ * Renders the hits as checklist items grouped by the exact set of genera a
+ * paper mentions (so a multi-genus paper appears once, under a combined
+ * heading), then a section for matches that hit a clade but no genus. The
+ * local digest and the GitHub issue both use this, at their own heading level.
  *
- * @param hits - The fresh hits to render.
- * @param options - Resolved run options (for the header window).
- * @returns The markdown digest.
+ * @param hits - Hits to render.
+ * @param heading - The markdown heading marker for each group, "##" or "###".
+ * @returns The rendered lines.
  */
-function renderDigest(hits: Array<WatchHit>, options: Options): string
+function renderHitGroups(hits: Array<WatchHit>, heading: string): Array<string>
 {
     const byGenusSet = new Map<string, Array<WatchHit>>();
     const cladeOnly: Array<WatchHit> = [];
@@ -777,27 +783,15 @@ function renderDigest(hits: Array<WatchHit>, options: Options): string
         {
             const key = hit.genera.join(", ");
 
-            if (!byGenusSet.has(key))
-            {
-                byGenusSet.set(key, []);
-            }
-
-            byGenusSet.get(key)!.push(hit);
+            byGenusSet.set(key, [...byGenusSet.get(key) ?? [], hit]);
         }
     }
 
-    const distinctGenera = new Set(hits.flatMap((hit) => hit.genera)).size;
-    const lines: Array<string> = [
-        "# Paper watch",
-        "",
-        `Window: works published since **${options.since}** · `
-            + `${hits.length} new work(s) across ${distinctGenera} genus/genera.`,
-        "",
-    ];
+    const lines = new Array<string>();
 
     for (const key of [...byGenusSet.keys()].sort())
     {
-        lines.push(`## ${key}`, "");
+        lines.push(`${heading} ${key}`, "");
 
         for (const hit of byGenusSet.get(key)!)
         {
@@ -807,9 +801,10 @@ function renderDigest(hits: Array<WatchHit>, options: Options): string
         lines.push("");
     }
 
-    if (options.includeClades && cladeOnly.length > 0)
+    // Clade-only hits exist only when the run was asked for clade matches.
+    if (cladeOnly.length > 0)
     {
-        lines.push("## Clade-only matches", "");
+        lines.push(`${heading} Clade-only matches`, "");
 
         for (const hit of cladeOnly)
         {
@@ -819,7 +814,28 @@ function renderDigest(hits: Array<WatchHit>, options: Options): string
         lines.push("");
     }
 
-    return lines.join("\n");
+    return lines;
+}
+
+/**
+ * Renders the local markdown digest.
+ *
+ * @param hits - Hits to render.
+ * @param options - Run options (for the window shown in the header).
+ * @returns The digest markdown.
+ */
+function renderDigest(hits: Array<WatchHit>, options: Options): string
+{
+    const distinctGenera = new Set(hits.flatMap((hit) => hit.genera)).size;
+
+    return [
+        "# Paper watch",
+        "",
+        `Window: works published since **${options.since}** · `
+            + `${hits.length} new work(s) across ${distinctGenera} genus/genera.`,
+        "",
+        ...renderHitGroups(hits, "##"),
+    ].join("\n");
 }
 
 /**
@@ -883,6 +899,14 @@ async function main(): Promise<void>
     {
         fs.writeFileSync(options.jsonPath, JSON.stringify(hits, null, 2));
         console.log(`JSON written to ${options.jsonPath}.`);
+    }
+
+    // The issue body's checklist, which the workflow's issue script wraps in
+    // its header rather than rendering the hits a second time.
+    if (options.issueItemsPath)
+    {
+        fs.writeFileSync(options.issueItemsPath, renderHitGroups(hits, "###").join("\n"));
+        console.log(`Issue items written to ${options.issueItemsPath}.`);
     }
 
     if (options.writeState)

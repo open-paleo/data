@@ -13,6 +13,7 @@ from skill_paths import (  # noqa: E402,F401  re-exported for this skill's scrip
     condensed_dir,
     corpus_dir,
     data_dir,
+    fold_letters,
     normalize_doi,
     reference_bucket,
     store_path,

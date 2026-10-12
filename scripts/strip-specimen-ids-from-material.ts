@@ -31,7 +31,7 @@ import * as path from "node:path";
 import * as url from "node:url";
 
 import type { InstitutionEntry } from "./types.ts";
-import { escapeRegExp, parseYaml } from "./utilities.ts";
+import { escapeRegExp, institutionLabels, parseYaml } from "./utilities.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
@@ -51,22 +51,11 @@ function loadInstitutionAbbreviations(): Set<string>
     const institutions = parseYaml<Record<string, InstitutionEntry>>(path.join(root, "institutions.yaml"));
     const abbreviations = new Set<string>();
 
-    for (const [key, entry] of Object.entries(institutions))
+    for (const { label, kind } of institutionLabels(institutions))
     {
-        if (key.length >= 3)
+        if ((kind === "code" || kind === "alias") && label.length >= 3)
         {
-            abbreviations.add(key);
-        }
-
-        if (Array.isArray(entry.aliases))
-        {
-            for (const alias of entry.aliases)
-            {
-                if (typeof alias === "string" && alias.length >= 3)
-                {
-                    abbreviations.add(alias);
-                }
-            }
+            abbreviations.add(label);
         }
     }
 

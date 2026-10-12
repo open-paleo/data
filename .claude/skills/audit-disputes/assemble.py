@@ -23,6 +23,7 @@ import sys
 import yaml
 
 from _paths import data_dir, corpus_dir, audit_dir
+from skill_tree import subtree_names  # on the path _paths adds
 
 DATA = data_dir()
 CORPUS = corpus_dir()
@@ -53,36 +54,6 @@ REFERENCE_WORK_PREFIXES = (
 # Long monographs / revisions worth a targeted rather than skim read. Extend as
 # runs surface them; unlisted in-corpus papers default to "primary".
 MONOGRAPH_IDS = set()
-
-
-def _find(node, target):
-    """Return the subtree dict rooted at `target`, or None if absent."""
-    if isinstance(node, dict):
-        for key, value in node.items():
-            if key == target:
-                return value
-            found = _find(value, target)
-            if found is not None:
-                return found
-    return None
-
-
-def _names(node):
-    """Return the set of all clade node names within `node`."""
-    out = set()
-    if isinstance(node, dict):
-        for key, value in node.items():
-            out.add(key)
-            out |= _names(value)
-    return out
-
-
-def subtree_names(tree, root):
-    """Return {root} plus every clade name below it, or None if root is absent."""
-    sub = _find(tree, root)
-    if sub is None:
-        return None
-    return _names(sub) | {root}
 
 
 def load_tree_slice(slice_root, excludes=()):

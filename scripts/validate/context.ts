@@ -20,12 +20,14 @@ import type {
 import {
     buildFlaggedSet,
     buildVerifiedSet,
+    collectAllKeys,
     findYamlFiles,
     loadFlaggedSignoffs,
     loadFlaggedSources,
     loadStratigraphyRegistry,
     stageOrdering,
 } from "../utilities.ts";
+import { walkStrings } from "./walk.ts";
 
 /**
  * Loads the data and registries the checks read.
@@ -39,27 +41,6 @@ export function loadValidationContext()
     const scriptDir = path.dirname(scriptPath);
 
     const root = path.join(scriptDir, "..", "..");
-
-    /**
-     * Recursively extracts all clade names from a tree node.
-     *
-     * @param node - The tree node to traverse.
-     * @param clades - Accumulator set (used internally during recursion).
-     * @returns A set of all clade names found in the tree.
-     */
-    function extractClades(node: TreeNode | null, clades = new Set<string>()): Set<string>
-    {
-        if (node && typeof node === "object")
-        {
-            for (const key of Object.keys(node))
-            {
-                clades.add(key);
-                extractClades(node[key], clades);
-            }
-        }
-
-        return clades;
-    }
 
     /**
      * Determines which tree clades have at least one member genus somewhere in
@@ -126,7 +107,7 @@ export function loadValidationContext()
 
     const tree = loadYamlFatal<TreeNode>(path.join(root, "tree.yml"), "tree.yml");
 
-    const treeClades = extractClades(tree);
+    const treeClades = new Set(collectAllKeys(tree));
 
     const allowedStatus = new Set(schema.status ?? []);
 
@@ -454,24 +435,13 @@ export function loadValidationContext()
      */
     function collectProseFields(node: unknown, filePath: string, fieldPath: string, key: string | null, collected: Array<ProseField>): void
     {
-        if (Array.isArray(node))
+        walkStrings(node, (text, textKey, trail) =>
         {
-            for (let index = 0; index < node.length; index += 1)
+            if (textKey !== null && proseKeys.has(textKey))
             {
-                collectProseFields(node[index], filePath, `${fieldPath}[${index}]`, key, collected);
+                collected.push({ filePath, fieldPath: trail, text });
             }
-        }
-        else if (node && typeof node === "object")
-        {
-            for (const [childKey, value] of Object.entries(node as Record<string, unknown>))
-            {
-                collectProseFields(value, filePath, fieldPath ? `${fieldPath}.${childKey}` : childKey, childKey, collected);
-            }
-        }
-        else if (typeof node === "string" && key !== null && proseKeys.has(key))
-        {
-            collected.push({ filePath, fieldPath, text: node });
-        }
+        }, {}, fieldPath, key);
     }
 
     const proseFields: Array<ProseField> = [];
@@ -532,7 +502,6 @@ export function loadValidationContext()
         scriptPath,
         scriptDir,
         root,
-        extractClades,
         collectPopulatedClades,
         loadYamlFatal,
         schema,
