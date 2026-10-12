@@ -359,7 +359,7 @@ export function readStoreCitationKeys(dataRoot: string): Set<string>
  * @param doi - The raw DOI string.
  * @returns The comparable form.
  */
-function normalizeDoi(doi: string): string
+export function normalizeDoi(doi: string): string
 {
     return doi
         .trim()

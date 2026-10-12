@@ -3,7 +3,7 @@ import * as path from "node:path";
 import * as url from "node:url";
 
 import type { Reference } from "./types.ts";
-import { findYamlFiles, parseYaml } from "./utilities.ts";
+import { findYamlFiles, normalizeDoi, parseYaml } from "./utilities.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
@@ -571,7 +571,7 @@ async function main(): Promise<void>
 
     for (const reference of withDoi)
     {
-        const key = reference.doi.trim().toLowerCase();
+        const key = normalizeDoi(reference.doi);
         const existing = doiToIds.get(key);
 
         if (existing === undefined)

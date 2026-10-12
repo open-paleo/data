@@ -20,6 +20,7 @@ import {
     loadFlaggedSources,
     markdownLinkTargets,
     narrativeCitations,
+    normalizeDoi,
     recordFileFor,
     referenceBucket,
     referenceIdentity,
@@ -1298,6 +1299,16 @@ for (const [filePath, entry] of referenceStoreParsed)
             `store 'id' '${entry.id ?? "?"}' does not match filename '${baseName}'`);
     }
 
+    // A DOI is stored bare, so that one work cannot hide behind two spellings of
+    // its DOI ("10.x/y" and "https://doi.org/10.x/y").
+    if (entry.doi !== undefined && !/^10\.\d{4,9}\/\S+$/.test(String(entry.doi)))
+    {
+        checkError(
+            "Reference store integrity",
+            filePath,
+            `doi '${entry.doi}' is not a bare DOI; store it as '${normalizeDoi(String(entry.doi))}'`);
+    }
+
     if (baseName.normalize("NFC") !== baseName)
     {
         checkError(
@@ -1624,7 +1635,7 @@ for (const [filePath, entry] of referenceStoreParsed)
         continue;
     }
 
-    const doi = entry.doi ? String(entry.doi).trim().toLowerCase() : null;
+    const doi = entry.doi ? normalizeDoi(String(entry.doi)) : null;
     const identity = referenceIdentity(entry);
 
     if (doi !== null && referencesByDoi.has(doi))
