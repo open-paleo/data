@@ -1,5 +1,21 @@
 # *Halticosaurus*
 
+## What is the *Halticosaurus* holotype's number?
+
+*2026-10-11*
+
+**Conclusion.** SMNS 11839, from Galton (1985), the earliest paper to number the holotype; the describing paper gives none, and Sues and Schoch (2025) agree. Rauhut and Hungerbühler's SMNS 12353 is the number Sues and Schoch give the *Apatosuchus* holotype, material Huene once placed in *Halticosaurus*. Governs `type_specimen.specimen_id: [SMNS 11839]` on [*Halticosaurus longotarsus*](../../../genera/H/Halticosaurus.yml), and the number question in this note's earlier **Open** line.
+
+**Evidence.**
+- galton1985c, Plate 4: "*Halticosaurus longotarsus* v. Huene 1908, part of holotype SMNS 11839 from Middle Stubensandstein of Pfaffenhofen, Stromberghöhe", figuring the proximal right femur.
+- sues2025a, p. 464: "Holotype. SMNS 11839"; for *Apatosuchus orbitoangulatus*, "Holotype. SMNS 12353b", which "F. Huene (1932b) originally described … as the holotype of a new taxon of 'podokesaurid' theropod, cf. *Halticosaurus orbitoangulatus*".
+- rauhut2000a, p. 78: the fragments are "all bearing the collection number SMNS 12353"; Fig. 3 figures the proximal right femur as "SMNS 12353; … part of the type series".
+
+**Ruled out.**
+- *SMNS 12353.* It is given only by Rauhut and Hungerbühler, for a femur Galton numbers 11839, and it is the *Apatosuchus* number.
+
+**Open.** Nothing.
+
 ## Where on the Stromberg was the *Halticosaurus* holotype found, and is "Stormberghöhe" a separate place?
 
 *2026-08-26*
@@ -36,9 +52,9 @@
 
 ## References
 
-- `huene1908a`: Huene, F. V. (1908). Die Dinosaurier der Europäischen Triasformation mit berücksichtigung der Ausseuropäischen vorkommnisse [The dinosaurs of the European Triassic formations with consideration of occurrences outside Europe]. *Geologische und Palaeontologische Abhandlungen* Suppl. 1(1): 1-419.
 - `galton1985c`: Galton, P. M. (1985). The poposaurid thecodontian Teratosaurus suevicus v. Meyer, plus referred specimens mostly based on prosauropod dinosaurs, from the Middle Stubensandstein (Upper Triassic) of Nordwürttemberg. *Stuttgarter Beiträge zur Naturkunde, Serie B (Geologie und Paläontologie)* 116: 1-29.
-- `rauhut2000a`: Rauhut, O. W. M.; Hungerbühler, A. (2000). A review of European Triassic theropods. *Gaia* 15: 75-88.
 - `sues2025a`: Sues, H. D.; Schoch, R. R. (2025). Synopsis of the Triassic reptiles from Germany. *Fossil Record* 28(2): 411-483. doi:10.3897/fr.28.164405
+- `rauhut2000a`: Rauhut, O. W. M.; Hungerbühler, A. (2000). A review of European Triassic theropods. *Gaia* 15: 75-88.
+- `huene1908a`: Huene, F. V. (1908). Die Dinosaurier der Europäischen Triasformation mit berücksichtigung der Ausseuropäischen vorkommnisse [The dinosaurs of the European Triassic formations with consideration of occurrences outside Europe]. *Geologische und Palaeontologische Abhandlungen* Suppl. 1(1): 1-419.
 - `jordan2016a`: Jordan, P.; Pietsch, J. S.; Bläsi, H.; Furrer, H.; Kündig, N.; Looser, N.; Wetzel, A.; Deplazes, G. (2016). The middle to late Triassic Bänkerjoch and Klettgau formations of northern Switzerland. *Swiss Journal of Geosciences* 109: 257-284.
 - `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.

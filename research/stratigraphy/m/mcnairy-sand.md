@@ -1,5 +1,18 @@
 # McNairy Sand
 
+## Which *Hypsibema* species does the McNairy Sand dating govern?
+
+*2026-10-11*
+
+**Conclusion.** *Hypsibema missouriensis*, the species recorded from the McNairy Sand. The 2026-09-30 entry names *H. crassicauda*, which is from the Black Creek Formation; its link resolves to the right genus file, and only the species named was wrong. Governs `stage: [Maastrichtian]` on *Hypsibema missouriensis* in [*Hypsibema*](../../../genera/H/Hypsibema.yml). Supersedes the species name in the 2026-09-30 entry.
+
+**Evidence.**
+- baird1979a, pp. 14–15: "the McNairy Sand Member of the Ripley Formation, considered early Maestrichtian in age".
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## Is the McNairy Sand Member dated at its own level?
 
 *2026-09-30*

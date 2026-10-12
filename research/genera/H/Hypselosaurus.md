@@ -1,5 +1,21 @@
 # *Hypselosaurus*
 
+## What stages does *Hypselosaurus* take?
+
+*2026-10-11*
+
+**Conclusion.** Campanian and Maastrichtian. Matheron places the holotype at the base of the Rognacian, and Tortosa and colleagues (2014) date the upper part of the Lower Rognacian to the late Campanian, so the base is late Campanian or older; Le Loeuff (1993) gives the species as early Maastrichtian. The two readings are joined. Governs `stage: [Campanian, Maastrichtian]` on [*Hypselosaurus priscus*](../../../genera/H/Hypselosaurus.yml), and the stage part of the 2026-08-27 entry's **Open** line.
+
+**Evidence.**
+- matheron1869b, p. 783: "Dans les couches détritiques de la base de l'étage de Rognac : chélonien, grand saurien" ("In the detrital layers at the base of the Rognac stage: chelonian, large saurian", translated).
+- tortosa2014a, p. 66: "Lower Argiles Rutilantes Formation, upper part of the Lower Rognacian, Late Campanian (Cojan and Moreau, 2006)", for the Jas Neuf Sud locality.
+- leloeuff1993a, p. 105: "Early Maastrichtian of the Aix-en-Provence Basin".
+
+**Ruled out.**
+- *Maastrichtian alone.* It drops the dating of the Rognacian sequence at the level Matheron gives.
+
+**Open.** The unit at Rognac, as the 2026-08-27 entry sets out. Cojan and Moreau (2006), the source of the Rognacian dating, has not been read.
+
 ## Which unit is the *Hypselosaurus priscus* holotype from?
 
 *2026-08-27*
@@ -19,6 +35,6 @@
 ## References
 
 - `matheron1869b`: Matheron, P. (1869). Note sur les reptiles fossiles des dépôts fluvio-lacustres crétacés du bassin à lignite de Fuveau [Note on the fossil reptiles from the Cretaceous fluvio-lacustrine deposits of the lignitic Fuveau Basin]. *Bulletin de la Société Géologique de France, series 2* 26: 781-795.
+- `tortosa2014a`: Tortosa, T.; Buffetaut, E.; Vialle, N.; Dutour, Y.; Turini, E.; Cheylan, G. (2014). A new abelisaurid dinosaur from the Late Cretaceous of southern France: Palaeobiogeographical implications. *Annales de Paléontologie* 100(1): 63-86. doi:10.1016/j.annpal.2013.10.003
 - `leloeuff1993a`: Le Loeuff, J. (1993). European titanosaurids. *Revue de Paléobiologie, Volume Spéciale* 7: 105-117.
 - `catzigras1969a`: Catzigras, F.; Colomb, E.; Durand, J. P.; et al. (1969). Carte géologique de la France à 1/50 000, feuille Aix-en-Provence (XXXII-44, n° 1021), notice explicative [Geological map of France at 1:50,000, Aix-en-Provence sheet, explanatory notice]. Bureau de Recherches Géologiques et Minières (BRGM).
-- `tortosa2014a`: Tortosa, T.; Buffetaut, E.; Vialle, N.; Dutour, Y.; Turini, E.; Cheylan, G. (2014). A new abelisaurid dinosaur from the Late Cretaceous of southern France: Palaeobiogeographical implications. *Annales de Paléontologie* 100(1): 63-86. doi:10.1016/j.annpal.2013.10.003

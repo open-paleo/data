@@ -1,5 +1,18 @@
 # Lakota
 
+## Do the Lakota taxa take the formation's range?
+
+*2026-10-11*
+
+**Conclusion.** No, not where a member is known. [*Hoplitosaurus marshi*](../../../genera/H/Hoplitosaurus.yml) and [*Osmakasaurus depressus*](../../../genera/O/Osmakasaurus.yml) come from the [Chilson](../../../stratigraphy/c/chilson.yml) Member and take its Berriasian–Valanginian. Supersedes the 2026-09-30 entry's claim to govern the Lakota stages of those two taxa; its conclusion on the formation's own range stands.
+
+**Evidence.**
+- boyd2015b: the Chilson is "the basal Chilson Member" of the Lakota, and the horizon of the two holotypes "is positioned within the Chilson Member".
+
+**Ruled out.** Nothing.
+
+**Open.** Nothing.
+
 ## Is the Lakota Formation pre-Aptian?
 
 *2026-09-30*
@@ -18,7 +31,7 @@
 
 ## References
 
-- `sohn1979a`: Sohn, I. G. (1979). Nonmarine ostracodes in the Lakota Formation (Lower Cretaceous) from South Dakota and Wyoming. *United States Geological Survey Professional Paper* 1069: 1-24.
 - `boyd2015b`: Boyd, C. A.; Pagnac, D. C. (2015). Insight on the anatomy, systematic relationships, and age of the Early Cretaceous ankylopollexian dinosaur Dakotadon lakotaensis. *PeerJ* 3: e1263. doi:10.7717/peerj.1263
+- `sohn1979a`: Sohn, I. G. (1979). Nonmarine ostracodes in the Lakota Formation (Lower Cretaceous) from South Dakota and Wyoming. *United States Geological Survey Professional Paper* 1069: 1-24.
 - `d'emic2019a`: D'Emic, M. D.; Foreman, B. Z.; Jud, N. A.; Britt, B. B.; Schmitz, M.; Crowley, J. L. (2019). Chronostratigraphic revision of the Cloverly Formation (Lower Cretaceous, Western Interior, USA). *Bulletin of the Peabody Museum of Natural History* 60(1): 3-40. doi:10.3374/014.060.0101
 - `mcdonald2011a`: McDonald, A. T. (2011). The taxonomy of species assigned to Camptosaurus (Dinosauria: Ornithopoda). *Zootaxa* 2783(1). doi:10.11646/zootaxa.2783.1.4

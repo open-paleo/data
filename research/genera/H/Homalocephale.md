@@ -1,5 +1,20 @@
 # *Homalocephale*
 
+## Is the *Homalocephale* holotype from the Western Sayr at Nemegt? (revisited)
+
+*2026-10-11*
+
+**Conclusion.** Yes. On Gradziński and colleagues' Text-fig. 2, site 8 lies on the slope beside the dashed sayr line that runs north, unbroken, from the "Western Sayr" label; no other sayr passes near it. Maryańska and Osmólska put the skeleton in a sayr, so the map's only sayr at the site is the one it lay in. Governs `location.locality: Nemegt, Western Sayr, site 8` on [*Homalocephale calathocercos*](../../../genera/H/Homalocephale.yml). Supersedes the **Open** line of the 2026-08-26 entry.
+
+**Evidence.**
+- gradziński1969a, p. 39, Text-fig. 2: the symbol for site 8 on the slope along the dashed sayr line running north from the "Western Sayr" label; the Northern and Central Sayrs lie well to the east (checked on the page image).
+- maryańska1974a, p. 46: the skeleton "was articulated laying on a shelf above the bottom of the sayr".
+
+**Ruled out.**
+- *No sayr named.* The text places the skeleton in a sayr and the map shows one sayr at the site.
+
+**Open.** Nothing.
+
 ## Is the *Homalocephale* holotype from the Western Sayr at Nemegt?
 
 *2026-08-26*
@@ -16,5 +31,5 @@
 
 ## References
 
-- `maryańska1974a`: Maryańska, T.; Osmólska, H. (1974). Pachycephalosauria, a new suborder of ornithischian dinosaurs. *Palaeontologia Polonica* 30: 45-102.
 - `gradziński1969a`: Gradziński, R.; Kaźmierczak, J.; Lefeld, J. (1969). Geographical and geological data from the Polish-Mongolian Palaeontological Expeditions. *Palaeontologia Polonica* 19: 33-82.
+- `maryańska1974a`: Maryańska, T.; Osmólska, H. (1974). Pachycephalosauria, a new suborder of ornithischian dinosaurs. *Palaeontologia Polonica* 30: 45-102.

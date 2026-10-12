@@ -1,5 +1,20 @@
 # *Heishansaurus*
 
+## Does *Heishansaurus* take the Xinminpu Group?
+
+*2026-10-11*
+
+**Conclusion.** Yes, with the group's Barremian–Albian range. Dong (2002) names the *Heishansaurus* locality and places the passage's taxa in the Early Cretaceous Xinminpu Group; [*Chiayusaurus*](../C/Chiayusaurus.md), from the same Chia-yü-kuan beds, and [*Peishansaurus*](../P/Peishansaurus.md), from the same sentence, carry it. The Campanian–Maastrichtian the record held rests only on the personal communication the 2026-08-05 entry rejects. Governs `location.group: Xinminpu`, `period: [Early Cretaceous]` and `stage: [Barremian, Aptian, Albian]` on [*Heishansaurus pachycephalus*](../../../genera/H/Heishansaurus.yml), and settles that entry's **Open** line.
+
+**Evidence.**
+- dong2002a, p. 283: "产于嘉峪关北大草滩的 *Heishansaurus pachicephalus*" ("*Heishansaurus pachicephalus*, from Dacaotan north of Jiayuguan", translated); the passage's taxa "均产自河西走廊地区早白垩世新民堡群" ("all come from the Early Cretaceous Xinminpu Group of the Hexi Corridor", translated).
+- weishampel2004b, p. 598: "Age: Campanian-Maastrichtian (Mateer, pers. comm.)".
+
+**Ruled out.**
+- *Campanian–Maastrichtian.* Its only source is a personal communication relayed by a compilation.
+
+**Open.** Dong's sentence also puts *Sauroplites*, from Inner Mongolia, in the Hexi Corridor, so it is loose; a paper placing the Chia-yü-kuan beds in the group directly would confirm it.
+
 ## Which unit is the *Heishansaurus* holotype from?
 
 *2026-08-26*
@@ -19,7 +34,7 @@
 
 ## References
 
+- `dong2002a`: Dong, Z. (2002). A new armored dinosaur (Ankylosauria) from Beipiao Basin, Liaoning Province, northeastern China. *Vertebrata PalAsiatica* 40(4): 276-285.
+- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027
 - `bohlin1953a`: Bohlin, B. (1953). VI. Vertebrate Palaeontology 6. Fossil reptiles from Mongolia and Kansu. *Reports from the Scientific Expedition to the North-western Provinces of China under Leadership of Dr. Sven Hedin. The Sino-Swedish Expedition Publication* 37: 1-113.
 - `maryańska1975a`: Maryańska, T.; Osmólska, H. (1975). Protoceratopsidae (Dinosauria) of Asia. *Palaeontologia Polonica* 33: 133-182.
-- `weishampel2004b`: Weishampel, D. B.; Barrett, P. M.; Coria, R. A.; Le Loeuff, J.; Xu, X.; Zhao, X.; Sahni, A.; Gomani, E. M. P.; Noto, C. R. (2004). Dinosaur distribution. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 517-606. University of California Press, Berkeley. doi:10.1525/california/9780520242098.003.0027
-- `dong2002a`: Dong, Z. (2002). A new armored dinosaur (Ankylosauria) from Beipiao Basin, Liaoning Province, northeastern China. *Vertebrata PalAsiatica* 40(4): 276-285.
