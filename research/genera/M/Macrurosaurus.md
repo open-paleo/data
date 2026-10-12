@@ -1,5 +1,21 @@
 # *Macrurosaurus*
 
+## Is CAMSM B55630 a lectotype?
+
+*2026-10-11*
+
+**Conclusion.** Yes. Seeley founded the species on two series with no single type, and Le Loeuff (1993) fixes the name to one vertebra using the term lectotype, which meets the requirement for an explicit designation before 2000. Governs `type_specimen.specimen_type: lectotype` and `type_specimen.material` on [*Macrurosaurus semnus*](../../../genera/M/Macrurosaurus.yml), and settles the **Open** line of the 2026-08-29 entry.
+
+**Evidence.**
+- seeley1876a, p. 440: the species rests on "a series of some 25 associated and successive caudal vertebræ" from Coldham Common, Barnwell, and "another associated series of 15 smaller vertebrae" from Barton.
+- leloeuff1993a, p. 108: "the first procoelous caudal vertebra of the first series should be regarded as the lectotype. Therefore, the name *M. semnus* should apply to this vertebra (B55630)".
+
+**Ruled out.**
+- *Holotype.* Seeley designated no single specimen.
+- *Syntypes.* Le Loeuff's second sentence fixes the name to B55630, which goes beyond a proposal.
+
+**Open.** Nothing.
+
 ## Which of the two syntype localities does the *Macrurosaurus* type take?
 
 *2026-08-29*

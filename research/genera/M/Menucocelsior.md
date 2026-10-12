@@ -1,5 +1,20 @@
 # *Menucocelsior*
 
+## Which printed position does the *Menucocelsior* record take?
+
+*2026-10-11*
+
+**Conclusion.** The describing paper's, 39°30′27.08″S, 67°23′22.13″W, converted to -39.507522, -67.389481. It is the one position printed for this holotype's site; the other is printed for the *Kelumapusaura* holotype and reaches *Menucocelsior* only through a quarry 23 m away, and the coordinate rule does not take another specimen's site. Governs `location.coordinates` on [*Menucocelsior arriagadai*](../../../genera/M/Menucocelsior.yml). Supersedes the 2026-08-30 entry's "Unsettled", but not its **Open** question.
+
+**Evidence.**
+- rolando2021a, p. 2: "The specimens here described come from the Cerro Matadero site (67°23′22.13″W; 39°30′27.08″S; Fig.1)".
+- rozadilla2021a, p. 1208: "Matadero Hill (39°30′12″S, 67°22′19″W; Fig. 1)"; "The paratype specimens were found in a quarry approximately 23 m from the holotype. The latter were found in close association with remains of the titanosaur Menucocelsior arriagadai".
+
+**Ruled out.**
+- *Rozadilla and colleagues' Matadero Hill position.* It is printed for another taxon's holotype.
+
+**Open.** Which of the two printed positions is the site's; the 2026-08-30 entry names what would settle it.
+
 ## Which printed position belongs to the Menucocelsior holotype's site?
 
 *2026-08-30*
