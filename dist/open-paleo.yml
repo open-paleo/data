@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-10-12T02:29:45.717Z
+  built_at: 2026-10-12T03:07:26.247Z
   clade_count: 188
   genus_count: 1425
   license: CC-BY-4.0
@@ -118110,6 +118110,7 @@ genera:
           country: CN
           locality: Dashi village
           region: Guangxi
+          notes: Mo and colleagues (2007) give the horizon as "Upper Cretaceous red beds". They refer to the beds as the Nadu Formation of an earlier regional survey while rejecting that survey's Eocene age, and Dai and colleagues (2024) give the lower half of the Luowen Formation, citing regional survey work.
           region_code: CN-GX
         type_specimen:
           specimen_id:
@@ -118138,6 +118139,15 @@ genera:
         issue: "4"
         pages: 550-554
         doi: 10.1111/j.1755-6724.2007.tb00978.x
+      - id: dai2024a
+        authors: Dai, H.; Ma, Q.; Xiong, C.; Lin, Y.; Zeng, H.; Tan, C.; Wang, J.; Zhang, Y.; Xing, H.
+        year: 2024
+        title: "A new late-diverging non-hadrosaurid hadrosauroid (Dinosauria: Ornithopoda) from southwest China: Support for interchange of dinosaur faunas across East Asia during the Late Cretaceous"
+        journal: Cretaceous Research
+        publisher: Elsevier BV
+        volume: "166"
+        doi: 10.1016/j.cretres.2024.105995
+        notes: Places the taxon in "the late Campanian lower half of the Luowen Formation in Guangxi Province".
       - id: jones2026a
         authors: Jones, B.
         year: 2026
@@ -118813,15 +118823,19 @@ genera:
           name:
             - Late Cretaceous
           stage:
+            - Turonian
             - Coniacian
-          from_ma: 89.8
-          to_ma: 85.7
+            - Santonian
+            - Campanian
+          from_ma: 93.9
+          to_ma: 72.2
         location:
           country: CN
           locality: Donggouling, Angou Village
           region: Henan
           formation: Xiaguan
           part: lower
+          notes: Wang and colleagues (2013) place the holotype low in the Xiaguan Formation, which they date as a whole, noting that no fossils useful for dating have yet been found in its lower strata. The "early to middle Coniacian" of Xing and colleagues (2014) cites only that paper.
           region_code: CN-HA
           part_of: formation
         type_specimen:
@@ -118839,6 +118853,17 @@ genera:
         authors: Xu, X.; Zhao, X. J.; Lü, J. C.; Huang, W. B.; Li, Z. Y.; Dong, Z. M.
         described: 2000
     references:
+      - id: xing2014a
+        authors: Xing, H.; Wang, D.; Han, F.; Sullivan, C.; Ma, Q.; He, Y.; Hone, D. W. E.; Yan, R.; Du, F.; Xu, X.
+        year: 2014
+        title: "A New Basal Hadrosauroid Dinosaur (Dinosauria: Ornithopoda) with Transitional Features from the Late Cretaceous of Henan Province, China"
+        journal: PLoS ONE
+        publisher: Public Library of Science (PLoS)
+        volume: "9"
+        issue: "6"
+        pages: e98821
+        doi: 10.1371/journal.pone.0098821
+        notes: Gives the horizon as "the early to middle Coniacian lower portion of the Xiaguan Formation", citing Wang and colleagues (2013).
       - id: xu2000a
         authors: Xu, X.; Zhao, X. J.; Lü, J. C.; Huang, W. B.; Li, Z. Y.; Dong, Z. M.
         year: 2000
@@ -118929,6 +118954,7 @@ genera:
           region_code: CN-GX
         type_specimen:
           specimen_id:
+            - FS-20-008
             - FS-20-007
           specimen_type: holotype
           institution: Fusui Specimen Repository
@@ -122541,7 +122567,7 @@ genera:
     pronunciation:
       phonetic: NOHD-o-SAWR-us
     etymology: From Latin nodus ('knob' or 'node') and Greek sauros ('lizard'), meaning 'knobbed lizard', in reference to the knobby armor on its body
-    description: Nodosaurus is a genus of herbivorous nodosaurid ankylosaurian dinosaur from the Late Cretaceous, the fossils of which were found in Niobrara County, Wyoming, in the Frontier Formation.
+    description: Nodosaurus is a genus of herbivorous nodosaurid ankylosaurian dinosaur from the Late Cretaceous, the fossils of which were found in Albany County, Wyoming, in the Frontier Formation.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -122830,7 +122856,7 @@ genera:
     pronunciation:
       phonetic: NOP-chuh-SPON-dih-lus
     etymology: Named for Baron Franz Nopcsa, the paleontologist who first described the fossil material, combined with Greek 'spondylos' meaning 'vertebra'; translates as 'Nopcsa's vertebra'.
-    description: Nopcsaspondylus is a dubious genus of rebbachisaurid sauropod dinosaur from the Cenomanian-aged (Upper Cretaceous) Candeleros Formation of Neuquén, Argentina. It is based on a now-lost back vertebra described by Nopcsa in 1902 but not named at the time. The specimen had a small vertebral body and large hollows, now known to be typical of rebbachisaurids.
+    description: Nopcsaspondylus is a dubious genus of rebbachisaurid sauropod dinosaur from the Upper Cretaceous of Neuquén, Argentina. It is based on a now-lost back vertebra described by Nopcsa in 1902 but not named at the time. The specimen had a small vertebral body and large hollows, now known to be typical of rebbachisaurids.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -122852,7 +122878,7 @@ genera:
         id: "4967479"
     species:
       - name: Nopcsaspondylus alarconensis
-        etymology: Named for Barda Alarcón, the locality in Neuquén, Argentina, where the holotype vertebra was discovered.
+        etymology: Named for Barda Alarcón, in Neuquén, Argentina, the locality to which the holotype vertebra was long attributed.
         status: valid
         type_species: true
         period:
@@ -123231,7 +123257,7 @@ genera:
     pronunciation:
       phonetic: noh-THRON-i-kus
     etymology: From Greek 'nothros' meaning 'slothful' and 'onyx' meaning 'claw'; translates as 'slothful claw', a reference to its therizinosaur-like elongated claws and presumed slow-moving herbivorous habits.
-    description: Nothronychus is a genus of therizinosaurid theropod dinosaurs that lived in North America during the Late Cretaceous period. The type species, Nothronychus mckinleyi, was described by James Kirkland and Douglas G. Wolfe in 2001. It was recovered near New Mexico's border with Arizona, in an area known as the Zuni Basin, from rocks assigned to the Moreno Hill Formation, dating to the Turonian stage of the Late Cretaceous. A second specimen, described in 2009 as a second species, Nothronychus graffami, was found in the Tropic Shale of Utah, dating to between one million and 500,000 years older than N. mckinleyi.
+    description: Nothronychus is a genus of therizinosaurid theropod dinosaurs that lived in North America during the Late Cretaceous period. The type species, Nothronychus mckinleyi, was described by James Kirkland and Douglas G. Wolfe in 2001. It was recovered near New Mexico's border with Arizona, in an area known as the Zuni Basin, from rocks assigned to the Moreno Hill Formation, dating to the Turonian stage of the Late Cretaceous. A second specimen, described in 2009 as a second species, Nothronychus graffami, was found in the Tropic Shale of Utah; Hedrick and colleagues (2015) estimate it to be at least 1.5 and up to 3 million years older than N. mckinleyi.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -124068,7 +124094,7 @@ genera:
     etymology: From Koine Greek 'nouthetes' meaning 'one who admonishes' or 'a monitor', referring to the similarity of its teeth to those of a modern monitor lizard.
     pronunciation:
       phonetic: nuth-EE-teez
-    description: Nuthetes is a genus of coelurosaurian theropod dinosaur, either a dromaeosaurid or tyrannosauroid, known only from fossil teeth and jaw fragments found in rocks of the middle Berriasian age (Early Cretaceous) in the Cherty Freshwater Member of the Lulworth Formation in England and also the Angeac-Charente bonebed in France. If it was a dromaeosaurid, Nuthetes would have been a small predator.
+    description: Nuthetes is a genus of coelurosaurian theropod dinosaur, either a dromaeosaurid or tyrannosauroid, known only from fossil teeth and jaw fragments found in rocks of the middle Berriasian age (Early Cretaceous) in the Lulworth Formation in England and also the Angeac-Charente bonebed in France. If it was a dromaeosaurid, Nuthetes would have been a small predator.
     diet: carnivore
     locomotion: bipedal
     paleoenvironment:
@@ -147897,7 +147923,7 @@ genera:
           coordinates:
             - -26.039444
             - -65.335
-          notes: All described material comes from a single quarry about 36 m² in area. Hendrickx and colleagues (2024) place it 2.6 km south of the El Brete Estancia, but their own coordinate, their figure caption and the 3 km they give to the border with Tucumán to the south all put the site north of the estancia.
+          notes: All described material comes from a single quarry about 36 m² in area. Hendrickx and colleagues (2024) place it 2.6 km south of the El Brete Estancia in their text and 2.6 km north of it in a figure caption.
           region_code: AR-A
           part_of: formation
         type_specimen:
