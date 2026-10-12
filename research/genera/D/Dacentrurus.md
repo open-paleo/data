@@ -1,5 +1,21 @@
 # *Dacentrurus*
 
+## What stage does *Dacentrurus* take?
+
+*2026-10-12*
+
+**Conclusion.** Kimmeridgian. The record's lower Kimmeridge Clay rests on Galton's reading of Arkell, which places the pits' vertebrates in zones of the lower Kimmeridgian, and every source read gives the Kimmeridgian for the type; the Tithonian came only from the formation's range. Governs `stage: [Kimmeridgian]` on [*Dacentrurus armatus*](../../../genera/D/Dacentrurus.yml).
+
+**Evidence.**
+- galton1985d, p. 213: "The exact horizon is not known … but Arkell (1933) noted that most of the vertebrate remains came from the lower beds of the Kimmeridge Clay … (now the *Aulacostephanus eudoxus* and *A. mutabilis* zones of the lower Kimmeridgian, Cope et al., 1980)".
+- sánchez-fenollosa2025a: "Unknown horizon … Lower part of the Kimmeridge Clay Formation, Upper Jurassic (Kimmeridgian)".
+- maidment2008a, p. 372: "Kimmeridge Clay (Kimmeridgian: Late Jurassic), Swindon, Wiltshire".
+
+**Ruled out.**
+- *Kimmeridgian–Tithonian.* The formation's range, where the sources give the horizon's.
+
+**Open.** Nothing.
+
 ## Where and at what level in the Kimmeridge Clay was the *Dacentrurus armatus* holotype found?
 
 *2026-08-20*
@@ -37,4 +53,5 @@
 
 - `galton1985d`: Galton, P. M. (1985). British plated dinosaurs (Ornithischia, Stegosauridae). *Journal of Vertebrate Paleontology* 5(3): 211-254. doi:10.1080/02724634.1985.10011859
 - `sánchez-fenollosa2025a`: Sánchez-Fenollosa, S.; Cobos, A. (2025). New insights into the phylogeny and skull evolution of stegosaurian dinosaurs: an extraordinary cranium from the European Late Jurassic (Dinosauria: Stegosauria). *Vertebrate Zoology* 75: 165-189. doi:10.3897/vz.75.e146618
+- `maidment2008a`: Maidment, S. C. R.; Norman, D. B.; Barrett, P. M.; Upchurch, P. (2008). Systematics and phylogeny of Stegosauria (Dinosauria: Ornithischia). *Journal of Systematic Palaeontology* 6(4): 367-407. doi:10.1017/S1477201908002459
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.
