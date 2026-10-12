@@ -1,5 +1,20 @@
 # *Bashanosaurus*
 
+## What stage does *Bashanosaurus* take?
+
+*2026-10-12*
+
+**Conclusion.** Bajocian, from the describing paper's dating of the horizons bounding the holotype's own quarry at Yunyang. The 2026-08-03 widening of lower Shaximiao taxa to Bajocian–Oxfordian answers a dispute over the formation's age set by a maximum age for the beds at Zigong; a dating of this site comes before the formation-wide span, as a Yellow Cat taxon takes the stage of its own dated site. Governs `period: [Middle Jurassic]` and `stage: [Bajocian]` on [*Bashanosaurus primitivus*](../../../genera/B/Bashanosaurus.yml).
+
+**Evidence.**
+- hui2021a, Abstract: "We provide new U-Pb detrital zircon ages for horizons bounding the holotypic quarry in the Lower Member of the Shaximiao Formation, Yunyang, Chongqing Municipality, China, which indicate a Middle Jurassic (Bajocian) age."
+- hui2021a, Locality and Horizon: "Lower Member of the Shaximiao Formation, Middle Jurassic (Bajocian)".
+
+**Ruled out.**
+- *Bajocian–Oxfordian.* The formation-wide span; this quarry is dated.
+
+**Open.** Detrital zircon ages are maximum ages; a date that brackets the quarry from above would test the Bajocian.
+
 ## Which of the describing paper's two positions is the *Bashanosaurus* site?
 
 *2026-08-13*

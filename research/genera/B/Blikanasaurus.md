@@ -1,5 +1,20 @@
 # *Blikanasaurus*
 
+## Does *Blikanasaurus* take McPhee and colleagues' retraced position?
+
+*2026-10-12*
+
+**Conclusion.** Yes. McPhee and colleagues (2017) retraced the type locality in the field from the describing paper's bearing and print its position against the holotype's number; "probable" is their own hedge on their identification of the site, which counts as it did for the [*Massospondylus*](../M/Massospondylus.md) neotype's hill. The pair converts to -30.558281, 27.622328. Governs `location.coordinates` on [*Blikanasaurus cromptoni*](../../../genera/B/Blikanasaurus.yml).
+
+**Evidence.**
+- mcphee2017b, p. 445, Table 1: "Blikana | 30°33'29.81"S 27°37'20.38"E | 3027DA | *Blikanasaurus cromptoni* | SAM-PK 403".
+- mcphee2017b, p. 452: "The probable type locality for *Blikanasaurus* (Figs. 2G, 3; Table 1) was retraced with respect to the locality information given in Galton and Van Heerden (1985: 510): "1.6 km northeast of Blikana Trading Store, Herschel district"".
+
+**Ruled out.**
+- *No coordinate, on the hedge.* The authors identify the site and print its position.
+
+**Open.** Nothing.
+
 ## Where was the *Blikanasaurus* holotype found?
 
 *2026-08-14*
@@ -17,6 +32,6 @@
 
 ## References
 
-- `galton1985b`: Galton, P. M.; Van Heerden, J. (1985). Partial hindlimb of Blikanasaurus cromptoni n. gen. and n. sp.,representing a new family of prosauropod dinosaurs from the upper triassic of South Africa. *Geobios* 18(4): 509-516. doi:10.1016/s0016-6995(85)80003-6
 - `mcphee2017b`: McPhee, B. W.; Bordy, E. M.; Sciscio, L.; Choiniere, J. N. (2017). The sauropodomorph biostratigraphy of the Elliot Formation of southern Africa: tracking the evolution of Sauropodomorpha across the Triassic-Jurassic boundary. *Acta Palaeontologica Polonica* 62(3): 441-465.
+- `galton1985b`: Galton, P. M.; Van Heerden, J. (1985). Partial hindlimb of Blikanasaurus cromptoni n. gen. and n. sp.,representing a new family of prosauropod dinosaurs from the upper triassic of South Africa. *Geobios* 18(4): 509-516. doi:10.1016/s0016-6995(85)80003-6
 - `sues2004a`: Sues, H. D.; Reisz, R. R.; Hinic, S.; Raath, M. A. (2004). On the skull of Massospondylus carinatus Owen, 1854 (Dinosauria: Sauropodomorpha) from the Elliot and Clarens formations (Lower Jurassic) of South Africa. *Annals of Carnegie Museum* 73(4): 239-257. doi:10.5962/p.316084

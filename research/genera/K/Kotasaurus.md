@@ -1,5 +1,19 @@
 # *Kotasaurus*
 
+## Does *Kotasaurus* take the lower part of the Kota Formation?
+
+*2026-10-12*
+
+**Conclusion.** Yes. Bandyopadhyay and colleagues (2010) give both Kota sauropods from the formation's lower unit, a position in the rock, not the Lower Jurassic age Jain and colleagues (1975) give. Governs `location.part: lower` on [*Kotasaurus yamanpalliensis*](../../../genera/K/Kotasaurus.yml).
+
+**Evidence.**
+- bandyopadhyay2010a, p. 537: "The mudstone of the dominantly fluviatile lower unit has yielded two sauropod dinosaurs … *Barapasaurus* and *Kotasaurus*"; p. 564: "only two sauropods had been known from the lower part of the Kota Formation".
+
+**Ruled out.**
+- *No part, after Jain and colleagues' "Lower Jurassic".* That attaches to the age; Bandyopadhyay and colleagues attach the position to the formation.
+
+**Open.** Nothing.
+
 ## Is the coordinate printed for the *Kotasaurus* site in degrees and minutes?
 
 *2026-09-15*
@@ -19,5 +33,6 @@
 
 ## References
 
+- `bandyopadhyay2010a`: Bandyopadhyay, S.; Gillette, D. D.; Ray, S.; Sengupta, D. P. (2010). Osteology of Barapasaurus tagorei (Dinosauria: Sauropoda) from the Early Jurassic of India. *Palaeontology* 53(3): 533-569. doi:10.1111/j.1475-4983.2010.00933.x
 - `kareem2024a`: Kareem, T. A.; Chakraborty, S.; Wilson Mantilla, J. A. (2024). Sauropod tail clubs from the Kota Formation (Lower to Middle Jurassic) of India and their implications for early sauropod evolution. *Journal of Vertebrate Paleontology* 44(1): e2396814. doi:10.1080/02724634.2024.2396814
 - `yadagiri2001a`: Yadagiri, P. (2001). The osteology of Kotasaurus yamanpalliensis, a sauropod dinosaur from the Early Jurassic Kota Formation of India. *Journal of Vertebrate Paleontology* 21(2): 242-252. doi:10.1671/0272-4634(2001)021[0242:TOOKYA]2.0.CO;2

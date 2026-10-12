@@ -1,5 +1,19 @@
 # *Bolong*
 
+## Does *Bolong* take a part beside its member?
+
+*2026-10-12*
+
+**Conclusion.** No. Wu and Godefroit (2012) place the Dakangpu Member, equivalent to the Dawangzhangzi Beds, in the middle part of the Yixian Formation; "middle" locates the member in the formation, not a level within the member, so with the member recorded it adds nothing. The member stays at member rank, as the data records the Yixian beds for [*Liaoningosaurus*](../L/Liaoningosaurus.md) and [*Liaoningotitan*](../L/Liaoningotitan.md). Governs the empty `location.part` and `location.member: Dawangzhangzi` on [*Bolong yixianensis*](../../../genera/B/Bolong.yml).
+
+**Evidence.**
+- wu2012a, p. 296: "Dakangpu Member (equivalent to the Dawangzhangzi Beds) of the middle part of Yixian Formation".
+
+**Ruled out.**
+- *`part: middle`.* It attaches to the formation, a coarser unit than the member recorded.
+
+**Open.** Nothing.
+
 ## Which horizon and site is the *Bolong* holotype from?
 
 *2026-10-02*

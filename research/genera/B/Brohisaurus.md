@@ -1,5 +1,20 @@
 # *Brohisaurus*
 
+## Which numbers make up the *Brohisaurus* holotype?
+
+*2026-10-12*
+
+**Conclusion.** The eighteen numbers Malkani (2003) lists as the holotype, MSM-86-K to MSM-106-K without 95, 99 and 100. He calls the set the holotype and designates no syntypes, so the record keeps his term. Governs `type_specimen.specimen_id` (eighteen ids) on [*Brohisaurus kirthari*](../../../genera/B/Brohisaurus.yml).
+
+**Evidence.**
+- malkani2003a, p. 77: "Holotype: MSM-86-K, MSM-87-K, MSM-88-K, MSM-89-K, MSM-90-K, MSM-91-K, MSM-92-K, MSM-93-K, MSM-94-K, MSM-96-K, MSM-97-K, MSM-98-K, MSM-101-K, MSM-102-K, MSM-103-K, MSM-104-K, MSM-105-K, and MSM-106-K"; "Referred specimens: MSM-95-K".
+
+**Ruled out.**
+- *MSM-86-K alone.* It is the first of eighteen.
+- *Syntypes.* The designating paper calls the set the holotype.
+
+**Open.** Whether the fragments are one individual; Malkani calls them "part of collection of fragmentary pieces".
+
 ## Does the printed Sun Chaku coordinate locate the *Brohisaurus* holotype?
 
 *2026-08-14*

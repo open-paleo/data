@@ -1,5 +1,19 @@
 # *Beg*
 
+## Does *Beg* take the upper part of the Ulaanoosh Formation?
+
+*2026-10-12*
+
+**Conclusion.** Yes. The describing paper compares the matrix with the lowest part of the formation's upper member; the comparison is hedged but is the paper's own reading, as the [*Bonapartesaurus*](../B/Bonapartesaurus.md) record takes its paper's "might be correlative". Governs `location.part: upper` on [*Beg tse*](../../../genera/B/Beg.yml).
+
+**Evidence.**
+- yu2020a: "The rock matrix embedding Beg is similar to sediments of the lowest upper member of Ulaanoosh Formation in being composed of reddish-brown conglomerate-breccia and sandstones. This suggests the age of this specimen can be constrained between 113~94 Ma".
+
+**Ruled out.**
+- *The lower Ulaanoosh.* Paul (2024) gives "lower Ulaanoosh" in a compilation, which does not set a value alone and here contradicts the describing paper.
+
+**Open.** Nothing.
+
 ## Does *Beg tse* take the Aptian?
 
 *2026-10-07*

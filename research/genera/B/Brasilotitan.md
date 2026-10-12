@@ -1,5 +1,21 @@
 # *Brasilotitan*
 
+## Does Bandeira and colleagues' sentence place the *Brasilotitan* holotype in the Presidente Prudente Formation? (revisited)
+
+*2026-10-12*
+
+**Conclusion.** No. The sentence lists *Brasilotitan* and *Gondwanatitan* from the unit and names no locality, section or reason, as the [*Gondwanatitan*](../G/Gondwanatitan.md) note found for the same sentence; and both the Presidente Prudente and the Vale do Rio do Peixe crop out around the city of Presidente Prudente, so the site's place does not settle it. The record keeps the Adamantina Formation the describing paper gives. Governs `location.formation: Adamantina` on [*Brasilotitan nemophagus*](../../../genera/B/Brasilotitan.yml). Supersedes the 2026-08-14 entry.
+
+**Evidence.**
+- bandeira2016a, p. 17: "This unit has also revealed the presence of two other titanosaurs: *Brasilotitan nemophagus* [7] and *Gondwanatitan faustoi* [32]".
+- fernandes2000a, p. 726: the Presidente Prudente "ocorre nas cotas mais altas dos interflúvios regionais, abaixo das quais aflora a Formação Vale do Rio do Peixe" ("occurs at the highest elevations of the regional interfluves, below which the Vale do Rio do Peixe Formation crops out", translated).
+- machado2013a: the holotype is from the "Adamantina Formation".
+
+**Ruled out.**
+- *Presidente Prudente, on Bandeira and colleagues.* Their sentence gives no basis tied to the site.
+
+**Open.** Which of the units that replaced the Adamantina holds the Raposo Tavares site.
+
 ## Is the *Brasilotitan* holotype from the Presidente Prudente or the Adamantina Formation?
 
 *2026-08-14*
@@ -32,9 +48,9 @@
 
 ## References
 
-- `machado2013a`: Machado, E. B.; Avilla, L. dos S.; Nava, W. R.; Campos, D. de A.; Kellner, A. W. A. (2013). A new titanosaur sauropod from the Late Cretaceous of Brazil. *Zootaxa* 3701(3): 301. doi:10.11646/zootaxa.3701.3.1
 - `bandeira2016a`: Bandeira, K. L. N.; Medeiros Simbras, F.; Batista Machado, E.; de Almeida Campos, D.; Oliveira, G. R.; Kellner, A. W. A. (2016). A New Giant Titanosauria (Dinosauria: Sauropoda) from the Late Cretaceous Bauru Group, Brazil. *PLOS ONE* 11(10): e0163373. doi:10.1371/journal.pone.0163373
 - `fernandes2000a`: Fernandes, L. A.; Coimbra, A. M. (2000). Revisão estratigráfica da parte oriental da Bacia Bauru (Neocretáceo) [Stratigraphic review of the eastern portion of the Bauru Basin (Neocretaceous)]. *Revista Brasileira de Geociências* 30(4): 717-728. doi:10.25249/0375-7536.2000304717728
+- `machado2013a`: Machado, E. B.; Avilla, L. dos S.; Nava, W. R.; Campos, D. de A.; Kellner, A. W. A. (2013). A new titanosaur sauropod from the Late Cretaceous of Brazil. *Zootaxa* 3701(3): 301. doi:10.11646/zootaxa.3701.3.1
 - `santucci2022a`: Santucci, R. M.; Filippi, L. S. (2022). Last titans: Titanosaurs from the Campanian–Maastrichtian age. In *South American Sauropodomorph Dinosaurs: Record, Diversity and Evolution*, pp. 341-391. Springer International Publishing. doi:10.1007/978-3-030-95959-3_10
 - `poropat2023a`: Poropat, S. F.; Mannion, P. D.; Rigby, S. L.; Duncan, R. J.; Pentland, A. H.; Bevitt, J. J.; Sloan, T.; Elliott, D. A. (2023). A nearly complete skull of the sauropod dinosaur Diamantinasaurus matildae from the Upper Cretaceous Winton Formation of Australia and implications for the early evolution of titanosaurs. *Royal Society Open Science* 10(4): 221618. doi:10.1098/rsos.221618
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.
