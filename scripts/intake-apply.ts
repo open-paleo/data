@@ -369,8 +369,12 @@ function applyExtraction(
     if (!alreadyReferenced)
     {
         const key = extraction.citation_key;
-        const inStore = fs.existsSync(
-            path.join(root, "references", referenceBucket(key), `${key}.yml`));
+        const storeRelativePath = path.join("references", referenceBucket(key), `${key}.yml`);
+
+        // The bootstrap stages a new describing paper's entry beside the stub;
+        // promote.sh moves it into the store, so it counts as present here.
+        const inStore = fs.existsSync(path.join(root, storeRelativePath))
+            || fs.existsSync(path.join(stagingIntakeDir, extraction.genus, storeRelativePath));
 
         // Supplementary papers record their role as per-citation `notes` on the
         // in-file pointer; describing-paper notes are about the taxon, so they

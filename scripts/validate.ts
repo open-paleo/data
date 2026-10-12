@@ -1446,6 +1446,63 @@ for (const bucket of fs.readdirSync(referencesDirectory, { withFileTypes: true }
     }
 }
 
+// 11a. Uncited store entries — every store entry is cited from somewhere: a
+// genus, clade or stratigraphy record, a research note, another store entry,
+// a sign-off file or a skill's queue. An entry nothing cites is usually left
+// behind by an abandoned intake or a re-keyed citation.
+startCheck("Uncited store entries");
+
+const citingTextFiles = [
+    ...genusFiles,
+    ...cladeFiles,
+    ...stratigraphyFiles.values(),
+    ...referenceStoreFiles,
+    ...findMarkdownFiles(path.join(root, "research")),
+    ...findYamlFiles(path.join(root, ".claude", "skills")),
+    ...["excluded.yml", "flagged-signoffs.yml", "flagged-sources.yml", "institutions.yaml", "tree.yml"]
+        .map((fileName) => path.join(root, fileName)),
+];
+const citedKeyPattern = /\p{L}[\p{L}\p{M}\p{N}'-]*\d{4}[a-z]/gu;
+const citedKeys = new Set<string>();
+
+for (const filePath of citingTextFiles)
+{
+    let text: string;
+
+    try
+    {
+        text = fs.readFileSync(filePath, "utf8");
+    }
+    catch
+    {
+        continue;
+    }
+
+    // A store entry's own id line is not a citation of it.
+    if (filePath.startsWith(referencesDirectory))
+    {
+        text = text.replace(/^id: .*$/m, "");
+    }
+
+    for (const match of text.matchAll(citedKeyPattern))
+    {
+        citedKeys.add(match[0]);
+    }
+}
+
+for (const filePath of referenceStoreFiles)
+{
+    const key = path.basename(filePath, ".yml");
+
+    if (!citedKeys.has(key))
+    {
+        checkWarning(
+            "Uncited store entries",
+            filePath,
+            `'${key}' is cited by no record, research note or store entry; cite it or remove it`);
+    }
+}
+
 // 11b. Redundant DOI-pointer URLs — a reference `url` that merely points at
 // the reference's own DOI (e.g. http://dx.doi.org/{doi}) carries no extra
 // information, since any consumer can regenerate it from the `doi` field.

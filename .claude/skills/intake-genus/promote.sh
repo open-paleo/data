@@ -31,3 +31,19 @@ fi
 mkdir -p "$target_dir"
 cp "$final_yml" "$target_path"
 echo "Promoted $final_yml → $target_path"
+
+# The bootstrap stages a new describing paper's store entry under
+# $staging_dir/references/<bucket>/<key>.yml; it joins the store only now,
+# with the genus that cites it. An entry already in the store is kept.
+if [ -d "$staging_dir/references" ]; then
+    while IFS= read -r -d '' staged; do
+        relative="${staged#"$staging_dir"/}"
+        if [ -e "$relative" ]; then
+            echo "Kept existing $relative; staged copy not promoted."
+        else
+            mkdir -p "$(dirname "$relative")"
+            cp "$staged" "$relative"
+            echo "Promoted $staged → $relative"
+        fi
+    done < <(find "$staging_dir/references" -name '*.yml' -print0)
+fi

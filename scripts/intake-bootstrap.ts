@@ -24,17 +24,19 @@ import * as url from "node:url";
 import { stringify as stringifyYaml } from "yaml";
 
 import {
+    describingStoreEntry,
     enrichGenus,
     fetchPbdbTaxon,
+    toGenusYaml,
     walkParentChain,
 } from "./genus-enrichment.ts";
-import { toGenusYaml } from "./genus-enrichment.ts";
 import {
     citationKeyFor,
     findStoreKeyByDoi,
     readStoreCitationKeys,
     readStoreSiblings,
     resolveCitationKey,
+    writeStoreReference,
 } from "./utilities.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
@@ -423,6 +425,17 @@ async function main(): Promise<void>
         stringifyYaml(genusYaml, { lineWidth: 80 }),
         "utf8",
     );
+
+    // A new describing paper's store entry is staged beside the stub, at
+    // staging/intake/<Genus>/references/<bucket>/<key>.yml. promote.sh copies
+    // it into references/ with the genus, so a bootstrap that is abandoned or
+    // re-keyed leaves no uncited entry in the store.
+    const storeEntry = describingStoreEntry(reference, describing.key);
+
+    if (storeEntry !== null && !describing.alreadyInStore)
+    {
+        writeStoreReference(targetDir, storeEntry);
+    }
 
     const papersNeededBody = buildPapersNeededBody(
         genus,

@@ -12,7 +12,7 @@
 //   1. const taxon = await fetchPbdbTaxon(name);
 //   2. const chain = taxon?.parent_no ? await walkParentChain(taxon.parent_no) : [];
 //   3. const enriched = await enrichGenus(name, chain, taxon);
-//   4. const yaml = toGenusYaml(enriched, enriched.reference ?? null);
+//   4. const yaml = toGenusYaml(enriched, enriched.reference ?? null, describingKey);
 
 import * as path from "node:path";
 import * as url from "node:url";
@@ -23,7 +23,6 @@ import {
     collectAllKeys,
     loadInstitutionRegistry,
     loadRegionRegistry,
-    writeStoreReference,
 } from "./utilities.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
@@ -2118,6 +2117,46 @@ export async function enrichGenus(
 const massPerLengthCubedBounds = { min: 0.2, max: 50 };
 
 /**
+ * Builds the reference-store entry for the describing paper from the resolved
+ * DOI reference. The caller writes it under the genus's staging directory, not
+ * into `references/`: the store only takes the entry when the operator promotes
+ * the genus, so an abandoned or re-keyed bootstrap leaves nothing behind.
+ *
+ * @param reference - The resolved DOI reference, if available.
+ * @param describingKey - The resolved citation key for the describing paper,
+ *     or null.
+ * @returns The store entry, or null when the key or the reference's authors,
+ *     year or title are missing.
+ */
+export function describingStoreEntry(
+    reference: Record<string, string> | null,
+    describingKey: string | null,
+): Reference | null
+{
+    if (!describingKey || !reference || !reference.authors || !reference.year || !reference.title)
+    {
+        return null;
+    }
+
+    const storeEntry: Reference = {
+        id: describingKey,
+        authors: reference.authors,
+        year: parseInt(reference.year, 10),
+        title: reference.title,
+    };
+
+    for (const field of ["journal", "volume", "issue", "pages", "publisher", "doi"] as const)
+    {
+        if (reference[field])
+        {
+            storeEntry[field] = reference[field];
+        }
+    }
+
+    return storeEntry;
+}
+
+/**
  * Converts an enriched genus record into a GenusData YAML object.
  *
  * @param enriched - The enriched genus data.
@@ -2328,47 +2367,8 @@ export function toGenusYaml(
 
     genus.species = [species] as GenusData["species"];
 
-    if (describingKey && reference && reference.authors && reference.year && reference.title)
+    if (describingStoreEntry(reference, describingKey) !== null)
     {
-        const storeEntry: Reference = {
-            id: describingKey,
-            authors: reference.authors,
-            year: parseInt(reference.year, 10),
-            title: reference.title,
-        };
-
-        if (reference.journal)
-        {
-            storeEntry.journal = reference.journal;
-        }
-
-        if (reference.volume)
-        {
-            storeEntry.volume = reference.volume;
-        }
-
-        if (reference.issue)
-        {
-            storeEntry.issue = reference.issue;
-        }
-
-        if (reference.pages)
-        {
-            storeEntry.pages = reference.pages;
-        }
-
-        if (reference.publisher)
-        {
-            storeEntry.publisher = reference.publisher;
-        }
-
-        if (reference.doi)
-        {
-            storeEntry.doi = reference.doi;
-        }
-
-        writeStoreReference(root, storeEntry);
-
         genus.references = [{ id: describingKey }] as GenusData["references"];
         (species as Record<string, unknown>).erected_in = describingKey;
     }

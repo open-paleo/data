@@ -305,9 +305,11 @@ pointer. The script resolves each citation against the store directly:
 when the store file `references/<letter>/<key>.yml` exists, it adds the
 pointer; when it does **not** exist, the script **skips** that citation
 and emits a warning rather than writing an unresolved pointer — a pointer
-must resolve to a complete store entry. (The describing paper's store
-file is normally written at bootstrap when PBDB/Crossref supplied its
-metadata; a paper the bootstrap could not resolve is handled in 4b.)
+must resolve to a complete store entry. (When PBDB/Crossref supplied the
+describing paper's metadata, the bootstrap stages its store file under
+`staging/intake/<Genus>/references/`; apply counts a staged entry as
+present, and `promote.sh` copies it into `references/` with the genus. A
+paper the bootstrap could not resolve is handled in 4b.)
 
 ### Step 4b — Add missing reference-store entries
 
