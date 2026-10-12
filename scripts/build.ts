@@ -648,6 +648,21 @@ let bib = `% Open Paleo — CC BY 4.0
 `;
 
 /**
+ * Escapes a field value for BibTeX. A brace in a value unbalances the entry,
+ * a "%" comments out the rest of its line, and "&", "#", "_" and "$" are
+ * LaTeX special characters that stop typesetting when the field is printed.
+ *
+ * @param value - The raw field value.
+ * @returns The value with each special character backslash-escaped.
+ */
+function bibText(value: string | number): string
+{
+    return String(value).replace(
+        /[\\{}%&#_$]/g,
+        (character) => (character === "\\" ? "\\textbackslash{}" : `\\${character}`));
+}
+
+/**
  * Chooses the BibTeX entry type for a store reference. A thesis takes its
  * type from the degree; otherwise a `journal` makes an article, a `book` a
  * chapter, and a work with neither is a book when it names a publisher and a
@@ -693,32 +708,32 @@ for (const reference of [...referenceStore.values()].sort((first, second) => (fi
 
     if (reference.authors)
     {
-        fields.push(`  author = {${reference.authors}}`);
+        fields.push(`  author = {${bibText(reference.authors)}}`);
     }
 
     if (reference.year)
     {
-        fields.push(`  year = {${reference.year}}`);
+        fields.push(`  year = {${bibText(reference.year)}}`);
     }
 
     if (reference.title)
     {
-        fields.push(`  title = {${reference.title}}`);
+        fields.push(`  title = {${bibText(reference.title)}}`);
     }
 
     if (reference.journal)
     {
-        fields.push(`  journal = {${reference.journal}}`);
+        fields.push(`  journal = {${bibText(reference.journal)}}`);
     }
 
     if (reference.book)
     {
-        fields.push(`  booktitle = {${reference.book}}`);
+        fields.push(`  booktitle = {${bibText(reference.book)}}`);
     }
 
     if (reference.school && (entryType === "phdthesis" || entryType === "mastersthesis"))
     {
-        fields.push(`  school = {${reference.school}}`);
+        fields.push(`  school = {${bibText(reference.school)}}`);
     }
 
     if (reference.thesis === "habilitation")
@@ -729,34 +744,55 @@ for (const reference of [...referenceStore.values()].sort((first, second) => (fi
     {
         // @misc has no school field, so the awarding institution travels in
         // howpublished alongside the kind of work.
-        const institution = reference.school ? `, ${reference.school}` : "";
+        const institution = reference.school ? `, ${bibText(reference.school)}` : "";
 
         fields.push(`  howpublished = {Dissertation abstract${institution}}`);
     }
 
     if (reference.publisher && (entryType === "book" || entryType === "incollection"))
     {
-        fields.push(`  publisher = {${reference.publisher}}`);
+        fields.push(`  publisher = {${bibText(reference.publisher)}}`);
     }
 
     if (reference.volume)
     {
-        fields.push(`  volume = {${reference.volume}}`);
+        fields.push(`  volume = {${bibText(reference.volume)}}`);
     }
 
     if (reference.issue)
     {
-        fields.push(`  number = {${reference.issue}}`);
+        fields.push(`  number = {${bibText(reference.issue)}}`);
+    }
+
+    if (reference.series)
+    {
+        fields.push(`  series = {${bibText(reference.series)}}`);
+    }
+
+    if (reference.article_number)
+    {
+        fields.push(`  eid = {${bibText(reference.article_number)}}`);
     }
 
     if (reference.pages)
     {
-        fields.push(`  pages = {${reference.pages}}`);
+        fields.push(`  pages = {${bibText(reference.pages)}}`);
     }
 
+    if (reference.isbn)
+    {
+        fields.push(`  isbn = {${bibText(reference.isbn)}}`);
+    }
+
+    // doi and url are read verbatim by BibTeX styles, so they are not escaped.
     if (reference.doi)
     {
         fields.push(`  doi = {${reference.doi}}`);
+    }
+
+    if (reference.url)
+    {
+        fields.push(`  url = {${reference.url}}`);
     }
 
     bib += `@${entryType}{${reference.id},\n${fields.join(",\n")}\n}\n\n`;
