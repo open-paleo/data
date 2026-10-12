@@ -177,20 +177,38 @@ Fix any failures before requesting review.
 
 ## Adding a New Validation Check
 
-1. Add a new section in `validate.ts` following the existing pattern:
+1. Add a check function to the family module under `validate/` it belongs
+   to (`records.ts`, `references.ts`, `stratigraphy.ts`, `prose.ts`,
+   `specimens.ts` or `research.ts`). It takes the loaded context and pulls
+   out what it reads:
 
     ```typescript
-    startCheck("My new check");
-
-    for (const [filePath, doc] of genusParsed)
+    /**
+     * The "My new check" check.
+     *
+     * What it catches and why.
+     *
+     * @param context - The loaded data the checks read.
+     */
+    export function checkMyNewCheck(context: ValidationContext): void
     {
-        // ... validation logic ...
-        checkError("My new check", filePath, "description of the problem");
+        const { genusParsed } = context;
+
+        for (const [filePath, doc] of genusParsed)
+        {
+            // ... validation logic ...
+            checkError("My new check", filePath, "description of the problem");
+        }
     }
     ```
 
-2. Update the check count in the main `README.md` if referenced
-3. Run `npm run validate` locally to verify
+   Data more than one check reads is loaded once in `validate/context.ts`.
+
+2. Add `["My new check", checkMyNewCheck]` to the `checks` list in
+   `validate.ts`, where the summary should list it. A check that throws is
+   reported as an error against itself and the others still run.
+3. Update the check count in the main `README.md` if referenced
+4. Run `npm run validate` locally to verify
 
 ## Modifying Build Outputs
 

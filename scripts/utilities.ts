@@ -579,8 +579,8 @@ export function citationKeyFor(authors: string, year: string | number): string
 
 /**
  * Resolves a proposed citation key against the existing keys so that every key
- * carries a disambiguation letter. Mirrors the rule enforced by validate.ts
- * check #12c.
+ * carries a disambiguation letter. Mirrors the rule enforced by the
+ * "Reference key disambiguation" check.
  *
  * Cases:
  *
