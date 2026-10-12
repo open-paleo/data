@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-10-12T06:54:49.133Z
+  built_at: 2026-10-12T08:05:29.137Z
   clade_count: 188
   genus_count: 1425
   license: CC-BY-4.0
@@ -62012,6 +62012,7 @@ genera:
           specimen_type: holotype
           institution: National Museum of Natural History, Smithsonian Institution
           material: Nearly complete skull and postcranial skeleton.
+          notes: Marsh (1892) gives no number; Gilmore (1917) is the earliest paper read to give the type as No. 2414, U.S.N.M.
         diagnostic_features:
           - Ischial shaft markedly elongate and straight.
           - Pubis with a large, expanded prepubic process and only a small remnant of the postpubic process.
@@ -62098,6 +62099,15 @@ genera:
           - sereno2025a
           - saitta2026a
     references:
+      - id: gilmore1917a
+        authors: Gilmore, C. W.
+        year: 1917
+        title: Brachyceratops, a ceratopsian dinosaur from the Two Medicine Formation of Montana, with notes on associated fossil reptiles
+        journal: United States Geological Survey Professional Paper
+        publisher: United States Geological Survey
+        volume: "103"
+        pages: 1-45
+        notes: Gives the type of Trachodon annectens as "No. 2414, U.S.N.M.".
       - id: lambe1917a
         authors: Lambe, L. M.
         year: 1917
@@ -62586,7 +62596,7 @@ genera:
     etymology: "From Elal (the god of the Tehuelche people of Chubut Province, Argentina) + Greek titan (giant): referencing local indigenous mythology and the animal's great size."
     pronunciation:
       phonetic: EE-lal-TIE-tan
-    description: Elaltitan is an extinct genus of large lithostrotian titanosaur sauropod dinosaur known from the Late Cretaceous (mid Cenomanian to Turonian stage) of Chubut Province, southern Argentina. It contains a single species, Elaltitan lilloi.
+    description: Elaltitan is an extinct genus of large lithostrotian titanosaur sauropod dinosaur known from the Late Cretaceous of Chubut Province, southern Argentina. It contains a single species, Elaltitan lilloi.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -62617,8 +62627,11 @@ genera:
             - Late Cretaceous
           stage:
             - Coniacian
+            - Santonian
+            - Campanian
+            - Maastrichtian
           from_ma: 89.8
-          to_ma: 85.7
+          to_ma: 66
         location:
           country: AR
           locality: Río Senguerr bend
@@ -63022,7 +63035,7 @@ genera:
         volume: "494"
         pages: 101-120
         doi: 10.1016/j.palaeo.2017.10.023
-        notes: Places the holotype material in the Western Sayr and states that its precise site was never recorded.
+        notes: Treats ZPAL MgD-I/98, a specimen Osmólska (1981) referred to the species, as the holotype, and says its precise site in the Western Sayr is not known.
     taxonomy:
       - Life
       - Animalia
@@ -63233,9 +63246,9 @@ genera:
           locality: Gadoufaoua
           region: Agadez
           formation: Elrhaz
-          part: upper
+          bed: GAD 5
+          notes: Galton and Taquet (1982) place the holotype in "the region of niveau des Innocents", at level GAD 5 in the upper part of the Elrhaz Formation.
           region_code: NE-1
-          part_of: formation
         type_specimen:
           specimen_id:
             - MNHN GDF 332
@@ -63251,6 +63264,15 @@ genera:
         authors: Galton, P. M.
         described: 2009
     references:
+      - id: galton1982a
+        authors: Galton, P. M.; Taquet, P.
+        year: 1982
+        title: Valdosaurus, a hypsilophodontid dinosaur from the Lower Cretaceous of Europe and Africa
+        journal: Geobios
+        volume: "15"
+        issue: "2"
+        pages: 147-159
+        notes: Names the species, as Valdosaurus nigeriensis, on GDF 332, from "GAD 5, upper part of El Rhaz formation".
       - id: galton2009a
         authors: Galton, P. M.
         year: 2009
@@ -64672,13 +64694,13 @@ genera:
           to_ma: 165.3
         location:
           country: CN
-          locality: Banqing Houshanliangzi
+          locality: Banqing Houshanliangzi, Jiangyi
           region: Yunnan
           formation: Zhanghe
           region_code: CN-YN
         type_specimen:
           specimen_id:
-            - CPM 165
+            - CXMVZA 165
           specimen_type: holotype
           institution: Chuxiong Prefectural Museum
           material: Eight dorsal vertebrae, a partial sacrum, a right ilium, a right complete pubis, two incomplete ischia, one complete right tibia, and both femora
@@ -65351,7 +65373,10 @@ genera:
           region: Alberta
           formation: Horseshoe Canyon
           member: Carbon
+          part: middle
+          notes: Eberth and Kamo (2020) place the holotype "in the middle Carbon Member", 13.5 m above the member's base.
           region_code: CA-AB
+          part_of: member
         type_specimen:
           specimen_id:
             - TMP 2002.057.0007
@@ -65832,7 +65857,7 @@ genera:
           to_ma: 72.2
         location:
           country: CA
-          locality: John Neills Ranch
+          locality: about 1/4 mile above John Neills Ranch, east side of the Red Deer River
           region: Alberta
           formation: Horseshoe Canyon
           region_code: CA-AB
@@ -66201,6 +66226,7 @@ genera:
           country: FR
           region: Meuse
           locality: Louppy-le-Château
+          notes: Allain (2005) gives the horizon as the "Phosphate-bearing beds of La Penthiève, Mammilatum Zone, Lower Cretaceous, lower Albian".
           region_code: FR-55
         size:
           length_m:
@@ -67613,7 +67639,7 @@ genera:
           to_ma: 72.2
         location:
           country: CA
-          locality: near mouth of Berry Creek
+          locality: CMN locality P-189704, east side of the mouth of Berry Creek
           region: Alberta
           formation: Dinosaur Park
           region_code: CA-AB
@@ -68156,7 +68182,7 @@ genera:
           to_ma: 100.5
         location:
           country: ES
-          locality: Santa María coal mine, Ariño
+          locality: AR-1, Santa María coal mine, Ariño
           region: Teruel
           formation: Escucha
           part: lower
@@ -68266,7 +68292,7 @@ genera:
           country: ZA
           region: Eastern Cape
           formation: Elliot
-          locality: about thirty miles from the town of Aliwal North
+          locality: Stormberg range of mountains, about thirty miles from the town of Aliwal North
           part: lower
           region_code: ZA-EC
           part_of: formation
@@ -68328,7 +68354,7 @@ genera:
         issue: "5"
         pages: 671-676
         doi: 10.1016/s0016-6995(85)80065-6
-        notes: Figured the lectotype femur and argued Melanorosaurus readi is not a junior synonym of Euskelosaurus.
+        notes: Figured the lectotype femur, from "the lower Elliot Beds of South Africa", and argued Melanorosaurus readi is not a junior synonym of Euskelosaurus.
       - id: yates2003a
         authors: Yates, A. M.; Kitching, J. W.
         year: 2003
@@ -68356,16 +68382,6 @@ genera:
         pages: 352-356
         doi: 10.1017/S0016756800176587
         notes: Coined Orinosaurus (=Orosaurus) capensis, later referred to Euskelosaurus.
-      - id: galton1985d
-        authors: Galton, P. M.
-        year: 1985
-        title: British plated dinosaurs (Ornithischia, Stegosauridae)
-        journal: Journal of Vertebrate Paleontology
-        volume: "5"
-        issue: "3"
-        pages: 211-254
-        doi: 10.1080/02724634.1985.10011859
-        notes: Places the holotype in the lower Elliot Formation.
     taxonomy:
       - Life
       - Animalia
@@ -68468,7 +68484,7 @@ genera:
         volume: "248"
         pages: 53-134
         doi: 10.1098/rstb.1964.0009
-        notes: Gives the holotype's locality as Webb's Pit at Summertown, near Oxford.
+        notes: Gives the holotype's locality as the "Summertown brick pit, Wolvercot, near Oxford".
       - id: sadleir2008a
         authors: Sadleir, R.; Barrett, P. M.; Powell, H. P.
         year: 2008
@@ -138756,7 +138772,7 @@ genera:
           to_ma: 100.5
         location:
           country: ES
-          locality: Site AR-1, Santa María Mine, Ariño
+          locality: AR-1, Santa María coal mine, Ariño
           region: Teruel
           formation: Escucha
           region_code: ES-TE
