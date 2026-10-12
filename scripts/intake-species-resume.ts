@@ -17,16 +17,15 @@ import * as fs from "node:fs";
 import * as path from "node:path";
 import * as url from "node:url";
 
-import { getCorpusDir, getWorkingDir } from "./corpus-path.ts";
-import { readBibCitationKeys, resolveCitationKey } from "./utilities.ts";
+import { getWorkingDir } from "./corpus-path.ts";
 import { renderSchemaLines, speciesExtractionFields } from "./intake-types.ts";
+import { parseResumeArguments, prepareResume, writePrompts } from "./intake-shared.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
 const root = path.join(scriptDir, "..");
 
 const stagingDir = path.join(root, "staging", "intake-species");
-const referencesBibPath = path.join(root, "dist", "references.bib");
 
 /**
  * One species extraction prompt: a describing or supplementary paper
@@ -74,66 +73,6 @@ type SpeciesPromptEntry = {
      */
     prompt: string;
 };
-
-/**
- * Parsed `papers-needed.md` content.
- */
-type ParsedPapers = {
-    fetched: Array<{ key: string; isDescribing: boolean }>;
-    pending: Array<string>;
-};
-
-/**
- * Parses `papers-needed.md` for fetched-vs-pending citation keys.
- *
- * @param markdown - Body of `papers-needed.md`.
- * @returns Parsed paper status.
- */
-function parsePapersNeeded(markdown: string): ParsedPapers
-{
-    const fetched = new Array<{ key: string; isDescribing: boolean }>();
-    const pending = new Array<string>();
-
-    let inDescribing = false;
-
-    for (const line of markdown.split("\n"))
-    {
-        if (/^##\s+Describing paper/i.test(line))
-        {
-            inDescribing = true;
-            continue;
-        }
-        else if (/^##\s+/.test(line))
-        {
-            inDescribing = false;
-        }
-
-        const match = line.match(/^- \[( |x|X)\]\s+\*\*([^*]+)\*\*/);
-
-        if (!match)
-        {
-            continue;
-        }
-
-        const key = match[2].trim();
-
-        if (key === "citation_key" || /unknown/i.test(key))
-        {
-            continue;
-        }
-
-        if (match[1] === "x" || match[1] === "X")
-        {
-            fetched.push({ key, isDescribing: inDescribing });
-        }
-        else
-        {
-            pending.push(key);
-        }
-    }
-
-    return { fetched, pending };
-}
 
 /**
  * Builds the dual-source extraction prompt for a single paper.
@@ -204,40 +143,22 @@ function buildSpeciesPromptString(
  */
 function main(): void
 {
-    const args = process.argv.slice(2);
-    const positional = new Array<string>();
-    let corpusDir = getCorpusDir();
+    let genus: string;
+    let species: string;
+    let corpusDir: string;
 
-    for (let index = 0; index < args.length; index += 1)
+    try
     {
-        const argument = args[index];
-
-        if (argument === "--corpus")
-        {
-            corpusDir = args[index + 1] ?? corpusDir;
-            index += 1;
-        }
-        else if (argument.startsWith("--"))
-        {
-            process.stderr.write(`Unknown argument: ${argument}\n`);
-            process.exit(2);
-        }
-        else
-        {
-            positional.push(argument);
-        }
+        const parsed = parseResumeArguments(process.argv.slice(2), 2, "Usage: intake-species-resume <Genus> <species> [--corpus <path>]");
+        [genus, species] = parsed.positional;
+        corpusDir = parsed.corpusDir;
     }
-
-    if (positional.length !== 2)
+    catch (error)
     {
-        process.stderr.write(
-            "Usage: intake-species-resume <Genus> <species> [--corpus <path>]\n",
-        );
+        process.stderr.write(`${(error as Error).message}\n`);
         process.exit(2);
     }
 
-    const [genus, species] = positional;
-    const corpusMarkdownDir = path.join(corpusDir, "markdown");
     const targetDir = path.join(stagingDir, `${genus}-${species}`);
 
     if (!fs.existsSync(targetDir))
@@ -248,137 +169,24 @@ function main(): void
         process.exit(1);
     }
 
-    const papersNeededPath = path.join(targetDir, "papers-needed.md");
-
-    if (!fs.existsSync(papersNeededPath))
+    const { papers, markdownPaths, extractionsDir } = prepareResume(targetDir, corpusDir);
+    const wikipediaCachePath = path.join(getWorkingDir(), "wikipedia", `${genus}.json`);
+    const wikipediaCacheResolved = fs.existsSync(wikipediaCachePath) ? wikipediaCachePath : null;
+    const promptEntries = papers.fetched.map((paper) =>
     {
-        process.stderr.write(`Missing ${papersNeededPath}\n`);
-        process.exit(1);
-    }
-
-    if (!fs.existsSync(corpusMarkdownDir))
-    {
-        process.stderr.write(
-            `Corpus markdown directory not found at ${corpusMarkdownDir}\n`,
-        );
-        process.exit(1);
-    }
-
-    const wikipediaCachePath = path.join(
-        getWorkingDir(),
-        "wikipedia",
-        `${genus}.json`,
-    );
-    const wikipediaCacheResolved = fs.existsSync(wikipediaCachePath)
-        ? wikipediaCachePath
-        : null;
-
-    const papers = parsePapersNeeded(fs.readFileSync(papersNeededPath, "utf8"));
-
-    if (papers.fetched.length === 0)
-    {
-        process.stderr.write(
-            `No papers marked as fetched in ${papersNeededPath}.\n`
-            + "Tick at least one `- [x]` checkbox before resuming.\n",
-        );
-
-        if (papers.pending.length > 0)
-        {
-            process.stderr.write(`Pending: ${papers.pending.join(", ")}\n`);
-        }
-
-        process.exit(1);
-    }
-
-    const bibKeys = readBibCitationKeys(referencesBibPath);
-    const collisions = new Array<{ key: string; suggested: string; reason: string }>();
-
-    for (const paper of papers.fetched)
-    {
-        const resolution = resolveCitationKey(paper.key, bibKeys);
-
-        if (resolution.collided)
-        {
-            collisions.push({
-                key: paper.key,
-                suggested: resolution.resolvedKey,
-                reason: resolution.reason ?? "",
-            });
-        }
-    }
-
-    if (collisions.length > 0)
-    {
-        process.stderr.write("Citation key collisions detected:\n");
-
-        for (const collision of collisions)
-        {
-            process.stderr.write(`  - "${collision.key}": ${collision.reason}\n`);
-            process.stderr.write(
-                `    Use "${collision.suggested}" instead. Update papers-needed.md and rename `
-                + `${corpusMarkdownDir}/${collision.key}.md → ${collision.suggested}.md.\n`,
-            );
-        }
-
-        process.exit(1);
-    }
-
-    const missingMarkdown = new Array<string>();
-    const extractionsDir = path.join(targetDir, "extractions");
-    fs.mkdirSync(extractionsDir, { recursive: true });
-
-    const promptEntries = new Array<SpeciesPromptEntry>();
-
-    for (const paper of papers.fetched)
-    {
-        const markdownPath = path.join(corpusMarkdownDir, `${paper.key}.md`);
-
-        if (!fs.existsSync(markdownPath))
-        {
-            missingMarkdown.push(paper.key);
-            continue;
-        }
-
-        const outputPath = path.join(extractionsDir, `${paper.key}.json`);
-
         const partial: Omit<SpeciesPromptEntry, "prompt"> = {
             genus,
             species,
             citation_key: paper.key,
-            markdown_path: markdownPath,
+            markdown_path: markdownPaths.get(paper.key)!,
             wikipedia_cache_path: wikipediaCacheResolved,
-            output_path: outputPath,
+            output_path: path.join(extractionsDir, `${paper.key}.json`),
             is_describing: paper.isDescribing,
         };
 
-        promptEntries.push({
-            ...partial,
-            prompt: buildSpeciesPromptString(partial),
-        });
-    }
-
-    if (missingMarkdown.length > 0)
-    {
-        process.stderr.write(
-            "The following papers are marked fetched in papers-needed.md but "
-            + "are missing from the corpus markdown directory:\n",
-        );
-
-        for (const key of missingMarkdown)
-        {
-            process.stderr.write(`  - ${corpusMarkdownDir}/${key}.md\n`);
-        }
-
-        process.stderr.write("\nFix the corpus and re-run.\n");
-        process.exit(1);
-    }
-
-    const promptsPath = path.join(targetDir, "prompts.jsonl");
-    fs.writeFileSync(
-        promptsPath,
-        promptEntries.map((entry) => JSON.stringify(entry)).join("\n") + "\n",
-        "utf8",
-    );
+        return { ...partial, prompt: buildSpeciesPromptString(partial) };
+    });
+    const promptsPath = writePrompts(targetDir, promptEntries);
 
     process.stdout.write(`Resumed ${genus} ${species}.\n`);
     process.stdout.write(`  Prompts written: ${promptsPath}\n`);

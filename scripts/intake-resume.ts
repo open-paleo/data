@@ -25,16 +25,14 @@ import * as fs from "node:fs";
 import * as path from "node:path";
 import * as url from "node:url";
 
-import { getCorpusDir } from "./corpus-path.ts";
-import { readBibCitationKeys, resolveCitationKey } from "./utilities.ts";
 import { intakeExtractionFields, renderSchemaLines } from "./intake-types.ts";
+import { parseResumeArguments, prepareResume, writePrompts } from "./intake-shared.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
 const root = path.join(scriptDir, "..");
 
 const stagingIntakeDir = path.join(root, "staging", "intake");
-const referencesBibPath = path.join(root, "dist", "references.bib");
 
 /**
  * One extraction prompt: a describing or supplementary paper that
@@ -72,85 +70,6 @@ type IntakePromptEntry = {
      */
     prompt: string;
 };
-
-/**
- * Parsed papers-needed.md: the citation keys the user has marked
- * fetched, in the order they appear, plus which one is the
- * describing paper.
- */
-type ParsedPapers = {
-    /**
-     * Citation keys the user has explicitly marked complete via `[x]`.
-     * The first entry under "## Describing paper" is treated as the
-     * describing paper.
-     */
-    fetched: Array<{ key: string; isDescribing: boolean }>;
-
-    /**
-     * Citation keys still marked as `[ ]` (unfetched). Surfaced in the
-     * resume report so the user knows what is blocking progress.
-     */
-    pending: Array<string>;
-};
-
-/**
- * Parses `papers-needed.md` for fetched-vs-pending citation keys.
- *
- * @param markdown - Body of `papers-needed.md`.
- * @returns Parsed paper status.
- */
-function parsePapersNeeded(markdown: string): ParsedPapers
-{
-    const fetched = new Array<{ key: string; isDescribing: boolean }>();
-    const pending = new Array<string>();
-
-    let inDescribing = false;
-
-    for (const line of markdown.split("\n"))
-    {
-        if (/^##\s+Describing paper/i.test(line))
-        {
-            inDescribing = true;
-            continue;
-        }
-        else if (/^##\s+/.test(line))
-        {
-            inDescribing = false;
-        }
-
-        const match = line.match(/^- \[( |x|X)\]\s+\*\*([^*]+)\*\*/);
-
-        if (!match)
-        {
-            continue;
-        }
-
-        const key = match[2].trim();
-
-        // Skip the placeholder template entry from the optional section.
-        if (key === "citation_key")
-        {
-            continue;
-        }
-
-        // Skip the "Describing paper unknown" sentinel.
-        if (/unknown/i.test(key))
-        {
-            continue;
-        }
-
-        if (match[1] === "x" || match[1] === "X")
-        {
-            fetched.push({ key, isDescribing: inDescribing });
-        }
-        else
-        {
-            pending.push(key);
-        }
-    }
-
-    return { fetched, pending };
-}
 
 /**
  * Builds the literal extraction prompt sent to the per-paper agent.
@@ -204,44 +123,6 @@ function buildIntakePromptString(entry: Omit<IntakePromptEntry, "prompt">): stri
 }
 
 /**
- * Parses the CLI arguments for the resume step.
- *
- * @param argv - Raw arguments (typically `process.argv.slice(2)`).
- * @returns The genus name and corpus directory to use.
- */
-function parseArguments(argv: Array<string>): { genus: string; corpusDir: string }
-{
-    const positional = new Array<string>();
-    let corpusDir = getCorpusDir();
-
-    for (let index = 0; index < argv.length; index += 1)
-    {
-        const argument = argv[index];
-
-        if (argument === "--corpus")
-        {
-            corpusDir = argv[index + 1] ?? corpusDir;
-            index += 1;
-        }
-        else if (argument.startsWith("--"))
-        {
-            throw new Error(`Unknown argument: ${argument}`);
-        }
-        else
-        {
-            positional.push(argument);
-        }
-    }
-
-    if (positional.length !== 1)
-    {
-        throw new Error("Usage: intake-resume <Genus> [--corpus <path>]");
-    }
-
-    return { genus: positional[0], corpusDir };
-}
-
-/**
  * Resume entry point.
  */
 function main(): void
@@ -251,8 +132,8 @@ function main(): void
 
     try
     {
-        const parsed = parseArguments(process.argv.slice(2));
-        genus = parsed.genus;
+        const parsed = parseResumeArguments(process.argv.slice(2), 1, "Usage: intake-resume <Genus> [--corpus <path>]");
+        [genus] = parsed.positional;
         corpusDir = parsed.corpusDir;
     }
     catch (error)
@@ -261,7 +142,6 @@ function main(): void
         process.exit(2);
     }
 
-    const corpusMarkdownDir = path.join(corpusDir, "markdown");
     const targetDir = path.join(stagingIntakeDir, genus);
 
     if (!fs.existsSync(targetDir))
@@ -272,130 +152,20 @@ function main(): void
         process.exit(1);
     }
 
-    const papersNeededPath = path.join(targetDir, "papers-needed.md");
-
-    if (!fs.existsSync(papersNeededPath))
+    const { papers, markdownPaths, extractionsDir } = prepareResume(targetDir, corpusDir);
+    const promptEntries = papers.fetched.map((paper) =>
     {
-        process.stderr.write(`Missing ${papersNeededPath}\n`);
-        process.exit(1);
-    }
-
-    if (!fs.existsSync(corpusMarkdownDir))
-    {
-        process.stderr.write(
-            `Corpus markdown directory not found at ${corpusMarkdownDir}\n`,
-        );
-        process.exit(1);
-    }
-
-    const papers = parsePapersNeeded(fs.readFileSync(papersNeededPath, "utf8"));
-
-    if (papers.fetched.length === 0)
-    {
-        process.stderr.write(
-            `No papers marked as fetched in ${papersNeededPath}.\n`
-            + "Tick at least one `- [x]` checkbox before resuming.\n",
-        );
-
-        if (papers.pending.length > 0)
-        {
-            process.stderr.write(`Pending: ${papers.pending.join(", ")}\n`);
-        }
-
-        process.exit(1);
-    }
-
-    // Validate that none of the user-pasted keys would collide with
-    // existing biblatex-suffix variants. This catches cases like
-    // pasting `- [x] **funston2020**` when the bib already has
-    // `funston2020a` and `funston2020b`.
-    const bibKeys = readBibCitationKeys(referencesBibPath);
-    const collisions = new Array<{ key: string; suggested: string; reason: string }>();
-
-    for (const paper of papers.fetched)
-    {
-        const resolution = resolveCitationKey(paper.key, bibKeys);
-
-        if (resolution.collided)
-        {
-            collisions.push({
-                key: paper.key,
-                suggested: resolution.resolvedKey,
-                reason: resolution.reason ?? "",
-            });
-        }
-    }
-
-    if (collisions.length > 0)
-    {
-        process.stderr.write("Citation key collisions detected:\n");
-
-        for (const collision of collisions)
-        {
-            process.stderr.write(`  - "${collision.key}": ${collision.reason}\n`);
-            process.stderr.write(
-                `    Use "${collision.suggested}" instead. Update papers-needed.md and rename `
-                + `${corpusMarkdownDir}/${collision.key}.md → ${collision.suggested}.md.\n`,
-            );
-        }
-
-        process.exit(1);
-    }
-
-    const missingMarkdown = new Array<string>();
-    const extractionsDir = path.join(targetDir, "extractions");
-    fs.mkdirSync(extractionsDir, { recursive: true });
-
-    const promptEntries = new Array<IntakePromptEntry>();
-
-    for (const paper of papers.fetched)
-    {
-        const markdownPath = path.join(corpusMarkdownDir, `${paper.key}.md`);
-
-        if (!fs.existsSync(markdownPath))
-        {
-            missingMarkdown.push(paper.key);
-            continue;
-        }
-
-        const outputPath = path.join(extractionsDir, `${paper.key}.json`);
-
         const partial: Omit<IntakePromptEntry, "prompt"> = {
             genus,
             citation_key: paper.key,
-            markdown_path: markdownPath,
-            output_path: outputPath,
+            markdown_path: markdownPaths.get(paper.key)!,
+            output_path: path.join(extractionsDir, `${paper.key}.json`),
             is_describing: paper.isDescribing,
         };
 
-        promptEntries.push({
-            ...partial,
-            prompt: buildIntakePromptString(partial),
-        });
-    }
-
-    if (missingMarkdown.length > 0)
-    {
-        process.stderr.write(
-            "The following papers are marked fetched in papers-needed.md but "
-            + "are missing from the corpus markdown directory:\n",
-        );
-
-        for (const key of missingMarkdown)
-        {
-            process.stderr.write(`  - ${corpusMarkdownDir}/${key}.md\n`);
-        }
-
-        process.stderr.write("\nFix the corpus and re-run.\n");
-        process.exit(1);
-    }
-
-    const promptsPath = path.join(targetDir, "prompts.jsonl");
-    fs.writeFileSync(
-        promptsPath,
-        promptEntries.map((entry) => JSON.stringify(entry)).join("\n") + "\n",
-        "utf8",
-    );
+        return { ...partial, prompt: buildIntakePromptString(partial) };
+    });
+    const promptsPath = writePrompts(targetDir, promptEntries);
 
     process.stdout.write(`Resumed ${genus}.\n`);
     process.stdout.write(`  Prompts written: ${promptsPath}\n`);

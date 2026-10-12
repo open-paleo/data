@@ -44,8 +44,15 @@ import * as url from "node:url";
 import { parse as parseYamlContent, stringify as stringifyYaml } from "yaml";
 
 import type { GenusData } from "./types.ts";
-import { referenceNotesLimit, storeReferencePath, writeStatusEvidence } from "./utilities.ts";
+import { writeStatusEvidence } from "./utilities.ts";
 import type { IntakeExtraction } from "./intake-types.ts";
+import {
+    appendReferencePointer,
+    mergeHolotype,
+    mergeSize,
+    mergeUnique,
+    readExtractions,
+} from "./intake-shared.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
@@ -217,33 +224,7 @@ function applyExtraction(
 
         if (extraction.holotype_specimen_id || extraction.holotype_material)
         {
-            const holotypeBlock: Record<string, unknown> = (species.type_specimen as Record<string, unknown>) ?? {};
-
-            if (extraction.holotype_specimen_id)
-            {
-                holotypeBlock.specimen_id = [extraction.holotype_specimen_id];
-            }
-
-            if (extraction.holotype_specimen_type)
-            {
-                holotypeBlock.specimen_type = extraction.holotype_specimen_type;
-            }
-            else if (!holotypeBlock.specimen_type)
-            {
-                holotypeBlock.specimen_type = "holotype";
-            }
-
-            if (extraction.holotype_institution)
-            {
-                holotypeBlock.institution = extraction.holotype_institution;
-            }
-
-            if (extraction.holotype_material)
-            {
-                holotypeBlock.material = extraction.holotype_material;
-            }
-
-            species.type_specimen = holotypeBlock;
+            mergeHolotype(species, extraction);
         }
 
         if (extraction.paleoenvironment && extraction.paleoenvironment.length > 0)
@@ -268,29 +249,7 @@ function applyExtraction(
             (genus as Record<string, unknown>).appearance = appearance;
         }
 
-        if (extraction.size_length_m_min !== null && extraction.size_length_m_min !== undefined
-            || extraction.size_weight_kg_min !== null && extraction.size_weight_kg_min !== undefined)
-        {
-            const size: Record<string, unknown> = (species.size as Record<string, unknown>) ?? {};
-
-            if (extraction.size_length_m_min !== null && extraction.size_length_m_min !== undefined)
-            {
-                size.length_m = {
-                    min: extraction.size_length_m_min,
-                    max: extraction.size_length_m_max ?? extraction.size_length_m_min,
-                };
-            }
-
-            if (extraction.size_weight_kg_min !== null && extraction.size_weight_kg_min !== undefined)
-            {
-                size.weight_kg = {
-                    min: extraction.size_weight_kg_min,
-                    max: extraction.size_weight_kg_max ?? extraction.size_weight_kg_min,
-                };
-            }
-
-            species.size = size;
-        }
+        mergeSize(species, extraction);
 
         species.erected_in = extraction.citation_key;
     }
@@ -298,106 +257,15 @@ function applyExtraction(
     // Diagnostic features and synonyms accumulate from every paper.
     if (Array.isArray(extraction.diagnostic_features) && extraction.diagnostic_features.length > 0)
     {
-        const existing = Array.isArray(genus.diagnostic_features)
-            ? genus.diagnostic_features
-            : [];
-        const merged = [...existing];
-
-        for (const feature of extraction.diagnostic_features)
-        {
-            if (!merged.includes(feature))
-            {
-                merged.push(feature);
-            }
-        }
-
-        genus.diagnostic_features = merged;
+        genus.diagnostic_features = mergeUnique(genus.diagnostic_features, extraction.diagnostic_features, (first, second) => first === second);
     }
 
     if (Array.isArray(extraction.synonyms) && extraction.synonyms.length > 0)
     {
-        const existing = Array.isArray(genus.synonyms) ? genus.synonyms : [];
-        const merged = [...existing];
-
-        for (const synonym of extraction.synonyms)
-        {
-            if (!merged.some((entry) => entry.name === synonym.name))
-            {
-                merged.push(synonym);
-            }
-        }
-
-        genus.synonyms = merged;
+        genus.synonyms = mergeUnique(genus.synonyms, extraction.synonyms, (first, second) => first.name === second.name);
     }
 
-    // Append the reference (idempotent).
-    const referenceList = Array.isArray(genus.references) ? genus.references : [];
-    const alreadyReferenced = referenceList.some((reference) => reference.id === extraction.citation_key);
-
-    if (!alreadyReferenced)
-    {
-        const key = extraction.citation_key;
-        const storePath = storeReferencePath(root, key);
-
-        // The bootstrap stages a new describing paper's entry beside the stub;
-        // promote.sh moves it into the store, so it counts as present here.
-        const inStore = fs.existsSync(storePath)
-            || fs.existsSync(storeReferencePath(path.join(stagingIntakeDir, extraction.genus), key));
-
-        // Supplementary papers record their role as per-citation `notes` on the
-        // in-file pointer; describing-paper notes are about the taxon, so they
-        // are left off the citation.
-        const localNotes = (!extraction.is_describing && extraction.notes)
-            ? extraction.notes
-            : undefined;
-
-        if (localNotes && localNotes.length > referenceNotesLimit)
-        {
-            warnings.push(
-                `Reference ${key}: notes run to ${localNotes.length} characters, over the `
-                + `${referenceNotesLimit}-character budget the validator warns at. Trim to the `
-                + "paper's role in one sentence before promoting.",
-            );
-        }
-
-        if (!inStore)
-        {
-            // No store entry yet, so the paper cannot be cited — a pointer must
-            // resolve to a complete store entry. Stash any notes and warn; the
-            // SKILL adds the store file from the papers-needed.md citation, then
-            // re-runs apply.
-            if (localNotes)
-            {
-                const pendingDir = path.join(stagingIntakeDir, extraction.genus, "pending-notes");
-                fs.mkdirSync(pendingDir, { recursive: true });
-                fs.writeFileSync(
-                    path.join(pendingDir, `${key}.txt`),
-                    localNotes,
-                    "utf8",
-                );
-            }
-
-            warnings.push(
-                `Reference ${key}: no reference-store entry yet; citation skipped. `
-                + `Add ${path.relative(root, storePath)} `
-                + "from the papers-needed.md citation"
-                + (localNotes ? ` (agent notes stashed under staging/intake/${extraction.genus}/pending-notes/)` : "")
-                + ", then re-run apply.",
-            );
-        }
-        else
-        {
-            // Cite the existing store entry with an `{id, notes?}` pointer.
-            const pointer: { id: string; notes?: string } = { id: key };
-
-            if (localNotes)
-            {
-                pointer.notes = localNotes;
-            }
-
-            genus.references = [...referenceList, pointer];
-        }
-    }
+    warnings.push(...appendReferencePointer(genus, extraction, path.join(stagingIntakeDir, extraction.genus)));
 
     return warnings;
 }
@@ -464,27 +332,7 @@ function main(): void
 
     // Apply describing paper(s) first so that scalar overrides land
     // before supplementary appends.
-    const extractions = extractionFiles.map((filename) =>
-    {
-        const filePath = path.join(extractionsDir, filename);
-        const data = JSON.parse(fs.readFileSync(filePath, "utf8")) as IntakeExtraction;
-        return { filename, data };
-    });
-
-    // The describing paper applies first, then the rest by file name.
-    extractions.sort((first, second) =>
-    {
-        if (first.data.is_describing && !second.data.is_describing)
-        {
-            return -1;
-        }
-        else if (!first.data.is_describing && second.data.is_describing)
-        {
-            return 1;
-        }
-
-        return first.filename.localeCompare(second.filename);
-    });
+    const extractions = readExtractions<IntakeExtraction>(extractionsDir, extractionFiles);
 
     for (const { filename, data } of extractions)
     {

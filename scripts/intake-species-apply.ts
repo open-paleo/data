@@ -40,8 +40,15 @@ import * as url from "node:url";
 import { parse as parseYamlContent, stringify as stringifyYaml } from "yaml";
 
 import type { GenusData, Species } from "./types.ts";
-import { referenceNotesLimit, storeReferencePath, writeStatusEvidence } from "./utilities.ts";
+import { writeStatusEvidence } from "./utilities.ts";
 import type { SpeciesExtraction } from "./intake-types.ts";
+import {
+    appendReferencePointer,
+    mergeHolotype,
+    mergeSize,
+    mergeUnique,
+    readExtractions,
+} from "./intake-shared.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
@@ -133,34 +140,7 @@ function applyExtractionToSpecies(
             || extraction.holotype_institution
             || extraction.holotype_specimen_type)
         {
-            const holotypeBlock: Record<string, unknown> =
-                (species.type_specimen as Record<string, unknown>) ?? {};
-
-            if (extraction.holotype_specimen_id)
-            {
-                holotypeBlock.specimen_id = [extraction.holotype_specimen_id];
-            }
-
-            if (extraction.holotype_specimen_type)
-            {
-                holotypeBlock.specimen_type = extraction.holotype_specimen_type;
-            }
-            else if (!holotypeBlock.specimen_type)
-            {
-                holotypeBlock.specimen_type = "holotype";
-            }
-
-            if (extraction.holotype_institution)
-            {
-                holotypeBlock.institution = extraction.holotype_institution;
-            }
-
-            if (extraction.holotype_material)
-            {
-                holotypeBlock.material = extraction.holotype_material;
-            }
-
-            species.type_specimen = holotypeBlock;
+            mergeHolotype(species, extraction);
         }
 
         if (extraction.period_name || extraction.period_stage
@@ -228,30 +208,7 @@ function applyExtractionToSpecies(
             species.location = locationBlock;
         }
 
-        if (extraction.size_length_m_min !== null && extraction.size_length_m_min !== undefined
-            || extraction.size_weight_kg_min !== null && extraction.size_weight_kg_min !== undefined)
-        {
-            const sizeBlock: Record<string, unknown> =
-                (species.size as Record<string, unknown>) ?? {};
-
-            if (extraction.size_length_m_min !== null && extraction.size_length_m_min !== undefined)
-            {
-                sizeBlock.length_m = {
-                    min: extraction.size_length_m_min,
-                    max: extraction.size_length_m_max ?? extraction.size_length_m_min,
-                };
-            }
-
-            if (extraction.size_weight_kg_min !== null && extraction.size_weight_kg_min !== undefined)
-            {
-                sizeBlock.weight_kg = {
-                    min: extraction.size_weight_kg_min,
-                    max: extraction.size_weight_kg_max ?? extraction.size_weight_kg_min,
-                };
-            }
-
-            species.size = sizeBlock;
-        }
+        mergeSize(species, extraction);
 
         // The describing paper erects the new species; author/year are derived
         // from this reference at build time (issue #1886).
@@ -261,20 +218,7 @@ function applyExtractionToSpecies(
     if (Array.isArray(extraction.diagnostic_features)
         && extraction.diagnostic_features.length > 0)
     {
-        const existing = Array.isArray(species.diagnostic_features)
-            ? species.diagnostic_features as Array<string>
-            : [];
-        const merged = [...existing];
-
-        for (const feature of extraction.diagnostic_features)
-        {
-            if (!merged.includes(feature))
-            {
-                merged.push(feature);
-            }
-        }
-
-        species.diagnostic_features = merged;
+        species.diagnostic_features = mergeUnique(species.diagnostic_features, extraction.diagnostic_features, (first, second) => first === second);
     }
 
     if (Array.isArray(extraction.paleoenvironment)
@@ -285,105 +229,7 @@ function applyExtractionToSpecies(
 
     if (Array.isArray(extraction.synonyms) && extraction.synonyms.length > 0)
     {
-        const existing = Array.isArray(species.synonyms)
-            ? species.synonyms as Array<{ name: string }>
-            : [];
-        const merged = [...existing];
-
-        for (const synonym of extraction.synonyms)
-        {
-            if (!merged.some((entry) => entry.name === synonym.name))
-            {
-                merged.push(synonym);
-            }
-        }
-
-        species.synonyms = merged;
-    }
-
-    return warnings;
-}
-
-/**
- * Appends a citation pointer to the genus references list (idempotent).
- * Adds an `{id, notes?}` pointer when the citation's reference-store file
- * exists; otherwise skips it with a warning and stashes any
- * supplementary-paper notes so the skill can restore them once the store
- * entry is created (step 4b) and apply is re-run.
- *
- * @param genus - Genus data (mutated).
- * @param extraction - Parsed extraction JSON.
- * @param targetDir - Staging directory (for pending-notes/).
- * @returns Warning strings.
- */
-function appendReference(
-    genus: GenusData,
-    extraction: SpeciesExtraction,
-    targetDir: string,
-): Array<string>
-{
-    const warnings = new Array<string>();
-    const referenceList = Array.isArray(genus.references) ? genus.references : [];
-    const alreadyReferenced = referenceList.some(
-        (reference) => reference.id === extraction.citation_key,
-    );
-
-    if (alreadyReferenced)
-    {
-        return warnings;
-    }
-
-    const key = extraction.citation_key;
-    const storePath = storeReferencePath(root, key);
-    const inStore = fs.existsSync(storePath);
-
-    const localNotes = (!extraction.is_describing && extraction.notes)
-        ? extraction.notes
-        : undefined;
-
-    if (localNotes && localNotes.length > referenceNotesLimit)
-    {
-        warnings.push(
-            `Reference ${key}: notes run to ${localNotes.length} characters, over the `
-            + `${referenceNotesLimit}-character budget the validator warns at. Trim to the `
-            + "paper's role in one sentence before promoting.",
-        );
-    }
-
-    if (!inStore)
-    {
-        // No store entry yet, so the paper cannot be cited (a pointer must
-        // resolve to a complete store entry). Stash any notes and warn; the
-        // SKILL adds the store file from papers-needed.md, then re-runs apply.
-        if (localNotes)
-        {
-            const pendingDir = path.join(targetDir, "pending-notes");
-            fs.mkdirSync(pendingDir, { recursive: true });
-            fs.writeFileSync(
-                path.join(pendingDir, `${key}.txt`),
-                localNotes,
-                "utf8",
-            );
-        }
-
-        warnings.push(
-            `Reference ${key}: no reference-store entry yet; citation skipped. `
-            + `Add ${path.relative(root, storePath)} `
-            + "from the papers-needed.md citation"
-            + (localNotes ? `; agent notes stashed at ${path.relative(root, path.join(targetDir, "pending-notes"))}/${key}.txt` : "")
-            + ", then re-run apply.",
-        );
-    }
-    else
-    {
-        const pointer: { id: string; notes?: string } = { id: key };
-
-        if (localNotes)
-        {
-            pointer.notes = localNotes;
-        }
-
-        genus.references = [...referenceList, pointer];
+        species.synonyms = mergeUnique(species.synonyms, extraction.synonyms, (first, second) => first.name === second.name);
     }
 
     return warnings;
@@ -458,27 +304,7 @@ function main(): void
 
     process.stdout.write(`Applying extractions for ${genus} ${species}...\n`);
 
-    const extractions = extractionFiles.map((filename) =>
-    {
-        const filePath = path.join(extractionsDir, filename);
-        const data = JSON.parse(fs.readFileSync(filePath, "utf8")) as SpeciesExtraction;
-        return { filename, data };
-    });
-
-    // The describing paper applies first, then the rest by file name.
-    extractions.sort((first, second) =>
-    {
-        if (first.data.is_describing && !second.data.is_describing)
-        {
-            return -1;
-        }
-        else if (!first.data.is_describing && second.data.is_describing)
-        {
-            return 1;
-        }
-
-        return first.filename.localeCompare(second.filename);
-    });
+    const extractions = readExtractions<SpeciesExtraction>(extractionsDir, extractionFiles);
 
     const allWarnings = new Array<string>();
 
@@ -493,7 +319,7 @@ function main(): void
             process.stderr.write(`    WARN: ${warning}\n`);
         }
 
-        for (const warning of appendReference(genusData, data, targetDir))
+        for (const warning of appendReferencePointer(genusData, data, targetDir))
         {
             allWarnings.push(warning);
             process.stderr.write(`    WARN: ${warning}\n`);
