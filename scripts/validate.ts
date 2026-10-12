@@ -4276,6 +4276,46 @@ for (const filePath of quotationFiles)
     }
 }
 
+startCheck("Curly quotes");
+
+// The quotation checks above, and the British-spelling and citation checks
+// that skip quoted spans, read straight double quotes only. A record that
+// quotes with “” would have its quotation checked as prose and could leave
+// a quote unclosed unseen, so record prose uses straight quotes.
+const curlyQuoteCheckedFiles = [
+    ...genusFiles,
+    ...cladeFiles,
+    ...referenceStoreFiles,
+    ...stratigraphyFiles.values(),
+    path.join(root, "institutions.yaml"),
+    path.join(root, "excluded.yml"),
+];
+
+for (const filePath of curlyQuoteCheckedFiles)
+{
+    let lines: Array<string>;
+
+    try
+    {
+        lines = fs.readFileSync(filePath, "utf8").split("\n");
+    }
+    catch
+    {
+        continue;
+    }
+
+    for (const [index, line] of lines.entries())
+    {
+        if (/[“”]/.test(line))
+        {
+            checkError(
+                "Curly quotes",
+                filePath,
+                `line ${index + 1}: curly double quotes; use straight quotes (")`);
+        }
+    }
+}
+
 startCheck("Comment-eaten scalars");
 
 // No data file carries an intentional inline comment, so every comment token
