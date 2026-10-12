@@ -503,11 +503,19 @@ function main(): void
         return { filename, data };
     });
 
-    extractions.sort((a, b) =>
+    // The describing paper applies first, then the rest by file name.
+    extractions.sort((first, second) =>
     {
-        if (a.data.is_describing && !b.data.is_describing) return -1;
-        if (!a.data.is_describing && b.data.is_describing) return 1;
-        return a.filename.localeCompare(b.filename);
+        if (first.data.is_describing && !second.data.is_describing)
+        {
+            return -1;
+        }
+        else if (!first.data.is_describing && second.data.is_describing)
+        {
+            return 1;
+        }
+
+        return first.filename.localeCompare(second.filename);
     });
 
     for (const { filename, data } of extractions)

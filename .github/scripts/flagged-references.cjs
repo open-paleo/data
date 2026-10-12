@@ -5,7 +5,7 @@
 
 const fs = require("node:fs");
 
-const COMMENT_MARKER = "<!-- open-paleo:flagged-references -->";
+const commentMarker = "<!-- open-paleo:flagged-references -->";
 
 /**
  * Parse validator output and extract flagged-source warnings.
@@ -68,7 +68,7 @@ function buildCommentBody(warnings)
     }
 
     const lines = [
-        COMMENT_MARKER,
+        commentMarker,
         "### ⚠️ Flagged publication sources",
         "",
         "This PR cites references from publishers or journals on "
@@ -121,7 +121,7 @@ async function findExistingComment(github, repo, prNumber)
         },
     );
 
-    const existing = comments.find((comment) => comment.body.includes(COMMENT_MARKER));
+    const existing = comments.find((comment) => comment.body.includes(commentMarker));
 
     return existing ? existing.id : null;
 }

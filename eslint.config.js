@@ -49,6 +49,9 @@ const sharedStylisticRules = {
         { blankLine: "always", prev: "block-like", next: "*" },
     ],
 
+    // Braces on every if/else/for/while body, even a one-line one
+    curly: ["error", "all"],
+
     // Prefer const
     "prefer-const": "error",
     "no-var": "error",
@@ -157,6 +160,15 @@ export default tseslint.config(
         },
         rules: {
             ...sharedStylisticRules,
+
+            // camelCase names, as the TypeScript naming-convention rule
+            // enforces; core camelcase would let SCREAMING_SNAKE_CASE through.
+            // Property names are free, since they mirror API payloads.
+            "id-match": ["error", "^[a-z][a-zA-Z0-9]*$", {
+                properties: false,
+                onlyDeclarations: true,
+                ignoreDestructuring: false,
+            }],
         },
     },
     {
