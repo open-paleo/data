@@ -7,7 +7,7 @@ import * as fs from "node:fs";
 import * as path from "node:path";
 import * as url from "node:url";
 
-import { parse as parseYamlContent } from "yaml";
+import { CST, Lexer, parse as parseYamlContent } from "yaml";
 
 import {
     buildFlaggedSet,
@@ -4210,39 +4210,57 @@ for (const filePath of quotationFiles)
 
 startCheck("Comment-eaten scalars");
 
-// A plain scalar is one that does not open with a quote or a block indicator.
-const commentEatenScalar = /^(\s*)([a-z_]+): (?![-"'|>&*!#])(.*\s#.*)$/;
+// No data file carries an intentional inline comment, so every comment token
+// that follows other content on its line is the tail of a value YAML cut off.
+// The lexer sees this for every scalar kind: a `key: value` line, a list item,
+// and the last continuation line of a multi-line plain scalar.
+const commentCheckedFiles = [
+    ...genusFiles,
+    ...cladeFiles,
+    ...referenceStoreFiles,
+    ...stratigraphyFiles.values(),
+    path.join(root, "institutions.yaml"),
+];
 
-for (const filePath of [...genusFiles, ...cladeFiles, ...referenceStoreFiles])
+for (const filePath of commentCheckedFiles)
 {
-    let lines: Array<string>;
+    let text: string;
 
     try
     {
-        lines = fs.readFileSync(filePath, "utf8").split("\n");
+        text = fs.readFileSync(filePath, "utf8");
     }
     catch
     {
         continue;
     }
 
-    for (const [index, line] of lines.entries())
-    {
-        const match = commentEatenScalar.exec(line);
+    let line = 1;
+    let lineHasContent = false;
 
-        if (match === null)
+    for (const token of new Lexer().lex(text))
+    {
+        const tokenType = CST.tokenType(token);
+
+        if (tokenType === "newline")
         {
+            line += 1;
+            lineHasContent = false;
             continue;
         }
+        else if (tokenType === "comment" && lineHasContent)
+        {
+            checkError(
+                "Comment-eaten scalars",
+                filePath,
+                `line ${line}: YAML reads "${token}" as a comment, so the value before it loses that text. Quote the value.`);
+        }
+        else if (tokenType !== "space" && tokenType !== "comment" && tokenType !== "byte-order-mark" && tokenType !== "doc-mode")
+        {
+            lineHasContent = true;
+        }
 
-        const [, , key, value] = match;
-        const kept = value.split(/\s#/)[0];
-
-        checkError(
-            "Comment-eaten scalars",
-            filePath,
-            `line ${index + 1}: '${key}' loses everything from " #" onward — ` +
-            `YAML reads it as "${kept}". Quote the value.`);
+        line += token.split("\n").length - 1;
     }
 }
 
