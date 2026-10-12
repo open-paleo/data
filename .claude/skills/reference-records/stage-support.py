@@ -33,6 +33,7 @@ import yaml
 
 from _formations import loadVariants
 from _paths import audit_dir, corpus_dir, data_dir
+from skill_schema import stage_table  # on the path _paths adds
 
 findingPattern = re.compile(
     r"^- (?:\[CONFIRMED BY [^\]]+\] )?(?P<binomial>[A-Z][^\[]+) "
@@ -46,9 +47,7 @@ def loadStages():
 
     @returns: Dict of lowercased stage name to its schema entry.
     """
-    schema = yaml.safe_load(open(os.path.join(data_dir(), "schema.yml"), encoding="utf-8"))
-
-    return {name.lower(): entry for name, entry in (schema.get("stages") or {}).items()}
+    return {name.lower(): entry for name, entry in stage_table().items()}
 
 
 def loadFormations():

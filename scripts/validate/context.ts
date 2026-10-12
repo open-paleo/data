@@ -24,6 +24,7 @@ import {
     loadFlaggedSignoffs,
     loadFlaggedSources,
     loadStratigraphyRegistry,
+    stageOrdering,
 } from "../utilities.ts";
 
 /**
@@ -171,11 +172,7 @@ export function loadValidationContext()
 
     // Every stage oldest first, by its base age, and each stage's place in that
     // order, so a list of stages can be checked for order and gaps.
-    const stageOrder = Object.entries(stages)
-        .sort(([, first], [, second]) => second.from_ma - first.from_ma)
-        .map(([stageName]) => stageName);
-
-    const stagePosition = new Map(stageOrder.map((stageName, position) => [stageName, position]));
+    const { order: stageOrder, position: stagePosition } = stageOrdering(stages);
 
     const institutionRegistry = parseYamlContent(
         fs.readFileSync(path.join(root, "institutions.yaml"), "utf8"),

@@ -15,9 +15,9 @@ import * as url from "node:url";
 
 import { parse as parseYamlContent } from "yaml";
 
-import { findYamlFiles, loadInstitutionRegistry } from "./utilities.ts";
+import { findYamlFiles, loadInstitutionRegistry, loadSchema } from "./utilities.ts";
 
-import type { GenusData, InstitutionEntry, Schema, StageInfo } from "./types.ts";
+import type { GenusData, InstitutionEntry, StageInfo } from "./types.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
@@ -186,7 +186,7 @@ function normalizeFormation(formation: string): string
 
 const registry = loadInstitutionRegistry(path.join(root, "institutions.yaml"));
 
-const schema = parseYamlContent(fs.readFileSync(path.join(root, "schema.yml"), "utf8")) as Schema;
+const schema = loadSchema(root);
 const stages: Record<string, StageInfo> = schema.stages ?? {};
 
 /**

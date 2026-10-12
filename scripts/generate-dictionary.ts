@@ -1,8 +1,13 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
 import * as url from "node:url";
-import type { GenusData, InstitutionEntry, Reference, Schema, TreeNode } from "./types.ts";
-import { collectAllKeys, findYamlFiles, parseYaml } from "./utilities.ts";
+import type { GenusData, InstitutionEntry, Reference, TreeNode } from "./types.ts";
+import {
+    collectAllKeys,
+    findYamlFiles,
+    loadSchema,
+    parseYaml,
+} from "./utilities.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
@@ -44,7 +49,7 @@ for (const key of collectAllKeys(tree))
     words.add(key);
 }
 
-const schema = parseYaml<Schema>(path.join(root, "schema.yml"));
+const schema = loadSchema(root);
 
 if (schema.stages)
 {

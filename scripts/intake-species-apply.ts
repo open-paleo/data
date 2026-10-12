@@ -40,7 +40,7 @@ import * as url from "node:url";
 import { parse as parseYamlContent, stringify as stringifyYaml } from "yaml";
 
 import type { GenusData, Species } from "./types.ts";
-import { referenceBucket, referenceNotesLimit, writeStatusEvidence } from "./utilities.ts";
+import { referenceNotesLimit, storeReferencePath, writeStatusEvidence } from "./utilities.ts";
 import type { SpeciesExtraction } from "./intake-types.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
@@ -334,8 +334,8 @@ function appendReference(
     }
 
     const key = extraction.citation_key;
-    const inStore = fs.existsSync(
-        path.join(root, "references", referenceBucket(key), `${key}.yml`));
+    const storePath = storeReferencePath(root, key);
+    const inStore = fs.existsSync(storePath);
 
     const localNotes = (!extraction.is_describing && extraction.notes)
         ? extraction.notes
@@ -368,7 +368,7 @@ function appendReference(
 
         warnings.push(
             `Reference ${key}: no reference-store entry yet; citation skipped. `
-            + `Add references/${referenceBucket(key)}/${key}.yml `
+            + `Add ${path.relative(root, storePath)} `
             + "from the papers-needed.md citation"
             + (localNotes ? `; agent notes stashed at ${path.relative(root, path.join(targetDir, "pending-notes"))}/${key}.txt` : "")
             + ", then re-run apply.",

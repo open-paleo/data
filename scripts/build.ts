@@ -4,7 +4,7 @@ import * as url from "node:url";
 
 import { stringify as stringifyYaml } from "yaml";
 
-import { findYamlFiles, parseYaml, loadInstitutionRegistry, loadRegionRegistry, loadStageTable } from "./utilities.ts";
+import { findYamlFiles, parseYaml, loadInstitutionRegistry, loadRegionRegistry, loadSchema } from "./utilities.ts";
 
 import type { GenusData, CladeData, TreeNode, Reference, ReferencePointer, InstitutionEntry, StageInfo, Synonym, FormerId } from "./types.ts";
 
@@ -459,7 +459,7 @@ function resolvePartTargets(generaMap: Record<string, ProcessedGenus>): void
 resolvePartTargets(genera);
 
 // Fill in the boundary ages a record leaves to its stages.
-const stageTable = loadStageTable(path.join(root, "schema.yml"));
+const stageTable = loadSchema(root).stages ?? {};
 
 /**
  * Derives `from_ma`/`to_ma` from the union of a species' listed stages

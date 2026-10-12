@@ -3,7 +3,12 @@ import * as path from "node:path";
 import * as url from "node:url";
 
 import type { GenusData, Species } from "./types.ts";
-import { findYamlFiles, parseYaml } from "./utilities.ts";
+import {
+    findYamlFiles,
+    isPopulated,
+    parseYaml,
+    pickRepresentativeSpecies,
+} from "./utilities.ts";
 import { getCorpusDir } from "./corpus-path.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
@@ -11,48 +16,6 @@ const scriptDir = path.dirname(scriptPath);
 const root = path.join(scriptDir, "..");
 const generaDir = path.join(root, "genera");
 const corpusMarkdownDir = path.join(getCorpusDir(), "markdown");
-
-/**
- * Determines whether a value counts as populated (non-null, non-empty).
- *
- * @param value - Candidate value from a parsed YAML document.
- * @returns True when the value is populated.
- */
-function isPopulated(value: unknown): boolean
-{
-    if (value === undefined || value === null)
-    {
-        return false;
-    }
-    else if (typeof value === "string")
-    {
-        return value.trim().length > 0;
-    }
-    else if (Array.isArray(value))
-    {
-        return value.length > 0;
-    }
-
-    return true;
-}
-
-/**
- * Picks the representative species for a genus: the type species when one is
- * marked, otherwise the first listed species.
- *
- * @param genus - Parsed genus YAML document.
- * @returns The representative species, or null when the genus has none.
- */
-function pickRepresentativeSpecies(genus: GenusData): Species | null
-{
-    if (!Array.isArray(genus.species) || genus.species.length === 0)
-    {
-        return null;
-    }
-
-    const typeSpecies = genus.species.find((entry) => entry?.type_species === true);
-    return typeSpecies ?? genus.species[0];
-}
 
 /**
  * Collects the reference keys that could carry the genus's erecting or

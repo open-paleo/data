@@ -31,23 +31,12 @@ import * as path from "node:path";
 import * as url from "node:url";
 
 import type { InstitutionEntry } from "./types.ts";
-import { parseYaml } from "./utilities.ts";
+import { escapeRegExp, parseYaml } from "./utilities.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
 const root = path.join(scriptDir, "..");
 const reportsDir = path.join(root, "scratch");
-
-/**
- * Escapes a string for embedding in a RegExp literal.
- *
- * @param input - Source string.
- * @returns Regex-safe escaped string.
- */
-function escapeForRegExp(input: string): string
-{
-    return input.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-}
 
 /**
  * Loads `institutions.yaml` and returns the union of canonical
@@ -138,7 +127,7 @@ function stripCatalogTokens(material: string, abbreviations: Set<string>): { mat
         return { material, changed: false };
     }
 
-    const abbrevPattern = [...abbreviations].map(escapeForRegExp).join("|");
+    const abbrevPattern = [...abbreviations].map(escapeRegExp).join("|");
     let working = material;
 
     // Pattern 1: parenthetical containing INST and at least one digit.

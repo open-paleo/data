@@ -3,7 +3,12 @@ import * as path from "node:path";
 import * as url from "node:url";
 
 import type { GenusData, Species } from "./types.ts";
-import { findYamlFiles, parseYaml } from "./utilities.ts";
+import {
+    findYamlFiles,
+    isPopulated,
+    parseYaml,
+    pickRepresentativeSpecies,
+} from "./utilities.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
@@ -32,34 +37,6 @@ type FieldCheck = {
      */
     isPresent: (target: GenusData | Species) => boolean;
 };
-
-/**
- * Determines whether a value counts as "present" (non-null, non-empty).
- *
- * @param value - Candidate value from a parsed YAML document.
- * @returns True when the value is populated.
- */
-function isPopulated(value: unknown): boolean
-{
-    if (value === undefined || value === null)
-    {
-        return false;
-    }
-    else if (typeof value === "string")
-    {
-        return value.trim().length > 0;
-    }
-    else if (Array.isArray(value))
-    {
-        return value.length > 0;
-    }
-    else if (typeof value === "object")
-    {
-        return Object.keys(value as Record<string, unknown>).length > 0;
-    }
-
-    return true;
-}
 
 /**
  * Fields audited on every genus file. The `media` field is intentionally
@@ -235,24 +212,6 @@ const speciesChecks: Array<FieldCheck> = [
  * Pseudo-field used to flag genera that have no species entries at all.
  */
 const missingSpeciesLabel = "species (no entries)";
-
-/**
- * Picks the representative species for a genus: the type species when one
- * is marked, otherwise the first listed species.
- *
- * @param genus - Parsed genus YAML document.
- * @returns The representative species, or null when the genus has none.
- */
-function pickRepresentativeSpecies(genus: GenusData): Species | null
-{
-    if (!Array.isArray(genus.species) || genus.species.length === 0)
-    {
-        return null;
-    }
-
-    const typeSpecies = genus.species.find((entry) => entry?.type_species === true);
-    return typeSpecies ?? genus.species[0];
-}
 
 const generaFiles = findYamlFiles(generaDir).sort();
 const missing = new Map<string, Array<string>>();

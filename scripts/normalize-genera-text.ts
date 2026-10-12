@@ -27,7 +27,7 @@ import * as fs from "node:fs";
 import * as path from "node:path";
 import * as url from "node:url";
 
-import { findYamlFiles } from "./utilities.ts";
+import { escapeRegExp, findYamlFiles } from "./utilities.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
@@ -72,7 +72,7 @@ function normalizeContent(content: string): { content: string; counts: Map<strin
         {
             const count = before.length - working.length === 0
                 // length-preserving replacement (single-byte source like a non-ASCII single char becomes single ASCII char)
-                ? (before.match(new RegExp(escapeForRegExp(rule.from), "gu")) ?? []).length
+                ? (before.match(new RegExp(escapeRegExp(rule.from), "gu")) ?? []).length
                 : (before.length - working.length) / Math.max(rule.from.length - rule.to.length, 1);
 
             counts.set(rule.label, count);
@@ -80,19 +80,6 @@ function normalizeContent(content: string): { content: string; counts: Map<strin
     }
 
     return { content: working, counts };
-}
-
-/**
- * Escapes a string for use inside a RegExp literal. The replacement
- * source strings are all single typographic characters so this is
- * defensive only.
- *
- * @param input - Source string.
- * @returns Regex-safe escaped string.
- */
-function escapeForRegExp(input: string): string
-{
-    return input.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
 /**

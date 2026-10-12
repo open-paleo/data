@@ -26,8 +26,13 @@ import * as path from "node:path";
 import * as url from "node:url";
 
 import { getCorpusDir } from "./corpus-path.ts";
-import type { GenusData, Species } from "./types.ts";
-import { findYamlFiles, parseYaml } from "./utilities.ts";
+import type { GenusData } from "./types.ts";
+import {
+    findYamlFiles,
+    isPopulated,
+    parseYaml,
+    pickRepresentativeSpecies,
+} from "./utilities.ts";
 import { paperFieldExtractionFields, renderSchemaLine } from "./intake-types.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
@@ -114,60 +119,6 @@ type QueueSummary = {
         both_fields_filled: Array<string>;
     };
 };
-
-/**
- * Determines whether a value counts as populated (non-null, non-empty).
- *
- * @param value - Candidate value from a parsed YAML document.
- * @returns True when the value is populated.
- */
-function isPopulated(value: unknown): boolean
-{
-    if (value === undefined || value === null)
-    {
-        return false;
-    }
-    else if (typeof value === "string")
-    {
-        return value.trim().length > 0;
-    }
-    else if (Array.isArray(value))
-    {
-        return value.length > 0;
-    }
-    else if (typeof value === "object")
-    {
-        return Object.keys(value as Record<string, unknown>).length > 0;
-    }
-
-    return true;
-}
-
-/**
- * Picks the representative species: the type species when marked,
- * else the first listed species. Returns null when the genus has no
- * species entries.
- *
- * @param data - Parsed genus YAML.
- * @returns The representative Species, or null.
- */
-function pickRepresentativeSpecies(data: GenusData): Species | null
-{
-    if (!Array.isArray(data.species) || data.species.length === 0)
-    {
-        return null;
-    }
-
-    for (const species of data.species)
-    {
-        if (species.type_species === true)
-        {
-            return species;
-        }
-    }
-
-    return data.species[0];
-}
 
 /**
  * Builds the literal Sonnet prompt for one extraction. The prompt

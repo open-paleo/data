@@ -23,7 +23,7 @@ import re
 
 import yaml
 
-from _paths import data_dir, condensed_dir, store_path
+from _paths import data_dir, condensed_dir, normalize_doi, store_path
 
 DATA = data_dir()
 CONDENSED = condensed_dir()
@@ -99,8 +99,8 @@ def main():
             continue
 
         containment = title_containment(bibliography.get("title"), store.get("title"))
-        paper_doi = (bibliography.get("doi") or "").strip().lower()
-        store_doi = (str(store.get("doi") or "")).strip().lower()
+        paper_doi = normalize_doi(bibliography.get("doi") or "")
+        store_doi = normalize_doi(store.get("doi") or "")
         doi_conflict = bool(paper_doi and store_doi and paper_doi != store_doi)
         paper_year = bibliography.get("year")
         store_year = store.get("year")

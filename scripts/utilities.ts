@@ -4,13 +4,38 @@ import { parse as parseYamlContent, stringify as stringifyYaml } from "yaml";
 import type {
     FlaggedSignoffs,
     FlaggedSources,
+    GenusData,
     InstitutionEntry,
     Reference,
+    Schema,
+    Species,
     StageInfo,
     StratigraphicBed,
     StratigraphicUnit,
     TreeNode,
 } from "./types.ts";
+
+/**
+ * Identifies this project's scripts to the APIs they call. Wikimedia's
+ * user-agent policy rejects the runtime default, and it does so with a 429
+ * that a retry loop cannot clear, which reads as missing data rather than as
+ * a failed request.
+ */
+export const httpUserAgent = "open-paleo-data/1.0 (https://github.com/open-paleo/data)";
+
+/**
+ * Pauses execution for the given number of milliseconds.
+ *
+ * @param milliseconds - How long to sleep.
+ * @returns A promise that resolves after the delay.
+ */
+export function sleep(milliseconds: number): Promise<void>
+{
+    return new Promise((resolve) =>
+    {
+        setTimeout(resolve, milliseconds);
+    });
+}
 
 /**
  * Escapes a string for safe inclusion as a literal in a regular expression.
@@ -54,6 +79,20 @@ export function referenceBucket(key: string): string
 }
 
 /**
+ * The store file for a reference key, `references/<bucket>/<key>.yml` under a
+ * data root.
+ *
+ * @param dataRoot - The directory holding `references/`: the repository root,
+ *     or an intake staging directory that mirrors its layout.
+ * @param key - The reference key.
+ * @returns The file's path, whether or not it exists.
+ */
+export function storeReferencePath(dataRoot: string, key: string): string
+{
+    return path.join(dataRoot, "references", referenceBucket(key), `${key}.yml`);
+}
+
+/**
  * Canonical field order for a store reference file, `id` first.
  */
 const referenceFieldOrder: Array<keyof Reference> = [
@@ -81,7 +120,7 @@ export function writeStoreReference(dataRoot: string, entry: Reference): boolean
         throw new Error("writeStoreReference: entry is missing an id");
     }
 
-    const filePath = path.join(dataRoot, "references", referenceBucket(entry.id), `${entry.id}.yml`);
+    const filePath = storeReferencePath(dataRoot, entry.id);
 
     if (fs.existsSync(filePath))
     {
@@ -171,21 +210,6 @@ export function loadRegionRegistry(registryPath: string): Record<string, string>
     return parseYamlContent(
         fs.readFileSync(registryPath, "utf8"),
     ) as Record<string, string>;
-}
-
-/**
- * Loads the chronostratigraphic stage table from schema.yml.
- *
- * @param schemaPath - Absolute path to schema.yml.
- * @returns A record of stage name to its period and boundary ages.
- */
-export function loadStageTable(schemaPath: string): Record<string, StageInfo>
-{
-    const vocabulary = parseYamlContent(
-        fs.readFileSync(schemaPath, "utf8"),
-    ) as { stages?: Record<string, StageInfo> };
-
-    return vocabulary.stages ?? { };
 }
 
 /**
@@ -1126,7 +1150,7 @@ export function storeFileLookup(dataRoot: string): (id: string) => Reference | u
 {
     return (id) =>
     {
-        const filePath = path.join(dataRoot, "references", referenceBucket(id), `${id}.yml`);
+        const filePath = storeReferencePath(dataRoot, id);
 
         return fs.existsSync(filePath) ? parseYaml<Reference>(filePath) : undefined;
     };
@@ -1378,4 +1402,78 @@ export function loadStratigraphyRegistry(
         entries: registryEntries,
         layoutProblems: stratigraphyLayout,
     };
+}
+
+/**
+ * Determines whether a value counts as "present" (non-null, non-empty).
+ *
+ * @param value - Candidate value from a parsed YAML document.
+ * @returns True when the value is populated.
+ */
+export function isPopulated(value: unknown): boolean
+{
+    if (value === undefined || value === null)
+    {
+        return false;
+    }
+    else if (typeof value === "string")
+    {
+        return value.trim().length > 0;
+    }
+    else if (Array.isArray(value))
+    {
+        return value.length > 0;
+    }
+    else if (typeof value === "object")
+    {
+        return Object.keys(value as Record<string, unknown>).length > 0;
+    }
+
+    return true;
+}
+
+/**
+ * Picks the representative species for a genus: the type species when one
+ * is marked, otherwise the first listed species.
+ *
+ * @param genus - Parsed genus YAML document.
+ * @returns The representative species, or null when the genus has none.
+ */
+export function pickRepresentativeSpecies(genus: GenusData): Species | null
+{
+    if (!Array.isArray(genus.species) || genus.species.length === 0)
+    {
+        return null;
+    }
+
+    const typeSpecies = genus.species.find((entry) => entry?.type_species === true);
+    return typeSpecies ?? genus.species[0];
+}
+
+/**
+ * Loads `schema.yml`, the controlled vocabularies and the stage table.
+ *
+ * @param dataRoot - Repository root holding `schema.yml`.
+ * @returns The parsed schema.
+ */
+export function loadSchema(dataRoot: string): Schema
+{
+    return parseYaml<Schema>(path.join(dataRoot, "schema.yml"));
+}
+
+/**
+ * Orders stages oldest first by their base age, and gives each its place in
+ * that order, so a list of stages can be checked for order and gaps or a range
+ * expanded to the stages it spans.
+ *
+ * @param stages - The schema's stage table.
+ * @returns The stage names oldest first, and each name's position.
+ */
+export function stageOrdering(stages: Record<string, StageInfo>): { order: Array<string>; position: Map<string, number> }
+{
+    const order = Object.entries(stages)
+        .sort(([, first], [, second]) => second.from_ma - first.from_ma)
+        .map(([stageName]) => stageName);
+
+    return { order, position: new Map(order.map((stageName, index) => [stageName, index])) };
 }

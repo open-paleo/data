@@ -51,6 +51,7 @@ import type { GenusData } from "./types.ts";
 import {
     citationKeyFor,
     findStoreKeyByDoi,
+    httpUserAgent,
     readStoreCitationKeys,
     readStoreSiblings,
     resolveCitationKey,
@@ -329,8 +330,6 @@ async function cacheWikipediaArticle(genus: string): Promise<string | null>
     }
 
     const wikipediaApi = "https://en.wikipedia.org/w/api.php";
-    // Wikimedia's user-agent policy rejects the runtime default with a 429.
-    const wikipediaUserAgent = "open-paleo-data/1.0 (https://github.com/open-paleo/data)";
     const params = new URLSearchParams({
         action: "query",
         titles: genus,
@@ -346,7 +345,7 @@ async function cacheWikipediaArticle(genus: string): Promise<string | null>
     try
     {
         const response = await fetch(`${wikipediaApi}?${params}`, {
-            headers: { "User-Agent": wikipediaUserAgent },
+            headers: { "User-Agent": httpUserAgent },
         });
         const data = await response.json() as {
             query?: {

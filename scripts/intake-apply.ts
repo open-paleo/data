@@ -44,7 +44,7 @@ import * as url from "node:url";
 import { parse as parseYamlContent, stringify as stringifyYaml } from "yaml";
 
 import type { GenusData } from "./types.ts";
-import { referenceBucket, referenceNotesLimit, writeStatusEvidence } from "./utilities.ts";
+import { referenceNotesLimit, storeReferencePath, writeStatusEvidence } from "./utilities.ts";
 import type { IntakeExtraction } from "./intake-types.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
@@ -337,12 +337,12 @@ function applyExtraction(
     if (!alreadyReferenced)
     {
         const key = extraction.citation_key;
-        const storeRelativePath = path.join("references", referenceBucket(key), `${key}.yml`);
+        const storePath = storeReferencePath(root, key);
 
         // The bootstrap stages a new describing paper's entry beside the stub;
         // promote.sh moves it into the store, so it counts as present here.
-        const inStore = fs.existsSync(path.join(root, storeRelativePath))
-            || fs.existsSync(path.join(stagingIntakeDir, extraction.genus, storeRelativePath));
+        const inStore = fs.existsSync(storePath)
+            || fs.existsSync(storeReferencePath(path.join(stagingIntakeDir, extraction.genus), key));
 
         // Supplementary papers record their role as per-citation `notes` on the
         // in-file pointer; describing-paper notes are about the taxon, so they
@@ -379,7 +379,7 @@ function applyExtraction(
 
             warnings.push(
                 `Reference ${key}: no reference-store entry yet; citation skipped. `
-                + `Add references/${referenceBucket(key)}/${key}.yml `
+                + `Add ${path.relative(root, storePath)} `
                 + "from the papers-needed.md citation"
                 + (localNotes ? ` (agent notes stashed under staging/intake/${extraction.genus}/pending-notes/)` : "")
                 + ", then re-run apply.",

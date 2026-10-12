@@ -3,7 +3,13 @@ import * as path from "node:path";
 import * as url from "node:url";
 
 import type { CladeData, GenusData, TreeNode } from "./types.ts";
-import { collectAllKeys, escapeRegExp, findYamlFiles, parseYaml } from "./utilities.ts";
+import {
+    collectAllKeys,
+    escapeRegExp,
+    findYamlFiles,
+    normalizeDoi,
+    parseYaml,
+} from "./utilities.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
@@ -349,15 +355,16 @@ function stripTags(value: string): string
 }
 
 /**
- * Normalizes a DOI for dedup: lowercased, with any trailing version suffix
- * (figshare/Zenodo ".v1", ".v2", ...) removed so reposts collapse to one.
+ * Normalizes a DOI for dedup: `normalizeDoi`, then any trailing version
+ * suffix (figshare/Zenodo ".v1", ".v2", ...) removed so reposts collapse to
+ * one.
  *
  * @param doi - The bare DOI.
  * @returns The normalized DOI.
  */
-function normalizeDoi(doi: string): string
+function dedupDoi(doi: string): string
 {
-    return doi.toLowerCase().replace(/\.v\d+$/, "");
+    return normalizeDoi(doi).replace(/\.v\d+$/, "");
 }
 
 /**
@@ -382,7 +389,7 @@ function normalizeTitle(title: string): string
  */
 function dedupKeyFor(hit: WatchHit): string
 {
-    return hit.doi ? normalizeDoi(hit.doi) : hit.openAlexId;
+    return hit.doi ? dedupDoi(hit.doi) : hit.openAlexId;
 }
 
 /**
@@ -613,7 +620,7 @@ function matchWorks(
     {
         const doi = typeof work.doi === "string" ? work.doi.replace(/^https?:\/\/doi\.org\//, "") : null;
         const openAlexId = String(work.id ?? "").replace("https://openalex.org/", "");
-        const dedupKey = doi ? normalizeDoi(doi) : openAlexId;
+        const dedupKey = doi ? dedupDoi(doi) : openAlexId;
 
         if (!dedupKey || seen.has(dedupKey))
         {

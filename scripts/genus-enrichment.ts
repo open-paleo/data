@@ -18,10 +18,14 @@ import * as url from "node:url";
 
 import type { GenusData, Reference, Schema, StageInfo, TreeNode } from "./types.ts";
 import {
-    parseYaml,
     collectAllKeys,
+    escapeRegExp,
+    httpUserAgent,
     loadInstitutionRegistry,
     loadRegionRegistry,
+    loadSchema,
+    parseYaml,
+    sleep,
 } from "./utilities.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
@@ -116,7 +120,7 @@ export function createEnrichmentContext(dataRoot: string): EnrichmentContext
     }
 
     return {
-        schema: parseYaml<Schema>(path.join(dataRoot, "schema.yml")),
+        schema: loadSchema(dataRoot),
         institutionCodes,
         regionCodesByName,
         treeCladeNames: new Set(collectAllKeys(parseYaml<TreeNode>(path.join(dataRoot, "tree.yml")))),
@@ -171,14 +175,6 @@ export function resolveInstitutionCode(label: string): string | null
 {
     return enrichmentContext().institutionCodes.get(foldLabel(label)) ?? null;
 }
-
-/**
- * Identifies this tool to the APIs it calls. Wikimedia's user-agent policy
- * rejects the runtime default, and it does so with a 429 that the retry loop
- * cannot clear — which reads as "Wikidata has no mass for this genus" rather
- * than as a failed request, silently dropping seed fields.
- */
-const userAgent = "open-paleo-data/1.0 (https://github.com/open-paleo/data)";
 
 /**
  * Cache of taxon_no → ancestor chain (leaf-first), populated as
@@ -310,20 +306,6 @@ export type EnrichedGenus = {
 };
 
 /**
- * Pauses execution for a given number of milliseconds.
- *
- * @param milliseconds - The duration to sleep.
- * @returns A promise that resolves after the delay.
- */
-export function sleep(milliseconds: number): Promise<void>
-{
-    return new Promise((resolve) =>
-    {
-        setTimeout(resolve, milliseconds);
-    });
-}
-
-/**
  * Requests that failed outright: a network error, or a rate limit or server
  * error that outlasted the retries. The fetch helpers return null for these
  * just as they do for "no record", so the bootstraps drain this list with
@@ -360,7 +342,7 @@ async function fetchJson(fetchUrl: string, options?: RequestInit): Promise<unkno
         {
             const response = await fetch(fetchUrl, {
                 ...options,
-                headers: { "User-Agent": userAgent, ...options?.headers },
+                headers: { "User-Agent": httpUserAgent, ...options?.headers },
             });
 
             if (!response.ok)
@@ -603,7 +585,7 @@ export async function fetchDoiReference(doi: string): Promise<Record<string, str
             {
                 headers: {
                     "Accept": "application/citeproc+json",
-                    "User-Agent": userAgent,
+                    "User-Agent": httpUserAgent,
                 },
                 redirect: "follow",
             },
@@ -1031,7 +1013,7 @@ function extractEtymology(
     {
         const level = etymologySection.level;
         const headerPattern = new RegExp(
-            `={${level}}\\s*${escapeRegex(etymologySection.line ?? "")}\\s*={${level}}`,
+            `={${level}}\\s*${escapeRegExp(etymologySection.line ?? "")}\\s*={${level}}`,
         );
         const headerMatch = wikitext.match(headerPattern);
 
@@ -1181,7 +1163,7 @@ function getFirstBodyLine(wikitext: string): string
 function extractRespelling(summary: string, name: string): string
 {
     const pattern = new RegExp(
-        "^" + escapeRegex(name) + "\\s*\\(\\s*([^)]+)\\)",
+        "^" + escapeRegExp(name) + "\\s*\\(\\s*([^)]+)\\)",
     );
     const match = summary.match(pattern);
 
@@ -1216,7 +1198,7 @@ function extractRespelling(summary: string, name: string): string
 function stripLeadingParenthetical(description: string, name: string): string
 {
     const pattern = new RegExp(
-        "^(" + escapeRegex(name) + ")\\s*\\([^)]*\\)\\s*",
+        "^(" + escapeRegExp(name) + ")\\s*\\([^)]*\\)\\s*",
     );
 
     return description.replace(pattern, "$1 ").replace(/\s{2,}/g, " ").trim();
@@ -1421,17 +1403,6 @@ function extractIpa(html: string): string
     }
 
     return "";
-}
-
-/**
- * Escapes special regex characters in a string.
- *
- * @param text - The string to escape.
- * @returns The escaped string safe for use in a RegExp.
- */
-function escapeRegex(text: string): string
-{
-    return text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
 /**

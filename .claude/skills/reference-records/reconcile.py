@@ -38,6 +38,7 @@ import yaml
 
 from _formations import loadVariants
 from _paths import audit_dir, data_dir
+from skill_schema import stage_order, stage_table  # on the path _paths adds
 
 DATA = data_dir()
 CACHE = os.path.join(audit_dir(), "reference-records")
@@ -128,9 +129,7 @@ def loadStageOrder():
 
     @returns: Dict of lowercased stage name to its index, oldest first.
     """
-    schema = yaml.safe_load(open(os.path.join(DATA, "schema.yml"), encoding="utf-8"))
-
-    return {str(name).lower(): index for index, name in enumerate(schema.get("stages") or {})}
+    return stage_order()
 
 
 def loadStageVocabulary():
@@ -143,9 +142,7 @@ def loadStageVocabulary():
 
     @returns: Set of lowercased stage names.
     """
-    schema = yaml.safe_load(open(os.path.join(DATA, "schema.yml"), encoding="utf-8"))
-
-    return {str(name).lower() for name in (schema.get("stages") or {})}
+    return {str(name).lower() for name in stage_table()}
 
 
 def splitStages(value, vocabulary, order=None):

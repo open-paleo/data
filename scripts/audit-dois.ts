@@ -3,7 +3,12 @@ import * as path from "node:path";
 import * as url from "node:url";
 
 import type { Reference } from "./types.ts";
-import { findYamlFiles, normalizeDoi, parseYaml } from "./utilities.ts";
+import {
+    findYamlFiles,
+    normalizeDoi,
+    parseYaml,
+    sleep,
+} from "./utilities.ts";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
@@ -109,17 +114,6 @@ type CacheEntry = {
      */
     resolves?: boolean;
 };
-
-/**
- * Pauses execution for the given number of milliseconds.
- *
- * @param milliseconds - How long to sleep.
- * @returns A promise that resolves after the delay.
- */
-function sleep(milliseconds: number): Promise<void>
-{
-    return new Promise((resolve) => setTimeout(resolve, milliseconds));
-}
 
 /**
  * Normalizes a title for comparison: strips HTML markup, decodes a handful of
