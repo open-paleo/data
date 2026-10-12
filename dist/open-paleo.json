@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-10-12T08:05:29.137Z",
+    "built_at": "2026-10-12T08:36:35.029Z",
     "clade_count": 188,
     "genus_count": 1425,
     "license": "CC-BY-4.0",
@@ -65897,7 +65897,7 @@
           }
         ]
       },
-      "etymology": "Named after Da'an district in Zigong, Sichuan Province, China where the specimens were found, + Greek sauros ('lizard'), meaning 'Da'an lizard'.",
+      "etymology": "Named after Da'an District in Zigong, Sichuan Province, China, where the Zigong Dinosaur Museum is located, + Greek sauros ('lizard'), meaning 'Da'an lizard'.",
       "pronunciation": {
         "phonetic": "DAH-no-SOR-us"
       },
@@ -66110,11 +66110,10 @@
               "Late Jurassic"
             ],
             "stage": [
-              "Kimmeridgian",
-              "Tithonian"
+              "Kimmeridgian"
             ],
             "from_ma": 154.8,
-            "to_ma": 143.1
+            "to_ma": 149.2
           },
           "location": {
             "country": "GB",
@@ -66199,7 +66198,7 @@
           "issue": "4",
           "pages": "367-407",
           "doi": "10.1017/S1477201908002459",
-          "notes": "Gives the holotype's locality as the Swindon Brick and Tile Company's clay pit, Swindon, Wiltshire."
+          "notes": "Gives the holotype's provenance as \"Kimmeridge Clay (Kimmeridgian: Late Jurassic), Swindon, Wiltshire\"."
         },
         {
           "id": "sánchez-fenollosa2025a",
@@ -66222,7 +66221,7 @@
           "issue": "3",
           "pages": "211-254",
           "doi": "10.1080/02724634.1985.10011859",
-          "notes": "Gives the type locality as the brick-pit of Swindon Brick and Tile Co. at the foot of Old Swindon Hill, with a National Grid reference, and places the holotype in the lower Kimmeridge Clay."
+          "notes": "Gives the type locality as the brick-pit of Swindon Brick and Tile Co. at the foot of Old Swindon Hill, with a grid reference; says the exact horizon is not known."
         }
       ],
       "taxonomy": [
@@ -67491,8 +67490,8 @@
             "locality": "Davinópolis",
             "part": "lower",
             "coordinates": [
-              -5.557,
-              -47.431
+              -5.556944,
+              -47.431111
             ],
             "region_code": "BR-MA",
             "part_of": "formation"
@@ -70773,6 +70772,17 @@
       ],
       "references": [
         {
+          "id": "poropat2021a",
+          "authors": "Poropat, S. F.; Kundrát, M.; Mannion, P. D.; Upchurch, P.; Tischler, T. R.; Elliott, D. A.",
+          "year": 2021,
+          "title": "Second specimen of the Late Cretaceous Australian sauropod dinosaur Diamantinasaurus matildae provides new anatomical information on the skull and neck of early titanosaurs",
+          "journal": "Zoological Journal of the Linnean Society",
+          "volume": "192",
+          "pages": "610-674",
+          "doi": "10.1093/zoolinnean/zlaa173",
+          "notes": "Places both individuals, the type among them, in the \"Cenomanian–lower Turonian 'upper' Winton Formation\"."
+        },
+        {
           "id": "hocknull2009a",
           "authors": "Hocknull, S. A.; White, M. A.; Tischler, T. R.; Cook, A. G.; Calleja, N. D.; Sloan, T.; Elliott, D. A.",
           "year": 2009,
@@ -71300,7 +71310,9 @@
             "locality": "Lujiatun, Beipiao",
             "region": "Liaoning",
             "formation": "Yixian",
-            "region_code": "CN-LN"
+            "part": "lower",
+            "region_code": "CN-LN",
+            "part_of": "formation"
           },
           "type_specimen": {
             "specimen_id": [
@@ -72624,7 +72636,7 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "NMMNH P-3690"
+              "NMMNH 3690"
             ],
             "specimen_type": "holotype",
             "institution": "New Mexico Museum of Natural History and Science",
@@ -72686,7 +72698,7 @@
         },
         {
           "specimen_id": [
-            "NMMNH P-3690"
+            "NMMNH 3690"
           ],
           "institution": "New Mexico Museum of Natural History and Science",
           "category": "gut-contents",
@@ -72958,16 +72970,17 @@
               "Late Cretaceous"
             ],
             "stage": [
+              "Campanian",
               "Maastrichtian"
             ],
-            "from_ma": 72.2,
+            "from_ma": 83.6,
             "to_ma": 66
           },
           "location": {
             "country": "US",
             "region": "New Jersey",
             "locality": "Mullica Hill",
-            "notes": "Leidy (1865) picked the tooth out of a lot of shark teeth in a private collection and could place it no more finely than \"the Green-sand formations\", so the unit is either the Navesink or the Hornerstown Formation and none of the later works cited for this taxon has narrowed it further.",
+            "notes": "Leidy (1865) picked the tooth out of a lot of shark teeth in a private collection and could place it no more finely than \"the Green-sand formations\". Gallagher (1993) gives it as \"either from Navesink or Hornerstown Fm.\" and Molnar (1990) as \"probably either the Navesink or Mount Laurel Formation\", neither with a reason.",
             "region_code": "US-NJ"
           },
           "type_specimen": {
@@ -72986,6 +72999,26 @@
         }
       ],
       "references": [
+        {
+          "id": "gallagher1993a",
+          "authors": "Gallagher, W. B.",
+          "year": 1993,
+          "title": "The Cretaceous/Tertiary mass extinction event in the northern Atlantic Coastal Plain",
+          "journal": "The Mosasaur",
+          "volume": "5",
+          "pages": "75-154",
+          "notes": "Gives the type as from Mullica Hill, \"either from Navesink or Hornerstown Fm., Maastrichtian\"."
+        },
+        {
+          "id": "molnar1990b",
+          "authors": "Molnar, R. E.",
+          "year": 1990,
+          "title": "Problematic Theropoda: \"Carnosaurs\"",
+          "book": "The Dinosauria (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)",
+          "publisher": "University of California Press, Berkeley",
+          "pages": "306-317",
+          "notes": "Gives the tooth as from the 'Green-sand formations', \"probably either the Navesink or Mount Laurel Formation\"."
+        },
         {
           "id": "leidy1865a",
           "authors": "Leidy, J.",
@@ -73676,6 +73709,18 @@
       ],
       "references": [
         {
+          "id": "mannion2019b",
+          "authors": "Mannion, P. D.; Upchurch, P.; Jin, X.; Zheng, W.",
+          "year": 2019,
+          "title": "New information on the Cretaceous sauropod dinosaurs of Zhejiang Province, China: impact on Laurasian titanosauriform phylogeny and biogeography",
+          "journal": "Royal Society Open Science",
+          "volume": "6",
+          "issue": "8",
+          "pages": "191057",
+          "doi": "10.1098/rsos.191057",
+          "notes": "Gives the taxon as from the early Late Cretaceous Jinhua Formation."
+        },
+        {
           "id": "lü2008b",
           "authors": "Lü, J.; Azuma, Y.; Chen, R.; Zheng, W.; Jin, X.",
           "year": 2008,
@@ -73804,23 +73849,21 @@
           "type_species": true,
           "period": {
             "name": [
+              "Early Cretaceous",
               "Late Cretaceous"
             ],
             "stage": [
+              "Albian",
               "Cenomanian"
             ],
-            "from_ma": 100.5,
+            "from_ma": 113.2,
             "to_ma": 93.9
           },
           "location": {
             "country": "KR",
-            "locality": "Aphaedo",
+            "locality": "southeastern coast of Aphae Island (Aphaedo)",
             "region": "South Jeolla",
             "formation": "Ilseongsan",
-            "coordinates": [
-              34.8325,
-              126.371002
-            ],
             "region_code": "KR-46"
           },
           "size": {
@@ -75995,6 +76038,17 @@
       ],
       "references": [
         {
+          "id": "baird1979a",
+          "authors": "Baird, D.; Horner, J. R.",
+          "year": 1979,
+          "title": "Cretaceous dinosaurs of North Carolina",
+          "journal": "Brimleyana",
+          "volume": "2",
+          "pages": "1-28",
+          "url": "https://www.biodiversitylibrary.org/part/442233",
+          "notes": "Gives the type, ANSP 9995, as from the \"chocolate greensand bed\" or New Egypt Formation."
+        },
+        {
           "id": "cope1866a",
           "authors": "Cope, E. D.",
           "year": 1866,
@@ -76583,9 +76637,8 @@
             "locality": "Greenhill, Sherborne",
             "region": "Dorset",
             "group": "Inferior Oolite",
-            "part": "upper",
-            "region_code": "GB-DOR",
-            "part_of": "group"
+            "notes": "Benson (2008) gives the horizon as the \"Upper Inferior Oolite, Parkinsonia parkinsoni ammonite Zone, Garantiana garantiana Subzone\", late Bajocian.",
+            "region_code": "GB-DOR"
           },
           "size": {
             "hip_height_m": {
