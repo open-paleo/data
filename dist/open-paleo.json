@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-10-12T04:03:25.733Z",
+    "built_at": "2026-10-12T04:15:11.836Z",
     "clade_count": 188,
     "genus_count": 1425,
     "license": "CC-BY-4.0",
@@ -119876,7 +119876,7 @@
           },
           "location": {
             "country": "MW",
-            "locality": "Mwakasyunguti area",
+            "locality": "CD-9, Mwakasyunguti",
             "region": "Karonga",
             "formation": "Dinosaur Beds",
             "part": "upper",
@@ -120027,11 +120027,14 @@
             "locality": "Estancia Laguna Palacios, 2005 Quarry",
             "region": "Chubut",
             "formation": "Bajo Barreal",
+            "part": "lower",
             "coordinates": [
               -44.906617,
               -69.378797
             ],
-            "region_code": "AR-U"
+            "notes": "Ibiricu and colleagues (2013) give the horizon as the \"Upper part of the Lower Member of the Bajo Barreal Formation\".",
+            "region_code": "AR-U",
+            "part_of": "formation"
           },
           "type_specimen": {
             "specimen_id": [
@@ -121198,7 +121201,7 @@
           },
           "location": {
             "country": "RU",
-            "locality": "Blagoveschensk",
+            "locality": "Nagornaia Street, Blagoveschensk",
             "region": "Amur",
             "formation": "Udurchukan",
             "coordinates": [
@@ -121684,10 +121687,11 @@
           },
           "location": {
             "country": "LS",
-            "locality": "Thotobolo ea 'Ma-Beata",
+            "locality": "Maphutseng",
             "region": "Mohale's Hoek",
             "formation": "Elliot",
             "part": "lower",
+            "notes": "Peyre de Fabrègues and Allain (2019) place the Maphutseng bone bed in the lower part of the lower Elliot Formation, \"suggesting a Norian age (ca. 210 Ma)\", against a reading of it as uppermost lower Elliot and \"latest Triassic age (ca. 205 Ma)\".",
             "region_code": "LS-F",
             "part_of": "formation"
           },
@@ -122248,6 +122252,19 @@
         }
       ],
       "references": [
+        {
+          "id": "averianov2006a",
+          "authors": "Averianov, A. O.; Voronkevich, A. V.; Leshchinskiy, S. V.; Fayngertz, A. V.",
+          "year": 2006,
+          "title": "A ceratopsian dinosaur Psittacosaurus sibiricus from the Early Cretaceous of West Siberia",
+          "journal": "Journal of Systematic Palaeontology",
+          "publisher": "Informa UK Limited",
+          "volume": "4",
+          "issue": "4",
+          "pages": "359-395",
+          "doi": "10.1017/S1477201906001933",
+          "notes": "Prints the position of each Shestakovo site in a figure caption, including Shestakovo 1, the Kiyacursor type locality."
+        },
         {
           "id": "averianov2024a",
           "authors": "Averianov, A. O.; Skutschas, P. P.; Atuchin, A. A.; Slobodin, D. A.; Feofanova, O. A.; Vladimirova, O. N.",
@@ -123849,7 +123866,10 @@
             "region": "Hunedoara",
             "locality": "Fântânele-3",
             "formation": "Densuș-Ciula",
-            "region_code": "RO-HD"
+            "part": "middle",
+            "notes": "Magyar and colleagues (2026) place the type locality in \"the lower part of the Middle Member of the Densuș-Ciula Formation\".",
+            "region_code": "RO-HD",
+            "part_of": "formation"
           },
           "type_specimen": {
             "specimen_id": [
@@ -124500,7 +124520,7 @@
           "erected_in": "leahey2015a",
           "type_specimen": {
             "specimen_id": [
-              "QM F1801"
+              "QM F18101"
             ],
             "specimen_type": "holotype",
             "institution": "Queensland Museum, Centre for Biodiversity",
@@ -125054,7 +125074,7 @@
           },
           "location": {
             "country": "UZ",
-            "locality": "Dzharakuduk II",
+            "locality": "CBI-52, Dzharakuduk",
             "region": "Navoiy",
             "formation": "Bissekty",
             "region_code": "UZ-NW"
