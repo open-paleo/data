@@ -15,18 +15,18 @@
 // Translations are applied — the holotype/diagnosis content of a
 // formal description survives translation.
 //
-// The rewrite is string-level. Both fields are inserted at canonical
-// positions found by line scanning:
+// Both fields are inserted as text at positions found by parsing the file
+// with the `yaml` library and reading each node's source offsets:
 //
 //   - `diagnostic_features:` at top level, immediately before
 //     `identifiers:` (matches Iguanodon / Triceratops / Tyrannosaurus)
-//   - `material:` inside the type species's `type_specimen:` block, after
-//     `institution:`
+//   - `material:` as the last key of the type species's `type_specimen:`
+//     map, at that map's own indentation
 //
-// Field bodies are produced by the `yaml` library on a synthetic
-// mini-document, then indented to the target column. This keeps long
-// values folded correctly without round-tripping the rest of the file
-// through the YAML parser.
+// The parse finds the blocks whatever their indentation or flow style; the
+// insertion stays textual because re-printing the parsed document reformats
+// most genus files. Field bodies are produced by the `yaml` library on a
+// synthetic mini-document, then indented to the target column.
 //
 // Defaults to dry-run: prints per-genus diffs. Pass --apply to write.
 //
@@ -38,7 +38,8 @@ import * as fs from "node:fs";
 import * as path from "node:path";
 import * as url from "node:url";
 
-import { stringify as yamlStringify } from "yaml";
+import { isMap, isSeq, parseDocument, stringify as yamlStringify } from "yaml";
+import type { Node, YAMLMap } from "yaml";
 
 const scriptPath = url.fileURLToPath(import.meta.url);
 const scriptDir = path.dirname(scriptPath);
@@ -57,175 +58,53 @@ type Extraction = {
     notes: string | null;
 };
 
-type SpeciesBlock = {
-    /**
-     * Inclusive index of the `  - name: <species>` line.
-     */
-    start: number;
-
-    /**
-     * Inclusive index of the last line of the species block.
-     */
-    end: number;
-};
-
 /**
- * Locates the bounds of every species block under the `species:` key.
- * A species block starts at a `  - name:` line and ends at the line
- * before the next `  - name:` or the next top-level key.
+ * Finds the type species's `type_specimen` map in a parsed genus file: the
+ * species marked `type_species: true`, else the first species.
  *
- * @param lines - File contents split by line.
- * @returns Array of species block bounds, in document order.
+ * @param content - The genus file's text.
+ * @returns The block-style `type_specimen` map, or null when the file does not
+ *     parse, has no species, the species has no `type_specimen`, or that map is
+ *     written in flow style.
  */
-function locateSpeciesBlocks(lines: Array<string>): Array<SpeciesBlock>
+function locateTypeSpecimen(content: string): YAMLMap | null
 {
-    let speciesStart = -1;
+    const document = parseDocument(content);
 
-    for (let index = 0; index < lines.length; index += 1)
-    {
-        if (lines[index] === "species:")
-        {
-            speciesStart = index;
-            break;
-        }
-    }
-
-    if (speciesStart < 0)
-    {
-        return [];
-    }
-
-    const blocks = new Array<SpeciesBlock>();
-    let currentStart = -1;
-
-    for (let index = speciesStart + 1; index < lines.length; index += 1)
-    {
-        const line = lines[index];
-
-        // Top-level key terminates the species list.
-        if (line.length > 0 && !line.startsWith(" ") && !line.startsWith("-"))
-        {
-            if (currentStart >= 0)
-            {
-                blocks.push({ start: currentStart, end: index - 1 });
-                currentStart = -1;
-            }
-
-            break;
-        }
-
-        if (line.startsWith("  - name:"))
-        {
-            if (currentStart >= 0)
-            {
-                blocks.push({ start: currentStart, end: index - 1 });
-            }
-
-            currentStart = index;
-        }
-    }
-
-    if (currentStart >= 0)
-    {
-        blocks.push({ start: currentStart, end: lines.length - 1 });
-    }
-
-    return blocks;
-}
-
-/**
- * Picks the type species block: the one containing
- * `    type_species: true`. Falls back to the first block when no
- * type species is marked.
- *
- * @param lines - File contents split by line.
- * @param blocks - Species blocks from locateSpeciesBlocks.
- * @returns The selected block, or null if no species are present.
- */
-function pickRepresentativeSpecies(lines: Array<string>, blocks: Array<SpeciesBlock>): SpeciesBlock | null
-{
-    if (blocks.length === 0)
+    if (document.errors.length > 0)
     {
         return null;
     }
 
-    for (const block of blocks)
-    {
-        for (let index = block.start; index <= block.end; index += 1)
-        {
-            if (lines[index].trim() === "type_species: true")
-            {
-                return block;
-            }
-        }
-    }
+    const species = document.get("species", true);
 
-    return blocks[0];
-}
-
-/**
- * Locates the type_specimen block within a species block. Returns the
- * inclusive line range from the `    type_specimen:` header through its
- * last child line. Returns null when no type_specimen block is present.
- *
- * @param lines - File contents split by line.
- * @param block - Species block bounds.
- * @returns type_specimen block bounds, or null.
- */
-function locateHolotypeBlock(lines: Array<string>, block: SpeciesBlock): SpeciesBlock | null
-{
-    let holotypeStart = -1;
-
-    for (let index = block.start; index <= block.end; index += 1)
-    {
-        if (lines[index] === "    type_specimen:")
-        {
-            holotypeStart = index;
-            break;
-        }
-    }
-
-    if (holotypeStart < 0)
+    if (!isSeq(species) || species.items.length === 0)
     {
         return null;
     }
 
-    let holotypeEnd = block.end;
+    const blocks = species.items.filter((item): item is YAMLMap => isMap(item));
+    const typeSpecies = blocks.find((block) => block.get("type_species") === true) ?? blocks[0];
+    const typeSpecimen = typeSpecies?.get("type_specimen", true);
 
-    for (let index = holotypeStart + 1; index <= block.end; index += 1)
+    if (!isMap(typeSpecimen) || typeSpecimen.flow || typeSpecimen.items.length === 0)
     {
-        const line = lines[index];
-        const indent = line.match(/^( *)/)![1].length;
-
-        if (line.length > 0 && indent <= 4)
-        {
-            holotypeEnd = index - 1;
-            break;
-        }
+        return null;
     }
 
-    return { start: holotypeStart, end: holotypeEnd };
+    return typeSpecimen;
 }
 
 /**
- * Returns true if any line in the holotype block declares `material:`
- * at the expected 6-space indent.
+ * Returns the offset at which a line starts.
  *
- * @param lines - File contents split by line.
- * @param holotype - Holotype block bounds.
- * @returns Whether material is already populated.
+ * @param content - The text.
+ * @param offset - Any offset on the line.
+ * @returns The offset of the line's first character.
  */
-function holotypeHasMaterial(lines: Array<string>, holotype: SpeciesBlock): boolean
+function lineStart(content: string, offset: number): number
 {
-    for (let index = holotype.start + 1; index <= holotype.end; index += 1)
-    {
-        if (lines[index].startsWith("      material:"))
-        {
-            return true;
-        }
-    }
-
-    return false;
+    return content.lastIndexOf("\n", offset - 1) + 1;
 }
 
 /**
@@ -252,7 +131,7 @@ function renderField(key: string, value: unknown, indent: number): string
 /**
  * Inserts a `diagnostic_features` block at the top level, immediately
  * before `identifiers:` (preferred) or `species:` / `references:` as
- * fallbacks. Returns null if no anchor is found.
+ * fallbacks. Returns null if the file does not parse or no anchor is found.
  *
  * @param content - Original YAML text.
  * @param bullets - Diagnostic feature bullets.
@@ -260,17 +139,23 @@ function renderField(key: string, value: unknown, indent: number): string
  */
 function insertDiagnosticFeatures(content: string, bullets: Array<string>): string | null
 {
-    const anchors = ["\nidentifiers:", "\nspecies:", "\nreferences:"];
+    const document = parseDocument(content);
 
-    for (const anchor of anchors)
+    if (document.errors.length > 0 || !isMap(document.contents))
     {
-        const position = content.indexOf(anchor);
+        return null;
+    }
 
-        if (position >= 0)
+    for (const anchor of ["identifiers", "species", "references"])
+    {
+        const pair = document.contents.items.find((item) => (item.key as Node | null)?.toJSON?.() === anchor);
+        const keyStart = (pair?.key as Node | undefined)?.range?.[0];
+
+        if (keyStart !== undefined)
         {
-            const block = renderField("diagnostic_features", bullets, 0);
+            const position = lineStart(content, keyStart);
 
-            return content.slice(0, position + 1) + block + content.slice(position + 1);
+            return content.slice(0, position) + renderField("diagnostic_features", bullets, 0) + content.slice(position);
         }
     }
 
@@ -278,9 +163,9 @@ function insertDiagnosticFeatures(content: string, bullets: Array<string>): stri
 }
 
 /**
- * Inserts `material:` at indent 6 inside the type species's holotype
- * block, immediately after the last existing child. Returns null when
- * no holotype block is found.
+ * Inserts `material:` as the last key of the type species's `type_specimen`
+ * map, at that map's indentation. Returns null when there is no block-style
+ * `type_specimen` map to insert into.
  *
  * @param content - Original YAML text.
  * @param value - Material text.
@@ -288,35 +173,32 @@ function insertDiagnosticFeatures(content: string, bullets: Array<string>): stri
  */
 function insertHolotypeMaterial(content: string, value: string): { content: string; alreadyPresent: boolean } | null
 {
-    const lines = content.split("\n");
-    const speciesBlocks = locateSpeciesBlocks(lines);
-    const target = pickRepresentativeSpecies(lines, speciesBlocks);
+    const typeSpecimen = locateTypeSpecimen(content);
 
-    if (target === null)
+    if (typeSpecimen === null)
     {
         return null;
     }
-
-    const holotype = locateHolotypeBlock(lines, target);
-
-    if (holotype === null)
-    {
-        return null;
-    }
-
-    if (holotypeHasMaterial(lines, holotype))
+    else if (typeSpecimen.has("material"))
     {
         return { content, alreadyPresent: true };
     }
 
-    const block = renderField("material", value, 6);
-    const blockLines = block.split("\n").filter((line) => line.length > 0);
+    const firstKeyStart = (typeSpecimen.items[0].key as Node).range![0];
+    const indent = firstKeyStart - lineStart(content, firstKeyStart);
+    const lastPair = typeSpecimen.items[typeSpecimen.items.length - 1];
+    const lastNode = (lastPair.value ?? lastPair.key) as Node;
+    const valueEnd = lastNode.range![1];
 
-    const before = lines.slice(0, holotype.end + 1);
-    const after = lines.slice(holotype.end + 1);
+    // A block scalar's value ends after its own newline; a plain or flow value
+    // ends mid-line, so the field goes on the line after it.
+    const position = content[valueEnd - 1] === "\n"
+        ? valueEnd
+        : (content.indexOf("\n", valueEnd) + 1 || content.length);
+    const prefix = position === content.length && !content.endsWith("\n") ? "\n" : "";
 
     return {
-        content: [...before, ...blockLines, ...after].join("\n"),
+        content: content.slice(0, position) + prefix + renderField("material", value, indent) + content.slice(position),
         alreadyPresent: false,
     };
 }
