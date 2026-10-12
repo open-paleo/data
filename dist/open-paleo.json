@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-10-12T05:33:48.794Z",
+    "built_at": "2026-10-12T06:25:19.713Z",
     "clade_count": 188,
     "genus_count": 1425,
     "license": "CC-BY-4.0",
@@ -17712,10 +17712,6 @@
             "locality": "Iharkút mine, Bakony Mountains",
             "region": "Veszprém",
             "formation": "Csehbánya",
-            "coordinates": [
-              47.231111,
-              17.650278
-            ],
             "region_code": "HU-VE"
           },
           "size": {
@@ -17782,7 +17778,7 @@
           "volume": "469",
           "pages": "1-161",
           "doi": "10.3897/zookeys.469.8439",
-          "notes": "Source of the Iharkút locality coordinates."
+          "notes": "Gives a position for the Iharkút open-pit mine as a whole, which holds several bone-bearing sites."
         },
         {
           "id": "czepiński2024a",
@@ -100256,12 +100252,13 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "SMNS 12353"
+              "SMNS 11839"
             ],
             "specimen_type": "holotype",
             "institution": "Staatliches Museum für Naturkunde",
             "material": "Cervical, dorsal, sacral and caudal vertebrae; humerus fragment; ileum fragment; femur; metatarsal; lower jaw fragment",
-            "completeness": "partial"
+            "completeness": "partial",
+            "notes": "Huene (1908) gives no number. Galton (1985) and Sues and Schoch (2025) give the holotype as SMNS 11839; Rauhut and Hungerbühler (2000) give the series as SMNS 12353, the number Sues and Schoch give the Apatosuchus holotype, SMNS 12353b."
           },
           "erected_in": "huene1908a",
           "authors": "Huene, F. V.",
@@ -100269,6 +100266,16 @@
         }
       ],
       "references": [
+        {
+          "id": "galton1985c",
+          "authors": "Galton, P. M.",
+          "year": 1985,
+          "title": "The poposaurid thecodontian Teratosaurus suevicus v. Meyer, plus referred specimens mostly based on prosauropod dinosaurs, from the Middle Stubensandstein (Upper Triassic) of Nordwürttemberg",
+          "journal": "Stuttgarter Beiträge zur Naturkunde, Serie B (Geologie und Paläontologie)",
+          "volume": "116",
+          "pages": "1-29",
+          "notes": "Figures the proximal right femur as \"part of holotype SMNS 11839\"."
+        },
         {
           "id": "huene1908a",
           "authors": "Huene, F. V.",
@@ -100559,6 +100566,19 @@
         }
       ],
       "references": [
+        {
+          "id": "sullivan2003b",
+          "authors": "Sullivan, R. M.",
+          "year": 2003,
+          "title": "Revision of the dinosaur Stegoceras Lambe (Ornithischia, Pachycephalosauridae)",
+          "journal": "Journal of Vertebrate Paleontology",
+          "publisher": "Informa UK Limited",
+          "volume": "23",
+          "issue": "1",
+          "pages": "181-207",
+          "doi": "10.1671/0272-4634(2003)23[181:rotdsl]2.0.co;2",
+          "notes": "Revises Stegoceras and erects the genus, as Hanssuessia; gives the horizon as the Dinosaur Park Formation, with \"a remote possibility that the holotype is from the Oldman Formation\"."
+        },
         {
           "id": "brown1943a",
           "authors": "Brown, B.; Schlaikjer, E. M.",
@@ -101832,20 +101852,22 @@
           "type_species": true,
           "period": {
             "name": [
-              "Late Cretaceous"
+              "Early Cretaceous"
             ],
             "stage": [
-              "Campanian",
-              "Maastrichtian"
+              "Barremian",
+              "Aptian",
+              "Albian"
             ],
-            "from_ma": 83.6,
-            "to_ma": 66
+            "from_ma": 125.77,
+            "to_ma": 100.5
           },
           "location": {
             "country": "CN",
             "locality": "Chia-yü-kuan",
             "region": "Gansu",
-            "notes": "Bohlin (1953) places the holotype northwest of Chia-yu-kuan and names no unit for it. Weishampel and colleagues (2004) give the Minhe Formation on a personal communication, where Dong (2002) assigns the same locality to the Xinminpu Group.",
+            "group": "Xinminpu",
+            "notes": "Bohlin (1953) places the holotype northwest of Chia-yu-kuan and names no unit for it. Dong (2002) assigns the locality to the Early Cretaceous Xinminpu Group, while Weishampel and colleagues (2004) give the Minhe Formation and a Campanian–Maastrichtian age on a personal communication.",
             "region_code": "CN-GS"
           },
           "type_specimen": {
@@ -104067,10 +104089,10 @@
               "Early Cretaceous"
             ],
             "stage": [
-              "Valanginian"
+              "Barremian"
             ],
-            "from_ma": 137.05,
-            "to_ma": 132.6
+            "from_ma": 125.77,
+            "to_ma": 121.4
           },
           "location": {
             "country": "US",
@@ -104079,6 +104101,7 @@
             "formation": "Cedar Mountain",
             "member": "Yellow Cat",
             "part": "upper",
+            "notes": "McDonald and colleagues (2010) date the Andrew's Site quarry \"late Barremian to earliest Aptian\" from a detrital-zircon age of 124 Ma in beds above its caprock, which is Barremian on the current chart.",
             "region_code": "US-UT",
             "part_of": "member"
           },
@@ -104348,7 +104371,7 @@
           },
           "location": {
             "country": "MN",
-            "locality": "Nemegt, site 8",
+            "locality": "Nemegt, Western Sayr, site 8",
             "region": "Ömnögovi",
             "formation": "Nemegt",
             "notes": "Gradzinski and colleagues (1969) map site 8 as a then-undescribed skull and partial postcranial skeleton. Their only coordinate for Nemegt is a range spanning some 40 km, covering all twelve numbered skeletons.",
@@ -104519,6 +104542,7 @@
             "locality": "Calico Canyon",
             "region": "South Dakota",
             "formation": "Lakota",
+            "member": "Chilson",
             "region_code": "US-SD"
           },
           "type_specimen": {
@@ -107187,10 +107211,6 @@
             "locality": "Iharkút",
             "region": "Veszprém",
             "formation": "Csehbánya",
-            "coordinates": [
-              47.231111,
-              17.650278
-            ],
             "region_code": "HU-VE"
           },
           "type_specimen": {
@@ -107252,7 +107272,7 @@
           "volume": "469",
           "pages": "1-161",
           "doi": "10.3897/zookeys.469.8439",
-          "notes": "Prints the Iharkut coordinate, which the describing paper does not."
+          "notes": "Gives a position for the Iharkút open-pit mine as a whole, which holds several bone-bearing sites."
         }
       ],
       "taxonomy": [
@@ -107363,12 +107383,13 @@
           },
           "type_specimen": {
             "specimen_id": [
-              "NHMUK PV R 3775"
+              "NHMUK PV OR 3775"
             ],
             "specimen_type": "holotype",
             "institution": "Natural History Museum",
             "material": "Partial articulated skeleton: poorly preserved skull elements (maxilla, jugal, postorbital, dentary, ?occipital condyle), seven cervical and four dorsal vertebrae, cervical and dorsal ribs, both scapulae and coracoids, and numerous osteoderms.",
-            "completeness": "partial"
+            "completeness": "partial",
+            "notes": "Raven and colleagues (2020) give the holotype as NHMUK PV OR3775; earlier papers write it R3775."
           },
           "size": {
             "hip_height_m": {
@@ -107813,16 +107834,17 @@
               "Late Cretaceous"
             ],
             "stage": [
+              "Campanian",
               "Maastrichtian"
             ],
-            "from_ma": 72.2,
+            "from_ma": 83.6,
             "to_ma": 66
           },
           "location": {
             "country": "FR",
             "locality": "Rognac",
             "region": "Bouches-du-Rhône",
-            "notes": "Matheron (1869) places the holotype in the basal detrital layers of Matheron's Rognac stage, beneath its upper limestones.",
+            "notes": "Matheron (1869) places the holotype in the basal detrital layers of his Rognac stage, beneath its upper limestones. Tortosa and colleagues (2014) date the upper part of the Lower Rognacian to the late Campanian, and Le Loeuff (1993) gives the species as early Maastrichtian in the Aix-en-Provence Basin.",
             "region_code": "FR-13"
           },
           "type_specimen": {
@@ -107848,6 +107870,19 @@
         }
       ],
       "references": [
+        {
+          "id": "tortosa2014a",
+          "authors": "Tortosa, T.; Buffetaut, E.; Vialle, N.; Dutour, Y.; Turini, E.; Cheylan, G.",
+          "year": 2014,
+          "title": "A new abelisaurid dinosaur from the Late Cretaceous of southern France: Palaeobiogeographical implications",
+          "journal": "Annales de Paléontologie",
+          "publisher": "Elsevier BV",
+          "volume": "100",
+          "issue": "1",
+          "pages": "63-86",
+          "doi": "10.1016/j.annpal.2013.10.003",
+          "notes": "Dates the \"upper part of the Lower Rognacian\" to the late Campanian, after Cojan and Moreau (2006)."
+        },
         {
           "id": "matheron1869b",
           "authors": "Matheron, P.",
@@ -147217,10 +147252,6 @@
             "region": "Veszprém",
             "formation": "Csehbánya",
             "locality": "Iharkút",
-            "coordinates": [
-              47.231111,
-              17.650278
-            ],
             "region_code": "HU-VE"
           },
           "type_specimen": {
@@ -147257,7 +147288,7 @@
           "volume": "469",
           "pages": "1-161",
           "doi": "10.3897/zookeys.469.8439",
-          "notes": "Gives the position of the Iharkút open-pit mine, the M. vorosi type locality, as 47°13'52\"N, 17°39'01\"E."
+          "notes": "Gives a position for the Iharkút open-pit mine as a whole, which holds several bone-bearing sites."
         },
         {
           "id": "seeley1881a",
