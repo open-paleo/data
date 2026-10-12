@@ -1,5 +1,22 @@
 # *Nanyangosaurus*
 
+## What stages does *Nanyangosaurus* take?
+
+*2026-10-11*
+
+**Conclusion.** The Xiaguan Formation's range, Turonian to Campanian. No source read dates the holotype's horizon on its own evidence: the paper that defines the formation dates it as a whole and says its lower strata have yielded nothing datable, and the one Coniacian statement cites only that paper. Governs `stage: [Turonian, Coniacian, Santonian, Campanian]` on [*Nanyangosaurus zhugeii*](../../../genera/N/Nanyangosaurus.yml).
+
+**Evidence.**
+- wang2013c, Conclusions (2): the formation's age "has been assigned to the middle-to-late Turonian to the middle Campanian".
+- wang2013c, Conclusions (3): "No invertebrate fossils, charophyte plant fossils, or plant megafossils have yet been found in the lower strata of the “Xiaguan Formation.” … the search for and study of invertebrate fossils, charophyte plant fossils, and plant megafossils from the same horizon as *Youngoolithus xiaguanensis* and *Nanyangosaurus zhugeii* is especially urgent" (translated).
+- xing2014a, Discussion: *N. zhugeii* "was recovered from the early to middle Coniacian lower portion of the Xiaguan Formation", citing only Wang and colleagues (2013).
+
+**Ruled out.**
+- *Coniacian alone.* It is relayed from a paper that does not give it.
+- *Early Cretaceous, after Xu and colleagues (2000).* The [Xiaguan](../../../stratigraphy/x/xiaguan.yml) entry records it as inferred from the animal's evolutionary grade before the formation was defined.
+
+**Open.** A dating of the formation's lower strata would narrow the range.
+
 ## Which formation is the *Nanyangosaurus* holotype from?
 
 *2026-08-05*
