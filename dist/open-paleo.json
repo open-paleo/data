@@ -1,7 +1,7 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-10-12T21:10:37.972Z",
+    "built_at": "2026-10-13T16:42:06.245Z",
     "clade_count": 188,
     "genus_count": 1425,
     "license": "CC-BY-4.0",
@@ -12423,6 +12423,10 @@
             "region": "Qacha's Nek",
             "formation": "Elliot",
             "part": "upper",
+            "coordinates": [
+              -30.05,
+              28.533333
+            ],
             "region_code": "LS-H",
             "part_of": "formation"
           },
@@ -12462,6 +12466,38 @@
         }
       ],
       "references": [
+        {
+          "id": "sereno2012a",
+          "authors": "Sereno, P. C.",
+          "year": 2012,
+          "title": "Taxonomy, morphology, masticatory function and phylogeny of heterodontosaurid dinosaurs",
+          "journal": "ZooKeys",
+          "publisher": "Pensoft Publishers",
+          "volume": "226",
+          "pages": "1-225",
+          "doi": "10.3897/zookeys.226.2840",
+          "notes": "Gives the type locality as \"S30°03', E28°32'\"."
+        },
+        {
+          "id": "norman2011a",
+          "authors": "Norman, D. B.; Crompton, A. W.; Butler, R. J.; Porro, L. B.; Charig, A. J.",
+          "year": 2011,
+          "title": "The Lower Jurassic ornithischian dinosaur Heterodontosaurus tucki Crompton & Charig, 1962: cranial anatomy, functional morphology, taxonomy, and relationships",
+          "journal": "Zoological Journal of the Linnean Society",
+          "pages": "182-276",
+          "doi": "10.1111/j.1096-3642.2011.00697.x",
+          "notes": "Gives the holotype locality as \"the village of Noosi (30°03′S, 28°32′E; Kitching & Raath, 1984: table 1)\"."
+        },
+        {
+          "id": "kitching1984a",
+          "authors": "Kitching, J. W.; Raath, M. A.",
+          "year": 1984,
+          "title": "Fossils from the Elliot and Clarens formations (Karoo Sequence) of the northeastern Cape, Orange Free State and Lesotho, and a suggested biozonation based on tetrapods",
+          "journal": "Palaeontologia africana",
+          "volume": "25",
+          "pages": "111-125",
+          "notes": "Lists \"Nosi (Noosi)\" at 30° 03'S 28° 32'E, with Abrictosaurus consors."
+        },
         {
           "id": "thulborn1974a",
           "authors": "Thulborn, R. A.",
@@ -12587,7 +12623,7 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Dashanpu Dinosaur Quarry (Lower)",
+            "locality": "Dashanpu Dinosaur Quarry",
             "region": "Sichuan",
             "formation": "Shaximiao",
             "part": "lower",
@@ -14931,7 +14967,8 @@
             "locality": "southwestern Sierra de Mogna",
             "region": "San Juan",
             "formation": "Cañón del Colorado",
-            "part": "upper",
+            "part": "middle",
+            "notes": "Martínez (2009) places the holotype in the \"Upper Pelitic Member\", 148 m from the base, in an earlier scheme; Martínez and Colombi (2011) divide the formation into lower, middle and upper members and name the middle member's pelitic facies as the source of Adeopapposaurus.",
             "region_code": "AR-J",
             "part_of": "formation"
           },
@@ -14964,6 +15001,17 @@
         }
       ],
       "references": [
+        {
+          "id": "martínez2011b",
+          "authors": "Martínez, R. N.; Colombi, C. E.",
+          "year": 2011,
+          "title": "Evolución litofacial y edad de la Formación Cañón del Colorado (Jurásico Inferior), Precordillera Oriental, San Juan [Lithofacial evolution and age of the Cañón del Colorado Formation (Lower Jurassic), Eastern Precordillera, San Juan]",
+          "journal": "Revista de la Asociación Geológica Argentina",
+          "volume": "68",
+          "issue": "1",
+          "pages": "96-108",
+          "notes": "Defines lower, middle and upper members and places the Adeopapposaurus fauna in the middle member."
+        },
         {
           "id": "martínez2009a",
           "authors": "Martínez, R. N.",
@@ -15992,6 +16040,7 @@
               -37.5,
               -70.5
             ],
+            "notes": "Sereno and colleagues (2008) give the Anacleto Formation. Porfiri and colleagues (2018) report it as from \"either the upper Coniacian–lowermost Santonian Plottier Formation … or the lower Campanian Anacleto Formation\", and Ibiricu and colleagues (2025) call its stratigraphic position uncertain.",
             "region_code": "AR-M"
           },
           "size": {
@@ -16023,6 +16072,30 @@
         }
       ],
       "references": [
+        {
+          "id": "porfiri2018a",
+          "authors": "Porfiri, J. D.; Juárez Valieri, R. D.; Santos, D. D. D.; Lamanna, M. C.",
+          "year": 2018,
+          "title": "A new megaraptoran theropod dinosaur from the Upper Cretaceous Bajo de la Carpa Formation of northwestern Patagonia",
+          "journal": "Cretaceous Research",
+          "publisher": "Elsevier BV",
+          "volume": "89",
+          "pages": "302-319",
+          "doi": "10.1016/j.cretres.2018.03.014",
+          "notes": "Gives the taxon as from \"either the upper Coniacian–lowermost Santonian Plottier Formation … or the lower Campanian Anacleto Formation\"."
+        },
+        {
+          "id": "ibiricu2025a",
+          "authors": "Ibiricu, L. M.; Lamanna, M. C.; Álvarez, B. N.; Cerda, I. A.; Caglianone, J. L.; Cardozo, N. V.; Luna, M.; Martínez, R. D.",
+          "year": 2025,
+          "title": "Latest Cretaceous megaraptorid theropod dinosaur sheds light on megaraptoran evolution and palaeobiology",
+          "journal": "Nature Communications",
+          "publisher": "Springer Science and Business Media LLC",
+          "volume": "16",
+          "issue": "1",
+          "doi": "10.1038/s41467-025-63793-5",
+          "notes": "Calls the stratigraphic position of Aerosteon \"uncertain\"."
+        },
         {
           "id": "sereno2008b",
           "authors": "Sereno, P. C.; Martínez, R. N.; Wilson, J. A.; Varricchio, D. J.; Alcober, O. A.; Larsson, H. C. E.",
@@ -16739,8 +16812,7 @@
             "country": "GB",
             "region": "City of Bristol",
             "locality": "Durdham Down, Clifton, Bristol",
-            "formation": "Magnesian Conglomerate",
-            "notes": "The unit name is not current, and the locality given is the later of two published readings rather than the erecting paper's. Galton (2007) reports the material as long equated with the Magnesian Conglomerate, which crops out nearby, rather than demonstrated to come from it; Weishampel and colleagues (2004) name no unit at all and give the locality only as Avon. No coordinates have been published under either reading of the provenance.",
+            "notes": "The locality is the later of two published readings rather than the erecting paper's. Galton (2007) reports the material as long equated with the Magnesian Conglomerate, which crops out nearby, rather than demonstrated to come from it; Weishampel and colleagues (2004) name no unit and give the locality only as Avon.",
             "region_code": "GB-BST"
           },
           "type_specimen": {
@@ -17133,6 +17205,10 @@
             "region": "Neuquén",
             "formation": "Lohan Cura",
             "member": "Cullín Grande",
+            "coordinates": [
+              -39.593889,
+              -69.4
+            ],
             "region_code": "AR-Q"
           },
           "size": {
@@ -17157,6 +17233,17 @@
         }
       ],
       "references": [
+        {
+          "id": "martinelli2007b",
+          "authors": "Martinelli, A. G.; Garrido, A. C.; Forasiepi, A. M.; Paz, E. R.; Gurovich, Y.",
+          "year": 2007,
+          "title": "Notes on fossil remains from the Early Cretaceous Lohan Cura Formation, Neuquén Province, Argentina",
+          "journal": "Gondwana Research",
+          "volume": "11",
+          "issue": "4",
+          "pages": "537-552",
+          "notes": "Gives the Agustinia level \"on the northwestern side of the hill (39°35′38″S/69°24′00″W)\"."
+        },
         {
           "id": "bonaparte1999c",
           "authors": "Bonaparte, J. F.",
@@ -18634,10 +18721,16 @@
           },
           "location": {
             "country": "JP",
-            "locality": "Kaseki-kabe (facies III), Shiramine",
+            "locality": "Rein Road tunnel, Kuwajima District, Hakusan",
             "region": "Ishikawa",
             "formation": "Kuwajima",
-            "region_code": "JP-17"
+            "part": "upper",
+            "coordinates": [
+              36.203056,
+              136.630278
+            ],
+            "region_code": "JP-17",
+            "part_of": "formation"
           },
           "type_specimen": {
             "specimen_id": [
@@ -19776,10 +19869,6 @@
             "region": "Bavaria",
             "locality": "Old Schöpfel Quarry, Schaudiberg, Mühlheim",
             "formation": "Mörnsheim",
-            "coordinates": [
-              48.856838,
-              10.97406
-            ],
             "region_code": "DE-BY"
           },
           "type_specimen": {
@@ -19930,10 +20019,12 @@
           "location": {
             "country": "US",
             "region": "Wyoming",
-            "locality": "Alcova Quarry",
+            "locality": "Reed's Stegosaurus Quarry, about 1.5 miles east of Alcova",
             "formation": "Morrison",
+            "part": "upper",
             "notes": "The quarry, about 2.4 km east of Alcova near Alcova Reservoir in Natrona County, has not been found again: \"efforts by the UW to relocate it were unsuccessful\" (Galton and Carpenter, 2016, p. 186). Its horizon rests on photographs of the site, which by a personal communication put it \"relatively high in the Morrison Formation\", \"equivalent to the upper Brushy Basin Member of the Colorado Plateau\" (p. 186); the formal entry gives an \"unknown locality high in equivalent strata to the Brushy Basin Member of the Morrison Formation (Upper Jurassic, Kimmeridgian-Tithonian)\" (p. 189). Sánchez-Fenollosa and Cobos (2025) give the species as \"Kimmeridgian–Tithonian, Morrison Formation, USA\" (p. 182).\n",
-            "region_code": "US-WY"
+            "region_code": "US-WY",
+            "part_of": "formation"
           },
           "type_specimen": {
             "specimen_id": [
@@ -20114,7 +20205,7 @@
           },
           "location": {
             "country": "CN",
-            "locality": "Quarry 136, Iren Dabasu",
+            "locality": "site 136, Iren Dabasu",
             "region": "Inner Mongolia",
             "formation": "Iren Dabasu",
             "region_code": "CN-NM"
@@ -20258,7 +20349,7 @@
           },
           "location": {
             "country": "US",
-            "locality": "Carlsbad Ankylosaur",
+            "locality": "SDNHM Locality 3392, College Boulevard between El Camino Real and Palomar Airport Road, Carlsbad",
             "region": "California",
             "formation": "Point Loma",
             "region_code": "US-CA"
@@ -21944,7 +22035,8 @@
           "location": {
             "country": "GB",
             "region": "East Sussex",
-            "formation": "Wadhurst Clay",
+            "locality": "Battle, near Hastings",
+            "group": "Hastings Beds",
             "region_code": "GB-ESX"
           },
           "size": {
@@ -21983,6 +22075,17 @@
         }
       ],
       "references": [
+        {
+          "id": "huene1926a",
+          "authors": "Huene, F. V.",
+          "year": 1926,
+          "title": "On several known and unknown reptiles of the order Saurischia from England and France",
+          "journal": "Annals and Magazine of Natural History, series 9",
+          "volume": "17",
+          "pages": "473-489",
+          "doi": "10.1080/00222932608633437",
+          "notes": "Gives the specimen as \"from the Wealden of Battle, near Hastings, Sussex\"."
+        },
         {
           "id": "dames1885a",
           "authors": "Dames, W. B.",
@@ -22600,9 +22703,8 @@
             "locality": "2.5 km southeast of the La Amarga Arroyo bridge on National Route 40",
             "region": "Neuquén",
             "formation": "La Amarga",
-            "part": "lower",
-            "region_code": "AR-Q",
-            "part_of": "formation"
+            "member": "Puesto Antigual",
+            "region_code": "AR-Q"
           },
           "type_specimen": {
             "specimen_id": [
@@ -22633,6 +22735,19 @@
         }
       ],
       "references": [
+        {
+          "id": "salgado2006b",
+          "authors": "Salgado, L.; Carvalho, I. de S.; Garrido, A. C.",
+          "year": 2006,
+          "title": "Zapalasaurus bonapartei, un nuevo dinosaurio saurópodo de La Formación La Amarga (Cretácico Inferior), noroeste de Patagonia, Provincia de Neuquén, Argentina",
+          "journal": "Geobios",
+          "publisher": "Elsevier BV",
+          "volume": "39",
+          "issue": "5",
+          "pages": "695-707",
+          "doi": "10.1016/j.geobios.2005.06.001",
+          "notes": "Gives \"Amargasaurus cazaui (lower Barremian, Puesto Antigual, La Amarga Formation)\"."
+        },
         {
           "id": "bonaparte1984a",
           "authors": "Bonaparte, J. F.",
@@ -26807,6 +26922,7 @@
             "locality": "Kugou",
             "region": "Shandong",
             "group": "Wangshi",
+            "notes": "The describing paper gives the Wangshi Group. Xing and colleagues (2014) place the Kugou bonebed at the transition from the Xingezhuang to the Hongtuya Formation, \"possibly situated just below the boundary\"; An and colleagues (2015) place the Kugou bone beds in the Hongtuya and date them Campanian from a maximum depositional age of 77.3 Ma.",
             "region_code": "CN-SD"
           },
           "type_specimen": {
@@ -26824,6 +26940,30 @@
         }
       ],
       "references": [
+        {
+          "id": "an2015a",
+          "authors": "An, W.; Kuang, H. W.; Liu, Y. Q.; Peng, N.; Xu, K. M.; Xu, H.; Zhang, P.; Wang, K. B.; Chen, S. Q.; Zhang, Y. X.",
+          "year": 2015,
+          "title": "Detrital zircon dating and tracing the provenance of dinosaur bone beds from the Late Cretaceous Wangshi Group in Zhucheng, Shandong, East China",
+          "journal": "Journal of Palaeogeography",
+          "volume": "5",
+          "issue": "1",
+          "pages": "72-99",
+          "doi": "10.1016/j.jop.2015.11.002",
+          "notes": "Places the Kugou bone beds in the Hongtuya Formation and dates them Campanian from a maximum depositional age of 77.3 Ma."
+        },
+        {
+          "id": "xing2014b",
+          "authors": "Xing, H.; Zhao, X.; Wang, K.; Li, D.; Chen, S.; Mallon, J. C.; Zhang, Y.; Xu, X.",
+          "year": 2014,
+          "title": "Comparative osteology and phylogenetic relationship of Edmontosaurus and Shantungosaurus (Dinosauria: Hadrosauridae) from the Upper Cretaceous of North America and East Asia",
+          "journal": "Acta Geologica Sinica (English Edition)",
+          "volume": "88",
+          "issue": "6",
+          "pages": "1623-1652",
+          "doi": "10.1111/1755-6724.12334",
+          "notes": "Places the Kugou bonebed at \"the transition from the Xingezhuang Formation to the overlying Hongtuya Formation\"."
+        },
         {
           "id": "yu2018a",
           "authors": "Yu, Y.; Wang, K.; Chen, S.; Sullivan, C.; Wang, S.; Wang, P.; Xu, X.",
@@ -28236,7 +28376,10 @@
           "type_species": true,
           "period": {
             "name": [
-              "Late Jurassic"
+              "Early Jurassic",
+              "Middle Jurassic",
+              "Late Jurassic",
+              "Early Cretaceous"
             ]
           },
           "location": {
@@ -28780,7 +28923,7 @@
             "country": "US",
             "locality": "Turnipseed Dinosaur site",
             "region": "Alabama",
-            "formation": "Demopolis",
+            "formation": "Demopolis Chalk",
             "region_code": "US-AL"
           },
           "size": {
@@ -29072,13 +29215,7 @@
             "region": "Montana",
             "formation": "Cloverly",
             "member": "Himes",
-            "part": "lower",
-            "coordinates": [
-              45,
-              -109
-            ],
-            "region_code": "US-MT",
-            "part_of": "member"
+            "region_code": "US-MT"
           },
           "size": {
             "hip_height_m": {
@@ -29376,7 +29513,11 @@
             "locality": "Las Zabacheras",
             "region": "Teruel",
             "formation": "Villar del Arzobispo",
-            "notes": "The unit is disputed. Sanz and colleagues (1987) name no formation, placing Las Zabacheras in an informal Unit 3. Later work splits three ways. Aurell and colleagues (2016) erect the Galve Formation for that unit, while Campos-Soto and colleagues (2019) keep it in the Villar del Arzobispo Formation in the broad sense, the reading the horizon follows and the one Jones (2026) follows. Weishampel and colleagues (2004) instead give the Castellar Formation.",
+            "coordinates": [
+              40.661665,
+              -0.879339
+            ],
+            "notes": "The unit is disputed. Sanz and colleagues (1987) name no formation, placing Las Zabacheras in an informal Unit 3. Later work splits three ways. Aurell and colleagues (2016) erect the Galve Formation for that unit, while Campos-Soto and colleagues (2019) keep it in the Villar del Arzobispo Formation in the broad sense, the reading the horizon follows and the one Jones (2026) follows. Weishampel and colleagues (2004) instead give the Castellar Formation. Royo-Torres and colleagues (2014) give the site in UTM, 679 266 and 4 503 362, without a datum; read on WGS84 it is the recorded position, and on ED50 it lies 236 m away.",
             "region_code": "ES-TE"
           },
           "type_specimen": {
@@ -29629,6 +29770,19 @@
         }
       ],
       "references": [
+        {
+          "id": "averianov2007a",
+          "authors": "Averianov, A. O.; Sues, H. D.",
+          "year": 2007,
+          "title": "A new troodontid (Dinosauria: Theropoda) from the Cenomanian of Uzbekistan, with a review of troodontid records from the territories of the former Soviet Union",
+          "journal": "Journal of Vertebrate Paleontology",
+          "publisher": "Informa UK Limited",
+          "volume": "27",
+          "issue": "1",
+          "pages": "87-98",
+          "doi": "10.1671/0272-4634(2007)27[87:antdtf]2.0.co;2",
+          "notes": "Places Shakh-Shakh in \"the upper Santonian to lower Campanian Bostobe Formation\"."
+        },
         {
           "id": "rozhdestvensky1968a",
           "authors": "Rozhdestvensky, A. K.",
@@ -33796,8 +33950,8 @@
             "locality": "Quarry Steps Quarry, Durdham Down",
             "region": "City of Bristol",
             "coordinates": [
-              51.4699,
-              -2.6176
+              51.470091,
+              -2.616854
             ],
             "region_code": "GB-BST"
           },
@@ -34202,6 +34356,18 @@
         }
       ],
       "references": [
+        {
+          "id": "mcintosh1975a",
+          "authors": "McIntosh, J. S.; Berman, D. S.",
+          "year": 1975,
+          "title": "Description of the palate and lower jaw of the sauropod dinosaur Diplodocus (Reptilia: Saurischia) with remarks on the nature of the skull of Apatosaurus",
+          "journal": "Journal of Paleontology",
+          "publisher": "Cambridge University Press (CUP)",
+          "volume": "49",
+          "issue": "1",
+          "pages": "187-199",
+          "notes": "Places the type in Lakes' Quarry 1 at Morrison."
+        },
         {
           "id": "marsh1877c",
           "authors": "Marsh, O. C.",
@@ -35284,6 +35450,18 @@
       },
       "references": [
         {
+          "id": "carrano2008a",
+          "authors": "Carrano, M. T.; Sampson, S. D.",
+          "year": 2008,
+          "title": "The Phylogeny of Ceratosauria (Dinosauria: Theropoda)",
+          "journal": "Journal of Systematic Palaeontology",
+          "volume": "6",
+          "issue": "2",
+          "pages": "183-236",
+          "doi": "10.1017/S1477201907002246",
+          "notes": "Gives the occurrence as \"Auca Maheuvo, near La Escondida Mine, northeastern Neuquén Province\"."
+        },
+        {
           "id": "coria2002a",
           "authors": "Coria, R. A.; Chiappe, L. M.; Dingus, L.",
           "year": 2002,
@@ -36225,20 +36403,24 @@
           "type_species": true,
           "period": {
             "name": [
+              "Early Cretaceous",
               "Late Cretaceous"
             ],
             "stage": [
-              "Cenomanian"
+              "Albian",
+              "Cenomanian",
+              "Turonian"
             ],
-            "from_ma": 100.5,
-            "to_ma": 93.9
+            "from_ma": 113.2,
+            "to_ma": 89.8
           },
           "location": {
             "country": "AU",
             "locality": "Matilda Site, Elderslie Station",
             "region": "Queensland",
             "formation": "Winton",
-            "part": "lower",
+            "part": "upper",
+            "notes": "Hocknull and colleagues (2009) date the Matilda Site \"latest Albian\"; Poropat and colleagues (2014) give it as Cenomanian from a detrital-zircon age, and Poropat and colleagues (2021) as Cenomanian to lower Turonian.",
             "region_code": "AU-QLD",
             "part_of": "formation"
           },
@@ -36267,6 +36449,29 @@
         }
       ],
       "references": [
+        {
+          "id": "poropat2014a",
+          "authors": "Poropat, S. F.; Upchurch, P.; Mannion, P. D.; Hocknull, S. A.; Kear, B. P.; Sloan, T.; Sinapius, G. H. K.; Elliot, D. A.",
+          "year": 2014,
+          "title": "Revision of the sauropod dinosaur Diamantinasaurus matildae Hocknull et al. 2009 from the mid-Cretaceous of Australia: Implications for Gondwanan titanosauriform dispersal",
+          "journal": "Gondwana Research",
+          "volume": "27",
+          "issue": "3",
+          "pages": "995–1033",
+          "doi": "10.1016/j.gr.2014.03.014",
+          "notes": "Gives the Matilda Site as Cenomanian, from a maximum age for the sandstone overlying the bonebed."
+        },
+        {
+          "id": "poropat2021a",
+          "authors": "Poropat, S. F.; Kundrát, M.; Mannion, P. D.; Upchurch, P.; Tischler, T. R.; Elliott, D. A.",
+          "year": 2021,
+          "title": "Second specimen of the Late Cretaceous Australian sauropod dinosaur Diamantinasaurus matildae provides new anatomical information on the skull and neck of early titanosaurs",
+          "journal": "Zoological Journal of the Linnean Society",
+          "volume": "192",
+          "pages": "610-674",
+          "doi": "10.1093/zoolinnean/zlaa173",
+          "notes": "Gives the site's individuals as from the \"Cenomanian–lower Turonian 'upper' Winton Formation\"."
+        },
         {
           "id": "hocknull2009a",
           "authors": "Hocknull, S. A.; White, M. A.; Tischler, T. R.; Cook, A. G.; Calleja, N. D.; Sloan, T.; Elliott, D. A.",
@@ -36365,10 +36570,11 @@
               "Late Cretaceous"
             ],
             "stage": [
-              "Campanian"
+              "Campanian",
+              "Maastrichtian"
             ],
             "from_ma": 83.6,
-            "to_ma": 72.2
+            "to_ma": 66
           },
           "location": {
             "country": "AR",
@@ -36379,6 +36585,7 @@
               -49.954722,
               -72.091944
             ],
+            "notes": "Ezcurra and colleagues (2010) give the horizon as the \"Pari Aike Formation, Late Cretaceous (early Maastrichtian)\"; the Cerro Fortaleza Formation, under which the record places the beds, has been dated Campanian from detrital-zircon maximum ages.",
             "region_code": "AR-Z"
           },
           "size": {
@@ -36987,6 +37194,17 @@
         }
       ],
       "references": [
+        {
+          "id": "ishikawa2023a",
+          "authors": "Ishikawa, H.; Tsuihiji, T.; Manabe, M.",
+          "year": 2023,
+          "title": "Furcatoceratops elucidans, a new centrosaurine (Ornithischia: Ceratopsidae) from the upper Campanian Judith River Formation, Montana, USA",
+          "journal": "Cretaceous Research",
+          "publisher": "Elsevier BV",
+          "volume": "151",
+          "doi": "10.1016/j.cretres.2023.105660",
+          "notes": "Places the holotype, ANSP 15800, in \"the lower McClelland Ferry Member of the Judith River Formation\"."
+        },
         {
           "id": "dodson1986a",
           "authors": "Dodson, P.",
@@ -70969,13 +71187,15 @@
           "type_species": true,
           "period": {
             "name": [
+              "Early Cretaceous",
               "Late Cretaceous"
             ],
             "stage": [
+              "Albian",
               "Cenomanian",
               "Turonian"
             ],
-            "from_ma": 100.5,
+            "from_ma": 113.2,
             "to_ma": 89.8
           },
           "location": {
@@ -112994,8 +113214,8 @@
             "country": "CN",
             "locality": "Kugou, Zhucheng",
             "region": "Shandong",
-            "formation": "Hongtuya",
-            "notes": "None of the papers cited for this taxon assigns the holotype to a formation. He and colleagues stop at group rank, and An and colleagues place Kugou in the Hongtuya from detrital-zircon sampling without naming Ischioceratops. Xingezhuang, the other name circulating for the Zhucheng bone beds, appears in neither.",
+            "group": "Wangshi",
+            "notes": "The describing paper gives the Wangshi Group. Xing and colleagues (2014) place the Kugou bonebed at the transition from the Xingezhuang to the Hongtuya Formation, \"possibly situated just below the boundary\"; An and colleagues (2015) place the Kugou bone beds in the Hongtuya and date them Campanian from a maximum depositional age of 77.3 Ma.",
             "region_code": "CN-SD"
           },
           "size": {
@@ -113019,6 +113239,18 @@
         }
       ],
       "references": [
+        {
+          "id": "xing2014b",
+          "authors": "Xing, H.; Zhao, X.; Wang, K.; Li, D.; Chen, S.; Mallon, J. C.; Zhang, Y.; Xu, X.",
+          "year": 2014,
+          "title": "Comparative osteology and phylogenetic relationship of Edmontosaurus and Shantungosaurus (Dinosauria: Hadrosauridae) from the Upper Cretaceous of North America and East Asia",
+          "journal": "Acta Geologica Sinica (English Edition)",
+          "volume": "88",
+          "issue": "6",
+          "pages": "1623-1652",
+          "doi": "10.1111/1755-6724.12334",
+          "notes": "Places the Kugou bonebed at \"the transition from the Xingezhuang Formation to the overlying Hongtuya Formation\"."
+        },
         {
           "id": "he2015a",
           "authors": "He, Y.; Makovicky, P. J.; Wang, K.; Chen, S.; Sullivan, C.; Han, F.; Xu, X.",
@@ -187540,7 +187772,7 @@
             "country": "UZ",
             "region": "Navoiy",
             "formation": "Bissekty",
-            "locality": "Dzharakuduk",
+            "locality": "CBI-14, Dzharakuduk",
             "region_code": "UZ-NW"
           },
           "type_specimen": {
@@ -245140,10 +245372,9 @@
             "country": "CN",
             "locality": "Kugou",
             "region": "Shandong",
-            "formation": "Hongtuya",
-            "part": "lower",
-            "region_code": "CN-SD",
-            "part_of": "formation"
+            "group": "Wangshi",
+            "notes": "The describing paper gives the Wangshi Group. Xing and colleagues (2014) place the Kugou bonebed at the transition from the Xingezhuang to the Hongtuya Formation, \"possibly situated just below the boundary\"; An and colleagues (2015) place the Kugou bone beds in the Hongtuya and date them Campanian from a maximum depositional age of 77.3 Ma.",
+            "region_code": "CN-SD"
           },
           "size": {
             "length_m": {
@@ -245170,6 +245401,18 @@
         }
       ],
       "references": [
+        {
+          "id": "xing2014b",
+          "authors": "Xing, H.; Zhao, X.; Wang, K.; Li, D.; Chen, S.; Mallon, J. C.; Zhang, Y.; Xu, X.",
+          "year": 2014,
+          "title": "Comparative osteology and phylogenetic relationship of Edmontosaurus and Shantungosaurus (Dinosauria: Hadrosauridae) from the Upper Cretaceous of North America and East Asia",
+          "journal": "Acta Geologica Sinica (English Edition)",
+          "volume": "88",
+          "issue": "6",
+          "pages": "1623-1652",
+          "doi": "10.1111/1755-6724.12334",
+          "notes": "Places the Kugou bonebed at \"the transition from the Xingezhuang Formation to the overlying Hongtuya Formation\"."
+        },
         {
           "id": "xu2010c",
           "authors": "Xu, X.; Wang, K.; Zhao, X.; Sullivan, C.; Chen, S.",
