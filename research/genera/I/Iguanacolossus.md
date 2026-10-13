@@ -1,5 +1,20 @@
 # *Iguanacolossus*
 
+## What stages does *Iguanacolossus* take?
+
+*2026-10-13*
+
+**Conclusion.** The Yellow Cat Member's range, Berriasian to Barremian. The Don's Ridge site is undated, and the describing paper's own reading, early Barremian "possibly older", has no lower bound within the member. The Berriasian–Valanginian the record held came from a tephra at Utahraptor Ridge, which the [Yellow Cat](../../stratigraphy/y/yellow-cat.md) entry no longer applies to other sites, as for [*Hippodraco*](../H/Hippodraco.md). Governs `stage: [Berriasian, Valanginian, Hauterivian, Barremian]` on [*Iguanacolossus fortis*](../../../genera/I/Iguanacolossus.yml).
+
+**Evidence.**
+- mcdonald2010b, p. 5: the holotype "was recovered below the caprock in the lower Yellow Cat at a site known as Don's Ridge"; "The age of the lower Yellow Cat is difficult to ascertain, although work is underway to do so; for the purposes of this paper, it is provisionally treated as early Barremian, possibly older."
+
+**Ruled out.**
+- *Berriasian–Valanginian.* It dates the Utahraptor Ridge section, not Don's Ridge.
+- *Barremian alone.* The describing paper allows older.
+
+**Open.** A dating of the lower Yellow Cat at Don's Ridge.
+
 ## How is the *Iguanacolossus* locality written?
 
 *2026-10-11*

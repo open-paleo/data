@@ -1,5 +1,21 @@
 # Baruungoyot
 
+## What stages do the Baruungoyot taxa take?
+
+*2026-10-13*
+
+**Conclusion.** Each takes the statements about its own horizon, or the formation's Santonian–Maastrichtian where there are none. The earlier adjudication kept all four at the Campanian by counting the papers that give the formation that age, which counts repetition rather than evidence. Governs `stage` on [*Ceratonykus oculatus*](../../../genera/C/Ceratonykus.yml) (Santonian), [*Kuru kulla*](../../../genera/K/Kuru.yml) (Campanian–Maastrichtian), and [*Conchoraptor gracilis*](../../../genera/C/Conchoraptor.yml) and [*Breviceratops kozlowskii*](../../../genera/B/Breviceratops.yml) (Santonian–Maastrichtian).
+
+**Evidence.**
+- alifanov2009a, p. 97: "Upper Cretaceous, ?Lower Santonian, Baruungoyot Formation", for the *Ceratonykus* holotype.
+- napoli2021a, p. 3: "All that can be said with certainty is that the Barun Goyot strata at Khulsan are Campanian to Maastrichtian in age."
+- czepiński2019a: "the Campanian Baruungoyot Formation (Jerzykiewicz 2000)" for the *Conchoraptor* and *Breviceratops* localities, a relayed age for the formation.
+
+**Ruled out.**
+- *Campanian for all four, by count.* A tally of papers repeating an age is not a horizon statement.
+
+**Open.** Horizon statements for *Conchoraptor* and *Breviceratops*.
+
 ## Why is the formation spelled Baruungoyot rather than Barun Goyot?
 
 *2026-10-04*
@@ -33,8 +49,10 @@
 
 ## References
 
-- `benton2000c`: Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N. (2000). Mongolian place names and stratigraphic terms. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds.)*, pp. xxii-xxviii. Cambridge University Press, Cambridge.
+- `alifanov2009a`: Alifanov, V. R.; Barsbold, R. (2009). Ceratonykus oculatus gen. et sp. nov., a new dinosaur (?Theropoda, Alvarezsauria) from the Late Cretaceous of Mongolia. *Paleontological Journal* 43(1): 94-106. doi:10.1134/s0031030109010109
+- `napoli2021a`: Napoli, J. G.; Ruebenstahl, A. A.; Bhullar, B. A. S.; Turner, A. H.; Norell, M. A. (2021). A New Dromaeosaurid (Dinosauria: Coelurosauria) from Khulsan, Central Mongolia. *American Museum Novitates* 2021(3982). doi:10.1206/3982.1
 - `czepiński2019a`: Czepiński, Ł. (2019). Ontogeny and variation of a protoceratopsid dinosaur Bagaceratops rozhdestvenskyi from the Late Cretaceous of the Gobi Desert. *Historical Biology* 32: 1394-1421. doi:10.1080/08912963.2019.1593404
+- `benton2000c`: Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N. (2000). Mongolian place names and stratigraphic terms. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds.)*, pp. xxii-xxviii. Cambridge University Press, Cambridge.
 - `gradziński1974a`: Gradziński, R.; Jerzykiewicz, T. (1974). Sedimentation of the Barun Goyot Formation. *Palaeontologia Polonica* 30: 111-146.
 - `maryańska1975a`: Maryańska, T.; Osmólska, H. (1975). Protoceratopsidae (Dinosauria) of Asia. *Palaeontologia Polonica* 33: 133-182.
 - `gradziński1977a`: Gradziński, R.; Kielan-Jaworowska, Z.; Maryańska, T. (1977). Upper Cretaceous Djadokhta, Barun Goyot and Nemegt formations of Mongolia, including remarks on previous subdivisions. *Acta Geologica Polonica* 27(3): 281-318.

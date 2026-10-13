@@ -1,5 +1,19 @@
 # *Chubutisaurus*
 
+## What stages does *Chubutisaurus* take?
+
+*2026-10-13*
+
+**Conclusion.** Albian and Cenomanian. Carrano and colleagues (2012) give the teeth found with the holotype skeleton as from the Albian–Cenomanian Bayo Overo Member, a statement about this holotype's horizon; the earlier adjudication's "Cenomanian is not supported" overlooked it. Governs `stage: [Albian, Cenomanian]` on [*Chubutisaurus insignis*](../../../genera/C/Chubutisaurus.yml).
+
+**Evidence.**
+- carrano2012a, p. 257: the teeth "associated with the holotype skeleton of the sauropod *Chubutisaurus insignis*" are "derived from the Albian–Cenomanian Bayo Overo Member".
+
+**Ruled out.**
+- *Albian alone.* It drops the Cenomanian of the horizon statement.
+
+**Open.** Nothing.
+
 ## Which member holds the *Chubutisaurus* holotype, and where is its position printed?
 
 *2026-08-16*
@@ -33,8 +47,8 @@
 
 ## References
 
-- `rauhut2003d`: Rauhut, O. W. M.; Cladera, G.; Vickers-Rich, P.; Rich, T. H. (2003). Dinosaur remains from the Lower Cretaceous of the Chubut Group, Argentina. *Cretaceous Research* 24(5): 487-497. doi:10.1016/S0195-6671(03)00067-3
 - `carrano2012a`: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D. (2012). The phylogeny of Tetanurae (Dinosauria: Theropoda). *Journal of Systematic Palaeontology* 10(2): 211-300. doi:10.1080/14772019.2011.630927
+- `rauhut2003d`: Rauhut, O. W. M.; Cladera, G.; Vickers-Rich, P.; Rich, T. H. (2003). Dinosaur remains from the Lower Cretaceous of the Chubut Group, Argentina. *Cretaceous Research* 24(5): 487-497. doi:10.1016/S0195-6671(03)00067-3
 - `salgado1993a`: Salgado, L. (1993). Comments on Chubutisaurus insignis del Corro (Saurischia, Sauropoda). *Ameghiniana* 30(3): 265-270.
 - `molina-pérez2020a`: Molina-Pérez, R.; Larramendi, A. (2020). Dinosaur Facts and Figures: The Sauropods and Other Sauropodomorphs. Princeton University Press.
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.

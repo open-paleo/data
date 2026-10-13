@@ -1,5 +1,19 @@
 # NHMUK catalogue prefixes
 
+## How is the *Abrictosaurus* holotype number spaced?
+
+*2026-10-13*
+
+**Conclusion.** "NHMUK PV RU B 54", with the number spaced off the register, as the data writes the Lesothosaurus numbers RU B 17 and RU B 23. Sereno (2012) prints "NHMUK RU B54"; the space is the house form, not a different number. Governs `type_specimen.specimen_id: [NHMUK PV RU B 54]` on [*Abrictosaurus consors*](../../genera/A/Abrictosaurus.yml).
+
+**Evidence.**
+- sereno2012a, Table 1: "*Abrictosaurus consors* | *NHMUK RU B54".
+
+**Ruled out.**
+- *"RU B54" run together.* It differs from the house form only in spacing.
+
+**Open.** Nothing.
+
 ## How should Natural History Museum, London specimen numbers be written?
 
 *2026-10-04*
@@ -19,9 +33,9 @@
 
 ## References
 
+- `sereno2012a`: Sereno, P. C. (2012). Taxonomy, morphology, masticatory function and phylogeny of heterodontosaurid dinosaurs. *ZooKeys* 226: 1-225. doi:10.3897/zookeys.226.2840
 - `sabaj2020a`: Sabaj, M. H. (2020). Codes for natural history collections in ichthyology and herpetology. *Copeia* 108(3): 593-669. doi:10.1643/ASIHCODONS2020
 - `butler2008b`: Butler, R. J.; Upchurch, P.; Norman, D. B. (2008). The phylogeny of the ornithischian dinosaurs. *Journal of Systematic Palaeontology* 6(1): 1-40. doi:10.1017/S1477201907002271
-- `sereno2012a`: Sereno, P. C. (2012). Taxonomy, morphology, masticatory function and phylogeny of heterodontosaurid dinosaurs. *ZooKeys* 226: 1-225. doi:10.3897/zookeys.226.2840
 - `barrett2005b`: Barrett, P. M.; Upchurch, P.; Wang, X. L. (2005). Cranial osteology of Lufengosaurus huenei Young (Dinosauria: Prosauropoda) from the Lower Jurassic of Yunnan, People's Republic of China. *Journal of Vertebrate Paleontology* 25(4): 806-822. doi:10.1671/0272-4634(2005)025[0806:COOLHY]2.0.CO;2
 - `chapelle2018a`: Chapelle, K. E. J.; Choiniere, J. N. (2018). A revised cranial description of Massospondylus carinatus Owen (Dinosauria: Sauropodomorpha) based on computed tomographic scans and a review of cranial characters for basal Sauropodomorpha. *PeerJ* 6: e4224. doi:10.7717/peerj.4224
 - `hendrickx2022a`: Hendrickx, C.; Bell, P. R.; Pittman, M.; Milner, A. R. C.; Cuesta, E.; O'Connor, J.; Loewen, M.; Currie, P. J.; Mateus, O.; Kaye, T. G.; Delcourt, R. (2022). Morphology and distribution of scales, dermal ossifications, and other non-feather integumentary structures in non-avialan theropod dinosaurs. *Biological Reviews* 97(3): 960-1004. doi:10.1111/brv.12829

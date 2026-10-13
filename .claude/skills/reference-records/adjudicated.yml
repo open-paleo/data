@@ -87,16 +87,7 @@ Animantarx ramaljonesi:
   categories: [stage]
   source: carpenter1999a
   verdict: corrected
-  note: >
-    Aptian dropped as far too old. carpenter1999a places the taxon in the
-    Mussentuchit Member and dates that member "Late Albian or Early Cenomanian
-    ... supported by ... a radiometric date of 98.39 +/- 0.07 million years ago".
-    chure2010a dates sediments near the member's base at 104.46 +/- 0.95 Ma,
-    which is Albian, and the type was collected just above the base. Recorded as
-    Albian alone. CAVEAT: the chure2010a date is from Dinosaur National Monument,
-    not the San Rafael Swell where Animantarx was found, so applying it is an
-    inference across sections. Cenomanian is therefore not impossible, but the
-    reference works' bare "Cenomanian" is not adopted.
+  research: research/genera/A/Animantarx.md
 
 Siamotyrannus isanensis:
   categories: [stage]
@@ -578,9 +569,8 @@ Anchisaurus polyzelus:
     research: research/genera/A/Anchisaurus.md
   - categories: [stage]
     source: corpus-review
-    verdict: ours-correct
-    note: >
-      Hettangian-Sinemurian stands.
+    verdict: corrected
+    research: research/genera/A/Anchisaurus.md
 
 
 Antarctosaurus wichmannianus:
@@ -633,16 +623,7 @@ Brasilotitan nemophagus:
   - categories: [formation]
     source: machado2013a
     verdict: ours-correct
-    note: >
-      A disagreement between nomenclatural schemes rather than about where the
-      bones came from. Fernandes and Coimbra (1996) divide the Bauru Group into
-      Adamantina, Uberaba and Marília; Fernandes (2004) replaces Adamantina with
-      six units including Presidente Prudente. The erecting paper says the
-      holotype was "recovered from a reddish fine-grained sandstone that is part
-      of the Adamantina Formation", and santucci2022a (2022) still writes
-      Adamantina for this taxon, elsewhere giving the pair as "Adamantina
-      Formation (=Presidente Prudente Formation)". Adamantina is also what the
-      other Bauru titanosaurs here carry.
+    research: research/genera/B/Brasilotitan.md
 Brontosaurus excelsus:
   categories: [holotype]
   source: tschopp2015a
@@ -661,21 +642,9 @@ Ceratonykus oculatus:
     verdict: ours-correct
     research: research/genera/C/Ceratonykus.md
   - categories: [stage]
-    source: corpus-paper-count
-    verdict: ours-correct
-    note: >
-      Unit-level decision for the Baruungoyot Formation, applied to every taxon in
-      it. Counted across the reference literature, 22 papers give the formation a
-      Campanian age alone -- commonly "mid-upper Campanian" or "middle-upper
-      Campanian" -- and 12 allow Campanian-Maastrichtian, while NO paper gives it
-      as Maastrichtian alone. The reference work's Maastrichtian therefore has no
-      independent support, and ours is both the majority position and contained
-      within the wider one.
-  
-      Deliberately NOT widened to Campanian-Maastrichtian. Widening is the right
-      move when two positions each have literature behind them, as with the
-      Shaximiao redating; here it would adopt a 17.6 Myr span that no paper
-      asserts, to accommodate a single unsupported source.
+    source: corpus-review
+    verdict: corrected
+    research: research/stratigraphy/b/baruungoyot.md
 
 
 Chilantaisaurus tashuikouensis:
@@ -696,10 +665,9 @@ Chubutisaurus insignis:
     verdict: corrected
     research: research/genera/C/Chubutisaurus.md
   - categories: [stage]
-    source: corpus-review
-    verdict: ours-correct
-    note: >
-      Albian, with our Aptian/Albian defensible as the wider published range; the reference work's Cenomanian is not supported.
+    source: carrano2012a
+    verdict: corrected
+    research: research/genera/C/Chubutisaurus.md
 
 
 Coelophysis bauri:
@@ -710,18 +678,7 @@ Coelophysis bauri:
   - categories: [formation]
     source: rinehart2009a
     verdict: ours-correct
-    note: >
-      The name-bearing type is the neotype AMNH 7224, fixed under plenary power
-      by iczn1996a Opinion 1842, so the type horizon is the Whitaker Quarry
-      horizon at Ghost Ranch. rinehart2009a, the Whitaker Quarry monograph,
-      places it: "The Whitaker quarry lies near the center of the Upper Triassic
-      Rock Point Formation of the Chinle Group". The "Chinle Formation" answer is
-      a rank difference -- Chinle is a Group and Rock Point a Formation to
-      rinehart2009a, while hunt1991a writes "the Rock Point Member of the Chinle
-      Formation" -- so ours is the finer value either way. Do not revert toward
-      the Petrified Forest Formation: that is where Cope's 1881 Baldwin material
-      came from, and the neotype designation is what moved the name to Rock
-      Point.
+    research: research/stratigraphy/r/rock-point.md
 Compsognathus longipes:
   categories: [holotype]
   source: ostrom1978a
@@ -817,21 +774,7 @@ Lepidus praecisio:
   - categories: [formation]
     source: lehman2005z
     verdict: corrected
-    note: >
-      Changed Colorado City to Cooper Canyon. lehman2005z is the paper
-      nesbitt2015a cites for the mapping of the type beds, and it rejects the
-      rival value by name: "[they] have referred to these strata variously as the
-      Iatan Member or more recently as the Colorado City Member of the Dockum.
-      However, our mapping shows that these strata are actually within the upper
-      part of the Cooper Canyon Formation", with "Otis Chalk ... located in the
-      Cooper Canyon Formation". The apparent support for Colorado City is not
-      independent -- marsh2019a, hunt1998a and baron2018c all descend from Lucas
-      and Anderson (1993), who inferred the unit from the perceived primitiveness
-      of the fauna, which is circular for dating purposes. Martz (2008) and
-      Stocker (2013a) also place Otis Chalk in the Cooper Canyon, differing only
-      on the position within it. The erecting paper deliberately named no
-      formation, so Dockum Group remains the uncontested fallback if the repo
-      prefers not to take sides.
+    research: research/genera/L/Lepidus.md
 Lessemsaurus sauropoides:
   categories: [holotype]
   source: bonaparte1999d
@@ -974,12 +917,7 @@ Bambiraptor feinbergi:
   categories: [holotype]
   source: turner2012a
   verdict: ours-correct
-  note: >
-    AMNH FR 30556 is right. FR denotes the Fossil Reptiles collection, which
-    jones2026c drops; FIP 002 is a referred adult, not the type. Turner et al.
-    document the confusion directly: the holotype was reposited as AMNH FARB
-    30556, the FIP and "AMNH 001" numbers used in earlier descriptions do not
-    exist, and two papers erroneously cite AMNH FARB 30554.
+  research: research/genera/B/Bambiraptor.md
 
 Camarasaurus lentus:
   categories: [holotype]
@@ -999,21 +937,9 @@ Conchoraptor gracilis:
     verdict: ours-correct
     research: research/genera/C/Conchoraptor.md
   - categories: [stage]
-    source: corpus-paper-count
-    verdict: ours-correct
-    note: >
-      Unit-level decision for the Baruungoyot Formation, applied to every taxon in
-      it. Counted across the reference literature, 22 papers give the formation a
-      Campanian age alone -- commonly "mid-upper Campanian" or "middle-upper
-      Campanian" -- and 12 allow Campanian-Maastrichtian, while NO paper gives it
-      as Maastrichtian alone. The reference work's Maastrichtian therefore has no
-      independent support, and ours is both the majority position and contained
-      within the wider one.
-  
-      Deliberately NOT widened to Campanian-Maastrichtian. Widening is the right
-      move when two positions each have literature behind them, as with the
-      Shaximiao redating; here it would adopt a 17.6 Myr span that no paper
-      asserts, to accommodate a single unsupported source.
+    source: corpus-review
+    verdict: corrected
+    research: research/stratigraphy/b/baruungoyot.md
   - categories: [formation]
     source: funston2018a
     verdict: ours-correct
@@ -1051,11 +977,7 @@ Laplatasaurus araukanicus:
   categories: [holotype]
   source: bonaparte1979c
   verdict: ours-correct
-  note: >
-    The lectotype is "M.L.P. 26-306 right tibia (C.S. 1128) and right fibula
-    (C.S. 1127) illustrated by Huene (1929)". C.S. is the Cinco Saltos field
-    prefix Huene used, which is what both reference works quote; MLP 26-306 is
-    the museum number that supersedes it.
+  research: research/genera/L/Laplatasaurus.md
 
 Magyarosaurus dacus:
   - categories: [holotype]
@@ -1216,8 +1138,7 @@ Abelisaurus comahuensis:
   - categories: [formation]
     source: corpus-review
     verdict: corrected
-    note: >
-      Allen -> Anacleto, Lago Pellegrini. The stage follows from it.
+    research: research/topics/lago-pellegrini-quarries.md
 
 
 
@@ -1225,11 +1146,7 @@ Abrictosaurus consors:
   categories: [holotype]
   source: sereno2012a
   verdict: corrected
-  note: >
-    The specimen is now at the Natural History Museum, London, not University
-    College: NHMUK PV RU B54, with B54 kept as one token. jones2026a's
-    "NHMUK RU B54" is right about the institution and omits the PV collection
-    code, which every NHMUK record now carries.
+  research: research/topics/nhmuk-catalogue-prefixes.md
 
 Algoasaurus bauri:
   categories: [holotype]
@@ -1347,9 +1264,7 @@ Hylaeosaurus armatus:
   categories: [holotype]
   source: raven2020a
   verdict: corrected
-  note: >
-    "Holotype-NHMUK PV OR3775." Normalized to NHMUK PV R 3775; see Baryonyx
-    walkeri. jones2026a quotes the superseded BMNH form.
+  research: research/genera/H/Hylaeosaurus.md
 
 Hypsilophodon foxii:
   categories: [holotype]
@@ -1682,14 +1597,7 @@ Liliensternus liliensterni:
   - categories: [formation]
     source: litholex
     verdict: ours-correct
-    note: >
-      LithoLex record 5000008 (current) lists "Synonyme und obsolete Einheiten:
-      Knollenmergel, Knollenmergel-Formation, Feuerletten, Grenzmergel,
-      Zanclodon-Letten". Trossingen-Formation is the valid name and Knollenmergel
-      the obsolete one, so the reference work quotes the superseded form. Erected
-      by SKPT decision of 19.07.1997, ratified in DSK (2005), Stratigraphie von
-      Deutschland IV: Keuper, section 5.8.6.6 "Knollenmergel- (Trossingen-)
-      Formation (km5)".
+    research: research/genera/L/Liliensternus.md
 
 Procompsognathus triassicus:
   - categories: [formation]
@@ -1707,13 +1615,7 @@ Anomalipes zhaoi:
   - categories: [formation]
     source: an2015z
     verdict: ours-correct
-    note: >
-      Rank, not identity: Hongtuya and Jingangkou are formations WITHIN the
-      Wangshi Group, so the reference work's "Wangshi Grp." is the coarser
-      container of the value we already hold. an2015z treats the two as nested
-      throughout -- "the Hongtuya Formation of the Wangshi Group in the Zhucheng
-      Basin". Ours is the finer and correct value; recording the group as well
-      needs the rank field under discussion in #2012.
+    research: research/topics/kugou.md
 
 Tsintaosaurus spinorhinus:
   - categories: [formation]
@@ -1760,14 +1662,7 @@ Emausaurus ernsti:
   - categories: [formation]
     source: litholex
     verdict: ours-correct
-    note: >
-      Rank, not identity. "Lehmhagen Member" returns nothing in LithoLex, while
-      Ciechocinek-Formation (record 4012021) is valid, Untertoarcium, and covers
-      Mecklenburg-Vorpommern, where the Grimmen clay pit lies; its synonymy even
-      reads "Aequivalente des Posidonienschiefers, unterer Teil". So Lehmhagen is
-      an informal member of the formation jones2026a names, and ours is the finer
-      value -- the same shape as Hongtuya within the Wangshi Group. Expressing
-      both needs the rank field under discussion in #2012.
+    research: research/genera/E/Emausaurus.md
 
 Tuebingosaurus maierfritzorum:
   - categories: [formation]
@@ -1795,21 +1690,9 @@ Rativates evadens:
 
 Breviceratops kozlowskii:
   - categories: [stage]
-    source: corpus-paper-count
-    verdict: ours-correct
-    note: >
-      Unit-level decision for the Baruungoyot Formation, applied to every taxon in
-      it. Counted across the reference literature, 22 papers give the formation a
-      Campanian age alone -- commonly "mid-upper Campanian" or "middle-upper
-      Campanian" -- and 12 allow Campanian-Maastrichtian, while NO paper gives it
-      as Maastrichtian alone. The reference work's Maastrichtian therefore has no
-      independent support, and ours is both the majority position and contained
-      within the wider one.
-  
-      Deliberately NOT widened to Campanian-Maastrichtian. Widening is the right
-      move when two positions each have literature behind them, as with the
-      Shaximiao redating; here it would adopt a 17.6 Myr span that no paper
-      asserts, to accommodate a single unsupported source.
+    source: corpus-review
+    verdict: corrected
+    research: research/stratigraphy/b/baruungoyot.md
 
 Khulsanurus magnificus:
   - categories: [stage]
@@ -1819,21 +1702,9 @@ Khulsanurus magnificus:
 
 Kuru kulla:
   - categories: [stage]
-    source: corpus-paper-count
-    verdict: ours-correct
-    note: >
-      Unit-level decision for the Baruungoyot Formation, applied to every taxon in
-      it. Counted across the reference literature, 22 papers give the formation a
-      Campanian age alone -- commonly "mid-upper Campanian" or "middle-upper
-      Campanian" -- and 12 allow Campanian-Maastrichtian, while NO paper gives it
-      as Maastrichtian alone. The reference work's Maastrichtian therefore has no
-      independent support, and ours is both the majority position and contained
-      within the wider one.
-  
-      Deliberately NOT widened to Campanian-Maastrichtian. Widening is the right
-      move when two positions each have literature behind them, as with the
-      Shaximiao redating; here it would adopt a 17.6 Myr span that no paper
-      asserts, to accommodate a single unsupported source.
+    source: corpus-review
+    verdict: corrected
+    research: research/stratigraphy/b/baruungoyot.md
 
 Natovenator polydontus:
   - categories: [stage]
@@ -1903,29 +1774,12 @@ Erythrovenator jacuiensis:
   - categories: [formation]
     source: pavanatto2018z
     verdict: ours-correct
-    note: >
-      Not a co-occurrence artifact in our favour by accident -- the describing
-      paper states the unit twice, once as a formal type horizon: "Type horizon.
-      Santa Maria Supersequence, Candelária Sequence, Paraná Basin." The tally
-      missed it because "Santa Maria" occurs constantly for three unrelated
-      reasons: the city, the institution code (CAPPA/UFSM = Universidade Federal
-      de Santa Maria), and the Supersequence containing the Candelária.
-      pavanatto2018z, which describes the Niemeyer Site itself, closes it at
-      sequence rank by lithology alone and explains why no finer value is
-      available: "no index fossils have been found at the Niemeyer Site
-      precluding a secure assignation of this fauna to any known AZ".
-      Neighbouring sites in the same structural block straddle both assemblage
-      zones. The reference work's "Santa Maria or Caturrita" is the same
-      uncertainty written lithostratigraphically; picking one would fabricate a
-      determination two papers deliberately withheld.
+    research: research/genera/E/Erythrovenator.md
 Amygdalodon patagonicus:
   - categories: [stage]
     source: corpus-paper-count
     verdict: corrected
-    note: >
-      Corrected to Toarcian on the weight of the reference literature. Ours held
-      Sinemurian-Pliensbachian, which the corpus does not support for this
-      taxon.
+    research: research/stratigraphy/l/lonco-trapial.md
 
 Yimenosaurus youngi:
   - categories: [stage]
@@ -1939,11 +1793,8 @@ Yimenosaurus youngi:
 Dongyangosaurus sinensis:
   - categories: [stage]
     source: corpus-paper-count
-    verdict: ours-correct
-    note: >
-      Kept. The raw count favours Albian, but the Albian votes are unit-level
-      statements about the Jinhua Formation broadly rather than about this taxon's
-      horizon. Ours stands at Cenomanian-Turonian.
+    verdict: corrected
+    research: research/stratigraphy/j/jinhua.md
 
 Jiangshanosaurus lixianensis:
   - categories: [stage]
@@ -1961,28 +1812,19 @@ Isanosaurus attavipachi:
   - categories: [stage]
     source: corpus-paper-count
     verdict: corrected
-    note: >
-      Narrowed to Pliensbachian. Ours held Pliensbachian-Toarcian and the
-      reference work gives Norian-Rhaetian; neither matches, and the literature
-      supports Pliensbachian.
+    research: research/stratigraphy/n/nam-phong.md
 
 Leyesaurus marayensis:
   - categories: [stage]
     source: martínez2015z
     verdict: corrected
-    note: >
-      Corrected to Rhaetian, now resting on the primary rather than on a range.
-      Ours spanned Hettangian through Toarcian.
+    research: research/genera/L/Leyesaurus.md
 
 Jobaria tiguidensis:
   - categories: [stage]
     source: rauhut2009z
     verdict: corrected
-    note: >
-      Corrected to Bathonian-Callovian, which is NEITHER our value
-      (Oxfordian-Tithonian) nor the reference work's (Hauterivian-Cenomanian).
-      A case where both sides were wrong and a mechanical straddle would have
-      produced a span covering neither the truth nor either claim.
+    research: research/stratigraphy/t/tiourarén.md
 
 Nhandumirim waldsangae:
   - categories: [stage]
@@ -2017,13 +1859,7 @@ Hoplitosaurus marshi:
   - categories: [stage]
     source: boyd2015z
     verdict: corrected
-    note: >
-      Corrected to Berriasian-Valanginian. The Barremian tradition inverts a
-      ceiling into an age: sohn1979z says "Barremian or older", "pre-Aptian" and
-      "probably not younger than the Barremian", all of which are maxima
-      compatible with Berriasian-Valanginian, and Sohn never resolves the age by
-      member. The holotype is from the Chilson Member, the basal unit, which
-      boyd2015z and farke2014a place at Berriasian-Valanginian.
+    research: research/genera/H/Hoplitosaurus.md
 
 Osmakasaurus depressus:
   - categories: [stage]
@@ -2154,19 +1990,14 @@ Talenkauen santacrucensis:
 Irisosaurus yimenensis:
   - categories: [stage]
     source: huang2005z
-    verdict: ours-correct
-    note: >
-      Pliensbachian stands. huang2005z correlates the upper Lufeng Formation to
-      the upper Toarcian and sites 21-14 to the middle Sinemurian; Pliensbachian
-      sits inside that window, confirming the magnetostratigraphic basis.
+    verdict: corrected
+    research: research/stratigraphy/f/fengjiahe.md
 
 Lingyuanosaurus sihedangensis:
   - categories: [stage]
     source: he2004z
     verdict: ours-correct
-    note: >
-      Aptian stands. he2004z dates the Jiufotang Formation at 120.3 +/- 0.7 Ma:
-      "This result confirms an Aptian age for the Jiufotang Formation".
+    research: research/topics/sihedang.md
   - categories: [formation]
     source: yao2019a
     verdict: corrected
@@ -2219,10 +2050,7 @@ Anoplosaurus curtonotus:
   - categories: [formation]
     source: seeley1879a
     verdict: ours-correct
-    note: >
-      Orthography, not a dispute. The erecting paper writes "Cambridge Greensand"
-      closed and never "Green Sand"; pereda-suberbiola1999a and barrett2020a do
-      the same across 65 occurrences. Pair added to formation-variants.yml.
+    research: research/genera/A/Anoplosaurus.md
   - categories: [holotype]
     source: pereda-suberbiola1999a
     verdict: ours-correct
@@ -2297,9 +2125,8 @@ Aerosteon riocoloradensis:
 Jeholornis prima:
   - categories: [stage]
     source: corpus-review
-    verdict: ours-correct
-    note: >
-      Aptian stands.
+    verdict: corrected
+    research: research/genera/J/Jeholornis.md
 
 Sphaerotholus goodwini:
   - categories: [stage]
@@ -2480,19 +2307,9 @@ Falcarius utahensis:
 
 Iguanacolossus fortis:
   - categories: [stage]
-    source: joeckel2023z
+    source: mcdonald2010b
     verdict: corrected
-    note: >
-      Widened to Berriasian-Valanginian; lower Yellow Cat Member.
-
-      Cedar Mountain ages are decided by position relative to Aubrey's (1998)
-      marker calcrete, which separates the lower from the upper Yellow Cat Member.
-      joeckel2023z dates a tephra inside the upper Yellow Cat at 135.10 +/- 0.30
-      Ma and ties a carbon-isotope excursion to the Valanginian Weissert Event, so
-      the lower Yellow Cat is Berriasian into earliest Valanginian and the upper
-      Yellow Cat is Valanginian. Ten of the twelve Cedar Mountain findings reduce
-      to that one question, which formation-level vote counting could never have
-      answered. The member is now recorded so the reasoning survives.
+    research: research/genera/I/Iguanacolossus.md
 
 Yurgovuchia doellingi:
   - categories: [stage]
@@ -2516,17 +2333,7 @@ Hippodraco scutodens:
   - categories: [stage]
     source: joeckel2023z
     verdict: ours-correct
-    note: >
-      Valanginian stands; upper Yellow Cat Member.
-
-      Cedar Mountain ages are decided by position relative to Aubrey's (1998)
-      marker calcrete, which separates the lower from the upper Yellow Cat Member.
-      joeckel2023z dates a tephra inside the upper Yellow Cat at 135.10 +/- 0.30
-      Ma and ties a carbon-isotope excursion to the Valanginian Weissert Event, so
-      the lower Yellow Cat is Berriasian into earliest Valanginian and the upper
-      Yellow Cat is Valanginian. Ten of the twelve Cedar Mountain findings reduce
-      to that one question, which formation-level vote counting could never have
-      answered. The member is now recorded so the reasoning survives.
+    research: research/genera/H/Hippodraco.md
 
 Martharaptor greenriverensis:
   - categories: [stage]
@@ -2578,12 +2385,9 @@ Mononykus olecranus:
 
 Acantholipan gonzalezi:
   - categories: [stage]
-    source: rivera-sylva2011z
+    source: rivera-sylva2018a
     verdict: ours-correct
-    note: >
-      Campanian stands. This REVERSES a first-pass reading that our value had no
-      source: rivera-sylva2011z, the original description of the holotype, gives
-      "Pen Formation (Campanian)".
+    research: research/genera/A/Acantholipan.md
 
 Sinocephale bexelli:
   - categories: [stage]
@@ -2613,25 +2417,13 @@ Arenysaurus ardevoli:
   categories: [formation]
   source: prieto-márquez2021a
   verdict: ours-correct
-  note: >
-    prieto-márquez2021a places the type site in "the Blasi 3.4 locality of the
-    upper Maastrichtian La Posa Formation". jones2026a is off by one unit
-    upward: in the Tremp Group scheme the basal grey unit is the La Posa Fm and
-    the overlying lower red unit is the Conques Fm, whose localities (Basturs
-    Poble, Orcau-1) are different sites. The erecting paper's "lower part of
-    the Tremp Formation" is the same horizon undivided.
+  research: research/stratigraphy/t/tremp.md
 
 Genusaurus sisteronis:
   categories: [formation]
   source: accarie1995a
   verdict: ours-correct
-  note: >
-    Not a formation dispute: Bevons is a commune. accarie1995a uses it
-    throughout as a place name ("4.25 km SW of the village of Sisteron", "the
-    Bevons site") and gives a lithological description -- "greenish clays and
-    glauconitic sands" -- rather than a formal unit, which is why the reference
-    works fell back on the locality. Those are the Aptian-Albian basinal marls
-    of the Vocontian Basin, the Marnes Bleues.
+  research: research/genera/G/Genusaurus.md
 
 Gobisaurus domoculus:
   categories: [formation]
@@ -2753,20 +2545,7 @@ Berberosaurus liassicus:
   categories: [formation]
   source: montenat2005z
   verdict: corrected
-  note: >
-    Changed Azilal to Toundoute Continental Series. The Azilal assignment rests
-    on one sentence in allain2008a -- "It is very likely that the Toundoute
-    continental series ... is a lateral equivalent of the Toarcian Azilal and
-    Wazzant formations (Montenat et al. 2005)" -- and montenat2005z says no
-    such thing: the words Azilal and Wazzant appear nowhere in it, in either
-    the French original or the translation. The correlation is Allain and
-    Aquesbi's own inference, printed with a query mark in their own chart, and
-    holwerda2018a and rincón2022a repeat it as though it were an assignment.
-    montenat2005z divides the succession into "eight informal
-    lithostratigraphic units, designated A to H" and erects no formation, so
-    Toundoute Continental Series is the finest available value. Geography
-    agrees: Azilal is defined in the central High Atlas ~150 km away across the
-    range from Toundoute.
+  research: research/topics/toundoute.md
 
 Echinodon becklesii:
   categories: [formation]
@@ -2790,15 +2569,7 @@ Lirainosaurus astibiae:
   categories: [formation]
   source: carrano2008a
   verdict: ours-correct
-  note: >
-    The rival value is a clerical error rather than a stratigraphic opinion.
-    The Marnes Rouges Inférieures Formation is French -- the stratum typicum of
-    Ampelosaurus atacis at Campagne-sur-Aude, Aude -- and jones2026b's own
-    Ampelosaurus row lists it under France while its Lirainosaurus row lists it
-    under Spain: two adjacent rows of one table crossed. Ours is thinly sourced
-    in absolute terms, though: sanz1999a names no unit for the Laño quarry, the
-    Díez Díaz papers work at locality level, and carrano2008a is the only
-    in-corpus attestation tying Laño material to the Vitoria Formation.
+  research: research/genera/L/Lirainosaurus.md
 
 Nipponosaurus sachalinensis:
   categories: [formation]
@@ -2867,18 +2638,7 @@ Erectopus superbus:
   categories: [formation]
   source: allain2005b
   verdict: corrected
-  note: >
-    Changed La Penthièvre to La Penthiève -- the unit was right, the spelling
-    wrong by one letter. allain2005b's formal horizon statement reads
-    "Phosphate-bearing beds of La Penthiève, Mammilatum Zone, Lower Cretaceous,
-    lower Albian", and carrano2012a's appendix 3 distinguishes the two words in
-    adjacent columns of one row: the unit is "La Penthiève Beds", the locality
-    "Bois de la Penthière". Note allain2005b is itself inconsistent, writing
-    "La Penthièvre" once in narrative prose about the Pierson collection; the
-    horizon line and the appendix are the places that name the bed, and both
-    give Penthiève. The unit is informal and bed-rank, so jones2026c's "Beds
-    Fm." is a rank collision of its own making, and weishampel2004a's "Unnamed
-    unit" simply predates the lectotype redescription.
+  research: research/genera/E/Erectopus.md
 
 Graciliceratops mongoliensis:
   categories: [formation]
@@ -2975,18 +2735,7 @@ Gojirasaurus quayi:
   categories: [formation]
   source: carpenter1997a
   verdict: corrected
-  note: >
-    Changed Bull Canyon to Cooper Canyon, and recorded as genuinely contested
-    rather than settled. The describing paper devotes a section to adjudicating
-    the two names under the North American Stratigraphic Code and concludes
-    that "the stratum from which the holotype Gojirasaurus quayi was collected
-    should be referred to as the Cooper Canyon Formation of the Dockum Group".
-    The two are laterally equivalent bodies -- nesbitt2007a writes "the Bull
-    Canyon (=Cooper Canyon) Formation" -- so this is a nomenclatural preference
-    between the Lucas-school New Mexico name and the Texas name. Same split as
-    Lepidus praecisio at Otis Chalk and resolved the same way deliberately; the
-    two must not diverge. The count was inflated: most corpus papers naming
-    Cooper Canyon concern Texas localities and never mention this taxon.
+  research: research/topics/bull-canyon-and-cooper-canyon.md
 
 Huanghetitan liujiaxiaensis:
   categories: [formation]
@@ -3054,19 +2803,7 @@ Asylosaurus yalensis:
   categories: [formation]
   source: galton2007a
   verdict: corrected
-  note: >
-    Changed Magnesian Conglomerate to Durdham Down fissure fill; the erecting
-    paper rejects the old value by name. galton2007a gives the deposit as "a
-    Triassic (Rheatian [sic]) dolomitized cave breccia or fissure fill (not in
-    Magnesian/ Dolomitic Conglomerate ...) in Lower Carboniferous (Dinantian)
-    marine limestone", and explains how the name entered circulation: "It was
-    long equated with the Magnesian Conglomerate, which occurs very close by."
-    The host rock is Carboniferous limestone and the infill is Rhaetian with no
-    lithostratigraphic name, so the reference work's "Uncertain" was closer to
-    the literature than our named value. The string follows the convention
-    already used for the Welsh equivalent at Pant-y-ffynnon. The record's own
-    description field already said "Avon Fissure Fill" and "cave fill", so the
-    value had been contradicting its own prose.
+  research: research/genera/A/Asylosaurus.md
 
 Chebsaurus algeriensis:
   categories: [formation]
