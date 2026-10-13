@@ -1,5 +1,19 @@
 # *Austrocheirus*
 
+## What stages does *Austrocheirus* take?
+
+*2026-10-12*
+
+**Conclusion.** Campanian and Maastrichtian. The describing paper gives the horizon as early Maastrichtian, and the Cerro Fortaleza Formation, which the record takes for the beds, carries a Campanian reading from detrital-zircon maximum ages; the two together are the unit's range. The record's Campanian alone dropped the describing paper's age. Governs `stage: [Campanian, Maastrichtian]` on [*Austrocheirus isasii*](../../../genera/A/Austrocheirus.yml).
+
+**Evidence.**
+- ezcurra2010b, p. 3: "Hoyada Arroyo Seco locality (49°57'17'' S, 72°05'31'' W) … Pari Aike Formation, Late Cretaceous (early Maastrichtian: Kraemer & Riccardi 1997; Novas *et al.* 2004)."
+
+**Ruled out.**
+- *Campanian alone.* It drops the describing paper's horizon age.
+
+**Open.** Sickmann and colleagues (2018), the source of the Campanian maximum ages, has not been read.
+
 ## Is the *Austrocheirus* holotype from the Pari Aike, the Mata Amarilla or the Cerro Fortaleza Formation?
 
 *2026-08-13*

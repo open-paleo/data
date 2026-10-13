@@ -48,15 +48,22 @@ species:
     type_species: true
     period:
       name:
+        - Early Cretaceous
         - Late Cretaceous
       stage:
+        - Albian
         - Cenomanian
+        - Turonian
     location:
       country: AU
       locality: Matilda Site, Elderslie Station
       region: AU-QLD
       formation: Winton
-      part: lower
+      part: upper
+      notes: Hocknull and colleagues (2009) date the Matilda Site "latest
+        Albian"; Poropat and colleagues (2014) give it as Cenomanian from a
+        detrital-zircon age, and Poropat and colleagues (2021) as Cenomanian to
+        lower Turonian.
     size:
       length_m:
         min: 7.0
@@ -76,4 +83,10 @@ species:
       completeness: partial
     erected_in: hocknull2009a
 references:
+  - id: poropat2014a
+    notes: Gives the Matilda Site as Cenomanian, from a maximum age for the
+      sandstone overlying the bonebed.
+  - id: poropat2021a
+    notes: Gives the site's individuals as from the "Cenomanian–lower Turonian
+      'upper' Winton Formation".
   - id: hocknull2009a

@@ -1,5 +1,19 @@
 # Lithology words in unit names
 
+## Is the Demopolis named with its lithology word?
+
+*2026-10-13*
+
+**Conclusion.** Yes, `Demopolis Chalk`. The 2026-09-20 entry's reading applies: where papers print the geographic name with a lithology word, the registry keeps it, as for the Mooreville Chalk of the same Alabama sequence, and a lithology-word form of the same name is not a variant. Carr and colleagues' "Demopolis Formation" is the rank-word form of the same unit. Governs `name: Demopolis Chalk` and the empty `variants` on [Demopolis Chalk](../../stratigraphy/d/demopolis-chalk.yml), and `location.formation` on [*Appalachiosaurus montgomeriensis*](../../genera/A/Appalachiosaurus.yml). Settles the **Open** line of the 2026-09-20 entry.
+
+**Evidence.**
+- carr2005a: "the Late Cretaceous (Middle Campanian) Demopolis Formation of Alabama", and once "Demopolis Chalk".
+
+**Ruled out.**
+- *A bare "Demopolis".* The rank word is dropped and the lithology word kept.
+
+**Open.** Nothing.
+
 ## When papers print a unit both with a lithology word and with a rank word, which name does the registry use?
 
 *2026-09-20*
@@ -17,10 +31,11 @@
 - *A bare "Arén".* Cruzado-Caballero and colleagues write "the upper part of the Arén Formation" (cruzado-caballero2010a, p. 1507). The same abstract places the Blasi 1 locality "of Arén", the town, which *Blasisaurus* and *Arenysaurus* carry in their localities.
 - *A bare "Poison Strip", or "Poison Strip Member".* Later papers write "Poison Strip Member" (sprinkel2012a, p. 2: "Aptian for the Poison Strip Member"); Kirkland and colleagues named the unit as the Poison Strip Sandstone and use that form for it.
 
-**Open.** The Demopolis. Carr and colleagues (2005) write "Demopolis Formation" and once "Demopolis Chalk"; the registry has `name: Demopolis` with `variants: [Demopolis Chalk]` on [Demopolis](../../stratigraphy/d/demopolis.yml). By the reading above the lithic form would be the name, and a lithology-word form of the same name is not a variant under the registry's rule on variants. Which way the Demopolis goes is undecided, and so is whether a single printing of a lithic form is enough to make it the name.
+**Open.** The Demopolis. Carr and colleagues (2005) write "Demopolis Formation" and once "Demopolis Chalk"; the registry has `name: Demopolis` with `variants: [Demopolis Chalk]` on [Demopolis](../../stratigraphy/d/demopolis-chalk.yml). By the reading above the lithic form would be the name, and a lithology-word form of the same name is not a variant under the registry's rule on variants. Which way the Demopolis goes is undecided, and so is whether a single printing of a lithic form is enough to make it the name.
 
 ## References
 
+- `carr2005a`: Carr, T. D.; Williamson, T. E.; Schwimmer, D. R. (2005). A new genus and species of tyrannosauroid from the Late Cretaceous (Middle Campanian) Demopolis Formation of Alabama. *Journal of Vertebrate Paleontology* 25(1): 119-143. doi:10.1671/0272-4634(2005)025[0119:angaso]2.0.co;2
 - `kirkland1997a`: Kirkland, J. I.; Britt, B. B.; Burge, D. L.; Carpenter, K.; Cifelli, R. L.; DeCourten, F. L.; Eaton, J. G.; Hasiotis, S.; Lawton, T. F. (1997). Lower to Middle Cretaceous dinosaur faunas of the Central Colorado Plateau. *Brigham Young University Geological Studies* 42(II): 69-103.
 - `csiki-sava2015a`: Csiki-Sava, Z.; Buffetaut, E.; Ősi, A.; Pereda-Suberbiola, X.; Brusatte, S. L. (2015). Island life in the Cretaceous — faunal composition, biogeography, evolution, and extinction of land-living vertebrates on the Late Cretaceous European archipelago. *ZooKeys* 469: 1-161. doi:10.3897/zookeys.469.8439
 - `clarke2004a`: Clarke, J. A. (2004). Morphology, phylogenetic taxonomy, and systematics of Ichthyornis and Apatornis (Avialae: Ornithurae). *Bulletin of the American Museum of Natural History* 286: 1-179.
