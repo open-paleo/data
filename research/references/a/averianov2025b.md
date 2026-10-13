@@ -18,6 +18,6 @@
 
 ## References
 
-- `averianov2025b`: Averianov, A. O.; Sizov, A. V.; Grigoriev, D. V.; Kolchanov, V. V.; Skutschas, P. P. (2025). A sauropod Tengrisaurus starkovi from the Lower Cretaceous of Transbaikalia, Russia, and Asiatic origin of Titanosauria. *Cretaceous Research*: 106271. doi:10.1016/j.cretres.2025.106271
+- `averianov2025b`: Averianov, A. O.; Sizov, A. V.; Grigoriev, D. V.; Kolchanov, V. V.; Skutschas, P. P. (2025). A sauropod Tengrisaurus starkovi from the Lower Cretaceous of Transbaikalia, Russia, and Asiatic origin of Titanosauria. *Cretaceous Research* 181: 106271. doi:10.1016/j.cretres.2025.106271
 - `you2008a`: You, H. L.; Li, D. Q.; Zhou, L. Q.; Ji, Q. (2008). Daxiatitan binglingi: a giant sauropod dinosaur from the Early Cretaceous of China. *Gansu Geology* 17(4): 1-10.
 - `leloeuff2013a`: Le Loeuff, J.; Suteethorn, S.; Buffetaut, E. (2013). A new sauropod dinosaur from the Albian of Le Havre (Normandy, France). *Oryctos* 10: 23-30.

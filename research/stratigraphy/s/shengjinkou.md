@@ -19,6 +19,6 @@
 
 ## References
 
-- `averianov2025b`: Averianov, A. O.; Sizov, A. V.; Grigoriev, D. V.; Kolchanov, V. V.; Skutschas, P. P. (2025). A sauropod Tengrisaurus starkovi from the Lower Cretaceous of Transbaikalia, Russia, and Asiatic origin of Titanosauria. *Cretaceous Research*: 106271. doi:10.1016/j.cretres.2025.106271
+- `averianov2025b`: Averianov, A. O.; Sizov, A. V.; Grigoriev, D. V.; Kolchanov, V. V.; Skutschas, P. P. (2025). A sauropod Tengrisaurus starkovi from the Lower Cretaceous of Transbaikalia, Russia, and Asiatic origin of Titanosauria. *Cretaceous Research* 181: 106271. doi:10.1016/j.cretres.2025.106271
 - `wang2021a`: Wang, X.; Bandeira, K. L. N.; Qiu, R.; Jiang, S.; Cheng, X.; Ma, Y.; Kellner, A. W. A. (2021). The first dinosaurs from the Early Cretaceous Hami Pterosaur Fauna, China. *Scientific Reports* 11(1). doi:10.1038/s41598-021-94273-7
 - `zheng2023a`: Zheng, D.; Chang, S. C.; Ramezani, J.; Xu, X.; Xu, H.; Wang, H.; Pei, R.; Fang, Y.; Wang, J.; Wang, B.; Zhang, H. (2023). Calibrating the Early Cretaceous Urho Pterosaur Fauna in Junggar Basin and implications for the evolution of the Jehol Biota. *Geological Society of America Bulletin*. doi:10.1130/B36795.1

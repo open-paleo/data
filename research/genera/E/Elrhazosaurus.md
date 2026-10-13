@@ -1,5 +1,19 @@
 # *Elrhazosaurus*
 
+## Is "niveau des Innocents" the *Elrhazosaurus* locality? (revisited)
+
+*2026-10-13*
+
+**Conclusion.** Yes. The 2026-10-12 entry left open whether the Innocents is a site or a level, overlooking the [*Cristatusaurus*](../C/Cristatusaurus.md) entry of 2026-09-16, which settles it as a site at Gadoufaoua, with GAD 5 as the level; *Cristatusaurus* and [*Nigersaurus*](../N/Nigersaurus.md) carry it so. Galton and Taquet give the *Elrhazosaurus* holotype from the same place. Governs `location.locality: Gadoufaoua, niveau des Innocents` on [*Elrhazosaurus nigeriensis*](../../../genera/E/Elrhazosaurus.yml). Supersedes the 2026-10-12 entry's **Open** line and the location note it governed.
+
+**Evidence.**
+- galton1982a, p. 153: "Gadoufaoua, the region of niveau des Innocents (see Taquet, 1976, fig. 7)"; horizon "GAD 5, upper part of El Rhaz formation".
+
+**Ruled out.**
+- *The Innocents as a level.* The *Cristatusaurus* entry rules it a site.
+
+**Open.** Nothing.
+
 ## Does *Elrhazosaurus* take level GAD 5?
 
 *2026-10-12*

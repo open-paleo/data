@@ -34,5 +34,5 @@
 
 - `averianov2021e`: Averianov, A. O.; Sizov, A. V.; Skutschas, P. P. (2021). Gondwanan affinities of Tengrisaurus, Early Cretaceous titanosaur from Transbaikalia, Russia (Dinosauria, Sauropoda). *Cretaceous Research* 122: 104731. doi:10.1016/j.cretres.2020.104731
 - `averianov2017a`: Averianov, A.; Skutschas, P. (2017). A new lithostrotian titanosaur (Dinosauria, Sauropoda) from the Early Cretaceous of Transbaikalia, Russia. *Biological Communications* 62(1): 6-18. doi:10.21638/11701/spbu03.2017.102
-- `averianov2025b`: Averianov, A. O.; Sizov, A. V.; Grigoriev, D. V.; Kolchanov, V. V.; Skutschas, P. P. (2025). A sauropod Tengrisaurus starkovi from the Lower Cretaceous of Transbaikalia, Russia, and Asiatic origin of Titanosauria. *Cretaceous Research*: 106271. doi:10.1016/j.cretres.2025.106271
+- `averianov2025b`: Averianov, A. O.; Sizov, A. V.; Grigoriev, D. V.; Kolchanov, V. V.; Skutschas, P. P. (2025). A sauropod Tengrisaurus starkovi from the Lower Cretaceous of Transbaikalia, Russia, and Asiatic origin of Titanosauria. *Cretaceous Research* 181: 106271. doi:10.1016/j.cretres.2025.106271
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.
