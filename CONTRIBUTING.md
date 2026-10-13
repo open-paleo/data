@@ -534,7 +534,11 @@ says so in `period.resolution` and explains why in the location notes: a type
 specimen reworked from older beds (`reworked`) takes the age of the beds it was
 reworked from, and a type whose bed is uncertain (`horizon`) takes the stages of
 every bed it may have come from. Validation reports any other record whose
-epochs or stages fall outside its unit's.
+epochs or stages fall outside its unit's. Where the record's unit has no
+`stages`, its stages are checked against the nearest dated unit above it: a
+bed or member lies inside its parent even when no source dates the child
+itself. A child whose parent is dated to a single stage takes that stage
+(`research/methods.md`, "A child of a single-stage parent takes that stage").
 
 ## Image Requirements
 

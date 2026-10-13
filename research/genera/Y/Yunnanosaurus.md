@@ -42,7 +42,7 @@
 - young1942b, p. 65: "Upper Trias from the dark red beds of the Lufeng series in the vicinity of the village Huangchiatien", with the footnote "1. 黃家田; 2. 沙灣".
 - young1942b, p. 99: the specific name honors Dr. T. K. Huang, and "In addition, the specific name shows that the remains were unearthed in the vicinity of a small village called Huangchiatien, the farm of the family Huang".
 - simmons1965a, p. 49: "Dark Red Beds, Lower Lufeng Series, Huangchiatien, Lufeng, Yunnan"; young1948a, p. 75: "Upper Triassic Dark Red Beds of the Lower Lufeng Series from Huangchiatien, Lufeng, Yunnan".
-- luo1994a, p. 265: "the Dahuangtian locality ('Huangjiatian' of Young, 1944, and Simmons, 1965)"; barrett2012a, p. 152: "Huangchiatien (Dahuangtian in more recent publications; Luo and Wu, 1994)".
+- luo1994a, p. 265: "the Dahuangtian locality ('Huanjiatian' of Young, 1944, and Simmons, 1965)"; barrett2012a, p. 152: "Huangchiatien (Dahuangtian in more recent publications; Luo and Wu, 1994)".
 
 **Ruled out.**
 - *"Dull purplish beds."* Young's first notice gives "Level: Dull purplish beds of the Lower Lufeng Series" (young1940a, p. 237). His full description corrects it to the dark red beds (young1942b, p. 65), and Galton and Upchurch (2004) give "the upper Dark Red Beds of the Lower Lufeng Series" (galton2004a, p. 252).

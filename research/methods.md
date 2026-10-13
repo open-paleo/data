@@ -39,6 +39,16 @@
 
 **Exceptions.** None.
 
+## A child of a single-stage parent takes that stage
+
+*2026-10-13*
+
+**Rule.** Adds an exception to the entry above. A member or bed whose parent is dated to a single stage takes that stage, whether or not any source dates the child. A child of a parent dated across several stages stays undated until a source dates it, and a record in it is checked against the nearest dated unit above. Decides `stages` on child units.
+
+**Why.** A unit lies inside its parent, so when the parent spans one stage the child cannot be dated otherwise at stage resolution; the parent-range rule guards against a range too wide for the child, and one stage leaves nothing narrower. Four beds already carried their single-stage parent's stage when the Anjiagou Bed (in the Barremian Jianshangou Member) and the Lameta's Carnosaur and Sauropod Beds (Maastrichtian) were found undated.
+
+**Exceptions.** None.
+
 ## A 97–99.5 Ma "Albian" is re-placed only when the number was measured
 
 *2026-10-07*

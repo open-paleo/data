@@ -346,16 +346,76 @@ export function loadValidationContext()
     ];
 
     /**
+     * Finds the stages a record in an undated unit is held to: those of the
+     * nearest unit above it that has any. A bed or member lies inside its parent,
+     * so a record in it can be no older or younger than the parent, even where no
+     * source dates the child itself; the child's own entry stays undated.
+     *
+     * @param label - The finest unit's label, for the message.
+     * @param unitName - The registry name to start the climb from.
+     * @returns The label naming the dated ancestor, and its stages, or undefined
+     *     when no unit above is dated.
+     */
+    function datedAncestor(label: string, unitName: string | undefined): { label: string; stages: Array<string> } | undefined
+    {
+        const seen = new Set<string>();
+        let current = unitName;
+
+        while (current !== undefined && !seen.has(current))
+        {
+            seen.add(current);
+
+            const stages = stratigraphy[current]?.stages ?? [];
+
+            if (stages.length > 0)
+            {
+                return { label: `${label}, dated by ${current}`, stages };
+            }
+
+            const parent = stratigraphy[current]?.parent;
+
+            current = typeof parent === "string" ? unitByName.get(parent) ?? parent : undefined;
+        }
+
+        return undefined;
+    }
+
+    /**
      * Finds the finest registry unit a record names, with the epochs and stages it
      * carries. A bed is looked for among the beds of the record's member,
      * formation and group, nearest first, then as a standing entry; otherwise the
-     * member, formation and group are tried in turn.
+     * member, formation and group are tried in turn. When that unit has no
+     * stages, the stages are those of the nearest dated unit above it, and the
+     * label says so.
      *
      * @param location - The record's location block.
      * @returns The unit's label, epochs and stages, or undefined when the record
      *     names no registry unit.
      */
     function recordUnit(location: Species["location"]): { label: string; periods: Array<string>; stages: Array<string> } | undefined
+    {
+        const found = finestRecordUnit(location);
+
+        if (found === undefined || found.unit.stages.length > 0)
+        {
+            return found?.unit;
+        }
+
+        const ancestor = datedAncestor(found.unit.label, found.climbFrom);
+
+        return ancestor === undefined ? found.unit : { ...found.unit, label: ancestor.label, stages: ancestor.stages };
+    }
+
+    /**
+     * Finds the finest registry unit a record names, and the registry name the
+     * climb to a dated ancestor starts from: the bed's container for a bed, the
+     * unit's parent otherwise.
+     *
+     * @param location - The record's location block.
+     * @returns The unit and the climb's starting name, or undefined when the
+     *     record names no registry unit.
+     */
+    function finestRecordUnit(location: Species["location"]): { unit: { label: string; periods: Array<string>; stages: Array<string> }; climbFrom: string | undefined } | undefined
     {
         const containers = (["member", "formation", "group"] as const)
             .map((field) => location?.[field])
@@ -372,7 +432,7 @@ export function loadValidationContext()
 
                 if (bed)
                 {
-                    return { label: `${unitName} › ${bed.name}`, periods: bed.period ?? [], stages: bed.stages ?? [] };
+                    return { unit: { label: `${unitName} › ${bed.name}`, periods: bed.period ?? [], stages: bed.stages ?? [] }, climbFrom: unitName };
                 }
             }
 
@@ -380,7 +440,7 @@ export function loadValidationContext()
 
             if (standing !== undefined && stratigraphy[standing]?.rank === "bed")
             {
-                return { label: standing, periods: stratigraphy[standing]?.period ?? [], stages: stratigraphy[standing]?.stages ?? [] };
+                return { unit: { label: standing, periods: stratigraphy[standing]?.period ?? [], stages: stratigraphy[standing]?.stages ?? [] }, climbFrom: standing };
             }
         }
 
@@ -388,7 +448,7 @@ export function loadValidationContext()
 
         return unitName === undefined
             ? undefined
-            : { label: unitName, periods: stratigraphy[unitName]?.period ?? [], stages: stratigraphy[unitName]?.stages ?? [] };
+            : { unit: { label: unitName, periods: stratigraphy[unitName]?.period ?? [], stages: stratigraphy[unitName]?.stages ?? [] }, climbFrom: unitName };
     }
 
     // Prose-field traversal, shared by checks 24, 25 and 26.
