@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-10-13T17:01:58.002Z
+  built_at: 2026-10-13T17:46:03.321Z
   clade_count: 188
   genus_count: 1425
   license: CC-BY-4.0
@@ -13770,11 +13770,13 @@ genera:
         period:
           name:
             - Middle Jurassic
+            - Late Jurassic
           stage:
             - Bathonian
             - Callovian
+            - Oxfordian
           from_ma: 168.2
-          to_ma: 161.5
+          to_ma: 154.8
         location:
           country: NE
           locality: In Abaka
@@ -20827,16 +20829,17 @@ genera:
           name:
             - Early Jurassic
           stage:
-            - Hettangian
-            - Sinemurian
-          from_ma: 201.4
-          to_ma: 192.9
+            - Pliensbachian
+            - Toarcian
+          from_ma: 192.9
+          to_ma: 174.7
         location:
           country: US
           locality: Manchester
           region: Connecticut
           formation: Portland
           part: upper
+          notes: Olsen and Galton (1984) give the formation's anchisaurid prosauropods as "associated with palynoflorules ranging in age from Pliensbachian to Toarcian".
           region_code: US-CT
           part_of: formation
         size:
@@ -20878,6 +20881,14 @@ genera:
         references:
           - marsh1889b
     references:
+      - id: olsen1984a
+        authors: Olsen, P. E.; Galton, P. M.
+        year: 1984
+        title: A review of the reptile and amphibian assemblages from the Stormberg of southern Africa, with special emphasis on the footprints and the age of the Stormberg
+        journal: Palaeontologia Africana
+        volume: "25"
+        pages: 87-110
+        notes: Dates the Portland's anchisaurid-bearing beds Pliensbachian to Toarcian by their palynoflorules.
       - id: hitchcock1865a
         authors: Hitchcock, E.
         year: 1865
@@ -31715,14 +31726,14 @@ genera:
           region_code: US-MT
         type_specimen:
           specimen_id:
-            - AMNH FR 30556
+            - AMNH FARB 30556
           specimen_type: holotype
           institution: American Museum of Natural History
           material: Nearly complete skeleton (~90%) of a subadult individual.
           completeness: complete
           former_ids:
             - from_id: FIP 001
-              to_id: AMNH FR 30556
+              to_id: AMNH FARB 30556
               from_institution: Florida Institute of Paleontology
               to_institution: American Museum of Natural History
               reason: rehoused
@@ -37957,9 +37968,11 @@ genera:
           name:
             - Late Cretaceous
           stage:
+            - Santonian
             - Campanian
-          from_ma: 83.6
-          to_ma: 72.2
+            - Maastrichtian
+          from_ma: 85.7
+          to_ma: 66
         location:
           country: MN
           locality: Khulsan
@@ -43307,14 +43320,15 @@ genera:
           name:
             - Late Cretaceous
           stage:
-            - Campanian
-          from_ma: 83.6
-          to_ma: 72.2
+            - Santonian
+          from_ma: 85.7
+          to_ma: 83.6
         location:
           country: MN
           locality: Hermiin Tsav
           region: Ömnögovi
           formation: Baruungoyot
+          notes: Alifanov and Barsbold (2009) give the horizon as "Upper Cretaceous, ?Lower Santonian, Baruungoyot Formation".
           region_code: MN-053
         type_specimen:
           specimen_id:
@@ -47522,10 +47536,12 @@ genera:
         period:
           name:
             - Early Cretaceous
+            - Late Cretaceous
           stage:
             - Albian
+            - Cenomanian
           from_ma: 113.2
-          to_ma: 100.5
+          to_ma: 93.9
         location:
           country: AR
           locality: Cerro Barcino, 50 km north of Los Altares
@@ -47535,6 +47551,7 @@ genera:
           coordinates:
             - -43.5
             - -68.333333
+          notes: Carrano and colleagues (2012) give the teeth associated with the holotype as "derived from the Albian–Cenomanian Bayo Overo Member".
           region_code: AR-U
         type_specimen:
           specimen_id:
@@ -47557,6 +47574,17 @@ genera:
         authors: del Corro, G.
         described: 1975
     references:
+      - id: carrano2012a
+        authors: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D.
+        year: 2012
+        title: "The phylogeny of Tetanurae (Dinosauria: Theropoda)"
+        journal: Journal of Systematic Palaeontology
+        publisher: Informa UK Limited
+        volume: "10"
+        issue: "2"
+        pages: 211-300
+        doi: 10.1080/14772019.2011.630927
+        notes: Gives the teeth associated with the holotype as "derived from the Albian–Cenomanian Bayo Overo Member".
       - id: delcorro1975a
         authors: del Corro, G.
         year: 1975
@@ -50425,9 +50453,11 @@ genera:
           name:
             - Late Cretaceous
           stage:
+            - Santonian
             - Campanian
-          from_ma: 83.6
-          to_ma: 72.2
+            - Maastrichtian
+          from_ma: 85.7
+          to_ma: 66
         location:
           country: MN
           locality: Hermiin Tsav
@@ -86764,8 +86794,10 @@ genera:
           stage:
             - Berriasian
             - Valanginian
+            - Hauterivian
+            - Barremian
           from_ma: 143.1
-          to_ma: 132.6
+          to_ma: 121.4
         location:
           country: US
           locality: Don's Ridge, UMNH VP locality 1206
@@ -86773,6 +86805,7 @@ genera:
           formation: Cedar Mountain
           member: Yellow Cat
           part: lower
+          notes: McDonald and colleagues (2010) find the age of the lower Yellow Cat "difficult to ascertain" and treat it provisionally as "early Barremian, possibly older".
           region_code: US-UT
           part_of: member
         size:
@@ -90713,8 +90746,9 @@ genera:
             - Early Cretaceous
           stage:
             - Aptian
+            - Albian
           from_ma: 121.4
-          to_ma: 113.2
+          to_ma: 100.5
         location:
           country: CN
           locality: Dapingfang, Chaoyang City
@@ -93240,11 +93274,13 @@ genera:
         period:
           name:
             - Middle Jurassic
+            - Late Jurassic
           stage:
             - Bathonian
             - Callovian
+            - Oxfordian
           from_ma: 168.2
-          to_ma: 161.5
+          to_ma: 154.8
         location:
           country: NE
           locality: Tamérat
@@ -98484,13 +98520,15 @@ genera:
             - Late Cretaceous
           stage:
             - Campanian
+            - Maastrichtian
           from_ma: 83.6
-          to_ma: 72.2
+          to_ma: 66
         location:
           country: MN
           locality: Khulsan
           region: Ömnögovi
           formation: Baruungoyot
+          notes: Napoli and colleagues (2021) conclude that "the Barun Goyot strata at Khulsan are Campanian to Maastrichtian in age".
           region_code: MN-053
         size:
           length_m:
