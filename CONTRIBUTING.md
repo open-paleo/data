@@ -174,7 +174,11 @@ hybrid form:
   - `(Smith and colleagues, 1999)`
 - Use `and` (not `&`) between author names in both forms, and `and
   colleagues` (not `et al.` or `and others`) for three or more. A quotation
-  keeps its source's own wording.
+  keeps its source's own wording. An obvious misprint of a name or year may
+  be corrected in square brackets when the source's own reference list, or
+  its text elsewhere, gives the correct form ("Sickman[n] et al., 2018",
+  "[Scarborough] (2000)"); a variant spelling is not a misprint, and goes in
+  the store entry's `also_cited_as` instead.
 - For lists inside a single set of parentheses, separate with `;` and
   drop the inner commas: `(Smith 1999; Jones 2000)`.
 - Give authority+year only on first mention of each binomial in a
@@ -261,6 +265,27 @@ If you do rename a key, **rewrite every sentence that cites it in the same
 commit.** The old key is gone, not aliased. Grep `genera/` and `clades/` for
 it, and check the prose of each record you find as well as its `references`
 list — a citation left on the old year is the mismatch you were trying to fix.
+
+A citation inside a quotation cannot be rewritten to match the key. When a
+quoted source cites a work under a year, spelling or name other than the
+entry's own, record that form in the store entry's `also_cited_as`, and the
+citation check accepts it. Each form gives the `author`, the `year` or both,
+and a field left out falls back to the entry's own:
+
+```yaml
+id: kocsis2013a
+year: 2013
+also_cited_as:
+  - year: 2014                      # print year; online in 2013
+```
+
+The same field covers a variant transliteration (`author: Ratkevitch` on
+`ratkevich1998a`), a second author named alone (`author: Miolano` on
+`casamiquela1983a`), and an edited work cited by its title (`author:
+Stratigraphic Dictionary` on `vereshchagin1979a`). Keep each form a pair as
+printed, so the check never accepts a name with a year no source gave it.
+`also_cited_as` serves the check only and is not written to the built
+output.
 
 ## Books, Chapters and Series
 

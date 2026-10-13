@@ -402,6 +402,23 @@ export function checkReferenceStoreIntegrity(context: ValidationContext): void
             }
         }
 
+        // Each other form a work is cited in changes the author, the year or both;
+        // a form that changes neither, or names a field the check cannot read, is
+        // a typo.
+        for (const form of (entry.also_cited_as as Array<unknown> | undefined) ?? [])
+        {
+            const fields = typeof form === "object" && form !== null ? Object.keys(form) : [];
+            const { author, year } = (form ?? {}) as { author?: unknown; year?: unknown };
+
+            if (fields.length === 0 || fields.some((field) => field !== "author" && field !== "year") || (author !== undefined && typeof author !== "string") || (year !== undefined && !Number.isInteger(year)))
+            {
+                checkError(
+                    "Reference store integrity",
+                    filePath,
+                    `reference '${entry.id ?? baseName}': each also_cited_as form takes an author (text), a year (a number) or both, and nothing else`);
+            }
+        }
+
         // journal/book are optional: an article carries `journal`, a chapter
         // carries `book` (its containing volume), and a standalone book,
         // monograph, or press release carries neither — its venue is recorded
@@ -1026,7 +1043,9 @@ export function checkDisputeStructure(context: ValidationContext): void
  * is in that record's own references, read or not (research/methods.md,
  * "Every work cited is in the record's references"), so a reader who meets
  * "Smith (2000)" can find the work. Prose names people rather than keys, so
- * this is the only check on it. Names inside quotations are not yet checked.
+ * this is the only check on it. Names inside quotations count too: a quoted
+ * paper's citation is a work the record cites. A quoted year or spelling that
+ * differs from the key is matched through the store entry's `also_cited_as`.
  *
  * @param context - The loaded data the checks read.
  */
@@ -1077,12 +1096,7 @@ export function checkUncitedNarrativeCitations(context: ValidationContext): void
 
         for (const citation of narrativeCitations(prose.join(" ")))
         {
-            const cited = ids.some((id) =>
-            {
-                const storeYear = referenceStoreById.get(id)?.year;
-
-                return citationMatchesId(citation, id, storeYear === undefined ? null : String(storeYear));
-            });
+            const cited = ids.some((id) => citationMatchesId(citation, id, referenceStoreById.get(id)));
 
             if (!cited)
             {

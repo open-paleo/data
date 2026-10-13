@@ -250,6 +250,9 @@ function inflateReferences(pointers?: Array<ReferencePointer>): Array<Reference>
         const entry = pointer.id ? referenceStore.get(pointer.id) : undefined;
         const inflated: Reference = { ...(entry ?? { id: pointer.id }) };
 
+        // The other forms a work is cited in serve the citation check only.
+        delete inflated.also_cited_as;
+
         if (pointer.notes !== undefined)
         {
             inflated.notes = pointer.notes;

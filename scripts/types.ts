@@ -639,6 +639,22 @@ export type Identifier = {
 };
 
 /**
+ * One form in which a work is cited: an author and a year, either of which may
+ * be left to the entry's own.
+ */
+export type CitedForm = {
+    /**
+     * The name the citation gives in place of the entry's first author.
+     */
+    author?: string;
+
+    /**
+     * The year the citation gives in place of the entry's own.
+     */
+    year?: number;
+};
+
+/**
  * A published scientific reference backing taxonomic data. This is the
  * canonical store record — one per `references/<letter>/<key>.yml` file. The
  * bibliographic fields live here and nowhere else; per-occurrence commentary
@@ -660,6 +676,15 @@ export type Reference = {
      * Year of publication.
      */
     year?: number;
+
+    /**
+     * Other forms in which works cite this one, each an author and a year that
+     * differ from the entry's own: a print year beside an online year, a variant
+     * spelling, a second author named alone, or a corporate name for an edited
+     * work. A field left out of a form falls back to the entry's own. Read by
+     * the citation check; never written to the built output.
+     */
+    also_cited_as?: Array<CitedForm>;
 
     /**
      * Title of the paper or chapter.

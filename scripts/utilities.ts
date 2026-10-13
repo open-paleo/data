@@ -111,7 +111,7 @@ export function storeReferencePath(dataRoot: string, key: string): string
  * Canonical field order for a store reference file, `id` first.
  */
 const referenceFieldOrder: Array<keyof Reference> = [
-    "id", "authors", "year", "title", "journal", "book", "series",
+    "id", "authors", "year", "also_cited_as", "title", "journal", "book", "series",
     "thesis", "school", "publisher", "volume", "issue", "pages", "article_number", "doi",
     "isbn", "url",
 ];
@@ -934,9 +934,11 @@ const notCitationNames = new Set(["Nemegt Formation", "Ankylosauridae", "Tanystr
 // Miller (1991)", "Follows Behrensmeyer's (2007)", "The Zhou (2007)".
 const leadingNonNames = new Set(["The", "Follows", "Campanian", "Maastrichtian", "Cretaceous", "Jurassic", "Triassic", "After", "See", "As", "In", "And"]);
 
-// Catalog numbers ("AMNH (5895)") and ICZN Opinions ("Opinion (2486)") have
-// the shape of a citation but are not one.
-const notCitationPattern = /^(?:[A-Z]{2,}(?:\s+[A-Z]{2,})?|Opinion)$/u;
+// Catalog numbers ("AMNH (5895)"), ICZN Opinions ("Opinion (2486)") and stage
+// ranges ("(Barremian-Campanian, 1980)") have the shape of a citation but are
+// not one. A survey team ("No. 133 Coalfield Exploration Team (1976)") is an
+// author, but its work is an unpublished manuscript with no title to key it by.
+const notCitationPattern = /^(?:[A-Z]{2,}(?:\s+[A-Z]{2,})?|Opinion|\p{Lu}\p{Ll}+ian-\p{Lu}\p{Ll}+ian|(?:.*\s)?Team)$/u;
 
 /**
  * Drops leading words that are not part of a surname, such as "The" in "The
@@ -961,17 +963,20 @@ function cleanCitationName(name: string): string
  * Finds every narrative and parenthetical citation in a prose string: "Smith
  * (2000)", "Smith and colleagues (2000, p. 12)", "(Smith, 2000; Jones, 2001)".
  * A letter after a year is kept, so "Smith (2000a, 2000b)" gives two
- * citations.
- * Text inside double quotation marks is skipped, because a name inside a
- * quotation is the quoted source's wording, and a personal communication is
- * not a citation of a work.
+ * citations, and a page after the year ("Imlay (1939a, p. 1738)") is not read
+ * as one. Citations inside quotations count like any other, because the
+ * record cites every work its prose names. An editorial correction in square
+ * brackets is read through ("Sickman[n]" names Sickmann, "[Scarborough]"
+ * Scarborough), and a personal communication is not a citation of a work.
  *
  * @param text - The prose.
  * @returns The citations found, without duplicates.
  */
 export function narrativeCitations(text: string): Array<NarrativeCitation>
 {
-    const prose = text.replace(/"[^"]*"/g, " ");
+    const prose = text
+        .replace(/(?<=\p{L})\[(\p{Ll}+)\]/gu, "$1")
+        .replace(/\[(\p{Lu}[\p{L}'’-]*)\]/gu, "$1");
     const found = new Map<string, NarrativeCitation>();
     const add = (name: string, year: string, letter: string | null): void =>
     {
@@ -993,8 +998,9 @@ export function narrativeCitations(text: string): Array<NarrativeCitation>
         }
 
         const lead = notCitationNames.has(name) && partner ? partner : name;
+        const years = inside.split(/\b(?:p|pp|fig|figs|pl|pls)\.\s/)[0];
 
-        for (const yearMatch of inside.matchAll(/(?<![\d.])(1[6-9]\d\d|20[0-3]\d)([a-z])?(?![\d\p{L}])/gu))
+        for (const yearMatch of years.matchAll(/(?<![\d.])(1[6-9]\d\d|20[0-3]\d)([a-z])?(?![\d\p{L}])/gu))
         {
             add(lead, yearMatch[1], yearMatch[2] ?? null);
         }
@@ -1035,30 +1041,54 @@ function foldSurname(text: string): string
  * `gradziński`), and the year matches the entry's year or the key's. A
  * citation that gives a letter after the key's year names that key's letter
  * only; one matched through the entry's year, where the key was dated
- * differently, is not held to the key's letter.
+ * differently, is not held to the key's letter. A citation also matches any
+ * of the entry's `also_cited_as` forms, each form's missing author or year
+ * taken from the key's.
  *
  * @param citation - The citation.
  * @param id - The reference id.
- * @param storeYear - The store entry's `year`, when the store holds the id.
+ * @param entry - The store entry, when the store holds the id.
  * @returns True when the id can be the cited work.
  */
-export function citationMatchesId(citation: NarrativeCitation, id: string, storeYear: string | null): boolean
+export function citationMatchesId(citation: NarrativeCitation, id: string, entry: Reference | undefined): boolean
 {
     const keyMatch = /^(.*?)(\d{4})([a-z])$/u.exec(id);
 
-    if (keyMatch === null || (citation.year !== keyMatch[2] && citation.year !== storeYear))
-    {
-        return false;
-    }
-    else if (citation.letter !== null && citation.year === keyMatch[2] && citation.letter !== keyMatch[3])
+    if (keyMatch === null)
     {
         return false;
     }
 
-    const stem = foldSurname(keyMatch[1]);
     const words = [citation.surname, ...citation.surname.split(/[\s,]+/)].map(foldSurname);
 
-    return words.some((word) => word.length > 1 && (stem === word || (word.length >= 4 && stem.endsWith(word))));
+    /**
+     * Tells whether the citation's surname names an author stem.
+     *
+     * @param stem - The folded surname to look for.
+     * @returns True when one of the citation's words is that surname.
+     */
+    const namesStem = (stem: string): boolean => words.some((word) => word.length > 1 && (stem === word || (word.length >= 4 && stem.endsWith(word))));
+
+    const keyStem = foldSurname(keyMatch[1]);
+    const storeYear = entry?.year === undefined ? null : String(entry.year);
+
+    if (citation.year === keyMatch[2] || citation.year === storeYear)
+    {
+        const letterFits = citation.letter === null || citation.year !== keyMatch[2] || citation.letter === keyMatch[3];
+
+        if (letterFits && namesStem(keyStem))
+        {
+            return true;
+        }
+    }
+
+    return (entry?.also_cited_as ?? []).some((form) =>
+    {
+        const formYear = form.year === undefined ? null : String(form.year);
+        const yearFits = formYear === null ? citation.year === keyMatch[2] || citation.year === storeYear : citation.year === formYear;
+
+        return yearFits && namesStem(form.author === undefined ? keyStem : foldSurname(form.author));
+    });
 }
 
 /**
