@@ -1,5 +1,20 @@
 # Cerro Fortaleza
 
+## What stages do the Cerro Fortaleza taxa take?
+
+*2026-10-13*
+
+**Conclusion.** Campanian and Maastrichtian. The describing papers date the horizons early Maastrichtian under the older name Pari Aike Formation, and the Cerro Fortaleza, under which the records place the beds, carries a Campanian reading from detrital-zircon maximum ages; together they make the unit's range, as for [*Austrocheirus*](../../genera/A/Austrocheirus.md). The Campanian alone read the maximum ages as an age. Governs `stage: [Campanian, Maastrichtian]` on [*Orkoraptor burkei*](../../../genera/O/Orkoraptor.yml) and [*Puertasaurus reuili*](../../../genera/P/Puertasaurus.yml).
+
+**Evidence.**
+- novas2005b, Locality and Horizon: "Cerro Los Hornos, La Leona, Santa Cruz Province, Argentina. Pari Aike Formation, early Maastrichtian (Kraemer & Riccardi, 1997; Novas et al., 2004a)."
+- novas2008b, Abstract: *Orkoraptor burkei* is "from the Upper Cretaceous (Maastrichtian) Pari Aike Formation of southern Patagonia".
+
+**Ruled out.**
+- *Campanian alone.* Maximum depositional ages are limits, not ages.
+
+**Open.** Nothing.
+
 ## What stage do the Cerro Los Hornos holotypes take?
 
 *2026-08-05*
@@ -20,6 +35,8 @@
 
 ## References
 
+- `novas2005b`: Novas, F.; Salgado, L.; Calvo, J.; Agnolin, F. (2005). Giant titanosaur (Dinosauria, Sauropoda) from the Late Cretaceous of Patagonia. *Revista del Museo Argentino de Ciencias Naturales* 7: 31-36. doi:10.22179/revmacn.7.340
+- `novas2008b`: Novas, F. E.; Ezcurra, M. D.; Lecuona, A. (2008). Orkoraptor burkei nov. gen. et sp., a large theropod from the Maastrichtian Pari Aike Formation, Southern Patagonia, Argentina. *Cretaceous Research* 29(3): 468-480. doi:10.1016/j.cretres.2008.01.001
 - `aranciagarolando2022a`: Aranciaga Rolando, A. M.; Motta, M. J.; Agnolín, F. L.; Manabe, M.; Tsuihiji, T.; Novas, F. E. (2022). A large Megaraptoridae (Theropoda: Coelurosauria) from Upper Cretaceous (Maastrichtian) of Patagonia, Argentina. *Scientific Reports* 12(1). doi:10.1038/s41598-022-09272-z
 - `santucci2022a`: Santucci, R. M.; Filippi, L. S. (2022). Last titans: Titanosaurs from the Campanian–Maastrichtian age. In *South American Sauropodomorph Dinosaurs: Record, Diversity and Evolution*, pp. 341-391. Springer International Publishing. doi:10.1007/978-3-030-95959-3_10
 - `novas2019a`: Novas, F.; Agnolin, F.; Rozadilla, S.; Aranciaga-Rolando, A.; Brissón Egli, F.; Motta, M.; Cerroni, M.; Ezcurra, M.; Martinelli, A.; D´Angelo, J.; Álvarez-Herrera, G.; Gentil, A.; Bogan, S.; Chimento, N.; García Marsà, J. A.; Lo Coco, G.; Miquel, S.; Brito, F.; Vera, E.; Loinaze, V.; Fernandez, M.; Salgado, L. (2019). Paleontological discoveries in the Chorrillo Formation (upper Campanian-lower Maastrichtian, Upper Cretaceous), Santa Cruz Province, Patagonia, Argentina. *Revista del Museo Argentino de Ciencias Naturales* 21: 217-293. doi:10.22179/revmacn.21.655
@@ -28,5 +45,3 @@
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.
 - `varela2012a`: Varela, A. N.; Poiré, D. G.; Martin, T.; Gerdes, A.; Goin, F. J.; Gelfo, J. N.; Hoffmann, S. (2012). U-Pb zircon constraints on the age of the Cretaceous Mata Amarilla Formation, Southern Patagonia, Argentina: its relationship with the evolution of the Austral Basin. *Andean Geology* 39(3). doi:10.5027/andgeoV39n3-a01
 - `novas2013a`: Novas, F. E.; Agnolín, F. L.; Ezcurra, M. D.; Porfiri, J.; Canale, J. I. (2013). Evolution of the carnivorous dinosaurs during the Cretaceous: The evidence from Patagonia. *Cretaceous Research* 45: 174-215.
-- `novas2005b`: Novas, F.; Salgado, L.; Calvo, J.; Agnolin, F. (2005). Giant titanosaur (Dinosauria, Sauropoda) from the Late Cretaceous of Patagonia. *Revista del Museo Argentino de Ciencias Naturales* 7: 31-36. doi:10.22179/revmacn.7.340
-- `novas2008b`: Novas, F. E.; Ezcurra, M. D.; Lecuona, A. (2008). Orkoraptor burkei nov. gen. et sp., a large theropod from the Maastrichtian Pari Aike Formation, Southern Patagonia, Argentina. *Cretaceous Research* 29(3): 468-480. doi:10.1016/j.cretres.2008.01.001

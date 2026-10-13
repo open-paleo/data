@@ -1,5 +1,39 @@
 # NHMUK catalogue prefixes
 
+## Does the *Pelorosaurus* humerus take a register letter?
+
+*2026-10-13*
+
+**Conclusion.** No, as for the *Ornithopsis* lectotype in the entry below. The works that discuss the humerus print the number bare; the one letter in print is a single table cell. Governs `specimen_id: [NHMUK PV 28626]` on the humerus in [*Pelorosaurus*](../../genera/P/Pelorosaurus.yml)'s notable specimens.
+
+**Evidence.**
+- ostrom1970a and white1973a: "BMNH 28626".
+- upchurch2015a: "NHMUK 28626", four times, in a paper on this material.
+- jones2026b, p. 380: "NHMUK 28626—humerus".
+- mannion2011a, limb-ratio table: "*Pelorosaurus* (NHMUK R.28626)".
+
+**Ruled out.**
+- *NHMUK PV OR 28626.* No source read prints the OR.
+- *NHMUK PV R 28626.* One table cell by Mannion and colleagues (2011), against the bare number in Upchurch, Mannion and Taylor (2015), with Mannion again an author.
+
+**Open.** Nothing.
+
+## Does the *Ornithopsis hulkei* lectotype take a register letter?
+
+*2026-10-13*
+
+**Conclusion.** No. Every source read prints the number bare, and since the R, RU and OR prefixes are part of the number, a letter no source prints is not added by pattern. Governs `type_specimen.specimen_id: [NHMUK PV 28632]` on [*Ornithopsis hulkei*](../../genera/O/Ornithopsis.yml).
+
+**Evidence.**
+- hulke1879a: "No. 28632, Brit. Mus. Catal."
+- blows1995a: "BMNH 28632 is the lectotype of *Ornithopsis hulkei*".
+- jones2026b: "NHMUK 28632".
+
+**Ruled out.**
+- *NHMUK PV R 28632.* No source read prints the R.
+
+**Open.** Nothing.
+
 ## How is the *Abrictosaurus* holotype number spaced?
 
 *2026-10-13*
@@ -33,6 +67,13 @@
 
 ## References
 
+- `ostrom1970a`: Ostrom, J. H. (1970). Stratigraphy and paleontology of the Cloverly Formation (Lower Cretaceous) of the Bighorn Basin area, Wyoming and Montana. *Bulletin of the Peabody Museum of Natural History* 35: 1-234.
+- `white1973a`: White, T. E. (1973). Catalogue of the genera of dinosaurs. *Annals of Carnegie Museum* 44: 117-155. doi:10.5962/p.243870
+- `upchurch2015a`: Upchurch, P.; Mannion, P. D.; Taylor, M. P. (2015). The Anatomy and Phylogenetic Relationships of "Pelorosaurus" becklesii (Neosauropoda, Macronaria) from the Early Cretaceous of England. *PLOS ONE* 10(6): e0125819. doi:10.1371/journal.pone.0125819
+- `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.
+- `mannion2011a`: Mannion, P. D.; Upchurch, P.; Mateus, O.; Barnes, R. N.; Jones, M. E. H. (2011). New information on the anatomy and systematic position of Dinheirosaurus lourinhanensis (Sauropoda: Diplodocoidea) from the Late Jurassic of Portugal, with a review of European diplodocoids. *Journal of Systematic Palaeontology* 10(3): 521-551. doi:10.1080/14772019.2011.595432
+- `hulke1879a`: Hulke, J. W. (1879). Note (3rd) on (Eucamerotus, Hulke) Ornithopsis, H. G. Seeley, = Bothrospondylus magnus, Owen, = Chondrosteosaurus magnus, Owen. *Quarterly Journal of the Geological Society* 35(1-4): 752-762. doi:10.1144/GSL.JGS.1879.035.01-04.55
+- `blows1995a`: Blows, W. T. (1995). The Early Cretaceous brachiosaurid dinosaurs Ornithopsis and Eucamerotus from the Isle of Wight, England. *Palaeontology* 38(1): 187-197.
 - `sereno2012a`: Sereno, P. C. (2012). Taxonomy, morphology, masticatory function and phylogeny of heterodontosaurid dinosaurs. *ZooKeys* 226: 1-225. doi:10.3897/zookeys.226.2840
 - `sabaj2020a`: Sabaj, M. H. (2020). Codes for natural history collections in ichthyology and herpetology. *Copeia* 108(3): 593-669. doi:10.1643/ASIHCODONS2020
 - `butler2008b`: Butler, R. J.; Upchurch, P.; Norman, D. B. (2008). The phylogeny of the ornithischian dinosaurs. *Journal of Systematic Palaeontology* 6(1): 1-40. doi:10.1017/S1477201907002271

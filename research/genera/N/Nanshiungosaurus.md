@@ -1,5 +1,20 @@
 # *Nanshiungosaurus*
 
+## What stages does *Nanshiungosaurus brevispinus* take?
+
+*2026-10-13*
+
+**Conclusion.** The Nanxiong Formation's range, Campanian and Maastrichtian. The describing paper gives the Upper Cretaceous Nanxiong and correlates the formation as a whole, and Zanno (2010) gives the formation as Campanian/Maastrichtian; no source read dates the holotype's own horizon, and none gives the Maastrichtian alone. The earlier adjudication's "species mix-up" explains a compilation's Albian, not a Maastrichtian. Governs `stage: [Campanian, Maastrichtian]` on *Nanshiungosaurus brevispinus* in [*Nanshiungosaurus*](../../../genera/N/Nanshiungosaurus.yml).
+
+**Evidence.**
+- dong1979a: the holotype is from the "Upper Cretaceous Nanxiong Fm.", which Dong correlates "to the Senonian or Campanian" (translated).
+- zanno2010a, p. 535: "*Nanshiungosaurus brevispinus* from the Yuanpu (Nanxiong) Formation (Campanian/Maastrichtian)".
+
+**Ruled out.**
+- *Maastrichtian alone.* No source read gives it.
+
+**Open.** Nothing.
+
 ## Which formation is the *Nanshiungosaurus brevispinus* holotype from?
 
 *2026-08-06*
@@ -18,6 +33,7 @@
 ## References
 
 - `dong1979a`: Dong, Z. (1979). Dinosaurs from the Cretaceous of South China. In *Mesozoic and Cenozoic Red Beds of South China: Selected Papers from the "Cretaceous-Tertiary Workshop," Nanxiong, Guangdong Province (Institute of Vertebrate Paleontology and Paleoanthropology; Nanjing Institute of Paleontology, eds.)*, pp. 342-350. Science Press, Beijing.
+- `zanno2010a`: Zanno, L. E. (2010). A taxonomic and phylogenetic re-evaluation of Therizinosauria (Dinosauria: Maniraptora). *Journal of Systematic Palaeontology* 8(4): 503-543. doi:10.1080/14772019.2010.488045
 - `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
 - `li2007a`: Li, D.; Peng, C.; You, H.; Lamanna, M. C.; Harris, J. D.; Lacovara, K. J.; Zhang, J. (2007). A large therizinosauroid (Dinosauria: Theropoda) from the Early Cretaceous of northwestern China. *Acta Geologica Sinica (English Edition)* 81(4): 539-549. doi:10.1111/j.1755-6724.2007.tb00977.x
 - `you2014a`: You, H. L.; Li, D. Q.; Dodson, P. (2014). Gongpoquansaurus mazongshanensis (Lü, 1997) comb. nov. (Ornithischia: Hadrosauroidea) from the Early Cretaceous of Gansu Province, northwestern China. *Hadrosaurs*: 73-76.

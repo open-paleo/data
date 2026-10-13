@@ -1,5 +1,22 @@
 # Baruungoyot
 
+## What stages do the other Baruungoyot taxa take?
+
+*2026-10-13*
+
+**Conclusion.** The same rule as the entry below, applied to the rest. The two Khulsan taxa take the Campanian–Maastrichtian Napoli and colleagues (2021) give the Barun Goyot strata at Khulsan; *Natovenator*, with no statement about its horizon at Hermiin Tsav, takes the formation's range; *Ondogurvel* keeps the Campanian of its describing paper's horizon line. Alifanov and Barsbold's "?Lower Santonian" belongs to the *Ceratonykus* holotype's horizon and does not date the whole Hermiin Tsav locality. Governs `stage` on *Shri devi* in [*Shri*](../../../genera/S/Shri.yml) and on [*Parvicursor remotus*](../../../genera/P/Parvicursor.yml) (Campanian–Maastrichtian), [*Natovenator polydontus*](../../../genera/N/Natovenator.yml) (Santonian–Maastrichtian) and [*Ondogurvel alifanovi*](../../../genera/O/Ondogurvel.yml) (Campanian).
+
+**Evidence.**
+- napoli2021a, p. 3: "All that can be said with certainty is that the Barun Goyot strata at Khulsan are Campanian to Maastrichtian in age."
+- lee2022a, Locality and horizon: "Baruungoyot Formation (Upper Cretaceous), Hermiin Tsav, Omnogovi Province, Mongolia".
+- turner2021a, Abstract: "Sediments of the Barun Goyot are typically considered Upper Campanian in age", for the formation.
+- averianov2022a, Type locality and horizon: "Nemegt, Mongolia; Barungoyot Formation, Upper Cretaceous (Campanian)".
+
+**Ruled out.**
+- *Campanian for all, by count.* As in the entry below.
+
+**Open.** A horizon statement for *Natovenator*.
+
 ## What stages do the Baruungoyot taxa take?
 
 *2026-10-13*
@@ -49,8 +66,11 @@
 
 ## References
 
-- `alifanov2009a`: Alifanov, V. R.; Barsbold, R. (2009). Ceratonykus oculatus gen. et sp. nov., a new dinosaur (?Theropoda, Alvarezsauria) from the Late Cretaceous of Mongolia. *Paleontological Journal* 43(1): 94-106. doi:10.1134/s0031030109010109
 - `napoli2021a`: Napoli, J. G.; Ruebenstahl, A. A.; Bhullar, B. A. S.; Turner, A. H.; Norell, M. A. (2021). A New Dromaeosaurid (Dinosauria: Coelurosauria) from Khulsan, Central Mongolia. *American Museum Novitates* 2021(3982). doi:10.1206/3982.1
+- `lee2022a`: Lee, S.; Lee, Y. N.; Currie, P. J.; Sissons, R.; Park, J. Y.; Kim, S. H.; Barsbold, R.; Tsogtbaatar, K. (2022). A non-avian dinosaur with a streamlined body exhibits potential adaptations for swimming. *Communications Biology* 5(1). doi:10.1038/s42003-022-04119-9
+- `turner2021a`: Turner, A. H.; Montanari, S.; Norell, M. A. (2021). A New Dromaeosaurid from the Late Cretaceous Khulsan Locality of Mongolia. *American Museum Novitates* 2020(3965): 1-46. doi:10.1206/3965.1
+- `averianov2022a`: Averianov, A. O.; Lopatin, A. V. (2022). A new alvarezsaurid theropod dinosaur from the Upper Cretaceous of Gobi Desert, Mongolia. *Cretaceous Research* 135. doi:10.1016/j.cretres.2022.105168
+- `alifanov2009a`: Alifanov, V. R.; Barsbold, R. (2009). Ceratonykus oculatus gen. et sp. nov., a new dinosaur (?Theropoda, Alvarezsauria) from the Late Cretaceous of Mongolia. *Paleontological Journal* 43(1): 94-106. doi:10.1134/s0031030109010109
 - `czepiński2019a`: Czepiński, Ł. (2019). Ontogeny and variation of a protoceratopsid dinosaur Bagaceratops rozhdestvenskyi from the Late Cretaceous of the Gobi Desert. *Historical Biology* 32: 1394-1421. doi:10.1080/08912963.2019.1593404
 - `benton2000c`: Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N. (2000). Mongolian place names and stratigraphic terms. In *The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds.)*, pp. xxii-xxviii. Cambridge University Press, Cambridge.
 - `gradziński1974a`: Gradziński, R.; Jerzykiewicz, T. (1974). Sedimentation of the Barun Goyot Formation. *Palaeontologia Polonica* 30: 111-146.
@@ -58,7 +78,6 @@
 - `gradziński1977a`: Gradziński, R.; Kielan-Jaworowska, Z.; Maryańska, T. (1977). Upper Cretaceous Djadokhta, Barun Goyot and Nemegt formations of Mongolia, including remarks on previous subdivisions. *Acta Geologica Polonica* 27(3): 281-318.
 - `jerzykiewicz1991a`: Jerzykiewicz, T.; Russell, D. A. (1991). Late Mesozoic stratigraphy and vertebrates of the Gobi Basin. *Cretaceous Research* 12(4): 345-377. doi:10.1016/0195-6671(91)90015-5
 - `penkalski2026a`: Penkalski, P. (2026). The morphology and systematics of Pinacosaurus. *Historical Biology*: 1-42. doi:10.1080/08912963.2026.2633178
-- `averianov2022a`: Averianov, A. O.; Lopatin, A. V. (2022). A new alvarezsaurid theropod dinosaur from the Upper Cretaceous of Gobi Desert, Mongolia. *Cretaceous Research* 135. doi:10.1016/j.cretres.2022.105168
 - `averianov2021d`: Averianov, A. O.; Lopatin, A. V. (2021). A re-appraisal of Parvicursor remotus from the Late Cretaceous of Mongolia: implications for the phylogeny and taxonomy of alvarezsaurid theropod dinosaurs. *Journal of Systematic Palaeontology* 19(16): 1097-1128. doi:10.1080/14772019.2021.2013965
 - `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
 - `fowler2020b`: Fowler, D. W.; Wilson, J. P.; Freedman Fowler, E. A.; Noto, C. R.; Anduza, D.; Horner, J. R. (2020). Trierarchuncus prairiensis gen. et sp. nov., the last alvarezsaurid: Hell Creek Formation (uppermost Maastrichtian), Montana. *Cretaceous Research* 116. doi:10.1016/j.cretres.2020.104560
