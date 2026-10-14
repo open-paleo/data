@@ -1,5 +1,21 @@
 # *Gigantoscelus*
 
+## What age does *Gigantoscelus* take?
+
+*2026-10-13*
+
+**Conclusion.** The Bushveld Sandstone's epochs, Late Triassic and Early Jurassic, with no stage. The record's Hettangian–Sinemurian followed the unit's correlation with the Clarens Formation, the route by which *Massospondylus* is dated, while Haughton (1924) ties this femur's type to the base of the Red Beds, the lower Elliot. Neither correlation dates the bed, as the [Bushveld Sandstone](../../stratigraphy/b/bushveld-sandstone.md) note records, so the horizon takes the unit's range. Governs `period: [Late Triassic, Early Jurassic]` and the absent `stage` on [*Gigantoscelus molengraaffi*](../../../genera/G/Gigantoscelus.yml).
+
+**Evidence.**
+- haughton1924a, p. 427: "it is of a type that occurs apparently only near the base of the Red Beds in the Cape Province".
+- weishampel2004a, p. 528: the Bushveld Sandstone row that includes *Gigantoscelus*, "Age: late Carnian or early Norian (?= Lower Elliot Formation; Kitching, pers. comm.)".
+
+**Ruled out.**
+- *Hettangian to Sinemurian.* It follows the Clarens correlation, which no cited source applies to this bed, against the one statement about this femur.
+- *Late Carnian or early Norian.* A compilation row resting on a personal communication and on the Elliot correlation.
+
+**Open.** Which correlation holds for the Bushveld Sandstone.
+
 ## What is the Gigantoscelus holotype?
 
 *2026-10-04*
@@ -35,9 +51,10 @@
 
 ## References
 
+- `haughton1924a`: Haughton, S. H. (1924). The fauna and stratigraphy of the Stormberg Series. *Annals of the South African Museum* 12: 323-497.
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
 - `vanheerden1979a`: Van Heerden, J. (1979). The morphology and taxonomy of Euskelosaurus (Reptilia: Saurischia; Late Triassic) from South Africa. *Navorsinge van die Nasionale Museum* 4: 21-84.
 - `vanhoepen1916a`: Van Hoepen, E. C. N. (1916). De ouderdom der Transvaalsche Karroolagen [The age of the Transvaal Karoo beds]. *Verhandelingen van het Geologisch-Mijnbouwkundig Genootschap voor Nederland en Koloniën. Geologische Serie* 3: 107-117.
 - `sabaj2020a`: Sabaj, M. H. (2020). Codes for natural history collections in ichthyology and herpetology. *Copeia* 108(3): 593-669. doi:10.1643/ASIHCODONS2020
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.
 - `molina-pérez2020a`: Molina-Pérez, R.; Larramendi, A. (2020). Dinosaur Facts and Figures: The Sauropods and Other Sauropodomorphs. Princeton University Press.
-- `haughton1924a`: Haughton, S. H. (1924). The fauna and stratigraphy of the Stormberg Series. *Annals of the South African Museum* 12: 323-497.

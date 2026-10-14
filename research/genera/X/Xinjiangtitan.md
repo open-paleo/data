@@ -1,5 +1,21 @@
 # *Xinjiangtitan*
 
+## What stages does *Xinjiangtitan* take?
+
+*2026-10-13*
+
+**Conclusion.** Callovian and Oxfordian, on Maisch and Matzke's (2019) hedged reading of this horizon, the only primary statement that gives it stages. Every other stage on offer dates the Junggar Basin Qigu, whose correlation with the Turpan Basin beds the sources doubt, or comes from a compilation. Supersedes the Open lines of the two entries below. Governs `period` and `stage: [Callovian, Oxfordian]` on [*Xinjiangtitan shanshanesis*](../../../genera/X/Xinjiangtitan.yml).
+
+**Evidence.**
+- maisch2019a, p. 115: "As far as stratigraphic comparisons can be made, bearing the insecurities of dating and correlation, particularly in the Turpan Basin, in mind, *Xinjiangtitan* appears to be the oldest form (Callovian or Oxfordian)."
+- upchurch2021a: "there is currently no explicit evidence that the putative outcrops of the Qigu Formation in the Turpan Basin correlate with those in the Junggar Basin".
+
+**Ruled out.**
+- *Callovian alone.* It rests on compilations (jones2026b).
+- *A Junggar date.* Wu and colleagues' (2013) 164.6 Ma tuff and the 151 Ma that Zhang and colleagues (2022) relay are Junggar Basin values; the second is also a maximum depositional age.
+
+**Open.** The Qigu Formation's own stages, which would have to cover the Junggar and Turpan beds under one name.
+
 ## Do Upchurch and colleagues (2021) give the Qiketai for *Xinjiangtitan*?
 
 *2026-10-10*
@@ -34,8 +50,9 @@
 
 ## References
 
+- `maisch2019a`: Maisch, M. W.; Matzke, A. T. (2019). First record of a eusauropod (Dinosauria; Sauropoda) from the Upper Jurassic Qigu-Formation (southern Junggar Basin, China), and a reconsideration of Late Jurassic sauropod diversity in Xinjiang.
 - `upchurch2021a`: Upchurch, P.; Mannion, P. D.; Xu, X.; Barrett, P. M. (2021). Re-assessment of the Late Jurassic eusauropod dinosaur Hudiesaurus sinojapanorum Dong, 1997, from the Turpan Basin, China, and the evolution of hyper-robust antebrachia in sauropods. *Journal of Vertebrate Paleontology* 41(4). doi:10.1080/02724634.2021.1994414
+- `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.
 - `wu2013a`: Wu, W. H.; Zhou, C. F.; Wings, O.; Sekiya, T.; Dong, Z. M. (2013). A new gigantic sauropod dinosaur from the Middle Jurassic of Shanshan, Xinjiang. *Global Geology* 32(3): 437-446. doi:10.3969/j.issn.1004-5589.2013.03.002
 - `zhang2018b`: Zhang, X. Q.; Li, D. Q.; Xie, Y.; You, H. L. (2018). Redescription of the cervical vertebrae of the Mamenchisaurid Sauropod Xinjiangtitan shanshanesis Wu et al. 2013. *Historical Biology*. doi:10.1080/08912963.2018.1539970
 - `zhang2022a`: Zhang, X. Q.; Li, N.; Xie, Y.; Li, D. Q.; You, H. L. (2022). Redescription of the dorsal vertebrae of the mamenchisaurid sauropod Xinjiangtitan shanshanesis Wu et al. 2013. *Historical Biology* 36(1): 49-75. doi:10.1080/08912963.2022.2147428
-- `maisch2019a`: Maisch, M. W.; Matzke, A. T. (2019). First record of a eusauropod (Dinosauria; Sauropoda) from the Upper Jurassic Qigu-Formation (southern Junggar Basin, China), and a reconsideration of Late Jurassic sauropod diversity in Xinjiang.
