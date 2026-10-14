@@ -122,6 +122,20 @@ Clade authorities are recorded as `erected_in` (the nomenclatural-act paper)
 and, where different, `described_in` (the authoritative diagnostic source), both
 taken from the literature rather than from a taxobox.
 
+- **Family-group names follow coordination.** For a superfamily, family,
+  subfamily or tribe, `erected_in` is the paper that first established the name
+  at any of those ranks: Stromer's Spinosauridae is the authority for
+  Spinosaurinae, and Powell's Saltasaurinae for Saltasauridae and
+  Saltasauroidea. An unranked clade has no coordination; its `erected_in` must
+  use the name itself.
+- **A corrected misspelling credits the correction.** When a name was later
+  corrected to its current spelling, `erected_in` is the paper that published
+  that spelling, and the original spelling is listed under `synonyms`.
+- **`described_in` gives a definition or a diagnosis.** It points to a paper
+  that defines the clade or diagnoses it. A paper that only recovers the clade,
+  tests its membership or applies a definition published elsewhere does not
+  qualify; without a qualifying paper, leave `described_in` out.
+
 ## Neutrality and Good Faith
 
 - **No nomenclatural advocacy.** This project records the state of published taxonomy — it does not take sides in naming disputes. Do not use contributions to promote or suppress a particular name, author, or taxonomic opinion. If you have a personal stake in a naming dispute, disclose it.
