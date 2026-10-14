@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-10-13T23:21:00.786Z
+  built_at: 2026-10-14T05:12:47.935Z
   clade_count: 188
   genus_count: 1425
   license: CC-BY-4.0
@@ -21329,13 +21329,6 @@ genera:
         period:
           name:
             - Middle Jurassic
-          stage:
-            - Aalenian
-            - Bajocian
-            - Bathonian
-            - Callovian
-          from_ma: 174.7
-          to_ma: 161.5
         location:
           country: CN
           locality: Jimushan
@@ -27710,6 +27703,15 @@ genera:
         period:
           name:
             - Late Jurassic
+            - Early Cretaceous
+          stage:
+            - Oxfordian
+            - Kimmeridgian
+            - Tithonian
+            - Berriasian
+          resolution: unit
+          from_ma: 161.5
+          to_ma: 137.05
         location:
           country: US
           region: Colorado
@@ -54680,18 +54682,21 @@ genera:
           name:
             - Early Cretaceous
           stage:
+            - Barremian
             - Aptian
-          from_ma: 121.4
+          from_ma: 125.77
           to_ma: 113.2
         location:
           country: CN
           locality: Pigeon Hill
           region: Inner Mongolia
           formation: Longjiang
+          part: upper
           coordinates:
             - 48.661322
             - 123.878097
           region_code: CN-NM
+          part_of: formation
         type_specimen:
           specimen_id:
             - IMMNH-PV00731
@@ -54735,6 +54740,25 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
         notes: Source of the hip height estimate.
+      - id: wang2023a
+        authors: Wang, X.; Cau, A.; Wang, Z.; Yu, K.; Wu, W.; Wang, Y.; Liu, Y.
+        year: 2023
+        title: A new theropod dinosaur from the Lower Cretaceous Longjiang Formation of Inner Mongolia (China)
+        journal: Cretaceous Research
+        publisher: Elsevier BV
+        volume: "151"
+        doi: 10.1016/j.cretres.2023.105605
+        notes: Relays the Pigeon Hill tuff age of about 121 Ma.
+      - id: wang2019d
+        authors: Wang, X.; Ju, S.; Wang, Y.
+        year: 2019
+        title: First zircon U-Pb ages of the Pigeon Hill fossil locality of the Jehol Biota in the Greater Khingan Mountains, Inner Mongolia
+        journal: Acta Geologica Sinica (English Edition)
+        volume: "93"
+        issue: "4"
+        pages: 1142-1145
+        doi: 10.1111/1755-6724.14348
+        notes: Dates the tuff of the Pigeon Hill fossil-bearing bed at 121.23 ± 0.74 Ma by zircon U-Pb.
     taxonomy:
       - Life
       - Animalia
@@ -74776,7 +74800,7 @@ genera:
     pronunciation:
       phonetic: jy-GAN-to-SEE-lus
     etymology: giant shin
-    description: Gigantoscelus is a dubious genus of basal sauropodomorph dinosaur from the Early Jurassic of South Africa.
+    description: Gigantoscelus is a dubious genus of basal sauropodomorph dinosaur from the Late Triassic or Early Jurassic of South Africa.
     dispute:
       summary: |
         Gigantoscelus molengraaffi is a nomen dubium based on a fragmentary femur from southern Africa (Galton and Upchurch, 2004).
@@ -74807,12 +74831,8 @@ genera:
         type_species: true
         period:
           name:
+            - Late Triassic
             - Early Jurassic
-          stage:
-            - Hettangian
-            - Sinemurian
-          from_ma: 201.4
-          to_ma: 192.9
         location:
           country: ZA
           region: Limpopo
@@ -83679,13 +83699,6 @@ genera:
         period:
           name:
             - Middle Jurassic
-          stage:
-            - Aalenian
-            - Bajocian
-            - Bathonian
-            - Callovian
-          from_ma: 174.7
-          to_ma: 161.5
         location:
           country: CN
           locality: Jimushan
@@ -114766,18 +114779,21 @@ genera:
           name:
             - Early Cretaceous
           stage:
+            - Barremian
             - Aptian
-          from_ma: 121.4
+          from_ma: 125.77
           to_ma: 113.2
         location:
           country: CN
           locality: Pigeon Hill
           region: Inner Mongolia
           formation: Longjiang
+          part: upper
           coordinates:
             - 48.661322
             - 123.878097
           region_code: CN-NM
+          part_of: formation
         type_specimen:
           specimen_id:
             - LY 2022JZ3001
@@ -114814,6 +114830,16 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
         notes: Source of the body length, mass, and hip height estimates, and the appearance features.
+      - id: wang2019d
+        authors: Wang, X.; Ju, S.; Wang, Y.
+        year: 2019
+        title: First zircon U-Pb ages of the Pigeon Hill fossil locality of the Jehol Biota in the Greater Khingan Mountains, Inner Mongolia
+        journal: Acta Geologica Sinica (English Edition)
+        volume: "93"
+        issue: "4"
+        pages: 1142-1145
+        doi: 10.1111/1755-6724.14348
+        notes: Dates the tuff of the Pigeon Hill fossil-bearing bed at 121.23 ± 0.74 Ma by zircon U-Pb.
     taxonomy:
       - Life
       - Animalia
@@ -141162,9 +141188,13 @@ genera:
           name:
             - Early Cretaceous
           stage:
+            - Berriasian
+            - Valanginian
+            - Hauterivian
+            - Barremian
             - Aptian
             - Albian
-          from_ma: 121.4
+          from_ma: 143.1
           to_ma: 100.5
         location:
           country: MN
@@ -143037,9 +143067,10 @@ genera:
           name:
             - Late Cretaceous
           stage:
+            - Santonian
             - Campanian
             - Maastrichtian
-          from_ma: 83.6
+          from_ma: 85.7
           to_ma: 66
         location:
           country: CN
@@ -149023,8 +149054,9 @@ genera:
           name:
             - Early Jurassic
           stage:
+            - Pliensbachian
             - Toarcian
-          from_ma: 184.2
+          from_ma: 192.9
           to_ma: 174.7
         location:
           country: CN
@@ -149081,6 +149113,16 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
         notes: Source of the body length, mass, and hip height estimates.
+      - id: yao2025a
+        authors: Yao, X.; Zhao, Q.; Ren, T.; Wei, G.; Xu, X.
+        year: 2025
+        title: New evidence for the earliest ornithischian dinosaurs from Asia
+        journal: iScience
+        publisher: Elsevier BV
+        volume: "28"
+        issue: "1"
+        doi: 10.1016/j.isci.2024.111641
+        notes: Dates the Dongyuemiao Member below the Maanshan to the late Sinemurian to early Pliensbachian and the Da'anzhai above it to the Toarcian.
     taxonomy:
       - Life
       - Animalia
@@ -172712,7 +172754,7 @@ genera:
     etymology: Named for the town of Tong'an in Sichuan Province, China, near where it was found, plus Greek sauros ('lizard')
     pronunciation:
       phonetic: toon-GAH-no-SOR-us
-    description: Tonganosaurus is a genus of mamenchisaurid sauropod dinosaur, similar to Omeisaurus. It is known from one specimen consisting of twenty vertebrae, a front limb and pectoral girdle, and a complete hind limb with partial hip. It was discovered in the Yimen Formation, China. The horizon of the specimen and the age of the Yimen Formation is controversial. The formation has been divided into three levels, and Tonganosaurus appears to be of late Early Jurassic (Pliensbachian) in age. Tonganosaurus is the oldest known member of the mamenchisaurids, being almost 15 million years older than the next-oldest members of the group. It was first named by Li Kui, Yang Chun-Yan, Liu Jian, and Wang Zheng-Xin in 2010, and the type species is Tonganosaurus hei.
+    description: Tonganosaurus is a genus of mamenchisaurid sauropod dinosaur, similar to Omeisaurus. It is known from one specimen consisting of twenty vertebrae, a front limb and pectoral girdle, and a complete hind limb with partial hip. It was discovered in the Yimen Formation, China. The horizon of the specimen and the age of the Yimen Formation is controversial. The formation has been divided into three levels, and Tonganosaurus comes from its middle to upper part. Tonganosaurus is the oldest known member of the mamenchisaurids, being almost 15 million years older than the next-oldest members of the group. It was first named by Li Kui, Yang Chun-Yan, Liu Jian, and Wang Zheng-Xin in 2010, and the type species is Tonganosaurus hei.
     diet: herbivore
     locomotion: quadrupedal
     paleoenvironment:
@@ -172747,13 +172789,6 @@ genera:
         period:
           name:
             - Early Jurassic
-          stage:
-            - Hettangian
-            - Sinemurian
-            - Pliensbachian
-            - Toarcian
-          from_ma: 201.4
-          to_ma: 174.7
         location:
           country: CN
           locality: Tong'an
@@ -185329,10 +185364,12 @@ genera:
         period:
           name:
             - Middle Jurassic
+            - Late Jurassic
           stage:
             - Callovian
+            - Oxfordian
           from_ma: 165.3
-          to_ma: 161.5
+          to_ma: 154.8
         location:
           country: CN
           locality: about 8 km south of Qiketai Town
