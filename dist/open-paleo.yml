@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-10-14T05:12:47.935Z
+  built_at: 2026-10-14T16:47:18.339Z
   clade_count: 188
-  genus_count: 1425
+  genus_count: 1426
   license: CC-BY-4.0
   schema_version: 2.0.0
   version: "2026.10"
@@ -88313,6 +88313,88 @@ genera:
       - Nodosauridae
     authors: McDonald, A. T.; Wolfe, D. G.
     described: 2018
+  Invictibellatrix:
+    genus: Invictibellatrix
+    parent: Megaraptora
+    etymology: From Latin 'invictus' (unconquered) and 'bellatrix' (female warrior), honoring the later role of megaraptorans as apex predators in Gondwana.
+    description: Invictibellatrix is an extinct genus of megaraptoran theropod dinosaur known from the Early Cretaceous (Barremian age) Wessex Formation of England. The genus contains a single species, Invictibellatrix amberina, known from a single braincase. Invictibellatrix is estimated to have a body mass between 200–300 kg (440–660 lb) and a body length of around 4 m (13 ft).
+    diet: carnivore
+    locomotion: bipedal
+    paleoenvironment:
+      - fluvial
+    diagnostic_features:
+      - Small basipterygoid recess anterior to the anterior tympanic recess on each side of the parabasisphenoid
+      - Slightly transversely compressed, hourglass-shaped nuchal crest
+      - Two large, deep, dorsoventrally elongate paracondylar recesses on the ventrolateral sides of the basioccipital
+      - Parasagittal nuchal crest recesses that are slightly curved and pronounced
+    appearance:
+      integument: unknown
+    identifiers:
+      - source: wikidata
+        id: Q141728276
+    species:
+      - name: Invictibellatrix amberina
+        etymology: Named for the amber in the plant debris beds of the Wessex Formation.
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Early Cretaceous
+          stage:
+            - Barremian
+          from_ma: 125.77
+          to_ma: 121.4
+        location:
+          country: GB
+          region: Isle of Wight
+          formation: Wessex
+          locality: Sudmoor Point
+          notes: The exact horizon was not recorded; the lower plant debris beds L1 to L5, which crop out at Sudmoor Point, are the most likely source.
+          region_code: GB-IOW
+        size:
+          weight_kg:
+            min: 200
+            max: 300
+        type_specimen:
+          specimen_id:
+            - NHMUK PV R6775
+          specimen_type: holotype
+          institution: Natural History Museum
+          material: Partial braincase, beach-rolled, preserving the basioccipital, exoccipitals, basisphenoid, parasphenoid, opisthotic, prootic and possible laterosphenoid fragments; everything anterior to the laterosphenoids and most of the skull roof is missing.
+        erected_in: morrison2026a
+        authors: Morrison, C.; Scherer, C. R.; Mannion, P.; Porro, L. B.; Clark, B.; Folkes, D. D.; Barrett, P. M.
+        described: 2026
+    references:
+      - id: morrison2026a
+        authors: Morrison, C.; Scherer, C. R.; Mannion, P.; Porro, L. B.; Clark, B.; Folkes, D. D.; Barrett, P. M.
+        year: 2026
+        title: A new megaraptoran dinosaur from the Lower Cretaceous Wessex Formation, UK, and its implications for theropod evolution and biogeography
+        journal: Royal Society Open Science
+        publisher: The Royal Society
+        volume: "13"
+        issue: "10"
+        article_number: "260937"
+        doi: 10.1098/rsos.260937
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Avetheropoda
+      - Coelurosauria
+      - Megaraptora
+    authors: Morrison, C.; Scherer, C. R.; Mannion, P.; Porro, L. B.; Clark, B.; Folkes, D. D.; Barrett, P. M.
+    described: 2026
   Irisosaurus:
     genus: Irisosaurus
     parent: Sauropodiformes
