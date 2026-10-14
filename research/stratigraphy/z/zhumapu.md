@@ -25,7 +25,7 @@
 
 **Evidence.**
 - xi2021a: "the Zuoyun and Zhumapu formations (the latter was once called the Huiquanpu Formation in Yuanyang, Hebei)"; the place is Yangyuan.
-- pang2024a, p. 52: "灰泉堡组（相当山西的助马保组）" [the Huiquanpu Formation (equivalent to the Zhumapu Formation of Shanxi)], which "按其岩性可明显地分为两段" [divides clearly into two members by lithology], the lower one "与下伏太古宇集宁群或中元古代长城系高于庄组呈不整合接触" [unconformable on the Archean Jining Group or the Mesoproterozoic Gaoyuzhuang Formation of the Changcheng System].
+- pang2024a, p. 52: "灰泉堡组（相当山西的助马堡组）" [the Huiquanpu Formation (equivalent to the Zhumapu Formation of Shanxi)], which "按其岩性可明显地分为两段" [divides clearly into two members by lithology], the lower one "与下伏太古宇集宁群或中元古代长城系高于庄组呈不整合接触" [unconformable on the Archean Jining Group or the Mesoproterozoic Gaoyuzhuang Formation of the Changcheng System].
 - yao1989a, p. 74: the Zhumapu is "厚度约455m" [about 455 m thick], named at Zhumapu, Datong; p. 77: it "整合覆于下白垩统左云组之上" [lies conformably on the Lower Cretaceous Zuoyun Formation].
 - yao1989a, p. 77: "下白垩统左云组一段、二段可与下白垩统土井子组一段、二段对比……因此很有可能相当上白垩统助马堡组的地层在该地区缺失或未见顶" [Members 1 and 2 of the Lower Cretaceous Zuoyun Formation correlate with Members 1 and 2 of the Lower Cretaceous Tujingzi Formation … so strata equivalent to the Upper Cretaceous Zhumapu Formation are very probably absent in that area, or their top is not seen]; against pang2024a, p. 53: "土井子组（相当灰泉堡组）" [the Tujingzi Formation (equivalent to the Huiquanpu Formation)].
 
