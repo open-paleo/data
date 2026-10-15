@@ -1,0 +1,64 @@
+genus: Yuezhuornis
+parent: Avialae
+etymology: '"Yuezhuo" (Mandarin), a Chinese mythological bird, + "ornis" (Greek),
+  bird'
+description: Yuezhuornis is an extinct genus of early-diverging avialan known
+  from the Late Jurassic Nanyuan Formation of China. The genus contains a single
+  species, Yuezhuornis yangyuanensis, known from an incomplete, partially
+  articulated skeleton. Based on its short forelimbs and limb proportions,
+  Yuezhuornis is thought to have lived on the ground and been unable to fly.
+locomotion: bipedal
+diagnostic_features:
+  - Maxillary teeth serrated distally and not constricted below the crowns
+    (possible autapomorphy)
+  - Slender jugal with a reduced quadratojugal process and a blunt-ended
+    postorbital process (possible autapomorphy)
+  - Penultimate manual phalanges with enlarged ventral heels proximally
+    (possible autapomorphy)
+  - Forelimb one-third shorter than the hind limb, with the humerus shorter than
+    the femur
+  - Trapezoidal coracoid with an anterior surface sculpted by numerous pits
+  - Metatarsals II-IV not ginglymoid; pedal phalanx II-1 (or II-2) with a
+    dorsally placed collateral ligament fossa and a large proximoventral heel
+species:
+  - name: Yuezhuornis yangyuanensis
+    etymology: '"yangyuan" (Mandarin), for Yangyuan Village, where the holotype
+      was found'
+    status: valid
+    type_species: true
+    period:
+      name:
+        - Late Jurassic
+      stage:
+        - Kimmeridgian
+    location:
+      country: CN
+      locality: near Yangyuan Village, Zhenghe
+      region: CN-FJ
+      formation: Nanyuan
+      part: lower
+      notes: >
+        Xu and colleagues (2026) correlate the horizon with the layers that
+        yielded Fujianvenator, which Xu and colleagues (2023) date with
+        zircon ages of 150.2 ± 1.1 Ma and 149.9 ± 1.1 Ma, both Kimmeridgian
+        on the ICS chart v2024/12 at their central values; the "Tithonian
+        stage" both papers give belongs to an older chart.
+    type_specimen:
+      specimen_id:
+        - IVPP V34427
+      specimen_type: holotype
+      institution: IVPP
+      material: Incomplete, partially articulated skeleton of a subadult or
+        adult, including the skull, cervical, dorsal and 17 caudal vertebrae,
+        ribs, gastralia, furcula, coracoids, forelimbs, ilia, pubes, hind limbs
+        and pedal phalanges
+    size:
+      weight_kg:
+        min: 0.821
+        max: 0.821
+    erected_in: xu2026b
+references:
+  - id: xu2026b
+  - id: xu2023a
+    notes: Dates the fossil-bearing layers of the lower Nanyuan Formation that
+      the describing paper correlates with the holotype's horizon.
