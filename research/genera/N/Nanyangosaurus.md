@@ -7,8 +7,8 @@
 **Conclusion.** The Xiaguan Formation's range, Turonian to Campanian. No source read dates the holotype's horizon on its own evidence: the paper that defines the formation dates it as a whole and says its lower strata have yielded nothing datable, and the one Coniacian statement cites only that paper. Governs `stage: [Turonian, Coniacian, Santonian, Campanian]` on [*Nanyangosaurus zhugeii*](../../../genera/N/Nanyangosaurus.yml).
 
 **Evidence.**
-- wang2013c, Conclusions (2): the formation's age "has been assigned to the middle-to-late Turonian to the middle Campanian".
-- wang2013c, Conclusions (3): "No invertebrate fossils, charophyte plant fossils, or plant megafossils have yet been found in the lower strata of the “Xiaguan Formation.” … the search for and study of invertebrate fossils, charophyte plant fossils, and plant megafossils from the same horizon as *Youngoolithus xiaguanensis* and *Nanyangosaurus zhugeii* is especially urgent" (translated).
+- wang2013c, Conclusions (2): the formation's age "is assigned to the middle–late Turonian to the middle Campanian".
+- wang2013c, Conclusions (3): "No invertebrate fossils, charophyte fossils or plant megafossils have yet been found in the lower strata of the 'Xiaguan Formation'. … the thorough search for and study of invertebrate fossils, charophyte fossils and plant megafossils from the same horizons as *Youngoolithus xiaguanensis* and *Nanyangosaurus zhugeii* is especially urgent" (translated).
 - xing2014a, Discussion: *N. zhugeii* "was recovered from the early to middle Coniacian lower portion of the Xiaguan Formation", citing only Wang and colleagues (2013).
 
 **Ruled out.**
@@ -24,7 +24,7 @@
 **Conclusion.** The Xiaguan Formation of the Xiaguan-Gaoqiu Basin. Wang and colleagues (2013) set out the bed in a measured section of the formation and place the holotype at it. Governs `location.formation: Xiaguan` on [*Nanyangosaurus zhugeii*](../../../genera/N/Nanyangosaurus.yml).
 
 **Evidence.**
-- wang2013c, measured section, bed 4 (translated): "On the hill on the west bank of the Angou-Donggou River west of Xiaguan Town, *Nanyangosaurus zhugeii* Xu et al., 2000 was excavated, roughly corresponding to this horizon".
+- wang2013c, measured section, bed 4 (translated): "*Nanyangosaurus zhugeii* Xu et al., 2000 was excavated on the hilltop on the west bank of the river in Donggou, Angou, west of Xiaguan Town, roughly equivalent to this horizon".
 - wang2013c, English abstract: the red beds "has been called Gaogou Formation and Majiacun Formation, Sangping Formation, Xiaguan Formation"; "a stratigraphic unit 'the Xiaguan Formation' of the formation level was established".
 
 **Ruled out.**
