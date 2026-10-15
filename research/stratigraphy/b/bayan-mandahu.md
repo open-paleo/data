@@ -13,7 +13,7 @@
 - xu2013a, p. 97: "the Bayan Mandahu beds (the Wulansuhai Formation)". Xu and colleagues use this name for the beds from 2010 on and cite Jerzykiewicz and colleagues (1993) for the correlation and age, not for the name.
 
 **Ruled out.**
-- *The same rock as the Ulansuhai, stated as fact.* Earlier notes called Bayan Mandahu "the eastern outcrop of the unit entered as Ulansuhai". Only Hao and colleagues (2024) state it, citing a master's thesis (hao2024a, p. 2, after Tan 2016), and Evans and colleagues (2021) offer it as a hypothesis "based on proximity and lithology" (evans2021a). The compilations treat the two as distinct: Pittman and colleagues (2020) give the Ulansuhai at Suhongtu as Turonian and the Wulansuhai or Bayan Mandahu as Campanian (pittman2020a, pp. 156–158).
+- *The same rock as the Ulansuhai, stated as fact.* Earlier notes called Bayan Mandahu "the eastern outcrop of the unit entered as Ulansuhai". Only Hao and colleagues (2024) state it, citing a master's thesis (hao2024a, p. 2, after Tan 2016), and Evans and colleagues (2021) offer it as a hypothesis "based on proximity and lithology" (evans2021a). The compilations treat the two as distinct: Ding and colleagues (2020) date the Ulansuhai at Suhongtu 93.9–89.8 Ma, which is Turonian (ding2020a, p. 156), and the Wulansuhai at Bayan Mandahu 83.6–72.1 Ma (p. 154), and Pittman and colleagues (2020) call the Wulansuhai (Bayan Mandahu) Formation Campanian (pittman2020c, pp. 42, 56).
 - *A formally defined formation.* No work read defines it.
 
 **Open.** Whether the Bayan Mandahu beds belong to the Ulansuhai Formation. Jerzykiewicz and colleagues (1993) and Eberth (1993), on the Bayan Mandahu section, and Tan (2016) have not been read.
@@ -26,7 +26,8 @@
 - `xu2013a`: Xu, X.; Tan, Q. W.; Wang, S.; Sullivan, C.; Hone, D. W. E.; Han, F. L.; Ma, Q. Y.; Tan, L.; Xiao, D. (2013). A new oviraptorid from the Upper Cretaceous of Nei Mongol, China, and its stratigraphic implications. *Vertebrata PalAsiatica* 51(2): 85-101.
 - `hao2024a`: Hao, M.; Li, Z.; Wang, Z.; Wang, S.; Ma, F.; Qinggele; Logan King, J.; Pei, R.; Zhao, Q.; Xu, X. (2024). A new oviraptorosaur from the Lower Cretaceous Miaogou Formation of western Inner Mongolia, China. *Cretaceous Research* 167(78): 106023. doi:10.1016/j.cretres.2024.106023
 - `evans2021a`: Evans, D. C.; Brown, C. M.; You, H.; Campione, N. E. (2021). Description and revised diagnosis of Asia's first recorded pachycephalosaurid, Sinocephale bexelli gen. nov., from the Upper Cretaceous of Inner Mongolia, China. *Canadian Journal of Earth Sciences* 58(10): 981-992. doi:10.1139/cjes-2020-0190
-- `pittman2020a`: Pittman, M.; Xu, X. (2020). Pennaraptoran theropod dinosaurs. Past progress and new frontiers. *Bulletin of the American Museum of Natural History* 440(1): 1-355. doi:10.1206/0003-0090.440.1.1
+- `ding2020a`: Ding, A.; Pittman, M.; Upchurch, P.; O'Connor, J.; Field, D. J.; Xu, X. (2020). The biogeography of coelurosaurian theropods and its impact on their evolutionary history. In *Pennaraptoran Theropod Dinosaurs: Past Progress and New Frontiers (Pittman, M.; Xu, X., eds.)*, pp. 117-157. American Museum of Natural History.
+- `pittman2020c`: Pittman, M.; O'Connor, J.; Tse, E.; Makovicky, P.; Field, D. J.; Ma, W.; Turner, A. H.; Norell, M. A.; Pei, R.; Xu, X. (2020). The fossil record of Mesozoic and Paleocene pennaraptorans. In *Pennaraptoran Theropod Dinosaurs: Past Progress and New Frontiers (Pittman, M.; Xu, X., eds.)*, pp. 37-95. American Museum of Natural History.
 
 ## Other references
 

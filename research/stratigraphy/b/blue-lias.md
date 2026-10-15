@@ -8,7 +8,7 @@
 
 **Evidence.**
 - cox1999a, Blue Lias Formation, Chronostratigraphy: "Uppermost Triassic (Rhaetian) to Lower Jurassic, Sinemurian; upper boundary markedly diachronous".
-- simms2004a, p. 55: the formation "encompasses the highest part of the Triassic Rhaetian Stage, the Hettangian Stage and the lowest part of the Sinemurian Stage"; p. 61: "the lowest, late Triassic part of the Blue Lias Formation".
+- simms2004c, p. 55: the formation "encompasses the highest part of the Triassic Rhaetian Stage, the Hettangian Stage and the lowest part of the Sinemurian Stage"; p. 61: "the lowest, late Triassic part of the Blue Lias Formation".
 - hillebrandt2013a, p. 189: "The boundary should be expected to occur in the lowest few meters of the Blue Lias Formation".
 
 **Ruled out.**
@@ -35,7 +35,7 @@
 ## References
 
 - `cox1999a`: Cox, B. M.; Sumbler, M. G.; Ivimey-Cook, H. C. (1999). A formational framework for the Lower Jurassic of England and Wales (onshore area). *British Geological Survey Research Report* RR/99/01.
-- `simms2004a`: Simms, M. J.; Chidlaw, N.; Morton, N.; Page, K. N. (2004). British Lower Jurassic Stratigraphy. Joint Nature Conservation Committee, Peterborough.
+- `simms2004c`: Simms, M. J. (2004). The Wessex Basin (Dorset and central Somerset). In *British Lower Jurassic Stratigraphy*, pp. 53-109. Joint Nature Conservation Committee, Peterborough.
 - `hillebrandt2013a`: Hillebrandt, A. von; Krystyn, L.; Kürschner, W. M.; Bonis, N. R.; Ruhl, M.; Richoz, S.; Schobben, M. A. N.; Urlichs, M.; Bown, P. R.; Kment, K.; McRoberts, C. A.; Simms, M.; Tomašových, A. (2013). The Global Stratotype Sections and Point (GSSP) for the base of the Jurassic System at Kuhjoch (Karwendel Mountains, Northern Calcareous Alps, Tyrol, Austria). *Episodes* 36(3): 162-198. doi:10.18814/epiiugs/2013/v36i3/001
 - `baron2024a`: Baron, M. G. (2024). A new name for old bones: A reassessment of Early Jurassic theropod remains from Dorset, England. *Palaeontologia Electronica* 27(1): 1-12. doi:10.26879/1346
 - `martill2016a`: Martill, D. M.; Vidovic, S. U.; Howells, C.; Nudds, J. R. (2016). The Oldest Jurassic Dinosaur: A Basal Neotheropod from the Hettangian of Great Britain. *PLOS ONE* 11(1): e0145713. doi:10.1371/journal.pone.0145713

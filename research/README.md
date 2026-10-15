@@ -190,7 +190,7 @@ A work the note names in prose without citing it by id, usually one that has
 not been read and so cannot appear on an Evidence line, goes under
 `## Other references`, after References. Every work a note names is listed in
 one of the two sections, so a reader who meets "Simms and colleagues (2004)"
-can find the work it means. Write only the id, as ``- `simms2004a` ``, mint
+can find the work it means. Write only the id, as ``- `simms2004c` ``, mint
 a store entry first if there is none, and run the same command: it keeps the
 ids listed there and fills in each line from the store. An id the text cites
 belongs under References only, and the validator reports one listed under

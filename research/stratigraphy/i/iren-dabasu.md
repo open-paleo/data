@@ -8,7 +8,7 @@
 
 **Evidence.**
 - bonnetti2014a: "the late Cretaceous Erlian (Erendabusu or Irendabasu) Formation (K2e)".
-- pittman2020a: "the Campanian-Maastrichtian Erlian (Iren Dabasu) Formation of Nei Mongol".
+- pittman2020c: "the Campanian-Maastrichtian Erlian (Iren Dabasu) Formation of Nei Mongol".
 - zhang2001a and xu2002c: Chinese titles "二连组" [Erlian Formation], English titles "Iren Dabasu Formation".
 - xi2021a, p. 382: "二连组(有些文献中称之为二连达布苏组)" [the Erlian Formation (called the Erlian Dabusu Formation in some literature)].
 
@@ -72,7 +72,7 @@
 ## References
 
 - `bonnetti2014a`: Bonnetti, C.; Malartre, F.; Huault, V.; Cuney, M.; Bourlange, S.; Liu, X.; Peng, Y. (2014). Sedimentology, stratigraphy and palynological occurrences of the late Cretaceous Erlian Formation, Erlian Basin, Inner Mongolia, People's Republic of China. *Cretaceous Research* 48: 177-192. doi:10.1016/j.cretres.2013.09.013
-- `pittman2020a`: Pittman, M.; Xu, X. (2020). Pennaraptoran theropod dinosaurs. Past progress and new frontiers. *Bulletin of the American Museum of Natural History* 440(1): 1-355. doi:10.1206/0003-0090.440.1.1
+- `pittman2020c`: Pittman, M.; O'Connor, J.; Tse, E.; Makovicky, P.; Field, D. J.; Ma, W.; Turner, A. H.; Norell, M. A.; Pei, R.; Xu, X. (2020). The fossil record of Mesozoic and Paleocene pennaraptorans. In *Pennaraptoran Theropod Dinosaurs: Past Progress and New Frontiers (Pittman, M.; Xu, X., eds.)*, pp. 37-95. American Museum of Natural History.
 - `zhang2001a`: Zhang, X. H.; Xu, X.; Zhao, X. J.; Sereno, P. C.; Kuang, X. W.; Tan, L. (2001). A long-necked therizinosauroid dinosaur from the Upper Cretaceous Iren Dabasu Formation of Nei Mongol, People's Republic of China. *Vertebrata PalAsiatica* 39(4): 282-290.
 - `xu2002c`: Xu, X.; Zhang, Z. H.; Sereno, P. C.; Zhao, X. J.; Kuang, X. W.; Han, J.; Tan, L. (2002). A new therizinosauroid (Dinosauria, Theropoda) from the Upper Cretaceous Iren Dabasu Formation of Nei Mongol. *Vertebrata PalAsiatica* 40(3): 228-240.
 - `xi2021a`: Xi, D. P.; Sun, L. X.; Qin, Z. H.; Li, G. B.; Li, G.; Wan, X. Q. (2021). Lithostratigraphic subdivision and correlation of the Cretaceous in China. *Journal of Stratigraphy* 45(3): 375-401. doi:10.19839/j.cnki.dcxzz.2021.0030

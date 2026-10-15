@@ -9,7 +9,7 @@
 **Evidence.**
 - bgs2020a: "Age range: Berriasian Age (KR) — Barremian Age (KB)"; "In practice the boundary is taken at the top of the last significant limestone in the top of the underlying Peveril Point Member of the Durlston Formation".
 - robinson2004a: the Wessex is "a non-marine unit within the Lower Cretaceous (Valanginian–Barremian) Wealden Group".
-- pittman2020a: "the Berriasian-Barremian Wessex Formation".
+- pittman2020c: "the Berriasian-Barremian Wessex Formation".
 
 **Ruled out.**
 - *Valanginian–Barremian.* It leaves out the Lexicon's range for the unit it defines, which the reference-work rule allows to extend a primary range.
@@ -60,7 +60,7 @@ Supersedes the Barremian these three beds carried until 2026-10-06.
 
 **Evidence.**
 - carrano2012a, p. 265: "Benson *et al.* (2009) recently reported a partial pubis and femur (MIWG 6350) from the Wessex Formation (Berriasian) of the Isle of Wight"; p. 277: "A new large basal tetanuran (Dinosauria: Theropoda) from the Wessex Formation (Barremian) of the Isle of Wight".
-- pittman2020a, p. 50: "Six fused sacral vertebrae from the Berriasian-Barremian Wessex Formation of the U.K."
+- pittman2020c, pp. 50, 54: "Six fused sacral vertebrae from the Berriasian-Barremian Wessex Formation of the U.K."
 
 **Ruled out.**
 - *Carrano and colleagues as a source for the Berriasian.* A slip that their own bibliography contradicts (see [methods](../../methods.md#a-slip-that-its-own-document-contradicts-is-not-a-reading)).
@@ -71,7 +71,7 @@ Supersedes the Barremian these three beds carried until 2026-10-06.
 
 - `bgs2020a`: British Geological Survey (2020). Wessex Formation. British Geological Survey.
 - `robinson2004a`: Robinson, S. A.; Hesselbo, S. P. (2004). Fossil-wood carbon-isotope stratigraphy of the non-marine Wealden Group (Lower Cretaceous, southern England). *Journal of the Geological Society* 161(1): 133-145. doi:10.1144/0016-764903-004
-- `pittman2020a`: Pittman, M.; Xu, X. (2020). Pennaraptoran theropod dinosaurs. Past progress and new frontiers. *Bulletin of the American Museum of Natural History* 440(1): 1-355. doi:10.1206/0003-0090.440.1.1
+- `pittman2020c`: Pittman, M.; O'Connor, J.; Tse, E.; Makovicky, P.; Field, D. J.; Ma, W.; Turner, A. H.; Norell, M. A.; Pei, R.; Xu, X. (2020). The fossil record of Mesozoic and Paleocene pennaraptorans. In *Pennaraptoran Theropod Dinosaurs: Past Progress and New Frontiers (Pittman, M.; Xu, X., eds.)*, pp. 37-95. American Museum of Natural History.
 - `pond2023a`: Pond, S.; Strachan, S. J.; Raven, T. J.; Simpson, M. I.; Morgan, K.; Maidment, S. C. R. (2023). Vectipelta barretti, a new ankylosaurian dinosaur from the Lower Cretaceous Wessex Formation of the Isle of Wight, UK. *Journal of Systematic Palaeontology* 21(1). doi:10.1080/14772019.2023.2210577
 - `lockwood2021a`: Lockwood, J. A. F.; Martill, D. M.; Maidment, S. C. R. (2021). A new hadrosauriform dinosaur from the Wessex Formation, Wealden Group (Early Cretaceous), of the Isle of Wight, southern England. *Journal of Systematic Palaeontology* 19(12): 847-888. doi:10.1080/14772019.2021.1978005
 - `naish2022a`: Naish, D.; Cau, A. (2022). The osteology and affinities of Eotyrannus lengi, a tyrannosauroid theropod from the Wealden Supergroup of southern England. *PeerJ* 10: e12727. doi:10.7717/peerj.12727

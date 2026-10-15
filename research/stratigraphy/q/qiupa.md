@@ -14,7 +14,7 @@
 - lü2008c (meeting abstract): "the late Late Cretaceous sediments of the Tantou Basin in Luanchuan County".
 
 **Ruled out.**
-- *Luanchuan Basin as the basin's name.* It is printed: "Near Qiupa, Luanchuan Basin, Henan Province, the Late Cretaceous Qiupa Formation" (lü2008d, p. 665), and also in Pittman and Xu (2020, pittman2020a, p. 155) and Xing and colleagues (2024, "the Qiupa Formation in Luanchuan Basin (Dong, 1979 …)", xing2024b, p. 1), who cite Dong (1979), who wrote Tantou. Seven sources read for this note name the Tantou Basin and three the Luanchuan Basin; Luanchuan is the county ("Luanchuan County", xu2011b, p. 214).
+- *Luanchuan Basin as the basin's name.* It is printed: "Near Qiupa, Luanchuan Basin, Henan Province, the Late Cretaceous Qiupa Formation" (lü2008d, p. 665), and also in Ding and colleagues (2020, ding2020a, p. 155) and Xing and colleagues (2024, "the Qiupa Formation in Luanchuan Basin (Dong, 1979 …)", xing2024b, p. 1), who cite Dong (1979), who wrote Tantou. Seven sources read for this note name the Tantou Basin and three the Luanchuan Basin; Luanchuan is the county ("Luanchuan County", xu2011b, p. 214).
 
 **Open.** Jiang and colleagues (2011), whose title names a "Luanchuan-Tantou Basin", has not been read. Qiupa is a town ("Qiupa Town, Luanchuan County", lü2013d, p. 167).
 
@@ -28,6 +28,6 @@
 - `xi2021a`: Xi, D. P.; Sun, L. X.; Qin, Z. H.; Li, G. B.; Li, G.; Wan, X. Q. (2021). Lithostratigraphic subdivision and correlation of the Cretaceous in China. *Journal of Stratigraphy* 45(3): 375-401. doi:10.19839/j.cnki.dcxzz.2021.0030
 - `lü2008c`: Lü, J.; Kobayashi, Y.; Lee, Y. N.; Xu, L.; Zhang, X. (2008). A new vertebrate assemblage from the Late Cretaceous of Luanchuan, Henan Province, China. *Journal of Vertebrate Paleontology* 28(3, Supplement): 108A.
 - `lü2008d`: Lü, J. C.; Ji, S. A.; Dong, Z. M.; Wu, X. C. (2008). An Upper Cretaceous lizard with a lower temporal arcade. *Naturwissenschaften* 95(7): 663-669. doi:10.1007/s00114-008-0364-1
-- `pittman2020a`: Pittman, M.; Xu, X. (2020). Pennaraptoran theropod dinosaurs. Past progress and new frontiers. *Bulletin of the American Museum of Natural History* 440(1): 1-355. doi:10.1206/0003-0090.440.1.1
+- `ding2020a`: Ding, A.; Pittman, M.; Upchurch, P.; O'Connor, J.; Field, D. J.; Xu, X. (2020). The biogeography of coelurosaurian theropods and its impact on their evolutionary history. In *Pennaraptoran Theropod Dinosaurs: Past Progress and New Frontiers (Pittman, M.; Xu, X., eds.)*, pp. 117-157. American Museum of Natural History.
 - `xing2024b`: Xing, L.; Liang, Z.; Zhang, K.; Wang, D.; Zhang, X.; Persons, W. S., IV; Ren, Z.; Liang, Z.; Xian, M.; Zeng, Q. (2024). Large theropod teeth from the Upper Cretaceous of Guangdong Province, Southern China. *Cretaceous Research* 161: 105914. doi:10.1016/j.cretres.2024.105914
 - `lü2013d`: Lü, J.; Currie, P. J.; Xu, L.; Zhang, X.; Pu, H.; Jia, S. (2013). Chicken-sized oviraptorid dinosaurs from central China and their ontogenetic implications. *Naturwissenschaften* 100(2): 165-175. doi:10.1007/s00114-012-1007-0

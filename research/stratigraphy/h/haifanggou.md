@@ -13,7 +13,7 @@
 
 **Ruled out.**
 - *Oxfordian.* Wang and colleagues (2019) write that the formation "preserves the early phase of this biota (early Oxfordian)" and give "Oxfordian stage, 163 million years ago" for the *Ambopteryx* horizon (wang2019a, p. 256). On the current chart, whose Oxfordian begins at 161.5 Ma, 163 Ma is Callovian; the date is a personal communication; and Xu and colleagues (2016), one of the two works cited for the early Oxfordian, give Bathonian–Callovian.
-- *"Middle and Late Jurassic Haifanggou Formation".* Pittman and colleagues (2020, pittman2020a, p. 44) in a compilation; the same volume places the unit in "the Middle Jurassic Bathonian" (p. 64).
+- *"Middle and Late Jurassic Haifanggou Formation".* Pittman and colleagues (2020, pittman2020c, p. 44) in a compilation; the same volume places the unit in "the Middle Jurassic Bathonian" (p. 64).
 
 **Open.** Whether the Daohugou strata belong to this unit or straddle its contact with the Tiaojishan, which Sullivan and colleagues (2014, p. 248) leave open.
 
@@ -23,4 +23,4 @@
 - `chang2009b`: Chang, S. C.; Zhang, H. C.; Renne, P. R.; Fang, Y. (2009). High-precision 40Ar/39Ar age constraints on the basal Lanqi Formation and its implications for the origin of angiosperm plants. *Earth and Planetary Science Letters* 279(3-4): 212-221. doi:10.1016/j.epsl.2008.12.045
 - `sullivan2014a`: Sullivan, C.; Wang, Y.; Hone, D. W. E.; Wang, Y. Q.; Xu, X.; Zhang, F. (2014). The vertebrates of the Jurassic Daohugou Biota of northeastern China. *Journal of Vertebrate Paleontology* 34(2): 243-280. doi:10.1080/02724634.2013.787316
 - `wang2019a`: Wang, M.; O'Connor, J. K.; Xu, X.; Zhou, Z. (2019). A new Jurassic scansoriopterygid and the loss of membranous wings in theropod dinosaurs. *Nature* 569(7755): 256-259. doi:10.1038/s41586-019-1137-z
-- `pittman2020a`: Pittman, M.; Xu, X. (2020). Pennaraptoran theropod dinosaurs. Past progress and new frontiers. *Bulletin of the American Museum of Natural History* 440(1): 1-355. doi:10.1206/0003-0090.440.1.1
+- `pittman2020c`: Pittman, M.; O'Connor, J.; Tse, E.; Makovicky, P.; Field, D. J.; Ma, W.; Turner, A. H.; Norell, M. A.; Pei, R.; Xu, X. (2020). The fossil record of Mesozoic and Paleocene pennaraptorans. In *Pennaraptoran Theropod Dinosaurs: Past Progress and New Frontiers (Pittman, M.; Xu, X., eds.)*, pp. 37-95. American Museum of Natural History.

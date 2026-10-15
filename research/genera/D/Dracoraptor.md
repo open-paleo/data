@@ -8,7 +8,7 @@
 
 **Evidence.**
 - martill2016a, p. 7: the horizon "lies below the first occurrence of the ammonite Psiloceras planorbis"; "these strata have traditionally been regarded as Late Rhaetian age"; p. 9: "the new dinosaur should be regarded as being of Early Hettangian age", and "it may never be possible to define the T/J boundary" in the British Isles.
-- simms2004a, p. 115: "The first Psiloceras planorbis, marking the base of the Jurassic System, was recorded about 1.4 m above the Dual Bed (Hodges, 1994)", the Dual Bed being the base of the bed above the Bull Cliff Member; p. 23: the Lias Group takes in "the uppermost beds of the Triassic System (the 'Pre-Planorbis Beds' of earlier accounts)".
+- simms2004d, p. 115: "The first Psiloceras planorbis, marking the base of the Jurassic System, was recorded about 1.4 m above the Dual Bed (Hodges, 1994)", the Dual Bed being the base of the bed above the Bull Cliff Member; simms2004b, p. 23: the Lias Group takes in "the uppermost beds of the Triassic System (the 'Pre-Planorbis Beds' of earlier accounts)".
 - hillebrandt2013a, p. 189: "The boundary should be expected to occur in the lowest few meters of the Blue Lias Formation".
 
 **Ruled out.**
@@ -36,5 +36,6 @@
 ## References
 
 - `martill2016a`: Martill, D. M.; Vidovic, S. U.; Howells, C.; Nudds, J. R. (2016). The Oldest Jurassic Dinosaur: A Basal Neotheropod from the Hettangian of Great Britain. *PLOS ONE* 11(1): e0145713. doi:10.1371/journal.pone.0145713
-- `simms2004a`: Simms, M. J.; Chidlaw, N.; Morton, N.; Page, K. N. (2004). British Lower Jurassic Stratigraphy. Joint Nature Conservation Committee, Peterborough.
+- `simms2004d`: Simms, M. J. (2004). The Mendip and South Wales massifs. In *British Lower Jurassic Stratigraphy*, pp. 111-156. Joint Nature Conservation Committee, Peterborough.
+- `simms2004b`: Simms, M. J.; Page, K. N.; Hodges, P. (2004). British Lower Jurassic stratigraphy: an introduction. In *British Lower Jurassic Stratigraphy*, pp. 1-51. Joint Nature Conservation Committee, Peterborough.
 - `hillebrandt2013a`: Hillebrandt, A. von; Krystyn, L.; Kürschner, W. M.; Bonis, N. R.; Ruhl, M.; Richoz, S.; Schobben, M. A. N.; Urlichs, M.; Bown, P. R.; Kment, K.; McRoberts, C. A.; Simms, M.; Tomašových, A. (2013). The Global Stratotype Sections and Point (GSSP) for the base of the Jurassic System at Kuhjoch (Karwendel Mountains, Northern Calcareous Alps, Tyrol, Austria). *Episodes* 36(3): 162-198. doi:10.18814/epiiugs/2013/v36i3/001

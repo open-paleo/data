@@ -66,7 +66,7 @@
 - *Valanginian–Hauterivian.* Jin and colleagues give "older than 128 million years and younger than 139 million years (Lower Valanginian–Lower Barremian; Swisher et al., 2002)" (jin2012a), from earlier Ar/Ar work; Zhong and colleagues note that earlier ages are inconsistent "between different dating methods (i.e. 40Ar/39Ar and U-Pb …)".
 - *A radiometric "Zhou et al. 2007".* Sereno cites "(He at al. 2006; Zhou et al. 2007)" (p. 22), but his only Zhou 2007 is a psittacosaur CT paper; his reference list has an uncited Zhu and colleagues (2007) Ar/Ar dating paper, probably the one meant (our inference).
 
-**Open.** The papers that still give "Barremian–Aptian" (for example Pittman and Xu 2020) are not separately examined here. *Yutyrannus*'s formation rests on a dealer's account given only in its supplement: "acquired … from a fossil dealer", "This strongly suggests that the specimens were collected from the Yixian Formation" (xu2012a, supplementary information, p. 2, §1).
+**Open.** The papers that still give "Barremian–Aptian" (for example Pittman and colleagues 2020) are not separately examined here. *Yutyrannus*'s formation rests on a dealer's account given only in its supplement: "acquired … from a fossil dealer", "This strongly suggests that the specimens were collected from the Yixian Formation" (xu2012a, supplementary information, p. 2, §1).
 
 ## References
 

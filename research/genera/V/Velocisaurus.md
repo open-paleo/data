@@ -12,7 +12,7 @@
 - powell2003a, p. 8: *Velocisaurus unicus* is listed in the faunal list for the "Neuquén" locality, where "'Boca del Sapo' is included in the area named 'Neuquen'".
 
 **Ruled out.**
-- *Boca del Sapo as the type locality.* No source read for this note pairs *Velocisaurus* with Boca del Sapo. Pittman and Xu (2020) give "Boca del Sapo, Universidad Nacional del Comahue" for *Alvarezsaurus*, *Neuquenornis* and *Patagopteryx* from the same describing paper (pittman2020a, Appendix), not for *Velocisaurus*. Powell (2003, p. 8) includes Boca del Sapo in a broader "Neuquén" area. Carrying the Boca del Sapo locality over from those taxa would be an inference.
+- *Boca del Sapo as the type locality.* No source read for this note pairs *Velocisaurus* with Boca del Sapo. Ding and colleagues (2020) give "Boca del Sapo, Universidad Nacional del Comahue" for *Alvarezsaurus*, *Neuquenornis* and *Patagopteryx* from the same describing paper (ding2020a, pp. 151, 155), not for *Velocisaurus*. Powell (2003, p. 8) includes Boca del Sapo in a broader "Neuquén" area. Carrying the Boca del Sapo locality over from those taxa would be an inference.
 - *Paso Córdoba (Río Negro).* That is the locality of a referred specimen, MPCN-PV 370, and does not set the type locality.
 
 **Open.** Bonaparte (1991) would give the type locality as described; it has not been read. Other sources read give formation and province only: rauhut2003b, p. 33 ("Río Colorado Formation, Neuquén, Argentina"); weishampel2004a, p. 49, Table 3.1; paul2024a ("Central Argentina; Bajo de la Carpa").
@@ -37,7 +37,7 @@
 - `carrano2008a`: Carrano, M. T.; Sampson, S. D. (2008). The Phylogeny of Ceratosauria (Dinosauria: Theropoda). *Journal of Systematic Palaeontology* 6(2): 183-236. doi:10.1017/S1477201907002246
 - `bonaparte1991a`: Bonaparte, J. F. (1991). Los vertebrados fósiles de la Formación Río Colorado, de la Ciudad de Neuquén y Cercanías, Cretácico Superior, Argentina [The vertebrate fossils of the Rio Colorado Formation, from the city of Neuquén and surrounding areas, Upper Cretaceous, Argentina]. *Revista del Museo Argentino de Ciencias Naturales "Bernardino Rivadavia" e Instituto Nacional de Investigación de las Ciencias Naturales: Paleontología* 4(3): 17-123.
 - `powell2003a`: Powell, J. E. (2003). Revision of South American Titanosaurid dinosaurs: palaeobiological, palaeobiogeographical and phylogenetic aspects. *Records of the Queen Victoria Museum* 111: 1-173.
-- `pittman2020a`: Pittman, M.; Xu, X. (2020). Pennaraptoran theropod dinosaurs. Past progress and new frontiers. *Bulletin of the American Museum of Natural History* 440(1): 1-355. doi:10.1206/0003-0090.440.1.1
+- `ding2020a`: Ding, A.; Pittman, M.; Upchurch, P.; O'Connor, J.; Field, D. J.; Xu, X. (2020). The biogeography of coelurosaurian theropods and its impact on their evolutionary history. In *Pennaraptoran Theropod Dinosaurs: Past Progress and New Frontiers (Pittman, M.; Xu, X., eds.)*, pp. 117-157. American Museum of Natural History.
 - `rauhut2003b`: Rauhut, O. W. M. (2003). The interrelationships and evolution of basal theropod dinosaurs. *Special Papers in Palaeontology* 69: 1-213.
 - `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
 - `paul2024a`: Paul, G. S. (2024). The Princeton Field Guide to Dinosaurs (3rd ed.). Princeton University Press.
