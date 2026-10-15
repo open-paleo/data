@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-10-15T00:20:07.725Z
+  built_at: 2026-10-15T00:53:10.006Z
   clade_count: 188
-  genus_count: 1426
+  genus_count: 1427
   license: CC-BY-4.0
   schema_version: 2.0.0
   version: "2026.10"
@@ -116046,6 +116046,7 @@ genera:
       - name: Oligosaurus
         type: junior subjective
         reason: Based on rhabdodontid material from the Late Cretaceous of Austria; now treated as a junior synonym of Mochlodon.
+    erected_in: seeley1881a
     species:
       - name: Mochlodon suessi
         etymology: Named for Eduard Suess, the geologist who directed the excavations that recovered the type material at Muthmannsdorf, Austria.
@@ -116079,11 +116080,12 @@ genera:
             - PIUW 2349/2
           specimen_type: lectotype
           institution: Paläontologisches Institut und Museum der Universität Wien
-          material: Right dentary bone, ~7.5 cm long with tooth-bearing part 17-18 mm; small parietal bone; scapula fragment also referred
+          material: Right dentary bone, ~7.5 cm long with tooth-bearing part 17-18 mm.
           completeness: fragmentary
-        erected_in: seeley1881a
-        authors: Seeley, H. G.
-        described: 1881
+          notes: Seeley (1881) also refers a small parietal and the proximal end of a scapula, each only as "probably" Mochlodon; neither is part of the lectotype.
+        erected_in: bunzel1871a
+        authors: Bunzel, E.
+        described: 1871
       - name: Mochlodon vorosi
         etymology: Honors Attila Vörös, the paleontologist who founded the Hungarian Academy of Sciences' paleontological research group.
         status: valid
@@ -116158,6 +116160,14 @@ genera:
         pages: e44318
         doi: 10.1371/journal.pone.0044318
         notes: Erects Mochlodon vorosi on dentary MTM V 2010.105.1 from the Csehbánya Formation (Iharkút) of Hungary; revises rhabdodontid phylogeny.
+      - id: bunzel1871a
+        authors: Bunzel, E.
+        year: 1871
+        title: Die Reptilfauna der Gosau-Formation in der Neuen Welt bei Wiener-Neustadt [The reptile fauna of the Gosau Formation in the Neue Welt near Wiener Neustadt]
+        journal: Abhandlungen der kaiserlich-königlichen geologischen Reichsanstalt
+        volume: "5"
+        pages: 1-18
+        notes: In German. Names Iguanodon suessii, which Seeley (1881) made the type species of Mochlodon.
     taxonomy:
       - Life
       - Animalia
@@ -163095,6 +163105,7 @@ genera:
       - name: Crataeomus
         type: junior subjective
         reason: Reduced to a junior synonym of Struthiosaurus alongside Pleuropeltus and Hoplosaurus following taxonomic review.
+    erected_in: bunzel1870a
     species:
       - name: Struthiosaurus austriacus
         etymology: From Latin 'austriacus' meaning 'Austrian', referring to the provenance of the type specimen from Austria.
@@ -163115,7 +163126,7 @@ genera:
           region_code: AT-3
         type_specimen:
           specimen_id:
-            - PIWU 2349/6
+            - PIUW 2349/6
           specimen_type: holotype
           institution: Paläontologisches Institut und Museum der Universität Wien
           material: Fragment of a reptilian skull.
@@ -163130,13 +163141,13 @@ genera:
           weight_kg:
             min: 300
             max: 400
-        erected_in: bunzel1870a
+        erected_in: bunzel1871a
         synonyms:
           - name: Rhodanosaurus
             type: junior subjective
             reason: R. ludguensis is generally treated as a junior synonym of Struthiosaurus austriacus, though some authors instead consider it Nodosauridae incertae sedis.
         authors: Bunzel, E.
-        described: 1870
+        described: 1871
       - name: Struthiosaurus transylvanicus
         status: valid
         type_species: false
@@ -163212,6 +163223,15 @@ genera:
         issue: 1-2
         pages: 394-394
         doi: 10.1144/gsl.jgs.1870.026.01-02.35
+        notes: Proposes the genus for a skull fragment from Grünbach, naming no species.
+      - id: bunzel1871a
+        authors: Bunzel, E.
+        year: 1871
+        title: Die Reptilfauna der Gosau-Formation in der Neuen Welt bei Wiener-Neustadt [The reptile fauna of the Gosau Formation in the Neue Welt near Wiener Neustadt]
+        journal: Abhandlungen der kaiserlich-königlichen geologischen Reichsanstalt
+        volume: "5"
+        pages: 1-18
+        notes: In German. The memoir that names Struthiosaurus austriacus and Iguanodon suessii.
       - id: jones2026a
         authors: Jones, B.
         year: 2026
@@ -189029,6 +189049,99 @@ genera:
       - Neornithischia
     authors: Zheng, W.; Jin, X.; Shibata, M.; Azuma, Y.; Yu, F.
     described: 2012
+  Yuezhuornis:
+    genus: Yuezhuornis
+    parent: Avialae
+    etymology: '"Yuezhuo" (Mandarin), a Chinese mythological bird, + "ornis" (Greek), bird'
+    description: Yuezhuornis is an extinct genus of early-diverging avialan known from the Late Jurassic Nanyuan Formation of China. The genus contains a single species, Yuezhuornis yangyuanensis, known from an incomplete, partially articulated skeleton. Based on its short forelimbs and limb proportions, Yuezhuornis is thought to have lived on the ground and been unable to fly.
+    locomotion: bipedal
+    diagnostic_features:
+      - Maxillary teeth serrated distally and not constricted below the crowns (possible autapomorphy)
+      - Slender jugal with a reduced quadratojugal process and a blunt-ended postorbital process (possible autapomorphy)
+      - Penultimate manual phalanges with enlarged ventral heels proximally (possible autapomorphy)
+      - Forelimb one-third shorter than the hind limb, with the humerus shorter than the femur
+      - Trapezoidal coracoid with an anterior surface sculpted by numerous pits
+      - Metatarsals II-IV not ginglymoid; pedal phalanx II-1 (or II-2) with a dorsally placed collateral ligament fossa and a large proximoventral heel
+    species:
+      - name: Yuezhuornis yangyuanensis
+        etymology: '"yangyuan" (Mandarin), for Yangyuan Village, where the holotype was found'
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Kimmeridgian
+          from_ma: 154.8
+          to_ma: 149.2
+        location:
+          country: CN
+          locality: near Yangyuan Village, Zhenghe
+          region: Fujian
+          formation: Nanyuan
+          part: lower
+          notes: |
+            Xu and colleagues (2026) correlate the horizon with the layers that yielded Fujianvenator, which Xu and colleagues (2023) date with zircon ages of 150.2 ± 1.1 Ma and 149.9 ± 1.1 Ma, both Kimmeridgian on the ICS chart v2024/12 at their central values; the "Tithonian stage" both papers give belongs to an older chart.
+          region_code: CN-FJ
+          part_of: formation
+        type_specimen:
+          specimen_id:
+            - IVPP V34427
+          specimen_type: holotype
+          institution: Institute of Vertebrate Paleontology and Paleoanthropology
+          material: Incomplete, partially articulated skeleton of a subadult or adult, including the skull, cervical, dorsal and 17 caudal vertebrae, ribs, gastralia, furcula, coracoids, forelimbs, ilia, pubes, hind limbs and pedal phalanges
+        size:
+          weight_kg:
+            min: 0.821
+            max: 0.821
+        erected_in: xu2026b
+        authors: Xu, L.; Wang, M.; Lin, G.; Dong, L.; Deng, K.; Xu, X.; Du, H.; Lin, M.; Chen, R.; Zhou, Z.
+        described: 2026
+    references:
+      - id: xu2026b
+        authors: Xu, L.; Wang, M.; Lin, G.; Dong, L.; Deng, K.; Xu, X.; Du, H.; Lin, M.; Chen, R.; Zhou, Z.
+        year: 2026
+        title: Jurassic flightless bird reveals early ecological diversity of avialans
+        journal: Nature
+        publisher: Springer Science and Business Media LLC
+        volume: "658"
+        issue: "8136"
+        pages: 690-697
+        doi: 10.1038/s41586-026-10972-z
+      - id: xu2023a
+        authors: Xu, L.; Wang, M.; Chen, R.; Dong, L.; Lin, M.; Xu, X.; Tang, J.; You, H.; Zhou, G.; Wang, L.; He, W.; Li, Y.; Zhang, C.; Zhou, Z.
+        year: 2023
+        title: A new avialan theropod from an emerging Jurassic terrestrial fauna
+        journal: Nature
+        publisher: Springer Science and Business Media LLC
+        volume: "621"
+        issue: "7978"
+        pages: 336-343
+        doi: 10.1038/s41586-023-06513-7
+        notes: Dates the fossil-bearing layers of the lower Nanyuan Formation that the describing paper correlates with the holotype's horizon.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Avetheropoda
+      - Coelurosauria
+      - Maniraptora
+      - Paraves
+      - Eumaniraptora
+      - Avialae
+    authors: Xu, L.; Wang, M.; Lin, G.; Dong, L.; Deng, K.; Xu, X.; Du, H.; Lin, M.; Chen, R.; Zhou, Z.
+    described: 2026
   Yulong:
     genus: Yulong
     parent: Oviraptoridae
