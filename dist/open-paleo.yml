@@ -1,8 +1,8 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-10-15T04:34:46.306Z
+  built_at: 2026-10-15T06:01:14.124Z
   clade_count: 188
-  genus_count: 1427
+  genus_count: 1428
   license: CC-BY-4.0
   schema_version: 2.0.0
   version: "2026.10"
@@ -31875,6 +31875,111 @@ genera:
       - Eudromaeosauria
     authors: Burnham, D. A.; Derstler, K. L.; Currie, P. J.; Bakker, R. T.; Zhou, Z.; Ostrom, J. H.
     described: 2000
+  Baminornis:
+    genus: Baminornis
+    parent: Avialae
+    etymology: '"Bamin" (Mandarin), for Fujian Province, + "ornis" (Greek), bird'
+    description: Baminornis is an extinct genus of basal avialan known from the Upper Jurassic (Kimmeridgian age) Nanyuan Formation of China. The genus contains a single species, Baminornis zhenghensis, known from a partial skeleton. Baminornis was initially identified as the oldest known avialan to bear a fused pygostyle, but later research cast doubt on the identification of this structure, claiming it could instead be part of the synsacrum.
+    diagnostic_features:
+      - Fused pygostyle of five vertebrae that curves dorsally and is longer than metacarpal II
+      - Metacarpal I with an asymmetric ginglymoid distal articulation and an enlarged medial condyle
+      - Ungual of manual digit I about twice as large as that of digit III
+      - Ischium lacking both the obturator process and the posterior process
+      - Strut-like coracoid separated from the scapula, with a boomerang-shaped furcula whose interclavicular angle is 65 degrees
+      - Manual phalangeal formula 2-3-4, with metacarpal III extending further distally than metacarpal II and digit III shorter than metacarpal III
+    identifiers:
+      - source: pbdb
+        id: "503148"
+      - source: wikidata
+        id: Q132242371
+    species:
+      - name: Baminornis zhenghensis
+        etymology: '"zhenghe" (Mandarin), for Zhenghe County, where the holotype was found'
+        status: valid
+        type_species: true
+        period:
+          name:
+            - Late Jurassic
+          stage:
+            - Kimmeridgian
+          from_ma: 154.8
+          to_ma: 149.2
+        location:
+          country: CN
+          locality: near Yangyuan Village, Zhenghe
+          region: Fujian
+          formation: Nanyuan
+          part: lower
+          notes: |
+            Chen and colleagues (2025) place the holotype in layer 2 of the excavation site, with that of Fujianvenator. Xu and colleagues (2023) bracket that layer with zircon ages of 150.2 ± 1.1 Ma below and 149.9 ± 1.1 Ma above, both Kimmeridgian on the ICS chart v2024/12 at their central values; the "Tithonian stage" both papers give belongs to an older chart.
+          region_code: CN-FJ
+          part_of: formation
+        size:
+          weight_kg:
+            min: 0.14
+            max: 0.3
+        type_specimen:
+          specimen_id:
+            - IVPP V33259
+          specimen_type: holotype
+          institution: Institute of Vertebrate Paleontology and Paleoanthropology
+          material: Incomplete, partially articulated skeleton including the pygostyle and caudal vertebrae, dorsal vertebrae and ribs, gastralia, furcula, scapulae, coracoids, humerus, radius, ulna, manus, ilium, ischium, pubes, femur, tibiae and fibula
+        erected_in: chen2025a
+        authors: Chen, R.; Wang, M.; Dong, L.; Zhou, G.; Xu, X.; Deng, K.; Xu, L.; Zhang, C.; Wang, L.; Du, H.; Lin, G.; Lin, M.; Zhou, Z.
+        described: 2025
+    references:
+      - id: chen2025a
+        authors: Chen, R.; Wang, M.; Dong, L.; Zhou, G.; Xu, X.; Deng, K.; Xu, L.; Zhang, C.; Wang, L.; Du, H.; Lin, G.; Lin, M.; Zhou, Z.
+        year: 2025
+        title: Earliest short-tailed bird from the Late Jurassic of China
+        journal: Nature
+        volume: "638"
+        issue: "8050"
+        pages: 441-448
+        doi: 10.1038/s41586-024-08410-z
+      - id: huang2025a
+        authors: Huang, J.; Wang, X.; Cau, A.; Mao, L.; Liu, Y.; Wang, Y.
+        year: 2025
+        title: A new euornithine from the Lower Cretaceous (Aptian) of China reveals the first radiation of fish-eating birds
+        journal: Cretaceous Research
+        volume: "179"
+        pages: "106244"
+        doi: 10.1016/j.cretres.2025.106244
+        notes: Codes the purported pygostyle as unknown, since the fused vertebrae could be part of the sacral series, and still recovers Baminornis as the sister taxon of Jeholornithiformes plus Pygostylia.
+      - id: xu2023a
+        authors: Xu, L.; Wang, M.; Chen, R.; Dong, L.; Lin, M.; Xu, X.; Tang, J.; You, H.; Zhou, G.; Wang, L.; He, W.; Li, Y.; Zhang, C.; Zhou, Z.
+        year: 2023
+        title: A new avialan theropod from an emerging Jurassic terrestrial fauna
+        journal: Nature
+        publisher: Springer Science and Business Media LLC
+        volume: "621"
+        issue: "7978"
+        pages: 336-343
+        doi: 10.1038/s41586-023-06513-7
+        notes: Dates the layer of the Nanyuan Formation that yielded the holotype.
+    taxonomy:
+      - Life
+      - Animalia
+      - Chordata
+      - Vertebrata
+      - Sarcopterygii
+      - Tetrapoda
+      - Reptilia
+      - Archosauria
+      - Dinosauria
+      - Saurischia
+      - Theropoda
+      - Neotheropoda
+      - Averostra
+      - Tetanurae
+      - Avetheropoda
+      - Coelurosauria
+      - Maniraptora
+      - Paraves
+      - Eumaniraptora
+      - Avialae
+    authors: Chen, R.; Wang, M.; Dong, L.; Zhou, G.; Xu, X.; Deng, K.; Xu, L.; Zhang, C.; Wang, L.; Du, H.; Lin, G.; Lin, M.; Zhou, Z.
+    described: 2025
   Banji:
     genus: Banji
     parent: Oviraptoridae
