@@ -1,5 +1,20 @@
 # Rank that moves with the parent
 
+## Which unit holds the Arlington Member?
+
+*2026-10-14*
+
+**Conclusion.** The Lewisville Formation. In the scheme the entry below adopts, the Woodbine is a group whose upper formation is the Lewisville, and Tykoski and colleagues (2023), following that revision, place the Arlington in the Lewisville. Head's (1998) Arlington Member of a Woodbine Formation belongs to the scheme the entry below set aside. Settles the Open line of the entry below. Governs `parent: Lewisville` on [Arlington](../../stratigraphy/a/arlington.yml).
+
+**Evidence.**
+- tykoski2023a, p. e2257238-2: "The Lewisville Formation is the upper formation of the Woodbine Group following recent revision of Woodbine stratigraphy and nomenclature by Denne et al. (2016)"; the site is "in either the Arlington Member or Tarrant Member of the Lewisville Formation (Denne et al., 2016)".
+- head1998a, p. 718: "the Arlington Member of the Woodbine Formation".
+
+**Ruled out.**
+- *The Woodbine as the Arlington's parent.* It mixes Head's formation-rank Woodbine with the group scheme.
+
+**Open.** The Tarrant Member, which Head puts in the Eagleford Group and Tykoski and colleagues in the Lewisville; the registry has no entry for it.
+
 ## When one source calls a unit a formation and another a member, which rank does the registry record?
 
 *2026-09-20*
@@ -21,9 +36,9 @@
 ## References
 
 - `tykoski2023a`: Tykoski, R. S.; Contreras, D. L.; Noto, C. (2023). The first small-bodied ornithopod dinosaur from the Lewisville Formation (middle Cenomanian) of Texas. *Journal of Vertebrate Paleontology* 43(2). doi:10.1080/02724634.2023.2257238
+- `head1998a`: Head, J. J. (1998). A new species of basal hadrosaurid (Dinosauria, Ornithischia) from the Cenomanian of Texas. *Journal of Vertebrate Paleontology* 18(4): 718-738. doi:10.1080/02724634.1998.10011101
 - `sayão2020a`: Sayão, J. M.; Saraiva, A. Á. F.; Brum, A. S.; Bantim, R. A. M.; de Andrade, R. C. L. P.; Cheng, X.; de Lima, F. J.; de Paula Silva, H.; Kellner, A. W. A. (2020). The first theropod dinosaur (Coelurosauria, Theropoda) from the base of the Romualdo Formation (Albian), Araripe Basin, Northeast Brazil. *Scientific Reports* 10(1). doi:10.1038/s41598-020-67822-9
 - `cavalcanti2026a`: Cavalcanti, J. A. D.; da Silva, M. S.; Schobbenhaus, C.; Seer, H. J.; de Moraes, L. C.; Baptista, M. C. (2026). Assessment of paleontological geosites of Uberaba UNESCO Global Geopark (Minas Gerais, Brazil). *International Journal of Geoheritage and Parks* 14(2): 100280. doi:10.1016/j.ijgeop.2026.100280
 - `mcdonald2017a`: McDonald, A. T.; Gates, T. A.; Zanno, L. E.; Makovicky, P. J. (2017). Anatomy, taphonomy, and phylogenetic implications of a new specimen of Eolambia caroljonesa (Dinosauria: Ornithopoda) from the Cedar Mountain Formation, Utah, USA. *PLOS ONE* 12(5). doi:10.1371/journal.pone.0176896
-- `head1998a`: Head, J. J. (1998). A new species of basal hadrosaurid (Dinosauria, Ornithischia) from the Cenomanian of Texas. *Journal of Vertebrate Paleontology* 18(4): 718-738. doi:10.1080/02724634.1998.10011101
 - `naish2004a`: Naish, D.; Martill, D. M.; Frey, E. (2004). Ecology, Systematics and Biogeographical Relationships of Dinosaurs, Including a New Theropod, from the Santana Formation (?Albian, Early Cretaceous) of Brazil. *Historical Biology* 16(2-4): 57-70. doi:10.1080/08912960410001674200
 - `santucci2022a`: Santucci, R. M.; Filippi, L. S. (2022). Last titans: Titanosaurs from the Campanian–Maastrichtian age. In *South American Sauropodomorph Dinosaurs: Record, Diversity and Evolution*, pp. 341-391. Springer International Publishing. doi:10.1007/978-3-030-95959-3_10

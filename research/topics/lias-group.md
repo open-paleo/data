@@ -1,5 +1,19 @@
 # Lias Group
 
+## Does the Lias Group get an entry?
+
+*2026-10-14*
+
+**Conclusion.** Yes, at group rank, Rhaetian to Aalenian, as the parent of the Blue Lias, Charmouth Mudstone and Scunthorpe Mudstone. Cox and colleagues (1999) define the group and its age in their own framework, and nothing in the sources argues against the containment the entry below found. Settles the Open line of the entry below. Governs the [Lias Group](../../stratigraphy/l/lias.yml) and `parent: Lias` on the [Blue Lias](../../stratigraphy/b/blue-lias.yml), [Charmouth Mudstone](../../stratigraphy/c/charmouth-mudstone.yml) and [Scunthorpe Mudstone](../../stratigraphy/s/scunthorpe-mudstone.yml).
+
+**Evidence.**
+- cox1999a, Lias Group, Chronostratigraphy: "Uppermost Triassic to Middle Jurassic (lower Aalenian)"; thickness "Up to c. 1300 m"; lower boundary "at the base of the Blue Lias Formation (q.v.), Scunthorpe Mudstone Formation (q.v) or, in the Cleveland Basin, the Redcar Mudstone Formation (q.v.)".
+
+**Ruled out.**
+- *No parent for the three formations.* The entry below found the containment uncontested.
+
+**Open.** Nothing.
+
 ## Do the Scunthorpe Mudstone and the Blue Lias belong to one Lias Group, and why does neither carry a parent?
 
 *2026-09-30*

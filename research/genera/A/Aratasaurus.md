@@ -1,5 +1,20 @@
 # *Aratasaurus*
 
+## What stages does *Aratasaurus* take?
+
+*2026-10-14*
+
+**Conclusion.** Aptian and Albian. The describing paper gives the horizon both ways: its title places the theropod at "the base of the Romualdo Formation (Albian)", and its horizon statement puts it in the formation "(Aptian)", 2.5 m above the Ipubi contact. Both are the paper's own readings of this level, so the stage takes both. Governs `stage: [Aptian, Albian]` on [*Aratasaurus museunacionali*](../../../genera/A/Aratasaurus.yml).
+
+**Evidence.**
+- sayão2020a, title: "The first theropod dinosaur (Coelurosauria, Theropoda) from the base of the Romualdo Formation (Albian), Araripe Basin, Northeast Brazil".
+- sayão2020a, Locality and horizon: the Romualdo "Formation (Aptian), in a dark shale located about 2.5 m above the contact with Ipubi Formation".
+
+**Ruled out.**
+- *Albian alone.* It drops the horizon statement.
+
+**Open.** The Albian reading against the Santana Group's Aptian, as in the [Santana](../../stratigraphy/s/santana.md) note.
+
 ## What does the describing paper establish about the *Aratasaurus* site?
 
 *2026-08-12*
