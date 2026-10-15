@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-10-15T03:37:16.518Z
+  built_at: 2026-10-15T03:50:50.156Z
   clade_count: 188
   genus_count: 1427
   license: CC-BY-4.0
@@ -189103,8 +189103,9 @@ genera:
             - Late Jurassic
           stage:
             - Kimmeridgian
+            - Tithonian
           from_ma: 154.8
-          to_ma: 149.2
+          to_ma: 143.1
         location:
           country: CN
           locality: near Yangyuan Village, Zhenghe
@@ -189112,7 +189113,7 @@ genera:
           formation: Nanyuan
           part: lower
           notes: |
-            Xu and colleagues (2026) correlate the horizon with the layers that yielded Fujianvenator, which Xu and colleagues (2023) date with zircon ages of 150.2 ± 1.1 Ma and 149.9 ± 1.1 Ma, both Kimmeridgian on the ICS chart v2024/12 at their central values; the "Tithonian stage" both papers give belongs to an older chart.
+            Xu and colleagues (2026) correlate the horizon with the layers that yielded Fujianvenator, Baminornis and Zhengheornis. In Xu and colleagues' (2023) section those layers lie between a tuffite dated 150.2 ± 1.1 Ma and the ignimbrite over the fossil-bearing sediments, dated 148 ± 1.9 Ma: Kimmeridgian to Tithonian on the ICS chart v2024/12. The "Tithonian stage" both papers give belongs to an older chart.
           region_code: CN-FJ
           part_of: formation
         type_specimen:
@@ -189149,7 +189150,7 @@ genera:
         issue: "7978"
         pages: 336-343
         doi: 10.1038/s41586-023-06513-7
-        notes: Dates the fossil-bearing layers of the lower Nanyuan Formation that the describing paper correlates with the holotype's horizon.
+        notes: Dates the fossil-bearing layers of the lower Nanyuan Formation that the describing paper correlates with the holotype's horizon, and the ignimbrite that overlies them.
     taxonomy:
       - Life
       - Animalia
@@ -191415,15 +191416,20 @@ genera:
           name:
             - Late Jurassic
           stage:
+            - Kimmeridgian
             - Tithonian
-          from_ma: 149.2
+          from_ma: 154.8
           to_ma: 143.1
         location:
           country: CN
           region: Fujian
           locality: Yangyuan Village
           formation: Nanyuan
+          part: lower
+          notes: |
+            Wang and colleagues (2026) place the holotype in layer six of the excavated section, above the layer that yielded Fujianvenator. In Xu and colleagues' (2023) log of that section, layer six lies above a tuffite dated 149.9 ± 1.1 Ma, Kimmeridgian on the ICS chart v2024/12, and the ignimbrite that overlies the fossil-bearing sediments is dated 148 ± 1.9 Ma, which is Tithonian. The "Tithonian stage" both papers give belongs to an older chart.
           region_code: CN-FJ
+          part_of: formation
         type_specimen:
           specimen_id:
             - IVPP V34168
@@ -191448,6 +191454,17 @@ genera:
         article_number: eaeb5202
         publisher: American Association for the Advancement of Science (AAAS)
         doi: 10.1126/sciadv.aeb5202
+      - id: xu2023a
+        authors: Xu, L.; Wang, M.; Chen, R.; Dong, L.; Lin, M.; Xu, X.; Tang, J.; You, H.; Zhou, G.; Wang, L.; He, W.; Li, Y.; Zhang, C.; Zhou, Z.
+        year: 2023
+        title: A new avialan theropod from an emerging Jurassic terrestrial fauna
+        journal: Nature
+        publisher: Springer Science and Business Media LLC
+        volume: "621"
+        issue: "7978"
+        pages: 336-343
+        doi: 10.1038/s41586-023-06513-7
+        notes: Dates the excavated section of the lower Nanyuan Formation from whose layer six the holotype comes.
     taxonomy:
       - Life
       - Animalia
