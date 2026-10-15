@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-10-15T00:53:10.006Z
+  built_at: 2026-10-15T03:08:08.489Z
   clade_count: 188
   genus_count: 1427
   license: CC-BY-4.0
@@ -21115,6 +21115,7 @@ genera:
             - Late Cretaceous
           stage:
             - Coniacian
+          resolution: horizon
           from_ma: 89.8
           to_ma: 85.7
         location:
@@ -21123,6 +21124,7 @@ genera:
           locality: Tadi
           formation: Itombe
           bed: Tadi
+          notes: Mateus and colleagues (2011) give the horizon as the late Turonian Tadi Beds of the Itombe Formation; Mateus and colleagues (2019) date the Iembe locality Coniacian on an ammonite, naming neither the bed nor the formation, so the Coniacian falls outside the beds' own dating.
           region_code: AO-BGO
         type_specimen:
           specimen_id:
@@ -21162,6 +21164,15 @@ genera:
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
         notes: Source of the body length, mass, and hip height estimates.
+      - id: mateus2019a
+        authors: Mateus, O.; Callapez, P. M.; Polcyn, M. J.; Schulp, A. S.; Gonçalves, A. O.; Jacobs, L. L.
+        year: 2019
+        title: "The fossil record of biodiversity in Angola through time: a paleontological perspective"
+        book: Biodiversity of Angola (Huntley, B. J.; Russo, V.; Lages, F.; Ferrand, N., eds.)
+        publisher: Springer International Publishing
+        pages: 53-76
+        doi: 10.1007/978-3-030-03083-4_4
+        notes: Reports the Iembe locality as Coniacian after the discovery of the ammonite Protexanites there.
     taxonomy:
       - Life
       - Animalia
@@ -67714,6 +67725,7 @@ genera:
             - Early Cretaceous
           stage:
             - Albian
+          resolution: reworked
           from_ma: 113.2
           to_ma: 100.5
         location:
@@ -67722,6 +67734,7 @@ genera:
           locality: Trumpington
           formation: West Melbury Marly Chalk
           member: Cambridge Greensand
+          notes: Barrett and colleagues (2020) record that the Cambridge Greensand's tetrapods are "largely reworked from the underlying Gault Formation (upper Albian)", so the type takes the Albian of the Gault while the member it was found in is Cenomanian.
           region_code: GB-CAM
         type_specimen:
           specimen_id:
@@ -74812,7 +74825,7 @@ genera:
     pronunciation:
       phonetic: jy-GAN-to-SEE-lus
     etymology: giant shin
-    description: Gigantoscelus is a dubious genus of basal sauropodomorph dinosaur from the Late Triassic or Early Jurassic of South Africa.
+    description: Gigantoscelus is a dubious genus of basal sauropodomorph dinosaur from the Early Jurassic of South Africa.
     dispute:
       summary: |
         Gigantoscelus molengraaffi is a nomen dubium based on a fragmentary femur from southern Africa (Galton and Upchurch, 2004).
@@ -74843,13 +74856,18 @@ genera:
         type_species: true
         period:
           name:
-            - Late Triassic
             - Early Jurassic
+          stage:
+            - Sinemurian
+            - Pliensbachian
+            - Toarcian
+          from_ma: 199.5
+          to_ma: 174.7
         location:
           country: ZA
           region: Limpopo
           locality: Haakdoornbult 344
-          formation: Bushveld Sandstone
+          formation: Clarens
           region_code: ZA-LP
         type_specimen:
           specimen_id:
@@ -108023,6 +108041,7 @@ genera:
             - Early Cretaceous
           stage:
             - Albian
+          resolution: reworked
           from_ma: 113.2
           to_ma: 100.5
         location:
@@ -108031,6 +108050,7 @@ genera:
           region: Cambridgeshire
           formation: West Melbury Marly Chalk
           member: Cambridge Greensand
+          notes: Barrett and colleagues (2020) record that the Cambridge Greensand's tetrapods are "largely reworked from the underlying Gault Formation (upper Albian)", so the type takes the Albian of the Gault while the member it was found in is Cenomanian.
           region_code: GB-CAM
         size:
           length_m:
@@ -108073,6 +108093,16 @@ genera:
         publisher: British Geological Survey
         volume: RR/05/01
         notes: Places the Cambridge Greensand Member at the base of the West Melbury Marly Chalk Formation.
+      - id: barrett2020a
+        authors: Barrett, P. M.; Bonsor, J. A.
+        year: 2020
+        title: A revision of the non-avian dinosaurs 'Eucercosaurus tanyspondylus' and 'Syngonosaurus macrocercus' from the Cambridge Greensand, UK
+        journal: Cretaceous Research
+        publisher: Elsevier BV
+        volume: "118"
+        pages: "104638"
+        doi: 10.1016/j.cretres.2020.104638
+        notes: Records that the Cambridge Greensand fauna is largely reworked from the Gault.
     taxonomy:
       - Life
       - Animalia
@@ -164508,6 +164538,7 @@ genera:
             - Early Cretaceous
           stage:
             - Albian
+          resolution: reworked
           from_ma: 113.2
           to_ma: 100.5
         location:
@@ -164515,6 +164546,7 @@ genera:
           region: Cambridgeshire
           formation: West Melbury Marly Chalk
           member: Cambridge Greensand
+          notes: Barrett and colleagues (2020) record that the Cambridge Greensand's tetrapods are "largely reworked from the underlying Gault Formation (upper Albian)", so the type takes the Albian of the Gault while the member it was found in is Cenomanian.
           region_code: GB-CAM
         type_specimen:
           specimen_id:
