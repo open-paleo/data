@@ -321,6 +321,9 @@ the part number in `issue`, even when the book's title also names the part. A
 chapter has no `journal`. A standalone book has a `title` and a `publisher` and
 no `book`. Every chapter of one volume gives the volume in the same words.
 
+A page range in `pages` takes a plain hyphen (`237-242`), never an en or em
+dash, and the validator rejects any other dash.
+
 ## Names and Language
 
 Open Paleo is the core dataset, meant to be consumable by everyone, so its

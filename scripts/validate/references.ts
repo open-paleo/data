@@ -321,7 +321,8 @@ export function checkSelfContainedReferences(context: ValidationContext): void
  *
  * Reference store integrity — each references/<letter>/<id>.yml file must
  * parse, carry an `id` equal to its filename (NFC + lowercase), and hold the
- * required bibliographic fields. This is the single source of truth for
+ * required bibliographic fields, with any page range written with a plain
+ * hyphen. This is the single source of truth for
  * bibliographic data, so completeness is enforced here rather than per citing
  * file.
  *
@@ -400,6 +401,16 @@ export function checkReferenceStoreIntegrity(context: ValidationContext): void
                     filePath,
                     `reference '${entry.id ?? baseName}': missing required field '${field}'`);
             }
+        }
+
+        // A page range takes a plain hyphen, so that one range cannot be written
+        // two ways ("15–51" and "15-51").
+        if (entry.pages !== undefined && /[‐-―−]/.test(String(entry.pages)))
+        {
+            checkError(
+                "Reference store integrity",
+                filePath,
+                `reference '${entry.id ?? baseName}': pages '${entry.pages}' uses a dash other than a hyphen; write it as '${String(entry.pages).replace(/[‐-―−]/g, "-")}'`);
         }
 
         // Each other form a work is cited in changes the author, the year or both;
