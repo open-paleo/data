@@ -1,5 +1,25 @@
 # *Paludititan*
 
+## Should *Paludititan* move to an informal Râul Mare Beds?
+
+*2026-10-14*
+
+**Conclusion.** Yes. The Râul Mare Beds become an informal formation, as the Pui Beds did, and *Paludititan* moves to them. This settles the formation left open in the 2026-09-01 entry below: the beds' place is disputed (the uppermost Sânpetru, the Densuș-Ciula, or a unit of its own), but every reading agrees the type locality is in these beds, so the record names them and the location note carries the describing paper's Sânpetru. The name is used for a unit apart from the Sânpetru proper by Augustin and colleagues (2022), Díaz and colleagues (2025) and Magyar and colleagues (2026), and Csiki-Sava and colleagues (2016) and Albert and colleagues (2025) treat the succession separately; Stoicescu and colleagues (2024) keep the outcrops in the Sânpetru. The stage stays Maastrichtian; the "'middle' to upper Maastrichtian" readings lie within it. Governs `location.formation: Râul Mare Beds` on [*Paludititan nalatzensis*](../../../genera/P/Paludititan.yml) and the entry [Râul Mare Beds](../../../stratigraphy/r/râul-mare-beds.yml).
+
+**Evidence.**
+- díaz2025a: "as yet not formally defined sedimentary successions in the west-central ('Râul Mare Beds'; probably 'middle' to upper Maastrichtian) and eastern-central ('Pui Beds', upper part of lower to lower part of upper Maastrichtian) areas of the depression".
+- augustin2022a: "Sînpetru Formation-correlative units ('Râul Mare Beds' in the central part of the basin, 'Pui Beds' in the eastern part)".
+- magyar2026a: *Zalmoxes* "both in the Sînpetru Formation … and in the 'Râul Mare Beds'".
+- albert2025a: "the uppermost Cretaceous Sînpetru Formation or the coeval 'Raul Mare beds'".
+- csiki-sava2016a: "Raul Mare Valley succession, tentatively referred to the Sînpetru Formation".
+- stoicescu2024a: the Sânpetru "is exposed in outcrops along the Râul Mare riverbed at Totești … and Nălaț-Vad".
+
+**Ruled out.**
+- *Sânpetru Formation.* The describing paper's value, kept in the location note. Only one paper read since 2016 still folds the beds into the Sânpetru, and the most recent work draws them as a column of their own.
+- *Densuș-Ciula Formation.* Proposed by Panaiotu and colleagues (2011), which has not been read; the papers read only report it.
+
+**Open.** Whether the beds are formally defined, and as what.
+
 ## Is Nălaţ-Vad in the Sânpetru Formation, and are the Râul Mare Beds a member?
 
 *2026-09-01*
@@ -35,7 +55,11 @@
 
 ## References
 
-- `csiki2010a`: Csiki, Z.; Codrea, V.; Jipa-Murzea, C.; Godefroit, P. (2010). A partial titanosaur (Sauropoda, Dinosauria) skeleton from the Maastrichtian of Nalat-Vad, Hateg Basin, Romania. *Neues Jahrbuch für Geologie und Paläontologie - Abhandlungen* 258(3): 297-324. doi:10.1127/0077-7749/2010/0098
 - `díaz2025a`: Díaz, V. D.; Mannion, P. D.; Csiki-Sava, Z.; Upchurch, P. (2025). Revision of Romanian sauropod dinosaurs reveals high titanosaur diversity and body-size disparity on the latest Cretaceous Haţeg Island, with implications for titanosaurian biogeography. *Journal of Systematic Palaeontology* 23(1). doi:10.1080/14772019.2024.2441516
+- `augustin2022a`: Augustin, F. J.; Bastiaans, D.; Dumbravă, M. D.; Csiki-Sava, Z. (2022). A new ornithopod dinosaur, Transylvanosaurus platycephalus gen. et sp. nov. (Dinosauria: Ornithischia), from the Upper Cretaceous of the Haţeg Basin, Romania. *Journal of Vertebrate Paleontology* 42(2). doi:10.1080/02724634.2022.2133610
+- `magyar2026a`: Magyar, J.; Ősi, A.; Csiki-Sava, Z.; Budai, S.; Botfalvai, G. (2026). New early Maastrichtian 'duck-billed' dinosaur from Hațeg Basin (Densuș-Ciula Formation, Romania) documents an endemic clade of non-hadrosaurid hadrosauroids in the south-eastern Late Cretaceous European Archipelago. *Journal of Systematic Palaeontology* 24(1): 2607800. doi:10.1080/14772019.2025.2607800
+- `albert2025a`: Albert, G.; Budai, S.; Csiki-Sava, Z.; Makádi, L.; Ţabară, D.; Árvai, V.; Bălc, R.; Bindiu-Haitonic, R.; Ducea, M. N.; Botfalvai, G. (2025). Age and palaeoenvironmental constraints on the earliest dinosaur-bearing strata of the Densuș-Ciula Formation (Hațeg Basin, Romania): Evidence of their late Campanian-early Maastrichtian syntectonic deposition. *Cretaceous Research* 170: 106095. doi:10.1016/j.cretres.2025.106095
 - `csiki-sava2016a`: Csiki-Sava, Z.; Vremir, M.; Vasile, Ş.; Brusatte, S. L.; Dyke, G.; Naish, D.; Norell, M. A.; Totoianu, R. (2016). The East Side Story – The Transylvanian latest Cretaceous continental vertebrate record and its implications for understanding Cretaceous-Paleogene boundary events. *Cretaceous Research* 57: 662-698. doi:10.1016/j.cretres.2015.09.003
+- `stoicescu2024a`: Stoicescu, V.; Codrea, V. A.; Bordeianu, M.; Solomon, A. A. (2024). Elopteryx at Nălaț-Vad: new theropod material described from the Hațeg Basin (Romania). *North-Western Journal of Zoology* 20(1): 73-80.
+- `csiki2010a`: Csiki, Z.; Codrea, V.; Jipa-Murzea, C.; Godefroit, P. (2010). A partial titanosaur (Sauropoda, Dinosauria) skeleton from the Maastrichtian of Nalat-Vad, Hateg Basin, Romania. *Neues Jahrbuch für Geologie und Paläontologie - Abhandlungen* 258(3): 297-324. doi:10.1127/0077-7749/2010/0098
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.
