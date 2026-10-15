@@ -1,5 +1,21 @@
 # Cambridge Greensand
 
+## What supports the Albian on the Cambridge Greensand?
+
+*2026-10-14*
+
+**Conclusion.** Nothing that dates the member; it is Cenomanian. The Albian belongs to its fauna, which is largely reworked from the Gault beneath, so the three Albian types found in it are recorded as reworked. Settles the Open line of the entry below. Governs `period: [Late Cretaceous]` and `stages: [Cenomanian]` on [Cambridge Greensand](../../../stratigraphy/c/cambridge-greensand.yml), and `resolution: reworked` on [*Macrurosaurus semnus*](../../../genera/M/Macrurosaurus.yml), [*Syngonosaurus macrocercus*](../../../genera/S/Syngonosaurus.yml) and [*Eucercosaurus tanyspondylus*](../../../genera/E/Eucercosaurus.yml).
+
+**Evidence.**
+- hopson2005a, Cambridge Greensand Member: "Upper Cretaceous, Cenomanian. *Mantelliceras mantelli* Zone, *Neostlingoceras carcitanense* Subzone."
+- barrett2020a: the member "(lower Cenomanian: Upper Cretaceous) has yielded a diverse fauna of terrestrial and marine tetrapods, whose remains are largely reworked from the underlying Gault Formation (upper Albian".
+- pereda-suberbiola1999a, p. 185: "recent work suggests a Late Albian or Early Cenomanian age for the deposits (Rawson et al. 1978; N.C. Fraser, pers. comm.)".
+
+**Ruled out.**
+- *The Albian from Pereda-Suberbiola and Barrett (1999).* A relayed either/or resting partly on a personal communication; Barrett, its co-author, gives the member as lower Cenomanian in 2020.
+
+**Open.** Nothing.
+
 ## Does Kirkland and colleagues' (2013) "upper Albian" date the Cambridge Greensand?
 
 *2026-09-20*
@@ -19,6 +35,7 @@
 
 ## References
 
+- `hopson2005a`: Hopson, P. M. (2005). A stratigraphical framework for the Upper Cretaceous Chalk of England and Scotland, with statements on the Chalk of Northern Ireland and the UK Offshore Sector. *British Geological Survey Research Report* RR/05/01.
 - `barrett2020a`: Barrett, P. M.; Bonsor, J. A. (2020). A revision of the non-avian dinosaurs 'Eucercosaurus tanyspondylus' and 'Syngonosaurus macrocercus' from the Cambridge Greensand, UK. *Cretaceous Research* 118: 104638. doi:10.1016/j.cretres.2020.104638
-- `kirkland2013a`: Kirkland, J. I.; Alcalá, L.; Loewen, M. A.; Espílez, E.; Mampel, L.; Wiersma, J. P. (2013). The Basal Nodosaurid Ankylosaur Europelta carbonensis n. gen., n. sp. from the Lower Cretaceous (Lower Albian) Escucha Formation of Northeastern Spain. *PLoS ONE* 8(12): e80405. doi:10.1371/journal.pone.0080405
 - `pereda-suberbiola1999a`: Pereda-Suberbiola, X.; Barrett, P. M. (1999). A systematic review of ankylosaurian dinosaur remains from the Albian-Cenomanian of England. *Special Papers in Palaeontology* 60: 177-208.
+- `kirkland2013a`: Kirkland, J. I.; Alcalá, L.; Loewen, M. A.; Espílez, E.; Mampel, L.; Wiersma, J. P. (2013). The Basal Nodosaurid Ankylosaur Europelta carbonensis n. gen., n. sp. from the Lower Cretaceous (Lower Albian) Escucha Formation of Northeastern Spain. *PLoS ONE* 8(12): e80405. doi:10.1371/journal.pone.0080405

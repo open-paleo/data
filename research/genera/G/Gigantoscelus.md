@@ -1,10 +1,24 @@
 # *Gigantoscelus*
 
+## Which unit and age does *Gigantoscelus* take now that the Bushveld Sandstone is the Clarens?
+
+*2026-10-14*
+
+**Conclusion.** The Clarens Formation, Sinemurian to Toarcian. Its type comes from the Bushveld Sandstone as Haughton (1924) and Van Heerden (1979) give it, which Bordy and Head (2018) record as an older name for the Clarens; with no statement about its own horizon, the record takes the formation's range. Supersedes the entry below, which kept the unit's epochs while its correlation was unsettled. Governs `location.formation: Clarens` and `stage` on [*Gigantoscelus molengraaffi*](../../../genera/G/Gigantoscelus.yml).
+
+**Evidence.**
+- bordy2018a: the Clarens "has also been referred … as the Bushveld Sandstone in the Lebombo, Springbok Flats, Tshipise, Tuli and Ellisras/Lephalale Basins".
+
+**Ruled out.**
+- *The lower Elliot, from Haughton's (1924) tie of the femur type to the base of the Red Beds.* A correlation by kind of fossil; the paper defining the unit settles which unit the name means.
+
+**Open.** Whether van Hoepen's (1916) limestone, which "may even" belong to the uppermost Bushveld Sandstone, lies within the Clarens or just below it.
+
 ## What age does *Gigantoscelus* take?
 
 *2026-10-13*
 
-**Conclusion.** The Bushveld Sandstone's epochs, Late Triassic and Early Jurassic, with no stage. The record's Hettangian–Sinemurian followed the unit's correlation with the Clarens Formation, the route by which *Massospondylus* is dated, while Haughton (1924) ties this femur's type to the base of the Red Beds, the lower Elliot. Neither correlation dates the bed, as the [Bushveld Sandstone](../../stratigraphy/b/bushveld-sandstone.md) note records, so the horizon takes the unit's range. Governs `period: [Late Triassic, Early Jurassic]` and the absent `stage` on [*Gigantoscelus molengraaffi*](../../../genera/G/Gigantoscelus.yml).
+**Conclusion.** The Bushveld Sandstone's epochs, Late Triassic and Early Jurassic, with no stage. The record's Hettangian–Sinemurian followed the unit's correlation with the Clarens Formation, the route by which *Massospondylus* is dated, while Haughton (1924) ties this femur's type to the base of the Red Beds, the lower Elliot. Neither correlation dates the bed, as the [Bushveld Sandstone](../../stratigraphy/c/clarens.md) note records, so the horizon takes the unit's range. Governs `period: [Late Triassic, Early Jurassic]` and the absent `stage` on [*Gigantoscelus molengraaffi*](../../../genera/G/Gigantoscelus.yml).
 
 **Evidence.**
 - haughton1924a, p. 427: "it is of a type that occurs apparently only near the base of the Red Beds in the Cape Province".
@@ -51,6 +65,7 @@
 
 ## References
 
+- `bordy2018a`: Bordy, E. M.; Head, H. V. (2018). Lithostratigraphy of the Clarens Formation (Stormberg Group, Karoo Supergroup), South Africa. *South African Journal of Geology* 121(1): 119-130. doi:10.25131/sajg.121.0009
 - `haughton1924a`: Haughton, S. H. (1924). The fauna and stratigraphy of the Stormberg Series. *Annals of the South African Museum* 12: 323-497.
 - `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
 - `vanheerden1979a`: Van Heerden, J. (1979). The morphology and taxonomy of Euskelosaurus (Reptilia: Saurischia; Late Triassic) from South Africa. *Navorsinge van die Nasionale Museum* 4: 21-84.

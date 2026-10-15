@@ -1,5 +1,20 @@
 # Itombe
 
+## Does the Itombe reach the Coniacian?
+
+*2026-10-14*
+
+**Conclusion.** No; the Itombe and its Tadi Beds are Turonian. The formation's Coniacian came only through the *Angolatitan* locality, which Mateus and colleagues (2019) date Coniacian on an ammonite without naming its bed or formation; a child is checked against its parent, not used to widen it. *Angolatitan* keeps the Coniacian, its describers' revision of their own late Turonian, and is marked `resolution: horizon` because that dating does not fit the beds it is recorded from. Governs `stages: [Turonian]` on [Itombe](../../../stratigraphy/i/itombe.yml) and its Tadi bed, and `resolution: horizon` on [*Angolatitan adamastor*](../../../genera/A/Angolatitan.yml).
+
+**Evidence.**
+- mateus2011a: "Tadi Beds, Itombe Formation, Late Turonian (around 90 M.a.), Late Cretaceous"; Antunes and Cappetta (2002) "reconfirm the late Turonian age of these beds, and place them in the 'Itombe Formation'".
+- mateus2019a: *Angolatitan* was "originally considered Turonian in age but following the discovery of the ammonite Protexanites sp. at Iembe, it is now considered Coniacian".
+
+**Ruled out.**
+- *The Coniacian for the Itombe or the Tadi Beds.* It dates the Iembe locality, and the paper giving it names neither unit.
+
+**Open.** Where the Iembe locality sits, if its Coniacian holds: in the Tadi Beds of a longer-ranging Itombe, or in a younger unit.
+
 ## What does the Coniacian on the Tadi Beds and the Itombe rest on?
 
 *2026-09-27*
@@ -17,5 +32,5 @@
 
 ## References
 
-- `mateus2019a`: Mateus, O.; Callapez, P. M.; Polcyn, M. J.; Schulp, A. S.; Gonçalves, A. O.; Jacobs, L. L. (2019). The fossil record of biodiversity in Angola through time: a paleontological perspective. In *Biodiversity of Angola (Huntley, B. J.; Russo, V.; Lages, F.; Ferrand, N., eds.)*, pp. 53-76. Springer International Publishing. doi:10.1007/978-3-030-03083-4_4
 - `mateus2011a`: Mateus, O.; Jacobs, L. L.; Schulp, A. S.; Polcyn, M. J.; Tavares, T. S.; Buta Neto, A.; Morais, M. L.; Antunes, M. T. (2011). Angolatitan adamastor, a new sauropod dinosaur and the first record from Angola. *Anais da Academia Brasileira de Ciências* 83(1): 221-233. doi:10.1590/s0001-37652011000100012
+- `mateus2019a`: Mateus, O.; Callapez, P. M.; Polcyn, M. J.; Schulp, A. S.; Gonçalves, A. O.; Jacobs, L. L. (2019). The fossil record of biodiversity in Angola through time: a paleontological perspective. In *Biodiversity of Angola (Huntley, B. J.; Russo, V.; Lages, F.; Ferrand, N., eds.)*, pp. 53-76. Springer International Publishing. doi:10.1007/978-3-030-03083-4_4

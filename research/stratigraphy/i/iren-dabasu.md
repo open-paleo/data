@@ -1,5 +1,22 @@
 # Iren Dabasu
 
+## Is "Erlian" another name for the Iren Dabasu?
+
+*2026-10-14*
+
+**Conclusion.** Yes: "Erlian Formation" is the name the Chinese literature gives this formation, printed beside "Iren Dabasu" as its equivalent, and not only the name of the basin and the city. "Elian" and "Erliandabusu" are spellings or romanizations of the two names, not further variants. Governs `variants: [Erlian]` on [Iren Dabasu](../../../stratigraphy/i/iren-dabasu.yml).
+
+**Evidence.**
+- bonnetti2014a: "the late Cretaceous Erlian (Erendabusu or Irendabasu) Formation (K2e)".
+- pittman2020a: "the Campanian-Maastrichtian Erlian (Iren Dabasu) Formation of Nei Mongol".
+- zhang2001a and xu2002c: Chinese titles "二连组" [Erlian Formation], English titles "Iren Dabasu Formation".
+- xi2021a, p. 382: "二连组(有些文献中称之为二连达布苏组)" [the Erlian Formation (called the Erlian Dabusu Formation in some literature)].
+
+**Ruled out.**
+- *"Elian" and "Erliandabusu" as variants.* They spell the same names.
+
+**Open.** A second use of the name: Xi and colleagues (2021) write that "青元岗组即内蒙古自治区地矿部门所建立的二连组" [the Qingyuangang Formation is the Erlian Formation established by the Inner Mongolia geology authorities], in the Hailar Basin. The registry has no Qingyuangang entry; one would collide with this variant.
+
 ## Which stages do the Iren Dabasu species take?
 
 *2026-10-06*
@@ -54,9 +71,12 @@
 
 ## References
 
-- `gilmore1933a`: Gilmore, C. W. (1933). On the dinosaurian fauna of the Iren Dabasu Formation. *Bulletin of the American Museum of Natural History* 68(2-3): 23-78.
-- `xu2002c`: Xu, X.; Zhang, Z. H.; Sereno, P. C.; Zhao, X. J.; Kuang, X. W.; Han, J.; Tan, L. (2002). A new therizinosauroid (Dinosauria, Theropoda) from the Upper Cretaceous Iren Dabasu Formation of Nei Mongol. *Vertebrata PalAsiatica* 40(3): 228-240.
+- `bonnetti2014a`: Bonnetti, C.; Malartre, F.; Huault, V.; Cuney, M.; Bourlange, S.; Liu, X.; Peng, Y. (2014). Sedimentology, stratigraphy and palynological occurrences of the late Cretaceous Erlian Formation, Erlian Basin, Inner Mongolia, People's Republic of China. *Cretaceous Research* 48: 177-192. doi:10.1016/j.cretres.2013.09.013
+- `pittman2020a`: Pittman, M.; Xu, X. (2020). Pennaraptoran theropod dinosaurs. Past progress and new frontiers. *Bulletin of the American Museum of Natural History* 440(1): 1-355. doi:10.1206/0003-0090.440.1.1
 - `zhang2001a`: Zhang, X. H.; Xu, X.; Zhao, X. J.; Sereno, P. C.; Kuang, X. W.; Tan, L. (2001). A long-necked therizinosauroid dinosaur from the Upper Cretaceous Iren Dabasu Formation of Nei Mongol, People's Republic of China. *Vertebrata PalAsiatica* 39(4): 282-290.
+- `xu2002c`: Xu, X.; Zhang, Z. H.; Sereno, P. C.; Zhao, X. J.; Kuang, X. W.; Han, J.; Tan, L. (2002). A new therizinosauroid (Dinosauria, Theropoda) from the Upper Cretaceous Iren Dabasu Formation of Nei Mongol. *Vertebrata PalAsiatica* 40(3): 228-240.
+- `xi2021a`: Xi, D. P.; Sun, L. X.; Qin, Z. H.; Li, G. B.; Li, G.; Wan, X. Q. (2021). Lithostratigraphic subdivision and correlation of the Cretaceous in China. *Journal of Stratigraphy* 45(3): 375-401. doi:10.19839/j.cnki.dcxzz.2021.0030
+- `gilmore1933a`: Gilmore, C. W. (1933). On the dinosaurian fauna of the Iren Dabasu Formation. *Bulletin of the American Museum of Natural History* 68(2-3): 23-78.
 - `xu2007b`: Xu, X.; Tan, Q.; Wang, J.; Zhao, X.; Tan, L. (2007). A gigantic bird-like dinosaur from the Late Cretaceous of China. *Nature* 447(7146): 844-847. doi:10.1038/nature05849
 - `xu2006c`: Xu, X.; Zhang, X.; Tan, Q.; Zhao, X.; Tan, L. (2006). A new titanosaurian sauropod from Late Cretaceous of Nei Mongol, China. *Acta Geologica Sinica (English Edition)* 80(1): 20-26. doi:10.1111/j.1755-6724.2006.tb00790.x
 - `smith1990a`: Smith, D.; Galton, P. (1990). Osteology of Archaeornithomimus asiaticus (Upper Cretaceous, Iren Dabasu Formation, People's Republic of China). *Journal of Vertebrate Paleontology* 10(2): 255-265. doi:10.1080/02724634.1990.10011811
@@ -65,7 +85,6 @@
 - `currie1993d`: Currie, P. J.; Eberth, D. A. (1993). Palaeontology, sedimentology and palaeoecology of the Iren Dabasu Formation (Upper Cretaceous), Inner Mongolia, People's Republic of China. *Cretaceous Research* 14(2): 127-144. doi:10.1006/cres.1993.1011
 - `vanitterbeeck2005b`: Van Itterbeeck, J.; Horne, D. J.; Bultynck, P.; Vandenberghe, N. (2005). Stratigraphy and palaeoenvironment of the dinosaur-bearing Upper Cretaceous Iren Dabasu Formation, Inner Mongolia, People's Republic of China. *Cretaceous Research* 26(4): 699-725. doi:10.1016/j.cretres.2005.03.004
 - `zanno2010a`: Zanno, L. E. (2010). A taxonomic and phylogenetic re-evaluation of Therizinosauria (Dinosauria: Maniraptora). *Journal of Systematic Palaeontology* 8(4): 503-543. doi:10.1080/14772019.2010.488045
-- `bonnetti2014a`: Bonnetti, C.; Malartre, F.; Huault, V.; Cuney, M.; Bourlange, S.; Liu, X.; Peng, Y. (2014). Sedimentology, stratigraphy and palynological occurrences of the late Cretaceous Erlian Formation, Erlian Basin, Inner Mongolia, People's Republic of China. *Cretaceous Research* 48: 177-192. doi:10.1016/j.cretres.2013.09.013
 - `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
 - `brochu2003a`: Brochu, C. R. (2003). Osteology of Tyrannosaurus rex: insights from a nearly complete skeleton and high-resolution computed tomographic analysis of the skull. *Society of Vertebrate Paleontology Memoirs* 7: 1-138. doi:10.2307/3889334
 - `carr2023a`: Carr, T. D. (2023). A reappraisal of tyrannosauroid fossils from the Iren Dabasu Formation (Coniacian–Campanian), Inner Mongolia, People's Republic of China. *Journal of Vertebrate Paleontology* 42(5): e2199817. doi:10.1080/02724634.2023.2199817

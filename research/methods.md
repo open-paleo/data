@@ -135,7 +135,7 @@
 
 **Rule.** A reference work or catalogue, such as *The Dinosauria* distribution chapter, an encyclopedia or a stratigraphic lexicon, is used to check a reading and to find the literature behind it. It extends a range a primary source establishes, and its note says so. It does not carry a value no primary source gives. Follow its citations to the primary, which is where the value is decided. Decides every field a source can support.
 
-**Why.** Most reference works cite their sources, so they are good for smell tests and leads, but a compilation row repeats a reading rather than making one. White's (1973) catalogue lists *Gigantoscelus* from the "Upper Triassic, Stormberg Series, Bushveld Sandstone" (white1973a, Alphabetical Listing of Genera), and it was once the only source cited for the [Bushveld Sandstone](../stratigraphy/b/bushveld-sandstone.yml)'s Late Triassic. It was dropped as a source, and the unit's age now rests on other readings.
+**Why.** Most reference works cite their sources, so they are good for smell tests and leads, but a compilation row repeats a reading rather than making one. White's (1973) catalogue lists *Gigantoscelus* from the "Upper Triassic, Stormberg Series, Bushveld Sandstone" (white1973a, Alphabetical Listing of Genera), and it was once the only source cited for the [Bushveld Sandstone](../stratigraphy/c/clarens.yml)'s Late Triassic. It was dropped as a source, and the unit's age now rests on other readings.
 
 **Exceptions.** A reference work that makes an original observation or argument of its own, rather than compiling, counts for that observation as a primary source would. This is rare, and the reference note names what the work adds.
 
