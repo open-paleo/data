@@ -16,4 +16,4 @@
 
 ## References
 
-- `motta2025a`: Motta, M. J.; Agnolín, F. L.; Brissón Egli, F.; Novas, F. E. (2025). Unenlagiid affinities for Imperobator antarcticus (Paraves: Theropoda): paleobiogeographical implications. *Ameghiniana* 62(1): 69–79. doi:10.5710/AMGH.13.11.2024.3604
+- `motta2025a`: Motta, M. J.; Agnolín, F. L.; Brissón Egli, F.; Novas, F. E. (2025). Unenlagiid affinities for Imperobator antarcticus (Paraves: Theropoda): paleobiogeographical implications. *Ameghiniana* 62(1): 69-79. doi:10.5710/AMGH.13.11.2024.3604

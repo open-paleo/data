@@ -33,6 +33,6 @@
 ## References
 
 - `deklerk2000a`: de Klerk, W. J.; Forster, C. A.; Sampson, S. D.; Chinsamy, A.; Ross, C. F. (2000). A new coelurosaurian dinosaur from the Early Cretaceous of South Africa. *Journal of Vertebrate Paleontology* 20(2): 324-332. doi:10.1671/0272-4634(2000)020[0324:ancdft]2.0.co;2
-- `choiniere2012a`: Choiniere, J.; Forster, C.; De Klerk, W. (2012). New information on Nqwebasaurus thwazi, a coelurosaurian theropod from the Early Cretaceous Kirkwood Formation in South Africa. *Journal of African Earth Sciences* s 71–72: 1–17. doi:10.1016/j.jafrearsci.2012.05.005
+- `choiniere2012a`: Choiniere, J.; Forster, C.; De Klerk, W. (2012). New information on Nqwebasaurus thwazi, a coelurosaurian theropod from the Early Cretaceous Kirkwood Formation in South Africa. *Journal of African Earth Sciences* 71-72: 1-17. doi:10.1016/j.jafrearsci.2012.05.005
 - `mcphee2016b`: McPhee, B. W.; Mannion, P. D.; de Klerk, W. J.; Choiniere, J. N. (2016). High diversity in the sauropod dinosaur fauna of the Lower Cretaceous Kirkwood Formation of South Africa: implications for the Jurassic-Cretaceous transition. *Cretaceous Research* 59: 228-248.
 - `forster2023a`: Forster, C. A.; de Klerk, W. J.; Poole, K. E.; Chinsamy‐Turan, A.; Roberts, E. M.; Ross, C. F. (2023). Iyuku raathi, a new iguanodontian dinosaur from the Early Cretaceous Kirkwood Formation, South Africa. *The Anatomical Record* 306(7): 1762-1803. doi:10.1002/ar.25038

@@ -18,4 +18,4 @@
 ## References
 
 - `baron2024a`: Baron, M. G. (2024). A new name for old bones: A reassessment of Early Jurassic theropod remains from Dorset, England. *Palaeontologia Electronica* 27(1): 1-12. doi:10.26879/1346
-- `norman2020a`: Norman, D. B. (2020). Scelidosaurus harrisonii from the Early Jurassic of Dorset, England: the dermal skeleton. *Zoological Journal of the Linnean Society* 190(1): 1–53. doi:10.1093/zoolinnean/zlz085
+- `norman2020a`: Norman, D. B. (2020). Scelidosaurus harrisonii from the Early Jurassic of Dorset, England: the dermal skeleton. *Zoological Journal of the Linnean Society* 190(1): 1-53. doi:10.1093/zoolinnean/zlz085

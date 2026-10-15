@@ -20,4 +20,4 @@
 ## References
 
 - `mo2025a`: Mo, J.; Zhou, X.; Fu, Q.; Xiong, D.; Hu, M.; Xu, X. (2025). A New Eusauropod Dinosaur from the Lower and Middle Jurassic Wangmen Formation of Ningming County, Guangxi, South China. *Acta Geologica Sinica (English Edition)* 99(4): 909-924. doi:10.1111/1755-6724.15331
-- `meng2000a`: Meng, Y. Y. (2000). [The discovery of Jurassic charophytes from the northern margin in the Shiwandashan basin, and its significances]. *Guangxi Geology*: 19–21.
+- `meng2000a`: Meng, Y. Y. (2000). [The discovery of Jurassic charophytes from the northern margin in the Shiwandashan basin, and its significances]. *Guangxi Geology*: 19-21.

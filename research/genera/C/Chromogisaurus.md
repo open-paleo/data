@@ -19,4 +19,4 @@
 ## References
 
 - `ezcurra2010a`: Ezcurra, M. D. (2010). A new early dinosaur (Saurischia: Sauropodomorpha) from the Late Triassic of Argentina: a reassessment of dinosaur origin and phylogeny. *Journal of Systematic Palaeontology* 8(3): 371-425. doi:10.1080/14772019.2010.484650
-- `martínez2012a`: Martínez, R. N.; Apaldetti, C.; Abelín, D. (2012). Basal sauropodomorphs from the Ischigualasto Formation. *Journal of Vertebrate Paleontology* 32(sup1): 51–69. doi:10.1080/02724634.2013.819361
+- `martínez2012a`: Martínez, R. N.; Apaldetti, C.; Abelín, D. (2012). Basal sauropodomorphs from the Ischigualasto Formation. *Journal of Vertebrate Paleontology* 32(sup1): 51-69. doi:10.1080/02724634.2013.819361

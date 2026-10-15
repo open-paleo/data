@@ -19,7 +19,7 @@
 
 ## References
 
-- `ding2020a`: Ding, A.; Pittman, M.; Upchurch, P.; O'Connor, J.; Field, D. J.; Xu, X. (2020). The biogeography of coelurosaurian theropods and its impact on their evolutionary history. In *Pennaraptoran Theropod Dinosaurs: Past Progress and New Frontiers (Pittman, M.; Xu, X., eds.)*, pp. 117-157. American Museum of Natural History.
+- `ding2020a`: Ding, A.; Pittman, M.; Upchurch, P.; O'Connor, J.; Field, D. J.; Xu, X. (2020). The biogeography of coelurosaurian theropods and its impact on their evolutionary history. In *Pennaraptoran Theropod Dinosaurs: Past Progress and New Frontiers (Pittman, M.; Xu, X., eds.)*, pp. 117-157. American Museum of Natural History, New York.
 - `martinelli2007a`: Martinelli, A. G.; Vera, E. I. (2007). Achillesaurus manazzonei, a new alvarezsaurid theropod (Dinosauria) from the Late Cretaceous Bajo de la Carpa Formation, Río Negro Province, Argentina. *Zootaxa* 1582(1). doi:10.11646/zootaxa.1582.1.1
 - `huene1929a`: Huene, F. V. (1929). Los saurisquios y ornitisquios del Cretáceo Argentino [The Saurischians and Ornithischians of the Argentine Cretaceous]. *Anales del Museo de La Plata, series 2* 3: 1-196.
 - `powell2003a`: Powell, J. E. (2003). Revision of South American Titanosaurid dinosaurs: palaeobiological, palaeobiogeographical and phylogenetic aspects. *Records of the Queen Victoria Museum* 111: 1-173.

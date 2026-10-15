@@ -19,5 +19,5 @@
 ## References
 
 - `sues2011a`: Sues, H. D.; Nesbitt, S. J.; Berman, D. S.; Henrici, A. C. (2011). A late-surviving basal theropod dinosaur from the latest Triassic of North America. *Proceedings of the Royal Society B: Biological Sciences* 278(1723): 3459-3464. doi:10.1098/rspb.2011.0410
-- `nesbitt2020a`: Nesbitt, S. J.; Sues, H. D. (2020). The osteology of the early-diverging dinosaur Daemonosaurus chauliodus (Archosauria: Dinosauria) from the Coelophysis Quarry (Triassic: Rhaetian) of New Mexico and its relationships to other early dinosaurs. *Zoological Journal of the Linnean Society* 191: 150–179. doi:10.1093/zoolinnean/zlaa080
+- `nesbitt2020a`: Nesbitt, S. J.; Sues, H. D. (2020). The osteology of the early-diverging dinosaur Daemonosaurus chauliodus (Archosauria: Dinosauria) from the Coelophysis Quarry (Triassic: Rhaetian) of New Mexico and its relationships to other early dinosaurs. *Zoological Journal of the Linnean Society* 191: 150-179. doi:10.1093/zoolinnean/zlaa080
 - `novas2021a`: Novas, F. E.; Agnolín, F. L.; Ezcurra, M. D.; Müller, R. T.; Martinelli, A. G.; Langer, M. C. (2021). Review of the fossil record of early dinosaurs from South America, and its phylogenetic implications. *Journal of South American Earth Sciences* 110: 103341. doi:10.1016/j.jsames.2021.103341

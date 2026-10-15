@@ -20,4 +20,4 @@
 
 - `jin2009a`: Jin, L.; Chen, J.; Zan, S.; Godefroit, P. (2009). A New Basal Neoceratopsian Dinosaur from the Middle Cretaceous of Jilin Province, China. *Acta Geologica Sinica (English Edition)* 83(2): 200-206. doi:10.1111/j.1755-6724.2009.00023.x
 - `zan2005a`: Zan, S. Q.; Chen, J.; Jin, L. Y.; Li, T. (2005). A primitive ornithopod from the Early Cretaceous Quantou Formation of central Jilin, China. *Vertebrata PalAsiatica* 43(3): 182-193.
-- `butler2011a`: Butler, R. J.; Jin, L.; Chen, J.; Godefroit, P. (2011). The postcranial osteology and phylogenetic position of the small ornithischian dinosaur Changchunsaurus parvus from the Quantou Formation (Cretaceous: Aptian–Cenomanian) of Jilin Province, north-eastern China. *Palaeontology* 55(3): 667–683. doi:10.1111/j.1475-4983.2011.01046.x
+- `butler2011a`: Butler, R. J.; Jin, L.; Chen, J.; Godefroit, P. (2011). The postcranial osteology and phylogenetic position of the small ornithischian dinosaur Changchunsaurus parvus from the Quantou Formation (Cretaceous: Aptian–Cenomanian) of Jilin Province, north-eastern China. *Palaeontology* 55(3): 667-683. doi:10.1111/j.1475-4983.2011.01046.x

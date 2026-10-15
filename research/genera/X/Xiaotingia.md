@@ -19,5 +19,5 @@
 ## References
 
 - `xu2011d`: Xu, X.; You, H.; Du, K.; Han, F. (2011). An Archaeopteryx-like theropod from China and the origin of Avialae. *Nature* 475(7357): 465-470. doi:10.1038/nature10288
-- `ding2020a`: Ding, A.; Pittman, M.; Upchurch, P.; O'Connor, J.; Field, D. J.; Xu, X. (2020). The biogeography of coelurosaurian theropods and its impact on their evolutionary history. In *Pennaraptoran Theropod Dinosaurs: Past Progress and New Frontiers (Pittman, M.; Xu, X., eds.)*, pp. 117-157. American Museum of Natural History.
+- `ding2020a`: Ding, A.; Pittman, M.; Upchurch, P.; O'Connor, J.; Field, D. J.; Xu, X. (2020). The biogeography of coelurosaurian theropods and its impact on their evolutionary history. In *Pennaraptoran Theropod Dinosaurs: Past Progress and New Frontiers (Pittman, M.; Xu, X., eds.)*, pp. 117-157. American Museum of Natural History, New York.
 - `peng2012a`: Peng, N.; Liu, Y. Q.; Kuang, H. W.; Jiang, X. J.; Xu, H. (2012). Stratigraphy and Geochronology of Vertebrate Fossil-Bearing Jurassic Strata from Linglongta, Jianchang County, Western Liaoning, Northeastern China. *Acta Geologica Sinica (English Edition)* 86(6): 1326-1339.

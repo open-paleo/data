@@ -20,6 +20,6 @@
 
 - `russell1993b`: Russell, D. A.; Dong, Z. M. (1993). The affinities of a new theropod from the Alxa Desert, Inner Mongolia, People's Republic of China. *Canadian Journal of Earth Sciences* 30(10): 2107-2127. doi:10.1139/e93-183
 - `zanno2010a`: Zanno, L. E. (2010). A taxonomic and phylogenetic re-evaluation of Therizinosauria (Dinosauria: Maniraptora). *Journal of Systematic Palaeontology* 8(4): 503-543. doi:10.1080/14772019.2010.488045
-- `zhao2008a`: Zhao, Q.; Xu, X.; Jia, C.; Dong, Z. (2008). Order Saurischia. In *The Chinese Fossil Reptiles and Their Kin (Li, J.; Wu, X.; Zhang, F., eds.)*, pp. 279–335. Science Press, Beijing.
+- `zhao2008a`: Zhao, Q.; Xu, X.; Jia, C.; Dong, Z. (2008). Order Saurischia. In *The Chinese Fossil Reptiles and Their Kin (Li, J.; Wu, X.; Zhang, F., eds.)*, pp. 279-335. Science Press, Beijing.
 - `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
 - `molina-pérez2019a`: Molina-Pérez, R.; Larramendi, A. (2019). Dinosaur Facts and Figures: The Theropods and Other Dinosauriformes. Princeton University Press.

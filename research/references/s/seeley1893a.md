@@ -16,4 +16,4 @@ Nothing.
 
 ## References
 
-- `seeley1893a`: Seeley, H. G. (1893). On Omosaurus phillipsi (Seeley). *Annual Report of the Yorkshire Philosophical Society for 1892*: 52–57.
+- `seeley1893a`: Seeley, H. G. (1893). On Omosaurus phillipsi (Seeley). *Annual Report of the Yorkshire Philosophical Society for 1892*: 52-57.

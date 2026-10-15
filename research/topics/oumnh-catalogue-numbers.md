@@ -20,5 +20,5 @@
 
 ## References
 
-- `nicholls2025a`: Nicholls, E. L.; Newell, S. M.; Howlett, E. A. (2025). History of the Megalosaurus type material on public display. *Earth Sciences History* 44(1): 267–292. doi:10.17704/1944-6187-44.1.267
-- `benson2008c`: Benson, R. B. J.; Barrett, P. M.; Powell, H. P.; Norman, D. B. (2008). The taxonomic status of Megalosaurus bucklandii (Dinosauria, Theropoda) from the Middle Jurassic of Oxfordshire, UK. *Palaeontology* 51(2): 419–424. doi:10.1111/j.1475-4983.2008.00751.x
+- `nicholls2025a`: Nicholls, E. L.; Newell, S. M.; Howlett, E. A. (2025). History of the Megalosaurus type material on public display. *Earth Sciences History* 44(1): 267-292. doi:10.17704/1944-6187-44.1.267
+- `benson2008c`: Benson, R. B. J.; Barrett, P. M.; Powell, H. P.; Norman, D. B. (2008). The taxonomic status of Megalosaurus bucklandii (Dinosauria, Theropoda) from the Middle Jurassic of Oxfordshire, UK. *Palaeontology* 51(2): 419-424. doi:10.1111/j.1475-4983.2008.00751.x

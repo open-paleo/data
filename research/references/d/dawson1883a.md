@@ -16,4 +16,4 @@
 
 ## References
 
-- `dawson1883a`: Dawson, G. M. (1883). Preliminary report on the geology of the Bow and Belly rivers region, North-west Territory, with special reference to coal deposits. *Geological and Natural History Survey and Museum of Canada, Report of Progress, 1880–82*: 1–23.
+- `dawson1883a`: Dawson, G. M. (1883). Preliminary report on the geology of the Bow and Belly rivers region, North-west Territory, with special reference to coal deposits. *Geological and Natural History Survey and Museum of Canada, Report of Progress, 1880–82*: 1-23.

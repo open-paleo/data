@@ -16,4 +16,4 @@
 
 ## References
 
-- `fang2015a`: Fang, Y.; Wu, C.; Guo, Z.; Hou, K.; Dong, L.; Wang, L.; Li, L. (2015). Provenance of the southern Junggar Basin in the Jurassic: evidence from detrital zircon geochronology and depositional environments. *Sedimentary Geology* 315: 47–63. doi:10.1016/j.sedgeo.2014.10.014
+- `fang2015a`: Fang, Y.; Wu, C.; Guo, Z.; Hou, K.; Dong, L.; Wang, L.; Li, L. (2015). Provenance of the southern Junggar Basin in the Jurassic: evidence from detrital zircon geochronology and depositional environments. *Sedimentary Geology* 315: 47-63. doi:10.1016/j.sedgeo.2014.10.014
