@@ -20,4 +20,4 @@
 - `agnolín2013a`: Agnolín, F. L.; Novas, F. E. (2013). Avian Ancestors. In *SpringerBriefs in Earth System Sciences*. Springer Netherlands. doi:10.1007/978-94-007-5637-3
 - `cau2018a`: Cau, A. (2018). The assembly of the avian body plan: a 160-million-year long process. *Bollettino della Società Paleontologica Italiana* 57(1): 1-25. doi:10.4435/BSPI.2018.01
 - `godefroit2013b`: Godefroit, P.; Cau, A.; Hu, D. Y.; Escuillié, F.; Wu, W.; Dyke, G. (2013). A Jurassic avialan dinosaur from China resolves the early phylogenetic history of birds. *Nature* 498(7454): 359-362. doi:10.1038/nature12168
-- `pittman2020b`: Pittman, M.; O'Connor, J.; Field, D. J.; Turner, A. H.; Ma, W.; Makovicky, P.; Xu, X. (2020). Pennaraptoran systematics. In *Pennaraptoran Theropod Dinosaurs: Past Progress and New Frontiers (Pittman, M.; Xu, X., eds.)*, pp. 7-36. American Museum of Natural History.
+- `pittman2020b`: Pittman, M.; O'Connor, J.; Field, D. J.; Turner, A. H.; Ma, W.; Makovicky, P.; Xu, X. (2020). Pennaraptoran systematics. In *Pennaraptoran Theropod Dinosaurs: Past Progress and New Frontiers (Pittman, M.; Xu, X., eds.)*, pp. 7-36. American Museum of Natural History, New York.
