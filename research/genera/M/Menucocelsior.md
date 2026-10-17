@@ -7,7 +7,7 @@
 **Conclusion.** The describing paper's, 39°30′27.08″S, 67°23′22.13″W, converted to -39.507522, -67.389481. It is the one position printed for this holotype's site; the other is printed for the *Kelumapusaura* holotype and reaches *Menucocelsior* only through a quarry 23 m away, and the coordinate rule does not take another specimen's site. Governs `location.coordinates` on [*Menucocelsior arriagadai*](../../../genera/M/Menucocelsior.yml). Supersedes the 2026-08-30 entry's "Unsettled", but not its **Open** question.
 
 **Evidence.**
-- rolando2021a, p. 2: "The specimens here described come from the Cerro Matadero site (67°23′22.13″W; 39°30′27.08″S; Fig.1)".
+- aranciagarolando2021a, p. 2: "The specimens here described come from the Cerro Matadero site (67°23′22.13″W; 39°30′27.08″S; Fig.1)".
 - rozadilla2021a, p. 1208: "Matadero Hill (39°30′12″S, 67°22′19″W; Fig. 1)"; "The paratype specimens were found in a quarry approximately 23 m from the holotype. The latter were found in close association with remains of the titanosaur Menucocelsior arriagadai".
 
 **Ruled out.**
@@ -22,7 +22,7 @@
 **Conclusion.** Unsettled. The record carries the position Rozadilla and colleagues (2021) print for Matadero Hill, the site of the *Kelumapusaura* holotype, whose paratypes lay in a quarry about 23 m away with *Menucocelsior* bones. The describing paper prints a different position for its own Cerro Matadero site, 39°30′27.08″S, 67°23′22.13″W, which converts to -39.507522, -67.389481 (our conversion), about 1.6 km west-southwest of the stored pair. Governs `location.coordinates` on [*Menucocelsior arriagadai*](../../../genera/M/Menucocelsior.yml).
 
 **Evidence.**
-- rolando2021a, p. 2, Materials and methods: "The specimens here described come from the Cerro Matadero site (67°23′22.13″W; 39°30′27.08″S; Fig.1), located within the Arriagada Farm, at 70 km south from General Roca city".
+- aranciagarolando2021a, p. 2, Materials and methods: "The specimens here described come from the Cerro Matadero site (67°23′22.13″W; 39°30′27.08″S; Fig.1), located within the Arriagada Farm, at 70 km south from General Roca city".
 - rozadilla2021a, p. 1208: "Matadero Hill (39°30′12″S, 67°22′19″W; Fig. 1), located within Arriagada Farm"; "The paratype specimens were found in a quarry approximately 23 m from the holotype. The latter were found in close association with remains of the titanosaur Menucocelsior arriagadai".
 
 **Ruled out.** Nothing; both positions are printed for the site, one directly and one through the shared quarry.
@@ -31,5 +31,5 @@
 
 ## References
 
-- `rolando2021a`: Rolando, M. A.; García Marsà, J. A.; Agnolín, F. L.; Motta, M. J.; Rozadilla, S.; Novas, F. E. (2021). The sauropod record of Salitral Ojo del Agua: An Upper Cretaceous (Allen Formation) fossiliferous locality from northern Patagonia, Argentina. *Cretaceous Research* 129. doi:10.1016/j.cretres.2021.105029
+- `aranciagarolando2021a`: Aranciaga Rolando, M.; García Marsà, J. A.; Agnolín, F. L.; Motta, M. J.; Rozadilla, S.; Novas, F. E. (2021). The sauropod record of Salitral Ojo del Agua: An Upper Cretaceous (Allen Formation) fossiliferous locality from northern Patagonia, Argentina. *Cretaceous Research* 129. doi:10.1016/j.cretres.2021.105029
 - `rozadilla2021a`: Rozadilla, S.; Brissón Egli, F.; Agnolín, F. L.; Aranciaga Rolando, A. M.; Novas, F. E. (2021). A new hadrosaurid (Dinosauria: Ornithischia) from the Late Cretaceous of northern Patagonia and the radiation of South American hadrosaurids. *Journal of Systematic Palaeontology* 19(17): 1207-1235. doi:10.1080/14772019.2021.2020917

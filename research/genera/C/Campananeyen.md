@@ -17,4 +17,4 @@
 
 ## References
 
-- `lerzo2025b`: Lerzo, L. N.; Fernández-Baldor, F. T.; Canale, J. I.; Whitlock, J. A.; Otero, A.; Gallina, P. A. (2025). They all floated in the cretaceous: new rebbachisaurid (Sauropoda, Diplodocoidea) with a highly pneumatized skeleton from the Upper Cretaceous (lower Cenomanian) of Patagonia, Argentina. *Historical Biology* 37(8): 1795-1808. doi:10.1080/08912963.2024.2383708
+- `lerzo2025b`: Lerzo, L. N.; Torcida Fernández-Baldor, F.; Canale, J. I.; Whitlock, J. A.; Otero, A.; Gallina, P. A. (2025). They all floated in the cretaceous: new rebbachisaurid (Sauropoda, Diplodocoidea) with a highly pneumatized skeleton from the Upper Cretaceous (lower Cenomanian) of Patagonia, Argentina. *Historical Biology* 37(8): 1795-1808. doi:10.1080/08912963.2024.2383708

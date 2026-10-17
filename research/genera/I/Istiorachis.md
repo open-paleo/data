@@ -17,5 +17,5 @@
 
 ## References
 
-- `lockwood2025a`: Lockwood, J. A. F.; Martill, D. M.; Maidment, S. C. R. (2025). The origins of neural spine elongation in iguanodontian dinosaurs and the osteology of a new sail‐back styracosternan (Dinosauria, Ornithischia) from the Lower Cretaceous Wealden Group of England. *Papers in Palaeontology* 11(4). doi:10.1002/spp2.70034
+- `lockwood2025a`: Lockwood, J. A. F.; Martill, D. M.; Maidment, S. C. R. (2025). The origins of neural spine elongation in iguanodontian dinosaurs and the osteology of a new sail-back styracosternan (Dinosauria, Ornithischia) from the Lower Cretaceous Wealden Group of England. *Papers in Palaeontology* 11(4). doi:10.1002/spp2.70034
 - `naish2022a`: Naish, D.; Cau, A. (2022). The osteology and affinities of Eotyrannus lengi, a tyrannosauroid theropod from the Wealden Supergroup of southern England. *PeerJ* 10: e12727. doi:10.7717/peerj.12727

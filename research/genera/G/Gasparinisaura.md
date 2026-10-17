@@ -23,7 +23,7 @@
 ## References
 
 - `dieudonné2026b`: Dieudonné, P. E.; Paulina-Carabajal, A.; Cruzado-Caballero, P. (2026). A redescription of the holotype skull of the ornithischian dinosaur Gasparinisaura cincosaltensis (Dryosauridae, Dysalotosaurinae clade nov.) and phylogenetic implications. *Cretaceous Research* 189: 106478. doi:10.1016/j.cretres.2026.106478
-- `dieudonné2026a`: Dieudonné, P.; Becerra, M. G.; Zanesco, T.; Tortosa, T.; Cruzado‐Caballero, P.; Stein, K.; Torcida Fernández‐Baldor, F. (2026). Foskeia pelendonum, a new rhabdodontomorph from the Lower Cretaceous of Salas de los Infantes (Burgos Province, Spain), and a new phylogeny of ornithischian dinosaurs. *Papers in Palaeontology* 12(1). doi:10.1002/spp2.70057
+- `dieudonné2026a`: Dieudonné, P.; Becerra, M. G.; Zanesco, T.; Tortosa, T.; Cruzado-Caballero, P.; Stein, K.; Torcida Fernández-Baldor, F. (2026). Foskeia pelendonum, a new rhabdodontomorph from the Lower Cretaceous of Salas de los Infantes (Burgos Province, Spain), and a new phylogeny of ornithischian dinosaurs. *Papers in Palaeontology* 12(1). doi:10.1002/spp2.70057
 
 ## Other references
 
