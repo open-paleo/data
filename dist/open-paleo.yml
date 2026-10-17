@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-10-16T22:13:14.656Z
+  built_at: 2026-10-17T02:12:44.683Z
   clade_count: 188
   genus_count: 1428
   license: CC-BY-4.0
@@ -644,7 +644,7 @@ clades:
         notes: Defined Allosauroidea and provided the shared cranial and postcranial characters used as its diagnosis.
   Alvarezsauridae:
     description: |
-      Alvarezsauridae is a family of small, long-legged maniraptoran theropods known from the Late Cretaceous of South America, North America, and Asia, from the Cenomanian to the uppermost Maastrichtian (Fowler and colleagues, 2020). Though once interpreted as flightless birds, they are now placed outside Avialae among the coelurosaurs (Qin and colleagues, 2019). The family includes the large-bodied Patagonykinae of Patagonia, the South American Alvarezsaurus, and the miniaturized Parvicursorinae, which some authors treat as the senior synonym of Mononykinae (Agnolín and colleagues, 2012). Alvarezsaurids are highly specialized animals, with tiny but powerful forelimbs ending in compact hands dominated by a single greatly enlarged claw, and long, tube-shaped snouts filled with numerous tiny teeth. These traits have led most researchers to interpret them as insect-eaters that used their stout arms to dig into ant and termite nests, while their long legs suggest they were fast, agile runners.
+      Alvarezsauridae is a family of small, long-legged maniraptoran theropods known from the Late Cretaceous of South America, North America, and Asia, from the Cenomanian to the uppermost Maastrichtian (Fowler and colleagues, 2020). Though once interpreted as flightless birds, they are now placed outside Avialae among the coelurosaurs (Qin and colleagues, 2019). The family includes the large-bodied Patagonykinae of Patagonia, the South American Alvarezsaurus, and the miniaturized Parvicursorinae, which some authors treat as the senior synonym of Mononykinae (Agnolín and colleagues, 2012). Alvarezsaurids have long legs and exceptionally short, robust forelimbs bearing a hypertrophied claw on the first finger, with the other fingers lost or greatly reduced in derived forms (Fowler and colleagues, 2020). Their simple teeth have prompted comparisons with living ant-eaters and an insect diet, the stout forelimbs perhaps used to tear apart vegetation or insect nests (Fowler and colleagues, 2020), though Agnolín and colleagues (2012) find no unambiguous evidence for ant-eating.
     taxonomy:
       - Life
       - Animalia
@@ -2660,9 +2660,9 @@ clades:
       - Reduced predentary
       - Rostrally converging dentary margins
     synonyms:
-      - name: Chaoyoungsauridae
-        type: emended spelling
-        reason: Family-group name made available by Zhao (1983) as the superfamily Chaoyoungosauroidea; cited as Chaoyoungsauridae and modified to Chaoyangsauridae by Zhao and colleagues (2006).
+      - name: Chaoyoungosauridae
+        type: nomen nudum
+        reason: The superfamily Chaoyoungosauroidea of Zhao (1983), lowered to a family by Olshevsky (1991); unavailable, because its type genus was itself a nomen nudum until Chaoyangsaurus was named.
     references:
       - id: zhao2006a
         authors: Zhao, X.; Cheng, Z.; Xu, X.; Makovicky, P. J.
@@ -2692,8 +2692,15 @@ clades:
         volume: "28"
         issue: 1-2
         pages: 295-306
-        notes: |
-          Erects the superfamily Chaoyoungosauroidea for Chaoyangsaurus, the name Zhao and colleagues (2006) modify into Chaoyangsauridae.
+        notes: Proposed the superfamily Chaoyoungosauroidea, with a short diagnosis, for the then-unpublished genus Chaoyoungosaurus.
+      - id: olshevsky1991a
+        authors: Olshevsky, G.
+        year: 1991
+        title: A revision of the parainfraclass Archosauria Cope, 1869, excluding the advanced Crocodylia
+        journal: Mesozoic Meanderings
+        volume: "2"
+        pages: 1-196
+        notes: Lowered Chaoyoungosauroidea to the family Chaoyoungosauridae, noting that both names were nomina nuda.
   Chasmosaurinae:
     description: |
       Chasmosaurinae is one of the two subfamilies of horned ceratopsid dinosaurs, comprising the long-frilled forms of the Late Cretaceous of western North America (Laramidia). Its members are distinguished by prominent, elongate brow horns, reduced nasal horns, and long frills that lack the long spines seen in their short-horned relatives the centrosaurines. Chasmosaurines first appeared in the early Campanian and persisted until the Cretaceous–Paleogene extinction that ended the age of non-avian dinosaurs, and their remains are known from western Canada, the western United States, and northern Mexico. The group was highly diverse, ranging from earlier forms such as Chasmosaurus and Pentaceratops to the derived and often gigantic Triceratopsini, which includes Triceratops, Torosaurus, and their close relatives. The distinctive shape of the frill and the small hornlets along its margin allow many species to be recognized even from fragmentary remains, contributing to the group's high named diversity.
@@ -3043,7 +3050,29 @@ clades:
         title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
-        notes: Recovers a monophyletic Compsognathidae including Compsognathus and the Jehol taxa.
+        notes: Treats Compsognathidae as a family including Compsognathus and the Jehol taxa.
+      - id: hwang2004a
+        authors: Hwang, S. H.; Norell, M. A.; Qiang, J.; Keqin, G.
+        year: 2004
+        title: A large Compsognathid from the early cretaceous Yixian formation of China
+        journal: Journal of Systematic Palaeontology
+        publisher: Informa UK Limited
+        volume: "2"
+        issue: "1"
+        pages: 13-30
+        doi: 10.1017/s1477201903001081
+        notes: Described Huaxiagnathus and recovered it as the sister taxon of a Sinosauropteryx plus Compsognathus clade, forming a monophyletic Compsognathidae.
+      - id: göhlich2006a
+        authors: Göhlich, U. B.; Chiappe, L. M.
+        year: 2006
+        title: A new carnivorous dinosaur from the Late Jurassic Solnhofen archipelago
+        journal: Nature
+        publisher: Springer Science and Business Media LLC
+        volume: "440"
+        issue: "7082"
+        pages: 329-332
+        doi: 10.1038/nature04579
+        notes: Described Juravenator and recovered it within a monophyletic Compsognathidae with Compsognathus, Sinosauropteryx and Huaxiagnathus.
   Coronosauria:
     description: |
       Coronosauria is a clade of neoceratopsian dinosaurs, defined as the smallest group containing both Protoceratops and Triceratops. Its members show the first development of the elaborate neck frill and the fusion of the first several neck vertebrae into a single unit, an adaptation that helped support their increasingly heavy heads. Two subgroups are generally recognized within it: the Protoceratopsidae, a set of small Asian forms including Protoceratops and its closest relatives, and the Ceratopsoidea, which contains the large horned Ceratopsidae along with related animals such as Zuniceratops. Coronosaurs lived during the Cretaceous of Asia and North America.
@@ -3318,7 +3347,7 @@ clades:
         title: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Places Diamantinasauria within Titanosauria as a likely early-branching group of Diamantinasaurus, Sarmientosaurus, Savannasaurus and Australotitan, reviewing its varied placements.
       - id: beeston2024a
         authors: Beeston, S. L.; Poropat, S. F.; Mannion, P. D.; Pentland, A. H.; Enchelmaier, M. J.; Sloan, T.; Elliott, D. A.
         year: 2024
@@ -4163,7 +4192,7 @@ clades:
         title: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Depicts Euhelopodidae as a somphospondylan clade roughly sister to Titanosauria, noting that not all studies accept the group or agree on its placement.
   Eumaniraptora:
     description: |
       Eumaniraptora, the "true maniraptorans," is a node-based clade of bird-line theropod dinosaurs that unites the avialans, which include Archaeopteryx and the more than 11,000 living species of birds, with the deinonychosaurs, the grouping of dromaeosaurids and troodontids. It is the node-based counterpart of the stem-based Paraves (Padian and colleagues, 1999), and some analyses recover scansoriopterygids as paravians that fall outside Eumaniraptora (Godefroit and colleagues, 2013). Its members are marked by long, winged forelimbs carrying large asymmetric feathers and an increasingly flexible, folding wrist, adaptations that set the stage for flapping flight in this lineage. Many forms also bore an enlarged, sickle-shaped claw on the second toe that was held retracted off the ground while walking. From small-bodied ancestors, dromaeosaurids and troodontids repeatedly evolved into larger animals through the Cretaceous, while body size continued to shrink in many of the avialans that led to modern birds.
@@ -4944,7 +4973,7 @@ clades:
         title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Uses Herrerasauria as another name for Herrerasauridae, placed within Saurischia but outside Theropoda.
   Herrerasauridae:
     description: |
       Herrerasauridae is a family of early carnivorous dinosaurs from the Late Triassic (Carnian to Norian) of South America, with more fragmentary possible members reported from North America, Africa, and Europe. They are among the oldest known dinosaurs, appearing in the fossil record around 233 million years ago. The best-known members — Herrerasaurus and Sanjuansaurus from Argentina and Staurikosaurus and Gnathovorax from Brazil — were bipedal predators; most were relatively small, generally no more than about four meters long, though the largest reached roughly six meters. Herrerasaurid anatomy is unusual and specialized, mixing very primitive and derived traits, and the group is not thought to be ancestral to any later dinosaur lineage. They only superficially resemble the theropods, sharing three-fingered grasping hands with curved claws and a hinged lower jaw while retaining a number of more primitive features.
@@ -5012,7 +5041,7 @@ clades:
         title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Places Herrerasauridae within Saurischia but outside Theropoda as its least contentious position, noting placements within Theropoda or as sister to Sauropodomorpha.
       - id: baron2018c
         authors: Baron, M. G.; Williams, M. E.
         year: 2018
@@ -5113,7 +5142,7 @@ clades:
         title: "The Princeton Encyclopedia of Dinosaurs: Ornithischians"
         publisher: Princeton University Press
         isbn: 978-0-691-25025-0
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Places Heterodontosauridae as the first-diverging branch of Ornithischia, noting an alternative placement at the base of Pachycephalosauria.
       - id: boyd2015a
         authors: Boyd, C. A.
         year: 2015
@@ -5486,6 +5515,15 @@ clades:
         pages: e7247
         doi: 10.7717/peerj.7247
         notes: Recovered Jinfengopteryx in a highly unstable position, as likely to fall within Sinovenatorinae as to join the Almas group, with Liaoningvenator closer to troodontines.
+      - id: pei2021a
+        authors: Pei, R.; Qin, Y.; Wen, A.; Zhao, Q.; Wang, Z.; Liu, Z.; Guo, W.; Liu, P.; Ye, W.; Wang, L.; Yin, Z.; Dai, R.; Xu, X.
+        year: 2021
+        title: A new troodontid from the Upper Cretaceous Gobi Basin of inner Mongolia, China
+        journal: Cretaceous Research
+        publisher: Elsevier BV
+        volume: "130"
+        doi: 10.1016/j.cretres.2021.105052
+        notes: Described Papiliovenator and recovered Jinfengopteryx as the sister taxon of Mei, in a clade with Sinovenator.
   Khebbashia:
     description: |
       Khebbashia is a node-based clade of rebbachisaurid sauropods that unites the two most derived subfamilies, Limaysaurinae and Rebbachisaurinae, to the exclusion of the more basal rebbachisaurid forms. It is defined as the least inclusive clade containing Limaysaurus tessonei, Nigersaurus taqueti, and Rebbachisaurus garasbae, and the node-based framing keeps it distinct from the stem-based family Rebbachisauridae. Its members were medium-sized sauropods that lived during the Early Cretaceous of South America, Africa, and Europe. These were among the most specialized rebbachisaurids, notable for highly modified feeding apparatus, with broad batteries of closely packed teeth and slender limb proportions.
@@ -5570,7 +5608,7 @@ clades:
         title: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Khebbashia as a clade forking into two subfamilies, reviewing the genera placed inside it or just outside it.
   Lambeosaurinae:
     description: |
       Lambeosaurinae is a group of crested hadrosaurid dinosaurs that includes Lambeosaurus, Corythosaurus, Hypacrosaurus, Parasaurolophus, Tsintaosaurus, Olorotitan, and the European and North African genera Arenysaurus and Ajnabia. Its members are set apart by elaborate hollow cranial crests that enclose looping extensions of the nasal passages, inferred to have functioned in vocalization and visual display. The group originated in Laurasia during the Late Cretaceous and was initially found across Europe and Asia. Around the Campanian, one lineage colonized western North America via Beringia and spread south to Mexico, radiating into a diverse array of body plans, while other members reached the Late Cretaceous islands of Europe and later crossed into northern Africa. Its internal classification into tribes such as Aralosaurini, Tsintaosaurini, Parasaurolophini, Lambeosaurini, and the sometimes-recognized Arenysaurini remains unsettled.
@@ -5745,7 +5783,7 @@ clades:
         title: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Lessemsauridae as a distinct early branch of sauropods including Lessemsaurus, Antetonitrus, Ledumahadi, Ingentia and possibly Blikanasaurus.
   Limaysaurinae:
     description: |
       Limaysaurinae is a subfamily of rebbachisaurid sauropod dinosaurs, one of the two subfamilies recognized within the rebbachisaurid clade Khebbashia. It is a stem-based group that gathers those rebbachisaurids more closely related to Limaysaurus than to Nigersaurus, and in current usage is typically restricted to the South American genera Limaysaurus and Cathartesaura. Its members were medium-sized, long-necked sauropods that lived in Patagonia during the mid- to Late Cretaceous. Like other rebbachisaurids, they were among the last surviving diplodocoids, persisting alongside the titanosaurs until fairly late in the Cretaceous.
@@ -5877,7 +5915,7 @@ clades:
         title: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Lirainosaurinae as a clade of small European titanosaurs whose placement within Titanosauria remains unresolved.
       - id: carballido2022a
         authors: Carballido, J. L.; Otero, A.; Mannion, P. D.; Salgado, L.; Pérez Moreno, A. P.
         year: 2022
@@ -6467,7 +6505,7 @@ clades:
         year: 1850
         title: Conspectus Systematum Herpetologiae et Amphibiologiae. Editio Altera Reformata
         publisher: E. J. Brill
-        notes: Credited with the name Megalosauria by Carrano and colleagues (2012), who applied it to the node uniting Spinosauridae and Megalosauridae.
+        notes: Printed Megalosauria as an alternative name for his order Dinosaurii, comprising Iguanodontidae, Megalosauridae and Geosauridae; Carrano and colleagues (2012) credit the name to it.
       - id: carrano2012a
         authors: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D.
         year: 2012
@@ -7277,7 +7315,7 @@ clades:
         year: 1986
         title: "The Dinosaur Heresies: New Theories Unlocking the Mystery of the Dinosaurs and Their Extinction"
         journal: William Morrow, New York
-        notes: First published the name Neotheropoda.
+        notes: First printed the name Neotheropoda as a branch label on its dinosaur family tree (p. 458), for the ceratosaurs and more derived theropods above the podokesaurs; the text does not discuss it.
       - id: sereno1998a
         authors: Sereno, P. C.
         year: 1998
@@ -8338,7 +8376,7 @@ clades:
         title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Treats Patagonykinae as the South American alvarezsaurid clade of Patagonykus and Bonapartenykus, noting the name has seldom been used since it was coined.
       - id: meso2024a
         authors: Meso, J. G.; Pol, D.; Chiappe, L.; Qin, Z.; Díaz-Martínez, I.; Gianechini, F.; Apesteguía, S.; Makovicky, P. J.; Pittman, M.
         year: 2024
@@ -8422,7 +8460,7 @@ clades:
         book: Handwörterbuch der Naturwissenschaften
         volume: "8"
         pages: 337-376
-        notes: Origin of the name Plateosauria.
+        notes: Proposed the suborder Plateosauria, with a diagnosis, as a replacement name for Theropoda, its six families including Plateosauridae, Anchisauridae and Megalosauridae.
       - id: sereno2007a
         authors: Sereno, P. C.
         year: 2007
@@ -9116,7 +9154,7 @@ clades:
         notes: Credited with the name Saltasaurinae by Wilson and Upchurch (2003).
   Saltasauroidea:
     description: |
-      Saltasauroidea is a superfamily of titanosaurian sauropod dinosaurs, defined by Carballido and colleagues (2022) as all taxa closer to Saltasaurus than to Patagotitan. This definition splits the derived titanosaur group Eutitanosauria roughly in half, making Saltasauroidea the sister branch to the inversely defined Colossosauria. França and colleagues (2016), who first used the name, applied it to a clade uniting the aeolosaurins and the heavily armored, often dwarfed saltasaurids, along with intermediate genera such as Baurutitan, Diamantinasaurus, and Isisaurus, and defined it as the most inclusive clade containing Saltasaurus but not Nemegtosaurus. Its members account for much of the terminal-Cretaceous titanosaur diversity across both Gondwana and Laurasia.
+      Saltasauroidea is a superfamily of titanosaurian sauropod dinosaurs, defined by Carballido and colleagues (2022) as all taxa closer to Saltasaurus than to Patagotitan. This definition splits the derived titanosaur group Eutitanosauria roughly in half, making Saltasauroidea the sister branch to the inversely defined Colossosauria. França and colleagues (2016), who introduced the name, applied it to a clade uniting the aeolosaurins and the heavily armored, often dwarfed saltasaurids, along with intermediate genera such as Baurutitan, Diamantinasaurus, and Isisaurus, and defined it as the most inclusive clade containing Saltasaurus but not Nemegtosaurus. Its members account for much of the terminal-Cretaceous titanosaur diversity across both Gondwana and Laurasia.
     taxonomy:
       - Life
       - Animalia
@@ -9809,7 +9847,7 @@ clades:
         title: "The Princeton Encyclopedia of Dinosaurs: Theropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25021-2
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Reviews Sinovenatorinae, noting that analyses seldom agree on its membership and that some place it within Troodontinae.
   Somphospondyli:
     description: |
       Somphospondyli is a clade of titanosauriform sauropod dinosaurs that lived from the Late Jurassic to the end of the Cretaceous, with remains found on every continent. It embraces all titanosauriforms more closely related to the giant, largely Cretaceous titanosaurs than to the brachiosaurids, and so unites the diverse Titanosauria with the East Asian euhelopodids and an assortment of more basal, non-titanosaurian forms. Members are distinguished by details of their vertebrae, including a long neck and internal bone tissue riddled with a sponge-like network of air-filled chambers. It is this spongy, camellate texture pervading the backbone that gives the group its name.
@@ -10367,7 +10405,7 @@ clades:
         issue: "10"
         pages: 2107-2127
         doi: 10.1139/e93-183
-        notes: First used the name at superfamily rank.
+        notes: Raised Maleev's family-group name to superfamily rank as Therizinosauroidea, new rank, with the new family Alxasauridae within it.
       - id: zanno2010a
         authors: Zanno, L. E.
         year: 2010
@@ -11066,7 +11104,7 @@ clades:
         title: "The Princeton Encyclopedia of Dinosaurs: Sauropods"
         publisher: Princeton University Press
         isbn: 978-0-691-25023-6
-        notes: Placement and assessment in the Princeton Encyclopedia of Dinosaurs.
+        notes: Reviews Unaysauridae, of Unaysaurus, Macrocollum and Jaklapallisaurus, noting its validity has been questioned and its position relative to Plateosauridae varies.
       - id: barrett2026a
         authors: Barrett, P. M.; Botha, J.; Sciscio, L.; Stuart, B. P.; Lovegrove, J.; Munyikwa, D.; Zondo, M.; Broderick, T. J.; Edwards, S. F.; Mbambo, E.; Chapelle, K. E. J.; Dollman, K. N.; Tolan, S.; Choiniere, J. N.
         year: 2026
