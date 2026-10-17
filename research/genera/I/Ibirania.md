@@ -18,5 +18,5 @@
 
 ## References
 
-- `navarro2022a`: Navarro, B. A.; Ghilardi, A. M.; Aureliano, T.; Díaz, V. D.; Bandeira, K. L. N.; Cattaruzzi, A. G. S.; Iori, F. V.; Martine, A. M.; Carvalho, A. B.; Anelli, L. E.; Fernandes, M. A.; Zaher, H. (2022). A New Nanoid Titanosaur (Dinosauria: Sauropoda) from the Upper Cretaceous of Brazil. *Ameghiniana* 59(5). doi:10.5710/amgh.25.08.2022.3477
+- `navarro2022a`: Navarro, B. A.; Ghilardi, A. M.; Aureliano, T.; Díez Díaz, V.; Bandeira, K. L. N.; Cattaruzzi, A. G. S.; Iori, F. V.; Martine, A. M.; Carvalho, A. B.; Anelli, L. E.; Fernandes, M. A.; Zaher, H. (2022). A New Nanoid Titanosaur (Dinosauria: Sauropoda) from the Upper Cretaceous of Brazil. *Ameghiniana* 59(5). doi:10.5710/amgh.25.08.2022.3477
 - `aureliano2021a`: Aureliano, T.; Nascimento, C. S. I.; Fernandes, M. A.; Ricardi-Branco, F.; Ghilardi, A. M. (2021). Blood parasites and acute osteomyelitis in a non-avian dinosaur (Sauropoda, Titanosauria) from the Upper Cretaceous Adamantina Formation, Bauru Basin, Southeast Brazil. *Cretaceous Research* 118: 104672. doi:10.1016/j.cretres.2020.104672

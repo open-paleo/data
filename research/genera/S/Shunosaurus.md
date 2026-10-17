@@ -23,7 +23,7 @@
 
 **Evidence.**
 - moore2020a, p. 1301: "radiometric dating of detrital zircons from beds of the lower Shaximiao Formation at Dashanpu now places the entire Shaximiao Formation" in the Late Jurassic.
-- hui2021a, title: "New stegosaurs from the Middle Jurassic Lower Member of the Shaximiao Formation of Chongqing, China".
+- dai2022b, title: "New stegosaurs from the Middle Jurassic Lower Member of the Shaximiao Formation of Chongqing, China".
 
 **Ruled out.**
 - *Xiashaximiao Formation.* Jones (2026) gives "Xiashaximiao Fm., China" (jones2026b, p. 376). *Xia* is Chinese for lower, and the name treats the lower part as a formation of its own, which is the older scheme.
@@ -50,7 +50,7 @@
 - `dong1983a`: Dong, Z.; Zhou, S.; Zhang, H. (1983). [Dinosaurs from the Jurassic of Sichuan]. *Palaeontologica Sinica, New Series C, Whole Number* 162(23): 1-136.
 - `dong1984b`: Dong, Z.; Tang, Z. (1984). [Note on a new Mid-Jurassic sauropod (Datousaurus bashanensis gen. et sp. nov.) from Sichuan Basin, China]. *Vertebrata PalAsiatica* 22(1): 69-75.
 - `moore2020a`: Moore, A. J.; Upchurch, P.; Barrett, P. M.; Clark, J. M.; Xu, X. (2020). Osteology of Klamelisaurus gobiensis (Dinosauria, Eusauropoda) and the evolutionary history of Middle-Late Jurassic Chinese sauropods. *Journal of Systematic Palaeontology* 18(16): 1299-1393. doi:10.1080/14772019.2020.1759706
-- `hui2021a`: Hui, D.; Ning, L.; Maidment, S. C. R.; Guangbiao, W.; Yuxuan, Z.; Xufeng, H.; Qingyu, M.; Xunqian, W.; Haiqian, H.; Guangzhao, P. (2021). New stegosaurs from the Middle Jurassic Lower Member of the Shaximiao Formation of Chongqing, China. *Journal of Vertebrate Paleontology* 41(5). doi:10.1080/02724634.2021.1995737
+- `dai2022b`: Dai, H.; Li, N.; Maidment, S. C. R.; Wei, G.; Zhou, Y.; Hu, X.; Ma, Q.; Wang, X.; Hu, H.; Peng, G. (2022). New stegosaurs from the Middle Jurassic Lower Member of the Shaximiao Formation of Chongqing, China. *Journal of Vertebrate Paleontology* 41(5). doi:10.1080/02724634.2021.1995737
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.
 - `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 259-322. University of California Press, Berkeley.
 - `molina-pérez2020a`: Molina-Pérez, R.; Larramendi, A. (2020). Dinosaur Facts and Figures: The Sauropods and Other Sauropodomorphs. Princeton University Press.

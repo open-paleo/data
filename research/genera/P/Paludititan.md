@@ -4,10 +4,10 @@
 
 *2026-10-14*
 
-**Conclusion.** Yes. The Râul Mare Beds become an informal formation, as the Pui Beds did, and *Paludititan* moves to them. This settles the formation left open in the 2026-09-01 entry below: the beds' place is disputed (the uppermost Sânpetru, the Densuș-Ciula, or a unit of its own), but every reading agrees the type locality is in these beds, so the record names them and the location note carries the describing paper's Sânpetru. The name is used for a unit apart from the Sânpetru proper by Augustin and colleagues (2022), Díaz and colleagues (2025) and Magyar and colleagues (2026), and Csiki-Sava and colleagues (2016) and Albert and colleagues (2025) treat the succession separately; Stoicescu and colleagues (2024) keep the outcrops in the Sânpetru. The stage stays Maastrichtian; the "'middle' to upper Maastrichtian" readings lie within it. Governs `location.formation: Râul Mare Beds` on [*Paludititan nalatzensis*](../../../genera/P/Paludititan.yml) and the entry [Râul Mare Beds](../../../stratigraphy/r/râul-mare-beds.yml).
+**Conclusion.** Yes. The Râul Mare Beds become an informal formation, as the Pui Beds did, and *Paludititan* moves to them. This settles the formation left open in the 2026-09-01 entry below: the beds' place is disputed (the uppermost Sânpetru, the Densuș-Ciula, or a unit of its own), but every reading agrees the type locality is in these beds, so the record names them and the location note carries the describing paper's Sânpetru. The name is used for a unit apart from the Sânpetru proper by Augustin and colleagues (2022), Díez Díaz and colleagues (2025) and Magyar and colleagues (2026), and Csiki-Sava and colleagues (2016) and Albert and colleagues (2025) treat the succession separately; Stoicescu and colleagues (2024) keep the outcrops in the Sânpetru. The stage stays Maastrichtian; the "'middle' to upper Maastrichtian" readings lie within it. Governs `location.formation: Râul Mare Beds` on [*Paludititan nalatzensis*](../../../genera/P/Paludititan.yml) and the entry [Râul Mare Beds](../../../stratigraphy/r/râul-mare-beds.yml).
 
 **Evidence.**
-- díaz2025a: "as yet not formally defined sedimentary successions in the west-central ('Râul Mare Beds'; probably 'middle' to upper Maastrichtian) and eastern-central ('Pui Beds', upper part of lower to lower part of upper Maastrichtian) areas of the depression".
+- díezdíaz2025a: "as yet not formally defined sedimentary successions in the west-central ('Râul Mare Beds'; probably 'middle' to upper Maastrichtian) and eastern-central ('Pui Beds', upper part of lower to lower part of upper Maastrichtian) areas of the depression".
 - augustin2022a: "Sînpetru Formation-correlative units ('Râul Mare Beds' in the central part of the basin, 'Pui Beds' in the eastern part)".
 - magyar2026a: *Zalmoxes* "both in the Sînpetru Formation … and in the 'Râul Mare Beds'".
 - albert2025a: "the uppermost Cretaceous Sînpetru Formation or the coeval 'Raul Mare beds'".
@@ -28,11 +28,11 @@
 
 **Evidence.**
 - csiki2010a, p. 302: "Type horizon and locality: Sânpetru Formation, Nălaţ-Vad, Haţeg Basin, Romania".
-- díaz2025a, p. 19: "This locality belongs to the 'Râul Mare Beds', a not yet formally defined lithostratigraphical unit that either represents the uppermost part of the Sînpetru Formation … or is a distinct unit".
+- díezdíaz2025a, p. 19: "This locality belongs to the 'Râul Mare Beds', a not yet formally defined lithostratigraphical unit that either represents the uppermost part of the Sînpetru Formation … or is a distinct unit".
 - csiki-sava2016a, in-press version, p. 10: the Râul Mare beds "were tentatively referred to the Sînpetru Formation"; "it was recently proposed that the Raul Mare succession belongs to the Densus-Ciula Formation instead of the Sînpetru Formation (e.g., Panaiotu et al., 2011)"; "we treat the Raul Mare succession as a separate entity for the current review".
 
 **Ruled out.**
-- *member: Râul Mare Beds.* Díaz and colleagues (2025) call the beds "not yet formally defined", and Csiki-Sava and colleagues (2016) write of a "succession"; neither gives them member rank.
+- *member: Râul Mare Beds.* Díez Díaz and colleagues (2025) call the beds "not yet formally defined", and Csiki-Sava and colleagues (2016) write of a "succession"; neither gives them member rank.
 
 **Open.** The formation itself. If the Râul Mare succession is the Densuș-Ciula or a unit of its own, the Sânpetru assignment is wrong for every record from Nălaţ-Vad. Panaiotu and colleagues (2011), the source of the Densuș-Ciula reading, have not been read.
 
@@ -45,17 +45,17 @@
 **Evidence.**
 - csiki2010a, p. 302: "Type horizon and locality: Sânpetru Formation, Nălaţ-Vad, Haţeg Basin, Romania".
 - csiki2010a, p. 299: the deposits "are spatially restricted to the riverbed and banks of the lower course of the Râul Mare River"; "These sediments are considered to belong to the Sânpetru Formation (Grigorescu 1992)".
-- díaz2025a, p. 19: the locality "belongs to the 'Râul Mare Beds', a not yet formally defined lithostratigraphical unit".
+- díezdíaz2025a, p. 19: the locality "belongs to the 'Râul Mare Beds', a not yet formally defined lithostratigraphical unit".
 - jones2026b, Lithostrotia systematics table: "Sânpetru Fm., Romania *Late Cretaceous, Maastrichtian*".
 
 **Ruled out.**
-- *A Râul Mare Formation.* The record's earlier value. No paper read names a formation after the river; the nearest name, the "Râul Mare Beds", is informal by Díaz and colleagues' account.
+- *A Râul Mare Formation.* The record's earlier value. No paper read names a formation after the river; the nearest name, the "Râul Mare Beds", is informal by Díez Díaz and colleagues' account.
 
 **Open.** Nothing beyond the formation question in the entry above.
 
 ## References
 
-- `díaz2025a`: Díaz, V. D.; Mannion, P. D.; Csiki-Sava, Z.; Upchurch, P. (2025). Revision of Romanian sauropod dinosaurs reveals high titanosaur diversity and body-size disparity on the latest Cretaceous Haţeg Island, with implications for titanosaurian biogeography. *Journal of Systematic Palaeontology* 23(1). doi:10.1080/14772019.2024.2441516
+- `díezdíaz2025a`: Díez Díaz, V.; Mannion, P. D.; Csiki-Sava, Z.; Upchurch, P. (2025). Revision of Romanian sauropod dinosaurs reveals high titanosaur diversity and body-size disparity on the latest Cretaceous Haţeg Island, with implications for titanosaurian biogeography. *Journal of Systematic Palaeontology* 23(1). doi:10.1080/14772019.2024.2441516
 - `augustin2022a`: Augustin, F. J.; Bastiaans, D.; Dumbravă, M. D.; Csiki-Sava, Z. (2022). A new ornithopod dinosaur, Transylvanosaurus platycephalus gen. et sp. nov. (Dinosauria: Ornithischia), from the Upper Cretaceous of the Haţeg Basin, Romania. *Journal of Vertebrate Paleontology* 42(2). doi:10.1080/02724634.2022.2133610
 - `magyar2026a`: Magyar, J.; Ősi, A.; Csiki-Sava, Z.; Budai, S.; Botfalvai, G. (2026). New early Maastrichtian 'duck-billed' dinosaur from Hațeg Basin (Densuș-Ciula Formation, Romania) documents an endemic clade of non-hadrosaurid hadrosauroids in the south-eastern Late Cretaceous European Archipelago. *Journal of Systematic Palaeontology* 24(1): 2607800. doi:10.1080/14772019.2025.2607800
 - `albert2025a`: Albert, G.; Budai, S.; Csiki-Sava, Z.; Makádi, L.; Ţabară, D.; Árvai, V.; Bălc, R.; Bindiu-Haitonic, R.; Ducea, M. N.; Botfalvai, G. (2025). Age and palaeoenvironmental constraints on the earliest dinosaur-bearing strata of the Densuș-Ciula Formation (Hațeg Basin, Romania): Evidence of their late Campanian-early Maastrichtian syntectonic deposition. *Cretaceous Research* 170: 106095. doi:10.1016/j.cretres.2025.106095

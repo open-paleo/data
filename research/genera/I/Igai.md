@@ -16,5 +16,5 @@
 
 ## References
 
-- `gorscak2022a`: Gorscak, E.; Lamanna, M. C.; Schwarz, D.; Díaz, V. D.; Salem, B. S.; Sallam, H. M.; Wiechmann, M. F. (2022). A new titanosaurian (Dinosauria: Sauropoda) from the Upper Cretaceous (Campanian) Quseir Formation of the Kharga Oasis, Egypt. *Journal of Vertebrate Paleontology* 42(6). doi:10.1080/02724634.2023.2199810
+- `gorscak2022a`: Gorscak, E.; Lamanna, M. C.; Schwarz, D.; Díez Díaz, V.; Salem, B. S.; Sallam, H. M.; Wiechmann, M. F. (2022). A new titanosaurian (Dinosauria: Sauropoda) from the Upper Cretaceous (Campanian) Quseir Formation of the Kharga Oasis, Egypt. *Journal of Vertebrate Paleontology* 42(6). doi:10.1080/02724634.2023.2199810
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.

@@ -34,5 +34,5 @@
 
 - `lü2013a`: Lü, J.; Yi, L.; Zhong, H.; Wei, X. (2013). A New Oviraptorosaur (Dinosauria: Oviraptorosauria) from the Late Cretaceous of Southern China and Its Paleoecological Implications. *PLoS ONE* 8(11): e80557. doi:10.1371/journal.pone.0080557
 - `xu2013a`: Xu, X.; Tan, Q. W.; Wang, S.; Sullivan, C.; Hone, D. W. E.; Han, F. L.; Ma, Q. Y.; Tan, L.; Xiao, D. (2013). A new oviraptorid from the Upper Cretaceous of Nei Mongol, China, and its stratigraphic implications. *Vertebrata PalAsiatica* 51(2): 85-101.
-- `longrich2010a`: Longrich, N. R.; Currie, P. J.; Zhi-Ming, D. (2010). A new oviraptorid (Dinosauria: Theropoda) from the Upper Cretaceous of Bayan Mandahu, Inner Mongolia. *Palaeontology* 53(5): 945-960. doi:10.1111/j.1475-4983.2010.00968.x
+- `longrich2010a`: Longrich, N. R.; Currie, P. J.; Dong, Z. M. (2010). A new oviraptorid (Dinosauria: Theropoda) from the Upper Cretaceous of Bayan Mandahu, Inner Mongolia. *Palaeontology* 53(5): 945-960. doi:10.1111/j.1475-4983.2010.00968.x
 - `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.

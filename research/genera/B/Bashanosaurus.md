@@ -7,8 +7,8 @@
 **Conclusion.** Bajocian, from the describing paper's dating of the horizons bounding the holotype's own quarry at Yunyang. The 2026-08-03 widening of lower Shaximiao taxa to Bajocian–Oxfordian answers a dispute over the formation's age set by a maximum age for the beds at Zigong; a dating of this site comes before the formation-wide span, as a Yellow Cat taxon takes the stage of its own dated site. Governs `period: [Middle Jurassic]` and `stage: [Bajocian]` on [*Bashanosaurus primitivus*](../../../genera/B/Bashanosaurus.yml).
 
 **Evidence.**
-- hui2021a, Abstract: "We provide new U-Pb detrital zircon ages for horizons bounding the holotypic quarry in the Lower Member of the Shaximiao Formation, Yunyang, Chongqing Municipality, China, which indicate a Middle Jurassic (Bajocian) age."
-- hui2021a, Locality and Horizon: "Lower Member of the Shaximiao Formation, Middle Jurassic (Bajocian)".
+- dai2022b, Abstract: "We provide new U-Pb detrital zircon ages for horizons bounding the holotypic quarry in the Lower Member of the Shaximiao Formation, Yunyang, Chongqing Municipality, China, which indicate a Middle Jurassic (Bajocian) age."
+- dai2022b, Locality and Horizon: "Lower Member of the Shaximiao Formation, Middle Jurassic (Bajocian)".
 
 **Ruled out.**
 - *Bajocian–Oxfordian.* The formation-wide span; this quarry is dated.
@@ -22,9 +22,9 @@
 **Conclusion.** The pair in the holotype's locality line, 30°50′45.44″N, 108°55′25.86″E. The same paper's location map labels the fossil locality 30°52′46″N, 108°55′27″E, about 3.7 km north; that label is the one the *Yunyangosaurus* paper prints for its site in the underlying Xintiangou Formation of the same village. Dai and colleagues (2021) attach the text pair to Laojun Village and repeat it for CLGPR V00006-4, from a trench about 900 m from the holotype's quarry, so it places the site to within about a kilometer rather than marking the quarry. Governs `location.coordinates: [30.845956, 108.92385]` on [*Bashanosaurus primitivus*](../../../genera/B/Bashanosaurus.yml).
 
 **Evidence.**
-- hui2021a, p. 2, Locality and Horizon: "Laojun Village (108°55′25.86″E, 30°50′45.44″N), Pu'an Township, Yunyang County, Chongqing Municipality"; "Lower Member of the Shaximiao Formation, Middle Jurassic (Bajocian)".
-- hui2021a, p. 3, Fig. 1C, "sketch map of the fossil locality": a label "30° 52′ 46″ N 108° 55′ 27″ E" joined by a line to a point beside the fossil-site symbol.
-- hui2021a, p. 9: CLGPR V00006-4 "is from a ∼2 m2 exploratory trench that is about 900 m away from the Dinosaur Fossil Wall", whose layer is "the fossil-bearing layer of Bashanosaurus primitivus"; its locality line repeats the same pair.
+- dai2022b, p. 2, Locality and Horizon: "Laojun Village (108°55′25.86″E, 30°50′45.44″N), Pu'an Township, Yunyang County, Chongqing Municipality"; "Lower Member of the Shaximiao Formation, Middle Jurassic (Bajocian)".
+- dai2022b, p. 3, Fig. 1C, "sketch map of the fossil locality": a label "30° 52′ 46″ N 108° 55′ 27″ E" joined by a line to a point beside the fossil-site symbol.
+- dai2022b, p. 9: CLGPR V00006-4 "is from a ∼2 m2 exploratory trench that is about 900 m away from the Dinosaur Fossil Wall", whose layer is "the fossil-bearing layer of Bashanosaurus primitivus"; its locality line repeats the same pair.
 - dai2020a, p. 2, Fig. 1: the same label, "30° 52′ 46″ N 108° 55′ 27″ E", joined to the fossil-site symbol beside Puan; the survey was "in the upper portion of the Xintiangou Formation of Laojun Village".
 
 **Ruled out.**
@@ -35,5 +35,5 @@
 
 ## References
 
-- `hui2021a`: Hui, D.; Ning, L.; Maidment, S. C. R.; Guangbiao, W.; Yuxuan, Z.; Xufeng, H.; Qingyu, M.; Xunqian, W.; Haiqian, H.; Guangzhao, P. (2021). New stegosaurs from the Middle Jurassic Lower Member of the Shaximiao Formation of Chongqing, China. *Journal of Vertebrate Paleontology* 41(5). doi:10.1080/02724634.2021.1995737
+- `dai2022b`: Dai, H.; Li, N.; Maidment, S. C. R.; Wei, G.; Zhou, Y.; Hu, X.; Ma, Q.; Wang, X.; Hu, H.; Peng, G. (2022). New stegosaurs from the Middle Jurassic Lower Member of the Shaximiao Formation of Chongqing, China. *Journal of Vertebrate Paleontology* 41(5). doi:10.1080/02724634.2021.1995737
 - `dai2020a`: Dai, H.; Benson, R.; Hu, X.; Ma, Q.; Tan, C.; Li, N.; Xiao, M.; Hu, H.; Zhou, Y.; Wei, Z.; Zhang, F.; Jiang, S.; Li, D.; Peng, G.; Yu, Y.; Xu, X. (2020). A new possible megalosauroid theropod from the Middle Jurassic Xintiangou Formation of Chongqing, People's Republic of China and its implication for early tetanuran evolution. *Scientific Reports* 10(1). doi:10.1038/s41598-019-56959-x
