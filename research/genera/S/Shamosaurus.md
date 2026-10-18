@@ -45,6 +45,22 @@
 
 **Open.** The rank of the Khukhtyk relative to the formation. Arbour and Currie call the two "roughly equivalent", while Tumanova and Alifanov write horizon and formation side by side.
 
+## What does the *Shamosaurus scutatus* holotype consist of?
+
+*2026-10-17*
+
+**Conclusion.** The skull, a partial postcranial skeleton and part of the armor, all under PIN 3779/2. Governs `type_specimen.material` on [*Shamosaurus scutatus*](../../../genera/S/Shamosaurus.yml).
+
+**Evidence.**
+- tumanova1987a, p. 7, Material: "3779/2 — skull with incomplete postcranial skeleton and part of armor. Khamryn-Us" (translated). The plates number the parts separately: "holotype PIN 3779/2-1, skull" and "specimen PIN 3779/2-2, right ramus of the mandible" (translated).
+- tumanova1983a: "Together with the skull, disarticulated parts of the postcranial skeleton were found, along with a large number of osteodermal scutes" (translated).
+- arbour2015a, advance-access version, p. 20: "Holotype. PIN 3779/2, skull and partial postcranial skeleton".
+
+**Ruled out.**
+- *Skull alone.* Both of Tumanova's holotype lines read "PIN No. 3779/2, skull" (tumanova1983a; tumanova1987a, p. 23). The 1987 list of material and Arbour and Currie put the postcranial skeleton under the same number, so the holotype lines name only the main element.
+
+**Open.** Nothing.
+
 ## References
 
 - `tumanova1987a`: Tumanova, T. A. (1987). Pantsirnyye dinozavry Mongolii [The armored dinosaurs of Mongolia]. *Trudy Sovmestnaya Sovetsko-Mongol'skaya Paleontologicheskaya Ekspeditsiya* 32: 1-80.
@@ -52,3 +68,4 @@
 - `tumanova2018a`: Tumanova, T. A.; Alifanov, V. R. (2018). First Record of Stegosaur (Ornithischia, Dinosauria) from the Aptian-Albian of Mongolia. *Paleontological Journal* 52(14): 1771-1779. doi:10.1134/s0031030118140186
 - `vickaryous2004a`: Vickaryous, M. K.; Maryańska, T.; Weishampel, D. B. (2004). Ankylosauria. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 363-392. University of California Press, Berkeley.
 - `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.
+- `tumanova1983a`: Tumanova, T. A. (1983). Pervyy ankilozavr iz nizhnego mela Mongolii [The first ankylosaurs from the Lower Cretaceous of Mongolia]. In *Iskopayemyye reptilii mongolii [Fossil Reptiles of Mongolia] (Tatarinov, L. P.; Barsbold, R.; Vorobyeva, E.; Luvsandanzan, B.; Trofimov, B. A.; Reshetov, Yu. A.; Shishkin, M. A., eds.)*, pp. 110-118.
