@@ -1,5 +1,21 @@
 # *Teinurosaurus*
 
+## Where does *Teinurosaurus* sit, and is its status in dispute?
+
+*2026-10-17*
+
+**Conclusion.** Theropoda incertae sedis, and no dispute: the block is removed. Every treatment read regards the single caudal vertebra as indeterminate, and the family-level readings (aublysodontine, coelurosaur, ceratosaur-like) are historical and range from ceratosaur to tetanuran. The removed block itself said it cannot be assigned below Theropoda while placing it at Tetanurae. Governs `parent: Theropoda` and the absence of a dispute on [*Teinurosaurus*](../../../genera/T/Teinurosaurus.yml).
+
+**Evidence.**
+- huene1932a: "This concerns only a distal caudal vertebra of a Coelosaurus"; it "resembles Elaphrosaurus to some extent" (translated).
+- nopcsa1928c: "†Aublysodontinae … (†Albertosaurus, †Aublysodon, †Dryptosaurus, †Gorgosaurus, †Teinurosaurus, †Tyrannosaurus)".
+- weishampel2004a: "Theropoda indet. (including ?Megalosaurus insignis, Teinurosaurus sauvagei)"; holtz2004a lists it among the nomina dubia.
+
+**Ruled out.**
+- *Tetanurae incertae sedis.* The earlier parent; no recent treatment places it there.
+
+**Open.** Nothing.
+
 ## What stage does *Teinurosaurus* take?
 
 *2026-10-11*
@@ -36,6 +52,8 @@
 
 - `huene1932a`: Huene, F. V. (1932). Die fossile Reptil-Ordnung Saurischia, ihre Entwicklung und Geschichte [The fossil reptile order Saurischia, their development and history]. *Monographien zur Geologie und Palaeontologie, serie 1* 4(1-2): 1-361.
 - `nopcsa1928c`: Nopcsa, B. F. (1928). The genera of reptiles. *Palaeobiologica* 1: 163-188.
+- `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.
+- `holtz2004a`: Holtz, T. R.; Molnar, R. E.; Currie, P. J. (2004). Basal Tetanurae. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 71-110. University of California Press, Berkeley.
 - `white1973a`: White, T. E. (1973). Catalogue of the genera of dinosaurs. *Annals of Carnegie Museum* 44: 117-155. doi:10.5962/p.243870
 - `jones2026c`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Theropods. Princeton University Press.
 - `galton1980c`: Galton, P. M.; Powell, H. P. (1980). The ornithischian dinosaur Camptosaurus prestwichii from the Upper Jurassic of England. *Palaeontology* 23: 411-443.

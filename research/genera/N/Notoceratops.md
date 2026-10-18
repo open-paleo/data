@@ -1,5 +1,23 @@
 # *Notoceratops*
 
+## Where does *Notoceratops* sit?
+
+*2026-10-16*
+
+**Conclusion.** Cerapoda incertae sedis, as a nomen dubium. The lost dentary has been read as ceratopsian since Tapia (1919), but Powell (2003) raises a hadrosaur identity and recent work hedges the ceratopsian reading. Ceratopsia and the hadrosaurids, in Ornithopoda, share Cerapoda. Governs `parent: Cerapoda` and the dispute on [*Notoceratops*](../../../genera/N/Notoceratops.yml).
+
+**Evidence.**
+- tapia1919a: it "finds placement, as a new genus and species, within the family *Ceratopsidae*" (translated).
+- bonaparte1984a: "the characters it presents are highly eloquent regarding its membership of the Ceratopsidae" (translated).
+- brett-surman1989a: "The original specimen (an edentulous jaw) is lost"; "Notoceratops must remain a ceratopsian until it can be shown to be otherwise on morphological grounds."
+- powell2003a: "the possibility must be pointed out that the specimen illustrated could belong to a hadrosaur, a group known in the area".
+- ibiricu2019a: "the supposed ceratopsian Notoceratops bonarelli"; bandeira2024a lists it under "CERATOPSIA?".
+
+**Ruled out.**
+- *Ceratopsia incertae sedis.* The earlier parent; it takes one side while the hadrosaur reading stands.
+
+**Open.** The 2010 and 2014 studies Jones (2026) sets against each other, upholding the ceratopsian and the hadrosaurid reading respectively (jones2026a), have not been read.
+
 ## Which side of Lago Colhué Huapí is the Notoceratops jaw from?
 
 *2026-08-31*
@@ -20,7 +38,12 @@
 ## References
 
 - `tapia1919a`: Tapia, A. (1919). Una mandibula de Dinosaurioa procedente de Patagonia [A dinosaur mandible from Patagonia]. *Physis, Revista de la Sociedad Argentina de Ciencias Naturales* 4: 369-370.
-- `huene1929a`: Huene, F. V. (1929). Los saurisquios y ornitisquios del Cretáceo Argentino [The Saurischians and Ornithischians of the Argentine Cretaceous]. *Anales del Museo de La Plata, series 2* 3: 1-196.
 - `bonaparte1984a`: Bonaparte, J. F. (1984). I dinosauri dell'Argentina [. *Sulle Orme dei Dinosauri*: 125-143.
+- `brett-surman1989a`: Brett-Surman, M. K. (1989). A revision of the Hadrosauridae (Reptilia: Ornithischia) and their evolution during the Campanian and Maastrichtian. Doctoral thesis, The George Washington University.
+- `powell2003a`: Powell, J. E. (2003). Revision of South American Titanosaurid dinosaurs: palaeobiological, palaeobiogeographical and phylogenetic aspects. *Records of the Queen Victoria Museum* 111: 1-173.
+- `ibiricu2019a`: Ibiricu, L. M.; Casal, G. A.; Martínez, R. D.; Luna, M.; Canale, J. I.; Álvarez, B. N.; González Riga, B. (2019). A new ornithopod dinosaur (Dinosauria: Ornithischia) from the Late Cretaceous of central Patagonia. *Cretaceous Research* 98: 276-291. doi:10.1016/j.cretres.2019.02.001
+- `bandeira2024a`: Bandeira, K. L. N.; Navarro, B. A.; Pêgas, R. V.; Brilhante, N. S.; Brum, A. S.; de Souza, L. G.; da Silva, R. C.; Gallo, V. (2024). A reassessment of the historical fossil findings from Bahia State (Northeast Brazil) reveals a diversified dinosaur fauna in the Lower Cretaceous of South America. *Historical Biology* 37(3): 548-589. doi:10.1080/08912963.2024.2318406
+- `jones2026a`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Ornithischians. Princeton University Press.
+- `huene1929a`: Huene, F. V. (1929). Los saurisquios y ornitisquios del Cretáceo Argentino [The Saurischians and Ornithischians of the Argentine Cretaceous]. *Anales del Museo de La Plata, series 2* 3: 1-196.
 - `casal2007a`: Casal, G.; Martínez, R. D.; Luna, M.; Sciutto, J. C.; Lamanna, M. C. (2007). Aeolosaurus colhuehuapensis sp. nov. (Sauropoda, Titanosauria) de la Formación Bajo Barreal, Cretácico superior de Argentina. *Revista Brasileira de Paleontologia* 10(1): 53-62. doi:10.4072/rbp.2007.1.05
 - `casal2015a`: Casal, G. A.; Allard, J. O.; Foix, N. (2015). Análisis estratigráfico y paleontológico de afloramientos del Cretácico Superior en la cuenca del Golfo San Jorge: propuesta de nueva unidad litoestratigráfica para el Grupo Chubut. *Revista de la Asociación Geológica Argentina* 72(1): 81-99.

@@ -4,7 +4,7 @@
 
 *2026-10-02*
 
-**Conclusion.** "Kuangyuan Series" is a retired name with no modern equivalent, and Locality 47 lies above the Qianfoya (Tsienfuyen) Formation, not in it. No formation is assigned. Governs `period: [Late Jurassic]` with no `stage` and no `location.formation` on [*Sinocoelurus fragilis*](../../genera/S/Sinocoelurus.yml), [*Szechuanosaurus campi*](../../genera/S/Szechuanosaurus.yml) and [*Chienkosaurus ceratosauroides*](../../genera/C/Chienkosaurus.yml).
+**Conclusion.** "Kuangyuan Series" is a retired name with no modern equivalent, and Locality 47 lies above the Qianfoya (Tsienfuyen) Formation, not in it. No formation is assigned. Governs `period: [Late Jurassic]` with no `stage` and no `location.formation` on *Sinocoelurus fragilis* (since excluded as non-dinosaurian; see [Sinocoelurus](sinocoelurus.md)), [*Szechuanosaurus campi*](../../genera/S/Szechuanosaurus.yml) and [*Chienkosaurus ceratosauroides*](../../genera/C/Chienkosaurus.yml).
 
 **Evidence.**
 - young1942a, p. 293: "locality 47, belonging to the top part of the Kuangyuan Series and immediately below the Chentsianyen conglomerate". Young uses only "Kuangyuan Series", never Formation or Group. The *Szechuanosaurus campi* types are "V235 … V236 … V238 and one nearly complete tooth, V239. All loc. 47." (p. 300).

@@ -1,5 +1,5 @@
 genus: Serendipaceratops
-parent: Ornithischia
+parent: Genasauria
 placement: incertae sedis
 etymology: "From 'serendipitous', referencing the unexpected nature of the find
   (a ceratopsian found in Australia), and Greek 'keras' meaning 'horn' and 'ops'
@@ -11,10 +11,15 @@ description: Serendipaceratops is a genus of herbivorous ornithischian dinosaur,
   type species, S. arthurcclarkei, was named in 2003.
 dispute:
   summary: >
-    Serendipaceratops arthurcclarkei is based on a single ulna from
-    Australia; its referral to Ceratopsia has been disputed, with some
-    workers suggesting the bone is not diagnostic or may pertain to an
-    ankylosaur. Treated as a nomen dubium.
+    Rich and Vickers-Rich (2003) tentatively referred the ulna to
+    Neoceratopsia. Agnolin and colleagues (2010) find no neoceratopsian
+    synapomorphy, note proportions closer to ankylosaurs, and consider it a
+    nomen dubium diagnosable only to Genasauria. Rich and colleagues (2014)
+    answer with a morphometric study, finding the extreme compression of the
+    ulnar midshaft a synapomorphy of Ceratopsia and the species valid on an
+    emended diagnosis; Ryan and colleagues (2023) still describe the
+    referral as challenged. Its validity and placement are both unsettled,
+    and it is placed at Genasauria incertae sedis.
   history:
     - date: "2026-06-27"
       note: Placed at Ceratopsia incertae sedis; nomen dubium, possible
@@ -22,11 +27,33 @@ dispute:
     - date: "2026-07-14"
       note: Moved to Ornithischia incertae sedis; ceratopsian affinity not
         supported (single deformed, non-diagnostic ulna; possible ankylosaur).
+    - date: "2026-10-17"
+      note: >
+        Moved from Ornithischia to Genasauria incertae sedis, the level
+        shared by the ceratopsian, ankylosaur-like and indeterminate
+        readings; summary rewritten with its sources.
+    - date: "2026-10-17"
+      note: >
+        Status set to disputed and diagnostic features added from the
+        emended diagnosis of Rich and colleagues (2014); summary updated
+        with that study.
 diet: herbivore
 locomotion: bipedal
 paleoenvironment:
   - fluvial
   - polar
+diagnostic_features:
+  - Ulnar midshaft extremely compressed mediolaterally (midshaft width ratio
+    2.06)
+  - Ulna long relative to its mediolateral width but short relative to its
+    craniocaudal depth at the sigmoid fossa rim
+  - Proximal sigmoid region of the ulna narrow relative to the minimum
+    transverse diameter of the midshaft
+  - Coronoid process projecting strongly anteriorly, at a high angle to the
+    shaft
+  - Ulnar shaft narrow, with parallel medial and lateral sides
+  - Robust, mediolaterally inflated lateral tubercle and inflated anterolateral
+    surface on the distal end of the ulna
 appearance:
   integument: scaled
   evidence: inferred
@@ -44,7 +71,7 @@ species:
     etymology: "Named for science fiction writer Arthur C. Clarke, a personal friend
       of the describing authors and someone who first became interested in
       science as a child through a fascination with dinosaurs."
-    status: nomen dubium
+    status: disputed
     type_species: true
     period:
       name:
@@ -69,3 +96,17 @@ species:
     erected_in: rich2003a
 references:
   - id: rich2003a
+  - id: agnolín2010a
+    notes: Finds no neoceratopsian synapomorphy in the ulna, notes proportions
+      closer to ankylosaurs, and considers the genus a nomen dubium
+      diagnosable only to Genasauria.
+  - id: poropat2014a
+    notes: Reports that a 2014 study renewed support for a ceratopsian
+      identity after it had been met with scepticism.
+  - id: ryan2023a
+    notes: Notes that the leptoceratopsid-like affinities reported for the
+      ulnae have been challenged.
+  - id: rich2014a
+    notes: Finds the ulnar midshaft compression a ceratopsian synapomorphy,
+      rejects the nomen dubium, and gives an emended diagnosis; source of the
+      diagnostic features.

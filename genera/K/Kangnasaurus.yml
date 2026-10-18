@@ -1,5 +1,5 @@
 genus: Kangnasaurus
-parent: Elasmaria
+parent: Iguanodontia
 pronunciation:
   phonetic: KANG-nuh-SAWR-us
 etymology: Named after Farm Kangnas in the Orange River valley of northern Cape Province, South Africa; meaning "Farm Kangnas lizard"
@@ -9,13 +9,21 @@ description: Kangnasaurus is a genus of elasmarian ornithopod dinosaur found in
   Kalahari Deposits Formation.
 dispute:
   summary: >
-    Kangnasaurus coetzeei is based on a tooth and fragmentary remains;
-    it is recovered as an elasmarian by recent analyses but has
-    historically been treated as a dryosaurid and is sometimes regarded
-    as a nomen dubium.
+    Norman (2004) considers Kangnasaurus coetzeei a nomen dubium, while
+    Forster and colleagues (2023) note that the material certainly pertains
+    to Iguanodontia and that it has also been treated as a valid
+    iguanodontian, as the analyses since 2020 treat it. Cooper (1985) allied
+    it with Dryosaurus; later analyses recover it as an elasmarian (Fonseca
+    and colleagues 2024; Dieudonné and colleagues 2026), within a
+    rhabdodontoid clade (Poole, 2022), or outside Dryosauridae (Rocchi and
+    colleagues 2026). It is placed at Iguanodontia incertae sedis.
   history:
     - date: "2026-06-29"
       note: Placed at Elasmaria following recent analyses; nomen dubium.
+    - date: "2026-10-16"
+      note: >
+        Moved from Elasmaria to Iguanodontia incertae sedis and status
+        set to disputed; summary rewritten with its sources.
 diet: herbivore
 locomotion: bipedal
 paleoenvironment:
@@ -35,7 +43,7 @@ identifiers:
 species:
   - name: Kangnasaurus coetzeei
     etymology: "Named for the farmer Coetzee, on whose farm (Farm Kangnas) the holotype tooth was discovered."
-    status: nomen dubium
+    status: disputed
     type_species: true
     period:
       name:
@@ -70,3 +78,23 @@ references:
   - id: weishampel2004a
     notes: Lists the Kalahari Deposits as the horizon, citing Haughton and
       Cooper.
+  - id: norman2004a
+    notes: Lists Kangnasaurus coetzeei among the nomina dubia of basal
+      Iguanodontia.
+  - id: forster2023a
+    notes: Notes that the material certainly pertains to an iguanodontian and
+      that its validity has been both doubted and accepted.
+  - id: cooper1985a
+    notes: Transfers Kangnasaurus from the iguanodontids to a position most
+      closely allied to Dryosaurus.
+  - id: fonseca2024a
+    notes: Recovers Kangnasaurus within Elasmaria, as one of its earliest
+      members under implied weighting.
+  - id: dieudonné2026a
+    notes: Recovers Kangnasaurus in an unresolved polytomy with the
+      elasmarians.
+  - id: poole2022a
+    notes: Recovers Kangnasaurus within a Rhabdodontoidea alongside
+      Rhabdodontidae, Tenontosaurus and Muttaburrasaurus.
+  - id: rocchi2026a
+    notes: Recovers Kangnasaurus outside Dryosauridae.

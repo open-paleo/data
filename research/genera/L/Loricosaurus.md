@@ -1,5 +1,23 @@
 # *Loricosaurus*
 
+## Where does *Loricosaurus* sit, and is it a synonym of *Neuquensaurus*?
+
+*2026-10-16*
+
+**Conclusion.** A nomen dubium at Titanosauria incertae sedis. The plates are titanosaur osteoderms, which every recent source accepts. The saltasaurine placement rested on the synonymy with *Neuquensaurus australis*, which compilations list, two of them with a query, but which no paper read argues from the specimens; keeled titanosaur osteoderms also occur outside Saltasaurinae. The synonymy is not adopted, under the policy of adopting taxonomic changes only on broad consensus. Governs `parent: Titanosauria` and the dispute on [*Loricosaurus*](../../../genera/L/Loricosaurus.yml).
+
+**Evidence.**
+- huene1929a: "As bearers of such cutaneous ossifications, only acanthophilids (ankylosaurs) and ceratopsids, or rather thyreophorans (Nopesa) can come into question" (translated).
+- d'emic2009a: "Keeled osteoderms include a combination of Types 1 and 2 of Huene (1929; Table) and have been found in Argentina and Madagascar."
+- olshevsky1991a: the species "could well be a junior synonym of *Neuquensaurus australis*".
+- upchurch2004a lists "?Loricosaurus scutatus" under *N. australis*; santucci2022a lists "*Loricosaurus scutatus* Huene 1927" under it without query; molina-pérez2020a counts it a formal synonym.
+
+**Ruled out.**
+- *Saltasaurinae.* The earlier parent; it rests only on the unargued synonymy.
+- *A junior synonym of Neuquensaurus australis.* Listed by compilations, not argued from the material.
+
+**Open.** A comparison of the plates with *Neuquensaurus* osteoderms would settle the synonymy.
+
 ## Which numbers make up the *Loricosaurus* syntype series?
 
 *2026-10-11*
@@ -38,9 +56,11 @@
 ## References
 
 - `huene1929a`: Huene, F. V. (1929). Los saurisquios y ornitisquios del Cretáceo Argentino [The Saurischians and Ornithischians of the Argentine Cretaceous]. *Anales del Museo de La Plata, series 2* 3: 1-196.
-- `otero2010a`: Otero, A. (2010). The appendicular skeleton of Neuquensaurus, a Late Cretaceous saltasaurine sauropod from Patagonia, Argentina. *Acta Palaeontologica Polonica* 55(3): 399-426.
 - `d'emic2009a`: D'Emic, M. D.; Wilson, J. A.; Chatterjee, S. (2009). The titanosaur (Dinosauria: Sauropoda) osteoderm record: review and first definitive specimen from India. *Journal of Vertebrate Paleontology* 29(1): 165-177. doi:10.1671/039.029.0131
-- `leanza2004a`: Leanza, H. A.; Apesteguía, S.; Novas, F. E.; de la Fuente, M. S. (2004). Cretaceous terrestrial beds from the Neuquén Basin (Argentina) and their tetrapod assemblages. *Cretaceous Research* 25(1): 61-87.
-- `santucci2022a`: Santucci, R. M.; Filippi, L. S. (2022). Last titans: Titanosaurs from the Campanian–Maastrichtian age. In *South American Sauropodomorph Dinosaurs: Record, Diversity and Evolution*, pp. 341-391. Springer International Publishing. doi:10.1007/978-3-030-95959-3_10
-- `mcintosh1990a`: McIntosh, J. S. (1990). Sauropoda. In *The Dinosauria (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 345-401. University of California Press, Berkeley.
+- `olshevsky1991a`: Olshevsky, G. (1991). A revision of the parainfraclass Archosauria Cope, 1869, excluding the advanced Crocodylia. *Mesozoic Meanderings* 2: 1-196.
 - `upchurch2004a`: Upchurch, P.; Barrett, P. M.; Dodson, P. (2004). Sauropoda. In *The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 259-322. University of California Press, Berkeley.
+- `santucci2022a`: Santucci, R. M.; Filippi, L. S. (2022). Last titans: Titanosaurs from the Campanian–Maastrichtian age. In *South American Sauropodomorph Dinosaurs: Record, Diversity and Evolution*, pp. 341-391. Springer International Publishing. doi:10.1007/978-3-030-95959-3_10
+- `molina-pérez2020a`: Molina-Pérez, R.; Larramendi, A. (2020). Dinosaur Facts and Figures: The Sauropods and Other Sauropodomorphs. Princeton University Press.
+- `otero2010a`: Otero, A. (2010). The appendicular skeleton of Neuquensaurus, a Late Cretaceous saltasaurine sauropod from Patagonia, Argentina. *Acta Palaeontologica Polonica* 55(3): 399-426.
+- `leanza2004a`: Leanza, H. A.; Apesteguía, S.; Novas, F. E.; de la Fuente, M. S. (2004). Cretaceous terrestrial beds from the Neuquén Basin (Argentina) and their tetrapod assemblages. *Cretaceous Research* 25(1): 61-87.
+- `mcintosh1990a`: McIntosh, J. S. (1990). Sauropoda. In *The Dinosauria (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)*, pp. 345-401. University of California Press, Berkeley.

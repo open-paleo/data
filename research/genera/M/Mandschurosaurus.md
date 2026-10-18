@@ -1,5 +1,22 @@
 # *Mandschurosaurus*
 
+## Is the status of *Mandschurosaurus* in dispute?
+
+*2026-10-17*
+
+**Conclusion.** No; the dispute block is removed and the parent stays Hadrosauridae. Every treatment read from Brett-Surman (1979) to Xing and colleagues (2022) holds the composite type non-diagnostic, and the bones that can be placed are hadrosaurine. Governs `parent: Hadrosauridae` and the absence of a dispute on [*Mandschurosaurus*](../../../genera/M/Mandschurosaurus.yml).
+
+**Evidence.**
+- godefroit2000a: "This taxon is now unanimously considered a nomen dubium."
+- xing2022a: "this taxon is considered a nomen dubium owing to a lack of diagnostic characters and the problematic ascription of material".
+- brett-surman1989a: "This genus is a nomen dubium and should not be used."
+- godefroit2011a: "the type skeleton is probably reconstructed from several individuals"; several of its bones "undoubtedly belong to hadrosaurine hadrosaurids".
+
+**Ruled out.**
+- *A live dispute.* No dissent in the papers read.
+
+**Open.** Nothing.
+
 ## What is the Mandschurosaurus holotype's number, and how much of the mount is original?
 
 *2026-10-04*
@@ -34,7 +51,9 @@
 
 ## References
 
+- `godefroit2000a`: Godefroit, P.; Zan, S.; Jin, L. (2000). Charonosaurus jiayinensis n.g., n.sp.,a lambeosaurine dinosaur from the Late Maastrichtian of northeastern China. *Comptes Rendus de l'Académie des Sciences - Series IIA - Earth and Planetary Science* 330(12): 875-882. doi:10.1016/s1251-8050(00)00214-7
+- `xing2022a`: Xing, H.; Gu, W.; Hai, S.; Yu, T.; Han, D.; Zhang, Y.; Zhang, S. (2022). Osteological and taxonomic reassessments of Sahaliyania elunchunorum (Dinosauria, Hadrosauridae) from the Upper Cretaceous Yuliangzi Formation, northeast China. *Journal of Vertebrate Paleontology* 41(6): e2085111. doi:10.1080/02724634.2021.2085111
+- `brett-surman1989a`: Brett-Surman, M. K. (1989). A revision of the Hadrosauridae (Reptilia: Ornithischia) and their evolution during the Campanian and Maastrichtian. Doctoral thesis, The George Washington University.
+- `godefroit2011a`: Godefroit, P.; Lauters, P.; Van Itterbeeck, J.; Bolotsky, Yu. L.; Dong, Z.; Jin, L.; Wu, W.; Bolotsky, I. Y.; Hai, S.; Yu, T. (2011). Recent advances on study of hadrosaurid dinosaurs in Heilongjiang (Amur) River area between China and Russia. *Global Geology* 14(3): 160-191. doi:10.3969/j.issn.1673-9736.2011.03.03
 - `riabinin1930a`: Riabinin, A. N. (1930). Mandschurosaurus amurensis nov. gen. nov. sp., verkhnemelovoy dinozavr s. r. Amura [Mandschurosaurus amurensis nov. gen, nov. sp., a hadrosaurian dinosaur from the Upper Cretaceous of the Amur River]. *Monografii Russkogo Paleontologicheskogo Obshchestva* 2: 1-36.
 - `bolotsky2014a`: Bolotsky, Y. L.; Godefroit, P.; Bolotsky, I. Y.; Atuchin, A. (2014). Hadrosaurs from the Far East: historical perspective and new Amurosaurus material from Blagoveschensk (Amur Region, Russia). In *Hadrosaurs*. Indiana University Press, Bloomington.
-- `godefroit2000a`: Godefroit, P.; Zan, S.; Jin, L. (2000). Charonosaurus jiayinensis n.g., n.sp.,a lambeosaurine dinosaur from the Late Maastrichtian of northeastern China. *Comptes Rendus de l'Académie des Sciences - Series IIA - Earth and Planetary Science* 330(12): 875-882. doi:10.1016/s1251-8050(00)00214-7
-- `godefroit2011a`: Godefroit, P.; Lauters, P.; Van Itterbeeck, J.; Bolotsky, Yu. L.; Dong, Z.; Jin, L.; Wu, W.; Bolotsky, I. Y.; Hai, S.; Yu, T. (2011). Recent advances on study of hadrosaurid dinosaurs in Heilongjiang (Amur) River area between China and Russia. *Global Geology* 14(3): 160-191. doi:10.3969/j.issn.1673-9736.2011.03.03

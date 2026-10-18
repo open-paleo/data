@@ -1,5 +1,20 @@
 # *Agrosaurus*
 
+## Is the status of *Agrosaurus* in dispute?
+
+*2026-10-16*
+
+**Conclusion.** No; the dispute block is removed. No paper read since Vickers-Rich and colleagues (1999) questions that the type material came from the Durdham Down breccia and belongs with *Thecodontosaurus*, and the choice between nomen dubium and junior synonym is settled in the entry below. Governs the absence of a dispute on [*Agrosaurus*](../../../genera/A/Agrosaurus.yml).
+
+**Evidence.**
+- vickers-rich1999a: the holotype "did not, in fact, come from northeastern Australia despite the label associated with the specimen"; "the species is quite probably a junior synonym of Thecodontosaurus antiquus Morris, 1843".
+- galton2007a: the lectotype tibia "is the only possibly definable bone" of the type material.
+
+**Ruled out.**
+- *A live dispute.* The herrerasaurid reading is from before the provenance was resolved and is already ruled out below.
+
+**Open.** Nothing.
+
 ## Where does the *Agrosaurus* type material come from?
 
 *2026-08-11*
@@ -37,9 +52,9 @@
 
 ## References
 
-- `seeley1891a`: Seeley, H. G. (1891). On Agrosaurus Macgillivrayi (Seeley), a Saurischian Reptile from the N.E. Coast of Australia. *Quarterly Journal of the Geological Society of London* 47(1-4): 164-165. doi:10.1144/gsl.jgs.1891.047.01-04.14
 - `vickers-rich1999a`: Vickers-Rich, P.; Rich, T. H.; McNamara, G. C.; Milner, A. (1999). Is Agrosaurus macgillivrayi Australia's oldest dinosaur?. *Records of the Western Australian Museum*: 191-200.
 - `galton2007a`: Galton, P. M. (2007). Notes on the remains of archosaurian reptiles, mostly basal sauropodomorph dinosaurs, from the 1834 fissure fill (Rhaetian, Upper Triassic) at Clifton in Bristol, southwest England. *Revue de Paléobiologie* 26(2): 505-591.
+- `seeley1891a`: Seeley, H. G. (1891). On Agrosaurus Macgillivrayi (Seeley), a Saurischian Reptile from the N.E. Coast of Australia. *Quarterly Journal of the Geological Society of London* 47(1-4): 164-165. doi:10.1144/gsl.jgs.1891.047.01-04.14
 - `white1973a`: White, T. E. (1973). Catalogue of the genera of dinosaurs. *Annals of Carnegie Museum* 44: 117-155. doi:10.5962/p.243870
 - `olshevsky1991a`: Olshevsky, G. (1991). A revision of the parainfraclass Archosauria Cope, 1869, excluding the advanced Crocodylia. *Mesozoic Meanderings* 2: 1-196.
 - `weishampel2004a`: Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.) (2004). The Dinosauria, Second Edition. University of California Press, Berkeley.

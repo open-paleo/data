@@ -1,5 +1,23 @@
 # *Camelotia*
 
+## Where does *Camelotia* sit among sauropodiforms?
+
+*2026-10-15*
+
+**Conclusion.** Sauropodiformes incertae sedis, near the origin of Sauropoda, with its finer position unresolved. Analyses since 2011 agree on Sauropodiformes but place it variously beside *Melanorosaurus*, beside Lessemsauridae, or prune it as unstable for missing data. Galton's (1985) Melanorosauridae is not recovered by later analyses. Governs `parent: Sauropodiformes` and the dispute on [*Camelotia*](../../../genera/C/Camelotia.yml).
+
+**Evidence.**
+- galton1985a: "In addition to *Melanorosaurus*, the Melanorosauridae HUENE, 1929 includes *Camelotia borealis* nov. gen. and nov. sp."
+- pol2011b: "the instability of Camelotia and Blikanasaurus are exclusively caused by the lack of information (i.e., missing data) and not by character conflict".
+- mcphee2014a: "the position of *Camelotia* … is wildly unstable".
+- rauhut2020a: "The only European Triassic sauropodomorph that probably represents a basal sauropodiform is the poorly known *Camelotia borealis*".
+- barrett2024b: "Camelotia is either sister to the Melanorosaurus lectotype OTU … or alternatively sister to Lessemsauridae".
+
+**Ruled out.**
+- *Melanorosauridae.* Galton's (1985) family, not recovered by the analyses read.
+
+**Open.** Galton's (1998) redescription has not been read.
+
 ## Does the *Camelotia* holotype have a recorded bed?
 
 *2026-08-14*
@@ -32,5 +50,9 @@
 ## References
 
 - `galton1985a`: Galton, P. M. (1985). Notes on the Melanorosauridae, a family of large Prosauropod Dinosaurs (Saurischia: Sauropodomorpha). *Geobios* 18(5): 671-676. doi:10.1016/s0016-6995(85)80065-6
+- `pol2011b`: Pol, D.; Garrido, A.; Cerda, I. A. (2011). A New Sauropodomorph Dinosaur from the Early Jurassic of Patagonia and the Origin and Evolution of the Sauropod-type Sacrum. *PLoS ONE* 6(1): e14572. doi:10.1371/journal.pone.0014572
+- `mcphee2014a`: McPhee, B. W.; Yates, A. M.; Choiniere, J. N.; Abdala, F. (2014). The complete anatomy and phylogenetic relationships of Antetonitrus ingenipes (Sauropodiformes, Dinosauria): implications for the origins of Sauropoda. *Zoological Journal of the Linnean Society* 171(1): 151-205. doi:10.1111/zoj.12127
+- `rauhut2020a`: Rauhut, O. W. M.; Holwerda, F. M.; Furrer, H. (2020). A derived sauropodiform dinosaur and other sauropodomorph material from the Late Triassic of Canton Schaffhausen, Switzerland. *Swiss Journal of Geosciences* 113(1). doi:10.1186/s00015-020-00360-8
+- `barrett2024b`: Barrett, P. M.; Choiniere, J. N. (2024). Melanorosaurus readi Haughton, 1924 (Dinosauria, Sauropodomorpha) from the Late Triassic of South Africa: osteology and designation of a lectotype. *Journal of Vertebrate Paleontology* 44(1): e2337802. doi:10.1080/02724634.2024.2337802
 - `molina-pérez2020a`: Molina-Pérez, R.; Larramendi, A. (2020). Dinosaur Facts and Figures: The Sauropods and Other Sauropodomorphs. Princeton University Press.
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.
