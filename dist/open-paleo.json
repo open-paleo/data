@@ -1,9 +1,9 @@
 {
   "_metadata": {
     "attribution": "Open Paleo contributors",
-    "built_at": "2026-10-17T16:41:42.730Z",
+    "built_at": "2026-10-18T00:30:59.725Z",
     "clade_count": 188,
-    "genus_count": 1428,
+    "genus_count": 1427,
     "license": "CC-BY-4.0",
     "schema_version": "2.0.0",
     "version": "2026.10"
@@ -18331,19 +18331,6 @@
       },
       "etymology": "From Greek agros ('field') and sauros ('lizard'), meaning 'field lizard'",
       "description": "Agrosaurus is a potentially dubious genus of thecodontosaurid sauropodomorph probably originating from the Magnesian Conglomerate of England that was originally believed to be a Triassic prosauropod from Australia. Agrosaurus would thus be the oldest dinosaur from that country. However, this appears to have been an error, and the material actually appears to come from Thecodontosaurus or a Thecodontosaurus-like animal from Bristol, England (Avon Fissure Fill). The type species is Agrosaurus macgillivrayi.",
-      "dispute": {
-        "summary": "Agrosaurus macgillivrayi is a nomen dubium; its material is most likely referable to Thecodontosaurus from the Late Triassic of England rather than Australia.\n",
-        "history": [
-          {
-            "date": "2026-06-29",
-            "note": "Reparented from the deprecated Prosauropoda to Sauropodomorpha incertae sedis; nomen dubium, possibly Thecodontosaurus."
-          },
-          {
-            "date": "2026-10-08",
-            "note": "Type species set to nomen dubium and diagnostic features removed; no diagnosis survives the referral of its material to Durdham Down Thecodontosaurus."
-          }
-        ]
-      },
       "diet": "herbivore",
       "locomotion": "bipedal",
       "appearance": {
@@ -23537,7 +23524,7 @@
       "parent": "Tetanurae",
       "placement": "incertae sedis",
       "dispute": {
-        "summary": "Altispinax dunkeri is Tetanurae incertae sedis, formerly referred to Spinosauridae and in one analysis to Carcharodontosauria.\n",
+        "summary": "Carrano and colleagues (2012) exclude the vertebrae from Spinosauridae, to which earlier workers had referred them, and from Carcharodontosauridae, and place them no more precisely than Tetanurae. Naish (2003) regards them as an allosauroid pending further work, Maisch (2016) refers the genus questionably to Carcharodontosauridae for its similarity to Concavenator, and Morrison and colleagues (2026) call the material a possible carcharodontosaurian. None of these rests on a phylogenetic analysis, so the genus is placed at Tetanurae incertae sedis.\n",
         "history": [
           {
             "date": "2026-06-30",
@@ -23546,6 +23533,10 @@
           {
             "date": "2026-07-02",
             "note": "Confirmed placement at Tetanurae incertae sedis; treated as a valid taxon of uncertain position (not a nomen dubium), with the Becklespinax nomenclature resolved in its favor.\n"
+          },
+          {
+            "date": "2026-10-15",
+            "note": "Summary rewritten with its sources; the earlier \"in one analysis to Carcharodontosauria\" had no analysis behind it.\n"
           }
         ]
       },
@@ -23686,6 +23677,56 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25021-2",
           "notes": "Source of the body length and hip height estimates, and the appearance features."
+        },
+        {
+          "id": "carrano2012a",
+          "authors": "Carrano, M. T.; Benson, R. B. J.; Sampson, S. D.",
+          "year": 2012,
+          "title": "The phylogeny of Tetanurae (Dinosauria: Theropoda)",
+          "journal": "Journal of Systematic Palaeontology",
+          "publisher": "Informa UK Limited",
+          "volume": "10",
+          "issue": "2",
+          "pages": "211-300",
+          "doi": "10.1080/14772019.2011.630927",
+          "notes": "Places the vertebrae no more precisely than Tetanurae, excluding them from Spinosauridae and Carcharodontosauridae; treats them under the name Becklespinax altispinax."
+        },
+        {
+          "id": "naish2003a",
+          "authors": "Naish, D.",
+          "year": 2003,
+          "title": "A definitive allosauroid (Dinosauria; Theropoda) from the Lower Cretaceous of East Sussex",
+          "journal": "Proceedings of the Geologists' Association",
+          "volume": "114",
+          "issue": "4",
+          "pages": "319-326",
+          "doi": "10.1016/S0016-7878(03)80032-9",
+          "notes": "Regards the vertebrae as an allosauroid pending further work, and suggests a large Hastings tibia might belong to the same animal."
+        },
+        {
+          "id": "maisch2016a",
+          "authors": "Maisch, M. W.",
+          "year": 2016,
+          "title": "The nomenclatural status of the carnivorous dinosaur genus Altispinax v. Huene, 1923 (Saurischia, Theropoda) from the Lower Cretaceous of England",
+          "journal": "Neues Jahrbuch für Geologie und Paläontologie - Abhandlungen",
+          "volume": "280",
+          "issue": "2",
+          "pages": "215-219",
+          "doi": "10.1127/njgpa/2016/0576",
+          "notes": "Shows that Altispinax dunkeri v. Huene, 1923 is the valid name for the vertebrae, with Becklespinax a junior objective synonym, and refers the genus questionably to Carcharodontosauridae."
+        },
+        {
+          "id": "morrison2026a",
+          "authors": "Morrison, C.; Scherer, C. R.; Mannion, P.; Porro, L. B.; Clark, B.; Folkes, D. D.; Barrett, P. M.",
+          "year": 2026,
+          "title": "A new megaraptoran dinosaur from the Lower Cretaceous Wessex Formation, UK, and its implications for theropod evolution and biogeography",
+          "journal": "Royal Society Open Science",
+          "publisher": "The Royal Society",
+          "volume": "13",
+          "issue": "10",
+          "article_number": "260937",
+          "doi": "10.1098/rsos.260937",
+          "notes": "Calls the Wealden vertebrae a possible carcharodontosaurian."
         }
       ],
       "taxonomy": [
@@ -53147,11 +53188,15 @@
       "etymology": "Named after Camelot, the legendary castle and court of King Arthur, referring to the discovery location in southwest England (near the supposed location of Camelot); overall meaning 'from Camelot'.",
       "description": "Camelotia is a large-bodied sauropodomorph from the latest Triassic (Rhaetian) of southwest England. It is best known from a partial postcranial skeleton found in the Westbury Formation and named by Peter M. Galton in 1985. Subsequent work has generally placed Camelotia as a relatively derived sauropodomorph close to the origin of Sauropoda, although its exact position among early non-sauropod sauropodomorphs remains debated. It is sometimes placed in Melanorosauridae as a close relative of Melanorosaurus. With a body length and mass estimated at 8-10 meters (26-33 ft) and 3.8 tonnes (8,400 lb), respectively, it is one of the largest sauropodomorphs known from the Triassic.",
       "dispute": {
-        "summary": "Camelotia borealis is a fragmentary, large sauropodiform close to the origin of Sauropoda; its position is labile and it is sometimes referred to Melanorosauridae.\n",
+        "summary": "Galton (1985) referred Camelotia borealis to Melanorosauridae, a family later analyses do not recover. Recent analyses place it among sauropodiforms near the origin of Sauropoda, but not consistently: Barrett and colleagues (2024) recover it either as sister to Melanorosaurus or to Lessemsauridae, and Pol and colleagues (2011), McPhee and colleagues (2014) and Rauhut and colleagues (2020) find it unstable, a result Pol and colleagues trace to missing data. It is placed at Sauropodiformes incertae sedis.\n",
         "history": [
           {
             "date": "2026-06-29",
             "note": "Placed at Sauropodiformes incertae sedis; Sauropoda boundary unresolved, position labile due to incomplete material."
+          },
+          {
+            "date": "2026-10-15",
+            "note": "Summary rewritten with its sources.\n"
           }
         ]
       },
@@ -53249,6 +53294,56 @@
           "issue": "5",
           "pages": "671-676",
           "doi": "10.1016/s0016-6995(85)80065-6"
+        },
+        {
+          "id": "pol2011b",
+          "authors": "Pol, D.; Garrido, A.; Cerda, I. A.",
+          "year": 2011,
+          "title": "A New Sauropodomorph Dinosaur from the Early Jurassic of Patagonia and the Origin and Evolution of the Sauropod-type Sacrum",
+          "journal": "PLoS ONE",
+          "publisher": "Public Library of Science (PLoS)",
+          "volume": "6",
+          "issue": "1",
+          "pages": "e14572",
+          "doi": "10.1371/journal.pone.0014572",
+          "notes": "Finds Camelotia unstable in its analysis and traces the instability to missing data rather than character conflict."
+        },
+        {
+          "id": "mcphee2014a",
+          "authors": "McPhee, B. W.; Yates, A. M.; Choiniere, J. N.; Abdala, F.",
+          "year": 2014,
+          "title": "The complete anatomy and phylogenetic relationships of Antetonitrus ingenipes (Sauropodiformes, Dinosauria): implications for the origins of Sauropoda",
+          "journal": "Zoological Journal of the Linnean Society",
+          "volume": "171",
+          "issue": "1",
+          "pages": "151-205",
+          "doi": "10.1111/zoj.12127",
+          "notes": "Finds the position of Camelotia wildly unstable."
+        },
+        {
+          "id": "rauhut2020a",
+          "authors": "Rauhut, O. W. M.; Holwerda, F. M.; Furrer, H.",
+          "year": 2020,
+          "title": "A derived sauropodiform dinosaur and other sauropodomorph material from the Late Triassic of Canton Schaffhausen, Switzerland",
+          "journal": "Swiss Journal of Geosciences",
+          "publisher": "Pensoft Publishers",
+          "volume": "113",
+          "issue": "1",
+          "doi": "10.1186/s00015-020-00360-8",
+          "notes": "Calls Camelotia probably a basal sauropodiform and prunes it, with Blikanasaurus, to resolve the base of Sauropodiformes."
+        },
+        {
+          "id": "barrett2024b",
+          "authors": "Barrett, P. M.; Choiniere, J. N.",
+          "year": 2024,
+          "title": "Melanorosaurus readi Haughton, 1924 (Dinosauria, Sauropodomorpha) from the Late Triassic of South Africa: osteology and designation of a lectotype",
+          "journal": "Journal of Vertebrate Paleontology",
+          "publisher": "Informa UK Limited",
+          "volume": "44",
+          "issue": "1",
+          "pages": "e2337802",
+          "doi": "10.1080/02724634.2024.2337802",
+          "notes": "Recovers Camelotia either as sister to the Melanorosaurus lectotype or as sister to Lessemsauridae."
         }
       ],
       "taxonomy": [
@@ -56298,15 +56393,6 @@
         "phonetic": "SEH-ruh-tops"
       },
       "description": "Ceratops is a dubious genus of herbivorous ceratopsian dinosaur which lived during the Late Cretaceous. Its fossils have been found in the Judith River Formation in Montana. Although poorly known, Ceratops is important in the history of dinosaurs, since it is the type genus for which both the Ceratopsia and the Ceratopsidae have been named.\n",
-      "dispute": {
-        "summary": "Ceratops is a nomen dubium known only from a pair of postorbital horncores and an occipital condyle that lack diagnostic features, despite being the type genus by which both Ceratopsia and Ceratopsidae were named. It cannot be placed below family level and is retained at Ceratopsidae incertae sedis.\n",
-        "history": [
-          {
-            "date": "2026-06-26",
-            "note": "Placed at Ceratopsidae incertae sedis, undiagnostic holotype; type genus by name only."
-          }
-        ]
-      },
       "diet": "herbivore",
       "locomotion": "quadrupedal",
       "paleoenvironment": [
@@ -56404,6 +56490,56 @@
           "issue": "122",
           "pages": "144",
           "doi": "10.2475/ajs.s4-21.122.144"
+        },
+        {
+          "id": "ryan2007a",
+          "authors": "Ryan, M. J.",
+          "year": 2007,
+          "title": "A new basal centrosaurine ceratopsid from the Oldman Formation, southeastern Alberta",
+          "journal": "Journal of Paleontology",
+          "publisher": "Cambridge University Press (CUP)",
+          "volume": "81",
+          "issue": "2",
+          "pages": "376-396",
+          "doi": "10.1666/0022-3360(2007)81[376:anbccf]2.0.co;2",
+          "notes": "Finds isolated horncores of limited use for diagnosing chasmosaurine taxa."
+        },
+        {
+          "id": "mallon2016a",
+          "authors": "Mallon, J. C.; Ott, C. J.; Larson, P. L.; Iuliano, E. M.; Evans, D. C.",
+          "year": 2016,
+          "title": "Spiclypeus shipporum gen. et sp. nov., a Boldly Audacious New Chasmosaurine Ceratopsid (Dinosauria: Ornithischia) from the Judith River Formation (Upper Cretaceous: Campanian) of Montana, USA",
+          "journal": "PLOS ONE",
+          "publisher": "Public Library of Science (PLoS)",
+          "volume": "11",
+          "issue": "5",
+          "pages": "e0154218",
+          "doi": "10.1371/journal.pone.0154218",
+          "notes": "Notes the long-standing nomen dubium status and raises the possibility that the horncores belong to Spiclypeus."
+        },
+        {
+          "id": "longrich2013b",
+          "authors": "Longrich, N. R.",
+          "year": 2013,
+          "title": "Judiceratops tigris, a New Horned Dinosaur from the Middle Campanian Judith River Formation of Montana",
+          "journal": "Bulletin of the Peabody Museum of Natural History",
+          "publisher": "Bulletin of the Peabody Museum of Natural History",
+          "volume": "54",
+          "issue": "1",
+          "pages": "51-65",
+          "doi": "10.3374/014.054.0103",
+          "notes": "Reads the Ceratops horncores as most likely those of a primitive centrosaurine."
+        },
+        {
+          "id": "madzia2021a",
+          "authors": "Madzia, D.; Arbour, V. M.; Boyd, C. A.; Farke, A. A.; Cruzado-Caballero, P.; Evans, D. C.",
+          "year": 2021,
+          "title": "The phylogenetic nomenclature of ornithischian dinosaurs",
+          "journal": "PeerJ",
+          "volume": "9",
+          "pages": "e12362",
+          "doi": "10.7717/peerj.12362",
+          "notes": "Uses Ceratops montanus as a specifier of Ceratopsia and finds it not diagnostic beyond Ceratopsidae."
         }
       ],
       "taxonomy": [
@@ -59436,17 +59572,8 @@
     },
     "Chienkosaurus": {
       "genus": "Chienkosaurus",
-      "parent": "Tetanurae",
+      "parent": "Theropoda",
       "placement": "incertae sedis",
-      "dispute": {
-        "summary": "Chienkosaurus ceratosauroides is a nomen dubium based on four isolated teeth, three of which have been shown to be non-theropod, and it has often been treated as a synonym of Szechuanosaurus. It is placed conservatively at Tetanurae incertae sedis.\n",
-        "history": [
-          {
-            "date": "2026-07-02",
-            "note": "Placed at Tetanurae incertae sedis; regarded as a nomen dubium."
-          }
-        ]
-      },
       "etymology": "lizard of Jiange County",
       "description": "Chienkosaurus is a dubious genus of carnivorous theropod dinosaur from the Late Jurassic of Sichuan, China, known from teeth found in the beds Young (1942) called the Kuangyuan Series, at Locality 47 south of Guangyuan. It was probably related to Szechuanosaurus.",
       "diet": "carnivore",
@@ -59543,6 +59670,28 @@
           "year": 2011,
           "title": "Dinosaur assemblages from the Middle Jurassic Shaximiao Formation and Chuanjie Formation in the Sichuan-Yunnan Basin, China",
           "notes": "Lists the species in the upper member of the Shaximiao Formation in a basin-wide faunal list, without discussing the Guangyuan locality."
+        },
+        {
+          "id": "chure2000a",
+          "authors": "Chure, D. J.",
+          "year": 2000,
+          "title": "A new species of Allosaurus from the Morrison Formation of Dinosaur National Monument (UT-CO) and a revision of the theropod family Allosauridae",
+          "thesis": "doctoral",
+          "school": "Columbia University",
+          "notes": "Calls Chienkosaurus a nomen dubium and Theropoda indeterminate."
+        },
+        {
+          "id": "carrano2012a",
+          "authors": "Carrano, M. T.; Benson, R. B. J.; Sampson, S. D.",
+          "year": 2012,
+          "title": "The phylogeny of Tetanurae (Dinosauria: Theropoda)",
+          "journal": "Journal of Systematic Palaeontology",
+          "publisher": "Informa UK Limited",
+          "volume": "10",
+          "issue": "2",
+          "pages": "211-300",
+          "doi": "10.1080/14772019.2011.630927",
+          "notes": "Finds the teeth of Szechuanosaurus campi, with which the one theropod tooth of Chienkosaurus was synonymized, not diagnostic below Theropoda."
         }
       ],
       "taxonomy": [
@@ -59556,10 +59705,7 @@
         "Archosauria",
         "Dinosauria",
         "Saurischia",
-        "Theropoda",
-        "Neotheropoda",
-        "Averostra",
-        "Tetanurae"
+        "Theropoda"
       ],
       "authors": "Young, C. C.",
       "described": 1942
@@ -62184,19 +62330,6 @@
       },
       "etymology": "From Greek kion meaning 'column/pillar' and Greek odon meaning 'tooth'. Full meaning: 'column tooth', referring to the pillar-like shape of its teeth.",
       "description": "Cionodon is a dubious genus of hadrosaurid dinosaur from the Late Cretaceous. The type species, C. arctatus, was found in the Denver Formation of Lodge Pole Creek, Colorado and was formally described by Edward Drinker Cope in 1874 based on the holotype AMNH 3951, collected in 1873. It is a nomen dubium because it is based on very fragmentary remains. A second species, Cionodon kysylkumensis (Riabinin, 1931), based on the holotype CCMGE 1/3760 (a set of vertebrae) from Uzbekistan, is known only from fragmentary remains and has since been reclassified as Bactrosaurus kysylkumensis.",
-      "dispute": {
-        "summary": "Cionodon is a nomen dubium based on fragmentary jaw and postcranial material lacking diagnostic features.\n",
-        "history": [
-          {
-            "date": "2026-06-27",
-            "note": "Placed at Hadrosauridae incertae sedis; nomen dubium."
-          },
-          {
-            "date": "2026-10-08",
-            "note": "Type species set to nomen dubium and diagnostic features removed; no work since Cope treats the holotype as diagnosable."
-          }
-        ]
-      },
       "diet": "herbivore",
       "locomotion": "facultative",
       "paleoenvironment": [
@@ -62249,7 +62382,7 @@
             ],
             "specimen_type": "holotype",
             "institution": "American Museum of Natural History",
-            "material": "Portion of the right maxilla with numerous teeth in place, two co-ossified dorsal vertebrae, a caudal vertebra, the distal end of a femur, and the head and distal end of a tibia",
+            "material": "Portion of the right maxilla, two dorsal vertebrae, the distal end of metatarsal III, and the proximal and distal ends of an ulna",
             "completeness": "fragmentary"
           },
           "erected_in": "cope1874a",
@@ -62310,6 +62443,16 @@
           "volume": "40",
           "pages": "1-272",
           "doi": "10.1130/spe40-p1"
+        },
+        {
+          "id": "brett-surman1989a",
+          "authors": "Brett-Surman, M. K.",
+          "year": 1989,
+          "title": "A revision of the Hadrosauridae (Reptilia: Ornithischia) and their evolution during the Campanian and Maastrichtian",
+          "thesis": "doctoral",
+          "school": "The George Washington University",
+          "pages": "1-272",
+          "notes": "Finds that none of the type elements permits a diagnosis at any level, and calls Cionodon a nomen dubium."
         }
       ],
       "taxonomy": [
@@ -64015,6 +64158,16 @@
           "book": "The Dinosauria (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)",
           "publisher": "University of California Press, Berkeley",
           "pages": "306-317"
+        },
+        {
+          "id": "wilson2012a",
+          "authors": "Wilson, J. A.",
+          "year": 2012,
+          "title": "Small theropod dinosaurs from the latest Cretaceous of India",
+          "book": "Society of Vertebrate Paleontology, 72nd Annual Meeting, Program and Abstracts",
+          "pages": "194",
+          "publisher": "Society of Vertebrate Paleontology, Raleigh",
+          "notes": "Proposes, in a conference abstract, that Coeluroides and Ornithomimoides share autapomorphies and be grouped under Coeluroides, the first-named."
         }
       ],
       "taxonomy": [
@@ -67695,15 +67848,6 @@
         "phonetic": "KRIP-to-SOR-us"
       },
       "description": "Cryptosaurus is a dubious genus of dinosaur known from a partial femur from the Late Jurassic of England. The sole species is Cryptosaurus eumerus.\n",
-      "dispute": {
-        "summary": "Cryptosaurus is known only from a single femur and is an indeterminate ankylosaur, not assignable below Ankylosauria.\n",
-        "history": [
-          {
-            "date": "2026-06-26",
-            "note": "Placed at Ankylosauria incertae sedis, indeterminate single-element holotype."
-          }
-        ]
-      },
       "diet": "herbivore",
       "locomotion": "quadrupedal",
       "paleoenvironment": [
@@ -67814,6 +67958,32 @@
           "pages": "41-59",
           "doi": "10.1144/GSL.JGS.1889.045.01-04.04",
           "notes": "Proposed the replacement name Cryptodraco for Cryptosaurus."
+        },
+        {
+          "id": "naish2008a",
+          "authors": "Naish, D.; Martill, D. M.",
+          "year": 2008,
+          "title": "Dinosaurs of Great Britain and the role of the Geological Society of London in their discovery: Ornithischia",
+          "journal": "Journal of the Geological Society",
+          "publisher": "Geological Society of London",
+          "volume": "165",
+          "issue": "3",
+          "pages": "613-623",
+          "doi": "10.1144/0016-76492007-154",
+          "notes": "Finds that Cryptosaurus lacks autapomorphies and regards it as Ankylosauria indet."
+        },
+        {
+          "id": "galton1980a",
+          "authors": "Galton, P. M.",
+          "year": 1980,
+          "title": "European Jurassic ornithopod dinosaurs of the families Hypsilophodontidae and Camptosauridae",
+          "journal": "Neues Jahrbuch für Geologie und Paläontologie - Abhandlungen",
+          "publisher": "Schweizerbart",
+          "volume": "160",
+          "issue": "1",
+          "pages": "73-95",
+          "doi": "10.1127/njgpa/160/1980/73",
+          "notes": "Compares the femur with that of the ankylosaur Hoplitosaurus and moves it from the ornithopods toward the nodosaurids."
         }
       ],
       "taxonomy": [
@@ -69434,15 +69604,6 @@
       "genus": "Dandakosaurus",
       "parent": "Averostra",
       "placement": "incertae sedis",
-      "dispute": {
-        "summary": "Dandakosaurus indicus is a nomen dubium based on a single partial pubis; it has been interpreted as a possible ceratosaur or a basal tetanuran. Because these hypotheses span Ceratosauria and Tetanurae, it is placed conservatively at Averostra incertae sedis.\n",
-        "history": [
-          {
-            "date": "2026-07-02",
-            "note": "Moved from Tetanurae to Averostra incertae sedis; regarded as a nomen dubium of uncertain ceratosaur-versus-tetanuran affinity."
-          }
-        ]
-      },
       "etymology": "Named after Dandakaranya, the ancient name for the region of central India (Andhra Pradesh) where the fossils were found, + Greek sauros ('lizard'), meaning 'Dandakaranya lizard'.",
       "pronunciation": {
         "phonetic": "DAN-duh-ko-SOR-us"
@@ -69537,6 +69698,27 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-18031-1",
           "notes": "Source of the hip height estimate."
+        },
+        {
+          "id": "chure2000a",
+          "authors": "Chure, D. J.",
+          "year": 2000,
+          "title": "A new species of Allosaurus from the Morrison Formation of Dinosaur National Monument (UT-CO) and a revision of the theropod family Allosauridae",
+          "thesis": "doctoral",
+          "school": "Columbia University",
+          "notes": "Finds the type pubis not diagnostic and calls the genus a nomen dubium, Theropoda incertae sedis; reads the opisthocoelous dorsal as carnosaur-like but doubts it belongs with the type."
+        },
+        {
+          "id": "ezcurra2020a",
+          "authors": "Ezcurra, M. D.; Butler, R. J.; Maidment, S. C. R.; Sansom, I. J.; Meade, L. E.; Radley, J. D.",
+          "year": 2020,
+          "title": "A revision of the early neotheropod genus Sarcosaurus from the Early Jurassic (Hettangian-Sinemurian) of central England",
+          "journal": "Zoological Journal of the Linnean Society",
+          "publisher": "Oxford University Press (OUP)",
+          "volume": "191",
+          "pages": "113-149",
+          "doi": "10.1093/zoolinnean/zlaa054",
+          "notes": "Reads the opisthocoelous dorsal vertebrae referred to the genus as those of an averostran theropod."
         }
       ],
       "taxonomy": [
@@ -79530,15 +79712,6 @@
         "phonetic": "dis-GANN-us"
       },
       "description": "Dysganus (meaning \"rough enamel\") is a dubious genus of ceratopsian dinosaur from the Campanian stage of the Late Cretaceous. The fossil teeth referred to Dysganus were first collected by Charles Sternberg from the Judith River Formation of Montana and later described by Edward Drinker Cope. All of the species are now seen as dubious ceratopsians, though referred material from tyrannosaurids and hadrosaurids were found in New Mexico.",
-      "dispute": {
-        "summary": "Dysganus is a tooth-based taxon whose material may be ceratopsid, hadrosaurid, or otherwise indeterminate; it is a nomen dubium.\n",
-        "history": [
-          {
-            "date": "2026-06-27",
-            "note": "Placed at Ceratopsia incertae sedis; nomen dubium."
-          }
-        ]
-      },
       "diet": "herbivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -79620,6 +79793,29 @@
           "journal": "Journal of Paleontology",
           "pages": "818-821",
           "notes": "Redescription of Cope's chimeric type material; documents Matthew's designation of one ceratopsian tooth (AMNH 5739) as the type and regards Dysganus and all four of its species as nomina dubia."
+        },
+        {
+          "id": "brett-surman1989a",
+          "authors": "Brett-Surman, M. K.",
+          "year": 1989,
+          "title": "A revision of the Hadrosauridae (Reptilia: Ornithischia) and their evolution during the Campanian and Maastrichtian",
+          "thesis": "doctoral",
+          "school": "The George Washington University",
+          "pages": "1-272",
+          "notes": "Finds none of the Dysganus teeth diagnostic below family level and all four species nomina dubia."
+        },
+        {
+          "id": "mallon2016a",
+          "authors": "Mallon, J. C.; Ott, C. J.; Larson, P. L.; Iuliano, E. M.; Evans, D. C.",
+          "year": 2016,
+          "title": "Spiclypeus shipporum gen. et sp. nov., a Boldly Audacious New Chasmosaurine Ceratopsid (Dinosauria: Ornithischia) from the Judith River Formation (Upper Cretaceous: Campanian) of Montana, USA",
+          "journal": "PLOS ONE",
+          "publisher": "Public Library of Science (PLoS)",
+          "volume": "11",
+          "issue": "5",
+          "pages": "e0154218",
+          "doi": "10.1371/journal.pone.0154218",
+          "notes": "Lists the four Dysganus species among the taxonomically invalid ceratopsids of the Judith River Formation."
         }
       ],
       "taxonomy": [
@@ -90536,15 +90732,6 @@
         "phonetic": "foh-SKAY-ah"
       },
       "description": "Foskeia is an extinct genus of rhabdodontomorph ornithopod dinosaurs known from the Early Cretaceous (Barremian to Aptian ages) Castrillo de la Reina Formation of Spain. The genus contains a single species, Foskeia pelendonum, known from fossils of multiple individuals of different ontogenetic stages. Before its formal description, it had been nicknamed the \"Vegagete ornithopod.\"",
-      "dispute": {
-        "summary": "Foskeia is a recently named rhabdodontomorph; its placement is provisional.\n",
-        "history": [
-          {
-            "date": "2026-06-29",
-            "note": "Placed at Rhabdodontomorpha provisionally; finer placement unresolved."
-          }
-        ]
-      },
       "diet": "herbivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -90630,7 +90817,44 @@
           "publisher": "Wiley",
           "volume": "12",
           "issue": "1",
-          "doi": "10.1002/spp2.70057"
+          "doi": "10.1002/spp2.70057",
+          "notes": "Recovers Foskeia as the sister of Rhabdodontidae, a pair it names Rhabdodontia, within Rhabdodontomorpha."
+        },
+        {
+          "id": "dieudonné2016a",
+          "authors": "Dieudonné, P. E.; Tortosa, T.; Torcida Fernández-Baldor, F.; Canudo, J. I.; Díaz-Martínez, I.",
+          "year": 2016,
+          "title": "An unexpected early rhabdodontid from Europe (Lower Cretaceous of Salas de los Infantes, Burgos Province, Spain) and a re-examination of basal iguanodontian relationships",
+          "journal": "PLOS ONE",
+          "volume": "11",
+          "pages": "e0156251",
+          "doi": "10.1371/journal.pone.0156251",
+          "notes": "Describes the material as the unnamed Vegagete ornithopod and recovers it as a rhabdodontomorph."
+        },
+        {
+          "id": "dieudonné2020a",
+          "authors": "Dieudonné, P. E.; Cruzado-Caballero, P.; Godefroit, P.; Tortosa, T.",
+          "year": 2020,
+          "title": "A new phylogeny of cerapodan dinosaurs",
+          "journal": "Historical Biology",
+          "volume": "33",
+          "issue": "10",
+          "pages": "2335-2355",
+          "doi": "10.1080/08912963.2020.1793979",
+          "notes": "Recovers the Vegagete ornithopod as the closest outgroup of Rhabdodontidae."
+        },
+        {
+          "id": "bell2019a",
+          "authors": "Bell, P. R.; Brougham, T.; Herne, M. C.; Frauenfelder, T.; Smith, E. T.",
+          "year": 2019,
+          "title": "Fostoria dhimbangunmal, gen. et sp. nov., a new iguanodontian (Dinosauria, Ornithopoda) from the mid-Cretaceous of Lightning Ridge, New South Wales, Australia",
+          "journal": "Journal of Vertebrate Paleontology",
+          "publisher": "Informa UK Limited",
+          "volume": "39",
+          "issue": "1",
+          "pages": "e1564757",
+          "doi": "10.1080/02724634.2019.1564757",
+          "notes": "Recovers the Vegagete ornithopod in a polytomy with Gasparinisaura and parksosaurids, outside Rhabdodontomorpha."
         }
       ],
       "taxonomy": [
@@ -90656,14 +90880,18 @@
     },
     "Fosterovenator": {
       "genus": "Fosterovenator",
-      "parent": "Ceratosauria",
+      "parent": "Averostra",
       "placement": "incertae sedis",
       "dispute": {
-        "summary": "Fosterovenator is known only from an isolated juvenile tibia and astragalus and a fibula of a larger individual, and no phylogenetic analysis has tested its position. Its original description assigns it to Ceratosauridae yet argues it is closer to Elaphrosaurus; its validity is uncertain.\n",
+        "summary": "Dalman (2014) describes the tibia as that of a basal tetanuran but names the genus a ceratosaurid close to Elaphrosaurus, and concludes that it is probably a basal abelisauroid. Skawiński and colleagues (2017) find the fibula's small tubercle unlike those of ceratosaurians. No phylogenetic analysis read has included it, so it is placed at Averostra incertae sedis.\n",
         "history": [
           {
             "date": "2026-06-30",
             "note": "Placed conservatively at Ceratosauria incertae sedis pending redescription.\n"
+          },
+          {
+            "date": "2026-10-15",
+            "note": "Moved from Ceratosauria to Averostra incertae sedis, the level shared by the ceratosaurian and tetanuran readings; summary rewritten with its sources.\n"
           }
         ]
       },
@@ -90772,6 +91000,19 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25021-2",
           "notes": "Source of the body length estimate."
+        },
+        {
+          "id": "skawiński2017a",
+          "authors": "Skawiński, T.; Ziegler, M.; Czepiński, Ł.; Szermański, M.; Tałanda, M.; Surmik, D.; Niedźwiedzki, G.",
+          "year": 2017,
+          "title": "A re-evaluation of the historical dinosaur remains from the Middle-Upper Triassic of Poland",
+          "journal": "Historical Biology",
+          "publisher": "Informa UK Limited",
+          "volume": "29",
+          "issue": "4",
+          "pages": "442-472",
+          "doi": "10.1080/08912963.2016.1188385",
+          "notes": "Compares the Fosterovenator paratype fibula with Velocipes and finds its small tubercle unlike those of ceratosaurians."
         }
       ],
       "taxonomy": [
@@ -90787,8 +91028,7 @@
         "Saurischia",
         "Theropoda",
         "Neotheropoda",
-        "Averostra",
-        "Ceratosauria"
+        "Averostra"
       ],
       "authors": "Dalman, S. G.",
       "described": 2014
@@ -92203,18 +92443,22 @@
     },
     "Fulgurotherium": {
       "genus": "Fulgurotherium",
-      "parent": "Elasmaria",
+      "parent": "Iguanodontia",
       "etymology": "Lightning beast; from Latin fulgur (lightning), referring to Lightning Ridge, Australia, where fossils were found, and Greek therion (beast)",
       "pronunciation": {
         "phonetic": "full-GOO-ro-THEE-ree-um"
       },
       "description": "Fulgurotherium is a dubious genus of ornithischian dinosaur from the Late Cretaceous (Cenomanian) Griman Creek Formation. It lived in what is now Australia.",
       "dispute": {
-        "summary": "Fulgurotherium australe is based on fragmentary material and is widely treated as a nomen dubium, though it has been tentatively referred to Elasmaria.\n",
+        "summary": "Agnolin and colleagues (2010) find the type femur of Fulgurotherium australe undiagnostic and the species a nomen dubium, Iguanodontia indet., a view Bell and colleagues (2019) follow. It is nonetheless kept as a terminal among elasmarians in the reference phylogeny Madzia and colleagues (2021) use for Elasmaria, and in Bandeira and colleagues' (2024) analysis. It is placed at Iguanodontia incertae sedis.\n",
         "history": [
           {
             "date": "2026-06-29",
             "note": "Placed at Elasmaria following the tentative referral; nomen dubium."
+          },
+          {
+            "date": "2026-10-16",
+            "note": "Moved from Elasmaria to Iguanodontia incertae sedis, the level shared by the indeterminate and elasmarian readings; summary rewritten with its sources.\n"
           }
         ]
       },
@@ -92307,6 +92551,55 @@
           "title": "The Princeton Field Guide to Dinosaurs (3rd ed.)",
           "publisher": "Princeton University Press",
           "notes": "Source of the body length and mass estimates."
+        },
+        {
+          "id": "agnolín2010a",
+          "authors": "Agnolín, F. L.; Ezcurra, M. D.; Pais, D. F.; Salisbury, S. W.",
+          "year": 2010,
+          "title": "A reappraisal of the Cretaceous non-avian dinosaur faunas from Australia and New Zealand: evidence for their Gondwanan affinities",
+          "journal": "Journal of Systematic Palaeontology",
+          "publisher": "Informa UK Limited",
+          "volume": "8",
+          "issue": "2",
+          "pages": "257-300",
+          "doi": "10.1080/14772011003594870",
+          "notes": "Finds the type femur undiagnostic and the species a nomen dubium, Iguanodontia indet., and invalidates the referral of other femora."
+        },
+        {
+          "id": "bell2019b",
+          "authors": "Bell, P. R.; Fanti, F.; Hart, L. J.; Milan, L. A.; Craven, S. J.; Birch, S. A.; Smith, E. T.",
+          "year": 2019,
+          "title": "Revised geology, age, and vertebrate diversity of the dinosaur-bearing Griman Creek Formation (Cenomanian), Lightning Ridge, New South Wales, Australia",
+          "journal": "Palaeogeography, Palaeoclimatology, Palaeoecology",
+          "publisher": "Elsevier BV",
+          "volume": "514",
+          "pages": "655-671",
+          "doi": "10.1016/j.palaeo.2018.11.020",
+          "notes": "Lists the holotype as Iguanodontia indet. and the species as a nomen dubium, following Agnolin and colleagues (2010)."
+        },
+        {
+          "id": "madzia2021a",
+          "authors": "Madzia, D.; Arbour, V. M.; Boyd, C. A.; Farke, A. A.; Cruzado-Caballero, P.; Evans, D. C.",
+          "year": 2021,
+          "title": "The phylogenetic nomenclature of ornithischian dinosaurs",
+          "journal": "PeerJ",
+          "volume": "9",
+          "pages": "e12362",
+          "doi": "10.7717/peerj.12362",
+          "notes": "Lists Fulgurotherium australe in Elasmaria under that clade's reference phylogeny."
+        },
+        {
+          "id": "bandeira2024a",
+          "authors": "Bandeira, K. L. N.; Navarro, B. A.; Pêgas, R. V.; Brilhante, N. S.; Brum, A. S.; de Souza, L. G.; da Silva, R. C.; Gallo, V.",
+          "year": 2024,
+          "title": "A reassessment of the historical fossil findings from Bahia State (Northeast Brazil) reveals a diversified dinosaur fauna in the Lower Cretaceous of South America",
+          "journal": "Historical Biology",
+          "publisher": "Informa UK Limited",
+          "volume": "37",
+          "issue": "3",
+          "pages": "548-589",
+          "doi": "10.1080/08912963.2024.2318406",
+          "notes": "Recovers Fulgurotherium australe in an elasmarian polytomy with Gasparinisaura."
         }
       ],
       "taxonomy": [
@@ -92324,8 +92617,7 @@
         "Neornithischia",
         "Cerapoda",
         "Ornithopoda",
-        "Iguanodontia",
-        "Elasmaria"
+        "Iguanodontia"
       ],
       "authors": "Huene, F. V.",
       "described": 1932
@@ -108679,11 +108971,15 @@
       "etymology": "From Huayang (華陽), an alternate historical name for Sichuan Province, China, combined with Greek sauros (lizard); meaning 'Huayang lizard'",
       "description": "Huayangosaurus is a genus of stegosaurian dinosaur from the Middle Jurassic of China. The name derives from \"Huayang\" (華陽), an alternate name for Sichuan (the province where it was discovered), and \"saurus\", meaning \"lizard\". It lived during the Bathonian to Callovian stages, around 165 million years ago, some 20 million years before its famous relative, Stegosaurus appeared in North America. At only approximately 4 meters (13 ft) long, it was also much smaller than its famous cousin. Found in the Lower Shaximiao Formation, Huayangosaurus shared the local Middle Jurassic landscape with the sauropods Shunosaurus, Datousaurus, Omeisaurus and Protognathosaurus, the ornithopod Xiaosaurus and the carnivorous Gasosaurus.",
       "dispute": {
-        "summary": "Huayangosaurus is the basal-most well-known stegosaur and the type genus of the traditional family Huayangosauridae. That family is of disputed utility, as its only consistent additional member (Chungkingosaurus) is recovered variously within or outside it and recent works deprecate the node, so Huayangosaurus is retained at Stegosauria incertae sedis rather than placed in a near-monotypic family.\n",
+        "summary": "Huayangosaurus is an early-diverging stegosaur in every analysis read, though not always the earliest (Maidment and colleagues 2008). It is the type of Huayangosauridae, defined by Madzia and colleagues (2021) as all taxa closer to Huayangosaurus than to Stegosaurus, but the clade's content differs between analyses: Chungkingosaurus alone in the reference phylogeny of Madzia and colleagues (2021), five genera without Chungkingosaurus in Sánchez-Fenollosa and colleagues (2025), and no such clade in Raven and colleagues (2023). Huayangosaurus is therefore placed at Stegosauria incertae sedis.\n",
         "history": [
           {
             "date": "2026-06-26",
             "note": "Placed at Stegosauria incertae sedis, Huayangosauridae not retained as a node (unstable membership, deprecated by recent works)."
+          },
+          {
+            "date": "2026-10-15",
+            "note": "Summary rewritten with its sources; Huayangosauridae is a current, defined clade whose content varies, not a deprecated one.\n"
           }
         ]
       },
@@ -108829,6 +109125,53 @@
           "issue": "4",
           "pages": "944-956",
           "doi": "10.1671/0272-4634(2006)26[944:ROTPSO]2.0.CO;2"
+        },
+        {
+          "id": "maidment2008a",
+          "authors": "Maidment, S. C. R.; Norman, D. B.; Barrett, P. M.; Upchurch, P.",
+          "year": 2008,
+          "title": "Systematics and phylogeny of Stegosauria (Dinosauria: Ornithischia)",
+          "journal": "Journal of Systematic Palaeontology",
+          "publisher": "Informa UK Limited",
+          "volume": "6",
+          "issue": "4",
+          "pages": "367-407",
+          "doi": "10.1017/S1477201908002459",
+          "notes": "Recovers Huayangosaurus among the earliest stegosaurs, with Gigantspinosaurus the most basal, and defines Huayangosauridae as stegosaurs closer to Huayangosaurus than to Stegosaurus."
+        },
+        {
+          "id": "madzia2021a",
+          "authors": "Madzia, D.; Arbour, V. M.; Boyd, C. A.; Farke, A. A.; Cruzado-Caballero, P.; Evans, D. C.",
+          "year": 2021,
+          "title": "The phylogenetic nomenclature of ornithischian dinosaurs",
+          "journal": "PeerJ",
+          "volume": "9",
+          "pages": "e12362",
+          "doi": "10.7717/peerj.12362",
+          "notes": "Registers Huayangosauridae as a defined clade, comprising Chungkingosaurus and Huayangosaurus under its reference phylogeny."
+        },
+        {
+          "id": "sánchez-fenollosa2025a",
+          "authors": "Sánchez-Fenollosa, S.; Cobos, A.",
+          "year": 2025,
+          "title": "New insights into the phylogeny and skull evolution of stegosaurian dinosaurs: an extraordinary cranium from the European Late Jurassic (Dinosauria: Stegosauria)",
+          "journal": "Vertebrate Zoology",
+          "volume": "75",
+          "pages": "165-189",
+          "doi": "10.3897/vz.75.e146618",
+          "notes": "Divides Stegosauria into Huayangosauridae and Stegosauridae, with a five-genus Huayangosauridae that excludes Chungkingosaurus."
+        },
+        {
+          "id": "raven2023a",
+          "authors": "Raven, T. J.; Barrett, P. M.; Joyce, C. B.; Maidment, S. C. R.",
+          "year": 2023,
+          "title": "The phylogenetic relationships and evolutionary history of the armoured dinosaurs (Ornithischia: Thyreophora)",
+          "journal": "Journal of Systematic Palaeontology",
+          "volume": "21",
+          "issue": "1",
+          "pages": "2205433",
+          "doi": "10.1080/14772019.2023.2205433",
+          "notes": "Finds Huayangosaurus an early-diverging stegosaur but recovers no Huayangosauridae."
         }
       ],
       "taxonomy": [
@@ -109262,13 +109605,17 @@
     },
     "Huinculsaurus": {
       "genus": "Huinculsaurus",
-      "parent": "Elaphrosaurinae",
+      "parent": "Abelisauroidea",
       "dispute": {
-        "summary": "Huinculsaurus was described as a close relative of Elaphrosaurus and is treated as the most derived elaphrosaurine by reference works, the placement followed, but the material is fragmentary and it is recovered as an unstable taxon, with some analyses finding it a more general noasaurid.\n",
+        "summary": "Baiano and colleagues (2020) recover Huinculsaurus as the sister of Elaphrosaurus, tentatively, given its incompleteness. Cerroni and colleagues (2022) recover it instead as the basal noasaurine, Hendrickx and colleagues (2024) leave it in a polytomy within Abelisauroidea, and Pol and colleagues (2024), Jiménez Velandia and colleagues (2025) and Canale and colleagues (2026) prune it as unstable. It is placed at Abelisauroidea incertae sedis.\n",
         "history": [
           {
             "date": "2026-06-30",
             "note": "Placed at Elaphrosaurinae following the describing analysis and reference-work usage.\n"
+          },
+          {
+            "date": "2026-10-15",
+            "note": "Moved from Elaphrosaurinae to Abelisauroidea incertae sedis, the level shared by the elaphrosaurine, noasaurine and unresolved readings; summary rewritten with its sources.\n"
           }
         ]
       },
@@ -109376,6 +109723,66 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25021-2",
           "notes": "Source of the mass and hip height estimates."
+        },
+        {
+          "id": "cerroni2022a",
+          "authors": "Cerroni, M. A.; Baiano, M. A.; Canale, J. I.; Agnolín, F. L.; Otero, A.; Novas, F. E.",
+          "year": 2022,
+          "title": "Appendicular osteology of Skorpiovenator bustingorryi (Theropoda, Abelisauridae) with comments on phylogenetic features of abelisaurids",
+          "journal": "Journal of Systematic Palaeontology",
+          "publisher": "Informa UK Limited",
+          "volume": "20",
+          "issue": "1",
+          "pages": "1-32",
+          "doi": "10.1080/14772019.2022.2093661",
+          "notes": "Recovers Huinculsaurus as the basal member of Noasaurinae, unlike the original elaphrosaurine placement."
+        },
+        {
+          "id": "hendrickx2024a",
+          "authors": "Hendrickx, C.; Cerroni, M. A.; Agnolín, F. L.; Catalano, S.; Ribeiro, C. F.; Delcourt, R.",
+          "year": 2024,
+          "title": "Osteology, relationship, and feeding ecology of the theropod dinosaur Noasaurus leali, from the Late Cretaceous of North-Western Argentina",
+          "journal": "Zoological Journal of the Linnean Society",
+          "volume": "202",
+          "issue": "4",
+          "pages": "zlae150",
+          "doi": "10.1093/zoolinnean/zlae150",
+          "notes": "Recovers Huinculsaurus in a polytomy within Abelisauroidea."
+        },
+        {
+          "id": "pol2024a",
+          "authors": "Pol, D.; Baiano, M. A.; Černý, D.; Novas, F. E.; Cerda, I. A.; Pittman, M.",
+          "year": 2024,
+          "title": "A new abelisaurid dinosaur from the end Cretaceous of Patagonia and evolutionary rates among the Ceratosauria",
+          "journal": "Cladistics",
+          "publisher": "Wiley",
+          "volume": "40",
+          "issue": "3",
+          "pages": "307-356",
+          "doi": "10.1111/cla.12583",
+          "notes": "Prunes Huinculsaurus as one of the unstable taxa that collapse the ceratosaurian ingroup."
+        },
+        {
+          "id": "jiménezvelandia2025a",
+          "authors": "Jiménez Velandia, H.; Ezcurra, M. D.; Hechenleitner, E. M.; Basilici, G.; Martinelli, A. G.; Fiorelli, L. E.",
+          "year": 2025,
+          "title": "A New Late Cretaceous Abelisaurid Species from La Rioja Province, Northwestern Argentina",
+          "journal": "Ameghiniana",
+          "publisher": "Asociacion Paleontologica Argentina",
+          "volume": "62",
+          "issue": "6",
+          "doi": "10.5710/amgh.24.09.2025.3653",
+          "notes": "Prunes Huinculsaurus as an unstable taxon to resolve Ceratosauria."
+        },
+        {
+          "id": "canale2026a",
+          "authors": "Canale, J. I.; Cerroni, M. A.; Baiano, M. A.; Meso, J. G.; Palombi, D.; Paulina-Carabajal, A.",
+          "year": 2026,
+          "title": "The Skull Beneath the Skin: Cranial Osteology of Skorpiovenator bustingorryi (Dinosauria, Theropoda, Abelisauridae) from the Late Cretaceous of Patagonia, Argentina",
+          "journal": "Ameghiniana",
+          "publisher": "Asociacion Paleontologica Argentina",
+          "doi": "10.5710/amgh.20.08.2026.3665",
+          "notes": "Prunes Huinculsaurus as an unstable taxon."
         }
       ],
       "taxonomy": [
@@ -109393,9 +109800,7 @@
         "Neotheropoda",
         "Averostra",
         "Ceratosauria",
-        "Abelisauroidea",
-        "Noasauridae",
-        "Elaphrosaurinae"
+        "Abelisauroidea"
       ],
       "authors": "Baiano, M. A.; Coria, R. A.; Cau, A.",
       "described": 2020
@@ -110569,7 +110974,7 @@
     },
     "Hypsibema": {
       "genus": "Hypsibema",
-      "parent": "Hadrosauridae",
+      "parent": "Hadrosauroidea",
       "placement": "incertae sedis",
       "etymology": "From Greek hypsi (high) and bema (step); meaning 'high step', because Edward Cope believed the animal walked particularly erect on its toes",
       "pronunciation": {
@@ -110577,7 +110982,7 @@
       },
       "description": "Hypsibema is a dubious genus of very large dinosaur from the Late Cretaceous of eastern North America, of uncertain affinities. The type species, H. crassicauda, is known mainly from the Tar Heel Formation of North Carolina and the Marshalltown Formation of New Jersey, and its fragmentary material has been interpreted as sauropod as well as hadrosaurian. A second species, H. missouriensis from the Maastrichtian of Missouri, was originally named Neosaurus and then Parrosaurus before being referred to Hypsibema by Baird and Horner (1979); a proposed return of that species to Parrosaurus has not gained broad acceptance.",
       "dispute": {
-        "summary": "Hypsibema is a nomen dubium based on chimeric, fragmentary material; some referred remains have been treated as a separate valid hadrosauroid (referred to Parrosaurus by some authors).\n",
+        "summary": "Baird and Horner (1979) restricted Hypsibema crassicauda to a lectotype caudal, the type series being a mixture of three suborders, and referred it to Sauropoda, a placement later work rejects. Prieto-Márquez and colleagues (2016) list H. crassicauda and the Missouri species among the nondiagnostic Appalachian hadrosaurids, while Brownstein (2018) treats both as valid giant hadrosauroids, the Missouri species as Parrosaurus missouriensis, of uncertain placement within or outside Hadrosauridae. It is placed at Hadrosauroidea incertae sedis.\n",
         "history": [
           {
             "date": "2026-06-27",
@@ -110586,6 +110991,10 @@
           {
             "date": "2026-10-08",
             "note": "Type species H. crassicauda set to nomen dubium and diagnostic features removed; the status of H. missouriensis is left open."
+          },
+          {
+            "date": "2026-10-16",
+            "note": "Moved from Hadrosauridae to Hadrosauroidea incertae sedis and H. missouriensis set to disputed; summary rewritten with its sources.\n"
           }
         ]
       },
@@ -110674,7 +111083,7 @@
         {
           "name": "Hypsibema missouriensis",
           "etymology": "Named for Missouri, the U.S. state where the holotype was discovered, with the Latin suffix '-ensis'.",
-          "status": "valid",
+          "status": "disputed",
           "type_species": false,
           "period": {
             "name": [
@@ -110782,6 +111191,36 @@
           "issue": "3",
           "pages": "566-577",
           "notes": "Lists the type of Parrosaurus missouriensis, now this genus's second species, as USNM 16733; Gilmore (1945) prints U.S.N.M. 16735."
+        },
+        {
+          "id": "prieto-márquez2016b",
+          "authors": "Prieto-Márquez, A.; Erickson, G. M.; Ebersole, J. A.",
+          "year": 2016,
+          "title": "Anatomy and osteohistology of the basal hadrosaurid dinosaur Eotrachodon from the uppermost Santonian (Cretaceous) of southern Appalachia",
+          "journal": "PeerJ",
+          "publisher": "PeerJ",
+          "notes": "Lists Hypsibema crassicauda and Parrosaurus missouriensis among the nondiagnostic hadrosaurids of the Appalachian record."
+        },
+        {
+          "id": "brett-surman1989a",
+          "authors": "Brett-Surman, M. K.",
+          "year": 1989,
+          "title": "A revision of the Hadrosauridae (Reptilia: Ornithischia) and their evolution during the Campanian and Maastrichtian",
+          "thesis": "doctoral",
+          "school": "The George Washington University",
+          "pages": "1-272",
+          "notes": "Finds none of the elements diagnostic and calls Hypsibema a nomen dubium, questioning its transfer to Sauropoda."
+        },
+        {
+          "id": "brownstein2018a",
+          "authors": "Brownstein, C. D.",
+          "year": 2018,
+          "title": "The biogeography and ecology of the Cretaceous non-avian dinosaurs of Appalachia",
+          "journal": "Palaeontologia Electronica",
+          "volume": "21.1.5A",
+          "pages": "1-56",
+          "doi": "10.26879/801",
+          "notes": "Treats Hypsibema crassicauda and the Missouri species, as Parrosaurus missouriensis, as valid giant hadrosauroids of uncertain placement within or outside Hadrosauridae."
         }
       ],
       "taxonomy": [
@@ -110804,9 +111243,7 @@
         "Ankylopollexia",
         "Styracosterna",
         "Hadrosauriformes",
-        "Hadrosauroidea",
-        "Hadrosauromorpha",
-        "Hadrosauridae"
+        "Hadrosauroidea"
       ],
       "authors": "Cope, E. D.",
       "described": 1869
@@ -113501,11 +113938,15 @@
       "genus": "Indosuchus",
       "parent": "Abelisauridae",
       "dispute": {
-        "summary": "Indosuchus is a valid abelisaurid, but its finer relationships are unsettled and it may be a senior synonym of, or conspecific with, Indosaurus; much of its historically referred material has been reassigned to other taxa.\n",
+        "summary": "Novas and colleagues (2010) consider Indosuchus raptorius a nomen dubium, its holotype offering no clear autapomorphies, while Dalman and Gishlick (2011), studying the material in full, treat it as valid and recover it within Carnotaurinae; Carrano and Sampson (2008) allow that the Lameta abelisaurids may be only one or two taxa, though they find Indosuchus the most distinct. Its abelisaurid affinity is not in question. Much of the material once referred to it has been reassigned: Novas and colleagues (2010) made the Rahioli skeleton the basis of Rahiolisaurus, and Dalman and Gishlick (2011) refer the AMNH specimens to an indeterminate basal abelisaurid.\n",
         "history": [
           {
             "date": "2026-06-30",
             "note": "Placed at Abelisauridae pending revision.\n"
+          },
+          {
+            "date": "2026-10-15",
+            "note": "Status set to disputed and summary rewritten with its sources; the earlier suggestion that it is a senior synonym of Indosaurus had no source.\n"
           }
         ]
       },
@@ -113552,7 +113993,7 @@
         {
           "name": "Indosuchus raptorius",
           "etymology": "From Latin 'raptorius' meaning 'raptorial', in reference to the predatory nature of the animal.",
-          "status": "valid",
+          "status": "disputed",
           "type_species": true,
           "period": {
             "name": [
@@ -113629,6 +114070,38 @@
           "issue": "1",
           "pages": "67-103",
           "doi": "10.22179/REVMACN.6.74"
+        },
+        {
+          "id": "novas2010b",
+          "authors": "Novas, F. E.; Chatterjee, S.; Rudra, D. K.; Datta, P. M.",
+          "year": 2010,
+          "title": "Rahiolisaurus gujaratensis, n. gen. n. sp., A New Abelisaurid Theropod from the Late Cretaceous of India",
+          "journal": "Lecture Notes in Earth Sciences",
+          "publisher": "Springer Berlin Heidelberg",
+          "pages": "45-62",
+          "doi": "10.1007/978-3-642-10311-7_3",
+          "notes": "Considers Indosuchus raptorius a nomen dubium, with Lametasaurus indicus and Indosaurus matleyi, and refers the Rahioli material to the new genus Rahiolisaurus."
+        },
+        {
+          "id": "carrano2008a",
+          "authors": "Carrano, M. T.; Sampson, S. D.",
+          "year": 2008,
+          "title": "The Phylogeny of Ceratosauria (Dinosauria: Theropoda)",
+          "journal": "Journal of Systematic Palaeontology",
+          "volume": "6",
+          "issue": "2",
+          "pages": "183-236",
+          "doi": "10.1017/S1477201907002246",
+          "notes": "Confirms the abelisaurid affinity, allows that the Lameta abelisaurids may be only one or two taxa, and finds the Indosuchus type the most distinct of them."
+        },
+        {
+          "id": "dalman2011a",
+          "authors": "Dalman, S. G.; Gishlick, A. D.",
+          "year": 2011,
+          "title": "Theropod material from Lameta, India, in the collection of the American Museum of Natural History and its bearing on the diagnosis and phylogenetic and taxonomic status of Indosuchus raptorius",
+          "book": "Society of Vertebrate Paleontology, 71st Annual Meeting, Program and Abstracts",
+          "publisher": "Society of Vertebrate Paleontology, Las Vegas",
+          "notes": "Treats Indosuchus raptorius as valid, recovers it within Carnotaurinae and not with Indosaurus, and separates the AMNH material as a basal abelisaurid."
         }
       ],
       "taxonomy": [
@@ -113898,19 +114371,6 @@
       "genus": "Inosaurus",
       "parent": "Theropoda",
       "placement": "incertae sedis",
-      "dispute": {
-        "summary": "Inosaurus tedreftensis is a nomen dubium based on fragmentary, now-lost vertebrae; its affinities within Theropoda cannot be determined. It is placed conservatively at Tetanurae incertae sedis.\n",
-        "history": [
-          {
-            "date": "2026-07-02",
-            "note": "Placed at Tetanurae incertae sedis; regarded as a nomen dubium."
-          },
-          {
-            "date": "2026-07-14",
-            "note": "Moved to Theropoda incertae sedis; none of the sources cited for this taxon supports a placement below Theropoda for the fragmentary, now-lost vertebrae."
-          }
-        ]
-      },
       "etymology": "Named after In Tedreft, the locality in Niger where the holotype was collected; meaning \"In Tedreft lizard\"",
       "description": "Inosaurus is a dubious genus of extinct theropod dinosaur from the \"Continental intercalaire\" of Niger, the type material from the Tiourarén Formation at In Tedreft, and possibly from the Late Cretaceous Baharija Formation of Egypt. The type, and only species, is I. tedreftensis.",
       "diet": "carnivore",
@@ -122006,18 +122466,22 @@
     },
     "Kangnasaurus": {
       "genus": "Kangnasaurus",
-      "parent": "Elasmaria",
+      "parent": "Iguanodontia",
       "pronunciation": {
         "phonetic": "KANG-nuh-SAWR-us"
       },
       "etymology": "Named after Farm Kangnas in the Orange River valley of northern Cape Province, South Africa; meaning \"Farm Kangnas lizard\"",
       "description": "Kangnasaurus is a genus of elasmarian ornithopod dinosaur found in Late Cretaceous rocks of South Africa. It is known from a tooth and possibly some postcranial remains dating between the middle-Campanian to Maastrichtian Kalahari Deposits Formation.",
       "dispute": {
-        "summary": "Kangnasaurus coetzeei is based on a tooth and fragmentary remains; it is recovered as an elasmarian by recent analyses but has historically been treated as a dryosaurid and is sometimes regarded as a nomen dubium.\n",
+        "summary": "Norman (2004) considers Kangnasaurus coetzeei a nomen dubium, while Forster and colleagues (2023) note that the material certainly pertains to Iguanodontia and that it has also been treated as a valid iguanodontian, as the analyses since 2020 treat it. Cooper (1985) allied it with Dryosaurus; later analyses recover it as an elasmarian (Fonseca and colleagues 2024; Dieudonné and colleagues 2026), within a rhabdodontoid clade (Poole, 2022), or outside Dryosauridae (Rocchi and colleagues 2026). It is placed at Iguanodontia incertae sedis.\n",
         "history": [
           {
             "date": "2026-06-29",
             "note": "Placed at Elasmaria following recent analyses; nomen dubium."
+          },
+          {
+            "date": "2026-10-16",
+            "note": "Moved from Elasmaria to Iguanodontia incertae sedis and status set to disputed; summary rewritten with its sources.\n"
           }
         ]
       },
@@ -122052,7 +122516,7 @@
         {
           "name": "Kangnasaurus coetzeei",
           "etymology": "Named for the farmer Coetzee, on whose farm (Farm Kangnas) the holotype tooth was discovered.",
-          "status": "nomen dubium",
+          "status": "disputed",
           "type_species": true,
           "period": {
             "name": [
@@ -122118,6 +122582,87 @@
           "publisher": "University of California Press, Berkeley",
           "isbn": "0-520-24209-2",
           "notes": "Lists the Kalahari Deposits as the horizon, citing Haughton and Cooper."
+        },
+        {
+          "id": "norman2004a",
+          "authors": "Norman, D. B.",
+          "year": 2004,
+          "title": "Basal Iguanodontia",
+          "book": "The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)",
+          "publisher": "University of California Press, Berkeley",
+          "pages": "413-437",
+          "notes": "Lists Kangnasaurus coetzeei among the nomina dubia of basal Iguanodontia."
+        },
+        {
+          "id": "forster2023a",
+          "authors": "Forster, C. A.; de Klerk, W. J.; Poole, K. E.; Chinsamy-Turan, A.; Roberts, E. M.; Ross, C. F.",
+          "year": 2023,
+          "title": "Iyuku raathi, a new iguanodontian dinosaur from the Early Cretaceous Kirkwood Formation, South Africa",
+          "journal": "The Anatomical Record",
+          "publisher": "Wiley",
+          "volume": "306",
+          "issue": "7",
+          "pages": "1762-1803",
+          "doi": "10.1002/ar.25038",
+          "notes": "Notes that the material certainly pertains to an iguanodontian and that its validity has been both doubted and accepted."
+        },
+        {
+          "id": "cooper1985a",
+          "authors": "Cooper, M. R.",
+          "year": 1985,
+          "title": "A revision of the ornithischian dinosaur Kangnasaurus coetzeei Haughton, with a classification of the Ornithischia",
+          "journal": "Annals of the South African Museum",
+          "volume": "95",
+          "pages": "281-317",
+          "notes": "Transfers Kangnasaurus from the iguanodontids to a position most closely allied to Dryosaurus."
+        },
+        {
+          "id": "fonseca2024a",
+          "authors": "Fonseca, A. O.; Reid, I. J.; Venner, A.; Duncan, R. J.; Garcia, M. S.; Müller, R. T.",
+          "year": 2024,
+          "title": "A comprehensive phylogenetic analysis on early ornithischian evolution",
+          "journal": "Journal of Systematic Palaeontology",
+          "volume": "22",
+          "pages": "2346577",
+          "doi": "10.1080/14772019.2024.2346577",
+          "notes": "Recovers Kangnasaurus within Elasmaria, as one of its earliest members under implied weighting."
+        },
+        {
+          "id": "dieudonné2026a",
+          "authors": "Dieudonné, P.; Becerra, M. G.; Zanesco, T.; Tortosa, T.; Cruzado-Caballero, P.; Stein, K.; Torcida Fernández-Baldor, F.",
+          "year": 2026,
+          "title": "Foskeia pelendonum, a new rhabdodontomorph from the Lower Cretaceous of Salas de los Infantes (Burgos Province, Spain), and a new phylogeny of ornithischian dinosaurs",
+          "journal": "Papers in Palaeontology",
+          "publisher": "Wiley",
+          "volume": "12",
+          "issue": "1",
+          "doi": "10.1002/spp2.70057",
+          "notes": "Recovers Kangnasaurus in an unresolved polytomy with the elasmarians."
+        },
+        {
+          "id": "poole2022a",
+          "authors": "Poole, K. E.",
+          "year": 2022,
+          "title": "Phylogeny of iguanodontian dinosaurs and the evolution of quadrupedality",
+          "journal": "Palaeontologia Electronica",
+          "volume": "25",
+          "issue": "3",
+          "pages": "a30",
+          "doi": "10.26879/702",
+          "notes": "Recovers Kangnasaurus within a Rhabdodontoidea alongside Rhabdodontidae, Tenontosaurus and Muttaburrasaurus."
+        },
+        {
+          "id": "rocchi2026a",
+          "authors": "Rocchi, R.; Rotatori, F. M.; Ferreira, G. S.; Fanti, F.",
+          "year": 2026,
+          "title": "An exquisitely preserved young iguanodontian from the Upper Jurassic of Tanzania sheds light on skeletal fusion patterns within Archosauria",
+          "journal": "Papers in Palaeontology",
+          "publisher": "Wiley",
+          "volume": "12",
+          "issue": "3",
+          "pages": "e70085",
+          "doi": "10.1002/spp2.70085",
+          "notes": "Recovers Kangnasaurus outside Dryosauridae."
         }
       ],
       "taxonomy": [
@@ -122135,8 +122680,7 @@
         "Neornithischia",
         "Cerapoda",
         "Ornithopoda",
-        "Iguanodontia",
-        "Elasmaria"
+        "Iguanodontia"
       ],
       "authors": "Haughton, S. H.",
       "described": 1915
@@ -126780,15 +127324,6 @@
       },
       "etymology": "Named for the Khodzhakul Formation where the fossils were found, with 'kul' meaning 'lake' in the local language, combined with Greek 'keratops' meaning 'horned face'; the specific name kulensis also references the formation.",
       "description": "Kulceratops is a genus of ceratopsian dinosaur from the Early Cretaceous. It lived in the late Albian stage. It is one of the few ceratopsians known from this period. However, the fossils from this genus have been sparse: only jaw and tooth fragments have been found so far.",
-      "dispute": {
-        "summary": "Kulceratops kulensis is a poorly known Early Cretaceous taxon, generally treated as a nomen dubium but interpreted as a basal neoceratopsian.\n",
-        "history": [
-          {
-            "date": "2026-06-27",
-            "note": "Placed at Neoceratopsia (basal); nomen dubium."
-          }
-        ]
-      },
       "diet": "herbivore",
       "locomotion": "bipedal",
       "paleoenvironment": [
@@ -126858,6 +127393,19 @@
           "title": "Dinozavri severnoi Yevrazii: Novye dannye o sostave kompleksov, ekologii i paleobiogeografii [Dinosaurs of northern Eurasia: new data about assemblages, ecology, and paleobiogeography]",
           "journal": "Institute for Scientific Research on the Earth's Crust, St. Petersburg State University, St. Petersburg",
           "pages": "1-156"
+        },
+        {
+          "id": "chinnery2007a",
+          "authors": "Chinnery, B. J.; Horner, J. R.",
+          "year": 2007,
+          "title": "A new neoceratopsian dinosaur linking North American and Asian taxa",
+          "journal": "Journal of Vertebrate Paleontology",
+          "publisher": "Informa UK Limited",
+          "volume": "27",
+          "issue": "3",
+          "pages": "625-641",
+          "doi": "10.1671/0272-4634(2007)27[625:anndln]2.0.co;2",
+          "notes": "Leaves Kulceratops out of its analysis of basal neoceratopsians as too incomplete."
         }
       ],
       "taxonomy": [
@@ -127631,15 +128179,6 @@
       "genus": "Kuszholia",
       "parent": "Avialae",
       "placement": "incertae sedis",
-      "dispute": {
-        "summary": "Kuszholia mengi is based on isolated pneumatic vertebrae and is of uncertain affinity. It has been treated as an ornithuromorph or ornithurine bird and as a possible enantiornithine, while other workers regard it as a non-avialan coelurosaur near bird ancestry; it is widely considered a nomen dubium. It is placed conservatively at Avialae incertae sedis.\n",
-        "history": [
-          {
-            "date": "2026-07-01",
-            "note": "Moved from Ornithurae to Avialae incertae sedis (the Ornithurae, Ornithuromorpha, and Enantiornithes branches were removed as empty); of dubious status."
-          }
-        ]
-      },
       "etymology": "From Kazakh qus joly (Milky Way, literally \"bird road\"); meaning \"Milky Way bird\"",
       "description": "Kuszholia is the name given to a genus of primitive birds or bird-like dinosaurs from the Late Cretaceous.",
       "diet": "carnivore",
@@ -127669,7 +128208,7 @@
       "species": [
         {
           "name": "Kuszholia mengi",
-          "status": "nomen dubium",
+          "status": "valid",
           "type_species": true,
           "period": {
             "name": [
@@ -127724,6 +128263,24 @@
           "issue": "3",
           "pages": "314-319",
           "doi": "10.1134/s0031030111030166"
+        },
+        {
+          "id": "nessov1997a",
+          "authors": "Nessov, L. A.",
+          "year": 1997,
+          "title": "Nemorskie pozvonochnye melovogo perioda Severnoi Yevrazii [Cretaceous nonmarine vertebrates of northern Eurasia]",
+          "journal": "Institute for Scientific Research on the Earth's Crust, St. Petersburg State University, St. Petersburg",
+          "pages": "1-218",
+          "notes": "Lists Kuszholia mengi, with a query, in Patagopterygiformes as the family Kuszholiidae, and corrects the holotype number."
+        },
+        {
+          "id": "weishampel2004a",
+          "authors": "Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.)",
+          "year": 2004,
+          "title": "The Dinosauria, Second Edition",
+          "publisher": "University of California Press, Berkeley",
+          "isbn": "0-520-24209-2",
+          "notes": "Lists Kuszholia mengi in its table of Avialae under Ornithothoraces, outside Enantiornithes."
         }
       ],
       "taxonomy": [
@@ -128644,7 +129201,7 @@
       "parent": "Dinosauria",
       "placement": "incertae sedis",
       "dispute": {
-        "summary": "Lametasaurus is a chimera based on associated but probably non-conspecific elements and is widely regarded as a nomen dubium. Its elements have been referred to sharply different clades: the osteoderms have been read as nodosaurid/ankylosaurian and, alternatively, as titanosaurian, while parts of the pelvis and hindlimb have been compared to abelisaurid theropods (raising the possibility that Lametasaurus is a senior synonym of Indosaurus or Rajasaurus). Recent work identifies ankylosaurian synapomorphies in some osteoderms, confirming the composite nature regardless of the other material. With hypotheses spanning Ornithischia, Sauropodomorpha, and Theropoda and the syntypes lost, the genus is placed conservatively at Dinosauria incertae sedis.\n",
+        "summary": "Matley's (1924) type series is a mixture. Walker (1964) assigns its pelvis and limb bones to carnosaurs and restricts the name Lametasaurus to the scutes, which Huene and Matley (1933) read as nodosaurian and Carrano and Sampson (2008) as probably titanosaurian. Later work reads the sacrum, ilia and tibia as abelisaurid: Wilson and colleagues (2003) refer them to Rajasaurus, and Carrano and Sampson (2008) consider Lametasaurus, Indosaurus and Rajasaurus the likeliest synonyms, Lametasaurus having priority. Novas and colleagues (2010) consider it a nomen dubium. With its elements read as ornithischian, sauropod and theropod, and the material lost, it is placed at Dinosauria incertae sedis.\n",
         "history": [
           {
             "date": "2026-06-30",
@@ -128653,6 +129210,10 @@
           {
             "date": "2026-07-03",
             "note": "Reparented from Abelisauridae to Dinosauria incertae sedis: the chimeric syntypes yield competing ornithischian (nodosaurid/ankylosaurian), sauropodomorph (titanosaurian), and theropod (abelisaurid) referrals, so Dinosauria is the least-inclusive clade all hypotheses share. Removed diet, locomotion, and the abelisaur-tibia-based weight estimate, which presupposed the theropod reading.\n"
+          },
+          {
+            "date": "2026-10-16",
+            "note": "Summary rewritten with its sources; adds Walker's restriction of the name to the scutes and drops an unsourced claim of ankylosaurian synapomorphies.\n"
           }
         ]
       },
@@ -128741,6 +129302,63 @@
           "issue": "1",
           "pages": "1-74",
           "notes": "Names the Carnosaur bed and places it at the top of the greensand zone, immediately under the Main Limestone."
+        },
+        {
+          "id": "walker1964a",
+          "authors": "Walker, A. D.",
+          "year": 1964,
+          "title": "Triassic reptiles from the Elgin area: Ornithosuchus and the origin of carnosaurs",
+          "journal": "Philosophical Transactions of the Royal Society of London, Series B, Biological Sciences",
+          "volume": "248",
+          "pages": "53-134",
+          "doi": "10.1098/rstb.1964.0009",
+          "notes": "Assigns the endoskeletal elements of the type series to carnosaurs and restricts the name Lametasaurus to the scutes."
+        },
+        {
+          "id": "wilson2003a",
+          "authors": "Wilson, J. A.; Sereno, P. C.; Srivastava, S.; Bhatt, D. K.; Khosla, A.; Sahni, A.",
+          "year": 2003,
+          "title": "A new abelisaurid (Dinosauria, Theropoda) from the Lameta Formation (Cretaceous, Maastrichtian) of India",
+          "journal": "Contributions from the Museum of Paleontology, University of Michigan",
+          "volume": "31",
+          "issue": "1",
+          "pages": "1-42",
+          "notes": "Refers the ilia and sacrum described as Lametasaurus to Rajasaurus."
+        },
+        {
+          "id": "carrano2008a",
+          "authors": "Carrano, M. T.; Sampson, S. D.",
+          "year": 2008,
+          "title": "The Phylogeny of Ceratosauria (Dinosauria: Theropoda)",
+          "journal": "Journal of Systematic Palaeontology",
+          "volume": "6",
+          "issue": "2",
+          "pages": "183-236",
+          "doi": "10.1017/S1477201907002246",
+          "notes": "Reads the sacrum, ilium and tibia as abelisaurid, the scutes as probably titanosaurian, and names Lametasaurus the senior of the likely synonyms Indosaurus and Rajasaurus."
+        },
+        {
+          "id": "novas2010b",
+          "authors": "Novas, F. E.; Chatterjee, S.; Rudra, D. K.; Datta, P. M.",
+          "year": 2010,
+          "title": "Rahiolisaurus gujaratensis, n. gen. n. sp., A New Abelisaurid Theropod from the Late Cretaceous of India",
+          "journal": "Lecture Notes in Earth Sciences",
+          "publisher": "Springer Berlin Heidelberg",
+          "pages": "45-62",
+          "doi": "10.1007/978-3-642-10311-7_3",
+          "notes": "Considers Lametasaurus indicus a nomen dubium, with Indosuchus raptorius and Indosaurus matleyi."
+        },
+        {
+          "id": "d'emic2009a",
+          "authors": "D'Emic, M. D.; Wilson, J. A.; Chatterjee, S.",
+          "year": 2009,
+          "title": "The titanosaur (Dinosauria: Sauropoda) osteoderm record: review and first definitive specimen from India",
+          "journal": "Journal of Vertebrate Paleontology",
+          "volume": "29",
+          "issue": "1",
+          "pages": "165-177",
+          "doi": "10.1671/039.029.0131",
+          "notes": "Records that Lametasaurus has been called a nomen dubium both as an ankylosaur and as a theropod, and identifies the club-shaped plate once referred to it as a titanosaur osteoderm."
         }
       ],
       "taxonomy": [
@@ -130924,11 +131542,15 @@
       },
       "description": "Leonerasaurus is a basal genus of sauropodomorph dinosaur. Currently, there is only one species known, named L. taquetrensis by Diego Pol, Alberto Garrido and Ignacio A. Cerda in 2011. The fossil, an incomplete subadult individual, was found in the Las Leoneras Formation in Argentina. This formation is probably Early Jurassic in age. Leonerasaurus was a small non-sauropod sauropodomorph, showing an unusual combination of basal and derived characters. This indicates that the evolution of early sauropodomorphs witnessed a great degree of convergent evolution.",
       "dispute": {
-        "summary": "Leonerasaurus taquetrensis shows a mosaic of basal and sauropod-like characters and its position is inconsistent between studies, falling among basal sauropodiforms or basal massopodans.\n",
+        "summary": "Pol and colleagues (2011) describe Leonerasaurus taquetrensis as a small sauropodomorph with a sauropod-like four-vertebra sacrum, and recover it as the sister of Melanorosaurus plus Sauropoda. Later analyses move it within Sauropodiformes: McPhee and colleagues (2015) find it near the base of Sauropoda, which they attribute to missing data, while Otero and colleagues (2015) and Rauhut and colleagues (2020) recover it in unresolved positions at the base of the clade. It is placed at Sauropodiformes incertae sedis.\n",
         "history": [
           {
             "date": "2026-06-29",
             "note": "Placed at Sauropodiformes incertae sedis; position inconsistent between analyses."
+          },
+          {
+            "date": "2026-10-16",
+            "note": "Summary rewritten with its sources; no analysis read places it among basal massopodans.\n"
           }
         ]
       },
@@ -131037,6 +131659,44 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25023-6",
           "notes": "Source of the hip height estimate."
+        },
+        {
+          "id": "mcphee2015b",
+          "authors": "McPhee, B. W.; Choiniere, J. N.; Yates, A. M.; Viglietti, P. A.",
+          "year": 2015,
+          "title": "A second species of Eucnemesaurus Van Hoepen, 1920 (Dinosauria, Sauropodomorpha): new information on the diversity and evolution of the sauropodomorph fauna of South Africa's lower Elliot Formation (latest Triassic)",
+          "journal": "Journal of Vertebrate Paleontology",
+          "publisher": "Informa UK Limited",
+          "volume": "35",
+          "issue": "5",
+          "pages": "e980504",
+          "doi": "10.1080/02724634.2015.980504",
+          "notes": "Recovers Leonerasaurus near the base of Sauropoda, more derived than earlier analyses, and attributes this to missing data."
+        },
+        {
+          "id": "otero2015a",
+          "authors": "Otero, A.; Krupandan, E.; Pol, D.; Chinsamy, A.; Choiniere, J.",
+          "year": 2015,
+          "title": "A new basal sauropodiform from South Africa and the phylogenetic relationships of basal sauropodomorphs",
+          "journal": "Zoological Journal of the Linnean Society",
+          "publisher": "Oxford University Press (OUP)",
+          "volume": "174",
+          "issue": "3",
+          "pages": "589-634",
+          "doi": "10.1111/zoj.12247",
+          "notes": "Recovers Leonerasaurus in a polytomy with Sefapanosaurus, Aardonyx and more derived sauropodomorphs."
+        },
+        {
+          "id": "rauhut2020a",
+          "authors": "Rauhut, O. W. M.; Holwerda, F. M.; Furrer, H.",
+          "year": 2020,
+          "title": "A derived sauropodiform dinosaur and other sauropodomorph material from the Late Triassic of Canton Schaffhausen, Switzerland",
+          "journal": "Swiss Journal of Geosciences",
+          "publisher": "Pensoft Publishers",
+          "volume": "113",
+          "issue": "1",
+          "doi": "10.1186/s00015-020-00360-8",
+          "notes": "Finds Leonerasaurus and Sefapanosaurus taking several equally parsimonious positions at the base of Sauropodiformes."
         }
       ],
       "taxonomy": [
@@ -136520,7 +137180,7 @@
     },
     "Loricosaurus": {
       "genus": "Loricosaurus",
-      "parent": "Saltasaurinae",
+      "parent": "Titanosauria",
       "placement": "incertae sedis",
       "pronunciation": {
         "phonetic": "lo-REE-ko-SAWR-us"
@@ -136528,11 +137188,15 @@
       "etymology": "From Latin 'lorica' (armor/cuirass) and Greek 'sauros' (lizard); meaning 'armor lizard', in reference to the dermal armor on which the genus is based.",
       "description": "Loricosaurus is a genus of sauropod represented by a single species, L. scutatus. It is a titanosaur that lived near the end of the Late Cretaceous period, approximately 71 million years ago in the early Maastrichtian, being found in the province of Neuquen, Argentina in the Allen Formation. Due to the presence of armor, at first it was believed that it was an ankylosaur, but today it is considered to be that of a titanosaur.",
       "dispute": {
-        "summary": "The type material is dermal armor only. Modern literature considers Loricosaurus scutatus a possible junior synonym of Neuquensaurus or Saltasaurus, but no formal synonymization has been published.\n",
+        "summary": "Huene (1929) described the plates as thyreophoran armor; they are now read as titanosaur osteoderms (D'Emic and colleagues 2009). Upchurch and colleagues (2004) list Loricosaurus scutatus as a questioned synonym of Neuquensaurus australis, and Santucci and Filippi (2022) list it as one without query, but no paper read compares the plates with Neuquensaurus to argue the synonymy. It is treated as a nomen dubium at Titanosauria incertae sedis.\n",
         "history": [
           {
             "date": "2026-07-14",
             "note": "Refined from Titanosauria to Saltasaurinae incertae sedis; the osteoderms are indeterminate saltasaurine armor, and the species is treated as a nomen dubium."
+          },
+          {
+            "date": "2026-10-16",
+            "note": "Moved from Saltasaurinae to Titanosauria incertae sedis; the saltasaurine placement rested only on the unargued synonymy with Neuquensaurus. Summary rewritten with its sources.\n"
           }
         ]
       },
@@ -136660,6 +137324,16 @@
           "pages": "341-391",
           "doi": "10.1007/978-3-030-95959-3_10",
           "notes": "Assigns the Cinco Saltos dinosaur beds to the Anacleto Formation."
+        },
+        {
+          "id": "upchurch2004a",
+          "authors": "Upchurch, P.; Barrett, P. M.; Dodson, P.",
+          "year": 2004,
+          "title": "Sauropoda",
+          "book": "The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)",
+          "publisher": "University of California Press, Berkeley",
+          "pages": "259-322",
+          "notes": "Lists Loricosaurus scutatus, with a query, among the synonyms of Neuquensaurus australis."
         }
       ],
       "taxonomy": [
@@ -136686,12 +137360,7 @@
         "Camarasauromorpha",
         "Titanosauriformes",
         "Somphospondyli",
-        "Titanosauria",
-        "Lithostrotia",
-        "Eutitanosauria",
-        "Saltasauroidea",
-        "Saltasauridae",
-        "Saltasaurinae"
+        "Titanosauria"
       ],
       "authors": "Huene, F. V.",
       "described": 1929
@@ -142258,15 +142927,6 @@
       },
       "etymology": "Named for Manchuria (Mandschuria in German), the region of China where its fossils were found, combined with Greek 'sauros' meaning 'lizard'.",
       "description": "Mandschurosaurus is an extinct genus of hadrosaurids based on material from the Late Cretaceous of China and possibly also the Early Cretaceous of Laos. It was the first dinosaur genus named from China.",
-      "dispute": {
-        "summary": "Mandschurosaurus is a nomen dubium based on a largely non-diagnostic, partly reconstructed mounted skeleton.\n",
-        "history": [
-          {
-            "date": "2026-06-27",
-            "note": "Placed at Hadrosauridae incertae sedis; nomen dubium."
-          }
-        ]
-      },
       "diet": "herbivore",
       "locomotion": "facultative",
       "paleoenvironment": [
@@ -142382,6 +143042,42 @@
           "pages": "160-191",
           "doi": "10.3969/j.issn.1673-9736.2011.03.03",
           "notes": "Spells the formation Yuliangze and places the Jiayin cliffs, the Longgushan section, within it."
+        },
+        {
+          "id": "godefroit2000a",
+          "authors": "Godefroit, P.; Zan, S.; Jin, L.",
+          "year": 2000,
+          "title": "Charonosaurus jiayinensis n.g., n.sp.,a lambeosaurine dinosaur from the Late Maastrichtian of northeastern China",
+          "journal": "Comptes Rendus de l'Académie des Sciences - Series IIA - Earth and Planetary Science",
+          "publisher": "Elsevier BV",
+          "volume": "330",
+          "issue": "12",
+          "pages": "875-882",
+          "doi": "10.1016/s1251-8050(00)00214-7",
+          "notes": "States that Mandschurosaurus amurensis is now unanimously considered a nomen dubium."
+        },
+        {
+          "id": "xing2022a",
+          "authors": "Xing, H.; Gu, W.; Hai, S.; Yu, T.; Han, D.; Zhang, Y.; Zhang, S.",
+          "year": 2022,
+          "title": "Osteological and taxonomic reassessments of Sahaliyania elunchunorum (Dinosauria, Hadrosauridae) from the Upper Cretaceous Yuliangzi Formation, northeast China",
+          "journal": "Journal of Vertebrate Paleontology",
+          "publisher": "Informa UK Limited",
+          "volume": "41",
+          "issue": "6",
+          "pages": "e2085111",
+          "doi": "10.1080/02724634.2021.2085111",
+          "notes": "Treats Mandschurosaurus as a nomen dubium for lack of diagnostic characters and the problematic ascription of its material."
+        },
+        {
+          "id": "brett-surman1989a",
+          "authors": "Brett-Surman, M. K.",
+          "year": 1989,
+          "title": "A revision of the Hadrosauridae (Reptilia: Ornithischia) and their evolution during the Campanian and Maastrichtian",
+          "thesis": "doctoral",
+          "school": "The George Washington University",
+          "pages": "1-272",
+          "notes": "Calls Mandschurosaurus a nomen dubium, its type mostly restored in plaster."
         }
       ],
       "taxonomy": [
@@ -145689,15 +146385,6 @@
       },
       "etymology": "From Greek 'melas' meaning 'black', 'oros' meaning 'mountain', and 'sauros' meaning 'lizard'; translates as 'Black Mountain Lizard', named for the Black Mountains (Thaba Nyama) near the South African discovery site.",
       "description": "Melanorosaurus is a genus of basal sauropodomorph dinosaur that lived during the Late Triassic period. An omnivore from South Africa, it had a large body and sturdy limbs, suggesting it moved quadrupedally. Its limb bones were massive and heavy like the limb bones of true sauropods.",
-      "dispute": {
-        "summary": "Melanorosaurus readi is a derived sauropodiform hovering on the boundary of Sauropoda; depending on the Sauropoda definition it is the immediate non-sauropodan sister of the clade or just inside it.\n",
-        "history": [
-          {
-            "date": "2026-06-29",
-            "note": "Placed at Sauropodiformes incertae sedis; the precise Sauropoda boundary remains unresolved.\n"
-          }
-        ]
-      },
       "diet": "omnivore",
       "locomotion": "quadrupedal",
       "paleoenvironment": [
@@ -145812,6 +146499,28 @@
           "pages": "e2337802",
           "doi": "10.1080/02724634.2024.2337802",
           "notes": "Revised osteology based on the syntype series; designates SAM-PK-3449 as the lectotype, excludes SAM-PK-3450, and restricts the hypodigm to the lectotype."
+        },
+        {
+          "id": "rauhut2020a",
+          "authors": "Rauhut, O. W. M.; Holwerda, F. M.; Furrer, H.",
+          "year": 2020,
+          "title": "A derived sauropodiform dinosaur and other sauropodomorph material from the Late Triassic of Canton Schaffhausen, Switzerland",
+          "journal": "Swiss Journal of Geosciences",
+          "publisher": "Pensoft Publishers",
+          "volume": "113",
+          "issue": "1",
+          "doi": "10.1186/s00015-020-00360-8",
+          "notes": "Follows the node-based Vulcanodon definition of Sauropoda and recovers Melanorosaurus in the pectinate sauropodiform grade outside it."
+        },
+        {
+          "id": "mcphee2017a",
+          "authors": "McPhee, B. W.; Choiniere, J. N.",
+          "year": 2017,
+          "title": "The osteology of Pulanesaura eocollum: implications for the inclusivity of Sauropoda (Dinosauria)",
+          "journal": "Zoological Journal of the Linnean Society",
+          "publisher": "Oxford University Press (OUP)",
+          "doi": "10.1093/zoolinnean/zlx074",
+          "notes": "Reviews the competing definitions of Sauropoda, including Yates's stem definition with Melanorosaurus as external specifier, and questions the validity of Melanorosaurus."
         }
       ],
       "taxonomy": [
@@ -147035,15 +147744,6 @@
       "parent": "Neoceratopsia",
       "etymology": "From Greek 'mikros' (small) and 'keras' (horn); meaning 'small-horned'.",
       "description": "Microceratus is a genus of small ceratopsian dinosaur that lived in the Cretaceous period of Mongolia. It walked on two legs, had short front arms, a characteristic ceratopsian frill and beak-like mouth, and was around 60 cm (2.0 ft) long. It was one of the most primitive ceratopsians, or horned dinosaurs, along with Psittacosaurus, which was also discovered in Mongolia.",
-      "dispute": {
-        "summary": "Microceratus gobiensis is a replacement name for the preoccupied Microceratops; most referred material has been reassigned to Graciliceratops, leaving a poorly diagnosable basal neoceratopsian widely treated as a nomen dubium.\n",
-        "history": [
-          {
-            "date": "2026-06-27",
-            "note": "Placed at Neoceratopsia (basal); nomen dubium."
-          }
-        ]
-      },
       "diet": "herbivore",
       "locomotion": "bipedal",
       "appearance": {
@@ -147158,6 +147858,28 @@
           "pages": "981-992",
           "doi": "10.1139/cjes-2020-0190",
           "notes": "Places the type locality north of the Yellow River in Nei Mongol, refuting the Minhe Formation attribution, and assigns its red sediments to the lower Ulansuhai Formation."
+        },
+        {
+          "id": "sereno2000a",
+          "authors": "Sereno, P. C.",
+          "year": 2000,
+          "title": "The fossil record, systematics and evolution of pachycephalosaurs and ceratopsians from Asia",
+          "book": "The Age of Dinosaurs in Russia and Mongolia (Benton, M. J.; Shishkin, M. A.; Unwin, D. M.; Kurochkin, E. N., eds.)",
+          "publisher": "Cambridge University Press, Cambridge",
+          "pages": "480-516",
+          "notes": "Regards Microceratops gobiensis as a nomen dubium for lack of diagnostic features in the holotype, and rejects the referral of the Shireegiin Gashuun skeleton to it."
+        },
+        {
+          "id": "makovicky2006a",
+          "authors": "Makovicky, P. J.; Norell, M. A.",
+          "year": 2006,
+          "title": "Yamaceratops dorngobiensis, a New Primitive Ceratopsian (Dinosauria: Ornithischia) from the Cretaceous of Mongolia",
+          "journal": "American Museum Novitates",
+          "publisher": "American Museum of Natural History (BioOne sponsored)",
+          "volume": "3530",
+          "pages": "1-42",
+          "doi": "10.1206/0003-0082(2006)3530[1:ydanpc]2.0.co;2",
+          "notes": "Follows Sereno (2000) in treating Microceratops as a nomen dubium, separate from Graciliceratops."
         }
       ],
       "taxonomy": [
@@ -147357,15 +148079,6 @@
       },
       "etymology": "From Greek 'mikros' meaning 'small' and 'hadros' meaning 'bulky', plus Greek 'sauros' meaning 'lizard'; translates as 'small bulky lizard', reflecting its small size compared to other hadrosaurs.",
       "description": "Microhadrosaurus is a genus of hadrosaurid dinosaur from the Late Cretaceous (Campanian or Maastrichtian) Nanxiong Formation of Guangdong, China. Although its name identifies it as a small hadrosaurid, it is based on juvenile remains, and the adult size is unknown.",
-      "dispute": {
-        "summary": "Microhadrosaurus is a nomen dubium based on a juvenile dentary that lacks uniquely identifiable characters.\n",
-        "history": [
-          {
-            "date": "2026-06-27",
-            "note": "Placed at Hadrosauridae incertae sedis; nomen dubium."
-          }
-        ]
-      },
       "diet": "herbivore",
       "locomotion": "facultative",
       "paleoenvironment": [
@@ -147451,6 +148164,29 @@
           "school": "The George Washington University",
           "pages": "1-272",
           "notes": "PhD dissertation; assesses Microhadrosaurus as a nomen dubium."
+        },
+        {
+          "id": "xing2016a",
+          "authors": "Xing, L.; Lockley, M. G.; Li, D.; Klein, H.; Ye, Y.; Persons, W. S., IV; Ran, H.",
+          "year": 2016,
+          "title": "Late Cretaceous ornithopod-dominated, theropod, and pterosaur track assemblages from the Nanxiong Basin, China: new discoveries, ichnotaxonomy, and paleoecology",
+          "journal": "Palaeogeography, Palaeoclimatology, Palaeoecology",
+          "volume": "466",
+          "pages": "303-313",
+          "doi": "10.1016/j.palaeo.2016.11.035",
+          "notes": "Treats Microhadrosaurus as a nomen dubium based on an incomplete juvenile."
+        },
+        {
+          "id": "mo2007a",
+          "authors": "Mo, J.; Zhao, Z.; Wang, W.; Xu, X.",
+          "year": 2007,
+          "title": "The first hadrosaurid dinosaur from southern China",
+          "journal": "Acta Geologica Sinica (English Edition)",
+          "volume": "81",
+          "issue": "4",
+          "pages": "550-554",
+          "doi": "10.1111/j.1755-6724.2007.tb00978.x",
+          "notes": "Treats Microhadrosaurus nanshiungensis as a nomen dubium."
         }
       ],
       "taxonomy": [
@@ -156860,14 +157596,18 @@
     },
     "Neovenator": {
       "genus": "Neovenator",
-      "parent": "Carcharodontosauria",
+      "parent": "Allosauroidea",
       "placement": "incertae sedis",
       "dispute": {
-        "summary": "Neovenator salerii is consistently recovered as a basal carcharodontosaurian, variously as the basalmost member of Carcharodontosauria, as sister to Carcharodontosauridae, or (in older analyses) as the type of a now-deprecated Neovenatoridae that also contained Chilantaisaurus and the megaraptorans. It is placed at Carcharodontosauria incertae sedis.\n",
+        "summary": "Most analyses recover Neovenator salerii in Carcharodontosauria, as its earliest member (Brusatte and colleagues 2008), as the sister of Carcharodontosauridae (Aranciaga Rolando and colleagues 2024), or with Chilantaisaurus in Neovenatoridae (Carrano and colleagues 2012; Rauhut and colleagues 2024), a clade that once also held the megaraptorans, now mostly placed in Coelurosauria. Kellermann and colleagues (2025) recover Carcharodontosauria under some weightings only, finding Neovenator elsewhere lower in Allosauroidea, and Apesteguía and colleagues (2016) once recovered it outside Allosauroidea, a result they call in need of further testing. It is placed at Allosauroidea incertae sedis.\n",
         "history": [
           {
             "date": "2026-07-01",
             "note": "Moved from Neovenatoridae to Carcharodontosauria incertae sedis; Neovenatoridae was dropped as its former megaraptoran content is now placed within Coelurosauria."
+          },
+          {
+            "date": "2026-10-16",
+            "note": "Moved from Carcharodontosauria to Allosauroidea incertae sedis, the level shared by current analyses; summary rewritten with its sources. Neovenatoridae remains in use without the megaraptorans.\n"
           }
         ]
       },
@@ -156990,6 +157730,93 @@
           "pages": "1-166",
           "doi": "10.1080/25761900.2008.12452864",
           "notes": "Comprehensive osteological monograph of the holotype with a formal diagnosis; recovers Neovenator as the basalmost carcharodontosaurid."
+        },
+        {
+          "id": "carrano2012a",
+          "authors": "Carrano, M. T.; Benson, R. B. J.; Sampson, S. D.",
+          "year": 2012,
+          "title": "The phylogeny of Tetanurae (Dinosauria: Theropoda)",
+          "journal": "Journal of Systematic Palaeontology",
+          "publisher": "Informa UK Limited",
+          "volume": "10",
+          "issue": "2",
+          "pages": "211-300",
+          "doi": "10.1080/14772019.2011.630927",
+          "notes": "Recovers Carcharodontosauria as Carcharodontosauridae plus Neovenatoridae, with Neovenator in the latter."
+        },
+        {
+          "id": "rauhut2024a",
+          "authors": "Rauhut, O. W. M.; Bakirov, A. A.; Wings, O.; Fernandes, A. E.; Hübner, T. R.",
+          "year": 2024,
+          "title": "A new theropod dinosaur from the Callovian Balabansai Formation of Kyrgyzstan",
+          "journal": "Zoological Journal of the Linnean Society",
+          "publisher": "Oxford University Press (OUP)",
+          "volume": "201",
+          "issue": "4",
+          "doi": "10.1093/zoolinnean/zlae090",
+          "notes": "Recovers a Neovenatoridae of Neovenator and Chilantaisaurus within Allosauria."
+        },
+        {
+          "id": "tanaka2021a",
+          "authors": "Tanaka, K.; Anvarov, O. U. O.; Zelenitsky, D. K.; Ahmedshaev, A. S.; Kobayashi, Y.",
+          "year": 2021,
+          "title": "A new carcharodontosaurian theropod dinosaur occupies apex predator niche in the early Late Cretaceous of Uzbekistan",
+          "journal": "Royal Society Open Science",
+          "publisher": "The Royal Society",
+          "volume": "8",
+          "issue": "9",
+          "doi": "10.1098/rsos.210923",
+          "notes": "Recovers Neovenator within Carcharodontosauria in both of its analyses."
+        },
+        {
+          "id": "aranciagarolando2024a",
+          "authors": "Aranciaga Rolando, A. M.; Motta, M. J.; Agnolín, F. L.; Tsuihiji, T.; Miner, S.; Brissón Egli, F.; Novas, F. E.",
+          "year": 2024,
+          "title": "A new carcharodontosaurid specimen sheds light on the anatomy of South American giant predatory dinosaurs",
+          "journal": "The Science of Nature",
+          "volume": "111",
+          "issue": "6",
+          "pages": "56",
+          "doi": "10.1007/s00114-024-01942-4",
+          "notes": "Recovers Neovenator as the sister of Carcharodontosauridae (supplementary information)."
+        },
+        {
+          "id": "kellermann2025a",
+          "authors": "Kellermann, M.; Cuesta, E.; Rauhut, O. W. M.",
+          "year": 2025,
+          "title": "Re-evaluation of the Bahariya Formation carcharodontosaurid (Dinosauria: Theropoda) and its implications for allosauroid phylogeny",
+          "journal": "PLOS ONE",
+          "publisher": "Public Library of Science (PLoS)",
+          "volume": "20",
+          "issue": "1",
+          "pages": "e0311096",
+          "doi": "10.1371/journal.pone.0311096",
+          "notes": "Recovers Carcharodontosauria under some weightings only; under the others Neovenator falls lower in Allosauroidea with Chilantaisaurus."
+        },
+        {
+          "id": "apesteguía2016a",
+          "authors": "Apesteguía, S.; Smith, N. D.; Juárez Valieri, R. D.; Makovicky, P. J.",
+          "year": 2016,
+          "title": "An Unusual New Theropod with a Didactyl Manus from the Upper Cretaceous of Patagonia, Argentina",
+          "journal": "PLOS ONE",
+          "publisher": "Public Library of Science (PLoS)",
+          "volume": "11",
+          "issue": "7",
+          "pages": "e0157793",
+          "doi": "10.1371/journal.pone.0157793",
+          "notes": "Recovers Neovenator outside Allosauroidea, near coelurosaurs, after modifying the matrix, and calls the result in need of further testing."
+        },
+        {
+          "id": "aranciagarolando2022a",
+          "authors": "Aranciaga Rolando, A. M.; Motta, M. J.; Agnolín, F. L.; Manabe, M.; Tsuihiji, T.; Novas, F. E.",
+          "year": 2022,
+          "title": "A large Megaraptoridae (Theropoda: Coelurosauria) from Upper Cretaceous (Maastrichtian) of Patagonia, Argentina",
+          "journal": "Scientific Reports",
+          "publisher": "Springer Science and Business Media LLC",
+          "volume": "12",
+          "issue": "1",
+          "doi": "10.1038/s41598-022-09272-z",
+          "notes": "Places the megaraptorans, once grouped with Neovenator, in Coelurosauria."
         }
       ],
       "taxonomy": [
@@ -157008,9 +157835,7 @@
         "Averostra",
         "Tetanurae",
         "Avetheropoda",
-        "Allosauroidea",
-        "Allosauria",
-        "Carcharodontosauria"
+        "Allosauroidea"
       ],
       "authors": "Hutt, S.; Martill, D. M.; Barker, M. J.",
       "described": 1996
@@ -160397,7 +161222,7 @@
     },
     "Notoceratops": {
       "genus": "Notoceratops",
-      "parent": "Ceratopsia",
+      "parent": "Cerapoda",
       "placement": "incertae sedis",
       "etymology": "From Greek 'notos' (southern), 'keras' (horn), and 'ops' (face); meaning 'southern horned face', referring to its discovery in the southern part of South America.",
       "pronunciation": {
@@ -160405,11 +161230,15 @@
       },
       "description": "Notoceratops is a dubious genus of extinct ornithischian dinosaur. The genus was described based on an incomplete, toothless left dentary (now lost) from the Late Cretaceous of Patagonia (in Argentina), probably dating to the Campanian or Maastrichtian. Initially classified as a putative ceratopsian found in the Lago Colhué Huapi Formation, the lost fragmentary holotype precludes confident referral of this taxon within ornithischians, with some researchers suggesting that it belongs to a hadrosaur instead.",
       "dispute": {
-        "summary": "Notoceratops bonarellii is based on a now-lost dentary; its ceratopsian identity has been both supported and questioned (some regard it as possibly hadrosaurian), and it is treated as a nomen dubium.\n",
+        "summary": "Tapia (1919) described Notoceratops bonarellii on an incomplete dentary, now lost (Brett-Surman, 1989), as a ceratopsid, and Bonaparte (1984) and Brett-Surman (1989) keep it ceratopsian. Powell (2003) raises the possibility that it belongs to a hadrosaur, and recent work hedges: Ibiricu and colleagues (2019) call it the supposed ceratopsian and Bandeira and colleagues (2024) list it with a query. It is treated as a nomen dubium at Cerapoda incertae sedis.\n",
         "history": [
           {
             "date": "2026-06-27",
             "note": "Placed at Ceratopsia incertae sedis; nomen dubium."
+          },
+          {
+            "date": "2026-10-16",
+            "note": "Moved from Ceratopsia to Cerapoda incertae sedis, the level shared by the ceratopsian and hadrosaurian readings; summary rewritten with its sources.\n"
           }
         ]
       },
@@ -160515,6 +161344,62 @@
           "volume": "72",
           "issue": "1",
           "pages": "81-99"
+        },
+        {
+          "id": "bonaparte1984a",
+          "authors": "Bonaparte, J. F.",
+          "year": 1984,
+          "title": "I dinosauri dell'Argentina [",
+          "journal": "Sulle Orme dei Dinosauri",
+          "publisher": "Erizzo Editrice, Esplorazioni e Ricerche",
+          "pages": "125-143",
+          "notes": "Finds the dentary's characters strongly indicative of Ceratopsidae."
+        },
+        {
+          "id": "brett-surman1989a",
+          "authors": "Brett-Surman, M. K.",
+          "year": 1989,
+          "title": "A revision of the Hadrosauridae (Reptilia: Ornithischia) and their evolution during the Campanian and Maastrichtian",
+          "thesis": "doctoral",
+          "school": "The George Washington University",
+          "pages": "1-272",
+          "notes": "Reports the holotype lost and keeps the genus ceratopsian, rejecting a hadrosaurid assignment as circular."
+        },
+        {
+          "id": "powell2003a",
+          "authors": "Powell, J. E.",
+          "year": 2003,
+          "title": "Revision of South American Titanosaurid dinosaurs: palaeobiological, palaeobiogeographical and phylogenetic aspects",
+          "journal": "Records of the Queen Victoria Museum",
+          "series": "new series",
+          "volume": "111",
+          "pages": "1-173",
+          "notes": "Raises the possibility that the illustrated dentary belongs to a hadrosaur."
+        },
+        {
+          "id": "ibiricu2019a",
+          "authors": "Ibiricu, L. M.; Casal, G. A.; Martínez, R. D.; Luna, M.; Canale, J. I.; Álvarez, B. N.; González Riga, B.",
+          "year": 2019,
+          "title": "A new ornithopod dinosaur (Dinosauria: Ornithischia) from the Late Cretaceous of central Patagonia",
+          "journal": "Cretaceous Research",
+          "publisher": "Elsevier BV",
+          "volume": "98",
+          "pages": "276-291",
+          "doi": "10.1016/j.cretres.2019.02.001",
+          "notes": "Calls Notoceratops the supposed ceratopsian and notes the loss of the holotype."
+        },
+        {
+          "id": "bandeira2024a",
+          "authors": "Bandeira, K. L. N.; Navarro, B. A.; Pêgas, R. V.; Brilhante, N. S.; Brum, A. S.; de Souza, L. G.; da Silva, R. C.; Gallo, V.",
+          "year": 2024,
+          "title": "A reassessment of the historical fossil findings from Bahia State (Northeast Brazil) reveals a diversified dinosaur fauna in the Lower Cretaceous of South America",
+          "journal": "Historical Biology",
+          "publisher": "Informa UK Limited",
+          "volume": "37",
+          "issue": "3",
+          "pages": "548-589",
+          "doi": "10.1080/08912963.2024.2318406",
+          "notes": "Lists Notoceratops bonarellii with a query under Ceratopsia."
         }
       ],
       "taxonomy": [
@@ -160530,9 +161415,7 @@
         "Ornithischia",
         "Genasauria",
         "Neornithischia",
-        "Cerapoda",
-        "Marginocephalia",
-        "Ceratopsia"
+        "Cerapoda"
       ],
       "authors": "Tapia, A.",
       "described": 1919
@@ -164138,15 +165021,6 @@
       "genus": "Ornithomimoides",
       "parent": "Abelisauroidea",
       "placement": "incertae sedis",
-      "dispute": {
-        "summary": "Ornithomimoides is based on isolated vertebrae and is generally treated as a nomen dubium; reviews suggest an abelisauroid affinity.\n",
-        "history": [
-          {
-            "date": "2026-06-30",
-            "note": "Placed at Abelisauroidea incertae sedis.\n"
-          }
-        ]
-      },
       "pronunciation": {
         "phonetic": "or-NITH-o-mie-MOI-deez"
       },
@@ -164245,6 +165119,28 @@
           "pages": "67-103",
           "doi": "10.22179/REVMACN.6.74",
           "notes": "Reinterprets the type vertebrae of Ornithomimoides as proximal caudals of an indeterminate abelisauroid; finding no autapomorphies, treats the genus as a nomen dubium."
+        },
+        {
+          "id": "carrano2008a",
+          "authors": "Carrano, M. T.; Sampson, S. D.",
+          "year": 2008,
+          "title": "The Phylogeny of Ceratosauria (Dinosauria: Theropoda)",
+          "journal": "Journal of Systematic Palaeontology",
+          "volume": "6",
+          "issue": "2",
+          "pages": "183-236",
+          "doi": "10.1017/S1477201907002246",
+          "notes": "Refers Ornithomimoides mobilis to Abelisauridae and O.? barasimlensis to Noasauridae, and suggests several Lameta names represent one or two taxa."
+        },
+        {
+          "id": "wilson2012a",
+          "authors": "Wilson, J. A.",
+          "year": 2012,
+          "title": "Small theropod dinosaurs from the latest Cretaceous of India",
+          "book": "Society of Vertebrate Paleontology, 72nd Annual Meeting, Program and Abstracts",
+          "pages": "194",
+          "publisher": "Society of Vertebrate Paleontology, Raleigh",
+          "notes": "Proposes, in a conference abstract, that Ornithomimoides shares autapomorphies with Coeluroides and should be grouped with it under that name."
         }
       ],
       "taxonomy": [
@@ -165161,17 +166057,8 @@
     },
     "Orthogoniosaurus": {
       "genus": "Orthogoniosaurus",
-      "parent": "Ceratosauria",
+      "parent": "Theropoda",
       "placement": "incertae sedis",
-      "dispute": {
-        "summary": "Orthogoniosaurus is founded on a single incomplete tooth and is widely regarded as a nomen dubium; it has been considered possibly ceratosaurian, but it cannot be placed more precisely.\n",
-        "history": [
-          {
-            "date": "2026-06-30",
-            "note": "Retained at Ceratosauria incertae sedis as a nomen dubium.\n"
-          }
-        ]
-      },
       "etymology": "From Greek 'orthos' (straight), 'gonia' (angle), and 'sauros' (lizard); meaning 'straight angled lizard', referring to the straight posterior edge of its type tooth.",
       "pronunciation": {
         "phonetic": "OR-tho-GOH-nee-o-SOR-us"
@@ -165246,6 +166133,36 @@
           "volume": "26",
           "issue": "20",
           "pages": "367-369"
+        },
+        {
+          "id": "walker1964a",
+          "authors": "Walker, A. D.",
+          "year": 1964,
+          "title": "Triassic reptiles from the Elgin area: Ornithosuchus and the origin of carnosaurs",
+          "journal": "Philosophical Transactions of the Royal Society of London, Series B, Biological Sciences",
+          "volume": "248",
+          "pages": "53-134",
+          "doi": "10.1098/rstb.1964.0009",
+          "notes": "Considers Orthogoniosaurus indeterminable, being founded on an isolated tooth."
+        },
+        {
+          "id": "molnar1990b",
+          "authors": "Molnar, R. E.",
+          "year": 1990,
+          "title": "Problematic Theropoda: \"Carnosaurs\"",
+          "book": "The Dinosauria (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)",
+          "publisher": "University of California Press, Berkeley",
+          "pages": "306-317",
+          "notes": "Finds the tooth possibly from another Jabalpur theropod but not demonstrably carnosaurian."
+        },
+        {
+          "id": "chure2000a",
+          "authors": "Chure, D. J.",
+          "year": 2000,
+          "title": "A new species of Allosaurus from the Morrison Formation of Dinosaur National Monument (UT-CO) and a revision of the theropod family Allosauridae",
+          "thesis": "doctoral",
+          "school": "Columbia University",
+          "notes": "Places Orthogoniosaurus at Theropoda incertae sedis and excludes it from Allosauridae."
         }
       ],
       "taxonomy": [
@@ -165259,10 +166176,7 @@
         "Archosauria",
         "Dinosauria",
         "Saurischia",
-        "Theropoda",
-        "Neotheropoda",
-        "Averostra",
-        "Ceratosauria"
+        "Theropoda"
       ],
       "authors": "Das-Gupta, H. C.",
       "described": 1930
@@ -174608,17 +175522,8 @@
     },
     "Phaedrolosaurus": {
       "genus": "Phaedrolosaurus",
-      "parent": "Tetanurae",
+      "parent": "Theropoda",
       "placement": "incertae sedis",
-      "dispute": {
-        "summary": "Phaedrolosaurus ilikensis is a nomen dubium based on a single non-diagnostic tooth, sometimes suggested to be dromaeosaurid; referred postcranial material has been separated as Xinjiangovenator. It is placed conservatively at Tetanurae incertae sedis.\n",
-        "history": [
-          {
-            "date": "2026-07-02",
-            "note": "Placed at Tetanurae incertae sedis; regarded as a nomen dubium."
-          }
-        ]
-      },
       "etymology": "From Greek phaedros (elated, bright, gleaming) and sauros (lizard); meaning \"elated lizard\".",
       "pronunciation": {
         "phonetic": "fee-DROH-lo-SOR-us"
@@ -174741,6 +175646,27 @@
           "pages": "173-184",
           "doi": "10.1007/BF02986567",
           "notes": "Designated the type tooth (IVPP V4024-1) as the lectotype of Phaedrolosaurus ilikensis, Dong having failed to designate a holotype."
+        },
+        {
+          "id": "zhao2008a",
+          "authors": "Zhao, Q.; Xu, X.; Jia, C.; Dong, Z.",
+          "year": 2008,
+          "title": "Order Saurischia",
+          "book": "The Chinese Fossil Reptiles and Their Kin (Li, J.; Wu, X.; Zhang, F., eds.)",
+          "publisher": "Science Press, Beijing",
+          "pages": "279-335",
+          "notes": "Treats Phaedrolosaurus ilikensis as a nomen dubium, its holotype tooth having no diagnostic features."
+        },
+        {
+          "id": "barsbold1999a",
+          "authors": "Barsbold, R.; Osmólska, H.",
+          "year": 1999,
+          "title": "The skull of Velociraptor (Theropoda) from the Late Cretaceous of Mongolia",
+          "journal": "Acta Palaeontologica Polonica",
+          "volume": "44",
+          "issue": "2",
+          "pages": "189-219",
+          "notes": "Records that Phaedrolosaurus was first assigned to Dromaeosauridae and has since been considered a nomen dubium."
         }
       ],
       "taxonomy": [
@@ -174754,10 +175680,7 @@
         "Archosauria",
         "Dinosauria",
         "Saurischia",
-        "Theropoda",
-        "Neotheropoda",
-        "Averostra",
-        "Tetanurae"
+        "Theropoda"
       ],
       "authors": "Dong, Z.",
       "described": 1973
@@ -180766,15 +181689,6 @@
       "genus": "Prodeinodon",
       "parent": "Tetanurae",
       "placement": "incertae sedis",
-      "dispute": {
-        "summary": "Prodeinodon is a wastebasket nomen dubium based on isolated teeth showing no diagnostic features; some referred teeth have been interpreted as carcharodontosaurid. It is placed conservatively at Tetanurae incertae sedis.\n",
-        "history": [
-          {
-            "date": "2026-07-02",
-            "note": "Placed at Tetanurae incertae sedis; regarded as a nomen dubium."
-          }
-        ]
-      },
       "pronunciation": {
         "phonetic": "pro-DY-no-don"
       },
@@ -180857,6 +181771,49 @@
           "journal": "American Museum Novitates",
           "volume": "128",
           "pages": "1-16"
+        },
+        {
+          "id": "molnar1990b",
+          "authors": "Molnar, R. E.",
+          "year": 1990,
+          "title": "Problematic Theropoda: \"Carnosaurs\"",
+          "book": "The Dinosauria (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)",
+          "publisher": "University of California Press, Berkeley",
+          "pages": "306-317",
+          "notes": "Finds the teeth obviously theropod but without characters for assignment at the infraordinal level."
+        },
+        {
+          "id": "lucas2001b",
+          "authors": "Lucas, S. G.",
+          "year": 2001,
+          "title": "Chinese Fossil Vertebrates",
+          "publisher": "Columbia University Press, New York",
+          "doi": "10.7312/luca08482",
+          "notes": "Treats Prodeinodon as a form genus for large theropod teeth."
+        },
+        {
+          "id": "yun2020a",
+          "authors": "Yun, C. G.",
+          "year": 2020,
+          "title": "A carcharodontosaurid tooth from the Hasandong Formation (Lower Cretaceous) of South Korea",
+          "journal": "Mongolian Geoscientist",
+          "volume": "50",
+          "pages": "2-10",
+          "doi": "10.5564/mgs.v50i0.1325",
+          "notes": "Regards Prodeinodon-type teeth from East Asia as Acrocanthosaurus- like carcharodontosaurids and rejects a dromaeosaurid identity."
+        },
+        {
+          "id": "mo2014a",
+          "authors": "Mo, J.; Zhou, F.; Li, G.; Huang, Z.; Cao, C.",
+          "year": 2014,
+          "title": "A New Carcharodontosauria (Theropoda) from the Early Cretaceous of Guangxi, Southern China",
+          "journal": "Acta Geologica Sinica (English Edition)",
+          "publisher": "Wiley",
+          "volume": "88",
+          "issue": "4",
+          "pages": "1051-1059",
+          "doi": "10.1111/1755-6724.12272",
+          "notes": "Suggests from comparable teeth that Prodeinodon is likely an allosauroid."
         }
       ],
       "taxonomy": [
@@ -193069,15 +194026,6 @@
         "phonetic": "SAHR-ko-LES-teez"
       },
       "description": "Sarcolestes is an extinct genus of ankylosaurian ornithischian dinosaur from the Oxford Clay of England. The current type and only species is S. leedsi, and the holotype is a single partial left mandible. The genus and species were named in 1893 by Richard Lydekker, who thought they belonged to a theropod.",
-      "dispute": {
-        "summary": "Sarcolestes is one of the earliest ankylosaurs (Callovian) but is known from a single fragmentary mandible, too incomplete to assign to a family. It is retained at Ankylosauria incertae sedis.\n",
-        "history": [
-          {
-            "date": "2026-06-26",
-            "note": "Placed at Ankylosauria incertae sedis, fragmentary holotype precludes family assignment."
-          }
-        ]
-      },
       "diet": "herbivore",
       "locomotion": "quadrupedal",
       "paleoenvironment": [
@@ -193178,6 +194126,41 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25025-0",
           "notes": "Source of the body length estimate."
+        },
+        {
+          "id": "vickaryous2004a",
+          "authors": "Vickaryous, M. K.; Maryańska, T.; Weishampel, D. B.",
+          "year": 2004,
+          "title": "Ankylosauria",
+          "book": "The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)",
+          "publisher": "University of California Press, Berkeley",
+          "pages": "363-392",
+          "notes": "Assigns Sarcolestes, once suggested to be a nodosaurid, to Ankylosauria incertae sedis, as one of the oldest known ankylosaurs."
+        },
+        {
+          "id": "raven2023a",
+          "authors": "Raven, T. J.; Barrett, P. M.; Joyce, C. B.; Maidment, S. C. R.",
+          "year": 2023,
+          "title": "The phylogenetic relationships and evolutionary history of the armoured dinosaurs (Ornithischia: Thyreophora)",
+          "journal": "Journal of Systematic Palaeontology",
+          "volume": "21",
+          "issue": "1",
+          "pages": "2205433",
+          "doi": "10.1080/14772019.2023.2205433",
+          "notes": "Recovers Sarcolestes as the earliest-diverging ankylosaur, possibly from lack of character data."
+        },
+        {
+          "id": "naish2008a",
+          "authors": "Naish, D.; Martill, D. M.",
+          "year": 2008,
+          "title": "Dinosaurs of Great Britain and the role of the Geological Society of London in their discovery: Ornithischia",
+          "journal": "Journal of the Geological Society",
+          "publisher": "Geological Society of London",
+          "volume": "165",
+          "issue": "3",
+          "pages": "613-623",
+          "doi": "10.1144/0016-76492007-154",
+          "notes": "Records the earlier nodosaurid readings and follows Vickaryous and colleagues (2004) in leaving the genus at Ankylosauria incertae sedis."
         }
       ],
       "taxonomy": [
@@ -197779,7 +198762,7 @@
     },
     "Serendipaceratops": {
       "genus": "Serendipaceratops",
-      "parent": "Ornithischia",
+      "parent": "Genasauria",
       "placement": "incertae sedis",
       "etymology": "From 'serendipitous', referencing the unexpected nature of the find (a ceratopsian found in Australia), and Greek 'keras' meaning 'horn' and 'ops' meaning 'face'; meaning 'serendipitous horned face.'",
       "pronunciation": {
@@ -197787,7 +198770,7 @@
       },
       "description": "Serendipaceratops is a genus of herbivorous ornithischian dinosaur, possibly an ankylosaur, from the early Cretaceous Period of Australia. The type species, S. arthurcclarkei, was named in 2003.",
       "dispute": {
-        "summary": "Serendipaceratops arthurcclarkei is based on a single ulna from Australia; its referral to Ceratopsia has been disputed, with some workers suggesting the bone is not diagnostic or may pertain to an ankylosaur. Treated as a nomen dubium.\n",
+        "summary": "Rich and Vickers-Rich (2003) tentatively referred the ulna to Neoceratopsia. Agnolin and colleagues (2010) find no neoceratopsian synapomorphy, note proportions closer to ankylosaurs, and consider it a nomen dubium diagnosable only to Genasauria. Rich and colleagues (2014) answer with a morphometric study, finding the extreme compression of the ulnar midshaft a synapomorphy of Ceratopsia and the species valid on an emended diagnosis; Ryan and colleagues (2023) still describe the referral as challenged. Its validity and placement are both unsettled, and it is placed at Genasauria incertae sedis.\n",
         "history": [
           {
             "date": "2026-06-27",
@@ -197796,6 +198779,14 @@
           {
             "date": "2026-07-14",
             "note": "Moved to Ornithischia incertae sedis; ceratopsian affinity not supported (single deformed, non-diagnostic ulna; possible ankylosaur)."
+          },
+          {
+            "date": "2026-10-17",
+            "note": "Moved from Ornithischia to Genasauria incertae sedis, the level shared by the ceratopsian, ankylosaur-like and indeterminate readings; summary rewritten with its sources.\n"
+          },
+          {
+            "date": "2026-10-17",
+            "note": "Status set to disputed and diagnostic features added from the emended diagnosis of Rich and colleagues (2014); summary updated with that study.\n"
           }
         ]
       },
@@ -197804,6 +198795,14 @@
       "paleoenvironment": [
         "fluvial",
         "polar"
+      ],
+      "diagnostic_features": [
+        "Ulnar midshaft extremely compressed mediolaterally (midshaft width ratio 2.06)",
+        "Ulna long relative to its mediolateral width but short relative to its craniocaudal depth at the sigmoid fossa rim",
+        "Proximal sigmoid region of the ulna narrow relative to the minimum transverse diameter of the midshaft",
+        "Coronoid process projecting strongly anteriorly, at a high angle to the shaft",
+        "Ulnar shaft narrow, with parallel medial and lateral sides",
+        "Robust, mediolaterally inflated lateral tubercle and inflated anterolateral surface on the distal end of the ulna"
       ],
       "appearance": {
         "integument": "scaled",
@@ -197831,7 +198830,7 @@
         {
           "name": "Serendipaceratops arthurcclarkei",
           "etymology": "Named for science fiction writer Arthur C. Clarke, a personal friend of the describing authors and someone who first became interested in science as a child through a fascination with dinosaurs.",
-          "status": "nomen dubium",
+          "status": "disputed",
           "type_species": true,
           "period": {
             "name": [
@@ -197878,6 +198877,53 @@
           "volume": "113",
           "pages": "1-12",
           "doi": "10.5281/zenodo.16207463"
+        },
+        {
+          "id": "agnolín2010a",
+          "authors": "Agnolín, F. L.; Ezcurra, M. D.; Pais, D. F.; Salisbury, S. W.",
+          "year": 2010,
+          "title": "A reappraisal of the Cretaceous non-avian dinosaur faunas from Australia and New Zealand: evidence for their Gondwanan affinities",
+          "journal": "Journal of Systematic Palaeontology",
+          "publisher": "Informa UK Limited",
+          "volume": "8",
+          "issue": "2",
+          "pages": "257-300",
+          "doi": "10.1080/14772011003594870",
+          "notes": "Finds no neoceratopsian synapomorphy in the ulna, notes proportions closer to ankylosaurs, and considers the genus a nomen dubium diagnosable only to Genasauria."
+        },
+        {
+          "id": "poropat2014a",
+          "authors": "Poropat, S. F.; Upchurch, P.; Mannion, P. D.; Hocknull, S. A.; Kear, B. P.; Sloan, T.; Sinapius, G. H. K.; Elliot, D. A.",
+          "year": 2014,
+          "title": "Revision of the sauropod dinosaur Diamantinasaurus matildae Hocknull et al. 2009 from the mid-Cretaceous of Australia: Implications for Gondwanan titanosauriform dispersal",
+          "journal": "Gondwana Research",
+          "volume": "27",
+          "issue": "3",
+          "pages": "995-1033",
+          "doi": "10.1016/j.gr.2014.03.014",
+          "notes": "Reports that a 2014 study renewed support for a ceratopsian identity after it had been met with scepticism."
+        },
+        {
+          "id": "ryan2023a",
+          "authors": "Ryan, M. J.; Micucci, L.; Rizo, H.; Sullivan, C.; Lee, Y. N.; Evans, D. C.",
+          "year": 2023,
+          "title": "A new Late Cretaceous leptoceratopsid (Dinosauria: Ceratopsia) from the Oldman Formation (Campanian) of Alberta, Canada",
+          "journal": "Windows into Sauropsid and Synapsid Evolution: Essays in Honor of Prof. Louis L. Jacobs",
+          "publisher": "Dinosaur Science Center Press",
+          "pages": "151-165",
+          "notes": "Notes that the leptoceratopsid-like affinities reported for the ulnae have been challenged."
+        },
+        {
+          "id": "rich2014a",
+          "authors": "Rich, T. H.; Kear, B. P.; Sinclair, R.; Chinnery, B.; Carpenter, K.; McHugh, M. L.; Vickers-Rich, P.",
+          "year": 2014,
+          "title": "Serendipaceratops arthurcclarkei Rich & Vickers-Rich, 2003 is an Australian Early Cretaceous ceratopsian",
+          "journal": "Alcheringa: An Australasian Journal of Palaeontology",
+          "volume": "38",
+          "issue": "4",
+          "pages": "456-479",
+          "doi": "10.1080/03115518.2014.894809",
+          "notes": "Finds the ulnar midshaft compression a ceratopsian synapomorphy, rejects the nomen dubium, and gives an emended diagnosis; source of the diagnostic features."
         }
       ],
       "taxonomy": [
@@ -197890,7 +198936,8 @@
         "Reptilia",
         "Archosauria",
         "Dinosauria",
-        "Ornithischia"
+        "Ornithischia",
+        "Genasauria"
       ],
       "authors": "Rich, T.; Vickers-Rich, P.",
       "described": 2003
@@ -203315,145 +204362,6 @@
       ],
       "authors": "Xu, X.; Wang, K.; Zhao, X.; Li, D.",
       "described": 2010
-    },
-    "Sinocoelurus": {
-      "genus": "Sinocoelurus",
-      "parent": "Tetanurae",
-      "placement": "incertae sedis",
-      "dispute": {
-        "summary": "Sinocoelurus fragilis is a nomen dubium based on four isolated, unserrated teeth; its theropod identity has even been questioned. It is placed conservatively at Tetanurae incertae sedis.\n",
-        "history": [
-          {
-            "date": "2026-07-02",
-            "note": "Placed at Tetanurae incertae sedis; regarded as a nomen dubium."
-          }
-        ]
-      },
-      "etymology": "From Latin/Greek 'Sino-' meaning 'Chinese' and Greek 'koilos' meaning 'hollow' and 'oura' meaning 'tail'; meaning 'Chinese hollow tail', referencing both the discovery location and the hollow-tailed genus Coelurus.",
-      "pronunciation": {
-        "phonetic": "SIEN-o-see-LOOR-us"
-      },
-      "description": "Sinocoelurus is a genus of theropod dinosaur from the Late Jurassic of Sichuan, China, known from teeth found at the top of the beds Young (1942) called the Kuangyuan Series, at Locality 47 south of Guangyuan. It is an obscure tooth taxon.",
-      "diet": "carnivore",
-      "locomotion": "bipedal",
-      "paleoenvironment": [
-        "fluvial",
-        "lacustrine"
-      ],
-      "appearance": {
-        "integument": "scaled",
-        "evidence": "inferred"
-      },
-      "identifiers": [
-        {
-          "source": "pbdb",
-          "id": "38533"
-        },
-        {
-          "source": "wikidata",
-          "id": "Q871971"
-        },
-        {
-          "source": "gbif",
-          "id": "4822578"
-        }
-      ],
-      "species": [
-        {
-          "name": "Sinocoelurus fragilis",
-          "etymology": "From Latin 'fragilis' meaning 'fragile' or 'thin', referencing the very thin enamel on the fossilized teeth.",
-          "status": "nomen dubium",
-          "type_species": true,
-          "period": {
-            "name": [
-              "Late Jurassic"
-            ]
-          },
-          "location": {
-            "country": "CN",
-            "locality": "Locality 47",
-            "region": "Sichuan",
-            "notes": "Young (1942) collected the teeth \"all from the rich shell-bearing layer at the top of the Kuangyuan Series\", at Locality 47, \"belonging to the top part of the Kuangyuan Series and immediately below the Chentsianyen conglomerate\". Young and colleagues (1943) place the Kuangyuan Series concordantly above the Tsienfuyen Series and date the two together to \"Upper Jurassic time (Purbeckian)\", with the overlying conglomerate \"tentatively regarded as of Cretaceous in age by its stratigraphic position\". Dong and colleagues (1983) write that the region's red clastics \"were formerly referred to as the Guangyuan Group\", and their header gives these teeth the Chungking (Guangyuan) Group. In discussion they reassign the teeth to the Qianfoya Formation, against their own statement that \"Overlying the Qianfoya Fm. are the red beds of the Chungking (Guangyuan) Group\". Li and colleagues (2011) list the species in the upper Shaximiao Formation. Weiyuan, some 200 km away, is a separate area Young compares against this one.\n",
-            "region_code": "CN-SC"
-          },
-          "erected_in": "young1942a",
-          "type_specimen": {
-            "specimen_id": [
-              "IVPP V232",
-              "IVPP V233",
-              "IVPP V234"
-            ],
-            "specimen_type": "syntype",
-            "institution": "Institute of Vertebrate Paleontology and Paleoanthropology",
-            "material": "Four isolated partial teeth",
-            "completeness": "fragmentary"
-          },
-          "authors": "Young, C. C.",
-          "described": 1942
-        }
-      ],
-      "references": [
-        {
-          "id": "young1942a",
-          "authors": "Young, C. C.",
-          "year": 1942,
-          "title": "Fossil Vertebrates from Kuangyuan, N. Szechuan, China",
-          "journal": "Bulletin of the Geological Society of China",
-          "publisher": "Wiley",
-          "volume": "22",
-          "issue": "3-4",
-          "pages": "293-309",
-          "doi": "10.1111/j.1755-6724.1942.mp223-4016.x"
-        },
-        {
-          "id": "dong1983a",
-          "authors": "Dong, Z.; Zhou, S.; Zhang, H.",
-          "year": 1983,
-          "title": "[Dinosaurs from the Jurassic of Sichuan]",
-          "journal": "Palaeontologica Sinica, New Series C, Whole Number",
-          "volume": "162",
-          "issue": "23",
-          "pages": "1-136",
-          "notes": "Proposes the Qianfoya Formation for this material in discussion, while its own header gives the Chungking (Guangyuan) Group."
-        },
-        {
-          "id": "young1943a",
-          "authors": "Young, C. C.; Bien, M. N.; Mi, T. H.",
-          "year": 1943,
-          "title": "Some geologic problems of the Tsinling",
-          "journal": "Bulletin of the Geological Society of China",
-          "volume": "23",
-          "issue": "1-2",
-          "pages": "15-34",
-          "doi": "10.1111/j.1755-6724.1943.mp231-2002.x",
-          "notes": "Places the Kuangyuan Series concordantly above the Tsienfuyen Series, below a conglomerate tentatively dated Cretaceous, and dates the two series Upper Jurassic."
-        },
-        {
-          "id": "li2011a",
-          "authors": "Li, K.; Liu, J.; Yang, C.; Hu, F.",
-          "year": 2011,
-          "title": "Dinosaur assemblages from the Middle Jurassic Shaximiao Formation and Chuanjie Formation in the Sichuan-Yunnan Basin, China",
-          "notes": "Lists the species in the upper member of the Shaximiao Formation in a basin-wide faunal list, without discussing the Guangyuan locality."
-        }
-      ],
-      "taxonomy": [
-        "Life",
-        "Animalia",
-        "Chordata",
-        "Vertebrata",
-        "Sarcopterygii",
-        "Tetrapoda",
-        "Reptilia",
-        "Archosauria",
-        "Dinosauria",
-        "Saurischia",
-        "Theropoda",
-        "Neotheropoda",
-        "Averostra",
-        "Tetanurae"
-      ],
-      "authors": "Young, C. C.",
-      "described": 1942
     },
     "Sinopeltosaurus": {
       "genus": "Sinopeltosaurus",
@@ -212414,21 +213322,8 @@
     },
     "Szechuanosaurus": {
       "genus": "Szechuanosaurus",
-      "parent": "Tetanurae",
+      "parent": "Theropoda",
       "placement": "incertae sedis",
-      "dispute": {
-        "summary": "Szechuanosaurus campi is a nomen dubium based on undiagnostic teeth; referred skeletal material formerly placed in the genus has been reassigned to Yangchuanosaurus (Carrano, Benson and Sampson, 2012). It is placed conservatively at Tetanurae incertae sedis.\n",
-        "history": [
-          {
-            "date": "2026-06-30",
-            "note": "Reparented to Tetanurae."
-          },
-          {
-            "date": "2026-07-02",
-            "note": "Confirmed placement at Tetanurae incertae sedis; remains a nomen dubium."
-          }
-        ]
-      },
       "pronunciation": {
         "phonetic": "SUH-CHWAHN-o-SAWR-us"
       },
@@ -212568,10 +213463,7 @@
         "Archosauria",
         "Dinosauria",
         "Saurischia",
-        "Theropoda",
-        "Neotheropoda",
-        "Averostra",
-        "Tetanurae"
+        "Theropoda"
       ],
       "authors": "Young, C. C.",
       "described": 1942
@@ -214490,11 +215382,15 @@
       },
       "description": "Taohelong is a genus of nodosaurid dinosaur known from Early Cretaceous rocks in north-central China. It is based on Gansu Dinosaur Museum (GSDM) 00021, fossils including a tail vertebra, ribs, a left ilium (the main bone of the hip), and bony armor recovered from the Hekou Group in the Lanzhou-Minhe Basin. The animal's armor includes part of a \"sacral shield\", a carpet of osteoderms over the hips found in some other ankylosaurians. Taohelong was named and described in 2013 by Yang Jing-Tao, You Hai-Lu, Li Da-Qing, and Kong De-Lai. The type species is Taohelong jinchengensis. The generic name means \"dragon (long) of the river (he) Tao\". The specific name refers to the provenance at Jincheng.",
       "dispute": {
-        "summary": "The placement of Taohelong is contested between Polacanthinae and Nodosaurinae, and analyses recover it outside the main ankylosaur clades on largely postcranial, incomplete material. It is retained at Ankylosauria incertae sedis.\n",
+        "summary": "Yang and colleagues (2013) recover Taohelong as the sister of Polacanthus in their majority-rule tree, though only within an unresolved Nodosauridae in the strict consensus; Madzia and colleagues (2021) list it in both Polacanthinae and Nodosaurinae under those clades' reference phylogenies. Arbour and Currie (2015) recover it in an unresolved nodosaurid polytomy, Raven and colleagues (2023) usually outside the main ankylosaur clades, and Soto-Acuña and colleagues (2024) prune it as unstable. Known only from postcranial material, it is placed at Ankylosauria incertae sedis.\n",
         "history": [
           {
             "date": "2026-06-26",
             "note": "Placed at Ankylosauria incertae sedis, family placement unresolved."
+          },
+          {
+            "date": "2026-10-16",
+            "note": "Summary rewritten with its sources.\n"
           }
         ]
       },
@@ -214575,6 +215471,54 @@
           "volume": "51",
           "issue": "4",
           "pages": "265-277"
+        },
+        {
+          "id": "madzia2021a",
+          "authors": "Madzia, D.; Arbour, V. M.; Boyd, C. A.; Farke, A. A.; Cruzado-Caballero, P.; Evans, D. C.",
+          "year": 2021,
+          "title": "The phylogenetic nomenclature of ornithischian dinosaurs",
+          "journal": "PeerJ",
+          "volume": "9",
+          "pages": "e12362",
+          "doi": "10.7717/peerj.12362",
+          "notes": "Lists Taohelong in Polacanthinae and in Nodosaurinae under the reference phylogenies of those two clades."
+        },
+        {
+          "id": "arbour2015a",
+          "authors": "Arbour, V. M.; Currie, P. J.",
+          "year": 2015,
+          "title": "Systematics, phylogeny and palaeobiogeography of the ankylosaurid dinosaurs",
+          "journal": "Journal of Systematic Palaeontology",
+          "publisher": "Informa UK Limited",
+          "volume": "14",
+          "issue": "5",
+          "pages": "385-444",
+          "doi": "10.1080/14772019.2015.1059985",
+          "notes": "Recovers Taohelong with Dongyangopelta and Sauroplites in an unresolved polytomy within Nodosauridae."
+        },
+        {
+          "id": "raven2023a",
+          "authors": "Raven, T. J.; Barrett, P. M.; Joyce, C. B.; Maidment, S. C. R.",
+          "year": 2023,
+          "title": "The phylogenetic relationships and evolutionary history of the armoured dinosaurs (Ornithischia: Thyreophora)",
+          "journal": "Journal of Systematic Palaeontology",
+          "volume": "21",
+          "issue": "1",
+          "pages": "2205433",
+          "doi": "10.1080/14772019.2023.2205433",
+          "notes": "Usually recovers Taohelong, with Silvisaurus, outside the four main ankylosaur clades."
+        },
+        {
+          "id": "soto-acuña2024a",
+          "authors": "Soto-Acuña, S.; Vargas, A. O.; Kaluza, J.",
+          "year": 2024,
+          "title": "A new look at the first dinosaur discovered in Antarctica: reappraisal of Antarctopelta oliveroi (Ankylosauria: Parankylosauria)",
+          "journal": "Advances in Polar Science",
+          "volume": "35",
+          "issue": "1",
+          "pages": "78-107",
+          "doi": "10.12429/j.advps.2023.0036",
+          "notes": "Prunes Taohelong as a wildcard taxon."
         }
       ],
       "taxonomy": [
@@ -217170,17 +218114,8 @@
     },
     "Teinurosaurus": {
       "genus": "Teinurosaurus",
-      "parent": "Tetanurae",
+      "parent": "Theropoda",
       "placement": "incertae sedis",
-      "dispute": {
-        "summary": "Teinurosaurus sauvagei is a nomen dubium based on a single distal caudal vertebra; it cannot be assigned below Theropoda with confidence. It is placed conservatively at Tetanurae incertae sedis.\n",
-        "history": [
-          {
-            "date": "2026-07-02",
-            "note": "Placed at Tetanurae incertae sedis; regarded as a nomen dubium."
-          }
-        ]
-      },
       "etymology": "From Greek 'teinein' meaning 'to stretch' and 'oura' meaning 'tail', combined with Greek 'sauros' meaning 'lizard', likely referring to an elongated tail vertebra.",
       "pronunciation": {
         "phonetic": "tie-NOOR-o-SOR-us"
@@ -217295,6 +218230,25 @@
           "volume": "16",
           "issue": "1-2",
           "pages": "17-42"
+        },
+        {
+          "id": "holtz2004a",
+          "authors": "Holtz, T. R.; Molnar, R. E.; Currie, P. J.",
+          "year": 2004,
+          "title": "Basal Tetanurae",
+          "book": "The Dinosauria, Second Edition (Weishampel, D. B.; Dodson, P.; Osmólska, H., eds.)",
+          "publisher": "University of California Press, Berkeley",
+          "pages": "71-110",
+          "notes": "Lists Teinurosaurus sauvagei, the type of Caudocoelus, among the nomina dubia of basal tetanurans."
+        },
+        {
+          "id": "weishampel2004a",
+          "authors": "Weishampel, D. B.; Dodson, P.; Osmólska, H. (eds.)",
+          "year": 2004,
+          "title": "The Dinosauria, Second Edition",
+          "publisher": "University of California Press, Berkeley",
+          "isbn": "0-520-24209-2",
+          "notes": "Lists Teinurosaurus sauvagei as Theropoda indet. in the Boulogne- sur-Mer fauna."
         }
       ],
       "taxonomy": [
@@ -217308,10 +218262,7 @@
         "Archosauria",
         "Dinosauria",
         "Saurischia",
-        "Theropoda",
-        "Neotheropoda",
-        "Averostra",
-        "Tetanurae"
+        "Theropoda"
       ],
       "authors": "Nopcsa, B. F.",
       "described": 1928
@@ -224315,15 +225266,6 @@
       },
       "etymology": "From Greek trachys (rough) and odon (tooth); meaning \"rough tooth\", referring to the granulated inner surface of the hadrosaurid tooth Leidy described.",
       "description": "Trachodon is a dubious genus of hadrosaurid dinosaur from the Upper Cretaceous of what is now Montana in the western United States. The only species is T. mirabilis, though many others have been assigned to the genus. T. mirabilis was described by Joseph Leidy in 1856 based on a set of teeth; however, this was later shown to be a mixture of hadrosaurid and ceratopsian teeth. These fossils were unearthed in 1856 by Ferdinand Vandeveer Hayden during an expedition to the Missouri River in Montana, USA, in rock from the Judith River Formation. This formation dates to the Campanian stage of the Late Cretaceous, which lasted from 79 to 75.3 million years ago. One of the teeth, an incomplete hadrosaurid tooth, was later chosen as the holotype.\n",
-      "dispute": {
-        "summary": "Trachodon is a nomen dubium founded on isolated teeth and long used as a wastebasket taxon for hadrosaurid remains.\n",
-        "history": [
-          {
-            "date": "2026-06-27",
-            "note": "Placed at Hadrosauridae incertae sedis; nomen dubium."
-          }
-        ]
-      },
       "diet": "herbivore",
       "locomotion": "facultative",
       "paleoenvironment": [
@@ -224407,6 +225349,50 @@
           "volume": "8",
           "pages": "72-73",
           "notes": "Erects Trachodon mirabilis on a series of teeth collected by F.V. Hayden from the bad lands of the Judith River, Nebraska Territory (modern Montana). No catalog number given in the paper."
+        },
+        {
+          "id": "brett-surman1989a",
+          "authors": "Brett-Surman, M. K.",
+          "year": 1989,
+          "title": "A revision of the Hadrosauridae (Reptilia: Ornithischia) and their evolution during the Campanian and Maastrichtian",
+          "thesis": "doctoral",
+          "school": "The George Washington University",
+          "pages": "1-272",
+          "notes": "Agrees with Lull and Wright (1942) that the name Trachodon is unusable, and calls it a nomen dubium on a single dentary tooth."
+        },
+        {
+          "id": "coombs1988b",
+          "authors": "Coombs, W. P. Jr.",
+          "year": 1988,
+          "title": "The status of the dinosaurian genus Diclonius and the taxonomic utility of hadrosaurian teeth",
+          "journal": "Journal of Paleontology",
+          "volume": "62",
+          "issue": "5",
+          "pages": "812-817",
+          "notes": "Treats hadrosaur taxa founded on isolated teeth as nomina dubia, Trachodon mirabilis foremost, and recommends confining the name to historical discussion."
+        },
+        {
+          "id": "currie1990a",
+          "authors": "Currie, P. J.; Rigby, J. K.; Sloan, R. E.",
+          "year": 1990,
+          "title": "Theropod teeth from the Judith River Formation of southern Alberta, Canada",
+          "book": "Dinosaur Systematics: Perspectives and Approaches (Carpenter, K.; Currie, P. J., eds.)",
+          "publisher": "Cambridge University Press, Cambridge",
+          "pages": "107-126",
+          "doi": "10.1017/cbo9780511608377.011",
+          "notes": "Recounts how the name spread to flat-headed hadrosaurs and a family, although its type teeth came from crested forms."
+        },
+        {
+          "id": "prieto-márquez2016a",
+          "authors": "Prieto-Márquez, A.; Erickson, G. M.; Ebersole, J. A.",
+          "year": 2016,
+          "title": "A primitive hadrosaurid from southeastern North America and the origin and early evolution of 'duck-billed' dinosaurs",
+          "journal": "Journal of Vertebrate Paleontology",
+          "publisher": "Informa UK Limited",
+          "volume": "36",
+          "issue": "2",
+          "doi": "10.1080/02724634.2015.1054495",
+          "notes": "Notes that Trachodon, the first hadrosaurid genus described, has long been considered a nomen dubium."
         }
       ],
       "taxonomy": [
@@ -239872,7 +240858,7 @@
     },
     "Xixiposaurus": {
       "genus": "Xixiposaurus",
-      "parent": "Massopoda",
+      "parent": "Plateosauria",
       "placement": "incertae sedis",
       "etymology": "Named for the village of Xixipo in Lufeng County, Yunnan, China, where the holotype was discovered, combined with Greek 'sauros' meaning 'lizard'.",
       "pronunciation": {
@@ -239880,11 +240866,15 @@
       },
       "description": "Xixiposaurus is a genus of \"prosauropod\" dinosaur which existed in what is now Lower Lufeng Formation, China during the lower Jurassic period. It was first named by Sekiya Toru in 2010 and the type species is X. suni.",
       "dispute": {
-        "summary": "Xixiposaurus suni is an Early Jurassic Chinese sauropodomorph of unstable position, recovered near Mussaurus in Massopoda or among basal massospondylids depending on the analysis.\n",
+        "summary": "Sekiya (2010) recovers Xixiposaurus suni as the sister of Mussaurus within a Plateosauridae that includes Plateosaurus. Wang and colleagues (2025) and Hu and colleagues (2026) call it a possible massospondylid without analyzing it, and Barrett and colleagues (2024, 2026) find it taking several equally parsimonious positions and prune it from their consensus. It is placed at Plateosauria incertae sedis.\n",
         "history": [
           {
             "date": "2026-06-29",
             "note": "Placed at Massopoda incertae sedis; Massospondylidae and Sauropodiformes alternatives are unresolved."
+          },
+          {
+            "date": "2026-10-16",
+            "note": "Moved from Massopoda to Plateosauria incertae sedis, the level shared by the plateosaurid and massospondylid readings; summary rewritten with its sources.\n"
           }
         ]
       },
@@ -239978,6 +240968,54 @@
           "publisher": "Princeton University Press",
           "isbn": "978-0-691-25023-6",
           "notes": "Source of the body length estimate."
+        },
+        {
+          "id": "barrett2024a",
+          "authors": "Barrett, P.; Chapelle, K.; Sciscio, L.; Broderick, T.; Zondo, M.; Munyikwa, D.; Choiniere, J.",
+          "year": 2024,
+          "title": "A new sauropodomorph dinosaur from the Late Triassic of the Mid-Zambezi Basin, Zimbabwe",
+          "journal": "Acta Palaeontologica Polonica",
+          "publisher": "Polska Akademia Nauk Instytut Paleobiologii (Institute of Paleobiology, Polish Academy of Sciences)",
+          "volume": "69",
+          "doi": "10.4202/app.01100.2023",
+          "notes": "Finds Xixiposaurus among the taxa with multiple most parsimonious positions and excludes it from the reduced consensus."
+        },
+        {
+          "id": "barrett2026a",
+          "authors": "Barrett, P. M.; Botha, J.; Sciscio, L.; Stuart, B. P.; Lovegrove, J.; Munyikwa, D.; Zondo, M.; Broderick, T. J.; Edwards, S. F.; Mbambo, E.; Chapelle, K. E. J.; Dollman, K. N.; Tolan, S.; Choiniere, J. N.",
+          "year": 2026,
+          "title": "A new sauropodomorph dinosaur from the Pebbly Arkose Formation (Upper Triassic: Norian) of Kariba, Zimbabwe",
+          "journal": "Journal of Systematic Palaeontology",
+          "publisher": "Informa UK Limited",
+          "volume": "24",
+          "issue": "2",
+          "pages": "2678610",
+          "doi": "10.1080/14772019.2026.2678610",
+          "notes": "Finds Xixiposaurus among the taxa with multiple most parsimonious positions and removes it from the reduced consensus."
+        },
+        {
+          "id": "wang2025a",
+          "authors": "Wang, Y. M.; Zhang, Q. N.; Wang, Y. C.; Xu, H.; Chen, J.; Feng, Z.; Xu, X.; Wang, T.; You, H. L.",
+          "year": 2025,
+          "title": "A new Early Jurassic dinosaur represents the earliest-diverging and oldest sauropodomorph of East Asia",
+          "journal": "Scientific Reports",
+          "publisher": "Springer Science and Business Media LLC",
+          "volume": "15",
+          "issue": "1",
+          "doi": "10.1038/s41598-025-12185-2",
+          "notes": "Calls Xixiposaurus possibly a massospondylid, with Lufengosaurus, without analyzing it."
+        },
+        {
+          "id": "hu2026a",
+          "authors": "Hu, S. B.; Wang, Y. C.; Mo, X.; Zhang, X. Q.; Zeng, W. T.; Wang, T.; Sun, Z. B.; Dong, Q. X.; Guan, Q.; Liu, Y. H.; Zhang, Y. S.; Bing, Y.; Wang, Y. M.; You, H. L.",
+          "year": 2026,
+          "title": "A new sauropodomorph dinosaur from the Lower Jurassic Fengjiahe Formation of Dali of Yunnan Province, China",
+          "journal": "Royal Society Open Science",
+          "publisher": "The Royal Society",
+          "volume": "13",
+          "issue": "3",
+          "doi": "10.1098/rsos.252219",
+          "notes": "Calls Xixiposaurus a putative massospondylid, with Lufengosaurus, without analyzing it."
         }
       ],
       "taxonomy": [
@@ -239993,8 +241031,7 @@
         "Saurischia",
         "Sauropodomorpha",
         "Bagualosauria",
-        "Plateosauria",
-        "Massopoda"
+        "Plateosauria"
       ],
       "authors": "Sekiya, T.",
       "described": 2010
