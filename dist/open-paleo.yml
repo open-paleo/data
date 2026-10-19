@@ -1,6 +1,6 @@
 _metadata:
   attribution: Open Paleo contributors
-  built_at: 2026-10-19T03:52:31.826Z
+  built_at: 2026-10-19T18:28:03.445Z
   clade_count: 188
   genus_count: 1427
   license: CC-BY-4.0
@@ -3239,7 +3239,7 @@ clades:
         notes: Redescription of Deinocheirus that revalidated Deinocheiridae as a distinct ornithomimosaur family.
   Deinonychosauria:
     description: |
-      Deinonychosauria is a clade of paravian theropod dinosaurs that lived from the Late Jurassic to the Late Cretaceous, with fossils recovered on nearly every continent, from North America and Europe to Asia, Africa, South America, and Antarctica. It traditionally unites the dromaeosaurids and the troodontids, two families whose members bore enlarged, sickle-shaped claws on the second toe. That claw was held clear of the ground in a hyperextended position, so that only the third and fourth toes carried the animal's weight while walking, an arrangement known as functional didactyly. Most deinonychosaurs were predators, though some of the smaller troodontids appear to have been at least omnivorous. The group has long been considered among the closest relatives of birds, but its exact makeup remains debated: some analyses place troodontids nearer to birds than to dromaeosaurids (Hartman and colleagues, 2019), which would leave the composition of the clade unstable beyond the dromaeosaurids themselves.
+      Deinonychosauria is a clade of paravian theropod dinosaurs that lived from the Late Jurassic to the Late Cretaceous, with fossils recovered on nearly every continent, from North America and Europe to Asia, Africa, South America, and Antarctica. It traditionally unites the dromaeosaurids and the troodontids, two families whose members bore enlarged, sickle-shaped claws on the second toe. That claw was held clear of the ground in a hyperextended position, so that only the third and fourth toes carried the animal's weight while walking, an arrangement known as functional didactyly. Most deinonychosaurs were predators, though some of the smaller troodontids appear to have been at least omnivorous. The group has long been considered among the closest relatives of birds.
     taxonomy:
       - Life
       - Animalia
@@ -3285,7 +3285,85 @@ clades:
         volume: "7"
         pages: e7247
         doi: 10.7717/peerj.7247
-        notes: Reviewed analyses that place troodontids closer to birds than to dromaeosaurids, and tested Deinonychosauria in a large maniraptoran matrix.
+        notes: Recovered Deinonychosauria with troodontids inside it, and found that placing troodontids closer to birds costs one step.
+      - id: sereno1998a
+        authors: Sereno, P. C.
+        year: 1998
+        title: A rationale for phylogenetic definitions, with application to the higher-level taxonomy of Dinosauria
+        journal: Neues Jahrbuch für Geologie und Paläontologie, Abhandlungen
+        volume: "210"
+        pages: 41-83
+        doi: 10.1127/njgpa/210/1998/41
+        notes: Gave the node-based definition, with Troodon and Velociraptor as reference taxa.
+      - id: turner2012a
+        authors: Turner, A. H.; Makovicky, P. J.; Norell, M. A.
+        year: 2012
+        title: A Review of Dromaeosaurid Systematics and Paravian Phylogeny
+        journal: Bulletin of the American Museum of Natural History
+        volume: "371"
+        pages: 1-206
+        doi: 10.1206/748.1
+        notes: Recovered Deinonychosauria with low jackknife support (GC 3); collapsing the node costs one step.
+      - id: pei2020a
+        authors: Pei, R.; Pittman, M.; Goloboff, P. A.; Dececchi, T. A.; Habib, M. B.; Kaye, T. G.; Larsson, H. C. E.; Norell, M. A.; Brusatte, S. L.; Xu, X.
+        year: 2020
+        title: Potential for Powered Flight Neared by Most Close Avialan Relatives, but Few Crossed Its Thresholds
+        journal: Current Biology
+        publisher: Elsevier BV
+        volume: "30"
+        issue: "20"
+        pages: 4033-4046.e8
+        doi: 10.1016/j.cub.2020.06.105
+        notes: Recovered Deinonychosauria as the sister of Avialae, with low group support.
+      - id: freimuth2026a
+        authors: Freimuth, W. J.; Lively, J. R.; Zanno, L. E.
+        year: 2026
+        title: Reassessment of the Early Cretaceous North American "troodontid" Geminiraptor suarezarum as a therizinosaurian and mosaic evolution of coelurosaurian maxillae
+        journal: PLOS ONE
+        volume: "21"
+        issue: "9"
+        pages: e0356471
+        doi: 10.1371/journal.pone.0356471
+        notes: Recovered Deinonychosauria as the sister of Avialae on the Pei and colleagues (2020) dataset.
+      - id: cau2021a
+        authors: Cau, A.; Madzia, D.
+        year: 2021
+        title: The phylogenetic affinities and morphological peculiarities of the bird-like dinosaur Borogovia gracilicrus from the Upper Cretaceous of Mongolia
+        journal: PeerJ
+        publisher: PeerJ
+        volume: "9"
+        pages: e12640
+        doi: 10.7717/peerj.12640
+        notes: Recovered troodontids closer to birds; the traditional Deinonychosauria costs 12 steps.
+      - id: lee2022a
+        authors: Lee, S.; Lee, Y. N.; Currie, P. J.; Sissons, R.; Park, J. Y.; Kim, S. H.; Barsbold, R.; Tsogtbaatar, K.
+        year: 2022
+        title: A non-avian dinosaur with a streamlined body exhibits potential adaptations for swimming
+        journal: Communications Biology
+        publisher: Springer Science and Business Media LLC
+        volume: "5"
+        issue: "1"
+        doi: 10.1038/s42003-022-04119-9
+        notes: Recovered Dromaeosauridae as the sister of Troodontidae plus Avialae.
+      - id: foth2025a
+        authors: Foth, C.; van de Kamp, T.; Tischlinger, H.; Kantelis, T.; Carney, R. M.; Zuber, M.; Hamann, E.; Wallaard, J. J. W.; Lenz, N.; Rauhut, O. W. M.; Frey, E.
+        year: 2025
+        title: A new Archaeopteryx from the lower Tithonian Mörnsheim Formation at Mühlheim (Late Jurassic)
+        journal: Fossil Record
+        volume: "28"
+        issue: "1"
+        pages: 17-43
+        doi: 10.3897/fr.28.131671
+        notes: Recovered Dromaeosauridae, not Troodontidae, as the sister of Avialae.
+      - id: agnolín2019a
+        authors: Agnolín, F. L.; Motta, M. J.; Brissón Egli, F.; Lo Coco, G.; Novas, F. E.
+        year: 2019
+        title: "Paravian Phylogeny and the Dinosaur-Bird Transition: An Overview"
+        journal: Frontiers in Earth Science
+        volume: "6"
+        pages: "252"
+        doi: 10.3389/feart.2018.00252
+        notes: Recovered the paravian clades in a polytomy at the base of Pennaraptora.
   Diamantinasauria:
     description: |
       Diamantinasauria is a clade of somphospondylan titanosauriform sauropods with close affinities to Titanosauria, known from the early Late Cretaceous of South America and Australia. It groups the Australian Diamantinasaurus, Savannasaurus, and Australotitan from the Winton Formation of Queensland with the Patagonian Sarmientosaurus of the Bajo Barreal Formation, and may also include Wintonotitan. This shared membership across two continents points to a faunal connection between Australia and South America by way of Antarctica during the Cretaceous. Distinguishing traits are drawn from the sternal plate, braincase, and limb skeleton, and dental microwear suggests these animals were mid-height browsers that fed on vegetation roughly one to ten meters above the ground. While the group is consistently recovered as a coherent clade, its exact position relative to Titanosauria has shifted between analyses.
@@ -10384,6 +10462,7 @@ clades:
         issue: "4"
         pages: 503-543
         doi: 10.1080/14772019.2010.488045
+        notes: Restated the definition of Zanno and colleagues (2009).
       - id: kobayashi2022a
         authors: Kobayashi, Y.; Takasaki, R.; Fiorillo, A. R.; Chinzorig, T.; Hikida, Y.
         year: 2022
@@ -10393,7 +10472,59 @@ clades:
         volume: "12"
         issue: "1"
         doi: 10.1038/s41598-022-11063-5
-        notes: Cited in delimiting the boundary of Therizinosauridae.
+        notes: Proposed a stem-based definition, the most inclusive clade containing Therizinosaurus but not Alxasaurus.
+      - id: zanno2009a
+        authors: Zanno, L. E.; Gillette, D. D.; Albright, L. B.; Titus, A. L.
+        year: 2009
+        title: A new North American therizinosaurid and the role of herbivory in 'predatory' dinosaur evolution
+        journal: "Proceedings of the Royal Society B: Biological Sciences"
+        publisher: The Royal Society
+        volume: "276"
+        issue: "1672"
+        pages: 3505-3511
+        doi: 10.1098/rspb.2009.1029
+        notes: Gave the node-based definition of Therizinosauridae, with Nothronychus as an internal specifier.
+      - id: kobayashi2025a
+        authors: Kobayashi, Y.; Zelenitsky, D. K.; Fiorillo, A. R.; Chinzorig, T.
+        year: 2025
+        title: Didactyl therizinosaur with a preserved keratinous claw from the Late Cretaceous of Mongolia
+        journal: iScience
+        publisher: Elsevier BV
+        volume: "28"
+        issue: "4"
+        doi: 10.1016/j.isci.2025.112141
+        notes: Followed the stem-based definition of Kobayashi and colleagues (2022).
+      - id: liao2026a
+        authors: Liao, C. C.; Freimuth, W. J.; Zanno, L. E.; Xu, X.
+        year: 2026
+        title: A new therizinosaur from the Early Cretaceous Jehol Biota and ecomorphological patterns among early therizinosaurians
+        journal: Journal of Systematic Palaeontology
+        publisher: Informa UK Limited
+        volume: "24"
+        issue: "2"
+        pages: "2710287"
+        doi: 10.1080/14772019.2026.2710287
+        notes: Followed the definition of Zanno (2010).
+      - id: pu2013a
+        authors: Pu, H.; Kobayashi, Y.; Lü, J.; Xu, L.; Wu, Y.; Chang, H.; Zhang, J.; Jia, S.
+        year: 2013
+        title: An Unusual Basal Therizinosaur Dinosaur with an Ornithischian Dental Arrangement from Northeastern China
+        journal: PLoS ONE
+        publisher: Public Library of Science (PLoS)
+        volume: "8"
+        issue: "5"
+        pages: e63423
+        doi: 10.1371/journal.pone.0063423
+        notes: Recovered the derived therizinosaurs, with the intermediate genera, as one unresolved Therizinosauridae.
+      - id: sues2016a
+        authors: Sues, H. D.; Averianov, A.
+        year: 2016
+        title: "Therizinosauroidea (Dinosauria: Theropoda) from the Upper Cretaceous of Uzbekistan"
+        journal: Cretaceous Research
+        volume: "59"
+        pages: 155-178
+        doi: 10.1016/j.cretres.2015.11.003
+        notes: Recovered the derived therizinosaurs, with the intermediate genera, as one unresolved Therizinosauridae.
   Therizinosauroidea:
     description: |
       Therizinosauroidea is a superfamily of large, herbivorous maniraptoran theropod dinosaurs known mainly from the Cretaceous of Asia, with a possible Jurassic tooth from England representing its oldest record. In the restricted sense, it comprises the more derived therizinosaurs, including genera such as Beipiaosaurus, Enigmosaurus, Erliansaurus, Neimongosaurus, and Suzhousaurus together with the families Alxasauridae and Therizinosauridae, and excludes the most primitive members of the broader group Therizinosauria, such as Falcarius. Its members share the distinctive therizinosaur mix of features: long necks, wide torsos, and four-toed weight-bearing feet reminiscent of early plant-eating dinosaurs, backward-pointing and partially fused hip bones once thought to recall those of ornithischians, and greatly enlarged, strongly curved hand claws. The name has largely replaced the older term Segnosauria in phylogenetic work, though some studies instead apply it to the entire therizinosaur lineage rather than to this more nested grouping.
@@ -65872,11 +66003,14 @@ genera:
     description: Enigmosaurus is a genus of therizinosauroid that lived in Asia during the Late Cretaceous period. It was a medium-sized, ground-dwelling, bipedal herbivore that represents the third therizinosaur taxon from the Bayanshiree Formation, although it is known from the lower part. The genus is monotypic, including only the type species E. mongoliensis, known from a well-preserved pelvis and other tentative body remains.
     dispute:
       summary: |
-        Enigmosaurus is an intermediate-grade therizinosaur whose family-level assignment depends on how Therizinosauridae is defined. Zanno (2010) recovers it outside Therizinosauridae, as a successive outgroup to that family, a result followed by the Princeton Encyclopedia (Jones, 2026). Under the broader Therizinosaurus-anchored definition of Kobayashi and colleagues (2022, 2025) it is drawn into Therizinosauridae, recovered near the derived genera Erlikosaurus and Segnosaurus. It is placed conservatively in Therizinosauroidea. A proposed synonymy with Erlikosaurus has been rejected.
+        Enigmosaurus is an intermediate therizinosaur that falls inside or outside Therizinosauridae according to the definition used. Zanno (2010) and Liao and colleagues (2026) recover it as a successive outgroup to the family as Zanno and colleagues (2009) define it; Kobayashi and colleagues (2022) recover it as the sister of the derived therizinosaurids, inside their stem-defined Therizinosauridae. It is placed in Therizinosauroidea. A proposed synonymy with Erlikosaurus has been rejected.
       history:
         - date: 2026-07-01
           note: |
             Placed at Therizinosauroidea (outside Therizinosauridae) following Zanno (2010) and Jones (2026); Kobayashi and colleagues (2022, 2025) include it in a more broadly defined Therizinosauridae.
+        - date: 2026-10-19
+          note: |
+            Summary revised to attribute the family-level assignment to the competing definitions of Zanno and colleagues (2009) and Kobayashi and colleagues (2022); placement unchanged.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -65961,7 +66095,7 @@ genera:
         volume: "12"
         issue: "1"
         doi: 10.1038/s41598-022-11063-5
-        notes: Under a broader definition, draws Enigmosaurus into Therizinosauridae near Erlikosaurus and Segnosaurus.
+        notes: Recovered Enigmosaurus as the sister of the derived therizinosaurids, inside a stem-defined Therizinosauridae.
       - id: jones2026c
         authors: Jones, B.
         year: 2026
@@ -65978,6 +66112,28 @@ genera:
         volume: "28"
         issue: "4"
         doi: 10.1016/j.isci.2025.112141
+      - id: zanno2009a
+        authors: Zanno, L. E.; Gillette, D. D.; Albright, L. B.; Titus, A. L.
+        year: 2009
+        title: A new North American therizinosaurid and the role of herbivory in 'predatory' dinosaur evolution
+        journal: "Proceedings of the Royal Society B: Biological Sciences"
+        publisher: The Royal Society
+        volume: "276"
+        issue: "1672"
+        pages: 3505-3511
+        doi: 10.1098/rspb.2009.1029
+        notes: Defined Therizinosauridae as the least inclusive clade containing Nothronychus, Segnosaurus, Erlikosaurus and Therizinosaurus.
+      - id: liao2026a
+        authors: Liao, C. C.; Freimuth, W. J.; Zanno, L. E.; Xu, X.
+        year: 2026
+        title: A new therizinosaur from the Early Cretaceous Jehol Biota and ecomorphological patterns among early therizinosaurians
+        journal: Journal of Systematic Palaeontology
+        publisher: Informa UK Limited
+        volume: "24"
+        issue: "2"
+        pages: "2710287"
+        doi: 10.1080/14772019.2026.2710287
+        notes: Recovered Enigmosaurus as a successive outgroup to Therizinosauridae.
     taxonomy:
       - Life
       - Animalia
@@ -68609,11 +68765,14 @@ genera:
     description: Erliansaurus is a genus of therizinosaurian theropod dinosaur that lived in Asia during the Late Cretaceous period in what is now Nei Mongol, Iren Dabasu Formation.
     dispute:
       summary: |
-        Erliansaurus is an intermediate-grade therizinosaur whose family-level assignment depends on how Therizinosauridae is defined. Under the narrow node-based definition of Zanno (2010) it lies outside Therizinosauridae as an intermediate therizinosauroid, a result followed by Hartman and colleagues (2019) and the Princeton Encyclopedia (Jones, 2026). Under the broader Therizinosaurus-anchored definition of Kobayashi and colleagues (2022, 2025) it is drawn into Therizinosauridae, recovered with Neimongosaurus as the family's most basal clade. It is placed conservatively in Therizinosauroidea.
+        Erliansaurus is an intermediate therizinosaur that falls inside or outside Therizinosauridae according to the definition used. Zanno (2010) and Hartman and colleagues (2019) recover it below the derived clade of Nothronychus, Segnosaurus and Erlikosaurus, outside the family as Zanno and colleagues (2009) define it. Kobayashi and colleagues (2022) recover it in the same position, with Neimongosaurus, and include it in Therizinosauridae under their stem-based definition. It is placed in Therizinosauroidea.
       history:
         - date: 2026-07-01
           note: |
             Placed at Therizinosauroidea (outside Therizinosauridae) following Zanno (2010), Hartman and colleagues (2019) and Jones (2026); Kobayashi and colleagues (2022, 2025) include it in a more broadly defined Therizinosauridae.
+        - date: 2026-10-19
+          note: |
+            Summary revised to attribute the family-level assignment to the competing definitions of Zanno and colleagues (2009) and Kobayashi and colleagues (2022); placement unchanged.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -68714,7 +68873,7 @@ genera:
         volume: "7"
         pages: e7247
         doi: 10.7717/peerj.7247
-        notes: Followed Zanno's narrow definition, placing Erliansaurus as intermediate therizinosauroid, outside Therizinosauridae.
+        notes: Recovered Erliansaurus outside a clade of Nanshiungosaurus, Nothronychus, Erlikosaurus and Segnosaurus.
       - id: kobayashi2022a
         authors: Kobayashi, Y.; Takasaki, R.; Fiorillo, A. R.; Chinzorig, T.; Hikida, Y.
         year: 2022
@@ -68734,6 +68893,17 @@ genera:
         volume: "28"
         issue: "4"
         doi: 10.1016/j.isci.2025.112141
+      - id: zanno2009a
+        authors: Zanno, L. E.; Gillette, D. D.; Albright, L. B.; Titus, A. L.
+        year: 2009
+        title: A new North American therizinosaurid and the role of herbivory in 'predatory' dinosaur evolution
+        journal: "Proceedings of the Royal Society B: Biological Sciences"
+        publisher: The Royal Society
+        volume: "276"
+        issue: "1672"
+        pages: 3505-3511
+        doi: 10.1098/rspb.2009.1029
+        notes: Defined Therizinosauridae as the least inclusive clade containing Nothronychus, Segnosaurus, Erlikosaurus and Therizinosaurus.
     taxonomy:
       - Life
       - Animalia
@@ -99796,10 +99966,12 @@ genera:
     description: Kryptohadros is an extinct genus of hadrosauroid ornithopod dinosaur known from the Late Cretaceous (Maastrichtian age) Densuș-Ciula Formation of Romania. The genus contains a single species, Kryptohadros kallaiae, known from a partial skull and skeleton. Phylogenetic analyses revealed Kryptohadros is closely related to the coeval Transylvanian Telmatosaurus and the Italian Tethyshadros, together forming a group of southeastern European-endemic taxa, called the Telmatosauridae. Kryptohadros is the second named non-hadrosaurid hadrosauroid from the Hațeg Basin, following Telmatosaurus, which was named by Franz Nopcsa in 1903.
     dispute:
       summary: |
-        Kryptohadros kallaiae is a non-hadrosaurid hadrosauroid described by Magyar and colleagues (2026), who recovered it with Telmatosaurus and Tethyshadros in a proposed new family Telmatosauridae, outside Hadrosauridae.
+        Kryptohadros kallaiae is a non-hadrosaurid hadrosauroid described by Magyar and colleagues (2026), who recovered it with Telmatosaurus and Tethyshadros in a newly named clade, Telmatosauridae, outside Hadrosauridae.
       history:
         - date: 2026-06-27
           note: Placed at Hadrosauromorpha following Magyar and colleagues (2026); the proposed Telmatosauridae reflected, not adopted.
+        - date: 2026-10-19
+          note: Retained at Hadrosauromorpha; the Telmatosaurus–Tethyshadros pairing is recovered on several matrices, but Telmatosauridae has not yet been used by later work.
     diet: herbivore
     locomotion: facultative
     paleoenvironment:
@@ -122953,11 +123125,14 @@ genera:
     description: Neimongosaurus is a genus of herbivorous therizinosaurian theropod dinosaur that lived in China during the Late Cretaceous period. Its fossils are known from the strata of the Iren Dabasu Formation. It is known from two specimens, discovered in 1999 by researchers from the Ministry of Land and Resources and described two years later. One species, N. yangi, is known, named after Chinese paleontologist Yang Zhongjian.
     dispute:
       summary: |
-        Neimongosaurus is an intermediate-grade therizinosaur whose family-level assignment depends on how Therizinosauridae is defined. Under the narrow node-based definition of Zanno (2010) it lies outside Therizinosauridae as an intermediate therizinosauroid, a result followed by Hartman and colleagues (2019) and the Princeton Encyclopedia (Jones, 2026). Under the broader Therizinosaurus-anchored definition of Kobayashi and colleagues (2022, 2025) it is drawn into Therizinosauridae, recovered with Erliansaurus as the family's most basal clade. It is placed conservatively in Therizinosauroidea.
+        Neimongosaurus is an intermediate therizinosaur that falls inside or outside Therizinosauridae according to the definition used. Zanno (2010) and Hartman and colleagues (2019) recover it below the derived clade of Nothronychus, Segnosaurus and Erlikosaurus, outside the family as Zanno and colleagues (2009) define it, and Liao and colleagues (2026) recover it as an outgroup to the family. Kobayashi and colleagues (2022) recover it in the same position, with Erliansaurus, and include it in Therizinosauridae under their stem-based definition. It is placed in Therizinosauroidea.
       history:
         - date: 2026-07-01
           note: |
             Placed at Therizinosauroidea (outside Therizinosauridae) following Zanno (2010), Hartman and colleagues (2019) and Jones (2026); Kobayashi and colleagues (2022, 2025) include it in a more broadly defined Therizinosauridae.
+        - date: 2026-10-19
+          note: |
+            Summary revised to attribute the family-level assignment to the competing definitions of Zanno and colleagues (2009) and Kobayashi and colleagues (2022); placement unchanged.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -123068,7 +123243,7 @@ genera:
         volume: "7"
         pages: e7247
         doi: 10.7717/peerj.7247
-        notes: Recovered Neimongosaurus outside Therizinosauridae as an intermediate therizinosauroid
+        notes: Recovered Neimongosaurus outside a clade of Nanshiungosaurus, Nothronychus, Erlikosaurus and Segnosaurus.
       - id: kobayashi2025a
         authors: Kobayashi, Y.; Zelenitsky, D. K.; Fiorillo, A. R.; Chinzorig, T.
         year: 2025
@@ -123078,6 +123253,28 @@ genera:
         volume: "28"
         issue: "4"
         doi: 10.1016/j.isci.2025.112141
+      - id: zanno2009a
+        authors: Zanno, L. E.; Gillette, D. D.; Albright, L. B.; Titus, A. L.
+        year: 2009
+        title: A new North American therizinosaurid and the role of herbivory in 'predatory' dinosaur evolution
+        journal: "Proceedings of the Royal Society B: Biological Sciences"
+        publisher: The Royal Society
+        volume: "276"
+        issue: "1672"
+        pages: 3505-3511
+        doi: 10.1098/rspb.2009.1029
+        notes: Defined Therizinosauridae as the least inclusive clade containing Nothronychus, Segnosaurus, Erlikosaurus and Therizinosaurus.
+      - id: liao2026a
+        authors: Liao, C. C.; Freimuth, W. J.; Zanno, L. E.; Xu, X.
+        year: 2026
+        title: A new therizinosaur from the Early Cretaceous Jehol Biota and ecomorphological patterns among early therizinosaurians
+        journal: Journal of Systematic Palaeontology
+        publisher: Informa UK Limited
+        volume: "24"
+        issue: "2"
+        pages: "2710287"
+        doi: 10.1080/14772019.2026.2710287
+        notes: Recovered Neimongosaurus as an outgroup to Therizinosauridae.
     taxonomy:
       - Life
       - Animalia
@@ -155845,6 +156042,13 @@ genera:
         - cervical half rings
       integument: armored
       evidence: direct
+    diagnostic_features:
+      - Skull roof entirely covered by osteoderms with a fine tuberculate sculpture
+      - Postorbital osteoderms form low pyramids rather than spines
+      - Osteodermal covering does not conceal the quadrate condyle in lateral view
+      - Orbits face almost directly sideways and lie at the midpoint of the skull length
+      - Front of the snout narrowly oval, much narrower than the distance between the posterior maxillary teeth
+      - Tooth row longer than in any other known large ankylosaur
     identifiers:
       - source: pbdb
         id: "52794"
@@ -155888,6 +156092,7 @@ genera:
             - PIN N 3779/2
           specimen_type: holotype
           institution: Paleontological Institute, Russian Academy of Sciences
+          material: Skull, partial postcranial skeleton and armor
         erected_in: tumanova1983a
         authors: Tumanova, T. A.
         described: 1983
@@ -155900,6 +156105,14 @@ genera:
         series: Trudy Sovmestnaya Sovetsko-Mongol'skaya Paleontologicheskaya Ekspeditsiya
         volume: "24"
         pages: 110-118
+      - id: tumanova1987a
+        authors: Tumanova, T. A.
+        year: 1987
+        title: Pantsirnyye dinozavry Mongolii [The armored dinosaurs of Mongolia]
+        journal: Trudy Sovmestnaya Sovetsko-Mongol'skaya Paleontologicheskaya Ekspeditsiya
+        volume: "32"
+        pages: 1-80
+        notes: Source of the holotype material, which lists the partial postcranial skeleton and armor under the same number as the skull.
       - id: jones2026a
         authors: Jones, B.
         year: 2026
@@ -166560,11 +166773,14 @@ genera:
     description: Suzhousaurus is an extinct genus of large therizinosaurs from the Early Cretaceous of China. The genus is known from two specimens discovered in the Xiagou and Zhonggou Formations, both part of the Xinminpu Group. These findings were made during fieldwork in 1999 and 2004.
     dispute:
       summary: |
-        Suzhousaurus is a large, latest-diverging intermediate therizinosaur whose family-level assignment depends on how Therizinosauridae is defined. Zanno (2010) recovers it just outside Therizinosauridae as the most derived therizinosauroid, a result followed by the Princeton Encyclopedia (Jones, 2026); under the broader Therizinosaurus-anchored definition of Kobayashi and colleagues (2022, 2025) it is drawn into Therizinosauridae, within a derived subclade alongside Therizinosaurus and Paralitherizinosaurus. It is placed conservatively in Therizinosauroidea.
+        Suzhousaurus is a large therizinosaur whose position relative to Therizinosauridae differs between analyses. Zanno (2010) and Liao and colleagues (2026) recover it as the sister of Therizinosauridae, just outside the family. Kobayashi and colleagues (2022, 2025) recover it in an unresolved polytomy with Therizinosaurus and other derived therizinosaurs, inside the family under either definition, as do Pu and colleagues (2013) and Sues and Averianov (2016). It is placed in Therizinosauroidea.
       history:
         - date: 2026-07-01
           note: |
             Placed at Therizinosauroidea (outside Therizinosauridae) following Zanno (2010) and Jones (2026), who treat it as the most derived therizinosauroid; Kobayashi and colleagues (2022, 2025) include it in a more broadly defined Therizinosauridae.
+        - date: 2026-10-19
+          note: |
+            Summary revised: the assignment differs by topology, since Kobayashi and colleagues (2022, 2025) recover it within the derived clade under either definition; placement unchanged.
     diet: herbivore
     locomotion: bipedal
     paleoenvironment:
@@ -166665,7 +166881,7 @@ genera:
         volume: "12"
         issue: "1"
         doi: 10.1038/s41598-022-11063-5
-        notes: New therizinosaurid description underpinning broader Therizinosaurus-anchored clade definition.
+        notes: Recovered Suzhousaurus in a polytomy with Therizinosaurus and other derived therizinosaurs.
       - id: you2018a
         authors: You, H.; Morschhauser, E. M.; Li, D.; Dodson, P.
         year: 2018
@@ -166696,6 +166912,37 @@ genera:
         volume: "28"
         issue: "4"
         doi: 10.1016/j.isci.2025.112141
+      - id: liao2026a
+        authors: Liao, C. C.; Freimuth, W. J.; Zanno, L. E.; Xu, X.
+        year: 2026
+        title: A new therizinosaur from the Early Cretaceous Jehol Biota and ecomorphological patterns among early therizinosaurians
+        journal: Journal of Systematic Palaeontology
+        publisher: Informa UK Limited
+        volume: "24"
+        issue: "2"
+        pages: "2710287"
+        doi: 10.1080/14772019.2026.2710287
+        notes: Recovered Suzhousaurus as the sister of Therizinosauridae.
+      - id: pu2013a
+        authors: Pu, H.; Kobayashi, Y.; Lü, J.; Xu, L.; Wu, Y.; Chang, H.; Zhang, J.; Jia, S.
+        year: 2013
+        title: An Unusual Basal Therizinosaur Dinosaur with an Ornithischian Dental Arrangement from Northeastern China
+        journal: PLoS ONE
+        publisher: Public Library of Science (PLoS)
+        volume: "8"
+        issue: "5"
+        pages: e63423
+        doi: 10.1371/journal.pone.0063423
+        notes: Recovered Suzhousaurus within an unresolved Therizinosauridae.
+      - id: sues2016a
+        authors: Sues, H. D.; Averianov, A.
+        year: 2016
+        title: "Therizinosauroidea (Dinosauria: Theropoda) from the Upper Cretaceous of Uzbekistan"
+        journal: Cretaceous Research
+        volume: "59"
+        pages: 155-178
+        doi: 10.1016/j.cretres.2015.11.003
+        notes: Recovered Suzhousaurus within an unresolved Therizinosauridae.
     taxonomy:
       - Life
       - Animalia
@@ -170698,10 +170945,12 @@ genera:
     description: Telmatosaurus is a genus of basal hadrosauromorph dinosaur from the Late Cretaceous of Romania. It was relatively small for its group, measuring approximately 5 m (16 ft) in length and 600 kg (1,300 lb) in body mass, which has been explained as an instance of insular dwarfism.
     dispute:
       summary: |
-        Telmatosaurus transsylvanicus was historically treated as the most basal hadrosaurid (Weishampel and colleagues, 1993), but recent analyses place it among the derived non-hadrosaurid hadrosauromorphs, outside Hadrosauridae (Tsogtbaatar and colleagues, 2019; Jones, 2026). Magyar and colleagues (2026) group it with Tethyshadros and Kryptohadros in a proposed family Telmatosauridae.
+        Telmatosaurus transsylvanicus was historically treated as the most basal hadrosaurid (Weishampel and colleagues, 1993), but recent analyses place it among the derived non-hadrosaurid hadrosauromorphs, outside Hadrosauridae (Tsogtbaatar and colleagues, 2019; Jones, 2026). Analyses on several matrices recover it as the sister taxon of Tethyshadros (Xing and colleagues, 2014; Lockwood and colleagues, 2021), while others place the two at successive nodes below Hadrosauridae (Prieto-Márquez and colleagues, 2013). Magyar and colleagues (2026) name the group, with Kryptohadros, as the clade Telmatosauridae.
       history:
         - date: 2026-06-27
           note: Placed at Hadrosauromorpha following the prevailing view; the basalmost-hadrosaurid interpretation and the proposed Telmatosauridae both reflected, not adopted.
+        - date: 2026-10-19
+          note: Retained at Hadrosauromorpha; the Telmatosaurus–Tethyshadros pairing is recovered on several matrices, but Telmatosauridae has not yet been used by later work.
     diet: herbivore
     locomotion: facultative
     paleoenvironment:
@@ -170877,6 +171126,39 @@ genera:
         journal: Mitteilungen aus dem Jahrbuche der Königlich Ungarischen Geologischen Reichsanstalt
         volume: "23"
         pages: 1-26
+      - id: xing2014a
+        authors: Xing, H.; Wang, D.; Han, F.; Sullivan, C.; Ma, Q.; He, Y.; Hone, D. W. E.; Yan, R.; Du, F.; Xu, X.
+        year: 2014
+        title: "A New Basal Hadrosauroid Dinosaur (Dinosauria: Ornithopoda) with Transitional Features from the Late Cretaceous of Henan Province, China"
+        journal: PLoS ONE
+        publisher: Public Library of Science (PLoS)
+        volume: "9"
+        issue: "6"
+        pages: e98821
+        doi: 10.1371/journal.pone.0098821
+        notes: Recovered Telmatosaurus and Tethyshadros as sister taxa.
+      - id: lockwood2021a
+        authors: Lockwood, J. A. F.; Martill, D. M.; Maidment, S. C. R.
+        year: 2021
+        title: A new hadrosauriform dinosaur from the Wessex Formation, Wealden Group (Early Cretaceous), of the Isle of Wight, southern England
+        journal: Journal of Systematic Palaeontology
+        publisher: Informa UK Limited
+        volume: "19"
+        issue: "12"
+        pages: 847-888
+        doi: 10.1080/14772019.2021.1978005
+        notes: Recovered Telmatosaurus and Tethyshadros as sister taxa, outside Hadrosauridae.
+      - id: prieto-márquez2013a
+        authors: Prieto-Márquez, A.; Dalla Vecchia, F. M.; Gaete, R.; Galobart, À.
+        year: 2013
+        title: Diversity, Relationships, and Biogeography of the Lambeosaurine Dinosaurs from the European Archipelago, with Description of the New Aralosaurin Canardia garonnensis
+        journal: PLoS ONE
+        publisher: Public Library of Science (PLoS)
+        volume: "8"
+        issue: "7"
+        pages: e69835
+        doi: 10.1371/journal.pone.0069835
+        notes: Recovered Telmatosaurus and Tethyshadros at successive nodes below Hadrosauridae.
     taxonomy:
       - Life
       - Animalia
@@ -171613,12 +171895,14 @@ genera:
     description: Tethyshadros is a genus of hadrosauroid dinosaur from the Late Cretaceous (Campanian) Lipica Formation (previously thought to come from the younger informal "Liburnia Formation") of Trieste, Italy. The type and only species is T. insularis.
     dispute:
       summary: |
-        Tethyshadros insularis is recovered as a derived non-hadrosaurid hadrosauromorph in recent analyses, and grouped with Telmatosaurus and Kryptohadros in a proposed Telmatosauridae by Magyar and colleagues (2026). That finer Telmatosauridae placement rests on a single analysis and is not adopted.
+        Tethyshadros insularis is recovered as a derived non-hadrosaurid hadrosauromorph in recent analyses. Several recover it as the sister taxon of Telmatosaurus (Xing and colleagues, 2014; Lockwood and colleagues, 2021); others place the two at successive nodes below Hadrosauridae (Prieto-Márquez and colleagues, 2013), and Prieto-Márquez and Carrera Farias (2021) pair it with Fylax instead. Magyar and colleagues (2026) name the Telmatosaurus–Tethyshadros group, with Kryptohadros, as the clade Telmatosauridae.
       history:
         - date: 2026-06-27
           note: Placed at Hadrosauromorpha following the prevailing view; the proposed Telmatosauridae reflected, not adopted.
         - date: 2026-07-09
           note: Re-evaluated; retained at Hadrosauromorpha. A prior cited paper, "Prieto-Márquez and Wagner (2023)", recovered Tethyshadros within Hadrosauridae was removed as unfounded — that paper (the description of Malefica deckerti) only mentions Tethyshadros in passing, as a non-hadrosaurid hadrosauroid.
+        - date: 2026-10-19
+          note: Retained at Hadrosauromorpha; the Telmatosaurus–Tethyshadros pairing is recovered on several matrices, but Telmatosauridae has not yet been used by later work.
     diet: herbivore
     locomotion: facultative
     paleoenvironment:
@@ -171742,7 +172026,49 @@ genera:
         issue: "1"
         pages: "2607800"
         doi: 10.1080/14772019.2025.2607800
-        notes: Recovered Tethyshadros as derived hadrosauromorph within proposed Telmatosauridae.
+        notes: Recovered Tethyshadros as a derived hadrosauromorph within the newly named clade Telmatosauridae.
+      - id: xing2014a
+        authors: Xing, H.; Wang, D.; Han, F.; Sullivan, C.; Ma, Q.; He, Y.; Hone, D. W. E.; Yan, R.; Du, F.; Xu, X.
+        year: 2014
+        title: "A New Basal Hadrosauroid Dinosaur (Dinosauria: Ornithopoda) with Transitional Features from the Late Cretaceous of Henan Province, China"
+        journal: PLoS ONE
+        publisher: Public Library of Science (PLoS)
+        volume: "9"
+        issue: "6"
+        pages: e98821
+        doi: 10.1371/journal.pone.0098821
+        notes: Recovered Tethyshadros and Telmatosaurus as sister taxa.
+      - id: lockwood2021a
+        authors: Lockwood, J. A. F.; Martill, D. M.; Maidment, S. C. R.
+        year: 2021
+        title: A new hadrosauriform dinosaur from the Wessex Formation, Wealden Group (Early Cretaceous), of the Isle of Wight, southern England
+        journal: Journal of Systematic Palaeontology
+        publisher: Informa UK Limited
+        volume: "19"
+        issue: "12"
+        pages: 847-888
+        doi: 10.1080/14772019.2021.1978005
+        notes: Recovered Tethyshadros and Telmatosaurus as sister taxa, outside Hadrosauridae.
+      - id: prieto-márquez2013a
+        authors: Prieto-Márquez, A.; Dalla Vecchia, F. M.; Gaete, R.; Galobart, À.
+        year: 2013
+        title: Diversity, Relationships, and Biogeography of the Lambeosaurine Dinosaurs from the European Archipelago, with Description of the New Aralosaurin Canardia garonnensis
+        journal: PLoS ONE
+        publisher: Public Library of Science (PLoS)
+        volume: "8"
+        issue: "7"
+        pages: e69835
+        doi: 10.1371/journal.pone.0069835
+        notes: Recovered Telmatosaurus and Tethyshadros at successive nodes below Hadrosauridae.
+      - id: prieto-márquez2021a
+        authors: Prieto-Márquez, A.; Carrera Farias, M.
+        year: 2021
+        title: The late-surviving early diverging Ibero-Armorican 'duck-billed' dinosaur Fylax and the role of the Late Cretaceous European Archipelago in hadrosauroid biogeography
+        journal: Acta Palaeontologica Polonica
+        publisher: Polska Akademia Nauk Instytut Paleobiologii (Institute of Paleobiology, Polish Academy of Sciences)
+        volume: "66"
+        doi: 10.4202/app.00821.2020
+        notes: Described Fylax and recovered it as the sister taxon of Tethyshadros.
     taxonomy:
       - Life
       - Animalia
