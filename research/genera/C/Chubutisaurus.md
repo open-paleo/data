@@ -1,5 +1,18 @@
 # *Chubutisaurus*
 
+## Was Del Corro's *Chubutisaurus* paper published in 1974 or 1975?
+
+*2026-10-18*
+
+**Conclusion.** 1975. The paper is in volume 2 of the *Actas del Primer Congreso Argentino de Paleontología y Bioestratigrafía*, pp. 229-240. The congress met in 1974, and library catalogue listings date volume 1 to 1974 and volume 2 to 1975. So the 1974 in the English translation's citation is the congress year, or volume 1's, not the year this paper appeared. Governs the `erected_in` year of *Chubutisaurus insignis*, which stays `delcorro1975a`.
+
+**Evidence.**
+- delcorro1975a, the English translation (Lamanna, 2001), p. 1: "Original citation: del Corro, G. 1974. Un nuevo sauropodo del Cretácico Superior. Chubutisaurus insignis gen. et sp. nov. (Saurischia-Chubutisauridae nov.) del Cretácico Superior (Chubutiano), Chubut, Argentina. Actas I Congreso Argentino de Paleontología y Bioestratigrafía: 229-240." It gives no volume number.
+- rauhut2003d, p. 488: "The Bayo Overo Member has yielded the sauropod *Chubutisaurus* (Del Corro, 1975)".
+
+**Ruled out.**
+- *1974.* It rests on the translator's citation alone, which omits the volume. The volume that holds the paper is dated 1975.
+
 ## What stages does *Chubutisaurus* take?
 
 *2026-10-13*
@@ -47,12 +60,9 @@
 
 ## References
 
-- `carrano2012a`: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D. (2012). The phylogeny of Tetanurae (Dinosauria: Theropoda). *Journal of Systematic Palaeontology* 10(2): 211-300. doi:10.1080/14772019.2011.630927
+- `delcorro1975a`: del Corro, G. (1975). Un nuevo sauropodo del Cretácico Superior [A new sauropod from the Upper Cretaceous]. *Actas del Primer Congreso Argentino de Paleontologia y Bioestratigrafia* 2: 229-240.
 - `rauhut2003d`: Rauhut, O. W. M.; Cladera, G.; Vickers-Rich, P.; Rich, T. H. (2003). Dinosaur remains from the Lower Cretaceous of the Chubut Group, Argentina. *Cretaceous Research* 24(5): 487-497. doi:10.1016/S0195-6671(03)00067-3
+- `carrano2012a`: Carrano, M. T.; Benson, R. B. J.; Sampson, S. D. (2012). The phylogeny of Tetanurae (Dinosauria: Theropoda). *Journal of Systematic Palaeontology* 10(2): 211-300. doi:10.1080/14772019.2011.630927
 - `salgado1993a`: Salgado, L. (1993). Comments on Chubutisaurus insignis del Corro (Saurischia, Sauropoda). *Ameghiniana* 30(3): 265-270.
 - `molina-pérez2020a`: Molina-Pérez, R.; Larramendi, A. (2020). Dinosaur Facts and Figures: The Sauropods and Other Sauropodomorphs. Princeton University Press.
 - `jones2026b`: Jones, B. (2026). The Princeton Encyclopedia of Dinosaurs: Sauropods. Princeton University Press.
-
-## Other references
-
-- `delcorro1975a`: del Corro, G. (1975). Un nuevo sauropodo del Cretácico Superior [A new sauropod from the Upper Cretaceous]. *Actas del Primer Congreso Argentino de Paleontologia y Bioestratigrafia* 2: 229-240.
